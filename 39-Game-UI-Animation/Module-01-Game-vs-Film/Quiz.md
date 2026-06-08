@@ -155,7 +155,7 @@ D. A compression artifact in baked normal maps at low texture resolution
 ### Q17. Which technique does DOOM Eternal's animation system use instead of traditional clip-based state machines?
 
 A. Procedural animation via inverse kinematics only
-B. Motion matching — selecting the best pose from a database based on current velocity
+B. Motion matching, selecting the best pose from a database based on current velocity
 C. Ragdoll physics for all movement states
 D. Pre-baked sprite sheet animation at 24fps
 
@@ -184,7 +184,7 @@ D. The character model becomes invisible for one frame
 A. DOOM Eternal
 B. Both use the same philosophy
 C. Hades
-D. Neither — both use realistic proportions
+D. Neither, both use realistic proportions
 
 ---
 
@@ -227,28 +227,28 @@ D. The walk cycle must match the same timing as real-world human walking (1.5 st
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — 1000ms ÷ 60fps = 16.67ms per frame
-Q2:  B — State machine (runtime-driven) vs linear timeline (film)
-Q3:  D — Trigger parameters are consumed on use and auto-reset
-Q4:  B — Deliberate pause of animations on impact to communicate weight
-Q5:  B — id Software's DOOM Eternal; momentum preservation is their philosophy
-Q6:  B — Normal maps simulate surface detail on low-poly meshes
-Q7:  C — Swink's three: Input, Response, Context. Graphics fidelity is not one.
-Q8:  C — Bool for persistent states; trigger for one-shot actions
-Q9:  A — Root Motion drives world-space position/rotation from the animation clip
-Q10: B — Unity + Spine 2D (documented in Supergiant's GDC 2020 talk)
-Q11: B — iOS GPU skinning limit is typically 64 bones
-Q12: B — 4–8 frames of hit stop in Hades (Supergiant GDC 2020)
-Q13: B — AnyState transition fires from any active state
-Q14: C — Disabling distant-character bones is an animation-specific LOD technique
-Q15: B — "Game Feel" by Steve Swink (2008) is the primary reference
-Q16: B — Jitter is unintended oscillation in position/pose
-Q17: B — Motion matching (database pose selection by velocity)
-Q18: B — Animation events fire at specific clip frames for game callbacks
-Q19: B — Slow callbacks stall the frame, risking budget overrun
-Q20: C — Hades uses readability/exaggeration for its top-down camera
-Q21: B — Interruptibility: transitions can be cancelled by higher-priority inputs
-Q22: B — LOD reduces bone count for distant characters
-Q23: C — Transition exit time and blend duration are the first suspects
-Q24: A — The walk cycle must loop seamlessly from any FSM state transition
+Q1:  B, 1000ms ÷ 60fps = 16.67ms per frame
+Q2:  B, State machine (runtime-driven) vs linear timeline (film)
+Q3:  D, Trigger parameters are consumed on use and auto-reset
+Q4:  B, Deliberate pause of animations on impact to communicate weight
+Q5:  B, id Software's DOOM Eternal; momentum preservation is their philosophy
+Q6:  B, Normal maps simulate surface detail on low-poly meshes
+Q7:  C, Swink's three: Input, Response, Context. Graphics fidelity is not one.
+Q8:  C, Bool for persistent states; trigger for one-shot actions
+Q9:  A, Root Motion drives world-space position/rotation from the animation clip
+Q10: B, Unity + Spine 2D (documented in Supergiant's GDC 2020 talk)
+Q11: B, iOS GPU skinning limit is typically 64 bones
+Q12: B, 4–8 frames of hit stop in Hades (Supergiant GDC 2020)
+Q13: B, AnyState transition fires from any active state
+Q14: C, Disabling distant-character bones is an animation-specific LOD technique
+Q15: B, "Game Feel" by Steve Swink (2008) is the primary reference
+Q16: B, Jitter is unintended oscillation in position/pose
+Q17: B, Motion matching (database pose selection by velocity)
+Q18: B, Animation events fire at specific clip frames for game callbacks
+Q19: B, Slow callbacks stall the frame, risking budget overrun
+Q20: C, Hades uses readability/exaggeration for its top-down camera
+Q21: B, Interruptibility: transitions can be cancelled by higher-priority inputs
+Q22: B, LOD reduces bone count for distant characters
+Q23: C, Transition exit time and blend duration are the first suspects
+Q24: A, The walk cycle must loop seamlessly from any FSM state transition
 ```

@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — CompTIA A+ Core 2 (220-1102 Style)
+# 🧪 Practice Exam 2, CompTIA A+ Core 2 (220-1102 Style)
 
 > **Conditions:** Set a 60-minute timer. 60 questions. Treat it like the real thing.
-> **Pass mark:** 51/60 (~85%) — Core 2 passes at ~78% so aim higher in practice.
+> **Pass mark:** 51/60 (~85%), Core 2 passes at ~78% so aim higher in practice.
 > Take this AFTER finishing Modules 7–12. Covers OS, Security, Software Troubleshooting, Operational Procedures, Mobile Troubleshooting, Documentation/DR.
 
 ---
@@ -224,7 +224,7 @@ B. Disable AutoRun via Group Policy; scan USB with AV
 C. Reformat PC
 D. Replace USB controller
 
-### 37. Anti-static (ESD) protection during hardware handling — the FIRST equipment item to use:
+### 37. Anti-static (ESD) protection during hardware handling, the FIRST equipment item to use:
 A. Hammer
 B. ESD wrist strap (grounded)
 C. Magnetic screwdriver
@@ -262,7 +262,7 @@ D. iCloud is full
 
 ### 43. Jailbreak (iOS) / root (Android) detected by MDM typically triggers:
 A. Free upgrade
-B. Auto-quarantine — block corporate resources, notify user/admin
+B. Auto-quarantine, block corporate resources, notify user/admin
 C. Bigger data plan
 D. Nothing
 
@@ -278,7 +278,7 @@ B. Social-engineering the carrier into porting victim's number to attacker-contr
 C. SIM hardware failure
 D. iOS bug
 
-### 46. A user's Microsoft Authenticator shows a sign-in attempt from a foreign country — the user is at home. CORRECT response:
+### 46. A user's Microsoft Authenticator shows a sign-in attempt from a foreign country, the user is at home. CORRECT response:
 A. Approve to dismiss
 B. **Deny**; reset password; notify IT
 C. Ignore
@@ -310,7 +310,7 @@ D. Replace SSD
 
 ### 51. The Capital One breach (2019) highlighted that an open security ticket can:
 A. Self-resolve
-B. Sit in a queue for weeks while exploitable in production — change-management SLAs must include security urgency
+B. Sit in a queue for weeks while exploitable in production, change-management SLAs must include security urgency
 C. Be ignored
 D. Be marked complete without action
 
@@ -333,7 +333,7 @@ C. PC slower
 D. Mouse confusion
 
 ### 55. Why must you NEVER defragment an SSD?
-A. SSDs have no platters; defrag wears flash without speed gain — use TRIM/Optimize
+A. SSDs have no platters; defrag wears flash without speed gain, use TRIM/Optimize
 B. Illegal
 C. SSDs auto-defrag
 D. Slower than HDD
@@ -372,7 +372,7 @@ D. (a) Adware, (b) Cryptominer, (c) PUP, (d) Ransomware
 A. Strong passwords + nightly backup to a same-room NAS
 B. **BitLocker** + **MDM (Intune) selective wipe** + **3-2-1-1-0 backup** with cloud immutable storage
 C. Disable Windows Defender to speed PCs up
-D. No DR — buy insurance
+D. No DR, buy insurance
 
 ---
 
@@ -411,4 +411,4 @@ D. No DR — buy insurance
 
 ---
 
-➡️ When you're ready for the final test: [Final Mock Exam — 90 Q / 90 min](./Final-Mock-Exam.md)
+➡️ When you're ready for the final test: [Final Mock Exam, 90 Q / 90 min](./Final-Mock-Exam.md)

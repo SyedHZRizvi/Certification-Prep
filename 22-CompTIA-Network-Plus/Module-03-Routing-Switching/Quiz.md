@@ -149,15 +149,15 @@ D. Forwarding Information Base (FIB)
 
 ### Q18. Each switch port on a modern, full-duplex switch represents: *(Analyze)*
 A. One collision domain and one broadcast domain
-B. One collision domain — broadcast domains span the entire VLAN
+B. One collision domain, broadcast domains span the entire VLAN
 C. Zero collision domains
 D. Multiple broadcast domains
 
 ---
 
 ### Q19. A senior engineer suggests disabling STP because "it's slowing convergence." This is: *(Analyze)*
-A. A great idea — STP is unnecessary on modern networks
-B. A terrible idea — disabling STP exposes the network to bridging loops and broadcast storms
+A. A great idea, STP is unnecessary on modern networks
+B. A terrible idea, disabling STP exposes the network to bridging loops and broadcast storms
 C. Acceptable only if there are no redundant L2 paths
 D. Acceptable if RSTP is enabled instead
 
@@ -215,7 +215,7 @@ D. Encapsulation
 
 > *Create-level note:* you're justifying an architectural transition; pick the answer that captures the strongest single technical reason.
 A. "OSPF supports more VLANs than RIP."
-B. "OSPF uses link-state with Dijkstra SPF — sub-second convergence and no 15-hop limit, vs RIP's 30-second update interval and 16=infinity boundary."
+B. "OSPF uses link-state with Dijkstra SPF, sub-second convergence and no 15-hop limit, vs RIP's 30-second update interval and 16=infinity boundary."
 C. "OSPF is Cisco-only and therefore better supported."
 D. "OSPF eliminates the need for any L2 protocols like STP."
 
@@ -257,10 +257,10 @@ EIGRP's default metric is a composite of bandwidth + delay; load, reliability, M
 Link Aggregation (IEEE 802.3ad / 802.1AX) bundles multiple physical links into one logical link with active failover and aggregated throughput.
 
 ### Q12: **B. Access ports facing end hosts**
-PortFast skips listening/learning, going directly to forwarding. Safe ONLY on access ports — using it on a trunk can cause loops.
+PortFast skips listening/learning, going directly to forwarding. Safe ONLY on access ports, using it on a trunk can cause loops.
 
 ### Q13: **B. Disable port if unexpected BPDU received**
-BPDU Guard error-disables a PortFast-enabled access port the moment it sees a BPDU — defending against rogue switches plugged into wall ports.
+BPDU Guard error-disables a PortFast-enabled access port the moment it sees a BPDU, defending against rogue switches plugged into wall ports.
 
 ### Q14: **B. Flood out all ports except the source**
 Unknown unicast frames are flooded out all other ports in the same VLAN. Replies populate the MAC table so future forwarding is targeted.
@@ -272,12 +272,12 @@ AD comparison: static (1) beats OSPF (110). The static route is installed; the O
 SVIs are the modern, common-case way to route between VLANs on a single L3 switch. Router-on-a-stick is the older alternative; separate routers are wasteful.
 
 ### Q17: **B. CAM table**
-The MAC address table is held in Content Addressable Memory (CAM) — hardware-accelerated lookup that gives switches their performance.
+The MAC address table is held in Content Addressable Memory (CAM), hardware-accelerated lookup that gives switches their performance.
 
-### Q18: **B. One collision domain — broadcast domains span the entire VLAN**
+### Q18: **B. One collision domain, broadcast domains span the entire VLAN**
 Each switch port is its own collision domain (full-duplex). All ports in the same VLAN share one broadcast domain.
 
-### Q19: **B. A terrible idea — exposes loops and broadcast storms**
+### Q19: **B. A terrible idea, exposes loops and broadcast storms**
 Disabling STP because it's "slow" is a classic anti-pattern. The fix for slow convergence is RSTP, not STP-off.
 
 ### Q20: **B. VLAN hopping attacks + control-traffic mixing**
@@ -290,16 +290,16 @@ Area 0 = the backbone; all other OSPF areas must connect to it (directly or via 
 eBGP AD = 20 (more trusted than IGPs because it carries inter-AS information). iBGP AD = 200 (less trusted than IGPs within an AS).
 
 ### Q23: **B. OSPF**
-Open standard, link-state with Dijkstra SPF, fast convergence — the textbook fit. EIGRP is now open but historically Cisco. iBGP is for inter-AS / multi-homing.
+Open standard, link-state with Dijkstra SPF, fast convergence, the textbook fit. EIGRP is now open but historically Cisco. iBGP is for inter-AS / multi-homing.
 
 ### Q24: **B. Dynamically learn and treat as static-allowed**
-Sticky MAC lets the switch learn the first connecting MAC and persist it as an allowed static entry — useful when you want allow-list security without manual MAC entry.
+Sticky MAC lets the switch learn the first connecting MAC and persist it as an allowed static entry, useful when you want allow-list security without manual MAC entry.
 
 ### Q25: **B. Switching (or transparent bridging)**
-The combined learn-on-source/forward-by-destination process is switching. (Older bridges did the same thing — "transparent bridging" is the formal protocol name.)
+The combined learn-on-source/forward-by-destination process is switching. (Older bridges did the same thing, "transparent bridging" is the formal protocol name.)
 
 ### Q26: **B. OSPF link-state + Dijkstra + no 15-hop limit**
-The strongest single technical justification is convergence speed AND topology scalability — RIP's 30s update interval + 16=infinity boundary are crippling at any non-trivial scale. The other options are factually wrong (A: VLAN count is L2, irrelevant; C: OSPF is open standard; D: OSPF and STP solve different problems and you still need both).
+The strongest single technical justification is convergence speed AND topology scalability, RIP's 30s update interval + 16=infinity boundary are crippling at any non-trivial scale. The other options are factually wrong (A: VLAN count is L2, irrelevant; C: OSPF is open standard; D: OSPF and STP solve different problems and you still need both).
 
 ---
 
@@ -324,4 +324,4 @@ The strongest single technical justification is convergence speed AND topology s
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Wireless & SOHO Networks](../Module-04-Wireless/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Wireless & SOHO Networks](../Module-04-Wireless/Reading.md)

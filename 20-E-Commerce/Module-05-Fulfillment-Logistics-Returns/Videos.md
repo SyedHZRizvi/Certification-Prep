@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">FBA vs FBM — Decision Matrix</p>
+      <p class="vg-title">FBA vs FBM, Decision Matrix</p>
       <p class="vg-creator">Helium 10 / Jungle Scout</p>
       <span class="vg-duration">⏱ 22 min · Per-SKU economics</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Buy with Prime + Shopify — 2024 Integration</p>
+      <p class="vg-title">Buy with Prime + Shopify, 2024 Integration</p>
       <p class="vg-creator">Amazon / Shopify Dev</p>
       <span class="vg-duration">⏱ 18 min · DTC + FBA without Amazon marketplace</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DTC 3PL — How to Choose</p>
+      <p class="vg-title">DTC 3PL, How to Choose</p>
       <p class="vg-creator">ShipBob / Andrew Faris</p>
       <span class="vg-duration">⏱ 16 min · 3PL selection criteria</span>
     </div>
@@ -51,7 +51,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Loop Returns — Returns as Retention Lever</p>
+      <p class="vg-title">Loop Returns, Returns as Retention Lever</p>
       <p class="vg-creator">Loop Returns</p>
       <span class="vg-duration">⏱ 18 min · 20-50% LTV lift via easy returns</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">OMS vs WMS vs TMS — The Stack</p>
+      <p class="vg-title">OMS vs WMS vs TMS, The Stack</p>
       <p class="vg-creator">Manhattan Associates / Fluent</p>
       <span class="vg-duration">⏱ 20 min · The three-system distinction</span>
     </div>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Free Shipping Threshold — The Math</p>
+      <p class="vg-title">Free Shipping Threshold, The Math</p>
       <p class="vg-creator">Baymard / Common Thread Collective</p>
       <span class="vg-duration">⏱ 14 min · AOV lift via thresholds</span>
     </div>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Reverse Logistics — A/B/C/D Grading</p>
+      <p class="vg-title">Reverse Logistics, A/B/C/D Grading</p>
       <p class="vg-creator">Optoro / B-Stock</p>
       <span class="vg-duration">⏱ 16 min · Inspection workflow</span>
     </div>
@@ -126,7 +126,7 @@
 
 ## ✅ After watching
 
-1. Define OMS vs WMS vs TMS — one sentence each.
+1. Define OMS vs WMS vs TMS, one sentence each.
 2. State FBA fulfillment fee structure + Q4 peak surcharge.
 3. Map the Buy with Prime decision (when to use, when not to).
 4. State the free shipping threshold formula.

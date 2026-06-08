@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Identity & Entra ID Hybrid Integration
 
-> **How to use:** Click any card to search YouTube for the latest top result. Hybrid identity bridges AZ-800 and AZ-801 — at least 10% of total exam weight.
+> **How to use:** Click any card to search YouTube for the latest top result. Hybrid identity bridges AZ-800 and AZ-801, at least 10% of total exam weight.
 
 ## ⭐ Essential watching (~90 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Entra Connect vs Cloud Sync — Which to Choose</p>
+      <p class="vg-title">Entra Connect vs Cloud Sync, Which to Choose</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 28 min · The definitive comparison</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Hybrid Entra Join — End to End</p>
+      <p class="vg-title">Hybrid Entra Join, End to End</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 25 min · Device join states</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Seamless SSO — How Kerberos Powers It</p>
+      <p class="vg-title">Seamless SSO, How Kerberos Powers It</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 18 min · AZUREADSSOACC account</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Entra Domain Services — Managed AD in Azure</p>
+      <p class="vg-title">Entra Domain Services, Managed AD in Azure</p>
       <p class="vg-creator">Inside Cloud and Security</p>
       <span class="vg-duration">⏱ 15 min · Legacy app lift-and-shift</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Passwordless Rollout — FIDO2 & Passkeys</p>
+      <p class="vg-title">Passwordless Rollout, FIDO2 & Passkeys</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 18 min · 2024+ recommended</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Cross-Tenant Access Settings — Modern B2B</p>
+      <p class="vg-title">Cross-Tenant Access Settings, Modern B2B</p>
       <p class="vg-creator">Tim Warner</p>
       <span class="vg-duration">⏱ 14 min · Tenant restrictions</span>
     </div>
@@ -146,7 +146,7 @@
 Answer these in your notebook:
 
 1. When would you use Entra Cloud Sync instead of Connect Sync?
-2. PHS, PTA, Federation — which does Microsoft recommend as the 2026 default?
+2. PHS, PTA, Federation, which does Microsoft recommend as the 2026 default?
 3. What's the difference between Entra Joined and Hybrid Entra Joined?
 4. What does Seamless SSO use under the hood, and which devices does it work on?
 5. What is Continuous Access Evaluation (CAE) and which 2023 incident accelerated its adoption?

@@ -1,9 +1,9 @@
 ---
 permalink: /35-Motion-Graphics-UI-Animation/Module-03-Typography-Text-Animation/Videos/
-title: "Module 3: Videos — Typography & Text Animation"
+title: "Module 3: Videos, Typography & Text Animation"
 ---
 
-# 🎬 Module 3 Videos — Typography & Text Animation
+# 🎬 Module 3 Videos, Typography & Text Animation
 
 ---
 
@@ -14,7 +14,7 @@ title: "Module 3: Videos — Typography & Text Animation"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+text+animator+range+selector+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3gLuYOmkYBw/mqdefault.jpg" alt="Text Animator AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">After Effects Text Animator — The Complete Guide</div>
+    <div class="vg-card-title">After Effects Text Animator, The Complete Guide</div>
     <div class="vg-card-meta">School of Motion · Range selectors, properties, and techniques</div>
   </div>
 </a>
@@ -22,7 +22,7 @@ title: "Module 3: Videos — Typography & Text Animation"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kinetic+typography+after+effects+tutorial+beginners">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/Px3tBj1h5jc/mqdefault.jpg" alt="Kinetic Typography AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Kinetic Typography in After Effects — Full Tutorial</div>
+    <div class="vg-card-title">Kinetic Typography in After Effects, Full Tutorial</div>
     <div class="vg-card-meta">Ben Marriott · Build a professional kinetic text piece from scratch</div>
   </div>
 </a>
@@ -30,7 +30,7 @@ title: "Module 3: Videos — Typography & Text Animation"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=blur+scale+opacity+text+reveal+after+effects">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/D4xDCUBzQqI/mqdefault.jpg" alt="Blur Scale Opacity Reveal" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">The Blur Scale Opacity Text Reveal — Apple Style</div>
+    <div class="vg-card-title">The Blur Scale Opacity Text Reveal, Apple Style</div>
     <div class="vg-card-meta">Mobox Graphics · The single most-used text animation technique</div>
   </div>
 </a>
@@ -78,7 +78,7 @@ title: "Module 3: Videos — Typography & Text Animation"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=variable+fonts+after+effects+weight+animation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/g5bLPpBDkbA/mqdefault.jpg" alt="Variable Fonts AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Variable Fonts in After Effects — Animating Font Weight</div>
+    <div class="vg-card-title">Variable Fonts in After Effects, Animating Font Weight</div>
     <div class="vg-card-meta">Ben Marriott · Weight bloom technique and variable font workflow</div>
   </div>
 </a>
@@ -94,7 +94,7 @@ title: "Module 3: Videos — Typography & Text Animation"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=typography+motion+design+history+graphic+design">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/XqXxKxvSUwI/mqdefault.jpg" alt="Typography Motion History" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">History of Motion Typography — From Saul Bass to Today</div>
+    <div class="vg-card-title">History of Motion Typography, From Saul Bass to Today</div>
     <div class="vg-card-meta">Design History · The evolution of kinetic typography as an art form</div>
   </div>
 </a>
@@ -118,7 +118,7 @@ title: "Module 3: Videos — Typography & Text Animation"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=font+licensing+motion+design+broadcast+commercial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/aStmb7SFJNE/mqdefault.jpg" alt="Font Licensing Motion" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Font Licensing for Motion Designers — What You Need to Know</div>
+    <div class="vg-card-title">Font Licensing for Motion Designers, What You Need to Know</div>
     <div class="vg-card-meta">School of Motion · Desktop vs broadcast license; legal basics</div>
   </div>
 </a>

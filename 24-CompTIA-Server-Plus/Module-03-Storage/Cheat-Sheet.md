@@ -79,7 +79,7 @@ Idle drive that auto-rebuilds on failure.
 | **LUN masking** | Storage array |
 | **CHAP / target ACL** (iSCSI) | Storage array |
 
-🧠 **Both** zoning and masking — different layers, both needed.
+🧠 **Both** zoning and masking, different layers, both needed.
 
 ---
 
@@ -169,10 +169,10 @@ NTFS = Windows ACL+journal · ReFS = Win integrity streams · ext4 = Linux defau
 Cover the answers and recite:
 
 1. 8 × 4 TB RAID 6 usable? ___
-2. SAN vs NAS — block or file? ___
+2. SAN vs NAS, block or file? ___
 3. iSCSI port? ___
-4. Zoning vs LUN masking — which layer is each? ___
-5. MPIO — what does it protect against? ___
+4. Zoning vs LUN masking, which layer is each? ___
+5. MPIO, what does it protect against? ___
 6. RPO of synchronous replication? ___
 
 If you can answer all 6 in under 60 seconds, you own this module. ✅

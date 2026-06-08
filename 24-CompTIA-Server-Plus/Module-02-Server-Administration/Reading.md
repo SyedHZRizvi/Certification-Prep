@@ -1,6 +1,6 @@
 # Module 2: Server Administration (Windows & Linux) 🪟🐧
 
-> **Why this module matters:** Server administration is the largest single domain on SK0-005 (~30%, alongside virtualization and networking). The exam will not let you specialize in just Windows or just Linux — you must be conversational in both. This module gives you the vocabulary and the muscle memory for the common admin tasks both platforms ask you to perform.
+> **Why this module matters:** Server administration is the largest single domain on SK0-005 (~30%, alongside virtualization and networking). The exam will not let you specialize in just Windows or just Linux, you must be conversational in both. This module gives you the vocabulary and the muscle memory for the common admin tasks both platforms ask you to perform.
 
 > **Prerequisites for this module.** Before starting you should be comfortable with:
 > - Module 1 (server hardware)
@@ -13,13 +13,13 @@
 
 ## 🍞 A Story: Two Sysadmins, Two OSes, One Outage
 
-Meet Priya and Jordan. They've co-administered the regional credit union from Module 1's reading for two years. Priya runs the Windows side — Active Directory, DNS, DHCP, file shares, the SharePoint intranet. Jordan runs Linux — the public-facing web servers, the database, the in-house ticketing system, the Jenkins build farm.
+Meet Priya and Jordan. They've co-administered the regional credit union from Module 1's reading for two years. Priya runs the Windows side Active Directory, DNS, DHCP, file shares, the SharePoint intranet. Jordan runs Linux the public-facing web servers, the database, the in-house ticketing system, the Jenkins build farm.
 
-At 7:43 a.m. on a Wednesday a critical security patch for the Linux kernel is announced. Jordan starts patching production from his laptop while drinking coffee. At 7:44 a.m. the SharePoint intranet goes offline for everyone — *but only for Windows clients*. Linux users on the wiki are fine.
+At 7:43 a.m. on a Wednesday a critical security patch for the Linux kernel is announced. Jordan starts patching production from his laptop while drinking coffee. At 7:44 a.m. the SharePoint intranet goes offline for everyone, *but only for Windows clients*. Linux users on the wiki are fine.
 
-The cause turns out to be a single config drift: a Linux NTP server (Jordan's) had jumped to a different upstream pool last week and was drifting +3 minutes ahead. Priya's Windows domain controllers, which had been peering to that NTP server via the Domain Time Hierarchy, drifted with it. Once the drift exceeded 5 minutes, **Kerberos** authentication broke on every Windows client — and SharePoint uses Kerberos.
+The cause turns out to be a single config drift: a Linux NTP server (Jordan's) had jumped to a different upstream pool last week and was drifting +3 minutes ahead. Priya's Windows domain controllers, which had been peering to that NTP server via the Domain Time Hierarchy, drifted with it. Once the drift exceeded 5 minutes, **Kerberos** authentication broke on every Windows client, and SharePoint uses Kerberos.
 
-The fix took 4 minutes once they understood it (point both worlds back to `time.cloudflare.com`). The *understanding* took 90 minutes — because Priya had never `systemctl status chrony`'d a Linux box, and Jordan had never run `w32tm /query /status` on Windows.
+The fix took 4 minutes once they understood it (point both worlds back to `time.cloudflare.com`). The *understanding* took 90 minutes, because Priya had never `systemctl status chrony`'d a Linux box, and Jordan had never run `w32tm /query /status` on Windows.
 
 This module is the antidote. You'll learn:
 
@@ -30,7 +30,7 @@ This module is the antidote. You'll learn:
 
 ---
 
-## 🪟 Windows Server — Roles and Features
+## 🪟 Windows Server, Roles and Features
 
 Microsoft has shipped Windows Server roughly every 2–3 years since NT 3.1 (1993). Currently SK0-005 era candidates encounter **Windows Server 2016 / 2019 / 2022** in the wild and increasingly **Windows Server 2025**. The exam tests concepts that have been stable across all four.
 
@@ -60,13 +60,13 @@ A "role" is a major function. You add roles via **Server Manager** (GUI) or **In
 
 A "feature" supports roles or apps. Examples:
 
-- **.NET Framework 3.5 / 4.x / 4.8** — runtime
-- **BitLocker Drive Encryption** — disk encryption
-- **PowerShell ISE** — scripting environment
-- **Remote Server Administration Tools (RSAT)** — manage AD/DNS/DHCP from another machine
-- **Hyper-V Module for Windows PowerShell** — cmdlets to manage Hyper-V
-- **Telnet Client** — testing only; never as a server
-- **SMB 1.0/CIFS support** — disable in modern deployments (WannaCry, EternalBlue exploited SMB1)
+- **.NET Framework 3.5 / 4.x / 4.8**, runtime
+- **BitLocker Drive Encryption**, disk encryption
+- **PowerShell ISE**, scripting environment
+- **Remote Server Administration Tools (RSAT)**, manage AD/DNS/DHCP from another machine
+- **Hyper-V Module for Windows PowerShell**, cmdlets to manage Hyper-V
+- **Telnet Client**, testing only; never as a server
+- **SMB 1.0/CIFS support**, disable in modern deployments (WannaCry, EternalBlue exploited SMB1)
 
 ### Installing a role with PowerShell
 
@@ -84,11 +84,11 @@ Install-WindowsFeature -Name DHCP -IncludeManagementTools
 | **Server Core** | No GUI, only CLI + sconfig + remote tools | Smaller attack surface, less patching, less RAM/disk |
 | **Nano Server** (legacy, mostly containers now) | Container-only image | Containers/microservices |
 
-🎯 **Exam tip:** Server Core is **preferred for production** — smaller attack surface, fewer patches per month, lower resource use. Manage it remotely via RSAT, PowerShell remoting, or Windows Admin Center.
+🎯 **Exam tip:** Server Core is **preferred for production**, smaller attack surface, fewer patches per month, lower resource use. Manage it remotely via RSAT, PowerShell remoting, or Windows Admin Center.
 
 ---
 
-## 🐧 Linux Server — systemd, Daemons, Distributions
+## 🐧 Linux Server, systemd, Daemons, Distributions
 
 Linux servers come in two main families on the exam:
 
@@ -119,8 +119,8 @@ systemd is the init system + service manager + logging system + a lot more. You'
 | `journalctl -xe` | Latest log + context for failed units |
 
 **Unit file locations:**
-- `/etc/systemd/system/` — administrator-defined (overrides distro defaults)
-- `/lib/systemd/system/` or `/usr/lib/systemd/system/` — package-provided
+- `/etc/systemd/system/`, administrator-defined (overrides distro defaults)
+- `/lib/systemd/system/` or `/usr/lib/systemd/system/`, package-provided
 
 ### Common daemons on the exam
 
@@ -187,7 +187,7 @@ chgrp ops file              # change group only
 
 ---
 
-## 🔁 Time Sync — Why It Matters Across Both Platforms
+## 🔁 Time Sync, Why It Matters Across Both Platforms
 
 The opening story is real. Kerberos (the auth protocol AD uses) requires clock skew between client and KDC to be **≤ 5 minutes** (configurable, but default). If clocks drift apart, authentication fails everywhere.
 
@@ -203,7 +203,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 
 ---
 
-## 🌐 DNS, DHCP, AD — The Shared Core
+## 🌐 DNS, DHCP, AD, The Shared Core
 
 ### DNS
 
@@ -215,10 +215,10 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 | **MX** | Mail exchanger |
 | **NS** | Authoritative name server |
 | **PTR** | IP → hostname (reverse lookup) |
-| **SRV** | Service location (AD uses heavily — `_ldap._tcp`, `_kerberos._udp`) |
+| **SRV** | Service location (AD uses heavily, `_ldap._tcp`, `_kerberos._udp`) |
 | **TXT** | Text payload (SPF, DKIM, domain ownership) |
 
-🎯 **Exam pattern:** *"Domain joins fail. `nslookup` works for forward lookups."* → Check **PTR / reverse zone** — AD relies on reverse DNS for many operations.
+🎯 **Exam pattern:** *"Domain joins fail. `nslookup` works for forward lookups."* → Check **PTR / reverse zone**, AD relies on reverse DNS for many operations.
 
 ### DHCP
 
@@ -255,15 +255,15 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 
 ## 💻 Remote Management
 
-### RDP — Remote Desktop Protocol
+### RDP, Remote Desktop Protocol
 
 - Microsoft protocol, **TCP 3389** (and UDP 3389 for low-latency mode)
 - Graphical session; the user sees a full desktop
 - Encrypted with TLS by default in modern Windows
-- **NLA** (Network Level Authentication) authenticates the user *before* establishing a session — defense against pre-auth RDP exploits
-- For internet exposure use **RD Gateway** (TCP 443 over HTTPS, tunnels RDP through TLS to internal hosts) — NEVER expose 3389 directly to the internet
+- **NLA** (Network Level Authentication) authenticates the user *before* establishing a session, defense against pre-auth RDP exploits
+- For internet exposure use **RD Gateway** (TCP 443 over HTTPS, tunnels RDP through TLS to internal hosts), NEVER expose 3389 directly to the internet
 
-### SSH — Secure Shell
+### SSH, Secure Shell
 
 - IETF standard (RFC 4250-4256), **TCP 22**
 - Encrypted CLI session; underpins almost everything in Linux/Unix admin
@@ -291,7 +291,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
   Enter-PSSession -ComputerName srv01 -Credential ...   # interactive
   Invoke-Command -ComputerName srv01,srv02 -ScriptBlock { Get-Service }  # fan-out
   ```
-- Modern PowerShell 7 also speaks **SSH** as a transport — bridging Windows and Linux.
+- Modern PowerShell 7 also speaks **SSH** as a transport, bridging Windows and Linux.
 
 ### Comparison
 
@@ -301,7 +301,7 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 | **SSH** | App | TCP 22 | CLI (or tunneling) | Linux/Unix |
 | **WinRM HTTP** | App | TCP 5985 | CLI/script | Windows |
 | **WinRM HTTPS** | App | TCP 5986 | CLI/script | Windows |
-| **Telnet** | App | TCP 23 | CLI, **cleartext** — testing only | Legacy |
+| **Telnet** | App | TCP 23 | CLI, **cleartext**, testing only | Legacy |
 
 🚨 **Trap on the exam:** Never use Telnet for admin. Cleartext credentials. Tested as a "what's wrong with this config?" trap.
 
@@ -311,24 +311,24 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 
 ### Windows automation
 
-- **PowerShell** — primary scripting language (.ps1 files, modules)
-- **Group Policy** — declarative config for domain-joined machines
-- **DSC** (Desired State Configuration) — declarative PowerShell-based config management
-- **Windows Admin Center** — modern web GUI replacement for many MMC snap-ins
+- **PowerShell**, primary scripting language (.ps1 files, modules)
+- **Group Policy**, declarative config for domain-joined machines
+- **DSC** (Desired State Configuration), declarative PowerShell-based config management
+- **Windows Admin Center**, modern web GUI replacement for many MMC snap-ins
 
 ### Linux automation
 
-- **Bash** — universal scripting (`#!/bin/bash`)
-- **Python** — modern admin scripting
-- **cron** — time-based job scheduler (`/etc/crontab`, `crontab -e`)
-- **systemd timers** — modern alternative to cron, with better logging via journald
+- **Bash**, universal scripting (`#!/bin/bash`)
+- **Python**, modern admin scripting
+- **cron**, time-based job scheduler (`/etc/crontab`, `crontab -e`)
+- **systemd timers**, modern alternative to cron, with better logging via journald
 
 ### Cross-platform
 
-- **Ansible** — agentless, SSH-based, YAML playbooks; works against Windows via WinRM
-- **Puppet, Chef, SaltStack** — agent-based config management
-- **Terraform** — infrastructure-as-code for cloud + on-prem
-- **Git** — version control for scripts, playbooks, and runbooks
+- **Ansible**, agentless, SSH-based, YAML playbooks; works against Windows via WinRM
+- **Puppet, Chef, SaltStack**, agent-based config management
+- **Terraform**, infrastructure-as-code for cloud + on-prem
+- **Git**, version control for scripts, playbooks, and runbooks
 
 ---
 
@@ -338,14 +338,14 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 
 **Walkthrough.**
 
-1. **DC1, DC2** — Two Windows Server Core VMs running **AD DS + DNS + DHCP**. Two for redundancy. Server Core reduces patch surface. DNS and DHCP are AD-aware and should live with DCs (or be replicated).
-2. **Web/App VM** — One VM with **IIS + the application**. Separate from data tier. Pick Desktop Experience only if app management requires the GUI; otherwise Server Core.
-3. **SQL VM** — One VM dedicated to **SQL Server**, ideally Server Core / dedicated database compute. Storage on its own LUN with RAID 10 (Module 3). Backups via SQL Agent → DPM or Veeam.
-4. **File Server** — Demote to a separate VM later when File Services workload warrants. For now, can co-locate on the app VM if traffic is small.
+1. **DC1, DC2**, Two Windows Server Core VMs running **AD DS + DNS + DHCP**. Two for redundancy. Server Core reduces patch surface. DNS and DHCP are AD-aware and should live with DCs (or be replicated).
+2. **Web/App VM**, One VM with **IIS + the application**. Separate from data tier. Pick Desktop Experience only if app management requires the GUI; otherwise Server Core.
+3. **SQL VM**, One VM dedicated to **SQL Server**, ideally Server Core / dedicated database compute. Storage on its own LUN with RAID 10 (Module 3). Backups via SQL Agent → DPM or Veeam.
+4. **File Server**, Demote to a separate VM later when File Services workload warrants. For now, can co-locate on the app VM if traffic is small.
 
 **Why this layout?**
 
-- AD DS, DNS, DHCP cluster naturally — they share dependencies.
+- AD DS, DNS, DHCP cluster naturally, they share dependencies.
 - Tier separation (web → app → DB) localizes the blast radius of a compromise and lets you scale tiers independently.
 - Server Core means each VM patches faster and reboots less.
 - This is the kind of integration question Server+ PBQs ask.
@@ -361,9 +361,9 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 | "Server Core is for advanced admins only." | Server Core is the *default best practice* for production roles. Lower attack surface, fewer patches, less RAM/disk. |
 | "Telnet is fine for admin." | Cleartext credentials. Sec+/Server+ flag this constantly. Use SSH (Linux) or WinRM HTTPS / RDP+NLA (Windows). |
 | "AD authentication failures must be password problems." | Top causes are time skew (>5 min), missing/broken SRV/PTR DNS, DC replication broken. Check those first. |
-| "RDP on 3389 is fine to expose to the internet for road warriors." | No — use an RD Gateway behind 443 with TLS + MFA, or a VPN. Direct 3389 exposure is breach #1 for SMBs (BlueKeep CVE-2019-0708). |
+| "RDP on 3389 is fine to expose to the internet for road warriors." | No, use an RD Gateway behind 443 with TLS + MFA, or a VPN. Direct 3389 exposure is breach #1 for SMBs (BlueKeep CVE-2019-0708). |
 | "WSUS approves patches automatically." | WSUS *downloads* but typically requires an admin to approve patches and target groups. Don't conflate WSUS with auto-update. |
-| "Putting both DCs on the same hypervisor host is fine." | Anti-pattern — one host failure takes the directory down. Use anti-affinity rules to keep DCs on different hosts (Module 4). |
+| "Putting both DCs on the same hypervisor host is fine." | Anti-pattern, one host failure takes the directory down. Use anti-affinity rules to keep DCs on different hosts (Module 4). |
 
 ---
 
@@ -408,11 +408,11 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 
 ---
 
-## 📊 Case Study — NotPetya, Maersk, and the Cost of Patch Discipline (2017)
+## 📊 Case Study, NotPetya, Maersk, and the Cost of Patch Discipline (2017)
 
-**Situation.** On 27 June 2017, the **NotPetya** wiper masquerading as ransomware tore through Ukraine — and from there into multinational supply chains via a tax-software auto-update channel (M.E.Doc). It abused the **EternalBlue** SMB v1 exploit (Microsoft MS17-010, patched 14 March 2017) and the **Mimikatz**-based credential dumping technique to move laterally, encrypting MFTs and wiping disks (later analysis: actually a wiper, not ransomware; recovery wasn't possible even with payment).
+**Situation.** On 27 June 2017, the **NotPetya** wiper masquerading as ransomware tore through Ukraine, and from there into multinational supply chains via a tax-software auto-update channel (M.E.Doc). It abused the **EternalBlue** SMB v1 exploit (Microsoft MS17-010, patched 14 March 2017) and the **Mimikatz**-based credential dumping technique to move laterally, encrypting MFTs and wiping disks (later analysis: actually a wiper, not ransomware; recovery wasn't possible even with payment).
 
-**What it did to Maersk.** A.P. Møller-Maersk — the world's largest container-shipping company at the time — lost its entire global IT estate in about 7 minutes. 4,000 servers, 45,000 PCs, 2,500 applications offline. Port terminals stopped, ships were stranded, supply chains globally degraded. Maersk's chairman publicly confirmed reinstalling its **entire global Active Directory from a single surviving DC in Ghana** that had been offline during a power outage — the only AD copy not encrypted. Total cost: **$250–300 million** in lost revenue and recovery (Maersk H1 2017 results announcement; *Wired*, "The Untold Story of NotPetya," August 2018).
+**What it did to Maersk.** A.P. Møller-Maersk the world's largest container-shipping company at the time lost its entire global IT estate in about 7 minutes. 4,000 servers, 45,000 PCs, 2,500 applications offline. Port terminals stopped, ships were stranded, supply chains globally degraded. Maersk's chairman publicly confirmed reinstalling its **entire global Active Directory from a single surviving DC in Ghana** that had been offline during a power outage, the only AD copy not encrypted. Total cost: **$250–300 million** in lost revenue and recovery (Maersk H1 2017 results announcement; *Wired*, "The Untold Story of NotPetya," August 2018).
 
 **Lesson for the exam / for practitioners.**
 
@@ -421,9 +421,9 @@ The opening story is real. Kerberos (the auth protocol AD uses) requires clock s
 - **AD DR plan.** "We have backups" is not the same as "we have tested backups we can restore *quickly*." Maersk's Ghana DC saved them by accident.
 - **Server Core reduces attack surface.** A DC on Server Core has fewer GUI components to exploit and fewer monthly patches.
 - **Segment the management plane.** A flat domain admin credential reachable from every workstation = Mimikatz pivot in seconds. Use **Tiered Administration** (Tier 0 / Tier 1 / Tier 2).
-- **Anti-affinity for DCs.** Maersk's redundancy was wiped because *every* DC was reachable from the infected network. Air-gap at least one (Ghana, in their case — accidentally).
+- **Anti-affinity for DCs.** Maersk's redundancy was wiped because *every* DC was reachable from the infected network. Air-gap at least one (Ghana, in their case, accidentally).
 
-This is the scenario Server+ tests when asking "design a resilient AD deployment with patch management." The answer is rarely one thing — it's *layered discipline*.
+This is the scenario Server+ tests when asking "design a resilient AD deployment with patch management." The answer is rarely one thing, it's *layered discipline*.
 
 **Discussion (Socratic).**
 - **Q1:** If you were Maersk's CISO on 28 March 2017 (two weeks after the EternalBlue patch dropped), what three concrete operational changes would you push to land before 27 June, given limited budget? Defend each.
@@ -448,9 +448,9 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 21/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 21/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 3 — Storage: RAID, SAN, NAS](../Module-03-Storage/Reading.md)
+4. ➡️ Move on: [Module 3, Storage: RAID, SAN, NAS](../Module-03-Storage/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 3](../Module-03-Storage/Reading.md) attaches storage to your administered hosts; [Module 4](../Module-04-Virtualization/Reading.md) virtualizes everything you just learned to install bare-metal; [Module 6](../Module-06-Security/Reading.md) hardens these services; [Module 8](../Module-08-Troubleshooting/Reading.md) diagnoses when they break.
@@ -462,18 +462,18 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 Microsoft Learn — *Windows Server documentation* — current authoritative reference
-- 📄 Red Hat — *System Administrator's Guide* and *Configuring basic system settings*
-- 📄 Lennart Poettering (systemd primary author) — design papers and blog posts on the systemd project site
-- 📄 IETF RFC 4250–4256 (2006) — SSH protocol suite
-- 📄 IETF RFC 4120 (2005) — Kerberos V5 — for the AD authentication backbone
+- 📄 Microsoft Learn *Windows Server documentation* current authoritative reference
+- 📄 Red Hat, *System Administrator's Guide* and *Configuring basic system settings*
+- 📄 Lennart Poettering (systemd primary author), design papers and blog posts on the systemd project site
+- 📄 IETF RFC 4250–4256 (2006), SSH protocol suite
+- 📄 IETF RFC 4120 (2005) Kerberos V5 for the AD authentication backbone
 
 **Case-study sources:**
 - 📄 *Wired*, Andy Greenberg (2018). "The Untold Story of NotPetya, the Most Devastating Cyberattack in History." 22 August 2018.
-- 📄 A.P. Møller-Maersk 2017 interim financial results — official statement on NotPetya impact.
+- 📄 A.P. Møller-Maersk 2017 interim financial results, official statement on NotPetya impact.
 
 **Practitioner / exam:**
 - 📖 *CompTIA Server+ SK0-005 Exam Objectives* (free PDF from CompTIA)
 - 📖 [Professor Messer SK0-005 videos](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)
-- 📖 Mike Meyers, *CompTIA Server+ All-in-One Exam Guide, 5th ed.* — chapter on administration
-- 📖 *Active Directory* (O'Reilly, Allen/Lowe-Norris) — the canonical AD book
+- 📖 Mike Meyers, *CompTIA Server+ All-in-One Exam Guide, 5th ed.*, chapter on administration
+- 📖 *Active Directory* (O'Reilly, Allen/Lowe-Norris), the canonical AD book

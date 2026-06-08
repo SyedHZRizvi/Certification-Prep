@@ -15,7 +15,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">Keylight in After Effects: Professional Green Screen Workflow</div>
     <div class="vg-card-meta">Video Copilot · ~22 min</div>
-    <div class="vg-card-desc">Andrew Kramer's foundational Keylight tutorial — the three-step workflow, screen matte view, and common pitfalls.</div>
+    <div class="vg-card-desc">Andrew Kramer's foundational Keylight tutorial, the three-step workflow, screen matte view, and common pitfalls.</div>
   </div>
 </a>
 
@@ -24,7 +24,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">The Three-Step Key: Rough, Refined, Fine in After Effects</div>
     <div class="vg-card-meta">Surfaced Studio · ~18 min</div>
-    <div class="vg-card-desc">Detailed breakdown of the professional three-step keying workflow — how each stage cleans a different part of the matte.</div>
+    <div class="vg-card-desc">Detailed breakdown of the professional three-step keying workflow, how each stage cleans a different part of the matte.</div>
   </div>
 </a>
 
@@ -42,7 +42,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">Light Wrap in After Effects: Making Composites Look Real</div>
     <div class="vg-card-meta">Film Riot · ~12 min</div>
-    <div class="vg-card-desc">The single technique that separates amateur from professional compositing — simulating background light wrapping around a foreground subject.</div>
+    <div class="vg-card-desc">The single technique that separates amateur from professional compositing, simulating background light wrapping around a foreground subject.</div>
   </div>
 </a>
 
@@ -59,7 +59,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">Keying Hair and Difficult Subjects in After Effects</div>
     <div class="vg-card-meta">Video Copilot · ~20 min</div>
-    <div class="vg-card-desc">Handling the hardest keying subjects — fine hair strands, motion blur, semi-transparent objects — with multi-instance Keylight technique.</div>
+    <div class="vg-card-desc">Handling the hardest keying subjects fine hair strands, motion blur, semi-transparent objects with multi-instance Keylight technique.</div>
   </div>
 </a>
 
@@ -68,7 +68,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">Difference Mattes: Compositing Without a Greenscreen</div>
     <div class="vg-card-meta">Surfaced Studio · ~11 min</div>
-    <div class="vg-card-desc">How to extract a subject from footage using a clean plate and the Difference blending mode — when and why this works.</div>
+    <div class="vg-card-desc">How to extract a subject from footage using a clean plate and the Difference blending mode, when and why this works.</div>
   </div>
 </a>
 
@@ -77,7 +77,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">Color Matching Your Composite: Plate to Background</div>
     <div class="vg-card-meta">Film Riot · ~16 min</div>
-    <div class="vg-card-desc">The color grading workflow for matching a studio-lit subject to an outdoor or CG background — curves, saturation, and edge correction.</div>
+    <div class="vg-card-desc">The color grading workflow for matching a studio-lit subject to an outdoor or CG background, curves, saturation, and edge correction.</div>
   </div>
 </a>
 
@@ -86,7 +86,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Bad and Good Green Screen Compositing</div>
     <div class="vg-card-meta">Corridor Crew · ~25 min</div>
-    <div class="vg-card-desc">Working VFX artists break down what makes green screen compositing succeed or fail in real film productions — essential viewing for training your eye.</div>
+    <div class="vg-card-desc">Working VFX artists break down what makes green screen compositing succeed or fail in real film productions, essential viewing for training your eye.</div>
   </div>
 </a>
 
@@ -103,7 +103,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">Green Screen vs Blue Screen: When to Use Which</div>
     <div class="vg-card-meta">Film Riot · ~10 min</div>
-    <div class="vg-card-desc">The technical and practical reasons behind the green vs blue screen choice — Bayer sensor sampling, wardrobe conflicts, and spill behavior.</div>
+    <div class="vg-card-desc">The technical and practical reasons behind the green vs blue screen choice, Bayer sensor sampling, wardrobe conflicts, and spill behavior.</div>
   </div>
 </a>
 
@@ -112,7 +112,7 @@ title: "Module 2 Videos: Green Screen Keying"
   <div class="vg-card-body">
     <div class="vg-card-title">How to Shoot Greenscreen Properly: Lighting and Setup</div>
     <div class="vg-card-meta">Film Riot · ~13 min</div>
-    <div class="vg-card-desc">The production side of keying — how to light a greenscreen backing evenly, minimize spill on talent, and set up the shot for the compositor.</div>
+    <div class="vg-card-desc">The production side of keying, how to light a greenscreen backing evenly, minimize spill on talent, and set up the shot for the compositor.</div>
   </div>
 </a>
 

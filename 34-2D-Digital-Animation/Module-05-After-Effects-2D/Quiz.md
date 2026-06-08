@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-05-After-Effects-2D/Quiz/
 title: "Module 5 Quiz: After Effects for 2D Animation"
 ---
 
-# 🧠 Module 5 Quiz — After Effects for 2D Animation
+# 🧠 Module 5 Quiz, After Effects for 2D Animation
 
 ---
 
@@ -39,7 +39,7 @@ D. F11
 A. A layer that contains audio information but no visual content
 B. An invisible object at render time used to hold transform data and control other layers via parenting
 C. A disabled keyframe that has been muted in the Timeline
-D. A pre-composition with no content — used as a placeholder
+D. A pre-composition with no content, used as a placeholder
 
 ---
 
@@ -55,7 +55,7 @@ D. Adding dynamic physics to separate character layers
 ### Q6. When importing a layered Illustrator file into After Effects, which import option preserves individual Illustrator layers as separate AE layers?
 
 A. Import as Footage (Merge Layers)
-B. Import as Composition — Retain Layer Sizes
+B. Import as Composition, Retain Layer Sizes
 C. Import as Merged Layer
 D. Import as Bitmap Sequence
 
@@ -133,7 +133,7 @@ D. Ctrl/Cmd+Shift+P
 
 ---
 
-### Q15. What does "Import as Composition — Retain Layer Sizes" do when importing an Illustrator file into After Effects?
+### Q15. What does "Import as Composition, Retain Layer Sizes" do when importing an Illustrator file into After Effects?
 
 A. All Illustrator layers are merged into a single layer
 B. Each Illustrator layer becomes its own AE layer with the same dimensions as that layer's artwork bounds
@@ -172,7 +172,7 @@ D. Parenting is not possible across separate layers; they must be pre-composed f
 ### Q19. What is the primary advantage of designing character body parts as separate layers in Illustrator before importing to After Effects?
 
 A. Illustrator files render faster than Animate files in AE
-B. Each body part can be individually controlled via separate AE layers and parenting — essential for articulated rigs
+B. Each body part can be individually controlled via separate AE layers and parenting, essential for articulated rigs
 C. The "Create Shapes from Vector Layers" command requires exactly one Illustrator layer per character
 D. AE's Puppet Pin Tool only works with multi-layer Illustrator files
 
@@ -226,28 +226,28 @@ D. Export as GIF and import as footage into AE
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — The Composition is AE's canvas; it's what renders.
-Q2.  B — "Create Shapes from Vector Layers" converts imported AI layers to native AE Shape Layers.
-Q3.  C — F9 applies Easy Ease to selected keyframes.
-Q4.  B — Null Objects are invisible at render time; used as rig controllers via parenting.
-Q5.  B — Puppet Pin Tool is for mesh deformation on a single flattened layer.
-Q6.  B — "Import as Composition — Retain Layer Sizes" preserves individual Illustrator layers.
-Q7.  B — The Pick Whip creates parent-child hierarchical relationships between layers.
-Q8.  C — Default Easy Ease handles are often too aggressive; open Graph Editor to refine.
-Q9.  B — Speed Graph shows velocity (rate of change); peaks = fast; valleys = slow or hold.
-Q10. C — Pre-compositions are reusable nested comps; analogous to Animate symbols.
-Q11. B — The original AI layer is auto-hidden; the new Shape Layer takes its place.
-Q12. B — Stiff Pin creates a rigid area that resists deformation.
-Q13. B — Child layers inherit parent transforms; if parent scales 50%, children also scale 50%.
-Q14. B — Ctrl/Cmd+Shift+C pre-composes selected layers in AE.
-Q15. B — Retain Layer Sizes keeps each layer at its artwork's bounding box size.
-Q16. B — The mesh provides a deformable surface; pins pull/push the mesh and underlying image.
-Q17. B — A peak in the Speed Graph = fastest velocity at that point in time.
-Q18. B — Upper arm → lower arm → hand: parent is the joint above, child is below.
-Q19. B — Separate layers enable individual parenting, allowing articulated rig control.
-Q20. B — Easy Ease In affects the incoming side (motion arriving at that keyframe decelerates).
-Q21. D — "Anchor Pin" is not a valid type; the three types are Deform, Stiff, and Advanced.
-Q22. B — All parented layers follow the Null's movement, maintaining relative positions.
-Q23. B — Value Graph shows the absolute property value over time.
-Q24. B — PNG sequence with alpha is the best path; preserves transparency and frame integrity.
+Q1.  B, The Composition is AE's canvas; it's what renders.
+Q2.  B, "Create Shapes from Vector Layers" converts imported AI layers to native AE Shape Layers.
+Q3.  C, F9 applies Easy Ease to selected keyframes.
+Q4.  B, Null Objects are invisible at render time; used as rig controllers via parenting.
+Q5.  B, Puppet Pin Tool is for mesh deformation on a single flattened layer.
+Q6.  B, "Import as Composition, Retain Layer Sizes" preserves individual Illustrator layers.
+Q7.  B, The Pick Whip creates parent-child hierarchical relationships between layers.
+Q8.  C, Default Easy Ease handles are often too aggressive; open Graph Editor to refine.
+Q9.  B, Speed Graph shows velocity (rate of change); peaks = fast; valleys = slow or hold.
+Q10. C, Pre-compositions are reusable nested comps; analogous to Animate symbols.
+Q11. B, The original AI layer is auto-hidden; the new Shape Layer takes its place.
+Q12. B, Stiff Pin creates a rigid area that resists deformation.
+Q13. B, Child layers inherit parent transforms; if parent scales 50%, children also scale 50%.
+Q14. B, Ctrl/Cmd+Shift+C pre-composes selected layers in AE.
+Q15. B, Retain Layer Sizes keeps each layer at its artwork's bounding box size.
+Q16. B, The mesh provides a deformable surface; pins pull/push the mesh and underlying image.
+Q17. B, A peak in the Speed Graph = fastest velocity at that point in time.
+Q18. B, Upper arm → lower arm → hand: parent is the joint above, child is below.
+Q19. B, Separate layers enable individual parenting, allowing articulated rig control.
+Q20. B, Easy Ease In affects the incoming side (motion arriving at that keyframe decelerates).
+Q21. D, "Anchor Pin" is not a valid type; the three types are Deform, Stiff, and Advanced.
+Q22. B, All parented layers follow the Null's movement, maintaining relative positions.
+Q23. B, Value Graph shows the absolute property value over time.
+Q24. B, PNG sequence with alpha is the best path; preserves transparency and frame integrity.
 ```

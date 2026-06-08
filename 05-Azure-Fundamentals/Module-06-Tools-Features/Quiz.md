@@ -261,7 +261,7 @@ Advisor surfaces; you act. (Some Defender for Cloud rec'd remediation tasks can 
 Application Insights = APM for web apps; part of Azure Monitor family.
 
 ### Q18: **B. KQL**
-Kusto Query Language — same as Sentinel and Log Analytics.
+Kusto Query Language, same as Sentinel and Log Analytics.
 
 ### Q19: **B. Azure Site Recovery**
 ASR provides replication-based migration + DR for VMs.
@@ -275,11 +275,11 @@ Bicep is Azure-only; Terraform is multi-cloud.
 ### Q22: **A. Compliance Manager**
 Tracks your org's compliance status against frameworks.
 
-### Q23: **B. No — it's public**
+### Q23: **B. No, it's public**
 Anyone can view status.azure.com without logging in. Service Health (personalized) needs the portal.
 
 ### Q24: **B. Apply Azure Policy to on-prem Linux servers without moving them**
-Classic Arc use case — extend Azure governance to non-Azure resources.
+Classic Arc use case, extend Azure governance to non-Azure resources.
 
 ### Q25: **A. Cost, Security, Performance, Reliability, Operational Excellence**
 The 5 Advisor pillars.

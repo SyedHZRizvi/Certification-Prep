@@ -175,7 +175,7 @@ D. The phone's case
 A. The entire device including personal data
 B. Only the corporate container (email, managed apps, profiles) leaving personal data untouched
 C. The operating system
-D. Nothing — it only marks the device as non-compliant
+D. Nothing, it only marks the device as non-compliant
 
 ---
 
@@ -189,7 +189,7 @@ D. SIM model + IMEI only
 
 ### Q23. A jailbroken iPhone is detected by MDM. The standard policy response is: *(Apply)*
 A. Allow it but log the event
-B. Auto-quarantine — block access to corporate resources and notify the user/IT
+B. Auto-quarantine, block access to corporate resources and notify the user/IT
 C. Reward the user for technical curiosity
 D. Switch the user to a different MDM
 
@@ -236,10 +236,10 @@ IMEI = device ID (used to blacklist stolen phones). IMSI = subscriber ID (on the
 Self-emissive pixels age differently when displaying static content, causing the dimmer pixels to appear "ghosted." Mini-LED is LCD backlight-based and immune.
 
 ### Q5: **B. mmWave 5G covers the stadium; sub-6 GHz is in use at home**
-mmWave gives gigabit speeds but only at very short range with line-of-sight. Stadiums, airports, dense urban deployments. Suburbs typically use sub-6 GHz (low/mid band) — wider coverage, lower speeds.
+mmWave gives gigabit speeds but only at very short range with line-of-sight. Stadiums, airports, dense urban deployments. Suburbs typically use sub-6 GHz (low/mid band), wider coverage, lower speeds.
 
 ### Q6: **B. NFC**
-NFC operates at 13.56 MHz with effective range under 10 cm and supports two-way comms — exactly what Apple Pay / Google Pay use.
+NFC operates at 13.56 MHz with effective range under 10 cm and supports two-way comms, exactly what Apple Pay / Google Pay use.
 
 ### Q7: **C. BYOD with containerization**
 User owns the device (BYOD). The corporate data is isolated (containerized). This is the modern compromise.
@@ -248,10 +248,10 @@ User owns the device (BYOD). The corporate data is isolated (containerized). Thi
 Most modern MDM/Conditional Access setups disable EAS profiles when devices fall out of compliance (OS out of date, encryption off, jailbreak detected). The classic "my email just stopped" symptom.
 
 ### Q9: **C. iPhone 14**
-Specifically iPhone 14 and later in the US market removed the physical SIM slot — they are eSIM-only.
+Specifically iPhone 14 and later in the US market removed the physical SIM slot, they are eSIM-only.
 
 ### Q10: **B. Active styluses send a signal back to the digitizer for pressure/tilt sensitivity**
-Apple Pencil, S-Pen, Surface Pen. Passive styluses are just conductive tips that emulate a fingertip — no pressure/tilt.
+Apple Pencil, S-Pen, Surface Pen. Passive styluses are just conductive tips that emulate a fingertip, no pressure/tilt.
 
 ### Q11: **A. Capacitive screens require an electrically conductive contact, which most non-conductive gloves block**
 Capacitive screens sense the electrical disturbance of a human finger. Special "touchscreen gloves" have conductive thread at the fingertips.
@@ -260,22 +260,22 @@ Capacitive screens sense the electrical disturbance of a human finger. Special "
 Modern phones use SSD/flash. There's no spinning HDD in a phone. All other options are real mobile sensors.
 
 ### Q13: **B. Issue a remote lock with new PIN, then track location, then wipe if not recovered**
-Standard playbook: lock to prevent immediate access while you assess whether the device is truly lost vs. misplaced. Wiping is a step you take after, not the very first action — once wiped, you can't track. Note: actual policy varies; some orgs wipe immediately for high-sensitivity data.
+Standard playbook: lock to prevent immediate access while you assess whether the device is truly lost vs. misplaced. Wiping is a step you take after, not the very first action, once wiped, you can't track. Note: actual policy varies; some orgs wipe immediately for high-sensitivity data.
 
 ### Q14: **B. USB-PD 3.1**
 USB Power Delivery 3.1 (Extended Power Range) added 28V/36V/48V profiles supporting up to 240W. Used in modern laptop charging over USB-C.
 
 ### Q15: **B. EAS supports policy enforcement in addition to sync**
-Plain IMAP gives mail sync only. EAS adds passcode policy push, encryption requirements, remote wipe, and per-device compliance — the reason enterprises use it.
+Plain IMAP gives mail sync only. EAS adds passcode policy push, encryption requirements, remote wipe, and per-device compliance, the reason enterprises use it.
 
 ### Q16: **B. USB 2.0 speed (480 Mbps)**
-Most bundled cables — even from premium phone brands — are USB 2.0 over the USB-C connector. Faster cables cost more and are usually sold separately.
+Most bundled cables even from premium phone brands are USB 2.0 over the USB-C connector. Faster cables cost more and are usually sold separately.
 
 ### Q17: **A. Class 1 (up to ~100m)**
 Bluetooth Class 1 transmits at higher power and reaches up to 100m. Class 2 (most consumer devices) ~10m. Class 3 ~1m.
 
 ### Q18: **A. The headphones are not selected as the audio output in Settings → Sound**
-Common gotcha — the connection succeeds but the OS still routes to internal speaker. iOS Control Center / Android Quick Settings let you switch output.
+Common gotcha, the connection succeeds but the OS still routes to internal speaker. iOS Control Center / Android Quick Settings let you switch output.
 
 ### Q19: **C. SMTP**
 SMTP (Simple Mail Transfer Protocol) sends outbound mail. POP3 and IMAP fetch inbound.
@@ -289,17 +289,17 @@ Selective wipe (also called "corporate wipe") removes managed apps, email profil
 ### Q22: **B. User identity + device compliance**
 The combo: authenticated user (Azure AD / Entra ID) + a device that's compliant (enrolled, encrypted, up to date) = access granted. Either signal failing = blocked or stepped up.
 
-### Q23: **B. Auto-quarantine — block access to corporate resources**
+### Q23: **B. Auto-quarantine, block access to corporate resources**
 Jailbreak/root bypasses OS security, making the device untrustworthy for corporate data. MDM detects and blocks access until the device is restored to a clean state.
 
 ### Q24: **B. Identify the problem**
-Step 1 of the CompTIA 6-step methodology. Question the user, identify changes, gather symptoms — always *before* taking action.
+Step 1 of the CompTIA 6-step methodology. Question the user, identify changes, gather symptoms, always *before* taking action.
 
 ### Q25: **C. Read every photo in the user's personal camera roll on a containerized BYOD device**
 The whole *point* of containerization is that IT cannot see personal data. They can manage the corporate container; the personal side is the user's.
 
 ### Q26: **B. BYOD with MDM-managed containerization**
-The goal — personal devices, selective wipe — maps exactly to BYOD + container. COBO requires company-issued hardware. CYOD without MDM has no enforcement. POP3 has no policy controls and removes mail from the server.
+The goal personal devices, selective wipe maps exactly to BYOD + container. COBO requires company-issued hardware. CYOD without MDM has no enforcement. POP3 has no policy controls and removes mail from the server.
 
 ---
 
@@ -318,9 +318,9 @@ The goal — personal devices, selective wipe — maps exactly to BYOD + contain
 - Cellular tiers: 2G/3G/4G LTE/5G low-band/5G mid-band/5G mmWave
 - Mobile ownership: BYOD / COBO / COPE / CYOD definitions
 - MDM core capabilities (push profiles, compliance, selective wipe, conditional access)
-- Display tech: TN / IPS / OLED / Mini-LED / Micro-LED — pros/cons
+- Display tech: TN / IPS / OLED / Mini-LED / Micro-LED, pros/cons
 - IMEI vs IMSI
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Networking Fundamentals](../Module-02-Networking/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Networking Fundamentals](../Module-02-Networking/Reading.md)

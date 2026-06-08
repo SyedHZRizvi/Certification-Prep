@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-01-Animate-Interface-Workflow/Videos/
 title: "Module 1 Videos: Animate Interface & Workflow"
 ---
 
-# 🎬 Module 1 Videos — Adobe Animate Interface & Workflow
+# 🎬 Module 1 Videos, Adobe Animate Interface & Workflow
 
 ---
 
@@ -13,13 +13,13 @@ title: "Module 1 Videos: Animate Interface & Workflow"
   <a href="https://www.youtube.com/results?search_query=Adobe+Animate+interface+tour+beginners+2024" target="_blank">
     <strong>Adobe Animate: Complete Interface Tour for Beginners</strong><br>
     <em>School of Motion</em> · ~25 min<br>
-    A structured walkthrough of every panel and zone in Animate — Stage, Timeline, Library, Properties, and the tool panels. Perfect first watch before touching a project.
+    A structured walkthrough of every panel and zone in Animate, Stage, Timeline, Library, Properties, and the tool panels. Perfect first watch before touching a project.
   </a>
 </div>
 
 <div class="vg-card">
   <a href="https://www.youtube.com/results?search_query=Adobe+Animate+timeline+layers+keyframes+tutorial" target="_blank">
-    <strong>Timeline, Layers & Keyframes — Adobe Animate Explained</strong><br>
+    <strong>Timeline, Layers & Keyframes, Adobe Animate Explained</strong><br>
     <em>Motion Array Tutorials</em> · ~18 min<br>
     Deep dive into the Timeline panel: how frames, keyframes, blank keyframes, and layers interact. Covers the "extend frame" vs. "new keyframe" distinction that trips up beginners.
   </a>
@@ -27,7 +27,7 @@ title: "Module 1 Videos: Animate Interface & Workflow"
 
 <div class="vg-card">
   <a href="https://www.youtube.com/results?search_query=Adobe+Animate+symbols+graphic+movieclip+explained" target="_blank">
-    <strong>Symbols in Adobe Animate — Graphic vs Movie Clip vs Button</strong><br>
+    <strong>Symbols in Adobe Animate, Graphic vs Movie Clip vs Button</strong><br>
     <em>Tutorial Asylum</em> · ~20 min<br>
     The most common source of confusion for new Animate users, explained clearly: why Graphic symbols sync to parent timelines, why Movie Clips don't, and when you want each one.
   </a>
@@ -55,7 +55,7 @@ title: "Module 1 Videos: Animate Interface & Workflow"
 
 <div class="vg-card">
   <a href="https://www.youtube.com/results?search_query=Adobe+Animate+merge+drawing+object+drawing+mode+difference" target="_blank">
-    <strong>Merge Drawing Mode vs Object Drawing Mode — Full Breakdown</strong><br>
+    <strong>Merge Drawing Mode vs Object Drawing Mode, Full Breakdown</strong><br>
     <em>Tutorial Asylum</em> · ~10 min<br>
     A side-by-side demo of how shapes behave differently in each mode, and why character animators almost always use Object Drawing Mode.
   </a>
@@ -63,7 +63,7 @@ title: "Module 1 Videos: Animate Interface & Workflow"
 
 <div class="vg-card">
   <a href="https://www.youtube.com/results?search_query=Adobe+Animate+audio+sync+stream+event+lip+sync" target="_blank">
-    <strong>Audio Sync in Adobe Animate — Event vs Stream Mode</strong><br>
+    <strong>Audio Sync in Adobe Animate, Event vs Stream Mode</strong><br>
     <em>Mobox Graphics</em> · ~11 min<br>
     Why "Event" sync sounds fine in normal playback but goes out of sync during actual animation work, and why "Stream" is the only mode for lip sync.
   </a>

@@ -12,7 +12,7 @@
 | **Primary (AD-integrated)** | AD | **Multi-master** | Default for AD DNS |
 | **Secondary** | Disk | Read-only replica | Disaster fallback, cross-org reads |
 | **Stub** | Disk or AD | NS only, **auto-refreshing** | Track external zone NS dynamics |
-| **Conditional forwarder** | Server config | n/a — forwards to specific IPs | Static partner domain |
+| **Conditional forwarder** | Server config | n/a, forwards to specific IPs | Static partner domain |
 | **GlobalNames Zone** | AD | Single-label only | Replace WINS |
 
 🧠 **Stub = dynamic NS; Conditional Forwarder = static.**
@@ -30,13 +30,13 @@
 | **NSEC3** | Authenticated denial (resistant to walking) |
 | **Trust Anchor** | A DNSKEY the resolver explicitly trusts |
 
-🔥 DNSSEC = integrity + auth (NOT confidentiality — that's DoH/DoT).
+🔥 DNSSEC = integrity + auth (NOT confidentiality, that's DoH/DoT).
 
 ---
 
 ## 🧹 DNS Scavenging
 
-- **OFF by default** — must enable
+- **OFF by default**, must enable
 - Defaults when on: **No-Refresh 7d / Refresh 7d / Scavenging 7d**
 - Apply via `Set-DnsServerScavenging -ApplyOnAllZones`
 
@@ -46,7 +46,7 @@
 
 ### Setup order
 1. `Install-WindowsFeature DHCP -IncludeManagementTools`
-2. `Add-DhcpServerInDC` (AUTHORIZE — otherwise no leases)
+2. `Add-DhcpServerInDC` (AUTHORIZE, otherwise no leases)
 3. `Add-DhcpServerv4Scope`
 4. `Set-DhcpServerv4OptionValue` (router 003, DNS 006, domain 015, NTP 042)
 5. `Add-DhcpServerv4Reservation` (per MAC)
@@ -70,13 +70,13 @@
 |---------|--------|
 | **Hot Standby** | Active/standby (best for asymmetric pairs) |
 | **Load Balance** | 50/50 active/active (best for parity HQ pairs) |
-| **MCLT** | Maximum Client Lead Time — **1 hr default** |
+| **MCLT** | Maximum Client Lead Time, **1 hr default** |
 | **Shared Secret** | Optional but recommended for relationship auth |
 
 ### Other multi-server patterns
 
-- **Superscope** — multiple scopes on **one physical subnet**
-- **Split-scope** — manual 80/20 across two servers (legacy)
+- **Superscope**, multiple scopes on **one physical subnet**
+- **Split-scope**, manual 80/20 across two servers (legacy)
 
 ---
 
@@ -105,8 +105,8 @@
 
 ### Rule types
 
-- **Inbound / Outbound** — basic allow/block
-- **Connection Security Rule** — IPsec for isolation, tunnel, server-to-server, exemption
+- **Inbound / Outbound**, basic allow/block
+- **Connection Security Rule**, IPsec for isolation, tunnel, server-to-server, exemption
 
 🔥 Domain isolation = WFAS Connection Security Rule via GPO.
 
@@ -115,12 +115,12 @@
 ## ⚖️ NLB (Layer-4) Quick
 
 - **2–32 nodes**, stateless workloads only
-- **Unicast** — one shared MAC; needs 2nd NIC for host-to-host
-- **Multicast** — preserves MACs; may flood switches
-- **IGMP Multicast** — switch-snooping reduces flood
-- **Drainstop** — graceful disconnect
+- **Unicast**, one shared MAC; needs 2nd NIC for host-to-host
+- **Multicast**, preserves MACs; may flood switches
+- **IGMP Multicast**, switch-snooping reduces flood
+- **Drainstop**, graceful disconnect
 
-🚨 NLB is NOT for SQL / Exchange / DCs — those need Failover Cluster or Always On AG.
+🚨 NLB is NOT for SQL / Exchange / DCs, those need Failover Cluster or Always On AG.
 
 ---
 
@@ -179,8 +179,8 @@ Usually **wrong**:
 ## ✏️ Quick Self-Check
 
 1. AD-integrated zone benefits vs file-based primary? ___
-2. DNSSEC components — KSK / ZSK / DS / RRSIG? ___
-3. Conditional forwarder vs stub zone — which auto-refreshes? ___
+2. DNSSEC components, KSK / ZSK / DS / RRSIG? ___
+3. Conditional forwarder vs stub zone, which auto-refreshes? ___
 4. DHCP failover modes and MCLT default? ___
 5. WFAS three profiles + default Domain inbound action? ___
 6. Why NLB doesn't work for SQL HA? ___

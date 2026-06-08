@@ -63,8 +63,8 @@ Free Google dashboard tool. Connects to GA4, Google Ads, Search Console, BigQuer
 
 ## 📈 MMM (The Comeback)
 
-- **Robyn** — Meta open-source
-- **Meridian** — Google open-source
+- **Robyn**, Meta open-source
+- **Meridian**, Google open-source
 - Aggregate-level, resilient to cookie loss
 - Required for serious 2026 measurement
 
@@ -105,7 +105,7 @@ No single model is "right." Triangulate.
 
 - ❌ Citing UA terminology in 2026
 - ❌ Last-click as the default attribution
-- ❌ Bounce rate same as UA (no — GA4 redefined)
+- ❌ Bounce rate same as UA (no, GA4 redefined)
 - ❌ Mixing Enhanced Conversions (Google) with CAPI (Meta)
 - ❌ Ignoring Consent Mode v2 in EU
 - ❌ "MMM is for enterprises only" (Robyn + Meridian are free)
@@ -125,7 +125,7 @@ No single model is "right." Triangulate.
 1. UA sunset date? ___
 2. The 5 UTMs? ___
 3. GA4's default attribution? ___
-4. Robyn vs Meridian — which company? ___
+4. Robyn vs Meridian, which company? ___
 5. The 2026 measurement triangulation? ___
 
 If you can do all 5 in under 90 seconds, you own this module. ✅

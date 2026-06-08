@@ -1,6 +1,6 @@
 # Module 2: Embeddings & Vector Databases 📐
 
-> **Why this module matters:** Retrieval is the single most production-critical skill in applied GenAI. The model is rented from a frontier lab; the *retrieval* is your competitive moat. A team that picks the wrong embedding model or vector DB doesn't just have a "slow" system — they have a *wrong* system, producing the wrong context, leading the LLM to produce the wrong answer with high confidence. This module is the engineering of finding the right needle in the right haystack.
+> **Why this module matters:** Retrieval is the single most production-critical skill in applied GenAI. The model is rented from a frontier lab; the *retrieval* is your competitive moat. A team that picks the wrong embedding model or vector DB doesn't just have a "slow" system, they have a *wrong* system, producing the wrong context, leading the LLM to produce the wrong answer with high confidence. This module is the engineering of finding the right needle in the right haystack.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (tokenization, vectors, basic attention)
@@ -13,15 +13,15 @@
 
 ## 🎬 A Story: The Notion AI Q&A That Couldn't Find Its Own Memo
 
-January 2024. Notion's AI team had just shipped "Q&A" — ask your workspace anything, get an answer grounded in your own documents. Closed beta. Then: a steady stream of bug reports that all looked the same.
+January 2024. Notion's AI team had just shipped "Q&A", ask your workspace anything, get an answer grounded in your own documents. Closed beta. Then: a steady stream of bug reports that all looked the same.
 
 > *"I asked Q&A about the offsite agenda. It said 'I don't see any information about the offsite.' But I wrote the memo last week, it's pinned to my home page, and search finds it instantly."*
 
 Internal investigation. The pinned memo was in the index. The embedding lookup correctly returned the memo as the *fifth* most similar chunk. Q&A only fed the top three. Why was a perfectly relevant 600-word memo ranked fifth?
 
-The cause turned out to be the **chunking strategy**. Notion's first chunker split documents at fixed token boundaries (every 512 tokens, no overlap). The memo's *agenda* section started 460 tokens into the document — and the chunker had split right *across* the agenda, so the heading was in one chunk and the bullet points were in the next. The embedding of the chunk that contained "Q4 offsite" plus a dozen paragraphs of unrelated CRM strategy was, in cosine-similarity space, dominated by "CRM" — so it ranked below three retrieval-poisoning blog drafts.
+The cause turned out to be the **chunking strategy**. Notion's first chunker split documents at fixed token boundaries (every 512 tokens, no overlap). The memo's *agenda* section started 460 tokens into the document and the chunker had split right *across* the agenda, so the heading was in one chunk and the bullet points were in the next. The embedding of the chunk that contained "Q4 offsite" plus a dozen paragraphs of unrelated CRM strategy was, in cosine-similarity space, dominated by "CRM" so it ranked below three retrieval-poisoning blog drafts.
 
-The fix wasn't a model upgrade. It was *chunking with overlap*, *header-aware splitting*, and a *small reranker* on top of the dense retriever. The embedding model — `text-embedding-3-small` — never changed.
+The fix wasn't a model upgrade. It was *chunking with overlap*, *header-aware splitting*, and a *small reranker* on top of the dense retriever. The embedding model `text-embedding-3-small` never changed.
 
 In a survey of production GenAI postmortems Anthropic published in 2024, retrieval bugs accounted for **64% of "the AI got it wrong" tickets** at customers running RAG in production. Almost none were the LLM's fault. The LLM only knows what you give it. This module is how you give it the right thing.
 
@@ -29,15 +29,15 @@ In a survey of production GenAI postmortems Anthropic published in 2024, retriev
 
 ## 📐 What Is an Embedding, Really?
 
-An embedding is a **dense vector representation of text** (or any modality — image, audio, code) such that *semantically similar inputs produce nearby vectors* in some high-dimensional space.
+An embedding is a **dense vector representation of text** (or any modality, image, audio, code) such that *semantically similar inputs produce nearby vectors* in some high-dimensional space.
 
 "Nearby" is measured by:
 
-- **Cosine similarity** — angle between vectors (1 = identical direction, 0 = orthogonal, -1 = opposite). Almost always the production default.
-- **Dot product** — magnitude-aware; many embedding models are L2-normalized so dot product ≡ cosine.
-- **Euclidean (L2) distance** — straight-line distance; rarely preferred for normalized embeddings.
+- **Cosine similarity**, angle between vectors (1 = identical direction, 0 = orthogonal, -1 = opposite). Almost always the production default.
+- **Dot product**, magnitude-aware; many embedding models are L2-normalized so dot product ≡ cosine.
+- **Euclidean (L2) distance**, straight-line distance; rarely preferred for normalized embeddings.
 
-Most production embeddings live in 384–3072 dimensions. The numbers themselves are uninterpretable — what matters is the *geometric structure* of the space the embeddings inhabit.
+Most production embeddings live in 384–3072 dimensions. The numbers themselves are uninterpretable, what matters is the *geometric structure* of the space the embeddings inhabit.
 
 ### Why this even works
 
@@ -45,9 +45,9 @@ A modern embedding model is itself a transformer (usually encoder-only, BERT-sty
 
 The most common contrastive frameworks:
 
-- **InfoNCE** (Oord et al. 2018) — minimize the temperature-scaled negative log-likelihood of picking the positive among a batch of negatives.
-- **Triplet loss** — minimize d(anchor, positive) − d(anchor, negative) + margin.
-- **MultipleNegativesRankingLoss** — same family; widely used in sentence-transformers.
+- **InfoNCE** (Oord et al. 2018), minimize the temperature-scaled negative log-likelihood of picking the positive among a batch of negatives.
+- **Triplet loss**, minimize d(anchor, positive) − d(anchor, negative) + margin.
+- **MultipleNegativesRankingLoss**, same family; widely used in sentence-transformers.
 
 ---
 
@@ -81,11 +81,11 @@ Forgetting the asymmetric prefix is *the* most common first-day bug. Quality can
 
 ### Matryoshka representations
 
-Open Matryoshka models (OpenAI text-embedding-3, Nomic, Jina v3) let you *truncate* the vector to a shorter prefix and still get usable similarity. A 3072-dim vector can be reduced to 256-dim with ~95% of the quality retained. This is critical for scale — storing 100M chunks at 3072 dims is 1.2 TB; at 256 dims, 100 GB.
+Open Matryoshka models (OpenAI text-embedding-3, Nomic, Jina v3) let you *truncate* the vector to a shorter prefix and still get usable similarity. A 3072-dim vector can be reduced to 256-dim with ~95% of the quality retained. This is critical for scale, storing 100M chunks at 3072 dims is 1.2 TB; at 256 dims, 100 GB.
 
 ---
 
-## 🗄️ Vector Databases — The Landscape
+## 🗄️ Vector Databases, The Landscape
 
 A vector DB indexes vectors for **approximate nearest neighbor (ANN) search**. Exact nearest-neighbor on 100M vectors is too slow; ANN trades ~1–2% recall for 10–100× speed.
 
@@ -118,7 +118,7 @@ There is no single right answer, but here's the production decision tree:
 
 ---
 
-## 🌲 ANN Indexes — Inside the Black Box
+## 🌲 ANN Indexes, Inside the Black Box
 
 You don't have to implement these, but you have to *reason about them* when tuning.
 
@@ -127,15 +127,15 @@ You don't have to implement these, but you have to *reason about them* when tuni
 The dominant index in 2026. A multi-layer graph: top layer is a tiny "sparse highway" of long-distance shortcuts; bottom layer is dense and locally-connected. Search starts at the top layer, descends greedily.
 
 **Key parameters:**
-- **M** — number of bidirectional links per node. Higher M = higher recall + larger index. Typical: 16–48.
-- **efConstruction** — search width at build time. Higher = better recall, slower build. Typical: 100–500.
-- **efSearch** — search width at query time. Higher = better recall, slower query. Typical: 50–500.
+- **M**, number of bidirectional links per node. Higher M = higher recall + larger index. Typical: 16–48.
+- **efConstruction**, search width at build time. Higher = better recall, slower build. Typical: 100–500.
+- **efSearch**, search width at query time. Higher = better recall, slower query. Typical: 50–500.
 
 **Trade-offs:** Excellent recall (often >99% with reasonable params); fast queries; **memory-hungry** (graph + vectors live in RAM); slow at insertion when M and efConstruction are large.
 
 ### IVF-PQ (Inverted File + Product Quantization)
 
-Faiss's classic. Split the vector space into *nlist* clusters via k-means. At query time, search only the *nprobe* closest clusters (the "inverted file"). Then, compress vectors with *product quantization* — split each vector into M sub-vectors and quantize each into one of 256 codes (1 byte). 768-dim float32 vector (3072 bytes) → 96 bytes.
+Faiss's classic. Split the vector space into *nlist* clusters via k-means. At query time, search only the *nprobe* closest clusters (the "inverted file"). Then, compress vectors with *product quantization*, split each vector into M sub-vectors and quantize each into one of 256 codes (1 byte). 768-dim float32 vector (3072 bytes) → 96 bytes.
 
 **Trade-offs:** Compact (10–30× smaller on disk than HNSW); great for billion-scale; recall is tunable but ceiling lower than HNSW; needs a training step.
 
@@ -172,7 +172,7 @@ Every config trades recall for latency. The right answer depends on your downstr
 
 ---
 
-## ✂️ Chunking — The Most Underrated Skill
+## ✂️ Chunking, The Most Underrated Skill
 
 If you remember nothing else, remember **chunking is half the battle**.
 
@@ -225,9 +225,9 @@ Before embedding each chunk, prepend a 50-100 token *context summary* generated 
 
 ---
 
-## 🔀 Hybrid Search — Why Pure Vector Loses
+## 🔀 Hybrid Search, Why Pure Vector Loses
 
-Dense retrieval (embedding similarity) is *semantic* — it captures meaning. Sparse retrieval (BM25, TF-IDF) is *lexical* — it captures exact term matching. **They fail in different ways and complement each other beautifully.**
+Dense retrieval (embedding similarity) is *semantic* it captures meaning. Sparse retrieval (BM25, TF-IDF) is *lexical* it captures exact term matching. **They fail in different ways and complement each other beautifully.**
 
 - A user types a part number (`A37B-9921-EX`). BM25 nails it; embedding gives random adjacent chunks.
 - A user asks "how do I refund a customer who paid with crypto?" Embedding shines; BM25 misses because the docs say "process a chargeback to a digital-asset wallet."
@@ -248,11 +248,11 @@ Convex combination: `score = α · dense_score + (1 − α) · sparse_score`. Re
 
 ### Sparse embeddings: SPLADE, BGE-M3 sparse
 
-SPLADE (Sparse Lexical and Expansion model, Naver Labs) and BGE-M3's sparse-vector head produce *learned-sparse* representations — high-dimensional, mostly-zero vectors keyed by vocabulary terms. They fuse with dense embeddings better than BM25 because the score distributions are closer.
+SPLADE (Sparse Lexical and Expansion model, Naver Labs) and BGE-M3's sparse-vector head produce *learned-sparse* representations, high-dimensional, mostly-zero vectors keyed by vocabulary terms. They fuse with dense embeddings better than BM25 because the score distributions are closer.
 
 ---
 
-## 🎯 Reranking — The 80% Win for 5% More Latency
+## 🎯 Reranking, The 80% Win for 5% More Latency
 
 After your retriever returns the top-K (say K=50), a **reranker** scores each (query, document) pair *individually* with a cross-encoder. Then keep the top-N (say N=5) for the LLM.
 
@@ -268,7 +268,7 @@ Why this works: the bi-encoder (your embedding model) had to encode the query an
 | **ColBERT v2 / PLAID** | Stanford / Vespa | Late-interaction; sometimes used as retriever-and-reranker |
 | **MS MARCO cross-encoders** | sentence-transformers | Classic baselines; small + fast |
 
-### ColBERT — late-interaction retrieval
+### ColBERT, late-interaction retrieval
 
 ColBERT encodes the query as N token vectors and the document as M token vectors. The similarity is MaxSim over token pairs. More expressive than bi-encoder (single-vector), more efficient than full cross-encoder. Vespa has the most production-grade ColBERT implementation; PLAID is the optimized successor.
 
@@ -278,9 +278,9 @@ ColBERT encodes the query as N token vectors and the document as M token vectors
 
 Vector DBs let you attach metadata (tenant, document type, date, ACL) and *filter* during retrieval. Critical for:
 
-- **Multi-tenant systems** — must filter by `tenant_id` BEFORE the ANN search, not after (filtering after defeats the speed of ANN).
-- **Time-bounded queries** — "knowledge from the last 90 days only."
-- **Access control** — users only see chunks they're authorized for.
+- **Multi-tenant systems**, must filter by `tenant_id` BEFORE the ANN search, not after (filtering after defeats the speed of ANN).
+- **Time-bounded queries**, "knowledge from the last 90 days only."
+- **Access control**, users only see chunks they're authorized for.
 
 **Pre-filter vs post-filter** is a real DB-engineering distinction. Pre-filter integrates with the index (Qdrant, Weaviate are strong here); post-filter trims after retrieval (cheap to implement, dangerous at scale). Ask your vendor.
 
@@ -302,25 +302,25 @@ Vector DBs let you attach metadata (tenant, document type, date, ACL) and *filte
 
 ## 🏗️ Lab: Embedding-Model Benchmark + Pinecone vs pgvector
 
-Goal: index a 5,000-document corpus (use the MS MARCO mini split or the BEIR `scifact` set) into both Pinecone (serverless) and pgvector (a managed Postgres instance — Neon, Supabase, or local). Run 200 queries through each, measure latency p50/p95/p99, retrieval recall@10 with three embedding models (`text-embedding-3-small`, `bge-large-en-v1.5`, `cohere/embed-v3`), and produce a single table comparing recall and dollar-cost-per-1K-queries.
+Goal: index a 5,000-document corpus (use the MS MARCO mini split or the BEIR `scifact` set) into both Pinecone (serverless) and pgvector (a managed Postgres instance, Neon, Supabase, or local). Run 200 queries through each, measure latency p50/p95/p99, retrieval recall@10 with three embedding models (`text-embedding-3-small`, `bge-large-en-v1.5`, `cohere/embed-v3`), and produce a single table comparing recall and dollar-cost-per-1K-queries.
 
 Stretch: add a BM25 retriever and demonstrate RRF hybrid + Cohere reranker. Report the recall gain.
 
-You will not get a single "winner." You will get a *decision matrix* — which is what production architecture looks like.
+You will not get a single "winner." You will get a *decision matrix*, which is what production architecture looks like.
 
 ---
 
-## 📊 Case Study — Anthropic's Contextual Retrieval (September 2024)
+## 📊 Case Study, Anthropic's Contextual Retrieval (September 2024)
 
 **Situation.** Anthropic announced "contextual retrieval" in a blog post on September 19, 2024. The setup: standard RAG was failing on their own internal documentation because chunks lost meaning when separated from their parent document. A chunk that said "the function returns 200 on success" gave no signal about *which* function in *which* API.
 
-**The technique.** At index time, for each chunk, ask Claude Haiku to generate a 50–100 token *contextualization* — "this chunk is from the Authentication section of the v3 API docs and describes the response of POST /token." Prepend this to the chunk before embedding. Apply the same contextualization at sparse-retrieval (BM25) time.
+**The technique.** At index time, for each chunk, ask Claude Haiku to generate a 50–100 token *contextualization*, "this chunk is from the Authentication section of the v3 API docs and describes the response of POST /token." Prepend this to the chunk before embedding. Apply the same contextualization at sparse-retrieval (BM25) time.
 
 **Results, on Anthropic's eval set:**
 - Embedding-only retrieval failure rate: 5.7%
 - Embedding + BM25 hybrid failure rate: 4.1%
 - Embedding + BM25 + **contextual retrieval**: 2.9% failure
-- Embedding + BM25 + contextual retrieval + Cohere reranking: **1.9% failure** — a **67% reduction** vs baseline
+- Embedding + BM25 + contextual retrieval + Cohere reranking: **1.9% failure**, a **67% reduction** vs baseline
 
 **The cost.** Each chunk needs one Haiku call. With prompt caching (the same parent document is used to contextualize every chunk inside it), the cost is roughly $1 per million chunks contextualized. Negligible compared to inference cost.
 
@@ -343,17 +343,17 @@ You now know:
 - 🌲 ANN indexes: HNSW (the default), IVF-PQ (compact), ScaNN, DiskANN
 - ✂️ Chunking strategies: fixed, recursive, structure-aware, semantic, late, **contextual**
 - 🔀 Hybrid search: dense + BM25 fused with RRF; SPLADE / BGE-M3 sparse
-- 🎯 Reranking: Cohere rerank, Voyage rerank, ColBERT, bge-reranker — the 80/5 rule
+- 🎯 Reranking: Cohere rerank, Voyage rerank, ColBERT, bge-reranker, the 80/5 rule
 - 🔍 Metadata filtering: pre-filter vs post-filter, multi-tenancy
 
 **Next steps:**
-1. 🎥 Watch [Videos.md](./Videos.md) — start with the contextual-retrieval Anthropic post + Pinecone deep dive
+1. 🎥 Watch [Videos.md](./Videos.md), start with the contextual-retrieval Anthropic post + Pinecone deep dive
 2. ✏️ Take the [Quiz.md](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 3 — RAG Architecture](../Module-03-RAG-Architecture/Reading.md)
+4. ➡️ Move on: [Module 3, RAG Architecture](../Module-03-RAG-Architecture/Reading.md)
 
 > **Where this leads.**
-> - **Inside this course:** Module 3 builds end-to-end RAG on top of this — the embeddings + DB are the *retrieval* layer of every RAG pipeline. Module 9 covers semantic caching, which is yet another use of embeddings.
+> - **Inside this course:** Module 3 builds end-to-end RAG on top of this, the embeddings + DB are the *retrieval* layer of every RAG pipeline. Module 9 covers semantic caching, which is yet another use of embeddings.
 > - **Cross-course:** Course 07 (AWS AI Practitioner) covers Bedrock Knowledge Bases at a higher level; this module is the engineer's view of the same primitives.
 
 ---
@@ -370,11 +370,11 @@ You now know:
 - 📄 Anthropic (Sep 2024). *Contextual Retrieval* blog post + benchmark code.
 
 **Tutorials:**
-- 📖 *Hands-On Large Language Models* (Alammar & Grootendorst, O'Reilly 2024) — Chapters 5–7
+- 📖 *Hands-On Large Language Models* (Alammar & Grootendorst, O'Reilly 2024), Chapters 5–7
 - 📖 LangChain's "Retrieval" docs
 - 📖 LlamaIndex's "Retrieval-Augmented Generation" guide
 - 🎬 Greg Kamradt's chunking strategies playlist
-- 🌐 [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) — bookmark it; check quarterly
+- 🌐 [MTEB Leaderboard](https://huggingface.co/spaces/mteb/leaderboard), bookmark it; check quarterly
 
 **Open-source labs to clone:**
 - 💻 Anthropic's `contextual-retrieval` recipe (GitHub)

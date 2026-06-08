@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — Scrum Master (PSM I Style)
+# 🧪 Practice Exam 1, Scrum Master (PSM I Style)
 
 > **Conditions:** Set a 30-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 34/40 (85%)
@@ -42,7 +42,7 @@ D. The whole Scrum Team
 A. One
 B. One per team
 C. As many as needed
-D. None — the team decides
+D. None, the team decides
 
 ### 7. Empiricism rests on three pillars:
 A. Plan, Execute, Review
@@ -226,7 +226,7 @@ D. Underperforming
 
 ### 37. Can the same person be PO and SM?
 A. Yes
-B. No — conflict of interest
+B. No, conflict of interest
 C. Yes, if certified
 D. Only in startups
 
@@ -295,14 +295,14 @@ For EACH wrong answer:
 
 ## 🧠 Detailed answer rationales
 
-Below is the wrong-answer rationale for every question — *why* the correct answer is correct AND *why each other option fails*. This is the case-method discernment layer that turns recall into reasoning.
+Below is the wrong-answer rationale for every question, *why* the correct answer is correct AND *why each other option fails*. This is the case-method discernment layer that turns recall into reasoning.
 
 ### Q1. Answer: B (lightweight framework)
 **Why B is correct.** The Scrum Guide's opening definition: "Scrum is a lightweight framework that helps people, teams, and organizations generate value..."
 **Why the others are wrong.**
-- A: "Project management methodology" — Scrum is explicitly *not* a methodology; methodologies prescribe; frameworks scaffold.
-- C: "Complete process" — Scrum is *deliberately incomplete*; teams fill in practices.
-- D: "Complete software development methodology" — same error as A, plus restricting Scrum to software (Scrum works for products of any kind).
+- A: "Project management methodology", Scrum is explicitly *not* a methodology; methodologies prescribe; frameworks scaffold.
+- C: "Complete process", Scrum is *deliberately incomplete*; teams fill in practices.
+- D: "Complete software development methodology", same error as A, plus restricting Scrum to software (Scrum works for products of any kind).
 **Exam takeaway.** "Framework, not methodology" is one of the top three most-tested ideas in PSM I.
 
 ### Q2. Answer: B (4 weeks max)
@@ -311,18 +311,18 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 - A: 2 weeks is the typical default but not the maximum.
 - C: 6 weeks exceeds the 1-month cap.
 - D: "As long as needed" violates the timebox requirement.
-**Exam takeaway.** "1 month or less" — always.
+**Exam takeaway.** "1 month or less", always.
 
 ### Q3. Answer: A (Focus, Commitment, Courage, Respect, Openness)
 **Why A is correct.** The 5 Scrum values (added formally in the 2016 Scrum Guide revision, retained in 2020). Mnemonic: F-CCRO.
 **Why the others are wrong.**
-- B: "Trust, Honesty, Speed, Quality, Value" — none are Scrum values.
-- C: "Plan, Execute, Inspect, Adapt, Improve" — Inspect and Adapt are empiricism pillars, not values.
-- D: "Lead, Serve, Coach, Teach, Mentor" — these are SM stances, not Scrum values.
+- B: "Trust, Honesty, Speed, Quality, Value", none are Scrum values.
+- C: "Plan, Execute, Inspect, Adapt, Improve", Inspect and Adapt are empiricism pillars, not values.
+- D: "Lead, Serve, Coach, Teach, Mentor", these are SM stances, not Scrum values.
 **Exam takeaway.** Memorize F-CCRO.
 
 ### Q4. Answer: B (Product Owner)
-**Why B is correct.** Only the PO can cancel a Sprint — Scrum Guide 2020.
+**Why B is correct.** Only the PO can cancel a Sprint, Scrum Guide 2020.
 **Why the others are wrong.**
 - A: Scrum Master cannot cancel.
 - C: Stakeholders have no Sprint-cancellation authority.
@@ -334,7 +334,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 **Why the others are wrong.**
 - A: PO owns the Product Backlog, not the Sprint Backlog.
 - B: SM owns process, not the Sprint Backlog.
-- D: "Whole Scrum Team" is the wrong granularity — the Sprint Backlog is Developer-owned.
+- D: "Whole Scrum Team" is the wrong granularity, the Sprint Backlog is Developer-owned.
 **Exam takeaway.** PO → Product Backlog; Devs → Sprint Backlog; Devs → Increment (with whole team's collaboration).
 
 ### Q6. Answer: A (One)
@@ -351,7 +351,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 - A: Plan-Execute-Review is Waterfall.
 - C: 3Cs of communication, not Scrum.
 - D: Standardize-Measure-Improve is Lean Six Sigma framing, not Scrum's empiricism.
-**Exam takeaway.** TIA — Transparency, Inspection, Adaptation.
+**Exam takeaway.** TIA, Transparency, Inspection, Adaptation.
 
 ### Q8. Answer: B (the Increment)
 **Why B is correct.** DoD is the commitment attached to the Increment.
@@ -374,7 +374,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 **Why the others are wrong.**
 - A: "Whenever convenient" violates predictability.
 - C: "Twice per Sprint" is wrong frequency.
-- D: "Only when blockers" — the Daily Scrum exists *to find* blockers, not only when known.
+- D: "Only when blockers", the Daily Scrum exists *to find* blockers, not only when known.
 **Exam takeaway.** Predictable cadence is required.
 
 ### Q11. Answer: B (Developers plan next 24 hours toward Sprint Goal)
@@ -388,7 +388,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 ### Q12. Answer: B (typically 10 or fewer total)
 **Why B is correct.** 2020 Scrum Guide changed from "3-9 developers" to "typically 10 or fewer."
 **Why the others are wrong.**
-- A: Pre-2020 framing — outdated.
+- A: Pre-2020 framing, outdated.
 - C: "Exactly 7" is an arbitrary number not in the Guide.
 - D: "Up to 15" exceeds the recommendation.
 **Exam takeaway.** Memorize 10-or-fewer.
@@ -434,7 +434,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 **Exam takeaway.** Review = product; Retro = process.
 
 ### Q18. Answer: C (relative complexity, effort, uncertainty)
-**Why C is correct.** Story points are explicitly *relative* — not time-units.
+**Why C is correct.** Story points are explicitly *relative*, not time-units.
 **Why the others are wrong.**
 - A and B: Hours/days are time-based and the canonical confusion.
 - D: Counting tasks isn't sizing.
@@ -455,7 +455,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 **Exam takeaway.** Three groups. Memorize.
 
 ### Q21. Answer: B (Coach: "What approaches are you considering?")
-**Why B is correct.** Servant-leader response — coach with questions.
+**Why B is correct.** Servant-leader response, coach with questions.
 **Why the others are wrong.**
 - A: Providing a design = Tell, not Coach.
 - C: Telling the dev to figure it out alone abandons the role.
@@ -479,13 +479,13 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 ### Q24. Answer: B (NOT in Scrum Guide; optional)
 **Why B is correct.** Definition of Ready is common practice (Cohn) but explicitly not in the Scrum Guide.
 **Why the others are wrong.**
-- A: Required by Scrum Guide — false.
-- C: Set by SM — false.
-- D: Same as DoD — different concept; DoR gates input, DoD gates output.
+- A: Required by Scrum Guide, false.
+- C: Set by SM, false.
+- D: Same as DoD, different concept; DoR gates input, DoD gates output.
 **Exam takeaway.** DoR ≠ Scrum Guide content.
 
 ### Q25. Answer: C (Coach the team to inspect/adapt at the Retro)
-**Why C is correct.** Empirical response — inspect, adapt, improve through the Retro.
+**Why C is correct.** Empirical response, inspect, adapt, improve through the Retro.
 **Why the others are wrong.**
 - A: "Work harder" is anti-servant.
 - B: "Add developers" rarely helps mid-Sprint and isn't the SM's call.
@@ -509,9 +509,9 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 ### Q28. Answer: D (all of the above)
 **Why D is correct.** Multiple teams on one product share: one PO, one Product Backlog, one Product Goal (and a common DoD).
 **Why the others are wrong.**
-- A: PO only — incomplete.
-- B: PO + Backlog only — incomplete.
-- C: Goal only — incomplete.
+- A: PO only, incomplete.
+- B: PO + Backlog only, incomplete.
+- C: Goal only, incomplete.
 **Exam takeaway.** PO + PB + PG (+ common DoD) shared.
 
 ### Q29. Answer: B (Maximize the value of the product)
@@ -547,7 +547,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 **Exam takeaway.** AC ≠ DoD. AC per PBI; DoD applies to all.
 
 ### Q33. Answer: C (Teaching)
-**Why C is correct.** New team needs to *learn* Scrum first — Teach stance dominates.
+**Why C is correct.** New team needs to *learn* Scrum first, Teach stance dominates.
 **Why the others are wrong.**
 - A: Coaching presumes the team already knows the framework.
 - B: Servant leadership is the default but Teach is the specific stance for new teams.
@@ -573,12 +573,12 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 ### Q36. Answer: C (not directly comparable)
 **Why C is correct.** Story points are team-relative; cross-team comparison is meaningless.
 **Why the others are wrong.**
-- A: "Less productive" — false inference.
-- B: "Less skilled" — false inference.
-- D: "Underperforming" — false inference.
+- A: "Less productive", false inference.
+- B: "Less skilled", false inference.
+- D: "Underperforming", false inference.
 **Exam takeaway.** Never compare team velocities.
 
-### Q37. Answer: B (No — conflict of interest)
+### Q37. Answer: B (No, conflict of interest)
 **Why B is correct.** PO + SM combined creates fundamental conflict (value vs. process/team protection).
 **Why the others are wrong.**
 - A: "Yes" violates Scrum Guide separation.
@@ -587,7 +587,7 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 **Exam takeaway.** PO + SM = NEVER.
 
 ### Q38. Answer: B (Scrum Team only)
-**Why B is correct.** Retrospective is for the Scrum Team — no stakeholders.
+**Why B is correct.** Retrospective is for the Scrum Team, no stakeholders.
 **Why the others are wrong.**
 - A: Stakeholders attend the Review, not the Retro.
 - C: SM is part of the Scrum Team; can't exclude.
@@ -603,9 +603,9 @@ Below is the wrong-answer rationale for every question — *why* the correct ans
 **Exam takeaway.** Increment + DoD = always.
 
 ### Q40. Answer: C (a true leader who serves)
-**Why C is correct.** 2020 Scrum Guide rephrasing — "true leader who serves."
+**Why C is correct.** 2020 Scrum Guide rephrasing, "true leader who serves."
 **Why the others are wrong.**
-- A: Team manager — explicitly NOT.
-- B: Project manager — there is no PM in Scrum.
-- D: Technical lead — not the SM's role.
+- A: Team manager, explicitly NOT.
+- B: Project manager, there is no PM in Scrum.
+- D: Technical lead, not the SM's role.
 **Exam takeaway.** SM is a *leader who serves*, not a manager.

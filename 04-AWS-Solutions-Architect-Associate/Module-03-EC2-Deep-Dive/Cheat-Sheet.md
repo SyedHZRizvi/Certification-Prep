@@ -15,7 +15,7 @@
 | I/D/H | Storage-heavy | i4i, d3 |
 | G/P/Inf/Trn | GPU/AI | g5, p4d, inf2 |
 
-🧠 *"My Cat Really Is Great"* — M C R I G
+🧠 *"My Cat Really Is Great"*, M C R I G
 
 ---
 
@@ -69,7 +69,7 @@ Insert 3rd-party firewall appliances?       → GWLB
 
 | Policy | When |
 |--------|------|
-| Target tracking | "Keep CPU at 50%" — simplest |
+| Target tracking | "Keep CPU at 50%", simplest |
 | Step scaling | Tiered alarm responses |
 | Scheduled | Known time-based patterns |
 | Predictive | ML forecast pre-warms capacity |
@@ -143,7 +143,7 @@ Insert 3rd-party firewall appliances?       → GWLB
 2. ALB does what NLB cannot? ___
 3. Which storage is multi-AZ accessible? ___
 4. What does an instance profile do? ___
-5. RI vs Savings Plan — when each? ___
+5. RI vs Savings Plan, when each? ___
 
 ---
 

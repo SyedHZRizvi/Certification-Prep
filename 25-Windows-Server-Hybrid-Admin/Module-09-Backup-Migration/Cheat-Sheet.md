@@ -9,7 +9,7 @@
 | Agent / Service | Backs up | Best for |
 |-----------------|----------|----------|
 | **MARS** | Files / folders / System State | Workstations, branch FS |
-| **MABS** | VMs / SQL / SP / Exchange / FS — app-aware | Full on-prem with Azure offload |
+| **MABS** | VMs / SQL / SP / Exchange / FS, app-aware | Full on-prem with Azure offload |
 | **Azure Backup for Azure VMs** | Whole Azure VMs (managed disks) | Azure-native |
 | **Azure Backup for Azure Files** | SMB shares | Azure file shares |
 | **Azure Backup for SQL/SAP HANA** | DB tier inside Azure VMs | Cloud DB |
@@ -22,7 +22,7 @@
 
 | Property | Default / Detail |
 |----------|------------------|
-| Redundancy | LRS / ZRS / **GRS (default)** — **locked at first backup** |
+| Redundancy | LRS / ZRS / **GRS (default)**, **locked at first backup** |
 | Soft delete | **14 days default** (can disable, discouraged) |
 | **Immutable vault** | Newer; hard lock for compliance |
 | Cross-region restore | GRS vault feature |
@@ -40,7 +40,7 @@
 | Sources | Hyper-V / VMware / physical / Azure-to-Azure / AWS |
 | Recovery points | Configurable (24 hourly + 7 daily typical) |
 | App-consistent freq | 1–12 hour |
-| **Test failover** | **Non-disruptive** (parallel test VNet) — run quarterly |
+| **Test failover** | **Non-disruptive** (parallel test VNet), run quarterly |
 
 ### Failover types
 
@@ -48,7 +48,7 @@
 |------|------|
 | **Test** | Validate runbook, no disruption |
 | **Planned** | Maintenance, app-consistent shutdown |
-| **Unplanned** | True DR — last recovery point |
+| **Unplanned** | True DR, last recovery point |
 
 ### Recovery Plans
 
@@ -87,7 +87,7 @@ Discover (appliance)  →  Assess (right-sizing)  →  Migrate (via ASR / DMS / 
 
 - Move users/groups/computers between AD domains/forests
 - **Preserves SID History** for resource access continuity
-- "Available but no longer actively developed" — community-supported
+- "Available but no longer actively developed", community-supported
 - Modern alternative: Entra ID cross-tenant migration
 
 ---
@@ -100,7 +100,7 @@ When you see these, they're often **correct**:
 - ✅ "Use MABS for app-aware SQL/SP/Exchange backup"
 - ✅ "Enable soft delete + immutable vault for ransomware defense"
 - ✅ "GRS vault for cross-region restore"
-- ✅ "ASR test failover is non-disruptive — run quarterly"
+- ✅ "ASR test failover is non-disruptive, run quarterly"
 - ✅ "Storage Migration Service for file-server modernization"
 - ✅ "Azure Migrate uses ASR for VM migration"
 - ✅ "ADMT preserves SID History"
@@ -150,12 +150,12 @@ Usually **wrong**:
 
 ## ✏️ Quick Self-Check
 
-1. MARS vs MABS — pick three differences? ___
+1. MARS vs MABS, pick three differences? ___
 2. Vault redundancy locked when? ___
 3. Soft delete default retention? ___
-4. ASR test failover — disruptive or not? ___
+4. ASR test failover, disruptive or not? ___
 5. SMS three phases? ___
-6. ADMT — what's its current status and what does SID History preserve? ___
+6. ADMT, what's its current status and what does SID History preserve? ___
 
 ---
 

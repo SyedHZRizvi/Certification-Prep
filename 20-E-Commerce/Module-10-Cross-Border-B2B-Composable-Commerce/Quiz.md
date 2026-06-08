@@ -87,7 +87,7 @@ D. No one
 ### Q11. Adobe Commerce B2B (formerly Magento B2B Suite) supports: *(Apply)*
 A. Only single-buyer accounts
 B. Company accounts with hierarchical roles, RFQ workflow, tiered pricing
-C. Only Net 30 — no other payment terms
+C. Only Net 30, no other payment terms
 D. Storefront only, no API
 
 ---
@@ -218,7 +218,7 @@ D. Block all EU traffic
 MACH Alliance, 2020.
 
 ### Q2: **B. An API-only, headless-only MACH commerce engine**
-commercetools ships no storefront — you bring your own React/Vue/Svelte frontend.
+commercetools ships no storefront, you bring your own React/Vue/Svelte frontend.
 
 ### Q3: **C. $800 (19 USC 1321)**
 Set at $800 in 2016 (up from $200 in 1993). Under restriction for Chinese-origin goods 2024-2025.
@@ -260,7 +260,7 @@ Shopify B2B on Plus launched GA at Shopify Editions Summer '22.
 Gartner / CEB *B2B Buyer Report*, 2017 (updated 2022): average buying-committee size 6.8 individuals.
 
 ### Q18: **C. ~$200M GMV with sufficient engineering capacity**
-Forrester *MACH Adoption Report* 2024 — empirically validated threshold.
+Forrester *MACH Adoption Report* 2024, empirically validated threshold.
 
 ### Q19: **C. Remix (post-2022 rebuild)**
 Shopify acquired Remix in 2022 and rebuilt Hydrogen on it.

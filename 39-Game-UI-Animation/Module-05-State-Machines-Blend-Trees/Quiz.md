@@ -22,7 +22,7 @@ D. Animation type (Humanoid vs Generic), layer count, and parameter count
 A. Only AnyState transitions
 B. Transitions leaving the destination (next) state
 C. Transitions leaving the source (current) state
-D. No transitions — the blend must complete
+D. No transitions, the blend must complete
 
 ---
 
@@ -82,7 +82,7 @@ D. Any State (highest priority regardless of context)
 
 ### Q9. A Blend Tree's "blend position lerp speed" (the rate at which the sample position moves) tuned too LOW would result in:
 
-A. Characters with no locomotion smoothing — instant snapping between clips
+A. Characters with no locomotion smoothing, instant snapping between clips
 B. Mushy, sluggish locomotion where speed changes feel delayed
 C. Foot sliding because the animation and movement don't match
 D. The Blend Tree crashing due to division by zero
@@ -172,7 +172,7 @@ D. Pushdown Automaton
 
 ### Q19. In a 1D Blend Tree, animation clips should ideally be captured or authored:
 
-A. At any speed — the Blend Tree normalizes them automatically
+A. At any speed, the Blend Tree normalizes them automatically
 B. At the exact speed matching each breakpoint parameter value
 C. At the same speed, with scale applied in the Blend Tree settings
 D. At 1m/s only, with the Blend Tree multiplier controlling playback speed
@@ -227,28 +227,28 @@ D. Layer 0 and Layer 1 averaged, then Layer 2 added
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — Transition latency, blend duration, interrupt conditions
-Q2:  C — "Current State" allows transitions leaving the source state to interrupt
-Q3:  B — Loop if the trigger condition remains true while in state X
-Q4:  B — Reduced blend time 0.25→0.07s + every-frame condition checking
-Q5:  B — Freeform Directional for motion capture directional data
-Q6:  B — Additive clips are delta from reference pose, not full poses
-Q7:  B — Coyote time: grace window after leaving ledge for jump + edge-peek anim
-Q8:  C — Current State interrupt lets dodge fire immediately from any source state
-Q9:  B — Too-low lerp speed = mushy delayed locomotion response
-Q10: B — Trigger parameter is consumed on transition, preventing re-trigger
-Q11: B — Jump Rise, Apex, Fall + optional Coyote Time + Landing variants
-Q12: C — 0.05–0.25s is the responsive action game blend time range
-Q13: B — Sub-State Machines group related states for organizational clarity
-Q14: B — Layer weight 0.0 = layer has no effect; base layer controls fully
-Q15: B — Has Exit Time so recovery animation plays to completion
-Q16: A — Transition Priority controls interrupt order in Unreal state machines
-Q17: B — Reduce blend duration (0.3s → 0.1s) to fix mushy transition
-Q18: C — Hierarchical FSM with sub-machines for complex combat systems
-Q19: B — Clips should match the parameter value at each blend breakpoint
-Q20: B — Inertialization preserves animation velocity at blend start → no pops
-Q21: B — Override + Avatar Mask: layer plays for masked bones, base plays the rest
-Q22: B — Input buffering stores inputs during locked animation for deferred execution
-Q23: B — Lerp speed controls how quickly the sample position tracks the parameter
-Q24: B — Layer 0 base → Layer 1 overrides upper body → Layer 2 adds breathing delta
+Q1:  B, Transition latency, blend duration, interrupt conditions
+Q2:  C, "Current State" allows transitions leaving the source state to interrupt
+Q3:  B, Loop if the trigger condition remains true while in state X
+Q4:  B, Reduced blend time 0.25→0.07s + every-frame condition checking
+Q5:  B, Freeform Directional for motion capture directional data
+Q6:  B, Additive clips are delta from reference pose, not full poses
+Q7:  B, Coyote time: grace window after leaving ledge for jump + edge-peek anim
+Q8:  C, Current State interrupt lets dodge fire immediately from any source state
+Q9:  B, Too-low lerp speed = mushy delayed locomotion response
+Q10: B, Trigger parameter is consumed on transition, preventing re-trigger
+Q11: B, Jump Rise, Apex, Fall + optional Coyote Time + Landing variants
+Q12: C, 0.05–0.25s is the responsive action game blend time range
+Q13: B, Sub-State Machines group related states for organizational clarity
+Q14: B, Layer weight 0.0 = layer has no effect; base layer controls fully
+Q15: B, Has Exit Time so recovery animation plays to completion
+Q16: A, Transition Priority controls interrupt order in Unreal state machines
+Q17: B, Reduce blend duration (0.3s → 0.1s) to fix mushy transition
+Q18: C, Hierarchical FSM with sub-machines for complex combat systems
+Q19: B, Clips should match the parameter value at each blend breakpoint
+Q20: B, Inertialization preserves animation velocity at blend start → no pops
+Q21: B, Override + Avatar Mask: layer plays for masked bones, base plays the rest
+Q22: B, Input buffering stores inputs during locked animation for deferred execution
+Q23: B, Lerp speed controls how quickly the sample position tracks the parameter
+Q24: B, Layer 0 base → Layer 1 overrides upper body → Layer 2 adds breathing delta
 ```

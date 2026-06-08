@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Phrasee — AI Subject-Line Case Studies</p>
+      <p class="vg-title">Phrasee, AI Subject-Line Case Studies</p>
       <p class="vg-creator">Phrasee + brand case studies</p>
       <span class="vg-duration">⏱ 10 min · Domino's, eBay lifts</span>
     </div>
@@ -148,9 +148,9 @@
 Answer in your notebook (without re-reading):
 
 1. Recite the 5 email foundations.
-2. Drip vs lifecycle — define each + give one example of each.
+2. Drip vs lifecycle, define each + give one example of each.
 3. Why is open rate unreliable post-iOS 15 MPP?
-4. What are SPF, DKIM, and DMARC — and what changed in Feb 2024?
+4. What are SPF, DKIM, and DMARC, and what changed in Feb 2024?
 5. Sketch a 5-email welcome series.
 
 If you can do all 5, you're ready for [Quiz.md](./Quiz.md). Otherwise re-watch HubSpot Academy + Klaviyo.

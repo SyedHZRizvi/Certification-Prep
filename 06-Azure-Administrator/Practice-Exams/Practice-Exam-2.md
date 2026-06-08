@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AZ-104 (Full Curriculum)
+# 🧪 Practice Exam 2, AZ-104 (Full Curriculum)
 
 > **Conditions:** Set an 80-minute timer. 45 questions. Treat it like the real thing.
 > **Pass mark:** 32/45 (≈ 70%, matching the real exam)
@@ -44,7 +44,7 @@ B. Ingress controllers
 C. Disks
 D. Pod replicas based on metrics
 
-### 7. **Yes/No** — AKS.
+### 7. **Yes/No**, AKS.
 
 **S1:** Azure CNI gives pods VNet IPs directly.
 **S2:** Azure CNI Overlay assigns pod IPs from an overlay CIDR.
@@ -115,9 +115,9 @@ B. AllowAzureLoadBalancerInBound
 C. AllowInternetInBound
 D. DenyAllInBound
 
-### 17. **Yes/No** — NSGs.
+### 17. **Yes/No**, NSGs.
 
-**S1:** NSGs are stateful — return traffic is auto-allowed.
+**S1:** NSGs are stateful, return traffic is auto-allowed.
 **S2:** Both subnet-level and NIC-level NSGs apply; a Deny in either drops the packet.
 **S3:** Service tags can be used as source or destination.
 
@@ -181,11 +181,11 @@ B. Allow secure RDP/SSH to VMs without public IPs
 C. Replace VPN
 D. Provide CDN
 
-### 26. Azure Backup vs Site Recovery — which has continuous replication and is for region failover?
+### 26. Azure Backup vs Site Recovery, which has continuous replication and is for region failover?
 A. Backup
 B. Both
 C. Site Recovery
-D. Neither — use snapshots
+D. Neither, use snapshots
 
 ### 27. Cross-Region Restore for Azure Backup requires the vault to use:
 A. LRS
@@ -199,7 +199,7 @@ B. Linux files only
 C. SQL Server
 D. Whole VMs
 
-### 29. **Yes/No** — Backup.
+### 29. **Yes/No**, Backup.
 
 **S1:** Soft delete on a Recovery Services Vault is on by default and retains deleted points for 14 days minimum.
 **S2:** Immutable vault prevents disabling soft delete.
@@ -260,7 +260,7 @@ B. Deny
 C. Audit
 D. Append
 
-### 37. **Yes/No** — Policy.
+### 37. **Yes/No**, Policy.
 
 **S1:** An initiative bundles multiple policies for unified assignment.
 **S2:** Deny at a parent scope can be overridden by Allow at a child scope.
@@ -283,7 +283,7 @@ B. BastionSubnet
 C. Any name
 D. ManagementSubnet
 
-### 40. Yes/No — Identity & RBAC.
+### 40. Yes/No, Identity & RBAC.
 
 **S1:** PIM allows time-bound activation of privileged roles with MFA + approval.
 **S2:** A Contributor at a Resource Group can assign roles within that RG.
@@ -312,7 +312,7 @@ B. Block all inbound except WAF
 C. Restrict by `AzureFrontDoor.Backend` service tag + header check, or use a Private Link origin
 D. Use a NSG with Internet allow
 
-### 44. Yes/No — Hub-Spoke.
+### 44. Yes/No, Hub-Spoke.
 
 **S1:** Spoke-to-spoke traffic flows through the hub (via Firewall + UDRs).
 **S2:** "Allow gateway transit" enables the hub to share its VPN/ER gateway with peered spokes.
@@ -359,7 +359,7 @@ D. 1 → 2 → 3 → 4 → 5
 
 | Score | Verdict |
 |-------|---------|
-| 42–45 | 🏆 Excellent — take the Final Mock next |
+| 42–45 | 🏆 Excellent, take the Final Mock next |
 | 32–41 | ✅ On track. Review wrong answers carefully. |
 | 23–31 | ⚠️ Re-study weak modules. Use the module map below. |
 | <23   | 🔁 Restart from Module 1 |
@@ -400,7 +400,7 @@ For each wrong answer: identify module → re-read → flashcard → re-quiz in 
 
 **Q3. Answer: A.** *Why A is correct.* "Slot setting" means the value STAYS with the slot during swap. *Why others are wrong.* **B**: That's the *default* behavior for non-slot settings. **C**: Encryption is unrelated. **D**: Slot settings remain editable. *Exam-takeaway.* Slot setting = sticky.
 
-**Q4. Answer: D.** *Why D is correct.* ACI is designed for short-lived, event-driven, no-orchestration workloads — queue-triggered container is the canonical fit. *Why others are wrong.* **A**: 24/7 microservice = AKS. **B**: WordPress = App Service. **C**: Stateful PostgreSQL = VM or Azure DB. *Exam-takeaway.* ACI = short-lived, queue/event-driven.
+**Q4. Answer: D.** *Why D is correct.* ACI is designed for short-lived, event-driven, no-orchestration workloads, queue-triggered container is the canonical fit. *Why others are wrong.* **A**: 24/7 microservice = AKS. **B**: WordPress = App Service. **C**: Stateful PostgreSQL = VM or Azure DB. *Exam-takeaway.* ACI = short-lived, queue/event-driven.
 
 **Q5. Answer: A.** *Why A is correct.* AKS standard tier control plane is free; you pay for nodes + add-ons. Uptime SLA tier adds a small hourly fee for 99.95% guarantee. *Why others are wrong.* **B**: Standard control plane is free. **C**: Standard tier is free. **D**: Subscription tier is unrelated. *Exam-takeaway.* AKS control plane: free; nodes: paid.
 
@@ -408,9 +408,9 @@ For each wrong answer: identify module → re-read → flashcard → re-quiz in 
 
 **Q7. Answer: B.** *Why B is correct.* S1 yes (Azure CNI = pods get VNet IPs). S2 yes (Overlay = pod IPs from overlay CIDR). S3 no (Kubenet is legacy; not recommended). *Why others are wrong.* **A**: S3 wrong (Kubenet is not modern default). **C**: S1 wrong. **D**: S3 wrong. *Exam-takeaway.* Modern AKS networking = Azure CNI or CNI Overlay.
 
-**Q8. Answer: C.** *Why C is correct.* Azure reserves 5 IPs per subnet (.0/.1/.2/.3/.255). *Why others are wrong.* **A**: 2 is too few (only network + broadcast). **B**: 3 misses the DNS reservations. **D**: 7 is too many. *Exam-takeaway.* 5 reserved IPs per subnet — memorize.
+**Q8. Answer: C.** *Why C is correct.* Azure reserves 5 IPs per subnet (.0/.1/.2/.3/.255). *Why others are wrong.* **A**: 2 is too few (only network + broadcast). **B**: 3 misses the DNS reservations. **D**: 7 is too many. *Exam-takeaway.* 5 reserved IPs per subnet, memorize.
 
-**Q9. Answer: C.** *Why C is correct.* Peering is non-transitive — fundamental property. *Why others are wrong.* **A**: Wrong direction. **B**: Peering uses Microsoft backbone, not public internet. **D**: Peering supports many peers per VNet. *Exam-takeaway.* Non-transitive = need hub firewall + UDRs to transit.
+**Q9. Answer: C.** *Why C is correct.* Peering is non-transitive, fundamental property. *Why others are wrong.* **A**: Wrong direction. **B**: Peering uses Microsoft backbone, not public internet. **D**: Peering supports many peers per VNet. *Exam-takeaway.* Non-transitive = need hub firewall + UDRs to transit.
 
 **Q10. Answer: D.** *Why D is correct.* Private endpoint = NIC with private IP fronting a PaaS service. *Why others are wrong.* **A**: It has *major* DNS implications (Private DNS Zone). **B**: RBAC continues to apply. **C**: PE doesn't replace VPN gateways. *Exam-takeaway.* PE = real NIC + private IP for PaaS.
 
@@ -428,7 +428,7 @@ For each wrong answer: identify module → re-read → flashcard → re-quiz in 
 
 **Q17. Answer: D.** *Why D is correct.* All three are correct (stateful, both layers apply, service tags work as source/dest). *Why others are wrong.* A/B/C each miss at least one. *Exam-takeaway.* NSG basics: stateful, dual-layer, service-tag aware.
 
-**Q18. Answer: D.** *Why D is correct.* Azure Firewall rule order: DNAT → Network → Application. *Why others are wrong.* **A**: Reversed. **B**: Random — fail. **C**: Network before DNAT is wrong. *Exam-takeaway.* DNAT first (port-forward), then Network L3/4, then Application L7.
+**Q18. Answer: D.** *Why D is correct.* Azure Firewall rule order: DNAT → Network → Application. *Why others are wrong.* **A**: Reversed. **B**: Random, fail. **C**: Network before DNAT is wrong. *Exam-takeaway.* DNAT first (port-forward), then Network L3/4, then Application L7.
 
 **Q19. Answer: B.** *Why B is correct.* Premium SKU adds TLS inspection + IDPS + URL filtering. *Why others are wrong.* **A**: Basic is L3/L4 only. **C**: Standard adds threat intel + DNAT but not TLS inspection. **D**: Not all SKUs. *Exam-takeaway.* TLS inspection = Premium.
 
@@ -436,7 +436,7 @@ For each wrong answer: identify module → re-read → flashcard → re-quiz in 
 
 **Q21. Answer: B.** *Why B is correct.* Azure Front Door = global L7 + CDN + WAF. *Why others are wrong.* **A**: SLB is regional L4. **C**: App Gateway is regional L7. **D**: Traffic Manager is DNS-only. *Exam-takeaway.* Global L7 + CDN + WAF = Front Door.
 
-**Q22. Answer: C.** *Why C is correct.* Traffic Manager is a DNS-based router — returns IPs, doesn't proxy. *Why others are wrong.* **A**: Not a firewall. **B**: Not a proxy (DNS layer only). **D**: Not a CDN. *Exam-takeaway.* TM = DNS-only steering.
+**Q22. Answer: C.** *Why C is correct.* Traffic Manager is a DNS-based router, returns IPs, doesn't proxy. *Why others are wrong.* **A**: Not a firewall. **B**: Not a proxy (DNS layer only). **D**: Not a CDN. *Exam-takeaway.* TM = DNS-only steering.
 
 **Q23. Answer: C.** *Why C is correct.* ASGs are single-VNet scoped (Microsoft Learn). *Why others are wrong.* **A**: ASGs don't cross regions. **B**: Don't cross subs either. **D**: Don't cross tenants. *Exam-takeaway.* ASG = single VNet.
 

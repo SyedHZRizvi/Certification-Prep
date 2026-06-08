@@ -252,28 +252,28 @@ D. Define the UV seam for eye texture painting
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Quads are required for predictable deformation in animation meshes
-Q2.  C — Ctrl+R is the Loop Cut shortcut
-Q3.  C — Clipping prevents vertices from crossing the mirror axis
-Q4.  C — Close loops sharpen the edge (the control-cage effect)
-Q5.  C — Pinching = too few loops; the joint lacks geometry to deform smoothly
-Q6.  C — Proportional Editing applies a radius-based falloff to transforms
-Q7.  C — ~4,800 polygons was Ellie's documented base mesh count
-Q8.  C — Ctrl+Alt+Click selects an edge ring (perpendicular to loop)
-Q9.  B — Shift+E sets crease value on selected edges
-Q10. D — Level 3 is used for final Cycles renders at feature quality
-Q11. B — Merge welds mirrored vertices at the seam
-Q12. C — Block-out → topology refinement → subdivision is the correct order
-Q13. C — 5-poles cause slight hardening; acceptable away from high-curvature areas
-Q14. B — Scale must be applied before rigging (Ctrl+A → Apply Scale)
-Q15. D — K is the Knife tool for freehand cuts
-Q16. B — Level 2 = ×16 = 2,000 × 16 = 32,000 polygons
-Q17. C — Statistics overlay shows polygon/vertex/edge count
-Q18. B — Mirror Modifier with X axis, Clipping, and Merge is the correct setup
-Q19. D — Shoulder needs 4–5 loops (most complex joint, 3-axis rotation)
-Q20. C — Topology = arrangement of vertices, edges, faces
-Q21. D — Scroll wheel resizes the Proportional Editing radius during transform
-Q22. C — N-gons produce unpredictable results; avoid in animated meshes
-Q23. B — Ctrl+J joins selected objects into one mesh
-Q24. C — Oval rings provide eyelid blink deformation geometry
+Q1.  C, Quads are required for predictable deformation in animation meshes
+Q2.  C, Ctrl+R is the Loop Cut shortcut
+Q3.  C, Clipping prevents vertices from crossing the mirror axis
+Q4.  C, Close loops sharpen the edge (the control-cage effect)
+Q5.  C, Pinching = too few loops; the joint lacks geometry to deform smoothly
+Q6.  C, Proportional Editing applies a radius-based falloff to transforms
+Q7.  C, ~4,800 polygons was Ellie's documented base mesh count
+Q8.  C, Ctrl+Alt+Click selects an edge ring (perpendicular to loop)
+Q9.  B, Shift+E sets crease value on selected edges
+Q10. D, Level 3 is used for final Cycles renders at feature quality
+Q11. B, Merge welds mirrored vertices at the seam
+Q12. C, Block-out → topology refinement → subdivision is the correct order
+Q13. C, 5-poles cause slight hardening; acceptable away from high-curvature areas
+Q14. B, Scale must be applied before rigging (Ctrl+A → Apply Scale)
+Q15. D, K is the Knife tool for freehand cuts
+Q16. B, Level 2 = ×16 = 2,000 × 16 = 32,000 polygons
+Q17. C, Statistics overlay shows polygon/vertex/edge count
+Q18. B, Mirror Modifier with X axis, Clipping, and Merge is the correct setup
+Q19. D, Shoulder needs 4–5 loops (most complex joint, 3-axis rotation)
+Q20. C, Topology = arrangement of vertices, edges, faces
+Q21. D, Scroll wheel resizes the Proportional Editing radius during transform
+Q22. C, N-gons produce unpredictable results; avoid in animated meshes
+Q23. B, Ctrl+J joins selected objects into one mesh
+Q24. C, Oval rings provide eyelid blink deformation geometry
 ```

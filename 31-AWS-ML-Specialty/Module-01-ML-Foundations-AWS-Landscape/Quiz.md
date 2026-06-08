@@ -3,7 +3,7 @@
 > **Instructions:** Answer all 25 questions WITHOUT looking at the reading.
 > Aim for 20/25 minimum. Time limit: 35 minutes.
 
-> **Bloom's distribution.** Remember 4 (16%) · Understand 6 (24%) · Apply 8 (32%) · Analyze/Evaluate 6 (24%) · Create 1 (4%). MLS-C01 questions are heavily scenario-driven — only ~16% test pure recall.
+> **Bloom's distribution.** Remember 4 (16%) · Understand 6 (24%) · Apply 8 (32%) · Analyze/Evaluate 6 (24%) · Create 1 (4%). MLS-C01 questions are heavily scenario-driven, only ~16% test pure recall.
 
 ---
 
@@ -51,7 +51,7 @@ D. Reliability
 
 ### Q6. A binary classifier on heavily imbalanced data (0.1% positive class) reports 99.9% accuracy. The BEST conclusion is: *(Analyze)*
 A. The model is excellent and ready to deploy
-B. Accuracy is misleading here — examine precision, recall, F1, and PR-AUC
+B. Accuracy is misleading here, examine precision, recall, F1, and PR-AUC
 C. The model needs more training data
 D. The labels are wrong
 
@@ -221,19 +221,19 @@ Huge gap between training and validation accuracy is the textbook overfit signat
 Comprehend is the managed NLP service that provides sentiment, entity, key-phrase, language detection, and custom classifiers as APIs. SageMaker is the platform; Bedrock is the generative-AI gateway; Glue is data ETL.
 
 ### Q4: **C. XGBoost**
-Tabular data with millions of rows and thousands of features is the prototype XGBoost use case — beats deep nets on most tabular benchmarks. CNNs are for images, K-Means is unsupervised, and unregularised linear regression on 2,800 features will overfit instantly.
+Tabular data with millions of rows and thousands of features is the prototype XGBoost use case, beats deep nets on most tabular benchmarks. CNNs are for images, K-Means is unsupervised, and unregularised linear regression on 2,800 features will overfit instantly.
 
 ### Q5: **B. Cost Optimization**
-MME hosts many models on one endpoint, reducing per-model hosting cost — directly cost-optimising. Reliability and sustainability benefit indirectly but cost is the primary headline.
+MME hosts many models on one endpoint, reducing per-model hosting cost, directly cost-optimising. Reliability and sustainability benefit indirectly but cost is the primary headline.
 
 ### Q6: **B. Examine precision, recall, F1, and PR-AUC**
 On 0.1% positive class, a "predict negative always" classifier achieves 99.9% accuracy. Accuracy is meaningless; precision / recall / F1 / PR-AUC tell the real story.
 
 ### Q7: **C. SageMaker Clarify (SHAP values)**
-Clarify produces SHAP feature-importance per prediction — the standard for regulator-acceptable explanations. Model Monitor tracks drift; Debugger inspects training-time tensors; Logs Insights is for raw log queries.
+Clarify produces SHAP feature-importance per prediction, the standard for regulator-acceptable explanations. Model Monitor tracks drift; Debugger inspects training-time tensors; Logs Insights is for raw log queries.
 
 ### Q8: **C. Inherent noise in the label**
-Irreducible error is the noise floor — no model can do better. Bias and variance can be traded off; noise cannot be removed without better labels.
+Irreducible error is the noise floor, no model can do better. Bias and variance can be traded off; noise cannot be removed without better labels.
 
 ### Q9: **C. Use Amazon Translate (managed)**
 Managed service for translation = no model training, no infra, billed per character. SageMaker / Bedrock fine-tuning is overkill for a 5-engineer team's help centre.
@@ -242,7 +242,7 @@ Managed service for translation = no model training, no infra, billed per charac
 Cross-entropy is the canonical loss for probabilistic classification (binary and multi-class). Regression uses MSE/MAE; clustering minimises intra-cluster distance; RL uses policy-gradient or value-based losses.
 
 ### Q11: **D. Increasing the learning rate**
-LR is not a regularisation tool — a higher LR can destabilise training and is not a principled way to reduce overfit. L2, dropout, and early stopping are all valid regularisers.
+LR is not a regularisation tool, a higher LR can destabilise training and is not a principled way to reduce overfit. L2, dropout, and early stopping are all valid regularisers.
 
 ### Q12: **B. MAE**
 MAE penalises all errors linearly so a few extreme outliers do not dominate. MSE squares errors and is dominated by outliers. (Huber loss is the in-between option for completeness.)
@@ -266,10 +266,10 @@ SageMaker Pipelines is the native, ML-aware CI/CD; Model Registry versions train
 Bedrock is AWS's foundation-model gateway: Claude, Llama, Mistral, Titan, Cohere, all behind one API. SageMaker is the ML platform; Comprehend is NLP-as-a-service; Lex is chatbot intents.
 
 ### Q19: **C. Lower cost when hosting many models with sparse traffic**
-MME loads models into memory on-demand, multiplexing many models on one endpoint. The trade-off: cold-start latency on first invocation. Each model still has its own weights — explainability is unaffected.
+MME loads models into memory on-demand, multiplexing many models on one endpoint. The trade-off: cold-start latency on first invocation. Each model still has its own weights, explainability is unaffected.
 
 ### Q20: **B. SageMaker serverless inference**
-Serverless inference scales to zero and bills per request — ideal for sparse traffic. Real-time is always-on (costly when idle); async is for hours-long requests; batch is for offline batches.
+Serverless inference scales to zero and bills per request, ideal for sparse traffic. Real-time is always-on (costly when idle); async is for hours-long requests; batch is for offline batches.
 
 ### Q21: **B. The dataset is small and a single split is noisy**
 K-fold CV averages out the split noise. With huge datasets, a single train/val split is sufficient and K-fold wastes compute.
@@ -284,7 +284,7 @@ Both errors high = the model is too simple to capture the pattern. Fix: more fea
 SageMaker JumpStart lets you deploy foundation models inside your VPC; Bedrock supports VPC endpoints (PrivateLink) so traffic never crosses the public internet. Comprehend / Q in QuickSight are managed services that do not run "in your VPC" the same way.
 
 ### Q25: **C. Regression**
-Continuous dollar output = regression. (You could discretise into bands and frame it as classification, but the question says "continuous dollar amount" — regression.)
+Continuous dollar output = regression. (You could discretise into bands and frame it as classification, but the question says "continuous dollar amount", regression.)
 
 ---
 

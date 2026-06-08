@@ -25,7 +25,7 @@
 L1  → cable, link light
 L2  → ipconfig, valid MAC
 L3  → IP not 169.254.x.x; ping gateway
-L3  → DNS — ping 8.8.8.8 vs ping google.com
+L3  → DNS, ping 8.8.8.8 vs ping google.com
 L4  → Test-NetConnection -Port 443 host
 L7  → app-specific
 ```
@@ -46,10 +46,10 @@ L7  → app-specific
 |---------|-------------|
 | No fans / no LEDs | PSU switch, outlet, front-panel header |
 | Fans spin, no display | Monitor cable + input, reseat RAM, swap GPU |
-| Continuous beeps | RAM — reseat / test |
+| Continuous beeps | RAM, reseat / test |
 | 1 long + 3 short (AMI) | Video |
 | Random reboot under load | PSU or thermal |
-| Click of death (HDD) | Failing head — back up NOW |
+| Click of death (HDD) | Failing head, back up NOW |
 | "Boot device not found" | SATA cable, boot order, dead drive |
 | BSOD MEMORY_MANAGEMENT | MemTest86 |
 | BSOD IRQL_NOT_LESS_OR_EQUAL | Driver, often RAM |
@@ -70,7 +70,7 @@ L7  → app-specific
 
 ---
 
-## 🛠️ CLI Cheat — Diagnostic Toolkit
+## 🛠️ CLI Cheat, Diagnostic Toolkit
 
 ### Windows
 ```
@@ -142,7 +142,7 @@ smartctl -a /dev/sda             SMART data
 1. 6 steps in order? ___
 2. What's the next step after confirming the cause? ___
 3. APIPA address range? ___
-4. ping 8.8.8.8 works, name doesn't — cause? ___
+4. ping 8.8.8.8 works, name doesn't, cause? ___
 5. RAID 6 survives how many failures? ___
 
 ---

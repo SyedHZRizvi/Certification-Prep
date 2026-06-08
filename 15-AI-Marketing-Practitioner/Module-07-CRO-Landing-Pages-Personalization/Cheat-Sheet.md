@@ -58,14 +58,14 @@ Calculator: **evanmiller.org/ab-testing/sample-size.html**
 ## 🎨 Landing Page Anatomy (8 Sections)
 
 ```
-1. HERO        — Headline + subhead + ONE CTA
-2. SOCIAL PROOF — Logos OR star rating
-3. PROBLEM     — Pain agitation
-4. SOLUTION    — 3 features → 3 benefits
-5. PROOF       — Real testimonial + photo
-6. OBJECTIONS  — FAQ (3-4)
-7. PRICING     — Anchor high, recommend middle
-8. FINAL CTA   — Repeat + risk reversal
+1. HERO       , Headline + subhead + ONE CTA
+2. SOCIAL PROOF, Logos OR star rating
+3. PROBLEM    , Pain agitation
+4. SOLUTION   , 3 features → 3 benefits
+5. PROOF      , Real testimonial + photo
+6. OBJECTIONS , FAQ (3-4)
+7. PRICING    , Anchor high, recommend middle
+8. FINAL CTA  , Repeat + risk reversal
 ```
 
 ---
@@ -147,7 +147,7 @@ Daily habit: watch **5 replays**, note **1 improvement**.
 
 1. The 4 CRO cycle steps?
 2. P-value interpretation?
-3. Bayesian peeking — OK or not?
+3. Bayesian peeking, OK or not?
 4. Sample size for 5% baseline + 10% MDE?
 5. Three core Hotjar features?
 

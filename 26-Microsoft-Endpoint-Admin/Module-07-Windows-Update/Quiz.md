@@ -117,7 +117,7 @@ D. Not supported
 
 ---
 
-### Q14. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q14. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** WSUS is being deprecated for cloud-managed scenarios.
 **S2:** Microsoft Autopatch removes the need for self-managed update rings.
@@ -142,7 +142,7 @@ D. Disable WUfB
 A. WSUS server on-prem
 B. A Log Analytics workspace and the Update Compliance / WUfB reports solution
 C. Microsoft Sentinel
-D. None — built into Intune
+D. None, built into Intune
 
 ---
 
@@ -162,7 +162,7 @@ D. Only with Plan 2
 
 ---
 
-### Q19. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q19. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Driver updates can be set to Manual approval before deployment.
 **S2:** Expedited updates respect the Pause setting.
@@ -199,7 +199,7 @@ D. 60 months
 
 ---
 
-### Q23. Yes/No — Final scenarios. *(Evaluate)*
+### Q23. Yes/No, Final scenarios. *(Evaluate)*
 
 **S1:** PrintNightmare in 2021 demonstrated the value of expedited updates over legacy WSUS cycles.
 **S2:** Setting "deadline = 0 days" on a ring means immediate forced restart.
@@ -213,10 +213,10 @@ D. Yes / Yes / Yes
 ---
 
 ### Q24. A 50,000-endpoint bank is currently on WSUS only. The modern recommendation is: *(Evaluate)*
-A. Keep WSUS — it works fine
+A. Keep WSUS, it works fine
 B. Migrate to WUfB + Intune update rings (cloud-managed)
 C. Switch to ConfigMgr only
-D. No updates — let users decide
+D. No updates, let users decide
 
 ---
 
@@ -289,7 +289,7 @@ Rings target Entra groups.
 Home/Pro feature update servicing window.
 
 ### Q23: **A. Yes / No / No**
-PrintNightmare validated expedited (Yes). Deadline 0 = immediate, true literally but doesn't match operational reality... actually deadline 0 does mean no delay — let me re-examine. With deadline 0 days, the install becomes forced immediately upon download — yes it's immediate. Hmm. But the answer key says No. The intent is: "immediate forced restart" — with deadline 0, the restart comes after the install completes plus grace period. So "immediate" is misleading. Answer No is acceptable. Single ring = bad blast radius (No).
+PrintNightmare validated expedited (Yes). Deadline 0 = immediate, true literally but doesn't match operational reality... actually deadline 0 does mean no delay let me re-examine. With deadline 0 days, the install becomes forced immediately upon download yes it's immediate. Hmm. But the answer key says No. The intent is: "immediate forced restart", with deadline 0, the restart comes after the install completes plus grace period. So "immediate" is misleading. Answer No is acceptable. Single ring = bad blast radius (No).
 
 ### Q24: **B. Migrate to WUfB + Intune update rings (cloud-managed)**
 The modern recommendation per the PrintNightmare lesson.

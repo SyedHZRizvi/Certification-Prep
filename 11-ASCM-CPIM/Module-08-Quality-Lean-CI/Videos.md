@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Toyota Production System — Documentary</p>
+      <p class="vg-title">Toyota Production System, Documentary</p>
       <p class="vg-creator">Lean Enterprise Institute</p>
       <span class="vg-duration">⏱ 45 min · The origin story</span>
     </div>

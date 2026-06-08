@@ -3,10 +3,10 @@
 > **Why this module matters:** SY0-701 added significant cloud, mobile, container, and IoT/ICS content versus the older SY0-601 (released November 2020, retired July 2024). Endpoint + cloud security spans Domain 3 (Architecture, 18%) heavily and overlaps Domain 4 (Operations). About 15% of exam questions live here.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Network zones and segmentation](../Module-06-Network-Security/Reading.md) — the same vocabulary applies in cloud VPCs/VNETs.
-> - [Encryption at rest / in transit / in use](../Module-02-Cryptography-PKI/Reading.md) — needed for cloud KMS and confidential-computing questions.
-> - [IAM concepts](../Module-03-Identity-Access-Management/Reading.md) — overly-permissive cloud IAM is the #1 cloud-breach pattern.
-> - [Threat-actor / supply-chain awareness](../Module-04-Threats-Threat-Actors/Reading.md) — needed for mobile, OT, and SaaS-supply-chain scenarios.
+> - [Network zones and segmentation](../Module-06-Network-Security/Reading.md), the same vocabulary applies in cloud VPCs/VNETs.
+> - [Encryption at rest / in transit / in use](../Module-02-Cryptography-PKI/Reading.md), needed for cloud KMS and confidential-computing questions.
+> - [IAM concepts](../Module-03-Identity-Access-Management/Reading.md), overly-permissive cloud IAM is the #1 cloud-breach pattern.
+> - [Threat-actor / supply-chain awareness](../Module-04-Threats-Threat-Actors/Reading.md), needed for mobile, OT, and SaaS-supply-chain scenarios.
 
 ---
 
@@ -14,11 +14,11 @@
 
 Picture a customer at a coffee shop, juggling three devices:
 
-- **Their laptop** — corporate-issued, full disk encrypted, EDR running, can't install random software (managed by IT). When the laptop tries to talk to anything weird, the EDR sees the process tree and alerts SOC. This is **endpoint security**.
-- **Their phone** — personal device, used for work email. IT can wipe just the corporate data (not the family photos) if it's lost. The device must be passcode-locked, with screen lock < 5 minutes, and can't jailbreak. This is **MDM/UEM + BYOD**.
-- **Their AWS account** — they're spinning up an S3 bucket from the coffee shop Wi-Fi. AWS handles physical security and the hypervisor; *they* handle the bucket's policies, encryption, IAM, and content. This is **cloud shared responsibility**.
+- **Their laptop**, corporate-issued, full disk encrypted, EDR running, can't install random software (managed by IT). When the laptop tries to talk to anything weird, the EDR sees the process tree and alerts SOC. This is **endpoint security**.
+- **Their phone**, personal device, used for work email. IT can wipe just the corporate data (not the family photos) if it's lost. The device must be passcode-locked, with screen lock < 5 minutes, and can't jailbreak. This is **MDM/UEM + BYOD**.
+- **Their AWS account**, they're spinning up an S3 bucket from the coffee shop Wi-Fi. AWS handles physical security and the hypervisor; *they* handle the bucket's policies, encryption, IAM, and content. This is **cloud shared responsibility**.
 
-Three very different places where data lives — three very different defenses. Sec+ asks you to keep them straight.
+Three very different places where data lives, three very different defenses. Sec+ asks you to keep them straight.
 
 ---
 
@@ -32,7 +32,7 @@ Three very different places where data lives — three very different defenses. 
 | 2nd | **EPP (Endpoint Protection Platform)** | AV + host firewall + device control |
 | 3rd | **EDR (Endpoint Detection & Response)** | Behavioral telemetry, process trees, threat hunting, rollback |
 | 4th | **XDR (Extended Detection & Response)** | EDR + network + cloud + email correlated |
-| 4th | **MDR / MSSP** | Managed Detection & Response — outsourced 24/7 EDR ops |
+| 4th | **MDR / MSSP** | Managed Detection & Response, outsourced 24/7 EDR ops |
 
 🎯 **Sec+ tells:** EDR records *process behavior*. AV looks for *known signatures*. XDR adds *cross-source correlation*.
 
@@ -41,7 +41,7 @@ Three very different places where data lives — three very different defenses. 
 | Control | What |
 |---------|------|
 | **HIDS / HIPS** | Host-based intrusion detection / prevention |
-| **Host-based firewall** | Windows Firewall, ufw, pf — per-machine rules |
+| **Host-based firewall** | Windows Firewall, ufw, pf, per-machine rules |
 | **DLP agent** | Watches for sensitive data leaving the endpoint |
 | **Device control** | USB block-lists, peripheral policies |
 | **Application allow-list / deny-list** | Only approved apps may execute (or block known bad) |
@@ -62,12 +62,12 @@ Three very different places where data lives — three very different defenses. 
 | **Antimalware always-on** | EDR/AV |
 
 ### Patch / Vulnerability Management cycle
-1. **Inventory** — what do we have?
-2. **Scan** — find missing patches & misconfigs
-3. **Prioritize** — by CVSS, exploit availability, asset criticality
-4. **Test** — non-prod first
-5. **Deploy** — production via WSUS, Intune, SCCM, Ansible, MDM
-6. **Verify** — confirm closure on next scan
+1. **Inventory**, what do we have?
+2. **Scan**, find missing patches & misconfigs
+3. **Prioritize**, by CVSS, exploit availability, asset criticality
+4. **Test**, non-prod first
+5. **Deploy**, production via WSUS, Intune, SCCM, Ansible, MDM
+6. **Verify**, confirm closure on next scan
 
 ---
 
@@ -93,31 +93,31 @@ Three very different places where data lives — three very different defenses. 
 
 ### Mobile capabilities Sec+ tests
 
-- **Remote wipe** — selective (corp data only) vs full
-- **Geofencing** — restrict app/feature based on location
-- **Containerization** — separate work profile (Android Work Profile, iOS Managed Apps)
-- **Screen lock + biometric** — required passcode, timeout
-- **Jailbreak / root detection** — block compromised devices
-- **Sideloading** — installing apps outside the official store (Sec+ red flag)
-- **Tethering / hotspot policy** — controlled
+- **Remote wipe**, selective (corp data only) vs full
+- **Geofencing**, restrict app/feature based on location
+- **Containerization**, separate work profile (Android Work Profile, iOS Managed Apps)
+- **Screen lock + biometric**, required passcode, timeout
+- **Jailbreak / root detection**, block compromised devices
+- **Sideloading**, installing apps outside the official store (Sec+ red flag)
+- **Tethering / hotspot policy**, controlled
 - **Push security policies** (PIN length, encryption, app allow-list)
 
 ### Mobile attacks
-- **Jailbreaking / rooting** — bypassing OS sandboxing
+- **Jailbreaking / rooting**, bypassing OS sandboxing
 - **Sideloading malicious apps**
 - **Bluetooth attacks** (bluejacking, bluesnarfing, bluebugging)
 - **NFC abuse / RFID skimming**
 - **Stalkerware**
 - **Malicious profiles / config payloads**
-- **SIM swap** — attacker convinces carrier to port number, defeating SMS MFA
+- **SIM swap**, attacker convinces carrier to port number, defeating SMS MFA
 
 ---
 
 ## ☁️ Cloud Security Fundamentals
 
-The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & Grance) established the standard model — IaaS, PaaS, SaaS — that Sec+ still tests today. The **shared-responsibility model** was articulated publicly by AWS in early **AWS Well-Architected** materials starting 2012 and standardized via [aws.amazon.com/compliance/shared-responsibility-model](https://aws.amazon.com/compliance/shared-responsibility-model/). Azure ([learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)) and GCP ([cloud.google.com/security/overview/shared-responsibility](https://cloud.google.com/security/overview/shared-responsibility)) maintain comparable docs. The **Cloud Security Alliance** publishes the *Cloud Controls Matrix (CCM) v4* (2021, current) as the consensus control taxonomy across providers.
+The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & Grance) established the standard model IaaS, PaaS, SaaS that Sec+ still tests today. The **shared-responsibility model** was articulated publicly by AWS in early **AWS Well-Architected** materials starting 2012 and standardized via [aws.amazon.com/compliance/shared-responsibility-model](https://aws.amazon.com/compliance/shared-responsibility-model/). Azure ([learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)) and GCP ([cloud.google.com/security/overview/shared-responsibility](https://cloud.google.com/security/overview/shared-responsibility)) maintain comparable docs. The **Cloud Security Alliance** publishes the *Cloud Controls Matrix (CCM) v4* (2021, current) as the consensus control taxonomy across providers.
 
-### Service models — and the shared responsibility implication
+### Service models, and the shared responsibility implication
 
 | Model | You manage | Provider manages | Example |
 |-------|-----------|------------------|---------|
@@ -129,11 +129,11 @@ The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & G
 🚨 **The #1 cloud rule:** Even in SaaS, **you are responsible for your data, your access controls, and your configuration.** Cloud provider isn't responsible for misconfigured S3 buckets that you set to public.
 
 ### Deployment models
-- **Public cloud** — shared infrastructure (AWS, Azure, GCP)
-- **Private cloud** — your own dedicated cloud (OpenStack, VMware Cloud Foundation)
-- **Hybrid cloud** — mix of on-prem + public cloud, integrated
-- **Community cloud** — shared among a community (govt, healthcare)
-- **Multi-cloud** — using more than one public provider deliberately
+- **Public cloud**, shared infrastructure (AWS, Azure, GCP)
+- **Private cloud**, your own dedicated cloud (OpenStack, VMware Cloud Foundation)
+- **Hybrid cloud**, mix of on-prem + public cloud, integrated
+- **Community cloud**, shared among a community (govt, healthcare)
+- **Multi-cloud**, using more than one public provider deliberately
 
 ### Cloud security gotchas (Sec+ favorites)
 
@@ -167,10 +167,10 @@ The **NIST definition of cloud computing** (SP 800-145, September 2011: Mell & G
 ## 📦 Container & Serverless Security
 
 ### Containers
-- **Image security** — scan images for vulns before deploy (Trivy, Snyk, Clair); use minimal base images
-- **Runtime security** — Falco, sysdig — detect anomalous container behavior
-- **Registry security** — sign images, control who can pull/push
-- **Orchestrator** (Kubernetes) — RBAC, network policies, pod security standards, secret management
+- **Image security**, scan images for vulns before deploy (Trivy, Snyk, Clair); use minimal base images
+- **Runtime security** Falco, sysdig detect anomalous container behavior
+- **Registry security**, sign images, control who can pull/push
+- **Orchestrator** (Kubernetes), RBAC, network policies, pod security standards, secret management
 - **Common pitfalls**: running containers as root, exposed kubelet API, secrets in env vars, image-pulled-from-public
 
 ### Serverless
@@ -195,7 +195,7 @@ Operational Technology (OT) covers industrial systems. Sec+ wants you to know th
 
 | Term | Means |
 |------|-------|
-| **IoT** | Internet of Things — consumer connected devices |
+| **IoT** | Internet of Things, consumer connected devices |
 | **ICS** | Industrial Control Systems (factories) |
 | **SCADA** | Supervisory Control And Data Acquisition (utilities, large geographic systems) |
 | **PLC** | Programmable Logic Controller (the actual controller on the factory floor) |
@@ -208,12 +208,12 @@ Operational Technology (OT) covers industrial systems. Sec+ wants you to know th
 
 ### OT/ICS risks
 
-- **Long lifecycle** — devices in service for 20+ years
-- **No / rare patches** — vendor support gone, downtime impossible
-- **Legacy / proprietary protocols** — Modbus, DNP3 — designed without security
-- **Air-gap myths** — turns out, "air gaps" rarely are
-- **Default credentials** — rampant
-- **Safety vs Security tradeoff** — locking down a turbine controller too hard can prevent emergency shutdown
+- **Long lifecycle**, devices in service for 20+ years
+- **No / rare patches**, vendor support gone, downtime impossible
+- **Legacy / proprietary protocols** Modbus, DNP3 designed without security
+- **Air-gap myths**, turns out, "air gaps" rarely are
+- **Default credentials**, rampant
+- **Safety vs Security tradeoff**, locking down a turbine controller too hard can prevent emergency shutdown
 
 ### Mitigations for OT
 - **Network segmentation** (Purdue Model levels)
@@ -240,23 +240,23 @@ Operational Technology (OT) covers industrial systems. Sec+ wants you to know th
 | Outbound DNS to C2 | Egress filtering, DNS sinkhole, route through VPC DNS Firewall |
 | Detection only after exfil | Add CSPM, GuardDuty/Defender for Cloud, CWPP |
 
-**First action (containment, not eradication):** Isolate the instance — modify its security group to drop egress to all destinations and re-attach a "quarantine" IAM role. *Then* triage. Don't terminate yet — you'll lose forensic state.
+**First action (containment, not eradication):** Isolate the instance modify its security group to drop egress to all destinations and re-attach a "quarantine" IAM role. *Then* triage. Don't terminate yet you'll lose forensic state.
 
 PBQ might ask you to drag containment, eradication, and recovery actions into the right order from the IR lifecycle (Module 8).
 
 ---
 
-## 📊 Case Study — Capital One AWS Breach (July 2019)
+## 📊 Case Study, Capital One AWS Breach (July 2019)
 
-**Situation.** **Capital One Financial** is one of the largest US consumer-credit-card issuers and was an early, public AWS-customer reference — by 2018 Capital One had migrated >70% of its workloads to AWS and shut down legacy data centers. The architecture: a **ModSecurity-based web application firewall** in front of a US-East-region application; behind it, an EC2 instance running on **IAM role permissions that allowed reading S3 buckets** in the same account. Capital One stored credit-application data — names, addresses, DOBs, credit scores, **140,000 SSNs**, **80,000 linked bank-account numbers**, and 1 million Canadian Social Insurance Numbers — in those S3 buckets.
+**Situation.** **Capital One Financial** is one of the largest US consumer-credit-card issuers and was an early, public AWS-customer reference by 2018 Capital One had migrated >70% of its workloads to AWS and shut down legacy data centers. The architecture: a **ModSecurity-based web application firewall** in front of a US-East-region application; behind it, an EC2 instance running on **IAM role permissions that allowed reading S3 buckets** in the same account. Capital One stored credit-application data names, addresses, DOBs, credit scores, **140,000 SSNs**, **80,000 linked bank-account numbers**, and 1 million Canadian Social Insurance Numbers, in those S3 buckets.
 
-**Decision.** In **March 2019** a former AWS engineer (Paige Thompson, who had left AWS in 2016) discovered the misconfigured ModSecurity WAF. The WAF was configured in a way that, when sent a specially crafted request, would issue **outbound HTTP requests on the attacker's behalf** — a textbook **Server-Side Request Forgery (SSRF)** vulnerability (OWASP A10:2021, covered Module 5). Specifically, the attacker pointed the SSRF at the AWS Instance Metadata Service v1 (**IMDSv1**) endpoint: `http://169.254.169.254/latest/meta-data/iam/security-credentials/<role-name>`. AWS IMDSv1 returned the temporary security credentials for the EC2 instance's IAM role *without any authentication* — that was IMDSv1's design. The attacker then used those credentials to list **700+ S3 buckets** and download **~30 GB** of credit-application data.
+**Decision.** In **March 2019** a former AWS engineer (Paige Thompson, who had left AWS in 2016) discovered the misconfigured ModSecurity WAF. The WAF was configured in a way that, when sent a specially crafted request, would issue **outbound HTTP requests on the attacker's behalf** a textbook **Server-Side Request Forgery (SSRF)** vulnerability (OWASP A10:2021, covered Module 5). Specifically, the attacker pointed the SSRF at the AWS Instance Metadata Service v1 (**IMDSv1**) endpoint: `http://169.254.169.254/latest/meta-data/iam/security-credentials/<role-name>`. AWS IMDSv1 returned the temporary security credentials for the EC2 instance's IAM role *without any authentication* that was IMDSv1's design. The attacker then used those credentials to list **700+ S3 buckets** and download **~30 GB** of credit-application data.
 
 **Outcome.** Thompson posted bragging on GitHub Gist and on Slack. A Capital One security researcher (a friend of Thompson's contact) saw the posts and reported it to Capital One on **17 July 2019**. Capital One confirmed the breach within hours, notified the FBI within a day, and patched the SSRF the same week. Public disclosure: **29 July 2019**. **~106 million** Americans and Canadians were affected. Capital One paid **$80M in OCC penalty** (August 2020) and **$190M in a class-action settlement** (December 2021). Internal incident-response cost was estimated at $150M+. Thompson was convicted in 2022 of seven federal counts and sentenced to time served plus probation; the lighter-than-expected sentence triggered intense academic and industry debate about how to charge "researcher-curious" intrusion vs malicious attack. AWS responded by accelerating **IMDSv2** (released November 2019) which requires session-token-based PUT requests (defeating SSRF-style abuse), and in mid-2024 began *defaulting* new instances to IMDSv2-only.
 
 **Lesson for the exam / for practitioners.** This case touches every cloud topic Sec+ tests:
 
-- **Shared responsibility model.** AWS provided IMDSv1 (a service); Capital One **configured it, configured the IAM role with broad S3 access, and configured the WAF that allowed SSRF.** Sec+ tests this exact framing: "A public S3 bucket exposed customer data — who is responsible?" → the customer. "An EC2 instance with an over-permissive IAM role — who is responsible?" → the customer.
+- **Shared responsibility model.** AWS provided IMDSv1 (a service); Capital One **configured it, configured the IAM role with broad S3 access, and configured the WAF that allowed SSRF.** Sec+ tests this exact framing: "A public S3 bucket exposed customer data who is responsible?" → the customer. "An EC2 instance with an over-permissive IAM role who is responsible?" → the customer.
 - **SSRF (Module 5) + IMDS (Module 7) = cloud-credential theft.** This pattern recurs constantly. The countermeasure is IMDSv2 (network-layer enforcement) **plus** scoped IAM roles **plus** runtime SSRF-prevention (block egress to `169.254.169.254` from anything but the legitimate AWS SDK). Sec+ tests each layer.
 - **CSPM would have caught this.** Cloud Security Posture Management tools (Wiz, Orca, Lacework, Prisma Cloud) would have flagged: (a) the S3 buckets accessible to the EC2 instance role; (b) the IAM role's over-broad scope; (c) the WAF being on a public-internet path with outbound metadata-IP access. Sec+ asks: "what tool would have detected this?" → **CSPM** for config drift, **CIEM** for entitlement, **CWPP** for runtime.
 - **Logging and detection failure.** Capital One had **CloudTrail** enabled but did not have **alerts** on anomalous IAM activity (one credential, 700 buckets, 30 GB downloaded in hours). Module 8 SIEM/SOAR tuning would have caught the volumetric anomaly.
@@ -264,8 +264,8 @@ PBQ might ask you to drag containment, eradication, and recovery actions into th
 
 **Discussion (Socratic).**
 - **Q1:** Capital One was a sophisticated AWS-native bank with a security team. The breach happened because of a *configuration* failure, not a missing technology. Argue: is the *organizational* failure (no one inventoried IAM permissions, no anomaly alerts on S3 download volume) more fundamental than the *technical* failure (SSRF in ModSecurity)? Defend one as the "true root cause" with reference to NIST IR process (Module 8).
-- **Q2:** AWS designed IMDSv1 in 2008 — pre-SSRF awareness in enterprise IT. The 2019 incident drove IMDSv2. Were AWS's choices *negligent* (they should have foreseen SSRF) or *reasonable for 2008*? Build the case both ways. Reference vendor responsibility doctrine and the FTC's evolving cloud-misconfiguration enforcement.
-- **Q3:** Paige Thompson was a former AWS engineer (insider knowledge of IMDSv1 mechanics) but had left 3 years before the attack. Is this best classified as **insider threat** (Module 4 — privileged knowledge) or **external attacker** (no current access)? Defend a position with reference to NIST and FBI threat-actor taxonomy.
+- **Q2:** AWS designed IMDSv1 in 2008, pre-SSRF awareness in enterprise IT. The 2019 incident drove IMDSv2. Were AWS's choices *negligent* (they should have foreseen SSRF) or *reasonable for 2008*? Build the case both ways. Reference vendor responsibility doctrine and the FTC's evolving cloud-misconfiguration enforcement.
+- **Q3:** Paige Thompson was a former AWS engineer (insider knowledge of IMDSv1 mechanics) but had left 3 years before the attack. Is this best classified as **insider threat** (Module 4, privileged knowledge) or **external attacker** (no current access)? Defend a position with reference to NIST and FBI threat-actor taxonomy.
 
 ---
 
@@ -273,7 +273,7 @@ PBQ might ask you to drag containment, eradication, and recovery actions into th
 
 | Misconception | Reality |
 |---------------|---------|
-| "Cloud provider is responsible for our S3 bucket settings" | NO — config is YOUR responsibility (shared model) |
+| "Cloud provider is responsible for our S3 bucket settings" | NO, config is YOUR responsibility (shared model) |
 | "Serverless removes all attack surface" | Reduces it; you still own IAM + code + deps |
 | "MDM = MAM" | MDM manages the whole device; MAM manages just corp apps/data |
 | "EDR is just renamed antivirus" | EDR adds behavioral + telemetry + response actions AV doesn't have |
@@ -331,10 +331,10 @@ PBQ might ask you to drag containment, eradication, and recovery actions into th
 
 You now know:
 
-- 💻 The **endpoint security stack** — AV → EPP → EDR → XDR → MDR — and hardening basics
+- 💻 The **endpoint security stack** AV → EPP → EDR → XDR → MDR and hardening basics
 - 📱 Mobile **device ownership models** (BYOD/CYOD/COPE/COBO) and **MDM/MAM/UEM**
 - ☁️ Cloud **shared responsibility** across IaaS/PaaS/SaaS/FaaS and the deployment models
-- 🛡️ The **cloud security tool alphabet soup** — CASB, CSPM, CWPP, CIEM, SASE, SSE, ZTNA, SWG, FWaaS
+- 🛡️ The **cloud security tool alphabet soup**, CASB, CSPM, CWPP, CIEM, SASE, SSE, ZTNA, SWG, FWaaS
 - 📦 **Container** & **serverless** security pitfalls + **IaC** hygiene
 - 🏭 **OT/ICS/SCADA** vocabulary and why patching alone doesn't fix industrial systems
 
@@ -342,7 +342,7 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 8 — Security Operations](../Module-08-Security-Operations/Reading.md) (the biggest domain)
+4. ➡️ [Module 8, Security Operations](../Module-08-Security-Operations/Reading.md) (the biggest domain)
 
 > **Where this leads.**
 > - Inside this course: [Module 8](../Module-08-Security-Operations/Reading.md) covers SIEM correlation, threat hunting, and IR for the cloud telemetry CSPM/CIEM produce; [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers third-party / SaaS vendor risk; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers SBOM, IaC scanning, and container image signing.
@@ -363,12 +363,12 @@ You now know:
 
 **Case-study sources (Capital One):**
 - 📄 US v. Paige A. Thompson, 2:19-cr-00159 (W.D. Wash.). Indictment + plea.
-- 📄 OCC consent order (August 2020) — $80M penalty.
+- 📄 OCC consent order (August 2020), $80M penalty.
 - 📄 Krebs, B. (2019). "What We Can Learn from the Capital One Hack." [Krebs on Security](https://krebsonsecurity.com/2019/08/what-we-can-learn-from-the-capital-one-hack/), 2 August 2019.
 - 📄 AWS (2019-2020). Multiple blog posts on IMDSv2 design and rollout.
 
 **Practitioner:**
-- 📖 [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks) — platform hardening guides
+- 📖 [CIS Benchmarks](https://www.cisecurity.org/cis-benchmarks), platform hardening guides
 - 📖 [OWASP Container Security Verification Standard](https://owasp.org/www-project-container-security-verification-standard/)
-- 📖 [Cloud Security Alliance — CCSK / CCM](https://cloudsecurityalliance.org/)
-- 📖 [HardenedBSD / DISA STIGs](https://public.cyber.mil/stigs/) — DoD-grade hardening
+- 📖 [Cloud Security Alliance, CCSK / CCM](https://cloudsecurityalliance.org/)
+- 📖 [HardenedBSD / DISA STIGs](https://public.cyber.mil/stigs/), DoD-grade hardening

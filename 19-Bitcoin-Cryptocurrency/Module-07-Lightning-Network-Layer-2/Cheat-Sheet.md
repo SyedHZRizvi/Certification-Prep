@@ -4,9 +4,9 @@
 
 ## ⚖️ Why L2 Exists (the trilemma resolution)
 
-- Bitcoin L1: ~7 tps, ~10-min finality — maximizes **security + decentralization**
+- Bitcoin L1: ~7 tps, ~10-min finality, maximizes **security + decentralization**
 - L2 protocols: high throughput, settle to L1 periodically
-- Lightning is **NOT** a sidechain — channels are anchored in regular Bitcoin txs
+- Lightning is **NOT** a sidechain, channels are anchored in regular Bitcoin txs
 
 ---
 
@@ -26,7 +26,7 @@
 
 ## 📐 The Foundational Paper
 
-- **Poon & Dryja, January 14, 2016** — *"The Bitcoin Lightning Network"*
+- **Poon & Dryja, January 14, 2016**, *"The Bitcoin Lightning Network"*
 - Builds on Decker & Wattenhofer duplex channels (2015)
 - Required **SegWit's malleability fix** to be possible
 
@@ -49,8 +49,8 @@ Carol reveals R → Bob claims from Alice → atomic multi-hop ✅
 
 ## 🛣️ Routing
 
-- **Source routing** — sender picks the full path
-- **Sphinx onion encryption** (Danezis & Goldberg, 2009) — each hop sees only its layer
+- **Source routing**, sender picks the full path
+- **Sphinx onion encryption** (Danezis & Goldberg, 2009), each hop sees only its layer
 - Gossip protocol carries channel capacity + fee rates
 
 | Metric | Meaning |
@@ -141,25 +141,25 @@ lightning-cli close <peer>
 - **Custodial** rollout (operational simplicity > self-custody)
 - ~40% citizens cashed out the initial $30 BTC promptly (BCR survey 2022)
 - Bottom-up adoption at **Bitcoin Beach / El Zonte** (since 2019) was the success
-- **2025 IMF loan**: legal-tender mandate partially repealed — Lightning kept working
+- **2025 IMF loan**: legal-tender mandate partially repealed, Lightning kept working
 - Lesson: **protocol-level adoption > jurisdictional adoption**
 
 ---
 
 ## ⚠️ Top Exam Traps
 
-1. **Poon & Dryja, January 2016** — the paper, the year
+1. **Poon & Dryja, January 2016**, the paper, the year
 2. **HTLC = Hash Time-Locked Contract** (NOT "high-throughput")
 3. **BOLT-11 invoice** = `lnbc1pjk...`
-4. **Lightning anchors on L1** — not a sidechain
+4. **Lightning anchors on L1**, not a sidechain
 5. **SegWit was prerequisite** (malleability fix)
 6. **lnd, CLN, Eclair** = the three production implementations
 7. **Watchtowers** = third-party cheat monitors (BOLT 13 draft)
-8. **Liquid is a federated sidechain** — Lightning is not
+8. **Liquid is a federated sidechain**, Lightning is not
 9. **Channel jamming** = biggest open attack class 2024-26
 10. **Splicing (2024+)** = resize channel without closing
 11. **Custodial Lightning ≠ self-custody** (exchange-class risk)
-12. **El Salvador 2021 / 2025** — adoption / repeal nuance
+12. **El Salvador 2021 / 2025**, adoption / repeal nuance
 
 ---
 

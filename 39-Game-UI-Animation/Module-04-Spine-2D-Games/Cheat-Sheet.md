@@ -16,7 +16,7 @@ title: "Module 4 Cheat Sheet: Spine 2D for Games"
 
 ---
 
-## 🕸️ Mesh Deformation — Performance Cost
+## 🕸️ Mesh Deformation, Performance Cost
 
 | Mode | CPU | GPU | Use For |
 |------|-----|-----|---------|
@@ -35,9 +35,9 @@ title: "Module 4 Cheat Sheet: Spine 2D for Games"
 |--|----|----|
 | Control | Bone by bone, root-to-tip | Place target; solver works back |
 | Use for | Arms swing, spine curve | Foot/hand contact, reach |
-| Mix = 0.0 | Pure FK | — |
-| Mix = 1.0 | — | Pure IK |
-| Mix animatable? | — | ✅ Yes — key between FK and IK |
+| Mix = 0.0 | Pure FK |, |
+| Mix = 1.0 |, | Pure IK |
+| Mix animatable? | | ✅ Yes key between FK and IK |
 
 ---
 
@@ -59,7 +59,7 @@ skeleton.SetSlotsToSetupPose();
 | Track | Typical Use |
 |-------|------------|
 | 0 | Base looping animation (idle, walk, run) |
-| 1 | Action overlay (attack, interact) — clears when done |
+| 1 | Action overlay (attack, interact), clears when done |
 | 2+ | Additional overlays (face expression, etc.) |
 
 ```csharp
@@ -112,12 +112,12 @@ e.Complete += _ => skeletonAnim.AnimationState.ClearTrack(1);
 | Trap | Reality |
 |------|---------|
 | More bones = better | More bones = more cost; Dead Cells is better WITH fewer |
-| FFD is free | No — deformed meshes still cost CPU/GPU skinning |
+| FFD is free | No, deformed meshes still cost CPU/GPU skinning |
 | IK is always better | FK gives more control over arc and timing; use IK for endpoints |
-| 4 influences on mobile | Mobile GPU limit is 2 — exceeding it moves to CPU (slow) |
+| 4 influences on mobile | Mobile GPU limit is 2, exceeding it moves to CPU (slow) |
 | Spine is indie-only | Hollow Knight, Dead Cells, Fate/Grand Order disprove this |
-| JSON in production builds | Use .skel binary — 3–5× smaller, faster load |
-| Non-power-of-two atlas | GPU can't compress it — wastes VRAM; always use power-of-two |
+| JSON in production builds | Use .skel binary, 3–5× smaller, faster load |
+| Non-power-of-two atlas | GPU can't compress it, wastes VRAM; always use power-of-two |
 
 ---
 
@@ -128,16 +128,16 @@ e.Complete += _ => skeletonAnim.AnimationState.ClearTrack(1);
 | Hollow Knight | The Knight | 28 | 8 for cloak (3-tier sweep) | Cloak = visual signature; earned its cost |
 | Dead Cells | Enemies | 15–25 | Minimal secondary | Crisp silhouette at speed; secondary is procedural |
 | Fate/Grand Order | Servants | ~20 (standard) | Standardized archetype | 2MB budget per servant; archetypes enforced |
-| Cuphead | Cuphead | N/A (frame-by-frame) | — | Spine used for some effects only |
+| Cuphead | Cuphead | N/A (frame-by-frame) |, | Spine used for some effects only |
 
 ---
 
-## 🔄 Spine Track System — Quick Reference
+## 🔄 Spine Track System, Quick Reference
 
 | Track | Role | Alpha | Typical Content |
 |---|---|---|---|
-| 0 | Base animation | 1.0 | idle, walk, run — looping |
-| 1 | Action overlay | 0.0–1.0 | attack, interact — one-shot |
+| 0 | Base animation | 1.0 | idle, walk, run, looping |
+| 1 | Action overlay | 0.0–1.0 | attack, interact, one-shot |
 | 2+ | Additional overlays | 0.0–1.0 | face expression, gear equip |
 
 ```csharp

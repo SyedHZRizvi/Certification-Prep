@@ -97,8 +97,8 @@ Maps exported: BaseColor, Metallic, Roughness, Normal, Emissive, AO
 
 | Material | Metallic | Roughness | IOR | Sub-Weight |
 |---|---|---|---|---|
-| Polished chrome | 1.0 | 0.02–0.05 | — | 0 |
-| Brushed aluminum | 1.0 | 0.3–0.5 | — | 0 |
+| Polished chrome | 1.0 | 0.02–0.05 |, | 0 |
+| Brushed aluminum | 1.0 | 0.3–0.5 |, | 0 |
 | Matte plastic | 0 | 0.7–0.9 | 1.45 | 0 |
 | Glossy plastic | 0 | 0.05–0.2 | 1.45 | 0 |
 | Glass | 0 | 0.0 | 1.45–1.52 | 0 |
@@ -116,8 +116,8 @@ Maps exported: BaseColor, Metallic, Roughness, Normal, Emissive, AO
 | BSDF output | Material Output → Surface | Yes |
 | Color output | BSDF input (e.g., Base Color) | Yes |
 | Float output | Numeric BSDF input (e.g., Roughness) | Yes |
-| BSDF output | Base Color socket | No — type mismatch |
-| Color output | Material Output → Surface | No — need shader first |
+| BSDF output | Base Color socket | No, type mismatch |
+| Color output | Material Output → Surface | No, need shader first |
 
 ---
 
@@ -127,7 +127,7 @@ Maps exported: BaseColor, Metallic, Roughness, Normal, Emissive, AO
 Diffuse BSDF → Shader to RGB → Color Ramp → Emission → Material Output
                                 (set to Constant interpolation)
 ```
-This creates flat cel-shaded bands — no Principled BSDF needed.
+This creates flat cel-shaded bands, no Principled BSDF needed.
 
 ---
 

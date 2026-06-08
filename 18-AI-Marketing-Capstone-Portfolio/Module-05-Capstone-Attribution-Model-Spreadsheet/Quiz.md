@@ -8,7 +8,7 @@
 ## Questions
 
 ### Q1. Did you build the attribution model in Google Sheets OR a Python Colab notebook (not just plan it)? *(Create)*
-A. Yes — built + tested + outputs are correct
+A. Yes, built + tested + outputs are correct
 B. Built but outputs untested
 C. Drafted only
 D. Not built
@@ -16,7 +16,7 @@ D. Not built
 ---
 
 ### Q2. Did you implement at least 3 attribution models? *(Create)*
-A. Yes — Last-Click + Linear + Markov (or Shapley)
+A. Yes, Last-Click + Linear + Markov (or Shapley)
 B. Last-Click + Linear (2 models)
 C. Last-Click only
 D. No models
@@ -24,7 +24,7 @@ D. No models
 ---
 
 ### Q3. Did you choose your data source explicitly (real anonymized, public sample, or generated synthetic)? *(Evaluate)*
-A. Yes — documented source and rationale
+A. Yes, documented source and rationale
 B. Used data, source unclear
 C. Started with data, didn't document
 D. No data, just hypothetical examples
@@ -32,7 +32,7 @@ D. No data, just hypothetical examples
 ---
 
 ### Q4. If using real data, did you anonymize user IDs and remove PII? *(Apply)*
-A. Yes — verified clean
+A. Yes, verified clean
 B. Removed obvious identifiers
 C. Didn't fully review
 D. Used raw real data (privacy risk)
@@ -40,7 +40,7 @@ D. Used raw real data (privacy risk)
 ---
 
 ### Q5. Did you create the comparison chart (clustered bar chart with all 3+ models)? *(Create)*
-A. Yes — clean chart, all models, labeled
+A. Yes, clean chart, all models, labeled
 B. Chart exists, basic
 C. Numbers in a table only
 D. No chart
@@ -48,7 +48,7 @@ D. No chart
 ---
 
 ### Q6. Did you write 2–4 sentences interpreting each model's verdict? *(Analyze)*
-A. Yes — interpretation for each model
+A. Yes, interpretation for each model
 B. Interpretation for one model
 C. Numbers only, no commentary
 D. No interpretation
@@ -56,7 +56,7 @@ D. No interpretation
 ---
 
 ### Q7. Is your sample size at least 100 customer journeys? *(Apply)*
-A. Yes — 100+
+A. Yes, 100+
 B. 50–99
 C. 20–49
 D. <20
@@ -64,7 +64,7 @@ D. <20
 ---
 
 ### Q8. Does at least one channel show a meaningfully different rank between models? *(Analyze)*
-A. Yes — clear ranking flip documented
+A. Yes, clear ranking flip documented
 B. Some movement
 C. Models give similar results
 D. Didn't analyze
@@ -72,7 +72,7 @@ D. Didn't analyze
 ---
 
 ### Q9. Did you make the spreadsheet / notebook public ("Anyone with link")? *(Apply)*
-A. Yes — public + linkable
+A. Yes, public + linkable
 B. Public but unfindable
 C. Drafted privately
 D. Local only
@@ -80,7 +80,7 @@ D. Local only
 ---
 
 ### Q10. Did you record a 5–8 min Loom walkthrough? *(Create)*
-A. Yes — uploaded + linked
+A. Yes, uploaded + linked
 B. Recorded, not uploaded
 C. Scripted, not recorded
 D. No Loom
@@ -88,7 +88,7 @@ D. No Loom
 ---
 
 ### Q11. Does the Loom show the comparison chart and walk through 1+ surprising insight? *(Analyze)*
-A. Yes — clear "aha" moment in the Loom
+A. Yes, clear "aha" moment in the Loom
 B. Shows chart, no insight narration
 C. Some commentary
 D. Chart only
@@ -96,7 +96,7 @@ D. Chart only
 ---
 
 ### Q12. Did you write the case study using P-C-A-R-L format? *(Apply)*
-A. Yes — full sections
+A. Yes, full sections
 B. Most sections
 C. Loose structure
 D. None
@@ -104,7 +104,7 @@ D. None
 ---
 
 ### Q13. Did you document the Markov chain (or Shapley) implementation details? *(Understand)*
-A. Yes — math + code shown
+A. Yes, math + code shown
 B. Code shown, math unexplained
 C. "Used a library"
 D. No docs
@@ -112,7 +112,7 @@ D. No docs
 ---
 
 ### Q14. Could you explain Markov's "removal effect" to a non-technical stakeholder? *(Understand)*
-A. Yes — practiced an explanation
+A. Yes, practiced an explanation
 B. Could explain technically
 C. Roughly understand
 D. Not confident
@@ -120,7 +120,7 @@ D. Not confident
 ---
 
 ### Q15. Did you note the limitations of your model (sample size, data quality, model assumptions)? *(Evaluate)*
-A. Yes — explicit limitations section
+A. Yes, explicit limitations section
 B. Brief mention
 C. Glossed over
 D. No limitations noted
@@ -128,7 +128,7 @@ D. No limitations noted
 ---
 
 ### Q16. Did you propose a "v2" with what you'd add next? *(Create)*
-A. Yes — 3+ concrete v2 ideas
+A. Yes, 3+ concrete v2 ideas
 B. 1–2 ideas
 C. Generic mention
 D. None
@@ -136,7 +136,7 @@ D. None
 ---
 
 ### Q17. Did you publish the case study on a public URL? *(Apply)*
-A. Yes — public + linkable
+A. Yes, public + linkable
 B. Drafted on portfolio
 C. Written, not published
 D. Not written
@@ -144,7 +144,7 @@ D. Not written
 ---
 
 ### Q18. Did you share on LinkedIn / Twitter with link + chart? *(Apply)*
-A. Yes — posted + engagement
+A. Yes, posted + engagement
 B. Posted, no engagement
 C. Planned
 D. No
@@ -152,7 +152,7 @@ D. No
 ---
 
 ### Q19. Could you defend why Markov/Shapley is "fairer" than Last-Click? *(Evaluate)*
-A. Yes — articulated rationale
+A. Yes, articulated rationale
 B. Mostly
 C. Roughly
 D. No
@@ -160,7 +160,7 @@ D. No
 ---
 
 ### Q20. Did you write the analysis in a voice that translates the math for business audiences? *(Understand)*
-A. Yes — bridges math + business
+A. Yes, bridges math + business
 B. Mostly accessible
 C. Some jargon
 D. Math-only or business-only
@@ -168,7 +168,7 @@ D. Math-only or business-only
 ---
 
 ### Q21. Is the chart visually clean (no chart-junk, clear labels, intuitive colors)? *(Evaluate)*
-A. Yes — design-aware
+A. Yes, design-aware
 B. Functional
 C. Cluttered
 D. Hard to read
@@ -176,7 +176,7 @@ D. Hard to read
 ---
 
 ### Q22. Did you test the model with a manually-computable toy example to verify correctness? *(Analyze)*
-A. Yes — sanity-checked
+A. Yes, sanity-checked
 B. Partial check
 C. No
 D. Not aware this is best practice
@@ -184,7 +184,7 @@ D. Not aware this is best practice
 ---
 
 ### Q23. Did you spend 6–10 hours on this capstone? *(Evaluate)*
-A. Yes — within range
+A. Yes, within range
 B. 4–6 or 10–14
 C. <4 or >14
 D. Lost track
@@ -192,7 +192,7 @@ D. Lost track
 ---
 
 ### Q24. Could a recruiter follow your walkthrough and understand the methodology? *(Evaluate)*
-A. Yes — verified by sharing with peer
+A. Yes, verified by sharing with peer
 B. Should be clear
 C. Maybe
 D. Probably not
@@ -200,7 +200,7 @@ D. Probably not
 ---
 
 ### Q25. Did you practice the 90-second pitch out loud? *(Apply)*
-A. Yes — 3+ times
+A. Yes, 3+ times
 B. Once
 C. Drafted, not practiced
 D. Not yet
@@ -208,7 +208,7 @@ D. Not yet
 ---
 
 ### Q26. Does the methodology section walk through (1) data prep, (2) model choice, (3) implementation, (4) validation? *(Evaluate)*
-A. Yes — all 4 steps
+A. Yes, all 4 steps
 B. 3 of 4
 C. 1–2 steps
 D. No methodology section
@@ -216,7 +216,7 @@ D. No methodology section
 ---
 
 ### Q27. If you used a Python library (like ChannelAttribution), did you document WHY rather than just "imported it"? *(Analyze)*
-A. Yes — explained the library's algorithm
+A. Yes, explained the library's algorithm
 B. Mentioned it briefly
 C. Used without explanation
 D. Didn't use a library / N/A
@@ -224,7 +224,7 @@ D. Didn't use a library / N/A
 ---
 
 ### Q28. Would you flag this as a top-3 portfolio piece for analytics-heavy roles? *(Evaluate)*
-A. Yes — strong piece
+A. Yes, strong piece
 B. Solid, with caveats
 C. Decent
 D. Wouldn't lead with it
@@ -264,7 +264,7 @@ Public link. Sheets: Share → "Anyone with link can view." Colab: Share → "An
 Loom uploaded + linked. Same logic as Module 4.
 
 ### Q11: Excellent looks like: **A**
-Aha moment in the Loom. *"Watch this — when I switch from last-click to Markov, paid social goes from #5 to #2."* That's the magic.
+Aha moment in the Loom. *"Watch this, when I switch from last-click to Markov, paid social goes from #5 to #2."* That's the magic.
 
 ### Q12: Excellent looks like: **A**
 P-C-A-R-L. Consistent structure across all capstones.
@@ -288,7 +288,7 @@ Public URL. Same drill.
 Posted + engaged. Attribution content does well on LinkedIn among marketing leaders.
 
 ### Q19: Excellent looks like: **A**
-Articulated rationale. *"Markov is fairer because it accounts for the fact that touchpoints depend on each other. Last-click pretends only the final touch mattered — which is empirically false."*
+Articulated rationale. *"Markov is fairer because it accounts for the fact that touchpoints depend on each other. Last-click pretends only the final touch mattered, which is empirically false."*
 
 ### Q20: Excellent looks like: **A**
 Translates math to business. Hiring managers care about the business interpretation, not the algorithm.

@@ -4,26 +4,26 @@
 
 ---
 
-## 🌐 Incoterms 2020 — All 11 + Responsibility
+## 🌐 Incoterms 2020, All 11 + Responsibility
 
 | Rule | Mode | Risk transfers at | Seller pays freight to | Insurance |
 |------|------|-------------------|------------------------|-----------|
 | EXW | Any | Seller's premises | Nothing | Buyer's choice |
 | FCA | Any | Named place (origin) | Named place (origin) | Optional |
 | CPT | Any | Origin (to carrier) | Destination | Optional |
-| CIP | Any | Origin (to carrier) | Destination | **REQUIRED — Clauses A (all-risk)** |
+| CIP | Any | Origin (to carrier) | Destination | **REQUIRED, Clauses A (all-risk)** |
 | DAP | Any | Destination (NOT unloaded) | Destination | Optional |
 | DPU | Any | Destination (UNLOADED) | Destination + unloading | Optional |
 | DDP | Any | Destination (DUTY PAID) | Everything inc. duty | Optional |
 | FAS | Sea only | Alongside vessel | Alongside | Optional |
 | FOB | Sea only | On board vessel | On board | Optional |
 | CFR | Sea only | On board (origin) | Destination port | Optional |
-| CIF | Sea only | On board (origin) | Destination port | **REQUIRED — Clauses C (minimum)** |
+| CIF | Sea only | On board (origin) | Destination port | **REQUIRED, Clauses C (minimum)** |
 
 🧠 **Seller responsibility ladder (low → high):**
 EXW → FCA → FAS → FOB → CFR → CIF → CPT → CIP → DAP → DPU → DDP
 
-🚨 **TRAP:** FOB for containers is WRONG — use FCA.
+🚨 **TRAP:** FOB for containers is WRONG, use FCA.
 
 🚨 **TRAP:** Under C-terms, seller pays freight to destination BUT risk transfers at origin.
 
@@ -35,7 +35,7 @@ EXW → FCA → FAS → FOB → CFR → CIF → CPT → CIP → DAP → DPU → 
 
 | Role | What |
 |------|------|
-| IOR | Importer of Record — legally accountable |
+| IOR | Importer of Record, legally accountable |
 | EOR | Exporter of Record |
 | Customs broker | Files customs entry |
 | Freight forwarder | Books transport, no possession |

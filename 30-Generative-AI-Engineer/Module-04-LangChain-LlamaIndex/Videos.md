@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LCEL — LangChain Expression Language deep dive</p>
+      <p class="vg-title">LCEL, LangChain Expression Language deep dive</p>
       <p class="vg-creator">LangChain DevRel</p>
       <span class="vg-duration">⏱ 45m · The modern composition primitive</span>
     </div>
@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LangGraph — Building Stateful Agents</p>
+      <p class="vg-title">LangGraph, Building Stateful Agents</p>
       <p class="vg-creator">Harrison Chase</p>
       <span class="vg-duration">⏱ 1h · From the LangChain CEO</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LlamaIndex — Building Production RAG</p>
+      <p class="vg-title">LlamaIndex, Building Production RAG</p>
       <p class="vg-creator">Jerry Liu (LlamaIndex CEO)</p>
       <span class="vg-duration">⏱ 50m · From the source</span>
     </div>
@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MCP — Model Context Protocol explained</p>
+      <p class="vg-title">MCP, Model Context Protocol explained</p>
       <p class="vg-creator">Anthropic / community</p>
       <span class="vg-duration">⏱ 30m · The universal tool protocol</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">LangChain vs LlamaIndex — head-to-head</p>
+      <p class="vg-title">LangChain vs LlamaIndex, head-to-head</p>
       <p class="vg-creator">community comparisons</p>
       <span class="vg-duration">⏱ 30m · Honest pros and cons</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">LlamaIndex Workflows — event-driven async</p>
+      <p class="vg-title">LlamaIndex Workflows, event-driven async</p>
       <p class="vg-creator">LlamaIndex DevRel</p>
       <span class="vg-duration">⏱ 35m · The LangGraph competitor</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">LangSmith — tracing + evaluation walkthrough</p>
+      <p class="vg-title">LangSmith, tracing + evaluation walkthrough</p>
       <p class="vg-creator">LangChain DevRel</p>
       <span class="vg-duration">⏱ 40m · The observability story</span>
     </div>
@@ -93,7 +93,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Tool calling — the universal pattern</p>
+      <p class="vg-title">Tool calling, the universal pattern</p>
       <p class="vg-creator">Anthropic / OpenAI cookbooks</p>
       <span class="vg-duration">⏱ 25m · How it works under the hood</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Replit Agent on LangGraph — production lessons</p>
+      <p class="vg-title">Replit Agent on LangGraph, production lessons</p>
       <p class="vg-creator">Replit engineering</p>
       <span class="vg-duration">⏱ 40m · Real-world architecture</span>
     </div>
@@ -159,7 +159,7 @@
 1. Write the LCEL chain for a basic RAG in 5 lines.
 2. When does LangGraph beat LCEL? Give 2 scenarios.
 3. List 4 LlamaIndex index types and what each is good at.
-4. Tool calling — describe the 5-step universal pattern.
-5. MCP — what problem does it solve?
+4. Tool calling, describe the 5-step universal pattern.
+5. MCP, what problem does it solve?
 
 Crisp? On to the [Quiz](./Quiz.md).

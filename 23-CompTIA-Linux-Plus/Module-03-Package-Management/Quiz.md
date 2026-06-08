@@ -260,13 +260,13 @@ You can also undo by transaction ID: `dnf history undo 47`. `dnf history` lists 
 `apt remove` deletes binaries but keeps configs (so reinstall picks them up). `apt purge` removes the configs too. Useful when you want a totally clean reinstall.
 
 ### Q6: **B. Import the GPG key**
-The missing key is the actual problem; disabling gpgcheck makes the issue go away by lowering the security bar — that's a textbook bad answer on the exam. Always import the key (after verifying its fingerprint against IT documentation).
+The missing key is the actual problem; disabling gpgcheck makes the issue go away by lowering the security bar, that's a textbook bad answer on the exam. Always import the key (after verifying its fingerprint against IT documentation).
 
 ### Q7: **B. `/etc/apt/keyrings/<vendor>.gpg` or `/usr/share/keyrings/<vendor>.gpg`, with `signed-by=`**
 The legacy `/etc/apt/trusted.gpg` is deprecated because it trusts the key for ALL repos. Modern practice scopes each key to a specific repo with `signed-by=`.
 
 ### Q8: **B. `dpkg -i file.deb`**
-`dpkg` is the low-level tool with no dep resolution. `apt install ./file.deb` (choice A) DOES resolve deps — that's the difference.
+`dpkg` is the low-level tool with no dep resolution. `apt install ./file.deb` (choice A) DOES resolve deps, that's the difference.
 
 ### Q9: **A. `dpkg -L openssh-server`**
 `dpkg -L <pkg>` lists files installed by the package. Lowercase `-l` (choice B) lists installed packages summary.
@@ -345,4 +345,4 @@ The minimum valid dnf repo definition has `[id]`, `name=`, `baseurl=` (or `mirro
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Bash Scripting & Automation](../Module-04-Bash-Scripting/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Bash Scripting & Automation](../Module-04-Bash-Scripting/Reading.md)

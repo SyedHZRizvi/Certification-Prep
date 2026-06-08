@@ -69,7 +69,7 @@ D. 3 → 2 → 1 → 4 → 5
 
 ---
 
-### Q8. Yes/No — File Sync. *(Evaluate)*
+### Q8. Yes/No, File Sync. *(Evaluate)*
 
 **S1:** Cloud tiering supports policies based on volume free space and/or last access date.
 **S2:** A sync group can have multiple server endpoints.
@@ -91,7 +91,7 @@ D. Snapshots are write-only
 ---
 
 ### Q10. SMB 3.x encryption is required when: *(Understand)*
-A. Always — no exceptions
+A. Always, no exceptions
 B. "Secure transfer required" is enabled on the storage account (which also enforces HTTPS)
 C. Only Premium share
 D. Only for NFS
@@ -132,13 +132,13 @@ D. GRS only
 
 ### Q15. Encryption in transit for NFS 4.1 on Azure Files is: *(Understand)*
 A. Always on
-B. Not supported — secure with network isolation (private endpoint / VNet)
+B. Not supported, secure with network isolation (private endpoint / VNet)
 C. Enabled by setting `--encryption true`
 D. Enabled via Conditional Access
 
 ---
 
-### Q16. Yes/No — Azure Files tiers. *(Analyze)*
+### Q16. Yes/No, Azure Files tiers. *(Analyze)*
 
 **S1:** Premium is suited for latency under 5 ms.
 **S2:** Cool tier has cheaper storage but more expensive transactions than Hot.
@@ -191,7 +191,7 @@ D. Containers only
 
 ---
 
-### Q22. Yes/No — Mark each. *(Evaluate)*
+### Q22. Yes/No, Mark each. *(Evaluate)*
 
 **S1:** Azure Files share snapshots are read-only.
 **S2:** Azure Backup for file shares uses a Recovery Services vault.
@@ -232,7 +232,7 @@ NFS isn't available on standard StorageV2 file shares.
 Premium bills for what you provision (whether you use it or not). Standard tiers bill for used size.
 
 ### Q4: **C. Entra Kerberos / AD DS identity-based auth**
-Storage key auth gives a shared "Azure\<account>" identity — no per-user trail.
+Storage key auth gives a shared "Azure\<account>" identity, no per-user trail.
 
 ### Q5: **B. A registered Windows Server**
 The Sync agent runs on Windows Server. Linux is not supported.
@@ -244,7 +244,7 @@ Stub files are a few KB; the data lives in Azure until accessed.
 Build the Azure side first (Sync service → group → cloud endpoint), then register a server, then add the server endpoint.
 
 ### Q8: **A. Yes / Yes / No**
-Tiering supports volume free space + date. A sync group can have multiple server endpoints (multi-site). Sync isn't backup — you still need snapshots/RSV.
+Tiering supports volume free space + date. A sync group can have multiple server endpoints (multi-site). Sync isn't backup, you still need snapshots/RSV.
 
 ### Q9: **A. "Previous Versions" tab in Windows File Explorer**
 Snapshots appear as Previous Versions for SMB clients.
@@ -264,8 +264,8 @@ With large file share enabled, standard share quota goes up to 100 TB. (Premium 
 ### Q14: **B. LRS or ZRS only**
 NFS shares can't be geo-replicated. Use app-level replication if needed.
 
-### Q15: **B. Not supported — secure with network isolation**
-A famous gotcha. NFS clients don't negotiate TLS — restrict by VNet / private endpoint.
+### Q15: **B. Not supported, secure with network isolation**
+A famous gotcha. NFS clients don't negotiate TLS, restrict by VNet / private endpoint.
 
 ### Q16: **A. Yes / Yes / Yes**
 Premium for low latency; Cool optimizes storage at the cost of higher transaction $; tier can be changed.

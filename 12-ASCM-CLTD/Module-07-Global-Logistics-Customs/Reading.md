@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) facility types (FTZ, bonded warehouse intro)
 > - [Module 6](../Module-06-Transportation-Modes/Reading.md) ocean/air/intermodal vocabulary (containers, AWB, BOL)
-> - Basic finance: discount rate, NPV, working capital — for valuing duty deferral
+> - Basic finance: discount rate, NPV, working capital, for valuing duty deferral
 >
 > Cross-course: [CSCP Module 8 (International Trade & Customs)](../../10-ASCM-CSCP/Module-08-International-Trade-Customs/Reading.md) covers an introductory view of customs and Incoterms. [CPSM Module on Global Sourcing](../../../13-ISM-CPSM/) (ISM CPSM track) covers the procurement side of global trade including supplier-side Incoterms negotiation.
 
@@ -15,7 +15,7 @@
 
 Diane runs a specialty coffee importer in Boston. She emails her supplier in Ethiopia: "Please ship 5 containers, FOB Addis Ababa." Three months later, the containers arrive at the Port of Boston. Customs holds them. Diane's freight forwarder calls: "These weren't insured for the ocean leg. The supplier handed off at the *port* in Djibouti, not at *origin*. You owe duty, demurrage, and the insurance retroactive."
 
-What went wrong? Diane used **FOB** for a container shipment by ocean. Under Incoterms 2020, FOB is technically valid for ocean — BUT the rules transfer risk when goods are *on board the vessel*, not in the truck to the port. Diane should have used **FCA Addis Ababa** (Free Carrier — risk transfers at origin) or **CIF Boston** (seller arranges and pays for cost, insurance, freight to Boston).
+What went wrong? Diane used **FOB** for a container shipment by ocean. Under Incoterms 2020, FOB is technically valid for ocean BUT the rules transfer risk when goods are *on board the vessel*, not in the truck to the port. Diane should have used **FCA Addis Ababa** (Free Carrier risk transfers at origin) or **CIF Boston** (seller arranges and pays for cost, insurance, freight to Boston).
 
 That one wrong Incoterm = $40,000.
 
@@ -23,25 +23,25 @@ This module makes sure you never do that. We'll cover all 11 Incoterms 2020, cus
 
 ---
 
-## 🌐 Incoterms 2020 — All 11 Rules
+## 🌐 Incoterms 2020, All 11 Rules
 
-> **Citation.** *Incoterms® 2020 — ICC Rules for the Use of Domestic and International Trade Terms* (International Chamber of Commerce, Paris, 2019; effective Jan 1, 2020). The rules are commercial trademarks of the ICC and are reaffirmed every 10 years (next revision projected: Incoterms 2030). The Harmonized System is governed by the *International Convention on the Harmonized Commodity Description and Coding System* (World Customs Organization, Brussels, 1983; updated every 5 years; HS 2022 currently in force). C-TPAT is administered by US Customs and Border Protection (CBP, 2001 under the SAFE Port Act); AEO programs are administered globally under the WCO SAFE Framework of Standards (2005; updated 2018, 2021). USMCA went into force July 1, 2020 (replacing NAFTA 1994).
+> **Citation.** *Incoterms® 2020, ICC Rules for the Use of Domestic and International Trade Terms* (International Chamber of Commerce, Paris, 2019; effective Jan 1, 2020). The rules are commercial trademarks of the ICC and are reaffirmed every 10 years (next revision projected: Incoterms 2030). The Harmonized System is governed by the *International Convention on the Harmonized Commodity Description and Coding System* (World Customs Organization, Brussels, 1983; updated every 5 years; HS 2022 currently in force). C-TPAT is administered by US Customs and Border Protection (CBP, 2001 under the SAFE Port Act); AEO programs are administered globally under the WCO SAFE Framework of Standards (2005; updated 2018, 2021). USMCA went into force July 1, 2020 (replacing NAFTA 1994).
 
 **Incoterms** = International Commercial Terms, published by the International Chamber of Commerce (ICC). Current version: **Incoterms 2020**, effective January 1, 2020. The 11 rules govern who pays for transport, who carries risk, and where transfer happens.
 
 ### The Big Change from 2010 → 2020
 
-- **DAT → DPU** — DAT (Delivered At Terminal) was renamed **DPU (Delivered at Place Unloaded)** to clarify the seller unloads.
+- **DAT → DPU**, DAT (Delivered At Terminal) was renamed **DPU (Delivered at Place Unloaded)** to clarify the seller unloads.
 - **DDP** insurance language clarified.
 - **FCA** now allows BOL with onboard notation when seller is responsible for less than full ocean leg.
 - **CIP** now requires "all risk" insurance (Institute Cargo Clauses A), up from minimum (Clauses C). CIF unchanged.
 
 ### Two Categories
 
-**Group 1: Any Mode of Transport (7 rules)** — use for containers, multimodal, air
+**Group 1: Any Mode of Transport (7 rules)**, use for containers, multimodal, air
 - EXW, FCA, CPT, CIP, DAP, DPU, DDP
 
-**Group 2: Sea and Inland Waterway Only (4 rules)** — use only when goods are *loaded onto a vessel*, not containers
+**Group 2: Sea and Inland Waterway Only (4 rules)**, use only when goods are *loaded onto a vessel*, not containers
 - FAS, FOB, CFR, CIF
 
 🚨 **Trap on the exam:** Using FOB for a containerized shipment is technically wrong under Incoterms 2020. Use FCA instead. This is the #1 most-tested Incoterms trap.
@@ -52,7 +52,7 @@ This module makes sure you never do that. We'll cover all 11 Incoterms 2020, cus
 
 | Rule | Mode | Seller delivers at | Risk transfers at | Cost responsibility (Seller pays) | Insurance |
 |------|------|---------------------|-------------------|-----------------------------------|-----------|
-| **EXW** Ex Works | Any | Seller's premises | Seller's premises | Minimum — buyer arranges all | Buyer's choice |
+| **EXW** Ex Works | Any | Seller's premises | Seller's premises | Minimum, buyer arranges all | Buyer's choice |
 | **FCA** Free Carrier | Any | Named place (origin) | Named place (origin) | To named place | Optional |
 | **CPT** Carriage Paid To | Any | Named place (destination) | Origin (when handed to carrier) | Freight to destination | Optional |
 | **CIP** Carriage & Insurance Paid To | Any | Named place (destination) | Origin (when handed to carrier) | Freight + INSURANCE (Clauses A) | Required (all-risk) |
@@ -119,7 +119,7 @@ Under **C-terms** (CPT, CIP, CFR, CIF), the seller *pays* freight to destination
 | **Exporter of Record (EOR)** | Legally responsible for export licensing, restrictions, screening |
 | **Customs broker** | Files customs paperwork on importer's behalf |
 | **Freight forwarder** | Books transport, prepares documents (no goods possession typically) |
-| **NVOCC** | Non-Vessel Operating Common Carrier — issues own BL but doesn't own ships |
+| **NVOCC** | Non-Vessel Operating Common Carrier, issues own BL but doesn't own ships |
 | **3PL** | Outsourced logistics provider |
 
 ### Customs documents (memorize)
@@ -142,9 +142,9 @@ Under **C-terms** (CPT, CIP, CFR, CIF), the seller *pays* freight to destination
 
 ### HS / HTS Codes
 
-**HS (Harmonized System)** — 6-digit global standard by World Customs Organization. Every country uses these 6 digits.
+**HS (Harmonized System)**, 6-digit global standard by World Customs Organization. Every country uses these 6 digits.
 
-**HTS (Harmonized Tariff Schedule)** — Country-specific extension. US uses 10 digits.
+**HTS (Harmonized Tariff Schedule)**, Country-specific extension. US uses 10 digits.
 
 Structure:
 ```
@@ -208,7 +208,7 @@ Goods qualify for FTA benefits only if they "originate" from a member country. R
 - Substantial transformation (tariff shift to a new HS code)
 - Regional Value Content (RVC) threshold (e.g., 60% under USMCA)
 
-🚨 **Trap on the exam:** Goods don't automatically qualify for an FTA — they must *originate* per the rules of origin and a *certificate of origin* must be filed.
+🚨 **Trap on the exam:** Goods don't automatically qualify for an FTA, they must *originate* per the rules of origin and a *certificate of origin* must be filed.
 
 ---
 
@@ -220,8 +220,8 @@ A designated area where goods are not yet in commerce of the host country.
 
 Benefits:
 
-- **Duty deferral** — pay only when goods enter commerce
-- **Duty inversion** — pay lower duty on the *finished product* HS code rather than the *components* (if applicable)
+- **Duty deferral**, pay only when goods enter commerce
+- **Duty inversion**, pay lower duty on the *finished product* HS code rather than the *components* (if applicable)
 - **Re-export** without ever paying duty
 - **Value-added activities** (kitting, labeling, light assembly)
 
@@ -255,7 +255,7 @@ Goods imported for a limited time without duty (samples, trade shows, repair).
 4. Bank pays seller
 5. Buyer pays bank
 
-🎯 **Exam tip:** LC payment is triggered by *documents matching* the LC terms — even a typo can delay payment.
+🎯 **Exam tip:** LC payment is triggered by *documents matching* the LC terms, even a typo can delay payment.
 
 ---
 
@@ -281,10 +281,10 @@ Required for almost all international shipments. Tools: Descartes Visual Complia
 
 ### Supply chain security programs
 
-- **C-TPAT** (US) — Customs-Trade Partnership Against Terrorism
-- **AEO** (EU) — Authorized Economic Operator
-- **PIP** (Canada) — Partners in Protection
-- **STP** (Singapore) — Secure Trade Partnership
+- **C-TPAT** (US), Customs-Trade Partnership Against Terrorism
+- **AEO** (EU), Authorized Economic Operator
+- **PIP** (Canada), Partners in Protection
+- **STP** (Singapore), Secure Trade Partnership
 
 All grant *expedited customs treatment* in exchange for security compliance.
 
@@ -305,29 +305,29 @@ All grant *expedited customs treatment* in exchange for security compliance.
 
 ---
 
-## 📜 Case Study — CMA CGM's Acquisition of Bolloré Logistics (2024)
+## 📜 Case Study, CMA CGM's Acquisition of Bolloré Logistics (2024)
 
-**Situation.** CMA CGM, France's largest container shipping line and the world's #3 carrier by capacity (after MSC and Maersk), watched Maersk's vertical-integration playbook (see Module 1 case) play out from 2016 through 2022. By 2022 CMA CGM had earned over €40B of cumulative profits across the freight super-cycle and CEO Rodolphe Saadé began an aggressive M&A spree to follow Maersk's model. The strategic question: how to acquire the *integrated logistics* layer fastest? Bolloré Logistics — the freight forwarding + customs brokerage + contract logistics arm of the French conglomerate Bolloré Group — was, in 2023, the world's #5 freight forwarder with 14,800 employees across 140+ countries, ~€7B revenue, and deep African + Asian customs broker capability.
+**Situation.** CMA CGM, France's largest container shipping line and the world's #3 carrier by capacity (after MSC and Maersk), watched Maersk's vertical-integration playbook (see Module 1 case) play out from 2016 through 2022. By 2022 CMA CGM had earned over €40B of cumulative profits across the freight super-cycle and CEO Rodolphe Saadé began an aggressive M&A spree to follow Maersk's model. The strategic question: how to acquire the *integrated logistics* layer fastest? Bolloré Logistics the freight forwarding + customs brokerage + contract logistics arm of the French conglomerate Bolloré Group was, in 2023, the world's #5 freight forwarder with 14,800 employees across 140+ countries, ~€7B revenue, and deep African + Asian customs broker capability.
 
 **Decision.** In April 2024 CMA CGM closed the acquisition of Bolloré Logistics for €4.65B (announced December 2023, regulatory approvals through Q1 2024). The deal:
 
-- **Combined Bolloré Logistics into CMA CGM Group's CEVA Logistics subsidiary** — CEVA was acquired by CMA CGM in 2019; Bolloré now sits inside CEVA, creating a top-3 freight forwarder globally (behind only Kuehne+Nagel and DSV).
-- **Acquired customs brokerage networks** in 50+ countries — most critically Africa, where Bolloré operated terminal concessions and customs services in 16 African countries (a market Maersk and Kuehne+Nagel have minimal presence in).
+- **Combined Bolloré Logistics into CMA CGM Group's CEVA Logistics subsidiary**, CEVA was acquired by CMA CGM in 2019; Bolloré now sits inside CEVA, creating a top-3 freight forwarder globally (behind only Kuehne+Nagel and DSV).
+- **Acquired customs brokerage networks** in 50+ countries, most critically Africa, where Bolloré operated terminal concessions and customs services in 16 African countries (a market Maersk and Kuehne+Nagel have minimal presence in).
 - **Picked up SDV International Logistics**, Bolloré's air-freight forwarding arm.
-- **Integrated trade compliance and AEO certifications** — Bolloré held AEO status in 25+ countries; CMA CGM gained instant *Authorized Economic Operator* recognition across Europe, plus C-TPAT alignment for US imports.
-- **Did NOT acquire Bolloré's Africa port concessions** — those were sold separately to MSC (Mediterranean Shipping Company) for €5.7B in late 2022, creating an interesting split: shipping infrastructure to MSC, customs/logistics services to CMA CGM.
+- **Integrated trade compliance and AEO certifications**, Bolloré held AEO status in 25+ countries; CMA CGM gained instant *Authorized Economic Operator* recognition across Europe, plus C-TPAT alignment for US imports.
+- **Did NOT acquire Bolloré's Africa port concessions**, those were sold separately to MSC (Mediterranean Shipping Company) for €5.7B in late 2022, creating an interesting split: shipping infrastructure to MSC, customs/logistics services to CMA CGM.
 
-**Outcome.** By Q3 2024, CMA CGM Group's Logistics & Services segment (CEVA + Bolloré Logistics combined) reached ~€17B run-rate revenue, ~30% of total group revenue (mirroring the Maersk transformation arc). Critically, CMA CGM's *integrated trade compliance* offering — handle the shipment + customs entry + Incoterms structuring + AEO routing — became a differentiated end-to-end product. Customers like Decathlon (French sporting goods), L'Oréal, and Stellantis (auto group) began consolidating freight + customs contracts with CMA CGM, eliminating the historic split between ocean carrier (CMA CGM), freight forwarder (Kuehne+Nagel or DSV), and customs broker (Bolloré). The full-stack integrated offering reduced shipper customs-clearance time ~30% and lowered freight + brokerage + compliance combined cost by ~12% per shipment based on early customer testimonials.
+**Outcome.** By Q3 2024, CMA CGM Group's Logistics & Services segment (CEVA + Bolloré Logistics combined) reached ~€17B run-rate revenue, ~30% of total group revenue (mirroring the Maersk transformation arc). Critically, CMA CGM's *integrated trade compliance* offering handle the shipment + customs entry + Incoterms structuring + AEO routing became a differentiated end-to-end product. Customers like Decathlon (French sporting goods), L'Oréal, and Stellantis (auto group) began consolidating freight + customs contracts with CMA CGM, eliminating the historic split between ocean carrier (CMA CGM), freight forwarder (Kuehne+Nagel or DSV), and customs broker (Bolloré). The full-stack integrated offering reduced shipper customs-clearance time ~30% and lowered freight + brokerage + compliance combined cost by ~12% per shipment based on early customer testimonials.
 
 **Lesson for the exam / for practitioners.** This case bridges Modules 1, 6, and 7:
 
-1. **Customs broker + freight forwarder + ocean carrier as one integrated 4PL.** The CLTD exam tests the distinct roles (IOR, customs broker, freight forwarder, NVOCC) — this case shows what happens when one entity does all three under one contract. The advantage: faster customs clearance, better Incoterms structuring, single accountability.
+1. **Customs broker + freight forwarder + ocean carrier as one integrated 4PL.** The CLTD exam tests the distinct roles (IOR, customs broker, freight forwarder, NVOCC), this case shows what happens when one entity does all three under one contract. The advantage: faster customs clearance, better Incoterms structuring, single accountability.
 
-2. **AEO/C-TPAT as durable strategic moat.** CMA CGM acquired Bolloré's AEO certifications — these take years to earn and demonstrate sustained security compliance. They cannot be quickly replicated. This is a Module 7 + Module 1 intersection: trade-compliance certifications are *strategic assets*, not paperwork.
+2. **AEO/C-TPAT as durable strategic moat.** CMA CGM acquired Bolloré's AEO certifications, these take years to earn and demonstrate sustained security compliance. They cannot be quickly replicated. This is a Module 7 + Module 1 intersection: trade-compliance certifications are *strategic assets*, not paperwork.
 
-3. **Africa as the next-frontier logistics market.** Africa's container volumes grew ~7% annually 2018–2024 — faster than any other continent. CMA CGM's Bolloré acquisition gave it ~40% market share of West African contract logistics. The strategic logic mirrors what Maersk did with LF Logistics in Asia.
+3. **Africa as the next-frontier logistics market.** Africa's container volumes grew ~7% annually 2018–2024, faster than any other continent. CMA CGM's Bolloré acquisition gave it ~40% market share of West African contract logistics. The strategic logic mirrors what Maersk did with LF Logistics in Asia.
 
-The CLTD exam may test the customs-broker / freight-forwarder distinction — both can be done by the same entity (CMA CGM proves this), but the *licenses and accountabilities* remain distinct.
+The CLTD exam may test the customs-broker / freight-forwarder distinction, both can be done by the same entity (CMA CGM proves this), but the *licenses and accountabilities* remain distinct.
 
 **Discussion (Socratic).**
 - Q1: When CMA CGM, Maersk, and Kuehne+Nagel all become integrated 4PLs offering ocean + forwarder + customs + warehouse, what is the differentiation strategy left to a smaller, independent freight forwarder? Frame the niche they could occupy.
@@ -341,7 +341,7 @@ The CLTD exam may test the customs-broker / freight-forwarder distinction — bo
 | Misconception | Reality |
 |---------------|---------|
 | "FOB works for any ocean shipment" | FOB is only for goods loaded *on a vessel*; for containers, use FCA |
-| "Risk transfers when seller pays freight" | No — under C-terms, seller pays freight but risk transfers at origin |
+| "Risk transfers when seller pays freight" | No, under C-terms, seller pays freight but risk transfers at origin |
 | "HS code = HTS code" | HS is 6-digit global; HTS is country-specific extension |
 | "FTA = automatic preferential duty" | Only with rules-of-origin compliance + certificate of origin |
 | "FTZ eliminates duty" | Only defers until goods enter commerce; may *reduce* via duty inversion |
@@ -351,13 +351,13 @@ The CLTD exam may test the customs-broker / freight-forwarder distinction — bo
 
 ## 🚨 Exam Traps
 
-🚨 **Trap 1:** FOB for containers — wrong. Use FCA.
+🚨 **Trap 1:** FOB for containers, wrong. Use FCA.
 
-🚨 **Trap 2:** Risk pass under C-terms — at *origin*, not destination.
+🚨 **Trap 2:** Risk pass under C-terms, at *origin*, not destination.
 
 🚨 **Trap 3:** Confusing DAP (NOT unloaded) with DPU (unloaded by seller).
 
-🚨 **Trap 4:** DDP includes duty — DAP and DPU do NOT.
+🚨 **Trap 4:** DDP includes duty, DAP and DPU do NOT.
 
 🚨 **Trap 5:** CIP requires *all-risk* insurance (Clauses A); CIF requires only minimum (Clauses C).
 
@@ -376,7 +376,7 @@ The CLTD exam may test the customs-broker / freight-forwarder distinction — bo
 | **Customs broker** | Files customs entry |
 | **Freight forwarder** | Books transport, no possession |
 | **NVOCC** | Non-Vessel Operating Common Carrier |
-| **FTZ** | Free Trade Zone — duty deferral |
+| **FTZ** | Free Trade Zone, duty deferral |
 | **Bonded warehouse** | Storage with deferred duty |
 | **USMCA / CPTPP / RCEP** | Major FTAs |
 | **Rules of origin** | Qualifying criteria for FTA preference |
@@ -412,11 +412,11 @@ You now know:
 
 ## 🤔 Discussion (Socratic prompts)
 
-1. **DDP vs DAP for e-commerce.** Many cross-border e-commerce platforms (AliExpress, Temu, Shein) sell DDP — the marketplace handles import duty so the consumer never sees it. The 2024 US "de minimis" rule changes (proposed in 2024 to lower the $800 de minimis threshold) directly attack this model. Frame both sides: is the de minimis regime good or bad for US logistics?
+1. **DDP vs DAP for e-commerce.** Many cross-border e-commerce platforms (AliExpress, Temu, Shein) sell DDP, the marketplace handles import duty so the consumer never sees it. The 2024 US "de minimis" rule changes (proposed in 2024 to lower the $800 de minimis threshold) directly attack this model. Frame both sides: is the de minimis regime good or bad for US logistics?
 
 2. **Friendshoring vs nearshoring vs reshoring.** Post-2018 US-China trade tensions, multiple strategies have emerged: friendshoring (allied countries), nearshoring (Mexico), reshoring (US). Each carries different Incoterms implications. For a hypothetical $500M US importer of electronics, which mix would you advocate, and why?
 
-3. **FTZ vs bonded warehouse vs direct import.** A $250M apparel importer is deciding between an FTZ (defer + potentially inverse duty), a bonded warehouse (defer only), or direct import (pay at port). Walk through the financial logic — when does each win?
+3. **FTZ vs bonded warehouse vs direct import.** A $250M apparel importer is deciding between an FTZ (defer + potentially inverse duty), a bonded warehouse (defer only), or direct import (pay at port). Walk through the financial logic, when does each win?
 
 4. **Customs broker make-or-buy.** A growing importer (~5,000 entries/year) currently uses an external broker. They consider hiring an in-house licensed broker. What are the breakeven and risk considerations?
 
@@ -431,10 +431,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Incoterms 2020* — official ICC publication (essential, ~$50)
+- 📖 *Incoterms 2020*, official ICC publication (essential, ~$50)
 - 📖 *Global Logistics and Supply Chain Management* by Mangan & Lalwani
-- 🔗 [ICC Incoterms 2020 page](https://iccwbo.org/business-solutions/incoterms-rules/) — official summaries
-- 🔗 [WCO HS database](http://www.wcoomd.org/) — official 6-digit classification
-- 🔗 [US Harmonized Tariff Schedule](https://hts.usitc.gov/) — US HTS lookup
-- 🔗 [USMCA full text](https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement) — rules of origin
+- 🔗 [ICC Incoterms 2020 page](https://iccwbo.org/business-solutions/incoterms-rules/), official summaries
+- 🔗 [WCO HS database](http://www.wcoomd.org/), official 6-digit classification
+- 🔗 [US Harmonized Tariff Schedule](https://hts.usitc.gov/), US HTS lookup
+- 🔗 [USMCA full text](https://ustr.gov/trade-agreements/free-trade-agreements/united-states-mexico-canada-agreement), rules of origin
 - 🔗 [US C-TPAT program](https://www.cbp.gov/border-security/ports-entry/cargo-security/c-tpat-customs-trade-partnership-against-terrorism)

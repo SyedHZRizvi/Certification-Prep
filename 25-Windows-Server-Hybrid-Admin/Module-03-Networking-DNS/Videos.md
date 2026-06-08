@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: Networking, DNS & DHCP
 
-> **How to use:** Click any card to search YouTube for the latest top result. DNS alone is 8% of the AZ-800 — DNS questions are guaranteed.
+> **How to use:** Click any card to search YouTube for the latest top result. DNS alone is 8% of the AZ-800, DNS questions are guaranteed.
 
 ## ⭐ Essential watching (~100 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Windows DNS — From Zero to Hero</p>
+      <p class="vg-title">Windows DNS, From Zero to Hero</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 35 min · Zones, records, replication</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DNSSEC Deep Dive — Sign Your Zones</p>
+      <p class="vg-title">DNSSEC Deep Dive, Sign Your Zones</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 25 min · KSK, ZSK, DS, NSEC3</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">WFAS — Profiles, Rules, IPsec</p>
+      <p class="vg-title">WFAS, Profiles, Rules, IPsec</p>
       <p class="vg-creator">Practical Windows Server</p>
       <span class="vg-duration">⏱ 18 min · Defense in depth</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">DNS Policies — Split-Horizon & Geo-LB</p>
+      <p class="vg-title">DNS Policies, Split-Horizon & Geo-LB</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 14 min · Zone scopes</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">NLB Cluster — Web Farm Tutorial</p>
+      <p class="vg-title">NLB Cluster, Web Farm Tutorial</p>
       <p class="vg-creator">NetworkChuck Academy</p>
       <span class="vg-duration">⏱ 16 min · Unicast vs Multicast</span>
     </div>
@@ -145,11 +145,11 @@
 
 Answer these in your notebook:
 
-1. AD-integrated zone vs file-based primary — what changes when you choose AD-integrated?
+1. AD-integrated zone vs file-based primary, what changes when you choose AD-integrated?
 2. DNSSEC: what's a KSK vs ZSK vs DS record?
-3. Conditional forwarder vs stub zone — which has dynamic NS updates?
-4. DHCP failover Hot Standby vs Load Balance — when each?
-5. WFAS — three profiles and default inbound action on the Domain profile?
-6. NLB modes — Unicast vs Multicast vs IGMP, and which to pick for typical web farms?
+3. Conditional forwarder vs stub zone, which has dynamic NS updates?
+4. DHCP failover Hot Standby vs Load Balance, when each?
+5. WFAS, three profiles and default inbound action on the Domain profile?
+6. NLB modes, Unicast vs Multicast vs IGMP, and which to pick for typical web farms?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

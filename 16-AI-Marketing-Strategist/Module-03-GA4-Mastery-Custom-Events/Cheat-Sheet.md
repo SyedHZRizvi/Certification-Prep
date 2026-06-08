@@ -38,11 +38,11 @@ USER   →  has up to 25  →  USER PROPERTIES
 | Conversions | Goals (25) | Key Events (50) |
 | Identifier | Client ID | User ID + Signals + Device + Modeled |
 | App + web | Separate | Unified |
-| UA shutdown | 1 Jul 2023 (UA), 1 Jul 2024 (UA 360) | — |
+| UA shutdown | 1 Jul 2023 (UA), 1 Jul 2024 (UA 360) |, |
 
 ---
 
-## 🎯 Engaged Session — Definition
+## 🎯 Engaged Session, Definition
 
 ```
 Engaged = >10 sec  OR  has conversion  OR  2+ screen/page views
@@ -103,7 +103,7 @@ FROM UNNEST(event_params)
 WHERE key = 'page_location'
 ```
 
-### Schema cheat — top-level columns to memorize
+### Schema cheat, top-level columns to memorize
 
 ```
 event_date, event_timestamp, event_name

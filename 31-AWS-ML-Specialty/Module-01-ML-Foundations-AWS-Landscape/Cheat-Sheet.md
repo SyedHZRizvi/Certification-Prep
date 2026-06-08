@@ -8,16 +8,16 @@
 
 | Family | Example task | One algorithm |
 |--------|--------------|---------------|
-| **Supervised — classification** | Fraud / not fraud | XGBoost, Linear Learner, BlazingText |
-| **Supervised — regression** | Predict house price | XGBoost-regressor, Linear Learner, K-NN |
-| **Unsupervised — clustering** | Customer segments | K-Means |
-| **Unsupervised — dim. reduction** | Visualise embeddings | PCA, t-SNE, UMAP |
-| **Unsupervised — anomaly** | Detect fraud w/o labels | Random Cut Forest, IP Insights |
+| **Supervised, classification** | Fraud / not fraud | XGBoost, Linear Learner, BlazingText |
+| **Supervised, regression** | Predict house price | XGBoost-regressor, Linear Learner, K-NN |
+| **Unsupervised, clustering** | Customer segments | K-Means |
+| **Unsupervised, dim. reduction** | Visualise embeddings | PCA, t-SNE, UMAP |
+| **Unsupervised, anomaly** | Detect fraud w/o labels | Random Cut Forest, IP Insights |
 | **Reinforcement learning** | Game-playing, robotics | SageMaker RL (Ray, Coach) |
 
 ---
 
-## ☁️ The AWS ML Stack — 7 Layers
+## ☁️ The AWS ML Stack, 7 Layers
 
 ```
 L7  AI APPS:     Amazon Q (Business / Developer / QuickSight)
@@ -30,19 +30,19 @@ L2  SILICON:     EC2 P/G (GPUs) · Trn (Trainium) · Inf (Inferentia) · EFA · 
 L1  DATA:        S3 · Glue · Lake Formation · Athena · Redshift · EMR · Kinesis
 ```
 
-**Rule of thumb:** *Managed (L5) > Bedrock (L6) > SageMaker (L4) > Custom EC2 (L2/L3)* — pick highest layer that meets requirements.
+**Rule of thumb:** *Managed (L5) > Bedrock (L6) > SageMaker (L4) > Custom EC2 (L2/L3)*, pick highest layer that meets requirements.
 
 ---
 
 ## 🏋️ The 7-Step ML Lifecycle
 
-1. **Business problem** — frame as classification / regression / cluster / RL
-2. **Data engineering** — ingest → S3 → catalogue with Glue
-3. **EDA & feature engineering** — impute, scale, encode, reduce dimensions
-4. **Modeling** — choose algorithm, train, hyperparameter-tune
-5. **Evaluation** — metrics, CV, fairness (Clarify), explainability (SHAP)
-6. **Deployment** — real-time / async / serverless / batch endpoint
-7. **Monitoring & retrain** — Model Monitor, drift alarms, scheduled retrains
+1. **Business problem**, frame as classification / regression / cluster / RL
+2. **Data engineering**, ingest → S3 → catalogue with Glue
+3. **EDA & feature engineering**, impute, scale, encode, reduce dimensions
+4. **Modeling**, choose algorithm, train, hyperparameter-tune
+5. **Evaluation**, metrics, CV, fairness (Clarify), explainability (SHAP)
+6. **Deployment**, real-time / async / serverless / batch endpoint
+7. **Monitoring & retrain**, Model Monitor, drift alarms, scheduled retrains
 
 ---
 
@@ -56,7 +56,7 @@ L1  DATA:        S3 · Glue · Lake Formation · Athena · Redshift · EMR · Ki
 
 ---
 
-## 🎯 Metrics — One-Liner Recall
+## 🎯 Metrics, One-Liner Recall
 
 | Metric | Use when… |
 |--------|-----------|
@@ -134,7 +134,7 @@ Clarify (SHAP) + Model Monitor (drift) + Pipelines (nightly retrain)
 
 ---
 
-## 🏗️ Well-Architected ML Lens — One Word Per Pillar
+## 🏗️ Well-Architected ML Lens, One Word Per Pillar
 
 | Pillar | The ML Move |
 |--------|-------------|

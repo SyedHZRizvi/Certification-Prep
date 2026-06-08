@@ -1,9 +1,9 @@
 # Module 1: Active Directory Domain Services 🌳
 
-> **Why this module matters:** AD DS is 30–35% of AZ-800 — by far the heaviest single domain. It's also the foundation everything else builds on: Group Policy targeting, hybrid identity, file-server permissions, Hyper-V live migration auth, even Azure Arc onboarding — all assume a working forest. Get the FSMO roles, replication topology, and GPO precedence rules wired into reflex memory and you've already locked down a third of the exam.
+> **Why this module matters:** AD DS is 30–35% of AZ-800 by far the heaviest single domain. It's also the foundation everything else builds on: Group Policy targeting, hybrid identity, file-server permissions, Hyper-V live migration auth, even Azure Arc onboarding all assume a working forest. Get the FSMO roles, replication topology, and GPO precedence rules wired into reflex memory and you've already locked down a third of the exam.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - DNS basics (A records, SRV records, what a forwarder does) — covered later in Module 3, but a primer helps
+> - DNS basics (A records, SRV records, what a forwarder does), covered later in Module 3, but a primer helps
 > - Basic TCP/IP networking (subnets, default gateways, what port 389 vs 636 is)
 > - The Windows Server admin GUI (Server Manager, ADUC) and PowerShell basics
 >
@@ -20,7 +20,7 @@ You're the senior systems administrator. Your boss puts six questions on the whi
 1. Do we merge the forests, or set up a **trust**?
 2. If a trust, which **direction** and **transitivity**?
 3. Whose **FSMO roles** stay primary?
-4. What about the duplicate **OU structure** — flatten? leave alone?
+4. What about the duplicate **OU structure**, flatten? leave alone?
 5. The Fabrikam DCs are 8 ms away. Do we put them in a different **site**?
 6. Their domain controller in the Houston branch lives in an unlocked broom closet. What about that one?
 
@@ -47,16 +47,16 @@ FOREST  (top-level security boundary)
 | **Forest** | Top of the tree. One Schema, one Config partition, one Global Catalog. Forest = security boundary. | Security |
 | **Tree** | One or more domains with contiguous DNS namespace (`contoso.com`, `sales.contoso.com`, `eu.contoso.com`). | Naming only |
 | **Domain** | A replication boundary and a partition. Has its own admins (Domain Admins) and a separate password policy (via Fine-Grained PSO). | Replication + admin |
-| **Organizational Unit (OU)** | A container for users/computers/groups. **OUs are *not* security boundaries** — they exist for **delegation** and **GPO targeting**. | Admin only |
+| **Organizational Unit (OU)** | A container for users/computers/groups. **OUs are *not* security boundaries**, they exist for **delegation** and **GPO targeting**. | Admin only |
 | **Object** | A user, computer, group, contact, GPO, printer, etc. Has a globally unique SID and a distinguishedName (DN). | Leaf |
 
-🎯 **Exam pattern:** *"The senior auditor demands a clean separation between Finance and the rest of the org. What's the best AD design?"* → **A separate domain**, not just an OU. OUs let admins delegate, but Domain Admins still have keys to everything inside the *domain* — that's what "OUs are not security boundaries" means.
+🎯 **Exam pattern:** *"The senior auditor demands a clean separation between Finance and the rest of the org. What's the best AD design?"* → **A separate domain**, not just an OU. OUs let admins delegate, but Domain Admins still have keys to everything inside the *domain*, that's what "OUs are not security boundaries" means.
 
 🚨 **Trap on the exam:** Microsoft test items love to phrase "security boundary" three ways: "isolation boundary," "permission boundary," and "audit-separation boundary." All three = **forest** for true isolation, **domain** for the standard "this group of admins runs this place." OUs never qualify.
 
 ---
 
-## 🔐 Forest vs Domain — The Security Boundary
+## 🔐 Forest vs Domain, The Security Boundary
 
 The biggest design decision in any AD deployment is **how many forests** to run.
 
@@ -89,7 +89,7 @@ When forests need to share resources, you build a **trust**.
 Domain A  —trusts→  Domain B    means    Users from B can access A's resources.
 ```
 
-(Counter-intuitive at first — but think: "I extend trust to you, so I let your people in.")
+(Counter-intuitive at first, but think: "I extend trust to you, so I let your people in.")
 
 | Direction | Effect |
 |-----------|--------|
@@ -120,13 +120,13 @@ netdom trust contoso.com /Domain:fabrikam.com /Add /Twoway /Transitive:yes /User
 
 ---
 
-## 🏢 FSMO Roles — Memorize Cold
+## 🏢 FSMO Roles, Memorize Cold
 
-FSMO = **Flexible Single Master Operations**. AD is multi-master for most operations (any DC can accept a password change, any DC can create a user) — but five operations are single-master because the cost of a conflict is too high.
+FSMO = **Flexible Single Master Operations**. AD is multi-master for most operations (any DC can accept a password change, any DC can create a user), but five operations are single-master because the cost of a conflict is too high.
 
 | Scope | Role | What it does | Where it lives by default |
 |-------|------|--------------|---------------------------|
-| **Forest** | Schema Master | Owns Schema partition writes — extending the schema (e.g., Exchange install) goes here | First DC in the forest |
+| **Forest** | Schema Master | Owns Schema partition writes, extending the schema (e.g., Exchange install) goes here | First DC in the forest |
 | **Forest** | Domain Naming Master | Add/remove domains in the forest, add/remove application partitions | First DC in the forest |
 | **Domain** | RID Master | Allocates blocks of RIDs (500 at a time) to DCs so each can mint unique SIDs | First DC in the domain |
 | **Domain** | PDC Emulator | Authoritative time source; chains to Forest Root PDC; handles password updates; default GPO editor target; processes lockout immediately | First DC in the domain |
@@ -135,24 +135,24 @@ FSMO = **Flexible Single Master Operations**. AD is multi-master for most operat
 ### Move a FSMO role (transfer vs seize)
 
 ```powershell
-# Transfer (graceful — both DCs must be online)
+# Transfer (graceful, both DCs must be online)
 Move-ADDirectoryServerOperationMasterRole -Identity "DC02" `
     -OperationMasterRole PDCEmulator,RIDMaster,InfrastructureMaster
 
-# Seize (DC holding the role is dead — destructive, never bring old DC back)
+# Seize (DC holding the role is dead, destructive, never bring old DC back)
 Move-ADDirectoryServerOperationMasterRole -Identity "DC02" `
     -OperationMasterRole SchemaMaster,DomainNamingMaster -Force
 ```
 
 🎯 **Exam pattern:** *"After the original DC failed, you seized the Schema Master role onto DC02. Can the original DC be returned to the domain?"* → **No.** Restoring it would create a duplicate Schema Master with potential schema corruption. The recovered DC must be **metadata-cleaned** and re-promoted from scratch.
 
-🚨 **Common confusion: Infrastructure Master + GC.** On a single-domain forest, *every* DC should be a GC, and the IM role becomes a no-op — fine. On a multi-domain forest, the IM **must NOT be on a GC** unless *every* DC is a GC (Microsoft's design guidance since Win2K). If the IM is on a GC and not every DC is, foreign object references won't resolve correctly.
+🚨 **Common confusion: Infrastructure Master + GC.** On a single-domain forest, *every* DC should be a GC, and the IM role becomes a no-op, fine. On a multi-domain forest, the IM **must NOT be on a GC** unless *every* DC is a GC (Microsoft's design guidance since Win2K). If the IM is on a GC and not every DC is, foreign object references won't resolve correctly.
 
 ---
 
 ## 🌐 Sites, Subnets & Replication
 
-A **site** is a high-bandwidth, low-latency network segment — usually one data center or one office building. Sites tell AD where to send authentication and which DCs replicate to which.
+A **site** is a high-bandwidth, low-latency network segment, usually one data center or one office building. Sites tell AD where to send authentication and which DCs replicate to which.
 
 ```
                                         ┌───────────────────────┐
@@ -190,7 +190,7 @@ Every DC must have a subnet defined in **AD Sites and Services** that maps to a 
 New-ADReplicationSubnet -Name "10.50.0.0/24" -Site "Branch-Houston"
 ```
 
-🚨 **Common exam trap:** A new branch office sees slow logons. The fix is almost always *"add the branch subnet to the right site"* — without that, clients hit a random DC anywhere in the forest.
+🚨 **Common exam trap:** A new branch office sees slow logons. The fix is almost always *"add the branch subnet to the right site"*, without that, clients hit a random DC anywhere in the forest.
 
 ### Replication monitoring tools
 
@@ -208,13 +208,13 @@ repadmin /replsum
 
 ---
 
-## 📋 Group Policy — The 90-Minute Rule of Thumb
+## 📋 Group Policy, The 90-Minute Rule of Thumb
 
 Group Policy is how you push configuration to thousands of computers without touching each. A Group Policy Object (GPO) is a collection of settings stored in `SYSVOL` (file system) + the `policies` container in AD. GPOs are linked to **sites**, **domains**, or **OUs**.
 
 ### Precedence (LSDOU)
 
-GPOs apply in a strict order — later ones win:
+GPOs apply in a strict order, later ones win:
 
 ```
 1. Local Group Policy        (on the computer itself)
@@ -230,13 +230,13 @@ GPOs apply in a strict order — later ones win:
 
 | Modifier | Effect |
 |----------|--------|
-| **Block Inheritance** (on an OU) | Stop GPOs from higher levels from applying — *unless* they're Enforced |
+| **Block Inheritance** (on an OU) | Stop GPOs from higher levels from applying, *unless* they're Enforced |
 | **Enforced** (on a GPO link) | This GPO wins, period. Overrides Block Inheritance and any lower-level conflicting setting |
 | **Link Order** (within a level) | Lower link order number = higher priority on conflict |
 | **Security Filtering** | Restrict who the GPO applies to (default: Authenticated Users) |
 | **WMI Filtering** | Run a WMI query (e.g., "only Windows 11 machines") to decide whether the GPO applies |
 
-🎯 **Exam pattern:** *"GPO 'Marketing-Block-USB' is linked to the Marketing OU and Enforced. GPO 'Domain-Allow-USB' is linked at the domain root, also Enforced. Marketing has Block Inheritance. What wins on a Marketing computer?"* → The **higher-scope Enforced wins** (Domain). Enforced beats Block; among Enforced, higher scope (closer to root) wins. This is the opposite of normal precedence — memorize this inversion.
+🎯 **Exam pattern:** *"GPO 'Marketing-Block-USB' is linked to the Marketing OU and Enforced. GPO 'Domain-Allow-USB' is linked at the domain root, also Enforced. Marketing has Block Inheritance. What wins on a Marketing computer?"* → The **higher-scope Enforced wins** (Domain). Enforced beats Block; among Enforced, higher scope (closer to root) wins. This is the opposite of normal precedence, memorize this inversion.
 
 ### GPO refresh intervals
 
@@ -277,8 +277,8 @@ Backup-GPO -All -Path \\fileshare\GPOBackup\$(Get-Date -Format yyyy-MM-dd)
 
 OUs do two things:
 
-1. **GPO targeting** — link policies to a specific OU
-2. **Delegation** — give a team admin rights over *just* their OU without making them Domain Admins
+1. **GPO targeting**, link policies to a specific OU
+2. **Delegation**, give a team admin rights over *just* their OU without making them Domain Admins
 
 ### Delegate control via UI
 
@@ -293,15 +293,15 @@ $identity = "CONTOSO\HelpDesk"
 dsacls $ouDN /I:S /G "${identity}:CA;Reset Password;User"
 ```
 
-🚨 **Trap on the exam:** Microsoft loves to ask "How do you delegate XYZ without granting Domain Admin rights?" The expected answer is always **"Delegate Control on the OU"** — never "add to Domain Admins."
+🚨 **Trap on the exam:** Microsoft loves to ask "How do you delegate XYZ without granting Domain Admin rights?" The expected answer is always **"Delegate Control on the OU"**, never "add to Domain Admins."
 
 ---
 
 ## ♻️ AD Recycle Bin
 
-Before the AD Recycle Bin, restoring a deleted object meant doing an **authoritative restore** from backup — painful. The Recycle Bin keeps deleted objects with all attributes intact for **180 days by default**.
+Before the AD Recycle Bin, restoring a deleted object meant doing an **authoritative restore** from backup, painful. The Recycle Bin keeps deleted objects with all attributes intact for **180 days by default**.
 
-### Enable (one-way operation — cannot be disabled)
+### Enable (one-way operation, cannot be disabled)
 
 ```powershell
 Enable-ADOptionalFeature -Identity "Recycle Bin Feature" `
@@ -325,7 +325,7 @@ Get-ADObject -Filter 'IsDeleted -eq $true -and Name -like "Alice*"' `
 Restore-ADObject -Identity "ObjectGUID-here"
 ```
 
-📌 The default **tombstone lifetime** is 180 days (changed from 60 in Server 2003 SP1). When the Recycle Bin is enabled, the **deleted object lifetime** is also 180 days — this controls how long the Recycle Bin retains the object's attributes.
+📌 The default **tombstone lifetime** is 180 days (changed from 60 in Server 2003 SP1). When the Recycle Bin is enabled, the **deleted object lifetime** is also 180 days, this controls how long the Recycle Bin retains the object's attributes.
 
 ---
 
@@ -342,7 +342,7 @@ You have a small branch office in a strip mall. The "server room" is a closet a 
 | Schema changes accepted | No | Yes |
 | LDAP/Kerberos serving | Yes (for cached accounts) | Yes |
 | Forwards writes to writable DC | Yes | N/A |
-| Local admin separation | Yes — non-domain-admin can administer the box | No |
+| Local admin separation | Yes, non-domain-admin can administer the box | No |
 
 ### Deploy an RODC
 
@@ -365,7 +365,7 @@ Install-ADDSDomainController -DomainName "contoso.com" `
 - **Allowed RODC Password Replication Group** → "ok to cache" list
 - **Denied RODC Password Replication Group** → never cache (Domain Admins, Schema Admins, Enterprise Admins are in here by default)
 
-🔥 If an RODC is stolen, reset *only* the passwords of the accounts that were actually cached — known via:
+🔥 If an RODC is stolen, reset *only* the passwords of the accounts that were actually cached, known via:
 
 ```powershell
 Get-ADDomainController -Identity "HOU-DC01" |
@@ -378,7 +378,7 @@ repadmin /prp View "HOU-DC01" Auth2   # what has authenticated through it
 
 ## 🪪 Service Accounts: MSA, gMSA, sMSA
 
-Service accounts are credentials that *services* use. Plain user accounts work but require manual password management — and tickets get cached, leading to breach risk.
+Service accounts are credentials that *services* use. Plain user accounts work but require manual password management, and tickets get cached, leading to breach risk.
 
 | Type | Scope | Password | Use when |
 |------|-------|----------|----------|
@@ -390,7 +390,7 @@ Service accounts are credentials that *services* use. Plain user accounts work b
 ### Create a gMSA
 
 ```powershell
-# One-time per forest — create the KDS root key
+# One-time per forest, create the KDS root key
 Add-KdsRootKey -EffectiveImmediately
 
 # Create the gMSA
@@ -403,7 +403,7 @@ Install-ADServiceAccount -Identity "svc-app01"
 # Then in IIS: set app pool identity to CONTOSO\svc-app01$ (note the $)
 ```
 
-🚨 The `$` at the end of a gMSA name is mandatory — that's how AD knows it's a computer-class principal.
+🚨 The `$` at the end of a gMSA name is mandatory, that's how AD knows it's a computer-class principal.
 
 ---
 
@@ -443,7 +443,7 @@ Add-ADFineGrainedPasswordPolicySubject -Identity "Admin-PSO" `
 2. ✅ Seize the Schema Master and Domain Naming Master onto the surviving root-domain DC: `Move-ADDirectoryServerOperationMasterRole -Identity DC02 -OperationMasterRole SchemaMaster,DomainNamingMaster -Force`
 3. ✅ Verify child-domain trust paths still resolve (`nltest /sc_query:contoso.com`).
 4. ✅ Perform **metadata cleanup** to remove the orphaned DC01 record: `ntdsutil` → `metadata cleanup` → `remove selected server` (or `Remove-ADDomainController -Identity DC01 -ForceRemoval`).
-5. ✅ Build a **new** root-domain DC (DC03) — promote with `Install-ADDSDomainController`, let it pull from DC02.
+5. ✅ Build a **new** root-domain DC (DC03), promote with `Install-ADDSDomainController`, let it pull from DC02.
 6. ✅ Verify replication: `repadmin /replsum` shows zero failures forest-wide.
 7. ✅ **Never** bring DC01 back online from backup. Even a successfully restored image would create dueling FSMO holders if the seize is in place.
 
@@ -451,15 +451,15 @@ Add-ADFineGrainedPasswordPolicySubject -Identity "Admin-PSO" `
 
 ---
 
-## 📊 Case Study — The 2020 SolarWinds Sunburst Attack and AD Persistence
+## 📊 Case Study, The 2020 SolarWinds Sunburst Attack and AD Persistence
 
-**Situation.** In December 2020, FireEye (now Mandiant) disclosed that a state-sponsored adversary (UNC2452 / Cozy Bear, attributed to Russia's SVR) had compromised SolarWinds' Orion build pipeline and shipped malicious code (Sunburst / SUNSPOT / TEARDROP) to ~18,000 customer organizations, including ~9 US federal agencies and ~100 of the Fortune 500 (CISA Alert AA20-352A, December 2020; CrowdStrike incident response report 2021). The deepest level of compromise was in Active Directory: in the worst-affected environments, the attacker stole the **krbtgt account hash** and forged Kerberos "Golden Tickets" granting unlimited domain admin access for any user, any service, any duration — without ever needing to authenticate again against a domain controller.
+**Situation.** In December 2020, FireEye (now Mandiant) disclosed that a state-sponsored adversary (UNC2452 / Cozy Bear, attributed to Russia's SVR) had compromised SolarWinds' Orion build pipeline and shipped malicious code (Sunburst / SUNSPOT / TEARDROP) to ~18,000 customer organizations, including ~9 US federal agencies and ~100 of the Fortune 500 (CISA Alert AA20-352A, December 2020; CrowdStrike incident response report 2021). The deepest level of compromise was in Active Directory: in the worst-affected environments, the attacker stole the **krbtgt account hash** and forged Kerberos "Golden Tickets" granting unlimited domain admin access for any user, any service, any duration, without ever needing to authenticate again against a domain controller.
 
 **Decision.** Microsoft's published guidance (Microsoft Security Response Center, *Recovering from Compromised Identity Infrastructure*, January 2021) gave Sunburst victims three escalating remediation paths:
 
 1. **Rotate the krbtgt password twice** (with a 10-hr wait between rotations so existing TGTs expire). This invalidates Golden Tickets but **does not** clean up backdoor accounts, hidden ACL grants, or SIDHistory entries.
-2. **Tier-0 rebuild** — rebuild DCs from clean OS, rotate **every** privileged credential (Domain Admins, Enterprise Admins, krbtgt, service accounts), audit AdminSDHolder for unexpected ACEs, and re-baseline AD ACL state via tools like Bloodhound + PingCastle.
-3. **Forest recovery** — a full clean-room forest rebuild. The "nuclear option." Multiple Sunburst victims chose this — including, reportedly, the US Treasury OFAC unit (Reuters, January 2021).
+2. **Tier-0 rebuild**, rebuild DCs from clean OS, rotate **every** privileged credential (Domain Admins, Enterprise Admins, krbtgt, service accounts), audit AdminSDHolder for unexpected ACEs, and re-baseline AD ACL state via tools like Bloodhound + PingCastle.
+3. **Forest recovery** a full clean-room forest rebuild. The "nuclear option." Multiple Sunburst victims chose this including, reportedly, the US Treasury OFAC unit (Reuters, January 2021).
 
 **Outcome.** Of the ~9 federal agencies confirmed compromised, three did the krbtgt double-rotation only (option 1) and re-detected adversary activity within months. Two did the full Tier-0 rebuild and recovered cleanly. CISA and the NSA later published joint guidance recommending **option 2 minimum** for any confirmed Sunburst victim, and adding mandatory deployment of: (a) **Microsoft LAPS** for local admin password rotation, (b) **Protected Users group** for human admins, (c) **AdminSDHolder ACL hardening**, and (d) **PAW** (Privileged Access Workstations) on a separate physical or virtual network.
 
@@ -470,7 +470,7 @@ Add-ADFineGrainedPasswordPolicySubject -Identity "Admin-PSO" `
 - *AdminSDHolder* → the container whose ACL is hourly applied to all "protected groups" (Domain Admins, Schema Admins, etc.) by the **SDProp** task; an unexpected ACE here is one of the highest-value persistence techniques.
 - *PAW* → an admin workstation that is itself a Tier-0 asset (no internet browsing, no email, no untrusted code).
 
-The exam will phrase this as scenario: "A security team detects unusual Kerberos tickets being created for the krbtgt account. What single action invalidates all forged tickets?" The answer is **rotate the krbtgt password twice**. That single fact is worth several question points — and the Sunburst case study explains *why* it matters.
+The exam will phrase this as scenario: "A security team detects unusual Kerberos tickets being created for the krbtgt account. What single action invalidates all forged tickets?" The answer is **rotate the krbtgt password twice**. That single fact is worth several question points, and the Sunburst case study explains *why* it matters.
 
 **Discussion (Socratic).**
 - **Q1.** Build the case for and against **option 3 (full forest recovery)** for a 6,000-seat regulated enterprise with confirmed Sunburst lateral movement. What is the *real* business cost of a forest rebuild (downtime, broken application identities, broken trusts), versus the *measurable risk* of a Tier-0 rebuild missing one ACL?
@@ -484,7 +484,7 @@ The exam will phrase this as scenario: "A security team detects unusual Kerberos
 | Trap | Reality |
 |------|---------|
 | "OUs are security boundaries" | ❌ OUs are delegation + GPO targeting boundaries; only forests (and domains, to a lesser extent) are security boundaries |
-| "After seizing a FSMO role, the original DC can rejoin" | ❌ Never — metadata-clean and re-promote |
+| "After seizing a FSMO role, the original DC can rejoin" | ❌ Never, metadata-clean and re-promote |
 | "Block Inheritance always wins" | ❌ Enforced beats Block Inheritance; higher-scope Enforced beats lower-scope Enforced |
 | "Tombstone lifetime = 60 days" | ❌ 180 days since Server 2003 SP1 (and matches Recycle Bin deleted object lifetime) |
 | "RODC caches all passwords" | ❌ Only accounts explicitly in the Allowed RODC Password Replication Group |
@@ -509,14 +509,14 @@ The exam will phrase this as scenario: "A security team detects unusual Kerberos
 | **RID Master** | Allocates RIDs to DCs |
 | **Site** | Network segment for replication & client affinity |
 | **Site Link** | The replication path between two sites (cost + interval) |
-| **KCC** | Knowledge Consistency Checker — auto-builds the replication topology |
+| **KCC** | Knowledge Consistency Checker, auto-builds the replication topology |
 | **GPO** | Group Policy Object |
 | **LSDOU** | Local → Site → Domain → OU GPO precedence |
 | **RODC** | Read-Only Domain Controller |
 | **gMSA** | Group Managed Service Account |
 | **FGPP / PSO** | Fine-Grained Password Policy / Password Settings Object |
 | **AdminSDHolder** | Container whose ACL is hourly applied to protected groups |
-| **Tombstone lifetime** | 180 days — how long deleted objects persist before garbage collection |
+| **Tombstone lifetime** | 180 days, how long deleted objects persist before garbage collection |
 | **krbtgt** | The hidden account whose hash signs all Kerberos TGTs |
 
 ---
@@ -531,9 +531,9 @@ You now know:
 - 🌐 Sites, site links, replication intervals (15 sec intra / 180 min inter), and KCC
 - 📋 GPO precedence (LSDOU), inheritance modifiers (Block + Enforced + Link Order), and refresh intervals
 - 🏛️ OUs as delegation containers and how to delegate without granting Domain Admin
-- ♻️ AD Recycle Bin — enable once, 180-day window, requires 2008 R2 functional level
-- 🏚️ RODCs — read-only, selective caching, role separation
-- 🪪 gMSAs — the modern service-account standard
+- ♻️ AD Recycle Bin, enable once, 180-day window, requires 2008 R2 functional level
+- 🏚️ RODCs, read-only, selective caching, role separation
+- 🪪 gMSAs, the modern service-account standard
 - 🛡️ Fine-Grained Password Policies via PSOs
 - 🚨 The 10 most common exam traps in this domain
 
@@ -547,16 +547,16 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 2 plugs your on-prem AD into Microsoft Entra ID for cloud-based services (Conditional Access, MFA, app SSO). Module 4's file servers rely on AD security groups for share permissions. Module 5's Hyper-V live migration uses Kerberos against your DCs. Module 6's Azure Arc onboarding can target every AD-joined server you have.
-> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra ID independently — it's the cloud-side counterpart to this module. [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the IAM principles behind AD's design.
+> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra ID independently, it's the cloud-side counterpart to this module. [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) covers the IAM principles behind AD's design.
 > - Practice: Practice Exam 1 has 9 questions on AD; Practice Exam 2 has 4 (hybrid integration); Final Mock has a case study spanning AD + Entra Connect + RODC.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Forest design for a hospital network.** A 12-hospital health system wants one forest for clinical IT, but the radiology PACS vendor demands their own forest for HIPAA isolation. Defend the single-forest-with-FGPP approach vs the dual-forest-with-forest-trust approach. Which is genuinely safer once you account for staff turnover, Selective Authentication overhead, and the cost of a future merger?
 2. **PDC Emulator placement.** A 4-site forest with 2 DCs per site needs to decide where to put the PDC Emulator. Argue the trade-off between "closest to the most admins" (for GPO editing latency), "closest to the most users" (for password update latency), and "in the most physically secure site" (for crisis containment). When does each consideration win?
-3. **OU design — depth vs breadth.** Two valid OU designs exist for a 5,000-user company: a flat "by-department" structure (Marketing, Sales, Engineering, ...) or a nested "geo-then-department" structure (US/Sales, US/Marketing, EU/Sales, ...). Which scales better for GPO management, and how does Block Inheritance + Enforced reshape your answer when both regions have a "company-wide screensaver" policy at the root?
+3. **OU design, depth vs breadth.** Two valid OU designs exist for a 5,000-user company: a flat "by-department" structure (Marketing, Sales, Engineering, ...) or a nested "geo-then-department" structure (US/Sales, US/Marketing, EU/Sales, ...). Which scales better for GPO management, and how does Block Inheritance + Enforced reshape your answer when both regions have a "company-wide screensaver" policy at the root?
 4. **gMSA migration friction.** A 200-server SQL estate uses standard user service accounts ("svc_sql_prod"). The 2-year project to migrate them all to gMSAs keeps stalling because each migration requires application owner sign-off. Build the executive business case: what is the *measurable* security and operational improvement, and what's the strongest counter-argument from an application owner? (Hint: SQL Server's `RECONFIGURE`-needing changes are non-trivial.)
 5. **RODC's relevance in 2026.** With SD-WAN, MPLS-on-everything, and most branches on 100+ Mbps links, the original "branch office with bad WAN" rationale for RODCs is weaker than it was in 2008. Build the case that RODCs are now primarily a **security** play (limit blast radius of branch compromise) rather than a **performance** play, and argue when *not* deploying an RODC at a remote site is the right call.
 
@@ -564,11 +564,11 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Microsoft Learn — AD DS overview](https://learn.microsoft.com/windows-server/identity/ad-ds/ad-ds-getting-started)
+- 📖 [Microsoft Learn, AD DS overview](https://learn.microsoft.com/windows-server/identity/ad-ds/ad-ds-getting-started)
 - 📖 [Best Practices for Securing Active Directory (Microsoft, 2025 revision)](https://learn.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
-- 📖 Microsoft, *Recovering from Compromised Identity Infrastructure* (MSRC, January 2021) — the canonical Sunburst response paper
+- 📖 Microsoft, *Recovering from Compromised Identity Infrastructure* (MSRC, January 2021), the canonical Sunburst response paper
 - 📖 [Microsoft Tier 0/1/2 administrative model](https://learn.microsoft.com/security/privileged-access-workstations/privileged-access-access-model)
-- 📖 Joe Richards, *Active Directory Cookbook* (4th ed., O'Reilly, 2013) — still the most cited reference text; cmdlets have moved on but design principles haven't
-- 📖 Brian Desmond et al., *Active Directory: Designing, Deploying, and Running Active Directory* (5th ed., O'Reilly, 2013) — companion deep-dive
-- 📖 [Sean Metcalf — adsecurity.org](https://adsecurity.org/) — long-running AD-security-focused blog; the practical companion to Microsoft's docs
-- 📖 NIST SP 800-12 Rev 1 (2017) — for the broader IAM principles AD implements
+- 📖 Joe Richards, *Active Directory Cookbook* (4th ed., O'Reilly, 2013), still the most cited reference text; cmdlets have moved on but design principles haven't
+- 📖 Brian Desmond et al., *Active Directory: Designing, Deploying, and Running Active Directory* (5th ed., O'Reilly, 2013), companion deep-dive
+- 📖 [Sean Metcalf adsecurity.org](https://adsecurity.org/) long-running AD-security-focused blog; the practical companion to Microsoft's docs
+- 📖 NIST SP 800-12 Rev 1 (2017), for the broader IAM principles AD implements

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AWS AI Practitioner (AIF-C01 Style) — All Domains
+# 🧪 Practice Exam 2 AWS AI Practitioner (AIF-C01 Style) All Domains
 
 > **Conditions:** Set a 90-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 35/50 (70%)
@@ -96,7 +96,7 @@ D. Prompting → RAG → Fine-tuning → Continued pre-training
 A. Use RAG to enforce a specific JSON output format
 B. Use fine-tuning whenever new data appears
 C. Use RAG to access your fresh / private data; use fine-tuning to enforce style / format / niche behaviors
-D. Use neither — only prompt engineering works
+D. Use neither, only prompt engineering works
 
 ### 16. Which Bedrock feature returns BOTH retrieved chunks AND the LLM-generated answer with citations in one call?
 A. RetrieveAndGenerate
@@ -104,7 +104,7 @@ B. CreateAgent
 C. InvokeModel
 D. ApplyGuardrail
 
-### 17. A team wants their LLM to look up an order in Salesforce, then create a Zendesk ticket — all in one conversation. The BEST pattern is:
+### 17. A team wants their LLM to look up an order in Salesforce, then create a Zendesk ticket, all in one conversation. The BEST pattern is:
 A. Direct InvokeModel calls only
 B. Amazon Polly + Amazon Translate
 C. Bedrock Agent with two action groups (Salesforce + Zendesk)
@@ -179,7 +179,7 @@ D. Veracity
 ### 29. To FILTER PII in real-time on Bedrock chatbot inputs and outputs, use:
 A. AWS Macie
 B. AWS Config
-C. Bedrock Guardrails — Sensitive Information filter
+C. Bedrock Guardrails, Sensitive Information filter
 D. AWS Artifact
 
 ### 30. To DISCOVER PII in S3 buckets BEFORE ingesting into a Knowledge Base, use:
@@ -329,7 +329,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 ## Detailed answer rationales
 
-**Q1. Answer: C.** Underfitting. Low accuracy on *both* training and test means the model is too simple to capture the pattern — that's underfitting (high bias). Overfitting (A) shows a *gap* between training and test. Data leakage (B) shows artificially inflated test scores. Drift (D) is about distribution shift in production over time. **Exam-takeaway:** train ≈ test, both low → underfitting.
+**Q1. Answer: C.** Underfitting. Low accuracy on *both* training and test means the model is too simple to capture the pattern, that's underfitting (high bias). Overfitting (A) shows a *gap* between training and test. Data leakage (B) shows artificially inflated test scores. Drift (D) is about distribution shift in production over time. **Exam-takeaway:** train ≈ test, both low → underfitting.
 
 **Q2. Answer: C.** Unsupervised clustering. "Without predefined categories" is the give-away for unsupervised; grouping is clustering. Classification (A) and regression (B) need labels. Reinforcement learning (D) needs rewards. **Exam-takeaway:** no labels + grouping → clustering.
 
@@ -339,7 +339,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 **Q5. Answer: B.** Central online + offline store for reusable ML features. Feature Store's dual-store design eliminates train/serve skew. HPO (A) is Automatic Model Tuning. Container hosting (C) is ECR. Vector database (D) is something else (OpenSearch, Aurora pgvector, etc.). **Exam-takeaway:** Feature Store = online + offline reusable features.
 
-**Q6. Answer: A.** Private workforce (your own staff). Medical confidentiality requires vetted, HIPAA-cleared labelers — your own staff. Mechanical Turk (B) is public; vendor (C) is often more expensive and slower than your own employees for sensitive data; social-media crowdsource (D) is a non-option. **Exam-takeaway:** confidential medical labeling → private workforce.
+**Q6. Answer: A.** Private workforce (your own staff). Medical confidentiality requires vetted, HIPAA-cleared labelers, your own staff. Mechanical Turk (B) is public; vendor (C) is often more expensive and slower than your own employees for sensitive data; social-media crowdsource (D) is a non-option. **Exam-takeaway:** confidential medical labeling → private workforce.
 
 **Q7. Answer: A.** Predicting next month's sales using past labeled data. Labels exist → supervised. Anomaly detection on unlabeled data (B) is unsupervised; grouping without labels (C) is also unsupervised; RL (D) uses rewards. **Exam-takeaway:** labels + predict → supervised.
 
@@ -347,7 +347,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 **Q9. Answer: B.** RAG with real case-law corpus + Guardrails contextual grounding. Made-up case law = hallucination; the canonical fix is RAG + grounding. Higher temperature (A) makes it worse; smaller model (C) doesn't fix hallucinations; disabling system prompts (D) is the opposite of the right move. **Exam-takeaway:** hallucinations → RAG + grounding.
 
-**Q10. Answer: A.** Detect dataset class imbalance for bias. Guardrails handle PII, denied topics, content filters, grounding — *not* bias detection (which is **SageMaker Clarify**). B, C, D are all real Guardrails capabilities. **Exam-takeaway:** Guardrails = safety/PII/content; Clarify = bias.
+**Q10. Answer: A.** Detect dataset class imbalance for bias. Guardrails handle PII, denied topics, content filters, grounding, *not* bias detection (which is **SageMaker Clarify**). B, C, D are all real Guardrails capabilities. **Exam-takeaway:** Guardrails = safety/PII/content; Clarify = bias.
 
 **Q11. Answer: A.** Bias detection + explainability (SHAP). Filtering PII (B) is Guardrails; speech-to-text (C) is Transcribe; image generation (D) is Stability/Titan/Nova. **Exam-takeaway:** Clarify = bias + explainability.
 
@@ -355,7 +355,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 **Q13. Answer: D.** AWS AI Service Cards. AWS publishes these for Rekognition, Textract, Comprehend, Titan, Q, and similar AWS AI services. Model Cards (A) are *customer-authored*. CloudTrail (B) logs API calls. Artifact (C) hosts compliance reports. **Exam-takeaway:** AWS service docs → AI Service Cards.
 
-**Q14. Answer: D.** Prompting → RAG → Fine-tuning → Continued pre-training. The canonical customization-cost ladder. **Exam-takeaway:** memorize this ordering — it's tested verbatim.
+**Q14. Answer: D.** Prompting → RAG → Fine-tuning → Continued pre-training. The canonical customization-cost ladder. **Exam-takeaway:** memorize this ordering, it's tested verbatim.
 
 **Q15. Answer: C.** Use RAG to access fresh/private data; fine-tuning to enforce style/format/niche behaviors. The exam's most-quoted heuristic. **Exam-takeaway:** RAG for facts, fine-tuning for behaviors.
 
@@ -363,13 +363,13 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 **Q17. Answer: C.** Bedrock Agent with two action groups (Salesforce + Zendesk). Multi-step API orchestration is the Agent use case. Direct InvokeModel (A) doesn't call APIs. Polly + Translate (B) is unrelated. Personalize (D) is recommendations. **Exam-takeaway:** multi-step API orchestration → Bedrock Agent + action groups.
 
-**Q18. Answer: C.** Hidden inside content the LLM ingests (e.g., a PDF / web page). Indirect injection lives in the *data* the LLM reads — most dangerous in RAG corpora. Admin typing (A) is direct injection. TLS certs (B) and CloudTrail (D) are unrelated. **Exam-takeaway:** indirect = via ingested content.
+**Q18. Answer: C.** Hidden inside content the LLM ingests (e.g., a PDF / web page). Indirect injection lives in the *data* the LLM reads, most dangerous in RAG corpora. Admin typing (A) is direct injection. TLS certs (B) and CloudTrail (D) are unrelated. **Exam-takeaway:** indirect = via ingested content.
 
 **Q19. Answer: D.** Amazon OpenSearch Serverless. The default Bedrock KB vector store. DynamoDB (A), S3 (B), Redshift (C) are not supported KB vector stores. **Exam-takeaway:** Bedrock KB default → OpenSearch Serverless.
 
 **Q20. Answer: D.** Hybrid search (semantic + keyword). Exact IDs are semantic-search blind spots; hybrid fixes it. Temperature (A) and smaller embedding (B) are unrelated; fine-tuning (C) doesn't solve retrieval. **Exam-takeaway:** exact IDs → hybrid search.
 
-**Q21. Answer: D.** DPO (Direct Preference Optimization). DPO uses preference pairs directly without explicit reward modeling — simpler than RLHF. PEFT (A) and LoRA (C) are parameter-efficient *fine-tuning*. RAG (B) is unrelated. **Exam-takeaway:** DPO = simpler RLHF alternative using preference pairs.
+**Q21. Answer: D.** DPO (Direct Preference Optimization). DPO uses preference pairs directly without explicit reward modeling, simpler than RLHF. PEFT (A) and LoRA (C) are parameter-efficient *fine-tuning*. RAG (B) is unrelated. **Exam-takeaway:** DPO = simpler RLHF alternative using preference pairs.
 
 **Q22. Answer: B.** ROUGE. Summarization metric (recall-oriented n-gram overlap). BLEU (A) is translation. R² (C) and RMSE (D) are regression metrics. **Exam-takeaway:** ROUGE = summarization.
 
@@ -385,7 +385,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 **Q28. Answer: B.** Fairness. The 80% / four-fifths rule (disparate impact threshold) is a *fairness* metric. Privacy (A), robustness (C), and veracity (D) are different pillars. **Exam-takeaway:** disparate impact lives in the Fairness pillar.
 
-**Q29. Answer: C.** Bedrock Guardrails — Sensitive Information filter. Inference-time PII filter on inputs and outputs. Macie (A) is at-rest discovery in S3. Config (B) is resource config. Artifact (D) is compliance reports. **Exam-takeaway:** runtime PII → Guardrails sensitive-info filter.
+**Q29. Answer: C.** Bedrock Guardrails, Sensitive Information filter. Inference-time PII filter on inputs and outputs. Macie (A) is at-rest discovery in S3. Config (B) is resource config. Artifact (D) is compliance reports. **Exam-takeaway:** runtime PII → Guardrails sensitive-info filter.
 
 **Q30. Answer: B.** AWS Macie. ML-powered PII *discovery* in S3 buckets. Guardrails (A) is runtime; Shield (C) is DDoS; CloudWatch Logs (D) is log storage. **Exam-takeaway:** at-rest PII in S3 → Macie.
 
@@ -419,7 +419,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 **Q45. Answer: B.** Convolutional. Convolution is an image-processing operation, not a RAG chunking strategy. Fixed-size with overlap (A), semantic (C), and sentence/paragraph (D) are all real chunking strategies. **Exam-takeaway:** chunking strategies: fixed/sentence/semantic/hierarchical/document-level.
 
-**Q46. Answer: B.** Amazon Bedrock Model Evaluation. All four eval modes — automatic, human, KB, LLM-as-judge — live here. Edge Manager (A), Snowball (C), PartyRock (D) are unrelated. **Exam-takeaway:** FM eval suite → Bedrock Model Evaluation.
+**Q46. Answer: B.** Amazon Bedrock Model Evaluation. All four eval modes automatic, human, KB, LLM-as-judge live here. Edge Manager (A), Snowball (C), PartyRock (D) are unrelated. **Exam-takeaway:** FM eval suite → Bedrock Model Evaluation.
 
 **Q47. Answer: A.** Anthropic Claude (vision-capable). Claude supports text + image natively. Polly (B) is TTS, Glue (C) is ETL, Lex (D) is chatbot. **Exam-takeaway:** Claude vision = multimodal text + image.
 
@@ -435,7 +435,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 | Score | Verdict |
 |-------|---------|
-| 45–50 | 🏆 You're ready for the Final Mock — book the exam in 1–2 weeks |
+| 45–50 | 🏆 You're ready for the Final Mock, book the exam in 1–2 weeks |
 | 35–44 | ✅ Passing. Review every wrong question and Cheat-Sheet the topics. |
 | 28–34 | ⚠️ Marginal. Spend 3+ days on the weakest 2–3 modules. |
 | < 28 | 🔁 Re-read the modules you missed; retake in 1 week. |
@@ -446,7 +446,7 @@ D. VPC interface endpoint + least-privilege IAM (resource-level) + KMS encryptio
 
 For EACH wrong answer:
 
-1. Identify the module (questions are grouped by domain — see below).
+1. Identify the module (questions are grouped by domain, see below).
 2. Re-read that module's Cheat-Sheet first; then Reading if needed.
 3. Add an Anki flashcard or write the explanation in your own words.
 4. Re-attempt the question 2–3 days later.

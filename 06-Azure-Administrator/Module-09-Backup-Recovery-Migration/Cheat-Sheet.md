@@ -44,11 +44,11 @@ GFS retention: Daily / Weekly / Monthly / Yearly · App-consistent > FS-consiste
 
 ## 🔁 ASR Concepts
 
-- **Recovery plan** — ordered failover with pre/post scripts
-- **Test failover** — isolated network, no prod impact, mandatory periodically
-- **Planned** — both regions healthy, no data loss
-- **Unplanned** — disaster, accept latest replicated point
-- **Failback** — re-replicate target → source after recovery
+- **Recovery plan**, ordered failover with pre/post scripts
+- **Test failover**, isolated network, no prod impact, mandatory periodically
+- **Planned**, both regions healthy, no data loss
+- **Unplanned**, disaster, accept latest replicated point
+- **Failback**, re-replicate target → source after recovery
 - **RPO** = data freshness target · **RTO** = downtime budget
 
 ASR sources: Azure → Azure (most common), VMware, Hyper-V, Physical.
@@ -97,9 +97,9 @@ Often **wrong**:
 
 ## ✏️ Quick Self-Check
 
-1. Backup vs ASR — which has continuous replication? ___
+1. Backup vs ASR, which has continuous replication? ___
 2. Vault redundancy that unlocks Cross-Region Restore? ___
-3. MARS supports Linux — true or false? ___
+3. MARS supports Linux, true or false? ___
 4. MUA implements via what resource? ___
 5. Three Azure Migrate phases? ___
 

@@ -1,6 +1,6 @@
 # Module 5: Fine-Tuning, PEFT & LoRA 🔧
 
-> **Why this module matters:** Most teams that *think* they need fine-tuning actually need better prompts or better retrieval. But for the cases where fine-tuning *is* the right answer, getting it wrong is expensive and slow — a wasted month, a wasted GPU budget, and a model that's worse than the base. This module is how to (a) reliably decide *when* to fine-tune, (b) pick the right method (full vs PEFT vs LoRA vs QLoRA), (c) actually do it on consumer-grade hardware, and (d) ship and serve it without breaking your inference stack.
+> **Why this module matters:** Most teams that *think* they need fine-tuning actually need better prompts or better retrieval. But for the cases where fine-tuning *is* the right answer, getting it wrong is expensive and slow, a wasted month, a wasted GPU budget, and a model that's worse than the base. This module is how to (a) reliably decide *when* to fine-tune, (b) pick the right method (full vs PEFT vs LoRA vs QLoRA), (c) actually do it on consumer-grade hardware, and (d) ship and serve it without breaking your inference stack.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–4
@@ -40,7 +40,7 @@ The simple rule, repeated by every GenAI lead at every conference:
 | **Reduce cost / latency** by distilling a large model into a small one | Fine-tune (knowledge distillation) |
 | **Add reasoning ability** to a small model | Reasoning-trace fine-tune (RFT-style) |
 | **Brand voice** / consistent style | Fine-tune is the cleanest |
-| **Privacy** — keep data off third-party APIs | Self-host + fine-tune open weights |
+| **Privacy**, keep data off third-party APIs | Self-host + fine-tune open weights |
 
 🎯 **The 80/20 of "should I fine-tune?":**
 1. Can a strong prompt with 5–10 well-chosen examples get me 80% of the way? (Usually yes.)
@@ -66,7 +66,7 @@ For 95% of teams, full fine-tuning is not the path. **Parameter-Efficient Fine-T
 
 ---
 
-## 🎯 PEFT — The Family of Methods
+## 🎯 PEFT, The Family of Methods
 
 PEFT is the umbrella term for techniques that update only a *small fraction* (often <1%) of model parameters while freezing the rest. Hugging Face's `peft` library implements them all.
 
@@ -87,7 +87,7 @@ LoRA dominates. The rest exist; you'll occasionally use one of the others.
 
 ## 🧪 LoRA in Depth (Hu et al. 2021)
 
-**The intuition.** During fine-tuning, the weight update ΔW you'd apply to a layer is *almost certainly low-rank* — the task-specific adjustments to a giant pre-trained matrix live in a small subspace. So instead of training the full ΔW (which is huge), train a low-rank approximation: `ΔW = B · A`, where `B ∈ ℝ^(d×r)` and `A ∈ ℝ^(r×d)`, with `r` (the rank) typically 8, 16, or 64.
+**The intuition.** During fine-tuning, the weight update ΔW you'd apply to a layer is *almost certainly low-rank*, the task-specific adjustments to a giant pre-trained matrix live in a small subspace. So instead of training the full ΔW (which is huge), train a low-rank approximation: `ΔW = B · A`, where `B ∈ ℝ^(d×r)` and `A ∈ ℝ^(r×d)`, with `r` (the rank) typically 8, 16, or 64.
 
 ```
 Original linear layer:         y = W · x        (W is d × d, frozen)
@@ -95,7 +95,7 @@ LoRA-augmented layer:          y = W · x + B · A · x      (B, A are trainable
                                                           (initialized so B·A = 0 at start)
 ```
 
-For a layer with `d=4096`, full fine-tuning requires updating 16M parameters. LoRA with `r=8` updates `4096·8 + 8·4096 = 65,536` parameters — a **250× reduction**.
+For a layer with `d=4096`, full fine-tuning requires updating 16M parameters. LoRA with `r=8` updates `4096·8 + 8·4096 = 65,536` parameters, a **250× reduction**.
 
 Apply LoRA to attention's Q, K, V, and output projections (most common); optionally add FFN. Each tunable matrix gets its own (A, B) pair.
 
@@ -105,20 +105,20 @@ Apply LoRA to attention's Q, K, V, and output projections (most common); optiona
 
 ### Key LoRA hyperparameters
 
-- **r (rank)** — 8, 16, 32, 64 are common. Higher = more capacity; more params; usually helps up to a domain-dependent ceiling.
-- **alpha** — a scaling factor; effective LoRA scale = `alpha / r`. Common default: `alpha = 2·r`.
-- **dropout** — 0.05–0.1 on LoRA layers helps regularization.
-- **target_modules** — which layers get LoRA. Q/V is the original recommendation; Q/K/V/O is common; "all-linear" is a modern default for capacity.
+- **r (rank)**, 8, 16, 32, 64 are common. Higher = more capacity; more params; usually helps up to a domain-dependent ceiling.
+- **alpha**, a scaling factor; effective LoRA scale = `alpha / r`. Common default: `alpha = 2·r`.
+- **dropout**, 0.05–0.1 on LoRA layers helps regularization.
+- **target_modules**, which layers get LoRA. Q/V is the original recommendation; Q/K/V/O is common; "all-linear" is a modern default for capacity.
 
 ---
 
-## 💰 QLoRA — How to Fine-Tune a 70B Model on a Single GPU (Dettmers et al. 2023)
+## 💰 QLoRA, How to Fine-Tune a 70B Model on a Single GPU (Dettmers et al. 2023)
 
 QLoRA is *the* paper that opened fine-tuning to consumer hardware. Three contributions:
 
 1. **4-bit NormalFloat (NF4) quantization** of the base model weights. Custom data type that's information-theoretically optimal for normally-distributed weights (which transformer weights approximately are after training).
-2. **Double quantization** — quantize the *quantization constants* themselves. Saves an extra 0.4 bits/param.
-3. **Paged optimizer states** — use NVIDIA's unified memory to spill optimizer state to CPU when VRAM is tight.
+2. **Double quantization**, quantize the *quantization constants* themselves. Saves an extra 0.4 bits/param.
+3. **Paged optimizer states**, use NVIDIA's unified memory to spill optimizer state to CPU when VRAM is tight.
 
 The combined trick: train a 70B model on a *single* 48GB-A100 (or even 24GB consumer cards for 7B models). The base is held in 4-bit; LoRA adapters in fp16; gradients only flow through the LoRA params.
 
@@ -158,7 +158,7 @@ QLoRA an 8B model on a 16GB consumer GPU. The whole post-2023 fine-tuning ecosys
 
 ---
 
-## 📊 Training Data — The 90% of the Effort
+## 📊 Training Data, The 90% of the Effort
 
 Garbage in, garbage model. The training set is where most fine-tunes succeed or fail.
 
@@ -189,17 +189,17 @@ LIMA (Zhou et al. 2023) showed *high-quality* 1,000-example fine-tunes can produ
 
 ### Quality bar
 
-- **Consistency** — every example should reflect the behavior you want
-- **Diversity** — cover the spectrum of inputs you expect
-- **Difficulty distribution** — include hard cases, not just easy ones
-- **No leakage** — eval set strictly disjoint from train
+- **Consistency**, every example should reflect the behavior you want
+- **Diversity**, cover the spectrum of inputs you expect
+- **Difficulty distribution**, include hard cases, not just easy ones
+- **No leakage**, eval set strictly disjoint from train
 
 ### Tools
 
-- **HuggingFace `datasets`** — load, transform, version
-- **Argilla / Labelbox** — human labeling pipelines
-- **DSPy / Weave** — programmatic dataset construction from production logs
-- **Synthetic data** — let a stronger model generate training data for a smaller one (with verification)
+- **HuggingFace `datasets`**, load, transform, version
+- **Argilla / Labelbox**, human labeling pipelines
+- **DSPy / Weave**, programmatic dataset construction from production logs
+- **Synthetic data**, let a stronger model generate training data for a smaller one (with verification)
 
 ---
 
@@ -214,7 +214,7 @@ Hugging Face's `trl` library is the standard. Unsloth is a popular 2x-faster wra
 | **SFT** (Supervised Fine-Tuning) | Minimize next-token loss on `(input, target)` pairs | `trl.SFTTrainer` |
 | **DPO** (Direct Preference Optimization) | Train on (chosen, rejected) preference pairs without a reward model | `trl.DPOTrainer` |
 | **RLHF / PPO** | Train a reward model, then RL the policy against it | `trl.PPOTrainer`; rare outside frontier labs |
-| **KTO** (Kahneman-Tversky Optimization) | Like DPO but doesn't need pairs — just thumbs-up/down labels | `trl.KTOTrainer` |
+| **KTO** (Kahneman-Tversky Optimization) | Like DPO but doesn't need pairs, just thumbs-up/down labels | `trl.KTOTrainer` |
 | **ORPO / SimPO** | Variants that combine SFT + preference learning | `trl.ORPOTrainer` |
 | **RFT / Reasoning Fine-Tuning** | Train on chain-of-thought traces; rewards correct final answers | New OpenAI method; community implementations |
 
@@ -315,17 +315,17 @@ Steps:
 6. Test inference with `transformers` and with vLLM
 7. *Bonus:* tune the same model with DPO on `argilla/distilabel-intel-orca-dpo-pairs`
 
-You'll learn the practical realities — out-of-memory errors, learning-rate sensitivity, what a healthy loss curve looks like, what overfitting looks like at LoRA scale.
+You'll learn the practical realities, out-of-memory errors, learning-rate sensitivity, what a healthy loss curve looks like, what overfitting looks like at LoRA scale.
 
 ---
 
-## 📊 Case Study — Bloomberg's BloombergGPT vs OpenAI-Fine-Tuned Approach (2024 retrospective)
+## 📊 Case Study, Bloomberg's BloombergGPT vs OpenAI-Fine-Tuned Approach (2024 retrospective)
 
 **Situation.** In March 2023, Bloomberg published *BloombergGPT*, a 50B-parameter LLM trained from scratch on their 363B-token financial corpus. It outperformed GPT-3 on financial NLP tasks and was widely cited as a vindication of "domain-specific from-scratch training."
 
 **The 2024 retrospective.** A year later, multiple teams reported that **GPT-4 with a well-engineered RAG + light fine-tuning** matched or exceeded BloombergGPT on the same Bloomberg-published benchmarks. Anthropic published a Claude 3.5 Sonnet result that exceeded BloombergGPT *zero-shot*. The cost: BloombergGPT was estimated at $5–10M to train; the RAG-plus-FT alternatives cost <$50K.
 
-**The lesson** isn't "BloombergGPT was a mistake" — it had real privacy and ops benefits. The lesson is: in 2026, **base model strength + retrieval + selective fine-tuning beats domain-specific from-scratch training** for almost everyone. The exceptions are:
+**The lesson** isn't "BloombergGPT was a mistake", it had real privacy and ops benefits. The lesson is: in 2026, **base model strength + retrieval + selective fine-tuning beats domain-specific from-scratch training** for almost everyone. The exceptions are:
 
 - Hard data-residency requirements that forbid third-party APIs
 - Truly proprietary patterns (proprietary trading signals) that you can't expose to a third party even via RAG
@@ -357,10 +357,10 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 6 — Multi-Agent Systems](../Module-06-Multi-Agent-Systems/Reading.md)
+4. ➡️ Move on: [Module 6, Multi-Agent Systems](../Module-06-Multi-Agent-Systems/Reading.md)
 
 > **Where this leads.**
-> - Module 7 covers eval — you'll evaluate the QLoRA model from your lab against the base.
+> - Module 7 covers eval, you'll evaluate the QLoRA model from your lab against the base.
 > - Module 9 covers serving the fine-tuned model with vLLM, including LoRA adapter swapping.
 
 ---
@@ -374,6 +374,6 @@ You now know:
 - 📄 Zhou et al. (2023). *LIMA: Less Is More for Alignment.*
 - 📖 [HuggingFace PEFT documentation](https://huggingface.co/docs/peft)
 - 📖 [TRL documentation](https://huggingface.co/docs/trl)
-- 📖 [Unsloth GitHub](https://github.com/unslothai/unsloth) — 2× faster QLoRA
+- 📖 [Unsloth GitHub](https://github.com/unslothai/unsloth), 2× faster QLoRA
 - 🎬 Sebastian Raschka, *LoRA from Scratch* series
 - 🎬 Tim Dettmers (QLoRA author) talks

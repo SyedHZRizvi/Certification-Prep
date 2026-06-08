@@ -7,11 +7,11 @@
 ## 📦 The 5 Fixed Anchors (MEMORIZE)
 
 ```
-1. SCOPE     — same deliverables each time
-2. PRICE     — same number, on the website
-3. PROCESS   — same steps + tools + templates
-4. TIME      — same delivery window
-5. OUTCOME   — sold by result, not labor
+1. SCOPE    , same deliverables each time
+2. PRICE    , same number, on the website
+3. PROCESS  , same steps + tools + templates
+4. TIME     , same delivery window
+5. OUTCOME  , sold by result, not labor
 ```
 
 🧠 Fail any one anchor → you're back in consulting hell.
@@ -73,14 +73,14 @@ Year 1 target: $150–$250/hr effective
 Year 2+: $300–$500/hr effective
 Target margin: 60–80%
 
-🎯 Always run the "**3x sanity check**" — try selling at 3x your gut price.
+🎯 Always run the "**3x sanity check**", try selling at 3x your gut price.
 
 ---
 
 ## 🛡️ Scope Control Rules
 
 1. Define out-of-scope in the SOW
-2. Kickoff Loom — not open-ended call
+2. Kickoff Loom, not open-ended call
 3. Templatize the deliverable
 4. Scope-change menu (separate SKU prices)
 5. ONE revision round; overflow at flat fee
@@ -145,6 +145,6 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-> ⚖️ Pricing references are 2026 market data. Not professional pricing advice — verify current rates and consult a CPA on tax/structure questions.
+> ⚖️ Pricing references are 2026 market data. Not professional pricing advice, verify current rates and consult a CPA on tax/structure questions.
 
 ➡️ [Module 3: Client Acquisition Channels](../Module-03-Client-Acquisition-Channels/Reading.md)

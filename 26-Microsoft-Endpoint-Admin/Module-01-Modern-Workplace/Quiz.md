@@ -157,7 +157,7 @@ D. A compliance policy
 
 ---
 
-### Q19. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q19. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** A device can be both Entra registered and Entra joined simultaneously.
 **S2:** A device can be Entra joined and Configuration Manager–managed simultaneously (co-managed).
@@ -198,11 +198,11 @@ D. Risk-based sign-in policies
 A. Joined to Entra ID only
 B. Joined to on-prem AD only
 C. Joined to both on-prem AD and Entra ID, with synced device objects
-D. Joined to neither — workgroup
+D. Joined to neither, workgroup
 
 ---
 
-### Q24. Yes/No — Choose Yes or No for each statement. *(Evaluate)*
+### Q24. Yes/No, Choose Yes or No for each statement. *(Evaluate)*
 
 **S1:** MAM-WE requires the device to be enrolled.
 **S2:** MAM without enrollment provides full device wipe capability.
@@ -229,7 +229,7 @@ D. Switch to Linux endpoints
 Corporate-owned + no AD dependency = cloud-only. Entra registered is BYOD. Hybrid is for orgs with active AD dependencies. AD-only is the legacy model.
 
 ### Q2: **B. MDM enrolls and manages the entire device; MAM protects data inside specific apps**
-Memorize this distinction — it underlies dozens of MD-102 questions.
+Memorize this distinction, it underlies dozens of MD-102 questions.
 
 ### Q3: **C. Verify explicitly, Least privilege, Assume breach**
 The three Zero Trust principles per Microsoft's reference architecture.
@@ -253,7 +253,7 @@ Co-management is the Microsoft term for the parallel-management bridge during mi
 Seven workload sliders: compliance, Windows Update, resource access, endpoint protection, device config, Office Click-to-Run, client apps.
 
 ### Q10: **D. Active Directory replication**
-AD replication is not a co-management workload — it's an AD subsystem entirely.
+AD replication is not a co-management workload, it's an AD subsystem entirely.
 
 ### Q11: **B. MAM with enrollment (MAM-WE)**
 Work profile = the device is enrolled but only the work container is managed. That's the MAM-WE pattern.
@@ -295,10 +295,10 @@ Network-based trust is the antithesis of Zero Trust.
 Hybrid = both. Sync is handled by Entra Connect / Cloud Sync.
 
 ### Q24: **A. Yes / No / Yes**
-MAM-WE requires enrollment (Yes). MAM-only cannot wipe a personal device — only the work data (No). APP can encrypt data inside protected apps (Yes).
+MAM-WE requires enrollment (Yes). MAM-only cannot wipe a personal device, only the work data (No). APP can encrypt data inside protected apps (Yes).
 
 ### Q25: **B. Move endpoint management to Entra joined + Intune + Conditional Access + Defender for Endpoint**
-The Maersk lesson — endpoint resilience to AD outage means decoupling endpoint management from AD.
+The Maersk lesson, endpoint resilience to AD outage means decoupling endpoint management from AD.
 
 ---
 
@@ -320,7 +320,7 @@ The Maersk lesson — endpoint resilience to AD outage means decoupling endpoint
 - 7 co-management workloads
 - "Identity is the new perimeter"
 - Compliance signal → CA enforcement flow
-- Maersk lesson — endpoint mgmt should survive AD outage
+- Maersk lesson, endpoint mgmt should survive AD outage
 
 ---
 

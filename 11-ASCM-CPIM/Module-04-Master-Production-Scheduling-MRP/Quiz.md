@@ -1,6 +1,6 @@
 # ✏️ Module 4 Quiz: Master Scheduling & MRP
 
-> **Instructions:** Answer all 28 questions WITHOUT looking at the reading. This is the heaviest exam-weight module — 8 calculation questions inside.
+> **Instructions:** Answer all 28 questions WITHOUT looking at the reading. This is the heaviest exam-weight module, 8 calculation questions inside.
 > Aim for 24/28 minimum.
 
 ---
@@ -234,13 +234,13 @@ D. Is always lot-for-lot
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. Finished goods (end items)**
-MPS plans the *anchor* level — finished goods or, in ATO, sub-assemblies in a two-level MPS.
+MPS plans the *anchor* level, finished goods or, in ATO, sub-assemblies in a two-level MPS.
 
 ### Q2: **C. Dependent demand items (components, materials)**
 MRP's job is to translate the MPS into all the components needed via the BOM.
 
 ### Q3: **B. Independent demand when sold as a spare; dependent when consumed inside a finished good**
-Both demand streams must be aggregated for the same physical item — usually via a service-parts MPS alongside the regular MPS.
+Both demand streams must be aggregated for the same physical item, usually via a service-parts MPS alongside the regular MPS.
 
 ### Q4: **B. Closer in time than the Planning Time Fence**
 DTF is the *frozen* zone closer in time. PTF is the *slushy* zone further out.
@@ -276,7 +276,7 @@ L4L minimizes inventory but is sensitive to setup cost.
 Supplier minimum constrains the choice. L4L would violate the minimum.
 
 ### Q15: **A. 0**
-Cumulative gross demand for frames over the 4 weeks = 3,200. On-hand = 1,000. Lead time = 3 weeks. In week 1, on-hand 1,000 covers week 1's 800 demand; ending on-hand = 200. The system needs releases starting in week 1 ONLY IF the net requirement minus LT offset says so. Week 1's net = 800 − 1,000 = -200 (covered). Week 2's net = 800 − 200 = 600. With LT = 3, that order must release in (2-3) = before week 0 — i.e., it's late. The standard CPIM expectation: ASSUMING starting on-hand of 1,000, planned order releases for L4L would be sized to net requirements. Looking only at the question — "planned order release in week 1?" — for the L4L rule with the data given, the release in week 1 corresponds to a receipt in week (1 + 3) = week 4. Week 4's net requirement = 800 (no on-hand left in week 4). **So the planned order RELEASE in week 1 = 800.**
+Cumulative gross demand for frames over the 4 weeks = 3,200. On-hand = 1,000. Lead time = 3 weeks. In week 1, on-hand 1,000 covers week 1's 800 demand; ending on-hand = 200. The system needs releases starting in week 1 ONLY IF the net requirement minus LT offset says so. Week 1's net = 800 − 1,000 = -200 (covered). Week 2's net = 800 − 200 = 600. With LT = 3, that order must release in (2-3) = before week 0 i.e., it's late. The standard CPIM expectation: ASSUMING starting on-hand of 1,000, planned order releases for L4L would be sized to net requirements. Looking only at the question "planned order release in week 1?", for the L4L rule with the data given, the release in week 1 corresponds to a receipt in week (1 + 3) = week 4. Week 4's net requirement = 800 (no on-hand left in week 4). **So the planned order RELEASE in week 1 = 800.**
 
 ✏️ Correction: best answer is **C. 800**. The 0 happens only if the planner already has scheduled receipts covering week 4.
 
@@ -287,7 +287,7 @@ ATP works against the current MPS as-is. CTP runs a what-if reschedule.
 Two-level MPS = modules + final assembly schedule. The signature ATO architecture.
 
 ### Q18: **B. The cumulative lead time of the longest material path**
-PTF is usually set so that *all* material has time to be ordered and arrive — i.e., cumulative LT.
+PTF is usually set so that *all* material has time to be ordered and arrive, i.e., cumulative LT.
 
 ### Q19: **D. Customer satisfaction scores**
 MRP needs MPS, BOM, inventory records, lead times, lot-sizing rules. CSAT isn't part of the calculation.
@@ -314,7 +314,7 @@ ATP = 500 (MPS) − 350 (orders) = **150**.
 This is the essence of MRP. Everything else (lot-sizing, action messages, pegging) supports this core calculation.
 
 ### Q27: **A. An order placed but not yet received**
-Open purchase order or open manufacturing order — already committed but not yet on-hand.
+Open purchase order or open manufacturing order, already committed but not yet on-hand.
 
 ### Q28: **A. Will not be moved or modified by the system automatically**
 "Firm planned order" is human-locked; MRP cannot reschedule or change quantity automatically.

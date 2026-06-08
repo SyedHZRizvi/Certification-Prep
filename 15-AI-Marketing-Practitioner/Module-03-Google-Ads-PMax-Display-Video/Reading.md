@@ -1,6 +1,6 @@
-# Module 3: Google Ads — PMax, Display & Video 🎬
+# Module 3: Google Ads, PMax, Display & Video 🎬
 
-> **Why this module matters:** Search is the bottom of the funnel. Performance Max, Display, and YouTube fill the rest. They're where most ecommerce growth happens — and most beginner mistakes get made. By the end, you can architect a PMax campaign properly and run a YouTube Ads test that doesn't bleed budget.
+> **Why this module matters:** Search is the bottom of the funnel. Performance Max, Display, and YouTube fill the rest. They're where most ecommerce growth happens, and most beginner mistakes get made. By the end, you can architect a PMax campaign properly and run a YouTube Ads test that doesn't bleed budget.
 
 ---
 
@@ -14,16 +14,16 @@ The results, shared at Shopify's Reunite Conference in 2024:
 - Conversion volume up 41% on the same budget
 - Time spent managing campaigns: down ~60%
 
-But — and this is the key — they didn't just dump everything into one PMax campaign. They built it with **discipline**: 6 carefully-themed asset groups, brand exclusions on, audience signals on every group, daily monitoring of their **Insights tab** (Google's "what PMax is doing" view), and weekly creative refresh.
+But and this is the key they didn't just dump everything into one PMax campaign. They built it with **discipline**: 6 carefully-themed asset groups, brand exclusions on, audience signals on every group, daily monitoring of their **Insights tab** (Google's "what PMax is doing" view), and weekly creative refresh.
 
-The lesson isn't "PMax is magic." It's that **PMax rewards structural discipline more than any campaign type Google has ever shipped**. Most beginners launch one PMax campaign with one asset group and watch it burn budget. Pros build asset groups the same way they used to build ad groups — and they win.
+The lesson isn't "PMax is magic." It's that **PMax rewards structural discipline more than any campaign type Google has ever shipped**. Most beginners launch one PMax campaign with one asset group and watch it burn budget. Pros build asset groups the same way they used to build ad groups, and they win.
 
 This module teaches you that discipline.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Google Ads account hierarchy and Smart Bidding — covered in [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md)
-> - The 30-conversion threshold and tCPA/tROAS — also Module 2
-> - Funnel-stage KPIs (TOFU vs BOFU) — covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
+> - Google Ads account hierarchy and Smart Bidding, covered in [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md)
+> - The 30-conversion threshold and tCPA/tROAS, also Module 2
+> - Funnel-stage KPIs (TOFU vs BOFU), covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -38,16 +38,16 @@ Performance Max is Google's **all-channels-in-one** campaign type. One campaign 
 Performance Max Campaign
 ├── Budget + Bidding strategy (campaign level)
 ├── Geo + Schedule + Language (campaign level)
-├── Brand Exclusions (campaign level — KEY)
+├── Brand Exclusions (campaign level, KEY)
 ├── Final URL Expansion (on/off)
 │
 ├── Asset Group 1: "Womens Necklaces"
 │   ├── Headlines (15)
 │   ├── Long Headlines (5)
 │   ├── Descriptions (5)
-│   ├── Images (20 — multiple aspect ratios)
+│   ├── Images (20, multiple aspect ratios)
 │   ├── Logos (1+)
-│   ├── Videos (1+ — Google auto-generates if missing)
+│   ├── Videos (1+, Google auto-generates if missing)
 │   ├── Sitelinks
 │   ├── Final URL
 │   └── Audience Signal (your hint to Google about who buys this)
@@ -58,9 +58,9 @@ Performance Max Campaign
 └── Asset Group 3: ...
 ```
 
-**The mental model:** asset groups are PMax's version of ad groups. One asset group = one theme = one set of creative + one audience signal. Don't put earrings and necklaces in the same asset group — Google's algorithm needs the thematic grouping to learn what works for each.
+**The mental model:** asset groups are PMax's version of ad groups. One asset group = one theme = one set of creative + one audience signal. Don't put earrings and necklaces in the same asset group, Google's algorithm needs the thematic grouping to learn what works for each.
 
-### Asset Group Specs (Memorize These — Exam-tested)
+### Asset Group Specs (Memorize These, Exam-tested)
 
 | Asset | Max count | Char limit | Required |
 |-------|-----------|------------|----------|
@@ -68,18 +68,18 @@ Performance Max Campaign
 | Long Headlines | 5 | 90 chars each | 1 minimum |
 | Descriptions | 5 | 90 chars each | 1 minimum |
 | Business Name | 1 | 25 chars | Yes |
-| Images | 20 | — | 1 minimum (multiple aspect ratios) |
-| Logos | 5 | — | 1 minimum |
+| Images | 20 |, | 1 minimum (multiple aspect ratios) |
+| Logos | 5 |, | 1 minimum |
 | Videos | 5 | 10+ sec | 1 recommended |
 
 **Image aspect ratios required for full reach:**
 - 1.91:1 landscape (1200×628 minimum)
 - 1:1 square (1200×1200 minimum)
-- 4:5 portrait (960×1200 minimum — for Discover, Gmail)
+- 4:5 portrait (960×1200 minimum, for Discover, Gmail)
 
 ---
 
-## 🚨 Brand Exclusions — The Single Most Important PMax Setting
+## 🚨 Brand Exclusions, The Single Most Important PMax Setting
 
 When you launch a PMax campaign, Google will (by default) bid on **your own brand keywords**. This means PMax steals credit from your dedicated brand Search campaign, and your blended CPA looks artificially great.
 
@@ -106,7 +106,7 @@ This is where beginners get confused. In PMax, you can add an **Audience Signal*
 |--------------------|------|
 | Audience = targeting (only people in the audience see ads) | Audience = signal (a HINT to the algorithm about who converts) |
 
-PMax can — and will — show your ads to people OUTSIDE your audience signal. The signal accelerates Google's learning phase. It doesn't restrict who sees your ads.
+PMax can and will show your ads to people OUTSIDE your audience signal. The signal accelerates Google's learning phase. It doesn't restrict who sees your ads.
 
 ### What To Use As Audience Signals
 
@@ -116,16 +116,16 @@ PMax can — and will — show your ads to people OUTSIDE your audience signal. 
 | **Website Visitors** (last 540 days) | Mid-strength; broad audience but real intent |
 | **Cart Abandoners** (last 30 days) | High intent; great signal for ecom |
 | **In-Market Segments** | Decent baseline; Google's classifier of "shopping for X" |
-| **Affinity Segments** | Weakest; "interested in X" — broad |
-| **Custom Segments** (keywords + URLs visited) | Build your own — paste competitor URLs |
+| **Affinity Segments** | Weakest; "interested in X", broad |
+| **Custom Segments** (keywords + URLs visited) | Build your own, paste competitor URLs |
 
 🎯 **Best practice:** Combine 2–3 signals per asset group. Customer Match + Website Visitors + In-Market Segment is a strong default combo.
 
 ---
 
-## 🖼️ Display Network & DV360 — Brief Comparison
+## 🖼️ Display Network & DV360, Brief Comparison
 
-**Google Display Network (GDN)** is the older banner-ad network running on 2M+ websites + apps + Gmail. Standalone Display campaigns are increasingly rare — PMax has absorbed most Display inventory.
+**Google Display Network (GDN)** is the older banner-ad network running on 2M+ websites + apps + Gmail. Standalone Display campaigns are increasingly rare, PMax has absorbed most Display inventory.
 
 **DV360 (Display & Video 360)** is Google's enterprise programmatic platform. It's a separate product (part of Google Marketing Platform), not Google Ads.
 
@@ -142,7 +142,7 @@ For most practitioners: stick with PMax + standalone Display only when you need 
 
 ---
 
-## 📺 YouTube Ads — The Three Formats That Matter
+## 📺 YouTube Ads, The Three Formats That Matter
 
 YouTube is the second-largest search engine in the world. Google offers three main ad formats. Know each.
 
@@ -153,17 +153,17 @@ YouTube is the second-largest search engine in the world. Google offers three ma
 | Where it plays | Before/during/after YouTube videos | Before YouTube videos |
 | Length | 5+ seconds (typically 15s–3min) | 15 seconds max |
 | Skippable after | 5 seconds | Never |
-| Pricing model | CPV (cost-per-view) — counted only if viewed ≥ 30 sec OR full play | CPM (you pay for impressions) |
+| Pricing model | CPV (cost-per-view), counted only if viewed ≥ 30 sec OR full play | CPM (you pay for impressions) |
 | Best for | Mid-funnel storytelling | High-frequency reminders, brand campaigns |
 
 🎯 **Exam tip:** For skippable in-stream, you DON'T pay if the viewer skips before 30 seconds. This is constantly tested.
 
 ### 2. YouTube Shorts Ads
 
-Vertical, full-screen, 6–60 sec, run between organic Shorts in users' feeds. Pricing is CPM. As of 2026, Shorts gets ~70 billion daily views — making it Meta Reels' real competitor.
+Vertical, full-screen, 6–60 sec, run between organic Shorts in users' feeds. Pricing is CPM. As of 2026, Shorts gets ~70 billion daily views, making it Meta Reels' real competitor.
 
 **Creative rules for Shorts:**
-- Hook in the first 1 second (not 3 — Shorts viewers scroll faster)
+- Hook in the first 1 second (not 3, Shorts viewers scroll faster)
 - Vertical 9:16 only
 - Captions burned in (most viewers watch muted)
 - Pattern interrupts every 2–3 seconds
@@ -172,7 +172,7 @@ Vertical, full-screen, 6–60 sec, run between organic Shorts in users' feeds. P
 
 Show up on YouTube's homepage, search results, and as suggested videos. Users opt in by clicking. Pricing is CPC (you pay only when they click to watch).
 
-**Best for:** Mid/upper-funnel discovery. You're not interrupting — you're appearing as an option.
+**Best for:** Mid/upper-funnel discovery. You're not interrupting, you're appearing as an option.
 
 ---
 
@@ -197,13 +197,13 @@ Open with one of these in the first 3 seconds:
 ### The Hook → Demonstrate → CTA Structure (for any short)
 
 ```
-Seconds 0–3:    HOOK — pattern interrupt + main claim
-Seconds 3–10:   DEMONSTRATE — product in action, problem solved
-Seconds 10–25:  PROOF — review snippet, stat, testimonial
-Seconds 25–30:  CTA — "Tap below — free trial" + URL overlay
+Seconds 0–3:    HOOK, pattern interrupt + main claim
+Seconds 3–10:   DEMONSTRATE, product in action, problem solved
+Seconds 10–25:  PROOF, review snippet, stat, testimonial
+Seconds 25–30:  CTA, "Tap below, free trial" + URL overlay
 ```
 
-This isn't a rigid script — but tested across 1,000+ short-form ads (per [VidIQ's 2025 creative report](https://vidiq.com/)), shorts that follow this rough flow outperform brand-first formats by ~3x on conversion rate.
+This isn't a rigid script, but tested across 1,000+ short-form ads (per [VidIQ's 2025 creative report](https://vidiq.com/)), shorts that follow this rough flow outperform brand-first formats by ~3x on conversion rate.
 
 ---
 
@@ -224,13 +224,13 @@ Demand Gen (renamed from Discovery in 2024) is YouTube + Discover + Gmail combin
 
 ## 💰 PMax Walkthrough: $300 Test Campaign
 
-Let's build a real PMax campaign together — a DTC apparel example.
+Let's build a real PMax campaign together, a DTC apparel example.
 
 **Brand:** "Sunday Studio" (a fictional but realistic Pilates apparel brand)
 **Budget:** $300/month
 **Goal:** Drive online purchases at tROAS = 3.5x
 
-### Step 1 — Prerequisites (Don't Skip)
+### Step 1, Prerequisites (Don't Skip)
 
 ```
 ☐ Merchant Center linked to Google Ads
@@ -240,7 +240,7 @@ Let's build a real PMax campaign together — a DTC apparel example.
 ☐ Brand exclusion list prepared
 ```
 
-### Step 2 — Campaign Settings
+### Step 2, Campaign Settings
 
 | Setting | Value | Why |
 |---------|-------|-----|
@@ -251,14 +251,14 @@ Let's build a real PMax campaign together — a DTC apparel example.
 | Networks | All on (PMax default) | This is the point of PMax |
 | Geo | Top 5 US markets only | Test before scaling |
 | Final URL Expansion | OFF initially | Prevents Google from sending traffic to random pages |
-| Brand Exclusions | "Sunday Studio" + 8 variants | Critical — prevent brand cannibalization |
+| Brand Exclusions | "Sunday Studio" + 8 variants | Critical, prevent brand cannibalization |
 
-### Step 3 — Asset Group 1: "Womens Pilates Tops"
+### Step 3, Asset Group 1: "Womens Pilates Tops"
 
 ```
 HEADLINES (15):
 1. Pilates Tops Designed To Move
-2. Womens Pilates Tops — Sunday Studio
+2. Womens Pilates Tops, Sunday Studio
 3. Soft, Strong, Sweat-Wicking
 4. Made For Reformer + Mat
 5. Pilates Tops From $48
@@ -269,20 +269,20 @@ HEADLINES (15):
 10. Worth Every Reformer
 11. Pilates Apparel That Lasts
 12. The Sunday Studio Pilates Top
-13. Pilates Top Drop — New Colors
+13. Pilates Top Drop, New Colors
 14. From Class to Coffee
 15. Built For Real Movement
 
 LONG HEADLINES (5):
-1. The Pilates Top Designed to Move With You — Soft, Strong, Sweat-Wicking
+1. The Pilates Top Designed to Move With You, Soft, Strong, Sweat-Wicking
 2. Womens Pilates Tops Made in LA · Free Shipping Over $80
-3. Built for Reformer and Mat — Loved by 25,000 Pilates Studios
-4. The Pilates Top That Stays Put — Spring Drop Now Live
-5. Sunday Studio Pilates Tops — From $48 With Free Returns
+3. Built for Reformer and Mat, Loved by 25,000 Pilates Studios
+4. The Pilates Top That Stays Put, Spring Drop Now Live
+5. Sunday Studio Pilates Tops, From $48 With Free Returns
 
 DESCRIPTIONS (5):
 1. Soft, strong, sweat-wicking Pilates tops made in Los Angeles. Free shipping over $80. Free returns.
-2. Pilates apparel designed for real movement — from reformer to mat to coffee. Shop the spring drop.
+2. Pilates apparel designed for real movement, from reformer to mat to coffee. Shop the spring drop.
 3. The Pilates top loved by 25,000 studios. Made in LA. Wear-it-once money-back guarantee.
 4. Womens Pilates tops from $48. New spring colors live now. Free shipping + free returns.
 5. The Pilates top that doesn't ride up. Designed by movement instructors. Made in LA.
@@ -300,7 +300,7 @@ AUDIENCE SIGNAL:
 - Custom Segment: searches for "pilates clothing", "reformer apparel"
 ```
 
-### Step 4 — Asset Groups 2, 3, 4
+### Step 4, Asset Groups 2, 3, 4
 
 Same template, different themes:
 
@@ -308,16 +308,16 @@ Same template, different themes:
 - AG 3: "Pilates Accessories" (mats, towels)
 - AG 4: "Mens Pilates Apparel"
 
-Don't bundle them together — Google's algorithm needs the thematic separation.
+Don't bundle them together, Google's algorithm needs the thematic separation.
 
-### Step 5 — Launch + Optimization Cadence
+### Step 5, Launch + Optimization Cadence
 
 | Week | Action |
 |------|--------|
 | Week 1 | Don't touch. Smart Bidding learns. Daily check: spend pacing, no broken URLs, no disapproved assets. |
 | Week 2 | Open the **Insights** tab. Read which search themes Google found. Add any irrelevant themes to brand exclusions or campaign-level negatives. |
 | Week 3 | Switch from Max Conv Value (no target) to **tROAS 3.5**. Add 5 fresh creative assets. |
-| Week 4 | Pull the **Asset Group performance report**. Pause assets rated "Low" — they're dragging the algorithm. Replace with new variants. |
+| Week 4 | Pull the **Asset Group performance report**. Pause assets rated "Low", they're dragging the algorithm. Replace with new variants. |
 | Ongoing | Weekly: refresh 20% of creative; review Insights tab; rotate audience signals. |
 
 🎯 **Exam tip:** PMax has fewer reports than Search. The two reports you MUST know: **Insights tab** (Google's view of what's working) and **Asset Group performance** (which assets are rated Best/Good/Low).
@@ -342,7 +342,7 @@ Don't bundle them together — Google's algorithm needs the thematic separation.
 
 **Goal:** Drive cold-traffic awareness for the same Sunday Studio brand. Budget: $100 over 30 days.
 
-### Step 1 — Setup
+### Step 1, Setup
 
 ```
 Campaign Type: Video (NOT PMax)
@@ -353,32 +353,32 @@ Geo: 5 top US markets
 Networks: YouTube videos + YouTube partner
 ```
 
-### Step 2 — Creative
+### Step 2, Creative
 
 Make TWO 15-second videos. Different hooks. Same brand reveal at the end.
 
 ```
-Video A — Question Hook:
+Video A, Question Hook:
 0:00 "Did your last Pilates top ride up before reformer 2?"
 0:03 [Cut to product, in motion on a reformer]
 0:10 "Sunday Studio. Designed to stay put."
 0:13 [Brand logo + URL]
 
-Video B — Demo Hook:
+Video B, Demo Hook:
 0:00 [Extreme close-up of fabric, hands stretching it]
 0:03 "This is what real Pilates apparel looks like."
 0:10 [Quick cuts: 3 different bodies wearing it]
 0:13 [Brand logo + URL]
 ```
 
-### Step 3 — Targeting
+### Step 3, Targeting
 
 - **Custom Audience**: people who searched "Pilates clothing", "lululemon alternative", "reformer apparel" in the last 30 days
 - **In-Market**: Apparel & Accessories > Activewear
 - **Topics**: Pilates, Yoga, Fitness Apparel
 - **Placements (optional)**: specific Pilates YouTube channels you want to be in front of
 
-### Step 4 — Measurement
+### Step 4, Measurement
 
 Don't measure YouTube Ads on direct conversion in the first 30 days. Measure:
 
@@ -404,17 +404,17 @@ The lesson: in 2026, **production value < authenticity**. A $500 phone-shot UGC 
 
 | Term | Definition |
 |------|------------|
-| **PMax** | Performance Max — all-channel Google Ads campaign type |
+| **PMax** | Performance Max, all-channel Google Ads campaign type |
 | **Asset Group** | PMax's equivalent of an ad group; one theme of creative + signal |
 | **Audience Signal** | A HINT to PMax's algorithm about who converts (NOT a targeting restriction) |
 | **Brand Exclusions** | A list of brand terms PMax should NOT bid on |
 | **Final URL Expansion** | A setting that lets Google send traffic to ANY page on your domain |
-| **DV360** | Display & Video 360 — Google's enterprise programmatic platform |
-| **GDN** | Google Display Network — the 2M+ site banner-ad network |
+| **DV360** | Display & Video 360, Google's enterprise programmatic platform |
+| **GDN** | Google Display Network, the 2M+ site banner-ad network |
 | **In-Stream Ad** | YouTube ad that plays before/during/after a video |
 | **Shorts Ad** | Vertical YouTube ad in the Shorts feed (6–60 sec) |
 | **In-Feed Ad** | YouTube ad on homepage / search results; user opts in by clicking |
-| **CPV** | Cost Per View (YouTube — counts at 30 sec viewed or full play) |
+| **CPV** | Cost Per View (YouTube, counts at 30 sec viewed or full play) |
 | **CPM** | Cost Per Mille (1,000 impressions) |
 | **Demand Gen** | YouTube + Discover + Gmail campaign (renamed from Discovery) |
 | **Custom Segment** | Audience built from custom keywords + URLs the user searched/visited |
@@ -444,14 +444,14 @@ You now know:
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
-Use these to test your reasoning. Each prompt is open-ended — argue from the frameworks in this module.
+Use these to test your reasoning. Each prompt is open-ended, argue from the frameworks in this module.
 
 1. Mejuri consolidated 8 campaigns into ONE PMax and CAC fell from $52 to $34. A friend's brand is at 12 campaigns with CAC at $40 and stable. Build the case for AND against consolidating into PMax. What evidence would tip your decision?
-2. Audience signals are a "hint, not a target." Defend the case that this is more powerful than hard targeting in 2026. Then defend the opposite — that the loss of control is a real risk for an enterprise brand-safety review. Which would you bring to a CMO?
+2. Audience signals are a "hint, not a target." Defend the case that this is more powerful than hard targeting in 2026. Then defend the opposite, that the loss of control is a real risk for an enterprise brand-safety review. Which would you bring to a CMO?
 3. PMax's "Insights tab" is your only window into where spend is going. If the tab shows 70% of spend going to a category you didn't intend (e.g., Display banners instead of Shopping), what are the three plausible root causes, and what's the right diagnostic order?
-4. The reading recommends turning Final URL Expansion OFF initially. A growth marketer argues this throws away ~15% of incremental conversions PMax would have found. Argue both sides — when is the brand-control trade-off worth it, and when isn't it?
+4. The reading recommends turning Final URL Expansion OFF initially. A growth marketer argues this throws away ~15% of incremental conversions PMax would have found. Argue both sides, when is the brand-control trade-off worth it, and when isn't it?
 5. YouTube In-Feed ads bill on CPC; In-Stream bills at 30 seconds or full play (CPV). For a DTC apparel brand launching a $5K test, which is the right primary YouTube format and why? Where does the answer flip for a B2B SaaS?
 
 ---
@@ -465,9 +465,9 @@ Use these to test your reasoning. Each prompt is open-ended — argue from the f
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Google Ads Help — Performance Max Best Practices](https://support.google.com/google-ads/answer/10724817)
-- 📖 [Google Ads Display Certification Skillshop course](https://skillshop.exceedlms.com/student/path/18127) — free, prep for Display Cert
-- 📖 [Google Ads Video Certification Skillshop course](https://skillshop.exceedlms.com/student/path/18137) — free, prep for Video Cert
-- 📖 [Mike Rhodes — Define Digital — PMax Playbook (2024 edition)](https://definedigitalacademy.com/)
-- 📖 [VidIQ Annual Creative Performance Report](https://vidiq.com/blog/) — what's working on YouTube creative
-- 📖 [Frederick Vallaeys on PMax Brand Exclusions](https://www.optmyzr.com/blog/) — Optmyzr's deep dive
+- 📖 [Google Ads Help, Performance Max Best Practices](https://support.google.com/google-ads/answer/10724817)
+- 📖 [Google Ads Display Certification Skillshop course](https://skillshop.exceedlms.com/student/path/18127), free, prep for Display Cert
+- 📖 [Google Ads Video Certification Skillshop course](https://skillshop.exceedlms.com/student/path/18137), free, prep for Video Cert
+- 📖 [Mike Rhodes Define Digital PMax Playbook (2024 edition)](https://definedigitalacademy.com/)
+- 📖 [VidIQ Annual Creative Performance Report](https://vidiq.com/blog/), what's working on YouTube creative
+- 📖 [Frederick Vallaeys on PMax Brand Exclusions](https://www.optmyzr.com/blog/), Optmyzr's deep dive

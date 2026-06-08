@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MACH + Composable Commerce — Dirk Hörig keynote</p>
+      <p class="vg-title">MACH + Composable Commerce, Dirk Hörig keynote</p>
       <p class="vg-creator">commercetools / MACH Alliance</p>
       <span class="vg-duration">⏱ 24 min · The thesis from the founder</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Shopify Hydrogen Walkthrough — Headless Storefronts</p>
+      <p class="vg-title">Shopify Hydrogen Walkthrough, Headless Storefronts</p>
       <p class="vg-creator">Shopify Devs / Theo Browne</p>
       <span class="vg-duration">⏱ 22 min · Hydrogen v2 + Oxygen edge deploy</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Adobe Commerce B2B — Quotes, Tiers, Net Terms</p>
+      <p class="vg-title">Adobe Commerce B2B, Quotes, Tiers, Net Terms</p>
       <p class="vg-creator">Adobe Experience League</p>
       <span class="vg-duration">⏱ 20 min · Enterprise B2B workflow end-to-end</span>
     </div>
@@ -51,7 +51,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Shopify B2B on Plus — Native Wholesale</p>
+      <p class="vg-title">Shopify B2B on Plus, Native Wholesale</p>
       <p class="vg-creator">Shopify Plus</p>
       <span class="vg-duration">⏱ 18 min · Company profiles + Net 30/60/90</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">EU IOSS — VAT for Non-EU Sellers</p>
+      <p class="vg-title">EU IOSS, VAT for Non-EU Sellers</p>
       <p class="vg-creator">European Commission / Avalara</p>
       <span class="vg-duration">⏱ 16 min · €150 threshold, monthly returns</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">EU Digital Services Act — DSA for Marketplaces</p>
+      <p class="vg-title">EU Digital Services Act, DSA for Marketplaces</p>
       <p class="vg-creator">European Commission / Politico EU</p>
       <span class="vg-duration">⏱ 19 min · VLOP rules effective Feb 2024</span>
     </div>
@@ -92,7 +92,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">US De Minimis Loophole — The Shein/Temu Story</p>
+      <p class="vg-title">US De Minimis Loophole, The Shein/Temu Story</p>
       <p class="vg-creator">CNBC / WSJ / Modern Retail</p>
       <span class="vg-duration">⏱ 18 min · Section 321 + 2024-2025 policy debate</span>
     </div>
@@ -115,7 +115,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">EDI 101 — 850, 856, 810 Document Types</p>
+      <p class="vg-title">EDI 101, 850, 856, 810 Document Types</p>
       <p class="vg-creator">SPS Commerce / TrueCommerce</p>
       <span class="vg-duration">⏱ 14 min · The B2B integration protocol</span>
     </div>
@@ -124,7 +124,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Eric Bandholz — Beardbrand DTC + B2B Lessons</p>
+      <p class="vg-title">Eric Bandholz, Beardbrand DTC + B2B Lessons</p>
       <p class="vg-creator">Beardbrand / My First Million</p>
       <span class="vg-duration">⏱ 28 min · DTC founder on hybrid B2B/B2C</span>
     </div>
@@ -142,7 +142,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Cross-Border B2B Podcast — Eric Kosen</p>
+      <p class="vg-title">Cross-Border B2B Podcast, Eric Kosen</p>
       <p class="vg-creator">Cross-Border B2B</p>
       <span class="vg-duration">⏱ 30 min · B2B export operators</span>
     </div>

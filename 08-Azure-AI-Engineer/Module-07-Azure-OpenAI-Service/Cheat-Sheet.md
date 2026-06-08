@@ -167,7 +167,7 @@ Fine-tune file = JSONL, one `{"messages":[...]}` per line.
 2. SKU for reserved capacity? ___
 3. RAG or fine-tune for company knowledge updates? ___
 4. Default filter threshold? ___
-5. Whisper vs TTS vs DALL-E — what does each do? ___
+5. Whisper vs TTS vs DALL-E, what does each do? ___
 
 If you can answer all 5 in 60 seconds, you own Module 7. ✅
 
@@ -190,7 +190,7 @@ Per deployment, you can set:
   - Per-category threshold (Hate / Sexual / Violence / Self-Harm)
   - Per-direction (prompt | completion) toggle
   - Prompt Shields (User Attack | Document Attack)
-  - Protected Material — Text | Code
+  - Protected Material, Text | Code
   - Groundedness Detection (where supported)
 Cannot fully disable filtering without approved exemption.
 ```

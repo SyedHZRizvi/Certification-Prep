@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-03-Tweening-Motion-Paths/Quiz/
 title: "Module 3 Quiz: Tweening & Motion Paths"
 ---
 
-# 🧠 Module 3 Quiz — Tweening & Motion Paths
+# 🧠 Module 3 Quiz, Tweening & Motion Paths
 
 ---
 
@@ -81,10 +81,10 @@ D. Bone Tween
 
 ### Q9. An animator wants a ball to appear to anticipate before bouncing upward. Using tweens, they move the ball slightly downward (frames 1–6) then rapidly upward (frames 6–14). Which easing should the second tween (frames 6–14) use?
 
-A. Ease Out (slow start, fast finish) — correct for the snap of the action
-B. Linear — constant speed through the jump
-C. Ease In (fast start, slow finish) — correct for rising motion
-D. Bounce — the ball should bounce at the peak
+A. Ease Out (slow start, fast finish), correct for the snap of the action
+B. Linear, constant speed through the jump
+C. Ease In (fast start, slow finish), correct for rising motion
+D. Bounce, the ball should bounce at the peak
 
 ---
 
@@ -128,7 +128,7 @@ D. The Shape Tween applied to the background
 
 A. Rapid upward movement
 B. Maximum velocity at that point in time
-C. No change in Y position — a hold or very slow movement
+C. No change in Y position, a hold or very slow movement
 D. A property that has been disconnected from the master easing curve
 
 ---
@@ -137,7 +137,7 @@ D. A property that has been disconnected from the master easing curve
 
 A. The last tween applied overrides the first
 B. The two tweens merge into a hybrid Tween type
-C. You cannot mix tween types on the same layer — Animate will reject the attempt or convert one type
+C. You cannot mix tween types on the same layer, Animate will reject the attempt or convert one type
 D. Both tweens play simultaneously, creating a blended motion
 
 ---
@@ -207,10 +207,10 @@ D. A NURBS curve
 
 ### Q23. For a character's head turn from left to right, which easing approach best produces a natural-looking result?
 
-A. Linear — constant speed throughout
-B. Ease In only — slow start, faster finish
-C. Ease In + Ease Out — slow start, fast middle, slow end
-D. Elastic — overshoots and bounces at the end
+A. Linear, constant speed throughout
+B. Ease In only, slow start, faster finish
+C. Ease In + Ease Out, slow start, fast middle, slow end
+D. Elastic, overshoots and bounces at the end
 
 ---
 
@@ -226,28 +226,28 @@ D. Per-property curves prevent the tween from showing on the motion path
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — Classic Tweens need two keyframes; Motion Tweens track property changes on one span.
-Q2.  C — The Motion Editor is exclusively available for Motion Tweens.
-Q3.  C — Linear easing, no holds, and uniform timing produce floaty, lifeless animation.
-Q4.  C — Steep curve section = rapid change in property = fast movement.
-Q5.  B — A hold frame is a static period giving audiences time to read a pose before next motion.
-Q6.  C — The Convert Anchor Point Tool converts between smooth bezier and sharp corner handles.
-Q7.  B — Orient to Path auto-rotates the symbol's axis to face the motion path direction.
-Q8.  C — Classic Tweens use Motion Guide layers for drawn paths.
-Q9.  A — Ease Out (fast start, slow finish) creates the snap-and-settle of an upward action.
-Q10. B — "Back Out" ease overshoots the destination and settles back into final position.
-Q11. B — Classic Tween ease slider ranges from -100 (ease in) to 100 (ease out).
-Q12. B — Per-property curves in the Motion Editor give rotation and position independent timing.
-Q13. B — The outer tween on the main timeline controls across-screen position.
-Q14. C — A flat section of the position curve = no position change = hold or very slow movement.
-Q15. C — You cannot mix tween types on the same layer; Animate will warn or convert.
-Q16. B — Cushion = slight overshoot + soft return into final pose; feels organic and weighted.
-Q17. B — The Selection Tool drags path segments to create curves directly on the Stage.
-Q18. B — The symbol's drawn facing direction must align with the registration point's orientation axis.
-Q19. C — Elastic Out creates the spring-like overshoot and oscillation of a coiling spring.
-Q20. B — Half a second at 24fps = 12 frames.
-Q21. B — A successful Classic Tween shows as an arrow on a purple/blue background in the Timeline.
-Q22. B — Motion paths in Animate are bezier curves, editable with bezier control handles.
-Q23. C — Ease In + Ease Out creates natural head-turn feel: hesitation, fast through, settle.
-Q24. A — Per-property curves give each attribute its own independent timing curve.
+Q1.  B, Classic Tweens need two keyframes; Motion Tweens track property changes on one span.
+Q2.  C, The Motion Editor is exclusively available for Motion Tweens.
+Q3.  C, Linear easing, no holds, and uniform timing produce floaty, lifeless animation.
+Q4.  C, Steep curve section = rapid change in property = fast movement.
+Q5.  B, A hold frame is a static period giving audiences time to read a pose before next motion.
+Q6.  C, The Convert Anchor Point Tool converts between smooth bezier and sharp corner handles.
+Q7.  B, Orient to Path auto-rotates the symbol's axis to face the motion path direction.
+Q8.  C, Classic Tweens use Motion Guide layers for drawn paths.
+Q9.  A, Ease Out (fast start, slow finish) creates the snap-and-settle of an upward action.
+Q10. B, "Back Out" ease overshoots the destination and settles back into final position.
+Q11. B, Classic Tween ease slider ranges from -100 (ease in) to 100 (ease out).
+Q12. B, Per-property curves in the Motion Editor give rotation and position independent timing.
+Q13. B, The outer tween on the main timeline controls across-screen position.
+Q14. C, A flat section of the position curve = no position change = hold or very slow movement.
+Q15. C, You cannot mix tween types on the same layer; Animate will warn or convert.
+Q16. B, Cushion = slight overshoot + soft return into final pose; feels organic and weighted.
+Q17. B, The Selection Tool drags path segments to create curves directly on the Stage.
+Q18. B, The symbol's drawn facing direction must align with the registration point's orientation axis.
+Q19. C, Elastic Out creates the spring-like overshoot and oscillation of a coiling spring.
+Q20. B, Half a second at 24fps = 12 frames.
+Q21. B, A successful Classic Tween shows as an arrow on a purple/blue background in the Timeline.
+Q22. B, Motion paths in Animate are bezier curves, editable with bezier control handles.
+Q23. C, Ease In + Ease Out creates natural head-turn feel: hesitation, fast through, settle.
+Q24. A, Per-property curves give each attribute its own independent timing curve.
 ```

@@ -1,19 +1,19 @@
-# Module 4: Capstone 3 — Marketing Automation Workflow ⚙️
+# Module 4: Capstone 3, Marketing Automation Workflow ⚙️
 
-> **Why this module matters:** This is the capstone that shows you think in systems, not just tactics. Hiring managers in 2026 expect marketers to build automation themselves — not file a ticket and wait for a developer. You'll build a 5+ step lead-to-customer workflow in Make.com / n8n / Zapier and ship a Loom + JSON export.
+> **Why this module matters:** This is the capstone that shows you think in systems, not just tactics. Hiring managers in 2026 expect marketers to build automation themselves, not file a ticket and wait for a developer. You'll build a 5+ step lead-to-customer workflow in Make.com / n8n / Zapier and ship a Loom + JSON export.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md) — covered earlier in this course
-> - Lead-scoring & marketing-ops basics (what an MQL/SQL is, what enrichment does) — covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
-> - Make.com / n8n / Zapier mental model (triggers → modules → outputs) — covered in [17-AI-Marketing-Analytics-Automation Modules 5–8](../../17-AI-Marketing-Entrepreneur/README.md)
+> - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
+> - Lead-scoring & marketing-ops basics (what an MQL/SQL is, what enrichment does), covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
+> - Make.com / n8n / Zapier mental model (triggers → modules → outputs), covered in [17-AI-Marketing-Analytics-Automation Modules 5–8](../../17-AI-Marketing-Entrepreneur/README.md)
 > - Webhooks and API basics (what a POST request is, what JSON looks like)
-> If any of these are shaky, pause and complete 17-AI-Marketing-Analytics-Automation Module 5 first — it's the direct prerequisite.
+> If any of these are shaky, pause and complete 17-AI-Marketing-Analytics-Automation Module 5 first, it's the direct prerequisite.
 
 ---
 
 ## 🎬 A Story: The Marketer Who Replaced A 3-Person Team
 
-Picture an agency that hires Mariana — a marketer they think is mid-level. First Monday, the CEO says: *"We get 80 leads/week from our paid social. Right now, our SDR team manually qualifies, scores, emails them. They're drowning. Can you help?"*
+Picture an agency that hires Mariana, a marketer they think is mid-level. First Monday, the CEO says: *"We get 80 leads/week from our paid social. Right now, our SDR team manually qualifies, scores, emails them. They're drowning. Can you help?"*
 
 Mariana spends Tuesday and Wednesday with the SDR team, sketching what they actually do. By Thursday she has a Make.com scenario open with 9 connected modules:
 
@@ -25,13 +25,13 @@ Typeform webhook → Clearbit enrichment → Scoring formula → Branch:
 ALL → Notion CRM mirror for visibility
 ```
 
-Friday morning she demos it. The SDR team's first reaction is suspicion. By the following Friday, they've stopped checking their inbox before noon — the workflow has already routed leads, sent emails, and booked 4 demos overnight while they slept.
+Friday morning she demos it. The SDR team's first reaction is suspicion. By the following Friday, they've stopped checking their inbox before noon, the workflow has already routed leads, sent emails, and booked 4 demos overnight while they slept.
 
 A month in, the CEO realizes Mariana didn't just save the SDR team's time. She built **leverage**. The team now handles 3x the lead volume with no new headcount.
 
 Mariana's bonus that quarter is 25%. Her next job (offered 6 months later by a referral from the CEO) is at a 60% raise.
 
-The Make.com scenario itself? A JSON file you could import in 4 minutes. But the *thinking* — what to automate, in what order, with what branching — that's what makes a senior marketer in 2026.
+The Make.com scenario itself? A JSON file you could import in 4 minutes. But the *thinking* what to automate, in what order, with what branching that's what makes a senior marketer in 2026.
 
 ---
 
@@ -39,11 +39,11 @@ The Make.com scenario itself? A JSON file you could import in 4 minutes. But the
 
 **Deliverable:** A working multi-step marketing automation workflow with at minimum 5 connected steps, hosted in your tool of choice (Make.com / n8n / Zapier / HubSpot Workflows), with:
 
-1. **A live, running scenario** — actually triggers when you submit a test form
-2. **An architecture diagram** — one page showing the flow visually (drawn in Excalidraw / Whimsical / FigJam)
+1. **A live, running scenario**, actually triggers when you submit a test form
+2. **An architecture diagram**, one page showing the flow visually (drawn in Excalidraw / Whimsical / FigJam)
 3. **A Loom walkthrough** (~7–10 min) explaining each step and why
-4. **A JSON / blueprint export** — so a recruiter or client can import and tinker
-5. **A case study writeup** — P-C-A-R-L format, published on your portfolio
+4. **A JSON / blueprint export**, so a recruiter or client can import and tinker
+5. **A case study writeup**, P-C-A-R-L format, published on your portfolio
 
 **Total time:** ~8 hours of focused work.
 
@@ -79,7 +79,7 @@ You don't need to invent this. Here's a 7-step lead-to-customer automation that'
 ```
 [1] TRIGGER: Webform submission (Tally / Typeform / Webflow form)
      ↓
-[2] ENRICH: Clearbit / Apollo / Hunter — get company size, industry
+[2] ENRICH: Clearbit / Apollo / Hunter, get company size, industry
      ↓
 [3] SCORE: Custom formula based on (industry × size × intent)
      ↓
@@ -98,7 +98,7 @@ You don't need to invent this. Here's a 7-step lead-to-customer automation that'
          └─ Log to Notion CRM
 ```
 
-That's the reference. Your version can substitute any of the boxes — the structure is the value.
+That's the reference. Your version can substitute any of the boxes, the structure is the value.
 
 ---
 
@@ -114,10 +114,10 @@ That's the reference. Your version can substitute any of the boxes — the struc
 
 The trigger is what starts the scenario. Most common for marketing automations:
 
-- **Webhook** — for custom forms (most flexible). Make.com gives you a URL; you POST to it from anywhere.
-- **Typeform — New Submission** — direct integration.
-- **Tally — New Submission** — also direct.
-- **Webflow — New Form Submission** — if subject uses Webflow.
+- **Webhook**, for custom forms (most flexible). Make.com gives you a URL; you POST to it from anywhere.
+- **Typeform New Submission** direct integration.
+- **Tally New Submission** also direct.
+- **Webflow New Form Submission** if subject uses Webflow.
 
 For this capstone, use **Webhook**. It's the most general and shows off the cleanest.
 
@@ -129,16 +129,16 @@ For this capstone, use **Webhook**. It's the most general and shows off the clea
 
 Pick one:
 
-- **Clearbit** — best for company data ($99/mo)
-- **Apollo** — alternative ($49/mo, decent free tier)
-- **Hunter.io** — email finder + verifier (free tier 25 searches/mo)
-- **People Data Labs** — alt enrichment
+- **Clearbit**, best for company data ($99/mo)
+- **Apollo**, alternative ($49/mo, decent free tier)
+- **Hunter.io**, email finder + verifier (free tier 25 searches/mo)
+- **People Data Labs**, alt enrichment
 
 For this capstone, use **Hunter.io** if budget-conscious or **Apollo** if you want richer data.
 
 1. Search modules → "Hunter" or "Apollo."
 2. Connect your account (you'll need an API key from their dashboard).
-3. Configure: "Enrich Email" or "Enrich Company" — pass in the email from the webhook.
+3. Configure: "Enrich Email" or "Enrich Company", pass in the email from the webhook.
 
 ### Step 4: Add a "set variable" or "router" for scoring
 
@@ -157,7 +157,7 @@ You can express this with Make's `if()` and `switch()` functions inside a Set Va
 
 **Option B: Router module + filters**
 
-Use the Router module — splits flow into multiple branches, each with a filter condition.
+Use the Router module, splits flow into multiple branches, each with a filter condition.
 
 For this capstone, use **Router with 3 branches** (HOT / WARM / COLD).
 
@@ -188,7 +188,7 @@ Each branch has its own modules.
 1. Save the scenario.
 2. Turn it ON.
 3. Send 3 test submissions with different "scores" (manipulate input to force HOT, WARM, COLD).
-4. Check each output destination — Slack, Klaviyo, Salesforce, Notion. Verify the data landed correctly.
+4. Check each output destination, Slack, Klaviyo, Salesforce, Notion. Verify the data landed correctly.
 
 ### Step 7: Document everything
 
@@ -208,7 +208,7 @@ If you want the "dev signal" (targeting AI / dev-tools marketing roles), n8n is 
 1. Sign up at n8n.io
 2. Spin up a cloud instance.
 
-**Option B: Self-hosted n8n (free)** — the dev-signal version
+**Option B: Self-hosted n8n (free)**, the dev-signal version
 1. Install Docker on your machine.
 2. Run: `docker run -it --rm -p 5678:5678 n8nio/n8n`
 3. Browse to localhost:5678.
@@ -219,11 +219,11 @@ For portfolio, self-hosted is the better signal. But cloud is fine if you don't 
 
 n8n uses "nodes" instead of "modules." The flow is the same:
 
-1. **Webhook node** — receives the form POST.
-2. **HTTP Request node** — calls Hunter.io API to enrich.
-3. **Function node** — JavaScript scoring logic. (This is the n8n superpower — write custom JS.)
-4. **IF node** (or **Switch node**) — branches on score.
-5. **Slack / Klaviyo / Notion nodes** — actions per branch.
+1. **Webhook node**, receives the form POST.
+2. **HTTP Request node**, calls Hunter.io API to enrich.
+3. **Function node** JavaScript scoring logic. (This is the n8n superpower write custom JS.)
+4. **IF node** (or **Switch node**), branches on score.
+5. **Slack / Klaviyo / Notion nodes**, actions per branch.
 
 Screenshot the canvas. Export the workflow as JSON (n8n's "Download" button gives you a `.json` file). This export is what you publish.
 
@@ -262,7 +262,7 @@ After your scenario works, draw it visually. This is a 1-page image you'll inclu
 
 ### Tools
 
-- **Excalidraw** (free, hand-drawn aesthetic — recommended)
+- **Excalidraw** (free, hand-drawn aesthetic, recommended)
 - **Whimsical** (free tier, polished)
 - **FigJam** (free tier, polished)
 - **Mermaid** (text-based, dev signal)
@@ -313,22 +313,22 @@ This is what gets watched. Recruiters/clients are 5x more likely to engage with 
 ### The Script Outline
 
 ```
-0:00 — Hook: "I'll show you a 7-step automation I built that takes 
+0:00, Hook: "I'll show you a 7-step automation I built that takes 
               a webform lead from submission to Salesforce + Slack 
               + Klaviyo in under 30 seconds."
 
-0:30 — Architecture diagram: walk through the diagram first, 
+0:30, Architecture diagram: walk through the diagram first, 
               then show the live scenario.
 
-2:00 — Live demo: submit a test form. Watch the scenario fire.
+2:00, Live demo: submit a test form. Watch the scenario fire.
 
-3:30 — Step by step walkthrough: open each module, show the config, 
+3:30, Step by step walkthrough: open each module, show the config, 
               explain why.
 
-6:00 — Show the JSON export. "Here's the file — you could import 
+6:00, Show the JSON export. "Here's the file, you could import 
               this into your Make / n8n in 4 minutes."
 
-7:00 — Wrap: "If I were doing this for [client type], here's what 
+7:00, Wrap: "If I were doing this for [client type], here's what 
               I'd add: [list of next-level features]."
 ```
 
@@ -384,13 +384,13 @@ Published on your portfolio.
 
 | Mistake | Fix |
 |---------|-----|
-| Built it in HubSpot only | Build in Make/n8n too — shows portability |
+| Built it in HubSpot only | Build in Make/n8n too, shows portability |
 | Linear flow with no branching | At least one router/if module |
 | 3 modules instead of 5+ | Add scoring + enrichment + branching to reach 5+ |
 | No Loom (just screenshots) | Loom is 5x more engaging than text |
-| Tested with one input | Test with HOT, WARM, COLD examples — verify all paths |
+| Tested with one input | Test with HOT, WARM, COLD examples, verify all paths |
 | Never exported the JSON | Export and link it. It's the GitHub equivalent. |
-| Diagram drawn after build only | Architecture-first thinking is more impressive — show the diagram, THEN the implementation |
+| Diagram drawn after build only | Architecture-first thinking is more impressive, show the diagram, THEN the implementation |
 | Used a real client's credentials | DON'T. Use your own test accounts. Sanitize the JSON before sharing. |
 
 ---
@@ -407,7 +407,7 @@ When exporting the JSON / blueprint, **strip these before sharing**:
 
 Make / n8n / Zapier all let you "export" with credentials swapped for placeholders. Verify the exported file is clean.
 
-**Pro tip:** Build the scenario with dummy data and dummy accounts. Pretend you're building it for "Acme Co." — that way there's nothing sensitive to scrub.
+**Pro tip:** Build the scenario with dummy data and dummy accounts. Pretend you're building it for "Acme Co.", that way there's nothing sensitive to scrub.
 
 ---
 
@@ -472,7 +472,7 @@ Pick the variation that matches your subject best. The reference scenario (lead 
 [PROBLEM]: "Their SDR team was manually qualifying ~80 leads/week. 
             Drowning. Took 6+ hours/week of their senior person's time."
 
-[APPROACH]: "Used Make.com — Tally webhook in, Hunter enrichment, 
+[APPROACH]: "Used Make.com, Tally webhook in, Hunter enrichment, 
              custom scoring formula, Router to 3 branches (Hot/Warm/Cold), 
              each with specific actions across Slack, Klaviyo, Salesforce, 
              and Notion."
@@ -481,7 +481,7 @@ Pick the variation that matches your subject best. The reference scenario (lead 
           in <30 sec. Hot leads get a Cal.com link before they close 
           the browser tab."
 
-[LESSON]: "First version had no error handling — when Hunter rate-limited, 
+[LESSON]: "First version had no error handling, when Hunter rate-limited, 
           leads disappeared. Added an error branch + retry logic in v2."
 ```
 
@@ -501,7 +501,7 @@ Pick the variation that matches your subject best. The reference scenario (lead 
 | **Scoring** | Numeric value assigned to a lead based on criteria |
 | **API key** | Secret credential to access a tool's API |
 | **OAuth** | Authentication flow for connecting accounts |
-| **Operations** | Make.com's billing unit — each module run = 1 operation |
+| **Operations** | Make.com's billing unit, each module run = 1 operation |
 | **Blueprint** | A JSON export of a Make.com scenario |
 | **Cron trigger** | Scheduled trigger (run every X minutes / hours / days) |
 
@@ -531,23 +531,23 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Make.com Academy](https://academy.make.com/) — free, official, deep
-- 📖 [n8n Documentation + Templates](https://docs.n8n.io/) — workflow library to learn from
-- 📖 [Zapier Learn](https://learn.zapier.com/) — official courses
-- 📖 [Pierre de Wulf — Marketing Engineering Newsletter](https://www.linkedin.com/in/pierredewulf/) — for AI + automation case studies
-- 📖 [Webflow + Make.com Template Library](https://www.make.com/en/templates) — see what others have built
+- 📖 [Make.com Academy](https://academy.make.com/), free, official, deep
+- 📖 [n8n Documentation + Templates](https://docs.n8n.io/), workflow library to learn from
+- 📖 [Zapier Learn](https://learn.zapier.com/), official courses
+- 📖 [Pierre de Wulf Marketing Engineering Newsletter](https://www.linkedin.com/in/pierredewulf/) for AI + automation case studies
+- 📖 [Webflow + Make.com Template Library](https://www.make.com/en/templates), see what others have built
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
 These prompts test whether you understand *why* the reference scenario looks the way it does. If you can't defend the architectural choices, the Loom won't convince anyone.
 
 1. **The reference scenario uses a Router on a numeric score (≥70 / 40–69 / <40).** A counter-design is a "tier-less" continuous-scoring model where the same actions trigger at *any* score above thresholds you tune over time. What does the discrete-router design optimize for (simplicity? communication?) and what does it sacrifice? When would you architect this differently?
 2. **The reading recommends Make.com as the default, but flags n8n (self-hosted) as the right pick if you're targeting "dev-tools / AI-engineering marketing roles."** A senior hiring manager at a B2B SaaS pushes back: *"n8n self-hosted is a maintenance burden no one will ever assign you. Make.com is the boring right answer for 95% of marketing teams."* How do you weigh portfolio signal vs operational reality? When does showing n8n hurt rather than help?
 3. **The "security & privacy gotchas" section says to strip API keys and PII before publishing JSON exports.** A pragmatic counter-argument: most students take this so seriously they never publish at all, killing the portfolio piece. What's the minimum sanitization that's actually necessary, versus the paranoid maximum? Where's the line?
-4. **The reading describes the JSON export as "the GitHub repo equivalent for marketing automation."** But unlike a GitHub repo, no one will actually *import* and run your Make.com scenario — they'd need to reconnect every credential. Is the JSON export a real signal or a vanity artifact? How would you defend its inclusion to a skeptical engineer?
-5. **The four variations (lead routing, content distribution, abandoned-cart, customer onboarding, competitor monitoring) all meet the 5+ step rule.** But for a portfolio targeting B2B SaaS roles vs DTC e-commerce roles vs agency-owner clients, the "right" variation is different. Pick a target audience and defend which variation tells the strongest story for them — and why the others would actively undersell you.
+4. **The reading describes the JSON export as "the GitHub repo equivalent for marketing automation."** But unlike a GitHub repo, no one will actually *import* and run your Make.com scenario, they'd need to reconnect every credential. Is the JSON export a real signal or a vanity artifact? How would you defend its inclusion to a skeptical engineer?
+5. **The four variations (lead routing, content distribution, abandoned-cart, customer onboarding, competitor monitoring) all meet the 5+ step rule.** But for a portfolio targeting B2B SaaS roles vs DTC e-commerce roles vs agency-owner clients, the "right" variation is different. Pick a target audience and defend which variation tells the strongest story for them, and why the others would actively undersell you.
 
 ---
 

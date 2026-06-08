@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Value Pricing — Time's Up for Hourly</p>
+      <p class="vg-title">Value Pricing, Time's Up for Hourly</p>
       <p class="vg-creator">Ronald Baker</p>
       <span class="vg-duration">⏱ 22 min · Academic but practical</span>
     </div>

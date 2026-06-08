@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-04-Character-Rigging-Animate/Cheat-Sh
 title: "Module 4 Cheat Sheet: Character Rigging in Adobe Animate"
 ---
 
-# ⚡ Module 4 Cheat Sheet — Character Rigging in Adobe Animate
+# ⚡ Module 4 Cheat Sheet, Character Rigging in Adobe Animate
 
 ---
 
@@ -19,7 +19,7 @@ character_root (Graphic)
         └── leg_l_upper → leg_l_lower
 ```
 
-All body parts = **Graphic** symbols (not Movie Clips — must sync to parent timeline).
+All body parts = **Graphic** symbols (not Movie Clips, must sync to parent timeline).
 
 ---
 
@@ -49,7 +49,7 @@ All body parts = **Graphic** symbols (not Movie Clips — must sync to parent ti
 
 ---
 
-## Preston Blair Phoneme Chart — MEMORIZE
+## Preston Blair Phoneme Chart, MEMORIZE
 
 | Group | Sounds | Shape |
 |-------|--------|-------|
@@ -90,7 +90,7 @@ All body parts = **Graphic** symbols (not Movie Clips — must sync to parent ti
 
 ---
 
-## Cut-Out Shows — Quick Reference
+## Cut-Out Shows, Quick Reference
 
 | Show | Technique | Notes |
 |------|-----------|-------|
@@ -103,7 +103,7 @@ All body parts = **Graphic** symbols (not Movie Clips — must sync to parent ti
 
 ---
 
-## Layer Order Problem — Solutions
+## Layer Order Problem, Solutions
 
 When a character turns, front/back arms must swap Z-order:
 

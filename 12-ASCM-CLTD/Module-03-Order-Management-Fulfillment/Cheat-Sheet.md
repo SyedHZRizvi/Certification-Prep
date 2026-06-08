@@ -42,7 +42,7 @@ CTP = ATP + Planned receipts/production (future-aware)
 
 ---
 
-## 🏭 Picking Strategies — When to Use
+## 🏭 Picking Strategies, When to Use
 
 | Strategy | Best when |
 |----------|-----------|
@@ -52,7 +52,7 @@ CTP = ATP + Planned receipts/production (future-aware)
 | Wave | Outbound shipping cutoffs drive timing |
 | Cluster | Small e-com orders, multi-bin carts |
 
-🧠 *Mnemonic:* "Don't Be Zonking Without Cooperation" — Discrete, Batch, Zone, Wave, Cluster.
+🧠 *Mnemonic:* "Don't Be Zonking Without Cooperation", Discrete, Batch, Zone, Wave, Cluster.
 
 ---
 
@@ -76,7 +76,7 @@ Line fill rate  = Lines complete / Lines ordered
 Unit fill rate  = Units shipped / Units ordered
 
 Perfect Order = OnTime% × Complete% × Damage-Free% × Correct-Invoice%
-(MULTIPLICATIVE — 95%^4 ≈ 81.5%)
+(MULTIPLICATIVE, 95%^4 ≈ 81.5%)
 
 OTIF = On-Time + In-Full   (retailer-imposed, chargebacks common)
 ```
@@ -127,11 +127,11 @@ Usually WRONG:
 
 ## ✏️ Quick Self-Check
 
-1. ATP vs CTP — one-line each? ___
+1. ATP vs CTP, one-line each? ___
 2. EDI 850, 855, 856, 810? ___
 3. Perfect Order math? ___
 4. Best picking strategy for 500 small e-com orders? ___
-5. OTIF — who imposes it? ___
+5. OTIF, who imposes it? ___
 
 ---
 

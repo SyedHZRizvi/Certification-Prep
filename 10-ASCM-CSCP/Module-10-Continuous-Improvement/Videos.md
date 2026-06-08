@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Lean Manufacturing — The 7 Wastes (TIMWOOD)</p>
+      <p class="vg-title">Lean Manufacturing, The 7 Wastes (TIMWOOD)</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 13 min · Examples per waste</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Six Sigma DMAIC — All 5 Phases</p>
+      <p class="vg-title">Six Sigma DMAIC, All 5 Phases</p>
       <p class="vg-creator">GreyCampus</p>
       <span class="vg-duration">⏱ 14 min · Tools per phase</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Theory of Constraints — Goldratt's 5 Focusing Steps</p>
+      <p class="vg-title">Theory of Constraints, Goldratt's 5 Focusing Steps</p>
       <p class="vg-creator">Edureka SCM</p>
       <span class="vg-duration">⏱ 12 min · The Goal in 12 minutes</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Balanced Scorecard — Kaplan & Norton</p>
+      <p class="vg-title">Balanced Scorecard, Kaplan & Norton</p>
       <p class="vg-creator">365 Careers</p>
       <span class="vg-duration">⏱ 16 min · 4 perspectives + strategy map</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Value Stream Mapping — Worked Example</p>
+      <p class="vg-title">Value Stream Mapping, Worked Example</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 12 min · Current vs future state</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Industry 4.0 — IoT, AI, Digital Twins</p>
+      <p class="vg-title">Industry 4.0, IoT, AI, Digital Twins</p>
       <p class="vg-creator">McKinsey</p>
       <span class="vg-duration">⏱ 18 min · Trends in SCM</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Six Sigma Belts — Who Does What</p>
+      <p class="vg-title">Six Sigma Belts, Who Does What</p>
       <p class="vg-creator">Edureka</p>
       <span class="vg-duration">⏱ 11 min · Roles + paths</span>
     </div>

@@ -108,11 +108,11 @@ chown user:grp file
 
 ## 🛡️ Account Types
 
-- **Standard** — run apps; UAC blocks system change
-- **Administrator** — install + change; UAC prompts
-- **Microsoft account** — cloud-linked
-- **Local account** — on-device
-- **Domain account** — AD-joined
+- **Standard**, run apps; UAC blocks system change
+- **Administrator**, install + change; UAC prompts
+- **Microsoft account**, cloud-linked
+- **Local account**, on-device
+- **Domain account**, AD-joined
 - **UAC** = User Account Control (leave ON)
 
 ---

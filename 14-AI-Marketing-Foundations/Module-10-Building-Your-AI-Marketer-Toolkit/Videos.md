@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">The AI Marketer's Stack — State of the Art</p>
+      <p class="vg-title">The AI Marketer's Stack, State of the Art</p>
       <p class="vg-creator">Paul Roetzer / Marketing AI Institute</p>
       <span class="vg-duration">⏱ 18 min · Category map</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Make.com + AI — Marketing Workflows</p>
+      <p class="vg-title">Make.com + AI, Marketing Workflows</p>
       <p class="vg-creator">Make / community</p>
       <span class="vg-duration">⏱ 16 min · Lead enrichment + AI scoring</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Zapier vs Make vs n8n — Which Should You Use?</p>
+      <p class="vg-title">Zapier vs Make vs n8n, Which Should You Use?</p>
       <p class="vg-creator">Independent reviewers</p>
       <span class="vg-duration">⏱ 13 min · Pick your automation tool</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">CDP vs CRM vs MA Platform — What's the Difference?</p>
+      <p class="vg-title">CDP vs CRM vs MA Platform, What's the Difference?</p>
       <p class="vg-creator">Segment / industry analysts</p>
       <span class="vg-duration">⏱ 10 min · Category clarity</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AI Agents in Marketing — Where We Actually Are</p>
+      <p class="vg-title">AI Agents in Marketing, Where We Actually Are</p>
       <p class="vg-creator">Marketing AI Institute</p>
       <span class="vg-duration">⏱ 20 min · Hype vs reality</span>
     </div>

@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Claude API Tutorial — Build Your First Agent</p>
+      <p class="vg-title">Claude API Tutorial, Build Your First Agent</p>
       <p class="vg-creator">Anthropic / AI dev channels</p>
       <span class="vg-duration">⏱ 25 min · Python + messages.create</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Cursor Full Tutorial — AI Pair Programming</p>
+      <p class="vg-title">Cursor Full Tutorial, AI Pair Programming</p>
       <p class="vg-creator">Various dev channels</p>
       <span class="vg-duration">⏱ 20 min · How to vibe-code as a marketer</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Engineering — System Prompts + Structured Output</p>
+      <p class="vg-title">Prompt Engineering, System Prompts + Structured Output</p>
       <p class="vg-creator">Anthropic / Various</p>
       <span class="vg-duration">⏱ 22 min · The skill that makes agents reliable</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">GitHub For Beginners — Push Your First Repo</p>
+      <p class="vg-title">GitHub For Beginners, Push Your First Repo</p>
       <p class="vg-creator">Various</p>
       <span class="vg-duration">⏱ 12 min · Required for the portfolio</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Continue.dev — Free Cursor Alternative</p>
+      <p class="vg-title">Continue.dev, Free Cursor Alternative</p>
       <p class="vg-creator">Continue / Various</p>
       <span class="vg-duration">⏱ 15 min · If you want free</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Anthropic Cookbook — Real Agent Examples</p>
+      <p class="vg-title">Anthropic Cookbook, Real Agent Examples</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 25 min · Reference implementations</span>
     </div>

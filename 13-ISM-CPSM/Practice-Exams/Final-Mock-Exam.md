@@ -1,8 +1,8 @@
-# 🧪 Final Mock Exam — ISM CPSM (Full Real-Exam Simulation)
+# 🧪 Final Mock Exam, ISM CPSM (Full Real-Exam Simulation)
 
 > **Conditions:** Set a **180-minute (3-hour) timer**. **165 questions**. No notes. No breaks longer than your bathroom dash. Treat it exactly like the real CPSM exam.
 > **Pass mark:** 124/165 (~75%, equivalent to the ~400 scaled-score real pass mark)
-> **Important:** The real CPSM credential requires passing **three separate** 165-question exams. This mock simulates ONE typical exam — drawn from all blueprints. After scoring well here, buy ISM's official exam-style practice tests for additional Q-banks before sitting any real exam.
+> **Important:** The real CPSM credential requires passing **three separate** 165-question exams. This mock simulates ONE typical exam, drawn from all blueprints. After scoring well here, buy ISM's official exam-style practice tests for additional Q-banks before sitting any real exam.
 
 ---
 
@@ -620,7 +620,7 @@ B. Indulgent, individualistic
 C. Low-context, masculine, indulgent
 D. High-context, collectivist, moderately high-power-distance
 
-### 103. FOB Shenzhen — risk transfers when:
+### 103. FOB Shenzhen, risk transfers when:
 A. Buyer signs the contract
 B. Import duties are paid
 C. Goods arrive at buyer's warehouse
@@ -702,7 +702,7 @@ D. US Uyghur Forced Labor Prevention Act
 A. Direct emissions from facilities
 B. Indirect from purchased energy
 C. End-of-life only
-D. All other indirect — including supply chain (typically 70–90% of corporate total)
+D. All other indirect, including supply chain (typically 70–90% of corporate total)
 
 ### 117. Supplier offers $5K tickets during active negotiation:
 A. Accept
@@ -902,13 +902,13 @@ B. Risk treatment
 C. Leadership style
 D. Root-cause analysis
 
-### 150. E-procurement rollout at 9% adoption after 6 months — best first action:
+### 150. E-procurement rollout at 9% adoption after 6 months, best first action:
 A. Cancel
 B. Add features
 C. Diagnose ADKAR gap and intervene
 D. Penalize non-users
 
-### 151. Major supplier failure — communicate FIRST with:
+### 151. Major supplier failure, communicate FIRST with:
 A. Exec leadership and affected internal customers
 B. Industry press
 C. Competitors
@@ -1048,7 +1048,7 @@ For EACH wrong answer:
 4. Drill similar quiz questions in Module Quiz.md
 5. Retake this mock under real conditions in 1–2 weeks
 
-**Before sitting any real CPSM exam:** Pass this mock at 80%+, then buy ISM's official exam-style practice tests for additional Q-banks. The real CPSM is **3 separate exams** of this size — pace yourself.
+**Before sitting any real CPSM exam:** Pass this mock at 80%+, then buy ISM's official exam-style practice tests for additional Q-banks. The real CPSM is **3 separate exams** of this size, pace yourself.
 
 ---
 
@@ -1078,7 +1078,7 @@ Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, 
 
 **Q11. A.** Direct spend = raw materials/components into the product. (Module 2)
 
-**Q12. A.** Indirect = IT, MRO, facilities, travel — supports operations, not in the product. (Module 2)
+**Q12. A.** Indirect = IT, MRO, facilities, travel, supports operations, not in the product. (Module 2)
 
 **Q13. D.** Leverage quadrant = competitive bidding / e-auctions exploit buying power. (Module 2 Kraljic)
 
@@ -1096,21 +1096,21 @@ Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, 
 
 **Q20. C.** RFQ = spec is defined; price comparison needed. (Module 2)
 
-**Q21. D.** Reverse auctions for Leverage commodities with multiple qualified suppliers — not strategic/innovation/bottleneck. (Module 2)
+**Q21. D.** Reverse auctions for Leverage commodities with multiple qualified suppliers, not strategic/innovation/bottleneck. (Module 2)
 
 **Q22. C.** Maverick spend = off-contract / unauthorized buying. (Module 2)
 
 **Q23. C.** Set weighted-scoring criteria BEFORE issuing the solicitation. Post-hoc setting = bias and audit risk. (Module 2)
 
-**Q24. C.** Standardization reduces variety of items. (Module 2; not suppliers — that's rationalization)
+**Q24. C.** Standardization reduces variety of items. (Module 2; not suppliers, that's rationalization)
 
-**Q25. B.** Rationalization reduces the number of suppliers. (Module 2; not items — that's standardization)
+**Q25. B.** Rationalization reduces the number of suppliers. (Module 2; not items, that's standardization)
 
 **Q26. A.** Bullwhip = demand distortion amplifying upstream (Hau Lee 1997). (Module 2)
 
 **Q27. C.** Sharing POS data with suppliers is the canonical bullwhip mitigation. Forward-buying and hidden forecasts amplify it. (Module 2)
 
-**Q28. A.** Performance specs = WHAT, leaving HOW to the supplier — invites innovation. (Module 2)
+**Q28. A.** Performance specs = WHAT, leaving HOW to the supplier, invites innovation. (Module 2)
 
 **Q29. A.** BATNA = Best Alternative To a Negotiated Agreement (Fisher & Ury 1981). (Module 3)
 
@@ -1132,7 +1132,7 @@ Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, 
 
 **Q38. B.** FAR governs US federal government contracts. (Module 3)
 
-**Q39. B.** Force majeure excuses performance during unforeseeable, unavoidable events — when specifically enumerated + supplier mitigated. (Module 3)
+**Q39. B.** Force majeure excuses performance during unforeseeable, unavoidable events, when specifically enumerated + supplier mitigated. (Module 3)
 
 **Q40. B.** Termination for convenience = payment for work done + reasonable wind-down costs. (Module 3)
 
@@ -1234,7 +1234,7 @@ Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, 
 
 **Q89. C.** FCPA prohibits bribery of foreign government officials. (Module 6)
 
-**Q90. A.** UK Bribery Act includes private-sector bribery + "failure to prevent" corporate offense — broader than FCPA. (Module 6)
+**Q90. A.** UK Bribery Act includes private-sector bribery + "failure to prevent" corporate offense, broader than FCPA. (Module 6)
 
 **Q91. B.** OFAC = US economic and trade sanctions. (Module 6)
 
@@ -1264,7 +1264,7 @@ Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, 
 
 **Q104. A.** Layered mitigation in high-corruption countries: anti-corruption flow-downs + 3rd-party DD + audits + training + payment controls. (Module 6 / 7)
 
-**Q105. B.** Invoicing in your currency shifts FX risk to supplier (priced in) — doesn't eliminate. (Module 6)
+**Q105. B.** Invoicing in your currency shifts FX risk to supplier (priced in), doesn't eliminate. (Module 6)
 
 **Q106. B.** Tariff response: alternates + HTS check + tariff engineering + reassess TCO. (Module 6)
 
@@ -1312,7 +1312,7 @@ Because the Final Mock Exam revisits concepts tested in Practice Exams 1 and 2, 
 
 **Q128. A.** Inadvertent visibility into competitor pricing: disclose + document + consider recusal. Preserve fairness. (Module 7)
 
-**Q129. A.** Map beyond Tier-1 — critical disruptions originate deeper (Suez, pandemic, geopolitics). (Module 7)
+**Q129. A.** Map beyond Tier-1, critical disruptions originate deeper (Suez, pandemic, geopolitics). (Module 7)
 
 **Q130. D.** Accept + document + monitor when expected loss < treatment cost. (Module 7)
 

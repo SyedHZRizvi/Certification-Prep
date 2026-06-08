@@ -42,7 +42,7 @@
 | Every resource | Lives in exactly one RG |
 | Every RG | Lives in exactly one subscription |
 | Every subscription | Belongs to exactly one Entra tenant |
-| RG region | Just metadata — RG can hold resources from any region |
+| RG region | Just metadata, RG can hold resources from any region |
 | Delete RG | Deletes ALL resources inside (use Lock to prevent) |
 | Move resources | Supported by most (not all) services, between RGs and subs |
 | Root MG | Exists by default, can't be deleted |
@@ -57,7 +57,7 @@
 - **Prioritized recovery** in broad outages
 - **GRS storage** auto-replicates to the pair
 
-⚠️ Some newer regions ship **without** a designated pair — verify per region.
+⚠️ Some newer regions ship **without** a designated pair, verify per region.
 
 ---
 
@@ -68,7 +68,7 @@
 | **Azure Government** | US Fed/State/Local/DoD | Screened US-citizen ops, physically isolated |
 | **Azure China** | China | Operated by 21Vianet under Chinese law |
 
-Sovereign clouds are SEPARATE Azure environments — different portal, different identities.
+Sovereign clouds are SEPARATE Azure environments, different portal, different identities.
 
 ---
 

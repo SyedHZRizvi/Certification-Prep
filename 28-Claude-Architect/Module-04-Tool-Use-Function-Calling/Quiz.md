@@ -77,7 +77,7 @@ D. Lower temperature
 A. `computer`, `text_editor`, `bash`
 B. `screenshot`, `keyboard`, `mouse` only
 C. Only `bash`
-D. None — you implement them yourself
+D. None, you implement them yourself
 
 ---
 
@@ -85,7 +85,7 @@ D. None — you implement them yourself
 A. Rate-limit exhaustion
 B. Prompt injection (untrusted text reaches Claude as "tool output")
 C. Schema validation failures
-D. Nothing — tool outputs are always trusted
+D. Nothing, tool outputs are always trusted
 
 ---
 
@@ -98,7 +98,7 @@ D. `tool_use`
 ---
 
 ### Q12. A destructive tool action (e.g., `delete_account`) should require: *(Apply)*
-A. Nothing extra — Claude will be careful
+A. Nothing extra, Claude will be careful
 B. An explicit `confirm=true` parameter AND server-side authorization AND audit logging
 C. Higher temperature
 D. A user-facing modal only
@@ -123,7 +123,7 @@ D. Only `screenshot`
 
 ### Q15. When using `tool_choice={"type":"any"}`, Claude is: *(Understand)*
 A. Restricted to one specific tool
-B. Required to use some tool — any of them
+B. Required to use some tool, any of them
 C. Forbidden from using tools
 D. Required to use ALL tools in parallel
 
@@ -132,7 +132,7 @@ D. Required to use ALL tools in parallel
 ### Q16. Tool definitions contribute to which token bucket? *(Understand)*
 A. Output tokens
 B. Input tokens (the definitions are part of the prompt)
-C. Neither — tools are free
+C. Neither, tools are free
 D. A separate "tool tokens" bucket
 
 ---
@@ -187,7 +187,7 @@ D. Re-prompt Claude
 
 ### Q23. Computer use is currently: *(Remember)*
 A. Generally available
-B. Beta — opt in via `betas=["computer-use-..."]`
+B. Beta, opt in via `betas=["computer-use-..."]`
 C. Deprecated
 D. Not available on Sonnet
 
@@ -213,9 +213,9 @@ D. The model can call multiple tools in parallel
 
 > *Create-level note:* one acceptable answer:
 A. (any single tool)
-B. `lookup_subscription` (no confirm) · `change_plan` (confirm=true) · `issue_refund` (confirm=true, requires reason) · `email_user` (no confirm but idempotent flag) — all logged, all server-side authorized
+B. `lookup_subscription` (no confirm) · `change_plan` (confirm=true) · `issue_refund` (confirm=true, requires reason) · `email_user` (no confirm but idempotent flag), all logged, all server-side authorized
 C. `do_everything` (one tool with all logic)
-D. None — let Claude write SQL directly to your prod DB
+D. None, let Claude write SQL directly to your prod DB
 
 ---
 
@@ -231,7 +231,7 @@ The description tells Claude *when* and *why* to use the tool. Name and schema a
 The `tool` type with a specific name forces exactly that tool.
 
 ### Q4: **C. `user`**
-Anthropic uses the user role with `tool_result` content blocks. (OpenAI uses a `tool` role — different.)
+Anthropic uses the user role with `tool_result` content blocks. (OpenAI uses a `tool` role, different.)
 
 ### Q5: **A. `tool_choice={"type": "auto", "disable_parallel_tool_use": true}`**
 The explicit way to opt out of parallel.
@@ -263,7 +263,7 @@ Smaller, more scoped tools generally outperform large overloaded tools.
 ### Q14: **A. `Read`, `Edit`, `Write`, `Bash`, `Grep`, `Glob`, `WebFetch`, `Skill`**
 The canonical agentic coding toolset. Cursor, Cody, Aider converged on similar.
 
-### Q15: **B. Required to use some tool — any of them**
+### Q15: **B. Required to use some tool, any of them**
 `any` = "must use a tool but you pick which one"; useful for force-structured-output flows.
 
 ### Q16: **B. Input tokens**
@@ -287,7 +287,7 @@ A top-level dispatcher routes to specialized sub-agents with focused tool surfac
 ### Q22: **B. Execute in parallel and return all 3 in one user message**
 Parallel execution is the whole point of parallel tool use.
 
-### Q23: **B. Beta — opt in via `betas=["computer-use-..."]`**
+### Q23: **B. Beta, opt in via `betas=["computer-use-..."]`**
 Beta as of writing; check Anthropic announcements for GA status.
 
 ### Q24: **B. Return a `tool_result` with error described in the content**
@@ -324,4 +324,4 @@ Lookup is safe (read-only); change_plan and issue_refund are destructive; email 
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — Model Context Protocol (MCP)](../Module-05-Model-Context-Protocol-MCP/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, Model Context Protocol (MCP)](../Module-05-Model-Context-Protocol-MCP/Reading.md)

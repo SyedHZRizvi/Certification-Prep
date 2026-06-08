@@ -18,7 +18,7 @@
 
 # 🎥 Module 4 Videos: Conditional Access & Identity Protection
 
-> **How to use:** Click any card to open a YouTube search — pick the top current result. Pause to follow along by building a report-only CA policy in your dev tenant.
+> **How to use:** Click any card to open a YouTube search, pick the top current result. Pause to follow along by building a report-only CA policy in your dev tenant.
 
 ## ⭐ Essential watching (~90 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Conditional Access Deep Dive — Every Setting</p>
+      <p class="vg-title">Conditional Access Deep Dive, Every Setting</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 35 min · The definitive walkthrough</span>
     </div>
@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Block Legacy Auth — End-to-End</p>
+      <p class="vg-title">Block Legacy Auth, End-to-End</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · Why it's the #1 policy + how to roll out</span>
     </div>
@@ -45,8 +45,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Identity Protection — User Risk vs Sign-in Risk</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-title">Identity Protection, User Risk vs Sign-in Risk</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 22 min · Building risk policies safely</span>
     </div>
   </a>
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Break-Glass Accounts — Right Way & Wrong Way</p>
+      <p class="vg-title">Break-Glass Accounts, Right Way & Wrong Way</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 15 min · Cloud-only + exclusions + monitoring</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">CA What If Tool — Avoid Tenant Lockouts</p>
+      <p class="vg-title">CA What If Tool, Avoid Tenant Lockouts</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 12 min · Simulate before you save</span>
     </div>
@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Defender for Cloud Apps — Session Policies</p>
+      <p class="vg-title">Defender for Cloud Apps, Session Policies</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 16 min · Block downloads on unmanaged devices</span>
     </div>
@@ -109,8 +109,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Sign-in Frequency Session Control — Tuning</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-title">Sign-in Frequency Session Control, Tuning</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 11 min · Stop the over-prompting tickets</span>
     </div>
   </a>
@@ -134,7 +134,7 @@
 | **John Savill** | Definitive CA + Identity Protection content. |
 | **Andy Malone MVP** | Exam-focused walkthroughs. |
 | **Microsoft Mechanics** | Official launches; current features. |
-| **Dean Cefola — Azure Academy** | Lab-friendly demos. |
+| **Dean Cefola, Azure Academy** | Lab-friendly demos. |
 | **Concepts Work** | Newer SC-300 channel; well-organized. |
 
 ---

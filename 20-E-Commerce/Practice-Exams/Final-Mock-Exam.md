@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — E-Commerce
+# 🧪 Final Mock Exam, E-Commerce
 
 > **Conditions:** Set a 60-minute timer. 60 questions. Treat it like the real thing (matches Adobe Commerce Business Practitioner blueprint difficulty).
 > **Pass mark:** 45/60 (75%)
@@ -8,12 +8,12 @@
 
 ## 📝 Questions
 
-### 1. A DTC brand reports blended ROAS of 3.6x. Contribution margin is 24%. The contribution-margin ROAS — and what that says about profitability — is:
+### 1. A DTC brand reports blended ROAS of 3.6x. Contribution margin is 24%. The contribution-margin ROAS and what that says about profitability is:
 
-A. 3.6x — clearly profitable
-B. 24x — clearly profitable
-C. 0.24x — break-even
-D. 0.86x — ad spend is structurally unprofitable before fixed costs (3.6 × 0.24 = 0.86 < 1)
+A. 3.6x, clearly profitable
+B. 24x, clearly profitable
+C. 0.24x, break-even
+D. 0.86x, ad spend is structurally unprofitable before fixed costs (3.6 × 0.24 = 0.86 < 1)
 
 ---
 
@@ -40,13 +40,13 @@ D. The customer's bank
 A. Stay on Shopify Basic with custom apps
 B. Migrate to WordPress
 C. Build a custom CRM-driven order portal
-D. Upgrade to Shopify Plus and activate Shopify B2B (GA June 2022) — company accounts + net terms + price lists native
+D. Upgrade to Shopify Plus and activate Shopify B2B (GA June 2022), company accounts + net terms + price lists native
 
 ---
 
 ### 5. An enterprise B2B brand on Adobe Commerce uses RFQ workflow. The buyer requests a quote on 500 units of SKU-X. The sales rep configures price, the buyer accepts, and the order ships. The corresponding EDI document the supplier sends WITH THE SHIPMENT is:
 
-A. EDI 856 (Advance Ship Notice — ASN)
+A. EDI 856 (Advance Ship Notice, ASN)
 B. EDI 850 (PO)
 C. EDI 810 (Invoice)
 D. EDI 832 (Catalog)
@@ -184,7 +184,7 @@ D. Stock-price defense
 A. Stay big, slow, and stable
 B. Quarterly cost discipline
 C. Layoffs are healthy
-D. Day 2 is stasis followed by irrelevance, decline, and death — maintain startup speed and customer-obsession at scale
+D. Day 2 is stasis followed by irrelevance, decline, and death, maintain startup speed and customer-obsession at scale
 
 ---
 
@@ -208,7 +208,7 @@ D. 0
 
 ### 23. A brand sees 8.5% chargeback ratio. Visa's Excessive Chargeback Program triggers at ~0.9-1.0%. The first remediation step:
 
-A. Ignore — chargebacks are normal
+A. Ignore, chargebacks are normal
 B. Increase prices
 C. Immediate fraud-tool review (Signifyd, Riskified, Stripe Radar), 3DS2 enforcement, acquirer relationship review
 D. Switch payment processors only
@@ -236,7 +236,7 @@ D. EU PSD2 (SCA enforced from September 14, 2019)
 ### 26. A brand at $50M revenue runs Meta + Google. Meta-attributed ROAS is 3.8x on iOS with Pixel only. Same campaign with CAPI + AEM + event_id dedup would likely report:
 
 A. Identical ROAS
-B. ROAS ~30-40% higher (signal recovery — same true purchases now attributed)
+B. ROAS ~30-40% higher (signal recovery, same true purchases now attributed)
 C. ROAS 2x higher
 D. ROAS lower
 
@@ -478,7 +478,7 @@ D. Stop testing when "you see a winner"
 
 ### 53. A brand's A/B test sees 1.4% lift in CR at p=0.04 with 8,000 visitors per variant. The test:
 
-A. Is statistically significant if sample size was pre-determined to detect ~1% MDE at α=0.05 / power 0.80 — but treat 1% lifts with caution and consider replication
+A. Is statistically significant if sample size was pre-determined to detect ~1% MDE at α=0.05 / power 0.80, but treat 1% lifts with caution and consider replication
 B. Definitely real
 C. Definitely noise
 D. Cannot be evaluated
@@ -490,7 +490,7 @@ D. Cannot be evaluated
 A. Build separate sites manually
 B. Shopify Markets (multi-currency, multi-language, multi-domain native since 2022)
 C. WordPress translation plugin
-D. None — Shopify doesn't support localization
+D. None, Shopify doesn't support localization
 
 ---
 
@@ -568,17 +568,17 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 ## 🎯 Detailed answer rationales
 
 **Q1. Answer: D**
-- **Why D is correct.** Contribution-Margin ROAS = Blended ROAS × CM = 3.6 × 0.24 = 0.864x. Below 1.0x means each $1 of ad spend returns < $1 of contribution dollars — structurally unprofitable before fixed costs.
+- **Why D is correct.** Contribution-Margin ROAS = Blended ROAS × CM = 3.6 × 0.24 = 0.864x. Below 1.0x means each $1 of ad spend returns < $1 of contribution dollars, structurally unprofitable before fixed costs.
 - **Why the others are wrong.** A confuses blended ROAS with profitability; B/C are arithmetic errors.
 - **Exam-takeaway.** A 3.6x blended ROAS at 24% CM is bleeding cash. Always do the CM math.
 
 **Q2. Answer: C**
-- **Why C is correct.** IOSS (Import One-Stop Shop) is the prescribed EU mechanism for non-EU sellers shipping parcels ≤€150 — single member-state registration, collect VAT at checkout, monthly returns.
+- **Why C is correct.** IOSS (Import One-Stop Shop) is the prescribed EU mechanism for non-EU sellers shipping parcels ≤€150, single member-state registration, collect VAT at checkout, monthly returns.
 - **Why the others are wrong.** A is non-compliance; B is over-engineered (you'd need many in-country registrations only if not on OSS/IOSS); D forfeits revenue.
 - **Exam-takeaway.** IOSS is the default cross-border EU compliance posture for non-EU SMB-to-mid-market sellers.
 
 **Q3. Answer: B**
-- **Why B is correct.** EU's 2021 VAT reform made marketplaces (Amazon, eBay, Etsy) deemed-suppliers for B2C imports ≤€150 — Amazon collects/remits VAT on those orders.
+- **Why B is correct.** EU's 2021 VAT reform made marketplaces (Amazon, eBay, Etsy) deemed-suppliers for B2C imports ≤€150, Amazon collects/remits VAT on those orders.
 - **Why the others are wrong.** A double-collects; C/D ignore the post-2021 EU VAT regime.
 - **Exam-takeaway.** EU marketplace facilitator logic mirrors US post-*Wayfair*: the marketplace collects.
 
@@ -588,7 +588,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Shopify B2B on Plus = the fastest-to-launch enterprise B2B option in 2024-2026.
 
 **Q5. Answer: A**
-- **Why A is correct.** EDI 856 = Advance Ship Notice (ASN) — sent when the shipment is dispatched. X12 standard.
+- **Why A is correct.** EDI 856 = Advance Ship Notice (ASN), sent when the shipment is dispatched. X12 standard.
 - **Why the others are wrong.** 850 = PO (precedes shipment); 810 = Invoice (follows shipment); 832 = Catalog (unrelated).
 - **Exam-takeaway.** ASN = 856. Memorize.
 
@@ -598,7 +598,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Invoice = 810. Memorize alongside 850/856.
 
 **Q7. Answer: D**
-- **Why D is correct.** Forrester *MACH Adoption Report* 2024: composable below ~$200M GMV with <15 engineers is the documented failure mode — 18-month integration projects, missed launches, replatform back to suite.
+- **Why D is correct.** Forrester *MACH Adoption Report* 2024: composable below ~$200M GMV with <15 engineers is the documented failure mode, 18-month integration projects, missed launches, replatform back to suite.
 - **Why the others are wrong.** A/B/C are the marketing pitch ignored by the empirical data.
 - **Exam-takeaway.** Composable readiness = GMV × engineering capacity. Both must clear the threshold.
 
@@ -620,7 +620,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 **Q11. Answer: A**
 - **Why A is correct.** Oxygen = Shopify's edge-deployed hosting product paired with Hydrogen.
 - **Why the others are wrong.** B/C/D are invented.
-- **Exam-takeaway.** Hydrogen (framework) + Oxygen (hosting) — both Shopify products.
+- **Exam-takeaway.** Hydrogen (framework) + Oxygen (hosting), both Shopify products.
 
 **Q12. Answer: A**
 - **Why A is correct.** LCP at 4.6s is far above the "Poor" threshold (4.0s). Image optimization typically yields the largest single improvement. INP and CLS matter but image-fix is highest-leverage first.
@@ -640,12 +640,12 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 **Q15. Answer: C**
 - **Why C is correct.** Express checkouts (Apple Pay / Shop Pay / Google Pay) + Core Web Vitals fixes + PDP simplification are the highest-leverage mobile-CR levers. Stripe / Adyen 2023-2024 report 20-40% CR lift from express checkout.
 - **Why the others are wrong.** A/B/D harm CR or shed traffic.
-- **Exam-takeaway.** Don't excuse mobile CR gaps — diagnose UX/speed/payment-method UX.
+- **Exam-takeaway.** Don't excuse mobile CR gaps, diagnose UX/speed/payment-method UX.
 
 **Q16. Answer: D**
 - **Why D is correct.** Shopify deprecated checkout.liquid for new customers in June 2024 (existing customers grandfathered to 2025); Checkout Extensibility is the path forward.
 - **Why the others are wrong.** A/B/C miss the actual deprecation date.
-- **Exam-takeaway.** Plus customers on checkout.liquid must migrate to Checkout Extensibility — the 2024-2026 Shopify Plus replatform.
+- **Exam-takeaway.** Plus customers on checkout.liquid must migrate to Checkout Extensibility, the 2024-2026 Shopify Plus replatform.
 
 **Q17. Answer: B**
 - **Why B is correct.** Klaviyo 2023-2024 benchmarks show Browse Abandon flows convert at 1-3% click-to-purchase, ~10-30x typical blast email.
@@ -658,7 +658,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Low repeat + sub-3x CLV/CAC = lifecycle is the diagnostic priority.
 
 **Q19. Answer: A**
-- **Why A is correct.** Bezos's 1997 letter codified customer-obsession + long-term-thinking + invest-behind-both — repeated as appendix in every annual letter through 2017.
+- **Why A is correct.** Bezos's 1997 letter codified customer-obsession + long-term-thinking + invest-behind-both, repeated as appendix in every annual letter through 2017.
 - **Why the others are wrong.** B/C/D contradict the letter's stated philosophy.
 - **Exam-takeaway.** Bezos 1997 = canonical e-commerce CEO doctrine.
 
@@ -688,12 +688,12 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** v4.0 timeline is March 2024 effective; March 2025 future-dated requirements.
 
 **Q25. Answer: D**
-- **Why D is correct.** EU PSD2 (Payment Services Directive 2, 2018) mandated SCA — enforcement from September 14, 2019 with phased step-ups through 2021.
+- **Why D is correct.** EU PSD2 (Payment Services Directive 2, 2018) mandated SCA, enforcement from September 14, 2019 with phased step-ups through 2021.
 - **Why the others are wrong.** A is card data; B is privacy; C is California privacy.
 - **Exam-takeaway.** SCA = PSD2 + 3DS2.
 
 **Q26. Answer: B**
-- **Why B is correct.** Post-ATT iOS Pixel-only loses ~30-40% of conversion signal vs. the true rate. CAPI + AEM + dedup recovers most of that gap — ROAS reads ~30-40% higher (same true purchases, just attributed).
+- **Why B is correct.** Post-ATT iOS Pixel-only loses ~30-40% of conversion signal vs. the true rate. CAPI + AEM + dedup recovers most of that gap, ROAS reads ~30-40% higher (same true purchases, just attributed).
 - **Why the others are wrong.** A/C/D miss the recovery magnitude.
 - **Exam-takeaway.** CAPI recovery = 30-40% reported ROAS lift (signal restoration).
 
@@ -703,7 +703,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** ASC launched late 2022; dominant by 2024.
 
 **Q28. Answer: B**
-- **Why B is correct.** ECB cap at 30% means at most 30% of ASC spend can go to existing customers; 70% on new — prospecting-leaning.
+- **Why B is correct.** ECB cap at 30% means at most 30% of ASC spend can go to existing customers; 70% on new, prospecting-leaning.
 - **Why the others are wrong.** A inverts; C/D misread the setting.
 - **Exam-takeaway.** Low ECB cap = prospecting; high ECB cap = retention.
 
@@ -718,12 +718,12 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Brand Exclusions = the most-tested PMax answer.
 
 **Q31. Answer: C**
-- **Why C is correct.** Add Brand Exclusions — the protective day-zero setting that prevents PMax bidding on branded queries.
+- **Why C is correct.** Add Brand Exclusions, the protective day-zero setting that prevents PMax bidding on branded queries.
 - **Why the others are wrong.** A/B don't address the root cause; D is unrelated.
 - **Exam-takeaway.** Brand cannibalization fix = Brand Exclusions.
 
 **Q32. Answer: D**
-- **Why D is correct.** PMax audience signals are HINTS — the algorithm can serve outside the signal if it finds higher-converting users.
+- **Why D is correct.** PMax audience signals are HINTS, the algorithm can serve outside the signal if it finds higher-converting users.
 - **Why the others are wrong.** A confuses with old Display custom audiences; B/C misrepresent the setting.
 - **Exam-takeaway.** Signals = hints, not hard targeting.
 
@@ -743,7 +743,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** September 2023 = US TikTok Shop GA.
 
 **Q36. Answer: D**
-- **Why D is correct.** Spark Ads boost an organic creator post that already has likes/comments/views — inheriting that social proof. Differentiates them from in-feed brand ads.
+- **Why D is correct.** Spark Ads boost an organic creator post that already has likes/comments/views, inheriting that social proof. Differentiates them from in-feed brand ads.
 - **Why the others are wrong.** A/B/C don't capture the mechanism.
 - **Exam-takeaway.** Spark Ads = inherited social proof.
 
@@ -798,7 +798,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Four factors.
 
 **Q47. Answer: A**
-- **Why A is correct.** Revenue-based CLV = Orders × AOV = 2.8 × $68 = $190.40. Ratio = $190.40 / $42 ≈ 4.5. The question specifies revenue-based CLV (some blueprints use contribution-based, which would give $66.66 — distractor C).
+- **Why A is correct.** Revenue-based CLV = Orders × AOV = 2.8 × $68 = $190.40. Ratio = $190.40 / $42 ≈ 4.5. The question specifies revenue-based CLV (some blueprints use contribution-based, which would give $66.66, distractor C).
 - **Why the others are wrong.** B undercounts to single-order; C is the contribution-based CLV (a real number but not the revenue-based one the question asks for); D overshoots wildly.
 - **Exam-takeaway.** Read carefully whether CLV is revenue-based or contribution-based; both definitions exist on exams.
 
@@ -823,12 +823,12 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Triggered > blast.
 
 **Q52. Answer: B**
-- **Why B is correct.** Kohavi/Tang/Xu (*Trustworthy Online Controlled Experiments*, 2020, Cambridge) prescribe pre-computing N from baseline CR, MDE, α=0.05, power=0.80 — the only rigorous approach.
+- **Why B is correct.** Kohavi/Tang/Xu (*Trustworthy Online Controlled Experiments*, 2020, Cambridge) prescribe pre-computing N from baseline CR, MDE, α=0.05, power=0.80, the only rigorous approach.
 - **Why the others are wrong.** A/C/D are common pitfalls that lead to false-positive A/B "winners."
 - **Exam-takeaway.** Pre-compute, don't peek, don't stop early.
 
 **Q53. Answer: A**
-- **Why A is correct.** If pre-determined for ~1% MDE at α=0.05 / power 0.80, p=0.04 is statistically significant — but 1% lifts are small and should be replicated before betting the roadmap on them.
+- **Why A is correct.** If pre-determined for ~1% MDE at α=0.05 / power 0.80, p=0.04 is statistically significant, but 1% lifts are small and should be replicated before betting the roadmap on them.
 - **Why the others are wrong.** B over-states confidence (small lifts often regress on replication); C dismisses the result; D ignores standard methodology.
 - **Exam-takeaway.** Small lifts at small samples = significant but fragile. Replicate.
 
@@ -838,7 +838,7 @@ D. Composable commerce backend (commercetools or Adobe Commerce) + headless fron
 - **Exam-takeaway.** Shopify Markets = the native localization layer.
 
 **Q55. Answer: A**
-- **Why A is correct.** Shein's $66B build collapsed under DSA, US De Minimis policy, French fast-fashion law, UK IPO pause — proving the principle that cross-border arbitrage on a single regulatory loophole is structurally fragile.
+- **Why A is correct.** Shein's $66B build collapsed under DSA, US De Minimis policy, French fast-fashion law, UK IPO pause, proving the principle that cross-border arbitrage on a single regulatory loophole is structurally fragile.
 - **Why the others are wrong.** B/C/D contradict the case.
 - **Exam-takeaway.** Compliance-by-design > arbitrage-by-loophole.
 

@@ -20,7 +20,7 @@
 
 # 🎥 Module 8 Videos: Build GenAI Apps
 
-> **How to use:** Click any video card. Foundry / Agent Service / prompt flow are evolving fast — pick the newest result.
+> **How to use:** Click any video card. Foundry / Agent Service / prompt flow are evolving fast, pick the newest result.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Foundry — full tour</p>
+      <p class="vg-title">Azure AI Foundry, full tour</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 18 min · Hub, Project, Catalog</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Agent Service — first agent</p>
+      <p class="vg-title">Azure AI Agent Service, first agent</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 15 min · Tools + threads</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Semantic Kernel — orchestration in code</p>
+      <p class="vg-title">Semantic Kernel, orchestration in code</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 18 min · Kernel + plugins + planner</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Model Catalog — MaaS vs MaaP</p>
+      <p class="vg-title">Model Catalog, MaaS vs MaaP</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 12 min · Llama, Mistral, OSS</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">LLM-as-Judge — evaluation best practices</p>
+      <p class="vg-title">LLM-as-Judge, evaluation best practices</p>
       <p class="vg-creator">Microsoft Research</p>
       <span class="vg-duration">⏱ 25 min · Reliable scoring</span>
     </div>
@@ -134,7 +134,7 @@
 
 ## ✅ After watching
 
-1. Hub vs Project in Foundry — what does each hold?
+1. Hub vs Project in Foundry, what does each hold?
 2. MaaS vs MaaP from the model catalog?
 3. What are 3 evaluation metrics for a RAG app?
 4. Difference between Prompt Flow and Semantic Kernel?

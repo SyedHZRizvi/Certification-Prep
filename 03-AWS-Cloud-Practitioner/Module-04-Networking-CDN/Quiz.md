@@ -9,7 +9,7 @@
 ### Q1. A Security Group rule: *(Understand)*
 A. Can include both ALLOW and DENY rules
 B. Is stateless
-C. Is stateful — return traffic is automatically allowed
+C. Is stateful, return traffic is automatically allowed
 D. Operates at the subnet boundary
 
 ---
@@ -208,7 +208,7 @@ D. A replacement for an Internet Gateway
 
 ## 🎯 Answers + Explanations
 
-### Q1: **C. Stateful — return traffic is automatically allowed**
+### Q1: **C. Stateful, return traffic is automatically allowed**
 SGs only have ALLOW rules and are stateful. NACLs are stateless and can have ALLOW + DENY.
 
 ### Q2: **B. NACL (Network ACL)**
@@ -227,7 +227,7 @@ Dedicated 1/10/100 Gbps private fiber. Takes weeks to provision; not encrypted b
 CloudFront's CDN runs at 400+ Edge Locations worldwide. AZs and Regions are not edge-of-network.
 
 ### Q7: **B. ALB**
-ALB is Layer 7 — supports host- and path-based routing, ideal for microservices. NLB is Layer 4.
+ALB is Layer 7, supports host- and path-based routing, ideal for microservices. NLB is Layer 4.
 
 ### Q8: **B. VPC Gateway Endpoint for S3**
 Gateway Endpoints are free and provide private access to S3 (and DynamoDB) without traversing the internet.
@@ -251,7 +251,7 @@ A VPC lives in one Region and spans multiple AZs; a subnet lives in exactly one 
 API Gateway is the managed REST/HTTP/WebSocket API service that integrates natively with Lambda.
 
 ### Q15: **C. They can have DENY rules**
-False — SGs are ALLOW-only. To explicitly deny, use a NACL.
+False, SGs are ALLOW-only. To explicitly deny, use a NACL.
 
 ### Q16: **B. AWS Transit Gateway**
 Hub-and-spoke connectivity for many VPCs (and on-prem via VPN/DX). VPC peering doesn't scale beyond a handful of VPCs.
@@ -275,13 +275,13 @@ The default subnet behavior is private. Public access requires IGW + a route to 
 CloudFront is origin-agnostic. It integrates with WAF, supports HTTPS by default, and can front any HTTP server.
 
 ### Q23: **B. A managed REST / HTTP / WebSocket API service with auth, throttling, and caching**
-API Gateway handles the API "edge" — IAM/Cognito auth, rate-limit throttling, request/response transformation, caching.
+API Gateway handles the API "edge", IAM/Cognito auth, rate-limit throttling, request/response transformation, caching.
 
 ### Q24: **C. GWLB (Gateway Load Balancer)**
 GWLB inserts at Layer 3 and is purpose-built for transparently routing traffic through 3rd-party network appliances.
 
 ### Q25: **B. AZ-scoped (one per AZ for HA)**
-NAT Gateway is per-AZ. For HA, deploy one in each AZ and route each private subnet to its local NAT. It is NOT free — pay per hour + per GB.
+NAT Gateway is per-AZ. For HA, deploy one in each AZ and route each private subnet to its local NAT. It is NOT free, pay per hour + per GB.
 
 ---
 
@@ -300,7 +300,7 @@ NAT Gateway is per-AZ. For HA, deploy one in each AZ and route each private subn
 - 7 Route 53 routing policies
 - ALB / NLB / GWLB layers and use cases
 - CloudFront vs Global Accelerator
-- VPC Endpoints — Gateway (S3, DDB) vs Interface (everything else)
+- VPC Endpoints, Gateway (S3, DDB) vs Interface (everything else)
 - Direct Connect = no default encryption
 - VPC Peering = non-transitive
 - NAT Gateway = outbound only, per-AZ, costs $

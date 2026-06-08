@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Detection Rules — File, Registry, PowerShell</p>
+      <p class="vg-title">Detection Rules, File, Registry, PowerShell</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 22 min · The most failure-prone step</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Dependencies vs Supersedence — When to Use Each</p>
+      <p class="vg-title">Dependencies vs Supersedence, When to Use Each</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · Upgrade chains demystified</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MSIX — The Modern Windows App Format</p>
+      <p class="vg-title">MSIX, The Modern Windows App Format</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 17 min · Why MSIX beats MSI</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">App Configuration Policies — Pushing App Settings</p>
+      <p class="vg-title">App Configuration Policies, Pushing App Settings</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 16 min · Per-app config without users</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Managed Google Play — Android App Deployment</p>
+      <p class="vg-title">Managed Google Play, Android App Deployment</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 18 min · The Android app channel</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Apple VPP — Bulk iOS App Licensing</p>
+      <p class="vg-title">Apple VPP, Bulk iOS App Licensing</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 15 min · Device vs user token</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">App Stuck Installing — Troubleshooting Detection</p>
+      <p class="vg-title">App Stuck Installing, Troubleshooting Detection</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 16 min · The helpdesk's #1 ticket</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">macOS App Deployment — PKG, DMG, Shell Script</p>
+      <p class="vg-title">macOS App Deployment, PKG, DMG, Shell Script</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 20 min · The Mac app story</span>
     </div>

@@ -1,4 +1,4 @@
-# Module 1 Cheat Sheet — Acting and Performance 🎭
+# Module 1 Cheat Sheet, Acting and Performance 🎭
 
 ## The Three Frameworks at a Glance
 
@@ -24,14 +24,14 @@
 ## 8-Step Reference Workflow
 
 ```
-1. INTENTION     — Write objective before filming
-2. RESEARCH      — Watch real-world analogues (film, sports, life)
-3. WARM-UP       — 3 min physical warm-up before recording
-4. SPONTANEOUS   — 2-3 takes without pre-planning (raw truth)
-5. DIRECTED      — Specific beats you want to explore
-6. FRAME REVIEW  — Find micro-expressions / weight shifts
-7. THUMBNAILS    — Screenshot 8-12 key frames
-8. LOOP          — 3-5 sec clip lives on second monitor during blocking
+1. INTENTION    , Write objective before filming
+2. RESEARCH     , Watch real-world analogues (film, sports, life)
+3. WARM-UP      , 3 min physical warm-up before recording
+4. SPONTANEOUS  , 2-3 takes without pre-planning (raw truth)
+5. DIRECTED     , Specific beats you want to explore
+6. FRAME REVIEW , Find micro-expressions / weight shifts
+7. THUMBNAILS   , Screenshot 8-12 key frames
+8. LOOP         , 3-5 sec clip lives on second monitor during blocking
 ```
 
 ---
@@ -47,7 +47,7 @@
 
 ---
 
-## The Planning Trap — Warning Signs & Cure
+## The Planning Trap, Warning Signs & Cure
 
 **Warning Signs:**
 - Thumbnails are too confident before reference
@@ -56,7 +56,7 @@
 - Can't explain performance choices beyond "felt right"
 
 **Cure:**
-- Reference BEFORE thumbnails — always
+- Reference BEFORE thumbnails, always
 - One "crazy take" per reference session
 - Peer review: show reference without context, ask "what emotion do you see?"
 
@@ -99,20 +99,20 @@ Then: animate the gap between thought and behavior
 
 ## Quick Definitions
 
-- **Objective** — what character wants *in this shot* (specific, active)
-- **Super-Objective** — overarching drive across entire story
-- **Indicating** — showing emotion vs. experiencing its cause
-- **Subtext** — what character means vs. what they say
-- **Found reference** — spontaneous, unplanned take
-- **Staged reference** — confirms a predetermined plan
-- **Planning trap** — technique enabling you to execute a mediocre plan perfectly
-- **Given Circumstances** — facts about the world before action begins
+- **Objective**, what character wants *in this shot* (specific, active)
+- **Super-Objective**, overarching drive across entire story
+- **Indicating**, showing emotion vs. experiencing its cause
+- **Subtext**, what character means vs. what they say
+- **Found reference**, spontaneous, unplanned take
+- **Staged reference**, confirms a predetermined plan
+- **Planning trap**, technique enabling you to execute a mediocre plan perfectly
+- **Given Circumstances**, facts about the world before action begins
 
 ---
 
 ## Case Study Performance Checklist
 
-### WALL-E — Acting Without Dialogue
+### WALL-E, Acting Without Dialogue
 ```
 CONSTRAINT: No dialogue / No brow / No lips / Wheeled locomotion
 TOOLS:       Eye-disk angle + body orientation + object interaction + timing
@@ -123,15 +123,15 @@ Loneliness → Duration of lingering before moving; slow wheel speed
 Excitement → Fast wheel acceleration; body lean forward; rapid disk convergence
 ```
 
-### Dug (UP) — Performance Layer Interrupts
+### Dug (UP), Performance Layer Interrupts
 ```
 DOG LAYER:     Physical behavior baseline (four-paw weight, ear/tail secondary)
 SPEECH LAYER:  Mouth shapes, eye focus during speech
 PERSONALITY:   Timing pause before finishing thoughts
-SQUIRREL:      Layer interrupt — dog layer hijacks in 2f; recovery takes 8f
+SQUIRREL:      Layer interrupt, dog layer hijacks in 2f; recovery takes 8f
 ```
 
-### Ernesto de la Cruz (Coco) — Villain Performance
+### Ernesto de la Cruz (Coco), Villain Performance
 ```
 Smile delay: Mouth reaches smile BEFORE eyes (+0.5s to upper face)
 Hand on shoulder: Wrist torques to STEER, not embrace
@@ -139,7 +139,7 @@ Eye behavior: Scans audience; does not genuinely connect with Miguel
 Mask crack: Stillness → micro-swallow → eyes flick down-left → recovery (18f total)
 ```
 
-### Luisa (Encanto) — Performed Strength vs. Felt Exhaustion
+### Luisa (Encanto), Performed Strength vs. Felt Exhaustion
 ```
 Spine: LOCKED STRAIGHT (performed strength)
 Scapulae: PULLED IN TIGHT (hidden tension)
@@ -161,7 +161,7 @@ Hands: Fists in confident sections → fingers UNCURL during emotional breaks
 
 ---
 
-## The Planning Trap — Career Stage Risk
+## The Planning Trap, Career Stage Risk
 
 | Career Stage | Planning Trap Risk | Why |
 |-------------|-------------------|-----|
@@ -176,10 +176,10 @@ Hands: Fists in confident sections → fingers UNCURL during emotional breaks
 
 | Question | Answer |
 |---------|--------|
-| Stanislavski's central device | Magic "If" — what would I truthfully do in this situation? |
+| Stanislavski's central device | Magic "If", what would I truthfully do in this situation? |
 | WALL-E's primary acting tool | Body orientation + timing + object interaction (no dialogue) |
 | Dug's layer-interrupt timing | 2f hijack / 8f recovery (asymmetric) |
-| Arlo failure in Good Dinosaur | Indicating at story level — growth shown as checkboxes, not experienced |
+| Arlo failure in Good Dinosaur | Indicating at story level, growth shown as checkboxes, not experienced |
 | Luisa's anxiety signal | Increasing blink rate in second verse |
 | Moana's arm vocabulary source | Hula movement (flowing, wave-like hands during emotional speech) |
 | Hiro's grief animation principle | Animate trying NOT to be sad, not sadness itself |

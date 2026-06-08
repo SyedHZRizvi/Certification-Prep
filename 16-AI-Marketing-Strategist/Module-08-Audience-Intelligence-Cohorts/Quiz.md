@@ -56,7 +56,7 @@ D. The first month of acquisition
 
 ### Q7. Average retention across all cohorts is misleading because: *(Analyze)*
 A. The numbers are too small
-B. It hides high/low extremes — e.g., a 50% blended retention can hide 90% organic + 10% paid
+B. It hides high/low extremes, e.g., a 50% blended retention can hide 90% organic + 10% paid
 C. Average is always 0
 D. Cohorts don't exist
 
@@ -96,7 +96,7 @@ D. Geographic radius
 
 ### Q12. Meta's Advantage+ Audience is BEST described as: *(Understand)*
 A. Manual lookalike with extra controls
-B. ML-driven audience that Meta's model chooses given your conversion signals — the 2024+ default
+B. ML-driven audience that Meta's model chooses given your conversion signals, the 2024+ default
 C. The same as Custom Audience
 D. Required by GDPR
 
@@ -106,7 +106,7 @@ D. Required by GDPR
 A. Building beautiful manual lookalike segments
 B. Feeding the platform high-quality conversion signals (e.g., LTV-weighted events) and letting its targeting model do the work
 C. Manually approving every ad placement
-D. None — the platform does it all
+D. None, the platform does it all
 
 ---
 
@@ -174,7 +174,7 @@ D. Single price for all
 
 ---
 
-### Q22. Reactivation timing — the "sweet spot" — is best identified by: *(Apply)*
+### Q22. Reactivation timing the "sweet spot" is best identified by: *(Apply)*
 A. A board meeting
 B. Cohort analysis showing the inflection where win-back ROI peaks (often months 6–12 of inactivity, varies by business)
 C. The CEO's intuition
@@ -184,7 +184,7 @@ D. Quarterly random tests
 
 ### Q23. The "average user" journey map is: *(Analyze)*
 A. The right way to plan marketing
-B. A trap — averages hide segment differences; map per job-persona / cohort instead
+B. A trap, averages hide segment differences; map per job-persona / cohort instead
 C. Required by GDPR
 D. Always the most actionable
 
@@ -200,7 +200,7 @@ D. Reverse ETL
 
 ### Q25. GRR (Gross Revenue Retention) differs from NRR in that GRR: *(Understand)*
 A. Includes expansion
-B. Excludes expansion — measures only retention minus contraction and churn
+B. Excludes expansion, measures only retention minus contraction and churn
 C. Is identical to NRR
 D. Is only used in B2C
 
@@ -232,7 +232,7 @@ Habit-formation signal. Common in news apps, social apps, fitness apps.
 Spotify found playlist creation + following ≥3 artists in week 1 multiplied long-term retention by ~5× over "search-only" users.
 
 ### Q6: **C. Each user as their own cohort with rich attribute history**
-The 2026 default — modern CDPs allow per-user cohorting on multiple dimensions.
+The 2026 default, modern CDPs allow per-user cohorting on multiple dimensions.
 
 ### Q7: **B. Hides high/low extremes**
 The classic cohort lesson. Always disaggregate.
@@ -250,7 +250,7 @@ Best-in-class B2B SaaS. Snowflake, Datadog, Cloudflare, Twilio at various points
 The classic lookalike mechanic. Quality depends entirely on seed quality.
 
 ### Q12: **B. ML-driven 2024+ default**
-Advantage+ Audience uses Meta's own model to choose targets given your conversion signals — gradually replacing manual Lookalikes.
+Advantage+ Audience uses Meta's own model to choose targets given your conversion signals, gradually replacing manual Lookalikes.
 
 ### Q13: **B. Feeding quality conversion signals**
 The strategist's job has moved from building targeting segments to designing measurement that feeds the platform.
@@ -271,7 +271,7 @@ Standard SQL cohort join. Replace `user_pseudo_id` with `user_id` if you have au
 Spotify's playlist creation; Slack's 2,000-message threshold; Facebook's friend-7-days.
 
 ### Q19: **B. Dimensional cohort**
-Slicing cohorts on additional dimensions (channel, geo, plan) — the 2026 default.
+Slicing cohorts on additional dimensions (channel, geo, plan), the 2026 default.
 
 ### Q20: **B. Activation event / threshold**
 3rd Fix = the activation threshold. Below 3, churn. Above 3, ~85% retention.
@@ -280,9 +280,9 @@ Slicing cohorts on additional dimensions (channel, geo, plan) — the 2026 defau
 Sophisticated retention orgs use cohort signals to set retention budgets and offers.
 
 ### Q22: **B. Cohort analysis identifies the win-back sweet spot**
-Empirically. Don't guess the timing — measure where ROI peaks.
+Empirically. Don't guess the timing, measure where ROI peaks.
 
-### Q23: **B. Trap — map per persona / cohort**
+### Q23: **B. Trap, map per persona / cohort**
 The strategist's discipline: never let "average" be the unit of analysis.
 
 ### Q24: **B. Cohort tooling**

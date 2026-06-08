@@ -10,7 +10,7 @@
 | **Sprint Backlog** | **Sprint Goal** |
 | **Increment** | **Definition of Done (DoD)** |
 
-🧠 *"Pretty Pumpkins Sit Sweetly In Dough"* — silly mnemonic if you need one.
+🧠 *"Pretty Pumpkins Sit Sweetly In Dough"*, silly mnemonic if you need one.
 
 ---
 

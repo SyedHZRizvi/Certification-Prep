@@ -240,7 +240,7 @@ Both are LinkedIn-native formats that over-perform vs plain text or external lin
 Standard three-class sentiment classification. More advanced tools layer emotion or topic classification on top.
 
 ### Q14: **B. ~70% female audience and strong commercial intent**
-Pinterest's demographic is heavily female and shopping-oriented — the strongest commercial-intent social platform.
+Pinterest's demographic is heavily female and shopping-oriented, the strongest commercial-intent social platform.
 
 ### Q15: **D. Snapchat**
 Snapchat is owned by Snap Inc. Meta owns Instagram, Facebook, WhatsApp, Threads (and previously Messenger).

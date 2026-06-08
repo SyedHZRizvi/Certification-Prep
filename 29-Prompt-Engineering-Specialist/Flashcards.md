@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -284,10 +284,10 @@
 **A:** BPE splits it into 5–6 sub-word pieces. Long uncommon words are tokenized into more pieces.
 
 **Q:** What are the 4 major LLM families to know in 2026?
-**A:** Claude (Anthropic), GPT (OpenAI), Gemini (Google), Llama (Meta) — plus Mistral / DeepSeek / Qwen as open-source contenders.
+**A:** Claude (Anthropic), GPT (OpenAI), Gemini (Google), Llama (Meta), plus Mistral / DeepSeek / Qwen as open-source contenders.
 
 **Q:** What are the 3 chat roles and which has highest authority?
-**A:** system / user / assistant. **system is highest** — the model is trained (instruction hierarchy) to prefer system over conflicting user instructions.
+**A:** system / user / assistant. **system is highest**, the model is trained (instruction hierarchy) to prefer system over conflicting user instructions.
 
 **Q:** OpenAI's instruction hierarchy (Wallace et al. 2024) ordered priority?
 **A:** system > developer > user > tool.
@@ -305,19 +305,19 @@
 **A:** 3–5× more expensive on Claude/GPT/Gemini flagships.
 
 **Q:** What does TTFT stand for?
-**A:** Time-To-First-Token — the streaming-latency metric that matters most for chat UX. Aim <500ms for "responsive."
+**A:** Time-To-First-Token, the streaming-latency metric that matters most for chat UX. Aim <500ms for "responsive."
 
 **Q:** What is the "Lost in the Middle" finding (Liu et al. 2023)?
 **A:** Information placed in the middle of a long context is recalled significantly worse than at the start or end. Defense: put critical instructions at edges.
 
 **Q:** How are "thinking tokens" billed on o1/o3/Claude Extended Thinking?
-**A:** As output tokens — often 5–50× more expensive than non-reasoning siblings per visible answer.
+**A:** As output tokens, often 5–50× more expensive than non-reasoning siblings per visible answer.
 
 **Q:** Where does Anthropic put the `system` parameter?
-**A:** As a top-level field on the Messages API — NOT inside `messages[]` (OpenAI's pattern).
+**A:** As a top-level field on the Messages API, NOT inside `messages[]` (OpenAI's pattern).
 
 **Q:** What is BAA in the LLM context?
-**A:** Business Associate Agreement — HIPAA-compliant vendor contract. Anthropic Enterprise, Azure OpenAI, Vertex Gemini are BAA-eligible; public Groq is not.
+**A:** Business Associate Agreement, HIPAA-compliant vendor contract. Anthropic Enterprise, Azure OpenAI, Vertex Gemini are BAA-eligible; public Groq is not.
 
 ---
 
@@ -330,19 +330,19 @@
 **A:** 0 / 1 / 2–32 / 100+ examples in the prompt.
 
 **Q:** Which paper popularized in-context learning at scale?
-**A:** Brown et al. 2020 — *Language Models are Few-Shot Learners* (the GPT-3 paper). NeurIPS 2020.
+**A:** Brown et al. 2020, *Language Models are Few-Shot Learners* (the GPT-3 paper). NeurIPS 2020.
 
 **Q:** How much can few-shot example ORDER shift accuracy (Lu et al. 2022)?
 **A:** Up to 30+ percentage points. Defense: balance label counts and randomize order.
 
 **Q:** What did Min et al. 2022 surprisingly show about few-shot?
-**A:** Even randomly-assigned labels in the examples still help — format/pattern learning matters in addition to content learning.
+**A:** Even randomly-assigned labels in the examples still help, format/pattern learning matters in addition to content learning.
 
 **Q:** What is kNN few-shot?
 **A:** At runtime, embed the new input, retrieve the k most-similar historical examples from a vector index, build the prompt with those examples. Best for production with a labeled corpus.
 
 **Q:** Which formatting convention does Anthropic prefer for few-shot in Claude prompts?
-**A:** XML tags — `<example><input>...</input><output>...</output></example>`.
+**A:** XML tags, `<example><input>...</input><output>...</output></example>`.
 
 **Q:** What does "majority label bias" mean and how do you defend?
 **A:** If 4 of 5 examples are POSITIVE, the model over-predicts POSITIVE. Defense: balance label counts across examples.
@@ -354,20 +354,20 @@
 **A:** With 200K+ context models (Claude 4.7, Gemini 2.5, GPT-5) AND aggressive prompt caching to control cost.
 
 **Q:** What 2024 paper documented many-shot ICL?
-**A:** Agarwal et al. 2024 (DeepMind) — *Many-Shot In-Context Learning*.
+**A:** Agarwal et al. 2024 (DeepMind), *Many-Shot In-Context Learning*.
 
 **Q:** Why might adding one "reasoning:" sentence per few-shot example help?
-**A:** It often improves accuracy 5–15 points — bridges few-shot to chain-of-thought.
+**A:** It often improves accuracy 5–15 points, bridges few-shot to chain-of-thought.
 
 ---
 
 ## 🧮 SECTION 3: CHAIN-OF-THOUGHT & REASONING
 
 **Q:** Which paper defined chain-of-thought (CoT) prompting?
-**A:** Wei et al. 2022 — *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models*. NeurIPS 2022.
+**A:** Wei et al. 2022, *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models*. NeurIPS 2022.
 
 **Q:** What was the famous lift on GSM8K from standard prompting to CoT on PaLM 540B?
-**A:** From ~18% to ~57% — a +39 percentage point lift.
+**A:** From ~18% to ~57%, a +39 percentage point lift.
 
 **Q:** What is the zero-shot CoT trigger phrase (Kojima et al. 2022)?
 **A:** "Let's think step by step."
@@ -376,16 +376,16 @@
 **A:** Sample N reasoning paths with non-zero temperature; extract the final answer from each; take the majority vote.
 
 **Q:** Self-consistency at N=40 multiplies cost by approximately?
-**A:** 40×. Often N=5 captures most of the lift at much lower cost — eval to find your sweet spot.
+**A:** 40×. Often N=5 captures most of the lift at much lower cost, eval to find your sweet spot.
 
 **Q:** What does ReAct stand for and what's the loop?
 **A:** Reason + Act. Loop: Thought → Action (tool call) → Observation → repeat. Yao et al. 2022.
 
 **Q:** What's Tree-of-Thought best suited for?
-**A:** Search-like problems — puzzles, planning, multi-step optimization (e.g., Game of 24, crosswords). Yao et al. 2023.
+**A:** Search-like problems, puzzles, planning, multi-step optimization (e.g., Game of 24, crosswords). Yao et al. 2023.
 
 **Q:** When does CoT NOT help?
-**A:** On trivial tasks (sentiment, single-fact lookup, translation) — it just adds tokens and latency with no quality gain.
+**A:** On trivial tasks (sentiment, single-fact lookup, translation), it just adds tokens and latency with no quality gain.
 
 **Q:** What's the "router test" for whether to use a reasoning model?
 **A:** "Would a smart human need to deliberate?" If yes → reasoning model. If no → standard model + maybe CoT.
@@ -397,7 +397,7 @@
 **A:** A cap on how many thinking tokens the model is allowed to generate before producing the visible answer.
 
 **Q:** What was the lift on AIME 2024 from GPT-4o to OpenAI o1?
-**A:** From ~13.4% to ~56.7% — approximately +43 percentage points.
+**A:** From ~13.4% to ~56.7%, approximately +43 percentage points.
 
 **Q:** What is DeepSeek R1's significance?
 **A:** Released January 2025; first open-weights reasoning model competitive with o1. Reproducible, downloadable, visible thinking traces.
@@ -425,10 +425,10 @@
 **A:** Constrains the field to integers between 1 and 5 inclusive. Enforced both at schema-time and validation-time.
 
 **Q:** Why use `Literal["a", "b"]` or `Enum` for categorical fields?
-**A:** The model is constrained — it CANNOT output any value other than the listed ones. Hallucinated 6th values become impossible.
+**A:** The model is constrained, it CANNOT output any value other than the listed ones. Hallucinated 6th values become impossible.
 
 **Q:** What does `instructor`'s `max_retries=3` do?
-**A:** When a Pydantic validator raises a ValueError, instructor catches it, appends the error to a follow-up prompt, and re-runs — closed-loop self-correction.
+**A:** When a Pydantic validator raises a ValueError, instructor catches it, appends the error to a follow-up prompt, and re-runs, closed-loop self-correction.
 
 **Q:** What's a special requirement of OpenAI's JSON Mode?
 **A:** The string "json" must appear somewhere in the prompt (system or user). The API errors otherwise.
@@ -447,10 +447,10 @@
 ## 🖼️ SECTION 5: MULTI-MODAL PROMPTING
 
 **Q:** Which 2026 model family has the best native VIDEO support?
-**A:** Gemini 2.5 Pro / Flash — accepts video files directly (up to ~1 hour).
+**A:** Gemini 2.5 Pro / Flash, accepts video files directly (up to ~1 hour).
 
 **Q:** Roughly how many tokens does a high-detail 1024×1024 image cost?
-**A:** Approximately 1,500–2,500 tokens — about 2 pages of text equivalent.
+**A:** Approximately 1,500–2,500 tokens, about 2 pages of text equivalent.
 
 **Q:** What is OpenAI's "tile" in vision token billing?
 **A:** A 512×512 region the image is split into. Cost formula approximately `170 × tiles + 85` for high-detail mode.
@@ -459,19 +459,19 @@
 **A:** Often NOT. Pre-rotate the image to upright before sending. One of the most common gotchas.
 
 **Q:** What is "confabulation" in vision LLMs?
-**A:** Confidently wrong output, especially on charts — the model pattern-matches the chart style and invents plausible numbers.
+**A:** Confidently wrong output, especially on charts, the model pattern-matches the chart style and invents plausible numbers.
 
 **Q:** Two main defenses against chart confabulation?
 **A:** (1) Ask for data points individually; (2) run self-consistency (N samples; check agreement).
 
 **Q:** Should you label multi-image prompts?
-**A:** Yes — explicitly: "Image 1: before, Image 2: after". Models conflate without labels.
+**A:** Yes, explicitly: "Image 1: before, Image 2: after". Models conflate without labels.
 
 **Q:** When does dedicated OCR (Textract / Document AI) beat vision LLMs?
 **A:** Extremely dense legal print, Arabic calligraphy, vertical CJK, heavily-degraded thermal-printed receipts.
 
 **Q:** What is Whisper?
-**A:** OpenAI's open-source transcription model — audio-to-text only. Use chat models for understanding.
+**A:** OpenAI's open-source transcription model, audio-to-text only. Use chat models for understanding.
 
 **Q:** When does direct audio (GPT-5 audio / Gemini) beat the Whisper-then-chat two-step?
 **A:** Lower latency, fewer round trips. But you lose the explicit text artifact useful for storage, re-processing, or auditing.
@@ -508,10 +508,10 @@
 **A:** RAG-specific metrics: faithfulness (no hallucination beyond context), answer relevance, context precision, context recall.
 
 **Q:** Cohen's kappa above ~0.7 means what?
-**A:** Substantial inter-annotator agreement between 2 human raters — the task rubric is well-defined.
+**A:** Substantial inter-annotator agreement between 2 human raters, the task rubric is well-defined.
 
 **Q:** What is "pre-registration" of a success metric?
-**A:** Defining the metric and decision rule BEFORE looking at the data — prevents p-hacking and post-hoc rationalization.
+**A:** Defining the metric and decision rule BEFORE looking at the data, prevents p-hacking and post-hoc rationalization.
 
 **Q:** Sample-size rule of thumb to detect a 5pt accuracy difference at 80% power?
 **A:** ~1,500 samples per arm. Smaller effects require quadratically more samples.
@@ -527,22 +527,22 @@
 **A:** Direct (in user message), indirect (via document/tool result), multi-modal (via image/audio/video).
 
 **Q:** Which paper is the seminal indirect-prompt-injection work?
-**A:** Greshake et al. 2023 — *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*.
+**A:** Greshake et al. 2023, *Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection*.
 
 **Q:** What does "DAN" stand for in jailbreak history?
-**A:** "Do Anything Now" — the famous early role-play jailbreak persona.
+**A:** "Do Anything Now", the famous early role-play jailbreak persona.
 
 **Q:** Name 5 jailbreak families.
 **A:** Persona role-play (DAN), encoding (base64/ROT13), multi-turn priming (Crescendo), many-shot, low-resource language translation, authority impersonation, token smuggling (Unicode lookalikes).
 
 **Q:** What's the cardinal rule for tool RESULTS?
-**A:** Tool outputs are ALWAYS untrusted input — NEVER instructions. Wrap in explicit delimiters; treat as user-input grade.
+**A:** Tool outputs are ALWAYS untrusted input, NEVER instructions. Wrap in explicit delimiters; treat as user-input grade.
 
 **Q:** What is Anthropic's Constitutional AI (Bai et al. 2022)?
 **A:** A safety-training paradigm where the model self-critiques outputs against a constitution (list of principles); revisions become training data.
 
 **Q:** What did OpenAI's Wallace et al. 2024 formalize?
-**A:** *The Instruction Hierarchy* — training to make models prefer system > developer > user > tool when instructions conflict.
+**A:** *The Instruction Hierarchy*, training to make models prefer system > developer > user > tool when instructions conflict.
 
 **Q:** What happened with Microsoft Tay in 2016?
 **A:** Twitter chatbot launched without a runtime system prompt; manipulated within hours into producing inflammatory content via "repeat after me" + dataset poisoning. Pulled at hour 24.
@@ -563,7 +563,7 @@
 **A:** HarmBench (CAIS), JailbreakBench, AdvBench. Plus MITRE ATLAS framework and OWASP LLM Top 10.
 
 **Q:** Why use a different model family as the safety-judge LLM?
-**A:** Self-preference bias — a family judging itself can be lenient on its own failure modes.
+**A:** Self-preference bias, a family judging itself can be lenient on its own failure modes.
 
 ---
 
@@ -593,7 +593,7 @@
 **Q:** Three alternatives to LiteLLM?
 **A:** OpenRouter (hosted gateway), Portkey (gateway with caching), AWS Bedrock (first-party multi-provider).
 
-**Q:** Batch APIs (OpenAI, Anthropic) — what's the trade-off?
+**Q:** Batch APIs (OpenAI, Anthropic), what's the trade-off?
 **A:** ~50% discount + relaxed rate limits in exchange for ~24-hour turnaround. Excellent for non-realtime workloads.
 
 **Q:** Sensible TTFT target for a "responsive" chat product?
@@ -603,13 +603,13 @@
 **A:** Vendor regressions on a new snapshot can silently break your prompts. Pinning forces explicit eval before upgrade.
 
 **Q:** What does OpenTelemetry GenAI semconv standardize?
-**A:** Vendor-neutral telemetry conventions for LLM apps — traces, spans, attributes (model, tokens, cost, etc.). Anything that emits OTLP plays well with anything that consumes it.
+**A:** Vendor-neutral telemetry conventions for LLM apps, traces, spans, attributes (model, tokens, cost, etc.). Anything that emits OTLP plays well with anything that consumes it.
 
 **Q:** Three Langfuse-class observability platforms?
 **A:** Langfuse (OSS), Helicone (proxy + cache), LangSmith (LangChain stack), Braintrust, Phoenix (Arize, OSS).
 
 **Q:** What does a shadow-traffic deploy do?
-**A:** Sends real production input through a candidate prompt without serving the output to the user — lets you compare quality offline before turning the canary on.
+**A:** Sends real production input through a candidate prompt without serving the output to the user, lets you compare quality offline before turning the canary on.
 
 **Q:** Per-customer spend caps defend against what?
 **A:** Buggy customer integrations (e.g., infinite-retry loops) that can burn $50K+ overnight. Daily cap + Slack alert at 80% → block at 100%.
@@ -618,80 +618,80 @@
 **A:** PR → regression suite (Module 6) → safety eval (Module 7) → cost projection → block on regressions → shadow traffic → canary 5%→25%→100% → auto-rollback on degradation.
 
 **Q:** Theo's $74K-bill case study fix in one sentence?
-**A:** Prompt caching + semantic cache + tier routing (Haiku/GPT-5/o3 by complexity) + LiteLLM fallbacks + Langfuse observability + per-customer spend caps + CI cost projection — November bill dropped to $4,200 for the same traffic.
+**A:** Prompt caching + semantic cache + tier routing (Haiku/GPT-5/o3 by complexity) + LiteLLM fallbacks + Langfuse observability + per-customer spend caps + CI cost projection, November bill dropped to $4,200 for the same traffic.
 
 ---
 
 ## 📜 SECTION 9: KEY PAPERS & ACRONYMS
 
 **Q:** Brown et al. 2020 = ?
-**A:** GPT-3 paper — *Language Models are Few-Shot Learners*. Defined ICL at scale.
+**A:** GPT-3 paper, *Language Models are Few-Shot Learners*. Defined ICL at scale.
 
 **Q:** Wei et al. 2022 = ?
-**A:** Chain-of-Thought paper — *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models*.
+**A:** Chain-of-Thought paper, *Chain-of-Thought Prompting Elicits Reasoning in Large Language Models*.
 
 **Q:** Kojima et al. 2022 = ?
-**A:** Zero-shot CoT — *Large Language Models are Zero-Shot Reasoners*. The "Let's think step by step" finding.
+**A:** Zero-shot CoT, *Large Language Models are Zero-Shot Reasoners*. The "Let's think step by step" finding.
 
 **Q:** Wang et al. 2022 = ?
-**A:** Self-consistency — *Self-Consistency Improves Chain of Thought Reasoning in Language Models*.
+**A:** Self-consistency, *Self-Consistency Improves Chain of Thought Reasoning in Language Models*.
 
 **Q:** Yao et al. 2022 = ?
-**A:** ReAct — *Synergizing Reasoning and Acting in Language Models*.
+**A:** ReAct, *Synergizing Reasoning and Acting in Language Models*.
 
 **Q:** Yao et al. 2023 = ?
-**A:** Tree-of-Thought — *Deliberate Problem Solving with Large Language Models*.
+**A:** Tree-of-Thought, *Deliberate Problem Solving with Large Language Models*.
 
 **Q:** Bai et al. 2022 = ?
-**A:** Constitutional AI — *Harmlessness from AI Feedback* (Anthropic).
+**A:** Constitutional AI, *Harmlessness from AI Feedback* (Anthropic).
 
 **Q:** Liu et al. 2023 (NeurIPS) = ?
-**A:** *Lost in the Middle* — middle-of-context recall is worst.
+**A:** *Lost in the Middle*, middle-of-context recall is worst.
 
 **Q:** Lu et al. 2022 = ?
-**A:** *Fantastically Ordered Prompts and Where to Find Them* — example order matters 30+ points.
+**A:** *Fantastically Ordered Prompts and Where to Find Them*, example order matters 30+ points.
 
 **Q:** Min et al. 2022 = ?
-**A:** *Rethinking the Role of Demonstrations* — random labels still help; format learning matters.
+**A:** *Rethinking the Role of Demonstrations*, random labels still help; format learning matters.
 
 **Q:** Agarwal et al. 2024 = ?
 **A:** *Many-Shot In-Context Learning* (DeepMind).
 
 **Q:** Wallace et al. 2024 = ?
-**A:** *The Instruction Hierarchy* (OpenAI) — system > developer > user > tool.
+**A:** *The Instruction Hierarchy* (OpenAI), system > developer > user > tool.
 
 **Q:** Greshake et al. 2023 = ?
-**A:** Indirect prompt injection paper — *Not what you've signed up for*.
+**A:** Indirect prompt injection paper, *Not what you've signed up for*.
 
 **Q:** Perez & Ribeiro 2022 = ?
-**A:** *Ignore Previous Prompt: Attack Techniques For Language Models* — direct prompt injection foundational paper.
+**A:** *Ignore Previous Prompt: Attack Techniques For Language Models*, direct prompt injection foundational paper.
 
 **Q:** What does RLHF stand for?
 **A:** Reinforcement Learning from Human Feedback.
 
 **Q:** What does DPO stand for?
-**A:** Direct Preference Optimization — simpler alternative to PPO-based RLHF.
+**A:** Direct Preference Optimization, simpler alternative to PPO-based RLHF.
 
 **Q:** What does TPM / RPM stand for?
-**A:** Tokens-Per-Minute / Requests-Per-Minute — common rate-limit units.
+**A:** Tokens-Per-Minute / Requests-Per-Minute, common rate-limit units.
 
 **Q:** What does SLO stand for?
 **A:** Service Level Objective. Common targets: 99.5% uptime, P95 latency <2s, LLM-judge quality ≥4.2/5, safety violations <0.1%.
 
 **Q:** What does GSM8K stand for?
-**A:** Grade School Math 8K problems — the canonical math reasoning benchmark.
+**A:** Grade School Math 8K problems, the canonical math reasoning benchmark.
 
 **Q:** What does MMLU stand for?
-**A:** Massive Multitask Language Understanding — multi-domain benchmark, often used as a general capability scorecard.
+**A:** Massive Multitask Language Understanding, multi-domain benchmark, often used as a general capability scorecard.
 
 **Q:** What is HELM?
-**A:** Holistic Evaluation of Language Models — Stanford CRFM's academic-grade benchmark suite.
+**A:** Holistic Evaluation of Language Models, Stanford CRFM's academic-grade benchmark suite.
 
 **Q:** What is OWASP LLM Top 10?
 **A:** OWASP's framework of the top LLM-specific security risks (prompt injection, insecure output handling, training data poisoning, excessive agency, etc.).
 
 **Q:** What is MITRE ATLAS?
-**A:** Adversarial Threat Landscape for AI Systems — MITRE's enterprise-grade adversarial-ML threat matrix.
+**A:** Adversarial Threat Landscape for AI Systems, MITRE's enterprise-grade adversarial-ML threat matrix.
 
 ---
 
@@ -700,7 +700,7 @@
 1. Drill 15 minutes daily for 14 days before declaring done.
 2. Filter by section to focus your weakest areas.
 3. After the Final Mock, add a card for EVERY question you missed.
-4. Pair flashcards with the cheat sheets — recite the cheat sheet bullets after each card.
+4. Pair flashcards with the cheat sheets, recite the cheat sheet bullets after each card.
 5. Teach a friend: if you can't explain it in 30 seconds, you don't know it yet.
 
 ## BEFORE THE EXAM
@@ -712,4 +712,4 @@
 
 ---
 
-🎉 **You're ready.** Now ship the capstone — 12 prompts, version-controlled, eval-tied, multi-provider, jailbreak-tested. Welcome to the field.
+🎉 **You're ready.** Now ship the capstone, 12 prompts, version-controlled, eval-tied, multi-provider, jailbreak-tested. Welcome to the field.

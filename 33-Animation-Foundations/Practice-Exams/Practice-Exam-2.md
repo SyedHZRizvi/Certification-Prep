@@ -7,9 +7,9 @@
 
 ### 1. In shape language theory, which combination best describes the design intent for a heroic mentor figure?
 
-A. Triangle (dominant) with circle accents — authority with approachability
-B. Square or rectangle — stability, reliability, dependable strength
-C. Circle (dominant) with triangle accents — friendly but unpredictable
+A. Triangle (dominant) with circle accents, authority with approachability
+B. Square or rectangle, stability, reliability, dependable strength
+C. Circle (dominant) with triangle accents, friendly but unpredictable
 D. Equal use of all three shapes to show psychological complexity
 
 ---
@@ -19,7 +19,7 @@ D. Equal use of all three shapes to show psychological complexity
 A. The color palette works in grayscale before full color is applied
 B. Characters and their poses are readable as black shapes without color or detail
 C. Characters are distinguishable from each other when reduced to small screen size
-D. Both B and C — readability in black and its application to poses and character ID
+D. Both B and C, readability in black and its application to poses and character ID
 
 ---
 
@@ -34,10 +34,10 @@ D. Front view only with labeled proportional measurements
 
 ### 4. In color theory, which property is most important for determining whether two elements can be distinguished from each other in a composition?
 
-A. Hue — the specific named color is the primary identifier
-B. Saturation — intensity determines visual separation
-C. Value — lightness/darkness contrast is the primary determinant of readability
-D. Temperature — warm vs cool contrast separates elements
+A. Hue, the specific named color is the primary identifier
+B. Saturation, intensity determines visual separation
+C. Value, lightness/darkness contrast is the primary determinant of readability
+D. Temperature, warm vs cool contrast separates elements
 
 ---
 
@@ -45,7 +45,7 @@ D. Temperature — warm vs cool contrast separates elements
 
 A. Choosing character hue palettes and then matching the environment
 B. Creating complementary color pairs for all major scene elements
-C. Establishing strong value relationships first — compositions that work in grayscale work in color
+C. Establishing strong value relationships first, compositions that work in grayscale work in color
 D. Setting saturation levels to communicate the genre of each film
 
 ---
@@ -106,10 +106,10 @@ D. The character is in the deepest part of a crouch before a jump
 
 ### 12. Which walk cycle timing best communicates a menacing, powerful antagonist?
 
-A. 8 frames per step — quick, energetic, surprising
-B. 12 frames per step — normal, average person
-C. 20–24 frames per step — slow, deliberate, purposeful
-D. 4 frames per step — aggressive, violent, unpredictable
+A. 8 frames per step, quick, energetic, surprising
+B. 12 frames per step, normal, average person
+C. 20–24 frames per step, slow, deliberate, purposeful
+D. 4 frames per step, aggressive, violent, unpredictable
 
 ---
 
@@ -124,10 +124,10 @@ D. Whether the animator understands lip sync and phoneme mapping
 
 ### 14. In the bouncing ball exercise, drawings should be most closely spaced at:
 
-A. The bottom of the arc — where the ball is fastest
-B. The midpoint of each arc — where the ball is at average speed
-C. The top of the arc — where the ball is slowest (momentarily almost stationary)
-D. The moment of impact — where the ball squashes most dramatically
+A. The bottom of the arc, where the ball is fastest
+B. The midpoint of each arc, where the ball is at average speed
+C. The top of the arc, where the ball is slowest (momentarily almost stationary)
+D. The moment of impact, where the ball squashes most dramatically
 
 ---
 
@@ -143,7 +143,7 @@ D. Following a flatter arc path than a rubber ball due to greater air resistance
 ### 16. The self-critique step "watch without sound" specifically tests:
 
 A. Whether the audio mix is balanced correctly
-B. Whether the emotions and story read clearly from movement alone — proving the animation performs
+B. Whether the emotions and story read clearly from movement alone, proving the animation performs
 C. Whether the character's lip sync is accurate
 D. Whether the scene would work as a silent film without any audio track
 
@@ -151,10 +151,10 @@ D. Whether the scene would work as a silent film without any audio track
 
 ### 17. A bouncing ball that follows a V-shaped (angular) path rather than a parabolic arc most directly violates which principle?
 
-A. Squash and Stretch — the ball should deform on the angular corners
-B. Arcs — living (and physics-following) things move in curves, not straight-line V-shapes
-C. Slow-In/Slow-Out — the ball would change speed at the corners
-D. Follow-Through — the ball should continue past its landing point
+A. Squash and Stretch, the ball should deform on the angular corners
+B. Arcs, living (and physics-following) things move in curves, not straight-line V-shapes
+C. Slow-In/Slow-Out, the ball would change speed at the corners
+D. Follow-Through, the ball should continue past its landing point
 
 ---
 
@@ -179,18 +179,18 @@ D. ArtStation membership is required for IATSE union applications
 ### 20. Which of the following best describes the "feast-or-famine" cycle associated with freelance animation work?
 
 A. Periods of high creative productivity followed by periods of lower inspiration
-B. Variable income — busy periods with multiple clients followed by slow periods with little or no work
+B. Variable income, busy periods with multiple clients followed by slow periods with little or no work
 C. The alternation between character animation (feast) and technical animation (famine)
-D. The animation industry's seasonal hiring pattern — busy in January/February, slow in summer
+D. The animation industry's seasonal hiring pattern, busy in January/February, slow in summer
 
 ---
 
 ### 21. Warm colors in animation composition appear to:
 
-A. Recede — moving away from the viewer to establish depth in backgrounds
-B. Advance — moving toward the viewer, naturally drawing the eye
-C. Stabilize — creating visual anchor points that the eye returns to
-D. Contract — appearing smaller relative to cool-colored elements nearby
+A. Recede, moving away from the viewer to establish depth in backgrounds
+B. Advance, moving toward the viewer, naturally drawing the eye
+C. Stabilize, creating visual anchor points that the eye returns to
+D. Contract, appearing smaller relative to cool-colored elements nearby
 
 ---
 
@@ -221,7 +221,7 @@ D. Storyboarding and pre-visualization
 
 ---
 
-### 25. An animator receives this note: "The secondary actions are too big — they're fighting with the primary action for attention." The correct fix is:
+### 25. An animator receives this note: "The secondary actions are too big, they're fighting with the primary action for attention." The correct fix is:
 
 A. Remove all secondary actions from the scene
 B. Reduce the scale and intensity of secondary actions so they enrich but do not compete with the primary
@@ -243,7 +243,7 @@ D. Alternating between small and large to create visual interest
 
 A. A technical breakdown showing the graph editor and production process
 B. A walk cycle demonstrating fundamental skill mastery
-C. The strongest character performance piece — pantomime or dialogue with clear emotional acting
+C. The strongest character performance piece, pantomime or dialogue with clear emotional acting
 D. A turntable rotating the best character design
 
 ---
@@ -260,7 +260,7 @@ D. Youthful energy and playfulness
 ### 29. A 75% of animation industry jobs NOT being publicly posted demonstrates the importance of:
 
 A. Subscribing to as many job boards as possible to maximize exposure
-B. Networking — most jobs are filled through professional relationships and referrals
+B. Networking, most jobs are filled through professional relationships and referrals
 C. Creating a comprehensive resume that stands out without a personal network
 D. Applying to every studio at the same time, maximizing application volume
 
@@ -269,8 +269,8 @@ D. Applying to every studio at the same time, maximizing application volume
 ### 30. The ideal length for an animation demo reel is:
 
 A. As long as needed to show all your strongest work, typically 3–5 minutes
-B. Exactly 60 seconds — the standard studio review window
-C. 90 seconds, with a maximum of 2 minutes — every second must be strong
+B. Exactly 60 seconds, the standard studio review window
+C. 90 seconds, with a maximum of 2 minutes, every second must be strong
 D. Determined by the studio's submission guidelines, which vary by studio
 
 ---
@@ -278,34 +278,34 @@ D. Determined by the studio's submission guidelines, which vary by studio
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B — Square/rectangle for stable mentor figure
-2.  D — Both B and C (readable as black shape; identifiable and action-readable)
-3.  B — Front, 3/4, side, back, 3/4 back
-4.  C — Value (lightness/darkness)
-5.  C — Value relationships first
-6.  C — Riley's deteriorating emotional state
-7.  B — Planning document showing the full film's color arc
-8.  B — Client review, streaming, web
-9.  B — 3 copies, 2 media types, 1 off-site
-10. B — Alpha channel (transparency) support
-11. B — Body drops as weight transfers after contact
-12. C — 20–24 frames = menacing, deliberate
-13. B — Emotion and narrative through movement alone
-14. C — Top of the arc (slowest, almost stationary)
-15. C — Extreme squash and breaking on final contact
-16. B — Story reads from movement alone
-17. B — Arcs — should follow curves, not V-shapes
-18. C — Joint clarity, detail placement, silhouette in extreme poses
-19. B — Dominant in game art industry
-20. B — Variable income; busy/slow cycle
-21. B — Advance (move toward viewer)
-22. B — Timing errors requiring re-timing all completed scenes
-23. B — Three composition options per significant beat
-24. C — 2D character animation at major studios
-25. B — Reduce secondary so it enriches without competing
-26. C — Progressively smaller and faster (energy loss)
-27. C — Strongest character performance/pantomime
-28. C — Calm, trustworthiness, or melancholy/isolation
-29. B — Networking is essential
-30. C — 90 seconds ideal, 2 minutes maximum
+1.  B: Square/rectangle for stable mentor figure
+2.  D: Both B and C (readable as black shape; identifiable and action-readable)
+3.  B: Front, 3/4, side, back, 3/4 back
+4.  C: Value (lightness/darkness)
+5.  C: Value relationships first
+6.  C: Riley's deteriorating emotional state
+7.  B: Planning document showing the full film's color arc
+8.  B: Client review, streaming, web
+9.  B: 3 copies, 2 media types, 1 off-site
+10. B: Alpha channel (transparency) support
+11. B: Body drops as weight transfers after contact
+12. C: 20–24 frames = menacing, deliberate
+13. B: Emotion and narrative through movement alone
+14. C: Top of the arc (slowest, almost stationary)
+15. C: Extreme squash and breaking on final contact
+16. B: Story reads from movement alone
+17. B: Arcs, should follow curves, not V-shapes
+18. C: Joint clarity, detail placement, silhouette in extreme poses
+19. B: Dominant in game art industry
+20. B: Variable income; busy/slow cycle
+21. B: Advance (move toward viewer)
+22. B: Timing errors requiring re-timing all completed scenes
+23. B: Three composition options per significant beat
+24. C: 2D character animation at major studios
+25. B: Reduce secondary so it enriches without competing
+26. C: Progressively smaller and faster (energy loss)
+27. C: Strongest character performance/pantomime
+28. C: Calm, trustworthiness, or melancholy/isolation
+29. B: Networking is essential
+30. C: 90 seconds ideal, 2 minutes maximum
 ```

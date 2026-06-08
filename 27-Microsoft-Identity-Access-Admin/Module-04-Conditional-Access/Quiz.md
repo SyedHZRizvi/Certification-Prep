@@ -110,7 +110,7 @@ D. Delete it after creation
 
 ---
 
-### Q14. **Yes/No** — Break-glass. *(Understand)*
+### Q14. **Yes/No**, Break-glass. *(Understand)*
 
 **S1:** Break-glass accounts should use phone-based MFA for portability.
 **S2:** Break-glass accounts must be excluded from EVERY CA policy.
@@ -163,7 +163,7 @@ D. A Sentinel alert fires
 
 ---
 
-### Q20. **Yes/No** — Policy mechanics. *(Understand)*
+### Q20. **Yes/No**, Policy mechanics. *(Understand)*
 
 **S1:** Security Defaults and Conditional Access can be enabled together.
 **S2:** Per-user MFA settings override Conditional Access policies.
@@ -208,13 +208,13 @@ D. Identity Protection requires re-authentication
 
 ### Q24. CAE is enabled by default for modern M365 apps. To force-extend tokens during an Entra service degradation, an admin can: *(Apply)*
 A. Disable Identity Protection
-B. Configure "Resilience defaults" — leave enabled (the default) to extend tokens during degradation
+B. Configure "Resilience defaults", leave enabled (the default) to extend tokens during degradation
 C. Increase token TTL manually
 D. Move users to Free tier
 
 ---
 
-### Q25. **Yes/No** — Identity Protection. *(Evaluate)*
+### Q25. **Yes/No**, Identity Protection. *(Evaluate)*
 
 **S1:** Identity Protection automatically blocks compromised accounts without a policy.
 **S2:** A user risk policy can require password change.
@@ -242,7 +242,7 @@ Identity Protection (risk-based CA) ships at P2.
 The two safe-testing tools. Off doesn't test; On enforces.
 
 ### Q5: **B. Defaults to Allow without any controls**
-A policy with no Grant control implicitly allows the session — usually a mistake.
+A policy with no Grant control implicitly allows the session, usually a mistake.
 
 ### Q6: **B. Lowers Identity Protection risk weighting; can still trigger CA controls**
 "Trusted" is a signal, not a bypass.
@@ -298,7 +298,7 @@ Sign-in risk requires P2 + Identity Protection enabled.
 ### Q23: **B. Sign-in frequency session control is set to "Every time"**
 Common misconfig. Lower it (e.g. 7 days) or disable that session control.
 
-### Q24: **B. Configure "Resilience defaults" — leave enabled (the default) to extend tokens during degradation**
+### Q24: **B. Configure "Resilience defaults", leave enabled (the default) to extend tokens during degradation**
 Resilience defaults extend token lifetimes during Entra degradation to avoid mass sign-out.
 
 ### Q25: **B. No / Yes / Yes**

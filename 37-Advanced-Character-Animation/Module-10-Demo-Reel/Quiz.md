@@ -21,10 +21,10 @@ D. The weakest shot should appear last to minimize damage
 ---
 
 ### Q3. Where should your single best shot appear in the reel?
-A. In the middle — as the centerpiece  
-B. Last — to leave the strongest impression  
-C. First — recruiter attention is highest at the opening  
-D. Second — the first shot is a "warm-up" for the best shot  
+A. In the middle, as the centerpiece  
+B. Last, to leave the strongest impression  
+C. First, recruiter attention is highest at the opening  
+D. Second, the first shot is a "warm-up" for the best shot  
 
 ---
 
@@ -45,10 +45,10 @@ D. Major studios have audio recognition software that automatically rejects comm
 ---
 
 ### Q6. In the structured peer review process, how many questions should you ask your reviewer?
-A. One — only "Which shot made you most engaged?"  
-B. Two — "Which shot made you most engaged?" and "Was there a moment you wanted to look away?"  
+A. One, only "Which shot made you most engaged?"  
+B. Two, "Which shot made you most engaged?" and "Was there a moment you wanted to look away?"  
 C. As many as needed to understand their feedback  
-D. None — let them give free-form feedback  
+D. None, let them give free-form feedback  
 
 ---
 
@@ -62,7 +62,7 @@ D. Physical comedy with broad exaggeration
 
 ### Q8. The "first 5 seconds test" involves:
 A. Timing how long the title card is on screen  
-B. Watching the reviewer's eyes during the reel's first 5 seconds — leaning back means change the opener  
+B. Watching the reviewer's eyes during the reel's first 5 seconds, leaning back means change the opener  
 C. Checking that the first 5 seconds contain no text or titles  
 D. Ensuring the first shot is exactly 5 seconds long  
 
@@ -109,7 +109,7 @@ D. Submit a separate reel for each studio position you apply for
 ---
 
 ### Q14. For a dialogue shot on the demo reel, music volume should be:
-A. Silent — all dialogue shots should have no music  
+A. Silent, all dialogue shots should have no music  
 B. Equal to or louder than the dialogue  
 C. Lower than the dialogue so the performance is clearly audible  
 D. The same volume as all other shots in the reel  
@@ -117,7 +117,7 @@ D. The same volume as all other shots in the reel
 ---
 
 ### Q15. A 15+ second shot should appear on a reel:
-A. Never — shots over 12 seconds are always too long  
+A. Never, shots over 12 seconds are always too long  
 B. As the opening shot to demonstrate range  
 C. At most once, and only if every second is extraordinary  
 D. Only on reels targeting VFX studios, not animation studios  
@@ -135,7 +135,7 @@ D. Using orchestral music rather than pop music
 ### Q17. The title card on a reel should include:
 A. Your name, email, and portfolio/website link  
 B. Your name, home address, and phone number  
-C. Your name only — contact information on a separate page  
+C. Your name only, contact information on a separate page  
 D. Your complete CV and list of software skills  
 
 ---
@@ -174,15 +174,15 @@ D. 480p (SD) is acceptable
 
 ### Q22. Which music approach is most appropriate for a character animation reel?
 A. A recognizable classic rock song that the recruiter will enjoy  
-B. Silence — no music at all  
+B. Silence, no music at all  
 C. Royalty-free orchestral/cinematic music from a licensed library  
-D. Music created by your friend's band — personal connection adds authenticity  
+D. Music created by your friend's band, personal connection adds authenticity  
 
 ---
 
 ### Q23. The "weakest shot" principle means a reel with 8 shots where 2 are average will be perceived as:
-A. Stronger than a 6-shot reel — more content demonstrates more output  
-B. An average reel, not a strong one — the 2 weak shots drag down the 6 strong ones  
+A. Stronger than a 6-shot reel, more content demonstrates more output  
+B. An average reel, not a strong one, the 2 weak shots drag down the 6 strong ones  
 C. The same as a 6-shot reel of all strong shots  
 D. Stronger because variety includes a range of quality levels  
 
@@ -199,28 +199,28 @@ D. Netflix submissions are only accepted by invitation
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — 60–90 seconds professional standard
-Q2.  C — Weakest shot: all shots are watched; one average shot is remembered
-Q3.  C — Best shot first: recruiter attention is highest at opening
-Q4.  B — Self-edit test: audio off; does each shot earn its time?
-Q5.  B — Famous song: recruiter associates emotions with song not work
-Q6.  B — Two questions: engaged moment + wanted-to-look-away moment
-Q7.  C — Pixar: emotional dialogue + subtle performance = critical
-Q8.  B — First 5 seconds test: watch reviewer's eyes; leaning back = change opener
-Q9.  B — Both reviewers identify same weak shot: cut it
-Q10. B — Riot: physical impact + 60fps + state machine awareness
-Q11. C — Sweet spot: 75–85 seconds
-Q12. D — Front-loading is WRONG (reel dies in the middle)
-Q13. B — Show what you want hired for; evaluated accordingly
-Q14. C — Dialogue shots: music lower than dialogue
-Q15. C — 15+ seconds: once maximum; every second must be extraordinary
-Q16. B — DreamWorks killer: generic shots with no character identity
-Q17. A — Title card: name + email + portfolio/website
-Q18. B — Riot extra: game portfolio with state machines + 60fps
-Q19. C — Never defend choices in peer review; only receive
-Q20. B — Variety: different categories per shot (dialogue, mechanics, creature, etc.)
-Q21. B — 1080p minimum
-Q22. C — Royalty-free orchestral/cinematic music
-Q23. B — 8 shots with 2 weak = average reel (weak shots remembered)
-Q24. B — Netflix: multi-style studio; style range and versatility required
+Q1.  B, 60–90 seconds professional standard
+Q2.  C, Weakest shot: all shots are watched; one average shot is remembered
+Q3.  C, Best shot first: recruiter attention is highest at opening
+Q4.  B, Self-edit test: audio off; does each shot earn its time?
+Q5.  B, Famous song: recruiter associates emotions with song not work
+Q6.  B, Two questions: engaged moment + wanted-to-look-away moment
+Q7.  C, Pixar: emotional dialogue + subtle performance = critical
+Q8.  B, First 5 seconds test: watch reviewer's eyes; leaning back = change opener
+Q9.  B, Both reviewers identify same weak shot: cut it
+Q10. B, Riot: physical impact + 60fps + state machine awareness
+Q11. C, Sweet spot: 75–85 seconds
+Q12. D, Front-loading is WRONG (reel dies in the middle)
+Q13. B, Show what you want hired for; evaluated accordingly
+Q14. C, Dialogue shots: music lower than dialogue
+Q15. C, 15+ seconds: once maximum; every second must be extraordinary
+Q16. B, DreamWorks killer: generic shots with no character identity
+Q17. A, Title card: name + email + portfolio/website
+Q18. B, Riot extra: game portfolio with state machines + 60fps
+Q19. C, Never defend choices in peer review; only receive
+Q20. B, Variety: different categories per shot (dialogue, mechanics, creature, etc.)
+Q21. B, 1080p minimum
+Q22. C, Royalty-free orchestral/cinematic music
+Q23. B, 8 shots with 2 weak = average reel (weak shots remembered)
+Q24. B, Netflix: multi-style studio; style range and versatility required
 ```

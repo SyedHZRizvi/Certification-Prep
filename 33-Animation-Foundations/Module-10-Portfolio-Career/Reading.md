@@ -6,11 +6,11 @@
 
 ## 📖 A Story: Two Reels, One Job
 
-In 2024, a mid-sized game animation studio was hiring for a junior animator role. They received 200 applications. The hiring animator watched every reel — but the median reel viewing time was 23 seconds before a decision was made.
+In 2024, a mid-sized game animation studio was hiring for a junior animator role. They received 200 applications. The hiring animator watched every reel, but the median reel viewing time was 23 seconds before a decision was made.
 
 Reel A: opened with a character turning around in place (unimpressive, static), then cut to a walk cycle (competent), then cut to a facial animation test (nice, but appeared at 1:30), then cut to a long-form short film (too long, reviewer stopped watching at 2:00). Total strong work: 45 seconds total runtime buried in 2:15 of filler.
 
-Reel B: opened with the strongest shot first — a dynamic pantomime performance that showed clear weight, timing, and personality. Then three more shots in rapid sequence: walk cycle with personality, creature locomotion, facial performance. Each shot perfectly cut to show exactly the strongest frames, no shot longer than 20 seconds. Total runtime: 1:45. Every second was strong.
+Reel B: opened with the strongest shot first, a dynamic pantomime performance that showed clear weight, timing, and personality. Then three more shots in rapid sequence: walk cycle with personality, creature locomotion, facial performance. Each shot perfectly cut to show exactly the strongest frames, no shot longer than 20 seconds. Total runtime: 1:45. Every second was strong.
 
 Reel B got the interview. Reel A did not.
 
@@ -22,19 +22,19 @@ The work quality in both reels was comparable. The reel strategy was not.
 
 ### The Fundamental Rules
 
-1. **Open with your best shot** — recruiters decide in the first 10 seconds
-2. **Every shot must be your best** — the weakest shot in your reel determines your level
-3. **One to two minutes maximum** — 90 seconds is ideal; 2 minutes is the absolute maximum
-4. **Tailor to the role** — a character animation reel for a character animation role; a creature locomotion reel for a creature role
-5. **No music that competes with performance** — music should support, not distract from, the animation
-6. **Label every shot** — character name, software, your contribution (if collaborative work)
+1. **Open with your best shot**, recruiters decide in the first 10 seconds
+2. **Every shot must be your best**, the weakest shot in your reel determines your level
+3. **One to two minutes maximum**, 90 seconds is ideal; 2 minutes is the absolute maximum
+4. **Tailor to the role**, a character animation reel for a character animation role; a creature locomotion reel for a creature role
+5. **No music that competes with performance**, music should support, not distract from, the animation
+6. **Label every shot**, character name, software, your contribution (if collaborative work)
 
 ### What to Include
 
 | Shot Type | Why Include It |
 |-----------|--------------|
-| **Character pantomime** | Proves acting ability — the highest-value skill |
-| **Walk cycle with personality** | Industry standard test — must be in every reel |
+| **Character pantomime** | Proves acting ability, the highest-value skill |
+| **Walk cycle with personality** | Industry standard test, must be in every reel |
 | **Dynamic action** | Proves you understand weight and momentum |
 | **Dialogue/lip sync** | Required for character animation roles |
 | **Creature locomotion** | High-value differentiation in film/game studios |
@@ -61,10 +61,10 @@ These are the specific errors that recruiters and hiring animators cite most oft
 | **Shot length over 30 seconds** | Reviewers skip forward; you lose control of what they see | Cut to the strongest 15–20 seconds of each shot; never show full animations if the strong moments are in the middle |
 | **No text labels** | Reviewer cannot assess your actual contribution in collaborative work | Label every shot: character name, software, your role if collaborative |
 | **Music that requires full attention** | The animation competes with the music for cognitive bandwidth | Use atmospheric instrumental music at low volume; no lyrics |
-| **Technical errors visible on reel** | Foot sliding, geometry interpenetration, visible rig — these show you don't review your own work | Review every shot frame by frame before including it |
+| **Technical errors visible on reel** | Foot sliding, geometry interpenetration, visible rig, these show you don't review your own work | Review every shot frame by frame before including it |
 | **No website or context** | The reel alone cannot communicate who you are | Include a link to a portfolio website where additional work and context lives |
 
-🎯 **What the exam tests:** The fundamental principle that the weakest shot on the reel defines the hiring conversation — not the strongest. Know that reel curation is a skill distinct from animation skill.
+🎯 **What the exam tests:** The fundamental principle that the weakest shot on the reel defines the hiring conversation, not the strongest. Know that reel curation is a skill distinct from animation skill.
 
 ---
 
@@ -72,7 +72,7 @@ These are the specific errors that recruiters and hiring animators cite most oft
 
 | Platform | Best For | Notes |
 |----------|---------|-------|
-| **Vimeo** | Professional reel hosting | Ad-free, high quality, password protection for private links — industry preferred |
+| **Vimeo** | Professional reel hosting | Ad-free, high quality, password protection for private links, industry preferred |
 | **ArtStation** | Game industry, character design, concept art | Dominant in game art; excellent for still images + videos |
 | **Behance** | Motion design, illustration | More popular in motion design than character animation |
 | **LinkedIn** | Professional network, recruiter visibility | Include a reel link; not a primary portfolio host |
@@ -97,14 +97,14 @@ The careers of Pixar's founders illustrate that the path from student to studio 
 - *Luxo Jr.* (1986) established Lasseter's worldwide reputation from a 2-minute student-level exercise
 - Went on to direct *Toy Story* (1995) and become Chief Creative Officer of Pixar and later Disney Animation
 
-**The lesson from Lasseter's story:** The portfolio work that mattered — *Luxo Jr.* — was work he made because he believed in it, not because it was calculated to impress a studio. The film demonstrated what he could do; the demonstration created the opportunity.
+**The lesson from Lasseter's story:** The portfolio work that mattered *Luxo Jr.* was work he made because he believed in it, not because it was calculated to impress a studio. The film demonstrated what he could do; the demonstration created the opportunity.
 
 **Ed Catmull's path:**
 - PhD in computer science from the University of Utah; his thesis included foundational work in texture mapping and subdivision surfaces
-- Not an animator; a researcher — but understood animation well enough to identify the talent (Lasseter) and build the infrastructure that made Pixar possible
+- Not an animator; a researcher, but understood animation well enough to identify the talent (Lasseter) and build the infrastructure that made Pixar possible
 - Never had a "reel" in the conventional sense; his portfolio was peer-reviewed academic papers and working software
 
-**The combined lesson:** The animation industry has room for multiple types of exceptional people. The "reel strategy" described in this module is the path for character animators. There are parallel paths for technical directors, pipeline engineers, production managers, and directors — each with different portfolio conventions and different career trajectories.
+**The combined lesson:** The animation industry has room for multiple types of exceptional people. The "reel strategy" described in this module is the path for character animators. There are parallel paths for technical directors, pipeline engineers, production managers, and directors, each with different portfolio conventions and different career trajectories.
 
 ---
 
@@ -132,13 +132,13 @@ The careers of Pixar's founders illustrate that the path from student to studio 
 1. Post work consistently on social media (Twitter/X, Instagram, LinkedIn)
 2. Attend animation festivals (Annecy, Ottawa, CTN Animation Expo)
 3. Take online courses from working professionals (the student community is the next professional community)
-4. Comment thoughtfully on professionals' work — not for flattery, but to demonstrate genuine knowledge
+4. Comment thoughtfully on professionals' work, not for flattery, but to demonstrate genuine knowledge
 
 ---
 
 ## 🌍 The Global Animation Industry: Where Studios Are and What They Pay
 
-The animation industry is genuinely global, and career planning benefits from understanding the full landscape — not just the Los Angeles and San Francisco studio concentrations.
+The animation industry is genuinely global, and career planning benefits from understanding the full landscape, not just the Los Angeles and San Francisco studio concentrations.
 
 ### Major Animation Production Centers (2024–2025)
 
@@ -174,7 +174,7 @@ The animation industry is genuinely global, and career planning benefits from un
 | | Studio (Full-Time) | Freelance |
 |-|-------------------|-----------|
 | **Income stability** | Reliable salary + benefits | Variable; feast/famine cycles |
-| **Creative control** | Low — you execute the director's vision | Higher — you pitch your own projects |
+| **Creative control** | Low you execute the director's vision | Higher you pitch your own projects |
 | **Benefits** | Health insurance, retirement, paid leave | None provided; you buy your own |
 | **Skill growth** | Deep in your specialty | Broad across multiple skills |
 | **Networking** | Strong internally | Wide across many clients |
@@ -227,7 +227,7 @@ Entering your short film in festivals is one of the most reliable ways to build 
 | **Sundance Film Festival (Animation)** | Park City, Utah | High | Short films under 15 min | US industry visibility; press coverage |
 | **Student Academy Awards (Student Oscars)** | Hollywood, CA | High | Animation category | AMPAS visibility; opens industry doors in Los Angeles |
 | **SIGGRAPH Electronic Theater** | Varies | High (technical) | Student research | VFX and technical pipeline connections; gaming industry |
-| **Annie Awards** | Los Angeles, CA | Highest industry | — (professional only) | Target after first studio credits |
+| **Annie Awards** | Los Angeles, CA | Highest industry |, (professional only) | Target after first studio credits |
 | **CTN Animation Expo** | Los Angeles, CA | High | Student showcase | Direct recruiter contact; portfolio review sessions |
 | **CalArts Character Animation Showcase** | Valencia, CA | High among students | CalArts only | Heavy recruiter attendance from LA studios |
 
@@ -265,7 +265,7 @@ The three-year timeline to being competitive for Pixar, Disney Feature, or major
 
 ## 🔬 The Interview: What Studios Actually Test
 
-Understanding what studio hiring processes test — beyond the reel — helps you prepare for the full experience of breaking in.
+Understanding what studio hiring processes test beyond the reel helps you prepare for the full experience of breaking in.
 
 ### Typical Studio Interview Process (Feature Animation)
 
@@ -276,9 +276,9 @@ Understanding what studio hiring processes test — beyond the reel — helps yo
 | **Art test (many studios)** | Take-home animation test (2–5 days) | How you perform on assigned work, not self-directed work |
 | **In-person / video interview** | 45–90 min | Deeper craft conversation, studio fit, how you take notes |
 | **Reference check** | Former supervisors / instructors contacted | Reliability, collaborative skills, how you respond to feedback |
-| **Offer** | Contract or full-time | — |
+| **Offer** | Contract or full-time |, |
 
-**The art test reality:** Most major studios give art tests to all finalists — including experienced candidates. The test is usually a scene test: you receive an audio file (a line of dialogue or a sound), a character rig, and 48–72 hours to produce a finished shot. The test evaluates:
+**The art test reality:** Most major studios give art tests to all finalists, including experienced candidates. The test is usually a scene test: you receive an audio file (a line of dialogue or a sound), a character rig, and 48–72 hours to produce a finished shot. The test evaluates:
 - How you approach a given assignment (reference gathering, thumbnailing)
 - Your working speed
 - The quality of your output on a tight deadline
@@ -290,16 +290,16 @@ Understanding what studio hiring processes test — beyond the reel — helps yo
 
 ## 🔬 The Interview: What Studios Actually Test
 
-Understanding what studio hiring processes test — beyond the reel — helps you prepare for the full experience of breaking in.
+Understanding what studio hiring processes test beyond the reel helps you prepare for the full experience of breaking in.
 
 ---
 
 ## 💬 Socratic Questions for Discussion
 
 1. The hiring animator in the opening story made a decision within 23 seconds of watching each reel. Is this a failure of the hiring process, or an accurate simulation of how audiences engage with animation in the attention economy? What are the implications for how animators should present their work?
-2. The statistic that 75% of animation jobs are not publicly posted reflects a network-dependent hiring culture. Is this fair? What does it mean for animators who do not have access to strong professional networks — those who studied at smaller schools, in smaller cities, or in countries with less developed animation industries?
+2. The statistic that 75% of animation jobs are not publicly posted reflects a network-dependent hiring culture. Is this fair? What does it mean for animators who do not have access to strong professional networks, those who studied at smaller schools, in smaller cities, or in countries with less developed animation industries?
 3. The salary tables show that animation directors at major studios earn $180K–$280K base. Given that reaching director level takes 15–20 years, how should an aspiring animator think about career financial planning differently from a profession with faster advancement timelines?
-4. Freelance animation income is described as "feast or famine." In what ways has the growth of streaming platforms (Netflix, Disney+, Apple TV+, Amazon Prime) changed the freelance animation market — for better or worse — compared to the traditional broadcast TV market that preceded it?
+4. Freelance animation income is described as "feast or famine." In what ways has the growth of streaming platforms (Netflix, Disney+, Apple TV+, Amazon Prime) changed the freelance animation market for better or worse compared to the traditional broadcast TV market that preceded it?
 
 ---
 
@@ -309,7 +309,7 @@ These are the specific behaviors and decisions that experienced studio recruiter
 
 | Mistake | Why It Costs the Interview | Correction |
 |---------|--------------------------|-----------|
-| **Reel not curated — just everything you made** | Weak shots undermine strong shots; recruiter cannot tell what your "real" level is | One reel; your absolute best 5–7 shots; everything else goes to a separate "work in progress" page |
+| **Reel not curated, just everything you made** | Weak shots undermine strong shots; recruiter cannot tell what your "real" level is | One reel; your absolute best 5–7 shots; everything else goes to a separate "work in progress" page |
 | **No password-protected link for specific applications** | Generic reel link means you can't track viewership or customize for roles | Vimeo Pro allows password-protected links with view notifications |
 | **Collaborative work without clear attribution** | Recruiter cannot assess your contribution; assumes least impressive elements are yours | Label every collaborative shot with your specific contribution |
 | **Social media presence contradicts professionalism** | Recruiters look at all public accounts; contradictory tone creates uncertainty | Ensure all public social accounts reflect the professional identity you want |
@@ -348,11 +348,11 @@ Most animation application guidance focuses on the reel, but the cover letter (o
 
 You now know:
 
-- 🎬 **Demo reel strategy** — open with best, no filler, 90 seconds, tailor per role
-- 🌐 **Platform selection** — Vimeo for reel hosting, ArtStation for game/film
-- 🔍 **Job search** — where jobs are posted, the networking reality (75% unpublished)
-- 💰 **Freelance vs studio** — honest comparison of each path
-- 📊 **Career ladders** — salary bands at Disney/Pixar, Riot, Netflix
+- 🎬 **Demo reel strategy**, open with best, no filler, 90 seconds, tailor per role
+- 🌐 **Platform selection**, Vimeo for reel hosting, ArtStation for game/film
+- 🔍 **Job search**, where jobs are posted, the networking reality (75% unpublished)
+- 💰 **Freelance vs studio**, honest comparison of each path
+- 📊 **Career ladders**, salary bands at Disney/Pixar, Riot, Netflix
 
 **Congratulations:** You have completed Animation Foundations. The next step is to animate.
 
@@ -367,18 +367,18 @@ You now know:
 
 ## 📚 Further Reading
 
-- 📘 Catmull, E. (2014). *Creativity Inc.* Random House. — Inside Pixar's creative culture.
+- 📘 Catmull, E. (2014). *Creativity Inc.* Random House., Inside Pixar's creative culture.
 - 📘 Lasseter, J. & Daly, S. (1995). *Toy Story: The Art and Making of the Animated Film.* Hyperion.
-- 🌐 [Animation Career Review](https://www.animationcareers.net) — Salary surveys, school rankings, career advice.
-- 🌐 [AWN (Animation World Network)](https://www.awn.com) — Industry news and career resources.
+- 🌐 [Animation Career Review](https://www.animationcareers.net), Salary surveys, school rankings, career advice.
+- 🌐 [AWN (Animation World Network)](https://www.awn.com), Industry news and career resources.
 
 **Advanced / Supplementary:**
-- 📘 Catmull, E. (2014). *Creativity Inc.* Random House. — Inside Pixar's production culture; essential context for understanding what major studios value beyond technical skill.
-- 📘 Selby, A. (2009). *Animation in Process.* Laurence King. — Behind-the-scenes of multiple studios; gives context for what the professional environment looks like across different production types.
-- 🌐 [Animation Career Review (animationcareers.net)](https://www.animationcareers.net) — Annual salary surveys, school rankings, and career path documentation; data-driven resource.
-- 🌐 [Animation Mentor Blog](https://animationmentor.com/blog) — Industry professionals on career decisions, reel strategy, and breaking in; free content from the school's working-professional instructors.
-- 🌐 [iAnimate Resources](https://www.ianimate.net) — Feature film and game animation training from current studio employees; industry contact density is very high.
-- 🌐 [LinkedIn Animation Industry Groups](https://www.linkedin.com/search/results/groups/?keywords=animation) — The primary professional networking platform for animation; keeping an active updated profile is a baseline professional expectation.
-- 🎬 *The Pixar Story* (2007, documentary) — Documents the founding, near-death, and creative evolution of Pixar; essential context for understanding how studio culture shapes creative output and career trajectories.
+- 📘 Catmull, E. (2014). *Creativity Inc.* Random House., Inside Pixar's production culture; essential context for understanding what major studios value beyond technical skill.
+- 📘 Selby, A. (2009). *Animation in Process.* Laurence King., Behind-the-scenes of multiple studios; gives context for what the professional environment looks like across different production types.
+- 🌐 [Animation Career Review (animationcareers.net)](https://www.animationcareers.net), Annual salary surveys, school rankings, and career path documentation; data-driven resource.
+- 🌐 [Animation Mentor Blog](https://animationmentor.com/blog), Industry professionals on career decisions, reel strategy, and breaking in; free content from the school's working-professional instructors.
+- 🌐 [iAnimate Resources](https://www.ianimate.net), Feature film and game animation training from current studio employees; industry contact density is very high.
+- 🌐 [LinkedIn Animation Industry Groups](https://www.linkedin.com/search/results/groups/?keywords=animation), The primary professional networking platform for animation; keeping an active updated profile is a baseline professional expectation.
+- 🎬 *The Pixar Story* (2007, documentary), Documents the founding, near-death, and creative evolution of Pixar; essential context for understanding how studio culture shapes creative output and career trajectories.
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*

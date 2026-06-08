@@ -8,7 +8,7 @@
 
 | Type | When |
 |------|------|
-| **Win32 (.intunewin)** | Modern default — any custom app |
+| **Win32 (.intunewin)** | Modern default, any custom app |
 | **LOB (raw MSI)** | Simple MSI, no extras |
 | **Microsoft Store app (new)** | Store apps |
 | **Microsoft 365 Apps** | Office Click-to-Run built-in |

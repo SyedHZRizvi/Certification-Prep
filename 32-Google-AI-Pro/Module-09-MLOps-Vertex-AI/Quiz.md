@@ -16,7 +16,7 @@ D. Lab → notebook → SSH
 
 ### Q2. Vertex AI Pipelines is built on: *(Remember)*
 A. Apache Airflow
-B. Kubeflow Pipelines v2 (KFP) — also supports TFX
+B. Kubeflow Pipelines v2 (KFP), also supports TFX
 C. Jenkins
 D. Cloud Composer
 
@@ -106,7 +106,7 @@ D. Cloud SQL
 A. Only scheduled cron
 B. Scheduled, data-driven (Pub/Sub events), drift-driven (Monitoring alerts), performance-driven (metric below threshold)
 C. Manual only
-D. None — CT is online learning
+D. None, CT is online learning
 
 ---
 
@@ -114,7 +114,7 @@ D. None — CT is online learning
 A. ~2/month (no change)
 B. ~25/month
 C. ~1000/month
-D. None — they stopped shipping
+D. None, they stopped shipping
 
 ---
 
@@ -231,7 +231,7 @@ D. Self-host Kubeflow
 ### Q21: **B. Vertex AI consolidated**
 ### Q22: **B. High availability**
 ### Q23: **B. Distributed tracing + per-span timing**
-### Q24: **C. Model Registry stores predictions — FALSE**
+### Q24: **C. Model Registry stores predictions, FALSE**
 It stores models, not predictions.
 ### Q25: **B. The full MLOps stack**
 
@@ -245,4 +245,4 @@ It stores models, not predictions.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 10 — Production Patterns & Capstone](../Module-10-Production-Capstone/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 10, Production Patterns & Capstone](../Module-10-Production-Capstone/Reading.md)

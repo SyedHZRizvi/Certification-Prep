@@ -1,9 +1,9 @@
 # Module 8: Monitoring, Reporting & Troubleshooting 📊
 
-> **Why this module matters:** Every other module assumed things worked. Module 8 is what you do when they don't. Endpoint analytics, Intune reports, the MDM diagnostics report, log collection — these are the tools that turn 4-hour helpdesk tickets into 4-minute fixes. MD-102 weights monitoring and troubleshooting at ~10–15% and the exam loves "device sync stuck" and "Autopilot failed" scenarios.
+> **Why this module matters:** Every other module assumed things worked. Module 8 is what you do when they don't. Endpoint analytics, Intune reports, the MDM diagnostics report, log collection, these are the tools that turn 4-hour helpdesk tickets into 4-minute fixes. MD-102 weights monitoring and troubleshooting at ~10–15% and the exam loves "device sync stuck" and "Autopilot failed" scenarios.
 
 > **Prerequisites for this module.** Before starting:
-> - Modules 1–7 — this module references all of them.
+> - Modules 1–7, this module references all of them.
 > - Comfort reading Windows Event Viewer entries.
 > - Awareness of KQL syntax basics (Module 6 introduced Advanced Hunting).
 
@@ -19,11 +19,11 @@ Maria's Surface Laptop 5 rollout to the EMEA finance team is in week 2. Tickets 
 
 She has 87 devices and 47 tickets. Random sampling? Not enough signal. She opens **Intune → Reports → Endpoint analytics**:
 
-- **Startup performance score: 42/100** — far below the Microsoft baseline of 80. Specifically, *Sign-in time* averages **187 seconds** vs. baseline 65.
-- **Application reliability score: 38/100** — Outlook is the top crasher with 122 crashes/week across the fleet.
-- **Work-from-anywhere score: 71/100** — Defender for Endpoint configuration is missing for 22 devices.
-- **Resource performance: 65/100** — CPU at 80%+ during business hours on 33 devices.
-- **Battery health: 91/100** — fine.
+- **Startup performance score: 42/100**, far below the Microsoft baseline of 80. Specifically, *Sign-in time* averages **187 seconds** vs. baseline 65.
+- **Application reliability score: 38/100**, Outlook is the top crasher with 122 crashes/week across the fleet.
+- **Work-from-anywhere score: 71/100**, Defender for Endpoint configuration is missing for 22 devices.
+- **Resource performance: 65/100**, CPU at 80%+ during business hours on 33 devices.
+- **Battery health: 91/100**, fine.
 
 Proactive remediations show a known issue with the Surface firmware version 3.1.7 causing the sign-in time problem. There's an existing **detection + remediation script** from Microsoft that patches the registry workaround. She assigns the remediation to the affected device group; within 24 hours every Surface in the fleet has the fix; sign-in time drops to 71 seconds; tickets stop.
 
@@ -31,7 +31,7 @@ Proactive remediations show a known issue with the Surface firmware version 3.1.
 
 ---
 
-## 📊 Intune Reports — The Map
+## 📊 Intune Reports, The Map
 
 The Intune admin center has multiple report surfaces. Memorize what each is for:
 
@@ -56,7 +56,7 @@ Endpoint Analytics is the headline monitoring feature. It scores your fleet acro
 |----------|------------------|
 | **Startup performance** | Boot + sign-in time |
 | **Application reliability** | App crashes per device per week |
-| **Work-from-anywhere** | Cloud-readiness signals — Entra join, Intune enrollment, Autopilot ready, Cloud-managed identity, OS version |
+| **Work-from-anywhere** | Cloud-readiness signals, Entra join, Intune enrollment, Autopilot ready, Cloud-managed identity, OS version |
 | **Resource performance** | CPU + RAM + disk performance during business hours |
 | **Battery health** | Mobile device battery health (if applicable) |
 
@@ -76,7 +76,7 @@ Microsoft publishes baseline scores derived from the Endpoint Analytics public d
 
 ## 🛠️ Proactive Remediations
 
-Proactive remediations are pairs of PowerShell scripts — a **detection script** and a **remediation script** — that automatically detect and fix problems across your fleet.
+Proactive remediations are pairs of PowerShell scripts a **detection script** and a **remediation script** that automatically detect and fix problems across your fleet.
 
 ### How they work
 
@@ -102,7 +102,7 @@ Microsoft ships pre-built remediations for common problems:
 You can write your own. Example pattern:
 
 ```powershell
-# detect.ps1 — returns exit 1 if the user has too many open Outlook profiles
+# detect.ps1, returns exit 1 if the user has too many open Outlook profiles
 $profileCount = (Get-ChildItem "HKCU:\Software\Microsoft\Office\16.0\Outlook\Profiles").Count
 if ($profileCount -gt 3) {
     Write-Output "Found $profileCount Outlook profiles (threshold: 3)"
@@ -112,7 +112,7 @@ exit 0
 ```
 
 ```powershell
-# remediate.ps1 — clears Outlook cached profiles older than 90 days
+# remediate.ps1, clears Outlook cached profiles older than 90 days
 Get-ChildItem "HKCU:\Software\Microsoft\Office\16.0\Outlook\Profiles" |
     Where-Object { $_.LastWriteTime -lt (Get-Date).AddDays(-90) } |
     Remove-Item -Recurse -Force
@@ -153,8 +153,8 @@ Settings → Accounts → Access work or school →
 
 The zip contains:
 
-- `MDMDiagReport.html` — the human-readable report
-- `MDMDiagReport.xml` — machine-readable version
+- `MDMDiagReport.html`, the human-readable report
+- `MDMDiagReport.xml`, machine-readable version
 - Event Viewer logs for the Device Management Enterprise diagnostic provider
 - Autopilot ETW traces
 - Certificate provider logs
@@ -211,7 +211,7 @@ The zip contains:
 | Step | Action |
 |------|--------|
 | 1 | Check the Entra ID Sign-in log for the specific failed attempt |
-| 2 | Look at "Conditional Access" tab — which policy blocked it? |
+| 2 | Look at "Conditional Access" tab, which policy blocked it? |
 | 3 | Verify the user's device compliance state |
 | 4 | Confirm the user isn't in an Exclude group inadvertently |
 | 5 | Verify the policy isn't in Report-only mode if you expected enforcement |
@@ -224,7 +224,7 @@ The zip contains:
 |--------|------|
 | **Intune Management Extension logs (Windows)** | `%ProgramData%\Microsoft\IntuneManagementExtension\Logs\` |
 | **MDM Diagnostics report** | `Settings → ... → Export your management log files` |
-| **Event Viewer — MDM events** | Apps and Services Logs → Microsoft → Windows → DeviceManagement-Enterprise-Diagnostics-Provider |
+| **Event Viewer, MDM events** | Apps and Services Logs → Microsoft → Windows → DeviceManagement-Enterprise-Diagnostics-Provider |
 | **Autopilot ETW** | Included in MDM Diagnostics zip |
 | **Defender for Endpoint logs** | Apps and Services Logs → Microsoft → Windows → Windows Defender |
 | **BitLocker logs** | Apps and Services Logs → Microsoft → Windows → BitLocker-API |
@@ -236,7 +236,7 @@ The zip contains:
 
 ## 📊 Advanced Hunting (Plan 2)
 
-Defender for Endpoint Plan 2 provides Advanced Hunting — a KQL (Kusto Query Language) query interface over 30 days of endpoint telemetry.
+Defender for Endpoint Plan 2 provides Advanced Hunting, a KQL (Kusto Query Language) query interface over 30 days of endpoint telemetry.
 
 ### Common tables
 
@@ -300,7 +300,7 @@ Per-device remote actions you can trigger from the Intune portal:
 | "MDM Diagnostics report is a separate tool" | ❌ Built into Windows 11 |
 | "Troubleshooting blade shows tenant-wide" | ❌ Per-user view |
 | "Advanced Hunting works in Plan 1" | ❌ Plan 2 only |
-| "Restart action factory-resets the device" | ❌ Restart only — Wipe is the factory reset |
+| "Restart action factory-resets the device" | ❌ Restart only, Wipe is the factory reset |
 
 ---
 
@@ -354,10 +354,10 @@ The correct sequence:
 You now know:
 
 - 📊 The Intune report surfaces and what each is for
-- 🎯 Endpoint Analytics — 5 categories + scoring + baselines
-- 🛠️ Proactive remediations (Plan 2) — detect + fix pattern
-- 🐛 Troubleshooting + Support blade — per-user diagnostic view
-- 📋 MDM Diagnostics report — built-in Windows policy dump
+- 🎯 Endpoint Analytics, 5 categories + scoring + baselines
+- 🛠️ Proactive remediations (Plan 2), detect + fix pattern
+- 🐛 Troubleshooting + Support blade, per-user diagnostic view
+- 📋 MDM Diagnostics report, built-in Windows policy dump
 - 🛠️ The 5 most common troubleshooting scenarios + step-by-step approach
 - 🔍 Key log locations on Windows
 - 📊 Advanced Hunting (Plan 2) with KQL examples
@@ -372,17 +372,17 @@ You now know:
 
 ---
 
-## 📊 Case Study — Bayer's Endpoint Analytics-Driven Performance Initiative (2022–2024)
+## 📊 Case Study, Bayer's Endpoint Analytics-Driven Performance Initiative (2022–2024)
 
-**Situation.** Bayer AG (the global pharmaceutical and life sciences company, ~95,000 employees in 80+ countries) had a long-standing complaint about endpoint performance: knowledge workers reported slow logon, frequent Outlook crashes, and unpredictable Wi-Fi reconnects. Helpdesk tickets averaged 1,200/week with "device slow" or "app crash" categories. Bayer had no systematic way to measure or compare endpoint performance across its global fleet of ~80,000 corporate Windows devices (Microsoft customer story, *Bayer — Endpoint Performance at Scale*, 2023).
+**Situation.** Bayer AG (the global pharmaceutical and life sciences company, ~95,000 employees in 80+ countries) had a long-standing complaint about endpoint performance: knowledge workers reported slow logon, frequent Outlook crashes, and unpredictable Wi-Fi reconnects. Helpdesk tickets averaged 1,200/week with "device slow" or "app crash" categories. Bayer had no systematic way to measure or compare endpoint performance across its global fleet of ~80,000 corporate Windows devices (Microsoft customer story, *Bayer, Endpoint Performance at Scale*, 2023).
 
 **Decision.** In early 2022, Bayer's central IT enabled Microsoft Intune Endpoint Analytics across the fleet and standardized on the following operating discipline (Microsoft customer story + Microsoft Mechanics episode *Bayer at Endpoint Performance*, 2023):
 
 1. **Endpoint Analytics enabled** for every Windows endpoint at Intune Plan 2 (later upgraded to the Intune Suite for Advanced Analytics).
-2. **Microsoft baseline scores** as the initial target — get every category to 80+.
+2. **Microsoft baseline scores** as the initial target, get every category to 80+.
 3. **Proactive remediations** for the top 10 common helpdesk patterns (Outlook profile bloat, sign-in cache corruption, Edge profile reset, Defender signature update failures, etc.).
 4. **Weekly performance review** where the central IT team reviews scores trending down + cohorts of devices with low scores.
-5. **Hardware refresh decisions** driven by Endpoint Analytics — devices with poor Resource Performance and Battery Health get prioritized for refresh.
+5. **Hardware refresh decisions** driven by Endpoint Analytics, devices with poor Resource Performance and Battery Health get prioritized for refresh.
 6. **Custom remediations** for Bayer-specific apps (a few in-house LOB tools with known issues).
 
 **Outcome.** Bayer reported (Microsoft customer story update, 2024):
@@ -399,23 +399,23 @@ You now know:
 **Discussion (Socratic).**
 - **Q1.** Bayer extended hardware refresh from 36 to 48 months on the strength of Endpoint Analytics data. Argue both sides: when is Endpoint Analytics a reliable refresh-decision signal, and when does it miss something (hint: think about silent hardware-degradation patterns like battery, SSD wear, motherboard intermittent faults)?
 - **Q2.** Bayer wrote custom proactive remediations for in-house apps. A smaller org argues "we'll stick with Microsoft's pre-built remediations." Defend custom remediations by naming the operational scenario where custom is the only answer.
-- **Q3.** Bayer reduced helpdesk FTEs from 47 to 38. A change-management consultant warns "automation that reduces headcount is a hard sell internally." Defend the automation initiative by naming the operational benefit that *isn't* headcount reduction — what other value does it create?
+- **Q3.** Bayer reduced helpdesk FTEs from 47 to 38. A change-management consultant warns "automation that reduces headcount is a hard sell internally." Defend the automation initiative by naming the operational benefit that *isn't* headcount reduction, what other value does it create?
 
 ---
 
 > **Where this leads.**
 > - Inside this course: This is the last module. Next stop is the practice exams. Each of the three exams revisits all 8 modules with progressive difficulty.
-> - Cross-course: [`06-Azure-Administrator` Module 10](../../06-Azure-Administrator/Module-10-Monitor-Governance/Reading.md) covers Azure Monitor + Log Analytics — useful since many Intune reports route through Log Analytics.
+> - Cross-course: [`06-Azure-Administrator` Module 10](../../06-Azure-Administrator/Module-10-Monitor-Governance/Reading.md) covers Azure Monitor + Log Analytics, useful since many Intune reports route through Log Analytics.
 > - Practice: Practice Exam 2 has roughly 5–7 questions from this module (analytics, remediations, troubleshooting blade, MDM diagnostics, remote actions). Final Mock Exam revisits with incident-response scenarios.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **Endpoint Analytics in small orgs.** A 30-device startup has Intune Plan 1. They argue "Endpoint Analytics is for enterprises — we don't need it." Defend the small-org use case by naming the operational scenario where Analytics is worth the Plan 2 upgrade.
+1. **Endpoint Analytics in small orgs.** A 30-device startup has Intune Plan 1. They argue "Endpoint Analytics is for enterprises, we don't need it." Defend the small-org use case by naming the operational scenario where Analytics is worth the Plan 2 upgrade.
 2. **Proactive remediations vs help-desk tickets.** Build the ROI case: at what fleet size does a proactive remediation pay for itself vs. just having helpdesk handle each instance manually?
 3. **Wipe vs Retire vs Fresh Start vs Autopilot Reset.** These four actions are tested constantly. Defend a decision tree for picking the right action given the scenario (departing employee, lost device, repurposing for new user, suspected compromise, demoted from corporate to personal).
-4. **Advanced Hunting vs Defender alerts.** Defender alerts are reactive. Advanced Hunting is proactive. Defend the balance — when do you investigate with KQL hunting vs. rely on alerts?
+4. **Advanced Hunting vs Defender alerts.** Defender alerts are reactive. Advanced Hunting is proactive. Defend the balance, when do you investigate with KQL hunting vs. rely on alerts?
 5. **The diminishing returns of monitoring.** Endpoint Analytics adds Plan 2 cost. Advanced Hunting adds investigative time. Proactive remediations require maintenance. Where does an org reach the point of "monitoring tax exceeds monitoring value"?
 
 ---
@@ -428,4 +428,4 @@ You now know:
 - 📖 [Generate the MDM Diagnostics Report on Windows](https://learn.microsoft.com/mem/intune/remote-actions/collect-diagnostics)
 - 📖 [Advanced Hunting + KQL in Defender for Endpoint](https://learn.microsoft.com/defender-endpoint/advanced-hunting-overview)
 - 📖 [Intune Management Extension log reference](https://learn.microsoft.com/mem/intune/apps/intune-management-extension)
-- 📖 Microsoft *Endpoint Analytics public dataset baselines* (refreshed quarterly) — what Microsoft compares your scores against
+- 📖 Microsoft *Endpoint Analytics public dataset baselines* (refreshed quarterly), what Microsoft compares your scores against

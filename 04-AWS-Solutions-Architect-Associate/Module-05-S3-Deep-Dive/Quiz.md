@@ -24,7 +24,7 @@ D. S3 Standard-IA
 
 ---
 
-### Q3. A 7-year regulatory retention requirement says records must be immutable and not removable by ANY user — not even root. The right configuration is: *(Apply)*
+### Q3. A 7-year regulatory retention requirement says records must be immutable and not removable by ANY user, not even root. The right configuration is: *(Apply)*
 A. Versioning only
 B. Object Lock in Governance mode
 C. Object Lock in Compliance mode
@@ -219,7 +219,7 @@ D. Intelligent-Tiering
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. 11 nines durability**
-99.999999999% — design loses 1 object per 10,000 over 10M years.
+99.999999999%, design loses 1 object per 10,000 over 10M years.
 
 ### Q2: **B. Intelligent-Tiering**
 Unknown/changing patterns = let AWS move objects automatically. Tiny monitoring fee but no retrieval fees in the standard tiers.
@@ -279,7 +279,7 @@ Default for new uploads unless specified.
 Multiple named endpoints, each with its own policy and optional VPC restriction.
 
 ### Q21: **A. Versioning**
-First line of defense against accidental overwrites/deletes — every change becomes a new version.
+First line of defense against accidental overwrites/deletes, every change becomes a new version.
 
 ### Q22: **B. MFA Delete (root, via CLI)**
 Only the root user can enable MFA Delete; requires CLI; requires MFA token to delete versions.

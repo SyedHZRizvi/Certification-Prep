@@ -1,6 +1,6 @@
 # Module 6: Evaluation & A/B Testing 📊
 
-> **Why this module matters:** 13% of the Final Mock. *"It worked on my three examples"* is not a prompt — it's a hunch. The single most important capability separating senior from junior prompt engineers is the discipline to build, run, and iterate on a real evaluation harness. Without evals, every other skill in this course produces over-confident garbage.
+> **Why this module matters:** 13% of the Final Mock. *"It worked on my three examples"* is not a prompt, it's a hunch. The single most important capability separating senior from junior prompt engineers is the discipline to build, run, and iterate on a real evaluation harness. Without evals, every other skill in this course produces over-confident garbage.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–5
@@ -14,7 +14,7 @@
 
 ## 📈 A Story: The Startup That Almost Shipped a Worse Prompt
 
-Meet Bea, head of AI at a Series B legal-tech startup. Her team built a contract-clause classifier using Claude 3 Sonnet. They iterated for 3 weeks. The team lead, Sam, was convinced his latest prompt was better — "it just *feels* sharper" — and pushed for a Friday-afternoon deploy.
+Meet Bea, head of AI at a Series B legal-tech startup. Her team built a contract-clause classifier using Claude 3 Sonnet. They iterated for 3 weeks. The team lead, Sam, was convinced his latest prompt was better "it just *feels* sharper" and pushed for a Friday-afternoon deploy.
 
 Bea blocked it. *"Let's run it through the eval harness first."*
 
@@ -57,11 +57,11 @@ The **golden set** (a.k.a. eval set, regression set, benchmark set) is your samp
 
 ### Sources for examples
 
-1. **Real production traffic** (best, if you can use it — beware PII)
+1. **Real production traffic** (best, if you can use it, beware PII)
 2. **Synthetic generation** (prompt a frontier model to generate edge cases)
 3. **Bug reports** (every failure becomes a regression test)
 4. **Expert curation** (SMEs hand-design hard cases)
-5. **Public benchmarks** (GSM8K, MMLU, HumanEval, HELM) — for capability tracking, not application eval
+5. **Public benchmarks** (GSM8K, MMLU, HumanEval, HELM), for capability tracking, not application eval
 
 ### JSONL is the standard format
 
@@ -95,7 +95,7 @@ These are the cheapest and most reliable. Run them first.
 
 ---
 
-## 🤖 LLM-as-Judge — The Eval That Scales
+## 🤖 LLM-as-Judge, The Eval That Scales
 
 LLM-as-judge uses another (often more powerful) LLM to evaluate outputs against criteria. Originated in *G-Eval* (Liu et al. 2023) and has become the production standard.
 
@@ -130,8 +130,8 @@ Output JSON:
 
 The G-Eval paper added two key ideas:
 
-1. **Chain-of-thought scoring** — judge explains BEFORE rating (CoT principle from Module 3)
-2. **Probability-weighted scores** — average the scores across N judge samples for stability (self-consistency from Module 3)
+1. **Chain-of-thought scoring**, judge explains BEFORE rating (CoT principle from Module 3)
+2. **Probability-weighted scores**, average the scores across N judge samples for stability (self-consistency from Module 3)
 
 ```python
 def g_eval_score(input, expected, response):
@@ -159,7 +159,7 @@ def g_eval_score(input, expected, response):
 
 ## 👥 Human Evaluation
 
-The ground truth — when you can afford it. Best for:
+The ground truth, when you can afford it. Best for:
 
 - Calibrating your LLM-judge (does human agreement match LLM-judge agreement?)
 - High-stakes outputs (medical, legal, financial recommendations)
@@ -221,7 +221,7 @@ When two humans rate the same output, do they agree? Standard metrics:
 | **F1** | 2·P·R / (P+R) | Harmonic mean of P and R; good single number |
 | **Macro F1** | Average F1 across classes | Imbalanced classes; treat each equally |
 | **Micro F1** | F1 of pooled TP/FP/FN | Imbalanced; weighted by class count |
-| **Confusion matrix** | Rows: actual; Cols: predicted | Diagnostic — see WHERE you fail |
+| **Confusion matrix** | Rows: actual; Cols: predicted | Diagnostic, see WHERE you fail |
 
 ### Free-form generation
 
@@ -247,7 +247,7 @@ When two humans rate the same output, do they agree? Standard metrics:
 
 ## 🧪 A/B Testing in Production
 
-You have a candidate prompt that beats the current one on the golden set. Should you ship it to 100% of users? **No** — ship it to a slice and measure.
+You have a candidate prompt that beats the current one on the golden set. Should you ship it to 100% of users? **No**, ship it to a slice and measure.
 
 ### The basic A/B harness
 
@@ -257,11 +257,11 @@ You have a candidate prompt that beats the current one on the golden set. Should
 4. After N requests per arm OR T days, compare metrics with statistical significance
 5. Ramp up the winner; document the loser
 
-### Statistical significance — the basics
+### Statistical significance, the basics
 
 For a binary success metric (correct vs not):
 
-- **Proportion z-test** or **chi-square test** — what you'll use
+- **Proportion z-test** or **chi-square test**, what you'll use
 - **p-value < 0.05** is the textbook bar (but pre-register your test to avoid p-hacking)
 - **Sample size needed** grows quadratically as the effect shrinks
   - Detecting 5pt difference at 80% power needs ~1500 per arm
@@ -270,21 +270,21 @@ For a binary success metric (correct vs not):
 For continuous metrics (latency, cost):
 
 - **Welch's t-test** or **Mann-Whitney U** (non-parametric)
-- Report **mean ± 95% CI** and **median** — distributions are usually skewed
+- Report **mean ± 95% CI** and **median**, distributions are usually skewed
 
 ### Multi-armed bandits
 
 If you have several candidates and want to allocate traffic dynamically:
 
-- **Thompson sampling** — Bayesian, traffic flows to currently-best arm
-- **UCB1 (Upper Confidence Bound)** — frequentist counterpart
+- **Thompson sampling**, Bayesian, traffic flows to currently-best arm
+- **UCB1 (Upper Confidence Bound)**, frequentist counterpart
 - Good when continuous learning matters more than clean p-values
 
 🎯 **Memorize:** *In a production prompt rollout, define your success metric BEFORE you look at the data. Otherwise you'll find a metric that says "ship it."*
 
 ---
 
-## 🔁 Regression Testing — Your Safety Net
+## 🔁 Regression Testing, Your Safety Net
 
 Every prompt that ever reached production goes into a regression suite. Every change runs the suite before deploy.
 
@@ -314,7 +314,7 @@ This is what Bea's harness does on every PR. It is the most boring and most valu
 
 > **Scenario:** Bea's team needs an eval harness for their contract-clause classifier (12 classes). Walk through the 1-week build.
 
-**Day 1 — Golden set assembly:**
+**Day 1, Golden set assembly:**
 - 60 production samples (anonymized, manually labeled by 2 legal SMEs)
 - 30 SME-curated hard cases
 - 20 known-failure cases from past bug reports
@@ -322,21 +322,21 @@ This is what Bea's harness does on every PR. It is the most boring and most valu
 - 17 from public CUAD benchmark for cross-reference
 - Total: **147 examples** stored as JSONL with `input`, `expected_class`, `tags`, `notes_from_smes`
 
-**Day 2 — Programmatic evaluators:**
+**Day 2, Programmatic evaluators:**
 - Exact-match on class label
 - JSON Schema validation on full structured output
 - Confidence-score plausibility check (rejects 0.95+ confidence on adversarial set)
 
-**Day 3 — LLM-judge for free-form rationale:**
+**Day 3, LLM-judge for free-form rationale:**
 - GPT-5 as judge of Claude's rationale (cross-family to avoid self-preference)
 - 5-criterion rubric (relevant, specific, cites contract section, no hallucinations, professional tone)
 - G-Eval-style: 5 samples, average
 
-**Day 4 — Human spot-check protocol:**
+**Day 4, Human spot-check protocol:**
 - 10% of test runs auto-routed to a queue
 - 2 legal SMEs review independently, Cohen's kappa tracked over time
 
-**Day 5 — A/B harness:**
+**Day 5, A/B harness:**
 - Promptfoo config for local A/B
 - Production: feature-flag based bucketing, log to BigQuery, daily dashboard
 - Pre-registered success metric: macro-F1 lift ≥ 1.5pt with p<0.05 OR no harm + 20% cost reduction
@@ -402,7 +402,7 @@ This is what Bea's harness does on every PR. It is the most boring and most valu
 
 ---
 
-## 📊 Case Study — Anthropic's Eval-Driven Model Releases (2023-2026)
+## 📊 Case Study, Anthropic's Eval-Driven Model Releases (2023-2026)
 
 **Situation.** Since Claude 2 in 2023, Anthropic has anchored its model releases on **public eval reports**. The Claude 3.5 Sonnet release (June 2024) included scores on MMLU, GSM8K, MATH, HumanEval, MGSM, GPQA, and a half-dozen others, with side-by-side comparisons to GPT-4o and Gemini 1.5 Pro. Claude 4.7 Sonnet's release continued this pattern, adding new long-context, agentic, and safety benchmarks.
 
@@ -415,7 +415,7 @@ This is what Bea's harness does on every PR. It is the most boring and most valu
 **Lesson for the exam / for practitioners.**
 - Eval discipline distinguishes hobbyist from professional prompt engineering.
 - Public benchmarks measure capability. Your golden set measures product fitness.
-- LLM-as-judge has biases — defuse with cross-family judges and averaged samples.
+- LLM-as-judge has biases, defuse with cross-family judges and averaged samples.
 - Pre-registration of metrics is a cheap, powerful anti-bias practice.
 
 **Discussion (Socratic).**
@@ -429,21 +429,21 @@ This is what Bea's harness does on every PR. It is the most boring and most valu
 
 You now know:
 
-- 🧱 The three pillars of LLM eval — programmatic, LLM-as-judge, human
+- 🧱 The three pillars of LLM eval, programmatic, LLM-as-judge, human
 - 📦 How to assemble a 70-150 example golden set, what goes in it
 - ✅ The programmatic evaluators worth running
 - 🤖 LLM-as-judge with G-Eval refinements and known biases
 - 👥 Human eval + inter-annotator agreement metrics
 - 🛠️ The eval frameworks landscape (Promptfoo, DeepEval, RAGAS, LangSmith, Braintrust, OpenAI Evals)
-- 📐 The metrics — F1, precision/recall, RAGAS, latency, cost
+- 📐 The metrics, F1, precision/recall, RAGAS, latency, cost
 - 🧪 A/B testing with statistical significance and pre-registration
 - 🔁 Regression suites that block bad deploys
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 7 — Adversarial Prompts & Jailbreak Defense](../Module-07-Adversarial-Defense/Reading.md)
+4. ➡️ Move on: [Module 7, Adversarial Prompts & Jailbreak Defense](../Module-07-Adversarial-Defense/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 7](../Module-07-Adversarial-Defense/Reading.md) extends evals to safety/red-team work. [Module 8](../Module-08-Production-Scale/Reading.md) integrates evals into CI and observability.
@@ -461,9 +461,9 @@ You now know:
 - 📄 Chiang et al. (2023). *LMSYS Chatbot Arena methodology*.
 
 **Vendor docs:**
-- 📖 [Anthropic — Building Evals](https://docs.anthropic.com/en/docs/test-and-evaluate/define-success)
+- 📖 [Anthropic, Building Evals](https://docs.anthropic.com/en/docs/test-and-evaluate/define-success)
 - 📖 [OpenAI Evals (GitHub)](https://github.com/openai/evals)
-- 📖 [Google — Vertex AI Eval Service](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview)
+- 📖 [Google, Vertex AI Eval Service](https://cloud.google.com/vertex-ai/generative-ai/docs/models/evaluation-overview)
 
 **Frameworks:**
 - 📖 [Promptfoo](https://promptfoo.dev)
@@ -475,6 +475,6 @@ You now know:
 - 📖 [Inspect (UK AISI)](https://inspect.aisi.org.uk)
 
 **Practitioner:**
-- 📖 [Hamel Husain — "Your AI Product Needs Evals"](https://hamel.dev/blog/posts/evals/)
-- 📖 [Eugene Yan — Evaluating ML/LLM Systems](https://eugeneyan.com/writing/evals/)
-- 📖 [Jason Liu — "Why Most Evals Are Wrong"](https://jxnl.co/writing/2024/12/24/everything-i-know-about-good-systems-design/)
+- 📖 [Hamel Husain, "Your AI Product Needs Evals"](https://hamel.dev/blog/posts/evals/)
+- 📖 [Eugene Yan, Evaluating ML/LLM Systems](https://eugeneyan.com/writing/evals/)
+- 📖 [Jason Liu, "Why Most Evals Are Wrong"](https://jxnl.co/writing/2024/12/24/everything-i-know-about-good-systems-design/)

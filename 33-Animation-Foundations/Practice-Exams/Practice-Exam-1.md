@@ -43,8 +43,8 @@ D. A dissolve transition
 
 ### 5. Eadweard Muybridge's most significant contribution to animation history was:
 
-A. Inventing the zoetrope — the first animation device
-B. Creating *Gertie the Dinosaur* — the first animated character with personality
+A. Inventing the zoetrope, the first animation device
+B. Creating *Gertie the Dinosaur*, the first animated character with personality
 C. Producing sequential motion-study photographs that established how bodies actually move
 D. Synchronizing sound to animation in *Steamboat Willie*
 
@@ -52,9 +52,9 @@ D. Synchronizing sound to animation in *Steamboat Willie*
 
 ### 6. In the graph editor, an S-shaped F-curve represents:
 
-A. A hold — no movement for several frames
+A. A hold, no movement for several frames
 B. A constant speed (linear) motion
-C. Slow-in/slow-out — flat at start and end, steep in the middle
+C. Slow-in/slow-out, flat at start and end, steep in the middle
 D. A motion that overshoots its target before settling
 
 ---
@@ -80,7 +80,7 @@ D. Exaggeration
 ### 9. A "match cut" in storyboarding works by:
 
 A. Matching audio levels between two adjacent shots
-B. Matching a visual element — shape, movement, or composition — between two shots
+B. Matching a visual element shape, movement, or composition between two shots
 C. Cutting to the same location from two different angles in sequence
 D. Timing the cut to fall on a musical beat
 
@@ -88,17 +88,17 @@ D. Timing the cut to fall on a musical beat
 
 ### 10. The character Scar in *The Lion King* is primarily designed using which shape language?
 
-A. Circles — communicating approachability and wisdom
-B. Rectangles — communicating stable, dependable authority
-C. Triangles — communicating danger, menace, and instability
-D. Ovals — communicating the natural grace of a lion
+A. Circles, communicating approachability and wisdom
+B. Rectangles, communicating stable, dependable authority
+C. Triangles, communicating danger, menace, and instability
+D. Ovals, communicating the natural grace of a lion
 
 ---
 
 ### 11. In animation, "staging" means:
 
 A. Placing characters in the correct physical location on the set
-B. Presenting an idea clearly so the audience reads it instantly — one action, one center of attention
+B. Presenting an idea clearly so the audience reads it instantly, one action, one center of attention
 C. Setting up the three-act story structure of a short film
 D. Choosing the correct camera lens for each shot
 
@@ -116,7 +116,7 @@ D. 48
 ### 13. The "rule of thirds" in composition places the subject at:
 
 A. Exactly in the center of the frame for maximum visual weight
-B. One-third of the way from the edge of the frame — dead center is avoided
+B. One-third of the way from the edge of the frame, dead center is avoided
 C. The intersection points of a 3x3 grid overlaid on the frame
 D. The lower third of the frame to communicate groundedness
 
@@ -171,7 +171,7 @@ D. Occurs simultaneously with a secondary character's movement
 
 A. They are the oldest surviving examples of sequential photography and have historical significance
 B. They established the definitive visual language for character design in Western animation
-C. They provide the reference foundation for understanding how real bodies move — arcs, weight shifts, overlapping action — that animation principles are built on
+C. They provide the reference foundation for understanding how real bodies move arcs, weight shifts, overlapping action that animation principles are built on
 D. They demonstrate the 12 Principles of Animation applied to animal motion
 
 ---
@@ -187,10 +187,10 @@ D. Covered faces create continuity problems when the character turns to profile
 
 ### 21. An animator creates a character punch where the fist moves from the hip to full extension in a straight line path through 3D space. The primary critique from their supervisor should be:
 
-A. The timing is wrong — punches should be faster
-B. Squash and stretch is missing — the fist should deform on impact
-C. Arcs — the fist should follow a curved arc path through space, not a straight-line path
-D. Anticipation is missing — the character should pull back before punching
+A. The timing is wrong, punches should be faster
+B. Squash and stretch is missing, the fist should deform on impact
+C. Arcs, the fist should follow a curved arc path through space, not a straight-line path
+D. Anticipation is missing, the character should pull back before punching
 
 ---
 
@@ -225,26 +225,26 @@ D. It was the first Studio Ghibli film to be animated digitally rather than hand
 
 A. All files must be reviewed and approved before being labeled as "final"
 B. Files named "final" should only exist in the Output folder, not in working folders
-C. Never name a file "final" — use numerical versioning (v001, v002) instead
+C. Never name a file "final", use numerical versioning (v001, v002) instead
 D. "Final" is acceptable only for the master archive file, not for working versions
 
 ---
 
 ### 26. A timing chart in traditional 2D animation with drawings clustered near the starting pose communicates:
 
-A. Constant speed — the action is linear throughout
-B. Slow-out — the action decelerates toward the end
-C. Slow-in — the action eases slowly out of the starting position before accelerating
-D. A hold — the character is stationary at the start
+A. Constant speed, the action is linear throughout
+B. Slow-out, the action decelerates toward the end
+C. Slow-in, the action eases slowly out of the starting position before accelerating
+D. A hold, the character is stationary at the start
 
 ---
 
 ### 27. In *Into the Spider-Verse*, Miles Morales is animated on 2s (12fps) while Gwen Stacy animates on 1s (24fps). This applies which principle?
 
-A. Staging — the frame rates affect where the audience looks
-B. Timing — different frame rates communicate character differentiation
-C. Exaggeration — the different frame rates push beyond realistic motion
-D. Solid Drawing — frame rates affect the three-dimensional reading of characters
+A. Staging, the frame rates affect where the audience looks
+B. Timing, different frame rates communicate character differentiation
+C. Exaggeration, the different frame rates push beyond realistic motion
+D. Solid Drawing, frame rates affect the three-dimensional reading of characters
 
 ---
 
@@ -266,46 +266,46 @@ D. The ball stretches to exactly twice its original height on each upward arc
 
 ---
 
-### 30. An animator's supervisor reviews their work and says: "This scene feels smooth but dead — like a camera tracking a statue on a turntable." This is the symptom of:
+### 30. An animator's supervisor reviews their work and says: "This scene feels smooth but dead, like a camera tracking a statue on a turntable." This is the symptom of:
 
-A. Missing follow-through — the character stops all motion simultaneously
-B. Missing secondary action — supporting movements are absent
+A. Missing follow-through, the character stops all motion simultaneously
+B. Missing secondary action, supporting movements are absent
 C. Over-reliance on the graph editor's default smooth curves, producing mathematically smooth but lifeless motion
-D. Arcs — the character's movements are linear rather than curved
+D. Arcs, the character's movements are linear rather than curved
 
 ---
 
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B — Frank Thomas and Ollie Johnston
-2.  B — Volume (mass)
-3.  C — Slow-In / Slow-Out
-4.  C — Camera push
-5.  C — Sequential motion-study photographs
-6.  C — Slow-in/slow-out (S-curve)
-7.  C — Straight-Ahead
-8.  C — Follow-Through and Overlapping Action
-9.  B — Matching a visual element between two shots
-10. C — Triangles (danger, menace)
-11. B — One action, one center of attention, instantly readable
-12. B — 12 unique drawings per second
-13. C — Intersection points of a 3x3 grid
-14. B — 25 fps
-15. B — Filled with solid black, remains identifiable
-16. C — Menacing, deliberate, powerful
-17. B — Map phonemes to frame numbers for lip sync
-18. B — Supports without competing
-19. C — Reference foundation for real body movement
-20. B — Hair obscures expression in extreme poses
-21. C — Arcs — punches follow curved paths, not straight lines
-22. C — Vimeo
-23. C — Visual Rhythm (not one of the 12 Principles)
-24. C — First non-English-language animated feature to win
-25. C — Never use "final"; use v001, v002
-26. C — Slow-in (ease out of starting position)
-27. B — Timing (character differentiation through frame rate)
-28. B — Fewer frames, simplified designs, minimal movement
-29. B — Ball widens at impact while maintaining overall area/volume
-30. C — Over-reliance on default smooth graph editor curves
+1.  B: Frank Thomas and Ollie Johnston
+2.  B: Volume (mass)
+3.  C: Slow-In / Slow-Out
+4.  C: Camera push
+5.  C: Sequential motion-study photographs
+6.  C: Slow-in/slow-out (S-curve)
+7.  C: Straight-Ahead
+8.  C: Follow-Through and Overlapping Action
+9.  B: Matching a visual element between two shots
+10. C: Triangles (danger, menace)
+11. B: One action, one center of attention, instantly readable
+12. B: 12 unique drawings per second
+13. C: Intersection points of a 3x3 grid
+14. B: 25 fps
+15. B: Filled with solid black, remains identifiable
+16. C: Menacing, deliberate, powerful
+17. B: Map phonemes to frame numbers for lip sync
+18. B: Supports without competing
+19. C: Reference foundation for real body movement
+20. B: Hair obscures expression in extreme poses
+21. C: Arcs, punches follow curved paths, not straight lines
+22. C: Vimeo
+23. C: Visual Rhythm (not one of the 12 Principles)
+24. C: First non-English-language animated feature to win
+25. C: Never use "final"; use v001, v002
+26. C: Slow-in (ease out of starting position)
+27. B: Timing (character differentiation through frame rate)
+28. B: Fewer frames, simplified designs, minimal movement
+29. B: Ball widens at impact while maintaining overall area/volume
+30. C: Over-reliance on default smooth graph editor curves
 ```

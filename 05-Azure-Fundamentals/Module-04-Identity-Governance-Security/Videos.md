@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Azure RBAC Explained</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 10 min · Owner/Contrib/Reader</span>
     </div>
   </a>
@@ -47,8 +47,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Policy vs RBAC — The Difference</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">Azure Policy vs RBAC, The Difference</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 10 min · Stops the confusion</span>
     </div>
   </a>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Microsoft Sentinel — SIEM/SOAR for Azure</p>
+      <p class="vg-title">Microsoft Sentinel, SIEM/SOAR for Azure</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 12 min · Big-picture</span>
     </div>
@@ -103,7 +103,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Azure Key Vault Basics</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 10 min · Secrets, keys, certs</span>
     </div>
   </a>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">External ID — B2B & B2C</p>
+      <p class="vg-title">External ID, B2B & B2C</p>
       <p class="vg-creator">Microsoft</p>
       <span class="vg-duration">⏱ 12 min · Partner + customer identity</span>
     </div>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | The Entra ID / security expert |
-| **Adam Marczak — Azure for Everyone** | Clean RBAC + Policy comparisons |
+| **Adam Marczak, Azure for Everyone** | Clean RBAC + Policy comparisons |
 | **Microsoft Mechanics** | Defender + Sentinel official content |
 
 ---
@@ -145,7 +145,7 @@ Answer these in your notebook:
 
 1. What's the difference between RBAC, Azure Policy, and Resource Locks?
 2. What does Conditional Access do that plain MFA doesn't?
-3. Defender for Cloud vs Sentinel — when to use each?
+3. Defender for Cloud vs Sentinel, when to use each?
 4. The 3 Zero Trust principles?
 5. The 4 fundamental RBAC roles and what each can do?
 

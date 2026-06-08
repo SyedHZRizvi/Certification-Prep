@@ -162,7 +162,7 @@ D. Amazon Polly
 A. Only multi-class
 B. Only multi-label
 C. Both multi-class and multi-label
-D. Neither — it is binary only
+D. Neither, it is binary only
 
 ---
 
@@ -192,7 +192,7 @@ D. Amazon Comprehend
 
 ### Q24. A team uses Comprehend Custom Classifier with 5 training samples per class on a 100-class problem. The MOST likely outcome is: *(Analyze)*
 A. Excellent accuracy
-B. Poor results — Comprehend Custom Classifier needs much more data per class; consider Bedrock zero/few-shot or larger training set
+B. Poor results, Comprehend Custom Classifier needs much more data per class; consider Bedrock zero/few-shot or larger training set
 C. Equivalent to GPT-4
 D. Free training
 
@@ -249,12 +249,12 @@ For open-ended Q&A, generative AI with RAG beats intent-based Lex. We cover Bedr
 AutoML for time series; tries DeepAR+, ARIMA, ETS, Prophet, NPTS, CNN-QR.
 
 ### Q17: **B. ~10**
-Custom Labels' headline figure — as few as 10 labelled images per class.
+Custom Labels' headline figure, as few as 10 labelled images per class.
 
 ### Q18: **A. Rekognition `StartFaceSearch`** for video
 Video pipeline for matching faces against an indexed collection.
 
-### Q19: **C. Both — Transcribe redacts during transcription; Comprehend redacts after**
+### Q19: **C. Both, Transcribe redacts during transcription; Comprehend redacts after**
 Both are valid. Transcribe PII redaction is the "during" option; Comprehend PII detection works on existing text.
 
 ### Q20: **C. Both multi-class and multi-label**
@@ -269,7 +269,7 @@ Lex resolves intents and slots; Lambda performs the actual action.
 ### Q23: **B. Amazon Forecast**
 Managed AutoML for time-series; tries multiple algorithms.
 
-### Q24: **B. Poor results — needs more data per class**
+### Q24: **B. Poor results, needs more data per class**
 Comprehend Custom Classifier needs typically ≥10-50 samples per class; 5 is too few for 100 classes. Bedrock zero/few-shot is more sample-efficient.
 
 ---

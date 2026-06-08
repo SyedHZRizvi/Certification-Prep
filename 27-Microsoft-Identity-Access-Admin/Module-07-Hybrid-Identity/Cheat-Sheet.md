@@ -48,16 +48,16 @@ NTLM hash → salted → HMAC-SHA256 (1,000 iterations) → sent over HTTPS to E
 - Protocol: **Kerberos**
 - Computer account: `AZUREADSSOACC` in on-prem AD
 - Rotate password every **30 days** (Microsoft recommendation)
-- Works with PHS + PTA (not Federation — Federation handles SSO natively)
+- Works with PHS + PTA (not Federation, Federation handles SSO natively)
 - CA + MFA still apply on top
 
 ---
 
 ## 🔄 Filtering
 
-- **OU filter** — pick OUs in scope
-- **Attribute filter** — pick attributes synced
-- **Directory extensions** — sync custom AD attributes into Entra
+- **OU filter**, pick OUs in scope
+- **Attribute filter**, pick attributes synced
+- **Directory extensions**, sync custom AD attributes into Entra
 
 🚨 OU exclusion of in-scope users → **soft-delete** in Entra (30-day window) → permanent loss.
 

@@ -26,7 +26,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">The Complete History of Animation — Documentary</p>
+      <p class="vg-title">The Complete History of Animation, Documentary</p>
       <p class="vg-creator">YouTube Edu / Documentary Central</p>
       <span class="vg-duration">⏱ 25 min · Muybridge to Pixar in one sitting</span>
     </div>
@@ -44,7 +44,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">The 180-Degree Rule — Visual Grammar of Cinema</p>
+      <p class="vg-title">The 180-Degree Rule, Visual Grammar of Cinema</p>
       <p class="vg-creator">Now You See It / Every Frame a Painting</p>
       <span class="vg-duration">⏱ 12 min · Why crossing the line is disorienting</span>
     </div>
@@ -53,7 +53,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">The Art of Studio Ghibli — Miyazaki's Visual Language</p>
+      <p class="vg-title">The Art of Studio Ghibli, Miyazaki's Visual Language</p>
       <p class="vg-creator">Thomas Flight / Like Stories of Old</p>
       <span class="vg-duration">⏱ 15 min · How Ghibli films stage emotion</span>
     </div>
@@ -67,7 +67,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Rule of Thirds — Composition for Animation</p>
+      <p class="vg-title">Rule of Thirds, Composition for Animation</p>
       <p class="vg-creator">Proko / Ctrl+Paint</p>
       <span class="vg-duration">⏱ 12 min · Why dead-center framing kills energy</span>
     </div>
@@ -76,7 +76,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Disney's Golden Age — The Films That Built an Industry</p>
+      <p class="vg-title">Disney's Golden Age, The Films That Built an Industry</p>
       <p class="vg-creator">History of Animation Channel</p>
       <span class="vg-duration">⏱ 20 min · Snow White through Bambi in historical context</span>
     </div>
@@ -85,7 +85,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Fleischer Studios — The Other Golden Age</p>
+      <p class="vg-title">Fleischer Studios, The Other Golden Age</p>
       <p class="vg-creator">Saberspark / Cartoon Universe</p>
       <span class="vg-duration">⏱ 20 min · How Betty Boop and Popeye built a rival aesthetic</span>
     </div>
@@ -117,7 +117,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Eadweard Muybridge — The First Motion Studies</p>
+      <p class="vg-title">Eadweard Muybridge, The First Motion Studies</p>
       <p class="vg-creator">Smarter Every Day / Vox</p>
       <span class="vg-duration">⏱ 15 min · The experiment that started animation</span>
     </div>
@@ -126,7 +126,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Arcane — How Riot Games Changed Animation</p>
+      <p class="vg-title">Arcane, How Riot Games Changed Animation</p>
       <p class="vg-creator">Corridor Crew / ArtStation</p>
       <span class="vg-duration">⏱ 18 min · Three-style fusion and its visual language</span>
     </div>
@@ -135,7 +135,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Why Anime Looks Different — Limited Animation History</p>
+      <p class="vg-title">Why Anime Looks Different, Limited Animation History</p>
       <p class="vg-creator">Canipa Effect / Pause and Select</p>
       <span class="vg-duration">⏱ 22 min · Japanese animation aesthetic origins</span>
     </div>

@@ -7,10 +7,10 @@
 ## 🏛️ Governance Hierarchy
 
 ```
-Policy   (WHY + WHAT — board level)
-Standard (HOW MUCH / WHICH — mandatory specifics)
-Procedure (HOW — step by step)
-Guideline (CONSIDER — recommendation)
+Policy   (WHY + WHAT, board level)
+Standard (HOW MUCH / WHICH, mandatory specifics)
+Procedure (HOW, step by step)
+Guideline (CONSIDER, recommendation)
 Baseline (MINIMUM acceptable config)
 ```
 
@@ -101,7 +101,7 @@ Example: AV=$200k, EF=30%, ARO=0.25 → SLE=$60k, **ALE=$15k/yr**.
 
 ✅ **Immutable backup** = ransomware-resistant.
 ✅ **Air-gapped backup** = physically disconnected.
-✅ **Test restores** — backup ≠ tested restore.
+✅ **Test restores**, backup ≠ tested restore.
 
 ---
 
@@ -132,8 +132,8 @@ Tabletop → Walkthrough → Simulation → Parallel → Full-Interruption
 
 1. Compute: AV=$1M, EF=10%, ARO=2 → SLE = ? ALE = ?
 2. Match: GDPR / HIPAA / PCI / SOX to their domains.
-3. SLA / SOW / MSA — what does each do?
-4. Hot vs warm vs cold site — RTO comparison.
+3. SLA / SOW / MSA, what does each do?
+4. Hot vs warm vs cold site, RTO comparison.
 5. NIST CSF functions in order?
 
 ---

@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Niche & Service Offering
 
-> **How to use:** Click any card to search YouTube for the topic — search URLs always return current results. Watch in order, take notes, then complete the 5-day wedge drill from the Reading.
+> **How to use:** Click any card to search YouTube for the topic, search URLs always return current results. Watch in order, take notes, then complete the 5-day wedge drill from the Reading.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Win Without Pitching — Positioning</p>
+      <p class="vg-title">Win Without Pitching, Positioning</p>
       <p class="vg-creator">Blair Enns</p>
       <span class="vg-duration">⏱ 45 min · Long-form on agency positioning</span>
     </div>
@@ -147,7 +147,7 @@
 Answer these in your notebook (without re-watching):
 
 1. What is the 100/10/1 niche test and why does each number matter?
-2. Name the three wedge axes — vertical, channel, deliverable — and one example of each.
+2. Name the three wedge axes vertical, channel, deliverable and one example of each.
 3. Why does productized usually beat retainer + hourly for new agency founders?
 4. What is the typical Year-2 ARR range for a niched solo operator?
 5. Pick one wedge from your top 5 and write the positioning sentence in 12 words or fewer.

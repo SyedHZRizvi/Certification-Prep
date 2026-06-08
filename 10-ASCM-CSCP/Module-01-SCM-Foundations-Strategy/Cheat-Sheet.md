@@ -15,7 +15,7 @@ Memorize: **Material · Information · Cash**
 
 ---
 
-## 🧩 SCOR 13.0 — Six Processes
+## 🧩 SCOR 13.0, Six Processes
 
 ```
               PLAN
@@ -94,8 +94,8 @@ Memorize: **Material · Information · Cash**
 - ❌ Matching an **innovative** product with an **efficient** SC (Fisher violation)
 - ❌ Treating "logistics" and "supply chain" as synonyms
 - ❌ Solving bullwhip by adding safety stock at every tier (makes it worse)
-- ❌ "Best practice everywhere" — strategy must be tailored
-- ❌ Ignoring **Enable** in SCOR — version 13.0 has 6 processes, not 5
+- ❌ "Best practice everywhere", strategy must be tailored
+- ❌ Ignoring **Enable** in SCOR, version 13.0 has 6 processes, not 5
 
 ---
 

@@ -19,7 +19,7 @@
 | 9 | **Timing** | Frame count = weight/emotion | More frames = heavier/slower |
 | 10 | **Exaggeration** | Push beyond literal reality | Serve emotional truth |
 | 11 | **Solid Drawing** | 3D form in 2D medium | Weight, balance, overlap |
-| 12 | **Appeal** | Engaging quality — not cute | Clarity of character |
+| 12 | **Appeal** | Engaging quality, not cute | Clarity of character |
 
 ---
 
@@ -65,18 +65,18 @@ flat-steep-flat        straight line             steep-flat
 
 | Film Scene | Primary Principle | Why |
 |-----------|-------------------|-----|
-| Bambi — deer on ice | Slow-In/Slow-Out | Ice removes friction; extreme ease reveals physics |
-| Bambi — deer running | Overlapping Action | Ears lag behind head direction changes |
-| Into the Spider-Verse — Miles's leap | Anticipation | Long pause before the leap earns the payoff |
-| Spider-Verse — different fps per character | Timing | 12fps vs 24fps communicates character difference |
-| Spirited Away — Chihiro not crying | Secondary Action | Trembling lip supports (not competes with) stillness |
-| The Incredibles — Mr. Incredible lifts | Squash & Stretch | Volume-conserving deformation communicates weight |
-| Spirited Away — Chihiro small in frame | Staging | Character size = emotional state (overwhelmed) |
-| Lion King — Scar | Appeal | Clarity of villainous character; not cute, but engaging |
+| Bambi, deer on ice | Slow-In/Slow-Out | Ice removes friction; extreme ease reveals physics |
+| Bambi, deer running | Overlapping Action | Ears lag behind head direction changes |
+| Into the Spider-Verse, Miles's leap | Anticipation | Long pause before the leap earns the payoff |
+| Spider-Verse, different fps per character | Timing | 12fps vs 24fps communicates character difference |
+| Spirited Away, Chihiro not crying | Secondary Action | Trembling lip supports (not competes with) stillness |
+| The Incredibles, Mr. Incredible lifts | Squash & Stretch | Volume-conserving deformation communicates weight |
+| Spirited Away, Chihiro small in frame | Staging | Character size = emotional state (overwhelmed) |
+| Lion King, Scar | Appeal | Clarity of villainous character; not cute, but engaging |
 
 ---
 
-## Exam Traps — Know These
+## Exam Traps, Know These
 
 | Common Mistake | Correct Fact |
 |---------------|-------------|
@@ -92,7 +92,7 @@ flat-steep-flat        straight line             steep-flat
 
 ## The "Bambi Ears Test"
 
-> If a character's secondary elements (hair, coat, ears, tail) stop moving at exactly the same moment as the primary body — they have failed the Bambi Ears Test. Secondary elements must **lag, overlap, and follow-through** relative to the primary body.
+> If a character's secondary elements (hair, coat, ears, tail) stop moving at exactly the same moment as the primary body, they have failed the Bambi Ears Test. Secondary elements must **lag, overlap, and follow-through** relative to the primary body.
 
 ---
 
@@ -110,9 +110,9 @@ flat-steep-flat        straight line             steep-flat
 
 | Source | What It Is |
 |--------|-----------|
-| *The Illusion of Life* — Thomas & Johnston (1981) | **Primary source** for the 12 Principles |
-| *The Animator's Survival Kit* — Williams (2001) | Best timing and spacing reference |
-| *Character Animation Crash Course!* — Goldberg (2008) | Disney animator's performance guide |
+| *The Illusion of Life*, Thomas & Johnston (1981) | **Primary source** for the 12 Principles |
+| *The Animator's Survival Kit*, Williams (2001) | Best timing and spacing reference |
+| *Character Animation Crash Course!*, Goldberg (2008) | Disney animator's performance guide |
 
 
 ---
@@ -148,7 +148,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

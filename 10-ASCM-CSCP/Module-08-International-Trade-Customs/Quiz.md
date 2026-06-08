@@ -187,7 +187,7 @@ D. CIF
 A. EXW
 B. DAP at French port
 C. FOB Brazilian port
-D. CFR French port — risk passes earlier at Brazilian port
+D. CFR French port, risk passes earlier at Brazilian port
 
 ---
 

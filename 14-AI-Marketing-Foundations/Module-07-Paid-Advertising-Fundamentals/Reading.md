@@ -3,9 +3,9 @@
 > **Why this module matters:** This is the largest single revenue category in digital marketing (~$700B globally in 2025, per WARC), the most-tested topic on Google and Meta exams, and the area most reshaped by AI bidding. If you only deeply learn one module, learn this one.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 — The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) — POESM Paid bucket, walled gardens, marketing math (CAC, LTV, ROAS, CPM, CPA)
-> - [Module 5 — Social Media & AI Tools](../Module-05-Social-Media-AI-Tools/Reading.md) — platform-by-platform algorithm logic (Meta, TikTok, LinkedIn ad surfaces sit on top of these)
-> - Comfort reading basic math expressions like "5× ROAS = revenue ÷ ad spend" — the math sections drill this
+> - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM Paid bucket, walled gardens, marketing math (CAC, LTV, ROAS, CPM, CPA)
+> - [Module 5 Social Media & AI Tools](../Module-05-Social-Media-AI-Tools/Reading.md) platform-by-platform algorithm logic (Meta, TikTok, LinkedIn ad surfaces sit on top of these)
+> - Comfort reading basic math expressions like "5× ROAS = revenue ÷ ad spend", the math sections drill this
 >
 > If you've never logged into Google Ads or Meta Business Suite, sign up for the (free) sandbox account before the auction-mechanics section. The auction is much clearer when you've seen the "estimated reach" slider in a real UI.
 
@@ -15,11 +15,11 @@
 
 In 2017, Procter & Gamble's then-CMO **Marc Pritchard** gave a now-famous speech to the IAB Annual Leadership Meeting in which he called the digital media supply chain "murky at best and fraudulent at worst." He laid out specific transparency demands of Facebook, Google, and the open-web ad networks. Then P&G *cut $200 million* in digital advertising spend over the next 18 months.
 
-The expected outcome would have been a sales hit. Instead — and this became a landmark case study in *MIT Sloan Management Review* (2019) and *HBR* — P&G's organic-and-brand metrics held. They had been wasting money. The reach they "lost" was reach to bots, fraud, and frequency caps that nobody had bothered to enforce.
+The expected outcome would have been a sales hit. Instead and this became a landmark case study in *MIT Sloan Management Review* (2019) and *HBR* P&G's organic-and-brand metrics held. They had been wasting money. The reach they "lost" was reach to bots, fraud, and frequency caps that nobody had bothered to enforce.
 
 The lesson:
 
-**Paid ads are the channel where waste compounds quietly. The marketers who win are the ones who actively manage waste — not the ones who maximize spend.**
+**Paid ads are the channel where waste compounds quietly. The marketers who win are the ones who actively manage waste, not the ones who maximize spend.**
 
 In 2026, AI bidding (Performance Max, Advantage+, Smart Performance Campaigns) makes waste *harder* to see because the algorithm decides where your money goes. Understanding the mechanics underneath is now table stakes.
 
@@ -27,7 +27,7 @@ In 2026, AI bidding (Performance Max, Advantage+, Smart Performance Campaigns) m
 
 ## 🔨 The Auction: How All Modern Ad Platforms Work
 
-Every major paid-ad platform — Google, Meta, TikTok, Amazon, LinkedIn — runs on **auctions**. Not your eBay auction; a *real-time, second-price-ish, multi-factor* auction that runs millions of times per second.
+Every major paid-ad platform Google, Meta, TikTok, Amazon, LinkedIn runs on **auctions**. Not your eBay auction; a *real-time, second-price-ish, multi-factor* auction that runs millions of times per second.
 
 ### The Core Mechanic
 
@@ -53,7 +53,7 @@ A higher Quality Score means **lower cost per click + better positions**. A 7+ Q
 
 Meta calls its equivalent **Auction Value = Bid × Estimated Action Rate × Ad Quality**. Same idea, different name. Meta's estimated action rate predicts the likelihood the user takes your desired action (click, install, purchase).
 
-### TikTok, LinkedIn, X — All Variants
+### TikTok, LinkedIn, X, All Variants
 
 All major platforms use bid-times-relevance auctions. The labels differ; the mechanic is the same.
 
@@ -88,7 +88,7 @@ All three follow the same pattern:
 > Give the algorithm: (1) creative assets + (2) targeting hints + (3) goals + budget. Let the algorithm decide which placements, audiences, and creatives to use.
 
 ### Performance Max (Google)
-**Lives across:** Search, YouTube, Display, Discover, Gmail, Maps — all in one campaign.
+**Lives across:** Search, YouTube, Display, Discover, Gmail, Maps, all in one campaign.
 
 **What you provide:**
 - Asset groups (headlines, descriptions, images, videos, logos)
@@ -96,7 +96,7 @@ All three follow the same pattern:
 - Conversion goal + budget
 - Final URLs
 
-**What you give up:** Visibility into which placements drove what — much harder to optimize manually.
+**What you give up:** Visibility into which placements drove what, much harder to optimize manually.
 
 ### Advantage+ Shopping (Meta)
 **Lives across:** Facebook + Instagram + Audience Network.
@@ -114,10 +114,10 @@ Newer (2023): Meta picks the audience automatically, with the option to "suggest
 
 A common 2026 best-practice paid strategy:
 
-1. **PMax / Advantage+ as a base layer** (60–70% of budget) — let AI do what AI is good at.
-2. **Manual brand campaigns** (10–20% of budget) — protect your branded search terms.
-3. **Targeted prospecting / retargeting** (10–20% of budget) — manual where you have unique audience knowledge AI can't replicate.
-4. **Test budgets** (5–10%) — new ideas, new formats.
+1. **PMax / Advantage+ as a base layer** (60–70% of budget), let AI do what AI is good at.
+2. **Manual brand campaigns** (10–20% of budget), protect your branded search terms.
+3. **Targeted prospecting / retargeting** (10–20% of budget), manual where you have unique audience knowledge AI can't replicate.
+4. **Test budgets** (5–10%), new ideas, new formats.
 
 This **portfolio approach** is what most professional teams run. "All Performance Max" is rarely optimal; "no Performance Max" leaves money on the table.
 
@@ -144,7 +144,7 @@ Used heavily in direct-response ad copy.
 - **After:** What life looks like with the solution
 - **Bridge:** Your product is the bridge
 
-### The Hook → Story → Offer (HSO) — modern social ad version
+### The Hook → Story → Offer (HSO), modern social ad version
 
 - **Hook:** First 3 seconds (a question, claim, or visual that stops the scroll)
 - **Story:** A specific transformation or specific demonstration
@@ -192,13 +192,13 @@ Scenario: A $100/month SaaS with average 18-month customer lifespan.
 | **MQL → SQL → Customer conversion** | 20% MQL→SQL, 25% SQL→Customer = 5% MQL→Customer | typical |
 | **Max acceptable CPL (cost per lead)** | $24 | $480 × 0.05 |
 
-If your Facebook Lead Ads campaign is producing leads at $80/MQL but only 1% convert to customer, your effective CAC is $8,000 — 16× over target. Cut.
+If your Facebook Lead Ads campaign is producing leads at $80/MQL but only 1% convert to customer, your effective CAC is $8,000, 16× over target. Cut.
 
 🎯 **MEMORIZE THIS:** "Target ROAS = 1 ÷ blended margin" is a useful first approximation. 40% margin → target ROAS of 2.5× minimum to break even on direct cost. Always model in operating expenses to find true profitable ROAS.
 
 ---
 
-## 🏛️ Google Ads vs Meta Ads vs TikTok Ads — Strategic Differences
+## 🏛️ Google Ads vs Meta Ads vs TikTok Ads, Strategic Differences
 
 | Dimension | Google Ads | Meta Ads | TikTok Ads |
 |---|---|---|---|
@@ -215,7 +215,7 @@ If your Facebook Lead Ads campaign is producing leads at $80/MQL but only 1% con
 
 ## 🛒 The 2026 Retail Media Networks
 
-A category exploding since 2022: **Retail Media Networks (RMNs)** — ad platforms run by retailers (Amazon, Walmart, Target, Instacart, Kroger, Best Buy, Home Depot). They use first-party shopper data — the most valuable post-cookie data in marketing.
+A category exploding since 2022: **Retail Media Networks (RMNs)** ad platforms run by retailers (Amazon, Walmart, Target, Instacart, Kroger, Best Buy, Home Depot). They use first-party shopper data the most valuable post-cookie data in marketing.
 
 By 2025, eMarketer projected RMN spend would exceed **$100 billion in the US alone**, growing faster than any other digital category.
 
@@ -285,7 +285,7 @@ The Wayfair case is the most-cited PMax-success enterprise example. It also pair
 ## ⚠️ Exam Traps
 
 1. **PMax = Google, Advantage+ = Meta.** Don't reverse.
-2. **Quality Score 1–10 in Google Ads** — not the same as Facebook's "Relevance Score" (deprecated and replaced).
+2. **Quality Score 1–10 in Google Ads**, not the same as Facebook's "Relevance Score" (deprecated and replaced).
 3. **Conversions API (CAPI)** is the server-side workaround for iOS 14.5. Meta's terminology; the concept exists everywhere.
 4. **iOS 14.5 ATT launched April 2021.** Sometimes asked.
 5. **Retail Media Networks** are the fastest-growing paid category in 2025–2026.
@@ -336,7 +336,7 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 8: Analytics & Measurement Basics](../Module-08-Analytics-Measurement-Basics/Reading.md)
 
@@ -349,10 +349,10 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The PMax black-box trade-off.** Performance Max compresses your control: you give Google creative + signals + budget, and the algorithm decides everything. Wayfair got 13% lift + 25% CAC improvement; other brands report PMax cannibalizing branded search. Construct the strongest argument for "always start with PMax for any new e-commerce account" and the strongest counter-argument for "always require 6 months of manual data before letting PMax allocate." What's the actual decision rule?
-2. **Manual + AI portfolio mix in practice.** The reading suggests 60–70% PMax/Advantage+, 10–20% brand defense, 10–20% targeted, 5–10% test budget. A growth VP at a $50M-revenue DTC brand says "this assumes mature paid-search experience that most teams don't have — for a 3-person paid team, 90% PMax is the right call so the algorithm carries most of the load." Make the case for and against. At what team size + ad-spend volume does the portfolio mix become enforceable rather than aspirational?
+2. **Manual + AI portfolio mix in practice.** The reading suggests 60–70% PMax/Advantage+, 10–20% brand defense, 10–20% targeted, 5–10% test budget. A growth VP at a $50M-revenue DTC brand says "this assumes mature paid-search experience that most teams don't have, for a 3-person paid team, 90% PMax is the right call so the algorithm carries most of the load." Make the case for and against. At what team size + ad-spend volume does the portfolio mix become enforceable rather than aspirational?
 3. **ROAS reporting as performance theater.** A marketing director presents a 6× ROAS to the CEO. Gross margin is 22%; per-order opex is $14; AOV is $80. Show that this campaign is *actually* losing money on a fully-loaded basis. Then design a 1-page reporting template that the marketing director can use *internally* without contradicting the "6× ROAS" reported to the CEO publicly. What's the right ethical and political move here?
 4. **CAPI + Enhanced Conversions: real fix or marketing theater?** Conversions API + Enhanced Conversions are universally pitched as the "post-iOS-14.5 fix." A skeptic argues they're a partial workaround that gets blessed only because the ecosystem needs *something* to point at; a defender argues recovered match rates of 60–80% are materially game-changing. Make both cases. What measurement design would you propose to prove the value of CAPI in your own account?
 5. **Retail Media Networks: another walled garden, or genuinely different?** RMNs are projected to exceed $100B in US ad spend in 2025. Amazon, Walmart Connect, and Roundel sit on first-party purchase data unavailable to Google or Meta. Are RMNs (a) the next walled gardens (concentrating ad spend on a few retailer-owned platforms) or (b) a genuine ad-tech diversification move that reduces dependence on Google+Meta? Defend the strongest argument and identify what would change your view by 2028.
@@ -362,10 +362,10 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 - 📰 Google Ads Help Center + Skillshop courses
-- 📰 Meta Blueprint — *Foundational Marketing* + *Advertising Core Competencies* tracks
-- 📰 *eMarketer* (Insider Intelligence) — ad spend forecasts
-- 📰 WARC *Global Ad Trends* — annual spend report
-- 📰 *MIT Sloan Management Review* — Pritchard / P&G case (2019)
-- 📖 *Hacking Growth* by Sean Ellis & Morgan Brown — bid-versus-channel-mix thinking
-- 📖 *Predictably Irrational* by Dan Ariely (Duke) — behavioral economics behind ad copy
-- 📖 *Influence* by Robert Cialdini — the six persuasion principles, foundational for ad copy
+- 📰 Meta Blueprint, *Foundational Marketing* + *Advertising Core Competencies* tracks
+- 📰 *eMarketer* (Insider Intelligence), ad spend forecasts
+- 📰 WARC *Global Ad Trends*, annual spend report
+- 📰 *MIT Sloan Management Review*, Pritchard / P&G case (2019)
+- 📖 *Hacking Growth* by Sean Ellis & Morgan Brown, bid-versus-channel-mix thinking
+- 📖 *Predictably Irrational* by Dan Ariely (Duke), behavioral economics behind ad copy
+- 📖 *Influence* by Robert Cialdini, the six persuasion principles, foundational for ad copy

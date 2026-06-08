@@ -69,7 +69,7 @@ I noticed you shipped [specific recent thing]. Really [specific reaction].
 I'm a marketer who's been building a portfolio this year. 
 One of the pieces is [1-line specific].
 
-Curious — is [content/SEO/paid/automation] something you're thinking 
+Curious, is [content/SEO/paid/automation] something you're thinking 
 about for [their product]? If not, no worries.
 
 Either way, would love to follow your build.
@@ -89,7 +89,7 @@ Hi [Name],
 I'm a marketer who recently built [1-line case study reference].
 
 If you're thinking about [specific area] for [their company], 
-I'd love to share what I've learned — no pitch, just useful context.
+I'd love to share what I've learned, no pitch, just useful context.
 
 15-min call this week or next?
 
@@ -102,12 +102,12 @@ I'd love to share what I've learned — no pitch, just useful context.
 ## 📞 30-Min Discovery Call Agenda
 
 ```
-0:00 — Intro + agenda (3 min)
-3:00 — Your story + 1 capstone (5 min) — STOP at 5 min
-8:00 — Their situation (15 min) — ALL the time on them
-23:00 — Recap + project fit (3 min)
-26:00 — Next step (3 min)
-29:00 — End ON TIME
+0:00, Intro + agenda (3 min)
+3:00, Your story + 1 capstone (5 min), STOP at 5 min
+8:00, Their situation (15 min), ALL the time on them
+23:00, Recap + project fit (3 min)
+26:00, Next step (3 min)
+29:00, End ON TIME
 ```
 
 5/20/5 rule. You: 5 min. Them: 20 min. Next: 5 min.
@@ -144,7 +144,7 @@ $[Amount] structured as:
 [Specific time / access / asset]
 
 ## Next Step
-Reply "Approved" — I'll send contract + invoice. Start [date].
+Reply "Approved", I'll send contract + invoice. Start [date].
 ```
 
 ---
@@ -195,7 +195,7 @@ Most clients pick the middle. Don't undersell.
 In cold messages:
 
 - ✅ "I noticed you shipped [specific]..."
-- ✅ "Curious — is [thing] on your roadmap?"
+- ✅ "Curious, is [thing] on your roadmap?"
 - ✅ "If not, no worries. Either way I'd love to follow your build."
 
 In discovery calls:
@@ -233,12 +233,12 @@ If you can fill 1 and 2 in (especially 2), you've done the hardest part of the c
 ## 🎤 The Final 90-Second Pitch
 
 ```
-"I'm a marketer who's spent 6 weeks building 5 case studies — 
+"I'm a marketer who's spent 6 weeks building 5 case studies, 
 SEO audit, paid campaign, automation, attribution, AI agent.
 I work AI-native and always publish post-mortems.
-Currently sending pitches to [audience type] — looking for 1-2 
+Currently sending pitches to [audience type], looking for 1-2 
 projects in the next month.
-Curious — would [capstone type] be useful for [their company]?
+Curious, would [capstone type] be useful for [their company]?
 If not, no worries."
 ```
 

@@ -92,7 +92,7 @@ B. Mitigate
 C. Passive Acceptance
 D. Transfer
 
-### Q16. A team identifies that a competitor is releasing a similar product 30 days before their launch — and it has now happened. This is a(n):
+### Q16. A team identifies that a competitor is releasing a similar product 30 days before their launch, and it has now happened. This is a(n):
 A. Risk
 B. Issue
 C. Threat
@@ -152,7 +152,7 @@ D. Optional in agile
 1.B  2.A  3.B  4.C  5.B  6.A  7.A  8.B  9.C  10.B  11.B  12.C
 
 ### Q13: **C. Mitigate**
-Mitigate = reduce probability OR impact of a threat. Adding testing cycles reduces the probability that defects reach production — classic mitigation, not elimination (which would be Avoid).
+Mitigate = reduce probability OR impact of a threat. Adding testing cycles reduces the probability that defects reach production, classic mitigation, not elimination (which would be Avoid).
 
 ### Q14: **A. +$22K**
 EMV = (0.60 × $50K) + (0.40 × -$20K) = $30K - $8K = +$22K. EMV is the sum of probability-weighted outcomes for each branch of a decision tree.
@@ -167,19 +167,19 @@ A risk is uncertain (future). Once it has happened, it becomes an issue (probabi
 Monte Carlo is a quantitative tool that simulates thousands of project outcomes using probability distributions. SWOT and P-I matrix are qualitative; fishbone is for root cause analysis.
 
 ### Q18: **C. Share**
-Share = partner with another party so both parties benefit from a positive risk. Common via joint ventures or partnerships — neither party can fully exploit the opportunity alone.
+Share = partner with another party so both parties benefit from a positive risk. Common via joint ventures or partnerships, neither party can fully exploit the opportunity alone.
 
 ### Q19: **B. Quantitative Risk Analysis**
 The PMI risk process flows: Plan → Identify → Qualitative → Quantitative → Plan Responses → Implement → Monitor. Quantitative analysis numerically evaluates the high-priority risks identified qualitatively.
 
 ### Q20: **B. Escalate to the program/portfolio level**
-Escalate is the appropriate strategy when a risk is outside the PM's authority and affects a wider scope (program, portfolio, or organization). The PM does not abandon the risk — escalation transfers ownership to the right level.
+Escalate is the appropriate strategy when a risk is outside the PM's authority and affects a wider scope (program, portfolio, or organization). The PM does not abandon the risk, escalation transfers ownership to the right level.
 
 ### Q21: **B. Threshold is a specific measurable limit; Tolerance is an acceptable variation range**
 Risk Threshold sets a discrete numerical line (e.g., "no risk over $25K"). Risk Tolerance is the broader acceptable variation around objectives. Both differ from Risk Appetite (organization-wide willingness).
 
 ### Q22: **A. Avoid**
-Avoid eliminates the threat by changing the project plan — removing the risky feature is a textbook avoid strategy. Mitigate would have kept the feature but reduced exposure.
+Avoid eliminates the threat by changing the project plan, removing the risky feature is a textbook avoid strategy. Mitigate would have kept the feature but reduced exposure.
 
 ### Q23: **B. -$50K**
 EMV = Probability × Impact = 0.25 × -$200K = -$50K. Negative impact (loss) yields a negative EMV; the lower (less negative) the EMV, the better the choice for threats.
@@ -228,7 +228,7 @@ The Risk Register is a living document. New risks emerge; existing risks change 
 
 ### Q25. Big Dig (from the case study). You are PM on a $400M tunnel project. An internal engineer raises a concern about epoxy-anchor durability under expected vibration loads. The team estimates a 4% probability of failure within 10 years, with consequences potentially including fatalities and ~$300M in liability. Using PMBOK 7's Risk principle, what's the MOST defensible response? *(Evaluate)*
 A. Document in the Risk Register, classify as Accept (low probability), continue.
-B. Treat the concern as a high-impact threat regardless of probability: commission an independent engineering review, quantitatively model failure consequences (including loss-of-life dollar valuation per regulatory standards), present at least three response options to the CCB (Avoid via re-design, Mitigate via reinforced anchoring, Transfer via warranty/insurance — and explain why pure Accept is not defensible for fatality-class outcomes), assign a named risk owner, require formal sponsor sign-off on the chosen response, and re-review quarterly.
+B. Treat the concern as a high-impact threat regardless of probability: commission an independent engineering review, quantitatively model failure consequences (including loss-of-life dollar valuation per regulatory standards), present at least three response options to the CCB (Avoid via re-design, Mitigate via reinforced anchoring, Transfer via warranty/insurance, and explain why pure Accept is not defensible for fatality-class outcomes), assign a named risk owner, require formal sponsor sign-off on the chosen response, and re-review quarterly.
 C. Suppress the concern to preserve schedule.
 D. Escalate only after a failure occurs.
 

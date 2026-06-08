@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Screaming Frog For Beginners — Full Walkthrough</p>
+      <p class="vg-title">Screaming Frog For Beginners, Full Walkthrough</p>
       <p class="vg-creator">Screaming Frog (official)</p>
       <span class="vg-duration">⏱ 20 min · Technical SEO from zero</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Surfer SEO Content Editor — Full Workflow</p>
+      <p class="vg-title">Surfer SEO Content Editor, Full Workflow</p>
       <p class="vg-creator">Surfer (official)</p>
       <span class="vg-duration">⏱ 17 min · For the content gap section</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">SEMrush vs Ahrefs — Which To Use</p>
+      <p class="vg-title">SEMrush vs Ahrefs, Which To Use</p>
       <p class="vg-creator">Various reviewers</p>
       <span class="vg-duration">⏱ 14 min · If you can't decide</span>
     </div>

@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: File Servers, Storage & Storage Spaces
 
-> **How to use:** Click any card to search YouTube for the latest top result. Storage is 15–20% of AZ-800 — and the questions are dense (combination scenarios).
+> **How to use:** Click any card to search YouTube for the latest top result. Storage is 15–20% of AZ-800, and the questions are dense (combination scenarios).
 
 ## ⭐ Essential watching (~115 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Storage Spaces Direct (S2D) — Deep Dive</p>
+      <p class="vg-title">Storage Spaces Direct (S2D), Deep Dive</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 40 min · Architecture + prerequisites</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Storage Replica — Sync vs Async</p>
+      <p class="vg-title">Storage Replica, Sync vs Async</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 25 min · Cross-site DR</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ReFS vs NTFS — Pick the Right One</p>
+      <p class="vg-title">ReFS vs NTFS, Pick the Right One</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 20 min · Block cloning, integrity</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">FSRM — Quotas, Screens, Classification</p>
+      <p class="vg-title">FSRM, Quotas, Screens, Classification</p>
       <p class="vg-creator">Server Academy</p>
       <span class="vg-duration">⏱ 20 min · Block ransomware extensions</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">iSCSI Target — VHDX as LUN</p>
+      <p class="vg-title">iSCSI Target, VHDX as LUN</p>
       <p class="vg-creator">ITProTV / ACI Learning</p>
       <span class="vg-duration">⏱ 18 min · CHAP authentication</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Work Folders — Self-Managed File Sync</p>
+      <p class="vg-title">Work Folders, Self-Managed File Sync</p>
       <p class="vg-creator">Practical Windows Server</p>
       <span class="vg-duration">⏱ 14 min · OneDrive alternative</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">BranchCache — Hosted vs Distributed</p>
+      <p class="vg-title">BranchCache, Hosted vs Distributed</p>
       <p class="vg-creator">CBT Nuggets</p>
       <span class="vg-duration">⏱ 16 min · WAN optimization</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">S2D Resiliency — Mirror vs Parity vs MAP</p>
+      <p class="vg-title">S2D Resiliency, Mirror vs Parity vs MAP</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 18 min · Match resiliency to node count</span>
     </div>
@@ -147,9 +147,9 @@ Answer these in your notebook:
 
 1. S2D node range and edition requirement?
 2. Storage Replica sync mode latency budget?
-3. DFS-N vs DFS-R — what does each do, and how do they pair?
+3. DFS-N vs DFS-R, what does each do, and how do they pair?
 4. ReFS use cases vs NTFS use cases?
-5. FSRM file screen — active vs passive mode?
-6. iSCSI Target Server — what authentication options exist?
+5. FSRM file screen, active vs passive mode?
+6. iSCSI Target Server, what authentication options exist?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

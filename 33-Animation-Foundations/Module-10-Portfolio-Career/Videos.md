@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Animation Demo Reel Tips — What Studios Look For</p>
+      <p class="vg-title">Animation Demo Reel Tips, What Studios Look For</p>
       <p class="vg-creator">Animation Career Review / Bloop Animation</p>
       <span class="vg-duration">⏱ 20 min · Best shot first, no filler, 90 second rule</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">How to Get a Job in Animation — Industry Insider Advice</p>
+      <p class="vg-title">How to Get a Job in Animation, Industry Insider Advice</p>
       <p class="vg-creator">Animation Mentor / Toniko Pantoja</p>
       <span class="vg-duration">⏱ 22 min · Networking, reel, timing your job search</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Freelance vs Studio — The Honest Comparison</p>
+      <p class="vg-title">Freelance vs Studio, The Honest Comparison</p>
       <p class="vg-creator">Bloop Animation / School of Motion</p>
       <span class="vg-duration">⏱ 18 min · Money, creative control, stability compared honestly</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Animation Salaries — What Animators Actually Make</p>
+      <p class="vg-title">Animation Salaries, What Animators Actually Make</p>
       <p class="vg-creator">Animation Career Review / Real talk with professionals</p>
       <span class="vg-duration">⏱ 15 min · Junior through director salary reality check</span>
     </div>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Networking in Animation — CTN, Annecy, and Online</p>
+      <p class="vg-title">Networking in Animation, CTN, Annecy, and Online</p>
       <p class="vg-creator">Animation Mentor / Animation Obsessive</p>
       <span class="vg-duration">⏱ 12 min · Why 75% of jobs aren't posted and how to find them</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">How Pixar Hires Animators — The Interview Process</p>
+      <p class="vg-title">How Pixar Hires Animators, The Interview Process</p>
       <p class="vg-creator">Pixar / Animation Career Review</p>
       <span class="vg-duration">⏱ 20 min · Reel review, animation test, culture fit</span>
     </div>

@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -268,7 +268,7 @@
 
 # 🃏 AWS AI Practitioner (AIF-C01) Master Flashcards
 
-> **How to use:** Click any card to flip. Click "Got it" to mark it known. Filter by section above. Aim for daily 10-minute reviews until the exam — the vocabulary should be reflexive.
+> **How to use:** Click any card to flip. Click "Got it" to mark it known. Filter by section above. Aim for daily 10-minute reviews until the exam, the vocabulary should be reflexive.
 
 ---
 
@@ -283,20 +283,20 @@
 **Q:** What are the 3 ML paradigms?
 **A:** Supervised (labeled), Unsupervised (no labels), Reinforcement (reward-based trial and error).
 
-**Q:** Classification vs Regression — what's the difference?
+**Q:** Classification vs Regression, what's the difference?
 **A:** Classification predicts a category; Regression predicts a number.
 
 **Q:** What is unsupervised CLUSTERING used for?
 **A:** Grouping similar items without predefined categories (e.g., customer segmentation).
 
 **Q:** What does RLHF stand for and what is it used for?
-**A:** Reinforcement Learning from Human Feedback — aligns LLMs with human preferences (used for Claude/GPT-style chat models).
+**A:** Reinforcement Learning from Human Feedback, aligns LLMs with human preferences (used for Claude/GPT-style chat models).
 
 **Q:** What is overfitting?
-**A:** When a model memorizes the training data and performs poorly on new (test) data — high training accuracy, low test accuracy.
+**A:** When a model memorizes the training data and performs poorly on new (test) data, high training accuracy, low test accuracy.
 
 **Q:** What is underfitting?
-**A:** When a model is too simple — poor accuracy on both training and test data.
+**A:** When a model is too simple, poor accuracy on both training and test data.
 
 **Q:** Parameter vs Hyperparameter?
 **A:** Parameters are learned during training (weights). Hyperparameters are set before training (learning rate, batch size, epochs).
@@ -321,13 +321,13 @@
 **A:** A fully managed end-to-end ML platform with tools for the entire lifecycle (Studio, Data Wrangler, Feature Store, Training, Endpoints, etc.).
 
 **Q:** What is SageMaker Studio?
-**A:** The browser-based IDE for ML — notebooks, training, deployment, all in one place.
+**A:** The browser-based IDE for ML, notebooks, training, deployment, all in one place.
 
 **Q:** What is SageMaker Canvas?
 **A:** No-code visual ML for business analysts working with tabular CSVs.
 
 **Q:** What is SageMaker Autopilot?
-**A:** AutoML — explores algorithms and hyperparameters on tabular data and returns the best model plus a notebook.
+**A:** AutoML, explores algorithms and hyperparameters on tabular data and returns the best model plus a notebook.
 
 **Q:** What is SageMaker JumpStart?
 **A:** A catalog of pretrained models (including foundation models) and end-to-end solutions you can deploy on a SageMaker endpoint.
@@ -336,7 +336,7 @@
 **A:** A visual data prep tool with 300+ built-in transformations.
 
 **Q:** What is SageMaker Feature Store?
-**A:** A central, versioned store for ML features — online for low-latency inference, offline (S3) for training.
+**A:** A central, versioned store for ML features, online for low-latency inference, offline (S3) for training.
 
 **Q:** What is SageMaker Ground Truth?
 **A:** A managed data labeling service with public, private, and vendor workforces (and active learning).
@@ -357,10 +357,10 @@
 **A:** Bias detection (pre/post-training and in production) and explainability via SHAP.
 
 **Q:** What is Amazon Rekognition?
-**A:** A managed AWS AI service for image and video analysis — object/face/celebrity detection, content moderation, OCR.
+**A:** A managed AWS AI service for image and video analysis, object/face/celebrity detection, content moderation, OCR.
 
 **Q:** What is Amazon Textract?
-**A:** A managed service for extracting text plus structured data (tables, forms) from documents — OCR++.
+**A:** A managed service for extracting text plus structured data (tables, forms) from documents, OCR++.
 
 **Q:** What is Amazon Comprehend?
 **A:** A managed NLP service for sentiment, entities, key phrases, language detection. Comprehend Medical adds PHI extraction.
@@ -400,7 +400,7 @@
 **A:** The maximum number of tokens (prompt + response) the model can process in a single call.
 
 **Q:** What is an embedding?
-**A:** A high-dimensional numerical vector representing the meaning of text/image/audio — similar meanings are close in vector space.
+**A:** A high-dimensional numerical vector representing the meaning of text/image/audio, similar meanings are close in vector space.
 
 **Q:** What does TEMPERATURE control?
 **A:** Randomness / creativity of the output. Lower = more deterministic. Higher = more creative (and more hallucination risk).
@@ -428,25 +428,25 @@
 ## 📦 SECTION 4: AMAZON BEDROCK & THE AWS GENAI STACK
 
 **Q:** What is Amazon Bedrock?
-**A:** A fully managed service for accessing multiple foundation models through one API — serverless, pay per token, no infrastructure.
+**A:** A fully managed service for accessing multiple foundation models through one API, serverless, pay per token, no infrastructure.
 
 **Q:** Name 6 Bedrock model providers.
 **A:** Anthropic (Claude), Amazon (Titan, Nova), Meta (Llama), Mistral, Cohere, Stability AI, AI21 Labs.
 
 **Q:** Are OpenAI's GPT models on Bedrock?
-**A:** No — Bedrock providers as of 2024–2025 do NOT include OpenAI or Google Gemini.
+**A:** No, Bedrock providers as of 2024–2025 do NOT include OpenAI or Google Gemini.
 
 **Q:** What is Amazon Nova?
 **A:** Amazon's 2024 frontier foundation model family (Nova Micro, Lite, Pro, Premier; Canvas for images; Reel for video).
 
 **Q:** What is the Amazon Titan family?
-**A:** Amazon's first-party FM family — Titan Text (Lite/Express), Titan Text Embeddings, Titan Image Generator.
+**A:** Amazon's first-party FM family, Titan Text (Lite/Express), Titan Text Embeddings, Titan Image Generator.
 
-**Q:** Amazon Q Developer vs Amazon Q Business — one line each.
+**Q:** Amazon Q Developer vs Amazon Q Business, one line each.
 **A:** Q Developer = AI coding assistant in your IDE / AWS console (was CodeWhisperer). Q Business = enterprise RAG chatbot over your company data.
 
 **Q:** What is PartyRock?
-**A:** A no-code sandbox on top of Bedrock for prototyping and learning — not for production.
+**A:** A no-code sandbox on top of Bedrock for prototyping and learning, not for production.
 
 **Q:** What is AWS Trainium?
 **A:** Custom AWS chip purpose-built for ML training at lower cost than GPUs.
@@ -477,13 +477,13 @@
 **A:** Zero-shot = no examples; Few-shot = several worked examples before the new input.
 
 **Q:** What is Chain-of-Thought (CoT) prompting?
-**A:** Asking the model to reason step-by-step ("Let's think step by step") — improves reasoning and math.
+**A:** Asking the model to reason step-by-step ("Let's think step by step"), improves reasoning and math.
 
 **Q:** What is ReAct prompting?
-**A:** Reason + Act + Observe loop — interleaves reasoning with calling external tools/APIs. The pattern behind Bedrock Agents.
+**A:** Reason + Act + Observe loop, interleaves reasoning with calling external tools/APIs. The pattern behind Bedrock Agents.
 
 **Q:** What is prompt injection?
-**A:** Malicious user input that overrides the system prompt — the "SQL injection" of LLMs.
+**A:** Malicious user input that overrides the system prompt, the "SQL injection" of LLMs.
 
 **Q:** Direct vs Indirect prompt injection?
 **A:** Direct = user types the malicious prompt. Indirect = malicious instructions are hidden in content the LLM ingests (PDF, web page, RAG corpus).
@@ -492,13 +492,13 @@
 **A:** Tricking the model to bypass its built-in safety guidelines.
 
 **Q:** Define RAG.
-**A:** Retrieval-Augmented Generation — fetch relevant chunks from your data at runtime and feed them into the prompt so the LLM grounds its answer.
+**A:** Retrieval-Augmented Generation, fetch relevant chunks from your data at runtime and feed them into the prompt so the LLM grounds its answer.
 
 **Q:** The 2 phases of RAG?
 **A:** INDEX (chunk → embed → store in vector DB) and QUERY (embed question → retrieve top-K → feed to LLM → answer).
 
 **Q:** What are Knowledge Bases for Amazon Bedrock?
-**A:** A managed RAG service — Bedrock handles chunking, embedding, vector storage, and retrieval orchestration.
+**A:** A managed RAG service, Bedrock handles chunking, embedding, vector storage, and retrieval orchestration.
 
 **Q:** Default vector store for Bedrock Knowledge Bases?
 **A:** Amazon OpenSearch Serverless.
@@ -529,7 +529,7 @@
 **A:** A JSONL file in S3 with prompt/completion (or chat-style messages) pairs.
 
 **Q:** What's required to invoke a custom (fine-tuned) Bedrock model?
-**A:** Provisioned Throughput — you reserve dedicated model units to serve inference.
+**A:** Provisioned Throughput, you reserve dedicated model units to serve inference.
 
 **Q:** What is continued pre-training?
 **A:** Extending a foundation model's pre-training using large amounts of UNLABELED domain text. Used for whole-domain vocabulary shifts.
@@ -538,10 +538,10 @@
 **A:** Fine-tuning a base model on curated instruction+response pairs to turn it into a chat-style assistant.
 
 **Q:** What does PEFT / LoRA stand for and do?
-**A:** Parameter-Efficient Fine-Tuning / Low-Rank Adaptation — train small adapter layers on top of frozen base weights. Cheap, fast modern fine-tuning.
+**A:** Parameter-Efficient Fine-Tuning / Low-Rank Adaptation, train small adapter layers on top of frozen base weights. Cheap, fast modern fine-tuning.
 
 **Q:** What is DPO?
-**A:** Direct Preference Optimization — a newer, simpler alignment alternative to RLHF using preference pairs.
+**A:** Direct Preference Optimization, a newer, simpler alignment alternative to RLHF using preference pairs.
 
 **Q:** Which metric is best for MACHINE TRANSLATION?
 **A:** BLEU (n-gram overlap).
@@ -550,16 +550,16 @@
 **A:** ROUGE (recall-oriented n-gram overlap).
 
 **Q:** What is PERPLEXITY and is lower better or worse?
-**A:** Intrinsic LM metric — how "surprised" the model is by held-out text. **Lower is better.**
+**A:** Intrinsic LM metric, how "surprised" the model is by held-out text. **Lower is better.**
 
 **Q:** What is BERTScore?
-**A:** A semantic similarity metric using embedding models — closer to human judgment than n-gram metrics.
+**A:** A semantic similarity metric using embedding models, closer to human judgment than n-gram metrics.
 
 **Q:** Name the 4 evaluation types in Bedrock Model Evaluation.
 **A:** Automatic, Human (worker), Knowledge Base evaluation, and LLM-as-a-judge.
 
 **Q:** What is LLM-as-a-judge?
-**A:** Using one strong LLM to grade another LLM's outputs at scale — much cheaper than full human eval.
+**A:** Using one strong LLM to grade another LLM's outputs at scale, much cheaper than full human eval.
 
 **Q:** Top 3 ways to cut Bedrock cost?
 **A:** Switch to a smaller model (Haiku, Nova Micro); use Bedrock Batch (50% off); shorten prompts and use RAG instead of stuffing big context.
@@ -587,9 +587,9 @@
 **A:** Managed human-in-the-loop review workflows for AI predictions (Textract, Rekognition, Comprehend, custom).
 
 **Q:** What is disparate impact and the "80% rule"?
-**A:** A fairness check comparing selection rates across groups — ratio below ~0.8 indicates disparate impact (bias).
+**A:** A fairness check comparing selection rates across groups, ratio below ~0.8 indicates disparate impact (bias).
 
-**Q:** SHAP — what is it?
+**Q:** SHAP, what is it?
 **A:** A feature-attribution technique that explains an individual prediction by attributing the output to each input feature.
 
 **Q:** What is the difference between explainability and interpretability?
@@ -602,14 +602,14 @@
 **A:** Proactive adversarial testing of an AI system to find safety/security failures before attackers do.
 
 **Q:** What is HITL?
-**A:** Human-In-The-Loop — a human approves or reviews every AI prediction before it's used (high-stakes scenarios).
+**A:** Human-In-The-Loop, a human approves or reviews every AI prediction before it's used (high-stakes scenarios).
 
 ---
 
 ## 📦 SECTION 8: AI SECURITY & GOVERNANCE
 
 **Q:** Under the AWS Shared Responsibility Model for AI, what is the CUSTOMER responsible for?
-**A:** Data classification, IAM least-privilege, Guardrails configuration, fine-tuning data safety, reviewing audit logs — all "in the cloud" choices.
+**A:** Data classification, IAM least-privilege, Guardrails configuration, fine-tuning data safety, reviewing audit logs, all "in the cloud" choices.
 
 **Q:** What IAM action invokes a Bedrock model?
 **A:** `bedrock:InvokeModel` (and `bedrock:InvokeModelWithResponseStream` for streaming).
@@ -621,10 +621,10 @@
 **A:** Use a PrivateLink VPC interface endpoint for Bedrock Runtime (and Agent / KB Runtime).
 
 **Q:** What does AWS CloudTrail log for Bedrock?
-**A:** API call METADATA — who called what, when. NOT the prompt/response content.
+**A:** API call METADATA, who called what, when. NOT the prompt/response content.
 
 **Q:** What captures the actual PROMPT + RESPONSE content from Bedrock?
-**A:** Bedrock model invocation logging (to S3 or CloudWatch Logs) — opt-in.
+**A:** Bedrock model invocation logging (to S3 or CloudWatch Logs), opt-in.
 
 **Q:** What does AWS Macie do?
 **A:** ML-powered PII / sensitive data discovery and classification in S3 buckets.
@@ -639,10 +639,10 @@
 **A:** Aggregates audit evidence into framework-aligned packages (NIST, ISO, PCI, etc.).
 
 **Q:** What is a BAA and when do you need one?
-**A:** Business Associate Addendum — required to run HIPAA-regulated workloads on AWS (must also use HIPAA-eligible services).
+**A:** Business Associate Addendum, required to run HIPAA-regulated workloads on AWS (must also use HIPAA-eligible services).
 
 **Q:** Does GDPR apply to a US-based AI service?
-**A:** Yes — if the service processes personal data of EU residents. GDPR is based on data subject location, not company HQ.
+**A:** Yes, if the service processes personal data of EU residents. GDPR is based on data subject location, not company HQ.
 
 **Q:** What is model extraction (model theft)?
 **A:** An attacker queries the model thousands of times to copy its behavior. Defense: rate limiting, query monitoring, watermarking.
@@ -657,7 +657,7 @@
 **A:** The IAM role a SageMaker job or endpoint assumes to access AWS resources (S3, ECR, KMS).
 
 **Q:** Best encryption-at-rest option for sensitive Bedrock custom models?
-**A:** A customer-managed KMS key (CMK) — gives you key rotation, policy control, and audit via CloudTrail.
+**A:** A customer-managed KMS key (CMK), gives you key rotation, policy control, and audit via CloudTrail.
 
 **Q:** What is the SageMaker Model Registry?
 **A:** A central catalog of trained models with versions, lineage, and an approval workflow before deployment.
@@ -669,7 +669,7 @@
 1. Run flashcards 10 minutes/day, every day, until the exam
 2. Filter by section when you need to drill the weakest module
 3. "Got it" only when you'd nail it cold on the exam
-4. Shuffle before each session — recall in context, not order
+4. Shuffle before each session, recall in context, not order
 5. Track wrong answers and turn them into new flashcards
 
 ---

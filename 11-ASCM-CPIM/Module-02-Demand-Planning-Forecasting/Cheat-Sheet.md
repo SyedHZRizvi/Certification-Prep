@@ -56,12 +56,12 @@ Tracking Signal: Σe_t / MAD          ← alarm if |TS| > 4
 | Type | Methods | When |
 |------|---------|------|
 | Qualitative | Delphi, sales-force composite, executive opinion, market research | New product, no data, long-range |
-| Quantitative — Time series | SMA, WMA, exp smoothing, decomposition | Stable patterns, historical data |
-| Quantitative — Causal | Regression, econometric | Demand driven by external variable |
+| Quantitative, Time series | SMA, WMA, exp smoothing, decomposition | Stable patterns, historical data |
+| Quantitative, Causal | Regression, econometric | Demand driven by external variable |
 
 ---
 
-## 🤝 CPFR — 4 Activities
+## 🤝 CPFR, 4 Activities
 
 1. **Strategy & planning** (joint business plan)
 2. **Demand & supply management** (shared forecasts)

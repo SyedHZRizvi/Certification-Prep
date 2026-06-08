@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: The Agile Mindset
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~45 min)
 
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Agile vs Waterfall — Which Should You Use?</p>
+      <p class="vg-title">Agile vs Waterfall, Which Should You Use?</p>
       <p class="vg-creator">Simplilearn</p>
       <span class="vg-duration">⏱ 12 min · When NOT to use Agile</span>
     </div>
@@ -133,7 +133,7 @@
 
 | Channel | Why |
 |---------|-----|
-| **Scrum.org** | Official source — purest content |
+| **Scrum.org** | Official source, purest content |
 | **Mountain Goat Software (Mike Cohn)** | OG agile coach, super clear |
 | **Development That Pays** | Animated, accessible, fun |
 | **Agile for Humans Podcast** | Interviews with practitioners |

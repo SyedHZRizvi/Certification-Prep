@@ -8,7 +8,7 @@
 ## Questions
 
 ### Q1. Did you rewrite your LinkedIn headline to follow Pattern A, B, or C (not job-title default)? *(Create)*
-A. Yes — strong, specific, capstone-anchored
+A. Yes, strong, specific, capstone-anchored
 B. Rewrote, but generic
 C. Lightly tweaked
 D. Default headline
@@ -16,7 +16,7 @@ D. Default headline
 ---
 
 ### Q2. Did you rewrite your LinkedIn About section? *(Create)*
-A. Yes — opens with a story + lists 5 capstones + clear CTA
+A. Yes, opens with a story + lists 5 capstones + clear CTA
 B. Rewrote, less structured
 C. Tweaked existing
 D. Default About
@@ -24,7 +24,7 @@ D. Default About
 ---
 
 ### Q3. Did you pin 4–6 items to your Featured section? *(Apply)*
-A. Yes — 4–6, each with custom title
+A. Yes, 4–6, each with custom title
 B. 2–3 pinned
 C. 1 pinned
 D. Empty Featured
@@ -32,7 +32,7 @@ D. Empty Featured
 ---
 
 ### Q4. Did you replace your LinkedIn banner with a custom image? *(Create)*
-A. Yes — custom banner, on-brand
+A. Yes, custom banner, on-brand
 B. Custom banner, basic
 C. Tweaked, mostly default
 D. Default blue banner
@@ -40,7 +40,7 @@ D. Default blue banner
 ---
 
 ### Q5. Is your portfolio site LIVE on a public URL (Notion / Webflow / Read.cv / Astro)? *(Apply)*
-A. Yes — live + linkable
+A. Yes, live + linkable
 B. Built, not public yet
 C. In progress
 D. Not started
@@ -48,7 +48,7 @@ D. Not started
 ---
 
 ### Q6. Does your portfolio site link to all 5 capstones? *(Apply)*
-A. Yes — all 5 with hero images
+A. Yes, all 5 with hero images
 B. 3–4 capstones
 C. 1–2
 D. None / generic
@@ -56,7 +56,7 @@ D. None / generic
 ---
 
 ### Q7. Did you draft at least 10 LinkedIn posts before starting to publish? *(Create)*
-A. Yes — 10+ drafted in Notion / Doc
+A. Yes, 10+ drafted in Notion / Doc
 B. 5–9 drafted
 C. 1–4 drafted
 D. Posting day-of, no drafts
@@ -64,7 +64,7 @@ D. Posting day-of, no drafts
 ---
 
 ### Q8. Have you published at least 5 LinkedIn posts since finishing the capstones? *(Apply)*
-A. Yes — 5+ live
+A. Yes, 5+ live
 B. 3–4 live
 C. 1–2 live
 D. None yet
@@ -72,7 +72,7 @@ D. None yet
 ---
 
 ### Q9. Do your posts include specific numbers, screenshots, or named subjects? *(Evaluate)*
-A. Yes — all posts are specific
+A. Yes, all posts are specific
 B. Most are
 C. Some are
 D. Posts are vague / generic
@@ -80,7 +80,7 @@ D. Posts are vague / generic
 ---
 
 ### Q10. Do you have a posting cadence (calendar-blocked schedule)? *(Apply)*
-A. Yes — fixed days of the week
+A. Yes, fixed days of the week
 B. Roughly weekly
 C. Whenever motivated
 D. No cadence
@@ -88,7 +88,7 @@ D. No cadence
 ---
 
 ### Q11. Did you commit to using a secondary channel (Twitter/X, YouTube, Reddit, Substack)? *(Evaluate)*
-A. Yes — secondary channel active
+A. Yes, secondary channel active
 B. Account exists, no activity yet
 C. Considering
 D. No
@@ -96,7 +96,7 @@ D. No
 ---
 
 ### Q12. Have you written your 60-second cold-open pitch for recruiter calls? *(Create)*
-A. Yes — written + practiced
+A. Yes, written + practiced
 B. Written
 C. Drafted in head
 D. Not yet
@@ -104,7 +104,7 @@ D. Not yet
 ---
 
 ### Q13. Have you reached out to 5+ people in your network to share that you're building / job-seeking? *(Apply)*
-A. Yes — 5+ messages sent
+A. Yes, 5+ messages sent
 B. 2–4
 C. 1
 D. None
@@ -112,7 +112,7 @@ D. None
 ---
 
 ### Q14. Does your portfolio site have your contact info (email / LinkedIn / Twitter)? *(Apply)*
-A. Yes — clear contact section
+A. Yes, clear contact section
 B. Email only
 C. Hard to find
 D. Missing
@@ -120,7 +120,7 @@ D. Missing
 ---
 
 ### Q15. Have you "built in public" at least once (shared work-in-progress, not just finished output)? *(Apply)*
-A. Yes — 3+ build-in-public posts
+A. Yes, 3+ build-in-public posts
 B. 1–2
 C. Considered
 D. No
@@ -128,7 +128,7 @@ D. No
 ---
 
 ### Q16. Did you avoid the 3 anti-patterns (engagement-baiting, generic content, over-polishing)? *(Analyze)*
-A. Yes — checked each post
+A. Yes, checked each post
 B. Mostly avoided
 C. Some patterns slipped in
 D. Anti-patterns present
@@ -136,7 +136,7 @@ D. Anti-patterns present
 ---
 
 ### Q17. Did you set your "90-day metric goals" (post count, profile views, etc.)? *(Create)*
-A. Yes — written down with targets
+A. Yes, written down with targets
 B. Targets in mind
 C. Loosely
 D. No goals
@@ -144,7 +144,7 @@ D. No goals
 ---
 
 ### Q18. Is your portfolio site polished enough to share with a recruiter today? *(Evaluate)*
-A. Yes — shippable now
+A. Yes, shippable now
 B. Mostly, needs minor polish
 C. Needs work
 D. Not ready
@@ -152,7 +152,7 @@ D. Not ready
 ---
 
 ### Q19. Do your case study pages each follow P-C-A-R-L? *(Apply)*
-A. Yes — all 5
+A. Yes, all 5
 B. 3–4 do
 C. 1–2 do
 D. Inconsistent
@@ -160,7 +160,7 @@ D. Inconsistent
 ---
 
 ### Q20. Did you spend 4–8 hours on this module's work? *(Evaluate)*
-A. Yes — within range
+A. Yes, within range
 B. 2–4 or 8–12
 C. <2 or >12
 D. Still ongoing
@@ -168,7 +168,7 @@ D. Still ongoing
 ---
 
 ### Q21. Did you avoid building Webflow / Astro at the expense of shipping? *(Evaluate)*
-A. Yes — shipped on Notion + iterating
+A. Yes, shipped on Notion + iterating
 B. Shipped, less polished platform
 C. Polished forever
 D. Still polishing
@@ -176,7 +176,7 @@ D. Still polishing
 ---
 
 ### Q22. Have you reviewed 5+ other marketers' LinkedIn profiles for inspiration? *(Analyze)*
-A. Yes — 5+
+A. Yes, 5+
 B. 2–4
 C. 1
 D. None
@@ -184,7 +184,7 @@ D. None
 ---
 
 ### Q23. Did you write a "tagline" for your personal brand (1 sentence that sums you up)? *(Create)*
-A. Yes — distinctive tagline
+A. Yes, distinctive tagline
 B. Generic tagline
 C. Working on it
 D. None
@@ -192,7 +192,7 @@ D. None
 ---
 
 ### Q24. Is each post structured (hook, body, CTA)? *(Evaluate)*
-A. Yes — every post
+A. Yes, every post
 B. Most posts
 C. Some
 D. Posts are unstructured
@@ -200,7 +200,7 @@ D. Posts are unstructured
 ---
 
 ### Q25. Do you have a workflow for engaging on others' posts (comment mining)? *(Apply)*
-A. Yes — daily routine
+A. Yes, daily routine
 B. Weekly
 C. Occasional
 D. No engagement habit
@@ -208,7 +208,7 @@ D. No engagement habit
 ---
 
 ### Q26. Did you ask for or receive any feedback on your portfolio site? *(Evaluate)*
-A. Yes — 3+ peer reviews
+A. Yes, 3+ peer reviews
 B. 1–2 reviews
 C. Looked at it alone
 D. Nobody else has seen it
@@ -216,7 +216,7 @@ D. Nobody else has seen it
 ---
 
 ### Q27. Have you connected your portfolio site to your LinkedIn (link in profile)? *(Apply)*
-A. Yes — linked from headline + About + Featured
+A. Yes, linked from headline + About + Featured
 B. Linked somewhere on profile
 C. Mentioned in About text only
 D. Not linked
@@ -224,7 +224,7 @@ D. Not linked
 ---
 
 ### Q28. Do you feel confident sending your portfolio link to a recruiter tomorrow? *(Evaluate)*
-A. Yes — confident
+A. Yes, confident
 B. Mostly confident, minor anxiety
 C. Hesitant
 D. Not yet
@@ -234,7 +234,7 @@ D. Not yet
 ## 🎯 Model Answers + Grading Guidance
 
 ### Q1: Excellent looks like: **A**
-Pattern B (capstone-anchored) is the strongest for entry-level. *"Marketer who built a $200 paid campaign post-mortem — case study below"*.
+Pattern B (capstone-anchored) is the strongest for entry-level. *"Marketer who built a $200 paid campaign post-mortem, case study below"*.
 
 ### Q2: Excellent looks like: **A**
 Story-opener About section. The single most underused real estate on LinkedIn.
@@ -297,7 +297,7 @@ All 5 case studies use P-C-A-R-L. Consistency builds trust.
 Shipped on Notion. Polish later. The trap kills students.
 
 ### Q22: Excellent looks like: **A**
-5+ profiles reviewed. Research is fine — at 1 hour cap.
+5+ profiles reviewed. Research is fine, at 1 hour cap.
 
 ### Q23: Excellent looks like: **A**
 Distinctive tagline. *"AI-native marketer who ships."* > *"Driven marketing professional."*

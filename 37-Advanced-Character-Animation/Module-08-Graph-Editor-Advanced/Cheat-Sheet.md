@@ -1,10 +1,10 @@
-# Module 8 Cheat Sheet — Advanced Graph Editor 📈
+# Module 8 Cheat Sheet, Advanced Graph Editor 📈
 
 ## Curve Shape → Motion Meaning
 
 | Curve Shape | Motion |
 |-------------|--------|
-| Flat (horizontal) | Hold — no change |
+| Flat (horizontal) | Hold, no change |
 | Steep diagonal | Fast constant speed |
 | S-curve | Organic: slow-in → fast → slow-out |
 | Convex (arch up) | Peaks in value (ball apex) |
@@ -59,7 +59,7 @@ LONG handle  = approaches key value SLOWLY
 
 ---
 
-## Stepped Workflow — 3 Phases
+## Stepped Workflow, 3 Phases
 
 ```
 PHASE 1: BLOCKING (Stepped)
@@ -68,7 +68,7 @@ PHASE 1: BLOCKING (Stepped)
 
 PHASE 2: SPLINE ROUGH
   → Switch to Spline
-  → "Swimming" appears — this is NORMAL
+  → "Swimming" appears, this is NORMAL
   → Fix major direction and overshoot errors
 
 PHASE 3: SPLINE REFINE
@@ -107,7 +107,7 @@ PHASE 3: SPLINE REFINE
 ### Y-Translation Curve Shapes
 | Motion | Curve Shape | Graph Signature |
 |--------|------------|-----------------|
-| Gravity fall | Concave — always accelerating | Exponentially steepening slope |
+| Gravity fall | Concave, always accelerating | Exponentially steepening slope |
 | Ball bounce contacts | Spike pattern | V-spikes; progressively smaller |
 | Jump apex | Flat plateau at peak | Convex arch; near-zero slope 2–3f |
 | Walk COG | Sinusoidal wave | Smooth oscillation; 1 cycle per 2 steps |
@@ -117,9 +117,9 @@ PHASE 3: SPLINE REFINE
 | Motion | Graph Signature |
 |--------|----------------|
 | Torso breathing | Slow, low-amplitude sinusoid (36–72f period) |
-| Blink (upper lid) | Asymmetric spike — steep close, gentler open |
+| Blink (upper lid) | Asymmetric spike, steep close, gentler open |
 | Head turn | S-curve (ease-in → peak speed → ease-out) |
-| Eye saccade | Step function — instant jump, flat hold |
+| Eye saccade | Step function, instant jump, flat hold |
 | Tail follow-through | Offset S-curve + secondary oscillation |
 
 ---
@@ -149,7 +149,7 @@ PHASE 3: SPLINE REFINE
 [ ] Scale channels: X/Z inverted to Y during squash/stretch
 [ ] Eye rotation channels: stepped tangents for saccades
 [ ] COG path is smooth and consistent with character mass
-[ ] Minimum keyframes necessary — no dense, bumpy over-keyed sections
+[ ] Minimum keyframes necessary, no dense, bumpy over-keyed sections
 ```
 
 ---
@@ -175,10 +175,10 @@ PHASE 3: SPLINE REFINE
 | What is an S-curve | Slow-in → fast middle → slow-out; Newton's First Law in curve form |
 | Spline vs. clamped | Spline can overshoot key value; clamped cannot |
 | Stepped workflow phases | Blocking (stepped) → Spline rough → Spline refine |
-| Swimming poses | Inevitable after spline switch — fix through tangent work |
-| Eye saccade tangent type | Stepped — instant jump to new value |
+| Swimming poses | Inevitable after spline switch, fix through tangent work |
+| Eye saccade tangent type | Stepped, instant jump to new value |
 | Ball bounce signature | V-spike pattern on Y-translation; progressively smaller |
 | Overshoot fix | Shorten the outgoing tangent handle on follow-through key |
 | Set Driven Key vs. Expression | SDK = curve mapping (non-linear); Expression = math formula (linear) |
-| Settling curve shape | Damped oscillation — each peak ~65% of previous peak |
+| Settling curve shape | Damped oscillation, each peak ~65% of previous peak |
 | Hold drift fix | Add an anchor keyframe during the hold section |

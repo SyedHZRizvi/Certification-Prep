@@ -220,13 +220,13 @@ SHAP (SHapley Additive exPlanations) attributes a prediction to each input featu
 SageMaker Model Cards = you write them. AI Service Cards = AWS writes them for AWS AI services.
 
 ### Q7: **B. HITL with Amazon A2I**
-A2I is AWS's managed HITL service — Textract/Rekognition/Comprehend/custom predictions.
+A2I is AWS's managed HITL service, Textract/Rekognition/Comprehend/custom predictions.
 
 ### Q8: **D. Encrypted volume scanning**
 Guardrails filters: content, denied topics, word, PII/sensitive info, contextual grounding, image content. EBS volume scanning is a totally different concern.
 
 ### Q9: **B. Inputs crafted to fool the model**
-Tiny perturbations that flip model output — a robustness concern.
+Tiny perturbations that flip model output, a robustness concern.
 
 ### Q10: **A. Contextual grounding check**
 A newer Guardrails feature that flags ungrounded responses for RAG.
@@ -238,7 +238,7 @@ Model Monitor's bias drift detection uses Clarify under the hood.
 Not a Responsible AI pillar. The named ones: Fairness, Explainability, Robustness, Privacy & Security, Transparency, Governance, Safety, Controllability, Veracity, Inclusivity.
 
 ### Q13: **B. Selection rate difference across groups**
-The classic fairness metric — the "80% rule" threshold.
+The classic fairness metric, the "80% rule" threshold.
 
 ### Q14: **A. AWS Macie**
 ML-powered discovery and classification of PII in S3.
@@ -250,7 +250,7 @@ Decision trees are interpretable. Deep nets need explainability techniques like 
 US federal voluntary framework. PCI DSS / SOC 2 / ITIL are not AI-specific.
 
 ### Q17: **B. Risk level**
-Unacceptable (banned) / high / limited / minimal — a tiered risk approach.
+Unacceptable (banned) / high / limited / minimal, a tiered risk approach.
 
 ### Q18: **B. AWS Artifact**
 The repository of AWS compliance and security reports. CloudTrail logs API activity; different purpose.
@@ -259,7 +259,7 @@ The repository of AWS compliance and security reports. CloudTrail logs API activ
 Find failures before users / attackers do. Supported in Bedrock Model Evaluation.
 
 ### Q20: **A. Amazon Bedrock Model Evaluation**
-All four eval modes — automatic, human, KB, LLM-as-judge — live here.
+All four eval modes automatic, human, KB, LLM-as-judge live here.
 
 ### Q21: **D. Real-time PII redaction**
 That's a Guardrails job. Clarify focuses on bias and feature-attribution explainability.
@@ -277,10 +277,10 @@ Newer Guardrails feature; filters images on input/output for multimodal models.
 
 ## 📊 Score Yourself
 
-- 23–24/24 → 🏆 Responsible AI on lock — this is where many candidates lose marks.
+- 23–24/24 → 🏆 Responsible AI on lock, this is where many candidates lose marks.
 - 20–22/24 → ✅ Strong.
 - 17–19/24 → ⚠️ Re-read the AWS Toolkit table and the Guardrails filter types.
-- <17 → 🔁 Re-do the module — Domain 4 is tightly tested.
+- <17 → 🔁 Re-do the module, Domain 4 is tightly tested.
 
 ---
 

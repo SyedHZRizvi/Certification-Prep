@@ -101,7 +101,7 @@ D. Merge node set to "screen" mode
 What is the advantage of Nuke's "non-destructive by design" architecture?
 
 A. Nuke automatically saves backups of every change
-B. No operation modifies the source image data — all processing is computed at render time from the original sources
+B. No operation modifies the source image data, all processing is computed at render time from the original sources
 C. Nuke prevents artists from making mistakes by locking certain parameters
 D. Render results are always identical to the source
 
@@ -134,7 +134,7 @@ D. Collapses the node into a Group
 What does the "Gain" control in Nuke's Grade node do?
 
 A. Adds a constant value to all pixels (equivalent to Lift)
-B. Multiplies all pixel values by the specified factor — brightens uniformly without shifting blacks
+B. Multiplies all pixel values by the specified factor, brightens uniformly without shifting blacks
 C. Applies a gamma curve correction to midtones only
 D. Increases the contrast by remapping highlights to white
 
@@ -156,7 +156,7 @@ D. A single Blur node with Channel set to R only
 In the context of a multi-channel EXR file, what does the "depth" (or "Z") pass contain?
 
 A. The grayscale luminance of the image
-B. The distance from the camera to each pixel's surface in the 3D scene — used for depth-of-field simulation in comp
+B. The distance from the camera to each pixel's surface in the 3D scene, used for depth-of-field simulation in comp
 C. The transparency (alpha) values for the CG element
 D. The surface color without lighting
 
@@ -200,7 +200,7 @@ D. A render queue manager for multi-machine rendering
 The Grade node's "Blackpoint" parameter maps a specified input value to black (0) in the output. If Blackpoint is set to 0.05, what happens to pixels with a value of 0.05 in the input?
 
 A. They remain at 0.05 in the output
-B. They are mapped to black (0) in the output — the grade lifts everything below 0.05 to 0 and stretches the remaining range
+B. They are mapped to black (0) in the output, the grade lifts everything below 0.05 to 0 and stretches the remaining range
 C. They are boosted to 1.0 (white) in the output
 D. They are clipped and rendered as pure black regardless of other parameters
 
@@ -233,7 +233,7 @@ D. plus
 What does "Deep Compositing" in Nuke enable that standard compositing cannot achieve?
 
 A. Compositing images at more than 32 bits per channel
-B. Handling volumetric renders (fog, fire, clouds) with per-pixel, per-sample depth information — enabling correct integration of volumes with geometry at any depth
+B. Handling volumetric renders (fog, fire, clouds) with per-pixel, per-sample depth information, enabling correct integration of volumes with geometry at any depth
 C. Compositing more than 100 elements simultaneously
 D. Enabling real-time playback of 4K EXR sequences
 
@@ -255,7 +255,7 @@ D. Use a Blur node on the specular channel to soften the highlights
 In a professional Nuke pipeline, why are deleted experimental nodes sometimes "disabled" rather than deleted?
 
 A. Deleted nodes in Nuke cannot be recovered, making deletion risky
-B. Disabled nodes remain in the script for reference and review without affecting the output — they can be re-enabled if an experiment is revisited
+B. Disabled nodes remain in the script for reference and review without affecting the output, they can be re-enabled if an experiment is revisited
 C. Nuke's render engine processes disabled nodes faster
 D. Disabling is required before a node can be grouped or moved
 
@@ -274,50 +274,50 @@ D. The Z-depth pass
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** Nuke's core paradigm is the directed acyclic graph (DAG) — a network of processing nodes connected by wires. This is what distinguishes it from layer-based tools like After Effects.
+**Q1 B.** Nuke's core paradigm is the directed acyclic graph (DAG) a network of processing nodes connected by wires. This is what distinguishes it from layer-based tools like After Effects.
 
-**Q2 — C.** The Foundry (a UK software company, now owned by private equity) developed Nuke. The Foundry also makes Katana, Mari, and Modo.
+**Q2, C.** The Foundry (a UK software company, now owned by private equity) developed Nuke. The Foundry also makes Katana, Mari, and Modo.
 
-**Q3 — C.** The "over" operation is: A + B × (1 − alpha_A). Where A's alpha is 1 (opaque), B contributes 0. Where A's alpha is 0 (transparent), B contributes fully. This is the mathematical definition of "A over B." Memorize it.
+**Q3, C.** The "over" operation is: A + B × (1 − alpha_A). Where A's alpha is 1 (opaque), B contributes 0. Where A's alpha is 0 (transparent), B contributes fully. This is the mathematical definition of "A over B." Memorize it.
 
-**Q4 — C.** Offset adds a constant value to all pixels regardless of tonal zone. Lift specifically affects shadows. Gain scales values. Gamma adjusts midtones.
+**Q4, C.** Offset adds a constant value to all pixels regardless of tonal zone. Lift specifically affects shadows. Gain scales values. Gamma adjusts midtones.
 
-**Q5 — B.** The Shuffle node routes specific named channels from a multi-channel EXR into the standard RGBA channels that downstream nodes can process. It is the essential tool for working with AOV passes.
+**Q5, B.** The Shuffle node routes specific named channels from a multi-channel EXR into the standard RGBA channels that downstream nodes can process. It is the essential tool for working with AOV passes.
 
-**Q6 — C.** "Plus" (Add) mode: A + B. In an Add composite, the dark pixels in the flare layer (which have near-zero values) add near-zero to B — effectively invisible. Only bright pixels contribute, which is correct for glowing, additive light effects.
+**Q6 C.** "Plus" (Add) mode: A + B. In an Add composite, the dark pixels in the flare layer (which have near-zero values) add near-zero to B effectively invisible. Only bright pixels contribute, which is correct for glowing, additive light effects.
 
-**Q7 — B.** Backdrop nodes are organizational containers — labeled, colored boxes that visually group related sections of the node graph. They don't affect image processing, only organization.
+**Q7 B.** Backdrop nodes are organizational containers labeled, colored boxes that visually group related sections of the node graph. They don't affect image processing, only organization.
 
-**Q8 — B.** The Keyer node (and Primatte Keyer in the higher-end NukeX) is Nuke's chroma keying tool. IBK (Image-Based Keyer) is another option for difficult subjects.
+**Q8, B.** The Keyer node (and Primatte Keyer in the higher-end NukeX) is Nuke's chroma keying tool. IBK (Image-Based Keyer) is another option for difficult subjects.
 
-**Q9 — B.** Non-destructive compositing means the source data is never modified — every node reads from upstream sources and computes its output at render time. This means any parameter can be changed without rebuilding the comp.
+**Q9 B.** Non-destructive compositing means the source data is never modified every node reads from upstream sources and computes its output at render time. This means any parameter can be changed without rebuilding the comp.
 
-**Q10 — C.** The specular AOV pass contains only the specular highlight contribution from lights in the 3D scene. Compositors can boost or reduce this independently without affecting the diffuse or reflection passes.
+**Q10, C.** The specular AOV pass contains only the specular highlight contribution from lights in the 3D scene. Compositors can boost or reduce this independently without affecting the diffuse or reflection passes.
 
-**Q11 — B.** In Nuke, hovering over a node and pressing 1 connects that node's output to the Viewer's A input, displaying it in the Viewer. Pressing 2 connects to the B input for A/B comparison.
+**Q11, B.** In Nuke, hovering over a node and pressing 1 connects that node's output to the Viewer's A input, displaying it in the Viewer. Pressing 2 connects to the B input for A/B comparison.
 
-**Q12 — B.** Gain multiplies all pixel values by a factor. Gain 1.0 = no change; Gain 2.0 = double brightness. It brightens without shifting the black point (unlike Lift, which shifts the black point upward).
+**Q12, B.** Gain multiplies all pixel values by a factor. Gain 1.0 = no change; Gain 2.0 = double brightness. It brightens without shifting the black point (unlike Lift, which shifts the black point upward).
 
-**Q13 — B.** The correct approach: Shuffle to extract the Red channel into its own stream → Blur applied to that stream → Shuffle Copy to reinsert the blurred Red channel into the original image. A single Blur node cannot target one channel independently in standard Nuke.
+**Q13, B.** The correct approach: Shuffle to extract the Red channel into its own stream → Blur applied to that stream → Shuffle Copy to reinsert the blurred Red channel into the original image. A single Blur node cannot target one channel independently in standard Nuke.
 
-**Q14 — B.** The Z (depth) pass stores the camera-to-surface distance for every pixel. In comp, this is used with a ZDefocus or DepthOfField node to simulate lens depth-of-field — near objects sharp, far objects blurred.
+**Q14 B.** The Z (depth) pass stores the camera-to-surface distance for every pixel. In comp, this is used with a ZDefocus or DepthOfField node to simulate lens depth-of-field near objects sharp, far objects blurred.
 
-**Q15 — C.** The Transform node applies 2D transforms (translate, rotate, scale) and includes a filter selection (Cubic, Lanczos, Impulse) that controls the quality of pixel interpolation during the transformation.
+**Q15, C.** The Transform node applies 2D transforms (translate, rotate, scale) and includes a filter selection (Cubic, Lanczos, Impulse) that controls the quality of pixel interpolation during the transformation.
 
-**Q16 — B.** Labeled Backdrop nodes are the standard organizational tool for large Nuke scripts. They divide the script into legible sections (KEYING, CG INTEGRATION, ATMOSPHERE, GRADING) that any artist can navigate.
+**Q16, B.** Labeled Backdrop nodes are the standard organizational tool for large Nuke scripts. They divide the script into legible sections (KEYING, CG INTEGRATION, ATMOSPHERE, GRADING) that any artist can navigate.
 
-**Q17 — B.** A Gizmo is a group of Nuke nodes packaged into a reusable, distributable node with its own interface. Studios build library Gizmos for standard operations (light wrap, anamorphic flare, film grain) used across all productions.
+**Q17, B.** A Gizmo is a group of Nuke nodes packaged into a reusable, distributable node with its own interface. Studios build library Gizmos for standard operations (light wrap, anamorphic flare, film grain) used across all productions.
 
-**Q18 — B.** Setting Blackpoint to 0.05 maps input value 0.05 → output 0. Everything below 0.05 goes to black. The remaining range (0.05 to Whitepoint) is stretched across 0 to 1 in the output. This lifts the visible black level.
+**Q18, B.** Setting Blackpoint to 0.05 maps input value 0.05 → output 0. Everything below 0.05 goes to black. The remaining range (0.05 to Whitepoint) is stretched across 0 to 1 in the output. This lifts the visible black level.
 
-**Q19 — C.** Nuke Non-Commercial applies a visible watermark to all renders and prohibits commercial use. The full feature set (including most nodes) is available, making it excellent for learning and building a portfolio.
+**Q19, C.** Nuke Non-Commercial applies a visible watermark to all renders and prohibits commercial use. The full feature set (including most nodes) is available, making it excellent for learning and building a portfolio.
 
-**Q20 — B.** The "over" operation formula is A + B × (1 − alpha_A). Where A is fully opaque (alpha = 1), only A contributes (B × 0 = 0 added). Where A is transparent (alpha = 0), only B contributes (B × 1). This creates the "A over B" illusion.
+**Q20, B.** The "over" operation formula is A + B × (1 − alpha_A). Where A is fully opaque (alpha = 1), only A contributes (B × 0 = 0 added). Where A is transparent (alpha = 0), only B contributes (B × 1). This creates the "A over B" illusion.
 
-**Q21 — B.** Deep Compositing stores per-sample depth information for volumetric renders — every sample in a fog or fire volume has its own depth. This allows volumes to correctly intersect geometry at any depth, which standard alpha compositing cannot handle.
+**Q21 B.** Deep Compositing stores per-sample depth information for volumetric renders every sample in a fog or fire volume has its own depth. This allows volumes to correctly intersect geometry at any depth, which standard alpha compositing cannot handle.
 
-**Q22 — B.** Extract the specular pass with Shuffle → reduce its intensity with a Grade → add it back to the remaining passes with Merge (plus). This precisely targets only the specular contribution.
+**Q22, B.** Extract the specular pass with Shuffle → reduce its intensity with a Grade → add it back to the remaining passes with Merge (plus). This precisely targets only the specular contribution.
 
-**Q23 — B.** Disabling nodes leaves them in the graph for reference without affecting the output. A VFX supervisor reviewing the script may want to see experimental approaches, and the artist may need to re-enable them if the primary approach changes.
+**Q23, B.** Disabling nodes leaves them in the graph for reference without affecting the output. A VFX supervisor reviewing the script may want to see experimental approaches, and the artist may need to re-enable them if the primary approach changes.
 
-**Q24 — C.** The shadow pass is a mask (often white where the CG shadow falls, black elsewhere). The compositor multiplies this mask over a darkened version of the plate to add the shadow — giving the CG element the correct ground shadow on the live-action surface.
+**Q24 C.** The shadow pass is a mask (often white where the CG shadow falls, black elsewhere). The compositor multiplies this mask over a darkened version of the plate to add the shadow giving the CG element the correct ground shadow on the live-action surface.

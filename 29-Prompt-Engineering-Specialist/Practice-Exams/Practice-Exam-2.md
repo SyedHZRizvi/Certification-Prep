@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — Prompt Engineering Specialist (Modules 5–8)
+# 🧪 Practice Exam 2, Prompt Engineering Specialist (Modules 5–8)
 
 > **Conditions:** Set a 30-minute timer. 30 questions. Treat it like the real thing.
 > **Pass mark:** 26/30 (~87%).
@@ -22,7 +22,7 @@ D. ~50,000 tokens
 
 ### 3. EXIF rotation metadata in JPEG images sent to vision APIs:
 A. Is always honored
-B. Is OFTEN NOT honored — pre-rotate to upright before sending
+B. Is OFTEN NOT honored, pre-rotate to upright before sending
 C. Doesn't exist
 D. Is the same as base64
 
@@ -72,11 +72,11 @@ D. 100,000 examples
 A. Latency only
 B. Faithfulness, answer relevance, context precision, context recall
 C. Token count only
-D. None — RAGAS is a vector DB
+D. None, RAGAS is a vector DB
 
 ### 12. "Faithfulness" in a RAG eval means:
 A. The model speaks truthfully in general
-B. The answer is grounded ONLY in retrieved context — no hallucination beyond it
+B. The answer is grounded ONLY in retrieved context, no hallucination beyond it
 C. Retrieval is fast
 D. Citations are formatted
 
@@ -100,13 +100,13 @@ D. SQL / NoSQL / GraphQL
 
 ### 16. The seminal indirect-prompt-injection paper:
 A. Brown 2020
-B. Greshake et al. 2023 — *Not what you've signed up for*
+B. Greshake et al. 2023, *Not what you've signed up for*
 C. Wei 2022
 D. Bai 2022
 
 ### 17. The MOST important architectural principle for tools:
 A. Tool outputs are trusted
-B. Tool outputs are ALWAYS untrusted input — wrap in delimiters, never as instructions
+B. Tool outputs are ALWAYS untrusted input, wrap in delimiters, never as instructions
 C. Tools must be open source
 D. Tools should require temperature = 0
 
@@ -118,7 +118,7 @@ D. Affected only one user
 
 ### 19. "Defense in depth" means:
 A. One very strong defense layer
-B. Multiple independent layers (system prompt + input filter + output filter + sandboxing + judge + red-team) — no single bypass fails everything
+B. Multiple independent layers (system prompt + input filter + output filter + sandboxing + judge + red-team), no single bypass fails everything
 C. Hiring more engineers
 D. Using bigger models
 
@@ -142,7 +142,7 @@ D. Disabled by default
 
 ### 23. A semantic cache stores:
 A. Plain prompt text
-B. Cached responses keyed by embedding-similarity of input — serve hit on close matches
+B. Cached responses keyed by embedding-similarity of input, serve hit on close matches
 C. API keys
 D. The system prompt
 
@@ -209,36 +209,36 @@ D. Manual review of every output
 
 ## 💡 Quick Rationales (one-liner per question)
 
-1. **C** — Gemini 2.5 owns native video; up to ~1hr files directly.
-2. **B** — A high-detail 1024² image ≈ 1500–2500 tokens — audit your bills.
-3. **B** — EXIF rotation often not honored by vision APIs; pre-rotate.
-4. **B** — Enumerate data points + self-consistency. Don't ask "what's the trend?" on novel data.
-5. **B** — Always label multi-image: "Image 1: before, Image 2: after."
-6. **B** — Whisper is audio-to-text only. Use chat models for understanding.
-7. **B** — The three pillars: programmatic / LLM-judge / human.
-8. **B** — G-Eval = CoT scoring + averaged samples (Liu 2023).
-9. **B** — Self-preference bias: a family judging itself is lenient. Cross-family forces honesty.
-10. **B** — MVP golden set: 70-150 spanning easy / edge / hard / adversarial.
-11. **B** — RAGAS = faithfulness + answer relevance + context precision + context recall.
-12. **B** — Faithfulness = answer uses ONLY retrieved context (no hallucination).
-13. **B** — Power math: 5pt delta @ 80% power needs ~1,500 per arm.
-14. **B** — Pre-registration prevents p-hacking after-the-fact.
-15. **B** — Three injection categories: direct / indirect / multi-modal.
-16. **B** — Greshake et al. 2023 — "Not what you've signed up for."
-17. **B** — Tool outputs are ALWAYS untrusted input. The #1 production rule for agents.
-18. **B** — DeepSeek R1 storm proved open-weights reasoning is jailbreakable in 48h.
-19. **B** — Defense in depth: multiple independent layers, no single bypass wins.
-20. **B** — Air Canada precedent: companies are liable for chatbot promises.
-21. **B** — Anthropic `cache_control: {"type": "ephemeral"}` tags cacheable sections.
-22. **B** — OpenAI auto-caches ≥1024-token prompts at ~50% off.
-23. **B** — Semantic cache keys responses by input embedding similarity.
-24. **B** — LiteLLM is the de facto multi-provider abstraction.
-25. **B** — TTFT <500ms is the "responsive chat" bar.
-26. **B** — Batch APIs: ~50% discount + relaxed limits for non-realtime.
-27. **B** — Per-customer spend caps prevent the $50K overnight horror.
-28. **B** — Anthropic ephemeral TTL is ~5 minutes.
-29. **B** — OpenTelemetry GenAI semconv is the emerging vendor-neutral standard.
-30. **B** — The full 10-layer production architecture. Anything less = future incident.
+1. **C**, Gemini 2.5 owns native video; up to ~1hr files directly.
+2. **B** A high-detail 1024² image ≈ 1500–2500 tokens audit your bills.
+3. **B**, EXIF rotation often not honored by vision APIs; pre-rotate.
+4. **B**, Enumerate data points + self-consistency. Don't ask "what's the trend?" on novel data.
+5. **B**, Always label multi-image: "Image 1: before, Image 2: after."
+6. **B**, Whisper is audio-to-text only. Use chat models for understanding.
+7. **B**, The three pillars: programmatic / LLM-judge / human.
+8. **B**, G-Eval = CoT scoring + averaged samples (Liu 2023).
+9. **B**, Self-preference bias: a family judging itself is lenient. Cross-family forces honesty.
+10. **B**, MVP golden set: 70-150 spanning easy / edge / hard / adversarial.
+11. **B**, RAGAS = faithfulness + answer relevance + context precision + context recall.
+12. **B**, Faithfulness = answer uses ONLY retrieved context (no hallucination).
+13. **B**, Power math: 5pt delta @ 80% power needs ~1,500 per arm.
+14. **B**, Pre-registration prevents p-hacking after-the-fact.
+15. **B**, Three injection categories: direct / indirect / multi-modal.
+16. **B** Greshake et al. 2023 "Not what you've signed up for."
+17. **B**, Tool outputs are ALWAYS untrusted input. The #1 production rule for agents.
+18. **B**, DeepSeek R1 storm proved open-weights reasoning is jailbreakable in 48h.
+19. **B**, Defense in depth: multiple independent layers, no single bypass wins.
+20. **B**, Air Canada precedent: companies are liable for chatbot promises.
+21. **B**, Anthropic `cache_control: {"type": "ephemeral"}` tags cacheable sections.
+22. **B**, OpenAI auto-caches ≥1024-token prompts at ~50% off.
+23. **B**, Semantic cache keys responses by input embedding similarity.
+24. **B**, LiteLLM is the de facto multi-provider abstraction.
+25. **B**, TTFT <500ms is the "responsive chat" bar.
+26. **B**, Batch APIs: ~50% discount + relaxed limits for non-realtime.
+27. **B**, Per-customer spend caps prevent the $50K overnight horror.
+28. **B**, Anthropic ephemeral TTL is ~5 minutes.
+29. **B**, OpenTelemetry GenAI semconv is the emerging vendor-neutral standard.
+30. **B**, The full 10-layer production architecture. Anything less = future incident.
 
 ---
 

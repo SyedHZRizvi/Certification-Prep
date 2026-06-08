@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -276,7 +276,7 @@
 
 
 
-## 🎬 Module 1 — VFX Pipeline
+## 🎬 Module 1, VFX Pipeline
 
 **Q:** What does VFX stand for, and what distinguishes it from practical effects?
 **A:** Visual Effects. VFX are created digitally in post-production; practical effects are physical, on-set (pyrotechnics, miniatures, prosthetics). Modern productions combine both.
@@ -295,13 +295,13 @@
 
 ---
 
-## 🎞️ Module 2 — Green Screen & Keying
+## 🎞️ Module 2, Green Screen & Keying
 
 **Q:** What is Keylight, and where does it live?
 **A:** Keylight is a professional chroma-keying plugin built into Adobe After Effects (via Academy Award-winning algorithm from The Foundry). It's in Effects > Keying > Keylight.
 
 **Q:** Describe the three-step keying workflow used by professional compositors.
-**A:** (1) Rough key — pull a clean initial key with aggressive settings. (2) Refined key — adjust screen matte, clip black/white. (3) Fine key — edge-softness pass, spill suppression, integrate with plate.
+**A:** (1) Rough key pull a clean initial key with aggressive settings. (2) Refined key adjust screen matte, clip black/white. (3) Fine key, edge-softness pass, spill suppression, integrate with plate.
 
 **Q:** What is green spill, and how do you suppress it?
 **A:** Green light from the screen reflecting onto the subject, turning edges or skin green. Suppress it with Keylight's Spill Suppression, Screen Shrink/Grow, or a dedicated Spill Suppressor effect.
@@ -314,10 +314,10 @@
 
 ---
 
-## 🪟 Module 3 — Rotoscoping
+## 🪟 Module 3, Rotoscoping
 
 **Q:** What is rotoscoping?
-**A:** The frame-by-frame manual tracing of subjects in footage to create a matte (alpha channel mask) for compositing — separating foreground from background without a green screen.
+**A:** The frame-by-frame manual tracing of subjects in footage to create a matte (alpha channel mask) for compositing, separating foreground from background without a green screen.
 
 **Q:** What is Rotobrush 2.0 and how does it differ from traditional roto?
 **A:** Adobe's AI-powered roto tool in After Effects that automatically propagates mattes across frames using machine learning. Traditional roto requires manual mask adjustments each frame.
@@ -333,7 +333,7 @@
 
 ---
 
-## 📍 Module 4 — Tracking
+## 📍 Module 4, Tracking
 
 **Q:** What is a 1-point track in After Effects?
 **A:** Tracks one feature point's position (X/Y) across frames. Useful for attaching a moving element (e.g., badge on a shirt) to a point that doesn't rotate or change scale.
@@ -342,7 +342,7 @@
 **A:** 2D tracker matches the 2D movement of a point or plane in the footage. A 3D camera solve reconstructs the physical camera's 3D position and orientation from 2D footage, enabling accurate CG object integration.
 
 **Q:** What is Mocha and why is it preferred over AE's built-in tracker?
-**A:** Mocha (Boris FX) uses planar tracking — tracking flat surfaces (walls, screens, foreheads) — which is more stable and faster than feature-point tracking, especially with motion blur or partial occlusions.
+**A:** Mocha (Boris FX) uses planar tracking tracking flat surfaces (walls, screens, foreheads) which is more stable and faster than feature-point tracking, especially with motion blur or partial occlusions.
 
 **Q:** What is a corner pin composite?
 **A:** Attaching an image or video to a 4-point warp that matches four tracked corners of a surface (phone screen, billboard), so the replacement element follows the surface's perspective and movement precisely.
@@ -352,7 +352,7 @@
 
 ---
 
-## ✨ Module 5 — Particle Systems
+## ✨ Module 5, Particle Systems
 
 **Q:** Name the two most-used particle engines in After Effects.
 **A:** Trapcode Particular (Red Giant/Maxon) and the built-in CC Particle World. Particular is the professional standard for film and broadcast; CC Particle World works for simple effects without additional plugins.
@@ -364,17 +364,17 @@
 **A:** Stack: core flame (bright, small, fast particles) + mid flame (medium, warm orange) + smoke (large, dark, slow rise) + heat haze (displacement map layer). 5–7 layers minimum for depth.
 
 **Q:** What is the "rule of 7 layers" in explosion compositing?
-**A:** A practical VFX composition guideline: effective explosion shots typically need at least 7 elements — fireball, shockwave, debris, smoke, light (practical flash), dust ground-kick, and heat haze/lens distortion.
+**A:** A practical VFX composition guideline: effective explosion shots typically need at least 7 elements, fireball, shockwave, debris, smoke, light (practical flash), dust ground-kick, and heat haze/lens distortion.
 
 ---
 
-## 🟢 Module 6 — Nuke Fundamentals
+## 🟢 Module 6, Nuke Fundamentals
 
 **Q:** What is the fundamental difference between Nuke's workflow and After Effects?
-**A:** Node-based vs. layer-based. In Nuke, every operation is a node connected in a graph. This allows non-destructive, branching workflows where multiple composites share upstream nodes — essential for large-scale film work.
+**A:** Node-based vs. layer-based. In Nuke, every operation is a node connected in a graph. This allows non-destructive, branching workflows where multiple composites share upstream nodes, essential for large-scale film work.
 
 **Q:** What does the Merge node do in Nuke, and name its three key operations.
-**A:** Combines two image streams (A over B). Key operations: Over (A over B, standard composite), Plus (add A and B together, used for glows), and Screen (used for light elements — brightens without blowing out).
+**A:** Combines two image streams (A over B). Key operations: Over (A over B, standard composite), Plus (add A and B together, used for glows), and Screen (used for light elements, brightens without blowing out).
 
 **Q:** What is an EXR file and why does VFX use it instead of PNG?
 **A:** OpenEXR is a 32-bit floating point image format supporting multiple channels (RGBA + Z-depth + normals + motion vectors) in a single file. Essential for passing render passes from 3D to the compositor.
@@ -384,7 +384,7 @@
 
 ---
 
-## 🎨 Module 7 — Color Grading
+## 🎨 Module 7, Color Grading
 
 **Q:** What is the difference between primary and secondary color correction?
 **A:** Primary = whole-image adjustments (overall exposure, white balance, contrast). Secondary = targeted adjustments to specific colors or regions (skin tone, sky, a particular object).
@@ -393,17 +393,17 @@
 **A:** A mathematical table that maps input color values to output color values. Used to convert between color spaces (e.g., log to Rec.709), apply a creative look, or replicate film emulation.
 
 **Q:** What does ACES stand for and why is it important?
-**A:** Academy Color Encoding System. A color management framework ensuring consistent color appearance across cameras, software, and displays — critical on large productions with many vendors.
+**A:** Academy Color Encoding System. A color management framework ensuring consistent color appearance across cameras, software, and displays, critical on large productions with many vendors.
 
 **Q:** What is log footage and why do cameras shoot it?
 **A:** A flat, low-contrast image encoding that preserves the maximum dynamic range the camera can capture. It looks washed out but contains full highlight and shadow detail, which a colorist grades into the final look.
 
 **Q:** What is the three-way color corrector and its three controls?
-**A:** A Lift/Gamma/Gain (or Shadows/Midtones/Highlights) color wheel tool. Lift adjusts shadows, Gamma adjusts midtones, Gain adjusts highlights — each independently.
+**A:** A Lift/Gamma/Gain (or Shadows/Midtones/Highlights) color wheel tool. Lift adjusts shadows, Gamma adjusts midtones, Gain adjusts highlights, each independently.
 
 ---
 
-## 🎭 Module 8 — Practical & Digital FX Integration
+## 🎭 Module 8, Practical & Digital FX Integration
 
 **Q:** What is a "practical effect" and give three examples.
 **A:** A physical, on-set effect. Examples: pyrotechnics (real fire/explosions), miniatures (scale models), prosthetics/animatronics, squib blood hits, snow/rain machines.
@@ -412,14 +412,14 @@
 **A:** Practical elements add real-world physics, lighting, and texture that's difficult to replicate digitally. CG then extends or replaces only what practical can't achieve, creating a more naturalistic final result.
 
 **Q:** What is wire/rig removal?
-**A:** Painting out wires, rigs, green sticks, or crew visible in a shot using frame-by-frame compositing — combining clean background frames or cloned plate areas to erase the rig.
+**A:** Painting out wires, rigs, green sticks, or crew visible in a shot using frame-by-frame compositing, combining clean background frames or cloned plate areas to erase the rig.
 
 **Q:** What is beauty work (beauty retouching)?
-**A:** Frame-by-frame clean-up of cosmetic issues: removing blemishes, under-eye circles, stray hairs, or unwanted wrinkles — common in advertising and music videos.
+**A:** Frame-by-frame clean-up of cosmetic issues: removing blemishes, under-eye circles, stray hairs, or unwanted wrinkles, common in advertising and music videos.
 
 ---
 
-## 💥 Module 9 — Destruction & Action FX
+## 💥 Module 9, Destruction & Action FX
 
 **Q:** Name the seven layers typically composited to create a film-quality explosion.
 **A:** Fireball core, mid-flame (orange), outer smoke (dark), shockwave (displacement), debris (3D particles), ground dust kick-up, heat haze / lens distortion. Optional: muzzle flash, lens flare.
@@ -432,18 +432,18 @@
 
 ---
 
-## 🎬 Module 10 — VFX Reel & Career
+## 🎬 Module 10, VFX Reel & Career
 
 **Q:** What should a compositing reel lead with?
-**A:** Your best work — not your newest. The opening 5 seconds determine if a recruiter continues watching. Lead with a visually striking, technically impressive shot that shows your compositing skills clearly.
+**A:** Your best work, not your newest. The opening 5 seconds determine if a recruiter continues watching. Lead with a visually striking, technically impressive shot that shows your compositing skills clearly.
 
 **Q:** What is a VFX breakdown and why is it essential?
 **A:** A before/after split showing the original plate and the finished composite side by side. Demonstrates your specific contribution. Studios want to see what YOU did, not just the final film frame.
 
 **Q:** Name the difference between a VFX Artist and a Compositor career path.
-**A:** Compositors specialize in 2D integration (keying, tracking, color matching). VFX Artists is broader — may include simulation, CG integration, and look development. Compositors typically earn $75K–$140K; senior VFX artists $100K–$200K+.
+**A:** Compositors specialize in 2D integration (keying, tracking, color matching). VFX Artists is broader, may include simulation, CG integration, and look development. Compositors typically earn $75K–$140K; senior VFX artists $100K–$200K+.
 
 **Q:** What is the IATSE and why does it matter for VFX careers?
-**A:** The International Alliance of Theatrical Stage Employees — the union representing VFX workers in the US/Canada. Joining a union shop provides minimum rates, benefits, and overtime protections. Major VFX houses (ILM, Weta) became union shops following worker organizing campaigns in 2022–2023.
+**A:** The International Alliance of Theatrical Stage Employees, the union representing VFX workers in the US/Canada. Joining a union shop provides minimum rates, benefits, and overtime protections. Major VFX houses (ILM, Weta) became union shops following worker organizing campaigns in 2022–2023.
 
 ---

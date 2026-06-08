@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Endpoint Analytics — All 5 Categories Deep Dive</p>
+      <p class="vg-title">Endpoint Analytics, All 5 Categories Deep Dive</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 26 min · The fleet-performance lens</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Proactive Remediations — Auto-Fix at Scale</p>
+      <p class="vg-title">Proactive Remediations, Auto-Fix at Scale</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 22 min · Detect + remediate pattern</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MDM Diagnostics Report — Your Troubleshooting First Step</p>
+      <p class="vg-title">MDM Diagnostics Report, Your Troubleshooting First Step</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · Built-in Windows tool</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Advanced Hunting with KQL — Defender for Endpoint</p>
+      <p class="vg-title">Advanced Hunting with KQL, Defender for Endpoint</p>
       <p class="vg-creator">Microsoft Security</p>
       <span class="vg-duration">⏱ 24 min · Proactive threat hunting</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Troubleshooting + Support Blade — Helpdesk's Best Friend</p>
+      <p class="vg-title">Troubleshooting + Support Blade, Helpdesk's Best Friend</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 16 min · Per-user diagnostic view</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">IME Log Diving — Win32 App Install Debugging</p>
+      <p class="vg-title">IME Log Diving, Win32 App Install Debugging</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 16 min · The IME log path</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Bayer — Data-Driven Endpoint Operations at Scale</p>
+      <p class="vg-title">Bayer, Data-Driven Endpoint Operations at Scale</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 18 min · The 80,000-device case study</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Autopilot Troubleshooting — Common Error Codes</p>
+      <p class="vg-title">Autopilot Troubleshooting, Common Error Codes</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 22 min · The error code decoder</span>
     </div>
@@ -159,6 +159,6 @@ If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watc
 
 You've finished all 8 modules. Next stop:
 
-- 🧪 **[Practice-Exam-1](../Practice-Exams/Practice-Exam-1.md)** — take after Modules 1–4 (40 questions / 70 min)
-- 🧪 **[Practice-Exam-2](../Practice-Exams/Practice-Exam-2.md)** — take after Modules 5–8 (50 questions / 90 min)
-- 🏆 **[Final-Mock-Exam](../Practice-Exams/Final-Mock-Exam.md)** — take 2–3 days before the real exam (50 questions / 100 min)
+- 🧪 **[Practice-Exam-1](../Practice-Exams/Practice-Exam-1.md)**, take after Modules 1–4 (40 questions / 70 min)
+- 🧪 **[Practice-Exam-2](../Practice-Exams/Practice-Exam-2.md)**, take after Modules 5–8 (50 questions / 90 min)
+- 🏆 **[Final-Mock-Exam](../Practice-Exams/Final-Mock-Exam.md)**, take 2–3 days before the real exam (50 questions / 100 min)

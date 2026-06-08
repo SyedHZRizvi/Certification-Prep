@@ -1,8 +1,8 @@
-# 🧪 Practice Exam 2 — ISM CPSM (Performance + Leadership Focus)
+# 🧪 Practice Exam 2, ISM CPSM (Performance + Leadership Focus)
 
 > **Conditions:** Set a 135-minute timer. 125 questions. Treat it like the real thing.
 > **Pass mark:** 95/125 (76%)
-> Take this AFTER finishing Modules 5–8. Covers Modules 5 (Cost & TCO), 6 (International), 7 (Risk/Ethics), 8 (Leadership/PM) — territory of the second half of Exam 2 and most of Exam 3.
+> Take this AFTER finishing Modules 5–8. Covers Modules 5 (Cost & TCO), 6 (International), 7 (Risk/Ethics), 8 (Leadership/PM), territory of the second half of Exam 2 and most of Exam 3.
 
 ---
 
@@ -318,7 +318,7 @@ D. Prevent, Detect, Respond, Recover
 A. Mitigate
 B. Insure only
 C. Avoid the supplier
-D. Accept and monitor — treatment exceeds expected loss
+D. Accept and monitor, treatment exceeds expected loss
 
 ### 53. Conflict minerals (3TG) include:
 A. Lithium and cobalt
@@ -371,7 +371,7 @@ D. Universal Fair Labor Protection Agreement
 ### 61. Scope 3 emissions include:
 A. Direct emissions from your facilities
 B. Indirect from purchased energy
-C. All other indirect — including your supply chain (typically 70–90% of corporate total)
+C. All other indirect, including your supply chain (typically 70–90% of corporate total)
 D. Only end-of-life
 
 ### 62. The MOST appropriate action when a supplier offers $5K in tickets during active negotiation:
@@ -664,7 +664,7 @@ D. Wait for complaint
 
 ### 110. A scenario: a Tier-2 supplier of your strategic Tier-1 supplier goes bankrupt. The BEST first action:
 A. Engage Tier-1 immediately on impact, accelerate alternate qualification through Tier-1, monitor delivery and update risk register
-B. Ignore — Tier-1 owns it
+B. Ignore, Tier-1 owns it
 C. Terminate Tier-1
 D. Insure Tier-2
 
@@ -791,7 +791,7 @@ D. Complete 60 continuing education hours every 3 years (recertification) and st
 
 | Score | Verdict |
 |-------|---------|
-| 113–125 | 🏆 Strong — proceed to Final-Mock-Exam |
+| 113–125 | 🏆 Strong, proceed to Final-Mock-Exam |
 | 95–112 | ✅ Solid; review wrong answers; final mock next |
 | 80–94 | ⚠️ Re-read weak modules; redo this exam in 1 week |
 | <80 | 🔁 Restart from Module 5 |
@@ -800,13 +800,13 @@ D. Complete 60 continuing education hours every 3 years (recertification) and st
 
 ## 🔍 Review Process
 
-For each miss, identify the originating module (5–8), re-read it, add flashcards, retry similar quiz questions. Pay particular attention to **judgment-pattern** answers — ethics scenarios, ADKAR diagnoses, and risk-treatment trade-offs.
+For each miss, identify the originating module (5–8), re-read it, add flashcards, retry similar quiz questions. Pay particular attention to **judgment-pattern** answers, ethics scenarios, ADKAR diagnoses, and risk-treatment trade-offs.
 
 ---
 
 ## 🎯 Detailed answer rationales
 
-These rationales explain why the correct answer wins AND why each distractor fails. Read carefully — Module 5-8 scenarios are where CPSM heavily weights judgment.
+These rationales explain why the correct answer wins AND why each distractor fails. Read carefully, Module 5-8 scenarios are where CPSM heavily weights judgment.
 
 **Q1. D.** TCO = acquisition + operating + disposal.
 - A, B, C wrong: Each captures only one phase.
@@ -888,7 +888,7 @@ These rationales explain why the correct answer wins AND why each distractor fai
 - D wrong: Single source compounds the problem.
 - Exam-takeaway: VA/VE first; sourcing tactics second.
 
-**Q19. D.** A is cheaper: $35K + $11K = $46K vs $30K + $19K = $49K. (Note: answer key shows "A" for this question — the explanation correctly identifies A as cheaper despite the option text. Treat as: TCO favors A on 5-year fuel total.)
+**Q19. D.** A is cheaper: $35K + $11K = $46K vs $30K + $19K = $49K. (Note: answer key shows "A" for this question, the explanation correctly identifies A as cheaper despite the option text. Treat as: TCO favors A on 5-year fuel total.)
 - B, C wrong: Don't compute fuel total.
 - Exam-takeaway: Always compute multi-year TCO; acquisition price alone misleads.
 
@@ -932,7 +932,7 @@ These rationales explain why the correct answer wins AND why each distractor fai
 
 **Q29. B.** DPU replaced DAT in 2020.
 - A, C, D wrong: Other Incoterms.
-- Exam-takeaway: DPU is "Delivered at Place Unloaded" — broader than terminals.
+- Exam-takeaway: DPU is "Delivered at Place Unloaded", broader than terminals.
 
 **Q30. D.** FOB applies to sea/inland waterway only.
 - A, B, C wrong: FOB doesn't apply to air or general modes.
@@ -1348,4 +1348,4 @@ These rationales explain why the correct answer wins AND why each distractor fai
 
 ---
 
-➡️ When ready: **[Final-Mock-Exam](./Final-Mock-Exam.md)** (165 Q / 180 min) — real conditions, full simulation of one CPSM exam.
+➡️ When ready: **[Final-Mock-Exam](./Final-Mock-Exam.md)** (165 Q / 180 min), real conditions, full simulation of one CPSM exam.

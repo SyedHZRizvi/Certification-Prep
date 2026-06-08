@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Manufacturing Strategy
 
-> **How to use:** Click any card to search YouTube. The top result is almost always the intended video — but if a creator has updated their content, you'll get the newest version. Pause and take notes after each one.
+> **How to use:** Click any card to search YouTube. The top result is almost always the intended video, but if a creator has updated their content, you'll get the newest version. Pause and take notes after each one.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Toyota Production System — Strategic Choices</p>
+      <p class="vg-title">Toyota Production System, Strategic Choices</p>
       <p class="vg-creator">Lean Enterprise Institute</p>
       <span class="vg-duration">⏱ 30 min · How TPS shaped global ops</span>
     </div>
@@ -136,7 +136,7 @@
 | **ASCM** | Official source of CPIM body-of-knowledge content |
 | **GreyCampus** | Solid CPIM and supply chain certification prep |
 | **Education Edge** | Concise, exam-focused CPIM videos |
-| **MIT OCW — Operations Management** | The academic deep dives |
+| **MIT OCW, Operations Management** | The academic deep dives |
 | **Caltech** | Strong supply chain and ops modeling content |
 | **freeCodeCamp Manufacturing** | Long-form, free, beginner-friendly |
 | **Lean Enterprise Institute** | Lean and Toyota Production System origin material |
@@ -147,7 +147,7 @@
 
 Answer these in your notebook (without re-watching):
 
-1. What's the difference between MTS, ATO, MTO, and ETO — and where is the *decoupling point* in each?
+1. What's the difference between MTS, ATO, MTO, and ETO, and where is the *decoupling point* in each?
 2. Give an example of a product whose order winners shifted to order qualifiers over time.
 3. Why did HP's postponement strategy reduce inventory by ~25%?
 4. What's an "off-diagonal" position on the Hayes-Wheelwright matrix, and why is it dangerous?

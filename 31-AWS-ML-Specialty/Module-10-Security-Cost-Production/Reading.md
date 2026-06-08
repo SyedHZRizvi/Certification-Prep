@@ -10,28 +10,28 @@
 
 ## 🍕 A Story: The Healthcare Startup That Almost Leaked PHI
 
-Meet Lena. She runs ML at a Series-B healthcare-AI startup. In 2023 her team built an EHR-NER model on SageMaker. The data — millions of clinical notes — sat in S3. Training jobs ran in the default VPC. The endpoint was public. The dev IAM role had `AmazonSageMakerFullAccess`.
+Meet Lena. She runs ML at a Series-B healthcare-AI startup. In 2023 her team built an EHR-NER model on SageMaker. The data millions of clinical notes sat in S3. Training jobs ran in the default VPC. The endpoint was public. The dev IAM role had `AmazonSageMakerFullAccess`.
 
 Three weeks before their HIPAA audit, the security team did a deep review. They found:
 
 - **Public endpoint** with no authentication beyond IAM SigV4 (anyone with internet access who had a leaked SigV4 key could call it)
-- **No VPC isolation** — training data exfiltrated nowhere (yet), but no protection if it had been
+- **No VPC isolation**, training data exfiltrated nowhere (yet), but no protection if it had been
 - **No KMS customer-managed key** on the training data; encryption was AWS-managed SSE-S3 (insufficient for HIPAA audit logging)
-- **Overly broad IAM** — the SageMaker execution role could read *any* S3 bucket
-- **No CloudTrail data events** for S3 — no record of what the training job read
+- **Overly broad IAM**, the SageMaker execution role could read *any* S3 bucket
+- **No CloudTrail data events** for S3, no record of what the training job read
 - **No bias / fairness review** on the model
-- **Notebook instances running 24/7** — $2,400/month wasted
+- **Notebook instances running 24/7**, $2,400/month wasted
 
 The audit was a near miss. Lena and the security team did a hardening sprint:
 
-- **VPC-only training** — moved jobs into a VPC with a NAT gateway-less private subnet, S3 VPC Gateway Endpoint, and KMS VPC Endpoint
+- **VPC-only training**, moved jobs into a VPC with a NAT gateway-less private subnet, S3 VPC Gateway Endpoint, and KMS VPC Endpoint
 - **Customer-managed KMS** keys with per-team key policies; KMS encrypts S3 data, EBS volumes, EFS, and model artifacts
-- **PrivateLink** on the SageMaker endpoint — no public DNS at all
-- **IAM least-privilege execution role** — scoped to a single S3 bucket prefix + KMS key + ECR image
+- **PrivateLink** on the SageMaker endpoint, no public DNS at all
+- **IAM least-privilege execution role**, scoped to a single S3 bucket prefix + KMS key + ECR image
 - **CloudTrail S3 data events** enabled
 - **AWS Macie** scanning S3 for PHI
 - **SageMaker Lifecycle Configurations** to auto-stop idle notebooks
-- **Spot training + Savings Plans** for steady workloads — saved ~$8K/month
+- **Spot training + Savings Plans** for steady workloads, saved ~$8K/month
 
 They passed HIPAA. The cost-optimisation work alone paid for the security audit.
 
@@ -39,7 +39,7 @@ That is what this module teaches: **secure first, then optimise, then troublesho
 
 ---
 
-## 🔐 IAM For SageMaker — Least Privilege
+## 🔐 IAM For SageMaker, Least Privilege
 
 SageMaker uses **execution roles** (IAM roles assumed by training jobs, endpoints, notebooks).
 
@@ -78,7 +78,7 @@ A SageMaker execution role typically needs:
 
 | Where | Encryption |
 |-------|-----------|
-| **S3** | SSE-S3 (AWS-managed) OR SSE-KMS (customer-managed) — use SSE-KMS for audit trail |
+| **S3** | SSE-S3 (AWS-managed) OR SSE-KMS (customer-managed), use SSE-KMS for audit trail |
 | **EBS volumes** (training instances) | KMS encryption (default since 2023) |
 | **EFS** | KMS encryption |
 | **FSx for Lustre** | KMS encryption |
@@ -92,7 +92,7 @@ A SageMaker execution role typically needs:
 
 🎯 **Exam pattern.** *"Encrypt training traffic between distributed nodes."* → **Enable `enable_inter_container_traffic_encryption=True`** in the Estimator (note: adds latency).
 
-🚨 **Trap.** *"Use SSE-C for HIPAA."* → While technically encrypted, SSE-C requires you to ship the key on each request — not the cleanest pattern. SSE-KMS is the standard.
+🚨 **Trap.** *"Use SSE-C for HIPAA."* → While technically encrypted, SSE-C requires you to ship the key on each request, not the cleanest pattern. SSE-KMS is the standard.
 
 ---
 
@@ -105,11 +105,11 @@ By default, SageMaker training jobs and endpoints run in a **service-managed VPC
 | Component | Detail |
 |-----------|--------|
 | **Subnets** | Private subnets (one or more AZs) |
-| **Security Groups** | Stateful — control inbound/outbound by port + CIDR |
+| **Security Groups** | Stateful, control inbound/outbound by port + CIDR |
 | **VPC Endpoints (Gateway)** | S3 + DynamoDB; routed via VPC route table; free |
-| **VPC Endpoints (Interface / PrivateLink)** | SageMaker API, SageMaker Runtime, ECR, STS, KMS, CloudWatch, Bedrock — billed per ENI hour + GB |
-| **No internet gateway / NAT** | For maximum isolation, no NAT — only VPC endpoints |
-| **`enable_network_isolation=True`** | Strongest training-job isolation — disables outbound network from the container entirely |
+| **VPC Endpoints (Interface / PrivateLink)** | SageMaker API, SageMaker Runtime, ECR, STS, KMS, CloudWatch, Bedrock, billed per ENI hour + GB |
+| **No internet gateway / NAT** | For maximum isolation, no NAT, only VPC endpoints |
+| **`enable_network_isolation=True`** | Strongest training-job isolation, disables outbound network from the container entirely |
 
 🎯 **Exam pattern.** *"Train a model with NO traffic to the internet."* → **VPC-only training in private subnets with VPC endpoints for S3, ECR, STS, CloudWatch** AND `enable_network_isolation=True` on the Estimator.
 
@@ -121,7 +121,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 ---
 
-## 🕵️ AWS Macie — PII Discovery In S3
+## 🕵️ AWS Macie, PII Discovery In S3
 
 **Macie** scans S3 buckets for sensitive data (PII, PHI, financial info) and produces findings.
 
@@ -151,7 +151,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 ---
 
-## 💰 Cost-Optimisation Levers — The Full Catalogue
+## 💰 Cost-Optimisation Levers, The Full Catalogue
 
 ### Training
 
@@ -161,7 +161,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 | **Right-sized instance type** | Don't use `p4d` if `g5.xlarge` suffices |
 | **Mixed precision** (FP16/BF16) | ~30-50% time + memory |
 | **Pipe / FastFile mode** | Less idle waiting |
-| **Distributed training** (SMDDP) | Faster wall clock — sometimes cheaper despite more nodes |
+| **Distributed training** (SMDDP) | Faster wall clock, sometimes cheaper despite more nodes |
 | **Early stopping** | Less wasted compute on plateau |
 | **SageMaker Training Compiler** | 10-50% speedup |
 | **Trainium (trn1/trn2)** | Often ~30-50% cheaper than NVIDIA equivalents |
@@ -255,7 +255,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 ---
 
-## 🎯 The Well-Architected ML Lens — Full Matrix
+## 🎯 The Well-Architected ML Lens, Full Matrix
 
 | Pillar | ML moves |
 |--------|----------|
@@ -268,9 +268,9 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 ---
 
-## 📖 Case Study — Pinterest's Cost & Security Hardening
+## 📖 Case Study, Pinterest's Cost & Security Hardening
 
-**Situation.** Pinterest runs hundreds of ML models — visual search, recommendations, ad ranking. As scale grew, their AWS bill swelled and security audits found over-broad IAM roles across the ML stack.
+**Situation.** Pinterest runs hundreds of ML models, visual search, recommendations, ad ranking. As scale grew, their AWS bill swelled and security audits found over-broad IAM roles across the ML stack.
 
 **Architecture (publicly discussed at re:Invent 2022/2023).**
 - **VPC-only training** with custom S3 + ECR endpoints
@@ -291,7 +291,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 | Misconception | Reality |
 |---------------|---------|
-| "AmazonSageMakerFullAccess is fine for prod" | NO — least privilege per team / project |
+| "AmazonSageMakerFullAccess is fine for prod" | NO, least privilege per team / project |
 | "Default VPC is good enough" | For sensitive data, use a private VPC with VPC endpoints |
 | "Spot is too risky for ML" | With checkpointing, Spot is the default for fault-tolerant training |
 | "Auto-scaling solves all cost problems" | Only if scaling triggers and limits are tuned |
@@ -299,7 +299,7 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 | "Inferentia is harder to use than GPUs" | Neuron SDK abstracts most differences |
 | "Studio doesn't have idle issues" | Studio spaces can run forever if you don't configure auto-shutdown |
 | "Encrypting in transit isn't needed inside AWS" | Inter-node training traffic should be encrypted for regulated workloads |
-| "Macie replaces CloudTrail" | They serve different purposes — discovery vs audit |
+| "Macie replaces CloudTrail" | They serve different purposes, discovery vs audit |
 
 ---
 
@@ -348,12 +348,12 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **"Cost vs latency in inference."** Inferentia2 is cheaper but adds compilation complexity. At what monthly inference cost does it pay off vs sticking with G5 GPUs?
 2. **"VPC-only training overhead."** Private VPC adds VPC-endpoint costs and engineering complexity. When does the security benefit outweigh the overhead?
 3. **"Spot for training: when not?"** Spot interruptions can corrupt long-running jobs. Argue when not to use Spot.
-4. **"Macie vs DIY"** — Macie costs ~$X / GB scanned. At what data volume is a DIY classifier on a Lambda cheaper?
+4. **"Macie vs DIY"**, Macie costs ~$X / GB scanned. At what data volume is a DIY classifier on a Lambda cheaper?
 5. **"The Savings Plan decision."** Compute Savings Plan vs Reserved Instances vs On-Demand. Argue at what predictability threshold each wins.
 
 ---
@@ -372,13 +372,13 @@ Bedrock can also be invoked via VPC endpoints (PrivateLink). Traffic never trave
 
 You now know:
 
-- 🔐 **IAM execution roles** for SageMaker — Studio, training, endpoint, pipeline — and least-privilege patterns
+- 🔐 **IAM execution roles** for SageMaker Studio, training, endpoint, pipeline and least-privilege patterns
 - 🔑 **KMS encryption** across S3, EBS, EFS, FSx, model artifacts; inter-container training encryption
 - 🌐 **VPC isolation** with private subnets + Gateway / Interface VPC endpoints + `enable_network_isolation`
 - 🛡️ **CloudTrail / Config / GuardDuty / Macie / Security Hub** roles for ML compliance
-- 💰 The full **cost-optimisation catalogue** — Spot, Savings Plans, Inferentia2, Trainium, MME, serverless, async, Graviton, lifecycle configs, Intelligent-Tiering, Bedrock cost modes
-- 🐛 The **production troubleshooting playbook** — Profiler / Debugger / Logs / CloudTrail / X-Ray
-- 🌱 **Sustainability moves** — Graviton + Inferentia + right-sizing + managed services + distillation
+- 💰 The full **cost-optimisation catalogue**, Spot, Savings Plans, Inferentia2, Trainium, MME, serverless, async, Graviton, lifecycle configs, Intelligent-Tiering, Bedrock cost modes
+- 🐛 The **production troubleshooting playbook**, Profiler / Debugger / Logs / CloudTrail / X-Ray
+- 🌱 **Sustainability moves**, Graviton + Inferentia + right-sizing + managed services + distillation
 - 📖 The **Pinterest cost + security hardening** reference case study
 
 **Next:**
@@ -392,23 +392,23 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **SageMaker Security docs** — `docs.aws.amazon.com/sagemaker/latest/dg/security.html`
-- 📖 **SageMaker Cost docs** — `docs.aws.amazon.com/sagemaker/latest/dg/cost-optimization.html`
-- 📖 **AWS Macie User Guide** — `docs.aws.amazon.com/macie/`
-- 📖 **AWS Well-Architected ML Lens** — `docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/`
+- 📖 **SageMaker Security docs**, `docs.aws.amazon.com/sagemaker/latest/dg/security.html`
+- 📖 **SageMaker Cost docs**, `docs.aws.amazon.com/sagemaker/latest/dg/cost-optimization.html`
+- 📖 **AWS Macie User Guide**, `docs.aws.amazon.com/macie/`
+- 📖 **AWS Well-Architected ML Lens**, `docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/`
 
 **re:Invent talks**
-- 🎤 SEC301 — *AWS security fundamentals* (re:Invent)
-- 🎤 AIM303 — *Choose the right SageMaker built-in algorithm* (touches cost)
-- 🎤 ARC305 — *Cost-optimising AWS at scale* (general; applies to ML)
+- 🎤 SEC301, *AWS security fundamentals* (re:Invent)
+- 🎤 AIM303, *Choose the right SageMaker built-in algorithm* (touches cost)
+- 🎤 ARC305, *Cost-optimising AWS at scale* (general; applies to ML)
 
 **Industry**
-- 📰 **Corey Quinn's *Last Week in AWS*** — cost-engineering essays
-- 📰 **AWS Builder Library — Cost Section** — patterns for cost engineering
+- 📰 **Corey Quinn's *Last Week in AWS***, cost-engineering essays
+- 📰 **AWS Builder Library Cost Section** patterns for cost engineering
 
 ---
 
-## 🛠️ Appendix A — Least-Privilege SageMaker IAM Role Template
+## 🛠️ Appendix A, Least-Privilege SageMaker IAM Role Template
 
 ```json
 {
@@ -493,7 +493,7 @@ You now know:
 
 ---
 
-## 🛠️ Appendix B — No-Internet Training Stack (Full Example)
+## 🛠️ Appendix B, No-Internet Training Stack (Full Example)
 
 ```python
 from sagemaker.pytorch import PyTorch
@@ -513,7 +513,7 @@ estimator = PyTorch(
     security_group_ids=["sg-0123456789abcdef0"],
 
     # Block ALL outbound from training container
-    # (Requires VPC endpoints for S3, ECR, KMS, STS, CloudWatch — see below)
+    # (Requires VPC endpoints for S3, ECR, KMS, STS, CloudWatch, see below)
     enable_network_isolation=True,
 
     # Encrypt inter-node training traffic
@@ -550,11 +550,11 @@ For the above to work with `enable_network_isolation=True`, the VPC must have:
 | `com.amazonaws.<region>.sagemaker.runtime` | Interface | Endpoint inference |
 | `com.amazonaws.<region>.bedrock-runtime` | Interface | Bedrock invocations (optional) |
 
-🎯 **Cost note.** Interface endpoints cost ~$0.01/hour per ENI per AZ + ~$0.01/GB. For a multi-AZ deployment with 8 interface endpoints, that's ~$200/month in endpoint fixed cost — usually worth it for the security posture.
+🎯 **Cost note.** Interface endpoints cost ~$0.01/hour per ENI per AZ + ~$0.01/GB. For a multi-AZ deployment with 8 interface endpoints, that's ~$200/month in endpoint fixed cost, usually worth it for the security posture.
 
 ---
 
-## 🛠️ Appendix C — Cost-Optimisation Worked Example (Before & After)
+## 🛠️ Appendix C, Cost-Optimisation Worked Example (Before & After)
 
 A real-style workload at a Series-B fintech, costs in USD/month.
 
@@ -574,19 +574,19 @@ A real-style workload at a Series-B fintech, costs in USD/month.
 
 ---
 
-## 🛠️ Appendix D — Runbook: NaN Losses Midway Through Training
+## 🛠️ Appendix D, Runbook: NaN Losses Midway Through Training
 
 When a transformer training job suddenly produces NaN losses (a common interview / exam-scenario question), the standard runbook:
 
-1. **Reproduce on a single GPU first** — eliminate distributed-training factors.
-2. **Check input data** — any all-zero batches? infinite values?
+1. **Reproduce on a single GPU first**, eliminate distributed-training factors.
+2. **Check input data**, any all-zero batches? infinite values?
 3. **Reduce learning rate** by 5-10× and restart from latest checkpoint.
-4. **Add (or verify) gradient clipping** — `torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)`.
+4. **Add (or verify) gradient clipping**, `torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)`.
 5. **Switch FP16 → BF16** if using mixed precision (BF16 has the same dynamic range as FP32).
 6. **Add layer normalisation** before activations (transformers usually use LayerNorm; verify it's pre-norm not post-norm).
-7. **Add learning-rate warmup** — start at 1e-7 and ramp up over 1000-10,000 steps.
-8. **Inspect Debugger tensors** — `tensor_inf_or_nan` rule pinpoints which layer first sees NaN.
+7. **Add learning-rate warmup**, start at 1e-7 and ramp up over 1000-10,000 steps.
+8. **Inspect Debugger tensors**, `tensor_inf_or_nan` rule pinpoints which layer first sees NaN.
 9. **Skip the bad batch** if isolated.
-10. **If all else fails**, lower model capacity (fewer layers, smaller hidden dim) — sometimes the model is too capable for the data and the loss surface is pathological.
+10. **If all else fails**, lower model capacity (fewer layers, smaller hidden dim), sometimes the model is too capable for the data and the loss surface is pathological.
 
 🎯 **Exam pattern.** The expected single-best fix on the exam: **lower LR + add gradient clipping + use BF16 instead of FP16** (combined).

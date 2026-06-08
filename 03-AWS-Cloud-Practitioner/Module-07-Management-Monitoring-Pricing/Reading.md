@@ -1,11 +1,11 @@
 # Module 7: Management, Monitoring & Pricing 📊
 
-> **Why this module matters:** This is where you learn how to *operate* and *pay for* AWS. Billing/Pricing/Support is only 12% of the exam — but most students lose points here because they don't memorize the 4 Support plans. Don't be them.
+> **Why this module matters:** This is where you learn how to *operate* and *pay for* AWS. Billing/Pricing/Support is only 12% of the exam, but most students lose points here because they don't memorize the 4 Support plans. Don't be them.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md) — CapEx vs OpEx, the 6 benefits of cloud (this module operationalizes them)
-> - [Core Compute](../Module-02-Core-Compute/Reading.md) — Reserved Instances, Savings Plans, Spot (pricing models you'll right-size in this module)
-> - [Security & Identity](../Module-06-Security-Identity-Compliance/Reading.md) — CloudTrail and Config (the detective layer)
+> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), CapEx vs OpEx, the 6 benefits of cloud (this module operationalizes them)
+> - [Core Compute](../Module-02-Core-Compute/Reading.md), Reserved Instances, Savings Plans, Spot (pricing models you'll right-size in this module)
+> - [Security & Identity](../Module-06-Security-Identity-Compliance/Reading.md), CloudTrail and Config (the detective layer)
 > - Basic accounting: knowing the difference between a budget, a forecast, and an alert
 >
 > If you've ever scolded yourself for a surprise SaaS subscription, you have the right intuition for this module.
@@ -16,17 +16,17 @@
 
 Maria's pizza empire is humming along on AWS. Then she gets the May bill: **$47,000.** Last month was $4,000.
 
-What happened? A junior dev spun up a `p4d.24xlarge` GPU instance "just to test something" and forgot about it. Cost: ~$33/hour × 24 hours × 30 days = $24,000. Plus a misconfigured S3 lifecycle rule moved 200 TB into Standard from Deep Archive overnight — $5,000 in transition fees. Plus CloudFront traffic from a viral marketing campaign — $18,000.
+What happened? A junior dev spun up a `p4d.24xlarge` GPU instance "just to test something" and forgot about it. Cost: ~$33/hour × 24 hours × 30 days = $24,000. Plus a misconfigured S3 lifecycle rule moved 200 TB into Standard from Deep Archive overnight $5,000 in transition fees. Plus CloudFront traffic from a viral marketing campaign $18,000.
 
-Could this have been prevented? Yes — with **Budgets, Billing Alarms, Cost Explorer, and Trusted Advisor.** Cloud's pay-as-you-go is wonderful right up until you forget to watch it.
+Could this have been prevented? Yes, with **Budgets, Billing Alarms, Cost Explorer, and Trusted Advisor.** Cloud's pay-as-you-go is wonderful right up until you forget to watch it.
 
 This module teaches you the tools to stay in control.
 
 ---
 
-## 👁️ Amazon CloudWatch — Monitoring
+## 👁️ Amazon CloudWatch, Monitoring
 
-CloudWatch implements the **"observability"** paradigm — a term popularized by Charity Majors (Honeycomb) and Cindy Sridharan's *Distributed Systems Observability* (O'Reilly, 2018) but rooted in control-theory observability (Kalman, 1960). The "three pillars of observability" — metrics, logs, traces — map directly to CloudWatch Metrics, CloudWatch Logs, and AWS X-Ray. Gene Kim, Patrick Debois, Jez Humble, and John Willis's *The DevOps Handbook* (2016) and Kim's *The Phoenix Project* (IT Revolution Press, 2013) frame monitoring as a core DevOps capability.
+CloudWatch implements the **"observability"** paradigm a term popularized by Charity Majors (Honeycomb) and Cindy Sridharan's *Distributed Systems Observability* (O'Reilly, 2018) but rooted in control-theory observability (Kalman, 1960). The "three pillars of observability" metrics, logs, traces, map directly to CloudWatch Metrics, CloudWatch Logs, and AWS X-Ray. Gene Kim, Patrick Debois, Jez Humble, and John Willis's *The DevOps Handbook* (2016) and Kim's *The Phoenix Project* (IT Revolution Press, 2013) frame monitoring as a core DevOps capability.
 
 **CloudWatch = the universal "what's happening?" service for AWS.** It collects 3 things:
 
@@ -46,7 +46,7 @@ Rule-based reactions to AWS state changes. *Example:* "When a new EC2 instance i
 
 Alarms watch a metric and trigger when a threshold is crossed.
 
-- **Notify** (via SNS — email, SMS, Slack via Lambda)
+- **Notify** (via SNS, email, SMS, Slack via Lambda)
 - **Trigger Auto Scaling** ("CPU > 70% for 5 min → add EC2 instance")
 - **Stop / Terminate / Recover** an EC2 instance
 
@@ -54,7 +54,7 @@ Alarms watch a metric and trigger when a threshold is crossed.
 
 ---
 
-## 📜 AWS CloudTrail — API Audit Log
+## 📜 AWS CloudTrail, API Audit Log
 
 (Already covered in Module 6, but it shows up here too.)
 
@@ -68,7 +68,7 @@ Alarms watch a metric and trigger when a threshold is crossed.
 
 ---
 
-## 🔍 AWS Config — Configuration Drift & Compliance
+## 🔍 AWS Config, Configuration Drift & Compliance
 
 **Config tracks resource configurations over time + evaluates against rules.**
 
@@ -85,7 +85,7 @@ When a resource goes out of compliance, Config flags it (and can auto-remediate 
 
 ---
 
-## ⚙️ AWS Systems Manager (SSM) — Operations At Scale
+## ⚙️ AWS Systems Manager (SSM), Operations At Scale
 
 SSM is a Swiss Army knife of operations tools:
 
@@ -114,7 +114,7 @@ SSM is a Swiss Army knife of operations tools:
 | **Fault tolerance** | EBS snapshots, Multi-AZ usage |
 | **Service limits** | Approaching account limits |
 
-**Free tier checks:** 7 core checks (basics — MFA on root, service limits, etc.).
+**Free tier checks:** 7 core checks (basics, MFA on root, service limits, etc.).
 **Business / Enterprise Support:** ALL Trusted Advisor checks unlocked.
 
 🎯 **Exam pattern:** "Identify idle EC2 instances to cut costs" → **Trusted Advisor** (or Compute Optimizer).
@@ -125,24 +125,24 @@ SSM is a Swiss Army knife of operations tools:
 
 | Tool | What |
 |------|------|
-| **AWS Health Dashboard — Service Health** (public) | Status of every AWS service, all Regions |
-| **AWS Health Dashboard — Your Account Health** (private) | Events affecting YOUR resources (e.g., EC2 retirement notices) |
+| **AWS Health Dashboard, Service Health** (public) | Status of every AWS service, all Regions |
+| **AWS Health Dashboard, Your Account Health** (private) | Events affecting YOUR resources (e.g., EC2 retirement notices) |
 | **AWS Personal Health Dashboard** (old name) | = Your Account Health |
 
 🎯 **Exam pattern:** "Get a notification when AWS schedules maintenance on YOUR EC2" → **AWS Health Dashboard / Personal Health Dashboard.**
 
 ---
 
-## 💵 AWS Pricing Models — The Big Picture
+## 💵 AWS Pricing Models, The Big Picture
 
 AWS pricing follows 3 fundamental laws:
 
-1. **Pay for what you use** (no upfront — except RIs / Savings Plans by choice)
+1. **Pay for what you use** (no upfront, except RIs / Savings Plans by choice)
 2. **Pay less when you reserve** (commit for 1- or 3-year)
 3. **Pay even less with volume tiering** (S3, data transfer)
 
 ### Free services / always-free aspects
-- IAM, VPC (basic), CloudFormation, Elastic Beanstalk, Organizations — all FREE
+- IAM, VPC (basic), CloudFormation, Elastic Beanstalk, Organizations, all FREE
 - You only pay for the resources THEY create
 - AWS Free Tier covers 12-month + Always Free + Trials (Module 1)
 
@@ -187,8 +187,8 @@ AWS pricing follows 3 fundamental laws:
 
 Tags are key/value labels on resources (`Environment=Prod`, `Project=Pizza-Online`).
 
-- **AWS-generated tags** (e.g. `aws:createdBy`) — auto-generated
-- **User-defined tags** — what you create
+- **AWS-generated tags** (e.g. `aws:createdBy`), auto-generated
+- **User-defined tags**, what you create
 - Must be **activated** in the Billing console to show in Cost Explorer / CUR
 - Combined with Cost Categories for chargeback / showback
 
@@ -196,7 +196,7 @@ Tags are key/value labels on resources (`Environment=Prod`, `Project=Pizza-Onlin
 
 ---
 
-## 💼 AWS Support Plans (MEMORIZE — high-frequency exam topic)
+## 💼 AWS Support Plans (MEMORIZE, high-frequency exam topic)
 
 There are **4 paid support tiers** (plus "Basic" which is free):
 
@@ -257,7 +257,7 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 7. **AWS Health Dashboard ≠ Trusted Advisor.** Health = AWS service status; TA = your account's best practices.
 8. **Support plans go: Basic, Developer, Business, Enterprise On-Ramp, Enterprise.** Don't forget On-Ramp.
 9. **TAM access** starts at **Enterprise On-Ramp** (pool), dedicated at **Enterprise**.
-10. **Personal Health Dashboard was renamed AWS Health Dashboard (Your Account Health)** — both names may appear on the exam.
+10. **Personal Health Dashboard was renamed AWS Health Dashboard (Your Account Health)**, both names may appear on the exam.
 
 ---
 
@@ -266,9 +266,9 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 | Misconception | Reality |
 |---------------|---------|
 | "CloudWatch and CloudTrail are the same" | Watch = metrics/logs; Trail = API audit |
-| "Budgets prevent spend" | They ALERT — they don't stop spending (use SCPs / automation to actually stop) |
+| "Budgets prevent spend" | They ALERT, they don't stop spending (use SCPs / automation to actually stop) |
 | "All Trusted Advisor checks are free" | Only 7 core checks are free; full set needs Business+ |
-| "Enterprise Support is the cheapest paid tier" | No — Developer is cheapest at $29/mo |
+| "Enterprise Support is the cheapest paid tier" | No, Developer is cheapest at $29/mo |
 | "TAMs come with Business" | TAMs start at Enterprise On-Ramp |
 | "Data transfer IN to AWS costs money" | It's free in (mostly); OUT is what's expensive |
 
@@ -304,9 +304,9 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 
 ---
 
-## 🏛️ Case Study — Pinterest's Multi-Year Cost-Optimization Program (2018–2022)
+## 🏛️ Case Study, Pinterest's Multi-Year Cost-Optimization Program (2018–2022)
 
-**Situation.** Pinterest had been all-in on AWS since 2011, scaling to ~450 million monthly active users by 2019. Their AWS bill — reported publicly in their 2018 S-1 IPO filing as "a substantial portion of cost of revenue" — was roughly $100M/year in 2018 and climbing fast as ad spend grew. The CFO and CTO both saw the same problem from different sides: "Are we spending efficiently, or are we paying AWS to host idle EC2?"
+**Situation.** Pinterest had been all-in on AWS since 2011, scaling to ~450 million monthly active users by 2019. Their AWS bill reported publicly in their 2018 S-1 IPO filing as "a substantial portion of cost of revenue" was roughly $100M/year in 2018 and climbing fast as ad spend grew. The CFO and CTO both saw the same problem from different sides: "Are we spending efficiently, or are we paying AWS to host idle EC2?"
 
 **Decision.** Pinterest's infrastructure team (under VP of Engineering Yashwanth Nelapati) launched a sustained cost-optimization program with five named workstreams (documented in Pinterest Engineering blog posts 2019–2022 and Pinterest's 2020 + 2021 10-K filings):
 
@@ -316,9 +316,9 @@ There are **4 paid support tiers** (plus "Basic" which is free):
 4. **S3 storage class tiering.** Moved ~150 PB of historical user-generated images from S3 Standard to S3 Intelligent-Tiering and S3 Glacier Instant Retrieval. Documented in re:Invent 2020 STG324.
 5. **FinOps culture change.** Made cost allocation tags mandatory; built internal dashboards on top of the Cost & Usage Report (CUR) so each engineering team could see "what is *my service* spending?"
 
-**Outcome.** Pinterest reported in its 2021 10-K and various engineering blog posts that the program saved roughly **$4M per year by 2021, growing to ~$12M+/year by 2022** as the optimization compounded. In 2022 Pinterest signed a "long-term cloud purchase commitment" with AWS (reported as $3.2B over 5 years in the 2023 10-K) — a multi-year deal that traded discount depth for capacity guarantee.
+**Outcome.** Pinterest reported in its 2021 10-K and various engineering blog posts that the program saved roughly **$4M per year by 2021, growing to ~$12M+/year by 2022** as the optimization compounded. In 2022 Pinterest signed a "long-term cloud purchase commitment" with AWS (reported as $3.2B over 5 years in the 2023 10-K), a multi-year deal that traded discount depth for capacity guarantee.
 
-**Lesson for the exam / for practitioners.** Pinterest is the textbook case for the **Cost Optimization pillar** (one of the 6 Well-Architected pillars — covered in Module 8). For the exam, the lesson is the sequence of tools: **Cost Explorer to see, Trusted Advisor + Compute Optimizer to identify waste, Reserved Instances + Savings Plans for committed workloads, Spot for fault-tolerant batch, S3 lifecycle / intelligent tiering for storage, Cost Allocation Tags for chargeback.** Every CLF-C02 cost-optimization question maps to one of these steps.
+**Lesson for the exam / for practitioners.** Pinterest is the textbook case for the **Cost Optimization pillar** (one of the 6 Well-Architected pillars, covered in Module 8). For the exam, the lesson is the sequence of tools: **Cost Explorer to see, Trusted Advisor + Compute Optimizer to identify waste, Reserved Instances + Savings Plans for committed workloads, Spot for fault-tolerant batch, S3 lifecycle / intelligent tiering for storage, Cost Allocation Tags for chargeback.** Every CLF-C02 cost-optimization question maps to one of these steps.
 
 **Discussion (Socratic).**
 - Q1: Pinterest's $3.2B 5-year commit is essentially a Reserved Instance contract at company scale. What does Pinterest lose by signing it? At what stage of company growth does this kind of multi-year cloud commit become defensible vs reckless?
@@ -338,7 +338,7 @@ You now know:
 - 🩺 AWS Health Dashboard (account + service)
 - 💵 Data transfer pricing (in = free, out = $)
 - 🧮 Pricing Calculator, Budgets, Cost Explorer, CUR, Cost Allocation Tags
-- 💼 4 paid Support plans + Basic — response times, TAM access
+- 💼 4 paid Support plans + Basic, response times, TAM access
 - 🏛️ AWS Marketplace + QuickSight
 - 📌 Pinterest's $4M+/year cost-optimization program as the canonical FinOps case
 
@@ -357,10 +357,10 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **Budgets vs SCPs as cost controls.** AWS Budgets *alerts* you when spending crosses a threshold. SCPs *prevent* spending from happening at all (e.g., "no EC2 outside us-east-1"). What's the right balance — alerts vs hard prevention — at a 50-engineer SaaS? When does each become more important?
-2. **The Support-plan decision.** Business Support is $100/mo or 3% of usage — whichever is higher. At what monthly AWS spend does it actually pay off (in faster incident resolution, full Trusted Advisor checks)? Build the breakeven math.
+1. **Budgets vs SCPs as cost controls.** AWS Budgets *alerts* you when spending crosses a threshold. SCPs *prevent* spending from happening at all (e.g., "no EC2 outside us-east-1"). What's the right balance alerts vs hard prevention at a 50-engineer SaaS? When does each become more important?
+2. **The Support-plan decision.** Business Support is $100/mo or 3% of usage, whichever is higher. At what monthly AWS spend does it actually pay off (in faster incident resolution, full Trusted Advisor checks)? Build the breakeven math.
 3. **TAMs as a strategic resource.** Enterprise Support's dedicated TAM costs $15K+/mo. What does a good TAM actually do that engineering teams can't? When is the TAM *more* valuable than the support tier discount?
 4. **CloudWatch alarms vs Config rules.** Both can detect "bad" states. When does a real-time CloudWatch metric beat a Config compliance check, and vice versa? Walk through 2 concrete scenarios.
 5. **The "right-sizing" rabbit hole.** Compute Optimizer says you can downsize from `m5.2xlarge` to `m5.xlarge` and save $80/mo per instance. Across 200 instances that's $192K/year. What's the *risk* you take by doing this, and how do you mitigate it before pulling the trigger?
@@ -379,10 +379,10 @@ You now know:
 
 ## 📚 Further sources (this module)
 
-- 📰 **Pinterest Engineering — *"How Pinterest Optimizes Its Cloud Infrastructure"* (Pinterest Eng blog series, 2019–2022)** — primary-source posts on the cost-optimization program. Pair with Pinterest 10-K filings 2020 and 2021 for the dollar figures.
-- 📖 **J.R. Storment & Mike Fuller — *Cloud FinOps: Collaborative, Real-Time Cloud Financial Management* (O'Reilly, 2nd edition, 2023)** — the canonical FinOps textbook. Chapters 1, 3, 6, 11 are most CLF-relevant.
-- 🎓 **FinOps Foundation — *FinOps Framework + Certified Practitioner exam* (free training, paid cert)** — vendor-neutral cost-optimization discipline aligned with this module's content.
-- 📖 **Kim, G., Debois, P., Willis, J., Humble, J. — *The DevOps Handbook* (IT Revolution Press, 2016, 2nd edition 2021)** — the canonical text on the cultural side of monitoring + operations. Part III is most CloudWatch-adjacent.
-- 📖 **Kim, G. — *The Phoenix Project* (IT Revolution Press, 2013)** — the foundational novel that grounds why ops + monitoring + cost management are a strategic concern, not just a back-office function.
-- 📖 **AWS Builders' Library — *"Building dashboards for operational visibility"* by John O'Shea** — the AWS-internal philosophy of CloudWatch dashboards. Free read.
-- 📄 **Vogels, W. — *"Eventually Consistent"* (CACM, January 2009)** — Werner's classic on the philosophy of monitoring distributed systems. Pair with his Frugal Architect series of blog posts (allthingsdistributed.com, 2023–2024) for the cost-conscious-design angle.
+- 📰 **Pinterest Engineering *"How Pinterest Optimizes Its Cloud Infrastructure"* (Pinterest Eng blog series, 2019–2022)** primary-source posts on the cost-optimization program. Pair with Pinterest 10-K filings 2020 and 2021 for the dollar figures.
+- 📖 **J.R. Storment & Mike Fuller *Cloud FinOps: Collaborative, Real-Time Cloud Financial Management* (O'Reilly, 2nd edition, 2023)** the canonical FinOps textbook. Chapters 1, 3, 6, 11 are most CLF-relevant.
+- 🎓 **FinOps Foundation *FinOps Framework + Certified Practitioner exam* (free training, paid cert)** vendor-neutral cost-optimization discipline aligned with this module's content.
+- 📖 **Kim, G., Debois, P., Willis, J., Humble, J. *The DevOps Handbook* (IT Revolution Press, 2016, 2nd edition 2021)** the canonical text on the cultural side of monitoring + operations. Part III is most CloudWatch-adjacent.
+- 📖 **Kim, G. *The Phoenix Project* (IT Revolution Press, 2013)** the foundational novel that grounds why ops + monitoring + cost management are a strategic concern, not just a back-office function.
+- 📖 **AWS Builders' Library *"Building dashboards for operational visibility"* by John O'Shea** the AWS-internal philosophy of CloudWatch dashboards. Free read.
+- 📄 **Vogels, W. *"Eventually Consistent"* (CACM, January 2009)** Werner's classic on the philosophy of monitoring distributed systems. Pair with his Frugal Architect series of blog posts (allthingsdistributed.com, 2023–2024) for the cost-conscious-design angle.

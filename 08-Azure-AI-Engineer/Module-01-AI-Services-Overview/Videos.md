@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Azure AI Services Overview
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Services — What's in the umbrella?</p>
+      <p class="vg-title">Azure AI Services, What's in the umbrella?</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 10 min · The 2024 service catalog</span>
     </div>
@@ -48,7 +48,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Authenticate Azure AI with Managed Identity</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 12 min · Keys vs Entra vs MI</span>
     </div>
   </a>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">DefaultAzureCredential — how the chain works</p>
+      <p class="vg-title">DefaultAzureCredential, how the chain works</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 12 min · Auth chain in Python SDK</span>
     </div>
@@ -127,7 +127,7 @@
 | **Microsoft Learn** | Official; matches exam phrasing exactly |
 | **Microsoft Reactor** | Live coding walkthroughs from the product teams |
 | **John Savill's Technical Training** | The best Azure deep-dive channel, period |
-| **Adam Marczak — Azure for Everyone** | Clear, animated explainers |
+| **Adam Marczak, Azure for Everyone** | Clear, animated explainers |
 | **Tim Warner** | Cert-focused, no fluff |
 | **Cloud Academy** | Structured lab walkthroughs |
 

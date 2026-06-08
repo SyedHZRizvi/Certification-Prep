@@ -30,7 +30,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">How to Write a Creative Brief (Step by Step)</p>
-      <p class="vg-creator">Julian Cole — Strategy Finishing School</p>
+      <p class="vg-creator">Julian Cole, Strategy Finishing School</p>
       <span class="vg-duration">⏱ 14 min · The canonical brief framework</span>
     </div>
   </a>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The Brand Gap — Marty Neumeier (Lecture)</p>
+      <p class="vg-title">The Brand Gap, Marty Neumeier (Lecture)</p>
       <p class="vg-creator">Marty Neumeier</p>
       <span class="vg-duration">⏱ 25 min · Foundational brand strategy</span>
     </div>

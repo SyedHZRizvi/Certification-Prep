@@ -4,7 +4,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
 
 # 🎬 Module 1 Videos: VFX Pipeline Overview
 
-> All links open a YouTube search for the topic. Select the most relevant result — typically the first result from Film Riot, Corridor Crew, or the official studio channel.
+> All links open a YouTube search for the topic. Select the most relevant result, typically the first result from Film Riot, Corridor Crew, or the official studio channel.
 
 ---
 
@@ -26,7 +26,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   <div class="vg-card-body">
     <div class="vg-card-title">What Does a VFX Supervisor Actually Do On Set?</div>
     <div class="vg-card-meta">Film Riot · ~15 min</div>
-    <div class="vg-card-desc">On-set VFX supervision demystified — tracking markers, HDR probes, witness cameras, and the data package that makes post possible.</div>
+    <div class="vg-card-desc">On-set VFX supervision demystified, tracking markers, HDR probes, witness cameras, and the data package that makes post possible.</div>
   </div>
 </a>
 
@@ -35,14 +35,14 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   <div class="vg-card-body">
     <div class="vg-card-title">The Mandalorian: How ILM's StageCraft LED Volume Works</div>
     <div class="vg-card-meta">ILM / Corridor Crew · ~25 min</div>
-    <div class="vg-card-desc">Deep dive into the LED volume technology that replaced green screens on The Mandalorian — the most significant VFX pipeline shift in a decade.</div>
+    <div class="vg-card-desc">Deep dive into the LED volume technology that replaced green screens on The Mandalorian, the most significant VFX pipeline shift in a decade.</div>
   </div>
 </a>
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Avengers+Endgame+VFX+breakdown+ILM+making+of">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Avengers: Endgame — ILM VFX Breakdown</div>
+    <div class="vg-card-title">Avengers: Endgame, ILM VFX Breakdown</div>
     <div class="vg-card-meta">ILM / Marvel · ~18 min</div>
     <div class="vg-card-desc">Official making-of breakdown covering Thanos digital human pipeline, the snap disintegration FX, and the portal sequence composite.</div>
   </div>
@@ -70,7 +70,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Departments Explained: 2D, 3D, DMP, and Comp</div>
     <div class="vg-card-meta">Surfaced Studio · ~16 min</div>
-    <div class="vg-card-desc">Clear breakdown of each VFX department — what they produce, who receives it, and how the pipeline sequences the work.</div>
+    <div class="vg-card-desc">Clear breakdown of each VFX department, what they produce, who receives it, and how the pipeline sequences the work.</div>
   </div>
 </a>
 
@@ -79,7 +79,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   <div class="vg-card-body">
     <div class="vg-card-title">From Script to Screen: Designing a VFX Shot</div>
     <div class="vg-card-meta">Corridor Crew · ~22 min</div>
-    <div class="vg-card-desc">Shot design process from the moment a VFX supervisor reads the script through delivery — with real production examples.</div>
+    <div class="vg-card-desc">Shot design process from the moment a VFX supervisor reads the script through delivery, with real production examples.</div>
   </div>
 </a>
 
@@ -105,7 +105,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   <div class="vg-card-body">
     <div class="vg-card-title">HDR Lighting Probes On Set: The Chrome Ball and Why It Matters</div>
     <div class="vg-card-meta">VFX technical tutorial · ~11 min</div>
-    <div class="vg-card-desc">The science of the chrome ball and gray ball on-set capture — how HDR probes become IBL (image-based lighting) for CG elements.</div>
+    <div class="vg-card-desc">The science of the chrome ball and gray ball on-set capture, how HDR probes become IBL (image-based lighting) for CG elements.</div>
   </div>
 </a>
 
@@ -114,7 +114,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   <div class="vg-card-body">
     <div class="vg-card-title">The Digital Intermediate (DI): Where VFX Meets Color Grading</div>
     <div class="vg-card-meta">Cullen Kelly / Mixing Light · ~14 min</div>
-    <div class="vg-card-desc">What happens after the VFX composite is delivered — the DI facility, the colorist workflow, and how the final "look" is applied.</div>
+    <div class="vg-card-desc">What happens after the VFX composite is delivered, the DI facility, the colorist workflow, and how the final "look" is applied.</div>
   </div>
 </a>
 
@@ -123,7 +123,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   <div class="vg-card-body">
     <div class="vg-card-title">Weta FX: Inside the Avatar Pipeline</div>
     <div class="vg-card-meta">Weta FX / official · ~20 min</div>
-    <div class="vg-card-desc">Behind-the-scenes look at Weta FX's pipeline for Avatar: The Way of Water — creature development, performance capture, and compositing at scale.</div>
+    <div class="vg-card-desc">Behind-the-scenes look at Weta FX's pipeline for Avatar: The Way of Water, creature development, performance capture, and compositing at scale.</div>
   </div>
 </a>
 

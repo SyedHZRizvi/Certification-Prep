@@ -1,17 +1,17 @@
-# Module 3: Authentication — MFA & Passwordless 🔑
+# Module 3: Authentication, MFA & Passwordless 🔑
 
-> **Why this module matters:** Microsoft published an internal study in 2019 that found 99.9% of compromised accounts had no MFA enabled. *Five years later, the number hadn't moved much.* The single highest-leverage action you can take in identity security is to require MFA, then push beyond MFA to phishing-resistant passwordless. The SC-300 exam knows this — and tests how well you can roll it out without locking people out, alienating users, or breaking service accounts.
+> **Why this module matters:** Microsoft published an internal study in 2019 that found 99.9% of compromised accounts had no MFA enabled. *Five years later, the number hadn't moved much.* The single highest-leverage action you can take in identity security is to require MFA, then push beyond MFA to phishing-resistant passwordless. The SC-300 exam knows this, and tests how well you can roll it out without locking people out, alienating users, or breaking service accounts.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The tenant + license tiers from [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md) (because Authentication methods policy + per-user MFA + CA all interact).
 > - User-and-group taxonomy from [Module 2](../Module-02-Users-Groups/Reading.md) (because methods policy is targeted at groups).
-> - General cryptography vocabulary (public key, FIDO, X.509) — [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md).
+> - General cryptography vocabulary (public key, FIDO, X.509), [`09-CompTIA-Security-Plus` Module 4](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md).
 
 ---
 
 ## 🪪 A Story: The Mass MFA Enrollment That Almost Killed The CFO
 
-October 2024. A 6,500-employee insurance carrier rolls out MFA to "everyone, by Friday." On Monday morning, the IT team turns on Security Defaults. By 10 AM the CFO can't sign in to Excel on her iPad because Authenticator on her phone is in its app-store update loop. By 11 AM she's en route to a board meeting where she presents quarterly earnings — *from a personal laptop she signs in to with her saved Chrome password*, because the bypass route was never closed. By noon, an attacker who'd been quietly trying her credentials for months is now inside, downloading the financial model. By 2 PM the IT team is in war-room mode. The CFO's phone has Authenticator installed by 3 PM. The breach forensics will take six weeks. The press release will say "human error."
+October 2024. A 6,500-employee insurance carrier rolls out MFA to "everyone, by Friday." On Monday morning, the IT team turns on Security Defaults. By 10 AM the CFO can't sign in to Excel on her iPad because Authenticator on her phone is in its app-store update loop. By 11 AM she's en route to a board meeting where she presents quarterly earnings, *from a personal laptop she signs in to with her saved Chrome password*, because the bypass route was never closed. By noon, an attacker who'd been quietly trying her credentials for months is now inside, downloading the financial model. By 2 PM the IT team is in war-room mode. The CFO's phone has Authenticator installed by 3 PM. The breach forensics will take six weeks. The press release will say "human error."
 
 What went wrong was not MFA. What went wrong was the *rollout*. They:
 
@@ -20,7 +20,7 @@ What went wrong was not MFA. What went wrong was the *rollout*. They:
 - Didn't disable legacy auth before enabling MFA, so the attacker's IMAP path stayed open.
 - Didn't tell the CFO what to do if Authenticator failed (no break-glass plan for an executive).
 
-This module is the right rollout. By the end you'll know which methods to enable, in what order, with what fallbacks, and how to push beyond MFA to **phishing-resistant passwordless** — the only auth control that actually stops modern attacks.
+This module is the right rollout. By the end you'll know which methods to enable, in what order, with what fallbacks, and how to push beyond MFA to **phishing-resistant passwordless**, the only auth control that actually stops modern attacks.
 
 ---
 
@@ -31,14 +31,14 @@ This module is the right rollout. By the end you'll know which methods to enable
 | **Authentication (AuthN)** | Proving who you are |
 | **Authorization (AuthZ)** | What you're allowed to do once authenticated |
 | **MFA (Multi-Factor Auth)** | ≥ 2 of: something you **know** (password), something you **have** (phone, key), something you **are** (biometric) |
-| **Passwordless** | Sign-in with no password at all — replace "something you know" with strong "something you have / are" |
+| **Passwordless** | Sign-in with no password at all, replace "something you know" with strong "something you have / are" |
 | **Phishing-resistant MFA** | MFA where the credential is bound to the relying party (origin), so a fake site can't capture it. FIDO2, Windows Hello, certificate-based. |
 
 🔥 **MEMORIZE the hierarchy of strength (Microsoft's published Authentication Strengths):**
-1. **Single-factor (password only)** — weakest
-2. **Multi-factor (any MFA)** — password + SMS / voice / app / OTP
-3. **Passwordless MFA** — Authenticator phone sign-in / Windows Hello
-4. **Phishing-resistant MFA** — FIDO2 / Windows Hello for Business / certificate-based — **strongest**
+1. **Single-factor (password only)**, weakest
+2. **Multi-factor (any MFA)**, password + SMS / voice / app / OTP
+3. **Passwordless MFA**, Authenticator phone sign-in / Windows Hello
+4. **Phishing-resistant MFA** FIDO2 / Windows Hello for Business / certificate-based **strongest**
 
 ---
 
@@ -46,7 +46,7 @@ This module is the right rollout. By the end you'll know which methods to enable
 
 For years Microsoft had **three** competing places to configure auth methods:
 
-1. **Per-user MFA settings** (legacy, MFA portal — being deprecated)
+1. **Per-user MFA settings** (legacy, MFA portal, being deprecated)
 2. **SSPR registration policy** (legacy)
 3. **Authentication methods policy** (the modern one)
 
@@ -60,7 +60,7 @@ Microsoft announced in 2023 that the legacy MFA + SSPR policies would be retired
 | **Email OTP** | Weak | ❌ | Allowed for guests; not for primary auth |
 | **Microsoft Authenticator (push + number match)** | ✅ MFA | ❌ | Number matching mandatory since Feb 2023 |
 | **Microsoft Authenticator (passkey / phone sign-in)** | ✅ Passwordless | ❌ (currently) | Push the user toward this |
-| **Hardware OATH token** | ✅ MFA | ❌ | TOTP device — useful for kiosks |
+| **Hardware OATH token** | ✅ MFA | ❌ | TOTP device, useful for kiosks |
 | **Software OATH (Authenticator)** | ✅ MFA | ❌ | Authenticator + TOTP codes |
 | **FIDO2 security key** | ✅ Passwordless | ✅ **Phishing-resistant** | Yubikey, Feitian, etc. |
 | **Windows Hello for Business** | ✅ Passwordless | ✅ **Phishing-resistant** | Biometric / PIN bound to TPM |
@@ -87,7 +87,7 @@ FIDO2 → Enable: Yes
          - Restrict by AAGUID: Optional (only allow Yubikey 5/Feitian list)
 ```
 
-🎯 **Exam tip:** **AAGUID restriction** lets you allow only specific FIDO2 key models — e.g. only Yubikeys with FIPS 140-2 validation. Use this for regulated workloads.
+🎯 **Exam tip:** **AAGUID restriction** lets you allow only specific FIDO2 key models, e.g. only Yubikeys with FIPS 140-2 validation. Use this for regulated workloads.
 
 ---
 
@@ -100,11 +100,11 @@ FIDO2 → Enable: Yes
 | Enforces MFA on admins | ✅ Yes (all admins) | ✅ (you build the policy) |
 | Blocks legacy authentication | ✅ Yes | ✅ (you build the policy) |
 | MFA registration enforced | ✅ 14 days | ✅ (configurable) |
-| MFA on risky sign-ins | ✅ (limited) | ✅ (with Identity Protection P2 — full risk-based) |
+| MFA on risky sign-ins | ✅ (limited) | ✅ (with Identity Protection P2, full risk-based) |
 | Customizable | ❌ No | ✅ Highly |
 | Recommended for | Small orgs without P1 | Any P1+ org |
 
-🔥 **MEMORIZE:** You can have **either** Security Defaults **or** Conditional Access — not both. Turning on CA disables Security Defaults; turning Security Defaults on disables your CA policies' enforcement.
+🔥 **MEMORIZE:** You can have **either** Security Defaults **or** Conditional Access, not both. Turning on CA disables Security Defaults; turning Security Defaults on disables your CA policies' enforcement.
 
 🚨 **Trap:** A common 4,000-person org mistake is "turn off Security Defaults to build CA, then leave the CA in report-only forever." Result: *no protections at all*. Always have at least one enforced baseline CA before disabling Security Defaults.
 
@@ -175,7 +175,7 @@ New-MgUserAuthenticationTemporaryAccessPassMethod -UserId "alice@contoso.com" `
 
 ## 🔐 FIDO2 Security Keys
 
-A **FIDO2 security key** is a hardware device (Yubikey, Feitian, etc.) that performs cryptographic challenge/response against the target site using **public-key crypto**. The private key never leaves the device. The signature includes the **origin** (relying party ID) — so a fake site can't request a signature that's valid on the real site.
+A **FIDO2 security key** is a hardware device (Yubikey, Feitian, etc.) that performs cryptographic challenge/response against the target site using **public-key crypto**. The private key never leaves the device. The signature includes the **origin** (relying party ID), so a fake site can't request a signature that's valid on the real site.
 
 | Spec | Detail |
 |------|--------|
@@ -191,7 +191,7 @@ A **FIDO2 security key** is a hardware device (Yubikey, Feitian, etc.) that perf
 2. Clicks **Add sign-in method → Security key**.
 3. Inserts key, sets PIN (8-char PIN inside the key's TPM), touches the key when prompted.
 4. Names the key (so multiple keys can be distinguished).
-5. Done — the key can sign in passwordless from supported clients.
+5. Done, the key can sign in passwordless from supported clients.
 
 ### What clients support FIDO2 sign-in?
 
@@ -212,9 +212,9 @@ Windows Hello for Business is biometric (face / fingerprint) or PIN-based sign-i
 
 | Deployment model | Where it fits |
 |------------------|---------------|
-| **Cloud Kerberos trust** (recommended 2026) | Hybrid scenarios — Windows Hello uses cloud-issued Kerberos ticket for on-prem resources |
+| **Cloud Kerberos trust** (recommended 2026) | Hybrid scenarios, Windows Hello uses cloud-issued Kerberos ticket for on-prem resources |
 | **Key trust** (older hybrid) | Requires Windows Server 2016 KDC + certificate trust |
-| **Certificate trust** (legacy) | Requires AD CS / PKI — complex |
+| **Certificate trust** (legacy) | Requires AD CS / PKI, complex |
 | **Cloud-only** | No on-prem AD; pure Entra-joined devices |
 
 Configuration is done via:
@@ -250,7 +250,7 @@ Configuration:
 
 | Trap | Reality |
 |------|---------|
-| "SMS-based MFA is acceptable for admins" | ❌ Microsoft strongly discourages — phishable. Use Authenticator or FIDO2. |
+| "SMS-based MFA is acceptable for admins" | ❌ Microsoft strongly discourages, phishable. Use Authenticator or FIDO2. |
 | "Authenticator push = passwordless" | ❌ Authenticator push (with number match) is **MFA**. Phone sign-in / passkey is passwordless. |
 | "Security Defaults and CA can coexist" | ❌ Choose one. Turning Defaults on disables your CA. |
 | "TAP works without enabling it in the methods policy" | ❌ Admin button is greyed out unless TAP is enabled + targeted. |
@@ -258,7 +258,7 @@ Configuration:
 | "Combined registration is optional" | ❌ Mandatory for new tenants in 2026; legacy single-purpose flows being retired. |
 | "Microsoft will keep legacy per-user MFA settings around forever" | ❌ End-of-life September 2025 for the legacy management surface. |
 | "FIDO2 keys are tied to a single device" | ❌ Portable across devices (vs Windows Hello which is device-bound). |
-| "Number matching is optional" | ❌ Mandatory since Feb 2023 — Microsoft enforced tenant-wide. |
+| "Number matching is optional" | ❌ Mandatory since Feb 2023, Microsoft enforced tenant-wide. |
 | "CBA requires AD FS" | ❌ Not anymore. Entra-native CBA replaces AD FS for CBA scenarios. |
 
 ---
@@ -270,7 +270,7 @@ Configuration:
 The correct order:
 
 1. ✅ Inventory current MFA methods per admin (Graph: `Get-MgUserAuthenticationMethod`).
-2. ✅ Procure FIDO2 keys (2 per admin — primary + backup).
+2. ✅ Procure FIDO2 keys (2 per admin, primary + backup).
 3. ✅ Enable **FIDO2** in Authentication methods policy targeting `Admins-Pilot` group; **enable TAP** for the same group.
 4. ✅ Ship keys to admins with welcome packet + instructions.
 5. ✅ Run **a combined-registration training session** (live or recorded).
@@ -279,7 +279,7 @@ The correct order:
 8. ✅ Create a **Conditional Access policy** requiring **Phishing-resistant MFA** authentication strength for the Admins group when accessing the Azure portal + Microsoft Entra admin center.
 9. ✅ Place the CA policy in **report-only** for 1 week to verify no admin is locked out.
 10. ✅ **Enforce** the CA policy; **disable** SMS as a method for the Admins group.
-11. ✅ Configure a **break-glass exclusion** — break-glass accounts excluded from the CA policy and registered with FIDO2 separately.
+11. ✅ Configure a **break-glass exclusion**, break-glass accounts excluded from the CA policy and registered with FIDO2 separately.
 
 ⚠️ Skipping step 11 (break-glass) before step 10 (enforce) is the all-time classic way to lock yourself out of a tenant.
 
@@ -301,7 +301,7 @@ The correct order:
 | **AAGUID** | Identifier for FIDO2 key model; used for allow-listing |
 | **Number matching** | Mandatory anti-MFA-fatigue in Authenticator since Feb 2023 |
 | **Security Defaults** | Free baseline: MFA on admins + block legacy auth + 14-day registration |
-| **My Security Info portal** | `https://aka.ms/mysecurityinfo` — user self-service registration |
+| **My Security Info portal** | `https://aka.ms/mysecurityinfo`, user self-service registration |
 | **Cloud Kerberos trust** | Modern WHFB deployment model for hybrid environments |
 | **Per-user MFA (legacy)** | Old portal being retired in Sept 2025 |
 
@@ -313,7 +313,7 @@ You now know:
 
 - 🔐 The hierarchy: Password → MFA → Passwordless → Phishing-resistant
 - ⚙️ The unified Authentication methods policy (legacy per-user MFA is deprecated)
-- 🛡️ Security Defaults vs Conditional Access — pick one, not both
+- 🛡️ Security Defaults vs Conditional Access, pick one, not both
 - 🪪 Combined registration is the default in 2026
 - ⏱️ Temporary Access Pass for bootstrapping passwordless
 - 🔐 FIDO2, Windows Hello for Business, and Certificate-based auth are the three phishing-resistant methods
@@ -327,14 +327,14 @@ You now know:
 
 ---
 
-## 📊 Case Study — Microsoft's Own Internal Passwordless Rollout (2017–2024)
+## 📊 Case Study, Microsoft's Own Internal Passwordless Rollout (2017–2024)
 
-**Situation.** In 2017, Microsoft IT (managing 150,000+ employee identities) committed to "eliminate passwords from our network" — an audacious goal at a company whose flagship OS shipped with password sign-in for 30+ years. Microsoft's published telemetry (RSA 2019, Ignite 2020 onward) found that the company saw ~80,000 password-related attacks per second at its peak, with ~50% of help desk volume tied to password resets. Even with MFA, push-bombing fatigue was a real attack — the **2022 0ktapus campaign** showed that targeted MFA-fatigue attacks against Microsoft's own helpdesk vendor could bypass Authenticator push without number matching.
+**Situation.** In 2017, Microsoft IT (managing 150,000+ employee identities) committed to "eliminate passwords from our network" an audacious goal at a company whose flagship OS shipped with password sign-in for 30+ years. Microsoft's published telemetry (RSA 2019, Ignite 2020 onward) found that the company saw ~80,000 password-related attacks per second at its peak, with ~50% of help desk volume tied to password resets. Even with MFA, push-bombing fatigue was a real attack the **2022 0ktapus campaign** showed that targeted MFA-fatigue attacks against Microsoft's own helpdesk vendor could bypass Authenticator push without number matching.
 
 **Decision.** Microsoft IT pursued a three-phase plan:
 
 1. **Block all legacy authentication** (2018–2020). Used Conditional Access to enforce modern auth across Microsoft 365, Exchange, and OS sign-in. ~98% of all credential-stuffing attacks targeted legacy protocols (POP / IMAP / SMTP AUTH); blocking them cut attack volume by 99% within months.
-2. **Mandate Authenticator with number matching** (2021–2023). Replaced SMS/voice for all employees. Number matching specifically defeated push-bombing — the user had to type a number from the sign-in screen *into* the app, so silent push acceptance couldn't grant access. Microsoft published guidance and rolled it out tenant-wide in Feb 2023 for all customers.
+2. **Mandate Authenticator with number matching** (2021–2023). Replaced SMS/voice for all employees. Number matching specifically defeated push-bombing, the user had to type a number from the sign-in screen *into* the app, so silent push acceptance couldn't grant access. Microsoft published guidance and rolled it out tenant-wide in Feb 2023 for all customers.
 3. **Phishing-resistant passwordless for all** (2022–2024). Mandated FIDO2 or Windows Hello for Business for all employees with admin role access. Created internal training and shipped Yubikeys to ~150,000 employees. By end of 2024, Microsoft reported ~98% of employee sign-ins occurred passwordless; ~70% of employees had completely removed passwords from their accounts (no password to recover; only FIDO2 + Hello).
 
 **Outcome.** Per Microsoft Digital's published metrics (2024-09):
@@ -347,8 +347,8 @@ You now know:
 **Lesson for the exam / for practitioners.** Microsoft IT is the largest at-scale phishing-resistant deployment in the world, and they publish the playbook openly. SC-300 scenarios about "rolling out passwordless" expect you to know the Microsoft pattern: block legacy auth FIRST → enforce number matching → introduce TAP for bootstrapping → mandate FIDO2/Hello for admins → expand to all users. The order matters because each phase removes attack surface that the next phase couldn't defend against.
 
 **Discussion (Socratic).**
-- **Q1.** Microsoft IT shipped ~5,000 Yubikeys at ~$50 each for admin staff. A CFO at a 200-person company says "we can't spend $10K on keys — use SMS." Build the cost-of-incident counter-argument; what does one credential-based incident cost a small company?
-- **Q2.** Microsoft chose to keep TAP enabled tenant-wide. Make the case for limiting TAP to specific admin roles only — what's the attack surface trade-off?
+- **Q1.** Microsoft IT shipped ~5,000 Yubikeys at ~$50 each for admin staff. A CFO at a 200-person company says "we can't spend $10K on keys, use SMS." Build the cost-of-incident counter-argument; what does one credential-based incident cost a small company?
+- **Q2.** Microsoft chose to keep TAP enabled tenant-wide. Make the case for limiting TAP to specific admin roles only, what's the attack surface trade-off?
 - **Q3.** A regulated environment (DoD IL5) cannot use FIDO2 keys from non-FIPS-certified vendors. Walk through how AAGUID restriction + CBA on smart cards solves this; what's the equivalent civilian-sector use case?
 
 ---
@@ -359,11 +359,11 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **MFA fatigue.** Push-bombing attacks succeed when users accept push notifications they didn't trigger. Number matching defeats this. What other Microsoft-shipped controls layer on top of number matching to harden push further? When does Authenticator-push-with-number-match still lose, and what replaces it?
 2. **TAP as attack vector.** A long-lived TAP (24h, multi-use) is a bearer credential. Who in the org should be authorized to issue them? Argue for / against limiting TAP issuance to Privileged Authentication Administrator only.
-3. **The "passwordless but with a password" paradox.** Even after a user registers FIDO2, their password still exists in Entra. Should you delete it? Microsoft's "Passwordless authentication strength" CA policy doesn't require password removal — only FIDO2 sign-in. Build the case for going further and removing the password entirely.
+3. **The "passwordless but with a password" paradox.** Even after a user registers FIDO2, their password still exists in Entra. Should you delete it? Microsoft's "Passwordless authentication strength" CA policy doesn't require password removal, only FIDO2 sign-in. Build the case for going further and removing the password entirely.
 4. **Smart cards in 2026.** With FIDO2 widely available, is smart-card-based CBA obsolete? Identify the 3 scenarios where CBA still wins over FIDO2, and where each is mandated by regulation.
 5. **Hello vs FIDO2 trade-off.** Both are phishing-resistant. When is Windows Hello for Business the right answer over a portable FIDO2 key? Consider device assignment, BYOD, kiosks, and field workers.
 
@@ -377,4 +377,4 @@ You now know:
 - 📖 [Temporary Access Pass](https://learn.microsoft.com/entra/identity/authentication/howto-authentication-temporary-access-pass)
 - 📖 [Number matching in Authenticator](https://learn.microsoft.com/entra/identity/authentication/how-to-mfa-number-match)
 - 📖 [Microsoft's own passwordless journey](https://www.microsoft.com/insidetrack/blog/microsoft-uses-phishing-resistant-mfa-for-everyone/) (Microsoft Digital, 2024)
-- 📖 [Bonneau et al., *The Quest to Replace Passwords*, IEEE S&P 2012](https://ieeexplore.ieee.org/document/6234436) — seminal academic framework for evaluating authentication mechanisms.
+- 📖 [Bonneau et al., *The Quest to Replace Passwords*, IEEE S&P 2012](https://ieeexplore.ieee.org/document/6234436), seminal academic framework for evaluating authentication mechanisms.

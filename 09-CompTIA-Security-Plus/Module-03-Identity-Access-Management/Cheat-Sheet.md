@@ -85,7 +85,7 @@ Needs **time sync** (≤5 min skew). Tickets, not passwords, traverse the wire.
 
 - Password vaulting + credential injection
 - Session recording (video/keystroke)
-- **JIT access** — request → approved 60 min → auto-revoke
+- **JIT access**, request → approved 60 min → auto-revoke
 - Ephemeral credentials (AWS STS, SSH certs)
 - Approval workflows
 - Privileged account discovery
@@ -100,7 +100,7 @@ Needs **time sync** (≤5 min skew). Tickets, not passwords, traverse the wire.
 | Mover | Access review on role change; revoke old |
 | Leaver | Disable on day of separation; deprovision per process |
 
-🚨 **Orphan account = active account with no current owner** — major audit finding.
+🚨 **Orphan account = active account with no current owner**, major audit finding.
 
 ---
 
@@ -131,7 +131,7 @@ Needs **time sync** (≤5 min skew). Tickets, not passwords, traverse the wire.
 ## ✏️ Quick Self-Check
 
 1. List the 5 auth factors with an example each. ___
-2. SAML / OAuth / OIDC — purpose of each? ___
+2. SAML / OAuth / OIDC, purpose of each? ___
 3. RADIUS port + transport vs TACACS+ port + transport? ___
 4. Which access control model fits "labels enforced by system"? ___
 5. What does JIT access protect against? ___

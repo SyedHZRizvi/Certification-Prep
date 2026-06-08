@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1 — CompTIA Network+ (N10-009 Style)
+# 🧪 Practice Exam 1, CompTIA Network+ (N10-009 Style)
 
 > **Conditions:** Set a 45-minute timer. 45 questions. Treat it like the real thing.
-> **Pass mark:** 38/45 (~85%) — Network+ passes at ~80% so aim higher in practice.
+> **Pass mark:** 38/45 (~85%), Network+ passes at ~80% so aim higher in practice.
 > Take this AFTER finishing Modules 1–4. Covers OSI, TCP/IP & subnetting, routing/switching, and wireless.
 
 ---
@@ -178,7 +178,7 @@ D. 60 W
 
 ### 29. A signal strength of -85 dBm on Wi-Fi is generally:
 A. Excellent
-B. Marginal — slow speeds, frequent drops
+B. Marginal, slow speeds, frequent drops
 C. Unusable (disconnected)
 D. The optimal value
 
@@ -313,95 +313,95 @@ D. "Wi-Fi 5 cannot do WPA2"
 
 > Every question explained: why correct is right and why each distractor is wrong.
 
-**Q1. B — Layer 3.** IP addresses live at L3 (Network layer). MAC addresses are L2; port numbers L4.
+**Q1. B, Layer 3.** IP addresses live at L3 (Network layer). MAC addresses are L2; port numbers L4.
 
-**Q2. A — Frame.** L2 PDU is Frame. L3 = Packet. L4 (TCP) = Segment; (UDP) = Datagram.
+**Q2. A, Frame.** L2 PDU is Frame. L3 = Packet. L4 (TCP) = Segment; (UDP) = Datagram.
 
-**Q3. B — 802.11ac.** ac = Wi-Fi 5. n = Wi-Fi 4. ax = Wi-Fi 6. be = Wi-Fi 7.
+**Q3. B, 802.11ac.** ac = Wi-Fi 5. n = Wi-Fi 4. ax = Wi-Fi 6. be = Wi-Fi 7.
 
-**Q4. B — 1, 6, 11.** In the US, only channels 1/6/11 are non-overlapping in the 2.4 GHz band.
+**Q4. B, 1, 6, 11.** In the US, only channels 1/6/11 are non-overlapping in the 2.4 GHz band.
 
-**Q5. B — 172.16.5.20.** RFC 1918 covers 172.16.0.0/12 (i.e., 172.16.0.0 – 172.31.255.255). 172.32.x.x is public; 192.169.x.x is public; 8.8.8.8 is Google public DNS.
+**Q5. B, 172.16.5.20.** RFC 1918 covers 172.16.0.0/12 (i.e., 172.16.0.0 – 172.31.255.255). 172.32.x.x is public; 192.169.x.x is public; 8.8.8.8 is Google public DNS.
 
-**Q6. B — 255.255.0.0.** Class B = /16. Class A = /8. Class C = /24.
+**Q6. B, 255.255.0.0.** Class B = /16. Class A = /8. Class C = /24.
 
-**Q7. B — 255.255.255.224.** /27 = 27 ones = 11111111.11111111.11111111.11100000 = 255.255.255.224.
+**Q7. B, 255.255.255.224.** /27 = 27 ones = 11111111.11111111.11111111.11100000 = 255.255.255.224.
 
-**Q8. B — 6.** /29 has 3 host bits. 2³ − 2 = 6.
+**Q8. B, 6.** /29 has 3 host bits. 2³ − 2 = 6.
 
-**Q9. C — 192.168.10.128.** /26 = mask .192. Block size = 256 − 192 = 64. Multiples of 64: 0, 64, 128, 192. 150 falls in 128–191 block. Network ID = .128.
+**Q9. C, 192.168.10.128.** /26 = mask .192. Block size = 256 − 192 = 64. Multiples of 64: 0, 64, 128, 192. 150 falls in 128–191 block. Network ID = .128.
 
-**Q10. A — 10.20.30.15.** /28 = mask .240. Block size = 16. Multiples: 0, 16, 32, … Network = .0, next = .16, broadcast = .15.
+**Q10. A, 10.20.30.15.** /28 = mask .240. Block size = 16. Multiples: 0, 16, 32, … Network = .0, next = .16, broadcast = .15.
 
-**Q11. B — DHCP failed; APIPA.** 169.254.x.x is APIPA (RFC 3927) — link-local self-assigned when DHCP doesn't respond.
+**Q11. B DHCP failed; APIPA.** 169.254.x.x is APIPA (RFC 3927) link-local self-assigned when DHCP doesn't respond.
 
-**Q12. B — Link-local.** FE80::/10 is IPv6 link-local — auto-configured per interface, segment-only.
+**Q12. B Link-local.** FE80::/10 is IPv6 link-local auto-configured per interface, segment-only.
 
-**Q13. D — Broadcast.** IPv6 has no broadcast — replaced with multicast (e.g., FF02::1 = all-nodes).
+**Q13. D Broadcast.** IPv6 has no broadcast replaced with multicast (e.g., FF02::1 = all-nodes).
 
-**Q14. B — Port numbers.** PAT uses unique source ports to multiplex many internal hosts onto one public IP.
+**Q14. B, Port numbers.** PAT uses unique source ports to multiplex many internal hosts onto one public IP.
 
-**Q15. C — OSPF.** OSPF uses Dijkstra's Shortest Path First. RIP = Bellman-Ford distance vector. EIGRP = DUAL hybrid. BGP = path vector.
+**Q15. C, OSPF.** OSPF uses Dijkstra's Shortest Path First. RIP = Bellman-Ford distance vector. EIGRP = DUAL hybrid. BGP = path vector.
 
-**Q16. B — 1.** Static = AD 1. Connected = 0. EIGRP internal = 90. OSPF = 110. RIP = 120.
+**Q16. B, 1.** Static = AD 1. Connected = 0. EIGRP internal = 90. OSPF = 110. RIP = 120.
 
-**Q17. D — BGP.** BGP is the only EGP — used between ASes on the public Internet.
+**Q17. D BGP.** BGP is the only EGP used between ASes on the public Internet.
 
-**Q18. B — 4 bytes.** 802.1Q adds 4 bytes (TPID + PCP + DEI + VID) to the Ethernet header.
+**Q18. B, 4 bytes.** 802.1Q adds 4 bytes (TPID + PCP + DEI + VID) to the Ethernet header.
 
-**Q19. B — Many VLANs, 802.1Q tagged (except native).** Access = one VLAN untagged. Trunks tag with 802.1Q except the native VLAN (sent untagged).
+**Q19. B, Many VLANs, 802.1Q tagged (except native).** Access = one VLAN untagged. Trunks tag with 802.1Q except the native VLAN (sent untagged).
 
-**Q20. B — Lowest Bridge ID.** Bridge ID = priority (default 32768) + MAC. Lower wins; tie goes to lowest MAC.
+**Q20. B, Lowest Bridge ID.** Bridge ID = priority (default 32768) + MAC. Lower wins; tie goes to lowest MAC.
 
-**Q21. B — Access ports facing end hosts.** PortFast skips listening/learning, going straight to forwarding. Safe ONLY on access ports; on trunks it can create loops.
+**Q21. B, Access ports facing end hosts.** PortFast skips listening/learning, going straight to forwarding. Safe ONLY on access ports; on trunks it can create loops.
 
-**Q22. B — Error-disable on unexpected BPDU.** Defends against rogue switches plugged into wall ports.
+**Q22. B, Error-disable on unexpected BPDU.** Defends against rogue switches plugged into wall ports.
 
-**Q23. B — Link aggregation.** LACP / IEEE 802.3ad bundles multiple physical links into one logical link for capacity + redundancy.
+**Q23. B, Link aggregation.** LACP / IEEE 802.3ad bundles multiple physical links into one logical link for capacity + redundancy.
 
-**Q24. B — MAC addresses.** Switches maintain a CAM/MAC table mapping MACs to ports.
+**Q24. B, MAC addresses.** Switches maintain a CAM/MAC table mapping MACs to ports.
 
-**Q25. A — One collision domain per port; broadcast domains span VLAN.** Each switch port is its own collision domain (full duplex). A VLAN is a single broadcast domain.
+**Q25. A, One collision domain per port; broadcast domains span VLAN.** Each switch port is its own collision domain (full duplex). A VLAN is a single broadcast domain.
 
-**Q26. B — SAE.** WPA3 SAE replaces WPA2 PSK 4-way handshake, defeating offline dictionary attacks.
+**Q26. B, SAE.** WPA3 SAE replaces WPA2 PSK 4-way handshake, defeating offline dictionary attacks.
 
-**Q27. B — Certs on both sides.** EAP-TLS requires X.509 certs on client AND server. Most secure EAP method.
+**Q27. B, Certs on both sides.** EAP-TLS requires X.509 certs on client AND server. Most secure EAP method.
 
-**Q28. B — 15.4 W.** 802.3af (the original PoE). PoE+ (at) = 30 W. PoE++ (bt) = 60–100 W.
+**Q28. B, 15.4 W.** 802.3af (the original PoE). PoE+ (at) = 30 W. PoE++ (bt) = 60–100 W.
 
-**Q29. B — Marginal.** -85 dBm is marginal — slow / frequent drops. -67 = reliable for VoIP, -90 = unusable.
+**Q29. B Marginal.** -85 dBm is marginal slow / frequent drops. -67 = reliable for VoIP, -90 = unusable.
 
-**Q30. B — Software with floor plans BEFORE install.** Predictive surveys use planning tools (Ekahau, iBwave) with floor plans before any hardware deploys.
+**Q30. B, Software with floor plans BEFORE install.** Predictive surveys use planning tools (Ekahau, iBwave) with floor plans before any hardware deploys.
 
-**Q31. B — Multiple APs sharing SSID.** Extended Service Set = multiple APs cooperatively serving one SSID for transparent roaming.
+**Q31. B, Multiple APs sharing SSID.** Extended Service Set = multiple APs cooperatively serving one SSID for transparent roaming.
 
-**Q32. C — Router or L3 switch.** Different subnets = different L3 networks = router required. Pure L2 switches can't route between subnets.
+**Q32. C, Router or L3 switch.** Different subnets = different L3 networks = router required. Pure L2 switches can't route between subnets.
 
-**Q33. B — Broadcast.** `FF:FF:FF:FF:FF:FF` = the L2 broadcast address.
+**Q33. B, Broadcast.** `FF:FF:FF:FF:FF:FF` = the L2 broadcast address.
 
-**Q34. C — 21.** N(N−1)/2 = 7×6/2 = 21.
+**Q34. C, 21.** N(N−1)/2 = 7×6/2 = 21.
 
-**Q35. B — OFDMA.** Orthogonal Frequency-Division Multiple Access — Wi-Fi 6's signature feature, scheduling multiple clients in one TX opportunity via sub-carriers.
+**Q35. B OFDMA.** Orthogonal Frequency-Division Multiple Access Wi-Fi 6's signature feature, scheduling multiple clients in one TX opportunity via sub-carriers.
 
-**Q36. B — Reaver brute-force.** WPS PIN method is broken (Reaver/Bully tools recover PSK in 4-10 hrs). Disable WPS entirely.
+**Q36. B, Reaver brute-force.** WPS PIN method is broken (Reaver/Bully tools recover PSK in 4-10 hrs). Disable WPS entirely.
 
-**Q37. A — Untagged.** Native VLAN frames are sent untagged on a trunk; both ends must agree on the native VLAN ID.
+**Q37. A, Untagged.** Native VLAN frames are sent untagged on a trunk; both ends must agree on the native VLAN ID.
 
-**Q38. B — ASICs + SVIs.** L3 switches route in hardware (ASIC) with high port density; SVIs allow inter-VLAN routing. Routers are more software-centric with rich WAN interfaces.
+**Q38. B, ASICs + SVIs.** L3 switches route in hardware (ASIC) with high port density; SVIs allow inter-VLAN routing. Routers are more software-centric with rich WAN interfaces.
 
-**Q39. B — ~2 Gbps with hash-based load balancing.** Two 1 Gbps links bonded = ~2 Gbps aggregate, distributed across the bundle by hash; a single flow may pin to one link.
+**Q39. B, ~2 Gbps with hash-based load balancing.** Two 1 Gbps links bonded = ~2 Gbps aggregate, distributed across the bundle by hash; a single flow may pin to one link.
 
-**Q40. B — ARP poisoning → on-path attack.** ARP poisoning is the classic L2 pre-step to redirect LAN traffic through the attacker's host for an on-path (MITM) attack.
+**Q40. B, ARP poisoning → on-path attack.** ARP poisoning is the classic L2 pre-step to redirect LAN traffic through the attacker's host for an on-path (MITM) attack.
 
-**Q41. B — 172.16.148.0 / 172.16.151.255 / 1,022.** /22 mask = 255.255.252.0. Block size in 3rd octet = 4. Multiples: 0, 4, …, 148, 152. 150 falls in 148–151. Network = 172.16.148.0; broadcast = 172.16.151.255. Hosts = 2^10 − 2 = 1,022.
+**Q41. B, 172.16.148.0 / 172.16.151.255 / 1,022.** /22 mask = 255.255.252.0. Block size in 3rd octet = 4. Multiples: 0, 4, …, 148, 152. 150 falls in 148–151. Network = 172.16.148.0; broadcast = 172.16.151.255. Hosts = 2^10 − 2 = 1,022.
 
-**Q42. B — /25 for A, /26 for B, /30 for each WAN.** A needs 100 hosts → smallest mask = /25 (126 hosts). B needs 50 → /26 (62 hosts). WANs need 2 → /30 (2 hosts). Always allocate largest first.
+**Q42. B, /25 for A, /26 for B, /30 for each WAN.** A needs 100 hosts → smallest mask = /25 (126 hosts). B needs 50 → /26 (62 hosts). WANs need 2 → /30 (2 hosts). Always allocate largest first.
 
-**Q43. B — TDR / NetFlow / Wireshark / iperf3.** TDR locates copper fault by distance. NetFlow shows top bandwidth consumers. Wireshark captures and decodes TCP. iperf3 tests sustained throughput.
+**Q43. B, TDR / NetFlow / Wireshark / iperf3.** TDR locates copper fault by distance. NetFlow shows top bandwidth consumers. Wireshark captures and decodes TCP. iperf3 tests sustained throughput.
 
-**Q44. B — Enable 802.11k/v/r.** Roaming is client-initiated; assisted-roaming protocols + BSS transition + fast transition reduce re-association time below the threshold that breaks voice.
+**Q44. B, Enable 802.11k/v/r.** Roaming is client-initiated; assisted-roaming protocols + BSS transition + fast transition reduce re-association time below the threshold that breaks voice.
 
-**Q45. B — OFDMA + denser cells > peak speed.** The architectural argument: per-cell capacity (with many concurrent users on each cell) is the bottleneck in dense deployments. Many small low-power cells with OFDMA serves more users efficiently than a few high-power cells.
+**Q45. B, OFDMA + denser cells > peak speed.** The architectural argument: per-cell capacity (with many concurrent users on each cell) is the bottleneck in dense deployments. Many small low-power cells with OFDMA serves more users efficiently than a few high-power cells.
 
 ---
 
@@ -409,7 +409,7 @@ D. "Wi-Fi 5 cannot do WPA2"
 
 | Score | Verdict |
 |-------|---------|
-| 43–45 | 🏆 Excellent — move on to Practice Exam 2 after Modules 5-8 |
+| 43–45 | 🏆 Excellent, move on to Practice Exam 2 after Modules 5-8 |
 | 38–42 | ✅ On track. Review wrong answers, then continue Modules 5-8 |
 | 32–37 | ⚠️ Re-study weak modules; redo this exam in 3 days |
 | <32 | 🔁 Revisit Modules 1–4 in full, especially subnetting |

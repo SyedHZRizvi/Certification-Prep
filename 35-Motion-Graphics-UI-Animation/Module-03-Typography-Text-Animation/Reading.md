@@ -7,7 +7,7 @@ title: "Module 3: Typography & Text Animation"
 
 ## The Title Sequence That Changed Everything
 
-In 2016, the design studio Imaginary Forces (who did the original Se7en titles) and independent designer Kyle Cooper's student-era work all informed what happened in Netflix's Stranger Things. The show's title sequence — blocky ITC Benguiat type bleeding in from white — triggered an aesthetic movement. Every motion designer in the world suddenly started studying 1980s title design. Why did it work? Not nostalgia alone — it worked because it applied timing and spacing with absolute discipline. Each letter arrived at a pace that matched the synthesizer score. The sequence breathed.
+In 2016, the design studio Imaginary Forces (who did the original Se7en titles) and independent designer Kyle Cooper's student-era work all informed what happened in Netflix's Stranger Things. The show's title sequence blocky ITC Benguiat type bleeding in from white triggered an aesthetic movement. Every motion designer in the world suddenly started studying 1980s title design. Why did it work? Not nostalgia alone, it worked because it applied timing and spacing with absolute discipline. Each letter arrived at a pace that matched the synthesizer score. The sequence breathed.
 
 Typography in motion isn't decoration. It's rhythm made visible.
 
@@ -15,7 +15,7 @@ Typography in motion isn't decoration. It's rhythm made visible.
 
 ## 🔬 After Effects Text Animator System
 
-The Text Animator is AE's most powerful and underutilized native tool. It allows you to animate text properties (position, scale, opacity, rotation, blur, color, tracking, baseline shift) **per-character, per-word, or per-line** — without any expressions.
+The Text Animator is AE's most powerful and underutilized native tool. It allows you to animate text properties (position, scale, opacity, rotation, blur, color, tracking, baseline shift) **per-character, per-word, or per-line**, without any expressions.
 
 ### Adding a Text Animator
 1. Select the text layer
@@ -59,14 +59,14 @@ Now you have three animators. Collapse them into **one Range Selector**:
 6. Set Range Selector **Shape** to `Ramp Up`
 7. Set **Ease Low** to `50%`
 
-Result: characters fade in, scale down from 120%, and de-blur — sequentially from left to right, with a soft overlap.
+Result: characters fade in, scale down from 120%, and de-blur, sequentially from left to right, with a soft overlap.
 
 ### Variations
 
 | Variation | Change |
 |-----------|--------|
 | Right-to-Left | Offset from 100% to -100% |
-| Center-Out | Two selectors — one from 50% to 0%, one from 50% to 100% |
+| Center-Out | Two selectors, one from 50% to 0%, one from 50% to 100% |
 | Per-Word | Set Range Selector Based on: Words |
 | Character Scramble | Add Rotation animator; animate Offset with randomize order checked |
 | Staggered Drop-In | Add Position Y (offset characters drop from above, then snap to position) |
@@ -75,17 +75,17 @@ Result: characters fade in, scale down from 120%, and de-blur — sequentially f
 
 ---
 
-## 📺 Kinetic Typography — Case Studies
+## 📺 Kinetic Typography, Case Studies
 
 ### Case Study 1: The Stranger Things Intro
 
 **Technique:** Single-word reveals with slow ease-in
 **Key Decisions:**
-- Font: ITC Benguiat — chosen because it bleeds when printed on cheap newsprint (mass-market paperback aesthetic)
+- Font: ITC Benguiat, chosen because it bleeds when printed on cheap newsprint (mass-market paperback aesthetic)
 - Color: Blood red from white, not black to white
-- Timing: Each word takes ~40 frames at 24fps (~1.7 seconds) — far slower than what most designers would choose
+- Timing: Each word takes ~40 frames at 24fps (~1.7 seconds), far slower than what most designers would choose
 - Sound sync: Each letter arrival subtly synced to synthesizer transient
-- The "slowness" is intentional — it creates dread
+- The "slowness" is intentional, it creates dread
 
 **What to Learn:** Timing can communicate emotion. The same font, same technique, but at 12 frames would feel sharp and energetic. At 40 frames it feels heavy and ominous.
 
@@ -93,7 +93,7 @@ Result: characters fade in, scale down from 120%, and de-blur — sequentially f
 
 **Technique:** Blur-scale-opacity reveal, per-word
 **Key Decisions:**
-- Font: SF Pro (their system font) — no decorative choices distract from the content
+- Font: SF Pro (their system font), no decorative choices distract from the content
 - Duration: Each word reveal takes 18–24 frames at 24fps (750ms–1s)
 - Stagger between words: 4–6 frames
 - Maximum on-screen: 6–8 words before a new slide
@@ -107,7 +107,7 @@ Result: characters fade in, scale down from 120%, and de-blur — sequentially f
 **Key Decisions:**
 - Font: Heavy condensed sans-serif (Impact, Bebas Neue, custom)
 - Duration: 4–6 frames per character reveal (extremely fast)
-- Color: High contrast — white on dark, team color on white
+- Color: High contrast, white on dark, team color on white
 - Entry: Hard geometric wipe, not soft fade
 - Sound: Whoosh SFX synced to wipe start
 
@@ -117,13 +117,13 @@ Result: characters fade in, scale down from 120%, and de-blur — sequentially f
 
 ## 🎯 What the Exam Tests: Typography & Text Animation
 
-> 🎯 **Exam Callout 1:** The Range Selector Offset animated from -100% to 100% with Shape set to **Ramp Up** is the canonical text reveal. The exam will test which direction the reveal goes — -100% to 100% sweeps left to right.
+> 🎯 **Exam Callout 1:** The Range Selector Offset animated from -100% to 100% with Shape set to **Ramp Up** is the canonical text reveal. The exam will test which direction the reveal goes, -100% to 100% sweeps left to right.
 
-> 🎯 **Exam Callout 2:** "Based on" in the Range Selector controls whether animation applies per **character**, per **word**, or per **line**. Know all three modes — the exam tests each one in scenario questions.
+> 🎯 **Exam Callout 2:** "Based on" in the Range Selector controls whether animation applies per **character**, per **word**, or per **line**. Know all three modes, the exam tests each one in scenario questions.
 
 > 🎯 **Exam Callout 3:** The Stranger Things title sequence uses **ITC Benguiat**, a serif typeface designed by Ed Benguiat in 1977. The exam may test the font name in a "which typeface communicates a 1980s mass-market paperback feel" question.
 
-> 🎯 **Exam Callout 4:** Font licensing: a standard **Desktop License** covers print and personal use. A **Broadcast License** (or **Video License**) is required for fonts used in video distributed commercially. The exam will test whether a "standard font purchase" covers broadcast video — the answer is almost always no.
+> 🎯 **Exam Callout 4:** Font licensing: a standard **Desktop License** covers print and personal use. A **Broadcast License** (or **Video License**) is required for fonts used in video distributed commercially. The exam will test whether a "standard font purchase" covers broadcast video, the answer is almost always no.
 
 > 🎯 **Exam Callout 5:** Variable fonts allow animation between font **weights** in After Effects CC 2021 and later. They require a variable font file (`.ttf` or `.otf` with variation axes). The exam tests: what file format enables weight animation in AE?
 
@@ -135,13 +135,13 @@ Result: characters fade in, scale down from 120%, and de-blur — sequentially f
 
 ## ⚠️ Common Traps: Typography
 
-**Trap 1 — Range Selector vs. Wiggly Selector:** The Range Selector applies animation in a defined sequential sweep. The Wiggly Selector applies animation randomly across characters. Students frequently use a Range Selector when they want randomized character animation — the result is always a sequential wipe instead of the intended scatter effect.
+**Trap 1 Range Selector vs. Wiggly Selector:** The Range Selector applies animation in a defined sequential sweep. The Wiggly Selector applies animation randomly across characters. Students frequently use a Range Selector when they want randomized character animation the result is always a sequential wipe instead of the intended scatter effect.
 
-**Trap 2 — Tracking in Text Animators:** Tracking (letter spacing) in the Text Animator property is measured in **1/1000 of an em**, not in pixels. A tracking value of 100 in the animator equals 0.1em. This matters when matching text spacing to a style guide.
+**Trap 2, Tracking in Text Animators:** Tracking (letter spacing) in the Text Animator property is measured in **1/1000 of an em**, not in pixels. A tracking value of 100 in the animator equals 0.1em. This matters when matching text spacing to a style guide.
 
-**Trap 3 — Animate > Opacity vs. Layer Opacity:** Text Animator Opacity affects individual characters. Layer Opacity affects the entire text layer at once. Students often add Layer Opacity keyframes when they actually need per-character fades — the result loses all the character-by-character staging.
+**Trap 3 Animate > Opacity vs. Layer Opacity:** Text Animator Opacity affects individual characters. Layer Opacity affects the entire text layer at once. Students often add Layer Opacity keyframes when they actually need per-character fades the result loses all the character-by-character staging.
 
-**Trap 4 — Font Preview Size:** Fonts look different at display size vs. body size. Always set your comp zoom to 100% and preview at actual delivery size before finalizing font choices for motion. A font that reads beautifully at 200% zoom may look weak at 1080p actual size.
+**Trap 4, Font Preview Size:** Fonts look different at display size vs. body size. Always set your comp zoom to 100% and preview at actual delivery size before finalizing font choices for motion. A font that reads beautifully at 200% zoom may look weak at 1080p actual size.
 
 ---
 
@@ -170,20 +170,20 @@ The Stranger Things title sequence (2016) is the most-studied kinetic typography
 
 **The Technical Anatomy:**
 
-The sequence opens on a white field. ITC Benguiat type appears in deep crimson — bleeding from the center outward. Each letter emerges slowly over approximately 40 frames at 24fps (1.67 seconds per word grouping). The sequence builds across 12 seconds total before the final lockup.
+The sequence opens on a white field. ITC Benguiat type appears in deep crimson, bleeding from the center outward. Each letter emerges slowly over approximately 40 frames at 24fps (1.67 seconds per word grouping). The sequence builds across 12 seconds total before the final lockup.
 
 **The Three Technical Decisions That Made It:**
 
-1. **White background instead of black:** The standard expectation for horror is black. White creates unease through inversion — the brain recognizes "this is wrong" before it can articulate why.
+1. **White background instead of black:** The standard expectation for horror is black. White creates unease through inversion, the brain recognizes "this is wrong" before it can articulate why.
 
-2. **Bleed rather than reveal:** The letters don't wipe or fade. They bleed — the edges are not clean, referencing the imprecision of analog printing. In AE terms: a Roughen Edges effect on a mask, combined with a slow Offset reveal.
+2. **Bleed rather than reveal:** The letters don't wipe or fade. They bleed, the edges are not clean, referencing the imprecision of analog printing. In AE terms: a Roughen Edges effect on a mask, combined with a slow Offset reveal.
 
-3. **The synthesizer sync:** Each letter cluster's arrival was synchronized to a transient in Kyle Dixon and Michael Stein's synthesizer score. The visual and audio grammar matched perfectly — both analog, both slightly unstable.
+3. **The synthesizer sync:** Each letter cluster's arrival was synchronized to a transient in Kyle Dixon and Michael Stein's synthesizer score. The visual and audio grammar matched perfectly, both analog, both slightly unstable.
 
 **What It Teaches You:**
 - Timing at 40 frames per word feel heavy and ominous; the same technique at 12 frames would feel energetic and modern
 - Counterintuitive choices (white background, bleeding, slowness) create emotional dissonance that registers as "interesting"
-- Sound is not an afterthought — it was composed alongside the title animation, not added afterward
+- Sound is not an afterthought, it was composed alongside the title animation, not added afterward
 
 **The Replication Exercise (for your portfolio):**
 1. Set comp to 1920×1080, 24fps
@@ -225,7 +225,7 @@ The moments when nothing is moving are as important as the moments when things a
 
 ### The Wiggly Selector
 
-The Wiggly Selector is the Text Animator's tool for randomized, organic character animation — in contrast to the Range Selector's sequential sweep.
+The Wiggly Selector is the Text Animator's tool for randomized, organic character animation, in contrast to the Range Selector's sequential sweep.
 
 **Key Parameters:**
 
@@ -238,7 +238,7 @@ The Wiggly Selector is the Text Animator's tool for randomized, organic characte
 | **Temporal Phase** | Time offset; use per-layer to de-sync identical text layers |
 | **Spatial Phase** | Spatial offset for 2D properties |
 
-**Use Case — Ambient Organic Text:**
+**Use Case, Ambient Organic Text:**
 ```
 Text Layer → Animate > Position
 Add Wiggly Selector
@@ -246,7 +246,7 @@ Set Wiggles/Second: 0.5 (slow drift)
 Set Max Amount: 10px, Min Amount: -10px
 Set Correlation: 20% (mostly independent characters)
 ```
-Result: Text characters drift gently and independently — organic, ambient, never repetitive.
+Result: Text characters drift gently and independently, organic, ambient, never repetitive.
 
 ### Combining Range and Wiggly Selectors
 
@@ -254,7 +254,7 @@ The most powerful text animator configurations use both selectors together:
 1. **Range Selector** sweeps a reveal across the text (0% → 100%)
 2. **Wiggly Selector** adds random variation within the revealed zone
 
-This creates reveals that feel organic rather than mechanical — the characters arrive in roughly the right order but with natural variation in their exact timing.
+This creates reveals that feel organic rather than mechanical, the characters arrive in roughly the right order but with natural variation in their exact timing.
 
 ### Expression-Driven Text: The Character Offset Trick
 
@@ -273,13 +273,13 @@ Result: Characters appear to "decode" from scrambled to correct, reading left to
 
 ### Variable Fonts
 
-Variable fonts contain a full range of weights and widths within a single file. In AE (CS 2021+), you can animate between font weights using a single variable font — the weight itself becomes an animatable property.
+Variable fonts contain a full range of weights and widths within a single file. In AE (CS 2021+), you can animate between font weights using a single variable font, the weight itself becomes an animatable property.
 
 **Used in motion design for:** Weight "blooms" where text appears normal weight, then expands to ultra-bold, then returns to normal.
 
 ### Optical Sizing
 
-Some text reads beautifully at headline size but poorly at body size (and vice versa). Always test your fonts at their intended final size — not zoomed in.
+Some text reads beautifully at headline size but poorly at body size (and vice versa). Always test your fonts at their intended final size, not zoomed in.
 
 ### Font Licensing for Motion
 
@@ -337,27 +337,27 @@ Some text reads beautifully at headline size but poorly at body size (and vice v
 
 ---
 
-## 🎬 Case Study: Apple Keynote Motion — Technical Depth
+## 🎬 Case Study: Apple Keynote Motion, Technical Depth
 
 Apple keynotes use a motion system so consistent that designers can identify Apple slide templates by their animation timing alone. The system is governed by five rules:
 
-**Rule 1 — Product Before Copy:** Every product photograph or 3D render enters and settles before any text begins to move. The delay between product-settled and text-start is exactly 4–6 frames (167–250ms at 24fps).
+**Rule 1, Product Before Copy:** Every product photograph or 3D render enters and settles before any text begins to move. The delay between product-settled and text-start is exactly 4–6 frames (167–250ms at 24fps).
 
-**Rule 2 — Per-Word, Not Per-Character:** Apple uses per-word reveals for body copy. Per-character reveals would be too slow for the volume of text on a typical keynote slide. The audience's reading speed matches the reveal speed only at per-word pacing with 4–6 frame staggering.
+**Rule 2, Per-Word, Not Per-Character:** Apple uses per-word reveals for body copy. Per-character reveals would be too slow for the volume of text on a typical keynote slide. The audience's reading speed matches the reveal speed only at per-word pacing with 4–6 frame staggering.
 
-**Rule 3 — One Direction:** All text on any given slide enters from the same direction (subtle downward drift from above, approximately 15–20px). Mixed directions within a slide never occur in Apple keynote design.
+**Rule 3, One Direction:** All text on any given slide enters from the same direction (subtle downward drift from above, approximately 15–20px). Mixed directions within a slide never occur in Apple keynote design.
 
-**Rule 4 — Blur First, Then Scale:** The text begins blurred and slightly large (120%), then de-blurs and scales to 100% as it arrives. This blur-then-scale (not scale-then-blur) sequence is specific to Apple's system and is why their text feels like it's "arriving from a distance."
+**Rule 4, Blur First, Then Scale:** The text begins blurred and slightly large (120%), then de-blurs and scales to 100% as it arrives. This blur-then-scale (not scale-then-blur) sequence is specific to Apple's system and is why their text feels like it's "arriving from a distance."
 
-**Rule 5 — No Exit Animations:** In Apple keynote slides, elements do not animate out. The slide simply cuts to the next. Exit animations waste time and distract from the product narrative.
+**Rule 5, No Exit Animations:** In Apple keynote slides, elements do not animate out. The slide simply cuts to the next. Exit animations waste time and distract from the product narrative.
 
-**Why This Matters for Your Work:** This level of systematic thinking — five rules applied to every slide across a two-hour presentation — is what separates motion design from motion decoration. When you build a client presentation, define your 3–5 rules upfront and apply them without exception.
+**Why This Matters for Your Work:** This level of systematic thinking five rules applied to every slide across a two-hour presentation is what separates motion design from motion decoration. When you build a client presentation, define your 3–5 rules upfront and apply them without exception.
 
 ---
 
 ## 🗣️ Socratic Discussion Questions
 
-1. The Stranger Things sequence uses a white background for a horror title. The Apple keynote uses a dark background for product reveals. Both choices are deliberate and effective. What is the principle that governs background choice in kinetic typography — and how do you articulate it to a client who says "just make it look cool"?
+1. The Stranger Things sequence uses a white background for a horror title. The Apple keynote uses a dark background for product reveals. Both choices are deliberate and effective. What is the principle that governs background choice in kinetic typography, and how do you articulate it to a client who says "just make it look cool"?
 
 2. The "one technique per piece" rule is widely taught. But a 3-minute documentary segment might contain an energetic opening, a calm informational middle, and a dramatic closing. How do you apply technique consistency across a piece with intentionally varying emotional sections?
 
@@ -365,16 +365,16 @@ Apple keynotes use a motion system so consistent that designers can identify App
 
 4. Variable font animation is available in AE CC 2021+. But most motion designers still animate weight through multiple separate text layers (one at Regular, one at Bold). What are the tradeoffs between the variable font approach and the multi-layer approach?
 
-5. Sports graphics use fast, linear entrances — completely against the ease-out rule for entrance animations. The reason is genre expectation, not physics. How do you identify when a genre expectation overrides a physical principle?
+5. Sports graphics use fast, linear entrances, completely against the ease-out rule for entrance animations. The reason is genre expectation, not physics. How do you identify when a genre expectation overrides a physical principle?
 
 ---
 
 ## 📚 Further Reading
 
-- *Typographie* — Emil Ruder (niggli Verlag, 1967) — the foundational text on typography and white space; every motion designer who works with type should read chapters on rhythm and contrast
-- *Stop Stealing Sheep & Find Out How Type Works* — Erik Spiekermann & E.M. Ginger (Adobe Press, 3rd ed. 2013) — the most readable introduction to typography; covers optical sizing, weight, and spacing
-- *The Anatomy of Type: A Graphic Guide to 100 Typefaces* — Stephen Coles (Harper Design, 2012) — the most useful reference for identifying and choosing typefaces for motion work
-- *CSS Animation Pocket Guide* — Val Head (A Book Apart, 2015) — specifically addresses text animation in the web context, including the interplay between CSS animations and variable fonts
-- [School of Motion — Kinetic Typography Tutorial](https://www.youtube.com/results?search_query=school+of+motion+kinetic+typography+after+effects) — the most-used free tutorial on AE text animators
-- [AE Text Animator Documentation](https://helpx.adobe.com/after-effects/using/animating-text.html) — Adobe's full reference for all Range Selector properties
-- [Adobe Fonts Licensing Guide](https://fonts.adobe.com/fonts/licensing) — read before using any font in a client deliverable
+- *Typographie* Emil Ruder (niggli Verlag, 1967) the foundational text on typography and white space; every motion designer who works with type should read chapters on rhythm and contrast
+- *Stop Stealing Sheep & Find Out How Type Works* Erik Spiekermann & E.M. Ginger (Adobe Press, 3rd ed. 2013) the most readable introduction to typography; covers optical sizing, weight, and spacing
+- *The Anatomy of Type: A Graphic Guide to 100 Typefaces* Stephen Coles (Harper Design, 2012) the most useful reference for identifying and choosing typefaces for motion work
+- *CSS Animation Pocket Guide* Val Head (A Book Apart, 2015) specifically addresses text animation in the web context, including the interplay between CSS animations and variable fonts
+- [School of Motion Kinetic Typography Tutorial](https://www.youtube.com/results?search_query=school+of+motion+kinetic+typography+after+effects) the most-used free tutorial on AE text animators
+- [AE Text Animator Documentation](https://helpx.adobe.com/after-effects/using/animating-text.html), Adobe's full reference for all Range Selector properties
+- [Adobe Fonts Licensing Guide](https://fonts.adobe.com/fonts/licensing), read before using any font in a client deliverable

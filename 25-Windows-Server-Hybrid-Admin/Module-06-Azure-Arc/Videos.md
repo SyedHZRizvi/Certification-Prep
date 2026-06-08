@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Hybrid Cloud with Azure Arc
 
-> **How to use:** Click any card to search YouTube for the latest top result. Azure Arc is roughly 15% of AZ-801 — the highest-yield single topic.
+> **How to use:** Click any card to search YouTube for the latest top result. Azure Arc is roughly 15% of AZ-801, the highest-yield single topic.
 
 ## ⭐ Essential watching (~100 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Arc — The Definitive Overview</p>
+      <p class="vg-title">Azure Arc, The Definitive Overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 40 min · All resource families</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Arc-Enabled Servers — Onboarding Lab</p>
+      <p class="vg-title">Arc-Enabled Servers, Onboarding Lab</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 22 min · azcmagent + GPO</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Policy + Arc — DINE Remediation</p>
+      <p class="vg-title">Azure Policy + Arc, DINE Remediation</p>
       <p class="vg-creator">Inside Cloud and Security</p>
       <span class="vg-duration">⏱ 18 min · At-scale governance</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ESU via Arc — Past-EOL Patching</p>
+      <p class="vg-title">ESU via Arc, Past-EOL Patching</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 14 min · Windows 2012 R2 lifeline</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Arc Jumpstart — Reference Labs</p>
+      <p class="vg-title">Arc Jumpstart, Reference Labs</p>
       <p class="vg-creator">Azure Arc Jumpstart Community</p>
       <span class="vg-duration">⏱ 25 min · Free hands-on patterns</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Arc Private Link — Air-Gapped Network</p>
+      <p class="vg-title">Arc Private Link, Air-Gapped Network</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 18 min · Private Endpoints</span>
     </div>
@@ -150,6 +150,6 @@ Answer these in your notebook:
 3. What does a DINE policy effect do, and why is remediation important?
 4. Difference between Arc-enabled servers, Arc-enabled K8s, and Arc-enabled data?
 5. What is Update Management center, and what OS versions does it support?
-6. ESU via Arc — when does it apply?
+6. ESU via Arc, when does it apply?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

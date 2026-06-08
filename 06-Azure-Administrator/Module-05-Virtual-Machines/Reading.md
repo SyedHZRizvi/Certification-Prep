@@ -1,6 +1,6 @@
 # Module 5: Virtual Machines 🖥️
 
-> **Why this module matters:** VMs are 20–25% of the AZ-104 exam. Picking the right size, redundancy model, and disk tier — and knowing how to scale, image, and automate them — is the bread and butter of an Azure admin. Expect drag-drop case studies.
+> **Why this module matters:** VMs are 20–25% of the AZ-104 exam. Picking the right size, redundancy model, and disk tier and knowing how to scale, image, and automate them is the bread and butter of an Azure admin. Expect drag-drop case studies.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): subscriptions, regions, and quota concepts (VM cores are a per-subscription, per-region quota).
@@ -8,7 +8,7 @@
 > - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): managed-disk storage is built on the storage account redundancy model you just learned.
 > - Basic Linux *and* Windows admin literacy: at least one of `ssh`, `cloud-init`, PowerShell remoting; or RDP and `sysprep`.
 >
-> If you have not provisioned an Azure VM via CLI before, do so before tackling the quiz — the drag-drop "task sequencing" exam style rewards finger memory, not just visual memory.
+> If you have not provisioned an Azure VM via CLI before, do so before tackling the quiz, the drag-drop "task sequencing" exam style rewards finger memory, not just visual memory.
 
 ---
 
@@ -18,10 +18,10 @@ Sasha runs "Hole Truth Donuts" out of a single food truck. One night a TikTok vi
 
 Three months later, after listening to a business coach, Sasha rebuilds:
 
-- **Multiple identical trucks** parked at different lots — if one breaks down, the others keep selling. (That's **Availability Zones** — different physical locations in the same metro.)
+- **Multiple identical trucks** parked at different lots if one breaks down, the others keep selling. (That's **Availability Zones** different physical locations in the same metro.)
 - **A single base recipe and equipment list**, used to bring up each new truck in 20 minutes. (That's a **VM image**.)
 - **Auto-summon**: when the line tops 30 people, she texts a backup truck to roll in. When the crowd dies down, that truck goes home. (That's a **scale set with autoscale rules**.)
-- **Standardized add-ons** — every new truck gets the same logo, oven settings, POS install. (That's a **VM extension** like Custom Script Extension.)
+- **Standardized add-ons**, every new truck gets the same logo, oven settings, POS install. (That's a **VM extension** like Custom Script Extension.)
 
 That's the VM mental model. The exam will throw you scenarios where the cure is one of these patterns. Recognize the pattern, pick the right service.
 
@@ -32,14 +32,14 @@ That's the VM mental model. The exam will throw you scenarios where the cure is 
 | Family prefix | Optimized for | Examples |
 |----|----|----|
 | **A** | Entry-level / dev test | A-series (legacy) |
-| **B** | Burstable (CPU credits) | B2s, B4ms — cheap dev VMs |
+| **B** | Burstable (CPU credits) | B2s, B4ms, cheap dev VMs |
 | **D** | General purpose | D2s_v5, D8as_v5 |
-| **E** | Memory-optimized | E4ds_v5 — big RAM/CPU ratio |
-| **F** | Compute-optimized | F4s_v2 — high CPU/RAM ratio |
-| **L** | Storage-optimized | L8s_v3 — high local disk IOPS |
+| **E** | Memory-optimized | E4ds_v5, big RAM/CPU ratio |
+| **F** | Compute-optimized | F4s_v2, high CPU/RAM ratio |
+| **L** | Storage-optimized | L8s_v3, high local disk IOPS |
 | **M / Mv2** | Memory-monster | SAP HANA, very large in-memory DBs |
-| **N** | GPU | NC, ND, NV — ML, rendering |
-| **H** | HPC | H, HB, HC — InfiniBand, MPI workloads |
+| **N** | GPU | NC, ND, NV, ML, rendering |
+| **H** | HPC | H, HB, HC, InfiniBand, MPI workloads |
 
 🔥 **Suffix decoder:**
 - `s` = Premium SSD support (you almost always want this)
@@ -68,8 +68,8 @@ The big-three resilience options:
 🔥 **Fault Domain (FD)** = a rack with shared power/network. **Update Domain (UD)** = a group rebooted together for host patching.
 
 - AS default: 2 FDs × 5 UDs (max 3 FDs × 20 UDs)
-- An AS must be specified at VM **creation time** — can't add later.
-- Zones (AZs) are mutually exclusive with AS — pick one.
+- An AS must be specified at VM **creation time**, can't add later.
+- Zones (AZs) are mutually exclusive with AS, pick one.
 
 ### Create a VM in an Availability Zone via CLI
 
@@ -90,7 +90,7 @@ az vm create \
     --os-disk-delete-option Delete
 ```
 
-### PowerShell — VM in an AS
+### PowerShell, VM in an AS
 
 ```powershell
 $as = New-AzAvailabilitySet `
@@ -118,7 +118,7 @@ A managed disk = an Azure-managed storage account behind the scenes. Five SKUs t
 | **Premium SSD v2** | SSD with **independent** IOPS, throughput, size | Cost-optimized prod, modern | ~80,000 |
 | **Ultra Disk** | SSD, sub-ms latency, fully configurable | SAP HANA, top-tier DB | ~160,000 |
 
-🔥 **Premium SSD v2 advantages:** you set IOPS, throughput, and size independently — no more "buy P30 just for the IOPS." Plus 1 GiB increments, not the rigid P-tier ladder.
+🔥 **Premium SSD v2 advantages:** you set IOPS, throughput, and size independently, no more "buy P30 just for the IOPS." Plus 1 GiB increments, not the rigid P-tier ladder.
 
 | Constraint | Premium SSD v2 | Ultra |
 |------------|----------------|-------|
@@ -225,7 +225,7 @@ A **Scale Set** is a group of identical VMs that scale together. Two orchestrati
 | **Uniform** (classic) | Same SKU/image, tightly managed by VMSS, max 1000 instances |
 | **Flexible** (modern, default) | Mix sizes, integrate with AS-style FDs, max 1000 by default |
 
-Flexible orchestration is **recommended for new deployments** — it integrates with AZs and supports mixed instance types.
+Flexible orchestration is **recommended for new deployments**, it integrates with AZs and supports mixed instance types.
 
 ### Autoscale rules
 
@@ -300,9 +300,9 @@ az monitor autoscale rule create \
 | "AS can be set after VM creation" | ❌ Must specify at create time |
 | "AS and AZ can be combined" | ❌ Pick one |
 | "Ultra Disk works as OS disk" | ❌ Data disks only (so does Premium SSD v2) |
-| "B-series is great for production" | ❌ Bursts on CPU credits — only OK for predictable low-CPU |
+| "B-series is great for production" | ❌ Bursts on CPU credits, only OK for predictable low-CPU |
 | "Spot VMs always run" | ❌ Can be evicted with 30 sec notice |
-| "VMSS scale OUT instantly meets demand" | ❌ New VMs need to boot — pre-warm for fast traffic spikes |
+| "VMSS scale OUT instantly meets demand" | ❌ New VMs need to boot, pre-warm for fast traffic spikes |
 | "ADE encrypts at host" | ❌ ADE is in-OS (BitLocker/dm-crypt). Host encryption is a separate feature. |
 | "Custom Script Extension runs every boot" | ❌ Runs once per extension; updates trigger re-run |
 
@@ -338,7 +338,7 @@ az monitor autoscale rule create \
 You now know:
 
 - 🧮 The 8 VM family prefixes and what each is optimized for
-- 🏗️ AS vs AZ — what they protect against, when to use which
+- 🏗️ AS vs AZ, what they protect against, when to use which
 - 💾 The 5 managed-disk SKUs and where Premium SSD v2 shines
 - 🔐 The 4 encryption layers (SSE / CMK / ADE / Host)
 - 🖼️ Compute Gallery hierarchy and how to capture/version images
@@ -351,24 +351,24 @@ You now know:
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet](./Cheat-Sheet.md)
-4. 🧪 **TAKE [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) — you've covered the first half of the cert.**
+4. 🧪 **TAKE [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), you've covered the first half of the cert.**
 5. ➡️ Move to [Module 6: App Services & Containers](../Module-06-App-Services-Containers/Reading.md)
 
 ---
 
-## 📊 Case Study — Boeing Defense, Space & Security on Azure (2021–2024)
+## 📊 Case Study, Boeing Defense, Space & Security on Azure (2021–2024)
 
 **Situation.** Boeing's commercial aviation business runs one of the most sensitive engineering compute workloads on Earth: CATIA, NX, ANSYS, finite-element analysis, and 787/777X CFD simulations involving designs subject to U.S. **ITAR** (International Traffic in Arms Regulations) and **EAR** (Export Administration Regulations) export controls. In addition, Boeing Defense, Space & Security runs workloads classified up to *Secret* in U.S. and partner-nation networks. Boeing announced a strategic partnership with Microsoft Azure at Microsoft Inspire 2018; the partnership was extended in 2021 to cover production engineering workloads and refreshed again in 2024 for generative-AI engineering copilot pilots (Boeing-Microsoft *Building the Connected Aerospace Enterprise* press releases, 2018-07; 2021-04; 2024-04).
 
 **Decision.** Boeing's Azure footprint reflects a textbook regulated-workload architecture. Three decisions are directly testable on AZ-104:
 
 1. **Sovereignty via region selection + Azure Policy.** Production engineering workloads run in **Azure Government** (`usgovvirginia`, `usgovtexas`) for ITAR-controlled data; commercial workloads run in `eastus`, `eastus2`, `westus3` per the Microsoft Cloud Adoption Framework "Sovereign Landing Zone" pattern (Microsoft, 2023; refreshed 2025). An **Allowed Locations** policy at the management-group root prevents accidental deployment outside the allowed region list.
-2. **Compute sizing for engineering simulation.** Boeing uses **H-series VMs (HBv4, HC, HX)** for CFD — InfiniBand-fabric-attached HPC SKUs that publish 200 Gbps low-latency interconnect. For workstation interactive use, **NV-series GPU VMs** (NVv4 with AMD MI-series, NCa-series with NVIDIA A100/H100) running Citrix or Azure Virtual Desktop replace physical workstations for engineers who travel. The exam tests these by family letter — *H = HPC, N = GPU, M = memory monster, D = general* — not by exact SKU.
-3. **Image management at scale.** Boeing publishes a hardened "golden image" weekly via **Azure Compute Gallery** with replication to 4 regions × 3 cached copies. Every engineering VM (~tens of thousands of them) is rebuilt from this image; Custom Script Extension + the DSC extension apply per-team licensing and configuration. No engineer ever logs into a VM with admin rights — RBAC is `Virtual Machine User Login` for SSH/RDP only.
+2. **Compute sizing for engineering simulation.** Boeing uses **H-series VMs (HBv4, HC, HX)** for CFD InfiniBand-fabric-attached HPC SKUs that publish 200 Gbps low-latency interconnect. For workstation interactive use, **NV-series GPU VMs** (NVv4 with AMD MI-series, NCa-series with NVIDIA A100/H100) running Citrix or Azure Virtual Desktop replace physical workstations for engineers who travel. The exam tests these by family letter *H = HPC, N = GPU, M = memory monster, D = general*, not by exact SKU.
+3. **Image management at scale.** Boeing publishes a hardened "golden image" weekly via **Azure Compute Gallery** with replication to 4 regions × 3 cached copies. Every engineering VM (~tens of thousands of them) is rebuilt from this image; Custom Script Extension + the DSC extension apply per-team licensing and configuration. No engineer ever logs into a VM with admin rights, RBAC is `Virtual Machine User Login` for SSH/RDP only.
 
 Combined with **Azure Disk Encryption (BitLocker)** + **encryption at host** + Customer-Managed Keys in Azure Key Vault, this is the architecture Microsoft Learn AZ-104 chapter 4 effectively asks you to design from scratch in case-study mode.
 
-**Outcome.** Boeing has not published cost numbers, but Microsoft's Inspire 2021 keynote stated Boeing reduced engineering-simulation queue times by **40%** versus on-prem HPC clusters, primarily because Azure HBv3/v4 capacity is elastic — peak design-review weeks can burst to 4× steady-state without waiting on a procurement cycle. As of the 2024 partnership refresh, Boeing is piloting Microsoft Copilot for Engineering on the same Azure footprint, with Azure OpenAI Service in the *Azure Government Top Secret* environment.
+**Outcome.** Boeing has not published cost numbers, but Microsoft's Inspire 2021 keynote stated Boeing reduced engineering-simulation queue times by **40%** versus on-prem HPC clusters, primarily because Azure HBv3/v4 capacity is elastic, peak design-review weeks can burst to 4× steady-state without waiting on a procurement cycle. As of the 2024 partnership refresh, Boeing is piloting Microsoft Copilot for Engineering on the same Azure footprint, with Azure OpenAI Service in the *Azure Government Top Secret* environment.
 
 **Lesson for the exam / for practitioners.** This case wraps the entire AZ-104 compute domain into one scenario:
 
@@ -380,23 +380,23 @@ Combined with **Azure Disk Encryption (BitLocker)** + **encryption at host** + C
 When AZ-104 shows you a case study with "data subject to U.S. export controls" and asks "which compute architecture meets the requirement?", the answer is: H/N family in Azure Government, Compute Gallery for golden images, ADE + CMK encryption, zone-redundant VMSS, locked down with Azure Policy.
 
 **Discussion (Socratic).**
-- **Q1.** Boeing chose Azure Compute Gallery over per-team custom images. What's the trade-off? When does the operational overhead of versioned, multi-region gallery images *not* pay back — e.g., for a 5-engineer team running a one-off ML experiment?
+- **Q1.** Boeing chose Azure Compute Gallery over per-team custom images. What's the trade-off? When does the operational overhead of versioned, multi-region gallery images *not* pay back, e.g., for a 5-engineer team running a one-off ML experiment?
 - **Q2.** ITAR data must not transit a non-cleared region. A French Airbus competitor would face the same requirement under EU dual-use regulations. Design the Azure Policy + management-group + role-based segmentation that an *international* engineering company would use to run *both* U.S. ITAR data *and* EU dual-use data simultaneously without cross-contamination. Where does this design get fragile?
-- **Q3.** Boeing uses VMSS Flexible across zones 1, 2, 3 for stateless workloads. For their *stateful* engineering license servers (FlexNet, RLM), they use single VMs in a Premium SSD + Availability Set in a *single* zone. Defend why pinning stateful workloads to one zone — accepting lower SLA — is sometimes the *correct* choice over the "always zone-redundant" reflex.
+- **Q3.** Boeing uses VMSS Flexible across zones 1, 2, 3 for stateless workloads. For their *stateful* engineering license servers (FlexNet, RLM), they use single VMs in a Premium SSD + Availability Set in a *single* zone. Defend why pinning stateful workloads to one zone accepting lower SLA is sometimes the *correct* choice over the "always zone-redundant" reflex.
 
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 6 covers the *managed* compute alternatives (App Service, AKS, ACI) — when a VM is the wrong answer; Module 7 covers the network design VMs sit in; Module 8 secures them; Module 9 backs them up.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 4](../../04-AWS-Solutions-Architect-Associate/Module-04-VPC-Deep-Dive/Reading.md) covers EC2 / ASG / placement groups — the AWS analogue; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) covers VM encryption (ADE) as a control class.
+> - Inside this course: Module 6 covers the *managed* compute alternatives (App Service, AKS, ACI), when a VM is the wrong answer; Module 7 covers the network design VMs sit in; Module 8 secures them; Module 9 backs them up.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 4](../../04-AWS-Solutions-Architect-Associate/Module-04-VPC-Deep-Dive/Reading.md) covers EC2 / ASG / placement groups, the AWS analogue; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) covers VM encryption (ADE) as a control class.
 > - Practice: PE-1 has 7 questions from this module; PE-2 + Final Mock combine VMs with networking and backup.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **AS vs. AZ for legacy apps.** A 15-year-old Java app stores session state on local disk. The team wants HA. AS gives 99.95% SLA within a single datacenter; AZ gives 99.99% across zones but requires session replication. Defend each as the better short-term choice. At what point does the engineering cost of fixing the session-state design exceed the SLA gap?
-2. **Spot VMs in production?** Spot VMs are 90% cheaper but evict with 30 sec notice. The conventional wisdom is "Spot is for batch only." Construct the strongest argument for using Spot for *interactive production workloads* — and the strongest argument against. Where's the line? (Hint: VMSS Flexible can mix Spot and on-demand instances.)
+2. **Spot VMs in production?** Spot VMs are 90% cheaper but evict with 30 sec notice. The conventional wisdom is "Spot is for batch only." Construct the strongest argument for using Spot for *interactive production workloads*, and the strongest argument against. Where's the line? (Hint: VMSS Flexible can mix Spot and on-demand instances.)
 3. **Premium SSD v2 vs. Ultra Disk.** Both are modern; both let you tune IOPS/throughput independently. When is Ultra worth the operational cost (per-region restrictions, no snapshot support in some scenarios)? Defend a default-to-Premium-SSD-v2 policy and identify the workload class that actually needs Ultra.
 4. **Encryption at host vs. ADE.** Microsoft now recommends "encryption at host" over Azure Disk Encryption (ADE) for new deployments. What does ADE still buy you that host encryption doesn't? When is the BYOK / customer-managed-key story *only* satisfied by ADE?
 5. **VMSS autoscale tuning.** Default autoscale rules: scale out at CPU > 70%, scale in at < 30%. For a public web tier, what *specific* additional signals should you autoscale on (HTTP queue depth, custom App Insights metrics)? Design the rule set, and explain why CPU alone often misses load.
@@ -410,5 +410,5 @@ When AZ-104 shows you a case study with "data subject to U.S. export controls" a
 - 📖 [Managed disk types](https://learn.microsoft.com/azure/virtual-machines/disks-types)
 - 📖 [Azure Compute Gallery](https://learn.microsoft.com/azure/virtual-machines/azure-compute-gallery)
 - 📖 [VMSS orchestration modes](https://learn.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes)
-- 📖 Microsoft, *Sovereign Landing Zone* reference architecture (Microsoft Cloud Adoption Framework, 2023; checked 2026-05) — the topology Boeing's regulated workloads follow.
-- 📖 Microsoft *Well-Architected Framework — Reliability pillar* — the source for the AS/AZ SLA targets.
+- 📖 Microsoft, *Sovereign Landing Zone* reference architecture (Microsoft Cloud Adoption Framework, 2023; checked 2026-05), the topology Boeing's regulated workloads follow.
+- 📖 Microsoft *Well-Architected Framework Reliability pillar* the source for the AS/AZ SLA targets.

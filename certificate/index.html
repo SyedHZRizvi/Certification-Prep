@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate of Completion — The Cert Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    (function () {
+      var p = new URLSearchParams(location.search);
+      window._cert = {
+        name:   decodeURIComponent(p.get('name')   || 'Jane Doe'),
+        course: decodeURIComponent(p.get('course') || 'AI Digital Marketing — Strategist'),
+        date:   decodeURIComponent(p.get('date')   || 'June 5, 2026'),
+        id:     decodeURIComponent(p.get('id')     || 'CHC-2026-00001'),
+      };
+    })();
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ─── Preview shell ─── */
+    @media screen {
+      body {
+        min-height: 100vh;
+        background: #1a1f2e;
+        background-image: radial-gradient(ellipse 70% 50% at 50% 0%, #232a3d 0%, #12161f 70%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 28px 16px 64px;
+        font-family: 'Inter', sans-serif;
+      }
+      .preview-bar {
+        width: 100%; max-width: 1160px;
+        display: flex; align-items: center;
+        justify-content: space-between;
+        gap: 16px; flex-wrap: wrap;
+        margin-bottom: 28px;
+      }
+      .preview-bar-left h1 { font-size: 14px; font-weight: 700; color: #e2e8f0; letter-spacing: 0.02em; }
+      .preview-bar-left p  { font-size: 11.5px; color: #475569; margin-top: 3px; }
+      .preview-actions { display: flex; gap: 10px; }
+      .btn {
+        display: inline-flex; align-items: center; gap: 6px;
+        padding: 8px 18px; border: none; border-radius: 7px;
+        font-size: 12px; font-weight: 700; letter-spacing: 0.04em;
+        cursor: pointer; text-decoration: none;
+        transition: filter .15s, transform .12s;
+      }
+      .btn:hover { filter: brightness(1.12); transform: translateY(-1px); }
+      .btn-ghost { background: rgba(255,255,255,0.07); color: #94a3b8; border: 1px solid rgba(255,255,255,0.10); }
+      .cert-scale-wrapper { width: 100%; max-width: 1160px; display: flex; justify-content: center; }
+      .cert-scale-outer   { transform-origin: top center; }
+      .cert-elevation {
+        border-radius: 3px;
+        box-shadow:
+          0 0 0 1px rgba(160,130,60,0.25),
+          0 30px 80px -10px rgba(0,0,0,0.75),
+          0 70px 140px -30px rgba(0,0,0,0.5),
+          0 0 100px rgba(180,145,50,0.08);
+      }
+    }
+
+    /* ═══════════════════════════════════════════════════════
+       CERTIFICATE  —  1122 × 794 px  (A4 landscape)
+    ═══════════════════════════════════════════════════════ */
+    .certificate {
+      width:  1122px;
+      height: 794px;
+      position: relative;
+      overflow: hidden;
+      /* Warm antique cream */
+      background-color: #faf6ec;
+      background-image:
+        radial-gradient(ellipse 80% 75% at 50% 48%, #fffdf5 0%, #faf6ec 55%, #f3edd8 100%),
+        radial-gradient(ellipse 38% 32% at   0%   0%, rgba(180,145,30,0.09) 0%, transparent 70%),
+        radial-gradient(ellipse 38% 32% at 100%   0%, rgba(180,145,30,0.09) 0%, transparent 70%),
+        radial-gradient(ellipse 38% 32% at   0% 100%, rgba(180,145,30,0.09) 0%, transparent 70%),
+        radial-gradient(ellipse 38% 32% at 100% 100%, rgba(180,145,30,0.09) 0%, transparent 70%);
+    }
+
+    /* ── Border system ── */
+    .cb-outer {   /* thick navy outer */
+      position: absolute; inset: 0;
+      border: 7px solid #1a2744;
+      pointer-events: none; z-index: 8;
+    }
+    .cb-gold {    /* gold line */
+      position: absolute; inset: 11px;
+      border: 1.2px solid rgba(180,145,30,0.65);
+      pointer-events: none; z-index: 8;
+    }
+    .cb-inner {   /* thin navy hairline */
+      position: absolute; inset: 17px;
+      border: 0.6px solid rgba(26,39,68,0.18);
+      pointer-events: none; z-index: 8;
+    }
+
+    /* ── Watermark ── */
+    .cert-watermark {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      pointer-events: none; z-index: 1; overflow: hidden;
+    }
+    .cert-watermark svg { opacity: 0.028; }
+
+    /* ── Corner ornaments ── */
+    .cc { position: absolute; z-index: 9; width: 88px; height: 88px; }
+    .cc-tl { top: 0;    left: 0; }
+    .cc-tr { top: 0;    right: 0;  transform: scaleX(-1); }
+    .cc-bl { bottom: 0; left: 0;   transform: scaleY(-1); }
+    .cc-br { bottom: 0; right: 0;  transform: scale(-1,-1); }
+
+    /* ── Main body ── */
+    .cert-body {
+      position: absolute;
+      inset: 30px 38px 26px;
+      z-index: 5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── Head ── */
+    .cert-head {
+      display: flex; flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+    .cert-crest-wrap { width: 66px; height: 66px; margin-bottom: 6px; }
+
+    .cert-institution {
+      font-family: 'Inter', sans-serif;
+      font-size: 10.5px; font-weight: 800;
+      letter-spacing: 0.44em; text-transform: uppercase;
+      color: #1a2744;
+    }
+    .cert-location {
+      font-family: 'EB Garamond', 'Cormorant Garamond', serif;
+      font-size: 11.5px; font-style: italic; font-weight: 400;
+      color: rgba(26,39,68,0.45);
+      letter-spacing: 0.05em;
+      margin-top: 1px;
+      text-align: center;
+    }
+
+    /* ── Gold rule ── */
+    .cert-rule {
+      width: 100%; flex-shrink: 0;
+      display: flex; align-items: center;
+      margin: 9px 0 7px;
+    }
+    .cert-rule-line {
+      flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(180,145,30,0.5) 25%, #b8960c 60%, rgba(180,145,30,0.5) 85%, transparent 100%);
+    }
+    .cert-rule-ornament {
+      padding: 0 13px;
+      display: flex; align-items: center; gap: 7px;
+    }
+    .rh-diamond     { width: 6px; height: 6px; background: #b8960c; transform: rotate(45deg); flex-shrink: 0; }
+    .rh-diamond.sm  { width: 4px; height: 4px; opacity: 0.55; }
+
+    /* ── Title ── */
+    .cert-title-block {
+      flex-shrink: 0;
+      display: flex; flex-direction: column;
+      align-items: center; gap: 1px;
+      margin-bottom: 5px;
+    }
+    .cert-title-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 8px; font-weight: 700;
+      letter-spacing: 0.46em; text-transform: uppercase;
+      color: rgba(26,39,68,0.38);
+    }
+    .cert-title-main {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 27px; font-weight: 600;
+      letter-spacing: 0.20em; text-transform: uppercase;
+      color: #1a2744;
+      line-height: 1;
+    }
+
+    /* ── Centre ── */
+    .cert-center {
+      flex: 1;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 0;
+    }
+    .cert-presented {
+      font-family: 'EB Garamond', 'Cormorant Garamond', serif;
+      font-size: 15px; font-weight: 400; font-style: italic;
+      color: rgba(26,39,68,0.50);
+      letter-spacing: 0.04em;
+      margin-bottom: 5px;
+    }
+
+    /* THE NAME */
+    .cert-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 64px; font-weight: 400; font-style: italic;
+      letter-spacing: -0.01em;
+      line-height: 1.0; padding-bottom: 0.12em;
+      text-align: center;
+      color: #1a2744;
+      margin-bottom: 10px;
+    }
+
+    .cert-body-text {
+      font-family: 'EB Garamond', 'Cormorant Garamond', serif;
+      font-size: 17px; font-weight: 500; font-style: italic;
+      color: rgba(26,39,68,0.65);
+      letter-spacing: 0.03em;
+      text-align: center;
+      margin-bottom: 7px;
+    }
+    .cert-course {
+      font-family: 'Playfair Display', serif;
+      font-size: 21px; font-weight: 600;
+      color: #1a2744;
+      letter-spacing: 0.02em;
+      text-align: center;
+      margin-bottom: 9px;
+    }
+
+    /* Distinction */
+    .cert-distinction { display: flex; align-items: center; gap: 11px; }
+    .cert-dist-line   { width: 52px; height: 1px; background: linear-gradient(90deg, transparent, rgba(180,145,30,0.55)); }
+    .cert-dist-line.r { background: linear-gradient(90deg, rgba(180,145,30,0.55), transparent); }
+    .cert-dist-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 9.5px; font-weight: 800;
+      letter-spacing: 0.30em; text-transform: uppercase;
+      color: #b8960c;
+    }
+
+    /* ── Bottom rule ── */
+    .cert-bottom-rule {
+      width: 100%; flex-shrink: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(180,145,30,0.28) 15%, rgba(180,145,30,0.28) 85%, transparent);
+      margin-top: 10px; margin-bottom: 9px;
+    }
+
+    /* ── Footer ── */
+    .cert-footer {
+      flex-shrink: 0; width: 100%;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: end;
+      gap: 0 20px;
+    }
+
+    /* Signature — left */
+    .cert-sig { display: flex; flex-direction: column; align-items: flex-start; }
+    .cert-sig-art {
+      height: 42px; width: 200px;
+      display: flex; align-items: flex-end;
+      margin-bottom: 3px;
+    }
+    .cert-sig-art img {
+      max-height: 42px; max-width: 200px;
+      object-fit: contain; object-position: bottom left;
+    }
+    .cert-sig-rule {
+      width: 200px; height: 1px;
+      background: linear-gradient(90deg, #1a2744 0%, rgba(26,39,68,0.18) 100%);
+      margin-bottom: 4px;
+    }
+    .cert-sig-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 13.5px; font-weight: 600;
+      color: #1a2744; letter-spacing: 0.01em;
+    }
+    .cert-sig-role {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.5px; font-weight: 600;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: rgba(26,39,68,0.42);
+      margin-top: 1px;
+    }
+
+    /* Crest — centre (same shield as top, slightly smaller) */
+    .cert-crest-col {
+      display: flex; flex-direction: column;
+      align-items: center; gap: 5px;
+    }
+    .cert-standard {
+      font-family: 'Inter', sans-serif;
+      font-size: 6.5px; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(26,39,68,0.35);
+      text-align: center; line-height: 1.7;
+    }
+    .cert-standard strong { color: #b8960c; font-weight: 700; }
+
+    /* Meta — right */
+    .cert-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
+    .cert-meta-row { display: flex; align-items: baseline; gap: 7px; }
+    .cert-meta-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 7.5px; font-weight: 700;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(26,39,68,0.35); white-space: nowrap;
+    }
+    .cert-meta-value {
+      font-family: 'Inter', sans-serif;
+      font-size: 9px; font-weight: 600;
+      color: rgba(26,39,68,0.72);
+      font-variant-numeric: tabular-nums;
+    }
+    .cert-meta-value.gold { color: #b8960c; }
+
+    /* ─── Print ─── */
+    @media print {
+      body { background: none !important; padding: 0 !important; }
+      .preview-bar { display: none !important; }
+      .cert-scale-wrapper, .cert-scale-outer, .cert-elevation { all: unset; display: block; }
+      .certificate { width: 297mm !important; height: 210mm !important; }
+      @page { size: A4 landscape; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="preview-bar">
+    <div class="preview-bar-left">
+      <h1>🎓 The Cert Hub — Certificate of Completion</h1>
+      <p>URL params: <code style="color:#a5b4fc;font-size:11px;">?name=Jane+Doe&amp;course=...&amp;date=...&amp;id=...</code></p>
+    </div>
+    <div class="preview-actions">
+      <button class="btn btn-ghost" onclick="window.print()">🖨 Print / PDF</button>
+    </div>
+  </div>
+
+  <div class="cert-scale-wrapper">
+    <div class="cert-scale-outer" id="scaleOuter">
+      <div class="cert-elevation">
+        <div class="certificate" id="cert">
+
+          <!-- Border layers -->
+          <div class="cb-outer"></div>
+          <div class="cb-gold"></div>
+          <div class="cb-inner"></div>
+
+          <!-- Subtle background geometry -->
+          <div class="cert-watermark">
+            <svg width="1122" height="794" viewBox="0 0 1122 794" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Radial accent lines from centre -->
+              <g opacity="1" stroke="#b8960c" stroke-width="0.4">
+                <line x1="561" y1="397" x2="80"  y2="40"/>
+                <line x1="561" y1="397" x2="561" y2="28"/>
+                <line x1="561" y1="397" x2="1042" y2="40"/>
+                <line x1="561" y1="397" x2="1094" y2="397"/>
+                <line x1="561" y1="397" x2="1042" y2="754"/>
+                <line x1="561" y1="397" x2="561" y2="766"/>
+                <line x1="561" y1="397" x2="80"  y2="754"/>
+                <line x1="561" y1="397" x2="28"  y2="397"/>
+              </g>
+              <!-- Thin horizontal manuscript lines -->
+              <line x1="55" y1="128" x2="1067" y2="128" stroke="#b8960c" stroke-width="0.3"/>
+              <line x1="55" y1="666" x2="1067" y2="666" stroke="#b8960c" stroke-width="0.3"/>
+              <!-- Corner micro-dots -->
+              <g fill="#b8960c">
+                <circle cx="110" cy="110" r="1.3"/>
+                <circle cx="1012" cy="110" r="1.3"/>
+                <circle cx="110"  cy="684" r="1.3"/>
+                <circle cx="1012" cy="684" r="1.3"/>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Corner ornaments -->
+          <svg class="cc cc-tl" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="7" y1="7" x2="7"  y2="70" stroke="#1a2744" stroke-width="1.6"/>
+            <line x1="7" y1="7" x2="70" y2="7"  stroke="#1a2744" stroke-width="1.6"/>
+            <rect x="4" y="4" width="6" height="6" fill="#1a2744" transform="rotate(45,7,7)"/>
+            <line x1="12" y1="12" x2="12" y2="48" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <line x1="12" y1="12" x2="48" y2="12" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <path d="M7 28 Q16 20 24 23 Q31 26 29 35" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <path d="M28 7 Q20 16 23 24 Q26 31 35 29" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <circle cx="7"  cy="70" r="1.6" fill="#b8960c" opacity="0.75"/>
+            <circle cx="70" cy="7"  r="1.6" fill="#b8960c" opacity="0.75"/>
+          </svg>
+          <svg class="cc cc-tr" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="7" y1="7" x2="7"  y2="70" stroke="#1a2744" stroke-width="1.6"/>
+            <line x1="7" y1="7" x2="70" y2="7"  stroke="#1a2744" stroke-width="1.6"/>
+            <rect x="4" y="4" width="6" height="6" fill="#1a2744" transform="rotate(45,7,7)"/>
+            <line x1="12" y1="12" x2="12" y2="48" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <line x1="12" y1="12" x2="48" y2="12" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <path d="M7 28 Q16 20 24 23 Q31 26 29 35" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <path d="M28 7 Q20 16 23 24 Q26 31 35 29" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <circle cx="7"  cy="70" r="1.6" fill="#b8960c" opacity="0.75"/>
+            <circle cx="70" cy="7"  r="1.6" fill="#b8960c" opacity="0.75"/>
+          </svg>
+          <svg class="cc cc-bl" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="7" y1="7" x2="7"  y2="70" stroke="#1a2744" stroke-width="1.6"/>
+            <line x1="7" y1="7" x2="70" y2="7"  stroke="#1a2744" stroke-width="1.6"/>
+            <rect x="4" y="4" width="6" height="6" fill="#1a2744" transform="rotate(45,7,7)"/>
+            <line x1="12" y1="12" x2="12" y2="48" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <line x1="12" y1="12" x2="48" y2="12" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <path d="M7 28 Q16 20 24 23 Q31 26 29 35" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <path d="M28 7 Q20 16 23 24 Q26 31 35 29" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <circle cx="7"  cy="70" r="1.6" fill="#b8960c" opacity="0.75"/>
+            <circle cx="70" cy="7"  r="1.6" fill="#b8960c" opacity="0.75"/>
+          </svg>
+          <svg class="cc cc-br" viewBox="0 0 88 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="7" y1="7" x2="7"  y2="70" stroke="#1a2744" stroke-width="1.6"/>
+            <line x1="7" y1="7" x2="70" y2="7"  stroke="#1a2744" stroke-width="1.6"/>
+            <rect x="4" y="4" width="6" height="6" fill="#1a2744" transform="rotate(45,7,7)"/>
+            <line x1="12" y1="12" x2="12" y2="48" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <line x1="12" y1="12" x2="48" y2="12" stroke="#b8960c" stroke-width="0.65" opacity="0.55"/>
+            <path d="M7 28 Q16 20 24 23 Q31 26 29 35" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <path d="M28 7 Q20 16 23 24 Q26 31 35 29" stroke="#b8960c" stroke-width="0.75" fill="none" opacity="0.40"/>
+            <circle cx="7"  cy="70" r="1.6" fill="#b8960c" opacity="0.75"/>
+            <circle cx="70" cy="7"  r="1.6" fill="#b8960c" opacity="0.75"/>
+          </svg>
+
+          <!-- ════════════ BODY ════════════ -->
+          <div class="cert-body">
+
+            <!-- Head: crest + name -->
+            <div class="cert-head">
+              <div class="cert-crest-wrap">
+                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="cGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%"   stop-color="#e8cb7a"/>
+                      <stop offset="35%"  stop-color="#b8960c"/>
+                      <stop offset="65%"  stop-color="#d4a832"/>
+                      <stop offset="100%" stop-color="#8a6010"/>
+                    </linearGradient>
+                    <linearGradient id="cShield" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%"   stop-color="#1e3060"/>
+                      <stop offset="100%" stop-color="#0f1e3d"/>
+                    </linearGradient>
+                    <filter id="cGlow">
+                      <feGaussianBlur stdDeviation="1.2" result="b"/>
+                      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                  </defs>
+                  <!-- Shield -->
+                  <path d="M60 8 L100 22 L100 65 Q100 95 60 112 Q20 95 20 65 L20 22 Z" fill="url(#cShield)"/>
+                  <path d="M60 8 L100 22 L100 65 Q100 95 60 112 Q20 95 20 65 L20 22 Z"
+                        fill="none" stroke="url(#cGold)" stroke-width="2" filter="url(#cGlow)"/>
+                  <!-- Inner shield line -->
+                  <path d="M60 16 L93 28 L93 64 Q93 88 60 103 Q27 88 27 64 L27 28 Z"
+                        fill="none" stroke="url(#cGold)" stroke-width="0.7" opacity="0.38"/>
+                  <!-- Horizontal divider -->
+                  <line x1="27" y1="52" x2="93" y2="52" stroke="url(#cGold)" stroke-width="0.7" opacity="0.4"/>
+                  <!-- Crown ornament -->
+                  <path d="M44 40 L49 33 L55 38 L60 30 L65 38 L71 33 L76 40 Z"
+                        fill="url(#cGold)" opacity="0.92"/>
+                  <!-- TCH -->
+                  <text x="60" y="80" text-anchor="middle"
+                        font-family="'Playfair Display',Georgia,serif"
+                        font-size="28" font-weight="700"
+                        fill="url(#cGold)" letter-spacing="-1"
+                        filter="url(#cGlow)">TCH</text>
+                </svg>
+              </div>
+              <div class="cert-institution">The Cert Hub</div>
+              <div class="cert-location">Toronto, Canada</div>
+            </div>
+
+            <!-- Rule -->
+            <div class="cert-rule">
+              <div class="cert-rule-line"></div>
+              <div class="cert-rule-ornament">
+                <div class="rh-diamond sm"></div>
+                <div class="rh-diamond"></div>
+                <div class="rh-diamond sm"></div>
+              </div>
+              <div class="cert-rule-line"></div>
+            </div>
+
+            <!-- Title -->
+            <div class="cert-title-block">
+              <div class="cert-title-sub">This document certifies</div>
+              <div class="cert-title-main">Certificate &nbsp;of&nbsp; Completion</div>
+            </div>
+
+            <!-- Centre -->
+            <div class="cert-center">
+              <div class="cert-presented">Presented to</div>
+              <div class="cert-name" id="certName">Jane Doe</div>
+              <div class="cert-body-text">in recognition of successfully completing all requirements and examinations of</div>
+              <div class="cert-course" id="certCourse">AI Digital Marketing — Strategist</div>
+              <div class="cert-distinction">
+                <div class="cert-dist-line"></div>
+                <span class="cert-dist-text">Awarded with Distinction</span>
+                <div class="cert-dist-line r"></div>
+              </div>
+            </div>
+
+            <!-- Bottom rule -->
+            <div class="cert-bottom-rule"></div>
+
+            <!-- Footer -->
+            <div class="cert-footer">
+
+              <!-- Signature -->
+              <div class="cert-sig">
+                <div class="cert-sig-art">
+                  <img id="sigImg"
+                       src="signature.png"
+                       alt="Signature of Humayun Zafar"
+                       onerror="this.style.display='none';document.getElementById('sigFallback').style.display='block';">
+                  <svg id="sigFallback" style="display:none;" viewBox="0 0 200 42" width="200" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 36 C18 18 35 10 58 22 C75 31 90 14 112 18 C132 22 148 10 172 18 C182 22 190 28 194 34"
+                          stroke="#1a2744" stroke-width="1.7" fill="none" stroke-linecap="round" opacity="0.75"/>
+                    <path d="M90 16 C100 7 112 6 116 14"
+                          stroke="#1a2744" stroke-width="1.1" fill="none" stroke-linecap="round" opacity="0.45"/>
+                    <path d="M115 18 C125 9 136 10 138 18"
+                          stroke="#1a2744" stroke-width="0.9" fill="none" stroke-linecap="round" opacity="0.35"/>
+                  </svg>
+                </div>
+                <div class="cert-sig-rule"></div>
+                <div class="cert-sig-name">Humayun Zafar</div>
+                <div class="cert-sig-role">Founder &amp; Lead Instructor · The Cert Hub</div>
+              </div>
+
+              <!-- Bottom crest (same shield, smaller) -->
+              <div class="cert-crest-col">
+                <svg width="72" height="72" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="bGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%"   stop-color="#e8cb7a"/>
+                      <stop offset="35%"  stop-color="#b8960c"/>
+                      <stop offset="65%"  stop-color="#d4a832"/>
+                      <stop offset="100%" stop-color="#8a6010"/>
+                    </linearGradient>
+                    <linearGradient id="bShield" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%"   stop-color="#1e3060"/>
+                      <stop offset="100%" stop-color="#0f1e3d"/>
+                    </linearGradient>
+                    <filter id="bGlow">
+                      <feGaussianBlur stdDeviation="1.2" result="b"/>
+                      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                  </defs>
+                  <path d="M60 8 L100 22 L100 65 Q100 95 60 112 Q20 95 20 65 L20 22 Z" fill="url(#bShield)"/>
+                  <path d="M60 8 L100 22 L100 65 Q100 95 60 112 Q20 95 20 65 L20 22 Z"
+                        fill="none" stroke="url(#bGold)" stroke-width="2" filter="url(#bGlow)"/>
+                  <path d="M60 16 L93 28 L93 64 Q93 88 60 103 Q27 88 27 64 L27 28 Z"
+                        fill="none" stroke="url(#bGold)" stroke-width="0.7" opacity="0.38"/>
+                  <line x1="27" y1="52" x2="93" y2="52" stroke="url(#bGold)" stroke-width="0.7" opacity="0.4"/>
+                  <path d="M44 40 L49 33 L55 38 L60 30 L65 38 L71 33 L76 40 Z"
+                        fill="url(#bGold)" opacity="0.92"/>
+                  <text x="60" y="80" text-anchor="middle"
+                        font-family="'Playfair Display',Georgia,serif"
+                        font-size="28" font-weight="700"
+                        fill="url(#bGold)" letter-spacing="-1"
+                        filter="url(#bGlow)">TCH</text>
+                </svg>
+                <div class="cert-standard">
+                  Inspired by the teaching philosophies of<br>
+                  <strong>the world's leading research universities</strong>
+                </div>
+              </div>
+
+              <!-- Meta -->
+              <div class="cert-meta">
+                <div class="cert-meta-row">
+                  <span class="cert-meta-label">Date Issued</span>
+                  <span class="cert-meta-value" id="certDate">June 5, 2026</span>
+                </div>
+                <div class="cert-meta-row">
+                  <span class="cert-meta-label">Certificate ID</span>
+                  <span class="cert-meta-value" id="certId">CHC-2026-00001</span>
+                </div>
+                <div class="cert-meta-row">
+                  <span class="cert-meta-label">Verify at</span>
+                  <span class="cert-meta-value gold">cert-hub.pages.dev/verify</span>
+                </div>
+              </div>
+
+            </div><!-- /cert-footer -->
+          </div><!-- /cert-body -->
+
+        </div><!-- /certificate -->
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size:11px; color:#94a3b8; text-align:center; max-width:640px; margin:16px auto 0; padding:0 16px;">
+    This certificate is issued by The Cert Hub, an independent study platform, and does not constitute an official certification from any certification body. To earn an official credential, candidates must sit and pass the exam administered by the issuing certification body.
+  </p>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var d = window._cert;
+      document.getElementById('certName').textContent   = d.name;
+      document.getElementById('certCourse').textContent = d.course;
+      document.getElementById('certDate').textContent   = d.date;
+      document.getElementById('certId').textContent     = d.id;
+    });
+    function scaleCert() {
+      var outer = document.getElementById('scaleOuter');
+      if (!outer) return;
+      var avail = Math.min(window.innerWidth - 32, 1160);
+      var scale = Math.min(1, avail / 1122);
+      outer.style.transform = 'scale(' + scale + ')';
+      outer.style.transformOrigin = 'top center';
+      outer.style.marginBottom = scale < 1 ? '-' + Math.round(794 - 794 * scale) + 'px' : '';
+    }
+    scaleCert();
+    window.addEventListener('resize', scaleCert);
+  </script>
+
+</body>
+</html>

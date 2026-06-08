@@ -81,13 +81,13 @@ D. Increase production volume
 
 ### Q13. Jidoka is BEST described as: *(Understand)*
 A. The Japanese word for kanban
-B. Autonomation — machine stops when a defect is detected
+B. Autonomation, machine stops when a defect is detected
 C. A type of inventory
 D. A scheduling rule
 
 ### Q14. Poka-yoke is: *(Understand)*
 A. A defect database
-B. Mistake-proofing — making errors impossible by design
+B. Mistake-proofing, making errors impossible by design
 C. A union agreement
 D. A type of process audit
 
@@ -111,7 +111,7 @@ D. 10,000 DPMO
 
 ### Q18. A point on a control chart outside the ±3σ control limits indicates: *(Analyze)*
 A. Common-cause variation (normal)
-B. Special-cause variation — investigate
+B. Special-cause variation, investigate
 C. The chart is broken
 D. The process should be retuned immediately without investigation
 
@@ -209,26 +209,26 @@ Standard order. Mnemonic: the 5 S's all start with "S".
 ### Q12: **B. Separate internal vs external setup activities; convert internal to external where possible**
 Phase 1 of SMED. The biggest setup-reduction lever.
 
-### Q13: **B. Autonomation — machine stops when a defect is detected**
+### Q13: **B. Autonomation, machine stops when a defect is detected**
 Coined by Toyota: "automation with a human touch."
 
-### Q14: **B. Mistake-proofing — making errors impossible by design**
+### Q14: **B. Mistake-proofing, making errors impossible by design**
 Examples: USB-C symmetrical, asymmetric machine fixtures, software input validation.
 
 ### Q15: **A. Define, Measure, Analyze, Improve, Control**
 The Six Sigma improvement cycle.
 
 ### Q16: **B. DMADV**
-Design, Measure, Analyze, Design, Verify — for new processes/products.
+Design, Measure, Analyze, Design, Verify, for new processes/products.
 
 ### Q17: **A. 3.4 DPMO (defects per million opportunities)**
 The Six Sigma defect target = 6σ from the mean (with 1.5σ shift assumed).
 
-### Q18: **B. Special-cause variation — investigate**
+### Q18: **B. Special-cause variation, investigate**
 Out-of-limit point = investigate. Within-limit = leave alone (don't tamper).
 
 ### Q19: **B. Potential capability if process were perfectly centered**
-Cp uses the spec width and 6σ — assumes centered.
+Cp uses the spec width and 6σ, assumes centered.
 
 ### Q20: **B. Actual capability accounting for off-center process mean**
 Cpk penalizes a process whose mean is closer to one spec limit than the other.
@@ -237,7 +237,7 @@ Cpk penalizes a process whose mean is closer to one spec limit than the other.
 1.33 = ASCM-recognized capable. 2.0 = Six Sigma world-class.
 
 ### Q22: **B. Availability × Performance × Quality**
-Multiplicative — any of the three at 50% will halve OEE.
+Multiplicative, any of the three at 50% will halve OEE.
 
 ### Q23: **B. 84.7%**
 0.90 × 0.95 × 0.99 = 0.847 = **84.7%**. World-class!

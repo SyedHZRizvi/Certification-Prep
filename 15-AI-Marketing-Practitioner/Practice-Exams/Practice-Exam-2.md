@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AI Digital Marketing Practitioner (Style)
+# 🧪 Practice Exam 2, AI Digital Marketing Practitioner (Style)
 
 > **Conditions:** Set a 90-minute timer. 65 questions. Treat it like the real thing.
 > **Pass mark:** 52/65 (80%)
@@ -10,7 +10,7 @@
 
 ### 1. A DSP is:
 A. A type of publisher
-B. Demand-Side Platform — where advertisers buy programmatic inventory
+B. Demand-Side Platform, where advertisers buy programmatic inventory
 C. A pixel
 D. A privacy tool
 
@@ -208,12 +208,12 @@ D. Avoid plagiarism
 
 ### 34. Midjourney's `--cref` parameter does what?
 A. Sets aspect ratio
-B. Character reference — maintains consistent person across images
+B. Character reference, maintains consistent person across images
 C. Style reference
 D. Chaos level
 
 ### 35. Rendering text inside Midjourney v7 images:
-A. Still poor quality — use Canva/Figma for text overlays
+A. Still poor quality, use Canva/Figma for text overlays
 B. Works perfectly
 C. Required to use Canva
 D. Only works in v6
@@ -370,7 +370,7 @@ D. 60 days
 
 ### 61. During the first 5 days post-launch, you should:
 A. Edit campaigns daily
-B. Daily CHECK only (don't edit — learning phase)
+B. Daily CHECK only (don't edit, learning phase)
 C. Pause if conversions are slow
 D. Add new campaigns
 
@@ -383,7 +383,7 @@ D. A 10-page PDF
 ### 63. If you have only 5 conversions at the end of 14 days, the right report framing is:
 A. "Campaign failed"
 B. Hide sample size
-C. "I had only 5 conversions; wide error bars — these numbers are directional"
+C. "I had only 5 conversions; wide error bars, these numbers are directional"
 D. Pretend you had more
 
 ### 64. The Klarna AI marketing case study showed:
@@ -426,7 +426,7 @@ D. You can't truly learn marketing without running real campaigns with real mone
 
 **Q2. Answer: B.** Why B is correct: The Trade Desk is the largest independent (non-Google, non-Meta) DSP. Why wrong: A is wrong (TTD is independent); C/D are unrelated product categories. Exam-takeaway: TTD is the agency-default independent DSP.
 
-**Q3. Answer: B.** Why B is correct: DV360 is Google's enterprise programmatic DSP, part of Google Marketing Platform — distinct from Google Ads. Why wrong: A confuses GMP with Ads; C/D are unrelated. Exam-takeaway: DV360 ≠ Google Ads (different product, different price tier, different audience).
+**Q3. Answer: B.** Why B is correct: DV360 is Google's enterprise programmatic DSP, part of Google Marketing Platform, distinct from Google Ads. Why wrong: A confuses GMP with Ads; C/D are unrelated. Exam-takeaway: DV360 ≠ Google Ads (different product, different price tier, different audience).
 
 **Q4. Answer: D.** Why D is correct: Criteo specializes in dynamic product retargeting for DTC ecom. Why wrong: A-C describe other product categories Criteo doesn't lead. Exam-takeaway: Criteo = dynamic retargeting using your product catalog imagery.
 
@@ -438,23 +438,23 @@ D. You can't truly learn marketing without running real campaigns with real mone
 
 **Q8. Answer: C.** Why C is correct: Pre-iOS-14, the Meta default was 28-day click + 1-day view. Why wrong: A is the post-iOS-14 default; B is overinclusive; D would be lifetime. Exam-takeaway: Pre = 28+1; post = 7+1; both default to 1-day view.
 
-**Q9. Answer: D.** Why D is correct: The current 2026 default is 7-day click + 1-day view. Why wrong: A is unattainable; B is the pre-iOS-14; C ignores view-through. Exam-takeaway: 7+1 is the default — your conversion numbers shrunk for a reason.
+**Q9. Answer: D.** Why D is correct: The current 2026 default is 7-day click + 1-day view. Why wrong: A is unattainable; B is the pre-iOS-14; C ignores view-through. Exam-takeaway: 7+1 is the default, your conversion numbers shrunk for a reason.
 
 **Q10. Answer: B.** Why B is correct: Last-click attribution credits ONLY the last ad clicked. Why wrong: A is even-weighted; C is first-click; D is data-driven attribution. Exam-takeaway: Last-click is simple but biased toward bottom-funnel channels.
 
 **Q11. Answer: C.** Why C is correct: Wynter's 2024 research showed modern DTC customers average 25-30 brand interactions before purchase. Why wrong: A is myth; B is search-only; D is overstatement. Exam-takeaway: Single-touch attribution credits 1 of ~28 touchpoints.
 
-**Q12. Answer: D.** Why D is correct: MMM = Marketing Mix Modeling — a statistical model of channel impact. Why wrong: A-C are invented terms. Exam-takeaway: MMM works without per-user tracking — useful in privacy-restricted environments.
+**Q12. Answer: D.** Why D is correct: MMM = Marketing Mix Modeling a statistical model of channel impact. Why wrong: A-C are invented terms. Exam-takeaway: MMM works without per-user tracking useful in privacy-restricted environments.
 
 **Q13. Answer: A.** Why A is correct: Incrementality testing measures TRUE causal impact via A/B holdout groups. Why wrong: B-D are vanity / cost metrics, not causal. Exam-takeaway: Incrementality = "would this conversion have happened without the ad?"
 
-**Q14. Answer: A.** Why A is correct: MFA = Made-For-Advertising — low-quality sites built to harvest ad spend. Why wrong: B is the security MFA; C/D are invented. Exam-takeaway: MFA is the open-web fraud category, not the auth term.
+**Q14. Answer: A.** Why A is correct: MFA = Made-For-Advertising, low-quality sites built to harvest ad spend. Why wrong: B is the security MFA; C/D are invented. Exam-takeaway: MFA is the open-web fraud category, not the auth term.
 
 **Q15. Answer: D.** Why D is correct: ANA's 2024 study put MFA waste at ~20% of open-web display spend. Why wrong: A is too low; B/C are exaggerations. Exam-takeaway: 20% is the canonical number; block lists matter.
 
-**Q16. Answer: D.** Why D is correct: The 4-stage CRO cycle = Observe → Hypothesize → Test → Iterate. Why wrong: A is project management; B is creative production; C is brand strategy. Exam-takeaway: Observe first (replays + heatmaps) — skipping it = guessing.
+**Q16. Answer: D.** Why D is correct: The 4-stage CRO cycle = Observe → Hypothesize → Test → Iterate. Why wrong: A is project management; B is creative production; C is brand strategy. Exam-takeaway: Observe first (replays + heatmaps), skipping it = guessing.
 
-**Q17. Answer: A.** Why A is correct: P < 0.05 means there's < 5% probability of seeing this data if no real effect existed. Why wrong: B is the common misinterpretation; C confuses p with lift; D is conversion rate. Exam-takeaway: P-value ≠ "probability treatment wins" — that's Bayesian's domain.
+**Q17. Answer: A.** Why A is correct: P < 0.05 means there's < 5% probability of seeing this data if no real effect existed. Why wrong: B is the common misinterpretation; C confuses p with lift; D is conversion rate. Exam-takeaway: P-value ≠ "probability treatment wins", that's Bayesian's domain.
 
 **Q18. Answer: B.** Why B is correct: Bayesian testing outputs "probability the treatment is better" (e.g., 92%). Why wrong: A is Frequentist's output; C/D are partial. Exam-takeaway: Bayesian gives intuitive probability statements + tolerates peeking.
 
@@ -476,21 +476,21 @@ D. You can't truly learn marketing without running real campaigns with real mone
 
 **Q27. Answer: D.** Why D is correct: Microsoft Clarity is free heatmap + session replay with no usage limits. Why wrong: A wrong (Clarity is free); B is unrelated; C ignores the free pricing. Exam-takeaway: Clarity = free Hotjar-equivalent.
 
-**Q28. Answer: A.** Why A is correct: Booking.com publicly reports ~20% of tests are NEGATIVE (would hurt). Why wrong: B underestimates; C/D overstate. Exam-takeaway: 10% positive / 70% neutral / 20% negative — testing catches losers.
+**Q28. Answer: A.** Why A is correct: Booking.com publicly reports ~20% of tests are NEGATIVE (would hurt). Why wrong: B underestimates; C/D overstate. Exam-takeaway: 10% positive / 70% neutral / 20% negative, testing catches losers.
 
 **Q29. Answer: C.** Why C is correct: 80% power = 80% chance of detecting the effect IF it exists. Why wrong: A is lift; B is win-rate confusion; D conflates power with confidence. Exam-takeaway: Power = sensitivity; alpha = false-positive rate.
 
 **Q30. Answer: C.** Why C is correct: Airbnb's 2019 test made photos larger on listing cards, doubling conversion. Why wrong: A-D are alternate hypotheses they didn't test. Exam-takeaway: One disciplined test (large sample, proper power) > years of guessing.
 
-**Q31. Answer: D.** Why D is correct: AI content pipeline = Strategy → Generation → Refinement → Distribution. Why wrong: A is amateur framing; B is creative production; C is project management. Exam-takeaway: Stage the pipeline — single-shotting fails.
+**Q31. Answer: D.** Why D is correct: AI content pipeline = Strategy → Generation → Refinement → Distribution. Why wrong: A is amateur framing; B is creative production; C is project management. Exam-takeaway: Stage the pipeline, single-shotting fails.
 
 **Q32. Answer: D.** Why D is correct: Claude Sonnet 4.7 leads on long-form brand content with nuance. Why wrong: A is faster but less nuanced; B is voice (not text); C is image. Exam-takeaway: Claude for brand voice; ChatGPT for speed; Gemini for multimodal.
 
-**Q33. Answer: B.** Why B is correct: Brand Voice Project (Claude Projects / Custom GPT) holds persistent context — voice rules + tone examples + ICP — for all future use. Why wrong: A is side benefit; C/D are wrong motivations. Exam-takeaway: Save once, reuse forever = brand voice consistency at scale.
+**Q33. Answer: B.** Why B is correct: Brand Voice Project (Claude Projects / Custom GPT) holds persistent context voice rules + tone examples + ICP for all future use. Why wrong: A is side benefit; C/D are wrong motivations. Exam-takeaway: Save once, reuse forever = brand voice consistency at scale.
 
-**Q34. Answer: B.** Why B is correct: `--cref` = character reference — maintains consistent person across MJ images. Why wrong: A is `--ar`; C is `--sref`; D is `--chaos`. Exam-takeaway: cref for character consistency; sref for style consistency.
+**Q34. Answer: B.** Why B is correct: `--cref` = character reference, maintains consistent person across MJ images. Why wrong: A is `--ar`; C is `--sref`; D is `--chaos`. Exam-takeaway: cref for character consistency; sref for style consistency.
 
-**Q35. Answer: A.** Why A is correct: MJ v7 text rendering is still poor — use Canva/Figma for overlays. Why wrong: B/C wrong (no Canva requirement); D wrong (issue persists in v7). Exam-takeaway: Generate the image in MJ; add text in Canva.
+**Q35. Answer: A.** Why A is correct: MJ v7 text rendering is still poor, use Canva/Figma for overlays. Why wrong: B/C wrong (no Canva requirement); D wrong (issue persists in v7). Exam-takeaway: Generate the image in MJ; add text in Canva.
 
 **Q36. Answer: B.** Why B is correct: Runway Gen-4 (2026) does up to 4K, up to ~10-second cinematic clips. Why wrong: A is image-only; C is voice; D overstates length. Exam-takeaway: Runway = short cinematic; stitch multiple in CapCut for longer.
 
@@ -542,7 +542,7 @@ D. You can't truly learn marketing without running real campaigns with real mone
 
 **Q60. Answer: B.** Why B is correct: 14-21 days is the minimum for Meta learning + Google data + optimization room. Why wrong: A/C too short (learning phase incomplete); D unnecessary. Exam-takeaway: < 14 days = no learning conclusions possible.
 
-**Q61. Answer: B.** Why B is correct: First 5 days = daily CHECK only (no edits — learning phase). Why wrong: A resets learning; C is panicky; D over-scopes. Exam-takeaway: Hands off during learning phase.
+**Q61. Answer: B.** Why B is correct: First 5 days = daily CHECK only (no edits, learning phase). Why wrong: A resets learning; C is panicky; D over-scopes. Exam-takeaway: Hands off during learning phase.
 
 **Q62. Answer: A.** Why A is correct: The 4 capstone deliverables = Brief + Daily Log + Final Report + Blog Post. Why wrong: B is incomplete; C is creative-only; D is wrong format. Exam-takeaway: Four artifacts make a portfolio piece.
 
@@ -576,4 +576,4 @@ For EACH wrong answer:
 
 ---
 
-➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md) — 80 Q / 110 min / 75% pass
+➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md), 80 Q / 110 min / 75% pass

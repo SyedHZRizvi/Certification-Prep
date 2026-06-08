@@ -53,7 +53,7 @@ D. initramfs
 
 ### Q6. A custom unit declares `After=postgresql.service` but no `Requires=` or `Wants=`. If postgresql is not enabled or running at boot, what happens to the custom unit? *(Analyze)*
 A. systemd refuses to load the unit file
-B. systemd starts the unit anyway — `After=` is ordering only, not dependency
+B. systemd starts the unit anyway, `After=` is ordering only, not dependency
 C. systemd starts postgresql first
 D. systemd writes to `journalctl` then halts
 
@@ -119,7 +119,7 @@ D. `Type=`
 A. `systemctl daemon-reload`
 B. Rebuild the initramfs (`dracut -f` on RHEL or `update-initramfs -u` on Debian)
 C. `grub-install`
-D. Nothing — `/etc/crypttab` is read live by systemd
+D. Nothing, `/etc/crypttab` is read live by systemd
 
 ---
 
@@ -249,7 +249,7 @@ Firmware runs at power-on, reads the EFI System Partition (FAT32, mounted at `/b
 `set-default` updates the `/etc/systemd/system/default.target` symlink. `isolate` switches to it now without making it the boot default. `init 3` works on legacy systems via the systemd compatibility layer, but isn't the persistent fix. `enable` doesn't apply to targets in the same way.
 
 ### Q9: **B. `/etc/default/grub` (source) → `/boot/grub2/grub.cfg` (generated)**
-Read carefully — the source you edit is `/etc/default/grub`; GRUB itself reads the generated `/boot/grub2/grub.cfg` (RHEL) or `/boot/grub/grub.cfg` (Debian). Choice A is technically what GRUB reads at boot, but the question asks where you make persistent edits.
+Read carefully, the source you edit is `/etc/default/grub`; GRUB itself reads the generated `/boot/grub2/grub.cfg` (RHEL) or `/boot/grub/grub.cfg` (Debian). Choice A is technically what GRUB reads at boot, but the question asks where you make persistent edits.
 
 ### Q10: **C. `/etc/sysctl.d/99-swap.conf`**
 Drop files under `/etc/sysctl.d/` are loaded by `systemd-sysctl.service` at boot. `/etc/sysctl.conf` works too but is conventionally for distro defaults. Writing directly to `/proc/sys/vm/swappiness` doesn't persist.
@@ -273,7 +273,7 @@ By default a `oneshot` service that exits cleanly is marked inactive. Downstream
 This is the first command to type on any unhealthy system. It's a habit worth building.
 
 ### Q17: **B. `rescue.target`**
-Rescue mounts most local filesystems and starts more services than emergency. Emergency runs basically nothing — root is mounted read-only and you have just a shell.
+Rescue mounts most local filesystems and starts more services than emergency. Emergency runs basically nothing, root is mounted read-only and you have just a shell.
 
 ### Q18: **B. `e`**
 `e` edits the highlighted entry. `c` drops to a GRUB command line. Then Ctrl-X (or F10) to boot the edited entry.
@@ -285,7 +285,7 @@ Rescue mounts most local filesystems and starts more services than emergency. Em
 A foreground process that doesn't fork = `Type=simple`. `forking` is for daemons that double-fork. `notify` requires the program to call `sd_notify()`. `oneshot` is for run-and-exit jobs.
 
 ### Q21: **B. A `.wants/` symlink was created**
-That's the entire mechanism of "enable" — a symlink at `/etc/systemd/system/<target>.wants/<unit>` pulled in when the target activates.
+That's the entire mechanism of "enable", a symlink at `/etc/systemd/system/<target>.wants/<unit>` pulled in when the target activates.
 
 ### Q22: **A. `-u nginx -f`**
 `-u` filters by unit, `-f` follows live (like `tail -f`). The combination is the single most useful debugging incantation.
@@ -297,12 +297,12 @@ That's the entire mechanism of "enable" — a symlink at `/etc/systemd/system/<t
 The override file lives under `/etc/systemd/system/nginx.service.d/`. Distro-supplied unit files in `/lib/systemd/system/` are untouched and survive package upgrades. After saving, daemon-reload + restart.
 
 ### Q25: **B. Set `GRUB_TIMEOUT=10` in `/etc/default/grub` then regenerate**
-`/boot/grub2/grub.cfg` is regenerated from this source. Editing the generated file is a textbook trap — the change is wiped the next time you regenerate.
+`/boot/grub2/grub.cfg` is regenerated from this source. Editing the generated file is a textbook trap, the change is wiped the next time you regenerate.
 
 ### Q26: **B. `Type=oneshot`, `RemainAfterExit=yes`, `After=postgresql.service`, `Wants=postgresql.service`**
 - `oneshot` is the right type for "do work and exit."
 - `RemainAfterExit=yes` makes the unit appear active after a successful exit, so `report.service` (which depends on it) can know it succeeded.
-- `After=` orders it after postgres; `Wants=` actually pulls postgres in. (`Requires=` would also work but is stricter — a failure of postgres would fail the whole chain.)
+- `After=` orders it after postgres; `Wants=` actually pulls postgres in. (`Requires=` would also work but is stricter, a failure of postgres would fail the whole chain.)
 
 ---
 
@@ -326,4 +326,4 @@ The override file lives under `/etc/systemd/system/nginx.service.d/`. Distro-sup
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Filesystem Layout & Permissions](../Module-02-Filesystem-Permissions/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Filesystem Layout & Permissions](../Module-02-Filesystem-Permissions/Reading.md)

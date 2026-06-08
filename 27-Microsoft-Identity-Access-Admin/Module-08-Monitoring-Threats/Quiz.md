@@ -94,7 +94,7 @@ D. Only fire for failed sign-ins
 
 ---
 
-### Q12. **Yes/No** — Logs & retention. *(Understand)*
+### Q12. **Yes/No**, Logs & retention. *(Understand)*
 
 **S1:** Free-tier Entra has 7-day sign-in log retention.
 **S2:** Forwarding logs to Log Analytics costs nothing.
@@ -169,7 +169,7 @@ D. A federation server
 
 ---
 
-### Q20. **Yes/No** — Sentinel & detections. *(Understand)*
+### Q20. **Yes/No**, Sentinel & detections. *(Understand)*
 
 **S1:** Analytics rules in Sentinel are scheduled KQL queries that fire incidents.
 **S2:** SOAR playbooks are Logic Apps that auto-respond to incidents.
@@ -198,7 +198,7 @@ D. RiskEvents
 
 ---
 
-### Q23. **Yes/No** — Monitoring fundamentals. *(Understand)*
+### Q23. **Yes/No**, Monitoring fundamentals. *(Understand)*
 
 **S1:** Audit logs include events for users, groups, roles, applications, and consent.
 **S2:** Risk detections live in their own diagnostic category and feed Identity Protection.
@@ -219,7 +219,7 @@ D. `concat`
 
 ---
 
-### Q25. **Yes/No** — Threat response. *(Evaluate)*
+### Q25. **Yes/No**, Threat response. *(Evaluate)*
 
 **S1:** MFA alone defends against token theft (post-MFA refresh-token replay).
 **S2:** CAE shortens token revocation latency from ~1 hour to ~15 minutes.

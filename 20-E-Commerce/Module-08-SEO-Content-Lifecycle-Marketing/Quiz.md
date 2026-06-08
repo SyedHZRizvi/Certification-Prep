@@ -208,7 +208,7 @@ D. Email open rates are declining
 A. Helpful Content Updates demote pure editorial scale; first-hand Experience signal is now required; SERPs are saturated with AI-generated content competing for the same long-tail
 B. Instagram doesn't exist anymore
 C. People stopped reading blogs
-D. There is no barrier — the playbook works identically
+D. There is no barrier, the playbook works identically
 
 ---
 

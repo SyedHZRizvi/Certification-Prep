@@ -144,7 +144,7 @@ D. Bandits
 
 ### Q18. NDCG @ K measures: *(Understand)*
 A. CTR
-B. Normalized Discounted Cumulative Gain — ranking quality weighted by relevance and position
+B. Normalized Discounted Cumulative Gain, ranking quality weighted by relevance and position
 C. Coverage
 D. Diversity
 
@@ -217,25 +217,25 @@ D. The UI design
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. $1B+ / year**
-Gomez-Uribe & Hunt 2015 — the canonical Netflix paper.
+Gomez-Uribe & Hunt 2015, the canonical Netflix paper.
 
 ### Q2: **A. Exploration vs Exploitation**
-The defining bandit trade-off — keep trying new variants vs commit to the current best.
+The defining bandit trade-off, keep trying new variants vs commit to the current best.
 
 ### Q3: **A. ε exploration, 1-ε exploitation**
 Simplest bandit. ε is usually fixed (e.g., 10%) or decayed over time.
 
 ### Q4: **B. Mean + confidence bonus**
-UCB's "optimism under uncertainty" — variants tried less get a larger bonus.
+UCB's "optimism under uncertainty", variants tried less get a larger bonus.
 
 ### Q5: **B. Samples from posterior, picks max**
 Thompson Sampling. Bayesian and near-optimal in regret. Production default in 2026.
 
 ### Q6: **B. Context features in addition to variant**
-Contextual bandits — the production-grade personalization algorithm.
+Contextual bandits, the production-grade personalization algorithm.
 
 ### Q7: **B. Item-to-item collaborative filtering**
-Amazon's choice for scalability — item similarity is computed offline, allowing real-time serving.
+Amazon's choice for scalability, item similarity is computed offline, allowing real-time serving.
 
 ### Q8: **A. User × item rating matrix → two latent factor matrices**
 The MF decomposition. Latent dimension typically 20–200.
@@ -247,7 +247,7 @@ Standard MF prediction: dot product of the user vector and the item vector.
 BellKor's Pragmatic Chaos in 2009. The ensemble included MF, RBMs, and gradient-boosted models.
 
 ### Q11: **B. ALS**
-Hu/Koren/Volinsky 2008 — the production-default algorithm for implicit feedback (clicks, plays, views).
+Hu/Koren/Volinsky 2008, the production-default algorithm for implicit feedback (clicks, plays, views).
 
 ### Q12: **A. Memorization (wide) + generalization (deep)**
 Wide = linear model with cross features. Deep = embeddings + MLP. Combined for the best of both.
@@ -256,7 +256,7 @@ Wide = linear model with cross features. Deep = embeddings + MLP. Combined for t
 The Two-Tower pattern is the production default for large-scale retrieval (Google, Pinterest, YouTube).
 
 ### Q14: **B. ANN search libraries / services**
-FAISS (Meta), ScaNN (Google), Pinecone (managed) — used to serve embeddings at scale.
+FAISS (Meta), ScaNN (Google), Pinecone (managed), used to serve embeddings at scale.
 
 ### Q15: **B. DLRM**
 Meta's production architecture, paper released 2019.
@@ -271,7 +271,7 @@ BERT4Rec adapts BERT to sequences of user interactions. SASRec is self-attentive
 NDCG = sum of relevances discounted by log position, normalized to [0,1].
 
 ### Q19: **B. Popularity bias and filter bubbles**
-Pure NDCG optimization rewards "obvious good" recommendations — narrowing the catalog over time.
+Pure NDCG optimization rewards "obvious good" recommendations, narrowing the catalog over time.
 
 ### Q20: **B. Relevant and unexpected**
 Spotify's Discover Weekly tunes explicitly for serendipity.
@@ -292,7 +292,7 @@ Bandits dominate when you'd otherwise burn half your traffic on a loser for mont
 The five pitfalls are: wrong-metric optimization, filter bubble, cold start, popularity bias, privacy compliance. Server cost is operational, not strategic.
 
 ### Q26: **B. Measurement infrastructure**
-The strategist's bar — buy measurement before personalization. Otherwise you can't defend the $400K/year platform.
+The strategist's bar, buy measurement before personalization. Otherwise you can't defend the $400K/year platform.
 
 ---
 
@@ -311,7 +311,7 @@ The strategist's bar — buy measurement before personalization. Otherwise you c
 - Thompson Sampling = production default
 - Contextual bandit = bandit + user context
 - MF decomposes user × item rating matrix
-- Netflix Prize winner — MF ensemble
+- Netflix Prize winner, MF ensemble
 - ALS = production CF algorithm (implicit feedback)
 - Two-tower architecture
 - DLRM (Meta), PinSage (Pinterest), Wide & Deep (Google)

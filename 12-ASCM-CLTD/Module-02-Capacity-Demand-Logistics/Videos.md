@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Theory of Constraints — Five Focusing Steps</p>
+      <p class="vg-title">Theory of Constraints, Five Focusing Steps</p>
       <p class="vg-creator">ASCM</p>
       <span class="vg-duration">⏱ 14 min · The Goal in 14 min</span>
     </div>

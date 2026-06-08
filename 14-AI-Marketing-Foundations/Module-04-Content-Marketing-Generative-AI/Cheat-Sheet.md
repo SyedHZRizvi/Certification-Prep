@@ -128,7 +128,7 @@ SPOKES:
 
 ## ✏️ Quick Self-Check
 
-1. Pillar vs cluster — define each? ___
+1. Pillar vs cluster, define each? ___
 2. The 8-step workflow? ___
 3. Hub-and-spoke + 5 spoke formats? ___
 4. Image-prompt order? ___

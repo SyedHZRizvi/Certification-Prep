@@ -48,7 +48,7 @@ D. Estimating change
 ---
 
 ### Q6. A Scrum Master notices the team skips the Daily Scrum because "they're already in constant Slack contact." What should the Scrum Master do?
-A. Allow it — the team is self-organizing
+A. Allow it, the team is self-organizing
 B. Force them to attend
 C. Coach them on the value of the Daily Scrum and explain it is required in Scrum
 D. Report this to the Product Owner
@@ -203,15 +203,15 @@ D. Continuous improvement
 
 ### Q1: **B. Comprehensive documentation**
 The 2nd value: "Working software over comprehensive documentation."
-Documentation isn't *bad* — but a working product is more valuable than a doc *about* the product.
+Documentation isn't *bad*, but a working product is more valuable than a doc *about* the product.
 
 ### Q2: **D. Innovation**
 The three pillars are **Transparency, Inspection, Adaptation**. Innovation is great, but it's not a Scrum pillar.
-🧠 Memory tip: **TIA** — "Three Important Agile" pillars.
+🧠 Memory tip: **TIA**, "Three Important Agile" pillars.
 
 ### Q3: **B. "Deliver working software frequently"**
 6 months without delivery violates this principle most directly. While other principles also suffer, this is the clearest violation.
-🎯 Exam tip: Look for "MOST" and "BEST" — multiple answers may be partially right.
+🎯 Exam tip: Look for "MOST" and "BEST", multiple answers may be partially right.
 
 ### Q4: **B. 2001**
 February 11–13, 2001 in Snowbird, Utah. 🏔️
@@ -220,9 +220,9 @@ February 11–13, 2001 in Snowbird, Utah. 🏔️
 The 4th Agile Manifesto value. "Responding to change over following a plan."
 
 ### Q6: **C. Coach them**
-The Scrum Master is a *servant leader* and *coach*. They explain the value of the events. Daily Scrum is **required** in Scrum — skipping it = ScrumBut.
+The Scrum Master is a *servant leader* and *coach*. They explain the value of the events. Daily Scrum is **required** in Scrum, skipping it = ScrumBut.
 - A is wrong: self-organizing doesn't mean "skip the framework"
-- B is wrong: Scrum Masters don't *force* — they coach
+- B is wrong: Scrum Masters don't *force*, they coach
 - D is wrong: PO doesn't manage team behaviors
 
 ### Q7: **B. What is observed and known**
@@ -232,7 +232,7 @@ Empiricism = empirical = based on evidence/observation, not prediction.
 Agile excels with uncertainty (most software). Waterfall can suit fixed-scope, well-known domains (e.g., construction, regulatory).
 
 ### Q9: **C. 17**
-Famous "Snowbird 17" — the original signers.
+Famous "Snowbird 17", the original signers.
 
 ### Q10: **C. Changing based on Retrospective feedback**
 Adaptation = changing what you do next.
@@ -262,13 +262,13 @@ The 3rd Agile value emphasizes ongoing partnership rather than contractual fight
 Agile shines under uncertainty. When requirements are stable and well-understood (e.g., construction, regulatory), Waterfall can be the better fit. "Agile is always best" is a trap.
 
 ### Q18: **C. Reflect and tune behavior at regular intervals**
-Principle #12 directly maps to the Sprint Retrospective — regular reflection and process adjustment.
+Principle #12 directly maps to the Sprint Retrospective, regular reflection and process adjustment.
 
 ### Q19: **D. Responding to change over following a plan**
 The 4th Manifesto value. "Stick to the original plan" is rarely the agile answer.
 
 ### Q20: **B. Continuous planning rather than no planning**
-A common misconception. Agile values planning — but planning is continuous and adaptive, not done once upfront.
+A common misconception. Agile values planning, but planning is continuous and adaptive, not done once upfront.
 
 ### Q21: **A. Working software over comprehensive documentation**
 Producing extensive docs but no working product is the textbook violation. Documentation has value, but a working product has more.
@@ -277,7 +277,7 @@ Producing extensive docs but no working product is the textbook violation. Docum
 PRINCE2 is a predictive project management methodology, not an Agile framework. Scrum, Kanban, XP, SAFe, LeSS, and Nexus all implement Agile.
 
 ### Q23: **B. How to make decisions under uncertainty**
-Empirical process control means deciding based on what is observed, not predicted — exactly when conditions are uncertain or complex.
+Empirical process control means deciding based on what is observed, not predicted, exactly when conditions are uncertain or complex.
 
 ### Q24: **C. ScrumBut (an anti-pattern)**
 "We do Scrum, but..." = ScrumBut. The Scrum Guide is clear: skipping Scrum elements means you're not doing Scrum.
@@ -319,7 +319,7 @@ Each existing question above is mapped to Bloom's cognitive level. The graduate-
 | Q3 | Apply | Map a scenario to a Manifesto principle |
 | Q4 | Remember | Recall of year (2001) |
 | Q5 | Remember | Recall of Manifesto Value 4 |
-| Q6 | Apply | Scenario — pick the SM's correct action |
+| Q6 | Apply | Scenario, pick the SM's correct action |
 | Q7 | Understand | Explain empiricism in own words |
 | Q8 | Evaluate | Judge Agile vs Waterfall as a "which is better" claim |
 | Q9 | Remember | Recall of number 17 |
@@ -339,7 +339,7 @@ Each existing question above is mapped to Bloom's cognitive level. The graduate-
 | Q23 | Understand | Explain what empirical process control answers |
 | Q24 | Apply | Recognize ScrumBut from a scenario |
 
-**Current distribution:** Remember 9 (37%), Understand 6 (25%), Apply 7 (29%), Analyze 2 (8%), Evaluate 2 (8%), Create 0 (0%) — *over* the 25% Remember ceiling. The new questions below add Apply/Analyze/Evaluate/Create to bring the module closer to the target distribution without removing any existing questions.
+**Current distribution:** Remember 9 (37%), Understand 6 (25%), Apply 7 (29%), Analyze 2 (8%), Evaluate 2 (8%), Create 0 (0%), *over* the 25% Remember ceiling. The new questions below add Apply/Analyze/Evaluate/Create to bring the module closer to the target distribution without removing any existing questions.
 
 ---
 
@@ -357,24 +357,24 @@ D. Replace the lowest-performing developer
 
 ### Q26. A team's Sprint Retrospective has been "What went well / What didn't / Action items" for 30 consecutive Sprints. Engagement is low and the same impediments keep appearing. Analyzing this through the empiricism lens, what's the MOST LIKELY root cause? *(Analyze)*
 A. The format is fine; the team is at fault
-B. The Inspection step is happening but Adaptation isn't — actions don't translate into behavior change
+B. The Inspection step is happening but Adaptation isn't, actions don't translate into behavior change
 C. Retrospectives are no longer needed at year two
 D. The Scrum Master should run the meeting instead of facilitating
 
 ---
 
 ### Q27. Two teams in your org both claim to "do Agile." Team A holds daily stand-ups, uses Jira, and ships every 6 months. Team B has no daily standups, uses Trello, and ships every 2 weeks with customer demos. Evaluating against the Manifesto, which team is MORE Agile? *(Evaluate)*
-A. Team A — they follow more rituals
-B. Team B — they prioritize working software and customer feedback over ritual adherence
+A. Team A, they follow more rituals
+B. Team B, they prioritize working software and customer feedback over ritual adherence
 C. Both equally Agile because they each follow some practices
-D. Neither — Agile requires both daily standups AND short cycles
+D. Neither, Agile requires both daily standups AND short cycles
 
 ---
 
 ### Q28. A regulated medical-device firm argues that Agile cannot work for them because FDA approval requires "complete documentation before code freeze." Apply the Manifesto's reasoning to construct the strongest case that they CAN adopt an Agile mindset within their constraints. *(Apply / Evaluate)*
-A. They cannot — Agile is incompatible with regulation
+A. They cannot, Agile is incompatible with regulation
 B. They should drop FDA compliance to be Agile
-C. They can value working software and *necessary* documentation; the Manifesto values items on the right (documentation, contracts) too — just less than items on the left
+C. They can value working software and *necessary* documentation; the Manifesto values items on the right (documentation, contracts) too, just less than items on the left
 D. They should adopt SAFe to bypass FDA review
 
 ---
@@ -395,22 +395,22 @@ D. Squads must be exactly 7 people to count
 
 ---
 
-## 🎯 Answer key — Q25–Q30 (advanced)
+## 🎯 Answer key, Q25–Q30 (advanced)
 
 ### Q25: **C. Inspect at the Retrospective and adapt**
-Empiricism says: when observation reveals a change (velocity drop), inspect the cause, then adapt. *Don't* force a number (A — that's the velocity-as-target anti-pattern from Module 6); *don't* lower DoD (B — quality does not decrease per Scrum Guide); *don't* punish individuals (D — Scrum measures team, not individuals).
+Empiricism says: when observation reveals a change (velocity drop), inspect the cause, then adapt. *Don't* force a number (A that's the velocity-as-target anti-pattern from Module 6); *don't* lower DoD (B quality does not decrease per Scrum Guide); *don't* punish individuals (D, Scrum measures team, not individuals).
 
 ### Q26: **B. Inspection without Adaptation**
-The team is performing the inspect step (the retro happens) but failing to adapt — actions stay on paper, nothing changes. This is the canonical "Adaptation gap" in empiricism. The format is *fine*; the failure is downstream. (A and D are common scapegoats; C is wrong — retros never expire.)
+The team is performing the inspect step (the retro happens) but failing to adapt actions stay on paper, nothing changes. This is the canonical "Adaptation gap" in empiricism. The format is *fine*; the failure is downstream. (A and D are common scapegoats; C is wrong retros never expire.)
 
 ### Q27: **B. Team B is more Agile**
-The Manifesto values working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. Team B exhibits all three. Team A is "cargo-cult Agile" — rituals without the value. (A and C confuse ritual with mindset; D adds a requirement the Manifesto doesn't impose.)
+The Manifesto values working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. Team B exhibits all three. Team A is "cargo-cult Agile", rituals without the value. (A and C confuse ritual with mindset; D adds a requirement the Manifesto doesn't impose.)
 
 ### Q28: **C. Necessary documentation is consistent with the Manifesto**
-The Manifesto explicitly says "while there is value in the items on the right, we value the items on the left more." Documentation isn't *forbidden*; it's *valued less than working software*. A regulated firm can prioritize working medical-device software *and* maintain the documentation FDA requires. This is the principled answer — many regulated firms (medical, finance, aerospace) successfully adopt Agile within compliance constraints.
+The Manifesto explicitly says "while there is value in the items on the right, we value the items on the left more." Documentation isn't *forbidden*; it's *valued less than working software*. A regulated firm can prioritize working medical-device software *and* maintain the documentation FDA requires. This is the principled answer, many regulated firms (medical, finance, aerospace) successfully adopt Agile within compliance constraints.
 
 ### Q29: **B. Board → review → change one practice → repeat**
-This sequence maps directly to the three empiricism pillars: make work visible (Transparency), hold a review (Inspection), change a practice based on what you saw (Adaptation), then iterate. A is "boil the ocean" and misses the pillars; C is cargo-cult; D is false — gradual adoption is fine.
+This sequence maps directly to the three empiricism pillars: make work visible (Transparency), hold a review (Inspection), change a practice based on what you saw (Adaptation), then iterate. A is "boil the ocean" and misses the pillars; C is cargo-cult; D is false, gradual adoption is fine.
 
 ### Q30: **B. Spotify walked back the model**
 The Module 1 case study documents that Spotify itself dismantled or quietly modified most prescriptive elements (squads, autonomy norms) by 2017. Jeremiah Lee and Joakim Sundén (both former Spotify engineers) have publicly criticized the literal-copy adoption pattern. A and C are absurd; D conflates with the (also wrong) "Scrum requires 7 people" trope.

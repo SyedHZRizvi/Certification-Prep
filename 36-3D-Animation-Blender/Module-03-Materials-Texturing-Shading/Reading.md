@@ -7,15 +7,15 @@ title: "Module 3: Materials, Texturing & Shading"
 
 ## The Physics of Light and Surface
 
-Every material in the physical world — a scraped steel knuckle, a mossy stone, human skin in afternoon light — obeys the same underlying physics. Photons strike a surface. Some are absorbed (determining color). Some scatter beneath the surface and re-emerge diffused (subsurface scattering). Some bounce straight back at an angle equal to the angle of incidence (specular reflection). A thin layer of dielectric on top of a base material produces a clearcoat reflection (think car paint or lip gloss). Rough micro-geometry scatters the specular lobe into a broad highlight (rough metal) or keeps it tight and bright (polished metal).
+Every material in the physical world a scraped steel knuckle, a mossy stone, human skin in afternoon light obeys the same underlying physics. Photons strike a surface. Some are absorbed (determining color). Some scatter beneath the surface and re-emerge diffused (subsurface scattering). Some bounce straight back at an angle equal to the angle of incidence (specular reflection). A thin layer of dielectric on top of a base material produces a clearcoat reflection (think car paint or lip gloss). Rough micro-geometry scatters the specular lobe into a broad highlight (rough metal) or keeps it tight and bright (polished metal).
 
-In Blender, the **Principled BSDF** encodes all of this physics into a single node. Released as a core Blender node in version 2.79 and refined through 4.x, it implements the Disney/Physically Based Rendering (PBR) standard — the same standard used by Pixar's RenderMan, Epic's Unreal Engine, and Autodesk Arnold. Learning the Principled BSDF is learning the industry-wide language of surface description.
+In Blender, the **Principled BSDF** encodes all of this physics into a single node. Released as a core Blender node in version 2.79 and refined through 4.x, it implements the Disney/Physically Based Rendering (PBR) standard, the same standard used by Pixar's RenderMan, Epic's Unreal Engine, and Autodesk Arnold. Learning the Principled BSDF is learning the industry-wide language of surface description.
 
 ---
 
 ## 3.1 The PBR Material System
 
-**PBR (Physically Based Rendering)** is a rendering philosophy that models the physics of light interaction with surfaces accurately. The key principle is **energy conservation**: a surface cannot reflect more light than it receives. This constraint, enforced by PBR shaders, means that matte surfaces spread light broadly, while shiny surfaces concentrate it into a tight highlight — and the total reflected energy is bounded by the incoming energy.
+**PBR (Physically Based Rendering)** is a rendering philosophy that models the physics of light interaction with surfaces accurately. The key principle is **energy conservation**: a surface cannot reflect more light than it receives. This constraint, enforced by PBR shaders, means that matte surfaces spread light broadly, while shiny surfaces concentrate it into a tight highlight, and the total reflected energy is bounded by the incoming energy.
 
 ### The Two PBR Workflows
 
@@ -28,11 +28,11 @@ Blender's Principled BSDF uses **Metallic/Roughness**. When importing textures f
 
 ---
 
-## 3.2 The Principled BSDF — Every Parameter Explained
+## 3.2 The Principled BSDF, Every Parameter Explained
 
 | Parameter | Range | Physical Meaning |
 |---|---|---|
-| **Base Color** | RGB (0–1) | The diffuse albedo — the inherent color of the surface when lit |
+| **Base Color** | RGB (0–1) | The diffuse albedo, the inherent color of the surface when lit |
 | **Metallic** | 0–1 | 0 = dielectric (plastic, skin, wood); 1 = pure metal; avoid values between 0.1 and 0.9 |
 | **Roughness** | 0–1 | 0 = mirror-smooth; 1 = fully diffuse (chalk, matte plastic) |
 | **IOR** | 1.0–2.5 | Index of Refraction; 1.45 = glass, 1.33 = water, 1.5 = plastic |
@@ -47,7 +47,7 @@ Blender's Principled BSDF uses **Metallic/Roughness**. When importing textures f
 | **Emission** | RGB | Additive light emitted by surface; use for screens, neon |
 | **Emission Strength** | 0–∞ | Intensity of emission |
 
-> 🎯 **Exam tip:** **Metallic** should be exactly 0 or 1 for physically correct results. A value of 0.5 (partially metallic) has no physical basis — real materials are either conductors or dielectrics, with no mix. Exceptions: oxidized/corroded metal can use a texture-driven mix.
+> 🎯 **Exam tip:** **Metallic** should be exactly 0 or 1 for physically correct results. A value of 0.5 (partially metallic) has no physical basis, real materials are either conductors or dielectrics, with no mix. Exceptions: oxidized/corroded metal can use a texture-driven mix.
 
 ---
 
@@ -115,7 +115,7 @@ UV unwrapping is the process of flattening a 3D mesh into a 2D map so that textu
 | **Cube/Cylinder/Sphere Project** | Simple geometric surfaces | Only works for matching-shape objects |
 | **Project from View** | Flat panel surfaces | Only one projection direction |
 
-> 🚨 **Trap:** UV seams must be placed where they are least visible in the final render. Under the chin, inside the arm, behind the ears — places a camera rarely sees. A seam along the nose bridge will be visible as a hard line in the texture.
+> 🚨 **Trap:** UV seams must be placed where they are least visible in the final render. Under the chin, inside the arm, behind the ears, places a camera rarely sees. A seam along the nose bridge will be visible as a hard line in the texture.
 
 ---
 
@@ -160,7 +160,7 @@ Knowing what each node does by memory is tested directly in Blender certificatio
 | **Noise Texture** | Texture | Scale, Detail, Roughness | Color, Fac | Procedural grunge, clouds |
 | **Musgrave Texture** | Texture | Scale, Detail, Dimension | Fac | Terrain, planetary surfaces |
 | **Voronoi Texture** | Texture | Scale | Color, Distance | Cell patterns, skin pores |
-| **Texture Coordinate** | Input | — | UV, Generated, Normal, Camera | Supply UVs or projections |
+| **Texture Coordinate** | Input |, | UV, Generated, Normal, Camera | Supply UVs or projections |
 | **Mapping** | Vector | Vector, Location, Rotation, Scale | Vector | Pan/rotate/tile textures |
 | **Normal Map** | Vector | Color, Strength | Normal | Convert blue-channel normal map image |
 | **Bump** | Vector | Height, Strength | Normal | Convert grayscale to normals |
@@ -168,9 +168,9 @@ Knowing what each node does by memory is tested directly in Blender certificatio
 | **Math** | Converter | Value 1, Value 2 | Value | Multiply, add, clamp any value |
 | **Shader to RGB** | Converter | Shader | Color | Convert shading result to color (toon looks) |
 | **Fresnel** | Input | IOR, Normal | Fac | Angle-based reflection strength |
-| **Layer Weight** | Input | — | Fresnel, Facing | Edge glow, subsurface edge |
+| **Layer Weight** | Input |, | Fresnel, Facing | Edge glow, subsurface edge |
 
-> 🎯 **What the exam tests:** Know which socket type connects to which. BSDF outputs connect only to BSDF or Mix Shader inputs, not directly to the Material Output — you must go through a Shader socket. Color outputs can connect to any Color socket or be converted with the Converter nodes.
+> 🎯 **What the exam tests:** Know which socket type connects to which. BSDF outputs connect only to BSDF or Mix Shader inputs, not directly to the Material Output, you must go through a Shader socket. Color outputs can connect to any Color socket or be converted with the Converter nodes.
 
 ---
 
@@ -178,7 +178,7 @@ Knowing what each node does by memory is tested directly in Blender certificatio
 
 **From Substance Painter:**
 1. File → Export Textures → Choose "Blender (Metallic/Roughness)" preset
-2. Exports: BaseColor, Metallic, Roughness, Normal (DirectX or OpenGL — use OpenGL for Blender), Emissive, AO
+2. Exports: BaseColor, Metallic, Roughness, Normal (DirectX or OpenGL, use OpenGL for Blender), Emissive, AO
 3. In Blender Shader Editor, add Image Texture nodes for each map
 4. Connect:
    - BaseColor → Base Color socket
@@ -196,10 +196,10 @@ Knowing what each node does by memory is tested directly in Blender certificatio
 
 ## 3.6b Netflix BlenderKit Library: Industry-Grade Materials for Blender
 
-In 2022, Netflix co-funded an expansion of **BlenderKit** — an in-Blender asset library with thousands of CC0 and commercially-licensed materials, models, and HDRIs accessible directly inside Blender without leaving the application.
+In 2022, Netflix co-funded an expansion of **BlenderKit**, an in-Blender asset library with thousands of CC0 and commercially-licensed materials, models, and HDRIs accessible directly inside Blender without leaving the application.
 
 **Why this matters for material work:**
-- BlenderKit materials are pre-built Shader Editor node trees — you can install a "scratched aluminum" or "wet concrete" material in two clicks and study the node graph to learn how professionals build complex materials
+- BlenderKit materials are pre-built Shader Editor node trees, you can install a "scratched aluminum" or "wet concrete" material in two clicks and study the node graph to learn how professionals build complex materials
 - The Netflix partnership specifically added production-quality assets aligned with animation and VFX pipelines
 - BlenderKit is accessible via: Preferences → Add-ons → Enable BlenderKit; then the BlenderKit panel appears in the N-Panel
 
@@ -208,30 +208,30 @@ In 2022, Netflix co-funded an expansion of **BlenderKit** — an in-Blender asse
 - Expand the node group inside BlenderKit materials to see how Noise, Musgrave, and Color Ramp nodes are combined to produce believable procedural imperfections (rust, dust, scratches)
 - This is the fastest way to develop Shader Editor proficiency: inspect professional node graphs, then rebuild them from scratch
 
-> ⚠️ **Gotcha — Color Space on Texture Nodes:** When connecting any map other than Base Color to the Principled BSDF (Roughness, Metallic, Normal, AO), you must set the Image Texture node's **Color Space to Non-Color**. If you leave it at sRGB (the default), the values are gamma-corrected and your metallic/roughness values will be wrong — the material will appear washed out or incorrectly rough. Base Color is the only map that stays on sRGB.
+> ⚠️ **Gotcha Color Space on Texture Nodes:** When connecting any map other than Base Color to the Principled BSDF (Roughness, Metallic, Normal, AO), you must set the Image Texture node's **Color Space to Non-Color**. If you leave it at sRGB (the default), the values are gamma-corrected and your metallic/roughness values will be wrong the material will appear washed out or incorrectly rough. Base Color is the only map that stays on sRGB.
 
 ---
 
 ## 3.7 Case Study: Materials in *The Mitchells vs. the Machines*
 
-Sony Pictures Animation's *The Mitchells vs. the Machines* (2021) — partly rendered in 2D-look toon shading over 3D geometry — used a hybrid shader approach that is highly instructive. While the film was made in Maya/Arnold, the underlying concept maps directly to Blender's Shader Editor:
+Sony Pictures Animation's *The Mitchells vs. the Machines* (2021) partly rendered in 2D-look toon shading over 3D geometry used a hybrid shader approach that is highly instructive. While the film was made in Maya/Arnold, the underlying concept maps directly to Blender's Shader Editor:
 
 **The "sketch line" effect:** Artists used a combination of an Inverted Normal pass (rendered separately) combined with a post-composited sobel edge-detection filter to create the drawn-line aesthetic. In Blender, the same effect can be achieved with the Freestyle line rendering system or with a Compositor edge-detect pass.
 
-**The color palette constraint:** All surface colors were drawn from a limited "cartoon palette" — high-saturation, low-contrast base colors with manually painted shadow colors. This replicates the cel-animation tradition and can be achieved in Blender by using a Color Ramp node on the diffuse output to posterize the color into flat bands.
+**The color palette constraint:** All surface colors were drawn from a limited "cartoon palette", high-saturation, low-contrast base colors with manually painted shadow colors. This replicates the cel-animation tradition and can be achieved in Blender by using a Color Ramp node on the diffuse output to posterize the color into flat bands.
 
 **The lesson for Blender students:** You can use Toon BSDF shader nodes (available in Blender) to replicate this stylized look. The Principled BSDF is for photorealism; for stylized animation, mix BSDF shaders or use the Shader to RGB node to drive flat-shaded materials.
 
 ---
 
-## 3.7b Case Study: Ian Hubert's *Dynamo Dream* — Photorealism with Minimal Geometry
+## 3.7b Case Study: Ian Hubert's *Dynamo Dream*, Photorealism with Minimal Geometry
 
 Ian Hubert's ongoing short film series *Dynamo Dream* demonstrates that photorealistic materials can be achieved in Blender with extremely simple geometry, when the material system is used intelligently.
 
 **Key material techniques documented in Hubert's public making-of content:**
 - **Camera projection for backgrounds:** Rather than modeling full 3D environments, Hubert projects still photos onto flat planes using the Camera coordinate output from the Texture Coordinate node. The photo appears as a texture on a flat plane but reads as a fully 3D environment because it's correctly perspective-matched to the camera angle.
-- **Procedural aging:** Every surface in *Dynamo Dream* has a procedural "age" layer — Musgrave or Noise textures multiplied onto the Roughness channel to create uneven, worn surfaces. Clean, uniform surfaces look CG; noisy, varied surfaces read as real.
-- **Emission for city lights at night:** Distant city lights are flat plane geometries with a strong Emission material, blurred slightly in the Compositor with a Glare node (streak mode). No light objects needed for backgrounds — Emission + Glare = convincing city glow.
+- **Procedural aging:** Every surface in *Dynamo Dream* has a procedural "age" layer, Musgrave or Noise textures multiplied onto the Roughness channel to create uneven, worn surfaces. Clean, uniform surfaces look CG; noisy, varied surfaces read as real.
+- **Emission for city lights at night:** Distant city lights are flat plane geometries with a strong Emission material, blurred slightly in the Compositor with a Glare node (streak mode). No light objects needed for backgrounds, Emission + Glare = convincing city glow.
 
 **Hubert's material philosophy:** "Make the camera do the work." Textures that look detailed from the camera angle don't need to look detailed from any other angle. This philosophy of camera-first shading significantly reduces the complexity of the node graph and the resolution of textures needed.
 
@@ -245,9 +245,9 @@ Getting PBR values right is critical for realistic renders. These ranges reflect
 
 | Material Type | Metallic | Roughness | IOR | Subsurface Weight |
 |---|---|---|---|---|
-| Polished chrome | 1.0 | 0.02–0.05 | — | 0 |
-| Brushed aluminum | 1.0 | 0.3–0.5 | — | 0 |
-| Raw steel | 1.0 | 0.6–0.8 | — | 0 |
+| Polished chrome | 1.0 | 0.02–0.05 |, | 0 |
+| Brushed aluminum | 1.0 | 0.3–0.5 |, | 0 |
+| Raw steel | 1.0 | 0.6–0.8 |, | 0 |
 | Plastic (matte) | 0 | 0.7–0.9 | 1.45 | 0 |
 | Plastic (glossy) | 0 | 0.05–0.2 | 1.45 | 0 |
 | Glass | 0 | 0.0–0.05 | 1.45–1.52 | 0 |
@@ -258,7 +258,7 @@ Getting PBR values right is critical for realistic renders. These ranges reflect
 | Car paint (base) | 0 | 0.3–0.5 | 1.5 | 0 |
 | Car paint (coat) | 0 | 0.05 | 1.5 | 0 (use Coat Weight = 0.8) |
 
-> ⚠️ **Gotcha — Metallic Values in Textures:** When using a Metallic texture (grayscale map), the values in the texture should be either black (0) or white (1) — never gray. Gray metallic values (0.1–0.9) have no physical basis except for corroded/oxidized surfaces where the texture represents mixed metal/non-metal areas. A grayscale metallic map with many mid-gray values indicates a texturing mistake.
+> ⚠️ **Gotcha Metallic Values in Textures:** When using a Metallic texture (grayscale map), the values in the texture should be either black (0) or white (1) never gray. Gray metallic values (0.1–0.9) have no physical basis except for corroded/oxidized surfaces where the texture represents mixed metal/non-metal areas. A grayscale metallic map with many mid-gray values indicates a texturing mistake.
 
 ---
 
@@ -280,8 +280,8 @@ Getting PBR values right is critical for realistic renders. These ranges reflect
 EEVEE renders materials faster than Cycles but has specific requirements:
 
 **Transparency in EEVEE:**
-- Blend Mode (in Material Properties, not the Shader Editor) must be set to: **Alpha Blend** (for smooth transparency), **Alpha Clip** (for hard-edge opacity, e.g., foliage), or **Alpha Hashed** (for dithered transparency — more accurate but shows grain)
-- In Cycles, transparency works automatically via the Alpha socket — no Blend Mode required
+- Blend Mode (in Material Properties, not the Shader Editor) must be set to: **Alpha Blend** (for smooth transparency), **Alpha Clip** (for hard-edge opacity, e.g., foliage), or **Alpha Hashed** (for dithered transparency, more accurate but shows grain)
+- In Cycles, transparency works automatically via the Alpha socket, no Blend Mode required
 
 **Subsurface scattering in EEVEE:**
 - Enable in Material Properties → Settings → Shadow Mode → Opaque
@@ -293,7 +293,7 @@ EEVEE renders materials faster than Cycles but has specific requirements:
 
 **Refraction (glass) in EEVEE:**
 - Enable: Material Properties → Settings → Screen Space Refraction
-- EEVEE only shows what is visible in the screen space — glass that refracts objects behind the camera boundary will show black instead of the refracted content
+- EEVEE only shows what is visible in the screen space, glass that refracts objects behind the camera boundary will show black instead of the refracted content
 - Cycles computes refraction physically; no screen-space limitation
 
 **Material Properties → Settings reference for EEVEE:**
@@ -375,15 +375,15 @@ Animate the Multiply factor from 1.0 → 0.1 over 24 frames to simulate rain hit
 
 ## 📚 Next Steps
 
-Proceed to [Module 4: Lighting & HDRI](../Module-04-Lighting-HDRI/Reading.md) — your materials only look correct when the lighting is right.
+Proceed to [Module 4: Lighting & HDRI](../Module-04-Lighting-HDRI/Reading.md), your materials only look correct when the lighting is right.
 
 ---
 
 ## 📖 Further Reading
 
-- 📖 **Blender Manual — Principled BSDF** (docs.blender.org) — full parameter reference
-- 📖 **Allegorithmic — "The PBR Guide"** (substance3d.adobe.com) — industry-standard PBR theory
-- 📖 **Quixel Bridge Blender Plugin Documentation** (fab.com) — CC0 Megascans integration
-- 📖 **Sony Pictures Animation — *Mitchells vs. Machines* "Art of" book** — shading approach documented
+- 📖 **Blender Manual Principled BSDF** (docs.blender.org) full parameter reference
+- 📖 **Allegorithmic "The PBR Guide"** (substance3d.adobe.com) industry-standard PBR theory
+- 📖 **Quixel Bridge Blender Plugin Documentation** (fab.com), CC0 Megascans integration
+- 📖 **Sony Pictures Animation *Mitchells vs. Machines* "Art of" book** shading approach documented
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*

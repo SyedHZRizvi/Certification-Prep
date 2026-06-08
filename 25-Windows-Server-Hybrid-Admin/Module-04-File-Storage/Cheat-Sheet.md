@@ -54,7 +54,7 @@
 | Example | `\\contoso.com\shares` | Replicate `\\fs02\Marketing` to `\\fs05\Marketing` |
 | Tech | Site-aware referrals | RDC (block-level diff) |
 | Backup? | No | **No** (replication, not backup) |
-| Combine? | Yes — classic DFS-N + DFS-R combo |
+| Combine? | Yes, classic DFS-N + DFS-R combo |
 
 DFS-N max targets per folder: **32**
 
@@ -81,10 +81,10 @@ DFS-N max targets per folder: **32**
 
 | Feature | What it does |
 |---------|--------------|
-| Quota — **Hard** | Block writes when exceeded |
-| Quota — **Soft** | Warn only |
-| File Screen — **Active** | Block writes of bad extensions |
-| File Screen — **Passive** | Log only |
+| Quota, **Hard** | Block writes when exceeded |
+| Quota, **Soft** | Warn only |
+| File Screen, **Active** | Block writes of bad extensions |
+| File Screen, **Passive** | Log only |
 | Storage reports | Usage by user/group/folder |
 | File classification | Tag based on content (DLP-lite) |
 

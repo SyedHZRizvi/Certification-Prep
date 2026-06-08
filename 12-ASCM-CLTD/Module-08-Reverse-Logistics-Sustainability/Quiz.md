@@ -202,19 +202,19 @@ D. Perfect order
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Backward flows for value recovery / disposal**
-Reverse logistics is broader than returns — recalls, repair, EOL, packaging returns all count.
+Reverse logistics is broader than returns, recalls, repair, EOL, packaging returns all count.
 
 ### Q2: **C. RMA authorization**
 RMA pre-validates eligibility and triggers the label. Saves cost vs accepting any return.
 
 ### Q3: **B. Disposition decision**
-Gatekeeping = "what happens next?" — restock, refurbish, remanufacture, liquidate, recycle, destroy.
+Gatekeeping = "what happens next?", restock, refurbish, remanufacture, liquidate, recycle, destroy.
 
 ### Q4: **B. Fully disassembled and restored, new-equivalent warranty**
 Remanufactured typically comes with new-product warranty (Caterpillar Reman, OEM remanufactured parts).
 
 ### Q5: **B. Closed-loop**
-Cores returned by buyers; CAT remanufactures and resells — products cycle back through their own supply chain.
+Cores returned by buyers; CAT remanufactures and resells, products cycle back through their own supply chain.
 
 ### Q6: **B. Refuse**
 7Rs: Refuse → Reduce → Reuse → Refurbish → Recycle → Recover → Dispose.
@@ -253,7 +253,7 @@ GRI is the most widely-used voluntary sustainability reporting standard.
 CSRD (effective phased from 2024) replaces the older NFRD and applies to far more firms.
 
 ### Q18: **B. Electronic waste end-of-life**
-Waste from Electrical and Electronic Equipment directive — extended producer responsibility.
+Waste from Electrical and Electronic Equipment directive, extended producer responsibility.
 
 ### Q19: **B. Loaded return trips**
 Backhaul = revenue + emissions saved on the return leg.
@@ -280,7 +280,7 @@ Diversion rate = waste diverted (recycled/reused/composted) / total waste.
 - 22–24/24 → 🏆 Mastered Module 8.
 - 19–21/24 → ✅ Solid.
 - 15–18/24 → ⚠️ Re-read scope emissions + ISO sections.
-- <15/24 → 🔁 Restart this module — easy points to give up.
+- <15/24 → 🔁 Restart this module, easy points to give up.
 
 ---
 

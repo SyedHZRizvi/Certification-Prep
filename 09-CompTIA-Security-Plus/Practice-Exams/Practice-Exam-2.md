@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — CompTIA Security+ (SY0-701 Style)
+# 🧪 Practice Exam 2, CompTIA Security+ (SY0-701 Style)
 
 > **Conditions:** Set a 70-minute timer. 70 questions. Closed book.
 > **Pass mark:** 58/70 (~83%)
@@ -32,7 +32,7 @@ B. Prep → Detection → Containment → Eradication → Recovery → Lessons
 C. Prep → Contain → Detect → Eradicate → Lessons → Recover
 D. Lessons → Detect → Contain → Recover → Eradicate → Prep
 
-### 5. Order of volatility — MOST volatile first:
+### 5. Order of volatility, MOST volatile first:
 A. Cache/registers → RAM → temp/swap → disk → remote → physical
 B. Disk → RAM → cache → registers
 C. Disk → swap → RAM → registers
@@ -174,7 +174,7 @@ D. In use
 A. Tokens are slower
 B. Tokens are stronger
 C. Tokens use AES
-D. Tokens are reversible without a key — via a vault lookup, with no mathematical relation between token and original
+D. Tokens are reversible without a key, via a vault lookup, with no mathematical relation between token and original
 
 ### 29. Under GDPR, "anonymization" means data:
 A. Was encrypted with AES-256
@@ -502,145 +502,145 @@ D. Pass-the-hash
 
 > Every question gets why-correct and why-each-wrong, plus a one-line exam takeaway.
 
-**Q1. Answer: A — "Something you remember."** Sec+ recognizes five factors: know, have, are, do, where you are. "Remember" is not separate; it overlaps "know." **Wrong distractors:** B/C/D are all genuine Sec+ factors. **Takeaway.** Memorize the 5 official factor names exactly.
+**Q1. Answer: A, "Something you remember."** Sec+ recognizes five factors: know, have, are, do, where you are. "Remember" is not separate; it overlaps "know." **Wrong distractors:** B/C/D are all genuine Sec+ factors. **Takeaway.** Memorize the 5 official factor names exactly.
 
-**Q2. Answer: C — Log aggregation + correlation + alerting.** SIEM's core capability. **Wrong:** A (patching) is a SCCM/Intune job. B (firewall mgmt) is NSM. D (encryption at rest) is KMS/storage. **Takeaway.** SIEM = aggregate + correlate + alert.
+**Q2. Answer: C, Log aggregation + correlation + alerting.** SIEM's core capability. **Wrong:** A (patching) is a SCCM/Intune job. B (firewall mgmt) is NSM. D (encryption at rest) is KMS/storage. **Takeaway.** SIEM = aggregate + correlate + alert.
 
-**Q3. Answer: B — Orchestration + automated response via playbooks.** SOAR sits on top of SIEM to automate response. **Wrong:** A (more storage) misses the point. C (replaces SIEM) — they complement. D (replaces EDR) is wrong category. **Takeaway.** SOAR = automated response; SIEM = detection.
+**Q3. Answer: B Orchestration + automated response via playbooks.** SOAR sits on top of SIEM to automate response. **Wrong:** A (more storage) misses the point. C (replaces SIEM) they complement. D (replaces EDR) is wrong category. **Takeaway.** SOAR = automated response; SIEM = detection.
 
-**Q4. Answer: B — Prep → Detection → Containment → Eradication → Recovery → Lessons.** NIST 800-61 Rev 2 canonical order. **Wrong:** A, C, D all scramble phases. **Takeaway.** PDCERL = Prep, Detect, Contain, Eradicate, Recover, Lessons (memorize the 6 in order).
+**Q4. Answer: B, Prep → Detection → Containment → Eradication → Recovery → Lessons.** NIST 800-61 Rev 2 canonical order. **Wrong:** A, C, D all scramble phases. **Takeaway.** PDCERL = Prep, Detect, Contain, Eradicate, Recover, Lessons (memorize the 6 in order).
 
-**Q5. Answer: A — Cache/registers → RAM → temp/swap → disk → remote → physical.** Order of volatility per NIST SP 800-86; capture most volatile first. **Wrong:** All reverses or scrambles. **Takeaway.** Capture memory BEFORE shutting down.
+**Q5. Answer: A, Cache/registers → RAM → temp/swap → disk → remote → physical.** Order of volatility per NIST SP 800-86; capture most volatile first. **Wrong:** All reverses or scrambles. **Takeaway.** Capture memory BEFORE shutting down.
 
-**Q6. Answer: B — 0 to 10.** CVSS scale. **Wrong:** Other ranges invented. **Takeaway.** CVSS 0-10; 10 = critical.
+**Q6. Answer: B, 0 to 10.** CVSS scale. **Wrong:** Other ranges invented. **Takeaway.** CVSS 0-10; 10 = critical.
 
-**Q7. Answer: A — Probability of exploitation in the wild.** EPSS (Exploit Prediction Scoring System) is FIRST's complement to CVSS. **Wrong:** B (Patch status) is vendor advisory. C (CVE category) is CWE. D (Vendor link) is just a reference. **Takeaway.** CVSS = severity; EPSS = likelihood of being weaponized.
+**Q7. Answer: A, Probability of exploitation in the wild.** EPSS (Exploit Prediction Scoring System) is FIRST's complement to CVSS. **Wrong:** B (Patch status) is vendor advisory. C (CVE category) is CWE. D (Vendor link) is just a reference. **Takeaway.** CVSS = severity; EPSS = likelihood of being weaponized.
 
-**Q8. Answer: C — Actively exploited vulns; patch first.** CISA KEV catalog. **Wrong:** A (All CVEs) is NVD's job. B (Compliance) is unrelated. D (Encryption deprecations) is NIST/IETF. **Takeaway.** KEV = active exploitation; prioritize ruthlessly.
+**Q8. Answer: C, Actively exploited vulns; patch first.** CISA KEV catalog. **Wrong:** A (All CVEs) is NVD's job. B (Compliance) is unrelated. D (Encryption deprecations) is NIST/IETF. **Takeaway.** KEV = active exploitation; prioritize ruthlessly.
 
-**Q9. Answer: A — Logs in to see actual configs and packages.** Credentialed scans see ground truth. **Wrong:** B (Illegal) is false. C (Public IPs only) describes external scans. D (Skips encrypted) — irrelevant. **Takeaway.** Credentialed = authenticated = high fidelity.
+**Q9. Answer: A Logs in to see actual configs and packages.** Credentialed scans see ground truth. **Wrong:** B (Illegal) is false. C (Public IPs only) describes external scans. D (Skips encrypted) irrelevant. **Takeaway.** Credentialed = authenticated = high fidelity.
 
-**Q10. Answer: A — Connection metadata (5-tuple + byte counts).** Flow formats. **Wrong:** B (Full payloads) describes PCAP. C (Vuln assessments) wrong. D (CRLs) wrong. **Takeaway.** NetFlow/sFlow/IPFIX = metadata; PCAP = payloads.
+**Q10. Answer: A, Connection metadata (5-tuple + byte counts).** Flow formats. **Wrong:** B (Full payloads) describes PCAP. C (Vuln assessments) wrong. D (CRLs) wrong. **Takeaway.** NetFlow/sFlow/IPFIX = metadata; PCAP = payloads.
 
-**Q11. Answer: A — Include payload contents.** PCAP captures full packet contents. **Wrong:** B (Text) — PCAP is binary. C (Encryption overhead) doesn't drive size. D (More metadata) — flows have rich metadata too. **Takeaway.** PCAP = full payload = big files.
+**Q11. Answer: A Include payload contents.** PCAP captures full packet contents. **Wrong:** B (Text) PCAP is binary. C (Encryption overhead) doesn't drive size. D (More metadata), flows have rich metadata too. **Takeaway.** PCAP = full payload = big files.
 
-**Q12. Answer: B — BAA.** HIPAA Business Associate Agreement required for any vendor handling PHI. **Wrong:** A (SLA) defines uptime. C (MOU) is non-binding. D (DPA) is GDPR. **Takeaway.** HIPAA PHI vendor → BAA.
+**Q12. Answer: B, BAA.** HIPAA Business Associate Agreement required for any vendor handling PHI. **Wrong:** A (SLA) defines uptime. C (MOU) is non-binding. D (DPA) is GDPR. **Takeaway.** HIPAA PHI vendor → BAA.
 
-**Q13. Answer: D — DPA.** GDPR Data Processing Agreement required when processor handles personal data. **Wrong:** A (SLA), B (BAA = HIPAA), C (ISA = system interconnection). **Takeaway.** GDPR processor → DPA.
+**Q13. Answer: D, DPA.** GDPR Data Processing Agreement required when processor handles personal data. **Wrong:** A (SLA), B (BAA = HIPAA), C (ISA = system interconnection). **Takeaway.** GDPR processor → DPA.
 
-**Q14. Answer: D — Umbrella contract for ongoing vendor relationship.** MSA governs an entire relationship; SOWs sit beneath. **Wrong:** A (Project scope) is the SOW. B (SLA) is performance. C (Non-binding) is MOU. **Takeaway.** MSA = umbrella; SOW = project; SLA = performance.
+**Q14. Answer: D, Umbrella contract for ongoing vendor relationship.** MSA governs an entire relationship; SOWs sit beneath. **Wrong:** A (Project scope) is the SOW. B (SLA) is performance. C (Non-binding) is MOU. **Takeaway.** MSA = umbrella; SOW = project; SLA = performance.
 
-**Q15. Answer: D — Project-specific scope and deliverables under MSA.** SOW (Statement of Work). **Wrong:** A (Umbrella) is MSA. B (Performance) is SLA. C (Non-disclosure) is NDA. **Takeaway.** SOW under MSA; SLA layered on top.
+**Q15. Answer: D, Project-specific scope and deliverables under MSA.** SOW (Statement of Work). **Wrong:** A (Umbrella) is MSA. B (Performance) is SLA. C (Non-disclosure) is NDA. **Takeaway.** SOW under MSA; SLA layered on top.
 
-**Q16. Answer: D — ALE.** ALE = SLE × ARO. **Wrong:** A (EF) is exposure factor. B (AV) is asset value. C (ROI) is unrelated. **Takeaway.** ALE = SLE × ARO. Memorize.
+**Q16. Answer: D, ALE.** ALE = SLE × ARO. **Wrong:** A (EF) is exposure factor. B (AV) is asset value. C (ROI) is unrelated. **Takeaway.** ALE = SLE × ARO. Memorize.
 
-**Q17. Answer: D — $150,000.** SLE = $500k × 0.20 = $100k. ALE = $100k × 1.5 = $150k. **Wrong:** Other amounts result from wrong formulas (e.g., A would be only SLE × 0.5). **Takeaway.** Plug-and-chug SLE = AV × EF, then ALE = SLE × ARO.
+**Q17. Answer: D, $150,000.** SLE = $500k × 0.20 = $100k. ALE = $100k × 1.5 = $150k. **Wrong:** Other amounts result from wrong formulas (e.g., A would be only SLE × 0.5). **Takeaway.** Plug-and-chug SLE = AV × EF, then ALE = SLE × ARO.
 
-**Q18. Answer: A — Identify, Protect, Detect, Respond, Recover.** NIST CSF v1.0/1.1 five functions. **Wrong:** All other lists invented. **Takeaway.** NIST CSF v1 = IPDRR. v2 adds Govern → GIPDRR.
+**Q18. Answer: A, Identify, Protect, Detect, Respond, Recover.** NIST CSF v1.0/1.1 five functions. **Wrong:** All other lists invented. **Takeaway.** NIST CSF v1 = IPDRR. v2 adds Govern → GIPDRR.
 
-**Q19. Answer: A — Real-time sync (hot) vs periodic (warm).** Defining difference. **Wrong:** B (Location), C (OS), D (Vendor) don't define hot vs warm. **Takeaway.** Hot = real-time replication; warm = periodic.
+**Q19. Answer: A, Real-time sync (hot) vs periodic (warm).** Defining difference. **Wrong:** B (Location), C (OS), D (Vendor) don't define hot vs warm. **Takeaway.** Hot = real-time replication; warm = periodic.
 
-**Q20. Answer: A — 3 copies, 2 media, 1 off-site.** Veeam-popularized rule, widely adopted. **Wrong:** Other variants invented. **Takeaway.** 3-2-1: 3 copies, 2 different media types, 1 off-site (immutable strongly recommended in 2024+).
+**Q20. Answer: A, 3 copies, 2 media, 1 off-site.** Veeam-popularized rule, widely adopted. **Wrong:** Other variants invented. **Takeaway.** 3-2-1: 3 copies, 2 different media types, 1 off-site (immutable strongly recommended in 2024+).
 
-**Q21. Answer: D — Maximum acceptable downtime.** RTO defines how long the business can tolerate being down. **Wrong:** A (Data loss) is RPO. B (Retention) is policy. C (MTBF) is engineering metric. **Takeaway.** RTO = downtime; RPO = data loss.
+**Q21. Answer: D, Maximum acceptable downtime.** RTO defines how long the business can tolerate being down. **Wrong:** A (Data loss) is RPO. B (Retention) is policy. C (MTBF) is engineering metric. **Takeaway.** RTO = downtime; RPO = data loss.
 
-**Q22. Answer: A — Maximum acceptable DATA loss (in time).** RPO. **Wrong:** B is RTO. C (MTTR) is repair time. D (Throughput) is unrelated. **Takeaway.** RPO = data; RTO = time.
+**Q22. Answer: A, Maximum acceptable DATA loss (in time).** RPO. **Wrong:** B is RTO. C (MTTR) is repair time. D (Throughput) is unrelated. **Takeaway.** RPO = data; RTO = time.
 
-**Q23. Answer: B — Source code / compiled binaries statically.** SAST = Static Application Security Testing. **Wrong:** A (Running app) is DAST. C (Packets) is unrelated. D (Hardware) is wrong. **Takeaway.** SAST = static; DAST = dynamic.
+**Q23. Answer: B, Source code / compiled binaries statically.** SAST = Static Application Security Testing. **Wrong:** A (Running app) is DAST. C (Packets) is unrelated. D (Hardware) is wrong. **Takeaway.** SAST = static; DAST = dynamic.
 
-**Q24. Answer: B — The running app from outside.** DAST crawls and probes from the outside. **Wrong:** A (Source) is SAST. C (Binaries only) is partial-SAST. D (Dependencies) is SCA. **Takeaway.** DAST = black-box runtime testing.
+**Q24. Answer: B, The running app from outside.** DAST crawls and probes from the outside. **Wrong:** A (Source) is SAST. C (Binaries only) is partial-SAST. D (Dependencies) is SCA. **Takeaway.** DAST = black-box runtime testing.
 
-**Q25. Answer: A — Known-vulnerable dependencies.** SCA = Software Composition Analysis. Caught Log4Shell, etc. **Wrong:** B (Custom-code injection) is SAST. C (IDS alerts) is unrelated. D (Phishing) is email security. **Takeaway.** SCA finds vulnerable libraries by version match.
+**Q25. Answer: A, Known-vulnerable dependencies.** SCA = Software Composition Analysis. Caught Log4Shell, etc. **Wrong:** B (Custom-code injection) is SAST. C (IDS alerts) is unrelated. D (Phishing) is email security. **Takeaway.** SCA finds vulnerable libraries by version match.
 
-**Q26. Answer: B — US Executive Order 14028 for federal software.** SBOM mandate from May 2021 EO. **Wrong:** A (PCI-DSS) doesn't mandate SBOM. C (HIPAA), D (ISO 27001) don't. **Takeaway.** SBOM = EO 14028.
+**Q26. Answer: B, US Executive Order 14028 for federal software.** SBOM mandate from May 2021 EO. **Wrong:** A (PCI-DSS) doesn't mandate SBOM. C (HIPAA), D (ISO 27001) don't. **Takeaway.** SBOM = EO 14028.
 
-**Q27. Answer: D — In use.** Confidential computing protects data being processed in CPU/memory via TEEs (SGX, SEV, Nitro). **Wrong:** A (At rest) is disk encryption. B (In transit) is TLS. C (Archived) is at-rest. **Takeaway.** Confidential computing = data in use.
+**Q27. Answer: D, In use.** Confidential computing protects data being processed in CPU/memory via TEEs (SGX, SEV, Nitro). **Wrong:** A (At rest) is disk encryption. B (In transit) is TLS. C (Archived) is at-rest. **Takeaway.** Confidential computing = data in use.
 
-**Q28. Answer: D — Tokens are reversible via vault lookup, no math relation.** Definition. **Wrong:** A (Slower) is irrelevant. B (Stronger) misleading. C (Uses AES) — tokens don't necessarily use AES. **Takeaway.** Tokenization = vault lookup, no math.
+**Q28. Answer: D Tokens are reversible via vault lookup, no math relation.** Definition. **Wrong:** A (Slower) is irrelevant. B (Stronger) misleading. C (Uses AES) tokens don't necessarily use AES. **Takeaway.** Tokenization = vault lookup, no math.
 
-**Q29. Answer: B — Cannot be re-identified by reasonable means → GDPR no longer applies.** GDPR Recital 26. **Wrong:** A (AES-256) is encryption, still reversible. C (Pseudonymized) is reversible with mapping → GDPR still applies. D (Storage location) is unrelated. **Takeaway.** Anonymization = irreversible → outside GDPR. Pseudonymization = reversible → still GDPR.
+**Q29. Answer: B, Cannot be re-identified by reasonable means → GDPR no longer applies.** GDPR Recital 26. **Wrong:** A (AES-256) is encryption, still reversible. C (Pseudonymized) is reversible with mapping → GDPR still applies. D (Storage location) is unrelated. **Takeaway.** Anonymization = irreversible → outside GDPR. Pseudonymization = reversible → still GDPR.
 
-**Q30. Answer: C — Pseudonymization reversible with mapping; anonymization irreversible.** GDPR distinction. **Wrong:** A (Same) is false. B (Pseud stronger) is backwards. D (HMAC) is unrelated. **Takeaway.** Memorize the GDPR distinction — frequently tested.
+**Q30. Answer: C Pseudonymization reversible with mapping; anonymization irreversible.** GDPR distinction. **Wrong:** A (Same) is false. B (Pseud stronger) is backwards. D (HMAC) is unrelated. **Takeaway.** Memorize the GDPR distinction frequently tested.
 
-**Q31. Answer: A — Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation.** STRIDE (Kohnfelder & Garg, Microsoft, 1999). **Wrong:** Other expansions invented. **Takeaway.** STRIDE: S-T-R-I-D-E in that exact order.
+**Q31. Answer: A, Spoofing, Tampering, Repudiation, Info disclosure, DoS, Elevation.** STRIDE (Kohnfelder & Garg, Microsoft, 1999). **Wrong:** Other expansions invented. **Takeaway.** STRIDE: S-T-R-I-D-E in that exact order.
 
-**Q32. Answer: B — Secrets manager with short-lived creds.** Best practice. **Wrong:** A, C (hardcoded/checked-in) are textbook bad. D (Chat channel) is worse. **Takeaway.** Secrets → vault → short-lived tokens.
+**Q32. Answer: B, Secrets manager with short-lived creds.** Best practice. **Wrong:** A, C (hardcoded/checked-in) are textbook bad. D (Chat channel) is worse. **Takeaway.** Secrets → vault → short-lived tokens.
 
-**Q33. Answer: C — HIPAA.** PHI = Protected Health Information under HIPAA. **Wrong:** A (GLBA = financial), B (PCI = cards), D (CCPA = California consumer privacy). **Takeaway.** PHI = HIPAA.
+**Q33. Answer: C, HIPAA.** PHI = Protected Health Information under HIPAA. **Wrong:** A (GLBA = financial), B (PCI = cards), D (CCPA = California consumer privacy). **Takeaway.** PHI = HIPAA.
 
-**Q34. Answer: A — Subject to country-of-residence laws.** Definition. **Wrong:** B (Customer owns) is ownership, not sovereignty. C (Sovereign keys) is invented. D (Provider root) is wrong. **Takeaway.** Sovereignty = jurisdiction.
+**Q34. Answer: A, Subject to country-of-residence laws.** Definition. **Wrong:** B (Customer owns) is ownership, not sovereignty. C (Sovereign keys) is invented. D (Provider root) is wrong. **Takeaway.** Sovereignty = jurisdiction.
 
-**Q35. Answer: C — User copying confidential files to USB.** Endpoint DLP sees device events. **Wrong:** A (Email to Gmail) is network DLP. B (DDoS) is unrelated. D (S3 bucket) is CSPM. **Takeaway.** Endpoint DLP = USB, screen capture, print, local copy.
+**Q35. Answer: C, User copying confidential files to USB.** Endpoint DLP sees device events. **Wrong:** A (Email to Gmail) is network DLP. B (DDoS) is unrelated. D (S3 bucket) is CSPM. **Takeaway.** Endpoint DLP = USB, screen capture, print, local copy.
 
-**Q36. Answer: D — User emailing PII to Gmail.** Network DLP sees traffic. **Wrong:** A (Printed doc) needs physical/endpoint DLP. B (Typing) is unrelated. C (USB) is endpoint. **Takeaway.** Network DLP = traffic-borne exfiltration.
+**Q36. Answer: D, User emailing PII to Gmail.** Network DLP sees traffic. **Wrong:** A (Printed doc) needs physical/endpoint DLP. B (Typing) is unrelated. C (USB) is endpoint. **Takeaway.** Network DLP = traffic-borne exfiltration.
 
-**Q37. Answer: B — SSH / 22.** SFTP runs over SSH. **Wrong:** A (TLS/990) is FTPS. C (FTP/21) is plain FTP. D (SCP/873) — SCP is over SSH/22, port 873 is rsync. **Takeaway.** SFTP ≠ FTPS. SFTP = SSH/22; FTPS = TLS/990.
+**Q37. Answer: B SSH / 22.** SFTP runs over SSH. **Wrong:** A (TLS/990) is FTPS. C (FTP/21) is plain FTP. D (SCP/873) SCP is over SSH/22, port 873 is rsync. **Takeaway.** SFTP ≠ FTPS. SFTP = SSH/22; FTPS = TLS/990.
 
-**Q38. Answer: B — 636.** LDAPS = LDAP-over-TLS = 636. **Wrong:** A (389) is plain LDAP. C (443) is HTTPS. D (1812) is RADIUS. **Takeaway.** Memorize: LDAP=389, LDAPS=636.
+**Q38. Answer: B, 636.** LDAPS = LDAP-over-TLS = 636. **Wrong:** A (389) is plain LDAP. C (443) is HTTPS. D (1812) is RADIUS. **Takeaway.** Memorize: LDAP=389, LDAPS=636.
 
-**Q39. Answer: B — TCP 49.** TACACS+ standard. **Wrong:** A (UDP 1812) is RADIUS. C (TCP 443) is HTTPS. D (UDP 514) is syslog. **Takeaway.** TACACS+ = TCP 49.
+**Q39. Answer: B, TCP 49.** TACACS+ standard. **Wrong:** A (UDP 1812) is RADIUS. C (TCP 443) is HTTPS. D (UDP 514) is syslog. **Takeaway.** TACACS+ = TCP 49.
 
-**Q40. Answer: B — Email spoofing of your domain.** SPF/DKIM/DMARC trio. **Wrong:** A (SQLi), C (DDoS), D (Buffer overflow) are unrelated. **Takeaway.** Email anti-spoofing trio.
+**Q40. Answer: B, Email spoofing of your domain.** SPF/DKIM/DMARC trio. **Wrong:** A (SQLi), C (DDoS), D (Buffer overflow) are unrelated. **Takeaway.** Email anti-spoofing trio.
 
-**Q41. Answer: C — Layer 7 (HTTP/S).** WAF = application-layer firewall. **Wrong:** A (L2), B (L3), D (L1) are wrong layers. **Takeaway.** WAF = L7.
+**Q41. Answer: C, Layer 7 (HTTP/S).** WAF = application-layer firewall. **Wrong:** A (L2), B (L3), D (L1) are wrong layers. **Takeaway.** WAF = L7.
 
-**Q42. Answer: B — IDS detects/alerts; IPS detects/blocks (inline).** Primary difference. **Wrong:** A (host vs network) is HIDS/NIDS distinction. C (sig vs anomaly) — both can use either. D (cloud-only) is wrong. **Takeaway.** IDS = passive; IPS = inline.
+**Q42. Answer: B IDS detects/alerts; IPS detects/blocks (inline).** Primary difference. **Wrong:** A (host vs network) is HIDS/NIDS distinction. C (sig vs anomaly) both can use either. D (cloud-only) is wrong. **Takeaway.** IDS = passive; IPS = inline.
 
-**Q43. Answer: D — Attacker's AP impersonates a legit SSID.** Evil twin. **Wrong:** A (Worm pair) invented. B (Bluetooth) is bluejacking et al. C (Jamming) is RF. **Takeaway.** Evil twin = impersonation; rogue AP = unauthorized but not necessarily impersonating.
+**Q43. Answer: D, Attacker's AP impersonates a legit SSID.** Evil twin. **Wrong:** A (Worm pair) invented. B (Bluetooth) is bluejacking et al. C (Jamming) is RF. **Takeaway.** Evil twin = impersonation; rogue AP = unauthorized but not necessarily impersonating.
 
-**Q44. Answer: B — PPTP.** Cryptographically broken (MS-CHAPv2 ChapCrack 2012). **Wrong:** A (IKEv2), C (WireGuard), D (OpenVPN) are all modern/acceptable. **Takeaway.** PPTP = always wrong on Sec+.
+**Q44. Answer: B, PPTP.** Cryptographically broken (MS-CHAPv2 ChapCrack 2012). **Wrong:** A (IKEv2), C (WireGuard), D (OpenVPN) are all modern/acceptable. **Takeaway.** PPTP = always wrong on Sec+.
 
-**Q45. Answer: C — Entire original IP packet.** IPSec Tunnel mode wraps the whole original packet. **Wrong:** A (Payload only) is Transport mode. B (Headers only) is meaningless. D (TCP handshake) is wrong. **Takeaway.** Tunnel = whole packet; Transport = payload only.
+**Q45. Answer: C, Entire original IP packet.** IPSec Tunnel mode wraps the whole original packet. **Wrong:** A (Payload only) is Transport mode. B (Headers only) is meaningless. D (TCP handshake) is wrong. **Takeaway.** Tunnel = whole packet; Transport = payload only.
 
-**Q46. Answer: D — Behavioral telemetry, threat hunting, rollback, response actions.** EDR's value-add over AV. **Wrong:** A (More signatures) is incremental AV. B (Hardware) wrong. C (Faster) is wrong angle. **Takeaway.** EDR = behavior + telemetry + response.
+**Q46. Answer: D, Behavioral telemetry, threat hunting, rollback, response actions.** EDR's value-add over AV. **Wrong:** A (More signatures) is incremental AV. B (Hardware) wrong. C (Faster) is wrong angle. **Takeaway.** EDR = behavior + telemetry + response.
 
-**Q47. Answer: C — Correlates endpoint, network, cloud, email telemetry.** XDR = extended detection. **Wrong:** A (More endpoints) misses the point. B (Replaces firewall) wrong. D (Encryption) wrong. **Takeaway.** XDR extends across data sources.
+**Q47. Answer: C, Correlates endpoint, network, cloud, email telemetry.** XDR = extended detection. **Wrong:** A (More endpoints) misses the point. B (Replaces firewall) wrong. D (Encryption) wrong. **Takeaway.** XDR extends across data sources.
 
-**Q48. Answer: C — Guest OS, app, data, network configs in VM.** IaaS customer responsibility. **Wrong:** A (Hypervisor), B (Facility), D (Hardware) are provider's responsibility. **Takeaway.** IaaS: customer owns inside-the-VM; provider owns the platform.
+**Q48. Answer: C, Guest OS, app, data, network configs in VM.** IaaS customer responsibility. **Wrong:** A (Hypervisor), B (Facility), D (Hardware) are provider's responsibility. **Takeaway.** IaaS: customer owns inside-the-VM; provider owns the platform.
 
-**Q49. Answer: C — Customer misconfiguration (shared responsibility).** Customer owns S3 bucket policy. **Wrong:** A (AWS's fault) is false. B (Networking) wrong. D (ISO) is unrelated to attribution. **Takeaway.** Customer bucket config = customer's responsibility, period.
+**Q49. Answer: C, Customer misconfiguration (shared responsibility).** Customer owns S3 bucket policy. **Wrong:** A (AWS's fault) is false. B (Networking) wrong. D (ISO) is unrelated to attribution. **Takeaway.** Customer bucket config = customer's responsibility, period.
 
-**Q50. Answer: A — Sits between users and cloud apps; enforces policy; discovers shadow IT.** CASB definition. **Wrong:** B (Hosts sites), C (EDR), D (Replaces SIEM) all wrong category. **Takeaway.** CASB = SaaS broker.
+**Q50. Answer: A, Sits between users and cloud apps; enforces policy; discovers shadow IT.** CASB definition. **Wrong:** B (Hosts sites), C (EDR), D (Replaces SIEM) all wrong category. **Takeaway.** CASB = SaaS broker.
 
-**Q51. Answer: B — Continuously audits cloud configs against best practices.** CSPM. **Wrong:** A (EDR), C (TLS certs), D (Mobile mgmt) are wrong categories. **Takeaway.** CSPM = config posture.
+**Q51. Answer: B, Continuously audits cloud configs against best practices.** CSPM. **Wrong:** A (EDR), C (TLS certs), D (Mobile mgmt) are wrong categories. **Takeaway.** CSPM = config posture.
 
-**Q52. Answer: A — Host OS kernel.** Containers share host kernel; a kernel exploit escapes the container. **Wrong:** B (Hypervisor) is VM. C (CPU only) is incomplete. D (Separate kernel) is wrong — that's a VM. **Takeaway.** Container = shared kernel; VM = separate kernel.
+**Q52. Answer: A Host OS kernel.** Containers share host kernel; a kernel exploit escapes the container. **Wrong:** B (Hypervisor) is VM. C (CPU only) is incomplete. D (Separate kernel) is wrong that's a VM. **Takeaway.** Container = shared kernel; VM = separate kernel.
 
-**Q53. Answer: D — Long lifecycles, limited patching, proprietary protocols.** SCADA reality. **Wrong:** A (Monthly patches) wrong. B (Kerberos) is enterprise IT. C (Public cloud only) wrong. **Takeaway.** SCADA = legacy + brittle + segmented.
+**Q53. Answer: D, Long lifecycles, limited patching, proprietary protocols.** SCADA reality. **Wrong:** A (Monthly patches) wrong. B (Kerberos) is enterprise IT. C (Public cloud only) wrong. **Takeaway.** SCADA = legacy + brittle + segmented.
 
-**Q54. Answer: D — Segmentation, jump server, monitoring, restricted access.** Compensating controls for unpatchable PLC. **Wrong:** A (Reimage) doesn't fix patch absence. B (Corp Wi-Fi) adds risk. C (AV on PLC) doesn't work on RTOS. **Takeaway.** ICS compensating controls = segmentation + jump + monitor + restrict.
+**Q54. Answer: D, Segmentation, jump server, monitoring, restricted access.** Compensating controls for unpatchable PLC. **Wrong:** A (Reimage) doesn't fix patch absence. B (Corp Wi-Fi) adds risk. C (AV on PLC) doesn't work on RTOS. **Takeaway.** ICS compensating controls = segmentation + jump + monitor + restrict.
 
-**Q55. Answer: B — SMS-based OTP.** SIM swap intercepts SMS. **Wrong:** A (FIDO2) is phishing-resistant. C (TOTP) uses local seed. D (Biometrics) is local. **Takeaway.** SIM swap defeats SMS MFA.
+**Q55. Answer: B, SMS-based OTP.** SIM swap intercepts SMS. **Wrong:** A (FIDO2) is phishing-resistant. C (TOTP) uses local seed. D (Biometrics) is local. **Takeaway.** SIM swap defeats SMS MFA.
 
-**Q56. Answer: A — Unifying mobile + laptop + desktop + IoT.** UEM consolidates. **Wrong:** B (iOS only), C (Open source), D (Free) all wrong. **Takeaway.** UEM = unified across device types.
+**Q56. Answer: A, Unifying mobile + laptop + desktop + IoT.** UEM consolidates. **Wrong:** B (iOS only), C (Open source), D (Free) all wrong. **Takeaway.** UEM = unified across device types.
 
-**Q57. Answer: C — MAM.** Mobile Application Management enables selective wipe of corp data only. **Wrong:** A (MDM) wipes the whole device. B (Hardware) wrong. D (CASB) wrong. **Takeaway.** Selective wipe = MAM.
+**Q57. Answer: C, MAM.** Mobile Application Management enables selective wipe of corp data only. **Wrong:** A (MDM) wipes the whole device. B (Hardware) wrong. D (CASB) wrong. **Takeaway.** Selective wipe = MAM.
 
-**Q58. Answer: C — Tamper-resistant generation and storage of crypto keys.** HSM = Hardware Security Module. **Wrong:** A (Backup storage) wrong. B (Replaces TPM) — they're complementary. D (Web hosting) wrong. **Takeaway.** HSM = enterprise tamper-resistant key store.
+**Q58. Answer: C Tamper-resistant generation and storage of crypto keys.** HSM = Hardware Security Module. **Wrong:** A (Backup storage) wrong. B (Replaces TPM) they're complementary. D (Web hosting) wrong. **Takeaway.** HSM = enterprise tamper-resistant key store.
 
-**Q59. Answer: C — Integrity and publisher authenticity.** Code signing assures consumers. **Wrong:** A (Encryption at rest) wrong. B (Faster builds) irrelevant. D (Smaller artifacts) irrelevant. **Takeaway.** Code signing = integrity + authenticity.
+**Q59. Answer: C, Integrity and publisher authenticity.** Code signing assures consumers. **Wrong:** A (Encryption at rest) wrong. B (Faster builds) irrelevant. D (Smaller artifacts) irrelevant. **Takeaway.** Code signing = integrity + authenticity.
 
-**Q60. Answer: C — Traditional VPN for application access.** ZTNA replaces broad-network VPN with per-app identity-aware access. **Wrong:** A (SAML) is auth. B (PKI) is foundational. D (CSPM) is cloud config. **Takeaway.** ZTNA replaces VPN for app access.
+**Q60. Answer: C, Traditional VPN for application access.** ZTNA replaces broad-network VPN with per-app identity-aware access. **Wrong:** A (SAML) is auth. B (PKI) is foundational. D (CSPM) is cloud config. **Takeaway.** ZTNA replaces VPN for app access.
 
-**Q61. Answer: D — Govern.** CSF 2.0 (Feb 2024) added Govern. **Wrong:** A, B, C all existed in v1. **Takeaway.** v1 = IPDRR (5); v2 = GIPDRR (6).
+**Q61. Answer: D, Govern.** CSF 2.0 (Feb 2024) added Govern. **Wrong:** A, B, C all existed in v1. **Takeaway.** v1 = IPDRR (5); v2 = GIPDRR (6).
 
-**Q62. Answer: C — Independent auditor's formal statement.** SOC 2 Type II is exemplar. **Wrong:** A (Self-assessment) lacks independence. B (Vuln report) is technical. D (Pen test) is technical. **Takeaway.** Attestation = independent auditor's statement.
+**Q62. Answer: C, Independent auditor's formal statement.** SOC 2 Type II is exemplar. **Wrong:** A (Self-assessment) lacks independence. B (Vuln report) is technical. D (Pen test) is technical. **Takeaway.** Attestation = independent auditor's statement.
 
-**Q63. Answer: A — Discussion-based walkthrough.** Tabletop = talked through, no live systems. **Wrong:** B (Live failover) is parallel/full-interruption. C (Red team) is technical attack simulation. D (Automated playbook) is SOAR. **Takeaway.** Tabletop = discussion only.
+**Q63. Answer: A, Discussion-based walkthrough.** Tabletop = talked through, no live systems. **Wrong:** B (Live failover) is parallel/full-interruption. C (Red team) is technical attack simulation. D (Automated playbook) is SOAR. **Takeaway.** Tabletop = discussion only.
 
-**Q64. Answer: D — Tabletop → Walkthrough → Simulation → Parallel → Full-interruption.** Risk-ascending order. **Wrong:** Other orderings scramble. **Takeaway.** Least to most risky = T→W→S→P→F.
+**Q64. Answer: D, Tabletop → Walkthrough → Simulation → Parallel → Full-interruption.** Risk-ascending order. **Wrong:** Other orderings scramble. **Takeaway.** Least to most risky = T→W→S→P→F.
 
-**Q65. Answer: A — Web/DMZ, DB/Secure, Workstations/Internal, Jump/Management.** Classic layered architecture. **Wrong:** B/C/D all misplace systems. **Takeaway.** Public-facing → DMZ; backend → Secure; users → Internal; admin → Management.
+**Q65. Answer: A, Web/DMZ, DB/Secure, Workstations/Internal, Jump/Management.** Classic layered architecture. **Wrong:** B/C/D all misplace systems. **Takeaway.** Public-facing → DMZ; backend → Secure; users → Internal; admin → Management.
 
-**Q66. Answer: A — Open redirect, Fileless/LOLBin, C2 beaconing, Password spraying.** Each indicator → its attack. **Wrong:** B confuses (a) and (c). C confuses (a)/(c). D substitutes wrong attacks. **Takeaway.** PBQ matching — learn the indicator-to-attack lookup table.
+**Q66. Answer: A Open redirect, Fileless/LOLBin, C2 beaconing, Password spraying.** Each indicator → its attack. **Wrong:** B confuses (a) and (c). C confuses (a)/(c). D substitutes wrong attacks. **Takeaway.** PBQ matching learn the indicator-to-attack lookup table.
 
-**Q67. Answer: A — Scope → Memory → Isolate → Wipe → Restore → Update playbook.** NIST IR phases: D&A → Containment → Eradication → Recovery → Lessons. **Wrong:** Other orderings violate the lifecycle. **Takeaway.** Always determine scope and capture volatile evidence *before* containment that changes state.
+**Q67. Answer: A, Scope → Memory → Isolate → Wipe → Restore → Update playbook.** NIST IR phases: D&A → Containment → Eradication → Recovery → Lessons. **Wrong:** Other orderings violate the lifecycle. **Takeaway.** Always determine scope and capture volatile evidence *before* containment that changes state.
 
-**Q68. Answer: A — (i) SOW under MSA, (ii) DPA, (iii) PCI/BAA, (iv) MOU.** **Wrong:** B substitutes NDA/MOU/SLA. C swaps ISA/BAA/DPA. D treats all as MSAs. **Takeaway.** Match contract type to relationship: ongoing → MSA; project → SOW; GDPR → DPA; HIPAA → BAA; non-binding → MOU; system interconnection → ISA.
+**Q68. Answer: A, (i) SOW under MSA, (ii) DPA, (iii) PCI/BAA, (iv) MOU.** **Wrong:** B substitutes NDA/MOU/SLA. C swaps ISA/BAA/DPA. D treats all as MSAs. **Takeaway.** Match contract type to relationship: ongoing → MSA; project → SOW; GDPR → DPA; HIPAA → BAA; non-binding → MOU; system interconnection → ISA.
 
-**Q69. Answer: C — SQLi → Admin panel → jQuery.** Auth-bypass on login is worst; admin panel is direct privileged access; old jQuery is mostly client-side. **Wrong:** A, B, D scramble priority. **Takeaway.** Rank vulns by *blast radius if exploited*.
+**Q69. Answer: C, SQLi → Admin panel → jQuery.** Auth-bypass on login is worst; admin panel is direct privileged access; old jQuery is mostly client-side. **Wrong:** A, B, D scramble priority. **Takeaway.** Rank vulns by *blast radius if exploited*.
 
-**Q70. Answer: B — DNS tunneling.** High-rate DNS to random subdomains of attacker-controlled domain = textbook DNS tunneling for exfiltration/C2. **Wrong:** A (DDoS) wrong direction (outbound). C (ARP) is local. D (PtH) is auth. **Takeaway.** High-rate random-subdomain DNS to attacker domain = tunneling.
+**Q70. Answer: B, DNS tunneling.** High-rate DNS to random subdomains of attacker-controlled domain = textbook DNS tunneling for exfiltration/C2. **Wrong:** A (DDoS) wrong direction (outbound). C (ARP) is local. D (PtH) is auth. **Takeaway.** High-rate random-subdomain DNS to attacker domain = tunneling.
 
 ---
 
@@ -648,8 +648,8 @@ D. Pass-the-hash
 
 | Score | Verdict |
 |-------|---------|
-| 65–70 | 🏆 Excellent — Final Mock next |
-| 58–64 | ✅ Solid — review wrong answers, then Final Mock |
+| 65–70 | 🏆 Excellent, Final Mock next |
+| 58–64 | ✅ Solid, review wrong answers, then Final Mock |
 | 50–57 | ⚠️ Re-study weak modules; redo this exam in 1 week |
 | <50 | 🔁 Revisit weak domains in full |
 

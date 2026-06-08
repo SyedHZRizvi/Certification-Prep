@@ -1,6 +1,6 @@
 # Module 2: Prompt Engineering with Claude ✍️
 
-> **Why this module matters:** Two engineers, same Claude model, same problem. One gets 92% accuracy and 600-token answers; the other gets 71% accuracy and 2,400-token answers and a confused user. The difference is not the model. It is the prompt. This module is the *Claude-specific* version of the prompting craft — the part that will not transfer cleanly from ChatGPT-style prompting and that you will be tested on cold.
+> **Why this module matters:** Two engineers, same Claude model, same problem. One gets 92% accuracy and 600-token answers; the other gets 71% accuracy and 2,400-token answers and a confused user. The difference is not the model. It is the prompt. This module is the *Claude-specific* version of the prompting craft, the part that will not transfer cleanly from ChatGPT-style prompting and that you will be tested on cold.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1's material (model tiers, when to pick which, the safety profile)
@@ -11,16 +11,16 @@
 
 ## 📖 A Story: The Schema That Saved a Startup
 
-Maya runs ML at a 12-person legal-tech startup in Austin. Her product extracts structured data from 200-page commercial leases — landlord, tenant, term, base rent, escalations, exclusive-use clauses, OFAC reps, termination triggers. The customer pays $0.85 per lease and the company barely breaks even. The model is GPT-4 Turbo, the prompt is 600 lines of "please return JSON with these fields," and the extraction is *correct 73% of the time*. Customers re-keying the wrong 27% by hand is the bottleneck.
+Maya runs ML at a 12-person legal-tech startup in Austin. Her product extracts structured data from 200-page commercial leases, landlord, tenant, term, base rent, escalations, exclusive-use clauses, OFAC reps, termination triggers. The customer pays $0.85 per lease and the company barely breaks even. The model is GPT-4 Turbo, the prompt is 600 lines of "please return JSON with these fields," and the extraction is *correct 73% of the time*. Customers re-keying the wrong 27% by hand is the bottleneck.
 
 Maya's intern, Devon, ports the same prompt to Claude 3.5 Sonnet on a Tuesday afternoon. Same prompt, same lease, same JSON schema. Accuracy comes in at 81%. Progress, but not the leap Maya needs.
 
-On Wednesday, Devon reads the *Anthropic prompt engineering docs* — really reads them — and rewrites the prompt using Claude's preferred conventions:
+On Wednesday, Devon reads the *Anthropic prompt engineering docs* really reads them and rewrites the prompt using Claude's preferred conventions:
 
 - Wraps the lease text in `<lease_document>` tags
 - Wraps three reference examples in `<examples>` with each example wrapped in `<example>` tags
 - Moves the JSON schema spec into the **system prompt** rather than the user message
-- Uses **prefill** — starts Claude's response with `{` so the model commits to JSON from token one
+- Uses **prefill**, starts Claude's response with `{` so the model commits to JSON from token one
 - Adds `stop_sequences=["```"]` so the model knows when to stop
 
 Accuracy jumps to **94%**. The same model, the same lease, just *prompted the way Claude likes to be prompted*. Three months later Maya raises a Series A; the deck cites the extraction accuracy number.
@@ -61,9 +61,9 @@ The Messages API exposes these as `system`, `messages: [{role: "user", content: 
 
 ---
 
-## 🏷️ XML Tags — Claude's Native Structural Language
+## 🏷️ XML Tags, Claude's Native Structural Language
 
-Why XML and not Markdown or JSON? Because Claude was trained on enormous amounts of code and structured text in which XML/SGML-style tagging is the universal grammar for "this piece of text is *of this role*." Anthropic has repeatedly documented that Claude pays *strong attention* to XML tags as delimiters — significantly more so than to bare Markdown headings.
+Why XML and not Markdown or JSON? Because Claude was trained on enormous amounts of code and structured text in which XML/SGML-style tagging is the universal grammar for "this piece of text is *of this role*." Anthropic has repeatedly documented that Claude pays *strong attention* to XML tags as delimiters, significantly more so than to bare Markdown headings.
 
 ### The standard tag vocabulary (community-converged)
 
@@ -125,7 +125,7 @@ This style is the closest you will get to a "default good prompt" in Claude.
 
 ---
 
-## 🎬 System Prompt vs User Message — What Goes Where
+## 🎬 System Prompt vs User Message, What Goes Where
 
 A common mistake from OpenAI veterans is dumping everything into the user message because "the model reads it all." Anthropic explicitly tunes Claude to **treat the system prompt as the source of stable role/constraint information** and the user message as the variable, per-turn payload.
 
@@ -154,7 +154,7 @@ A common mistake from OpenAI veterans is dumping everything into the user messag
 
 ---
 
-## 📚 Examples First — Few-Shot the Right Way
+## 📚 Examples First, Few-Shot the Right Way
 
 Claude responds extremely well to in-context examples. Few-shot prompting is not optional polish; it is the most reliable single technique for moving accuracy 5–15 percentage points on structured tasks.
 
@@ -207,11 +207,11 @@ Produce the output:
 | **For classification, include an "I don't know" / "unknown" example** | Or the model will not learn it is allowed to abstain |
 | **Order matters** | Put the most "canonical" example first; the model leans on early examples |
 
-🚨 **Trap on the exam:** *"Claude does not benefit from few-shot examples because it has read the entire internet."* — FALSE. In-context examples are still the single most accuracy-improving lever after a clean system prompt.
+🚨 **Trap on the exam:** *"Claude does not benefit from few-shot examples because it has read the entire internet."*, FALSE. In-context examples are still the single most accuracy-improving lever after a clean system prompt.
 
 ---
 
-## ⏪ Prefill — The Underused Superpower
+## ⏪ Prefill, The Underused Superpower
 
 Prefill is the most underrated Claude technique. You tell Claude what the *first characters of its response* will be. Claude continues from there.
 
@@ -233,9 +233,9 @@ LLMs are trained to continue text. If you give Claude `{ "name":` as the start o
 ### Caveats
 
 - Prefill is only available via the **Messages API**, by sending an `assistant` role message *as the last item in the messages list*, with the prefilled text as its content.
-- It does **not** work via the Anthropic Workbench chat UI by default — you must use the API or the "raw" mode.
+- It does **not** work via the Anthropic Workbench chat UI by default, you must use the API or the "raw" mode.
 - Whatever you prefill **counts as output tokens** and is billed accordingly.
-- Be careful with whitespace — `{\n` and `{ ` and `{` behave subtly differently.
+- Be careful with whitespace, `{\n` and `{ ` and `{` behave subtly differently.
 
 ```python
 # Python SDK example of prefill
@@ -256,7 +256,7 @@ response = client.messages.create(
 
 ---
 
-## 🛑 Stop Sequences — Knowing When to Quit
+## 🛑 Stop Sequences, Knowing When to Quit
 
 `stop_sequences` is a list of strings; if Claude generates any of them, generation terminates immediately and that string is NOT included in the output.
 
@@ -274,7 +274,7 @@ response = client.messages.create(
 - The stop sequence itself does **not** appear in the response (this often confuses people)
 - You can pass up to ~4 stop sequences in a single call
 - Stop sequences are **case-sensitive**
-- A stop sequence triggering causes the response's `stop_reason` field to be `"stop_sequence"` — useful for assertions
+- A stop sequence triggering causes the response's `stop_reason` field to be `"stop_sequence"`, useful for assertions
 
 ```python
 response = client.messages.create(
@@ -283,7 +283,7 @@ response = client.messages.create(
     messages=[{"role": "user", "content": "Write a Python factorial function:\n```python\n"}],
     stop_sequences=["```"]
 )
-# Returned text is the function body only — clean Markdown stripped automatically
+# Returned text is the function body only, clean Markdown stripped automatically
 ```
 
 ---
@@ -317,12 +317,12 @@ No, the math is incorrect. 3 + 4 * (5 - 2) = 15, not 21.
 </answer>
 ```
 
-This is the foundation of Claude 4's "extended thinking" mode (sometimes a runtime flag, sometimes a prompt convention) — give the model space and structure for reasoning.
+This is the foundation of Claude 4's "extended thinking" mode (sometimes a runtime flag, sometimes a prompt convention), give the model space and structure for reasoning.
 
 ### Best practices
 
 - Always **parse out the `<answer>` block** in your application; do not surface `<thinking>` to end users by default
-- For latency-sensitive UIs, scratchpad has cost (more tokens) and latency (more generation) — weigh it
+- For latency-sensitive UIs, scratchpad has cost (more tokens) and latency (more generation), weigh it
 - Combine with prefill: prefill `<thinking>\n` to guarantee the model starts in the right structure
 
 🎯 **Exam pattern:** *"What is the most reliable technique to improve Claude's multi-step reasoning accuracy?"* → **Provide a `<thinking>` scratchpad block before the final answer.**
@@ -347,27 +347,27 @@ Engineers coming from OpenAI often miss these differences.
 ### What does NOT transfer
 
 - **"Act as X"** still works but is weaker than a clean role-statement in the system prompt
-- **"You MUST output JSON. Do not include prose."** — Claude often gives you a small preamble despite this, **unless you prefill `{`**
-- **Long lists of "DO NOTs"** — often less effective than positive statements ("Always respond with...")
+- **"You MUST output JSON. Do not include prose."**, Claude often gives you a small preamble despite this, **unless you prefill `{`**
+- **Long lists of "DO NOTs"**, often less effective than positive statements ("Always respond with...")
 
-🚨 **Trap on the exam:** *"Claude requires the prompt to start with 'Human:' and 'Assistant:' markers."* — FALSE. That was the *old* completions API (pre-Messages, retired). The Messages API uses `system` + `messages: [{role, content}]`.
+🚨 **Trap on the exam:** *"Claude requires the prompt to start with 'Human:' and 'Assistant:' markers."*, FALSE. That was the *old* completions API (pre-Messages, retired). The Messages API uses `system` + `messages: [{role, content}]`.
 
 ---
 
-## 📖 Anthropic's "10 Tips" — The Official Playbook
+## 📖 Anthropic's "10 Tips", The Official Playbook
 
 Anthropic publishes a [prompt engineering guide](https://docs.anthropic.com/claude/docs/prompt-engineering) with concrete tips. Internalize all of these.
 
-1. **Be clear, direct, and detailed** — say exactly what you want. Treat Claude like a brilliant new hire who needs explicit context.
-2. **Use XML tags** — structure your inputs.
-3. **Give Claude a role (in the system prompt)** — "You are a senior tax attorney specializing in S-corp filings..." consistently outperforms generic phrasing.
-4. **Use examples (few-shot)** — wrap them in `<examples>`.
-5. **Let Claude think (chain of thought)** — `<thinking>` scratchpad.
-6. **Prefill the response** — force structure from token one.
-7. **Chain prompts** — for complex flows, split into multiple turns rather than one giant prompt.
-8. **Long context tips** — when stuffing 100K+ tokens of documents, place the *question* AFTER the documents, not before, and use XML to delineate each document.
-9. **Avoid hallucination** — explicitly tell Claude "if you don't know, say so" and "only use information from the documents in `<document>` tags."
-10. **Iterate with Claude on the prompt itself** — Anthropic's "prompt generator" tool in Workbench can take your high-level intent and produce a structured prompt; then you edit.
+1. **Be clear, direct, and detailed**, say exactly what you want. Treat Claude like a brilliant new hire who needs explicit context.
+2. **Use XML tags**, structure your inputs.
+3. **Give Claude a role (in the system prompt)**, "You are a senior tax attorney specializing in S-corp filings..." consistently outperforms generic phrasing.
+4. **Use examples (few-shot)**, wrap them in `<examples>`.
+5. **Let Claude think (chain of thought)**, `<thinking>` scratchpad.
+6. **Prefill the response**, force structure from token one.
+7. **Chain prompts**, for complex flows, split into multiple turns rather than one giant prompt.
+8. **Long context tips**, when stuffing 100K+ tokens of documents, place the *question* AFTER the documents, not before, and use XML to delineate each document.
+9. **Avoid hallucination**, explicitly tell Claude "if you don't know, say so" and "only use information from the documents in `<document>` tags."
+10. **Iterate with Claude on the prompt itself**, Anthropic's "prompt generator" tool in Workbench can take your high-level intent and produce a structured prompt; then you edit.
 
 ---
 
@@ -423,7 +423,7 @@ Long context is not a substitute for retrieval. If you have 5M tokens of corpus 
 | "Claude can't reason without explicit chain-of-thought." | It can, but structured `<thinking>` reliably improves accuracy. |
 | "'Human:' / 'Assistant:' markers are still required." | Retired with the deprecated Completions API. Messages API uses roles. |
 | "The longer the context, the better Claude reasons." | Long context introduces recency bias; place the question after the data. |
-| "JSON mode is enabled by a flag." | Claude does not have a separate "JSON mode" flag — you use prompts + prefill + schema description. |
+| "JSON mode is enabled by a flag." | Claude does not have a separate "JSON mode" flag, you use prompts + prefill + schema description. |
 
 ---
 
@@ -447,19 +447,19 @@ Long context is not a substitute for retrieval. If you have 5M tokens of corpus 
 
 ---
 
-## 📊 Case Study — Notion AI and the Prompt Caching Pivot
+## 📊 Case Study, Notion AI and the Prompt Caching Pivot
 
 **Situation.** Notion shipped Notion AI in early 2023 to its >30M user base. The product writes, summarizes, brainstorms, and translates within Notion docs. By 2024 they had millions of monthly active users hitting LLM APIs.
 
-**The challenge.** Notion's prompts share a large common prefix: workspace context, formatting guidance, a 6K-token system prompt teaching the model Notion-specific block conventions (mention blocks, toggle lists, database properties). Without caching, every single AI-assisted edit re-billed the entire prefix — turning the unit economics into a serving-cost nightmare at scale.
+**The challenge.** Notion's prompts share a large common prefix: workspace context, formatting guidance, a 6K-token system prompt teaching the model Notion-specific block conventions (mention blocks, toggle lists, database properties). Without caching, every single AI-assisted edit re-billed the entire prefix, turning the unit economics into a serving-cost nightmare at scale.
 
-**The Anthropic-side move.** When Anthropic shipped prompt caching (mid-2024), Notion was an early adopter — restructuring their prompts so that the stable Notion-specific scaffolding sat *first* in the system prompt and the per-document variable content sat *last*. Their published numbers (from a 2024 Anthropic case-study blog post) reported a **~85% reduction in input token costs** on the cached portion. For a feature serving millions of requests/day, this was the difference between feature profitability and not.
+**The Anthropic-side move.** When Anthropic shipped prompt caching (mid-2024), Notion was an early adopter, restructuring their prompts so that the stable Notion-specific scaffolding sat *first* in the system prompt and the per-document variable content sat *last*. Their published numbers (from a 2024 Anthropic case-study blog post) reported a **~85% reduction in input token costs** on the cached portion. For a feature serving millions of requests/day, this was the difference between feature profitability and not.
 
 **The prompt structure (paraphrased from the public writeup).**
 
 ```text
 SYSTEM:
-[6K tokens — Notion block grammar, mention syntax, formatting rules,
+[6K tokens, Notion block grammar, mention syntax, formatting rules,
  brand voice, common pitfalls] <-- cached
 
 USER:
@@ -476,14 +476,14 @@ ASSISTANT (prefill):
 ```
 
 **Lesson for the architect.**
-- **Prompt structure is unit economics.** A 6K-token system prompt cached at 90% is the difference between $0.018/call and $0.003/call — at millions of calls/day, this funds entire engineering teams.
+- **Prompt structure is unit economics.** A 6K-token system prompt cached at 90% is the difference between $0.018/call and $0.003/call, at millions of calls/day, this funds entire engineering teams.
 - **Cacheable content must be at the start of the prompt** because cache hits are evaluated on the prefix.
 - **Restructuring is cheap. Re-architecting is not.** Notion's win came from prompt restructuring; the API contract did not change.
 
 **Discussion (Socratic).**
 - **Q1:** Why does cache attach to the *prefix* (not the suffix)? Hint: think about how transformer attention is computed.
 - **Q2:** Your team caches a 5K-token system prompt at 5 req/sec across 30 days. The cache TTL is 5 minutes. Estimate how often the cache is being warmed vs hit, and the resulting effective discount.
-- **Q3:** If Notion added a user-level personalization paragraph to the system prompt (changing it per user), what is the smallest change that preserves the most caching? Hint: structure as `[stable corp scaffolding] [user-specific block]` — what happens to the cache prefix?
+- **Q3:** If Notion added a user-level personalization paragraph to the system prompt (changing it per user), what is the smallest change that preserves the most caching? Hint: structure as `[stable corp scaffolding] [user-specific block]`, what happens to the cache prefix?
 
 ---
 
@@ -491,22 +491,22 @@ ASSISTANT (prefill):
 
 You now know:
 
-- 🧱 **The anatomy of a Claude prompt** — system, user, prefill, stop sequences
+- 🧱 **The anatomy of a Claude prompt**, system, user, prefill, stop sequences
 - 🏷️ **XML tags** as Claude's native structural language
 - 📚 **Few-shot patterns** wrapped in `<examples>` / `<example>` with edge cases
-- ⏪ **Prefill** — the underused superpower for forcing output discipline
+- ⏪ **Prefill**, the underused superpower for forcing output discipline
 - 🧪 **Chain-of-thought** / scratchpad reasoning with `<thinking>` blocks
-- 🆚 **Claude vs OpenAI conventions** — what transfers and what does not
+- 🆚 **Claude vs OpenAI conventions**, what transfers and what does not
 - 📖 Anthropic's **10 official tips** for prompting Claude
 - 🧬 **Long-context-specific** tactics (question at the end, citation discipline)
 - 📊 **Notion AI's prompt caching restructure** as a real-world case study
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
 4. 🛠️ **Hands-on:** open the [Anthropic Workbench](https://console.anthropic.com/workbench), paste a prompt you wrote at work, and apply XML tagging + prefill. Notice the difference.
-5. ➡️ Move on: [Module 3 — Claude API & SDK Deep Dive](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md)
+5. ➡️ Move on: [Module 3, Claude API & SDK Deep Dive](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 3](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md) shows how to *send* these prompts via the Messages API. [Module 4](../Module-04-Tool-Use-Function-Calling/Reading.md) extends prompts into tool definitions. [Module 7](../Module-07-RAG-Long-Context/Reading.md) returns to long-context prompting in depth.
@@ -525,6 +525,6 @@ You now know:
 - 📄 Brown et al. (2020). [*Language Models are Few-Shot Learners*](https://arxiv.org/abs/2005.14165). The few-shot paper.
 
 **Practitioner / community:**
-- 📖 [PromptingGuide.ai](https://www.promptingguide.ai/) — DAIR.AI's open prompt engineering encyclopedia
-- 📖 [LearnPrompting.org](https://learnprompting.org/) — full free course; Anthropic chapter is excellent
+- 📖 [PromptingGuide.ai](https://www.promptingguide.ai/), DAIR.AI's open prompt engineering encyclopedia
+- 📖 [LearnPrompting.org](https://learnprompting.org/), full free course; Anthropic chapter is excellent
 - 📺 Anthropic-hosted prompt engineering workshops on YouTube

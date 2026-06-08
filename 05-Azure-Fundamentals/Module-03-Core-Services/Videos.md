@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: Core Azure Services
 
-> **How to use:** This is the BIGGEST module. Watch the Essential set carefully — they'll save you on service-picker questions. Take notes per service.
+> **How to use:** This is the BIGGEST module. Watch the Essential set carefully, they'll save you on service-picker questions. Take notes per service.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Azure Compute Services Compared (VM, App Service, ACI, AKS, Functions)</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 15 min · The 5-way comparison you NEED</span>
     </div>
   </a>
@@ -47,8 +47,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Storage Services — Blob, Files, Queue, Table</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">Azure Storage Services, Blob, Files, Queue, Table</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 15 min · All four explained</span>
     </div>
   </a>
@@ -70,8 +70,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Azure SQL vs Cosmos DB — When To Use Each</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">Azure SQL vs Cosmos DB, When To Use Each</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 12 min · Database picker</span>
     </div>
   </a>
@@ -121,7 +121,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Azure Functions Serverless Basics</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 15 min · Event-driven code</span>
     </div>
   </a>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | The deep-dive king |
-| **Adam Marczak — Azure for Everyone** | Cleanest service comparisons |
+| **Adam Marczak, Azure for Everyone** | Cleanest service comparisons |
 | **Microsoft Mechanics** | Official, current, well-produced |
 | **Microsoft Learn** | Authoritative |
 | **NetworkChuck** | Fun intros for complex topics |
@@ -147,9 +147,9 @@ Answer these in your notebook:
 
 1. When would you pick App Service vs a VM?
 2. What's the single biggest difference between AKS and ACI?
-3. VPN Gateway vs ExpressRoute — give the one-sentence pick rule for each.
+3. VPN Gateway vs ExpressRoute, give the one-sentence pick rule for each.
 4. List the four blob access tiers in order of how often you'd access the data.
-5. Cosmos DB vs Azure SQL Database — when would you pick each?
+5. Cosmos DB vs Azure SQL Database, when would you pick each?
 6. What does GRS do that ZRS doesn't?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md) and [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md).

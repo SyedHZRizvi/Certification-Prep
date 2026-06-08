@@ -1,4 +1,4 @@
-# 🏆 Final Mock Exam — PSM I
+# 🏆 Final Mock Exam, PSM I
 
 > **Take this 1-2 days before your real exam.**
 > 60 minutes. 60 questions. Pass: 51/60 (85%).
@@ -162,7 +162,7 @@ D. A delivery enforcer
 A. PO only
 B. PO and Product Backlog
 C. PO, Product Backlog, Product Goal, and DoD
-D. Nothing — they're separate
+D. Nothing, they're separate
 
 ### 27. A developer asks the SM for design advice. The SM should:
 A. Provide a detailed design
@@ -401,7 +401,7 @@ D. Daily Scrum
 ## 🎯 Final Steps Before Real Exam
 
 1. ✅ Read **The Scrum Guide** end-to-end one more time
-2. ✅ Take the **free Scrum.org Open Assessment** 3+ times — score 100%
+2. ✅ Take the **free Scrum.org Open Assessment** 3+ times, score 100%
 3. ✅ Review your wrong answers across all 3 practice exams
 4. ✅ Print your cheat sheets
 5. ✅ Sleep well the night before
@@ -427,7 +427,7 @@ D. Daily Scrum
 
 ### Q4. Answer: B (Focus, Commitment, Courage, Respect, Openness)
 **Why B is correct.** F-CCRO.
-**Why others are wrong.** A, C, D: Other framings — none are the Scrum 5 values.
+**Why others are wrong.** A, C, D: Other framings, none are the Scrum 5 values.
 
 ### Q5. Answer: A (15 minutes)
 **Why A is correct.** Hard cap per Scrum Guide.
@@ -458,7 +458,7 @@ D. Daily Scrum
 **Why others are wrong.** A: Pre-2020. C, D: Other numbers.
 
 ### Q12. Answer: B (Transparency, Inspection, Adaptation)
-**Why B is correct.** TIA — empiricism pillars.
+**Why B is correct.** TIA, empiricism pillars.
 **Why others are wrong.** A: Waterfall. C: Lean Six Sigma framing. D: Communications framing.
 
 ### Q13. Answer: B (Establish Scrum)
@@ -471,7 +471,7 @@ D. Daily Scrum
 
 ### Q15. Answer: C (6)
 **Why C is correct.** 3 programmers + 2 testers + 1 designer = 6 Developers. PO and SM excluded.
-**Why others are wrong.** A: Only programmers — undercount. B, D: Other numbers don't match.
+**Why others are wrong.** A: Only programmers, undercount. B, D: Other numbers don't match.
 
 ### Q16. Answer: B (Forecasting future Sprints, same team)
 **Why B is correct.** Velocity's legitimate use.
@@ -515,7 +515,7 @@ D. Daily Scrum
 
 ### Q26. Answer: C (PO, PB, PG, and DoD)
 **Why C is correct.** Multiple teams on same product share all four.
-**Why others are wrong.** A: PO only — incomplete. B: PO + Backlog only — incomplete. D: "Separate" violates one-product rule.
+**Why others are wrong.** A: PO only incomplete. B: PO + Backlog only incomplete. D: "Separate" violates one-product rule.
 
 ### Q27. Answer: C (Coach with questions)
 **Why C is correct.** Servant-leader coaching.
@@ -523,7 +523,7 @@ D. Daily Scrum
 
 ### Q28. Answer: C (Relative complexity, effort, uncertainty)
 **Why C is correct.** Story points' definition.
-**Why others are wrong.** A, B: Hours/days — time-based confusion. D: Counting tests is not sizing.
+**Why others are wrong.** A, B: Hours/days, time-based confusion. D: Counting tests is not sizing.
 
 ### Q29. Answer: B (Meet DoD)
 **Why B is correct.** Increment + DoD.
@@ -542,7 +542,7 @@ D. Daily Scrum
 **Why others are wrong.** A: Not for management. C: Not run by SM. D: Required, not optional.
 
 ### Q33. Answer: B (Openness; Courage also strongly applies)
-**Why B is correct.** Admitting requires openness; courage too — but openness is the more direct fit.
+**Why B is correct.** Admitting requires openness; courage too, but openness is the more direct fit.
 **Why others are wrong.** A: Focus is different value. C: Commitment is different. D: Respect is different.
 
 ### Q34. Answer: B (One person, may also be Developer)
@@ -563,7 +563,7 @@ D. Daily Scrum
 
 ### Q38. Answer: B (Dependencies and bottlenecks)
 **Why B is correct.** Component teams create handoff seams.
-**Why others are wrong.** A: Cost isn't the central issue. C: Not "explicitly" — but anti-pattern in practice. D: Not the absence of an SM.
+**Why others are wrong.** A: Cost isn't the central issue. C: Not "explicitly", but anti-pattern in practice. D: Not the absence of an SM.
 
 ### Q39. Answer: C (Team, PO, organization)
 **Why C is correct.** Three groups per Scrum Guide.
@@ -575,7 +575,7 @@ D. Daily Scrum
 
 ### Q41. Answer: B (Empiricism + Lean)
 **Why B is correct.** 2020 update.
-**Why others are wrong.** A: Empiricism alone — pre-2020. C, D: Other framings.
+**Why others are wrong.** A: Empiricism alone, pre-2020. C, D: Other framings.
 
 ### Q42. Answer: B (2 hours)
 **Why B is correct.** 8 hrs for 4-wk → 2 hrs for 1-wk.
@@ -635,7 +635,7 @@ D. Daily Scrum
 
 ### Q56. Answer: C (Scrum established as defined in Guide)
 **Why C is correct.** SM accountability.
-**Why others are wrong.** A, B, D: Other framings — wrong scope.
+**Why others are wrong.** A, B, D: Other framings, wrong scope.
 
 ### Q57. Answer: B (Separate framework)
 **Why B is correct.** SAFe is not in Scrum Guide; separate framework by Leffingwell.
@@ -651,7 +651,7 @@ D. Daily Scrum
 
 ### Q60. Answer: A (Next Sprint Planning)
 **Why A is correct.** Sequence: Review → Retro (already done) → next Sprint Planning starts the new Sprint.
-**Why others are wrong.** B, C: Already done — the question asks what's NEXT. D: Daily Scrum is within a Sprint, not the start.
+**Why others are wrong.** B, C: Already done, the question asks what's NEXT. D: Daily Scrum is within a Sprint, not the start.
 
 ---
 
@@ -660,6 +660,6 @@ D. Daily Scrum
 After reviewing these rationales:
 
 - The patterns repeat. Most wrong answers test the *same* misconceptions over and over: PO/SM/Dev role confusion, DoD vs Acceptance Criteria, what *is* in the Scrum Guide vs what *isn't*, the 2020 update changes.
-- Watch for "always" / "never" / "must" wording — Scrum is rarely absolute, but a handful of things ARE absolute (one PO per product, Sprint ≤ 1 month, Review/Retro mandatory).
+- Watch for "always" / "never" / "must" wording, Scrum is rarely absolute, but a handful of things ARE absolute (one PO per product, Sprint ≤ 1 month, Review/Retro mandatory).
 - When in doubt, the *coach the team* answer is usually correct for SM-scenario questions.
-- "Working harder," "adding people," "escalating to management" — almost always wrong for SM behavior questions.
+- "Working harder," "adding people," "escalating to management", almost always wrong for SM behavior questions.

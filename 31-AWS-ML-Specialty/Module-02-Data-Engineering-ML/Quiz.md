@@ -57,7 +57,7 @@ D. CloudTrail throttling
 
 ---
 
-### Q7. Athena bill is $30K/month — most queries scan an entire raw JSON dataset. The HIGHEST-impact single change is: *(Apply)*
+### Q7. Athena bill is $30K/month, most queries scan an entire raw JSON dataset. The HIGHEST-impact single change is: *(Apply)*
 A. Switch to Redshift Spectrum
 B. Convert raw JSON to Parquet and partition by date
 C. Move data to S3 Standard-IA
@@ -212,7 +212,7 @@ D. AWS Config
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. S3 Standard**
-Active training reads are hot — Standard or Intelligent-Tiering. Glacier classes have retrieval delays/fees. One Zone-IA is for re-creatable data.
+Active training reads are hot, Standard or Intelligent-Tiering. Glacier classes have retrieval delays/fees. One Zone-IA is for re-creatable data.
 
 ### Q2: **B. FSx for Lustre linked to S3**
 Lustre gives sub-ms file access with on-demand lazy-load from S3. The standard pattern for high-throughput distributed DL training.
@@ -221,7 +221,7 @@ Lustre gives sub-ms file access with on-demand lazy-load from S3. The standard p
 Firehose has built-in JSON→Parquet conversion using a Glue table schema. KDS is lower-level; MSK is Kafka.
 
 ### Q4: **B. Athena partition projection**
-Projection computes partitions from key naming — no crawler, partitions instantly visible. Crawlers are batch; this avoids that latency entirely.
+Projection computes partitions from key naming, no crawler, partitions instantly visible. Crawlers are batch; this avoids that latency entirely.
 
 ### Q5: **B. 5 TB**
 S3 max object size = 5 TB (memorise alongside the 5 GB single-PUT limit / 5 MB multipart minimum part).
@@ -245,7 +245,7 @@ Column-level security is a Lake Formation feature. S3 bucket policies are object
 Lambda max 15-minute timeout. Workloads >15 min need Glue Python Shell, Glue Spark, or SageMaker Processing.
 
 ### Q12: **C. Snowball Edge cluster**
-2 PB / 8 weeks ≈ 4 Gbps continuous — usually impractical over a typical Direct Connect link cost-effectively. Snowball Edge cluster ships disks.
+2 PB / 8 weeks ≈ 4 Gbps continuous, usually impractical over a typical Direct Connect link cost-effectively. Snowball Edge cluster ships disks.
 
 ### Q13: **C. Managed Service for Apache Flink**
 Flink for windowed real-time SQL/Java stream processing. Athena is batch; Glue ETL is batch; S3 Select is single-object only.
@@ -260,7 +260,7 @@ Small-file problem destroys crawler and query performance. Compact into larger P
 Pipe mode pipes RecordIO-protobuf records directly into the training container; avoids local-disk staging for huge datasets. Faster start, less I/O.
 
 ### Q17: **A. Glue job bookmarks**
-Bookmarks track processed files/state automatically — incremental ETL with no glue (pun intended) code on your side.
+Bookmarks track processed files/state automatically, incremental ETL with no glue (pun intended) code on your side.
 
 ### Q18: **B. Amazon MSK**
 MSK = Managed Streaming for Apache Kafka. MQ is for RabbitMQ/ActiveMQ; SQS is queue; KDS is similar concept but a different protocol.

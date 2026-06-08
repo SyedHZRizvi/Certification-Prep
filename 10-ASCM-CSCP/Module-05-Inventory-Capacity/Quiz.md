@@ -81,7 +81,7 @@ D. 0.833
 
 ### Q10. ABC inventory analysis is based on: *(Remember)*
 A. Cost per unit only
-B. Pareto distribution — small % of SKUs drive most $ value
+B. Pareto distribution, small % of SKUs drive most $ value
 C. Lead time
 D. Number of orders
 
@@ -278,7 +278,7 @@ Pipeline = in-transit. Sometimes shown on the balance sheet as "in-transit inven
 Built ahead of a known event.
 
 ### Q21: **B. Wait time increases sharply**
-Queueing theory result — variability + high utilization = long waits.
+Queueing theory result, variability + high utilization = long waits.
 
 ### Q22: **B. Single-period perishable**
 Classic newsvendor scope.

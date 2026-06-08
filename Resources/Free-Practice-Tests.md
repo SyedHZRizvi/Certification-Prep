@@ -1,6 +1,6 @@
 # 🧪 External Practice Tests
 
-> Where to find more practice questions beyond what's included in each course — for **all 32 tracks** on this site. More practice = more pattern recognition.
+> Where to find more practice questions beyond what's included in each course, for **all 32 tracks** on this site. More practice = more pattern recognition.
 
 **Resources** · Free Practice Tests
 *Last updated: 2026-05*
@@ -40,7 +40,7 @@
 - **Why:** Solid free questions with explanations.
 
 #### 4. Real Time Scenarios
-- Search YouTube for "PSM I scenario questions" — many free videos with explanations.
+- Search YouTube for "PSM I scenario questions", many free videos with explanations.
 
 ---
 
@@ -70,11 +70,11 @@
 
 ---
 
-## ☁️ AWS — CLF-C02 / SAA-C03 / AIF-C01
+## ☁️ AWS, CLF-C02 / SAA-C03 / AIF-C01
 
 ### TOP RECOMMENDED (Free)
 
-#### 1. AWS Skill Builder — Free Exam Prep Standard Courses ⭐⭐⭐⭐⭐
+#### 1. AWS Skill Builder, Free Exam Prep Standard Courses ⭐⭐⭐⭐⭐
 - **URL:** <https://skillbuilder.aws/>
 - **Why:** Official AWS, exam-aligned, includes free knowledge-check questions for each domain. The "Exam Prep Standard Course" path exists for each AWS cert.
 
@@ -84,17 +84,17 @@
 
 #### 3. AWS Cloud Quest (gamified, free)
 - **URL:** <https://aws.amazon.com/training/digital/aws-cloud-quest/>
-- **Why:** Free hands-on labs for Cloud Practitioner level — reinforces SAA topics too.
+- **Why:** Free hands-on labs for Cloud Practitioner level, reinforces SAA topics too.
 
 #### 4. Tutorials Dojo Free Samplers
 - **URL:** <https://tutorialsdojo.com/>
 - **Why:** Their paid practice exams are the de-facto standard on r/AWSCertifications; the free sampler chapters and free cheat sheets are excellent.
 
-> ⚠️ **Avoid ExamTopics-style "free" question dumps** for AWS, Azure, or any cert. The questions are often outdated, wrong, or leaked — and using them can violate the cert exam policy.
+> ⚠️ **Avoid ExamTopics-style "free" question dumps** for AWS, Azure, or any cert. The questions are often outdated, wrong, or leaked, and using them can violate the cert exam policy.
 
 ---
 
-## ☁️ AZURE — AZ-900 / AZ-104 / AI-102
+## ☁️ AZURE, AZ-900 / AZ-104 / AI-102
 
 ### TOP RECOMMENDED (Free)
 
@@ -108,11 +108,11 @@
 
 #### 3. Microsoft Hands-on Sandboxes
 - **URL:** Embedded in many Microsoft Learn modules
-- **Why:** Free Azure sandboxes (no credit card) for hands-on practice — important for AZ-104 and AI-102.
+- **Why:** Free Azure sandboxes (no credit card) for hands-on practice, important for AZ-104 and AI-102.
 
 #### 4. Microsoft Reactor / Virtual Training Days
 - **URL:** <https://developer.microsoft.com/reactor/> and <https://www.microsoft.com/en-us/trainingdays>
-- **Why:** Microsoft regularly runs free virtual training days for AZ-900, AI-900, and similar fundamentals — sometimes includes a free exam voucher.
+- **Why:** Microsoft regularly runs free virtual training days for AZ-900, AI-900, and similar fundamentals, sometimes includes a free exam voucher.
 
 ---
 
@@ -124,21 +124,21 @@
 - **URL:** <https://www.professormesser.com/security-plus/sy0-701/sy0-701-video/sy0-701-comptia-security-plus-course/>
 - **Why:** Free sample practice questions on the site + thousands of hours of free video. Free PDFs of notes also available.
 
-#### 2. CompTIA CertMaster Practice — Sample Questions
+#### 2. CompTIA CertMaster Practice, Sample Questions
 - **URL:** <https://www.comptia.org/certifications/security>
 - **Why:** Official CompTIA sample questions on the exam page (small sample, but representative).
 
 #### 3. Free YouTube Practice Series (search-based)
-- Search: "Professor Messer SY0-701 practice questions" — <https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+practice+questions>
-- Search: "Jason Dion Security+ practice" — <https://www.youtube.com/results?search_query=Jason+Dion+Security%2B+practice>
+- Search: "Professor Messer SY0-701 practice questions", <https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+practice+questions>
+- Search: "Jason Dion Security+ practice", <https://www.youtube.com/results?search_query=Jason+Dion+Security%2B+practice>
 
 #### 4. ExamCompass (free)
 - **URL:** <https://www.examcompass.com/>
-- **Why:** Free Security+ practice tests. Quality varies — useful as supplemental drills, but cross-check against Professor Messer.
+- **Why:** Free Security+ practice tests. Quality varies, useful as supplemental drills, but cross-check against Professor Messer.
 
 ---
 
-## 📦 SUPPLY CHAIN — ASCM CSCP / CPIM / CLTD & ISM CPSM
+## 📦 SUPPLY CHAIN, ASCM CSCP / CPIM / CLTD & ISM CPSM
 
 ### TOP RECOMMENDED (Free or Free-Sample)
 
@@ -148,19 +148,19 @@
 
 #### 2. ASCM Learning System Practice Pools (paid but essential)
 - **URL:** Purchased via <https://www.ascm.org/>
-- **Why:** The single highest-value practice-question source for ASCM certs. Most candidates rely heavily on these — community consensus on Reddit and ASCM forums.
+- **Why:** The single highest-value practice-question source for ASCM certs. Most candidates rely heavily on these, community consensus on Reddit and ASCM forums.
 
 #### 3. ISM CPSM Diagnostic Practice Exam
 - **URL:** <https://www.ismworld.org/certification-and-training/certification/cpsm-certification/>
-- **Why:** Official ISM diagnostic — closest thing to the real CPSM exam. Paid sample, but small price.
+- **Why:** Official ISM diagnostic, closest thing to the real CPSM exam. Paid sample, but small price.
 
 #### 4. APICS Dictionary (free download for members; vocabulary drill)
 - Search: "APICS Dictionary PDF" via <https://www.ascm.org/>
 - **Why:** ASCM exams test specific vocabulary heavily. Treat the dictionary as a flashcard source.
 
 #### 5. Free YouTube Walkthroughs (search-based)
-- Search: "ASCM CSCP practice questions" — <https://www.youtube.com/results?search_query=ASCM+CSCP+practice+questions>
-- Search: "CPIM Part 1 practice questions" — <https://www.youtube.com/results?search_query=CPIM+Part+1+practice+questions>
+- Search: "ASCM CSCP practice questions", <https://www.youtube.com/results?search_query=ASCM+CSCP+practice+questions>
+- Search: "CPIM Part 1 practice questions", <https://www.youtube.com/results?search_query=CPIM+Part+1+practice+questions>
 
 ---
 
@@ -170,7 +170,7 @@
 
 #### 1. HubSpot Academy Practice + Real Exam ⭐⭐⭐⭐⭐
 - **URL:** <https://academy.hubspot.com/>
-- **Why:** HubSpot's Inbound and Content Marketing certifications include built-in practice — and the real exam is **free** and **unlimited retakes**. Closest you'll get to "practice = real exam."
+- **Why:** HubSpot's Inbound and Content Marketing certifications include built-in practice, and the real exam is **free** and **unlimited retakes**. Closest you'll get to "practice = real exam."
 
 #### 2. Google Skillshop Practice ⭐⭐⭐⭐⭐
 - **URL:** <https://skillshop.exceedlms.com/>
@@ -185,9 +185,9 @@
 - **Why:** Free benchmark articles, case studies, and the occasional sample lesson from their paid minidegrees (Measurement & Analytics, Conversion Optimization, Growth Marketing).
 
 #### 5. Free YouTube Drill Channels (search-based)
-- Search: "HubSpot Inbound certification practice" — <https://www.youtube.com/results?search_query=HubSpot+Inbound+certification+practice>
-- Search: "Google Ads certification practice questions" — <https://www.youtube.com/results?search_query=Google+Ads+certification+practice+questions>
-- Search: "Meta Blueprint certification practice" — <https://www.youtube.com/results?search_query=Meta+Blueprint+certification+practice>
+- Search: "HubSpot Inbound certification practice", <https://www.youtube.com/results?search_query=HubSpot+Inbound+certification+practice>
+- Search: "Google Ads certification practice questions", <https://www.youtube.com/results?search_query=Google+Ads+certification+practice+questions>
+- Search: "Meta Blueprint certification practice", <https://www.youtube.com/results?search_query=Meta+Blueprint+certification+practice>
 
 ---
 
@@ -209,11 +209,11 @@
 
 #### 4. Bitcoin StackExchange (untimed, but exam-style)
 - **URL:** <https://bitcoin.stackexchange.com/>
-- **Why:** Browse the highly-voted Q&A — each is a self-contained learning unit; reading 50 of these solidifies CBP-level fluency.
+- **Why:** Browse the highly-voted Q&A, each is a self-contained learning unit; reading 50 of these solidifies CBP-level fluency.
 
 #### 5. Free YouTube Walkthroughs (search-based)
-- Search: "Certified Bitcoin Professional CBP exam" — <https://www.youtube.com/results?search_query=Certified+Bitcoin+Professional+CBP+exam>
-- Search: "Bitcoin technical interview questions" — <https://www.youtube.com/results?search_query=Bitcoin+technical+interview+questions>
+- Search: "Certified Bitcoin Professional CBP exam", <https://www.youtube.com/results?search_query=Certified+Bitcoin+Professional+CBP+exam>
+- Search: "Bitcoin technical interview questions", <https://www.youtube.com/results?search_query=Bitcoin+technical+interview+questions>
 
 ---
 
@@ -238,12 +238,12 @@
 - **Why:** Their UX/CRO research articles include benchmark questions ("what % of e-commerce sites fail X?"). Excellent for sharpening Module 6 (CRO) thinking. Premium ($200/mo) for the full library; free articles are still gold.
 
 #### 5. Free YouTube Walkthroughs (search-based)
-- Search: "Google Digital Marketing E-Commerce certificate" — <https://www.youtube.com/results?search_query=Google+Digital+Marketing+E-Commerce+certificate>
-- Search: "Adobe Commerce Business Practitioner practice" — <https://www.youtube.com/results?search_query=Adobe+Commerce+Business+Practitioner+practice>
+- Search: "Google Digital Marketing E-Commerce certificate", <https://www.youtube.com/results?search_query=Google+Digital+Marketing+E-Commerce+certificate>
+- Search: "Adobe Commerce Business Practitioner practice", <https://www.youtube.com/results?search_query=Adobe+Commerce+Business+Practitioner+practice>
 
 ---
 
-## 💵 PAID — If You Can Invest $20-100
+## 💵 PAID, If You Can Invest $20-100
 
 ### For PMP (CRITICAL)
 
@@ -302,7 +302,7 @@
 
 #### CompTIA CertMaster Practice (official)
 - **Cost:** ~$140
-- **Why:** Official adaptive practice — best for closing knowledge gaps near exam day.
+- **Why:** Official adaptive practice, best for closing knowledge gaps near exam day.
 
 ### For ASCM / ISM Supply Chain
 
@@ -312,13 +312,13 @@
 
 #### ISM CPSM Bridge of Knowledge / Online Review Course
 - **Cost:** ~$300-600 depending on member status
-- **Why:** Official ISM exam prep — large practice question set + study guide.
+- **Why:** Official ISM exam prep, large practice question set + study guide.
 
 ### For AI Marketing (DMI / OMCP / CXL)
 
 #### CXL Institute Practice Pools
 - **Cost:** Included with CXL minidegree (~$300-1,500 depending on path)
-- **Why:** CXL's "Measurement & Analytics" minidegree has the deepest practice problem set on the market — the closest thing to GA4 IQ + attribution-modeling drills.
+- **Why:** CXL's "Measurement & Analytics" minidegree has the deepest practice problem set on the market, the closest thing to GA4 IQ + attribution-modeling drills.
 
 #### DMI Practice Exams
 - **Cost:** Included with DMI Diploma (~$1,800-2,400)
@@ -358,7 +358,7 @@
 
 ### Phase 3: Full-Length Mock Exams
 - 3-5 full-length mock exams in the final 2 weeks.
-- **Simulate exam conditions** — timed, no notes, single sitting.
+- **Simulate exam conditions**, timed, no notes, single sitting.
 
 ### Phase 4: Review > Practice
 - For every wrong answer:
@@ -385,10 +385,10 @@
 |--------------------|------------------------|
 | 80%+ consistently | 90%+ pass |
 | 70-79% | 70% pass |
-| 60-69% | Risky — keep studying |
+| 60-69% | Risky, keep studying |
 | <60% | Don't book yet |
 
-### AWS (CLF-C02 / SAA-C03 / AIF-C01) — real exam pass = ~700/1000 scaled
+### AWS (CLF-C02 / SAA-C03 / AIF-C01), real exam pass = ~700/1000 scaled
 | Tutorials Dojo / Stephane Maarek Avg | Real Exam Probability |
 |--------------------|------------------------|
 | 80%+ consistently | 90%+ pass |
@@ -396,15 +396,15 @@
 | 70-74% | Doable but risky |
 | <70% | Drill weak domains first |
 
-### Azure (AZ-900 / AZ-104 / AI-102) — real exam pass = 700/1000 scaled
+### Azure (AZ-900 / AZ-104 / AI-102), real exam pass = 700/1000 scaled
 | Microsoft Learn Practice Assessment | Real Exam Probability |
 |--------------------|------------------------|
 | 85%+ consistently | 90%+ pass |
 | 75-84% | 70%+ pass |
-| 65-74% | Risky — keep studying |
+| 65-74% | Risky, keep studying |
 | <65% | Don't book yet |
 
-### CompTIA Security+ (SY0-701) — real exam pass = 750/900 scaled
+### CompTIA Security+ (SY0-701), real exam pass = 750/900 scaled
 | Jason Dion / Messer Practice Avg | Real Exam Probability |
 |--------------------|------------------------|
 | 85%+ consistently | 90%+ pass |
@@ -412,12 +412,12 @@
 | 70-77% | Risky |
 | <70% | Don't book yet |
 
-### ASCM CSCP / CPIM / CLTD — passing is criterion-referenced (no fixed %)
+### ASCM CSCP / CPIM / CLTD, passing is criterion-referenced (no fixed %)
 | ASCM Learning System Practice Avg | Real Exam Probability |
 |--------------------|------------------------|
 | 85%+ on full ASCM practice pool | 90%+ pass |
 | 75-84% | Solid |
-| 65-74% | Risky — drill weak content |
+| 65-74% | Risky, drill weak content |
 | <65% | Don't book yet |
 
 ### ISM CPSM (3 tasks; passing varies by task)
@@ -432,9 +432,9 @@
 |---------------------|------------------------|
 | 90%+ | 95%+ pass first try |
 | 80-89% | 85%+ pass |
-| <80% | Re-take is free — drill weak areas |
+| <80% | Re-take is free, drill weak areas |
 
-### CBP (Bitcoin) — real exam pass = 70%
+### CBP (Bitcoin), real exam pass = 70%
 | Sample Bank + Princeton Quizzes Avg | Real Exam Probability |
 |--------------------|------------------------|
 | 85%+ | 95%+ pass |
@@ -483,10 +483,10 @@ You got this! 💪
 
 ## 🚀 Next Steps
 
-- 🚀 [**Quick Start Guide**](../../00-Study-Plan/Quick-Start-Guide/) — pick your starting course
-- 📅 [**12-Week Study Plan**](../../00-Study-Plan/12-Week-Study-Plan/) — the day-by-day cadence
-- 🏆 [**Certifications Catalog**](../International-Certifications/) — fees, formats, registration procedure for every cert
-- 📚 [**Books & Links**](../Books-and-Links/) — the canonical resource list per track
-- 🤝 [**Communities**](../Communities/) — find a study buddy
-- 🎯 [**Exam Day Tips**](../../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
-- 🏠 [**Course Home**](../../) — all 32 tracks at a glance
+- 🚀 [**Quick Start Guide**](../../00-Study-Plan/Quick-Start-Guide/), pick your starting course
+- 📅 [**12-Week Study Plan**](../../00-Study-Plan/12-Week-Study-Plan/), the day-by-day cadence
+- 🏆 [**Certifications Catalog**](../International-Certifications/), fees, formats, registration procedure for every cert
+- 📚 [**Books & Links**](../Books-and-Links/), the canonical resource list per track
+- 🤝 [**Communities**](../Communities/), find a study buddy
+- 🎯 [**Exam Day Tips**](../../00-Study-Plan/Exam-Day-Tips/), read the morning of your exam
+- 🏠 [**Course Home**](../../), all 32 tracks at a glance

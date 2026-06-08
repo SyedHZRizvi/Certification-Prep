@@ -33,30 +33,30 @@ Studio Domain (per account/VPC)
 ## 🧠 The 17 Built-Ins (Memorize)
 
 ### Tabular / Supervised
-- **XGBoost** — tabular workhorse (cls/reg/rank)
-- **Linear Learner** — fast lin/log w/ HPO
-- **k-NN** — lazy learner
-- **Factorization Machines** — sparse CTR
-- **PCA** — dim. reduction
+- **XGBoost**, tabular workhorse (cls/reg/rank)
+- **Linear Learner**, fast lin/log w/ HPO
+- **k-NN**, lazy learner
+- **Factorization Machines**, sparse CTR
+- **PCA**, dim. reduction
 
 ### Unsupervised
-- **K-Means** — clustering
-- **Random Cut Forest** — anomalies
-- **IP Insights** — user-IP anomaly
-- **NTM / LDA** — topic modelling
+- **K-Means**, clustering
+- **Random Cut Forest**, anomalies
+- **IP Insights**, user-IP anomaly
+- **NTM / LDA**, topic modelling
 
 ### Text
-- **BlazingText** — Word2Vec + text cls (GPU-fast)
-- **Object2Vec** — pair embeddings (any pair)
-- **seq2seq** — translation/summarisation (legacy)
+- **BlazingText**, Word2Vec + text cls (GPU-fast)
+- **Object2Vec**, pair embeddings (any pair)
+- **seq2seq**, translation/summarisation (legacy)
 
 ### Vision
-- **Image Classification** — CNN cls
-- **Object Detection** — bounding boxes (SSD)
-- **Semantic Segmentation** — per-pixel cls
+- **Image Classification**, CNN cls
+- **Object Detection**, bounding boxes (SSD)
+- **Semantic Segmentation**, per-pixel cls
 
 ### Time-series
-- **DeepAR** — multi-series probabilistic forecast
+- **DeepAR**, multi-series probabilistic forecast
 
 ---
 

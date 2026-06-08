@@ -202,7 +202,7 @@ D. ETO
 ## 🎯 Answers + Explanations
 
 ### Q1: **D. Make-to-Stock**
-Standardized product, forecast-driven, FG inventory held — classic MTS. The customer pulls from finished goods.
+Standardized product, forecast-driven, FG inventory held, classic MTS. The customer pulls from finished goods.
 
 ### Q2: **B. Assemble-to-Order**
 Dell is the textbook ATO example. Modules are forecast-built; final assembly is order-triggered. Many casual sources call Dell "MTO" but CPIM language is **ATO** because the decoupling point is at the *sub-assembly* level, not raw materials.
@@ -241,7 +241,7 @@ Design happens *after* the contract, then sourcing and production. ETO has the l
 Coined by John Elkington in 1994. ASCM emphasizes sustainability as a strategic constraint on the current exam.
 
 ### Q14: **C. Job shop**
-High variety, low individual-product volume, functional layout (by machine type) — the job-shop signature.
+High variety, low individual-product volume, functional layout (by machine type), the job-shop signature.
 
 ### Q15: **B. ATO holds forecast-built sub-assemblies; MTO starts at raw materials**
 The decoupling point is at *modules* for ATO and at *raw materials* for MTO. This directly affects how MPS is built (two-level for ATO; single-level at end-item for MTO).
@@ -253,7 +253,7 @@ Standardized + lowest cost = high-volume MTS. Cost leadership and volume go toge
 This is the central "trade-off" lesson of manufacturing strategy. You must pick 1–2 priorities and align everything to them.
 
 ### Q18: **B. A working camera and a one-day battery**
-Every modern smartphone has these — they are *qualifiers* (the minimum), not winners. The other three options are differentiators.
+Every modern smartphone has these, they are *qualifiers* (the minimum), not winners. The other three options are differentiators.
 
 ### Q19: **B. Bring previously offshored production back to the domestic market**
 Reshoring is the reverse of offshoring. Drivers include tariffs, supply chain risk, energy cost shifts, and labor automation.
@@ -289,7 +289,7 @@ Forecast-driven daily production, products go into stock at corner stores, custo
 - The 4 manufacturing environments + where the decoupling point sits in each
 - Order qualifier vs winner definitions + the "winner becomes qualifier" rule
 - Postponement (with HP printer example)
-- Hayes-Wheelwright matrix — diagonal vs off-diagonal
+- Hayes-Wheelwright matrix, diagonal vs off-diagonal
 - The 5 competitive priorities + the trade-off principle
 - Triple Bottom Line (People, Planet, Profit)
 - Strategy cascade: Corporate → Business → Functional

@@ -41,7 +41,7 @@
 
 ---
 
-## 🛠️ The 6 Agent Use Cases — Pick One
+## 🛠️ The 6 Agent Use Cases, Pick One
 
 | # | Agent Type | Difficulty | Wow Factor |
 |---|-----------|------------|-----------|
@@ -120,12 +120,12 @@ ai-marketing-agent/
 ## 🎥 Loom Outline (3–5 min)
 
 ```
-0:00 — Hook: "Here's a [thing] I built that does X in Y seconds."
-0:30 — Show repo briefly.
-1:00 — Run it live + show output.
-2:30 — Explain one prompt-engineering decision.
-4:00 — Limitations + v2.
-4:30 — CTA: "Repo at [link]."
+0:00, Hook: "Here's a [thing] I built that does X in Y seconds."
+0:30, Show repo briefly.
+1:00, Run it live + show output.
+2:30, Explain one prompt-engineering decision.
+4:00, Limitations + v2.
+4:30, CTA: "Repo at [link]."
 ```
 
 ---
@@ -209,7 +209,7 @@ ai-marketing-agent/
 - ✅ "Multi-step agent: scrape → analyze → format..."
 - ✅ "System prompt enforces structured JSON output..."
 - ✅ "Cost per run is ~$X; replaces ~Y hrs of senior marketing time..."
-- ✅ "Rated 10 sample outputs: 7 ship-ready, 2 need editing, 1 broken — v2 fixes..."
+- ✅ "Rated 10 sample outputs: 7 ship-ready, 2 need editing, 1 broken, v2 fixes..."
 - ✅ "Built with Cursor as pair-programmer; ~70% AI-generated, all reviewed..."
 
 Avoid:
@@ -218,7 +218,7 @@ Avoid:
 - ❌ "It uses AI..."
 - ❌ "Pretty straightforward setup..."
 - ❌ "Works great, no issues..."
-- ❌ "Built it from scratch" (when you used Cursor — be honest)
+- ❌ "Built it from scratch" (when you used Cursor, be honest)
 
 ---
 
@@ -236,7 +236,7 @@ Avoid:
 ## 🎤 90-Second Pitch (Practice)
 
 ```
-"I built [agent name] — a Python script using Claude API that takes [input], 
+"I built [agent name], a Python script using Claude API that takes [input], 
 performs [N steps], and outputs [output format]. Repo public on GitHub.
 Replaces ~[X hrs of manual work / $Y in time]. Per-run cost ~$Z. 
 First version had [specific issue]; v2 added [specific fix]. 

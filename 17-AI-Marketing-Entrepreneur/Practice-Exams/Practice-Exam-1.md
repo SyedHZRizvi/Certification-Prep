@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AI Digital Marketing Entrepreneur (Business Judgment)
+# 🧪 Practice Exam 1, AI Digital Marketing Entrepreneur (Business Judgment)
 
 > **Conditions:** Set a 35-minute timer. 25 questions. Treat it like the real thing.
 > **Pass mark:** 19/25 (75%)
@@ -11,7 +11,7 @@
 ### 1. A new founder is positioning her business as "AI marketing services for ambitious brands." What's the biggest issue?
 A. The pricing isn't clear
 B. AI is over-mentioned
-C. The positioning is too generic — no industry, size, or specific deliverable
+C. The positioning is too generic, no industry, size, or specific deliverable
 D. "Brands" is the wrong word
 
 ### 2. The 100/10/1 niche test refers to:
@@ -99,7 +99,7 @@ C. Charging 3x your hourly cost
 D. Discount stacking 3 ways
 
 ### 16. A founder's proposal close rate is 80%+. The reading suggests this means:
-A. Likely underpriced — try raising prices
+A. Likely underpriced, try raising prices
 B. Excellent
 C. Healthy
 D. Time to hire
@@ -153,7 +153,7 @@ C. Only government work
 D. Only with EU clients
 
 ### 25. A founder cannot list 100 named companies for their niche. This means:
-A. The niche is fine — quality > quantity
+A. The niche is fine, quality > quantity
 B. Start running paid ads
 C. Hire more sales reps
 D. The niche is too narrow OR poorly defined; broaden or redefine
@@ -178,8 +178,8 @@ D. The niche is too narrow OR poorly defined; broaden or redefine
 
 | Score | Verdict |
 |---|---|
-| 23–25 | 🏆 Strong — ready for Modules 5–8 |
-| 19–22 | ✅ Good — review wrong answers, then continue |
+| 23–25 | 🏆 Strong, ready for Modules 5–8 |
+| 19–22 | ✅ Good, review wrong answers, then continue |
 | 14–18 | ⚠️ Re-study weak modules; retake tomorrow |
 | <14 | 🔁 Restart from Module 1 |
 
@@ -198,15 +198,15 @@ For EACH wrong answer:
 
 ## Detailed answer rationales
 
-Use these to learn from each question — including the wrong choices. Every distractor is here to teach you a concept it confuses with the correct answer.
+Use these to learn from each question, including the wrong choices. Every distractor is here to teach you a concept it confuses with the correct answer.
 
 **Q1. Answer: C**
 
 **Why C is correct.** "AI marketing services for ambitious brands" fails the 100/10/1 niche test from Module 1: no named industry, no size, no buyer role, no specific deliverable. A real niche is industry + size + geography + buyer role + deliverable.
 
 **Why the other options are wrong.**
-- A: Pricing clarity matters in Module 4 but is downstream of positioning — you cannot price what you cannot describe.
-- B: "AI is over-mentioned" is the opposite mistake — most operators under-mention their AI leverage in positioning.
+- A: Pricing clarity matters in Module 4 but is downstream of positioning, you cannot price what you cannot describe.
+- B: "AI is over-mentioned" is the opposite mistake, most operators under-mention their AI leverage in positioning.
 - D: "Brands" is fine as a category; the failure is its breadth, not the word.
 
 **Exam-takeaway.** Niche = industry + size + role + deliverable. "Ambitious brands" is a category, not a niche.
@@ -224,12 +224,12 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Q3. Answer: D**
 
-**Why D is correct.** Brett Williams's Designjoy is the canonical productized-service success story — solo operator, ~$1.5M ARR, ~70% margin, documented across My First Million, Starter Story, Indie Hackers interviews.
+**Why D is correct.** Brett Williams's Designjoy is the canonical productized-service success story, solo operator, ~$1.5M ARR, ~70% margin, documented across My First Million, Starter Story, Indie Hackers interviews.
 
 **Why the other options are wrong.**
-- A: Designjoy has never had 30 employees — Williams is famous specifically for staying solo.
+- A: Designjoy has never had 30 employees, Williams is famous specifically for staying solo.
 - B: Designjoy is publicly active; recent podcast interviews confirm continued operation.
-- C: Designjoy is not Series A — it is bootstrapped and explicitly anti-VC. This distractor tests whether you confuse "high revenue" with "venture-backed."
+- C: Designjoy is not Series A, it is bootstrapped and explicitly anti-VC. This distractor tests whether you confuse "high revenue" with "venture-backed."
 
 **Exam-takeaway.** Designjoy = $1.5M ARR solo, ~70% margin. Memorize the numbers.
 
@@ -240,7 +240,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 **Why the other options are wrong.**
 - A: Confuses fixed *anchors* with P&L outputs (Revenue, Cost, Margin, Profit).
 - B: Inserts internal operations (Tools, People) which are *means*, not anchors.
-- C: Inserts Speed and Tools — both are derivatives of the real anchors.
+- C: Inserts Speed and Tools, both are derivatives of the real anchors.
 
 **Exam-takeaway.** 5 Fixed Anchors: Scope, Price, Process, Time, Outcome.
 
@@ -251,7 +251,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 **Why the other options are wrong.**
 - A: Client trust is a softer factor; the mechanical problem is the math itself.
 - C: Hourly is not illegal anywhere.
-- D: "Too volatile" is true but secondary — the structural problem is AI-driven hourly compression.
+- D: "Too volatile" is true but secondary, the structural problem is AI-driven hourly compression.
 
 **Exam-takeaway.** Hourly + AI = falling income. Productize the outcome instead.
 
@@ -260,7 +260,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 **Why D is correct.** Module 3's default Year-1 pairing is Outbound + Inbound: outbound delivers near-term cashflow (14–45 days), inbound builds the compounding asset (6–18 months).
 
 **Why the other options are wrong.**
-- A: Paid + Events is capital-intensive and lumpy — wrong for Year 1.
+- A: Paid + Events is capital-intensive and lumpy, wrong for Year 1.
 - B: Referrals-only assumes a Year-3 reputation network you don't yet have.
 - C: All seven channels = the mistake the reading explicitly warns against ("you'll run them all badly").
 
@@ -283,7 +283,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why the other options are wrong.**
 - A: "About the same" contradicts the cited Smartlead reply-rate data.
-- B: 100x is implausibly high — no marketing format yields a 100x lift over its alternative.
+- B: 100x is implausibly high, no marketing format yields a 100x lift over its alternative.
 - D: 0.5x (worse) is the opposite of the documented effect.
 
 **Exam-takeaway.** Short, specific, problem-led emails beat long consultative emails by 2–4x.
@@ -294,7 +294,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why the other options are wrong.**
 - A: Correct.
-- B: Zero — wrong. The story explicitly closes paying clients in month 1.
+- B: Zero, wrong. The story explicitly closes paying clients in month 1.
 - C: 17 is the number of *discovery calls booked*, not paying clients.
 - D: 50 is implausible at Day 30 with cold outbound.
 
@@ -305,8 +305,8 @@ Use these to learn from each question — including the wrong choices. Every dis
 **Why B is correct.** Module 3's paid-ads gating rule: typical B2B LinkedIn CAC is $800–$2,500 per booked call × close rate 15–30% → cost per close $4,000–$10,000. Below $7,500 ACV, the math loses.
 
 **Why the other options are wrong.**
-- A: $200 ACV — paid ads will lose money 30x over.
-- C: $1,000 — still under the floor; CAC math fails.
+- A: $200 ACV, paid ads will lose money 30x over.
+- C: $1,000, still under the floor; CAC math fails.
 - D: $1M is gratuitously high; the threshold is $7.5K, not $1M.
 
 **Exam-takeaway.** Paid ads need ≥ $7,500 ACV to profit. Lead-magnet ads on low-ACV offers waste money.
@@ -318,7 +318,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 **Why the other options are wrong.**
 - B: 30% understates the middle-option pull.
 - C: 10% is closer to the *low* option's typical pick rate.
-- D: 95% would mean the middle dominates entirely — not what behavioral pricing research shows.
+- D: 95% would mean the middle dominates entirely, not what behavioral pricing research shows.
 
 **Exam-takeaway.** Good-better-best: middle gets 60–70%. Design it as your target offering.
 
@@ -327,7 +327,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 **Why C is correct.** Module 4's proposal-anatomy §"ROI Projection": this section turns a price into a return calculation, anchoring the buyer on value (4–6x ROI) that dwarfs the cost.
 
 **Why the other options are wrong.**
-- A: Pads page count is the opposite of why the section works — proposals should be 6–10 pages, not padded.
+- A: Pads page count is the opposite of why the section works, proposals should be 6–10 pages, not padded.
 - B: Compliance isn't a sales objective.
 - D: Methodology documentation belongs in the SOW, not the proposal sales section.
 
@@ -335,7 +335,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Q13. Answer: A**
 
-**Why A is correct.** Module 4's payment-terms table: short productized engagements ($1,500–$5,000) are 100% upfront — short delivery, no AR risk, no value in milestone billing.
+**Why A is correct.** Module 4's payment-terms table: short productized engagements ($1,500–$5,000) are 100% upfront, short delivery, no AR risk, no value in milestone billing.
 
 **Why the other options are wrong.**
 - B/C: Net 60/90 expose you to AR risk on a 5-day deliverable.
@@ -349,7 +349,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why the other options are wrong.**
 - A: A bonus *to the client* is the opposite of a kill fee.
-- C: There is no "kill switch tool" in service contracts — distractor.
+- C: There is no "kill switch tool" in service contracts, distractor.
 - D: Non-compete is a separate clause about post-engagement competition.
 
 **Exam-takeaway.** Kill fee = client penalty for mid-engagement cancellation, 25–50% of unbilled.
@@ -359,7 +359,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 **Why B is correct.** Module 2's tripled-price exercise: most productized services sell at 2–3x the founder's gut price. Testing at 3x is the cheapest way to validate against founder underpricing.
 
 **Why the other options are wrong.**
-- A: "Multiplying forever" misreads the exercise — it's a sanity-check test, not a permanent rule.
+- A: "Multiplying forever" misreads the exercise, it's a sanity-check test, not a permanent rule.
 - C: Hourly cost × 3 is a derivative of the cost-plus model the reading explicitly rejects.
 - D: Discount stacking is the opposite of the tripled-price principle.
 
@@ -367,7 +367,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Q16. Answer: A**
 
-**Why A is correct.** Module 4's healthy close-rate range is 30–50%. At 80%+, the reading says you're underpriced — raise prices until you lose deals occasionally.
+**Why A is correct.** Module 4's healthy close-rate range is 30–50%. At 80%+, the reading says you're underpriced, raise prices until you lose deals occasionally.
 
 **Why the other options are wrong.**
 - B: "Excellent" is the founder's intuition the reading explicitly corrects.
@@ -378,7 +378,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Q17. Answer: D**
 
-**Why D is correct.** Module 1's stacked wedge: niching on two (or three) axes simultaneously — typically vertical + deliverable (e.g., Maya: addiction-recovery + Google Ads).
+**Why D is correct.** Module 1's stacked wedge: niching on two (or three) axes simultaneously, typically vertical + deliverable (e.g., Maya: addiction-recovery + Google Ads).
 
 **Why the other options are wrong.**
 - A: One axis is a *pure* wedge, not stacked.
@@ -393,7 +393,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why the other options are wrong.**
 - A: 5% would make the wedge model uneconomic.
-- B: 95% would make audits free leads — implausible.
+- B: 95% would make audits free leads, implausible.
 - D: 100% is never a conversion rate in any sales process.
 
 **Exam-takeaway.** Audit-as-wedge converts ~40% to retainer. Sell the audit; build the recurring pipeline.
@@ -404,7 +404,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why the other options are wrong.**
 - A: 10–30% is consulting-services hourly territory.
-- B: 40–55% is mid-margin productized — workable but suboptimal.
+- B: 40–55% is mid-margin productized, workable but suboptimal.
 - D: 95–100% is software gross margin, not service.
 
 **Exam-takeaway.** Productized services target 60–80% gross margin. Below 60% = diagnose.
@@ -415,14 +415,14 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why the other options are wrong.**
 - B: Intake form is a separate component (it collects data, not orientation).
-- C: The contract is not replaced — it's parallel.
+- C: The contract is not replaced, it's parallel.
 - D: The Cheat-Sheet is study material, not a delivery component.
 
 **Exam-takeaway.** Kickoff Loom replaces open-ended kickoff call. Async > synchronous for scope discipline.
 
 **Q21. Answer: C**
 
-**Why C is correct.** Module 3 covers exactly 7 channels: Outbound, Inbound, Referrals, Networks, Partnerships, Events, Paid. "Cold call billboards" is not a real channel — distractor.
+**Why C is correct.** Module 3 covers exactly 7 channels: Outbound, Inbound, Referrals, Networks, Partnerships, Events, Paid. "Cold call billboards" is not a real channel, distractor.
 
 **Why the other options are wrong.**
 - A/B/D: Outbound, Inbound, and Paid are all explicit channels in the table.
@@ -464,10 +464,10 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Q25. Answer: D**
 
-**Why D is correct.** Module 1's 100/10/1 test: failing the 100 step means the niche is too narrow OR poorly defined — broaden or redefine.
+**Why D is correct.** Module 1's 100/10/1 test: failing the 100 step means the niche is too narrow OR poorly defined, broaden or redefine.
 
 **Why the other options are wrong.**
-- A: "Quality over quantity" misses the structural problem — you cannot grow without a base of 100 to fish in.
+- A: "Quality over quantity" misses the structural problem, you cannot grow without a base of 100 to fish in.
 - B: Paid ads on a tiny niche just amplify the niche problem.
 - C: Hiring sales reps adds cost without solving the niche-definition problem.
 

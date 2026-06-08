@@ -1,9 +1,9 @@
 ---
 permalink: /34-2D-Digital-Animation/Practice-Exams/Final-Mock-Exam/
-title: "Final Mock Exam — Adobe Certified Professional: After Effects"
+title: "Final Mock Exam, Adobe Certified Professional: After Effects"
 ---
 
-# 🏆 Final Mock Exam — Adobe Certified Professional: After Effects
+# 🏆 Final Mock Exam, Adobe Certified Professional: After Effects
 ## 2D Digital Animation · 60 Questions · 90 Minutes
 
 **Instructions:** This exam covers all 10 modules and mirrors the Adobe Certified Professional (After Effects) exam in structure and difficulty. Score 85%+ before booking the real exam. Each question has one correct answer.
@@ -104,15 +104,15 @@ D. Compositing
 
 A. Be clearly visible as a stylistic artistic element
 B. Create a jarring pause in the motion
-C. Feel invisible — processed by the viewer's brain as motion blur
+C. Feel invisible, processed by the viewer's brain as motion blur
 D. Create a strobe effect between the two key poses
 
 ---
 
 ### 12. Onion skinning shows frames crowded together at the END of a motion and spread at the START. This indicates:
 
-A. Ease In (motion accelerating — slow start, fast finish)
-B. Ease Out (motion decelerating — fast start, slow finish)
+A. Ease In (motion accelerating, slow start, fast finish)
+B. Ease Out (motion decelerating, fast start, slow finish)
 C. Linear motion (constant speed)
 D. A broken arc requiring correction
 
@@ -181,7 +181,7 @@ D. A linked library connection to the original Illustrator file
 
 ---
 
-### 20. After importing a layered Illustrator file using "Import as Composition — Retain Layer Sizes," each Illustrator layer in After Effects becomes:
+### 20. After importing a layered Illustrator file using "Import as Composition, Retain Layer Sizes," each Illustrator layer in After Effects becomes:
 
 A. A single merged footage layer
 B. An individual AE layer with its own artwork and dimensions
@@ -211,7 +211,7 @@ D. Bezier Graph
 ### 23. A Null Object in After Effects is rendered as:
 
 A. A small semi-transparent square visible in the final export
-B. An invisible object — it never appears in exported renders
+B. An invisible object, it never appears in exported renders
 C. A wireframe box indicating the parent layer's bounds
 D. A dotted crosshair only visible at less than 100% resolution
 
@@ -283,7 +283,7 @@ D. The mouth in the REST (silent) position
 ### 31. In Adobe Character Animator, mouth layers must be set as "exclusive behaviors" because:
 
 A. This prevents mouth layers from being accidentally exported
-B. Only one mouth layer should be visible at a time — Ch switches between them as phonemes change
+B. Only one mouth layer should be visible at a time, Ch switches between them as phonemes change
 C. Exclusive behaviors lock the layers from being edited during live performance
 D. This setting enables the auto-lip-sync algorithm to function correctly
 
@@ -356,7 +356,7 @@ D. Run cycles must be animated on ones (24 unique drawings per second) at all ti
 
 A. Stretch upward to build momentum
 B. Move sideways to gain running start
-C. Drop downward (crouch) — opposite to the jump direction
+C. Drop downward (crouch), opposite to the jump direction
 D. Look up to telegraph the direction
 
 ---
@@ -435,10 +435,10 @@ D. Shape layers (vector path data)
 
 ### 48. sRGB and Rec.709 color spaces have the same color primaries but differ in:
 
-A. Gamut — Rec.709 can represent more colors
-B. Gamma encoding curves — causing a visual difference when one space's content is viewed in the other
-C. Bit depth — sRGB supports 8-bit; Rec.709 supports 10-bit
-D. Frame rate support — Rec.709 is limited to 25fps
+A. Gamut, Rec.709 can represent more colors
+B. Gamma encoding curves, causing a visual difference when one space's content is viewed in the other
+C. Bit depth, sRGB supports 8-bit; Rec.709 supports 10-bit
+D. Frame rate support, Rec.709 is limited to 25fps
 
 ---
 
@@ -554,11 +554,11 @@ D. Broadcast studio animators have shorter timelines because they have larger te
 
 ```
 1.  C   Guide layers are visible to animator but never appear in exports.
-2.  C   Graphic symbols sync to parent timeline — correct for walk cycle + dialogue sync.
+2.  C   Graphic symbols sync to parent timeline, correct for walk cycle + dialogue sync.
 3.  C   F8 converts selected artwork to a symbol.
-4.  B   Stream sync ties audio to timeline playhead — required for lip sync.
+4.  B   Stream sync ties audio to timeline playhead, required for lip sync.
 5.  C   In Merge Drawing Mode, different-colored overlapping shapes cut into each other.
-6.  B   Event sync plays to completion regardless of timeline position — correct for BG music.
+6.  B   Event sync plays to completion regardless of timeline position, correct for BG music.
 7.  B   Wrong registration point at bounding-box center causes rotation around wrong pivot.
 8.  B   Enter/Return plays and stops animation in Adobe Animate.
 9.  B   On twos = new drawing every 2 frames = 12 unique drawings/second at 24fps.
@@ -575,7 +575,7 @@ D. Broadcast studio animators have shorter timelines because they have larger te
 20. B   Retain Layer Sizes keeps each Illustrator layer as an individual AE layer.
 21. C   The mesh deforms when pins are moved, dragging the underlying image with them.
 22. B   Speed Graph shows velocity (rate of change); peaks = fast, valleys = slow.
-23. B   Null Objects are invisible at render time — they don't appear in exports.
+23. B   Null Objects are invisible at render time, they don't appear in exports.
 24. B   DUIK = free, open-source rigging plugin for After Effects by RxLaboratory.
 25. C   The foot or hand goal controller is the end effector the animator keyframes.
 26. B   Damping controls how quickly oscillation dies out after the spring is triggered.

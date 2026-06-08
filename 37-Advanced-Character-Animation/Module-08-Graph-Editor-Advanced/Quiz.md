@@ -22,7 +22,7 @@ D. A sudden impact with no ease
 
 ### Q3. A "stepped" tangent type produces:
 A. A smooth S-curve interpolation between keyframes  
-B. No interpolation — the value jumps at the keyframe  
+B. No interpolation, the value jumps at the keyframe  
 C. A linear diagonal line between keyframes  
 D. A hold until the next keyframe, then smooth interpolation  
 
@@ -30,7 +30,7 @@ D. A hold until the next keyframe, then smooth interpolation
 
 ### Q4. The "spline switch moment" in the stepped workflow refers to:
 A. Switching from Maya to another 3D application  
-B. The moment you change from stepped to spline tangents — your clean poses become a "swimming" mess  
+B. The moment you change from stepped to spline tangents, your clean poses become a "swimming" mess  
 C. Switching from blocking to layout on a shot  
 D. The moment the supervisor approves your spline version  
 
@@ -46,9 +46,9 @@ D. The curve display mode is set incorrectly in the graph editor preferences
 
 ### Q6. Which tangent type should be used at an impact contact frame?
 A. Spline (smooth, with potential overshoot)  
-B. Linear or flat — the object does not ease into a hard surface  
+B. Linear or flat, the object does not ease into a hard surface  
 C. Clamped (smooth, no overshoot)  
-D. Stepped — holds the previous value until the impact frame  
+D. Stepped, holds the previous value until the impact frame  
 
 ---
 
@@ -70,7 +70,7 @@ D. They are functionally identical and interchangeable
 
 ### Q9. An oscillating curve shape in the graph editor indicates:
 A. A held pose with no motion  
-B. Back-and-forth motion around a center point — follow-through or a wiggle  
+B. Back-and-forth motion around a center point, follow-through or a wiggle  
 C. A fast, mechanical constant-speed motion  
 D. A single impactful moment  
 
@@ -86,15 +86,15 @@ D. Adding sound design and editorial feedback
 
 ### Q11. An expression offset formula for secondary motion is written as:
 A. secondary = primary * delay  
-B. secondary = offset(primary, nFrames) — secondary equals primary delayed by N frames  
+B. secondary = offset(primary, nFrames), secondary equals primary delayed by N frames  
 C. secondary = primary + nFrames  
 D. secondary = primary - (nFrames * speed)  
 
 ---
 
 ### Q12. A perfectly flat (horizontal) curve segment indicates:
-A. Fast motion — the value is changing rapidly  
-B. A held value — no change in the animated channel  
+A. Fast motion, the value is changing rapidly  
+B. A held value, no change in the animated channel  
 C. The tangent handle is too long  
 D. The keyframe is on a fractional frame  
 
@@ -125,16 +125,16 @@ D. `frameValue(attribute, -t frame)`
 ---
 
 ### Q16. Comedy "snap" timing between held poses requires which tangent type at both keys?
-A. Spline — for smooth, fast motion  
-B. Clamped — for fast motion without overshoot  
-C. Flat — for the cartoon snap from one held pose to the next  
-D. Linear — for constant-speed motion  
+A. Spline, for smooth, fast motion  
+B. Clamped, for fast motion without overshoot  
+C. Flat, for the cartoon snap from one held pose to the next  
+D. Linear, for constant-speed motion  
 
 ---
 
 ### Q17. A "convex" curve (arching upward) represents:
 A. An object accelerating linearly  
-B. An object that peaks in value then descends — like a ball at the apex of a throw  
+B. An object that peaks in value then descends, like a ball at the apex of a throw  
 C. A held pose with no motion  
 D. A character snapping between two extreme poses  
 
@@ -166,9 +166,9 @@ D. An expression-driven secondary motion
 
 ### Q21. Why must the derivative (slope) curve be at its steepest at the midpoint of a perfect S-curve?
 A. This is a software requirement, not a physical principle  
-B. Maximum speed occurs in the middle of organic motion — the object is moving fastest between the ease-in start and ease-out end  
+B. Maximum speed occurs in the middle of organic motion, the object is moving fastest between the ease-in start and ease-out end  
 C. The steepest midpoint prevents overshoot at both ends  
-D. It is an aesthetic choice — there is no physical principle behind it  
+D. It is an aesthetic choice, there is no physical principle behind it  
 
 ---
 
@@ -199,28 +199,28 @@ D. Using an expression to lock the value during the hold
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — Y-axis: the animated channel's value
-Q2.  C — S-curve: slow-in, fast middle, slow-out (organic)
-Q3.  B — Stepped: no interpolation; value jumps at key
-Q4.  B — Spline switch: clean steps become swimming mess
-Q5.  B — Swimming: spline generates unexpected in-betweens
-Q6.  B — Impact frame: linear or flat; objects don't ease into hard surfaces
-Q7.  B — Short incoming handle: value reaches key quickly (fast ease-out)
-Q8.  B — Spline can overshoot; clamped cannot
-Q9.  B — Oscillating: back-and-forth (follow-through or wiggle)
-Q10. B — Phase 2: switch to spline; observe; fix major problems
-Q11. B — secondary = offset(primary, nFrames)
-Q12. B — Flat horizontal: held value, no change
-Q13. A — Too-flat ease-out: character stops before reaching hold pose
-Q14. B — Ease-in: long outgoing handle, short incoming handle
-Q15. B — `getAttr -t (frame) attribute` in Maya
-Q16. C — Comedy snap: flat tangents at both keys
-Q17. B — Convex: peaks then descends (ball apex)
-Q18. C — Most common error: swimming poses appear
-Q19. A — Stepped blocking: evaluate poses without interpolation
-Q20. B — Spike: sudden impact or direction change
-Q21. B — Maximum speed at midpoint is the physical reality of organic motion
-Q22. B — Damped oscillation: factor <1.0 reduces amplitude each cycle
-Q23. A — Smooth S-curve is correct; no issue
-Q24. B — Hold drift: add anchoring keyframe during the hold
+Q1.  B, Y-axis: the animated channel's value
+Q2.  C, S-curve: slow-in, fast middle, slow-out (organic)
+Q3.  B, Stepped: no interpolation; value jumps at key
+Q4.  B, Spline switch: clean steps become swimming mess
+Q5.  B, Swimming: spline generates unexpected in-betweens
+Q6.  B, Impact frame: linear or flat; objects don't ease into hard surfaces
+Q7.  B, Short incoming handle: value reaches key quickly (fast ease-out)
+Q8.  B, Spline can overshoot; clamped cannot
+Q9.  B, Oscillating: back-and-forth (follow-through or wiggle)
+Q10. B, Phase 2: switch to spline; observe; fix major problems
+Q11. B, secondary = offset(primary, nFrames)
+Q12. B, Flat horizontal: held value, no change
+Q13. A, Too-flat ease-out: character stops before reaching hold pose
+Q14. B, Ease-in: long outgoing handle, short incoming handle
+Q15. B, `getAttr -t (frame) attribute` in Maya
+Q16. C, Comedy snap: flat tangents at both keys
+Q17. B, Convex: peaks then descends (ball apex)
+Q18. C, Most common error: swimming poses appear
+Q19. A, Stepped blocking: evaluate poses without interpolation
+Q20. B, Spike: sudden impact or direction change
+Q21. B, Maximum speed at midpoint is the physical reality of organic motion
+Q22. B, Damped oscillation: factor <1.0 reduces amplitude each cycle
+Q23. A, Smooth S-curve is correct; no issue
+Q24. B, Hold drift: add anchoring keyframe during the hold
 ```

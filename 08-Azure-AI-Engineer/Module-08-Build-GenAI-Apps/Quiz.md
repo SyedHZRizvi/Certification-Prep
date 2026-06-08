@@ -185,13 +185,13 @@ D. Content filter modes
 
 ### Q22. **Case study (2 parts).** Maya wants to ship a help bot that answers from her PDF library, escalates to a human when confidence is low, and supports both web and Teams. *(Apply)*
 
-Part A — For retrieval over PDFs with citations and grounded answers, she should use:
+Part A, For retrieval over PDFs with citations and grounded answers, she should use:
 A. Custom Vision + Bot Service
 B. Azure AI Search (hybrid + semantic) + Azure OpenAI On Your Data
 C. Azure ML + Cosmos DB
 D. Translator + Question Answering
 
-Part B — To deploy the same logic to web and Teams without rewriting:
+Part B, To deploy the same logic to web and Teams without rewriting:
 A. Build two separate bots
 B. Build one Bot Framework bot, connect both Web Chat and Teams channels via Azure AI Bot Service
 C. Use Direct Line only
@@ -239,7 +239,7 @@ D. "GitHub Copilot doesn't use evaluation"
 
 ---
 
-### Q28. **Design task (Capstone preview).** You're building the production GenAI claims-processing system from the course Capstone. Which **Foundry composition** below most faithfully matches the spec — production-grade RAG over PDFs + adjuster summaries + content safety + managed identity + observability + go/no-go evaluation gate? *(Create)*
+### Q28. **Design task (Capstone preview).** You're building the production GenAI claims-processing system from the course Capstone. Which **Foundry composition** below most faithfully matches the spec, production-grade RAG over PDFs + adjuster summaries + content safety + managed identity + observability + go/no-go evaluation gate? *(Create)*
 A. Default everything in one project
 B. (1) A Foundry **Hub** for the org (shared infra, security baselines, connections to AOAI + AI Search + Storage) → (2) one **Project** per claims-app; (3) **Connections** to Azure OpenAI (gpt-4o-chat deployment + embeddings) and Azure AI Search hybrid+semantic index; (4) **Prompt flow** with variants for intake/triage/routing/summary, A/B-compared; (5) **Foundry Evaluation** workflow with Groundedness + Relevance + Coherence + Safety + custom-business metrics on a held-out 1K-case golden set, run as a release gate before every model upgrade; (6) **Agent Service** for the adjuster-summary tool (file_search + function_calling for line-of-business APIs); (7) **Monitoring** routed to Application Insights with drift alerts vs the eval baseline; (8) Per-deployment **content filter** with Prompt Shields + Groundedness; (9) **Managed identity** everywhere; (10) **Private Endpoints** + region pinning + CMK; (11) optional **Semantic Kernel** in the line-of-business app code for portable orchestration
 C. Skip evaluation, skip monitoring, hope for the best

@@ -1,25 +1,25 @@
 # Module 6: Bitcoin Script & Programmability 📜
 
-> **Why this module matters:** Bitcoin has a programming language. Most people don't know that, and most discussions of "smart contracts" implicitly compare Bitcoin's Script to Ethereum's EVM and call the comparison a Bitcoin loss. This module argues the opposite: **Bitcoin Script is what Bitcoin *should* be** — a deliberately bounded language that buys decades of safety, and which (post-Taproot) is far more expressive than 2009-vintage Script. You'll leave this module able to read a P2PKH locking script, understand how SegWit decoupled signature from transaction ID, and explain how Taproot's MAST + Schnorr enables 5-of-9 multi-sig that looks like single-sig on-chain.
+> **Why this module matters:** Bitcoin has a programming language. Most people don't know that, and most discussions of "smart contracts" implicitly compare Bitcoin's Script to Ethereum's EVM and call the comparison a Bitcoin loss. This module argues the opposite: **Bitcoin Script is what Bitcoin *should* be**, a deliberately bounded language that buys decades of safety, and which (post-Taproot) is far more expressive than 2009-vintage Script. You'll leave this module able to read a P2PKH locking script, understand how SegWit decoupled signature from transaction ID, and explain how Taproot's MAST + Schnorr enables 5-of-9 multi-sig that looks like single-sig on-chain.
 
 > **Prerequisites for this module.** Before starting:
-> - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md) — HASH160, ECDSA, Schnorr
-> - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md) — transaction structure, ScriptSig vs ScriptPubKey
-> - [Module 4 (Wallets)](../Module-04-Wallets-Keys-Self-Custody/Reading.md) — address types
+> - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md), HASH160, ECDSA, Schnorr
+> - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md), transaction structure, ScriptSig vs ScriptPubKey
+> - [Module 4 (Wallets)](../Module-04-Wallets-Keys-Self-Custody/Reading.md), address types
 
 ---
 
 ## ☕ A Story: The Soft Fork Bitcoin Activated by Doing Nothing
 
-It is **November 14, 2021**. At block height **709,632**, the Taproot soft fork activates on the Bitcoin network. Three Bitcoin Improvement Proposals — BIP-340 (Schnorr signatures), BIP-341 (Taproot, including MAST), BIP-342 (Tapscript) — become consensus rules.
+It is **November 14, 2021**. At block height **709,632**, the Taproot soft fork activates on the Bitcoin network. Three Bitcoin Improvement Proposals BIP-340 (Schnorr signatures), BIP-341 (Taproot, including MAST), BIP-342 (Tapscript) become consensus rules.
 
 Almost nothing visibly changes. The price of Bitcoin doesn't move on the news (already priced in). Most users have no idea anything happened. Most wallets don't yet support Taproot addresses.
 
-But under the hood, four years of cryptographic engineering have just shipped. **Schnorr signatures replace ECDSA for new transactions.** **Multi-signature spending can now be aggregated into a single signature using MuSig2** — meaning a 5-of-9 corporate vault looks indistinguishable on-chain from a single-sig personal wallet. **Merkelized Alternative Script Trees (MAST) let complex contracts reveal only the actual execution path** — privacy and efficiency at the same time. The script length limit and `OP_*` opcode menu expand modestly. The total Bitcoin script ecosystem becomes more expressive in the same week.
+But under the hood, four years of cryptographic engineering have just shipped. **Schnorr signatures replace ECDSA for new transactions.** **Multi-signature spending can now be aggregated into a single signature using MuSig2** meaning a 5-of-9 corporate vault looks indistinguishable on-chain from a single-sig personal wallet. **Merkelized Alternative Script Trees (MAST) let complex contracts reveal only the actual execution path** privacy and efficiency at the same time. The script length limit and `OP_*` opcode menu expand modestly. The total Bitcoin script ecosystem becomes more expressive in the same week.
 
 The Taproot activation was significant for what it *didn't* do. It didn't add Turing-completeness. It didn't introduce a new VM. It didn't enable Ethereum-style smart contracts. It tightened consensus rules backward-compatibly, kept the conservative posture, and shipped years of careful work.
 
-That story is your first lesson: **Bitcoin's culture is "do less, but ship what you do correctly." Taproot represents the most expressive Bitcoin Script change in a decade — and it was a soft fork small enough that most non-developers didn't notice it shipped.**
+That story is your first lesson: **Bitcoin's culture is "do less, but ship what you do correctly." Taproot represents the most expressive Bitcoin Script change in a decade, and it was a soft fork small enough that most non-developers didn't notice it shipped.**
 
 This module is the language.
 
@@ -27,7 +27,7 @@ This module is the language.
 
 ## 🔤 What Bitcoin Script Is
 
-**Bitcoin Script** is a **stack-based**, **non-Turing-complete** scripting language. Every Bitcoin transaction output (UTXO) has a **locking script** (ScriptPubKey) attached. To spend that output, the spender provides an **unlocking script** (ScriptSig, or in SegWit/Taproot, the witness) that — when executed alongside the locking script — leaves a `true` on the stack and the stack contains no other elements.
+**Bitcoin Script** is a **stack-based**, **non-Turing-complete** scripting language. Every Bitcoin transaction output (UTXO) has a **locking script** (ScriptPubKey) attached. To spend that output, the spender provides an **unlocking script** (ScriptSig, or in SegWit/Taproot, the witness) that when executed alongside the locking script leaves a `true` on the stack and the stack contains no other elements.
 
 | Property | Choice | Why |
 |----------|--------|-----|
@@ -74,7 +74,7 @@ Input {
 
 Five output types account for >99% of Bitcoin's UTXO set in 2026.
 
-### 1. P2PK (Pay-to-Public-Key) — Day 1, mostly historical
+### 1. P2PK (Pay-to-Public-Key), Day 1, mostly historical
 
 ```
 ScriptPubKey:  <pubkey> OP_CHECKSIG
@@ -83,7 +83,7 @@ ScriptSig:     <signature>
 
 Used in the very early days (Satoshi sending to Hal Finney, the 50-BTC Genesis output). Verbose; the full public key sits in the output. Mostly deprecated; many of Satoshi's coins are in P2PK outputs.
 
-### 2. P2PKH (Pay-to-Public-Key-Hash) — Legacy, addresses start with "1"
+### 2. P2PKH (Pay-to-Public-Key-Hash), Legacy, addresses start with "1"
 
 ```
 ScriptPubKey:  OP_DUP OP_HASH160 <pubkey_hash> OP_EQUALVERIFY OP_CHECKSIG
@@ -101,7 +101,7 @@ The most-common legacy address format. Spender reveals pubkey at spend time; rec
 6. `OP_CHECKSIG` pops pubkey + signature, returns true if signature is valid.
 7. Stack ends with `true` → output unlocked.
 
-### 3. P2SH (Pay-to-Script-Hash) — BIP-16, April 2012, addresses start with "3"
+### 3. P2SH (Pay-to-Script-Hash), BIP-16, April 2012, addresses start with "3"
 
 The brilliance of P2SH: lock to the *hash of a redeem script* rather than a specific script. Spender reveals the script at spend time.
 
@@ -119,13 +119,13 @@ Use cases:
 
 🎯 **Exam tip.** P2SH was the first Bitcoin soft fork (BIP-16, April 2012). The addresses start with "3". The hash committed in the output is the HASH160 of the redeem script.
 
-### 4. P2WPKH / P2WSH (Native SegWit) — BIP-141, August 2017, addresses start with "bc1q..."
+### 4. P2WPKH / P2WSH (Native SegWit), BIP-141, August 2017, addresses start with "bc1q..."
 
 SegWit (Segregated Witness) moves signatures into a separate witness field, fixing three problems:
 
-- **Transaction malleability** — TxID no longer depends on signature shape
-- **Block-space efficiency** — witness data is discounted in weight calculation
-- **Scripting extensibility** — versioned witness program enables future upgrades like Taproot
+- **Transaction malleability**, TxID no longer depends on signature shape
+- **Block-space efficiency**, witness data is discounted in weight calculation
+- **Scripting extensibility**, versioned witness program enables future upgrades like Taproot
 
 ```
 ScriptPubKey:  <0x00> <pubkey_hash>     (P2WPKH; 20 bytes)
@@ -140,7 +140,7 @@ Witness:       <signature> <pubkey>      (P2WPKH)
 1. **Weight units instead of bytes.** Max block weight = 4,000,000 WU. Non-witness data counts as 4 WU/byte; witness data counts as 1 WU/byte. So a witness-heavy block can be larger than 1 MB in bytes.
 2. **Fixes malleability.** TxID is now independent of signature shape, enabling Lightning to use unconfirmed transactions as channel commitments (Module 7).
 
-### 5. P2TR (Pay-to-Taproot) — BIP-341, November 2021, addresses start with "bc1p..."
+### 5. P2TR (Pay-to-Taproot), BIP-341, November 2021, addresses start with "bc1p..."
 
 Taproot is the most consequential Bitcoin Script upgrade since SegWit. It combines three things:
 
@@ -155,7 +155,7 @@ ScriptPubKey:  <0x01> <33-byte taproot output key>
 The output key is a tweaked public key derived from:
 
 - An **internal public key** (Schnorr-valid pubkey, possibly a MuSig aggregation of multiple)
-- A **Merkle root** of alternative script paths (which may be empty — pure key-path)
+- A **Merkle root** of alternative script paths (which may be empty, pure key-path)
 
 #### Key-path vs script-path spending
 
@@ -180,7 +180,7 @@ MAST = a Merkle tree of alternative scripts. Each "leaf" is a script; the root c
 - Path 2: Owner + spouse sign jointly (also common)
 - Path 3: Spouse + attorney sign after 1-year timelock (rare, for inheritance)
 
-Pre-Taproot: all three paths are visible in the redeem script when first spent — leaking the spending logic. Post-Taproot with MAST: only the path actually used is revealed. The hidden paths stay private forever.
+Pre-Taproot: all three paths are visible in the redeem script when first spent, leaking the spending logic. Post-Taproot with MAST: only the path actually used is revealed. The hidden paths stay private forever.
 
 🎯 **Exam tip.** MAST + Schnorr together = the institutional-custody privacy upgrade of 2021. Princeton and Stanford coursework name-checks the combination.
 
@@ -195,7 +195,7 @@ Two soft forks added time-based spending conditions:
 | **OP_CHECKLOCKTIMEVERIFY (CLTV)** | BIP-65 | Dec 2015 | Output can only be spent after absolute block height or time |
 | **OP_CHECKSEQUENCEVERIFY (CSV)** | BIP-112 | July 2016 | Output can only be spent after relative delay |
 
-### CLTV — absolute timelock
+### CLTV, absolute timelock
 
 ```
 <timelock_value> OP_CHECKLOCKTIMEVERIFY OP_DROP <regular_script>
@@ -206,7 +206,7 @@ Spendable only after block height (or Unix timestamp) `timelock_value`. Used for
 - Inheritance contracts ("after 2030-01-01, my children can claim")
 - Vested grants ("vest 25% in year 2, 50% in year 3...")
 
-### CSV — relative timelock
+### CSV, relative timelock
 
 ```
 <relative_delay> OP_CHECKSEQUENCEVERIFY OP_DROP <regular_script>
@@ -214,7 +214,7 @@ Spendable only after block height (or Unix timestamp) `timelock_value`. Used for
 
 Spendable only `relative_delay` blocks after the *containing transaction* was confirmed. Used for:
 
-- **Lightning Network channel timeouts** (Module 7) — the cornerstone of HTLCs
+- **Lightning Network channel timeouts** (Module 7), the cornerstone of HTLCs
 - "Wait 24 hours after issuance before withdrawal" patterns
 
 🎯 **MEMORIZE THIS.** CLTV = absolute, CSV = relative. Lightning HTLCs depend on CSV. Inheritance and vesting depend on CLTV.
@@ -249,7 +249,7 @@ Same effective transaction, but P2WPKH is **~3× cheaper** in weight. Hence fee 
 
 ---
 
-## 💼 Case Study — The Taproot Activation (November 14, 2021)
+## 💼 Case Study, The Taproot Activation (November 14, 2021)
 
 **Situation.** By 2020, Bitcoin had been without a soft fork in three years (since SegWit). The Taproot proposal had gone through over four years of cryptographic engineering, review, and BIP authorship by Pieter Wuille, Jonas Nick, Tim Ruffing, and Anthony Towns. The community had learned hard lessons from the bitter SegWit / BCH activation battles of 2017. Activation needed to avoid the political theater of 2017.
 
@@ -257,7 +257,7 @@ Same effective transaction, but P2WPKH is **~3× cheaper** in weight. Hence fee 
 
 Signaling reached the 90% threshold by **June 12, 2021** (the second signaling period). Lock-in followed; activation at block **709,632 on November 14, 2021**. No chain split. No mempool drama. No major drama at all.
 
-**Outcome.** Taproot was the smoothest major soft-fork activation in Bitcoin's history. Adoption has been gradual: as of 2025, ~30-40% of new transactions use P2TR addresses; the rest are P2WPKH (SegWit) and legacy. The privacy benefits accumulate over time — the more Taproot adoption, the more single-sig and multi-sig spends are indistinguishable.
+**Outcome.** Taproot was the smoothest major soft-fork activation in Bitcoin's history. Adoption has been gradual: as of 2025, ~30-40% of new transactions use P2TR addresses; the rest are P2WPKH (SegWit) and legacy. The privacy benefits accumulate over time, the more Taproot adoption, the more single-sig and multi-sig spends are indistinguishable.
 
 Three downstream consequences:
 
@@ -285,7 +285,7 @@ Three downstream consequences:
 - Lock to a public key or pubkey hash (P2PK, P2PKH, P2WPKH, P2TR)
 - Multi-signature (M-of-N) via P2SH, P2WSH, or P2TR
 - Time-locked spending (CLTV, CSV)
-- Hash-lock conditions (preimage-reveal — used in HTLCs)
+- Hash-lock conditions (preimage-reveal, used in HTLCs)
 - Merkelized alternative paths (MAST in Taproot)
 - Atomic swaps (across chains, via HTLCs)
 
@@ -301,7 +301,7 @@ Three downstream consequences:
 
 ---
 
-## 🔬 Tapscript — The Updated Scripting Language
+## 🔬 Tapscript, The Updated Scripting Language
 
 Tapscript (BIP-342) is the scripting language used inside Taproot's script-path spends. Differences from legacy Script:
 
@@ -320,7 +320,7 @@ Tapscript (BIP-342) is the scripting language used inside Taproot's script-path 
 |---|---|
 | "Bitcoin doesn't have smart contracts" | It does. They're called "Scripts" and they're deliberately non-Turing-complete. |
 | "Taproot makes Bitcoin Turing-complete" | No. Taproot adds Schnorr + MAST + minor opcode changes. Still bounded. |
-| "Ordinals are an attack on Bitcoin" | Or a feature — depends on framing. The Taproot rules permitted them; the market priced the resulting fee market. |
+| "Ordinals are an attack on Bitcoin" | Or a feature, depends on framing. The Taproot rules permitted them; the market priced the resulting fee market. |
 | "P2SH is deprecated" | Pre-SegWit P2SH is mostly replaced by P2WSH. But P2SH-wrapped-SegWit (3...) is still common for legacy-wallet compatibility. |
 | "Multi-sig is identifiable on-chain" | Pre-Taproot: yes, the script structure is visible at spend. Post-Taproot with MuSig2: cooperating multi-sig is indistinguishable from single-sig. |
 | "SegWit increased the block size" | Technically yes (4 MWU vs 1 MB), but the framing is "different unit, witness discounted." |
@@ -377,7 +377,7 @@ You now know:
 - 🧱 How `OP_DUP OP_HASH160 ... OP_EQUALVERIFY OP_CHECKSIG` unlocks a P2PKH spend
 - 🆕 SegWit (BIP-141, August 2017): weight units, malleability fix, 4 MWU cap
 - ✨ Taproot (BIPs 340/341/342, November 2021): Schnorr + MAST + Tapscript
-- 🧮 MAST and the privacy property — cooperating multi-sig indistinguishable from single-sig
+- 🧮 MAST and the privacy property, cooperating multi-sig indistinguishable from single-sig
 - 🕰️ CLTV (absolute) and CSV (relative) timelocks
 - 💼 The November 2021 Taproot activation case and the Ordinals downstream consequence
 
@@ -396,7 +396,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Turing-complete vs bounded.** Vitalik Buterin's 2014 critique of Bitcoin Script motivated Ethereum's Turing-complete EVM. The DAO hack (2016) proved one cost of that choice. Construct the strongest argument that Bitcoin's bounded design was correct AND the strongest counter-argument. Where would you draw the line in 2026?
 2. **The Ordinals debate.** The Inscriptions protocol used a Taproot quirk to encode arbitrary data in witness data. The community split into "spam" vs "feature" camps. Construct the strongest version of each. What does the resulting fee market imply about permissionless protocols?
@@ -408,12 +408,12 @@ You now know:
 
 ## 📚 Further Reading
 
-- 📖 **Antonopoulos — *Mastering Bitcoin* 2e** Chapter 7 (Advanced Transactions and Scripting) + Chapter 9 (SegWit).
-- 📖 **Antonopoulos / Osuntokun / Pickhardt — *Mastering the Lightning Network*** Chapter 5 (Bitcoin Foundations Including SegWit).
+- 📖 **Antonopoulos, *Mastering Bitcoin* 2e** Chapter 7 (Advanced Transactions and Scripting) + Chapter 9 (SegWit).
+- 📖 **Antonopoulos / Osuntokun / Pickhardt, *Mastering the Lightning Network*** Chapter 5 (Bitcoin Foundations Including SegWit).
 - 📰 **BIP-16, 65, 112, 141, 173, 340, 341, 342, 350** at github.com/bitcoin/bips.
-- 📰 **Pieter Wuille — Taproot explainer threads on Twitter (2020-2021).**
-- 📰 **Murch — Bitcoin Script primer at murch.one.**
-- 📰 **Bitcoin Optech — Taproot Workshop materials.**
-- 📰 **Casey Rodarmor — Ordinals theory.**
-- 🎓 **MIT 15.S12 — Lecture 11** (Smart Contracts).
-- 🎓 **Stanford CS251 — Lecture 6** (Bitcoin Script).
+- 📰 **Pieter Wuille, Taproot explainer threads on Twitter (2020-2021).**
+- 📰 **Murch, Bitcoin Script primer at murch.one.**
+- 📰 **Bitcoin Optech, Taproot Workshop materials.**
+- 📰 **Casey Rodarmor, Ordinals theory.**
+- 🎓 **MIT 15.S12, Lecture 11** (Smart Contracts).
+- 🎓 **Stanford CS251, Lecture 6** (Bitcoin Script).

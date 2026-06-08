@@ -1,8 +1,8 @@
 ---
-title: "Module 4 Cheat Sheet: Tracking — 2D, 3D & Planar"
+title: "Module 4 Cheat Sheet: Tracking, 2D, 3D & Planar"
 ---
 
-# 🗒️ Module 4 Cheat Sheet: Tracking — 2D, 3D & Planar
+# 🗒️ Module 4 Cheat Sheet: Tracking, 2D, 3D & Planar
 
 ## Tracking Method Selection
 
@@ -35,7 +35,7 @@ title: "Module 4 Cheat Sheet: Tracking — 2D, 3D & Planar"
 | Quality | Description |
 |---------|-------------|
 | High contrast | Feature stands out from surroundings |
-| Unique texture | Corner or edge — not a uniform pattern |
+| Unique texture | Corner or edge, not a uniform pattern |
 | Stays visible | Present throughout the full shot |
 | Rigid surface | Not on faces, clothing, or deforming materials |
 | Not motion-blurred | Sharp features track more reliably |
@@ -106,7 +106,7 @@ title: "Module 4 Cheat Sheet: Tracking — 2D, 3D & Planar"
 | Data Item | Purpose |
 |-----------|---------|
 | Focal length + distortion profile | Lens undistortion for accurate solve |
-| Surveyed marker positions (3D world space) | Absolute scale reference — prevents wrong-scale CG |
+| Surveyed marker positions (3D world space) | Absolute scale reference, prevents wrong-scale CG |
 | Witness camera plates | Secondary angle reference |
 | HDR probe | IBL for 3D lighting match |
 | Tracking marker photos | Feature correspondence for 3DE |

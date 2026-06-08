@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — MD-102 (First Half)
+# 🧪 Practice Exam 1, MD-102 (First Half)
 
 > **Conditions:** Set a 70-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 28/40 (≈ 70%, matching the real exam)
@@ -20,7 +20,7 @@ B. MDM enrolls the device; MAM protects data inside specific apps
 C. MDM is older technology being phased out
 D. MAM requires Entra ID P2
 
-### 3. A personally owned Android phone needing corporate email access — without device enrollment — should use:
+### 3. A personally owned Android phone needing corporate email access without device enrollment should use:
 A. Hybrid Azure AD join
 B. App Protection Policy + Conditional Access requiring approved client app
 C. Full MDM enrollment
@@ -123,7 +123,7 @@ B. Exclude wins (user does NOT receive policy)
 C. User receives a hybrid version
 D. Conflict logged as sync error
 
-### 19. **Yes/No** — Mark each statement.
+### 19. **Yes/No**, Mark each statement.
 
 **S1:** A device can be both Entra registered AND Entra joined simultaneously.
 **S2:** A device can be Entra joined and Configuration Manager–managed simultaneously.
@@ -219,7 +219,7 @@ B. 5 → 4 → 1 → 2 → 3
 C. 1 → 2 → 3 → 4 → 5
 D. 3 → 2 → 1 → 5 → 4
 
-### 33. **Yes/No** — Enrollment & compliance.
+### 33. **Yes/No**, Enrollment & compliance.
 
 **S1:** Supervised iOS devices can be locked to a single app via kiosk profile.
 **S2:** Enrollment restrictions assign to device groups.
@@ -234,7 +234,7 @@ D. Yes / No / No
 A. Delete its CA-eligible groups
 B. Use the Users → Exclude clause on every CA policy
 C. Give it Global Administrator role only
-D. Skip — break-glass should be subject to all policies
+D. Skip, break-glass should be subject to all policies
 
 ### 35. Apple's Volume Purchase Program (VPP) is used to:
 A. Manage iCloud storage
@@ -258,9 +258,9 @@ D. Blocks sign-in
 A. Joined to Entra ID only
 B. Joined to on-prem AD only
 C. Joined to both on-prem AD and Entra ID, with synced device objects
-D. Joined to neither — workgroup
+D. Joined to neither, workgroup
 
-### 39. **Yes/No** — Per statement.
+### 39. **Yes/No**, Per statement.
 
 **S1:** Conditional Access requires Entra ID P1 minimum.
 **S2:** Identity Protection (risk-based CA) requires Entra ID P2.
@@ -300,7 +300,7 @@ D. No mobile email access
 
 | Score | Verdict |
 |-------|---------|
-| 38–40 | 🏆 Excellent — ready for Practice-Exam-2 |
+| 38–40 | 🏆 Excellent, ready for Practice-Exam-2 |
 | 28–37 | ✅ On track. Review missed Qs, then continue. |
 | 20–27 | ⚠️ Re-study weak modules (use the table below) |
 | <20   | 🔁 Restart from Module 1 |
@@ -335,7 +335,7 @@ For EACH wrong answer:
 
 > Per the gold-standard spec, every option is explained. Use these to retire concepts you missed.
 
-**Q1. Answer: B.** *Why B is correct.* The three Microsoft Entra device join states are Entra registered (BYOD), Entra joined (cloud-only corporate), and Microsoft Entra hybrid joined (both AD + Entra). *Why the other options are wrong.* **A**: Domain join is the legacy AD term — not modern Microsoft terminology. **C**: Online/Offline/Hybrid is not a join-state taxonomy. **D**: Personal/Corporate/Shared describes ownership, not join state. *Exam-takeaway.* Memorize the three join states.
+**Q1. Answer: B.** *Why B is correct.* The three Microsoft Entra device join states are Entra registered (BYOD), Entra joined (cloud-only corporate), and Microsoft Entra hybrid joined (both AD + Entra). *Why the other options are wrong.* **A**: Domain join is the legacy AD term, not modern Microsoft terminology. **C**: Online/Offline/Hybrid is not a join-state taxonomy. **D**: Personal/Corporate/Shared describes ownership, not join state. *Exam-takeaway.* Memorize the three join states.
 
 **Q2. Answer: B.** *Why B is correct.* MDM enrolls the entire device; MAM protects corporate data inside specific apps. This is the single most important Intune distinction. *Why the other options are wrong.* **A**: Both work across Windows + mobile. **C**: MDM is not being phased out. **D**: Neither requires P2. *Exam-takeaway.* This distinction underlies dozens of MD-102 questions.
 
@@ -343,7 +343,7 @@ For EACH wrong answer:
 
 **Q4. Answer: B.** *Why B is correct.* Microsoft's three Zero Trust principles verbatim. *Why the other options are wrong.* **A**: "Trust but verify" is the OPPOSITE of Zero Trust. **C**: NIST CSF functions, not Zero Trust principles. **D**: AAA is a different security framework. *Exam-takeaway.* Memorize the three ZT principles word-for-word.
 
-**Q5. Answer: B.** *Why B is correct.* The modern cloud-native endpoint stack per Microsoft's recommendation. *Why the other options are wrong.* **A**: The legacy AD/GPO/WSUS stack — wrong era. **C**: Workgroup = no management. **D**: ConfigMgr alone misses cloud capabilities. *Exam-takeaway.* This is the canonical 2024+ stack.
+**Q5. Answer: B.** *Why B is correct.* The modern cloud-native endpoint stack per Microsoft's recommendation. *Why the other options are wrong.* **A**: The legacy AD/GPO/WSUS stack, wrong era. **C**: Workgroup = no management. **D**: ConfigMgr alone misses cloud capabilities. *Exam-takeaway.* This is the canonical 2024+ stack.
 
 **Q6. Answer: B.** *Why B is correct.* Co-management = parallel ConfigMgr + Intune management of one device. *Why the other options are wrong.* **A**: Co-management isn't about users. **C**: Defender doesn't manage Intune. **D**: Multi-tenant is a different concept. *Exam-takeaway.* The bridge between legacy and modern.
 
@@ -401,7 +401,7 @@ For EACH wrong answer:
 
 **Q33. Answer: A.** *Why A is correct.* Supervised iOS supports kiosk (Yes). Enrollment restrictions are USER groups (No). Dedicated = single app (Yes). *Why the other options are wrong.* Misreads. *Exam-takeaway.* Enrollment restrictions ALWAYS target users.
 
-**Q34. Answer: B.** *Why B is correct.* Exclude break-glass from every CA — the standard pattern. *Why the other options are wrong.* Deleting groups loses break-glass. GA alone doesn't bypass CA. Including breaks the lockout-insurance principle. *Exam-takeaway.* Mandatory CA exclusion.
+**Q34. Answer: B.** *Why B is correct.* Exclude break-glass from every CA, the standard pattern. *Why the other options are wrong.* Deleting groups loses break-glass. GA alone doesn't bypass CA. Including breaks the lockout-insurance principle. *Exam-takeaway.* Mandatory CA exclusion.
 
 **Q35. Answer: B.** *Why B is correct.* VPP = enterprise iOS app bulk licensing via ABM. *Why the other options are wrong.* iCloud unrelated. CA unrelated. Software updates unrelated. *Exam-takeaway.* VPP requires ABM + token.
 
@@ -411,6 +411,6 @@ For EACH wrong answer:
 
 **Q38. Answer: C.** *Why C is correct.* Hybrid join = both AD + Entra. *Why the other options are wrong.* "Only" answers wrong. Workgroup is neither. *Exam-takeaway.* Hybrid = both.
 
-**Q39. Answer: B.** *Why B is correct.* CA = P1 (Yes). Identity Protection = P2 (Yes). M365 E5 includes Intune Plan 1, not Plan 2 (No — Plan 2 sold separately). *Why the other options are wrong.* Misreads license bundling. *Exam-takeaway.* Memorize the licensing matrix.
+**Q39. Answer: B.** *Why B is correct.* CA = P1 (Yes). Identity Protection = P2 (Yes). M365 E5 includes Intune Plan 1, not Plan 2 (No, Plan 2 sold separately). *Why the other options are wrong.* Misreads license bundling. *Exam-takeaway.* Memorize the licensing matrix.
 
-**Q40. Answer: B.** *Why B is correct.* The Unilever-style BYOD model verbatim. *Why the other options are wrong.* Full MDM, network trust, no mobile email — all anti-modern. *Exam-takeaway.* MAM-only + CA + block legacy.
+**Q40. Answer: B.** *Why B is correct.* The Unilever-style BYOD model verbatim. *Why the other options are wrong.* Full MDM, network trust, no mobile email, all anti-modern. *Exam-takeaway.* MAM-only + CA + block legacy.

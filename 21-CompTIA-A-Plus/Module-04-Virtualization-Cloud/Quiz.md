@@ -48,7 +48,7 @@ D. On-prem cluster
 
 ---
 
-### Q6. Type 2 hypervisor that runs on top of a host OS — example? *(Remember)*
+### Q6. Type 2 hypervisor that runs on top of a host OS, example? *(Remember)*
 A. VMware ESXi
 B. Microsoft Hyper-V Server
 C. Oracle VirtualBox
@@ -74,7 +74,7 @@ D. The compliance auditor
 
 ### Q9. A team uses snapshots aggressively, taking 10 snapshots per VM per day. What's the operational risk? *(Analyze)*
 A. Snapshots make VMs faster
-B. Snapshots are not backups — they consume storage and can corrupt the chain if not managed
+B. Snapshots are not backups, they consume storage and can corrupt the chain if not managed
 C. Snapshots auto-delete after 24 hours
 D. Snapshots are free
 
@@ -112,7 +112,7 @@ D. Containerized microservices
 
 ---
 
-### Q14. Thin-provisioned disk vs thick-provisioned — what's the trade-off? *(Analyze)*
+### Q14. Thin-provisioned disk vs thick-provisioned, what's the trade-off? *(Analyze)*
 A. Thin pre-allocates; thick grows on write
 B. Thin grows on write (saves space); thick pre-allocates (predictable performance, no over-commit surprise)
 C. They're the same
@@ -197,7 +197,7 @@ D. Only public cloud
 > *Create-level note:* you're picking the *combination* of cloud deployment + service models.
 A. SaaS only
 B. Public IaaS only
-C. **Hybrid cloud** — private cloud for customer data + public IaaS for compute burst, with secure connectivity (VPN or Direct Connect)
+C. **Hybrid cloud**, private cloud for customer data + public IaaS for compute burst, with secure connectivity (VPN or Direct Connect)
 D. Community cloud for the whole environment
 
 ---
@@ -211,7 +211,7 @@ ESXi runs directly on hardware. Type 1 hypervisors include ESXi, Hyper-V Server,
 Infrastructure as a Service gives you VMs/networks/disks. You manage the OS and everything above.
 
 ### Q3: **C. SaaS**
-M365 is delivered software — you use it, Microsoft runs it.
+M365 is delivered software, you use it, Microsoft runs it.
 
 ### Q4: **D. Guaranteed lowest cost**
 The 5 are: on-demand self-service, broad network access, resource pooling, rapid elasticity, measured service. Lowest cost is *not* a characteristic.
@@ -299,4 +299,4 @@ Private for data, public for burst compute, VPN/Direct Connect for secure linkag
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — Troubleshooting](../Module-05-Troubleshooting/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, Troubleshooting](../Module-05-Troubleshooting/Reading.md)

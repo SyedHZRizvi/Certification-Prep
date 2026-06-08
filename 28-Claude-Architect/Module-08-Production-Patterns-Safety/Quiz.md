@@ -51,7 +51,7 @@ D. Cache only
 
 ### Q6. The "authority hierarchy" pattern in a system prompt: *(Understand)*
 A. Lists multiple "do not" rules
-B. Explicitly enumerates which sources outrank which (policies > tools > user > tool output) — guides the model in conflicts
+B. Explicitly enumerates which sources outrank which (policies > tools > user > tool output), guides the model in conflicts
 C. Encrypts the system prompt
 D. Locks the model to one task
 
@@ -139,7 +139,7 @@ D. 504
 
 ### Q17. The PRIMARY benefit of VPC endpoints / Private Service Connect for Bedrock/Vertex deployments: *(Understand)*
 A. Cheaper
-B. Traffic stays inside your cloud's backbone (no public internet egress) — for compliance + security
+B. Traffic stays inside your cloud's backbone (no public internet egress), for compliance + security
 C. Faster
 D. Smaller attack surface for DDoS
 
@@ -189,7 +189,7 @@ D. None
 A. >0% (any occurrence)
 B. >1% of calls (sustained), indicating truncation problems
 C. >50%
-D. Never — it's normal
+D. Never, it's normal
 
 ---
 

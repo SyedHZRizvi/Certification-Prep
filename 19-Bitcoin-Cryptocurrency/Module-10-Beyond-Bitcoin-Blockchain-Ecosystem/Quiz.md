@@ -1,4 +1,4 @@
-# ✏️ Module 10 Quiz: Beyond Bitcoin — Broader Blockchain Ecosystem
+# ✏️ Module 10 Quiz: Beyond Bitcoin, Broader Blockchain Ecosystem
 
 > 26 questions. Closed book. Aim for 22/26.
 
@@ -50,7 +50,7 @@ D. November 14, 2021
 A. 5%
 B. 50%
 C. 99.95%
-D. 0% — no change
+D. 0%, no change
 
 ---
 
@@ -72,7 +72,7 @@ D. Reverting transactions
 
 ### Q9. A ZK rollup works by: *(Apply)*
 A. Assuming validity; allowing 7-day fraud-proof window
-B. Submitting a cryptographic validity proof (ZK-SNARK / ZK-STARK) with each batch — mathematically proving correctness
+B. Submitting a cryptographic validity proof (ZK-SNARK / ZK-STARK) with each batch, mathematically proving correctness
 C. Using only Bitcoin Script
 D. Skipping the L1 entirely
 
@@ -80,7 +80,7 @@ D. Skipping the L1 entirely
 
 ### Q10. EIP-4844 (Dencun upgrade, March 2024) introduced: *(Apply)*
 A. Proof-of-Stake
-B. Blob-carrying transactions — temporary (~18-day) data buckets that reduce rollup data-posting costs ~10x
+B. Blob-carrying transactions, temporary (~18-day) data buckets that reduce rollup data-posting costs ~10x
 C. Account abstraction
 D. NFTs
 
@@ -88,7 +88,7 @@ D. NFTs
 
 ### Q11. The three flavors of stablecoin are: *(Apply)*
 A. Hot, warm, cold
-B. Fiat-backed (USDC, USDT), crypto-collateralized (DAI), and algorithmic (UST — extinct)
+B. Fiat-backed (USDC, USDT), crypto-collateralized (DAI), and algorithmic (UST, extinct)
 C. Layer-1, Layer-2, Layer-3
 D. Public, private, hybrid
 
@@ -96,7 +96,7 @@ D. Public, private, hybrid
 
 ### Q12. The Terra/Luna collapse (May 2022) was triggered by: *(Analyze)*
 A. A bug in Ethereum
-B. A reflexive death spiral in the UST-LUNA algorithmic stablecoin mechanism — UST redemptions minted LUNA, crashing LUNA's price, which made every subsequent redemption mint exponentially more LUNA
+B. A reflexive death spiral in the UST-LUNA algorithmic stablecoin mechanism, UST redemptions minted LUNA, crashing LUNA's price, which made every subsequent redemption mint exponentially more LUNA
 C. The SEC banning UST
 D. A 51% attack
 
@@ -120,7 +120,7 @@ D. The SEC banned USDC
 
 ### Q15. DAI is collateralized via: *(Apply)*
 A. Federal Reserve dollars
-B. MakerDAO Vaults (formerly CDPs) — overcollateralized positions of ETH and other approved crypto assets, typically at 150-170% minimum collateralization ratios
+B. MakerDAO Vaults (formerly CDPs), overcollateralized positions of ETH and other approved crypto assets, typically at 150-170% minimum collateralization ratios
 C. Gold
 D. UST
 
@@ -136,7 +136,7 @@ D. `x / y = k`
 
 ### Q17. The most important Uniswap V3 innovation (May 2021) was: *(Apply)*
 A. Adding Bitcoin support
-B. Concentrated liquidity — LPs specify a price range for their liquidity, dramatically improving capital efficiency
+B. Concentrated liquidity, LPs specify a price range for their liquidity, dramatically improving capital efficiency
 C. Removing the AMM
 D. Adding NFTs
 
@@ -144,7 +144,7 @@ D. Adding NFTs
 
 ### Q18. Aave's distinguishing primitive (vs traditional lending) is: *(Apply)*
 A. Higher interest rates
-B. Flash loans — uncollateralized loans that must be repaid in the same transaction
+B. Flash loans, uncollateralized loans that must be repaid in the same transaction
 C. Centralized custody
 D. Government bonds
 
@@ -153,7 +153,7 @@ D. Government bonds
 ### Q19. Lido is the dominant ETH liquid-staking protocol with roughly: *(Analyze)*
 A. 0.5% of staked ETH
 B. 5% of staked ETH
-C. ~30% of staked ETH — making it the largest single Ethereum-centralization concern post-Merge
+C. ~30% of staked ETH, making it the largest single Ethereum-centralization concern post-Merge
 D. 99% of staked ETH
 
 ---
@@ -161,7 +161,7 @@ D. 99% of staked ETH
 ### Q20. Cross-chain bridges have lost approximately: *(Remember)*
 A. $30 million (negligible)
 B. $300 million
-C. ~$3 billion cumulatively — the single largest source of crypto losses
+C. ~$3 billion cumulatively, the single largest source of crypto losses
 D. $300 trillion
 
 ---
@@ -176,7 +176,7 @@ D. The Merge
 
 ### Q22. Celestia (launched October 2023) is best described as: *(Apply)*
 A. An execution-layer L1 competitor to Ethereum
-B. A modular data-availability layer — separating DA from execution/settlement/consensus to enable cheaper rollups
+B. A modular data-availability layer, separating DA from execution/settlement/consensus to enable cheaper rollups
 C. A wallet
 D. A stablecoin
 
@@ -184,7 +184,7 @@ D. A stablecoin
 
 ### Q23. EigenLayer's restaking concept involves: *(Analyze)*
 A. Buying more ETH
-B. Letting ETH stakers opt into providing security for additional services (oracles, bridges, DA layers, etc.) while keeping their underlying ETH stake — bootstrapping new security, with cascading-slashing risk
+B. Letting ETH stakers opt into providing security for additional services (oracles, bridges, DA layers, etc.) while keeping their underlying ETH stake, bootstrapping new security, with cascading-slashing risk
 C. Skipping PoS entirely
 D. Bridging to Bitcoin
 

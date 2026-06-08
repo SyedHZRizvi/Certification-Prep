@@ -32,8 +32,8 @@
 | **Ports** | UDP 161 (query) / UDP 162 (trap) |
 | **MIB / OID** | Hierarchical data tree / dotted address |
 | **Operations** | GET / GETNEXT / GETBULK / SET / RESPONSE / TRAP / INFORM |
-| **v1 / v2c** | Cleartext community strings — **insecure** |
-| **v3** | User-based auth + encryption — **use this** |
+| **v1 / v2c** | Cleartext community strings, **insecure** |
+| **v3** | User-based auth + encryption, **use this** |
 | **NMS** | Network Management Station (LibreNMS, PRTG, SolarWinds) |
 
 ---
@@ -69,11 +69,11 @@
 | **sFlow** | InMon | Packet sampling (1-in-N) |
 | **IPFIX** | IETF standard | NetFlow v9-compatible standard (RFC 7011) |
 
-**Not packet capture** — flow summaries only. Pair with Wireshark for payload.
+**Not packet capture**, flow summaries only. Pair with Wireshark for payload.
 
 ---
 
-## 🔧 CLI Tools — Quick Reference
+## 🔧 CLI Tools, Quick Reference
 
 | Tool | Purpose |
 |------|---------|
@@ -90,9 +90,9 @@
 | **hping** | Custom packet crafting |
 
 ### Windows DHCP/DNS shortcuts
-- `ipconfig /release` + `/renew` — drop+request DHCP lease
-- `ipconfig /flushdns` — clear DNS cache
-- `ipconfig /all` — full config (MAC, DHCP server, leases)
+- `ipconfig /release` + `/renew`, drop+request DHCP lease
+- `ipconfig /flushdns`, clear DNS cache
+- `ipconfig /all`, full config (MAC, DHCP server, leases)
 
 ---
 

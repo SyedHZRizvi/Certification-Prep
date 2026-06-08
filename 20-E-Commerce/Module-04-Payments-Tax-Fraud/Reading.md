@@ -1,34 +1,34 @@
 # Module 4: Payments, Tax & Fraud 💳
 
-> **Why this module matters:** Every order you take goes through three gates — payment, tax, fraud. Get any one of them wrong and the business breaks: failed checkouts kill conversion, missed sales tax filings draw state audits, fraud chargebacks above 1% trigger Visa/Mastercard monitoring programs that can shut down your processing. This module gives you the operating knowledge of Stripe, Adyen, PCI-DSS v4.0, post-Wayfair sales tax, EU VAT MOSS, SCA / 3DS2, and the fraud stack.
+> **Why this module matters:** Every order you take goes through three gates, payment, tax, fraud. Get any one of them wrong and the business breaks: failed checkouts kill conversion, missed sales tax filings draw state audits, fraud chargebacks above 1% trigger Visa/Mastercard monitoring programs that can shut down your processing. This module gives you the operating knowledge of Stripe, Adyen, PCI-DSS v4.0, post-Wayfair sales tax, EU VAT MOSS, SCA / 3DS2, and the fraud stack.
 
 ---
 
 ## 🎯 A Real Story: Stripe's Pandemic-Era Scaling
 
-In March 2020, e-commerce volume globally jumped 30-40% in two weeks. Stripe — Patrick and John Collison's payment processor, founded 2010 — went from processing roughly $250B/year in 2019 to over $1T/year in 2024. That's a 4x volume increase in 4 years, plus a 50x increase in some sectors (telehealth, food delivery, education tech).
+In March 2020, e-commerce volume globally jumped 30-40% in two weeks. Stripe Patrick and John Collison's payment processor, founded 2010 went from processing roughly $250B/year in 2019 to over $1T/year in 2024. That's a 4x volume increase in 4 years, plus a 50x increase in some sectors (telehealth, food delivery, education tech).
 
-The interesting part isn't the volume. It's that Stripe scaled without breaking. They didn't replatform. Their core APIs (`/v1/payment_intents`, `/v1/charges`, `/v1/customers`) remained backward-compatible. Their fraud system (Stripe Radar) continuously improved through machine learning across the network — by 2024, Radar was preventing >$8B/year of fraud across Stripe's customer base.
+The interesting part isn't the volume. It's that Stripe scaled without breaking. They didn't replatform. Their core APIs (`/v1/payment_intents`, `/v1/charges`, `/v1/customers`) remained backward-compatible. Their fraud system (Stripe Radar) continuously improved through machine learning across the network, by 2024, Radar was preventing >$8B/year of fraud across Stripe's customer base.
 
 Three operating principles emerged:
 
 1. **API stability is a moat.** Stripe's commitment to not breaking the API has compounded over 14 years. Developers built businesses on top because Stripe wouldn't pull the rug.
 2. **The hard work is in fraud and dispute mechanics, not payment processing.** Charging a card is solved. Knowing whether to charge the card, and what to do when the customer disputes the charge, is where the engineering is.
-3. **Compliance scales with volume.** PCI-DSS, SCA in EU, state-by-state sales tax in US (post-Wayfair 2018), GDPR — each of these became a feature for Stripe's customers. Stripe Atlas (incorporation + business banking), Stripe Tax (sales tax compliance), Stripe Issuing (card issuing) all emerged from "we already had to solve this for ourselves."
+3. **Compliance scales with volume.** PCI-DSS, SCA in EU, state-by-state sales tax in US (post-Wayfair 2018), GDPR, each of these became a feature for Stripe's customers. Stripe Atlas (incorporation + business banking), Stripe Tax (sales tax compliance), Stripe Issuing (card issuing) all emerged from "we already had to solve this for ourselves."
 
-By 2024, Stripe was valued at $65B in a secondary sale and was the largest privately-held fintech. They were also navigating regulatory tension — Klarna (a BNPL competitor) had been put under UK FCA supervision in 2024, signaling the era of consumer-credit regulation in BNPL.
+By 2024, Stripe was valued at $65B in a secondary sale and was the largest privately-held fintech. They were also navigating regulatory tension, Klarna (a BNPL competitor) had been put under UK FCA supervision in 2024, signaling the era of consumer-credit regulation in BNPL.
 
 The lesson: payments is plumbing. The discipline isn't choosing the cheapest processor; it's choosing the processor that won't surprise you when fraud spikes, when SCA kicks in, when sales tax nexus is triggered, or when a chargeback escalates.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The basic e-commerce flow (cart → checkout → payment → fulfillment) — covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
-> - Storefront platform choices — covered in [Module 2](../Module-02-Storefront-Platforms-Architecture/Reading.md)
-> - Catalog/pricing basics — covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
+> - The basic e-commerce flow (cart → checkout → payment → fulfillment), covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
+> - Storefront platform choices, covered in [Module 2](../Module-02-Storefront-Platforms-Architecture/Reading.md)
+> - Catalog/pricing basics, covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
 
-## 💳 The Payment Stack — Who Does What
+## 💳 The Payment Stack, Who Does What
 
 | Layer | What it does | Example vendors |
 |-------|-------------|-----------------|
@@ -51,7 +51,7 @@ The lesson: payments is plumbing. The discipline isn't choosing the cheapest pro
 Founded 2010 by Patrick & John Collison. Headquartered in San Francisco + Dublin. ~$1T+ annual payment volume by 2024. 50+ countries, 135 currencies.
 
 **Strengths:**
-- API quality — the developer-favorite. `payment_intents` API is the standard reference for modern payment flows.
+- API quality, the developer-favorite. `payment_intents` API is the standard reference for modern payment flows.
 - Fastest implementation (under 30 minutes for Stripe Checkout; days for Custom).
 - Free Stripe Atlas (US incorporation + banking + tax setup) for non-US founders.
 - Stripe Radar (fraud), Stripe Tax (sales tax), Stripe Connect (marketplace payouts), Stripe Issuing (cards).
@@ -68,7 +68,7 @@ Dutch-founded 2006. Public on Euronext Amsterdam (ticker ADYEN). Customers inclu
 - Direct connections to all major networks worldwide (Adyen owns acquiring in many markets).
 - RevenueProtect (Adyen's fraud product).
 
-**Pricing:** Customized — typically 0.6% + interchange-pass-through for enterprise. Lower than Stripe for high-volume merchants but minimum monthly commitments.
+**Pricing:** Customized, typically 0.6% + interchange-pass-through for enterprise. Lower than Stripe for high-volume merchants but minimum monthly commitments.
 
 ### PayPal Braintree
 
@@ -112,15 +112,15 @@ The Payment Card Industry Data Security Standard, version 4.0, replaces v3.2.1. 
 12. Maintain an information security policy.
 
 **Compliance levels (Merchant):**
-- **Level 1** — > 6M Visa/MC transactions/year. Annual on-site audit by QSA (Qualified Security Assessor).
-- **Level 2** — 1-6M transactions/year. Annual SAQ + ASV scan.
-- **Level 3** — 20K-1M e-commerce transactions/year. SAQ + ASV.
-- **Level 4** — < 20K e-commerce transactions/year. SAQ.
+- **Level 1**, > 6M Visa/MC transactions/year. Annual on-site audit by QSA (Qualified Security Assessor).
+- **Level 2**, 1-6M transactions/year. Annual SAQ + ASV scan.
+- **Level 3**, 20K-1M e-commerce transactions/year. SAQ + ASV.
+- **Level 4**, < 20K e-commerce transactions/year. SAQ.
 
 **SAQ types (Self-Assessment Questionnaire):**
-- **SAQ A** — Card data fully outsourced to PCI-compliant TPSP (third-party service provider). Most Shopify, BigCommerce, Stripe Checkout merchants.
-- **SAQ A-EP** — E-commerce with merchant-controlled embedded forms (iframes). Common for Stripe Elements.
-- **SAQ D** — All else. Full burden, including most self-hosted setups.
+- **SAQ A**, Card data fully outsourced to PCI-compliant TPSP (third-party service provider). Most Shopify, BigCommerce, Stripe Checkout merchants.
+- **SAQ A-EP**, E-commerce with merchant-controlled embedded forms (iframes). Common for Stripe Elements.
+- **SAQ D**, All else. Full burden, including most self-hosted setups.
 
 🚨 **Trap on the exam:** PCI-DSS v4.0 added new requirements for **client-side script management** (preventing Magecart-style attacks via JavaScript injection on payment pages). All v4.0 merchants must maintain an inventory of scripts on payment pages, justify each, and detect unauthorized changes. This requirement is mandatory March 2025.
 
@@ -134,9 +134,9 @@ The PSD2 regulation (Payment Services Directive 2, EU, effective September 2019 
 
 **Two-factor requirement:** SCA requires two of three factors:
 
-- **Knowledge** (something you know — password)
-- **Possession** (something you have — phone for OTP)
-- **Inherence** (something you are — biometrics)
+- **Knowledge** (something you know, password)
+- **Possession** (something you have, phone for OTP)
+- **Inherence** (something you are, biometrics)
 
 **Exemptions** (defined in PSD2):
 
@@ -144,7 +144,7 @@ The PSD2 regulation (Payment Services Directive 2, EU, effective September 2019 
 - Recurring transactions of fixed amount (subscriptions after first)
 - Merchant-initiated transactions (e.g., post-purchase top-up)
 - Trusted beneficiary (whitelisted merchants)
-- TRA (Transaction Risk Analysis) — issuer/acquirer scores low risk
+- TRA (Transaction Risk Analysis), issuer/acquirer scores low risk
 
 3DS2 (2018) replaced 3DS1 (2001). 3DS2 supports frictionless authentication for low-risk transactions (issuer makes the call without challenging the consumer). Result: ~75% of EU transactions in 2024 flow frictionlessly through 3DS2 even when SCA technically applies.
 
@@ -152,9 +152,9 @@ The PSD2 regulation (Payment Services Directive 2, EU, effective September 2019 
 
 ---
 
-## 🇺🇸 US Sales Tax — Post-Wayfair (2018)
+## 🇺🇸 US Sales Tax, Post-Wayfair (2018)
 
-In June 2018, the US Supreme Court decided *South Dakota v. Wayfair, Inc.*, 138 S. Ct. 2080 (2018), overturning *Quill Corp. v. North Dakota* (1992). The ruling held that states can require remote sellers to collect sales tax based on **economic nexus** — not just physical presence.
+In June 2018, the US Supreme Court decided *South Dakota v. Wayfair, Inc.*, 138 S. Ct. 2080 (2018), overturning *Quill Corp. v. North Dakota* (1992). The ruling held that states can require remote sellers to collect sales tax based on **economic nexus**, not just physical presence.
 
 **Economic nexus thresholds (typical, vary by state):**
 - $100,000 in annual sales into the state, OR
@@ -168,24 +168,24 @@ By 2024, all 45 states with sales tax had adopted economic nexus. Each state has
 - Marketplace facilitator law (states that require marketplaces like Amazon to collect/remit on behalf of 3P sellers)
 
 **Tax automation vendors:**
-- **Avalara AvaTax** — largest enterprise vendor; multi-jurisdiction global.
-- **TaxJar** (acquired by Stripe in 2021, integrated as Stripe Tax) — DTC-friendly.
-- **Vertex** — enterprise.
-- **Sovos** — enterprise + Europe.
-- **Stripe Tax** — native to Stripe; 0.5% per transaction; handles US + EU + UK + Australia.
+- **Avalara AvaTax**, largest enterprise vendor; multi-jurisdiction global.
+- **TaxJar** (acquired by Stripe in 2021, integrated as Stripe Tax), DTC-friendly.
+- **Vertex**, enterprise.
+- **Sovos**, enterprise + Europe.
+- **Stripe Tax**, native to Stripe; 0.5% per transaction; handles US + EU + UK + Australia.
 
-🚨 **Trap on the exam:** Marketplace Facilitator Laws (state-level, started 2017-2020) require platforms like Amazon, Etsy, eBay, Walmart Marketplace to collect/remit sales tax on behalf of 3P sellers. As a 3P seller, you don't owe tax on marketplace sales in MFL states — but you DO owe tax on DTC sales of the same products. This trips up brands that go multi-channel.
+🚨 **Trap on the exam:** Marketplace Facilitator Laws (state-level, started 2017-2020) require platforms like Amazon, Etsy, eBay, Walmart Marketplace to collect/remit sales tax on behalf of 3P sellers. As a 3P seller, you don't owe tax on marketplace sales in MFL states, but you DO owe tax on DTC sales of the same products. This trips up brands that go multi-channel.
 
 🧠 **MEMORIZE THIS.** Wayfair (2018) = economic nexus. Threshold typically $100K OR 200 transactions. ~45 states. ~10,000 rates. Marketplace Facilitator Laws shift tax responsibility from 3P seller to marketplace.
 
 ---
 
-## 🇪🇺 EU VAT — OSS, IOSS, and Cross-Border Sales
+## 🇪🇺 EU VAT, OSS, IOSS, and Cross-Border Sales
 
 EU VAT (Value-Added Tax) rules changed dramatically on July 1, 2021:
 
-- **OSS** (One Stop Shop) — sellers established in the EU register once and remit VAT across all 27 EU states. Replaced the old MOSS (Mini One Stop Shop) for B2C digital services.
-- **IOSS** (Import One Stop Shop) — non-EU sellers shipping low-value goods (≤€150) to EU consumers can register once and remit EU VAT at checkout. Without IOSS, EU customs collects VAT + fees on import, often surprising the customer with delivery charges.
+- **OSS** (One Stop Shop), sellers established in the EU register once and remit VAT across all 27 EU states. Replaced the old MOSS (Mini One Stop Shop) for B2C digital services.
+- **IOSS** (Import One Stop Shop), non-EU sellers shipping low-value goods (≤€150) to EU consumers can register once and remit EU VAT at checkout. Without IOSS, EU customs collects VAT + fees on import, often surprising the customer with delivery charges.
 - **The €22 low-value exemption was eliminated.** Pre-2021, imports under €22 were VAT-free; this caused massive AliExpress/Wish abuse. Now every import owes VAT.
 
 **EU VAT rates (2026):**
@@ -223,7 +223,7 @@ EU VAT (Value-Added Tax) rules changed dramatically on July 1, 2021:
 
 ---
 
-## 🎯 BNPL — Buy Now Pay Later
+## 🎯 BNPL, Buy Now Pay Later
 
 BNPL exploded 2020-2022 (cheap money), then contracted in 2023-2024 (regulatory tightening, rising interest rates).
 
@@ -245,9 +245,9 @@ BNPL exploded 2020-2022 (cheap money), then contracted in 2023-2024 (regulatory 
 
 ---
 
-## 💼 Case Study — Klarna's BNPL Regulatory Reckoning (2024)
+## 💼 Case Study, Klarna's BNPL Regulatory Reckoning (2024)
 
-**Situation.** Klarna, founded in Stockholm 2005, became the largest BNPL provider globally by 2022 — $670B+ cumulative GMV, 150M+ active consumers, 500K+ merchants. The company was valued at $45.6B in June 2021 (SoftBank Series H), the highest valuation for a European fintech. But 2022-2023 saw a 85% valuation crash (down to $6.7B in July 2022's down round) as interest rates rose, credit losses spiked, and regulators turned attention to consumer-credit risks. By 2024, Klarna was in active dialogue with the UK Financial Conduct Authority (FCA) about consumer-credit regulation.
+**Situation.** Klarna, founded in Stockholm 2005, became the largest BNPL provider globally by 2022, $670B+ cumulative GMV, 150M+ active consumers, 500K+ merchants. The company was valued at $45.6B in June 2021 (SoftBank Series H), the highest valuation for a European fintech. But 2022-2023 saw a 85% valuation crash (down to $6.7B in July 2022's down round) as interest rates rose, credit losses spiked, and regulators turned attention to consumer-credit risks. By 2024, Klarna was in active dialogue with the UK Financial Conduct Authority (FCA) about consumer-credit regulation.
 
 **Decision.** In June 2024, the UK FCA confirmed that BNPL providers would be brought under UK consumer-credit regulation, requiring:
 
@@ -269,9 +269,9 @@ Klarna's response: pre-positioned for the regulation, working with the FCA on di
 
 ---
 
-## 🛡️ Fraud — Chargebacks, Friendly Fraud, and the Tooling
+## 🛡️ Fraud, Chargebacks, Friendly Fraud, and the Tooling
 
-**Chargeback** — When a cardholder disputes a transaction with their issuer, the issuer reverses funds. The merchant loses:
+**Chargeback**, When a cardholder disputes a transaction with their issuer, the issuer reverses funds. The merchant loses:
 
 - The sale (the funds reverse).
 - The goods (often already shipped).
@@ -279,10 +279,10 @@ Klarna's response: pre-positioned for the regulation, working with the FCA on di
 - Network monitoring scoring (chargeback rate matters).
 
 **Chargeback ratios to monitor:**
-- < 0.5% — Healthy
-- 0.5-1.0% — Watch
-- 1.0%+ — Visa/Mastercard chargeback monitoring program enrollment
-- 1.5%+ — Excessive chargeback program; processor may terminate
+- < 0.5%, Healthy
+- 0.5-1.0%, Watch
+- 1.0%+, Visa/Mastercard chargeback monitoring program enrollment
+- 1.5%+, Excessive chargeback program; processor may terminate
 
 **Types of fraud:**
 | Type | What it is |
@@ -295,27 +295,27 @@ Klarna's response: pre-positioned for the regulation, working with the FCA on di
 | **Loyalty point fraud** | Hacking gift cards, point balances |
 
 **Fraud-prevention vendors:**
-- **Stripe Radar** — Native to Stripe; rules + ML; free tier.
-- **Signifyd** — Chargeback guarantee (insurance model); takes 0.5-1.5% per transaction in return for indemnifying chargebacks.
-- **Kount** (Equifax) — Enterprise rules + device intelligence.
-- **NoFraud** — Mid-market; chargeback guarantee model.
-- **Riskified** — Enterprise; AI-driven.
-- **Bolt Fraud Defense** — Bundled with Bolt checkout.
+- **Stripe Radar**, Native to Stripe; rules + ML; free tier.
+- **Signifyd**, Chargeback guarantee (insurance model); takes 0.5-1.5% per transaction in return for indemnifying chargebacks.
+- **Kount** (Equifax), Enterprise rules + device intelligence.
+- **NoFraud**, Mid-market; chargeback guarantee model.
+- **Riskified**, Enterprise; AI-driven.
+- **Bolt Fraud Defense**, Bundled with Bolt checkout.
 
 🎯 **Exam tip:** "Friendly fraud" is the largest growing category (Visa's 2024 data: ~40% of disputes). Signifyd's data on fraud rates by category: travel (lowest, ~0.2%), apparel (mid, ~0.5%), electronics (highest, ~1.5%). Memorize that electronics are highest-fraud.
 
 ---
 
-## 📝 Wallets — Apple Pay, Google Pay, Shop Pay, PayPal
+## 📝 Wallets, Apple Pay, Google Pay, Shop Pay, PayPal
 
 Wallets dramatically improve checkout conversion. Baymard 2024 benchmarks show wallet-driven checkout converts 35-45% higher than manual card entry on mobile.
 
 **Wallet adoption (2026):**
-- **Apple Pay** — 50%+ of iOS users; ubiquitous in US, UK, EU; mandatory in Japan (per regulation).
-- **Google Pay** — Strong in Android; less penetration in US than Apple Pay.
-- **Shop Pay** — Shopify-native; 100M+ shoppers; one-click on any Shopify-powered site.
-- **PayPal** — 400M+ global users; especially strong in Germany, Australia.
-- **Amazon Pay** — 50M+ active users; Buy with Prime integration.
+- **Apple Pay**, 50%+ of iOS users; ubiquitous in US, UK, EU; mandatory in Japan (per regulation).
+- **Google Pay**, Strong in Android; less penetration in US than Apple Pay.
+- **Shop Pay**, Shopify-native; 100M+ shoppers; one-click on any Shopify-powered site.
+- **PayPal**, 400M+ global users; especially strong in Germany, Australia.
+- **Amazon Pay**, 50M+ active users; Buy with Prime integration.
 
 🧠 **MEMORIZE THIS.** Shop Pay is the fastest checkout per Baymard 2024 benchmarks. It works cross-merchant on Shopify-powered sites because Shopify tokenizes the customer once.
 
@@ -324,15 +324,15 @@ Wallets dramatically improve checkout conversion. Baymard 2024 benchmarks show w
 ## 🌐 Multi-Currency and FX
 
 **Multi-currency display vs multi-currency settlement.**
-- **Display** — show prices in customer's local currency, settle in your home currency. Conversion happens at checkout via FX rate. Lower setup; FX rate volatility is your risk.
-- **Settlement** — bank account in each currency, settle locally, repatriate manually. Better margin; complex setup.
+- **Display**, show prices in customer's local currency, settle in your home currency. Conversion happens at checkout via FX rate. Lower setup; FX rate volatility is your risk.
+- **Settlement**, bank account in each currency, settle locally, repatriate manually. Better margin; complex setup.
 
 **FX provider options:**
 - Stripe/Adyen built-in (1.0-2.0% spread).
-- Wise (formerly TransferWise) Business — for repatriation.
-- OFX, Convera, Currency Cloud — enterprise.
+- Wise (formerly TransferWise) Business, for repatriation.
+- OFX, Convera, Currency Cloud, enterprise.
 
-🚨 **Trap on the exam:** Currency conversion at checkout typically costs 1-2% over the mid-market FX rate. This shows up as "FX fees" line in your P&L. Multi-currency display without multi-currency settlement is a margin tax — fine for early stage, costly at $20M+ in international revenue.
+🚨 **Trap on the exam:** Currency conversion at checkout typically costs 1-2% over the mid-market FX rate. This shows up as "FX fees" line in your P&L. Multi-currency display without multi-currency settlement is a margin tax, fine for early stage, costly at $20M+ in international revenue.
 
 ---
 
@@ -396,7 +396,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. A $40M DTC brand currently uses Shopify Payments (Stripe under the hood). The CFO wants to switch to Adyen "for cost savings." Build the argument FOR switching and the argument AGAINST. What gating metric would you measure?
 
@@ -419,11 +419,11 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Stripe Atlas Guide for Founders](https://stripe.com/atlas) — incorporation + tax + banking
-- 📖 [PCI Security Standards Council — *PCI-DSS v4.0*](https://www.pcisecuritystandards.org/document_library) — the standard
-- 📖 [EU Commission — VAT One Stop Shop](https://taxation-customs.ec.europa.eu/online-services/online-services-and-databases-customs/vat-one-stop-shop_en)
+- 📖 [Stripe Atlas Guide for Founders](https://stripe.com/atlas), incorporation + tax + banking
+- 📖 [PCI Security Standards Council *PCI-DSS v4.0*](https://www.pcisecuritystandards.org/document_library) the standard
+- 📖 [EU Commission, VAT One Stop Shop](https://taxation-customs.ec.europa.eu/online-services/online-services-and-databases-customs/vat-one-stop-shop_en)
 - 📖 [Wayfair v South Dakota (full opinion)](https://www.supremecourt.gov/opinions/17pdf/17-494_j4el.pdf)
-- 📖 [UK FCA — BNPL Regulation Policy Statement (2024)](https://www.fca.org.uk/) — Klarna case
-- 📖 [Signifyd 2024 State of Fraud Report](https://www.signifyd.com/resources/) — annual industry benchmarks
-- 📖 [Baymard Institute — Checkout Usability Research](https://baymard.com/research) — gold standard
-- 📖 [Adobe Commerce — *PSD2 / SCA Implementation Guide*](https://devdocs.magento.com/) — the technical reference
+- 📖 [UK FCA BNPL Regulation Policy Statement (2024)](https://www.fca.org.uk/) Klarna case
+- 📖 [Signifyd 2024 State of Fraud Report](https://www.signifyd.com/resources/), annual industry benchmarks
+- 📖 [Baymard Institute Checkout Usability Research](https://baymard.com/research) gold standard
+- 📖 [Adobe Commerce *PSD2 / SCA Implementation Guide*](https://devdocs.magento.com/) the technical reference

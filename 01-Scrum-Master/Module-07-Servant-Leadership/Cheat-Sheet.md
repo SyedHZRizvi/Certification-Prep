@@ -10,11 +10,11 @@
 
 ## 🎭 The 5 Stances
 
-1. 🛡️ **Servant Leader** — default, removes impediments
-2. 🎓 **Coach** — questions, not answers
-3. 🛠️ **Facilitator** — runs effective events
-4. 🧩 **Teacher** — explains Scrum & practices
-5. 🚧 **Change Agent** — org-level barriers
+1. 🛡️ **Servant Leader**, default, removes impediments
+2. 🎓 **Coach**, questions, not answers
+3. 🛠️ **Facilitator**, runs effective events
+4. 🧩 **Teacher**, explains Scrum & practices
+5. 🚧 **Change Agent**, org-level barriers
 
 ---
 
@@ -32,9 +32,9 @@
 
 ## 🚧 Impediment Levels
 
-1. **Within Team** — direct coaching
-2. **Team ↔ Org** — work with mgrs/peers
-3. **Org-wide** — change agent role
+1. **Within Team**, direct coaching
+2. **Team ↔ Org**, work with mgrs/peers
+3. **Org-wide**, change agent role
 
 ---
 

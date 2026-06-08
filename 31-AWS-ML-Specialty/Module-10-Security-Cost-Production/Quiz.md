@@ -176,7 +176,7 @@ D. Use a smaller embedding
 
 ### Q22. AWS Macie + SageMaker Clarify together provide: *(Analyze)*
 A. Image generation
-B. Data-level PII discovery (Macie) AND model-level bias / explainability (Clarify) — both feed compliance posture
+B. Data-level PII discovery (Macie) AND model-level bias / explainability (Clarify), both feed compliance posture
 C. Identical functionality
 D. Replace IAM
 
@@ -201,7 +201,7 @@ D. Switch to on-prem
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Custom IAM role + bucket policy**
-Defence in depth — both identity-side and resource-side controls.
+Defence in depth, both identity-side and resource-side controls.
 
 ### Q2: **B. `enable_network_isolation=True` + no NAT**
 Network isolation is the explicit Estimator flag; private subnets + VPC endpoints (no NAT) seal the deal.
@@ -222,7 +222,7 @@ Up to 90% off; checkpointing handles interruptions.
 The cost-optimal LLM inference accelerator. Trainium is for training; P-family is expensive for inference.
 
 ### Q8: **B. Multi-Model Endpoint**
-MME loads models on demand into one endpoint — cost-optimal for many sparse-traffic models.
+MME loads models on demand into one endpoint, cost-optimal for many sparse-traffic models.
 
 ### Q9: **B. Lifecycle Configuration with idle auto-shutdown**
 The standard mechanism for Studio spaces / notebook instances.

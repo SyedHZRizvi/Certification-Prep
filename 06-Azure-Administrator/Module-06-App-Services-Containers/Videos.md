@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure App Service — Architecture, Plans, Slots</p>
+      <p class="vg-title">Azure App Service, Architecture, Plans, Slots</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 24 min · Plan tiers compared</span>
     </div>
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Deployment Slots &amp; Zero-Downtime Swap</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 16 min · Sticky settings explained</span>
     </div>
   </a>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AKS — Architecture Deep Dive</p>
+      <p class="vg-title">AKS, Architecture Deep Dive</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 25 min · Node pools, networking, ingress</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Container Instances — Tutorial</p>
+      <p class="vg-title">Azure Container Instances, Tutorial</p>
       <p class="vg-creator">Tim Warner</p>
       <span class="vg-duration">⏱ 10 min · One-off containers</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Application Gateway for Containers — AGIC Successor</p>
+      <p class="vg-title">Application Gateway for Containers, AGIC Successor</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 11 min · Modern ingress</span>
     </div>
@@ -125,7 +125,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | AKS gold standard. |
-| **Adam Marczak — Azure for Everyone** | App Service walkthroughs. |
+| **Adam Marczak, Azure for Everyone** | App Service walkthroughs. |
 | **Tim Warner** | ACI + exam pacing. |
 | **Inside Cloud and Security** | Networking integration. |
 | **Microsoft Mechanics** | Latest AKS / App Service features. |
@@ -136,8 +136,8 @@
 
 1. App Service Plan tier needed for slots? VNet integration? Private endpoint?
 2. Difference between scale up and scale out?
-3. ACI vs AKS — when to pick each?
-4. AKS system pool vs user pool — what runs where?
+3. ACI vs AKS, when to pick each?
+4. AKS system pool vs user pool, what runs where?
 5. HPA vs cluster autoscaler?
 
 Quiz time → [Quiz](./Quiz.md)

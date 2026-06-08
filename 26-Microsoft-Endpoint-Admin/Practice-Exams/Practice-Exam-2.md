@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — MD-102 (Second Half + Synthesis)
+# 🧪 Practice Exam 2, MD-102 (Second Half + Synthesis)
 
 > **Conditions:** Set a 90-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 35/50 (≈ 70%, matching the real exam)
@@ -147,7 +147,7 @@ B. Tamper protection
 C. Network protection
 D. ASR
 
-### 23. **Yes/No** — Defender plans.
+### 23. **Yes/No**, Defender plans.
 
 **S1:** Plan 1 includes Attack Surface Reduction rules.
 **S2:** Plan 2 includes Advanced Hunting with KQL.
@@ -322,7 +322,7 @@ B. Forces the device to check in with Intune now
 C. Re-applies all policies from scratch
 D. Restarts the device
 
-### 49. **Yes/No** — Final scenarios.
+### 49. **Yes/No**, Final scenarios.
 
 **S1:** Endpoint Analytics data flows from devices to Intune to Log Analytics.
 **S2:** Proactive remediations run on a schedule per script.
@@ -334,7 +334,7 @@ C. No / Yes / No
 D. Yes / No / No
 
 ### 50. A 50,000-endpoint bank is currently on WSUS only. Modern recommendation:
-A. Keep WSUS — it works
+A. Keep WSUS, it works
 B. Migrate to WUfB + Intune update rings (cloud-managed)
 C. Switch to ConfigMgr only
 D. No updates
@@ -362,7 +362,7 @@ D. No updates
 
 | Score | Verdict |
 |-------|---------|
-| 47–50 | 🏆 Excellent — ready for Final Mock |
+| 47–50 | 🏆 Excellent, ready for Final Mock |
 | 35–46 | ✅ On track. Review missed Qs, then Final Mock. |
 | 25–34 | ⚠️ Re-study weak modules (use the table below) |
 | <25   | 🔁 Re-take after intensive review |
@@ -468,7 +468,7 @@ For EACH wrong answer:
 
 **Q36. Answer: B.** *Why B is correct.* 5 categories. *Why others wrong.* Other counts wrong. *Exam-takeaway.* Five categories.
 
-**Q37. Answer: C.** *Why C is correct.* Compliance has its own reports — not in Endpoint Analytics. *Why others wrong.* The other three ARE Endpoint Analytics categories. *Exam-takeaway.* Compliance ≠ analytics.
+**Q37. Answer: C.** *Why C is correct.* Compliance has its own reports, not in Endpoint Analytics. *Why others wrong.* The other three ARE Endpoint Analytics categories. *Exam-takeaway.* Compliance ≠ analytics.
 
 **Q38. Answer: B.** *Why B is correct.* Plan 2 or Suite required. *Why others wrong.* Plan 1 doesn't include. Defender doesn't deliver. Free doesn't exist. *Exam-takeaway.* Plan 2 gate.
 

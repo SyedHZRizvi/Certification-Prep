@@ -7,9 +7,9 @@ title: "Module 5: Infographic & Data Viz"
 
 ## The 60-Second Truth
 
-In 2012, Hans Rosling stood on a TED stage and used animated bubble charts to show 200 years of global health and wealth data in four minutes. The audience gasped. They laughed. They learned something they would remember for years. The data wasn't new — it existed in WHO and World Bank spreadsheets. What was new was the animation. The motion made the data tell a story.
+In 2012, Hans Rosling stood on a TED stage and used animated bubble charts to show 200 years of global health and wealth data in four minutes. The audience gasped. They laughed. They learned something they would remember for years. The data wasn't new, it existed in WHO and World Bank spreadsheets. What was new was the animation. The motion made the data tell a story.
 
-This module teaches you to build the kinds of animated graphics that make data gasp-worthy — not decorative, but revelatory.
+This module teaches you to build the kinds of animated graphics that make data gasp-worthy, not decorative, but revelatory.
 
 ---
 
@@ -19,7 +19,7 @@ This module teaches you to build the kinds of animated graphics that make data g
 
 The most-animated chart type. A bar animates from 0 to its final value, typically scaling on the Y-axis from the baseline up.
 
-**AE Setup — Animated Bar Chart:**
+**AE Setup, Animated Bar Chart:**
 1. Create a solid or shape layer for each bar
 2. Set the Anchor Point to the bottom center of the bar (so it scales from the baseline up)
 3. **Expression on Scale Y:**
@@ -38,9 +38,9 @@ The most-animated chart type. A bar animates from 0 to its final value, typicall
 
 ### Line Charts
 
-Line charts reveal progressively along the X-axis — the line "draws" from left to right.
+Line charts reveal progressively along the X-axis, the line "draws" from left to right.
 
-**AE Setup — Line Chart:**
+**AE Setup, Line Chart:**
 1. Build the line as a shape layer path matching your data points
 2. Apply **Trim Paths** to the shape
 3. Keyframe Trim Paths End from 0% to 100% to reveal the line
@@ -54,7 +54,7 @@ Line charts reveal progressively along the X-axis — the line "draws" from left
 
 Pie segments animate by growing from 0% to their target arc percentage.
 
-**AE Setup — Pie Chart:**
+**AE Setup, Pie Chart:**
 1. Create each segment as a shape layer with a stroke
 2. Set **Stroke > Dashes** and animate the dash offset to reveal each segment
 3. For a donut chart: use a solid circle cutout on top as a track matte
@@ -64,7 +64,7 @@ Pie segments animate by growing from 0% to their target arc percentage.
 
 Waffle charts display 100 cells (a 10×10 grid) where filled cells = percentage.
 
-**AE Setup — Waffle Chart:**
+**AE Setup, Waffle Chart:**
 1. Create one cell as a shape layer
 2. Duplicate 99 times → organize in 10×10 grid
 3. Use **index** expression to animate each cell in sequence:
@@ -80,11 +80,11 @@ Waffle charts display 100 cells (a 10×10 grid) where filled cells = percentage.
 
 ## 🎯 What the Exam Tests: Infographic & Data Viz
 
-> 🎯 **Exam Callout 1:** Bar chart anchor points must be at the **bottom center** of the bar — not the default center of the layer. If the anchor point is in the center, scaling on the Y-axis causes the bar to grow upward AND downward simultaneously. The exam tests: which anchor point position enables a bar chart to animate from the baseline upward?
+> 🎯 **Exam Callout 1:** Bar chart anchor points must be at the **bottom center** of the bar, not the default center of the layer. If the anchor point is in the center, scaling on the Y-axis causes the bar to grow upward AND downward simultaneously. The exam tests: which anchor point position enables a bar chart to animate from the baseline upward?
 
 > 🎯 **Exam Callout 2:** Waffle charts use a **10×10 grid** (100 cells) to represent percentages. Each cell = 1%. The exam may ask: what grid size is used for a waffle chart showing data in 1% increments? Answer: 10 by 10.
 
-> 🎯 **Exam Callout 3:** The Hans Rosling "200 Countries, 200 Years" TED Talk (2010) is the canonical example of animated data storytelling. The exam may reference it when asking about principles of data animation — specifically: animate one variable at a time and contextualize after the reveal.
+> 🎯 **Exam Callout 3:** The Hans Rosling "200 Countries, 200 Years" TED Talk (2010) is the canonical example of animated data storytelling. The exam may reference it when asking about principles of data animation, specifically: animate one variable at a time and contextualize after the reveal.
 
 > 🎯 **Exam Callout 4:** Pie/donut chart segments are animated using **Stroke Dash offset** (not Scale or Opacity). A circle with a very thick stroke whose dash length equals the circumference, with an animated offset, creates a filling arc effect. The exam tests: which AE technique animates a pie chart segment filling?
 
@@ -98,13 +98,13 @@ Waffle charts display 100 cells (a 10×10 grid) where filled cells = percentage.
 
 ## ⚠️ Common Traps: Data Visualization
 
-**Trap 1 — Proportion vs. Data Accuracy:** Animated bar charts that use aesthetic scaling (taller bars look more dramatic) can misrepresent the underlying data. The bar heights must be mathematically proportional to the values. A bar representing 80 must be exactly 4x the height of a bar representing 20.
+**Trap 1, Proportion vs. Data Accuracy:** Animated bar charts that use aesthetic scaling (taller bars look more dramatic) can misrepresent the underlying data. The bar heights must be mathematically proportional to the values. A bar representing 80 must be exactly 4x the height of a bar representing 20.
 
-**Trap 2 — Color as Decoration:** Using five different colors for five bars in a bar chart implies the colors encode variables. If the colors are purely decorative, you're training viewers to look for meaning that isn't there. Single-color bars with one highlight color for the key data point is the correct approach.
+**Trap 2, Color as Decoration:** Using five different colors for five bars in a bar chart implies the colors encode variables. If the colors are purely decorative, you're training viewers to look for meaning that isn't there. Single-color bars with one highlight color for the key data point is the correct approach.
 
-**Trap 3 — SVG Import Resolution:** Importing an SVG map into AE at a small composition size and then scaling up creates rasterization. SVGs must be imported as compositions (not footage) to remain resolution-independent. The option appears in the Import dialog: import as Composition vs. Footage.
+**Trap 3, SVG Import Resolution:** Importing an SVG map into AE at a small composition size and then scaling up creates rasterization. SVGs must be imported as compositions (not footage) to remain resolution-independent. The option appears in the Import dialog: import as Composition vs. Footage.
 
-**Trap 4 — AEJuice Template Modification:** Students who apply AEJuice presets without understanding the underlying animation structure can't make targeted changes when the client requests revisions. Always deconstruct a preset before using it — understand what each keyframe does, then modify from knowledge, not guesswork.
+**Trap 4 AEJuice Template Modification:** Students who apply AEJuice presets without understanding the underlying animation structure can't make targeted changes when the client requests revisions. Always deconstruct a preset before using it understand what each keyframe does, then modify from knowledge, not guesswork.
 
 ---
 
@@ -134,11 +134,11 @@ Map animations are used in news graphics, documentary, and data journalism to sh
 
 Good data animation tells a story, not just a chart. The structure:
 
-1. **Establish the metric** — introduce the variable (e.g., "Global CO₂ emissions")
-2. **Show the baseline** — reveal the starting state (e.g., 1990 levels)
-3. **Show the change** — animate the data as it changes
-4. **Reveal the insight** — highlight the key moment (the year emissions peaked, the country that changed fastest)
-5. **Contextualize** — add comparison lines, annotations, or secondary data
+1. **Establish the metric**, introduce the variable (e.g., "Global CO₂ emissions")
+2. **Show the baseline**, reveal the starting state (e.g., 1990 levels)
+3. **Show the change**, animate the data as it changes
+4. **Reveal the insight**, highlight the key moment (the year emissions peaked, the country that changed fastest)
+5. **Contextualize**, add comparison lines, annotations, or secondary data
 
 > 🎯 **Exam Tip:** The insight should come at the 2/3 mark of the animation. The first third establishes context; the last third gives the viewer time to absorb the insight. Don't rush to the reveal.
 
@@ -146,7 +146,7 @@ Good data animation tells a story, not just a chart. The structure:
 
 ## 🔢 Advanced Data Animation: Counter Expressions
 
-The animated counter — a number that ticks up (or down) to a final value — is one of the most-requested infographic elements. A robust counter expression handles formatting, easing, and edge cases.
+The animated counter a number that ticks up (or down) to a final value is one of the most-requested infographic elements. A robust counter expression handles formatting, easing, and edge cases.
 
 ### The Professional Counter Expression
 
@@ -215,7 +215,7 @@ Motion Bro is a panel extension for AE that manages third-party preset packs. It
 3. Preview animations in the Motion Bro panel
 4. Drag to the composition to apply
 
-**Best Use:** Motion Bro is a time-saver for infographic elements — animated counters, map pins, chart bars, dividers, and text reveals.
+**Best Use:** Motion Bro is a time-saver for infographic elements, animated counters, map pins, chart bars, dividers, and text reveals.
 
 ### AEJuice
 
@@ -235,7 +235,7 @@ Color in animated data visualization operates under constraints that don't exist
 
 ### The Color Load Principle
 
-The brain processes color and motion through overlapping cognitive channels. When an animated infographic uses more than 5 distinct colors simultaneously, and those elements are in motion, color meaning degrades — the brain can no longer track which color means what while also tracking the motion.
+The brain processes color and motion through overlapping cognitive channels. When an animated infographic uses more than 5 distinct colors simultaneously, and those elements are in motion, color meaning degrades, the brain can no longer track which color means what while also tracking the motion.
 
 **Rule:** Use no more than 4–5 colors in an animated data piece. Reserve color for encoding variables; use opacity and size for secondary differentiation.
 
@@ -252,7 +252,7 @@ Approximately 8% of men have red-green color deficiency. In an animated infograp
 
 ### Motion-Accessible Color Transitions
 
-When bars change color during animation (e.g., a bar turns red when it exceeds a threshold), the color change should be accompanied by a **non-color signal** as well — shape change, size change, or text label — to ensure the meaning is conveyed across all color perception types.
+When bars change color during animation (e.g., a bar turns red when it exceeds a threshold), the color change should be accompanied by a **non-color signal** as well shape change, size change, or text label to ensure the meaning is conveyed across all color perception types.
 
 ---
 
@@ -272,11 +272,11 @@ The time an animation takes should be proportional to the magnitude of the chang
 
 ### Principle 4: Annotation at the Right Time
 
-Text labels and callouts should appear at the moment of the data event they describe — not before (premature) and not after (missed). Use time markers in AE to align annotations precisely.
+Text labels and callouts should appear at the moment of the data event they describe, not before (premature) and not after (missed). Use time markers in AE to align annotations precisely.
 
-### Principle 5: Color Carries Meaning — Don't Waste It
+### Principle 5: Color Carries Meaning, Don't Waste It
 
-Use color to encode variables, not to decorate. If the chart is showing profit (positive) and loss (negative), use green/red. Don't use green/red for two arbitrary categories — viewers will assume the meaning.
+Use color to encode variables, not to decorate. If the chart is showing profit (positive) and loss (negative), use green/red. Don't use green/red for two arbitrary categories, viewers will assume the meaning.
 
 ---
 
@@ -321,25 +321,25 @@ For infographics that will be updated (quarterly reports, live dashboards), the 
 
 ---
 
-## 🎬 Case Study: Stripe's Animated Gradient — Motion That Sells
+## 🎬 Case Study: Stripe's Animated Gradient, Motion That Sells
 
 The Stripe homepage hero features three animated gradient orbs on a dark background. As of 2025 it has become the most-copied hero animation on the web. Understanding exactly how it works illuminates why it's effective.
 
 **The Technical Construction:**
-The orbs are not After Effects animations — they are WebGL or CSS gradient animations running in the browser. Each orb is a radial gradient with:
+The orbs are not After Effects animations, they are WebGL or CSS gradient animations running in the browser. Each orb is a radial gradient with:
 - A center color (saturated purple, teal, or pink)
 - A transparent edge (blends naturally with the dark background)
 - A motion path driven by Perlin noise (slow, organic, non-repeating)
 - A cycle time of approximately 6–8 seconds
 
 **Why Perlin Noise, Not Bezier Curves:**
-Bezier curves repeat. A bezier-based loop will be imperceptibly identical every 6 seconds. Perlin noise generates slightly different paths each cycle — the animation never exactly repeats. This is psychologically important: the viewer's brain stays engaged because "something is always changing."
+Bezier curves repeat. A bezier-based loop will be imperceptibly identical every 6 seconds. Perlin noise generates slightly different paths each cycle, the animation never exactly repeats. This is psychologically important: the viewer's brain stays engaged because "something is always changing."
 
 **The Brand Claim:**
 The animated gradient communicates "complex technology working quietly." Stripe processes billions of dollars of transactions invisibly. The motion is: slow (not urgent), blending (not sharp or confrontational), beautiful (not utilitarian). Every motion design choice reinforces the brand narrative.
 
 **The Contrast Between Hero and Dashboard:**
-The Stripe dashboard — where users actually manage their payments — uses almost no animation. Static tables, simple fade transitions, nothing playful. This contrast is intentional: the hero speaks to the brand feeling; the dashboard speaks to the work. Mixing them would create cognitive dissonance.
+The Stripe dashboard where users actually manage their payments uses almost no animation. Static tables, simple fade transitions, nothing playful. This contrast is intentional: the hero speaks to the brand feeling; the dashboard speaks to the work. Mixing them would create cognitive dissonance.
 
 **The Lesson for Data Viz:**
 In animated infographics, the "ambient" layer (background motion, decorative elements) should follow Stripe's principle: slow, organic, never competing with the data. A Perlin noise-based background texture at 0.2 frequency and 5px amplitude will add life without distracting from the bar chart in front of it.
@@ -362,24 +362,24 @@ In animated infographics, the "ambient" layer (background motion, decorative ele
 
 ## 🗣️ Socratic Discussion Questions
 
-1. Hans Rosling animated data at the variable level — each bubble moved to represent a country's change over time. But most commercial infographic animation simply animates bars appearing in a sequence. What is the difference in storytelling power between these two approaches, and when is the simpler approach actually better?
+1. Hans Rosling animated data at the variable level, each bubble moved to represent a country's change over time. But most commercial infographic animation simply animates bars appearing in a sequence. What is the difference in storytelling power between these two approaches, and when is the simpler approach actually better?
 
 2. The principle says: animate only what carries the data. But many professional infographics animate titles, dividers, icons, and decorative elements. Is this always wrong, or are there cases where animating non-data elements serves the viewer?
 
-3. A bar chart with 12 bars needs to be animated. If all bars animate simultaneously in 1 second, the viewer can't read individual values. If they animate sequentially 0.5s each, the total animation takes 6 seconds — too long for social media. How do you design the stagger for maximum readability within a 2-second window?
+3. A bar chart with 12 bars needs to be animated. If all bars animate simultaneously in 1 second, the viewer can't read individual values. If they animate sequentially 0.5s each, the total animation takes 6 seconds, too long for social media. How do you design the stagger for maximum readability within a 2-second window?
 
 4. Color encodes meaning in data visualization. But your client's brand colors are red and green, which create immediate positive/negative associations for most viewers. The data being visualized (customer segments) has no positive/negative quality. How do you handle this?
 
-5. AEJuice provides excellent free animated chart templates. If you use and modify them for client work, who owns the result — you, AEJuice, or the client? How do template licenses interact with work-for-hire contracts?
+5. AEJuice provides excellent free animated chart templates. If you use and modify them for client work, who owns the result, you, AEJuice, or the client? How do template licenses interact with work-for-hire contracts?
 
 ---
 
 ## 📚 Further Reading
 
-- *The Functional Art* — Alberto Cairo (New Riders, 2012) — the best book on the principles of data visualization design; distinguishes between decorative and functional visualization
-- *Information Dashboard Design* — Stephen Few (Analytics Press, 2nd ed. 2013) — specific to dashboard contexts; covers the principles of visual encoding that apply directly to animated charts
-- *The Visual Display of Quantitative Information* — Edward Tufte (Graphics Press, 2nd ed. 2001) — the foundational data visualization text; the concept of "data-ink ratio" is essential for animated infographics
-- *Storytelling with Data* — Cole Nussbaumer Knaflic (Wiley, 2015) — bridges the gap between data analysis and visual storytelling; practical and accessible
-- [Hans Rosling TED Talk — 200 Countries, 200 Years](https://www.youtube.com/results?search_query=hans+rosling+200+countries+200+years+ted+talk) — the most important 4 minutes in animated data visualization history; study how variables are introduced and layered
-- [Flowing Data — Nathan Yau](https://flowingdata.com/) — daily examples of data visualization; searchable by chart type and technique
-- [AEJuice Free Starter Pack](https://www.youtube.com/results?search_query=aejuice+starter+pack+free+download+after+effects) — 900+ free elements; use as learning material, always customize before client delivery
+- *The Functional Art* Alberto Cairo (New Riders, 2012) the best book on the principles of data visualization design; distinguishes between decorative and functional visualization
+- *Information Dashboard Design* Stephen Few (Analytics Press, 2nd ed. 2013) specific to dashboard contexts; covers the principles of visual encoding that apply directly to animated charts
+- *The Visual Display of Quantitative Information* Edward Tufte (Graphics Press, 2nd ed. 2001) the foundational data visualization text; the concept of "data-ink ratio" is essential for animated infographics
+- *Storytelling with Data* Cole Nussbaumer Knaflic (Wiley, 2015) bridges the gap between data analysis and visual storytelling; practical and accessible
+- [Hans Rosling TED Talk 200 Countries, 200 Years](https://www.youtube.com/results?search_query=hans+rosling+200+countries+200+years+ted+talk) the most important 4 minutes in animated data visualization history; study how variables are introduced and layered
+- [Flowing Data Nathan Yau](https://flowingdata.com/) daily examples of data visualization; searchable by chart type and technique
+- [AEJuice Free Starter Pack](https://www.youtube.com/results?search_query=aejuice+starter+pack+free+download+after+effects), 900+ free elements; use as learning material, always customize before client delivery

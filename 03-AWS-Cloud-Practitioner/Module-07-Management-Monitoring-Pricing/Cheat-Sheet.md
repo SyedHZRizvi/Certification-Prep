@@ -28,7 +28,7 @@
 
 ---
 
-## ✅ Trusted Advisor — 5 Categories
+## ✅ Trusted Advisor, 5 Categories
 
 ```
 1. Cost Optimization
@@ -70,8 +70,8 @@ Out to internet      →  $$$$
 
 | Tool | When |
 |------|------|
-| **Pricing Calculator** | BEFORE deploy — estimate |
-| **Cost Explorer** | DURING/AFTER — visualize + forecast |
+| **Pricing Calculator** | BEFORE deploy, estimate |
+| **Cost Explorer** | DURING/AFTER, visualize + forecast |
 | **Budgets** | Set $/usage thresholds, alert |
 | **Cost & Usage Report (CUR)** | Most granular billing CSV/Parquet |
 | **Cost Allocation Tags** | Chargeback / showback |

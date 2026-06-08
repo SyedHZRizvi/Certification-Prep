@@ -183,7 +183,7 @@ D. Vector search
 ---
 
 ### Q23. To enrich Bedrock responses with citations that point back to source document chunks: *(Apply)*
-A. Use `RetrieveAndGenerate` with a Knowledge Base — citations returned per chunk used
+A. Use `RetrieveAndGenerate` with a Knowledge Base, citations returned per chunk used
 B. Add `cite: true` to the prompt
 C. Use Polly
 D. Use Amazon Forecast
@@ -240,7 +240,7 @@ Both reliably produce structured output. Higher temperature would do the opposit
 RAG retrieves at query time so updates propagate immediately. Fine-tuning is for style/format.
 
 ### Q14: **A. Action Group with Lambda calling DynamoDB**
-Standard agent pattern — tools as Lambda functions with OpenAPI / function schemas.
+Standard agent pattern, tools as Lambda functions with OpenAPI / function schemas.
 
 ### Q15: **B. Generate / transform / scan code in IDE**
 Q Developer (replaces CodeWhisperer) is the developer assistant.
@@ -292,7 +292,7 @@ Continued pre-training is unsupervised; consumes corpus, not prompt/response pai
 - Bedrock cost modes: On-Demand vs Provisioned Throughput vs Batch
 - Guardrail types: content / topic / word / PII / contextual grounding
 - Amazon Q variants (Business / Developer / QuickSight / Connect)
-- JumpStart vs Bedrock — when each
+- JumpStart vs Bedrock, when each
 - Default vector store = OpenSearch Serverless
 
 ➡️ [Cheat-Sheet.md](./Cheat-Sheet.md) → [Module 8](../Module-08-Evaluation-Tuning-Bias/Reading.md)

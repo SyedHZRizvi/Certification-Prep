@@ -23,13 +23,13 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+multimodal+vision+image+understanding+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gemini Vision — Image Understanding</p><p class="vg-creator">Google for Developers</p>
+      <p class="vg-title">Gemini Vision, Image Understanding</p><p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 13 min · Describe, OCR, charts</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+audio+understanding+transcription+diarization" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gemini Audio — Transcription + Diarization</p><p class="vg-creator">Google for Developers</p>
+      <p class="vg-title">Gemini Audio, Transcription + Diarization</p><p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 11 min · Native audio in</span></div>
   </a>
   <a class="vg-card" data-video-id="Mot-JEU26GQ" href="https://www.youtube.com/results?search_query=Gemini+video+understanding+frame+analysis+youtube" target="_blank" rel="noopener">
@@ -47,7 +47,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+files+API+large+file+upload+multimodal" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Files API — Large File Uploads</p><p class="vg-creator">Google for Developers</p>
+      <p class="vg-title">Files API, Large File Uploads</p><p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 10 min · Upload once, reference many</span></div>
   </a>
 </div>
@@ -58,13 +58,13 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+drive+thru+Google+Cloud+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Wendy's FreshAI — Drive-Thru Voice AI</p><p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-title">Wendy's FreshAI, Drive-Thru Voice AI</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 18 min · Real multi-modal architecture</span></div>
   </a>
   <a class="vg-card" data-video-id="XEzRZ35urlk" href="https://www.youtube.com/results?search_query=Google+Photos+Gemini+search+multimodal+upgrade" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Google Photos with Gemini — I/O Keynote</p><p class="vg-creator">Google I/O</p>
+      <p class="vg-title">Google Photos with Gemini, I/O Keynote</p><p class="vg-creator">Google I/O</p>
       <span class="vg-duration">⏱ 15 min · The "carbonara" moment</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+object+detection+bounding+box+structured+output" target="_blank" rel="noopener">
@@ -76,7 +76,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Imagen+3+text+to+image+generation+Vertex+AI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Imagen 3 — Text-to-Image on Vertex</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">Imagen 3, Text-to-Image on Vertex</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · Image generation companion</span></div>
   </a>
 </div>
@@ -99,13 +99,13 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Veo+text+to+video+Google+DeepMind+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Veo — Text-to-Video Generation</p><p class="vg-creator">Google DeepMind</p>
+      <p class="vg-title">Veo, Text-to-Video Generation</p><p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 10 min · The video-out side</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Med-PaLM+2+medical+AI+Google+health+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Med-PaLM 2 — Clinical AI</p><p class="vg-creator">Google Health / Verily</p>
+      <p class="vg-title">Med-PaLM 2, Clinical AI</p><p class="vg-creator">Google Health / Verily</p>
       <span class="vg-duration">⏱ 25 min · Multi-modal in medicine</span></div>
   </a>
 </div>

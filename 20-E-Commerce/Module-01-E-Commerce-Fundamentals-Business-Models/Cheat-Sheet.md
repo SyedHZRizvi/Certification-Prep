@@ -37,7 +37,7 @@ Payback = CAC / (AOV × CM%)
 | < 1:1 | Losing money on each customer |
 | 1:1 to 2:1 | Surviving, risky |
 | **3:1** | ✅ Healthy DTC (Wharton/Fader benchmark) |
-| 5:1+ | Under-investing — spend MORE |
+| 5:1+ | Under-investing, spend MORE |
 
 ---
 
@@ -46,7 +46,7 @@ Payback = CAC / (AOV × CM%)
 ```
 1. Customer obsession
 2. Long-term thinking (cash flow > GAAP)
-3. Day 1 always — never Day 2
+3. Day 1 always, never Day 2
 4. Hire and retain the best
 5. Operational excellence
 6. Take big bets with discipline
@@ -59,9 +59,9 @@ Payback = CAC / (AOV × CM%)
 ## 🌐 Bell's GEM Framework (2014)
 
 ```
-G — Geography  (store density, fulfillment proximity)
-E — Environment (climate, regulation, culture)
-M — Mobility    (how often customer leaves home)
+G, Geography  (store density, fulfillment proximity)
+E, Environment (climate, regulation, culture)
+M, Mobility    (how often customer leaves home)
 ```
 
 E-commerce is a patchwork of micro-conditions, NOT a uniform market.
@@ -105,13 +105,13 @@ Aggregate(tail) > Aggregate(head) when:
 
 ## ⚡ Failure Modes To Avoid
 
-- ❌ **Race-to-zero on Amazon** — losing pricing power
-- ❌ **DTC with < 30% gross margin** — can't afford CAC
-- ❌ **B2B portal without account-tiered pricing** — kills enterprise
-- ❌ **Subscription without churn modeling** — can't reach $10M ARR
-- ❌ **Furniture DTC with bad freight model** — freight eats 25%+ of CM
-- ❌ **Multi-marketplace without OMS** — inventory disasters in 6 months
-- ❌ **No first-party data strategy** — vulnerable to platform changes
+- ❌ **Race-to-zero on Amazon**, losing pricing power
+- ❌ **DTC with < 30% gross margin**, can't afford CAC
+- ❌ **B2B portal without account-tiered pricing**, kills enterprise
+- ❌ **Subscription without churn modeling**, can't reach $10M ARR
+- ❌ **Furniture DTC with bad freight model**, freight eats 25%+ of CM
+- ❌ **Multi-marketplace without OMS**, inventory disasters in 6 months
+- ❌ **No first-party data strategy**, vulnerable to platform changes
 
 ---
 
@@ -136,7 +136,7 @@ When you see these, they're often **wrong**:
 
 ## 🗓️ Key Facts
 
-- A brief is **1,489 words** (Bezos 1997 — write yours that tight)
+- A brief is **1,489 words** (Bezos 1997, write yours that tight)
 - Payback period **6-12 months** = healthy DTC; 1-3 = subscription
 - Amazon turned its first **annual profit in 2003** (6 years post-IPO)
 - TikTok Shop launched US **September 2023**
@@ -144,7 +144,7 @@ When you see these, they're often **wrong**:
 
 ---
 
-## 🛠️ Quick Decision Framework — Pick Your Business Model
+## 🛠️ Quick Decision Framework, Pick Your Business Model
 
 ```
 1. AOV < $25? → marketplace-first

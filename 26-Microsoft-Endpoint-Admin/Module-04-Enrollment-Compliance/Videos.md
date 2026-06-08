@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Android Enterprise — BYOD vs COPE vs Fully Managed vs Dedicated</p>
+      <p class="vg-title">Android Enterprise, BYOD vs COPE vs Fully Managed vs Dedicated</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 22 min · All 4 scenarios demoed</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Compliance + Conditional Access — How They Connect</p>
+      <p class="vg-title">Compliance + Conditional Access, How They Connect</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 26 min · The full enforcement chain</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Conditional Access Report-Only Mode — Safe Rollout</p>
+      <p class="vg-title">Conditional Access Report-Only Mode, Safe Rollout</p>
       <p class="vg-creator">Microsoft Security</p>
       <span class="vg-duration">⏱ 18 min · How to test before enforcing</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Enrollment Restrictions — Blocking Bad Devices</p>
+      <p class="vg-title">Enrollment Restrictions, Blocking Bad Devices</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 16 min · Jailbreak, OS version, manufacturer</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">CA Filter for Devices — Attribute-Based Targeting</p>
+      <p class="vg-title">CA Filter for Devices, Attribute-Based Targeting</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 20 min · When to use vs dynamic group</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Apple VPP — Bulk iOS App Licensing via ABM</p>
+      <p class="vg-title">Apple VPP, Bulk iOS App Licensing via ABM</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 20 min · Device vs user token</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">CA Break-Glass Accounts — The Lockout Insurance</p>
+      <p class="vg-title">CA Break-Glass Accounts, The Lockout Insurance</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 16 min · Why you need at least two</span>
     </div>

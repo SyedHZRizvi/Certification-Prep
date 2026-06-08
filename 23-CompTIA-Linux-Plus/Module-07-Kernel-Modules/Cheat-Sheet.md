@@ -21,10 +21,10 @@ depmod -a                        # rebuild dep DB
 
 Module paths:
 
-- `/lib/modules/$(uname -r)/` — module files
-- `/etc/modprobe.d/*.conf` — admin config (blacklist, options)
-- `/etc/modules-load.d/*.conf` — auto-load at boot
-- `/lib/modprobe.d/*.conf` — distro-owned (don't edit)
+- `/lib/modules/$(uname -r)/`, module files
+- `/etc/modprobe.d/*.conf`, admin config (blacklist, options)
+- `/etc/modules-load.d/*.conf`, auto-load at boot
+- `/lib/modprobe.d/*.conf`, distro-owned (don't edit)
 
 Blacklist example (`/etc/modprobe.d/blacklist-nouveau.conf`):
 ```
@@ -85,7 +85,7 @@ journalctl -k -b -1              # previous boot
 ## 📁 /proc and /sys
 
 ```bash
-# /proc — processes + runtime kernel
+# /proc, processes + runtime kernel
 cat /proc/cpuinfo
 cat /proc/meminfo
 cat /proc/version
@@ -93,7 +93,7 @@ cat /proc/cmdline                # kernel boot args
 cat /proc/mounts                 # actually-mounted FS
 ls /proc/<pid>/                  # all about a process
 
-# /sys — devices + drivers
+# /sys, devices + drivers
 cat /sys/class/net/eth0/address  # MAC
 cat /sys/block/sda/queue/rotational  # 0=SSD 1=HDD
 ls /sys/firmware/efi/efivars     # UEFI vars

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — Scrum Master (Harder)
+# 🧪 Practice Exam 2, Scrum Master (Harder)
 
 > 40 questions. 30 minutes. Pass: 34/40. Take after Modules 5-8.
 
@@ -140,7 +140,7 @@ D. Always remain the same
 
 ### 23. Multiple Sprint Goals in one Sprint:
 A. Common in mature teams
-B. Not possible — Sprint has one goal
+B. Not possible, Sprint has one goal
 C. Allowed for parallel work
 D. Encouraged
 
@@ -269,7 +269,7 @@ D. Don't need one until Sprint 5
 
 | Score | Verdict |
 |-------|---------|
-| 38–40 | 🏆 Excellent — book the exam |
+| 38–40 | 🏆 Excellent, book the exam |
 | 34–37 | ✅ Solid; do Final Mock |
 | 28–33 | ⚠️ Reread weak areas |
 | <28 | 🔁 Major review needed |
@@ -292,12 +292,12 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 - A: Backlog Refinement is an *ongoing activity*, not a formal event.
 - C: "Plan, Build, Test, Release, Review" is generic SDLC, not Scrum events.
 - D: "Stakeholder Demo" is not a Scrum event (the Sprint Review IS the demo + more).
-**Exam takeaway.** Five events — and the Sprint counts as one.
+**Exam takeaway.** Five events, and the Sprint counts as one.
 
 ### Q2. Answer: B (Empiricism + Lean Thinking)
 **Why B is correct.** 2020 Scrum Guide added lean thinking explicitly: "Scrum is founded on empiricism and lean thinking."
 **Why the others are wrong.**
-- A: Empiricism alone — pre-2020 framing.
+- A: Empiricism alone, pre-2020 framing.
 - C, D: Other framings not in the Guide.
 **Exam takeaway.** The 2020 update made lean thinking explicit.
 
@@ -305,7 +305,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why C is correct.** The 2020 Scrum Guide removed the prescribed "yesterday/today/blockers" format.
 **Why the others are wrong.**
 - A: 3 questions are no longer required.
-- B: SM doesn't *design* the format — the team chooses.
+- B: SM doesn't *design* the format, the team chooses.
 - D: "Stand-up" physical posture isn't prescribed by the Guide either.
 **Exam takeaway.** Format is team-chosen, but the purpose (inspect Sprint Goal progress, adapt Sprint Backlog) is mandatory.
 
@@ -328,9 +328,9 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 ### Q6. Answer: B (Team decides who does what, when, how)
 **Why B is correct.** 2020 Scrum Guide definition of self-managing.
 **Why the others are wrong.**
-- A: "No manager" isn't sufficient — self-management is positive (decides), not negative (lacks).
+- A: "No manager" isn't sufficient, self-management is positive (decides), not negative (lacks).
 - C: Salaries are HR.
-- D: "No one accountable" is false — the team is collectively accountable.
+- D: "No one accountable" is false, the team is collectively accountable.
 **Exam takeaway.** Self-managing = team-level decisions on who/when/how.
 
 ### Q7. Answer: B (2 hours)
@@ -345,7 +345,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why the others are wrong.**
 - A: Demo is not the gate.
 - C: Stakeholder sign-off isn't a Scrum Guide requirement.
-- D: All tests passing might be in DoD or might not — DoD is the gate.
+- D: All tests passing might be in DoD or might not, DoD is the gate.
 **Exam takeaway.** DoD = releasable; PO decides if/when.
 
 ### Q9. Answer: C (Product Owner)
@@ -365,7 +365,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Exam takeaway.** Coach → explain → offer alternatives.
 
 ### Q11. Answer: B (Coach the team to inspect this at the Retro)
-**Why B is correct.** Empirical response — inspect the burndown pattern at the Retro and adapt.
+**Why B is correct.** Empirical response, inspect the burndown pattern at the Retro and adapt.
 **Why the others are wrong.**
 - A: Ignoring abandons coaching.
 - C: "Mandate" violates self-management.
@@ -373,7 +373,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Exam takeaway.** Burndown patterns → Retro inspection.
 
 ### Q12. Answer: B (Discuss in Retro how to forecast better)
-**Why B is correct.** Empirical learning — inspect the gap at Retro.
+**Why B is correct.** Empirical learning, inspect the gap at Retro.
 **Why the others are wrong.**
 - A: Punishing individuals contradicts team-level accountability.
 - C: Adding without question violates negotiation.
@@ -399,15 +399,15 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why B is correct.** Servant-leader coaching to protect the Sprint Goal.
 **Why the others are wrong.**
 - A: Allowing breaks the Sprint Goal.
-- C: "Tell stakeholders to wait" is not the SM's role — the PO decides.
+- C: "Tell stakeholders to wait" is not the SM's role, the PO decides.
 - D: Cancel is too drastic.
 **Exam takeaway.** Coach the PO; protect Sprint Goal.
 
 ### Q16. Answer: B (Collaboratively during Sprint Planning)
 **Why B is correct.** Sprint Goal is co-created in Sprint Planning per the Scrum Guide.
 **Why the others are wrong.**
-- A: PO doesn't pre-decide — collaboration matters.
-- C: Not after Planning — during.
+- A: PO doesn't pre-decide, collaboration matters.
+- C: Not after Planning, during.
 - D: Stakeholders don't set the Sprint Goal.
 **Exam takeaway.** Sprint Goal = collaborative creation in Planning.
 
@@ -424,21 +424,21 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why the others are wrong.**
 - A: Size isn't the issue.
 - C: Cost isn't the central concern.
-- D: They don't *technically* violate self-management — they violate flow.
+- D: They don't *technically* violate self-management, they violate flow.
 **Exam takeaway.** Component teams = handoff seams = anti-pattern.
 
 ### Q19. Answer: B (Sprint Goal, selected PBIs, plan)
 **Why B is correct.** 2020 Scrum Guide three-part Sprint Backlog.
 **Why the others are wrong.**
-- A, C, D: Other framings — the 2020 update is the why/what/how mapping.
+- A, C, D: Other framings, the 2020 update is the why/what/how mapping.
 **Exam takeaway.** Sprint Backlog has 3 parts (added in 2020).
 
 ### Q20. Answer: B (Scrum is established as defined in the Scrum Guide)
 **Why B is correct.** Direct from 2020 Scrum Guide.
 **Why the others are wrong.**
 - A: "Follow the Guide" is too narrow (SM also serves PO, org).
-- C: "PO is happy" — not the SM's accountability.
-- D: "Sprint always succeeds" — not promised by Scrum.
+- C: "PO is happy", not the SM's accountability.
+- D: "Sprint always succeeds", not promised by Scrum.
 **Exam takeaway.** SM accountability is *establishing Scrum*.
 
 ### Q21. Answer: C (Make best efforts and follow up ASAP)
@@ -447,7 +447,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 - A: Skipping the PBI may break Sprint Goal.
 - B: Making assumptions and proceeding without follow-up is reckless.
 - D: Cancelling is too drastic.
-**Exam takeaway.** Developers don't stall — they make progress and reconnect with PO.
+**Exam takeaway.** Developers don't stall, they make progress and reconnect with PO.
 
 ### Q22. Answer: A (Only get stricter over time)
 **Why A is correct.** The DoD evolves *upward* over time, never downward. The 2020 Guide says: "as Scrum Teams mature, it is expected that their definitions of Done will expand to include more stringent criteria."
@@ -457,10 +457,10 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 - D: "Always remain the same" prevents growth.
 **Exam takeaway.** DoD goes UP only.
 
-### Q23. Answer: B (Not possible — one Sprint Goal)
+### Q23. Answer: B (Not possible, one Sprint Goal)
 **Why B is correct.** Per Scrum Guide: "The Sprint Goal is the single objective for the Sprint."
 **Why the others are wrong.**
-- A, C, D: All allow multiple goals — contradicts Scrum.
+- A, C, D: All allow multiple goals, contradicts Scrum.
 **Exam takeaway.** ONE Sprint Goal per Sprint.
 
 ### Q24. Answer: B (By the Developers)
@@ -475,7 +475,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why B is correct.** Enforcing timeboxes is facilitation; if also explaining *why*, it's teaching.
 **Why the others are wrong.**
 - A: Coaching = questions, not enforcement.
-- C: Servant leadership is the umbrella — but the specific stance is Facilitator.
+- C: Servant leadership is the umbrella, but the specific stance is Facilitator.
 - D: Manager isn't a Scrum stance.
 **Exam takeaway.** Stance ≠ overall role; pick the specific behavior.
 
@@ -508,7 +508,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why the others are wrong.**
 - A: Not mandatory.
 - B: PO doesn't run it.
-- D: Not forbidden — depends on whether PO is also a Developer.
+- D: Not forbidden, depends on whether PO is also a Developer.
 **Exam takeaway.** Daily = Developers; PO if doubled as Developer.
 
 ### Q30. Answer: C (Created by Developers; owned by Scrum Team)
@@ -520,7 +520,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Exam takeaway.** Developers create; team is accountable.
 
 ### Q31. Answer: B (Not Done; doesn't count)
-**Why B is correct.** Work that doesn't meet DoD is not Done — Scrum Guide.
+**Why B is correct.** Work that doesn't meet DoD is not Done, Scrum Guide.
 **Why the others are wrong.**
 - A: "Partially done" is not a Scrum status.
 - C: PO can't approve a violation of DoD.
@@ -540,8 +540,8 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why the others are wrong.**
 - A: 100+ pages is wrong.
 - C: Trademark exists but defines the framework, not "a product."
-- D: Same Guide regardless of scaling — scaling frameworks are separate.
-**Exam takeaway.** ~13 pages — read it 3+ times.
+- D: Same Guide regardless of scaling, scaling frameworks are separate.
+**Exam takeaway.** ~13 pages, read it 3+ times.
 
 ### Q34. Answer: B (Coach the org on Review's purpose)
 **Why B is correct.** Reviews are required Scrum events.
@@ -555,8 +555,8 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why B is correct.** Scrum Guide: "for complex problems."
 **Why the others are wrong.**
 - A: Stable requirements suit predictive.
-- C: Fixed-deadline only — too narrow.
-- D: Hardware only — false.
+- C: Fixed-deadline only, too narrow.
+- D: Hardware only, false.
 **Exam takeaway.** Scrum = complex; not all uncertainty.
 
 ### Q36. Answer: A (PO can be a developer too)
@@ -570,7 +570,7 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 ### Q37. Answer: C (Developers)
 **Why C is correct.** "How" is the Developers' domain.
 **Why the others are wrong.**
-- A, B, D: All wrong — Developers decide how.
+- A, B, D: All wrong, Developers decide how.
 **Exam takeaway.** PO defines what/why; Devs decide how.
 
 ### Q38. Answer: B (Multiple Scrum events)
@@ -584,13 +584,13 @@ Then take the **free Scrum.org Open Assessment** until you score 100%. Multiple 
 **Why the others are wrong.**
 - A: PO-only contradicts team collaboration.
 - C: Developers-only contradicts PO authority.
-- D: "Once per Sprint fixed event" — it's ongoing, not fixed.
+- D: "Once per Sprint fixed event", it's ongoing, not fixed.
 **Exam takeaway.** Refinement = collaborative + ongoing.
 
 ### Q40. Answer: B (Not following Scrum properly)
-**Why B is correct.** Sprint Backlog has 3 parts including Sprint Goal — missing it = ScrumBut.
+**Why B is correct.** Sprint Backlog has 3 parts including Sprint Goal, missing it = ScrumBut.
 **Why the others are wrong.**
 - A: Without Sprint Goal, not Scrum.
 - C: Project plan is Waterfall.
-- D: "Don't need until Sprint 5" — wrong; needed from Sprint 1.
+- D: "Don't need until Sprint 5", wrong; needed from Sprint 1.
 **Exam takeaway.** Sprint Goal is required, not optional.

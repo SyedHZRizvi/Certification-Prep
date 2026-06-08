@@ -131,7 +131,7 @@ Plus: impact analysis, backout plan, maintenance window, test results, stakehold
 ❌ Often **wrong**:
 
 - "Restart everything"
-- "Skip documentation — we're busy"
+- "Skip documentation, we're busy"
 - "Pull the drive immediately"
 - "Skip the backout plan"
 - "Reboot, see if it goes away"
@@ -158,9 +158,9 @@ Cover the answers and recite:
 
 1. The 6 steps? ___
 2. First thing to check on 3-beep POST? ___
-3. Blue drive LED — what does it indicate? ___
+3. Blue drive LED, what does it indicate? ___
 4. Linux disk-latency tool? ___
-5. Backout plan — when do you execute it? ___
+5. Backout plan, when do you execute it? ___
 6. What does CMDB store? ___
 
 If you can answer all 6 in under 60 seconds, you own this module. ✅

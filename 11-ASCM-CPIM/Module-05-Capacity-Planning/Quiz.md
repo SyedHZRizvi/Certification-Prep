@@ -117,7 +117,7 @@ D. Direct labor productivity
 
 ### Q19. An hour saved at a non-bottleneck is: *(Understand)*
 A. A direct gain in throughput
-B. A mirage — does not increase system throughput
+B. A mirage, does not increase system throughput
 C. Worth more than an hour at the bottleneck
 D. Only counted if recorded by accounting
 
@@ -168,7 +168,7 @@ RCCP validates the MPS against critical work-center capacity.
 CRP uses detailed routings to validate every work center against the MRP-generated plan.
 
 ### Q3: **D. PAC (shop floor)**
-I/O Control monitors actual vs planned at the work-center level — execution layer.
+I/O Control monitors actual vs planned at the work-center level, execution layer.
 
 ### Q4: **A. RRP**
 Long-range strategic decisions (plants, big equipment, workforce levels) live in Resource Planning at the S&OP layer.
@@ -177,7 +177,7 @@ Long-range strategic decisions (plants, big equipment, workforce levels) live in
 Ideal-conditions theoretical max.
 
 ### Q6: **B. Realistic max given mix, scheduling, maintenance**
-The practical ceiling — between design and demonstrated.
+The practical ceiling, between design and demonstrated.
 
 ### Q7: **B. What the plant has actually produced in recent history**
 Demonstrated = actual past output, the most realistic forward planning number.
@@ -192,7 +192,7 @@ The standard CPIM rated-capacity formula.
 Utilization measures how much of scheduled time was actually used (vs idle/lost).
 
 ### Q11: **B. Standard hours earned ÷ Actual hours worked**
-Efficiency measures *productive output* per *hour worked* — usually expressed as a ratio (1.05 = 5% better than standard).
+Efficiency measures *productive output* per *hour worked*, usually expressed as a ratio (1.05 = 5% better than standard).
 
 ### Q12: **B. Adds capacity BEFORE demand arrives**
 Lead is proactive. Cost: idle capacity if demand disappoints.
@@ -207,15 +207,15 @@ The 5 steps: Identify, Exploit, Subordinate, Elevate, Repeat (return to Step 1).
 A new constraint emerges after elevation. Continuous improvement loop.
 
 ### Q16: **B. The bottleneck (constraint), whose pace sets the plant's rhythm**
-The Drum is the heartbeat — everything paces to it.
+The Drum is the heartbeat, everything paces to it.
 
 ### Q17: **A. Inventory placed BEFORE the bottleneck to protect it from starvation**
-You can't let the bottleneck run out of work — that's lost throughput forever.
+You can't let the bottleneck run out of work, that's lost throughput forever.
 
 ### Q18: **B. Sales revenue minus raw-material (truly variable) costs**
 Goldratt redefined throughput in dollars, not units.
 
-### Q19: **B. A mirage — does not increase system throughput**
+### Q19: **B. A mirage, does not increase system throughput**
 The system's throughput = bottleneck's throughput. Non-bottleneck savings are irrelevant to throughput.
 
 ### Q20: **B. The bottleneck was elsewhere**
@@ -225,7 +225,7 @@ Classic TOC question: throughput only responds when you elevate the *actual* con
 500 × 0.4 = **200 standard hours**.
 
 ### Q22: **B. A Bill of Resources covering only critical work centers**
-RCCP is a *rough* cut — simplified routing, critical centers only. CRP uses full routings.
+RCCP is a *rough* cut, simplified routing, critical centers only. CRP uses full routings.
 
 ### Q23: **B. Less detailed and used at the MPS layer**
 RCCP is the faster, coarser check supporting the MPS. CRP is the detailed check supporting MRP.

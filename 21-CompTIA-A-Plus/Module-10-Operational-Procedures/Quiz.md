@@ -9,10 +9,10 @@
 ## Questions
 
 ### Q1. The step where you document findings, actions, and outcomes in the 6-step methodology is: *(Remember)*
-A. Step 1 — Identify
-B. Step 6 — Document
-C. Step 4 — Plan
-D. Step 2 — Theory
+A. Step 1, Identify
+B. Step 6, Document
+C. Step 4, Plan
+D. Step 2, Theory
 
 ---
 
@@ -138,7 +138,7 @@ D. Wi-Fi PSKs
 
 ### Q17. The PRIMARY reason a tech should NOT browse a user's personal folders during a service call: *(Analyze)*
 A. It takes too long
-B. Privacy / confidentiality — exceeds scope, may violate company policy, and could become a legal issue
+B. Privacy / confidentiality, exceeds scope, may violate company policy, and could become a legal issue
 C. The folders are encrypted
 D. The screen is too small
 
@@ -152,7 +152,7 @@ D. Disable Wi-Fi
 
 ---
 
-### Q19. A surge protector vs a UPS — the key difference is: *(Understand)*
+### Q19. A surge protector vs a UPS, the key difference is: *(Understand)*
 A. They are the same
 B. A surge protector only handles voltage spikes; a UPS additionally provides battery backup during outages/sags
 C. UPS doesn't protect from surges
@@ -162,7 +162,7 @@ D. Surge protectors include batteries
 
 ### Q20. The Capital One breach (2019) highlighted that an open security ticket can: *(Evaluate)*
 A. Self-resolve
-B. Sit in a queue for weeks while exploitable in production — change-management SLAs must include security urgency
+B. Sit in a queue for weeks while exploitable in production, change-management SLAs must include security urgency
 C. Be ignored without consequence
 D. Be marked complete without action
 
@@ -204,7 +204,7 @@ D. Verbal-approval-only process
 
 ## 🎯 Answers + Explanations
 
-### Q1: **B. Step 6 — Document**
+### Q1: **B. Step 6, Document**
 Document is always last. The exam will test you on the order of the 6-step methodology.
 
 ### Q2: **B. Change Advisory Board (CAB)**
@@ -220,7 +220,7 @@ ESD damage is invisible but real. Wrist strap + ground first, always.
 Written before the change, used after a failure. Critical for restoring service quickly.
 
 ### Q6: **C. Online (double conversion)**
-Online UPS runs the inverter always — equipment never sees the raw line voltage. Zero switch gap, premium price.
+Online UPS runs the inverter always, equipment never sees the raw line voltage. Zero switch gap, premium price.
 
 ### Q7: **B. 18–27 °C (64–80 °F)**
 ASHRAE TC9.9 2021 recommended envelope. Some shops push warmer for energy savings.
@@ -235,7 +235,7 @@ Material/Safety Data Sheet. Required by OSHA for chemical safety info. Look up a
 Lithium-ion in landfill = fire risk. Most jurisdictions require recycling.
 
 ### Q11: **B. Name + SSN, name + DOB, name + address**
-PII is usually a combination — the name PLUS another identifier that ties to an individual.
+PII is usually a combination, the name PLUS another identifier that ties to an individual.
 
 ### Q12: **B. Deliver without comment; report egregious mishandling**
 Don't pry. Don't share. If the data was obviously mishandled (e.g., left in public area), escalate to supervisor.
@@ -247,7 +247,7 @@ Acceptable Use Policy = the rules of the road.
 Standard customer-service flow. Defuse the emotion, then solve the problem.
 
 ### Q15: **B. Expedited approval, post-CAB review**
-Emergency = production down, fix needed now. Still reviewed — just after the fact.
+Emergency = production down, fix needed now. Still reviewed, just after the fact.
 
 ### Q16: **B. Every IT asset + relationships**
 CMDB is the inventory of "what we own + what depends on what."
@@ -268,7 +268,7 @@ The Capital One lesson. SLAs for security findings must reflect exploitability +
 The proper de-escalation sequence.
 
 ### Q22: **B. Documented step-by-step for recurring process**
-Different from a runbook (which is task-specific) — SOPs are general.
+Different from a runbook (which is task-specific), SOPs are general.
 
 ### Q23: **B. Legal + security + termination risk**
 Pirated software = license violation + commonly bundled with malware + firing offense at most companies.
@@ -300,4 +300,4 @@ The modern, balanced approach. Standard for routine; Normal CAB for big stuff; E
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 11 — Mobile / Application Troubleshooting](../Module-11-Mobile-Troubleshooting/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 11, Mobile / Application Troubleshooting](../Module-11-Mobile-Troubleshooting/Reading.md)

@@ -56,7 +56,7 @@ job = sft.train(
 
 ---
 
-## ⚡ LoRA — What & Why
+## ⚡ LoRA, What & Why
 
 - **L**ow-**R**ank **A**daptation: insert small adapter matrices on attention layers; only adapters update
 - Base weights frozen → no catastrophic damage
@@ -143,7 +143,7 @@ result = task.evaluate(model=tuned_model)
 
 ❌ Often **wrong**:
 
-- "Fine-tune to add knowledge" (no — RAG)
+- "Fine-tune to add knowledge" (no, RAG)
 - "More epochs = better" (overfit)
 - "100 examples works for any task"
 - "Fine-tuned models are cheaper than base"

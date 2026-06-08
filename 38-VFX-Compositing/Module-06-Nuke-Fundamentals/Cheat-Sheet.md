@@ -19,8 +19,8 @@ title: "Module 6 Cheat Sheet: Nuke Fundamentals"
 | Shuffle | Extract/reroute EXR channels | in1, in2, in3 per output channel |
 | Curves | Per-channel curve correction | Master, R, G, B, A curves |
 | Backdrop | Organizational label | Label, tile_color |
-| Dot | Wire routing without operation | — |
-| Group | Encapsulate multi-node operation | — |
+| Dot | Wire routing without operation |, |
+| Group | Encapsulate multi-node operation |, |
 
 ---
 
@@ -76,7 +76,7 @@ title: "Module 6 Cheat Sheet: Nuke Fundamentals"
 |-----------|----------------|-------|
 | Blur (Gaussian) | Yes | Substantial benefit at large radii |
 | Merge | Yes | Benefit at 4K+ resolution |
-| Grade / ColorCorrect | Yes | Simple math — bandwidth wins |
+| Grade / ColorCorrect | Yes | Simple math, bandwidth wins |
 | Keyer | Yes | |
 | ZDefocus | Yes | High VRAM requirement |
 | Deep compositing | No (CPU) | CPU-bound regardless of GPU |
@@ -90,10 +90,10 @@ title: "Module 6 Cheat Sheet: Nuke Fundamentals"
 | Convention | Standard |
 |------------|---------|
 | Backdrops | Color-coded sections: Inputs (blue), Keying (orange), CG (green), Grading (red), Output (white) |
-| Dots | Route wires for readability — no image operation |
+| Dots | Route wires for readability, no image operation |
 | Groups | Encapsulate complex operations into a single box |
 | Gizmos | Reusable encapsulated tools shared across productions |
-| Naming | `Read_plate_hero`, `Read_CG_beast_beauty` — descriptive names |
+| Naming | `Read_plate_hero`, `Read_CG_beast_beauty`, descriptive names |
 | Disabled nodes | Experimental nodes disabled, not deleted |
 
 ---

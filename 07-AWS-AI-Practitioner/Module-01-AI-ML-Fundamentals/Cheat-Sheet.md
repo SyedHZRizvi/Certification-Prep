@@ -10,10 +10,10 @@
 AI  ⊃  ML  ⊃  Deep Learning  ⊃  Generative AI
 ```
 
-- **AI** — any system that mimics intelligence
-- **ML** — learns from data
-- **DL** — ML using deep neural networks
-- **GenAI** — DL that *creates* new content
+- **AI**, any system that mimics intelligence
+- **ML**, learns from data
+- **DL**, ML using deep neural networks
+- **GenAI**, DL that *creates* new content
 
 ---
 
@@ -53,7 +53,7 @@ AI  ⊃  ML  ⊃  Deep Learning  ⊃  Generative AI
 |---------|--------|---------------|
 | Classification | Accuracy, Precision, Recall, F1, AUC-ROC | Accuracy lies on imbalanced data → use Recall/F1 |
 | Regression | MAE, MSE, RMSE, R² | RMSE penalizes big errors more |
-| Generative text (preview Mod 6) | BLEU, ROUGE, perplexity, human eval | — |
+| Generative text (preview Mod 6) | BLEU, ROUGE, perplexity, human eval |, |
 
 ---
 
@@ -84,7 +84,7 @@ AI  ⊃  ML  ⊃  Deep Learning  ⊃  Generative AI
 
 ## 🏆 Exam Power Phrases
 
-Look for these — they're usually right:
+Look for these, they're usually right:
 
 - ✅ "Use **unsupervised** learning when there are no labels"
 - ✅ "**Overfitting**" when training acc >> test acc

@@ -70,7 +70,7 @@ D. Are user-consentable
 
 ---
 
-### Q9. **Yes/No** — Permissions. *(Understand)*
+### Q9. **Yes/No**, Permissions. *(Understand)*
 
 **S1:** `User.Read` (default delegated scope) is a delegated permission.
 **S2:** `Mail.Send` as a delegated scope acts on behalf of the signed-in user.
@@ -131,7 +131,7 @@ D. `https://portal.azure.com`
 
 ---
 
-### Q16. **Yes/No** — SSO. *(Understand)*
+### Q16. **Yes/No**, SSO. *(Understand)*
 
 **S1:** Microsoft Entra Application Proxy requires Entra ID P1 or higher.
 **S2:** App Proxy supports Kerberos Constrained Delegation (KCD) for backend auth.
@@ -168,7 +168,7 @@ D. Identity Protection blocked the sign-in
 
 ---
 
-### Q20. **Yes/No** — App registration. *(Understand)*
+### Q20. **Yes/No**, App registration. *(Understand)*
 
 **S1:** Deleting an Enterprise App also deletes its App Registration in the home tenant.
 **S2:** A multi-tenant App Registration creates an Enterprise App in each consenting tenant.
@@ -219,7 +219,7 @@ D. Disable Authenticator push
 
 ---
 
-### Q25. **Yes/No** — OAuth & app permissions. *(Evaluate)*
+### Q25. **Yes/No**, OAuth & app permissions. *(Evaluate)*
 
 **S1:** Application permission `User.Read.All` allows the app to read all users without a signed-in user.
 **S2:** Delegated permission allows the app to act unattended.
@@ -259,7 +259,7 @@ The canonical illicit-consent-attack mitigation.
 Application permissions can never be user-consented.
 
 ### Q9: **A. Yes / Yes / Yes**
-S1 yes — `User.Read` is delegated. S2 yes — `Mail.Send` as delegated acts on behalf of the signed-in user. S3 yes — `User.Read.All` exists as an application permission needing admin consent.
+S1 yes `User.Read` is delegated. S2 yes `Mail.Send` as delegated acts on behalf of the signed-in user. S3 yes, `User.Read.All` exists as an application permission needing admin consent.
 
 ### Q10: **B. `roles` claim**
 App roles surface as the `roles` claim in the token.
@@ -286,13 +286,13 @@ S1 yes (P1 min). S2 yes (KCD supported). S3 no (App Proxy is per-app, identity-a
 The in-product approval flow.
 
 ### Q18: **B. Specific users or groups designated in Consent and permissions settings**
-Reviewer assignment is by user/group — not by Entra role.
+Reviewer assignment is by user/group, not by Entra role.
 
 ### Q19: **B. The SAML response Audience (Entity ID) doesn't match what the app expects**
 Identifier mismatch is the canonical SAML SSO failure mode.
 
 ### Q20: **B. No / Yes / Yes**
-S1 no (App Registration lives in the home tenant — deleting an Enterprise App in a consuming tenant doesn't delete the home-tenant App Registration). S2 yes (multi-tenant App Registration creates one service principal per consenting tenant). S3 yes (service principal and Enterprise App are the same per-tenant object).
+S1 no (App Registration lives in the home tenant, deleting an Enterprise App in a consuming tenant doesn't delete the home-tenant App Registration). S2 yes (multi-tenant App Registration creates one service principal per consenting tenant). S3 yes (service principal and Enterprise App are the same per-tenant object).
 
 ### Q21: **A. 1 → 2 → 3 → 4**
 Gallery → SAML → assign users → provisioning.

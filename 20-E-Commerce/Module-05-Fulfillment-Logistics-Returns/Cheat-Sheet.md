@@ -124,10 +124,10 @@ Return rates by category:
 ## ♻️ Return Inspection Grades
 
 ```
-A — Restock to inventory
-B — Liquidate (Optoro, B-Stock @ ~30-50% of retail)
-C — Refurbish
-D — Dispose / recycle
+A, Restock to inventory
+B, Liquidate (Optoro, B-Stock @ ~30-50% of retail)
+C, Refurbish
+D, Dispose / recycle
 ```
 
 ---
@@ -181,12 +181,12 @@ Mandatory; member states implement
 
 ## 🗓️ Key Dates
 
-- **2020** — Walmart launched WFS
-- **2021** — Maersk acquired Visible Supply Chain
-- **April 2023** — Buy with Prime public launch
-- **2023** — Shop Pay + Buy with Prime integration
-- **2024** — Maersk's Sennder acquisition; FBA-Shopify direct
-- **2024-25** — UK FCA BNPL regulation (affects cross-border payments)
+- **2020**, Walmart launched WFS
+- **2021**, Maersk acquired Visible Supply Chain
+- **April 2023**, Buy with Prime public launch
+- **2023**, Shop Pay + Buy with Prime integration
+- **2024**, Maersk's Sennder acquisition; FBA-Shopify direct
+- **2024-25**, UK FCA BNPL regulation (affects cross-border payments)
 
 ---
 

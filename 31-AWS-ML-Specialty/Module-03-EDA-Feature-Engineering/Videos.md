@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">EDA in pandas — Complete Walkthrough</p>
+      <p class="vg-title">EDA in pandas, Complete Walkthrough</p>
       <p class="vg-creator">Ken Jee / Data Professor</p>
       <span class="vg-duration">⏱ 20 min · The standard 5-step playbook</span>
     </div>
@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🧹</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Missing-Data Imputation — Beyond Mean/Median</p>
+      <p class="vg-title">Missing-Data Imputation, Beyond Mean/Median</p>
       <p class="vg-creator">StatQuest</p>
       <span class="vg-duration">⏱ 15 min · MCAR / MAR / MNAR explained</span>
     </div>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker Data Wrangler — Hands-On Tour</p>
+      <p class="vg-title">SageMaker Data Wrangler, Hands-On Tour</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 18 min · Visual prep + Feature Store export</span>
     </div>
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>📉</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PCA — Visual Intuition + Math</p>
+      <p class="vg-title">PCA, Visual Intuition + Math</p>
       <p class="vg-creator">StatQuest</p>
       <span class="vg-duration">⏱ 22 min · Best PCA explainer on YouTube</span>
     </div>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🔤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Categorical Encoding — Target vs One-Hot vs Embedding</p>
+      <p class="vg-title">Categorical Encoding, Target vs One-Hot vs Embedding</p>
       <p class="vg-creator">Krish Naik</p>
       <span class="vg-duration">⏱ 18 min · Avoid the leakage trap</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Class Imbalance — SMOTE, Class Weights, Thresholds</p>
+      <p class="vg-title">Class Imbalance, SMOTE, Class Weights, Thresholds</p>
       <p class="vg-creator">Andreas Mueller (sklearn maintainer)</p>
       <span class="vg-duration">⏱ 22 min · The whole toolbox</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🏪</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SageMaker Feature Store — Online + Offline</p>
+      <p class="vg-title">SageMaker Feature Store, Online + Offline</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 15 min · The dual-mode pattern</span>
     </div>
@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🌌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">t-SNE vs UMAP — Picking The Right Tool</p>
+      <p class="vg-title">t-SNE vs UMAP, Picking The Right Tool</p>
       <p class="vg-creator">StatQuest</p>
       <span class="vg-duration">⏱ 17 min · Non-linear viz</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>💳</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Stripe Radar — Real-World Feature Engineering</p>
+      <p class="vg-title">Stripe Radar, Real-World Feature Engineering</p>
       <p class="vg-creator">Stripe Engineering talks</p>
       <span class="vg-duration">⏱ 35 min · Velocity, embeddings, network features</span>
     </div>
@@ -141,7 +141,7 @@
 1. Sketch the 5-step EDA workflow from memory.
 2. When do you scale numerics? When do you NOT scale?
 3. Why is target encoding leakage-prone, and how do you prevent it?
-4. PCA vs t-SNE vs UMAP — which for visualisation, which for feature input?
-5. Three class-imbalance treatments — pros and cons of each.
+4. PCA vs t-SNE vs UMAP, which for visualisation, which for feature input?
+5. Three class-imbalance treatments, pros and cons of each.
 
 Then go to the [Quiz](./Quiz.md).

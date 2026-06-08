@@ -1,6 +1,6 @@
 # PMP Module 6: Earned Value Management (EVM) 📊
 
-> **Why this module matters:** EVM is the "math part" of PMP. ~5-10 questions. **It's not hard once you know the formulas.** Most fail because they panic. Don't panic — drill the 8 formulas below until you dream them.
+> **Why this module matters:** EVM is the "math part" of PMP. ~5-10 questions. **It's not hard once you know the formulas.** Most fail because they panic. Don't panic, drill the 8 formulas below until you dream them.
 
 ---
 
@@ -24,21 +24,21 @@ It compares:
 
 Memorize these first. Everything else builds on them:
 
-### PV — Planned Value
+### PV, Planned Value
 > "What was *planned* to be completed (in $) by this point?"
 
 Also called BCWS (Budgeted Cost of Work Scheduled).
 
 **Example:** Project budget $100K, 10 months. After 6 months, planned to be 60% done → PV = $60K.
 
-### EV — Earned Value
+### EV, Earned Value
 > "What's the *value* of the work *actually completed* (in $)?"
 
 Also called BCWP (Budgeted Cost of Work Performed).
 
 **Example:** After 6 months, you've actually completed 40% of project scope → EV = $40K.
 
-### AC — Actual Cost
+### AC, Actual Cost
 > "How much money have you *actually spent*?"
 
 Also called ACWP (Actual Cost of Work Performed).
@@ -77,9 +77,9 @@ Also called ACWP (Actual Cost of Work Performed).
 
 ### Forecasting Formulas (EAC, ETC, VAC)
 
-#### 5. EAC (Estimate at Completion) — multiple variants:
+#### 5. EAC (Estimate at Completion), multiple variants:
 
-##### EAC = BAC / CPI (most common — assumes current efficiency continues)
+##### EAC = BAC / CPI (most common, assumes current efficiency continues)
 - BAC = Budget at Completion (the original total budget)
 
 ##### EAC = AC + (BAC - EV) (assumes future work at planned rate, not current efficiency)
@@ -94,15 +94,15 @@ Also called ACWP (Actual Cost of Work Performed).
 > "How much MORE will it cost to finish?"
 
 #### 7. VAC (Variance at Completion) = BAC - EAC
-> "Total project variance — how much over/under budget will we be?"
+> "Total project variance, how much over/under budget will we be?"
 - **Positive:** Will finish under budget ✅
 - **Negative:** Will finish over budget ❌
 
 #### 8. TCPI (To-Complete Performance Index)
 > "What efficiency must remaining work achieve to finish on (original budget OR EAC)?"
 
-##### TCPI = (BAC - EV) / (BAC - AC) — to finish at original budget
-##### TCPI = (BAC - EV) / (EAC - AC) — to finish at EAC
+##### TCPI = (BAC - EV) / (BAC - AC), to finish at original budget
+##### TCPI = (BAC - EV) / (EAC - AC), to finish at EAC
 
 🎯 **TCPI > 1.0** = harder than current pace.
 
@@ -238,8 +238,8 @@ You now know:
 ### Prerequisites for this module
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - **Cost baselines and scope baselines** — covered in [Module 03: Process Domain](../Module-03-Process-Domain/Reading.md).
-> - **Basic algebra** — division, percentages, the concept of a ratio. No calculus required.
+> - **Cost baselines and scope baselines**, covered in [Module 03: Process Domain](../Module-03-Process-Domain/Reading.md).
+> - **Basic algebra**, division, percentages, the concept of a ratio. No calculus required.
 > - **Optional cross-course preparation:** [10-ASCM-CSCP Module 06: Supply Chain Performance Management](../../10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading.md) covers KPI/dashboard structures that complement EVM thinking.
 >
 > If any of these are shaky, pause and review before continuing.
@@ -247,21 +247,21 @@ You now know:
 ### Where this leads
 
 > **Where this leads.**
-> - **Inside this course:** [Module 07 — Risk](../Module-07-Risk/Reading.md) connects EVM to Contingency Reserve usage; [Module 08 — Quality](../Module-08-Quality/Reading.md) extends measurement to quality metrics.
+> - **Inside this course:** [Module 07 Risk](../Module-07-Risk/Reading.md) connects EVM to Contingency Reserve usage; [Module 08 Quality](../Module-08-Quality/Reading.md) extends measurement to quality metrics.
 > - **Cross-course:** [10-ASCM-CSCP Module 06](../../10-ASCM-CSCP/Module-06-Sourcing-Supplier-Management/Reading.md) extends performance-measurement thinking to supply-chain dashboards.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) draw ~5–10 questions each from EVM (formula-heavy).
 
 ---
 
-## 📊 Case Study — NASA Mars Climate Orbiter (1999)
+## 📊 Case Study, NASA Mars Climate Orbiter (1999)
 
-**Situation.** The Mars Climate Orbiter (MCO) was a $327.6 million NASA mission (with the Mars Polar Lander, total program cost ~$193M in MCO alone) launched December 11, 1998. The MCO's job was to study Mars's climate and act as a communications relay for the Mars Polar Lander, which was scheduled to land later in 1999. Mission Operations were split between NASA's Jet Propulsion Laboratory (JPL) and Lockheed Martin Astronautics (LMA, the spacecraft contractor in Denver). The mission was managed under NASA's "Faster, Better, Cheaper" (FBC) program, championed by Administrator Daniel Goldin — designed to cut costs and schedules ~30% versus traditional NASA flagship missions.
+**Situation.** The Mars Climate Orbiter (MCO) was a $327.6 million NASA mission (with the Mars Polar Lander, total program cost ~$193M in MCO alone) launched December 11, 1998. The MCO's job was to study Mars's climate and act as a communications relay for the Mars Polar Lander, which was scheduled to land later in 1999. Mission Operations were split between NASA's Jet Propulsion Laboratory (JPL) and Lockheed Martin Astronautics (LMA, the spacecraft contractor in Denver). The mission was managed under NASA's "Faster, Better, Cheaper" (FBC) program, championed by Administrator Daniel Goldin, designed to cut costs and schedules ~30% versus traditional NASA flagship missions.
 
-**Decision.** Project management decisions were made to minimize cost and schedule: (1) Lockheed Martin used **English (Imperial) units** (pound-seconds) in the thrust software it provided to JPL, while JPL's navigation team used **metric (newton-seconds)** in its trajectory software — the interface control document specified metric but the unit conversion was never enforced in the actual code or integration test; (2) navigation anomalies during cruise were observed but not formally root-caused, partly because the program's measurement and review cadence (status reports, baseline reviews) had been reduced under FBC cost pressure; (3) the project had no dedicated independent verification & validation (IV&V) for navigation software — that role was cut to save cost; (4) two engineers had flagged the unit mismatch verbally in the weeks before Mars insertion but were not heard by decision-makers because the lessons-learned and risk-escalation processes were under-resourced.
+**Decision.** Project management decisions were made to minimize cost and schedule: (1) Lockheed Martin used **English (Imperial) units** (pound-seconds) in the thrust software it provided to JPL, while JPL's navigation team used **metric (newton-seconds)** in its trajectory software the interface control document specified metric but the unit conversion was never enforced in the actual code or integration test; (2) navigation anomalies during cruise were observed but not formally root-caused, partly because the program's measurement and review cadence (status reports, baseline reviews) had been reduced under FBC cost pressure; (3) the project had no dedicated independent verification & validation (IV&V) for navigation software that role was cut to save cost; (4) two engineers had flagged the unit mismatch verbally in the weeks before Mars insertion but were not heard by decision-makers because the lessons-learned and risk-escalation processes were under-resourced.
 
-**Outcome.** On September 23, 1999, the Mars Climate Orbiter performed its Mars Orbit Insertion burn at the wrong altitude — entering atmospheric layers at ~57 km rather than the planned ~226 km — and was destroyed. The $327M asset was lost. NASA's Mars Climate Orbiter Mishap Investigation Board (Stephenson et al., November 1999 report) concluded the root cause was the units mismatch, but the *contributing causes* were primarily project-management failures: inadequate verification processes, insufficient communication between JPL and LMA, and underestimated complexity in the Faster-Better-Cheaper structure. NASA Administrator Goldin subsequently re-emphasized rigorous review processes; FBC was effectively abandoned as a doctrine within a few years.
+**Outcome.** On September 23, 1999, the Mars Climate Orbiter performed its Mars Orbit Insertion burn at the wrong altitude entering atmospheric layers at ~57 km rather than the planned ~226 km and was destroyed. The $327M asset was lost. NASA's Mars Climate Orbiter Mishap Investigation Board (Stephenson et al., November 1999 report) concluded the root cause was the units mismatch, but the *contributing causes* were primarily project-management failures: inadequate verification processes, insufficient communication between JPL and LMA, and underestimated complexity in the Faster-Better-Cheaper structure. NASA Administrator Goldin subsequently re-emphasized rigorous review processes; FBC was effectively abandoned as a doctrine within a few years.
 
-**Lesson for the exam / for practitioners.** This case is taught in every aerospace project-management curriculum because it shows how **cost-cutting in measurement infrastructure produces catastrophic failures**. PMBOK 7's **Measurement** Performance Domain (PMBOK 7 §2.7) tests this directly. The cost savings in cutting IV&V were dwarfed by the lost mission. On the exam, when you see questions about *"EVM shows the project on cost and schedule — what could still be wrong?"* the right answer is that EVM measures cost and schedule but **does not measure interface integrity, communication quality, or independent verification**. EVM is necessary, not sufficient. The MCO is the canonical reminder that "the metrics looked fine" is not the same as "the project was fine."
+**Lesson for the exam / for practitioners.** This case is taught in every aerospace project-management curriculum because it shows how **cost-cutting in measurement infrastructure produces catastrophic failures**. PMBOK 7's **Measurement** Performance Domain (PMBOK 7 §2.7) tests this directly. The cost savings in cutting IV&V were dwarfed by the lost mission. On the exam, when you see questions about *"EVM shows the project on cost and schedule, what could still be wrong?"* the right answer is that EVM measures cost and schedule but **does not measure interface integrity, communication quality, or independent verification**. EVM is necessary, not sufficient. The MCO is the canonical reminder that "the metrics looked fine" is not the same as "the project was fine."
 
 **Discussion (Socratic).**
 - Q1: A perfectly-on-cost, on-schedule project can still fail catastrophically. What does that tell you about the appropriate weight to give EVM in a portfolio review? Defend a position using PMBOK 7's Measurement principle vs Quality principle.
@@ -270,11 +270,11 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **EAC variants.** The default EAC = BAC / CPI assumes current cost efficiency continues. The alternative EAC = AC + (BAC − EV) assumes future work runs at the planned rate. When is each defensible? Construct two project scenarios.
 2. **TCPI and motivation.** A TCPI of 1.4 says remaining work must be 40% more efficient than current performance to hit budget. At what TCPI threshold does the metric become demotivating rather than motivating, and what should the PM do?
-3. **EVM in agile.** Pure agile teams resist EVM because "scope flexes." How do you adapt EVM to agile context — what's the right unit of "earned value" in story-point land? Cite PMBOK 7's Tailoring principle.
+3. **EVM in agile.** Pure agile teams resist EVM because "scope flexes." How do you adapt EVM to agile context, what's the right unit of "earned value" in story-point land? Cite PMBOK 7's Tailoring principle.
 4. **The hidden assumption in EAC.** Default EAC assumes current efficiency continues. What organizational or environmental events could break that assumption (e.g., a key engineer quits, a regulation changes, a supplier fails)? How should the PM signal a forced EAC re-baseline to the sponsor?
 5. **EVM and ethics.** A sponsor pressures you to report EAC as below BAC even though CPI shows otherwise. How do you respond using the PMI Code of Ethics (Honesty + Responsibility)?
 

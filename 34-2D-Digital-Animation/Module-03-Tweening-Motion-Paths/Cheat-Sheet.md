@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-03-Tweening-Motion-Paths/Cheat-Sheet/
 title: "Module 3 Cheat Sheet: Tweening & Motion Paths"
 ---
 
-# ⚡ Module 3 Cheat Sheet — Tweening & Motion Paths
+# ⚡ Module 3 Cheat Sheet, Tweening & Motion Paths
 
 ---
 
@@ -21,7 +21,7 @@ title: "Module 3 Cheat Sheet: Tweening & Motion Paths"
 
 ---
 
-## Classic Tween Ease Slider — MEMORIZE DIRECTION
+## Classic Tween Ease Slider, MEMORIZE DIRECTION
 
 ```
 Positive (+100) = Ease OUT = Starts fast → slows to end
@@ -29,7 +29,7 @@ Negative (−100) = Ease IN  = Starts slow → speeds to end
 Zero (0)        = Linear   = Constant speed
 ```
 
-> 🚨 This is counterintuitive — positive = OUT, not IN. Frequently tested.
+> 🚨 This is counterintuitive, positive = OUT, not IN. Frequently tested.
 
 ---
 
@@ -45,7 +45,7 @@ Zero (0)        = Linear   = Constant speed
 
 ---
 
-## Ease Presets — Quick Pick
+## Ease Presets, Quick Pick
 
 | Preset | Use For | Avoid For |
 |--------|---------|-----------|

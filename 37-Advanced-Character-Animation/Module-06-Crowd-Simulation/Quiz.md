@@ -56,7 +56,7 @@ D. The collision detection system for agent-to-agent interaction
 A. Large-scale autonomous battle simulation requiring emergent behavior  
 B. Pipeline-integrated crowd work with procedural setup and art direction  
 C. Stand-alone crowd simulation independent of the main production pipeline  
-D. Crowds of fewer than 100 agents — Houdini cannot scale beyond that  
+D. Crowds of fewer than 100 agents, Houdini cannot scale beyond that  
 
 ---
 
@@ -70,7 +70,7 @@ D. Motion-captured crowd extras who replace simulated agents in close-up
 
 ### Q9. For a shot requiring 1,000+ autonomous agents with emergent battle behavior, the correct approach is:
 A. Keyframe all agents individually  
-B. Simulation — keyframe cannot scale to this count with authentic emergent behavior  
+B. Simulation, keyframe cannot scale to this count with authentic emergent behavior  
 C. Use a single motion capture clip applied to all agents simultaneously  
 D. Use still images of crowds composited in post-production  
 
@@ -133,15 +133,15 @@ D. Increasing or decreasing the simulation frame rate
 ---
 
 ### Q17. Which editorial principle governs crowd simulation production?
-A. The simulation drives the edit — editorial is cut after the simulation is final  
-B. The edit drives the simulation — the simulation must produce appropriate content at every cut point  
+A. The simulation drives the edit, editorial is cut after the simulation is final  
+B. The edit drives the simulation, the simulation must produce appropriate content at every cut point  
 C. Editorial and simulation are developed in parallel with no dependency  
 D. The simulation is finalized before any editorial decisions are made  
 
 ---
 
 ### Q18. Timing variation alone (without geometric variation) can:
-A. Never produce the illusion of individual characters — geometry must be unique  
+A. Never produce the illusion of individual characters, geometry must be unique  
 B. Make even geometrically identical characters read as individuals  
 C. Only work for crowds of fewer than 100 agents  
 D. Replace all other forms of crowd variation  
@@ -165,10 +165,10 @@ D. Group → Individual → Global → Overrides
 ---
 
 ### Q21. For a crowd shot of a stadium cheering on cue, the recommended approach is:
-A. Pure simulation — no keyframe  
-B. Pure keyframe — no simulation  
+A. Pure simulation, no keyframe  
+B. Pure keyframe, no simulation  
 C. A hybrid approach using both simulation and keyframe  
-D. Neither — stadium crowds are always plate photography composites  
+D. Neither, stadium crowds are always plate photography composites  
 
 ---
 
@@ -199,28 +199,28 @@ D. The Render Layer
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — Human visual system is sensitive to pattern repetition in groups
-Q2.  C — Minimum: geometric + timing + motion quality
-Q3.  B — 1-in-10: at least 1 agent does something distinctly different
-Q4.  C — Fuzzy logic networks: sensory inputs → behavioral decisions
-Q5.  B — Emergent: authentic behavior arising from logic, not direction
-Q6.  B — Brain: fuzzy logic network of nodes
-Q7.  B — Houdini CROWDS: procedural, pipeline-integrated
-Q8.  B — Hero crowd: 20–50 nearest camera; keyframed for specific marks
-Q9.  B — 1000+ autonomous agents: simulation required
-Q10. B — Clip transition graph: state machine for motion selection
-Q11. C — Pelennor Fields: 200,000 agents
-Q12. C — Hero-adjacent (30 characters hitting marks): keyframe
-Q13. B — Force fields: attraction/repulsion volumes
-Q14. B — Emergent authentic behavior; not scripted; kept in final film
-Q15. B — Instanced geometry for render performance
-Q16. B — Behavioral parameter tuning: adjust fuzzy logic output weights
-Q17. B — Edit drives simulation; simulation must serve editorial
-Q18. B — Timing variation alone can differentiate even identical geometry
-Q19. B — Output node drives motion clip selection
-Q20. B — Global → Group → Individual → Overrides
-Q21. C — Stadium on cue: hybrid (sim background + keyframe for on-cue response)
-Q22. C — Houdini: procedural/pipeline-native; Massive: stand-alone autonomous
-Q23. B — Population seeding: initial distribution and heading
-Q24. C — Motion Library stores the motion clips
+Q1.  B, Human visual system is sensitive to pattern repetition in groups
+Q2.  C, Minimum: geometric + timing + motion quality
+Q3.  B, 1-in-10: at least 1 agent does something distinctly different
+Q4.  C, Fuzzy logic networks: sensory inputs → behavioral decisions
+Q5.  B, Emergent: authentic behavior arising from logic, not direction
+Q6.  B, Brain: fuzzy logic network of nodes
+Q7.  B, Houdini CROWDS: procedural, pipeline-integrated
+Q8.  B, Hero crowd: 20–50 nearest camera; keyframed for specific marks
+Q9.  B, 1000+ autonomous agents: simulation required
+Q10. B, Clip transition graph: state machine for motion selection
+Q11. C, Pelennor Fields: 200,000 agents
+Q12. C, Hero-adjacent (30 characters hitting marks): keyframe
+Q13. B, Force fields: attraction/repulsion volumes
+Q14. B, Emergent authentic behavior; not scripted; kept in final film
+Q15. B, Instanced geometry for render performance
+Q16. B, Behavioral parameter tuning: adjust fuzzy logic output weights
+Q17. B, Edit drives simulation; simulation must serve editorial
+Q18. B, Timing variation alone can differentiate even identical geometry
+Q19. B, Output node drives motion clip selection
+Q20. B, Global → Group → Individual → Overrides
+Q21. C, Stadium on cue: hybrid (sim background + keyframe for on-cue response)
+Q22. C, Houdini: procedural/pipeline-native; Massive: stand-alone autonomous
+Q23. B, Population seeding: initial distribution and heading
+Q24. C, Motion Library stores the motion clips
 ```

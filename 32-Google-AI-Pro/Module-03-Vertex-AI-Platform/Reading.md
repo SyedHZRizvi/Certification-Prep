@@ -1,6 +1,6 @@
 # Module 3: Vertex AI Platform Deep Dive 🏢
 
-> **Why this module matters:** Vertex AI is the answer to the question both Google certification exams ask most often: *"You have an enterprise GenAI workload — where do you run it, what are the components, and how do you wire them together?"* If Module 1 told you what Gemini is and Module 2 told you how to call it, this module tells you *where it lives in production* — and that "where" turns out to be an umbrella over roughly 25 Google Cloud products. Memorize the umbrella; the exam is testing whether you can navigate it.
+> **Why this module matters:** Vertex AI is the answer to the question both Google certification exams ask most often: *"You have an enterprise GenAI workload where do you run it, what are the components, and how do you wire them together?"* If Module 1 told you what Gemini is and Module 2 told you how to call it, this module tells you *where it lives in production* and that "where" turns out to be an umbrella over roughly 25 Google Cloud products. Memorize the umbrella; the exam is testing whether you can navigate it.
 
 > **Prerequisites for this module.** Modules 1–2 finished. A Google Cloud project with billing enabled and the Vertex AI API enabled (`gcloud services enable aiplatform.googleapis.com`). $300 free credits if new.
 
@@ -8,11 +8,11 @@
 
 ## 📖 A Story: How Spotify's ML Team Moved From "Custom Cluster" to Vertex AI
 
-It is 2019. Spotify's ML platform team is running ~3,000 ML models across discovery, recommendations, ads, and trust & safety. Each model has its own training notebook, its own feature store hack, its own monitoring dashboard, its own deployment story. The team's biggest engineer pain isn't training new models — it's that an L4 engineer can spend three weeks shipping a model another engineer trained, because "production" was a different person every time.
+It is 2019. Spotify's ML platform team is running ~3,000 ML models across discovery, recommendations, ads, and trust & safety. Each model has its own training notebook, its own feature store hack, its own monitoring dashboard, its own deployment story. The team's biggest engineer pain isn't training new models, it's that an L4 engineer can spend three weeks shipping a model another engineer trained, because "production" was a different person every time.
 
 Spotify's published case study (Google Cloud Next 2020, Spotify Engineering blog) describes the next two years as a deliberate consolidation onto **Vertex AI**. Training notebooks moved to **Vertex AI Workbench**. Features moved to **Vertex AI Feature Store**. Pipelines moved to **Vertex AI Pipelines** (Kubeflow under the hood). Models registered to **Vertex AI Model Registry**. Deployments via **Vertex AI Endpoints**. Drift detection via **Vertex AI Model Monitoring**. The before-state was 3,000 bespoke pipelines; the after-state was one platform.
 
-By 2024 — with GenAI now a first-class workload — Spotify's GenAI team built on the same platform. Vertex AI added a *Studio* (web UI for Gemini prompting), a *Model Garden* (catalog of 200+ models, including Gemini, Claude, Llama, Mistral, Cohere), a *Vector Search* (the rebranded Matching Engine ANN index), a *Search* (the rebranded Discovery Engine), and an *Agent Builder* (no-code agent framework). Each piece existed because somebody at Google's biggest customer asked for it.
+By 2024 with GenAI now a first-class workload Spotify's GenAI team built on the same platform. Vertex AI added a *Studio* (web UI for Gemini prompting), a *Model Garden* (catalog of 200+ models, including Gemini, Claude, Llama, Mistral, Cohere), a *Vector Search* (the rebranded Matching Engine ANN index), a *Search* (the rebranded Discovery Engine), and an *Agent Builder* (no-code agent framework). Each piece existed because somebody at Google's biggest customer asked for it.
 
 This module is the *map* of that platform. You will not write much code in this module; you will memorize what each Vertex AI sub-product does, when to pick it, and how it composes with the others. That map is the single most testable artifact of the Generative AI Leader and PMLE exams.
 
@@ -94,40 +94,40 @@ Already covered in Module 2; consolidating here for the exam.
 
 ---
 
-## 🛍️ Vertex AI Model Garden — The 200-Model Catalog
+## 🛍️ Vertex AI Model Garden, The 200-Model Catalog
 
 **Model Garden** is Vertex AI's catalog of models. Three categories:
 
 ### 1. First-party Google models
 - **Gemini** family (2.5 Pro/Flash/Flash Lite/Ultra; legacy 1.5, 1.0)
-- **Imagen** family (text-to-image — Imagen 3, Imagen 4)
+- **Imagen** family (text-to-image, Imagen 3, Imagen 4)
 - **Veo** (text-to-video)
 - **Chirp** family (speech-to-text, text-to-speech)
-- **MedLM** (Med-PaLM 2 successor — healthcare)
+- **MedLM** (Med-PaLM 2 successor, healthcare)
 - **CodeChat-Bison / Code-Bison** (legacy code models)
 - **Embeddings** (text-embedding-004, text-embedding-005, gemini-embedding-001, multilingual-embedding-002)
 
 ### 2. Third-party partner models
-- **Anthropic Claude** — Claude Sonnet 4.6, Claude Haiku 4.5, Claude Opus 4.6 on Vertex AI
-- **Meta Llama** — Llama 3, Llama 3.1, Llama 4 series
-- **Mistral** — Mistral Large, Codestral, Mixtral 8x22B
-- **Cohere** — Command R+, Embed v3
-- **AI21 Labs** — Jamba (long-context Mamba-style)
+- **Anthropic Claude**, Claude Sonnet 4.6, Claude Haiku 4.5, Claude Opus 4.6 on Vertex AI
+- **Meta Llama**, Llama 3, Llama 3.1, Llama 4 series
+- **Mistral**, Mistral Large, Codestral, Mixtral 8x22B
+- **Cohere**, Command R+, Embed v3
+- **AI21 Labs**, Jamba (long-context Mamba-style)
 - **xAI Grok** (recently added)
 
 ### 3. Open-weight models (deploy your own)
-- **Gemma** (Google's open-weight family — 2B, 7B, 9B, 27B)
+- **Gemma** (Google's open-weight family, 2B, 7B, 9B, 27B)
 - Hugging Face's Open LLM Leaderboard top models
 - Stable Diffusion variants
 - Custom HF Spaces deployments
 
-**The deal:** Model Garden gives you one billing surface, one IAM model, one regional deployment story, one observability stack — across models from competing vendors. That is genuinely useful and a reason teams pick Vertex AI.
+**The deal:** Model Garden gives you one billing surface, one IAM model, one regional deployment story, one observability stack, across models from competing vendors. That is genuinely useful and a reason teams pick Vertex AI.
 
-🎯 **Exam pattern:** *"A team wants Claude on Google Cloud."* → **Vertex AI Model Garden** — Claude is published there alongside Gemini.
+🎯 **Exam pattern:** *"A team wants Claude on Google Cloud."* → **Vertex AI Model Garden**, Claude is published there alongside Gemini.
 
 ---
 
-## 🧑‍💻 Vertex AI Workbench — Managed Notebooks
+## 🧑‍💻 Vertex AI Workbench, Managed Notebooks
 
 **Workbench** is Vertex AI's Jupyter / Colab Enterprise notebook environment. Two flavors:
 
@@ -137,7 +137,7 @@ Already covered in Module 2; consolidating here for the exam.
 | **Colab Enterprise** | Browser-only managed Colab, persistent, IAM-integrated, BigQuery + Vertex AI client pre-installed |
 
 **Why Workbench (not local Jupyter):**
-- IAM-integrated — your service-account auth is automatic
+- IAM-integrated, your service-account auth is automatic
 - Pre-installed: `google-cloud-aiplatform`, `bigquery`, `pandas`, etc.
 - Direct connectivity to BigQuery datasets in your project (no auth dance)
 - Can attach GPU / TPU instances for training
@@ -184,7 +184,7 @@ fg = FeatureGroup.create(name="customer_features", source_uri="bq://proj.dataset
 
 ---
 
-## 🛤️ Vertex AI Pipelines — Kubeflow on Google Cloud
+## 🛤️ Vertex AI Pipelines, Kubeflow on Google Cloud
 
 **Vertex AI Pipelines** orchestrates ML workflows. The DAG is defined in **Kubeflow Pipelines (KFP) v2** or **TensorFlow Extended (TFX)**. Steps are containerized; the platform schedules, runs, retries, and tracks artifacts.
 
@@ -259,7 +259,7 @@ The Registry is the *source of truth*. From it, you deploy to Endpoints, run Bat
 
 ---
 
-## 🚀 Vertex AI Endpoints — Serving
+## 🚀 Vertex AI Endpoints, Serving
 
 An **Endpoint** is a managed serving instance. Three kinds:
 
@@ -292,14 +292,14 @@ endpoint.deploy(model=v2_model, traffic_split={"0": 90, "1": 10})
 
 ### Generative endpoints (Gemini)
 
-For Gemini you don't manage replicas — Google does. You either:
+For Gemini you don't manage replicas, Google does. You either:
 
 - **PAYG**: pay per token; rate-limited by quotas
 - **Provisioned Throughput**: reserved Gemini capacity for a fixed monthly fee
 
 ---
 
-## 💰 Provisioned Throughput vs PAYG — The Breakeven Math
+## 💰 Provisioned Throughput vs PAYG, The Breakeven Math
 
 This is one of the highest-yield exam topics. Memorize the logic.
 
@@ -332,7 +332,7 @@ Regional choices matter for:
 
 - **Data residency** (EU GDPR, German BDSG, Singapore PDPA, Brazil LGPD)
 - **Latency** (deploy near your users)
-- **Model availability** (not every model is in every region — exam favorite)
+- **Model availability** (not every model is in every region, exam favorite)
 - **Quotas** (per-region)
 - **Pricing** (some regions cost more)
 
@@ -362,10 +362,10 @@ The three enterprise-security primitives the exam tests heaviest:
 
 Standard GCP IAM. Predefined roles:
 
-- `roles/aiplatform.user` — call Vertex AI APIs
-- `roles/aiplatform.admin` — full admin
-- `roles/aiplatform.modelUser` — invoke specific models
-- `roles/aiplatform.viewer` — read-only
+- `roles/aiplatform.user`, call Vertex AI APIs
+- `roles/aiplatform.admin`, full admin
+- `roles/aiplatform.modelUser`, invoke specific models
+- `roles/aiplatform.viewer`, read-only
 
 **Principle of least privilege:** give each service account exactly the roles it needs, never `roles/owner` or `roles/editor` on production projects.
 
@@ -391,7 +391,7 @@ model = aiplatform.Model.upload(
 )
 ```
 
-🎯 **Exam pattern:** *"Regulator requires we control the encryption keys for all training data and model artifacts."* → **CMEK.** *"Regulator requires data cannot leak outside our project."* → **VPC-SC.** *"Both?"* → **Both** — they protect different layers.
+🎯 **Exam pattern:** *"Regulator requires we control the encryption keys for all training data and model artifacts."* → **CMEK.** *"Regulator requires data cannot leak outside our project."* → **VPC-SC.** *"Both?"* → **Both**, they protect different layers.
 
 ---
 
@@ -399,9 +399,9 @@ model = aiplatform.Model.upload(
 
 Detects three failure modes in deployed models:
 
-1. **Training/serving skew** — features at serving differ from training distribution
-2. **Prediction drift** — predictions distribution shifts over time
-3. **Data drift** — input feature distribution shifts over time
+1. **Training/serving skew**, features at serving differ from training distribution
+2. **Prediction drift**, predictions distribution shifts over time
+3. **Data drift**, input feature distribution shifts over time
 
 ```python
 from google.cloud.aiplatform import model_monitoring
@@ -430,7 +430,7 @@ These are *different products* and the exam loves to test the confusion.
 | Former name | Discovery Engine, Enterprise Search, GenAI App Builder | Matching Engine |
 | What it is | A managed retrieval-augmented search service (RAG-in-a-box) | A low-level approximate-nearest-neighbor index (the "vector DB") |
 | Input | Documents, websites, GCS paths, BigQuery tables, structured data | Embedding vectors you generate |
-| What it manages | Chunking, embedding, indexing, hybrid retrieval (BM25 + dense), reranking, citations | Just the ANN index — you handle chunking, embedding, retrieval orchestration |
+| What it manages | Chunking, embedding, indexing, hybrid retrieval (BM25 + dense), reranking, citations | Just the ANN index, you handle chunking, embedding, retrieval orchestration |
 | Best for | "I have a corpus; build me search + grounding fast" | "I have my own embedding pipeline and need a vector index" |
 | Latency P50 | ~200–500ms full RAG | ~10–50ms vector retrieval only |
 | Plug into Gemini | Native grounding tool (one API call) | Manual retrieve-then-generate |
@@ -456,10 +456,10 @@ Confusingly, Vertex AI has its *own* Studio: a web UI for prompting Gemini (and 
 
 Vertex AI Agent Builder is the umbrella for:
 
-- **Conversational Agents** (formerly Dialogflow CX) — structured-flow conversational AI
-- **Search Agents** — Vertex AI Search wrapped as a conversational front
-- **Custom Agents** — code-defined agents (often via ADK)
-- **Vertex AI Search apps** — search + summaries built on a corpus
+- **Conversational Agents** (formerly Dialogflow CX), structured-flow conversational AI
+- **Search Agents**, Vertex AI Search wrapped as a conversational front
+- **Custom Agents**, code-defined agents (often via ADK)
+- **Vertex AI Search apps**, search + summaries built on a corpus
 
 Module 7 deconstructs each.
 
@@ -476,7 +476,7 @@ Module 7 deconstructs each.
 4. **Caching**: Explicit context caching for stable system prompt + per-team policy blocks.
 5. **Security**: VPC-SC perimeter around Vertex AI + the GCS buckets + Search index. CMEK on the Search index. IAM: read-access to the index limited to the assistant's service account.
 6. **Audit**: Cloud Audit Logs on every Vertex AI call. Each call tagged with the authenticated user's email (via the calling service) and indexed in BigQuery for compliance queries.
-7. **Quarterly retrain**: Vertex AI Pipelines — re-index Drive/Confluence/GitHub corpus weekly. Quarterly evaluation gate on a held-out QA set.
+7. **Quarterly retrain**: Vertex AI Pipelines, re-index Drive/Confluence/GitHub corpus weekly. Quarterly evaluation gate on a held-out QA set.
 8. **Cost controls**: Budget alert at $X/day; Provisioned Throughput once traffic stabilizes.
 
 This is the canonical end-to-end architecture answer the PMLE exam wants from you.
@@ -493,7 +493,7 @@ This is the canonical end-to-end architecture answer the PMLE exam wants from yo
 | "All Gemini features are in every region." | No. Some features (e.g. tools, batch, certain models) are region-gated. Check the docs. |
 | "Provisioned Throughput is always cheaper." | Below ~1K req/min sustained, PAYG wins. Calculate. |
 | "Model Garden only has Google models." | Claude, Llama, Mistral, Cohere, AI21 are all there. |
-| "Workbench is just a hosted Jupyter." | It's IAM-integrated, VPC-SC-compliant, BigQuery-connected — significantly more than vanilla Jupyter. |
+| "Workbench is just a hosted Jupyter." | It's IAM-integrated, VPC-SC-compliant, BigQuery-connected, significantly more than vanilla Jupyter. |
 | "CMEK and VPC-SC do the same thing." | CMEK = encryption keys; VPC-SC = perimeter. Different layers. Often deployed together. |
 | "Endpoints scale infinitely." | They have min/max replicas. Misconfigured caps cause real outages. |
 | "Pipelines and Cloud Build are the same." | Cloud Build = generic CI/CD; Pipelines = ML metadata + artifacts + lineage. |
@@ -549,13 +549,13 @@ This is the canonical end-to-end architecture answer the PMLE exam wants from yo
 
 ---
 
-## 📊 Case Study — Wayfair and the Vertex AI Generative Shopping Pivot
+## 📊 Case Study, Wayfair and the Vertex AI Generative Shopping Pivot
 
-**Situation.** Wayfair operates one of the largest home-goods e-commerce catalogs (~30 million SKUs). In 2023 the company began rolling out generative-AI shopping experiences built on Vertex AI: image-search-driven discovery ("upload a photo of a room — find matching furniture"), conversational discovery ("I want a Scandinavian living room under $5K"), and personalized email content.
+**Situation.** Wayfair operates one of the largest home-goods e-commerce catalogs (~30 million SKUs). In 2023 the company began rolling out generative-AI shopping experiences built on Vertex AI: image-search-driven discovery ("upload a photo of a room, find matching furniture"), conversational discovery ("I want a Scandinavian living room under $5K"), and personalized email content.
 
 **Why Vertex AI (multiple Wayfair Google Cloud Next 2024 talks + Wayfair engineering blog):**
-- **Model Garden** for one-IAM access to Gemini *and* Imagen (image generation for personalized email) *and* embedding models — no vendor sprawl
-- **Vertex AI Vector Search** for product-embedding retrieval at scale (30M products × dense embedding) — they need ANN performance, not full managed RAG
+- **Model Garden** for one-IAM access to Gemini *and* Imagen (image generation for personalized email) *and* embedding models, no vendor sprawl
+- **Vertex AI Vector Search** for product-embedding retrieval at scale (30M products × dense embedding), they need ANN performance, not full managed RAG
 - **Workbench** for the ML team's prototyping; **Pipelines** for production retrain cadence on the embedding model
 - **CMEK** because customer browsing data + payment data sits in the same project
 - **Provisioned Throughput** on Gemini Pro for the steady traffic; PAYG overflow for Black Friday peaks
@@ -566,7 +566,7 @@ This is the canonical end-to-end architecture answer the PMLE exam wants from yo
 
 **Lesson for the architect.**
 - Pick the *right* sub-product. Search vs Vector Search is one of the highest-stakes Vertex decisions.
-- Visualize the umbrella — most production Vertex deployments use 5–8 sub-products together, not just one.
+- Visualize the umbrella, most production Vertex deployments use 5–8 sub-products together, not just one.
 - Plan Provisioned Throughput around your *peak* traffic, with PAYG overflow as the safety valve.
 
 **Discussion (Socratic).**
@@ -581,17 +581,17 @@ This is the canonical end-to-end architecture answer the PMLE exam wants from yo
 You now know:
 
 - 🏢 **Vertex AI as an umbrella** over ~25 sub-products
-- 🛍️ **Model Garden** — Gemini, Claude, Llama, Mistral, Cohere, AI21 under one IAM
-- 🧑‍💻 **Workbench / Pipelines / Experiments / Feature Store** — the ML core
-- 📦 **Model Registry / Endpoints / Monitoring** — the deployment core
-- 🆚 **Vertex AI Search vs Vector Search** — different products, different use cases
-- 💰 **Provisioned Throughput vs PAYG** — breakeven math
+- 🛍️ **Model Garden**, Gemini, Claude, Llama, Mistral, Cohere, AI21 under one IAM
+- 🧑‍💻 **Workbench / Pipelines / Experiments / Feature Store**, the ML core
+- 📦 **Model Registry / Endpoints / Monitoring**, the deployment core
+- 🆚 **Vertex AI Search vs Vector Search**, different products, different use cases
+- 💰 **Provisioned Throughput vs PAYG**, breakeven math
 - 🌍 **30+ regions** and residency choices
-- 🛡️ **IAM + VPC-SC + CMEK** — enterprise security primitives
+- 🛡️ **IAM + VPC-SC + CMEK**, enterprise security primitives
 - 🏪 **Vertex AI Studio** (enterprise) vs Google AI Studio (consumer)
-- 🤖 **Agent Builder** — covered deeper in Module 7
+- 🤖 **Agent Builder**, covered deeper in Module 7
 
-**Next:** [Module 4 — Multi-Modal AI with Gemini](../Module-04-Multi-Modal-Gemini/Reading.md)
+**Next:** [Module 4, Multi-Modal AI with Gemini](../Module-04-Multi-Modal-Gemini/Reading.md)
 
 ---
 

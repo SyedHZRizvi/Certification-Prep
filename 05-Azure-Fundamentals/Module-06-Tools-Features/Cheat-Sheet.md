@@ -24,11 +24,11 @@
 | **Bicep** | ARM (compiles to it) | Modern Azure-only IaC |
 | **Terraform** | HashiCorp | Multi-cloud |
 
-🎯 **Bicep and ARM use the SAME engine** — Bicep just compiles to ARM JSON.
+🎯 **Bicep and ARM use the SAME engine**, Bicep just compiles to ARM JSON.
 
 ---
 
-## 👀 Monitoring & Health — The 3 M's
+## 👀 Monitoring & Health, The 3 M's
 
 | Service | Watches... |
 |---------|-----------|
@@ -37,15 +37,15 @@
 | **Azure Status** | Public global Azure status page (no login) |
 
 ### Azure Monitor components
-- **Metrics** — numeric over time
+- **Metrics**, numeric over time
 - **Logs** (Log Analytics, KQL queries)
-- **Application Insights** — APM
+- **Application Insights**, APM
 - **Alerts**
 - **Workbooks, Dashboards**
 
 ---
 
-## 💡 Azure Advisor — 5 Pillars
+## 💡 Azure Advisor, 5 Pillars
 
 1. **Cost**
 2. **Security**
@@ -53,7 +53,7 @@
 4. **Reliability**
 5. **Operational Excellence**
 
-⚠️ Advisor RECOMMENDS — it does not take action.
+⚠️ Advisor RECOMMENDS, it does not take action.
 
 ---
 
@@ -66,7 +66,7 @@ Extends Azure management (Policy, Monitor, Defender, RBAC) to:
 - Kubernetes anywhere
 - SQL Server anywhere
 
-NOT a migration tool — it MANAGES things where they live.
+NOT a migration tool, it MANAGES things where they live.
 
 ---
 
@@ -95,7 +95,7 @@ NOT a migration tool — it MANAGES things where they live.
 
 **Usually CORRECT:**
 - ✅ "Use Bicep for modern Azure IaC"
-- ✅ "Cloud Shell — no install needed"
+- ✅ "Cloud Shell, no install needed"
 - ✅ "Service Health alert for Azure platform issues"
 - ✅ "Azure Monitor for workload metrics + alerts"
 - ✅ "Advisor for cost/security/performance recommendations"
@@ -148,8 +148,8 @@ NOT a migration tool — it MANAGES things where they live.
 Cover the answers and recite:
 
 1. 5 Azure management interfaces? ___
-2. ARM vs Bicep — same engine? ___
-3. Monitor vs Service Health vs Status — one-line each? ___
+2. ARM vs Bicep, same engine? ___
+3. Monitor vs Service Health vs Status, one-line each? ___
 4. Azure Advisor's 5 pillars? ___
 5. Difference between Azure Arc and Azure Migrate? ___
 

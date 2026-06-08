@@ -28,10 +28,10 @@ D. 6514
 ---
 
 ### Q3. The highest syslog severity (most urgent) is: *(Remember)*
-A. 0 — Emergency
-B. 7 — Debug
-C. 3 — Error
-D. 1 — Alert
+A. 0, Emergency
+B. 7, Debug
+C. 3, Error
+D. 1, Alert
 
 ---
 
@@ -125,7 +125,7 @@ D. `netstat`
 
 ### Q15. A web app loads slowly. Wireshark shows the TCP handshake completes in 2 ms, the HTTP response arrives in 60 ms, then the browser opens 47 new TCP connections for assets. The MOST appropriate fix is: *(Apply)*
 A. Replace the server
-B. Enable HTTP/2 (or HTTP/3) on the reverse proxy — multiplexing eliminates per-asset handshake overhead
+B. Enable HTTP/2 (or HTTP/3) on the reverse proxy, multiplexing eliminates per-asset handshake overhead
 C. Disable IPv6
 D. Add more bandwidth
 
@@ -189,7 +189,7 @@ D. SNMP polling is too frequent
 
 ### Q23. A VoIP team reports calls dropping during certain hours. SNMP and ping show normal latency. NetFlow shows a spike of large flows at the same hours. The combined signal points to: *(Analyze)*
 A. DNS server failure
-B. Bandwidth saturation creating queuing delay (latency average looks fine; jitter / instant peaks during traffic bursts disrupt RTP) — the right fix is QoS prioritization of voice
+B. Bandwidth saturation creating queuing delay (latency average looks fine; jitter / instant peaks during traffic bursts disrupt RTP), the right fix is QoS prioritization of voice
 C. Wireless interference
 D. STP loop
 
@@ -215,7 +215,7 @@ D. UDP datagrams
 
 > *Create-level note:* an open-ended architectural prioritization.
 A. "Buy a single commercial WAN accelerator."
-B. "Deploy a syslog + SNMP collector (LibreNMS or Zabbix, both open source) so we have device telemetry and centralized logs from day one — this is the foundational visibility layer everything else depends on."
+B. "Deploy a syslog + SNMP collector (LibreNMS or Zabbix, both open source) so we have device telemetry and centralized logs from day one, this is the foundational visibility layer everything else depends on."
 C. "Buy a dozen new switches."
 D. "Hire a junior tech."
 
@@ -229,7 +229,7 @@ SNMP queries on 161; traps on 162. UDP because polling is fast and stateless.
 ### Q2: **C. 514**
 Syslog over UDP = 514. Syslog over TLS = TCP 6514.
 
-### Q3: **A. 0 — Emergency**
+### Q3: **A. 0, Emergency**
 Severity counts UP from 0 (Emergency) to 7 (Debug). 0 = most urgent.
 
 ### Q4: **C. `ipconfig /flushdns`**
@@ -239,7 +239,7 @@ Clears the local DNS resolver cache on Windows.
 ICMP Echo Request/Reply. tracert maps hops; arp shows IP↔MAC; netstat shows connections.
 
 ### Q6: **B. Capture and analyze packets**
-Wireshark is the gold-standard packet analyzer — decodes every protocol layer for diagnosis.
+Wireshark is the gold-standard packet analyzer, decodes every protocol layer for diagnosis.
 
 ### Q7: **B. Per-flow metadata**
 NetFlow records flow tuples + counters. NOT full payload (that's pcap / Wireshark).
@@ -248,7 +248,7 @@ NetFlow records flow tuples + counters. NOT full payload (that's pcap / Wireshar
 Average RTT is latency. Jitter is the variation. High jitter destroys VoIP / video.
 
 ### Q9: **B. User-based auth + encryption**
-SNMPv1/v2c use cleartext "community strings" (e.g., "public") — easily sniffable. v3 introduces user-based auth (MD5/SHA) and privacy (DES/AES). Use v3 in production.
+SNMPv1/v2c use cleartext "community strings" (e.g., "public"), easily sniffable. v3 introduces user-based auth (MD5/SHA) and privacy (DES/AES). Use v3 in production.
 
 ### Q10: **B. Bandwidth = max; throughput = actual**
 Bandwidth is the theoretical capacity; throughput is what you measure under real conditions (with overhead, congestion, retransmits).
@@ -281,22 +281,22 @@ Both list socket state. `ss` is the modern Linux preferred (faster, more flexibl
 Active bandwidth test between cooperating server/client. ping with large payload only measures latency + loss, not sustained throughput. tracert / nslookup are unrelated.
 
 ### Q20: **B. DNS resolution failure**
-IP-based ping works; name-based doesn't = pure DNS issue. Check resolver, /etc/hosts, search domain. Same scenario as Module 5 quiz Q21 — re-emphasized because this is the highest-frequency real-world issue.
+IP-based ping works; name-based doesn't = pure DNS issue. Check resolver, /etc/hosts, search domain. Same scenario as Module 5 quiz Q21, re-emphasized because this is the highest-frequency real-world issue.
 
 ### Q21: **B. Acknowledge + verify + investigate**
 Treat alerts professionally. Ping the connected device, check syslog, then dispatch a tech if needed. Rebooting everything (A) and switching SNMP versions (D) are wrong responses; muting (C) loses the alert.
 
 ### Q22: **B. Packet loss**
-TCP retransmissions are the canonical loss signature — sender didn't get an ACK in time. Investigate links, queues, congested paths.
+TCP retransmissions are the canonical loss signature, sender didn't get an ACK in time. Investigate links, queues, congested paths.
 
 ### Q23: **B. Bandwidth saturation + queueing + jitter**
-Average latency can look OK while jitter (and instant peaks during bursts) wrecks real-time. Fix is QoS — prioritize voice ahead of bulk traffic.
+Average latency can look OK while jitter (and instant peaks during bursts) wrecks real-time. Fix is QoS, prioritize voice ahead of bulk traffic.
 
 ### Q24: **A. RPO = data loss tolerance; RTO = recovery time**
 RPO = how far back you can be (data loss). RTO = how long you can be down (time to recover). Both feed BCDR planning.
 
 ### Q25: **B. TCP retransmissions**
-`tcp.analysis.retransmission` is the Wireshark filter expressly for spotting retransmits — a fast packet-loss diagnostic.
+`tcp.analysis.retransmission` is the Wireshark filter expressly for spotting retransmits, a fast packet-loss diagnostic.
 
 ### Q26: **B. Syslog + SNMP collector first**
 The right first investment is the **visibility layer** itself. Open-source LibreNMS / Zabbix / Grafana give you SNMP polling, syslog ingest, alerting, dashboards for cheap. Without telemetry, every other investment is shooting in the dark. The other options are tactical or sequencing errors.
@@ -327,4 +327,4 @@ The right first investment is the **visibility layer** itself. Open-source Libre
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Network Troubleshooting Methodology](../Module-08-Troubleshooting/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Network Troubleshooting Methodology](../Module-08-Troubleshooting/Reading.md)

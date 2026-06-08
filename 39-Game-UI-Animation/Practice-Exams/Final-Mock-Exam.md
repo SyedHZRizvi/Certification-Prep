@@ -4,7 +4,7 @@ title: "Final Mock Exam: Game & UI Animation (All 8 Modules)"
 
 # 🏆 Final Mock Exam: Game & UI Animation
 
-**Scope:** All 8 Modules — complete course coverage
+**Scope:** All 8 Modules, complete course coverage
 **Length:** 60 questions · 90 minutes
 **When to take:** 2–3 days before your portfolio review or studio application
 **Target:** Score 80%+ (48/60) before applying to game studios or motion design roles
@@ -67,10 +67,10 @@ D. Export the Mixamo clips as Individual FBX files, one per character
 
 ### 7. In Unreal's AnimGraph, which context is responsible for per-frame simulation logic (gravity, drag, turbulence)?
 
-A. Spawn context (VFX Graph) — not an AnimGraph concept
-B. Event Graph — code runs here
-C. AnimGraph state machine — states run per-frame
-D. None of the above — AnimGraph uses a different architecture
+A. Spawn context (VFX Graph), not an AnimGraph concept
+B. Event Graph, code runs here
+C. AnimGraph state machine, states run per-frame
+D. None of the above, AnimGraph uses a different architecture
 
 ---
 
@@ -130,7 +130,7 @@ D. Reducing the animation update rate to 30fps on all enemies
 
 ### 14. In Spine-Unity, playing an attack animation on Track 1 while walk plays on Track 0:
 
-A. Is not supported — Spine-Unity supports one track only
+A. Is not supported, Spine-Unity supports one track only
 B. Causes a runtime error because tracks conflict
 C. Plays both animations simultaneously, blending or overriding based on alpha and mix settings
 D. Automatically creates a new Animator layer for the attack
@@ -166,10 +166,10 @@ D. Allow the transition to work without conditions
 
 ### 18. For a high-priority one-shot action like a dodge roll, the transition Interruption Source should be:
 
-A. None — dodge is always committed
-B. Next State — allow the destination to interrupt
-C. Current State — allow source transitions to interrupt and fire immediately
-D. Both — maximum flexibility
+A. None, dodge is always committed
+B. Next State, allow the destination to interrupt
+C. Current State, allow source transitions to interrupt and fire immediately
+D. Both, maximum flexibility
 
 ---
 
@@ -285,7 +285,7 @@ D. Rive integrates with the Unity Animator Controller
 
 A. The animation to play in reverse for 0.3 seconds before playing forward
 B. The animation to start as if it has already been playing for 0.3 seconds
-C. A syntax error — negative delays are not valid CSS
+C. A syntax error, negative delays are not valid CSS
 D. The animation to play at 0.3× speed before normalizing
 
 ---
@@ -293,7 +293,7 @@ D. The animation to play at 0.3× speed before normalizing
 ### 32. The CSS `steps(8, start)` timing function is most useful for:
 
 A. Creating spring-physics easing without JavaScript
-B. Sprite sheet animation — jumping between 8 discrete frames with no interpolation
+B. Sprite sheet animation, jumping between 8 discrete frames with no interpolation
 C. Slowing the animation down in 8 equal increments
 D. Creating an 8-second easing curve
 
@@ -376,7 +376,7 @@ D. Perlin noise respects the `prefers-reduced-motion` media query automatically
 A. The axis perpendicular to the impact direction (expands on impact axis)
 B. The impact axis (compresses along the direction of force)
 C. All axes equally
-D. No axis — squash/stretch is 2D-only
+D. No axis, squash/stretch is 2D-only
 
 ---
 
@@ -398,7 +398,7 @@ D. JSON descriptions of shader programs interpreted at runtime
 
 ---
 
-### 44. The art director's decision for Hades VFX — high contrast, large individual particle sizes — was driven by:
+### 44. The art director's decision for Hades VFX high contrast, large individual particle sizes was driven by:
 
 A. Performance constraints on early Nintendo Switch hardware
 B. The need for VFX to read clearly at the camera's top-down distance from characters
@@ -500,7 +500,7 @@ D. Track 0 to play "walk" on all characters sharing this SkeletonAnimation
 ### 55. GSAP's `back.out(1.7)` ease is characterized by:
 
 A. A constant-speed animation that accelerates at the end
-B. An overshoot — the element goes slightly past its target then settles back
+B. An overshoot, the element goes slightly past its target then settles back
 C. A bouncy spring effect that oscillates multiple times
 D. A step function with 1.7 discrete steps
 
@@ -554,64 +554,64 @@ D. Framer Motion + Unity Timeline + Spine-Unity runtime
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B — 1–3ms is the typical animation system budget within the 16.67ms frame
-2.  B — Game feel: Input, Response, Context (Steve Swink)
-3.  B — Triggers reset after one transition; Bools persist
-4.  B — Override OnAnimatorMove() to apply root position to NavMeshAgent
-5.  B — Weight 0.0 = layer has no visual effect; base layer controls fully
-6.  B — Humanoid rig + avatars enables clip retargeting between bipeds
-7.  D — AnimGraph uses States, Blend Spaces, IK nodes — not Spawn/Initialize contexts (those are VFX Graph)
-8.  B — Event Graph: sets variables by reading the owning pawn
-9.  B — Valorant: silhouette clarity for competitive reading at distance
-10. B — Slot = AnimGraph location where Montage overrides base Animation Blueprint
-11. B — Spine is made by Esoteric Software
-12. C — Bounding Box attachment for hit detection/collision
-13. B — Dead Cells: custom optimized C runtime + low bone count (~15–25)
-14. C — Track 1 overlays on Track 0 based on alpha and mix settings
-15. C — 1024×1024 is the recommended mobile Spine atlas page size
-16. B — Responsiveness: transition latency, blend duration, interrupt conditions
-17. B — Trigger auto-resets after one use; prevents AnyState transition loops
-18. C — Current State interrupt: dodge fires immediately from any source state
-19. B — Normalize both 2D Blend Tree axes to same range
-20. B — Additive = delta from reference; override = full pose
-21. B — top/left triggers layout recalculation every frame
-22. B — '-=0.2': tween starts 0.2s before end of previous (0.2s overlap)
-23. B — scrub: true ties animation to scroll position
-24. B — FLIP: First, Last, Invert, Play
-25. C — AnimatePresence: enables exit animations on component unmount
-26. B — fill-mode: none (default) → returns to original state after animation
-27. B — transform + opacity: Compositor only (no Layout or Paint)
-28. C — Lottie: Airbnb's Brandon Withrow created it for their mobile app
-29. C — AE 3D layers with 3D camera are NOT exportable to Lottie
-30. B — Rive: state machine responds to hover/click at runtime
-31. B — Negative delay: animation starts partway through as if already playing
-32. B — steps(8, start): 8 discrete jumps; sprite sheet animation
-33. B — VFX Graph: GPU via compute shaders
-34. C — VFX Graph NOT supported on Built-in Render Pipeline
-35. B — Dissolve: noise texture sampled → Step/Smoothstep → Alpha clip
-36. B — Hologram: sine wave scan lines + Fresnel rim + time flicker
-37. A — Juice makes games more satisfying without changing core mechanics
-38. B — Hades hit stop: 4–8 frames
-39. B — First read: VFX communicates archetype before damage numbers visible
-40. B — Perlin noise: spatial coherence = directional shake, not buzzing
-41. B — Squash compresses the impact axis, expands perpendicular axes
-42. B — Simulation Stages: custom GPU compute shader passes on particle data
-43. B — Shader Graph compiles to HLSL → native GPU shaders
-44. B — High contrast/large particles for top-down camera distance readability
-45. B — stagger: sequential delay between each element's animation start
-46. C — AnimatePresence with motion.li items having key + exit props
-47. A — alternate-reverse: backward on odd, forward on even iterations
-48. A — playSegments([10, 50], true): plays frames 10–50
-49. B — Path Constraint: bones constrained to move along a defined curve
-50. C — 2-bone influence limit + shared atlas batching for mobile Spine
-51. C — AnyState: highest priority = top of transition list
-52. C — Freeform Directional for 8-directional locomotion (motion capture)
-53. B — Inertialization preserves animation velocity at blend start → no pop
-54. B — SetAnimation(0, "walk", true): Track 0, loop=true
-55. B — back.out(1.7): overshoot + settle back (spring-like)
-56. B — Compositor handles transform and opacity (GPU-safe)
-57. B — WCAG 2.3.1 AA: content flashing >3× per second (seizure risk)
-58. D — Output Particle: defines render type (billboard, mesh, strip, line)
-59. B — Overdraw: same pixel rendered multiple times by overlapping transparent particles
-60. B — Module 6 (GSAP ScrollTrigger, Timeline, Flip) + Module 7 (CSS, performance, accessibility)
+1.  B: 1–3ms is the typical animation system budget within the 16.67ms frame
+2.  B: Game feel: Input, Response, Context (Steve Swink)
+3.  B: Triggers reset after one transition; Bools persist
+4.  B: Override OnAnimatorMove() to apply root position to NavMeshAgent
+5.  B: Weight 0.0 = layer has no visual effect; base layer controls fully
+6.  B: Humanoid rig + avatars enables clip retargeting between bipeds
+7.  D: AnimGraph uses States, Blend Spaces, IK nodes, not Spawn/Initialize contexts (those are VFX Graph)
+8.  B: Event Graph: sets variables by reading the owning pawn
+9.  B: Valorant: silhouette clarity for competitive reading at distance
+10. B: Slot = AnimGraph location where Montage overrides base Animation Blueprint
+11. B: Spine is made by Esoteric Software
+12. C: Bounding Box attachment for hit detection/collision
+13. B: Dead Cells: custom optimized C runtime + low bone count (~15–25)
+14. C: Track 1 overlays on Track 0 based on alpha and mix settings
+15. C: 1024×1024 is the recommended mobile Spine atlas page size
+16. B: Responsiveness: transition latency, blend duration, interrupt conditions
+17. B: Trigger auto-resets after one use; prevents AnyState transition loops
+18. C: Current State interrupt: dodge fires immediately from any source state
+19. B: Normalize both 2D Blend Tree axes to same range
+20. B: Additive = delta from reference; override = full pose
+21. B: top/left triggers layout recalculation every frame
+22. B: '-=0.2': tween starts 0.2s before end of previous (0.2s overlap)
+23. B: scrub: true ties animation to scroll position
+24. B: FLIP: First, Last, Invert, Play
+25. C: AnimatePresence: enables exit animations on component unmount
+26. B: fill-mode: none (default) → returns to original state after animation
+27. B: transform + opacity: Compositor only (no Layout or Paint)
+28. C: Lottie: Airbnb's Brandon Withrow created it for their mobile app
+29. C: AE 3D layers with 3D camera are NOT exportable to Lottie
+30. B: Rive: state machine responds to hover/click at runtime
+31. B: Negative delay: animation starts partway through as if already playing
+32. B: steps(8, start): 8 discrete jumps; sprite sheet animation
+33. B: VFX Graph: GPU via compute shaders
+34. C: VFX Graph NOT supported on Built-in Render Pipeline
+35. B: Dissolve: noise texture sampled → Step/Smoothstep → Alpha clip
+36. B: Hologram: sine wave scan lines + Fresnel rim + time flicker
+37. A: Juice makes games more satisfying without changing core mechanics
+38. B: Hades hit stop: 4–8 frames
+39. B: First read: VFX communicates archetype before damage numbers visible
+40. B: Perlin noise: spatial coherence = directional shake, not buzzing
+41. B: Squash compresses the impact axis, expands perpendicular axes
+42. B: Simulation Stages: custom GPU compute shader passes on particle data
+43. B: Shader Graph compiles to HLSL → native GPU shaders
+44. B: High contrast/large particles for top-down camera distance readability
+45. B: stagger: sequential delay between each element's animation start
+46. C: AnimatePresence with motion.li items having key + exit props
+47. A: alternate-reverse: backward on odd, forward on even iterations
+48. A: playSegments([10, 50], true): plays frames 10–50
+49. B: Path Constraint: bones constrained to move along a defined curve
+50. C: 2-bone influence limit + shared atlas batching for mobile Spine
+51. C: AnyState: highest priority = top of transition list
+52. C: Freeform Directional for 8-directional locomotion (motion capture)
+53. B: Inertialization preserves animation velocity at blend start → no pop
+54. B: SetAnimation(0, "walk", true): Track 0, loop=true
+55. B: back.out(1.7): overshoot + settle back (spring-like)
+56. B: Compositor handles transform and opacity (GPU-safe)
+57. B: WCAG 2.3.1 AA: content flashing >3× per second (seizure risk)
+58. D: Output Particle: defines render type (billboard, mesh, strip, line)
+59. B: Overdraw: same pixel rendered multiple times by overlapping transparent particles
+60. B: Module 6 (GSAP ScrollTrigger, Timeline, Flip) + Module 7 (CSS, performance, accessibility)
 ```

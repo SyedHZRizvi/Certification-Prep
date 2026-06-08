@@ -35,7 +35,7 @@ D. $1M
 A. $0
 B. $90K/yr in lost recovery email revenue
 C. $1M/day
-D. None — calls don't yield data
+D. None, calls don't yield data
 
 ---
 
@@ -293,7 +293,7 @@ The Week 12 90-day dashboard target.
 Marketing fuel that compounds.
 
 ### Q26: **D. Building a 14-page proposal template before sending any emails**
-Wrong priority — get the wedge + sample + outreach moving first.
+Wrong priority, get the wedge + sample + outreach moving first.
 
 ---
 

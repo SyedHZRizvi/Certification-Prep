@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-08-Social-Media-Animation/Qui
 title: "Module 8 Quiz: Social Media Animation"
 ---
 
-# 🧠 Module 8 Quiz — Social Media Animation
+# 🧠 Module 8 Quiz, Social Media Animation
 
 ### Q1.
 The standard aspect ratio for Instagram Reels, TikTok, and YouTube Shorts is:
@@ -199,7 +199,7 @@ D. 90 seconds
 A motion designer builds a 1080×1920 composition for TikTok. Which area of the frame should they avoid placing important visual elements?
 
 A. The center 60% of the frame  
-B. Top and bottom 10% of the frame — where platform UI overlays appear (profile name, description, like/comment buttons)  
+B. Top and bottom 10% of the frame, where platform UI overlays appear (profile name, description, like/comment buttons)  
 C. The left third of the frame  
 D. Anywhere within 200px of the edges  
 
@@ -230,7 +230,7 @@ The primary advantage of a looping animation over a finite one for social media 
 
 A. Looping animations are always smaller file sizes  
 B. Looping content can be played as a GIF without sound  
-C. Looping content is more watchable — viewers who engage will watch multiple loops, increasing watch time  
+C. Looping content is more watchable, viewers who engage will watch multiple loops, increasing watch time  
 D. Social platforms algorithmically favor looping content by 50%  
 
 ---
@@ -239,7 +239,7 @@ D. Social platforms algorithmically favor looping content by 50%
 Before publishing animated social content, the correct review process is:
 
 A. Preview in After Effects RAM preview at full quality  
-B. Export, upload to the platform, download the re-encoded version, compare to original — then publish  
+B. Export, upload to the platform, download the re-encoded version, compare to original, then publish  
 C. Use Adobe Media Encoder's built-in social preview feature  
 D. Share with one colleague for visual approval  
 
@@ -248,51 +248,51 @@ D. Share with one colleague for visual approval
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  D — 9:16 is the vertical portrait format used by Instagram Reels, TikTok, and YouTube Shorts. 4:5 is Instagram Feed portrait.
+Q1:  D, 9:16 is the vertical portrait format used by Instagram Reels, TikTok, and YouTube Shorts. 4:5 is Instagram Feed portrait.
 
-Q2:  B — TikTok's data: 3-second window. Instagram is ~2 seconds. YouTube Shorts is ~1.5 seconds. TikTok's 3 seconds is the most commonly cited figure.
+Q2:  B, TikTok's data: 3-second window. Instagram is ~2 seconds. YouTube Shorts is ~1.5 seconds. TikTok's 3 seconds is the most commonly cited figure.
 
-Q3:  C — 85% of Facebook/Meta social videos are watched with sound off. This drives the importance of animated captions and visual-first storytelling.
+Q3:  C, 85% of Facebook/Meta social videos are watched with sound off. This drives the importance of animated captions and visual-first storytelling.
 
-Q4:  C — H.264 (.mp4) is the industry standard for social platform upload. ProRes is for professional delivery, not social. H.265 is not universally accepted.
+Q4:  C, H.264 (.mp4) is the industry standard for social platform upload. ProRes is for professional delivery, not social. H.265 is not universally accepted.
 
-Q5:  C — Mobile-first (9:16) as the master composition, then reframe to square (1:1) and landscape (16:9). Starting landscape leads to cropped content on mobile.
+Q5:  C, Mobile-first (9:16) as the master composition, then reframe to square (1:1) and landscape (16:9). Starting landscape leads to cropped content on mobile.
 
-Q6:  B — A seamless loop: last frame = first frame exactly. The transition between end and beginning is invisible.
+Q6:  B, A seamless loop: last frame = first frame exactly. The transition between end and beginning is invisible.
 
-Q7:  B — loopOut("pingpong"): plays forward to end, then reverses backward to start, then forward again — alternating.
+Q7:  B, loopOut("pingpong"): plays forward to end, then reverses backward to start, then forward again, alternating.
 
-Q8:  B — Platform re-encoding upon upload causes color shift, especially in saturated colors. The platform's compression algorithm processes the color space.
+Q8:  B, Platform re-encoding upon upload causes color shift, especially in saturated colors. The platform's compression algorithm processes the color space.
 
-Q9:  C — The "bling" or bold word highlight style: each word appears as spoken, with the key word in a contrasting color or larger size.
+Q9:  C, The "bling" or bold word highlight style: each word appears as spoken, with the key word in a contrasting color or larger size.
 
-Q10: C — YouTube Shorts recommends 60fps for the best quality on their platform. 24fps and 30fps are accepted but 60fps is optimal.
+Q10: C, YouTube Shorts recommends 60fps for the best quality on their platform. 24fps and 30fps are accepted but 60fps is optimal.
 
-Q11: B — The Essential Graphics Panel creates responsive Motion Graphics Templates that can be adapted across different aspect ratios and edited in Premiere Pro.
+Q11: B, The Essential Graphics Panel creates responsive Motion Graphics Templates that can be adapted across different aspect ratios and edited in Premiere Pro.
 
-Q12: C — Instagram Reels maximum duration is 90 seconds as of 2026. The sweet spot for engagement is 15–30 seconds.
+Q12: C, Instagram Reels maximum duration is 90 seconds as of 2026. The sweet spot for engagement is 15–30 seconds.
 
-Q13: B — Offset/stagger loop: elements loop at different phases so the piece is always in motion — no single quiet moment when everything is still.
+Q13: B, Offset/stagger loop: elements loop at different phases so the piece is always in motion, no single quiet moment when everything is still.
 
-Q14: C — NNGroup and platform research: 80% more likely to watch the full video when captions are present.
+Q14: C, NNGroup and platform research: 80% more likely to watch the full video when captions are present.
 
-Q15: C — Lower 20–30% of the 9:16 frame. Above the platform's like/comment/share buttons (which appear at the bottom) and below any platform header.
+Q15: C, Lower 20–30% of the 9:16 frame. Above the platform's like/comment/share buttons (which appear at the bottom) and below any platform header.
 
-Q16: C — YouTube A/B thumbnail testing measures Impression CTR — how many people who see the thumbnail click on the video.
+Q16: C, YouTube A/B thumbnail testing measures Impression CTR, how many people who see the thumbnail click on the video.
 
-Q17: C — LinkedIn preferred: 16:9 (landscape), 5000–10000 kbps bitrate. LinkedIn's professional audience skews desktop/laptop.
+Q17: C, LinkedIn preferred: 16:9 (landscape), 5000–10000 kbps bitrate. LinkedIn's professional audience skews desktop/laptop.
 
-Q18: C — sRGB is the web standard. Exporting in Adobe RGB or wider gamut spaces can cause colors to appear washed out or shifted when viewed on sRGB displays and processed by sRGB-assuming platforms.
+Q18: C, sRGB is the web standard. Exporting in Adobe RGB or wider gamut spaces can cause colors to appear washed out or shifted when viewed on sRGB displays and processed by sRGB-assuming platforms.
 
-Q19: C — YouTube Shorts maximum: 60 seconds. Sweet spot: 30–60 seconds.
+Q19: C, YouTube Shorts maximum: 60 seconds. Sweet spot: 30–60 seconds.
 
-Q20: B — Top and bottom of the 9:16 frame are occupied by platform UI: profile name, description, hashtags (bottom); status bar (top). Avoid placing critical elements there.
+Q20: B, Top and bottom of the 9:16 frame are occupied by platform UI: profile name, description, hashtags (bottom); status bar (top). Avoid placing critical elements there.
 
-Q21: B — 1080×1920 is the standard HD 9:16 dimension for social video. Also called "1080p vertical."
+Q21: B, 1080×1920 is the standard HD 9:16 dimension for social video. Also called "1080p vertical."
 
-Q22: C — Minimum 36pt at 1080p. The general rule: screen height / 30 = minimum text size in pixels. 1920 / 30 ≈ 64px for readability, but 36px is the recognized minimum.
+Q22: C, Minimum 36pt at 1080p. The general rule: screen height / 30 = minimum text size in pixels. 1920 / 30 ≈ 64px for readability, but 36px is the recognized minimum.
 
-Q23: C — Looping content increases watch time: each loop is counted by platforms. More loops = higher completion rate signal = algorithmic favor.
+Q23: C, Looping content increases watch time: each loop is counted by platforms. More loops = higher completion rate signal = algorithmic favor.
 
-Q24: B — Always upload, check the re-encoded version, compare to original, then publish. Platform compression can reveal issues invisible in the original export.
+Q24: B, Always upload, check the re-encoded version, compare to original, then publish. Platform compression can reveal issues invisible in the original export.
 ```

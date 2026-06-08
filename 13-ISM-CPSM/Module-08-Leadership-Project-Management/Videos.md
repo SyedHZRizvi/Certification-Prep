@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ADKAR Model — Individual Change</p>
+      <p class="vg-title">ADKAR Model, Individual Change</p>
       <p class="vg-creator">Prosci / Damelin</p>
       <span class="vg-duration">⏱ 9 min · Diagnose adoption gaps</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Critical Path Method — Worked Example</p>
+      <p class="vg-title">Critical Path Method, Worked Example</p>
       <p class="vg-creator">Source One Management Services</p>
       <span class="vg-duration">⏱ 13 min · Float, crashing</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Spend Under Management — World-Class Targets</p>
+      <p class="vg-title">Spend Under Management, World-Class Targets</p>
       <p class="vg-creator">Sievo Procurement</p>
       <span class="vg-duration">⏱ 12 min · How leaders measure</span>
     </div>

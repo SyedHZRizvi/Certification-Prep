@@ -41,7 +41,7 @@ D. Avoid plagiarism
 
 ### Q5. The Midjourney parameter `--cref` does what? *(Remember)*
 A. Sets aspect ratio
-B. Character reference — maintains consistent person across images
+B. Character reference, maintains consistent person across images
 C. Style reference
 D. Chaos / variation level
 
@@ -49,7 +49,7 @@ D. Chaos / variation level
 
 ### Q6. The Midjourney parameter `--sref` does what? *(Remember)*
 A. Aspect ratio
-B. Style reference — mimic a reference image's aesthetic
+B. Style reference, mimic a reference image's aesthetic
 C. Speed
 D. Stylization
 
@@ -225,7 +225,7 @@ Save the project once with voice rules, banned words, tone examples, ICP. Every 
 `--cref [URL]` makes Midjourney maintain the same person across multiple images. Essential for "our founder" appearing consistent in 20+ ads.
 
 ### Q6: **B. Style reference**
-`--sref [URL]` makes Midjourney mimic a reference image's aesthetic — lighting, color palette, mood — without copying its content.
+`--sref [URL]` makes Midjourney mimic a reference image's aesthetic lighting, color palette, mood without copying its content.
 
 ### Q7: **B. The current Midjourney model**
 v7 is the late-2025/2026 standard. Always specify `--v 7` for current behavior.

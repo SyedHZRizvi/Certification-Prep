@@ -20,7 +20,7 @@
 - **Resource size / SKU**
 - **OS** (Linux < Windows; Hybrid Benefit reduces)
 - **Storage tier** (Hot/Cool/Cold/Archive)
-- **Bandwidth** — **ingress = FREE, egress = $$$**
+- **Bandwidth**, **ingress = FREE, egress = $$$**
 - **Pricing model** (PAYG / Reservation / Spot)
 - **Subscription type** (EA / MCA / PAYG / Sponsorship)
 
@@ -43,11 +43,11 @@
 
 ## 📊 Cost Management
 
-- **Cost analysis** — slice by sub/RG/tag/region
-- **Budgets** — alert thresholds (do NOT auto-stop)
+- **Cost analysis**, slice by sub/RG/tag/region
+- **Budgets**, alert thresholds (do NOT auto-stop)
 - **Forecasts**
 - **Exports** to storage / Power BI
-- **Advisor** — right-size / shut down idle / buy reservations
+- **Advisor**, right-size / shut down idle / buy reservations
 
 ---
 
@@ -55,7 +55,7 @@
 
 `Environment`, `CostCenter`, `Project`, `Owner` → filter in Cost Management → bill back to departments.
 
-⚠️ Tags don't inherit by default — use Azure Policy.
+⚠️ Tags don't inherit by default, use Azure Policy.
 
 ---
 

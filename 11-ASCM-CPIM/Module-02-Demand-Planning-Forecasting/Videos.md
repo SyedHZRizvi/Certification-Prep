@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Exponential Smoothing — Worked Example</p>
+      <p class="vg-title">Exponential Smoothing, Worked Example</p>
       <p class="vg-creator">Education Edge</p>
       <span class="vg-duration">⏱ 12 min · α explained with numbers</span>
     </div>

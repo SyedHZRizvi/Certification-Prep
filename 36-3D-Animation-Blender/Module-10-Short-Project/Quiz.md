@@ -95,7 +95,7 @@ When modeling assets for a 10-second short, which production principle should gu
 A. Maximum detail on all assets regardless of shot
 B. Minimum detail on all assets for fastest render times
 C. Equal detail on all assets for visual consistency
-D. **Model only what the camera sees — work backward from the shot list**
+D. **Model only what the camera sees, work backward from the shot list**
 
 ---
 
@@ -205,7 +205,7 @@ The **follow-through** animation principle, applied in the polish phase, means:
 A. The character pushes through the resistance of a heavy object
 B. The animation continues looping after the shot ends
 C. Secondary parts of the character (cape, hair, tail) continue moving after the body has stopped
-D. **Both B and C — the body's momentum causes other parts to follow and overshoot their final position**
+D. **Both B and C, the body's momentum causes other parts to follow and overshoot their final position**
 
 ---
 
@@ -252,28 +252,28 @@ D. **Is the emotional beat clear and felt by a viewer who knows nothing about th
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Concept sheet first; opens Blender only after creative decisions are made
-Q2.  C — Animatic = timed slideshow of storyboard panels
-Q3.  D — 10 seconds × 24fps = 240 frames
-Q4.  D — 3–5 simple shots for a 10-second short
-Q5.  C — 2,000–4,000 polygons for indie short (before subdivision)
-Q6.  D — Blocking = Constant (Stepped) interpolation
-Q7.  C — Coffee Run (2020) made by 2 artists in 3 months
-Q8.  D — Animatic built in Blender's VSE
-Q9.  D — Model only what the camera sees (work backward from shot list)
-Q10. C — Apply scale before rigging; critical prerequisite
-Q11. C — 4:1 for gentle/hopeful drama mood
-Q12. B — 240 frames × 10–20s = 40–80 minutes on RTX 3080
-Q13. C — Hubert: camera placement + viewer imagination = photorealism
-Q14. C — Secondary motion = hair, clothing, accessories follow-through
-Q15. C — H.264, CRF 18–23, 1920×1080, 24fps
-Q16. C — Shot list = camera angles, types, timing plan
-Q17. D — Z-fighting is the most common first-render technical issue
-Q18. C — Charge = small team, documented production, several months
-Q19. C — Concept → Model → Material → Rig → Animate → Light → Render → Composite
-Q20. C — Follow-through = secondary parts continue after body stops
-Q21. D — Z-fighting = two surfaces at same 3D position
-Q22. C — Minimum: Blink.L, Blink.R, Smile, Mouth.Open
-Q23. D — Outdoor overcast HDRI: 0.3–0.5 strength
-Q24. D — The emotional beat question is the ultimate self-review test
+Q1.  C, Concept sheet first; opens Blender only after creative decisions are made
+Q2.  C, Animatic = timed slideshow of storyboard panels
+Q3.  D, 10 seconds × 24fps = 240 frames
+Q4.  D, 3–5 simple shots for a 10-second short
+Q5.  C, 2,000–4,000 polygons for indie short (before subdivision)
+Q6.  D, Blocking = Constant (Stepped) interpolation
+Q7.  C, Coffee Run (2020) made by 2 artists in 3 months
+Q8.  D, Animatic built in Blender's VSE
+Q9.  D, Model only what the camera sees (work backward from shot list)
+Q10. C, Apply scale before rigging; critical prerequisite
+Q11. C, 4:1 for gentle/hopeful drama mood
+Q12. B, 240 frames × 10–20s = 40–80 minutes on RTX 3080
+Q13. C, Hubert: camera placement + viewer imagination = photorealism
+Q14. C, Secondary motion = hair, clothing, accessories follow-through
+Q15. C, H.264, CRF 18–23, 1920×1080, 24fps
+Q16. C, Shot list = camera angles, types, timing plan
+Q17. D, Z-fighting is the most common first-render technical issue
+Q18. C, Charge = small team, documented production, several months
+Q19. C, Concept → Model → Material → Rig → Animate → Light → Render → Composite
+Q20. C, Follow-through = secondary parts continue after body stops
+Q21. D, Z-fighting = two surfaces at same 3D position
+Q22. C, Minimum: Blink.L, Blink.R, Smile, Mouth.Open
+Q23. D, Outdoor overcast HDRI: 0.3–0.5 strength
+Q24. D, The emotional beat question is the ultimate self-review test
 ```

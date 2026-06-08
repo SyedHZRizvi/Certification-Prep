@@ -1,6 +1,6 @@
-# 🧪 Final Mock Exam — AWS AI Practitioner (AIF-C01) — Full Length
+# 🧪 Final Mock Exam AWS AI Practitioner (AIF-C01) Full Length
 
-> **Conditions:** Set a 120-minute timer. 65 questions. **Real exam conditions** — no notes, no breaks, no Googling.
+> **Conditions:** Set a 120-minute timer. 65 questions. **Real exam conditions**, no notes, no breaks, no Googling.
 > **Pass mark:** 46/65 (~70%). The real exam pass is 700/1000 on a scaled score.
 > **Take this 2–3 days before the real exam.** If you score < 80% here, postpone the real exam by a week.
 
@@ -39,7 +39,7 @@ C. Validation
 D. Backpropagation
 
 ### 6. SageMaker Autopilot is BEST described as:
-A. AutoML on tabular data — explores algorithms + hyperparameters and returns the best model
+A. AutoML on tabular data, explores algorithms + hyperparameters and returns the best model
 B. A no-code visual data prep tool
 C. A vector database
 D. A managed Kubernetes cluster
@@ -129,7 +129,7 @@ C. Frontend / Backend / Database
 D. Reasoning / Memory / Tools
 
 ### 21. AWS Trainium and Inferentia are:
-A. Custom AWS chips — Trainium for training, Inferentia for inference
+A. Custom AWS chips, Trainium for training, Inferentia for inference
 B. SageMaker tools
 C. EC2 storage volumes
 D. Cryptographic keys
@@ -148,7 +148,7 @@ D. The S3 bucket is public
 
 ### 24. To filter PII at inference time on Bedrock prompts/responses, use:
 A. AWS Macie
-B. Bedrock Guardrails — Sensitive Information filter
+B. Bedrock Guardrails, Sensitive Information filter
 C. AWS Config
 D. AWS Artifact
 
@@ -432,7 +432,7 @@ D. Computing exact payroll tax owed by formula
 
 **Q5. Answer: B.** Inference. Using a trained model on new data is inference. Training (A) builds the model; validation (C) tunes hyperparameters; backpropagation (D) is the gradient-update mechanism within training. **Exam-takeaway:** scoring new data = inference.
 
-**Q6. Answer: A.** AutoML on tabular data — explores algorithms + hyperparameters and returns the best model. Autopilot's core function. No-code visual prep (B) is Canvas; vector DB (C) is unrelated; Kubernetes (D) is EKS. **Exam-takeaway:** AutoML for tabular → Autopilot.
+**Q6. Answer: A.** AutoML on tabular data, explores algorithms + hyperparameters and returns the best model. Autopilot's core function. No-code visual prep (B) is Canvas; vector DB (C) is unrelated; Kubernetes (D) is EKS. **Exam-takeaway:** AutoML for tabular → Autopilot.
 
 **Q7. Answer: B.** Batch transform. Score a static large dataset once with no live API need. Real-time (A) charges idle hours; async (C) is for big payloads with live response; serverless (D) is for spiky API traffic. **Exam-takeaway:** one-off bulk scoring → Batch Transform.
 
@@ -452,7 +452,7 @@ D. Computing exact payroll tax owed by formula
 
 **Q15. Answer: D.** Numerically close in vector space. Embeddings encode meaning geometrically; similar meaning → small cosine distance. **Exam-takeaway:** embeddings = vectors; similar meaning = close vectors.
 
-**Q16. Answer: D.** OpenAI. Not natively on Bedrock as of 2024–2026. Anthropic, Meta, Mistral are all on Bedrock. **Exam-takeaway:** Bedrock providers list (Anthropic, Amazon, Meta, Mistral, Cohere, Stability, AI21) — OpenAI and Google are NOT on it.
+**Q16. Answer: D.** OpenAI. Not natively on Bedrock as of 2024–2026. Anthropic, Meta, Mistral are all on Bedrock. **Exam-takeaway:** Bedrock providers list (Anthropic, Amazon, Meta, Mistral, Cohere, Stability, AI21), OpenAI and Google are NOT on it.
 
 **Q17. Answer: A.** AI coding assistant inside IDEs / AWS console. Q Developer is for engineers (was CodeWhisperer). Enterprise RAG (B) is Q Business; image gen (C) and forecasting (D) are different services. **Exam-takeaway:** Q Developer = IDE + console for engineers.
 
@@ -468,7 +468,7 @@ D. Computing exact payroll tax owed by formula
 
 **Q23. Answer: A.** Malicious instructions hidden in content (PDF, web page) the LLM ingests. Indirect injection is via the *data* the model reads. Direct user input (B) is direct injection. **Exam-takeaway:** indirect = via ingested content.
 
-**Q24. Answer: B.** Bedrock Guardrails — Sensitive Information filter. Inference-time PII filter. Macie (A) is at-rest; Config (C) is resource config; Artifact (D) is compliance reports. **Exam-takeaway:** runtime PII → Guardrails sensitive-info filter.
+**Q24. Answer: B.** Bedrock Guardrails, Sensitive Information filter. Inference-time PII filter. Macie (A) is at-rest; Config (C) is resource config; Artifact (D) is compliance reports. **Exam-takeaway:** runtime PII → Guardrails sensitive-info filter.
 
 **Q25. Answer: C.** AWS Macie. ML-powered PII discovery in S3 buckets. Shield (A) is DDoS; Guardrails (B) is runtime; Clarify (D) is bias. **Exam-takeaway:** at-rest PII discovery → Macie.
 
@@ -496,7 +496,7 @@ D. Computing exact payroll tax owed by formula
 
 **Q37. Answer: C.** AWS-published responsible-AI documentation for AWS AI services. AI Service Cards are AWS-authored for Rekognition, Textract, Q, etc. **Exam-takeaway:** AWS service docs → AI Service Cards.
 
-**Q38. Answer: D.** Detect dataset class imbalance during pre-training. Guardrails don't do this — that's Clarify's pre-training bias detection. **Exam-takeaway:** Guardrails ≠ bias detection.
+**Q38. Answer: D.** Detect dataset class imbalance during pre-training. Guardrails don't do this, that's Clarify's pre-training bias detection. **Exam-takeaway:** Guardrails ≠ bias detection.
 
 **Q39. Answer: A.** Build human-in-the-loop review workflows for AI predictions. Amazon A2I supports Textract, Rekognition, Comprehend, and custom models. **Exam-takeaway:** HITL on AWS → A2I.
 
@@ -536,7 +536,7 @@ D. Computing exact payroll tax owed by formula
 
 **Q57. Answer: B.** Set persistent persona, tone, and policy rules invisible to the end user. The durable place for behavioral instructions. **Exam-takeaway:** system prompt = invisible persistent rules.
 
-**Q58. Answer: B.** Fine-tuning is generally cheaper than RAG for adding new facts each week. **FALSE** — RAG is far cheaper for adding new facts because you just re-index, no retraining required. A, C, D are all TRUE. **Exam-takeaway:** RAG is cheaper for fresh data; fine-tuning is more expensive but enforces behaviors.
+**Q58. Answer: B.** Fine-tuning is generally cheaper than RAG for adding new facts each week. **FALSE**, RAG is far cheaper for adding new facts because you just re-index, no retraining required. A, C, D are all TRUE. **Exam-takeaway:** RAG is cheaper for fresh data; fine-tuning is more expensive but enforces behaviors.
 
 **Q59. Answer: A.** Retrieval-Augmented Generation. Chunk + embed + store in a vector DB = RAG's index phase. SageMaker Pipelines (B) is orchestration; Glue (C) is ETL; Backup (D) is data backup. **Exam-takeaway:** chunk → embed → vector store = RAG indexing.
 

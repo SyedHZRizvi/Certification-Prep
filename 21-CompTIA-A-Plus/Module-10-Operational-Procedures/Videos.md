@@ -18,7 +18,7 @@
 
 # 🎥 Module 10 Videos: Operational Procedures
 
-> Curated in study order. Lots of judgment-based content — listen actively.
+> Curated in study order. Lots of judgment-based content, listen actively.
 
 ## ⭐ Essential (~50 min)
 
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">UPS vs Surge Protector — what's the difference?</p>
+      <p class="vg-title">UPS vs Surge Protector, what's the difference?</p>
       <p class="vg-creator">Dion Training</p>
       <span class="vg-duration">⏱ 8 min · Picking the right one</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ESD Protection — Hands-On</p>
+      <p class="vg-title">ESD Protection, Hands-On</p>
       <p class="vg-creator">Eli the Computer Guy</p>
       <span class="vg-duration">⏱ 9 min · Mat + wrist strap demo</span>
     </div>
@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Capital One Breach — Technical Explainer</p>
+      <p class="vg-title">Capital One Breach, Technical Explainer</p>
       <p class="vg-creator">Various</p>
       <span class="vg-duration">⏱ 22 min · Case study</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">The Phoenix Project — IT Ops Storytelling</p>
+      <p class="vg-title">The Phoenix Project, IT Ops Storytelling</p>
       <p class="vg-creator">Various</p>
       <span class="vg-duration">⏱ 25 min · Why ops matters</span>
     </div>

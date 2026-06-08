@@ -3,8 +3,8 @@
 > **Why this module matters:** User and group management is bread-and-butter sysadmin work AND a Domain 2 (Security) exam favorite. The wrong line in `/etc/sudoers` can lock you out of root (or give an attacker the keys). The wrong UID can break NFS exports. The wrong PAM module ordering can disable password aging. PBQs will show you `/etc/passwd`, `/etc/shadow`, `/etc/group`, and a sudoers fragment and ask "what's the bug." This module makes the bugs visible.
 
 > **Prerequisites for this module.** You should be comfortable with:
-> - Module 2 (filesystem permissions) — UIDs and GIDs are how file ownership works
-> - Module 4 (bash) — for scripting `useradd` operations
+> - Module 2 (filesystem permissions), UIDs and GIDs are how file ownership works
+> - Module 4 (bash), for scripting `useradd` operations
 > - Running commands as root or via `sudo`
 
 ---
@@ -23,7 +23,7 @@ She adds a line at the bottom:
 %sudo  ALL=(ALL:ALL) NOPASSWD: ALL
 ```
 
-She saves with `:wq`. Then her shell connection drops because her laptop's WiFi flickered. She reconnects and tries `sudo systemctl restart nginx` — and gets:
+She saves with `:wq`. Then her shell connection drops because her laptop's WiFi flickered. She reconnects and tries `sudo systemctl restart nginx`, and gets:
 
 ```
 >>> /etc/sudoers: syntax error near line 23 <<<
@@ -31,7 +31,7 @@ sudo: parse error in /etc/sudoers near line 23
 sudo: no valid sudoers sources found, quitting
 ```
 
-Nobody can sudo. She tries to fix it — but she's not root, and the only way to *become* root on this host is via sudo. The console login is via a Bastion ABAC system that itself requires sudo to bypass. She's locked out of her production jump host.
+Nobody can sudo. She tries to fix it, but she's not root, and the only way to *become* root on this host is via sudo. The console login is via a Bastion ABAC system that itself requires sudo to bypass. She's locked out of her production jump host.
 
 She spends 45 minutes raising a high-priority cloud-provider ticket to get console access via the rescue path. Three engineers wait. The fix: a stray space character before the `ALL=(ALL:ALL)` she pasted from a Stack Overflow snippet. `visudo` would have caught it at save time and refused to overwrite the file.
 
@@ -71,7 +71,7 @@ Anyone can read /etc/passwd. The fact that the password column is `x` (not the h
 alice:$6$abc...$xyz...:19500:0:99999:7:::
 ```
 
-9 colon-separated fields. **Owned by root, mode 0640 (or 0000 on some distros) — never world-readable.**
+9 colon-separated fields. **Owned by root, mode 0640 (or 0000 on some distros), never world-readable.**
 
 | # | Field | Example | Meaning |
 |---|-------|---------|---------|
@@ -112,11 +112,11 @@ Holds optional group password hashes and group administrators. Most environments
 
 | UID range | Purpose |
 |-----------|---------|
-| 0 | **root** — the all-powerful account |
+| 0 | **root**, the all-powerful account |
 | 1–99 (Debian/Ubuntu: 0–99) | Statically allocated system users (mail, daemon, bin) |
 | 100–999 (RHEL: 200–999) | Dynamically allocated system users (created by package installs) |
 | 1000+ | Regular user accounts (set by `UID_MIN` in `/etc/login.defs`) |
-| 65534 | `nobody` / `nogroup` — used for unmapped NFS users |
+| 65534 | `nobody` / `nogroup`, used for unmapped NFS users |
 
 🎯 **Exam pattern:** *"You want to see only regular users in `/etc/passwd`."* → `awk -F: '$3 >= 1000 { print $1 }' /etc/passwd`.
 
@@ -124,7 +124,7 @@ Holds optional group password hashes and group administrators. Most environments
 
 ## 🛠️ User Management Commands
 
-### `useradd` — the low-level user creator
+### `useradd`, the low-level user creator
 
 ```bash
 useradd alice                            # creates user; may NOT create /home/alice
@@ -146,9 +146,9 @@ echo "alice:NewPass!" | chpasswd         # batch (use openssl rand to generate)
 
 Defaults that `useradd` reads:
 
-- `/etc/default/useradd` — fallback shell, skeleton dir
-- `/etc/login.defs` — UID_MIN, UID_MAX, PASS_MAX_DAYS, etc.
-- `/etc/skel/` — files copied into every new home directory
+- `/etc/default/useradd`, fallback shell, skeleton dir
+- `/etc/login.defs`, UID_MIN, UID_MAX, PASS_MAX_DAYS, etc.
+- `/etc/skel/`, files copied into every new home directory
 
 ### `adduser` (Debian-only Perl wrapper)
 
@@ -156,11 +156,11 @@ Defaults that `useradd` reads:
 adduser alice                            # interactive: prompts for password, GECOS
 ```
 
-`adduser` is friendlier (calls `useradd` under the hood with sane Debian defaults). RHEL family does NOT ship `adduser` as a separate command — `adduser` is a symlink to `useradd`.
+`adduser` is friendlier (calls `useradd` under the hood with sane Debian defaults). RHEL family does NOT ship `adduser` as a separate command, `adduser` is a symlink to `useradd`.
 
 🚨 **Trap on the exam:** "Which command creates a Debian user including home dir + password prompt?" → `adduser` on Debian; `useradd -m` + `passwd` on RHEL.
 
-### `usermod` — modify an existing user
+### `usermod`, modify an existing user
 
 ```bash
 usermod -aG devs alice                   # add to secondary group ('-a' = append; CRITICAL)
@@ -176,7 +176,7 @@ usermod -e 1 alice                       # expire NOW (effectively disables)
 
 🚨 **Trap on the exam:** `usermod -G group user` without `-a` WIPES the user's existing secondary groups. The exam loves to show a sysadmin "adding" a user to a group and accidentally removing them from 5 others. ALWAYS use `-aG`.
 
-### `userdel` — remove a user
+### `userdel`, remove a user
 
 ```bash
 userdel alice                            # remove user (KEEP home dir)
@@ -184,7 +184,7 @@ userdel -r alice                         # remove user AND home dir
 userdel -f alice                         # force (even if logged in)
 ```
 
-### `passwd` — manage passwords
+### `passwd`, manage passwords
 
 ```bash
 passwd alice                             # set/change alice's password (root or self)
@@ -192,11 +192,11 @@ passwd                                   # change own password
 passwd -l alice                          # lock account (same as usermod -L)
 passwd -u alice                          # unlock
 passwd -e alice                          # force password change at next login
-passwd -d alice                          # DELETE password (passwordless login — dangerous)
+passwd -d alice                          # DELETE password (passwordless login, dangerous)
 passwd -S alice                          # show status (L=locked, P=password set, NP=none)
 ```
 
-### `chage` — change password aging
+### `chage`, change password aging
 
 ```bash
 chage -l alice                           # list aging info
@@ -237,13 +237,13 @@ uid=1001(alice) gid=1001(alice) groups=1001(alice),27(sudo),1500(devs),1600(audi
                 primary                       secondary (memberships in /etc/group)
 ```
 
-`newgrp <group>` changes your active primary group for the current shell — new files will be created with that GID.
+`newgrp <group>` changes your active primary group for the current shell, new files will be created with that GID.
 
 🎯 **Exam pattern:** *"How do you make all new files in a directory inherit the `devs` group regardless of who creates them?"* → SGID on the directory (`chmod g+s /srv/team`), as covered in Module 2.
 
 ---
 
-## 🔓 sudo — Controlled Privilege Escalation
+## 🔓 sudo, Controlled Privilege Escalation
 
 ### How sudo works
 
@@ -266,10 +266,10 @@ Examples:
 # User alice can run anything as anyone, on any host
 alice    ALL=(ALL:ALL)  ALL
 
-# Members of the wheel group (RHEL) — can run anything
+# Members of the wheel group (RHEL), can run anything
 %wheel   ALL=(ALL:ALL)  ALL
 
-# Members of sudo group (Debian) — can run anything
+# Members of sudo group (Debian), can run anything
 %sudo    ALL=(ALL:ALL)  ALL
 
 # Bob can restart nginx without a password
@@ -278,7 +278,7 @@ bob      ALL=(root)     NOPASSWD: /usr/bin/systemctl restart nginx
 # Carol can run apt-get update as root but nothing else
 carol    ALL=(root)     /usr/bin/apt-get update
 
-# Wildcards (DANGEROUS — accepts ANY argument)
+# Wildcards (DANGEROUS, accepts ANY argument)
 dave     ALL=(root)     /usr/bin/systemctl *
 # Safer:
 dave     ALL=(root)     /usr/bin/systemctl restart nginx, /usr/bin/systemctl status nginx
@@ -286,15 +286,15 @@ dave     ALL=(root)     /usr/bin/systemctl restart nginx, /usr/bin/systemctl sta
 
 Each field:
 
-- **who** — user (`alice`), group (`%groupname`), or `ALL`
-- **where** — hostnames where rule applies (`ALL` = all hosts when sudoers is centralized via LDAP)
-- **(as-whom)** — `(ALL:ALL)` means "as any user, as any group"; default `(root)` means as root
-- **what** — full command path(s), or `ALL`
+- **who**, user (`alice`), group (`%groupname`), or `ALL`
+- **where**, hostnames where rule applies (`ALL` = all hosts when sudoers is centralized via LDAP)
+- **(as-whom)**, `(ALL:ALL)` means "as any user, as any group"; default `(root)` means as root
+- **what**, full command path(s), or `ALL`
 
 ### sudoers special directives
 
 ```
-# Aliases — define groups once, use many times
+# Aliases, define groups once, use many times
 User_Alias  ADMINS = alice,bob,carol
 Cmnd_Alias  REBOOTS = /sbin/reboot, /sbin/shutdown
 Host_Alias  WEBSERVERS = web1.corp, web2.corp, web3.corp
@@ -350,7 +350,7 @@ The output lists every rule that matches you. Run this on any host you operate b
 
 ---
 
-## 🔌 PAM — Pluggable Authentication Modules
+## 🔌 PAM, Pluggable Authentication Modules
 
 PAM is the framework that login programs (sshd, login, su, sudo, passwd, gdm) use to authenticate users. It's modular: each service has a config file in `/etc/pam.d/<service>` that stacks small modules.
 
@@ -385,7 +385,7 @@ session    optional     pam_lastlog.so
 
 | Flag | Effect |
 |------|--------|
-| `required` | Must succeed; if fails, continue (then deny) — failure isn't visible to user immediately |
+| `required` | Must succeed; if fails, continue (then deny), failure isn't visible to user immediately |
 | `requisite` | Must succeed; if fails, deny IMMEDIATELY (don't run more modules) |
 | `sufficient` | If succeeds, allow IMMEDIATELY (skip later modules); if fails, continue |
 | `optional` | Outcome doesn't matter unless it's the only module |
@@ -475,7 +475,7 @@ juno  ALL=(root)  NOPASSWD: /usr/bin/systemctl restart nginx
          PermitTTY no
          X11Forwarding no
      ```
-     This is BETTER — it forces a specific command on key login. But it's more complex and harder to audit. For this scenario, the `/sbin/nologin` route is simplest.
+     This is BETTER, it forces a specific command on key login. But it's more complex and harder to audit. For this scenario, the `/sbin/nologin` route is simplest.
 
 4. **Auto-disable after 90 days (d):**
 ```bash
@@ -493,16 +493,16 @@ The PBQ might give you all four requirements and a sudoers fragment, and ask whi
 
 | Misconception | Reality |
 |---------------|---------|
-| "Edit /etc/sudoers with vi" | NO — use `visudo`. It validates syntax and locks the file. |
-| "`usermod -G` adds to a group" | NO — without `-a`, it REPLACES the user's secondary groups. Use `-aG`. |
+| "Edit /etc/sudoers with vi" | NO, use `visudo`. It validates syntax and locks the file. |
+| "`usermod -G` adds to a group" | NO, without `-a`, it REPLACES the user's secondary groups. Use `-aG`. |
 | "`/etc/passwd` contains password hashes" | The `x` is a placeholder. Real hashes live in /etc/shadow. |
 | "UIDs below 1000 are system, above are users" | Boundary is set by `UID_MIN` in `/etc/login.defs`. Default IS 1000 on most distros but verify. |
 | "Locking with `passwd -l` deletes the password" | It PREPENDS `!` to the hash. The hash is still there. Unlock with `passwd -u`. |
 | "Removing a user removes their files" | Only with `userdel -r`. Plain `userdel` leaves /home/alice. |
 | "Primary group must appear in /etc/group's member list" | It's IMPLICIT (the GID in /etc/passwd). Listing it as a member of itself in /etc/group is redundant. |
 | "`sudo -i` and `sudo su -` are identical" | Nearly equivalent in result (a root login shell) but invoke differently. `sudo -i` is the recommended form. |
-| "PAM's `required` denies immediately" | `requisite` denies immediately. `required` continues then denies — the difference matters for what user sees and for chain logic. |
-| "Password aging rules in /etc/login.defs apply to existing users" | NO — login.defs only seeds NEW accounts. For existing, use `chage`. |
+| "PAM's `required` denies immediately" | `requisite` denies immediately. `required` continues then denies, the difference matters for what user sees and for chain logic. |
+| "Password aging rules in /etc/login.defs apply to existing users" | NO, login.defs only seeds NEW accounts. For existing, use `chage`. |
 
 ---
 
@@ -522,11 +522,11 @@ The PBQ might give you all four requirements and a sudoers fragment, and ask whi
 | **`passwd -l` / `usermod -L`** | Lock account |
 | **`chage`** | Manage password aging |
 | **GECOS** | The full-name/comment field of /etc/passwd |
-| **`/sbin/nologin`** | Shell that prints a message and exits — for system accounts |
+| **`/sbin/nologin`** | Shell that prints a message and exits, for system accounts |
 | **`visudo`** | THE way to edit sudoers (validates syntax) |
-| **NOPASSWD:** | sudoers directive — no password prompt |
+| **NOPASSWD:** | sudoers directive, no password prompt |
 | **`%groupname`** | sudoers prefix for group instead of user |
-| **PAM** | Pluggable Authentication Modules — auth framework |
+| **PAM** | Pluggable Authentication Modules, auth framework |
 | **`/etc/pam.d/`** | Per-service PAM stacks |
 | **`auth/account/password/session`** | The 4 PAM management groups |
 | **`required/requisite/sufficient/optional`** | The 4 PAM control flags |
@@ -548,9 +548,9 @@ The PBQ might give you all four requirements and a sudoers fragment, and ask whi
 
 ---
 
-## 📊 Case Study — The 2008 Debian OpenSSL Predictable Random Number Bug
+## 📊 Case Study, The 2008 Debian OpenSSL Predictable Random Number Bug
 
-**Situation.** In May 2008, security researcher Luciano Bello disclosed [CVE-2008-0166](https://nvd.nist.gov/vuln/detail/CVE-2008-0166) — the Debian OpenSSL Predictable Random Number Generator vulnerability. A well-meaning patch applied to Debian's OpenSSL package in September 2006 had, in trying to silence Valgrind warnings about uninitialized memory, accidentally removed the code that mixed entropy into the OpenSSL PRNG (Pseudo-Random Number Generator). For ~20 months, every SSH key, every TLS cert, every GPG key, every random nonce generated on a Debian or Ubuntu system used a PRNG seeded entirely by the process PID — a number with only 32,768 possible values.
+**Situation.** In May 2008, security researcher Luciano Bello disclosed [CVE-2008-0166](https://nvd.nist.gov/vuln/detail/CVE-2008-0166) the Debian OpenSSL Predictable Random Number Generator vulnerability. A well-meaning patch applied to Debian's OpenSSL package in September 2006 had, in trying to silence Valgrind warnings about uninitialized memory, accidentally removed the code that mixed entropy into the OpenSSL PRNG (Pseudo-Random Number Generator). For ~20 months, every SSH key, every TLS cert, every GPG key, every random nonce generated on a Debian or Ubuntu system used a PRNG seeded entirely by the process PID a number with only 32,768 possible values.
 
 **Decision.** The fix required regenerating every SSH host key, user SSH key, server TLS cert, and CA-signed cert generated on a Debian-family machine in that 20-month window. Debian and Ubuntu shipped a `ssh-vulnkey` tool to detect compromised keys. The OpenSSH package was patched to reject all known-bad keys in `authorized_keys`. Every CA had to revoke certs Debian users had submitted. Every sysadmin had to reissue tens or hundreds of keys.
 
@@ -577,22 +577,22 @@ These all show up in PBQs as "what's wrong with this configuration" scenarios.
 
 You now know:
 
-- 🗂️ The **three files** (passwd, shadow, group) — their fields and permissions
-- 🔑 **UID conventions** — 0 = root, 1–999 system, 1000+ user
-- 🛠️ **User lifecycle commands** — `useradd -m`, `usermod -aG`, `userdel -r`, `passwd`, `chage`
+- 🗂️ The **three files** (passwd, shadow, group), their fields and permissions
+- 🔑 **UID conventions**, 0 = root, 1–999 system, 1000+ user
+- 🛠️ **User lifecycle commands**, `useradd -m`, `usermod -aG`, `userdel -r`, `passwd`, `chage`
 - 👥 **Primary vs secondary groups** and how `groupadd`/`gpasswd`/`newgrp` work
-- 🔓 **sudo** — sudoers syntax, drop-ins, `visudo`, group-vs-user rules, NOPASSWD
-- 🔌 **PAM** — the 4 management groups, the 4 control flags, common modules (`pam_faillock`, `pam_pwquality`)
-- 🔍 **Auditing** — `who`, `w`, `last`, `lastb`, `id`, `getent`, `sudo -l`
+- 🔓 **sudo**, sudoers syntax, drop-ins, `visudo`, group-vs-user rules, NOPASSWD
+- 🔌 **PAM**, the 4 management groups, the 4 control flags, common modules (`pam_faillock`, `pam_pwquality`)
+- 🔍 **Auditing**, `who`, `w`, `last`, `lastb`, `id`, `getent`, `sudo -l`
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 6 — Networking, SSH & Firewalls](../Module-06-Networking-SSH/Reading.md)
+4. ➡️ Move on: [Module 6, Networking, SSH & Firewalls](../Module-06-Networking-SSH/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 6](../Module-06-Networking-SSH/Reading.md) — sshd uses PAM and reads /etc/passwd; [Module 8](../Module-08-Security/Reading.md) — auditd records every sudo invocation; ACLs from Module 2 + sudo from here = the layered access model.
+> - Inside this course: [Module 6](../Module-06-Networking-SSH/Reading.md) sshd uses PAM and reads /etc/passwd; [Module 8](../Module-08-Security/Reading.md) auditd records every sudo invocation; ACLs from Module 2 + sudo from here = the layered access model.
 > - Practice: Practice Exam 2 has ~8 questions drawing from this module; the Final Mock has ~11.
 
 ---
@@ -600,13 +600,13 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 `man 5 passwd`, `man 5 shadow`, `man 5 group`, `man 5 sudoers`, `man 8 pam` — the canonical references.
-- 📄 [The Linux Documentation Project — Linux Administrator's Guide](https://tldp.org/LDP/sag/html/) — old but the user-management chapters are timeless.
-- 📄 [Sudo documentation](https://www.sudo.ws/docs/) — Todd Miller's authoritative project site.
-- 📄 [Linux-PAM Documentation](http://www.linux-pam.org/Linux-PAM-html/) — the upstream PAM project docs.
-- 📄 OpenSSH project — [sshd_config(5)](https://man.openbsd.org/sshd_config.5) man page (used in this module's case study scenario).
+- 📄 `man 5 passwd`, `man 5 shadow`, `man 5 group`, `man 5 sudoers`, `man 8 pam`, the canonical references.
+- 📄 [The Linux Documentation Project Linux Administrator's Guide](https://tldp.org/LDP/sag/html/) old but the user-management chapters are timeless.
+- 📄 [Sudo documentation](https://www.sudo.ws/docs/), Todd Miller's authoritative project site.
+- 📄 [Linux-PAM Documentation](http://www.linux-pam.org/Linux-PAM-html/), the upstream PAM project docs.
+- 📄 OpenSSH project, [sshd_config(5)](https://man.openbsd.org/sshd_config.5) man page (used in this module's case study scenario).
 
 **Practitioner / exam:**
-- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023) — Chapters 6 & 14.
-- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021) — Chapter 7 (System Configuration).
-- 📖 Evi Nemeth et al., *UNIX and Linux System Administration Handbook* (Pearson, 5th ed., 2017) — the user-management chapter is the most thorough in print.
+- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023), Chapters 6 & 14.
+- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021), Chapter 7 (System Configuration).
+- 📖 Evi Nemeth et al., *UNIX and Linux System Administration Handbook* (Pearson, 5th ed., 2017), the user-management chapter is the most thorough in print.

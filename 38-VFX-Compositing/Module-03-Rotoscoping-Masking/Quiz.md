@@ -47,7 +47,7 @@ In professional roto technique, what does a "sparse keyframe" approach indicate?
 
 A. Lazy or low-quality roto work
 B. That the shape barely moved between keyframes, requiring frequent re-drawing
-C. Efficient technique — the shape holds position over many frames without needing to be re-drawn every frame
+C. Efficient technique, the shape holds position over many frames without needing to be re-drawn every frame
 D. That the artist used Rotobrush 2.0 rather than manual splines
 
 ---
@@ -57,7 +57,7 @@ D. That the artist used Rotobrush 2.0 rather than manual splines
 What is the "cheat roto stack"?
 
 A. A method of using Rotobrush 2.0 on a greenscreen shot to avoid manual roto
-B. A layered set of simple shape masks — body, additions, subtractions — combined as a Boolean matte instead of one complex spline
+B. A layered set of simple shape masks body, additions, subtractions combined as a Boolean matte instead of one complex spline
 C. A technique for hiding roto errors by adding motion blur to the composite
 D. An automated script that generates roto from tracking data
 
@@ -156,7 +156,7 @@ D. Use Keylight with no greenscreen
 When would a "Luma Matte" track matte be used instead of an "Alpha Matte"?
 
 A. When the matte source layer has a proper alpha channel
-B. When the matte is defined by the luminance (brightness) of a layer — for example, a Z-depth pass rendered in grayscale
+B. When the matte is defined by the luminance (brightness) of a layer, for example, a Z-depth pass rendered in grayscale
 C. When the footage has no alpha channel of its own
 D. When the matte needs to be inverted
 
@@ -168,7 +168,7 @@ What does "Mask Feather" control in After Effects?
 
 A. The speed at which the mask animates between keyframes
 B. The transparency/opacity of the mask
-C. The softness of the mask edge — how gradually it transitions from opaque to transparent
+C. The softness of the mask edge, how gradually it transitions from opaque to transparent
 D. The number of control points on the mask spline
 
 ---
@@ -222,7 +222,7 @@ D. A tool that creates roto from optical flow analysis
 Why might a roto artist use variable (vertex-level) feathering on a mask rather than a uniform feather value?
 
 A. Variable feathering is faster to render
-B. To have a hard edge on the solid body areas while maintaining soft, semi-transparent edges on hair and fine detail — all in a single mask shape
+B. To have a hard edge on the solid body areas while maintaining soft, semi-transparent edges on hair and fine detail, all in a single mask shape
 C. To match the motion blur on the subject
 D. Because uniform feathering is not available in After Effects
 
@@ -254,7 +254,7 @@ D. Extending the roto session to cover a longer time range
 
 Which of the following best describes the roto work done for *Life of Pi*'s tiger sequences?
 
-A. The tiger was CGI from the beginning — no roto was required
+A. The tiger was CGI from the beginning, no roto was required
 B. A trained Bengal tiger was filmed against a bluescreen; Keylight was used for keying
 C. Real tiger footage was used for reference only; the final tiger is fully digital with motion-capture data driving the CG
 D. Manual roto was required on hundreds of frames of real tiger footage to isolate the animal for compositing reference
@@ -274,50 +274,50 @@ D. Use a difference matte with a clean frame of only the sky
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** Roto is required when no greenscreen was shot and no clean plate is available. The other scenarios (greenscreen, bluescreen) can use chroma keying.
+**Q1, B.** Roto is required when no greenscreen was shot and no clean plate is available. The other scenarios (greenscreen, bluescreen) can use chroma keying.
 
-**Q2 — B.** Green strokes = include (foreground subject). Red strokes = exclude (background). This is the standard Rotobrush painting interface.
+**Q2, B.** Green strokes = include (foreground subject). Red strokes = exclude (background). This is the standard Rotobrush painting interface.
 
-**Q3 — C.** Adobe Sensei is Adobe's machine learning platform. Rotobrush 2.0 uses Sensei's neural network for temporal propagation.
+**Q3, C.** Adobe Sensei is Adobe's machine learning platform. Rotobrush 2.0 uses Sensei's neural network for temporal propagation.
 
-**Q4 — C.** Sparse keyframes mean the shape holds its position across many frames. This indicates the artist is working efficiently, not re-drawing unnecessarily. Dense (every-frame) keyframes suggest poor technique or a very difficult shot.
+**Q4, C.** Sparse keyframes mean the shape holds its position across many frames. This indicates the artist is working efficiently, not re-drawing unnecessarily. Dense (every-frame) keyframes suggest poor technique or a very difficult shot.
 
-**Q5 — B.** The cheat roto stack is a layered set of simple shape masks (body silhouette + additions + subtractions) combined as Boolean operations. This is more manageable than a single complex spline.
+**Q5, B.** The cheat roto stack is a layered set of simple shape masks (body silhouette + additions + subtractions) combined as Boolean operations. This is more manageable than a single complex spline.
 
-**Q6 — C.** Boris FX acquired SilhouetteFX in 2020. Silhouette is now sold as part of the Boris FX suite alongside Sapphire and Mocha.
+**Q6, C.** Boris FX acquired SilhouetteFX in 2020. Silhouette is now sold as part of the Boris FX suite alongside Sapphire and Mocha.
 
-**Q7 — B.** Subtract mode cuts a hole in the existing mask coverage — used for interior negative areas in the cheat roto stack.
+**Q7 B.** Subtract mode cuts a hole in the existing mask coverage used for interior negative areas in the cheat roto stack.
 
-**Q8 — B.** Rotobrush 2.0's key advancement over v1.0 is machine learning-powered temporal propagation — it learns the subject's appearance and adjusts the matte as the subject moves.
+**Q8 B.** Rotobrush 2.0's key advancement over v1.0 is machine learning-powered temporal propagation it learns the subject's appearance and adjusts the matte as the subject moves.
 
-**Q9 — B.** Apply the color effect to an Adjustment Layer with the mask, placed above the footage. The effect applies only within the mask boundary without affecting the source footage directly.
+**Q9, B.** Apply the color effect to an Adjustment Layer with the mask, placed above the footage. The effect applies only within the mask boundary without affecting the source footage directly.
 
-**Q10 — C.** The Refine Edge tool within Rotobrush 2.0 is specifically designed for fine hair and fur edge detail — it analyzes the semi-transparent strands and preserves them.
+**Q10 C.** The Refine Edge tool within Rotobrush 2.0 is specifically designed for fine hair and fur edge detail it analyzes the semi-transparent strands and preserves them.
 
-**Q11 — C.** Silhouette's purpose-built roto engine, advanced spline management tools, and direct Nuke export make it the professional feature film choice. It is also purpose-optimized in a way After Effects (a general compositing tool) cannot match for heavy roto workloads.
+**Q11, C.** Silhouette's purpose-built roto engine, advanced spline management tools, and direct Nuke export make it the professional feature film choice. It is also purpose-optimized in a way After Effects (a general compositing tool) cannot match for heavy roto workloads.
 
-**Q12 — B.** Freeze bakes the Rotobrush calculation into a cached state. This is required before the roto session can be used in the full After Effects composition timeline.
+**Q12, B.** Freeze bakes the Rotobrush calculation into a cached state. This is required before the roto session can be used in the full After Effects composition timeline.
 
-**Q13 — B.** When Rotobrush 2.0 consistently fails to separate the subject from a complex background, manual spline animation with the cheat roto stack is the professional fallback.
+**Q13, B.** When Rotobrush 2.0 consistently fails to separate the subject from a complex background, manual spline animation with the cheat roto stack is the professional fallback.
 
-**Q14 — B.** Luma Matte uses the luminance (brightness) of the matte layer to define transparency. This is used when the matte source is a grayscale image (Z-depth pass, painted mask) rather than a proper alpha channel.
+**Q14, B.** Luma Matte uses the luminance (brightness) of the matte layer to define transparency. This is used when the matte source is a grayscale image (Z-depth pass, painted mask) rather than a proper alpha channel.
 
-**Q15 — C.** Mask Feather controls the softness of the mask edge — the transition between fully opaque and fully transparent at the mask boundary.
+**Q15 C.** Mask Feather controls the softness of the mask edge the transition between fully opaque and fully transparent at the mask boundary.
 
-**Q16 — B.** Subtract layers in the cheat roto stack cut away interior areas — the spaces between an arm and the body, between legs, etc. — that should be transparent in the final matte.
+**Q16 B.** Subtract layers in the cheat roto stack cut away interior areas the spaces between an arm and the body, between legs, etc., that should be transparent in the final matte.
 
-**Q17 — A.** Pressing M reveals the Mask properties for the selected layer in the After Effects timeline.
+**Q17, A.** Pressing M reveals the Mask properties for the selected layer in the After Effects timeline.
 
-**Q18 — A.** For a 1,200-frame shot of a walking person (a relatively clear subject), Rotobrush 2.0 with careful propagation review is the most efficient approach. Manual spline on every frame would be used only if Rotobrush fails.
+**Q18, A.** For a 1,200-frame shot of a walking person (a relatively clear subject), Rotobrush 2.0 with careful propagation review is the most efficient approach. Manual spline on every frame would be used only if Rotobrush fails.
 
-**Q19 — B.** The Magnetic Spline in Silhouette uses edge detection to snap the drawn spline to the nearest high-contrast edge automatically, speeding up the initial shape placement.
+**Q19, B.** The Magnetic Spline in Silhouette uses edge detection to snap the drawn spline to the nearest high-contrast edge automatically, speeding up the initial shape placement.
 
-**Q20 — B.** Variable (vertex-level) feathering allows different feather values at different points of the same mask — hard on the solid body, soft on the hair area — in a single unified mask shape.
+**Q20 B.** Variable (vertex-level) feathering allows different feather values at different points of the same mask hard on the solid body, soft on the hair area, in a single unified mask shape.
 
-**Q21 — B.** A roto patch is applied when a specific region of the chroma key fails for a few frames. Rather than breaking the entire key workflow, the roto artist creates a matte just for the failing region on those frames.
+**Q21, B.** A roto patch is applied when a specific region of the chroma key fails for a few frames. Rather than breaking the entire key workflow, the roto artist creates a matte just for the failing region on those frames.
 
-**Q22 — B.** Propagate forward means Rotobrush 2.0's neural network analyzes each successive frame and updates the matte to track the subject's movement, rather than simply copying the initial shape.
+**Q22, B.** Propagate forward means Rotobrush 2.0's neural network analyzes each successive frame and updates the matte to track the subject's movement, rather than simply copying the initial shape.
 
-**Q23 — D.** While the hero tiger in *Life of Pi* is CG, real tiger footage was used extensively for reference and some plates required manual roto to isolate the animal for compositing reference work.
+**Q23, D.** While the hero tiger in *Life of Pi* is CG, real tiger footage was used extensively for reference and some plates required manual roto to isolate the animal for compositing reference work.
 
-**Q24 — C.** Rotoscoping the skyline edge and using that matte as a Track Matte on an Adjustment Layer is the clean professional approach. It gives precise control over the complex skyline edge while leaving the buildings unaffected.
+**Q24, C.** Rotoscoping the skyline edge and using that matte as a Track Matte on an Adjustment Layer is the clean professional approach. It gives precise control over the complex skyline edge while leaving the buildings unaffected.

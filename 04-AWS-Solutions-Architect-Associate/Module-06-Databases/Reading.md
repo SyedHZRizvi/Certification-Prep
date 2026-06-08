@@ -1,12 +1,12 @@
 # Module 6: Databases on AWS 🗃️
 
-> **Why this module matters:** Picking the right database is the most common SAA scenario question. RDS Multi-AZ vs Read Replicas, when to choose Aurora vs DynamoDB, ElastiCache Redis vs Memcached — each pair is asked over and over. Get them straight and you'll bank 8–12 questions.
+> **Why this module matters:** Picking the right database is the most common SAA scenario question. RDS Multi-AZ vs Read Replicas, when to choose Aurora vs DynamoDB, ElastiCache Redis vs Memcached, each pair is asked over and over. Get them straight and you'll bank 8–12 questions.
 
 > **Prerequisites for this module.**
-> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) — Region/AZ, Reliability pillar
-> - [Module 2](../Module-02-IAM-Organizations/Reading.md) — IAM auth on RDS, Secrets Manager
-> - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md) — databases live in private subnets
-> - Familiarity with relational (SQL) and non-relational (NoSQL) data models — *Designing Data-Intensive Applications* (Kleppmann 2017) chapters 1–3 is the canonical reference
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md), Region/AZ, Reliability pillar
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md), IAM auth on RDS, Secrets Manager
+> - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md), databases live in private subnets
+> - Familiarity with relational (SQL) and non-relational (NoSQL) data models, *Designing Data-Intensive Applications* (Kleppmann 2017) chapters 1–3 is the canonical reference
 > - Understanding of OLTP vs OLAP at a conceptual level
 
 ---
@@ -15,12 +15,12 @@
 
 Maya opens a deli with one notebook for orders. As she grows:
 
-- She makes copies of the notebook so cashiers can write in parallel — that's **read replicas**.
-- She copies one notebook into a safety-deposit box across town — that's **Multi-AZ standby**.
-- She switches from paper to a Rolodex when orders explode — that's **DynamoDB** (key-value lookup, scales to anything).
-- She caches the "lunch special of the day" on a sticky note at the register — that's **ElastiCache**.
-- She compiles end-of-year analytics from all 50 stores — that's **Redshift**.
-- She maps which customers know which other customers (referral graph) — that's **Neptune** (graph DB).
+- She makes copies of the notebook so cashiers can write in parallel, that's **read replicas**.
+- She copies one notebook into a safety-deposit box across town, that's **Multi-AZ standby**.
+- She switches from paper to a Rolodex when orders explode, that's **DynamoDB** (key-value lookup, scales to anything).
+- She caches the "lunch special of the day" on a sticky note at the register, that's **ElastiCache**.
+- She compiles end-of-year analytics from all 50 stores, that's **Redshift**.
+- She maps which customers know which other customers (referral graph), that's **Neptune** (graph DB).
 
 Different jobs, different databases. AWS gives you ~10 to pick from. The exam tests whether you pick the right one.
 
@@ -57,20 +57,20 @@ You're being tested on the *application* of these ideas, but you'll find the rig
 
 ---
 
-## 🛢️ RDS — The Workhorse Relational DB
+## 🛢️ RDS, The Workhorse Relational DB
 
 RDS is **managed** OS + DB engine. AWS does backups, patches, minor version upgrades.
 
-### Multi-AZ vs Read Replicas — MEMORIZE this distinction
+### Multi-AZ vs Read Replicas, MEMORIZE this distinction
 
 | | Multi-AZ | Read Replicas |
 |---|----------|----------------|
 | Purpose | **High Availability** | **Read scaling** |
 | Sync mode | **Synchronous** replication to standby | **Asynchronous** replication (small lag) |
-| Endpoint | One — automatically fails over | Each replica has its own read endpoint |
+| Endpoint | One, automatically fails over | Each replica has its own read endpoint |
 | Region | Same region only (for RDS; Aurora can be Global) | Same OR different region |
 | Failover | Automatic on standby (60–120 sec) | Manual promotion to standalone DB |
-| Reads from standby? | **NO** (standby is invisible) | Yes — reads only |
+| Reads from standby? | **NO** (standby is invisible) | Yes, reads only |
 | Cost | ~2× primary | Per-replica |
 
 🎯 **Exam pattern:**
@@ -80,14 +80,14 @@ RDS is **managed** OS + DB engine. AWS does backups, patches, minor version upgr
 
 ### RDS Multi-AZ Cluster (newer option)
 
-Also called "Multi-AZ DB Cluster" — uses 2 readable standbys (instead of 1 invisible one). MySQL/PostgreSQL only. Faster failover (~35 sec) and standbys serve reads.
+Also called "Multi-AZ DB Cluster", uses 2 readable standbys (instead of 1 invisible one). MySQL/PostgreSQL only. Faster failover (~35 sec) and standbys serve reads.
 
 ### RDS Storage Auto Scaling
 Automatically grow storage when you hit 90% (no downtime).
 
 ### RDS Backups
-- **Automated backups** — daily snapshot + transaction logs, retain 1–35 days
-- **Manual snapshots** — retained until you delete them
+- **Automated backups**, daily snapshot + transaction logs, retain 1–35 days
+- **Manual snapshots**, retained until you delete them
 - Snapshots are stored in S3 (managed by AWS), can be copied cross-region
 
 🎯 **Exam pattern:** "RDS disaster recovery to another region" → Cross-region **snapshot copy** (or use Aurora Global Database for hot DR).
@@ -104,16 +104,16 @@ Dashboard for top SQL, wait events, instance load. Free for first 7 days of rete
 
 ---
 
-## 🌿 Aurora — Cloud-Native Relational
+## 🌿 Aurora, Cloud-Native Relational
 
 Aurora is AWS's redesign of MySQL/Postgres for the cloud. Key facts:
 
 - Storage layer is **distributed across 3 AZs, 6 copies of data** (2 per AZ).
 - Automatically heals 30 GB blocks of disk loss.
 - Up to **15 Aurora Read Replicas** with low replica lag.
-- **Aurora Global Database** — primary region + up to 5 secondary regions with <1s replication.
-- **Aurora Serverless v2** — auto-scales capacity in fine-grained ACUs.
-- **Aurora Backtrack** (MySQL) — rewind the DB to a point in time without restore.
+- **Aurora Global Database**, primary region + up to 5 secondary regions with <1s replication.
+- **Aurora Serverless v2**, auto-scales capacity in fine-grained ACUs.
+- **Aurora Backtrack** (MySQL), rewind the DB to a point in time without restore.
 - **Aurora Machine Learning** integration with SageMaker/Comprehend.
 
 🎯 **Exam pattern:**
@@ -121,7 +121,7 @@ Aurora is AWS's redesign of MySQL/Postgres for the cloud. Key facts:
 - "Spiky workload, want pay-per-use relational" → **Aurora Serverless v2**
 - "Mid-day need to undo last hour's data corruption" → **Aurora Backtrack**
 
-### Aurora vs RDS — when each?
+### Aurora vs RDS, when each?
 
 | Need | Pick |
 |------|------|
@@ -134,7 +134,7 @@ Aurora is AWS's redesign of MySQL/Postgres for the cloud. Key facts:
 
 ---
 
-## ⚡ DynamoDB — Serverless NoSQL
+## ⚡ DynamoDB, Serverless NoSQL
 
 DynamoDB is AWS's flagship NoSQL: key-value + document store, single-digit ms latency at any scale.
 
@@ -149,7 +149,7 @@ DynamoDB is AWS's flagship NoSQL: key-value + document store, single-digit ms la
 | TTL | Auto-delete expired items |
 | Encryption | Always on (AWS-managed KMS by default) |
 
-### DAX — DynamoDB Accelerator
+### DAX, DynamoDB Accelerator
 In-memory cache **in front of** DynamoDB. Microsecond reads for cached items. Lives in a VPC. Read-through, write-through.
 
 🎯 **Exam pattern:** "Sub-millisecond DynamoDB reads for a hot key" → **DAX**.
@@ -176,7 +176,7 @@ Multi-region, multi-active replication. Writes in any region replicate to others
 
 ---
 
-## 🔥 ElastiCache — In-Memory Cache
+## 🔥 ElastiCache, In-Memory Cache
 
 Two engines:
 
@@ -201,7 +201,7 @@ Two engines:
 
 ---
 
-## 📊 Redshift — Petabyte Data Warehouse
+## 📊 Redshift, Petabyte Data Warehouse
 
 Columnar storage, MPP (massively parallel processing). For **OLAP / analytics**, not OLTP.
 
@@ -227,11 +227,11 @@ Columnar storage, MPP (massively parallel processing). For **OLAP / analytics**,
 | Service | When |
 |---------|------|
 | **DocumentDB** | Existing MongoDB workload migrating to AWS |
-| **Neptune** | Graph queries (Gremlin, openCypher, SPARQL) — social, fraud rings |
+| **Neptune** | Graph queries (Gremlin, openCypher, SPARQL), social, fraud rings |
 | **Keyspaces** | Cassandra-compatible, serverless |
 | **Timestream** | IoT sensor data, observability metrics |
 | **QLDB** | Immutable ledger with cryptographic verification (audit trails, financial txns) |
-| **MemoryDB for Redis** | Redis-compatible but with multi-AZ durability — like a Redis + DynamoDB hybrid |
+| **MemoryDB for Redis** | Redis-compatible but with multi-AZ durability, like a Redis + DynamoDB hybrid |
 
 🎯 **Exam pattern:**
 - "Sensor data from 100k IoT devices, time-series queries" → **Timestream**
@@ -265,19 +265,19 @@ Columnar storage, MPP (massively parallel processing). For **OLAP / analytics**,
 
 | Misconception | Reality |
 |---------------|---------|
-| "Multi-AZ replicas can serve reads" | NO — RDS Multi-AZ standby is invisible. Use Read Replicas for read scaling. (Aurora's "Multi-AZ" model is different — its replicas ARE the read replicas.) |
+| "Multi-AZ replicas can serve reads" | NO RDS Multi-AZ standby is invisible. Use Read Replicas for read scaling. (Aurora's "Multi-AZ" model is different its replicas ARE the read replicas.) |
 | "DynamoDB is just like RDS" | Different model (no joins, key-based queries), different scaling, different pricing. |
 | "Memcached supports persistence" | NO. Memcached is purely in-memory. Use Redis if persistence is needed. |
 | "Redshift is for OLTP" | NO. Redshift is OLAP/analytics. Use RDS/Aurora/Dynamo for OLTP. |
 | "Aurora is just managed MySQL" | Aurora has a different storage engine with 6-way replication across 3 AZs; up to 5x MySQL throughput. |
-| "I can encrypt RDS later in place" | No — encryption must be enabled at creation. Workaround: snapshot → copy encrypted → restore. |
+| "I can encrypt RDS later in place" | No, encryption must be enabled at creation. Workaround: snapshot → copy encrypted → restore. |
 | "DAX caches DynamoDB Global Tables" | DAX is regional. For multi-region caching you'd combine other patterns. |
 
 ---
 
 ## 🚨 Exam Traps
 
-1. **Multi-AZ vs Read Replicas** — HA vs read scaling. Don't conflate.
+1. **Multi-AZ vs Read Replicas**, HA vs read scaling. Don't conflate.
 2. **DynamoDB + DAX** for sub-ms reads on hot keys.
 3. **Aurora Global Database** for cross-region RPO/RTO under a second.
 4. **Aurora Serverless v2** for spiky relational workloads.
@@ -285,7 +285,7 @@ Columnar storage, MPP (massively parallel processing). For **OLAP / analytics**,
 6. **Redshift** for analytics. RDS is OLTP. Don't mix them up.
 7. **RDS Proxy** for Lambda + RDS connection storms.
 8. **PITR** on DynamoDB or RDS for accidental data deletion recovery (last 35 days).
-9. **Timestream** for IoT / metrics time-series — not RDS.
+9. **Timestream** for IoT / metrics time-series, not RDS.
 
 ---
 
@@ -293,19 +293,19 @@ Columnar storage, MPP (massively parallel processing). For **OLAP / analytics**,
 
 | Term | Definition |
 |------|------------|
-| **OLTP** | Online Transaction Processing — many small reads/writes |
-| **OLAP** | Online Analytical Processing — fewer big read queries |
+| **OLTP** | Online Transaction Processing, many small reads/writes |
+| **OLAP** | Online Analytical Processing, fewer big read queries |
 | **Multi-AZ** (RDS) | HA with synchronous standby |
 | **Read Replica** | Async read-only copy for scaling reads |
 | **Aurora Global Database** | Multi-region with <1s cross-region replication |
 | **Aurora Serverless v2** | Fine-grained auto-scaling capacity |
-| **DAX** | DynamoDB Accelerator — in-memory cache for DynamoDB |
+| **DAX** | DynamoDB Accelerator, in-memory cache for DynamoDB |
 | **GSI / LSI** | Global / Local Secondary Index |
 | **PITR** | Point-In-Time Recovery (DynamoDB & RDS) |
 | **RDS Proxy** | Connection pooler + IAM auth + faster failover |
 | **Memcached vs Redis** | Memcached: simple, multi-threaded, no persistence. Redis: rich data types, persistence, Multi-AZ |
 | **Redshift Spectrum** | Query S3 data from Redshift |
-| **QLDB** | Quantum Ledger Database — immutable, cryptographically verifiable |
+| **QLDB** | Quantum Ledger Database, immutable, cryptographically verifiable |
 
 ---
 
@@ -330,30 +330,30 @@ You now know:
 
 ---
 
-## 📖 Case Study — Zoom's Pandemic Scale-Up (March–June 2020)
+## 📖 Case Study, Zoom's Pandemic Scale-Up (March–June 2020)
 
-**Situation.** Zoom Video Communications entered 2020 with ~10M daily meeting participants. By **March 2020**, the COVID-19 pandemic forced a global shift to remote work, school, and social life. Daily participants exploded to **200M by March 2020** and **300M by April 2020** — a **30× increase in 90 days**, the largest documented organic scale event in SaaS history. CEO Eric Yuan's daily standups (described in his Saastr Annual 2021 keynote) covered both architecture decisions and *which AWS service to call next*.
+**Situation.** Zoom Video Communications entered 2020 with ~10M daily meeting participants. By **March 2020**, the COVID-19 pandemic forced a global shift to remote work, school, and social life. Daily participants exploded to **200M by March 2020** and **300M by April 2020**, a **30× increase in 90 days**, the largest documented organic scale event in SaaS history. CEO Eric Yuan's daily standups (described in his Saastr Annual 2021 keynote) covered both architecture decisions and *which AWS service to call next*.
 
 **Decision.** Zoom ran on a hybrid of co-located data centers (for media routing) and AWS (for control plane, recording storage, transcription). The database response (per Hash Bin's *"Architecture of Zoom"* 2021 series and Yuan's investor calls):
 
-1. **DynamoDB On-Demand for meeting metadata.** Zoom moved meeting state from a self-managed PostgreSQL fleet to **DynamoDB On-Demand mode** in early 2020. On-Demand eliminated the "provisioned throughput exceeded" failure mode — DynamoDB auto-scaled write capacity from ~100K writes/sec to ~5M writes/sec within weeks
-2. **Aurora MySQL with Read Replicas** for user account and billing data — they horizontally scaled to **15 read replicas** in the primary region
-3. **ElastiCache Redis** (cluster mode) for session state — sharded across 64 nodes
+1. **DynamoDB On-Demand for meeting metadata.** Zoom moved meeting state from a self-managed PostgreSQL fleet to **DynamoDB On-Demand mode** in early 2020. On-Demand eliminated the "provisioned throughput exceeded" failure mode, DynamoDB auto-scaled write capacity from ~100K writes/sec to ~5M writes/sec within weeks
+2. **Aurora MySQL with Read Replicas** for user account and billing data, they horizontally scaled to **15 read replicas** in the primary region
+3. **ElastiCache Redis** (cluster mode) for session state, sharded across 64 nodes
 4. **S3 with Intelligent-Tiering** for **30 PB of new meeting recordings** in 2020 alone. Older recordings auto-tiered to Glacier
-5. **Aurora Global Database** added in mid-2020 for cross-region failover — Zoom committed to multi-region active-passive after a March 2020 partial outage that exposed single-region risk
+5. **Aurora Global Database** added in mid-2020 for cross-region failover, Zoom committed to multi-region active-passive after a March 2020 partial outage that exposed single-region risk
 6. **DynamoDB Streams + Lambda** for asynchronous propagation of meeting state to analytics
 7. **Amazon Transcribe** (which itself sits on DynamoDB internally) for the now-famous AI transcription feature
 
-**Outcome.** Zoom served 300M daily participants with <1s p99 latency on meeting join — a number that would have been unthinkable in late 2019. Revenue grew from $623M (FY2020) to $4.1B (FY2022) — a 6.5× revenue increase in 2 years, mostly enabled by the architectural elasticity. The architecture choices became Yuan's most-cited case study in subsequent SaaS investor presentations.
+**Outcome.** Zoom served 300M daily participants with <1s p99 latency on meeting join a number that would have been unthinkable in late 2019. Revenue grew from $623M (FY2020) to $4.1B (FY2022) a 6.5× revenue increase in 2 years, mostly enabled by the architectural elasticity. The architecture choices became Yuan's most-cited case study in subsequent SaaS investor presentations.
 
 **Lesson for the exam / for practitioners.** Every "database scaling under unpredictable load" trope on the SAA exam came from this period:
 
-- **DynamoDB On-Demand vs Provisioned** — On-Demand is the exam's reflexive answer for "unpredictable spiky workload"; provisioned (with Auto Scaling) wins on cost at *predictable* scale
-- **Aurora Serverless v2** (released GA April 2022, after Zoom's surge) — would be the modern answer to "spiky relational workload"
-- **Read Replicas vs Multi-AZ** — Zoom used *both* simultaneously. Multi-AZ for HA, replicas for read scaling. The exam tests whether you know they solve different problems
-- **ElastiCache Redis cluster mode** — for session state at >1M concurrent users, single-node Redis is not enough; cluster mode shards by key hash
-- **Aurora Global Database** — Zoom's cross-region failover insurance. The exam asks "<1 second cross-region replication with auto-promotion" — that's Aurora Global by name
-- **DynamoDB Streams + Lambda** — the standard CDC (change data capture) pattern; the exam loves it
+- **DynamoDB On-Demand vs Provisioned**, On-Demand is the exam's reflexive answer for "unpredictable spiky workload"; provisioned (with Auto Scaling) wins on cost at *predictable* scale
+- **Aurora Serverless v2** (released GA April 2022, after Zoom's surge), would be the modern answer to "spiky relational workload"
+- **Read Replicas vs Multi-AZ**, Zoom used *both* simultaneously. Multi-AZ for HA, replicas for read scaling. The exam tests whether you know they solve different problems
+- **ElastiCache Redis cluster mode**, for session state at >1M concurrent users, single-node Redis is not enough; cluster mode shards by key hash
+- **Aurora Global Database** Zoom's cross-region failover insurance. The exam asks "<1 second cross-region replication with auto-promotion" that's Aurora Global by name
+- **DynamoDB Streams + Lambda**, the standard CDC (change data capture) pattern; the exam loves it
 
 When the SAA exam describes "a SaaS workload sees unpredictable 10× spikes; database layer must scale automatically and survive AZ failure," the answer chain is **DynamoDB On-Demand + Aurora Multi-AZ with Read Replicas + ElastiCache Redis + Aurora Global Database for DR**. Zoom's exact stack.
 
@@ -364,13 +364,13 @@ When the SAA exam describes "a SaaS workload sees unpredictable 10× spikes; dat
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **DAX vs ElastiCache for DynamoDB caching.** DAX is purpose-built and transparent; ElastiCache requires explicit cache logic. When is the engineering cost of writing cache-aside logic worth it for the flexibility?
 2. **RDS Proxy for Lambda workloads.** Lambda + RDS is a famously bad pairing because of connection storms. RDS Proxy fixes this. Why didn't AWS just *make Lambda + RDS work natively* by default? What's the architectural cost of the proxy layer?
 3. **Aurora Serverless v2 vs Aurora provisioned.** Serverless v2 scales in 0.5 ACU increments. Provisioned is cheaper at sustained high load. At what duty cycle does each win?
 4. **Multi-Region active-active vs active-passive for OLTP.** Active-active (DynamoDB Global Tables, Aurora Global with write forwarding) is appealing but expensive and has consistency caveats. When is active-passive (warm standby) the better answer despite the higher failover RTO?
-5. **QLDB vs blockchain for audit ledgers.** QLDB gives cryptographic verification without the operational pain of blockchain. When is QLDB actually wrong — i.e., when do you genuinely need a distributed ledger across organizations?
+5. **QLDB vs blockchain for audit ledgers.** QLDB gives cryptographic verification without the operational pain of blockchain. When is QLDB actually wrong, i.e., when do you genuinely need a distributed ledger across organizations?
 
 ---
 
@@ -387,17 +387,17 @@ When the SAA exam describes "a SaaS workload sees unpredictable 10× spikes; dat
 ## 📚 Further Sources (This Module)
 
 **AWS official**
-- 📖 **Choosing a database on AWS** — `aws.amazon.com/products/databases/`
-- 📖 **RDS User Guide** — `docs.aws.amazon.com/AmazonRDS/latest/UserGuide/`
-- 📖 **Aurora User Guide** — `docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/`
-- 📖 **DynamoDB Developer Guide** — `docs.aws.amazon.com/amazondynamodb/latest/developerguide/`
-- 📖 **ElastiCache User Guide** — `docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/`
-- 📖 **AWS Builders' Library — *"Amazon DynamoDB and the Dynamo paper"*** — connecting current product to academic origin.
+- 📖 **Choosing a database on AWS**, `aws.amazon.com/products/databases/`
+- 📖 **RDS User Guide**, `docs.aws.amazon.com/AmazonRDS/latest/UserGuide/`
+- 📖 **Aurora User Guide**, `docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/`
+- 📖 **DynamoDB Developer Guide**, `docs.aws.amazon.com/amazondynamodb/latest/developerguide/`
+- 📖 **ElastiCache User Guide**, `docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/`
+- 📖 **AWS Builders' Library *"Amazon DynamoDB and the Dynamo paper"*** connecting current product to academic origin.
 
 **re:Invent talks**
-- 🎤 **DAT401 (2023): *Advanced design patterns for Amazon DynamoDB*** — Rick Houlihan's classic; his DynamoDB schema-design philosophy is exam-relevant.
+- 🎤 **DAT401 (2023): *Advanced design patterns for Amazon DynamoDB***, Rick Houlihan's classic; his DynamoDB schema-design philosophy is exam-relevant.
 - 🎤 **DAT302 (2023): *Deep dive on Amazon Aurora***
-- 🎤 **DAT405 (2024): *Amazon Aurora storage layer internals*** — the 4-of-6 quorum details.
+- 🎤 **DAT405 (2024): *Amazon Aurora storage layer internals***, the 4-of-6 quorum details.
 
 **Academic foundations**
 - 📄 **Brewer, Eric (2000).** *Towards Robust Distributed Systems.* ACM PODC 2000 keynote.
@@ -408,5 +408,5 @@ When the SAA exam describes "a SaaS workload sees unpredictable 10× spikes; dat
 - 📖 **Kleppmann, Martin (2017).** *Designing Data-Intensive Applications.* O'Reilly. The textbook every database choice on the SAA exam rests on.
 
 **Industry**
-- 📰 **Werner Vogels's *All Things Distributed*** — multiple Aurora and DynamoDB internals posts.
-- 📰 **Alex DeBrie's *DynamoDB Book* (2020)** — the definitive practical reference on DynamoDB schema design.
+- 📰 **Werner Vogels's *All Things Distributed***, multiple Aurora and DynamoDB internals posts.
+- 📰 **Alex DeBrie's *DynamoDB Book* (2020)**, the definitive practical reference on DynamoDB schema design.

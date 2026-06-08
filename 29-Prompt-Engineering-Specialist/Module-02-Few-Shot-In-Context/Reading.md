@@ -1,6 +1,6 @@
 # Module 2: Few-Shot & In-Context Learning 📚
 
-> **Why this module matters:** 12% of the Final Mock. In-context learning is the single most important capability the GPT-3 paper (Brown et al. 2020) demonstrated — it's why we have an industry. Knowing when to add examples, which examples to pick, and how to order them often beats fine-tuning at a fraction of the cost and operational headache.
+> **Why this module matters:** 12% of the Final Mock. In-context learning is the single most important capability the GPT-3 paper (Brown et al. 2020) demonstrated, it's why we have an industry. Knowing when to add examples, which examples to pick, and how to order them often beats fine-tuning at a fraction of the cost and operational headache.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Module 1 (tokens, roles, sampling parameters)
@@ -18,18 +18,18 @@ Meet Yuki, a senior risk analyst at a mid-tier European bank. Her team's job: cl
 In Q3 2024, leadership greenlit an AI pilot. The first proposal: **fine-tune a small classifier** on 18 months of labeled tickets. Cost estimate: €420K and 4 months. Yuki proposed a different path:
 
 1. **Week 1:** A zero-shot prompt with the 47 category names and 1-line definitions. Baseline accuracy: 61%.
-2. **Week 2:** A 12-shot prompt — 12 carefully curated examples (one per high-volume category plus 5 hard edge cases). Accuracy: **88%**.
+2. **Week 2:** A 12-shot prompt, 12 carefully curated examples (one per high-volume category plus 5 hard edge cases). Accuracy: **88%**.
 3. **Week 3:** A retrieval-augmented few-shot prompt that pulls the **5 most-similar historical tickets** at runtime from a vector index. Accuracy: **94.2%**.
 
 Total cost of Yuki's solution: €11K in API spend + ~3 weeks of engineering. Total cost avoided: ~€400K and 16 weeks. The compliance team redeployed two analysts to a higher-value triage role; the bank's regulator audit pass rate jumped from 91% to 99%.
 
-The point isn't that few-shot beats fine-tuning every time (it doesn't — Module 8 covers when fine-tuning wins). The point is that **in-context learning is so powerful that you should always try it first**, and that the *quality* of your examples often matters more than the *quantity*. This module is how Yuki picked those 12 examples.
+The point isn't that few-shot beats fine-tuning every time (it doesn't, Module 8 covers when fine-tuning wins). The point is that **in-context learning is so powerful that you should always try it first**, and that the *quality* of your examples often matters more than the *quantity*. This module is how Yuki picked those 12 examples.
 
 ---
 
 ## 🧠 What Is In-Context Learning?
 
-In-context learning (ICL) is the phenomenon — first demonstrated at scale by Brown et al. 2020 in the GPT-3 paper — where a sufficiently large language model can perform a new task **just by being shown a few input-output examples in its prompt**, with no parameter updates.
+In-context learning (ICL) is the phenomenon first demonstrated at scale by Brown et al. 2020 in the GPT-3 paper where a sufficiently large language model can perform a new task **just by being shown a few input-output examples in its prompt**, with no parameter updates.
 
 This was the unlock that made LLMs commercially viable. Before ICL, every new task required fine-tuning. With ICL, you can pivot a model to a new domain in 20 minutes.
 
@@ -50,8 +50,8 @@ This was the unlock that made LLMs commercially viable. Before ICL, every new ta
 ICL works astonishingly well when:
 
 - The task can be **demonstrated** through input-output pairs (classification, extraction, translation, formatting)
-- The pattern is **regular** — the relationship between input and output is stable across examples
-- The model is **large enough** — ICL improves dramatically with model scale (Brown 2020 showed it emerged around 6B parameters and grew strongly through 175B)
+- The pattern is **regular**, the relationship between input and output is stable across examples
+- The model is **large enough**, ICL improves dramatically with model scale (Brown 2020 showed it emerged around 6B parameters and grew strongly through 175B)
 
 ICL underperforms when:
 
@@ -68,7 +68,7 @@ Zero-shot is the simplest pattern: tell the model what to do, in plain language,
 ```python
 prompt = """Classify the sentiment of this customer review as POSITIVE, NEGATIVE, or NEUTRAL.
 
-Review: "The shipping was fast but the product itself was disappointing — color didn't match the photo."
+Review: "The shipping was fast but the product itself was disappointing, color didn't match the photo."
 
 Sentiment:"""
 ```
@@ -102,7 +102,7 @@ The few-shot pattern: show the model N input-output pairs, then ask it to produc
 ```python
 prompt = """Classify the sentiment of customer reviews as POSITIVE, NEGATIVE, or NEUTRAL.
 
-Review: "Absolutely love this — works exactly as described."
+Review: "Absolutely love this, works exactly as described."
 Sentiment: POSITIVE
 
 Review: "Item arrived but stopped working after 2 days. Returning."
@@ -111,18 +111,18 @@ Sentiment: NEGATIVE
 Review: "It's okay I guess. Does what it says."
 Sentiment: NEUTRAL
 
-Review: "The shipping was fast but the product itself was disappointing — color didn't match the photo."
+Review: "The shipping was fast but the product itself was disappointing, color didn't match the photo."
 Sentiment:"""
 ```
 
-### Brown et al. 2020 — the in-context learning paper
+### Brown et al. 2020, the in-context learning paper
 
 The GPT-3 paper measured zero-shot vs one-shot vs few-shot (typically 32 shots) across 42 benchmarks. Key findings:
 
 1. **Few-shot beats one-shot beats zero-shot** in most cases, often by 10–30 percentage points
-2. **The gap grows with model scale** — ICL is a capability that emerges and strengthens at large parameter counts
-3. **Some tasks benefit far more from examples than others** — extraction and structured output are big winners; basic reasoning is sometimes a wash
-4. **The model is genuinely "learning" the pattern, not just retrieving** — random label assignments still help, suggesting format learning matters too
+2. **The gap grows with model scale**, ICL is a capability that emerges and strengthens at large parameter counts
+3. **Some tasks benefit far more from examples than others**, extraction and structured output are big winners; basic reasoning is sometimes a wash
+4. **The model is genuinely "learning" the pattern, not just retrieving**, random label assignments still help, suggesting format learning matters too
 
 This is the paper to cite when leadership asks why you didn't fine-tune.
 
@@ -141,7 +141,7 @@ This is the paper to cite when leadership asks why you didn't fine-tune.
 
 ---
 
-## 🎯 Example Selection — The Highest-Leverage Decision
+## 🎯 Example Selection, The Highest-Leverage Decision
 
 The biggest performance gain in few-shot is **not** going from 4 → 8 shots; it's picking the **right** 4 shots. Strategies:
 
@@ -190,7 +190,7 @@ First example sets the high-confidence anchor (typical case). Subsequent example
 
 ---
 
-## 📐 Example Ordering — Recency Effect & Other Biases
+## 📐 Example Ordering, Recency Effect & Other Biases
 
 Lu et al. 2022 (*Fantastically Ordered Prompts and Where to Find Them*) showed that **the order of few-shot examples can swing accuracy by 30+ percentage points** on the same examples. This is one of the most under-discussed findings in prompt engineering.
 
@@ -205,11 +205,11 @@ Lu et al. 2022 (*Fantastically Ordered Prompts and Where to Find Them*) showed t
 
 ### Defenses
 
-1. **Balance label distribution** — equal counts of each class
+1. **Balance label distribution**, equal counts of each class
 2. **Randomize order per request** (or use a fixed shuffled order tested on an eval set)
 3. **Use a held-out eval set to pick the best order** (small lift but real)
-4. **Avoid clustering similar examples consecutively** — interleave them
-5. **For very-large few-shot (16+), order matters less** — the recency effect dilutes
+4. **Avoid clustering similar examples consecutively**, interleave them
+5. **For very-large few-shot (16+), order matters less**, the recency effect dilutes
 
 🚨 **Trap:** A reviewer once cut a vendor's pilot prompt to 8 examples to save tokens. The accuracy stayed flat for 2 weeks, then crashed when a new input distribution arrived. Root cause: their original example *order* was unbalanced and they relied on a fragile shortcut. Test ordering when you cut shots.
 
@@ -226,10 +226,10 @@ Here's the structure Yuki's team standardized on after the bank pilot:
 [2. EXAMPLES SECTION HEADER]
    "Here are examples of correct classifications:"
 
-[3. EXAMPLES — 5 to 10]
+[3. EXAMPLES, 5 to 10]
    Input: <ticket text>
    Label: <one of 47 categories>
-   Reasoning: <one sentence — optional but stabilizes the model>
+   Reasoning: <one sentence, optional but stabilizes the model>
    ---
 
 [4. INSTRUCTION TO CONTINUE]
@@ -242,11 +242,11 @@ Here's the structure Yuki's team standardized on after the bank pilot:
 
 ### Why each piece matters
 
-- **System prompt** (Module 1) — locks in persona and rules independent of user input
-- **Examples header** — gives the model a clear demarcation between "what to learn from" and "what to do"
-- **Per-example reasoning line** — even one sentence of explanation per example often improves accuracy by 5–15 points; this is the bridge to chain-of-thought (Module 3)
-- **Delimiter (`---`)** — explicit separators reduce examples-bleeding-into-output
-- **Instruction to continue** — restates the task right before the new input, exploiting recency
+- **System prompt** (Module 1), locks in persona and rules independent of user input
+- **Examples header**, gives the model a clear demarcation between "what to learn from" and "what to do"
+- **Per-example reasoning line**, even one sentence of explanation per example often improves accuracy by 5–15 points; this is the bridge to chain-of-thought (Module 3)
+- **Delimiter (`---`)**, explicit separators reduce examples-bleeding-into-output
+- **Instruction to continue**, restates the task right before the new input, exploiting recency
 
 ### Common formatting patterns
 
@@ -288,13 +288,13 @@ Input: {new_input}
 Output:"""
 ```
 
-🎯 **Memorize:** *Anthropic models prefer XML tags. OpenAI and Gemini models are agnostic. Llama variants vary — test both.*
+🎯 **Memorize:** *Anthropic models prefer XML tags. OpenAI and Gemini models are agnostic. Llama variants vary, test both.*
 
 ---
 
-## 🧪 Many-Shot ICL — The Long-Context Frontier
+## 🧪 Many-Shot ICL, The Long-Context Frontier
 
-In 2024, Agarwal et al. (Google DeepMind, *Many-Shot In-Context Learning*) and Anthropic's *Many-shot jailbreaking* paper independently demonstrated that with 100K+ context windows, you can put **hundreds or thousands** of examples in a single prompt and get substantial performance lifts — sometimes matching or exceeding fine-tuning.
+In 2024, Agarwal et al. (Google DeepMind, *Many-Shot In-Context Learning*) and Anthropic's *Many-shot jailbreaking* paper independently demonstrated that with 100K+ context windows, you can put **hundreds or thousands** of examples in a single prompt and get substantial performance lifts, sometimes matching or exceeding fine-tuning.
 
 ### When many-shot works
 
@@ -314,9 +314,9 @@ In 2024, Agarwal et al. (Google DeepMind, *Many-Shot In-Context Learning*) and A
 | Fine-tune (LoRA) | Weeks | ~baseline | Training infra |
 | Full fine-tune | Months | ~baseline | Full ML stack |
 
-**Anthropic's prompt caching** (Module 8) makes many-shot dramatically cheaper — the cached portion costs ~10% of the normal input price.
+**Anthropic's prompt caching** (Module 8) makes many-shot dramatically cheaper, the cached portion costs ~10% of the normal input price.
 
-🚨 **Trap from Anthropic's research:** Many-shot can also be a *jailbreak* vector — hundreds of fake "assistant agreed to bad request" examples in context can erode safety training. Module 7 covers this.
+🚨 **Trap from Anthropic's research:** Many-shot can also be a *jailbreak* vector, hundreds of fake "assistant agreed to bad request" examples in context can erode safety training. Module 7 covers this.
 
 ---
 
@@ -324,13 +324,13 @@ In 2024, Agarwal et al. (Google DeepMind, *Many-Shot In-Context Learning*) and A
 
 > **Scenario:** Yuki has 18 months of labeled tickets (~22,000 examples). 47 categories. She wants to ship a classifier in 3 weeks. Decide the approach week by week.
 
-**Week 1 — Zero-shot baseline:**
+**Week 1, Zero-shot baseline:**
 ```
 You classify incoming customer tickets into one of 47 regulatory categories.
 
 Categories (with one-line definitions):
-1. GDPR-Data — request related to personal data access/deletion/portability
-2. AML-Suspicious — possible money-laundering pattern or red flag
+1. GDPR-Data, request related to personal data access/deletion/portability
+2. AML-Suspicious, possible money-laundering pattern or red flag
 ... [47 total]
 
 Classify the ticket using ONLY the category name (no explanation).
@@ -341,13 +341,13 @@ Category:
 - Eval: 600 held-out tickets, exact-match accuracy.
 - Result: 61% accuracy. Worst classes: 5 categories at <30%.
 
-**Week 2 — Static few-shot:**
+**Week 2, Static few-shot:**
 - Pick 12 examples: 1 each for the 7 highest-volume categories, 5 hand-picked hard cases.
 - Add a one-sentence reasoning line per example.
 - Use Anthropic XML tags (model: Claude Haiku 4.5).
 - Result: 88% accuracy. Cost per call: $0.0008.
 
-**Week 3 — Similarity-retrieval few-shot:**
+**Week 3, Similarity-retrieval few-shot:**
 - Embed all 22K historical tickets with `text-embedding-3-large`.
 - At runtime: embed new ticket, retrieve top-5 most-similar examples.
 - Build the prompt dynamically with those 5 retrievals.
@@ -366,7 +366,7 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 | "More examples always means better accuracy" | Diminishing returns after ~5–10 for most tasks; order matters more than count past that. |
 | "The order of examples doesn't matter" | Wrong. Lu et al. 2022 showed swings of 30+ points from reordering. |
 | "Zero-shot is always worse than few-shot" | On trivial tasks with modern flagship models, zero-shot often ties or wins (and saves tokens). |
-| "Examples must come from the training distribution" | Brown 2020 showed even random labels help — format learning matters. |
+| "Examples must come from the training distribution" | Brown 2020 showed even random labels help, format learning matters. |
 | "Few-shot replaces fine-tuning" | For most use cases yes; for narrow, high-volume, latency-sensitive use cases fine-tuning still wins on cost-per-call. |
 | "All models prefer the same example format" | Claude prefers XML tags; others are agnostic; always test. |
 | "Many-shot is free if you have the context" | You're paying for input tokens; cache aggressively (Module 8). |
@@ -381,7 +381,7 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 | **In-context learning (ICL)** | The model performs a task from examples in the prompt, with no weight updates |
 | **Zero-shot / one-shot / few-shot / many-shot** | 0 / 1 / 2–32 / 100+ examples |
 | **Shot** | One input-output example pair |
-| **Brown et al. 2020** | The GPT-3 paper — landmark ICL demonstration |
+| **Brown et al. 2020** | The GPT-3 paper, landmark ICL demonstration |
 | **Recency bias** | Model attends more to later examples in the prompt |
 | **Majority label bias** | Model over-predicts the most-common label in the examples |
 | **kNN few-shot** | Retrieve the k most-similar examples per new input |
@@ -389,7 +389,7 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 | **Diverse coverage** | Picking examples that span the label/input space |
 | **Hardest-example mining** | Picking examples the model currently fails on |
 | **Anchor-and-elaborate** | First example = high-confidence anchor; later = edge cases |
-| **Lu et al. 2022** | Fantastically Ordered Prompts paper — order matters a lot |
+| **Lu et al. 2022** | Fantastically Ordered Prompts paper, order matters a lot |
 | **Agarwal et al. 2024** | Many-Shot In-Context Learning paper (DeepMind) |
 | **Episodic prompt** | A prompt structured around input-output episodes |
 | **Anthropic prompt caching** | Caching repeated prompt prefixes for ~10% of normal input cost |
@@ -407,24 +407,24 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 
 ---
 
-## 📊 Case Study — The 2020 GPT-3 Paper & The Birth of an Industry
+## 📊 Case Study, The 2020 GPT-3 Paper & The Birth of an Industry
 
-**Situation.** In May 2020, OpenAI published *Language Models are Few-Shot Learners* (Brown et al., NeurIPS 2020). The paper described GPT-3, a 175B-parameter transformer, and — more importantly — demonstrated that with sufficient scale, models could perform **dozens of tasks** they were never explicitly fine-tuned for, **just from a few examples in the prompt**.
+**Situation.** In May 2020, OpenAI published *Language Models are Few-Shot Learners* (Brown et al., NeurIPS 2020). The paper described GPT-3, a 175B-parameter transformer, and more importantly demonstrated that with sufficient scale, models could perform **dozens of tasks** they were never explicitly fine-tuned for, **just from a few examples in the prompt**.
 
 **The result that shocked the field.** Across 42 NLP benchmarks (translation, question answering, common-sense reasoning, arithmetic, SuperGLUE, LAMBADA, Winograd), GPT-3 with few-shot prompting matched or exceeded fine-tuned BERT-class models on many. On translation, GPT-3 few-shot rivaled supervised SOTA for high-resource languages. On reading comprehension, it set new state-of-the-art on TriviaQA.
 
-**Why it mattered commercially.** Before Brown 2020, deploying NLP meant: collect 10K+ labeled examples → fine-tune BERT → wait days → re-deploy when distribution shifted. After Brown 2020, the recipe became: write a prompt with 5 examples → ship the same day → update the prompt when distribution shifted. The economic gradient was so steep it created an entire industry — startups, enterprise teams, vendor APIs — in 24 months.
+**Why it mattered commercially.** Before Brown 2020, deploying NLP meant: collect 10K+ labeled examples → fine-tune BERT → wait days → re-deploy when distribution shifted. After Brown 2020, the recipe became: write a prompt with 5 examples → ship the same day → update the prompt when distribution shifted. The economic gradient was so steep it created an entire industry startups, enterprise teams, vendor APIs in 24 months.
 
 **Caveats from the paper itself (often missed).**
-1. ICL works **less well at smaller scale** — most of the magic emerges at 6B+ parameters. Small open models still benefit from fine-tuning more.
-2. ICL is **format-sensitive** — small formatting changes (newlines, separators, label tokens) can swing accuracy meaningfully.
-3. ICL **plateaus quickly** — going from 0 → 8 shots is huge; 8 → 32 is usually modest.
-4. **No weight updates** means no permanent learning — the prompt has to be reconstructed for every new request.
+1. ICL works **less well at smaller scale**, most of the magic emerges at 6B+ parameters. Small open models still benefit from fine-tuning more.
+2. ICL is **format-sensitive**, small formatting changes (newlines, separators, label tokens) can swing accuracy meaningfully.
+3. ICL **plateaus quickly**, going from 0 → 8 shots is huge; 8 → 32 is usually modest.
+4. **No weight updates** means no permanent learning, the prompt has to be reconstructed for every new request.
 
 **Lesson for the exam / for practitioners.**
 - Whenever someone proposes fine-tuning, ask: have we tried few-shot first?
 - Few-shot is the right *first* approach; fine-tuning is the right approach when few-shot has hit a wall AND the per-call cost matters more than iteration speed.
-- Reproducibility matters — write your prompts as if you'll need to A/B them next quarter.
+- Reproducibility matters, write your prompts as if you'll need to A/B them next quarter.
 
 **Discussion (Socratic).**
 - **Q1:** Brown 2020 used 32-shot prompts. With today's 1M-context models, would you go to 200 shots? Where does the marginal benefit break even with cost?
@@ -438,18 +438,18 @@ This is the *playbook*. You'll repeat this flow on every classification or extra
 You now know:
 
 - 📚 What in-context learning is and why it was the unlock for the LLM industry
-- 0️⃣ When to use zero-shot vs few-shot — and that zero-shot is often surprisingly strong with modern flagships
-- 🎯 The five example-selection strategies — diverse, similarity-retrieval, hardest, recency, anchor-elaborate
-- 📐 The recency effect and the other ordering biases — and how to defend against them
+- 0️⃣ When to use zero-shot vs few-shot, and that zero-shot is often surprisingly strong with modern flagships
+- 🎯 The five example-selection strategies, diverse, similarity-retrieval, hardest, recency, anchor-elaborate
+- 📐 The recency effect and the other ordering biases, and how to defend against them
 - 🏷️ The anatomy of a production few-shot prompt and the per-vendor formatting preferences
-- 🧪 Many-shot ICL — when 100+ examples is the right call
+- 🧪 Many-shot ICL, when 100+ examples is the right call
 - 🔬 Yuki's three-week playbook: zero-shot → static few-shot → similarity-retrieval few-shot
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 3 — Chain-of-Thought & Reasoning](../Module-03-Chain-of-Thought-Reasoning/Reading.md)
+4. ➡️ Move on: [Module 3, Chain-of-Thought & Reasoning](../Module-03-Chain-of-Thought-Reasoning/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 3](../Module-03-Chain-of-Thought-Reasoning/Reading.md) layers reasoning examples on top of few-shot. [Module 4](../Module-04-Structured-Outputs-JSON/Reading.md) revisits format learning for JSON. [Module 6](../Module-06-Evaluation-AB-Testing/Reading.md) is how Yuki measured Week 1 vs Week 3.
@@ -461,18 +461,18 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources (the originals):**
-- 📄 Brown et al. (2020). *Language Models are Few-Shot Learners* — the GPT-3 paper. NeurIPS 2020.
+- 📄 Brown et al. (2020). *Language Models are Few-Shot Learners*, the GPT-3 paper. NeurIPS 2020.
 - 📄 Lu et al. (2022). *Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity*. ACL 2022.
-- 📄 Liu et al. (2022). *What Makes Good In-Context Examples for GPT-3?* — kNN-retrieval evidence.
-- 📄 Min et al. (2022). *Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?* — the "random labels still help" paper.
-- 📄 Agarwal et al. (2024). *Many-Shot In-Context Learning* — DeepMind, NeurIPS 2024.
+- 📄 Liu et al. (2022). *What Makes Good In-Context Examples for GPT-3?*, kNN-retrieval evidence.
+- 📄 Min et al. (2022). *Rethinking the Role of Demonstrations: What Makes In-Context Learning Work?*, the "random labels still help" paper.
+- 📄 Agarwal et al. (2024). *Many-Shot In-Context Learning*, DeepMind, NeurIPS 2024.
 
 **Vendor docs:**
-- 📖 [Anthropic — Use XML tags & multishot prompting](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags)
-- 📖 [OpenAI — Specify the steps required to complete a task](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-steps-required-to-complete-a-task)
-- 📖 [Google — Few-shot prompting strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies#few-shot)
+- 📖 [Anthropic, Use XML tags & multishot prompting](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags)
+- 📖 [OpenAI, Specify the steps required to complete a task](https://platform.openai.com/docs/guides/prompt-engineering/tactic-specify-the-steps-required-to-complete-a-task)
+- 📖 [Google, Few-shot prompting strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies#few-shot)
 
 **Practitioner:**
-- 📖 [DAIR.AI — Few-Shot Prompting chapter](https://www.promptingguide.ai/techniques/fewshot)
-- 📖 [Sebastian Raschka — Practical tips for few-shot prompting](https://magazine.sebastianraschka.com/p/finetuning-llms-with-adapters-and)
-- 📖 [Lilian Weng — Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)
+- 📖 [DAIR.AI, Few-Shot Prompting chapter](https://www.promptingguide.ai/techniques/fewshot)
+- 📖 [Sebastian Raschka, Practical tips for few-shot prompting](https://magazine.sebastianraschka.com/p/finetuning-llms-with-adapters-and)
+- 📖 [Lilian Weng, Prompt Engineering](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)

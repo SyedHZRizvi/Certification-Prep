@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Buffer vs Hootsuite vs Later — Which Scheduler?</p>
+      <p class="vg-title">Buffer vs Hootsuite vs Later, Which Scheduler?</p>
       <p class="vg-creator">Tech reviewer compilations</p>
       <span class="vg-duration">⏱ 13 min · Side-by-side</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Taplio + Postwise — AI for LinkedIn / X</p>
+      <p class="vg-title">Taplio + Postwise, AI for LinkedIn / X</p>
       <p class="vg-creator">Various LinkedIn creators</p>
       <span class="vg-duration">⏱ 12 min · Hands-on</span>
     </div>

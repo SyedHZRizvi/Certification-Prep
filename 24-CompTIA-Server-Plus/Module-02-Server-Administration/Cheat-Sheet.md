@@ -4,7 +4,7 @@
 
 ---
 
-## 🪟 Windows Server — Top Roles
+## 🪟 Windows Server, Top Roles
 
 | Role | Default port(s) |
 |---|---|
@@ -71,7 +71,7 @@ Unit files: `/etc/systemd/system/` (admin) · `/usr/lib/systemd/system/` (packag
 | **RDP** | TCP 3389 | Windows desktop |
 | **WinRM HTTP** | TCP 5985 | PS remoting (dev only) |
 | **WinRM HTTPS** | TCP 5986 | PS remoting (prefer) |
-| **Telnet** | TCP 23 | ❌ cleartext — never use |
+| **Telnet** | TCP 23 | ❌ cleartext, never use |
 | **RD Gateway** | TCP 443 | RDP over HTTPS |
 
 ---
@@ -164,12 +164,12 @@ Cover the answers and recite:
 1. systemctl one-liner to enable nginx + start it now? ___
 2. The two AD-critical infrastructure dependencies? ___
 3. WinRM HTTPS port? ___
-4. SUID bit on `passwd` — why? ___
-5. Telnet vs SSH — one-word difference? ___
+4. SUID bit on `passwd`, why? ___
+5. Telnet vs SSH, one-word difference? ___
 6. Why two DCs on the same Hyper-V host is bad? ___
 
 If you can answer all 6 in under 60 seconds, you own this module. ✅
 
 ---
 
-➡️ [Module 3: Storage — RAID, SAN, NAS](../Module-03-Storage/Reading.md)
+➡️ [Module 3: Storage, RAID, SAN, NAS](../Module-03-Storage/Reading.md)

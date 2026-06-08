@@ -252,28 +252,28 @@ D. Toggles between local and global Y axis
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — F3 opens Search in Blender 4.x (Spacebar default changed to Play for animators)
-Q2.  B — G, Y constrains to world Y axis
-Q3.  B — Edit Mode modifies vertices, edges, faces of the selected mesh
-Q4.  D — Right-handed, Z-up
-Q5.  C — Numpad . frames the selected object
-Q6.  B — Eye icon = viewport visibility; camera icon = render visibility
-Q7.  C — Z opens the shading pie menu (Wireframe/Solid/Material Preview/Rendered)
-Q8.  C — G, X, X (double-tap axis) constrains to local axis
-Q9.  C — N opens/closes the N-Panel sidebar
-Q10. C — Modifier Properties (wrench icon)
-Q11. C — Material Preview uses HDRI without a full render
-Q12. D — Andrew Price (Blender Guru)
-Q13. C — Ctrl+A applies transforms in Object Mode
-Q14. C — Sprite Fright (2021) is the benchmark open movie
-Q15. B — The search bar filters objects by name in the Outliner
-Q16. C — Ctrl+Spacebar maximizes the active editor
-Q17. B — Tab from Object Mode enters Edit Mode
-Q18. C — Preferences → System → Cycles Render Devices
-Q19. C — Alt+Click selects an edge loop in Edit Mode
-Q20. C — Item tab shows location, rotation, scale, dimensions
-Q21. C — Sprite Fright used linked assets + per-shot files with collections
-Q22. B — Preferences → Input → Emulate Numpad
-Q23. C — Blue = Z axis (red=X, green=Y, blue=Z)
-Q24. C — Shift+axis excludes that axis, constraining to the perpendicular plane
+Q1.  B, F3 opens Search in Blender 4.x (Spacebar default changed to Play for animators)
+Q2.  B, G, Y constrains to world Y axis
+Q3.  B, Edit Mode modifies vertices, edges, faces of the selected mesh
+Q4.  D, Right-handed, Z-up
+Q5.  C, Numpad . frames the selected object
+Q6.  B, Eye icon = viewport visibility; camera icon = render visibility
+Q7.  C, Z opens the shading pie menu (Wireframe/Solid/Material Preview/Rendered)
+Q8.  C, G, X, X (double-tap axis) constrains to local axis
+Q9.  C, N opens/closes the N-Panel sidebar
+Q10. C, Modifier Properties (wrench icon)
+Q11. C, Material Preview uses HDRI without a full render
+Q12. D, Andrew Price (Blender Guru)
+Q13. C, Ctrl+A applies transforms in Object Mode
+Q14. C, Sprite Fright (2021) is the benchmark open movie
+Q15. B, The search bar filters objects by name in the Outliner
+Q16. C, Ctrl+Spacebar maximizes the active editor
+Q17. B, Tab from Object Mode enters Edit Mode
+Q18. C, Preferences → System → Cycles Render Devices
+Q19. C, Alt+Click selects an edge loop in Edit Mode
+Q20. C, Item tab shows location, rotation, scale, dimensions
+Q21. C, Sprite Fright used linked assets + per-shot files with collections
+Q22. B, Preferences → Input → Emulate Numpad
+Q23. C, Blue = Z axis (red=X, green=Y, blue=Z)
+Q24. C, Shift+axis excludes that axis, constraining to the perpendicular plane
 ```

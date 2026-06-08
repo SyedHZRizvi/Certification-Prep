@@ -57,7 +57,7 @@ D. To enable IPv6
 
 ---
 
-### Q7. A storage admin enables jumbo frames on the server NIC only — switch and storage device remain MTU 1500. The expected behavior is: *(Analyze)*
+### Q7. A storage admin enables jumbo frames on the server NIC only, switch and storage device remain MTU 1500. The expected behavior is: *(Analyze)*
 A. Massive performance increase
 B. Performance degradation and possibly black-holed connections (packets dropped)
 C. No change
@@ -85,7 +85,7 @@ D. Replace DNS
 A. L4 LB (no payload inspection)
 B. L7 LB with SSL termination / offload
 C. UDP balancer
-D. None — SSL cannot be terminated
+D. None, SSL cannot be terminated
 
 ---
 
@@ -115,7 +115,7 @@ D. Bypass routing
 
 ### Q14. A server has an IPv4 firewall rule for HTTPS but no IPv6 rule. After publishing AAAA records, some clients fail to reach the site. The cause: *(Analyze)*
 A. DNS broken
-B. **Missing IPv6 firewall rule** — IPv6 traffic blocked by default-deny
+B. **Missing IPv6 firewall rule**, IPv6 traffic blocked by default-deny
 C. Browser bug
 D. TLS handshake failure
 
@@ -195,7 +195,7 @@ D. SAS port failure
 
 ### Q24. GSLB performs load balancing at the level of: *(Understand)*
 A. Layer 2 frames
-B. DNS resolution — directing clients to different regional sites
+B. DNS resolution, directing clients to different regional sites
 C. ARP
 D. TCP retransmissions
 
@@ -212,7 +212,7 @@ D. Cannot fail over
 ### Q26. *Design exercise.* You are designing the network for one rack: 4 hypervisor hosts + 1 SAN + 1 pair of top-of-rack switches. Requirements: (a) no single NIC/switch failure should drop a host's network; (b) storage VLAN must reach line rate; (c) management traffic must not mix with production VLANs; (d) live migration must work between hosts without saturating production. Pick the design: *(Create)*
 
 A. Single switch, single NIC per host, default MTU, all VLANs collapsed into one
-B. **Pair of top-of-rack switches (MLAG)**; each host has 4× 25 GbE — two teamed via LACP for production trunk (VLANs 10, 20), two teamed via LACP for storage trunk (VLAN 30, MTU 9000); dedicated iDRAC port on VLAN 99; vMotion on its own VLAN 40 (MTU 9000)
+B. **Pair of top-of-rack switches (MLAG)**; each host has 4× 25 GbE, two teamed via LACP for production trunk (VLANs 10, 20), two teamed via LACP for storage trunk (VLAN 30, MTU 9000); dedicated iDRAC port on VLAN 99; vMotion on its own VLAN 40 (MTU 9000)
 C. One server with one NIC; cross-connect to SAN via crossover cable
 D. All NICs in failover mode only, single VLAN
 
@@ -248,7 +248,7 @@ L4 only sees the transport-layer 5-tuple.
 L7 parses the application protocol.
 
 ### Q10: **B. L7 LB with SSL termination / offload**
-SSL termination requires the LB to decrypt — by definition L7 (parses TLS handshake + app data).
+SSL termination requires the LB to decrypt, by definition L7 (parses TLS handshake + app data).
 
 ### Q11: **B. Distributes connections evenly across backends in order**
 Round-robin = fair, blind to backend load.
@@ -259,7 +259,7 @@ NDP replaces ARP in IPv6 (and adds router/prefix discovery).
 ### Q13: **B. Generate its own IPv6 address from a router-advertised prefix plus an interface identifier**
 SLAAC = stateless. Router advertises prefix; host generates the interface ID (EUI-64 or random).
 
-### Q14: **B. Missing IPv6 firewall rule — IPv6 traffic blocked by default-deny**
+### Q14: **B. Missing IPv6 firewall rule, IPv6 traffic blocked by default-deny**
 Most common dual-stack oversight. Always write IPv6 rules alongside IPv4.
 
 ### Q15: **B. A single 5-tuple flow hashes to one NIC; aggregation only spreads across multiple flows**
@@ -272,7 +272,7 @@ SET is the modern Windows teaming for Hyper-V converged designs (replaces LBFO f
 Kernel bonding is classic; teamd is the newer userspace alternative.
 
 ### Q18: **B. Skips STP listen/learn for server/edge-host ports, so the port forwards immediately after link-up**
-Without PortFast, a server waits ~30 seconds for STP convergence at boot — manifests as "DHCP failed" or "PXE boot timeout."
+Without PortFast, a server waits ~30 seconds for STP convergence at boot, manifests as "DHCP failed" or "PXE boot timeout."
 
 ### Q19: **B. Remote control via IP**
 Both are "managed" devices exposing per-port control over IP.
@@ -289,7 +289,7 @@ OOB is sacred. Never internet-exposed. Never on the same VLAN as production user
 ### Q23: **B. MTU mismatch somewhere in the path (server vs switch vs storage)**
 Storage symptoms after a network change → check MTU first.
 
-### Q24: **B. DNS resolution — directing clients to different regional sites**
+### Q24: **B. DNS resolution, directing clients to different regional sites**
 GSLB returns geo-aware DNS responses; it's an L7-conceptually-but-via-DNS solution.
 
 ### Q25: **B. Uses one NIC; the other is a hot standby and takes over if the primary dies**
@@ -323,4 +323,4 @@ Every requirement is satisfied: MLAG + cross-switch teaming = NIC/switch redunda
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Troubleshooting & Documentation](../Module-08-Troubleshooting/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Troubleshooting & Documentation](../Module-08-Troubleshooting/Reading.md)

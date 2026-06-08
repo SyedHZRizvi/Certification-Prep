@@ -17,7 +17,7 @@
 
 ---
 
-## 🎯 Endpoint Analytics — 5 Categories
+## 🎯 Endpoint Analytics, 5 Categories
 
 | Category | Measures |
 |----------|----------|
@@ -37,8 +37,8 @@ Baseline: 80+ across all (Microsoft recommended).
 
 Pair of PowerShell scripts:
 
-- **Detect** — exit 0 (compliant) or exit 1 (issue)
-- **Remediate** — runs only on exit 1
+- **Detect**, exit 0 (compliant) or exit 1 (issue)
+- **Remediate**, runs only on exit 1
 
 Microsoft-published + custom.
 
@@ -100,18 +100,18 @@ Contains:
 
 ---
 
-## 🔎 Advanced Hunting (Plan 2) — KQL
+## 🔎 Advanced Hunting (Plan 2), KQL
 
 Common tables:
 
-- `DeviceProcessEvents` — process creates
-- `DeviceFileEvents` — file ops
-- `DeviceLogonEvents` — logons
-- `DeviceNetworkEvents` — connections
-- `DeviceRegistryEvents` — registry
-- `DeviceImageLoadEvents` — DLL loads
-- `DeviceEvents` — Defender alerts
-- `DeviceInfo` — inventory
+- `DeviceProcessEvents`, process creates
+- `DeviceFileEvents`, file ops
+- `DeviceLogonEvents`, logons
+- `DeviceNetworkEvents`, connections
+- `DeviceRegistryEvents`, registry
+- `DeviceImageLoadEvents`, DLL loads
+- `DeviceEvents`, Defender alerts
+- `DeviceInfo`, inventory
 
 Example:
 ```kusto
@@ -172,7 +172,7 @@ Cover the answers, recite:
 
 1. 5 Endpoint Analytics categories? ___
 2. Proactive remediation = ? + ? scripts (which plan?) ___
-3. MDM Diagnostics report — where to generate? ___
+3. MDM Diagnostics report, where to generate? ___
 4. Wipe vs Retire vs Fresh Start vs Autopilot Reset? ___
 5. Tool to debug "user blocked by Conditional Access"? ___
 

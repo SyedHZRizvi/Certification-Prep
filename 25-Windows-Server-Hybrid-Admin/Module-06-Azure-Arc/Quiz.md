@@ -70,7 +70,7 @@ D. Spinnaker
 
 ---
 
-### Q9. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q9. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** The Connected Machine agent requires inbound ports for management.
 **S2:** Arc-enabled servers can be governed by Azure Policy assigned at a management group.
@@ -93,7 +93,7 @@ D. Hyper-V Replica
 
 ### Q11. Run Command on Arc-enabled servers: *(Understand)*
 A. Requires inbound RDP/SSH
-B. Uses the Connected Machine agent — no inbound ports needed
+B. Uses the Connected Machine agent, no inbound ports needed
 C. Is unsupported
 D. Replaces Group Policy
 
@@ -115,7 +115,7 @@ D. Email script to each admin
 
 ---
 
-### Q14. **Yes/No** — Mark each statement. *(Analyze)*
+### Q14. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** Arc-enabled SQL Managed Instance runs in Kubernetes (Arc-enabled K8s as the host).
 **S2:** Azure Monitor Agent (AMA) can be installed on Arc machines via Azure Policy.
@@ -176,7 +176,7 @@ D. Azure DevOps Agent
 
 ---
 
-### Q20. **Yes/No** — Update Management. *(Apply)*
+### Q20. **Yes/No**, Update Management. *(Apply)*
 
 **S1:** Update Management center supports pre/post scripts via Azure Automation.
 **S2:** Maintenance configurations support cron-style recurring schedules.
@@ -213,7 +213,7 @@ D. A management group
 
 ---
 
-### Q24. **Yes/No** — Mark each statement. *(Analyze)*
+### Q24. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** Arc-enabled K8s requires an internet-facing API server.
 **S2:** Defender for Containers can scan images in an Arc-enabled K8s cluster.
@@ -248,7 +248,7 @@ D. `Resolve-DnsName`
 Distinct from Azure VMs (`Microsoft.Compute/virtualMachines`). Both can be governed by Azure Policy.
 
 ### Q2: **A. Outbound HTTPS (443) only**
-Memorize this — Arc agent has no inbound port requirements. This is the security headline.
+Memorize this, Arc agent has no inbound port requirements. This is the security headline.
 
 ### Q3: **C. DeployIfNotExists (DINE)**
 DINE auto-installs resources when conditions are met. The standard pattern for Arc automation.
@@ -257,7 +257,7 @@ DINE auto-installs resources when conditions are met. The standard pattern for A
 Least-privilege built-in role. Owner/Contributor are too broad; Reader can't create.
 
 ### Q5: **B. Any Kubernetes distribution**
-Arc-enabled K8s works with any conformant K8s — AKS, EKS, GKE, OpenShift, K3s, RKE, kubeadm clusters.
+Arc-enabled K8s works with any conformant K8s, AKS, EKS, GKE, OpenShift, K3s, RKE, kubeadm clusters.
 
 ### Q6: **B. Azure VMs + Arc-enabled servers (Windows + Linux)**
 Update Management center is unified across both.
@@ -274,7 +274,7 @@ S1 wrong (outbound only). S2 and S3 correct.
 ### Q10: **B. The Azure Arc connector for VMware vCenter**
 Native Arc support for VMware projects ESXi VMs into Azure.
 
-### Q11: **B. Uses the Connected Machine agent — no inbound ports needed**
+### Q11: **B. Uses the Connected Machine agent, no inbound ports needed**
 Run Command works over the agent's outbound channel.
 
 ### Q12: **B. Apply the policy to existing resources that were non-compliant before assignment**
@@ -302,7 +302,7 @@ MG-level policy inheritance is the scale answer.
 The Windows service backing the Connected Machine agent.
 
 ### Q20: **A. Yes / Yes / No**
-S1 and S2 correct. S3 wrong — Update Management does Azure VMs too.
+S1 and S2 correct. S3 wrong, Update Management does Azure VMs too.
 
 ### Q21: **A. The Connected Machine agent status (Connected / Offline / Expired)**
 The first sanity check. Other layers depend on the agent.
@@ -314,7 +314,7 @@ Different endpoints; the `--cloud` parameter selects them.
 Initiatives bundle policies for easier mgmt at scale.
 
 ### Q24: **A. No / Yes / Yes**
-S1 wrong (Arc K8s agent runs in-cluster, outbound only — no internet-facing API needed). S2 and S3 correct.
+S1 wrong (Arc K8s agent runs in-cluster, outbound only, no internet-facing API needed). S2 and S3 correct.
 
 ### Q25: **C. Consistent set: `env`, `owner`, `costcenter` (minimum)**
 The Microsoft IT-recommended minimum tag set for governance at scale.
@@ -336,12 +336,12 @@ The Microsoft IT-recommended minimum tag set for governance at scale.
 ## 🃏 Add To Your Flashcards
 
 - Arc-enabled servers = `Microsoft.HybridCompute/machines`
-- Outbound 443 only — no inbound ports
+- Outbound 443 only, no inbound ports
 - Connected Machine Onboarding = least-privilege role
 - DINE = Deploy-If-Not-Exists; remediation task for existing non-compliant
 - ESU via Arc for Windows 2012 R2 past Oct 2026
 - Arc-enabled K8s works with ANY K8s (Flux v2 GitOps)
-- Run Command via agent — no inbound port
+- Run Command via agent, no inbound port
 - Onboard at scale via GPO (Windows) or Ansible (Linux)
 - HIMDS = Azure Hybrid Instance Metadata Service (Windows service name)
 - Apply Policy at MG scope for sub-wide auto-inheritance

@@ -1,9 +1,9 @@
 ---
 permalink: /35-Motion-Graphics-UI-Animation/Module-08-Social-Media-Animation/Videos/
-title: "Module 8: Videos — Social Media Animation"
+title: "Module 8: Videos, Social Media Animation"
 ---
 
-# 🎬 Module 8 Videos — Social Media Animation
+# 🎬 Module 8 Videos, Social Media Animation
 
 ---
 
@@ -14,7 +14,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+instagram+reels+9x16+setup+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3YJXQbFE1Ro/mqdefault.jpg" alt="AE Instagram Reels Setup" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">After Effects Instagram Reels Setup — 9:16 Composition Guide</div>
+    <div class="vg-card-title">After Effects Instagram Reels Setup, 9:16 Composition Guide</div>
     <div class="vg-card-meta">School of Motion · Specs, safe zones, compression for IG Reels</div>
   </div>
 </a>
@@ -30,7 +30,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=tiktok+video+specs+export+settings+2024+2025">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/FV4d_hGbZGQ/mqdefault.jpg" alt="TikTok Video Specs" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">TikTok and Reels Video Export Settings — Compression Guide</div>
+    <div class="vg-card-title">TikTok and Reels Video Export Settings, Compression Guide</div>
     <div class="vg-card-meta">Mobox Graphics · H.264 settings, bitrate, audio for social platforms</div>
   </div>
 </a>
@@ -54,7 +54,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=youtube+thumbnail+ab+testing+CTR+strategy+2024">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/N2ELLEZmRBE/mqdefault.jpg" alt="YouTube Thumbnail A/B Test" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">YouTube Thumbnail A/B Testing — CTR Strategy Guide</div>
+    <div class="vg-card-title">YouTube Thumbnail A/B Testing, CTR Strategy Guide</div>
     <div class="vg-card-meta">YouTube Creators · Native thumbnail testing in YouTube Studio</div>
   </div>
 </a>
@@ -62,7 +62,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+mobile+first+multiple+aspect+ratio+workflow">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/PH5FJt22oJA/mqdefault.jpg" alt="Mobile First AE Workflow" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Mobile-First Animation Workflow — 9:16 to Multi-Format</div>
+    <div class="vg-card-title">Mobile-First Animation Workflow, 9:16 to Multi-Format</div>
     <div class="vg-card-meta">School of Motion · Essential Graphics Panel for multiple aspect ratios</div>
   </div>
 </a>
@@ -78,7 +78,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" data-video-id="9bZkp7q19f0" href="https://www.youtube.com/results?search_query=hook+social+media+video+first+3+seconds+motion+design">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/uRDzRi5O7J0/mqdefault.jpg" alt="Social Video Hook" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">The 3-Second Hook — Designing for Social Video Attention</div>
+    <div class="vg-card-title">The 3-Second Hook, Designing for Social Video Attention</div>
     <div class="vg-card-meta">Motion Designblast · Opening frame strategy for maximum retention</div>
   </div>
 </a>
@@ -94,7 +94,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=linkedin+video+animation+b2b+content+strategy">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/8N2_Z2g_PFg/mqdefault.jpg" alt="LinkedIn Video Animation" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">LinkedIn Video Animation — B2B Motion Content Strategy</div>
+    <div class="vg-card-title">LinkedIn Video Animation, B2B Motion Content Strategy</div>
     <div class="vg-card-meta">School of Motion · LinkedIn specs, audience expectations, B2B tone</div>
   </div>
 </a>
@@ -102,7 +102,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=youtube+shorts+animation+tutorial+60+second+format">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/X2s_J6kMSwk/mqdefault.jpg" alt="YouTube Shorts Animation" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">YouTube Shorts Animation — Optimizing for the 60-Second Format</div>
+    <div class="vg-card-title">YouTube Shorts Animation, Optimizing for the 60-Second Format</div>
     <div class="vg-card-meta">Motion Design School · Shorts-specific design and pacing strategy</div>
   </div>
 </a>
@@ -118,7 +118,7 @@ title: "Module 8: Videos — Social Media Animation"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+media+encoder+social+media+export+presets">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/r7RXMZ_fEOM/mqdefault.jpg" alt="Media Encoder Presets" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Adobe Media Encoder — Custom Presets for Every Social Platform</div>
+    <div class="vg-card-title">Adobe Media Encoder, Custom Presets for Every Social Platform</div>
     <div class="vg-card-meta">Motion Array · Building and saving export presets for all platforms</div>
   </div>
 </a>

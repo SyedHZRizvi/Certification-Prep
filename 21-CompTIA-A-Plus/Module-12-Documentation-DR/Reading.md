@@ -13,37 +13,37 @@
 
 Meet Aleksandra. She's the head of IT at a 53-year-old machine-tools manufacturer in Pittsburgh. The company makes precision parts for the aerospace industry. The CAD/CAM systems holding 50 years of proprietary tooling designs run on Windows Server 2019 with SQL Server. Backups go to a Veeam appliance in the same building, replicated nightly to AWS S3 in `us-east-2` (Ohio).
 
-On a Friday evening in February, the production VLAN catches a ransomware infection — Lockbit 3.0. The variant encrypts files on attached drives, including the on-prem Veeam backups (Veeam's "Insider Protection" wasn't enabled). The company's production CAD/CAM data, plus 50 years of designs, are encrypted.
+On a Friday evening in February, the production VLAN catches a ransomware infection, Lockbit 3.0. The variant encrypts files on attached drives, including the on-prem Veeam backups (Veeam's "Insider Protection" wasn't enabled). The company's production CAD/CAM data, plus 50 years of designs, are encrypted.
 
 Saturday morning. Aleksandra activates her DR plan. She:
 
-1. **Verifies the S3 backup is intact** — versioning enabled, MFA-delete required for deletion. The attacker couldn't reach it. Last full backup: Friday at 4:00 a.m., before infection.
-2. **Spins up replacement infrastructure** — fresh Windows Server 2022 VMs on AWS EC2 (per her runbook). Restores SQL backups + file shares from S3.
-3. **Validates** — runs the documented "smoke test" procedure: open 5 representative CAD files, query 10 representative SQL records, confirm checksums match.
-4. **Rebuilds the on-prem environment** — reimage every desktop and server; restore from clean cloud baseline.
-5. **Cutover** — production resumes Monday morning, ~60 hours after infection. Loss: roughly 14 hours of work (Friday afternoon between 4 a.m. backup and 6 p.m. detection).
+1. **Verifies the S3 backup is intact**, versioning enabled, MFA-delete required for deletion. The attacker couldn't reach it. Last full backup: Friday at 4:00 a.m., before infection.
+2. **Spins up replacement infrastructure**, fresh Windows Server 2022 VMs on AWS EC2 (per her runbook). Restores SQL backups + file shares from S3.
+3. **Validates**, runs the documented "smoke test" procedure: open 5 representative CAD files, query 10 representative SQL records, confirm checksums match.
+4. **Rebuilds the on-prem environment**, reimage every desktop and server; restore from clean cloud baseline.
+5. **Cutover**, production resumes Monday morning, ~60 hours after infection. Loss: roughly 14 hours of work (Friday afternoon between 4 a.m. backup and 6 p.m. detection).
 
 She lost no orders. No customer was angry. The company's insurance covered the ~$45K of cloud infrastructure cost. The CEO ordered champagne for the team.
 
-The reason this worked? **Documentation.** Aleksandra's DR plan — written 9 months earlier, *tested in October* with a tabletop exercise, *partially tested in November* with a real S3-restore drill — turned a catastrophic event into a 60-hour inconvenience.
+The reason this worked? **Documentation.** Aleksandra's DR plan written 9 months earlier, *tested in October* with a tabletop exercise, *partially tested in November* with a real S3-restore drill turned a catastrophic event into a 60-hour inconvenience.
 
 This module teaches you to be Aleksandra. Documentation. Tested backups. DR planning. Ticketing discipline. These are the highest-leverage skills in IT.
 
 ---
 
-## 🎫 Ticketing — The Backbone of Help Desk
+## 🎫 Ticketing, The Backbone of Help Desk
 
 Every IT interaction with a user should generate a ticket. The ticket is *the* communication artifact between IT, users, and management.
 
 ### Ticket lifecycle (ITIL-style)
 
 ```
-1. NEW           — user creates / IT logs
-2. ASSIGNED      — to a tech / queue
-3. IN PROGRESS   — being worked
-4. PENDING       — waiting on user / vendor
-5. RESOLVED      — IT believes complete
-6. CLOSED        — user confirms (or timer expires)
+1. NEW          , user creates / IT logs
+2. ASSIGNED     , to a tech / queue
+3. IN PROGRESS  , being worked
+4. PENDING      , waiting on user / vendor
+5. RESOLVED     , IT believes complete
+6. CLOSED       , user confirms (or timer expires)
 ```
 
 ### Required fields
@@ -73,8 +73,8 @@ Every IT interaction with a user should generate a ticket. The ticket is *the* c
 
 ### SLAs
 
-- **Response time** — when IT acknowledges
-- **Resolution time** — when issue is fixed
+- **Response time**, when IT acknowledges
+- **Resolution time**, when issue is fixed
 - Tracked per priority; usually contractual for managed-service providers
 
 ---
@@ -118,28 +118,28 @@ Procurement → Receipt → Provisioning → Deployment → Use → Maintenance 
 
 ### Disposal
 
-- **Wipe** before disposing — DBAN, dd, vendor secure-erase, or per NIST SP 800-88
+- **Wipe** before disposing, DBAN, dd, vendor secure-erase, or per NIST SP 800-88
 - **Physical destruction** for high-classification data (drill, shred, degauss for HDD)
-- Recycle responsibly — R2 / e-Stewards certified recyclers
+- Recycle responsibly, R2 / e-Stewards certified recyclers
 - Document the disposal (asset tag, date, method, certificate of destruction)
 
 ---
 
-## 🔄 Change Management — Deep Dive
+## 🔄 Change Management, Deep Dive
 
 (Recap of Module 10, plus deeper detail.)
 
 ### Change request workflow
 
 1. **Submit RFC** with required fields (impact, risk, rollback, test results)
-2. **Technical review** — engineering / security weigh in
+2. **Technical review**, engineering / security weigh in
 3. **CAB approval** (or pre-approval for Standard)
-4. **Schedule** — assign maintenance window
-5. **Communicate** — notify stakeholders (impacted users)
-6. **Implement** — per documented procedure
-7. **Verify** — post-change test
-8. **Document** — update KB, CMDB, runbook
-9. **PIR (Post-Implementation Review)** — for high-impact changes
+4. **Schedule**, assign maintenance window
+5. **Communicate**, notify stakeholders (impacted users)
+6. **Implement**, per documented procedure
+7. **Verify**, post-change test
+8. **Document**, update KB, CMDB, runbook
+9. **PIR (Post-Implementation Review)**, for high-impact changes
 
 ### Backout plan must include
 
@@ -152,11 +152,11 @@ Procurement → Receipt → Provisioning → Deployment → Use → Maintenance 
 ### Communication template (change announcement)
 
 ```
-SUBJECT: [Change Notification] [Brief description] — [date/time]
+SUBJECT: [Change Notification] [Brief description], [date/time]
 
 WHAT IS CHANGING: ...
 WHY: ...
-WHEN: [Start] — [End], [Maintenance window]
+WHEN: [Start], [End], [Maintenance window]
 IMPACT: Who/what is affected; expected downtime
 WHO TO CONTACT: ...
 REFERENCE: Change ticket #1234
@@ -201,10 +201,10 @@ Modern variant: **3-2-1-1-0**
 
 ### Recovery objectives
 
-- **RPO (Recovery Point Objective)** — maximum acceptable data loss. "We backup nightly" = 24-hour RPO.
-- **RTO (Recovery Time Objective)** — maximum acceptable downtime. "Restore from tape" = 4–24 hr RTO; "Hot standby site" = minutes.
-- **MTBF (Mean Time Between Failures)** — average lifetime of a component
-- **MTTR (Mean Time To Recovery / Repair)** — how long to fix when it breaks
+- **RPO (Recovery Point Objective)**, maximum acceptable data loss. "We backup nightly" = 24-hour RPO.
+- **RTO (Recovery Time Objective)**, maximum acceptable downtime. "Restore from tape" = 4–24 hr RTO; "Hot standby site" = minutes.
+- **MTBF (Mean Time Between Failures)**, average lifetime of a component
+- **MTTR (Mean Time To Recovery / Repair)**, how long to fix when it breaks
 
 🎯 **Exam pattern:** *"Business requires RPO of 1 hour"* → backup every hour. *"RTO of 5 minutes"* → hot site / clustered failover.
 
@@ -220,14 +220,14 @@ Modern variant: **3-2-1-1-0**
 
 ### Cloud DR variants
 
-- **Pilot light** — minimal core infra running in cloud; scale up on DR event
-- **Warm standby** — scaled-down full environment in cloud
-- **Multi-site active-active** — full traffic split, instant failover
+- **Pilot light**, minimal core infra running in cloud; scale up on DR event
+- **Warm standby**, scaled-down full environment in cloud
+- **Multi-site active-active**, full traffic split, instant failover
 
 ### BCP vs DR
 
-- **Business Continuity Plan (BCP)** — keep the business operating during disruption (broader; includes people, premises, IT)
-- **Disaster Recovery (DR)** — restore IT systems specifically (subset of BCP)
+- **Business Continuity Plan (BCP)**, keep the business operating during disruption (broader; includes people, premises, IT)
+- **Disaster Recovery (DR)**, restore IT systems specifically (subset of BCP)
 - BCP includes manual workarounds if IT is down
 
 ---
@@ -238,11 +238,11 @@ Untested backups are *unknown-good* backups. Many orgs find they can't restore u
 
 ### Testing types
 
-1. **Tabletop exercise** — discussion-only walkthrough of a scenario
-2. **Walkthrough** — physically step through procedures (don't actually restore)
-3. **Partial restore test** — restore a sample file or VM to a sandbox
-4. **Full DR drill** — simulate disaster, restore the production-grade environment to a DR location
-5. **Parallel run** — run DR site alongside production for a period
+1. **Tabletop exercise**, discussion-only walkthrough of a scenario
+2. **Walkthrough**, physically step through procedures (don't actually restore)
+3. **Partial restore test**, restore a sample file or VM to a sandbox
+4. **Full DR drill**, simulate disaster, restore the production-grade environment to a DR location
+5. **Parallel run**, run DR site alongside production for a period
 
 Best practice: **at least one tabletop per year + one partial restore per quarter + one full drill annually**.
 
@@ -267,19 +267,19 @@ Modern ransomware specifically targets backups. The 2024 trend: attackers spend 
 > **Scenario:** A small accounting firm has a Veeam backup appliance in their server room and replicates nightly to a Backblaze B2 cloud bucket. Their RPO is 24 hours; RTO is 8 hours. On Monday at 6 a.m. they discover ransomware encrypted the production file server overnight. The Veeam appliance was also encrypted (it was accessible from the file server's admin account).
 
 **Walkthrough:**
-1. **Identify** — Ransomware on file server. Local backup compromised. Cloud backup status unknown.
-2. **Theory** — Cloud B2 with versioning enabled should be intact. Restore from there.
-3. **Test** — Log into B2 console. Verify versions of the latest backup file exist before the infection timestamp. Confirm bucket-level Object Lock is enabled.
-4. **Plan** —
+1. **Identify**, Ransomware on file server. Local backup compromised. Cloud backup status unknown.
+2. **Theory**, Cloud B2 with versioning enabled should be intact. Restore from there.
+3. **Test**, Log into B2 console. Verify versions of the latest backup file exist before the infection timestamp. Confirm bucket-level Object Lock is enabled.
+4. **Plan**
    - Wipe file server hard drives
    - Reinstall OS clean
    - Restore most recent pre-infection backup from B2
    - Rebuild Veeam appliance separately (and put it in a separate auth domain this time!)
    - Validate restored data
-5. **Verify** — Sample 10 random files, open them, confirm checksums match. User acceptance test.
-6. **Document** — Full incident report. Lessons learned: (a) backup server must use separate credentials, (b) immutability must be ON on local backups too, (c) consider air-gapped tape.
+5. **Verify**, Sample 10 random files, open them, confirm checksums match. User acceptance test.
+6. **Document**, Full incident report. Lessons learned: (a) backup server must use separate credentials, (b) immutability must be ON on local backups too, (c) consider air-gapped tape.
 
-This is the modern ransomware reality — local backups are the *first target*. Without cloud immutability, this firm would be paying ransom or going out of business.
+This is the modern ransomware reality, local backups are the *first target*. Without cloud immutability, this firm would be paying ransom or going out of business.
 
 ---
 
@@ -291,7 +291,7 @@ This is the modern ransomware reality — local backups are the *first target*. 
 | "Cloud backup is automatic and infallible" | Cloud backup needs configuration, testing, monitoring like any backup. |
 | "If I never test, it's still backed up" | Untested backups are unknown-good. Test quarterly minimum. |
 | "Incremental backup is always best" | Slow restore. Differential = compromise. Synthetic full = modern best of both. |
-| "Hot site = warm site = cold site" | NO — minutes / hours / days RTO respectively. |
+| "Hot site = warm site = cold site" | NO, minutes / hours / days RTO respectively. |
 | "BCP and DR are the same" | BCP is broader (whole business); DR is IT-specific subset. |
 | "Documentation slows down work" | Documentation prevents the same work being done twice (or wrong). |
 | "Backup admin can use the same AD account as the file admin" | If file admin is compromised, backups go too. Separate auth domain. |
@@ -338,18 +338,18 @@ This is the modern ransomware reality — local backups are the *first target*. 
 
 ---
 
-## 📊 Case Study — The Maersk NotPetya Wipeout (2017)
+## 📊 Case Study, The Maersk NotPetya Wipeout (2017)
 
-**Situation.** On June 27, 2017, the **NotPetya** wiper malware — masquerading as ransomware, originating from a compromised Ukrainian tax-software update (ME-Doc) — spread globally in hours. A.P. Møller-Maersk, the world's largest container shipping company, was hit hard. Within 7 minutes of the first infected machine connecting to Maersk's global network, **45,000 Windows PCs and 4,000 servers** were destroyed worldwide. Active Directory domain controllers across 130 countries — gone. Every Maersk port terminal globally — gone dark.
+**Situation.** On June 27, 2017, the **NotPetya** wiper malware masquerading as ransomware, originating from a compromised Ukrainian tax-software update (ME-Doc) spread globally in hours. A.P. Møller-Maersk, the world's largest container shipping company, was hit hard. Within 7 minutes of the first infected machine connecting to Maersk's global network, **45,000 Windows PCs and 4,000 servers** were destroyed worldwide. Active Directory domain controllers across 130 countries gone. Every Maersk port terminal globally gone dark.
 
-**The DR detail.** Maersk's backups existed but were *connected to Active Directory for authentication*. With AD destroyed, Maersk couldn't restore *anything* — the backup servers themselves needed AD to be reachable. They had no air-gapped or domain-independent backup of the AD forest itself.
+**The DR detail.** Maersk's backups existed but were *connected to Active Directory for authentication*. With AD destroyed, Maersk couldn't restore *anything*, the backup servers themselves needed AD to be reachable. They had no air-gapped or domain-independent backup of the AD forest itself.
 
 Maersk's saving grace: **a single domain controller in Lagos, Nigeria** had been offline due to a regional power outage during the attack. That one DC, restored physically to HQ Copenhagen, contained the seed needed to rebuild the entire AD forest. Without that lucky power outage, Maersk would have lost everything.
 
-**Decision and outcome.** Maersk took **10 days** to restore terminal operations (using manual workarounds — paper, phone — in between). Estimated cost: **$250–300M**. Maersk's response: rebuilt every domain controller, deployed segmented backups in cloud (Azure), implemented air-gapped backups of critical AD forest, partnered with [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/en-us/security/blog/2019/03/27/dart-the-microsoft-incident-response-team/) for incident-response retainer.
+**Decision and outcome.** Maersk took **10 days** to restore terminal operations (using manual workarounds paper, phone in between). Estimated cost: **$250–300M**. Maersk's response: rebuilt every domain controller, deployed segmented backups in cloud (Azure), implemented air-gapped backups of critical AD forest, partnered with [Microsoft Detection and Response Team (DART)](https://www.microsoft.com/en-us/security/blog/2019/03/27/dart-the-microsoft-incident-response-team/) for incident-response retainer.
 
 **Lesson for the exam / for practitioners.**
-- **Backups must survive the disaster they protect against.** If your backups need your production environment to restore, they're not backups — they're optimism.
+- **Backups must survive the disaster they protect against.** If your backups need your production environment to restore, they're not backups, they're optimism.
 - **Active Directory itself needs a recovery strategy.** AD forest recovery is its own discipline; assume it'll happen.
 - **DR plans must consider scenarios where "everything" is gone.** The Maersk case is the modern worst-case.
 
@@ -372,14 +372,14 @@ You now know:
 - 📍 RPO / RTO + MTBF / MTTR
 - 🏔️ Hot / Warm / Cold DR sites + cloud DR variants
 - 🛡️ Ransomware-resilient backups: immutable, air-gapped, MFA-delete
-- 🧪 Backup testing — tabletop, partial, full drill
+- 🧪 Backup testing, tabletop, partial, full drill
 
 **Next steps:**
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🧪 Take **Practice Exam 2** in the [Practice-Exams/](../Practice-Exams/Practice-Exam-2.md) folder
-5. 🏆 When ready: **[Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)** — 90 questions, 90 minutes, real format
+5. 🏆 When ready: **[Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)**, 90 questions, 90 minutes, real format
 
 > **Where this leads.**
 > - You've now covered the entire A+ syllabus.
@@ -390,16 +390,16 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 NIST SP 800-34 Rev 1 — Contingency Planning Guide for Federal Information Systems
-- 📄 NIST SP 800-184 — Guide for Cybersecurity Event Recovery
-- 📄 ISO/IEC 22301:2019 — Business continuity management systems
-- 📄 ITIL 4 — Service management practices
+- 📄 NIST SP 800-34 Rev 1, Contingency Planning Guide for Federal Information Systems
+- 📄 NIST SP 800-184, Guide for Cybersecurity Event Recovery
+- 📄 ISO/IEC 22301:2019, Business continuity management systems
+- 📄 ITIL 4, Service management practices
 
 **Case-study sources:**
-- 📄 Andy Greenberg, *Sandworm* (Doubleday, 2019) — definitive book on NotPetya & Maersk
-- 📄 [Maersk CISO Adam Banks, RSAC 2018 keynote](https://www.rsaconference.com/) — first-hand recovery story
+- 📄 Andy Greenberg, *Sandworm* (Doubleday, 2019), definitive book on NotPetya & Maersk
+- 📄 [Maersk CISO Adam Banks, RSAC 2018 keynote](https://www.rsaconference.com/), first-hand recovery story
 
 **Practitioner / exam:**
 - 📖 [Professor Messer 220-1102 final review](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video-training-course/)
-- 📖 Veeam, Acronis, Commvault — vendor docs on backup best practices
-- 📖 *The DevOps Handbook* — modern operational excellence
+- 📖 Veeam, Acronis, Commvault, vendor docs on backup best practices
+- 📖 *The DevOps Handbook*, modern operational excellence

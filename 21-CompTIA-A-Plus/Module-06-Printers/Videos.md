@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Laser Printers — 7-Step Process</p>
+      <p class="vg-title">Laser Printers, 7-Step Process</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 11 min · Memorize this</span>
     </div>
@@ -144,5 +144,5 @@
 1. Recite the 7 steps of laser printing IN ORDER.
 2. What's the difference between direct thermal and thermal transfer printing?
 3. Name 3 causes of a "printer offline" status in Windows.
-4. USB-C and Thunderbolt share a connector — what's the practical difference?
+4. USB-C and Thunderbolt share a connector, what's the practical difference?
 5. Difference between AirPrint and Mopria?

@@ -1,6 +1,6 @@
 # 📋 Module 6 Cheat Sheet: Security, Identity & Compliance
 
-> One page. Print it. Tape it to your monitor. 30% of the exam — review DAILY.
+> One page. Print it. Tape it to your monitor. 30% of the exam, review DAILY.
 
 ---
 
@@ -35,7 +35,7 @@
 | **Root** | Lock with MFA. Daily tasks NEVER. |
 | **User** | Long-lived identity (human or legacy app) |
 | **Group** | Bucket of users sharing policies |
-| **Role** | Temporary creds — EC2 → S3, cross-account, federation |
+| **Role** | Temporary creds, EC2 → S3, cross-account, federation |
 | **Policy** | JSON Allow/Deny rules |
 
 Rules:
@@ -53,7 +53,7 @@ Rules:
 
 - Multi-account mgmt + **consolidated billing** + volume discounts
 - **SCPs** = guardrails (max permissions) at OU/account level
-- **Don't** grant — they constrain
+- **Don't** grant, they constrain
 
 ---
 
@@ -100,13 +100,13 @@ Rules:
 
 ## 🌍 Compliance Programs (alphabet soup)
 
-- **SOC 1/2/3** — auditor reports
-- **ISO 27001 / 27017 / 27018** — international security
-- **PCI DSS** — payment cards
-- **HIPAA** — US healthcare
-- **FedRAMP** Moderate / High — US federal
-- **GDPR** — EU data protection
-- **NIST 800-53** — US federal controls
+- **SOC 1/2/3**, auditor reports
+- **ISO 27001 / 27017 / 27018**, international security
+- **PCI DSS**, payment cards
+- **HIPAA**, US healthcare
+- **FedRAMP** Moderate / High, US federal
+- **GDPR**, EU data protection
+- **NIST 800-53**, US federal controls
 
 ---
 
@@ -123,7 +123,7 @@ Rules:
 
 Wrong:
 ❌ "Patch RDS OS yourself" (AWS does it)
-❌ "Skip patching EC2 OS — AWS handles it" (you do)
+❌ "Skip patching EC2 OS, AWS handles it" (you do)
 ❌ "Use root user for daily work"
 ❌ "Disable MFA on the root user"
 ❌ "GuardDuty blocks attacks" (it detects; you block)
@@ -153,9 +153,9 @@ Wrong:
 
 ## ✏️ Quick Self-Check
 
-1. Shared Responsibility — 3 customer, 3 AWS items? ___
+1. Shared Responsibility, 3 customer, 3 AWS items? ___
 2. IAM Role vs User? ___
-3. GuardDuty / Macie / Inspector — one-liner each? ___
+3. GuardDuty / Macie / Inspector, one-liner each? ___
 4. KMS vs CloudHSM? ___
 5. CloudTrail vs Config? ___
 

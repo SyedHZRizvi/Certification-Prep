@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The Mom Test — Discovery Question Patterns</p>
+      <p class="vg-title">The Mom Test, Discovery Question Patterns</p>
       <p class="vg-creator">Various book summaries</p>
       <span class="vg-duration">⏱ 15 min · How to ask without leading</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Pricing + Offer Tiers — Hormozi Framework</p>
+      <p class="vg-title">Pricing + Offer Tiers, Hormozi Framework</p>
       <p class="vg-creator">Alex Hormozi</p>
       <span class="vg-duration">⏱ 12 min · How to think about pricing</span>
     </div>

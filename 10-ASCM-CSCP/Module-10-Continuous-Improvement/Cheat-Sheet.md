@@ -4,7 +4,7 @@
 
 ---
 
-## 🚛 Lean — TIMWOOD(S)
+## 🚛 Lean, TIMWOOD(S)
 
 - **T**ransportation
 - **I**nventory
@@ -13,7 +13,7 @@
 - **O**verproduction
 - **O**ver-processing
 - **D**efects
-- (**S**kills underused — 8th)
+- (**S**kills underused, 8th)
 
 ### Lean 5 Principles (Womack & Jones)
 Value → Value Stream → Flow → Pull → Perfection
@@ -48,7 +48,7 @@ Yellow → Green → Black → Master Black Belt → Champion / Sponsor
 2. **Exploit** the constraint
 3. **Subordinate** everything else to it
 4. **Elevate** the constraint
-5. **Repeat** — new constraint emerges
+5. **Repeat**, new constraint emerges
 
 ### Throughput Accounting
 - T = Revenue − truly variable costs

@@ -1,10 +1,10 @@
 # Module 7: Operating Systems (Windows / macOS / Linux) 💻
 
-> **Why this module matters:** OS is **31% of the 220-1102 (Core 2) exam** — the *single largest domain* across both A+ exams. About 28 questions. Every help-desk role tests OS judgment in the interview. You will install, configure, command-line, and debug Windows for the rest of your career; macOS for a meaningful fraction; Linux if you go into server, cloud, or DevOps.
+> **Why this module matters:** OS is **31% of the 220-1102 (Core 2) exam**, the *single largest domain* across both A+ exams. About 28 questions. Every help-desk role tests OS judgment in the interview. You will install, configure, command-line, and debug Windows for the rest of your career; macOS for a meaningful fraction; Linux if you go into server, cloud, or DevOps.
 
 > **Prerequisites for this module.** You need:
 > - Module 2 (networking, ports)
-> - Module 3 (hardware basics — boot devices, TPM, UEFI)
+> - Module 3 (hardware basics, boot devices, TPM, UEFI)
 > - Module 5 (troubleshooting methodology)
 >
 > Hands-on suggestion: spin up a Windows 11 VM, a Linux Ubuntu VM, and (if you have a Mac) explore Terminal. 30 minutes in each = an enormous payoff for this module.
@@ -15,7 +15,7 @@
 
 Meet Wei. She's a junior sysadmin at a mid-size manufacturing firm. The company is replacing 380 Windows 10 PCs with Windows 11 over a long weekend. The plan: image each PC from a USB stick, restore user files from a cloud-managed user-profile redirect, validate, ship to the next floor. Estimated 24-person tech team, 60 hours of work.
 
-Saturday afternoon — they're on track. Sunday afternoon — slowing down. **Sunday at 11:55 p.m.** — Wei runs the imaging tool against PC #312 and gets:
+Saturday afternoon they're on track. Sunday afternoon slowing down. **Sunday at 11:55 p.m.**, Wei runs the imaging tool against PC #312 and gets:
 
 > *"This PC does not meet the minimum requirements to install Windows 11."*
 
@@ -23,15 +23,15 @@ She checks the spec. 8th-gen i5, 16 GB RAM, 512 GB SSD. Should be fine. She runs
 
 The PC has TPM 2.0 on its motherboard (Wei verifies in the spec sheet), but it's *disabled in BIOS*. She enters UEFI setup, flips TPM from "Disabled" to "Enabled", flips Boot mode from "Legacy + UEFI" to "UEFI only", enables Secure Boot. Saves. Reboots. The old Windows 10 install won't boot (MBR doesn't work with UEFI-only).
 
-11:58 p.m. — She has to convert the disk from MBR to GPT. `mbr2gpt.exe /convert /allowFullOS` from a Windows 10 recovery console — runs in 4 minutes without data loss. Reboots. Windows 10 starts. She runs the Windows 11 installer. **It works.** Done by 1:14 a.m.
+11:58 p.m. She has to convert the disk from MBR to GPT. `mbr2gpt.exe /convert /allowFullOS` from a Windows 10 recovery console runs in 4 minutes without data loss. Reboots. Windows 10 starts. She runs the Windows 11 installer. **It works.** Done by 1:14 a.m.
 
-The 380-PC migration finished on schedule. But Wei learned the hard way: the **Windows 11 requirements stack is real** — TPM 2.0, UEFI, Secure Boot, GPT — and you have to enable all of them coherently.
+The 380-PC migration finished on schedule. But Wei learned the hard way: the **Windows 11 requirements stack is real** TPM 2.0, UEFI, Secure Boot, GPT and you have to enable all of them coherently.
 
 This module gives you the OS-layer vocabulary and the troubleshooting muscle to handle that scenario fast.
 
 ---
 
-## 🪟 Windows — Editions, Install, File Systems
+## 🪟 Windows, Editions, Install, File Systems
 
 ### Current Windows desktop editions
 
@@ -88,17 +88,17 @@ This module gives you the OS-layer vocabulary and the troubleshooting muscle to 
 - UEFI boot manager: `\EFI\Microsoft\Boot\bootmgfw.efi` on the EFI System Partition (ESP)
 - BCD (Boot Configuration Data): `\EFI\Microsoft\Boot\BCD`
 - `bootrec` utility (from WinRE) to repair BCD: `bootrec /fixmbr`, `/fixboot`, `/scanos`, `/rebuildbcd`
-- `sfc /scannow` — System File Checker
-- `dism /Online /Cleanup-Image /RestoreHealth` — image-level repair
+- `sfc /scannow`, System File Checker
+- `dism /Online /Cleanup-Image /RestoreHealth`, image-level repair
 
 ---
 
-## 🍎 macOS — What You Need to Know
+## 🍎 macOS, What You Need to Know
 
 | Concept | Details |
 |---------|---------|
 | **Versions** | Big Sur (11) → Monterey (12) → Ventura (13) → Sonoma (14) → Sequoia (15) → 26 (2026) |
-| **Architecture** | Intel x86 (legacy) and Apple Silicon (M1/M2/M3/M4 — ARM) |
+| **Architecture** | Intel x86 (legacy) and Apple Silicon (M1/M2/M3/M4, ARM) |
 | **File system** | APFS (since 10.13 High Sierra) |
 | **Encryption** | FileVault (full-disk) |
 | **Recovery** | Cmd+R at boot → macOS Recovery; or Cmd+Option+R for internet recovery |
@@ -120,18 +120,18 @@ This module gives you the OS-layer vocabulary and the troubleshooting muscle to 
 
 ### macOS troubleshooting essentials
 
-- **Safe Mode** — hold Shift at boot (Intel) or hold power button until Options appears (Apple Silicon)
-- **NVRAM/PRAM reset** — (Intel) Cmd+Option+P+R at boot. (Apple Silicon: not needed/applicable.)
-- **SMC reset** — (Intel laptop) Shift+Ctrl+Option+Power for 10 sec. (Apple Silicon: just shut down.)
-- **Disk Utility** — repair APFS volumes
-- **Activity Monitor** — like Windows Task Manager
-- **Console** — system log viewer
+- **Safe Mode**, hold Shift at boot (Intel) or hold power button until Options appears (Apple Silicon)
+- **NVRAM/PRAM reset**, (Intel) Cmd+Option+P+R at boot. (Apple Silicon: not needed/applicable.)
+- **SMC reset**, (Intel laptop) Shift+Ctrl+Option+Power for 10 sec. (Apple Silicon: just shut down.)
+- **Disk Utility**, repair APFS volumes
+- **Activity Monitor**, like Windows Task Manager
+- **Console**, system log viewer
 
 ---
 
-## 🐧 Linux — A+ Scope
+## 🐧 Linux, A+ Scope
 
-A+ tests *basic familiarity* — not Linux+ depth. Know:
+A+ tests *basic familiarity*, not Linux+ depth. Know:
 
 ### Major distributions
 
@@ -226,8 +226,8 @@ chmod 755 script.sh
 
 ### Control Panel vs Settings
 
-- **Control Panel** (classic) — User Accounts, Programs and Features, Device Manager, Power Options
-- **Settings** (modern UWP) — most things gradually moving here in Windows 10/11
+- **Control Panel** (classic), User Accounts, Programs and Features, Device Manager, Power Options
+- **Settings** (modern UWP), most things gradually moving here in Windows 10/11
 - Both exist; the exam tests both.
 
 ---
@@ -255,13 +255,13 @@ chmod 755 script.sh
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking)
 
-> **Scenario:** A user reports their Windows 11 PC won't boot — black screen with `BOOTMGR is missing` after a power outage.
+> **Scenario:** A user reports their Windows 11 PC won't boot, black screen with `BOOTMGR is missing` after a power outage.
 
 **Walkthrough:**
-1. **Identify** — Boot loader can't find its files. Power outage may have corrupted the EFI System Partition (ESP) or BCD.
-2. **Theory** — BCD corruption, ESP partition damaged.
-3. **Test** — Boot from Windows 11 install media → "Repair your computer" → Advanced → Command Prompt.
-4. **Plan** — Run:
+1. **Identify**, Boot loader can't find its files. Power outage may have corrupted the EFI System Partition (ESP) or BCD.
+2. **Theory**, BCD corruption, ESP partition damaged.
+3. **Test**, Boot from Windows 11 install media → "Repair your computer" → Advanced → Command Prompt.
+4. **Plan**, Run:
    ```
    bootrec /fixmbr
    bootrec /fixboot
@@ -269,8 +269,8 @@ chmod 755 script.sh
    bootrec /rebuildbcd
    ```
    (Note: on UEFI systems, the commands differ slightly; sometimes you need `bcdboot C:\Windows /s S:` where S: is the ESP.)
-5. **Verify** — Reboot; Windows starts normally.
-6. **Document** — KB: "Power outage corrupted BCD; bootrec rebuild restored. Recommend UPS for affected PC."
+5. **Verify**, Reboot; Windows starts normally.
+6. **Document**, KB: "Power outage corrupted BCD; bootrec rebuild restored. Recommend UPS for affected PC."
 
 ---
 
@@ -281,7 +281,7 @@ chmod 755 script.sh
 | "FAT32 can hold any file" | Max single file is **4 GB** on FAT32. exFAT or NTFS for larger. |
 | "Windows 11 works on any 8th-gen CPU" | Officially requires Intel 8th gen+ AND TPM 2.0 + Secure Boot + UEFI. |
 | "Linux requires command line for everything" | Modern distros (Ubuntu, Fedora) are fully GUI-driven for most tasks. |
-| "Defragmentation helps SSDs" | NO — never defrag SSDs. Use TRIM/Optimize instead. |
+| "Defragmentation helps SSDs" | NO, never defrag SSDs. Use TRIM/Optimize instead. |
 | "Reformatting fixes ransomware" | Reformatting helps for clean reinstall but only after confirming clean restore source. |
 | "macOS has no command line" | macOS Terminal runs zsh; very similar to Linux. |
 | "Always use NTFS for USB drives" | If the drive moves between Mac+Windows+Linux, **exFAT** is the best choice. |
@@ -326,25 +326,25 @@ chmod 755 script.sh
 
 ---
 
-## 📊 Case Study — Windows 10 → Windows 11 Migration at a US Federal Agency (2023–2024)
+## 📊 Case Study, Windows 10 → Windows 11 Migration at a US Federal Agency (2023–2024)
 
 **Situation.** A US federal agency with ~14,000 endpoints had to migrate from Windows 10 to Windows 11 before Microsoft's end-of-support date (October 14, 2025). They used Microsoft Endpoint Manager (Intune) + Autopilot + ConfigMgr in co-management mode. The agency had ~22% of its fleet running on hardware that did not meet Win 11 requirements (mostly missing TPM 2.0 or 7th-gen CPUs).
 
 **The migration playbook.** They categorized hardware in 3 tranches:
 
-1. **Tranche 1 (52%)** — Hardware fully Win 11-capable, already enrolled in Autopilot. Pushed feature update via Intune Update Rings. ~6 weeks.
-2. **Tranche 2 (26%)** — Hardware with TPM disabled in BIOS but otherwise capable. Used a BIOS-update + TPM-enable PowerShell script via SCCM Task Sequence. Tested on 200 endpoints, then expanded. ~10 weeks.
-3. **Tranche 3 (22%)** — Hardware truly not capable (older Intel, no TPM 2.0). Procured 3,100 replacement laptops (Dell Latitude, HP EliteBook with TPM 2.0). Used Autopilot Pre-Provisioned Deployment. ~16 weeks.
+1. **Tranche 1 (52%)**, Hardware fully Win 11-capable, already enrolled in Autopilot. Pushed feature update via Intune Update Rings. ~6 weeks.
+2. **Tranche 2 (26%)**, Hardware with TPM disabled in BIOS but otherwise capable. Used a BIOS-update + TPM-enable PowerShell script via SCCM Task Sequence. Tested on 200 endpoints, then expanded. ~10 weeks.
+3. **Tranche 3 (22%)**, Hardware truly not capable (older Intel, no TPM 2.0). Procured 3,100 replacement laptops (Dell Latitude, HP EliteBook with TPM 2.0). Used Autopilot Pre-Provisioned Deployment. ~16 weeks.
 
-**Decision and outcome.** The agency completed all three tranches by September 2025 — 30 days before EOL. Total per-device cost: $42 for tranches 1 + 2 (mostly labor), $1,250 for tranche 3 (hardware + labor). Lessons documented in an internal post-mortem.
+**Decision and outcome.** The agency completed all three tranches by September 2025, 30 days before EOL. Total per-device cost: $42 for tranches 1 + 2 (mostly labor), $1,250 for tranche 3 (hardware + labor). Lessons documented in an internal post-mortem.
 
 **Lesson for the exam / for practitioners.**
-- **Win 11 hardware requirements are a real, expensive constraint** — plan upgrade cycles around them.
-- **Co-management (Intune + ConfigMgr) is the modern enterprise approach** — pure on-prem ConfigMgr is shrinking; pure-cloud Intune is gaining.
+- **Win 11 hardware requirements are a real, expensive constraint**, plan upgrade cycles around them.
+- **Co-management (Intune + ConfigMgr) is the modern enterprise approach**, pure on-prem ConfigMgr is shrinking; pure-cloud Intune is gaining.
 - **Tranche-based deployment beats big-bang.** Test on 200, then 2,000, then 14,000.
 
 **Discussion (Socratic).**
-- **Q1:** A 200-person law firm has 60 PCs with TPM 1.2 (not 2.0). What 3-option roadmap do you present to the partners — buy new, run unsupported Win 11, stay on Win 10 ESU?
+- **Q1:** A 200-person law firm has 60 PCs with TPM 1.2 (not 2.0). What 3-option roadmap do you present to the partners, buy new, run unsupported Win 11, stay on Win 10 ESU?
 - **Q2:** The agency used SCCM + Intune in co-management. A pure-cloud start-up uses only Intune. What does each lose by their choice? When does each make sense?
 - **Q3:** Windows 10 reaches end-of-support October 14, 2025. After that, Microsoft offers Extended Security Updates (ESU) at increasing annual cost. Argue both: (a) buy ESU and delay migration vs (b) bite the bullet and migrate now.
 
@@ -366,7 +366,7 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 8 — Security Fundamentals](../Module-08-Security/Reading.md)
+4. ➡️ [Module 8, Security Fundamentals](../Module-08-Security/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 8](../Module-08-Security/Reading.md) covers OS-level security (UAC, BitLocker, FileVault, LUKS); [Module 9](../Module-09-Software-Troubleshooting/Reading.md) drills into OS troubleshooting (BSOD, boot loops, repair).
@@ -377,12 +377,12 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 Microsoft Docs — Windows 11 system requirements
-- 📄 Apple Platform Deployment Guide — macOS management reference
-- 📄 The Linux Documentation Project (TLDP) — basic command and tutorial collection
-- 📄 POSIX.1-2017 — the Unix command-line standard
+- 📄 Microsoft Docs, Windows 11 system requirements
+- 📄 Apple Platform Deployment Guide, macOS management reference
+- 📄 The Linux Documentation Project (TLDP), basic command and tutorial collection
+- 📄 POSIX.1-2017, the Unix command-line standard
 
 **Practitioner / exam:**
 - 📖 [Professor Messer 220-1102 OS module](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video-training-course/)
-- 📖 *The Linux Command Line* (William Shotts) — free PDF online, essential reading
-- 📖 Microsoft Learn — Windows 11 deployment learning paths
+- 📖 *The Linux Command Line* (William Shotts), free PDF online, essential reading
+- 📖 Microsoft Learn, Windows 11 deployment learning paths

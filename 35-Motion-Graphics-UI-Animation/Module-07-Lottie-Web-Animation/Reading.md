@@ -7,9 +7,9 @@ title: "Module 7: Lottie & Web Animation"
 
 ## The Problem with GIFs
 
-In 2015, Airbnb's design team had a problem. They'd built beautiful animations in After Effects for their iOS and Android apps. When they shipped them as GIF files, the animations looked terrible — blocky, degraded, massive file sizes. When they shipped them as MP4 videos, they couldn't control playback, pause, or respond to user interaction. When they tried to hire developers to recreate the animations in native iOS/Android code, the process took weeks and the results never matched the design.
+In 2015, Airbnb's design team had a problem. They'd built beautiful animations in After Effects for their iOS and Android apps. When they shipped them as GIF files, the animations looked terrible, blocky, degraded, massive file sizes. When they shipped them as MP4 videos, they couldn't control playback, pause, or respond to user interaction. When they tried to hire developers to recreate the animations in native iOS/Android code, the process took weeks and the results never matched the design.
 
-They built Lottie to solve this. The framework converted AE animations to a JSON format that could be rendered natively by the device — at any resolution, with any playback speed, and with full programmatic control. It changed the industry.
+They built Lottie to solve this. The framework converted AE animations to a JSON format that could be rendered natively by the device, at any resolution, with any playback speed, and with full programmatic control. It changed the industry.
 
 ---
 
@@ -21,9 +21,9 @@ They built Lottie to solve this. The framework converted AE animations to a JSON
 
 > 🎯 **Exam Callout 3:** The Airbnb engineering team built Lottie in **2015** to solve the problem of high-quality animations on mobile that couldn't be delivered via GIF (quality loss) or MP4 (no programmatic control). The exam may test the year or the specific problem Lottie was built to solve.
 
-> 🎯 **Exam Callout 4:** In the GSAP ScrollTrigger API, `scrub: true` links animation progress directly to scroll position. `scrub: 1` adds a 1-second lag between scroll position and animation progress — it smooths the animation. The exam tests: what does `scrub: true` do vs `scrub: 1`?
+> 🎯 **Exam Callout 4:** In the GSAP ScrollTrigger API, `scrub: true` links animation progress directly to scroll position. `scrub: 1` adds a 1-second lag between scroll position and animation progress, it smooths the animation. The exam tests: what does `scrub: true` do vs `scrub: 1`?
 
-> 🎯 **Exam Callout 5:** The Web Animations API (WAAPI) is a **native browser API** — no library required. GSAP, Framer Motion, and React Spring are all libraries that sit on top of browser APIs. The exam may test: which animation approach requires no external library?
+> 🎯 **Exam Callout 5:** The Web Animations API (WAAPI) is a **native browser API**, no library required. GSAP, Framer Motion, and React Spring are all libraries that sit on top of browser APIs. The exam may test: which animation approach requires no external library?
 
 > 🎯 **Exam Callout 6:** Framer Motion uses `initial`, `animate`, and `exit` props for state-based animation. React Spring uses physics parameters (mass, tension, friction). The exam tests: which library uses spring physics parameters directly in the component API?
 
@@ -33,13 +33,13 @@ They built Lottie to solve this. The framework converted AE animations to a JSON
 
 ## ⚠️ Common Traps: Lottie & Web Animation
 
-**Trap 1 — Raster Effects in Lottie Exports:** A Gaussian Blur applied via Effect > Blur > Gaussian Blur will not export correctly to Lottie. The Lottie-compatible alternative is a Blur applied via the shape layer's built-in blur property, or by pre-rendering the blur as a separate PNG sequence. Students who add Blur effects through the Effect panel find their Lottie animations render blank layers.
+**Trap 1, Raster Effects in Lottie Exports:** A Gaussian Blur applied via Effect > Blur > Gaussian Blur will not export correctly to Lottie. The Lottie-compatible alternative is a Blur applied via the shape layer's built-in blur property, or by pre-rendering the blur as a separate PNG sequence. Students who add Blur effects through the Effect panel find their Lottie animations render blank layers.
 
-**Trap 2 — GSAP Licensing for Commercial Use:** GSAP is free for non-commercial use. For commercial projects, a paid "Business Green" or Club GSAP membership is required. The exam may test: is GSAP free for all projects? Answer: free for personal/non-commercial; paid license required for commercial.
+**Trap 2, GSAP Licensing for Commercial Use:** GSAP is free for non-commercial use. For commercial projects, a paid "Business Green" or Club GSAP membership is required. The exam may test: is GSAP free for all projects? Answer: free for personal/non-commercial; paid license required for commercial.
 
-**Trap 3 — CSS `transition` vs `animation`:** `transition` responds to state changes (hover, class change). `animation` runs on load or via JavaScript class toggle. Students use `animation` when they want hover behavior — `transition` is the correct tool. The exam may present a scenario where the correct choice between the two must be identified.
+**Trap 3 CSS `transition` vs `animation`:** `transition` responds to state changes (hover, class change). `animation` runs on load or via JavaScript class toggle. Students use `animation` when they want hover behavior `transition` is the correct tool. The exam may present a scenario where the correct choice between the two must be identified.
 
-**Trap 4 — React Spring Physics vs Duration:** React Spring uses mass/tension/friction — not duration in milliseconds. There is no "duration: 300" in React Spring's default physics model. Students who move from GSAP to React Spring frequently try to set duration directly, which overrides the physics model and creates linear animation.
+**Trap 4 React Spring Physics vs Duration:** React Spring uses mass/tension/friction not duration in milliseconds. There is no "duration: 300" in React Spring's default physics model. Students who move from GSAP to React Spring frequently try to set duration directly, which overrides the physics model and creates linear animation.
 
 ---
 
@@ -253,7 +253,7 @@ animation.playbackRate = 2;
 
 ### React Spring
 
-React Spring uses a physics-based model (spring mass/damping/stiffness) — not duration-based keyframes.
+React Spring uses a physics-based model (spring mass/damping/stiffness), not duration-based keyframes.
 
 ```jsx
 import { useSpring, animated } from '@react-spring/web';
@@ -340,7 +340,7 @@ function Card() {
 
 ---
 
-## 🎬 Case Study: The Airbnb Lottie Origin — Engineering a Workflow
+## 🎬 Case Study: The Airbnb Lottie Origin, Engineering a Workflow
 
 Lottie was not conceived as a product. It was an internal tool that escaped.
 
@@ -372,7 +372,7 @@ The motion/engineering boundary is where the most valuable skills live. A motion
 
 3. The Web Animations API requires no library and is supported in all modern browsers. Yet most developers reach for GSAP or Framer Motion immediately. What is the legitimate case for using a library instead of the native WAAPI?
 
-4. `prefers-reduced-motion` was covered in Module 6. How does it apply to Lottie animations specifically? LottieFiles provides a `speed` prop — setting it to 0 stops the animation, but doesn't fade out or replace it with a still. How would you correctly implement reduced-motion support for a Lottie animation?
+4. `prefers-reduced-motion` was covered in Module 6. How does it apply to Lottie animations specifically? LottieFiles provides a `speed` prop, setting it to 0 stops the animation, but doesn't fade out or replace it with a still. How would you correctly implement reduced-motion support for a Lottie animation?
 
 5. GSAP requires a commercial license for commercial projects, but many studios use it without paying. What is the ethical position here, and how does using unlicensed tools affect your relationship with clients and your professional reputation?
 
@@ -380,9 +380,9 @@ The motion/engineering boundary is where the most valuable skills live. A motion
 
 ## 📚 Further Reading
 
-- [LottieFiles Documentation](https://docs.lottiefiles.com/) — the full AE-to-Lottie workflow reference; covers Bodymovin options and supported/unsupported AE features
-- [GSAP Documentation](https://gsap.com/docs/v3/) — the best animation library documentation in frontend development; the ScrollTrigger and Timeline docs are particularly thorough
-- [Framer Motion Documentation](https://www.framer.com/motion/) — declarative API reference; the "gestures" and "transitions" sections are most exam-relevant
-- [React Spring Documentation](https://www.react-spring.dev/) — physics-based animation reference; the `useSpring` and `useTrail` hooks cover 80% of use cases
-- [Web Animations API — MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) — the native browser reference; understanding WAAPI makes all animation libraries make more sense
-- *JavaScript for Web Designers* — Mat Marquis (A Book Apart, 2016) — the JavaScript fundamentals needed to understand GSAP and WAAPI without a full development background
+- [LottieFiles Documentation](https://docs.lottiefiles.com/), the full AE-to-Lottie workflow reference; covers Bodymovin options and supported/unsupported AE features
+- [GSAP Documentation](https://gsap.com/docs/v3/), the best animation library documentation in frontend development; the ScrollTrigger and Timeline docs are particularly thorough
+- [Framer Motion Documentation](https://www.framer.com/motion/), declarative API reference; the "gestures" and "transitions" sections are most exam-relevant
+- [React Spring Documentation](https://www.react-spring.dev/), physics-based animation reference; the `useSpring` and `useTrail` hooks cover 80% of use cases
+- [Web Animations API MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API) the native browser reference; understanding WAAPI makes all animation libraries make more sense
+- *JavaScript for Web Designers* Mat Marquis (A Book Apart, 2016) the JavaScript fundamentals needed to understand GSAP and WAAPI without a full development background

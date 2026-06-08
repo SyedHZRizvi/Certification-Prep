@@ -215,7 +215,7 @@ When you see these, they're often **wrong**:
 
 - 7 fields in /etc/passwd, 9 in /etc/shadow, 4 in /etc/group
 - `usermod -aG` ALWAYS, never plain `-G`
-- `visudo` for sudoers editing — validates on save
+- `visudo` for sudoers editing, validates on save
 - `%groupname` in sudoers = group rule
 - `NOPASSWD:` for password-free commands
 - `/sbin/nologin` for accounts that shouldn't shell-in

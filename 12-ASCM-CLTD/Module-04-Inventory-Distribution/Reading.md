@@ -1,9 +1,9 @@
 # Module 4: Inventory & Distribution 📊
 
-> **Why this module matters:** Inventory is *the* lever between cost and service. Hold too much, you bleed working capital. Hold too little, you lose sales. In a multi-DC network, the math gets harder fast — and DRP (Distribution Requirements Planning) is the framework ASCM uses to make sense of it.
+> **Why this module matters:** Inventory is *the* lever between cost and service. Hold too much, you bleed working capital. Hold too little, you lose sales. In a multi-DC network, the math gets harder fast, and DRP (Distribution Requirements Planning) is the framework ASCM uses to make sense of it.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) network design — DRP plans the inventory inside that network
+> - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) network design, DRP plans the inventory inside that network
 > - [Module 2](../Module-02-Capacity-Demand-Logistics/Reading.md) forecasting and ABC classification
 > - [Module 3](../Module-03-Order-Management-Fulfillment/Reading.md) ATP/CTP mechanics
 > - Basic statistics: standard deviation, z-scores at common service levels (95% = 1.65, 99% = 2.33)
@@ -18,7 +18,7 @@ Ali runs distribution for a national bicycle chain. They have a master DC in Chi
 
 For years, each location ordered independently. Stockouts in Boston, gluts in Phoenix. The CFO asked: "Why are we shipping bikes from Phoenix to Boston twice a week?"
 
-Ali implemented **DRP**. The system started at the *demand point* — each store. Aggregated to the regional DC. Then to the master DC. Then to the factory. With **time-phased planning**: when you need stock at the store on July 15, you need it at the regional DC on July 8 (transit lead time), at the master DC on July 1, and ordered from the factory on May 25.
+Ali implemented **DRP**. The system started at the *demand point*, each store. Aggregated to the regional DC. Then to the master DC. Then to the factory. With **time-phased planning**: when you need stock at the store on July 15, you need it at the regional DC on July 8 (transit lead time), at the master DC on July 1, and ordered from the factory on May 25.
 
 Six months later: stockouts down 70%, inventory down 25%, and Phoenix → Boston ghost shipments eliminated.
 
@@ -28,9 +28,9 @@ Six months later: stockouts down 70%, inventory down 25%, and Phoenix → Boston
 
 ## 🎯 What is Distribution Requirements Planning (DRP)?
 
-> **Citation.** DRP was formalized in Martin, André J., *Distribution Resource Planning: The Gateway to True Quick Response and Continuous Replenishment* (Oliver Wight, 1990; 3rd ed. John Wiley & Sons, 1995) — André Martin is widely credited with extending Joe Orlicky's MRP framework (Orlicky, *Material Requirements Planning*, McGraw-Hill, 1975) into distribution networks. The Bullwhip Effect was first formalized in Lee, Hau L., Padmanabhan, V. & Whang, Seungjin, "Information Distortion in a Supply Chain: The Bullwhip Effect," *Management Science* 43 (April 1997) and Lee et al., "The Bullwhip Effect in Supply Chains," *Sloan Management Review* (Spring 1997). The original demand-amplification phenomenon was identified much earlier in Forrester, Jay W., "Industrial Dynamics — A Major Breakthrough for Decision Makers," *Harvard Business Review* (July–August 1958) — Forrester's seminal HBR article is still required reading at MIT Sloan.
+> **Citation.** DRP was formalized in Martin, André J., *Distribution Resource Planning: The Gateway to True Quick Response and Continuous Replenishment* (Oliver Wight, 1990; 3rd ed. John Wiley & Sons, 1995) André Martin is widely credited with extending Joe Orlicky's MRP framework (Orlicky, *Material Requirements Planning*, McGraw-Hill, 1975) into distribution networks. The Bullwhip Effect was first formalized in Lee, Hau L., Padmanabhan, V. & Whang, Seungjin, "Information Distortion in a Supply Chain: The Bullwhip Effect," *Management Science* 43 (April 1997) and Lee et al., "The Bullwhip Effect in Supply Chains," *Sloan Management Review* (Spring 1997). The original demand-amplification phenomenon was identified much earlier in Forrester, Jay W., "Industrial Dynamics A Major Breakthrough for Decision Makers," *Harvard Business Review* (July–August 1958), Forrester's seminal HBR article is still required reading at MIT Sloan.
 
-DRP is a *time-phased* planning method that explodes demand from end-customers up through the distribution network — DC by DC, week by week — using:
+DRP is a *time-phased* planning method that explodes demand from end-customers up through the distribution network DC by DC, week by week using:
 
 - **Lead times** between echelons
 - **Order policies** (lot sizes, min/max)
@@ -156,7 +156,7 @@ If you have N stocking locations with the same demand pattern, total network saf
 
 🎯 **Exam tip:** "Square-root rule" is the testable shortcut. The actual math is more nuanced (correlation between DCs matters), but the rule of thumb is enough.
 
-### Service level vs safety stock — exponential cost
+### Service level vs safety stock, exponential cost
 
 | Service Level | Z-score | Safety Stock (relative) |
 |---------------|---------|--------------------------|
@@ -222,7 +222,7 @@ Costs:
 - Slower per-order fulfillment
 - Need flexible, quick assembly capability at the postponement point
 
-🎯 **Classic exam case:** Benetton — knit sweaters in undyed yarn, dye to actual color demand. Reduces obsolescence dramatically.
+🎯 **Classic exam case:** Benetton, knit sweaters in undyed yarn, dye to actual color demand. Reduces obsolescence dramatically.
 
 ---
 
@@ -253,7 +253,7 @@ Beyond ABC (we covered in Module 2), CLTD tests:
 - S: slow movement
 - N: no movement in 90+ days → candidate for discontinuation or write-off
 
-### VED (Vital / Essential / Desirable) — typically for spares
+### VED (Vital / Essential / Desirable), typically for spares
 - V: vital (downtime cost massive)
 - E: essential
 - D: desirable
@@ -296,19 +296,19 @@ ROP = (Demand during lead time) + Safety Stock
 
 ---
 
-## 📜 Case Study — Walmart Hi-Vis Tracking and the Third-Party Returns Network (2022–2024)
+## 📜 Case Study, Walmart Hi-Vis Tracking and the Third-Party Returns Network (2022–2024)
 
-**Situation.** By 2022, Walmart faced a mounting reverse-logistics cost problem: customer returns to Walmart and Walmart.com had grown to ~$25B in retail value annually (≈4% of total revenue), with the cost of processing each return averaging ~$15–$25 depending on category. Customer returns are the *inverse* of Module 4's forward DRP: instead of pushing inventory from DC to store, returns pull damaged/used inventory from store back through DCs to disposition. The inventory-position math gets ugly fast: a returned blender from Tampa is technically "on-hand" somewhere — but in what condition, in which DC, sellable as what disposition? Walmart's accounting was, internally, calling this category "shrink and unknown loss" — a ~$3B annual mystery.
+**Situation.** By 2022, Walmart faced a mounting reverse-logistics cost problem: customer returns to Walmart and Walmart.com had grown to ~$25B in retail value annually (≈4% of total revenue), with the cost of processing each return averaging ~$15–$25 depending on category. Customer returns are the *inverse* of Module 4's forward DRP: instead of pushing inventory from DC to store, returns pull damaged/used inventory from store back through DCs to disposition. The inventory-position math gets ugly fast: a returned blender from Tampa is technically "on-hand" somewhere but in what condition, in which DC, sellable as what disposition? Walmart's accounting was, internally, calling this category "shrink and unknown loss" a ~$3B annual mystery.
 
-**Decision.** Walmart announced its "Hi-Vis" (high-visibility) inventory tracking initiative in 2022 — the goal: real-time visibility of every unit in the network including reverse flows. Key implementation steps through 2024:
+**Decision.** Walmart announced its "Hi-Vis" (high-visibility) inventory tracking initiative in 2022, the goal: real-time visibility of every unit in the network including reverse flows. Key implementation steps through 2024:
 
 - **RFID at item level** for apparel, home, electronics (mandate for suppliers extended in 2022–2023; previously Walmart had been the slow adopter relative to Macy's and Lululemon).
-- **Returns disposition mobile apps** in stores — associates scan returns and the system instantly recommends a disposition: restock-to-shelf, ship-to-return-center, or destroy.
-- **Third-party reverse logistics partner network** (2024) — Walmart partnered with **goTRG** (formerly The Recon Group) and **Optoro** for third-party returns processing of items that don't go back to Walmart shelves. These partners refurbish, repackage, or liquidate at higher recovery values than Walmart could in-house.
-- **Returns-via-FedEx integration** — Walmart became one of the largest users of FedEx's "Return Anywhere" service (drop-off at FedEx Office without box or label).
-- **Walmart Marketplace returns offload** — third-party Marketplace sellers handle their own returns via Walmart's Returns Service Provider (RSP) program, with Walmart taking 4–10% transaction fees and not handling the physical reverse flow.
+- **Returns disposition mobile apps** in stores, associates scan returns and the system instantly recommends a disposition: restock-to-shelf, ship-to-return-center, or destroy.
+- **Third-party reverse logistics partner network** (2024), Walmart partnered with **goTRG** (formerly The Recon Group) and **Optoro** for third-party returns processing of items that don't go back to Walmart shelves. These partners refurbish, repackage, or liquidate at higher recovery values than Walmart could in-house.
+- **Returns-via-FedEx integration**, Walmart became one of the largest users of FedEx's "Return Anywhere" service (drop-off at FedEx Office without box or label).
+- **Walmart Marketplace returns offload**, third-party Marketplace sellers handle their own returns via Walmart's Returns Service Provider (RSP) program, with Walmart taking 4–10% transaction fees and not handling the physical reverse flow.
 
-**Outcome.** By Q4 2024, Walmart reported reverse-logistics cost per unit had dropped ~22% from 2022 baseline. Recovery value (% of original retail value captured through disposition) rose from ~38% in 2022 to ~46% in 2024. Critically, *inventory accuracy* (IRA) at the store level rose from ~93% (2022) to ~97% (2024) — Hi-Vis essentially eliminated the "where is this returned unit?" mystery. Walmart's overall inventory turn improved 0.4 turns/yr (huge at Walmart scale), and the company began *selling* its returns disposition platform to other retailers in late 2024 (a 4PL-style move).
+**Outcome.** By Q4 2024, Walmart reported reverse-logistics cost per unit had dropped ~22% from 2022 baseline. Recovery value (% of original retail value captured through disposition) rose from ~38% in 2022 to ~46% in 2024. Critically, *inventory accuracy* (IRA) at the store level rose from ~93% (2022) to ~97% (2024), Hi-Vis essentially eliminated the "where is this returned unit?" mystery. Walmart's overall inventory turn improved 0.4 turns/yr (huge at Walmart scale), and the company began *selling* its returns disposition platform to other retailers in late 2024 (a 4PL-style move).
 
 **Lesson for the exam / for practitioners.** This case ties together three Module 4 concepts:
 
@@ -320,7 +320,7 @@ The CLTD exam tests this in scenarios like: "A retailer with poor inventory accu
 
 **Discussion (Socratic).**
 - Q1: Walmart's $25B annual returns is roughly the *entire revenue* of a Fortune-200 company. From a strategic logistics perspective, is the right move to invest in reducing returns (lower return rate) or in optimizing the reverse-logistics network (higher recovery on the same return rate)? Frame the tradeoff.
-- Q2: Walmart's deal with goTRG and Optoro effectively outsources part of its reverse-logistics value chain — a "4PL for returns." Is this consistent with Walmart's historical "in-source everything that matters" stance, or a strategic shift? Argue what changed.
+- Q2: Walmart's deal with goTRG and Optoro effectively outsources part of its reverse-logistics value chain, a "4PL for returns." Is this consistent with Walmart's historical "in-source everything that matters" stance, or a strategic shift? Argue what changed.
 - Q3: RFID adoption took Walmart 20+ years to mandate at scale (the first announcement was 2003). What does that lag tell you about how strategy and technology actually diffuse in supply chains?
 
 ---
@@ -353,7 +353,7 @@ The CLTD exam tests this in scenarios like: "A retailer with poor inventory accu
 
 | Term | Definition |
 |------|------------|
-| **DRP** | Distribution Requirements Planning — time-phased echelon replenishment |
+| **DRP** | Distribution Requirements Planning, time-phased echelon replenishment |
 | **Inventory Position** | On-hand + on-order − backorders |
 | **Square-Root Rule** | Multi-location SS ≈ √N × single-loc SS |
 | **MEIO** | Multi-Echelon Inventory Optimization |
@@ -393,11 +393,11 @@ You now know:
 
 1. **MEIO ROI proof.** A consulting firm pitches MEIO for $1.4M implementation cost, promising 18% network-inventory reduction. Your CFO wants proof before committing. What data would you gather over 6 months to validate (or refute) the consultant's projection?
 
-2. **Centralization vs decentralization debate.** A regional building-materials distributor is considering centralizing inventory at 3 super-DCs vs the current 11 regional DCs. The square-root rule predicts ~40% safety-stock reduction. But shipping distances grow, so transport costs rise. Build the framework for the decision — what *non-cost* factors matter most?
+2. **Centralization vs decentralization debate.** A regional building-materials distributor is considering centralizing inventory at 3 super-DCs vs the current 11 regional DCs. The square-root rule predicts ~40% safety-stock reduction. But shipping distances grow, so transport costs rise. Build the framework for the decision, what *non-cost* factors matter most?
 
-3. **Postponement at Apple.** Apple iPhones are assembled in different colors and storage sizes at the factory in China (no postponement). Should they postpone country-specific configurations regionally? Frame the trade-off — what does the math say, and what about Apple's brand strategy?
+3. **Postponement at Apple.** Apple iPhones are assembled in different colors and storage sizes at the factory in China (no postponement). Should they postpone country-specific configurations regionally? Frame the trade-off, what does the math say, and what about Apple's brand strategy?
 
-4. **The 99.9% service-level moral question.** A medical device distributor's main customer (hospital chain) demands 99.9% service level on emergency-room SKUs. Safety stock is ~2.4× a 95% level. The CFO calls this "ridiculous." How would you reframe the conversation to satisfy both — what alternative solutions exist beyond just raising safety stock?
+4. **The 99.9% service-level moral question.** A medical device distributor's main customer (hospital chain) demands 99.9% service level on emergency-room SKUs. Safety stock is ~2.4× a 95% level. The CFO calls this "ridiculous." How would you reframe the conversation to satisfy both, what alternative solutions exist beyond just raising safety stock?
 
 5. **DRP vs Distributed-AI replenishment.** Several modern systems (Relex, ToolsGroup, o9) replace DRP-style time-phased planning with continuous ML-based replenishment that updates by SKU/store every few hours. Is DRP becoming obsolete? Argue both sides.
 
@@ -410,8 +410,8 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Distribution Requirements Planning* by André Martin — the original DRP textbook
+- 📖 *Distribution Requirements Planning* by André Martin, the original DRP textbook
 - 📖 *Inventory Management Explained* by David Piasecki
-- 🔗 [CSCMP CPFR Guidelines](https://cscmp.org/) — collaborative replenishment
+- 🔗 [CSCMP CPFR Guidelines](https://cscmp.org/), collaborative replenishment
 - 🔗 [ASCM DRP overview](https://www.ascm.org/)
-- 🔗 [APICS Dictionary](https://www.ascm.org/) — definitions for ROP, ABC, MEIO
+- 🔗 [APICS Dictionary](https://www.ascm.org/), definitions for ROP, ABC, MEIO

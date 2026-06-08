@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>📨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SQS vs SNS vs EventBridge — When To Use Each</p>
+      <p class="vg-title">SQS vs SNS vs EventBridge, When To Use Each</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 18 min · The decoupling trio</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🔁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Step Functions — Orchestrate Workflows</p>
+      <p class="vg-title">Step Functions, Orchestrate Workflows</p>
       <p class="vg-creator">freeCodeCamp</p>
       <span class="vg-duration">⏱ 18 min · States, retries, parallel</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🚌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">EventBridge — Rules, Buses, Targets</p>
+      <p class="vg-title">EventBridge, Rules, Buses, Targets</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 13 min · Event-driven done right</span>
     </div>
@@ -142,9 +142,9 @@
 
 ## ✅ After watching
 
-1. SQS vs SNS vs EventBridge — describe each in 1 sentence.
-2. FIFO vs Standard SQS — name 2 differences.
-3. Kinesis Data Streams vs Firehose — pick one for replay; pick one for "dump to S3."
+1. SQS vs SNS vs EventBridge, describe each in 1 sentence.
+2. FIFO vs Standard SQS, name 2 differences.
+3. Kinesis Data Streams vs Firehose, pick one for replay; pick one for "dump to S3."
 4. Step Functions Standard vs Express?
 5. What's the SNS → SQS fan-out for?
 

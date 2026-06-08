@@ -1,6 +1,6 @@
 # Module 4: Multi-Modal AI with Gemini 📸🎙️🎬
 
-> **Why this module matters:** Multi-modal is Gemini's single most differentiating capability. Every other major LLM family (Claude, GPT, Llama) was text-trained first and had vision/audio adapters bolted on later. Gemini was trained on text + images + audio + video *jointly from scratch* — and the exam will test, repeatedly, whether you understand what that enables, what the file limits are, what the latency profile looks like, and *when to use one model call vs a multi-step pipeline*. This module is the difference between an architect who treats Gemini as "GPT with one extra knob" and one who genuinely exploits what makes it different.
+> **Why this module matters:** Multi-modal is Gemini's single most differentiating capability. Every other major LLM family (Claude, GPT, Llama) was text-trained first and had vision/audio adapters bolted on later. Gemini was trained on text + images + audio + video *jointly from scratch*, and the exam will test, repeatedly, whether you understand what that enables, what the file limits are, what the latency profile looks like, and *when to use one model call vs a multi-step pipeline*. This module is the difference between an architect who treats Gemini as "GPT with one extra knob" and one who genuinely exploits what makes it different.
 
 > **Prerequisites for this module.** Modules 1–3 finished. A Google AI Studio account (free) and/or a Vertex AI project with billing enabled. A sample image (JPEG or PNG), short audio clip (MP3 or WAV), and short video clip (MP4 < 50MB) handy to test with.
 
@@ -8,11 +8,11 @@
 
 ## 📖 A Story: When Google Photos Got Smarter Overnight
 
-It is May 2024. A Google Photos user types into the search bar: *"the night I made carbonara with Tony in 2019."* In the world before Gemini, this would have returned exactly zero results — Photos' old search indexed face tags (it knew Tony), some object labels (it knew "pasta"), and EXIF timestamps. It did not know that "the night I made carbonara" was a *visual scene* until a human told it.
+It is May 2024. A Google Photos user types into the search bar: *"the night I made carbonara with Tony in 2019."* In the world before Gemini, this would have returned exactly zero results, Photos' old search indexed face tags (it knew Tony), some object labels (it knew "pasta"), and EXIF timestamps. It did not know that "the night I made carbonara" was a *visual scene* until a human told it.
 
 In the post-Gemini Google Photos, the same query returns the right four photos. Why? Because Photos now uses **Gemini's native multi-modal understanding** to index every photo: it generates a free-form description ("Tony in the kitchen, plate of pasta, dim warm light, late evening"), extracts entities ("Tony," "pasta," "kitchen"), classifies scenes ("home cooking," "evening dinner"), reads any visible text (a wine label said "2019 Barbera"), and timestamps the activity. The search becomes a semantic query against this unified, model-generated index.
 
-Google announced this Gemini-powered Photos upgrade at I/O 2024. The before-state — separate face-detection, object-detection, scene-classification, OCR, and timestamp pipelines stitched together — required five different models, five pipelines, five storage indices, and a complex ranking layer. The after-state was *one Gemini model, called once per photo, output stored as JSON, queried semantically*. The engineering team called this collapse "the carbonara moment."
+Google announced this Gemini-powered Photos upgrade at I/O 2024. The before-state separate face-detection, object-detection, scene-classification, OCR, and timestamp pipelines stitched together required five different models, five pipelines, five storage indices, and a complex ranking layer. The after-state was *one Gemini model, called once per photo, output stored as JSON, queried semantically*. The engineering team called this collapse "the carbonara moment."
 
 The lesson generalizes far beyond Google Photos. Wendy's FreshAI drive-thru, Mercedes-Benz MBUX voice + camera assistant, Wayfair "upload your room photo + tell me what fits," Snap MyAI's photo-aware chat, and Verily's clinical-image triage all live on the same architectural pattern: *throw out the multi-step pipeline; let Gemini's native multi-modal handle the whole thing*. The exam tests whether you can recognize when that collapse is the right move.
 
@@ -20,7 +20,7 @@ The lesson generalizes far beyond Google Photos. Wendy's FreshAI drive-thru, Mer
 
 ## 🧠 What "Native Multi-Modal" Actually Means
 
-Gemini's training data, during pre-training, was *interleaved* — a sequence might look like:
+Gemini's training data, during pre-training, was *interleaved*, a sequence might look like:
 
 ```
 [text: "Here's a description of a sunset..."]
@@ -31,7 +31,7 @@ Gemini's training data, during pre-training, was *interleaved* — a sequence mi
 [video: <frame tensors + audio tensor>]
 ```
 
-The model learns *cross-modal correlations directly* — that the word "carbonara" co-occurs with images of yellow-creamy-pasta, that the sound of frying pancetta co-occurs with the word "pancetta," that a kitchen scene at 7pm follows a "I'm cooking dinner" voice prompt. There is no separate encoder per modality stitched into a text model later; all modalities flow through a unified Transformer with modality-specific tokenizers feeding shared attention layers.
+The model learns *cross-modal correlations directly*, that the word "carbonara" co-occurs with images of yellow-creamy-pasta, that the sound of frying pancetta co-occurs with the word "pancetta," that a kitchen scene at 7pm follows a "I'm cooking dinner" voice prompt. There is no separate encoder per modality stitched into a text model later; all modalities flow through a unified Transformer with modality-specific tokenizers feeding shared attention layers.
 
 **Why this matters in practice:**
 
@@ -135,14 +135,14 @@ Files API uploads persist for 48 hours by default (Gemini API surface), unlimite
 
 Gemini Vision can:
 
-1. **Describe scenes** — high-quality free-form description of an image
-2. **Object detection + bounding boxes** — return `[x_min, y_min, x_max, y_max]` coords (normalized 0-1000) for objects you name
-3. **OCR (text in images)** — read printed and handwritten text
-4. **Chart understanding** — read axis labels, extract data points from a bar/line chart
-5. **Document understanding** — invoices, receipts, forms; extract structured data
-6. **Diagram interpretation** — flowcharts, network diagrams, architectural drawings
-7. **Visual question answering (VQA)** — "What color is the lampshade in this photo?"
-8. **Compare images** — "Are these two photos of the same person?" or "What's different between A and B?"
+1. **Describe scenes**, high-quality free-form description of an image
+2. **Object detection + bounding boxes**, return `[x_min, y_min, x_max, y_max]` coords (normalized 0-1000) for objects you name
+3. **OCR (text in images)**, read printed and handwritten text
+4. **Chart understanding**, read axis labels, extract data points from a bar/line chart
+5. **Document understanding**, invoices, receipts, forms; extract structured data
+6. **Diagram interpretation**, flowcharts, network diagrams, architectural drawings
+7. **Visual question answering (VQA)**, "What color is the lampshade in this photo?"
+8. **Compare images**, "Are these two photos of the same person?" or "What's different between A and B?"
 
 ### Object detection with structured output
 
@@ -195,12 +195,12 @@ r = model.generate_content([
 
 Gemini Audio can:
 
-1. **Transcribe** — speech-to-text with timestamps
-2. **Diarize** — identify and label speakers ("Speaker 1," "Speaker 2," or actual names if introduced)
-3. **Summarize** — give high-level summary of a long recording
-4. **Analyze tone/sentiment** — distinguish frustrated from happy callers
-5. **Identify non-speech audio** — distinguish music from speech from background noise
-6. **Translate** — speech in one language → text in another
+1. **Transcribe**, speech-to-text with timestamps
+2. **Diarize**, identify and label speakers ("Speaker 1," "Speaker 2," or actual names if introduced)
+3. **Summarize**, give high-level summary of a long recording
+4. **Analyze tone/sentiment**, distinguish frustrated from happy callers
+5. **Identify non-speech audio**, distinguish music from speech from background noise
+6. **Translate**, speech in one language → text in another
 
 ### Example: call-center QA
 
@@ -288,7 +288,7 @@ Up to 1,000 pages per PDF. For larger, split + use Files API.
 
 ---
 
-## 🍔 Wendy's FreshAI — A Real Multi-Modal Architecture
+## 🍔 Wendy's FreshAI, A Real Multi-Modal Architecture
 
 Wendy's launched **FreshAI** in 2023, partnering with Google Cloud to deploy AI-driven drive-thru voice ordering. (Note: this is a different architecture than McDonald's IBM-AI drive-thru, which McDonald's discontinued in 2024 due to accuracy issues.) Wendy's FreshAI runs on Vertex AI + Gemini and represents one of the most-cited real-world multi-modal deployments.
 
@@ -321,7 +321,7 @@ Customer speaks at drive-thru speaker
 - Native audio understanding eliminates the transcribe-then-LLM pipeline (Wendy's CTO publicly cited this as the key win vs the McDonald's architecture)
 - Latency budget is tight (drive-thru customer impatient at >2 seconds); Flash is the right tier
 - Brand voice in Chirp TTS keeps "Wendy's" voice consistent
-- Vertex AI Agent Builder + Conversational Agents handles the state machine deterministically — Gemini doesn't free-improvise orders
+- Vertex AI Agent Builder + Conversational Agents handles the state machine deterministically, Gemini doesn't free-improvise orders
 
 **What can go wrong (per public reporting):**
 - Heavy ambient noise (semi truck idling next to drive-thru) confuses Chirp; fallback to human
@@ -332,9 +332,9 @@ Customer speaks at drive-thru speaker
 
 ---
 
-## 🏥 Verily Med-PaLM 2 — Specialized Medical Multi-Modal
+## 🏥 Verily Med-PaLM 2, Specialized Medical Multi-Modal
 
-**Verily** (Alphabet's life-sciences subsidiary) deploys **Med-PaLM 2** — a Gemini/PaLM-family model fine-tuned on medical literature, clinical question banks, and medical imaging — under Google Cloud Vertex AI.
+**Verily** (Alphabet's life-sciences subsidiary) deploys **Med-PaLM 2** a Gemini/PaLM-family model fine-tuned on medical literature, clinical question banks, and medical imaging under Google Cloud Vertex AI.
 
 **Why this is a multi-modal case study:**
 - Clinical imaging (X-rays, CT, histopathology) requires native vision
@@ -359,12 +359,12 @@ Customer speaks at drive-thru speaker
 | "Send images as base64 strings via the messages API." | You can, but GCS URIs are easier for files >5MB. |
 | "Audio + text in one prompt isn't supported." | It is. Mix any modalities. |
 | "Video is processed frame-by-frame at 30 fps." | Default is **1 fps** + audio track. Tunable. |
-| "PDFs are processed as text only." | Gemini renders pages to images + extracts text — both. |
+| "PDFs are processed as text only." | Gemini renders pages to images + extracts text, both. |
 | "Multi-modal tokens are free." | They're not. Image ≈ 258 tokens; audio ≈ 32 tokens/sec; video ≈ 290 tokens/sec at 1 fps. |
 | "Bounding boxes are returned in pixel coordinates." | Returned **normalized 0-1000** in the standard schema. |
 | "Gemini can only output text." | Gemini 2.0+ can natively output **text + image + audio**. |
 | "Files API uploads persist forever." | 48 hours on Gemini API surface; longer if in GCS for Vertex AI. |
-| "Multi-modal eliminates the need for grounding." | No — multi-modal helps with *understanding* the input; grounding helps with *factual* output (Module 5). |
+| "Multi-modal eliminates the need for grounding." | No, multi-modal helps with *understanding* the input; grounding helps with *factual* output (Module 5). |
 
 ---
 
@@ -392,18 +392,18 @@ Customer speaks at drive-thru speaker
 
 You now know:
 
-- 📸 **Native multi-modal** — what it means and why it differs from bolted-on vision
-- 📦 **Input modalities** — text, image, audio, video, PDF; limits + tokenization
-- 📤 **How to pass each modality** — Python SDK examples for all five
-- 👁️ **Vision** — describe, OCR, charts, bounding boxes, VQA, diagrams
-- 🎙️ **Audio** — transcribe, diarize, summarize, sentiment, translation
-- 🎬 **Video** — frames at 1 fps + audio; chapters, captions, action recognition
-- 📄 **PDF** — up to 1,000 pages; page citations
-- 🍔 **Wendy's FreshAI** — real drive-thru voice architecture
-- 🏥 **Verily Med-PaLM 2** — clinical-grade deployment
+- 📸 **Native multi-modal**, what it means and why it differs from bolted-on vision
+- 📦 **Input modalities**, text, image, audio, video, PDF; limits + tokenization
+- 📤 **How to pass each modality**, Python SDK examples for all five
+- 👁️ **Vision**, describe, OCR, charts, bounding boxes, VQA, diagrams
+- 🎙️ **Audio**, transcribe, diarize, summarize, sentiment, translation
+- 🎬 **Video**, frames at 1 fps + audio; chapters, captions, action recognition
+- 📄 **PDF**, up to 1,000 pages; page citations
+- 🍔 **Wendy's FreshAI**, real drive-thru voice architecture
+- 🏥 **Verily Med-PaLM 2**, clinical-grade deployment
 - 💰 **Token math** for multi-modal cost estimation
 
-**Next:** [Module 5 — RAG on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)
+**Next:** [Module 5, RAG on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)
 
 ---
 

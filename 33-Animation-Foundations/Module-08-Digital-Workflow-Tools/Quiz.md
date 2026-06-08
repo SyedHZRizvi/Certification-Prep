@@ -35,7 +35,7 @@ D. "Final" is acceptable as a file name if accompanied by a date stamp
 
 A. The primary render output format for animation masters
 B. The format for editing source files in a compositing pipeline
-C. The delivery format for web, streaming, and client review — not for production masters
+C. The delivery format for web, streaming, and client review, not for production masters
 D. A lossless format that preserves full quality through multiple editing generations
 
 ---
@@ -89,7 +89,7 @@ D. Back up 3 recent versions of every file, on 2 drives, every 1 hour
 
 A. Render engine preferences
 B. Color palette assignments for character designs
-C. Frame rate — changing it mid-production requires reconverting all timing
+C. Frame rate, changing it mid-production requires reconverting all timing
 D. The animation software version number
 
 ---
@@ -169,7 +169,7 @@ D. Render to the same format as the final delivery specification to maintain con
 ### Q19. Shotgrid (formerly Shotgun) is used in animation production for:
 
 A. Rendering final output shots with automated quality control
-B. Production tracking — managing shot progress, version approvals, and production schedules
+B. Production tracking, managing shot progress, version approvals, and production schedules
 C. Creating character rigs and automatic weight painting
 D. Compositing multiple rendered layers into final shots
 
@@ -205,7 +205,7 @@ D. A RAID array at a different office location
 ### Q23. An animation project that changes its frame rate from 24fps to 30fps mid-production will MOST likely experience:
 
 A. Improved smoothness that benefits action sequences
-B. Timing errors — all previously animated scenes will play at incorrect speeds or require re-timing
+B. Timing errors, all previously animated scenes will play at incorrect speeds or require re-timing
 C. A color space mismatch that must be corrected in the delivery pipeline
 D. Incompatibility with the rigging system used for characters
 
@@ -213,59 +213,59 @@ D. Incompatibility with the rigging system used for characters
 
 ### Q24. Which codec would you recommend for the first render output of a complex scene that will be composited in After Effects before final delivery?
 
-A. H.264 — small file size, universal compatibility
-B. JPEG sequence — fast to render, widely supported
-C. ProRes 4444 or PNG sequence — lossless quality, supports transparency for compositing
-D. MP4 (H.265) — best quality-to-file-size ratio
+A. H.264, small file size, universal compatibility
+B. JPEG sequence, fast to render, widely supported
+C. ProRes 4444 or PNG sequence, lossless quality, supports transparency for compositing
+D. MP4 (H.265), best quality-to-file-size ratio
 
 ---
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** The lesson is that backups must be actively configured and regularly tested. The studio had a backup system that silently failed.
+**Q1, B.** The lesson is that backups must be actively configured and regularly tested. The studio had a backup system that silently failed.
 
-**Q2 — C.** Zero-padded numbers (001, 002) ensure correct sorting in all file systems.
+**Q2, C.** Zero-padded numbers (001, 002) ensure correct sorting in all file systems.
 
-**Q3 — B.** Never name files "final." Revisions always occur. Use numerical versioning (v001, v002).
+**Q3, B.** Never name files "final." Revisions always occur. Use numerical versioning (v001, v002).
 
-**Q4 — C.** H.264 is a delivery codec for web/streaming/client review — not for production masters (lossy, quality degrades with re-encoding).
+**Q4 C.** H.264 is a delivery codec for web/streaming/client review not for production masters (lossy, quality degrades with re-encoding).
 
-**Q5 — B.** ProRes 4444 supports an alpha channel (transparency), essential for VFX compositing.
+**Q5, B.** ProRes 4444 supports an alpha channel (transparency), essential for VFX compositing.
 
-**Q6 — B.** PNG sequences are lossless — every frame is a perfect image that can be re-composited or edited without quality loss.
+**Q6 B.** PNG sequences are lossless every frame is a perfect image that can be re-composited or edited without quality loss.
 
-**Q7 — B.** 24fps to 25fps conversion creates either judder (from repeated frames) or ghosting (from frame blending).
+**Q7, B.** 24fps to 25fps conversion creates either judder (from repeated frames) or ghosting (from frame blending).
 
-**Q8 — D.** Toon Boom Harmony is the industry standard for 2D animation at Disney TV, DreamWorks TV, etc.
+**Q8, D.** Toon Boom Harmony is the industry standard for 2D animation at Disney TV, DreamWorks TV, etc.
 
-**Q9 — B.** 3-2-1: 3 copies, 2 different media types, 1 off-site.
+**Q9, B.** 3-2-1: 3 copies, 2 different media types, 1 off-site.
 
-**Q10 — C.** Frame rate must be locked before production begins. Changing mid-production requires reconverting all timing.
+**Q10, C.** Frame rate must be locked before production begins. Changing mid-production requires reconverting all timing.
 
-**Q11 — C.** DNxHD/DNxHR are Avid native codecs.
+**Q11, C.** DNxHD/DNxHR are Avid native codecs.
 
-**Q12 — B.** Rendered output goes in a dedicated Output/ or Render/ folder, separate from source files.
+**Q12, B.** Rendered output goes in a dedicated Output/ or Render/ folder, separate from source files.
 
-**Q13 — B.** Maya is the industry standard for 3D character animation in film and high-end game cinematics.
+**Q13, B.** Maya is the industry standard for 3D character animation in film and high-end game cinematics.
 
-**Q14 — B.** Lossless = 100% original quality preserved; no degradation.
+**Q14, B.** Lossless = 100% original quality preserved; no degradation.
 
-**Q15 — C.** Letterboxing adds black bars top and bottom so the widescreen content fits within the narrower frame.
+**Q15, C.** Letterboxing adds black bars top and bottom so the widescreen content fits within the narrower frame.
 
-**Q16 — B.** Frame.io is for client review and approval of animation content.
+**Q16, B.** Frame.io is for client review and approval of animation content.
 
-**Q17 — B.** Broadcast television uses Rec. 709; sRGB may show slightly different colors on broadcast calibrated monitors.
+**Q17, B.** Broadcast television uses Rec. 709; sRGB may show slightly different colors on broadcast calibrated monitors.
 
-**Q18 — B.** Render lossless → edit in ProRes → deliver H.264/H.265. Never render production masters in H.264.
+**Q18, B.** Render lossless → edit in ProRes → deliver H.264/H.265. Never render production masters in H.264.
 
-**Q19 — B.** Shotgrid/Shotgun is production tracking — shot progress, version approvals, scheduling.
+**Q19 B.** Shotgrid/Shotgun is production tracking shot progress, version approvals, scheduling.
 
-**Q20 — B.** Blender is free and open-source with rapidly improving professional tools, making it increasingly used by independent animators and smaller studios.
+**Q20, B.** Blender is free and open-source with rapidly improving professional tools, making it increasingly used by independent animators and smaller studios.
 
-**Q21 — C.** Three-digit version numbers sort correctly when there are 10+ versions. "v3, v12, v98" sort alphabetically as v12, v3, v98 — incorrect order.
+**Q21 C.** Three-digit version numbers sort correctly when there are 10+ versions. "v3, v12, v98" sort alphabetically as v12, v3, v98 incorrect order.
 
-**Q22 — B.** A second drive in the same computer fails with the computer — single point of failure. Not a backup.
+**Q22 B.** A second drive in the same computer fails with the computer single point of failure. Not a backup.
 
-**Q23 — B.** Changing frame rate mid-production causes timing errors across all previously animated scenes.
+**Q23, B.** Changing frame rate mid-production causes timing errors across all previously animated scenes.
 
-**Q24 — C.** ProRes 4444 or PNG sequence — lossless, supports transparency, preserves full quality for compositing.
+**Q24 C.** ProRes 4444 or PNG sequence lossless, supports transparency, preserves full quality for compositing.

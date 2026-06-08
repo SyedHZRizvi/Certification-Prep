@@ -18,7 +18,7 @@ D. Keyword
 ### Q2. Broad Match Modifier (BMM) was: *(Remember)*
 A. Strengthened in 2024
 B. Renamed to "Phrase Plus" in 2023
-C. Retired in 2021 — folded into phrase match
+C. Retired in 2021, folded into phrase match
 D. Replaced with Custom Match
 
 ---
@@ -33,7 +33,7 @@ D. 100
 
 ### Q4. A new account with 8 conversions/month wants to switch to tCPA bidding. The correct advice is: *(Apply)*
 A. Yes, set tCPA at the current CPA
-B. No — Smart Bidding needs ≥30 conversions/month; stay on Maximize Conversions
+B. No, Smart Bidding needs ≥30 conversions/month; stay on Maximize Conversions
 C. Yes, but set tCPA 50% higher than current CPA
 D. Switch to Manual CPC instead
 
@@ -193,7 +193,7 @@ D. Country-wide
 
 ### Q24. The MOST common mistake on a brand-new Search campaign is: *(Evaluate)*
 A. Forgetting to add extensions
-B. Leaving "Display Network" opt-in checked (default) — wastes budget on irrelevant Display traffic
+B. Leaving "Display Network" opt-in checked (default), wastes budget on irrelevant Display traffic
 C. Using more than 5 keywords
 D. Setting daily budget too high
 
@@ -236,13 +236,13 @@ D. It reduces ad cost
 ### Q1: **B. Campaign**
 Budget lives at the campaign level. Bidding strategy, geo, schedule, and networks also live at the campaign level. Ad groups contain keywords + ads + (optional) audiences.
 
-### Q2: **C. Retired in 2021 — folded into phrase match**
+### Q2: **C. Retired in 2021, folded into phrase match**
 Google retired BMM in 2021 and merged its functionality into phrase match. Any answer choice referencing BMM in 2026 is a trap.
 
 ### Q3: **C. 30**
 The 30-conversions-in-30-days rule is constantly tested. Below 30, Smart Bidding (tCPA, tROAS) doesn't have enough data and will spend wildly. Use Maximize Conversions until you cross the threshold.
 
-### Q4: **B. No — Smart Bidding needs ≥30 conversions/month; stay on Maximize Conversions**
+### Q4: **B. No, Smart Bidding needs ≥30 conversions/month; stay on Maximize Conversions**
 Premature tCPA = starved algorithm = wasted spend. The right move is to keep Max Conversions until conversion volume crosses 30/month, then test tCPA.
 
 ### Q5: **C. 15 headlines and 4 descriptions**
@@ -252,7 +252,7 @@ RSAs allow up to 15 headlines (30 chars each) and 4 descriptions (90 chars each)
 Excellent Ad Strength requires variation, completeness, and keyword presence. Pinning all to position 1 or using identical phrasing both hurt Ad Strength.
 
 ### Q7: **C. Bid × Quality Score + expected impact of extensions**
-Ad Rank = Max CPC × Quality Score + extension impact. A common simplification on the exam, but the extension component matters — sitelinks and callouts measurably boost Ad Rank.
+Ad Rank = Max CPC × Quality Score + extension impact. A common simplification on the exam, but the extension component matters, sitelinks and callouts measurably boost Ad Rank.
 
 ### Q8: **C. The QS-10 ad higher**
 QS-10 × $2 = 20. QS-5 × $4 = 20. Tied on simple math, but with extension impact a QS-10 ad almost always edges out. The conceptual point: higher QS lets you pay less and still win.
@@ -267,7 +267,7 @@ High CTR + low conversion = clicks coming from irrelevant queries triggering you
 This distinction is constantly tested. Bidding on "running shoes" (phrase match) might trigger for the search term "where can I buy running shoes near me." That search term is what shows in the Search Terms report.
 
 ### Q12: **C. "free" (unless your offer is free)**
-"Free" is the #1 universal negative — it pulls bargain-hunters and freebie-seekers who won't convert. Other near-universal negatives: torrent, download, jobs, salary, wikipedia, reddit, review (if you're not the review site).
+"Free" is the #1 universal negative, it pulls bargain-hunters and freebie-seekers who won't convert. Other near-universal negatives: torrent, download, jobs, salary, wikipedia, reddit, review (if you're not the review site).
 
 ### Q13: **C. 10-mile radius around studio + nearby cities**
 Local businesses need tight geo. United States or even Arizona burns the budget on people too far to drive in. Use the actual driving radius + adjacent cities you genuinely serve.
@@ -315,7 +315,7 @@ The weekly 15-minute negative keyword routine is non-negotiable. Daily is better
 Shared lists are powerful for account-wide exclusions (jobs, free, competitor names). Update once, applies everywhere it's attached.
 
 ### Q28: **B. To give Smart Bidding more variation to test and pick the best combinations per search**
-RSAs work by Google testing combinations in real time. More variation = more tests = better matching to each searcher. Filling slots doesn't directly boost QS — it boosts Ad Strength, which correlates with performance.
+RSAs work by Google testing combinations in real time. More variation = more tests = better matching to each searcher. Filling slots doesn't directly boost QS, it boosts Ad Strength, which correlates with performance.
 
 ---
 

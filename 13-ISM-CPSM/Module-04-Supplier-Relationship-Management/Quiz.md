@@ -136,7 +136,7 @@ D. No scorecards
 
 ### Q17. Supplier audits should be: *(Understand)*
 A. Identical for all suppliers
-B. Risk-based — frequency and depth tied to tier and risk profile
+B. Risk-based, frequency and depth tied to tier and risk profile
 C. Outsourced entirely to third parties
 D. Discontinued for cost reasons
 
@@ -144,7 +144,7 @@ D. Discontinued for cost reasons
 
 ### Q18. The MOST appropriate response when a Tier-3 (transactional / approved) supplier underperforms slightly is: *(Apply)*
 A. Launch a full supplier development program
-B. Apply a standard corrective action and consider replacing if it continues — Tier-3 doesn't warrant deep investment
+B. Apply a standard corrective action and consider replacing if it continues, Tier-3 doesn't warrant deep investment
 C. Make them a Tier-1
 D. Ignore the issue
 
@@ -176,7 +176,7 @@ D. Refuse to take their calls
 
 ### Q22. A supplier offers your category manager personal Super Bowl tickets during a contract renewal negotiation. The BEST response is: *(Evaluate)*
 A. Accept; it's a gesture of goodwill
-B. Decline politely, disclose per company policy, and document — gifts during active negotiation present conflicts of interest
+B. Decline politely, disclose per company policy, and document, gifts during active negotiation present conflicts of interest
 C. Accept but pay the supplier back later
 D. Accept and disclose only if asked
 
@@ -217,7 +217,7 @@ D. Reducing cost
 ## 🎯 Answers + Explanations
 
 ### Q1: **B.** SRM is lifecycle, value, and risk-focused.
-### Q2: **A.** Pareto — small number of strategic suppliers, big chunk of spend.
+### Q2: **A.** Pareto, small number of strategic suppliers, big chunk of spend.
 ### Q3: **D.** Personal preference has no place in a scorecard.
 ### Q4: **B.** Supplier development is exactly the right play for a strategic supplier with a fixable gap.
 ### Q5: **B.** Quarterly Business Review.
@@ -237,7 +237,7 @@ D. Reducing cost
 ### Q19: **B.** US federal contracts and many enterprise customers require tier-2 reporting.
 ### Q20: **B.** Vested = outcome-based, win-win, shared incentives.
 ### Q21: **B.** Structured transition with knowledge transfer.
-### Q22: **B.** Ethics scenario — decline + disclose + document. Module 7 will reinforce.
+### Q22: **B.** Ethics scenario, decline + disclose + document. Module 7 will reinforce.
 ### Q23: **B.** Supplier-driven innovation contribution is a world-class metric.
 ### Q24: **B.** Co-developed scorecards work. Surprises don't.
 ### Q25: **B.** Exec sponsorship + QBR + escalation = governance.

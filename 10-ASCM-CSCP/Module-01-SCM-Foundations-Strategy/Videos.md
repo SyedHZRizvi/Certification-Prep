@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: SCM Foundations & Strategy
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — the SCOR vocabulary is testable verbatim.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, the SCOR vocabulary is testable verbatim.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SCOR Model Explained — Plan, Source, Make, Deliver, Return, Enable</p>
+      <p class="vg-title">SCOR Model Explained, Plan, Source, Make, Deliver, Return, Enable</p>
       <p class="vg-creator">ASCM Official</p>
       <span class="vg-duration">⏱ 12 min · The 6 SCOR processes</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Caltech Lecture — Strategic Supply Chain Management</p>
+      <p class="vg-title">Caltech Lecture, Strategic Supply Chain Management</p>
       <p class="vg-creator">Caltech</p>
       <span class="vg-duration">⏱ 50 min · Academic deep dive</span>
     </div>
@@ -133,7 +133,7 @@
 
 | Channel | Why |
 |---------|-----|
-| **ASCM Official** | The source — SCOR videos straight from the standards body |
+| **ASCM Official** | The source, SCOR videos straight from the standards body |
 | **MIT OpenCourseWare (CTL)** | Center for Transportation & Logistics, free graduate-level material |
 | **Caltech / Stanford Online** | Solid academic SC lectures |
 | **Operations Insider** | Exam-pragmatic CSCP/CPIM/CLTD content |

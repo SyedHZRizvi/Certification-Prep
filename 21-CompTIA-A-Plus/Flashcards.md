@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,7 +275,7 @@
 ## 📱 SECTION 1: MOBILE DEVICES
 
 **Q:** What does MDM stand for?
-**A:** Mobile Device Management — central control of phones/tablets (policies, remote wipe, app inventory).
+**A:** Mobile Device Management, central control of phones/tablets (policies, remote wipe, app inventory).
 
 **Q:** Maximum theoretical speed of 5G (sub-6 GHz, mid-band)?
 **A:** ~1 Gbps real-world; mmWave 5G can reach 10 Gbps in lab conditions.
@@ -293,7 +293,7 @@
 **A:** Exchange ActiveSync (EAS) for Microsoft 365; CardDAV/CalDAV for open standards.
 
 **Q:** PRL stands for?
-**A:** Preferred Roaming List — CDMA-era list telling phone which towers to prefer.
+**A:** Preferred Roaming List, CDMA-era list telling phone which towers to prefer.
 
 **Q:** Difference between BYOD, COBO, COPE, and CYOD?
 **A:** BYOD = user owns; COBO = corporate-owned, business-only; COPE = corp-owned, personally enabled; CYOD = choose-your-own from corporate list.
@@ -312,10 +312,10 @@
 **A:** 80 / 443 / 22 / 23 / 21 / 22 (over SSH) / 25 / 143 / 110 / 53 / 67-68 / 3389 / 445 / 389 / 636.
 
 **Q:** What does DHCP do and which 4 messages does it use?
-**A:** Assigns IP addresses. Messages: DORA — Discover, Offer, Request, Acknowledge.
+**A:** Assigns IP addresses. Messages: DORA, Discover, Offer, Request, Acknowledge.
 
 **Q:** APIPA range?
-**A:** 169.254.0.0/16 — assigned by Windows when DHCP fails.
+**A:** 169.254.0.0/16, assigned by Windows when DHCP fails.
 
 **Q:** Private IP ranges (RFC 1918)?
 **A:** 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.
@@ -324,18 +324,18 @@
 **A:** /8 (255.0.0.0), /16 (255.255.0.0), /24 (255.255.255.0).
 
 **Q:** What does NAT do?
-**A:** Network Address Translation — maps many private IPs to one public IP at the router.
+**A:** Network Address Translation, maps many private IPs to one public IP at the router.
 
 **Q:** What's the difference between a hub, switch, and router?
 **A:** Hub = dumb repeater (L1); switch = MAC-learning forwarder (L2); router = IP forwarder between networks (L3).
 
-**Q:** Cat 5e vs Cat 6 vs Cat 6a — max speed and distance?
+**Q:** Cat 5e vs Cat 6 vs Cat 6a, max speed and distance?
 **A:** 5e: 1 Gbps @ 100m; 6: 1 Gbps @ 100m or 10 Gbps @ 55m; 6a: 10 Gbps @ 100m.
 
 **Q:** What is PoE and what standards exist?
-**A:** Power over Ethernet — 802.3af (15.4W), 802.3at PoE+ (30W), 802.3bt PoE++ (60–100W).
+**A:** Power over Ethernet, 802.3af (15.4W), 802.3at PoE+ (30W), 802.3bt PoE++ (60–100W).
 
-**Q:** 802.11 a/b/g/n/ac/ax/be — frequency bands?
+**Q:** 802.11 a/b/g/n/ac/ax/be, frequency bands?
 **A:** a: 5 GHz; b/g: 2.4 GHz; n: dual; ac (Wi-Fi 5): 5 GHz; ax (Wi-Fi 6/6E): 2.4/5/6 GHz; be (Wi-Fi 7): 2.4/5/6 GHz with MLO.
 
 **Q:** RJ-45 vs RJ-11?
@@ -346,50 +346,50 @@
 
 ---
 
-## 🖥️ SECTION 3: HARDWARE — CPU/RAM/STORAGE
+## 🖥️ SECTION 3: HARDWARE, CPU/RAM/STORAGE
 
-**Q:** Intel LGA vs AMD socket — what's the physical difference?
-**A:** LGA = Land Grid Array, pins are on the motherboard, flat pads on the CPU. AMD historically used PGA (Pin Grid Array — pins on CPU), but AM5 switched to LGA. Sockets: LGA1700 (Intel 12-14th gen), AM5 (Ryzen 7000+).
+**Q:** Intel LGA vs AMD socket, what's the physical difference?
+**A:** LGA = Land Grid Array, pins are on the motherboard, flat pads on the CPU. AMD historically used PGA (Pin Grid Array, pins on CPU), but AM5 switched to LGA. Sockets: LGA1700 (Intel 12-14th gen), AM5 (Ryzen 7000+).
 
-**Q:** DDR4 vs DDR5 — key differences?
+**Q:** DDR4 vs DDR5, key differences?
 **A:** DDR5 has higher base speeds (4800+ MT/s vs 3200 MT/s), on-DIMM voltage regulation, two 32-bit subchannels per DIMM, and is not pin-compatible with DDR4.
 
-**Q:** RAM channels: single vs dual vs quad — performance impact?
+**Q:** RAM channels: single vs dual vs quad, performance impact?
 **A:** Dual ~ 2× bandwidth of single. Quad doubles again. Mismatched DIMM sizes can downgrade to single-channel.
 
-**Q:** ECC RAM — what does it do?
-**A:** Error-Correcting Code — uses extra parity bits to detect and correct single-bit errors. Required in servers; uncommon on consumer desktops.
+**Q:** ECC RAM, what does it do?
+**A:** Error-Correcting Code, uses extra parity bits to detect and correct single-bit errors. Required in servers; uncommon on consumer desktops.
 
-**Q:** HDD vs SSD vs NVMe — interface and speed?
+**Q:** HDD vs SSD vs NVMe, interface and speed?
 **A:** HDD spinning platter, SATA, ~150 MB/s. SATA SSD ~550 MB/s. NVMe (PCIe) Gen 3 ~3,500 MB/s, Gen 4 ~7,000 MB/s, Gen 5 ~14,000 MB/s.
 
-**Q:** M.2 — what protocols can it carry?
-**A:** SATA (B+M keyed) OR NVMe over PCIe (M keyed) OR sometimes Wi-Fi (A+E keyed). Same slot, different signals — check the keying.
+**Q:** M.2, what protocols can it carry?
+**A:** SATA (B+M keyed) OR NVMe over PCIe (M keyed) OR sometimes Wi-Fi (A+E keyed). Same slot, different signals, check the keying.
 
-**Q:** RAID 0 / 1 / 5 / 6 / 10 — what each does?
+**Q:** RAID 0 / 1 / 5 / 6 / 10, what each does?
 **A:** 0 = stripe (speed, zero redundancy); 1 = mirror (redundancy, no capacity gain); 5 = stripe + parity (1 disk loss); 6 = stripe + dual parity (2 disk loss); 10 = mirror of stripes (speed + redundancy).
 
 **Q:** Minimum disks for RAID 5? RAID 6? RAID 10?
 **A:** RAID 5 = 3 disks. RAID 6 = 4 disks. RAID 10 = 4 disks (and an even number).
 
 **Q:** Common PSU efficiency ratings (80 PLUS tiers)?
-**A:** White, Bronze, Silver, Gold, Platinum, Titanium — Titanium is highest (94%+ at 50% load).
+**A:** White, Bronze, Silver, Gold, Platinum, Titanium, Titanium is highest (94%+ at 50% load).
 
-**Q:** Typical PSU connectors: 24-pin / 8-pin EPS / 6+2 PCIe / SATA / Molex — what each powers?
+**Q:** Typical PSU connectors: 24-pin / 8-pin EPS / 6+2 PCIe / SATA / Molex, what each powers?
 **A:** 24-pin → motherboard; 8-pin EPS → CPU; 6+2 PCIe → GPU; SATA → drives; Molex → fans/legacy.
 
 **Q:** ATX vs mATX vs ITX form factors?
 **A:** ATX 12×9.6 in (most expansion); mATX 9.6×9.6 (compact, 4 slots); Mini-ITX 6.7×6.7 (SFF, 1 slot).
 
 **Q:** What does TPM do?
-**A:** Trusted Platform Module — secure crypto-processor that stores keys, used for BitLocker, Secure Boot, Windows 11 attestation. TPM 2.0 required for Windows 11.
+**A:** Trusted Platform Module, secure crypto-processor that stores keys, used for BitLocker, Secure Boot, Windows 11 attestation. TPM 2.0 required for Windows 11.
 
 ---
 
 ## ☁️ SECTION 4: VIRTUALIZATION & CLOUD
 
 **Q:** Type 1 vs Type 2 hypervisor?
-**A:** Type 1 (bare-metal) runs directly on hardware — ESXi, Hyper-V, KVM, Xen. Type 2 (hosted) runs on top of an OS — VMware Workstation, VirtualBox, Parallels.
+**A:** Type 1 (bare-metal) runs directly on hardware ESXi, Hyper-V, KVM, Xen. Type 2 (hosted) runs on top of an OS VMware Workstation, VirtualBox, Parallels.
 
 **Q:** What is IaaS / PaaS / SaaS?
 **A:** IaaS = raw infrastructure (EC2, VMs); PaaS = managed runtime (App Service, Heroku); SaaS = ready software (Gmail, M365).
@@ -397,17 +397,17 @@
 **Q:** What is virtualization's "snapshot"?
 **A:** Point-in-time capture of a VM's disk + memory state. Used for testing/rollback. Not a substitute for backup.
 
-**Q:** Public / Private / Hybrid / Community cloud — define each?
+**Q:** Public / Private / Hybrid / Community cloud, define each?
 **A:** Public = multi-tenant (AWS, Azure); Private = single org (your data center); Hybrid = mix of public + private with orchestration; Community = shared by orgs with similar needs (gov, healthcare).
 
 **Q:** What is rapid elasticity?
-**A:** Cloud resources can scale up and down automatically with demand — a core NIST cloud characteristic.
+**A:** Cloud resources can scale up and down automatically with demand, a core NIST cloud characteristic.
 
 **Q:** What is measured service?
-**A:** Cloud usage is metered (CPU-hours, GB-months) and you pay for what you use — another NIST cloud characteristic.
+**A:** Cloud usage is metered (CPU-hours, GB-months) and you pay for what you use, another NIST cloud characteristic.
 
 **Q:** VDI stands for?
-**A:** Virtual Desktop Infrastructure — user desktops run as VMs in the data center; user accesses via thin client/laptop.
+**A:** Virtual Desktop Infrastructure, user desktops run as VMs in the data center; user accesses via thin client/laptop.
 
 **Q:** Difference between containers and VMs?
 **A:** VMs include a full OS (heavy, isolated, ~GBs). Containers share the host kernel (light, ~MBs, start in seconds). Docker is the most common container runtime.
@@ -423,24 +423,24 @@
 **A:** Question the user AND identify recent changes. Ask "what changed?"
 
 **Q:** What is the OSI model bottom-up mnemonic?
-**A:** Please Do Not Throw Sausage Pizza Away — Physical, Data Link, Network, Transport, Session, Presentation, Application.
+**A:** Please Do Not Throw Sausage Pizza Away, Physical, Data Link, Network, Transport, Session, Presentation, Application.
 
 **Q:** Common POST beep code pattern: "1 long, 3 short" usually means?
-**A:** Video card / GPU issue (varies by BIOS vendor — Award/AMI/Phoenix differ). Always consult the motherboard manual.
+**A:** Video card / GPU issue (varies by BIOS vendor, Award/AMI/Phoenix differ). Always consult the motherboard manual.
 
-**Q:** No POST and no fans — first three things to check?
+**Q:** No POST and no fans, first three things to check?
 **A:** (1) PSU power switch + cable; (2) Front-panel power connector to motherboard; (3) PSU itself (paperclip test or known-good PSU).
 
-**Q:** Black screen but fans spin — likely causes?
+**Q:** Black screen but fans spin, likely causes?
 **A:** GPU failure, RAM not seated, dead motherboard, monitor cable, or wrong display input.
 
-**Q:** Continuous beeps from a desktop at boot — most common cause?
-**A:** RAM problem — reseat or test single sticks.
+**Q:** Continuous beeps from a desktop at boot, most common cause?
+**A:** RAM problem, reseat or test single sticks.
 
 **Q:** RAID 5 failure: 1 disk shows red. What's the immediate action?
 **A:** Identify the failed disk, replace it with a same-size or larger disk, and let the array rebuild. Don't unplug a working disk by mistake.
 
-**Q:** Network "can't reach 8.8.8.8" but local LAN works — likely cause?
+**Q:** Network "can't reach 8.8.8.8" but local LAN works, likely cause?
 **A:** Default gateway, ISP issue, DNS not the problem (you used an IP). Test traceroute.
 
 ---
@@ -450,32 +450,32 @@
 **Q:** 7 steps of the laser printing process?
 **A:** Processing → Charging → Exposing → Developing → Transferring → Fusing → Cleaning. (Mnemonic: "Cool People Eat Donuts To Fuse Carbohydrates")
 
-**Q:** Inkjet head clogged — first remedy?
+**Q:** Inkjet head clogged, first remedy?
 **A:** Run the printer's built-in head-cleaning utility, then print a test page.
 
-**Q:** Thermal printer — what consumable do you replace and what wears out?
+**Q:** Thermal printer, what consumable do you replace and what wears out?
 **A:** Thermal paper (no ink). The thermal print head degrades over time.
 
 **Q:** Most common cause of "ghost image" on laser print?
 **A:** Failing drum, low toner, or worn fuser unit. Often the drum.
 
-**Q:** Printer "paper jam" recurring at the same spot — what's likely?
-**A:** Worn pickup roller or separation pad — replace.
+**Q:** Printer "paper jam" recurring at the same spot, what's likely?
+**A:** Worn pickup roller or separation pad, replace.
 
-**Q:** Networked printer suddenly offline to all users — first check?
+**Q:** Networked printer suddenly offline to all users, first check?
 **A:** Network connectivity (ping the printer IP), then check print server queue.
 
 ---
 
 ## 💻 SECTION 7: OPERATING SYSTEMS
 
-**Q:** Windows file systems: FAT32 / exFAT / NTFS / ReFS — when to use each?
+**Q:** Windows file systems: FAT32 / exFAT / NTFS / ReFS, when to use each?
 **A:** FAT32: ≤32 GB volumes, ≤4 GB files, cross-platform; exFAT: large flash drives, no journaling; NTFS: Windows default, journaling, ACLs, encryption; ReFS: server-class, resilient to corruption, no compression.
 
-**Q:** macOS file system — what is APFS?
-**A:** Apple File System — replaced HFS+ in macOS 10.13 (2017). Optimized for SSDs, native encryption, snapshots, cloning, container-based.
+**Q:** macOS file system, what is APFS?
+**A:** Apple File System, replaced HFS+ in macOS 10.13 (2017). Optimized for SSDs, native encryption, snapshots, cloning, container-based.
 
-**Q:** Linux file systems — ext4 vs XFS vs Btrfs?
+**Q:** Linux file systems, ext4 vs XFS vs Btrfs?
 **A:** ext4 = default, journaling, mature; XFS = great for huge files, RHEL default; Btrfs = snapshots, COW, like ZFS-lite.
 
 **Q:** Windows boot loader path on UEFI?
@@ -493,13 +493,13 @@
 **Q:** Three CLI shells common on A+?
 **A:** cmd.exe (legacy Windows), PowerShell (modern Windows / cross-platform), bash (Linux/macOS default).
 
-**Q:** Windows: `ipconfig /all` vs `ipconfig /release` /renew /flushdns — what each does?
+**Q:** Windows: `ipconfig /all` vs `ipconfig /release` /renew /flushdns, what each does?
 **A:** /all = full network info; /release = give up DHCP lease; /renew = request new lease; /flushdns = clear DNS resolver cache.
 
 **Q:** Linux equivalent of `ipconfig`?
 **A:** `ip a` (modern) or `ifconfig` (legacy).
 
-**Q:** Windows network share permissions vs NTFS permissions — which wins?
+**Q:** Windows network share permissions vs NTFS permissions, which wins?
 **A:** Most restrictive of the two wins when combined.
 
 ---
@@ -513,9 +513,9 @@
 **A:** Authentication = prove who you are. Authorization = what you're allowed to do once authenticated.
 
 **Q:** What is the principle of least privilege?
-**A:** Grant the minimum access needed for the role/task — no more.
+**A:** Grant the minimum access needed for the role/task, no more.
 
-**Q:** BitLocker / FileVault / LUKS — what each does?
+**Q:** BitLocker / FileVault / LUKS, what each does?
 **A:** All are full-disk encryption: BitLocker = Windows, FileVault = macOS, LUKS = Linux (Linux Unified Key Setup).
 
 **Q:** Phishing vs Smishing vs Vishing vs Whaling?
@@ -534,7 +534,7 @@
 **A:** Malware that hides at the kernel level or below, bypassing OS visibility. Often requires reimaging to remove.
 
 **Q:** What does EFS do (Windows)?
-**A:** Encrypting File System — per-file/folder encryption tied to user's account/cert. Different from BitLocker (volume-level).
+**A:** Encrypting File System, per-file/folder encryption tied to user's account/cert. Different from BitLocker (volume-level).
 
 **Q:** What is a guest network and why use one?
 **A:** Separate Wi-Fi SSID/VLAN for visitors, isolated from internal LAN. Limits lateral movement.
@@ -553,7 +553,7 @@
 **A:** (1) Files renamed with new extensions (e.g. .locked); (2) ransom note files in every folder; (3) inability to open formerly working documents.
 
 **Q:** First action when ransomware is suspected on a corporate machine?
-**A:** Isolate (disconnect network — wired and wireless), then notify SOC/IR. Don't pay. Don't reboot before evidence capture if forensics is in scope.
+**A:** Isolate (disconnect network, wired and wireless), then notify SOC/IR. Don't pay. Don't reboot before evidence capture if forensics is in scope.
 
 ---
 
@@ -563,10 +563,10 @@
 **A:** Help-desk record. Fields: requester, date/time, category, description, severity, asset(s), assignee, status, resolution notes.
 
 **Q:** What is a CMDB?
-**A:** Configuration Management Database — inventory of every IT asset and its relationships (which server runs which app, depends on which DB).
+**A:** Configuration Management Database, inventory of every IT asset and its relationships (which server runs which app, depends on which DB).
 
 **Q:** CAB stands for?
-**A:** Change Advisory Board — group that approves/rejects production changes.
+**A:** Change Advisory Board, group that approves/rejects production changes.
 
 **Q:** Difference between standard, normal, and emergency change?
 **A:** Standard = pre-approved low-risk (template); Normal = full CAB review; Emergency = expedited (production fire), reviewed retrospectively.
@@ -584,10 +584,10 @@
 **A:** Electrostatic Discharge. Mitigation: anti-static wrist strap, ESD mat, low-humidity-aware handling, grounded workstation.
 
 **Q:** MSDS stands for and where do you find one?
-**A:** Material Safety Data Sheet (now SDS in many jurisdictions) — chemical safety info. Find from the manufacturer or supplier.
+**A:** Material Safety Data Sheet (now SDS in many jurisdictions), chemical safety info. Find from the manufacturer or supplier.
 
 **Q:** What is PII?
-**A:** Personally Identifiable Information — data that can identify a person (SSN, DOB, address combined with name). Often legally protected.
+**A:** Personally Identifiable Information, data that can identify a person (SSN, DOB, address combined with name). Often legally protected.
 
 **Q:** PHI vs PCI scope?
 **A:** PHI = Protected Health Information (HIPAA). PCI = Payment Card Industry data (PCI-DSS).
@@ -596,22 +596,22 @@
 
 ## 📱 SECTION 11: MOBILE TROUBLESHOOTING
 
-**Q:** Phone battery drains fast — top 3 causes?
+**Q:** Phone battery drains fast, top 3 causes?
 **A:** (1) Background apps with location/sync abuse; (2) battery aged (chemical wear); (3) signal hunting in poor coverage.
 
-**Q:** Phone running hot during normal use — investigate first?
+**Q:** Phone running hot during normal use, investigate first?
 **A:** CPU-heavy background app, malware, charging while in case, environment temperature, failing battery.
 
-**Q:** Wi-Fi works but cellular won't — top checks?
+**Q:** Wi-Fi works but cellular won't, top checks?
 **A:** Airplane mode off, mobile data toggle on, APN settings correct, SIM seated, account active, signal strength.
 
-**Q:** App keeps crashing on Android — order of fixes?
+**Q:** App keeps crashing on Android, order of fixes?
 **A:** (1) Force-stop app; (2) clear cache; (3) clear data; (4) uninstall/reinstall; (5) check OS update; (6) safe-mode boot to test.
 
 **Q:** What is OTA?
-**A:** Over-The-Air — wireless firmware/OS update delivery.
+**A:** Over-The-Air, wireless firmware/OS update delivery.
 
-**Q:** GPS not getting a fix — what to try?
+**Q:** GPS not getting a fix, what to try?
 **A:** Outdoor with clear sky view, toggle location, restart phone, ensure A-GPS / cellular enabled (A-GPS uses tower data for faster lock).
 
 ---
@@ -622,7 +622,7 @@
 **A:** Step-by-step procedural document for a specific task (e.g., "Restart the email gateway"). Lives next to the system.
 
 **Q:** What is a knowledge base?
-**A:** Searchable repository of solutions, articles, how-tos — used by help desk and end users.
+**A:** Searchable repository of solutions, articles, how-tos, used by help desk and end users.
 
 **Q:** What's the difference between a hot, warm, and cold site?
 **A:** Hot = fully running duplicate, instant failover (expensive); Warm = hardware ready, data needs sync; Cold = empty space, hardware delivered after disaster (cheapest).
@@ -633,7 +633,7 @@
 **Q:** Why test backups?
 **A:** Untested backups are unknown-good. Many orgs find they can't actually restore until they try.
 
-**Q:** Tabletop exercise — what is it?
+**Q:** Tabletop exercise, what is it?
 **A:** Discussion-based walkthrough of a scenario (no actual systems touched). Cheap, fast, surfaces gaps.
 
 ---

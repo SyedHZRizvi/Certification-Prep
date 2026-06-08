@@ -76,7 +76,7 @@ D. 1D Blend Tree
 ### 8. The Valorant animation team (Riot Games, GDC 2020) designed their Blend Spaces primarily around:
 
 A. Cinematic realism for marketing materials
-B. Competitive clarity — silhouette readability for players at distance
+B. Competitive clarity, silhouette readability for players at distance
 C. Minimum GPU cost for low-end PC players
 D. Cinematic-quality character performance matching film animation
 
@@ -166,7 +166,7 @@ D. A global parameter that overrides all other parameters
 ### 18. An additive layer in Unity's Animator requires the clip to be authored as:
 
 A. A full-pose clip normalized to the character's rest pose
-B. The delta from a reference pose — not the full pose
+B. The delta from a reference pose, not the full pose
 C. A clip with only root bone keyframes
 D. A clip captured from motion capture at real-world speed
 
@@ -283,34 +283,34 @@ D. Bake a pose to a static frame for performance LOD
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B — 1000ms ÷ 60fps ≈ 16.67ms
-2.  C — Trigger is consumed (reset) after one transition
-3.  B — Root Motion drives world position/rotation from animation clip
-4.  B — Humanoid enables retargeting between different biped models
-5.  B — Has Exit Time auto-fires transition at the normalized clip time fraction
-6.  C — AnimGraph contains animation logic (state machines, pose nodes)
-7.  D — Blend Space 1D = Unity 1D Blend Tree
-8.  B — Valorant: silhouette readability at competitive viewing distances
-9.  B — Montage = one-shot Slot-override for attacks, abilities, interactions
-10. C — Control Rig runs on the animation worker thread (parallel, GPU-compatible)
-11. B — Spine stores keyframes on a bone hierarchy, interpolated at runtime
-12. B — Slot = draw order + active attachment on a bone
-13. B — 2 bone influences per vertex = mobile GPU skinning limit
-14. B — Track 0 = base looping animation
-15. B — Skins enable attachment swapping for character customization
-16. B — Hades: Unity + Spine 2D (Supergiant GDC 2020)
-17. B — AnyState: transition fires from any currently active state
-18. B — Additive clips are deltas from reference pose, not full poses
-19. A — Layered Blend Per Bone ≈ Unity Avatar Mask + Layer
-20. B — FFD: mesh vertices keyframed directly without additional bones
-21. B — Dead Cells: low bone count (~15–25) + optimized C runtime
-22. D — AnyState node for high-priority transitions like Death
-23. B — Event Graph computes parameters (Speed, IsGrounded) from owning pawn
-24. B — Power-of-two required for GPU texture compression
-25. B — Niagara: arbitrary attributes + full node graph vs. Cascade fixed modules
-26. B — Avatar Mask: defines which bones a layer can affect
-27. B — Bend Direction: which way the middle joint bends
-28. B — In-Place animation + NavMeshAgent controlling position is the clean approach
-29. C — Hollow Knight: IK for hand/foot contact placement
-30. A — Cached Pose: reuse computed pose in multiple graph branches
+1.  B: 1000ms ÷ 60fps ≈ 16.67ms
+2.  C: Trigger is consumed (reset) after one transition
+3.  B: Root Motion drives world position/rotation from animation clip
+4.  B: Humanoid enables retargeting between different biped models
+5.  B: Has Exit Time auto-fires transition at the normalized clip time fraction
+6.  C: AnimGraph contains animation logic (state machines, pose nodes)
+7.  D: Blend Space 1D = Unity 1D Blend Tree
+8.  B: Valorant: silhouette readability at competitive viewing distances
+9.  B: Montage = one-shot Slot-override for attacks, abilities, interactions
+10. C: Control Rig runs on the animation worker thread (parallel, GPU-compatible)
+11. B: Spine stores keyframes on a bone hierarchy, interpolated at runtime
+12. B: Slot = draw order + active attachment on a bone
+13. B: 2 bone influences per vertex = mobile GPU skinning limit
+14. B: Track 0 = base looping animation
+15. B: Skins enable attachment swapping for character customization
+16. B: Hades: Unity + Spine 2D (Supergiant GDC 2020)
+17. B: AnyState: transition fires from any currently active state
+18. B: Additive clips are deltas from reference pose, not full poses
+19. A: Layered Blend Per Bone ≈ Unity Avatar Mask + Layer
+20. B: FFD: mesh vertices keyframed directly without additional bones
+21. B: Dead Cells: low bone count (~15–25) + optimized C runtime
+22. D: AnyState node for high-priority transitions like Death
+23. B: Event Graph computes parameters (Speed, IsGrounded) from owning pawn
+24. B: Power-of-two required for GPU texture compression
+25. B: Niagara: arbitrary attributes + full node graph vs. Cascade fixed modules
+26. B: Avatar Mask: defines which bones a layer can affect
+27. B: Bend Direction: which way the middle joint bends
+28. B: In-Place animation + NavMeshAgent controlling position is the clean approach
+29. C: Hollow Knight: IK for hand/foot contact placement
+30. A: Cached Pose: reuse computed pose in multiple graph branches
 ```

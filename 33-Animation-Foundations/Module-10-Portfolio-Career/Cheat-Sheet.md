@@ -18,7 +18,7 @@
 
 | Shot Type | Why |
 |-----------|-----|
-| Character pantomime | Proves acting ability — highest value |
+| Character pantomime | Proves acting ability, highest value |
 | Walk cycle with personality | Industry standard test |
 | Dynamic action | Weight and momentum |
 | Dialogue/lip sync | Required for character animation roles |
@@ -124,7 +124,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

@@ -49,10 +49,10 @@ client.translate(content=[InputTextItem(text="Hello")], to_language=["es","fr"])
 |---|---|
 | Speech-to-Text (STT) | Real-time SDK or **batch transcription** (REST + Storage) |
 | Text-to-Speech (TTS) | 400+ neural voices: `en-US-JennyNeural` |
-| Speech translation | `TranslationRecognizer` — STT + translate in one call |
+| Speech translation | `TranslationRecognizer`, STT + translate in one call |
 | **Custom Speech** | Improve transcription on domain audio (GA) |
-| **Custom Neural Voice (CNV)** | Train your brand voice — **Limited Access + voice talent consent** |
-| **Speaker Recognition** | Verify/Identify speakers — **Limited Access** |
+| **Custom Neural Voice (CNV)** | Train your brand voice, **Limited Access + voice talent consent** |
+| **Speaker Recognition** | Verify/Identify speakers, **Limited Access** |
 
 ### SSML essentials
 
@@ -112,7 +112,7 @@ Tags: `<voice>`, `<prosody>` (rate/pitch/volume), `<break>`, `<say-as>` (date/ti
 - ❌ Training a model and forgetting to **deploy** it (custom features)
 - ❌ Using abstractive summarization when you need verifiable citations
 - ❌ Translating documents synchronously (use Document Translation async)
-- ❌ Treating PII detection as "names only" — many categories supported
+- ❌ Treating PII detection as "names only", many categories supported
 - ❌ Using CNV for any prototype (it's gated)
 
 ---
@@ -168,4 +168,4 @@ If you can answer all 5 in 60 seconds, you own Module 4. ✅
 
 ---
 
-➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) — checkpoint! · then [Module 5](../Module-05-Document-Intelligence-Knowledge-Mining/Reading.md)
+➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), checkpoint! · then [Module 5](../Module-05-Document-Intelligence-Knowledge-Mining/Reading.md)

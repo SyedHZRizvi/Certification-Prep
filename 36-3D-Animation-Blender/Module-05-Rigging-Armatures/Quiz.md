@@ -252,28 +252,28 @@ D. Subdivision Surface is applied before the Armature modifier in the stack
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Bone Collections replace Bone Layers in Blender 4.x
-Q2.  D — Bone roll = rotation of local X/Z axes around the bone's Y (length) axis
-Q3.  C — .L and .R suffixes (UpperArm.L, UpperArm.R)
-Q4.  C — IK: move the end effector; chain solves automatically
-Q5.  C — Pole target defines elbow/knee bending direction
-Q6.  C — E extrudes a new connected bone from the tail
-Q7.  C — Head = proximal end (closest to parent/root)
-Q8.  D — Rigify is Blender's built-in automatic rig generator
-Q9.  B — Armature modifier is applied on the mesh object
-Q10. C — Mesh → Shift+select armature → Ctrl+P → Armature Deform with Auto Weights
-Q11. C — Skin bag = armpit/hip collapses when limb is raised
-Q12. C — Chain Length 2 = 2 bones above the constrained bone in the chain
-Q13. D — DEF bones deform the mesh
-Q14. C — FK preferred for free-space arms/tails where arc control matters
-Q15. D — Armature Properties → Rigify Buttons → Generate Rig
-Q16. D — Corrective shape keys driven by bone rotation via Blender drivers
-Q17. D — Pole Angle corrects the elbow/knee orientation relative to the pole
-Q18. C — Ctrl+N recalculates bone roll
-Q19. D — CTRL bones are the animator-facing controls
-Q20. C — Alt+P clears parent (in Edit Mode on bones)
-Q21. C — Sprite Fright added custom facial controls on top of Rigify
-Q22. B — Select mesh → Shift+select armature → Ctrl+P → Armature Deform
-Q23. D — Rigify rigs are too heavy for direct game-engine export
-Q24. C — Candy wrapper twist = forearm twist artifact on length rotation
+Q1.  C, Bone Collections replace Bone Layers in Blender 4.x
+Q2.  D, Bone roll = rotation of local X/Z axes around the bone's Y (length) axis
+Q3.  C, .L and .R suffixes (UpperArm.L, UpperArm.R)
+Q4.  C, IK: move the end effector; chain solves automatically
+Q5.  C, Pole target defines elbow/knee bending direction
+Q6.  C, E extrudes a new connected bone from the tail
+Q7.  C, Head = proximal end (closest to parent/root)
+Q8.  D, Rigify is Blender's built-in automatic rig generator
+Q9.  B, Armature modifier is applied on the mesh object
+Q10. C, Mesh → Shift+select armature → Ctrl+P → Armature Deform with Auto Weights
+Q11. C, Skin bag = armpit/hip collapses when limb is raised
+Q12. C, Chain Length 2 = 2 bones above the constrained bone in the chain
+Q13. D, DEF bones deform the mesh
+Q14. C, FK preferred for free-space arms/tails where arc control matters
+Q15. D, Armature Properties → Rigify Buttons → Generate Rig
+Q16. D, Corrective shape keys driven by bone rotation via Blender drivers
+Q17. D, Pole Angle corrects the elbow/knee orientation relative to the pole
+Q18. C, Ctrl+N recalculates bone roll
+Q19. D, CTRL bones are the animator-facing controls
+Q20. C, Alt+P clears parent (in Edit Mode on bones)
+Q21. C, Sprite Fright added custom facial controls on top of Rigify
+Q22. B, Select mesh → Shift+select armature → Ctrl+P → Armature Deform
+Q23. D, Rigify rigs are too heavy for direct game-engine export
+Q24. C, Candy wrapper twist = forearm twist artifact on length rotation
 ```

@@ -7,7 +7,7 @@ title: "Module 2: AE Expressions & Scripts"
 
 ## The Expression That Saved a Studio
 
-In 2019, a motion designer at a mid-size agency in New York was handed a 3-minute broadcast package for a sports network — 47 lower-thirds, each with a different name, a different team color, and a different score. The creative director wanted them "done by morning." Manually keyframing 47 compositions would take days.
+In 2019, a motion designer at a mid-size agency in New York was handed a 3-minute broadcast package for a sports network, 47 lower-thirds, each with a different name, a different team color, and a different score. The creative director wanted them "done by morning." Manually keyframing 47 compositions would take days.
 
 Instead, the designer opened the Expression Controls and spent 90 minutes building a Master Controller expression. One slider controlled animation timing across all 47 comps. One color picker fed team colors through the entire system. One null object drove every animation. The work that would have taken three days took one evening.
 
@@ -17,7 +17,7 @@ That designer got a raise. This module teaches you why.
 
 ## 🔬 The Expression Language: JavaScript in After Effects
 
-After Effects expressions use a subset of JavaScript (ExtendScript, based on ECMAScript 3). Every property in AE — position, rotation, opacity, scale, color — can be driven by an expression instead of keyframes.
+After Effects expressions use a subset of JavaScript (ExtendScript, based on ECMAScript 3). Every property in AE position, rotation, opacity, scale, color can be driven by an expression instead of keyframes.
 
 To add an expression: **Alt-click** (Windows) or **Option-click** (Mac) on any property stopwatch. The expression field appears. Everything you type replaces the static value with computed code.
 
@@ -38,7 +38,7 @@ rotation = time * 90; // one full rotation every 4s
 rotation = time * 36;
 ```
 
-**Common Pattern — Countdown Timer:**
+**Common Pattern, Countdown Timer:**
 ```javascript
 // Counts down from 60 to 0
 totalSeconds = 60;
@@ -77,7 +77,7 @@ wiggle(15, 5)
 | `amp_mult` | Number (optional) | Amplitude multiplier per octave; default = 0.5 |
 | `t` | Number (optional) | Time offset; useful to de-sync multiple elements |
 
-**Advanced — De-Syncing Wiggles:**
+**Advanced, De-Syncing Wiggles:**
 ```javascript
 // Different elements out of phase (use index to offset time)
 seed = index * 100;
@@ -105,12 +105,12 @@ loopOut("offset")    // Repeats but adds the delta of each loop (infinite drift)
 loopOut("continue")  // Continues velocity of last keyframes forever
 ```
 
-**`loopIn()` — for the other direction:**
+**`loopIn()`, for the other direction:**
 ```javascript
 loopIn("cycle")  // Loops keyframes before the first keyframe
 ```
 
-**Real-World Use Case — Infinite Loop Animation:**
+**Real-World Use Case, Infinite Loop Animation:**
 ```javascript
 // On an icon that bounces up and down:
 // 1. Keyframe position at 0s (y = 0) and 0.5s (y = -20px)
@@ -119,13 +119,13 @@ loopOut("pingpong")
 // Result: icon bounces forever between 0 and -20
 ```
 
-> 🚨 **Trap on the Exam:** `loopOut()` without parentheses is a syntax error. `loopOut("cycle")` is correct. The type parameter ("cycle", "pingpong", etc.) is a string — it needs quotes.
+> 🚨 **Trap on the Exam:** `loopOut()` without parentheses is a syntax error. `loopOut("cycle")` is correct. The type parameter ("cycle", "pingpong", etc.) is a string, it needs quotes.
 
 ---
 
 ## 🔗 The `valueAtTime()` Expression
 
-`valueAtTime(t)` returns the value of any property at any point in time — including past keyframes. This allows you to create **offset animations**, where one layer mirrors another layer's position but delayed by 0.5 seconds.
+`valueAtTime(t)` returns the value of any property at any point in time, including past keyframes. This allows you to create **offset animations**, where one layer mirrors another layer's position but delayed by 0.5 seconds.
 
 ```javascript
 // On Layer B's position: mimics Layer A's position, delayed by 0.3s
@@ -141,7 +141,7 @@ thisComp.layer("Layer A").transform.position.valueAtTime(time - 0.3)
 | Anticipatory opposite | `valueAtTime(time + 0.2)` to see slightly ahead |
 | Linked delayed animations | One controller drives many layers at different offsets |
 
-**Real-World — Snake Trail:**
+**Real-World, Snake Trail:**
 ```javascript
 // On the 5th layer in a snake animation (each layer follows the previous)
 n = 5; // this is the nth layer
@@ -168,7 +168,7 @@ hue = (index * 30) % 360;
 // Use with Color Utilities to set fill color
 ```
 
-**Classic Index Pattern — Staggered Entrance:**
+**Classic Index Pattern, Staggered Entrance:**
 ```javascript
 // On the Position property of each in a list of layers:
 // (Keyframe: position animates from off-screen to on-screen between 0s and 0.5s)
@@ -269,13 +269,13 @@ random(0, 100)
 
 ## 🎯 What the Exam Tests: Expressions
 
-> 🎯 **Exam Callout 1:** `time` is always in **seconds**, never frames. A common exam trap: "what does `time * 24` return in a 24fps comp?" Answer: the current frame number — but it's a calculation, not a built-in property.
+> 🎯 **Exam Callout 1:** `time` is always in **seconds**, never frames. A common exam trap: "what does `time * 24` return in a 24fps comp?" Answer: the current frame number, but it's a calculation, not a built-in property.
 
-> 🎯 **Exam Callout 2:** `wiggle(frequency, amplitude)` — the exam tests parameter order. Frequency FIRST, amplitude SECOND. Not the other way. `wiggle(2, 30)` = 2 cycles per second, ±30 units. `wiggle(30, 2)` = 30 cycles per second, ±2 units — a very fast, tiny vibration.
+> 🎯 **Exam Callout 2:** `wiggle(frequency, amplitude)` the exam tests parameter order. Frequency FIRST, amplitude SECOND. Not the other way. `wiggle(2, 30)` = 2 cycles per second, ±30 units. `wiggle(30, 2)` = 30 cycles per second, ±2 units a very fast, tiny vibration.
 
-> 🎯 **Exam Callout 3:** `loopOut("cycle")` loops AFTER the last keyframe. `loopIn("cycle")` loops BEFORE the first keyframe. The exam may ask which function creates a loop before keyframes begin — it's `loopIn()`, not `loopOut()`.
+> 🎯 **Exam Callout 3:** `loopOut("cycle")` loops AFTER the last keyframe. `loopIn("cycle")` loops BEFORE the first keyframe. The exam may ask which function creates a loop before keyframes begin, it's `loopIn()`, not `loopOut()`.
 
-> 🎯 **Exam Callout 4:** `valueAtTime(t)` evaluates a property at any composition time `t`. When `t = time - 0.3`, you get the value from 300ms ago — creating a delayed echo effect. The exam tests whether `t` is in seconds or frames: it's always **seconds**.
+> 🎯 **Exam Callout 4:** `valueAtTime(t)` evaluates a property at any composition time `t`. When `t = time - 0.3`, you get the value from 300ms ago, creating a delayed echo effect. The exam tests whether `t` is in seconds or frames: it's always **seconds**.
 
 > 🎯 **Exam Callout 5:** The `index` property starts at **1**, not 0. The topmost layer in the AE stack has `index = 1`. This trips up developers who expect 0-based indexing.
 
@@ -287,13 +287,13 @@ random(0, 100)
 
 ## ⚠️ Common Traps: Expressions
 
-**Trap 1 — String Quotes in `loopOut()`:** `loopOut(cycle)` without quotes is a JavaScript error — AE will look for a variable named `cycle` and fail. Always quote the loop type: `loopOut("cycle")`.
+**Trap 1 String Quotes in `loopOut()`:** `loopOut(cycle)` without quotes is a JavaScript error AE will look for a variable named `cycle` and fail. Always quote the loop type: `loopOut("cycle")`.
 
-**Trap 2 — The `rotation` vs `transform.rotation` distinction:** In expressions, you reference properties by their internal name. From another layer: `thisComp.layer("Name").transform.rotation`. On the same layer: just `rotation`. Students frequently write `transform.rotation` when referencing the current layer's own rotation, which fails.
+**Trap 2, The `rotation` vs `transform.rotation` distinction:** In expressions, you reference properties by their internal name. From another layer: `thisComp.layer("Name").transform.rotation`. On the same layer: just `rotation`. Students frequently write `transform.rotation` when referencing the current layer's own rotation, which fails.
 
-**Trap 3 — `wiggle()` on Multi-Value Properties:** `wiggle(2, 30)` on a Position property returns a 2D array `[x, y]`. On a 1D property (Rotation, Opacity), it returns a single number. If you apply a 2D wiggle to a 1D property without unpacking it, you get an error.
+**Trap 3, `wiggle()` on Multi-Value Properties:** `wiggle(2, 30)` on a Position property returns a 2D array `[x, y]`. On a 1D property (Rotation, Opacity), it returns a single number. If you apply a 2D wiggle to a 1D property without unpacking it, you get an error.
 
-**Trap 4 — Performance with Complex Expressions:** Expressions run on every frame during RAM preview and render. Complex expressions (especially those referencing many other layers via `thisComp.layer()`) can make previews extremely slow. The exam may ask how to improve expression performance — the answer is to bake expressions to keyframes once the animation is locked (Layer > Pre-compose or Keyframe Assistant > Convert Expressions to Keyframes).
+**Trap 4 Performance with Complex Expressions:** Expressions run on every frame during RAM preview and render. Complex expressions (especially those referencing many other layers via `thisComp.layer()`) can make previews extremely slow. The exam may ask how to improve expression performance the answer is to bake expressions to keyframes once the animation is locked (Layer > Pre-compose or Keyframe Assistant > Convert Expressions to Keyframes).
 
 ---
 
@@ -305,9 +305,9 @@ Scriptlets are AE scripts (ExtendScript) that automate repetitive tasks. Unlike 
 
 | Script | Function |
 |--------|---------|
-| **Auto-Save** (built-in) | Set under Preferences — use it |
+| **Auto-Save** (built-in) | Set under Preferences, use it |
 | **Copy Expression** | Copies expression text to clipboard; native is awkward |
-| **Ease and Wizz** (free) | One-click Spring/Bounce easing — applied as expressions to keyframes |
+| **Ease and Wizz** (free) | One-click Spring/Bounce easing, applied as expressions to keyframes |
 | **Motion2** (free) | Graph editor + easing UI that makes the graph editor accessible |
 | **Spring** (Jake In Motion, free) | Single spring expression preset applied with one click |
 | **Keysmith** (paid) | Scriptlet-driven master controller builder |
@@ -331,7 +331,7 @@ for (var i = 0; i < layers.length; i++) {
 Used for: ambient background elements, organic floating motion, brand films.
 
 ```javascript
-// Perlin noise-based slow drift — set on Position
+// Perlin noise-based slow drift, set on Position
 freq = 0.5;  // very slow
 amp = 40;    // drift up to 40px
 x = wiggle(freq, amp)[0];
@@ -391,8 +391,8 @@ value.toLocaleString()
 
 1. **Build first with keyframes.** Test the timing and feel before adding expressions. Expressions are harder to debug than keyframes.
 2. **Add expression controls last.** Once the animation feels right, add the controller null and link properties to it.
-3. **Comment your expressions.** Use `//` comments — your future self (and every collaborator) will thank you.
-4. **Use the Expression Error viewer.** The red triangle on a layer with a bad expression shows the error. Read it carefully — AE expression errors are descriptive.
+3. **Comment your expressions.** Use `//` comments, your future self (and every collaborator) will thank you.
+4. **Use the Expression Error viewer.** The red triangle on a layer with a bad expression shows the error. Read it carefully, AE expression errors are descriptive.
 5. **Save expression presets.** In the Effects & Presets panel, you can save any animation preset including expressions. Build a library.
 
 ---
@@ -423,7 +423,7 @@ value.toLocaleString()
 
 2. The Master Controller pattern uses a single null object to drive dozens of layers. What happens when that null is accidentally deleted? How do you build expression systems that degrade gracefully?
 
-3. `wiggle()` uses Perlin noise — deterministic pseudo-random numbers. If two elements use `wiggle(2, 30)` with no seed offset, they will wiggle identically. Is that a bug or a feature in most use cases?
+3. `wiggle()` uses Perlin noise, deterministic pseudo-random numbers. If two elements use `wiggle(2, 30)` with no seed offset, they will wiggle identically. Is that a bug or a feature in most use cases?
 
 4. The `index` property changes when layers are reordered. How does this affect index-based stagger systems? What happens to a 20-layer stagger system when you add a new layer in the middle?
 
@@ -433,9 +433,9 @@ value.toLocaleString()
 
 ## 📚 Further Reading
 
-- [After Effects Expression Language Reference (Adobe)](https://ae-expressions.docsforadobe.dev/) — the canonical technical reference; bookmark it
-- *After Effects Expressions* — Marcus Geduld (Focal Press, 2010) — the most comprehensive book on AE expressions; covers ECMAScript fundamentals as well as AE-specific APIs
-- *The VES Handbook of Visual Effects* — Jeffrey A. Okun & Susan Zwerman (Focal Press) — covers technical compositing workflows that inform advanced expression use
-- [Jake In Motion YouTube — Expression Series](https://www.youtube.com/@JakeinMotion) — the best free expression tutorials online; start with his loopOut and valueAtTime series
-- [Mobox Graphics — Expression Essentials Playlist](https://www.youtube.com/@moboxgraphics) — dense, practical; each video covers one expression concept in under 10 minutes
-- [Ease and Wizz Free Script](https://www.youtube.com/results?search_query=ease+and+wizz+after+effects+free+script) — the most-used free AE script; learn how its expressions work, not just how to apply them
+- [After Effects Expression Language Reference (Adobe)](https://ae-expressions.docsforadobe.dev/), the canonical technical reference; bookmark it
+- *After Effects Expressions* Marcus Geduld (Focal Press, 2010) the most comprehensive book on AE expressions; covers ECMAScript fundamentals as well as AE-specific APIs
+- *The VES Handbook of Visual Effects* Jeffrey A. Okun & Susan Zwerman (Focal Press) covers technical compositing workflows that inform advanced expression use
+- [Jake In Motion YouTube Expression Series](https://www.youtube.com/@JakeinMotion) the best free expression tutorials online; start with his loopOut and valueAtTime series
+- [Mobox Graphics Expression Essentials Playlist](https://www.youtube.com/@moboxgraphics) dense, practical; each video covers one expression concept in under 10 minutes
+- [Ease and Wizz Free Script](https://www.youtube.com/results?search_query=ease+and+wizz+after+effects+free+script), the most-used free AE script; learn how its expressions work, not just how to apply them

@@ -42,7 +42,7 @@ predicted_rating(u, i)  =  U[u] @ V[i]
 
 ### Production training algorithm
 
-**ALS** (Hu/Koren/Volinsky 2008) — handles implicit feedback (clicks, views) at scale.
+**ALS** (Hu/Koren/Volinsky 2008), handles implicit feedback (clicks, views) at scale.
 
 ---
 
@@ -152,7 +152,7 @@ Meta **Advantage+ Creative** and Google **Demand Gen** automate this for paid so
 
 1. 3 bandit algorithms + which is default? ___
 2. MF decomposes what into what? ___
-3. Two-tower model — purpose? ___
+3. Two-tower model, purpose? ___
 4. 3 metrics beyond NDCG? ___
 5. 5 personalization pitfalls? ___
 

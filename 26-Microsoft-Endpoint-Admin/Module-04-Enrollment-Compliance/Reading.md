@@ -1,12 +1,12 @@
 # Module 4: Device Enrollment & Compliance 📲
 
-> **Why this module matters:** Enrollment is the front door. If enrollment fails, nothing else works — no policy, no apps, no security. Compliance is the gate. Even after enrollment, compliance + Conditional Access decides who actually gets to sign in. MD-102 spends ~15–20% of its weight here. The exam expects you to pick the enrollment path in 60 seconds and trace the compliance → CA flow blindfolded.
+> **Why this module matters:** Enrollment is the front door. If enrollment fails, nothing else works, no policy, no apps, no security. Compliance is the gate. Even after enrollment, compliance + Conditional Access decides who actually gets to sign in. MD-102 spends ~15–20% of its weight here. The exam expects you to pick the enrollment path in 60 seconds and trace the compliance → CA flow blindfolded.
 
 > **Prerequisites for this module.** Before starting:
-> - Module 1 (Modern Workplace) — join states and the Zero Trust mental model.
-> - Module 2 (Deployment) — Windows Autopilot specifically.
-> - Module 3 (Intune Fundamentals) — Company Portal, RBAC, group targeting.
-> - Awareness of mobile platforms — you should know what an iPhone Apple ID is, what an Android Google account is.
+> - Module 1 (Modern Workplace), join states and the Zero Trust mental model.
+> - Module 2 (Deployment), Windows Autopilot specifically.
+> - Module 3 (Intune Fundamentals), Company Portal, RBAC, group targeting.
+> - Awareness of mobile platforms, you should know what an iPhone Apple ID is, what an Android Google account is.
 
 ---
 
@@ -27,7 +27,7 @@ Maria's stomach drops. The auditor is right. There are 4,200 devices accessing c
 - **Outlook for Mac** on personal Macs with no enrollment (~150)
 - **Random Outlook clients** running on home Windows PCs (~tablets, gaming PCs)
 
-This is the gap MD-102 expects you to close. The answer is the four enrollment paths + compliance policies + Conditional Access — applied so that *only* devices that meet your criteria can reach corporate data, whether or not the user enrolled them. By Monday morning Maria has it all wired up. The audit closes clean. This module is how.
+This is the gap MD-102 expects you to close. The answer is the four enrollment paths + compliance policies + Conditional Access, applied so that *only* devices that meet your criteria can reach corporate data, whether or not the user enrolled them. By Monday morning Maria has it all wired up. The audit closes clean. This module is how.
 
 ---
 
@@ -43,7 +43,7 @@ This is the gap MD-102 expects you to close. The answer is the four enrollment p
 | **macOS** (BYOD) | User-initiated via Company Portal | Not commonly enrolled |
 | **Android** (corporate) | Android Enterprise Fully Managed or Dedicated | NFC bump, QR code, Knox Mobile Enrollment (Samsung) |
 | **Android** (BYOD) | Android Enterprise Work Profile via Company Portal | Personally-owned work profile (managed Google Play) |
-| **Linux** (Ubuntu LTS) | Microsoft Edge + Intune compliance agent | None — limited scope |
+| **Linux** (Ubuntu LTS) | Microsoft Edge + Intune compliance agent | None, limited scope |
 
 🔥 **MEMORIZE the matrix.** Every enrollment question reduces to "which row + which alternative is right for the scenario?"
 
@@ -51,7 +51,7 @@ This is the gap MD-102 expects you to close. The answer is the four enrollment p
 
 ## 🍎 Apple Business Manager (ABM) & Automated Device Enrollment (ADE)
 
-Apple Business Manager (ABM) — formerly DEP, Device Enrollment Program — is Apple's portal where you:
+Apple Business Manager (ABM) formerly DEP, Device Enrollment Program is Apple's portal where you:
 
 - **Add devices** you purchased from Apple or authorized resellers (linked to your Apple Customer Number)
 - **Assign devices to your MDM** (in our case, Microsoft Intune)
@@ -64,7 +64,7 @@ Apple Business Manager (ABM) — formerly DEP, Device Enrollment Program — is 
 ### The flow
 
 1. Purchase Apple devices through an Apple-authorized channel that supports ABM (Apple Store, Apple Business, authorized resellers like CDW).
-2. Provide your Customer Number / Reseller ID to the seller — they auto-add devices to your ABM.
+2. Provide your Customer Number / Reseller ID to the seller, they auto-add devices to your ABM.
 3. In ABM, **assign devices** to your Intune MDM server.
 4. In Intune, sync ABM → Intune (`Devices → iOS/iPadOS → iOS/iPadOS enrollment → Enrollment program tokens`).
 5. Create an **enrollment profile** in Intune (supervision, what setup panes to skip, user affinity, await final config).
@@ -81,11 +81,11 @@ Supervised iOS / iPadOS devices unlock additional MDM capabilities:
 - Lost mode
 - Disable iCloud sync, screenshot, etc.
 
-🔥 **MEMORIZE:** Supervision is only available via ADE (DEP) — not via manual enrollment. If the question wants "lock the iPad to one app," supervision via ABM + ADE is the answer.
+🔥 **MEMORIZE:** Supervision is only available via ADE (DEP), not via manual enrollment. If the question wants "lock the iPad to one app," supervision via ABM + ADE is the answer.
 
 ---
 
-## 🤖 Android Enterprise — The Four Scenarios
+## 🤖 Android Enterprise, The Four Scenarios
 
 Android Enterprise is Google's API surface for enterprise-managed Android. Intune supports four scenarios:
 
@@ -94,7 +94,7 @@ Android Enterprise is Google's API surface for enterprise-managed Android. Intun
 | **Personally-owned work profile (BYOD)** | Work profile container alongside personal data; IT manages only the work side | Employees on personal Android |
 | **Corporate-owned with work profile (COPE)** | Same as BYOD but device is corporate; IT can do device-level actions too | Corp Android with personal use allowed |
 | **Fully managed** | Corporate-owned, no personal use, full IT control | Pure corporate Android |
-| **Dedicated (COSU)** | Corporate Owned Single Use — kiosk, single-app, dedicated purpose | Shared frontline tablets |
+| **Dedicated (COSU)** | Corporate Owned Single Use, kiosk, single-app, dedicated purpose | Shared frontline tablets |
 
 | Requirement | Notes |
 |-------------|-------|
@@ -117,7 +117,7 @@ Even within your tenant, you can constrain who and what can enroll. Two restrict
 | Allow / block per platform | iOS / Android / Windows / macOS / Linux |
 | Allow / block personally owned | Block BYOD on iOS but allow Android, for example |
 | Min/max OS version | "Block Android < 11" |
-| Block jailbroken / rooted devices | Always block — non-negotiable |
+| Block jailbroken / rooted devices | Always block, non-negotiable |
 | Manufacturer block list (Android) | Block specific OEMs |
 
 ### Device limit restrictions
@@ -126,7 +126,7 @@ Even within your tenant, you can constrain who and what can enroll. Two restrict
 |---------|--------|
 | Max devices per user | Default 5; can lower to limit fleet |
 
-🚨 **Trap on the exam:** Enrollment restrictions are scoped to **user groups**, not device groups. (Device groups don't exist yet — the device hasn't enrolled!) Assign restrictions to user groups.
+🚨 **Trap on the exam:** Enrollment restrictions are scoped to **user groups**, not device groups. (Device groups don't exist yet, the device hasn't enrolled!) Assign restrictions to user groups.
 
 ---
 
@@ -134,21 +134,21 @@ Even within your tenant, you can constrain who and what can enroll. Two restrict
 
 When a device enrolls, it can be:
 
-- **User-affinity device** — bound to a primary user. Their settings, apps, identity follow them.
-- **Device-affinity (no primary user)** — kiosk, shared, or autopilot-without-user. Apps are deployed to the device, not the user.
+- **User-affinity device**, bound to a primary user. Their settings, apps, identity follow them.
+- **Device-affinity (no primary user)**, kiosk, shared, or autopilot-without-user. Apps are deployed to the device, not the user.
 
 🎯 **Exam tip:** Kiosk/shared scenarios = device-affinity. Personal corporate laptop = user-affinity. A question that mentions "no specific user" or "shared" or "kiosk" implies device-affinity.
 
 ---
 
-## ✅ Compliance Policies — The Gate
+## ✅ Compliance Policies, The Gate
 
 A compliance policy evaluates a device against rules and returns one of:
 
-- **Compliant** — passed all rules
-- **Not compliant** — failed at least one rule
-- **In grace period** — failed but in the grace window before being marked non-compliant
-- **Not evaluated** — policy hasn't run yet (new enrollment)
+- **Compliant**, passed all rules
+- **Not compliant**, failed at least one rule
+- **In grace period**, failed but in the grace window before being marked non-compliant
+- **Not evaluated**, policy hasn't run yet (new enrollment)
 
 ### Common compliance rules
 
@@ -170,11 +170,11 @@ You can configure what happens when a device falls out of compliance:
 | Push notification to device | Immediately |
 | Remotely lock the device | After X days |
 
-🎯 **Exam tip:** Grace periods + escalating actions = the canonical pattern. Don't immediately wipe — warn, then lock, then retire.
+🎯 **Exam tip:** Grace periods + escalating actions = the canonical pattern. Don't immediately wipe, warn, then lock, then retire.
 
 ---
 
-## 🔐 Conditional Access — The Enforcer
+## 🔐 Conditional Access, The Enforcer
 
 Compliance is just a *flag*. Conditional Access is what *uses* the flag to block sign-in. The flow:
 
@@ -274,7 +274,7 @@ A CA condition introduced to let you target/exclude devices by attribute without
 | "Enrollment restrictions target device groups" | ❌ They target user groups (no device record yet) |
 | "Supervised iOS is available without ABM" | ❌ Supervision needs ABM + ADE |
 | "Android BYOD doesn't need work profile" | ❌ Android Enterprise BYOD = work profile |
-| "Linux compliance is the same as Windows" | ❌ Linux is narrow — limited compliance + Edge cfg |
+| "Linux compliance is the same as Windows" | ❌ Linux is narrow, limited compliance + Edge cfg |
 | "Disable a CA policy to test it" | ❌ Use Report-only mode |
 | "Break-glass accounts go in normal CA scope" | ❌ Always exclude from CA |
 
@@ -286,12 +286,12 @@ A CA condition introduced to let you target/exclude devices by attribute without
 
 The correct sequence:
 
-1. ✅ **Define what "compliant" means** — pick the rules (BitLocker, OS min ver, Defender, etc.)
+1. ✅ **Define what "compliant" means**, pick the rules (BitLocker, OS min ver, Defender, etc.)
 2. ✅ **Create a compliance policy** in Intune for the platform (Windows + iOS + Android variants)
 3. ✅ **Assign to user groups** (typically All employees, exclude break-glass)
 4. ✅ **Verify devices report compliant** (let it sync, fix non-compliance)
 5. ✅ **Federate Salesforce SSO** with Entra ID (out of scope here, assume done)
-6. ✅ **Create a CA policy** — users: All staff. Apps: Salesforce. Grant: Require compliant device + MFA.
+6. ✅ **Create a CA policy**, users: All staff. Apps: Salesforce. Grant: Require compliant device + MFA.
 7. ✅ **Enable in Report-only** mode first.
 8. ✅ **Review Report-only logs** for 3–7 days; fix any users who'd be blocked.
 9. ✅ **Switch to On** after report-only validates.
@@ -312,8 +312,8 @@ The correct sequence:
 | **Managed Apple ID** | Federated Apple ID controlled by your org |
 | **Android Enterprise** | Google's enterprise-managed Android API surface |
 | **Work profile** | Container on personal Android isolating work data |
-| **COPE** | Corporate-Owned, Personally Enabled — work profile on corp Android |
-| **COSU / Dedicated** | Corporate-Owned Single-Use — kiosk Android |
+| **COPE** | Corporate-Owned, Personally Enabled, work profile on corp Android |
+| **COSU / Dedicated** | Corporate-Owned Single-Use, kiosk Android |
 | **Managed Google Play** | Required Google enterprise account for Android Enterprise |
 | **Knox Mobile Enrollment** | Samsung's bulk enrollment service |
 | **User affinity** | Device bound to a primary user vs shared |
@@ -323,7 +323,7 @@ The correct sequence:
 | **Report-only mode** | CA policy state that logs but doesn't enforce |
 | **Break-glass account** | Emergency admin account excluded from all CA |
 | **Filter for Devices** | CA condition targeting device by attribute, not group |
-| **TPM 2.0** | Trusted Platform Module v2 — hardware root of trust |
+| **TPM 2.0** | Trusted Platform Module v2, hardware root of trust |
 | **Device attestation** | Cryptographic proof of boot integrity |
 
 ---
@@ -338,7 +338,7 @@ You now know:
 - 🚪 Enrollment restrictions and that they target user groups
 - 🪪 User-affinity vs device-affinity
 - ✅ Compliance policy structure + actions for non-compliance
-- 🔐 Conditional Access mechanics — users, apps, conditions, grant, session, enable
+- 🔐 Conditional Access mechanics, users, apps, conditions, grant, session, enable
 - 🎯 The compliance → CA enforcement flow (the gate)
 - 🛡️ Device attestation on Windows 11
 - 🔍 CA Filter for Devices for fine-grained targeting
@@ -351,7 +351,7 @@ You now know:
 
 ---
 
-## 📊 Case Study — Unilever's BYOD-First iOS + Android Rollout (2021–2024)
+## 📊 Case Study, Unilever's BYOD-First iOS + Android Rollout (2021–2024)
 
 **Situation.** Unilever (the consumer goods giant, ~127,000 employees in 100+ countries) had a long-standing BYOD policy: most non-executive employees were expected to use their personal phones for work email and Teams. Pre-2021, this was managed via a fragmented combination of Outlook for iOS / Android with ad-hoc MAM policies, native iOS Mail using Exchange ActiveSync, and almost no oversight of unmanaged Android devices. The CISO reported (Unilever public ESG + sustainability reports + Microsoft customer story, 2023):
 
@@ -360,7 +360,7 @@ You now know:
 - Zero ability to enforce minimum OS version or jailbreak detection on personal devices
 - Multiple incidents of corporate data leaking via personal cloud-sync apps (e.g., contacts syncing to user's iCloud)
 
-**Decision.** Unilever's Modern Workplace program standardized on the following BYOD architecture for mobile (Microsoft customer story, *Unilever — Modern Workplace*, 2023):
+**Decision.** Unilever's Modern Workplace program standardized on the following BYOD architecture for mobile (Microsoft customer story, *Unilever, Modern Workplace*, 2023):
 
 1. **Mandate Microsoft Outlook Mobile and Microsoft Teams** as the only approved mobile clients for corporate email + chat.
 2. **Apply App Protection Policy (APP) without enrollment** to those apps for all BYOD users.
@@ -375,15 +375,15 @@ You now know:
 - **BYOD MAM coverage** rose from ~30% to **~98%** of personal devices touching corporate data.
 - **Native iOS Mail incidents** (the unmanaged client risk) dropped to **near zero** within 90 days of CA enforcement.
 - **Mean time to revoke access from a departing employee's personal phone** dropped from "unknown / never" to **under 10 minutes** (selective wipe via APP).
-- **Employee satisfaction with BYOD** remained high — users could keep their personal data untouched and only the work apps were governed.
+- **Employee satisfaction with BYOD** remained high, users could keep their personal data untouched and only the work apps were governed.
 - **Corporate data leakage via personal cloud sync** dropped from several incidents per quarter to zero in the 12 months following rollout.
 
 **Lesson for the exam / for practitioners.** This is the textbook case for *why* MD-102 weights MAM heavily and *why* the exam treats "MAM without enrollment + CA require app protection policy + block legacy auth + block ActiveSync" as the canonical BYOD answer. The economic and operational case is overwhelming: you get ~98% of the security benefit of full MDM with ~5% of the user friction. When the exam describes "BYOD at scale" or "personal phones accessing work email," the answer is **APP + CA require approved client app + require app protection policy**, every time. The Unilever story is why.
 
 **Discussion (Socratic).**
 - **Q1.** Unilever blocked native iOS Mail entirely. Argue both sides: when is it right to mandate a specific email client (Outlook Mobile) over giving users choice? What does each choice cost in user satisfaction vs security?
-- **Q2.** Unilever's executive iOS fleet uses ABM + ADE (full MDM). The same exec might also have a personal phone with the MAM-only model. Defend the dual-device pattern — when is "one phone managed, one not" the right answer vs "force everything through one device"?
-- **Q3.** Unilever's compliance policy requires Android 11+. A regional unit in a developing market has employees on Android 9 devices. Defend the right operational answer — does Unilever buy them new phones, exempt them, or accept the gap? What does each choice say about the company's security posture?
+- **Q2.** Unilever's executive iOS fleet uses ABM + ADE (full MDM). The same exec might also have a personal phone with the MAM-only model. Defend the dual-device pattern, when is "one phone managed, one not" the right answer vs "force everything through one device"?
+- **Q3.** Unilever's compliance policy requires Android 11+. A regional unit in a developing market has employees on Android 9 devices. Defend the right operational answer, does Unilever buy them new phones, exempt them, or accept the gap? What does each choice say about the company's security posture?
 
 ---
 
@@ -394,22 +394,22 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **ADE vs Apple Configurator.** Apple supports two device-enrollment paths: ADE (cloud-driven, zero-touch) and Apple Configurator (USB, manual). When is Configurator still the right answer in 2026?
 2. **Compliance grace period.** Microsoft documentation recommends a 1-day grace period before non-compliance triggers actions. A risk-averse CISO wants zero grace ("non-compliant means blocked, now"). Defend the recommended grace period by naming the operational scenario where zero-grace causes outages.
 3. **CA Filter for Devices vs dynamic group.** Both can constrain a policy to certain devices. When is Filter for Devices the right answer over a dynamic device group?
 4. **Block jailbroken devices.** Should you block or just warn? Argue both sides for (a) a hospital, (b) a software startup, (c) a defense contractor.
-5. **Break-glass accounts.** Every CA design must exclude at least one break-glass account. Defend the design choice — why not just exempt the global admin?
+5. **Break-glass accounts.** Every CA design must exclude at least one break-glass account. Defend the design choice, why not just exempt the global admin?
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Microsoft Learn — Set up Intune enrollment for iOS devices using ABM](https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-program-enroll-ios) (Microsoft, current)
+- 📖 [Microsoft Learn, Set up Intune enrollment for iOS devices using ABM](https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-program-enroll-ios) (Microsoft, current)
 - 📖 [Android Enterprise enrollment scenarios in Intune](https://learn.microsoft.com/mem/intune/enrollment/android-enrollment-overview)
 - 📖 [Conditional Access overview](https://learn.microsoft.com/entra/identity/conditional-access/overview)
 - 📖 [Filter for devices in Conditional Access](https://learn.microsoft.com/entra/identity/conditional-access/concept-condition-filters-for-devices)
 - 📖 [Compliance policies in Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/device-compliance-get-started)
 - 📖 [Windows 11 device health attestation](https://learn.microsoft.com/windows/security/hardware-security/tpm/trusted-platform-module-overview)
-- 📖 Forrester *Total Economic Impact of Microsoft Intune* (most recent edition) — independent ROI study
+- 📖 Forrester *Total Economic Impact of Microsoft Intune* (most recent edition), independent ROI study

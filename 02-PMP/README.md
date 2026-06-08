@@ -5,7 +5,7 @@ title: PMP Track
 
 # 📊 PMP Track (Project Management Professional)
 
-> **Goal:** Pass PMI's PMP exam — the world's most respected PM credential.
+> **Goal:** Pass PMI's PMP exam, the world's most respected PM credential.
 > **Duration:** 8–12 weeks part-time (150–250 study hours)
 > **Cost:** $405 PMI member / $555 non-member
 > **Prerequisites:** 35 hours of PM training (this course counts!) + 36 months of PM experience (or 60 months without a degree)
@@ -16,28 +16,28 @@ title: PMP Track
 
 ### 🎯 The promise
 
-The Project Management Professional (PMP) from PMI is, by every honest measure, the most recognized project-management credential on Earth. It is the letters that move resumes from the "maybe" stack to the "interview" stack at Fortune 500s, federal contractors, consulting firms, and increasingly at tech companies running large cross-functional initiatives. Pass the PMP and you are no longer a project manager — you are *certified* to lead any project, in any methodology (predictive, agile, hybrid), at almost any scale.
+The Project Management Professional (PMP) from PMI is, by every honest measure, the most recognized project-management credential on Earth. It is the letters that move resumes from the "maybe" stack to the "interview" stack at Fortune 500s, federal contractors, consulting firms, and increasingly at tech companies running large cross-functional initiatives. Pass the PMP and you are no longer a project manager, you are *certified* to lead any project, in any methodology (predictive, agile, hybrid), at almost any scale.
 
 ### 💼 Career outcomes after passing
 
-- **Project Manager** ($95K–$135K) — the baseline role; most postings list PMP as preferred or required
-- **Senior Project Manager** ($120K–$160K) — typical 2–4 years after PMP, with portfolio of delivered programs
-- **Program Manager** ($130K–$175K) — coordinating multiple related projects, often at director-equivalent level
-- **Portfolio Manager / PMO Lead** ($140K–$190K) — running the project economics for an entire business unit
-- **Management Consultant (Big-4 or boutique)** ($110K–$180K plus bonus) — PMP is table stakes for delivery-side hires at Deloitte, Accenture, EY, KPMG, McKinsey Implementation
-- **Technical Program Manager (TPM)** at FAANG-adjacent tech ($150K–$240K total comp) — PMP increasingly listed alongside MBA-equivalent rigor
+- **Project Manager** ($95K–$135K), the baseline role; most postings list PMP as preferred or required
+- **Senior Project Manager** ($120K–$160K), typical 2–4 years after PMP, with portfolio of delivered programs
+- **Program Manager** ($130K–$175K), coordinating multiple related projects, often at director-equivalent level
+- **Portfolio Manager / PMO Lead** ($140K–$190K), running the project economics for an entire business unit
+- **Management Consultant (Big-4 or boutique)** ($110K–$180K plus bonus), PMP is table stakes for delivery-side hires at Deloitte, Accenture, EY, KPMG, McKinsey Implementation
+- **Technical Program Manager (TPM)** at FAANG-adjacent tech ($150K–$240K total comp), PMP increasingly listed alongside MBA-equivalent rigor
 
-PMI's own salary study (Earning Power, 11th edition) puts the median PMP salary in the US at roughly $123K — a 16–32% premium over non-certified PMs in the same roles. The credential is also the gateway into PgMP, PfMP, and the PMI Disciplined Agile suite.
+PMI's own salary study (Earning Power, 11th edition) puts the median PMP salary in the US at roughly $123K, a 16–32% premium over non-certified PMs in the same roles. The credential is also the gateway into PgMP, PfMP, and the PMI Disciplined Agile suite.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — concepts taught through narrative, not bullet lists
-- **Original questions only** — quizzes and practice exams written from the published Exam Content Outline; no copyrighted dumps
-- **Real-world case studies in case-method format** — Boeing 737 MAX, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Denver Airport baggage system, Hubble, Big Dig, Sydney Opera House, Spotify
-- **A real Capstone** — a $14M digital-transformation rollout at a regional bank acquiring a fintech, producing 6 portfolio-grade PM artifacts (Charter, Stakeholder Register, Risk Register, Comms Plan, EVM Dashboard, Lessons-Learned design)
-- **One author, one voice** — coherent across all 10 modules, three practice exams, and the Capstone
-- **Updated for the current PMP-2021 mindset** — agile and hybrid content built in, not bolted on
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, concepts taught through narrative, not bullet lists
+- **Original questions only**, quizzes and practice exams written from the published Exam Content Outline; no copyrighted dumps
+- **Real-world case studies in case-method format**, Boeing 737 MAX, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Denver Airport baggage system, Hubble, Big Dig, Sydney Opera House, Spotify
+- **A real Capstone**, a $14M digital-transformation rollout at a regional bank acquiring a fintech, producing 6 portfolio-grade PM artifacts (Charter, Stakeholder Register, Risk Register, Comms Plan, EVM Dashboard, Lessons-Learned design)
+- **One author, one voice**, coherent across all 10 modules, three practice exams, and the Capstone
+- **Updated for the current PMP-2021 mindset**, agile and hybrid content built in, not bolted on
 
 ### 🚀 Ready to start?
 
@@ -55,7 +55,7 @@ By the end of this track, you'll be able to:
 - Plan and execute hybrid/agile/predictive projects
 - Calculate Earned Value (CPI, SPI, EAC, etc.)
 - Manage stakeholders, risks, quality, procurement
-- Speak fluent "PMP-ese" — the situational mindset that wins exam questions
+- Speak fluent "PMP-ese", the situational mindset that wins exam questions
 - **Pass the PMP** with above-target scores in all 3 domains
 
 ---
@@ -199,14 +199,14 @@ Buckle up. PMP is hard. But everyone who studies smart passes. So will you. 💪
 
 ## 📚 What's New in This Elevation Pass
 
-The PMP track has been augmented to the graduate-level professional standard. **All existing module content, quiz questions, and practice-exam questions are preserved unchanged** — these additions are layered *on top* of what you've been studying:
+The PMP track has been augmented to the graduate-level professional standard. **All existing module content, quiz questions, and practice-exam questions are preserved unchanged**, these additions are layered *on top* of what you've been studying:
 
-- 📊 **Real-world case studies** in every module — Boeing 737 MAX, Spotify, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Big Dig, Hubble, Denver Airport baggage system, and Sydney Opera House — each in case-method format (situation/decision/outcome/lesson) with Socratic discussion questions.
+- 📊 **Real-world case studies** in every module Boeing 737 MAX, Spotify, Knight Capital, Channel Tunnel, HealthCare.gov, NASA Mars Climate Orbiter, Big Dig, Hubble, Denver Airport baggage system, and Sydney Opera House each in case-method format (situation/decision/outcome/lesson) with Socratic discussion questions.
 - 💬 **Socratic discussion prompts** appended to each Reading, designed to force reasoning from principles rather than recall.
-- 📚 **Named-source citations** for every framework — Tuckman 1965, Maslow 1943, Kotter 1996, Flyvbjerg 2003/2023, the PMBOK editions, PMI Pulse of the Profession 2024, Standish CHAOS 2024, and more.
+- 📚 **Named-source citations** for every framework, Tuckman 1965, Maslow 1943, Kotter 1996, Flyvbjerg 2003/2023, the PMBOK editions, PMI Pulse of the Profession 2024, Standish CHAOS 2024, and more.
 - 🧠 **Bloom's-taxonomy tags** on every existing quiz question, plus 4–6 higher-Bloom bonus questions per module (Apply / Analyze / Evaluate / Create) to stretch your reasoning.
-- 📝 **Detailed wrong-answer rationales** appended to all three practice exams (PE-1, PE-2, Final Mock) — every question now has both the original letter-only key AND a per-distractor explanation.
-- 🎓 **[Capstone Project](./Capstone-Project.md)** — a $14M digital-transformation rollout at a regional bank acquiring a fintech. Produces 6 real-PM artifacts (Charter, Stakeholder Register, Risk Register, Communications Plan, EVM Dashboard, Lessons-Learned design) over a 6-week timeline. Rubric included for self-assessment.
-- 📖 **[Recommended Readings](./Recommended-Readings.md)** — 36 entries spanning PMBOK 7, Rita Mulcahy, Andrew Ramdayal, Kerzner, Flyvbjerg, Kahneman, Goleman, MIT OCW, Stanford SCPD, the FAR, and PMI's Pulse of the Profession 2024.
+- 📝 **Detailed wrong-answer rationales** appended to all three practice exams (PE-1, PE-2, Final Mock), every question now has both the original letter-only key AND a per-distractor explanation.
+- 🎓 **[Capstone Project](./Capstone-Project.md)**, a $14M digital-transformation rollout at a regional bank acquiring a fintech. Produces 6 real-PM artifacts (Charter, Stakeholder Register, Risk Register, Communications Plan, EVM Dashboard, Lessons-Learned design) over a 6-week timeline. Rubric included for self-assessment.
+- 📖 **[Recommended Readings](./Recommended-Readings.md)**, 36 entries spanning PMBOK 7, Rita Mulcahy, Andrew Ramdayal, Kerzner, Flyvbjerg, Kahneman, Goleman, MIT OCW, Stanford SCPD, the FAR, and PMI's Pulse of the Profession 2024.
 
-Nothing above your current location in the course has changed — keep studying from wherever you are. The new material appears in clearly labeled sections at the end of each Reading.md and Quiz.md, and as the two new root-level files above.
+Nothing above your current location in the course has changed, keep studying from wherever you are. The new material appears in clearly labeled sections at the end of each Reading.md and Quiz.md, and as the two new root-level files above.

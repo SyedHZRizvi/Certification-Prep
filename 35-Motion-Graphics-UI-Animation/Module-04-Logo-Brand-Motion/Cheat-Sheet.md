@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-04-Logo-Brand-Motion/Cheat-Sh
 title: "Module 4 Cheat Sheet: Logo & Brand Motion"
 ---
 
-# ⚡ Module 4 Cheat Sheet — Logo & Brand Motion
+# ⚡ Module 4 Cheat Sheet, Logo & Brand Motion
 
 ## Three Logo Reveal Techniques
 
@@ -126,7 +126,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Network Cables — 220-1101</p>
+      <p class="vg-title">Network Cables, 220-1101</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 10 min · Cat 5/6/6a/8 + fiber</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Fiber Optic Cabling — Visual Explainer</p>
+      <p class="vg-title">Fiber Optic Cabling, Visual Explainer</p>
       <p class="vg-creator">Linus Tech Tips</p>
       <span class="vg-duration">⏱ 15 min · See it physically</span>
     </div>

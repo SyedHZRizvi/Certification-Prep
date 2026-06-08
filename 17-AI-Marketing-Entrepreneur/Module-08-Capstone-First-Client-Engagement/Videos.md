@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Ship 30 for 30 — Content That Lands Clients</p>
+      <p class="vg-title">Ship 30 for 30, Content That Lands Clients</p>
       <p class="vg-creator">Dickie Bush</p>
       <span class="vg-duration">⏱ 16 min · The writing sprint</span>
     </div>
@@ -149,6 +149,6 @@ Answer these in your notebook (without re-watching):
 2. List the 17 discovery-call questions from memory (or your version).
 3. What's the upsell window for converting project → retainer?
 4. What goes in the end-of-call recap email?
-5. Pick Option A or B for your capstone — write the next 5 tasks.
+5. Pick Option A or B for your capstone, write the next 5 tasks.
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md) and the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md).

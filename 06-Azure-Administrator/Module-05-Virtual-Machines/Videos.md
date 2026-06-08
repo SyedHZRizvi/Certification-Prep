@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: Virtual Machines
 
-> **How to use:** This is the longest module's video set on purpose — 4 essential watches, 3 recommended, 3 optional. Replay the John Savill availability and disk videos until you can recite the SKUs cold.
+> **How to use:** This is the longest module's video set on purpose, 4 essential watches, 3 recommended, 3 optional. Replay the John Savill availability and disk videos until you can recite the SKUs cold.
 
 ## ⭐ Essential watching (~95 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure VM Sizes &amp; Families — Decoded</p>
+      <p class="vg-title">Azure VM Sizes &amp; Families, Decoded</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 25 min · Letter + suffix breakdown</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Managed Disks — Premium v2 &amp; Ultra Compared</p>
+      <p class="vg-title">Managed Disks, Premium v2 &amp; Ultra Compared</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 24 min · IOPS / throughput math</span>
     </div>
@@ -57,7 +57,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Virtual Machine Scale Sets &amp; Autoscale</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 20 min · Flexible vs Uniform</span>
     </div>
   </a>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Azure Compute Gallery — Versioned Images</p>
+      <p class="vg-title">Azure Compute Gallery, Versioned Images</p>
       <p class="vg-creator">Tim Warner</p>
       <span class="vg-duration">⏱ 13 min · Capture + replicate</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Disk Encryption Layers — ADE vs Host vs CMK</p>
+      <p class="vg-title">Disk Encryption Layers, ADE vs Host vs CMK</p>
       <p class="vg-creator">Inside Cloud and Security</p>
       <span class="vg-duration">⏱ 15 min · Each one demystified</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Spot VMs — Eviction Strategies &amp; Cost Wins</p>
+      <p class="vg-title">Spot VMs, Eviction Strategies &amp; Cost Wins</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 14 min · Up to 90% off</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Azure Update Manager — Patch Strategy</p>
+      <p class="vg-title">Azure Update Manager, Patch Strategy</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 12 min · Replaces legacy Update Mgmt</span>
     </div>
@@ -120,8 +120,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Azure Bastion — Secure RDP/SSH Without Public IPs</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">Azure Bastion, Secure RDP/SSH Without Public IPs</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 11 min · Goodbye jump boxes</span>
     </div>
   </a>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Best VM/availability/disk content. |
-| **Adam Marczak — Azure for Everyone** | Clear visuals on scaling and gallery. |
+| **Adam Marczak, Azure for Everyone** | Clear visuals on scaling and gallery. |
 | **Tim Warner** | Exam-pace walkthroughs. |
 | **Travis Roberts** | Hands-on extensions and ops content. |
 | **Inside Cloud and Security** | Encryption deep dives. |
@@ -146,7 +146,7 @@
 1. Name the SLAs for single VM, Availability Set, Availability Zone.
 2. Maximum FDs and UDs in an Availability Set?
 3. When would you pick Premium SSD v2 over Premium SSD?
-4. VMSS Uniform vs Flexible — when does each apply?
+4. VMSS Uniform vs Flexible, when does each apply?
 5. Three reasons NOT to use a B-series VM in production?
 
 Ready for the [Quiz](./Quiz.md)?

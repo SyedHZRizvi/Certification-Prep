@@ -1,7 +1,7 @@
-# 🏁 Final Mock Exam — Generative AI Engineer
+# 🏁 Final Mock Exam, Generative AI Engineer
 
 > **Conditions:** Set a 90-minute timer. 65 questions, including 5 scenario-based PBQs.
-> **Pass mark:** 55/65 (~85%) — the bar for "interview-ready."
+> **Pass mark:** 55/65 (~85%), the bar for "interview-ready."
 > Take this AFTER finishing all 10 modules AND Practice Exams 1 + 2.
 
 ---
@@ -53,7 +53,7 @@ D. None
 ### 8. Mamba / SSMs scale how in sequence length?
 A. O(N²)
 B. O(N log N)
-C. O(N) — linear
+C. O(N), linear
 D. O(1)
 
 ### 9. The PRIMARY benefit of FlashAttention:
@@ -82,7 +82,7 @@ D. SQL
 
 ### 13. Multi-tenant vector retrieval should filter:
 A. Post (after retrieval)
-B. Pre — so the ANN index never considers other tenants' vectors
+B. Pre, so the ANN index never considers other tenants' vectors
 C. Random
 D. Never
 
@@ -94,7 +94,7 @@ D. None
 
 ### 15. The PRIMARY weakness of pure-dense retrieval:
 A. None
-B. Exact-term queries (part numbers, SKUs) — BM25 wins these
+B. Exact-term queries (part numbers, SKUs), BM25 wins these
 C. Translation
 D. Speed
 
@@ -310,7 +310,7 @@ D. p100 only
 
 ### 51. Klarna's $0.30 → $0.04 cost-per-conversation came from:
 A. One trick
-B. Routing + cache + cache + brevity + early-cancel — compounding
+B. Routing + cache + cache + brevity + early-cancel, compounding
 C. Random
 D. None
 
@@ -368,31 +368,31 @@ B. Perceived latency dominates UX; first-token timing is what users feel
 C. None
 D. Cheaper
 
-### 61. (Scenario PBQ — RAG diagnostics) A team's RAG shows: high Faithfulness (0.92), low Context Recall (0.61), medium Answer Relevancy (0.78). The MOST appropriate immediate fix:
+### 61. (Scenario PBQ, RAG diagnostics) A team's RAG shows: high Faithfulness (0.92), low Context Recall (0.61), medium Answer Relevancy (0.78). The MOST appropriate immediate fix:
 A. Switch the LLM
 B. Expand retrieval: hybrid (dense + BM25), multi-query expansion, larger k, contextual retrieval at index time
 C. Lower temperature
 D. Random
 
-### 62. (Scenario PBQ — Multi-agent) An agent system is racking up $50/hour in OpenAI costs and looping on simple queries. First three fixes:
+### 62. (Scenario PBQ, Multi-agent) An agent system is racking up $50/hour in OpenAI costs and looping on simple queries. First three fixes:
 A. Bigger model
 B. (1) max_iterations + budget cap (2) supervisor decides DONE more eagerly (3) per-agent observability to find loops
 C. None
 D. Random
 
-### 63. (Scenario PBQ — Production architecture) A 200K-DAU enterprise search product, 100M docs, multi-tenant, multilingual (15 languages), p95 < 800ms. Minimum viable retrieval stack:
+### 63. (Scenario PBQ, Production architecture) A 200K-DAU enterprise search product, 100M docs, multi-tenant, multilingual (15 languages), p95 < 800ms. Minimum viable retrieval stack:
 A. OpenAI embedding-3-large single index
 B. Multilingual embedder (Cohere v3 multi) + Qdrant or Milvus sharded with pre-filter on tenant + RRF hybrid with BM25 + Cohere Rerank 3 + contextual retrieval at ingest
 C. Random
 D. SQL only
 
-### 64. (Scenario PBQ — Safety) A health insurance chatbot. PII handling + jailbreak defense + factuality + audit. The MOST appropriate architecture:
+### 64. (Scenario PBQ, Safety) A health insurance chatbot. PII handling + jailbreak defense + factuality + audit. The MOST appropriate architecture:
 A. Single LLM call
 B. Presidio PII redact (in + out) + Claude/GPT with refusal-licensed prompt + RAG over policy + post-generation factuality + Llama Guard input filter + HITL for high-risk + Langfuse audit + OWASP review pre-launch
 C. None
 D. Random
 
-### 65. (Scenario PBQ — End to end) Architect a "Linear Asks"-style AI feature: a user pastes a Slack permalink, the system reads the thread, identifies the right team based on past patterns, drafts a task, and creates it in Linear. Best architecture:
+### 65. (Scenario PBQ, End to end) Architect a "Linear Asks"-style AI feature: a user pastes a Slack permalink, the system reads the thread, identifies the right team based on past patterns, drafts a task, and creates it in Linear. Best architecture:
 A. Single GPT-4 call
 B. LiteLLM gateway → ingest pipeline (Slack permalink → thread fetch → Module-2 chunking + embed in pgvector per workspace) → query: classify intent, retrieve similar past tasks, route via team-skills KG → generate (cite-required, schema-validated draft) → Linear API tool with HITL approval → Langfuse traces → cost dashboard + safety guardrails (PII redaction on Slack)
 C. SQL only
@@ -445,10 +445,10 @@ D. Random
 ## 🏁 Pre-Interview Checklist
 
 ✅ Read every Cheat-Sheet the night before
-✅ Run through the Module 10 capstone lab — pick one product, architect it from memory
+✅ Run through the Module 10 capstone lab, pick one product, architect it from memory
 ✅ Brush up on Anthropic / OpenAI API specifics for your target company
 ✅ Bring Polished examples of: a RAG you built, an eval harness, a cost optimization
 ✅ Sleep
 ✅ You've earned this
 
-When you pass, return for [AWS ML Specialty](../../31-AWS-ML-Specialty/README.md) — the natural next step for production AI engineers. Good luck. 🚀
+When you pass, return for [AWS ML Specialty](../../31-AWS-ML-Specialty/README.md), the natural next step for production AI engineers. Good luck. 🚀

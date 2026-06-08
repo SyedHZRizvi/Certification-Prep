@@ -4,7 +4,7 @@
 
 ---
 
-## 🗑️ The 7 Wastes — TIMWOOD
+## 🗑️ The 7 Wastes, TIMWOOD
 
 | | Waste | Example |
 |---|-------|---------|
@@ -16,7 +16,7 @@
 | **O** | Overprocessing | Polishing hidden surfaces |
 | **D** | Defects | Rework, scrap |
 
-🧠 **Overproduction is the WORST — it creates the others.**
+🧠 **Overproduction is the WORST, it creates the others.**
 
 8th waste (DOWNTIME) = unused human talent.
 
@@ -106,8 +106,8 @@ LCL = mean − 3σ
 
 | Pattern | Means |
 |---------|-------|
-| Within limits, random | Common cause — don't tamper |
-| Outside limits | Special cause — investigate |
+| Within limits, random | Common cause, don't tamper |
+| Outside limits | Special cause, investigate |
 | 8 points same side of mean | Special cause signal |
 
 ### Capability
@@ -204,4 +204,4 @@ When you see these, often **wrong**:
 
 ---
 
-➡️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) — take it now! Then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
+➡️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), take it now! Then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)

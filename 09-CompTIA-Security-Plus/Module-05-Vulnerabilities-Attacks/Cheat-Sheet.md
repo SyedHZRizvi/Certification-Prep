@@ -53,7 +53,7 @@
 
 ---
 
-## 🌍 Network Attacks — One-line Tells
+## 🌍 Network Attacks, One-line Tells
 
 | Attack | Tell |
 |--------|------|
@@ -122,9 +122,9 @@ Forged TGT after KRBTGT compromise → Golden Ticket
 ## ✏️ Quick Self-Check
 
 1. SQLi best fix? ___
-2. XSS — best fix + which sub-type stores on the server? ___
-3. Spraying vs stuffing vs brute force — one-line each? ___
-4. On-path attack on a LAN — most likely starts with what protocol abuse? ___
+2. XSS, best fix + which sub-type stores on the server? ___
+3. Spraying vs stuffing vs brute force, one-line each? ___
+4. On-path attack on a LAN, most likely starts with what protocol abuse? ___
 5. Name the malware type that does NOT self-replicate but disguises itself. ___
 
 ---

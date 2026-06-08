@@ -115,12 +115,12 @@ Customize weights to your subject. Document them in the case study.
 ## 🎥 Loom Outline
 
 ```
-0:00 — Hook + problem
-0:30 — Diagram overview
-2:00 — Live demo (submit form, show fanout)
-3:30 — Tour each module + config
-6:00 — Show JSON export + "you can import this"
-7:00 — Wrap + what v2 adds
+0:00, Hook + problem
+0:30, Diagram overview
+2:00, Live demo (submit form, show fanout)
+3:30, Tour each module + config
+6:00, Show JSON export + "you can import this"
+7:00, Wrap + what v2 adds
 ```
 
 5–10 min. 1080p. Face in corner. Pacing matters.
@@ -176,7 +176,7 @@ When describing the scenario:
 
 - ✅ "Replaces ~6 manual hours/week..."
 - ✅ "Router branches by score; each branch fires in <30 sec..."
-- ✅ "Enrichment uses [tool] — added data we couldn't get from the form..."
+- ✅ "Enrichment uses [tool], added data we couldn't get from the form..."
 - ✅ "Error handler routes failed enrichments to a manual review queue..."
 
 Avoid:
@@ -208,7 +208,7 @@ Webhook → Hunter enrichment → scoring → Router to HOT/WARM/COLD.
 Each branch fires Slack + email + Salesforce + Notion based on score.
 Replaces ~6 manual hours/week. Lead routing now happens in <30 sec.
 v2 I'd add LLM message classification + dedupe + feedback loop.
-Loom + JSON public — you can import and customize in 4 minutes."
+Loom + JSON public, you can import and customize in 4 minutes."
 ```
 
 5 reps. Then move on.

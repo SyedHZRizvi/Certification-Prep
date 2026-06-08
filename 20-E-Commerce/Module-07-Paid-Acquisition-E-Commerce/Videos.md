@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Performance Max for Retail — Setup + Best Practices</p>
+      <p class="vg-title">Performance Max for Retail, Setup + Best Practices</p>
       <p class="vg-creator">Surfside PPC / Kasim Aslam</p>
       <span class="vg-duration">⏱ 24 min · Brand exclusions, asset groups, CAG</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Meta CAPI — Post-iOS 14.5 Setup</p>
+      <p class="vg-title">Meta CAPI, Post-iOS 14.5 Setup</p>
       <p class="vg-creator">Meta Developers / Klaviyo</p>
       <span class="vg-duration">⏱ 20 min · CAPI + AEM + deduplication</span>
     </div>
@@ -51,7 +51,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Amazon Ads — ACoS, TACoS, Campaign Types</p>
+      <p class="vg-title">Amazon Ads, ACoS, TACoS, Campaign Types</p>
       <p class="vg-creator">Helium 10 / Jungle Scout</p>
       <span class="vg-duration">⏱ 19 min · The three SP campaign structures</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">TikTok Shop Ads — Spark + Creator-Led</p>
+      <p class="vg-title">TikTok Shop Ads, Spark + Creator-Led</p>
       <p class="vg-creator">TikTok for Business / Common Thread Collective</p>
       <span class="vg-duration">⏱ 18 min · The 2024 winning playbook</span>
     </div>
@@ -83,8 +83,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">iOS 14.5 ATT — The $10B Hit</p>
-      <p class="vg-creator">Various — TechCrunch / CTC</p>
+      <p class="vg-title">iOS 14.5 ATT, The $10B Hit</p>
+      <p class="vg-creator">Various, TechCrunch / CTC</p>
       <span class="vg-duration">⏱ 22 min · April 26, 2021 impact</span>
     </div>
   </a>
@@ -98,7 +98,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Temu's $1.7B Paid-Ad Blitz (2023)</p>
-      <p class="vg-creator">Various — Modern Retail / WSJ</p>
+      <p class="vg-creator">Various, Modern Retail / WSJ</p>
       <span class="vg-duration">⏱ 16 min · The CAC-inflation story</span>
     </div>
   </a>
@@ -106,8 +106,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AI Ad-Creative Pipeline — $0.50 vs $2K</p>
-      <p class="vg-creator">Various — DTC operators</p>
+      <p class="vg-title">AI Ad-Creative Pipeline, $0.50 vs $2K</p>
+      <p class="vg-creator">Various, DTC operators</p>
       <span class="vg-duration">⏱ 18 min · Midjourney + Runway + ElevenLabs</span>
     </div>
   </a>
@@ -115,7 +115,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Pinterest Ads — High-Intent Shopping</p>
+      <p class="vg-title">Pinterest Ads, High-Intent Shopping</p>
       <p class="vg-creator">Pinterest / Surfside PPC</p>
       <span class="vg-duration">⏱ 14 min · The under-rated channel</span>
     </div>

@@ -41,7 +41,7 @@
 | Gemini 2.5 Pro Deep Think | Google | Visible | Cheapest of the flagships |
 | DeepSeek R1 | DeepSeek | Visible, open-weights | Reproducible; January 2025 breakthrough |
 
-🎯 *On reasoning models: DON'T add "Let's think step by step" — it's already doing it.*
+🎯 *On reasoning models: DON'T add "Let's think step by step", it's already doing it.*
 
 ---
 
@@ -83,7 +83,7 @@ Final Answer: <result>
 
 ---
 
-## 🌳 ToT — When to Use
+## 🌳 ToT, When to Use
 
 | Task | CoT | ToT |
 |------|-----|-----|
@@ -140,7 +140,7 @@ Final Answer: <result>
 
 - "CoT helps multi-step reasoning, not trivial tasks"
 - "Self-consistency at N=5 often captures most of N=40's lift"
-- "Reasoning models bake in CoT — don't add the trigger phrase"
+- "Reasoning models bake in CoT, don't add the trigger phrase"
 - "ReAct loops need a max_iterations cap"
 - "Reasoning tokens are billed and metered"
 

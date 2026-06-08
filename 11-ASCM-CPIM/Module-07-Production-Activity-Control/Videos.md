@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Manufacturing Lead Time — 5 Elements</p>
+      <p class="vg-title">Manufacturing Lead Time, 5 Elements</p>
       <p class="vg-creator">ASCM</p>
       <span class="vg-duration">⏱ 14 min · Q-S-R-W-M</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Dispatching Rules — SPT, EDD, FCFS</p>
+      <p class="vg-title">Dispatching Rules, SPT, EDD, FCFS</p>
       <p class="vg-creator">Education Edge</p>
       <span class="vg-duration">⏱ 14 min · Worked sequence example</span>
     </div>

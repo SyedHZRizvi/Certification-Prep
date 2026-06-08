@@ -220,7 +220,7 @@ Launched at re:Invent 2024. Includes Micro/Lite/Pro/Premier (text), Canvas (imag
 Bedrock Batch is asynchronous, processed within 24 h, at ~50% lower price. Ideal for offline jobs.
 
 ### Q7: **B. No-code playground on top of Bedrock**
-Free signup, shareable apps, great for learning and demos — not for production.
+Free signup, shareable apps, great for learning and demos, not for production.
 
 ### Q8: **B. Applications / Tools / Infrastructure**
 AWS's own three-layer stack. Top = Q, PartyRock. Middle = Bedrock. Bottom = SageMaker, Trainium, Inferentia.
@@ -235,7 +235,7 @@ Both are embedding models on Bedrock used heavily for RAG.
 Rebranded and expanded into Q Developer in 2024.
 
 ### Q12: **A. Provisioned Throughput**
-Reserve model units (MUs) per hour — predictable, dedicated capacity. Also required for some customized models.
+Reserve model units (MUs) per hour, predictable, dedicated capacity. Also required for some customized models.
 
 ### Q13: **B. AWS Trainium**
 Trainium = TRAINing. Inferentia = INFERence. Graviton = ARM CPU. Nitro = hypervisor.
@@ -244,10 +244,10 @@ Trainium = TRAINing. Inferentia = INFERence. Graviton = ARM CPU. Nitro = hypervi
 See Q13.
 
 ### Q15: **B. By default, AWS does not use Bedrock inputs/outputs to train base models**
-Data stays in the customer account/Region — a frequent test point.
+Data stays in the customer account/Region, a frequent test point.
 
 ### Q16: **B. Knowledge Bases for Amazon Bedrock**
-Managed RAG — chunking, embedding, retrieval orchestration. Covered deeply in Module 5.
+Managed RAG, chunking, embedding, retrieval orchestration. Covered deeply in Module 5.
 
 ### Q17: **B. Images from text prompts**
 Stable Diffusion is text-to-image. Titan Image Generator and Nova Canvas also do this on Bedrock.
@@ -256,16 +256,16 @@ Stable Diffusion is text-to-image. Titan Image Generator and Nova Canvas also do
 Cohere Command (text), Embed (vectors), Rerank (boosting top-K retrieval) all live on Bedrock.
 
 ### Q19: **B. PartyRock**
-No code, no AWS account needed, free tier — perfect for a demo prototype.
+No code, no AWS account needed, free tier, perfect for a demo prototype.
 
 ### Q20: **A. Natural-language generative BI for dashboards**
 Q embedded in QuickSight = ask questions and get charts in plain English.
 
 ### Q21: **B. Titan**
-Amazon's first-party FM family — cost-efficient text and embeddings models on Bedrock.
+Amazon's first-party FM family, cost-efficient text and embeddings models on Bedrock.
 
 ### Q22: **B. Amazon Bedrock (Claude model invocation)**
-Bedrock is serverless and pay-per-token — fastest path to production for Claude with zero infra.
+Bedrock is serverless and pay-per-token, fastest path to production for Claude with zero infra.
 
 ### Q23: **D. Real-time speech transcription**
 That's Amazon Transcribe, not Bedrock. Bedrock has Knowledge Bases, Guardrails, Agents, Model Evaluation, Studio.
@@ -278,7 +278,7 @@ Built-in framework to compare FMs on your data using automated or human evals.
 ## 📊 Score Yourself
 
 - 23–24/24 → 🏆 Bedrock + Amazon Q + JumpStart on lock.
-- 20–22/24 → ✅ Great — go take Practice Exam 1.
+- 20–22/24 → ✅ Great, go take Practice Exam 1.
 - 17–19/24 → ⚠️ Re-read the Bedrock catalog table and Q Developer vs Q Business section.
 - <17 → 🔁 Re-do the whole module.
 

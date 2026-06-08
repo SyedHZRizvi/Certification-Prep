@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -278,42 +278,42 @@
 **A:** Frank Thomas and Ollie Johnston in *The Illusion of Life: Disney Animation* (1981).
 
 **Q:** What is the volume rule in squash and stretch?
-**A:** Volume (mass) must remain constant — the object widens when squashed, narrows when stretched.
+**A:** Volume (mass) must remain constant, the object widens when squashed, narrows when stretched.
 
 **Q:** What does anticipation do for the audience?
 **A:** It prepares the audience for an action about to happen, earning the emotional payoff.
 
 **Q:** Define staging in the context of animation.
-**A:** Presenting one idea clearly so the audience reads it instantly — one center of attention, clear visual hierarchy.
+**A:** Presenting one idea clearly so the audience reads it instantly, one center of attention, clear visual hierarchy.
 
 **Q:** What is the difference between Straight-Ahead and Pose-to-Pose animation?
 **A:** Straight-Ahead = frame 1 → 2 → 3 sequentially (organic, spontaneous). Pose-to-Pose = plan key poses first, fill in-betweens (controlled, dialogue-friendly).
 
 **Q:** What is follow-through in animation?
-**A:** Secondary movement that continues after the main body stops — the coat swings forward past the stopped body.
+**A:** Secondary movement that continues after the main body stops, the coat swings forward past the stopped body.
 
 **Q:** What is overlapping action?
-**A:** Different body parts moving at different times and rates — the arm follows the torso by a few frames, the hand follows the arm.
+**A:** Different body parts moving at different times and rates, the arm follows the torso by a few frames, the hand follows the arm.
 
 **Q:** What does slow-in/slow-out (ease in/ease out) mean?
-**A:** Objects accelerate from rest (slow-in) and decelerate to stop (slow-out) — more drawings cluster near the slow moments.
+**A:** Objects accelerate from rest (slow-in) and decelerate to stop (slow-out), more drawings cluster near the slow moments.
 
 **Q:** Why do living things move in arcs rather than straight lines?
-**A:** Limbs rotate around joints, which produces curved arc paths through space — not straight-line paths.
+**A:** Limbs rotate around joints, which produces curved arc paths through space, not straight-line paths.
 
 **Q:** What is secondary action, and what rule must it follow?
-**A:** A supporting movement enriching the primary action. It must support without competing — never take focus from the primary action.
+**A:** A supporting movement enriching the primary action. It must support without competing, never take focus from the primary action.
 
 **Q:** Which principle does Richard Williams call the animator's most important skill?
-**A:** Timing (and spacing) — the number of frames determines weight, speed, and emotion.
+**A:** Timing (and spacing), the number of frames determines weight, speed, and emotion.
 
 **Q:** Define exaggeration as an animation principle.
 **A:** Pushing the depiction beyond literal anatomical or physical reality to communicate emotion and story with greater clarity.
 
 **Q:** What does solid drawing mean in animation?
-**A:** That drawings communicate three-dimensional form, weight, and balance even in a 2D medium — through foreshortening, overlapping, and contour.
+**A:** That drawings communicate three-dimensional form, weight, and balance even in a 2D medium, through foreshortening, overlapping, and contour.
 
-**Q:** What does "appeal" mean in the 12 Principles — and does it require cuteness?
+**Q:** What does "appeal" mean in the 12 Principles, and does it require cuteness?
 **A:** Appeal = engaging clarity of character that makes audiences want to watch. Villains have appeal. Cuteness is not required.
 
 **Q:** Name all 12 Principles in order.
@@ -323,14 +323,14 @@
 **A:** 4 frames = shock, violence, comedy snap. 48 frames = heavy weight, grief, ceremonial slowness.
 
 **Q:** What scene in Bambi is the definitive teaching example for slow-in/slow-out?
-**A:** The deer-on-ice scene — ice removes friction, exaggerating the natural ease-in/ease-out physics.
+**A:** The deer-on-ice scene, ice removes friction, exaggerating the natural ease-in/ease-out physics.
 
 ---
 
 ## 🎞️ SECTION 2: HISTORY & VISUAL LANGUAGE
 
 **Q:** What did Eadweard Muybridge contribute to animation?
-**A:** Sequential motion-study photographs (1878–1887) establishing how real bodies move — the reference science for all animation.
+**A:** Sequential motion-study photographs (1878–1887) establishing how real bodies move, the reference science for all animation.
 
 **Q:** What did Winsor McCay's Gertie the Dinosaur (1914) prove?
 **A:** That a drawn character could have distinct personality, emotional performance, and audience connection.
@@ -354,10 +354,10 @@
 **A:** All cameras must stay on the same side of the axis of action (an imaginary line through the primary action) to maintain spatial consistency.
 
 **Q:** What is the Rule of Thirds?
-**A:** Placing subjects at the intersection points of a 3x3 grid overlaid on the frame — rather than dead center — for more dynamic composition.
+**A:** Placing subjects at the intersection points of a 3x3 grid overlaid on the frame rather than dead center for more dynamic composition.
 
 **Q:** What does a low-angle camera shot communicate?
-**A:** Power, authority, and menace — the character looks larger and more dominant from below.
+**A:** Power, authority, and menace, the character looks larger and more dominant from below.
 
 **Q:** What does a Dutch angle communicate?
 **A:** Psychological unease, disorientation, or that something is wrong.
@@ -373,7 +373,7 @@
 ## ✏️ SECTION 3: DRAWING FUNDAMENTALS
 
 **Q:** What is the "line of action" in a gesture drawing?
-**A:** A single curved line running through the pose that communicates its dominant directional energy — what the figure is doing.
+**A:** A single curved line running through the pose that communicates its dominant directional energy, what the figure is doing.
 
 **Q:** What is the construction method in figure drawing?
 **A:** Building complex organic forms from simple underlying geometric volumes (egg head, box torso, cylinder limbs).
@@ -388,7 +388,7 @@
 **A:** Approximately 7–8 head-lengths (the body is 7–8 times the height of the head).
 
 **Q:** What is a chibi/super-deformed proportion?
-**A:** 1:1 to 2:1 — the head is nearly as large as the entire body.
+**A:** 1:1 to 2:1, the head is nearly as large as the entire body.
 
 **Q:** What is the "study-then-draw" reference method?
 **A:** Observe reference deeply → close it → draw from understanding → return only to check specific details.
@@ -397,7 +397,7 @@
 **A:** Shoulder = larger, more confident, expressive marks. Wrist = small, cramped, timid marks.
 
 **Q:** What is the "tangent" problem in drawing composition?
-**A:** Two lines or shapes touching at exactly one point — the eye cannot determine depth. Use overlap instead.
+**A:** Two lines or shapes touching at exactly one point, the eye cannot determine depth. Use overlap instead.
 
 **Q:** What four skills does life drawing develop for animators?
 **A:** Observational accuracy, speed under time pressure, understanding of weight/balance, and hand-eye coordination.
@@ -407,10 +407,10 @@
 ## 🎞️ SECTION 4: STORYBOARDING & ANIMATICS
 
 **Q:** What is an animatic (story reel)?
-**A:** Storyboards cut to timing with placeholder audio — tests whether the story works in time before expensive animation resources are committed.
+**A:** Storyboards cut to timing with placeholder audio, tests whether the story works in time before expensive animation resources are committed.
 
 **Q:** What does the "3-thumbnail rule" mean?
-**A:** Draw at least 3 different composition options for each significant story beat before committing — the third is usually the most interesting.
+**A:** Draw at least 3 different composition options for each significant story beat before committing, the third is usually the most interesting.
 
 **Q:** What is a J-cut?
 **A:** Audio from the incoming scene begins before the visual cut to that scene.
@@ -438,10 +438,10 @@
 **A:** Spacing = how far each drawing moves from the previous one in space (determines perceived speed). Timing = how many frames between drawings.
 
 **Q:** What does an S-curve in the graph editor represent?
-**A:** Slow-in/slow-out (ease in/ease out) — flat at start, steep in middle, flat at end.
+**A:** Slow-in/slow-out (ease in/ease out), flat at start, steep in middle, flat at end.
 
 **Q:** What does a straight diagonal line in the graph editor represent?
-**A:** Constant speed (linear interpolation) — mechanical, robotic, even motion.
+**A:** Constant speed (linear interpolation), mechanical, robotic, even motion.
 
 **Q:** Film (theatrical animation) standard frame rate?
 **A:** 24 fps.
@@ -453,7 +453,7 @@
 **A:** 30 fps.
 
 **Q:** What does "on 2s" mean?
-**A:** Every drawing is shown for 2 frames — 12 unique drawings per second at 24fps.
+**A:** Every drawing is shown for 2 frames, 12 unique drawings per second at 24fps.
 
 **Q:** What is the "graph editor trap"?
 **A:** Default smooth S-curves on every parameter produce mathematically beautiful but dead, statue-on-turntable motion. Real performance is messier.
@@ -493,7 +493,7 @@
 **A:** Purple.
 
 **Q:** In freelance animation, who typically owns the character designs created for a client project?
-**A:** The client/employer typically owns them — ownership should always be clarified in the contract.
+**A:** The client/employer typically owns them, ownership should always be clarified in the contract.
 
 **Q:** Why is slight asymmetry better than perfect symmetry in character design?
 **A:** Perfect symmetry looks robotic and lifeless. Slight asymmetry allows more natural animation and reflects biological reality.
@@ -506,10 +506,10 @@
 **A:** The lightness or darkness of a color, independent of hue. It is the most important property for readability.
 
 **Q:** Why is value more important than hue for readability?
-**A:** Similar values cannot be distinguished even if they have different hues — value contrast is what separates elements visually.
+**A:** Similar values cannot be distinguished even if they have different hues, value contrast is what separates elements visually.
 
 **Q:** What is the Pixar rule for establishing color in a composition?
-**A:** Value first — establish strong value relationships before adding hue. Compositions that work in grayscale work in color.
+**A:** Value first, establish strong value relationships before adding hue. Compositions that work in grayscale work in color.
 
 **Q:** What does high saturation communicate in animation?
 **A:** Energy, intensity, fantasy, youth, joy.
@@ -518,44 +518,44 @@
 **A:** Realism, fatigue, sadness, age, grief, nostalgia.
 
 **Q:** What color harmony uses colors adjacent on the wheel?
-**A:** Analogous — comfortable, natural feeling.
+**A:** Analogous, comfortable, natural feeling.
 
 **Q:** What color harmony uses colors directly opposite on the wheel?
-**A:** Complementary — high contrast, tension, vibrancy.
+**A:** Complementary, high contrast, tension, vibrancy.
 
 **Q:** What is the most common professional color harmony choice?
 **A:** Analogous palette with one complementary accent element.
 
 **Q:** Do warm colors advance or recede in a composition?
-**A:** Advance — they appear to move toward the viewer.
+**A:** Advance, they appear to move toward the viewer.
 
 **Q:** Do cool colors advance or recede in a composition?
-**A:** Recede — they appear to move away from the viewer (backgrounds are often cool).
+**A:** Recede, they appear to move away from the viewer (backgrounds are often cool).
 
 **Q:** What is a "color script" in animation production?
 **A:** A large-scale planning document showing how the film's palette evolves from beginning to end.
 
 **Q:** What does chromatic aberration communicate in Spider-Verse?
-**A:** A stylistic simulation of camera lens distortion (color channel misalignment) — used deliberately as a storytelling and style tool.
+**A:** A stylistic simulation of camera lens distortion (color channel misalignment), used deliberately as a storytelling and style tool.
 
 ---
 
 ## 💻 SECTION 8: DIGITAL WORKFLOW & TOOLS
 
 **Q:** What is the "Final Rule" in animation file naming?
-**A:** Never name a file "final." Use numerical versioning (v001, v002) — there is always a revision.
+**A:** Never name a file "final." Use numerical versioning (v001, v002), there is always a revision.
 
 **Q:** What is the correct file naming convention for animation files?
-**A:** [PROJECT]_[EP###]_[SH###]_[ELEMENT]_v[###].[ext] — e.g., ANI_EP004_SH012_CharA_body_v003.anim
+**A:** [PROJECT]_[EP###]_[SH###]_[ELEMENT]_v[###].[ext], e.g., ANI_EP004_SH012_CharA_body_v003.anim
 
 **Q:** Why are numbers zero-padded (001, not 1) in file names?
 **A:** So files sort in correct numerical order when there are more than 9 versions (file systems sort alphabetically).
 
 **Q:** What is H.264 appropriate for in animation production?
-**A:** Client review, web delivery, and streaming — NOT production masters (it is lossy and degrades on re-encode).
+**A:** Client review, web delivery, and streaming, NOT production masters (it is lossy and degrades on re-encode).
 
 **Q:** What is ProRes 4444 used for?
-**A:** VFX masters and compositing — it supports an alpha channel (transparency).
+**A:** VFX masters and compositing, it supports an alpha channel (transparency).
 
 **Q:** What is the professional animation rendering workflow?
 **A:** Render to PNG sequence or ProRes 4444 → edit/composite in ProRes 422 → deliver as H.264 or H.265.
@@ -570,7 +570,7 @@
 **A:** Toon Boom Harmony (used at Disney TV, DreamWorks TV, and most 2D production studios).
 
 **Q:** What is Shotgrid (Shotgun) used for in animation production?
-**A:** Production tracking — managing shot progress, version approvals, and production schedules.
+**A:** Production tracking, managing shot progress, version approvals, and production schedules.
 
 **Q:** What is Frame.io used for?
 **A:** Client review and approval of animation shots and sequences.
@@ -580,10 +580,10 @@
 ## ⚽ SECTION 9: FIRST ANIMATED SHORT
 
 **Q:** What principles does the bouncing ball exercise teach?
-**A:** Squash & Stretch, Slow-In/Slow-Out, Arcs, Timing, Follow-Through, Weight — essentially the full toolkit.
+**A:** Squash & Stretch, Slow-In/Slow-Out, Arcs, Timing, Follow-Through, Weight, essentially the full toolkit.
 
 **Q:** Where are drawings most closely spaced in a bouncing ball timing chart?
-**A:** At the top of the arc — where the ball is slowest, almost stationary.
+**A:** At the top of the arc, where the ball is slowest, almost stationary.
 
 **Q:** What does a bowling ball vs a ping-pong ball differ in during animation?
 **A:** Frame count per bounce (bowling = more frames, higher weight), squash amount (bowling = minimal), bounce height (bowling = very small).
@@ -592,7 +592,7 @@
 **A:** Contact (foot lands, body lowest), Down (weight transfers), Passing (free leg passes planted leg, body highest), Up/Recoil (push-off).
 
 **Q:** In a walk cycle, which arm swings forward with the leading leg?
-**A:** The opposite arm — right arm forward when left leg leads.
+**A:** The opposite arm, right arm forward when left leg leads.
 
 **Q:** What does walk cycle timing at 20–24 frames per step communicate?
 **A:** A menacing, deliberate, powerful character.
@@ -608,22 +608,22 @@
 ## 💼 SECTION 10: PORTFOLIO & CAREER
 
 **Q:** What is the first rule of demo reel strategy?
-**A:** Open with your strongest shot — recruiters decide in the first 10 seconds.
+**A:** Open with your strongest shot, recruiters decide in the first 10 seconds.
 
 **Q:** What is the recommended demo reel length?
 **A:** 90 seconds ideal; 2 minutes absolute maximum. Every second must be strong.
 
 **Q:** What does the weakest shot in a demo reel determine?
-**A:** The animator's perceived professional level — recruiters assume the weakest shot represents a common quality floor.
+**A:** The animator's perceived professional level, recruiters assume the weakest shot represents a common quality floor.
 
 **Q:** Which platform is industry-preferred for hosting animation demo reels?
-**A:** Vimeo — ad-free, high quality, password protection for private links.
+**A:** Vimeo, ad-free, high quality, password protection for private links.
 
 **Q:** Which platform is dominant in the game art and animation industry for portfolios?
 **A:** ArtStation.
 
 **Q:** What percentage of animation industry jobs are NOT publicly posted?
-**A:** Approximately 75% — most are filled through the professional network.
+**A:** Approximately 75%, most are filled through the professional network.
 
 **Q:** What is the approximate US base salary for a Senior Animator at Disney/Pixar (2025–2026)?
 **A:** $120K–$165K base.
@@ -648,7 +648,7 @@
 **A:** The 180-degree rule (to communicate inter-universal incompatibility) and the standard frame rate convention (different fps per character to communicate character identity).
 
 **Q:** What was the Bambi production challenge that led Frank Thomas to codify the first animation principles?
-**A:** Animating deer convincingly — the drawings looked like drawings being moved, not deer moving. They needed to think about weight and force, not just poses.
+**A:** Animating deer convincingly, the drawings looked like drawings being moved, not deer moving. They needed to think about weight and force, not just poses.
 
 **Q:** Name three animation films mentioned in this course and the primary principle each illustrates.
 **A:** Bambi (slow-in/slow-out, overlapping action), Spider-Verse (anticipation, timing), Spirited Away (staging, secondary action), The Incredibles (squash & stretch, appeal), Arcane (shape language, color design).
@@ -657,7 +657,7 @@
 **A:** Timing is not emotionally fixed. The same action at different timings can shift from comedy to tragedy. Timing must match the specific emotional goal of the specific scene.
 
 **Q:** What does it mean for a pose to "read" in animation?
-**A:** The audience can immediately understand what the character is doing and feeling from the pose alone — primarily through the line of action and silhouette.
+**A:** The audience can immediately understand what the character is doing and feeling from the pose alone, primarily through the line of action and silhouette.
 
 **Q:** Name two software programs considered industry standard in their respective categories.
 **A:** Autodesk Maya (3D character animation), Toon Boom Harmony (2D character animation), Toon Boom Storyboard Pro (storyboarding).

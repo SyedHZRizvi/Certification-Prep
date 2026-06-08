@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — CompTIA Network+ (N10-009 Style)
+# 🧪 Practice Exam 2, CompTIA Network+ (N10-009 Style)
 
 > **Conditions:** Set a 65-minute timer. 65 questions. Treat it like the real thing.
-> **Pass mark:** 55/65 (~85%) — Network+ passes at ~80% so aim higher in practice.
+> **Pass mark:** 55/65 (~85%), Network+ passes at ~80% so aim higher in practice.
 > Take this AFTER finishing Modules 5–8. Covers DNS/DHCP/services, cloud connectivity, security, monitoring/tools, and troubleshooting methodology.
 
 ---
@@ -114,7 +114,7 @@ D. Requiring TLS decryption
 A. Only the payload
 B. The entire original packet, adding a new outer IP header
 C. Just the source IP
-D. Nothing — ESP doesn't encrypt
+D. Nothing, ESP doesn't encrypt
 
 ### 19. To pass IPsec through a NAT device, you must allow:
 A. TCP 443 only
@@ -135,10 +135,10 @@ C. The client device requesting access
 D. The directory service
 
 ### 22. NAC stands for and means:
-A. Network Address Control — DHCP
-B. Network Access Control — posture-checks devices before granting access
-C. New Authentication Control — replaces 802.1X
-D. Network Address Configuration — APIPA
+A. Network Address Control, DHCP
+B. Network Access Control, posture-checks devices before granting access
+C. New Authentication Control, replaces 802.1X
+D. Network Address Configuration, APIPA
 
 ### 23. ZTNA's primary advantage over a traditional VPN is:
 A. Cheaper
@@ -273,10 +273,10 @@ C. Divide-and-conquer only
 D. Don't apply OSI
 
 ### 45. When a "fix worked but you didn't tell the user or check for new side effects," you skipped:
-A. Step 1 — Identify
-B. Step 5 — Implement
-C. Step 6 — Verify full system functionality
-D. Step 7 — Document
+A. Step 1, Identify
+B. Step 5, Implement
+C. Step 6, Verify full system functionality
+D. Step 7, Document
 
 ### 46. A switch port "just stopped working" but other ports work for the same user. The MOST appropriate FIRST investigation step is:
 A. Replace the firewall
@@ -286,7 +286,7 @@ D. Re-resolve DNS
 
 ### 47. A SOC reports the IPS keeps blocking legitimate web traffic. The correct response is:
 A. Disable the IPS
-B. Tune the rules — move high-FP rules to alert-only, whitelist trusted dest, adjust thresholds; keep IPS protecting elsewhere
+B. Tune the rules, move high-FP rules to alert-only, whitelist trusted dest, adjust thresholds; keep IPS protecting elsewhere
 C. Switch to IDS-only
 D. Replace IPS with NAC
 
@@ -310,7 +310,7 @@ D. Wi-Fi deauth
 
 ### 51. A web app loads slowly. Wireshark shows TCP handshake completes in 2 ms, server responds in 60 ms, then the browser opens 47 NEW TCP connections for assets. The MOST appropriate fix is:
 A. Replace the server
-B. Enable HTTP/2 (or HTTP/3) on the reverse proxy — multiplexing eliminates per-asset handshake overhead
+B. Enable HTTP/2 (or HTTP/3) on the reverse proxy, multiplexing eliminates per-asset handshake overhead
 C. Disable IPv6
 D. Add bandwidth
 
@@ -323,7 +323,7 @@ D. SNMP trap on the firewall
 ### 53. A frame's destination MAC is `01:00:5E:00:00:01`. This is:
 A. A unicast frame
 B. A broadcast frame
-C. A multicast frame (IPv4 multicast — first 24 bits are 01:00:5E)
+C. A multicast frame (IPv4 multicast, first 24 bits are 01:00:5E)
 D. An anycast frame
 
 ### 54. An engineer changes an interface IP on a remote router and instantly loses SSH access. The recovery method is:
@@ -340,7 +340,7 @@ D. Move to 2.4 GHz
 
 ### 56. The Meta (Facebook) October 2021 outage took 6 hours because:
 A. The attack was too sophisticated
-B. The maintenance command withdrew DNS routes AND internal auth + badge access depended on the same DNS — engineers couldn't remote in; physical dispatch was needed
+B. The maintenance command withdrew DNS routes AND internal auth + badge access depended on the same DNS, engineers couldn't remote in; physical dispatch was needed
 C. SNMP polling failed
 D. A data center burned down
 
@@ -377,7 +377,7 @@ D. Disable the firewall
 
 The MOST URGENT hardening recommendation is:
 A. Disable HTTPS
-B. Disable Telnet (TCP 23) — cleartext credentials over the wire; SSH already covers remote shell
+B. Disable Telnet (TCP 23), cleartext credentials over the wire; SSH already covers remote shell
 C. Block port 22
 D. Add IPv6 only
 
@@ -395,10 +395,10 @@ D. (a) tracert, (b) cable certifier, (c) ping, (d) arp
 
 ### 63 (Scenario PBQ). A network outage timeline:
 
-- 09:00 — One ISP link goes down
-- 09:02 — BGP automatically fails over to backup ISP (~30s of routing flap)
-- 09:05 — Half the users report internal-app slowness
-- 09:08 — Investigation reveals the backup ISP is rate-limited and the company's stateful firewall's session table is full (sessions from the primary link still tracked)
+- 09:00, One ISP link goes down
+- 09:02, BGP automatically fails over to backup ISP (~30s of routing flap)
+- 09:05, Half the users report internal-app slowness
+- 09:08, Investigation reveals the backup ISP is rate-limited and the company's stateful firewall's session table is full (sessions from the primary link still tracked)
 
 The MOST appropriate single action to restore service is:
 A. Reboot the firewall
@@ -440,41 +440,41 @@ D. "WPA3-Enterprise doesn't need 802.1X"
 
 ---
 
-## Detailed answer rationales (selected — high-value items)
+## Detailed answer rationales (selected, high-value items)
 
-**Q11. B — Zone transfers / >512 bytes.** DNS uses UDP/53 for standard queries (faster). TCP/53 is used for zone transfers (AXFR/IXFR) and responses larger than 512 bytes (which UDP can't reliably carry).
+**Q11. B, Zone transfers / >512 bytes.** DNS uses UDP/53 for standard queries (faster). TCP/53 is used for zone transfers (AXFR/IXFR) and responses larger than 512 bytes (which UDP can't reliably carry).
 
-**Q18. B — Tunnel mode encrypts entire packet, new outer IP.** This is what makes IPsec usable for site-to-site VPNs — both the original IP header and payload are encrypted; a new outer IP header carries the encrypted bundle across the WAN.
+**Q18. B Tunnel mode encrypts entire packet, new outer IP.** This is what makes IPsec usable for site-to-site VPNs both the original IP header and payload are encrypted; a new outer IP header carries the encrypted bundle across the WAN.
 
-**Q19. B — UDP 500 + UDP 4500 + IP proto 50.** IKE phase 1 uses UDP/500. NAT-Traversal wraps ESP in UDP/4500 for NAT compatibility. ESP itself is IP protocol 50 (not a TCP/UDP port).
+**Q19. B, UDP 500 + UDP 4500 + IP proto 50.** IKE phase 1 uses UDP/500. NAT-Traversal wraps ESP in UDP/4500 for NAT compatibility. ESP itself is IP protocol 50 (not a TCP/UDP port).
 
-**Q23. B — Per-app vs network trust.** Traditional VPNs grant network-level access; ZTNA's identity-aware proxy grants per-application access, dramatically reducing blast radius if a user's device is compromised.
+**Q23. B, Per-app vs network trust.** Traditional VPNs grant network-level access; ZTNA's identity-aware proxy grants per-application access, dramatically reducing blast radius if a user's device is compromised.
 
-**Q35. B — Recorded normal for comparison.** Without a baseline, you can't quantify "slower than usual." Baselines drive alerting thresholds and capacity planning.
+**Q35. B, Recorded normal for comparison.** Without a baseline, you can't quantify "slower than usual." Baselines drive alerting thresholds and capacity planning.
 
-**Q44. B — Top-down for app symptoms.** When the symptom is app-layer (page won't load), starting at L7 finds DNS / cert / HTTP issues fast without first eliminating cables/switches.
+**Q44. B, Top-down for app symptoms.** When the symptom is app-layer (page won't load), starting at L7 finds DNS / cert / HTTP issues fast without first eliminating cables/switches.
 
-**Q45. C — Step 6 Verify skipped.** "Fix worked but didn't check end-to-end" is the canonical Step 6 skip — the most common anti-pattern CompTIA tests.
+**Q45. C Step 6 Verify skipped.** "Fix worked but didn't check end-to-end" is the canonical Step 6 skip the most common anti-pattern CompTIA tests.
 
-**Q48. B — WPA3-Enterprise EAP-TLS.** PEAP-MSCHAPv2 is known vulnerable to offline cracking. EAP-TLS uses per-side certificates — there's no password to crack offline.
+**Q48. B WPA3-Enterprise EAP-TLS.** PEAP-MSCHAPv2 is known vulnerable to offline cracking. EAP-TLS uses per-side certificates there's no password to crack offline.
 
-**Q49. B — Microsegmentation.** The Target 2013 lesson. Flat networks enable unrestricted lateral movement. Microsegmentation with enforcing firewalls between zones is the architectural fix.
+**Q49. B, Microsegmentation.** The Target 2013 lesson. Flat networks enable unrestricted lateral movement. Microsegmentation with enforcing firewalls between zones is the architectural fix.
 
-**Q53. C — Multicast.** IPv4 multicast frames use destination MAC `01:00:5E:xx:xx:xx` (first 24 bits). `01:00:5E:00:00:01` = all-hosts multicast.
+**Q53. C, Multicast.** IPv4 multicast frames use destination MAC `01:00:5E:xx:xx:xx` (first 24 bits). `01:00:5E:00:00:01` = all-hosts multicast.
 
-**Q54. B — Console / OOB.** When you break the only data path to a remote device, console (serial) or out-of-band management is the only recovery path. The Facebook/Meta 2021 outage canonical lesson.
+**Q54. B, Console / OOB.** When you break the only data path to a remote device, console (serial) or out-of-band management is the only recovery path. The Facebook/Meta 2021 outage canonical lesson.
 
-**Q56. B — DNS withdraw + dependency loop + on-site dispatch.** Meta's exact failure mode: BGP withdraw → DNS unreachable → internal auth + badge access dependent on DNS → engineers couldn't remote in → physical dispatch needed → 6 hours.
+**Q56. B, DNS withdraw + dependency loop + on-site dispatch.** Meta's exact failure mode: BGP withdraw → DNS unreachable → internal auth + badge access dependent on DNS → engineers couldn't remote in → physical dispatch needed → 6 hours.
 
-**Q60. B — HTTP/2.** Per-asset handshake overhead (HTTP/1.1 + no keepalive) is the textbook fix candidate: HTTP/2 multiplexes many requests over one connection.
+**Q60. B, HTTP/2.** Per-asset handshake overhead (HTTP/1.1 + no keepalive) is the textbook fix candidate: HTTP/2 multiplexes many requests over one connection.
 
-**Q61. B — Disable Telnet.** Telnet sends credentials in cleartext. SSH already covers the remote shell need; Telnet should be disabled on every Network+ scenario.
+**Q61. B, Disable Telnet.** Telnet sends credentials in cleartext. SSH already covers the remote shell need; Telnet should be disabled on every Network+ scenario.
 
-**Q63. B — Clear stale sessions + verify backup bandwidth.** Stateful firewalls' session tables fill up when traffic shifts; old sessions referring to the failed primary need to expire or be flushed. Combined with verifying the backup ISP's contracted capacity, this is the structured restoration.
+**Q63. B, Clear stale sessions + verify backup bandwidth.** Stateful firewalls' session tables fill up when traffic shifts; old sessions referring to the failed primary need to expire or be flushed. Combined with verifying the backup ISP's contracted capacity, this is the structured restoration.
 
-**Q64. A — Anycast advertises same IP from many sites; BGP picks nearest.** This is the canonical anycast definition — used by DNS root servers, CDNs (Cloudflare 1.1.1.1, Google 8.8.8.8), and modern cloud services.
+**Q64. A Anycast advertises same IP from many sites; BGP picks nearest.** This is the canonical anycast definition used by DNS root servers, CDNs (Cloudflare 1.1.1.1, Google 8.8.8.8), and modern cloud services.
 
-**Q65. B — Per-user, revocable, identity-tied auditing.** PSKs are shared; if one user leaks the PSK, the entire wireless is compromised. EAP-TLS per-user certificates are individually revocable, tied to identity, auditable, and align with existing identity infrastructure (AD).
+**Q65. B, Per-user, revocable, identity-tied auditing.** PSKs are shared; if one user leaks the PSK, the entire wireless is compromised. EAP-TLS per-user certificates are individually revocable, tied to identity, auditable, and align with existing identity infrastructure (AD).
 
 ---
 
@@ -482,8 +482,8 @@ D. "WPA3-Enterprise doesn't need 802.1X"
 
 | Score | Verdict |
 |-------|---------|
-| 60–65 | 🏆 Excellent — ready for the Final Mock |
-| 55–59 | ✅ On track — review wrong answers, then schedule the Final Mock for 2-3 days before your exam |
+| 60–65 | 🏆 Excellent, ready for the Final Mock |
+| 55–59 | ✅ On track, review wrong answers, then schedule the Final Mock for 2-3 days before your exam |
 | 45–54 | ⚠️ Re-study weak modules; redo this exam in 5 days |
 | <45 | 🔁 Revisit weak modules in full and re-do all the module quizzes |
 
@@ -500,4 +500,4 @@ For EACH wrong answer:
 
 ---
 
-➡️ When ready: 2-3 days before your real exam, take the [Final Mock Exam](./Final-Mock-Exam.md) under real conditions — 90 questions, 90 minutes, no notes, no breaks.
+➡️ When ready: 2-3 days before your real exam, take the [Final Mock Exam](./Final-Mock-Exam.md) under real conditions, 90 questions, 90 minutes, no notes, no breaks.

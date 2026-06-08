@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure VNet Fundamentals — Subnets, CIDRs, Reserved IPs</p>
+      <p class="vg-title">Azure VNet Fundamentals, Subnets, CIDRs, Reserved IPs</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 28 min · Start here</span>
     </div>
@@ -56,8 +56,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">VPN Gateway &amp; ExpressRoute — Hybrid Connectivity</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">VPN Gateway &amp; ExpressRoute, Hybrid Connectivity</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 22 min · P2S, S2S, ER</span>
     </div>
   </a>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ExpressRoute SKUs — Local vs Standard vs Premium</p>
+      <p class="vg-title">ExpressRoute SKUs, Local vs Standard vs Premium</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 18 min · Global Reach + Direct</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Azure Virtual WAN — When to Use Instead of Hub-Spoke</p>
+      <p class="vg-title">Azure Virtual WAN, When to Use Instead of Hub-Spoke</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 20 min · Global SD-WAN as a service</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Azure Network Watcher — Troubleshooting</p>
+      <p class="vg-title">Azure Network Watcher, Troubleshooting</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 14 min · Connection Monitor, IP flow verify</span>
     </div>
@@ -125,7 +125,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | THE Azure networking channel. |
-| **Adam Marczak — Azure for Everyone** | Clean hybrid connectivity intros. |
+| **Adam Marczak, Azure for Everyone** | Clean hybrid connectivity intros. |
 | **Tim Warner** | Exam-paced DNS / private endpoint content. |
 | **Inside Cloud and Security** | UDR and forced tunneling deep dives. |
 | **Microsoft Mechanics** | New networking SKUs. |
@@ -136,8 +136,8 @@
 
 1. How many IPs does Azure reserve per subnet?
 2. Are VNet peerings transitive?
-3. Service endpoint vs private endpoint — what's the IP difference?
+3. Service endpoint vs private endpoint, what's the IP difference?
 4. Why does a private endpoint NEED a Private DNS Zone?
-5. Route-based vs policy-based VPN — pick which?
+5. Route-based vs policy-based VPN, pick which?
 
 [Quiz](./Quiz.md) time.

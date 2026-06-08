@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🔁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker Pipelines — End-to-End</p>
+      <p class="vg-title">SageMaker Pipelines, End-to-End</p>
       <p class="vg-creator">AWS re:Invent (AIM403)</p>
       <span class="vg-duration">⏱ 28 min · Processing → Train → Eval → Conditional Deploy</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🔬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker Model Monitor — All 4 Types</p>
+      <p class="vg-title">SageMaker Model Monitor, All 4 Types</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 20 min · Data / Model / Bias / Attribution</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🏗️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SageMaker Projects — Templated MLOps</p>
+      <p class="vg-title">SageMaker Projects, Templated MLOps</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 22 min</span>
     </div>
@@ -98,7 +98,7 @@
     <div class="vg-thumb"><span>🎵</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Amazon Music MLOps Stack — re:Invent</p>
+      <p class="vg-title">Amazon Music MLOps Stack, re:Invent</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 50 min</span>
     </div>
@@ -127,10 +127,10 @@
 
 ## ✅ After watching
 
-1. The 4 inference modes — pick each from a scenario.
-2. Shadow vs blue-green vs canary — when each?
-3. The 4 Model Monitor types — what each watches?
-4. Pipelines vs Step Functions vs Airflow — when each?
+1. The 4 inference modes, pick each from a scenario.
+2. Shadow vs blue-green vs canary, when each?
+3. The 4 Model Monitor types, what each watches?
+4. Pipelines vs Step Functions vs Airflow, when each?
 5. How does Inference Recommender cut endpoint cost?
 
 ➡️ [Quiz.md](./Quiz.md)

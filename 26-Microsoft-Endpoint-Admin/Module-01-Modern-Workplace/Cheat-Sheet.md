@@ -39,17 +39,17 @@
 
 ---
 
-## 🛡️ Zero Trust — 3 Principles
+## 🛡️ Zero Trust, 3 Principles
 
-1. **Verify explicitly** — every signal, every request
-2. **Least privilege** — JIT, JEA, risk-adaptive
-3. **Assume breach** — segment, encrypt, minimize blast radius
+1. **Verify explicitly**, every signal, every request
+2. **Least privilege**, JIT, JEA, risk-adaptive
+3. **Assume breach**, segment, encrypt, minimize blast radius
 
 🚨 If the answer says "trust the corporate network," it's wrong.
 
 ---
 
-## ⚙️ Co-Management — 7 Workloads
+## ⚙️ Co-Management, 7 Workloads
 
 | Workload | What it controls |
 |----------|------------------|

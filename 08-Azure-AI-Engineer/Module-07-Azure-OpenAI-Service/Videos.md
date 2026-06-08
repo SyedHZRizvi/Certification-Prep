@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: Azure OpenAI Service
 
-> **How to use:** Click any video card. Pick videos dated 2024+ — model catalogs, pricing SKUs, and API versions have changed substantially.
+> **How to use:** Click any video card. Pick videos dated 2024+, model catalogs, pricing SKUs, and API versions have changed substantially.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure OpenAI Service — complete overview</p>
+      <p class="vg-title">Azure OpenAI Service, complete overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 25 min · Architecture deep dive</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">On Your Data — native RAG with citations</p>
+      <p class="vg-title">On Your Data, native RAG with citations</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 12 min · Azure AI Search wiring</span>
     </div>
@@ -136,7 +136,7 @@
 1. Difference between resource, deployment, and model?
 2. When PTU? When Global Batch? When Standard?
 3. How does `in_scope: true` in On Your Data affect responses?
-4. Fine-tune vs RAG — when is each the right call?
+4. Fine-tune vs RAG, when is each the right call?
 5. Default content filter threshold for new deployments?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

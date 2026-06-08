@@ -1,6 +1,6 @@
 # 📋 Module 10 Cheat Sheet: Cross-Border, B2B & Composable Commerce
 
-> Print and tape. The closing module — and the one with the most regulation-trap questions.
+> Print and tape. The closing module, and the one with the most regulation-trap questions.
 
 ---
 

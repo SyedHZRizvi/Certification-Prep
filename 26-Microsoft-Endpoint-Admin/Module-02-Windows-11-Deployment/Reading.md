@@ -1,10 +1,10 @@
 # Module 2: Windows 11 Deployment & Imaging 💿
 
-> **Why this module matters:** Deployment is where MD-102 spends 25–30% of its weight. The exam expects you to pick the right deployment mode in 90 seconds based on a sentence-long scenario. The wrong choice — Autopilot self-deploying for a knowledge worker, MDT for a 1,000-laptop direct-ship — is a wrong question. This module teaches you the matrix.
+> **Why this module matters:** Deployment is where MD-102 spends 25–30% of its weight. The exam expects you to pick the right deployment mode in 90 seconds based on a sentence-long scenario. The wrong choice Autopilot self-deploying for a knowledge worker, MDT for a 1,000-laptop direct-ship is a wrong question. This module teaches you the matrix.
 
 > **Prerequisites for this module.** Before starting:
 > - You should know the three Entra device join states (Module 1).
-> - Comfort with Windows OOBE (the out-of-box experience screens) — having unboxed a fresh Windows PC at least once is enough.
+> - Comfort with Windows OOBE (the out-of-box experience screens), having unboxed a fresh Windows PC at least once is enough.
 > - Awareness that BIOS/UEFI and TPM 2.0 are required for Windows 11 (Microsoft documented system requirements).
 >
 > If you've never touched Windows Autopilot, do the [Microsoft Learn Autopilot tutorial](https://learn.microsoft.com/autopilot/tutorial/user-driven/azure-ad-join-workflow) once before reading further. The mental model snaps into place after one walk-through.
@@ -13,20 +13,20 @@
 
 ## 🍕 A Story: The Sales Kickoff Tuesday Doubled
 
-Pick up where Maria left off in Module 1. The Friday kickoff went perfectly — 998 of 1,000 Lenovo X1 Carbons were online by 9:30am Eastern with the corporate portal open. (Two devices were DOA hardware; replaced Monday.) Three weeks later the CEO walks in with a new ask:
+Pick up where Maria left off in Module 1. The Friday kickoff went perfectly, 998 of 1,000 Lenovo X1 Carbons were online by 9:30am Eastern with the corporate portal open. (Two devices were DOA hardware; replaced Monday.) Three weeks later the CEO walks in with a new ask:
 
 > *"We just acquired ContosoBio. 200 people in San Diego, Cambridge, and Cork. They're on 4-year-old Dell laptops, all AD domain-joined, all running our soon-to-retire on-prem Exchange. They need to be on our Microsoft 365 by quarter-end. The CFO doesn't want to buy new hardware."*
 
 Maria has to make six deployment-strategy decisions:
 
-1. **Existing AD-joined Dells** — do we wipe-and-load Autopilot, in-place upgrade with the existing image, or use Autopilot for existing devices?
-2. **Cork manufacturing line** (10 specialized PCs running custom QC apps that won't run on Windows 11) — Configuration Manager OSD with a custom image?
-3. **San Diego R&D** (50 engineers who run GPU workloads and demand admin rights on local boxes) — Autopilot with EPM, or a provisioning package on existing hardware?
-4. **A new round of 80 Surface Pros** for sales — direct-ship Autopilot user-driven, just like Friday's batch?
-5. **5 retail kiosks at a trade-show booth** running a single-app browser display — Autopilot self-deploying mode, with kiosk profile?
-6. **2 secured workstations for executives** that IT must touch before shipping — Autopilot pre-provisioned (white-glove) so IT installs the Defender baseline + Privileged Access Workstation profile and the executive just signs in.
+1. **Existing AD-joined Dells**, do we wipe-and-load Autopilot, in-place upgrade with the existing image, or use Autopilot for existing devices?
+2. **Cork manufacturing line** (10 specialized PCs running custom QC apps that won't run on Windows 11), Configuration Manager OSD with a custom image?
+3. **San Diego R&D** (50 engineers who run GPU workloads and demand admin rights on local boxes), Autopilot with EPM, or a provisioning package on existing hardware?
+4. **A new round of 80 Surface Pros** for sales, direct-ship Autopilot user-driven, just like Friday's batch?
+5. **5 retail kiosks at a trade-show booth** running a single-app browser display, Autopilot self-deploying mode, with kiosk profile?
+6. **2 secured workstations for executives** that IT must touch before shipping, Autopilot pre-provisioned (white-glove) so IT installs the Defender baseline + Privileged Access Workstation profile and the executive just signs in.
 
-Six personas, six deployment modes. This module gives you the matrix to answer the six in 90 seconds each — which is exactly the pace MD-102 expects.
+Six personas, six deployment modes. This module gives you the matrix to answer the six in 90 seconds each, which is exactly the pace MD-102 expects.
 
 ---
 
@@ -46,7 +46,7 @@ Six personas, six deployment modes. This module gives you the matrix to answer t
 
 ---
 
-## 🪪 Windows Autopilot — The Modern Default
+## 🪪 Windows Autopilot, The Modern Default
 
 Autopilot is the canonical Microsoft-recommended deployment mode for new Windows 11 devices. The flow:
 
@@ -98,7 +98,7 @@ The ESP is the progress screen the user sees while Intune is provisioning the de
 
 ---
 
-## 🏷️ Autopilot Profiles — The Per-Device Recipe
+## 🏷️ Autopilot Profiles, The Per-Device Recipe
 
 An Autopilot profile is the configuration Intune sends to a registered device at OOBE. Key settings:
 
@@ -110,12 +110,12 @@ An Autopilot profile is the configuration Intune sends to a registered device at
 | **Privacy settings** | Hide · Show | Hide for corporate-managed |
 | **Hide change account options** | Hide · Show | Hide (prevent user from joining different tenant) |
 | **User account type** | Standard · Administrator | Standard for compliance |
-| **Apply device name template** | Yes (e.g., `NWP-%SERIAL%`) | Yes — consistent inventory |
+| **Apply device name template** | Yes (e.g., `NWP-%SERIAL%`) | Yes, consistent inventory |
 | **Allow pre-provisioned deployment** | Yes/No | Yes if you sometimes white-glove |
 | **Language (region)** | Inherited from device · explicit | Explicit for global standardization |
 | **Skip automatically configuring keyboard** | Yes/No | Yes for global single-keyboard fleets |
 
-🚨 **Trap on the exam:** You cannot change deployment mode *after* a device has enrolled — you'd need to delete and re-register. Set deployment mode carefully at profile-creation time.
+🚨 **Trap on the exam:** You cannot change deployment mode *after* a device has enrolled, you'd need to delete and re-register. Set deployment mode carefully at profile-creation time.
 
 ---
 
@@ -123,10 +123,10 @@ An Autopilot profile is the configuration Intune sends to a registered device at
 
 There are five ways to get devices into Autopilot:
 
-1. **Via the OEM** (Lenovo, Dell, HP, Microsoft Surface, etc.) — they associate your tenant ID with each device they ship. Best for new fleet.
-2. **Via a Cloud Solution Provider (CSP) partner** — partner registers on your behalf.
+1. **Via the OEM** (Lenovo, Dell, HP, Microsoft Surface, etc.), they associate your tenant ID with each device they ship. Best for new fleet.
+2. **Via a Cloud Solution Provider (CSP) partner**, partner registers on your behalf.
 3. **Manually via CSV upload** in Intune (hash collected from the device with `Get-WindowsAutopilotInfo` PowerShell cmdlet).
-4. **Via Configuration Manager** — ConfigMgr can collect hashes from enrolled devices and submit them to Intune.
+4. **Via Configuration Manager**, ConfigMgr can collect hashes from enrolled devices and submit them to Intune.
 5. **Convert an existing device** via Autopilot for existing devices (rebuilds the OS through a ConfigMgr task sequence or Autopilot reset).
 
 ### Get the hardware hash (manual method)
@@ -149,7 +149,7 @@ Built with **Windows Configuration Designer** (free Microsoft Store app). A `.pp
 - Domain/Entra join settings
 - Local user accounts
 - Bulk MDM enrollment credentials
-- Apps to install (limited — typically MSI)
+- Apps to install (limited, typically MSI)
 - Certificates
 - Files to copy
 - PowerShell scripts to run
@@ -245,7 +245,7 @@ Microsoft publishes hard system requirements for Windows 11. Devices that don't 
 
 ## 🔧 Common Autopilot Deployment Failures
 
-Memorize these — they recur on the exam and in real life:
+Memorize these, they recur on the exam and in real life:
 
 | Symptom | Root cause | Fix |
 |---------|-----------|-----|
@@ -271,7 +271,7 @@ The correct sequence:
 5. ✅ **Assign the profile** to the Autopilot device group.
 6. ✅ **Build the Enrollment Status Page** (block until apps installed, list required apps).
 7. ✅ **Assign required apps + compliance + configuration profiles** to user groups.
-8. ✅ **Pilot with one user** — observe ESP, debug, fix.
+8. ✅ **Pilot with one user**, observe ESP, debug, fix.
 9. ✅ **Notify users to expect their device** + give them a quick-start guide.
 10. ✅ **Ship.**
 
@@ -285,11 +285,11 @@ The correct sequence:
 |------|---------|
 | "Autopilot works without internet" | ❌ Autopilot REQUIRES internet at OOBE to contact the Microsoft service |
 | "Self-deploying works on any Windows device" | ❌ Requires TPM 2.0 attestation, only Entra joined |
-| "MDT enrolls devices in Intune automatically" | ❌ MDT does not — you must add an enrollment step manually |
+| "MDT enrolls devices in Intune automatically" | ❌ MDT does not, you must add an enrollment step manually |
 | "In-place upgrade is the same as Autopilot reset" | ❌ In-place upgrades the OS; reset wipes and rebuilds |
-| "Provisioning packages replace Autopilot" | ❌ Different tools for different scenarios — neither is "newer" |
+| "Provisioning packages replace Autopilot" | ❌ Different tools for different scenarios, neither is "newer" |
 | "Hybrid Autopilot needs no infrastructure" | ❌ Needs Intune Connector for AD on a domain controller |
-| "All Windows 11 devices have TPM 2.0" | ❌ Older fleet refreshes — many devices have TPM 1.2 and cannot upgrade |
+| "All Windows 11 devices have TPM 2.0" | ❌ Older fleet refreshes, many devices have TPM 1.2 and cannot upgrade |
 
 ---
 
@@ -306,13 +306,13 @@ The correct sequence:
 | **User-driven** | The default Autopilot mode; user signs in to finish setup |
 | **Autopilot for existing devices** | Rebuild an existing Win10/11 device into an Autopilot device |
 | **Provisioning package (.ppkg)** | A Windows Configuration Designer file applied at OOBE or to running devices |
-| **MDT** | Microsoft Deployment Toolkit — on-prem WIM-based imaging |
-| **OSD** | Operating System Deployment — Configuration Manager's deployment engine |
+| **MDT** | Microsoft Deployment Toolkit, on-prem WIM-based imaging |
+| **OSD** | Operating System Deployment, Configuration Manager's deployment engine |
 | **In-place upgrade** | Setup-engine OS upgrade preserving apps + user data |
 | **Autopilot reset** | Tenant-side wipe + re-Autopilot for device repurposing |
 | **Fresh start** | User-initiated Windows reset preserving user data |
 | **ESP timeout** | The maximum wait time before ESP shows error (default 60 min) |
-| **ZTDId** | Zero-Touch Deployment ID — the Autopilot device identifier in Entra |
+| **ZTDId** | Zero-Touch Deployment ID, the Autopilot device identifier in Entra |
 
 ---
 
@@ -321,7 +321,7 @@ The correct sequence:
 You now know:
 
 - 💿 The six modern Windows deployment modes and when to pick each
-- 🪪 The full Autopilot flow — registration → profile → ESP → completion
+- 🪪 The full Autopilot flow, registration → profile → ESP → completion
 - 🏷️ Every Autopilot profile setting and the default for cloud-only deployment
 - 📋 The five ways to register devices with Autopilot
 - 📦 When `.ppkg` provisioning packages still beat Autopilot
@@ -339,7 +339,7 @@ You now know:
 
 ---
 
-## 📊 Case Study — Lenovo + Microsoft Surface OEM Autopilot Partnership (2019–2024)
+## 📊 Case Study, Lenovo + Microsoft Surface OEM Autopilot Partnership (2019–2024)
 
 **Situation.** When Microsoft introduced Windows Autopilot as a generally available service in 2017, the biggest practical adoption barrier was the **hardware hash collection** step. Enterprises buying 5,000 new laptops faced the choice of (a) imaging each one in a staging facility to extract the hash, (b) running PowerShell on every device at receipt, or (c) trusting the OEM to do it. Option (c) didn't exist because no OEM had a workflow for it.
 
@@ -366,7 +366,7 @@ In 2019, **Lenovo became the first major OEM** to support Autopilot hash registr
 **Discussion (Socratic).**
 - **Q1.** The OEM hash registration model creates a tenant-binding dependency at the factory. Argue both sides: should an enterprise insist on OEM registration to standardize provisioning, or should they keep the option of manual registration for flexibility? What does each choice cost when the enterprise wants to repurpose devices to a subsidiary tenant?
 - **Q2.** Autopilot user-driven requires internet at OOBE. A field office in a low-bandwidth location asks for an alternative. The two supported answers are (a) provisioning package shipped on USB or (b) Autopilot at the office with pre-provisioned (white-glove) finish for users. Defend which is right when bandwidth is the constraint vs when device count is the constraint.
-- **Q3.** A startup CTO with 30 employees argues "Autopilot is overkill — just hand-configure each device, it takes me an hour each." Microsoft's customer-story numbers suggest break-even is around 50–100 devices. Defend or refute the CTO's position, naming the one operational scenario (besides initial provisioning) where Autopilot pays for itself even for tiny fleets.
+- **Q3.** A startup CTO with 30 employees argues "Autopilot is overkill, just hand-configure each device, it takes me an hour each." Microsoft's customer-story numbers suggest break-even is around 50–100 devices. Defend or refute the CTO's position, naming the one operational scenario (besides initial provisioning) where Autopilot pays for itself even for tiny fleets.
 
 ---
 
@@ -377,22 +377,22 @@ In 2019, **Lenovo became the first major OEM** to support Autopilot hash registr
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Self-deploying vs user-driven for shared frontline devices.** A retail chain wants tablets at every checkout counter that boot to a single inventory app. Argue self-deploying vs user-driven, and identify the one Intune feature that makes self-deploying the cleaner answer.
 2. **ConfigMgr OSD in 2026.** Is there any greenfield scenario in 2026 where you'd recommend ConfigMgr OSD over Autopilot for new device deployment? Defend your answer with reference to operational cost, staff training, and infrastructure investment.
 3. **Pre-provisioned vs user-driven for executives.** Executives often demand "their device must work the moment they touch it." Argue when pre-provisioned (white-glove) is the right answer and when it's IT control-theater that costs more than it delivers.
-4. **In-place upgrade vs wipe-and-load for Windows 11 migration.** A 5,000-endpoint org is moving from Windows 10 22H2 to Windows 11 24H2. Defend in-place vs wipe-and-load — when is each right? What's the one scenario where wipe-and-load is correct even though in-place is technically supported?
+4. **In-place upgrade vs wipe-and-load for Windows 11 migration.** A 5,000-endpoint org is moving from Windows 10 22H2 to Windows 11 24H2. Defend in-place vs wipe-and-load, when is each right? What's the one scenario where wipe-and-load is correct even though in-place is technically supported?
 5. **Provisioning packages in 2026.** Many shops dismiss `.ppkg` as legacy. Defend the modern relevance of provisioning packages, naming at least two scenarios where they're still the right answer in 2026.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Microsoft Learn — Windows Autopilot deployment scenarios](https://learn.microsoft.com/autopilot/scenarios) (Microsoft, current revision)
+- 📖 [Microsoft Learn, Windows Autopilot deployment scenarios](https://learn.microsoft.com/autopilot/scenarios) (Microsoft, current revision)
 - 📖 [Get-WindowsAutopilotInfo PowerShell module documentation](https://learn.microsoft.com/autopilot/add-devices)
 - 📖 [Microsoft Configuration Manager OSD overview](https://learn.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 - 📖 [Microsoft Deployment Toolkit (MDT) reference](https://learn.microsoft.com/mem/configmgr/mdt/)
 - 📖 [Windows 11 system requirements (canonical Microsoft page)](https://www.microsoft.com/windows/windows-11-specifications)
-- 📖 Mark Russinovich + David Solomon, *Windows Internals (8th ed.)* — chapter on the Windows boot process; useful when troubleshooting Autopilot OOBE failures
-- 📖 Microsoft Mechanics episode *Autopilot at scale with Lenovo CSP* (2023) — the operational case study from the OEM side
+- 📖 Mark Russinovich + David Solomon, *Windows Internals (8th ed.)*, chapter on the Windows boot process; useful when troubleshooting Autopilot OOBE failures
+- 📖 Microsoft Mechanics episode *Autopilot at scale with Lenovo CSP* (2023), the operational case study from the OEM side

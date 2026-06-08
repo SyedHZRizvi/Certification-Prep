@@ -8,7 +8,7 @@
 
 ### Q1. GitHub Copilot's single most important eval metric historically: *(Remember)*
 A. MMLU
-B. Acceptance rate — fraction of suggestions developers keep
+B. Acceptance rate, fraction of suggestions developers keep
 C. Latency
 D. Tokens
 
@@ -16,7 +16,7 @@ D. Tokens
 
 ### Q2. Cursor's perceived-speed advantage over Copilot comes PRIMARILY from: *(Analyze)*
 A. Bigger model
-B. Latency engineering — two-model strategy, prompt caching, speculative decoding, streaming, edge serving
+B. Latency engineering, two-model strategy, prompt caching, speculative decoding, streaming, edge serving
 C. Better embeddings only
 D. Random
 
@@ -24,7 +24,7 @@ D. Random
 
 ### Q3. Notion AI Q&A v1's "missing memo" bug was MOST attributable to: *(Analyze)*
 A. Wrong model
-B. Chunking + reranker + top-K issues — the system was fixed by header-aware chunking, hybrid + reranker, and citation enforcement
+B. Chunking + reranker + top-K issues, the system was fixed by header-aware chunking, hybrid + reranker, and citation enforcement
 C. Wrong vector DB
 D. Network outage
 
@@ -32,7 +32,7 @@ D. Network outage
 
 ### Q4. Klarna AI assistant cost-per-conversation went from ~$0.30 to ~$0.04 via: *(Apply)*
 A. One trick
-B. Multi-model routing + prompt cache + semantic cache + output brevity + streaming early-cancel — compounding wins
+B. Multi-model routing + prompt cache + semantic cache + output brevity + streaming early-cancel, compounding wins
 C. Random
 D. None
 
@@ -40,7 +40,7 @@ D. None
 
 ### Q5. Khanmigo's safety architecture is unusual because: *(Understand)*
 A. It's the same as Claude.ai
-B. It's designed to PREVENT direct answers (Socratic tutoring) — guardrails aim at *too much help*, not just harmful content
+B. It's designed to PREVENT direct answers (Socratic tutoring), guardrails aim at *too much help*, not just harmful content
 C. It's open source
 D. It has no safety
 
@@ -48,7 +48,7 @@ D. It has no safety
 
 ### Q6. Stripe Radar's LLM augmentation is BEST described as: *(Understand)*
 A. The LLM replaces fraud classifiers
-B. The LLM *augments* gradient-boosted-tree classifiers — explanations, adjudication, edge cases, with HITL gates
+B. The LLM *augments* gradient-boosted-tree classifiers, explanations, adjudication, edge cases, with HITL gates
 C. The LLM is the entire system
 D. The LLM is unrelated
 
@@ -72,7 +72,7 @@ D. Random
 
 ### Q9. The "latency obsession beats model selection" lesson is BEST illustrated by: *(Analyze)*
 A. A team using a small model and worse latency
-B. Cursor — same provider models as competitors but feels 2× faster via TTFT engineering
+B. Cursor, same provider models as competitors but feels 2× faster via TTFT engineering
 C. A model with no API
 D. None
 
@@ -80,7 +80,7 @@ D. None
 
 ### Q10. The infrastructure-compounds lesson is BEST illustrated by: *(Analyze)*
 A. One big change
-B. Klarna's quarterly $0.30 → $0.04 grind — many small optimizations
+B. Klarna's quarterly $0.30 → $0.04 grind, many small optimizations
 C. A single hire
 D. None
 
@@ -104,7 +104,7 @@ D. None
 
 ### Q13. A team that ships GenAI features without observability is: *(Evaluate)*
 A. Faster
-B. Flying blind — debugging is impossible; cost surprises are inevitable
+B. Flying blind, debugging is impossible; cost surprises are inevitable
 C. Cheaper
 D. None
 
@@ -200,7 +200,7 @@ D. Random
 
 ### Q25. The bridge between "demo-ware" and "production-ware" is: *(Evaluate)*
 A. Better model
-B. Eval + observability + cost + safety + multi-model routing + retrieval engineering — the boring infrastructure
+B. Eval + observability + cost + safety + multi-model routing + retrieval engineering, the boring infrastructure
 C. Marketing
 D. None
 
@@ -220,7 +220,7 @@ D. Random
 The metric that aligned product and engineering from day one.
 
 ### Q2: **B. Layered latency engineering**
-Two-model + caching + spec-decode + streaming + edge — the combination.
+Two-model + caching + spec-decode + streaming + edge, the combination.
 
 ### Q3: **B. Chunking + reranker + top-K**
 The compounding production-RAG failure pattern.
@@ -240,7 +240,7 @@ The standard pattern for any "talk to the web" feature.
 ### Q8: **B. Routing + tracing + caching + RAG + eval**
 The common infrastructure underneath all 7 case studies.
 
-### Q9: **B. Cursor — same models, faster perception**
+### Q9: **B. Cursor, same models, faster perception**
 The defining example of latency engineering as moat.
 
 ### Q10: **B. Klarna grind**
@@ -318,9 +318,9 @@ The other options have fatal omissions.
 
 You've completed all 10 modules. Now apply the knowledge:
 
-- ✏️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) — Modules 1–5
-- ✏️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) — Modules 6–10
-- 🧪 [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) — Full course, 65 Q / 90 min
-- 🃏 [Flashcards](../Flashcards.md) — Master the vocabulary
+- ✏️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), Modules 1–5
+- ✏️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), Modules 6–10
+- 🧪 [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md), Full course, 65 Q / 90 min
+- 🃏 [Flashcards](../Flashcards.md), Master the vocabulary
 
 Then go interview. 🚀

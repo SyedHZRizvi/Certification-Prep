@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: GA4 Mastery & Custom Events
 
-> **How to use:** This is the cert-prep module. The Skillshop video is THE one to watch; everything else fills in gaps. Watch the BigQuery videos even if you don't think you'll use BigQuery — exam questions will assume you do.
+> **How to use:** This is the cert-prep module. The Skillshop video is THE one to watch; everything else fills in gaps. Watch the BigQuery videos even if you don't think you'll use BigQuery, exam questions will assume you do.
 
 ## ⭐ Essential watching (~110 min)
 
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">GA4 vs Universal Analytics — Conceptual Differences</p>
+      <p class="vg-title">GA4 vs Universal Analytics, Conceptual Differences</p>
       <p class="vg-creator">Loves Data</p>
       <span class="vg-duration">⏱ 14 min · For context</span>
     </div>
@@ -142,7 +142,7 @@
 
 | Channel | Why |
 |---------|-----|
-| **Google Skillshop** | The official source — required for cert prep |
+| **Google Skillshop** | The official source, required for cert prep |
 | **MeasureSchool** | Best practical GA4 + GTM channel on YouTube |
 | **Simo Ahava** | Architectural depth, server-side overlap |
 | **Charles Farina** | Practitioner-level GA4 deep dives |

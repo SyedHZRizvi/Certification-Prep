@@ -141,8 +141,8 @@
 
 ## ✅ After watching
 
-1. SFTP vs FTPS — protocol + ports.
+1. SFTP vs FTPS, protocol + ports.
 2. Place a web server, DB, jump server, WAF in a typical network diagram.
-3. Signature-based vs anomaly-based detection — pro/con of each.
-4. IPSec Tunnel vs Transport mode — which for site-to-site?
+3. Signature-based vs anomaly-based detection, pro/con of each.
+4. IPSec Tunnel vs Transport mode, which for site-to-site?
 5. What does DMARC add beyond SPF and DKIM?

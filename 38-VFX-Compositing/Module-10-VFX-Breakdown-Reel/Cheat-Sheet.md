@@ -11,7 +11,7 @@ title: "Module 10 Cheat Sheet: VFX Breakdown Reel & Career"
 | Total length | 60–120 seconds maximum |
 | Shot count | 4–8 shots |
 | First shot | Absolute best work |
-| Intro | None — cut directly to work |
+| Intro | None, cut directly to work |
 | Video codec | H.264/H.265 MP4 or ProRes 422 |
 | Resolution | 1920×1080 minimum; 3840×2160 preferred |
 | Frame rate | 24fps (film) or match source |
@@ -57,7 +57,7 @@ title: "Module 10 Cheat Sheet: VFX Breakdown Reel & Career"
 | Greenscreen key | Clean edge, spill suppression, light wrap |
 | Roto/matte | Complex subject; Nuke preferred for film positions |
 | 3D CG integration | Tracked, correctly lit, correct shadows |
-| Particle FX | Fire, smoke, or magic — demonstrate Particular knowledge |
+| Particle FX | Fire, smoke, or magic, demonstrate Particular knowledge |
 | Invisible effect | Set extension, sky replacement, cleanup |
 | Destruction/action FX | Layered explosion or muzzle flash |
 

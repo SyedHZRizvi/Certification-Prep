@@ -123,7 +123,7 @@ D. Silhouette and Boris FX
 Mocha AE uses what core tracking technology?
 
 A. Point-feature tracking at high-contrast corners
-B. Optical flow-based planar tracking — analyzing the motion of a flat surface plane
+B. Optical flow-based planar tracking, analyzing the motion of a flat surface plane
 C. Facial landmark tracking using machine learning
 D. 3D depth map correlation tracking
 
@@ -212,7 +212,7 @@ ACES2065-1 is used in the VFX pipeline for which specific purpose?
 
 A. As the compositing working space for CG rendering
 B. As the log encoding space for camera capture
-C. As the archival master and interchange space — extremely wide gamut, not used for daily compositing
+C. As the archival master and interchange space, extremely wide gamut, not used for daily compositing
 D. As the display-referred output format for cinema projection
 
 ---
@@ -233,7 +233,7 @@ D. Avoid the MPAA rating board's rating for explosive content
 In a set extension composite, why must distant elements have reduced sharpness and saturation?
 
 A. Because CG rendering at distance is less detailed
-B. To simulate atmospheric perspective — real-world physics where light scatters through air particles at distance, reducing contrast and saturation
+B. To simulate atmospheric perspective, real-world physics where light scatters through air particles at distance, reducing contrast and saturation
 C. Because the audience's eyes cannot focus on distant elements
 D. Because the digital matte paint has lower resolution at distance
 
@@ -266,7 +266,7 @@ D. Using face-swap AI to automatically process all frames without artist involve
 The "rule of 7 layers" for explosions separates Layer 1 (fireball) from Layer 7 (ambient light) because:
 
 A. Seven is the maximum number of blend modes available in After Effects
-B. Each physical component of a real explosion has different timing, scale, and behavior — they must be composited independently to look correct
+B. Each physical component of a real explosion has different timing, scale, and behavior, they must be composited independently to look correct
 C. Rendering a single particle system with 7 sub-systems is more efficient than separate layers
 D. The VFX supervisor requires seven separate render passes for quality control
 
@@ -310,7 +310,7 @@ D. Between the foreground and background layers
 Blender's shadow catcher material renders:
 
 A. The ambient occlusion of the CG object onto itself
-B. Only the shadow cast by the CG object onto an invisible ground plane — as a separate compositing element
+B. Only the shadow cast by the CG object onto an invisible ground plane, as a separate compositing element
 C. The full lighting of the CG object including self-shadows
 D. The Z-depth pass for the CG element's shadow volume
 
@@ -376,7 +376,7 @@ D. Real-time renders on the Unreal Engine displayed on set for reference
 In the context of the ACES pipeline, what does "IDT" stand for?
 
 A. Image Depth Transform
-B. Input Device Transform — converts camera-specific log footage into the ACES color space
+B. Input Device Transform, converts camera-specific log footage into the ACES color space
 C. Intermediate Display Transform
 D. Image Data Template
 
@@ -419,8 +419,8 @@ D. Reduce the Gamma in the Grade node
 
 What is the "parade scope" and when is it primarily used?
 
-A. A vectorscope variant showing skin tone distribution — used for talent casting
-B. A waveform display showing R, G, and B channels side by side — used for identifying color imbalances and matching exposure between shots
+A. A vectorscope variant showing skin tone distribution, used for talent casting
+B. A waveform display showing R, G, and B channels side by side, used for identifying color imbalances and matching exposure between shots
 C. A histogram display of the scene's full luminance range
 D. A real-time display showing the output's compliance with broadcast delivery specifications
 
@@ -494,7 +494,7 @@ D. Apply a different sky replacement with a cooler palette
 
 ### 45.
 
-The practical VFX philosophy applied in *Rogue One: A Star Wars Story* — using real miniature explosions with digital starships — demonstrates which principle?
+The practical VFX philosophy applied in *Rogue One: A Star Wars Story* using real miniature explosions with digital starships demonstrates which principle?
 
 A. Practical effects are always less expensive than digital effects
 B. Physical elements (real explosions, real smoke) provide photographic authenticity that pure CG cannot fully replicate; digital elements provide scale and specificity
@@ -507,8 +507,8 @@ D. Director Gareth Edwards has a personal opposition to digital effects
 
 A compositor building an explosion composite places the grain Adjustment Layer below the fireball core layer. What problem does this create?
 
-A. No problem — the grain is now hidden behind the fireball
-B. The grain applies only to layers below it (the plate, background elements) but not to the VFX elements above it — the composite has mismatched grain across elements
+A. No problem, the grain is now hidden behind the fireball
+B. The grain applies only to layers below it (the plate, background elements) but not to the VFX elements above it, the composite has mismatched grain across elements
 C. The grain Adjustment Layer cannot function below a particle layer
 D. The fireball will appear darker due to the grain's Overlay blend mode
 
@@ -552,7 +552,7 @@ D. The United Kingdom
 In a Nuke compositing workflow, what does a "Gizmo" represent?
 
 A. A test render that is displayed in the Viewer
-B. A custom encapsulated tool — a group of nodes packaged into a reusable, distributable node with its own interface
+B. A custom encapsulated tool, a group of nodes packaged into a reusable, distributable node with its own interface
 C. Nuke's built-in 3D camera node for camera solve integration
 D. The render queue management system
 
@@ -618,7 +618,7 @@ D. Display P3 for cinema projection
 The "Advanced Spill Suppressor" in After Effects differs from the basic "Spill Suppressor" by:
 
 A. It removes more green than the basic version
-B. It analyzes the background color to inform how to desaturate the spill — producing more natural results especially on skin tones
+B. It analyzes the background color to inform how to desaturate the spill, producing more natural results especially on skin tones
 C. It also removes motion blur artifacts from the key edge
 D. It applies spill suppression to the entire frame, not just the keyed edge
 
@@ -629,9 +629,9 @@ D. It applies spill suppression to the entire frame, not just the keyed edge
 A compositor receives a CG render intended for an ACES pipeline but accidentally applies a Rec.709 display transform to it. The composite will be:
 
 A. Slightly darker but otherwise accurate
-B. Incorrectly color-managed — colors shifted, contrast altered, the element will not match the plate
+B. Incorrectly color-managed, colors shifted, contrast altered, the element will not match the plate
 C. Brighter because Rec.709 applies less gamma
-D. Correct — Rec.709 and ACES transforms are equivalent for standard dynamic range
+D. Correct, Rec.709 and ACES transforms are equivalent for standard dynamic range
 
 ---
 
@@ -695,7 +695,7 @@ D. Real-time interactive renders from game engines
 Which VFX tool is Houdini's primary market position in the professional VFX pipeline?
 
 A. 2D compositing for film and broadcast
-B. FX simulation — fluids, destruction, fire/smoke, crowd simulation, and procedural geometry
+B. FX simulation, fluids, destruction, fire/smoke, crowd simulation, and procedural geometry
 C. Digital matte painting and environment design
 D. Camera tracking and matchmoving
 
@@ -717,7 +717,7 @@ D. Framestore
 A compositor finishing their first professional VFX reel asks which single technique, if mastered and demonstrated effectively, would most elevate a mediocre greenscreen composite to a professional quality composite. The correct answer is:
 
 A. More aggressive spill suppression on the edge of the key
-B. Light wrap — applying the background's luminance as a scattering effect around the edges of the keyed subject, tying the two elements together photographically
+B. Light wrap, applying the background's luminance as a scattering effect around the edges of the keyed subject, tying the two elements together photographically
 C. Increasing the color contrast of the composite overall
 D. Adding film grain to all elements individually
 

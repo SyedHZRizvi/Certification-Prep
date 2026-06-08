@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AIF-C01 — Generative AI Fundamentals Walkthrough</p>
+      <p class="vg-title">AIF-C01, Generative AI Fundamentals Walkthrough</p>
       <p class="vg-creator">ExamPro / Stephane Maarek</p>
       <span class="vg-duration">⏱ 18 min · Domain 2 in one sitting</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Temperature, Top-p, Top-k — LLM Sampling Explained</p>
+      <p class="vg-title">Temperature, Top-p, Top-k, LLM Sampling Explained</p>
       <p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 9 min · The 4 inference knobs visualized</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Multimodal AI — Text + Image + Audio + Video</p>
+      <p class="vg-title">Multimodal AI, Text + Image + Audio + Video</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 10 min · How Nova &amp; Claude handle multiple modalities</span>
     </div>
@@ -104,7 +104,7 @@
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">What Is ChatGPT Doing… and Why Does It Work?</p>
       <p class="vg-creator">Stephen Wolfram</p>
-      <span class="vg-duration">⏱ 1 hr · Conceptual deep dive — long, rewarding</span>
+      <span class="vg-duration">⏱ 1 hr · Conceptual deep dive, long, rewarding</span>
     </div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=vector+embeddings+semantic+search+pinecone" target="_blank" rel="noopener" data-video-id="EpmIIDC2Xgg">
@@ -133,8 +133,8 @@
 
 | Channel | Why |
 |---------|-----|
-| **Andrej Karpathy** | Co-founder OpenAI, ex-Tesla AI lead — clearest explainer alive |
-| **DeepLearning.AI** | Andrew Ng's channel — high-quality, structured |
+| **Andrej Karpathy** | Co-founder OpenAI, ex-Tesla AI lead, clearest explainer alive |
+| **DeepLearning.AI** | Andrew Ng's channel, high-quality, structured |
 | **3Blue1Brown** | Visual deep-learning math, ideal for transformers |
 | **AWS Machine Learning** | Official AWS GenAI demos and customer stories |
 | **Two Minute Papers** | Bite-sized recent research highlights |
@@ -147,7 +147,7 @@
 
 1. Define a foundation model in one sentence.
 2. What's the difference between a token and an embedding?
-3. Your LLM gives different answers each time for the same query — what knob do you change?
+3. Your LLM gives different answers each time for the same query, what knob do you change?
 4. List three ways to reduce hallucinations.
 5. Why is "context window" both a feature *and* a cost factor?
 

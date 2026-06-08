@@ -86,7 +86,7 @@ D. April 2022
 
 ---
 
-### Q11. The biggest competitor to Google Ads in B2B advertising — owned by Microsoft and including LinkedIn Ads — is: *(Remember)*
+### Q11. The biggest competitor to Google Ads in B2B advertising owned by Microsoft and including LinkedIn Ads is: *(Remember)*
 A. Microsoft Advertising
 B. Pinterest Ads
 C. Reddit Ads
@@ -210,13 +210,13 @@ Free trial signup = high intent = bottom of funnel. Blog posts, YouTube explaine
 ROAS is revenue-based. ROI is profit-based. This is the most-traps-per-question topic on the Meta and Google exams.
 
 ### Q4: **C. The Trade Desk**
-The Trade Desk is an independent DSP — it competes *against* the walled gardens. The walled gardens are Google, Meta, Amazon, TikTok (and arguably Microsoft).
+The Trade Desk is an independent DSP, it competes *against* the walled gardens. The walled gardens are Google, Meta, Amazon, TikTok (and arguably Microsoft).
 
 ### Q5: **B. TOFU SEO content**
 Top-of-funnel "what is X?" content gets answered directly in AI Overviews without a click. BOFU branded search and bottom-of-funnel pages are far less affected.
 
 ### Q6: **C. The customer**
-Lauterborn (1990) reframed Product/Price/Place/Promotion as Customer/Cost/Convenience/Communication — the customer-centric mix.
+Lauterborn (1990) reframed Product/Price/Place/Promotion as Customer/Cost/Convenience/Communication, the customer-centric mix.
 
 ### Q7: **B. Clayton Christensen**
 Harvard's Christensen popularized JTBD with the milkshake example. His book *Competing Against Luck* (2016) is the canonical reference.
@@ -249,7 +249,7 @@ Conflating ROAS and ROI is McKinsey's #1 cited attribution error. ROAS uses reve
 Meta's AI-driven shopping campaign type. Common cross-platform exam trap: don't call it Performance Max (that's Google's product).
 
 ### Q17: **B. Activation**
-Acquisition, Activation, Retention, Referral, Revenue — Dave McClure's 2007 startup metrics.
+Acquisition, Activation, Retention, Referral, Revenue, Dave McClure's 2007 startup metrics.
 
 ### Q18: **B. A list of email subscribers who signed up on your own website**
 First-party = you collected it yourself, with consent, on your own properties. Lookalikes and vendor lists are not first-party.
@@ -291,7 +291,7 @@ This is the 2026 industry consensus, repeated in every Gartner, Forrester, and M
 - The eight marketing-math acronyms (CAC, LTV, ROAS, ROI, AOV, CPA, CPC, CPM)
 - The five 2026 seismic shifts
 - Mailchimp acquisition: Intuit, 2021, $12B
-- Coca-Cola "Create Real Magic" — March 2023, OpenAI
+- Coca-Cola "Create Real Magic", March 2023, OpenAI
 
 ---
 

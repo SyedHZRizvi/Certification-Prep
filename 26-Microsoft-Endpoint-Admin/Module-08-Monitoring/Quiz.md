@@ -26,7 +26,7 @@ D. Work-from-anywhere
 A. Intune Plan 1
 B. Intune Plan 2 or Suite
 C. Defender for Endpoint only
-D. No license — free for all
+D. No license, free for all
 
 ---
 
@@ -125,7 +125,7 @@ D. App version freshness
 
 ---
 
-### Q15. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q15. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Endpoint Analytics requires at least Intune Plan 1.
 **S2:** Advanced Endpoint Analytics requires Plan 2 or Suite.
@@ -162,7 +162,7 @@ D. Renews BitLocker recovery key
 
 ---
 
-### Q19. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q19. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** The Microsoft baseline score for Endpoint Analytics is approximately 80+.
 **S2:** Advanced Hunting includes 30 days of telemetry by default.
@@ -207,7 +207,7 @@ D. Increase ESP timeout
 
 ---
 
-### Q24. Yes/No — For each statement, mark Yes or No. *(Evaluate)*
+### Q24. Yes/No, For each statement, mark Yes or No. *(Evaluate)*
 
 **S1:** Endpoint Analytics data flows from devices to Intune to Log Analytics.
 **S2:** Proactive remediations run on a schedule defined per script.
@@ -234,7 +234,7 @@ D. No central monitoring
 Startup, Application reliability, Work-from-anywhere, Resource performance, Battery health.
 
 ### Q2: **C. Compliance posture**
-Compliance has its own reports — not in Endpoint Analytics.
+Compliance has its own reports, not in Endpoint Analytics.
 
 ### Q3: **B. Intune Plan 2 or Suite**
 Proactive remediations require Plan 2 minimum.
@@ -300,7 +300,7 @@ Sync triggers immediate check-in.
 Most common cause of "stuck Installing."
 
 ### Q24: **A. Yes / Yes / No**
-Analytics flows device → Intune → Log Analytics (Yes). Proactive remediations run on a schedule (Yes). Wipe = factory; Retire = org-only — different end states (No).
+Analytics flows device → Intune → Log Analytics (Yes). Proactive remediations run on a schedule (Yes). Wipe = factory; Retire = org-only, different end states (No).
 
 ### Q25: **B. Endpoint Analytics + Proactive Remediations + data-driven hardware refresh decisions**
 The Bayer-style operating discipline.

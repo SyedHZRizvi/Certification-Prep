@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LoRA from Scratch — Sebastian Raschka</p>
+      <p class="vg-title">LoRA from Scratch, Sebastian Raschka</p>
       <p class="vg-creator">Sebastian Raschka</p>
       <span class="vg-duration">⏱ 1h · The math + the code</span>
     </div>
@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">QLoRA — Tim Dettmers (the author) talk</p>
+      <p class="vg-title">QLoRA, Tim Dettmers (the author) talk</p>
       <p class="vg-creator">Tim Dettmers</p>
       <span class="vg-duration">⏱ 50m · NF4, double quant, paged optimizers</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">TRL SFTTrainer — full tutorial</p>
+      <p class="vg-title">TRL SFTTrainer, full tutorial</p>
       <p class="vg-creator">HuggingFace</p>
       <span class="vg-duration">⏱ 45m · End-to-end SFT</span>
     </div>
@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RAG vs Fine-Tuning — when to use which</p>
+      <p class="vg-title">RAG vs Fine-Tuning, when to use which</p>
       <p class="vg-creator">community / OpenAI DevRel</p>
       <span class="vg-duration">⏱ 30m · The decision tree</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Direct Preference Optimization (DPO) — explained</p>
+      <p class="vg-title">Direct Preference Optimization (DPO), explained</p>
       <p class="vg-creator">community paper review</p>
       <span class="vg-duration">⏱ 35m · Skip the reward model</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Unsloth — 2× faster QLoRA</p>
+      <p class="vg-title">Unsloth, 2× faster QLoRA</p>
       <p class="vg-creator">Unsloth team</p>
       <span class="vg-duration">⏱ 25m · The faster way</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">DoRA — Weight-Decomposed LoRA</p>
+      <p class="vg-title">DoRA, Weight-Decomposed LoRA</p>
       <p class="vg-creator">paper review</p>
       <span class="vg-duration">⏱ 25m · LoRA successor</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Knowledge Distillation — large → small LLM</p>
+      <p class="vg-title">Knowledge Distillation, large → small LLM</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 35m · Cost-saving via distillation</span>
     </div>
@@ -125,7 +125,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Axolotl — config-driven fine-tuning</p>
+      <p class="vg-title">Axolotl, config-driven fine-tuning</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 40m · The YAML-config alternative</span>
     </div>
@@ -134,7 +134,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">LLaMA Factory — GUI fine-tuning</p>
+      <p class="vg-title">LLaMA Factory, GUI fine-tuning</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 30m · Lower-friction option</span>
     </div>
@@ -159,7 +159,7 @@
 
 1. State the LoRA update equation. What are r, alpha, dropout?
 2. Why is QLoRA cheaper than LoRA?
-3. SFT vs DPO vs KTO vs PPO — when does each apply?
+3. SFT vs DPO vs KTO vs PPO, when does each apply?
 4. List 3 signs that fine-tuning won't help your problem.
 5. How do you serve a fine-tuned model with vLLM? (Two patterns.)
 

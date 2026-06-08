@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Users, Groups & External Identities
 
-> **How to use:** Click any card to open a YouTube search — pick the top current result. Pause to follow along in the Entra admin center.
+> **How to use:** Click any card to open a YouTube search, pick the top current result. Pause to follow along in the Entra admin center.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">B2B Collaboration vs B2B Direct Connect</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 18 min · Where each lives in Entra portal</span>
     </div>
   </a>
@@ -135,7 +135,7 @@
 |---------|-----|
 | **John Savill** | Definitive Entra/Azure content. |
 | **Andy Malone MVP** | M365 admin + identity, exam-focused. |
-| **Dean Cefola — Azure Academy** | Practical labs and step-by-step demos. |
+| **Dean Cefola, Azure Academy** | Practical labs and step-by-step demos. |
 | **Microsoft Mechanics** | Official launches and feature deep-dives. |
 | **Travis Roberts** | Short, focused how-tos. |
 | **Concepts Work** | Newer SC-300/SC-100 channel with current content. |

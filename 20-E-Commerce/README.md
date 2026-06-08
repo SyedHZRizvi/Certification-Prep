@@ -7,7 +7,7 @@ title: E-Commerce Track
 
 **🛒 E-Commerce** › Google → Adobe Commerce → Wharton ladder
 
-> **Goal:** Become the person who can run a $50M-$500M digital storefront end-to-end — platform, catalog, payments, fulfillment, paid + organic acquisition, lifecycle, analytics, marketplaces, and international expansion.
+> **Goal:** Become the person who can run a $50M-$500M digital storefront end-to-end, platform, catalog, payments, fulfillment, paid + organic acquisition, lifecycle, analytics, marketplaces, and international expansion.
 > **Duration:** 12-16 weeks part-time (10-14 hrs/week)
 > **Prerequisite:** Comfort with web tech basics + a real or hypothetical product. The AI Marketing tracks (14-18) help but are not required.
 > **Cost to study:** Free (this course) + optional $200-500 for hands-on platform sandboxes (Shopify Dev Store is free; Adobe Commerce trial 30 days)
@@ -19,28 +19,28 @@ title: E-Commerce Track
 
 ### 🎯 The promise
 
-This E-Commerce track is the credential that takes you from someone who *shops* online to someone trusted to *run* a $50M–$500M digital storefront end-to-end — platform, catalog, payments, fulfillment, paid + organic acquisition, lifecycle, marketplaces, and international expansion. The curriculum is engineered around the **Google → Adobe Commerce → Wharton** ladder, and by the end of it you'll be ready to sit a stack of recognized industry credentials including the **Google Digital Marketing & E-commerce Certificate**, **Shopify Foundations**, **Adobe Commerce (Magento) Business Practitioner**, **Klaviyo Product Certification**, and select Wharton Online specializations.
+This E-Commerce track is the credential that takes you from someone who *shops* online to someone trusted to *run* a $50M–$500M digital storefront end-to-end, platform, catalog, payments, fulfillment, paid + organic acquisition, lifecycle, marketplaces, and international expansion. The curriculum is engineered around the **Google → Adobe Commerce → Wharton** ladder, and by the end of it you'll be ready to sit a stack of recognized industry credentials including the **Google Digital Marketing & E-commerce Certificate**, **Shopify Foundations**, **Adobe Commerce (Magento) Business Practitioner**, **Klaviyo Product Certification**, and select Wharton Online specializations.
 
 ### 💼 Career outcomes after passing
 
-- **E-Commerce Manager** ($90K–$130K) — running a single brand or category online
-- **Director of E-Commerce** ($130K–$185K) — owning the digital P&L for a brand or business unit
-- **Head of DTC / Direct-to-Consumer** ($150K–$220K) — full DTC P&L, lifecycle, retention, marketplaces
-- **Marketplace Manager (Amazon, Walmart, TikTok Shop)** ($95K–$145K) — channel specialist
-- **E-Commerce Operations Manager** ($95K–$135K) — fulfillment, OMS, returns, customer ops
-- **VP E-Commerce** ($180K–$260K + bonus) — typical 3–5 years post-Director with strong delivery record
+- **E-Commerce Manager** ($90K–$130K), running a single brand or category online
+- **Director of E-Commerce** ($130K–$185K), owning the digital P&L for a brand or business unit
+- **Head of DTC / Direct-to-Consumer** ($150K–$220K), full DTC P&L, lifecycle, retention, marketplaces
+- **Marketplace Manager (Amazon, Walmart, TikTok Shop)** ($95K–$145K), channel specialist
+- **E-Commerce Operations Manager** ($95K–$135K), fulfillment, OMS, returns, customer ops
+- **VP E-Commerce** ($180K–$260K + bonus), typical 3–5 years post-Director with strong delivery record
 - **E-Commerce Consultant (Big-4, boutique commerce firms)** ($130K–$190K + bonus)
 
 This track pairs cleanly with the AI Marketing ladder (courses 14–18) for the acquisition side and with course 10 (CSCP) / 12 (CLTD) for the supply-chain side of running a real online business. E-commerce talent at the Director+ level is in chronic short supply in 2026, especially for operators who can credibly speak both growth and operations.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every module begins with a real brand teardown (Allbirds, Warby Parker, Glossier, Patagonia, Bombas, Liquid Death)
-- **Original questions only** — every quiz and practice exam written from public exam outlines; no copyrighted dumps
-- **A real Capstone** — 18-week scenario as Director of E-Commerce at a $90M Series-B home-goods DTC brand chartered with growing GMV from $90M to $160M while protecting 38% contribution margin
-- **One author, one voice** — coherent vocabulary across all 10 modules
-- **Updated for the 2026 commerce landscape** — TikTok Shop, Shopify's Hydrogen + Oxygen, Adobe Commerce on Cloud, AI search and recommendations, post-cookie attribution, MMM-informed budget allocation
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every module begins with a real brand teardown (Allbirds, Warby Parker, Glossier, Patagonia, Bombas, Liquid Death)
+- **Original questions only**, every quiz and practice exam written from public exam outlines; no copyrighted dumps
+- **A real Capstone**, 18-week scenario as Director of E-Commerce at a $90M Series-B home-goods DTC brand chartered with growing GMV from $90M to $160M while protecting 38% contribution margin
+- **One author, one voice**, coherent vocabulary across all 10 modules
+- **Updated for the 2026 commerce landscape**, TikTok Shop, Shopify's Hydrogen + Oxygen, Adobe Commerce on Cloud, AI search and recommendations, post-cookie attribution, MMM-informed budget allocation
 
 ### 🚀 Ready to start?
 
@@ -54,8 +54,8 @@ Begin with [Module 1: E-Commerce Fundamentals & Business Models →](./Module-01
 
 This track includes two course-root resources that go beyond exam prep:
 
-- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 7-deliverable, 18-week scenario where you act as Director of E-Commerce at a $90M Series-B home-goods DTC brand chartered with growing GMV from $90M to $160M in 12 months while protecting 38% contribution margin. Integrates platform replatform assessment, PIM rollout for 4,200 SKUs, paid-acquisition restructure across Google Shopping + Meta + Amazon + TikTok, lifecycle, marketplace expansion, and a board-grade financial model.
-- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Fader 2012 *Customer Centricity* (Wharton Press), Kohavi/Tang/Xu 2020 *Trustworthy Online Controlled Experiments* (Cambridge UP), Bell 2014 *Location is (Still) Everything* (New Harvest), Anderson 2006 *The Long Tail*, the Bezos 1997 Shareholder Letter, Bryar/Carr 2021 *Working Backwards*; HBR/MIS Quarterly papers; industry resources (Common Thread Collective, eCommerceFuel, Modern Retail, Digital Commerce 360); free academic courses (Wharton Online Digital Marketing & E-Commerce Specialization with Peter Fader and David Bell, Stanford GSB's Hau Lee operations papers, MIT Sloan Digital Innovation).
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 7-deliverable, 18-week scenario where you act as Director of E-Commerce at a $90M Series-B home-goods DTC brand chartered with growing GMV from $90M to $160M in 12 months while protecting 38% contribution margin. Integrates platform replatform assessment, PIM rollout for 4,200 SKUs, paid-acquisition restructure across Google Shopping + Meta + Amazon + TikTok, lifecycle, marketplace expansion, and a board-grade financial model.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md), The full canonical bibliography: Fader 2012 *Customer Centricity* (Wharton Press), Kohavi/Tang/Xu 2020 *Trustworthy Online Controlled Experiments* (Cambridge UP), Bell 2014 *Location is (Still) Everything* (New Harvest), Anderson 2006 *The Long Tail*, the Bezos 1997 Shareholder Letter, Bryar/Carr 2021 *Working Backwards*; HBR/MIS Quarterly papers; industry resources (Common Thread Collective, eCommerceFuel, Modern Retail, Digital Commerce 360); free academic courses (Wharton Online Digital Marketing & E-Commerce Specialization with Peter Fader and David Bell, Stanford GSB's Hau Lee operations papers, MIT Sloan Digital Innovation).
 
 ---
 
@@ -64,7 +64,7 @@ This track includes two course-root resources that go beyond exam prep:
 By the end of this track, you'll be able to:
 
 - Architect an e-commerce business model around the right unit economics (CAC, AOV, contribution margin, CLV, payback period)
-- Choose between Shopify, Adobe Commerce (Magento), BigCommerce, Salesforce Commerce Cloud, and headless/composable — and defend the choice in a CTO review
+- Choose between Shopify, Adobe Commerce (Magento), BigCommerce, Salesforce Commerce Cloud, and headless/composable, and defend the choice in a CTO review
 - Run a PIM (Product Information Management) program that scales from 500 SKUs to 50,000 across 6 markets
 - Integrate Stripe, Adyen, PayPal, Klarna, Affirm; navigate PCI-DSS v4.0; manage sales tax post-Wayfair (2018) and EU VAT MOSS
 - Build a fulfillment network (3PL selection, FBA vs FBM, Buy with Prime, returns logistics)
@@ -74,7 +74,7 @@ By the end of this track, you'll be able to:
 - Diagnose attribution chaos (GA4 + MMM + MTA + incrementality holdouts) and write a credible board readout
 - Expand into Amazon, Walmart Marketplace, eBay, Etsy, TikTok Shop without cannibalizing DTC
 - Cross the border (international VAT, IOSS, multi-currency, regional fulfillment) and design a B2B portal
-- Complete the capstone — an 18-week Director-of-E-Commerce simulation with a $90M-to-$160M GMV mandate
+- Complete the capstone, an 18-week Director-of-E-Commerce simulation with a $90M-to-$160M GMV mandate
 
 ---
 
@@ -105,21 +105,21 @@ By the end of this track, you'll be able to:
 | Practice-Exam-2 | After Modules 6-9 | 45 Q / 60 min | ⭐⭐⭐⭐ |
 | Final-Mock-Exam | One day before your real cert exam(s) | 60 Q / 60 min | ⭐⭐⭐⭐⭐ |
 
-**Pass mark:** 75% on the Final Mock — that means ≥ 45/60. The Final Mock matches the Adobe Certified Expert — Adobe Commerce Business Practitioner format (60 questions, 60 minutes).
+**Pass mark:** 75% on the Final Mock that means ≥ 45/60. The Final Mock matches the Adobe Certified Expert Adobe Commerce Business Practitioner format (60 questions, 60 minutes).
 
 ---
 
 ## 🎓 Real Certifications You Can Take After This Course
 
-This is the practitioner-to-architect path. The course prepares you for a four-tier cert ladder — most are free or low-cost.
+This is the practitioner-to-architect path. The course prepares you for a four-tier cert ladder, most are free or low-cost.
 
 | Tier | Real exam | Cost (2026) | Format | Where to take it |
 |------|-----------|-------------|--------|------------------|
 | 1 (Foundations) | Google Digital Marketing & E-Commerce Professional Certificate (Coursera) | $49/mo (financial aid avail.) | 7-course track | [coursera.org](https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce) |
-| 2 (Practitioner) | Google Ads — Shopping Ads Certification | Free | 50 Q / 75 min · 80% pass | [skillshop.exceedlms.com](https://skillshop.exceedlms.com/) |
+| 2 (Practitioner) | Google Ads, Shopping Ads Certification | Free | 50 Q / 75 min · 80% pass | [skillshop.exceedlms.com](https://skillshop.exceedlms.com/) |
 | 2 (Practitioner) | Amazon Ads Foundations | Free | 60 Q · 80% pass | [advertising.amazon.com/learn](https://advertising.amazon.com/learn) |
-| 2 (Practitioner) | Meta Blueprint — Commerce | Free | Self-paced | [facebook.com/business/learn](https://www.facebook.com/business/learn) |
-| 3 (Specialist) | Adobe Certified Expert — Adobe Commerce Business Practitioner | $225 USD | 60 Q / 60 min · ~63% pass | [credly.com/adobe](https://www.credly.com/organizations/adobe/badges) |
+| 2 (Practitioner) | Meta Blueprint, Commerce | Free | Self-paced | [facebook.com/business/learn](https://www.facebook.com/business/learn) |
+| 3 (Specialist) | Adobe Certified Expert, Adobe Commerce Business Practitioner | $225 USD | 60 Q / 60 min · ~63% pass | [credly.com/adobe](https://www.credly.com/organizations/adobe/badges) |
 | 3 (Specialist) | Shopify Theme Developer | Free | Coding project + exam | [shopify.dev/themes/store/getting-started](https://shopify.dev/themes/store/getting-started) |
 | 4 (Expert) | Wharton Online Digital Marketing & E-Commerce Specialization (Fader / Bell) | $79/mo Coursera | 6-course track | [online.wharton.upenn.edu](https://online.wharton.upenn.edu/) |
 | 4 (Expert) | Salesforce B2C Commerce Cloud Architect | $400 USD | 65 Q / 105 min · ~65% pass | [trailhead.salesforce.com](https://trailhead.salesforce.com/credentials) |
@@ -130,9 +130,9 @@ This is the practitioner-to-architect path. The course prepares you for a four-t
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[Shopify Help Center](https://help.shopify.com/)** + **[Adobe Commerce Developer Docs](https://developer.adobe.com/commerce)** + **[Google Merchant Center Help](https://support.google.com/merchants)** — these are the source of truth for the real exams. The certification questions cite them constantly.
+🔗 **[Shopify Help Center](https://help.shopify.com/)** + **[Adobe Commerce Developer Docs](https://developer.adobe.com/commerce)** + **[Google Merchant Center Help](https://support.google.com/merchants)**, these are the source of truth for the real exams. The certification questions cite them constantly.
 
-🔗 **[Wharton Online — Peter Fader's Customer Centricity course](https://online.wharton.upenn.edu/specializations/digital-marketing-e-commerce-specialization/)** — the academic anchor for the entire CLV-to-CAC discipline this track teaches.
+🔗 **[Wharton Online Peter Fader's Customer Centricity course](https://online.wharton.upenn.edu/specializations/digital-marketing-e-commerce-specialization/)** the academic anchor for the entire CLV-to-CAC discipline this track teaches.
 
 ---
 
@@ -186,7 +186,7 @@ This course is built specifically to inoculate you against all 8.
 | Marketplaces | Amazon Seller Central, Walmart Marketplace, eBay, Etsy, TikTok Shop, Faire (B2B) |
 | Cross-border | Global-e, Zonos, Easyship, Reach, ESW, ChannelEngine |
 
-You don't need ALL of these — pick 1 per category for your stage and go deep.
+You don't need ALL of these, pick 1 per category for your stage and go deep.
 
 ---
 
@@ -214,4 +214,4 @@ Real platforms. Real catalogs. Real margins. Let's build a storefront that pays 
 
 ---
 
-**Previous:** [Course 19 — Bitcoin & Cryptocurrency](../19-Bitcoin-Cryptocurrency/README.md)
+**Previous:** [Course 19, Bitcoin & Cryptocurrency](../19-Bitcoin-Cryptocurrency/README.md)

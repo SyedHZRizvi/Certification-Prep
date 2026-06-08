@@ -1,14 +1,14 @@
-# Cloudflare Pages — One-Time Activation Runbook
+# Cloudflare Pages, One-Time Activation Runbook
 
 **Audience:** Humayun (site owner / super-user).
 **Time:** ~15 minutes of dashboard clicks. No coding required.
-**Risk:** Zero — your existing GitHub Pages site (`syedhzrizvi.github.io/Certification-Prep/`) stays running and untouched throughout. This adds a NEW gated URL alongside it.
+**Risk:** Zero, your existing GitHub Pages site (`syedhzrizvi.github.io/Certification-Prep/`) stays running and untouched throughout. This adds a NEW gated URL alongside it.
 
-After you finish this runbook **once**, the auth system is live. From then on, all future code changes deploy automatically via `git push` (same as today), and you manage users via the Manage-Users admin page in your browser — no more dashboard clicks needed.
+After you finish this runbook **once**, the auth system is live. From then on, all future code changes deploy automatically via `git push` (same as today), and you manage users via the Manage-Users admin page in your browser, no more dashboard clicks needed.
 
 ---
 
-## Step 0 — What you'll need before starting
+## Step 0, What you'll need before starting
 
 Open these 3 tabs in your browser:
 
@@ -16,16 +16,16 @@ Open these 3 tabs in your browser:
 |---|------|-----|
 | 1 | https://dash.cloudflare.com/sign-up | Cloudflare account (free) |
 | 2 | https://resend.com/signup | Email delivery for magic-link sign-in (free 100/day) |
-| 3 | https://github.com/SyedHZRizvi/Certification-Prep | Your existing repo — will be the source for Cloudflare |
+| 3 | https://github.com/SyedHZRizvi/Certification-Prep | Your existing repo, will be the source for Cloudflare |
 
 You'll also need access to your Mac's terminal for two short commands at the end (to generate a JWT secret and seed your first user). All other steps are dashboard clicks.
 
 ---
 
-## Step 1 — Create the Cloudflare account (3 min)
+## Step 1, Create the Cloudflare account (3 min)
 
 1. Go to https://dash.cloudflare.com/sign-up
-2. Sign up with your email (you can also use Google/GitHub OAuth — fastest)
+2. Sign up with your email (you can also use Google/GitHub OAuth, fastest)
 3. Verify the email Cloudflare sends you
 4. ✅ When you land in the dashboard, you're done.
 
@@ -33,19 +33,19 @@ You'll also need access to your Mac's terminal for two short commands at the end
 
 ---
 
-## Step 2 — Create the Resend account (2 min)
+## Step 2, Create the Resend account (2 min)
 
 1. Go to https://resend.com/signup
 2. Sign up (Google OAuth is fastest)
-3. Skip the "verify your domain" step for now — you'll start with Resend's default sender (`onboarding@resend.dev`), which works out of the box
+3. Skip the "verify your domain" step for now, you'll start with Resend's default sender (`onboarding@resend.dev`), which works out of the box
 4. From the left sidebar → **API Keys** → click **Create API Key**
 5. Name it `cert-hub-auth` → Permission: **Full access** → Domain: **All domains**
-6. Click **Create** → **COPY THE KEY** (`re_xxx...`) — you'll only see it once
-7. Paste it temporarily into a notes app — you'll need it in Step 5
+6. Click **Create** → **COPY THE KEY** (`re_xxx...`), you'll only see it once
+7. Paste it temporarily into a notes app, you'll need it in Step 5
 
 ---
 
-## Step 3 — Connect the GitHub repo to Cloudflare Pages (5 min)
+## Step 3, Connect the GitHub repo to Cloudflare Pages (5 min)
 
 1. In Cloudflare dashboard, left sidebar → **Workers & Pages**
 2. Top right → **Create** → switch to the **Pages** tab → **Connect to Git**
@@ -64,22 +64,22 @@ You'll also need access to your Mac's terminal for two short commands at the end
    | **Environment variables (build)** | leave empty for now |
 
 6. Click **Save and Deploy**
-7. Cloudflare runs the first build (~2 minutes — watch the log)
-8. ✅ When it says "Success", click the deployment URL. You'll see your site at something like `cert-hub.pages.dev` — **same content as your GitHub Pages site**.
+7. Cloudflare runs the first build (~2 minutes, watch the log)
+8. ✅ When it says "Success", click the deployment URL. You'll see your site at something like `cert-hub.pages.dev`, **same content as your GitHub Pages site**.
 
-**Note:** the auth gate isn't active yet — no Worker bindings or env vars set. Pages just serves the static site.
+**Note:** the auth gate isn't active yet, no Worker bindings or env vars set. Pages just serves the static site.
 
 ---
 
-## Step 4 — Create the KV namespace (2 min)
+## Step 4, Create the KV namespace (2 min)
 
 1. Cloudflare dashboard → **Workers & Pages** → **KV** (left sidebar, under Workers)
 2. Click **Create namespace** → name it **`CERT_HUB_USERS`** → **Create**
-3. ✅ Copy the namespace ID (long hex string) — you'll need it next.
+3. ✅ Copy the namespace ID (long hex string), you'll need it next.
 
 ---
 
-## Step 5 — Wire up the KV + secrets + bindings (5 min)
+## Step 5, Wire up the KV + secrets + bindings (5 min)
 
 1. Go back to **Workers & Pages** → click your **`cert-hub`** project
 2. Click **Settings** → **Functions**
@@ -93,7 +93,7 @@ You'll also need access to your Mac's terminal for two short commands at the end
 
    | Variable name | Value | Encrypted? |
    |---------------|-------|------------|
-   | `JWT_SECRET` | Generate one — see below | ✅ YES |
+   | `JWT_SECRET` | Generate one, see below | ✅ YES |
    | `RESEND_API_KEY` | The `re_xxx...` key from Step 2 | ✅ YES |
    | `EMAIL_FROM` | `onboarding@resend.dev` | No |
    | `SITE_URL` | `https://cert-hub.pages.dev` (or your custom domain if you've added one) | No |
@@ -110,9 +110,9 @@ You'll also need access to your Mac's terminal for two short commands at the end
 
 ---
 
-## Step 6 — Seed your initial users (3 min)
+## Step 6, Seed your initial users (3 min)
 
-You're the hardcoded super-user (`syed@transcrypts.com`) — you're already in the system **automatically**. No setup needed for your own account.
+You're the hardcoded super-user (`syed@transcrypts.com`), you're already in the system **automatically**. No setup needed for your own account.
 
 To add students, you have two options:
 
@@ -122,12 +122,13 @@ To add students, you have two options:
 2. Enter `syed@transcrypts.com` → click "Send sign-in link"
 3. Check your email → click the magic link
 4. You're signed in. Navigate to `https://cert-hub.pages.dev/Manage-Users/`
-5. Use the form to add students — their email + which courses they can access.
+5. Use the form to add students, their email + which courses they can access.
 
 **Option B (bulk): use the Cloudflare dashboard**
 
 1. Cloudflare dashboard → **Workers & Pages** → **KV** → **`CERT_HUB_USERS`** → **View**
 2. Click **Add entry** for each student:
+
    - Key: `user:student@example.com` (replace with actual email)
    - Value (JSON):
      ```json
@@ -138,11 +139,11 @@ To add students, you have two options:
        "notes": "paid annual subscription"
      }
      ```
-   - To grant access to all 27 courses, use `"courses": "*"` instead of a list.
+   - To grant access to all 32 courses, use `"courses": "*"` instead of a list.
 
 ---
 
-## Step 7 — Smoke test (2 min)
+## Step 7, Smoke test (2 min)
 
 Verify everything works:
 
@@ -173,7 +174,7 @@ If all 5 checks pass, the system is live and bypass-proof. 🎉
 
 ---
 
-## Step 8 — Optional: add a custom domain (5 min)
+## Step 8, Optional: add a custom domain (5 min)
 
 If you have a domain (e.g. `certhub.com`):
 
@@ -198,13 +199,13 @@ Once you complete Steps 1-7 once, **you never touch the Cloudflare dashboard aga
 
 ## What about my existing GitHub Pages URL?
 
-It keeps working **exactly as today** — students who bookmarked `syedhzrizvi.github.io/Certification-Prep/` see the public preview, with no auth gate. This is your marketing/discovery URL.
+It keeps working **exactly as today**, students who bookmarked `syedhzrizvi.github.io/Certification-Prep/` see the public preview, with no auth gate. This is your marketing/discovery URL.
 
 The gated paid experience lives at `cert-hub.pages.dev` (or your custom domain). When you're ready to fully migrate paying students:
 
 - Send them an email with the new URL + their login email
 - Optionally add a banner on the GitHub Pages site pointing to the gated URL
-- Eventually retire the GitHub Pages site by deleting the Pages config on github.com (the repo stays — only the deployment is turned off)
+- Eventually retire the GitHub Pages site by deleting the Pages config on github.com (the repo stays, only the deployment is turned off)
 
 ---
 
@@ -215,18 +216,18 @@ The gated paid experience lives at `cert-hub.pages.dev` (or your custom domain).
 | "Build failed" on first Cloudflare deploy | Check the build log. Usually a Jekyll dependency issue. Make sure `Gemfile` includes `jekyll` and `github-pages`. |
 | Magic-link emails don't arrive | (1) Check Resend dashboard → Logs to see if Resend received the request. (2) Check spam folder. (3) Confirm `RESEND_API_KEY` is set correctly. (4) Confirm `EMAIL_FROM` is `onboarding@resend.dev` (or a verified domain if you've set one up). |
 | "Forbidden" on `/Manage-Users/` even though I'm signed in | Verify your email matches the hardcoded super-user in `functions/lib/superusers.js`. If not, edit that file, commit, and re-deploy. |
-| Pages deploy succeeded but auth gate not active | Double-check the Functions are present: dashboard → your project → Functions tab → should list `_middleware.js`, `api/auth/*`, `api/admin/*`. If empty, the build skipped them — check `_config.yml` exclude rules. |
+| Pages deploy succeeded but auth gate not active | Double-check the Functions are present: dashboard → your project → Functions tab → should list `_middleware.js`, `api/auth/*`, `api/admin/*`. If empty, the build skipped them, check `_config.yml` exclude rules. |
 | Want to lock everyone out instantly | Rotate `JWT_SECRET` in dashboard → all existing sessions become invalid → users must sign in again. Their KV records are unchanged. |
 
 ---
 
 ## Important security notes
 
-1. **`syed@transcrypts.com` is hardcoded** as the super-user in `functions/lib/superusers.js`. To change this (e.g. if you change your email), edit that file, commit, and push to redeploy. **Do not move this to env vars or KV** — the whole point is that you cannot be locked out even if KV is wiped or compromised.
+1. **`syed@transcrypts.com` is hardcoded** as the super-user in `functions/lib/superusers.js`. To change this (e.g. if you change your email), edit that file, commit, and push to redeploy. **Do not move this to env vars or KV**, the whole point is that you cannot be locked out even if KV is wiped or compromised.
 
 2. **`JWT_SECRET` should be rotated** if you ever suspect it's been leaked. After rotation, all sessions are invalidated and users will re-sign-in.
 
-3. **`RESEND_API_KEY`** can be rotated anytime in the Resend dashboard. No site downtime — just paste the new value into the Cloudflare env vars.
+3. **`RESEND_API_KEY`** can be rotated anytime in the Resend dashboard. No site downtime, just paste the new value into the Cloudflare env vars.
 
 4. **Backups**: Cloudflare KV is durable and backed up by Cloudflare. For extra safety, periodically export your user list from the Manage-Users page (the API returns a JSON dump) and save it somewhere offline.
 
@@ -236,4 +237,4 @@ The gated paid experience lives at `cert-hub.pages.dev` (or your custom domain).
 
 ## Questions / when to ask for help
 
-If anything breaks during Step 1-7, send me a screenshot of the error. The deploy is fully reversible — disabling the Cloudflare Pages project takes 2 clicks and restores you to GitHub-Pages-only.
+If anything breaks during Step 1-7, send me a screenshot of the error. The deploy is fully reversible, disabling the Cloudflare Pages project takes 2 clicks and restores you to GitHub-Pages-only.

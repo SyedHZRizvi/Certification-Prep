@@ -47,8 +47,8 @@ D. Better embeddings
 ---
 
 ### Q6. Anthropic Computer Use (Oct 2024) introduced what new agent shape: *(Remember)*
-A. None — same as before
-B. Sensorimotor — agent controls a virtual desktop via screenshots + mouse + keyboard
+A. None, same as before
+B. Sensorimotor, agent controls a virtual desktop via screenshots + mouse + keyboard
 C. RAG only
 D. SQL agent
 
@@ -80,7 +80,7 @@ D. None
 
 ### Q10. A team has a "summarize my email" feature. Multi-agent overhead: *(Evaluate)*
 A. Worth it
-B. Overkill — single agent + tool is the right answer
+B. Overkill, single agent + tool is the right answer
 C. Required
 D. Illegal
 
@@ -136,7 +136,7 @@ D. No structure
 
 ### Q17. Inter-agent shared state is BEST kept: *(Apply)*
 A. As a giant global blob
-B. Scoped — only the data needed for the next agent's job, with private chains-of-thought
+B. Scoped, only the data needed for the next agent's job, with private chains-of-thought
 C. In environment variables
 D. In Git
 
@@ -160,7 +160,7 @@ D. More tokens
 
 ### Q20. LangSmith's role in multi-agent debugging: *(Understand)*
 A. Embeddings
-B. Per-agent traces, conversation graphs, prompt evaluation — making the "wall of text" debuggable
+B. Per-agent traces, conversation graphs, prompt evaluation, making the "wall of text" debuggable
 C. Replacement for guardrails
 D. None
 
@@ -198,7 +198,7 @@ D. The user
 
 ---
 
-### Q25. The 2024 take on "agentic AI" — Andrew Ng's framing: *(Evaluate)*
+### Q25. The 2024 take on "agentic AI", Andrew Ng's framing: *(Evaluate)*
 A. Agentic workflows (plan, tool-use, reflect, multi-agent) can elevate small models above non-agentic large models on many tasks
 B. Agents don't work
 C. Single-pass prompting is always better
@@ -231,7 +231,7 @@ The CrewAI primitives. Process = sequential or hierarchical.
 ### Q5: **B. Native code execution + conversable flexibility**
 Two-agent chat with code-execution is AutoGen's signature pattern.
 
-### Q6: **B. Sensorimotor — screenshots + mouse + keyboard**
+### Q6: **B. Sensorimotor, screenshots + mouse + keyboard**
 A new agent surface (October 2024).
 
 ### Q7: **B. ~15 points higher at 3-4× cost**
@@ -289,7 +289,7 @@ Every successful coding agent has these. Anything less is a demo.
 Manager-worker decomposition. CrewAI hierarchical process is the prebuilt version.
 
 ### Q25: **A. Agentic workflows lift smaller models above non-agentic larger ones**
-Ng's widely-quoted framing — Claude/GPT-3.5-class models with good agentic workflows often beat one-shot GPT-4.
+Ng's widely-quoted framing, Claude/GPT-3.5-class models with good agentic workflows often beat one-shot GPT-4.
 
 ### Q26: **B. LangGraph + roles + reflection + HITL approval + caps**
 A real production-shaped architecture; everything else has fatal omissions.
@@ -317,4 +317,4 @@ A real production-shaped architecture; everything else has fatal omissions.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — Evaluation & RAGAS](../Module-07-Evaluation-RAGAS/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, Evaluation & RAGAS](../Module-07-Evaluation-RAGAS/Reading.md)

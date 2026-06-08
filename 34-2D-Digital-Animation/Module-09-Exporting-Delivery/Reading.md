@@ -9,7 +9,7 @@ title: "Module 9: Exporting & Delivery"
 
 An animator spends three weeks on a 30-second sequence. The animation is beautiful. The lip sync is perfect. The walk cycle feels alive. They export it, send it to the client, and the client says: "The colors look washed out. And why is it so blurry?"
 
-This is the invisible problem of delivery. Nothing in the animation changed — but the codec, the color space, and the resolution settings were wrong. The work was perfect. The export was not.
+This is the invisible problem of delivery. Nothing in the animation changed, but the codec, the color space, and the resolution settings were wrong. The work was perfect. The export was not.
 
 This module is about making sure the export matches the animation. It's not glamorous. It is absolutely essential.
 
@@ -72,7 +72,7 @@ Lottie is an animation format created by Airbnb that represents After Effects an
 ### Creating a Lottie Export
 
 1. Create the animation in After Effects.
-2. Use shape layers (not raster footage) — Lottie only supports AE shape data, not video.
+2. Use shape layers (not raster footage), Lottie only supports AE shape data, not video.
 3. Install the **Bodymovin** plugin in After Effects (free, from GitHub).
 4. Render → Bodymovin → Select composition → Export.
 5. The output is a `.json` file plus any required assets.
@@ -97,7 +97,7 @@ Converting between frame rates introduces complications:
 
 | Conversion | Issue | Solution |
 |------------|-------|---------|
-| 24fps → 30fps | 30/24 = 1.25 — not a whole number; frames must be duplicated or blended | Use "blend" mode in Media Encoder; or retime to 29.97fps |
+| 24fps → 30fps | 30/24 = 1.25, not a whole number; frames must be duplicated or blended | Use "blend" mode in Media Encoder; or retime to 29.97fps |
 | 30fps → 24fps | Frames dropped; can cause motion artifacts | Requires careful retiming or re-rendering source at 24fps |
 | 25fps → 24fps | PAL to cinema; 4% slowdown if done by speed change | 25fps source needs speed adjustment for correct length |
 | 12fps → 24fps | Frame duplication; intentional "on twos" preserved | Simply double each frame in Media Encoder output |
@@ -145,7 +145,7 @@ Adobe Media Encoder (AME) is a standalone application that handles rendering and
 | AE Render Queue | Single comp export; AE-specific formats (ProRes, PNG sequence) |
 | Adobe Media Encoder | Multiple exports; different formats/sizes from same comp; H.264 encoding |
 
-> 🎯 **What the exam tests:** H.264/MP4 is not available directly from the AE Render Queue — you must use Adobe Media Encoder for H.264 output. The Render Queue handles formats like QuickTime (ProRes), TIFF sequences, and PNG sequences.
+> 🎯 **What the exam tests:** H.264/MP4 is not available directly from the AE Render Queue, you must use Adobe Media Encoder for H.264 output. The Render Queue handles formats like QuickTime (ProRes), TIFF sequences, and PNG sequences.
 
 ### Setting Up a Batch Export
 
@@ -160,7 +160,7 @@ Adobe Media Encoder (AME) is a standalone application that handles rendering and
 
 | Preset | Format | Best For |
 |--------|--------|---------|
-| H.264 — Match Source | H.264 MP4 | YouTube, general web |
+| H.264, Match Source | H.264 MP4 | YouTube, general web |
 | YouTube 1080p HD | H.264 MP4 | YouTube upload |
 | YouTube 2160p 4K | H.264 MP4 | 4K YouTube |
 | Apple ProRes 422 | MOV | Broadcast delivery |
@@ -180,7 +180,7 @@ Adobe Media Encoder (AME) is a standalone application that handles rendering and
 | Broadcast TV (US) | ProRes 422 | 1920×1080 | 29.97fps (NTSC) | Rec.709 color space; timecode required |
 | Broadcast TV (EU) | ProRes 422 | 1920×1080 | 25fps (PAL) | Rec.709 color space |
 | Web (general) | WebM or H.264 | Variable | Match source | Use WebM for alpha transparency |
-| App/Web animation | Lottie JSON | Vector (infinite) | N/A — JSON | Must be shape-layer based in AE |
+| App/Web animation | Lottie JSON | Vector (infinite) | N/A, JSON | Must be shape-layer based in AE |
 | Cinema DCP | JPEG 2000 in MXF | 2K/4K DCI | 24fps | Requires specialized DCP creation tools |
 
 ---
@@ -210,7 +210,7 @@ LUFS (Loudness Units Full Scale) is the standard measure of perceived loudness. 
 - Frame rate: native production frame rate (typically 23.976fps)
 - Closed captions and multiple audio language tracks
 
-This level of specification is handled by the post-production supervisor, not the animator — but understanding why these choices exist makes you a better communicator with the delivery pipeline.
+This level of specification is handled by the post-production supervisor, not the animator, but understanding why these choices exist makes you a better communicator with the delivery pipeline.
 
 **YouTube animation (e.g., independent creators):** The contrast with Netflix is instructive:
 - Export H.264 at the highest reasonable bitrate (20–50 Mbps for 1080p)
@@ -219,7 +219,7 @@ This level of specification is handled by the post-production supervisor, not th
 - Stereo audio, 48kHz, -14 LUFS target loudness
 - Upload original; YouTube re-encodes to multiple bitrates automatically
 
-The same content, the same animation quality — entirely different delivery requirements depending on the destination.
+The same content, the same animation quality, entirely different delivery requirements depending on the destination.
 
 ---
 
@@ -248,7 +248,7 @@ Understanding the full pipeline means you can speak intelligently with every rol
 7. What are the limitations of GIF format?
 8. What problem does 24fps → 30fps conversion introduce?
 9. What format should you use for web animation that requires transparency (WebM VP9)?
-10. What is the AE Render Queue capable of exporting (ProRes, PNG sequences — NOT H.264)?
+10. What is the AE Render Queue capable of exporting (ProRes, PNG sequences, NOT H.264)?
 
 ---
 
@@ -315,7 +315,7 @@ Exporting from Animate requires knowing which method to use for which destinatio
 
 [Module 10: Production Pipeline →](../Module-10-Production-Pipeline/Reading.md)
 
-Module 10 steps back from the individual tools to look at the full 2D studio pipeline — how productions move from pre-production through delivery, and which tools belong at which stage.
+Module 10 steps back from the individual tools to look at the full 2D studio pipeline, how productions move from pre-production through delivery, and which tools belong at which stage.
 
 ## 🔧 Troubleshooting Export Problems
 
@@ -331,7 +331,7 @@ Common export issues and their solutions:
 | GIF color banding | Obvious color posterization | GIF 256-color limit | Convert to WebM or H.264; use only if GIF is required |
 | Large file size for web | File too big to load quickly | Bitrate too high | Reduce AME output bitrate; target 5–15 Mbps for 1080p web |
 
-These are the issues that appear in real-world deliveries. Identifying them quickly — before a client sees them — is a professional skill that saves projects.
+These are the issues that appear in real-world deliveries. Identifying them quickly before a client sees them is a professional skill that saves projects.
 
 ---
 
@@ -339,7 +339,7 @@ These are the issues that appear in real-world deliveries. Identifying them quic
 
 - Adobe Media Encoder User Guide: [helpx.adobe.com/media-encoder/user-guide.html](https://helpx.adobe.com/media-encoder/user-guide.html)
 - Lottie documentation: [lottiefiles.com/what-is-lottie](https://lottiefiles.com/what-is-lottie)
-- School of Motion: "After Effects Export Settings" — free article covering all major delivery formats
+- School of Motion: "After Effects Export Settings", free article covering all major delivery formats
 
 ---
 
@@ -358,28 +358,28 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 
 *Next module →*
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*

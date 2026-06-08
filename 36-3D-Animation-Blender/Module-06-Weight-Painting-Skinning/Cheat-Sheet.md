@@ -34,7 +34,7 @@ title: "Module 6 Cheat Sheet: Weight Painting & Skinning"
 
 ## Critical Settings
 
-- **Auto Normalize: ALWAYS ON** — forces all weights to sum to 1.0
+- **Auto Normalize: ALWAYS ON**, forces all weights to sum to 1.0
 - **Strength:** 0.1–0.3 for subtle painting; 1.0 for hard override
 - **Radius:** scroll wheel to resize brush
 

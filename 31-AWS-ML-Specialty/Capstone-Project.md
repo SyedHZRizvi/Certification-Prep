@@ -1,10 +1,10 @@
-# 🏆 Capstone Project — Atlas Health: Production-Grade ML Platform for Pre-Authorization Triage
+# 🏆 Capstone Project, Atlas Health: Production-Grade ML Platform for Pre-Authorization Triage
 
 > **Goal:** Synthesise everything you've learned across the 10 modules of this MLS-C01 course into a single, real-world ML systems-design deliverable that a hiring panel at Capital One, Anthem, or AWS Professional Services could grade against the same rubric they use for senior ML candidates.
 >
 > **Scope:** ~30-45 hours of focused work spread across 2-3 weeks. Drives you from "I can pass MLS-C01" to "I could lead this on Monday at a Series-C health-tech company."
 >
-> **When to take it:** After completing all 10 modules and at least Practice Exam 2. The Final Mock can wait until the capstone is done — drafting the design exposes weak modules.
+> **When to take it:** After completing all 10 modules and at least Practice Exam 2. The Final Mock can wait until the capstone is done, drafting the design exposes weak modules.
 
 ---
 
@@ -48,10 +48,10 @@ Draw the full end-to-end architecture. Include:
 - Data ingestion plane (Module 2)
 - Feature engineering plane (Module 3) + Feature Store (online + offline)
 - Training plane (Modules 4-8)
-- Inference plane (Module 9) — pick from real-time / serverless / async / batch
-- MLOps plane (Module 9) — Pipelines, Registry, Projects
+- Inference plane (Module 9), pick from real-time / serverless / async / batch
+- MLOps plane (Module 9), Pipelines, Registry, Projects
 - Observability + security plane (Module 10)
-- Bias and explainability layer (Module 8) — Clarify SHAP
+- Bias and explainability layer (Module 8), Clarify SHAP
 
 State which AWS services are core (≤15 services) and justify each. Annotate latency budget per hop.
 
@@ -124,17 +124,17 @@ State which AWS services are core (≤15 services) and justify each. Annotate la
 | 5. MLOps plan | 18 | Pipelines DAG complete; Registry + approval clear; all 4 Monitor types present; rollback plan real |
 | 6. Security / compliance / cost | 14 | HIPAA mapping concrete; least-priv defensible; cost numbers within reason |
 | 7. Hiring + org | 10 | First-6-hires order reasoned; risk register present |
-| Overall coherence | — | Discretionary tie-breaker; consistent vocabulary, no gaps |
+| Overall coherence |, | Discretionary tie-breaker; consistent vocabulary, no gaps |
 
 ### Grading bands
 
 | Score | Verdict |
 |-------|---------|
-| 90+ | 🏆 Hire on Monday — you could lead this. Anthropic / Capital One / AWS ProServe level. |
+| 90+ | 🏆 Hire on Monday, you could lead this. Anthropic / Capital One / AWS ProServe level. |
 | 80-89 | ✅ Strong senior engineer. Few rough edges in MLOps OR cost reasoning. |
 | 70-79 | ⚠️ Solid associate. Re-read the modules you scored weakest on. |
 | 60-69 | 🔁 Junior level; needs another pass through 4–5 of the 10 modules. |
-| <60 | 📚 Do not book the MLS-C01 exam yet — the depth gaps will show. |
+| <60 | 📚 Do not book the MLS-C01 exam yet, the depth gaps will show. |
 
 ---
 
@@ -144,7 +144,7 @@ State which AWS services are core (≤15 services) and justify each. Annotate la
 |------|-------------|
 | Week 1 (Days 1-3) | Re-read Module 1 and skim Modules 2-10. Draft architecture sketch (Section 1). |
 | Week 1 (Days 4-7) | Sections 2 + 3 (data engineering + EDA/FE). |
-| Week 2 (Days 1-3) | Section 4 (modelling) — the most substantive section. |
+| Week 2 (Days 1-3) | Section 4 (modelling), the most substantive section. |
 | Week 2 (Days 4-7) | Section 5 (MLOps). |
 | Week 3 (Days 1-3) | Section 6 (security + compliance + cost). |
 | Week 3 (Days 4-5) | Section 7 (hiring + org). |
@@ -155,33 +155,33 @@ State which AWS services are core (≤15 services) and justify each. Annotate la
 ## 💡 Tips from the field
 
 1. **Don't over-engineer the architecture.** Senior reviewers penalise diagrams with 50 boxes and unclear data flow. ≤15 core services usually wins.
-2. **Be explicit about latency budgets.** "2 seconds end-to-end" needs hop-by-hop math — DNS + ALB + Lambda + SageMaker endpoint + Bedrock + post-processing.
+2. **Be explicit about latency budgets.** "2 seconds end-to-end" needs hop-by-hop math, DNS + ALB + Lambda + SageMaker endpoint + Bedrock + post-processing.
 3. **Show your cost math, not just a total.** A reviewer can spot an unrealistic $1.8M budget in 30 seconds if you don't itemise.
 4. **Cite Clarify, Model Monitor, A2I by name.** Vague "we will monitor bias" loses points; "we will use Clarify post-training bias (DI, DPPL) and the Bias Drift Monitor with a 5-point DPL threshold and A2I human review for borderline cases" wins.
-5. **Make the hire order defensible.** Tied to the architecture — first ML platform engineer enables MLOps, first DE enables data pipeline, etc.
+5. **Make the hire order defensible.** Tied to the architecture, first ML platform engineer enables MLOps, first DE enables data pipeline, etc.
 6. **Address the boring stuff.** Logging, CloudTrail data events, KMS key rotation cadence, IAM Access Analyzer review schedule. The graders look for these.
-7. **Pick a SHAP latency budget that fits the 2-second SLA.** This is a common trap — full SHAP can add 100-500 ms per prediction.
+7. **Pick a SHAP latency budget that fits the 2-second SLA.** This is a common trap, full SHAP can add 100-500 ms per prediction.
 
 ---
 
 ## 🛠️ Optional Add-Ons (Extra Credit)
 
-- **Implement a slice of the system** — e.g. a Pipelines DAG with a simple XGBoost model, real Clarify bias report, and a real-time endpoint. Document with screenshots.
-- **Run cost benchmarks** — actually train and deploy on a $100 budget; report real cost numbers.
-- **Adversarial review** — pretend you're the AWS Solutions Architect interviewing you and produce 10 hard "why did you choose X over Y?" questions plus answers.
-- **Bedrock-only variant** — design a second variant where the primary model is a fine-tuned Claude/Llama on clinical reasoning instead of an XGBoost. Compare cost, latency, explainability.
+- **Implement a slice of the system**, e.g. a Pipelines DAG with a simple XGBoost model, real Clarify bias report, and a real-time endpoint. Document with screenshots.
+- **Run cost benchmarks**, actually train and deploy on a $100 budget; report real cost numbers.
+- **Adversarial review**, pretend you're the AWS Solutions Architect interviewing you and produce 10 hard "why did you choose X over Y?" questions plus answers.
+- **Bedrock-only variant**, design a second variant where the primary model is a fine-tuned Claude/Llama on clinical reasoning instead of an XGBoost. Compare cost, latency, explainability.
 
 ---
 
 ## 📚 Suggested References During The Capstone
 
-- **AWS Well-Architected Machine Learning Lens** — `docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/`
-- **HIPAA Eligible Services Reference** — `aws.amazon.com/compliance/hipaa-eligible-services-reference/`
-- **SageMaker Best Practices Whitepaper** — published 2023
-- **Adrian Cockcroft's blog** — pattern-level architecture essays
-- **Marc Brooker's AWS Builders' Library essays** — "Timeouts, retries, backoff", "Static stability"
-- **Kleppmann's *Designing Data-Intensive Applications*** — Chapters 5, 7-11 for the platform reasoning
-- **Sculley et al. 2015** — *Hidden Technical Debt in ML Systems*; required for the MLOps section
+- **AWS Well-Architected Machine Learning Lens**, `docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/`
+- **HIPAA Eligible Services Reference**, `aws.amazon.com/compliance/hipaa-eligible-services-reference/`
+- **SageMaker Best Practices Whitepaper**, published 2023
+- **Adrian Cockcroft's blog**, pattern-level architecture essays
+- **Marc Brooker's AWS Builders' Library essays**, "Timeouts, retries, backoff", "Static stability"
+- **Kleppmann's *Designing Data-Intensive Applications***, Chapters 5, 7-11 for the platform reasoning
+- **Sculley et al. 2015**, *Hidden Technical Debt in ML Systems*; required for the MLOps section
 
 ---
 
@@ -190,7 +190,7 @@ State which AWS services are core (≤15 services) and justify each. Annotate la
 Before considering the capstone complete:
 
 - [ ] All 7 sections present and named
-- [ ] Architecture diagram (drawn in any tool — Excalidraw, Whimsical, Lucidchart, hand-sketched)
+- [ ] Architecture diagram (drawn in any tool, Excalidraw, Whimsical, Lucidchart, hand-sketched)
 - [ ] Latency budget annotated per architectural hop
 - [ ] Per-column missing-data policy table
 - [ ] Feature catalogue with ≥50 features
@@ -213,8 +213,8 @@ When you can tick every box and self-score 75+, you are ready for both the **rea
 
 If a candidate can produce a defensible Atlas Health design, they have shown:
 
-- **End-to-end ML systems thinking** (data → model → MLOps → security → cost — every domain on the MLS-C01 blueprint)
-- **AWS service depth** (SageMaker, Bedrock, Glue, Athena, IAM, KMS, VPC — at the specificity senior reviewers expect)
+- **End-to-end ML systems thinking** (data → model → MLOps → security → cost, every domain on the MLS-C01 blueprint)
+- **AWS service depth** (SageMaker, Bedrock, Glue, Athena, IAM, KMS, VPC, at the specificity senior reviewers expect)
 - **Real-world judgement** (latency budgets, cost math, hire ordering, compliance mapping)
 - **Bias-aware engineering** (Clarify, Model Monitor, A2I, model cards in the right places)
 - **Communication discipline** (clear sections, defensible decisions, no hand-waving)

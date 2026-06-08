@@ -72,7 +72,7 @@ D. No region header is needed
 
 ### Q8. Document Translation: *(Understand)*
 A. Is synchronous
-B. Is async / batch — uses source and target Azure Storage containers
+B. Is async / batch, uses source and target Azure Storage containers
 C. Cannot preserve format
 D. Works only for plain text
 
@@ -80,7 +80,7 @@ D. Works only for plain text
 
 ### Q9. Which option correctly describes Custom Translator training data? *(Remember)*
 A. A single CSV of source/target words
-B. Parallel data — matched sentence pairs in two languages (and optional tuning + test sets)
+B. Parallel data, matched sentence pairs in two languages (and optional tuning + test sets)
 C. Pre-trained ONNX file
 D. SSML examples
 
@@ -103,10 +103,10 @@ D. You can't customize voice output
 ---
 
 ### Q12. Custom Neural Voice (CNV) requires: *(Remember)*
-A. Standard Speech resource — no other approval
+A. Standard Speech resource, no other approval
 B. Limited Access approval AND voice talent consent recording
 C. Custom Vision approval
-D. No approval — just upload audio
+D. No approval, just upload audio
 
 ---
 
@@ -240,7 +240,7 @@ D. Publish via Azure ML
 
 ### Q29. Walmart's "Sparky" (2024) composed Language + Translator + Speech rather than asking Azure OpenAI to do all three. Evaluate this design: which is the *strongest* reason to keep specialized services in the stack even when a multimodal LLM could plausibly handle each task? *(Evaluate)*
 A. LLMs cost less per token
-B. Specialized services offer purpose-built features (Document Translation preserves DOCX/PPTX formatting; Custom Translator + Custom Speech tune for domain; Translator data-zones for GDPR; PII Detection runs upstream of the LLM context window) — composition gives better accuracy, compliance, and cost-control than a single LLM in this domain
+B. Specialized services offer purpose-built features (Document Translation preserves DOCX/PPTX formatting; Custom Translator + Custom Speech tune for domain; Translator data-zones for GDPR; PII Detection runs upstream of the LLM context window), composition gives better accuracy, compliance, and cost-control than a single LLM in this domain
 C. Azure OpenAI doesn't support English
 D. Walmart was contractually forced to use them all
 
@@ -248,7 +248,7 @@ D. Walmart was contractually forced to use them all
 
 ### Q30. **Design task.** You're building a multilingual claims-intake flow for a US-based insurer that must accept Spanish + English + Mandarin, redact customer PII before any data leaves the browser session, summarize the claim into a 3-sentence paragraph with explicit traceability to the source utterances, and route urgent claims via voice with a Neural Voice that *cannot* impersonate a real claims agent. Which architecture below best satisfies *all* of those constraints? *(Create)*
 A. Azure OpenAI GPT-4o alone for everything
-B. (1) Azure AI Language **PII Detection** in-browser (or in a pre-prompt step) — outputs redacted text; (2) **Translator** with the appropriate region header to translate non-English claims to English while keeping data in-region; (3) Azure AI Language **Extractive Summarization** for traceability (sentence-level citations from source), with **Abstractive Summarization** as a downstream polishing step routed only to fluent-English claims where hallucination tolerance is documented; (4) Azure AI **Speech TTS** using a generic Neural Voice (e.g., `en-US-JennyNeural`) — explicitly *not* Custom Neural Voice — to preserve a clear "this is the AI assistant" boundary; (5) Orchestration workflow on top routing urgent intents
+B. (1) Azure AI Language **PII Detection** in-browser (or in a pre-prompt step) outputs redacted text; (2) **Translator** with the appropriate region header to translate non-English claims to English while keeping data in-region; (3) Azure AI Language **Extractive Summarization** for traceability (sentence-level citations from source), with **Abstractive Summarization** as a downstream polishing step routed only to fluent-English claims where hallucination tolerance is documented; (4) Azure AI **Speech TTS** using a generic Neural Voice (e.g., `en-US-JennyNeural`) explicitly *not* Custom Neural Voice, to preserve a clear "this is the AI assistant" boundary; (5) Orchestration workflow on top routing urgent intents
 C. Outsource to a generic chatbot vendor
 D. Skip PII detection and trust the LLM
 
@@ -266,7 +266,7 @@ Built into Azure AI Language. QnA Maker is retired.
 Returns the primary language ISO code and confidence.
 
 ### Q4: **B. Opinion Mining**
-Aspect-based sentiment — pass `show_opinion_mining=True` to sentiment analysis.
+Aspect-based sentiment, pass `show_opinion_mining=True` to sentiment analysis.
 
 ### Q5: **C. `recognize_pii_entities`**
 Returns entities + a `.redacted_text` field with PII masked.
@@ -275,12 +275,12 @@ Returns entities + a `.redacted_text` field with PII masked.
 Extractive = traceable highlights. Abstractive = polished paragraph (can hallucinate).
 
 ### Q7: **A. `Ocp-Apim-Subscription-Region`**
-Translator is a global resource — calls must declare the region of the resource.
+Translator is a global resource, calls must declare the region of the resource.
 
-### Q8: **B. Async / batch — uses source and target Azure Storage containers**
+### Q8: **B. Async / batch, uses source and target Azure Storage containers**
 You give it a SAS URL for input and output containers; the service does the rest.
 
-### Q9: **B. Parallel data — matched sentence pairs (and optional tuning + test sets)**
+### Q9: **B. Parallel data, matched sentence pairs (and optional tuning + test sets)**
 Parallel corpora are the heart of Custom Translator.
 
 ### Q10: **B. `en-US-JennyNeural`**
@@ -332,7 +332,7 @@ Avoids the OCR-then-analyze dance for office documents.
 Document Translation preserves format; Custom Translator gives you legal-domain accuracy.
 
 ### Q26: **C. Combine CLU + Question Answering via Orchestration workflow**
-Best of both worlds — route some utterances to QA, others to intent handling.
+Best of both worlds, route some utterances to QA, others to intent handling.
 
 ### Q27: **A. Sum to 1.0 across positive/neutral/negative**
 Three confidence scores, sum to 1.
@@ -344,7 +344,7 @@ Training alone doesn't expose the model; deployment makes it callable.
 This is the lesson of the Walmart Sparky composition. Document Translation's format preservation, Custom Translator's domain accuracy, Translator's data zones, and PII Detection's *upstream* placement are not replicable by stuffing everything into one GPT-4o call. The Cornell systems-engineering principle: composition of purpose-built services usually beats monolithic generalists at production scale.
 
 ### Q30: **B. Layered composition**
-Each layer maps to one of the five constraints; choice B is the only option that meets all of them. A drops PII safety and traceability; C externalises risk; D violates Responsible AI Privacy & Security. Note especially that the design *avoids* Custom Neural Voice to preserve the Transparency principle — using a generic Neural Voice is a deliberate safety choice, not a feature gap.
+Each layer maps to one of the five constraints; choice B is the only option that meets all of them. A drops PII safety and traceability; C externalises risk; D violates Responsible AI Privacy & Security. Note especially that the design *avoids* Custom Neural Voice to preserve the Transparency principle, using a generic Neural Voice is a deliberate safety choice, not a feature gap.
 
 ---
 

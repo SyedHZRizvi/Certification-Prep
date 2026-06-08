@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Site Recovery — Complete Walkthrough</p>
+      <p class="vg-title">Azure Site Recovery, Complete Walkthrough</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · RPO/RTO, failover types</span>
     </div>
@@ -48,7 +48,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Azure Migrate End-to-End Tutorial</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 14 min · Discover → Assess → Migrate</span>
     </div>
   </a>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Backup vs Site Recovery — Pick the Right One</p>
+      <p class="vg-title">Backup vs Site Recovery, Pick the Right One</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 12 min · Decision tree</span>
     </div>
@@ -125,7 +125,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Best Backup + ASR explainers. |
-| **Adam Marczak — Azure for Everyone** | Clean Migrate walkthrough. |
+| **Adam Marczak, Azure for Everyone** | Clean Migrate walkthrough. |
 | **Microsoft Mechanics** | DR + ransomware patterns. |
 | **Tim Warner** | MUA + immutable vault. |
 | **Travis Roberts** | Hands-on VMware migration. |
@@ -134,7 +134,7 @@
 
 ## ✅ After watching
 
-1. Backup vs ASR — when to use each?
+1. Backup vs ASR, when to use each?
 2. What does GRS give you for backups? What unlocks Cross Region Restore?
 3. Three failover types in ASR?
 4. Azure Migrate three phases?

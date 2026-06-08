@@ -1,27 +1,27 @@
 # Module 6: Network Security Fundamentals 🔒
 
-> **Why this module matters:** Domain 4 (Network Security) is **14% of the exam** — and the concepts here are the gateway to your next cert (Security+, the natural follow-on). You'll learn how firewalls actually decide, the IDS/IPS family, the modern VPN tool kit (IPsec, SSL/TLS, SD-WAN), and the access controls (NAC, 802.1X, ACLs) that hold the line.
+> **Why this module matters:** Domain 4 (Network Security) is **14% of the exam**, and the concepts here are the gateway to your next cert (Security+, the natural follow-on). You'll learn how firewalls actually decide, the IDS/IPS family, the modern VPN tool kit (IPsec, SSL/TLS, SD-WAN), and the access controls (NAC, 802.1X, ACLs) that hold the line.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–5 (OSI, IP, ports, DNS, DHCP, basic switching/routing)
-> - The TCP 3-way handshake (Module 1) — stateful firewalls depend on this
-> - VLANs (Module 3) — segmentation is the foundation of network security
+> - The TCP 3-way handshake (Module 1), stateful firewalls depend on this
+> - VLANs (Module 3), segmentation is the foundation of network security
 
 ---
 
 ## 🏰 A Story: Why the Castle Stopped Working
 
-In medieval times, security meant a moat, a high wall, and a single guarded gate. Anything that got past the wall was trusted. This worked beautifully when "inside" and "outside" were geographically obvious — a literal castle and the surrounding countryside.
+In medieval times, security meant a moat, a high wall, and a single guarded gate. Anything that got past the wall was trusted. This worked beautifully when "inside" and "outside" were geographically obvious, a literal castle and the surrounding countryside.
 
 Modern enterprise networking destroyed this metaphor decades ago. Your "inside" now includes employees working from coffee shops, IoT cameras, third-party SaaS apps, contractor laptops, the CEO's iPad on her sailboat, and a developer in another country with full SSH access. There is no longer an obvious "inside." The castle wall is full of holes by design.
 
-The modern answer is **Zero Trust** — never trust based on network location; verify every request, every time. This module covers the toolkit: firewalls (still essential at the perimeter and between segments), IDS/IPS (the eyes/ears), VPNs (the encrypted tunnels for legitimate users), NAC (posture-checking devices at the door), and 802.1X (per-user authentication at every switch port and SSID).
+The modern answer is **Zero Trust**, never trust based on network location; verify every request, every time. This module covers the toolkit: firewalls (still essential at the perimeter and between segments), IDS/IPS (the eyes/ears), VPNs (the encrypted tunnels for legitimate users), NAC (posture-checking devices at the door), and 802.1X (per-user authentication at every switch port and SSID).
 
-You won't go deep on attack types here — that's Security+. This module covers the **defensive controls** Network+ tests on.
+You won't go deep on attack types here, that's Security+. This module covers the **defensive controls** Network+ tests on.
 
 ---
 
-## 🛡️ Firewalls — The Layered Filter Family
+## 🛡️ Firewalls, The Layered Filter Family
 
 A **firewall** evaluates packets against a rule set and decides allow/deny. The sophistication of the evaluation determines the firewall generation.
 
@@ -31,9 +31,9 @@ A **firewall** evaluates packets against a rule set and decides allow/deny. The 
 | **Stateful** | Tracks connection state (TCP handshake state, UDP flow timeouts); auto-allows reply traffic | The dominant enterprise model since the late 90s | Doesn't inspect application content |
 | **Next-Generation (NGFW)** | Stateful + deep packet inspection (DPI), application identification, user identity, IDS/IPS, TLS decryption | Application-aware policy, modern control | More expensive, requires more CPU |
 | **Web Application Firewall (WAF)** | HTTP/HTTPS only; understands OWASP-class attacks (SQLi, XSS, CSRF) | Protects web apps specifically | App-layer only |
-| **Cloud / FWaaS** | Firewall as a service (delivered from cloud edge — part of SASE) | No on-prem hardware, scales | Vendor lock-in, requires Internet path |
+| **Cloud / FWaaS** | Firewall as a service (delivered from cloud edge, part of SASE) | No on-prem hardware, scales | Vendor lock-in, requires Internet path |
 
-### Stateful firewall — how it actually works
+### Stateful firewall, how it actually works
 
 A connection state table tracks:
 
@@ -44,7 +44,7 @@ A connection state table tracks:
 
 When a packet arrives:
 
-1. Match against state table — if a known connection, allow per state
+1. Match against state table, if a known connection, allow per state
 2. If new, evaluate against rule base (top-down, first-match wins)
 3. If allowed, create state-table entry; future packets in this flow are fast-path
 
@@ -67,7 +67,7 @@ The actual rule format on most firewalls and routers. Rules are evaluated **top-
 
 ---
 
-## 👀 IDS vs IPS — Detect vs Prevent
+## 👀 IDS vs IPS, Detect vs Prevent
 
 | | IDS (Intrusion Detection System) | IPS (Intrusion Prevention System) |
 |--|----------------------------------|------------------------------------|
@@ -94,18 +94,18 @@ The actual rule format on most firewalls and routers. Rules are evaluated **top-
 
 ---
 
-## 🚪 NAC — Network Access Control
+## 🚪 NAC, Network Access Control
 
 A **NAC** posture-checks devices BEFORE granting network access. Examples: Cisco ISE, Aruba ClearPass, FortiNAC, Microsoft NAP (legacy).
 
 ### Pre-admission checks
 
-- **Patch level** — is the OS up to date?
-- **Antivirus** — installed, running, signatures fresh?
-- **Disk encryption** — BitLocker / FileVault enabled?
-- **Firewall** — host firewall enabled?
-- **Certificate** — does the device have an enterprise cert?
-- **Device fingerprint** — recognized MAC / serial / TPM?
+- **Patch level**, is the OS up to date?
+- **Antivirus**, installed, running, signatures fresh?
+- **Disk encryption**, BitLocker / FileVault enabled?
+- **Firewall**, host firewall enabled?
+- **Certificate**, does the device have an enterprise cert?
+- **Device fingerprint**, recognized MAC / serial / TPM?
 
 ### Post-admission actions
 
@@ -132,12 +132,12 @@ A **NAC** posture-checks devices BEFORE granting network access. Examples: Cisco
 Module 1 introduced Zero Trust in passing; this module dives a level deeper for the Network+ context.
 
 **Core principles:**
-1. **Never trust, always verify** — no implicit trust based on network location
-2. **Assume breach** — design as if the network is already compromised
-3. **Verify explicitly** — every request authenticated, authorized, logged
-4. **Use least privilege** — minimum permissions, just-in-time access
-5. **Microsegmentation** — small trust zones, lateral movement is hard
-6. **Continuous monitoring** — re-evaluate trust on every transaction
+1. **Never trust, always verify**, no implicit trust based on network location
+2. **Assume breach**, design as if the network is already compromised
+3. **Verify explicitly**, every request authenticated, authorized, logged
+4. **Use least privilege**, minimum permissions, just-in-time access
+5. **Microsegmentation**, small trust zones, lateral movement is hard
+6. **Continuous monitoring**, re-evaluate trust on every transaction
 
 ### Zero Trust components (from NIST SP 800-207)
 
@@ -161,19 +161,19 @@ Module 1 introduced Zero Trust in passing; this module dives a level deeper for 
 
 ---
 
-## 🔐 VPNs — IPsec, SSL/TLS, and Modern Variants
+## 🔐 VPNs, IPsec, SSL/TLS, and Modern Variants
 
 A **VPN** (Virtual Private Network) creates an encrypted tunnel across an untrusted network. Two main flavors:
 
-### IPsec — the network-layer giant
+### IPsec, the network-layer giant
 
 Defined in **RFC 4301** (Kent & Seo, 2005) and many companion RFCs. The dominant **site-to-site** VPN.
 
 **Two protocols:**
 | Protocol | Provides | Used in practice? |
 |----------|----------|---------------------|
-| **AH** (Authentication Header) | Integrity + origin auth (no encryption) | Rarely — encryption usually needed |
-| **ESP** (Encapsulating Security Payload) | Confidentiality + integrity + auth | **Yes — what you actually use** |
+| **AH** (Authentication Header) | Integrity + origin auth (no encryption) | Rarely, encryption usually needed |
+| **ESP** (Encapsulating Security Payload) | Confidentiality + integrity + auth | **Yes, what you actually use** |
 
 **Two modes:**
 | Mode | What's encrypted | Use case |
@@ -181,13 +181,13 @@ Defined in **RFC 4301** (Kent & Seo, 2005) and many companion RFCs. The dominant
 | **Transport** | Payload only (original IP header visible) | Host-to-host |
 | **Tunnel** | Entire original packet (new outer IP header added) | Gateway-to-gateway VPNs (site-to-site) |
 
-**Phases (IKE — Internet Key Exchange, RFC 7296 for IKEv2):**
-1. **Phase 1** — establish a secure channel between peers (Main Mode or Aggressive Mode in IKEv1; single exchange in IKEv2)
-2. **Phase 2** — negotiate ESP/AH parameters for actual data tunnels
+**Phases (IKE, Internet Key Exchange, RFC 7296 for IKEv2):**
+1. **Phase 1**, establish a secure channel between peers (Main Mode or Aggressive Mode in IKEv1; single exchange in IKEv2)
+2. **Phase 2**, negotiate ESP/AH parameters for actual data tunnels
 
 **Ports:** UDP 500 (IKE), UDP 4500 (NAT-Traversal), Protocol 50 (ESP), Protocol 51 (AH).
 
-### SSL/TLS VPN — the user-friendly remote-access option
+### SSL/TLS VPN, the user-friendly remote-access option
 
 | Feature | Details |
 |---------|---------|
@@ -198,14 +198,14 @@ Defined in **RFC 4301** (Kent & Seo, 2005) and many companion RFCs. The dominant
 
 ### Modern VPN alternatives
 
-- **WireGuard** (Donenfeld, 2017) — open standard, much simpler code base than IPsec; built into the Linux kernel since 5.6 (2020); used by NordVPN, Mullvad, AWS Client VPN
-- **ZTNA** (Zero Trust Network Access) — replaces VPNs with per-application identity-aware proxies; users don't get "the network," they get specific apps
+- **WireGuard** (Donenfeld, 2017), open standard, much simpler code base than IPsec; built into the Linux kernel since 5.6 (2020); used by NordVPN, Mullvad, AWS Client VPN
+- **ZTNA** (Zero Trust Network Access), replaces VPNs with per-application identity-aware proxies; users don't get "the network," they get specific apps
 
 🎯 **Exam pattern:** *"Encrypted site-to-site between two data centers"* → IPsec tunnel mode. *"Remote employee needs to access a web app from a coffee shop"* → SSL/TLS VPN or ZTNA.
 
 ---
 
-## 🔌 802.1X — Port-Based Authentication
+## 🔌 802.1X, Port-Based Authentication
 
 Defined in **IEEE 802.1X-2020**. Authenticates *devices* before granting network access on a wired switch port or wireless SSID. Three actors:
 
@@ -215,7 +215,7 @@ Defined in **IEEE 802.1X-2020**. Authenticates *devices* before granting network
 | **Authenticator** | Switch / WAP | Passes EAP frames between supplicant and server; opens/closes the port based on the answer |
 | **Authentication Server** | RADIUS server (Cisco ISE, NPS, FreeRADIUS) | Validates credentials against directory, returns Accept/Reject |
 
-### EAP methods (from Module 4 — recall)
+### EAP methods (from Module 4, recall)
 
 | EAP method | Authentication | Use case |
 |------------|----------------|----------|
@@ -226,13 +226,13 @@ Defined in **IEEE 802.1X-2020**. Authenticates *devices* before granting network
 
 ### Dynamic VLAN assignment
 
-After authentication, RADIUS can return a **Tunnel-Private-Group-ID** attribute → switch dynamically assigns the port to the right VLAN. Same for SSIDs — different users get different VLANs based on identity.
+After authentication, RADIUS can return a **Tunnel-Private-Group-ID** attribute → switch dynamically assigns the port to the right VLAN. Same for SSIDs, different users get different VLANs based on identity.
 
 🎯 **Exam pattern:** *"How can a switch port automatically place a device on the correct VLAN based on the user's identity?"* → 802.1X + RADIUS with dynamic VLAN assignment.
 
 ---
 
-## 🚧 Physical Security — Not Just Locks
+## 🚧 Physical Security, Not Just Locks
 
 Network+ tests physical security too. The exam-tested terms:
 
@@ -241,7 +241,7 @@ Network+ tests physical security too. The exam-tested terms:
 | **Lock** (key, combination, electronic) | Restrict physical access to wiring closets / data centers |
 | **Mantrap / Access control vestibule** | Two-door entry; second door opens only after first closes; prevents tailgating |
 | **Badge reader (proximity, smartcard)** | Identity + audit log of entry |
-| **Biometric reader** | Fingerprint, iris, face — stronger but more expensive |
+| **Biometric reader** | Fingerprint, iris, face, stronger but more expensive |
 | **CCTV / surveillance** | Deterrent + detective (if recorded) |
 | **Security guard** | Detective + deterrent |
 | **Fences / bollards** | Perimeter |
@@ -250,11 +250,11 @@ Network+ tests physical security too. The exam-tested terms:
 | **Asset tags + inventory** | Track equipment, detect theft |
 | **Tamper-evident seals** | Detect physical compromise of network gear |
 | **Locking racks** | Servers / switches in lockable cabinets |
-| **Climate / fire suppression** | Availability — HVAC, FM-200, water mist |
+| **Climate / fire suppression** | Availability, HVAC, FM-200, water mist |
 
 ---
 
-## 🔬 Scenario Walkthrough — VPN vs Direct Web Access
+## 🔬 Scenario Walkthrough, VPN vs Direct Web Access
 
 > **Scenario:** A remote employee can reach a public website (https://saas.example.com) from her laptop but cannot reach the internal CRM (https://crm.corp.local). She has the SSL/TLS VPN client installed but hasn't connected. What's happening?
 
@@ -267,9 +267,9 @@ Network+ tests physical security too. The exam-tested terms:
    - Tunnel includes routes to internal subnets (e.g., 10.0.0.0/8)
    - VPN client also pushes internal DNS server settings (split-tunnel) or sets corporate DNS as primary (full-tunnel)
    - Now `crm.corp.local` resolves correctly AND the route to the IP exists
-5. With ZTNA, the user wouldn't need full network access — the identity-aware proxy would publish *just the CRM app* to authorized users without granting broader network reach.
+5. With ZTNA, the user wouldn't need full network access, the identity-aware proxy would publish *just the CRM app* to authorized users without granting broader network reach.
 
-This is a high-value scenario question — many candidates miss the *DNS resolution* half of the problem.
+This is a high-value scenario question, many candidates miss the *DNS resolution* half of the problem.
 
 ---
 
@@ -278,14 +278,14 @@ This is a high-value scenario question — many candidates miss the *DNS resolut
 | Misconception | Reality |
 |---------------|---------|
 | "Firewalls protect against all attacks" | Firewalls block what they're configured to block; misconfigured rules + zero-day exploits + insider abuse bypass them. Defense in depth. |
-| "IDS blocks attacks" | NO — IDS only *detects/alerts*. IPS blocks. |
+| "IDS blocks attacks" | NO, IDS only *detects/alerts*. IPS blocks. |
 | "Stateful firewalls inspect application content" | They track connection state but don't deep-inspect payload. NGFW does DPI. |
 | "VPN = encryption" | VPNs encrypt the tunnel, but everything *inside* the corporate network may still be plaintext on the LAN. |
 | "IPsec runs over TCP" | IPsec uses **UDP 500/4500** for IKE; ESP/AH are IP protocols 50/51, not TCP. |
 | "WPA3 replaces 802.1X" | WPA3-Personal replaces PSK; WPA3-Enterprise uses 802.1X + EAP. They serve different scopes. |
 | "NAC is enough on its own" | NAC controls admission; you still need segmentation, firewalls, monitoring, EDR. |
 | "Zero Trust means no VPN" | ZTNA often *replaces* VPN with identity-aware proxies, but the term "Zero Trust" is about the principle (verify every request) not literal "no VPN." Many ZT deployments still include VPN for legacy apps. |
-| "Implicit deny is automatic" | Most firewalls / ACLs have an implicit deny at the end — but always make it **explicit** in your rule base for clarity. |
+| "Implicit deny is automatic" | Most firewalls / ACLs have an implicit deny at the end, but always make it **explicit** in your rule base for clarity. |
 
 ---
 
@@ -295,21 +295,21 @@ This is a high-value scenario question — many candidates miss the *DNS resolut
 |------|------------|
 | **Firewall** | Rule-based packet filter |
 | **Stateful inspection** | Track connection state, auto-allow replies |
-| **NGFW** | Next-Generation Firewall — DPI + app + IPS + user-aware |
+| **NGFW** | Next-Generation Firewall, DPI + app + IPS + user-aware |
 | **WAF** | Web Application Firewall |
 | **IDS / IPS** | Detect-and-alert / detect-and-block |
 | **NIDS / HIDS** | Network / Host-based IDS |
 | **Signature vs anomaly** | Known-pattern vs behavior baseline |
-| **NAC** | Network Access Control — posture check before admission |
+| **NAC** | Network Access Control, posture check before admission |
 | **Zero Trust** | Never trust, always verify (NIST SP 800-207) |
 | **PEP / PE / PA** | Policy Enforcement Point / Engine / Administrator |
 | **IPsec** | Network-layer VPN protocol (RFC 4301) |
 | **AH / ESP** | Authentication Header / Encapsulating Security Payload |
 | **Transport / Tunnel mode** | Encrypt payload only / encrypt entire packet |
-| **IKE / IKEv2** | Internet Key Exchange — sets up IPsec keys (UDP 500/4500) |
+| **IKE / IKEv2** | Internet Key Exchange, sets up IPsec keys (UDP 500/4500) |
 | **SSL/TLS VPN** | Remote-access VPN over TCP/443 |
 | **WireGuard** | Modern simpler VPN |
-| **ZTNA** | Zero Trust Network Access — per-app identity-aware proxy |
+| **ZTNA** | Zero Trust Network Access, per-app identity-aware proxy |
 | **802.1X** | Port-based authentication with EAP + RADIUS |
 | **Supplicant / Authenticator / Auth Server** | 802.1X roles |
 | **ACL** | Access Control List (firewall rule set) |
@@ -340,13 +340,13 @@ This is a high-value scenario question — many candidates miss the *DNS resolut
 
 ---
 
-## 📊 Case Study — The 2013 Target Breach (HVAC Vendor Pivot)
+## 📊 Case Study, The 2013 Target Breach (HVAC Vendor Pivot)
 
 **Situation.** Between **27 November and 15 December 2013**, attackers exfiltrated payment-card data for **~40 million customers** and personal information for **~70 million more** from Target. The intrusion path is now legendary in network security teaching.
 
-**Decision (Target's, in hindsight a critical mistake).** Target had granted **network access to a third-party HVAC vendor** (Fazio Mechanical Services) so the vendor could remotely monitor refrigeration and HVAC systems at Target stores. The vendor's network was the initial compromise vector — attackers phished a Fazio employee, installed Citadel malware, harvested Target portal credentials, and used them to log into Target's vendor portal.
+**Decision (Target's, in hindsight a critical mistake).** Target had granted **network access to a third-party HVAC vendor** (Fazio Mechanical Services) so the vendor could remotely monitor refrigeration and HVAC systems at Target stores. The vendor's network was the initial compromise vector, attackers phished a Fazio employee, installed Citadel malware, harvested Target portal credentials, and used them to log into Target's vendor portal.
 
-From the vendor portal, the attackers pivoted into Target's internal corporate network. Because the network was **flat** — not microsegmented — they could traverse from the corporate environment to the **payment processing network**, where they installed **BlackPOS** memory-scraping malware on point-of-sale terminals at 1,797 US Target stores.
+From the vendor portal, the attackers pivoted into Target's internal corporate network. Because the network was **flat** not microsegmented they could traverse from the corporate environment to the **payment processing network**, where they installed **BlackPOS** memory-scraping malware on point-of-sale terminals at 1,797 US Target stores.
 
 **Outcome.** Target's losses:
 
@@ -355,16 +355,16 @@ From the vendor portal, the attackers pivoted into Target's internal corporate n
 - **$10 million** consumer class action settlement (2015)
 - CEO and CIO resigned; massive trust loss; share price dropped ~46% in months
 - Subsequent **PCI-DSS audit failures** as the segmentation gaps were exposed
-- An **inline FireEye IPS** that Target had purchased and deployed *did* detect the exfiltration but **alerts were ignored** — a SOC operational failure on top of the architectural failure
+- An **inline FireEye IPS** that Target had purchased and deployed *did* detect the exfiltration but **alerts were ignored**, a SOC operational failure on top of the architectural failure
 
 **Lesson for the exam / for practitioners.** Map every Network+ Module 6 concept onto Target:
 
-- **Network segmentation** (VLANs, ACLs, firewalls between vendor / corporate / PCI zones) was insufficient — the vendor zone could reach the corporate zone could reach the PCI zone
-- **NAC** would have helped — the vendor's compromised credentials may have authenticated, but device posture checks could have failed for the foreign-origin connection
+- **Network segmentation** (VLANs, ACLs, firewalls between vendor / corporate / PCI zones) was insufficient, the vendor zone could reach the corporate zone could reach the PCI zone
+- **NAC** would have helped, the vendor's compromised credentials may have authenticated, but device posture checks could have failed for the foreign-origin connection
 - **Zero Trust** would have required per-application authorization, not network-wide trust
-- **IDS/IPS** detected the attack but humans ignored the alerts — illustrates that *technology without operational rigor is decoration*
+- **IDS/IPS** detected the attack but humans ignored the alerts, illustrates that *technology without operational rigor is decoration*
 - **Vendor risk management** (out of scope for Network+ but covered in Security+ Module 9) is the management/process layer that complements network controls
-- **Microsegmentation** — separating each zone behind enforcing firewalls — is the single architectural change with the largest blast-radius reduction
+- **Microsegmentation** separating each zone behind enforcing firewalls is the single architectural change with the largest blast-radius reduction
 
 This case is exactly what Network+ tests when asking about segmentation, ACL design, NAC use cases, and the broader question "how do you contain an inevitable breach?"
 
@@ -379,23 +379,23 @@ This case is exactly what Network+ tests when asking about segmentation, ACL des
 
 You now know:
 
-- 🛡️ **Firewall generations** — packet filter → stateful → NGFW → WAF → FWaaS — and ACL evaluation
-- 👀 **IDS vs IPS** — out-of-band detect vs inline block; signature vs anomaly methodologies
-- 🚪 **NAC** — posture-check devices, dynamic VLAN assignment, agent vs agentless
-- 🛣️ **Zero Trust** — principles, NIST 800-207 components (PEP/PE/PA), microsegmentation
-- 🔐 **VPNs** — IPsec (AH/ESP, transport/tunnel, IKE), SSL/TLS VPN, WireGuard, ZTNA
-- 🔌 **802.1X** — supplicant / authenticator / auth server roles + RADIUS + EAP
-- 🚧 **Physical** — mantrap/vestibule, badges, biometrics, CCTV, locks, racks
+- 🛡️ **Firewall generations** packet filter → stateful → NGFW → WAF → FWaaS and ACL evaluation
+- 👀 **IDS vs IPS**, out-of-band detect vs inline block; signature vs anomaly methodologies
+- 🚪 **NAC**, posture-check devices, dynamic VLAN assignment, agent vs agentless
+- 🛣️ **Zero Trust**, principles, NIST 800-207 components (PEP/PE/PA), microsegmentation
+- 🔐 **VPNs**, IPsec (AH/ESP, transport/tunnel, IKE), SSL/TLS VPN, WireGuard, ZTNA
+- 🔌 **802.1X**, supplicant / authenticator / auth server roles + RADIUS + EAP
+- 🚧 **Physical**, mantrap/vestibule, badges, biometrics, CCTV, locks, racks
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 7 — Monitoring, Performance & Tools](../Module-07-Monitoring-Tools/Reading.md)
+4. ➡️ Move on: [Module 7, Monitoring, Performance & Tools](../Module-07-Monitoring-Tools/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 7](../Module-07-Monitoring-Tools/Reading.md) covers SIEM, syslog, and NetFlow — the visibility plane that makes IDS/IPS actionable; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits firewall and ACL misconfigurations as top-cause incidents.
-> - Cross-course: **CompTIA Security+ (course 09)** is the natural next step — Module 6 of this course is the warm-up for Sec+ Modules 4–7.
+> - Inside this course: [Module 7](../Module-07-Monitoring-Tools/Reading.md) covers SIEM, syslog, and NetFlow, the visibility plane that makes IDS/IPS actionable; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits firewall and ACL misconfigurations as top-cause incidents.
+> - Cross-course: **CompTIA Security+ (course 09)** is the natural next step, Module 6 of this course is the warm-up for Sec+ Modules 4–7.
 > - Practice: Practice Exam 1 has ~5 security questions; the Final Mock has ~10.
 
 ---
@@ -415,4 +415,4 @@ You now know:
 
 **Practitioner / exam:**
 - 📖 [Professor Messer Network Security playlist](https://www.professormesser.com/network-plus/n10-009/n10-009-video-training-course/)
-- 📖 [Cisco Zero Trust whitepaper](https://www.cisco.com/c/en/us/products/security/zero-trust.html) — accessible vendor perspective
+- 📖 [Cisco Zero Trust whitepaper](https://www.cisco.com/c/en/us/products/security/zero-trust.html), accessible vendor perspective

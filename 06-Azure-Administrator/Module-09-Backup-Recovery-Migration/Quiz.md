@@ -8,7 +8,7 @@
 
 ### Q1. The Recovery Services Vault redundancy choice is set: *(Remember)*
 A. After backup is configured
-B. At vault creation (LRS / GRS / ZRS) — hard to change later
+B. At vault creation (LRS / GRS / ZRS), hard to change later
 C. By the policy
 D. Automatically based on region
 
@@ -38,7 +38,7 @@ D. Entire VMs
 
 ---
 
-### Q5. Yes/No — Vaults & soft delete. *(Evaluate)*
+### Q5. Yes/No, Vaults & soft delete. *(Evaluate)*
 
 **S1:** Soft delete is on by default and retains deleted recovery points for 14 days minimum.
 **S2:** An immutable vault prevents disabling soft delete.
@@ -101,7 +101,7 @@ D. Costs nothing
 
 ### Q11. RPO stands for: *(Remember)*
 A. Recovery Plan Order
-B. Recovery Point Objective — max data you can lose
+B. Recovery Point Objective, max data you can lose
 C. Replicated Process Output
 D. Resource Provider Owner
 
@@ -115,7 +115,7 @@ D. Scan → Move → Confirm
 
 ---
 
-### Q13. Yes/No — Backup workloads. *(Understand)*
+### Q13. Yes/No, Backup workloads. *(Understand)*
 
 **S1:** Azure Backup supports backing up Azure Files shares.
 **S2:** Azure Backup supports SQL Server and SAP HANA running inside Azure VMs.
@@ -176,7 +176,7 @@ D. A NSG simulation
 
 ---
 
-### Q20. Yes/No — Site Recovery. *(Evaluate)*
+### Q20. Yes/No, Site Recovery. *(Evaluate)*
 
 **S1:** ASR can replicate Azure VMs to another Azure region.
 **S2:** ASR can replicate VMware on-prem to Azure.
@@ -231,7 +231,7 @@ D. 1 → 2 → 4 → 3 → 5 → 6
 
 ## 🎯 Answers + Explanations
 
-### Q1: **B. At vault creation — hard to change later**
+### Q1: **B. At vault creation, hard to change later**
 Some conversions (GRS↔LRS) are supported with limits; ZRS is harder. Plan ahead.
 
 ### Q2: **B. GRS vault + the cross-region-restore feature enabled**
@@ -256,12 +256,12 @@ ASR is region-level DR, not file-level recovery.
 Vault → MUA → policy → enable backup → ASR → test failover.
 
 ### Q9: **C. Unplanned failover**
-Used when source is unreachable — last replicated point becomes the recovery point.
+Used when source is unreachable, last replicated point becomes the recovery point.
 
 ### Q10: **B. Spins up the replica in an isolated network with no impact on production**
 Test failovers are non-disruptive and should be run periodically.
 
-### Q11: **B. Recovery Point Objective — max data you can lose**
+### Q11: **B. Recovery Point Objective, max data you can lose**
 RTO = Recovery Time. RPO = Recovery Point (data freshness).
 
 ### Q12: **B. Discover → Assess → Migrate**
@@ -289,7 +289,7 @@ The whole point of GRS + CRR.
 The assessment output.
 
 ### Q20: **A. Yes / Yes / No**
-Azure SQL DB has its own geo-replication / failover groups — not ASR.
+Azure SQL DB has its own geo-replication / failover groups, not ASR.
 
 ### Q21: **B. Ransomware / malicious deletion**
 Vaulted immutable backups can't be modified or deleted before retention expires.

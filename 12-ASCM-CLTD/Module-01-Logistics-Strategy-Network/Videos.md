@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Logistics Network Design — CLTD Overview</p>
+      <p class="vg-title">Logistics Network Design, CLTD Overview</p>
       <p class="vg-creator">ASCM</p>
       <span class="vg-duration">⏱ 12 min · Big picture</span>
     </div>
@@ -157,7 +157,7 @@ Answer these in your notebook (without re-watching):
 
 1. What happens to outbound transport cost vs inventory cost as you add DCs?
 2. Calculate a center-of-gravity for 3 made-up demand points.
-3. Difference between hub-and-spoke and point-to-point — give an example of each.
+3. Difference between hub-and-spoke and point-to-point, give an example of each.
 4. Name 3 reasons to outsource to a 3PL and 2 reasons not to.
 5. What is the difference between a cross-dock and a DC?
 

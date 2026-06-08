@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — Generative AI Engineer (Modules 6–10)
+# 🧪 Practice Exam 2, Generative AI Engineer (Modules 6–10)
 
 > **Conditions:** Set a 40-minute timer. 30 questions. Treat it like the real thing.
 > **Pass mark:** 25/30 (~83%).
@@ -58,7 +58,7 @@ D. ROUGE, BLEU, METEOR, BERTScore
 
 ### 9. A team's RAG has low Faithfulness, high Answer Relevancy. Diagnosis:
 A. Off-topic answers
-B. Hallucination — the answer addresses the question but makes up facts; tighten prompt + reduce k
+B. Hallucination, the answer addresses the question but makes up facts; tighten prompt + reduce k
 C. The DB is offline
 D. None
 
@@ -154,19 +154,19 @@ D. None
 
 ### 25. Notion AI's "missing memo" v1 bug (Module 2 story) was MOST attributable to:
 A. The embedding model
-B. Chunking + top-K + no reranker — header separated from body
+B. Chunking + top-K + no reranker, header separated from body
 C. Slow network
 D. Wrong DB
 
 ### 26. GitHub Copilot's single most important eval metric historically:
 A. MMLU
-B. Acceptance rate — fraction of suggestions developers keep
+B. Acceptance rate, fraction of suggestions developers keep
 C. Latency
 D. None
 
 ### 27. Stripe Radar's LLM augmentation is BEST described as:
 A. The LLM replaces fraud classifiers
-B. The LLM augments gradient-boosted-tree classifiers — explanations, adjudication, edge cases, HITL gated
+B. The LLM augments gradient-boosted-tree classifiers, explanations, adjudication, edge cases, HITL gated
 C. The LLM is the entire system
 D. None
 
@@ -178,7 +178,7 @@ D. None
 
 ### 29. The "infrastructure compounds" lesson is BEST illustrated by:
 A. One big change
-B. Klarna's quarterly $0.30 → $0.04 grind — many small optimizations
+B. Klarna's quarterly $0.30 → $0.04 grind, many small optimizations
 C. A single hire
 D. None
 

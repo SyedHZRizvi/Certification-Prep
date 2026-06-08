@@ -26,7 +26,7 @@
 | 1998 | **b-money** | **Wei Dai** | **PoW currency sketch (cited by Satoshi)** |
 | 1998 | Bit Gold | Nick Szabo | Chained PoW (NOT cited) |
 
-🧠 Memory: "**eCash → Hashcash → b-money → Bit Gold**" — chronological cypherpunk ladder.
+🧠 Memory: "**eCash → Hashcash → b-money → Bit Gold**", chronological cypherpunk ladder.
 
 ---
 
@@ -57,7 +57,7 @@ Abstract     · The one-paragraph thesis
 | Height | 0 |
 | Date | **2009-01-03 18:15:05 UTC** |
 | Coinbase message | "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" |
-| Reward | 50 BTC (**UNSPENDABLE** — quirk in code) |
+| Reward | 50 BTC (**UNSPENDABLE**, quirk in code) |
 | Nonce | 2083236893 |
 
 ---
@@ -74,7 +74,7 @@ Abstract     · The one-paragraph thesis
 | 5 | 1,050,000 | ~2028 | 1.5625 BTC |
 | ... | ... | ~2140 | 0 (subsidy ends) |
 
-🧠 Memory: "21M asymptotic" — exact is 20,999,999.9769 BTC.
+🧠 Memory: "21M asymptotic", exact is 20,999,999.9769 BTC.
 
 ---
 
@@ -84,7 +84,7 @@ Abstract     · The one-paragraph thesis
 1 BTC = 1,000 mBTC = 100,000 μBTC = 100,000,000 sats
 ```
 
-🚨 1 msat (milli-satoshi) is **Lightning-only** — not on-chain.
+🚨 1 msat (milli-satoshi) is **Lightning-only**, not on-chain.
 
 ---
 
@@ -94,10 +94,10 @@ Abstract     · The one-paragraph thesis
 |------|-------|
 | 2008-10-31 | White paper |
 | 2009-01-03 | Genesis block |
-| 2009-01-12 | Block 170 — first BTC tx (Satoshi → Finney, 10 BTC) |
-| 2010-05-22 | **Pizza Day** — 10,000 BTC for 2 pizzas |
+| 2009-01-12 | Block 170, first BTC tx (Satoshi → Finney, 10 BTC) |
+| 2010-05-22 | **Pizza Day**, 10,000 BTC for 2 pizzas |
 | 2010-07-17 | Mt. Gox opens |
-| 2010-08-15 | **CVE-2010-5139** — 184B BTC bug (resolved in ~9 hours) |
+| 2010-08-15 | **CVE-2010-5139**, 184B BTC bug (resolved in ~9 hours) |
 | 2010-12-12 | Satoshi's last forum post |
 | 2014-02-28 | **Mt. Gox files for bankruptcy** |
 
@@ -105,12 +105,12 @@ Abstract     · The one-paragraph thesis
 
 ## 🏛️ The 6 Value-Proposition Pillars
 
-1. **Permissionless** — no whitelist at the protocol layer
-2. **Censorship-resistant** — no party can block transactions
-3. **Trust-minimized** — no trusted intermediary needed
-4. **Pseudonymous** — public keys, not legal identities (NOT anonymous)
-5. **Auditable** — every full node verifies total supply
-6. **Scarce** — 21M asymptotic cap
+1. **Permissionless**, no whitelist at the protocol layer
+2. **Censorship-resistant**, no party can block transactions
+3. **Trust-minimized**, no trusted intermediary needed
+4. **Pseudonymous**, public keys, not legal identities (NOT anonymous)
+5. **Auditable**, every full node verifies total supply
+6. **Scarce**, 21M asymptotic cap
 
 🚨 Bitcoin does NOT claim: anonymity, free transactions, instant finality, reversibility.
 
@@ -118,11 +118,11 @@ Abstract     · The one-paragraph thesis
 
 ## 🧑‍💻 Satoshi-Identity Candidates (all denied)
 
-- **Hal Finney** — first receiver; died 2014. Strong circumstantial fit.
-- Nick Szabo — Bit Gold author; writing style match.
-- Adam Back — Hashcash author; British English in posts.
-- Dorian Nakamoto — 2014 *Newsweek* cover; denied.
-- **Craig Wright** — self-claimed since 2016; UK High Court 2024 ruled NOT Satoshi (forgery).
+- **Hal Finney**, first receiver; died 2014. Strong circumstantial fit.
+- Nick Szabo, Bit Gold author; writing style match.
+- Adam Back, Hashcash author; British English in posts.
+- Dorian Nakamoto, 2014 *Newsweek* cover; denied.
+- **Craig Wright**, self-claimed since 2016; UK High Court 2024 ruled NOT Satoshi (forgery).
 
 🎯 **Exam answer: identity not publicly known.**
 
@@ -131,7 +131,7 @@ Abstract     · The one-paragraph thesis
 ## 🚨 Top 7 Exam Traps
 
 1. White paper = 2008-10-31; Genesis = 2009-01-03. Don't swap.
-2. WP cites Hashcash + b-money — NOT Bit Gold.
+2. WP cites Hashcash + b-money, NOT Bit Gold.
 3. 9 pages, not 8 or 10.
 4. First receiver: Hal Finney, not Wei Dai / Nick Szabo / Adam Back.
 5. 21M is asymptotic, not exact (off by ~0.023 BTC).

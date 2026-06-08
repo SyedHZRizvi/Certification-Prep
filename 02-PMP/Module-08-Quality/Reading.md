@@ -13,7 +13,7 @@ Plain English: does it do what stakeholders said they need?
 
 ### Quality vs Grade
 - **Quality** = how well it meets requirements (always desirable)
-- **Grade** = the level of features (low grade isn't bad — Toyota Corolla is low grade, high quality!)
+- **Grade** = the level of features (low grade isn't bad, Toyota Corolla is low grade, high quality!)
 
 🎯 **Exam pattern:** "A low-grade product can still be high quality." → **TRUE.**
 
@@ -38,16 +38,16 @@ Plain English: does it do what stakeholders said they need?
 - 4 absolutes of quality
 
 ### 4. Kaoru Ishikawa
-- **Fishbone diagram (Ishikawa)** — root cause analysis
+- **Fishbone diagram (Ishikawa)**, root cause analysis
 - 7 basic tools of quality
 
 ### 5. Genichi Taguchi
-- **Robust design** — design for variability
+- **Robust design**, design for variability
 - Loss function
 
 ### 6. Walter Shewhart
 - **Control charts** (statistical process control)
-- "PDCA" originally his — "Shewhart cycle"
+- "PDCA" originally his, "Shewhart cycle"
 
 🎯 **Exam pattern:** "Who is associated with the fishbone diagram?" → **Ishikawa**
 
@@ -94,7 +94,7 @@ These are EXAM-IMPORTANT. Know them:
 
 ### 4. Pareto Chart
 - Bar chart of categories sorted by frequency
-- **80/20 rule** — 80% of problems from 20% of causes
+- **80/20 rule**, 80% of problems from 20% of causes
 - Focus on the "vital few"
 
 ### 5. Histograms
@@ -104,7 +104,7 @@ These are EXAM-IMPORTANT. Know them:
 ### 6. Control Charts
 - Plot data over time with **upper/lower control limits**
 - Detect "out of control" processes
-- **Rule of 7** — 7 consecutive points on one side = out of control
+- **Rule of 7**, 7 consecutive points on one side = out of control
 - Even within limits, patterns matter
 
 ### 7. Scatter Diagrams
@@ -122,19 +122,19 @@ Total cost of all quality-related activities.
 
 #### Cost of Conformance:
 
-- 🛠️ **Prevention** — training, processes (cheaper)
-- 🔍 **Appraisal** — testing, inspection
+- 🛠️ **Prevention**, training, processes (cheaper)
+- 🔍 **Appraisal**, testing, inspection
 
 #### Cost of Non-Conformance:
 
-- 🛠️ **Internal Failure** — rework, scrap
-- 🔥 **External Failure** — recalls, warranty, lawsuits, lost reputation
+- 🛠️ **Internal Failure**, rework, scrap
+- 🔥 **External Failure**, recalls, warranty, lawsuits, lost reputation
 
 🎯 **Insight:** Spending on prevention is *cheaper* than fixing failures. (Crosby's "quality is free")
 
 ### Inspection vs Prevention
 - **Inspection** = catch defects after they happen (reactive)
-- **Prevention** = avoid defects (proactive — preferred!)
+- **Prevention** = avoid defects (proactive, preferred!)
 
 🎯 **Exam pattern:** "PM should focus on:" → **Prevention over inspection.**
 
@@ -155,8 +155,8 @@ Total cost of all quality-related activities.
 - DMAIC: **D**efine, **M**easure, **A**nalyze, **I**mprove, **C**ontrol
 
 ### Tolerances vs Control Limits
-- **Tolerances** — acceptable range (set by customer)
-- **Control limits** — natural process variation (set by process)
+- **Tolerances**, acceptable range (set by customer)
+- **Control limits**, natural process variation (set by process)
 
 🎯 **Exam pattern:** "Customer specifies acceptable range" → **Tolerances**.
 
@@ -173,7 +173,7 @@ In agile, quality is built in via:
 - ✅ **Customer feedback** every sprint
 - ✅ **Refactoring** to improve code quality
 
-🎯 **Insight:** Agile teams don't have a separate "QA phase" — quality is everyone's responsibility, every sprint.
+🎯 **Insight:** Agile teams don't have a separate "QA phase", quality is everyone's responsibility, every sprint.
 
 ---
 
@@ -195,7 +195,7 @@ In agile, quality is built in via:
 - ❌ Inspecting at the end only ("test it before release")
 - ❌ Treating quality as separate from "real work"
 - ❌ Rejecting requirements as "out of scope" without analysis
-- ❌ "Gold plating" — adding extras without authorization
+- ❌ "Gold plating", adding extras without authorization
 - ❌ No quality metrics defined
 
 ---
@@ -244,8 +244,8 @@ You now know:
 ### Prerequisites for this module
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - **Cost of Quality concepts** and the Risk module (Module 07) — quality and risk overlap heavily.
-> - **Basic statistics** — mean, standard deviation, distributions. No advanced math required.
+> - **Cost of Quality concepts** and the Risk module (Module 07), quality and risk overlap heavily.
+> - **Basic statistics**, mean, standard deviation, distributions. No advanced math required.
 > - **Optional cross-course preparation:** [11-ASCM-CPIM Module 04: Quality Management](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) covers manufacturing-quality frameworks complementary to PM quality.
 >
 > If any of these are shaky, pause and review before continuing.
@@ -253,30 +253,30 @@ You now know:
 ### Where this leads
 
 > **Where this leads.**
-> - **Inside this course:** [Module 09 — Procurement](../Module-09-Procurement/Reading.md) connects to vendor-quality clauses; [Module 07 — Risk](../Module-07-Risk/Reading.md) addresses the threat side of quality failures.
+> - **Inside this course:** [Module 09 Procurement](../Module-09-Procurement/Reading.md) connects to vendor-quality clauses; [Module 07 Risk](../Module-07-Risk/Reading.md) addresses the threat side of quality failures.
 > - **Cross-course:** [11-ASCM-CPIM Module 04](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) extends quality thinking to manufacturing operations.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) each draw ~5–10 questions on Quality.
 
 ---
 
-## 📊 Case Study — Hubble Space Telescope Primary Mirror (1990)
+## 📊 Case Study, Hubble Space Telescope Primary Mirror (1990)
 
-**Situation.** The Hubble Space Telescope, launched April 24, 1990, was a NASA/ESA flagship project ~20 years in development with a ~$2.5 billion cost (1990 dollars). The primary mirror — 2.4 meters in diameter — was manufactured by Perkin-Elmer Corporation in Danbury, Connecticut. It was the most precisely ground mirror ever made, with surface tolerances of about ~10 nanometers.
+**Situation.** The Hubble Space Telescope, launched April 24, 1990, was a NASA/ESA flagship project ~20 years in development with a ~$2.5 billion cost (1990 dollars). The primary mirror 2.4 meters in diameter was manufactured by Perkin-Elmer Corporation in Danbury, Connecticut. It was the most precisely ground mirror ever made, with surface tolerances of about ~10 nanometers.
 
-**Decision.** Project leadership at NASA and Perkin-Elmer made several quality-management decisions: (1) primary verification of the mirror's shape was done with a custom instrument called the *reflective null corrector*, which itself depended on precise positioning of a small lens — that lens was set 1.3 mm out of position, undetected; (2) a secondary verification with an independent *refractive null corrector* showed the mirror was wrongly shaped, but Perkin-Elmer engineers dismissed the second test result as the less-trusted of the two; (3) two independent additional tests (using *inverse null correctors*) also showed problems, but these were considered redundant and the data wasn't analyzed in depth under cost pressure; (4) NASA's quality assurance representatives signed off without resolving the inconsistency between test results. The NASA "Hubble Space Telescope Optical Systems Failure Report" (Allen Board, 1990) called this "a quality assurance failure of the first magnitude."
+**Decision.** Project leadership at NASA and Perkin-Elmer made several quality-management decisions: (1) primary verification of the mirror's shape was done with a custom instrument called the *reflective null corrector*, which itself depended on precise positioning of a small lens, that lens was set 1.3 mm out of position, undetected; (2) a secondary verification with an independent *refractive null corrector* showed the mirror was wrongly shaped, but Perkin-Elmer engineers dismissed the second test result as the less-trusted of the two; (3) two independent additional tests (using *inverse null correctors*) also showed problems, but these were considered redundant and the data wasn't analyzed in depth under cost pressure; (4) NASA's quality assurance representatives signed off without resolving the inconsistency between test results. The NASA "Hubble Space Telescope Optical Systems Failure Report" (Allen Board, 1990) called this "a quality assurance failure of the first magnitude."
 
-**Outcome.** When Hubble began returning images in May 1990, they were severely blurred. Diagnostic analysis showed the primary mirror had a **spherical aberration**: the outer edge was too flat by about 2.2 micrometers (about 1/50th the width of a human hair, but devastating for a precision optical instrument). The blur cost NASA roughly **$1.5 billion** in remediation (the December 1993 STS-61 servicing mission installed the COSTAR corrective-optics package, requiring 5 spacewalks). The reputational damage delayed several follow-on space-science missions. Perkin-Elmer's space division was subsequently divested. The post-mortem became standard reading in every engineering project-management curriculum, particularly the Allen Commission's emphasis that the failure was *not* a manufacturing accident — it was a **project-management failure to integrate quality test results** and resolve inconsistencies.
+**Outcome.** When Hubble began returning images in May 1990, they were severely blurred. Diagnostic analysis showed the primary mirror had a **spherical aberration**: the outer edge was too flat by about 2.2 micrometers (about 1/50th the width of a human hair, but devastating for a precision optical instrument). The blur cost NASA roughly **$1.5 billion** in remediation (the December 1993 STS-61 servicing mission installed the COSTAR corrective-optics package, requiring 5 spacewalks). The reputational damage delayed several follow-on space-science missions. Perkin-Elmer's space division was subsequently divested. The post-mortem became standard reading in every engineering project-management curriculum, particularly the Allen Commission's emphasis that the failure was *not* a manufacturing accident, it was a **project-management failure to integrate quality test results** and resolve inconsistencies.
 
-**Lesson for the exam / for practitioners.** Hubble is the canonical reminder that **inspection alone does not produce quality**, and that **independent verification results that conflict must be reconciled, not dismissed**. PMBOK 7's Quality principle (§3.8) and the Crosby/Deming/Juran philosophies tested on the exam all converge on this. On the exam, when you see a scenario like *"Two independent tests conflict — what should the PM do?"* the answer is *never* "trust the more familiar test." It is *"investigate the inconsistency until reconciled."* COQ math reinforces it: NASA's prevention spend (a few million on more careful test-data review) would have saved ~$1.5B in remediation. **Quality is free** (Crosby 1979) — *until you discover that it's catastrophically expensive.*
+**Lesson for the exam / for practitioners.** Hubble is the canonical reminder that **inspection alone does not produce quality**, and that **independent verification results that conflict must be reconciled, not dismissed**. PMBOK 7's Quality principle (§3.8) and the Crosby/Deming/Juran philosophies tested on the exam all converge on this. On the exam, when you see a scenario like *"Two independent tests conflict what should the PM do?"* the answer is *never* "trust the more familiar test." It is *"investigate the inconsistency until reconciled."* COQ math reinforces it: NASA's prevention spend (a few million on more careful test-data review) would have saved ~$1.5B in remediation. **Quality is free** (Crosby 1979) *until you discover that it's catastrophically expensive.*
 
 **Discussion (Socratic).**
-- Q1: Two independent verification tests produced conflicting results. Whose responsibility was reconciling them — the manufacturer's QA, NASA's QA, the PM, or the program-level technical authority? Defend a position citing PMBOK 7 governance + Quality principles.
+- Q1: Two independent verification tests produced conflicting results. Whose responsibility was reconciling them, the manufacturer's QA, NASA's QA, the PM, or the program-level technical authority? Defend a position citing PMBOK 7 governance + Quality principles.
 - Q2: COQ accounting can show prevention is cheaper than failure, but accounting systems often don't capture *reputational* failure cost. How would you, as PM, force a real conversation about non-financial quality risk at the CFO level?
 - Q3: Hubble was a moonshot with no second-chance servicing originally planned (servicing capability was added late). For projects where rework is impossible (e.g., a chemical-reactor commissioning), what additional quality-process rigor is justified that wouldn't be for a software release? Cite PMBOK 7's Tailoring principle.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Prevention vs Inspection ROI.** A team is debating whether to spend $200K on prevention (training, tooling, code review) or $200K on additional inspection (more QA staff). Use COQ math, Crosby's "quality is free," and Deming's PDCA to defend an answer.
 2. **Rule of 7 in 2024.** Shewhart's Rule of 7 (1924) was developed for manufacturing. Does it still apply to modern process monitoring with continuous data streams and ML anomaly detection? Cite the underlying statistical assumption.

@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-08-Walk-Cycles-Action/Cheat-Sheet/
 title: "Module 8 Cheat Sheet: Walk Cycles & Action"
 ---
 
-# ⚡ Module 8 Cheat Sheet — Walk Cycles & Action
+# ⚡ Module 8 Cheat Sheet, Walk Cycles & Action
 
 ---
 
@@ -37,7 +37,7 @@ title: "Module 8 Cheat Sheet: Walk Cycles & Action"
 
 ---
 
-## Walk vs. Run — Key Differences
+## Walk vs. Run, Key Differences
 
 | Feature | Walk | Run |
 |---------|------|-----|
@@ -91,7 +91,7 @@ Hold (8 frames) → Anticipation (4–8 frames) → Action (6–12 frames)
 
 ---
 
-## Avatar Bending Styles — Martial Art Reference
+## Avatar Bending Styles, Martial Art Reference
 
 | Bending | Martial Art | Key Quality |
 |---------|------------|------------|

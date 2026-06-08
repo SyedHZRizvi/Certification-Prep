@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1 — Claude Architect (Modules 1–4 focus)
+# 🧪 Practice Exam 1, Claude Architect (Modules 1–4 focus)
 
 > **Conditions:** Set a 30-minute timer. 30 questions. Treat it like the real assessment.
-> **Pass mark:** 25/30 (~85%) — the live assessment passes at 85%, so aim higher in practice.
+> **Pass mark:** 25/30 (~85%), the live assessment passes at 85%, so aim higher in practice.
 > Take this AFTER finishing Modules 1–4. Covers Foundations, Prompt Engineering, API/SDK, Tool Use.
 
 ---
@@ -184,7 +184,7 @@ D. Leave it; the key is fine in frontend
 
 ### 30. Anthropic computer use is currently:
 A. Generally available
-B. Beta — opt in via `betas=["computer-use-..."]`
+B. Beta, opt in via `betas=["computer-use-..."]`
 C. Deprecated
 D. Not on Sonnet
 

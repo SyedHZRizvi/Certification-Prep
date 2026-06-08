@@ -1,6 +1,6 @@
 # Module 8: Production at Scale 🚀
 
-> **Why this module matters:** 12% of the Final Mock. Everything you've learned in Modules 1-7 was about the *prompt*. This module is about everything *around* the prompt — versioning, caching, observability, multi-provider abstraction, cost monitoring, and the operational discipline that turns a prompt into a production system. Without this, every other skill collapses under real-world traffic.
+> **Why this module matters:** 12% of the Final Mock. Everything you've learned in Modules 1-7 was about the *prompt*. This module is about everything *around* the prompt, versioning, caching, observability, multi-provider abstraction, cost monitoring, and the operational discipline that turns a prompt into a production system. Without this, every other skill collapses under real-world traffic.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–7
@@ -14,14 +14,14 @@
 
 ## 🏃 A Story: The Startup Whose Bill Went From $400 to $74,000 In 11 Days
 
-Meet Theo, an engineer at a 12-person dev-tools startup. They shipped an AI code-review feature in October 2024 powered by GPT-4o. Launch week traffic: 600 users, $400 bill — within projections. Launch +11 days: a Hacker News front-page article drove 28,000 signups overnight. Bill that week: **$74,000**.
+Meet Theo, an engineer at a 12-person dev-tools startup. They shipped an AI code-review feature in October 2024 powered by GPT-4o. Launch week traffic: 600 users, $400 bill, within projections. Launch +11 days: a Hacker News front-page article drove 28,000 signups overnight. Bill that week: **$74,000**.
 
 Forensic analysis found four root causes:
 
-1. **No prompt caching** — Their system prompt (3,800 tokens with rich examples) was sent fresh on every call. Cached: $3,800/day. Uncached: $38,000/day.
-2. **No semantic cache** — The most-asked questions ("review my README", "explain this function") were processed independently every time. ~40% of traffic was effectively duplicate.
-3. **No model tiering** — Every request used GPT-4o, including 10K/day requests for trivial tasks Haiku 4.5 / GPT-5 mini could handle at 1/20th the cost.
-4. **No cost dashboard** — The bill was visible only in OpenAI's billing console, weekly. The CFO found out by checking the credit card.
+1. **No prompt caching**, Their system prompt (3,800 tokens with rich examples) was sent fresh on every call. Cached: $3,800/day. Uncached: $38,000/day.
+2. **No semantic cache**, The most-asked questions ("review my README", "explain this function") were processed independently every time. ~40% of traffic was effectively duplicate.
+3. **No model tiering**, Every request used GPT-4o, including 10K/day requests for trivial tasks Haiku 4.5 / GPT-5 mini could handle at 1/20th the cost.
+4. **No cost dashboard**, The bill was visible only in OpenAI's billing console, weekly. The CFO found out by checking the credit card.
 
 The fix took 8 days:
 
@@ -35,7 +35,7 @@ Post-fix November bill: $4,200 for the same traffic. **Cost discipline IS prompt
 
 ---
 
-## 📂 Prompt Versioning — Treat Prompts Like Code
+## 📂 Prompt Versioning, Treat Prompts Like Code
 
 Prompts are software. They change. They have releases. They have bugs. They have rollbacks. Treat them accordingly.
 
@@ -65,7 +65,7 @@ Prompts are software. They change. They have releases. They have bugs. They have
 
 ---
 
-## 💾 Caching — The Single Biggest Cost Win
+## 💾 Caching, The Single Biggest Cost Win
 
 There are TWO distinct caches every production system should consider.
 
@@ -117,7 +117,7 @@ Tools: **GPTCache** (Zilliz, open-source), Redis with vector module, Pinecone wi
 
 ---
 
-## ⏱️ Rate Limiting — The Inevitable
+## ⏱️ Rate Limiting, The Inevitable
 
 Every commercial API has limits:
 
@@ -130,11 +130,11 @@ Every commercial API has limits:
 
 ### Defenses
 
-1. **Token-bucket rate limiter** in your service layer — never let your code blast past your tier
-2. **Exponential backoff with jitter** on 429 errors — standard SDK pattern
-3. **Spillover routing** — primary provider rate-limited → fall over to a backup (Anthropic → OpenAI → Gemini → Llama)
-4. **Batching** — for non-realtime tasks, use Batch APIs (OpenAI Batch, Anthropic Messages Batch) at 50% discount + relaxed limits
-5. **Queueing** — for non-realtime, push to a queue, drain at your rate-limit pace
+1. **Token-bucket rate limiter** in your service layer, never let your code blast past your tier
+2. **Exponential backoff with jitter** on 429 errors, standard SDK pattern
+3. **Spillover routing**, primary provider rate-limited → fall over to a backup (Anthropic → OpenAI → Gemini → Llama)
+4. **Batching**, for non-realtime tasks, use Batch APIs (OpenAI Batch, Anthropic Messages Batch) at 50% discount + relaxed limits
+5. **Queueing**, for non-realtime, push to a queue, drain at your rate-limit pace
 
 ### Tier elevation
 
@@ -148,7 +148,7 @@ Vendor tier promotion is largely **automatic and traffic-based**:
 
 ---
 
-## 🔭 Observability — Tracing, Logging, Dashboards
+## 🔭 Observability, Tracing, Logging, Dashboards
 
 You cannot improve what you cannot see. Production LLM apps need:
 
@@ -195,12 +195,12 @@ response = completion(
 
 LiteLLM features that matter in production:
 
-- **Fallbacks** — `fallbacks=["gpt-5", "claude-sonnet-4-7", "gemini-2.5-pro"]`
-- **Router** — load-balance across keys/regions
-- **Cost tracking** — built-in cost logging
-- **Rate-limit handling** — automatic retries with backoff
-- **Spend caps** — refuse calls when budget exceeded
-- **Caching** — Redis-backed prompt response cache
+- **Fallbacks**, `fallbacks=["gpt-5", "claude-sonnet-4-7", "gemini-2.5-pro"]`
+- **Router**, load-balance across keys/regions
+- **Cost tracking**, built-in cost logging
+- **Rate-limit handling**, automatic retries with backoff
+- **Spend caps**, refuse calls when budget exceeded
+- **Caching**, Redis-backed prompt response cache
 
 ### Alternatives
 
@@ -216,7 +216,7 @@ LiteLLM features that matter in production:
 
 ---
 
-## 💰 Cost Monitoring — The Skill That Pays For Itself
+## 💰 Cost Monitoring, The Skill That Pays For Itself
 
 The four levels of cost discipline:
 
@@ -330,21 +330,21 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 
 > **Scenario:** Theo's startup got the $74K bill. Walk through the 8-day rebuild.
 
-**Day 1 — Audit:** Pull all OpenAI usage logs. Discover: 3,800-token system prompt repeated, 40% input-cost dominance, model mix is 100% GPT-4o.
+**Day 1, Audit:** Pull all OpenAI usage logs. Discover: 3,800-token system prompt repeated, 40% input-cost dominance, model mix is 100% GPT-4o.
 
-**Day 2 — Prompt caching:** Migrate to Anthropic for the system-prompt-heavy paths (Anthropic caching is most generous). Tag prefix with `cache_control: {"type": "ephemeral"}`. Cost on cached portion: ~10%.
+**Day 2, Prompt caching:** Migrate to Anthropic for the system-prompt-heavy paths (Anthropic caching is most generous). Tag prefix with `cache_control: {"type": "ephemeral"}`. Cost on cached portion: ~10%.
 
-**Day 3 — Semantic cache:** Stand up GPTCache + Redis Vector. Cache responses for "review my README"-class queries with 0.95 similarity threshold. Cache hit rate after warmup: 38%.
+**Day 3, Semantic cache:** Stand up GPTCache + Redis Vector. Cache responses for "review my README"-class queries with 0.95 similarity threshold. Cache hit rate after warmup: 38%.
 
-**Day 4 — Tier routing:** Build a router that picks Haiku 4.5 for "simple" tasks (one file < 200 lines), GPT-5 for "standard", o3 for "hard refactor across 5+ files". Use a small classifier (could be regex or a tiny LLM call) to route.
+**Day 4, Tier routing:** Build a router that picks Haiku 4.5 for "simple" tasks (one file < 200 lines), GPT-5 for "standard", o3 for "hard refactor across 5+ files". Use a small classifier (could be regex or a tiny LLM call) to route.
 
-**Day 5 — LiteLLM abstraction:** Replace all direct vendor SDK calls with LiteLLM. Configure fallbacks: primary Anthropic → secondary OpenAI → tertiary Gemini.
+**Day 5, LiteLLM abstraction:** Replace all direct vendor SDK calls with LiteLLM. Configure fallbacks: primary Anthropic → secondary OpenAI → tertiary Gemini.
 
-**Day 6 — Observability:** Stand up Langfuse (self-hosted on a tiny VM). Pipe every request through it. Build a cost-per-customer dashboard.
+**Day 6, Observability:** Stand up Langfuse (self-hosted on a tiny VM). Pipe every request through it. Build a cost-per-customer dashboard.
 
-**Day 7 — Spend caps:** Per-customer daily budgets. Slack alert at 80%, block at 100%. Per-feature budgets for engineering oversight.
+**Day 7, Spend caps:** Per-customer daily budgets. Slack alert at 80%, block at 100%. Per-feature budgets for engineering oversight.
 
-**Day 8 — CI pipeline:** GitHub Actions runs the Module 6 regression suite on every prompt change. Cost-projection step compares estimated vs current spend; PR blocked if cost increase > 20% without justification.
+**Day 8, CI pipeline:** GitHub Actions runs the Module 6 regression suite on every prompt change. Cost-projection step compares estimated vs current spend; PR blocked if cost increase > 20% without justification.
 
 **Result:** November bill drops to $4,200 for the same traffic. Hacker News crowd never noticed.
 
@@ -362,7 +362,7 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 | "Vendor will give me a refund if there's a bug" | Maybe partial; don't bank on it. Spend caps prevent this. |
 | "Rate limits are for other startups" | Hit them once and you'll never forget. |
 | "Streaming is a frontend concern" | Backend must support it end-to-end; TTFT is a backend metric. |
-| "Batch APIs are inferior" | 50% discount + relaxed limits on non-realtime work — massive lever. |
+| "Batch APIs are inferior" | 50% discount + relaxed limits on non-realtime work, massive lever. |
 | "We can always roll back later" | Without version control + feature flags, rollback takes hours not minutes. |
 
 ---
@@ -411,9 +411,9 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 
 ---
 
-## 📊 Case Study — Anthropic Prompt Caching Launch (August 2024)
+## 📊 Case Study, Anthropic Prompt Caching Launch (August 2024)
 
-**Situation.** Anthropic launched **prompt caching** in beta on August 14, 2024 — the first major commercial implementation. The feature allowed developers to mark sections of a prompt with `cache_control` tags; subsequent calls re-using that prefix paid ~10% of the normal input price for the cached portion (with a small write-time premium on the first call).
+**Situation.** Anthropic launched **prompt caching** in beta on August 14, 2024, the first major commercial implementation. The feature allowed developers to mark sections of a prompt with `cache_control` tags; subsequent calls re-using that prefix paid ~10% of the normal input price for the cached portion (with a small write-time premium on the first call).
 
 **The economics.** Anthropic published benchmarks:
 
@@ -422,19 +422,19 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 - Coding assistants with large codebases in context: up to **80% cost reduction**
 
 **The competitive response.**
-- OpenAI launched implicit prompt caching (no tagging needed) in October 2024 — auto for prompts ≥1024 tokens, ~50% discount.
-- Google launched Gemini context caching with explicit cache objects in 2024 — pay for storage, ~75% discount on reads.
+- OpenAI launched implicit prompt caching (no tagging needed) in October 2024, auto for prompts ≥1024 tokens, ~50% discount.
+- Google launched Gemini context caching with explicit cache objects in 2024, pay for storage, ~75% discount on reads.
 - DeepSeek launched aggressive automatic caching in early 2025.
 
 **The downstream effect.** Production patterns changed industry-wide:
 
-- **Long system prompts became economical** — teams that had pruned prompts for cost suddenly added detail back.
-- **Many-shot ICL (Module 2) became practical at scale** — Agarwal et al. 2024's many-shot results moved from research to production overnight.
-- **Long-context RAG patterns shifted** — instead of retrieving and inserting per-query, teams started caching large document sets and querying against them.
+- **Long system prompts became economical**, teams that had pruned prompts for cost suddenly added detail back.
+- **Many-shot ICL (Module 2) became practical at scale**, Agarwal et al. 2024's many-shot results moved from research to production overnight.
+- **Long-context RAG patterns shifted**, instead of retrieving and inserting per-query, teams started caching large document sets and querying against them.
 
 **Lesson for the exam / for practitioners.**
 - Caching is the single highest-leverage cost lever. Wire it before optimizing anything else.
-- Vendor-specific syntax matters — Anthropic explicit, OpenAI implicit, Gemini object-based, DeepSeek automatic.
+- Vendor-specific syntax matters, Anthropic explicit, OpenAI implicit, Gemini object-based, DeepSeek automatic.
 - Cache invalidation is still hard. Test that your cache is actually working with a small benchmark before assuming the savings.
 
 **Discussion (Socratic).**
@@ -448,19 +448,19 @@ For chat UX, **streaming** is non-negotiable. Users perceive TTFT (time-to-first
 
 You now know:
 
-- 📂 Prompt versioning — treating prompts like code, with Git + dedicated platforms
-- 💾 Caching — prompt cache (provider-side) and semantic cache (yours)
-- ⏱️ Rate limiting — token/request limits, backoff, batch APIs, spillover routing
-- 🔭 Observability — Langfuse, Helicone, LangSmith, Phoenix, OpenTelemetry GenAI semconv
-- 🧱 Multi-provider abstraction — LiteLLM, OpenRouter, Portkey, Bedrock
-- 💰 Cost monitoring — per-prompt, per-customer, per-feature dashboards + spend caps
-- 🚦 SLOs and reliability — multi-provider fallback, canary deploys, feature flags
-- 🔁 CI/CD for prompts — regression suite + cost projection + canary
-- 🌐 Streaming and TTFT — the realtime UX bar
+- 📂 Prompt versioning, treating prompts like code, with Git + dedicated platforms
+- 💾 Caching, prompt cache (provider-side) and semantic cache (yours)
+- ⏱️ Rate limiting, token/request limits, backoff, batch APIs, spillover routing
+- 🔭 Observability, Langfuse, Helicone, LangSmith, Phoenix, OpenTelemetry GenAI semconv
+- 🧱 Multi-provider abstraction, LiteLLM, OpenRouter, Portkey, Bedrock
+- 💰 Cost monitoring, per-prompt, per-customer, per-feature dashboards + spend caps
+- 🚦 SLOs and reliability, multi-provider fallback, canary deploys, feature flags
+- 🔁 CI/CD for prompts, regression suite + cost projection + canary
+- 🌐 Streaming and TTFT, the realtime UX bar
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
 4. 📝 Take Practice Exam 2 → Final Mock Exam → build your prompt portfolio
 5. 🃏 Drill the [Master Flashcards](../Flashcards.md) daily
@@ -475,9 +475,9 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Vendor docs:**
-- 📖 [Anthropic — Prompt Caching](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching)
-- 📖 [OpenAI — Prompt Caching](https://platform.openai.com/docs/guides/prompt-caching)
-- 📖 [Google — Gemini Context Caching](https://ai.google.dev/gemini-api/docs/caching)
+- 📖 [Anthropic, Prompt Caching](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching)
+- 📖 [OpenAI, Prompt Caching](https://platform.openai.com/docs/guides/prompt-caching)
+- 📖 [Google, Gemini Context Caching](https://ai.google.dev/gemini-api/docs/caching)
 - 📖 [OpenAI Batch API](https://platform.openai.com/docs/guides/batch)
 - 📖 [Anthropic Messages Batch API](https://docs.anthropic.com/en/api/creating-message-batches)
 - 📖 [OpenAI Realtime API](https://platform.openai.com/docs/guides/realtime)
@@ -495,7 +495,7 @@ You now know:
 - 📖 [OpenRouter](https://openrouter.ai/docs)
 
 **Practitioner:**
-- 📖 [Hamel Husain — "Eval-driven development"](https://hamel.dev/blog/posts/evals/)
-- 📖 [Eugene Yan — "Patterns for Building LLM-based Systems"](https://eugeneyan.com/writing/llm-patterns/)
-- 📖 [Chip Huyen — *Designing Machine Learning Systems*](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) and AI-engineering blog posts
-- 📖 [a16z — "Emerging Architectures for LLM Applications"](https://a16z.com/emerging-architectures-for-llm-applications/)
+- 📖 [Hamel Husain, "Eval-driven development"](https://hamel.dev/blog/posts/evals/)
+- 📖 [Eugene Yan, "Patterns for Building LLM-based Systems"](https://eugeneyan.com/writing/llm-patterns/)
+- 📖 [Chip Huyen, *Designing Machine Learning Systems*](https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/) and AI-engineering blog posts
+- 📖 [a16z, "Emerging Architectures for LLM Applications"](https://a16z.com/emerging-architectures-for-llm-applications/)

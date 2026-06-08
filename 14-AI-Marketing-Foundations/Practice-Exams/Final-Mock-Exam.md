@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AI Digital Marketing Foundations
+# 🧪 Final Mock Exam, AI Digital Marketing Foundations
 
 > **Conditions:** Set a 90-minute timer. 60 questions. Treat it like the real industry exam.
 > **Pass mark:** 45/60 (75%)
@@ -392,7 +392,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 ## 📖 Detailed answer rationales
 
 ### Q1. Answer: B
-**Why B is correct.** Earned media is unpaid coverage you've influenced — a NYT article mentioning your product without payment is the canonical example.
+**Why B is correct.** Earned media is unpaid coverage you've influenced, a NYT article mentioning your product without payment is the canonical example.
 **Why the others are wrong.**
 - A: A Google search ad is *paid* (you bid for placement).
 - C: Your own blog is *owned* (full control).
@@ -400,7 +400,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Earned = unpaid, third-party-created coverage you influenced. PR + organic mentions + reviews + backlinks.
 
 ### Q2. Answer: D
-**Why D is correct.** TOFU/MOFU/BOFU is HubSpot's flavor — the most-tested funnel terminology on HubSpot, Meta, and Google certifications.
+**Why D is correct.** TOFU/MOFU/BOFU is HubSpot's flavor, the most-tested funnel terminology on HubSpot, Meta, and Google certifications.
 **Why the others are wrong.**
 - A: Google teaches the funnel but didn't coin TOFU/MOFU/BOFU.
 - B: Microsoft uses generic funnel terms.
@@ -408,7 +408,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** TOFU/MOFU/BOFU = HubSpot. Brian Halligan & Dharmesh Shah.
 
 ### Q3. Answer: B
-**Why B is correct.** Healthy SaaS / subscription LTV:CAC is 3:1 or higher — below 2:1 unprofitable, above 5:1 may signal under-investment in growth.
+**Why B is correct.** Healthy SaaS / subscription LTV:CAC is 3:1 or higher, below 2:1 unprofitable, above 5:1 may signal under-investment in growth.
 **Why the others are wrong.**
 - A: 1:1 = breakeven, unsustainable.
 - C: 2:1 is below the healthy benchmark.
@@ -432,7 +432,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** CPM = mille = thousand impressions.
 
 ### Q6. Answer: D
-**Why D is correct.** Lauterborn (1990) reframed McCarthy's 4Ps (Product/Price/Place/Promotion) into 4Cs (Customer/Cost/Convenience/Communication) — a customer-centric reframing.
+**Why D is correct.** Lauterborn (1990) reframed McCarthy's 4Ps (Product/Price/Place/Promotion) into 4Cs (Customer/Cost/Convenience/Communication), a customer-centric reframing.
 **Why the others are wrong.**
 - A: Suppliers aren't the 4Cs perspective.
 - B: Competitors are Porter's territory.
@@ -446,7 +446,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Print magazines are declining, not growing. The five shifts are technology/data-driven.
 
 ### Q8. Answer: B
-**Why B is correct.** "Attention Is All You Need" (Vaswani et al., 2017, Google) introduced the Transformer architecture — the foundation of every modern LLM.
+**Why B is correct.** "Attention Is All You Need" (Vaswani et al., 2017, Google) introduced the Transformer architecture, the foundation of every modern LLM.
 **Why the others are wrong.**
 - A: 2015 was AlexNet/CNN era.
 - C: 2019 = BERT/GPT-2 era.
@@ -454,7 +454,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Transformer = 2017. Most-tested AI history date.
 
 ### Q9. Answer: D
-**Why D is correct.** ChatGPT publicly launched November 30, 2022 — fastest-growing consumer app in history (100M users in 2 months per UBS).
+**Why D is correct.** ChatGPT publicly launched November 30, 2022, fastest-growing consumer app in history (100M users in 2 months per UBS).
 **Why the others are wrong.**
 - A: May 2020 = GPT-3 (not ChatGPT).
 - B: March 2024 is far off.
@@ -470,7 +470,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** ¾ of a word per token. 1,000 words ≈ 1,300 tokens.
 
 ### Q11. Answer: A
-**Why A is correct.** RAG over a vector database is the cheapest, fastest way to ground an AI in your own docs — minutes-to-days setup, no model retraining.
+**Why A is correct.** RAG over a vector database is the cheapest, fastest way to ground an AI in your own docs, minutes-to-days setup, no model retraining.
 **Why the others are wrong.**
 - B: Fine-tuning costs $$$ and takes weeks.
 - C: Training a foundation model costs millions, takes months.
@@ -478,15 +478,15 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** "Use my docs" → RAG. 80% of the time.
 
 ### Q12. Answer: B
-**Why B is correct.** Anthropic's safety methodology is Constitutional AI — written principles guide model behavior during training (RLAIF).
+**Why B is correct.** Anthropic's safety methodology is Constitutional AI, written principles guide model behavior during training (RLAIF).
 **Why the others are wrong.**
-- A: "Reinforcement Tuning" — not Anthropic's term.
-- C: "Principled Learning" — invented.
+- A: "Reinforcement Tuning", not Anthropic's term.
+- C: "Principled Learning", invented.
 - D: Rule-Based AI = 1980s expert systems.
 **Exam-takeaway.** Constitutional AI = Anthropic. Foundational AI safety reference.
 
 ### Q13. Answer: B
-**Why B is correct.** Gender Shades (Buolamwini, MIT Media Lab, 2018) showed substantial demographic disparities in commercial facial-recognition accuracy — kickstarting modern AI-bias research.
+**Why B is correct.** Gender Shades (Buolamwini, MIT Media Lab, 2018) showed substantial demographic disparities in commercial facial-recognition accuracy, kickstarting modern AI-bias research.
 **Why the others are wrong.**
 - A: Wasn't about email.
 - C: Wasn't about LLMs in marketing.
@@ -502,7 +502,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** On-Page + Technical + Off-Page = SEO pillars. Memorize.
 
 ### Q15. Answer: A
-**Why A is correct.** E-E-A-T added Experience as the second E in December 2022 — Google's Search Quality Rater Guidelines update.
+**Why A is correct.** E-E-A-T added Experience as the second E in December 2022, Google's Search Quality Rater Guidelines update.
 **Why the others are wrong.**
 - B: Engagement was never the added letter.
 - C: Excellence is invented.
@@ -544,7 +544,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 ### Q20. Answer: D
 **Why D is correct.** Google's March 2024 "Scaled Content Abuse" policy targets sites publishing AI-generated content "primarily to manipulate search rankings."
 **Why the others are wrong.**
-- A: Not *all* AI content — only manipulative-at-scale.
+- A: Not *all* AI content, only manipulative-at-scale.
 - B: Image-only sites aren't the target.
 - C: International SEO is unrelated to this policy.
 **Exam-takeaway.** Scaled Content Abuse = March 2024. Targets *spammy* AI content, not all AI content.
@@ -558,7 +558,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Subject-first. Works in Midjourney, DALL-E, Firefly, SD.
 
 ### Q22. Answer: C
-**Why C is correct.** Synthesia and HeyGen specialize in AI avatar talking-head video — the canonical use case for corporate training, multilingual content, and personalized sales videos.
+**Why C is correct.** Synthesia and HeyGen specialize in AI avatar talking-head video, the canonical use case for corporate training, multilingual content, and personalized sales videos.
 **Why the others are wrong.**
 - A: Text-to-image is Midjourney/DALL-E/Firefly.
 - B: Voice cloning is ElevenLabs.
@@ -582,7 +582,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** 14% average / 35% novices. Brynjolfsson NBER 2023.
 
 ### Q25. Answer: A
-**Why A is correct.** TikTok's algorithm weights content quality (completion, rewatch, hook, niche affiliation) — NOT follower count. New accounts can break out from day one.
+**Why A is correct.** TikTok's algorithm weights content quality (completion, rewatch, hook, niche affiliation), NOT follower count. New accounts can break out from day one.
 **Why the others are wrong.**
 - B: Hashtags are not primary.
 - C: Followers aren't primary.
@@ -614,7 +614,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Wendy's = brand voice moat. Hard to replicate.
 
 ### Q29. Answer: B
-**Why B is correct.** Lil Miquela (Brud → Dapper Labs) is the canonical virtual/AI influencer — millions of followers, deals with Calvin Klein, Prada, BMW, Samsung.
+**Why B is correct.** Lil Miquela (Brud → Dapper Labs) is the canonical virtual/AI influencer, millions of followers, deals with Calvin Klein, Prada, BMW, Samsung.
 **Why the others are wrong.**
 - A: She's not a real micro-influencer.
 - C: Not a streaming algorithm.
@@ -622,7 +622,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Lil Miquela = virtual influencer reference.
 
 ### Q30. Answer: C
-**Why C is correct.** The DMA's *Marketer Email Tracker* shows $36 per $1 spent — consistent across DMA, Litmus, HubSpot studies.
+**Why C is correct.** The DMA's *Marketer Email Tracker* shows $36 per $1 spent, consistent across DMA, Litmus, HubSpot studies.
 **Why the others are wrong.**
 - A: $5 too low.
 - B: $12 wrong figure.
@@ -630,7 +630,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** $36 per $1. The most-quoted email-ROI statistic.
 
 ### Q31. Answer: B
-**Why B is correct.** SPF, DKIM, DMARC are the email authentication trio — three DNS records that prove you are who you say. Mandatory under Gmail/Yahoo Feb 2024 enforcement.
+**Why B is correct.** SPF, DKIM, DMARC are the email authentication trio, three DNS records that prove you are who you say. Mandatory under Gmail/Yahoo Feb 2024 enforcement.
 **Why the others are wrong.**
 - A: SSL/TLS/HTTPS = transport security.
 - C: POP3/IMAP/SMTP = mail protocols.
@@ -654,7 +654,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Drip = time-based. Lifecycle = behavior-triggered.
 
 ### Q34. Answer: D
-**Why D is correct.** The welcome series has highest revenue-per-email of any sequence per Klaviyo benchmark data — open rates ~50%, conversion rates outsized.
+**Why D is correct.** The welcome series has highest revenue-per-email of any sequence per Klaviyo benchmark data, open rates ~50%, conversion rates outsized.
 **Why the others are wrong.**
 - A: Win-back is high-ROI but smaller volume per recipient.
 - B: Newsletter is regular but lower per-email.
@@ -670,7 +670,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** 10 business days = CAN-SPAM unsubscribe window.
 
 ### Q36. Answer: B
-**Why B is correct.** Modern ad auctions select winners on Bid × Ad Quality × User Signals — not highest bidder alone, not random.
+**Why B is correct.** Modern ad auctions select winners on Bid × Ad Quality × User Signals, not highest bidder alone, not random.
 **Why the others are wrong.**
 - A: Higher bid alone doesn't win.
 - C: Random selection is wrong.
@@ -678,7 +678,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Quality-adjusted auctions. Improve relevance + landing page to lower CPC.
 
 ### Q37. Answer: C
-**Why C is correct.** Performance Max is Google's AI-driven multi-placement campaign type — Search, YouTube, Display, Discover, Gmail, Maps.
+**Why C is correct.** Performance Max is Google's AI-driven multi-placement campaign type, Search, YouTube, Display, Discover, Gmail, Maps.
 **Why the others are wrong.**
 - A: Meta has Advantage+, not PMax.
 - B: TikTok has Smart Performance Campaigns.
@@ -710,7 +710,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** CAPI = Meta iOS-14.5 fix. Same concept at Google (Enhanced Conversions) and TikTok (Events API).
 
 ### Q41. Answer: D
-**Why D is correct.** eMarketer projected US Retail Media Network spend > $100 billion in 2025 — the fastest-growing digital ad category.
+**Why D is correct.** eMarketer projected US Retail Media Network spend > $100 billion in 2025, the fastest-growing digital ad category.
 **Why the others are wrong.**
 - A: $1B is pre-RMN era.
 - B: $10B is 2022-ish.
@@ -780,7 +780,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** 4% global revenue OR €20M, whichever higher. Memorize.
 
 ### Q50. Answer: C
-**Why C is correct.** The EU AI Act was passed in March 2024 — the world's first comprehensive AI law.
+**Why C is correct.** The EU AI Act was passed in March 2024, the world's first comprehensive AI law.
 **Why the others are wrong.**
 - A: December 2023 = political *agreement*, not formal passage.
 - B: June 2022 = too early.
@@ -788,7 +788,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** EU AI Act passed March 2024. Phased rollout to 2026–2027.
 
 ### Q51. Answer: A
-**Why A is correct.** Most marketing AI (chatbots, AI content, AI ads) falls into the Limited Risk tier — disclosure is mandatory.
+**Why A is correct.** Most marketing AI (chatbots, AI content, AI ads) falls into the Limited Risk tier, disclosure is mandatory.
 **Why the others are wrong.**
 - B: High-risk = hiring, credit, education admission, law enforcement.
 - C: Unacceptable = social scoring, manipulation; banned outright.
@@ -812,7 +812,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** COPPA = under-13s. YouTube paid $170M in 2019 for violations.
 
 ### Q54. Answer: A
-**Why A is correct.** Zero-party data is data users *explicitly volunteer* — preferences, intent, survey answers, preference-center selections. Highest-trust signal.
+**Why A is correct.** Zero-party data is data users *explicitly volunteer*, preferences, intent, survey answers, preference-center selections. Highest-trust signal.
 **Why the others are wrong.**
 - B: Inferred-from-cookies is *first-party* behavioral data.
 - C: Third-party is data from other companies.
@@ -820,7 +820,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** Zero-party = volunteered. First-party = your direct observation. Third-party = bought.
 
 ### Q55. Answer: B
-**Why B is correct.** Segment is the canonical Customer Data Platform — unifies first-party data across channels.
+**Why B is correct.** Segment is the canonical Customer Data Platform, unifies first-party data across channels.
 **Why the others are wrong.**
 - A: CRM = Salesforce, HubSpot.
 - C: ESP = Mailchimp, Klaviyo.
@@ -844,7 +844,7 @@ D. Master a small stack, build a prompt + asset library (second brain), automate
 **Exam-takeaway.** n8n = open-source workflow.
 
 ### Q58. Answer: C
-**Why C is correct.** Tiago Forte popularized "Building a Second Brain" — the personal knowledge management canon.
+**Why C is correct.** Tiago Forte popularized "Building a Second Brain", the personal knowledge management canon.
 **Why the others are wrong.**
 - A: Tim Ferriss = lifestyle design.
 - B: James Clear = habits.

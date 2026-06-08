@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1 — CompTIA Linux+ (XK0-005 Style)
+# 🧪 Practice Exam 1, CompTIA Linux+ (XK0-005 Style)
 
 > **Conditions:** Set a 45-minute timer. 45 questions. Treat it like the real thing.
-> **Pass mark:** 38/45 (~85%) — Linux+ passes at ~80% so aim higher in practice.
+> **Pass mark:** 38/45 (~85%), Linux+ passes at ~80% so aim higher in practice.
 > Take this AFTER finishing Modules 1–4. Covers Boot/systemd, Filesystem, Packages, Bash.
 
 ---
@@ -244,7 +244,7 @@ D. `dnf search foo`
 
 ### 40. The XFS filesystem's resize behavior is:
 A. Grow + shrink online
-B. Grow only — cannot shrink
+B. Grow only, cannot shrink
 C. Shrink only
 D. Neither
 
@@ -302,7 +302,7 @@ D. `*/30 22 * * 1-5 /opt/run.sh`
 ```
 
 ### Why #41 = C
-SELinux is the most-likely culprit when permissions are fine but access fails on RHEL. `ausearch -m AVC -ts recent` surfaces the denial. `setenforce 0` is the "I give up" answer — the exam marks it wrong.
+SELinux is the most-likely culprit when permissions are fine but access fails on RHEL. `ausearch -m AVC -ts recent` surfaces the denial. `setenforce 0` is the "I give up" answer, the exam marks it wrong.
 
 ### Why #42 = A
 - (a) nmcli persists DNS across reboots via the connection profile
@@ -314,95 +314,95 @@ SELinux is the most-likely culprit when permissions are fine but access fails on
 
 ## Detailed answer rationales
 
-**Q1. Answer: C — initramfs.** The initramfs is the in-memory root with kernel modules (storage, encryption, RAID, FS drivers) needed to mount the real root. UEFI runs first, GRUB loads the kernel + initramfs, then systemd takes over after root pivot.
+**Q1. Answer: C, initramfs.** The initramfs is the in-memory root with kernel modules (storage, encryption, RAID, FS drivers) needed to mount the real root. UEFI runs first, GRUB loads the kernel + initramfs, then systemd takes over after root pivot.
 
-**Q2. Answer: B — `grub2-mkconfig -o /boot/grub2/grub.cfg`.** On RHEL/CentOS/Fedora. Debian uses `update-grub` (which wraps `grub-mkconfig -o /boot/grub/grub.cfg`). `grub-install` reinstalls the bootloader; `dracut -f` rebuilds the initramfs.
+**Q2. Answer: B, `grub2-mkconfig -o /boot/grub2/grub.cfg`.** On RHEL/CentOS/Fedora. Debian uses `update-grub` (which wraps `grub-mkconfig -o /boot/grub/grub.cfg`). `grub-install` reinstalls the bootloader; `dracut -f` rebuilds the initramfs.
 
-**Q3. Answer: B — `graphical.target`.** Runlevel 5 = multi-user with GUI. Runlevel 3 = `multi-user.target` (text). Runlevel 1/S = `rescue.target`.
+**Q3. Answer: B, `graphical.target`.** Runlevel 5 = multi-user with GUI. Runlevel 3 = `multi-user.target` (text). Runlevel 1/S = `rescue.target`.
 
-**Q4. Answer: B — `systemctl daemon-reload`.** Always run after editing unit files. Without it, systemd uses the cached old version.
+**Q4. Answer: B, `systemctl daemon-reload`.** Always run after editing unit files. Without it, systemd uses the cached old version.
 
-**Q5. Answer: A — `journalctl -k -b`.** `-k` kernel only; `-b` this boot.
+**Q5. Answer: A, `journalctl -k -b`.** `-k` kernel only; `-b` this boot.
 
-**Q6. Answer: B — `After=` orders only; `Wants=` is dep.** Critical distinction. To both order AND require: combine `After=` with `Wants=` (weak) or `Requires=` (strong).
+**Q6. Answer: B, `After=` orders only; `Wants=` is dep.** Critical distinction. To both order AND require: combine `After=` with `Wants=` (weak) or `Requires=` (strong).
 
-**Q7. Answer: C — `/opt`.** FHS specifies `/opt/<vendor>/` for third-party packages. /usr/local for locally compiled.
+**Q7. Answer: C, `/opt`.** FHS specifies `/opt/<vendor>/` for third-party packages. /usr/local for locally compiled.
 
-**Q8. Answer: B — Inodes exhausted.** Classic gotcha. `df -i` shows inode usage. Common with millions of tiny files.
+**Q8. Answer: B, Inodes exhausted.** Classic gotcha. `df -i` shows inode usage. Common with millions of tiny files.
 
-**Q9. Answer: A — 750.** rwx (7) + r-x (5) + --- (0) = 750.
+**Q9. Answer: A, 750.** rwx (7) + r-x (5) + --- (0) = 750.
 
-**Q10. Answer: C — SGID on directory.** `chmod g+s /srv/team` plus `chgrp devs /srv/team`. Files created inside inherit group `devs`.
+**Q10. Answer: C, SGID on directory.** `chmod g+s /srv/team` plus `chgrp devs /srv/team`. Files created inside inherit group `devs`.
 
-**Q11. Answer: B — ACL is present.** Use `getfacl` to view.
+**Q11. Answer: B, ACL is present.** Use `getfacl` to view.
 
-**Q12. Answer: B — `setfacl -b file`.** `-b` (--remove-all) removes all extended ACLs, leaving just the base owner/group/other.
+**Q12. Answer: B, `setfacl -b file`.** `-b` (--remove-all) removes all extended ACLs, leaving just the base owner/group/other.
 
-**Q13. Answer: C — `nofail`.** Without it, a missing device drops you to emergency mode. Pair with `x-systemd.device-timeout=` to bound the wait.
+**Q13. Answer: C, `nofail`.** Without it, a missing device drops you to emergency mode. Pair with `x-systemd.device-timeout=` to bound the wait.
 
-**Q14. Answer: B — XFS.** XFS grows but doesn't shrink. ext4 and Btrfs both shrink. ZFS partial.
+**Q14. Answer: B, XFS.** XFS grows but doesn't shrink. ext4 and Btrfs both shrink. ZFS partial.
 
-**Q15. Answer: B — UPPERCASE S.** 4644 sets SUID but doesn't include execute, so the bit shows as `S` (set but won't fire). For working SUID: 4755.
+**Q15. Answer: B, UPPERCASE S.** 4644 sets SUID but doesn't include execute, so the bit shows as `S` (set but won't fire). For working SUID: 4755.
 
-**Q16. Answer: B — `dnf`.** Modern Red Hat. `yum` is the predecessor (still in RHEL 7, Amazon Linux 2). `apt` is Debian. `pacman` is Arch.
+**Q16. Answer: B, `dnf`.** Modern Red Hat. `yum` is the predecessor (still in RHEL 7, Amazon Linux 2). `apt` is Debian. `pacman` is Arch.
 
-**Q17. Answer: B — `dpkg -S /usr/sbin/sshd`.** Debian low-level reverse lookup. RHEL equivalent: `rpm -qf`.
+**Q17. Answer: B, `dpkg -S /usr/sbin/sshd`.** Debian low-level reverse lookup. RHEL equivalent: `rpm -qf`.
 
-**Q18. Answer: B — `purge` also deletes configs.** `apt remove` keeps `/etc/<pkg>/`. `apt purge` removes them too.
+**Q18. Answer: B, `purge` also deletes configs.** `apt remove` keeps `/etc/<pkg>/`. `apt purge` removes them too.
 
-**Q19. Answer: B — `rpm --import <key>`.** The correct fix. `gpgcheck=0` lowers security and is the exam-favorite wrong answer.
+**Q19. Answer: B, `rpm --import <key>`.** The correct fix. `gpgcheck=0` lowers security and is the exam-favorite wrong answer.
 
-**Q20. Answer: B — `./configure && make && make install`.** The 30-year GNU convention.
+**Q20. Answer: B, `./configure && make && make install`.** The 30-year GNU convention.
 
-**Q21. Answer: B — Universal cross-distro formats.** Snap (Canonical, snapd daemon), Flatpak (Red Hat/community, no daemon), AppImage (single file).
+**Q21. Answer: B, Universal cross-distro formats.** Snap (Canonical, snapd daemon), Flatpak (Red Hat/community, no daemon), AppImage (single file).
 
-**Q22. Answer: B — Source installs aren't tracked.** Files copied by `make install` exist on disk but have no apt/rpm entry. Use `--prefix=/opt/<name>` so removal is `rm -rf /opt/<name>`.
+**Q22. Answer: B, Source installs aren't tracked.** Files copied by `make install` exist on disk but have no apt/rpm entry. Use `--prefix=/opt/<name>` so removal is `rm -rf /opt/<name>`.
 
-**Q23. Answer: B — Shebang.** `#!` plus interpreter path. The kernel uses this to choose what interprets the script.
+**Q23. Answer: B, Shebang.** `#!` plus interpreter path. The kernel uses this to choose what interprets the script.
 
-**Q24. Answer: B — Exit on errors, unset vars, pipe failures.** The defensive script header. Saves you from Steam-style `rm -rf "$EMPTY/"*` accidents.
+**Q24. Answer: B, Exit on errors, unset vars, pipe failures.** The defensive script header. Saves you from Steam-style `rm -rf "$EMPTY/"*` accidents.
 
-**Q25. Answer: B — `while IFS= read -r line; do ...; done < file`.** `for line in $(cat file)` word-splits on whitespace.
+**Q25. Answer: B, `while IFS= read -r line; do ...; done < file`.** `for line in $(cat file)` word-splits on whitespace.
 
-**Q26. Answer: B — Single literal; double expands.** Most-tested bash fact.
+**Q26. Answer: B, Single literal; double expands.** Most-tested bash fact.
 
-**Q27. Answer: B — `cmd > file 2>&1`.** Order matters: redirect stdout first, then duplicate stderr to it. Reverse order sends stderr to original stdout (terminal).
+**Q27. Answer: B, `cmd > file 2>&1`.** Order matters: redirect stdout first, then duplicate stderr to it. Reverse order sends stderr to original stdout (terminal).
 
-**Q28. Answer: B — `*/15 * * * *`.** Every 15 min. `*/N` in any field = every N units.
+**Q28. Answer: B, `*/15 * * * *`.** Every 15 min. `*/N` in any field = every N units.
 
-**Q29. Answer: B — In-place, every occurrence per line.** `-i` in-place, `g` global. Without `g`, only first match per line.
+**Q29. Answer: B, In-place, every occurrence per line.** `-i` in-place, `g` global. Without `g`, only first match per line.
 
-**Q30. Answer: B — `awk -F: '{print $6}'`.** `-F:` sets the colon field separator. `$6` is the 6th field (home dir).
+**Q30. Answer: B, `awk -F: '{print $6}'`.** `-F:` sets the colon field separator. `$6` is the 6th field (home dir).
 
-**Q31. Answer: C — `Persistent=true`.** systemd timer directive. Critical for laptops or servers that may be off when the trigger fires.
+**Q31. Answer: C, `Persistent=true`.** systemd timer directive. Critical for laptops or servers that may be off when the trigger fires.
 
-**Q32. Answer: D — 127.** 126 = found but not executable. 130 = killed by SIGINT (Ctrl-C).
+**Q32. Answer: D, 127.** 126 = found but not executable. 130 = killed by SIGINT (Ctrl-C).
 
-**Q33. Answer: C — Print to stderr and exit.** Combined with `set -u`, double safety on unset vars.
+**Q33. Answer: C, Print to stderr and exit.** Combined with `set -u`, double safety on unset vars.
 
-**Q34. Answer: B — Scopes to function.** Without `local`, every var in a function is global — silent pollution. Always use `local`.
+**Q34. Answer: B Scopes to function.** Without `local`, every var in a function is global silent pollution. Always use `local`.
 
-**Q35. Answer: B — `=~`.** Only inside `[[ ]]` (bash-only). Example: `[[ "$email" =~ @ ]]`.
+**Q35. Answer: B, `=~`.** Only inside `[[ ]]` (bash-only). Example: `[[ "$email" =~ @ ]]`.
 
-**Q36. Answer: B — cron's minimal PATH.** cron's PATH is `/usr/bin:/bin`. Fix: absolute path or `export PATH=...` at script start.
+**Q36. Answer: B, cron's minimal PATH.** cron's PATH is `/usr/bin:/bin`. Fix: absolute path or `export PATH=...` at script start.
 
-**Q37. Answer: B — Boot to rescue.target, fix fstab, reboot.** At GRUB menu press `e`, append `systemd.unit=rescue.target`, Ctrl-X. Log in as root, fix fstab, reboot.
+**Q37. Answer: B, Boot to rescue.target, fix fstab, reboot.** At GRUB menu press `e`, append `systemd.unit=rescue.target`, Ctrl-X. Log in as root, fix fstab, reboot.
 
-**Q38. Answer: B — `systemctl edit <unit>`.** Creates `/etc/systemd/system/<unit>.service.d/override.conf`. Distro file in `/lib/systemd/system/` stays untouched (survives package upgrades).
+**Q38. Answer: B, `systemctl edit <unit>`.** Creates `/etc/systemd/system/<unit>.service.d/override.conf`. Distro file in `/lib/systemd/system/` stays untouched (survives package upgrades).
 
-**Q39. Answer: B — `dnf provides /usr/bin/foo`.** Searches all configured repos. Debian equivalent: `apt-file search`.
+**Q39. Answer: B, `dnf provides /usr/bin/foo`.** Searches all configured repos. Debian equivalent: `apt-file search`.
 
-**Q40. Answer: B — Grow only.** XFS has no online shrink. To shrink: backup + mkfs.xfs + restore.
+**Q40. Answer: B, Grow only.** XFS has no online shrink. To shrink: backup + mkfs.xfs + restore.
 
-**Q41. Answer: C — `ausearch -m AVC -ts recent`.** SELinux is the most-likely cause when DAC permissions are fine. The AVC denial will name the source/target contexts. Fix with `semanage fcontext` (NOT `setenforce 0`).
+**Q41. Answer: C, `ausearch -m AVC -ts recent`.** SELinux is the most-likely cause when DAC permissions are fine. The AVC denial will name the source/target contexts. Fix with `semanage fcontext` (NOT `setenforce 0`).
 
 **Q42. Answer: A.** See above.
 
-**Q43. Answer: B — Alice is now ONLY in developers.** Without `-a`, `usermod -G` REPLACES the secondary group list. Always use `-aG`.
+**Q43. Answer: B, Alice is now ONLY in developers.** Without `-a`, `usermod -G` REPLACES the secondary group list. Always use `-aG`.
 
-**Q44. Answer: A — `passwd -e alice` (or `chage -d 0 alice`).** Both expire the password and force change at next login.
+**Q44. Answer: A, `passwd -e alice` (or `chage -d 0 alice`).** Both expire the password and force change at next login.
 
-**Q45. Answer: A — `30 22 * * 1-5`.** Fields: minute=30, hour=22, dom=*, month=*, dow=1-5 (Mon-Fri). Minute comes first.
+**Q45. Answer: A, `30 22 * * 1-5`.** Fields: minute=30, hour=22, dom=*, month=*, dow=1-5 (Mon-Fri). Minute comes first.
 
 ---
 
@@ -410,7 +410,7 @@ SELinux is the most-likely culprit when permissions are fine but access fails on
 
 | Score | Verdict |
 |-------|---------|
-| 43–45 | 🏆 Excellent — proceed to Practice Exam 2 |
+| 43–45 | 🏆 Excellent, proceed to Practice Exam 2 |
 | 38–42 | ✅ On track. Review wrong answers, then continue Modules 5–8 |
 | 32–37 | ⚠️ Re-study weak modules; redo this exam in 3 days |
 | <32 | 🔁 Revisit Modules 1–4 in full |

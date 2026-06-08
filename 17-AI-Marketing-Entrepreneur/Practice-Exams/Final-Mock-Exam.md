@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AI Digital Marketing Entrepreneur
+# 🧪 Final Mock Exam, AI Digital Marketing Entrepreneur
 
 > **Conditions:** Set a 70-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 38/50 (75%)
@@ -243,7 +243,7 @@ C. 5 accounts (Income, Profit, Owner Pay, Tax, Operating Expenses)
 D. None
 
 ### 40. The Solo 401(k) max combined contribution (2024–2025) for US is approximately:
-A. $70K (~$77.5K if 50+) — verify current
+A. $70K (~$77.5K if 50+), verify current
 B. $1K
 C. $1M
 D. $5K
@@ -331,9 +331,9 @@ D. Pick a sharp wedge, productize, build sustainable financial systems, and use 
 
 | Score | Verdict |
 |---|---|
-| 46–50 | 🏆 Expert — go execute the capstone |
-| 38–45 | ✅ Pass — solid command of the material |
-| 30–37 | ⚠️ Below pass — review your weakest modules, retake in 3–5 days |
+| 46–50 | 🏆 Expert, go execute the capstone |
+| 38–45 | ✅ Pass, solid command of the material |
+| 30–37 | ⚠️ Below pass, review your weakest modules, retake in 3–5 days |
 | <30 | 🔁 Restart from Module 1 |
 
 ---
@@ -351,13 +351,13 @@ For EACH wrong answer:
 
 ## Detailed answer rationales
 
-Use these to learn from each question — including the wrong choices. Every distractor is here to teach you a concept it confuses with the correct answer.
+Use these to learn from each question, including the wrong choices. Every distractor is here to teach you a concept it confuses with the correct answer.
 
 **Q1. Answer: C**
 
 **Why C is correct.** Module 1's central thesis: niche/wedge selection in Year 1 drives radically different outcomes (Maya/Sam/Jordan composites).
 
-**Why the other options are wrong.** A — accounting software is downstream. B — most-expensive AI tools is the Marcus trap. D — sales-rep hiring is premature.
+**Why the other options are wrong.** A accounting software is downstream. B most-expensive AI tools is the Marcus trap. D, sales-rep hiring is premature.
 
 **Exam-takeaway.** Year-1 critical decision = wedge selection.
 
@@ -365,7 +365,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Designjoy: ~$1.5M ARR solo, ~70% margin (Brett Williams, public).
 
-**Why the other options are wrong.** A — bootstrapped, not 50-person. B — bootstrapped, not Series B. D — Designjoy is active.
+**Why the other options are wrong.** A bootstrapped, not 50-person. B bootstrapped, not Series B. D, Designjoy is active.
 
 **Exam-takeaway.** Designjoy = $1.5M solo, 70% margin.
 
@@ -373,7 +373,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Justin Welsh's documented cadence: 5 LinkedIn posts/week + weekly newsletter, ~8 hr/week.
 
-**Why the other options are wrong.** B — 1/year is far too slow. C — 50/day is implausible. D — podcasts-only contradicts his stack.
+**Why the other options are wrong.** B 1/year is far too slow. C 50/day is implausible. D, podcasts-only contradicts his stack.
 
 **Exam-takeaway.** Justin Welsh: 5 LinkedIn + 1 newsletter/week, 8 hr.
 
@@ -389,7 +389,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Year-2 niched solo income range: $180K–$420K (Hampton + Indie Hackers + Latka data).
 
-**Why the other options are wrong.** A — $20K–$40K is below market. C — $5M–$15M is mid-market agency. D — exactly $1M is implausibly precise.
+**Why the other options are wrong.** A $20K–$40K is below market. C $5M–$15M is mid-market agency. D, exactly $1M is implausibly precise.
 
 **Exam-takeaway.** Year-2 niched solo = $180K–$420K range.
 
@@ -397,7 +397,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** 5 Fixed Anchors = Scope, Price, Process, Time, Outcome.
 
-**Why the other options are wrong.** B — Tools/People are derivatives. C — Speed/Tools are derivatives. D — Revenue/Cost/Margin/Profit are P&L.
+**Why the other options are wrong.** B Tools/People are derivatives. C Speed/Tools are derivatives. D, Revenue/Cost/Margin/Profit are P&L.
 
 **Exam-takeaway.** 5 Fixed Anchors: Scope, Price, Process, Time, Outcome.
 
@@ -405,7 +405,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** AI leverage = output multiplier from inserting AI into delivery steps.
 
-**Why the other options are wrong.** B — count of tools owned is irrelevant. C — accuracy is a model property. D — number of subscriptions is the Marcus trap.
+**Why the other options are wrong.** B count of tools owned is irrelevant. C accuracy is a model property. D, number of subscriptions is the Marcus trap.
 
 **Exam-takeaway.** AI leverage = output multiplier per hour.
 
@@ -413,15 +413,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Workshop Digital's audit-to-retainer conversion is ~40%, publicly cited.
 
-**Why the other options are wrong.** A — 5% is too low to be a model. C — 95% is implausible. D — 100% is impossible.
+**Why the other options are wrong.** A 5% is too low to be a model. C 95% is implausible. D, 100% is impossible.
 
 **Exam-takeaway.** Audit-as-wedge converts ~40% to retainer.
 
 **Q9. Answer: B**
 
-**Why B is correct.** SKU expansion pace: 1 SKU Yr 1, 2 SKUs Yr 2, 3 SKUs Yr 3 — resist adding more.
+**Why B is correct.** SKU expansion pace: 1 SKU Yr 1, 2 SKUs Yr 2, 3 SKUs Yr 3, resist adding more.
 
-**Why the other options are wrong.** A — 10 SKUs in Year 1 dilutes focus. C — 50 SKUs is no business. D — never adding contradicts Hannah's three-SKU catalog.
+**Why the other options are wrong.** A 10 SKUs in Year 1 dilutes focus. C 50 SKUs is no business. D, never adding contradicts Hannah's three-SKU catalog.
 
 **Exam-takeaway.** SKU expansion: 1 → 2 → 3 over Years 1–3.
 
@@ -429,15 +429,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Productized services target 60–80% gross margin at scale.
 
-**Why the other options are wrong.** B/C — middle bands signal inefficiency. D — 95–100% is software, not service.
+**Why the other options are wrong.** B/C middle bands signal inefficiency. D 95–100% is software, not service.
 
 **Exam-takeaway.** Productized gross margin = 60–80%.
 
 **Q11. Answer: A**
 
-**Why A is correct.** "Cold call billboards" is not a real channel — distractor.
+**Why A is correct.** "Cold call billboards" is not a real channel, distractor.
 
-**Why the other options are wrong.** B/C/D — Inbound, Outbound, and Paid are all explicit channels in the table.
+**Why the other options are wrong.** B/C/D, Inbound, Outbound, and Paid are all explicit channels in the table.
 
 **Exam-takeaway.** 7 channels: Outbound, Inbound, Referrals, Networks, Partnerships, Events, Paid.
 
@@ -445,7 +445,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Year-1 default = Outbound + Inbound (cashflow + compounding).
 
-**Why the other options are wrong.** B/C/D — Paid+Events is capital-heavy; All 7 is the discipline failure; Referrals-only assumes a network.
+**Why the other options are wrong.** B/C/D, Paid+Events is capital-heavy; All 7 is the discipline failure; Referrals-only assumes a network.
 
 **Exam-takeaway.** Year-1 default = Outbound + Inbound.
 
@@ -461,7 +461,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Outbound math from Module 3: 1,000 sends → 30 positive replies → 13 booked → 9 shows → 2 closes (~$10K rev at $5K avg ACV).
 
-**Why the other options are wrong.** A/B — 1,000 or 50 closes from 1,000 sends is implausible. C — 1 close max is below benchmark.
+**Why the other options are wrong.** A/B 1,000 or 50 closes from 1,000 sends is implausible. C 1 close max is below benchmark.
 
 **Exam-takeaway.** 1,000 sends → 30 positives → 2 closes → ~$10K.
 
@@ -469,7 +469,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Short PVCC emails beat long consultative emails by ~2–4x in reply rate (Smartlead 2024 data).
 
-**Why the other options are wrong.** A — about the same contradicts the data. B — 50x is implausible. D — slightly worse is the opposite of the effect.
+**Why the other options are wrong.** A about the same contradicts the data. B 50x is implausible. D, slightly worse is the opposite of the effect.
 
 **Exam-takeaway.** Short PVCC > long consultative by 2–4x in reply rate.
 
@@ -477,7 +477,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Paid ads need ≥ $7,500 ACV to profit on solo-operator CAC math.
 
-**Why the other options are wrong.** B/C — $1K/$200 are well below the threshold. D — $1M is gratuitous.
+**Why the other options are wrong.** B/C $1K/$200 are well below the threshold. D $1M is gratuitous.
 
 **Exam-takeaway.** Paid ads ≥ $7,500 ACV minimum.
 
@@ -485,7 +485,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Year-3 community contribution to revenue is typically 30–50%, with top 10% reaching 60–80% (Hampton + Dynamite Circle data).
 
-**Why the other options are wrong.** A — 0% defeats network channels. B/D — always 100% / always 1% are absolutes.
+**Why the other options are wrong.** A 0% defeats network channels. B/D always 100% / always 1% are absolutes.
 
 **Exam-takeaway.** Year-3 community contribution = 30–50% (top 10% at 60–80%).
 
@@ -501,7 +501,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Middle option in good-better-best gets 60–70% (decoy pricing).
 
-**Why the other options are wrong.** A/B — too low. C — 95% is implausibly dominant.
+**Why the other options are wrong.** A/B too low. C 95% is implausibly dominant.
 
 **Exam-takeaway.** Good-better-best middle = 60–70%.
 
@@ -509,15 +509,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** ROI projection anchors the buyer on value far exceeding price.
 
-**Why the other options are wrong.** A — pads page count is the opposite of the recommendation. B — compliance isn't sales. C — methodology belongs in SOW.
+**Why the other options are wrong.** A pads page count is the opposite of the recommendation. B compliance isn't sales. C, methodology belongs in SOW.
 
 **Exam-takeaway.** ROI projection = anchor on value. Without it, you compete on price.
 
 **Q21. Answer: D**
 
-**Why D is correct.** Short productized engagements are 100% upfront — no AR risk, short delivery.
+**Why D is correct.** Short productized engagements are 100% upfront, no AR risk, short delivery.
 
-**Why the other options are wrong.** A/B/C — Net 30/60/90 create AR risk on 5-day deliverables.
+**Why the other options are wrong.** A/B/C, Net 30/60/90 create AR risk on 5-day deliverables.
 
 **Exam-takeaway.** Short productized = 100% upfront.
 
@@ -525,7 +525,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Kill fee = 25–50% of unbilled balance, paid by client on mid-engagement cancellation.
 
-**Why the other options are wrong.** A — 0% defeats the protection. C — 100% is the unbilled full amount, rare. D — optional means no protection.
+**Why the other options are wrong.** A 0% defeats the protection. C 100% is the unbilled full amount, rare. D, optional means no protection.
 
 **Exam-takeaway.** Kill fee = 25–50% of unbilled. Standard protection.
 
@@ -533,7 +533,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Liability caps are commonly set at "fees paid in the last 6–12 months."
 
-**Why the other options are wrong.** B — unlimited is dangerous. C — $1 is meaningless. D — $1B is meaningless and won't survive negotiation.
+**Why the other options are wrong.** B unlimited is dangerous. C $1 is meaningless. D, $1B is meaningless and won't survive negotiation.
 
 **Exam-takeaway.** Liability cap = 6–12 months of fees paid. Standard contract floor.
 
@@ -541,7 +541,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Year-1 solo target = ~$200/mo.
 
-**Why the other options are wrong.** A — $25/mo is below the floor. C/D — Marcus's overspending trap.
+**Why the other options are wrong.** A $25/mo is below the floor. C/D Marcus's overspending trap.
 
 **Exam-takeaway.** Year-1 solo stack = ~$200/mo. Discipline.
 
@@ -557,7 +557,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Year-1 solo LLM choice = ChatGPT Plus OR Claude Pro at $20/mo + free secondary.
 
-**Why the other options are wrong.** A — Team requires 2+ users. B — self-hosted Llama needs technical setup. C — Gemini Advanced solo is suboptimal mixed quality.
+**Why the other options are wrong.** A Team requires 2+ users. B self-hosted Llama needs technical setup. C, Gemini Advanced solo is suboptimal mixed quality.
 
 **Exam-takeaway.** Year-1 LLM = one paid ($20) + one free (the other).
 
@@ -565,7 +565,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Make.com is the sweet spot; n8n self-hosted at high volume; Zapier for hard-to-find connectors.
 
-**Why the other options are wrong.** A — Zapier always is expensive. B — none = no automation. C — custom code is over-engineering for Year 1.
+**Why the other options are wrong.** A Zapier always is expensive. B none = no automation. C, custom code is over-engineering for Year 1.
 
 **Exam-takeaway.** Make → n8n → Zapier by volume + connector needs.
 
@@ -573,7 +573,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Sucker stack Year 1 = HubSpot Marketing Hub Pro, ZoomInfo, Salesforce, Outreach.io, Pardot, Marketo, etc.
 
-**Why the other options are wrong.** A — Notion Free is great Year 1. C — HubSpot CRM Free is fine. D — Apollo Basic is the right outbound data tool.
+**Why the other options are wrong.** A Notion Free is great Year 1. C HubSpot CRM Free is fine. D, Apollo Basic is the right outbound data tool.
 
 **Exam-takeaway.** Sucker stack = enterprise tools on solo budgets. HubSpot Pro is the canonical example.
 
@@ -581,15 +581,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Tool spend should be 1–2% of revenue (Hampton + Indie Hackers data).
 
-**Why the other options are wrong.** A — 0% means no tools, no leverage. B/D — 10–20%/50% is the Marcus burn trap.
+**Why the other options are wrong.** A 0% means no tools, no leverage. B/D 10–20%/50% is the Marcus burn trap.
 
 **Exam-takeaway.** Tool spend = 1–2% of revenue. Not 5–10%.
 
 **Q30. Answer: B**
 
-**Why B is correct.** "Looking established" is the wrong reason to hire — the three legitimate triggers are workload, bottleneck, turned-away revenue.
+**Why B is correct.** "Looking established" is the wrong reason to hire, the three legitimate triggers are workload, bottleneck, turned-away revenue.
 
-**Why the other options are wrong.** A/C/D — all three are explicit triggers in the reading.
+**Why the other options are wrong.** A/C/D, all three are explicit triggers in the reading.
 
 **Exam-takeaway.** Hire for math reasons, not vanity reasons.
 
@@ -597,7 +597,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** PAID work-sample test (2–4 hr, real task) is the deciding interview step. Schmidt & Hunter (1998) + Google/IDEO/Stripe replication.
 
-**Why the other options are wrong.** A — application screen filters. B — intro call confirms fit. D — references come after the decision.
+**Why the other options are wrong.** A application screen filters. B intro call confirms fit. D, references come after the decision.
 
 **Exam-takeaway.** Work sample = the decision. Behavioral interviews lose 2–3x.
 
@@ -605,13 +605,13 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Work samples beat behavioral interviews by 2–3x in predicting on-the-job performance.
 
-**Why the other options are wrong.** A/B — "about the same" or "identical" contradicts the Schmidt & Hunter research. C — work samples are not 10x worse.
+**Why the other options are wrong.** A/B "about the same" or "identical" contradicts the Schmidt & Hunter research. C work samples are not 10x worse.
 
 **Exam-takeaway.** Work sample > behavioral by 2–3x. Use work samples.
 
 **Q33. Answer: D**
 
-**Why D is correct.** "I'm a real writer" (refusal to use AI) is the explicit anti-trait — hard pass.
+**Why D is correct.** "I'm a real writer" (refusal to use AI) is the explicit anti-trait, hard pass.
 
 **Why the other options are wrong.** A/B/C are explicit traits the reading endorses.
 
@@ -621,7 +621,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** International full-time hires require an EOR like Deel, Remote.com, or Multiplier for legal compliance.
 
-**Why the other options are wrong.** A — personal Venmo creates 1099 + tax issues. B — cash via wire bypasses payroll. C — crypto creates regulatory + tax risk.
+**Why the other options are wrong.** A personal Venmo creates 1099 + tax issues. B cash via wire bypasses payroll. C, crypto creates regulatory + tax risk.
 
 **Exam-takeaway.** International FT = EOR. Don't DIY international payroll.
 
@@ -629,7 +629,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** AI-leverage target per hire = 3–5x output vs. 2020 baseline.
 
-**Why the other options are wrong.** A — no improvement defeats the model. C — 100x is implausible. D — slower means broken SOPs.
+**Why the other options are wrong.** A no improvement defeats the model. C 100x is implausible. D, slower means broken SOPs.
 
 **Exam-takeaway.** AI-native hire = 3–5x multiplier. Below = broken SOPs.
 
@@ -637,7 +637,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** 30% tax bucket transferred immediately to a savings account on every deposit.
 
-**Why the other options are wrong.** B — 10% annually misses the immediate discipline. C — wait until April = Tara's trap. D — annually = penalties.
+**Why the other options are wrong.** B 10% annually misses the immediate discipline. C wait until April = Tara's trap. D, annually = penalties.
 
 **Exam-takeaway.** 30% tax bucket, immediate transfer, every deposit.
 
@@ -645,7 +645,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Quarterly deadlines: April 15, June 15, Sept 15, Jan 15 (next year).
 
-**Why the other options are wrong.** A — monthly is bookkeeping. B — annually triggers penalties. D — random isn't a schedule.
+**Why the other options are wrong.** A monthly is bookkeeping. B annually triggers penalties. D, random isn't a schedule.
 
 **Exam-takeaway.** Quarterly deadlines: 4/15, 6/15, 9/15, 1/15.
 
@@ -653,7 +653,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** S-corp election splits owner pay into reasonable salary (payroll, SE tax owed) + distributions (no SE tax).
 
-**Why the other options are wrong.** A — doesn't eliminate all taxes. B — $0 salary triggers IRS reclassification. D — doesn't reduce federal income tax to zero.
+**Why the other options are wrong.** A doesn't eliminate all taxes. B $0 salary triggers IRS reclassification. D, doesn't reduce federal income tax to zero.
 
 **Exam-takeaway.** S-corp election: reasonable salary + distributions = SE tax savings.
 
@@ -661,15 +661,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Profit First = 5 accounts: Income, Profit, Owner Pay, Tax, Operating Expenses.
 
-**Why the other options are wrong.** A — 1 account = no separation. B — 50 is over-engineering. D — 0 defeats the discipline.
+**Why the other options are wrong.** A 1 account = no separation. B 50 is over-engineering. D, 0 defeats the discipline.
 
 **Exam-takeaway.** Profit First = 5 accounts, twice-monthly transfers.
 
 **Q40. Answer: A**
 
-**Why A is correct.** Solo 401(k) combined max ~$70K ($77.5K if 50+) for 2024–2025 — verify current limits.
+**Why A is correct.** Solo 401(k) combined max ~$70K ($77.5K if 50+) for 2024–2025, verify current limits.
 
-**Why the other options are wrong.** B — $1K is far below the limit. C — $1M is implausible. D — $5K is the IRA limit.
+**Why the other options are wrong.** B $1K is far below the limit. C $1M is implausible. D, $5K is the IRA limit.
 
 **Exam-takeaway.** Solo 401(k) max ~$70K. Verify each year.
 
@@ -677,7 +677,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** HSA triple-tax-advantaged: contributions deductible, growth tax-free, qualified withdrawals tax-free.
 
-**Why the other options are wrong.** B — "triple the income" is nonsense. C — "triple the limit" is nonsense. D — "three accounts" misreads the term.
+**Why the other options are wrong.** B "triple the income" is nonsense. C "triple the limit" is nonsense. D, "three accounts" misreads the term.
 
 **Exam-takeaway.** HSA = deductible + tax-free growth + tax-free qualified withdrawals.
 
@@ -685,7 +685,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** PACT-O = Problem-Authority-Constraints-Target outcome-Other options. Evolved from BANT.
 
-**Why the other options are wrong.** A — Pay/Action/Cost/Timing/Offer is generic process labeling. C — Process/Audit/Contract/Time/Outreach is operations. D — Price/Anchor/Close/Test/Offer is pricing.
+**Why the other options are wrong.** A Pay/Action/Cost/Timing/Offer is generic process labeling. C Process/Audit/Contract/Time/Outreach is operations. D, Price/Anchor/Close/Test/Offer is pricing.
 
 **Exam-takeaway.** PACT-O = Problem, Authority, Constraints, Target outcome, Other options.
 
@@ -693,15 +693,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** In a 45-min discovery call, the buyer should talk ~70%. Listen, take notes, ask follow-ups.
 
-**Why the other options are wrong.** A — 10% means you're pitching. C — 50% under-listens. D — 100% means no operator participation.
+**Why the other options are wrong.** A 10% means you're pitching. C 50% under-listens. D, 100% means no operator participation.
 
 **Exam-takeaway.** Buyer talks 70%. Operator asks + listens.
 
 **Q44. Answer: A**
 
-**Why A is correct.** End-of-call recap email within 30 minutes — closes 2x more deals.
+**Why A is correct.** End-of-call recap email within 30 minutes, closes 2x more deals.
 
-**Why the other options are wrong.** B — 30 days is far too late. C — never defeats the discipline. D — only when requested misses the proactive signal.
+**Why the other options are wrong.** B 30 days is far too late. C never defeats the discipline. D, only when requested misses the proactive signal.
 
 **Exam-takeaway.** Recap within 30 min. Mirror buyer's words.
 
@@ -709,7 +709,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Kickoff Loom kills ~80% of "where are we?" client emails.
 
-**Why the other options are wrong.** A — 0% would mean the Loom does nothing. C — 5% is too modest. D — 100% is implausible.
+**Why the other options are wrong.** A 0% would mean the Loom does nothing. C 5% is too modest. D, 100% is implausible.
 
 **Exam-takeaway.** Kickoff Loom = ~80% reduction in check-in noise.
 
@@ -717,7 +717,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Weekly status email = Friday afternoons, even on quiet weeks. Predictability = retention.
 
-**Why the other options are wrong.** A — daily is noise. C — only on problems creates surprise. D — annually is meaningless.
+**Why the other options are wrong.** A daily is noise. C only on problems creates surprise. D, annually is meaningless.
 
 **Exam-takeaway.** Friday afternoon, every week, no exceptions.
 
@@ -725,7 +725,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Retainer conversion from one-off productized: 25–45% baseline, 60–80% with measurable outcomes.
 
-**Why the other options are wrong.** B/D — 0–5% / 0% means the upsell never works. C — 100% is impossible.
+**Why the other options are wrong.** B/D 0–5% / 0% means the upsell never works. C 100% is impossible.
 
 **Exam-takeaway.** Project-to-retainer = 25–45% (60–80% with proof).
 
@@ -733,13 +733,13 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Testimonial ask = +21 days post-delivery (or +60 days into retainer). After clear wins, before the relationship fades.
 
-**Why the other options are wrong.** A — Day 0 has no outcome to testify about. B — Year 5 is far too late. D — never defeats the asset.
+**Why the other options are wrong.** A Day 0 has no outcome to testify about. B Year 5 is far too late. D, never defeats the asset.
 
 **Exam-takeaway.** Testimonial at +21 days post-delivery.
 
 **Q49. Answer: B**
 
-**Why B is correct.** Building a 14-page custom proposal template before sending emails is the inverse of the capstone playbook — wedge + sample + outreach first.
+**Why B is correct.** Building a 14-page custom proposal template before sending emails is the inverse of the capstone playbook, wedge + sample + outreach first.
 
 **Why the other options are wrong.** A/C/D are all explicit milestones in the playbook.
 
@@ -749,7 +749,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** The capstone overarching principle: pick a sharp wedge, productize the SKU, build sustainable financial systems, and use AI to deliver like a team of three.
 
-**Why the other options are wrong.** A — hire-as-many-as-possible is the Marcus trap. B — newsletters-only is consumption, not output. C — $5K/mo tools is the burn trap.
+**Why the other options are wrong.** A hire-as-many-as-possible is the Marcus trap. B newsletters-only is consumption, not output. C, $5K/mo tools is the burn trap.
 
 **Exam-takeaway.** Sharp wedge + productized SKU + financial discipline + AI leverage = the whole course.
 

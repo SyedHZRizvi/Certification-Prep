@@ -30,7 +30,7 @@ title: "Module 3 Cheat Sheet: Rotoscoping & Masking"
 | 5 | Use Refine Edge on hair/fine detail |
 | 6 | Freeze to bake the matte |
 
-**Cannot propagate backward — start from an earlier frame for corrections.**
+**Cannot propagate backward, start from an earlier frame for corrections.**
 
 ---
 
@@ -55,7 +55,7 @@ title: "Module 3 Cheat Sheet: Rotoscoping & Masking"
 | Hand addition | Add | Fine hand coverage |
 | Hair gaps | Subtract | Between hair strands |
 
-**Use many simple shapes (few points each) — never one complex spline with 100+ points.**
+**Use many simple shapes (few points each), never one complex spline with 100+ points.**
 
 ---
 
@@ -76,7 +76,7 @@ title: "Module 3 Cheat Sheet: Rotoscoping & Masking"
 
 | Feather Value | Result | Use |
 |--------------|--------|-----|
-| 0 (hard) | Cut-out edge | Rare — only for flat graphic elements |
+| 0 (hard) | Cut-out edge | Rare, only for flat graphic elements |
 | 8–20px uniform | Natural blend | Body and hair (acceptable approach) |
 | Variable (vertex-level) | Hard on body, soft on hair | Professional approach |
 
@@ -121,7 +121,7 @@ title: "Module 3 Cheat Sheet: Rotoscoping & Masking"
 
 | Good Technique | Amateur Technique |
 |---------------|------------------|
-| Sparse keyframes — shape holds for multiple frames | Dense keyframes — re-drawn every frame |
+| Sparse keyframes shape holds for multiple frames | Dense keyframes re-drawn every frame |
 | Layered simple shapes (5–10 pts each) | Single complex spline (50–100+ pts) |
 | Soft feather on hair/edge areas | Hard edge everywhere |
 | Face roto with soft skin boundary | Face roto with hard outline |

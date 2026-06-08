@@ -18,27 +18,27 @@ title: Azure Administrator Track (AZ-104)
 
 ### 🎯 The promise
 
-The Microsoft Certified: Azure Administrator Associate (AZ-104) is the credential that takes you from someone who *understands* Azure to someone trusted to *operate* it in production. It is the most-listed Azure certification in mid-level cloud job postings, the entry credential for almost every Microsoft partner consulting role, and the proof-of-skill that opens the door to the Solutions Architect Expert, DevOps Engineer Expert, and Security Engineer Associate tiers. Pass AZ-104 and you are no longer a "cloud-curious" IT pro — you are a credentialed Azure operator.
+The Microsoft Certified: Azure Administrator Associate (AZ-104) is the credential that takes you from someone who *understands* Azure to someone trusted to *operate* it in production. It is the most-listed Azure certification in mid-level cloud job postings, the entry credential for almost every Microsoft partner consulting role, and the proof-of-skill that opens the door to the Solutions Architect Expert, DevOps Engineer Expert, and Security Engineer Associate tiers. Pass AZ-104 and you are no longer a "cloud-curious" IT pro, you are a credentialed Azure operator.
 
 ### 💼 Career outcomes after passing
 
-- **Azure Cloud Administrator** ($95K–$130K) — the headline role; runs Azure subscriptions, identities, storage, compute, and networking day-to-day
-- **Cloud Engineer (Microsoft stack)** ($105K–$140K) — IC-track at most Microsoft-leaning enterprises
-- **Hybrid Infrastructure Engineer** ($110K–$145K) — AZ-104 plus Windows Server experience commands a premium (laddering into course 25, AZ-800/801)
-- **Cloud Consultant (Microsoft Partner)** ($115K–$160K) — billable consulting at gold/solutions partners (Avanade, Insight, Sogeti, Cognizant)
-- **DevOps Engineer (Azure DevOps + AKS)** ($120K–$160K) — AZ-104 is the foundation; AZ-400 layers on top
-- **Solutions Architect (Microsoft track)** ($135K–$185K) — AZ-104 is the floor; AZ-305 is the next rung
+- **Azure Cloud Administrator** ($95K–$130K), the headline role; runs Azure subscriptions, identities, storage, compute, and networking day-to-day
+- **Cloud Engineer (Microsoft stack)** ($105K–$140K), IC-track at most Microsoft-leaning enterprises
+- **Hybrid Infrastructure Engineer** ($110K–$145K), AZ-104 plus Windows Server experience commands a premium (laddering into course 25, AZ-800/801)
+- **Cloud Consultant (Microsoft Partner)** ($115K–$160K), billable consulting at gold/solutions partners (Avanade, Insight, Sogeti, Cognizant)
+- **DevOps Engineer (Azure DevOps + AKS)** ($120K–$160K), AZ-104 is the foundation; AZ-400 layers on top
+- **Solutions Architect (Microsoft track)** ($135K–$185K), AZ-104 is the floor; AZ-305 is the next rung
 
 Average compensation uplift after passing: **15–25%** in the 6–12 months following certification, per Microsoft Learn's 2024 Learner Outcomes Report and Robert Half. AZ-104 sits in the middle of the most coherent ladder in the Microsoft ecosystem: **AZ-900 (course 05) → AZ-104 (this course) → AZ-305 (Solutions Architect Expert) / AZ-400 (DevOps Expert) / AZ-500 (Security Engineer)**.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — concepts grounded in real customer scenarios before any service is named
-- **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outline; no copyrighted dumps
-- **Real-world capstone scenario** — a 14-week scenario standing up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget
-- **One author, one voice** — coherent vocabulary across all 10 modules, three practice exams, and the capstone
-- **Updated for the 2026 AZ-104 blueprint** — including Microsoft Entra terminology, current VPN Gateway/ExpressRoute pricing tiers, and the latest Azure Monitor + Policy posture
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, concepts grounded in real customer scenarios before any service is named
+- **Original questions only**, every quiz and practice exam written from Microsoft's published skills-measured outline; no copyrighted dumps
+- **Real-world capstone scenario**, a 14-week scenario standing up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget
+- **One author, one voice**, coherent vocabulary across all 10 modules, three practice exams, and the capstone
+- **Updated for the 2026 AZ-104 blueprint**, including Microsoft Entra terminology, current VPN Gateway/ExpressRoute pricing tiers, and the latest Azure Monitor + Policy posture
 
 ### 🚀 Ready to start?
 
@@ -54,12 +54,12 @@ By the end of this track, you'll be able to:
 
 - Design and manage Azure subscriptions, management groups, and resource hierarchy
 - Configure Microsoft Entra ID, RBAC, Conditional Access, and PIM
-- Stand up storage accounts, blobs, file shares, and File Sync — and pick the right redundancy
+- Stand up storage accounts, blobs, file shares, and File Sync, and pick the right redundancy
 - Deploy and manage virtual machines, scale sets, App Services, ACI, and AKS
 - Build virtual networks with peering, VPN/ExpressRoute, NSGs, Application Gateway, and Load Balancer
 - Protect workloads with Azure Backup, Site Recovery, and Azure Migrate
 - Monitor everything with Azure Monitor, Log Analytics, alerts, Policy, and Resource Locks
-- Drive most of it from Azure CLI **and** PowerShell — not just the portal
+- Drive most of it from Azure CLI **and** PowerShell, not just the portal
 
 ---
 
@@ -90,7 +90,7 @@ By the end of this track, you'll be able to:
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 6–10 | 45 Q · 80 min | ⭐⭐⭐⭐ |
 | [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before exam | 55 Q · 100 min | ⭐⭐⭐⭐⭐ |
 
-**Plus:** Spend $10–$25/month on an Azure pay-as-you-go subscription and **do every CLI/PowerShell snippet in this course yourself**. The exam has drag-drop task ordering — you need finger memory, not just visual memory.
+**Plus:** Spend $10–$25/month on an Azure pay-as-you-go subscription and **do every CLI/PowerShell snippet in this course yourself**. The exam has drag-drop task ordering, you need finger memory, not just visual memory.
 
 ---
 
@@ -98,20 +98,20 @@ By the end of this track, you'll be able to:
 
 Two new course-root resources extend this AZ-104 program beyond exam prep into graduate-level professional standard case-method learning:
 
-- **[Capstone Project](./Capstone-Project.md)** — a 14-week, 7-deliverable scenario where you stand up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget. Integrates every module via a 100-point rubric. Built for the elevation spec's "graduate-level professional" bar.
-- **[Recommended Readings](./Recommended-Readings.md)** — the canonical textbooks (Exam Ref AZ-104 / CAF / Nadella's *Hit Refresh*), seminal papers (Saltzer & Schroeder 1975 on least privilege; Brewer 2000 on CAP), industry channels (John Savill, Adam Marczak, Microsoft Mechanics, Tim Warner), and free academic courses (MIT 6.824, Stanford CS-144) that reinforce the underlying CS.
+- **[Capstone Project](./Capstone-Project.md)**, a 14-week, 7-deliverable scenario where you stand up a HIPAA + HITRUST production Azure landing zone for a 4,200-person regional health system on a $1.6M budget. Integrates every module via a 100-point rubric. Built for the elevation spec's "graduate-level professional" bar.
+- **[Recommended Readings](./Recommended-Readings.md)**, the canonical textbooks (Exam Ref AZ-104 / CAF / Nadella's *Hit Refresh*), seminal papers (Saltzer & Schroeder 1975 on least privilege; Brewer 2000 on CAP), industry channels (John Savill, Adam Marczak, Microsoft Mechanics, Tim Warner), and free academic courses (MIT 6.824, Stanford CS-144) that reinforce the underlying CS.
 
 ---
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[Microsoft Learn AZ-104 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-104)** — the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft updates this every 3–6 months — always trust the latest version over any third-party course.
+🔗 **[Microsoft Learn AZ-104 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-104)** the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft updates this every 3–6 months always trust the latest version over any third-party course.
 
 Also bookmark:
 
-- 🔗 [Azure documentation](https://learn.microsoft.com/azure/) — official docs
-- 🔗 [Microsoft Learn free sandbox modules](https://learn.microsoft.com/training/courses/az-104t00) — hands-on practice without your own subscription
-- 🔗 [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/) — reference architectures
+- 🔗 [Azure documentation](https://learn.microsoft.com/azure/), official docs
+- 🔗 [Microsoft Learn free sandbox modules](https://learn.microsoft.com/training/courses/az-104t00), hands-on practice without your own subscription
+- 🔗 [Azure Architecture Center](https://learn.microsoft.com/azure/architecture/), reference architectures
 
 ---
 
@@ -127,7 +127,7 @@ Also bookmark:
 | Format | Multiple choice + multi-select + drag-drop task ordering + Yes/No groups + 1–2 case studies |
 | Delivery | Pearson VUE test center or OnVUE online proctored |
 | Retake | Wait 24 hrs after 1st failure, 14 days after 2nd–4th, 1 year after 5th |
-| Validity | 1 year — renew free via online assessment on Microsoft Learn |
+| Validity | 1 year, renew free via online assessment on Microsoft Learn |
 | Prereq | None required (AZ-900 strongly recommended) |
 
 ### Domain Weights (Memorize These)
@@ -165,13 +165,13 @@ Week 6: Module 10 (monitor) + Practice-Exam-2 + Final-Mock-Exam
 
 ## ⚠️ The 7 Most Common Reasons People Fail
 
-1. ❌ **Studied portal only** — exam asks about CLI/PowerShell parameter order. Practice both.
-2. ❌ **Glossed over networking** — NSG rule precedence and effective rules trip up 40% of candidates.
-3. ❌ **Confused similar services** — Storage redundancy (LRS/ZRS/GRS/GZRS), VPN Gateway SKUs, Load Balancer vs App Gateway vs Front Door.
-4. ❌ **Skipped hands-on labs** — drag-drop task-ordering questions are unforgiving if you've never done the steps.
-5. ❌ **Misread case studies** — case studies hide the requirements ("must be zone-redundant", "lowest cost"). Underline keywords.
-6. ❌ **Out-of-date material** — Azure renames things constantly ("Azure AD" → "Microsoft Entra ID"). Use 2024+ resources.
-7. ❌ **Time pressure** — 100 min for 40–60 questions + case studies means ~90 sec/question. Don't get stuck.
+1. ❌ **Studied portal only**, exam asks about CLI/PowerShell parameter order. Practice both.
+2. ❌ **Glossed over networking**, NSG rule precedence and effective rules trip up 40% of candidates.
+3. ❌ **Confused similar services**, Storage redundancy (LRS/ZRS/GRS/GZRS), VPN Gateway SKUs, Load Balancer vs App Gateway vs Front Door.
+4. ❌ **Skipped hands-on labs**, drag-drop task-ordering questions are unforgiving if you've never done the steps.
+5. ❌ **Misread case studies**, case studies hide the requirements ("must be zone-redundant", "lowest cost"). Underline keywords.
+6. ❌ **Out-of-date material**, Azure renames things constantly ("Azure AD" → "Microsoft Entra ID"). Use 2024+ resources.
+7. ❌ **Time pressure**, 100 min for 40–60 questions + case studies means ~90 sec/question. Don't get stuck.
 
 ---
 

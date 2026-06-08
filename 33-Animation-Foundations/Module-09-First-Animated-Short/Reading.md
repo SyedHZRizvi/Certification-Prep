@@ -1,6 +1,6 @@
 # Module 9: Your First Animated Short 🎬
 
-> **Why this module matters:** Everything before this module was learning to read. This module is writing your first sentence. The bouncing ball, the walk cycle, the character performance — these are the three foundational exercises that every animation program in the world uses to teach animation, and for good reason. Each one is harder than it looks and teaches something essential.
+> **Why this module matters:** Everything before this module was learning to read. This module is writing your first sentence. The bouncing ball, the walk cycle, the character performance, these are the three foundational exercises that every animation program in the world uses to teach animation, and for good reason. Each one is harder than it looks and teaches something essential.
 
 ---
 
@@ -10,11 +10,11 @@ Richard Williams, director of *Who Framed Roger Rabbit* and author of *The Anima
 
 He put a bouncing ball on screen. A simple circle. Bouncing.
 
-Then he showed 40 different versions of a bouncing ball — the same shape, the same trajectory, the same start and end position — animated with 40 different timing and spacing choices. Each ball communicated something completely different: rubber, metal, water balloon, cotton ball, lead weight. No visual cue except the spacing of the frames.
+Then he showed 40 different versions of a bouncing ball the same shape, the same trajectory, the same start and end position animated with 40 different timing and spacing choices. Each ball communicated something completely different: rubber, metal, water balloon, cotton ball, lead weight. No visual cue except the spacing of the frames.
 
 "You think this is simple," he said. "This is everything."
 
-He was right. The bouncing ball teaches squash and stretch, slow-in/slow-out, anticipation, follow-through, arcs, timing, and weight — the entire toolkit of animation, compressed into one exercise. Students who master the bouncing ball with genuine control over all its variables are students who understand animation. Students who rush through it to "get to the good stuff" carry that gap with them for years.
+He was right. The bouncing ball teaches squash and stretch, slow-in/slow-out, anticipation, follow-through, arcs, timing, and weight, the entire toolkit of animation, compressed into one exercise. Students who master the bouncing ball with genuine control over all its variables are students who understand animation. Students who rush through it to "get to the good stuff" carry that gap with them for years.
 
 This module will not let you rush.
 
@@ -22,7 +22,7 @@ This module will not let you rush.
 
 ## 🎬 Case Study: *Luxo Jr.* (1986) and What Makes a Minimal Character Compelling (Pre-Exercise Context)
 
-Before you attempt the bouncing ball, it is worth understanding *why* Pixar's very first theatrical short — *Luxo Jr.* — begins with exactly this premise: a ball bounced by two desk lamps. The choice was not arbitrary.
+Before you attempt the bouncing ball, it is worth understanding *why* Pixar's very first theatrical short *Luxo Jr.* begins with exactly this premise: a ball bounced by two desk lamps. The choice was not arbitrary.
 
 John Lasseter chose a ball as the central prop because it is the most explicit demonstration of the animator's control over physics. A ball has no internal structure that a viewer can misread. It has no character design that draws attention away from the animation. It is pure timing, pure physics, pure principle demonstration.
 
@@ -38,26 +38,26 @@ The bouncing ball exercise exists to teach you the same thing Lasseter demonstra
 
 | Principle | How the Ball Teaches It |
 |-----------|------------------------|
-| **Squash & Stretch** | Ball squashes on impact; stretches on flight — volume constant |
+| **Squash & Stretch** | Ball squashes on impact; stretches on flight, volume constant |
 | **Slow-In/Slow-Out** | Slow near the top of the arc; fast at the bottom |
 | **Arcs** | The ball's path through space is a parabolic arc |
 | **Timing** | Frame count = perceived weight and material |
 | **Anticipation** | A ball dropped from height anticipates by appearing stationary then beginning to fall |
-| **Follow-Through** | The ball bounces a second, third time — smaller each time |
+| **Follow-Through** | The ball bounces a second, third time, smaller each time |
 | **Weight** | 4 frames = ping-pong ball; 24 frames = medicine ball |
 
 ### The Bouncing Ball Checklist
 
 Before you call it done:
 
-- [ ] The ball follows a clean parabolic arc — not a V-shape or angular path
-- [ ] Squash at the moment of impact — the ball widens as it compresses
-- [ ] Stretch on the way down to and up from the floor — the ball elongates
+- [ ] The ball follows a clean parabolic arc, not a V-shape or angular path
+- [ ] Squash at the moment of impact, the ball widens as it compresses
+- [ ] Stretch on the way down to and up from the floor, the ball elongates
 - [ ] Volume remains constant: squashed wide ball and stretched narrow ball are the same "mass"
 - [ ] More frames near the top of each arc (slow-in/slow-out)
 - [ ] Fewer frames at the bottom of each arc (fastest at impact)
 - [ ] Each successive bounce is smaller and faster (energy dissipation)
-- [ ] The final "settle" is convincing — the ball doesn't just stop, it diminishes
+- [ ] The final "settle" is convincing, the ball doesn't just stop, it diminishes
 
 ### Variations to Practice
 
@@ -74,7 +74,7 @@ Each variation is the same exercise with different timing and squash-stretch rat
 
 ## ⚠️ Common Bouncing Ball Mistakes (and Why They Matter)
 
-The bouncing ball is deceptively simple to describe and genuinely difficult to execute with control. Every mistake a student makes on the bouncing ball is a mistake they will also make on a character, a walk cycle, and a performance — just more hidden.
+The bouncing ball is deceptively simple to describe and genuinely difficult to execute with control. Every mistake a student makes on the bouncing ball is a mistake they will also make on a character, a walk cycle, and a performance, just more hidden.
 
 | Common Mistake | What It Reveals | Correction |
 |----------------|-----------------|-----------|
@@ -93,14 +93,14 @@ The bouncing ball is deceptively simple to describe and genuinely difficult to e
 
 ### Why Walk Cycles Are the Animation Industry's Standard Test
 
-Every studio in the world — every recruiter, every hiring animator — uses walk cycles as the primary test of a junior animator's understanding. The walk cycle contains:
+Every studio in the world every recruiter, every hiring animator uses walk cycles as the primary test of a junior animator's understanding. The walk cycle contains:
 
-- **Weight shift** — the character's center of gravity shifts laterally with each step
-- **Contact and passing positions** — the two key poses of a walk
-- **Up and down movement** — the body rises on the passing position, falls on the contact
-- **Arm swing** — opposite arm from leading leg swings forward
-- **Head bob** — subtle up-and-down that communicates weight
-- **Timing** — 12 frames per step (8 fps on 2s) for a typical walk; 8 frames for a snappy walk; 16 frames for a tired/heavy walk
+- **Weight shift**, the character's center of gravity shifts laterally with each step
+- **Contact and passing positions**, the two key poses of a walk
+- **Up and down movement**, the body rises on the passing position, falls on the contact
+- **Arm swing**, opposite arm from leading leg swings forward
+- **Head bob**, subtle up-and-down that communicates weight
+- **Timing**, 12 frames per step (8 fps on 2s) for a typical walk; 8 frames for a snappy walk; 16 frames for a tired/heavy walk
 
 ### The Key Positions of a Walk
 
@@ -137,15 +137,15 @@ UP POSITION (Recoil):
 - [ ] Center of gravity shifts laterally with each step (the body moves side to side slightly)
 - [ ] Body rises on passing position, falls on contact/down
 - [ ] Arm swing is opposite to leg (right arm forward when left leg leads)
-- [ ] Head bob is subtle — not cartoon-exaggerated unless that is the style
-- [ ] The cycle loops seamlessly — the last frame connects to the first without pop
+- [ ] Head bob is subtle, not cartoon-exaggerated unless that is the style
+- [ ] The cycle loops seamlessly, the last frame connects to the first without pop
 - [ ] Timing communicates the character's personality and emotional state
 
 ---
 
 ## 📊 Walk Cycle Style Comparison: Four Studios
 
-Understanding how different studios approach the same technical problem — a character walking — is one of the clearest ways to understand the range of the animator's expressive toolkit.
+Understanding how different studios approach the same technical problem a character walking is one of the clearest ways to understand the range of the animator's expressive toolkit.
 
 | Studio / Style | Walk Cycle Characteristics | Key Influences |
 |----------------|--------------------------|---------------|
@@ -164,7 +164,7 @@ Understanding how different studios approach the same technical problem — a ch
 
 ### The Pantomime Test
 
-The third and most important exercise is a pantomime performance: a character reacts to something — finding an object, receiving surprising news, missing a bus — *without dialogue*. The performance must tell the entire story through movement alone.
+The third and most important exercise is a pantomime performance: a character reacts to something finding an object, receiving surprising news, missing a bus *without dialogue*. The performance must tell the entire story through movement alone.
 
 This exercise tests the full range of skills from all 10 modules:
 - **Drawing/staging**: poses must read clearly
@@ -194,17 +194,17 @@ This exercise tests the full range of skills from all 10 modules:
 
 ## 🎬 Case Study: *Luxo Jr.* (1986) and What Makes a Minimal Character Compelling
 
-Pixar's *Luxo Jr.* — a 2-minute short that premiered at SIGGRAPH 1986 — is the most studied minimal-character animation in history, and for good reason. It features two desk lamps. Neither has a face in the traditional sense: no visible eyes, no mouth, no expressive features. Both are expressed entirely through movement.
+Pixar's *Luxo Jr.* a 2-minute short that premiered at SIGGRAPH 1986 is the most studied minimal-character animation in history, and for good reason. It features two desk lamps. Neither has a face in the traditional sense: no visible eyes, no mouth, no expressive features. Both are expressed entirely through movement.
 
 The short contains:
 - **Squash and stretch:** Luxo Jr. bounces and squashes as it lands from jumps; the lamp shade tilts and flexes
 - **Anticipation:** Before Luxo Jr. jumps, there is a preparatory lean and gathering of the spring base
 - **Follow-through:** After landing, the shade oscillates briefly before settling
 - **Secondary action:** The cord attached to Luxo's base drags with inertia through every move
-- **Timing:** The small lamp's timing is fast and bouncy; the large lamp's timing is slower and more measured — establishing personality through frame count alone
+- **Timing:** The small lamp's timing is fast and bouncy; the large lamp's timing is slower and more measured, establishing personality through frame count alone
 - **Appeal:** Despite having no face, Luxo Jr. generates more emotional response in two minutes than many feature film characters sustain for two hours
 
-The lesson for your first animated short: **you do not need a complex character to make a compelling performance.** The flour sack, the bouncing ball, a desk lamp — these are sufficient vehicles for genuine emotional storytelling if the performance is committed and the timing is honest.
+The lesson for your first animated short: **you do not need a complex character to make a compelling performance.** The flour sack, the bouncing ball, a desk lamp, these are sufficient vehicles for genuine emotional storytelling if the performance is committed and the timing is honest.
 
 🎯 **What the exam tests:** *Luxo Jr.* is frequently cited as evidence that the 12 Principles, not visual complexity, determine whether animation communicates. Know the specific principles it demonstrates and why minimalism can be more powerful than complexity.
 
@@ -218,11 +218,11 @@ Understanding what professional animators and hiring managers actually evaluate 
 
 | Priority | What Evaluators Look For | Why |
 |----------|-------------------------|-----|
-| **1st — Timing** | Does the motion feel real? Does the weight read? | Timing is the hardest skill to fake; it reveals genuine understanding immediately |
-| **2nd — Poses** | Do the key poses read clearly and communicate emotion? | Strong poses show understanding of staging and appeal |
-| **3rd — Arcs** | Do the movements follow arc paths? | Linear motion is the most obvious beginner error |
-| **4th — Polish** | Are the in-betweens smooth? Does secondary action work? | Polish is achievable with iteration; fundamentals are not |
-| **5th — Complexity** | How ambitious is the scene? | A simple scene done perfectly outranks a complex scene done poorly |
+| **1st, Timing** | Does the motion feel real? Does the weight read? | Timing is the hardest skill to fake; it reveals genuine understanding immediately |
+| **2nd, Poses** | Do the key poses read clearly and communicate emotion? | Strong poses show understanding of staging and appeal |
+| **3rd, Arcs** | Do the movements follow arc paths? | Linear motion is the most obvious beginner error |
+| **4th, Polish** | Are the in-betweens smooth? Does secondary action work? | Polish is achievable with iteration; fundamentals are not |
+| **5th, Complexity** | How ambitious is the scene? | A simple scene done perfectly outranks a complex scene done poorly |
 
 **The most common mistake in first-year student work:** Rushing to complexity (complex character, complex scene, complex dialogue) without having solid fundamentals. A bouncing ball with perfect timing and weight is more impressive to a professional evaluator than a full character performance with bad timing.
 
@@ -232,11 +232,11 @@ Understanding what professional animators and hiring managers actually evaluate 
 
 Most animation students' first work fails because they cannot see what is wrong. The self-critique framework gives you a structured way to evaluate your own work.
 
-**Step 1: Watch without sound** — Do the emotions and actions read purely from movement?
-**Step 2: Cover the character and watch the background** — Is the staging clear from the negative space?
-**Step 3: Play at half speed** — Do the in-betweens hold up? Are there pops or slides?
-**Step 4: Show to someone who has not seen it** — What story do they see?
-**Step 5: Wait 48 hours and watch again** — Fresh eyes reveal problems that familiarity hides.
+**Step 1: Watch without sound**, Do the emotions and actions read purely from movement?
+**Step 2: Cover the character and watch the background**, Is the staging clear from the negative space?
+**Step 3: Play at half speed**, Do the in-betweens hold up? Are there pops or slides?
+**Step 4: Show to someone who has not seen it**, What story do they see?
+**Step 5: Wait 48 hours and watch again**, Fresh eyes reveal problems that familiarity hides.
 
 ---
 
@@ -246,13 +246,13 @@ The pantomime exercise (a character reacting to something without dialogue) is t
 
 ### The Reference Gathering Process for a Pantomime Shot
 
-**Step 1 — Act it yourself first.** Before you search for any external reference, act out the scene yourself. Record yourself on your phone. Review the recording. Ask: where does your weight go? What do your hands do? What is the first thing that moves when you receive the news?
+**Step 1, Act it yourself first.** Before you search for any external reference, act out the scene yourself. Record yourself on your phone. Review the recording. Ask: where does your weight go? What do your hands do? What is the first thing that moves when you receive the news?
 
 This step is not optional. Acting the scene yourself gives you immediate access to the emotional truth of the movement. External reference will be filtered through another actor's choices; your own performance is filtered through your understanding of the scene.
 
-**Step 2 — Study professional reference.** Look for reference that matches the specific emotional quality of your scene, not just the physical action. A character receiving devastating news requires different reference from a character receiving surprising news, even if the physical action (reading a letter) is the same. Study actors you admire for this specific emotional state, not just actors doing the same physical thing.
+**Step 2, Study professional reference.** Look for reference that matches the specific emotional quality of your scene, not just the physical action. A character receiving devastating news requires different reference from a character receiving surprising news, even if the physical action (reading a letter) is the same. Study actors you admire for this specific emotional state, not just actors doing the same physical thing.
 
-**Step 3 — Identify the moments, not the movements.** From your reference, identify:
+**Step 3, Identify the moments, not the movements.** From your reference, identify:
 - The moment of realization (where does the character "get it"?)
 - The first physical response (what moves first?)
 - The emotional crescendo (where is the scene's peak?)
@@ -260,7 +260,7 @@ This step is not optional. Acting the scene yourself gives you immediate access 
 
 These four moments are your key poses. Everything between them is in-betweening.
 
-**Step 4 — Put the reference away.** Animate from your understanding of the four key moments, not from frame-by-frame copying of the reference. The reference gave you the emotional truth; the animation choices are yours.
+**Step 4, Put the reference away.** Animate from your understanding of the four key moments, not from frame-by-frame copying of the reference. The reference gave you the emotional truth; the animation choices are yours.
 
 ---
 
@@ -310,11 +310,11 @@ This table collects the most frequently cited mistakes in student animation revi
 
 ## 🔬 The Story in One Sentence: Concept Discipline for Student Shorts
 
-The single most important discipline for a first animated short is being able to describe the entire story in one clear sentence. This is not a marketing discipline — it is a creative discipline.
+The single most important discipline for a first animated short is being able to describe the entire story in one clear sentence. This is not a marketing discipline, it is a creative discipline.
 
 **The one-sentence test:**
 
-If you cannot describe your short film's story in one sentence, you do not have a story yet. You have a premise, or a character idea, or a setting — but not a story with a beginning, middle, and end.
+If you cannot describe your short film's story in one sentence, you do not have a story yet. You have a premise, or a character idea, or a setting, but not a story with a beginning, middle, and end.
 
 **Good one-sentence story descriptions:**
 - "A nervous chef must prepare a perfect dish, but his own imagination keeps sabotaging him."
@@ -324,7 +324,7 @@ If you cannot describe your short film's story in one sentence, you do not have 
 
 **Why this matters for production:**
 
-Every production decision — how many shots, how much time to allocate per shot, which principles to emphasize — follows from the clarity of the story. An animator who knows their story can make every timing and staging choice in service of that story. An animator who is discovering the story during production makes inconsistent choices.
+Every production decision how many shots, how much time to allocate per shot, which principles to emphasize follows from the clarity of the story. An animator who knows their story can make every timing and staging choice in service of that story. An animator who is discovering the story during production makes inconsistent choices.
 
 The one-sentence story also functions as a quality control tool: every shot should contribute something to that story. If you can remove a shot and the story sentence still makes sense, you should probably remove the shot.
 
@@ -351,9 +351,9 @@ Use this checklist as a gate for each phase of production. Do not move to the ne
 - [ ] Secondary action planned; not added as afterthought
 
 ### Post-Production Gate
-- [ ] Watch without sound — story still reads
-- [ ] Watch at half-speed — no pops, slides, or timing errors
-- [ ] Show to someone who has not seen it — they describe the story correctly
+- [ ] Watch without sound, story still reads
+- [ ] Watch at half-speed, no pops, slides, or timing errors
+- [ ] Show to someone who has not seen it, they describe the story correctly
 - [ ] Wait 48 hours; review with fresh eyes
 - [ ] Output codec correct (not H.264 as only copy)
 - [ ] Project files backed up (3-2-1 rule)
@@ -364,30 +364,30 @@ Use this checklist as a gate for each phase of production. Do not move to the ne
 
 You now know:
 
-- ⚽ **The bouncing ball** — what it teaches and how to complete it with full control
-- 🚶 **The walk cycle** — key positions, timing, personality through movement
-- 🎭 **Character with personality** — the pantomime test, production checklist
-- 🔍 **Self-critique framework** — five steps to evaluate your own work honestly
+- ⚽ **The bouncing ball**, what it teaches and how to complete it with full control
+- 🚶 **The walk cycle**, key positions, timing, personality through movement
+- 🎭 **Character with personality**, the pantomime test, production checklist
+- 🔍 **Self-critique framework**, five steps to evaluate your own work honestly
 
 **Next steps:**
 1. 🎥 Watch: [Videos.md](./Videos.md)
 2. ✏️ Quiz: [Quiz.md](./Quiz.md)
 3. 📋 Cheat Sheet: [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. 🎬 **Animate the bouncing ball** — do not skip this, do not rush it, do all five variations
-5. ➡️ [Module 10 — Portfolio & Career](../Module-10-Portfolio-Career/Reading.md)
+4. 🎬 **Animate the bouncing ball**, do not skip this, do not rush it, do all five variations
+5. ➡️ [Module 10, Portfolio & Career](../Module-10-Portfolio-Career/Reading.md)
 
 ---
 
 ## 📚 Further Reading
 
-- 📘 Williams, R. (2001). *The Animator's Survival Kit.* — Chapters on walks and runs.
-- 📘 Goldberg, E. (2008). *Character Animation Crash Course!* — Performance and personality.
-- 🌐 [Animation Mentor](https://www.animationmentor.com) — Industry's leading online animation school; free blog content.
+- 📘 Williams, R. (2001). *The Animator's Survival Kit.*, Chapters on walks and runs.
+- 📘 Goldberg, E. (2008). *Character Animation Crash Course!*, Performance and personality.
+- 🌐 [Animation Mentor](https://www.animationmentor.com), Industry's leading online animation school; free blog content.
 
 **Advanced / Supplementary:**
-- 📘 Goldberg, E. (2008). *Character Animation Crash Course!* Sheridan Books. — Performance and personality; the complement to Williams's technical approach; particularly useful for the pantomime exercise.
-- 📘 Williams, R. (2001). *The Animator's Survival Kit.* Faber & Faber. — Chapters 8–12 on walks and runs are essential; the bouncing ball chapter (Chapter 4) should be read before attempting the exercise.
-- 🎬 *Luxo Jr.* (1986, Pixar) — 2 minutes; the definitive minimal-character appeal exercise; every animator should watch it 10 times.
-- 🎬 *Lifted* (2006, Pixar short) — A master class in comic timing and staging with a minimal character (an alien student attempting to abduct a sleeping human); excellent walk cycle and reaction animation.
-- 🎬 *Presto* (2008, Pixar short) — Squash, stretch, anticipation, and comedy timing; freely available; one of the most technically impressive short films Pixar has produced.
-- 🌐 [11 Second Club](https://www.11secondclub.com) — Monthly competition using 11 seconds of audio; the most widely used community benchmark for measuring animation progress at all levels.
+- 📘 Goldberg, E. (2008). *Character Animation Crash Course!* Sheridan Books., Performance and personality; the complement to Williams's technical approach; particularly useful for the pantomime exercise.
+- 📘 Williams, R. (2001). *The Animator's Survival Kit.* Faber & Faber., Chapters 8–12 on walks and runs are essential; the bouncing ball chapter (Chapter 4) should be read before attempting the exercise.
+- 🎬 *Luxo Jr.* (1986, Pixar), 2 minutes; the definitive minimal-character appeal exercise; every animator should watch it 10 times.
+- 🎬 *Lifted* (2006, Pixar short), A master class in comic timing and staging with a minimal character (an alien student attempting to abduct a sleeping human); excellent walk cycle and reaction animation.
+- 🎬 *Presto* (2008, Pixar short), Squash, stretch, anticipation, and comedy timing; freely available; one of the most technically impressive short films Pixar has produced.
+- 🌐 [11 Second Club](https://www.11secondclub.com), Monthly competition using 11 seconds of audio; the most widely used community benchmark for measuring animation progress at all levels.

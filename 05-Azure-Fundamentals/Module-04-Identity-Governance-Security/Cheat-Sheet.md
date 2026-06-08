@@ -77,9 +77,9 @@ Initiative = bundle of policies.
 
 ## 🧠 Zero Trust (3 Principles)
 
-1. **Verify explicitly** — authn+authz on every request
-2. **Use least-privilege access** — JIT, JEA, risk-based, scoped
-3. **Assume breach** — segment, encrypt e2e, monitor
+1. **Verify explicitly**, authn+authz on every request
+2. **Use least-privilege access**, JIT, JEA, risk-based, scoped
+3. **Assume breach**, segment, encrypt e2e, monitor
 
 ---
 
@@ -95,7 +95,7 @@ Physical → Identity → Perimeter → Network → Compute → App → Data
 
 - Key:value labels (`Environment:prod`, `CostCenter:1234`)
 - For organization + cost reporting
-- ⚠️ Don't inherit by default — use Policy to enforce
+- ⚠️ Don't inherit by default, use Policy to enforce
 
 ---
 
@@ -111,9 +111,9 @@ Physical → Identity → Perimeter → Network → Compute → App → Data
 - ✅ "Private Endpoint" to remove public access from PaaS
 
 **Usually WRONG:**
-- ✅ "Contributor can grant access" — NO
-- ❌ "RBAC restricts what resources can exist" — that's Policy
-- ❌ "Defender for Cloud is the SIEM" — that's Sentinel
+- ✅ "Contributor can grant access", NO
+- ❌ "RBAC restricts what resources can exist", that's Policy
+- ❌ "Defender for Cloud is the SIEM", that's Sentinel
 - ❌ "Tags inherit automatically"
 - ❌ "Locks can be ignored by Owners"
 
@@ -134,7 +134,7 @@ Physical → Identity → Perimeter → Network → Compute → App → Data
 Cover the answers and recite:
 
 1. New name for Azure AD? ___
-2. RBAC vs Policy vs Lock — one-liner each? ___
+2. RBAC vs Policy vs Lock, one-liner each? ___
 3. 4 fundamental RBAC roles + key difference? ___
 4. Defender for Cloud vs Sentinel? ___
 5. 3 Zero Trust principles? ___

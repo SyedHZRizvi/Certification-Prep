@@ -8,7 +8,7 @@
 
 ### Q1. To train a 70-billion-parameter LLM whose weights do NOT fit on one GPU, the appropriate AWS approach is: *(Apply)*
 A. SMDDP (data parallel)
-B. SMMP (model parallel) — tensor + pipeline + sharded-data parallel
+B. SMMP (model parallel), tensor + pipeline + sharded-data parallel
 C. SageMaker Canvas
 D. Lambda
 
@@ -22,7 +22,7 @@ D. T3 CPU instances
 
 ---
 
-### Q3. Multi-node DL training scales poorly past 4 nodes — gradient all-reduce is the bottleneck. The MOST likely fix is: *(Analyze)*
+### Q3. Multi-node DL training scales poorly past 4 nodes, gradient all-reduce is the bottleneck. The MOST likely fix is: *(Analyze)*
 A. Use cheaper instances
 B. Enable EFA (Elastic Fabric Adapter) networking
 C. Increase batch size to 1
@@ -72,7 +72,7 @@ D. CloudWatch Logs Insights
 
 ### Q9. The team observes that GPU utilisation is only 30% during a DL training job. The MOST likely cause is: *(Analyze)*
 A. Network bandwidth oversupply
-B. Data loader / I/O bottleneck — GPU is starved
+B. Data loader / I/O bottleneck, GPU is starved
 C. Too much memory
 D. Not enough storage
 
@@ -216,7 +216,7 @@ Sub-millisecond file access for billions of small files; S3 lazy-load avoids upf
 Script mode = AWS-managed framework container + your `train.py`.
 
 ### Q6: **B. ~2× speedup and ~50% memory on Tensor Cores**
-Modern mixed precision uses FP16/BF16 ops with FP32 master copies — minimal accuracy loss on most workloads.
+Modern mixed precision uses FP16/BF16 ops with FP32 master copies, minimal accuracy loss on most workloads.
 
 ### Q7: **B. Model fits on one GPU; more throughput via more nodes**
 SMDDP replicates the model and shards data. SMMP is when the model itself doesn't fit.
@@ -258,10 +258,10 @@ Spot training cuts up to 90%. Checkpointing handles interruptions.
 The standard transformer training-stability move. (Higher LR or no AMP would worsen instability.)
 
 ### Q20: **B. AdamW**
-Adam with decoupled weight decay — default in nearly every modern LLM training script.
+Adam with decoupled weight decay, default in nearly every modern LLM training script.
 
 ### Q21: **C. Sharded state across data-parallel workers**
-ZeRO / FSDP shards optimiser state, gradients, and parameters so each worker only holds its slice — enabling much larger models than pure data parallel.
+ZeRO / FSDP shards optimiser state, gradients, and parameters so each worker only holds its slice, enabling much larger models than pure data parallel.
 
 ### Q22: **B. SageMaker Profiler**
 Profiler is the per-step performance monitor; Model Monitor is for production drift.

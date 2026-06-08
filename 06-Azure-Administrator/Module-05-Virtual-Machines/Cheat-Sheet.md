@@ -130,7 +130,7 @@ Often **wrong**:
 2. Premium SSD v2 vs Premium SSD difference? ___
 3. Max FDs and UDs in an AS? ___
 4. Spot eviction notice? ___
-5. ADE vs host encryption — what's encrypted where? ___
+5. ADE vs host encryption, what's encrypted where? ___
 
 ---
 

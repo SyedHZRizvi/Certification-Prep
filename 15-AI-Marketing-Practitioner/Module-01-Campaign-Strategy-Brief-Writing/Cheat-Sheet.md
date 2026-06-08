@@ -13,7 +13,7 @@ WHY   →  The insight. Not a feature.
 WHERE →  The channels. Not "all of them."
 HOW   →  KPIs with NUMBERS.
 ```
-🧠 Memory hook: **"Who What Why Where How"** — say it aloud before every brief.
+🧠 Memory hook: **"Who What Why Where How"**, say it aloud before every brief.
 
 ---
 
@@ -50,9 +50,9 @@ BOTTOM →  CPA, Conversion Rate, ROAS, Cost/Lead
 
 ## 🧪 The 3 ICP Validation Tests
 
-1. **20-Conversation Test** — 17/20 say "I'd have paid for that"
-2. **Search Volume Test** — top 10 keywords must total > 1,000/month
-3. **Look-Alike Affordability Test** — Meta 1% lookalike > 100K in geo
+1. **20-Conversation Test**, 17/20 say "I'd have paid for that"
+2. **Search Volume Test**, top 10 keywords must total > 1,000/month
+3. **Look-Alike Affordability Test**, Meta 1% lookalike > 100K in geo
 
 If any test fails → re-segment or change channels.
 
@@ -61,10 +61,10 @@ If any test fails → re-segment or change channels.
 ## 🤖 The 4-Layer AI Briefing Prompt
 
 ```
-LAYER 1: CONTEXT  — Set the role ("senior brand strategist...")
-LAYER 2: INPUTS   — Real data (brand, product, ICP, budget, history)
-LAYER 3: TASK     — The brief template to fill
-LAYER 4: VALIDATION — "List 3 assumptions I should verify"
+LAYER 1: CONTEXT , Set the role ("senior brand strategist...")
+LAYER 2: INPUTS  , Real data (brand, product, ICP, budget, history)
+LAYER 3: TASK    , The brief template to fill
+LAYER 4: VALIDATION, "List 3 assumptions I should verify"
 ```
 
 🧠 Layer 4 is what separates a usable AI brief from fluff.
@@ -73,12 +73,12 @@ LAYER 4: VALIDATION — "List 3 assumptions I should verify"
 
 ## ⚠️ Anti-Patterns To Recognize
 
-- ❌ **Multi-audience brief** — "millennials AND Gen Z AND boomers"
-- ❌ **KPI-free brief** — "drive awareness and engagement"
-- ❌ **Channel-first brief** — "let's do TikTok because TikTok is hot"
-- ❌ **Feature-list brief** — "highlight our 17 features"
-- ❌ **Inspiration-by-imitation** — "make it look like Liquid Death"
-- ❌ **Eternal brief** — no end date, no campaign focus
+- ❌ **Multi-audience brief**, "millennials AND Gen Z AND boomers"
+- ❌ **KPI-free brief**, "drive awareness and engagement"
+- ❌ **Channel-first brief**, "let's do TikTok because TikTok is hot"
+- ❌ **Feature-list brief**, "highlight our 17 features"
+- ❌ **Inspiration-by-imitation**, "make it look like Liquid Death"
+- ❌ **Eternal brief**, no end date, no campaign focus
 
 ---
 

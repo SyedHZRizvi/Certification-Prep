@@ -144,7 +144,7 @@ D. Hedging strategies
 
 ### Q18. A scenario: an engineer specifies aerospace-grade aluminum for an indoor parts bin. The BEST cost-management lever is: *(Apply)*
 A. Reverse auction
-B. Value analysis / engineering — challenge the spec; standard-grade material likely meets function at lower cost
+B. Value analysis / engineering, challenge the spec; standard-grade material likely meets function at lower cost
 C. Hedge aluminum
 D. Switch to single source
 
@@ -169,7 +169,7 @@ D. Payback period
 ### Q21. The MOST appropriate hedging stance for a procurement organization is: *(Evaluate)*
 A. Speculative betting on commodity moves
 B. Hedge known exposures, match horizon, document policy, execute with Treasury
-C. Hedge nothing — let the market decide
+C. Hedge nothing, let the market decide
 D. Hedge 100% always
 
 ---
@@ -228,12 +228,12 @@ D. $40.96
 ### Q10: **B.** Hedging = risk management, not speculation.
 ### Q11: **A.** 2% discount if paid within 10 days, else net 30.
 ### Q12: **D.** 2% × (365/20) ≈ 36.5% annualized.
-### Q13: **B.** Should-cost / VA-VE / innovation — strategic levers.
-### Q14: **B.** Savings vs avoidance — report distinctly.
+### Q13: **B.** Should-cost / VA-VE / innovation, strategic levers.
+### Q14: **B.** Savings vs avoidance, report distinctly.
 ### Q15: **B.** Indexed pricing balances risk; fixed for 5 years on volatile commodity is dangerous to both sides.
 ### Q16: **B.** Positive NPV = discounted inflows exceed investment.
 ### Q17: **B.** VA = production. VE = design.
-### Q18: **B.** VA/VE — challenge over-specification.
+### Q18: **B.** VA/VE, challenge over-specification.
 ### Q19: **B.** Vendor A: $35K + $11K fuel = $46K. Vendor B: $30K + $19K fuel = $49K. A wins on TCO even before maintenance & disposal.
 ### Q20: **A.** ROI = (Gain - Cost) / Cost × 100%.
 ### Q21: **B.** Hedge known exposures, match horizon, document, Treasury executes.

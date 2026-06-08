@@ -16,9 +16,9 @@
 
 Maya needs a customer-support bot. Users will ask three kinds of things:
 
-1. **FAQ** — "How do I reset my password?" → answer from a knowledge base
-2. **Commands** — "Schedule a meeting for tomorrow at 3pm" → parse intent + entities
-3. **Small talk** — "Hello", "Thanks" → polite chitchat
+1. **FAQ**, "How do I reset my password?" → answer from a knowledge base
+2. **Commands**, "Schedule a meeting for tomorrow at 3pm" → parse intent + entities
+3. **Small talk**, "Hello", "Thanks" → polite chitchat
 
 She uses **Question Answering** for #1, **CLU** for #2, and **Question Answering's chitchat add-on** for #3. To choose between #1, #2, #3 at runtime, she uses an **Orchestration workflow**. The bot itself lives in **Azure AI Bot Service** and integrates with Teams, Slack, and the web via channels.
 
@@ -26,23 +26,23 @@ That's the whole module in one paragraph. Now let's go deeper.
 
 ---
 
-## 🤖 Azure AI Bot Service — The Hosting Layer
+## 🤖 Azure AI Bot Service, The Hosting Layer
 
 Bot Service is Azure's managed hosting for bots built with the **Bot Framework SDK**. It handles:
 
-- **Compute** — runs your bot on Azure App Service / Functions
-- **Identity** — provisions the bot's Azure AD app registration
-- **Channels** — Web Chat, Teams, Slack, Telegram, Direct Line, etc.
-- **Authentication** — Azure AD, OAuth providers for users
-- **State** — turn state, conversation state, user state (in storage of your choice)
+- **Compute**, runs your bot on Azure App Service / Functions
+- **Identity**, provisions the bot's Azure AD app registration
+- **Channels**, Web Chat, Teams, Slack, Telegram, Direct Line, etc.
+- **Authentication**, Azure AD, OAuth providers for users
+- **State**, turn state, conversation state, user state (in storage of your choice)
 
 You author bots with one of:
 
-- **Bot Framework SDK** (C#, JavaScript/TypeScript, Python, Java) — code-first
-- **Power Virtual Agents / Copilot Studio** — low-code (less common on AI-102)
-- **Bot Framework Composer** — visual editor on top of the SDK (deprecated for new work — Microsoft now points to Copilot Studio + Foundry)
+- **Bot Framework SDK** (C#, JavaScript/TypeScript, Python, Java), code-first
+- **Power Virtual Agents / Copilot Studio**, low-code (less common on AI-102)
+- **Bot Framework Composer** visual editor on top of the SDK (deprecated for new work Microsoft now points to Copilot Studio + Foundry)
 
-### Channels — the Bot Service magic
+### Channels, the Bot Service magic
 
 You write a bot ONCE. The bot exposes a single endpoint that speaks the **Bot Framework Activity protocol**. Bot Service then converts incoming/outgoing messages to/from the channel's format.
 
@@ -61,7 +61,7 @@ You write a bot ONCE. The bot exposes a single endpoint that speaks the **Bot Fr
 
 ---
 
-## 🧱 Bot Framework SDK — Core Concepts
+## 🧱 Bot Framework SDK, Core Concepts
 
 A Bot Framework bot is a **REST endpoint** that receives `Activity` messages and replies asynchronously.
 
@@ -102,7 +102,7 @@ This bot is hosted behind an `aiohttp` / `Flask` endpoint that the Bot Service p
 ```python
 from botbuilder.core import ConversationState, UserState, MemoryStorage
 
-storage = MemoryStorage()    # in-memory (dev only) — use Cosmos / Blob in prod
+storage = MemoryStorage()    # in-memory (dev only), use Cosmos / Blob in prod
 conversation_state = ConversationState(storage)
 user_state = UserState(storage)
 ```
@@ -111,9 +111,9 @@ In production, swap to `CosmosDbPartitionedStorage` or `BlobStorage`.
 
 ---
 
-## 🎯 CLU — Conversational Language Understanding
+## 🎯 CLU, Conversational Language Understanding
 
-(You met CLU in Module 4 — here's the bot-side view.)
+(You met CLU in Module 4, here's the bot-side view.)
 
 CLU returns the top **intent** and any **entities** for an utterance. Your bot uses the intent to choose a dialog, and the entities to fill slots.
 
@@ -130,14 +130,14 @@ CLU output:
 
 ### Training data essentials
 
-- **Utterances** — example sentences per intent (≥15 per intent is the rule of thumb)
-- **Entities** — labeled spans within utterances
+- **Utterances**, example sentences per intent (≥15 per intent is the rule of thumb)
+- **Entities**, labeled spans within utterances
 - **Entity types**:
 
-  - **Learned** — model figures it out from labels
-  - **List** — closed set ("small", "medium", "large")
-  - **Prebuilt** — Microsoft entity (datetime, money, percentage, etc.)
-  - **Regex** — pattern-based (order IDs, ticket codes)
+  - **Learned**, model figures it out from labels
+  - **List**, closed set ("small", "medium", "large")
+  - **Prebuilt**, Microsoft entity (datetime, money, percentage, etc.)
+  - **Regex**, pattern-based (order IDs, ticket codes)
 
 ### Deployment
 
@@ -156,7 +156,7 @@ POST /language/:analyze-conversations?api-version=2023-04-01
 
 ## ❓ Question Answering
 
-(Also from Module 4 — here's the deployment view.)
+(Also from Module 4, here's the deployment view.)
 
 You build a **knowledge base (KB)** from sources:
 
@@ -167,7 +167,7 @@ You build a **knowledge base (KB)** from sources:
 
 **Multi-turn prompts** let an answer offer follow-up choices ("Did you mean A or B?").
 
-**Active learning** lets the service suggest new Q variants based on real user queries — you accept/reject them in Language Studio.
+**Active learning** lets the service suggest new Q variants based on real user queries, you accept/reject them in Language Studio.
 
 ### Deployment
 
@@ -205,7 +205,7 @@ User utterance → Orchestrator → top child project → that project handles t
 
 ---
 
-## 🎙️ Voice Channel — Direct Line Speech
+## 🎙️ Voice Channel, Direct Line Speech
 
 You can wire your text bot to voice by connecting:
 
@@ -252,7 +252,7 @@ Use this to:
 
 ## 📚 Adaptive Cards
 
-For rich responses (buttons, forms, images), use **Adaptive Cards** — JSON-defined UI that channels render in their native style. The same card looks native in Teams, Web Chat, and Slack.
+For rich responses (buttons, forms, images), use **Adaptive Cards**, JSON-defined UI that channels render in their native style. The same card looks native in Teams, Web Chat, and Slack.
 
 ```json
 {
@@ -289,7 +289,7 @@ For AI-102, you still need to know **Bot Service + Bot Framework + CLU + QA + Or
 | Misconception | Reality |
 |---|---|
 | "QA Maker still works" | Migrated to Question Answering in Azure AI Language |
-| "LUIS still works for new projects" | LUIS authoring is retired — use CLU |
+| "LUIS still works for new projects" | LUIS authoring is retired, use CLU |
 | "Bot Service IS the bot" | Bot Service hosts/connects; the bot logic is the Bot Framework SDK app you deploy |
 | "Adaptive Cards only work in Teams" | They work across multiple channels |
 | "Orchestration is a Bot Framework concept" | It's an Azure AI Language project type |
@@ -300,11 +300,11 @@ For AI-102, you still need to know **Bot Service + Bot Framework + CLU + QA + Or
 ## 🚨 Exam Traps
 
 1. **Orchestration ≠ Bot Framework dialog routing.** Orchestration is an Azure AI Language project that picks between CLU and QA child projects.
-2. **CLU + QA together** is the canonical pattern for mixed bots — Orchestration in front.
+2. **CLU + QA together** is the canonical pattern for mixed bots, Orchestration in front.
 3. **Direct Line Speech** is the channel for voice; **Direct Line** is for custom apps.
 4. **Adaptive Cards** are channel-portable; they render natively wherever supported.
 5. **Active Learning** is a Question Answering feature, not a CLU feature.
-6. **Bot Framework Composer** is on the decline — Copilot Studio + Foundry is the future direction, but Composer can still appear in exam questions for now.
+6. **Bot Framework Composer** is on the decline, Copilot Studio + Foundry is the future direction, but Composer can still appear in exam questions for now.
 
 ---
 
@@ -332,23 +332,23 @@ For AI-102, you still need to know **Bot Service + Bot Framework + CLU + QA + Or
 
 ---
 
-## 📖 Case Study — Microsoft Security Copilot (2023–2024)
+## 📖 Case Study, Microsoft Security Copilot (2023–2024)
 
-**Situation.** Cyber-defenders face an information-asymmetry problem: attackers can move faster than humans can read signals. Microsoft Security Copilot — announced March 2023, GA April 2024 — combined Azure OpenAI (GPT-4 then GPT-4o) with Microsoft Defender's telemetry, Sentinel's SIEM, Intune, Entra, and Purview data, plus a *conversational* surface targeted at security analysts (Microsoft Security blog, March 28, 2023, and April 1, 2024 GA announcement; verified against Microsoft Mechanics 2024 and the Security Copilot documentation page, 2026-05).
+**Situation.** Cyber-defenders face an information-asymmetry problem: attackers can move faster than humans can read signals. Microsoft Security Copilot announced March 2023, GA April 2024 combined Azure OpenAI (GPT-4 then GPT-4o) with Microsoft Defender's telemetry, Sentinel's SIEM, Intune, Entra, and Purview data, plus a *conversational* surface targeted at security analysts (Microsoft Security blog, March 28, 2023, and April 1, 2024 GA announcement; verified against Microsoft Mechanics 2024 and the Security Copilot documentation page, 2026-05).
 
-**Decision.** Security Copilot is *not* built on Azure AI Bot Service in the way a classic CLU+QA bot would be — but Microsoft openly described it at Ignite 2023 and 2024 as architected with the same principles this module teaches:
+**Decision.** Security Copilot is *not* built on Azure AI Bot Service in the way a classic CLU+QA bot would be, but Microsoft openly described it at Ignite 2023 and 2024 as architected with the same principles this module teaches:
 
 - A **conversational front-end** with multi-turn dialog and structured prompt templates (analogous to a Bot Framework `Activity` + `TurnContext` model).
-- **Plugins** that map to specialized data sources (Defender, Sentinel, Entra, threat intelligence) — analogous to **Orchestration Workflow** routing across CLU + Question Answering + custom skills, but at much larger scale.
+- **Plugins** that map to specialized data sources (Defender, Sentinel, Entra, threat intelligence), analogous to **Orchestration Workflow** routing across CLU + Question Answering + custom skills, but at much larger scale.
 - **Adaptive Cards-style** rich responses (timelines, IOCs, host details) that render natively in the Security Copilot UI.
-- **Managed identity** + RBAC for every plugin call — the analyst's identity is what authorizes Defender / Sentinel queries.
-- **Persistent threads** (called "investigations") that carry state — analogous to a Bot Framework `ConversationState` stored in Cosmos / Blob, but built atop Azure OpenAI's Assistants/Threads primitives.
+- **Managed identity** + RBAC for every plugin call, the analyst's identity is what authorizes Defender / Sentinel queries.
+- **Persistent threads** (called "investigations") that carry state, analogous to a Bot Framework `ConversationState` stored in Cosmos / Blob, but built atop Azure OpenAI's Assistants/Threads primitives.
 
 Critically, the Responsible AI overlay from Module 2 was non-negotiable: every Security Copilot response carries citation provenance (which Defender alert or Sentinel rule grounded the answer), Prompt Shields are on, Groundedness Detection runs continuously, and analysts can flag-and-redact a turn for incident review.
 
-**Outcome.** By H2 2024, Microsoft published case studies (referenced at Ignite 2024) showing measurable reductions in mean-time-to-respond (MTTR) for security incidents at large Defender customers. Security Copilot is now Microsoft's flagship example of "GenAI + Bot-style conversational layer + retrieval over enterprise data" — exactly the pattern Module 8 will deepen.
+**Outcome.** By H2 2024, Microsoft published case studies (referenced at Ignite 2024) showing measurable reductions in mean-time-to-respond (MTTR) for security incidents at large Defender customers. Security Copilot is now Microsoft's flagship example of "GenAI + Bot-style conversational layer + retrieval over enterprise data", exactly the pattern Module 8 will deepen.
 
-**Lesson for the exam / for practitioners.** Even when you're not literally using Azure AI Bot Service, the conceptual stack this module teaches — turn/activity/dialog, intent + entity, knowledge base, orchestration router, managed identity, channels — is what production conversational AI looks like in 2026. The exam tests these primitives because Microsoft *builds* with them.
+**Lesson for the exam / for practitioners.** Even when you're not literally using Azure AI Bot Service, the conceptual stack this module teaches turn/activity/dialog, intent + entity, knowledge base, orchestration router, managed identity, channels is what production conversational AI looks like in 2026. The exam tests these primitives because Microsoft *builds* with them.
 
 **Discussion (Socratic).**
 - Q1: Security Copilot was built using Azure OpenAI's Assistants/Threads primitives rather than Bot Framework Composer. Argue both sides at a Cornell systems-engineering review: when does a team graduate *out* of Bot Framework and *into* Foundry Agent Service / Assistants API? What's the principled trigger?
@@ -357,11 +357,11 @@ Critically, the Responsible AI overlay from Module 2 was non-negotiable: every S
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Bot Framework Composer's decline.** Composer is being de-emphasized in favor of Copilot Studio + Foundry. Argue both sides of the "should I learn Composer for the exam?" question. What does this teach you about studying for fast-moving certs in general?
 2. **CLU + QA + Orchestration vs LLM-with-tools.** A startup PM wants to skip CLU entirely and feed every utterance into GPT-4o with a tool list. Build the strongest argument for that approach (one model, less to maintain), AND for the canonical stack (cheaper per call, deterministic intent routing, observable telemetry). At what conversation volume does each architecture decisively beat the other?
-3. **State storage philosophy.** MemoryStorage is dev-only; Cosmos and Blob are production options. Build the case for *neither* — a stateless bot that re-reads context from a search index every turn. When is that the right call?
+3. **State storage philosophy.** MemoryStorage is dev-only; Cosmos and Blob are production options. Build the case for *neither*, a stateless bot that re-reads context from a search index every turn. When is that the right call?
 4. **Adaptive Cards portability.** Adaptive Cards render natively in Teams, Web Chat, Slack, and Outlook. Argue the position that they're under-rated; counter-argue that they're a leaky abstraction that always requires per-channel tweaks. Where does the line fall in practice?
 5. **Active Learning in Question Answering.** QA's Active Learning suggests question variants from real traffic. From a Responsible AI standpoint, what governance must surround the human approver who accepts these suggestions? What's the failure mode if no governance is set?
 
@@ -401,12 +401,12 @@ You now know:
 - **Microsoft Security blog (March 28, 2023).** *"Introducing Microsoft Security Copilot."*
 - **Microsoft Security blog (April 1, 2024).** *"Microsoft Security Copilot is now generally available."*
 - **Microsoft Mechanics (2024).** *"Security Copilot deep dive: plugins, prompts, and provenance."*
-- **Vaswani et al. (2017).** *Attention Is All You Need.* — transformer foundation underlying Security Copilot's GPT layer.
-- **Brown et al. (2020).** GPT-3 paper — the few-shot prompting lineage relevant to Copilot's structured prompt templates.
-- **Microsoft Responsible AI Standard v2** (June 2022) — drove the citation-provenance and Prompt Shields posture.
-- **Microsoft Bot Framework SDK** documentation (Microsoft Learn, verified 2026-05) — for the Bot Framework primitives.
+- **Vaswani et al. (2017).** *Attention Is All You Need.*, transformer foundation underlying Security Copilot's GPT layer.
+- **Brown et al. (2020).** GPT-3 paper, the few-shot prompting lineage relevant to Copilot's structured prompt templates.
+- **Microsoft Responsible AI Standard v2** (June 2022), drove the citation-provenance and Prompt Shields posture.
+- **Microsoft Bot Framework SDK** documentation (Microsoft Learn, verified 2026-05), for the Bot Framework primitives.
 - **Adaptive Cards 1.5** specification (adaptivecards.io).
-- **NIST AI RMF 1.0** (January 2023) — the framework Security Copilot's risk posture maps to for federal customers.
+- **NIST AI RMF 1.0** (January 2023), the framework Security Copilot's risk posture maps to for federal customers.
 
 ---
 

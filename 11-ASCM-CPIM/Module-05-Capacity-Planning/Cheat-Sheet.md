@@ -53,13 +53,13 @@ Util 0.85, Eff 0.90 → Rated = **244.8 hr**.
 
 ---
 
-## 🏁 Theory of Constraints — 5 Focusing Steps
+## 🏁 Theory of Constraints, 5 Focusing Steps
 
 1. **IDENTIFY** the constraint
 2. **EXPLOIT** the constraint (every minute counts)
 3. **SUBORDINATE** everything else
 4. **ELEVATE** the constraint (add capacity)
-5. **REPEAT** — new constraint emerges
+5. **REPEAT**, new constraint emerges
 
 🧠 **I-E-S-E-R**
 
@@ -131,7 +131,7 @@ When you see these, often **wrong**:
 1. 4 capacity layers and their planning layer? ___
 2. Rated cap formula? ___
 3. 5 Focusing Steps in order? ___
-4. Drum-Buffer-Rope — meanings? ___
+4. Drum-Buffer-Rope, meanings? ___
 5. TOC throughput definition? ___
 
 ---

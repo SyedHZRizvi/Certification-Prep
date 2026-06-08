@@ -128,7 +128,7 @@ D. A model
 
 ### Q16. The "model gateway" pattern's PRIMARY benefit: *(Understand)*
 A. Performance
-B. Abstraction over providers — switch/failover/cache/observe/limit without changing app code
+B. Abstraction over providers, switch/failover/cache/observe/limit without changing app code
 C. None
 D. Faster training
 
@@ -229,7 +229,7 @@ Anthropic charges 0.1-0.25× for cached reads, 1.25× for cache writes. Net savi
 Standard semantic-cache logic. Threshold typically ≥ 0.97 to avoid false positives.
 
 ### Q5: **B. Combined techniques**
-The Cursor moat — no single trick, the combination.
+The Cursor moat, no single trick, the combination.
 
 ### Q6: **B. Draft model + parallel verify**
 Verify K draft tokens in one big-model step. If accepted, K tokens for the cost of 1.
@@ -321,4 +321,4 @@ The other answers omit one or more essentials.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 10 — Production Case Studies](../Module-10-Production-Case-Studies/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 10, Production Case Studies](../Module-10-Production-Case-Studies/Reading.md)

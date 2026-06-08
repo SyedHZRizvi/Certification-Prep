@@ -10,7 +10,7 @@
 |---|---|
 | **Perimeter** | Fences, bollards, guards, lighting |
 | **Building** | Badge readers, **mantrap / access control vestibule**, CCTV, visitor log |
-| **Server room** | Caged racks, motion sensors, fire suppression (FM-200/Novec — NOT water) |
+| **Server room** | Caged racks, motion sensors, fire suppression (FM-200/Novec, NOT water) |
 | **Component** | Tamper seals, chassis intrusion sensors, Kensington locks |
 
 🚨 Wet-pipe sprinkler in server room = anti-pattern.
@@ -47,11 +47,11 @@
 
 - **One service account per service**
 - **Least privilege**
-- **gMSA** (Windows) — auto-rotated passwords
-- **LAPS** — unique per-machine local admin passwords
-- **Credential Guard** — LSA isolation vs Mimikatz
+- **gMSA** (Windows), auto-rotated passwords
+- **LAPS**, unique per-machine local admin passwords
+- **Credential Guard**, LSA isolation vs Mimikatz
 - **Tiered Admin** (Tier 0 / 1 / 2)
-- **PAM + JIT** — time-boxed elevation with MFA
+- **PAM + JIT**, time-boxed elevation with MFA
 - **MFA** for admin + remote access
 
 ---
@@ -158,9 +158,9 @@ Cover the answers and recite:
 
 1. Mantrap purpose? ___
 2. Why pair UEFI pw with Secure Boot? ___
-3. RBAC vs DAC — one-liner each? ___
+3. RBAC vs DAC, one-liner each? ___
 4. What is JIT in PAM and why? ___
-5. CISA KEV — what is it? ___
+5. CISA KEV, what is it? ___
 6. Two Windows + two Linux hardening best practices? ___
 
 If you can answer all 6 in under 60 seconds, you own this module. ✅

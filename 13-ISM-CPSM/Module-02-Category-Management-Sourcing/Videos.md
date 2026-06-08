@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RFI vs RFP vs RFQ — Which When?</p>
+      <p class="vg-title">RFI vs RFP vs RFQ, Which When?</p>
       <p class="vg-creator">Procurement Tactics</p>
       <span class="vg-duration">⏱ 8 min · Decision tree</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Reverse Auctions — When They Work</p>
+      <p class="vg-title">Reverse Auctions, When They Work</p>
       <p class="vg-creator">ProcureCon</p>
       <span class="vg-duration">⏱ 10 min · Pitfalls and wins</span>
     </div>

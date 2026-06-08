@@ -75,7 +75,7 @@
 | **VPC-SC** | Data exfiltration outside the perimeter | Regulated, sensitive |
 | **CMEK** | Inability to control your own keys | Regulator-mandated key control |
 
-🎯 *CMEK and VPC-SC are NOT substitutes — they protect different layers. Use both for HIPAA.*
+🎯 *CMEK and VPC-SC are NOT substitutes, they protect different layers. Use both for HIPAA.*
 
 ---
 
@@ -150,7 +150,7 @@ Model Monitoring (skew / drift / drift detection + alert)
 
 - "Vertex AI is one API" (it's an umbrella)
 - "Search and Vector Search are the same"
-- "API keys work on Vertex AI" (they don't — use IAM)
+- "API keys work on Vertex AI" (they don't, use IAM)
 - "VPC-SC encrypts at rest" (CMEK does that)
 - "Workbench is just hosted Jupyter" (it's IAM/VPC-SC integrated)
 

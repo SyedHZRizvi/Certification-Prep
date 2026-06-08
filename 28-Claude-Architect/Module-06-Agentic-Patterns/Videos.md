@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Agentic Patterns with Claude
 
-> **How to use:** Read Anthropic's "Building Effective Agents" essay BEFORE this video block — many of these videos are walkthroughs of that essay. Then build a small agent loop alongside the videos.
+> **How to use:** Read Anthropic's "Building Effective Agents" essay BEFORE this video block, many of these videos are walkthroughs of that essay. Then build a small agent loop alongside the videos.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Building Effective Agents — Anthropic Talk</p>
+      <p class="vg-title">Building Effective Agents, Anthropic Talk</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 25 min · The canonical reference</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Evals — Your AI Product Needs Them</p>
+      <p class="vg-title">Evals, Your AI Product Needs Them</p>
       <p class="vg-creator">Hamel Husain</p>
       <span class="vg-duration">⏱ 25 min · Must watch</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Claude Agent SDK — Overview</p>
+      <p class="vg-title">Claude Agent SDK, Overview</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 15 min · Reference implementation</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Cursor Composer — Architecture Deep Dive</p>
+      <p class="vg-title">Cursor Composer, Architecture Deep Dive</p>
       <p class="vg-creator">Cursor team</p>
       <span class="vg-duration">⏱ 25 min · Orchestrator-workers in production</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Replit Agent — Architecture Walkthrough</p>
+      <p class="vg-title">Replit Agent, Architecture Walkthrough</p>
       <p class="vg-creator">Replit team</p>
       <span class="vg-duration">⏱ 20 min · Confirmation gates story</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">LLM-as-Judge — Rubrics and Patterns</p>
+      <p class="vg-title">LLM-as-Judge, Rubrics and Patterns</p>
       <p class="vg-creator">community / Anthropic</p>
       <span class="vg-duration">⏱ 15 min · How to score outputs</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Extended Thinking — Claude 4 Reasoning</p>
+      <p class="vg-title">Extended Thinking, Claude 4 Reasoning</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 12 min · Deep reasoning mode</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Langfuse — Agent Tracing & Observability</p>
+      <p class="vg-title">Langfuse, Agent Tracing & Observability</p>
       <p class="vg-creator">Langfuse</p>
       <span class="vg-duration">⏱ 20 min · Trace replay</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">LangChain vs Raw SDK — The Debate</p>
+      <p class="vg-title">LangChain vs Raw SDK, The Debate</p>
       <p class="vg-creator">community / AI Engineer</p>
       <span class="vg-duration">⏱ 25 min · When to use frameworks</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Hierarchical Agents — Orchestrator Patterns</p>
+      <p class="vg-title">Hierarchical Agents, Orchestrator Patterns</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 20 min · Sub-agent delegation</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Lindy — Production Agent Architecture</p>
+      <p class="vg-title">Lindy, Production Agent Architecture</p>
       <p class="vg-creator">Lindy team</p>
       <span class="vg-duration">⏱ 25 min · Enterprise agents</span>
     </div>
@@ -167,7 +167,7 @@ Answer these in your notebook (without re-watching):
 1. Five canonical workflow patterns from "Building Effective Agents"?
 2. The 6 hard parts of an agent loop (beyond the loop itself)?
 3. When does evaluator-optimizer beat single-call generation?
-4. LLM-as-judge — give a rubric for evaluating a customer-support response.
-5. The "Replit lesson" — what changed when they added confirmation gates?
+4. LLM-as-judge, give a rubric for evaluating a customer-support response.
+5. The "Replit lesson", what changed when they added confirmation gates?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watch Building Effective Agents.

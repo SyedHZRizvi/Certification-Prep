@@ -19,17 +19,17 @@ At 11:14 p.m. on a Thursday the cleaning company sends a substitute. The substit
 
 The story has a different ending in a world where Maya did the things in this module:
 
-- **Mantrap / access control vestibule** (or at least a biometric door and badge reader) on the server room — cleaner doesn't even reach the rack
-- **Locked rack with caged bays** — drives don't come out with a screwdriver
-- **Secure Boot + BIOS password + Self-Encrypting Drives (SED) with BitLocker** — even if the drives are stolen, the data is unreadable
-- **24×7 motion sensors + intrusion alarm** integrated with the BMS — the cleaner is logged before he reaches the rack
-- **Vendor management on the cleaning contract** — background checks, named individuals, badge issued
+- **Mantrap / access control vestibule** (or at least a biometric door and badge reader) on the server room, cleaner doesn't even reach the rack
+- **Locked rack with caged bays**, drives don't come out with a screwdriver
+- **Secure Boot + BIOS password + Self-Encrypting Drives (SED) with BitLocker**, even if the drives are stolen, the data is unreadable
+- **24×7 motion sensors + intrusion alarm** integrated with the BMS, the cleaner is logged before he reaches the rack
+- **Vendor management on the cleaning contract**, background checks, named individuals, badge issued
 
 This is what server security looks like. It is not "install antivirus." It is *layered*: physical, firmware, OS, access, operations, monitoring.
 
 ---
 
-## 🏢 Physical Security — The Foundation
+## 🏢 Physical Security, The Foundation
 
 Sec+/Server+ ask about physical security constantly. The 4 axes you must know:
 
@@ -37,18 +37,18 @@ Sec+/Server+ ask about physical security constantly. The 4 axes you must know:
 |---|---|---|
 | **Perimeter** | Fences, bollards, security guards, lighting, signage | Deter + delay |
 | **Building** | Access badges, mantrap / access control vestibule, biometric scanners, security cameras (recording, monitored), visitor logbook | Authenticate physical access |
-| **Server room** | Caged racks, locked cabinets, motion sensors, environmental sensors, fire suppression (FM-200/Novec/inergen — not water) | Protect the racks |
+| **Server room** | Caged racks, locked cabinets, motion sensors, environmental sensors, fire suppression (FM-200/Novec/inergen, not water) | Protect the racks |
 | **Component** | Tamper-evident seals, chassis intrusion sensors (BMC alert), Kensington locks on laptops/desktops in lobbies | Protect individual hardware |
 
 ### Specific terms the exam loves
 
-- **Mantrap / access control vestibule** — two-door entry; second door opens only after first closes. Defeats tailgating.
-- **Bollard** — short post that prevents vehicle ramming.
-- **Faraday cage** — RF-shielded enclosure (used for high-security comms or to prevent emanations).
-- **CCTV (recording vs monitored)** — recording = detective; visible = deterrent; monitored = preventive (because someone can respond live).
-- **Badge readers** — proximity (RFID), smart card, biometric (fingerprint, iris).
-- **Cipher locks / mechanical PIN pads** — common on server-room secondary doors.
-- **HSM (Hardware Security Module)** — tamper-resistant device for cryptographic keys; often in its own physical enclosure with seismic + intrusion sensors.
+- **Mantrap / access control vestibule**, two-door entry; second door opens only after first closes. Defeats tailgating.
+- **Bollard**, short post that prevents vehicle ramming.
+- **Faraday cage**, RF-shielded enclosure (used for high-security comms or to prevent emanations).
+- **CCTV (recording vs monitored)**, recording = detective; visible = deterrent; monitored = preventive (because someone can respond live).
+- **Badge readers**, proximity (RFID), smart card, biometric (fingerprint, iris).
+- **Cipher locks / mechanical PIN pads**, common on server-room secondary doors.
+- **HSM (Hardware Security Module)**, tamper-resistant device for cryptographic keys; often in its own physical enclosure with seismic + intrusion sensors.
 
 🎯 **Exam pattern:** *"Prevent tailgating into the data hall."* → **Mantrap / access control vestibule**.
 
@@ -56,7 +56,7 @@ Sec+/Server+ ask about physical security constantly. The 4 axes you must know:
 
 ---
 
-## 🚪 Firmware Security — UEFI, Secure Boot, TPM
+## 🚪 Firmware Security, UEFI, Secure Boot, TPM
 
 Modern servers boot via **UEFI** (Unified Extensible Firmware Interface), the successor to legacy **BIOS**. UEFI provides:
 
@@ -67,13 +67,13 @@ Modern servers boot via **UEFI** (Unified Extensible Firmware Interface), the su
 | **Measured Boot** | Hashes each stage of the boot chain into TPM PCRs; remote attestation servers can verify the host's boot state |
 | **TPM** (Trusted Platform Module) | Discrete chip (TPM 2.0) or firmware (fTPM) that stores keys + measurement hashes; used by BitLocker, Windows Hello, attestation |
 | **Self-Encrypting Drives (SED)** | Hardware-encrypted SATA/SAS/NVMe drives; key managed by drive controller + ATA password + BitLocker / sedutil |
-| **Pre-boot authentication** | BitLocker with PIN/USB key — drive cannot decrypt until user authenticates pre-OS |
+| **Pre-boot authentication** | BitLocker with PIN/USB key, drive cannot decrypt until user authenticates pre-OS |
 
 ### Why UEFI password + Secure Boot together
 
-- UEFI password alone — keeps an attacker from disabling Secure Boot or changing boot order. But if Secure Boot is off, signed-only doesn't matter.
-- Secure Boot alone — without a UEFI password, attacker disables Secure Boot in 10 seconds.
-- **Together** — attacker can't change firmware settings AND only signed bootloaders run.
+- UEFI password alone, keeps an attacker from disabling Secure Boot or changing boot order. But if Secure Boot is off, signed-only doesn't matter.
+- Secure Boot alone, without a UEFI password, attacker disables Secure Boot in 10 seconds.
+- **Together**, attacker can't change firmware settings AND only signed bootloaders run.
 
 🚨 **Trap on the exam:** Vendor firmware (iDRAC, iLO) ships with default credentials that are publicly documented. **Change the default password during commissioning**, and segment the OOB management network.
 
@@ -81,13 +81,13 @@ Modern servers boot via **UEFI** (Unified Extensible Firmware Interface), the su
 
 ---
 
-## 🗝️ Identity, Roles, and Access — RBAC and Least Privilege
+## 🗝️ Identity, Roles, and Access, RBAC and Least Privilege
 
 ### Principle of Least Privilege (PoLP)
 
-Each account gets *exactly* the rights needed for its job — no more. Coined formally by Saltzer & Schroeder ("The Protection of Information in Computer Systems," CACM 1975) as one of eight design principles. The exam asks PoLP questions in *every* security context.
+Each account gets *exactly* the rights needed for its job, no more. Coined formally by Saltzer & Schroeder ("The Protection of Information in Computer Systems," CACM 1975) as one of eight design principles. The exam asks PoLP questions in *every* security context.
 
-### RBAC — Role-Based Access Control
+### RBAC, Role-Based Access Control
 
 | Concept | Example |
 |---|---|
@@ -131,11 +131,11 @@ Services (DBs, web apps, agents, scripts) run as accounts. Best practice:
 
 PAM tools (BeyondTrust, CyberArk, Delinea, AWS Session Manager, Azure PIM) provide:
 
-- **Just-in-time (JIT) elevation** — admin requests rights, approval workflow, time-boxed grant
-- **Session recording** — full keystroke / screen capture for privileged sessions
-- **Credential vaulting** — admins never see the actual password
-- **MFA on elevation** — extra factor required to invoke privilege
-- **Automatic rotation** — passwords rotate after each use
+- **Just-in-time (JIT) elevation**, admin requests rights, approval workflow, time-boxed grant
+- **Session recording**, full keystroke / screen capture for privileged sessions
+- **Credential vaulting**, admins never see the actual password
+- **MFA on elevation**, extra factor required to invoke privilege
+- **Automatic rotation**, passwords rotate after each use
 
 🎯 **Exam pattern:** *"Eliminate standing privileged access while still enabling admins to do their jobs."* → **JIT via PAM**.
 
@@ -143,18 +143,18 @@ PAM tools (BeyondTrust, CyberArk, Delinea, AWS Session Manager, Azure PIM) provi
 
 ## 🩹 Patch Management
 
-Unpatched systems are how most organizations are breached. Equifax (EternalBlue / MS17-010 patch ignored), SolarWinds (vendor supply chain), Log4Shell (Log4j) — all *patch hygiene* failures at scale.
+Unpatched systems are how most organizations are breached. Equifax (EternalBlue / MS17-010 patch ignored), SolarWinds (vendor supply chain), Log4Shell (Log4j), all *patch hygiene* failures at scale.
 
 ### The patch lifecycle
 
-1. **Inventory** — know every system (CMDB; Module 2/8). You cannot patch what you don't know exists.
-2. **Subscribe to vendor advisories** — Microsoft Patch Tuesday, Red Hat Security Advisories (RHSA), Ubuntu USN, CISA KEV (Known Exploited Vulnerabilities) catalog.
-3. **Classify** — critical / high / medium / low. KEV = always urgent.
-4. **Test** — staging environment matching production.
-5. **Schedule maintenance window** — coordinate with business; backout plan ready.
-6. **Deploy** — phased rollout (canary → broader → full).
-7. **Verify** — services running, no regressions, vulnerability scan confirms patch applied.
-8. **Document** — CMDB updated, change ticket closed.
+1. **Inventory**, know every system (CMDB; Module 2/8). You cannot patch what you don't know exists.
+2. **Subscribe to vendor advisories**, Microsoft Patch Tuesday, Red Hat Security Advisories (RHSA), Ubuntu USN, CISA KEV (Known Exploited Vulnerabilities) catalog.
+3. **Classify**, critical / high / medium / low. KEV = always urgent.
+4. **Test**, staging environment matching production.
+5. **Schedule maintenance window**, coordinate with business; backout plan ready.
+6. **Deploy**, phased rollout (canary → broader → full).
+7. **Verify**, services running, no regressions, vulnerability scan confirms patch applied.
+8. **Document**, CMDB updated, change ticket closed.
 
 ### Tools
 
@@ -178,13 +178,13 @@ Unpatched systems are how most organizations are breached. Equifax (EternalBlue 
 
 ---
 
-## 📏 Security Baselines — CIS, DISA STIGs, Vendor Guides
+## 📏 Security Baselines, CIS, DISA STIGs, Vendor Guides
 
 A **security baseline** is a documented, agreed-upon configuration that meets a defined security posture.
 
 | Source | What |
 |---|---|
-| **CIS Benchmarks** | Center for Internet Security — step-by-step hardening recommendations for OSes, browsers, cloud services. Free PDFs; CIS-CAT scanner audits. Most-cited industry baseline. |
+| **CIS Benchmarks** | Center for Internet Security, step-by-step hardening recommendations for OSes, browsers, cloud services. Free PDFs; CIS-CAT scanner audits. Most-cited industry baseline. |
 | **DISA STIGs** (Security Technical Implementation Guides) | US DoD-mandated hardening guides; required for federal/defense systems |
 | **Vendor security guides** | Microsoft Security Compliance Toolkit, Red Hat hardening guides |
 | **Microsoft Security Baselines** | Microsoft's official Group Policy templates |
@@ -193,11 +193,11 @@ A **security baseline** is a documented, agreed-upon configuration that meets a 
 
 Each benchmark covers an OS/app, organized as:
 
-- **Level 1** — basic hardening; most enterprises can apply
-- **Level 2** — defense-in-depth; may break some functionality (acceptable in higher-security envs)
+- **Level 1**, basic hardening; most enterprises can apply
+- **Level 2**, defense-in-depth; may break some functionality (acceptable in higher-security envs)
 - **Scored items** (auditable) and **not-scored items** (advisory)
 
-🎯 **Exam pattern:** *"Establish a hardened configuration for all Linux servers."* → **Apply the CIS Benchmark for the relevant distro** (RHEL 9, Ubuntu 22.04, etc.) — Level 1 + selected Level 2.
+🎯 **Exam pattern:** *"Establish a hardened configuration for all Linux servers."* → **Apply the CIS Benchmark for the relevant distro** (RHEL 9, Ubuntu 22.04, etc.), Level 1 + selected Level 2.
 
 ---
 
@@ -207,7 +207,7 @@ Each benchmark covers an OS/app, organized as:
 |---|---|
 | **HIDS** (Host Intrusion Detection System) | Monitors a host; alerts on suspicious activity (file changes, registry changes, anomalous processes). Detects only. |
 | **HIPS** (Host Intrusion Prevention System) | Same engine class, but can also *block* (kill process, block network connection). |
-| **EDR** (Endpoint Detection & Response) | Modern evolution — behavioral analytics, threat intel feed, IR investigation tooling, often cloud-managed (CrowdStrike Falcon, Microsoft Defender for Endpoint, SentinelOne, Carbon Black) |
+| **EDR** (Endpoint Detection & Response) | Modern evolution, behavioral analytics, threat intel feed, IR investigation tooling, often cloud-managed (CrowdStrike Falcon, Microsoft Defender for Endpoint, SentinelOne, Carbon Black) |
 | **AV** (traditional Antivirus) | Signature-based malware detection. Largely subsumed by EDR. |
 | **FIM** (File Integrity Monitoring) | Tripwire/AIDE/OSSEC; detects unauthorized file changes (compliance use, e.g., PCI-DSS req 11.5) |
 
@@ -215,9 +215,9 @@ Each benchmark covers an OS/app, organized as:
 
 ### Network-side counterparts (covered more in Sec+ / Network+)
 
-- **NIDS / NIPS** — Network-side IDS/IPS at network choke points
-- **WAF** — Web Application Firewall for HTTP/HTTPS
-- **Firewall** — host firewall (Windows Defender Firewall, firewalld, iptables, pf) + perimeter firewalls
+- **NIDS / NIPS**, Network-side IDS/IPS at network choke points
+- **WAF**, Web Application Firewall for HTTP/HTTPS
+- **Firewall**, host firewall (Windows Defender Firewall, firewalld, iptables, pf) + perimeter firewalls
 
 ---
 
@@ -291,7 +291,7 @@ A mature program:
 
 1. **Physical.** Server room behind a **badge-reader + biometric door**; access control vestibule (mantrap) for the data hall corridor. **Caged racks** with key + combination lock. **CCTV** monitored + recorded with 30-day retention. **Motion sensors** wired into the alarm system. **Visitor log** for any non-employee.
 2. **Firmware.** Every server: **UEFI password** + **Secure Boot** + **TPM 2.0** + **Self-Encrypting Drives**. **BitLocker** (Windows) / **LUKS** (Linux) with TPM-bound keys. **BMC/iDRAC/iLO** on a **separate management VLAN**, default credentials changed, MFA on the management portal.
-3. **Identity.** **RBAC** roles for each function (DB Admin, App Admin, Help Desk). **gMSAs** for Windows services; **systemd dynamic users** + Vault-issued tokens for Linux services. **PAM (BeyondTrust)** for JIT elevation with MFA. **Tiered Administration** — Tier 0 (DCs) accounts never log on to Tier 1/2 hosts.
+3. **Identity.** **RBAC** roles for each function (DB Admin, App Admin, Help Desk). **gMSAs** for Windows services; **systemd dynamic users** + Vault-issued tokens for Linux services. **PAM (BeyondTrust)** for JIT elevation with MFA. **Tiered Administration**, Tier 0 (DCs) accounts never log on to Tier 1/2 hosts.
 4. **Patch.** **WSUS + MECM** for Windows. **Red Hat Satellite** for RHEL. SLA: **critical < 7 days, high < 30 days, medium < 90 days**. Monthly vulnerability scan with **Tenable Nessus**.
 5. **Baseline.** Apply **CIS Benchmark Level 1** to every host, with selected Level 2 controls. Audited monthly with **CIS-CAT**.
 6. **Detection / Prevention.** **CrowdStrike Falcon** EDR on every server. **OSSEC** FIM on critical files (`/etc`, `/bin`, `/usr/bin`, `C:\Windows\System32`). **Auditd** + **Windows Event Forwarding** shipping to **Microsoft Sentinel** (SIEM).
@@ -308,7 +308,7 @@ This is the kind of integration question Server+ PBQs ask. Every control maps to
 | Misconception | Reality |
 |---|---|
 | "Antivirus is enough." | AV is necessary but not sufficient. EDR + HIPS + FIM + patch + baselines = real defense. |
-| "Default vendor credentials are 'temporary' — we'll change them later." | They become permanent. iDRAC / iLO default creds are top breach vectors. Change at commissioning. |
+| "Default vendor credentials are 'temporary', we'll change them later." | They become permanent. iDRAC / iLO default creds are top breach vectors. Change at commissioning. |
 | "The server room door is locked, so we're safe." | Defense in depth: door + caged rack + tamper sensors + camera. Single layer = single failure. |
 | "RBAC is the same as DAC." | RBAC = roles; DAC = owner discretion. Different models. |
 | "Service accounts can share if convenient." | One compromise → all services compromised. Never share. |
@@ -326,11 +326,11 @@ This is the kind of integration question Server+ PBQs ask. Every control maps to
 |------|------------|
 | **Mantrap / access control vestibule** | Two-door entry; defeats tailgating |
 | **Bollard** | Anti-vehicle barrier |
-| **HSM** | Hardware Security Module — tamper-resistant key vault |
+| **HSM** | Hardware Security Module, tamper-resistant key vault |
 | **UEFI / BIOS password** | Firmware setup gate |
 | **Secure Boot** | Signed-bootloader enforcement |
 | **Measured Boot** | Hash chain stored in TPM PCRs |
-| **TPM 2.0** | Trusted Platform Module — key + measurement chip |
+| **TPM 2.0** | Trusted Platform Module, key + measurement chip |
 | **SED** | Self-Encrypting Drive |
 | **BitLocker / LUKS** | Disk encryption (Windows / Linux) |
 | **Least privilege (PoLP)** | Minimum necessary rights |
@@ -372,7 +372,7 @@ This is the kind of integration question Server+ PBQs ask. Every control maps to
 
 ---
 
-## 📊 Case Study — Target's 2013 HVAC Breach
+## 📊 Case Study, Target's 2013 HVAC Breach
 
 **Situation.** In late 2013, Target's network was breached by attackers who initially gained access via stolen credentials from **Fazio Mechanical Services**, a third-party HVAC vendor with remote network access for billing and project management. The HVAC vendor's user account had access to Target's vendor portal; once inside, attackers pivoted through the corporate network to reach the Point-of-Sale environment, deployed memory-scraping malware ("Kaptoxa"), and exfiltrated **40 million payment cards + 70 million customer records** during the 2013 holiday shopping season (Krebs on Security, December 2013 to January 2014; US Senate Commerce Committee Majority Staff Report, *A "Kill Chain" Analysis of the 2013 Target Data Breach*, 26 March 2014).
 
@@ -384,7 +384,7 @@ This is the kind of integration question Server+ PBQs ask. Every control maps to
 - **Vendor-issued credentials need MFA and monitoring.** A simple username/password for a vendor portal is not enough.
 - **Lateral movement is the killer.** Initial compromise is often unremarkable; the *pivot from foothold to crown jewels* is where damage scales. **Microsegmentation** (covered in Sec+) is the mitigating architecture.
 - **PCI-DSS network segmentation requirements exist for exactly this scenario.** Target was found to be technically PCI-compliant before the breach (passed audits). Compliance ≠ security.
-- **EDR and SIEM matter more than logs.** Target had **FireEye alerts** that fired on the malware install — but the alerts were ignored or not escalated. Tools without operational discipline = no defense.
+- **EDR and SIEM matter more than logs.** Target had **FireEye alerts** that fired on the malware install, but the alerts were ignored or not escalated. Tools without operational discipline = no defense.
 
 This is the scenario Server+ tests when asking "how do you limit blast radius of a credential compromise." The answer is **least privilege + segmentation + EDR + actually-monitored SIEM**.
 
@@ -399,24 +399,24 @@ This is the scenario Server+ tests when asking "how do you limit blast radius of
 
 You now know:
 
-- 🏛️ **Physical controls** — perimeter, building, server room, component — and the specific terms (mantrap, bollard, HSM, CCTV roles)
-- 🚪 **Firmware security** — UEFI password, Secure Boot, Measured Boot, TPM 2.0, SED, BitLocker/LUKS
-- 🗝️ **Identity & access** — least privilege, RBAC vs DAC/MAC/ABAC, service accounts, gMSAs, PAM, JIT, MFA
+- 🏛️ **Physical controls** perimeter, building, server room, component and the specific terms (mantrap, bollard, HSM, CCTV roles)
+- 🚪 **Firmware security**, UEFI password, Secure Boot, Measured Boot, TPM 2.0, SED, BitLocker/LUKS
+- 🗝️ **Identity & access**, least privilege, RBAC vs DAC/MAC/ABAC, service accounts, gMSAs, PAM, JIT, MFA
 - 🩹 **Patch management** lifecycle and tools (WSUS, MECM, Satellite, Ansible, Tanium)
-- 📏 **Security baselines** — CIS Benchmarks, DISA STIGs, vendor guides — and the L1/L2 distinction
-- 🛡️ **Detection / prevention** — HIDS, HIPS, EDR, FIM, antivirus
+- 📏 **Security baselines** CIS Benchmarks, DISA STIGs, vendor guides and the L1/L2 distinction
+- 🛡️ **Detection / prevention**, HIDS, HIPS, EDR, FIM, antivirus
 - 🔐 A consolidated **hardening checklist** (cross-platform + Windows-specific + Linux-specific)
 - 🧪 A **vulnerability management cadence** from continuous to annual
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 21/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 21/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 7 — Networking for Servers](../Module-07-Networking/Reading.md)
+4. ➡️ Move on: [Module 7, Networking for Servers](../Module-07-Networking/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 7](../Module-07-Networking/Reading.md) covers network controls (firewalls, VLAN, load balancers) that complement these host controls; [Module 8](../Module-08-Troubleshooting/Reading.md) diagnoses security-relevant failures like locked accounts and broken Kerberos.
-> - Cross-course: **CompTIA Security+ (SY0-701)** is the natural depth follow-on — entire course on this material. **AWS / Azure** courses map these patterns to cloud-native equivalents (IAM, KMS, GuardDuty, Defender for Cloud).
+> - Cross-course: **CompTIA Security+ (SY0-701)** is the natural depth follow-on, entire course on this material. **AWS / Azure** courses map these patterns to cloud-native equivalents (IAM, KMS, GuardDuty, Defender for Cloud).
 > - Practice: Practice Exam 2 has ~10 questions from this module; the Final Mock has ~14.
 
 ---
@@ -428,16 +428,16 @@ You now know:
 - 📄 NIST SP 800-53 Rev 5 (2020, updated 2023). *Security and Privacy Controls for Information Systems.* (Giant control catalog.)
 - 📄 NIST SP 800-123 (2008). *Guide to General Server Security.* (Server-specific.)
 - 📄 NIST SP 800-128 (2011). *Guide for Security-Focused Configuration Management.*
-- 📄 CIS Benchmarks — `cisecurity.org/cis-benchmarks` — free PDFs after registration
-- 📄 DISA STIGs — `public.cyber.mil/stigs/`
-- 📄 CISA KEV catalog — `cisa.gov/known-exploited-vulnerabilities-catalog`
+- 📄 CIS Benchmarks `cisecurity.org/cis-benchmarks` free PDFs after registration
+- 📄 DISA STIGs, `public.cyber.mil/stigs/`
+- 📄 CISA KEV catalog, `cisa.gov/known-exploited-vulnerabilities-catalog`
 
 **Case-study sources:**
-- 📄 Krebs on Security — Target breach coverage (December 2013–January 2014)
+- 📄 Krebs on Security, Target breach coverage (December 2013–January 2014)
 - 📄 US Senate Commerce Committee Majority Staff (2014). *A "Kill Chain" Analysis of the 2013 Target Data Breach.* 26 March 2014.
 
 **Practitioner / exam:**
 - 📖 *CompTIA Server+ SK0-005 Exam Objectives* (free PDF)
 - 📖 [Professor Messer SK0-005 videos](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)
-- 📖 *Network Security Monitoring* (Richard Bejtlich) — Tao of NSM
+- 📖 *Network Security Monitoring* (Richard Bejtlich), Tao of NSM
 - 📖 *The Practice of Network Security Monitoring* (Bejtlich, 2013, No Starch)

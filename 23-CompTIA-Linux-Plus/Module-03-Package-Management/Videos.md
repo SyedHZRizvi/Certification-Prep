@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">apt for Ubuntu/Debian — Complete Tutorial</p>
+      <p class="vg-title">apt for Ubuntu/Debian, Complete Tutorial</p>
       <p class="vg-creator">Learn Linux TV</p>
       <span class="vg-duration">⏱ 14 min · install, search, upgrade, hold</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">dnf & rpm — RHEL/Fedora Side</p>
+      <p class="vg-title">dnf & rpm, RHEL/Fedora Side</p>
       <p class="vg-creator">Veronica Explains</p>
       <span class="vg-duration">⏱ 13 min · history, provides, signatures</span>
     </div>

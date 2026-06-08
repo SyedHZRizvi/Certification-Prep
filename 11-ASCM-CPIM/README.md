@@ -5,11 +5,11 @@ title: ASCM CPIM Track
 
 # 🏭 ASCM CPIM Track (Certified in Planning and Inventory Management)
 
-**🚚 Supply Chain · ASCM** › CPIM — Planning & Inventory Management
+**🚚 Supply Chain · ASCM** › CPIM, Planning & Inventory Management
 
 > **Goal:** Pass the consolidated single-exam ASCM CPIM with a scaled score of 300+
 > **Duration:** 10–14 weeks part-time
-> **Cost:** $560 USD (ASCM member) / $895 USD (non-member) — single exam, includes one retake bundle in many ASCM packages
+> **Cost:** $560 USD (ASCM member) / $895 USD (non-member), single exam, includes one retake bundle in many ASCM packages
 > **Difficulty:** Professional · manufacturing/operations background helpful
 
 ---
@@ -18,31 +18,31 @@ title: ASCM CPIM Track
 
 ### 🎯 The promise
 
-The ASCM Certified in Planning and Inventory Management (CPIM) is the deepest, most numerically rigorous certification in supply chain — the one that tests whether you can actually run S&OP, MRP, MPS, capacity planning, and inventory math at a real manufacturing or distribution operation. It is the credential most-cited by hiring managers at Boeing, Lockheed, Caterpillar, Pfizer, Procter & Gamble, and any company that turns raw materials into finished goods. Pass CPIM and you are recognized as the planner who can defend a master schedule under cross-examination.
+The ASCM Certified in Planning and Inventory Management (CPIM) is the deepest, most numerically rigorous certification in supply chain, the one that tests whether you can actually run S&OP, MRP, MPS, capacity planning, and inventory math at a real manufacturing or distribution operation. It is the credential most-cited by hiring managers at Boeing, Lockheed, Caterpillar, Pfizer, Procter & Gamble, and any company that turns raw materials into finished goods. Pass CPIM and you are recognized as the planner who can defend a master schedule under cross-examination.
 
 ### 💼 Career outcomes after passing
 
-- **Production Planner / Master Scheduler** ($75K–$110K) — running MPS and MRP for a plant or product line
-- **Demand Planner** ($80K–$115K) — forecasting and S&OP demand consensus
-- **Materials Manager** ($90K–$130K) — inventory strategy, supplier scheduling, plant materials policy
-- **Operations Manager** ($110K–$155K) — plant-floor leadership; CPIM is increasingly preferred
-- **Supply / Inventory Planning Manager** ($105K–$145K) — owning safety stock, EOQ, ABC, replenishment policy
-- **S&OP Manager** ($115K–$155K) — running the integrated planning cycle (often laddering into CSCP for the end-to-end role)
+- **Production Planner / Master Scheduler** ($75K–$110K), running MPS and MRP for a plant or product line
+- **Demand Planner** ($80K–$115K), forecasting and S&OP demand consensus
+- **Materials Manager** ($90K–$130K), inventory strategy, supplier scheduling, plant materials policy
+- **Operations Manager** ($110K–$155K), plant-floor leadership; CPIM is increasingly preferred
+- **Supply / Inventory Planning Manager** ($105K–$145K), owning safety stock, EOQ, ABC, replenishment policy
+- **S&OP Manager** ($115K–$155K), running the integrated planning cycle (often laddering into CSCP for the end-to-end role)
 
 ASCM's own member salary data shows CPIM holders earning **a 15–22% premium** over non-certified planners in equivalent roles. CPIM pairs powerfully with **CSCP (course 10)** for the end-to-end supply-chain executive path and with **CLTD (course 12)** for distribution-side leadership.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — concepts grounded in real factories (Toyota TPS, Boeing 787, Tesla Gigafactory) before introducing terminology
-- **Original questions only** — every quiz, calculation question, and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
-- **Real-world case studies** — Toyota's heijunka and kanban, the 787 Dreamliner outsourcing lessons, Boeing's MRO planning, Caterpillar's lean rollout, COVID-era ventilator production
-- **One author, one voice** — coherent APICS/ASCM vocabulary across all 8 modules
-- **Updated for the 2026 consolidated CPIM exam** — single-exam format with integrated coverage of strategy, planning, execution, and inventory
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, concepts grounded in real factories (Toyota TPS, Boeing 787, Tesla Gigafactory) before introducing terminology
+- **Original questions only**, every quiz, calculation question, and practice exam written from the published ASCM Exam Content Manual; no copyrighted dumps
+- **Real-world case studies**, Toyota's heijunka and kanban, the 787 Dreamliner outsourcing lessons, Boeing's MRO planning, Caterpillar's lean rollout, COVID-era ventilator production
+- **One author, one voice**, coherent APICS/ASCM vocabulary across all 8 modules
+- **Updated for the 2026 consolidated CPIM exam**, single-exam format with integrated coverage of strategy, planning, execution, and inventory
 
 ### 🚀 Ready to start?
 
-Ten to fourteen weeks. Get comfortable with the math — CPIM is a calculation-heavy exam. The official ASCM Learning System pairs cleanly with this conceptual scaffolding.
+Ten to fourteen weeks. Get comfortable with the math, CPIM is a calculation-heavy exam. The official ASCM Learning System pairs cleanly with this conceptual scaffolding.
 
 Begin with [Module 1: Manufacturing Strategy →](./Module-01-Manufacturing-Strategy/Reading.md)
 
@@ -70,7 +70,7 @@ By the end of this track, you'll be able to:
 |---|--------|------|--------------------|
 | 1 | [Manufacturing Strategy](./Module-01-Manufacturing-Strategy/Reading.md) | 3 hrs | MTS/MTO/ATO/ETO, order qualifiers vs winners, postponement |
 | 2 | [Demand Planning & Forecasting](./Module-02-Demand-Planning-Forecasting/Reading.md) | 4 hrs | Patterns, smoothing, regression, MAD/MAPE, CPFR |
-| 3 | [S&OP — Sales & Operations Planning](./Module-03-SOP-Sales-Operations-Planning/Reading.md) | 3.5 hrs | 5-step S&OP, IBP, aggregate planning (level/chase/hybrid) |
+| 3 | [S&OP, Sales & Operations Planning](./Module-03-SOP-Sales-Operations-Planning/Reading.md) | 3.5 hrs | 5-step S&OP, IBP, aggregate planning (level/chase/hybrid) |
 | 4 | [Master Scheduling & MRP](./Module-04-Master-Production-Scheduling-MRP/Reading.md) | 4.5 hrs | MPS, time fences, ATP, MRP logic, lot-sizing, BOM levels |
 | 5 | [Capacity Planning](./Module-05-Capacity-Planning/Reading.md) | 3.5 hrs | Capacity hierarchy, bottlenecks, TOC, drum-buffer-rope |
 | 6 | [Inventory Management](./Module-06-Inventory-Management/Reading.md) | 4 hrs | EOQ, EPQ, ROP, safety stock, ABC/XYZ, cycle counting |
@@ -89,7 +89,7 @@ By the end of this track, you'll be able to:
 | Practice-Exam-2 | After Modules 5–8 | 110 | 150 min | ⭐⭐⭐⭐ |
 | Final-Mock-Exam | 1 week before real exam | **150** | **210 min** | ⭐⭐⭐⭐⭐ |
 
-The Final Mock matches real-exam length and pacing — **84 seconds per question**.
+The Final Mock matches real-exam length and pacing, **84 seconds per question**.
 
 ---
 
@@ -99,9 +99,9 @@ The Final Mock matches real-exam length and pacing — **84 seconds per question
 
 Supplement with:
 
-- *APICS Dictionary, 16th Edition* — the exam is vocabulary-heavy
-- *Manufacturing Planning and Control for Supply Chain Management* (Jacobs, Chase, Berry) — the classic MPC textbook
-- *The Goal* by Eliyahu Goldratt — the TOC novel; one weekend read
+- *APICS Dictionary, 16th Edition*, the exam is vocabulary-heavy
+- *Manufacturing Planning and Control for Supply Chain Management* (Jacobs, Chase, Berry), the classic MPC textbook
+- *The Goal* by Eliyahu Goldratt, the TOC novel; one weekend read
 
 ---
 
@@ -153,7 +153,7 @@ Week 10: Final Mock-Exam (150 Q, 210 min) → REAL EXAM
 
 ## ⚠️ The 7 Most Common Reasons People Fail CPIM
 
-1. ❌ **Skipped the math.** EOQ, safety stock, MAD, MAPE, MRP nets — CPIM is a *calculation* exam. Drill them.
+1. ❌ **Skipped the math.** EOQ, safety stock, MAD, MAPE, MRP nets, CPIM is a *calculation* exam. Drill them.
 2. ❌ **Confused MPS vs MRP.** MPS is at the *finished good* level (independent demand). MRP is at the *component* level (dependent demand). These are different planning horizons.
 3. ❌ **Memorized definitions without scenarios.** ASCM writes scenario-based questions ("Plant A uses Make-to-Stock; what changes if they shift to ATO?"). You must apply, not recite.
 4. ❌ **Ignored the APICS Dictionary.** Two-thirds of "tricky" questions are pure vocabulary. Order qualifier vs winner. Effectiveness vs efficiency. Throughput vs cycle time.
@@ -171,13 +171,13 @@ You got this. 💪
 
 ---
 
-## 🏁 After the Modules — Capstone & Deeper Reading
+## 🏁 After the Modules, Capstone & Deeper Reading
 
 Two additional resources sit at the course root:
 
 | File | What it's for |
 |------|---------------|
-| [**Capstone-Project.md**](./Capstone-Project.md) | A 6–8 week applied capstone in which you act as the newly hired Director of Production & Inventory Control at a $480M industrial-equipment manufacturer. Integrates every module of the course — S&OP design, MRP→DDMRP transition, capacity re-baseline, top-50 SKU kanban pilot, S&OE control tower, 12-month change-management roadmap. Self-graded against a 100-point rubric. |
-| [**Recommended-Readings.md**](./Recommended-Readings.md) | Curated reading list — canonical textbooks (Vollmann/Berry, Hill, Wallace, Goldratt's *The Goal*, Ohno's *Toyota Production System*), seminal HBR/Sloan papers (Lee-Padmanabhan-Whang on bullwhip, Skinner on manufacturing strategy, the HP postponement case), industry resources, and free academic courses (MIT MicroMasters SCM, Stanford OPS, Wharton OM). |
+| [**Capstone-Project.md**](./Capstone-Project.md) | A 6–8 week applied capstone in which you act as the newly hired Director of Production & Inventory Control at a $480M industrial-equipment manufacturer. Integrates every module of the course, S&OP design, MRP→DDMRP transition, capacity re-baseline, top-50 SKU kanban pilot, S&OE control tower, 12-month change-management roadmap. Self-graded against a 100-point rubric. |
+| [**Recommended-Readings.md**](./Recommended-Readings.md) | Curated reading list, canonical textbooks (Vollmann/Berry, Hill, Wallace, Goldratt's *The Goal*, Ohno's *Toyota Production System*), seminal HBR/Sloan papers (Lee-Padmanabhan-Whang on bullwhip, Skinner on manufacturing strategy, the HP postponement case), industry resources, and free academic courses (MIT MicroMasters SCM, Stanford OPS, Wharton OM). |
 
 The capstone is what separates "passed the exam" from "could walk into a graduate-level case discussion and contribute." Strong students engage with the capstone for portfolio value even when the exam is the immediate goal.

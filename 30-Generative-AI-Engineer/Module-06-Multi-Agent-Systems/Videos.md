@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">What's Next for Agentic AI — Andrew Ng</p>
+      <p class="vg-title">What's Next for Agentic AI, Andrew Ng</p>
       <p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 30m · The Andrew Ng framing</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CrewAI — full tutorial</p>
+      <p class="vg-title">CrewAI, full tutorial</p>
       <p class="vg-creator">João Moura (CrewAI creator)</p>
       <span class="vg-duration">⏱ 1h · Role + task + crew</span>
     </div>
@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AutoGen — conversable agents + code exec</p>
+      <p class="vg-title">AutoGen, conversable agents + code exec</p>
       <p class="vg-creator">Microsoft Research</p>
       <span class="vg-duration">⏱ 50m · From the author team</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Anthropic Computer Use — demo + architecture</p>
+      <p class="vg-title">Anthropic Computer Use, demo + architecture</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 25m · GUI automation</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">OpenAI Swarm / Agents SDK — walkthrough</p>
+      <p class="vg-title">OpenAI Swarm / Agents SDK, walkthrough</p>
       <p class="vg-creator">OpenAI DevRel</p>
       <span class="vg-duration">⏱ 30m · Handoff-based pattern</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ReAct — Reasoning + Acting agents (paper)</p>
+      <p class="vg-title">ReAct, Reasoning + Acting agents (paper)</p>
       <p class="vg-creator">community / paper-walkthroughs</p>
       <span class="vg-duration">⏱ 30m · Foundational</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">MetaGPT — software team metaphor</p>
+      <p class="vg-title">MetaGPT, software team metaphor</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 30m · Opinionated FT structure</span>
     </div>
@@ -125,7 +125,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Reflexion — self-critique loops</p>
+      <p class="vg-title">Reflexion, self-critique loops</p>
       <p class="vg-creator">paper review</p>
       <span class="vg-duration">⏱ 25m · The reflection pattern</span>
     </div>
@@ -134,7 +134,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OpenDevin / SWE-Agent — coding agents</p>
+      <p class="vg-title">OpenDevin / SWE-Agent, coding agents</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 35m · Specialized FT</span>
     </div>

@@ -35,7 +35,7 @@ D. Implement the solution
 
 ### Q4. A server beeps 3 short tones at boot and refuses to POST. The FIRST thing to check is: *(Apply)*
 A. The power supply
-B. RAM (reseat or swap) — 3 beeps most often indicates a memory fault on common AMI BIOS
+B. RAM (reseat or swap), 3 beeps most often indicates a memory fault on common AMI BIOS
 C. The drives
 D. The video card
 
@@ -51,14 +51,14 @@ D. Network activity
 
 ### Q6. A solid amber drive LED indicates: *(Understand)*
 A. Normal activity
-B. Drive failure or predictive failure — check RAID controller and follow vendor swap procedure
+B. Drive failure or predictive failure, check RAID controller and follow vendor swap procedure
 C. Identify mode
 D. Network link
 
 ---
 
 ### Q7. Memory single-bit ECC errors trending upward on one DIMM means: *(Apply)*
-A. Ignore — single-bit is auto-corrected
+A. Ignore, single-bit is auto-corrected
 B. Schedule replacement of that DIMM before it produces uncorrectable errors / data corruption
 C. Reboot to clear
 D. Add more DIMMs
@@ -93,7 +93,7 @@ D. `Network Interface → Bytes Total/sec`
 A. CPU
 B. RAM
 C. Disk
-D. Application-level (query plan, locking, GC) — none of the four infra resources are saturated
+D. Application-level (query plan, locking, GC), none of the four infra resources are saturated
 
 ---
 
@@ -179,7 +179,7 @@ D. Disable DNS
 
 ### Q22. After applying a patch, all VMs on a host suddenly run very slowly. The MOST likely cause is: *(Analyze)*
 A. The patch unconditionally improved performance
-B. EVC level changed, time sync broke, or a driver regression — investigate the change first
+B. EVC level changed, time sync broke, or a driver regression, investigate the change first
 C. Storage failure
 D. Cosmic rays
 
@@ -221,21 +221,21 @@ D. Roll back every change made this year
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Identify the problem**
-Step 1 — gather information, question users, determine what changed.
+Step 1, gather information, question users, determine what changed.
 
 ### Q2: **B. Establish a plan of action and implement**
 After confirming theory → Step 4 (plan + implement). Do NOT skip to "document."
 
 ### Q3: **C. Document findings, actions, and outcomes**
-Step 6 — close the loop with documentation. Most-missed step in practice; most-tested on the exam.
+Step 6, close the loop with documentation. Most-missed step in practice; most-tested on the exam.
 
-### Q4: **B. RAM (reseat or swap) — 3 beeps most often indicates a memory fault on common AMI BIOS**
+### Q4: **B. RAM (reseat or swap), 3 beeps most often indicates a memory fault on common AMI BIOS**
 RAM is the most common beep-code cause; vendor charts vary, so always cross-reference.
 
 ### Q5: **C. Identify / Locator LED (admin-toggled from iDRAC/iLO)**
-Blue locator LED helps a tech find the right drive in a stack — admin presses it from the management interface.
+Blue locator LED helps a tech find the right drive in a stack, admin presses it from the management interface.
 
-### Q6: **B. Drive failure or predictive failure — check RAID controller and follow vendor swap procedure**
+### Q6: **B. Drive failure or predictive failure, check RAID controller and follow vendor swap procedure**
 Amber = problem. Confirm via RAID controller utility before pulling.
 
 ### Q7: **B. Schedule replacement of that DIMM before it produces uncorrectable errors / data corruption**
@@ -245,12 +245,12 @@ Trending corrections forecast eventual uncorrectable failures. Replace proactive
 RAID 5 only tolerates one failure. Long rebuild + statistically correlated drive ages = real risk. Use RAID 6 or RAID 10 for large arrays.
 
 ### Q9: **B. `iostat -xz 1`**
-Per-device extended stats — latency (`await`), throughput (`r/s`, `w/s`), utilization (`%util`).
+Per-device extended stats, latency (`await`), throughput (`r/s`, `w/s`), utilization (`%util`).
 
 ### Q10: **A. `Processor → Processor Queue Length`**
 Sustained > 2× cores = CPU pressure. % Processor Time alone can mislead on hyperthreaded CPUs.
 
-### Q11: **D. Application-level (query plan, locking, GC) — none of the four infra resources are saturated**
+### Q11: **D. Application-level (query plan, locking, GC), none of the four infra resources are saturated**
 When none of the four are saturated, the bottleneck is in code/architecture, not infrastructure.
 
 ### Q12: **A. `ping -M do -s 8972 destination`**
@@ -283,7 +283,7 @@ A real runbook lets a less-senior tech execute reliably with safety rails.
 ### Q21: **B. Whether the user account is expired/locked or the password just changed**
 Other users work → DC and DNS are fine. Most likely single-user state.
 
-### Q22: **B. EVC level changed, time sync broke, or a driver regression — investigate the change first**
+### Q22: **B. EVC level changed, time sync broke, or a driver regression, investigate the change first**
 After-change performance regression → investigate the change. EVC, time, drivers are common culprits.
 
 ### Q23: **B. Continuing on the remaining LACP member with reduced aggregate bandwidth**

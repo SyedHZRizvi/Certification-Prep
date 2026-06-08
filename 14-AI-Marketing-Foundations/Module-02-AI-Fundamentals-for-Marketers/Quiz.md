@@ -143,7 +143,7 @@ D. JSON-only
 ---
 
 ### Q18. A marketing team puts their full brand book + style guide + customer interview transcripts into a single 200K-token prompt. The model has a 1M-token context window. This is: *(Analyze)*
-A. Impossible — context windows can't be that large
+A. Impossible, context windows can't be that large
 B. A use case for fine-tuning
 C. A reasonable approach for grounding the AI in brand voice
 D. A privacy violation by default
@@ -210,7 +210,7 @@ Roughly 4 characters of English ≈ 1 token ≈ ¾ of a word. Whitespace counts.
 Vaswani et al., 2017. The architecture underlying every major LLM today.
 
 ### Q4: **B. November 2022**
-ChatGPT launched November 30, 2022 — fastest-growing consumer app in history (per UBS, 100M users in 2 months).
+ChatGPT launched November 30, 2022, fastest-growing consumer app in history (per UBS, 100M users in 2 months).
 
 ### Q5: **B. Retrieval-Augmented Generation**
 Your docs are embedded, stored in a vector DB, retrieved at query time, and fed into the LLM.
@@ -255,7 +255,7 @@ HubSpot's 2024 *AI for Marketers* course teaches this exact structure.
 With a 1M-token context window, large in-context grounding is a valid pattern. (Watch for noise; you may still need RAG for very large corpora.)
 
 ### Q19: **C. Always trust the model's first answer**
-Hallucination mitigation requires the opposite — verification, grounding, low temperature, retries.
+Hallucination mitigation requires the opposite, verification, grounding, low temperature, retries.
 
 ### Q20: **B. Bias in facial recognition systems**
 Joy Buolamwini's MIT Media Lab study (2018) showed face-recognition error rates were dramatically higher on darker-skinned female faces, kickstarting modern AI-bias research.
@@ -264,7 +264,7 @@ Joy Buolamwini's MIT Media Lab study (2018) showed face-recognition error rates 
 Free vs paid changes constantly; the general pattern is paid = better and more.
 
 ### Q22: **B. Machine learning powering a marketing product**
-Spotify Wrapped is a marketing campaign built on top of a classical ML recommendation engine — not a GenAI campaign.
+Spotify Wrapped is a marketing campaign built on top of a classical ML recommendation engine, not a GenAI campaign.
 
 ### Q23: **B. The Transformer architecture**
 Vaswani et al., 2017. The foundational paper for modern LLMs.

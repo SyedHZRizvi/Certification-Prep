@@ -3,24 +3,24 @@
 > **Why this module matters:** Proof-of-Work is what separates Bitcoin from every "blockchain" startup that promised the same properties with less electricity. Understanding mining is understanding why Bitcoin's security budget is denominated in *energy*, why halvings matter, why the 2024 spot-ETF approval wasn't possible without 15 years of demonstrated mining stability, and why the energy debate has been the single most persistent attack on Bitcoin since 2017.
 
 > **Prerequisites for this module.** Before starting:
-> - [Module 1](../Module-01-Bitcoin-White-Paper-Origins/Reading.md) — Halving schedule, white-paper §4 (PoW), §6 (incentives)
-> - [Module 2](../Module-02-Cryptographic-Foundations/Reading.md) — SHA-256, the workhorse hash function
-> - [Module 3](../Module-03-Bitcoin-Network-Consensus/Reading.md) — Difficulty adjustment, the longest-cumulative-work chain rule
+> - [Module 1](../Module-01-Bitcoin-White-Paper-Origins/Reading.md), Halving schedule, white-paper §4 (PoW), §6 (incentives)
+> - [Module 2](../Module-02-Cryptographic-Foundations/Reading.md), SHA-256, the workhorse hash function
+> - [Module 3](../Module-03-Bitcoin-Network-Consensus/Reading.md), Difficulty adjustment, the longest-cumulative-work chain rule
 > - Some comfort with orders of magnitude (E for exa = 10^18, J for joule)
 
 ---
 
 ## ☕ A Story: The Hashrate That Migrated
 
-On **May 21, 2021**, the State Council of China issues a directive: *"Crack down on Bitcoin mining and trading activities and resolutely prevent the transmission of individual risks to the social field."* Provincial bans follow within weeks. By **June 18, 2021**, Sichuan — the province that hosted approximately **50% of global Bitcoin hashrate** during the wet-season hydroelectric peak — orders all crypto miners to shut down within ten days.
+On **May 21, 2021**, the State Council of China issues a directive: *"Crack down on Bitcoin mining and trading activities and resolutely prevent the transmission of individual risks to the social field."* Provincial bans follow within weeks. By **June 18, 2021**, Sichuan the province that hosted approximately **50% of global Bitcoin hashrate** during the wet-season hydroelectric peak orders all crypto miners to shut down within ten days.
 
-Bitcoin's global hashrate, which had climbed past **190 EH/s** in mid-May, collapses to roughly **85 EH/s** by mid-July — a **55% drop** in 60 days. The chain keeps producing blocks (slower — until the next difficulty adjustment, which adjusts down 28%, the second-largest single negative adjustment in history). Six confirmations now take ~22 minutes instead of ~10. Fees spike briefly.
+Bitcoin's global hashrate, which had climbed past **190 EH/s** in mid-May, collapses to roughly **85 EH/s** by mid-July a **55% drop** in 60 days. The chain keeps producing blocks (slower until the next difficulty adjustment, which adjusts down 28%, the second-largest single negative adjustment in history). Six confirmations now take ~22 minutes instead of ~10. Fees spike briefly.
 
-What follows is the most underrated economic-recovery story of the 2020s. Mining capacity does not disappear — it **migrates**. Containerized ASICs are loaded onto trucks, ships, and aircraft. Riot Platforms scales up in Rockdale, Texas. Marathon Digital and Cipher Mining expand US operations. Iris Energy and Foundry build out Manitoba and Quebec. Kazakhstan's coal- and gas-fired plants pick up substantial capacity. Russia's Siberian gas flares find new buyers.
+What follows is the most underrated economic-recovery story of the 2020s. Mining capacity does not disappear, it **migrates**. Containerized ASICs are loaded onto trucks, ships, and aircraft. Riot Platforms scales up in Rockdale, Texas. Marathon Digital and Cipher Mining expand US operations. Iris Energy and Foundry build out Manitoba and Quebec. Kazakhstan's coal- and gas-fired plants pick up substantial capacity. Russia's Siberian gas flares find new buyers.
 
-By **October 2021** — four months after the Chinese ban — global hashrate has fully recovered to pre-ban levels. By the **April 2024 halving**, it has tripled past **600 EH/s**, with the United States hosting approximately **40%** of global hashrate (up from ~5% in 2020). China's official market share: zero. Reality: nontrivial (semi-clandestine operations persist).
+By **October 2021** four months after the Chinese ban global hashrate has fully recovered to pre-ban levels. By the **April 2024 halving**, it has tripled past **600 EH/s**, with the United States hosting approximately **40%** of global hashrate (up from ~5% in 2020). China's official market share: zero. Reality: nontrivial (semi-clandestine operations persist).
 
-That story is your first lesson: **Bitcoin's mining decentralization is anti-fragile to state action — but only because mining can physically relocate within months.** Every framework in this module is in some sense a commentary on that property.
+That story is your first lesson: **Bitcoin's mining decentralization is anti-fragile to state action, but only because mining can physically relocate within months.** Every framework in this module is in some sense a commentary on that property.
 
 This module is the mechanism.
 
@@ -45,7 +45,7 @@ A miner constructs a candidate block, hashes its 80-byte header twice with SHA-2
 
 🎯 **MEMORIZE THIS.** Mining is *not* solving complex math. It is brute-force search for a number-input that produces a number-output below a threshold. The "puzzle" is statistical, not algorithmic.
 
-### The nonce is only 32 bits — so what gives?
+### The nonce is only 32 bits, so what gives?
 
 The nonce field is 4 bytes = 2^32 ≈ 4 billion values. Modern ASICs sweep that space in milliseconds. To get more search space, miners modify the **coinbase transaction** (which changes the Merkle root) and the **timestamp** (within a small bound). Both indirectly change the block header hash without changing the nonce.
 
@@ -102,7 +102,7 @@ Total ever issued = 50 × 210,000 + 25 × 210,000 + 12.5 × 210,000 + ... = ~21M
 | 5 (est.) | 1,050,000 | ~2028 | 1.5625 | 225 |
 | 6 (est.) | 1,260,000 | ~2032 | 0.78125 | 112.5 |
 
-🎯 **MEMORIZE THIS.** The April 2024 halving cut daily issuance from ~900 to ~450 BTC. At $60,000/BTC (April 2024 price), that's **$27M/day of new issuance** vs. ~$54M/day before — a sharp drop in miner revenue per terahash.
+🎯 **MEMORIZE THIS.** The April 2024 halving cut daily issuance from ~900 to ~450 BTC. At $60,000/BTC (April 2024 price), that's **$27M/day of new issuance** vs. ~$54M/day before, a sharp drop in miner revenue per terahash.
 
 ### Why halvings reshape the mining economy
 
@@ -130,7 +130,7 @@ Total ever issued = 50 × 210,000 + 25 × 210,000 + 12.5 × 210,000 + ... = ~21M
 | **ASIC (gen 5+)** | 2018-2024 | ~100 TH/s | ~30 J/TH | In service |
 | **ASIC (2024-26)** | 2024+ | ~250 TH/s (S21 Pro) | ~14-17 J/TH | Cutting edge |
 
-🎯 **Exam tip.** The ASIC transition (2013) ended the CPU/GPU mining era forever. "One CPU one vote" became "one joule one vote." Decentralization at the hardware-vendor level became a concern that persists in 2026 — **Bitmain (China)** + **MicroBT (China)** + **Canaan (China)** together produce >80% of new ASICs.
+🎯 **Exam tip.** The ASIC transition (2013) ended the CPU/GPU mining era forever. "One CPU one vote" became "one joule one vote." Decentralization at the hardware-vendor level became a concern that persists in 2026, **Bitmain (China)** + **MicroBT (China)** + **Canaan (China)** together produce >80% of new ASICs.
 
 ### Energy efficiency frontier
 
@@ -202,17 +202,17 @@ A solo home miner with one ASIC has roughly a **once-per-decade** expected block
 | **Binance Pool** | ~6% | Various |
 | Others | ~20% | Various |
 
-🚨 **Trap.** Pool centralization is a frequent CBP question. Foundry USA (Digital Currency Group subsidiary) + AntPool together ≈50% of hashrate as of 2025. This is a *coordination* concentration, not a *validation* concentration — pools propose blocks, but every full node still validates.
+🚨 **Trap.** Pool centralization is a frequent CBP question. Foundry USA (Digital Currency Group subsidiary) + AntPool together ≈50% of hashrate as of 2025. This is a *coordination* concentration, not a *validation* concentration, pools propose blocks, but every full node still validates.
 
 ### Stratum protocol
 
-Mining pools communicate with miners via the **Stratum protocol** (Stratum V1, Stratum V2). V2 (Pavel Moravec et al., 2019; production-ready by 2024) lets miners select transactions themselves rather than accepting the pool's template — addressing the centralization concern.
+Mining pools communicate with miners via the **Stratum protocol** (Stratum V1, Stratum V2). V2 (Pavel Moravec et al., 2019; production-ready by 2024) lets miners select transactions themselves rather than accepting the pool's template, addressing the centralization concern.
 
 ---
 
-## 💼 Case Study — The April 2024 Halving + the Inscription Wave
+## 💼 Case Study, The April 2024 Halving + the Inscription Wave
 
-**Situation.** Approaching the **April 20, 2024 halving** (block 840,000), miners faced a known cliff: subsidy dropping from 6.25 to 3.125 BTC. Marginal miners were widely expected to shut down post-halving. BTC was near its all-time high (~$70K) heading into the event. But something unusual had happened in the year prior: the **Ordinals / Inscriptions / BRC-20** wave (early 2023 onward) had pushed transaction fees from a typical 5-10% of miner revenue up to 30-60% in many blocks — with some single blocks earning more in fees than in subsidy.
+**Situation.** Approaching the **April 20, 2024 halving** (block 840,000), miners faced a known cliff: subsidy dropping from 6.25 to 3.125 BTC. Marginal miners were widely expected to shut down post-halving. BTC was near its all-time high (~$70K) heading into the event. But something unusual had happened in the year prior: the **Ordinals / Inscriptions / BRC-20** wave (early 2023 onward) had pushed transaction fees from a typical 5-10% of miner revenue up to 30-60% in many blocks, with some single blocks earning more in fees than in subsidy.
 
 **Decision.** Major miners (Marathon, Riot, CleanSpark, Cipher) bet on (a) BTC price continuing to rise, (b) inscription / runes / BRC-20 fee revenue staying significant, (c) operational efficiency improvements (S21 Pro deployment), and (d) ETF-driven demand sustaining price. Some miners hedged via OTC subsidy-locking deals; others stayed unhedged.
 
@@ -222,12 +222,12 @@ Mining pools communicate with miners via the **Stratum protocol** (Stratum V1, S
 
 1. **Fees, not just subsidy, will sustain Bitcoin security past 2140.** The 2024 halving was the first where fees were a meaningful fraction of revenue. The trajectory matters more than any single day.
 2. **Mining is a commodity business with brutal efficiency dynamics.** Each halving forces a 50% efficiency improvement (or 50% energy-cost reduction, or 50% price increase) just to maintain the same per-joule profitability. Capital allocation in this industry punishes complacency.
-3. **L1 protocol decisions affect mining economics.** The Ordinals / Inscriptions wave was enabled by Taproot (which made inscriptions practical) — a soft-fork from 2021 produced an emergent fee market three years later that materially changed halving math.
+3. **L1 protocol decisions affect mining economics.** The Ordinals / Inscriptions wave was enabled by Taproot (which made inscriptions practical), a soft-fork from 2021 produced an emergent fee market three years later that materially changed halving math.
 
 **Discussion (Socratic).**
 - Q1: If the 2028 halving sees fees drop back to 5% of revenue (no Inscriptions / Runes equivalent), what does the marginal-miner shutdown curve look like at BTC = $80K? At $200K?
 - Q2: A regulator argues that Foundry USA + AntPool's combined ~50% hashrate is a "systemic concentration risk." Construct the strongest argument for and against. What would actually break (and what wouldn't) if both pools went offline simultaneously?
-- Q3: The Inscriptions debate split the Bitcoin community in 2023 — some called it spam, others called it a feature. Was the protocol's permissionless nature vindicated by the resulting fee market, or compromised by the on-chain noise?
+- Q3: The Inscriptions debate split the Bitcoin community in 2023, some called it spam, others called it a feature. Was the protocol's permissionless nature vindicated by the resulting fee market, or compromised by the on-chain noise?
 
 ---
 
@@ -293,7 +293,7 @@ The most-cited examples (2024-2026):
 | "Bitcoin uses more energy than country X" | True (similar to Argentina or Norway). Also true for clothes dryers, ATM networks, and gold mining. The comparison's framing matters. |
 | "If subsidy drops to zero, security collapses" | A persistent worry. The plan: fees scale with on-chain value, replacing subsidy. Whether this works at 2140 is genuinely open. |
 | "China still dominates mining" | Officially: zero. Estimates: ~10% semi-clandestine. The US is the dominant jurisdiction in 2026. |
-| "A 51% attack would destroy Bitcoin" | A 51% attack could double-spend recent confirmations and censor — would not change supply or steal arbitrary coins. The chain (and the price) would survive; the attacker's ASIC fleet would lose value. |
+| "A 51% attack would destroy Bitcoin" | A 51% attack could double-spend recent confirmations and censor, would not change supply or steal arbitrary coins. The chain (and the price) would survive; the attacker's ASIC fleet would lose value. |
 
 ---
 
@@ -330,7 +330,7 @@ The most-cited examples (2024-2026):
 | **Stratum** | Pool-miner protocol; V1 default, V2 emerging |
 | **AsicBoost** | Hash-extension technique; overt allowed, covert was controversial |
 | **51% attack** | Majority hashrate attacker; limited scope of damage |
-| **Stranded energy** | Energy that can't economically reach load — flare gas, off-peak hydro |
+| **Stranded energy** | Energy that can't economically reach load, flare gas, off-peak hydro |
 | **Demand response** | Flexibility provided to grids by interruptible load |
 | **Cambridge CCAF** | Cambridge Centre for Alternative Finance; primary academic mining-energy source |
 
@@ -364,7 +364,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The 2140 fees-only question.** Block subsidy reaches zero around 2140. If Bitcoin's L1 fees aren't sufficient to incentivize mining at that point, the network's security weakens. Construct the strongest argument that fees *will* scale to sufficient by then AND the strongest argument they won't. What's the institutional implication for a 50-year Bitcoin treasury allocation?
 2. **The China-ban precedent.** May 2021's 50% hashrate drop did not break Bitcoin. Would a coordinated G7 ban produce the same result? Map the realistic relocation paths and timelines.
@@ -376,13 +376,13 @@ You now know:
 
 ## 📚 Further Reading
 
-- 📖 **Antonopoulos — *Mastering Bitcoin* 2e** Chapter 10 (Mining and Consensus).
-- 📖 **Narayanan et al. — *Bitcoin and Cryptocurrency Technologies*** Chapter 5 (Bitcoin Mining).
-- 📖 **Ammous — *The Bitcoin Standard*** Chapters 7-9 (sound money, deflation argument).
-- 📰 **Cambridge CCAF — Bitcoin Electricity Consumption Index** (ccaf.io/cbnsi/cbeci).
+- 📖 **Antonopoulos, *Mastering Bitcoin* 2e** Chapter 10 (Mining and Consensus).
+- 📖 **Narayanan et al., *Bitcoin and Cryptocurrency Technologies*** Chapter 5 (Bitcoin Mining).
+- 📖 **Ammous, *The Bitcoin Standard*** Chapters 7-9 (sound money, deflation argument).
+- 📰 **Cambridge CCAF, Bitcoin Electricity Consumption Index** (ccaf.io/cbnsi/cbeci).
 - 📰 **Bitcoin Mining Council quarterly reports** (bitcoinminingcouncil.com).
-- 📰 **Galaxy Digital — Mining Reports** (galaxy.com/research).
+- 📰 **Galaxy Digital, Mining Reports** (galaxy.com/research).
 - 📰 **Hashrate Index** (hashrateindex.com).
 - 📰 **Compass Mining + Braiins** podcasts and engineering blogs.
-- 🎓 **Stanford CS251 — Lecture 7-8** (Mining, Bitcoin Economics).
-- 🎓 **MIT 15.S12 — Lectures 5-6** (Blockchain Basics, Bitcoin Mining).
+- 🎓 **Stanford CS251, Lecture 7-8** (Mining, Bitcoin Economics).
+- 🎓 **MIT 15.S12, Lectures 5-6** (Blockchain Basics, Bitcoin Mining).

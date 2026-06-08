@@ -1,6 +1,6 @@
 # Module 7: Color Theory & Composition 🌈
 
-> **Why this module matters:** Color is the fastest storytelling tool in animation. Pixar's color department can change the emotional meaning of a scene without changing a single word of dialogue or a single keyframe of animation — just by adjusting the palette. Understanding how color works is not optional for any animator who wants to communicate intentionally.
+> **Why this module matters:** Color is the fastest storytelling tool in animation. Pixar's color department can change the emotional meaning of a scene without changing a single word of dialogue or a single keyframe of animation, just by adjusting the palette. Understanding how color works is not optional for any animator who wants to communicate intentionally.
 
 ---
 
@@ -8,9 +8,9 @@
 
 Pete Docter's *Inside Out* (2015) has one of the most thoughtfully designed color scripts in animated film history. The production's color department, led by Pixia Berger, made one foundational decision that governed all color choices: **the Joy-world of Riley's mind would be saturated, bright, high-contrast; the real world (San Francisco) would be progressively desaturated as Riley's emotional state deteriorated**.
 
-In the opening sequences, when Riley is happy, both the interior (her mind) and the exterior (her life) are warm and bright. As the film progresses and Riley becomes depressed, San Francisco grays and mutes — the streets become bluer and colder, the apartment darker and more claustrophobic — while simultaneously, the interior world becomes less colorful as islands of personality begin to collapse.
+In the opening sequences, when Riley is happy, both the interior (her mind) and the exterior (her life) are warm and bright. As the film progresses and Riley becomes depressed, San Francisco grays and mutes the streets become bluer and colder, the apartment darker and more claustrophobic while simultaneously, the interior world becomes less colorful as islands of personality begin to collapse.
 
-The film's climax — Riley breaking down at her parents' dinner table — is scored partly in color: the scene is almost monochromatic. Joy's yellow dress reads less warmly in the gray light. The restoration of emotional health is signaled first by color: warmth and saturation returning before any dialogue or action confirms the emotional shift.
+The film's climax Riley breaking down at her parents' dinner table is scored partly in color: the scene is almost monochromatic. Joy's yellow dress reads less warmly in the gray light. The restoration of emotional health is signaled first by color: warmth and saturation returning before any dialogue or action confirms the emotional shift.
 
 This is the professional use of color in animation. Not decoration. Storytelling.
 
@@ -18,19 +18,19 @@ This is the professional use of color in animation. Not decoration. Storytelling
 
 ## 🎬 Case Study: Mary Blair and the Color Language of *Cinderella* and *Peter Pan*
 
-Mary Blair (1911–1978) was Disney's most innovative color designer of the 1940s and 1950s, and her influence on animation color is more pervasive than almost any other single artist. Blair was not a timid colorist — she worked in high-key pastels, sharp complementary accents, and abstract shapes that were radically different from the naturalistic painting tradition that dominated Disney's backgrounds.
+Mary Blair (1911–1978) was Disney's most innovative color designer of the 1940s and 1950s, and her influence on animation color is more pervasive than almost any other single artist. Blair was not a timid colorist, she worked in high-key pastels, sharp complementary accents, and abstract shapes that were radically different from the naturalistic painting tradition that dominated Disney's backgrounds.
 
 Walt Disney hired Blair because she saw color differently from every other artist in the studio. Where other designers asked "what color is this object in reality?", Blair asked "what color should this object be to communicate this emotion in this moment?"
 
 **Her approach in practice:**
 
 For *Cinderella* (1950), Blair established the film's color language as a split between two worlds:
-- **The stepfamily's world:** muted, muddy, earth tones — no clean primary colors, no bright accents. Visual entropy.
+- **The stepfamily's world:** muted, muddy, earth tones, no clean primary colors, no bright accents. Visual entropy.
 - **The magical world:** clean pastels, sharp complementary accents (pale blue against warm pink), luminous. Visual order and possibility.
 
-Cinderella herself wears pale blue in both worlds — but in the stepfamily world, her blue reads as washed-out against the muddy palette; in the magical world, the same blue reads as vivid and alive against the pastel complementary palette.
+Cinderella herself wears pale blue in both worlds, but in the stepfamily world, her blue reads as washed-out against the muddy palette; in the magical world, the same blue reads as vivid and alive against the pastel complementary palette.
 
-**The color script as Blair invented it:** Blair created large-scale color studies for each major sequence before any painting began. These studies — essentially color thumbnails of the entire film — established not just what colors to use but how the color palette would change across the film's emotional arc. This is the direct ancestor of Pixar's color script process.
+**The color script as Blair invented it:** Blair created large-scale color studies for each major sequence before any painting began. These studies essentially color thumbnails of the entire film established not just what colors to use but how the color palette would change across the film's emotional arc. This is the direct ancestor of Pixar's color script process.
 
 🎯 **What the exam tests:** Mary Blair is frequently cited in assessments of animation color history. Know that the color script as a production tool originates with her work on Disney features of the late 1940s.
 
@@ -38,13 +38,13 @@ Cinderella herself wears pale blue in both worlds — but in the stepfamily worl
 
 ## 🎨 Case Study: *Wolfwalkers* and the Hand-Painted Color Philosophy
 
-Cartoon Saloon's *Wolfwalkers* (2020) represents an opposite approach to color from Pixar's computational precision. Director Tomm Moore and his team deliberately chose a color palette derived from Irish medieval illuminated manuscripts — saturated, high-contrast, with borders and line work that recall the Book of Kells.
+Cartoon Saloon's *Wolfwalkers* (2020) represents an opposite approach to color from Pixar's computational precision. Director Tomm Moore and his team deliberately chose a color palette derived from Irish medieval illuminated manuscripts, saturated, high-contrast, with borders and line work that recall the Book of Kells.
 
 The color philosophy of *Wolfwalkers* was built on two competing worlds:
-- **The walled colonial town** (English-controlled Kilkenny): desaturated, gray-brown, geometric, rectangular — color representing repression, order, and absence of nature
-- **The forest** (the wolf world): oversaturated beyond naturalism, with pinks, oranges, and greens pushed to their maximum intensity — color representing freedom, wildness, and connection to the living world
+- **The walled colonial town** (English-controlled Kilkenny): desaturated, gray-brown, geometric, rectangular, color representing repression, order, and absence of nature
+- **The forest** (the wolf world): oversaturated beyond naturalism, with pinks, oranges, and greens pushed to their maximum intensity, color representing freedom, wildness, and connection to the living world
 
-The transition between these worlds is always marked by a color temperature shift: entering the forest warms dramatically; returning to the town drains warmth from every shot. The film's emotional argument — that the living world is richer than the colonized one — is made entirely through color before any dialogue articulates it.
+The transition between these worlds is always marked by a color temperature shift: entering the forest warms dramatically; returning to the town drains warmth from every shot. The film's emotional argument that the living world is richer than the colonized one is made entirely through color before any dialogue articulates it.
 
 This represents a different philosophy from Pixar's color scripts: instead of managing emotional arcs through subtle palette variation, Cartoon Saloon uses saturated contrast as a blunt instrument that hits the audience at an almost physiological level.
 
@@ -83,7 +83,7 @@ In animation:
 - **High saturation** = energy, intensity, fantasy, youth, joy
 - **Low saturation** = realism, fatigue, sadness, age, grief, nostalgia
 
-*Up*'s opening montage moves from high saturation (young married life) to low saturation (grief, elderly Carl alone) — without dialogue — communicating the emotional arc of decades in four minutes.
+*Up*'s opening montage moves from high saturation (young married life) to low saturation (grief, elderly Carl alone) without dialogue communicating the emotional arc of decades in four minutes.
 
 ---
 
@@ -103,7 +103,7 @@ In animation:
 
 ## 🔬 The Color Script: Animation's Most Important Pre-Production Document
 
-The **color script** — a series of small color studies showing the palette of every major scene in a film, arranged in story order — is one of Pixar's most significant contributions to animation production methodology. Developed by Mary Blair for Disney's *Cinderella* (1950) and *Peter Pan* (1953), refined by Pixar's art departments from *A Bug's Life* (1998) onward, the color script has become a standard tool at every major animation studio.
+The **color script** a series of small color studies showing the palette of every major scene in a film, arranged in story order is one of Pixar's most significant contributions to animation production methodology. Developed by Mary Blair for Disney's *Cinderella* (1950) and *Peter Pan* (1953), refined by Pixar's art departments from *A Bug's Life* (1998) onward, the color script has become a standard tool at every major animation studio.
 
 ### What a Color Script Contains
 
@@ -113,7 +113,7 @@ The **color script** — a series of small color studies showing the palette of 
 | **Emotional progression** | The sequence of color studies read like a graph of the film's emotional arc |
 | **Lighting keys** | Notes on the dominant light source (warm/cool, interior/exterior, time of day) for each scene |
 | **Character contrast checks** | Verification that main characters read clearly against the scene palette |
-| **Transition studies** | Color studies for how scenes connect — does the color logic of scene A transition credibly into scene B? |
+| **Transition studies** | Color studies for how scenes connect, does the color logic of scene A transition credibly into scene B? |
 
 ### The Color Script in Practice: *Finding Nemo*
 
@@ -122,7 +122,7 @@ For *Finding Nemo* (2003), art director Ralph Eggleston created a color script t
 The color script established that:
 - Shallow reef scenes would be warm and highly saturated (before Nemo is taken)
 - Open ocean scenes would become progressively cooler and more desaturated as Marlin ventures deeper
-- The fish tank would be artificially bright and slightly wrong — too saturated, too perfectly arranged — to communicate that this world is constructed and unnatural
+- The fish tank would be artificially bright and slightly wrong too saturated, too perfectly arranged to communicate that this world is constructed and unnatural
 - The climactic sewer sequences would be nearly monochromatic
 
 Every shot in the film was measured against this plan. The result is a film where the color is doing narrative work in every frame.
@@ -131,7 +131,7 @@ Every shot in the film was measured against this plan. The result is a film wher
 
 ## 🖼️ Composition Principles in Animation
 
-Composition in animation is not static (as in photography or painting) — it is **kinetic**. The composition changes with every frame as characters move through the shot. Strong animation composition must:
+Composition in animation is not static (as in photography or painting), it is **kinetic**. The composition changes with every frame as characters move through the shot. Strong animation composition must:
 
 1. **Read clearly at every moment** of the shot (not just at the beginning or end)
 2. **Guide the eye** to the right place at the right time
@@ -145,7 +145,7 @@ Composition in animation is not static (as in photography or painting) — it is
 | **Leading lines** | Lines (architectural, natural, geometric) that lead the eye to the focal point |
 | **Figure-ground relationship** | High contrast between subject and background for maximum readability |
 | **Negative space** | Empty space used as actively as filled space; breathes the composition |
-| **Color contrast** | Warm vs cool, saturated vs desaturated — to separate planes |
+| **Color contrast** | Warm vs cool, saturated vs desaturated, to separate planes |
 
 ---
 
@@ -153,7 +153,7 @@ Composition in animation is not static (as in photography or painting) — it is
 
 ### Color Temperature and Depth
 
-Warm colors (red, orange, yellow) appear to **advance** — to come toward the viewer. Cool colors (blue, purple, green) appear to **recede** — to move away.
+Warm colors (red, orange, yellow) appear to **advance** to come toward the viewer. Cool colors (blue, purple, green) appear to **recede** to move away.
 
 In animation, this means:
 - Foreground characters are often warmer or more saturated than background characters
@@ -162,7 +162,7 @@ In animation, this means:
 
 ### Chromatic Aberration
 
-**Chromatic aberration** — in animation — is a stylistic effect that simulates the optical distortion of a camera lens where red and blue channels slightly misalign. In films like *Into the Spider-Verse*, chromatic aberration effects are applied selectively to create a sense of camera imperfection, visual energy, or specifically to signal dimensional boundary crossings.
+**Chromatic aberration** in animation is a stylistic effect that simulates the optical distortion of a camera lens where red and blue channels slightly misalign. In films like *Into the Spider-Verse*, chromatic aberration effects are applied selectively to create a sense of camera imperfection, visual energy, or specifically to signal dimensional boundary crossings.
 
 ### How Pixar Uses Color to Tell Story
 
@@ -239,12 +239,12 @@ The character's design intent (bright red = energetic, confident, visible) can b
 
 | Common Mistake | Correct Approach |
 |----------------|-----------------|
-| **All characters in saturated colors** | Varying saturation levels creates hierarchy — the most important character reads first |
+| **All characters in saturated colors** | Varying saturation levels creates hierarchy, the most important character reads first |
 | **Background palette too complex** | Backgrounds should support the foreground characters; simplify background color to 2–3 dominant hues |
 | **Light source color ignored** | The ambient light color tints everything; a scene in golden afternoon light makes even blue objects warm |
 | **Complementary colors at full saturation** | Red and green, blue and orange at full saturation vibrate and are uncomfortable to look at; reduce saturation of one |
 | **Character colors clash with scene palette** | Test character colors against all major background palettes in your production before approving the design |
-| **Ignoring value in favor of hue** | Two colors can be very different in hue but identical in value — they will not separate on screen regardless of how different they are conceptually |
+| **Ignoring value in favor of hue** | Two colors can be very different in hue but identical in value, they will not separate on screen regardless of how different they are conceptually |
 
 🎯 **What the exam tests:** Value contrast is the single most frequently tested concept in color theory for animation. Know that value (light vs dark) determines readability, and hue (color) determines emotional quality. A composition that works in grayscale works in color; one that only works in color is a weak composition.
 
@@ -262,7 +262,7 @@ How composition principles are applied varies significantly based on the format 
 | **Vertical mobile (9:16)** | Entirely different compositional logic; vertical emphasis | Characters must be placed in upper third; landscape compositions don't translate |
 | **Square social media (1:1)** | Center-heavy; most composition principles must be recalibrated | Safe zone is smaller than the frame; extreme compositions lose content in cropping |
 
-**The safe zone principle:** Every professional composition maintains a "safe zone" — the area of the frame that will be visible in all delivery formats and cropping situations. For broadcast: the inner 80% of the frame. For social: the inner 70%. Characters must fit within the safe zone for all critical information; decorative elements can extend to the frame edge.
+**The safe zone principle:** Every professional composition maintains a "safe zone", the area of the frame that will be visible in all delivery formats and cropping situations. For broadcast: the inner 80% of the frame. For social: the inner 70%. Characters must fit within the safe zone for all critical information; decorative elements can extend to the frame edge.
 
 ### The Compositional Impact of Aspect Ratio
 
@@ -285,7 +285,7 @@ How composition principles are applied varies significantly based on the format 
 |-----------|----------------------|
 | **"Complementary colors always look good together"** | Complementary colors at full saturation create uncomfortable visual vibration. Reduce saturation of one, or use unequal proportions (80% one color, 20% complement). |
 | **"Value and brightness are the same thing"** | Value is the lightness/darkness of a color independent of its hue. Brightness sometimes refers to luminosity or intensity in software. In art theory, use "value." |
-| **"Warm colors are always used for heroes"** | Color associations communicate roles within the specific production's palette logic. *Frozen*'s Elsa is consistently cool-blue, and she is not a villain — the blue communicates isolation and ice, not menace. |
+| **"Warm colors are always used for heroes"** | Color associations communicate roles within the specific production's palette logic. *Frozen*'s Elsa is consistently cool-blue, and she is not a villain, the blue communicates isolation and ice, not menace. |
 | **"The Rule of Thirds always produces better composition than center placement"** | Centered composition is a valid choice for stillness, power, inevitability. Miyazaki centers important moments deliberately. The rule is a default, not a requirement. |
 | **"High saturation = high quality"** | Saturation should serve the emotional goal. *Inside Out*'s climactic emotional moment is nearly desaturated. Many of the most emotionally powerful animation frames are low-saturation. |
 | **"Color scripts are made after animation begins"** | Color scripts are pre-production documents. They are made before any scene animation begins and govern all lighting and color decisions throughout production. |
@@ -316,13 +316,13 @@ These are the specific technical terms used in professional animation color disc
 1. Pixar's color scripts represent months of work before a frame of animation is produced. How does pre-planning color at this level of detail affect the spontaneity and creativity of individual animators and lighting artists working on specific scenes?
 2. *Wolfwalkers* uses color as a blunt thematic instrument (nature = bright, colonialism = gray). Pixar's *Inside Out* uses color as a subtle emotional barometer. Which approach creates a richer viewer experience, and does the answer depend on the intended audience age?
 3. The Rule of Thirds tells you where to place subjects in a frame. But Miyazaki frequently places characters in the exact center of the frame for dramatic effect. At what point does breaking a composition rule become a stylistic signature, and at what point is it simply wrong?
-4. Color associations are culturally variable — white signifies mourning in many East Asian cultures, red signifies good fortune in Chinese culture rather than danger. How should animation productions with global distribution ambitions approach color's communicative function differently from productions for a domestic market?
+4. Color associations are culturally variable, white signifies mourning in many East Asian cultures, red signifies good fortune in Chinese culture rather than danger. How should animation productions with global distribution ambitions approach color's communicative function differently from productions for a domestic market?
 
 ---
 
 ## 💼 Color Accessibility in Animation
 
-An often-overlooked dimension of animation color design is color accessibility — ensuring that the visual communication in a production reaches the approximately 8% of people with color vision deficiency (colloquially, "color blindness").
+An often-overlooked dimension of animation color design is color accessibility, ensuring that the visual communication in a production reaches the approximately 8% of people with color vision deficiency (colloquially, "color blindness").
 
 ### The Main Types of Color Vision Deficiency
 
@@ -345,7 +345,7 @@ An often-overlooked dimension of animation color design is color accessibility �
 |----------|-------------|-----------------|
 | **What color should this scene be?** | What emotion should this scene communicate? | High saturation = intensity/fantasy; low saturation = realism/grief |
 | **How do I choose a color for a character?** | What role does this character play, and what cultural associations does the production rely on? | Shape language applies to color: warm-active, cool-passive, neutral-balanced |
-| **The background fights with the character — how do I fix it?** | Do the character and background have enough value contrast? | Value contrast is more important than hue difference; check in grayscale |
+| **The background fights with the character, how do I fix it?** | Do the character and background have enough value contrast? | Value contrast is more important than hue difference; check in grayscale |
 | **How should the palette change through the film?** | What is the emotional arc of the story? | Map saturation and temperature to the arc; use color script |
 | **The composition feels wrong but I can't identify why** | Does it pass in grayscale? Is the focal point at a thirds intersection? Is there a tangent? | Check value first, then rule of thirds, then tangents |
 | **What size should this character be in the frame?** | What is their emotional importance in this specific moment? | Size in frame = importance/power; use deliberately |
@@ -357,32 +357,32 @@ An often-overlooked dimension of animation color design is color accessibility �
 
 You now know:
 
-- 🎨 **Color theory foundations** — wheel, value, saturation, and why value is most important
-- 🎭 **Color harmony systems** — monochromatic, analogous, complementary, triadic
-- 🖼️ **Composition principles** — rule of thirds, leading lines, figure-ground, negative space
-- 🎬 **Color in motion** — warm/cool depth, chromatic aberration, Pixar's color script system
-- 🌑 **Value and mood** — high-key, low-key, high-contrast, low-contrast
+- 🎨 **Color theory foundations**, wheel, value, saturation, and why value is most important
+- 🎭 **Color harmony systems**, monochromatic, analogous, complementary, triadic
+- 🖼️ **Composition principles**, rule of thirds, leading lines, figure-ground, negative space
+- 🎬 **Color in motion**, warm/cool depth, chromatic aberration, Pixar's color script system
+- 🌑 **Value and mood**, high-key, low-key, high-contrast, low-contrast
 
 **Next steps:**
 1. 🎥 Watch: [Videos.md](./Videos.md)
 2. ✏️ Quiz: [Quiz.md](./Quiz.md)
 3. 📋 Cheat Sheet: [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 8 — Digital Workflow & Tools](../Module-08-Digital-Workflow-Tools/Reading.md)
+4. ➡️ [Module 8, Digital Workflow & Tools](../Module-08-Digital-Workflow-Tools/Reading.md)
 
 ---
 
 ## 📚 Further Reading
 
-- 📘 Itten, J. (1961). *The Art of Color.* Van Nostrand Reinhold. — The foundational text.
-- 📘 Gurney, J. (2010). *Color and Light: A Guide for the Realist Painter.* Andrews McMeel. — Practical, beautiful, applicable to animation.
-- 🌐 Adobe Color (color.adobe.com) — Free color harmony explorer.
+- 📘 Itten, J. (1961). *The Art of Color.* Van Nostrand Reinhold., The foundational text.
+- 📘 Gurney, J. (2010). *Color and Light: A Guide for the Realist Painter.* Andrews McMeel., Practical, beautiful, applicable to animation.
+- 🌐 Adobe Color (color.adobe.com), Free color harmony explorer.
 
 **Advanced / Supplementary:**
-- 📘 Albers, J. (1963). *Interaction of Color.* Yale University Press. — The foundational academic text on how colors change perceived appearance based on their neighbors; essential for understanding simultaneous contrast.
-- 📘 Eiseman, L. (2006). *Color: Messages and Meanings.* Hand Books Press. — Cultural and psychological color associations across contexts.
-- 🎬 *Wolfwalkers* (2020, Apple TV+, Cartoon Saloon) — the definitive contemporary example of expressionistic color as thematic argument.
-- 🎬 *Inside Out* (2015, Pixar) — the standard case study for color script planning and saturation as emotional volume control.
-- 🎬 *Coco* (2017, Pixar) — neon complementary palette (orange marigolds against cool purple night) applied to every scene; the most deliberate complementary palette in recent Pixar history.
-- 🌐 [Pixar in a Box — Color](https://www.khanacademy.org/computing/pixar/color) — Free Khan Academy course on color science in animation, developed with Pixar's technical art department.
+- 📘 Albers, J. (1963). *Interaction of Color.* Yale University Press., The foundational academic text on how colors change perceived appearance based on their neighbors; essential for understanding simultaneous contrast.
+- 📘 Eiseman, L. (2006). *Color: Messages and Meanings.* Hand Books Press., Cultural and psychological color associations across contexts.
+- 🎬 *Wolfwalkers* (2020, Apple TV+, Cartoon Saloon), the definitive contemporary example of expressionistic color as thematic argument.
+- 🎬 *Inside Out* (2015, Pixar), the standard case study for color script planning and saturation as emotional volume control.
+- 🎬 *Coco* (2017, Pixar), neon complementary palette (orange marigolds against cool purple night) applied to every scene; the most deliberate complementary palette in recent Pixar history.
+- 🌐 [Pixar in a Box Color](https://www.khanacademy.org/computing/pixar/color) Free Khan Academy course on color science in animation, developed with Pixar's technical art department.
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*

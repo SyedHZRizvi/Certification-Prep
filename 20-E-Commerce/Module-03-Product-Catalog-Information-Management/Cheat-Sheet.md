@@ -170,11 +170,11 @@ PDP LCP                   → < 2.5s
 
 ## 🛡️ Compliance Anchors
 
-- **GS1 standards** — gs1.org (registration $250-$15,000)
-- **Google Product Taxonomy** — 5,400 categories
-- **Amazon Brand Registry** — requires registered trademark
-- **eBay GTIN requirement** — "Brand New" condition above $25
-- **EU AI Act 2024** — PIM-AI transparency on claims
+- **GS1 standards**, gs1.org (registration $250-$15,000)
+- **Google Product Taxonomy**, 5,400 categories
+- **Amazon Brand Registry**, requires registered trademark
+- **eBay GTIN requirement**, "Brand New" condition above $25
+- **EU AI Act 2024**, PIM-AI transparency on claims
 
 ---
 

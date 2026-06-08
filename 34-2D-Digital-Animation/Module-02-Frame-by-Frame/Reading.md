@@ -7,17 +7,17 @@ title: "Module 2: Frame-by-Frame Animation"
 
 ## The Flip Book That Started Everything
 
-Before software, before cels, before Disney — there was the flip book. A nineteenth-century inventor discovered that drawing slightly different pictures on successive pages and then flipping them quickly created the illusion of motion. That is still, at its core, what frame-by-frame animation is. Every drawing exists. Every drawing matters. Nothing is interpolated by a machine.
+Before software, before cels, before Disney, there was the flip book. A nineteenth-century inventor discovered that drawing slightly different pictures on successive pages and then flipping them quickly created the illusion of motion. That is still, at its core, what frame-by-frame animation is. Every drawing exists. Every drawing matters. Nothing is interpolated by a machine.
 
-The animators behind *Spider-Man: Into the Spider-Verse* talked publicly about their commitment to a principle they called "breaking the rules." They intentionally drew on twos (12 fps drawings) for Spider-Man's home universe while using different frame rates and smearing techniques for characters from other dimensions. The result felt kinetic, chaotic, and alive in a way that no purely software-tweened animation had ever achieved. They understood that audiences *feel* the difference between a drawing that a human hand made and a curve that a computer interpolated — even if they can't articulate why.
+The animators behind *Spider-Man: Into the Spider-Verse* talked publicly about their commitment to a principle they called "breaking the rules." They intentionally drew on twos (12 fps drawings) for Spider-Man's home universe while using different frame rates and smearing techniques for characters from other dimensions. The result felt kinetic, chaotic, and alive in a way that no purely software-tweened animation had ever achieved. They understood that audiences *feel* the difference between a drawing that a human hand made and a curve that a computer interpolated, even if they can't articulate why.
 
-This module teaches you to draw your animation. Every technique here — onion skinning, arcs, in-betweening, smear frames — is a discipline that makes your tweened work better even when you're not drawing frame by frame. Because you'll know what a *good* motion arc feels like.
+This module teaches you to draw your animation. Every technique here onion skinning, arcs, in-betweening, smear frames is a discipline that makes your tweened work better even when you're not drawing frame by frame. Because you'll know what a *good* motion arc feels like.
 
 ---
 
 ## 🧅 Onion Skinning
 
-Onion skinning is the digital equivalent of the traditional animator's light table. When a sheet of paper is placed on a light table, the animator can see through it to the drawings on the sheets below — the previous frames. Onion skinning shows you a semi-transparent "ghost" of nearby frames so you can judge where your current drawing sits in the sequence.
+Onion skinning is the digital equivalent of the traditional animator's light table. When a sheet of paper is placed on a light table, the animator can see through it to the drawings on the sheets below, the previous frames. Onion skinning shows you a semi-transparent "ghost" of nearby frames so you can judge where your current drawing sits in the sequence.
 
 ### Onion Skin Settings in Animate
 
@@ -44,7 +44,7 @@ Professional frame-by-frame animation is not drawn once and finished. It happens
 
 ### Stage 1: Key Poses
 
-Key poses (also called "extremes") are the most important positions in the motion — the beginning pose, the end pose, and any critical in-between moments. You draw these first, loosely, to establish the arc and timing of the motion.
+Key poses (also called "extremes") are the most important positions in the motion, the beginning pose, the end pose, and any critical in-between moments. You draw these first, loosely, to establish the arc and timing of the motion.
 
 Key poses in a walk cycle: the **contact position** (foot hitting the ground), the **down position** (body at its lowest), the **passing position** (one leg passing the other), and the **up position** (body at its highest).
 
@@ -70,7 +70,7 @@ Color is added after cleanup is approved. In Animate this usually means using th
 
 ## 🔄 In-Betweening by Hand
 
-In-betweening (or "tweening" in its hand-drawn sense) is the process of drawing the frames that exist between two key poses. Traditional studios had dedicated "in-betweeners" — junior animators whose job was to fill in the motion between the key poses drawn by senior animators.
+In-betweening (or "tweening" in its hand-drawn sense) is the process of drawing the frames that exist between two key poses. Traditional studios had dedicated "in-betweeners", junior animators whose job was to fill in the motion between the key poses drawn by senior animators.
 
 ### Spacing Charts
 
@@ -86,7 +86,7 @@ If the in-betweens are equally spaced (linear), motion feels mechanical. Most na
 - **Slow Out** (ease out): in-betweens clustered near the ending key pose
 - **Both**: motion that accelerates and then decelerates (most common for objects responding to gravity)
 
-> 🎯 **What the exam tests:** "Slow In / Slow Out" is one of the 12 Principles of Animation and describes the distribution of in-betweens relative to key poses. It is NOT the same as "ease in" and "ease out" in software — those are the software implementations of the same principle.
+> 🎯 **What the exam tests:** "Slow In / Slow Out" is one of the 12 Principles of Animation and describes the distribution of in-betweens relative to key poses. It is NOT the same as "ease in" and "ease out" in software, those are the software implementations of the same principle.
 
 ### Pose-to-Pose vs. Straight-Ahead
 
@@ -104,7 +104,7 @@ Most professional character animation uses **Pose-to-Pose** because it gives the
 
 ## 🌀 Arcs in Frame-by-Frame Animation
 
-Living things almost never move in perfectly straight lines. Arms swing in arcs. Heads nod in arcs. Even fast, snappy motion follows an arc — it's just a very tight arc.
+Living things almost never move in perfectly straight lines. Arms swing in arcs. Heads nod in arcs. Even fast, snappy motion follows an arc, it's just a very tight arc.
 
 ### Tracking Arcs
 
@@ -125,11 +125,11 @@ In Animate, you can enable **Show Motion Paths** to display the path of a moving
 
 ## 💫 The Smear Frame
 
-The smear frame is one of the most powerful and misunderstood techniques in animation. It is used in fast motion — especially when a body part moves so quickly that the human eye would not be able to track it as a discrete shape. Rather than simply removing the part (making it "snap" to its new position), the animator draws an intentionally distorted, elongated, or multiplied version of the part that spans the space between its starting and ending position.
+The smear frame is one of the most powerful and misunderstood techniques in animation. It is used in fast motion, especially when a body part moves so quickly that the human eye would not be able to track it as a discrete shape. Rather than simply removing the part (making it "snap" to its new position), the animator draws an intentionally distorted, elongated, or multiplied version of the part that spans the space between its starting and ending position.
 
 ### Smear Frames in Spider-Verse
 
-The animators on *Spider-Man: Into the Spider-Verse* used smear frames extensively for hand movements, head turns, and punching actions. They pushed these smears further than any mainstream studio had dared before — sometimes drawing six or eight ghost hands trailing off a character's arm, or stretching a head into an abstract shape that reads as "fast rotation" rather than any recognizable anatomy.
+The animators on *Spider-Man: Into the Spider-Verse* used smear frames extensively for hand movements, head turns, and punching actions. They pushed these smears further than any mainstream studio had dared before, sometimes drawing six or eight ghost hands trailing off a character's arm, or stretching a head into an abstract shape that reads as "fast rotation" rather than any recognizable anatomy.
 
 The reason it works: the human visual system, when processing fast motion, expects blur or stretch. A smear frame satisfies that expectation in a single drawing.
 
@@ -139,9 +139,9 @@ Japanese animation (anime) studios use smear frames extensively, often called "�
 
 ### Smear Frames in Cuphead
 
-Studio MDHR's *Cuphead* (2017) built its entire visual identity around 1930s Fleischer Brothers animation techniques, including aggressive smear frames for any fast motion. Because the game runs in real time, the smear frames are pre-baked into the sprite sheets — each action sequence has hand-drawn smear frames at the 1–2 frame marks.
+Studio MDHR's *Cuphead* (2017) built its entire visual identity around 1930s Fleischer Brothers animation techniques, including aggressive smear frames for any fast motion. Because the game runs in real time, the smear frames are pre-baked into the sprite sheets, each action sequence has hand-drawn smear frames at the 1–2 frame marks.
 
-### Smear Frame Types — Quick Reference
+### Smear Frame Types, Quick Reference
 
 | Type | When to Use | Example |
 |------|------------|---------|
@@ -152,9 +152,9 @@ Studio MDHR's *Cuphead* (2017) built its entire visual identity around 1930s Fle
 
 ### How to Draw a Smear Frame
 
-1. Identify the fast action — typically anything that lasts only 1–3 frames.
+1. Identify the fast action, typically anything that lasts only 1–3 frames.
 2. Draw the starting position and ending position as key poses.
-3. On the frame(s) between them, draw the "smear" — which can be:
+3. On the frame(s) between them, draw the "smear", which can be:
    - An elongated blur shape connecting start to end
    - A multiplied version of the body part at several positions simultaneously
    - An abstract shape that suggests fast movement without representing anatomy
@@ -246,7 +246,7 @@ Both shows demonstrate a core industry principle: **knowing when to use frame-by
 
 ## 🚨 Exam Trap Section
 
-- **Smear frames ≠ mistakes:** An examiner may present a multi-hand smear frame and ask if it's a "continuity error." It is not — it's an intentional technique.
+- **Smear frames ≠ mistakes:** An examiner may present a multi-hand smear frame and ask if it's a "continuity error." It is not, it's an intentional technique.
 - **"On twos" is a technique, not a bug:** At 12fps drawings at 24fps playback, the motion is intentionally less smooth. This is an artistic choice, not a technical limitation.
 - **Straight-ahead is not always better:** Some students assume straight-ahead is more "natural." For character acting scenes, pose-to-pose gives directors more control and is the professional standard.
 - **Cleanup ≠ tracing:** Cleanup artists interpret the rough, they don't mechanically trace it. A good cleanup artist understands the animation intent.
@@ -264,7 +264,7 @@ Both shows demonstrate a core industry principle: **knowing when to use frame-by
 
 ## 🎞️ Multi-Plane Composition in Frame-by-Frame
 
-Traditional animation used the multi-plane camera — a camera that could photograph layers of artwork at different depths simultaneously, creating a parallax effect as the camera moved. In digital frame-by-frame animation, this is simulated through:
+Traditional animation used the multi-plane camera, a camera that could photograph layers of artwork at different depths simultaneously, creating a parallax effect as the camera moved. In digital frame-by-frame animation, this is simulated through:
 
 | Technique | How | Software |
 |-----------|-----|---------|
@@ -293,17 +293,17 @@ Productions like *Wolfwalkers* (Cartoon Saloon, 2020) used extreme multi-plane d
 
 The bouncing ball is the "Hello World" of frame-by-frame animation. It tests:
 
-- **Arc** — does the ball follow a parabolic path?
-- **Squash** — does the ball flatten on impact?
-- **Stretch** — does the ball elongate during the fast downward fall?
-- **Slow In / Slow Out** — do the in-betweens cluster at the top (slow out before falling) and crowd before impact (slow in as gravity accelerates it)?
-- **Secondary action** — does the ball lose height with each bounce?
+- **Arc**, does the ball follow a parabolic path?
+- **Squash**, does the ball flatten on impact?
+- **Stretch**, does the ball elongate during the fast downward fall?
+- **Slow In / Slow Out**, do the in-betweens cluster at the top (slow out before falling) and crowd before impact (slow in as gravity accelerates it)?
+- **Secondary action**, does the ball lose height with each bounce?
 
 A bouncing ball that does all of these correctly is more complex than it looks, which is why animation schools use it as a first assignment.
 
 ---
 
-## 📊 The 12 Principles — Frame-by-Frame Relevance
+## 📊 The 12 Principles, Frame-by-Frame Relevance
 
 Disney's "12 Principles of Animation" (formalized by Ollie Johnston and Frank Thomas in *The Illusion of Life*) are most purely expressed in frame-by-frame work. Here's how the most exam-relevant principles apply:
 
@@ -335,7 +335,7 @@ Disney's "12 Principles of Animation" (formalized by Ollie Johnston and Frank Th
 | Cut-out only | YouTube creators, commercial studios | Low-medium | Fast |
 | Pure cut-out with no FbF | Explainer video companies | Low | Fastest |
 
-Frame-by-frame experience makes you a more valuable animator even in cut-out pipelines, because you understand what the software is trying to approximate — and you know when to take control back from it.
+Frame-by-frame experience makes you a more valuable animator even in cut-out pipelines, because you understand what the software is trying to approximate, and you know when to take control back from it.
 
 ---
 
@@ -346,14 +346,14 @@ Frame-by-frame experience makes you a more valuable animator even in cut-out pip
 - The professional workflow is key poses → rough in-betweens → cleanup → color.
 - In-betweening by hand requires understanding spacing: even spacing = mechanical; clustered spacing = natural ease.
 - All living motion follows arcs; track them with onion skins and fix kinked or broken arcs early.
-- Smear frames simulate fast motion through intentional distortion — used in Spider-Verse, anime, Cuphead, and Arcane.
+- Smear frames simulate fast motion through intentional distortion, used in Spider-Verse, anime, Cuphead, and Arcane.
 - Pose-to-Pose is the standard for character animation; Straight-Ahead for organic effects.
 
 ## ➡️ Next Steps
 
 [Module 3: Tweening & Motion Paths →](../Module-03-Tweening-Motion-Paths/Reading.md)
 
-With frame-by-frame fundamentals in hand, Module 3 shows you the other side: letting Animate interpolate between poses using motion tweens — and the art of customizing easing curves so the result feels just as alive as hand-drawn work.
+With frame-by-frame fundamentals in hand, Module 3 shows you the other side: letting Animate interpolate between poses using motion tweens, and the art of customizing easing curves so the result feels just as alive as hand-drawn work.
 
 ## 🎬 Software Tools for Frame-by-Frame in 2D Production
 
@@ -385,12 +385,12 @@ Different animation contexts call for different onion skin configurations:
 | Cleanup | Only previous frame | Full color | Off (to see lines clearly) |
 | Smear frame creation | 2 frames back, 2 forward | Full color | On (see both endpoints) |
 
-Experienced animators develop an instinct for when to increase the range (complex arc checking) vs. decrease it (single in-between focus). Toggling onion skins frequently during the drawing process — rather than leaving them always on — prevents visual noise that obscures the current drawing.
+Experienced animators develop an instinct for when to increase the range (complex arc checking) vs. decrease it (single in-between focus). Toggling onion skins frequently during the drawing process rather than leaving them always on prevents visual noise that obscures the current drawing.
 
 ---
 
 ## 📚 Further Reading
 
-- *The Animator's Survival Kit* — Richard Williams, Chapters 3–7 (timing, spacing, arcs, weight)
-- *Cartoon Animation* — Preston Blair (spacing charts, walk cycles, frame-by-frame principles)
-- Aaron Blaise YouTube channel — professional Disney animator demonstrating frame-by-frame technique
+- *The Animator's Survival Kit*, Richard Williams, Chapters 3–7 (timing, spacing, arcs, weight)
+- *Cartoon Animation*, Preston Blair (spacing charts, walk cycles, frame-by-frame principles)
+- Aaron Blaise YouTube channel, professional Disney animator demonstrating frame-by-frame technique

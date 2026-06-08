@@ -68,7 +68,7 @@ D. ARM template deployment directly
 
 ---
 
-### Q8. Yes/No — Log Analytics. *(Evaluate)*
+### Q8. Yes/No, Log Analytics. *(Evaluate)*
 
 **S1:** A workspace is bound to one Azure region; data stays in that region.
 **S2:** Default interactive retention is 30 days; you can extend up to 730 days.
@@ -98,7 +98,7 @@ D. Disabled
 ---
 
 ### Q11. A DINE policy fires for new resources. To bring **existing** non-compliant resources into compliance, you: *(Apply)*
-A. Wait — it's automatic
+A. Wait, it's automatic
 B. Create a remediation task on the policy assignment
 C. Delete and re-create the resources
 D. Apply an Audit policy alongside
@@ -145,7 +145,7 @@ D. Network flow logs
 
 ---
 
-### Q17. Yes/No — KQL. *(Apply)*
+### Q17. Yes/No, KQL. *(Apply)*
 
 **S1:** `where TimeGenerated > ago(1h)` filters to the last hour.
 **S2:** `summarize count() by Url` aggregates rows.
@@ -189,7 +189,7 @@ D. 1 → 2 → 3 → 5 → 4
 
 ---
 
-### Q21. Yes/No — Resource locks (recap). *(Evaluate)*
+### Q21. Yes/No, Resource locks (recap). *(Evaluate)*
 
 **S1:** A `ReadOnly` lock at the subscription affects every child resource.
 **S2:** `CanNotDelete` is generally preferred over `ReadOnly` to avoid breaking operations.
@@ -247,7 +247,7 @@ MMA / Log Analytics Agent / OMS Agent are all legacy.
 Workspace first, then agent + DCR (parallel), then associate DCR with the VM. Any of A or D answers are acceptable depending on exact wording; the safest sequencing puts workspace creation first.
 
 ### Q7: **D. ARM template deployment directly**
-Action groups invoke automation runbooks, Logic Apps, or Functions — they don't deploy ARM templates directly.
+Action groups invoke automation runbooks, Logic Apps, or Functions, they don't deploy ARM templates directly.
 
 ### Q8: **A. Yes / Yes / Yes**
 All correct workspace facts.

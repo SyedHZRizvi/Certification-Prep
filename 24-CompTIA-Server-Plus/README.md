@@ -9,7 +9,7 @@ title: CompTIA Server+ Track (SK0-005)
 
 > **Goal:** Pass CompTIA Server+ (SK0-005) on the first attempt with a comfortable margin above 750/900.
 > **Duration:** 5–7 weeks part-time (8–10 hrs/week)
-> **Cost:** ~$369 USD (single voucher); cert is lifetime — no renewal required
+> **Cost:** ~$369 USD (single voucher); cert is lifetime, no renewal required
 > **Difficulty:** Intermediate · CompTIA recommends ~18–24 months of IT experience (A+ / Network+ helpful but not required)
 
 ---
@@ -18,28 +18,28 @@ title: CompTIA Server+ Track (SK0-005)
 
 ### 🎯 The promise
 
-CompTIA Server+ (SK0-005) is the credential that proves you can specify, deploy, secure, and recover real server infrastructure — physical and virtual, Windows and Linux, on-prem and hybrid. It is the only vendor-neutral server-admin certification recognized by the US Department of Defense (DoD 8140), and it is a **lifetime** credential (no renewal fees, ever). Pass Server+ and you stop being an end-user PC tech; you are recognized as someone trusted with the iron — and the data — that runs the business.
+CompTIA Server+ (SK0-005) is the credential that proves you can specify, deploy, secure, and recover real server infrastructure physical and virtual, Windows and Linux, on-prem and hybrid. It is the only vendor-neutral server-admin certification recognized by the US Department of Defense (DoD 8140), and it is a **lifetime** credential (no renewal fees, ever). Pass Server+ and you stop being an end-user PC tech; you are recognized as someone trusted with the iron and the data, that runs the business.
 
 ### 💼 Career outcomes after passing
 
-- **Server Administrator / Systems Administrator** ($75K–$105K) — running Windows / Linux server fleets day-to-day
-- **Data Center Technician** ($55K–$80K) — rack, stack, cable, troubleshoot at colos and hyperscaler edge
-- **Virtualization Engineer (VMware / Hyper-V / KVM)** ($95K–$135K) — vSphere / Hyper-V at enterprise scale
-- **Storage Administrator** ($90K–$130K) — SAN / NAS / iSCSI / FC, backup, replication
-- **DevOps / Infrastructure Engineer** ($110K–$150K) — bridge from server admin to cloud / automation
-- **Site Reliability Engineer (infra-leaning)** ($120K–$165K) — Server+ plus Linux+ plus a cloud credential
-- **IT Operations Manager** ($100K–$140K) — typical 3–5 years post-Server+ with strong delivery record
+- **Server Administrator / Systems Administrator** ($75K–$105K), running Windows / Linux server fleets day-to-day
+- **Data Center Technician** ($55K–$80K), rack, stack, cable, troubleshoot at colos and hyperscaler edge
+- **Virtualization Engineer (VMware / Hyper-V / KVM)** ($95K–$135K), vSphere / Hyper-V at enterprise scale
+- **Storage Administrator** ($90K–$130K), SAN / NAS / iSCSI / FC, backup, replication
+- **DevOps / Infrastructure Engineer** ($110K–$150K), bridge from server admin to cloud / automation
+- **Site Reliability Engineer (infra-leaning)** ($120K–$165K), Server+ plus Linux+ plus a cloud credential
+- **IT Operations Manager** ($100K–$140K), typical 3–5 years post-Server+ with strong delivery record
 
 Server+ pairs naturally with **Linux+ (course 23)**, **Network+ (course 22)**, and the Microsoft Windows Server Hybrid Admin track (course 25, AZ-800 + AZ-801). It is one of the highest-leverage credentials for the data-center-to-hybrid-cloud career path.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every concept introduced through a real data-center scenario (a failed RAID rebuild, a SAN multi-path outage, a hypervisor host failure during patching)
-- **Original questions only** — every quiz and practice exam written from CompTIA's published SK0-005 exam objectives; no copyrighted dumps
-- **Real-world case studies** — Knight Capital's 2012 server-deploy disaster, the AWS S3 2017 typo outage, a real hospital's disaster-recovery failover drill, Fukushima Daiichi's data-center power lessons
-- **One author, one voice** — coherent vocabulary across all 8 modules
-- **Updated for the SK0-005 blueprint** — including current iDRAC / iLO / BMC out-of-band management, NVMe-oF, modern hypervisor licensing realities (post-Broadcom VMware), and current backup-architecture norms (3-2-1-1-0)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every concept introduced through a real data-center scenario (a failed RAID rebuild, a SAN multi-path outage, a hypervisor host failure during patching)
+- **Original questions only**, every quiz and practice exam written from CompTIA's published SK0-005 exam objectives; no copyrighted dumps
+- **Real-world case studies**, Knight Capital's 2012 server-deploy disaster, the AWS S3 2017 typo outage, a real hospital's disaster-recovery failover drill, Fukushima Daiichi's data-center power lessons
+- **One author, one voice**, coherent vocabulary across all 8 modules
+- **Updated for the SK0-005 blueprint**, including current iDRAC / iLO / BMC out-of-band management, NVMe-oF, modern hypervisor licensing realities (post-Broadcom VMware), and current backup-architecture norms (3-2-1-1-0)
 
 ### 🚀 Ready to start?
 
@@ -53,14 +53,14 @@ Begin with [Module 1: Server Hardware →](./Module-01-Server-Hardware/Reading.m
 
 By the end of this track, you'll be able to:
 
-- Identify server hardware on sight — chassis form factors, redundant PSUs, ECC RAM modules, hot-swap bays, RAID controllers, and out-of-band management cards (iDRAC, iLO, IPMI, BMC)
+- Identify server hardware on sight, chassis form factors, redundant PSUs, ECC RAM modules, hot-swap bays, RAID controllers, and out-of-band management cards (iDRAC, iLO, IPMI, BMC)
 - Administer both Windows Server (AD DS, DNS, DHCP, IIS, Hyper-V) and Linux servers (systemd, common daemons, package managers)
 - Design storage systems: pick the right RAID level, decide SAN vs NAS, configure iSCSI/Fibre Channel, set up LUN masking and multipathing
 - Stand up virtualization environments using VMware vSphere, Hyper-V, KVM, plus containers (Docker, Kubernetes basics)
-- Plan disaster recovery — define RTO/RPO, pick backup strategies (full/incremental/differential/synthetic), implement the 3-2-1 rule, choose cold/warm/hot sites
-- Harden servers — RBAC, service accounts with least privilege, patch management, CIS benchmarks, HIDS/HIPS
-- Configure server-grade networking — NIC teaming, LACP, VLAN tagging, jumbo frames, load balancers
-- Troubleshoot systematically — interpret POST codes, beep codes, LED indicators; isolate performance bottlenecks across CPU/RAM/disk/network
+- Plan disaster recovery, define RTO/RPO, pick backup strategies (full/incremental/differential/synthetic), implement the 3-2-1 rule, choose cold/warm/hot sites
+- Harden servers, RBAC, service accounts with least privilege, patch management, CIS benchmarks, HIDS/HIPS
+- Configure server-grade networking, NIC teaming, LACP, VLAN tagging, jumbo frames, load balancers
+- Troubleshoot systematically, interpret POST codes, beep codes, LED indicators; isolate performance bottlenecks across CPU/RAM/disk/network
 
 ---
 
@@ -89,19 +89,19 @@ By the end of this track, you'll be able to:
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 5–8 | 65 Q / 65 min | ⭐⭐⭐⭐ |
 | [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before real exam | **90 Q / 90 min** | ⭐⭐⭐⭐⭐ |
 
-Score 85%+ on the Final Mock before booking the real exam. The real Server+ scaled cut is 750/900 (~83%) — practice higher to leave room for nerves.
+Score 85%+ on the Final Mock before booking the real exam. The real Server+ scaled cut is 750/900 (~83%), practice higher to leave room for nerves.
 
 ---
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[Professor Messer's free SK0-005 video course](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)** — Hundreds of bite-sized videos covering every objective. Pair them with the [Mike Meyers Server+ All-in-One Exam Guide](https://www.mheducation.com/highered/product/comptia-server-certification-all-in-one-exam-guide-fifth-edition-exam-sk0-005-rountree/M9781260469929.html) for breadth + depth.
+🔗 **[Professor Messer's free SK0-005 video course](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)**, Hundreds of bite-sized videos covering every objective. Pair them with the [Mike Meyers Server+ All-in-One Exam Guide](https://www.mheducation.com/highered/product/comptia-server-certification-all-in-one-exam-guide-fifth-edition-exam-sk0-005-rountree/M9781260469929.html) for breadth + depth.
 
 Honorable mentions:
 
-- 📘 *CompTIA Server+ Study Guide* (Troy McMillan, Sybex) — clear writing, scenario-heavy
-- 📘 *Mike Meyers Server+ All-in-One* — the most rigorous coverage; long but comprehensive
-- 📘 *CompTIA Server+ Cert Guide* (Pearson) — exam-aligned, lots of practice questions
+- 📘 *CompTIA Server+ Study Guide* (Troy McMillan, Sybex), clear writing, scenario-heavy
+- 📘 *Mike Meyers Server+ All-in-One*, the most rigorous coverage; long but comprehensive
+- 📘 *CompTIA Server+ Cert Guide* (Pearson), exam-aligned, lots of practice questions
 
 ---
 
@@ -113,10 +113,10 @@ Honorable mentions:
 | Exam code | SK0-005 (current version since 2020; long-life refresh) |
 | Cost | ~$369 USD |
 | Time | 90 minutes |
-| Questions | **Up to 90** — multiple-choice (single + multi) and Performance-Based Questions (PBQs) |
-| Pass mark | **750 / 900** (~83%) — scaled, not raw percentage |
+| Questions | **Up to 90**, multiple-choice (single + multi) and Performance-Based Questions (PBQs) |
+| Pass mark | **750 / 900** (~83%), scaled, not raw percentage |
 | Delivery | Pearson VUE test center OR online proctored |
-| Validity | **Lifetime** — no CEUs, no expiration. Rare among CompTIA certs. |
+| Validity | **Lifetime**, no CEUs, no expiration. Rare among CompTIA certs. |
 | Prerequisites | None official; CompTIA recommends A+ + Network+ + 18–24 months hands-on server experience |
 
 ### Domain Weights (Know Where to Spend Study Time)
@@ -128,7 +128,7 @@ Honorable mentions:
 | 3.0 Security & Disaster Recovery | **24%** | Modules 5, 6 |
 | 4.0 Troubleshooting | **28%** | Modules 3 (storage TS), 8 |
 
-Server Administration and Troubleshooting together are **58%** of the exam — don't shortchange Modules 2, 4, 7, and 8.
+Server Administration and Troubleshooting together are **58%** of the exam, don't shortchange Modules 2, 4, 7, and 8.
 
 ---
 
@@ -155,19 +155,19 @@ Week 7:    Module 8 + Flashcards drill + Final Mock → REAL EXAM
 
 ## ⚠️ The 7 Most Common Reasons People Fail
 
-1. ❌ **Underestimated RAID arithmetic** — You will be asked to compute usable capacity for RAID 5/6/10 with N disks. Drill until you can do it in 10 seconds.
-2. ❌ **Confused SAN with NAS** — SAN is block (presents LUNs over FC/iSCSI); NAS is file (NFS/SMB). Sec+ tests every angle.
-3. ❌ **Memorized RTO/RPO but couldn't apply them** — Scenarios give you a tolerance and ask you to pick a backup/replication strategy. Practice with numbers.
-4. ❌ **Skipped Linux** — At least 30% of admin questions assume systemd/SSH/permissions. Don't avoid Linux because you're Windows-first.
-5. ❌ **Treated virtualization as "the same as VM in my laptop"** — Type 1 vs Type 2, vMotion/live migration, snapshots vs templates vs clones — all tested.
-6. ❌ **Ignored out-of-band management** — iDRAC, iLO, IPMI, BMC are critical Server+ vocabulary. Know what they do and how they differ from in-band.
-7. ❌ **No time management on PBQs** — Like Sec+, the PBQs eat clock. Skip them, do the MCQs, return.
+1. ❌ **Underestimated RAID arithmetic**, You will be asked to compute usable capacity for RAID 5/6/10 with N disks. Drill until you can do it in 10 seconds.
+2. ❌ **Confused SAN with NAS**, SAN is block (presents LUNs over FC/iSCSI); NAS is file (NFS/SMB). Sec+ tests every angle.
+3. ❌ **Memorized RTO/RPO but couldn't apply them**, Scenarios give you a tolerance and ask you to pick a backup/replication strategy. Practice with numbers.
+4. ❌ **Skipped Linux**, At least 30% of admin questions assume systemd/SSH/permissions. Don't avoid Linux because you're Windows-first.
+5. ❌ **Treated virtualization as "the same as VM in my laptop"** Type 1 vs Type 2, vMotion/live migration, snapshots vs templates vs clones all tested.
+6. ❌ **Ignored out-of-band management**, iDRAC, iLO, IPMI, BMC are critical Server+ vocabulary. Know what they do and how they differ from in-band.
+7. ❌ **No time management on PBQs**, Like Sec+, the PBQs eat clock. Skip them, do the MCQs, return.
 
 ---
 
 ## 🃏 Use the Flashcards
 
-Server+ is acronym-heavy (RAID, iSCSI, IPMI, BMC, LACP, NFS, SMB, MTBF, MTTR, RTO, RPO, GFS, CIS, HIDS, HIPS…). The [Master Flashcards](./Flashcards.md) has 130+ cards covering every acronym, hardware spec, RAID math example, and DR concept. Drill them daily — even 10 minutes/day beats one 70-minute cram.
+Server+ is acronym-heavy (RAID, iSCSI, IPMI, BMC, LACP, NFS, SMB, MTBF, MTTR, RTO, RPO, GFS, CIS, HIDS, HIPS…). The [Master Flashcards](./Flashcards.md) has 130+ cards covering every acronym, hardware spec, RAID math example, and DR concept. Drill them daily, even 10 minutes/day beats one 70-minute cram.
 
 ---
 

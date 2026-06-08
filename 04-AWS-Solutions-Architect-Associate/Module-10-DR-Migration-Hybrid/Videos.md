@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🌉</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Storage Gateway — File, Volume, Tape</p>
+      <p class="vg-title">Storage Gateway, File, Volume, Tape</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 14 min · Hybrid bridge</span>
     </div>
@@ -144,7 +144,7 @@
 
 1. Name the 4 DR strategies cheapest → priciest.
 2. DMS vs SCT?
-3. Snowball vs DataSync — when to use each?
+3. Snowball vs DataSync, when to use each?
 4. Storage Gateway File vs Tape?
 5. Outposts vs Local Zones?
 

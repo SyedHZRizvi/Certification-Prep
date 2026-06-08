@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Server Administration (Windows & Linux)
 
-> **How to use:** Watch in the order shown. Pause and follow along on a VM if you can — you learn admin by doing.
+> **How to use:** Watch in the order shown. Pause and follow along on a VM if you can, you learn admin by doing.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Ansible Basics — Windows + Linux</p>
+      <p class="vg-title">Ansible Basics, Windows + Linux</p>
       <p class="vg-creator">Jeff Geerling</p>
       <span class="vg-duration">⏱ 25 min · Cross-platform automation</span>
     </div>

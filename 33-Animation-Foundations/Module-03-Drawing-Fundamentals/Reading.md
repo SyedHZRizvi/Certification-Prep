@@ -1,6 +1,6 @@
 # Module 3: Drawing Fundamentals for Animators ✏️
 
-> **Why this module matters:** Animators who cannot draw are limited to what rigs and software give them. Animators who can draw can *design* their performance — in thumbnail, in pose, in timing chart — before they ever open the software. Drawing is not about art; it is about visual thinking.
+> **Why this module matters:** Animators who cannot draw are limited to what rigs and software give them. Animators who can draw can *design* their performance in thumbnail, in pose, in timing chart before they ever open the software. Drawing is not about art; it is about visual thinking.
 
 > **Prerequisites:** Modules 1-2. You should understand what staging and solid drawing mean before we discuss how to achieve them with a pencil.
 
@@ -8,27 +8,27 @@
 
 ## 📖 A Story: The Gesture Drawing Session That Changed a Career
 
-It is 2015. A junior animator at DreamWorks Animation is struggling. She can operate Maya fluently, she can set keys, she can use the graph editor — but her animation is getting notes in every review: "stiff," "no weight," "the poses don't read." Her supervisor suggests something that sounds strange: take a life drawing class.
+It is 2015. A junior animator at DreamWorks Animation is struggling. She can operate Maya fluently, she can set keys, she can use the graph editor, but her animation is getting notes in every review: "stiff," "no weight," "the poses don't read." Her supervisor suggests something that sounds strange: take a life drawing class.
 
-She starts going twice a week. Two-minute poses. The first month is embarrassing — her drawings look nothing like the model. But gradually something shifts. She starts to *see* differently. She sees the line of action first — the main thrust of the pose, the direction of energy — and builds everything else around it. She starts seeing poses as shapes, not as body parts. She starts seeing negative space as intentionally as positive space.
+She starts going twice a week. Two-minute poses. The first month is embarrassing her drawings look nothing like the model. But gradually something shifts. She starts to *see* differently. She sees the line of action first the main thrust of the pose, the direction of energy, and builds everything else around it. She starts seeing poses as shapes, not as body parts. She starts seeing negative space as intentionally as positive space.
 
 Six months later, her animation notes change: "strong poses," "character comes through," "this reads." She never changed her software settings. She changed how she *sees*.
 
-This story is not exceptional. It is the norm at every studio. Life drawing is the consistent differentiator between animators who are technically competent and animators who are artistically capable. The drawing sessions teach observation skills — the same skills that determine whether an animator's reference study produces a mechanical copy or a living performance.
+This story is not exceptional. It is the norm at every studio. Life drawing is the consistent differentiator between animators who are technically competent and animators who are artistically capable. The drawing sessions teach observation skills, the same skills that determine whether an animator's reference study produces a mechanical copy or a living performance.
 
 ---
 
 ## ✏️ Gesture Drawing: The Foundation of Animation Pose
 
-**Gesture drawing** is not life drawing in the traditional sense. It is not about capturing every muscle accurately. It is about capturing **the line of action** — the main thrust of energy, weight, and movement — in as few strokes as possible.
+**Gesture drawing** is not life drawing in the traditional sense. It is not about capturing every muscle accurately. It is about capturing **the line of action** the main thrust of energy, weight, and movement in as few strokes as possible.
 
-The goal of a gesture drawing is to answer the question: **what is this figure doing?** Not *what does this figure look like,* but what is it *doing* — where is the weight, what is the direction of effort, what is the body communicating?
+The goal of a gesture drawing is to answer the question: **what is this figure doing?** Not *what does this figure look like,* but what is it *doing*, where is the weight, what is the direction of effort, what is the body communicating?
 
 ### The Line of Action
 
-Every strong pose has a **line of action** — a single curved line that runs through the torso and communicates the dominant direction of energy. A character reaching forward has a line of action that leans forward. A character cowering has a line that curves inward and downward. A character triumphant has a line that curves upward and outward.
+Every strong pose has a **line of action**, a single curved line that runs through the torso and communicates the dominant direction of energy. A character reaching forward has a line of action that leans forward. A character cowering has a line that curves inward and downward. A character triumphant has a line that curves upward and outward.
 
-The line of action is what makes a pose *read* at a distance. If you cannot draw the line of action for a pose, the pose does not have one — and the pose will not read.
+The line of action is what makes a pose *read* at a distance. If you cannot draw the line of action for a pose, the pose does not have one, and the pose will not read.
 
 **Practice: the 30-second rule.** A gesture drawing should take no more than 30-60 seconds for a timed studio session. This forces you to see the line first, the big shape second, and the details never (in the gesture phase). Use tools like Line of Action (line-of-action.com) or Quickposes.com for daily practice.
 
@@ -38,21 +38,21 @@ The line of action is what makes a pose *read* at a distance. If you cannot draw
 
 **Construction** is the principle that complex organic forms are built up from simple underlying geometric volumes. A head is an egg. A torso is a box with rounded edges. An upper arm is a cylinder. A forearm is a slightly tapered cylinder. Hands are boxes with fingers.
 
-Disney's greatest draughtsmen — Milt Kahl, Glen Keane, Andreas Deja — all use construction. Their drawings look fluid and alive, but they are built on underlying geometric scaffolding that gives them three-dimensional consistency.
+Disney's greatest draughtsmen Milt Kahl, Glen Keane, Andreas Deja all use construction. Their drawings look fluid and alive, but they are built on underlying geometric scaffolding that gives them three-dimensional consistency.
 
 ### Construction in Animation: Why It Matters
 
-A constructed character maintains **volume consistency** from angle to angle. If you draw a character's head from the front and then from a 3/4 view, the construction method ensures the head remains the same size and shape — you are simply rotating the same underlying egg.
+A constructed character maintains **volume consistency** from angle to angle. If you draw a character's head from the front and then from a 3/4 view, the construction method ensures the head remains the same size and shape, you are simply rotating the same underlying egg.
 
 Without construction, a character's proportions will drift from drawing to drawing. The audience feels this as an inconsistency in the character's "reality," even if they cannot articulate what is wrong.
 
 ### The Construction Checklist
 
-1. **Start with the line of action** — before you draw anything else
-2. **Block in the major volumes** — head, torso, pelvis as simple geometric forms
-3. **Place the joints** — shoulder, elbow, wrist, hip, knee, ankle as dots or spheres
-4. **Connect the joints with cylinders** — limbs are modified cylinders between joints
-5. **Refine on top** — muscle, costume, expression only after the structure is solid
+1. **Start with the line of action**, before you draw anything else
+2. **Block in the major volumes**, head, torso, pelvis as simple geometric forms
+3. **Place the joints**, shoulder, elbow, wrist, hip, knee, ankle as dots or spheres
+4. **Connect the joints with cylinders**, limbs are modified cylinders between joints
+5. **Refine on top**, muscle, costume, expression only after the structure is solid
 
 ---
 
@@ -69,7 +69,7 @@ Animators use perspective differently than background artists. You do not need t
 | **Overlapping** | Closer objects overlap farther objects; use this to establish depth |
 | **Converging parallels** | Lines recede to a vanishing point; character must follow these lines |
 
-**The fist punch test:** Animate a character punching toward the camera. The fist at full extension should appear large — much larger than the character's head — because it is closest to the camera. Beginners make the fist the same size as the head throughout the punch, and the punch has no impact. Perspective through foreshortening is what makes a punch feel like it comes off the screen.
+**The fist punch test:** Animate a character punching toward the camera. The fist at full extension should appear large much larger than the character's head because it is closest to the camera. Beginners make the fist the same size as the head throughout the punch, and the punch has no impact. Perspective through foreshortening is what makes a punch feel like it comes off the screen.
 
 ---
 
@@ -95,7 +95,7 @@ Animators use perspective differently than background artists. You do not need t
 
 **Reference is not cheating.** Every professional animator uses reference. The question is how you use it.
 
-*Wrong use of reference:* Copying the reference photograph literally, frame by frame, without interpretation. This produces technically accurate movement that has no animation performance — it is rotoscoping, not acting.
+*Wrong use of reference:* Copying the reference photograph literally, frame by frame, without interpretation. This produces technically accurate movement that has no animation performance, it is rotoscoping, not acting.
 
 *Right use of reference:* Studying reference to understand the *physics* of a movement (where is the weight? what arc does the arm trace?), then putting the reference aside and animating from your understanding. The reference informs your performance; it does not replace your performance.
 
@@ -127,9 +127,9 @@ Life drawing in an animation context is not about creating beautiful finished dr
 
 ## 🎬 Case Study: Glen Keane and the Search Line
 
-Glen Keane — Disney animator responsible for Ariel (*The Little Mermaid*, 1989), Beast (*Beauty and the Beast*, 1991), Aladdin (*Aladdin*, 1992), and Tarzan (*Tarzan*, 1999) — is considered by many to be the greatest living character animator. His drawing approach has been documented extensively in masterclasses and his 2021 book *Drawn to Life*.
+Glen Keane Disney animator responsible for Ariel (*The Little Mermaid*, 1989), Beast (*Beauty and the Beast*, 1991), Aladdin (*Aladdin*, 1992), and Tarzan (*Tarzan*, 1999) is considered by many to be the greatest living character animator. His drawing approach has been documented extensively in masterclasses and his 2021 book *Drawn to Life*.
 
-Keane describes his foundational drawing concept as the **"search line"** — the idea that the best gesture drawing is not a single confident stroke, but a series of searching marks that find the right line through iteration. The search line is messy. Multiple marks explore the gesture before one correct line emerges. The final drawing is built on top of this search.
+Keane describes his foundational drawing concept as the **"search line"**, the idea that the best gesture drawing is not a single confident stroke, but a series of searching marks that find the right line through iteration. The search line is messy. Multiple marks explore the gesture before one correct line emerges. The final drawing is built on top of this search.
 
 This contradicts the popular idea that great drawing = confident, single-stroke marks. Professional animators do not draw confidently on the first mark; they *find* the line through multiple attempts. Digital tools that make every mark visible have given students a false impression that confident single-stroke drawing is the goal.
 
@@ -139,7 +139,7 @@ This contradicts the popular idea that great drawing = confident, single-stroke 
 3. Overlay with a third that refines further
 4. The final line is drawn on top of all three searches, confident because the search has already solved the problem
 
-The distinction between a "tight" finished drawing and a "loose" gesture is not about neatness — it is about what stage of the process you are in. Gesture is always loose. Finished drawings are tightened on top of loose gestures.
+The distinction between a "tight" finished drawing and a "loose" gesture is not about neatness, it is about what stage of the process you are in. Gesture is always loose. Finished drawings are tightened on top of loose gestures.
 
 🎯 **What the exam tests:** Know that professional gesture drawing is a process, not a single-stroke output. The search line concept explains why professional gesture drawings often look messier than student work that has been carefully outlined.
 
@@ -151,18 +151,18 @@ The assumption that digital animation has made drawing obsolete is one of the mo
 
 **At Pixar:** Every animation production begins with a "visual development" phase that is entirely drawing-based. Character designers, production designers, and story artists fill walls with charcoal sketches, watercolor studies, and thumbnail explorations before a single 3D asset is built. The drawing phase establishes the visual language, the emotional palette, and the character design that will govern the entire production. *Up*'s famous opening montage was fully story-boarded and emotionally tested in 2D before any production pipeline was established.
 
-**At Disney Feature Animation:** The studio maintains a life drawing program that is available — and strongly encouraged — for all animators regardless of whether they work in 2D or 3D. Glen Keane, the legendary Disney animator responsible for Ariel, Beast, Aladdin, and Tarzan, argues in his masterclasses that drawing from life is not a warm-up exercise; it is the primary tool for maintaining your ability to *see* — which is the foundation of all animation skill.
+**At Disney Feature Animation:** The studio maintains a life drawing program that is available and strongly encouraged for all animators regardless of whether they work in 2D or 3D. Glen Keane, the legendary Disney animator responsible for Ariel, Beast, Aladdin, and Tarzan, argues in his masterclasses that drawing from life is not a warm-up exercise; it is the primary tool for maintaining your ability to *see*, which is the foundation of all animation skill.
 
 **Glen Keane's "Drawn to Life" principle:** Keane's methodology, documented in his 2021 memoir and masterclass series, argues that the act of drawing a character from imagination forces the animator to solve visual problems that rigging and software tools otherwise obscure. When you cannot adjust a slider to "fix" a character's weight, you must understand weight. Drawing is the constraint that produces genuine understanding.
 
 ### The Production Drawing Test
 
-Many studios use a "production drawing test" as part of the hiring process for animators — even for 3D positions. The test typically involves:
+Many studios use a "production drawing test" as part of the hiring process for animators, even for 3D positions. The test typically involves:
 1. Drawing a given character from an unfamiliar angle (tests construction understanding)
 2. Drawing a character in an extreme action pose (tests gesture and line of action)
 3. Drawing a character reacting to a described emotional situation (tests ability to translate emotion into visual form)
 
-Animators who have maintained a drawing practice consistently outperform those who have not — regardless of their software skills.
+Animators who have maintained a drawing practice consistently outperform those who have not, regardless of their software skills.
 
 ---
 
@@ -176,7 +176,7 @@ The shift to digital drawing (Wacom tablets, iPads with Apple Pencil, Procreate)
 |-----------|--------------------------|--------------------------|
 | **Tactile feedback** | Direct; texture of paper against pencil | Reduced; glass surface is slippery |
 | **Mark quality** | Analogue; infinite variation in pressure and texture | Pressure-sensitive; simulated texture |
-| **Undo/redo** | None — encourages commitment | Infinite — can reduce commitment and spontaneity |
+| **Undo/redo** | None encourages commitment | Infinite can reduce commitment and spontaneity |
 | **Layering** | Lightbox required; physically limited | Unlimited digital layers |
 | **Color** | Requires separate media (watercolor, marker) | Integrated; instant |
 | **File management** | Physical; always exists | Digital; requires backup discipline |
@@ -188,13 +188,13 @@ The shift to digital drawing (Wacom tablets, iPads with Apple Pencil, Procreate)
 
 ## 📐 The Flour Sack Exercise: Why It Persists
 
-Every animation program in the world — CalArts, Gobelins, Ringling, Animation Mentor — uses the flour sack exercise as a foundational teaching tool. It is not a beginner exercise; it is a lifelong reference.
+Every animation program in the world CalArts, Gobelins, Ringling, Animation Mentor uses the flour sack exercise as a foundational teaching tool. It is not a beginner exercise; it is a lifelong reference.
 
 The flour sack is an amorphous blob with implied but non-rigid mass. It has no skeleton. It has no face. It has only:
-- **Volume** — it is clearly a contained mass of substance
-- **Weight** — it responds to gravity and momentum
-- **Squash and stretch potential** — it can deform without limits
-- **Personality potential** — despite having no fixed features, it can express emotion through pose and timing
+- **Volume**, it is clearly a contained mass of substance
+- **Weight**, it responds to gravity and momentum
+- **Squash and stretch potential**, it can deform without limits
+- **Personality potential**, despite having no fixed features, it can express emotion through pose and timing
 
 ### The Flour Sack as Principle Demonstration
 
@@ -208,7 +208,7 @@ The flour sack is an amorphous blob with implied but non-rigid mass. It has no s
 | **Weight** | Timing determines whether it reads as 5lbs of flour or 50lbs |
 | **Appeal** | Without face or skeleton, the sack must still be engaging to watch |
 
-Completing a flour sack exercise with genuine control — demonstrating all seven of the above principles with intention — is a meaningful milestone that predicts competence in all subsequent animation work.
+Completing a flour sack exercise with genuine control demonstrating all seven of the above principles with intention is a meaningful milestone that predicts competence in all subsequent animation work.
 
 🎯 **What the exam tests:** The flour sack exercise is frequently referenced in assessments as a measure of foundational understanding. Know what it demonstrates and why it is the universal first exercise rather than a more complex character.
 
@@ -227,11 +227,11 @@ Completing a flour sack exercise with genuine control — demonstrating all seve
 | **Parallel tangent** | Character's arm runs exactly parallel to body edge | Merges two forms that should read separately | Vary the angle between limb and body |
 | **Symmetry tangent** | Pose is exactly symmetrical (twins) | Reads as mechanical, dead, robotic | Introduce weight shift; break the symmetry |
 
-**The tangent in practice:** This is most visible in 2D animation when characters are posed against backgrounds. A character standing against a horizon line that exactly aligns with their shoulder creates a tangent — the shoulder appears to be sitting on a shelf rather than connected to a body in three-dimensional space.
+**The tangent in practice:** This is most visible in 2D animation when characters are posed against backgrounds. A character standing against a horizon line that exactly aligns with their shoulder creates a tangent, the shoulder appears to be sitting on a shelf rather than connected to a body in three-dimensional space.
 
 The same problem occurs in 3D animation when characters are composited against environments: a character whose head silhouette exactly aligns with a doorframe, pole, or window edge creates a visual confusion that pulls the audience's attention away from the performance.
 
-🎯 **What the exam tests:** Tangents are tested through scenario description — "a character stands with their arm running exactly parallel to their torso. What problem does this create and how do you fix it?" Know the type, the cause, and the solution.
+🎯 **What the exam tests:** Tangents are tested through scenario description, "a character stands with their arm running exactly parallel to their torso. What problem does this create and how do you fix it?" Know the type, the cause, and the solution.
 
 ---
 
@@ -239,11 +239,11 @@ The same problem occurs in 3D animation when characters are composited against e
 
 | Mistake | Correction |
 |---------|-----------|
-| **Drawing from the wrist** | Draw from the shoulder — larger movements, more confident marks |
+| **Drawing from the wrist** | Draw from the shoulder, larger movements, more confident marks |
 | **Outlining before structuring** | Construction first, outline last (or never) |
 | **Symmetrical poses** | Living things are rarely symmetrical; vary the weight distribution |
 | **Tangents** | Two lines that just touch at a single point create visual confusion; overlap instead |
-| **Drawing every body part separately** | Draw the gesture/line of action first — the parts exist in service of the whole |
+| **Drawing every body part separately** | Draw the gesture/line of action first, the parts exist in service of the whole |
 | **Fear of negative space** | The space around a pose is as compositionally important as the pose itself |
 
 ---
@@ -264,7 +264,7 @@ Understanding which drawing exercises build which skills helps you design a prac
 
 **Reading the matrix:** No single exercise builds everything. A complete drawing practice alternates between fast gesture (observation and speed), construction exercises (volume and consistency), and master copies (studying professional solutions to hard problems). The animators at Disney who maintained the strongest drawing practices during the golden age typically did all three categories, daily.
 
-**The master copy exercise:** Choosing a single frame from a film you admire — ideally a challenging pose or an extreme expression — and drawing it from observation (not tracing) builds more skill per hour than almost any other exercise. The goal is not a perfect replica; it is to understand *why the original animator made those specific choices.*
+**The master copy exercise:** Choosing a single frame from a film you admire ideally a challenging pose or an extreme expression and drawing it from observation (not tracing) builds more skill per hour than almost any other exercise. The goal is not a perfect replica; it is to understand *why the original animator made those specific choices.*
 
 ---
 
@@ -274,21 +274,21 @@ The drawing skills required for 2D animation differ from those most directly app
 
 | Skill | 2D Animation Priority | 3D Animation Priority |
 |-------|----------------------|----------------------|
-| **Clean line quality** | Essential — every line appears in the final frame | Lower — lines are usually replaced by rendered geometry |
-| **Volume consistency across angles** | Essential — animator draws the character from all angles | Lower — the rig handles volume consistency |
-| **Gesture and line of action** | Essential — is the foundation of every key pose drawing | High — used in pose thumbnailing before setting keys |
-| **Construction volumes** | Essential — prevents form drift | High — used to understand how to pose rigs |
-| **Foreshortening** | Essential — the drawn frame must create the illusion of depth | Medium — 3D space handles actual depth; still needed for posing |
-| **Timing charts** | Essential — communicates to in-betweeners | Lower — replaced by graph editor work |
+| **Clean line quality** | Essential every line appears in the final frame | Lower lines are usually replaced by rendered geometry |
+| **Volume consistency across angles** | Essential animator draws the character from all angles | Lower the rig handles volume consistency |
+| **Gesture and line of action** | Essential is the foundation of every key pose drawing | High used in pose thumbnailing before setting keys |
+| **Construction volumes** | Essential prevents form drift | High used to understand how to pose rigs |
+| **Foreshortening** | Essential the drawn frame must create the illusion of depth | Medium 3D space handles actual depth; still needed for posing |
+| **Timing charts** | Essential communicates to in-betweeners | Lower replaced by graph editor work |
 
-**The conclusion:** 2D animation demands more direct drawing skill in the final output. 3D animation demands drawing skill in the planning and conceiving phase. In both cases, the animator who can draw well will produce better work than the one who cannot — but the role of drawing in the daily workflow is different.
+**The conclusion:** 2D animation demands more direct drawing skill in the final output. 3D animation demands drawing skill in the planning and conceiving phase. In both cases, the animator who can draw well will produce better work than the one who cannot, but the role of drawing in the daily workflow is different.
 
 ---
 
 ## 💬 Socratic Questions for Discussion
 
 1. If digital tools allow unlimited undo and perfect technical precision, does the concept of "drawing skill" need to be redefined for a generation of animators who learned on tablets? What remains irreducibly valuable about mark-making confidence?
-2. Glen Keane argues that drawing forces you to understand what you are drawing. Does 3D software's ability to "solve" volume problems automatically — by maintaining geometry during deformation — reduce the animator's understanding of those problems, or simply shift the cognitive load to different problems?
+2. Glen Keane argues that drawing forces you to understand what you are drawing. Does 3D software's ability to "solve" volume problems automatically by maintaining geometry during deformation reduce the animator's understanding of those problems, or simply shift the cognitive load to different problems?
 3. The flour sack exercise was invented before computers existed. Is it still the best foundational exercise for a 3D animator, or does it need to be supplemented or replaced by something more directly applicable to a rig-based workflow?
 4. Life drawing classes in animation programs teach observation of the human figure. What is the equivalent for animators who primarily animate creatures, vehicles, or abstract forms?
 
@@ -309,7 +309,7 @@ Animators use multiple simultaneous depth cues to establish three-dimensional sp
 | **Foreshortening** | Objects pointing toward camera appear shorter | Punching fist, extended arm toward camera should appear large |
 | **Focus/blur** | Closer objects are in sharper focus | 3D productions use depth of field; 2D uses manual blur on background elements |
 
-**The most commonly missed depth cue in student animation:** Aerial perspective — the tendency to paint or shade all background elements with the same saturation as foreground elements. Real-world depth involves progressive desaturation of distant elements. Applying aerial perspective to backgrounds instantly adds perceived depth without changing a single character drawing.
+**The most commonly missed depth cue in student animation:** Aerial perspective, the tendency to paint or shade all background elements with the same saturation as foreground elements. Real-world depth involves progressive desaturation of distant elements. Applying aerial perspective to backgrounds instantly adds perceived depth without changing a single character drawing.
 
 ---
 
@@ -340,7 +340,7 @@ Many animation programs and professional development communities use structured 
 
 **Days 81–100:** Daily master copy from a professional animation still. Focus: study why the original animator made the staging, weight, and pose choices they made.
 
-This progression moves from observation (gesture) to structure (construction) to animation application (flour sack) to professional analysis (master copy). Completing the 100 days produces 3,000+ gesture drawings, 600+ construction figures, 20 flour sack animations, and 20 professional animation analyses — a solid foundation for any subsequent animation work.
+This progression moves from observation (gesture) to structure (construction) to animation application (flour sack) to professional analysis (master copy). Completing the 100 days produces 3,000+ gesture drawings, 600+ construction figures, 20 flour sack animations, and 20 professional animation analyses, a solid foundation for any subsequent animation work.
 
 ---
 
@@ -362,33 +362,33 @@ This progression moves from observation (gesture) to structure (construction) to
 
 You now know:
 
-- ✏️ **Gesture drawing** — the line of action, 30-second practice, what "gesture" actually means
-- 🏗️ **Construction method** — building forms from geometric volumes for consistency
-- 📐 **Perspective** — foreshortening, overlapping, relative size, the fist punch test
-- 📏 **Proportion systems** — 5:1 vs 7:1 vs chibi, and why consistency matters
-- 🖊️ **Reference use** — the professional approach (study-then-draw, not copy)
-- 🎭 **Life drawing** — the four specific skills it builds and why it is not optional
+- ✏️ **Gesture drawing**, the line of action, 30-second practice, what "gesture" actually means
+- 🏗️ **Construction method**, building forms from geometric volumes for consistency
+- 📐 **Perspective**, foreshortening, overlapping, relative size, the fist punch test
+- 📏 **Proportion systems**, 5:1 vs 7:1 vs chibi, and why consistency matters
+- 🖊️ **Reference use**, the professional approach (study-then-draw, not copy)
+- 🎭 **Life drawing**, the four specific skills it builds and why it is not optional
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
 2. ✏️ Take the quiz: [Quiz.md](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. 🖊️ Do 20 minutes of gesture drawing at [line-of-action.com](https://line-of-action.com) — before moving to Module 4
-5. ➡️ Move on: [Module 4 — Storyboarding & Animatics](../Module-04-Storyboarding-Animatics/Reading.md)
+4. 🖊️ Do 20 minutes of gesture drawing at [line-of-action.com](https://line-of-action.com), before moving to Module 4
+5. ➡️ Move on: [Module 4, Storyboarding & Animatics](../Module-04-Storyboarding-Animatics/Reading.md)
 
 ---
 
 ## 📚 Further Reading
 
-- 📘 Bridgman, G. (1920). *Constructive Anatomy.* Dover. — The construction bible; free PDF available.
-- 📘 Loomis, A. (1943). *Figure Drawing for All It's Worth.* — Proportion, foreshortening, gesture.
-- 📘 Hampton, M. (2009). *Figure Drawing: Design and Invention.* — Modern, animation-focused.
-- 🌐 [line-of-action.com](https://line-of-action.com) — Free timed gesture drawing practice tool.
-- 🌐 [Quickposes.com](https://quickposes.com) — Alternative gesture practice platform.
+- 📘 Bridgman, G. (1920). *Constructive Anatomy.* Dover., The construction bible; free PDF available.
+- 📘 Loomis, A. (1943). *Figure Drawing for All It's Worth.*, Proportion, foreshortening, gesture.
+- 📘 Hampton, M. (2009). *Figure Drawing: Design and Invention.*, Modern, animation-focused.
+- 🌐 [line-of-action.com](https://line-of-action.com), Free timed gesture drawing practice tool.
+- 🌐 [Quickposes.com](https://quickposes.com), Alternative gesture practice platform.
 
 **Advanced / Supplementary:**
-- 📘 Keane, G. (2021). *Drawn to Life: 20 Golden Years of Disney Master Classes.* Focal Press (2 volumes). — Glen Keane's complete teaching methodology from his Disney master classes.
-- 📘 Kimon, N. (1941). *The Natural Way to Draw.* Houghton Mifflin. — The foundational book on gesture drawing; used in animation programs for 80 years.
-- 📘 Goldberg, E. (2008). *Character Animation Crash Course!* Sheridan Books. — Animation-specific drawing for performance and personality.
-- 🎬 *Drawn to Life* documentary (2021) — follows Glen Keane's process of creating a ballet animation entirely through observational drawing.
-- 🌐 [Proko.com](https://www.proko.com) — Free anatomy and figure drawing instruction from a professional illustrator; particularly strong on construction of the head and torso.
+- 📘 Keane, G. (2021). *Drawn to Life: 20 Golden Years of Disney Master Classes.* Focal Press (2 volumes)., Glen Keane's complete teaching methodology from his Disney master classes.
+- 📘 Kimon, N. (1941). *The Natural Way to Draw.* Houghton Mifflin., The foundational book on gesture drawing; used in animation programs for 80 years.
+- 📘 Goldberg, E. (2008). *Character Animation Crash Course!* Sheridan Books., Animation-specific drawing for performance and personality.
+- 🎬 *Drawn to Life* documentary (2021), follows Glen Keane's process of creating a ballet animation entirely through observational drawing.
+- 🌐 [Proko.com](https://www.proko.com), Free anatomy and figure drawing instruction from a professional illustrator; particularly strong on construction of the head and torso.

@@ -1,12 +1,12 @@
 # Module 5: Application Registration & SSO 🔗
 
-> **Why this module matters:** The average enterprise runs 250+ SaaS apps, plus dozens of in-house and on-prem web apps. Every one of them is a sign-in surface. Entra ID's job is to be the **single identity provider** behind all of them — so users sign in once, admins govern centrally, and attackers can't pick off the weakest app to phish the strongest credential. SC-300 dedicates 20–25% of its weight here because it's where identity meets application security, OAuth scopes, OIDC tokens, SAML assertions, and the very real risk that one "Approve" button by a junior employee on a malicious app gives an attacker tenant-wide Graph access.
+> **Why this module matters:** The average enterprise runs 250+ SaaS apps, plus dozens of in-house and on-prem web apps. Every one of them is a sign-in surface. Entra ID's job is to be the **single identity provider** behind all of them, so users sign in once, admins govern centrally, and attackers can't pick off the weakest app to phish the strongest credential. SC-300 dedicates 20–25% of its weight here because it's where identity meets application security, OAuth scopes, OIDC tokens, SAML assertions, and the very real risk that one "Approve" button by a junior employee on a malicious app gives an attacker tenant-wide Graph access.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The tenant + role taxonomy from [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md) (Application Admin, Cloud Application Admin).
 > - Group and user assignment patterns from [Module 2](../Module-02-Users-Groups/Reading.md).
-> - CA policies that target apps from [Module 4](../Module-04-Conditional-Access/Reading.md) — apps in CA come from this module.
-> - Basic understanding of OAuth 2.0 / OIDC / SAML — covered at intro depth in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md).
+> - CA policies that target apps from [Module 4](../Module-04-Conditional-Access/Reading.md), apps in CA come from this module.
+> - Basic understanding of OAuth 2.0 / OIDC / SAML, covered at intro depth in [`05-Azure-Fundamentals` Module 5](../../05-Azure-Fundamentals/Module-05-Cost-Management-SLAs/Reading.md).
 
 ---
 
@@ -14,9 +14,9 @@
 
 July 2022. A developer at a 4,800-person manufacturing company gets an email titled "Quick request from the CFO." The email links to what appears to be a Microsoft 365 sign-in page for a "Quarterly Reports Approval" app. The developer signs in (real Microsoft creds, real MFA). The app asks for permissions: "Read your mail," "Send mail as you," "Read all files in your OneDrive." The developer clicks **Approve**. The page redirects to a normal CFO email.
 
-It's an **illicit consent grant attack**. The attacker now has an OAuth refresh token tied to the developer's account. They use it to programmatically read every email the developer received, exfiltrate sensitive engineering docs, and send phishing emails *from the developer's account* to the CFO and CISO. Both CFO and CISO sign in to the same app. Within 24 hours the attacker has CFO-level mailbox access and is silently routing wire-transfer approval emails. The first detection comes when a $4.2M wire to a "vendor" in Hong Kong is reversed by the bank — six weeks later.
+It's an **illicit consent grant attack**. The attacker now has an OAuth refresh token tied to the developer's account. They use it to programmatically read every email the developer received, exfiltrate sensitive engineering docs, and send phishing emails *from the developer's account* to the CFO and CISO. Both CFO and CISO sign in to the same app. Within 24 hours the attacker has CFO-level mailbox access and is silently routing wire-transfer approval emails. The first detection comes when a $4.2M wire to a "vendor" in Hong Kong is reversed by the bank, six weeks later.
 
-What went wrong was not a password compromise. It was not an MFA bypass. It was the **user consent setting**: by default, every Entra tenant lets *every user* grant any registered app permission to their data. The fix took five minutes: change the user consent setting from "Allow user consent for apps" to "Do not allow user consent" and require **admin consent workflow** instead. Three hundred fortune-1000 companies have made the same fix since 2022. The pattern still works — the exam will test whether you know how to prevent it.
+What went wrong was not a password compromise. It was not an MFA bypass. It was the **user consent setting**: by default, every Entra tenant lets *every user* grant any registered app permission to their data. The fix took five minutes: change the user consent setting from "Allow user consent for apps" to "Do not allow user consent" and require **admin consent workflow** instead. Three hundred fortune-1000 companies have made the same fix since 2022. The pattern still works, the exam will test whether you know how to prevent it.
 
 ---
 
@@ -34,10 +34,10 @@ This is the single most-confused topic in SC-300. Memorize it cold.
 | Single-tenant app example | App registration in your tenant | Enterprise App in same tenant (auto-created) |
 
 🔥 **MEMORIZE:**
-- **App Registration = the recipe.** Defines the app — published once in the home tenant.
-- **Enterprise App = the dish at your table.** A local serving of the recipe — exists per tenant that uses the app.
+- **App Registration = the recipe.** Defines the app, published once in the home tenant.
+- **Enterprise App = the dish at your table.** A local serving of the recipe, exists per tenant that uses the app.
 
-🎯 **Exam tip:** "I deleted the Enterprise App but the App Registration is still there — why?" Because you're the *home tenant* and the App Registration is the canonical definition. To fully delete a single-tenant app, delete both.
+🎯 **Exam tip:** "I deleted the Enterprise App but the App Registration is still there, why?" Because you're the *home tenant* and the App Registration is the canonical definition. To fully delete a single-tenant app, delete both.
 
 ---
 
@@ -49,7 +49,7 @@ This is the single most-confused topic in SC-300. Memorize it cold.
 | **SAML 2.0** | Legacy enterprise SaaS (Salesforce, Workday, ServiceNow) | XML SAML Assertion | Most "SaaS SSO" gallery apps |
 | **WS-Federation (WS-Fed)** | Legacy MS apps (SharePoint on-prem, older AD FS) | XML SAML Assertion | Mostly legacy / hybrid |
 
-🚨 **Exam trap:** OAuth 2.0 is **NOT** a sign-in protocol — it's an *authorization framework*. OIDC is built on top of OAuth 2.0 and adds the identity layer (ID token). The exam loves to use them interchangeably; the precise SC-300 answer is **OIDC for sign-in; OAuth for delegated/app permissions**.
+🚨 **Exam trap:** OAuth 2.0 is **NOT** a sign-in protocol, it's an *authorization framework*. OIDC is built on top of OAuth 2.0 and adds the identity layer (ID token). The exam loves to use them interchangeably; the precise SC-300 answer is **OIDC for sign-in; OAuth for delegated/app permissions**.
 
 ### Picking SSO mode in an Enterprise App
 
@@ -68,8 +68,8 @@ In Entra portal → Enterprise apps → [App] → Single sign-on, the options:
 |---------|------------|
 | **Identifier (Entity ID)** | Unique URI for the app (e.g. `https://my.salesforce.com`) |
 | **Reply URL (ACS URL)** | Where Entra POSTs the SAML response (e.g. `https://my.salesforce.com/?so=00D...`) |
-| **Sign-on URL** | Optional — for SP-initiated SSO if app doesn't auto-redirect |
-| **Relay State** | Optional — deep-link target after sign-in |
+| **Sign-on URL** | Optional, for SP-initiated SSO if app doesn't auto-redirect |
+| **Relay State** | Optional, deep-link target after sign-in |
 | **Logout URL** | For SAML single logout |
 | **Token signing cert** | Auto-generated by Entra; upload to the vendor app |
 | **User attributes & claims** | UPN, email, displayName, custom claims |
@@ -84,7 +84,7 @@ In Entra portal → Enterprise apps → [App] → Single sign-on, the options:
 |---|-------------|------------------------|
 | Setup | Pick from 4,000+ pre-integrated apps | Build SAML/OIDC config from scratch |
 | Time | Minutes | Hours (depending on vendor docs) |
-| Pre-configured | Yes — attributes, claims, URLs guessed | Manual |
+| Pre-configured | Yes, attributes, claims, URLs guessed | Manual |
 | Examples | Salesforce, Workday, ServiceNow, Slack, Zoom | Internal HRMS, vendor's bespoke portal |
 
 🎯 **Always check the App Gallery first.** Microsoft pre-tests integrations and they save hours.
@@ -93,7 +93,7 @@ In Entra portal → Enterprise apps → [App] → Single sign-on, the options:
 
 ## 🚪 Microsoft Entra Application Proxy
 
-**App Proxy** publishes on-prem web apps to the internet through Entra ID — *without* opening firewall ports inbound. A lightweight **connector** runs on a Windows Server inside the corporate network and maintains an *outbound* connection to Entra.
+**App Proxy** publishes on-prem web apps to the internet through Entra ID, *without* opening firewall ports inbound. A lightweight **connector** runs on a Windows Server inside the corporate network and maintains an *outbound* connection to Entra.
 
 ```
 INTERNET
@@ -124,13 +124,13 @@ USER  → Entra ID (auth + CA)
 
 ## 🤝 User Consent Settings (PREVENT The Illicit Consent Attack)
 
-The DEFAULT in older tenants was "Allow user consent for apps from any publisher." Microsoft tightened this in 2022 to **"Allow user consent for verified publishers, for selected permissions"** for new tenants — but you must verify the setting in your tenant.
+The DEFAULT in older tenants was "Allow user consent for apps from any publisher." Microsoft tightened this in 2022 to **"Allow user consent for verified publishers, for selected permissions"** for new tenants, but you must verify the setting in your tenant.
 
 Entra portal → Enterprise applications → Consent and permissions → User consent settings:
 
 | Setting | Risk |
 |---------|------|
-| **Do not allow user consent** | Safest — every app needs admin consent |
+| **Do not allow user consent** | Safest, every app needs admin consent |
 | **Allow user consent for apps from verified publishers, for selected permissions** | Microsoft's 2022+ default |
 | **Allow user consent for apps** (legacy) | The pre-2022 default that enabled illicit consent attacks |
 
@@ -150,7 +150,7 @@ When user consent is restricted, users see a "Request approval" button on the co
 | Reminder cadence | Configurable (e.g. 24h) |
 | Expiry | Default 30 days |
 
-🎯 **Exam tip:** Reviewer assignment is by user/group — **NOT** by Entra role. A Cloud Application Administrator who isn't in the reviewer list won't see the request.
+🎯 **Exam tip:** Reviewer assignment is by user/group, **NOT** by Entra role. A Cloud Application Administrator who isn't in the reviewer list won't see the request.
 
 ---
 
@@ -161,7 +161,7 @@ When user consent is restricted, users see a "Request approval" button on the co
 | Acts on behalf of | A signed-in user | The app itself (no user context) |
 | OAuth scope name | e.g. `User.Read`, `Mail.Send` | e.g. `User.Read.All`, `Mail.ReadBasic.All` |
 | Effective permission | min(app permission, user's own permission) | Exactly what's granted, tenant-wide |
-| Requires admin consent? | Some scopes (admin-only) require it; many are user-consentable | Always — no user context to consent |
+| Requires admin consent? | Some scopes (admin-only) require it; many are user-consentable | Always, no user context to consent |
 | Example | A mail-merge app sends mail "as Alice" when Alice uses it | A background sync app reads all users' calendars unattended |
 
 🚨 **Exam trap:** Application permissions are **always** admin-consentable only. If a scenario says "user can consent to send mail as themselves" → delegated. "Daemon reads all calendars at midnight" → application.
@@ -195,7 +195,7 @@ When user consent is restricted, users see a "Request approval" button on the co
 
 Assigned in Enterprise App → Users and groups → Add user/group → pick role. The role surfaces in the user's token as `roles: ["Manager"]` claim.
 
-🎯 **Exam tip:** App roles are **per-application** — totally separate from Entra ID roles. Don't confuse "Application Administrator" (Entra role over all apps) with the app's own "Manager" role (per-app).
+🎯 **Exam tip:** App roles are **per-application**, totally separate from Entra ID roles. Don't confuse "Application Administrator" (Entra role over all apps) with the app's own "Manager" role (per-app).
 
 ---
 
@@ -207,8 +207,8 @@ Assigned in Enterprise App → Users and groups → Add user/group → pick role
 | **Client Credentials** | Daemon/service-to-service with App permissions |
 | **Device Code** | Sign-in on devices without browsers (CLI tools, IoT) |
 | **On-Behalf-Of (OBO)** | Middle-tier API forwarding a user's token to a downstream API |
-| **Implicit grant** | DEPRECATED — replaced by Auth Code + PKCE |
-| **Resource Owner Password Credentials (ROPC)** | DEPRECATED — sends password to app; phishable |
+| **Implicit grant** | DEPRECATED, replaced by Auth Code + PKCE |
+| **Resource Owner Password Credentials (ROPC)** | DEPRECATED, sends password to app; phishable |
 
 🚨 **Exam trap:** "Device Code" flow appears in CA conditions as **Authentication flow → Device code flow**. CA can require additional MFA when device-code is used (a common attack pattern).
 
@@ -235,7 +235,7 @@ SaaS app (e.g. Salesforce, internal HRMS):
 
 | Trap | Reality |
 |------|---------|
-| "App Registration and Enterprise App are the same thing" | ❌ Definition vs Local instance — totally different |
+| "App Registration and Enterprise App are the same thing" | ❌ Definition vs Local instance, totally different |
 | "OAuth 2.0 is a sign-in protocol" | ❌ OAuth = authorization; OIDC adds sign-in |
 | "Delegated permission allows acting unattended" | ❌ Always needs a user context |
 | "Application permission can be user-consented" | ❌ Always admin-consent-only |
@@ -254,18 +254,18 @@ SaaS app (e.g. Salesforce, internal HRMS):
 
 The correct order:
 
-1. ✅ Verify Workday is in the App Gallery — if so, add from Gallery (saves hours).
+1. ✅ Verify Workday is in the App Gallery, if so, add from Gallery (saves hours).
 2. ✅ Configure **SAML SSO** in the Enterprise App: Identifier, Reply URL, attribute mappings.
 3. ✅ Download Entra's **Federation Metadata XML** or token signing cert.
 4. ✅ Upload that to Workday and configure Workday's SSO settings.
 5. ✅ Set **Assignment required = Yes**.
 6. ✅ Assign **Users and groups** (e.g. `Workday-Users` security group).
-7. ✅ Configure **SCIM provisioning** if Workday supports it — Entra pushes new hires/leavers automatically.
+7. ✅ Configure **SCIM provisioning** if Workday supports it, Entra pushes new hires/leavers automatically.
 8. ✅ Apply a **Conditional Access policy**: this app requires MFA + compliant device.
-9. ✅ Test with **a pilot user** — sign in, validate attribute mapping, validate SCIM provisioning.
+9. ✅ Test with **a pilot user**, sign in, validate attribute mapping, validate SCIM provisioning.
 10. ✅ Roll out to broader group; configure **app-specific reviews** in access reviews.
 
-⚠️ Skipping step 5 (Assignment required = Yes) is a security hole — *any* user in your tenant could sign in to Workday.
+⚠️ Skipping step 5 (Assignment required = Yes) is a security hole, *any* user in your tenant could sign in to Workday.
 
 ---
 
@@ -275,13 +275,13 @@ The correct order:
 |------|------------|
 | **App Registration** | The application's definition / manifest in the home tenant |
 | **Enterprise Application** | Local instance (service principal) of the app in a tenant |
-| **Service Principal** | Same as Enterprise App — the identity of the app in this tenant |
-| **OIDC** | OpenID Connect — modern sign-in on top of OAuth 2.0 |
+| **Service Principal** | Same as Enterprise App, the identity of the app in this tenant |
+| **OIDC** | OpenID Connect, modern sign-in on top of OAuth 2.0 |
 | **OAuth 2.0** | Authorization framework (NOT sign-in by itself) |
 | **SAML 2.0** | Legacy SSO protocol using XML assertions |
 | **WS-Federation** | Older Microsoft SSO protocol; mostly legacy |
 | **Redirect URI / Reply URL** | URL Entra POSTs the token/SAML response back to |
-| **ACS URL** | Assertion Consumer Service URL — SAML term for Reply URL |
+| **ACS URL** | Assertion Consumer Service URL, SAML term for Reply URL |
 | **Entity ID / Identifier** | Unique URI for the SAML app |
 | **Delegated permission** | Scope granted in user context (`User.Read`) |
 | **Application permission** | Scope granted to the app itself, no user (`User.Read.All`) |
@@ -289,7 +289,7 @@ The correct order:
 | **Admin consent** | Admin grants scopes for the entire tenant |
 | **Admin consent workflow** | In-portal request → approval queue |
 | **App role** | Per-app custom role string (`Manager`, `Submitter`) |
-| **Assignment required** | App Property — only assigned users can sign in |
+| **Assignment required** | App Property, only assigned users can sign in |
 | **Microsoft Entra Application Proxy** | Publish on-prem web apps via outbound connector |
 | **Conditional Access App Control** | Defender for Cloud Apps reverse proxy session control |
 | **SCIM provisioning** | Standard API for syncing users/groups to a SaaS app |
@@ -301,7 +301,7 @@ The correct order:
 
 You now know:
 
-- 🏗️ App Registration (recipe) vs Enterprise App (dish) — the canonical distinction
+- 🏗️ App Registration (recipe) vs Enterprise App (dish), the canonical distinction
 - 🌐 Three SSO protocols: OIDC (modern), SAML (legacy enterprise SaaS), WS-Fed (legacy MS)
 - 🏛️ App Gallery vs custom non-gallery apps
 - 🚪 App Proxy publishes on-prem apps without inbound ports
@@ -319,20 +319,20 @@ You now know:
 
 ---
 
-## 📊 Case Study — The 2022 OAuth Illicit Consent Wave
+## 📊 Case Study, The 2022 OAuth Illicit Consent Wave
 
 **Situation.** Beginning in late 2021 and peaking in mid-2022, Microsoft's Defender for Cloud Apps + Microsoft Threat Intelligence Center (MSTIC) tracked a surge in OAuth-based phishing attacks against Microsoft 365 tenants. The attack pattern was consistent:
 
 1. Attacker registers a multi-tenant app in their own throwaway Entra tenant with a benign-sounding name like "Quarterly Reports Approval" or "Document Signing Service."
-2. Attacker sends targeted email with a sign-in link that uses Microsoft's real OAuth consent URL — so the URL bar shows `login.microsoftonline.com`, indistinguishable from a legitimate Microsoft sign-in.
-3. Victim signs in (real Microsoft creds, real MFA passes — the attacker isn't asking for the password).
+2. Attacker sends targeted email with a sign-in link that uses Microsoft's real OAuth consent URL, so the URL bar shows `login.microsoftonline.com`, indistinguishable from a legitimate Microsoft sign-in.
+3. Victim signs in (real Microsoft creds, real MFA passes, the attacker isn't asking for the password).
 4. Consent screen lists permissions: typically `Mail.ReadWrite`, `Mail.Send`, `Files.Read.All`, sometimes `offline_access` (refresh token).
-5. Victim clicks Approve. The attacker now has an OAuth refresh token tied to the victim — *MFA bypassed because the user consented*.
+5. Victim clicks Approve. The attacker now has an OAuth refresh token tied to the victim, *MFA bypassed because the user consented*.
 6. Attacker uses the token to read mail, exfiltrate files, send phishing as the user, often pivoting to executives.
 
 Microsoft tracked thousands of incidents tied to this pattern in 2022 (DART team posts; *Microsoft Security Response Center* blog posts in March 2022 and Sept 2022). The single Bing-search attack ("Volexity" disclosure) hit ~140+ orgs.
 
-**Decision.** Microsoft hardened the default consent settings: tenants created in 2022 or later default to **"Allow user consent for apps from verified publishers, for selected permissions"** instead of the older "Allow user consent for apps." Microsoft also rolled out the **publisher verification** program — apps must be cryptographically verified by their publisher's MPN (Microsoft Partner Network) account before they're considered "verified."
+**Decision.** Microsoft hardened the default consent settings: tenants created in 2022 or later default to **"Allow user consent for apps from verified publishers, for selected permissions"** instead of the older "Allow user consent for apps." Microsoft also rolled out the **publisher verification** program, apps must be cryptographically verified by their publisher's MPN (Microsoft Partner Network) account before they're considered "verified."
 
 Microsoft simultaneously published a customer playbook ("[Mitigate illicit consent grants](https://learn.microsoft.com/security/operations/incident-response-playbook-app-consent)") recommending all customers:
 
@@ -368,7 +368,7 @@ When you see a scenario about "user accepted an app permission and the attacker 
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **App Registration vs Enterprise App.** Why did Microsoft separate the recipe from the dish? What problem would a unified single-object model have caused for multi-tenant SaaS?
 2. **OIDC vs SAML in 2026.** Many vendors offer both. When is SAML still the right choice over OIDC? Consider attribute richness, IdP-initiated flows, and legacy app compatibility.
@@ -386,4 +386,4 @@ When you see a scenario about "user accepted an app permission and the attacker 
 - 📖 [Microsoft Entra Application Proxy overview](https://learn.microsoft.com/entra/identity/app-proxy/overview-what-is-app-proxy)
 - 📖 [Add SAML-based single sign-on to a non-gallery application](https://learn.microsoft.com/entra/identity/enterprise-apps/add-application-portal-setup-sso)
 - 📖 Microsoft Security Response Center, "Illicit consent grants" series, 2022.
-- 📖 NIST SP 800-204C, *Implementation of DevSecOps for a Microservices-based Application with Service Mesh* — context on OAuth/OIDC in modern API stacks.
+- 📖 NIST SP 800-204C, *Implementation of DevSecOps for a Microservices-based Application with Service Mesh*, context on OAuth/OIDC in modern API stacks.

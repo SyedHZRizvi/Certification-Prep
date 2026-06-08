@@ -98,7 +98,7 @@
     <div class="vg-thumb"><span>🪢</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OP_CAT + Covenants — The 2025-26 Debate</p>
+      <p class="vg-title">OP_CAT + Covenants, The 2025-26 Debate</p>
       <p class="vg-creator">Bitcoin Optech / Spiral</p>
       <span class="vg-duration">⏱ 19 min · What Bitcoin might add next</span>
     </div>
@@ -122,4 +122,4 @@
 2. What 3 problems did SegWit solve?
 3. State the key-path vs script-path Taproot distinction.
 4. What is MAST and why does it matter for privacy?
-5. CLTV vs CSV — one sentence each.
+5. CLTV vs CSV, one sentence each.

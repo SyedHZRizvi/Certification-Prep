@@ -7,10 +7,10 @@
 ## 🛡️ NSG Quick Rules
 
 - **Lower priority number = evaluated first** (100 wins over 200)
-- Stateful — return traffic auto-allowed
+- Stateful, return traffic auto-allowed
 - 5-tuple: src + src port + dst + dst port + protocol
 - Default rules: 65000/65001/65500 in **and** out
-- Both subnet NSG + NIC NSG apply — **Deny in either = drop**
+- Both subnet NSG + NIC NSG apply, **Deny in either = drop**
 
 ```
 Inbound order : subnet NSG → NIC NSG → VM
@@ -99,10 +99,10 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 1. NSG priority order? ___
-2. Subnet + NIC NSG — what wins? ___
+2. Subnet + NIC NSG, what wins? ___
 3. ASG single VNet or across peering? ___
 4. Azure Firewall rule order? ___
-5. Front Door vs AGW — which is global? ___
+5. Front Door vs AGW, which is global? ___
 
 ---
 

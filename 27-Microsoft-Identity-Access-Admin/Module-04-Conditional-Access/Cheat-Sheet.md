@@ -38,9 +38,9 @@ Target resources               Sign-in risk                Grant + controls:    
 
 ## 📍 Named Locations
 
-- **IP ranges** (IPv4/IPv6 CIDR) — mark trusted to lower risk weight
-- **Countries** — pick by ISO country code
-- **MFA Trusted IPs** (legacy) — being deprecated
+- **IP ranges** (IPv4/IPv6 CIDR), mark trusted to lower risk weight
+- **Countries**, pick by ISO country code
+- **MFA Trusted IPs** (legacy), being deprecated
 
 ---
 
@@ -102,7 +102,7 @@ SIGN-IN RISK POLICY: Medium and above → Require MFA
 
 ---
 
-## 🚨 Block Legacy Auth — The Policy
+## 🚨 Block Legacy Auth, The Policy
 
 ```
 Users: All users

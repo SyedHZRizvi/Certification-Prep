@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: Computer Vision
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result. For Image Analysis 4.0 content, pick videos dated 2024 or later — the 3.x API has different methods.
+> **How to use:** Click any video card to search YouTube and watch the latest top result. For Image Analysis 4.0 content, pick videos dated 2024 or later, the 3.x API has different methods.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Vision — Image Analysis 4.0 walkthrough</p>
+      <p class="vg-title">Azure AI Vision, Image Analysis 4.0 walkthrough</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 15 min · Visual features + SDK</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Custom Vision — train a classifier end-to-end</p>
+      <p class="vg-title">Custom Vision, train a classifier end-to-end</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 12 min · Training → Prediction</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Face Service — Detect, Verify, Identify</p>
+      <p class="vg-title">Azure Face Service, Detect, Verify, Identify</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 14 min · Limited access too</span>
     </div>
@@ -80,7 +80,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Azure AI Video Indexer overview</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 12 min · Portal + insights</span>
     </div>
   </a>
@@ -126,7 +126,7 @@
 |---|---|
 | **Microsoft Learn** | API canon |
 | **Microsoft Reactor** | Live coding |
-| **Adam Marczak — Azure for Everyone** | Clear explainers |
+| **Adam Marczak, Azure for Everyone** | Clear explainers |
 | **Cloud Academy** | Lab-style walkthroughs |
 | **Tim Warner** | AI-102 exam focus |
 

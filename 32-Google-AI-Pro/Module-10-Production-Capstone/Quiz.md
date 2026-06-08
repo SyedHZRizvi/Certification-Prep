@@ -48,7 +48,7 @@ D. ChatGPT Plus
 
 ### Q6. The MOST IMPACTFUL cost-optimization lever for a sustained 10K-RPM Gemini Pro workload: *(Apply)*
 A. Streaming
-B. Provisioned Throughput (GSCUs) — replaces variable PAYG with reserved capacity at 2-4× savings
+B. Provisioned Throughput (GSCUs), replaces variable PAYG with reserved capacity at 2-4× savings
 C. Disable safety_settings
 D. Switch cloud providers
 
@@ -128,7 +128,7 @@ D. Make everything public
 
 ### Q16. The CORRECT response to "AI Studio API key in our React app" in a security review: *(Apply)*
 A. Approve
-B. Reject — move calls server-side; API key in Secret Manager; frontend calls backend; backend calls Gemini
+B. Reject, move calls server-side; API key in Secret Manager; frontend calls backend; backend calls Gemini
 C. Use a shorter key
 D. Base64-encode it
 
@@ -176,7 +176,7 @@ D. CPU usage
 
 ### Q22. The MOST IMPORTANT lesson from the Wendy's vs McDonald's comparison: *(Analyze)*
 A. Brand matters
-B. Architecture matters more than model choice — same model with different architecture would have different outcomes
+B. Architecture matters more than model choice, same model with different architecture would have different outcomes
 C. Pricing differences
 D. None
 
@@ -231,7 +231,7 @@ D. ChatGPT
 ### Q21: **B. Deflection rate + accuracy**
 ### Q22: **B. Architecture matters more than model choice**
 ### Q23: **B. The full production stack**
-### Q24: **C. Provisioned Throughput is always cheaper — FALSE**
+### Q24: **C. Provisioned Throughput is always cheaper, FALSE**
 Below ~1K RPM, PAYG wins.
 ### Q25: **B. The full Vertex AI fintech stack**
 
@@ -245,7 +245,7 @@ Below ~1K RPM, PAYG wins.
 
 ---
 
-## 🎓 Course Complete — Your Next Steps
+## 🎓 Course Complete, Your Next Steps
 
 1. ✏️ Take all three Practice Exams in order
 2. 🃏 Drill the Master [Flashcards](../Flashcards.md) daily

@@ -1,6 +1,6 @@
 # Module 7: Agent Builder & Conversational AI 🤖
 
-> **Why this module matters:** Agentic AI is the highest-value pattern of 2025–2026, and Google's agent stack has its own vocabulary — **Vertex AI Agent Builder** (the umbrella), **Conversational Agents** (formerly Dialogflow CX, the structured-flow conversational AI product), **function calling** (Gemini's native tool-use mechanism), **ADK** (the Agent Development Kit, Google's open-source agent SDK), **multi-agent orchestration** (the latest pattern). The exam tests every one of these distinctions. This module deconstructs the stack and the architectural choices each enables.
+> **Why this module matters:** Agentic AI is the highest-value pattern of 2025–2026, and Google's agent stack has its own vocabulary, **Vertex AI Agent Builder** (the umbrella), **Conversational Agents** (formerly Dialogflow CX, the structured-flow conversational AI product), **function calling** (Gemini's native tool-use mechanism), **ADK** (the Agent Development Kit, Google's open-source agent SDK), **multi-agent orchestration** (the latest pattern). The exam tests every one of these distinctions. This module deconstructs the stack and the architectural choices each enables.
 
 > **Prerequisites for this module.** Modules 1–6 finished. A Vertex AI project; Conversational Agents and Agent Builder console access. Familiarity with the concept of tool-using LLMs (the LLM decides "I should call function X with argument Y," your code executes X(Y), the result goes back to the LLM, the LLM uses it).
 
@@ -60,7 +60,7 @@ The interesting architectural choice: Mercedes did NOT have Gemini decide *the w
 
 ## 💬 Conversational Agents (formerly Dialogflow CX)
 
-**Conversational Agents** is Google's product for *structured* conversational AI. The core abstraction is the **Flow** — a state machine where:
+**Conversational Agents** is Google's product for *structured* conversational AI. The core abstraction is the **Flow**, a state machine where:
 
 - **Intent** = what the user wants ("find_restaurant", "book_appointment")
 - **Slot / Parameter** = a piece of information you need to collect (`cuisine`, `time`, `party_size`)
@@ -69,17 +69,17 @@ The interesting architectural choice: Mercedes did NOT have Gemini decide *the w
 
 ### When to pick Conversational Agents
 
-- **Goal-driven, finite-state conversations** — booking, ordering, IVR-like flows, customer-service triage
-- **Strict compliance** — regulated industries that need auditable conversation paths
-- **Multi-language consistency** — out-of-the-box NLU in 40+ languages
-- **Channels** — telephony (Google Cloud Phone Gateway), web chat, messaging (WhatsApp, FB Messenger), in-car
-- **High-volume** — built for tens of millions of conversations per day
+- **Goal-driven, finite-state conversations**, booking, ordering, IVR-like flows, customer-service triage
+- **Strict compliance**, regulated industries that need auditable conversation paths
+- **Multi-language consistency**, out-of-the-box NLU in 40+ languages
+- **Channels**, telephony (Google Cloud Phone Gateway), web chat, messaging (WhatsApp, FB Messenger), in-car
+- **High-volume**, built for tens of millions of conversations per day
 
 ### When NOT to pick Conversational Agents
 
-- **Open-ended chat** — Gemini with function calling is cleaner
-- **Agentic, multi-step research tasks** — ADK or function calling
-- **A pure RAG bot** — Search Agent or grounding tool
+- **Open-ended chat**, Gemini with function calling is cleaner
+- **Agentic, multi-step research tasks**, ADK or function calling
+- **A pure RAG bot**, Search Agent or grounding tool
 
 ### Example flow
 
@@ -155,9 +155,9 @@ Modes: `AUTO` (let Gemini decide), `ANY` (must call some function), `NONE` (no c
 
 ---
 
-## 🛠️ ADK — The Agent Development Kit
+## 🛠️ ADK, The Agent Development Kit
 
-**ADK (Agent Development Kit)** is Google's open-source SDK for building **agentic systems** — multi-step loops where Gemini reasons, calls tools, observes results, and continues until the task is done.
+**ADK (Agent Development Kit)** is Google's open-source SDK for building **agentic systems**, multi-step loops where Gemini reasons, calls tools, observes results, and continues until the task is done.
 
 ```python
 from google.adk.agents import Agent
@@ -210,15 +210,15 @@ coordinator = Agent(
 )
 ```
 
-🎯 **Exam pattern:** *"A research assistant needs to (1) search the web for sources, (2) summarize each, (3) compile a draft, (4) review for facts. Best architecture?"* → **Multi-agent orchestration with ADK** — coordinator + researcher + summarizer + writer + reviewer.
+🎯 **Exam pattern:** *"A research assistant needs to (1) search the web for sources, (2) summarize each, (3) compile a draft, (4) review for facts. Best architecture?"* → **Multi-agent orchestration with ADK**, coordinator + researcher + summarizer + writer + reviewer.
 
 ---
 
-## 🆚 Conversational Agents vs Function Calling vs ADK — When to Use Which
+## 🆚 Conversational Agents vs Function Calling vs ADK, When to Use Which
 
 | Tool | When |
 |------|------|
-| **Conversational Agents** | Structured, finite-state conversations (booking, IVR, ordering) — deterministic backbone matters more than creative reasoning |
+| **Conversational Agents** | Structured, finite-state conversations (booking, IVR, ordering), deterministic backbone matters more than creative reasoning |
 | **Function Calling (raw)** | Single-turn or short multi-turn tool use; you control the loop in your code; for chat-style assistants |
 | **ADK** | Multi-step agentic loops; multi-agent orchestration; production agents with traces + evals |
 | **Search Agents** | Pre-built RAG chat over a Vertex AI Search corpus; minimal code |
@@ -234,23 +234,23 @@ coordinator = Agent(
 
 Shopify launched **Sidekick** in 2024 as an AI assistant for merchants ("rewrite my product description," "show me which products to promote in spring"). Architecture per Shopify Engineering + Google Cloud Next 2024:
 
-- **Gemini 2.5 Pro on Vertex AI** — the LLM
-- **ADK** — multi-step agentic orchestration
-- **Function calling** — tools for Shopify Admin API (products, orders, customers, analytics)
-- **Vertex AI Search** — grounding against Shopify help docs + merchant guides
-- **Conversational Agents** — for "guided flow" actions (e.g. "set up Black Friday discount" walks through structured slots)
+- **Gemini 2.5 Pro on Vertex AI**, the LLM
+- **ADK**, multi-step agentic orchestration
+- **Function calling**, tools for Shopify Admin API (products, orders, customers, analytics)
+- **Vertex AI Search**, grounding against Shopify help docs + merchant guides
+- **Conversational Agents**, for "guided flow" actions (e.g. "set up Black Friday discount" walks through structured slots)
 
 ### Snap MyAI
 
-Snap MyAI (from Module 2's case study) — when it includes agentic features ("create me a Bitmoji avatar matching this style"), uses ADK-style orchestration on Vertex AI under the hood.
+Snap MyAI (from Module 2's case study), when it includes agentic features ("create me a Bitmoji avatar matching this style"), uses ADK-style orchestration on Vertex AI under the hood.
 
 ### Mercedes MBUX
 
-Mercedes-Benz MBUX (the opening story) — Conversational Agents for state, function calling for vehicle/cloud APIs, Gemini for synthesis, Chirp for voice.
+Mercedes-Benz MBUX (the opening story), Conversational Agents for state, function calling for vehicle/cloud APIs, Gemini for synthesis, Chirp for voice.
 
 ### Wendy's FreshAI (Module 4)
 
-The drive-thru — Conversational Agents managing order state, function calling for menu/POS, Chirp ASR/TTS, Gemini Flash for disambiguation.
+The drive-thru, Conversational Agents managing order state, function calling for menu/POS, Chirp ASR/TTS, Gemini Flash for disambiguation.
 
 ---
 
@@ -266,11 +266,11 @@ The drive-thru — Conversational Agents managing order state, function calling 
 
 ### Webhooks
 
-Pages can trigger **webhooks** — HTTPS endpoints in your service that the agent calls with current state and a request to execute (e.g., `book_table(...)`). Your webhook returns updated state + response.
+Pages can trigger **webhooks**, HTTPS endpoints in your service that the agent calls with current state and a request to execute (e.g., `book_table(...)`). Your webhook returns updated state + response.
 
 ### Generative fallback
 
-When no intent matches well, Conversational Agents can fall back to **generative responses** — Gemini synthesizes a contextually-appropriate reply, drawing from a configured data store.
+When no intent matches well, Conversational Agents can fall back to **generative responses**, Gemini synthesizes a contextually-appropriate reply, drawing from a configured data store.
 
 ### NLU training
 
@@ -319,8 +319,8 @@ The exam likes a comparison question.
 | "ADK requires Vertex AI only." | ADK is open-source; works against Gemini API too. |
 | "Use ADK for everything." | Conversational Agents is *better* for goal-driven structured flows (booking, IVR). |
 | "Function calling = JSON mode." | Different. Function calling triggers a structured request to a tool; JSON mode constrains response format. |
-| "Multi-agent = expensive." | Often cheaper than one giant agent — small specialist sub-agents on Flash beat one Pro generalist. |
-| "Conversational Agents can't use Gemini." | They can — generative fallback + agent steps can invoke Gemini for synthesis. |
+| "Multi-agent = expensive." | Often cheaper than one giant agent, small specialist sub-agents on Flash beat one Pro generalist. |
+| "Conversational Agents can't use Gemini." | They can, generative fallback + agent steps can invoke Gemini for synthesis. |
 
 ---
 
@@ -356,14 +356,14 @@ The exam likes a comparison question.
 You now know:
 
 - 🏛️ **Agent Builder** as an umbrella over multiple products
-- 💬 **Conversational Agents** — structured flows + slots + state machine
-- 🔧 **Function calling** — Gemini's native tool use
-- 🛠️ **ADK** — open-source agent SDK for multi-step + multi-agent
-- 🤖 **Real architectures** — Mercedes MBUX, Shopify Sidekick, Snap MyAI, Wendy's FreshAI
-- 🧪 **Testing patterns** — simulator + test sets + LLM-as-judge + end-to-end metrics
+- 💬 **Conversational Agents**, structured flows + slots + state machine
+- 🔧 **Function calling**, Gemini's native tool use
+- 🛠️ **ADK**, open-source agent SDK for multi-step + multi-agent
+- 🤖 **Real architectures**, Mercedes MBUX, Shopify Sidekick, Snap MyAI, Wendy's FreshAI
+- 🧪 **Testing patterns**, simulator + test sets + LLM-as-judge + end-to-end metrics
 - 🆚 **Comparison** with Microsoft Copilot Studio + AWS Bedrock Agents
 
-**Next:** [Module 8 — Responsible AI on Google Cloud](../Module-08-Responsible-AI-Google/Reading.md)
+**Next:** [Module 8, Responsible AI on Google Cloud](../Module-08-Responsible-AI-Google/Reading.md)
 
 ---
 
@@ -372,6 +372,6 @@ You now know:
 - 📖 [Vertex AI Agent Builder overview](https://cloud.google.com/products/agent-builder)
 - 📖 [Conversational Agents docs](https://cloud.google.com/dialogflow/cx/docs)
 - 📖 [Function calling on Gemini](https://ai.google.dev/gemini-api/docs/function-calling)
-- 📖 [ADK GitHub](https://github.com/google/adk-python) — open-source agent SDK
+- 📖 [ADK GitHub](https://github.com/google/adk-python), open-source agent SDK
 - 📖 [Shopify Sidekick architecture](https://shopify.engineering/sidekick-ai-architecture)
 - 📖 Mercedes-Benz × Google Cloud (CES 2024 announcement)

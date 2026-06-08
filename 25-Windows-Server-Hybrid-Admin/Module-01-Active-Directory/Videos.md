@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Active Directory Domain Services
 
-> **How to use:** Click any card to search YouTube and watch the latest top result. AD DS is 30–35% of AZ-800 — these are not optional.
+> **How to use:** Click any card to search YouTube and watch the latest top result. AD DS is 30–35% of AZ-800, these are not optional.
 
 ## ⭐ Essential watching (~2 hours)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Active Directory — The Definitive Overview</p>
+      <p class="vg-title">Active Directory, The Definitive Overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 45 min · Forest, domain, sites, GPOs</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">FSMO Roles Explained — All 5</p>
+      <p class="vg-title">FSMO Roles Explained, All 5</p>
       <p class="vg-creator">ITProTV / ACI Learning</p>
       <span class="vg-duration">⏱ 25 min · Memorize cold</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Group Policy — Precedence, Block, Enforced</p>
+      <p class="vg-title">Group Policy, Precedence, Block, Enforced</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 30 min · LSDOU mastered</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AD Sites & Services — Replication Deep Dive</p>
+      <p class="vg-title">AD Sites & Services, Replication Deep Dive</p>
       <p class="vg-creator">Server Academy</p>
       <span class="vg-duration">⏱ 20 min · Site links + KCC</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Read-Only Domain Controller — Walkthrough</p>
+      <p class="vg-title">Read-Only Domain Controller, Walkthrough</p>
       <p class="vg-creator">TechNet Channel</p>
       <span class="vg-duration">⏱ 18 min · Branch deployments</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AD Recycle Bin — Enable & Restore</p>
+      <p class="vg-title">AD Recycle Bin, Enable & Restore</p>
       <p class="vg-creator">CBT Nuggets</p>
       <span class="vg-duration">⏱ 15 min · Lifesaver tutorial</span>
     </div>
@@ -112,7 +112,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">AD Attack Paths & Tier Model</p>
-      <p class="vg-creator">Sean Metcalf — adsecurity.org</p>
+      <p class="vg-creator">Sean Metcalf, adsecurity.org</p>
       <span class="vg-duration">⏱ 50 min · Defender perspective</span>
     </div>
   </a>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Forest Trusts — Direction & Transitivity</p>
+      <p class="vg-title">Forest Trusts, Direction & Transitivity</p>
       <p class="vg-creator">NetworkChuck Academy</p>
       <span class="vg-duration">⏱ 22 min · Merger scenarios</span>
     </div>
@@ -144,7 +144,7 @@
 |---------|-----|
 | **John Savill's Technical Training** | The single best Windows Server channel; AD is his bread and butter |
 | **Andy Malone MVP** | Clear, no-nonsense AD/Entra walkthroughs at AZ-800 depth |
-| **Server Academy** | Hands-on lab format — ideal for kinesthetic learners |
+| **Server Academy** | Hands-on lab format, ideal for kinesthetic learners |
 | **Sean Metcalf (adsecurity.org)** | The authority on AD security; required if you ever touch Defender |
 | **ITProTV / ACI Learning** | AZ-800/AZ-801 study path coverage |
 

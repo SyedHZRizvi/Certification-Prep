@@ -58,7 +58,7 @@ D. Encrypt all data
 A. 5–25%
 B. 50–75%
 C. 90–100%
-D. 100% — server-side replaces all client-side loss
+D. 100%, server-side replaces all client-side loss
 
 ---
 
@@ -146,7 +146,7 @@ D. CDPs only support B2B; warehouses only support B2C
 A. Build Snowplow from scratch
 B. Adobe Real-Time CDP
 C. Packaged CDP (Segment or mParticle)
-D. No CDP — only use spreadsheets
+D. No CDP, only use spreadsheets
 
 ---
 
@@ -192,7 +192,7 @@ D. Segment is the only viable CDP
 
 ### Q24. A team installs server-side GTM and expects all measurement loss from iOS ATT opt-out to recover. They will be: *(Apply)*
 A. Correct
-B. Wrong — ATT is a consent loss, not a technical loss; server-side cannot recover consent
+B. Wrong, ATT is a consent loss, not a technical loss; server-side cannot recover consent
 C. Right but only on Android
 D. Right after Meta whitelists their domain
 
@@ -244,13 +244,13 @@ GTM-SS is designed to run on Google App Engine. Stape and others host it on thei
 Meta's server-side conversion endpoint. The corresponding TikTok endpoint is "Events API"; Google's is "Conversion Adjustments" / "Enhanced Conversions" / "Measurement Protocol" depending on the property.
 
 ### Q10: **B. Measurement Protocol**
-GA4's server-side ingestion endpoint. Universal Analytics had a different (incompatible) Measurement Protocol — GA4's is v2.
+GA4's server-side ingestion endpoint. Universal Analytics had a different (incompatible) Measurement Protocol, GA4's is v2.
 
 ### Q11: **B. Known explicit links**
 Deterministic = explicit. Probabilistic = inferred. The exam may also describe deterministic as "high confidence" and probabilistic as "modeled."
 
 ### Q12: **B. Regulators treating it as tracking requiring consent**
-GDPR and emerging US state laws increasingly classify probabilistic ID as "tracking" — requiring opt-in consent that is rarely obtained.
+GDPR and emerging US state laws increasingly classify probabilistic ID as "tracking", requiring opt-in consent that is rarely obtained.
 
 ### Q13: **A. Packaged, Composable, Self-hosted, Embedded-in-marketing-cloud**
 The four 2026 architectural patterns. Memorize this for vendor-selection questions.
@@ -259,7 +259,7 @@ The four 2026 architectural patterns. Memorize this for vendor-selection questio
 Per the Reading.md cost table. Enterprise pricing scales to $50K–$200K/mo at Fortune-500 volume.
 
 ### Q15: **B. Cumulative pressure from ITP, ETP, ATT, and Privacy Sandbox**
-No single event killed it — but by 2026, third-party cookies are functionally dead in Safari/Firefox and unreliable in Chrome under Privacy Sandbox.
+No single event killed it, but by 2026, third-party cookies are functionally dead in Safari/Firefox and unreliable in Chrome under Privacy Sandbox.
 
 ### Q16: **B. Sending hashed first-party PII to improve match rate**
 Enhanced Conversions in Google Ads (and the equivalent in Meta CAPI) sends SHA-256-hashed emails/phones to recover conversion attribution lost to cookie restrictions.
@@ -271,7 +271,7 @@ This is the textbook distinction. The warehouse stays the SoR even when a CDP is
 Without a data engineer, the composable pattern is hard to operate. Segment (or mParticle for mobile-first apps) is the default at this scale.
 
 ### Q19: **A. Confidence score and source attribution**
-Mature identity graphs version every identifier link with a confidence score and source — necessary for forensic debugging and compliance.
+Mature identity graphs version every identifier link with a confidence score and source, necessary for forensic debugging and compliance.
 
 ### Q20: **B. Hashing does not replace consent + DPA**
 A SHA-256 hash is a one-way function but the *identifier* is still personal data under GDPR. Consent and a Data Processing Agreement with the destination are still legally required.
@@ -285,7 +285,7 @@ JenTis competes by being German-hosted and GDPR-first, which matters to EU regul
 ### Q23: **B. Collect from many sources → resolve identity → activate audiences back**
 This is the textbook CDP use case: cross-channel identity unification + activation.
 
-### Q24: **B. Wrong — ATT is a consent loss**
+### Q24: **B. Wrong, ATT is a consent loss**
 Server-side cannot recover what the user explicitly opted out of. The fix is consent design + Enhanced Conversions, not more server hardware.
 
 ### Q25: **B. No clear activation use cases**

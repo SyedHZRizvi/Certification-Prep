@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: Paid Advertising Fundamentals
 
-> **How to use:** Watch Google Skillshop and Meta Blueprint first — those are the actual exam-aligned sources.
+> **How to use:** Watch Google Skillshop and Meta Blueprint first, those are the actual exam-aligned sources.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ROAS, CAC, LTV — The Math That Saves Your Budget</p>
+      <p class="vg-title">ROAS, CAC, LTV, The Math That Saves Your Budget</p>
       <p class="vg-creator">Adam Erhart</p>
       <span class="vg-duration">⏱ 14 min · Calculator-along</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Conversions API (CAPI) — Server-Side Setup</p>
+      <p class="vg-title">Conversions API (CAPI), Server-Side Setup</p>
       <p class="vg-creator">Meta Blueprint / agency walkthroughs</p>
       <span class="vg-duration">⏱ 14 min · The post-iOS-14.5 fix</span>
     </div>
@@ -148,7 +148,7 @@
 Answer in your notebook (without re-reading):
 
 1. Describe how the ad auction works in one sentence.
-2. PMax vs Advantage+ — which is Google's, which is Meta's, and what do they have in common?
+2. PMax vs Advantage+, which is Google's, which is Meta's, and what do they have in common?
 3. If your gross margin is 40%, what's the minimum break-even ROAS (ignoring opex)?
 4. Why is Conversions API necessary post-iOS-14.5?
 5. Name the 5 RMNs from the reading.

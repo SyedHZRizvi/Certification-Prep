@@ -4,7 +4,7 @@
 
 ---
 
-## 🔄 WUfB — 3 Update Categories
+## 🔄 WUfB, 3 Update Categories
 
 | Category | Cadence |
 |----------|---------|
@@ -61,7 +61,7 @@ When a critical zero-day requires fast deployment:
 | Mode | Effect |
 |------|--------|
 | 0 (HTTP only) | No P2P, CDN only |
-| **1 (LAN)** | P2P same NAT/subnet + CDN — **canonical default** |
+| **1 (LAN)** | P2P same NAT/subnet + CDN, **canonical default** |
 | **2 (Group)** | P2P across subnets via group ID |
 | 3 (Internet) | Internet-wide P2P |
 | 99 (Simple) | Direct Microsoft Update only |
@@ -75,9 +75,9 @@ Bandwidth caps: max foreground %, max background %, monthly upload GB.
 
 Separate policy with three states:
 
-- **Manual** — admin reviews each
-- **Automatic** — new drivers auto-approved
-- **Frozen** — block specific version
+- **Manual**, admin reviews each
+- **Automatic**, new drivers auto-approved
+- **Frozen**, block specific version
 
 ---
 

@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: Document Intelligence & Knowledge Mining
 
-> **How to use:** Click any video card to search YouTube. Vector search content was added rapidly through 2023–2024 — pick the most recent video.
+> **How to use:** Click any video card to search YouTube. Vector search content was added rapidly through 2023–2024, pick the most recent video.
 
 ## ⭐ Essential watching (~65 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Document Intelligence — full walkthrough</p>
+      <p class="vg-title">Document Intelligence, full walkthrough</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 18 min · Prebuilt + custom models</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Search — Index, Indexer, Skillset</p>
+      <p class="vg-title">Azure AI Search, Index, Indexer, Skillset</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 20 min · The DISKS model</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Custom Template vs Custom Neural — which to pick</p>
+      <p class="vg-title">Custom Template vs Custom Neural, which to pick</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 10 min · Decision criteria</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Integrated Vectorization — zero-code RAG</p>
+      <p class="vg-title">Integrated Vectorization, zero-code RAG</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 10 min · Embedding skill in skillsets</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Knowledge Store — projecting enriched data</p>
+      <p class="vg-title">Knowledge Store, projecting enriched data</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 12 min · Tables + objects in Storage</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Prebuilt Models — Invoice, Receipt, ID</p>
+      <p class="vg-title">Prebuilt Models, Invoice, Receipt, ID</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 20 min · Field-by-field</span>
     </div>
@@ -127,14 +127,14 @@
 | **Microsoft Learn** | Canonical API examples |
 | **Microsoft Reactor** | Live RAG walkthroughs |
 | **John Savill's Technical Training** | Architectural depth |
-| **Adam Marczak — Azure for Everyone** | Clear visuals |
+| **Adam Marczak, Azure for Everyone** | Clear visuals |
 
 ---
 
 ## ✅ After watching
 
 1. Name the five parts of DISKS.
-2. Custom Template vs Custom Neural — when do you pick each?
+2. Custom Template vs Custom Neural, when do you pick each?
 3. What dimensions does `text-embedding-3-small` produce? `ada-002`?
 4. Why does hybrid + semantic beat pure vector for RAG?
 5. Which Azure AI Search SKU is the minimum for semantic ranker?

@@ -154,7 +154,7 @@ D. AWS Glue
 ### Q19. Pre-training a foundation model from scratch is: *(Evaluate)*
 A. Done by most enterprises monthly
 B. A free feature of AWS Free Tier
-C. Extremely expensive — typically done by model providers, not customers
+C. Extremely expensive, typically done by model providers, not customers
 D. Automatic when you call Bedrock
 
 ---
@@ -223,7 +223,7 @@ Lower temperature → more deterministic. Top-p / top-k are secondary knobs.
 The hard cap on response length.
 
 ### Q8: **B. Confidently wrong outputs that sound plausible**
-The danger isn't visible nonsense — it's invented "facts" that look right.
+The danger isn't visible nonsense, it's invented "facts" that look right.
 
 ### Q9: **B. Retrieval-Augmented Generation (RAG)**
 Inject real source data at runtime → model paraphrases truth instead of inventing.
@@ -255,11 +255,11 @@ Semantic similarity → small cosine distance. That's the basis of semantic sear
 ### Q18: **A. Amazon Titan Text Embeddings**
 Also: Cohere Embed on Bedrock. Polly = TTS, Personalize = recos.
 
-### Q19: **C. Extremely expensive — done by providers**
+### Q19: **C. Extremely expensive, done by providers**
 Pre-training a frontier model costs tens to hundreds of millions. Customers fine-tune or RAG; they don't pre-train.
 
 ### Q20: **B. About 500 pages**
-~500 pages or ~150K words — depends on tokenization but that's the right order of magnitude.
+~500 pages or ~150K words, depends on tokenization but that's the right order of magnitude.
 
 ### Q21: **C. Exact financial totals**
 GenAI is probabilistic. Use deterministic code for math that must reconcile.
@@ -268,7 +268,7 @@ GenAI is probabilistic. Use deterministic code for math that must reconcile.
 Creativity and reliability are a trade-off.
 
 ### Q23: **A. Semantic search, recommendations, clustering, RAG retrieval**
-Embeddings are the geometry of meaning — they power *all* of these.
+Embeddings are the geometry of meaning, they power *all* of these.
 
 ### Q24: **B. Models that natively handle multiple modalities**
 e.g., Amazon Nova accepts text + image + video; Claude accepts text + image.

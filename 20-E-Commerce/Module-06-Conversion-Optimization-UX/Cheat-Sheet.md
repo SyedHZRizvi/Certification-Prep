@@ -32,7 +32,7 @@
 7. Mind novelty + primacy effects (run ≥ 2-3 cycles)
 ```
 
-🚨 **P < 0.05 ≠ "95% chance variant is better"** — it means "< 5% probability of this data if no real effect."
+🚨 **P < 0.05 ≠ "95% chance variant is better"**, it means "< 5% probability of this data if no real effect."
 
 ---
 
@@ -89,14 +89,14 @@ CLS  ≤ 0.1          (Cumulative Layout Shift)
 
 ---
 
-## 🚪 Checkout — Baymard 2024
+## 🚪 Checkout, Baymard 2024
 
 ```
 Abandonment reasons:
-49% — Unexpected shipping cost
-24% — Required account creation
-22% — Don't trust the site with card
-17% — Too long / complicated
+49%, Unexpected shipping cost
+24%, Required account creation
+22%, Don't trust the site with card
+17%, Too long / complicated
 
 Best practices:
 - Email entry FIRST (no account required)
@@ -136,7 +136,7 @@ Best practices:
 
 ---
 
-## 🛍️ Reviews — Yotpo 2024 CVR Lift
+## 🛍️ Reviews, Yotpo 2024 CVR Lift
 
 ```
 0-9 reviews:    1.5x baseline
@@ -187,11 +187,11 @@ Collection cadence: D7 ask → D14 re-prompt → D21 cease.
 
 ## 🗓️ Key Dates
 
-- **2010** — Saleh & Shukairy *Conversion Optimization* published
-- **2020** — Kohavi/Tang/Xu textbook published (Cambridge UP)
-- **2024 March 12** — INP replaced FID as Core Web Vital
-- **2023** — Algolia NeuralSearch GA
-- **2024** — Yotpo + Klaviyo benchmark refreshes
+- **2010**, Saleh & Shukairy *Conversion Optimization* published
+- **2020**, Kohavi/Tang/Xu textbook published (Cambridge UP)
+- **2024 March 12**, INP replaced FID as Core Web Vital
+- **2023**, Algolia NeuralSearch GA
+- **2024**, Yotpo + Klaviyo benchmark refreshes
 
 ---
 

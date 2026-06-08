@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: Threats & Threat Actors
 
-> **How to use:** This material is more conceptual than technical — choose the videos with real-world case studies (APT breakdowns, SolarWinds, Conti ransomware) to make the actor matrix stick.
+> **How to use:** This material is more conceptual than technical, choose the videos with real-world case studies (APT breakdowns, SolarWinds, Conti ransomware) to make the actor matrix stick.
 
 ## ⭐ Essential watching (~45 min)
 

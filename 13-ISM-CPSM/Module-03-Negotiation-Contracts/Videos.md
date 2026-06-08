@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Negotiation Tactics — Recognize and Counter</p>
+      <p class="vg-title">Negotiation Tactics, Recognize and Counter</p>
       <p class="vg-creator">Procurement Tactics</p>
       <span class="vg-duration">⏱ 13 min · Anchor, nibble, bogey</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Getting to Yes — Full Book Summary</p>
+      <p class="vg-title">Getting to Yes, Full Book Summary</p>
       <p class="vg-creator">Productivity Game</p>
       <span class="vg-duration">⏱ 15 min · Principled negotiation</span>
     </div>
@@ -144,8 +144,8 @@
 
 ## ✅ After watching
 
-1. Define BATNA, ZOPA, reservation price, and anchor — each in one sentence.
-2. Distributive vs integrative — give one scenario each.
+1. Define BATNA, ZOPA, reservation price, and anchor, each in one sentence.
+2. Distributive vs integrative, give one scenario each.
 3. Risk allocation in fixed-price vs cost-plus vs T&M?
 4. Three elements that must be present for a contract to exist.
 5. When does CISG apply and when does UCC apply?

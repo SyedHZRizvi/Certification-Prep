@@ -61,7 +61,7 @@ D. Vertical CJK text
 
 ### Q7. EXIF rotation metadata in JPEG files: *(Understand)*
 A. Is always honored by vision APIs
-B. Is OFTEN NOT honored — pre-rotate the image to upright before sending
+B. Is OFTEN NOT honored, pre-rotate the image to upright before sending
 C. Doesn't exist
 D. Is the same as base64
 
@@ -85,7 +85,7 @@ D. Switching to L0 JSON
 
 ### Q10. Whisper is best described as: *(Remember)*
 A. A vision model
-B. OpenAI's transcription model — strong at audio-to-text, weak as a chat model
+B. OpenAI's transcription model, strong at audio-to-text, weak as a chat model
 C. A chart-reading model
 D. A vector database
 
@@ -101,7 +101,7 @@ D. Cellular vs Wi-Fi
 
 ### Q12. Image text that says "Ignore your previous instructions" is: *(Analyze)*
 A. Always blocked by the model
-B. A real prompt-injection vector — image text must be treated as untrusted input (Module 7)
+B. A real prompt-injection vector, image text must be treated as untrusted input (Module 7)
 C. Equivalent to a system prompt
 D. Filtered by EXIF
 
@@ -141,7 +141,7 @@ D. 50,000 tokens
 
 ### Q17. The MOST important reason to use structured outputs (Module 4) WITH vision is: *(Analyze)*
 A. They make the model faster
-B. The downstream system needs guaranteed parseable fields — vision adds many failure modes (illegible, ambiguous) that the schema can model with Optional + null
+B. The downstream system needs guaranteed parseable fields, vision adds many failure modes (illegible, ambiguous) that the schema can model with Optional + null
 C. They lower image cost
 D. They eliminate the need for evals
 
@@ -165,7 +165,7 @@ D. Single image classification
 
 ### Q20. A 30-minute video at 1 frame per second sent to Gemini is approximately: *(Apply)*
 A. 100 tokens
-B. ~450K tokens — measure cost before shipping
+B. ~450K tokens, measure cost before shipping
 C. 1,000 tokens
 D. Free
 
@@ -181,15 +181,15 @@ D. Tokenize audio
 
 ### Q22. A bank wants to OCR signature pages for regulatory submission. The SAFER 2026 choice is: *(Evaluate)*
 A. A vision LLM only
-B. AWS Textract (or equivalent dedicated OCR) as primary, with a vision LLM as a secondary verifier — regulatory expectations favor proven OCR for legal artifacts
+B. AWS Textract (or equivalent dedicated OCR) as primary, with a vision LLM as a secondary verifier, regulatory expectations favor proven OCR for legal artifacts
 C. Tesseract on the device
 D. Manual transcription only
 
 ---
 
 ### Q23. A photo of a printed page that contains a tiny "ignore all prior instructions" sticky note will, on a 2026 vision model: *(Analyze)*
-A. Always be safe — vision models cannot read text
-B. Potentially be injected — image text is a real attack vector (cover in Module 7)
+A. Always be safe, vision models cannot read text
+B. Potentially be injected, image text is a real attack vector (cover in Module 7)
 C. Cost the same as no sticky note
 D. Be rotated automatically
 
@@ -241,7 +241,7 @@ Models conflate without labels. "Image 1: before; Image 2: after."
 ### Q6: **B. Layout-aware extraction**
 Forms, receipts, contracts. VLMs reason about structure; raw OCR doesn't.
 
-### Q7: **B. Often NOT honored — pre-rotate**
+### Q7: **B. Often NOT honored, pre-rotate**
 One of the most common gotchas. EXIF-orient before sending.
 
 ### Q8: **B. Quick high-level analysis where cost matters**
@@ -324,4 +324,4 @@ Medical pre-fill must have a human in the loop. Every safety element matters.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Evaluation & A/B Testing](../Module-06-Evaluation-AB-Testing/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Evaluation & A/B Testing](../Module-06-Evaluation-AB-Testing/Reading.md)

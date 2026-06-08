@@ -215,7 +215,7 @@ Conditional deploy is the canonical use of `ConditionStep`.
 Approval workflow is built into the Registry. Promote-to-production gates on `ApprovalStatus = Approved`.
 
 ### Q3: **B. Serverless inference**
-Scale-to-zero pay-per-request — perfect for sparse traffic.
+Scale-to-zero pay-per-request, perfect for sparse traffic.
 
 ### Q4: **C. Async inference**
 Designed for large payloads (1 GB) and long processing (up to 1 h). Serverless caps at 6 GB memory but typically lower payload limit and 60s.
@@ -227,13 +227,13 @@ One-time / scheduled offline scoring; no endpoint.
 Watches feature distribution against baseline statistics.
 
 ### Q7: **B. Feature Attribution Drift monitor**
-SHAP-attribution-based drift — one of the four Model Monitor types.
+SHAP-attribution-based drift, one of the four Model Monitor types.
 
 ### Q8: **A. Shadow variant**
 Real traffic mirrored to a new variant without affecting user response.
 
 ### Q9: **B. Multi-Model Endpoint (MME)**
-Many models hosted on one endpoint, loaded on demand — cost-optimal for sparse-per-model traffic.
+Many models hosted on one endpoint, loaded on demand, cost-optimal for sparse-per-model traffic.
 
 ### Q10: **B. Monitor → EventBridge → Lambda → Pipeline**
 Standard retrain-on-drift architecture.
@@ -245,7 +245,7 @@ SageMaker supports auto-rollback if a CloudWatch alarm breaches during deploymen
 Pipelines integrates with Registry / Quality steps / conditional deploy natively. Step Functions is generic orchestration.
 
 ### Q13: **A. Target tracking**
-"Keep avg X at target value" — the default and simplest.
+"Keep avg X at target value", the default and simplest.
 
 ### Q14: **B. Benchmark + recommend cost-optimal instance type**
 Tries multiple instance families and reports cost / latency / throughput.
@@ -296,7 +296,7 @@ RAM shares the Model Package across accounts; Model Hub pattern enables federate
 
 ## 🃏 Add to flashcards
 
-- The 4 inference modes (real-time / serverless / async / batch) — picking by scenario
+- The 4 inference modes (real-time / serverless / async / batch), picking by scenario
 - MME vs MCE vs Inference Components
 - Blue-green vs canary vs linear vs shadow
 - The 4 Model Monitor types

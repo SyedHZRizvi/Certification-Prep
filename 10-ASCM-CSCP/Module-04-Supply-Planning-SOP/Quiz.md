@@ -155,14 +155,14 @@ D. MAD over MFE
 A. 28 days before week 4 with quantity 400
 B. 28 days after week 4 with quantity 200
 C. The same week with quantity 400
-D. Not at all — wheels are independent demand
+D. Not at all, wheels are independent demand
 
 ---
 
 ### Q20. Outside the planning time fence, MRP-driven planning is: *(Remember)*
 A. Frozen
 B. Slushy
-C. Liquid — system can replan freely
+C. Liquid, system can replan freely
 D. Manual only
 
 ---
@@ -230,7 +230,7 @@ Level keeps workforce stable, absorbs variability with inventory.
 MPS is SKU-level. Family is S&OP. Component is MRP.
 
 ### Q5: **A. MPS, BOM, inventory records**
-Memorize this — appears verbatim on the exam.
+Memorize this, appears verbatim on the exam.
 
 ### Q6: **B. Only firm orders inside**
 DTF protects near-term execution from forecast noise.
@@ -274,7 +274,7 @@ Standard ATP definition.
 ### Q19: **A. 28 days before week 4, quantity 400**
 2 wheels × 200 bicycles = 400. Lead-time-offset → release 28 days earlier.
 
-### Q20: **C. Liquid — system replans freely**
+### Q20: **C. Liquid, system replans freely**
 Outside PTF, MRP can adjust orders without manual intervention.
 
 ### Q21: **B. One committed plan**

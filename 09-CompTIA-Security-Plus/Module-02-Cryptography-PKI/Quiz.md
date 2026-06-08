@@ -125,7 +125,7 @@ D. It does not include OCSP info
 
 ### Q15. The PRIMARY reason we combine symmetric + asymmetric (hybrid encryption) is: *(Analyze)*
 A. Stronger math
-B. Asymmetric is slow; symmetric is fast — so use asymmetric to exchange a fast symmetric key
+B. Asymmetric is slow; symmetric is fast, so use asymmetric to exchange a fast symmetric key
 C. Compliance requirement
 D. Asymmetric cannot encrypt data at all
 
@@ -165,7 +165,7 @@ D. Obfuscation
 
 ### Q20. Base64 encoding is: *(Understand)*
 A. A strong stream cipher
-B. Encoding, not encryption — anyone can decode it instantly
+B. Encoding, not encryption, anyone can decode it instantly
 C. A hashing function
 D. A key-stretching technique
 
@@ -215,7 +215,7 @@ D. Force browsers to ignore date checks via group policy
 A. Switch to MD5 for speed
 B. Add Base64 encoding before hashing
 C. Re-hash all stored passwords with a salted, key-stretched algorithm such as bcrypt/Argon2 on next user login
-D. Leave it — SHA-256 is unbroken
+D. Leave it, SHA-256 is unbroken
 
 ---
 
@@ -228,7 +228,7 @@ Advanced Encryption Standard. Block cipher, 128-bit blocks, 128/192/256-bit keys
 Signing = encrypt the *hash* with **sender's private key**. Verify = decrypt with **sender's public key**. This is the most commonly tested crypto fact on Sec+.
 
 ### Q3: **C. Bob's public key**
-For confidentiality, encrypt with the **recipient's public key** — only their private key can decrypt.
+For confidentiality, encrypt with the **recipient's public key**, only their private key can decrypt.
 
 ### Q4: **C. AES-GCM**
 GCM = Galois/Counter Mode = authenticated encryption. ECB leaks patterns (never use). CBC is conf-only. RC4 is broken.
@@ -237,7 +237,7 @@ GCM = Galois/Counter Mode = authenticated encryption. ECB leaks patterns (never 
 256-bit ECC ≈ 3072-bit RSA strength. Smaller keys → faster handshakes, less memory, better for mobile/IoT.
 
 ### Q6: **C. DHE / ECDHE**
-Ephemeral key exchange creates a new session key per session — compromise of the long-term key does not decrypt past traffic.
+Ephemeral key exchange creates a new session key per session, compromise of the long-term key does not decrypt past traffic.
 
 ### Q7: **C. MD5**
 Collisions found in 2004. Do not use for security. SHA-256/SHA-3/HMAC-SHA256 are all fine.
@@ -252,7 +252,7 @@ AES is encryption, not password hashing. bcrypt, PBKDF2, Argon2 (and scrypt) are
 The CA's private key signs the cert; clients verify with the CA's public key (which lives in the trust store).
 
 ### Q11: **D. PKCS#12**
-.pfx/.p12 — bundles cert + private key + chain, password-protected. PEM/DER are typically cert-only; PKCS#7 is a chain bundle without keys.
+.pfx/.p12, bundles cert + private key + chain, password-protected. PEM/DER are typically cert-only; PKCS#7 is a chain bundle without keys.
 
 ### Q12: **C. Every single-label subdomain**
 `*.example.com` matches www, api, mail. It does NOT match `test.dev.example.com` (that's two labels deep).
@@ -279,13 +279,13 @@ Encryption: token = f(key, plaintext). Tokenization: token = random reference; o
 Hiding data inside other data.
 
 ### Q20: **B. Encoding, not encryption**
-Base64 is reversible by anyone — it's about safe transport of binary data, not secrecy.
+Base64 is reversible by anyone, it's about safe transport of binary data, not secrecy.
 
 ### Q21: **C. Non-repudiation**
 Only the holder of the private key could have produced the signature → they cannot later deny it.
 
 ### Q22: **B. Kept offline; only signs intermediates**
-Best practice — Root CA private key is gold; using it daily exposes it. Issue intermediates that handle daily work.
+Best practice, Root CA private key is gold; using it daily exposes it. Issue intermediates that handle daily work.
 
 ### Q23: **B. ECDHE**
 TLS 1.3 mandates (EC)DHE-style ephemeral exchanges, making PFS the default.
@@ -303,10 +303,10 @@ You can't recover plaintext from SHA-256 (good), so you migrate at next login by
 
 ## 📊 Score Yourself
 
-- 25–26/26 → 🏆 Crypto mastered. Many candidates stumble here — you're ahead.
+- 25–26/26 → 🏆 Crypto mastered. Many candidates stumble here, you're ahead.
 - 22–24/26 → ✅ Solid. Note the gaps (probably algorithm classification or PKI roles), review, move on.
 - 18–21/26 → ⚠️ Re-read the "Symmetric vs Asymmetric" and "PKI" sections, watch Messer #3.
-- <18/26 → 🔁 Full restart. Crypto compounds — don't move on weak.
+- <18/26 → 🔁 Full restart. Crypto compounds, don't move on weak.
 
 ---
 
@@ -321,4 +321,4 @@ You can't recover plaintext from SHA-256 (good), so you migrate at next login by
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Identity & Access Management](../Module-03-Identity-Access-Management/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Identity & Access Management](../Module-03-Identity-Access-Management/Reading.md)

@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Security Fundamentals — 220-1102</p>
+      <p class="vg-title">Security Fundamentals, 220-1102</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 14 min · CIA, MFA, encryption</span>
     </div>
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Wireless Security — WEP / WPA / WPA2 / WPA3</p>
+      <p class="vg-title">Wireless Security, WEP / WPA / WPA2 / WPA3</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 11 min · The Wi-Fi stack</span>
     </div>
@@ -63,7 +63,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">BitLocker &amp; FileVault — Full Disk Encryption</p>
+      <p class="vg-title">BitLocker &amp; FileVault, Full Disk Encryption</p>
       <p class="vg-creator">Dion Training</p>
       <span class="vg-duration">⏱ 10 min · Lost-laptop defense</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Phishing Demo — see it executed</p>
+      <p class="vg-title">Phishing Demo, see it executed</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 14 min · Hands-on attacker view</span>
     </div>

@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-06-UI-Micro-Interactions/Chea
 title: "Module 6 Cheat Sheet: UI Micro-Interactions"
 ---
 
-# ⚡ Module 6 Cheat Sheet — UI Micro-Interactions
+# ⚡ Module 6 Cheat Sheet, UI Micro-Interactions
 
 ## Key Timing Reference
 
@@ -21,7 +21,7 @@ title: "Module 6 Cheat Sheet: UI Micro-Interactions"
 **Why:** Animating layout properties (width/height/top/left) is expensive. FLIP animates only transforms.
 
 **Steps:**
-1. **F**irst: `getBoundingClientRect()` — record start position
+1. **F**irst: `getBoundingClientRect()`, record start position
 2. **L**ast: Apply end state to DOM
 3. **I**nvert: Apply `translate(dx, dy) scale(dw, dh)` to place element visually at start
 4. **P**lay: Animate transform to `none` (rAF or transition)
@@ -60,7 +60,7 @@ title: "Module 6 Cheat Sheet: UI Micro-Interactions"
 4. Animations should be reversible (matching entry/exit directions)
 5. Use motion to guide focus
 6. Speed signals relationship tightness
-7. Support `prefers-reduced-motion` — non-optional
+7. Support `prefers-reduced-motion`, non-optional
 8. Animate between states, not elements
 9. Instant is sometimes the right choice
 10. Coordinate multiple animations with unified logic
@@ -153,7 +153,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

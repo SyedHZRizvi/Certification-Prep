@@ -18,7 +18,7 @@
 
 # 🎥 Module 8 Videos: Network Troubleshooting Methodology
 
-> **How to use:** Domain 5 is 24% of the exam — the largest. Watch the methodology video TWICE if you have to. Then drill the L1-L7 issue catalog with the second video.
+> **How to use:** Domain 5 is 24% of the exam, the largest. Watch the methodology video TWICE if you have to. Then drill the L1-L7 issue catalog with the second video.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -142,7 +142,7 @@ Answer in your notebook (without re-watching):
 
 1. Recite the 7-step methodology in order.
 2. List 3 L1, 3 L2, 3 L3, and 3 L7 symptoms and probable causes.
-3. Compare top-down vs bottom-up — give one scenario each.
+3. Compare top-down vs bottom-up, give one scenario each.
 4. What does a TDR do, and when do you reach for an OTDR?
 5. Why was the Facebook outage 6 hours instead of 5 minutes (mention out-of-band)?
 

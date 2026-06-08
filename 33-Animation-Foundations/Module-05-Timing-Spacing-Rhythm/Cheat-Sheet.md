@@ -34,10 +34,10 @@
 ## Timing Chart Spacing Key
 
 ```
-SLOW-IN (from A):    A 1 2 — 3 ——————— B  (clustered near A)
-SLOW-OUT (to B):     A ——————— 1 — 2 3 B  (clustered near B)
+SLOW-IN (from A):    A 1 2, 3 ——————— B  (clustered near A)
+SLOW-OUT (to B):     A ——————— 1, 2 3 B  (clustered near B)
 SLOW IN + OUT:       A 1 ——— 2 ——— 3 B  (S-curve distribution)
-CONSTANT (linear):   A — 1 — 2 — 3 — B  (even spacing)
+CONSTANT (linear):   A, 1, 2, 3, B  (even spacing)
 ```
 
 ---
@@ -120,7 +120,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 
@@ -159,7 +159,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

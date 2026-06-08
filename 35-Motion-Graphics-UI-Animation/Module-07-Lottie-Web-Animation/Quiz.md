@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-07-Lottie-Web-Animation/Quiz/
 title: "Module 7 Quiz: Lottie & Web Animation"
 ---
 
-# 🧠 Module 7 Quiz — Lottie & Web Animation
+# 🧠 Module 7 Quiz, Lottie & Web Animation
 
 ### Q1.
 What company created Lottie, and what problem were they solving?
@@ -49,7 +49,7 @@ D. 3D camera animations
 In GSAP ScrollTrigger, the `scrub: true` property means:
 
 A. The animation plays at double speed  
-B. The animation progress is tied to scroll position — scrubbing back and forth as the user scrolls  
+B. The animation progress is tied to scroll position, scrubbing back and forth as the user scrolls  
 C. The animation is cleaned up (scrubbed) when the trigger leaves the viewport  
 D. ScrollTrigger refreshes its calculations on every scroll event  
 
@@ -136,10 +136,10 @@ D. `gsap.chain()`
 ---
 
 ### Q14.
-The CSS property `animation: float 3s ease-in-out infinite` — what does `infinite` specify?
+The CSS property `animation: float 3s ease-in-out infinite`, what does `infinite` specify?
 
 A. The animation plays for an indefinite duration (very long)  
-B. The animation repeats indefinitely — there is no end  
+B. The animation repeats indefinitely, there is no end  
 C. The animation's duration is flexible  
 D. The animation uses infinite easing  
 
@@ -248,51 +248,51 @@ D. The trigger to fire only once even if the user scrolls back
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — Airbnb created Lottie to solve the quality/performance/control trade-offs of using GIFs or video for mobile animations. The framework renders AE JSON natively on device.
+Q1:  B, Airbnb created Lottie to solve the quality/performance/control trade-offs of using GIFs or video for mobile animations. The framework renders AE JSON natively on device.
 
-Q2:  C — Lottie exports to .json format (the "Bodymovin JSON" format, sometimes called "Lottie JSON").
+Q2:  C, Lottie exports to .json format (the "Bodymovin JSON" format, sometimes called "Lottie JSON").
 
-Q3:  C — Bodymovin (now branded as "LottieFiles for After Effects") is the AE plugin that renders compositions as Lottie JSON.
+Q3:  C, Bodymovin (now branded as "LottieFiles for After Effects") is the AE plugin that renders compositions as Lottie JSON.
 
-Q4:  D — 3D camera animations are not supported by Lottie. Shape layers, Trim Paths, and masks are all supported.
+Q4:  D, 3D camera animations are not supported by Lottie. Shape layers, Trim Paths, and masks are all supported.
 
-Q5:  B — scrub: true links animation progress directly to scroll position. Scroll forward = animation plays forward. Scroll backward = animation reverses. It "scrubs" the playhead.
+Q5:  B, scrub: true links animation progress directly to scroll position. Scroll forward = animation plays forward. Scroll backward = animation reverses. It "scrubs" the playhead.
 
-Q6:  B — GSAP ScrollTrigger start syntax: two positions separated by a space. First = where on the trigger element; second = where on the viewport. E.g., "top center" = when the top of the trigger hits the center of the viewport.
+Q6:  B, GSAP ScrollTrigger start syntax: two positions separated by a space. First = where on the trigger element; second = where on the viewport. E.g., "top center" = when the top of the trigger hits the center of the viewport.
 
-Q7:  B — whileHover applies a Framer Motion animation variant that plays while the element is being hovered. It automatically reverses when hover ends.
+Q7:  B, whileHover applies a Framer Motion animation variant that plays while the element is being hovered. It automatically reverses when hover ends.
 
-Q8:  B — React Spring uses physics simulation (mass, tension/stiffness, friction) rather than duration + easing. The animation settles when the spring reaches equilibrium.
+Q8:  B, React Spring uses physics simulation (mass, tension/stiffness, friction) rather than duration + easing. The animation settles when the spring reaches equilibrium.
 
-Q9:  C — GSAP is the choice for complex scroll sequences, precise timing control, and non-React (vanilla JS) contexts. Framer Motion is React-specific and optimized for UI state animations.
+Q9:  C, GSAP is the choice for complex scroll sequences, precise timing control, and non-React (vanilla JS) contexts. Framer Motion is React-specific and optimized for UI state animations.
 
-Q10: B — The Web Animations API is a native browser API — no library required. It provides timeline-based control similar to GSAP but built into the browser.
+Q10: B, The Web Animations API is a native browser API, no library required. It provides timeline-based control similar to GSAP but built into the browser.
 
-Q11: B — Unsupported AE features (raster effects, 3D cameras, certain expressions) cause blank or broken Lottie output. Always build with shape layers and test features before export.
+Q11: B, Unsupported AE features (raster effects, 3D cameras, certain expressions) cause blank or broken Lottie output. Always build with shape layers and test features before export.
 
-Q12: B — Framer Motion's exit property animates when the component unmounts from the React tree. Requires an AnimatePresence wrapper to work.
+Q12: B, Framer Motion's exit property animates when the component unmounts from the React tree. Requires an AnimatePresence wrapper to work.
 
-Q13: C — gsap.timeline() creates a grouped sequence. Chain .from(), .to(), and .fromTo() on the timeline to play animations in sequence.
+Q13: C, gsap.timeline() creates a grouped sequence. Chain .from(), .to(), and .fromTo() on the timeline to play animations in sequence.
 
-Q14: B — `infinite` as the iteration-count value causes the animation to repeat indefinitely with no endpoint.
+Q14: B, `infinite` as the iteration-count value causes the animation to repeat indefinitely with no endpoint.
 
-Q15: B — renderer: 'svg' sets SVG as the rendering backend (vs 'canvas' or 'html'). SVG is most commonly used for Lottie on web.
+Q15: B, renderer: 'svg' sets SVG as the rendering backend (vs 'canvas' or 'html'). SVG is most commonly used for Lottie on web.
 
-Q16: B — animation.playSegments([startFrame, endFrame], forceFlag) plays specified frame range. `true` forces the immediate jump to the start of the segment.
+Q16: B, animation.playSegments([startFrame, endFrame], forceFlag) plays specified frame range. `true` forces the immediate jump to the start of the segment.
 
-Q17: B — CSS Custom Properties centralize values: change --animation-duration in one place and all elements using it update automatically. Ideal for design-token-based animation systems.
+Q17: B, CSS Custom Properties centralize values: change --animation-duration in one place and all elements using it update automatically. Ideal for design-token-based animation systems.
 
-Q18: B — Spring stiffness 300 = snappy/quick response; damping 30 = moderate oscillation control. Higher stiffness = faster; higher damping = less bounce.
+Q18: B, Spring stiffness 300 = snappy/quick response; damping 30 = moderate oscillation control. Higher stiffness = faster; higher damping = less bounce.
 
-Q19: B — GSAP timelines support reversing, seeking to any time, variable playback speed, and complex sequencing. CSS animations are declarative and don't offer runtime timeline control.
+Q19: B, GSAP timelines support reversing, seeking to any time, variable playback speed, and complex sequencing. CSS animations are declarative and don't offer runtime timeline control.
 
-Q20: C — Mobile Lottie player version mismatches can cause features to fail. Test with the same version on mobile as in the web previewer.
+Q20: C, Mobile Lottie player version mismatches can cause features to fail. Test with the same version on mobile as in the web previewer.
 
-Q21: B — fill: 'forwards' keeps the element in its animation's final state after the animation completes. Without this, the element snaps back to its pre-animation state.
+Q21: B, fill: 'forwards' keeps the element in its animation's final state after the animation completes. Without this, the element snaps back to its pre-animation state.
 
-Q22: C — React Spring uses useSpring with physics parameters (mass, tension, friction). It's fundamentally duration-free — the spring settles naturally.
+Q22: C, React Spring uses useSpring with physics parameters (mass, tension, friction). It's fundamentally duration-free, the spring settles naturally.
 
-Q23: C — Lottie is resolution-independent (SVG-based), supports programmatic control (play/pause/seek/speed), and can respond to user interaction. MP4 is fixed-resolution and cannot be controlled programmatically.
+Q23: C, Lottie is resolution-independent (SVG-based), supports programmatic control (play/pause/seek/speed), and can respond to user interaction. MP4 is fixed-resolution and cannot be controlled programmatically.
 
-Q24: B — pin: true fixes the trigger element in place (as if position: fixed) while the scroll-driven animation plays out. The element "unpins" when the animation completes.
+Q24: B, pin: true fixes the trigger element in place (as if position: fixed) while the scroll-driven animation plays out. The element "unpins" when the animation completes.
 ```

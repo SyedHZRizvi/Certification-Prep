@@ -132,9 +132,9 @@ Usually WRONG:
 1. SS formula? ___
 2. Square-root rule example? ___
 3. Bullwhip cause and cure? ___
-4. Postponement types — name 3? ___
+4. Postponement types, name 3? ___
 5. IRA target? ___
 
 ---
 
-➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) — Modules 1–4 covered. After: [Module 5](../Module-05-Warehouse-Operations/Reading.md)
+➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), Modules 1–4 covered. After: [Module 5](../Module-05-Warehouse-Operations/Reading.md)

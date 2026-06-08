@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: ML Foundations & The AWS ML Landscape
 
-> **How to use:** Click any card to search YouTube for the topic — top result is usually the freshest take. Watch in order, pause to take notes, then come back to the Quiz.
+> **How to use:** Click any card to search YouTube for the topic, top result is usually the freshest take. Watch in order, pause to take notes, then come back to the Quiz.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>☁️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Amazon SageMaker Overview — What & Why</p>
+      <p class="vg-title">Amazon SageMaker Overview, What & Why</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 16 min · Studio, training, hosting in one tour</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎯</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Precision, Recall, F1, ROC AUC — All In One</p>
+      <p class="vg-title">Precision, Recall, F1, ROC AUC, All In One</p>
       <p class="vg-creator">StatQuest</p>
       <span class="vg-duration">⏱ 20 min · Read any confusion matrix in 30s</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>⛰️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Gradient Descent — Visual Intuition</p>
+      <p class="vg-title">Gradient Descent, Visual Intuition</p>
       <p class="vg-creator">3Blue1Brown</p>
       <span class="vg-duration">⏱ 21 min · The math you actually need</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🧭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AWS Well-Architected — The Machine Learning Lens</p>
+      <p class="vg-title">AWS Well-Architected, The Machine Learning Lens</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 38 min · Production ML best practice</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎓</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Andrew Ng — Machine Learning Fundamentals</p>
+      <p class="vg-title">Andrew Ng, Machine Learning Fundamentals</p>
       <p class="vg-creator">DeepLearningAI / Coursera</p>
       <span class="vg-duration">⏱ 60 min · The canonical intro lecture</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Werner Vogels re:Invent Keynote — ML Roadmap</p>
+      <p class="vg-title">Werner Vogels re:Invent Keynote, ML Roadmap</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 90 min · AWS's CTO on the year's ML strategy</span>
     </div>
@@ -151,13 +151,13 @@
 
 | Channel | Why |
 |---------|-----|
-| **StatQuest with Josh Starmer** | Best intuitive ML explainers on YouTube — every MLS-C01 topic in one place |
+| **StatQuest with Josh Starmer** | Best intuitive ML explainers on YouTube, every MLS-C01 topic in one place |
 | **Stephane Maarek** | Best-selling Udemy AWS courses; YouTube has free MLS clips |
 | **AWS Online Tech Talks / AWS Events** | Official source; deep technical content on every SageMaker / Bedrock feature |
 | **Be A Better Dev** | Short, animated AWS service explainers |
-| **3Blue1Brown** | The math behind ML — neural nets, gradient descent, linear algebra |
+| **3Blue1Brown** | The math behind ML, neural nets, gradient descent, linear algebra |
 | **Two Minute Papers** | Cutting-edge ML / AI research distilled to 2-minute videos |
-| **DeepLearningAI** | Andrew Ng's official YouTube — gold standard for fundamentals |
+| **DeepLearningAI** | Andrew Ng's official YouTube, gold standard for fundamentals |
 
 ---
 

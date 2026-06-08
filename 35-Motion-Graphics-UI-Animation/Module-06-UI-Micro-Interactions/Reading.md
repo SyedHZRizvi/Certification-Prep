@@ -7,7 +7,7 @@ title: "Module 6: UI Micro-Interactions"
 
 ## The 200ms That Made Everything Better
 
-In 2014, Google released Material Design. Among its many innovations was a specific commitment: every interactive element on screen would respond to user input within 200ms. Not 190ms. Not 250ms. 200ms — the upper limit of what humans perceive as "instant response."
+In 2014, Google released Material Design. Among its many innovations was a specific commitment: every interactive element on screen would respond to user input within 200ms. Not 190ms. Not 250ms. 200ms, the upper limit of what humans perceive as "instant response."
 
 The effect was immediate. Products built on Material Design felt *alive* in a way that previous Android interfaces hadn't. Users didn't consciously notice the animations; they just felt like the product understood them. That feeling is what micro-interactions deliver.
 
@@ -26,13 +26,13 @@ Every UI animation must serve a purpose: communicate state, guide attention, pro
 Larger, more important elements should have more prominent animations. Secondary elements should animate more subtly or later.
 
 ### 3. Reflect the Interface's Physics
-Consistent physical logic — same easing, same direction conventions — makes an interface feel coherent. Mixing spring and linear animations in the same product without reason creates cognitive friction.
+Consistent physical logic same easing, same direction conventions makes an interface feel coherent. Mixing spring and linear animations in the same product without reason creates cognitive friction.
 
-### 4. Actions Should Be Reversible — and Animations Too
+### 4. Actions Should Be Reversible, and Animations Too
 If a panel slides in from the right, it should slide out to the right. If a card scales up on tap, it should scale down on un-tap. Direction reversal should feel undoable.
 
 ### 5. Use Animation to Guide Focus
-Animation draws the eye. Use this deliberately to guide users toward the next action — not to showcase motion for its own sake.
+Animation draws the eye. Use this deliberately to guide users toward the next action, not to showcase motion for its own sake.
 
 ### 6. Speed Signals Relationship
 Fast animations (50–100ms) suggest the relationship between action and result is tight (button press → ripple). Slow animations (300–500ms) suggest the relationship is more distant or significant (modal open → new context).
@@ -53,7 +53,7 @@ When multiple elements animate in response to one action, they should share a un
 Animations look different in real usage than in after effects preview. Always test at real size on a real device. A 200ms animation looks instant on a 4K preview monitor but may feel fast on a phone.
 
 ### 12. Loading States Are Interface Animation Too
-Skeleton screens, spinners, progress bars, and skeleton loaders are animations. They communicate "something is happening" — which is the most important thing to communicate when a user is waiting.
+Skeleton screens, spinners, progress bars, and skeleton loaders are animations. They communicate "something is happening", which is the most important thing to communicate when a user is waiting.
 
 ---
 
@@ -61,13 +61,13 @@ Skeleton screens, spinners, progress bars, and skeleton loaders are animations. 
 
 > 🎯 **Exam Callout 1:** The Google Material Design specification defines standard UI transition duration as **200–300ms**. The Apple HIG specifies **~250ms**. Both derive from the same human-perception research. The exam tests: what is the Material Design-specified duration range for standard transitions? Answer: 200–300ms.
 
-> 🎯 **Exam Callout 2:** `@media (prefers-reduced-motion: reduce)` is a CSS media query that detects when a user has enabled the system accessibility option for reduced motion. This is not optional for production UI — the exam tests whether you can identify which CSS mechanism enables reduced-motion fallbacks.
+> 🎯 **Exam Callout 2:** `@media (prefers-reduced-motion: reduce)` is a CSS media query that detects when a user has enabled the system accessibility option for reduced motion. This is not optional for production UI, the exam tests whether you can identify which CSS mechanism enables reduced-motion fallbacks.
 
-> 🎯 **Exam Callout 3:** The FLIP technique animates **only transform properties** (translate, scale) — never layout properties (width, height, top, left, margin). The reason: transform is GPU-accelerated and doesn't trigger layout recalculation. The exam tests: which CSS properties does the FLIP technique specifically avoid animating?
+> 🎯 **Exam Callout 3:** The FLIP technique animates **only transform properties** (translate, scale), never layout properties (width, height, top, left, margin). The reason: transform is GPU-accelerated and doesn't trigger layout recalculation. The exam tests: which CSS properties does the FLIP technique specifically avoid animating?
 
-> 🎯 **Exam Callout 4:** Skeleton screens reduce **perceived** load time by 20–40% according to Nielsen Norman Group research — they don't reduce actual load time. The exam may test: what does a skeleton screen improve? Answer: perceived load time, not actual load time.
+> 🎯 **Exam Callout 4:** Skeleton screens reduce **perceived** load time by 20–40% according to Nielsen Norman Group research, they don't reduce actual load time. The exam may test: what does a skeleton screen improve? Answer: perceived load time, not actual load time.
 
-> 🎯 **Exam Callout 5:** In Figma, Smart Animate works only when elements in both frames share **the same layer name**. Renamed layers do not animate — they appear to snap. The exam tests: what is the prerequisite for Figma Smart Animate to interpolate between two states?
+> 🎯 **Exam Callout 5:** In Figma, Smart Animate works only when elements in both frames share **the same layer name**. Renamed layers do not animate, they appear to snap. The exam tests: what is the prerequisite for Figma Smart Animate to interpolate between two states?
 
 > 🎯 **Exam Callout 6:** Linear's published motion specification defines three speed categories: quick (80–150ms), comfortable (200–300ms), and deliberate (300–500ms). The exam may use Linear's spec as a reference in questions about interaction speed taxonomy.
 
@@ -77,13 +77,13 @@ Skeleton screens, spinners, progress bars, and skeleton loaders are animations. 
 
 ## ⚠️ Common Traps: UI Micro-Interactions
 
-**Trap 1 — Animating Layout Properties in CSS:** `transition: width 300ms ease` triggers an expensive layout recalculation on every frame — it will cause jank on mid-range devices. The FLIP-compliant alternative: use `transform: scaleX()` to simulate a width change. Students who learn CSS animation from tutorials often learn the wrong approach first.
+**Trap 1 Animating Layout Properties in CSS:** `transition: width 300ms ease` triggers an expensive layout recalculation on every frame it will cause jank on mid-range devices. The FLIP-compliant alternative: use `transform: scaleX()` to simulate a width change. Students who learn CSS animation from tutorials often learn the wrong approach first.
 
-**Trap 2 — The Reduced Motion Afterthought:** Many designers add `prefers-reduced-motion` as a final checklist item, replacing all animations with zero-duration versions. The correct approach: use `prefers-reduced-motion` as a design constraint from the start — some animations communicate essential state and need a non-motion equivalent (color change, text label), not just removal.
+**Trap 2 The Reduced Motion Afterthought:** Many designers add `prefers-reduced-motion` as a final checklist item, replacing all animations with zero-duration versions. The correct approach: use `prefers-reduced-motion` as a design constraint from the start some animations communicate essential state and need a non-motion equivalent (color change, text label), not just removal.
 
-**Trap 3 — Figma Spring vs Real Spring:** Figma's "Spring" easing option approximates spring behavior using a bezier curve. It does not use physics parameters (mass, stiffness, damping). Designers who prototype in Figma with Spring easing and then hand off to developers who implement with React Spring (which uses actual physics parameters) will find the implementations feel different — sometimes significantly so.
+**Trap 3 Figma Spring vs Real Spring:** Figma's "Spring" easing option approximates spring behavior using a bezier curve. It does not use physics parameters (mass, stiffness, damping). Designers who prototype in Figma with Spring easing and then hand off to developers who implement with React Spring (which uses actual physics parameters) will find the implementations feel different sometimes significantly so.
 
-**Trap 4 — Skeleton Screen Overuse:** Skeleton screens are appropriate for content that has a predictable shape (article, card list, feed). They are NOT appropriate for content whose shape is unknown — if you show a skeleton with three lines but the content has seven, the skeleton is more jarring than a simple spinner.
+**Trap 4 Skeleton Screen Overuse:** Skeleton screens are appropriate for content that has a predictable shape (article, card list, feed). They are NOT appropriate for content whose shape is unknown if you show a skeleton with three lines but the content has seven, the skeleton is more jarring than a simple spinner.
 
 ---
 
@@ -115,7 +115,7 @@ Figma's **Smart Animate** feature creates automatic transitions between frames t
 
 ## ⚡ The FLIP Technique
 
-FLIP stands for **First, Last, Invert, Play** — a performance optimization technique for web animations developed by Paul Lewis at Google.
+FLIP stands for **First, Last, Invert, Play**, a performance optimization technique for web animations developed by Paul Lewis at Google.
 
 The problem: CSS properties like `width`, `height`, `top`, and `left` trigger expensive browser layout calculations. Animating them causes jank on low-powered devices.
 
@@ -126,7 +126,7 @@ The solution: instead of animating layout properties, FLIP uses `transform` (whi
 1. **First:** Record the element's starting position/size (`getBoundingClientRect()`)
 2. **Last:** Apply the end state (the layout the element should animate TO)
 3. **Invert:** Apply a CSS transform that makes the element appear to still be in its starting position (despite being in the end state in the DOM)
-4. **Play:** Animate the transform FROM the inverted state TO `transform: none` — the element appears to move from first to last, but the browser only animates a transform
+4. **Play:** Animate the transform FROM the inverted state TO `transform: none`, the element appears to move from first to last, but the browser only animates a transform
 
 ```javascript
 // FLIP implementation
@@ -245,7 +245,7 @@ The gap: Figma Spring easing has no direct CSS equivalent. The nearest approxima
 
 ### Skeleton Screen Animation
 
-The standard skeleton screen animation is a shimmer effect — a highlight that travels left to right across the placeholder shapes.
+The standard skeleton screen animation is a shimmer effect, a highlight that travels left to right across the placeholder shapes.
 
 **CSS Implementation:**
 ```css
@@ -283,7 +283,7 @@ Notion's motion design is characterized by **extreme restraint**. Almost nothing
 
 Linear uses motion as a **brand differentiator**. Their animations are fast (100–200ms), use custom cubic beziers that feel like spring without overshooting, and every major interface transition is animated with the same vocabulary.
 
-The Linear team published their motion spec: they define "quick" as 80–150ms, "comfortable" as 200–300ms, and "deliberate" as 300–500ms — and specify which interactions use which category.
+The Linear team published their motion spec: they define "quick" as 80–150ms, "comfortable" as 200–300ms, and "deliberate" as 300–500ms, and specify which interactions use which category.
 
 ### Vercel
 
@@ -298,13 +298,13 @@ Vercel's motion design is split by context:
 
 ## 🔬 The Neuroscience of Micro-Interactions
 
-Why do micro-interactions matter? The answer is not aesthetic — it's neurological.
+Why do micro-interactions matter? The answer is not aesthetic, it's neurological.
 
-**The Prediction Machine:** The human brain is a prediction machine. At every moment, it generates a model of what the world will look like in the next 100–500ms. When the world matches the prediction, no conscious processing is required. When the world violates the prediction, the brain generates a conscious "alert" — this is perceived as friction, surprise, or (in severe cases) confusion.
+**The Prediction Machine:** The human brain is a prediction machine. At every moment, it generates a model of what the world will look like in the next 100–500ms. When the world matches the prediction, no conscious processing is required. When the world violates the prediction, the brain generates a conscious "alert", this is perceived as friction, surprise, or (in severe cases) confusion.
 
-**How Good Micro-Interactions Work:** A well-designed button press animation confirms the brain's prediction: "I pressed this, and something happened." The animation is the confirmation signal. A button with no animation leaves the prediction unconfirmed — the brain must generate an "alert" to check whether the action registered. That alert is the friction users describe as "the interface felt unresponsive."
+**How Good Micro-Interactions Work:** A well-designed button press animation confirms the brain's prediction: "I pressed this, and something happened." The animation is the confirmation signal. A button with no animation leaves the prediction unconfirmed, the brain must generate an "alert" to check whether the action registered. That alert is the friction users describe as "the interface felt unresponsive."
 
-**The 200ms Threshold:** Human perception research (originally by Robert Miller in 1968, confirmed by countless subsequent studies) shows that responses within 200ms are perceived as "instant" — the brain integrates them into the action rather than perceiving them as a separate response. Responses from 200–1000ms are perceived as a delay the user consciously notices but tolerates. Above 1000ms, users begin to doubt whether their action registered.
+**The 200ms Threshold:** Human perception research (originally by Robert Miller in 1968, confirmed by countless subsequent studies) shows that responses within 200ms are perceived as "instant", the brain integrates them into the action rather than perceiving them as a separate response. Responses from 200–1000ms are perceived as a delay the user consciously notices but tolerates. Above 1000ms, users begin to doubt whether their action registered.
 
 This is why Google Material Design chose 200ms as its standard: it's the upper limit of the "invisible response" zone.
 
@@ -333,22 +333,22 @@ This is why Google Material Design chose 200ms as its standard: it's the upper l
 
 ## 🎬 Case Study: Linear.app's Motion Philosophy in Practice
 
-Linear is the project management tool most frequently cited by motion designers as "the best-animated product on the web." Their motion system is the result of deliberate, documented decisions made at the beginning of the product's design — not added later.
+Linear is the project management tool most frequently cited by motion designers as "the best-animated product on the web." Their motion system is the result of deliberate, documented decisions made at the beginning of the product's design, not added later.
 
 **The Published Taxonomy:**
-Linear's motion team published their speed taxonomy externally: quick (80–150ms), comfortable (200–300ms), deliberate (300–500ms). Each interaction type maps to one category. Toggle switches are "quick." Modal dialogs are "comfortable." Feature introduction animations are "deliberate." No designer makes this decision individually — the taxonomy decides.
+Linear's motion team published their speed taxonomy externally: quick (80–150ms), comfortable (200–300ms), deliberate (300–500ms). Each interaction type maps to one category. Toggle switches are "quick." Modal dialogs are "comfortable." Feature introduction animations are "deliberate." No designer makes this decision individually, the taxonomy decides.
 
 **The Easing Signature:**
-Linear does not use standard ease-out. They use a custom cubic bezier that feels like a spring without the bounce: fast start, slight deceleration, no overshoot. The values are approximately `cubic-bezier(0.16, 1, 0.3, 1)` — giving the interface a "snappy" quality that feels physical without being playful.
+Linear does not use standard ease-out. They use a custom cubic bezier that feels like a spring without the bounce: fast start, slight deceleration, no overshoot. The values are approximately `cubic-bezier(0.16, 1, 0.3, 1)`, giving the interface a "snappy" quality that feels physical without being playful.
 
 **The Performance Constraint:**
-Linear commits to 60fps animation on a 4-year-old MacBook. This is not a marketing claim — it's an engineering constraint that shapes every animation decision. Any micro-interaction that can't hit 60fps on target hardware is redesigned until it can. This constraint drives them toward transform-only animations (the FLIP technique from this module).
+Linear commits to 60fps animation on a 4-year-old MacBook. This is not a marketing claim, it's an engineering constraint that shapes every animation decision. Any micro-interaction that can't hit 60fps on target hardware is redesigned until it can. This constraint drives them toward transform-only animations (the FLIP technique from this module).
 
 **The Brand Differentiator Argument:**
 Linear's co-founder Karri Saarinen has said in interviews that motion is one of the primary reasons designers choose Linear over Jira. In a market where all project management tools have essentially the same features, motion quality is a competitive advantage. This is the strongest possible argument for investing in micro-interaction design.
 
 **What This Means for Your Work:**
-Before you build any UI animation system, define your taxonomy. Three speed categories with names, ranges, and example interactions — written down, shared with the team. Everything built after that point has a reference. Without a taxonomy, every animation decision is made in isolation and the interface feels incoherent.
+Before you build any UI animation system, define your taxonomy. Three speed categories with names, ranges, and example interactions, written down, shared with the team. Everything built after that point has a reference. Without a taxonomy, every animation decision is made in isolation and the interface feels incoherent.
 
 ---
 
@@ -366,23 +366,23 @@ Before you build any UI animation system, define your taxonomy. Three speed cate
 
 ## 🗣️ Socratic Discussion Questions
 
-1. Notion's motion philosophy is "extreme restraint" — almost nothing moves. Linear's philosophy is "motion as brand differentiator" — everything that can animate does. Both products are successful. What product and audience factors explain why these opposite approaches are both correct in their respective contexts?
+1. Notion's motion philosophy is "extreme restraint" almost nothing moves. Linear's philosophy is "motion as brand differentiator" everything that can animate does. Both products are successful. What product and audience factors explain why these opposite approaches are both correct in their respective contexts?
 
-2. The FLIP technique is elegant but adds complexity. A developer who doesn't know FLIP might animate `width` directly and get a working result — just with some jank on low-end devices. At what traffic scale does jank become a meaningful business problem worth the FLIP implementation cost?
+2. The FLIP technique is elegant but adds complexity. A developer who doesn't know FLIP might animate `width` directly and get a working result, just with some jank on low-end devices. At what traffic scale does jank become a meaningful business problem worth the FLIP implementation cost?
 
 3. `prefers-reduced-motion` is a CSS media query for users with vestibular disorders. But some designers argue that all animations should be designed to respect this setting by default, making the no-motion version the primary design. Do you agree? What would be lost?
 
 4. Google's 200ms target is based on research showing 200ms is the upper limit of "instant response" perception. But that research was conducted primarily on desktop devices. Does the same number apply on mobile, where touch response expectations may differ?
 
-5. Skeleton screens show a placeholder shaped like the expected content. But social feeds (Twitter/X, Instagram) contain wildly variable content shapes. How do products with variable content shapes implement skeleton screens — or do they use a different loading state entirely?
+5. Skeleton screens show a placeholder shaped like the expected content. But social feeds (Twitter/X, Instagram) contain wildly variable content shapes. How do products with variable content shapes implement skeleton screens, or do they use a different loading state entirely?
 
 ---
 
 ## 📚 Further Reading
 
-- *Designing Interface Animation* — Val Head (Rosenfeld Media, 2016) — the definitive book on UI animation principles; every principle in this module is developed further here with web-specific examples
-- *Animation at Work* — Rachel Nabors (A Book Apart, 2019) — practical, concise; the best single resource on CSS and JavaScript animation for UI designers who code
-- *CSS Animation Pocket Guide* — Val Head (A Book Apart, 2015) — 100 pages covering CSS keyframes, timing functions, and performance considerations; read it in one sitting
-- [Paul Lewis — FLIP Technique](https://www.youtube.com/results?search_query=FLIP+animation+technique+Paul+Lewis+Google) — Paul Lewis's original presentation introducing the FLIP technique; foundational for any web animator
-- [Google Material Design Motion](https://m3.material.io/styles/motion) — the world's most comprehensive published UI motion specification; study the speed taxonomy and easing rationale
-- [Linear Design System Blog](https://linear.app/blog/design) — Linear's published articles on their motion design decisions; rare insight into how a top product team thinks about animation
+- *Designing Interface Animation* Val Head (Rosenfeld Media, 2016) the definitive book on UI animation principles; every principle in this module is developed further here with web-specific examples
+- *Animation at Work* Rachel Nabors (A Book Apart, 2019) practical, concise; the best single resource on CSS and JavaScript animation for UI designers who code
+- *CSS Animation Pocket Guide* Val Head (A Book Apart, 2015) 100 pages covering CSS keyframes, timing functions, and performance considerations; read it in one sitting
+- [Paul Lewis FLIP Technique](https://www.youtube.com/results?search_query=FLIP+animation+technique+Paul+Lewis+Google) Paul Lewis's original presentation introducing the FLIP technique; foundational for any web animator
+- [Google Material Design Motion](https://m3.material.io/styles/motion), the world's most comprehensive published UI motion specification; study the speed taxonomy and easing rationale
+- [Linear Design System Blog](https://linear.app/blog/design), Linear's published articles on their motion design decisions; rare insight into how a top product team thinks about animation

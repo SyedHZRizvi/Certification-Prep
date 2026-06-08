@@ -81,7 +81,7 @@ C. Keep informed
 D. Monitor only
 
 ### Q14. A team member has noticed a new external stakeholder has emerged mid-project. The PM should:
-A. Ignore — only initial stakeholders count
+A. Ignore, only initial stakeholders count
 B. Update the Stakeholder Register and assess engagement
 C. Wait until project closeout to handle
 D. Escalate to legal
@@ -92,7 +92,7 @@ B. Power, Legitimacy, Urgency
 C. Authority, Knowledge, Need
 D. Influence, Funding, Support
 
-### Q16. A stakeholder is "Leading" — actively driving project success. The PM should:
+### Q16. A stakeholder is "Leading", actively driving project success. The PM should:
 A. Reduce their access to information
 B. Maintain engagement and leverage their influence
 C. Treat them like a Resistant stakeholder
@@ -146,22 +146,22 @@ PMI's servant leadership default is to engage rather than coerce. Understanding 
 The Stakeholder Register holds identification (name, role), assessment (requirements, expectations, influence), and classification (internal/external, supportive/resistant). The Charter introduces key stakeholders but is not the central repository.
 
 ### Q13: **B. Keep satisfied**
-High power, low interest stakeholders go in the "Keep Satisfied" quadrant — provide what they need to stay supportive without overwhelming them. They could become a problem if neglected.
+High power, low interest stakeholders go in the "Keep Satisfied" quadrant, provide what they need to stay supportive without overwhelming them. They could become a problem if neglected.
 
 ### Q14: **B. Update the Stakeholder Register and assess engagement**
-The Stakeholder Register is continuously updated. New stakeholders need identification, analysis, and engagement planning — ignoring or deferring them is an anti-pattern.
+The Stakeholder Register is continuously updated. New stakeholders need identification, analysis, and engagement planning, ignoring or deferring them is an anti-pattern.
 
 ### Q15: **B. Power, Legitimacy, Urgency**
-The Salience Model uses three dimensions — Power (ability to enforce), Legitimacy (appropriate involvement), and Urgency (time-pressure) — yielding 7 stakeholder categories.
+The Salience Model uses three dimensions Power (ability to enforce), Legitimacy (appropriate involvement), and Urgency (time-pressure) yielding 7 stakeholder categories.
 
 ### Q16: **B. Maintain engagement and leverage their influence**
-A "Leading" stakeholder is the most desirable engagement state. The PM keeps them engaged and uses their influence to support the project — never reduces communication or treats them as resistant.
+A "Leading" stakeholder is the most desirable engagement state. The PM keeps them engaged and uses their influence to support the project, never reduces communication or treats them as resistant.
 
 ### Q17: **C. Managing daily team activities**
 The sponsor funds, charters, champions, and removes top-level impediments. Daily team management is the PM's role. Confusing these two is a common exam trap.
 
 ### Q18: **B. Escalate to the sponsor**
-The sponsor's role explicitly includes removing top-level impediments. Escalation is appropriate AFTER the team has exhausted its options — not as a first response. Submitting a change request without analysis or quitting are anti-patterns.
+The sponsor's role explicitly includes removing top-level impediments. Escalation is appropriate AFTER the team has exhausted its options, not as a first response. Submitting a change request without analysis or quitting are anti-patterns.
 
 ### Q19: **B. Sprint Reviews and continuous demos**
 Agile engages stakeholders continuously through Sprint Reviews and demos. Predictive projects often use gates; agile builds engagement into every sprint cadence.
@@ -220,13 +220,13 @@ D. Resign in protest.
 
 ### Q24. The Salience Model (Mitchell, Agle & Wood 1997) classifies a stakeholder by Power, Legitimacy, and Urgency. A controversial wind-farm project has: (a) local fishing community (low power, high legitimacy, high urgency); (b) federal regulator (high power, high legitimacy, low urgency); (c) financier (high power, high legitimacy, low urgency); (d) press (low power, low legitimacy, high urgency). Apply the engagement strategy implied by each classification. *(Apply)*
 A. Treat all stakeholders identically.
-B. Fishing community = Dependent stakeholder (lacks power; needs advocate, regular dialogue, document concerns formally so they have a path to influence). Regulator = Dominant (formal compliance management, named relationship owner). Financier = Dominant (clear reporting cadence, transparent risk disclosure). Press = Demanding (proactive communication strategy, do not ignore — uncontrolled stakeholder can elevate other concerns). Document the classification in the Stakeholder Register and revisit quarterly.
+B. Fishing community = Dependent stakeholder (lacks power; needs advocate, regular dialogue, document concerns formally so they have a path to influence). Regulator = Dominant (formal compliance management, named relationship owner). Financier = Dominant (clear reporting cadence, transparent risk disclosure). Press = Demanding (proactive communication strategy, do not ignore, uncontrolled stakeholder can elevate other concerns). Document the classification in the Stakeholder Register and revisit quarterly.
 C. Focus only on power and ignore legitimacy + urgency.
 D. Escalate all to the sponsor.
 
-### Q25. A previously unknown stakeholder community emerges mid-project — citizens concerned about facial-recognition cameras in a city-traffic project. They were not identified at kickoff. Using PMI's Code of Ethics and PMBOK 7's Stakeholders principle, what's the MOST defensible PM response? *(Evaluate)*
+### Q25. A previously unknown stakeholder community emerges mid-project, citizens concerned about facial-recognition cameras in a city-traffic project. They were not identified at kickoff. Using PMI's Code of Ethics and PMBOK 7's Stakeholders principle, what's the MOST defensible PM response? *(Evaluate)*
 A. Continue execution; the cameras are within scope.
-B. Add the community to the Stakeholder Register, perform full identification + analysis, engage transparently (public consultation, response to concerns), evaluate the ethical and regulatory exposure (e.g., GDPR, US state privacy laws), present findings to the steering committee with options ranging from full deployment with controls, to scope modification, to project termination — frame the decision in stewardship + responsibility terms; do not let initial omission justify continued opacity.
+B. Add the community to the Stakeholder Register, perform full identification + analysis, engage transparently (public consultation, response to concerns), evaluate the ethical and regulatory exposure (e.g., GDPR, US state privacy laws), present findings to the steering committee with options ranging from full deployment with controls, to scope modification, to project termination, frame the decision in stewardship + responsibility terms; do not let initial omission justify continued opacity.
 C. Hide the deployment.
 D. Cancel the project unilaterally.
 

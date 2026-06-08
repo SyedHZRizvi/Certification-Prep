@@ -103,7 +103,7 @@ D. Midjourney v7
 
 ---
 
-### Q13. The reading recommends the "4-Layer Briefing Prompt" — the four layers are: *(Remember)*
+### Q13. The reading recommends the "4-Layer Briefing Prompt", the four layers are: *(Remember)*
 A. Inputs, Tone, Outputs, Examples
 B. Context, Inputs, Task, Validation
 C. Brand, Customer, Channel, Budget
@@ -213,16 +213,16 @@ D. They mean the same thing
 The 5 W's of the brief: WHO is the one customer, WHAT is the one behavior, WHY would they do it (insight), WHERE the conversation happens (channels), and HOW you'll know it worked (KPIs). "When" is implicit in the dates section but not one of the 5 strategic questions.
 
 ### Q2: **B. Creative brief for the team making the assets; media brief for the team buying placements**
-The creative brief feeds designers, copywriters, video editors. The media brief feeds media buyers, ad ops, analysts. Solo marketers write both — but treat them as separate documents.
+The creative brief feeds designers, copywriters, video editors. The media brief feeds media buyers, ad ops, analysts. Solo marketers write both, but treat them as separate documents.
 
 ### Q3: **C. 1–2 pages**
-If your brief is longer than 2 pages, you haven't decided yet — you've written down all the options. The brief is a contract, not a research document.
+If your brief is longer than 2 pages, you haven't decided yet, you've written down all the options. The brief is a contract, not a research document.
 
 ### Q4: **D. The Brand Lift Survey Test**
-The 3 ICP validation tests are: 20-Conversation, Search Volume, Look-Alike Affordability. Brand lift surveys exist but are NOT an ICP validation method — they measure post-campaign brand impact.
+The 3 ICP validation tests are: 20-Conversation, Search Volume, Look-Alike Affordability. Brand lift surveys exist but are NOT an ICP validation method, they measure post-campaign brand impact.
 
 ### Q5: **C. A non-obvious truth about the customer**
-An insight is an observation about life that makes the message land. NOT a feature. NOT a benefit. The Notion example: "studio owners panic-Google payroll on Sunday evenings" — that's an insight.
+An insight is an observation about life that makes the message land. NOT a feature. NOT a benefit. The Notion example: "studio owners panic-Google payroll on Sunday evenings", that's an insight.
 
 ### Q6: **C. The metric that, if breached, triggers a pause**
 Primary KPI = what success looks like. Secondary KPI = health metric. Guardrail KPI = the line that, if crossed, you stop spending. Example: "Stop scaling if CPA > $60 over 3 consecutive days."
@@ -234,13 +234,13 @@ Liquid Death's brief opens: "Why would a 23-year-old at a concert reach for our 
 If a fresh reader can't summarize your campaign in one sentence after reading the brief, the brief isn't tight enough. Rewrite.
 
 ### Q9: **B. Writing one sentence that captures Who/What/Why/How measured**
-Notion's famous example: "Convince teams of 5–15 already using Notion for docs to add the Projects template, so they start tracking work in Notion instead of Asana — measured by Projects-template-installs per workspace within 30 days." Who, what, why, how measured — all in 35 words.
+Notion's famous example: "Convince teams of 5–15 already using Notion for docs to add the Projects template, so they start tracking work in Notion instead of Asana measured by Projects-template-installs per workspace within 30 days." Who, what, why, how measured all in 35 words.
 
 ### Q10: **C. Reach / Impressions / Video views**
 Top of funnel = awareness = reach, impressions, video views, CPM. Mid funnel = engagement (CTR, ThruPlay). Bottom funnel = conversion (CPA, ROAS, conversion rate).
 
 ### Q11: **D. CPA, conversion volume, or ROAS**
-Bottom funnel measures action — conversion volume, cost-per-conversion, or return on ad spend. Brand recall and video view-through rate are top/mid funnel.
+Bottom funnel measures action, conversion volume, cost-per-conversion, or return on ad spend. Brand recall and video view-through rate are top/mid funnel.
 
 ### Q12: **B. Claude Sonnet 4.7**
 Per the reading: Claude excels at long-form briefs with nuance and brand voice. ChatGPT excels at quick iteration. Gemini excels at multimodal inputs.
@@ -255,7 +255,7 @@ The "OUT OF SCOPE" line saves hours of mid-campaign scope-creep arguments. Write
 A brief targets ONE person. If you have multiple ICPs, write multiple briefs. Trying to talk to "everyone aged 25–54" leads to a message that lands with no one.
 
 ### Q16: **A. Combined monthly searches for your top keywords are under 1,000**
-If 10 ICP-relevant keywords sum to under 1,000 monthly searches, your ICP isn't searching online for this problem. Don't run a search campaign — use awareness channels instead.
+If 10 ICP-relevant keywords sum to under 1,000 monthly searches, your ICP isn't searching online for this problem. Don't run a search campaign, use awareness channels instead.
 
 ### Q17: **B. Meta returns a 1% lookalike audience under 100,000 in your target geo**
 A lookalike of less than 100K in your target geo means there's not enough volume to scale paid on Meta. Either widen the geo or change channels.
@@ -279,7 +279,7 @@ A brief needs numbers. "Reach 100K unique users at CPM <= $12" is measurable. "D
 A brief is for ONE campaign. New campaign = new brief. "Eternal brief" is anti-pattern #6.
 
 ### Q24: **B. "Get 500 Phoenix-area Pilates instructors to book a free trial of Mind Body Studio Plus by July 31"**
-Notice it has WHO (Phoenix Pilates instructors), WHAT (book a free trial), the product, a number (500), and a date. The other options are vague — no numbers, no specific behavior.
+Notice it has WHO (Phoenix Pilates instructors), WHAT (book a free trial), the product, a number (500), and a date. The other options are vague, no numbers, no specific behavior.
 
 ### Q25: **C. Insight is a behavioral observation about the customer; feature is a product capability**
 Feature: "Our software has payroll integration." Insight: "Studio owners panic-Google payroll on Sunday evenings." The insight tells you WHY the feature matters at a specific moment in the customer's life.

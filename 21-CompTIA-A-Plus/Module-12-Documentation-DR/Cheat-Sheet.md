@@ -112,10 +112,10 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 
 ## 🧪 Test Cadence
 
-- **Tabletop** — yearly minimum
-- **Walkthrough** — yearly
-- **Partial restore** — quarterly
-- **Full DR drill** — annually
+- **Tabletop**, yearly minimum
+- **Walkthrough**, yearly
+- **Partial restore**, quarterly
+- **Full DR drill**, annually
 
 ---
 
@@ -160,7 +160,7 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 2. RPO vs RTO definitions? ___
 3. Hot / Warm / Cold RTO ranges? ___
 4. Why must you test backups? ___
-5. BCP vs DR — what's the difference? ___
+5. BCP vs DR, what's the difference? ___
 
 ---
 
@@ -168,8 +168,8 @@ NEW → ASSIGNED → IN PROGRESS → PENDING → RESOLVED → CLOSED
 
 Take the Practice Exams:
 
-- [Practice Exam 1 — Core 1](../Practice-Exams/Practice-Exam-1.md)
-- [Practice Exam 2 — Core 2](../Practice-Exams/Practice-Exam-2.md)
-- [Final Mock Exam — 90 Q / 90 min](../Practice-Exams/Final-Mock-Exam.md)
+- [Practice Exam 1, Core 1](../Practice-Exams/Practice-Exam-1.md)
+- [Practice Exam 2, Core 2](../Practice-Exams/Practice-Exam-2.md)
+- [Final Mock Exam, 90 Q / 90 min](../Practice-Exams/Final-Mock-Exam.md)
 
 Good luck on the real CompTIA A+ exams! 🛠️

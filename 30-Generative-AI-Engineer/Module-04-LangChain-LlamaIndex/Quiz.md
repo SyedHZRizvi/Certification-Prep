@@ -232,7 +232,7 @@ The grade-and-loop pattern needs cycles + conditional edges. LCEL can't loop nat
 Retrieve narrowly (sentence-level precision); LLM sees more context.
 
 ### Q6: **A. Define / bind / emit / execute / append + continue**
-Same across OpenAI, Anthropic, Gemini, open-source — and across frameworks.
+Same across OpenAI, Anthropic, Gemini, open-source, and across frameworks.
 
 ### Q7: **B. Anthropic**
 Announced November 2024; broadly adopted by 2025.
@@ -259,7 +259,7 @@ SQLite, Postgres, Redis backends; resumable graphs.
 The LangGraph human-in-the-loop primitive.
 
 ### Q15: **B. State + persistence + HITL + tracing**
-From Replit's blog post — the boring infrastructure was the win.
+From Replit's blog post, the boring infrastructure was the win.
 
 ### Q16: **B. Deprecated; use LCEL composition**
 `RetrievalQA`, `LLMChain`, `ConversationChain` are legacy. New code uses LCEL.
@@ -317,4 +317,4 @@ Real production architecture: data layer in LlamaIndex; orchestration in LangGra
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — Fine-Tuning, PEFT & LoRA](../Module-05-Fine-Tuning-PEFT-LoRA/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, Fine-Tuning, PEFT & LoRA](../Module-05-Fine-Tuning-PEFT-LoRA/Reading.md)

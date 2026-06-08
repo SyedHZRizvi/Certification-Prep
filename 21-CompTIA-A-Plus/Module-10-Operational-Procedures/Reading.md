@@ -1,28 +1,28 @@
 # Module 10: Operational Procedures ⚙️
 
-> **Why this module matters:** Operational Procedures (combined with Module 12 Documentation/DR) is **22% of the 220-1102 exam** — about 20 questions. The exam tests *judgment* — given a scenario, what's the right professional response? This module is what separates a *technician* from a *professional*: documentation, change management, environmental safety, ethical conduct, communication.
+> **Why this module matters:** Operational Procedures (combined with Module 12 Documentation/DR) is **22% of the 220-1102 exam** about 20 questions. The exam tests *judgment* given a scenario, what's the right professional response? This module is what separates a *technician* from a *professional*: documentation, change management, environmental safety, ethical conduct, communication.
 
 > **Prerequisites for this module.** Comfort with:
-> - Module 5 (troubleshooting methodology — Step 6 = document!)
-> - Module 8 (security basics — environmental safety + ESD overlap)
+> - Module 5 (troubleshooting methodology, Step 6 = document!)
+> - Module 8 (security basics, environmental safety + ESD overlap)
 
 ---
 
 ## ⚙️ A Story: The Server-Room Cabinet That Saved a Career
 
-Meet Tariq. He's a 24-year-old field tech who just landed a 6-month contract at a logistics firm. Day 3, he's tasked with replacing a failing drive in a 12-disk SAN. He's done this 20 times before — different drive type, same vendor.
+Meet Tariq. He's a 24-year-old field tech who just landed a 6-month contract at a logistics firm. Day 3, he's tasked with replacing a failing drive in a 12-disk SAN. He's done this 20 times before, different drive type, same vendor.
 
-He grabs the next available drive from the spare shelf, pulls the failed drive, slides the new one in. The array light goes red. *Wrong*. He pulls it back out, looks closer. The spare is a **2 TB SAS** drive. The array is **4 TB SAS**. He uses the wrong spare and the rebuild starts incorrectly — the array detects a size mismatch and aborts.
+He grabs the next available drive from the spare shelf, pulls the failed drive, slides the new one in. The array light goes red. *Wrong*. He pulls it back out, looks closer. The spare is a **2 TB SAS** drive. The array is **4 TB SAS**. He uses the wrong spare and the rebuild starts incorrectly, the array detects a size mismatch and aborts.
 
-He calls his supervisor. They walk through together: pull the wrong drive, find the right 4 TB SAS spare in a separate cabinet — labeled *"4 TB Hot Spares — DO NOT INTERMIX"* — and rebuild correctly. The 30 minutes lost is documented in the ticket. The vendor's RMA process logs the failed drive serial. The asset manager updates the **CMDB** (Configuration Management Database) with the new drive.
+He calls his supervisor. They walk through together: pull the wrong drive, find the right 4 TB SAS spare in a separate cabinet labeled *"4 TB Hot Spares DO NOT INTERMIX"*, and rebuild correctly. The 30 minutes lost is documented in the ticket. The vendor's RMA process logs the failed drive serial. The asset manager updates the **CMDB** (Configuration Management Database) with the new drive.
 
-The mistake itself cost 30 minutes. The *follow-up* — the documented mistake, the corrected process, the CMDB update — is what kept the contract from being cancelled. Tariq's supervisor later told him: "I trust the techs who *document their mistakes*. I worry about the ones who don't."
+The mistake itself cost 30 minutes. The *follow-up* the documented mistake, the corrected process, the CMDB update is what kept the contract from being cancelled. Tariq's supervisor later told him: "I trust the techs who *document their mistakes*. I worry about the ones who don't."
 
-This module teaches you that mindset. Documentation, change management, environmental safety, communication — these are the practices that make IT *professional*, not just technical.
+This module teaches you that mindset. Documentation, change management, environmental safety, communication, these are the practices that make IT *professional*, not just technical.
 
 ---
 
-## 📋 Documentation — What to Document
+## 📋 Documentation, What to Document
 
 | Document type | Purpose |
 |---------------|---------|
@@ -90,18 +90,18 @@ Most production outages are caused by **changes**. Change management is the disc
 | **Post-change verification** | How we confirm success |
 | **Documentation updates** | KB, runbook, network diagram, CMDB |
 
-🚨 **The Equifax case (covered in Sec+ Module 1) is fundamentally a change-management failure** — they had a patch policy but no enforcement and no verification.
+🚨 **The Equifax case (covered in Sec+ Module 1) is fundamentally a change-management failure**, they had a patch policy but no enforcement and no verification.
 
 ### Change-management exam vocabulary
 
 - **Standard / Normal / Emergency** change types
-- **CAB** — Change Advisory Board
-- **CR** — Change Request
-- **RFC** — Request For Change (ITIL term)
-- **Backout / rollback plan** — undo procedure
-- **Maintenance window** — scheduled downtime
-- **Freeze window** — period when changes are banned (e.g., holiday peak)
-- **PIR** — Post-Implementation Review
+- **CAB**, Change Advisory Board
+- **CR**, Change Request
+- **RFC**, Request For Change (ITIL term)
+- **Backout / rollback plan**, undo procedure
+- **Maintenance window**, scheduled downtime
+- **Freeze window**, period when changes are banned (e.g., holiday peak)
+- **PIR**, Post-Implementation Review
 
 ---
 
@@ -142,13 +142,13 @@ Human static can reach **35,000 V**. Modern CMOS components can fail at **10–1
 
 ### Environmental considerations
 
-- **Heat** — server rooms run 18–27 °C (64–80 °F) per ASHRAE TC9.9 2021
-- **Humidity** — 8–60% relative humidity recommended; too dry = static, too humid = corrosion
-- **Particulates / dust** — clean filters, controlled access
-- **Fire** — smoke detectors + clean-agent suppression (FM-200, Novec 1230 — not water)
-- **Cable management** — Velcro ties, not zip ties (don't damage insulation)
+- **Heat**, server rooms run 18–27 °C (64–80 °F) per ASHRAE TC9.9 2021
+- **Humidity**, 8–60% relative humidity recommended; too dry = static, too humid = corrosion
+- **Particulates / dust**, clean filters, controlled access
+- **Fire** smoke detectors + clean-agent suppression (FM-200, Novec 1230 not water)
+- **Cable management**, Velcro ties, not zip ties (don't damage insulation)
 
-### MSDS / SDS — Material Safety Data Sheet
+### MSDS / SDS, Material Safety Data Sheet
 
 - Chemical safety info for cleaning products, toner, lithium batteries
 - Required for workplace chemicals
@@ -159,16 +159,16 @@ Human static can reach **35,000 V**. Modern CMOS components can fail at **10–1
 
 | Battery | Disposal |
 |---------|----------|
-| Lithium-ion (laptop / phone) | Recycle at electronics retailer (Best Buy, Apple Store, etc.) — DON'T toss in landfill |
-| Lead-acid (UPS) | Hazardous waste — supplier often takes back |
+| Lithium-ion (laptop / phone) | Recycle at electronics retailer (Best Buy, Apple Store, etc.), DON'T toss in landfill |
+| Lead-acid (UPS) | Hazardous waste, supplier often takes back |
 | CR2032 (CMOS) | Electronics recycling |
 | Alkaline (AA, AAA) | Most jurisdictions allow regular trash, but recycling preferred |
 
 ### Toner disposal
 
 - Recycle via vendor program (HP, Brother, etc.)
-- Toner is fine particulate — wear mask if cleaning a spill
-- Vacuum with HEPA filter — regular vacuum spreads the dust
+- Toner is fine particulate, wear mask if cleaning a spill
+- Vacuum with HEPA filter, regular vacuum spreads the dust
 
 ---
 
@@ -180,22 +180,22 @@ Human static can reach **35,000 V**. Modern CMOS components can fail at **10–1
 |----------|---------------------|
 | **Active listening** | Eye contact, paraphrase back, don't interrupt |
 | **Avoid jargon** | "Your computer is checking for updates" not "WSUS is scanning" |
-| **Set expectations** | "This will take about 30 minutes — I'll text you when ready" |
+| **Set expectations** | "This will take about 30 minutes, I'll text you when ready" |
 | **Maintain a positive attitude** | Even when the user is wrong |
 | **Be on time** | Or early |
 | **Avoid distractions** | Phone away during user interaction |
-| **Clarify** | "Just to confirm — you mean the right monitor or the left?" |
+| **Clarify** | "Just to confirm, you mean the right monitor or the left?" |
 | **Don't argue** | Defuse, don't escalate |
 | **Be culturally sensitive** | Pronouns, names, holidays |
 | **Don't disclose private info** | Don't browse user's files; don't share other users' tickets |
 
 ### Dealing with difficult customers
 
-- **Listen first** — let them vent
-- **Empathize** — "That sounds frustrating"
-- **Focus on the problem** — not the emotion
-- **Get help** — escalate if you can't resolve
-- **Don't take it personally** — they're angry at the situation
+- **Listen first**, let them vent
+- **Empathize**, "That sounds frustrating"
+- **Focus on the problem**, not the emotion
+- **Get help**, escalate if you can't resolve
+- **Don't take it personally**, they're angry at the situation
 
 ---
 
@@ -235,14 +235,14 @@ Human static can reach **35,000 V**. Modern CMOS components can fail at **10–1
 > **Scenario:** A help-desk tech accidentally browsed a folder labeled "HR Personnel Files" on a user's PC while troubleshooting. She didn't open any files but saw the folder name. What should she do?
 
 **Walkthrough:**
-1. **Identify** — Privacy concern. No data was accessed but presence of awareness is itself a privacy event.
-2. **Theory** — Per policy, even accidental access to confidential data may be reportable.
-3. **Test** — Review company privacy policy / employee handbook. Many require self-reporting.
-4. **Plan** — Notify supervisor + privacy/security team. Document the event factually (date/time/system/scope). Do NOT discuss with the user (privacy policy violation may compound).
-5. **Verify** — Privacy team makes the call on whether further action (e.g., user notification) is needed.
-6. **Document** — Internal-only privacy incident record.
+1. **Identify**, Privacy concern. No data was accessed but presence of awareness is itself a privacy event.
+2. **Theory**, Per policy, even accidental access to confidential data may be reportable.
+3. **Test**, Review company privacy policy / employee handbook. Many require self-reporting.
+4. **Plan**, Notify supervisor + privacy/security team. Document the event factually (date/time/system/scope). Do NOT discuss with the user (privacy policy violation may compound).
+5. **Verify**, Privacy team makes the call on whether further action (e.g., user notification) is needed.
+6. **Document**, Internal-only privacy incident record.
 
-This is the kind of judgment A+ tests — there's no technical fix, but there is a professional response.
+This is the kind of judgment A+ tests, there's no technical fix, but there is a professional response.
 
 ---
 
@@ -252,7 +252,7 @@ This is the kind of judgment A+ tests — there's no technical fix, but there is
 |---------------|---------|
 | "Documentation is optional if I remember" | Always step 6. Without docs, the next person re-learns. |
 | "Emergency change can skip CAB entirely" | Emergency means expedited approval, not no approval. Post-implementation CAB review still happens. |
-| "ESD only matters at the data center" | Phones, RAM, motherboards — anything you touch can be ESD-damaged. |
+| "ESD only matters at the data center" | Phones, RAM, motherboards, anything you touch can be ESD-damaged. |
 | "UPS is for safety, not data" | UPS prevents sudden power loss → file corruption, RAID problems, etc. |
 | "MSDS is paperwork I can ignore" | OSHA / regulators require it. Toner spills are a real workplace hazard. |
 | "Old batteries are fine in trash" | Lithium-ion in landfill = fire risk. Recycle at electronics retailer. |
@@ -302,17 +302,17 @@ This is the kind of judgment A+ tests — there's no technical fix, but there is
 
 ---
 
-## 📊 Case Study — The 2019 Capital One Data Breach & The Inadequate Change Review
+## 📊 Case Study, The 2019 Capital One Data Breach & The Inadequate Change Review
 
-**Situation.** In July 2019, Capital One disclosed a breach exposing data on **~106 million** US and Canadian customers — names, addresses, credit scores, ~140,000 SSNs, and ~80,000 bank account numbers. The attacker was a former AWS employee who exploited a misconfigured **AWS WAF** (Web Application Firewall) to perform Server-Side Request Forgery (SSRF), pivoted to EC2 instance metadata service, retrieved an IAM role's temporary credentials, then used those credentials to list and download S3 buckets containing the data.
+**Situation.** In July 2019, Capital One disclosed a breach exposing data on **~106 million** US and Canadian customers, names, addresses, credit scores, ~140,000 SSNs, and ~80,000 bank account numbers. The attacker was a former AWS employee who exploited a misconfigured **AWS WAF** (Web Application Firewall) to perform Server-Side Request Forgery (SSRF), pivoted to EC2 instance metadata service, retrieved an IAM role's temporary credentials, then used those credentials to list and download S3 buckets containing the data.
 
-**The change-management angle.** Court filings (US v. Paige Thompson, 2022) revealed that the misconfigured WAF was *known* to Capital One's security team for weeks before exploitation. Multiple internal tickets had flagged the open SSRF path. The change ticket to remediate had been opened, prioritized as "P2 — non-urgent", and was waiting in a queue behind other work. Once exploited, exfiltration completed in ~36 hours undetected.
+**The change-management angle.** Court filings (US v. Paige Thompson, 2022) revealed that the misconfigured WAF was *known* to Capital One's security team for weeks before exploitation. Multiple internal tickets had flagged the open SSRF path. The change ticket to remediate had been opened, prioritized as "P2, non-urgent", and was waiting in a queue behind other work. Once exploited, exfiltration completed in ~36 hours undetected.
 
 **Decision and outcome.** Capital One discovered the breach via a tip on GitHub (the attacker had bragged in a public Slack group). They paid **$80M** in OCC penalties (2020), settled a class-action for **$190M** (2022), and shifted to a more aggressive "exploitable misconfigurations are P0" prioritization policy. They published a [post-incident transparency report](https://www.capitalone.com/digital/responsible-disclosure/) on their security blog as part of remediation.
 
 **Lesson for the exam / for practitioners.**
 - **A ticket sitting in a queue is the same as no fix at all.** Prioritization is operational discipline.
-- **Documentation works only if reviewed.** The misconfiguration was *documented as known* — but the change record never executed.
+- **Documentation works only if reviewed.** The misconfiguration was *documented as known*, but the change record never executed.
 - **The change-management process must include time-bound SLAs**, especially for security findings.
 
 **Discussion (Socratic).**
@@ -339,7 +339,7 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 11 — Mobile / Application Troubleshooting](../Module-11-Mobile-Troubleshooting/Reading.md)
+4. ➡️ [Module 11, Mobile / Application Troubleshooting](../Module-11-Mobile-Troubleshooting/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 12](../Module-12-Documentation-DR/Reading.md) extends documentation into DR planning.
@@ -350,10 +350,10 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 ITIL 4 Foundation — change management reference
-- 📄 NIST SP 800-128 — Configuration Management for Information Systems
-- 📄 OSHA Hazard Communication Standard (29 CFR 1910.1200) — MSDS/SDS legal basis
-- 📄 ASHRAE TC9.9 (2021) — Data Center Environmental Guidelines
+- 📄 ITIL 4 Foundation, change management reference
+- 📄 NIST SP 800-128, Configuration Management for Information Systems
+- 📄 OSHA Hazard Communication Standard (29 CFR 1910.1200), MSDS/SDS legal basis
+- 📄 ASHRAE TC9.9 (2021), Data Center Environmental Guidelines
 
 **Case-study sources:**
 - 📄 Capital One (2019). *Information on the Cyber Incident*.
@@ -361,5 +361,5 @@ You now know:
 
 **Practitioner / exam:**
 - 📖 [Professor Messer 220-1102 operational procedures](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video-training-course/)
-- 📖 *The Phoenix Project* (Gene Kim) — DevOps + change management novel
-- 📖 *The DevOps Handbook* — operational practice deep-dive
+- 📖 *The Phoenix Project* (Gene Kim), DevOps + change management novel
+- 📖 *The DevOps Handbook*, operational practice deep-dive

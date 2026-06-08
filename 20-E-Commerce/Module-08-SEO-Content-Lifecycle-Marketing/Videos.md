@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">E-Commerce SEO — The Complete Guide</p>
+      <p class="vg-title">E-Commerce SEO, The Complete Guide</p>
       <p class="vg-creator">Ahrefs / Sam Oh</p>
       <span class="vg-duration">⏱ 28 min · PDP structure, faceted nav, schema</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Klaviyo Abandoned Cart — Three-Email Cadence</p>
+      <p class="vg-title">Klaviyo Abandoned Cart, Three-Email Cadence</p>
       <p class="vg-creator">Klaviyo Academy</p>
       <span class="vg-duration">⏱ 22 min · Trigger logic, discount timing</span>
     </div>
@@ -51,7 +51,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">E-E-A-T + Helpful Content Update — What Changed</p>
+      <p class="vg-title">E-E-A-T + Helpful Content Update, What Changed</p>
       <p class="vg-creator">Backlinko / Brian Dean</p>
       <span class="vg-duration">⏱ 24 min · 2022/2023/2024 HCU timeline</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Faceted Navigation SEO — The Crawl Budget Trap</p>
+      <p class="vg-title">Faceted Navigation SEO, The Crawl Budget Trap</p>
       <p class="vg-creator">Ahrefs / Sam Oh</p>
       <span class="vg-duration">⏱ 16 min · Noindex vs canonical vs robots</span>
     </div>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SMS Marketing for E-Commerce — Postscript Playbook</p>
+      <p class="vg-title">SMS Marketing for E-Commerce, Postscript Playbook</p>
       <p class="vg-creator">Postscript / Common Thread Collective</p>
       <span class="vg-duration">⏱ 20 min · TCPA, 10DLC, opt-in flows</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Loyalty Program Architecture — Sephora + Starbucks Case</p>
+      <p class="vg-title">Loyalty Program Architecture, Sephora + Starbucks Case</p>
       <p class="vg-creator">Various / HBR analysis</p>
       <span class="vg-duration">⏱ 14 min · Points vs tiers vs subscription</span>
     </div>
@@ -92,7 +92,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Content Commerce — The REI Buying-Guide Playbook</p>
+      <p class="vg-title">Content Commerce, The REI Buying-Guide Playbook</p>
       <p class="vg-creator">Surfer SEO / Neil Patel</p>
       <span class="vg-duration">⏱ 15 min · BoFU/MoFU/ToFU + editorial PDP</span>
     </div>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Glossier — From Blog to $1.2B Brand</p>
+      <p class="vg-title">Glossier, From Blog to $1.2B Brand</p>
       <p class="vg-creator">Various / Modern Retail</p>
       <span class="vg-duration">⏱ 18 min · The 2014-2019 content-first era</span>
     </div>
@@ -115,7 +115,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">CTR by SERP Position — The Ahrefs 80K Study</p>
+      <p class="vg-title">CTR by SERP Position, The Ahrefs 80K Study</p>
       <p class="vg-creator">Ahrefs / Tim Soulo</p>
       <span class="vg-duration">⏱ 14 min · Position 1 = 27.6% CTR</span>
     </div>

@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Disney's 12 Principles of Animation
 
-> **How to use:** Click any video card to search YouTube and watch the top result for that topic. Watch the Essential block first — it covers all 12 Principles. Then pick from Recommended based on which principles you need more time with. Pause and sketch what you observe.
+> **How to use:** Click any video card to search YouTube and watch the top result for that topic. Watch the Essential block first, it covers all 12 Principles. Then pick from Recommended based on which principles you need more time with. Pause and sketch what you observe.
 
 ## ⭐ Essential Watching (~75 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">12 Principles of Animation — Full Series</p>
+      <p class="vg-title">12 Principles of Animation, Full Series</p>
       <p class="vg-creator">Alan Becker</p>
       <span class="vg-duration">⏱ 25 min · The most-watched explanation online</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Anticipation — The Setup Before the Action</p>
+      <p class="vg-title">Anticipation, The Setup Before the Action</p>
       <p class="vg-creator">Bloop Animation</p>
       <span class="vg-duration">⏱ 12 min · Why anticipation controls audience attention</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Timing & Spacing — The Animator's Most Important Skill</p>
+      <p class="vg-title">Timing & Spacing, The Animator's Most Important Skill</p>
       <p class="vg-creator">Animation Career Review / School of Motion</p>
       <span class="vg-duration">⏱ 18 min · Frame spacing = weight and emotion</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Staging in Animation — Silhouette & Clarity</p>
+      <p class="vg-title">Staging in Animation, Silhouette & Clarity</p>
       <p class="vg-creator">School of Motion</p>
       <span class="vg-duration">⏱ 14 min · Theater, film, and animation staging compared</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Appeal — Why Audiences Connect with Characters</p>
+      <p class="vg-title">Appeal, Why Audiences Connect with Characters</p>
       <p class="vg-creator">Toniko Pantoja</p>
       <span class="vg-duration">⏱ 16 min · Appeal in design vs performance</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Bambi Animation Breakdown — Deer on Ice</p>
+      <p class="vg-title">Bambi Animation Breakdown, Deer on Ice</p>
       <p class="vg-creator">Various / Art of Animation</p>
       <span class="vg-duration">⏱ 10 min · The scene that teaches slow-in/out + overlap</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Exaggeration in Animation — Looney Tunes vs Disney</p>
+      <p class="vg-title">Exaggeration in Animation, Looney Tunes vs Disney</p>
       <p class="vg-creator">Every Frame a Painting</p>
       <span class="vg-duration">⏱ 12 min · When to push past reality</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Solid Drawing — 3D Form in 2D Animation</p>
+      <p class="vg-title">Solid Drawing, 3D Form in 2D Animation</p>
       <p class="vg-creator">Draftsmen Podcast / Stan Prokopenko</p>
       <span class="vg-duration">⏱ 18 min · Foreshortening, overlapping, contour</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">The Incredibles Animation Breakdown — Squash & Stretch</p>
+      <p class="vg-title">The Incredibles Animation Breakdown, Squash & Stretch</p>
       <p class="vg-creator">Corridor Crew / Pixar</p>
       <span class="vg-duration">⏱ 15 min · How Pixar pushed human squash and stretch</span>
     </div>
@@ -157,7 +157,7 @@
 | **Animation Mentor** | Online animation school with professional instructor content on YouTube |
 | **School of Motion** | Strong coverage of motion design and animation principles with production context |
 | **Toniko Pantoja** | CalArts-trained animator sharing principles from a contemporary professional perspective |
-| **Corridor Crew** | VFX artists breaking down animation in films frame by frame — excellent for principle spotting |
+| **Corridor Crew** | VFX artists breaking down animation in films frame by frame, excellent for principle spotting |
 | **Every Frame a Painting** | Archived but essential channel; film analysis including animation principles |
 
 ---
@@ -168,7 +168,7 @@ Answer these in your notebook without rewatching:
 
 1. What is the volume constraint of squash and stretch, and why does violating it feel wrong?
 2. Draw a timing chart for a ball bouncing: mark where slow-in and slow-out appear.
-3. Name the difference between follow-through and overlapping action — use Bambi's ears as the example.
+3. Name the difference between follow-through and overlapping action, use Bambi's ears as the example.
 4. Why does *Into the Spider-Verse* use different frame rates for different characters, and which principle is that an application of?
 5. What makes a villain "appealing" according to Principle 12?
 

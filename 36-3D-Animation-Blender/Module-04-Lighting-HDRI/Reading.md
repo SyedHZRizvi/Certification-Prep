@@ -7,9 +7,9 @@ title: "Module 4: Lighting & HDRI"
 
 ## The Invisible Art
 
-Roger Deakins — the Academy Award-winning cinematographer of *Blade Runner 2049*, *1917*, and *No Country for Old Men* — has said that the best lighting is lighting the audience doesn't consciously notice. They feel the mood, the time of day, the emotional weight of the scene. They do not see the lighting. In 3D animation, this principle is even more challenging: every photon is synthetic, and every source of light is a deliberate choice.
+Roger Deakins the Academy Award-winning cinematographer of *Blade Runner 2049*, *1917*, and *No Country for Old Men* has said that the best lighting is lighting the audience doesn't consciously notice. They feel the mood, the time of day, the emotional weight of the scene. They do not see the lighting. In 3D animation, this principle is even more challenging: every photon is synthetic, and every source of light is a deliberate choice.
 
-The Blender Foundation's lighting team for *Sprite Fright* (2021) spent weeks on per-shot lighting — even for shots that lasted less than two seconds on screen. The production blog documents that the average *Sprite Fright* shot had 12 to 18 distinct light objects, plus an HDRI environment. This module teaches you to think like a cinematographer.
+The Blender Foundation's lighting team for *Sprite Fright* (2021) spent weeks on per-shot lighting, even for shots that lasted less than two seconds on screen. The production blog documents that the average *Sprite Fright* shot had 12 to 18 distinct light objects, plus an HDRI environment. This module teaches you to think like a cinematographer.
 
 ---
 
@@ -44,13 +44,13 @@ Three-point lighting is the oldest structured lighting scheme in cinema and phot
 - **Size:** Larger = softer, more diffuse shadows. Smaller = harder, more directional shadows
 - **Spread:** Controls how wide the light cone is (0° = laser; 180° = hemisphere)
 
-> 🚨 **Trap:** The **Sun light** in Blender ignores its position in the scene. Only its rotation matters. Moving a Sun light up or down in the viewport has zero effect on the render — only rotating it changes the angle of the shadows.
+> 🚨 **Trap:** The **Sun light** in Blender ignores its position in the scene. Only its rotation matters. Moving a Sun light up or down in the viewport has zero effect on the render, only rotating it changes the angle of the shadows.
 
 ---
 
 ## 4.3 HDRI Environment Lighting
 
-A **High Dynamic Range Image (HDRI)** is a 360° panoramic photograph with a wide range of exposure values — bright for the sky, dark for the ground, very bright for sun and windows. Using an HDRI as the environment map gives your scene ambient lighting that matches a real-world location with correct color, directionality, and luminosity.
+A **High Dynamic Range Image (HDRI)** is a 360° panoramic photograph with a wide range of exposure values, bright for the sky, dark for the ground, very bright for sun and windows. Using an HDRI as the environment map gives your scene ambient lighting that matches a real-world location with correct color, directionality, and luminosity.
 
 **Setting up HDRI in Blender:**
 1. Properties Panel → World Properties → Surface → Use Nodes
@@ -65,9 +65,9 @@ A **High Dynamic Range Image (HDRI)** is a 360° panoramic photograph with a wid
 - **HDRI Haven (included in Poly Haven):** Same site, same license.
 - **Blender's built-in HDRI add-ons:** A small selection ships with Blender in Preferences → Add-ons.
 
-**HDRI rotation:** Add a **Mapping** node connected to a **Texture Coordinate** node (set to Generated) before the Environment Texture to rotate the HDRI. Rotation.Z controls the heading — align the HDRI sun with your key light for consistent shadow direction.
+**HDRI rotation:** Add a **Mapping** node connected to a **Texture Coordinate** node (set to Generated) before the Environment Texture to rotate the HDRI. Rotation.Z controls the heading, align the HDRI sun with your key light for consistent shadow direction.
 
-> 🎯 **Exam tip:** HDRI lighting is the fastest way to achieve photorealistic ambient lighting in Cycles. It provides consistent multi-directional fill from the real-world photo. In EEVEE, HDRI works with Probe volumes — less accurate than Cycles but fast for previews.
+> 🎯 **Exam tip:** HDRI lighting is the fastest way to achieve photorealistic ambient lighting in Cycles. It provides consistent multi-directional fill from the real-world photo. In EEVEE, HDRI works with Probe volumes, less accurate than Cycles but fast for previews.
 
 ---
 
@@ -107,9 +107,9 @@ In Blender, set color temperature on Area/Point/Spot lights by:
 | Keyframeable strength | Yes | Yes | Yes | Yes |
 | IES profile support | Yes | No | Yes | No |
 
-> ⚠️ **Gotcha — Sun Light Position:** Beginners frequently move the Sun light up in the viewport thinking it will raise the angle of sunlight. It does nothing. Only the **rotation** of the Sun light changes the shadow angle. The most common fix: select the Sun, press **R → X → [angle]** to rotate around the X axis to change elevation, or **R → Z** to change the compass direction. Check this in Orthographic Top view for orientation accuracy.
+> ⚠️ **Gotcha, Sun Light Position:** Beginners frequently move the Sun light up in the viewport thinking it will raise the angle of sunlight. It does nothing. Only the **rotation** of the Sun light changes the shadow angle. The most common fix: select the Sun, press **R → X → [angle]** to rotate around the X axis to change elevation, or **R → Z** to change the compass direction. Check this in Orthographic Top view for orientation accuracy.
 
-> ⚠️ **Gotcha — EEVEE Light Probes for HDRI:** In EEVEE, HDRI environment lighting requires **Irradiance Volume** light probes to affect interior spaces correctly. Without a probe, objects inside a room won't receive the HDRI ambient light. Place an Irradiance Volume (Shift+A → Light Probe → Irradiance Volume) around your scene and bake the irradiance: Properties → Object Data → Bake Irradiance. Cycles has no such requirement — HDRI works globally without probes.
+> ⚠️ **Gotcha EEVEE Light Probes for HDRI:** In EEVEE, HDRI environment lighting requires **Irradiance Volume** light probes to affect interior spaces correctly. Without a probe, objects inside a room won't receive the HDRI ambient light. Place an Irradiance Volume (Shift+A → Light Probe → Irradiance Volume) around your scene and bake the irradiance: Properties → Object Data → Bake Irradiance. Cycles has no such requirement HDRI works globally without probes.
 
 ---
 
@@ -126,25 +126,25 @@ In Blender, set color temperature on Area/Point/Spot lights by:
 - **Key-to-fill ratio:** 2:1 to 3:1
 - **Key direction:** Front-quarter, 30° above eye level
 - **Color:** Warm (3,200K–5,600K), high ambient HDRI
-- **Shadows:** Soft, shallow — the subject is fully lit and readable
+- **Shadows:** Soft, shallow, the subject is fully lit and readable
 - **Blender setup:** Large Area key, large Area fill, warm outdoor HDRI from Poly Haven
 
 ### Drama / Character Film
 - **Key-to-fill ratio:** 4:1 to 6:1
 - **Key direction:** Classic 3/4 key position
-- **Color:** Natural — color contrast between key and fill (warm key, cool fill)
+- **Color:** Natural, color contrast between key and fill (warm key, cool fill)
 - **Shadows:** Medium-soft; enough shadow to give form without losing detail
 - **Blender setup:** Rectangle Area key (simulate window light), small ambient fill, HDRI at low strength
 
 ---
 
-## 4.5b Lighting for *Solitude* (2022) — Painterly Naturalistic Light
+## 4.5b Lighting for *Solitude* (2022), Painterly Naturalistic Light
 
 Alberto Mielgo's *Solitude* (2022) approached Blender lighting from an oil-painting perspective. The production choices:
 
-- **Single dominant HDRI, zero artificial lights:** The entire short was lit purely by HDRI environment maps — no Point, Sun, Spot, or Area lights were added. This creates the diffused, even quality of overcast outdoor daylight.
-- **HDRI selection as art direction:** Each scene used a different HDRI from Poly Haven — the HDRI choice IS the color palette. A warm-sunset HDRI (orange tones, long shadows) creates completely different mood from a grey-overcast HDRI (flat, melancholic).
-- **Emission materials for artificial light:** Any practical light source (a lantern, a fire) was the mesh object itself with an Emission material, not a separate light object. This means the light source and the glow are the same piece of geometry — more physically accurate and easier to animate.
+- **Single dominant HDRI, zero artificial lights:** The entire short was lit purely by HDRI environment maps, no Point, Sun, Spot, or Area lights were added. This creates the diffused, even quality of overcast outdoor daylight.
+- **HDRI selection as art direction:** Each scene used a different HDRI from Poly Haven, the HDRI choice IS the color palette. A warm-sunset HDRI (orange tones, long shadows) creates completely different mood from a grey-overcast HDRI (flat, melancholic).
+- **Emission materials for artificial light:** Any practical light source (a lantern, a fire) was the mesh object itself with an Emission material, not a separate light object. This means the light source and the glow are the same piece of geometry, more physically accurate and easier to animate.
 
 **The lesson:** For painterly or stylized animation, simpler lighting rigs (HDRI only, or HDRI + one key) are often more effective than complex multi-light setups. Realism doesn't require complexity; it requires consistency.
 
@@ -166,7 +166,7 @@ Alberto Mielgo's *Solitude* (2022) approached Blender lighting from an oil-paint
 | **F** (with Strength selected in N-Panel) | Insert keyframe on strength |
 | **Ctrl+Shift+Click** (Material Preview) | Set HDRI rotation from viewport |
 
-**Light linking (Blender 4.1+):** Blender 4.1 introduced **Light Linking** — the ability to specify which objects a light affects or excludes. This is critical for:
+**Light linking (Blender 4.1+):** Blender 4.1 introduced **Light Linking**, the ability to specify which objects a light affects or excludes. This is critical for:
 - A key light that illuminates the character but not the background
 - A rim light that is visible only on the character, not on nearby props
 - Reducing render time by limiting light calculations to relevant geometry
@@ -185,10 +185,10 @@ The Blender Institute published their *Sprite Fright* lighting documentation. Ke
 - **Average lights per shot:** 12–18 objects
 - **Primary technique:** HDRI for ambient fill + manual key/rim lights per character
 - **HDRI choice:** Forest/overcast sky at low strength (0.3–0.6) to avoid overexposure in the dense forest environment
-- **Per-character rims:** Each character had their own rim light placed behind them, even in group shots — the animators noted this is the single most important technique for keeping stylized characters readable against complex backgrounds
+- **Per-character rims:** Each character had their own rim light placed behind them, even in group shots, the animators noted this is the single most important technique for keeping stylized characters readable against complex backgrounds
 - **Color temperature:** Key lights were set to 4,000K–5,000K (naturalistic daylight); rim lights were pushed slightly cooler (6,500K) to suggest sky bounce
 
-**Production quote from the *Sprite Fright* making-of:** "We treated every shot like we would treat a live-action set. Every light has a *reason*. There's always something in the scene — a gap in the trees, a phone screen, a mushroom with bioluminescence — that justifies where the light comes from."
+**Production quote from the *Sprite Fright* making-of:** "We treated every shot like we would treat a live-action set. Every light has a *reason*. There's always something in the scene a gap in the trees, a phone screen, a mushroom with bioluminescence that justifies where the light comes from."
 
 ---
 
@@ -210,7 +210,7 @@ Understanding what each renderer does well with lighting is critical for certifi
 | **GPU requirement** | CUDA/HIP/Metal | Any OpenGL 4.3+ GPU |
 | **Light Linking (4.1+)** | Full support | Full support |
 
-> 🎯 **Exam tip:** *Sprite Fright* (2021) and *Charge* (2022) both used **Cycles** for all final frames. EEVEE was used for quick lighting previews during set-up. The exam may ask which engine was used for production-quality Blender Foundation films — the answer is always Cycles for finals.
+> 🎯 **Exam tip:** *Sprite Fright* (2021) and *Charge* (2022) both used **Cycles** for all final frames. EEVEE was used for quick lighting previews during set-up. The exam may ask which engine was used for production-quality Blender Foundation films, the answer is always Cycles for finals.
 
 ---
 
@@ -219,8 +219,8 @@ Understanding what each renderer does well with lighting is critical for certifi
 Andy Goralczyk's *Charge* featured a single robotic character across a complex rocky environment. The lighting documentation reveals:
 
 - **One HDRI per environment zone:** The film's environment was divided into lighting zones (sunny ridge, shaded canyon, cave interior). Each zone used a different HDRI, blended at zone boundaries via a custom World shader node that faded between two environment textures based on camera position.
-- **Emission fill for cave interiors:** Inside the cave sections, the rock walls themselves carried Emission materials at very low strength (0.05–0.1) to simulate light bounce from bioluminescent minerals. No interior lights were added — the emission geometry is the light source.
-- **Volume fog for atmosphere:** A **Volume Scatter** material applied to a cube domain object filled the canyon with atmospheric haze — controlling depth perception and making the robotic character feel embedded in the environment rather than composited into it.
+- **Emission fill for cave interiors:** Inside the cave sections, the rock walls themselves carried Emission materials at very low strength (0.05–0.1) to simulate light bounce from bioluminescent minerals. No interior lights were added, the emission geometry is the light source.
+- **Volume fog for atmosphere:** A **Volume Scatter** material applied to a cube domain object filled the canyon with atmospheric haze, controlling depth perception and making the robotic character feel embedded in the environment rather than composited into it.
 
 **Volume lighting setup:**
 1. Shift+A → Mesh → Cube → resize to fill the scene
@@ -245,22 +245,22 @@ Andy Goralczyk's *Charge* featured a single robotic character across a complex r
 
 ---
 
-## 4.7b *Charge* (2022) — Full Lighting Analysis
+## 4.7b *Charge* (2022), Full Lighting Analysis
 
 Andy Goralczyk's *Charge* is the most thoroughly documented lighting pipeline among Blender Foundation open movies. Analysis of the published production files reveals:
 
 **Zone-based HDRI system:** The rocky outdoor environment was divided into five lighting zones:
-1. **Summit ridge** — direct sun HDRI, strong shadows, warm 5600K
-2. **Canyon descent** — partially shadowed HDRI, cooler blue fill, 4200K
-3. **Cave entrance** — transition zone, very low HDRI strength (0.15), manual area lights
-4. **Cave interior** — zero HDRI; emission materials on rock surfaces only
-5. **Reactor chamber** — full artificial lighting; no HDRI at all
+1. **Summit ridge**, direct sun HDRI, strong shadows, warm 5600K
+2. **Canyon descent**, partially shadowed HDRI, cooler blue fill, 4200K
+3. **Cave entrance**, transition zone, very low HDRI strength (0.15), manual area lights
+4. **Cave interior**, zero HDRI; emission materials on rock surfaces only
+5. **Reactor chamber**, full artificial lighting; no HDRI at all
 
 The transition between zones used a **World shader node** mixing two Environment Texture nodes with a **Mix Shader** controlled by a custom value that was keyframed as the camera moved through the environment. This is an advanced technique that avoids sudden HDRI pop at zone boundaries.
 
-**Emission rock surfaces (cave interior):** Rather than placing hundreds of small Point lights to simulate bioluminescent mineral veins, the TDs painted a vertex color map on the cave rock mesh using Blender's Vertex Paint mode. A **Vertex Color node** in the material drove the Emission Strength — bright vertex colors = bright glow. This produced thousands of micro-emission points at near-zero performance cost compared to equivalent light objects.
+**Emission rock surfaces (cave interior):** Rather than placing hundreds of small Point lights to simulate bioluminescent mineral veins, the TDs painted a vertex color map on the cave rock mesh using Blender's Vertex Paint mode. A **Vertex Color node** in the material drove the Emission Strength, bright vertex colors = bright glow. This produced thousands of micro-emission points at near-zero performance cost compared to equivalent light objects.
 
-**Rim light placement automation:** Each of the robot character's shots had a rim light that needed to stay behind the character relative to camera. Rather than keyframing the rim light position manually, the lighting artist used a **Track To constraint** on the rim light — the light tracked a target Empty placed at the character's position but offset by a vector pointing toward the camera. As the character moved, the rim light automatically repositioned. This automation saved an estimated 40+ hours of manual rim light keying.
+**Rim light placement automation:** Each of the robot character's shots had a rim light that needed to stay behind the character relative to camera. Rather than keyframing the rim light position manually, the lighting artist used a **Track To constraint** on the rim light, the light tracked a target Empty placed at the character's position but offset by a vector pointing toward the camera. As the character moved, the rim light automatically repositioned. This automation saved an estimated 40+ hours of manual rim light keying.
 
 > 🎯 **What the exam tests:** The Blender Foundation certification may reference *Charge* as the case study for single-character lighting. Key facts: zone-based HDRI transitions; emission rock surfaces replacing light objects in interiors; Track To constraint for automated rim light positioning.
 
@@ -285,10 +285,10 @@ The transition between zones used a **World shader node** mixing two Environment
 
 ## 4.8b IES Profiles: Real-World Light Distributions
 
-**IES (Illuminating Engineering Society) profiles** are standard data files that describe the exact light distribution of real-world light fixtures — a floor lamp, a recessed downlight, a car headlamp. Blender can import IES profiles to give Point and Spot lights realistic, physically-measured distribution shapes.
+**IES (Illuminating Engineering Society) profiles** are standard data files that describe the exact light distribution of real-world light fixtures, a floor lamp, a recessed downlight, a car headlamp. Blender can import IES profiles to give Point and Spot lights realistic, physically-measured distribution shapes.
 
 **Using IES profiles in Blender:**
-1. In the World Shader Editor (or object shader for emissive materials), add: Shader → **Light Path** is not needed — instead:
+1. In the World Shader Editor (or object shader for emissive materials), add: Shader → **Light Path** is not needed, instead:
 2. Select the Point or Spot light → Object Data Properties
 3. At the bottom: **Custom Distance** and **Use Nodes** toggle
 4. Add an **IES Texture node** (Shift+A → Texture → IES Texture) in the light's node graph
@@ -297,7 +297,7 @@ The transition between zones used a **World shader node** mixing two Environment
 
 **Free IES libraries:** The IESNA and many lighting manufacturers provide free .ies files for their products. Websites like ieslibrary.com aggregate them. Using real IES data makes Cycles renders of architectural scenes indistinguishable from professional visualization.
 
-**When NOT to use IES:** In stylized animation (*Sprite Fright*, *Coffee Run*), IES profiles add complexity without visual benefit — the soft Area lights used for character illumination produce more controllable, artistically-driven results than real-world measured distributions. IES is a photorealistic architectural visualization tool, not an animation production staple.
+**When NOT to use IES:** In stylized animation (*Sprite Fright*, *Coffee Run*), IES profiles add complexity without visual benefit, the soft Area lights used for character illumination produce more controllable, artistically-driven results than real-world measured distributions. IES is a photorealistic architectural visualization tool, not an animation production staple.
 
 ---
 
@@ -309,7 +309,7 @@ The transition between zones used a **World shader node** mixing two Environment
 1. Select the rim light object
 2. Object Properties → Light Linking → Include/Exclude panel → "+"
 3. Add the character mesh to the **Include** list
-4. The rim light now renders only on the character — even though the trees are in the same scene
+4. The rim light now renders only on the character, even though the trees are in the same scene
 5. This works in both Cycles and EEVEE (Blender 4.1+)
 
 **Before Light Linking existed (pre-4.1):** Achieving this required:
@@ -325,7 +325,7 @@ Light Linking eliminates this complexity for most use cases. The result is ident
 
 ## 4.9b Gobo Lighting: Shadow Patterns and Practical Motivation
 
-A **Gobo** (GOes Before Optics) is a physical template placed in front of a studio light to project a pattern of shadows — venetian blinds, leaves, lattice work, window frames. In Blender, this is achieved with a combination of a Spot or Area light and a mesh with an Emission material or a texture masked transparency:
+A **Gobo** (GOes Before Optics) is a physical template placed in front of a studio light to project a pattern of shadows, venetian blinds, leaves, lattice work, window frames. In Blender, this is achieved with a combination of a Spot or Area light and a mesh with an Emission material or a texture masked transparency:
 
 **Method 1: Spot light + IES profile:** Use an IES profile that describes a patterned fixture distribution (some IES files describe spotlights with diffuser patterns).
 
@@ -337,7 +337,7 @@ A **Gobo** (GOes Before Optics) is a physical template placed in front of a stud
 3. Mix Shader: Transparent BSDF (0) → Emission (1) with Fac from texture Alpha
 4. The plane passes light through the bright areas and blocks it where the texture is dark
 
-**Production use case:** The *Sprite Fright* forest scenes used a simplified gobo approach — the dense tree geometry itself acted as a natural gobo for the Sun light, projecting complex dappled shadow patterns onto the forest floor. The lighting team documented that the natural shadow patterns from the tree geometry were artistically superior to any hand-placed gobo — demonstrating that photorealistic environments can produce their own lighting complexity when the geometry is rich enough.
+**Production use case:** The *Sprite Fright* forest scenes used a simplified gobo approach the dense tree geometry itself acted as a natural gobo for the Sun light, projecting complex dappled shadow patterns onto the forest floor. The lighting team documented that the natural shadow patterns from the tree geometry were artistically superior to any hand-placed gobo demonstrating that photorealistic environments can produce their own lighting complexity when the geometry is rich enough.
 
 ---
 
@@ -358,7 +358,7 @@ A **Gobo** (GOes Before Optics) is a physical template placed in front of a stud
 
 | Question | Answer | Recommended Light |
 |---|---|---|
-| Is this outdoor sunlight? | Yes | Sun (rotation only — never move it) |
+| Is this outdoor sunlight? | Yes | Sun (rotation only, never move it) |
 | Is this a candle or small lamp? | Yes | Point (small radius, warm) |
 | Is this a theatrical spotlight? | Yes | Spot (set angle + blend) |
 | Is this a softbox or window? | Yes | Area (large Rectangle) |
@@ -371,19 +371,19 @@ A **Gobo** (GOes Before Optics) is a physical template placed in front of a stud
 
 ## 📚 Next Steps
 
-Proceed to [Module 5: Rigging & Armatures](../Module-05-Rigging-Armatures/Reading.md) — your lit, textured character now needs a skeleton.
+Proceed to [Module 5: Rigging & Armatures](../Module-05-Rigging-Armatures/Reading.md), your lit, textured character now needs a skeleton.
 
 ---
 
 ## 📖 Further Reading
 
-- 📖 **Blender Guru — "Lighting Tutorial"** (YouTube, see Videos.md)
-- 📖 **Poly Haven (polyhaven.com)** — free CC0 HDRIs, textures, models
-- 📖 **Blender Institute — *Sprite Fright* Lighting Blog** (blender.org/about/projects/)
-- 📖 **Blain, John P. (2023). *The Complete Guide to Blender Graphics.* CRC Press** — lighting chapter
+- 📖 **Blender Guru, "Lighting Tutorial"** (YouTube, see Videos.md)
+- 📖 **Poly Haven (polyhaven.com)**, free CC0 HDRIs, textures, models
+- 📖 **Blender Institute, *Sprite Fright* Lighting Blog** (blender.org/about/projects/)
+- 📖 **Blain, John P. (2023). *The Complete Guide to Blender Graphics.* CRC Press**, lighting chapter
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

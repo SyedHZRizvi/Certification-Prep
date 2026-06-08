@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -284,7 +284,7 @@
 **A:** Transparency, Inspection, Adaptation.
 
 **Q:** What is "ScrumBut"?
-**A:** Doing Scrum partially or skipping pieces — an anti-pattern.
+**A:** Doing Scrum partially or skipping pieces, an anti-pattern.
 
 **Q:** Per the 2020 Scrum Guide, Scrum is founded on:
 **A:** Empiricism AND Lean Thinking.
@@ -328,16 +328,16 @@
 **A:** The Developers.
 
 **Q:** Can the same person be PO and SM?
-**A:** No — conflict of interest.
+**A:** No, conflict of interest.
 
 **Q:** Can multiple POs exist for one product?
-**A:** No — one PO per product.
+**A:** No, one PO per product.
 
 **Q:** The Scrum Master serves which 3 groups?
 **A:** The Scrum Team, the Product Owner, and the larger organization.
 
 **Q:** "Developers" in Scrum includes:
-**A:** Anyone doing the work — coders, testers, designers, ops, etc.
+**A:** Anyone doing the work, coders, testers, designers, ops, etc.
 
 **Q:** Per the 2020 Guide, "Roles" became:
 **A:** Accountabilities.
@@ -368,7 +368,7 @@
 **A:** Why (goal), What (PBIs), How (plan).
 
 **Q:** Are the 3 questions in the Daily Scrum required?
-**A:** No — not prescribed in the 2020 Guide.
+**A:** No, not prescribed in the 2020 Guide.
 
 **Q:** Sprint Review focuses on:
 **A:** The product (Increment); adapt the Product Backlog.
@@ -377,10 +377,10 @@
 **A:** The process (people, tools, DoD).
 
 **Q:** Who attends the Retrospective?
-**A:** The Scrum Team only — no stakeholders.
+**A:** The Scrum Team only, no stakeholders.
 
 **Q:** Is Backlog Refinement a formal event?
-**A:** No — it's an ongoing activity.
+**A:** No, it's an ongoing activity.
 
 **Q:** Stakeholders attend which event?
 **A:** Sprint Review (the only one).
@@ -417,25 +417,25 @@
 
 ## 📐 SECTION 6: DONE & ESTIMATION
 
-**Q:** Definition of Ready — is it in the Scrum Guide?
-**A:** No — it's an optional practice.
+**Q:** Definition of Ready, is it in the Scrum Guide?
+**A:** No, it's an optional practice.
 
 **Q:** Story points represent:
 **A:** Relative complexity, effort, and uncertainty (NOT time).
 
-**Q:** Velocity — is it in the Scrum Guide?
-**A:** No — it's a useful planning tool.
+**Q:** Velocity, is it in the Scrum Guide?
+**A:** No, it's a useful planning tool.
 
 **Q:** Can two teams' velocities be compared?
-**A:** No — story points are team-relative.
+**A:** No, story points are team-relative.
 
 **Q:** INVEST stands for:
 **A:** Independent, Negotiable, Valuable, Estimable, Small, Testable.
 
-**Q:** Burndown chart — required by Scrum?
-**A:** No — optional transparency tool.
+**Q:** Burndown chart, required by Scrum?
+**A:** No, optional transparency tool.
 
-**Q:** DoD vs Acceptance Criteria — what's the difference?
+**Q:** DoD vs Acceptance Criteria, what's the difference?
 **A:** DoD applies to all Increments (quality bar). AC applies to one PBI (functional bar).
 
 ---
@@ -477,17 +477,17 @@
 **A:** Feature teams own end-to-end value (good); component teams own one tech layer (anti-pattern).
 
 **Q:** Is "Scrum of Scrums" in the Scrum Guide?
-**A:** No — common practice but not formal.
+**A:** No, common practice but not formal.
 
 ---
 
 ## 🚨 SECTION 9: COMMON TRAPS
 
 **Q:** Project Manager in Scrum?
-**A:** Doesn't exist — there's no PM in Scrum.
+**A:** Doesn't exist, there's no PM in Scrum.
 
 **Q:** Tech lead assigning work?
-**A:** Anti-pattern — Developers self-organize.
+**A:** Anti-pattern, Developers self-organize.
 
 **Q:** Extending a Sprint?
 **A:** Not allowed.

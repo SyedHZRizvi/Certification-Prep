@@ -17,7 +17,7 @@ D. Scope, Promise, Price, Tools, Reports
 
 ### Q2. A productized service differs from a retainer in that: *(Understand)*
 A. It is more expensive
-B. It is fixed-scope, fixed-price, repeatable — sold as an outcome rather than ongoing relationship
+B. It is fixed-scope, fixed-price, repeatable, sold as an outcome rather than ongoing relationship
 C. It cannot include subscription pricing
 D. It is only for design work
 
@@ -138,7 +138,7 @@ D. $25–$50/hr
 ### Q17. Which is a CORRECT description of an SLA? *(Understand)*
 A. A marketing brochure
 B. A contractual commitment about response times, delivery windows, revisions, and remedies
-C. Optional — most agencies skip it
+C. Optional, most agencies skip it
 D. A pricing menu
 
 ---
@@ -201,15 +201,15 @@ D. Just one audit
 
 ### Q25. Which of the following is the LEAST appropriate productized service positioning? *(Evaluate)*
 A. "The $1,500 Google Ads audit, delivered in 5 days"
-B. "The Klaviyo flow build — 5 flows, 14 days, $5,500 flat"
-C. "Any marketing service you need — we'll quote you a custom price"
-D. "The LinkedIn ghostwriting subscription — $4,000/mo, 4 posts/week"
+B. "The Klaviyo flow build, 5 flows, 14 days, $5,500 flat"
+C. "Any marketing service you need, we'll quote you a custom price"
+D. "The LinkedIn ghostwriting subscription, $4,000/mo, 4 posts/week"
 
 ---
 
 ### Q26. Which is the recommended SKU expansion pace from the reading? *(Understand)*
 A. 10 SKUs in Year 1
-B. 1 SKU Year 1, 2 SKUs Year 2, 3 SKUs Year 3 — resist adding more
+B. 1 SKU Year 1, 2 SKUs Year 2, 3 SKUs Year 3, resist adding more
 C. 50 SKUs to cover the market
 D. Never add a second SKU
 
@@ -242,7 +242,7 @@ The 10 components are: promise, deliverables, process, intake form, kickoff Loom
 AI excels at structured pattern-recognition over data, so audits and analyses see the largest leverage (5–8x).
 
 ### Q9: **B. Selling a cheap productized audit as the entry to a higher-ticket retainer**
-Workshop Digital's documented model — audit-as-wedge → retainer pipeline.
+Workshop Digital's documented model, audit-as-wedge → retainer pipeline.
 
 ### Q10: **A. 26.5 hours to 8.75 hours (~3x leverage)**
 The reading's table walks through this delivery-time reduction step by step.
@@ -284,15 +284,15 @@ A single included revision round, with overflow billed at $250–$500.
 False. Productized services tend to be HIGHER quality because the process is rehearsed and the templates are battle-tested.
 
 ### Q23: **B. An open-ended kickoff call that invites scope creep**
-The Loom is asynchronous and one-way — it doesn't invite "while you're at it" requests.
+The Loom is asynchronous and one-way, it doesn't invite "while you're at it" requests.
 
 ### Q24: **B. Audit (£1,750), Performance Max audit (£2,250), Management subscription (£4,500/mo)**
 The three-SKU catalog from the opening story.
 
-### Q25: **C. "Any marketing service you need — we'll quote you a custom price"**
+### Q25: **C. "Any marketing service you need, we'll quote you a custom price"**
 The opposite of productized. Custom quotes = retainer or project, not a productized service.
 
-### Q26: **B. 1 SKU Year 1, 2 Year 2, 3 Year 3 — resist adding more**
+### Q26: **B. 1 SKU Year 1, 2 Year 2, 3 Year 3, resist adding more**
 SKU expansion is the slow path; more leverage comes from selling more of your best SKU.
 
 ---

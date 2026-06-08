@@ -118,7 +118,7 @@ D. Standard deviation
 
 ### Q20. A Pareto chart shows that 3 of 15 defect categories cause 78% of all defects. The PM should:
 A. Address all 15 equally
-B. Focus on the vital few — those 3 categories
+B. Focus on the vital few, those 3 categories
 C. Ignore the chart
 D. Add more categories
 
@@ -149,7 +149,7 @@ Six Sigma's signature metric is fewer than 3.4 defects per million opportunities
 Cost of Non-Conformance includes internal failures (rework, scrap) and external failures (recalls, warranty, lawsuits). Training, inspection, and metrics are Cost of Conformance (prevention/appraisal).
 
 ### Q14: **B. Out of control (Rule of 7)**
-The Rule of 7 states that 7 consecutive points on the same side of the mean — even if within control limits — indicates a non-random pattern. This signals a process drift requiring investigation.
+The Rule of 7 states that 7 consecutive points on the same side of the mean even if within control limits indicates a non-random pattern. This signals a process drift requiring investigation.
 
 ### Q15: **C. High quality, low grade**
 Quality = meets requirements; grade = level of features. A Corolla has fewer features (low grade) but reliably meets its requirements (high quality). PMI emphasizes that low grade is not the same as low quality.
@@ -166,14 +166,14 @@ Crosby's "quality is free" insight: prevention costs less than the costs of inte
 ### Q19: **A. Tolerances**
 Tolerances are customer-specified acceptable ranges. Control limits describe the natural variation of a process and are statistically derived, not customer-specified.
 
-### Q20: **B. Focus on the vital few — those 3 categories**
+### Q20: **B. Focus on the vital few, those 3 categories**
 The Pareto principle (80/20) says most problems come from a few causes. The PM should focus quality improvement effort on the vital few categories that drive most defects.
 
 ### Q21: **B. Six Sigma**
 DMAIC (Define, Measure, Analyze, Improve, Control) is the Six Sigma improvement framework for existing processes. It is sometimes used in Lean Six Sigma but originates with Six Sigma.
 
 ### Q22: **B. Gold plating**
-Gold plating is adding features beyond requirements without authorization. PMI considers it a quality anti-pattern — it inflates cost/schedule without adding contracted value and can introduce defects.
+Gold plating is adding features beyond requirements without authorization. PMI considers it a quality anti-pattern, it inflates cost/schedule without adding contracted value and can introduce defects.
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 9](../Module-09-Procurement/Reading.md)
 
@@ -213,7 +213,7 @@ Gold plating is adding features beyond requirements without authorization. PMI c
 ## Bonus questions (higher-Bloom)
 
 ### Q23. Hubble (from the case study). Two independent verification tests of a critical specification produce conflicting results. The team has time pressure and the primary test (the "more familiar" one) shows pass; the secondary test shows fail. What is the MOST defensible PM action? *(Evaluate)*
-A. Trust the primary test — it's more familiar.
+A. Trust the primary test, it's more familiar.
 B. Trust the secondary test only.
 C. Treat the conflict itself as a quality signal: do not allow either test result to override the other; commission an independent third verification with explicit reconciliation criteria; document the conflict in the quality log; communicate to the sponsor that the launch decision depends on reconciliation; cite Ishikawa's fishbone analysis as the root-cause framework; refuse to release until reconciled, invoking the Code of Ethics' Responsibility value if the sponsor pressures release.
 D. Average the two results.
@@ -237,7 +237,7 @@ C. Ignore the Pareto result.
 D. Outsource the process to an external consultant.
 
 ### Q27. A regulated medical-device project has a customer-specified tolerance of ±0.05 mm and natural process variation showing control limits at ±0.08 mm. The CFO suggests "loosening the tolerance" to avoid rework. What's the MOST defensible response? *(Evaluate)*
-A. Loosen the tolerance — CFO has authority.
+A. Loosen the tolerance, CFO has authority.
 B. Refuse and shut down the project.
 C. Refuse to loosen the customer-specified tolerance unilaterally: customer tolerances are externally set; the gap between customer tolerance (±0.05) and control limits (±0.08) means the process is not capable; investments must go into process improvement (reduce control limits) or formal customer negotiation to relax tolerance (with documented engineering justification and regulatory approval where applicable); present both paths with COQ analysis; cite ISO 9001 §8.2.2 and the Code of Ethics' Honesty value.
 D. Hide the data.

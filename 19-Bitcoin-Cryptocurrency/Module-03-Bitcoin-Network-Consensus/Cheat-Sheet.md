@@ -135,7 +135,7 @@ broadcast → mempool → block inclusion → confirmations (1, 2, 3...)
 
 ## 🏆 Power Phrases
 
-✅ "Soft fork — backward-compatible rule tightening"
+✅ "Soft fork, backward-compatible rule tightening"
 ✅ "Longest cumulative-work chain wins"
 ✅ "Probabilistic finality, not deterministic"
 ✅ "Full nodes enforce validity; miners produce blocks"

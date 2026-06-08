@@ -138,7 +138,7 @@ D. Site-to-Site VPN
 
 ### Q17. Multivalue Answer routing in Route 53 is: *(Understand)*
 A. A pure load balancer
-B. Returns up to 8 healthy records — provides basic load distribution with health checks
+B. Returns up to 8 healthy records, provides basic load distribution with health checks
 C. The same as latency routing
 D. A failover-only mode
 
@@ -266,7 +266,7 @@ Classic pattern. App reads through cache, populates on miss.
 Central WAF/Shield/SG policy across an Organization.
 
 ### Q22: **B. Newer, supports KMS, all regions**
-OAC replaced OAI (Origin Access Identity) — use OAC for new setups.
+OAC replaced OAI (Origin Access Identity), use OAC for new setups.
 
 ### Q23: **B. CloudFront + signed cookies + private S3 + OAC**
 Edge caches AND restricts access; bucket stays private.

@@ -73,7 +73,7 @@ Diagnose adoption gaps individually.
 | Letter | Role |
 |---|---|
 | R | Responsible (does work) |
-| A | Accountable (owns outcome — ONLY ONE) |
+| A | Accountable (owns outcome, ONLY ONE) |
 | C | Consulted |
 | I | Informed |
 
@@ -190,5 +190,5 @@ All in 90 sec → ready. ✅
 
 ---
 
-➡️ **[Practice-Exam-2](../Practice-Exams/Practice-Exam-2.md)** (125 Q / 135 min) — covers Modules 5–8
-➡️ Then **[Final-Mock-Exam](../Practice-Exams/Final-Mock-Exam.md)** (165 Q / 180 min) — real conditions
+➡️ **[Practice-Exam-2](../Practice-Exams/Practice-Exam-2.md)** (125 Q / 135 min), covers Modules 5–8
+➡️ Then **[Final-Mock-Exam](../Practice-Exams/Final-Mock-Exam.md)** (165 Q / 180 min), real conditions

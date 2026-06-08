@@ -85,7 +85,7 @@
 | Impressions    | XXXX   | XXXX  | XXXX  |
 | Clicks         | XXX    | XXX   | XXX   |
 | CTR            | X.X%   | X.X%  | X.X%  |
-| CPC            | $X.XX  | $X.XX | —     |
+| CPC            | $X.XX  | $X.XX |,     |
 | Conversions    | XX     | XX    | XX    |
 | CPL / CPA      | $XX    | $XX   | $XX   |
 | Revenue        | $XXX   | $XXX  | $XXX  |
@@ -99,14 +99,14 @@ Include this table. Even (especially) if numbers are ugly.
 ## ✍️ Post-Mortem Structure (1,500–2,500 words)
 
 ```
-1. Hook              (~150 words — most interesting moment)
-2. The Setup         (~300 words — subject, goal, budget)
-3. The Plan          (~250 words — brief + creatives + audience)
-4. The 14-Day Story  (~700 words — condensed log w/ screenshots)
-5. The Numbers       (~300 words — final results table)
-6. What Worked / What Didn't (~300 words — specific, screenshotted)
-7. Lessons           (~200 words — honest, actionable)
-8. Takeaways         (~100 words — what others can learn)
+1. Hook              (~150 words, most interesting moment)
+2. The Setup         (~300 words, subject, goal, budget)
+3. The Plan          (~250 words, brief + creatives + audience)
+4. The 14-Day Story  (~700 words, condensed log w/ screenshots)
+5. The Numbers       (~300 words, final results table)
+6. What Worked / What Didn't (~300 words, specific, screenshotted)
+7. Lessons           (~200 words, honest, actionable)
+8. Takeaways         (~100 words, what others can learn)
 ```
 
 ---
@@ -187,4 +187,4 @@ Practice 5 times. This is your money pitch.
 
 ---
 
-➡️ [Module 4: Capstone 3 — Marketing Automation Workflow](../Module-04-Capstone-Marketing-Automation-Workflow/Reading.md)
+➡️ [Module 4: Capstone 3, Marketing Automation Workflow](../Module-04-Capstone-Marketing-Automation-Workflow/Reading.md)

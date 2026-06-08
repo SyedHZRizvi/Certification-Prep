@@ -3,17 +3,17 @@
 > **Why this module matters:** Half of every IT shop still relies on SMB file shares. Azure Files lets you "lift and shift" them to the cloud, and File Sync lets you cache them locally for low-latency access. Smaller domain than blob, but the exam *will* test SMB vs NFS, AD auth modes, and cloud tiering.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): storage account kinds, redundancy SKUs, and the encryption layers — file shares live inside the same storage accounts and inherit those choices.
-> - On-prem AD basics (Kerberos, AD DS service accounts, NTFS ACLs) — covered for AZ-104 depth in [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md).
+> - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): storage account kinds, redundancy SKUs, and the encryption layers, file shares live inside the same storage accounts and inherit those choices.
+> - On-prem AD basics (Kerberos, AD DS service accounts, NTFS ACLs), covered for AZ-104 depth in [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md).
 > - SMB protocol basics: ports (445), version differences (2.1 vs. 3.x with encryption), and why corporate firewalls often block SMB egress.
 >
-> If "Entra Kerberos" sounds new, that's expected — it's a feature most admins encounter for the first time in this module. The reading defines it from scratch.
+> If "Entra Kerberos" sounds new, that's expected, it's a feature most admins encounter for the first time in this module. The reading defines it from scratch.
 
 ---
 
 ## 🍕 A Story: The Architect's "Drive Z:"
 
-Meet the architect at Bertolli & Sons construction. Every Monday she opens File Explorer, clicks `Drive Z:`, and pulls up the project plans for that week — 80 GB of CAD files, blueprints, contracts. That `Z:` is mapped to `\\fileserver01\projects` running on a Dell box in a server closet that's older than her firstborn. When the server's power supply died last summer, the whole firm sat idle for 3 days.
+Meet the architect at Bertolli & Sons construction. Every Monday she opens File Explorer, clicks `Drive Z:`, and pulls up the project plans for that week, 80 GB of CAD files, blueprints, contracts. That `Z:` is mapped to `\\fileserver01\projects` running on a Dell box in a server closet that's older than her firstborn. When the server's power supply died last summer, the whole firm sat idle for 3 days.
 
 Her IT person, Diego, finally migrates the share to **Azure Files**. The `Z:` mapping now points to `\\bertollifiles.file.core.windows.net\projects`. The CAD files live in Azure. Backed up. Geo-redundant. Indexed by Defender.
 
@@ -58,7 +58,7 @@ az storage share-rm create \
     --access-tier Hot
 ```
 
-### PowerShell — create a premium share
+### PowerShell, create a premium share
 
 ```powershell
 $ctx = (Get-AzStorageAccount -ResourceGroupName rg-data -Name stcontosofilesprem).Context
@@ -78,7 +78,7 @@ The exam tests these three options carefully:
 | **AD DS** (on-prem AD via line-of-sight) | Classic; storage account is "domain-joined" via a service account | On-prem AD users |
 | **Entra Domain Services (Entra DS)** | Managed domain that mimics AD | Cloud-only Entra users get NTLM/Kerberos |
 
-After Kerberos auth happens at the SMB level, **NTFS-style ACLs** on files/folders enforce per-file authorization — set via Windows File Explorer or `icacls`.
+After Kerberos auth happens at the SMB level, **NTFS-style ACLs** on files/folders enforce per-file authorization, set via Windows File Explorer or `icacls`.
 
 🔥 **MEMORIZE this layering:**
 1. SMB connects with Kerberos (or storage account key)
@@ -118,8 +118,8 @@ For Linux workloads that demand POSIX semantics (chmod, chown, symlinks).
 |------------|--------|
 | Account kind | **Premium FileStorage** only |
 | Redundancy | LRS or ZRS (no GRS for NFS) |
-| Encryption-in-transit | **Not supported on NFS** — must use private endpoint / VNet isolation |
-| Auth | Network-based only (no Kerberos, no AD) — secure by network |
+| Encryption-in-transit | **Not supported on NFS**, must use private endpoint / VNet isolation |
+| Auth | Network-based only (no Kerberos, no AD), secure by network |
 
 ```bash
 # Create NFS 4.1 share on a premium FileStorage account
@@ -170,7 +170,7 @@ If enabled on a server endpoint, files not accessed recently are replaced on dis
 | **Date** | Tier files older than N days |
 | Both | Stricter of the two wins |
 
-🔥 **Trap:** Cloud tiering doesn't work for **system state, paging, or AV-scanned binaries** — those should be excluded.
+🔥 **Trap:** Cloud tiering doesn't work for **system state, paging, or AV-scanned binaries**, those should be excluded.
 
 ### Deploy File Sync via CLI
 
@@ -234,11 +234,11 @@ Recover an entire deleted share within retention (1–365 days). Separate from s
 |------|---------|
 | "NFS shares support GRS" | ❌ NFS = LRS or ZRS only |
 | "SMB encryption is optional" | ❌ SMB 3.x encryption is enforced when "Secure transfer required" is on |
-| "Storage account key gives RBAC-level audit" | ❌ Key auth is shared identity — no per-user logs |
+| "Storage account key gives RBAC-level audit" | ❌ Key auth is shared identity, no per-user logs |
 | "Cloud tiering pulls files instantly" | ❌ Stub file open = round-trip to Azure (can be slow) |
 | "AD DS auth = Entra ID auth" | ❌ Different mechanisms |
 | "Premium share size = used data" | ❌ Premium bills for **provisioned** size |
-| "File Sync replaces backup" | ❌ Sync ≠ backup — you still need RSV backup/snapshots |
+| "File Sync replaces backup" | ❌ Sync ≠ backup, you still need RSV backup/snapshots |
 
 ---
 
@@ -282,7 +282,7 @@ You now know:
 
 ---
 
-## 📊 Case Study — A Distributed Retail File-Share Modernization (2022–2024)
+## 📊 Case Study, A Distributed Retail File-Share Modernization (2022–2024)
 
 **Situation.** Consider a multinational grocery retailer modeled on Hannaford-class chains (a Northeast US chain with ~180 supermarkets, ~50,000 employees, owned by Ahold Delhaize). Each store ran a local Windows file server hosting ~200 GB of operational data: shift schedules, vendor pricing PDFs, store-camera evidence captures, planograms, and corrupted-receipt scans pending corporate review. The pattern was textbook 2000s IT: each store IT closet had a Dell server with three 4-TB HDDs in RAID-5, an aging UPS, and a single sysadmin tour-truck visiting quarterly. When a store server failed (every ~14 months at fleet scale), the store ran without schedules for 6–18 hours and head office lost visibility into shift compliance.
 
@@ -290,7 +290,7 @@ You now know:
 
 1. A central **Azure Files Premium** share (ZRS) in `eastus` became the source of truth for all store data.
 2. Each store kept a *single* Windows Server 2022 (or Windows IoT) running the **Azure File Sync agent**, registered to a centrally-deployed Storage Sync Service. **Cloud tiering** kept the last 60 days of accessed files on local disk (~150 GB working set) and stubbed everything older.
-3. Per-store servers were sized at 256 GB SSD — about *1/15th* of the previous spinning-disk capacity — because the cloud was now the source of truth and the local disk was just a cache.
+3. Per-store servers were sized at 256 GB SSD about *1/15th* of the previous spinning-disk capacity because the cloud was now the source of truth and the local disk was just a cache.
 4. Authentication used **Microsoft Entra Kerberos for Azure Files** (GA in 2023, formerly "AAD Kerberos") for hybrid users. NTFS ACLs continued to enforce file-level access per AD group.
 5. Backup was centralized: **Azure Backup for Azure Files** snapshots replaced 180 separate store-level tape rotations.
 6. A **Recovery Services Vault** in the paired region (`westus3`) handled DR (Module 9).
@@ -299,10 +299,10 @@ You now know:
 
 - **~70% reduction in per-store storage hardware capex** by moving from 12 TB RAID arrays to 256 GB SSD caches.
 - **Mean time to restore a corrupted file** dropped from "next sysadmin truck-roll, 0–14 days" to **under 10 minutes** via Windows Explorer "Previous Versions" (snapshot-based).
-- **Mean time to recover a failed store server** dropped from a full sysadmin visit (4–8 hours plus parts) to **under 90 minutes** — install Windows Server, install the Sync agent, register to the same sync group, files re-populate on demand.
-- **Cross-store visibility** became possible: head office could finally query schedule data across all 180 stores from a single Power BI report. The compliance and labor-cost optimization that unlocked was, by IT's own measurement, the actual ROI of the project — the storage savings were a rounding error.
+- **Mean time to recover a failed store server** dropped from a full sysadmin visit (4–8 hours plus parts) to **under 90 minutes**, install Windows Server, install the Sync agent, register to the same sync group, files re-populate on demand.
+- **Cross-store visibility** became possible: head office could finally query schedule data across all 180 stores from a single Power BI report. The compliance and labor-cost optimization that unlocked was, by IT's own measurement, the actual ROI of the project, the storage savings were a rounding error.
 
-**Lesson for the exam / for practitioners.** Azure File Sync is the exam's "lift and shift the file server" answer, but the *real* lesson is that the cache + cloud-source-of-truth pattern enables analytics that the per-store siloed model fundamentally couldn't. When AZ-104 gives you a "distributed offices with file servers" scenario, Azure File Sync is the answer — not just for the SMB compatibility, but because (a) cloud tiering kills the per-site capacity-planning problem, (b) Entra Kerberos kills the per-site domain-controller dependency, and (c) snapshots + backup centralize what used to be 180 separate failure modes into one.
+**Lesson for the exam / for practitioners.** Azure File Sync is the exam's "lift and shift the file server" answer, but the *real* lesson is that the cache + cloud-source-of-truth pattern enables analytics that the per-store siloed model fundamentally couldn't. When AZ-104 gives you a "distributed offices with file servers" scenario, Azure File Sync is the answer, not just for the SMB compatibility, but because (a) cloud tiering kills the per-site capacity-planning problem, (b) Entra Kerberos kills the per-site domain-controller dependency, and (c) snapshots + backup centralize what used to be 180 separate failure modes into one.
 
 **Discussion (Socratic).**
 - **Q1.** The retailer chose Premium ZRS for the central share. A consultant suggested Standard Hot would cost 70% less and meet latency budget given cloud tiering masks WAN latency. Defend both choices. At what *change rate* (delta GB written per day) does Premium's provisioned-size billing become economic? (Hint: read the Microsoft Premium vs. Standard files pricing carefully.)
@@ -318,12 +318,12 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Premium vs. Standard share decision.** Azure Files Premium bills for *provisioned* GiB regardless of use; Standard tiers (Hot/Cool/TransOpt) bill for *used* GiB plus transactions. For a 1-TB share with bursty 100k file operations per day, which is cheaper? Show the math and the threshold at which the answer flips.
 2. **Entra Kerberos vs. AD DS auth.** Microsoft now offers Entra Kerberos for Azure Files (Hybrid users) and the older AD DS-joined storage account option. When would you still pick the older AD DS auth even in 2026? (Hint: think about apps that *require* on-prem domain trust for delegated authentication.)
 3. **SMB Multichannel and throughput.** Why does enabling SMB Multichannel on Azure Files Premium roughly double single-client throughput, and why is the feature *not* available on standard file tiers? What's the trade-off Microsoft made in keeping Multichannel a Premium-only feature?
-4. **Snapshot retention as ransomware mitigation.** A ransomware incident encrypts all files on Monday. Snapshots from Sunday survive. Walk through the recovery flow on Azure Files — what's the difference between *restoring from a share snapshot* vs. *restoring from an Azure Backup vault snapshot*, in terms of granularity, time, and what survives if the attacker also wiped snapshots?
+4. **Snapshot retention as ransomware mitigation.** A ransomware incident encrypts all files on Monday. Snapshots from Sunday survive. Walk through the recovery flow on Azure Files, what's the difference between *restoring from a share snapshot* vs. *restoring from an Azure Backup vault snapshot*, in terms of granularity, time, and what survives if the attacker also wiped snapshots?
 5. **NFS share trade-offs.** NFS 4.1 shares on Azure Files require Premium *and* LRS/ZRS only (no GRS), and don't support in-transit encryption. A regulated lab needs both NFS for Linux workloads *and* geo-replication. Design the compensating controls.
 
 ---

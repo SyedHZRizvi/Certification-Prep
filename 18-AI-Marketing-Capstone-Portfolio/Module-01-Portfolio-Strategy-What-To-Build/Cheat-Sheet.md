@@ -36,7 +36,7 @@
 
 ---
 
-## 🏆 The 3 Audience Paths — Quick Picker
+## 🏆 The 3 Audience Paths, Quick Picker
 
 ```
 JOB TRACK    →  "I want a salaried marketing role within 6 months."
@@ -73,11 +73,11 @@ Pick one. You can pivot later. Drift = problem.
 
 ## 🚫 Anti-Patterns To Recognize In Your Own Plan
 
-- ❌ **Tools List Trap** — Listing "Ahrefs, Make.com, Claude API" without linking to projects
-- ❌ **Internal Work Trap** — Relying on past job claims without artifacts
-- ❌ **Polished But Empty Trap** — Building a Webflow site before any project exists
-- ❌ **Hypothetical Subject Trap** — "I'll find a subject when I get to that capstone"
-- ❌ **No-Money Trap** — Planning to skip the $200 paid campaign
+- ❌ **Tools List Trap**, Listing "Ahrefs, Make.com, Claude API" without linking to projects
+- ❌ **Internal Work Trap**, Relying on past job claims without artifacts
+- ❌ **Polished But Empty Trap**, Building a Webflow site before any project exists
+- ❌ **Hypothetical Subject Trap**, "I'll find a subject when I get to that capstone"
+- ❌ **No-Money Trap**, Planning to skip the $200 paid campaign
 
 ---
 
@@ -126,7 +126,7 @@ Right after you say a project name, follow with one of these:
 - ✅ "Here's the public link..."
 - ✅ "I'll walk you through how I'd do this for you..."
 - ✅ "Two of three creatives bombed; here's what I changed..."
-- ✅ "The first version had a bug — here's the fixed version..."
+- ✅ "The first version had a bug, here's the fixed version..."
 
 What signals desperation (avoid):
 
@@ -137,4 +137,4 @@ What signals desperation (avoid):
 
 ---
 
-➡️ [Module 2: Capstone 1 — SEO + Content Audit](../Module-02-Capstone-SEO-Content-Audit/Reading.md)
+➡️ [Module 2: Capstone 1, SEO + Content Audit](../Module-02-Capstone-SEO-Content-Audit/Reading.md)

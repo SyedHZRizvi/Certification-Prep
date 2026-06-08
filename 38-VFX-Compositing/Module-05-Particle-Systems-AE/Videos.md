@@ -13,9 +13,9 @@ title: "Module 5 Videos: Particle Systems in After Effects"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+tutorial+After+Effects+beginner+fire+smoke">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Trapcode Particular: Complete Beginner Tutorial — Fire and Smoke</div>
+    <div class="vg-card-title">Trapcode Particular: Complete Beginner Tutorial, Fire and Smoke</div>
     <div class="vg-card-meta">Video Copilot · ~28 min</div>
-    <div class="vg-card-desc">Andrew Kramer's foundational Particular tutorial — emitter types, physics parameters, and building a realistic fire effect.</div>
+    <div class="vg-card-desc">Andrew Kramer's foundational Particular tutorial, emitter types, physics parameters, and building a realistic fire effect.</div>
   </div>
 </a>
 
@@ -24,7 +24,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   <div class="vg-card-body">
     <div class="vg-card-title">CC Particle World in After Effects: Snow, Rain, and Atmospheric Particles</div>
     <div class="vg-card-meta">Surfaced Studio · ~16 min</div>
-    <div class="vg-card-desc">Complete CC Particle World guide — particle types, physics, and building snow and rain without plugins.</div>
+    <div class="vg-card-desc">Complete CC Particle World guide, particle types, physics, and building snow and rain without plugins.</div>
   </div>
 </a>
 
@@ -33,7 +33,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   <div class="vg-card-body">
     <div class="vg-card-title">Fire Without Plugins in After Effects: Fractal Noise Method</div>
     <div class="vg-card-meta">Film Riot · ~14 min</div>
-    <div class="vg-card-desc">Building a convincing fire effect using only After Effects' built-in tools — Fractal Noise, Curves, and Glow.</div>
+    <div class="vg-card-desc">Building a convincing fire effect using only After Effects' built-in tools, Fractal Noise, Curves, and Glow.</div>
   </div>
 </a>
 
@@ -68,7 +68,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   <div class="vg-card-body">
     <div class="vg-card-title">Dust, Debris, and Ground Explosion Particles with Trapcode Particular</div>
     <div class="vg-card-meta">Video Copilot · ~20 min</div>
-    <div class="vg-card-desc">Building the ground dust and debris layers for an explosion effect — box emitters, physics, and render modes.</div>
+    <div class="vg-card-desc">Building the ground dust and debris layers for an explosion effect, box emitters, physics, and render modes.</div>
   </div>
 </a>
 
@@ -86,7 +86,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Fire and Explosion Effects in Major Films</div>
     <div class="vg-card-meta">Corridor Crew · ~24 min</div>
-    <div class="vg-card-desc">Working VFX artists break down real fire and explosion effects — what looks photographic and what doesn't, and why.</div>
+    <div class="vg-card-desc">Working VFX artists break down real fire and explosion effects, what looks photographic and what doesn't, and why.</div>
   </div>
 </a>
 
@@ -103,7 +103,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   <div class="vg-card-body">
     <div class="vg-card-title">Compositing Particles: Blend Modes and Integration</div>
     <div class="vg-card-meta">Surfaced Studio · ~12 min</div>
-    <div class="vg-card-desc">How to composite particle effects over footage — using Screen, Add, and Overlay modes correctly for different effect types.</div>
+    <div class="vg-card-desc">How to composite particle effects over footage, using Screen, Add, and Overlay modes correctly for different effect types.</div>
   </div>
 </a>
 

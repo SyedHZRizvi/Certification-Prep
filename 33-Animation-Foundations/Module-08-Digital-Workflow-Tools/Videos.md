@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Video Codecs Explained — H.264 vs ProRes vs Lossless</p>
+      <p class="vg-title">Video Codecs Explained, H.264 vs ProRes vs Lossless</p>
       <p class="vg-creator">Corridor Crew / Gerald Undone</p>
       <span class="vg-duration">⏱ 20 min · Which codec for which purpose</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Animation Software Overview — Which Tool for Which Career</p>
+      <p class="vg-title">Animation Software Overview, Which Tool for Which Career</p>
       <p class="vg-creator">School of Motion / Bloop Animation</p>
       <span class="vg-duration">⏱ 20 min · Maya vs Blender vs Harmony vs Animate</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Setting Up Your Animation Project — Frame Rate & Resolution</p>
+      <p class="vg-title">Setting Up Your Animation Project, Frame Rate & Resolution</p>
       <p class="vg-creator">Animation Mentor / SouthernShotty</p>
       <span class="vg-duration">⏱ 15 min · Why you lock settings before Frame 1</span>
     </div>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Blender for Animation — Beginner Overview 2024</p>
+      <p class="vg-title">Blender for Animation, Beginner Overview 2024</p>
       <p class="vg-creator">Blender Guru / CG Cookie</p>
       <span class="vg-duration">⏱ 18 min · The free industry-adjacent tool explained</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Toon Boom Harmony — Industry Pipeline Overview</p>
+      <p class="vg-title">Toon Boom Harmony, Industry Pipeline Overview</p>
       <p class="vg-creator">Toon Boom Animation</p>
       <span class="vg-duration">⏱ 20 min · How Disney TV and DreamWorks TV use Harmony</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Color Spaces — sRGB vs Rec. 709 for Animators</p>
+      <p class="vg-title">Color Spaces, sRGB vs Rec. 709 for Animators</p>
       <p class="vg-creator">Corridor Crew / Nino Carbe</p>
       <span class="vg-duration">⏱ 15 min · Why color space matters for delivery</span>
     </div>

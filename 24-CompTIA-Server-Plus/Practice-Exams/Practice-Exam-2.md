@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — CompTIA Server+ (SK0-005 Style)
+# 🧪 Practice Exam 2, CompTIA Server+ (SK0-005 Style)
 
 > **Conditions:** Set a 65-minute timer. 65 questions. Treat it like the real thing.
-> **Pass mark:** 55/65 (~85%) — the real exam scales to 750/900 (~83%); practice higher.
+> **Pass mark:** 55/65 (~85%), the real exam scales to 750/900 (~83%); practice higher.
 > Take this AFTER finishing Modules 5–8 (DR/backup, security, networking, troubleshooting). Earlier-module recall mixed in.
 
 ---
@@ -82,13 +82,13 @@ D. Is a trailer
 
 ### 13. A cold DR site:
 A. Has running mirrored systems with live data
-B. Is a facility with power/HVAC but no servers/data — days-weeks recovery
+B. Is a facility with power/HVAC but no servers/data, days-weeks recovery
 C. Is a trailer
 D. Is a cloud region
 
-### 14. Two DCs 3,000 km apart over WAN — strict RPO = 0 with synchronous replication would:
+### 14. Two DCs 3,000 km apart over WAN, strict RPO = 0 with synchronous replication would:
 A. Work perfectly
-B. Add WAN round-trip latency to every write — crippling app perf; pick async with acceptable RPO
+B. Add WAN round-trip latency to every write, crippling app perf; pick async with acceptable RPO
 C. Save money
 D. Make backups smaller
 
@@ -110,7 +110,7 @@ B. Quiesces apps (SQL, Exchange) for application-consistent snapshots
 C. Encrypts backup tapes
 D. Is identical to ZFS snapshots
 
-### 18. Mean Time Between Failures (MTBF) — for reliability:
+### 18. Mean Time Between Failures (MTBF), for reliability:
 A. Smaller is better
 B. Larger is better
 C. Always 8 hours
@@ -130,7 +130,7 @@ D. A restore-only drill
 
 ### 21. An "access control vestibule" / mantrap:
 A. Is a single security door
-B. Is a two-door entry where the second door opens only after the first closes — defeats tailgating
+B. Is a two-door entry where the second door opens only after the first closes, defeats tailgating
 C. Is a keypad
 D. Is a camera tower
 
@@ -142,7 +142,7 @@ D. Replace BIOS
 
 ### 23. Without a UEFI password, Secure Boot's value is:
 A. Higher than ever
-B. Largely negated — an attacker with console access can disable Secure Boot in seconds
+B. Largely negated, an attacker with console access can disable Secure Boot in seconds
 C. Doubled
 D. Equal to having it
 
@@ -196,7 +196,7 @@ D. Is older
 
 ### 32. EDR adds what over traditional antivirus?
 A. Lower price
-B. Behavioral analytics, threat-intel feeds, IR tooling — beyond signature scanning
+B. Behavioral analytics, threat-intel feeds, IR tooling, beyond signature scanning
 C. No alerts
 D. Slower performance
 
@@ -214,7 +214,7 @@ D. They work across forests automatically
 
 ### 35. After SED + BitLocker (TPM-bound), stolen drives are:
 A. Trivially readable in another machine
-B. Unreadable without the original TPM key — encryption protects data at rest
+B. Unreadable without the original TPM key, encryption protects data at rest
 C. Recovered by the SAS controller automatically
 D. Sent to the cloud
 
@@ -254,7 +254,7 @@ B. To reduce per-packet overhead + CPU interrupts, improving throughput
 C. To shrink TCP windows
 D. To enable IPv6
 
-### 42. Enabling jumbo frames on the server only — switch and storage stay at MTU 1500 — typically causes:
+### 42. Enabling jumbo frames on the server only switch and storage stay at MTU 1500 typically causes:
 A. Massive performance increase
 B. Performance degradation and possibly black-holed connections
 C. No change
@@ -286,7 +286,7 @@ D. Bypass routing
 
 ### 47. A server has IPv4 firewall rules for HTTPS but no IPv6 rules. After publishing AAAA records, some clients can't reach the site. The cause:
 A. DNS broken
-B. Missing IPv6 firewall rule — IPv6 blocked by default-deny
+B. Missing IPv6 firewall rule, IPv6 blocked by default-deny
 C. Browser bug
 D. TLS handshake failure
 
@@ -310,7 +310,7 @@ D. Implement the solution
 
 ### 51. A server beeps 3 short tones on boot and refuses to POST. The first thing to check is:
 A. The power supply
-B. RAM (reseat / swap) — 3 beeps most often indicates a memory fault
+B. RAM (reseat / swap), 3 beeps most often indicates a memory fault
 C. The drives
 D. The video card
 
@@ -322,12 +322,12 @@ D. Network activity
 
 ### 53. A solid amber drive LED indicates:
 A. Normal activity
-B. Drive failure / pre-fail — check RAID controller and follow swap procedure
+B. Drive failure / pre-fail, check RAID controller and follow swap procedure
 C. Identify mode
 D. Network link
 
 ### 54. ECC single-bit errors trending up on one DIMM means:
-A. Ignore — single-bit is auto-corrected
+A. Ignore, single-bit is auto-corrected
 B. Schedule replacement before uncorrectable errors / data corruption
 C. Reboot to clear
 D. Add more DIMMs
@@ -348,7 +348,7 @@ D. Bad NIC
 A. CPU
 B. RAM
 C. Disk
-D. Application-level — none of the infra resources are saturated
+D. Application-level, none of the infra resources are saturated
 
 ### 58. To verify MTU 9000 end-to-end on Linux:
 A. `ping -M do -s 8972 destination`
@@ -388,7 +388,7 @@ D. Shared via email
 
 ### 64. A water-pipe sprinkler over an active server room is:
 A. The recommended fire-suppression
-B. An anti-pattern — use clean-agent (FM-200/Novec) or pre-action dry-pipe
+B. An anti-pattern, use clean-agent (FM-200/Novec) or pre-action dry-pipe
 C. Required by NFPA
 D. Permanent
 
@@ -422,132 +422,132 @@ D. RAID 5 inside the server with no replication
 
 ## 📊 Detailed answer rationales
 
-**Q1. B — Downtime tolerance.** RTO = Recovery Time Objective.
+**Q1. B, Downtime tolerance.** RTO = Recovery Time Objective.
 
-**Q2. B — Data-loss tolerance (in time).** RPO = Recovery Point Objective.
+**Q2. B, Data-loss tolerance (in time).** RPO = Recovery Point Objective.
 
-**Q3. B — RPO = 0.** "No data loss" bounds data loss; RPO. (RTO bounds downtime.)
+**Q3. B, RPO = 0.** "No data loss" bounds data loss; RPO. (RTO bounds downtime.)
 
-**Q4. B — Incremental: since LAST backup of any type; clears archive bit.**
+**Q4. B, Incremental: since LAST backup of any type; clears archive bit.**
 
-**Q5. A — Differential: since last FULL; does NOT clear archive bit.**
+**Q5. A, Differential: since last FULL; does NOT clear archive bit.**
 
-**Q6. C — Sun full + all incrementals in order.** Incrementals are chained.
+**Q6. C, Sun full + all incrementals in order.** Incrementals are chained.
 
-**Q7. A — Sun full + Wed differential only.** Differential is cumulative since last full.
+**Q7. A, Sun full + Wed differential only.** Differential is cumulative since last full.
 
-**Q8. B — Built on the backup server from full + incrementals.** No production read.
+**Q8. B, Built on the backup server from full + incrementals.** No production read.
 
-**Q9. B — 3 copies / 2 media / 1 off-site.** Universal rule.
+**Q9. B, 3 copies / 2 media / 1 off-site.** Universal rule.
 
-**Q10. B — + 1 immutable + 0 verified errors.** Modern ransomware-aware variant.
+**Q10. B, + 1 immutable + 0 verified errors.** Modern ransomware-aware variant.
 
-**Q11. B — Grandfather-Father-Son.** Monthly / Weekly / Daily.
+**Q11. B, Grandfather-Father-Son.** Monthly / Weekly / Daily.
 
-**Q12. C — Continuously synchronized, near-instant cutover.** Hot = live.
+**Q12. C, Continuously synchronized, near-instant cutover.** Hot = live.
 
-**Q13. B — Power/HVAC but no servers/data; days-weeks.** Cold = empty shell.
+**Q13. B, Power/HVAC but no servers/data; days-weeks.** Cold = empty shell.
 
-**Q14. B — WAN latency makes sync impractical.** Use async + acceptable RPO.
+**Q14. B, WAN latency makes sync impractical.** Use async + acceptable RPO.
 
-**Q15. B — Periodic restore tests prove restorability.** Green checkmarks don't.
+**Q15. B, Periodic restore tests prove restorability.** Green checkmarks don't.
 
-**Q16. B — Ransomware / malicious deletion within retention.** WORM/Object Lock.
+**Q16. B, Ransomware / malicious deletion within retention.** WORM/Object Lock.
 
-**Q17. B — Quiesces apps for app-consistent snapshots.**
+**Q17. B, Quiesces apps for app-consistent snapshots.**
 
-**Q18. B — Larger is better.** MTBF measures reliability.
+**Q18. B, Larger is better.** MTBF measures reliability.
 
-**Q19. C — DRP.** DR is a subset of BCP.
+**Q19. C, DRP.** DR is a subset of BCP.
 
-**Q20. A — Discussion walkthrough.** Functional = hands-on partial; Full-scale = real failover.
+**Q20. A, Discussion walkthrough.** Functional = hands-on partial; Full-scale = real failover.
 
-**Q21. B — Two-door entry defeating tailgating.**
+**Q21. B, Two-door entry defeating tailgating.**
 
-**Q22. B — Verify bootloader signature against firmware trust store.** Blocks bootkits.
+**Q22. B, Verify bootloader signature against firmware trust store.** Blocks bootkits.
 
-**Q23. B — Largely negated.** Attacker disables Secure Boot in seconds without UEFI pw.
+**Q23. B, Largely negated.** Attacker disables Secure Boot in seconds without UEFI pw.
 
-**Q24. B — Tamper-resistant chip/firmware for keys + measurements.**
+**Q24. B, Tamper-resistant chip/firmware for keys + measurements.**
 
-**Q25. C — Dedicated least-privileged; ideally gMSA.** Cross-service sharing is an anti-pattern.
+**Q25. C, Dedicated least-privileged; ideally gMSA.** Cross-service sharing is an anti-pattern.
 
-**Q26. B — Only rights strictly needed.** PoLP (Saltzer & Schroeder 1975).
+**Q26. B, Only rights strictly needed.** PoLP (Saltzer & Schroeder 1975).
 
-**Q27. A — Role-Based Access Control.**
+**Q27. A, Role-Based Access Control.**
 
-**Q28. B — Time-boxed approved audited elevation with MFA.** Eliminates standing privilege.
+**Q28. B, Time-boxed approved audited elevation with MFA.** Eliminates standing privilege.
 
-**Q29. B — Hardening guides from CIS.** Industry-standard baselines (L1 / L2).
+**Q29. B, Hardening guides from CIS.** Industry-standard baselines (L1 / L2).
 
-**Q30. B — Actively exploited.** Federal BOD 22-01 mandates remediation.
+**Q30. B, Actively exploited.** Federal BOD 22-01 mandates remediation.
 
-**Q31. B — Can BLOCK, not just alert.**
+**Q31. B, Can BLOCK, not just alert.**
 
-**Q32. B — Behavioral + telemetry + IR tooling.** Modern endpoint defense.
+**Q32. B, Behavioral + telemetry + IR tooling.** Modern endpoint defense.
 
-**Q33. B — EternalBlue family.** SMB 1.0 is the WannaCry / NotPetya vector.
+**Q33. B, EternalBlue family.** SMB 1.0 is the WannaCry / NotPetya vector.
 
-**Q34. B — Passwords auto-rotated by AD.** Solves the service-account password-rotation pain.
+**Q34. B, Passwords auto-rotated by AD.** Solves the service-account password-rotation pain.
 
-**Q35. B — Unreadable without the original TPM key.** Encryption is the answer to physical theft.
+**Q35. B, Unreadable without the original TPM key.** Encryption is the answer to physical theft.
 
-**Q36. C — 802.3ad / 802.1AX.** LACP IEEE standards.
+**Q36. C, 802.3ad / 802.1AX.** LACP IEEE standards.
 
-**Q37. B — 1500 bytes.** Default Ethernet MTU.
+**Q37. B, 1500 bytes.** Default Ethernet MTU.
 
-**Q38. C — 9000 (sometimes 9216).** Jumbo frames.
+**Q38. C, 9000 (sometimes 9216).** Jumbo frames.
 
-**Q39. B — Switch ports in same LAG with LACP enabled.** Both sides must participate.
+**Q39. B, Switch ports in same LAG with LACP enabled.** Both sides must participate.
 
-**Q40. B — Multiple VLANs tagged per 802.1Q.**
+**Q40. B, Multiple VLANs tagged per 802.1Q.**
 
-**Q41. B — Reduce per-packet overhead + CPU interrupts.** Storage / vMotion / backup networks benefit.
+**Q41. B, Reduce per-packet overhead + CPU interrupts.** Storage / vMotion / backup networks benefit.
 
-**Q42. B — Performance degradation and possible black-holes.** Mismatch is worse than not enabling.
+**Q42. B, Performance degradation and possible black-holes.** Mismatch is worse than not enabling.
 
-**Q43. C — IP + TCP/UDP port.** L4 sees only the 5-tuple.
+**Q43. C, IP + TCP/UDP port.** L4 sees only the 5-tuple.
 
-**Q44. A — Route by host / path / header / cookie.** L7 parses app data.
+**Q44. A, Route by host / path / header / cookie.** L7 parses app data.
 
-**Q45. A — NDP.** Neighbor Discovery Protocol replaces ARP in IPv6.
+**Q45. A, NDP.** Neighbor Discovery Protocol replaces ARP in IPv6.
 
-**Q46. B — Auto-generate from router-advertised prefix + interface ID.**
+**Q46. B, Auto-generate from router-advertised prefix + interface ID.**
 
-**Q47. B — Missing IPv6 firewall rule.** Common dual-stack oversight.
+**Q47. B, Missing IPv6 firewall rule.** Common dual-stack oversight.
 
-**Q48. B — Identify the problem.** Step 1.
+**Q48. B, Identify the problem.** Step 1.
 
-**Q49. B — Establish a plan of action and implement.** Step 4.
+**Q49. B, Establish a plan of action and implement.** Step 4.
 
-**Q50. C — Document findings, actions, and outcomes.** Step 6.
+**Q50. C, Document findings, actions, and outcomes.** Step 6.
 
-**Q51. B — RAM.** 3 beeps most often indicates memory fault on common BIOS.
+**Q51. B, RAM.** 3 beeps most often indicates memory fault on common BIOS.
 
-**Q52. C — Identify / Locator.** Admin-toggled from iDRAC/iLO.
+**Q52. C, Identify / Locator.** Admin-toggled from iDRAC/iLO.
 
-**Q53. B — Drive failure / pre-fail.** Use RAID controller utility for confirmation.
+**Q53. B, Drive failure / pre-fail.** Use RAID controller utility for confirmation.
 
-**Q54. B — Schedule replacement.** Trending corrections forecast uncorrectable errors.
+**Q54. B, Schedule replacement.** Trending corrections forecast uncorrectable errors.
 
-**Q55. B — `iostat -xz 1`.** Per-device extended stats.
+**Q55. B, `iostat -xz 1`.** Per-device extended stats.
 
-**Q56. A — CPU pressure.** Sustained > 2× cores in queue = real contention.
+**Q56. A, CPU pressure.** Sustained > 2× cores in queue = real contention.
 
-**Q57. D — Application-level.** None of the four infra resources are saturated.
+**Q57. D, Application-level.** None of the four infra resources are saturated.
 
-**Q58. A — `ping -M do -s 8972`.** DF bit + 9000-byte payload check.
+**Q58. A, `ping -M do -s 8972`.** DF bit + 9000-byte payload check.
 
-**Q59. B — MPIO not installed.** Each path looks like a separate disk.
+**Q59. B, MPIO not installed.** Each path looks like a separate disk.
 
-**Q60. B — Execute the backout plan.** That's why it exists.
+**Q60. B, Execute the backout plan.** That's why it exists.
 
-**Q61. B — Inventory + relationships + ownership.** CMDB is the single source of truth.
+**Q61. B, Inventory + relationships + ownership.** CMDB is the single source of truth.
 
-**Q62. B — System / process improvements.** Blameless = not personal.
+**Q62. B, System / process improvements.** Blameless = not personal.
 
-**Q63. C — Changed during commissioning + segmented network + MFA.** Default vendor creds are publicly documented and a top breach vector.
+**Q63. C, Changed during commissioning + segmented network + MFA.** Default vendor creds are publicly documented and a top breach vector.
 
-**Q64. B — Anti-pattern.** Use clean-agent gas suppression.
+**Q64. B, Anti-pattern.** Use clean-agent gas suppression.
 
-**Q65. B — Async log shipping + immutable cloud + tested DR.** Satisfies all stated requirements (RPO, RTO, 24×7, ransomware). The other options fail multiple requirements.
+**Q65. B, Async log shipping + immutable cloud + tested DR.** Satisfies all stated requirements (RPO, RTO, 24×7, ransomware). The other options fail multiple requirements.

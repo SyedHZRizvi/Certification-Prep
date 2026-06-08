@@ -20,7 +20,7 @@
 
 # 🎥 Module 8 Videos: Production Patterns & Safety
 
-> **How to use:** Watch in two passes — first the "what" (the patterns), then the "how" (the tools). Simon Willison and Lakera-style adversarial talks are uniquely valuable here.
+> **How to use:** Watch in two passes, first the "what" (the patterns), then the "how" (the tools). Simon Willison and Lakera-style adversarial talks are uniquely valuable here.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Injection — Simon Willison</p>
+      <p class="vg-title">Prompt Injection, Simon Willison</p>
       <p class="vg-creator">Simon Willison</p>
       <span class="vg-duration">⏱ 30 min · The canonical practitioner overview</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Langfuse — Production LLM Observability</p>
+      <p class="vg-title">Langfuse, Production LLM Observability</p>
       <p class="vg-creator">Langfuse</p>
       <span class="vg-duration">⏱ 18 min · Tracing + evals + alerts</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Claude on Bedrock — Regulated Industry Setup</p>
+      <p class="vg-title">Claude on Bedrock, Regulated Industry Setup</p>
       <p class="vg-creator">AWS</p>
       <span class="vg-duration">⏱ 20 min · BAA, residency, VPC endpoints</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Helicone — Drop-in LLM Observability</p>
+      <p class="vg-title">Helicone, Drop-in LLM Observability</p>
       <p class="vg-creator">Helicone</p>
       <span class="vg-duration">⏱ 12 min · Cost + latency dashboards</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Red-Teaming LLM Apps — Playbook</p>
+      <p class="vg-title">Red-Teaming LLM Apps, Playbook</p>
       <p class="vg-creator">Lakera / OpenAI / community</p>
       <span class="vg-duration">⏱ 18 min · Pre-launch adversarial testing</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Klarna AI Assistant — Architecture & Lessons</p>
+      <p class="vg-title">Klarna AI Assistant, Architecture & Lessons</p>
       <p class="vg-creator">Klarna / various conferences</p>
       <span class="vg-duration">⏱ 25 min · Production at scale</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Promptfoo — CI Evals for Prompts</p>
+      <p class="vg-title">Promptfoo, CI Evals for Prompts</p>
       <p class="vg-creator">Promptfoo</p>
       <span class="vg-duration">⏱ 25 min · Open-source eval CLI</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Microsoft Presidio — PII Detection at Input/Output</p>
+      <p class="vg-title">Microsoft Presidio, PII Detection at Input/Output</p>
       <p class="vg-creator">Microsoft</p>
       <span class="vg-duration">⏱ 15 min · Open-source PII tool</span>
     </div>
@@ -169,6 +169,6 @@ Answer these in your notebook (without re-watching):
 2. The 6 production pillars in this module?
 3. The right hosting choice for a HIPAA workload + reason?
 4. Tools to use for: (a) tracing, (b) cost monitoring, (c) eval CI, (d) PII detection?
-5. The "Klarna lesson" — what makes the unit economics work?
+5. The "Klarna lesson", what makes the unit economics work?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md) and ultimately for the Practice Exams.

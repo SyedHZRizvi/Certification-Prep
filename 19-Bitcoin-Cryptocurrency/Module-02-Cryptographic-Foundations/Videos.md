@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎓</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Princeton MOOC — Hash Functions</p>
+      <p class="vg-title">Princeton MOOC, Hash Functions</p>
       <p class="vg-creator">Arvind Narayanan</p>
       <span class="vg-duration">⏱ 16 min · The pre-image / collision properties</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>📜</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Stanford CS251 — ECDSA Lecture</p>
+      <p class="vg-title">Stanford CS251, ECDSA Lecture</p>
       <p class="vg-creator">Dan Boneh · Stanford</p>
       <span class="vg-duration">⏱ 20 min · The signing math, formally</span>
     </div>

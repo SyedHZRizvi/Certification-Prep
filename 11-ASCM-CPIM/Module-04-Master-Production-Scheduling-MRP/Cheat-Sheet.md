@@ -34,7 +34,7 @@ Today ────► DTF ────► PTF ────► Free zone
 
 | Fence | Rule |
 |-------|------|
-| **DTF** (closer) | Forecast IGNORED — only firm orders. Senior mgmt approval to change. |
+| **DTF** (closer) | Forecast IGNORED, only firm orders. Senior mgmt approval to change. |
 | **PTF** (further out) | Master Scheduler can change with approval. |
 | **Beyond PTF** | System replans freely. |
 
@@ -58,7 +58,7 @@ Planned Order Release Date = Receipt Date − Lead Time
 | On hand (start 500) | 100 | -2,300 | -4,700 |
 | Net Req | 0 | 2,300 | 2,400 |
 | Planned Rcpt | 0 | 2,300 | 2,400 |
-| Planned Release | 2,300 | 2,400 | — |
+| Planned Release | 2,300 | 2,400 |, |
 
 ---
 
@@ -86,10 +86,10 @@ Planned Order Release Date = Receipt Date − Lead Time
 
 ## 📬 4 MRP Action Messages
 
-- **Release** — release this planned order now
-- **Reschedule in** — pull open order earlier
-- **Reschedule out** — push open order later
-- **Cancel** — cancel open order
+- **Release**, release this planned order now
+- **Reschedule in**, pull open order earlier
+- **Reschedule out**, push open order later
+- **Cancel**, cancel open order
 
 ---
 
@@ -139,4 +139,4 @@ When you see these, often **wrong**:
 
 ---
 
-➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) — take it now! Then [Module 5: Capacity Planning](../Module-05-Capacity-Planning/Reading.md)
+➡️ [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), take it now! Then [Module 5: Capacity Planning](../Module-05-Capacity-Planning/Reading.md)

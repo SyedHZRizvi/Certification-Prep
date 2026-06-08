@@ -63,7 +63,7 @@ Coined by John Elkington, 1994.
 
 ---
 
-## 🛠️ FMEA — Failure Mode & Effects Analysis
+## 🛠️ FMEA, Failure Mode & Effects Analysis
 
 ```
    RPN = Severity × Occurrence × Detection
@@ -96,9 +96,9 @@ Each scored 1–10. High RPN = high priority.
 ```
 
 ### ESG (investor lens)
-- E — Environmental
-- S — Social
-- G — Governance
+- E, Environmental
+- S, Social
+- G, Governance
 
 ---
 

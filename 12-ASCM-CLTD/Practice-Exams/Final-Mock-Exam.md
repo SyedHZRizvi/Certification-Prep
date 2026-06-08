@@ -1,7 +1,7 @@
-# 🧪 Final Mock Exam — ASCM CLTD (Full-Length, Real Exam Conditions)
+# 🧪 Final Mock Exam, ASCM CLTD (Full-Length, Real Exam Conditions)
 
 > **Conditions:** Set a 210-minute (3.5-hour) timer. 150 questions. No phone. No notes. No breaks except restroom. Treat it like the real thing.
-> **Pass mark:** 105/150 (70%) — equivalent to the 300+ scaled score
+> **Pass mark:** 105/150 (70%), equivalent to the 300+ scaled score
 > Take this ONE WEEK before the real exam.
 >
 > **Pacing:** 84 seconds per question average. If you spend >2 min on one, mark it and move on.
@@ -184,7 +184,7 @@ B. PO
 C. ASN
 D. PO Acknowledgement
 
-### 30. 500 small e-com orders with high SKU overlap — best picking:
+### 30. 500 small e-com orders with high SKU overlap, best picking:
 A. Discrete
 B. Batch
 C. Zone only
@@ -238,7 +238,7 @@ B. DC is small
 C. One picker
 D. All items identical
 
-### 39. DRP vs MRP — DRP:
+### 39. DRP vs MRP, DRP:
 A. Drives off MPS
 B. Explodes BOM
 C. Plans distribution network replenishment
@@ -448,13 +448,13 @@ B. Identical speed
 C. Pick-to-light is fastest at the bin; voice is mid-fast with lower CapEx
 D. Voice is least accurate
 
-### 74. 15 pallets, 28k lbs, one origin, one destination — best mode:
+### 74. 15 pallets, 28k lbs, one origin, one destination, best mode:
 A. LTL
 B. Parcel
 C. FTL
 D. Air
 
-### 75. 2 pallets, 600 lbs each, 800 miles — best mode:
+### 75. 2 pallets, 600 lbs each, 800 miles, best mode:
 A. FTL
 B. Air
 C. Parcel ground
@@ -496,7 +496,7 @@ B. 1 kg : 6,000 cm³
 C. 1 kg : 10,000 cm³
 D. 1 kg : 100,000 cm³
 
-### 82. 40 kg actual, 100×80×60 cm — chargeable kg:
+### 82. 40 kg actual, 100×80×60 cm, chargeable kg:
 A. 40
 B. 80
 C. 60
@@ -700,7 +700,7 @@ B. Expedited customs for trusted traders
 C. FTZ status
 D. Duty refunds
 
-### 116. DAP vs DDP — DDP includes:
+### 116. DAP vs DDP, DDP includes:
 A. Insurance
 B. Import duty paid by seller
 C. Unloading
@@ -742,7 +742,7 @@ B. Receiving counts
 C. Customer is refunded
 D. Disposition decision is made
 
-### 123. Refurbish vs Remanufacture — remanufacture:
+### 123. Refurbish vs Remanufacture, remanufacture:
 A. Shorter warranty
 B. Full disassemble + restore, new-equivalent warranty
 C. Identical
@@ -844,7 +844,7 @@ B. Add DCs
 C. Mode shift (truck → rail)
 D. Insurance
 
-### 140. Closed-loop SC vs Circular economy — closed-loop is:
+### 140. Closed-loop SC vs Circular economy, closed-loop is:
 A. Firm-level (your products cycle back to you)
 B. Larger in scope
 C. Mandatory
@@ -892,13 +892,13 @@ B. Real-time POS / sell-through + ML
 C. Three-month moving averages only
 D. Random number generation
 
-### 148. Forecasts at aggregate vs SKU level — aggregate is:
+### 148. Forecasts at aggregate vs SKU level, aggregate is:
 A. Less accurate
 B. More accurate (lower relative error)
 C. Same
 D. Useless
 
-### 149. A Seattle-only DC retailer with high outbound costs to East Coast — best strategic fix:
+### 149. A Seattle-only DC retailer with high outbound costs to East Coast, best strategic fix:
 A. Switch carriers
 B. Reduce shipment sizes
 C. Negotiate fuel surcharges
@@ -956,7 +956,7 @@ D. Transportation
 | 135–150 | 🏆 You're ready. Book the exam this week. |
 | 120–134 | ✅ Pass-zone. Review wrong answers; book in 1–2 weeks. |
 | 105–119 | ⚠️ At pass mark. Spend a week on weak modules and retake the mock. |
-| 90–104 | 🔁 Below pass — 2–3 more weeks of focused study. |
+| 90–104 | 🔁 Below pass, 2–3 more weeks of focused study. |
 | <90 | ⛔ Restart weak domains. Don't book the exam yet. |
 
 ---
@@ -999,7 +999,7 @@ Then take the [ASCM CLTD Practice Test](https://www.ascm.org/) bundled in the Le
 - Sleep 8 hours the night before
 - Arrive 30 min early at the testing center / set up OnVUE 30 min early
 - Bring 2 forms of ID
-- 84 sec per question average — if stuck, mark and move on
+- 84 sec per question average, if stuck, mark and move on
 - Read each question TWICE before answering
 - Eliminate clearly-wrong answers first
 - For Incoterms questions, *picture the responsibility ladder*
@@ -1013,302 +1013,302 @@ Then take the [ASCM CLTD Practice Test](https://www.ascm.org/) bundled in the Le
 
 > 150 questions, 150 rationales. For each: why the correct answer wins AND why each distractor fails. This is the question-by-question analysis discipline applied to certification prep.
 
-**Q1. A — Inventory carrying.** Square-root rule. Outbound transport (B) falls; order processing (C) flat; stockouts (D) improve.
+**Q1. A, Inventory carrying.** Square-root rule. Outbound transport (B) falls; order processing (C) flat; stockouts (D) improve.
 
-**Q2. C — Demand volume.** COG weighting. A (labor), B (real-estate), D (taxes) are factor-rating layers.
+**Q2. C, Demand volume.** COG weighting. A (labor), B (real-estate), D (taxes) are factor-rating layers.
 
-**Q3. D — Clean-slate.** Greenfield. A (existing) is brownfield; B (agricultural) literal misread; C (LEED) is sustainability cert.
+**Q3. D, Clean-slate.** Greenfield. A (existing) is brownfield; B (agricultural) literal misread; C (LEED) is sustainability cert.
 
-**Q4. A — Cross-dock.** Sub-day dwell. B, C, D hold days+.
+**Q4. A, Cross-dock.** Sub-day dwell. B, C, D hold days+.
 
-**Q5. A — Lead logistics provider.** 4PL orchestrator. B (carrier) is 2PL; C (warehouse only) is partial 3PL; D (e-com platform) is unrelated.
+**Q5. A, Lead logistics provider.** 4PL orchestrator. B (carrier) is 2PL; C (warehouse only) is partial 3PL; D (e-com platform) is unrelated.
 
-**Q6. B — Consolidate small shipments.** Hub-and-spoke. A (fastest) — direct is faster. C (large direct) is point-to-point. D (one-to-one) is direct.
+**Q6. B Consolidate small shipments.** Hub-and-spoke. A (fastest) direct is faster. C (large direct) is point-to-point. D (one-to-one) is direct.
 
-**Q7. D — √N × single-loc SS.** Square-root rule. A, B, C wrong functional forms.
+**Q7. D, √N × single-loc SS.** Square-root rule. A, B, C wrong functional forms.
 
-**Q8. A — Holds assets.** 3PL = asset; 4PL = orchestration. B, C, D mislead.
+**Q8. A, Holds assets.** 3PL = asset; 4PL = orchestration. B, C, D mislead.
 
-**Q9. C — 18.** (4000×10+1000×50)/5000 = 18. A (40), B (22), D (30) miscompute.
+**Q9. C, 18.** (4000×10+1000×50)/5000 = 18. A (40), B (22), D (30) miscompute.
 
-**Q10. D — Defers duty.** FTZ. A (immediate) is direct import; B (no storage) wrong; C (export-only) wrong.
+**Q10. D, Defers duty.** FTZ. A (immediate) is direct import; B (no storage) wrong; C (export-only) wrong.
 
-**Q11. A — Long-term, capital-intensive.** Strategic. B (daily) operational; C (IT only) absurd; D (identical to ops) wrong by definition.
+**Q11. A, Long-term, capital-intensive.** Strategic. B (daily) operational; C (IT only) absurd; D (identical to ops) wrong by definition.
 
-**Q12. B — Hybrid.** 40% Q4. A (pure Lead) wastes; C (Pure Match fixed staff) self-contradict; D (Pure Lag) loses sales.
+**Q12. B, Hybrid.** 40% Q4. A (pure Lead) wastes; C (Pure Match fixed staff) self-contradict; D (Pure Lag) loses sales.
 
-**Q13. C — T × U × E.** Memorize. A (subtracts cushion) wrong; B (adds) wrong; D (service level) not in formula.
+**Q13. C, T × U × E.** Memorize. A (subtracts cushion) wrong; B (adds) wrong; D (service level) not in formula.
 
-**Q14. A — ~85–90%.** Queueing wall. B (25%) low; C (100% ideal) wrong; D (50%) below wall.
+**Q14. A, ~85–90%.** Queueing wall. B (25%) low; C (100% ideal) wrong; D (50%) below wall.
 
-**Q15. A — Σ|A−F|/N.** Absolute values. B (no abs) is bias; C (squared) MSE; D (ratio) MAPE-like.
+**Q15. A, Σ|A−F|/N.** Absolute values. B (no abs) is bias; C (squared) MSE; D (ratio) MAPE-like.
 
-**Q16. B — Negative bias.** ASCM convention: A<F → negative. A, C wrong direction; D (RMSE) magnitude.
+**Q16. B, Negative bias.** ASCM convention: A<F → negative. A, C wrong direction; D (RMSE) magnitude.
 
-**Q17. A — Direction.** Bias = direction. B (magnitude) MAD; C variance; D frequency.
+**Q17. A, Direction.** Bias = direction. B (magnitude) MAD; C variance; D frequency.
 
-**Q18. B — Direction.** Same as Q17, alt wording. A (magnitude); C (variance); D (frequency).
+**Q18. B, Direction.** Same as Q17, alt wording. A (magnitude); C (variance); D (frequency).
 
-**Q19. B — 4 to 6.** TS threshold. A (0.1) tight; C (1) normal; D (100) absurd.
+**Q19. B, 4 to 6.** TS threshold. A (0.1) tight; C (1) normal; D (100) absurd.
 
-**Q20. D — 20, 80.** Pareto. A (50/50) flat; B (5/5) too small; C (10/30) wrong split.
+**Q20. D, 20, 80.** Pareto. A (50/50) flat; B (5/5) too small; C (10/30) wrong split.
 
-**Q21. A — Identify.** TOC Step 1. B (hire), C (buy) are Elevate (Step 4); D (Subordinate) Step 3.
+**Q21. A, Identify.** TOC Step 1. B (hire), C (buy) are Elevate (Step 4); D (Subordinate) Step 3.
 
-**Q22. C — Aggregate forecasting.** Postponement. A (lead time) — postponement raises, not reduces lead time. B (expectations) unrelated. D (rates) unrelated.
+**Q22. C Aggregate forecasting.** Postponement. A (lead time) postponement raises, not reduces lead time. B (expectations) unrelated. D (rates) unrelated.
 
-**Q23. D — Cash collection.** OTC. A (delivery) mid; B (invoicing) just before cash; C (returns) post.
+**Q23. D, Cash collection.** OTC. A (delivery) mid; B (invoicing) just before cash; C (returns) post.
 
-**Q24. C — On-hand minus committed.** ATP. A (capacity), B (forecast), D (LT) wrong.
+**Q24. C, On-hand minus committed.** ATP. A (capacity), B (forecast), D (LT) wrong.
 
-**Q25. B — Planned receipts.** CTP. A (SS) wrong; C (cycle count) unrelated; D (demand) unrelated.
+**Q25. B, Planned receipts.** CTP. A (SS) wrong; C (cycle count) unrelated; D (demand) unrelated.
 
-**Q26. A — PO.** EDI 850. B (invoice) 810; C (ASN) 856; D (ack) 855.
+**Q26. A, PO.** EDI 850. B (invoice) 810; C (ASN) 856; D (ack) 855.
 
-**Q27. D — ASN.** EDI 856. A (810); B (850); C (820).
+**Q27. D, ASN.** EDI 856. A (810); B (850); C (820).
 
-**Q28. B — Invoice.** EDI 810. A (850); C (856); D (855).
+**Q28. B, Invoice.** EDI 810. A (850); C (856); D (855).
 
-**Q29. D — PO Acknowledgement.** EDI 855. A (810); B (850); C (856).
+**Q29. D, PO Acknowledgement.** EDI 855. A (810); B (850); C (856).
 
-**Q30. B — Batch.** High overlap. A (discrete) wastes; C (zone only) needs zones; D (paper) tech.
+**Q30. B, Batch.** High overlap. A (discrete) wastes; C (zone only) needs zones; D (paper) tech.
 
-**Q31. A — Cutoffs drive timing.** Wave. B (few orders) no payoff; C reckless; D doesn't need.
+**Q31. A, Cutoffs drive timing.** Wave. B (few orders) no payoff; C reckless; D doesn't need.
 
-**Q32. D — Multiplicative.** Perfect Order. A (sum), B (avg), C (max) overstate.
+**Q32. D, Multiplicative.** Perfect Order. A (sum), B (avg), C (max) overstate.
 
-**Q33. B — 81.5%.** 0.95⁴. A (100), C (86), D (95) miss compounding.
+**Q33. B, 81.5%.** 0.95⁴. A (100), C (86), D (95) miss compounding.
 
-**Q34. B — Retailer-imposed.** OTIF. A (self-reported), C (= perfect order), D (intl only) wrong.
+**Q34. B, Retailer-imposed.** OTIF. A (self-reported), C (= perfect order), D (intl only) wrong.
 
-**Q35. A — 28–53%.** Last-mile. B (10–15), C (1–5), D (80–95) wrong ranges.
+**Q35. A, 28–53%.** Last-mile. B (10–15), C (1–5), D (80–95) wrong ranges.
 
-**Q36. C — BOPIS = Buy Online Pick In Store.** A, B, D mis-expansions.
+**Q36. C, BOPIS = Buy Online Pick In Store.** A, B, D mis-expansions.
 
-**Q37. A — Closed-to-public online fulfillment.** Dark store. B (lights off), C (clandestine), D (returns only) wrong.
+**Q37. A, Closed-to-public online fulfillment.** Dark store. B (lights off), C (clandestine), D (returns only) wrong.
 
-**Q38. A — Large DC, many SKUs.** Zone scale. B, C, D too small.
+**Q38. A, Large DC, many SKUs.** Zone scale. B, C, D too small.
 
-**Q39. C — Plans distribution network.** DRP. A, B, D describe MRP.
+**Q39. C, Plans distribution network.** DRP. A, B, D describe MRP.
 
-**Q40. D — OH + OO − BO.** Inventory position. A (OH only), C (OH−SS), B (forecast) wrong.
+**Q40. D, OH + OO − BO.** Inventory position. A (OH only), C (OH−SS), B (forecast) wrong.
 
-**Q41. D — Z × σ × √L.** SS formula. A (Max−Min/2), B (d×L), C (EOQ×cycle) wrong.
+**Q41. D, Z × σ × √L.** SS formula. A (Max−Min/2), B (d×L), C (EOQ×cycle) wrong.
 
-**Q42. A — 2.33.** Z(99%). B (1.65)=95%; C (2.05)=98%; D (1.28)=90%.
+**Q42. A, 2.33.** Z(99%). B (1.65)=95%; C (2.05)=98%; D (1.28)=90%.
 
-**Q43. D — Upstream.** Bullwhip. A (downstream) opposite; B (constant) wrong; C (sideways) nonsense.
+**Q43. D, Upstream.** Bullwhip. A (downstream) opposite; B (constant) wrong; C (sideways) nonsense.
 
-**Q44. B — Form postponement.** Benetton. A (time), C (place), D (push) wrong types.
+**Q44. B, Form postponement.** Benetton. A (time), C (place), D (push) wrong types.
 
-**Q45. A — Shared POS/CPFR.** Information cure. B (larger batches) worsens; C (lock LT) ineffective; D (more SS) band-aid.
+**Q45. A, Shared POS/CPFR.** Information cure. B (larger batches) worsens; C (lock LT) ineffective; D (more SS) band-aid.
 
-**Q46. A — 10–30%.** MEIO. B (1–2%) understates; C (50%) unrealistic; D (negative) wrong.
+**Q46. A, 10–30%.** MEIO. B (1–2%) understates; C (50%) unrealistic; D (negative) wrong.
 
-**Q47. C — Monthly.** A-items. A (annually), B (quarterly), D (never) wrong frequency.
+**Q47. C, Monthly.** A-items. A (annually), B (quarterly), D (never) wrong frequency.
 
-**Q48. D — 95–99%.** IRA target. A, B too low; C (100%) impossible at scale.
+**Q48. D, 95–99%.** IRA target. A, B too low; C (100%) impossible at scale.
 
-**Q49. A — (d × L) + SS.** ROP. B, C partial; D (EOQ) is order quantity.
+**Q49. A, (d × L) + SS.** ROP. B, C partial; D (EOQ) is order quantity.
 
-**Q50. C — New launches.** Push. A (staples), B (long-tail), D (JIT) all pull.
+**Q50. C, New launches.** Push. A (staples), B (long-tail), D (JIT) all pull.
 
-**Q51. B — Review every T, order to target.** P-system. A (continuous) Q; C (1-for-1) base-stock; D (no max) wrong.
+**Q51. B, Review every T, order to target.** P-system. A (continuous) Q; C (1-for-1) base-stock; D (no max) wrong.
 
-**Q52. B — CPFR.** Acronym. A, C, D invented.
+**Q52. B, CPFR.** Acronym. A, C, D invented.
 
-**Q53. A — Backward by lead time.** Release = receipt − LT. B (forward) opposite; C (two weeks) generic; D (variability) wrong.
+**Q53. A, Backward by lead time.** Release = receipt − LT. B (forward) opposite; C (two weeks) generic; D (variability) wrong.
 
-**Q54. D — Both docks same side.** U-shape. A (stacked), B (opposite=I), C (no flow) wrong.
+**Q54. D, Both docks same side.** U-shape. A (stacked), B (opposite=I), C (no flow) wrong.
 
-**Q55. D — High-volume automated.** I-shape. A (low-volume) waste; B (bonded), C (cross-dock only) too narrow.
+**Q55. D, High-volume automated.** I-shape. A (low-volume) waste; B (bonded), C (cross-dock only) too narrow.
 
-**Q56. D — Receiving.** 7-step. A (picking), B (shipping), C (packing) are later.
+**Q56. D, Receiving.** 7-step. A (picking), B (shipping), C (packing) are later.
 
-**Q57. A — Pre-distribution.** Walmart. B (post), C (break-bulk), D (direct transfer) variants.
+**Q57. A, Pre-distribution.** Walmart. B (post), C (break-bulk), D (direct transfer) variants.
 
-**Q58. D — Available slot, WMS-tracked.** Random. A (unsupervised) misconception; B (fixed reassigned daily) odd; C (no tracking) reckless.
+**Q58. D, Available slot, WMS-tracked.** Random. A (unsupervised) misconception; B (fixed reassigned daily) odd; C (no tracking) reckless.
 
-**Q59. C — Few SKUs, deep, LIFO.** Drive-in. A (many SKUs FIFO) selective; B (e-com) shelving; D (cold FIFO) flow rack.
+**Q59. C, Few SKUs, deep, LIFO.** Drive-in. A (many SKUs FIFO) selective; B (e-com) shelving; D (cold FIFO) flow rack.
 
-**Q60. A — Crane-based in racking.** AS/RS. B (AGV), C (forklift), D (conveyor) different.
+**Q60. A, Crane-based in racking.** AS/RS. B (AGV), C (forklift), D (conveyor) different.
 
-**Q61. D — AGV fixed; AMR dynamic.** Key distinction. A (fuel) wrong; B (letters only) absurd; C (cheaper) varies.
+**Q61. D, AGV fixed; AMR dynamic.** Key distinction. A (fuel) wrong; B (letters only) absurd; C (cheaper) varies.
 
-**Q62. B — Waist-to-shoulder.** Golden zone. A (closest receiving) different metric; C (top shelf) bad ergonomics; D (mezzanine) wrong.
+**Q62. B, Waist-to-shoulder.** Golden zone. A (closest receiving) different metric; C (top shelf) bad ergonomics; D (mezzanine) wrong.
 
-**Q63. D — 65–85%.** Cube utilization. A (99%+), B (90%+) destroy productivity; C (<50%) wasteful.
+**Q63. D, 65–85%.** Cube utilization. A (99%+), B (90%+) destroy productivity; C (<50%) wasteful.
 
-**Q64. C — 99.5%+.** Pick accuracy benchmark. A, B, D below world-class.
+**Q64. C, 99.5%+.** Pick accuracy benchmark. A, B, D below world-class.
 
-**Q65. C — LMS.** Labor management. A (YMS), B (TMS), D (OMS) different.
+**Q65. C, LMS.** Labor management. A (YMS), B (TMS), D (OMS) different.
 
-**Q66. D — US Customs SC security.** C-TPAT. A (pallet), B (EDI), C (layout) wrong.
+**Q66. D, US Customs SC security.** C-TPAT. A (pallet), B (EDI), C (layout) wrong.
 
-**Q67. A — 0–8°C.** Refrigerated. B (frozen), C (controlled ambient), D (hot) wrong ranges.
+**Q67. A, 0–8°C.** Refrigerated. B (frozen), C (controlled ambient), D (hot) wrong ranges.
 
-**Q68. B — Supplier pre-labels.** Pre-distribution. A (allocate at dock) post; C (rework) wrong; D (gov approval) wrong.
+**Q68. B, Supplier pre-labels.** Pre-distribution. A (allocate at dock) post; C (rework) wrong; D (gov approval) wrong.
 
-**Q69. D — Vertical storage tower.** VLM. A (conveyor), B (forklift), C (robotic arm) different.
+**Q69. D, Vertical storage tower.** VLM. A (conveyor), B (forklift), C (robotic arm) different.
 
-**Q70. D — SKU churn + lumpy.** Auto bad fit. A, B, C are auto good fits.
+**Q70. D, SKU churn + lumpy.** Auto bad fit. A, B, C are auto good fits.
 
-**Q71. B — Time studies / MOST.** Engineered. A (random), C (manager opinion), D (self-reports) gameable.
+**Q71. B, Time studies / MOST.** Engineered. A (random), C (manager opinion), D (self-reports) gameable.
 
-**Q72. A — 29 CFR 1910.178.** OSHA. B (21 CFR Part 11) pharma; C (ISO 14001) env; D (HACCP) food.
+**Q72. A, 29 CFR 1910.178.** OSHA. B (21 CFR Part 11) pharma; C (ISO 14001) env; D (HACCP) food.
 
-**Q73. C — Pick-to-light fastest at bin, voice mid-fast lower CapEx.** Standard ranking. A, B, D wrong relative speeds/accuracy.
+**Q73. C, Pick-to-light fastest at bin, voice mid-fast lower CapEx.** Standard ranking. A, B, D wrong relative speeds/accuracy.
 
-**Q74. C — FTL.** 15 pallets, 28k lbs. A (LTL) too small; B (parcel) tiny; D (air) wrong mode.
+**Q74. C, FTL.** 15 pallets, 28k lbs. A (LTL) too small; B (parcel) tiny; D (air) wrong mode.
 
-**Q75. D — LTL.** 1,200 lbs. A (FTL) too small; B (air) overkill; C (parcel) too big.
+**Q75. D, LTL.** 1,200 lbs. A (FTL) too small; B (air) overkill; C (parcel) too big.
 
-**Q76. A — Twenty-foot Equivalent Unit.** TEU. B, C, D wrong.
+**Q76. A, Twenty-foot Equivalent Unit.** TEU. B, C, D wrong.
 
-**Q77. C — 2.** FEU=40'=2 TEU. A, B, D wrong.
+**Q77. C, 2.** FEU=40'=2 TEU. A, B, D wrong.
 
-**Q78. C — Bunker fuel adjustment.** BAF. A (currency) is CAF; B (customs) brokerage; D (cargo class) LTL.
+**Q78. C, Bunker fuel adjustment.** BAF. A (currency) is CAF; B (customs) brokerage; D (cargo class) LTL.
 
-**Q79. B — Container On Flat Car.** COFC. A, C, D invented.
+**Q79. B, Container On Flat Car.** COFC. A, C, D invented.
 
-**Q80. A — Short truck moves at rail/port.** Drayage. B, C, D wrong scope.
+**Q80. A, Short truck moves at rail/port.** Drayage. B, C, D wrong scope.
 
-**Q81. B — 1 kg : 6,000 cm³.** Air. A, C, D wrong.
+**Q81. B, 1 kg : 6,000 cm³.** Air. A, C, D wrong.
 
-**Q82. B — 80 kg.** 480,000/6,000=80. A (40 actual); C (60); D (100) wrong.
+**Q82. B, 80 kg.** 480,000/6,000=80. A (40 actual); C (60); D (100) wrong.
 
-**Q83. A — Liquids and gases.** Pipeline. B, C, D wrong cargo.
+**Q83. A, Liquids and gases.** Pipeline. B, C, D wrong cargo.
 
-**Q84. D — 3–4× more efficient (rail).** A (0.5×), B (1×), C (50×) wrong magnitudes.
+**Q84. D, 3–4× more efficient (rail).** A (0.5×), B (1×), C (50×) wrong magnitudes.
 
-**Q85. C — Intermodal=standardized equip; multimodal=one contract.** Key distinction. A (one mode), B (identical), D (ocean-rail only) wrong.
+**Q85. C, Intermodal=standardized equip; multimodal=one contract.** Key distinction. A (one mode), B (identical), D (ocean-rail only) wrong.
 
-**Q86. D — 11 hr.** FMCSA HOS. A (8), B (24), C (14) wrong (14 = duty window, not driving limit).
+**Q86. D, 11 hr.** FMCSA HOS. A (8), B (24), C (14) wrong (14 = duty window, not driving limit).
 
-**Q87. C — 28–53%.** Last-mile. A, B, D wrong ranges.
+**Q87. C, 28–53%.** Last-mile. A, B, D wrong ranges.
 
-**Q88. A — Inject deeper.** Zone skipping. B (insurance), C (customs), D (driver shortcut) wrong.
+**Q88. A, Inject deeper.** Zone skipping. B (insurance), C (customs), D (driver shortcut) wrong.
 
-**Q89. D — LTL pricing (50–500).** NMFC. A (air), B (pipeline), C (ocean) wrong.
+**Q89. D, LTL pricing (50–500).** NMFC. A (air), B (pipeline), C (ocean) wrong.
 
-**Q90. B — Air.** Norway→Tokyo next-day. A (ocean) too slow; C (rail+truck) impossible (geography); D (pipeline) wrong cargo.
+**Q90. B, Air.** Norway→Tokyo next-day. A (ocean) too slow; C (rail+truck) impossible (geography); D (pipeline) wrong cargo.
 
-**Q91. B — Two containers vertical on well car.** Doublestack. A (trailers), C (Europe only), D (rare) wrong.
+**Q91. B, Two containers vertical on well car.** Doublestack. A (trailers), C (Europe only), D (rare) wrong.
 
-**Q92. C — Pipeline.** Highest reliability. A (truck), B (ocean), D (air) all subject to disruption.
+**Q92. C, Pipeline.** Highest reliability. A (truck), B (ocean), D (air) all subject to disruption.
 
-**Q93. B — % loads carriers accept.** Tender acceptance. A (driver pay), C (CSAT), D (damage) different KPIs.
+**Q93. B, % loads carriers accept.** Tender acceptance. A (driver pay), C (CSAT), D (damage) different KPIs.
 
-**Q94. C — Marketing.** Not in TLC. A (product), B (freight), D (duties) all part of TLC.
+**Q94. C, Marketing.** Not in TLC. A (product), B (freight), D (duties) all part of TLC.
 
-**Q95. B — 11.** Incoterms count. A, C, D wrong.
+**Q95. B, 11.** Incoterms count. A, C, D wrong.
 
-**Q96. B — Bulk ocean / inland-waterway loaded on vessel.** FOB. A (containers) → FCA; C (air) wrong; D (multimodal) wrong.
+**Q96. B, Bulk ocean / inland-waterway loaded on vessel.** FOB. A (containers) → FCA; C (air) wrong; D (multimodal) wrong.
 
-**Q97. C — FCA.** Container + importer arranges. A (FOB) trap; B (CIF) seller arranges; D (EXW only) too broad.
+**Q97. C, FCA.** Container + importer arranges. A (FOB) trap; B (CIF) seller arranges; D (EXW only) too broad.
 
-**Q98. D — Seller's premises.** EXW. A, B, C wrong endpoints.
+**Q98. D, Seller's premises.** EXW. A, B, C wrong endpoints.
 
-**Q99. A — On board at origin.** CIF C-term. B (destination), C (warehouse), D (after customs) wrong.
+**Q99. A, On board at origin.** CIF C-term. B (destination), C (warehouse), D (after customs) wrong.
 
-**Q100. B — DDP.** Seller pays duty. A (CIF), C (DPU), D (CIP) all buyer-clears.
+**Q100. B, DDP.** Seller pays duty. A (CIF), C (DPU), D (CIP) all buyer-clears.
 
-**Q101. B — Delivered at Place Unloaded.** DPU. A, C, D invented.
+**Q101. B, Delivered at Place Unloaded.** DPU. A, C, D invented.
 
-**Q102. B — Clauses A (all-risk).** CIP 2020 change. A (no insurance), C (Clauses C) was CIF, D wrong.
+**Q102. B, Clauses A (all-risk).** CIP 2020 change. A (no insurance), C (Clauses C) was CIF, D wrong.
 
-**Q103. A — 6 digits global.** HS. B (4), C (8), D (10) wrong.
+**Q103. A, 6 digits global.** HS. B (4), C (8), D (10) wrong.
 
-**Q104. B — 10 digits.** US HTS. A (6) is HS global; C, D wrong.
+**Q104. B, 10 digits.** US HTS. A (6) is HS global; C, D wrong.
 
-**Q105. B — Legally responsible for customs.** IOR. A (forwarder), C (carrier), D (shipping line) wrong.
+**Q105. B, Legally responsible for customs.** IOR. A (forwarder), C (carrier), D (shipping line) wrong.
 
-**Q106. C — Files customs entries.** Customs broker. A (owns goods), B (operates ships), D (issues BOLs) wrong.
+**Q106. C, Files customs entries.** Customs broker. A (owns goods), B (operates ships), D (issues BOLs) wrong.
 
-**Q107. A — Books transport, no possession.** Forwarder. B (owns), C (= broker), D (domestic only) wrong.
+**Q107. A, Books transport, no possession.** Forwarder. B (owns), C (= broker), D (domestic only) wrong.
 
-**Q108. C — Non-Vessel Operating Common Carrier.** NVOCC. A (owns vessels), B (broker), D (freight class) wrong.
+**Q108. C, Non-Vessel Operating Common Carrier.** NVOCC. A (owns vessels), B (broker), D (freight class) wrong.
 
-**Q109. A — NAFTA in 2020.** USMCA. B, C, D unrelated agreements.
+**Q109. A, NAFTA in 2020.** USMCA. B, C, D unrelated agreements.
 
-**Q110. C — Originate per rules + cert of origin.** FTA. A (cheap), B (containers), D (LC) wrong.
+**Q110. C, Originate per rules + cert of origin.** FTA. A (cheap), B (containers), D (LC) wrong.
 
-**Q111. C — Duty deferral and inversion.** FTZ. A (tax holiday), B (free freight), D (free labor) wrong.
+**Q111. C, Duty deferral and inversion.** FTZ. A (tax holiday), B (free freight), D (free labor) wrong.
 
-**Q112. C — Punitive on goods sold below market value.** Anti-dumping. A (literal drop), B (subsidies offset = countervailing), D (currency) wrong.
+**Q112. C, Punitive on goods sold below market value.** Anti-dumping. A (literal drop), B (subsidies offset = countervailing), D (currency) wrong.
 
-**Q113. D — Documents matching LC terms.** LC. A (verbal), B (forwarder), C (carrier) wrong triggers.
+**Q113. D, Documents matching LC terms.** LC. A (verbal), B (forwarder), C (carrier) wrong triggers.
 
-**Q114. C — % of declared customs value.** Ad valorem. A (specific), B (compound), D (per kg) wrong types.
+**Q114. C, % of declared customs value.** Ad valorem. A (specific), B (compound), D (per kg) wrong types.
 
-**Q115. B — Expedited customs for trusted traders.** C-TPAT. A (rates), C (FTZ), D (refunds) wrong.
+**Q115. B, Expedited customs for trusted traders.** C-TPAT. A (rates), C (FTZ), D (refunds) wrong.
 
-**Q116. B — Import duty paid by seller.** DDP vs DAP. A (insurance), C (unloading) → DPU, D (carrier) wrong.
+**Q116. B, Import duty paid by seller.** DDP vs DAP. A (insurance), C (unloading) → DPU, D (carrier) wrong.
 
-**Q117. A — ATA Carnet (TIB).** Temporary import. B (open account) payment; C (LC) payment; D (bonded warehouse) storage.
+**Q117. A, ATA Carnet (TIB).** Temporary import. B (open account) payment; C (LC) payment; D (bonded warehouse) storage.
 
-**Q118. C — EXW, FCA, FAS, FOB…** Lowest→highest. A (DDP first) reversed; B (CIP) middle; D (CIF) middle.
+**Q118. C, EXW, FCA, FAS, FOB…** Lowest→highest. A (DDP first) reversed; B (CIP) middle; D (CIF) middle.
 
-**Q119. C — Delivery AND unloading.** DPU. A (premises) is EXW; B (on board) is FOB; D (duty) is DDP.
+**Q119. C, Delivery AND unloading.** DPU. A (premises) is EXW; B (on board) is FOB; D (duty) is DDP.
 
-**Q120. D — Backward flows for value recovery.** Reverse logistics. A, B, C wrong scope.
+**Q120. D, Backward flows for value recovery.** Reverse logistics. A, B, C wrong scope.
 
-**Q121. D — RMA.** First step. A (gatekeeping) is later; B (refurbish), C (recycle) later.
+**Q121. D, RMA.** First step. A (gatekeeping) is later; B (refurbish), C (recycle) later.
 
-**Q122. D — Disposition decision.** Gatekeeping. A (carrier), B (count), C (refund) wrong.
+**Q122. D, Disposition decision.** Gatekeeping. A (carrier), B (count), C (refund) wrong.
 
-**Q123. B — Full disassemble + restore, new warranty.** Remanufacture. A (shorter) is refurbish; C (identical) wrong; D wrong.
+**Q123. B, Full disassemble + restore, new warranty.** Remanufacture. A (shorter) is refurbish; C (identical) wrong; D wrong.
 
-**Q124. C — Closed-loop SC.** CAT Reman. A (recycling), B (linear), D (JIT) wrong.
+**Q124. C, Closed-loop SC.** CAT Reman. A (recycling), B (linear), D (JIT) wrong.
 
-**Q125. A — Refuse.** 7Rs start. B (recycle), C (reuse), D (recover) later.
+**Q125. A, Refuse.** 7Rs start. B (recycle), C (reuse), D (recover) later.
 
-**Q126. D — People, Planet, Profit.** TBL. A (cost service quality), B (Scopes), C (lean agile resilient) wrong.
+**Q126. D, People, Planet, Profit.** TBL. A (cost service quality), B (Scopes), C (lean agile resilient) wrong.
 
-**Q127. A — Direct fleet/facilities.** Scope 1. B (electricity)=Scope 2; C, D=Scope 3.
+**Q127. A, Direct fleet/facilities.** Scope 1. B (electricity)=Scope 2; C, D=Scope 3.
 
-**Q128. C — Purchased energy.** Scope 2. A=Scope 1; B, D=Scope 3.
+**Q128. C, Purchased energy.** Scope 2. A=Scope 1; B, D=Scope 3.
 
-**Q129. B — Scope 3.** Purchased transport. A=Scope 1; C=Scope 2; D wrong.
+**Q129. B, Scope 3.** Purchased transport. A=Scope 1; C=Scope 2; D wrong.
 
-**Q130. A — Global corporate emissions standard.** GHG Protocol. B (regulation), C (trade), D (ISO) wrong.
+**Q130. A, Global corporate emissions standard.** GHG Protocol. B (regulation), C (trade), D (ISO) wrong.
 
-**Q131. A — Logistics-specific GHG accounting.** GLEC. B, C, D wrong.
+**Q131. A, Logistics-specific GHG accounting.** GLEC. B, C, D wrong.
 
-**Q132. C — 50–100×.** Air vs ocean CO₂/ton-km. A, B, D wrong magnitudes.
+**Q132. C, 50–100×.** Air vs ocean CO₂/ton-km. A, B, D wrong magnitudes.
 
-**Q133. C — Environmental management system.** ISO 14001. A (quality)=9001; B (GHG)=14064; D (occ health)=45001.
+**Q133. C, Environmental management system.** ISO 14001. A (quality)=9001; B (GHG)=14064; D (occ health)=45001.
 
-**Q134. D — GHG quantification.** ISO 14064. A (quality), B (EMS), D (forests) wrong.
+**Q134. D, GHG quantification.** ISO 14064. A (quality), B (EMS), D (forests) wrong.
 
-**Q135. D — Multi-stakeholder ESG reporting.** GRI. A (company), B (trade), C (carrier ratings) wrong.
+**Q135. D, Multi-stakeholder ESG reporting.** GRI. A (company), B (trade), C (carrier ratings) wrong.
 
-**Q136. C — Mandatory EU sustainability reporting.** CSRD. A (voluntary), B (tariffs), D (containers) wrong.
+**Q136. C, Mandatory EU sustainability reporting.** CSRD. A (voluntary), B (tariffs), D (containers) wrong.
 
-**Q137. A — Electronic waste.** WEEE. B (welding), C (water), D (energy) wrong scope.
+**Q137. A, Electronic waste.** WEEE. B (welding), C (water), D (energy) wrong scope.
 
-**Q138. C — Loaded return trips.** Backhaul. A (empty return), B (drop-off), D (cross-dock) wrong.
+**Q138. C, Loaded return trips.** Backhaul. A (empty return), B (drop-off), D (cross-dock) wrong.
 
-**Q139. C — Mode shift.** Primary transport sustainability lever. A (more trucks), B (more DCs), D (insurance) wrong.
+**Q139. C, Mode shift.** Primary transport sustainability lever. A (more trucks), B (more DCs), D (insurance) wrong.
 
-**Q140. A — Firm-level.** Closed-loop. B (larger), C (mandatory), D (= circular) wrong.
+**Q140. A, Firm-level.** Closed-loop. B (larger), C (mandatory), D (= circular) wrong.
 
-**Q141. B — Last-resort after reductions.** Carbon offsets. A (primary), C (duty), D (insurance) wrong.
+**Q141. B, Last-resort after reductions.** Carbon offsets. A (primary), C (duty), D (insurance) wrong.
 
-**Q142. D — Remanufacturing.** Disassemble + rebuild. A (refurbish) lighter; B (recycle) destroys form; C (liquidation) different.
+**Q142. D, Remanufacturing.** Disassemble + rebuild. A (refurbish) lighter; B (recycle) destroys form; C (liquidation) different.
 
-**Q143. B — Diversion rate.** Waste KPI. A (cube), C (tender), D (perfect order) different KPIs.
+**Q143. B, Diversion rate.** Waste KPI. A (cube), C (tender), D (perfect order) different KPIs.
 
-**Q144. C — RMA.** Step 1. A (gatekeeping), B (carrier dispatch), D (refund) later.
+**Q144. C, RMA.** Step 1. A (gatekeeping), B (carrier dispatch), D (refund) later.
 
-**Q145. D — All five strategic decisions.** Synthesis. A, B, C are partial subsets.
+**Q145. D, All five strategic decisions.** Synthesis. A, B, C are partial subsets.
 
-**Q146. A — Square-root rule.** Inventory consolidation. B, C, D different rules.
+**Q146. A, Square-root rule.** Inventory consolidation. B, C, D different rules.
 
-**Q147. B — Total Landed Cost includes freight + duties + inventory carrying.** Mode-choice analysis. A, C, D miss components.
+**Q147. B, Total Landed Cost includes freight + duties + inventory carrying.** Mode-choice analysis. A, C, D miss components.
 
-**Q148. B — A 4PL orchestrates.** Distinct from 3PL (asset). A, C, D wrong distinctions.
+**Q148. B, A 4PL orchestrates.** Distinct from 3PL (asset). A, C, D wrong distinctions.
 
-**Q149. D — Add an Eastern DC.** Strategic structural fix. A, B, C tactical.
+**Q149. D, Add an Eastern DC.** Strategic structural fix. A, B, C tactical.
 
-**Q150. D — Transportation (~16%).** Highest CLTD domain weight. A (sustainability ~9%) lowest; B (capacity ~10%); C (orders ~10%) all lower.
+**Q150. D, Transportation (~16%).** Highest CLTD domain weight. A (sustainability ~9%) lowest; B (capacity ~10%); C (orders ~10%) all lower.

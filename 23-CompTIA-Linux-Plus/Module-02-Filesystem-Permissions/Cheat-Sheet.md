@@ -16,9 +16,9 @@
 | `/opt/<vendor>` | Third-party app trees |
 | `/srv` | Site-served data (web, NFS, FTP) |
 | `/tmp` | World-writable + sticky; cleared on reboot |
-| `/proc` | procfs — process & kernel info |
-| `/sys` | sysfs — devices & drivers |
-| `/run` | tmpfs — runtime data (PIDs, sockets) |
+| `/proc` | procfs, process & kernel info |
+| `/sys` | sysfs, devices & drivers |
+| `/run` | tmpfs, runtime data (PIDs, sockets) |
 | `/boot` | Kernel + initramfs + GRUB |
 | `/home` | User home dirs |
 | `/root` | Root home (NOT under /home) |
@@ -76,7 +76,7 @@ Formula: `0666 & ~umask` (files), `0777 & ~umask` (dirs).
 
 ---
 
-## 📋 ACLs — Beyond rwx
+## 📋 ACLs, Beyond rwx
 
 ```bash
 getfacl file                                # view
@@ -88,7 +88,7 @@ setfacl -d -m u:alice:rw dir                # DEFAULT (inherited)
 setfacl -m m::rwx file                      # reset mask
 ```
 
-🚨 **Watch the `mask::` line — caps named entries.** Plus sign `+` after mode in `ls -l` = ACL present.
+🚨 **Watch the `mask::` line, caps named entries.** Plus sign `+` after mode in `ls -l` = ACL present.
 
 ---
 
@@ -96,7 +96,7 @@ setfacl -m m::rwx file                      # reset mask
 
 | Flag | Means |
 |------|-------|
-| `i` | Immutable — not even root can edit |
+| `i` | Immutable, not even root can edit |
 | `a` | Append-only |
 | `s` | Secure delete (zeroing) |
 

@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Databases on AWS
 
-> **How to use:** Pick the videos for the databases your background is weakest in. Spend extra time on RDS vs Aurora vs DynamoDB — those are the most-tested.
+> **How to use:** Pick the videos for the databases your background is weakest in. Spend extra time on RDS vs Aurora vs DynamoDB, those are the most-tested.
 
 ## ⭐ Essential watching (~80 min)
 
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DynamoDB Deep Dive — Tables, Indexes, Capacity</p>
+      <p class="vg-title">DynamoDB Deep Dive, Tables, Indexes, Capacity</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 25 min · End-to-end</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>💨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">DAX — DynamoDB Accelerator</p>
+      <p class="vg-title">DAX, DynamoDB Accelerator</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 14 min · Microsecond reads</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>📜</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">QLDB — Immutable Ledger</p>
+      <p class="vg-title">QLDB, Immutable Ledger</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 12 min · Tamper-evident</span>
     </div>
@@ -142,10 +142,10 @@
 
 ## ✅ After watching
 
-1. Multi-AZ vs Read Replicas — purpose of each?
+1. Multi-AZ vs Read Replicas, purpose of each?
 2. Aurora's storage durability across how many AZs and copies?
-3. DAX vs ElastiCache — when each?
-4. Redis vs Memcached — name 3 differences.
+3. DAX vs ElastiCache, when each?
+4. Redis vs Memcached, name 3 differences.
 5. When do you pick Redshift over RDS?
 
 Ready? [Quiz](./Quiz.md).

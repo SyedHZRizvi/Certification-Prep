@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RAG from Scratch — full 14-part series</p>
+      <p class="vg-title">RAG from Scratch, full 14-part series</p>
       <p class="vg-creator">Lance Martin / LangChain</p>
       <span class="vg-duration">⏱ ~5h total · The canonical free RAG course</span>
     </div>
@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LlamaIndex — Advanced RAG Pipelines</p>
+      <p class="vg-title">LlamaIndex, Advanced RAG Pipelines</p>
       <p class="vg-creator">LlamaIndex / Jerry Liu</p>
       <span class="vg-duration">⏱ 1h 20m · Production patterns</span>
     </div>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">HyDE — Hypothetical Document Embeddings explained</p>
+      <p class="vg-title">HyDE, Hypothetical Document Embeddings explained</p>
       <p class="vg-creator">community / paper-author talk</p>
       <span class="vg-duration">⏱ 25m · Counterintuitive query rewriting</span>
     </div>
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Contextual Retrieval — Anthropic cookbook walkthrough</p>
+      <p class="vg-title">Contextual Retrieval, Anthropic cookbook walkthrough</p>
       <p class="vg-creator">Anthropic / DevRel</p>
       <span class="vg-duration">⏱ 30m · Most impactful 2024 RAG advance</span>
     </div>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">5 Levels of RAG — Greg Kamradt</p>
+      <p class="vg-title">5 Levels of RAG, Greg Kamradt</p>
       <p class="vg-creator">Greg Kamradt</p>
       <span class="vg-duration">⏱ 1h · Practical progression</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Graph RAG — Microsoft Research walkthrough</p>
+      <p class="vg-title">Graph RAG, Microsoft Research walkthrough</p>
       <p class="vg-creator">Microsoft / community</p>
       <span class="vg-duration">⏱ 45m · Subgraph retrieval</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">CRAG (Corrective RAG) — paper explained</p>
+      <p class="vg-title">CRAG (Corrective RAG), paper explained</p>
       <p class="vg-creator">paper-walkthrough channels</p>
       <span class="vg-duration">⏱ 25m · Fallback design</span>
     </div>
@@ -95,7 +95,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Adaptive RAG — complexity-routed retrieval</p>
+      <p class="vg-title">Adaptive RAG, complexity-routed retrieval</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 20m · Cost-saving on easy queries</span>
     </div>
@@ -109,7 +109,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Self-RAG — Asai et al. walkthrough</p>
+      <p class="vg-title">Self-RAG, Asai et al. walkthrough</p>
       <p class="vg-creator">paper review</p>
       <span class="vg-duration">⏱ 35m · Retrieval tokens learned</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">"Lost in the Middle" — Liu et al. explained</p>
+      <p class="vg-title">"Lost in the Middle", Liu et al. explained</p>
       <p class="vg-creator">paper review</p>
       <span class="vg-duration">⏱ 20m · Why long context isn't a panacea</span>
     </div>
@@ -127,7 +127,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">RAGatouille — ColBERT for production RAG</p>
+      <p class="vg-title">RAGatouille, ColBERT for production RAG</p>
       <p class="vg-creator">Benjamin Clavié</p>
       <span class="vg-duration">⏱ 40m · Late-interaction in practice</span>
     </div>
@@ -136,7 +136,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Perplexity AI — architecture deep dive</p>
+      <p class="vg-title">Perplexity AI, architecture deep dive</p>
       <p class="vg-creator">Perplexity engineering</p>
       <span class="vg-duration">⏱ 40m · A real production modular RAG</span>
     </div>
@@ -161,11 +161,11 @@
 
 Answer these (no notes):
 
-1. Naive vs Advanced vs Modular RAG — what defines each?
+1. Naive vs Advanced vs Modular RAG, what defines each?
 2. HyDE in 3 sentences. When does it shine?
-3. Multi-query vs query decomposition — pick one for "What companies have raised >$100M Series B in healthcare AI since 2023?" and justify.
+3. Multi-query vs query decomposition, pick one for "What companies have raised >$100M Series B in healthcare AI since 2023?" and justify.
 4. Why is reranking the "80% win for 5% latency"?
 5. Name 5 elements of a good RAG prompt.
-6. CRAG, Adaptive RAG, Graph RAG — when would you use each?
+6. CRAG, Adaptive RAG, Graph RAG, when would you use each?
 
 Crisp answers? On to the [Quiz](./Quiz.md).

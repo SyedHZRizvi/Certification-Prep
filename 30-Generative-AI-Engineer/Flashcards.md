@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -268,7 +268,7 @@
 
 # 🃏 Generative AI Engineer Flashcards (Master Set)
 
-> **How to use:** Each card has a Q on one line and A on the next. Drill 15 minutes/day for two weeks. The GenAI ecosystem is acronym-heavy — repetition wins.
+> **How to use:** Each card has a Q on one line and A on the next. Drill 15 minutes/day for two weeks. The GenAI ecosystem is acronym-heavy, repetition wins.
 
 ---
 
@@ -278,31 +278,31 @@
 **A:** Decoder-only transformer with causal self-attention.
 
 **Q:** What is the compute complexity of self-attention in sequence length?
-**A:** O(N²) — quadratic. This is why long-context is expensive.
+**A:** O(N²), quadratic. This is why long-context is expensive.
 
 **Q:** Write the attention formula.
 **A:** Attention(Q,K,V) = softmax(QKᵀ / √dk) · V.
 
 **Q:** What does the causal mask do?
-**A:** Zeros out the upper triangle so position i can't attend to j > i — required for decoder-only autoregressive generation.
+**A:** Zeros out the upper triangle so position i can't attend to j > i, required for decoder-only autoregressive generation.
 
 **Q:** What is GQA and what does it save?
-**A:** Grouped-Query Attention — Q has H heads, K/V has G groups. Saves KV-cache memory (G/H × MHA size) with minimal quality loss.
+**A:** Grouped-Query Attention, Q has H heads, K/V has G groups. Saves KV-cache memory (G/H × MHA size) with minimal quality loss.
 
 **Q:** What is MQA vs GQA vs MHA?
 **A:** MHA = Multi-Head (Q/K/V all H heads). MQA = Multi-Query (Q has H, K/V has 1). GQA = Grouped (Q has H, K/V has G groups). GQA is the modern sweet spot.
 
 **Q:** What is RoPE?
-**A:** Rotary Positional Embedding — rotate Q and K by an angle proportional to position; dot product becomes a function of relative position. The 2026 standard.
+**A:** Rotary Positional Embedding, rotate Q and K by an angle proportional to position; dot product becomes a function of relative position. The 2026 standard.
 
 **Q:** What is YaRN?
 **A:** A frequency-rescaling trick that extends RoPE-based context windows beyond the training length without retraining.
 
 **Q:** What is ALiBi?
-**A:** Attention with Linear Biases — adds a linear penalty to attention scores by distance; smoother long-context extrapolation.
+**A:** Attention with Linear Biases, adds a linear penalty to attention scores by distance; smoother long-context extrapolation.
 
 **Q:** What is the KV cache and why does it dominate inference cost?
-**A:** Stored K and V tensors of previous tokens during autoregressive generation. Scales with seqlen × layers × heads × dim — dominates GPU VRAM at long context (84GB for Llama-2-70B at 32K).
+**A:** Stored K and V tensors of previous tokens during autoregressive generation. Scales with seqlen × layers × heads × dim, dominates GPU VRAM at long context (84GB for Llama-2-70B at 32K).
 
 **Q:** What is FlashAttention?
 **A:** A fused CUDA kernel that computes attention without ever materializing the full N×N matrix. Same math, vastly better memory access. 2-4× speedup.
@@ -317,10 +317,10 @@
 **A:** N "expert" FFNs per layer with a learned router that picks top-K per token. Sparse activation = much smaller compute than total params. Mixtral 8×7B, DeepSeek-V3 are examples.
 
 **Q:** What is Mamba / SSMs?
-**A:** Selective State-Space Models — linear-time alternative to attention with a compressed recurrent state. Mamba, Mamba-2, Jamba. Promising for ultra-long contexts.
+**A:** Selective State-Space Models, linear-time alternative to attention with a compressed recurrent state. Mamba, Mamba-2, Jamba. Promising for ultra-long contexts.
 
 **Q:** What does BPE stand for?
-**A:** Byte-Pair Encoding — the dominant tokenization algorithm. Iteratively merges most-frequent adjacent pairs.
+**A:** Byte-Pair Encoding, the dominant tokenization algorithm. Iteratively merges most-frequent adjacent pairs.
 
 **Q:** What tokenizer does GPT-4 use?
 **A:** cl100k_base (BPE); GPT-4o uses o200k_base.
@@ -354,7 +354,7 @@
 **A:** Cosine similarity (or equivalently, dot product on L2-normalized vectors).
 
 **Q:** What is HNSW?
-**A:** Hierarchical Navigable Small World — multi-layer graph index for approximate nearest neighbor; the default in pgvector/Qdrant/Weaviate/Pinecone/Milvus.
+**A:** Hierarchical Navigable Small World, multi-layer graph index for approximate nearest neighbor; the default in pgvector/Qdrant/Weaviate/Pinecone/Milvus.
 
 **Q:** What is IVF-PQ?
 **A:** Inverted File + Product Quantization. Cluster vectors via k-means; compress with product quantization. Memory-efficient at billion-scale.
@@ -365,11 +365,11 @@
 **Q:** OpenAI's "text-embedding-3-large" embedding dimension?
 **A:** 3072 (configurable down to 256 via Matryoshka).
 
-**Q:** Cohere embed-v3 is asymmetric — what does that mean?
+**Q:** Cohere embed-v3 is asymmetric, what does that mean?
 **A:** Queries and documents are encoded differently; pass `input_type="search_query"` for queries, `"search_document"` for indexed chunks.
 
 **Q:** What is BM25?
-**A:** TF-IDF with length normalization — sparse keyword retrieval. Excellent for exact-term queries (part numbers, names).
+**A:** TF-IDF with length normalization, sparse keyword retrieval. Excellent for exact-term queries (part numbers, names).
 
 **Q:** What is hybrid retrieval?
 **A:** Combining dense (embedding) + sparse (BM25) retrieval, then fusing results via RRF or weighted score. Production default.
@@ -381,25 +381,25 @@
 **A:** Cross-encoder that re-scores (query, doc) pairs together. Closes ~80% of retrieval gap at ~5% latency cost (Cohere Rerank, Voyage rerank, bge-reranker, ColBERT).
 
 **Q:** What is ColBERT?
-**A:** Late-interaction retriever — encodes query as N token vectors and doc as M; similarity is MaxSim over token pairs. More expressive than bi-encoder.
+**A:** Late-interaction retriever, encodes query as N token vectors and doc as M; similarity is MaxSim over token pairs. More expressive than bi-encoder.
 
 **Q:** What is SPLADE?
-**A:** Learned-sparse retriever — high-dim vocab-keyed vectors, mostly zero. Pairs nicely with dense via hybrid.
+**A:** Learned-sparse retriever, high-dim vocab-keyed vectors, mostly zero. Pairs nicely with dense via hybrid.
 
-**Q:** Contextual retrieval (Anthropic Sep 2024) — what does it do?
+**Q:** Contextual retrieval (Anthropic Sep 2024), what does it do?
 **A:** Prepends an LLM-generated 50-100 token contextualization to each chunk before embedding/indexing. ~35% retrieval-failure reduction; ~67% with hybrid + rerank.
 
 **Q:** What is late chunking (Jina 2024)?
 **A:** Embed the whole long doc once; pool per-chunk embeddings from the contextualized token vectors. 10-20% retrieval improvement on long docs.
 
-**Q:** Pinecone vs Qdrant vs Weaviate vs pgvector — quick comparison?
+**Q:** Pinecone vs Qdrant vs Weaviate vs pgvector, quick comparison?
 **A:** Pinecone = managed, fastest TTM. Qdrant = Rust, strong filters. Weaviate = GraphQL + modules. pgvector = "use what you have" when Postgres is already deployed.
 
 **Q:** When should you choose pgvector?
 **A:** Already running Postgres, < ~10M vectors, want SQL metadata filters and one less moving part.
 
-**Q:** Multi-tenant retrieval — pre-filter or post-filter?
-**A:** Pre-filter — the ANN index must not consider out-of-tenant vectors.
+**Q:** Multi-tenant retrieval, pre-filter or post-filter?
+**A:** Pre-filter, the ANN index must not consider out-of-tenant vectors.
 
 **Q:** Approximate float32 cost: 1B vectors × 1024 dim?
 **A:** 1B × 1024 × 4 = ~4 TB. PQ-quantized: ~100 GB.
@@ -408,11 +408,11 @@
 
 ## 🔍 SECTION 3: RAG ARCHITECTURE
 
-**Q:** Naive vs Advanced vs Modular RAG — define each.
+**Q:** Naive vs Advanced vs Modular RAG, define each.
 **A:** Naive = one-shot retrieve + generate. Advanced = pre/post-retrieval intelligence (rewriting, hybrid, rerank, citation). Modular = router + multiple retrievers + tools + loops.
 
 **Q:** What is HyDE?
-**A:** Hypothetical Document Embeddings — LLM writes a hypothetical answer first; embed that to retrieve. Strong on technical corpora.
+**A:** Hypothetical Document Embeddings, LLM writes a hypothetical answer first; embed that to retrieve. Strong on technical corpora.
 
 **Q:** What is multi-query retrieval?
 **A:** Generate K paraphrases of the query with an LLM; retrieve for each; union results.
@@ -424,7 +424,7 @@
 **A:** Generate a higher-level abstract version of the query; retrieve for both original and abstract.
 
 **Q:** What is CRAG?
-**A:** Corrective RAG — relevance classifier on retrieved chunks; if all weak, fall back to web search.
+**A:** Corrective RAG, relevance classifier on retrieved chunks; if all weak, fall back to web search.
 
 **Q:** What is Adaptive RAG?
 **A:** Complexity classifier routes among "no retrieval", "single-shot", or "iterative" retrieval. Saves cost on easy queries.
@@ -436,7 +436,7 @@
 **A:** Build an LLM-extracted knowledge graph from your corpus; retrieve subgraphs for aggregative queries that vector retrieval can't answer.
 
 **Q:** What is FLARE?
-**A:** Forward-Looking Active Retrieval — generate one sentence at a time, retrieve mid-stream when confidence drops.
+**A:** Forward-Looking Active Retrieval, generate one sentence at a time, retrieve mid-stream when confidence drops.
 
 **Q:** What is citation packing?
 **A:** Annotate retrieved chunks with IDs; instruct the LLM to cite by ID; resolve IDs to URLs in post-processing. The Perplexity/Claude/ChatGPT-search pattern.
@@ -452,7 +452,7 @@
 ## 🦜 SECTION 4: LANGCHAIN, LLAMAINDEX & LANGGRAPH
 
 **Q:** What is LCEL?
-**A:** LangChain Expression Language — Unix-pipe-style composition of Runnables: `prompt | model | parser`.
+**A:** LangChain Expression Language, Unix-pipe-style composition of Runnables: `prompt | model | parser`.
 
 **Q:** Sync vs async LangChain methods?
 **A:** `.invoke()`, `.batch()`, `.stream()`; async = `.ainvoke()`, `.abatch()`, `.astream()`.
@@ -478,11 +478,11 @@
 **Q:** What is `SubQuestionQueryEngine` in LlamaIndex?
 **A:** Decomposes the query into sub-questions; routes each to a query engine; synthesizes.
 
-**Q:** Tool calling — 5 universal steps?
+**Q:** Tool calling, 5 universal steps?
 **A:** (1) define tool (2) bind to model (3) model emits tool_call (4) execute (5) append ToolMessage and continue.
 
 **Q:** What is MCP and who created it?
-**A:** Model Context Protocol — Anthropic, Nov 2024. Standardized server protocol for exposing tools, resources, prompts to LLM clients. Cross-framework.
+**A:** Model Context Protocol, Anthropic, Nov 2024. Standardized server protocol for exposing tools, resources, prompts to LLM clients. Cross-framework.
 
 **Q:** Which legacy LangChain chains should new code avoid?
 **A:** `RetrievalQA`, `LLMChain`, `ConversationChain`. Use LCEL composition instead.
@@ -513,10 +513,10 @@
 **A:** ~14 GB total vs ~74 GB. QLoRA enables consumer-GPU fine-tuning.
 
 **Q:** What is DPO?
-**A:** Direct Preference Optimization — train on (chosen, rejected) pairs without a reward model. Cheaper than PPO + RLHF; widely deployed.
+**A:** Direct Preference Optimization, train on (chosen, rejected) pairs without a reward model. Cheaper than PPO + RLHF; widely deployed.
 
 **Q:** What is KTO?
-**A:** Kahneman-Tversky Optimization — like DPO but uses thumbs-up/down labels instead of pairs.
+**A:** Kahneman-Tversky Optimization, like DPO but uses thumbs-up/down labels instead of pairs.
 
 **Q:** What is ORPO?
 **A:** Combines SFT + preference loss in a single pass (no separate SFT + DPO stages).
@@ -527,7 +527,7 @@
 **Q:** LIMA's insight?
 **A:** 1,000 carefully-curated examples can produce strong instruction-following models. Quality > quantity past a floor.
 
-**Q:** Catastrophic forgetting — what is it?
+**Q:** Catastrophic forgetting, what is it?
 **A:** Fine-tuned model loses general capability while gaining narrow target. Mitigations: smaller LR, fewer epochs, mix-in general data.
 
 **Q:** A 70B model full-FT VRAM?
@@ -537,7 +537,7 @@
 **A:** Base + RAG + light FT matches or exceeds at 1-2 orders of magnitude less cost.
 
 **Q:** Two ways to serve a fine-tuned LoRA?
-**A:** (1) Merge into base (W' = W + B·A) — zero overhead. (2) Runtime adapter swap (vLLM / TGI) — multi-tenant per-customer LoRAs.
+**A:** (1) Merge into base (W' = W + B·A) zero overhead. (2) Runtime adapter swap (vLLM / TGI) multi-tenant per-customer LoRAs.
 
 ---
 
@@ -556,7 +556,7 @@
 **A:** Conversable agents with native sandboxed code execution (Docker, Jupyter).
 
 **Q:** What is Anthropic Computer Use (Oct 2024)?
-**A:** Claude controls a virtual desktop via screenshots + mouse + keyboard. Sensorimotor agents — new shape.
+**A:** Claude controls a virtual desktop via screenshots + mouse + keyboard. Sensorimotor agents, new shape.
 
 **Q:** MUST every production agent system have?
 **A:** max_iterations + budget cap + wall-clock cap + HITL on destructive actions + per-agent observability.
@@ -565,7 +565,7 @@
 **A:** Planner + Coder + Reviewer = ~64% vs single-agent ~49% on SWE-bench Verified, at 3-4× cost.
 
 **Q:** What does the "researcher agent" anti-pattern look like?
-**A:** An "agent" that just wraps a search-API call. That's a function, not an agent — no LLM-driven decision-making.
+**A:** An "agent" that just wraps a search-API call. That's a function, not an agent, no LLM-driven decision-making.
 
 **Q:** Reflection pattern?
 **A:** Same model called as "critic" on its own output, then "reviser" to incorporate critique. Often labeled multi-agent.
@@ -592,7 +592,7 @@
 **Q:** Standard fix for position bias in pairwise judgment?
 **A:** Run both orderings (A vs B AND B vs A); count only agreements.
 
-**Q:** G-Eval — how does it improve LLM-as-judge?
+**Q:** G-Eval, how does it improve LLM-as-judge?
 **A:** Structured rubric + chain-of-thought + logprob-weighted scoring.
 
 **Q:** Minimum useful golden dataset size?
@@ -618,7 +618,7 @@
 **A:** Direct = user types attack. Indirect = third-party content (page/PDF/tool output) embeds instructions.
 
 **Q:** Why is "perfect" prompt-injection defense impossible?
-**A:** LLMs can't reliably distinguish "data" from "instructions" — everything is text. Architecture-level constraint.
+**A:** LLMs can't reliably distinguish "data" from "instructions", everything is text. Architecture-level constraint.
 
 **Q:** Defenses that help against prompt injection?
 **A:** Strong delimiters, privilege separation, allowlist actions, output classifier, constitutional principles, HITL gates, PromptGuard/Llama Guard.
@@ -630,7 +630,7 @@
 **A:** Redaction = `<PII>` (lose signal). Pseudonymization = consistent token per entity (e.g., EMAIL_42), preserves co-reference at higher re-id risk.
 
 **Q:** NeMo Guardrails uses what DSL?
-**A:** Colang — NVIDIA's natural-language flow DSL.
+**A:** Colang, NVIDIA's natural-language flow DSL.
 
 **Q:** Guardrails AI `on_fail` actions?
 **A:** `exception`, `fix`, `filter`, `refrain`, `reask`.
@@ -642,7 +642,7 @@
 **A:** Anthropic training method (Bai 2022). Model critiques + revises its own outputs against a written constitution of principles.
 
 **Q:** Many-shot jailbreak (Anthropic 2024)?
-**A:** Long-context attack — fill context with unsafe Q&A examples; model follows pattern. Long context = new attack surface.
+**A:** Long-context attack, fill context with unsafe Q&A examples; model follows pattern. Long context = new attack surface.
 
 **Q:** What is structured output (strict JSON schema) as a guardrail?
 **A:** Constrain generation to a typed schema. Model can't say arbitrary harmful text. OpenAI strict mode, Outlines, Guidance.
@@ -701,7 +701,7 @@
 ## 🏢 SECTION 10: PRODUCTION CASE STUDIES
 
 **Q:** GitHub Copilot's primary eval metric historically?
-**A:** Acceptance rate — fraction of suggestions developers keep.
+**A:** Acceptance rate, fraction of suggestions developers keep.
 
 **Q:** Cursor's engineering moat?
 **A:** Latency engineering: same models as competitors but faster perceived speed via TTFT obsession.
@@ -713,7 +713,7 @@
 **A:** Handled 700 FTEs' workload; $40M projected operating profit improvement; CSAT held flat.
 
 **Q:** Khanmigo's unusual safety twist?
-**A:** Designed to PREVENT direct answers (Socratic tutoring) — safety means less help; plus minor-protection layers.
+**A:** Designed to PREVENT direct answers (Socratic tutoring), safety means less help; plus minor-protection layers.
 
 **Q:** Stripe Radar's LLM use?
 **A:** Augments gradient-boosted-tree classifier with explanations + adjudication + edge cases. HITL for high-value.
@@ -735,10 +735,10 @@
 ## 🎓 STUDY TIPS
 
 1. Drill 15 min/day for two weeks before any GenAI interview.
-2. Combine with the lab work — drill terminology AFTER building, not before.
+2. Combine with the lab work, drill terminology AFTER building, not before.
 3. Filter by Section in the dropdown to focus on weak areas.
-4. The "Got it / Try again" buttons persist across sessions — your local browser remembers.
-5. Don't memorize numbers — memorize *shapes* of trade-offs.
+4. The "Got it / Try again" buttons persist across sessions, your local browser remembers.
+5. Don't memorize numbers, memorize *shapes* of trade-offs.
 
 ---
 

@@ -26,7 +26,7 @@ Account
 | Exact | `[keyword]` | Tight intent, B2B niche |
 | Phrase | `"keyword"` | Default safe middle |
 | Broad | `keyword` | Smart Bidding + 30+ conv/mo + audience signal |
-| BMM | `+kw +kw` | ❌ RETIRED 2021 — trap answer |
+| BMM | `+kw +kw` | ❌ RETIRED 2021, trap answer |
 
 ---
 
@@ -41,7 +41,7 @@ Account
 | **tROAS** | Ecom + values + 50+ conv/mo |
 | Target Imp Share | Brand defense |
 
-🚨 **MEMORIZE the 30-conversion rule** — below this threshold, tCPA starves.
+🚨 **MEMORIZE the 30-conversion rule**, below this threshold, tCPA starves.
 
 ---
 
@@ -91,9 +91,9 @@ how to         diy            cheap (if premium)
 ## 📅 Weekly Negative Routine (15 min, every Monday)
 
 1. Search Terms report → sort by Cost desc
-2. Top 20 queries — was each relevant?
+2. Top 20 queries, was each relevant?
 3. Irrelevant → add to shared negative list
-4. Relevant but poor — consider new ad group
+4. Relevant but poor, consider new ad group
 
 ---
 

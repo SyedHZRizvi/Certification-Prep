@@ -16,7 +16,7 @@ D. None
 
 ### Q2. Defense-in-depth in GenAI means: *(Understand)*
 A. One strong guardrail
-B. Layered defenses — input filter → prompt → retrieval filter → generation → output filter → action gate → audit
+B. Layered defenses, input filter → prompt → retrieval filter → generation → output filter → action gate → audit
 C. RAG only
 D. Embeddings
 
@@ -136,7 +136,7 @@ D. None
 
 ### Q17. Pre-generation moderation (input filtering) and post-generation moderation (output filtering) are: *(Understand)*
 A. Identical
-B. Both needed — different attack surfaces; output filter catches the model going off-rail even on safe input
+B. Both needed, different attack surfaces; output filter catches the model going off-rail even on safe input
 C. Redundant
 D. Optional
 
@@ -250,7 +250,7 @@ sexual / hate / harassment / self-harm / violence buckets.
 Anthropic 2024 demonstrated that filling context with unsafe Q&A patterns can override safety training.
 
 ### Q12: **B. No filters + learning bot**
-Tay was a perfect storm — no input filter, no output filter, weight updates from user content.
+Tay was a perfect storm, no input filter, no output filter, weight updates from user content.
 
 ### Q13: **B. Preserves signal at higher re-id risk**
 Pseudonymization keeps entity co-reference (the same person is always EMAIL_42); redaction destroys it.
@@ -319,4 +319,4 @@ HIPAA + medical accuracy + factuality + HITL + audit + OWASP. Anything less is m
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9 — Deployment, Observability & Cost](../Module-09-Deployment-Observability/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9, Deployment, Observability & Cost](../Module-09-Deployment-Observability/Reading.md)

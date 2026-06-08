@@ -1,10 +1,10 @@
 # Module 6: Inventory Management 📦
 
-> **Why this module matters:** Inventory is where CPIM gets *math-heavy*. EOQ, EPQ, safety stock, ROP, ABC, cycle counting — about 20% of exam questions live here, and almost half of them involve a calculation. Bank these points by being fluent with the formulas.
+> **Why this module matters:** Inventory is where CPIM gets *math-heavy*. EOQ, EPQ, safety stock, ROP, ABC, cycle counting, about 20% of exam questions live here, and almost half of them involve a calculation. Bank these points by being fluent with the formulas.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md) — σ (standard deviation), MAD, MAPE; safety stock depends directly on demand variability
-> - [Module 4: MPS / MRP](../Module-04-Master-Production-Scheduling-MRP/Reading.md) — lot-sizing rules consume the same EOQ/POQ/FOQ vocabulary
+> - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md), σ (standard deviation), MAD, MAPE; safety stock depends directly on demand variability
+> - [Module 4: MPS / MRP](../Module-04-Master-Production-Scheduling-MRP/Reading.md), lot-sizing rules consume the same EOQ/POQ/FOQ vocabulary
 > - High-school algebra: square roots (for EOQ), the normal distribution (for safety stock)
 >
 > This is the most arithmetic-heavy module. Expect to work each EOQ, EPQ, ROP, and safety-stock example by hand. If the math is rusty, build a 1-page cheat sheet of formulas before starting.
@@ -31,7 +31,7 @@ Aki cycled-counted A items every month, B items every quarter, C items annually.
 
 ## 🎯 Why Hold Inventory at All? (Functions)
 
-ASCM teaches the **six functions of inventory** — know them.
+ASCM teaches the **six functions of inventory**, know them.
 
 | Function | Purpose | Example |
 |----------|---------|---------|
@@ -55,11 +55,11 @@ ASCM teaches the **six functions of inventory** — know them.
 | **Stockout cost** | Cost of running out (lost sale, expedite, customer dissatisfaction) | Express shipping fees, lost customer |
 | **Item cost** | What you pay per unit | Supplier invoice |
 
-Carrying cost is typically expressed as a *percentage* of the item value — common range **20–35% per year**. (Capital ~10%, storage ~5%, obsolescence/insurance/taxes ~5–20%.)
+Carrying cost is typically expressed as a *percentage* of the item value, common range **20–35% per year**. (Capital ~10%, storage ~5%, obsolescence/insurance/taxes ~5–20%.)
 
 ---
 
-## 📐 Economic Order Quantity (EOQ) — THE Formula
+## 📐 Economic Order Quantity (EOQ), THE Formula
 
 > **Citation.** The EOQ model originated with **Ford W. Harris**, "How Many Parts to Make at Once," *Factory: The Magazine of Management* 10(2), 1913, pp. 135–136, 152 (the original article was lost for decades; rediscovered by Erlenkotter, 1990 in *Operations Research* 38(6)). The formula was re-derived and popularized by **R.H. Wilson** in 1934, which is why some texts call it the "Harris-Wilson EOQ" or just "Wilson EOQ." Reaffirmed in the ASCM Dictionary (16th ed., 2022) and treated as canonical in Vollmann/Berry/Whybark/Jacobs (Ch. 9) and every operations textbook.
 
@@ -83,11 +83,11 @@ D = 10,000 units/year, S = $50/order, H = $2/unit/year.
 
 `EOQ = √(2 × 10,000 × 50 / 2) = √(1,000,000 / 2) = √500,000 ≈ 707 units`
 
-Wait — let me re-check: `2 × 10,000 × 50 = 1,000,000`. Divide by H=2: `500,000`. √500,000 ≈ 707.
+Wait, let me re-check: `2 × 10,000 × 50 = 1,000,000`. Divide by H=2: `500,000`. √500,000 ≈ 707.
 
 So order **707 units** each time. Number of orders per year = 10,000 / 707 ≈ **14.1 orders/year**.
 
-### EOQ Assumptions (the textbook ones — and why they're often violated)
+### EOQ Assumptions (the textbook ones, and why they're often violated)
 
 | Assumption | Real-world reality |
 |------------|---------------------|
@@ -111,7 +111,7 @@ EPQ = √(2 × D × S / H) × √(p / (p − d))
 
 Or equivalently: `EPQ = EOQ × √(p/(p-d))`.
 
-EPQ is always *larger* than EOQ for the same D, S, H — because while you're producing, demand is also drawing inventory.
+EPQ is always *larger* than EOQ for the same D, S, H, because while you're producing, demand is also drawing inventory.
 
 ---
 
@@ -154,7 +154,7 @@ Common z values to MEMORIZE:
 | 99% | 2.33 |
 | 99.86% | 3.0 |
 
-### Worked example — Safety Stock
+### Worked example, Safety Stock
 
 Demand has σ = 30 units/day. Lead time = 9 days. We assume demand variability over LT follows: `σ_LT = σ × √LT` (if demand is independent across days).
 
@@ -192,7 +192,7 @@ A second axis for inventory work:
 | **Y** | Some variability |
 | **Z** | Highly erratic / sporadic |
 
-Combine ABC × XYZ to get a 9-cell matrix — informs how to plan and stock each cell differently.
+Combine ABC × XYZ to get a 9-cell matrix, informs how to plan and stock each cell differently.
 
 ---
 
@@ -208,7 +208,7 @@ Instead of an annual full physical inventory (plant shuts down for 3 days), **cy
 - Count when an item hits zero on hand (cheap moment to verify)
 - Count after a discrepancy is suspected
 
-**Inventory Record Accuracy (IRA)** — the % of items whose computer record matches the physical count within a tolerance. ASCM target: **≥95% for A items.**
+**Inventory Record Accuracy (IRA)**, the % of items whose computer record matches the physical count within a tolerance. ASCM target: **≥95% for A items.**
 
 ```
 IRA = (Items counted correctly within tolerance / Total items counted) × 100%
@@ -232,7 +232,7 @@ COGS = $20M/year, average inventory = $4M.
 Turnover = 20 / 4 = **5 turns per year**.
 Days of supply = 365 / 5 = **73 days**.
 
-Higher turnover = better (less capital tied up) — within reason; too high = stockouts and expediting.
+Higher turnover = better (less capital tied up), within reason; too high = stockouts and expediting.
 
 ---
 
@@ -240,7 +240,7 @@ Higher turnover = better (less capital tied up) — within reason; too high = st
 
 ### Quantity Discount
 
-When suppliers offer price breaks at higher order quantities, the EOQ may not be optimal — you must compare total cost at each price break.
+When suppliers offer price breaks at higher order quantities, the EOQ may not be optimal, you must compare total cost at each price break.
 
 ### Vendor-Managed Inventory (VMI)
 
@@ -252,10 +252,10 @@ Goods physically at customer site but *owned by supplier* until consumed. Custom
 
 ### Inventory Valuation Methods (Briefly)
 
-- **FIFO** — first-in, first-out (older stock issued first)
-- **LIFO** — last-in, first-out (newer stock issued first)
-- **Weighted Average** — average cost
-- **Standard Cost** — predetermined cost; variances flagged
+- **FIFO**, first-in, first-out (older stock issued first)
+- **LIFO**, last-in, first-out (newer stock issued first)
+- **Weighted Average**, average cost
+- **Standard Cost**, predetermined cost; variances flagged
 
 For perishables, always FIFO. For tax purposes in inflationary periods, LIFO may reduce tax (in jurisdictions that allow it).
 
@@ -267,21 +267,21 @@ For perishables, always FIFO. For tax purposes in inflationary periods, LIFO may
 |---------------|---------|
 | "EOQ is always the right order quantity" | EOQ is a starting point; round to truckload, case-pack, supplier minimums |
 | "Higher safety stock is always better" | More SS = more carrying cost; trade-off against service level |
-| "Cycle counting requires plant shutdown" | No — that's annual physical. Cycle counting is continuous |
-| "ABC analysis applies only to retailers" | False — it works for any inventory: SKUs, components, MRO supplies |
+| "Cycle counting requires plant shutdown" | No, that's annual physical. Cycle counting is continuous |
+| "ABC analysis applies only to retailers" | False, it works for any inventory: SKUs, components, MRO supplies |
 | "Inventory turnover is the only inventory KPI that matters" | Turnover + IRA + service level + carrying cost together tell the story |
-| "JIT eliminates safety stock" | JIT *reduces* safety stock through reliability — doesn't eliminate it entirely |
+| "JIT eliminates safety stock" | JIT *reduces* safety stock through reliability, doesn't eliminate it entirely |
 
 ---
 
 ## 🎯 Exam Traps Specific to Module 6
 
-1. **EOQ assumptions** — constant demand, constant LT, no discounts. If question says "supplier offers quantity discount," EOQ alone isn't the answer.
+1. **EOQ assumptions**, constant demand, constant LT, no discounts. If question says "supplier offers quantity discount," EOQ alone isn't the answer.
 2. **ROP = d × LT + SS.** Many candidates forget to add SS.
 3. **σ_LT vs σ_daily.** Safety stock uses σ over the *lead time*, computed as σ_daily × √LT under independence.
-4. **Cycle counting tolerance** — 0% (must be exact) for A items; widens for B and C.
-5. **Turnover vs days of supply** — they are reciprocals (365 / turnover = days of supply).
-6. **VMI vs consignment** — VMI = supplier manages your inventory (you usually own it). Consignment = supplier owns inventory at your site until consumption.
+4. **Cycle counting tolerance**, 0% (must be exact) for A items; widens for B and C.
+5. **Turnover vs days of supply**, they are reciprocals (365 / turnover = days of supply).
+6. **VMI vs consignment**, VMI = supplier manages your inventory (you usually own it). Consignment = supplier owns inventory at your site until consumption.
 
 ---
 
@@ -310,21 +310,21 @@ For perishables, always FIFO. For tax purposes in inflationary periods, LIFO may
 
 ---
 
-## 📊 Case Study — Allbirds Inventory Write-Down (2022–2023)
+## 📊 Case Study, Allbirds Inventory Write-Down (2022–2023)
 
 **Situation.** Allbirds is a San Francisco direct-to-consumer (DTC) footwear brand founded 2014 around the merino-wool "Wool Runner" sneaker. IPO'd November 2021 at a $4.1B valuation on the strength of DTC growth (~$219M FY 2020 revenue, up from $0 five years earlier) and a sustainability-positioning narrative (carbon-neutral, materials-innovation). The company's inventory model was forecast-driven MTS with quarterly buys from contract footwear factories in Vietnam and South Korea on lead times of 90–180 days. As DTC growth slowed and competitive pressure from Hoka, On Running, and the New Balance "990v6" revival intensified through 2022, Allbirds maintained its forecast-buy pattern and accumulated inventory at a rate that outpaced sell-through.
 
-**Decision.** Through 2022 leadership held onto the original SKU breadth (Wool Runners, Tree Runners, the Dasher running shoe, Mizzles for wet weather, Wool Loungers, plus seasonal colorways) and continued to launch new SKUs (the *Wool Runner Mizzle*, the *Trail Runner SWT*) without aggressively retiring underperformers. Safety-stock sizing assumed the 2020–2021 demand variability, not the post-2022 demand-pattern shift. The ABC discipline (focusing planning effort on top-revenue SKUs) was applied weakly — long-tail SKUs accumulated inventory disproportionately.
+**Decision.** Through 2022 leadership held onto the original SKU breadth (Wool Runners, Tree Runners, the Dasher running shoe, Mizzles for wet weather, Wool Loungers, plus seasonal colorways) and continued to launch new SKUs (the *Wool Runner Mizzle*, the *Trail Runner SWT*) without aggressively retiring underperformers. Safety-stock sizing assumed the 2020–2021 demand variability, not the post-2022 demand-pattern shift. The ABC discipline (focusing planning effort on top-revenue SKUs) was applied weakly, long-tail SKUs accumulated inventory disproportionately.
 
-**Outcome.** Q3 2022 Allbirds wrote down **$13M** of inventory; Q4 2022 added another. By Q2 2023 the company had taken total inventory write-downs of **$30M+** and announced a Strategic Transformation Plan (Aug 2023): SKU rationalization (cut from ~50+ to ~30 active), reduction of the DTC fleet footprint, and a return to a tighter MTS planning discipline with shorter buy cycles. Stock price fell from a peak of $32 (Nov 2021) to below $1.40 (mid-2023) — a 95% decline. By late 2024 inventory levels were back in a healthier band but revenue had declined sharply (FY 2023 revenue $254M vs FY 2022's $298M). Allbirds remains publicly traded on NASDAQ at very low valuation as of early 2026.
+**Outcome.** Q3 2022 Allbirds wrote down **$13M** of inventory; Q4 2022 added another. By Q2 2023 the company had taken total inventory write-downs of **$30M+** and announced a Strategic Transformation Plan (Aug 2023): SKU rationalization (cut from ~50+ to ~30 active), reduction of the DTC fleet footprint, and a return to a tighter MTS planning discipline with shorter buy cycles. Stock price fell from a peak of $32 (Nov 2021) to below $1.40 (mid-2023), a 95% decline. By late 2024 inventory levels were back in a healthier band but revenue had declined sharply (FY 2023 revenue $254M vs FY 2022's $298M). Allbirds remains publicly traded on NASDAQ at very low valuation as of early 2026.
 
 **Lesson for the exam / for practitioners.** Allbirds is a near-textbook case of **safety-stock sizing assumptions becoming wrong without anyone re-checking them**. The CPIM formula `SS = z × σ_LT` is honest: σ_LT must be re-estimated when the demand-variability pattern changes. When demand was growing 60% YoY in 2020–2021, the variability was real but trending up; when DTC growth collapsed in 2022, the variability shape changed entirely (new demand pattern, longer right-tail of slow-moving SKUs, higher correlation across SKUs in slowdown). The carrying cost of the long-tail SKUs (storage, capital, and ultimately obsolescence-write-off) was vastly understated by the original ABC classification.
 
-The CPIM exam-takeaway: **inventory KPIs are leading indicators of strategy mismatch.** Inventory turnover dropping, days-of-supply growing, ABC-A items in stockout while C items pile up — these are signals to *re-baseline* the planning assumptions, not patch. Most write-down stories share this shape: a planning system that's quantitatively correct given old assumptions, applied to a new demand reality, generating an answer no one questions because the system "says so."
+The CPIM exam-takeaway: **inventory KPIs are leading indicators of strategy mismatch.** Inventory turnover dropping, days-of-supply growing, ABC-A items in stockout while C items pile up, these are signals to *re-baseline* the planning assumptions, not patch. Most write-down stories share this shape: a planning system that's quantitatively correct given old assumptions, applied to a new demand reality, generating an answer no one questions because the system "says so."
 
 **Discussion (Socratic).**
 - Q1: An Allbirds-style brand sees DTC growth slowing in Q2. Build the strongest argument for a *defensive* inventory strategy (cut buys aggressively, accept stockouts on some SKUs) AND for a *patient* inventory strategy (maintain buys, ride out the soft quarter). At what stage of evidence does the calculation flip?
-- Q2: Most DTC brands run ABC analysis annually. Given the speed of fashion-shift and consumer preference change in 2024–2026, is annual the right cadence — or should it be quarterly / monthly? Construct the case at each cadence and identify the resource constraint that matters.
+- Q2: Most DTC brands run ABC analysis annually. Given the speed of fashion-shift and consumer preference change in 2024–2026, is annual the right cadence, or should it be quarterly / monthly? Construct the case at each cadence and identify the resource constraint that matters.
 - Q3: Allbirds' safety-stock formula was correct; the σ_LT input was stale. Many inventory failures share this structure. Design a single "trigger" rule that would automatically re-baseline σ for a SKU. What's the trade-off between sensitive (re-baselines too often, noisy) and stable (re-baselines too rarely, misses the regime change)?
 
 ---
@@ -344,8 +344,8 @@ You now know:
 - 🗄️ VMI, consignment, FIFO/LIFO valuation
 
 **Next steps:**
-1. 🎥 Watch the videos in `Videos.md` — especially EOQ and ROP walkthroughs
-2. ✏️ Take `Quiz.md` — has 9 calculation questions
+1. 🎥 Watch the videos in `Videos.md`, especially EOQ and ROP walkthroughs
+2. ✏️ Take `Quiz.md`, has 9 calculation questions
 3. 📋 Drill `Cheat-Sheet.md` formulas
 4. ➡️ Move to [Module 7: Production Activity Control](../Module-07-Production-Activity-Control/Reading.md)
 
@@ -358,22 +358,22 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **EOQ's relevance in 2026.** EOQ assumes constant demand, constant lead time, no quantity discounts, no minimums. In a world of bullwhip-aware suppliers, frequent promotions, geopolitical disruption (Red Sea routing), and supplier MOQs, is EOQ still useful — or a quaint relic? Build the strongest argument for each, and identify the precise condition under which EOQ remains genuinely correct.
+1. **EOQ's relevance in 2026.** EOQ assumes constant demand, constant lead time, no quantity discounts, no minimums. In a world of bullwhip-aware suppliers, frequent promotions, geopolitical disruption (Red Sea routing), and supplier MOQs, is EOQ still useful, or a quaint relic? Build the strongest argument for each, and identify the precise condition under which EOQ remains genuinely correct.
 2. **The Allbirds-style write-down avoidance.** Design a 3-metric inventory dashboard that would have flagged the Allbirds problem 6+ months before the write-down. Defend each metric against the criticism that it lags. (Hint: think about *forward-looking* indicators like channel sell-through ratios, not just turnover.)
-3. **Safety stock vs lead-time reduction.** A planner can spend $100K on either (a) larger safety stocks across A items, or (b) supplier-development investment to cut lead times by 20%. Argue both sides — and identify the *one* condition under which each is the clear winner. Cite Vollmann/Berry on the LT vs SS trade-off.
-4. **JIT in a tariff/disruption era.** Toyota's JIT is famously zero-safety-stock. Post-2020 supply disruptions (COVID, semis, Red Sea) have made Toyota itself add buffers in select areas. Reconcile this with the lean canon — is Toyota *abandoning* JIT, or *adapting* it?
+3. **Safety stock vs lead-time reduction.** A planner can spend $100K on either (a) larger safety stocks across A items, or (b) supplier-development investment to cut lead times by 20%. Argue both sides, and identify the *one* condition under which each is the clear winner. Cite Vollmann/Berry on the LT vs SS trade-off.
+4. **JIT in a tariff/disruption era.** Toyota's JIT is famously zero-safety-stock. Post-2020 supply disruptions (COVID, semis, Red Sea) have made Toyota itself add buffers in select areas. Reconcile this with the lean canon, is Toyota *abandoning* JIT, or *adapting* it?
 5. **ABC × XYZ in 2026.** Two-axis ABC × XYZ classification creates a 9-cell matrix. In practice, most companies still treat their A items uniformly. What's the value of the 9-cell view vs the 3-cell, and what's the cost (planner cognitive load)? Pick a company size at which 9-cell stops earning its complexity.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Inventory Management Explained: A Focus on Forecasting, Lot Sizing, Safety Stock, and Ordering Systems* — Piasecki, David J. (Ops Publishing, 2009) — deep on cycle counting, IRA, ABC.
-- 📖 *Production and Inventory Control: Principles and Techniques* — Plossl, George W. (Prentice-Hall, 1985) — the classic.
-- 📖 *Manufacturing Planning and Control for Supply Chain Management* — Vollmann, Berry, Whybark & Jacobs, 6th ed. (McGraw-Hill, 2011), Chapter 9 — canonical inventory chapter.
-- 📖 *Inventory Management and Production Planning and Scheduling, 3rd ed.* — Silver, Pyke & Peterson (Wiley, 1998) — the rigorous graduate text.
-- 📖 ASCM Dictionary, 16th edition (2022) — entries for EOQ, EPQ, ROP, safety stock, cycle counting, ABC analysis, IRA, VMI, consignment.
-- 📰 *How Many Parts to Make at Once* — Harris, Ford W., *Factory: The Magazine of Management* 10(2), 1913 — the original EOQ paper. Rediscovered and re-published in Erlenkotter, *Operations Research* 38(6), 1990.
-- 📰 Allbirds Q3 2022 / Q3 2023 earnings calls and 10-K filings (SEC EDGAR) — the primary-source data on the write-down.
+- 📖 *Inventory Management Explained: A Focus on Forecasting, Lot Sizing, Safety Stock, and Ordering Systems* Piasecki, David J. (Ops Publishing, 2009) deep on cycle counting, IRA, ABC.
+- 📖 *Production and Inventory Control: Principles and Techniques* Plossl, George W. (Prentice-Hall, 1985) the classic.
+- 📖 *Manufacturing Planning and Control for Supply Chain Management* Vollmann, Berry, Whybark & Jacobs, 6th ed. (McGraw-Hill, 2011), Chapter 9 canonical inventory chapter.
+- 📖 *Inventory Management and Production Planning and Scheduling, 3rd ed.* Silver, Pyke & Peterson (Wiley, 1998) the rigorous graduate text.
+- 📖 ASCM Dictionary, 16th edition (2022), entries for EOQ, EPQ, ROP, safety stock, cycle counting, ABC analysis, IRA, VMI, consignment.
+- 📰 *How Many Parts to Make at Once* Harris, Ford W., *Factory: The Magazine of Management* 10(2), 1913 the original EOQ paper. Rediscovered and re-published in Erlenkotter, *Operations Research* 38(6), 1990.
+- 📰 Allbirds Q3 2022 / Q3 2023 earnings calls and 10-K filings (SEC EDGAR), the primary-source data on the write-down.

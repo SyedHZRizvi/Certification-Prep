@@ -89,7 +89,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Meta Certified Media Buying Pro — Study</p>
+      <p class="vg-title">Meta Certified Media Buying Pro, Study</p>
       <p class="vg-creator">Meta Blueprint educators</p>
       <span class="vg-duration">⏱ 13 min · $150 exam prep</span>
     </div>
@@ -103,7 +103,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Attribution After iOS 14 — Triple Whale Deep Dive</p>
+      <p class="vg-title">Attribution After iOS 14, Triple Whale Deep Dive</p>
       <p class="vg-creator">Triple Whale</p>
       <span class="vg-duration">⏱ 20 min · Modern attribution</span>
     </div>

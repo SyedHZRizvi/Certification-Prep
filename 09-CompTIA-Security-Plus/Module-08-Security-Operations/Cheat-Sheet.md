@@ -81,7 +81,7 @@
 | **CVSS** | 0-10 severity score |
 | **CWE** | Weakness category (CWE-89=SQLi) |
 | **EPSS** | Probability of exploitation |
-| **KEV** | CISA's "exploited NOW" list — patch FIRST |
+| **KEV** | CISA's "exploited NOW" list, patch FIRST |
 
 Priority = (CVSS or EPSS) × asset criticality × exposure.
 
@@ -144,8 +144,8 @@ Priority = (CVSS or EPSS) × asset criticality × exposure.
 ## ✏️ Quick Self-Check
 
 1. NIST IR phases in order?
-2. Order of volatility — top 4?
-3. CVSS / EPSS / KEV — one line each?
+2. Order of volatility, top 4?
+3. CVSS / EPSS / KEV, one line each?
 4. SIEM vs SOAR difference?
 5. Why does forensic work always use a copy?
 

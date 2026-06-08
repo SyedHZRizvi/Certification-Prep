@@ -4,7 +4,7 @@
 
 ---
 
-## 🛡️ Defender for Servers — P1 vs P2 (MEMORIZE)
+## 🛡️ Defender for Servers, P1 vs P2 (MEMORIZE)
 
 | Feature | P1 | **P2** |
 |---------|-----|---------|
@@ -35,12 +35,12 @@
 ## 🤖 MDE Capabilities
 
 - **EDR** with MITRE ATT&CK mapping
-- **ASR** (Attack Surface Reduction) — 17 named rules
-- **MDVM** (Vulnerability Management) — in P2
-- **Live Response** — remote PS-like session without inbound port
-- **Network Protection** — blocks malicious domains/IPs
+- **ASR** (Attack Surface Reduction), 17 named rules
+- **MDVM** (Vulnerability Management), in P2
+- **Live Response**, remote PS-like session without inbound port
+- **Network Protection**, blocks malicious domains/IPs
 - **Auto-investigation & remediation**
-- **Tamper Protection** — prevents disabling MDAV
+- **Tamper Protection**, prevents disabling MDAV
 
 ### Top ASR rules
 
@@ -56,7 +56,7 @@
 
 ## 🚧 WDAC (Modern App Allowlisting)
 
-- **Kernel mode** — tamper-resistant
+- **Kernel mode**, tamper-resistant
 - **Audit** mode first, **Enforce** mode after
 - Rule types: signed code, hash, FilePath, FilePublisher
 - Distributed via GPO, MEM, MDM, MSI
@@ -94,16 +94,16 @@ Prerequisites: VT-x/AMD-V + EPT/RVI · UEFI · Secure Boot · Hyper-V hypervisor
 | VBS + HVCI | Memory integrity via hypervisor |
 | System Guard | Boot integrity + attestation |
 
-🔥 **Requires certified OEM hardware** — no software shortcut.
+🔥 **Requires certified OEM hardware**, no software shortcut.
 
 ---
 
 ## 🪖 Exploit Guard
 
 - **ASR** rules (above)
-- **Controlled Folder Access** — anti-ransomware allowlist
-- **Network Protection** — blocks malicious domains in browsers
-- **Exploit Protection** — DEP, ASLR, CFG (formerly EMET)
+- **Controlled Folder Access**, anti-ransomware allowlist
+- **Network Protection**, blocks malicious domains in browsers
+- **Exploit Protection**, DEP, ASLR, CFG (formerly EMET)
 
 ---
 
@@ -171,9 +171,9 @@ Usually **wrong**:
 
 ## ✏️ Quick Self-Check
 
-1. Defender for Servers P1 vs P2 — pick 3 P2-only features? ___
+1. Defender for Servers P1 vs P2, pick 3 P2-only features? ___
 2. JIT default max duration? ___
-3. WDAC vs AppLocker — which is modern, which is legacy? ___
+3. WDAC vs AppLocker, which is modern, which is legacy? ___
 4. Credential Guard prerequisites? ___
 5. Protected Users group effects? ___
 6. Secured-core server hardware needs? ___

@@ -5,14 +5,14 @@
 **Study Plan** · Exam Day Tips
 *Last updated: 2026-05*
 
-> 🌍 **Scope:** The night-before routine, morning routine, time management, and mental tactics in this guide work for **every certification on this site** — Scrum, PMP, AWS, Azure, AI, Security+, ASCM, ISM, AI Marketing, Bitcoin/Crypto, and E-Commerce. The two cert-specific tables (PSM I, PMP) cover those exams in detail; the [Cert-Specific Format Notes](#-cert-specific-format-notes) section below covers the variety of formats (Pearson VUE in-person, online proctored, Prometric, vendor portal honor-system); and each track's `Cheat-Sheet.md` carries the cert-specific question count, time limit, and scaled-score line.
+> 🌍 **Scope:** The night-before routine, morning routine, time management, and mental tactics in this guide work for **every certification on this site**, Scrum, PMP, AWS, Azure, AI, Security+, ASCM, ISM, AI Marketing, Bitcoin/Crypto, and E-Commerce. The two cert-specific tables (PSM I, PMP) cover those exams in detail; the [Cert-Specific Format Notes](#-cert-specific-format-notes) section below covers the variety of formats (Pearson VUE in-person, online proctored, Prometric, vendor portal honor-system); and each track's `Cheat-Sheet.md` carries the cert-specific question count, time limit, and scaled-score line.
 
 ---
 
 ## 🌅 The Day Before
 
 - ✅ **Stop studying by noon.** Cramming literally lowers performance.
-- ✅ Light review of your one-page cheat sheet — that's it.
+- ✅ Light review of your one-page cheat sheet, that's it.
 - ✅ Lay out: ID, confirmation email, water bottle, snacks.
 - ✅ If online: Run the system check on the testing platform. Twice.
 - ✅ Sleep 8 hours. Set 2 alarms.
@@ -49,11 +49,11 @@
 | Tip | Why |
 |-----|-----|
 | **80 questions, 60 minutes** | That's 45 seconds per question. Move. |
-| **Use the Scrum Guide as truth** | If an answer contradicts the Scrum Guide, it's wrong — even if it sounds reasonable. |
-| **Beware of "best practices" trap** | The Scrum Guide says "the team self-organizes" — there is no prescribed best practice for HOW. |
+| **Use the Scrum Guide as truth** | If an answer contradicts the Scrum Guide, it's wrong, even if it sounds reasonable. |
+| **Beware of "best practices" trap** | The Scrum Guide says "the team self-organizes", there is no prescribed best practice for HOW. |
 | **Pass mark: 85%** | You can miss 12 questions. That's tighter than it sounds. |
 | **You can flag and review** | Use it for the 5–10 questions you're truly unsure about. |
-| **Open book? Sort of.** | Keep the Scrum Guide PDF open in another tab. But don't waste time looking up basics — you should know them. |
+| **Open book? Sort of.** | Keep the Scrum Guide PDF open in another tab. But don't waste time looking up basics, you should know them. |
 
 ### PSM I Trap Words to Watch For:
 
@@ -98,19 +98,19 @@
 
 ## 🌐 Cert-Specific Format Notes
 
-Different certs run on different delivery channels. Know yours **before exam day** — the logistics will burn 30 minutes of your morning if you don't:
+Different certs run on different delivery channels. Know yours **before exam day**, the logistics will burn 30 minutes of your morning if you don't:
 
-### Pearson VUE — In-Person Test Center
+### Pearson VUE, In-Person Test Center
 **Used by:** PMP, PMI-ACP, CAPM · AWS (CLF-C02, SAA-C03, AIF-C01) · Azure (AZ-900, AZ-104, AI-102) · CompTIA Security+ · Adobe Commerce · Meta Blueprint
 
 - Arrive 30 minutes early. Bring **two forms of ID** (one with photo, both with current name + signature).
-- Lockers are provided — phone, watch, wallet, snacks all go in.
+- Lockers are provided, phone, watch, wallet, snacks all go in.
 - No food/drink at the desk. Plan bathroom + hydration around break policy.
 - Pen + dry-erase board (or paper) provided. **PMP only:** 2 scheduled 10-min breaks; AWS / Azure / CompTIA: no scheduled break (you can leave but the timer runs).
 - Score appears on screen at end (PMP, AWS, Azure, CompTIA). Official email + Credly / digital badge within ~5 business days.
 
-### Pearson VUE — Online Proctored (OnVUE)
-**Used by:** Same cert list as in-person, plus PSM I (Scrum.org runs its own portal — see below) · AI-102 · most ASCM exams
+### Pearson VUE, Online Proctored (OnVUE)
+**Used by:** Same cert list as in-person, plus PSM I (Scrum.org runs its own portal, see below) · AI-102 · most ASCM exams
 
 - Run the **system check 24 hours before AND right before** the exam. Reboot. Disable VPN. Close everything.
 - Quiet room, plain walls, no second monitor, no phone within reach, no clutter on desk.
@@ -129,11 +129,11 @@ Different certs run on different delivery channels. Know yours **before exam day
 ### Prometric (Used by ISM CPSM and a few others)
 **Used by:** ISM CPSM (all 3 exams) · some Adobe exams
 
-- Similar to Pearson VUE — in-person test centers + online-proctored option.
+- Similar to Pearson VUE, in-person test centers + online-proctored option.
 - Schedule via `prometric.com`; some ISM exams have limited testing windows (not always year-round).
 - **CPSM specific:** Each of the 3 exams must be passed within 3 years of the first. Plan retake timing carefully.
 
-### Vendor Portals — Free Online (Marketing & E-Commerce)
+### Vendor Portals, Free Online (Marketing & E-Commerce)
 **Used by:** HubSpot Academy (Inbound, Content Marketing) · Google Skillshop (Google Ads, GA4 IQ) · Meta Blueprint (some are paid via Pearson VUE; foundational ones are vendor-portal) · Adobe Commerce some · Shopify Academy
 
 - **No proctor.** Honor system, open-book.
@@ -145,10 +145,10 @@ Different certs run on different delivery channels. Know yours **before exam day
 
 - Functionally similar to Pearson VUE online-proctored. Same prep: quiet room, plain walls, ID, system check.
 
-### Credly Badge — Issued After Most Passes
+### Credly Badge, Issued After Most Passes
 **Used by:** AWS, Microsoft, CompTIA, Adobe, IBM, Cisco, many others
 
-- After you pass, you get a digital badge (Credly / Acclaim). Add it to your LinkedIn profile — recruiters search for it.
+- After you pass, you get a digital badge (Credly / Acclaim). Add it to your LinkedIn profile, recruiters search for it.
 
 ---
 
@@ -249,5 +249,5 @@ You got this. 🫡
 
 - 📝 **Just passed?** Update LinkedIn + your resume. Then come back in a year for renewal.
 - 🔁 **Didn't pass?** Re-open the [12-Week Study Plan](../12-Week-Study-Plan/) and rebuild a 3-4 week targeted sprint on your weak domains. Most retakers pass.
-- 🎯 **Already certified — what's next?** Check the [Certifications Catalog](../../Resources/International-Certifications/) "Which Cert Next?" matrix to pick the natural follow-on.
-- 🏠 [**Back to Course Home**](../../) — start the next track from the 27 available
+- 🎯 **Already certified, what's next?** Check the [Certifications Catalog](../../Resources/International-Certifications/) "Which Cert Next?" matrix to pick the natural follow-on.
+- 🏠 [**Back to Course Home**](../../), start the next track from the 27 available

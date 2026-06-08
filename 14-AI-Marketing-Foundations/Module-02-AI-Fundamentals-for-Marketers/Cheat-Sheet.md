@@ -25,7 +25,7 @@
 | **Context window** | How much text the model can see at once (128K–1M+ tokens) |
 | **Embedding** | A numerical vector representing meaning |
 | **Inference** | Running the model on a prompt (cheap) |
-| **Training / Pretraining** | Building the model from scratch (very expensive — labs do it, not you) |
+| **Training / Pretraining** | Building the model from scratch (very expensive, labs do it, not you) |
 
 ---
 
@@ -46,7 +46,7 @@
 | Approach | When to use |
 |---|---|
 | **Prompting** | One-off drafts, brainstorms, summaries (90% of use cases) |
-| **RAG** | "Use my docs" — knowledge-base chat, customer-support AI |
+| **RAG** | "Use my docs", knowledge-base chat, customer-support AI |
 | **Fine-Tuning** | Permanent voice/style shift; specialized domain language |
 
 🚨 80% of "we want AI on our data" problems are solved by RAG, not fine-tuning.
@@ -61,7 +61,7 @@ CONTEXT:      [Brand, audience, voice]
 TASK:         [Exactly what to produce]
 CONSTRAINTS:  [Word count, format, must-avoid]
 EXAMPLES:     [1–3 sample outputs]
-OUTPUT:       [Format — markdown, table, etc.]
+OUTPUT:       [Format, markdown, table, etc.]
 ```
 
 ---
@@ -79,8 +79,8 @@ OUTPUT:       [Format — markdown, table, etc.]
 
 | Year | Event |
 |---|---|
-| 2012 | AlexNet — deep-learning era begins |
-| 2017 | "Attention Is All You Need" — Transformer paper |
+| 2012 | AlexNet, deep-learning era begins |
+| 2017 | "Attention Is All You Need", Transformer paper |
 | 2018 | Google BERT |
 | 2020 | GPT-3 |
 | Nov 30, 2022 | ChatGPT public launch |

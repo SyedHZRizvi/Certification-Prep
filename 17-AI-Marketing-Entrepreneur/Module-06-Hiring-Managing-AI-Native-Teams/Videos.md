@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">High Output Management — Cadence + 1:1s</p>
+      <p class="vg-title">High Output Management, Cadence + 1:1s</p>
       <p class="vg-creator">Management classics</p>
       <span class="vg-duration">⏱ 22 min · Andy Grove principles</span>
     </div>

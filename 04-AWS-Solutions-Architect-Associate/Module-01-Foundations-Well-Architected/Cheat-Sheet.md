@@ -55,9 +55,9 @@ OUTPOST        →  AWS hardware in YOUR data center
 
 ## 💵 The 3 Cost Drivers
 
-1. **Compute** — per second/hour (EC2, Lambda)
-2. **Storage** — per GB-month (S3, EBS, EFS)
-3. **Data transfer OUT to internet** — $0.05–$0.09/GB
+1. **Compute**, per second/hour (EC2, Lambda)
+2. **Storage**, per GB-month (S3, EBS, EFS)
+3. **Data transfer OUT to internet**, $0.05–$0.09/GB
 
 🧠 *"Data IN is FREE. Data OUT bleeds you dry."*
 

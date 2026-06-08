@@ -30,7 +30,7 @@ D. Layer 5 (session)
 
 ---
 
-### Q4. Yes/No — NSGs. *(Evaluate)*
+### Q4. Yes/No, NSGs. *(Evaluate)*
 
 **S1:** NSGs are stateful (return traffic is auto-allowed).
 **S2:** Both subnet-level and NIC-level NSGs apply, and a Deny in either drops the packet.
@@ -130,7 +130,7 @@ D. 1 → 2 → 4 → 3 → 5
 
 ---
 
-### Q15. Yes/No — Service tags. *(Understand)*
+### Q15. Yes/No, Service tags. *(Understand)*
 
 **S1:** `VirtualNetwork` includes the VNet's space + peered VNets + on-prem reachable space.
 **S2:** `Internet` covers all public IPs outside the VNet.
@@ -159,7 +159,7 @@ D. Subscription level only
 
 ---
 
-### Q18. Yes/No — Application Gateway. *(Understand)*
+### Q18. Yes/No, Application Gateway. *(Understand)*
 
 **S1:** Application Gateway is L7 (HTTP/HTTPS).
 **S2:** Application Gateway supports URL path-based routing.
@@ -219,7 +219,7 @@ D. 1 → 2 → 5 → 3 → 4
 
 ---
 
-### Q24. Yes/No — Load Balancers. *(Evaluate)*
+### Q24. Yes/No, Load Balancers. *(Evaluate)*
 
 **S1:** Standard LB is secure by default (closed inbound; you allow with NSG explicitly).
 **S2:** Standard LB supports both zonal and zone-redundant frontends.
@@ -243,7 +243,7 @@ D. DNS-based steering
 ### Q26. An NSG is associated with a subnet AND a NIC in that subnet. Inbound traffic to a VM is evaluated: *(Analyze)*
 A. Only by the NIC NSG
 B. Only by the subnet NSG
-C. Subnet NSG first, then NIC NSG — both must allow
+C. Subnet NSG first, then NIC NSG, both must allow
 D. Whichever is more permissive
 
 ---
@@ -254,7 +254,7 @@ D. Whichever is more permissive
 Priorities go 100 (highest priority) to 4096. First match wins.
 
 ### Q2: **C. DenyAllInBound**
-65500 is the bottom default — deny everything not already allowed.
+65500 is the bottom default, deny everything not already allowed.
 
 ### Q3: **B. Layer 3/4 (IP/port/protocol)**
 NSGs do 5-tuple filtering, not payload inspection.
@@ -266,7 +266,7 @@ NSGs are stateful. Both layers apply (deny in either drops). Service tags are he
 First match wins, and lowest priority number is evaluated first.
 
 ### Q6: **B. Are logical tags on NICs, used as source/destination in NSG rules within the same VNet**
-ASGs are not a separate firewall — they're labels for NSG rules. Single-VNet scope.
+ASGs are not a separate firewall, they're labels for NSG rules. Single-VNet scope.
 
 ### Q7: **B. AzureFirewallSubnet (exact, case-sensitive)**
 Reserved name. Same constraint as `GatewaySubnet`.
@@ -275,7 +275,7 @@ Reserved name. Same constraint as `GatewaySubnet`.
 Memorize this order.
 
 ### Q9: **C. Premium**
-TLS inspection, IDPS, URL filtering — Premium-only.
+TLS inspection, IDPS, URL filtering, Premium-only.
 
 ### Q10: **B. Supports availability zones and 99.99% SLA**
 Two backends + SLB = 99.99%. Basic has no SLA.
@@ -325,7 +325,7 @@ SLB is secure-by-default. Zonal + zone-redundant supported. Basic LB is being de
 ### Q25: **B. L4 (TCP/UDP) global load balancing across multiple regional standard LBs**
 Cross-region LB sits in front of regional SLBs.
 
-### Q26: **C. Subnet NSG first, then NIC NSG — both must allow**
+### Q26: **C. Subnet NSG first, then NIC NSG, both must allow**
 Inbound: subnet → NIC. Outbound: NIC → subnet. Both layers must allow.
 
 ---

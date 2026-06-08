@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 The 6 Models — Memorize
+## 🎯 The 6 Models, Memorize
 
 | Model | Rule | Best for |
 |-------|------|----------|
@@ -19,7 +19,7 @@
 
 ---
 
-## 🧮 DDA — 3 Mathematical Approaches
+## 🧮 DDA, 3 Mathematical Approaches
 
 | Approach | Idea | Pros / Cons |
 |----------|------|-------------|
@@ -136,7 +136,7 @@ INCREMENTALITY  ←  MMM
 ## ✏️ Quick Self-Check
 
 1. The 6 attribution models? ___
-2. Shapley vs Markov — 1-sentence difference? ___
+2. Shapley vs Markov, 1-sentence difference? ___
 3. GA4 DDA threshold? ___
 4. 3 incrementality test types? ___
 5. The 2026 measurement triangle? ___

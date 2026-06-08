@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: Networking for Servers
 
-> **How to use:** Pause when MTU, LACP, or trunk port configuration is shown — sketch the topology. Server networking clicks when you draw it.
+> **How to use:** Pause when MTU, LACP, or trunk port configuration is shown, sketch the topology. Server networking clicks when you draw it.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">GSLB — Geo-Aware Load Balancing</p>
+      <p class="vg-title">GSLB, Geo-Aware Load Balancing</p>
       <p class="vg-creator">F5 / community</p>
       <span class="vg-duration">⏱ 18 min · DNS-level routing</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Microsegmentation — Beyond VLANs</p>
+      <p class="vg-title">Microsegmentation, Beyond VLANs</p>
       <p class="vg-creator">VMware / Cisco community</p>
       <span class="vg-duration">⏱ 20 min · Per-VM L4 policy</span>
     </div>
@@ -134,9 +134,9 @@
 Answer these in your notebook:
 
 1. NIC teaming with LACP requires what on the switch side?
-2. Trunk port vs access port — one-line distinction?
+2. Trunk port vs access port, one-line distinction?
 3. Jumbo frames MTU value + a 1-sentence rule for deployment?
-4. L4 vs L7 load balancer — give one scenario where each is right.
+4. L4 vs L7 load balancer, give one scenario where each is right.
 5. Why must IPv6 firewall rules be written separately from IPv4 rules?
 6. What does PortFast do?
 

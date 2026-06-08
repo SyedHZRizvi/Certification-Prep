@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -266,13 +266,13 @@
 })();
 </script>
 
-# ₿ Bitcoin & Cryptocurrency — Flashcards
+# ₿ Bitcoin & Cryptocurrency, Flashcards
 
 > **How to use.** Click a card to flip. Mark "Got it" for cards you've internalized; "Try again" otherwise. Progress is saved in your browser. Filter by module section using the dropdown.
 
 ---
 
-## Module 1 — White Paper & Origins
+## Module 1, White Paper & Origins
 
 **Q:** Who published the Bitcoin white paper, on what date, and in what venue?
 
@@ -300,7 +300,7 @@
 
 ---
 
-## Module 2 — Cryptographic Foundations
+## Module 2, Cryptographic Foundations
 
 **Q:** Which hash functions does Bitcoin use, and where is each used?
 
@@ -308,7 +308,7 @@
 
 **Q:** What elliptic curve does Bitcoin use, and who specified it?
 
-**A:** secp256k1, specified by SECG in 2000. Bitcoin uses ECDSA over secp256k1. It is NOT a NIST P-curve — Satoshi explicitly avoided NIST curves.
+**A:** secp256k1, specified by SECG in 2000. Bitcoin uses ECDSA over secp256k1. It is NOT a NIST P-curve, Satoshi explicitly avoided NIST curves.
 
 **Q:** What is the relationship between a Bitcoin private key, public key, and address?
 
@@ -324,11 +324,11 @@
 
 **Q:** What did Schnorr signatures add when activated via Taproot in 2021?
 
-**A:** Linearity — multiple Schnorr signatures over the same message can be aggregated into one (MuSig). Net effect: multi-sig and single-sig look identical on-chain (privacy), and Lightning channel open/close becomes cheaper.
+**A:** Linearity, multiple Schnorr signatures over the same message can be aggregated into one (MuSig). Net effect: multi-sig and single-sig look identical on-chain (privacy), and Lightning channel open/close becomes cheaper.
 
 ---
 
-## Module 3 — Bitcoin Network & Consensus
+## Module 3, Bitcoin Network & Consensus
 
 **Q:** What is the difference between a full node and an SPV client?
 
@@ -352,23 +352,23 @@
 
 ---
 
-## Module 4 — Wallets, Keys & Self-Custody
+## Module 4, Wallets, Keys & Self-Custody
 
 **Q:** What does BIP-39 specify?
 
-**A:** Mnemonic seed phrases — 12 or 24 English words selected from a 2,048-word wordlist, encoding 128 or 256 bits of entropy plus a 4–8-bit checksum. Translates to a binary seed via PBKDF2.
+**A:** Mnemonic seed phrases, 12 or 24 English words selected from a 2,048-word wordlist, encoding 128 or 256 bits of entropy plus a 4–8-bit checksum. Translates to a binary seed via PBKDF2.
 
 **Q:** What does BIP-32 specify?
 
-**A:** Hierarchical Deterministic (HD) wallets — derive a tree of child keys from a single master seed using HMAC-SHA512. Public-key child derivation is supported for watch-only accounts.
+**A:** Hierarchical Deterministic (HD) wallets, derive a tree of child keys from a single master seed using HMAC-SHA512. Public-key child derivation is supported for watch-only accounts.
 
 **Q:** What does BIP-44 specify?
 
-**A:** A standard derivation path: `m/44'/coin_type'/account'/change/address_index`. For Bitcoin, coin_type = 0. Standardizes wallet portability — same seed in different wallets recovers the same addresses.
+**A:** A standard derivation path: `m/44'/coin_type'/account'/change/address_index`. For Bitcoin, coin_type = 0. Standardizes wallet portability, same seed in different wallets recovers the same addresses.
 
 **Q:** Compare 2-of-3 multi-sig with MPC for institutional custody.
 
-**A:** Multi-sig is on-chain (three Bitcoin scripts, multiple signatures, visible spending pattern). MPC (multi-party computation) splits a single private key off-chain — on-chain it looks like single-sig. Multi-sig is auditable; MPC is private and chain-agnostic but vendor-dependent.
+**A:** Multi-sig is on-chain (three Bitcoin scripts, multiple signatures, visible spending pattern). MPC (multi-party computation) splits a single private key off-chain, on-chain it looks like single-sig. Multi-sig is auditable; MPC is private and chain-agnostic but vendor-dependent.
 
 **Q:** What happened to Mt. Gox and what's the lesson?
 
@@ -376,11 +376,11 @@
 
 **Q:** What is a BIP-39 passphrase and why does it matter?
 
-**A:** An optional 25th word added to a 12/24-word seed. It produces an entirely different HD wallet — defeats seed-only theft. Lose it = funds gone (no recovery).
+**A:** An optional 25th word added to a 12/24-word seed. It produces an entirely different HD wallet, defeats seed-only theft. Lose it = funds gone (no recovery).
 
 ---
 
-## Module 5 — Mining & Proof-of-Work Economics
+## Module 5, Mining & Proof-of-Work Economics
 
 **Q:** What is Proof-of-Work in one sentence?
 
@@ -392,7 +392,7 @@
 
 **Q:** What is hashrate and why does it matter?
 
-**A:** Hashrate = total computation per second securing the chain (measured in EH/s — exa-hashes per second). High hashrate raises the cost of a 51% attack — Bitcoin's main security parameter.
+**A:** Hashrate = total computation per second securing the chain (measured in EH/s exa-hashes per second). High hashrate raises the cost of a 51% attack Bitcoin's main security parameter.
 
 **Q:** What was the China mining ban (May 2021) and what was its effect?
 
@@ -404,11 +404,11 @@
 
 ---
 
-## Module 6 — Bitcoin Script & Programmability
+## Module 6, Bitcoin Script & Programmability
 
 **Q:** Is Bitcoin Script Turing-complete? Why or why not?
 
-**A:** No. It has no loops and limited control flow — by design. Trade-off: less expressive than Ethereum's EVM, but provably-bounded execution and no infinite-loop DoS risk.
+**A:** No. It has no loops and limited control flow, by design. Trade-off: less expressive than Ethereum's EVM, but provably-bounded execution and no infinite-loop DoS risk.
 
 **Q:** What does P2PKH stand for and what does it lock to?
 
@@ -424,11 +424,11 @@
 
 **Q:** What is a PSBT?
 
-**A:** Partially Signed Bitcoin Transaction (BIP-174) — a serialization format that lets multiple signers (hardware wallets, multi-sig cosigners) collaboratively build and sign a transaction without ever sharing private keys.
+**A:** Partially Signed Bitcoin Transaction (BIP-174), a serialization format that lets multiple signers (hardware wallets, multi-sig cosigners) collaboratively build and sign a transaction without ever sharing private keys.
 
 ---
 
-## Module 7 — Lightning Network & Layer-2
+## Module 7, Lightning Network & Layer-2
 
 **Q:** What problem does Lightning solve?
 
@@ -440,7 +440,7 @@
 
 **Q:** What are the BOLT specifications?
 
-**A:** Basis of Lightning Technology — the open standards (BOLT 1–11) co-edited by Lightning Labs, Blockstream, and ACINQ that define wire protocol, peer messages, channel state machine, onion routing, invoices.
+**A:** Basis of Lightning Technology, the open standards (BOLT 1–11) co-edited by Lightning Labs, Blockstream, and ACINQ that define wire protocol, peer messages, channel state machine, onion routing, invoices.
 
 **Q:** Who authored the Lightning Network paper?
 
@@ -448,15 +448,15 @@
 
 **Q:** What did El Salvador's September 2021 Bitcoin law do?
 
-**A:** Made Bitcoin legal tender alongside the US dollar. Required (in theory) every merchant to accept BTC, distributed the Chivo wallet to citizens. Was the first nation-state Lightning rollout — and a stress test that revealed UX, custody, and adoption challenges.
+**A:** Made Bitcoin legal tender alongside the US dollar. Required (in theory) every merchant to accept BTC, distributed the Chivo wallet to citizens. Was the first nation-state Lightning rollout, and a stress test that revealed UX, custody, and adoption challenges.
 
 ---
 
-## Module 8 — Regulation, Compliance & Tax
+## Module 8, Regulation, Compliance & Tax
 
 **Q:** What is FinCEN and what is an MSB?
 
-**A:** Financial Crimes Enforcement Network (US Treasury bureau). MSB = Money Services Business. Per FIN-2013-G001 (March 2013), exchanges and money transmitters dealing in convertible virtual currency are MSBs — must register, file SARs, run AML.
+**A:** Financial Crimes Enforcement Network (US Treasury bureau). MSB = Money Services Business. Per FIN-2013-G001 (March 2013), exchanges and money transmitters dealing in convertible virtual currency are MSBs, must register, file SARs, run AML.
 
 **Q:** What is the FATF Travel Rule (Recommendation 15)?
 
@@ -464,7 +464,7 @@
 
 **Q:** What is MiCA and when does it apply?
 
-**A:** Markets in Crypto-Assets — EU regulation 2023/1114, phased into force June 2023–December 2024. Establishes the CASP (Crypto-Asset Service Provider) license, rules for stablecoin issuers (asset-referenced tokens, e-money tokens), and a comprehensive consumer-protection regime.
+**A:** Markets in Crypto-Assets, EU regulation 2023/1114, phased into force June 2023–December 2024. Establishes the CASP (Crypto-Asset Service Provider) license, rules for stablecoin issuers (asset-referenced tokens, e-money tokens), and a comprehensive consumer-protection regime.
 
 **Q:** How does the IRS treat Bitcoin for US tax?
 
@@ -476,7 +476,7 @@
 
 ---
 
-## Module 9 — Trading, Custody & Institutional
+## Module 9, Trading, Custody & Institutional
 
 **Q:** What happened on January 11, 2024?
 
@@ -484,7 +484,7 @@
 
 **Q:** What is the CryptoCurrency Security Standard (CCSS)?
 
-**A:** A C4 (CryptoCurrency Certification Consortium) framework — three levels (I, II, III) — covering key generation, wallet creation, key storage, key usage, key compromise policy, audit logging. Used by exchanges and custodians as a vendor-assessment baseline.
+**A:** A C4 (CryptoCurrency Certification Consortium) framework three levels (I, II, III) covering key generation, wallet creation, key storage, key usage, key compromise policy, audit logging. Used by exchanges and custodians as a vendor-assessment baseline.
 
 **Q:** Differentiate cold, warm, and hot wallets.
 
@@ -496,11 +496,11 @@
 
 **Q:** What is a Bitcoin OTC desk?
 
-**A:** Over-the-counter — large block trades executed off-exchange to avoid moving the lit-market price. Genesis, Cumberland (DRW), Galaxy, BlockFi (now defunct). Typical minimum trade $100K–$1M.
+**A:** Over-the-counter, large block trades executed off-exchange to avoid moving the lit-market price. Genesis, Cumberland (DRW), Galaxy, BlockFi (now defunct). Typical minimum trade $100K–$1M.
 
 ---
 
-## Module 10 — Beyond Bitcoin: The Blockchain Ecosystem
+## Module 10, Beyond Bitcoin: The Blockchain Ecosystem
 
 **Q:** What is Ethereum and what was its founding insight?
 
@@ -516,11 +516,11 @@
 
 **Q:** What is a CBDC and how does it differ from Bitcoin?
 
-**A:** Central Bank Digital Currency — a government-issued, centrally controlled digital currency. Programmable, surveilled, often offline-capable. Opposite design point to Bitcoin (issuer-controlled vs. issuer-less). e-CNY (China) is the largest pilot; ECB digital euro is in design.
+**A:** Central Bank Digital Currency, a government-issued, centrally controlled digital currency. Programmable, surveilled, often offline-capable. Opposite design point to Bitcoin (issuer-controlled vs. issuer-less). e-CNY (China) is the largest pilot; ECB digital euro is in design.
 
 **Q:** What is the difference between Bitcoin and "crypto" in 2026 institutional usage?
 
-**A:** "Bitcoin" = the specific protocol launched 2009, conservative changes, store-of-value framing, regulated as a commodity (CFTC). "Crypto" = the broader ecosystem of altcoins, smart-contract platforms, stablecoins, DeFi, NFTs — many regulated as securities (SEC). Institutional allocators increasingly treat Bitcoin as a distinct asset class.
+**A:** "Bitcoin" = the specific protocol launched 2009, conservative changes, store-of-value framing, regulated as a commodity (CFTC). "Crypto" = the broader ecosystem of altcoins, smart-contract platforms, stablecoins, DeFi, NFTs, many regulated as securities (SEC). Institutional allocators increasingly treat Bitcoin as a distinct asset class.
 
 ---
 
@@ -528,11 +528,11 @@
 
 **Q:** What does "21M cap" actually guarantee?
 
-**A:** That no more than 21M BTC will ever exist *under the current consensus rules*. Rules can change via consensus — but a change to the cap would require near-universal agreement of nodes, miners, and exchanges, and any minority refusing creates a competing chain. In practice the cap is treated as inviolable.
+**A:** That no more than 21M BTC will ever exist *under the current consensus rules*. Rules can change via consensus, but a change to the cap would require near-universal agreement of nodes, miners, and exchanges, and any minority refusing creates a competing chain. In practice the cap is treated as inviolable.
 
 **Q:** Why does Bitcoin use UTXO not accounts?
 
-**A:** UTXO (Unspent Transaction Output) model — every transaction consumes UTXOs and creates new ones. Vs. Ethereum's account-balance model. UTXO advantages: parallelizable validation, no replay attacks, simpler auditing. Disadvantages: less ergonomic for some application patterns.
+**A:** UTXO (Unspent Transaction Output) model, every transaction consumes UTXOs and creates new ones. Vs. Ethereum's account-balance model. UTXO advantages: parallelizable validation, no replay attacks, simpler auditing. Disadvantages: less ergonomic for some application patterns.
 
 **Q:** What is replace-by-fee (RBF)?
 
@@ -552,7 +552,7 @@
 
 **Q:** What is the Lindy Effect as applied to Bitcoin?
 
-**A:** Coined by Mandelbrot (1982), reinterpreted by Taleb. The expected remaining life of a non-perishable thing is proportional to its current age. Bitcoin has now run continuously since 2009 — by Lindy, expected to keep running another ~17 years. Used by Bitcoin advocates as a security argument.
+**A:** Coined by Mandelbrot (1982), reinterpreted by Taleb. The expected remaining life of a non-perishable thing is proportional to its current age. Bitcoin has now run continuously since 2009, by Lindy, expected to keep running another ~17 years. Used by Bitcoin advocates as a security argument.
 
 **Q:** What is the difference between a node and a wallet?
 
@@ -560,7 +560,7 @@
 
 **Q:** What is "not your keys, not your coins"?
 
-**A:** Andreas Antonopoulos' maxim. If a custodian holds your private keys (exchange wallet, custodial brokerage), you have a *claim* on Bitcoin — you do not *own* Bitcoin. Mt. Gox, QuadrigaCX, Celsius, FTX all proved the point.
+**A:** Andreas Antonopoulos' maxim. If a custodian holds your private keys (exchange wallet, custodial brokerage), you have a *claim* on Bitcoin, you do not *own* Bitcoin. Mt. Gox, QuadrigaCX, Celsius, FTX all proved the point.
 
 ---
 
@@ -568,7 +568,7 @@
 
 Use the section filter dropdown to drill into one module's cards at a time.
 
-For the C4 CBP, prioritize Modules 1–4 (foundations + crypto + wallets) — they make up roughly 60% of the question pool. Modules 7, 8, 9 are the next-biggest cluster.
+For the C4 CBP, prioritize Modules 1–4 (foundations + crypto + wallets), they make up roughly 60% of the question pool. Modules 7, 8, 9 are the next-biggest cluster.
 
 If a card consistently trips you up, look up the corresponding section in the module's Reading.md before moving on. Spaced-repetition with retrieval failure is more useful than passive re-reading.
 
@@ -577,7 +577,7 @@ If a card consistently trips you up, look up the corresponding section in the mo
 ## Before The Exam
 
 - Re-read the white paper (it's only 9 pages) the day before the CBP.
-- Run through the Module 8 regulation table from memory — most candidates lose points on FATF Travel Rule + MiCA + FinCEN MSB confusions.
+- Run through the Module 8 regulation table from memory, most candidates lose points on FATF Travel Rule + MiCA + FinCEN MSB confusions.
 - Verify you can compute: block subsidy after N halvings, expected halving date, transaction fee in sats/vByte, multi-sig spend size.
 
 Good luck. ₿

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AWS Cloud Practitioner (CLF-C02 Style)
+# 🧪 Practice Exam 1, AWS Cloud Practitioner (CLF-C02 Style)
 
 > **Conditions:** Set a 45-minute timer. 32 questions. Treat it like the real thing.
 > **Pass mark:** 22/32 (≈ 70%)
@@ -219,16 +219,16 @@ D. CloudFront + Shield + WAF
 
 ## 📚 Detailed answer rationales
 
-Treat these as a teaching pass — in case-method style: every question gets a why-right + why-each-wrong + exam-takeaway.
+Treat these as a teaching pass, in case-method style: every question gets a why-right + why-each-wrong + exam-takeaway.
 
 **Q1. Answer: D**
 
 **Why D is correct.** AWS's published definition (in *What is Cloud Computing?* and the AWS Overview whitepaper) is: "the on-demand delivery of IT resources over the internet with pay-as-you-go pricing." Verbatim from AWS's own training material.
 
 **Why the other options are wrong.**
-- A: "Dedicated hardware" is the opposite of multi-tenant cloud — Dedicated Hosts are an *option*, not the definition.
-- B: "Free unlimited compute" — AWS is pay-as-you-go, not free.
-- C: "Long-term capacity reservations" — those are RIs / Savings Plans, an *option*, not the cloud definition.
+- A: "Dedicated hardware" is the opposite of multi-tenant cloud, Dedicated Hosts are an *option*, not the definition.
+- B: "Free unlimited compute", AWS is pay-as-you-go, not free.
+- C: "Long-term capacity reservations", those are RIs / Savings Plans, an *option*, not the cloud definition.
 
 **Exam-takeaway.** AWS's three-part definition (on-demand / over internet / pay-as-you-go) is verbatim test material. Memorize it word-for-word.
 
@@ -249,11 +249,11 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q3. Answer: C**
 
-**Why C is correct.** EC2 On-Demand billed per second is the textbook variable expense — no upfront, scale up/down freely, billed only for what you use. That's OpEx.
+**Why C is correct.** EC2 On-Demand billed per second is the textbook variable expense, no upfront, scale up/down freely, billed only for what you use. That's OpEx.
 
 **Why the other options are wrong.**
-- A: 3-year Reserved Instances commit you upfront — that's more CapEx-like.
-- B: Buying servers is the definition of CapEx — exactly what cloud lets you trade *away*.
+- A: 3-year Reserved Instances commit you upfront, that's more CapEx-like.
+- B: Buying servers is the definition of CapEx, exactly what cloud lets you trade *away*.
 - D: A multi-year colocation lease is fixed expense, the opposite of variable.
 
 **Exam-takeaway.** When the exam says "trade CapEx for OpEx," look for the answer that is *pay-only-when-using*. Long commitments and upfront purchases are the trap distractors.
@@ -267,7 +267,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 **Why the other options are wrong.**
 - A: 5 minutes was the *historical* limit (pre-2018); they're testing whether you know the current one.
 - C: 1 hour is a common confusion with the Fargate task lifecycle, not Lambda.
-- D: Unlimited is wrong — there is a hard limit.
+- D: Unlimited is wrong, there is a hard limit.
 
 **Exam-takeaway.** Lambda = 15-minute max. For anything longer, the answer is Fargate, EC2, or AWS Batch. Memorize "15."
 
@@ -275,7 +275,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q5. Answer: B**
 
-**Why B is correct.** Spot Instances offer up to 90% off On-Demand because AWS can reclaim them with 2 minutes notice. Perfect for *fault-tolerant* workloads that can checkpoint and resume — CI builds, batch transcoding, ML training.
+**Why B is correct.** Spot Instances offer up to 90% off On-Demand because AWS can reclaim them with 2 minutes notice. Perfect for *fault-tolerant* workloads that can checkpoint and resume, CI builds, batch transcoding, ML training.
 
 **Why the other options are wrong.**
 - A: On-Demand is the baseline price; no discount.
@@ -292,8 +292,8 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Why the other options are wrong.**
 - B: Compute charges DO stop on stopped instances.
-- C: No charges at all is the trap — EBS keeps billing.
-- D: "Both compute and storage" overstates — compute halts.
+- C: No charges at all is the trap, EBS keeps billing.
+- D: "Both compute and storage" overstates, compute halts.
 
 **Exam-takeaway.** Stopped EC2 = no compute, still pay EBS. Terminate = no compute, no EBS (with default settings). The exam loves this distinction.
 
@@ -305,7 +305,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Why the other options are wrong.**
 - A: Standard is the most-expensive frequent-access tier; not cost-optimized for unpredictable patterns.
-- B: Standard-IA has per-GB retrieval fees — bad for objects you might access more than expected.
+- B: Standard-IA has per-GB retrieval fees, bad for objects you might access more than expected.
 - C: Glacier Deep Archive has 12–48 hr retrieval; only for never-accessed data.
 
 **Exam-takeaway.** "Unknown / unpredictable access pattern" → Intelligent-Tiering. Memorize the trigger phrase.
@@ -317,11 +317,11 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 **Why C is correct.** S3's per-object max is 5 TB. Single PUT max is 5 GB; above that requires multipart upload (which can go to 5 TB).
 
 **Why the other options are wrong.**
-- A: 5 GB is the single-PUT max, not the object max — a classic trap.
-- B: 100 GB has no relationship to S3 limits — pure distractor.
+- A: 5 GB is the single-PUT max, not the object max, a classic trap.
+- B: 100 GB has no relationship to S3 limits, pure distractor.
 - D: Unlimited is wrong; S3 *bucket* size is essentially unlimited, but per *object* it's 5 TB.
 
-**Exam-takeaway.** S3 object max = 5 TB. Single PUT max = 5 GB. Different numbers — both tested.
+**Exam-takeaway.** S3 object max = 5 TB. Single PUT max = 5 GB. Different numbers, both tested.
 
 ---
 
@@ -344,7 +344,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Why the other options are wrong.**
 - A: EBS attaches to a single instance (almost always; Multi-Attach is the rare io1/io2 exception).
-- C: FSx for Windows uses SMB, not NFS — wrong protocol for Linux.
+- C: FSx for Windows uses SMB, not NFS, wrong protocol for Linux.
 - D: S3 is object storage, not a file system.
 
 **Exam-takeaway.** "Multiple Linux EC2 sharing files" → EFS. Always.
@@ -353,7 +353,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q11. Answer: D**
 
-**Why D is correct.** EBS = block storage attached to an EC2 instance — including as the boot (root) volume.
+**Why D is correct.** EBS = block storage attached to an EC2 instance, including as the boot (root) volume.
 
 **Why the other options are wrong.**
 - A: S3 is object storage; you can't boot from S3 directly.
@@ -379,10 +379,10 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q13. Answer: D**
 
-**Why D is correct.** VPC Gateway Endpoint for S3 (and DynamoDB) provides free, private access from VPC to S3 via the AWS network — no internet, no NAT, no Direct Connect needed.
+**Why D is correct.** VPC Gateway Endpoint for S3 (and DynamoDB) provides free, private access from VPC to S3 via the AWS network, no internet, no NAT, no Direct Connect needed.
 
 **Why the other options are wrong.**
-- A: NAT Gateway gives outbound internet — not private.
+- A: NAT Gateway gives outbound internet, not private.
 - B: Direct Connect is for on-prem-to-AWS, not VPC-to-S3.
 - C: Internet Gateway routes through the public internet.
 
@@ -396,7 +396,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Why the other options are wrong.**
 - B: Failover is active/passive for DR.
-- C: Geolocation routes by user's country — not necessarily lowest latency.
+- C: Geolocation routes by user's country, not necessarily lowest latency.
 - D: Weighted is for A/B testing or gradual rollouts.
 
 **Exam-takeaway.** Read the trigger word: "lowest latency" → Latency. "country/compliance" → Geolocation. "A/B test" → Weighted. "primary/standby" → Failover.
@@ -405,10 +405,10 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q15. Answer: C**
 
-**Why C is correct.** Direct Connect is dedicated 1/10/100 Gbps private fiber, not over the internet. It is NOT encrypted by default — for encryption pair with a VPN or use MACsec on DX.
+**Why C is correct.** Direct Connect is dedicated 1/10/100 Gbps private fiber, not over the internet. It is NOT encrypted by default, for encryption pair with a VPN or use MACsec on DX.
 
 **Why the other options are wrong.**
-- A: Direct Connect is NOT encrypted by default — a top exam trap.
+- A: Direct Connect is NOT encrypted by default, a top exam trap.
 - B: CDN caching is CloudFront.
 - D: Free DDoS protection is Shield Standard.
 
@@ -418,12 +418,12 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q16. Answer: C**
 
-**Why C is correct.** ALB (Application Load Balancer) operates at Layer 7 — it can route by URL path, host header, HTTP method, etc.
+**Why C is correct.** ALB (Application Load Balancer) operates at Layer 7, it can route by URL path, host header, HTTP method, etc.
 
 **Why the other options are wrong.**
-- A: NLB is Layer 4 (TCP/UDP) — no awareness of URLs.
+- A: NLB is Layer 4 (TCP/UDP), no awareness of URLs.
 - B: GWLB is Layer 3 for inserting security appliances.
-- D: CLB is the legacy Classic Load Balancer — being deprecated.
+- D: CLB is the legacy Classic Load Balancer, being deprecated.
 
 **Exam-takeaway.** "Path-based routing" / "URL routing" / "Host-based routing" / "WebSockets" → ALB. "TCP/UDP" / "static IP" / "lowest latency" → NLB.
 
@@ -431,7 +431,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q17. Answer: C**
 
-**Why C is correct.** CloudFront caches content at 400+ Edge Locations worldwide — the geographically distributed PoP layer.
+**Why C is correct.** CloudFront caches content at 400+ Edge Locations worldwide, the geographically distributed PoP layer.
 
 **Why the other options are wrong.**
 - A: AZs are inside Regions, not edge-of-network.
@@ -444,7 +444,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q18. Answer: B**
 
-**Why B is correct.** AWS Outposts physically delivers AWS hardware racks (compute + storage) into your data center. Same APIs as the public cloud — hybrid pattern.
+**Why B is correct.** AWS Outposts physically delivers AWS hardware racks (compute + storage) into your data center. Same APIs as the public cloud, hybrid pattern.
 
 **Why the other options are wrong.**
 - A: Wavelength puts AWS *inside 5G carrier networks*, not your DC.
@@ -470,7 +470,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q20. Answer: D**
 
-**Why D is correct.** Fargate is the serverless container *launch type* for ECS or EKS — you bring the container, Fargate provisions the host. Zero EC2 management.
+**Why D is correct.** Fargate is the serverless container *launch type* for ECS or EKS, you bring the container, Fargate provisions the host. Zero EC2 management.
 
 **Why the other options are wrong.**
 - A: EC2 means you manage hosts.
@@ -522,11 +522,11 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q24. Answer: A**
 
-**Why A is correct.** AWS Pricing Calculator (calculator.aws) lets you estimate AWS spend BEFORE you deploy — input services, regions, usage, get a forecast.
+**Why A is correct.** AWS Pricing Calculator (calculator.aws) lets you estimate AWS spend BEFORE you deploy, input services, regions, usage, get a forecast.
 
 **Why the other options are wrong.**
 - B: Cost Explorer is for past spend visualization + forecasting *based on historical data*.
-- C: Budgets sets alerts on actual spend — after-the-fact.
+- C: Budgets sets alerts on actual spend, after-the-fact.
 - D: Trusted Advisor recommends best practices but doesn't estimate cost from scratch.
 
 **Exam-takeaway.** "Estimate BEFORE deploying" → Pricing Calculator. "Visualize past + forecast" → Cost Explorer. "Alert when threshold crossed" → Budgets.
@@ -535,12 +535,12 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q25. Answer: C**
 
-**Why C is correct.** NAT Gateway provides outbound-only internet for instances in private subnets — they can reach internet (for OS updates, API calls) but can't be reached from internet.
+**Why C is correct.** NAT Gateway provides outbound-only internet for instances in private subnets, they can reach internet (for OS updates, API calls) but can't be reached from internet.
 
 **Why the other options are wrong.**
 - A: Inbound from internet to private subnet is what an IGW + public IP does.
 - B: CDN caching is CloudFront.
-- D: Free + unlimited is wrong — NAT Gateway is per-hour + per-GB.
+- D: Free + unlimited is wrong, NAT Gateway is per-hour + per-GB.
 
 **Exam-takeaway.** "Private subnet needs outbound internet" → NAT Gateway. Per-AZ for HA. Not free.
 
@@ -551,7 +551,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 **Why A is correct.** VPC Peering is explicitly non-transitive: A↔B + B↔C does NOT give A access to C. You'd need a separate peering A↔C, or Transit Gateway.
 
 **Why the other options are wrong.**
-- B: It is NOT transitive — opposite of correct.
+- B: It is NOT transitive, opposite of correct.
 - C: Works within and across Regions.
 - D: Doesn't require Direct Connect.
 
@@ -561,7 +561,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q27. Answer: D**
 
-**Why D is correct.** Snowcone, Snowball Edge (Storage + Compute variants), and Snowmobile are all part of the AWS Snow Family — physical petabyte data transfer.
+**Why D is correct.** Snowcone, Snowball Edge (Storage + Compute variants), and Snowmobile are all part of the AWS Snow Family, physical petabyte data transfer.
 
 **Why the other options are wrong.**
 - A: GovCloud is isolated regions, not migration devices.
@@ -577,8 +577,8 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 **Why A is correct.** S3 Glacier Deep Archive is the cheapest S3 tier, with 12–48 hour retrieval times. Designed for "must keep, almost never read."
 
 **Why the other options are wrong.**
-- B: Glacier Instant Retrieval is ms retrieval — more expensive.
-- C: Standard-IA is ms retrieval — more expensive.
+- B: Glacier Instant Retrieval is ms retrieval, more expensive.
+- C: Standard-IA is ms retrieval, more expensive.
 - D: EBS gp3 is block storage, not archive.
 
 **Exam-takeaway.** "Cheapest archive, hours-long retrieval OK" → Glacier Deep Archive. "Cheapest archive, ms retrieval needed" → Glacier Instant Retrieval.
@@ -600,7 +600,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q30. Answer: A**
 
-**Why A is correct.** CloudFormation (or its higher-level cousin CDK) lets you describe infrastructure as code — repeatable, version-controlled, auditable.
+**Why A is correct.** CloudFormation (or its higher-level cousin CDK) lets you describe infrastructure as code, repeatable, version-controlled, auditable.
 
 **Why the other options are wrong.**
 - B: Management Console is point-and-click; not version-controlled.
@@ -613,12 +613,12 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 
 **Q31. Answer: C**
 
-**Why C is correct.** "Guarantee 100% uptime" is NOT a listed cloud benefit — no service guarantees 100%, and AWS's published 6 benefits don't claim it. The 6 benefits are: variable expense, economies of scale, stop guessing capacity, speed/agility, stop running DCs, go global in minutes.
+**Why C is correct.** "Guarantee 100% uptime" is NOT a listed cloud benefit, no service guarantees 100%, and AWS's published 6 benefits don't claim it. The 6 benefits are: variable expense, economies of scale, stop guessing capacity, speed/agility, stop running DCs, go global in minutes.
 
 **Why the other options are wrong.**
-- A: "Trade fixed for variable expense" — first listed benefit.
-- B: "Go global in minutes" — sixth listed benefit.
-- D: "Stop guessing capacity" — third listed benefit.
+- A: "Trade fixed for variable expense", first listed benefit.
+- B: "Go global in minutes", sixth listed benefit.
+- D: "Stop guessing capacity", third listed benefit.
 
 **Exam-takeaway.** Memorize the 6 cloud benefits *literally*. Any answer that claims "100%" is almost always wrong.
 
@@ -643,7 +643,7 @@ Treat these as a teaching pass — in case-method style: every question gets a w
 |-------|---------|
 | 30–32 | 🏆 Ready for Practice Exam 2 |
 | 26–29 | ✅ Good foundation; review wrong answers |
-| 22–25 | ⚠️ Pass-equivalent but tight — re-study weak modules |
+| 22–25 | ⚠️ Pass-equivalent but tight, re-study weak modules |
 | <22 | 🔁 Re-study Modules 1–4; retake in 2–3 days |
 
 ---
@@ -667,7 +667,7 @@ For EACH wrong answer:
 | 4, 5, 6, 19, 20, 21, 30 | 2 (Compute) |
 | 7, 8, 9, 10, 11, 22, 27, 28 | 3 (Storage) |
 | 12, 13, 14, 15, 16, 17, 25, 26, 32 | 4 (Networking & CDN) |
-| 24 | 7 (preview — Pricing Calculator) |
+| 24 | 7 (preview, Pricing Calculator) |
 
 ---
 

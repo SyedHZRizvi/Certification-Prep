@@ -8,7 +8,7 @@
 
 | Level | What | How |
 |-------|------|-----|
-| **L0** | Ask in prompt — hope for the best | Plain prompt |
+| **L0** | Ask in prompt, hope for the best | Plain prompt |
 | **L1** | Valid JSON guaranteed | OpenAI `response_format={"type": "json_object"}` |
 | **L2** | Schema-enforced JSON | OpenAI Structured Outputs; Anthropic forced tool use; Gemini `response_schema` |
 
@@ -84,7 +84,7 @@ class Item(BaseModel):
 | `Field(..., ge=N, le=N)` | Constrained int/float |
 | `Field(..., pattern=r"...")` | Regex constraint |
 | `Field(..., min_length=N, max_length=N)` | String length |
-| `Field(..., description="...")` | Visible to model — improves accuracy |
+| `Field(..., description="...")` | Visible to model, improves accuracy |
 | `Literal["a","b","c"]` | Categorical (or use Enum) |
 | `str | None` / `Optional[str]` | Optional field |
 | `@field_validator` | Semantic check after parsing |
@@ -134,7 +134,7 @@ class Item(BaseModel):
 | Schema impossible to satisfy | Mark fields Optional |
 | Deep nesting → coherence loss | Flatten or multi-step extraction |
 | Latency too high | Use Haiku/Flash/mini |
-| Hallucinated enum values | Use `Enum` or `Literal` — impossible to violate |
+| Hallucinated enum values | Use `Enum` or `Literal`, impossible to violate |
 
 ---
 
@@ -142,8 +142,8 @@ class Item(BaseModel):
 
 ```python
 class Result(BaseModel):
-    reasoning: str   # FIRST — model thinks here
-    answer: str      # AFTER — conditioned on reasoning
+    reasoning: str   # FIRST, model thinks here
+    answer: str      # AFTER, conditioned on reasoning
 ```
 
 🎯 *Pydantic preserves field order. The model literally writes `reasoning` first.*
@@ -214,10 +214,10 @@ class Priority(str, Enum):
 class ExtractedTicket(BaseModel):
     """Customer support ticket extraction."""
 
-    # Reasoning FIRST — conditions everything below
+    # Reasoning FIRST, conditions everything below
     reasoning: str = Field(..., description="One sentence rationale for the classification.")
 
-    # Categorical with Literal — model cannot invent new values
+    # Categorical with Literal, model cannot invent new values
     category: Literal["billing", "technical", "shipping", "refund", "other"]
 
     # Enum with semantic meaning
@@ -232,7 +232,7 @@ class ExtractedTicket(BaseModel):
     # List with bounds
     relevant_tags: list[str] = Field(default_factory=list, max_length=5)
 
-    # Self-rated confidence — drive downstream routing
+    # Self-rated confidence, drive downstream routing
     confidence: float = Field(..., ge=0.0, le=1.0)
 
     @field_validator("customer_id")
@@ -267,9 +267,9 @@ ticket = client.chat.completions.create(
 | Plain `str` for categorical (e.g., `severity: str`) | Use `Literal[...]` or `Enum` |
 | `int` for bounded number (e.g., `rating: int`) | Use `Field(..., ge=N, le=M)` |
 | Required field that model often can't fill | Mark `Optional[...]` |
-| No `description=` on fields | Add — model reads them |
+| No `description=` on fields | Add, model reads them |
 | 10-level nested schema | Flatten or multi-step extraction |
-| `reasoning` field AFTER `answer` | Put `reasoning` BEFORE — generates first |
+| `reasoning` field AFTER `answer` | Put `reasoning` BEFORE, generates first |
 | Cross-validation across fields | Use a `@model_validator(mode='after')` |
 
 ---

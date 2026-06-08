@@ -252,28 +252,28 @@ D. The active material's texture slot
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — Cycles = path tracer (physically accurate light simulation)
-Q2.  C — EEVEE = stylized animation, previews, real-time quality
-Q3.  C — OptiX requires NVIDIA RTX (or compatible Tensor Cores)
-Q4.  D — MP4 crash = restart from frame 1; PNG sequences are resumable
-Q5.  C — EXR MultiLayer stores all render passes in one file per frame
-Q6.  C — Cryptomatte = click-to-pick per-object masks in Compositor
-Q7.  D — 128–256 samples + denoising ≈ 5–15 seconds per frame on RTX 3080
-Q8.  C — Z/Depth pass = per-pixel camera distance (for DoF in comp)
-Q9.  C — Separate View Layers with different sample counts per object group
-Q10. C — Render Layers node accesses the current scene's render passes
-Q11. D — Sprite Fright = 2048×858 (2K DCI Scope)
-Q12. C — Color Balance = lift/gamma/gain (shadows/midtones/highlights)
-Q13. D — AO pass multiplied over diffuse darkens contact shadow areas
-Q14. D — Glare node = streaks, bloom, fog glow around bright pixels
-Q15. C — OIDN = Intel's AI denoiser, CPU-based, no specific GPU needed
-Q16. B — 128–512 samples is the production range with OptiX denoising
-Q17. C — Denoise node needs Albedo + Normal denoising data passes
-Q18. D — JPEG is lossy 8-bit; not suitable as intermediate
-Q19. B — Frame Step 2 = render every other frame
-Q20. C — Flamenco = Blender's open-source network render manager
-Q21. D — Sprite Fright farm: 500+ CPU cores + 50+ NVIDIA RTX GPUs
-Q22. D — Compositing workspace = node-based Compositor
-Q23. C — CRF 18–23 = high quality H.264 (lower = higher quality/larger file)
-Q24. C — Composite node writes to the Output Properties render path
+Q1.  B, Cycles = path tracer (physically accurate light simulation)
+Q2.  C, EEVEE = stylized animation, previews, real-time quality
+Q3.  C, OptiX requires NVIDIA RTX (or compatible Tensor Cores)
+Q4.  D, MP4 crash = restart from frame 1; PNG sequences are resumable
+Q5.  C, EXR MultiLayer stores all render passes in one file per frame
+Q6.  C, Cryptomatte = click-to-pick per-object masks in Compositor
+Q7.  D, 128–256 samples + denoising ≈ 5–15 seconds per frame on RTX 3080
+Q8.  C, Z/Depth pass = per-pixel camera distance (for DoF in comp)
+Q9.  C, Separate View Layers with different sample counts per object group
+Q10. C, Render Layers node accesses the current scene's render passes
+Q11. D, Sprite Fright = 2048×858 (2K DCI Scope)
+Q12. C, Color Balance = lift/gamma/gain (shadows/midtones/highlights)
+Q13. D, AO pass multiplied over diffuse darkens contact shadow areas
+Q14. D, Glare node = streaks, bloom, fog glow around bright pixels
+Q15. C, OIDN = Intel's AI denoiser, CPU-based, no specific GPU needed
+Q16. B, 128–512 samples is the production range with OptiX denoising
+Q17. C, Denoise node needs Albedo + Normal denoising data passes
+Q18. D, JPEG is lossy 8-bit; not suitable as intermediate
+Q19. B, Frame Step 2 = render every other frame
+Q20. C, Flamenco = Blender's open-source network render manager
+Q21. D, Sprite Fright farm: 500+ CPU cores + 50+ NVIDIA RTX GPUs
+Q22. D, Compositing workspace = node-based Compositor
+Q23. C, CRF 18–23 = high quality H.264 (lower = higher quality/larger file)
+Q24. C, Composite node writes to the Output Properties render path
 ```

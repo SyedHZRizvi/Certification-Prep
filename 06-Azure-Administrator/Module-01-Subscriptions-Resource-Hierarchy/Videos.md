@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Subscriptions & Resource Hierarchy
 
-> **How to use:** Click any card to open a YouTube search for that topic — pick the top current result. Watch in order; pause to follow along in the Azure portal if you can.
+> **How to use:** Click any card to open a YouTube search for that topic, pick the top current result. Watch in order; pause to follow along in the Azure portal if you can.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Azure Resource Groups Explained</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 12 min · Clear, beginner-friendly</span>
     </div>
   </a>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Policy & Initiatives — Practical Examples</p>
+      <p class="vg-title">Azure Policy & Initiatives, Practical Examples</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 20 min · Inheritance + exemptions</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Azure Tags — Inheritance, Policy & Best Practices</p>
+      <p class="vg-title">Azure Tags, Inheritance, Policy & Best Practices</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 10 min · Why tags don't inherit</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Resource Locks Deep Dive — When ReadOnly Breaks Things</p>
+      <p class="vg-title">Resource Locks Deep Dive, When ReadOnly Breaks Things</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 18 min · Gotchas you'll hit in prod</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Azure Blueprints Deprecated — What Replaces Them?</p>
+      <p class="vg-title">Azure Blueprints Deprecated, What Replaces Them?</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 12 min · Template specs + Bicep</span>
     </div>
@@ -134,11 +134,11 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | THE Azure channel. Long-form, technically rigorous. |
-| **Adam Marczak — Azure for Everyone** | Beginner-friendly, polished animations. |
+| **Adam Marczak, Azure for Everyone** | Beginner-friendly, polished animations. |
 | **Tim Warner** | Practical exam-prep angle for AZ-104/AZ-305. |
 | **Inside Cloud and Security** | Real-world enterprise patterns. |
 | **Travis Roberts** | Short, focused how-to videos. |
-| **Microsoft Mechanics** | Official Microsoft channel — high production, vendor-tinted. |
+| **Microsoft Mechanics** | Official Microsoft channel, high production, vendor-tinted. |
 
 ---
 
@@ -149,7 +149,7 @@ Answer these in your notebook (without re-watching):
 1. List the 4 levels of the Azure resource hierarchy from top to bottom.
 2. What's the difference between a management group and a subscription?
 3. Do tags inherit automatically from RG to resource? How do you make them inherit?
-4. When would you pick `ReadOnly` vs `CanNotDelete` lock — and what breaks with ReadOnly?
+4. When would you pick `ReadOnly` vs `CanNotDelete` lock, and what breaks with ReadOnly?
 5. Name three things you must check before moving a resource across subscriptions.
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watch the John Savill hierarchy video.

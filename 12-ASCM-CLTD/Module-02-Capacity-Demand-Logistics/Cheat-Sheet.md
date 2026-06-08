@@ -78,7 +78,7 @@ RMSE           = √(Σ(A−F)²/N)       (penalizes big misses)
 
 ---
 
-## 📉 Theory of Constraints — 5 Focusing Steps
+## 📉 Theory of Constraints, 5 Focusing Steps
 
 ```
 1. Identify the bottleneck
@@ -110,7 +110,7 @@ Usually WRONG:
 
 ## ⚠️ Anti-Patterns
 
-- ❌ Sizing for average instead of peak — but having no plan for peak
+- ❌ Sizing for average instead of peak, but having no plan for peak
 - ❌ Treating random noise as seasonality
 - ❌ Ignoring tracking signal alarms
 
@@ -119,7 +119,7 @@ Usually WRONG:
 ## ✏️ Quick Self-Check
 
 1. Rated capacity formula? ___
-2. Lead vs Lag vs Match — one-line each? ___
+2. Lead vs Lag vs Match, one-line each? ___
 3. MAD vs bias? ___
 4. Tracking signal alarm threshold? ___
 5. ABC: A-mover slotting location? ___

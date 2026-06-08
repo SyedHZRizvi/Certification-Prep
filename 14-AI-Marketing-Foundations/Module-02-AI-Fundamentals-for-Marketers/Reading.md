@@ -1,13 +1,13 @@
 # Module 2: AI Fundamentals for Marketers 🧠
 
-> **Why this module matters:** Every other module of this course assumes you can pronounce "embedding," "context window," and "RAG" without flinching. This module is the foundation. You won't become an ML engineer — you'll become a marketer who can credibly run a meeting where the engineers are talking.
+> **Why this module matters:** Every other module of this course assumes you can pronounce "embedding," "context window," and "RAG" without flinching. This module is the foundation. You won't become an ML engineer, you'll become a marketer who can credibly run a meeting where the engineers are talking.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 — The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) — POESM, funnels, walled gardens; you'll need this vocabulary
+> - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM, funnels, walled gardens; you'll need this vocabulary
 > - Basic digital fluency: knowing what a "browser," "API," and "database" are at a layperson level
 > - Comfort reading a simple table of numbers (token counts, context windows in K/M)
 >
-> You do *not* need a CS or ML background. No math beyond arithmetic. If you've used ChatGPT or Claude once or twice, you're ready. If you've never used either, open a free tier alongside this reading — you'll get more out of it.
+> You do *not* need a CS or ML background. No math beyond arithmetic. If you've used ChatGPT or Claude once or twice, you're ready. If you've never used either, open a free tier alongside this reading, you'll get more out of it.
 
 ---
 
@@ -17,7 +17,7 @@ Every December, **Spotify Wrapped** crashes social feeds for one week. Hundreds 
 
 Wrapped is *not* a marketing campaign. It's a data product.
 
-Behind the scenes, Wrapped runs on a recommendation engine called **Aerosolve** (open-sourced by Spotify's research team) and a constellation of ML models that have been classifying listener behavior all year. The campaign — the colors, the copy, the slick scrollable cards — is the *output layer* of an AI system that has been quietly working on every user's data since January 1st.
+Behind the scenes, Wrapped runs on a recommendation engine called **Aerosolve** (open-sourced by Spotify's research team) and a constellation of ML models that have been classifying listener behavior all year. The campaign the colors, the copy, the slick scrollable cards is the *output layer* of an AI system that has been quietly working on every user's data since January 1st.
 
 This is the lesson:
 
@@ -50,11 +50,11 @@ The term "AI" has been overloaded for 60 years. For your purposes, here's the cl
 |---|---|
 | 1956 | Term "Artificial Intelligence" coined at the Dartmouth Workshop |
 | 1997 | IBM Deep Blue defeats Garry Kasparov at chess |
-| 2012 | AlexNet wins ImageNet — kickstarts the deep-learning era |
-| 2017 | Google publishes "Attention Is All You Need" — introduces the **Transformer** architecture (the basis of every modern LLM) |
-| 2018 | Google BERT — first widely-used Transformer for understanding (search) |
-| 2020 | GPT-3 released — first widely-known LLM with general-purpose text generation |
-| 2022 | ChatGPT launches November 30, 2022 — fastest-growing consumer app in history (100M users in 2 months, per UBS) |
+| 2012 | AlexNet wins ImageNet, kickstarts the deep-learning era |
+| 2017 | Google publishes "Attention Is All You Need", introduces the **Transformer** architecture (the basis of every modern LLM) |
+| 2018 | Google BERT, first widely-used Transformer for understanding (search) |
+| 2020 | GPT-3 released, first widely-known LLM with general-purpose text generation |
+| 2022 | ChatGPT launches November 30, 2022, fastest-growing consumer app in history (100M users in 2 months, per UBS) |
 | 2023 | GPT-4, Claude, Bard / Gemini, Midjourney v5, DALL-E 3 |
 | 2024 | AI Overviews launch broadly in Google Search; multimodal models become mainstream |
 | 2025–2026 | Agentic AI, longer context windows, AI-native search reaches market share |
@@ -68,7 +68,7 @@ The term "AI" has been overloaded for 60 years. For your purposes, here's the cl
 You don't need the math. You need the mental model.
 
 ### Step 1: Tokens
-An LLM doesn't read words. It reads **tokens** — small fragments of text. Roughly:
+An LLM doesn't read words. It reads **tokens**, small fragments of text. Roughly:
 
 > 1 token ≈ 4 characters of English ≈ ¾ of a word
 
@@ -77,7 +77,7 @@ The word "marketing" is one token. "Marketers" is two ("Marketer" + "s"). Whites
 **Why marketers should care:** Pricing for APIs (OpenAI, Anthropic, Google) is per-token. Context-window limits are per-token. When you write a 2,000-word prompt, you're sending ~2,700 tokens.
 
 ### Step 2: The Context Window
-An LLM has a **context window** — the maximum number of tokens it can "see" at once. Whatever you put in (your prompt + system instructions + uploaded documents + chat history) plus what it outputs must fit inside the window.
+An LLM has a **context window**, the maximum number of tokens it can "see" at once. Whatever you put in (your prompt + system instructions + uploaded documents + chat history) plus what it outputs must fit inside the window.
 
 | Model family | Context window (approx, 2026) |
 |---|---|
@@ -97,20 +97,20 @@ At its heart, an LLM is doing **one thing repeatedly**: looking at all the token
 >
 > Output: "bottom"
 
-That's it. Everything else — chatting, reasoning, citations, code generation — is "predict the next token" repeated thousands of times.
+That's it. Everything else chatting, reasoning, citations, code generation is "predict the next token" repeated thousands of times.
 
 ### Step 4: Embeddings
-Behind the scenes, every token is converted into a **vector** — a list of numbers, typically 512 to 4,096 dimensions long. Tokens with similar meanings end up with similar vectors.
+Behind the scenes, every token is converted into a **vector**, a list of numbers, typically 512 to 4,096 dimensions long. Tokens with similar meanings end up with similar vectors.
 
 This is called an **embedding**. "Marketing" and "advertising" have very similar embeddings. "Marketing" and "octopus" do not.
 
-**Why marketers should care:** Embeddings power *semantic search* — searching by meaning, not by keyword. If your customer types "how do I get more visitors?" and your knowledge base only contains an article titled "boost website traffic," classic keyword search misses. Semantic search (via embeddings) connects them.
+**Why marketers should care:** Embeddings power *semantic search*, searching by meaning, not by keyword. If your customer types "how do I get more visitors?" and your knowledge base only contains an article titled "boost website traffic," classic keyword search misses. Semantic search (via embeddings) connects them.
 
 ### Step 5: Training vs Inference
 - **Training:** The expensive, multi-month process where the model learns from trillions of tokens. You will never train an LLM. (OpenAI, Anthropic, Google, Meta do.)
 - **Inference:** The cheap, fast process where you send a prompt and get a response. This is what you pay for.
 
-🧠 **Memory mnemonic:** "T**T**ECT" — **T**okens, **T**ransformer, **E**mbeddings, **C**ontext window, **T**raining/inference.
+🧠 **Memory mnemonic:** "T**T**ECT", **T**okens, **T**ransformer, **E**mbeddings, **C**ontext window, **T**raining/inference.
 
 ---
 
@@ -123,7 +123,7 @@ The 2026 foundation-model landscape has roughly five families that matter for ma
 | **GPT-4 / GPT-4o / GPT-5** | OpenAI | Best-in-class reasoning; widest tool ecosystem; integrations with Microsoft 365 | Closed-source; data residency concerns for EU |
 | **Claude (Opus / Sonnet / Haiku)** | Anthropic | Excellent long-form writing; large context windows; strong safety record | Slightly more expensive per token at the high end; smaller tool ecosystem |
 | **Gemini (1.5 / 2.0)** | Google | Best multimodal (text + image + video); deep Google Workspace integration | Newer; quality has been uneven on creative writing |
-| **Llama 3 / 3.1** | Meta | Open-source — you can host it yourself; free | Requires technical setup; smaller variants weaker |
+| **Llama 3 / 3.1** | Meta | Open-source, you can host it yourself; free | Requires technical setup; smaller variants weaker |
 | **Mistral / Mixtral** | Mistral AI | Strong open-source European option (EU-AI-Act friendly) | Smaller ecosystem |
 
 🎯 **MEMORIZE THIS.** When a Google or HubSpot exam asks "which AI tool would you use for X?", the honest answer is usually "any of the major frontier models." But know the families.
@@ -132,7 +132,7 @@ The 2026 foundation-model landscape has roughly five families that matter for ma
 
 ---
 
-## 🍰 Prompting vs RAG vs Fine-Tuning — The Three Levels
+## 🍰 Prompting vs RAG vs Fine-Tuning, The Three Levels
 
 This is the most important conceptual distinction in this module. You will be asked about it on every AI-flavored marketing exam.
 
@@ -146,7 +146,7 @@ Before answering, the system *retrieves* relevant documents from your own knowle
 
 **Architecture:** Your docs → embedded into vectors → stored in a vector database → user question is also embedded → top-K most-similar docs retrieved → docs + question fed to LLM → LLM answers grounded in your docs.
 
-**Use when:** You need the model to answer using *your* knowledge — your brand voice, your product docs, your case studies, your support tickets — that wasn't in its training data.
+**Use when:** You need the model to answer using *your* knowledge your brand voice, your product docs, your case studies, your support tickets that wasn't in its training data.
 
 **Real-world example:** A SaaS company's "AI support agent" that answers using their help center is almost always RAG, not fine-tuning.
 
@@ -174,7 +174,7 @@ You take a foundation model and continue training it on your own dataset, perman
 
 ## 👻 Hallucinations: The #1 Risk
 
-An LLM is a next-token predictor. It does not "know" anything. When it doesn't have the right information, it doesn't say "I don't know" — it generates a plausible-sounding answer that may be **completely false**.
+An LLM is a next-token predictor. It does not "know" anything. When it doesn't have the right information, it doesn't say "I don't know", it generates a plausible-sounding answer that may be **completely false**.
 
 This is called a **hallucination**.
 
@@ -214,7 +214,7 @@ We'll go deeper on each of these in Modules 4 and 5.
 
 ## 🛠️ Step-by-Step Tutorial: Your First Marketing Prompt Library
 
-Open ChatGPT, Claude, or Gemini and try this exercise — it takes about 20 minutes.
+Open ChatGPT, Claude, or Gemini and try this exercise, it takes about 20 minutes.
 
 ### Tutorial 1: A Repeatable Prompt Template
 
@@ -277,7 +277,7 @@ We will return to this in Module 10.
 
 ## ⚖️ A Quick Word on Ethics, Bias, and Copyright
 
-This is a teaser — Module 9 covers it in depth.
+This is a teaser, Module 9 covers it in depth.
 
 - LLMs are trained on the open internet, which is full of biased text. Models can reproduce or amplify race, gender, age, and economic biases. The MIT Media Lab's *Gender Shades* project (Buolamwini, 2018) was the canonical study that surfaced this for facial recognition; for text, more recent work by Anthropic and OpenAI on "constitutional AI" and RLHF attempts to mitigate it.
 - LLMs sometimes reproduce copyrighted text verbatim. The *New York Times v. OpenAI* lawsuit (December 2023, ongoing) is the load-bearing test case.
@@ -337,7 +337,7 @@ For now, the practical marketer rules:
 | **Training** | Building the model from scratch (the expensive part) |
 | **Pretraining** | The first big training stage on broad data |
 | **Fine-Tuning** | Continued training on your own data |
-| **RAG** | Retrieval-Augmented Generation — model + your docs |
+| **RAG** | Retrieval-Augmented Generation, model + your docs |
 | **Hallucination** | Plausible-sounding false output |
 | **Temperature** | How "random" the model's output is |
 | **Prompt Engineering** | The craft of writing instructions that get good output |
@@ -361,7 +361,7 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 3: SEO in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md)
 
@@ -374,28 +374,28 @@ You now know:
 
 ---
 
-## 💼 Case Study — Klarna (2024)
+## 💼 Case Study, Klarna (2024)
 
-**Situation.** Klarna, the Swedish buy-now-pay-later fintech, ran a global customer-service operation supporting roughly 150 million consumers across 45 markets in 23 languages. By late 2023, the cost of human-staffed support — across an outsourced agent network of approximately 700 full-time-equivalents — had become a major operating-margin drag, and Klarna's then-IPO trajectory put intense pressure on cost-to-serve. The CEO Sebastian Siemiatkowski had been publicly enthusiastic about generative AI since the launch of ChatGPT, and Klarna had been one of the first major non-tech enterprises to sign an OpenAI enterprise partnership.
+**Situation.** Klarna, the Swedish buy-now-pay-later fintech, ran a global customer-service operation supporting roughly 150 million consumers across 45 markets in 23 languages. By late 2023, the cost of human-staffed support across an outsourced agent network of approximately 700 full-time-equivalents had become a major operating-margin drag, and Klarna's then-IPO trajectory put intense pressure on cost-to-serve. The CEO Sebastian Siemiatkowski had been publicly enthusiastic about generative AI since the launch of ChatGPT, and Klarna had been one of the first major non-tech enterprises to sign an OpenAI enterprise partnership.
 
-**Decision.** In February 2024 Klarna publicly disclosed that, after a one-month live test, it had deployed an **OpenAI-powered customer-service assistant** capable of handling roughly two-thirds of all consumer-service chats end-to-end (without escalation to a human agent). The assistant ran on a fine-tuned + RAG-grounded GPT-4 stack — using RAG over Klarna's own help-center articles, refund policies, and consumer dispute records, with a multi-language layer wrapping the model. The system was designed to do "the work of 700 full-time agents" — those 700 had been employed via an outsourced contract that Klarna chose not to renew.
+**Decision.** In February 2024 Klarna publicly disclosed that, after a one-month live test, it had deployed an **OpenAI-powered customer-service assistant** capable of handling roughly two-thirds of all consumer-service chats end-to-end (without escalation to a human agent). The assistant ran on a fine-tuned + RAG-grounded GPT-4 stack using RAG over Klarna's own help-center articles, refund policies, and consumer dispute records, with a multi-language layer wrapping the model. The system was designed to do "the work of 700 full-time agents" those 700 had been employed via an outsourced contract that Klarna chose not to renew.
 
-**Outcome.** Klarna's own public Q1 2024 release reported: 2.3 million conversations handled by the AI assistant in its first month; customer-satisfaction scores statistically indistinguishable from human-agent baselines; resolution times reduced from an average of 11 minutes (human) to under 2 minutes (AI); estimated annual cost savings of **~$40 million**. The story drove a wave of coverage in *The Wall Street Journal*, *Bloomberg*, and *Fortune*, and became the canonical 2024 reference for "this is what generative AI actually does at enterprise scale." Subsequent reporting in 2025 surfaced a caveat — Klarna later announced it would re-hire some human agents for complex disputes, suggesting the 2/3 ratio was not the ceiling but a steady-state mix.
+**Outcome.** Klarna's own public Q1 2024 release reported: 2.3 million conversations handled by the AI assistant in its first month; customer-satisfaction scores statistically indistinguishable from human-agent baselines; resolution times reduced from an average of 11 minutes (human) to under 2 minutes (AI); estimated annual cost savings of **~$40 million**. The story drove a wave of coverage in *The Wall Street Journal*, *Bloomberg*, and *Fortune*, and became the canonical 2024 reference for "this is what generative AI actually does at enterprise scale." Subsequent reporting in 2025 surfaced a caveat, Klarna later announced it would re-hire some human agents for complex disputes, suggesting the 2/3 ratio was not the ceiling but a steady-state mix.
 
-**Lesson for the exam / for practitioners.** Klarna is the most-cited 2024 reference for the *RAG-plus-LLM enterprise pattern* taught in this module: a foundation model (GPT-4) is the engine, but the deployment-grade system layered RAG over Klarna's own first-party documents (refund policies, help center, dispute history). That's not "fine-tuning" and it's not "prompt engineering alone" — it's the middle layer (RAG) doing 80% of the value lift. The case also illustrates the hallucination-mitigation discipline: customer service is a high-trust context, so Klarna grounded the model in verifiable internal documents rather than relying on the model's pretraining. The exam-relevant principle: when a case asks "we want our AI to answer using our knowledge base in our brand voice," the right answer is almost always **RAG + a strong system prompt**, not fine-tuning.
+**Lesson for the exam / for practitioners.** Klarna is the most-cited 2024 reference for the *RAG-plus-LLM enterprise pattern* taught in this module: a foundation model (GPT-4) is the engine, but the deployment-grade system layered RAG over Klarna's own first-party documents (refund policies, help center, dispute history). That's not "fine-tuning" and it's not "prompt engineering alone", it's the middle layer (RAG) doing 80% of the value lift. The case also illustrates the hallucination-mitigation discipline: customer service is a high-trust context, so Klarna grounded the model in verifiable internal documents rather than relying on the model's pretraining. The exam-relevant principle: when a case asks "we want our AI to answer using our knowledge base in our brand voice," the right answer is almost always **RAG + a strong system prompt**, not fine-tuning.
 
 **Discussion (Socratic).**
 - Q1: Klarna's reported figure of "700 FTEs replaced" was widely covered, but later reporting suggested it brought some human agents back for complex cases. If you were Klarna's CMO or CTO in early 2024, how would you have framed the 700-agent number publicly without either overstating the win or understating the legitimate productivity gain?
 - Q2: The official answer here is RAG over fine-tuning. Why does RAG win for Klarna's customer-service use case specifically, and what kind of use case (give a concrete example) would have made fine-tuning the right call instead?
-- Q3: Klarna implicitly accepted the trade-off that ~1/3 of conversations still need human escalation. What's the dimension along which that 1/3 is distributed — and is the "best" remaining human work the *hardest* cases or the *most ambiguous-policy* cases? Defend a routing strategy.
+- Q3: Klarna implicitly accepted the trade-off that ~1/3 of conversations still need human escalation. What's the dimension along which that 1/3 is distributed, and is the "best" remaining human work the *hardest* cases or the *most ambiguous-policy* cases? Defend a routing strategy.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **RAG vs fine-tuning under a regulatory constraint.** Your company sells a regulated SaaS product (think healthcare or legal-tech). The CMO wants an AI assistant that answers prospect questions in your CEO's voice while citing FDA-approved language verbatim. A consultant insists you must fine-tune. Your engineer counters: "RAG over our documents + a strong system prompt for voice is faster and cheaper." Walk through the trade-offs. Which is the right call, and what's the smallest hybrid that buys you 90% of the benefit?
 2. **Token-cost economics of "drop everything in context."** A 1M-token context window enables you to stuff brand books, all past blog posts, and customer interviews into a single prompt. But each call now costs roughly 100× a small prompt. When is this the right call (use the math) and when is it negligent of cost? Pick a sample marketing use case and defend a specific token budget.
-3. **The hallucination floor.** An LLM is a next-token predictor. By that definition, hallucination is *inherent*, not a bug. Yet many marketers shipping AI-assisted content assume the next model version will "fix" it. Construct the argument that hallucination cannot be eliminated, only contained — and then construct the strongest counter-argument that retrieval, grounding, and verification *together* effectively reach the user-trust threshold. Where exactly is the line?
+3. **The hallucination floor.** An LLM is a next-token predictor. By that definition, hallucination is *inherent*, not a bug. Yet many marketers shipping AI-assisted content assume the next model version will "fix" it. Construct the argument that hallucination cannot be eliminated, only contained, and then construct the strongest counter-argument that retrieval, grounding, and verification *together* effectively reach the user-trust threshold. Where exactly is the line?
 4. **Model-family selection for a marketing team.** You're choosing between GPT-5, Claude (Opus 4.5), Gemini 2.0, Llama 3.1 (self-hosted), and Mistral. Set up a decision framework with at least 4 criteria (cost, EU data residency, brand-voice fidelity, ecosystem) and explain which model wins for a small e-commerce brand vs an EU bank's marketing team. Be prepared to defend each criterion's weight.
 5. **The "AI replaces marketers" debate, re-examined.** The reading says "AI replaces tasks, not jobs." A senior copywriter argues the opposite: AI's quality has reached a point where the *category* of "junior marketing copywriter" is functionally obsolete and pretending otherwise is dishonest career advice. Steelman both positions. Where do you actually draw the line, and what does that mean for what a 2026 marketing entry-level hire should learn first?
 
@@ -403,10 +403,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Generative AI for Everyone* — Andrew Ng (DeepLearning.AI, free Coursera audit). The most marketer-friendly intro to LLMs in existence.
-- 📖 *"Attention Is All You Need"* — Vaswani et al., 2017. The Transformer paper. You don't need the math; skim the abstract.
+- 📖 *Generative AI for Everyone*, Andrew Ng (DeepLearning.AI, free Coursera audit). The most marketer-friendly intro to LLMs in existence.
+- 📖 *"Attention Is All You Need"*, Vaswani et al., 2017. The Transformer paper. You don't need the math; skim the abstract.
 - 📰 *Harvard Business Review*, "How Generative AI Is Changing Creative Work" (Brynjolfsson, Li, Raymond, 2023).
-- 📰 *MIT Sloan Management Review* — multiple 2024–2025 case studies on enterprise GenAI adoption.
-- 📰 *Anthropic Research* — read at least one post; the "Constitutional AI" paper is the most cited safety reference.
-- 📰 Nielsen Norman Group — "The AI Trust Gap" (Pernice & Whitenton, 2024). UX research with implications for every AI-facing marketer.
-- 📰 McKinsey *State of AI* (annual) — usage stats and ROI benchmarks.
+- 📰 *MIT Sloan Management Review*, multiple 2024–2025 case studies on enterprise GenAI adoption.
+- 📰 *Anthropic Research*, read at least one post; the "Constitutional AI" paper is the most cited safety reference.
+- 📰 Nielsen Norman Group, "The AI Trust Gap" (Pernice & Whitenton, 2024). UX research with implications for every AI-facing marketer.
+- 📰 McKinsey *State of AI* (annual), usage stats and ROI benchmarks.

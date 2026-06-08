@@ -1,7 +1,7 @@
-# 🎓 Final Mock Exam — Claude Architect (60 Q / 60 min)
+# 🎓 Final Mock Exam, Claude Architect (60 Q / 60 min)
 
 > **Conditions:** Set a 60-minute timer. 60 questions. Sit it in one block.
-> **Pass mark:** 51/60 (~85%) — same as the live assessment.
+> **Pass mark:** 51/60 (~85%), same as the live assessment.
 > Take this 2–3 days before booking the real assessment. Score 51+ before declaring yourself ready.
 
 This exam covers ALL 8 modules with realistic weighting:
@@ -33,7 +33,7 @@ D. Meta in 2024
 
 ### 3. The Claude Sonnet tier is BEST described as:
 A. Latency-sensitive cheap inference
-B. The "default workhorse" — solid quality for general production work
+B. The "default workhorse", solid quality for general production work
 C. The smartest, slowest, most expensive
 D. Legacy / deprecated
 
@@ -43,7 +43,7 @@ B. BSL (BioSafety Levels)
 C. ISO 9001
 D. ITIL
 
-### 5. Claude vs GPT vs Gemini — Claude's standout strengths in 2026 include:
+### 5. Claude vs GPT vs Gemini, Claude's standout strengths in 2026 include:
 A. Real-time voice
 B. Agentic coding + structured extraction + long-context reasoning
 C. Video understanding only
@@ -195,7 +195,7 @@ D. Temperature
 
 ### 30. Computer use is currently:
 A. Generally available
-B. Beta — opt in via `betas=["computer-use-..."]`
+B. Beta, opt in via `betas=["computer-use-..."]`
 C. Deprecated
 D. Not on Sonnet
 
@@ -261,7 +261,7 @@ D. Real-time Activation
 
 ### 41. A 47-step trajectory for a simple question is USUALLY:
 A. Deep reasoning
-B. Thrashing — investigate; cap step count
+B. Thrashing, investigate; cap step count
 C. Optimal
 D. Random
 
@@ -277,7 +277,7 @@ B. A second LLM scoring the first's outputs against a rubric
 C. A regulatory body
 D. A debug tool
 
-### 44. A 600-page lease (~150K tokens) with multiple per-lease questions — BEST approach:
+### 44. A 600-page lease (~150K tokens) with multiple per-lease questions, BEST approach:
 A. RAG K=3
 B. Stuff full lease + caching
 C. RAG K=200
@@ -337,7 +337,7 @@ B. Anthropic over capacity; back off significantly; region failover; consider te
 C. File refund
 D. Switch vendor permanently
 
-### 54. US healthcare provider deploying Claude — appropriate hosting for HIPAA:
+### 54. US healthcare provider deploying Claude, appropriate hosting for HIPAA:
 A. Anthropic direct only
 B. AWS Bedrock with signed BAA + HIPAA-eligible region + zero-retention logs
 C. Self-host (impossible)
@@ -407,7 +407,7 @@ D. Skip moderation; trust the model
 - **45–50** → ⚠️ Close, but more study needed. Re-take in 1 week.
 - **<45** → 🔁 Re-read the modules that produced the most misses; restart eval cycle.
 
-### Topic breakdown — review these modules if you missed multiple from each section
+### Topic breakdown, review these modules if you missed multiple from each section
 
 - **Module 1 (Foundations)**: Q1–6 → if >2 missed, re-read Module 1
 - **Module 2 (Prompt Engineering)**: Q7–14, 31 → Module 2 if >3 missed

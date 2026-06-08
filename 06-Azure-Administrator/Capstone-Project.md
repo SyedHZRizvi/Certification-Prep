@@ -1,4 +1,4 @@
-# Capstone Project — AZ-104 Azure Administrator
+# Capstone Project, AZ-104 Azure Administrator
 
 > **Estimated effort:** 60–90 hours over 14 weeks (≈ 5–7 hours/week)
 > **Format:** Self-graded with peer-review prompt at the end
@@ -13,7 +13,7 @@ You have been hired as the Senior Azure Administrator at **Meridian Health Partn
 The clinical workload (Epic ASP-style multi-tier app) must run in production by go-live. The pilot will scale to ~800 concurrent clinicians, with personal health information (PHI) for ~50,000 patients in the first wave (a region's chronic-care population). After GA, the pilot becomes the template for the system-wide EHR rollout in 2027.
 
 **Regulatory and compliance posture:**
-- HIPAA Privacy + Security Rules (45 CFR Parts 160, 164) — non-negotiable
+- HIPAA Privacy + Security Rules (45 CFR Parts 160, 164), non-negotiable
 - HITRUST CSF certification target (Common Security Framework v11+, current as of 2026-05)
 - Washington State data-residency: PHI must remain in U.S. West regions
 - Three-year audit retention on all access events
@@ -21,7 +21,7 @@ The clinical workload (Epic ASP-style multi-tier app) must run in production by 
 
 **Constraints:**
 - Hard budget: $1.6M for the 14-week pilot build (cloud spend + tooling; excludes labor)
-- 6-person Azure platform team (2 senior, 2 mid, 2 junior — plus you)
+- 6-person Azure platform team (2 senior, 2 mid, 2 junior, plus you)
 - Existing tenant has 11 dev-team subscriptions in random hierarchy; you must reorganize without disrupting their work
 - Microsoft FastTrack is involved as an advisor (free), but execution is your team's
 - The pilot's clinical workflow team has NOT used Azure before; they need *runbooks*, not architectures
@@ -39,7 +39,7 @@ You will produce all seven. Each is graded against the rubric below. The total i
 A diagram + Markdown specification of:
 
 - Tenant root structure (Platform / Landing Zones / Sandbox per CAF Enterprise-Scale, 2020)
-- Subscription strategy for **Pilot Prod**, **Pilot NonProd**, **Shared Services**, **Connectivity**, **Identity** — what goes in which sub and why
+- Subscription strategy for **Pilot Prod**, **Pilot NonProd**, **Shared Services**, **Connectivity**, **Identity**, what goes in which sub and why
 - Migration plan for the 11 existing dev-team subs into the new tree without disrupting their work
 - Naming convention (RGs, resources, tags) per CAF "naming and tagging best practices"
 - Cost-allocation model with `CostCenter`, `Application`, `Owner`, `DataClassification`, `Compliance` tag schema
@@ -132,12 +132,12 @@ A diagram + Markdown specification of:
 - **Week 1:** Read all 10 modules + Final Mock Exam diagnostic. Identify weakest 3 modules; deep-dive review.
 - **Week 2:** D1 (MG + subscriptions + tags). Defend choices in a 1-page memo to "the CIO."
 - **Week 3:** D2 (Identity). Build a Visio/draw.io diagram of the PIM eligibility tree. Document the 8 CA policies as a YAML-style table.
-- **Week 4:** D3 (Network) — first pass. Address-space plan + hub-spoke skeleton.
-- **Week 5:** D3 (Network) — second pass. Private endpoints + Private DNS Zones + UDR plan. Defend Bastion vs. JIT VM access.
+- **Week 4:** D3 (Network), first pass. Address-space plan + hub-spoke skeleton.
+- **Week 5:** D3 (Network), second pass. Private endpoints + Private DNS Zones + UDR plan. Defend Bastion vs. JIT VM access.
 - **Week 6:** D4 (Storage + Data). CMK setup procedure + lifecycle policies + immutable retention design.
 - **Week 7:** D5 (Backup + DR). Compute RPO/RTO per workload. Write the quarterly-test failover plan.
 - **Week 8:** D6 (Governance + Cost). Identify the 6 initiatives. Mock up the Power BI chargeback dashboard.
-- **Week 9:** D7 (Observability) — alert design + Workbook mockups + IR runbook draft.
+- **Week 9:** D7 (Observability), alert design + Workbook mockups + IR runbook draft.
 - **Week 10:** Cross-cutting consistency review. Update diagrams. Compute total cost estimate and reconcile to the $1.6M target.
 - **Week 11:** Self-grade against rubric. Identify weakest 2 deliverables; remediate.
 - **Week 12:** "HITRUST third-party assessment" simulation. Run yourself through the 19 HITRUST CSF v11 control families against your design. Document gaps.
@@ -161,7 +161,7 @@ A single folder/repo containing:
 - `Cost-Estimate.xlsx` (line-item to ≤ $1.6M)
 - `Rubric-Self-Grade.md` (you score yourself; defend each point)
 
-Length expectation: 25–50 pages total across all docs. Brevity is graded — Microsoft engineers should be able to *implement* from your docs.
+Length expectation: 25–50 pages total across all docs. Brevity is graded, Microsoft engineers should be able to *implement* from your docs.
 
 ---
 

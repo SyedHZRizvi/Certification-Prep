@@ -49,13 +49,13 @@ D. 24 hours
 ### Q6. A senior engineer accidentally destroys the only DC holding the Schema Master role. You seize the role onto another DC. Can the original DC be safely recovered from backup and brought back online? *(Understand)*
 A. Yes, after a metadata cleanup on the surviving DC
 B. Yes, if the backup is less than 60 days old
-C. No — the original DC must be metadata-cleaned and re-promoted from scratch
+C. No, the original DC must be metadata-cleaned and re-promoted from scratch
 D. Yes, but only after the next tombstone lifetime expires
 
 ---
 
 ### Q7. Which GPO modifier wins when there is a conflict between a higher-scope Enforced GPO and a lower-OU with Block Inheritance set? *(Understand)*
-A. Block Inheritance — local always wins
+A. Block Inheritance, local always wins
 B. The higher-scope Enforced GPO wins, period
 C. WMI Filter decides
 D. Whichever was created first
@@ -73,7 +73,7 @@ D. Windows Server 2016
 ### Q9. You enabled the AD Recycle Bin on Tuesday. On Friday, you decide you don't want it anymore. Which is TRUE? *(Understand)*
 A. You can disable it via PowerShell
 B. You can disable it via Group Policy
-C. Enable is one-way — once on, it cannot be disabled
+C. Enable is one-way, once on, it cannot be disabled
 D. It auto-disables after 180 days of no use
 
 ---
@@ -110,7 +110,7 @@ D. OU → Domain → Site → Local
 
 ---
 
-### Q14. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q14. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** An OU can be used as a security boundary equivalent to a domain.
 **S2:** A Fine-Grained Password Policy can be linked directly to an OU.
@@ -132,10 +132,10 @@ D. 180 days
 ---
 
 ### Q16. Which group nesting strategy does Microsoft recommend for multi-domain RBAC? *(Remember)*
-A. AGLP — Accounts → Global → Local → Permissions
-B. AGDLP — Accounts → Global → Domain Local → Permissions
-C. ADUP — Accounts → Domain → Universal → Permissions
-D. AUGP — Accounts → Universal → Global → Permissions
+A. AGLP, Accounts → Global → Local → Permissions
+B. AGDLP, Accounts → Global → Domain Local → Permissions
+C. ADUP, Accounts → Domain → Universal → Permissions
+D. AUGP, Accounts → Universal → Global → Permissions
 
 ---
 
@@ -185,7 +185,7 @@ D. 180
 
 ---
 
-### Q22. **Yes/No** — Group Policy refresh. *(Apply)*
+### Q22. **Yes/No**, Group Policy refresh. *(Apply)*
 
 **S1:** Domain member computers refresh GPO every 90 minutes (+0–30 min offset).
 **S2:** Domain controllers refresh GPO every 5 minutes.
@@ -206,7 +206,7 @@ D. The Schema partition is not replicating
 
 ---
 
-### Q24. **Yes/No** — RODC behavior. *(Analyze)*
+### Q24. **Yes/No**, RODC behavior. *(Analyze)*
 
 **S1:** An RODC caches all user passwords by default.
 **S2:** Domain Admins are members of the Denied RODC Password Replication Group by default.
@@ -238,7 +238,7 @@ D. Demoting all DCs and re-promoting
 ## 🎯 Answers + Explanations
 
 ### Q1: **D. Forest**
-The forest is the AD security boundary. Domains are admin/replication boundaries. OUs are delegation containers. Sites are network constructs — none are security boundaries.
+The forest is the AD security boundary. Domains are admin/replication boundaries. OUs are delegation containers. Sites are network constructs, none are security boundaries.
 
 ### Q2: **B. Schema Master and Domain Naming Master**
 Both are forest-wide; the other three (PDC Emulator, RID Master, Infrastructure Master) are domain-wide. Memorize this 2-vs-3 split cold.
@@ -247,12 +247,12 @@ Both are forest-wide; the other three (PDC Emulator, RID Master, Infrastructure 
 The PDC chains time to the Forest Root PDC, processes password updates urgently (1-sec replication), and is the default GPO editor target. It also handles account lockout processing.
 
 ### Q4: **B. 15 seconds (notify-based)**
-Intra-site replication uses change notification — partners get an "I have a change" RPC about 15 seconds after the change. Urgent updates (passwords, lockouts) get 1-second priority.
+Intra-site replication uses change notification, partners get an "I have a change" RPC about 15 seconds after the change. Urgent updates (passwords, lockouts) get 1-second priority.
 
 ### Q5: **C. 180 minutes (3 hours)**
 Default site-link replication is 180 minutes. Adjustable down to 15 minutes; uses RPC over IP by default (SMTP is deprecated and only for non-domain partitions anyway).
 
-### Q6: **C. No — the original DC must be metadata-cleaned and re-promoted from scratch**
+### Q6: **C. No, the original DC must be metadata-cleaned and re-promoted from scratch**
 A seize is one-way. Bringing back the original DC creates dueling FSMO holders and can corrupt the schema. Always: seize → metadata-clean → fresh promotion.
 
 ### Q7: **B. The higher-scope Enforced GPO wins, period**
@@ -261,8 +261,8 @@ Enforced beats Block Inheritance, and among Enforced policies, the higher scope 
 ### Q8: **C. Windows Server 2008 R2**
 The forest functional level must be at least 2008 R2. Older forests must first be raised before the Recycle Bin can be enabled.
 
-### Q9: **C. Enable is one-way — once on, it cannot be disabled**
-This is a deliberate design choice — preventing future restore capability would be a security/operations risk.
+### Q9: **C. Enable is one-way, once on, it cannot be disabled**
+This is a deliberate design choice, preventing future restore capability would be a security/operations risk.
 
 ### Q10: **B. Reset only the passwords of the accounts the RODC had cached, then remove its computer account**
 Use `repadmin /prp View "HOU-RODC01" Reveal` to see what was cached, then reset just those accounts. Mass-resetting the whole domain is unnecessary and disruptive.
@@ -274,7 +274,7 @@ Infrastructure Master tracks cross-domain object references; if it lives on a GC
 The principle of least privilege: scope the delegation to the OU. Domain Admin would massively over-grant.
 
 ### Q13: **B. Local → Site → Domain → OU**
-LSDOU. Local is first, OU last (nested OUs go top-down, with the closest OU to the object winning by default — Enforced inverts this).
+LSDOU. Local is first, OU last (nested OUs go top-down, with the closest OU to the object winning by default, Enforced inverts this).
 
 ### Q14: **B. No / No / Yes**
 S1: OUs are not security boundaries. S2: PSOs apply to users and global groups only, not OUs. S3: gMSAs auto-rotate (30 days default).
@@ -282,7 +282,7 @@ S1: OUs are not security boundaries. S2: PSOs apply to users and global groups o
 ### Q15: **D. 180 days**
 Since Windows Server 2003 SP1, tombstone is 180 days. The Recycle Bin's deleted-object lifetime also defaults to 180.
 
-### Q16: **B. AGDLP — Accounts → Global → Domain Local → Permissions**
+### Q16: **B. AGDLP, Accounts → Global → Domain Local → Permissions**
 Microsoft's long-standing recommendation. Universal groups extend to AGUDLP for multi-forest.
 
 ### Q17: **C. gMSA**
@@ -301,7 +301,7 @@ Available on Forest and External trusts. Requires "Allowed-to-Authenticate" perm
 The deleted-object lifetime (and tombstone lifetime) is 180 days by default.
 
 ### Q22: **A. Yes / Yes / No**
-S1 & S2 correct. S3 wrong — folder redirection requires logoff/logon (foreground processing). Drive maps, software install, and folder redirection apply only at startup/logon.
+S1 & S2 correct. S3 wrong, folder redirection requires logoff/logon (foreground processing). Drive maps, software install, and folder redirection apply only at startup/logon.
 
 ### Q23: **B. The branch subnet is not associated with a site in AD Sites & Services**
 Without a subnet → site mapping, clients are treated as if in Default-First-Site and may hit a DC across the WAN. Adding the subnet fixes this immediately.

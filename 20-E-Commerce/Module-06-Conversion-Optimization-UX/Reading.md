@@ -1,14 +1,14 @@
 # Module 6: Conversion Optimization & UX 🎯
 
-> **Why this module matters:** Conversion rate is the multiplier that decides whether every dollar of paid acquisition pays back twice or burns. A 1.8% CVR brand and a 3.2% CVR brand can run the same Meta campaign — one is profitable, one is dying. This module gives you the operating doctrine — Kohavi/Tang/Xu A/B-testing rigor, PDP UX, Core Web Vitals, the Booking.com 1,000-tests-a-year experimentation engine.
+> **Why this module matters:** Conversion rate is the multiplier that decides whether every dollar of paid acquisition pays back twice or burns. A 1.8% CVR brand and a 3.2% CVR brand can run the same Meta campaign one is profitable, one is dying. This module gives you the operating doctrine Kohavi/Tang/Xu A/B-testing rigor, PDP UX, Core Web Vitals, the Booking.com 1,000-tests-a-year experimentation engine.
 
 ---
 
 ## 🎯 A Real Story: Booking.com's 1,000 Tests a Year
 
-By 2020, Booking.com (the global hotel/travel reservation giant, founded 1996, acquired by Priceline in 2005 — now Booking Holdings, NASDAQ:BKNG) was running over 1,000 controlled A/B tests per year. Not 100. Not 10. Over 1,000 — that's three new tests launched every business day.
+By 2020, Booking.com (the global hotel/travel reservation giant, founded 1996, acquired by Priceline in 2005 now Booking Holdings, NASDAQ:BKNG) was running over 1,000 controlled A/B tests per year. Not 100. Not 10. Over 1,000 that's three new tests launched every business day.
 
-The internal experimentation infrastructure was the moat. Every product team — search results, hotel page, checkout, app — ran their own tests in parallel. The test platform handled randomization, variance estimation, sample-ratio mismatch detection, and decision automation. About 9-10% of tests showed material wins. About 70% showed no statistically significant effect. And — this is the discipline that made the program work — **about 20% of tests showed statistically significant NEGATIVE effects**. The variant LOST.
+The internal experimentation infrastructure was the moat. Every product team search results, hotel page, checkout, app ran their own tests in parallel. The test platform handled randomization, variance estimation, sample-ratio mismatch detection, and decision automation. About 9-10% of tests showed material wins. About 70% showed no statistically significant effect. And this is the discipline that made the program work **about 20% of tests showed statistically significant NEGATIVE effects**. The variant LOST.
 
 Why does the 20%-loser rate matter? Because it proves the tests are running honest math. A program that always "finds" wins is shipping winners that aren't real (multiple-comparisons problem, peeking, sample-ratio mismatch). Booking.com's openness about negative-test rates is what Ron Kohavi (formerly Bing, Airbnb, Microsoft) cites in *Trustworthy Online Controlled Experiments* (Cambridge UP, 2020, ISBN 978-1108724265) as the gold standard.
 
@@ -39,7 +39,7 @@ The lesson for e-commerce: speed of test-shipping is not the same as quality of 
 
 These come from Common Thread Collective's quarterly ECD report, Klaviyo's annual benchmarks, and Shopify Plus's State of Commerce (2024). The math: a 30-50% lift from "median" to "top quartile" can pay back a year of paid-acquisition spend.
 
-🧠 **MEMORIZE THIS.** CVR varies 3-5x within a category. Top-quartile operators don't have better products — they have better CRO discipline.
+🧠 **MEMORIZE THIS.** CVR varies 3-5x within a category. Top-quartile operators don't have better products, they have better CRO discipline.
 
 ---
 
@@ -87,8 +87,8 @@ At 50K weekly traffic, this test runs 2.5 weeks.
 
 **The math implications:**
 - Low-traffic sites need wider MDE (larger detectable effect) or longer test windows.
-- Tests that detect <5% relative lifts need 250K+ visitors per variant — out of reach for many sub-$10M brands.
-- The standard CRO advice — "ship 2 tests/week" — usually requires 100K+ weekly visitors.
+- Tests that detect <5% relative lifts need 250K+ visitors per variant, out of reach for many sub-$10M brands.
+- The standard CRO advice "ship 2 tests/week" usually requires 100K+ weekly visitors.
 
 🎯 **Exam tip:** When asked "is this test sample-size-sufficient?" the answer is usually NO for sub-$5M brands trying to detect small lifts. Larger MDE or qualitative methods (user research, heatmaps) make more sense.
 
@@ -130,27 +130,27 @@ Baymard Institute's PDP usability research (the 2024 wave covers 2,000+ PDPs acr
 
 ---
 
-## 🛒 Cart UX — The Most-Skipped High-Leverage Surface
+## 🛒 Cart UX, The Most-Skipped High-Leverage Surface
 
 Most CRO programs focus on PDP and ignore cart. That's a mistake. Cart-to-checkout typically converts 35-55%, but the top quartile converts 65-75%.
 
 **Cart best practices:**
-- **Free-shipping progress bar** ("$8 more for free shipping") — 8-20% AOV lift.
-- **Recommended add-ons** ("Complete the set with...") — 5-15% AOV lift.
+- **Free-shipping progress bar** ("$8 more for free shipping"), 8-20% AOV lift.
+- **Recommended add-ons** ("Complete the set with..."), 5-15% AOV lift.
 - **Trust signals** (returns policy, security, guarantee).
 - **Edit-in-cart** without redirecting.
 - **Discount code field collapsed** (open field encourages coupon-hunting; collapsed reduces it).
-- **Express checkout buttons** (Shop Pay, Apple Pay, Google Pay, PayPal) AT THE TOP — these convert 35-45% higher than form-fill on mobile (Baymard 2024).
+- **Express checkout buttons** (Shop Pay, Apple Pay, Google Pay, PayPal) AT THE TOP, these convert 35-45% higher than form-fill on mobile (Baymard 2024).
 
 ---
 
-## 🚪 Checkout — Where Conversion Lives or Dies
+## 🚪 Checkout, Where Conversion Lives or Dies
 
 Baymard's 2024 checkout research:
 
 - 17% of US online shoppers abandoned an order in the last quarter due to a checkout flow that was "too long/complicated."
 - 49% cite shipping cost (#1 reason).
-- 24% cite "required to create an account" — **always offer guest checkout**.
+- 24% cite "required to create an account", **always offer guest checkout**.
 - 22% cite "didn't trust the site with credit card info."
 
 **The 5-step checkout discipline:**
@@ -164,7 +164,7 @@ Baymard's 2024 checkout research:
 
 ---
 
-## ⚡ Core Web Vitals (Google) — The Speed Standard
+## ⚡ Core Web Vitals (Google), The Speed Standard
 
 Google's user-experience metric trio. Affects SEO ranking + ad quality scores.
 
@@ -180,11 +180,11 @@ Google's user-experience metric trio. Affects SEO ranking + ad quality scores.
 - Deloitte's 2020 mobile speed report: 0.1-second improvement = 8% conversion lift in retail.
 
 **How to fix:**
-- **Images** — use WebP / AVIF; lazy-load below-fold; CDN-served.
-- **JavaScript** — defer non-critical; split bundles; tree-shake.
-- **Third-party scripts** — audit and remove (Shopify's "Slow Site Speed" usually has 18+ apps loading scripts).
-- **CDN** — Cloudflare, Bunny CDN, Fastly; especially important for global brands.
-- **Server-side rendering / static generation** — Hydrogen, Next.js, Astro deliver SSR/SSG out of the box.
+- **Images**, use WebP / AVIF; lazy-load below-fold; CDN-served.
+- **JavaScript**, defer non-critical; split bundles; tree-shake.
+- **Third-party scripts**, audit and remove (Shopify's "Slow Site Speed" usually has 18+ apps loading scripts).
+- **CDN**, Cloudflare, Bunny CDN, Fastly; especially important for global brands.
+- **Server-side rendering / static generation**, Hydrogen, Next.js, Astro deliver SSR/SSG out of the box.
 
 🧠 **MEMORIZE THIS.** LCP ≤ 2.5s, INP ≤ 200ms, CLS ≤ 0.1. Google's PageSpeed Insights and Lighthouse audit against these.
 
@@ -192,16 +192,16 @@ Google's user-experience metric trio. Affects SEO ranking + ad quality scores.
 
 ---
 
-## 🔍 Site Search — The Conversion Multiplier Most Brands Ignore
+## 🔍 Site Search, The Conversion Multiplier Most Brands Ignore
 
 Site-search users convert at 2-3x the rate of non-search users (Algolia 2024, Klevu 2024 data). But most sites have terrible search.
 
 **Search vendors:**
-- **Algolia** — Industry leader; NeuralSearch (AI semantic) since 2023; expensive at scale.
-- **Constructor** — DTC-focused; AI-powered ranking.
-- **Searchspring** — Mid-market; merchant-friendly tooling.
-- **Klevu** — Shopify-focused; AI re-ranking.
-- **Native Shopify/Adobe Commerce** — Free but basic; OK below $5M.
+- **Algolia**, Industry leader; NeuralSearch (AI semantic) since 2023; expensive at scale.
+- **Constructor**, DTC-focused; AI-powered ranking.
+- **Searchspring**, Mid-market; merchant-friendly tooling.
+- **Klevu**, Shopify-focused; AI re-ranking.
+- **Native Shopify/Adobe Commerce**, Free but basic; OK below $5M.
 
 **What good search includes:**
 - Autocomplete with product images.
@@ -214,7 +214,7 @@ Site-search users convert at 2-3x the rate of non-search users (Algolia 2024, Kl
 
 ---
 
-## 🤖 Personalization — Mutiny, Dynamic Yield, Klaviyo
+## 🤖 Personalization, Mutiny, Dynamic Yield, Klaviyo
 
 **Personalization** = serving different experiences to different visitor cohorts.
 
@@ -228,8 +228,8 @@ Site-search users convert at 2-3x the rate of non-search users (Algolia 2024, Kl
 | **Shopify Audiences** | First-party Shopify-only |
 
 **The Two-Visitor Personalization Test:**
-- **First-time visitor** — sees brand pillar + best-seller; trust signals; discount offer.
-- **Returning customer** — sees recently-viewed + complementary items; loyalty status; account-aware UX.
+- **First-time visitor**, sees brand pillar + best-seller; trust signals; discount offer.
+- **Returning customer**, sees recently-viewed + complementary items; loyalty status; account-aware UX.
 
 Personalization platforms typically lift conversion 3-8% on B2C sites (less than vendors claim; more than skeptics claim).
 
@@ -237,17 +237,17 @@ Personalization platforms typically lift conversion 3-8% on B2C sites (less than
 
 ---
 
-## 💼 Case Study — Booking.com's Culture of Experimentation
+## 💼 Case Study, Booking.com's Culture of Experimentation
 
-**Situation.** By 2010, Booking.com had grown to dominate European hotel reservations. The challenge: how to maintain conversion-rate advantages against a growing field of OTAs (Online Travel Agencies) — Expedia, Trivago, Hotels.com, Airbnb. Marketing spend kept rising; conversion improvements would have to compensate. Founder Geert-Jan Bruinsma had committed to a data-driven engineering culture but the company needed to scale that discipline.
+**Situation.** By 2010, Booking.com had grown to dominate European hotel reservations. The challenge: how to maintain conversion-rate advantages against a growing field of OTAs (Online Travel Agencies), Expedia, Trivago, Hotels.com, Airbnb. Marketing spend kept rising; conversion improvements would have to compensate. Founder Geert-Jan Bruinsma had committed to a data-driven engineering culture but the company needed to scale that discipline.
 
 **Decision.** From 2013-2020, Booking.com built (and continuously rebuilt) what would become one of the largest controlled-experimentation platforms in industry. By 2020:
 
 - 1,000+ tests/year running across product, marketing, customer service.
-- Internal "ExP" experimentation platform — handles randomization, variance estimation, sample-ratio mismatch detection, sequential analysis.
+- Internal "ExP" experimentation platform, handles randomization, variance estimation, sample-ratio mismatch detection, sequential analysis.
 - Decision automation: tests that hit pre-defined criteria (sample size, effect size, p-value, guardrail metrics) auto-promote to 100% rollout.
 - Cultural disciplines: every test must have a hypothesis, an MDE pre-registered, a sample-size calculation pre-registered, and a guardrail-metrics list.
-- "20% rule" — about 20% of all tests show statistically significant negative effects. The team treats this as a feature, not a bug: it proves the test infrastructure is running honest math.
+- "20% rule", about 20% of all tests show statistically significant negative effects. The team treats this as a feature, not a bug: it proves the test infrastructure is running honest math.
 
 Ron Kohavi (LinkedIn / Airbnb / Microsoft) cited Booking.com extensively in *Trustworthy Online Controlled Experiments* (Cambridge UP, 2020) as one of the three industry exemplars (with Microsoft Bing and Airbnb).
 
@@ -260,7 +260,7 @@ Ron Kohavi (LinkedIn / Airbnb / Microsoft) cited Booking.com extensively in *Tru
 3. Accept that 70% of tests show no effect.
 4. Treat the 20% negative-result tests as the proof of honest math.
 
-The exam-answer pattern: when asked "what's the most important practice for CRO?" — the right answer is usually about disciplined process (Kohavi-style trustworthy experiments), not specific UX tactics.
+The exam-answer pattern: when asked "what's the most important practice for CRO?", the right answer is usually about disciplined process (Kohavi-style trustworthy experiments), not specific UX tactics.
 
 **Discussion (Socratic).**
 - Q1: Booking.com runs 1,000+ tests/year. Most DTC brands run 4-12 tests/year. Build the strongest argument that DTC should adopt the Booking.com model and the strongest that DTC should NOT. What's the gating math?
@@ -274,23 +274,23 @@ The exam-answer pattern: when asked "what's the most important practice for CRO?
 When traffic is too low for A/B testing, qualitative methods carry the load:
 
 **Heatmaps (Microsoft Clarity is free, unlimited):**
-- **Click maps** — where users click.
-- **Move maps** — where mouse hovers.
-- **Scroll maps** — how far users scroll.
+- **Click maps**, where users click.
+- **Move maps**, where mouse hovers.
+- **Scroll maps**, how far users scroll.
 
-**Session replays** — actual user sessions recorded. Catch JavaScript errors, broken UX, customer-confusion patterns.
+**Session replays**, actual user sessions recorded. Catch JavaScript errors, broken UX, customer-confusion patterns.
 
 **User research:**
-- **5-second test** (UsabilityHub) — show landing page for 5 seconds; ask "what is this site selling?"
-- **Moderated interviews** — 8-12 customer interviews per quarter.
-- **Card sorting** — for taxonomy redesigns.
-- **Tree testing** — does the IA work?
+- **5-second test** (UsabilityHub), show landing page for 5 seconds; ask "what is this site selling?"
+- **Moderated interviews**, 8-12 customer interviews per quarter.
+- **Card sorting**, for taxonomy redesigns.
+- **Tree testing**, does the IA work?
 
 🧠 **MEMORIZE THIS.** Microsoft Clarity (free, unlimited) replaced paid heatmap tools for many SMB / mid-market brands in 2023-2024. Hotjar still leads on session replay UX.
 
 ---
 
-## 🛍️ Reviews and UGC — The Conversion Compounder
+## 🛍️ Reviews and UGC, The Conversion Compounder
 
 Reviews lift PDP CVR materially. Yotpo's 2024 benchmark:
 
@@ -326,7 +326,7 @@ Reviews lift PDP CVR materially. Yotpo's 2024 benchmark:
 4. **No guardrail metrics.** Variant lifts revenue but tanks page speed; net negative goes unnoticed.
 5. **Personalization without segmentation hygiene.** Klaviyo segments overlap; same customer sees conflicting messages.
 6. **Site speed ignored.** Brands chase A/B test wins while LCP creeps from 1.8s to 3.5s.
-7. **Reviews not collected systematically.** Brand has 50 products, 12 with reviews, others with 0 — biases shopper trust.
+7. **Reviews not collected systematically.** Brand has 50 products, 12 with reviews, others with 0, biases shopper trust.
 
 ---
 
@@ -377,7 +377,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. A $5M DTC brand insists on running 2 tests/week on their site. Their weekly traffic is 12K visitors. Build the case that this cadence is irresponsible and the case that it's defensible. What's the principle?
 
@@ -400,11 +400,11 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Kohavi/Tang/Xu — *Trustworthy Online Controlled Experiments* (Cambridge UP, 2020)](https://experimentguide.com/) — the textbook
-- 📖 [Baymard Institute — Checkout, PDP, Cart Usability Research](https://baymard.com/research)
-- 📖 [Google PageSpeed Insights + Core Web Vitals docs](https://pagespeed.web.dev/) — the speed standard
-- 📖 [Microsoft Clarity (free)](https://clarity.microsoft.com/) — heatmaps + replays
-- 📖 [Yotpo — *2024 State of Reviews Report*](https://www.yotpo.com/) — review benchmarks
-- 📖 [Booking.com Engineering blog](https://booking.ai/) — experimentation deep dives
-- 📖 [CXL Institute — *Conversion Optimization* curriculum](https://cxl.com/institute/) — paid bootcamps
-- 📖 [Saleh & Shukairy — *Conversion Optimization* (O'Reilly, 2010)](https://www.oreilly.com/) — the CRO textbook
+- 📖 [Kohavi/Tang/Xu *Trustworthy Online Controlled Experiments* (Cambridge UP, 2020)](https://experimentguide.com/) the textbook
+- 📖 [Baymard Institute, Checkout, PDP, Cart Usability Research](https://baymard.com/research)
+- 📖 [Google PageSpeed Insights + Core Web Vitals docs](https://pagespeed.web.dev/), the speed standard
+- 📖 [Microsoft Clarity (free)](https://clarity.microsoft.com/), heatmaps + replays
+- 📖 [Yotpo *2024 State of Reviews Report*](https://www.yotpo.com/) review benchmarks
+- 📖 [Booking.com Engineering blog](https://booking.ai/), experimentation deep dives
+- 📖 [CXL Institute *Conversion Optimization* curriculum](https://cxl.com/institute/) paid bootcamps
+- 📖 [Saleh & Shukairy *Conversion Optimization* (O'Reilly, 2010)](https://www.oreilly.com/) the CRO textbook

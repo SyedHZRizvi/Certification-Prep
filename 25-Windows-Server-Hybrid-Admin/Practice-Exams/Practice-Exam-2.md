@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AZ-801 (Hybrid Advanced Services)
+# 🧪 Practice Exam 2, AZ-801 (Hybrid Advanced Services)
 
 > **Conditions:** Set a 120-minute timer. 60 questions. Treat it like the real thing.
 > **Pass mark:** 42/60 (≈ 70%, matching the real exam)
@@ -56,7 +56,7 @@ B. Flux v2
 C. Jenkins
 D. Spinnaker
 
-### 9. **Yes/No** — Mark each statement.
+### 9. **Yes/No**, Mark each statement.
 
 **S1:** Arc requires inbound RDP / SSH on the target machine.
 **S2:** Arc-enabled servers can be governed by Azure Policy at management group scope.
@@ -159,7 +159,7 @@ B. Certified OEM hardware with TPM 2.0 + UEFI Secure Boot + DMA protection
 C. Hyper-V role only
 D. Replace Server with Linux
 
-### 24. **Yes/No** — Mark each statement.
+### 24. **Yes/No**, Mark each statement.
 
 **S1:** Defender for Servers covers both Azure VMs and Arc-enabled servers.
 **S2:** JIT requires `Microsoft.Compute/virtualMachines/openConnectionPortDirectly/action`.
@@ -201,8 +201,8 @@ C. 4 hours
 D. 24 hours
 
 ### 30. ASR test failover is:
-A. Disruptive — pauses replication
-B. Non-disruptive — parallel test environment
+A. Disruptive, pauses replication
+B. Non-disruptive, parallel test environment
 C. Same as production failover
 D. Not supported
 
@@ -218,7 +218,7 @@ B. ASR (Azure Site Recovery)
 C. Hyper-V Replica
 D. Storage Replica
 
-### 33. **Yes/No** — Mark each statement.
+### 33. **Yes/No**, Mark each statement.
 
 **S1:** MARS can do application-consistent SQL backup.
 **S2:** MABS is a free software (Azure-side storage is billed).
@@ -275,7 +275,7 @@ D. Group Policy Preferences
 A. Backup + Update Mgmt + Defender + Change Tracking + MAA
 B. Backup only
 C. Defender only
-D. Nothing — Automanage is read-only
+D. Nothing, Automanage is read-only
 
 ### 42. To run an Azure Automation runbook ON an on-prem server, use:
 A. Hybrid Runbook Worker (legacy) or Runbook extension on Arc-enabled server (modern)
@@ -283,7 +283,7 @@ B. Manual SSH session
 C. Scheduled Task only
 D. Logic App
 
-### 43. **Yes/No** — Mark each statement.
+### 43. **Yes/No**, Mark each statement.
 
 **S1:** Windows PowerShell 5.1 and PowerShell 7 can coexist on the same Windows Server.
 **S2:** PowerShell 7 supports SSH-based remoting.
@@ -312,7 +312,7 @@ B. Pre-built perf trends + dependency map + health
 C. SQL Server replication
 D. AD replication monitoring
 
-### 47. **Yes/No** — Mark each statement.
+### 47. **Yes/No**, Mark each statement.
 
 **S1:** Defender for Servers P2 includes File Integrity Monitoring.
 **S2:** Defender for Servers P1 includes Vulnerability Assessment.
@@ -335,7 +335,7 @@ B. `project`
 C. `extend`
 D. `union`
 
-### 50. **Yes/No** — Mark each statement.
+### 50. **Yes/No**, Mark each statement.
 
 **S1:** A single DCR can be associated with many machines.
 **S2:** Application Insights stores in a Log Analytics workspace (since 2023).
@@ -358,14 +358,14 @@ B. ASR Azure-to-Azure replication
 C. Storage Replica
 D. Hyper-V Replica
 
-### 53. Which ASR failover type is "non-disruptive — runs in parallel"?
+### 53. Which ASR failover type is "non-disruptive, runs in parallel"?
 A. Planned
 B. Unplanned
 C. Test
 D. Failback
 
 ### 54. The Microsoft Tier 0 administrative model includes:
-A. Forest root, AD DCs, AD CS, Entra Connect, AD FS — the identity control plane
+A. Forest root, AD DCs, AD CS, Entra Connect, AD FS, the identity control plane
 B. Web servers only
 C. End-user workstations
 D. SharePoint sites
@@ -382,7 +382,7 @@ B. UPN
 C. samAccountName
 D. ObjectGUID
 
-### 57. **Yes/No** — Mark each statement.
+### 57. **Yes/No**, Mark each statement.
 
 **S1:** Azure Machine Configuration works for Arc-enabled servers.
 **S2:** Hybrid Runbook Worker is the recommended modern automation path for Arc machines.
@@ -441,7 +441,7 @@ D. Use SCCM only
 
 | Score | Verdict |
 |-------|---------|
-| 54–60 | 🏆 Excellent — AZ-801 ready, schedule the exam |
+| 54–60 | 🏆 Excellent, AZ-801 ready, schedule the exam |
 | 42–53 | ✅ Solid. Review missed Qs + take Final Mock |
 | 30–41 | ⚠️ Re-study weak modules (use map below) |
 | <30   | 🔁 Restart from Module 6 |
@@ -475,7 +475,7 @@ For EACH wrong answer:
 
 **Q1. Answer: B.** Arc-enabled servers project as `Microsoft.HybridCompute/machines`. Distinct from native Azure VMs (`Microsoft.Compute/virtualMachines`).
 
-**Q2. Answer: A.** Outbound HTTPS 443 only. Memorize this — Arc agent has NO inbound port requirements. Headline security fact.
+**Q2. Answer: A.** Outbound HTTPS 443 only. Memorize this, Arc agent has NO inbound port requirements. Headline security fact.
 
 **Q3. Answer: D.** Least-privilege built-in role for SP onboarding is "Azure Connected Machine Onboarding." Owner/Contributor are too broad; Reader can't create.
 
@@ -509,7 +509,7 @@ For EACH wrong answer:
 
 **Q18. Answer: C.** Default max JIT duration is 3 hours.
 
-**Q19. Answer: B.** WDAC enforces at the kernel — tamper-resistant.
+**Q19. Answer: B.** WDAC enforces at the kernel, tamper-resistant.
 
 **Q20. Answer: B.** WDAC is modern; AppLocker is legacy.
 
@@ -531,7 +531,7 @@ For EACH wrong answer:
 
 **Q29. Answer: A.** ASR typical RPO ~30 seconds.
 
-**Q30. Answer: B.** Test failover is non-disruptive — parallel test VNet.
+**Q30. Answer: B.** Test failover is non-disruptive, parallel test VNet.
 
 **Q31. Answer: A.** Inventory → Transfer → Cutover.
 
@@ -559,7 +559,7 @@ For EACH wrong answer:
 
 **Q43. Answer: A.** S1 correct, S2 correct, S3 wrong (virtual accounts are session-scoped, no standing privilege).
 
-**Q44. Answer: B.** Faulty kernel-mode driver content update — channel file 291.
+**Q44. Answer: B.** Faulty kernel-mode driver content update, channel file 291.
 
 **Q45. Answer: B.** Mobility Service runs on the source machine.
 

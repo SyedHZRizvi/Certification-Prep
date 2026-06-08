@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Injection — Simon Willison Talk</p>
+      <p class="vg-title">Prompt Injection, Simon Willison Talk</p>
       <p class="vg-creator">Simon Willison</p>
       <span class="vg-duration">⏱ 32 min · The clearest introduction</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DeepSeek R1 Jailbreak Storm — Postmortem</p>
+      <p class="vg-title">DeepSeek R1 Jailbreak Storm, Postmortem</p>
       <p class="vg-creator">AI Explained</p>
       <span class="vg-duration">⏱ 22 min · January 2025 incident</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Constitutional AI (Bai et al. 2022) — Anthropic</p>
+      <p class="vg-title">Constitutional AI (Bai et al. 2022), Anthropic</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 24 min · Safety training paradigm</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Bing Sydney Prompt Leak — Postmortem</p>
+      <p class="vg-title">Bing Sydney Prompt Leak, Postmortem</p>
       <p class="vg-creator">Computerphile / AI Explained</p>
       <span class="vg-duration">⏱ 18 min · The 2023 case study</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">garak — LLM Vulnerability Scanner</p>
+      <p class="vg-title">garak, LLM Vulnerability Scanner</p>
       <p class="vg-creator">NVIDIA Research</p>
       <span class="vg-duration">⏱ 18 min · Open-source red-team tool</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OWASP LLM Top 10 — Walkthrough</p>
+      <p class="vg-title">OWASP LLM Top 10, Walkthrough</p>
       <p class="vg-creator">OWASP</p>
       <span class="vg-duration">⏱ 22 min · The security framework</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">LlamaGuard 3 — Input/Output Safety</p>
+      <p class="vg-title">LlamaGuard 3, Input/Output Safety</p>
       <p class="vg-creator">Meta AI</p>
       <span class="vg-duration">⏱ 14 min · Open-source classifier</span>
     </div>

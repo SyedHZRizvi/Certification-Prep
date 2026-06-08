@@ -63,7 +63,7 @@ C. A summary report
 D. A Gantt chart
 
 ### Q11. A stakeholder demands a scope addition. The PM should FIRST:
-A. Reject — there's a baseline
+A. Reject, there's a baseline
 B. Add it; the customer is always right
 C. Analyze impact and submit through change control
 D. Escalate to sponsor
@@ -138,7 +138,7 @@ D. Escalate to the CCB only after the fact
 A. Update the schedule baseline
 B. Submit to the CCB
 C. Analyze the impact on scope, schedule, and cost
-D. Reject — there's a baseline
+D. Reject, there's a baseline
 
 ### Q24. The Project Charter MAINLY:
 A. Lists all detailed work packages
@@ -224,7 +224,7 @@ The PMP-correct sequence is analyze impact → submit to CCB → approve/reject 
 The Charter is the formal authorization document signed by the sponsor that grants the PM authority to apply organizational resources.
 
 ### Q25: **B. WBS**
-The 100% rule says the WBS captures 100% of project scope — every work package totals up to the full project.
+The 100% rule says the WBS captures 100% of project scope, every work package totals up to the full project.
 
 ### Q26: **B. Throughout the project, stored in OPAs**
 Lessons learned are captured continuously and become OPAs for future projects (both successes and failures).
@@ -239,7 +239,7 @@ PMB = Scope + Schedule + Cost baselines, INCLUDING contingency reserves but EXCL
 Definitive estimates have the tightest range (-5% to +10%). ROM is -25% to +75%; budgetary is -10% to +25%.
 
 ### Q30: **C. Bottom-up**
-Bottom-up estimating sums detailed estimates of each work package — most accurate but most time-consuming.
+Bottom-up estimating sums detailed estimates of each work package, most accurate but most time-consuming.
 
 ---
 
@@ -291,19 +291,19 @@ Bottom-up estimating sums detailed estimates of each work package — most accur
 ## Bonus questions (higher-Bloom)
 
 ### Q31. You inherit a project where the previous PM "tailored" change control down to "approval by the PM only" because the team complained about CCB overhead. The team has been shipping for six months without issue. The new sponsor asks: is the tailoring defensible under PMBOK 7's Tailoring principle? *(Evaluate)*
-A. Yes — six months of stability proves it works.
-B. Yes — Tailoring permits any modification a PM chooses.
+A. Yes, six months of stability proves it works.
+B. Yes, Tailoring permits any modification a PM chooses.
 C. Partially defensible only if (a) the project's risk profile and stakeholder count justify a lighter governance, (b) the alternatives were considered and documented, (c) escalation paths to a formal CCB exist for changes above a threshold, and (d) compliance/regulatory requirements still allow it. Otherwise, restore proper integrated change control.
-D. No — Tailoring is never appropriate for change control.
+D. No, Tailoring is never appropriate for change control.
 
 ### Q32. Knight Capital (from the case study). You are PM of a similar high-stakes financial-services deployment. Design a minimum set of pre-deployment gates that would have caught the legacy-code-still-present scenario. *(Create)*
 A. Manual checklist signed by the PM.
-B. A multi-layer set: configuration-management audit of all eight servers (file-hash comparison), automated regression test of the legacy code path, a documented rollback runbook practiced against production-shaped data, a CCB sign-off referencing a deployment-validation checklist, a kill-switch tested at the desk level, and a "go/no-go" gate at deploy time with named decision-makers — each gate mapped to a specific PMBOK 7 principle.
+B. A multi-layer set: configuration-management audit of all eight servers (file-hash comparison), automated regression test of the legacy code path, a documented rollback runbook practiced against production-shaped data, a CCB sign-off referencing a deployment-validation checklist, a kill-switch tested at the desk level, and a "go/no-go" gate at deploy time with named decision-makers, each gate mapped to a specific PMBOK 7 principle.
 C. A single QA cycle the day before launch.
 D. Trust the deployment engineer and skip gates to preserve velocity.
 
 ### Q33. Your Critical Path analysis identifies a 3-week schedule overrun risk on a $4M project. Two options on the table: (A) Crashing adds $180K and removes ~2 weeks, with vendor risk; (B) Fast-tracking removes ~3 weeks but introduces a 35% chance of rework worth $300K. Using EMV + PMBOK 7's Risk principle, which is more defensible at a sponsor review? *(Analyze)*
-A. Crashing — $180K is less than the EMV of fast-track rework (0.35 × $300K = $105K) plus residual schedule risk, but only if vendor risk is mitigable; recommend crashing with a vendor performance clause and document the EMV reasoning.
+A. Crashing, $180K is less than the EMV of fast-track rework (0.35 × $300K = $105K) plus residual schedule risk, but only if vendor risk is mitigable; recommend crashing with a vendor performance clause and document the EMV reasoning.
 B. Fast-tracking always.
 C. Reduce scope unilaterally.
 D. Accept the overrun.

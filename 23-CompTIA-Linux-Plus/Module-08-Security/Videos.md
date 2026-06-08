@@ -20,7 +20,7 @@
 
 # 🎥 Module 8 Videos: Linux Security & Hardening
 
-> **How to use:** Click any card. The SELinux videos are the highest exam-leverage of any video in this entire course — watch them more than once if needed.
+> **How to use:** Click any card. The SELinux videos are the highest exam-leverage of any video in this entire course, watch them more than once if needed.
 
 ## ⭐ Essential watching (~70 min)
 

@@ -41,7 +41,7 @@ Prepare → Open → Bargain → Close → Implement
 |---|---|
 | Anchor | Counter-anchor with data |
 | Good cop / bad cop | Call it out |
-| Nibble | "We can — what do we get?" |
+| Nibble | "We can, what do we get?" |
 | Take it or leave it | Silence; test if real |
 | Bogey | Probe deeper |
 | Salami | Bundle issues |
@@ -139,8 +139,8 @@ Direct negotiation → Executive escalation → Mediation → Arbitration → Li
 | Type | Source |
 |---|---|
 | Express | Explicitly stated |
-| Implied: merchantability | UCC default — fit for ordinary use |
-| Implied: fitness for purpose | UCC default — buyer relied on seller's skill |
+| Implied: merchantability | UCC default, fit for ordinary use |
+| Implied: fitness for purpose | UCC default, buyer relied on seller's skill |
 
 Can be disclaimed with specific language ("AS IS").
 
@@ -168,7 +168,7 @@ Can be disclaimed with specific language ("AS IS").
 
 ## ✏️ Quick Self-Check
 
-1. BATNA, ZOPA, reservation, anchor — one-liners? ___
+1. BATNA, ZOPA, reservation, anchor, one-liners? ___
 2. Risk allocation in fixed vs cost-plus vs T&M? ___
 3. UCC vs CISG vs FAR triggers? ___
 4. Force majeure 3 tests? ___

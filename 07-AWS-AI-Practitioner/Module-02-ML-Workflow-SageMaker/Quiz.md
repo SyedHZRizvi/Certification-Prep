@@ -259,7 +259,7 @@ Speech-to-text. There's even Transcribe Call Analytics tailored to contact cente
 Lifelike TTS, dozens of voices and languages.
 
 ### Q20: **B. Amazon Kendra**
-Enterprise intelligent search powered by NLP — finds the actual passage in a document, not just keywords.
+Enterprise intelligent search powered by NLP, finds the actual passage in a document, not just keywords.
 
 ### Q21: **A. Amazon Fraud Detector**
 Pre-built service that includes account-takeover, payment fraud, and new-account fraud models. Use this before reaching for SageMaker.
@@ -289,7 +289,7 @@ Model Registry stores versions, lineage, and approval status; Pipelines deploy *
 - 7-stage ML lifecycle with one tool per stage
 - 4 inference endpoint modes (real-time / serverless / async / batch) with use cases
 - Canvas vs Autopilot vs JumpStart (one-line each)
-- AI services menu — Rekognition, Textract, Comprehend, Translate, Polly, Transcribe, Lex, Personalize, Forecast, Kendra, Fraud Detector
+- AI services menu, Rekognition, Textract, Comprehend, Translate, Polly, Transcribe, Lex, Personalize, Forecast, Kendra, Fraud Detector
 - 4 drift types Model Monitor detects
 
 ---

@@ -126,7 +126,7 @@
 - "Get CAB approval before high-risk change"
 - "Backout plan before implementation"
 - "Anti-static wrist strap first"
-- "Recycle batteries — don't trash"
+- "Recycle batteries, don't trash"
 - "Verify with the user before closing the ticket"
 
 ❌ Often **wrong**:
@@ -158,7 +158,7 @@
 1. 3 change types? ___
 2. CAB stands for + role? ___
 3. First action before handling a motherboard? ___
-4. UPS vs surge protector — what's the difference? ___
+4. UPS vs surge protector, what's the difference? ___
 5. Disposal of a lithium-ion battery? ___
 
 ---

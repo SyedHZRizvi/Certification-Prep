@@ -1,4 +1,4 @@
-# Module 2 Cheat Sheet — Body Mechanics and Weight ⚖️
+# Module 2 Cheat Sheet, Body Mechanics and Weight ⚖️
 
 ## COG Quick Facts
 
@@ -23,7 +23,7 @@ COG shifts BEFORE every major action (lift, jump, punch, push)
 
 ---
 
-## Punch — 7 Phases
+## Punch, 7 Phases
 
 ```
 1. ANTICIPATION    4-8f   COG drops back; shoulder rotates back
@@ -39,7 +39,7 @@ COG shifts BEFORE every major action (lift, jump, punch, push)
 
 ---
 
-## Jump — 5 Phases
+## Jump, 5 Phases
 
 ```
 1. CROUCH/ANTICIPATION   COG drops; stores potential energy
@@ -51,7 +51,7 @@ COG shifts BEFORE every major action (lift, jump, punch, push)
 
 ---
 
-## Fall — Real vs. Staged
+## Fall, Real vs. Staged
 
 | | Real | Staged |
 |-|------|--------|
@@ -92,7 +92,7 @@ COG shifts BEFORE every major action (lift, jump, punch, push)
 
 | Term | Definition |
 |------|-----------|
-| COG | Center of gravity — pelvis area in bipeds |
+| COG | Center of gravity, pelvis area in bipeds |
 | Drag | Secondary parts resist start of motion |
 | Follow-through | Secondary parts resist stop of motion |
 | Pancake error | Rigid-unit fall without hip lead |
@@ -106,8 +106,8 @@ COG shifts BEFORE every major action (lift, jump, punch, push)
 
 | Situation | Use IK | Use FK |
 |-----------|--------|--------|
-| Foot or hand on surface | YES — stays planted | No |
-| Arm swinging freely | Rarely | YES — natural arc |
+| Foot or hand on surface | YES, stays planted | No |
+| Arm swinging freely | Rarely | YES, natural arc |
 | Jump apex (mid-air) | Hip IK only for root | Limbs in FK |
 | Picking up object | IK at contact frame | FK for reach arc |
 | Quadruped walk | IK on contact frames | FK for swing phase |
@@ -155,7 +155,7 @@ BRAVE / MERIDA PIPELINE:
 | Question | Answer |
 |---------|--------|
 | COG location (biped) | Pelvis, ~55% of total body height |
-| COG path during walk (vertical) | Inverted arc — rises at mid-stride, falls at contact |
+| COG path during walk (vertical) | Inverted arc, rises at mid-stride, falls at contact |
 | Most common COG miss in walk | Lateral translation without vertical arc |
 | Drag vs. follow-through | Drag resists motion starting; follow-through resists motion stopping |
 | Punch power source | Ground → foot → hip → torso → shoulder → arm (arm is LAST) |

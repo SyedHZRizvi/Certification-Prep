@@ -1,24 +1,24 @@
-# Module 2: Capstone 1 — SEO + Content Audit 🔍
+# Module 2: Capstone 1, SEO + Content Audit 🔍
 
 > **Why this module matters:** This is your first portfolio piece. By end of Module 2, you'll have a 15–20 page audit document, a 90-day content roadmap, and a public link you can put on LinkedIn. Most students who land their first marketing job credit *this* capstone.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md) — covered earlier in this course
-> - SEO fundamentals (intent, keyword research, technical SEO, content clusters) — covered in [15-AI-Marketing-SEO-Content](../../15-AI-Marketing-Practitioner/README.md), especially Modules 2–6
-> - Spreadsheet basics for keyword-list manipulation — covered briefly in [17-AI-Marketing-Analytics-Automation Module 2](../../17-AI-Marketing-Entrepreneur/README.md)
-> If any of these are shaky, pause and review before continuing — this capstone assumes you know what "Domain Rating" and "content gap" mean before you sit down to build.
+> - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
+> - SEO fundamentals (intent, keyword research, technical SEO, content clusters), covered in [15-AI-Marketing-SEO-Content](../../15-AI-Marketing-Practitioner/README.md), especially Modules 2–6
+> - Spreadsheet basics for keyword-list manipulation, covered briefly in [17-AI-Marketing-Analytics-Automation Module 2](../../17-AI-Marketing-Entrepreneur/README.md)
+> If any of these are shaky, pause and review before continuing, this capstone assumes you know what "Domain Rating" and "content gap" mean before you sit down to build.
 
 ---
 
 ## 🎬 A Story: The Indie Founder Who Said Yes
 
-Imagine someone — call him Alex — three years into his marketing career, trying to break into senior roles. He's done good work at his agency, but his LinkedIn says nothing specific. He's read every "how to portfolio" article and made zero progress.
+Imagine someone call him Alex three years into his marketing career, trying to break into senior roles. He's done good work at his agency, but his LinkedIn says nothing specific. He's read every "how to portfolio" article and made zero progress.
 
 One Saturday morning, he scrolls Twitter and sees an indie SaaS founder named Lina post: *"Anyone want to do a free SEO audit on my product for portfolio purposes? I'll give a public testimonial."*
 
 Alex replies in 30 seconds: *"I'll take it. Done in 14 days."*
 
-Two weeks later he sends Lina a 19-page PDF. It opens with a screenshot of her Ahrefs report — she's ranking for 14 keywords she didn't know about, missing 47 her competitors are crushing, and has 8 pages of technical SEO issues she didn't know existed. The middle has a content gap analysis showing 6 underserved topics in her niche. The end has a 90-day content roadmap with 12 specific articles to publish, in priority order, with target keywords and word counts.
+Two weeks later he sends Lina a 19-page PDF. It opens with a screenshot of her Ahrefs report, she's ranking for 14 keywords she didn't know about, missing 47 her competitors are crushing, and has 8 pages of technical SEO issues she didn't know existed. The middle has a content gap analysis showing 6 underserved topics in her niche. The end has a 90-day content roadmap with 12 specific articles to publish, in priority order, with target keywords and word counts.
 
 Lina is floored. She posts about it. Tags Alex. *"Best $0 I've ever spent. Hiring her would be a steal at $5k/mo."*
 
@@ -37,13 +37,13 @@ The audit didn't make Alex a different marketer. It made his existing skill **vi
 **Deliverable:** A 15–20 page SEO + Content Audit for a real business (yours, a friend's, an indie maker who said yes on Twitter, or a public site whose owner you'll never meet).
 
 **Components:**
-1. Executive summary (1 page) — the 5 most important findings
-2. Keyword opportunity gap analysis (3–4 pages) — Ahrefs / SEMrush data on what they're missing
-3. Technical SEO scan (3–4 pages) — Screaming Frog or similar, top 10 issues
-4. Content gap analysis (2–3 pages) — what competitors rank for that they don't
-5. Top-page audit (2–3 pages) — what's working, what isn't, on their existing top 10 pages
-6. 90-day content roadmap (2–3 pages) — 8–12 specific articles, prioritized
-7. Recommendations summary (1 page) — the 5–10 things to do, in order
+1. Executive summary (1 page), the 5 most important findings
+2. Keyword opportunity gap analysis (3–4 pages), Ahrefs / SEMrush data on what they're missing
+3. Technical SEO scan (3–4 pages), Screaming Frog or similar, top 10 issues
+4. Content gap analysis (2–3 pages), what competitors rank for that they don't
+5. Top-page audit (2–3 pages), what's working, what isn't, on their existing top 10 pages
+6. 90-day content roadmap (2–3 pages), 8–12 specific articles, prioritized
+7. Recommendations summary (1 page), the 5–10 things to do, in order
 
 **Format:** PDF (exported from Google Docs / Notion) + linked Google Sheet with all the keyword data + a public Loom walkthrough (~7 min) if you want extra polish.
 
@@ -85,13 +85,13 @@ Some students invent a fake business. **Don't.** A hiring manager can smell it i
 
 ---
 
-## 🛠️ Tool Walkthrough 1: Ahrefs (or SEMrush — pick one)
+## 🛠️ Tool Walkthrough 1: Ahrefs (or SEMrush, pick one)
 
 Ahrefs is the gold standard. SEMrush is the alternative. You only need one for this capstone.
 
-### Ahrefs — Step By Step
+### Ahrefs, Step By Step
 
-**Cost:** $99/mo for the Lite plan. **Cancel after this capstone.** Some students get a 7-day $7 trial via the Ahrefs marketplace — check current promo.
+**Cost:** $99/mo for the Lite plan. **Cancel after this capstone.** Some students get a 7-day $7 trial via the Ahrefs marketplace, check current promo.
 
 **Free alternative:** Ahrefs Webmaster Tools (free, limited to YOUR verified sites) or Ubersuggest (free tier, less data).
 
@@ -99,7 +99,7 @@ Ahrefs is the gold standard. SEMrush is the alternative. You only need one for t
 
 1. **Sign up & verify the domain.**
    - If it's your own site: verify via DNS or HTML file.
-   - If it's a public site: just enter the URL — Ahrefs will show estimated data.
+   - If it's a public site: just enter the URL, Ahrefs will show estimated data.
 
 2. **Pull the Site Explorer report.**
    - Site Explorer → Enter the URL → Overview tab.
@@ -176,7 +176,7 @@ Screenshot each of these from the Screaming Frog UI. Use them in your audit.
 
 ## 🛠️ Tool Walkthrough 3: Surfer SEO (or MarketMuse, or Frase) For Content Gap
 
-Surfer is the most accessible. You don't *have* to use it — you can do content gap analysis manually with Ahrefs + Google search. But Surfer makes the presentation slicker.
+Surfer is the most accessible. You don't *have* to use it, you can do content gap analysis manually with Ahrefs + Google search. But Surfer makes the presentation slicker.
 
 **Cost:** Surfer is ~$89/mo. Free trial available. You can do this capstone WITHOUT Surfer using just Ahrefs Content Gap + manual analysis.
 
@@ -205,7 +205,7 @@ If you own the site (or your subject does and will share), GSC is gold.
 
 ---
 
-## 📝 The 7-Section Audit Document — Structure & Word Counts
+## 📝 The 7-Section Audit Document, Structure & Word Counts
 
 Here's the structure to write your audit document in. **Total: ~5,000–7,000 words across 15–20 pages.**
 
@@ -218,7 +218,7 @@ What it includes:
 - 5 most important findings (bullet list)
 - 3 highest-impact recommendations
 
-Tone: Like a doctor's diagnosis — direct, specific, useful.
+Tone: Like a doctor's diagnosis, direct, specific, useful.
 
 ### Section 2: Keyword Opportunity Analysis (3–4 pages, ~1,200 words)
 
@@ -310,20 +310,20 @@ This is the same rule from Module 1 (Show Don't Tell). Apply it ruthlessly here.
 | Technical section is all jargon | Translate every issue into business impact ("This is costing you ~X visits/mo") |
 | No screenshots | Every claim has a screenshot |
 | Recommendations aren't prioritized | P0/P1/P2 labels with rationale |
-| Audit looks like a template | Real names, real numbers, real findings — no `[Insert client name]` left in |
+| Audit looks like a template | Real names, real numbers, real findings, no `[Insert client name]` left in |
 | Forgot to capture before-state numbers | At minimum: DR, organic keywords, organic traffic, top page traffic |
 
 ---
 
 ## 🚨 The 5 Trap Findings That Make You Look Junior
 
-When you audit a real site, you'll see hundreds of "issues." Don't include these — they're junior-marketer tells:
+When you audit a real site, you'll see hundreds of "issues." Don't include these, they're junior-marketer tells:
 
-1. ❌ "Their bounce rate is high" — bounce rate is not a Google ranking factor and depends entirely on page type.
-2. ❌ "They should have more pages" — quantity ≠ quality. Suggest specific topics, not vague volume.
-3. ❌ "They need more backlinks" — without specifics on which ones, this is useless. Suggest specific link-building tactics.
-4. ❌ "Their meta keywords are missing" — Google hasn't used meta keywords since 2009.
-5. ❌ "Their site speed is bad" — without specific Core Web Vitals numbers, this is hand-waving.
+1. ❌ "Their bounce rate is high", bounce rate is not a Google ranking factor and depends entirely on page type.
+2. ❌ "They should have more pages", quantity ≠ quality. Suggest specific topics, not vague volume.
+3. ❌ "They need more backlinks", without specifics on which ones, this is useless. Suggest specific link-building tactics.
+4. ❌ "Their meta keywords are missing", Google hasn't used meta keywords since 2009.
+5. ❌ "Their site speed is bad", without specific Core Web Vitals numbers, this is hand-waving.
 
 Including any of these in your audit will make a senior marketer reading your portfolio close the tab.
 
@@ -410,29 +410,29 @@ You now know:
 2. 🛠️ Pick your subject + start the audit
 3. ✏️ Use `Quiz.md` to self-evaluate when done
 4. 📋 Grade against `Cheat-Sheet.md` rubric
-5. ➡️ Move to [Module 3: Capstone 2 — Live Paid Campaign](../Module-03-Capstone-Paid-Campaign-Live/Reading.md) once your audit is published
+5. ➡️ Move to [Module 3: Capstone 2, Live Paid Campaign](../Module-03-Capstone-Paid-Campaign-Live/Reading.md) once your audit is published
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Ahrefs Blog — "How to Do an SEO Audit"](https://ahrefs.com/blog/) — the gold-standard methodology
-- 📖 [Brian Dean / Backlinko — The Definitive SEO Audit Guide](https://backlinko.com/) — alt methodology
-- 📖 [The Surfer Content Editor walkthrough](https://surferseo.com/blog/) — for the content gap layer
-- 📖 [Aleyda Solis — International SEO Audit Template](https://aleydasolis.com/) — if your subject is multi-language
-- 📖 [Google's Search Quality Rater Guidelines](https://services.google.com/fh/files/misc/hsw-sqrg.pdf) — the EEAT bible
+- 📖 [Ahrefs Blog "How to Do an SEO Audit"](https://ahrefs.com/blog/) the gold-standard methodology
+- 📖 [Brian Dean / Backlinko The Definitive SEO Audit Guide](https://backlinko.com/) alt methodology
+- 📖 [The Surfer Content Editor walkthrough](https://surferseo.com/blog/), for the content gap layer
+- 📖 [Aleyda Solis International SEO Audit Template](https://aleydasolis.com/) if your subject is multi-language
+- 📖 [Google's Search Quality Rater Guidelines](https://services.google.com/fh/files/misc/hsw-sqrg.pdf), the EEAT bible
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
-Use these to stress-test your audit thinking before you publish — defending choices in writing now saves you in the interview later.
+Use these to stress-test your audit thinking before you publish, defending choices in writing now saves you in the interview later.
 
 1. **The reading says 15–20 pages is the calibrated audit length, and that "less = thin, more = scope creep."** A senior SEO consultant tells you that for a $5,000 engagement, 50-page audits are standard. Are they wrong, or is the 15–20 page rule wrong for paid work? How does the length question change between "portfolio piece" and "paid client engagement," and what's the test you'd apply to decide?
-2. **The "5 trap findings" (bounce rate, "more pages," "more backlinks," meta keywords, generic site speed) are flagged as junior-marketer tells.** But every one of them shows up in 90% of audit templates online. Why have they persisted? Pick one and argue the strongest case a junior could make for including it — and then explain why the senior-marketer rebuttal still wins.
-3. **The reading recommends auditing your own micro-product or a friend's business over a public site you don't know.** A counter-argument: a Notion or Calendly audit signals "I can analyze businesses bigger than me" — which may be more impressive to a hiring manager at a Series B SaaS. When is "audit a public big company" the smarter choice? When is it the lazy choice?
-4. **Surfer SEO, Ahrefs Content Gap, and manual analysis all produce similar content-gap insights — but at different price points and effort levels.** If you were billing a client $1,500 for an audit, which would you use, and how would you justify the tooling cost in the proposal? Build the argument both ways.
-5. **The 90-day content roadmap is described as "the highest-value section — most clients ignore the technical section but read the roadmap line-by-line."** A contrarian SEO take says the roadmap is also where most audits go wrong — students suggest articles that will *never* rank because they didn't validate intent or SERP feature coverage. What's the discipline you'd build into the roadmap step to prevent this failure mode?
+2. **The "5 trap findings" (bounce rate, "more pages," "more backlinks," meta keywords, generic site speed) are flagged as junior-marketer tells.** But every one of them shows up in 90% of audit templates online. Why have they persisted? Pick one and argue the strongest case a junior could make for including it, and then explain why the senior-marketer rebuttal still wins.
+3. **The reading recommends auditing your own micro-product or a friend's business over a public site you don't know.** A counter-argument: a Notion or Calendly audit signals "I can analyze businesses bigger than me", which may be more impressive to a hiring manager at a Series B SaaS. When is "audit a public big company" the smarter choice? When is it the lazy choice?
+4. **Surfer SEO, Ahrefs Content Gap, and manual analysis all produce similar content-gap insights, but at different price points and effort levels.** If you were billing a client $1,500 for an audit, which would you use, and how would you justify the tooling cost in the proposal? Build the argument both ways.
+5. **The 90-day content roadmap is described as "the highest-value section most clients ignore the technical section but read the roadmap line-by-line."** A contrarian SEO take says the roadmap is also where most audits go wrong students suggest articles that will *never* rank because they didn't validate intent or SERP feature coverage. What's the discipline you'd build into the roadmap step to prevent this failure mode?
 
 ---
 

@@ -18,7 +18,7 @@
 
 # 🎥 Module 6 Videos: Identity Governance & PIM
 
-> **How to use:** Click any card to open a YouTube search — pick the top current result. Follow along by configuring a PIM eligible Reports Reader assignment in your dev tenant and activating it.
+> **How to use:** Click any card to open a YouTube search, pick the top current result. Follow along by configuring a PIM eligible Reports Reader assignment in your dev tenant and activating it.
 
 ## ⭐ Essential watching (~80 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PIM End-to-End — Eligible Roles & Activation</p>
+      <p class="vg-title">PIM End-to-End, Eligible Roles & Activation</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 28 min · Configure + activate + audit</span>
     </div>
@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Access Reviews — Recurring Review Setup</p>
+      <p class="vg-title">Access Reviews, Recurring Review Setup</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · Group + role + package reviews</span>
     </div>
@@ -45,8 +45,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Entitlement Management — Build a Real Access Package</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-title">Entitlement Management, Build a Real Access Package</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 22 min · Catalog → package → assign</span>
     </div>
   </a>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">PIM for Groups — Role-Assignable Group Membership</p>
+      <p class="vg-title">PIM for Groups, Role-Assignable Group Membership</p>
       <p class="vg-creator">Concepts Work</p>
       <span class="vg-duration">⏱ 13 min · Setup + activation flow</span>
     </div>
@@ -119,7 +119,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Inactive User Cleanup with Governance</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 11 min · Auto-disable stale accounts</span>
     </div>
   </a>
@@ -134,7 +134,7 @@
 | **John Savill** | The reference for PIM and governance. |
 | **Andy Malone MVP** | M365 admin perspective on access reviews. |
 | **Microsoft Mechanics** | Official launches; Lifecycle Workflows + Verified ID. |
-| **Dean Cefola — Azure Academy** | Lab walkthroughs. |
+| **Dean Cefola, Azure Academy** | Lab walkthroughs. |
 | **Concepts Work** | Newer SC-300 channel; well-organized. |
 
 ---

@@ -4,7 +4,7 @@
 
 ---
 
-## 📦 Incoterms 2020 — All 11
+## 📦 Incoterms 2020, All 11
 
 ### Any Mode (7)
 
@@ -46,7 +46,7 @@
 
 Hedge tools: forward · future · option · swap · natural hedge · currency clause
 
-🚫 "Invoice in home currency" doesn't eliminate FX — supplier prices it in.
+🚫 "Invoice in home currency" doesn't eliminate FX, supplier prices it in.
 
 ---
 
@@ -101,8 +101,8 @@ Tools: Coface · EIU · TI CPI · OFAC SDN · Moody's/S&P
 Power distance · Indiv/Collective · Masc/Fem · Uncertainty avoidance · Long-term orientation · Indulgence/Restraint
 
 ### Hall
-- High-context: Japan, China, Arab, much of LATAM — implicit, relationship-driven
-- Low-context: US, Germany, Scandinavia — explicit, contract-driven
+- High-context: Japan, China, Arab, much of LATAM, implicit, relationship-driven
+- Low-context: US, Germany, Scandinavia, explicit, contract-driven
 
 🧠 Cross-cultural exam answer: **listen, learn, adapt.**
 

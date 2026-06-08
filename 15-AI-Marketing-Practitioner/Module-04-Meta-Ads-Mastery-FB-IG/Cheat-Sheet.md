@@ -153,7 +153,7 @@ Campaign 3: RETARGETING ($3-5/day always on)
 
 ## ✏️ Quick Self-Check
 
-1. Pixel vs CAPI — which one survives iOS ATT?
+1. Pixel vs CAPI, which one survives iOS ATT?
 2. Lookalike seed minimum?
 3. ASC Existing Customer Budget cap recommendation?
 4. DCT minimum impressions per variant?

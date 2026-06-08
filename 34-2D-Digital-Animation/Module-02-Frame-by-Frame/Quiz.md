@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-02-Frame-by-Frame/Quiz/
 title: "Module 2 Quiz: Frame-by-Frame Animation"
 ---
 
-# 🧠 Module 2 Quiz — Frame-by-Frame Animation
+# 🧠 Module 2 Quiz, Frame-by-Frame Animation
 
 ---
 
@@ -74,7 +74,7 @@ D. In a separate scene
 
 A. Ease in (slow start, fast finish)
 B. Ease out (fast start, slow finish)
-C. Linear motion (constant speed — feels mechanical)
+C. Linear motion (constant speed, feels mechanical)
 D. Cushion (slow in the middle, fast at extremes)
 
 ---
@@ -135,10 +135,10 @@ D. The arc angle steepens but the height stays constant
 
 ### Q15. An animator's frame-by-frame sequence shows a character's elbow taking a straight-line path from position A to position B. What is wrong with this?
 
-A. The arc is broken — living joints move in curved arcs, not straight lines
+A. The arc is broken, living joints move in curved arcs, not straight lines
 B. The motion is too slow for the number of in-betweens used
 C. The smear frame is missing from the sequence
-D. Nothing — straight-line motion is correct for joint movement
+D. Nothing, straight-line motion is correct for joint movement
 
 ---
 
@@ -163,7 +163,7 @@ D. Ghost mode
 ### Q18. A character punches forward in 3 frames. The animator draws the fist in its starting position (frame 1), a smear frame (frame 2), and the extended position (frame 3). During playback, what should the audience perceive about the smear frame?
 
 A. It should be clearly visible as a stylistic decorative element
-B. It should feel invisible — the brain processes it as a motion blur
+B. It should feel invisible, the brain processes it as a motion blur
 C. It should pause the motion for emphasis
 D. It should create a strobe effect between the two key poses
 
@@ -210,7 +210,7 @@ D. 12–15 frames
 A. Delete the roughs layer from the file to reduce file size
 B. Convert all cleanup drawings to symbols
 C. Move the roughs layer to the Library panel
-D. Either delete or hide the roughs layer — both are acceptable before export
+D. Either delete or hide the roughs layer, both are acceptable before export
 
 ---
 
@@ -226,28 +226,28 @@ D. They are the same technique with different names used in different countries
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — Onion skinning shows adjacent frames at reduced opacity to help track motion arcs.
-Q2.  C — Key poses (extremes) come first to establish timing and arc of the motion.
-Q3.  B — On twos at 24fps = new drawing every 2 frames = 12 unique drawings per second.
-Q4.  C — Frames crowded at start and spread at end = motion accelerating (ease in/slow in).
-Q5.  B — Smear frames are for actions too fast for the eye to track as a discrete shape.
-Q6.  B — Arcs are the curved paths living things follow; straight-line motion feels mechanical.
-Q7.  B — Cleanup layer goes above roughs so the clean lines trace over the rough guide.
-Q8.  C — Even spacing produces linear, constant-speed motion — correct but mechanical-feeling.
-Q9.  B — Spider-Verse used smears for kinetic energy and to distinguish dimension aesthetics.
-Q10. B — Bouncing ball hits squash/stretch, slow in/slow out, arc, and secondary action all at once.
-Q11. C — An elongated blur shape spanning start to end is the classic smear frame technique.
-Q12. C — Track key body-part positions across frames; they should form a smooth curve.
-Q13. B — Ufotable (Demon Slayer, JJK) and Trigger are most associated with advanced 2D smear work.
-Q14. C — Energy is lost each bounce; the ball reaches a lower peak height each time.
-Q15. A — Joints follow arcs; a straight-line elbow path is a broken arc.
-Q16. B — Rough in-betweens establish path and spacing without worrying about line quality.
-Q17. B — Outline mode shows only stroke paths of adjacent frames, not fills.
-Q18. B — Smear frames should feel invisible during playback; the brain interprets them as blur.
-Q19. B — The X-sheet maps drawings to frames and audio to frames for production tracking.
-Q20. B — Straight-ahead draws frame-by-frame sequentially; pose-to-pose draws key poses first.
-Q21. B — Different frame rates visually distinguished the dimensions and gave each a unique feel.
-Q22. B — A fast blink typically takes 2–3 frames at 24fps.
-Q23. D — Either deleting or hiding the roughs layer before export is acceptable practice.
-Q24. B — Pose-to-pose: key poses first, in-betweens later. Straight-ahead: sequential frame-by-frame.
+Q1.  B, Onion skinning shows adjacent frames at reduced opacity to help track motion arcs.
+Q2.  C, Key poses (extremes) come first to establish timing and arc of the motion.
+Q3.  B, On twos at 24fps = new drawing every 2 frames = 12 unique drawings per second.
+Q4.  C, Frames crowded at start and spread at end = motion accelerating (ease in/slow in).
+Q5.  B, Smear frames are for actions too fast for the eye to track as a discrete shape.
+Q6.  B, Arcs are the curved paths living things follow; straight-line motion feels mechanical.
+Q7.  B, Cleanup layer goes above roughs so the clean lines trace over the rough guide.
+Q8.  C, Even spacing produces linear, constant-speed motion, correct but mechanical-feeling.
+Q9.  B, Spider-Verse used smears for kinetic energy and to distinguish dimension aesthetics.
+Q10. B, Bouncing ball hits squash/stretch, slow in/slow out, arc, and secondary action all at once.
+Q11. C, An elongated blur shape spanning start to end is the classic smear frame technique.
+Q12. C, Track key body-part positions across frames; they should form a smooth curve.
+Q13. B, Ufotable (Demon Slayer, JJK) and Trigger are most associated with advanced 2D smear work.
+Q14. C, Energy is lost each bounce; the ball reaches a lower peak height each time.
+Q15. A, Joints follow arcs; a straight-line elbow path is a broken arc.
+Q16. B, Rough in-betweens establish path and spacing without worrying about line quality.
+Q17. B, Outline mode shows only stroke paths of adjacent frames, not fills.
+Q18. B, Smear frames should feel invisible during playback; the brain interprets them as blur.
+Q19. B, The X-sheet maps drawings to frames and audio to frames for production tracking.
+Q20. B, Straight-ahead draws frame-by-frame sequentially; pose-to-pose draws key poses first.
+Q21. B, Different frame rates visually distinguished the dimensions and gave each a unique feel.
+Q22. B, A fast blink typically takes 2–3 frames at 24fps.
+Q23. D, Either deleting or hiding the roughs layer before export is acceptable practice.
+Q24. B, Pose-to-pose: key poses first, in-betweens later. Straight-ahead: sequential frame-by-frame.
 ```

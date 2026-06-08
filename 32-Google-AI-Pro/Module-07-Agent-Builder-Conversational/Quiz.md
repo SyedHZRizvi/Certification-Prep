@@ -58,7 +58,7 @@ D. Authentication Daemon Kit
 A. Sequential, hierarchical, parallel, workflow (declarative DAG)
 B. Only sequential
 C. Random
-D. None — agents must be solo
+D. None, agents must be solo
 
 ---
 
@@ -231,7 +231,7 @@ D. ChatGPT Plus
 ### Q21: **B. Vertex AI Agent Builder (Workspace integration)**
 ### Q22: **B. Both still exist; CX/Conversational Agents is newer**
 ### Q23: **B. Specialist sub-agents on cheap tiers + clearer traces**
-### Q24: **D. Conversational Agents requires Pro for any generative response — FALSE**
+### Q24: **D. Conversational Agents requires Pro for any generative response, FALSE**
 Flash works for generative fallback in most cases.
 ### Q25: **B. Full stack: Chirp + Conversational Agents + function calling + Vertex Search + Gemini + observability + security**
 
@@ -245,4 +245,4 @@ Flash works for generative fallback in most cases.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Responsible AI on Google Cloud](../Module-08-Responsible-AI-Google/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Responsible AI on Google Cloud](../Module-08-Responsible-AI-Google/Reading.md)

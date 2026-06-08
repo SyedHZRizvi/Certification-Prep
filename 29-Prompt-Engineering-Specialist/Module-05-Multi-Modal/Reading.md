@@ -1,6 +1,6 @@
 # Module 5: Multi-Modal Prompting 🖼️
 
-> **Why this module matters:** 10% of the Final Mock. By 2026, "LLM" is a misnomer — the frontier models all see images and many also handle audio and video. The prompt patterns for multi-modal inputs are different enough from text that you need a fresh playbook, and the failure modes are uglier (OCR drift, chart misreads, multi-image confusion).
+> **Why this module matters:** 10% of the Final Mock. By 2026, "LLM" is a misnomer, the frontier models all see images and many also handle audio and video. The prompt patterns for multi-modal inputs are different enough from text that you need a fresh playbook, and the failure modes are uglier (OCR drift, chart misreads, multi-image confusion).
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–4
@@ -20,7 +20,7 @@ In Q2 2024, Aaliyah's team piloted a multi-modal flow with Claude 3 Opus (then G
 ```
 You are an auto-claims first-pass triage assistant. Look at these photos of a vehicle and extract:
 1. Vehicle make / model / year (from visible badges, license plate frame, or distinctive shape)
-2. License plate (US format) — return UNREADABLE if illegible
+2. License plate (US format), return UNREADABLE if illegible
 3. Damage location (e.g., "rear-driver-side bumper")
 4. Damage severity (LOW / MED / HIGH / TOTAL-LOSS)
 5. Estimated cost band (under $1K / $1K-$5K / $5K-$15K / over $15K)
@@ -31,7 +31,7 @@ Return ONLY JSON matching the schema. If you cannot determine a field, return nu
 
 For a 3-image claim, the median time from upload to first-decision dropped to **11 seconds**.
 
-The settlement still required a human adjuster on the loop — the model isn't authorized to approve, just to **triage and pre-populate**. But the human's job changed from "open 8 tabs and read everything" to "review the AI's JSON, fix anything wrong, click approve." Net effect: ~70% of claims now closed within 24 hours instead of 6 days.
+The settlement still required a human adjuster on the loop, the model isn't authorized to approve, just to **triage and pre-populate**. But the human's job changed from "open 8 tabs and read everything" to "review the AI's JSON, fix anything wrong, click approve." Net effect: ~70% of claims now closed within 24 hours instead of 6 days.
 
 The catch: it took 6 weeks to get the prompt right. The early prompts had the model confusing "rear" with "front" on white sedans where the silhouette was ambiguous, missing license plates because of glare, and confidently misreading damage severity on cars with after-market wraps. This module is the playbook Aaliyah's team developed.
 
@@ -45,18 +45,18 @@ The catch: it took 6 weeks to get the prompt right. The early prompts had the mo
 | Claude Haiku 4.5 | Yes (smaller cap) | No | No | Yes |
 | GPT-5 | Yes | Limited via Sora-2 add-on | Yes (audio-in via gpt-5-audio) | Yes |
 | GPT-4o (still widely used) | Yes | No | Yes | Yes |
-| Gemini 2.5 Pro | Yes | **Yes — direct video file or YouTube URL** | Yes | Yes |
+| Gemini 2.5 Pro | Yes | **Yes, direct video file or YouTube URL** | Yes | Yes |
 | Gemini 2.5 Flash | Yes | Yes | Yes | Yes |
 | Llama 3.2 11B / 90B Vision | Yes | No | No | Yes |
 | DeepSeek Vision | Yes (open) | No | No | Yes |
 
-🎯 **Memorize:** For **video**, Gemini 2.5 is the only mainstream choice — it accepts video files directly. For **everything else multi-modal**, all four families are competitive.
+🎯 **Memorize:** For **video**, Gemini 2.5 is the only mainstream choice, it accepts video files directly. For **everything else multi-modal**, all four families are competitive.
 
 🚨 **Trap:** "Multi-modal" on the box doesn't always mean "multi-modal in the API." GPT-5's voice mode is a separate API path from the standard chat completion. Always read the docs.
 
 ---
 
-## 📷 Sending Images — Three Patterns
+## 📷 Sending Images, Three Patterns
 
 ### Pattern 1: Base64 in the request body
 
@@ -122,7 +122,7 @@ Vision inputs are billed by token equivalence. Approximate rules:
 | Gemini | Flat ~258 tokens for ≤384x384; tile-based for larger |
 | Llama Vision | Varies by host |
 
-🎯 **Memorize:** A *single high-detail image* on GPT-5/Claude is typically 1,500–2,500 tokens — equivalent to a 1.5–3 page document. Send only what's necessary.
+🎯 **Memorize:** A *single high-detail image* on GPT-5/Claude is typically 1,500–2,500 tokens, equivalent to a 1.5–3 page document. Send only what's necessary.
 
 ---
 
@@ -138,7 +138,7 @@ Garbage in, garbage out applies double for vision. Best practices:
 | Compression | Avoid heavy JPEG compression on text/charts; PNG when feasible |
 | Orientation | Rotate to upright BEFORE sending (EXIF rotation isn't always honored) |
 | Color | Don't pre-process to grayscale unless the task needs it |
-| Cropping | Crop to the region of interest if you know it — saves tokens, improves focus |
+| Cropping | Crop to the region of interest if you know it, saves tokens, improves focus |
 | Annotations | Avoid adding red arrows/circles UNLESS they help; some models attend to overlays excessively |
 
 ### 2. Frame your prompt to the image
@@ -149,7 +149,7 @@ Garbage in, garbage out applies double for vision. Best practices:
 | `"Describe it"` | `"Describe the type and severity of skin lesion visible in this photo, using ABCDE criteria. If insufficient image quality, say so."` |
 | `"Read the text"` | `"This is a screenshot of a receipt. Extract date, vendor, total, and itemized list. Return UNKNOWN for any field that is illegible."` |
 
-### 3. Multiple images — give each a name/index
+### 3. Multiple images, give each a name/index
 
 ```
 Here are two photos.
@@ -180,9 +180,9 @@ class DamageReport(BaseModel):
 
 ---
 
-## 📜 OCR — When LLM Vision Beats Dedicated OCR
+## 📜 OCR, When LLM Vision Beats Dedicated OCR
 
-For most document text extraction in 2026, frontier vision models BEAT dedicated OCR (Tesseract, AWS Textract for simple cases, Google Document AI) for **layout-aware extraction** — bills, forms, contracts. They lose on:
+For most document text extraction in 2026, frontier vision models BEAT dedicated OCR (Tesseract, AWS Textract for simple cases, Google Document AI) for **layout-aware extraction**, bills, forms, contracts. They lose on:
 
 - Extremely dense text (newspaper pages, legal-print fine print)
 - Specialized scripts (Arabic calligraphy, vertical CJK)
@@ -192,12 +192,12 @@ For most document text extraction in 2026, frontier vision models BEAT dedicated
 
 | Task | Best tool 2026 |
 |------|----------------|
-| Receipt totals + line items | Claude 4.7 / GPT-5 / Gemini 2.5 — all strong |
+| Receipt totals + line items | Claude 4.7 / GPT-5 / Gemini 2.5, all strong |
 | Multi-page contract clauses | Gemini 2.5 (long context) or Claude 4.7 (1M) with structured outputs |
 | Generic OCR on dense scan | AWS Textract or Google Document AI |
 | Handwriting | GPT-5 strongest in 2026 benchmarks |
 | Tables from PDFs | Gemini 2.5 Pro (often the cleanest table reconstruction) |
-| Charts (extract data) | GPT-5 or Gemini 2.5 — explicit "list each data point" prompt |
+| Charts (extract data) | GPT-5 or Gemini 2.5, explicit "list each data point" prompt |
 
 ### OCR prompt template
 
@@ -215,7 +215,7 @@ This is a scanned receipt. Extract the following:
   "items": [
     {"name": <string>, "qty": <int>, "unit_price": <float>, "line_total": <float>}
   ],
-  "confidence": <float 0..1 — your assessment of legibility>,
+  "confidence": <float 0..1, your assessment of legibility>,
   "warnings": [<string>]  // e.g., "subtotal + tax does not match total"
 }
 ```
@@ -236,7 +236,7 @@ Vision models can read charts but with a specific failure mode: **they confabula
 ### Defenses
 
 1. **Ask for the data points individually**: *"List each bar in the chart with its label and approximate value. If you cannot read a value, say so."*
-2. **Ask for the methodology**: *"What chart type is this? What does each axis represent? What is the data source noted at the bottom?"* — these meta-questions surface confidence.
+2. **Ask for the methodology**: *"What chart type is this? What does each axis represent? What is the data source noted at the bottom?"*, these meta-questions surface confidence.
 3. **Self-consistency**: Sample N times; values should agree within tolerance.
 4. **Compare to the source**: Always reconcile with the underlying data when available.
 
@@ -293,7 +293,7 @@ Going direct skips the transcribe step but you lose the explicit text artifact y
 
 ## 🎥 Video Prompting (Gemini's Killer Feature)
 
-Gemini 2.5 can accept video files directly — up to ~1 hour. Use cases:
+Gemini 2.5 can accept video files directly, up to ~1 hour. Use cases:
 
 - Surveillance / security review ("Was there activity in the parking lot between 2am and 4am?")
 - Sports analysis ("List every shot attempt in the second half")
@@ -334,33 +334,33 @@ resp = client.models.generate_content(
 
 > **Scenario:** Aaliyah's team starts the FNOL pilot. Walk through the 6-week iteration.
 
-**Week 1 — MVP prompt + Claude 3 Opus:**
+**Week 1, MVP prompt + Claude 3 Opus:**
 - Free-form output. ~60% useful first-pass.
 - Failures: glare-blocked plates, ambiguous orientation on white sedans.
 
-**Week 2 — Structured outputs + Pydantic + temperature=0:**
+**Week 2, Structured outputs + Pydantic + temperature=0:**
 - Same model. Up to ~75%.
 - Failures: severity inflation (model reports HIGH for cosmetic dings).
 
-**Week 3 — Calibration via few-shot examples:**
+**Week 3, Calibration via few-shot examples:**
 - Add 6 calibrated examples (one per severity tier × make/model variety).
 - ~85%.
 - Failures: chart-style images (insurance damage diagrams) misclassified.
 
-**Week 4 — Multiple-image labeling:**
+**Week 4, Multiple-image labeling:**
 - Explicit `"Image 1: front-quarter view"` labels.
 - ~91%.
 - Failures: certain after-market wraps fooling the make detector.
 
-**Week 5 — Add `confidence` field + human-in-loop threshold:**
+**Week 5, Add `confidence` field + human-in-loop threshold:**
 - Below 0.7 confidence → auto-route to human.
 - Adjusters spend time only on the hard 9%.
 
-**Week 6 — Self-consistency on `severity` (N=3):**
+**Week 6, Self-consistency on `severity` (N=3):**
 - Take majority vote for severity to defeat residual ambiguity.
 - ~94%.
 
-Pilot graduates to production. The prompt now lives in version control with an eval suite (Module 6 — built next).
+Pilot graduates to production. The prompt now lives in version control with an eval suite (Module 6, built next).
 
 ---
 
@@ -369,7 +369,7 @@ Pilot graduates to production. The prompt now lives in version control with an e
 | Misconception | Reality |
 |---------------|---------|
 | "All four families support video" | Only Gemini 2.5 has native video. Others need frame-sampling. |
-| "Vision is just OCR" | Vision models reason about layout, comparison, identification — way beyond OCR. |
+| "Vision is just OCR" | Vision models reason about layout, comparison, identification, way beyond OCR. |
 | "Higher resolution always helps" | Past a point, you pay more tokens for diminishing returns. Crop the region. |
 | "Image tokens are cheap" | A single high-detail image can be 2,000+ tokens. Audit. |
 | "EXIF rotation is honored" | Often NOT. Pre-rotate to upright. |
@@ -388,10 +388,10 @@ Pilot graduates to production. The prompt now lives in version control with an e
 | **Vision-language model (VLM)** | A model that accepts images alongside text |
 | **Multi-modal** | Accepts more than one modality (text, image, audio, video) |
 | **Tile (OpenAI vision)** | A 512x512 region the image is broken into for tokenization |
-| **Detail mode** (OpenAI) | `low` / `high` / `auto` — controls tile count and cost |
+| **Detail mode** (OpenAI) | `low` / `high` / `auto`, controls tile count and cost |
 | **EXIF** | Image metadata standard; orientation often not honored by APIs |
-| **OCR** | Optical Character Recognition — text extraction from images |
-| **Layout-aware extraction** | OCR + structure understanding (tables, forms) — VLM strength |
+| **OCR** | Optical Character Recognition, text extraction from images |
+| **Layout-aware extraction** | OCR + structure understanding (tables, forms), VLM strength |
 | **Confabulation** | Confidently wrong output from a vision model on charts/numbers |
 | **Frame sampling** | Reducing video to N frames for image-prompt processing |
 | **Whisper** | OpenAI's open-source transcription model |
@@ -415,9 +415,9 @@ Pilot graduates to production. The prompt now lives in version control with an e
 
 ---
 
-## 📊 Case Study — GPT-4V Release (September 2023) & The Industry Shift
+## 📊 Case Study, GPT-4V Release (September 2023) & The Industry Shift
 
-**Situation.** OpenAI released **GPT-4V** (Vision) to ChatGPT Plus subscribers on September 25, 2023, then to the API in November 2023. It was the first widely-available frontier multi-modal model — Google's earlier Gemini announcement was still demo-only, and Anthropic's Claude 3 vision wouldn't ship until March 2024.
+**Situation.** OpenAI released **GPT-4V** (Vision) to ChatGPT Plus subscribers on September 25, 2023, then to the API in November 2023. It was the first widely-available frontier multi-modal model, Google's earlier Gemini announcement was still demo-only, and Anthropic's Claude 3 vision wouldn't ship until March 2024.
 
 **The capability shift.** Within weeks, builders demonstrated:
 
@@ -425,16 +425,16 @@ Pilot graduates to production. The prompt now lives in version control with an e
 - Whiteboard math problem-solving
 - Receipt extraction outperforming Tesseract by 20+ percentage points on real-world receipts
 - Fashion description from photos
-- Medical image triage (research only — not clinical)
+- Medical image triage (research only, not clinical)
 
-**The economics.** GPT-4V launched at ~$0.01 per image (low detail) to ~$0.03 (high detail) — competitive with dedicated services that charged similar amounts but only did OCR. The all-in-one prompt-and-image-and-structure pipeline collapsed three previous tool chains (OCR, layout parser, classifier) into one API call.
+**The economics.** GPT-4V launched at ~$0.01 per image (low detail) to ~$0.03 (high detail), competitive with dedicated services that charged similar amounts but only did OCR. The all-in-one prompt-and-image-and-structure pipeline collapsed three previous tool chains (OCR, layout parser, classifier) into one API call.
 
 **The follow-on.** Within 6 months, Claude 3 Opus / Sonnet / Haiku all shipped vision. Gemini 1.5 Pro added long-context multi-modal. Llama 3.2 Vision (October 2024) made open-weights vision a reality. By late 2024, "vision-only models" (no text reasoning) were considered obsolete for most production work.
 
 **The failure modes that taught everyone.**
-- Early GPT-4V was prone to refusal on faces (heavy safety tuning around identifying people) — annoying for use cases like KYC and ID verification.
-- Chart-reading confabulation was a major early discovery — community-built benchmarks like ChartQA showed disappointing scores.
-- Indirect prompt injection via image text (a sticky note in the photo saying "ignore your instructions") emerged as a serious vulnerability — Module 7.
+- Early GPT-4V was prone to refusal on faces (heavy safety tuning around identifying people), annoying for use cases like KYC and ID verification.
+- Chart-reading confabulation was a major early discovery, community-built benchmarks like ChartQA showed disappointing scores.
+- Indirect prompt injection via image text (a sticky note in the photo saying "ignore your instructions") emerged as a serious vulnerability, Module 7.
 
 **Lesson for the exam / for practitioners.**
 - Vision is now table stakes. Pick the model that matches your modality mix (Gemini for video, GPT-5 for handwriting, Claude for long-doc structure, Llama for on-prem).
@@ -452,21 +452,21 @@ Pilot graduates to production. The prompt now lives in version control with an e
 
 You now know:
 
-- 🖼️ The 2026 vision-capable model landscape — Claude / GPT / Gemini / Llama
-- 📷 The three patterns for sending images — base64, URL, data URL
+- 🖼️ The 2026 vision-capable model landscape, Claude / GPT / Gemini / Llama
+- 📷 The three patterns for sending images, base64, URL, data URL
 - 🎯 Image best practices (resolution, orientation, cropping, labeling multiple images)
 - 📜 When VLM beats dedicated OCR and when it doesn't
 - 📊 Chart-reading defenses (point-by-point listing, self-consistency)
 - 🎙️ Audio prompting via Whisper + chat or direct (GPT-5 audio, Gemini)
-- 🎥 Video prompting — Gemini's domain
+- 🎥 Video prompting, Gemini's domain
 - 🛡️ Multi-modal-specific failure modes
 - 🔬 Aaliyah's 6-week iteration playbook
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 6 — Evaluation & A/B Testing](../Module-06-Evaluation-AB-Testing/Reading.md)
+4. ➡️ Move on: [Module 6, Evaluation & A/B Testing](../Module-06-Evaluation-AB-Testing/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 6](../Module-06-Evaluation-AB-Testing/Reading.md) is the eval harness that Aaliyah's team built in Week 6. [Module 7](../Module-07-Adversarial-Defense/Reading.md) covers image-based prompt injection.
@@ -479,18 +479,18 @@ You now know:
 
 **Primary sources:**
 - 📄 OpenAI (2023). *GPT-4V(ision) System Card*. https://openai.com/research/gpt-4v-system-card
-- 📄 Liu et al. (2023). *LLaVA: Visual Instruction Tuning* — the open-source VLM lineage.
-- 📄 Anthropic (2024). *Claude 3 Model Card* — vision section.
-- 📄 Gemini Team (2024). *Gemini 1.5 Technical Report* — long-context multi-modal.
+- 📄 Liu et al. (2023). *LLaVA: Visual Instruction Tuning*, the open-source VLM lineage.
+- 📄 Anthropic (2024). *Claude 3 Model Card*, vision section.
+- 📄 Gemini Team (2024). *Gemini 1.5 Technical Report*, long-context multi-modal.
 
 **Vendor docs:**
-- 📖 [Anthropic — Vision](https://docs.anthropic.com/en/docs/build-with-claude/vision)
-- 📖 [OpenAI — Vision](https://platform.openai.com/docs/guides/vision)
-- 📖 [OpenAI — Audio](https://platform.openai.com/docs/guides/audio)
-- 📖 [Gemini — Vision and video](https://ai.google.dev/gemini-api/docs/vision)
+- 📖 [Anthropic, Vision](https://docs.anthropic.com/en/docs/build-with-claude/vision)
+- 📖 [OpenAI, Vision](https://platform.openai.com/docs/guides/vision)
+- 📖 [OpenAI, Audio](https://platform.openai.com/docs/guides/audio)
+- 📖 [Gemini, Vision and video](https://ai.google.dev/gemini-api/docs/vision)
 - 📖 [Whisper docs](https://platform.openai.com/docs/guides/speech-to-text)
 
 **Practitioner:**
-- 📖 [Simon Willison — vision LLM experiments](https://simonwillison.net/tags/vision-llms/)
-- 📖 [ChartQA Benchmark](https://github.com/vis-nlp/ChartQA) — vision chart evaluation
-- 📖 [MMMU benchmark](https://mmmu-benchmark.github.io) — multi-modal college-exam eval
+- 📖 [Simon Willison, vision LLM experiments](https://simonwillison.net/tags/vision-llms/)
+- 📖 [ChartQA Benchmark](https://github.com/vis-nlp/ChartQA), vision chart evaluation
+- 📖 [MMMU benchmark](https://mmmu-benchmark.github.io), multi-modal college-exam eval

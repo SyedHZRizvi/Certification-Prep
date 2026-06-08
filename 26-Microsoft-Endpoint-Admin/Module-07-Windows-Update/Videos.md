@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Windows Update for Business — Complete Walkthrough</p>
+      <p class="vg-title">Windows Update for Business, Complete Walkthrough</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 26 min · Rings end-to-end</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Expedited Updates — Push a Zero-Day Patch in 24 Hours</p>
+      <p class="vg-title">Expedited Updates, Push a Zero-Day Patch in 24 Hours</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 16 min · The emergency play</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Delivery Optimization — LAN vs Group vs Internet</p>
+      <p class="vg-title">Delivery Optimization, LAN vs Group vs Internet</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 20 min · P2P bandwidth saver</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Microsoft Autopatch — Managed Update Orchestration</p>
+      <p class="vg-title">Microsoft Autopatch, Managed Update Orchestration</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · When MS owns your rings</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">PrintNightmare — Zero-Day Response Playbook</p>
+      <p class="vg-title">PrintNightmare, Zero-Day Response Playbook</p>
       <p class="vg-creator">Microsoft Security</p>
       <span class="vg-duration">⏱ 22 min · The expedited update use case</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">WSUS Deprecation — Migrating to Cloud</p>
+      <p class="vg-title">WSUS Deprecation, Migrating to Cloud</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 20 min · The on-prem retirement story</span>
     </div>

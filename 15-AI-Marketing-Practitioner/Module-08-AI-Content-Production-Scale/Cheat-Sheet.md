@@ -63,7 +63,7 @@ PASTE INTO CLAUDE PROJECT / CUSTOM GPT:
 | `--sref [URL]` | style ref (mimic aesthetic) |
 | `--no [x]` | negative prompt |
 
-🚨 Always render 1:1 + 4:5 + 9:16 — not one and resize.
+🚨 Always render 1:1 + 4:5 + 9:16, not one and resize.
 
 ---
 
@@ -152,7 +152,7 @@ US Copyright: AI-only output = NOT copyrightable.
 ## ✏️ Quick Self-Check
 
 1. The 4 production stages?
-2. Claude vs ChatGPT vs Gemini — when?
+2. Claude vs ChatGPT vs Gemini, when?
 3. `--cref` does what?
 4. HeyGen use case?
 5. Solo stack monthly cost?

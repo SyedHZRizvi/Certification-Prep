@@ -263,7 +263,7 @@ Google's Enhanced Conversions sends email, phone (and optionally address) hashed
 The B2B variant. The lead is captured on-site, qualified in CRM, then matched back to the original ad click via hashed lead ID.
 
 ### Q11: **B. Noisy, aggregated, delayed conversion value**
-SKAN postbacks are randomized in timing and aggregated by Apple — cannot identify individual users.
+SKAN postbacks are randomized in timing and aggregated by Apple, cannot identify individual users.
 
 ### Q12: **B. 6 bits (0–63)**
 The 6-bit conversion value is the *entire* signal you control. Design it carefully.
@@ -290,7 +290,7 @@ CHIPS lets a third-party cookie work on one parent site without being usable for
 Multiple parties run queries on combined data; raw data never leaves any party. Used for brand × publisher / brand × walled garden analyses.
 
 ### Q20: **B. Data clean room platforms**
-All four are clean-room offerings. AWS, Google (ADH), Snowflake, Meta — plus InfoSum, Habu (LiveRamp), LiveRamp Safe Haven.
+All four are clean-room offerings. AWS, Google (ADH), Snowflake, Meta, plus InfoSum, Habu (LiveRamp), LiveRamp Safe Haven.
 
 ### Q21: **B. Calibrated noise controlled by ε**
 The mathematical privacy guarantee. Used in Apple's SKAN, Google's Attribution Reporting, most clean rooms.

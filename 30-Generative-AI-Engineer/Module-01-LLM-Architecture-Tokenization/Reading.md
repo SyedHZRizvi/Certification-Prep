@@ -1,6 +1,6 @@
 # Module 1: LLM Architecture & Tokenization 🧠
 
-> **Why this module matters:** Every other module in this course is downstream of one truth — an LLM is a *next-token predictor* implemented as a stack of attention layers. If you can sketch the data flow from raw text to a sampled token, you can debug 80% of the problems you will ever see in production. If you can't, you'll spend your career copy-pasting fixes from blog posts.
+> **Why this module matters:** Every other module in this course is downstream of one truth, an LLM is a *next-token predictor* implemented as a stack of attention layers. If you can sketch the data flow from raw text to a sampled token, you can debug 80% of the problems you will ever see in production. If you can't, you'll spend your career copy-pasting fixes from blog posts.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Python (lists, dicts, list comprehensions, basic NumPy)
@@ -13,13 +13,13 @@
 
 ## 🎬 A Story: The Day Cursor Broke the Tokenizer
 
-It's October 2024. Cursor — the AI-native IDE built on top of Claude and GPT-4 — pushes an update to their inline-edit feature. Within 90 minutes, the on-call engineer is paged. Latency on the autocomplete endpoint has tripled. Tail-p99 is at 4.2 seconds. Users are tweeting screenshots of the spinning cursor and unsubscribing.
+It's October 2024. Cursor the AI-native IDE built on top of Claude and GPT-4 pushes an update to their inline-edit feature. Within 90 minutes, the on-call engineer is paged. Latency on the autocomplete endpoint has tripled. Tail-p99 is at 4.2 seconds. Users are tweeting screenshots of the spinning cursor and unsubscribing.
 
 The team's first instinct, naturally: model regression. Did Anthropic ship a slower variant? Did OpenAI's API degrade? They check both. Both clean. Next theory: vector DB. Latency normal. Next: their own retrieval layer. Normal.
 
-Eight hours into the incident, a junior engineer notices something in the trace logs: the **input token count** on the slow requests is roughly 5× what it should be. The team digs in. The culprit is a one-line change to how they assembled the prompt — a developer had switched a code-context renderer from `tiktoken.cl100k_base` to a generic `transformers.AutoTokenizer.from_pretrained("gpt2")` because the latter was "easier to install in CI." The GPT-2 tokenizer is *brutal* on code — it splits `function`, `return`, and `=>` into multiple tokens each, while `cl100k_base` (the GPT-4 / GPT-4o tokenizer) treats them efficiently. The same code snippet that was 800 tokens in the old tokenizer was now 4,000 in the new one. Five times the input. Five times the cost. And, because attention is **quadratic** in sequence length, twenty-five times the compute.
+Eight hours into the incident, a junior engineer notices something in the trace logs: the **input token count** on the slow requests is roughly 5× what it should be. The team digs in. The culprit is a one-line change to how they assembled the prompt a developer had switched a code-context renderer from `tiktoken.cl100k_base` to a generic `transformers.AutoTokenizer.from_pretrained("gpt2")` because the latter was "easier to install in CI." The GPT-2 tokenizer is *brutal* on code it splits `function`, `return`, and `=>` into multiple tokens each, while `cl100k_base` (the GPT-4 / GPT-4o tokenizer) treats them efficiently. The same code snippet that was 800 tokens in the old tokenizer was now 4,000 in the new one. Five times the input. Five times the cost. And, because attention is **quadratic** in sequence length, twenty-five times the compute.
 
-The fix took 11 minutes to deploy. The lesson — tokenization is not an afterthought; it's a first-class engineering decision — took the team a quarter of design-review cycles to internalize.
+The fix took 11 minutes to deploy. The lesson tokenization is not an afterthought; it's a first-class engineering decision took the team a quarter of design-review cycles to internalize.
 
 This is module 1. By the end of it, you will know why that bug was possible, why it was so brutally expensive, and what data structures and design decisions a transformer-based model imposes on every system you will ever build with it.
 
@@ -39,7 +39,7 @@ text                                                           text
                                                           └────────────────────  autoregressive loop  ─────────────┘
 ```
 
-Every modern LLM — Claude 4.7, GPT-5, Gemini 2.x, Llama 4, Mistral, DeepSeek-V3, Qwen2.5 — is some variation of this same diagram. The pieces that change between models:
+Every modern LLM Claude 4.7, GPT-5, Gemini 2.x, Llama 4, Mistral, DeepSeek-V3, Qwen2.5 is some variation of this same diagram. The pieces that change between models:
 
 | Piece | What it does | Variants you'll meet |
 |-------|--------------|----------------------|
@@ -51,7 +51,7 @@ Every modern LLM — Claude 4.7, GPT-5, Gemini 2.x, Llama 4, Mistral, DeepSeek-V
 
 The training story is even simpler: feed the model billions of next-token-prediction tasks ("given these tokens, what comes next?"), update weights with stochastic gradient descent for months on tens of thousands of GPUs. The model that emerges is, mathematically, a *very* high-dimensional conditional probability distribution over a fixed vocabulary.
 
-Everything else — instruction tuning, RLHF, constitutional AI, agents, RAG, tool use — is post-hoc surgery on this same predictor.
+Everything else instruction tuning, RLHF, constitutional AI, agents, RAG, tool use is post-hoc surgery on this same predictor.
 
 ---
 
@@ -72,7 +72,7 @@ The dominant algorithm. It's almost embarrassingly simple:
 3. Find the most-frequent adjacent pair (e.g., `t` + `h` → `th`). Merge it. Add the merged token to the vocabulary.
 4. Repeat until you hit your target vocab size (50,257 for GPT-2; 100,277 for GPT-4's `cl100k_base`; 200,019 for GPT-4o's `o200k_base`).
 
-The result is a learned ordered list of *merges*. To tokenize new text, apply the merges in order. This is why BPE is **deterministic** but **vocabulary-specific** — Claude's BPE merges are different from GPT-4's, so the same text yields different token counts.
+The result is a learned ordered list of *merges*. To tokenize new text, apply the merges in order. This is why BPE is **deterministic** but **vocabulary-specific**, Claude's BPE merges are different from GPT-4's, so the same text yields different token counts.
 
 ```python
 # Quick demo with OpenAI's tiktoken
@@ -88,7 +88,7 @@ A few practical implications:
 - **English is ~4 chars/token.** A 4,000-character document is ~1,000 tokens.
 - **Code, JSON, and other languages can be 2–3× worse.** Whitespace-heavy code in particular bloats fast.
 - **Non-English languages vary wildly.** Cyrillic, Devanagari, and CJK historically tokenized 4–8× worse than English in early BPE tokenizers. GPT-4o's `o200k_base` and Claude's tokenizer added explicit multilingual merges that closed most of this gap.
-- **Special tokens** (`<|endoftext|>`, `<|im_start|>`, `<|im_end|>`, etc.) are reserved IDs the model is trained to interpret as control signals. You can't include them in user input — frontend libraries strip them.
+- **Special tokens** (`<|endoftext|>`, `<|im_start|>`, `<|im_end|>`, etc.) are reserved IDs the model is trained to interpret as control signals. You can't include them in user input, frontend libraries strip them.
 
 ### SentencePiece
 
@@ -97,7 +97,7 @@ Google's tokenizer of choice (T5, mT5, LLaMA 1/2, PaLM, Gemma). Two key differen
 - **Language-agnostic preprocessing**: treats the input as a raw Unicode stream. No whitespace splitting; spaces become `▁` (U+2581).
 - **Unigram language model option**: an alternative to BPE that picks the most likely segmentation given a learned probability distribution. Slower to tokenize, slightly better quality on some tasks.
 
-LLaMA-family models (including Mistral and most of their derivatives) use SentencePiece BPE with a 32,000-token vocabulary. This is *small* by modern standards — and is one reason LLaMA struggles on heavily non-English text relative to Claude or GPT-4.
+LLaMA-family models (including Mistral and most of their derivatives) use SentencePiece BPE with a 32,000-token vocabulary. This is *small* by modern standards, and is one reason LLaMA struggles on heavily non-English text relative to Claude or GPT-4.
 
 ### WordPiece
 
@@ -124,7 +124,7 @@ estimated_cost = (len(tokens) / 1_000_000) * 2.50  # $2.50 / M input tokens at 2
 ### Anti-patterns
 
 - Hardcoding "1 token ≈ 4 characters" in production code that bills users.
-- Switching tokenizers without re-running cost models — see the Cursor story above.
+- Switching tokenizers without re-running cost models, see the Cursor story above.
 - Using GPT-2's tokenizer for anything other than nostalgia.
 - Forgetting to count *system prompts* + *function definitions* + *tool schemas* against the context window. Many production outages trace to "the system prompt grew over six months and we never re-measured."
 
@@ -138,7 +138,7 @@ A transformer is built from a stack of identical blocks. Each block contains, in
 2. **Multi-head self-attention** (the magic)
 3. **Residual add**
 4. **Layer normalization**
-5. **Feedforward network (FFN)** — typically a 2-layer MLP with a 4× expansion (so 4096-dim → 16,384-dim → 4096-dim) and a GeLU / SwiGLU activation
+5. **Feedforward network (FFN)**, typically a 2-layer MLP with a 4× expansion (so 4096-dim → 16,384-dim → 4096-dim) and a GeLU / SwiGLU activation
 6. **Residual add**
 
 Stack N of these (Claude 4.7 Opus has ~96 layers; Llama 4 Behemoth has more). The input flows through; each block refines the hidden state. At the top, project to vocabulary logits and sample.
@@ -147,9 +147,9 @@ Stack N of these (Claude 4.7 Opus has ~96 layers; Llama 4 Behemoth has more). Th
 
 For each token position, attention computes three vectors from the hidden state via learned linear projections:
 
-- **Query (Q)** — "what am I looking for?"
-- **Key (K)** — "what do I offer?"
-- **Value (V)** — "what content do I carry?"
+- **Query (Q)**, "what am I looking for?"
+- **Key (K)**, "what do I offer?"
+- **Value (V)**, "what content do I carry?"
 
 Then it computes the **attention weights** between every pair of positions:
 
@@ -159,7 +159,7 @@ Attention(Q, K, V) = softmax(QKᵀ / √dk) · V
 
 In English: for each query, take the dot product with every key (similarity scores), divide by √(head dimension) to keep gradients sane, softmax to turn the scores into a probability distribution, then take a weighted sum of the values. The result is a new hidden state that has *mixed information from every position* in proportion to learned relevance.
 
-**Multi-head**: do this in parallel with H independent (Q, K, V) projections (heads), then concatenate. Different heads learn different "attention patterns" — one might attend to syntactic dependencies, another to coreference, another to long-range topical context.
+**Multi-head**: do this in parallel with H independent (Q, K, V) projections (heads), then concatenate. Different heads learn different "attention patterns", one might attend to syntactic dependencies, another to coreference, another to long-range topical context.
 
 **Causal mask** (decoder-only): mask the upper triangle of the attention matrix to prevent each position from attending to future positions. This is what makes GPT-style models *autoregressive*.
 
@@ -187,7 +187,7 @@ GQA with G=8 is the modern sweet spot. Llama 3 70B uses 64 query heads grouped i
 
 ### Positional encoding: RoPE, ALiBi, sliding windows
 
-Attention is *permutation-invariant* — without positional information, a transformer can't tell "the cat sat on the mat" from "the mat sat on the cat." Positional encoding fixes this.
+Attention is *permutation-invariant*, without positional information, a transformer can't tell "the cat sat on the mat" from "the mat sat on the cat." Positional encoding fixes this.
 
 | Scheme | How it works | Long-context behavior |
 |--------|--------------|------------------------|
@@ -207,7 +207,7 @@ Attention is *permutation-invariant* — without positional information, a trans
 | **Encoder-decoder** | T5, BART, FLAN-T5, mT5 | Translation, summarization (anything seq2seq) | None on encoder; causal on decoder; cross-attn between them |
 | **Decoder-only** | GPT-family, Claude, LLaMA, Mistral, Gemini | General text generation; the dominant modern design | Causal (lower triangle) |
 
-The field has consolidated around **decoder-only** for general-purpose generative LLMs because it's simpler to scale, trains efficiently on next-token prediction, and at scale matches or beats encoder-decoder on translation/summarization too. Encoder-only models remain dominant for **embeddings and retrievers** (sentence-transformers, ColBERT, BGE, E5 — Module 2).
+The field has consolidated around **decoder-only** for general-purpose generative LLMs because it's simpler to scale, trains efficiently on next-token prediction, and at scale matches or beats encoder-decoder on translation/summarization too. Encoder-only models remain dominant for **embeddings and retrievers** (sentence-transformers, ColBERT, BGE, E5, Module 2).
 
 ---
 
@@ -217,29 +217,29 @@ The field has consolidated around **decoder-only** for general-purpose generativ
 
 Instead of one big FFN per layer, have N "experts" (each a smaller FFN) and a learned **router** that sends each token to the top-K experts. Only the routed experts run, so compute is much smaller than a dense model of the same parameter count.
 
-- **Mixtral 8×7B / 8×22B** — 8 experts per FFN, routes top-2. ~12.9B active params from 47B total. The first widely-adopted open-weight MoE.
-- **DeepSeek-V3** — 256 experts per layer with extreme sparsity (top-8 of 256). ~37B active from 671B total.
-- **GPT-4 / GPT-5** — widely believed to be MoE; OpenAI doesn't confirm specifics.
-- **Mixtral 8×7B Instruct** — the workhorse open-weight MoE for production self-hosting in 2024–2025.
+- **Mixtral 8×7B / 8×22B**, 8 experts per FFN, routes top-2. ~12.9B active params from 47B total. The first widely-adopted open-weight MoE.
+- **DeepSeek-V3**, 256 experts per layer with extreme sparsity (top-8 of 256). ~37B active from 671B total.
+- **GPT-4 / GPT-5**, widely believed to be MoE; OpenAI doesn't confirm specifics.
+- **Mixtral 8×7B Instruct**, the workhorse open-weight MoE for production self-hosting in 2024–2025.
 
-MoE wins on the quality/compute trade-off but loses on memory — you have to hold *all* experts in VRAM even if you only use 2 per token.
+MoE wins on the quality/compute trade-off but loses on memory, you have to hold *all* experts in VRAM even if you only use 2 per token.
 
 ### Mamba / SSMs (State-Space Models)
 
 A 2023–2024 alternative to attention. Selective state-space models (Mamba, Mamba-2, Jamba) replace attention with a *linear-time* recurrence that maintains a compressed "state" instead of a full KV cache.
 
-- **Linear scaling** instead of quadratic — 1M+ tokens become tractable.
-- **Constant-size state** — no KV cache explosion.
-- **Trade-offs** — slightly worse at "needle-in-a-haystack" recall over very long contexts; can struggle with copying-task accuracy.
+- **Linear scaling** instead of quadratic, 1M+ tokens become tractable.
+- **Constant-size state**, no KV cache explosion.
+- **Trade-offs**, slightly worse at "needle-in-a-haystack" recall over very long contexts; can struggle with copying-task accuracy.
 
 Hybrid designs (Jamba = Mamba + attention; Zamba; Samba) are gaining traction for ultra-long-context applications. As of 2026, attention is still dominant for most production work, but SSMs are creeping in for cost-sensitive long-context use cases.
 
 ### KV-cache optimizations
 
-- **PagedAttention** (vLLM, 2023) — store KV cache in non-contiguous "pages" like a virtual memory system; eliminates fragmentation; 2-4× throughput gain.
-- **FlashAttention** (Dao 2022; FlashAttention-2 2023; FlashAttention-3 2024) — fuse attention into a single CUDA kernel that never materializes the full N×N matrix. Memory-efficient and faster.
-- **Speculative decoding** — use a small draft model to propose K tokens; verify with the big model in parallel. 2-3× latency reduction without quality loss.
-- **Prompt caching** (Anthropic, Aug 2024; OpenAI, Oct 2024; Gemini, Sep 2024) — cache the prompt prefix at the provider; reuse the KV cache across requests. **Up to 90% cost reduction** on long static prompts.
+- **PagedAttention** (vLLM, 2023), store KV cache in non-contiguous "pages" like a virtual memory system; eliminates fragmentation; 2-4× throughput gain.
+- **FlashAttention** (Dao 2022; FlashAttention-2 2023; FlashAttention-3 2024), fuse attention into a single CUDA kernel that never materializes the full N×N matrix. Memory-efficient and faster.
+- **Speculative decoding**, use a small draft model to propose K tokens; verify with the big model in parallel. 2-3× latency reduction without quality loss.
+- **Prompt caching** (Anthropic, Aug 2024; OpenAI, Oct 2024; Gemini, Sep 2024), cache the prompt prefix at the provider; reuse the KV cache across requests. **Up to 90% cost reduction** on long static prompts.
 
 ---
 
@@ -285,7 +285,7 @@ You'll write this in <100 lines. Putting it in a `pre-deploy-check` step of your
 
 ---
 
-## 📊 Case Study — Anthropic's Prompt Caching Launch (August 2024)
+## 📊 Case Study, Anthropic's Prompt Caching Launch (August 2024)
 
 **Situation.** Anthropic launched prompt caching for Claude 3.5 Sonnet on August 14, 2024. The feature lets you mark a portion of the prompt as cacheable; subsequent requests within 5 minutes that share that exact prefix get the KV cache reused, charged at **0.10× the normal input rate** (later refined to 0.25× for "ephemeral" 5-min cache and 1.25× write cost).
 
@@ -298,7 +298,7 @@ You'll write this in <100 lines. Putting it in a `pre-deploy-check` step of your
 **Discussion (Socratic).**
 - **Q1:** Why is prompt caching ~10× cheaper per token than uncached input? Walk through what computation is being *avoided*. Bonus: what computation is *still* being done?
 - **Q2:** A prompt has structure `[10K-token system prompt] + [user message]`. If you reorder it as `[user message] + [10K-token system prompt]`, does caching still help? Why or why not?
-- **Q3:** Suggest one production scenario where prompt caching *hurts* — i.e., introduces a bug or surprising cost. (Hint: think about determinism.)
+- **Q3:** Suggest one production scenario where prompt caching *hurts*, i.e., introduces a bug or surprising cost. (Hint: think about determinism.)
 
 ---
 
@@ -317,12 +317,12 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 21/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 21/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 2 — Embeddings & Vector Databases](../Module-02-Embeddings-Vector-Databases/Reading.md)
+4. ➡️ Move on: [Module 2, Embeddings & Vector Databases](../Module-02-Embeddings-Vector-Databases/Reading.md)
 
 > **Where this leads.**
-> - **Inside this course:** Module 2 covers embeddings — the *exact same* "vector-from-text" idea, except optimized for similarity rather than next-token prediction. Module 5 (fine-tuning) bolts on top of the same architecture. Module 9 (deployment) is where attention-cost decisions become production decisions.
+> - **Inside this course:** Module 2 covers embeddings, the *exact same* "vector-from-text" idea, except optimized for similarity rather than next-token prediction. Module 5 (fine-tuning) bolts on top of the same architecture. Module 9 (deployment) is where attention-cost decisions become production decisions.
 > - **Cross-course:** Course 29 (Prompt Engineering Specialist) drills the *user-facing* side of context windows; this module is the engineer's view of the same constraint.
 > - **Practice:** Practice Exam 1 has ~6 questions from this module.
 
@@ -335,7 +335,7 @@ You now know:
 - 📄 Radford et al. (2018, 2019). *Improving Language Understanding by Generative Pre-Training* (GPT-1); *Language Models are Unsupervised Multitask Learners* (GPT-2). The decoder-only thesis.
 - 📄 Su et al. (2021). *RoFormer: Enhanced Transformer with Rotary Position Embedding.* The RoPE paper.
 - 📄 Press et al. (2022). *Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation.* ALiBi.
-- 📄 Dao et al. (2022, 2023, 2024). *FlashAttention* v1/v2/v3 — kernel-level attention optimization.
+- 📄 Dao et al. (2022, 2023, 2024). *FlashAttention* v1/v2/v3, kernel-level attention optimization.
 - 📄 Gu & Dao (2023, 2024). *Mamba* and *Mamba-2.* Selective SSMs.
 - 📄 Jiang et al. (2024). *Mixtral of Experts.* The open-weight MoE that mattered.
 
@@ -343,8 +343,8 @@ You now know:
 - 🎬 Karpathy, *Let's build GPT from scratch.* The single best free explainer in existence.
 - 🎬 Karpathy, *Let's build the GPT Tokenizer.* The companion video; covers BPE soup-to-nuts.
 - 🎬 3Blue1Brown, *But what is a GPT?* and *Attention in Transformers*. Beautiful visualizations.
-- 📖 Lilian Weng's blog (*lilianweng.github.io*) — *The Transformer Family* and *Large Transformer Model Inference Optimization*.
-- 📖 *Hands-On Large Language Models* (Alammar & Grootendorst, O'Reilly 2024) — Chapters 2–4 cover all of this beautifully.
+- 📖 Lilian Weng's blog (*lilianweng.github.io*), *The Transformer Family* and *Large Transformer Model Inference Optimization*.
+- 📖 *Hands-On Large Language Models* (Alammar & Grootendorst, O'Reilly 2024), Chapters 2–4 cover all of this beautifully.
 
 **Tools to install before Module 2:**
 - 📦 `tiktoken`, `transformers`, `sentencepiece`

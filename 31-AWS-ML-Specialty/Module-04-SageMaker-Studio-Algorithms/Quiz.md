@@ -186,7 +186,7 @@ D. Move to EMR
 
 ### Q23. A team needs to host hundreds of small models that receive sparse traffic and wants to minimise idle cost. The BEST endpoint pattern is: *(Analyze)*
 A. One real-time endpoint per model
-B. Multi-Model Endpoint (MME) — models loaded into one endpoint on demand
+B. Multi-Model Endpoint (MME), models loaded into one endpoint on demand
 C. Lambda only
 D. Batch transform
 
@@ -234,7 +234,7 @@ Probabilistic multi-series forecasting with quantile output. ARIMA per SKU misse
 `max_depth` is the direct tree-depth control. `eta` is learning rate; `subsample` is row fraction; `objective` defines the task.
 
 ### Q6: **B. Decrease max_depth, increase lambda/alpha, lower eta + early stopping + lower subsample**
-The classic overfitting remedy — reduce capacity and add regularisation.
+The classic overfitting remedy, reduce capacity and add regularisation.
 
 ### Q7: **C. RecordIO-protobuf**
 Pipe mode requires RecordIO-protobuf for built-ins. CSV is fine for file mode; Parquet is great for analytics but not pipe mode.
@@ -243,7 +243,7 @@ Pipe mode requires RecordIO-protobuf for built-ins. CSV is fine for file mode; P
 Canvas is the no-code ML tool for business analysts. Autopilot still requires data-science workflow knowledge.
 
 ### Q9: **A. SageMaker Autopilot**
-Autopilot is "white-box AutoML" — generates a notebook of all candidate models so a data scientist can inspect and modify.
+Autopilot is "white-box AutoML", generates a notebook of all candidate models so a data scientist can inspect and modify.
 
 ### Q10: **B. Spot training with checkpointing**
 `use_spot_instances=True` plus `checkpoint_s3_uri` gives up to 90% off. The checkpointing handles interruption recovery.
@@ -267,7 +267,7 @@ Built-in algo specifically for user-IP anomaly detection. Object2Vec could be ad
 Both are standard. Just picking k=10 is arbitrary; cross-entropy/ROC are for supervised tasks.
 
 ### Q17: **B. Shared model across many series**
-DeepAR learns one global model. New series benefit from patterns learned on others — the hallmark of "global" forecasting models.
+DeepAR learns one global model. New series benefit from patterns learned on others, the hallmark of "global" forecasting models.
 
 ### Q18: **B. BYO container in ECR**
 For fully custom algorithms not in built-ins, build a Docker image, push to ECR, reference in the SDK.

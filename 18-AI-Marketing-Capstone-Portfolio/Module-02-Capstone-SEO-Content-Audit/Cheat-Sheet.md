@@ -81,7 +81,7 @@ When writing recommendations:
 
 - ✅ "Costing approximately X visits/month based on..."
 - ✅ "Competitor [X] ranks #1 for this with a [length] article on [topic]..."
-- ✅ "Quick win: ranked #11 for [keyword] — moving to top 5 estimated to..."
+- ✅ "Quick win: ranked #11 for [keyword], moving to top 5 estimated to..."
 - ✅ "Top priority: closes the #1 content gap..."
 
 Avoid:
@@ -155,4 +155,4 @@ Practice this 5 times out loud. It's the version you'll use 30+ times.
 
 ---
 
-➡️ [Module 3: Capstone 2 — Live Paid Campaign](../Module-03-Capstone-Paid-Campaign-Live/Reading.md)
+➡️ [Module 3: Capstone 2, Live Paid Campaign](../Module-03-Capstone-Paid-Campaign-Live/Reading.md)

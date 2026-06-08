@@ -1,4 +1,4 @@
-# Capstone Project — Bitcoin & Cryptocurrency
+# Capstone Project, Bitcoin & Cryptocurrency
 
 > **Format:** Self-directed; 16 weeks; ~60–80 hours of work
 > **Deliverables:** 7 artifacts + a board-ready readout deck
@@ -12,7 +12,7 @@ You have just been hired as **Head of Digital Assets at Wenatchee Cascade Credit
 
 > "Sixteen weeks. Stand up regulated Bitcoin custody for our 1,200 wealthiest members (≥$250K liquid AUM with us), launch a Lightning-Network-powered remittance product for our Mexican-corridor members, keep the prudential regulators (NCUA + Washington DFI) comfortable, and don't lose a single satoshi. Budget: $4.8M opex + $1.2M capex over the 16 weeks. Board reviews progress every 4 weeks."
 
-**The situation you've walked into.** WCCU has zero in-house Bitcoin expertise. The CIO is sympathetic but cautious. The CRO is openly skeptical. Compliance is one person + one analyst. The COO controls vendor selection. The credit union already partners with Fiserv for core banking, so any digital-asset solution must integrate with Fiserv DNA without breaking the existing AML/KYC pipeline. Two member-facing complaints from a competitor's mishandled crypto pilot are public — the board does not want a second one.
+**The situation you've walked into.** WCCU has zero in-house Bitcoin expertise. The CIO is sympathetic but cautious. The CRO is openly skeptical. Compliance is one person + one analyst. The COO controls vendor selection. The credit union already partners with Fiserv for core banking, so any digital-asset solution must integrate with Fiserv DNA without breaking the existing AML/KYC pipeline. Two member-facing complaints from a competitor's mishandled crypto pilot are public, the board does not want a second one.
 
 You have four weeks to deliver the integrated plan, then twelve weeks to execute the first phase (custody live, Lightning pilot with 50 friendly members). Phase 2 (general rollout) is post-Capstone.
 
@@ -108,13 +108,13 @@ Produce a **12-slide board deck** for the credit union board's Quarter 4 meeting
 
 1. Cover + agenda
 2. 16-week scorecard: planned vs actual on the 5 KPIs (custody AUC, Lightning volume, member activations, incident count, residual risk score)
-3. Custody pilot status — # of members onboarded, AUC, fee revenue, incident log
-4. Lightning pilot status — channel count, total locked-up satoshis, payment volume, FX corridor metrics
-5. Regulatory engagement — NCUA examiner question log, DFI correspondence, FinCEN filings
+3. Custody pilot status, # of members onboarded, AUC, fee revenue, incident log
+4. Lightning pilot status, channel count, total locked-up satoshis, payment volume, FX corridor metrics
+5. Regulatory engagement, NCUA examiner question log, DFI correspondence, FinCEN filings
 6. Top 5 residual risks (from Deliverable 4) + mitigation status
-7. Market context — BTC price chart Q1–Q4, hashrate, halving countdown, ETF flow, MiCA enforcement actions, US legislative status
-8. Phase 2 readiness — what general-rollout (the next 12,000 members) requires
-9. Vendor scorecard — your custody co-custodian, Chainalysis, Notabene, Lightning provider
+7. Market context, BTC price chart Q1–Q4, hashrate, halving countdown, ETF flow, MiCA enforcement actions, US legislative status
+8. Phase 2 readiness, what general-rollout (the next 12,000 members) requires
+9. Vendor scorecard, your custody co-custodian, Chainalysis, Notabene, Lightning provider
 10. Headcount + budget actuals vs plan
 11. Recommendation to the board
 12. Three asks of the board
@@ -135,7 +135,7 @@ Produce the **member-facing disclosure pack**. Audiences: a working-class member
 - **Fork policy.** If a hard fork happens during the pilot, WCCU policy (e.g., custody only the dominant chain, member opt-in for minority chain claims).
 - **Privacy disclosure.** What chain-analysis WCCU runs, what's shared with FinCEN under SARs, member-data retention, Travel Rule data sharing with counterparty VASPs.
 
-**Format:** 2 PDFs (simple + standard), each ≤ 8 pages. Run a Flesch–Kincaid score on the simple version — target ≤ Grade 6.
+**Format:** 2 PDFs (simple + standard), each ≤ 8 pages. Run a Flesch–Kincaid score on the simple version, target ≤ Grade 6.
 
 ---
 
@@ -176,7 +176,7 @@ Produce the **member-facing disclosure pack**. Audiences: a working-class member
 | 15 | Member-facing disclosure pack finalized | D7 |
 | 16 | **Board readout #4 (the big one)**: full deck, full results | D6 |
 
-If you only have 8 weeks (compressed mode): drop pilot onboarding scope to 5 members; combine weeks 1+2, 3+4, 5+6, 13+14. Do not drop the AML/KYC program or the risk register — those are what get you re-funded.
+If you only have 8 weeks (compressed mode): drop pilot onboarding scope to 5 members; combine weeks 1+2, 3+4, 5+6, 13+14. Do not drop the AML/KYC program or the risk register, those are what get you re-funded.
 
 ---
 
@@ -206,7 +206,7 @@ Self-grade honestly against the rubric. If you score below 75, redo the two weak
 
 ## Optional Stretch Goals
 
-1. **CCSS Level III audit dry-run.** Hire (or simulate hiring) an independent CCSS auditor and produce the audit report. Most credit unions never get past Level I — Level III is institutional-grade.
+1. **CCSS Level III audit dry-run.** Hire (or simulate hiring) an independent CCSS auditor and produce the audit report. Most credit unions never get past Level I, Level III is institutional-grade.
 2. **Tabletop ransomware exercise.** Run a 4-hour tabletop where an attacker has phished the CIO. Document the IR runbook against your custody architecture's threat model.
 3. **CBDC contingency memo.** A 2-page board memo on how the digital-asset business unit changes if the Federal Reserve launches a US CBDC during the pilot.
 4. **Cross-chain bridge analysis.** A 1-page memo on whether to support stablecoin (USDC/USDT) custody alongside BTC. Include the bridge-risk and the 2022–2023 bridge-hack catalogue (Ronin, Wormhole, Nomad).
@@ -217,6 +217,6 @@ Self-grade honestly against the rubric. If you score below 75, redo the two weak
 
 ## Why this Capstone Matters
 
-Foundations courses teach you to recite that "Bitcoin is a peer-to-peer electronic cash system" and to multiply hash rates by joules. This capstone forces you to integrate cryptography, custody, AML/KYC, Lightning, regulatory, market, and operational thinking into a plan a credit-union board would actually approve and an NCUA examiner would actually pass. If you can defend each deliverable to a working risk officer or custody engineer, you will pass the C4 CBP and CBSA comfortably — and more importantly, you'll be ready for the kind of Head-of-Digital-Assets role this capstone simulates.
+Foundations courses teach you to recite that "Bitcoin is a peer-to-peer electronic cash system" and to multiply hash rates by joules. This capstone forces you to integrate cryptography, custody, AML/KYC, Lightning, regulatory, market, and operational thinking into a plan a credit-union board would actually approve and an NCUA examiner would actually pass. If you can defend each deliverable to a working risk officer or custody engineer, you will pass the C4 CBP and CBSA comfortably, and more importantly, you'll be ready for the kind of Head-of-Digital-Assets role this capstone simulates.
 
 Good luck. ₿

@@ -86,7 +86,7 @@ D. RAW
 
 ---
 
-### Q11. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q11. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** Gen 2 VMs use UEFI firmware with Secure Boot.
 **S2:** A Gen 1 VM can be converted to Gen 2 in-place via PowerShell.
@@ -116,7 +116,7 @@ D. Hyper-V Replica only
 ---
 
 ### Q14. SR-IOV trade-off vs the standard vSwitch is: *(Understand)*
-A. SR-IOV bypasses the vSwitch — no VLAN tagging, no extensions, no port mirroring
+A. SR-IOV bypasses the vSwitch, no VLAN tagging, no extensions, no port mirroring
 B. SR-IOV requires dynamic memory
 C. SR-IOV is slower
 D. SR-IOV works only on Gen 1 VMs
@@ -161,7 +161,7 @@ D. Shared cache
 
 ---
 
-### Q19. **Yes/No** — Mark each statement. *(Analyze)*
+### Q19. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** Hyper-V Replica supports an extended (third) replica downstream.
 **S2:** Test failover in Hyper-V Replica disrupts the ongoing replication.
@@ -190,7 +190,7 @@ D. Gen 1 + Failover Cluster
 
 ---
 
-### Q22. **Yes/No** — Mark each statement. *(Apply)*
+### Q22. **Yes/No**, Mark each statement. *(Apply)*
 
 **S1:** VMQ improves per-VM network throughput at 10 GbE+.
 **S2:** vRSS scales VMQ processing across multiple guest cores.
@@ -205,7 +205,7 @@ D. Yes / No / Yes
 
 ### Q23. Hyper-V live migration without RDMA but with compression uses: *(Understand)*
 A. Plain TCP/IP only
-B. CPU-compressed memory pages — trade CPU for network bandwidth
+B. CPU-compressed memory pages, trade CPU for network bandwidth
 C. UDP multicast
 D. iSCSI offload
 
@@ -256,7 +256,7 @@ Kerberos with constrained delegation = no remote-session requirement. CredSSP ne
 All three are required. Skipping any one breaks nesting.
 
 ### Q7: **B. TPM-trusted**
-Strongest — uses host TPM + boot measurements. Host Key is weaker (lab-grade).
+Strongest, uses host TPM + boot measurements. Host Key is weaker (lab-grade).
 
 ### Q8: **C. 64 TB**
 VHDX max is 64 TB.
@@ -268,7 +268,7 @@ Legacy VHD max is 2 TB.
 Azure requires VHD format. Convert VHDX before upload.
 
 ### Q11: **D. Yes / No / No**
-S1 correct. S2 wrong (can't convert in place). S3 wrong (Gen 2 PXE uses the synthetic NIC, which *does* support PXE — but only over UEFI, which is more restrictive than Gen 1 BIOS-PXE).
+S1 correct. S2 wrong (can't convert in place). S3 wrong (Gen 2 PXE uses the synthetic NIC, which *does* support PXE, but only over UEFI, which is more restrictive than Gen 1 BIOS-PXE).
 
 ### Q12: **B. DHCP guard**
 DHCP guard blocks rogue DHCP servers in VMs. Router guard blocks rogue router advertisements.
@@ -276,7 +276,7 @@ DHCP guard blocks rogue DHCP servers in VMs. Router guard blocks rogue router ad
 ### Q13: **A. Storage Spaces Direct + Hyper-V modern deployments**
 SET is the required teaming mode for S2D and modern Hyper-V. LBFO is legacy.
 
-### Q14: **A. SR-IOV bypasses the vSwitch — no VLAN/extensions/mirror**
+### Q14: **A. SR-IOV bypasses the vSwitch, no VLAN/extensions/mirror**
 The trade-off for wire-speed performance is loss of vSwitch features on those flows.
 
 ### Q15: **C. Shared-Nothing Live Migration (SMB 3.0 transport)**
@@ -301,16 +301,16 @@ Processor Compatibility Mode masks newer CPU features so the VM is portable.
 The full stack required for shielded VMs.
 
 ### Q22: **A. Yes / Yes / No**
-S1 and S2 correct. S3 wrong — SR-IOV must be enabled at vSwitch creation time (cannot be added later).
+S1 and S2 correct. S3 wrong, SR-IOV must be enabled at vSwitch creation time (cannot be added later).
 
 ### Q23: **B. CPU-compressed memory pages**
-Compression option spends CPU to reduce network bandwidth — useful when network is the bottleneck.
+Compression option spends CPU to reduce network bandwidth, useful when network is the bottleneck.
 
 ### Q24: **C. 240**
 Windows Server 2022 supports up to 240 vCPUs per VM.
 
 ### Q25: **A. WSL 2 (lightweight nested VM) or LCOW**
-Linux containers need a Linux kernel — provided by a small WSL 2 VM or the older LCOW.
+Linux containers need a Linux kernel, provided by a small WSL 2 VM or the older LCOW.
 
 ### Q26: **A. `Get-VMProcessor -VMName <name> | Select-Object ExposeVirtualizationExtensions`**
 Checks whether nested virt is enabled on the VM.

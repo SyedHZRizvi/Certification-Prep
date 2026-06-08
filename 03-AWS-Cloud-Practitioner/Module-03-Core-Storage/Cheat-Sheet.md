@@ -40,7 +40,7 @@ Object  →  S3, Glacier classes   →  HTTP-accessible buckets
 
 ---
 
-## 💽 EBS — Block Storage For EC2
+## 💽 EBS, Block Storage For EC2
 
 | Type | Use case |
 |------|----------|
@@ -86,7 +86,7 @@ Object  →  S3, Glacier classes   →  HTTP-accessible buckets
 | **Snowcone** | 8 TB | Edge collection, ruggedized backpack |
 | **Snowball Edge Storage Optimized** | 80 TB | Bulk transfer |
 | **Snowball Edge Compute Optimized** | 42 TB + EC2/Lambda | Edge processing |
-| **Snowmobile** | 100 PB (truck) | Datacenter migration (being phased out — check) |
+| **Snowmobile** | 100 PB (truck) | Datacenter migration (being phased out, check) |
 
 ---
 

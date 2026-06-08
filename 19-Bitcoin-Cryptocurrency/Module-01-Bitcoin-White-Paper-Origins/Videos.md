@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: The Bitcoin White Paper & Origins
 
-> **How to use:** Click any card to search YouTube for the latest top result on that topic. Search URLs never rot. Take notes between videos — don't binge.
+> **How to use:** Click any card to search YouTube for the latest top result on that topic. Search URLs never rot. Take notes between videos, don't binge.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -61,7 +61,7 @@
     <div class="vg-thumb"><span>📨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">"Running Bitcoin" — the Hal Finney story</p>
+      <p class="vg-title">"Running Bitcoin", the Hal Finney story</p>
       <p class="vg-creator">Documentary / Coindesk</p>
       <span class="vg-duration">⏱ 15 min · Why Finney matters</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎓</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Princeton — Lecture 1: Intro to Crypto and Cryptocurrencies</p>
+      <p class="vg-title">Princeton, Lecture 1: Intro to Crypto and Cryptocurrencies</p>
       <p class="vg-creator">Arvind Narayanan</p>
       <span class="vg-duration">⏱ 18 min · From the Coursera MOOC</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🍕</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">The 10,000 BTC Pizza — Laszlo Hanyecz Story</p>
+      <p class="vg-title">The 10,000 BTC Pizza, Laszlo Hanyecz Story</p>
       <p class="vg-creator">ColdFusion / Cointelegraph</p>
       <span class="vg-duration">⏱ 14 min · The most expensive pizza ever bought</span>
     </div>
@@ -136,7 +136,7 @@
 | **Andreas Antonopoulos** | The most-cited public educator in Bitcoin. Every talk is exam-relevant. |
 | **3Blue1Brown** | Grant Sanderson's visual math. The "but how does bitcoin actually work?" video alone is worth the subscribe. |
 | **MIT OpenCourseWare (15.S12)** | Gary Gensler's pre-SEC-Chair lectures. The macro/regulatory frame. |
-| **Bitcoin Optech (no channel — newsletter)** | Subscribe to the newsletter for weekly protocol intel. |
+| **Bitcoin Optech (no channel, newsletter)** | Subscribe to the newsletter for weekly protocol intel. |
 | **Computerphile** | University of Nottingham series; engineer-flavored explanations. |
 | **What Bitcoin Did (Peter McCormack)** | Long-form interviews with developers, regulators, miners. |
 | **Stephan Livera Podcast** | Technical, Austrian-economics-flavored Bitcoin interviews. |

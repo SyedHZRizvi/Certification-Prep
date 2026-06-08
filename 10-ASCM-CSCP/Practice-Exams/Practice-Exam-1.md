@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1 — ASCM CSCP (Modules 1-5 Style)
+# 🧪 Practice Exam 1, ASCM CSCP (Modules 1-5 Style)
 
 > **Conditions:** Set a 105-minute timer. 75 questions. Treat it like the real thing.
-> **Pass mark:** 53/75 (70% — matches scaled-score 300 floor)
+> **Pass mark:** 53/75 (70%, matches scaled-score 300 floor)
 > Take this AFTER finishing Modules 1-5.
 
 ---
@@ -381,7 +381,7 @@ C. Working capital efficiency
 D. Forecast accuracy
 
 ### 63. A forecasting tracking signal of +6.0 means:
-A. Actuals consistently exceed the forecast — investigate
+A. Actuals consistently exceed the forecast, investigate
 B. The forecast is healthy
 C. Standard deviation is too low
 D. Mean absolute deviation is zero
@@ -406,7 +406,7 @@ D. Run CRP
 
 ### 67. Outside the planning time fence, MRP changes are typically:
 A. Frozen
-B. Liquid — system can replan freely
+B. Liquid, system can replan freely
 C. Slushy
 D. Manual-only
 
@@ -486,7 +486,7 @@ D. Reconcile demand and supply views before executive meeting
 
 | Score | Verdict |
 |-------|---------|
-| 67–75 | 🏆 Far above pass — proceed to Practice Exam 2 |
+| 67–75 | 🏆 Far above pass, proceed to Practice Exam 2 |
 | 53–66 | ✅ Above pass mark; review wrong answers carefully |
 | 38–52 | ⚠️ Below pass; re-study weak modules; retake in a week |
 | <38 | 🔁 Restart Modules 1-5 |
@@ -515,12 +515,12 @@ Distribute review focus by domain weight:
 
 ### Q1 (A. Material, information, cash)
 - **Why A is correct.** APICS dictionary lists exactly three flows: material, information, and cash. This is verbatim exam content (Module 1).
-- **Why others are wrong.** B mixes vocabulary; "people" and "profit" are outcomes, not flows. C lists *actors* in the SC, not flows. D names *concepts* (demand/supply/inventory) — not flows.
+- **Why others are wrong.** B mixes vocabulary; "people" and "profit" are outcomes, not flows. C lists *actors* in the SC, not flows. D names *concepts* (demand/supply/inventory), not flows.
 - **Exam-takeaway.** Three flows: material, information, cash. Memorize verbatim.
 
 ### Q2 (C. 6)
 - **Why C is correct.** SCOR 13.0 has six top-level processes: Plan, Source, Make, Deliver, Return, Enable. "Enable" was added in SCOR 11 (2012).
-- **Why others are wrong.** A and B (4, 5) reflect older textbooks or distractor counts. D (7) often confuses students who add "Orchestrate" — not part of SCOR.
+- **Why others are wrong.** A and B (4, 5) reflect older textbooks or distractor counts. D (7) often confuses students who add "Orchestrate", not part of SCOR.
 - **Exam-takeaway.** P-S-M-D-R-E. Six processes, not five.
 
 ### Q3 (D. Agile)
@@ -539,84 +539,84 @@ Distribute review focus by domain weight:
 - **Exam-takeaway.** Memorize the 5 causes. Counter-measures: information sharing (CPFR/VMI), shorter cycles, EDLP, shorter lead times.
 
 ### Q6-Q10 (Module 1-2 mix)
-- **Q6 (A. Sub-assemblies)** — ATO holds sub-assemblies, assembles on order. Dell's classic model.
-- **Q7 (A. Moving production back to the home country)** — reshoring = home country. Nearshoring = closer (Mexico for US). Don't confuse.
-- **Q8 (D. DIO + DSO − DPO)** — standard cash-to-cash formula. Lower (or negative, like Amazon) is better.
-- **Q9 (C. √N)** — Square-root law of inventory pooling. Cutting N locations cuts SS by √(new/old).
-- **Q10 (B. Variable freight rates)** — Center-of-gravity assumes *uniform* (not variable) freight rates. Real-world LP handles variable rates.
+- **Q6 (A. Sub-assemblies)**, ATO holds sub-assemblies, assembles on order. Dell's classic model.
+- **Q7 (A. Moving production back to the home country)**, reshoring = home country. Nearshoring = closer (Mexico for US). Don't confuse.
+- **Q8 (D. DIO + DSO − DPO)**, standard cash-to-cash formula. Lower (or negative, like Amazon) is better.
+- **Q9 (C. √N)**, Square-root law of inventory pooling. Cutting N locations cuts SS by √(new/old).
+- **Q10 (B. Variable freight rates)**, Center-of-gravity assumes *uniform* (not variable) freight rates. Real-world LP handles variable rates.
 
 ### Q11-Q20 (Modules 2-3 mix)
-- **Q11 (D)** — Outsourcing = external firm; offshoring = foreign country. Independent dimensions.
-- **Q12 (D)** — Kraljic axes: profit impact × supply risk.
-- **Q13 (C)** — Acquiring an upstream supplier is backward (upstream) integration.
-- **Q14 (D)** — Single source = chose one of many. Sole source = only one exists. CRITICAL distinction.
-- **Q15 (C)** — Independent demand is forecast (Module 3).
-- **Q16 (C)** — Dependent demand is calculated via MRP from BOM, not forecast.
-- **Q17 (A. 110)** — F = 0.5·120 + 0.5·100 = 110. Plug into ES formula.
-- **Q18 (D. 10)** — MAD = (5+10+15+10)/4 = 40/4 = 10.
-- **Q19 (A)** — Holt-Winters handles trend + seasonality. Holt = trend only. Simple ES = level only.
-- **Q20 (B)** — CPFR's "one shared forecast" is the bullwhip antidote.
+- **Q11 (D)**, Outsourcing = external firm; offshoring = foreign country. Independent dimensions.
+- **Q12 (D)**, Kraljic axes: profit impact × supply risk.
+- **Q13 (C)**, Acquiring an upstream supplier is backward (upstream) integration.
+- **Q14 (D)**, Single source = chose one of many. Sole source = only one exists. CRITICAL distinction.
+- **Q15 (C)**, Independent demand is forecast (Module 3).
+- **Q16 (C)**, Dependent demand is calculated via MRP from BOM, not forecast.
+- **Q17 (A. 110)**, F = 0.5·120 + 0.5·100 = 110. Plug into ES formula.
+- **Q18 (D. 10)**, MAD = (5+10+15+10)/4 = 40/4 = 10.
+- **Q19 (A)**, Holt-Winters handles trend + seasonality. Holt = trend only. Simple ES = level only.
+- **Q20 (B)**, CPFR's "one shared forecast" is the bullwhip antidote.
 
 ### Q21-Q30 (Modules 3-4 mix)
-- **Q21 (C)** — Delphi: anonymous expert rounds with feedback. Avoids groupthink.
-- **Q22 (B. 4)** — |TS| > 4 → investigate. > 6 → replace model. Module 3.
-- **Q23 (A)** — Demand sensing complements (does not replace) longer-horizon statistical forecasting.
-- **Q24 (B)** — Croston's method targets lumpy / intermittent demand.
-- **Q25 (D)** — The 5-step S&OP cycle ends with the **Executive S&OP meeting**.
-- **Q26 (C)** — S&OP outputs a family-level aggregate plan over 12-24 months. SKU detail lives in MPS.
-- **Q27 (B)** — Level strategy keeps workforce stable and absorbs variability through inventory.
-- **Q28 (B)** — MRP inputs: MPS, BOM, inventory records. Memorize verbatim.
-- **Q29 (D)** — DTF is the horizon inside which only firm customer orders should drive the MPS.
-- **Q30 (A)** — RCCP at MPS / key work centers. CRP at MRP / all work centers.
+- **Q21 (C)**, Delphi: anonymous expert rounds with feedback. Avoids groupthink.
+- **Q22 (B. 4)**, |TS| > 4 → investigate. > 6 → replace model. Module 3.
+- **Q23 (A)**, Demand sensing complements (does not replace) longer-horizon statistical forecasting.
+- **Q24 (B)**, Croston's method targets lumpy / intermittent demand.
+- **Q25 (D)**, The 5-step S&OP cycle ends with the **Executive S&OP meeting**.
+- **Q26 (C)**, S&OP outputs a family-level aggregate plan over 12-24 months. SKU detail lives in MPS.
+- **Q27 (B)**, Level strategy keeps workforce stable and absorbs variability through inventory.
+- **Q28 (B)**, MRP inputs: MPS, BOM, inventory records. Memorize verbatim.
+- **Q29 (D)**, DTF is the horizon inside which only firm customer orders should drive the MPS.
+- **Q30 (A)**, RCCP at MPS / key work centers. CRP at MRP / all work centers.
 
 ### Q31-Q50 (Modules 4-5 mix)
-- **Q31 (B)** — Lot-for-lot = order exactly the net requirement each period.
-- **Q32 (D)** — CTP extends ATP by considering capacity AND material availability.
-- **Q33 (A)** — Inside the PTF, MPS changes require master scheduler intervention.
-- **Q34 (D)** — IBP extends S&OP with financial, strategic, NPI integration.
-- **Q35 (B)** — EOQ = √(2DS/H). Wilson/Harris formula.
-- **Q36 (B)** — EOQ assumes NO quantity discounts. The other assumptions hold.
-- **Q37 (C. 841)** — Expected LT demand = 80 × 10 = 800. SS = 1.65 × 25 = 41.25 ≈ 41. ROP = 800 + 41 ≈ 841.
-- **Q38 (C. 8)** — Turns = 40/5 = 8.
-- **Q39 (A. 36)** — DIO = 365/10 ≈ 36.5.
-- **Q40 (B. $300)** — 25% × $1,200 = $300.
-- **Q41 (A. 0.80)** — Critical ratio = 60/(60+15) = 0.80.
-- **Q42 (B)** — Class A SKUs typically drive 70-80% of revenue with only 10-20% of SKU count.
-- **Q43 (B)** — Cycle counting enables continuous accuracy without facility shutdown.
-- **Q44 (A)** — Pipeline (in-transit) inventory is goods moving between locations.
-- **Q45 (D)** — JIT requires reliable suppliers, short lead times, and consistent quality.
-- **Q46 (C)** — Effective capacity considers realistic mix, schedule, maintenance (vs design capacity = theoretical max).
-- **Q47 (A)** — Past ~85% utilization, queueing theory predicts sharply rising wait times.
-- **Q48 (B)** — TIMWOOD = Transport, Inventory, Motion, Waiting, Overproduction, Over-processing, Defects. "Forecasting" not in the 7.
-- **Q49 (C)** — Lead-time-offset MRP: release wheel PO 14 days before week 6, quantity = 2 × 100 = 200.
-- **Q50 (C)** — The master scheduler owns the MPS. The MRP planner runs MRP from it.
+- **Q31 (B)**, Lot-for-lot = order exactly the net requirement each period.
+- **Q32 (D)**, CTP extends ATP by considering capacity AND material availability.
+- **Q33 (A)**, Inside the PTF, MPS changes require master scheduler intervention.
+- **Q34 (D)**, IBP extends S&OP with financial, strategic, NPI integration.
+- **Q35 (B)**, EOQ = √(2DS/H). Wilson/Harris formula.
+- **Q36 (B)**, EOQ assumes NO quantity discounts. The other assumptions hold.
+- **Q37 (C. 841)**, Expected LT demand = 80 × 10 = 800. SS = 1.65 × 25 = 41.25 ≈ 41. ROP = 800 + 41 ≈ 841.
+- **Q38 (C. 8)**, Turns = 40/5 = 8.
+- **Q39 (A. 36)**, DIO = 365/10 ≈ 36.5.
+- **Q40 (B. $300)**, 25% × $1,200 = $300.
+- **Q41 (A. 0.80)**, Critical ratio = 60/(60+15) = 0.80.
+- **Q42 (B)**, Class A SKUs typically drive 70-80% of revenue with only 10-20% of SKU count.
+- **Q43 (B)**, Cycle counting enables continuous accuracy without facility shutdown.
+- **Q44 (A)**, Pipeline (in-transit) inventory is goods moving between locations.
+- **Q45 (D)**, JIT requires reliable suppliers, short lead times, and consistent quality.
+- **Q46 (C)**, Effective capacity considers realistic mix, schedule, maintenance (vs design capacity = theoretical max).
+- **Q47 (A)**, Past ~85% utilization, queueing theory predicts sharply rising wait times.
+- **Q48 (B)**, TIMWOOD = Transport, Inventory, Motion, Waiting, Overproduction, Over-processing, Defects. "Forecasting" not in the 7.
+- **Q49 (C)**, Lead-time-offset MRP: release wheel PO 14 days before week 6, quantity = 2 × 100 = 200.
+- **Q50 (C)**, The master scheduler owns the MPS. The MRP planner runs MRP from it.
 
 ### Q51-Q75 (Modules 5+ mix)
-- **Q51 (B)** — Drum-buffer-rope is a Theory of Constraints (TOC) scheduling technique. Module 4/10.
-- **Q52 (C)** — Pooling reduces safety stock requirements (square-root law). Module 2/5.
-- **Q53 (C)** — 1-hour urban delivery requires many small micro-fulfillment centers (proximity wins over pooling).
-- **Q54 (C)** — Inventory rises and outbound transport falls as facility count grows. U-shape from opposing curves.
-- **Q55 (C)** — Holiday inventory built in October is anticipation inventory.
-- **Q56 (D. 91%)** — R² = 0.91 means the model explains 91% of variance.
-- **Q57 (A)** — MAPE collapses when actuals are near zero (denominator approaches 0).
-- **Q58 (B)** — ATP = on-hand + scheduled MPS receipts − committed customer orders.
-- **Q59 (A)** — Postponement moves the CODP downstream (later in the chain, closer to customer).
-- **Q60 (D)** — HP printer power packs = delayed differentiation = postponement.
-- **Q61 (D)** — Single sourcing = chose ONE from many possible (Module 2).
-- **Q62 (C)** — Cash-to-cash is a working capital efficiency measure.
-- **Q63 (A)** — TS = +6.0 → actuals consistently exceed forecast → investigate under-forecasting bias.
-- **Q64 (B)** — Holt extends simple ES with a trend component.
-- **Q65 (B)** — Sales force composite is for new launches / account-based forecasting.
-- **Q66 (A)** — S&OP's primary purpose is alignment of demand, supply, finance, and exec into ONE plan.
-- **Q67 (B)** — Outside the PTF, MRP can replan freely (liquid horizon).
-- **Q68 (A)** — High carry cost + low setup cost → small frequent runs → lot-for-lot.
-- **Q69 (D)** — CPFR dampens bullwhip via shared forecast.
-- **Q70 (B)** — Vertical integration reduces flexibility, ties up capital, exposes to demand shocks.
-- **Q71 (C)** — Pareto principle: ~20% of SKUs drive ~80% of value.
-- **Q72 (C. 2%)** — MAPE-like bias = 20/1000 = 2%.
-- **Q73 (A)** — Perfect order = on-time + in-full + undamaged + correct documentation.
-- **Q74 (D. 1.96)** — Z for 97.5% service level = 1.96.
-- **Q75 (D)** — Pre-S&OP reconciles demand and supply before exec meeting.
+- **Q51 (B)**, Drum-buffer-rope is a Theory of Constraints (TOC) scheduling technique. Module 4/10.
+- **Q52 (C)**, Pooling reduces safety stock requirements (square-root law). Module 2/5.
+- **Q53 (C)**, 1-hour urban delivery requires many small micro-fulfillment centers (proximity wins over pooling).
+- **Q54 (C)**, Inventory rises and outbound transport falls as facility count grows. U-shape from opposing curves.
+- **Q55 (C)**, Holiday inventory built in October is anticipation inventory.
+- **Q56 (D. 91%)**, R² = 0.91 means the model explains 91% of variance.
+- **Q57 (A)**, MAPE collapses when actuals are near zero (denominator approaches 0).
+- **Q58 (B)**, ATP = on-hand + scheduled MPS receipts − committed customer orders.
+- **Q59 (A)**, Postponement moves the CODP downstream (later in the chain, closer to customer).
+- **Q60 (D)**, HP printer power packs = delayed differentiation = postponement.
+- **Q61 (D)**, Single sourcing = chose ONE from many possible (Module 2).
+- **Q62 (C)**, Cash-to-cash is a working capital efficiency measure.
+- **Q63 (A)**, TS = +6.0 → actuals consistently exceed forecast → investigate under-forecasting bias.
+- **Q64 (B)**, Holt extends simple ES with a trend component.
+- **Q65 (B)**, Sales force composite is for new launches / account-based forecasting.
+- **Q66 (A)**, S&OP's primary purpose is alignment of demand, supply, finance, and exec into ONE plan.
+- **Q67 (B)**, Outside the PTF, MRP can replan freely (liquid horizon).
+- **Q68 (A)**, High carry cost + low setup cost → small frequent runs → lot-for-lot.
+- **Q69 (D)**, CPFR dampens bullwhip via shared forecast.
+- **Q70 (B)**, Vertical integration reduces flexibility, ties up capital, exposes to demand shocks.
+- **Q71 (C)**, Pareto principle: ~20% of SKUs drive ~80% of value.
+- **Q72 (C. 2%)**, MAPE-like bias = 20/1000 = 2%.
+- **Q73 (A)**, Perfect order = on-time + in-full + undamaged + correct documentation.
+- **Q74 (D. 1.96)**, Z for 97.5% service level = 1.96.
+- **Q75 (D)**, Pre-S&OP reconciles demand and supply before exec meeting.
 
 ---
 

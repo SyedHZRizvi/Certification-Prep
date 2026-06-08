@@ -18,7 +18,7 @@ Strategic = long-term, capital-intensive, hard to reverse.
 
 ---
 
-## 🏢 Number of DCs — Total Cost Curve
+## 🏢 Number of DCs, Total Cost Curve
 
 | Cost | As DCs increase |
 |------|-----------------|
@@ -78,7 +78,7 @@ Weights = demand volume Vi. Ignores roads, labor, taxes. Use as *starting point*
 | 1PL | Shipper handles own logistics |
 | 2PL | Asset carrier (truck/rail/ocean) |
 | 3PL | Outsourced warehouse + transport + value-add |
-| 4PL | Lead logistics provider — orchestrates other LSPs |
+| 4PL | Lead logistics provider, orchestrates other LSPs |
 | 5PL | 4PL + e-com + data analytics |
 
 🧠 **3PL operates assets. 4PL orchestrates.**

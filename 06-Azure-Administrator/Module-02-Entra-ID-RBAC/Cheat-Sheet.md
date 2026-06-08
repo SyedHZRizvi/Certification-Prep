@@ -152,7 +152,7 @@ Usually **wrong**:
 
 ## ✏️ Quick Self-Check
 
-1. P1 vs P2 — what feature each unlocks? ___
+1. P1 vs P2, what feature each unlocks? ___
 2. Control plane role vs data plane role example? ___
 3. Two roles that can assign other roles? ___
 4. PIM eligible vs active? ___

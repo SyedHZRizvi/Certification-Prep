@@ -250,10 +250,10 @@ No labels = unsupervised. The other three all have labeled targets.
 Regularization penalizes complexity and combats overfitting. Increasing model size or training longer usually makes overfitting *worse*.
 
 ### Q17: **B. The known correct answer**
-A label is the supervisory signal — the ground truth used to teach the model.
+A label is the supervisory signal, the ground truth used to teach the model.
 
 ### Q18: **C. Align an LLM's outputs to human preferences**
-RLHF is the standard alignment technique for chat LLMs (Claude, GPT, etc.) — humans rank responses and the model learns the preference.
+RLHF is the standard alignment technique for chat LLMs (Claude, GPT, etc.), humans rank responses and the model learns the preference.
 
 ### Q19: **C. High bias = too simple (underfits); high variance = overfits**
 Bias = oversimplification, variance = oversensitivity to specific training data. You want the sweet spot.
@@ -262,7 +262,7 @@ Bias = oversimplification, variance = oversensitivity to specific training data.
 No labels available → start unsupervised. Anomaly detection flags unusual examples without training labels.
 
 ### Q21: **C. Calculating tax withholding from a fixed formula**
-That's deterministic math — ML is the wrong tool when the rule is exact and known.
+That's deterministic math, ML is the wrong tool when the rule is exact and known.
 
 ### Q22: **B. The model oscillates or diverges**
 A too-high learning rate causes big jumps that overshoot the minimum. Too low = painfully slow.

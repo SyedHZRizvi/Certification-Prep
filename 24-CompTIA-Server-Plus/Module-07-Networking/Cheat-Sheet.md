@@ -151,12 +151,12 @@ Typical server VLANs:
 
 Cover the answers and recite:
 
-1. LACP — what must the switch do? ___
+1. LACP, what must the switch do? ___
 2. MTU default + jumbo + end-to-end rule? ___
-3. L4 vs L7 — one-liner difference? ___
-4. SLAAC — what does it do? ___
+3. L4 vs L7, one-liner difference? ___
+4. SLAAC, what does it do? ___
 5. Why mgmt VLAN is sacred? ___
-6. PortFast — what does it skip? ___
+6. PortFast, what does it skip? ___
 
 If you can answer all 6 in under 60 seconds, you own this module. ✅
 

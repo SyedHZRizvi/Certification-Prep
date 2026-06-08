@@ -1,23 +1,23 @@
 # Module 3: Storage Accounts & Blob Storage 🗄️
 
-> **Why this module matters:** Storage is 15–20% of the AZ-104 exam, and *every* other service eventually writes to it — VM disks, backups, logs, function code, container images. Pick the wrong redundancy, lifecycle, or access pattern and you'll either waste a fortune or lose data. The exam loves tricky redundancy and SAS questions.
+> **Why this module matters:** Storage is 15–20% of the AZ-104 exam, and *every* other service eventually writes to it, VM disks, backups, logs, function code, container images. Pick the wrong redundancy, lifecycle, or access pattern and you'll either waste a fortune or lose data. The exam loves tricky redundancy and SAS questions.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): how resource groups, locks, and tags work.
-> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): control-plane vs. data-plane role distinction (you'll hear it again here — *Storage Account Contributor* ≠ *Storage Blob Data Reader*).
-> - The CAP theorem (Brewer, *Symposium on Principles of Distributed Computing keynote*, 2000) — useful background for understanding why GZRS exists and what trade-offs LRS / ZRS / GRS make.
+> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): control-plane vs. data-plane role distinction (you'll hear it again here, *Storage Account Contributor* ≠ *Storage Blob Data Reader*).
+> - The CAP theorem (Brewer, *Symposium on Principles of Distributed Computing keynote*, 2000), useful background for understanding why GZRS exists and what trade-offs LRS / ZRS / GRS make.
 >
-> If you've taken AZ-900, the storage chapter there covered tiers and redundancy at the level of "names and pictures" — this module assumes you know those names and gets into the operational and exam-tested details (in-place SKU change rules, rehydration, SAS revocation, CMK requirements).
+> If you've taken AZ-900, the storage chapter there covered tiers and redundancy at the level of "names and pictures", this module assumes you know those names and gets into the operational and exam-tested details (in-place SKU change rules, rehydration, SAS revocation, CMK requirements).
 
 ---
 
 ## 🍕 A Story: The Library That Lost Half Its Books
 
-Imagine a city library with a million books. The librarian — let's call her Priya — keeps every single book on a *single shelf* in a single building. One winter night, a frozen pipe bursts and floods half the shelf. Game over.
+Imagine a city library with a million books. The librarian let's call her Priya keeps every single book on a *single shelf* in a single building. One winter night, a frozen pipe bursts and floods half the shelf. Game over.
 
-Priya learns. Version 2: she keeps three copies of every book on three different shelves in the same building. Better — but then a fire burns down the whole building.
+Priya learns. Version 2: she keeps three copies of every book on three different shelves in the same building. Better, but then a fire burns down the whole building.
 
-Version 3: three copies in the same building, plus three more copies in a sister library 400 miles away. Even better — but now she's paying double for storage of books nobody reads more than once a decade.
+Version 3: three copies in the same building, plus three more copies in a sister library 400 miles away. Even better, but now she's paying double for storage of books nobody reads more than once a decade.
 
 Version 4: hot, frequently-read books on the front shelves; books read only at tax time on a back shelf; books last touched in 2003 in an off-site warehouse where retrieval takes hours but storage is dirt cheap. **And** she has copies in two cities. **And** she has a checkout log that tells her exactly who accessed which book and when.
 
@@ -27,7 +27,7 @@ Version 4: hot, frequently-read books on the front shelves; books read only at t
 
 ## 🏗️ Storage Account Kinds
 
-A **storage account** is the top-level namespace. Pick the right *kind* once — you can't change most kinds after creation.
+A **storage account** is the top-level namespace. Pick the right *kind* once, you can't change most kinds after creation.
 
 | Kind | Services | Notes |
 |------|----------|-------|
@@ -37,7 +37,7 @@ A **storage account** is the top-level namespace. Pick the right *kind* once —
 | **Premium Page Blob** | Page blobs only | High-perf disks for very specific workloads. |
 | **BlockBlobStorage** | Block blobs | Legacy alias for Premium Block Blob. |
 | **FileStorage** | File shares | Legacy alias for Premium Files. |
-| **StorageV1 (general-purpose v1)** | All services | Legacy — almost never recommended. |
+| **StorageV1 (general-purpose v1)** | All services | Legacy, almost never recommended. |
 
 Performance tiers: **Standard** (HDD-backed, cheap) vs **Premium** (SSD-backed, low-latency).
 
@@ -75,7 +75,7 @@ New-AzStorageAccount `
 
 ## 🔁 Redundancy Options (The #1 Tested Topic)
 
-Memorize this **column-by-column**. Exam will ask "which is cheapest that survives a region loss?" — your fingers should know.
+Memorize this **column-by-column**. Exam will ask "which is cheapest that survives a region loss?", your fingers should know.
 
 | SKU | Copies | Where | Survives… | Cost (rel.) |
 |-----|--------|-------|-----------|-------------|
@@ -88,7 +88,7 @@ Memorize this **column-by-column**. Exam will ask "which is cheapest that surviv
 
 🔥 **Memory aids:**
 - **L = Local · Z = Zone · G = Geo · GZ = both Geo and Zone · RA = Read Access**
-- Geo-pair regions are fixed (East US ↔ West US, etc.) — you can't pick the secondary
+- Geo-pair regions are fixed (East US ↔ West US, etc.), you can't pick the secondary
 - **Failover** to the secondary is *manual* (Customer-initiated failover) or *Microsoft-initiated* during a disaster
 
 ### Change redundancy via CLI
@@ -186,7 +186,7 @@ az storage account management-policy create \
 
 ## 🔒 Immutable Blobs (WORM)
 
-For regulatory data (SEC, HIPAA, etc.) — once written, *nobody* (including admins) can modify or delete.
+For regulatory data (SEC, HIPAA, etc.), once written, *nobody* (including admins) can modify or delete.
 
 Two policy types:
 
@@ -197,8 +197,8 @@ Two policy types:
 
 Applied at the **container** level (and inherited by all blobs in it). Policies can be:
 
-- **Unlocked** — admin can edit/remove (testing/dev)
-- **Locked** — even an Owner cannot remove (compliance)
+- **Unlocked**, admin can edit/remove (testing/dev)
+- **Locked**, even an Owner cannot remove (compliance)
 
 ```bash
 az storage container immutability-policy create \
@@ -221,7 +221,7 @@ az storage container immutability-policy lock \
 |-------|---------|----------------------------------|
 | At-rest (Storage Service Encryption) | ✅ AES-256, Microsoft-managed keys (MMK) | Use a Key Vault key |
 | In-transit (HTTPS) | ✅ TLS 1.2+ enforced when configured | n/a |
-| Infrastructure encryption | Optional — adds a second AES-256 layer at the infra level | Enable at account creation only |
+| Infrastructure encryption | Optional, adds a second AES-256 layer at the infra level | Enable at account creation only |
 
 ### Switch to CMK
 
@@ -240,7 +240,7 @@ az storage account update \
 
 ---
 
-## 🪪 SAS — Shared Access Signatures
+## 🪪 SAS, Shared Access Signatures
 
 A SAS is a **signed URL** that grants time-limited, scoped access to storage without giving up your account key. Three flavors:
 
@@ -248,9 +248,9 @@ A SAS is a **signed URL** that grants time-limited, scoped access to storage wit
 |------|-------|----------|
 | **Account SAS** | Account-wide (all services or subset) | Admin tools, broad access |
 | **Service SAS** | One resource (e.g. one blob or container) | App needs to read one file |
-| **User Delegation SAS** | Blob only, signed with Entra ID credentials (not account key) | **Best practice** — auditable via Entra logs |
+| **User Delegation SAS** | Blob only, signed with Entra ID credentials (not account key) | **Best practice**, auditable via Entra logs |
 
-**Stored Access Policy (SAP)** = a container-level policy you can attach to a Service SAS — lets you revoke the SAS by deleting the SAP (otherwise you can't revoke a SAS, you have to rotate the key).
+**Stored Access Policy (SAP)** = a container-level policy you can attach to a Service SAS, lets you revoke the SAS by deleting the SAP (otherwise you can't revoke a SAS, you have to rotate the key).
 
 ### Generate a SAS via CLI
 
@@ -264,7 +264,7 @@ az storage account generate-sas \
     --permissions rl \
     --expiry $(date -u -v+1H +"%Y-%m-%dT%H:%MZ")
 
-# User Delegation SAS (preferred — uses Entra ID, no account key needed)
+# User Delegation SAS (preferred, uses Entra ID, no account key needed)
 az storage blob generate-sas \
     --account-name stcontosodata001 \
     --container-name images \
@@ -283,9 +283,9 @@ az storage blob generate-sas \
 
 Three layers control who can reach a storage account:
 
-1. **Public network access** — On / Disabled / "Enabled from selected networks"
-2. **Firewall rules** — Allow specific public IPs / VNets (via service endpoints)
-3. **Private endpoints** — Give the account a private IP inside your VNet (no public IP at all)
+1. **Public network access**, On / Disabled / "Enabled from selected networks"
+2. **Firewall rules**, Allow specific public IPs / VNets (via service endpoints)
+3. **Private endpoints**, Give the account a private IP inside your VNet (no public IP at all)
 
 | Feature | Storage account becomes… |
 |---------|--------------------------|
@@ -318,12 +318,12 @@ az network private-endpoint create \
 | Tool | Use case |
 |------|----------|
 | **Azure Storage Explorer** | GUI for browsing/uploading on Windows/Mac/Linux |
-| **AzCopy** | CLI for **high-throughput bulk transfer** (GBs to TBs) — supports resume |
+| **AzCopy** | CLI for **high-throughput bulk transfer** (GBs to TBs), supports resume |
 | **Azure CLI** (`az storage blob upload`) | One-off small uploads |
 | **Azure Data Box** | Physical appliance for multi-TB/PB offline transfer |
 | **Azure Import/Export** | Mail in your own disks (older, less common now) |
 
-### AzCopy — copy a local folder to a blob container
+### AzCopy, copy a local folder to a blob container
 
 ```bash
 azcopy login   # or use a SAS URL inline
@@ -333,7 +333,7 @@ azcopy copy "./logs/2026/" \
     --recursive=true
 ```
 
-### AzCopy — sync (delta) between two containers
+### AzCopy, sync (delta) between two containers
 
 ```bash
 azcopy sync \
@@ -383,7 +383,7 @@ Skipping step 3 (KV without purge protection) blocks CMK entirely. Skipping step
 | Term | Definition |
 |------|------------|
 | **Storage account** | Top-level namespace for blob/file/queue/table |
-| **StorageV2** | The general-purpose v2 account kind — default |
+| **StorageV2** | The general-purpose v2 account kind, default |
 | **LRS/ZRS/GRS/GZRS** | Redundancy SKUs (local/zone/geo/geo+zone) |
 | **RA-** prefix | Read access to secondary added |
 | **Hot/Cool/Cold/Archive** | Blob access tiers |
@@ -391,9 +391,9 @@ Skipping step 3 (KV without purge protection) blocks CMK entirely. Skipping step
 | **Lifecycle policy** | Rules to auto-tier or delete blobs by age |
 | **Immutability** | Time-based or legal-hold WORM lock |
 | **SSE** | Storage Service Encryption (at-rest AES-256) |
-| **CMK** | Customer-Managed Key — your KV key for SSE |
-| **MMK** | Microsoft-Managed Key — default |
-| **SAS** | Shared Access Signature — signed URL for scoped access |
+| **CMK** | Customer-Managed Key, your KV key for SSE |
+| **MMK** | Microsoft-Managed Key, default |
+| **SAS** | Shared Access Signature, signed URL for scoped access |
 | **User Delegation SAS** | SAS signed with Entra ID instead of account key |
 | **Stored Access Policy (SAP)** | Container-level policy to revoke a Service SAS |
 | **Private endpoint** | Private IP inside your VNet for the storage account |
@@ -424,11 +424,11 @@ You now know:
 
 ---
 
-## 📊 Case Study — Toyota Connected Vehicle Data Exposure (2013–2023)
+## 📊 Case Study, Toyota Connected Vehicle Data Exposure (2013–2023)
 
-**Situation.** On May 12, 2023, Toyota Motor Corporation disclosed that vehicle location, customer ID, in-car device IDs, and chassis numbers for approximately **2.15 million customers** in Japan had been continuously exposed in the cloud since **November 2013 — more than 9.5 years**. The root cause: a misconfigured cloud storage environment supporting the *T-Connect, G-Link, G-Link Lite, and G-BOOK* connected-vehicle services, where a setting governing the storage container had been set to public-read instead of authenticated-read. Toyota Connected Corporation, the subsidiary running the platform, said the data had been "accessible to anyone with the URL" without account credentials (Toyota press release, *Possibility of Customer Information Leak Due to Misconfiguration of Cloud Environment*, 2023-05-12; *Reuters*, *Toyota says vehicle data of 2 million customers was publicly accessible for a decade*, 2023-05-12).
+**Situation.** On May 12, 2023, Toyota Motor Corporation disclosed that vehicle location, customer ID, in-car device IDs, and chassis numbers for approximately **2.15 million customers** in Japan had been continuously exposed in the cloud since **November 2013, more than 9.5 years**. The root cause: a misconfigured cloud storage environment supporting the *T-Connect, G-Link, G-Link Lite, and G-BOOK* connected-vehicle services, where a setting governing the storage container had been set to public-read instead of authenticated-read. Toyota Connected Corporation, the subsidiary running the platform, said the data had been "accessible to anyone with the URL" without account credentials (Toyota press release, *Possibility of Customer Information Leak Due to Misconfiguration of Cloud Environment*, 2023-05-12; *Reuters*, *Toyota says vehicle data of 2 million customers was publicly accessible for a decade*, 2023-05-12).
 
-**Decision.** Toyota's post-incident response and subsequent disclosures (October 2023 expanded the affected count to **roughly 260,000 additional customers** outside Japan and added that vehicle event data — including video — had been exposed since February 2015) hinged on three controls every Azure admin recognizes:
+**Decision.** Toyota's post-incident response and subsequent disclosures (October 2023 expanded the affected count to **roughly 260,000 additional customers** outside Japan and added that vehicle event data including video had been exposed since February 2015) hinged on three controls every Azure admin recognizes:
 
 1. **Public network access was enabled at the container/account level**. The default in Microsoft Entra-integrated Azure storage accounts created after 2021 is `--allow-blob-public-access false`, but the *legacy* default was the opposite. Toyota's account predated the safer default by years and had never been migrated.
 2. **No alerting on long-lived public exposure.** Azure Storage emits a `BlobAccessLevel` setting in the resource log; a `Microsoft.Storage/storageAccounts/blobServices/containers/write` event with a public flag should fire a Defender for Cloud or Azure Policy `Audit` finding. Toyota lacked the diagnostic-setting + alert wire-up.
@@ -441,7 +441,7 @@ Toyota's fix list, published in their second-wave disclosure: enable Defender fo
 **Lesson for the exam / for practitioners.** This case study is on AZ-104 in spirit: nearly every Defender-for-Storage / Azure-Policy storage scenario question is a thinly-veiled "Toyota." Memorize the seven correct controls for a *new* storage account: `--kind StorageV2`, `--sku Standard_GZRS` (or LRS if no regional DR need), `--min-tls-version TLS1_2`, `--allow-blob-public-access false`, `--public-network-access Disabled` *(when feasible)*, managed identity + CMK, lifecycle policy, and **a diagnostic setting to Log Analytics with a Defender alert on anonymous-read or container ACL changes**. Toyota would not be on Wikipedia today if any *one* of those had been in place in 2013.
 
 **Discussion (Socratic).**
-- **Q1.** Toyota's exposure ran for 9.5 years without detection. Granted, Azure Defender for Storage didn't exist in 2013 — but what *did* exist? Build the timeline of "controls Toyota could plausibly have deployed in each year 2013–2023" using only features available at that time. At what year would deploying default controls have shortened the exposure window?
+- **Q1.** Toyota's exposure ran for 9.5 years without detection. Granted, Azure Defender for Storage didn't exist in 2013, but what *did* exist? Build the timeline of "controls Toyota could plausibly have deployed in each year 2013–2023" using only features available at that time. At what year would deploying default controls have shortened the exposure window?
 - **Q2.** A common defensive design is *private endpoint + disable public access*. But many real apps need *some* anonymous access (e.g., a public website's images container). Where do you draw the line? Defend: which categories of blob data should *never* be in a container with `allow-blob-public-access=true`, and which categories are reasonable exceptions?
 - **Q3.** Toyota's data was *exposed* but apparently never *exfiltrated en masse* (no evidence of mass scraping was found in forensics). Critics argue this means the lesson is overstated. Build the strongest argument for *and* against "if the data wasn't actually stolen, the misconfiguration didn't matter." Use the legal vs. operational lenses.
 
@@ -449,18 +449,18 @@ Toyota's fix list, published in their second-wave disclosure: enable Defender fo
 
 > **Where this leads.**
 > - Inside this course: Module 4 builds on storage by adding the *SMB/NFS file share* layer; Module 8 covers the network-side controls (private endpoint, NSG, Firewall) that lock storage down; Module 10 closes the loop with diagnostic settings + Defender for Storage alerts.
-> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading.md) covers the equivalent S3 controls — useful for the multi-cloud admin; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 4 covers cloud-storage misconfiguration as a recognized attack class.
+> - Cross-course: [`04-AWS-Solutions-Architect-Associate` Module 3](../../04-AWS-Solutions-Architect-Associate/Module-03-EC2-Deep-Dive/Reading.md) covers the equivalent S3 controls, useful for the multi-cloud admin; [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Module 4 covers cloud-storage misconfiguration as a recognized attack class.
 > - Practice: PE-1 has 9 questions from this module (redundancy SKUs, tiers, SAS, CMK, private endpoint); PE-2 + Final Mock test scenario synthesis.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Redundancy choice under cost pressure.** A startup CFO wants you to switch the production blob account from GZRS to LRS to save ~60% on storage cost. Walk through the AZ-104-style decision: at what RPO/RTO posture is LRS defensible? Defend the *cheapest acceptable* redundancy SKU for a system whose data could be re-derived from an upstream source within 4 hours, vs. one whose data is the system of record. (Hint: the AWS Well-Architected and Microsoft Well-Architected Framework "Reliability" pillars both give explicit guidance.)
-2. **Tiering math.** A media company keeps 100 TB of video assets. 5 TB are accessed daily, 20 TB monthly, 75 TB roughly once a year for archival reference. Design the lifecycle policy and estimate the storage-cost reduction vs. all-Hot. Where does the math flip — at what access frequency does Archive *lose* money once retrieval and rehydration costs are included?
+2. **Tiering math.** A media company keeps 100 TB of video assets. 5 TB are accessed daily, 20 TB monthly, 75 TB roughly once a year for archival reference. Design the lifecycle policy and estimate the storage-cost reduction vs. all-Hot. Where does the math flip, at what access frequency does Archive *lose* money once retrieval and rehydration costs are included?
 3. **SAS revocation.** A vendor's Account SAS was leaked on GitHub. The standard advice is "rotate the account key." Argue why that's the right answer despite breaking *every* other SAS issued from that key, and what a *Stored Access Policy* would have bought you. When would User Delegation SAS have made the leak nearly inert?
 4. **Immutable storage and the regulator.** A bank is told by their regulator to retain trade records for 7 years, write-once. Two designs: time-based immutability (locked) on a regular blob container vs. a dedicated WORM-mode Backup vault. Argue which is the right primary control and which is the appropriate *defense-in-depth* secondary control.
-5. **The CMK rotation question.** Customer-Managed Keys are the gold standard for compliance, but rotating them wrong has bricked production storage accounts. Walk through the Key Vault + storage-account dance for a clean key rotation. What's the one setting that, if missing, turns "rotate the key" into "the storage account can't decrypt anything anymore"? (Hint: soft delete + purge protection on Key Vault is half the answer — what's the other half?)
+5. **The CMK rotation question.** Customer-Managed Keys are the gold standard for compliance, but rotating them wrong has bricked production storage accounts. Walk through the Key Vault + storage-account dance for a clean key rotation. What's the one setting that, if missing, turns "rotate the key" into "the storage account can't decrypt anything anymore"? (Hint: soft delete + purge protection on Key Vault is half the answer, what's the other half?)
 
 ---
 
@@ -472,5 +472,5 @@ Toyota's fix list, published in their second-wave disclosure: enable Defender fo
 - 📖 [SAS overview](https://learn.microsoft.com/azure/storage/common/storage-sas-overview)
 - 📖 [AzCopy v10 reference](https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10)
 - 📖 [Defender for Storage](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-storage-introduction) (GA 2022; checked 2026-05).
-- 📖 Mark Russinovich, *Azure CTO blog* — periodic posts on storage architecture and resiliency engineering; especially the 2022 *"Inside Azure datacenter architecture"* series.
-- 📖 Brewer, *PODC keynote 2000* — the CAP theorem origin; useful for reasoning about why GRS can't promise zero data loss on regional failover.
+- 📖 Mark Russinovich, *Azure CTO blog*, periodic posts on storage architecture and resiliency engineering; especially the 2022 *"Inside Azure datacenter architecture"* series.
+- 📖 Brewer, *PODC keynote 2000*, the CAP theorem origin; useful for reasoning about why GRS can't promise zero data loss on regional failover.

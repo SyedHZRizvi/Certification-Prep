@@ -41,7 +41,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+model+monitoring+drift+skew+detection" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Model Monitoring — Drift + Skew</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">Model Monitoring, Drift + Skew</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 16 min · Catching silent failures</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Feature+Store+online+offline+training+serving+skew" target="_blank" rel="noopener">
@@ -76,7 +76,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Cloud+Build+CI+CD+Vertex+AI+pipeline+trigger" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">CI/CD for ML — Cloud Build + Vertex</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">CI/CD for ML, Cloud Build + Vertex</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · GitHub → Pipeline → Endpoint</span></div>
   </a>
 </div>
@@ -115,7 +115,7 @@
 ## ✅ After watching
 
 1. The 8 stages of the Vertex AI MLOps loop?
-2. Pipelines vs Cloud Build — when each?
-3. traffic_split — canary deploy syntax?
+2. Pipelines vs Cloud Build, when each?
+3. traffic_split, canary deploy syntax?
 4. Three failure modes Model Monitoring detects?
 5. When use Vertex AI Feature Store?

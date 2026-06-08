@@ -59,11 +59,11 @@
 
 ## ⚠️ Anti-Patterns To Recognize
 
-- ❌ **ScrumBut** — "We do Scrum, BUT we skip retros"
-- ❌ **Big upfront design** — Trying to plan everything before coding
-- ❌ **Manager-driven team** — Scrum Master assigning work
-- ❌ **No customer feedback** — Building in a vacuum
-- ❌ **Status-meeting Daily Scrum** — Daily for the manager, not the team
+- ❌ **ScrumBut**, "We do Scrum, BUT we skip retros"
+- ❌ **Big upfront design**, Trying to plan everything before coding
+- ❌ **Manager-driven team**, Scrum Master assigning work
+- ❌ **No customer feedback**, Building in a vacuum
+- ❌ **Status-meeting Daily Scrum**, Daily for the manager, not the team
 
 ---
 

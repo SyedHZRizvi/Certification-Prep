@@ -173,7 +173,7 @@ D. Materials
 ### Q19. You import a walk animation from Mixamo. The character slides across the floor during playback. The most likely cause is:
 
 A. The animation clip has too many keyframes
-B. Root Motion is enabled in the Animator but the clip has Root Transform Position (XZ) set to "Bake Into Pose" — or vice versa
+B. Root Motion is enabled in the Animator but the clip has Root Transform Position (XZ) set to "Bake Into Pose", or vice versa
 C. The Humanoid avatar definition does not match the character
 D. The frame rate of the clip does not match the game's target frame rate
 
@@ -227,28 +227,28 @@ D. It controls whether animation events fire during the transition crossfade
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  C — Animator Controller is the state machine asset
-Q2:  B — Humanoid enables retargeting between different biped models
-Q3:  C — Float parameters drive 1D Blend Tree interpolation
-Q4:  B — Has Exit Time auto-fires the transition at the exit time fraction
-Q5:  B — Bake Into Pose converts Root Motion to In-Place animation
-Q6:  B — Culling Mode controls off-screen animation update behavior
-Q7:  B — Avatar Masks define which bones a layer affects
-Q8:  C — Additive blend mode adds pose delta on top of lower layers
-Q9:  B — Second layer with upper-body Avatar Mask, Override mode
-Q10: B — Animation Events fire at specific clip frames, calling MonoBehaviour methods
-Q11: C — OnAnimatorMove() is the override for manual Root Motion application
-Q12: B — Triggers are consumed after one transition; bools persist
-Q13: C — IK goals must be set inside OnAnimatorIK()
-Q14: B — Mixamo provides free rigged characters and Humanoid animation clips
-Q15: B — 2D Freeform Directional for 8-directional/radial locomotion
-Q16: B — Unconsumed triggers wait for the next valid transition that can use them
-Q17: B — normalizedTime is 0.0–1.0 within the clip; >1.0 indicates loop
-Q18: B — Rig tab in FBX importer configures Humanoid/Generic/Legacy
-Q19: B — Root Motion/bake-into-pose mismatch causes sliding
-Q20: B — Override layer plays its animation for masked bones only
-Q21: C — AnyState allows transitions from any currently active state
-Q22: B — Generic for non-biped/custom rigs
-Q23: B — Loop Time checkbox in Animation import settings
-Q24: B — Interruption Source controls whether competing transitions can interrupt the current blend
+Q1:  C, Animator Controller is the state machine asset
+Q2:  B, Humanoid enables retargeting between different biped models
+Q3:  C, Float parameters drive 1D Blend Tree interpolation
+Q4:  B, Has Exit Time auto-fires the transition at the exit time fraction
+Q5:  B, Bake Into Pose converts Root Motion to In-Place animation
+Q6:  B, Culling Mode controls off-screen animation update behavior
+Q7:  B, Avatar Masks define which bones a layer affects
+Q8:  C, Additive blend mode adds pose delta on top of lower layers
+Q9:  B, Second layer with upper-body Avatar Mask, Override mode
+Q10: B, Animation Events fire at specific clip frames, calling MonoBehaviour methods
+Q11: C, OnAnimatorMove() is the override for manual Root Motion application
+Q12: B, Triggers are consumed after one transition; bools persist
+Q13: C, IK goals must be set inside OnAnimatorIK()
+Q14: B, Mixamo provides free rigged characters and Humanoid animation clips
+Q15: B, 2D Freeform Directional for 8-directional/radial locomotion
+Q16: B, Unconsumed triggers wait for the next valid transition that can use them
+Q17: B, normalizedTime is 0.0–1.0 within the clip; >1.0 indicates loop
+Q18: B, Rig tab in FBX importer configures Humanoid/Generic/Legacy
+Q19: B, Root Motion/bake-into-pose mismatch causes sliding
+Q20: B, Override layer plays its animation for masked bones only
+Q21: C, AnyState allows transitions from any currently active state
+Q22: B, Generic for non-biped/custom rigs
+Q23: B, Loop Time checkbox in Animation import settings
+Q24: B, Interruption Source controls whether competing transitions can interrupt the current blend
 ```

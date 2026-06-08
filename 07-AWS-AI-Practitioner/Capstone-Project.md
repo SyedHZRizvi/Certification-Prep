@@ -1,9 +1,9 @@
 ---
 permalink: /07-AWS-AI-Practitioner/Capstone-Project/
-title: Capstone Project — AWS AI Practitioner
+title: Capstone Project, AWS AI Practitioner
 ---
 
-# Capstone Project — AWS AI Practitioner (AIF-C01) 🧪
+# Capstone Project, AWS AI Practitioner (AIF-C01) 🧪
 
 > **Read first:** This capstone is the integrative project for the AWS AI Practitioner track. It synthesizes Modules 1–8 and the three Practice Exams into a single executive-ready deliverable. You are *not* implementing code in AWS; you are producing the documents that a real AI Lead would put in front of a board, a CISO, and a CFO.
 
@@ -108,7 +108,7 @@ The CFO will not sign without numbers. Build:
 |-----------|--------|-------------------------------|----------------------|-------------------|
 | **1. FM Selection Memo** | 15 | Three real models compared on six dimensions with 2026-verified pricing and a defended weighted-scoring recommendation. Cites Anthropic / Amazon / Meta provider documentation. | All three compared, but missing one dimension or one quantitative estimate. Recommendation is plausible but not deeply defended. | Generic comparison, no numbers, no recommendation. |
 | **2. RAG Architecture** | 15 | Concrete chunking strategy, embedding model, vector store, citation-provenance mechanism. Hybrid-search decision defended. Diagram is clear and accurate. Addresses freshness, removal, indirect-injection. | All major components addressed, but one or two trade-offs unjustified. Diagram present but unclear. | Generic RAG pipeline, no Northwind-specific reasoning, no provenance mechanism. |
-| **3. Evaluation Harness** | 15 | Specific metrics with target values, Bedrock Model Evaluation configuration, named human reviewer panel and SLA, A2I trigger rules, drift-monitoring plan, rollback runbook. | Most components present but one missing (e.g., no rollback runbook). Metrics named but not targeted. | "We'll evaluate it" — no specific tooling, no human panel, no thresholds. |
+| **3. Evaluation Harness** | 15 | Specific metrics with target values, Bedrock Model Evaluation configuration, named human reviewer panel and SLA, A2I trigger rules, drift-monitoring plan, rollback runbook. | Most components present but one missing (e.g., no rollback runbook). Metrics named but not targeted. | "We'll evaluate it", no specific tooling, no human panel, no thresholds. |
 | **4. Responsible AI / NIST AI RMF Risk Register** | 20 | All four NIST functions covered; risk register has ≥ 12 specific risks with mitigations; EU AI Act position defended; Air Canada precedent explicitly addressed in disclosure language; Clarify + Guardrails + A2I integration is named and specified. | All risks covered but mitigations less specific; one or two NIST functions thin; EU AI Act treatment surface-level. | Generic Responsible-AI language, no Northwind-specific risks, no regulatory mapping. |
 | **5. Security Review** | 20 | Layered defense across IAM (resource-level), network (PrivateLink), encryption (KMS CMK), audit (CloudTrail + invocation logging), prompt-injection defenses (direct + indirect + insider), HIPAA / GDPR / SOC 2 mapping, threat model. Samsung incident explicitly referenced. | Most layers covered; one or two specific configurations missing. Threat model present but partial. | Generic security checklist; no Bedrock-specific patterns; no threat model. |
 | **6. ROI Model + Roadmap** | 15 | Quantified investment, quantified returns, sensitivity analysis on two key variables, NPV calculation, break-even quarter, 5-use-case roadmap with go/no-go gates, 2-page board narrative. | ROI model present but missing sensitivity analysis or NPV. Roadmap present but not gated. | Generic ROI claims, no numbers, no roadmap. |

@@ -35,7 +35,7 @@ D. |A − B|
 Why must compositing operations be performed in scene-linear color space rather than log-encoded footage?
 
 A. Log footage has a lower bit depth than scene-linear and loses quality during compositing
-B. Only scene-linear math is physically correct — log encoding is non-linear, causing incorrect blending and color fringing
+B. Only scene-linear math is physically correct, log encoding is non-linear, causing incorrect blending and color fringing
 C. After Effects and Nuke cannot import log-encoded footage directly
 D. Scene-linear has wider color gamut than log encoding
 
@@ -68,7 +68,7 @@ D. The 1954 Senate hearing sequences
 The "skin-tone line" on a vectorscope is used for what purpose in shot matching?
 
 A. Selecting the correct secondary qualifier to isolate skin tones
-B. Verifying that human skin tones cluster at the correct consistent angle — used to match skin color accurately between shots
+B. Verifying that human skin tones cluster at the correct consistent angle, used to match skin color accurately between shots
 C. Calibrating the monitor's white point for accurate skin tone display
 D. Applying the correct LUT for skin tone reproduction
 
@@ -79,7 +79,7 @@ D. Applying the correct LUT for skin tone reproduction
 Which of the following correctly describes the Gareth Edwards practical/digital VFX philosophy, as demonstrated in *Monsters* (2010)?
 
 A. Replace all location footage with CG environments for full creative control
-B. Always shoot something real — even small-scale real elements — and build digital VFX around the photographic reality
+B. Always shoot something real even small-scale real elements and build digital VFX around the photographic reality
 C. Use practical effects exclusively and avoid digital VFX for authentic-looking films
 D. Shoot actors against greenscreens, then composite them into entirely digital environments
 
@@ -125,7 +125,7 @@ Film grain should be applied to a VFX composite using which method to maintain p
 A. Applied individually to each element layer (plate, CG, particles)
 B. As a single Adjustment Layer at the top of the comp, overlaying all elements with unified grain
 C. Applied to the background plate only, with no grain on VFX elements
-D. Not applied at all — digital compositing should have no grain
+D. Not applied at all, digital compositing should have no grain
 
 ---
 
@@ -211,7 +211,7 @@ D. 10 minutes
 When a supervisor says a composited CG element is "floating," they mean:
 
 A. The CG element has no gravity simulation and moves through the frame incorrectly
-B. The CG element lacks correct shadow integration and interactive light — it appears to sit on top of the plate rather than within its world
+B. The CG element lacks correct shadow integration and interactive light, it appears to sit on top of the plate rather than within its world
 C. The tracking on the CG element is drifting from frame to frame
 D. The CG element's color is too bright for the plate exposure
 
@@ -299,7 +299,7 @@ D. Compositors earn less than VFX Artists at equivalent experience levels
 A set extension that appears visually incorrect because the distant elements are as sharp and saturated as the foreground elements is missing what?
 
 A. The correct frame rate for the extended environment
-B. Atmospheric depth — haze, saturation falloff, and reduced contrast that simulate real-world atmospheric perspective
+B. Atmospheric depth, haze, saturation falloff, and reduced contrast that simulate real-world atmospheric perspective
 C. The correct 3D camera solve to match the plate
 D. The shadow catcher material for the ground plane
 
@@ -321,7 +321,7 @@ D. Rec.709 (display-referred)
 The *1917* (2019) film's "single-take" appearance was achieved using which VFX technique?
 
 A. It was genuinely shot as a single continuous take using a specially designed camera
-B. Digital stitching — DNEG composited separately shot scenes together at carefully chosen dark or transitional frames
+B. Digital stitching, DNEG composited separately shot scenes together at carefully chosen dark or transitional frames
 C. The LED Volume was used to continuously change the environment behind the actor as he walked through the frame
 D. Time-lapse photography combined with VFX motion compensation
 
@@ -332,7 +332,7 @@ D. Time-lapse photography combined with VFX motion compensation
 A VFX reel candidate applies for a compositor position at a major film studio. Their reel shows excellent work but only demonstrates After Effects proficiency. Why is this a likely rejection point?
 
 A. Major film studios do not use After Effects for any work
-B. Major film studios (ILM, Weta, Framestore, MPC, Dneg) use Nuke as their primary compositing application — the candidate must demonstrate Nuke proficiency
+B. Major film studios (ILM, Weta, Framestore, MPC, Dneg) use Nuke as their primary compositing application, the candidate must demonstrate Nuke proficiency
 C. After Effects reels are technically inferior to Nuke reels regardless of quality
 D. The studio's HR database cannot accept After Effects project files for review
 

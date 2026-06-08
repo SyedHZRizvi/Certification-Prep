@@ -21,7 +21,7 @@ title: "Module 7 Cheat Sheet: CSS Animation, Lottie & Rive"
 
 | Value | Effect |
 |-------|--------|
-| `none` | Snaps back to original state — DEFAULT |
+| `none` | Snaps back to original state, DEFAULT |
 | `forwards` | **Holds final keyframe after animation ends** |
 | `backwards` | Applies first keyframe during delay period |
 | `both` | forwards + backwards behavior |
@@ -36,7 +36,7 @@ title: "Module 7 Cheat Sheet: CSS Animation, Lottie & Rive"
 | `opacity` | `width`, `height`, `margin` |
 | `filter` (usually) | `padding`, `border-width` |
 
-**will-change: transform** — promotes to GPU layer BEFORE animation. Use sparingly; too many elements on GPU layers wastes VRAM.
+**will-change: transform**, promotes to GPU layer BEFORE animation. Use sparingly; too many elements on GPU layers wastes VRAM.
 
 ---
 
@@ -126,9 +126,9 @@ if (!reduced) { gsap.from('.hero', { y: 40, opacity: 0 }); }
 
 | Trap | Fix |
 |------|-----|
-| fill-mode: none (default) — snaps back | Use `forwards` or `both` |
+| fill-mode: none (default), snaps back | Use `forwards` or `both` |
 | Animating top/left | Use `transform: translateX/Y` |
-| will-change on everything | Use sparingly — GPU memory cost |
+| will-change on everything | Use sparingly, GPU memory cost |
 | Lottie file > 50KB | Run LottieFiles optimizer |
 | Lottie for interactive states | Use Rive (has state machine) |
 | 3D AE layers in Lottie export | Flatten to 2D before export |
@@ -159,7 +159,7 @@ if (!reduced) { gsap.from('.hero', { y: 40, opacity: 0 }); }
 
 ---
 
-## 📊 Lottie vs. Rive vs. CSS — Decision Matrix
+## 📊 Lottie vs. Rive vs. CSS, Decision Matrix
 
 | Factor | CSS | Lottie | Rive |
 |---|---|---|---|

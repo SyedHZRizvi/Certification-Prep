@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Tools & Features
 
-> **How to use:** Monitor vs Service Health vs Status — the exam asks this. Drill the comparison videos.
+> **How to use:** Monitor vs Service Health vs Status, the exam asks this. Drill the comparison videos.
 
 ## ⭐ Essential watching (~45 min)
 
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Bicep vs ARM Templates Explained</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 12 min · Modern IaC</span>
     </div>
   </a>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Monitor, Arc, deep dives |
-| **Adam Marczak — Azure for Everyone** | Bicep/ARM clean comparisons |
+| **Adam Marczak, Azure for Everyone** | Bicep/ARM clean comparisons |
 | **Microsoft Mechanics** | Migration tools, official content |
 | **Microsoft Learn** | Authoritative tool walkthroughs |
 
@@ -144,9 +144,9 @@
 
 Answer these in your notebook:
 
-1. Cloud Shell vs Azure CLI vs PowerShell — when each?
-2. Bicep vs ARM — same engine or different?
-3. Azure Monitor vs Service Health vs Azure Status — what does each watch?
+1. Cloud Shell vs Azure CLI vs PowerShell, when each?
+2. Bicep vs ARM, same engine or different?
+3. Azure Monitor vs Service Health vs Azure Status, what does each watch?
 4. Azure Advisor's 5 recommendation pillars?
 5. What does Azure Arc DO?
 

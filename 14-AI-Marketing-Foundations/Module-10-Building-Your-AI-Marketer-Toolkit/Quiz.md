@@ -158,7 +158,7 @@ D. CRM Schema Designer
 
 ---
 
-### Q20. Make.com vs Zapier — the typical differentiator is: *(Understand)*
+### Q20. Make.com vs Zapier, the typical differentiator is: *(Understand)*
 A. Make has visual scenarios and more complex flows; Zapier is simpler and more apps
 B. They are identical
 C. Make is only for engineers
@@ -207,7 +207,7 @@ Segment is a Customer Data Platform. Klaviyo (ESP), HubSpot (MA + CRM), WordPres
 n8n is open-source and self-hostable. Zapier and Make are SaaS.
 
 ### Q3: **D. Punchcard**
-Not a thing in modern stacks. Foundation LLM, CDP, CRM, ESP, CMS, analytics, dashboards, automation — those are the real layers.
+Not a thing in modern stacks. Foundation LLM, CDP, CRM, ESP, CMS, analytics, dashboards, automation, those are the real layers.
 
 ### Q4: **C. An all-in-one marketing automation (MA) platform + CRM**
 HubSpot bundles CRM + marketing hub + sales hub + service hub.
@@ -288,7 +288,7 @@ The thesis of the whole module.
 - 6 stack tiers + examples per tier
 - CDP (Segment), CRM (Salesforce/HubSpot), ESP (Klaviyo/Mailchimp), MA (HubSpot/Marketo), CMS (WordPress)
 - Make vs Zapier vs n8n (n8n = OSS self-hosted)
-- 10 battle-tested prompts (and the 1 fake — CRM Schema Designer)
+- 10 battle-tested prompts (and the 1 fake, CRM Schema Designer)
 - "Second brain" = Tiago Forte
 - Stripe = Notion as command center
 - Looker Studio free; Power BI free tier limited

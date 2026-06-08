@@ -1,19 +1,19 @@
 # Module 4: Multi-Touch Attribution 🎯
 
-> **Why this module matters:** Attribution is the single most contested measurement domain in marketing. Last-click attribution — the default for two decades — over-credits bottom-funnel channels by 30–60% and starves the upper-funnel that grows the brand. Multi-touch attribution (MTA) was the 2010–2020 fix. By 2026 we know MTA is itself a flawed approximation, and the strategist's job is to *combine* MTA + MMM + incrementality with full awareness of each method's limits. This module teaches that combination at depth.
+> **Why this module matters:** Attribution is the single most contested measurement domain in marketing. Last-click attribution the default for two decades over-credits bottom-funnel channels by 30–60% and starves the upper-funnel that grows the brand. Multi-touch attribution (MTA) was the 2010–2020 fix. By 2026 we know MTA is itself a flawed approximation, and the strategist's job is to *combine* MTA + MMM + incrementality with full awareness of each method's limits. This module teaches that combination at depth.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Basic probability and conditional probability (`P(A|B)` is intuitive) — high-school stats refresher is enough.
-> - GA4's data model and Key Events from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md) — DDA runs on top of these.
-> - Server-side tracking + CAPI concepts from [Module 2](../Module-02-CDP-Server-Side-Tracking/Reading.md) — your MTA accuracy depends on what survives the privacy stack.
-> - A reading-level familiarity with linear regression — covered at intro depth in [Course 15 Module 1: Campaign Strategy & Brief Writing](../../15-AI-Marketing-Practitioner/Module-01-Campaign-Strategy-Brief-Writing/Reading.md).
-> If Shapley values or Markov chains are new to you, that's expected — this module teaches both from first principles.
+> - Basic probability and conditional probability (`P(A|B)` is intuitive), high-school stats refresher is enough.
+> - GA4's data model and Key Events from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md), DDA runs on top of these.
+> - Server-side tracking + CAPI concepts from [Module 2](../Module-02-CDP-Server-Side-Tracking/Reading.md), your MTA accuracy depends on what survives the privacy stack.
+> - A reading-level familiarity with linear regression, covered at intro depth in [Course 15 Module 1: Campaign Strategy & Brief Writing](../../15-AI-Marketing-Practitioner/Module-01-Campaign-Strategy-Brief-Writing/Reading.md).
+> If Shapley values or Markov chains are new to you, that's expected, this module teaches both from first principles.
 
 ---
 
-## 🧦 A Story: How Stitch Fix's Attribution Model Cost — and Then Saved — $80M
+## 🧦 A Story: How Stitch Fix's Attribution Model Cost and Then Saved $80M
 
-January 2019. Stitch Fix has been growing 25% YoY using last-click attribution. The model says paid search (branded + non-branded) drives 47% of acquisition. The CMO doubles search budget. Q1 revenue grows 8% — below the 25% trend. Q2 grows 4%. The CMO is fired.
+January 2019. Stitch Fix has been growing 25% YoY using last-click attribution. The model says paid search (branded + non-branded) drives 47% of acquisition. The CMO doubles search budget. Q1 revenue grows 8%, below the 25% trend. Q2 grows 4%. The CMO is fired.
 
 The new VP of Marketing Science runs a holdout test: turn off paid search in three test geos. In two of three, organic + direct traffic absorbs ~85% of the lost paid-search clicks within 14 days. *Paid search was cannibalizing organic.* Last-click had been crediting paid search with conversions that would have happened anyway. The team had been over-investing in a channel that was largely *incremental zero*.
 
@@ -39,12 +39,12 @@ Six canonical attribution models. The first five are *rule-based*; the sixth is 
 | **First-click** | 100% credit to the first touchpoint | Pure brand-awareness measurement |
 | **Linear** | Equal credit to every touchpoint | When you genuinely don't know which matters |
 | **Time-decay** | More credit to recent touches (exponential decay) | When recency matters (e.g., flash sales) |
-| **Position-based (U-shaped)** | 40/20/40 — first / middle (split) / last | When start and end both matter |
+| **Position-based (U-shaped)** | 40/20/40, first / middle (split) / last | When start and end both matter |
 | **Data-driven (DDA)** | Probabilistic credit based on observed paths | The default when you have enough data |
 
 ⚠️ **Trap on the exam:** Position-based is sometimes called "U-shaped." When the first + last get 40% each and the middle 20%, it's U-shaped. The 22.5/22.5/22.5/22.5/10 variant is "W-shaped" (credits 22.5% to first + lead + opportunity-creation + last + 10% middle).
 
-### Worked example — comparing models on one path
+### Worked example, comparing models on one path
 
 A customer's path before purchase, in order: Display ad → Organic search → Email open → Paid search → Purchase.
 
@@ -57,11 +57,11 @@ A customer's path before purchase, in order: Display ad → Organic search → E
 | Position-based | **40%** | 10% | 10% | **40%** |
 | Data-driven (illustrative) | 12% | 18% | 28% | 42% |
 
-🎯 **Strategist's insight:** Every model gives a different answer to "what drove this sale?" There is no objectively correct answer — only models with different assumptions. The Data-Driven model is the closest to ground truth *only if the underlying probability model is well-fit*, which is a real "if."
+🎯 **Strategist's insight:** Every model gives a different answer to "what drove this sale?" There is no objectively correct answer, only models with different assumptions. The Data-Driven model is the closest to ground truth *only if the underlying probability model is well-fit*, which is a real "if."
 
 ---
 
-## 🧮 Data-Driven Attribution — How It Actually Works
+## 🧮 Data-Driven Attribution, How It Actually Works
 
 Three mathematical approaches to data-driven attribution. You will be asked about all three.
 
@@ -138,11 +138,11 @@ GA4 → Admin → Attribution Settings → Reporting Attribution Model
   → If "Data-driven" is available without a warning, you've passed the threshold.
 ```
 
-GA4's DDA output flows directly into Google Ads conversion-bid optimization when you link the accounts. This is one of the biggest benefits of using GA4 + Google Ads as a stack — the bid algorithm uses the same DDA values you see in reports.
+GA4's DDA output flows directly into Google Ads conversion-bid optimization when you link the accounts. This is one of the biggest benefits of using GA4 + Google Ads as a stack, the bid algorithm uses the same DDA values you see in reports.
 
 ---
 
-## 🐍 A Worked Python Example — Markov-Chain Attribution
+## 🐍 A Worked Python Example, Markov-Chain Attribution
 
 Let's build a Markov-chain attribution model from scratch. (Real code; you can run this on a Pandas-style dataset.)
 
@@ -251,7 +251,7 @@ Mobile measurement partners (MMPs) handle **postback** attribution for mobile ap
 
 - When a user installs your app from an ad, the ad network sends a "postback" to the MMP.
 - The MMP de-duplicates across networks (so Meta and TikTok don't both claim the same install).
-- On iOS, the MMP uses **SKAdNetwork** (Apple's privacy-preserving install attribution) — covered in Module 9.
+- On iOS, the MMP uses **SKAdNetwork** (Apple's privacy-preserving install attribution), covered in Module 9.
 
 If you don't have a mobile app, you can skip MMPs entirely. If you do, MMP selection is as important as CDP selection.
 
@@ -259,20 +259,20 @@ If you don't have a mobile app, you can skip MMPs entirely. If you do, MMP selec
 
 ## ⚖️ MTA's Honest Limitations
 
-This is the section nobody talks about enough — and the section that earns you respect when you raise it in interviews.
+This is the section nobody talks about enough, and the section that earns you respect when you raise it in interviews.
 
-1. **MTA cannot measure channels with no click**. Brand TV, billboards, podcast hosts speaking your brand — none generate a clickable touchpoint. MTA gives them 0% credit by design. *They are not zero impact.*
+1. **MTA cannot measure channels with no click**. Brand TV, billboards, podcast hosts speaking your brand, none generate a clickable touchpoint. MTA gives them 0% credit by design. *They are not zero impact.*
 2. **MTA over-credits trackable channels at the expense of untrackable ones**. By construction. Always.
-3. **MTA requires accurate touchpoint data**. iOS ATT, 7-day cookie cap, ad blockers, view-through visibility — all degrade the input. Bad input → wrong attribution.
+3. **MTA requires accurate touchpoint data**. iOS ATT, 7-day cookie cap, ad blockers, view-through visibility, all degrade the input. Bad input → wrong attribution.
 4. **MTA cannot measure incrementality directly**. It models *correlation* between touchpoints and conversions. Holdout tests measure *causation*. These are different.
-5. **MTA cannot capture "halo" effects** — when a TV ad boosts search-click conversion rate without being clicked itself.
+5. **MTA cannot capture "halo" effects**, when a TV ad boosts search-click conversion rate without being clicked itself.
 6. **Most MTA vendors disagree by 20–60%** on the same data because their model assumptions differ.
 
-🎯 **Memorize this.** When asked "which attribution model is right?" — the senior answer is *"It depends on what we're trying to measure. For trackable, click-driven channels we use DDA. For brand and untrackable channels we use MMM. To validate either we run incrementality tests."* That answer alone differentiates you from 80% of marketers.
+🎯 **Memorize this.** When asked "which attribution model is right?", the senior answer is *"It depends on what we're trying to measure. For trackable, click-driven channels we use DDA. For brand and untrackable channels we use MMM. To validate either we run incrementality tests."* That answer alone differentiates you from 80% of marketers.
 
 ---
 
-## 🧪 Incrementality Testing — The Ground Truth
+## 🧪 Incrementality Testing, The Ground Truth
 
 An **incrementality test** measures the *causal* impact of a marketing intervention by withholding it from a randomized hold-out group. Three canonical designs:
 
@@ -284,11 +284,11 @@ Statistical floor: typically need **≥20 matched DMAs** for adequate power.
 
 ### 2. PSA test (public service announcement)
 
-In digital channels, the "control" group receives a **PSA ad** (an unrelated public-service creative — e.g., World Wildlife Fund) instead of your brand. The control group is *exposed to an ad* but not your ad. This isolates the *creative* effect.
+In digital channels, the "control" group receives a **PSA ad** (an unrelated public-service creative, e.g., World Wildlife Fund) instead of your brand. The control group is *exposed to an ad* but not your ad. This isolates the *creative* effect.
 
 ### 3. Conversion lift test (Meta / Google Ads built-in)
 
-Both Meta and Google Ads have built-in conversion-lift testing — they randomly hold out X% of the addressable audience from seeing your ads and report the lift in conversions among the exposed group versus the hold-out.
+Both Meta and Google Ads have built-in conversion-lift testing, they randomly hold out X% of the addressable audience from seeing your ads and report the lift in conversions among the exposed group versus the hold-out.
 
 **Meta's Conversion Lift Test setup:**
 ```
@@ -341,7 +341,7 @@ INCREMENTALITY  ←──┼──→  MMM (Marketing Mix Modeling)
 |---------------|---------|
 | "DDA is just a fancy last-click" | DDA distributes credit across the path; last-click gives 100% to one touchpoint |
 | "MTA measures incrementality" | MTA measures *correlation*. Incrementality measures *causation*. |
-| "We can compare MTA outputs across vendors" | Vendor outputs diverge by 20–60% on the same data — apples to oranges |
+| "We can compare MTA outputs across vendors" | Vendor outputs diverge by 20–60% on the same data, apples to oranges |
 | "Once we have DDA we don't need MMM" | DDA cannot see TV, billboards, podcasts. MMM can. |
 | "Position-based and W-shaped are the same" | U-shaped (position-based) = 40/20/40. W-shaped = 22.5 × 4 + 10% middle. |
 | "GA4 DDA works for everyone" | Requires 400+ conversions per type in 30 days. Most small properties never qualify. |
@@ -353,16 +353,16 @@ INCREMENTALITY  ←──┼──→  MMM (Marketing Mix Modeling)
 
 | Term | Definition |
 |------|------------|
-| **MTA** | Multi-Touch Attribution — assigning fractional credit across touchpoints |
-| **DDA** | Data-Driven Attribution — fractional credit determined algorithmically |
+| **MTA** | Multi-Touch Attribution, assigning fractional credit across touchpoints |
+| **DDA** | Data-Driven Attribution, fractional credit determined algorithmically |
 | **Last-click / First-click** | Heuristic models giving 100% credit to last/first touch |
 | **Linear / Time-decay / Position-based** | Heuristic models with different rules |
 | **U-shaped / W-shaped** | Position-based variants (40/20/40 vs 22.5×4+10) |
 | **Shapley value** | Cooperative game-theory credit allocation (Shapley 1953) |
 | **Markov chain attribution** | Removal-effect-based credit using a state-transition graph |
 | **Removal effect** | Drop in conversion probability when a channel is removed |
-| **SHAP** | SHapley Additive exPlanations — ML interpretability built on Shapley |
-| **MMP** | Mobile Measurement Partner (Branch, AppsFlyer, Adjust) — mobile attribution |
+| **SHAP** | SHapley Additive exPlanations, ML interpretability built on Shapley |
+| **MMP** | Mobile Measurement Partner (Branch, AppsFlyer, Adjust), mobile attribution |
 | **SKAdNetwork (SKAN)** | Apple's privacy-preserving iOS install attribution framework |
 | **Postback** | The ad-network → MMP attribution message |
 | **Incrementality test** | Causal measurement via randomized holdout |
@@ -373,11 +373,11 @@ INCREMENTALITY  ←──┼──→  MMM (Marketing Mix Modeling)
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
-1. Stitch Fix's last-click model said paid search drove 47% of acquisition. A geo-holdout said the true incremental contribution was 18%. If you were the CMO who *just* signed off on the search budget based on the 47% number, how do you communicate the discovery to the board — and what governance change ensures you don't repeat the mistake on a different channel next year?
+1. Stitch Fix's last-click model said paid search drove 47% of acquisition. A geo-holdout said the true incremental contribution was 18%. If you were the CMO who *just* signed off on the search budget based on the 47% number, how do you communicate the discovery to the board, and what governance change ensures you don't repeat the mistake on a different channel next year?
 2. Shapley-value attribution and Markov-chain attribution typically produce *similar* channel rankings but different point values. When the numbers disagree by 5–10%, is that a *bug* or a *feature*? How would you operationalize a process that uses both without paralysis?
-3. GA4 DDA needs 400 conversions per type / 30 days. A B2B SaaS team has 80. The vendor sales pitch is to buy a third-party MTA. What's the strategist's honest framing of *what the vendor can and cannot deliver* at that conversion volume — and the alternative path that may serve the team better?
+3. GA4 DDA needs 400 conversions per type / 30 days. A B2B SaaS team has 80. The vendor sales pitch is to buy a third-party MTA. What's the strategist's honest framing of *what the vendor can and cannot deliver* at that conversion volume, and the alternative path that may serve the team better?
 4. Apple's SKAdNetwork 4 / AdAttributionKit gives advertisers a *postback* with limited and delayed conversion-value information. Some advertisers run blind; others over-fit creative to the SKAN signal. What's a defensible mobile-measurement strategy in 2026 that doesn't make either mistake?
 5. The "measurement triangle" combines MTA + MMM + incrementality. In practice, most teams run only one. Pick a hypothetical company (DTC e-com, B2B SaaS, retail enterprise) and argue which two-of-three combo is the *minimum viable* triangle for them, and why dropping the third is acceptable for now.
 
@@ -388,13 +388,13 @@ INCREMENTALITY  ←──┼──→  MMM (Marketing Mix Modeling)
 You now know:
 
 - 🎯 Six attribution models + when each is appropriate.
-- 🧮 Three mathematical approaches to DDA — Shapley, Markov, ML/SHAP.
+- 🧮 Three mathematical approaches to DDA, Shapley, Markov, ML/SHAP.
 - 🤖 GA4's DDA implementation + its 400-conversion threshold.
 - 🐍 How to build a Markov-chain attribution model in Python from scratch.
 - 🏪 The 2026 MTA vendor landscape and what's actually *in the box* per vendor.
 - ⚖️ MTA's honest six limitations.
-- 🧪 Incrementality testing — geo holdout, PSA test, platform conversion-lift.
-- 🔄 The 2026 measurement triangle — MTA × MMM × incrementality.
+- 🧪 Incrementality testing, geo holdout, PSA test, platform conversion-lift.
+- 🔄 The 2026 measurement triangle, MTA × MMM × incrementality.
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
@@ -403,7 +403,7 @@ You now know:
 4. ➡️ Move to [Module 5: Marketing Mix Modeling](../Module-05-Marketing-Mix-Modeling/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 5](../Module-05-Marketing-Mix-Modeling/Reading.md) is the MMM half of the triangle — the only method that can attribute upper-funnel and offline channels; [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) covers Consent Mode v2 and CAPI, which determine how much signal survives to feed your MTA.
+> - Inside this course: [Module 5](../Module-05-Marketing-Mix-Modeling/Reading.md) is the MMM half of the triangle, the only method that can attribute upper-funnel and offline channels; [Module 9](../Module-09-Privacy-First-Measurement/Reading.md) covers Consent Mode v2 and CAPI, which determine how much signal survives to feed your MTA.
 > - Cross-course: [Course 18: AI Digital Marketing Capstone Portfolio](../../18-AI-Marketing-Capstone-Portfolio/README.md) asks you to defend an attribution methodology in writing for a portfolio scenario.
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (questions 16–21, 37–38) heavily tests attribution methods and Shapley/Markov math; the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) revisits the measurement triangle.
 
@@ -411,13 +411,13 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 **Hanssens, Parsons & Schultz — "Market Response Models" (Kluwer)** — the canonical MMM/MTA textbook.
-- 📖 **Shapley, L.S. (1953) — "A Value for n-Person Games"** — the foundational paper.
-- 📖 **Štrumbelj & Kononenko (2014) — "Explaining prediction models and individual predictions with feature contributions"** — the sampling-Shapley paper used in SHAP.
-- 📖 **Anderl et al. (2016) — "Mapping the customer journey: Lessons learned from graph-based online attribution modeling"** — IJRM.
-- 🔗 [Harvard Business School Case 9-521-002 — Stitch Fix Attribution](https://store.hbr.org/) (paid case but worth it).
-- 🔗 [Google's "Attribution Modeling" Skillshop course](https://skillshop.withgoogle.com/) — free.
-- 🔗 [Meta Marketing Science Whitepaper Library](https://www.facebook.com/business/m/marketing-science) — strong incrementality content.
-- 🔗 [Northbeam's "Performance Score" methodology](https://www.northbeam.io/methodology) — read the small print.
-- 🔗 [The Pareto/NBD vs BG/NBD comparison — Fader & Hardie](https://www.brucehardie.com/papers.html) — for CLV (Module 6 prep).
-- 🔗 [ChannelAttribution R package](https://cran.r-project.org/web/packages/ChannelAttribution/) — production-grade Markov MTA.
+- 📖 **Hanssens, Parsons & Schultz "Market Response Models" (Kluwer)** the canonical MMM/MTA textbook.
+- 📖 **Shapley, L.S. (1953) "A Value for n-Person Games"** the foundational paper.
+- 📖 **Štrumbelj & Kononenko (2014) "Explaining prediction models and individual predictions with feature contributions"** the sampling-Shapley paper used in SHAP.
+- 📖 **Anderl et al. (2016) "Mapping the customer journey: Lessons learned from graph-based online attribution modeling"** IJRM.
+- 🔗 [Harvard Business School Case 9-521-002, Stitch Fix Attribution](https://store.hbr.org/) (paid case but worth it).
+- 🔗 [Google's "Attribution Modeling" Skillshop course](https://skillshop.withgoogle.com/), free.
+- 🔗 [Meta Marketing Science Whitepaper Library](https://www.facebook.com/business/m/marketing-science), strong incrementality content.
+- 🔗 [Northbeam's "Performance Score" methodology](https://www.northbeam.io/methodology), read the small print.
+- 🔗 [The Pareto/NBD vs BG/NBD comparison Fader & Hardie](https://www.brucehardie.com/papers.html) for CLV (Module 6 prep).
+- 🔗 [ChannelAttribution R package](https://cran.r-project.org/web/packages/ChannelAttribution/), production-grade Markov MTA.

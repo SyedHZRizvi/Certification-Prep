@@ -18,7 +18,7 @@
 
 # 🎥 PMP Module 2 Videos: People Domain
 
-> **How to use:** Click any card to search YouTube. Watch in order. Pause and take notes. People is the biggest exam domain — give it weight.
+> **How to use:** Click any card to search YouTube. Watch in order. Pause and take notes. People is the biggest exam domain, give it weight.
 
 ## ⭐ Essential watching (~80 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PMP People Domain Mastery ⭐ THE video — watch twice</p>
+      <p class="vg-title">PMP People Domain Mastery ⭐ THE video, watch twice</p>
       <p class="vg-creator">Andrew Ramdayal</p>
       <span class="vg-duration">⏱ 25 min</span>
     </div>

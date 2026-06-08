@@ -187,7 +187,7 @@ D. `chmod 777 nginx`
 
 ### Q23. Two DCs are running on the same Hyper-V host. This is BEST described as: *(Analyze)*
 A. Best practice (DR-friendly)
-B. Anti-pattern — host failure takes the entire directory down; use anti-affinity to spread DCs across hosts
+B. Anti-pattern, host failure takes the entire directory down; use anti-affinity to spread DCs across hosts
 C. Required for FSMO role placement
 D. Required by AD DS
 
@@ -195,7 +195,7 @@ D. Required by AD DS
 
 ### Q24. DHCP option 66 + option 67 together support: *(Understand)*
 A. IPv6 prefix delegation
-B. PXE / network boot — TFTP server + boot file
+B. PXE / network boot, TFTP server + boot file
 C. DNSSEC signing
 D. Time synchronization
 
@@ -235,7 +235,7 @@ RDP = TCP 3389 (and UDP 3389 for newer low-latency modes).
 WinRM HTTPS = 5986. HTTP listener = 5985 (prefer HTTPS in production).
 
 ### Q5: **B. Authenticates the user BEFORE a session is established**
-NLA challenges credentials before consuming server resources or exposing the full RDP stack — significantly reducing pre-auth attack surface.
+NLA challenges credentials before consuming server resources or exposing the full RDP stack, significantly reducing pre-auth attack surface.
 
 ### Q6: **B. `Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools`**
 Standard cmdlet for adding Windows Server roles/features. Followed by `Install-ADDSForest` for first DC.
@@ -250,7 +250,7 @@ Owner rwx (7=4+2+1) + group r-x (5=4+1) + others --- (0) → 750.
 Configurable, but 5 minutes is the default. Above that, AD authentication fails with cryptic errors.
 
 ### Q10: **B. `usermod -aG wheel alice`**
-The `-a` (append) is critical — without it `-G` *replaces* group membership, removing all other supplementary groups.
+The `-a` (append) is critical, without it `-G` *replaces* group membership, removing all other supplementary groups.
 
 ### Q11: **A. 22**
 SSH = TCP 22.
@@ -265,7 +265,7 @@ Server Core has no GUI shell, fewer components, fewer monthly patches, less RAM/
 Option 6 = DNS servers list. Option 1 = subnet mask. Option 3 = default gateway. Option 51 = lease time.
 
 ### Q15: **A. AD password expiration / lockout for that specific user**
-Other users work, so DC and DNS are fine. Most likely cause is single-user state — expired password, lockout, disabled account.
+Other users work, so DC and DNS are fine. Most likely cause is single-user state, expired password, lockout, disabled account.
 
 ### Q16: **C. AD FS**
 Active Directory Federation Services is the SAML/WS-Fed identity-federation role.
@@ -288,10 +288,10 @@ Admin-defined unit files live here; they override `/lib/systemd/system/` or `/us
 ### Q22: **B. `systemctl restart nginx` (or `reload` if supported)**
 A package upgrade replaces files on disk; you must restart the daemon to pick them up. Rebooting the whole server is overkill.
 
-### Q23: **B. Anti-pattern — host failure takes the entire directory down; use anti-affinity to spread DCs across hosts**
+### Q23: **B. Anti-pattern, host failure takes the entire directory down; use anti-affinity to spread DCs across hosts**
 DCs should be on different hosts (and ideally different sites/clusters) so a hypervisor failure doesn't wipe the directory. Anti-affinity rules in vSphere/Hyper-V enforce this.
 
-### Q24: **B. PXE / network boot — TFTP server + boot file**
+### Q24: **B. PXE / network boot, TFTP server + boot file**
 Option 66 = TFTP server name/IP. Option 67 = boot file name. Together they bootstrap PXE clients.
 
 ### Q25: **B. `apt update && apt upgrade`**
@@ -318,8 +318,8 @@ Tiered administration prevents domain-admin credential exposure on lower-tier ho
 - DHCP options: 1, 3, 6, 15, 51, 66, 67
 - AD: forest/domain/OU/GPO/GC/FSMO
 - chmod octals: 644, 750, 755, 777
-- NLA / RD Gateway / WinRM HTTPS — secure remote admin combos
+- NLA / RD Gateway / WinRM HTTPS, secure remote admin combos
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Storage: RAID, SAN, NAS](../Module-03-Storage/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Storage: RAID, SAN, NAS](../Module-03-Storage/Reading.md)

@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -268,7 +268,7 @@
 
 # 🃏 CompTIA Linux+ Flashcards (Master Set)
 
-> **How to use:** Each card has a Q on one line and A on the next. Copy into Anki, Quizlet, or paper flashcards. Drill daily — every command, port, and config path should be reflexive before exam day.
+> **How to use:** Each card has a Q on one line and A on the next. Copy into Anki, Quizlet, or paper flashcards. Drill daily, every command, port, and config path should be reflexive before exam day.
 
 ---
 
@@ -281,7 +281,7 @@
 **A:** A minimal in-memory root filesystem with kernel modules (storage drivers, LVM, LUKS, network) needed to mount the real root. Without it, the kernel cannot read a root FS that lives on encrypted/LVM/RAID storage.
 
 **Q:** Where does GRUB2 keep its main config on RHEL/CentOS and Debian/Ubuntu?
-**A:** RHEL: `/boot/grub2/grub.cfg`. Debian/Ubuntu: `/boot/grub/grub.cfg`. Both are GENERATED — edit `/etc/default/grub` then run `grub2-mkconfig -o ...` (RHEL) or `update-grub` (Debian).
+**A:** RHEL: `/boot/grub2/grub.cfg`. Debian/Ubuntu: `/boot/grub/grub.cfg`. Both are GENERATED, edit `/etc/default/grub` then run `grub2-mkconfig -o ...` (RHEL) or `update-grub` (Debian).
 
 **Q:** What command shows the currently active systemd target?
 **A:** `systemctl get-default` (shows the persistent default) or `systemctl list-units --type=target --state=active` (shows what's running now).
@@ -290,7 +290,7 @@
 **A:** `multi-user.target` = runlevel 3 (text/CLI multi-user). `graphical.target` = runlevel 5 (multi-user with GUI). `rescue.target` ≈ single-user/runlevel 1.
 
 **Q:** What does `systemctl enable nginx` actually do?
-**A:** Creates a symlink from `/etc/systemd/system/<target>.wants/nginx.service` to the unit file, so the service starts at boot. Does NOT start it now — use `systemctl enable --now nginx` for both.
+**A:** Creates a symlink from `/etc/systemd/system/<target>.wants/nginx.service` to the unit file, so the service starts at boot. Does NOT start it now, use `systemctl enable --now nginx` for both.
 
 **Q:** What's the difference between `systemctl reload`, `restart`, and `daemon-reload`?
 **A:** `reload` = tell the running service to re-read its config (if it supports SIGHUP). `restart` = stop then start the service. `daemon-reload` = tell systemd itself to re-read unit files after you edit them.
@@ -318,7 +318,7 @@
 **A:** A data structure storing file metadata: permissions, owner, group, size, timestamps, and pointers to data blocks. The filename lives in the directory entry; the inode is the file. `ls -i` shows inode numbers.
 
 **Q:** Compare ext4 vs XFS vs Btrfs vs ZFS in one line each.
-**A:** ext4 = Linux default for years, journaled, mature. XFS = high-performance, RHEL 7+ default, can't shrink. Btrfs = copy-on-write, snapshots, subvolumes, RAID. ZFS = enterprise CoW + RAID + dedup + checksums (CDDL license — not in mainline kernel).
+**A:** ext4 = Linux default for years, journaled, mature. XFS = high-performance, RHEL 7+ default, can't shrink. Btrfs = copy-on-write, snapshots, subvolumes, RAID. ZFS = enterprise CoW + RAID + dedup + checksums (CDDL license, not in mainline kernel).
 
 **Q:** What does `chmod 755 file` do in symbolic terms?
 **A:** Owner: read+write+execute (7=rwx). Group: read+execute (5=r-x). Others: read+execute (5=r-x). Same as `chmod u=rwx,g=rx,o=rx file`.
@@ -327,7 +327,7 @@
 **A:** SUID (4---) = run executable AS the file's owner (classic: /usr/bin/passwd runs as root). SGID (2---) on file = run as group; on directory = new files inherit group. Sticky bit (1---) on dir = only owner can delete files (used on /tmp).
 
 **Q:** Which numeric mode sets the sticky bit and full permissions on a directory?
-**A:** `chmod 1777 /tmp` — sticky bit (1) + rwx for all (777). Symbolic: `chmod +t,a=rwx`.
+**A:** `chmod 1777 /tmp`, sticky bit (1) + rwx for all (777). Symbolic: `chmod +t,a=rwx`.
 
 **Q:** What's the default umask on most Linux systems and what does it produce?
 **A:** Typically `022` (root) or `002` (users). 022 masks out group+other write, so new files get 644 (rw-r--r--) and new dirs get 755 (rwxr-xr-x). Files never get execute by default.
@@ -336,7 +336,7 @@
 **A:** `setfacl -m u:alice:rw file`. View with `getfacl file`. The `+` after permissions in `ls -l` indicates an ACL is present.
 
 **Q:** Where is the persistent mount table that's read at boot?
-**A:** `/etc/fstab` — six fields per line: device, mountpoint, fstype, options, dump, pass. Bad fstab can prevent boot; always test with `mount -a` before reboot.
+**A:** `/etc/fstab`, six fields per line: device, mountpoint, fstype, options, dump, pass. Bad fstab can prevent boot; always test with `mount -a` before reboot.
 
 ---
 
@@ -377,7 +377,7 @@
 ## 💻 SECTION 4: BASH SCRIPTING
 
 **Q:** What's the very first line of any bash script and what's it called?
-**A:** `#!/bin/bash` — the shebang (or hashbang). Tells the kernel which interpreter to exec for the script. Without it, the script runs in whatever shell launched it.
+**A:** `#!/bin/bash`, the shebang (or hashbang). Tells the kernel which interpreter to exec for the script. Without it, the script runs in whatever shell launched it.
 
 **Q:** Difference between `$@` and `$*`?
 **A:** `"$@"` expands each positional argument as a separate quoted word (the safe one). `"$*"` joins all args into one string separated by IFS first character. Use `"$@"` 99% of the time.
@@ -404,7 +404,7 @@
 **A:** Add to crontab (`crontab -e`): `0 3 * * * /path/to/command`. Five fields: minute, hour, day-of-month, month, day-of-week. Edit system-wide jobs in `/etc/crontab` or files in `/etc/cron.d/`.
 
 **Q:** Modern systemd-native alternative to cron?
-**A:** systemd timers — a `.timer` unit triggers a `.service` unit. `systemctl list-timers` shows all. Advantages: dependency-aware, journal-integrated, can run missed jobs at boot (`Persistent=true`).
+**A:** systemd timers, a `.timer` unit triggers a `.service` unit. `systemctl list-timers` shows all. Advantages: dependency-aware, journal-integrated, can run missed jobs at boot (`Persistent=true`).
 
 ---
 
@@ -432,10 +432,10 @@
 **A:** Pluggable Authentication Modules. Lets services (sshd, login, sudo, su) plug in auth/account/session/password modules without recompiling. Stack defined per service in `/etc/pam.d/`.
 
 **Q:** Command to lock a user account without deleting it?
-**A:** `passwd -l alice` (locks by prepending `!` to the hash — login disabled). `usermod -L alice` does the same. To expire the account entirely: `usermod -e 1 alice` or `chage -E 0 alice`.
+**A:** `passwd -l alice` (locks by prepending `!` to the hash, login disabled). `usermod -L alice` does the same. To expire the account entirely: `usermod -e 1 alice` or `chage -E 0 alice`.
 
 **Q:** Where do you set password aging policy globally?
-**A:** `/etc/login.defs` — sets `PASS_MAX_DAYS`, `PASS_MIN_DAYS`, `PASS_WARN_AGE` for new users. Existing users: use `chage` (e.g. `chage -M 60 -W 7 alice` for 60-day max, 7-day warning).
+**A:** `/etc/login.defs`, sets `PASS_MAX_DAYS`, `PASS_MIN_DAYS`, `PASS_WARN_AGE` for new users. Existing users: use `chage` (e.g. `chage -M 60 -W 7 alice` for 60-day max, 7-day warning).
 
 **Q:** Group membership: primary vs secondary, and which file?
 **A:** Primary group = the GID in /etc/passwd (set at file creation). Secondary groups = listed in /etc/group as comma-separated members. `id alice` shows both. `usermod -aG group alice` adds to secondary (the `-a` is critical or you wipe other groups).
@@ -479,7 +479,7 @@
 ## ⚙️ SECTION 7: KERNEL, DEVICES & LVM
 
 **Q:** What does `uname -r` show?
-**A:** The kernel release (version) currently running — e.g. `5.15.0-89-generic`. `uname -a` shows everything (kernel, hostname, version, machine). `hostnamectl` is the systemd alternative.
+**A:** The kernel release (version) currently running, e.g. `5.15.0-89-generic`. `uname -a` shows everything (kernel, hostname, version, machine). `hostnamectl` is the systemd alternative.
 
 **Q:** List currently loaded kernel modules and load one?
 **A:** List: `lsmod`. Load: `modprobe <name>` (resolves deps and config). Insert without deps: `insmod <file>`. Remove: `modprobe -r` or `rmmod`. Info: `modinfo <name>`.
@@ -488,7 +488,7 @@
 **A:** `/etc/modprobe.d/*.conf` (admin overrides), `/lib/modprobe.d/*.conf` (distro), `/etc/modules-load.d/*.conf` (auto-load at boot). To blacklist: add `blacklist <module>` in a .conf.
 
 **Q:** What's `dmesg` and where does its output also go?
-**A:** Kernel ring buffer messages — hardware, drivers, kernel events. `dmesg -T` shows human timestamps. On systemd: also visible via `journalctl -k` and persisted (if journal is persistent) under `/var/log/journal/`.
+**A:** Kernel ring buffer messages, hardware, drivers, kernel events. `dmesg -T` shows human timestamps. On systemd: also visible via `journalctl -k` and persisted (if journal is persistent) under `/var/log/journal/`.
 
 **Q:** Difference between `lspci`, `lsusb`, `lsblk`?
 **A:** `lspci` = PCI devices (NICs, GPUs, disk controllers). `lsusb` = USB devices. `lsblk` = block devices and mount points (disks, partitions, LVM LVs, loop devices). `lshw` is a comprehensive superset.
@@ -497,7 +497,7 @@
 **A:** `/etc/udev/rules.d/` (admin) and `/lib/udev/rules.d/` (distro). They name and permission devices when they appear (e.g., create `/dev/cdrom` symlink, set group rights on USB serial dongles, run a script).
 
 **Q:** Order of LVM hierarchy from bottom up?
-**A:** Physical Volume (PV — a disk/partition) → Volume Group (VG — pool of PVs) → Logical Volume (LV — carved from the VG, what you actually mount). Commands: `pvcreate`, `vgcreate`, `lvcreate`. Display: `pvs`, `vgs`, `lvs`.
+**A:** Physical Volume (PV a disk/partition) → Volume Group (VG pool of PVs) → Logical Volume (LV, carved from the VG, what you actually mount). Commands: `pvcreate`, `vgcreate`, `lvcreate`. Display: `pvs`, `vgs`, `lvs`.
 
 **Q:** Extend a logical volume by 5G and grow the filesystem on top?
 **A:** `lvextend -L +5G /dev/vg_data/lv_app && resize2fs /dev/vg_data/lv_app` (ext4). Single-step with auto-resize: `lvextend -r -L +5G ...`. For XFS: `xfs_growfs /mountpoint`.
@@ -522,16 +522,16 @@
 **A:** SELinux = label-based MAC, NSA-developed, RHEL/Fedora default, complex but flexible. AppArmor = path-based MAC, Ubuntu/SUSE default, simpler profiles in `/etc/apparmor.d/`, easier to learn.
 
 **Q:** What does LUKS provide and how do you create an encrypted partition?
-**A:** Linux Unified Key Setup — full-disk-style block-level encryption with passphrases/keyfiles. `cryptsetup luksFormat /dev/sdX1`, then `cryptsetup luksOpen /dev/sdX1 mydata` to map at /dev/mapper/mydata, then mkfs and mount.
+**A:** Linux Unified Key Setup, full-disk-style block-level encryption with passphrases/keyfiles. `cryptsetup luksFormat /dev/sdX1`, then `cryptsetup luksOpen /dev/sdX1 mydata` to map at /dev/mapper/mydata, then mkfs and mount.
 
 **Q:** GPG: encrypt a file for a recipient and decrypt it?
 **A:** Encrypt: `gpg --encrypt --recipient alice@corp.com file.txt` → produces file.txt.gpg. Decrypt: `gpg --decrypt file.txt.gpg > file.txt`. Sign-and-encrypt: `gpg --sign --encrypt -r alice@corp.com file.txt`.
 
 **Q:** What does fail2ban do?
-**A:** Reads service logs (sshd, nginx, postfix), matches failed-auth regexes, and bans the source IP via iptables/firewalld for a configurable time. Jails defined in `/etc/fail2ban/jail.d/`. Doesn't replace strong auth — adds friction.
+**A:** Reads service logs (sshd, nginx, postfix), matches failed-auth regexes, and bans the source IP via iptables/firewalld for a configurable time. Jails defined in `/etc/fail2ban/jail.d/`. Doesn't replace strong auth, adds friction.
 
 **Q:** What is auditd and where do you find its logs?
-**A:** Linux Audit framework daemon — kernel-level event recording for syscalls, file access, login. Rules in `/etc/audit/rules.d/*.rules`. Logs: `/var/log/audit/audit.log`. Query: `ausearch -k <key>` or `aureport`.
+**A:** Linux Audit framework daemon, kernel-level event recording for syscalls, file access, login. Rules in `/etc/audit/rules.d/*.rules`. Logs: `/var/log/audit/audit.log`. Query: `ausearch -k <key>` or `aureport`.
 
 **Q:** How do you persistently change a kernel runtime parameter?
 **A:** Edit a file under `/etc/sysctl.d/` (e.g. `99-custom.conf`) with `net.ipv4.ip_forward = 1`, then `sysctl --system` or reboot. Runtime-only: `sysctl -w net.ipv4.ip_forward=1` or `echo 1 > /proc/sys/net/ipv4/ip_forward`.
@@ -540,7 +540,7 @@
 **A:** `PermitRootLogin no`, `PasswordAuthentication no` (force key-based), and `AllowUsers <list>` or `AllowGroups <list>`. Bonus: `MaxAuthTries 3`, `ClientAliveInterval 300`, `Protocol 2`.
 
 **Q:** Difference between umask, ACLs, and SELinux for file access control?
-**A:** umask sets default DAC permissions (the rwx triad). ACLs extend DAC with per-user/per-group entries. SELinux is MAC — adds an orthogonal label-based check the kernel evaluates BEFORE DAC denials matter. All three can apply to one file.
+**A:** umask sets default DAC permissions (the rwx triad). ACLs extend DAC with per-user/per-group entries. SELinux is MAC, adds an orthogonal label-based check the kernel evaluates BEFORE DAC denials matter. All three can apply to one file.
 
 ---
 
@@ -552,7 +552,7 @@
 **Q:** A user gets "permission denied" on a file they own. What's the most likely cause beyond mode?
 **A:** SELinux (`ls -Z` shows label; `ausearch -m AVC` shows denials) or ACL deny (`getfacl`). Also check: ancestor directory missing `x` (traversal), filesystem mounted read-only, immutable bit (`lsattr`).
 
-**Q:** Disk seems "full" but `df` shows free space — what's likely?
+**Q:** Disk seems "full" but `df` shows free space, what's likely?
 **A:** Inode exhaustion (`df -i` shows inodes used). Common with millions of tiny files. Or: a process is holding a deleted file open (use `lsof | grep deleted`). Free is reclaimed when the process closes the FD or you restart it.
 
 **Q:** Which two commands quickly identify CPU- and memory-hungry processes?
@@ -566,7 +566,7 @@
 ## 📚 STUDY TIPS
 
 1. Run every command in this deck on a real Linux VM (a free $5 droplet, a Pi, WSL, or a VirtualBox VM). Reading alone doesn't stick.
-2. When you "Try again" a card, do the command live — type it, see the output, then mark "Got it."
+2. When you "Try again" a card, do the command live, type it, see the output, then mark "Got it."
 3. Shuffle daily. Order memorization is fake mastery.
 4. After two full passes, switch to "Section filter" mode and drill weak sections.
 5. The last 7 days before the exam: deck + Cheat-Sheets only. No new content.

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AI Digital Marketing Foundations (Modules 1–5)
+# 🧪 Practice Exam 1, AI Digital Marketing Foundations (Modules 1–5)
 
 > **Conditions:** Set a 45-minute timer. 30 questions. Treat it like the real thing.
 > **Pass mark:** 23/30 (75%)
@@ -141,7 +141,7 @@ C. AI embedded in the marketer's daily workflow and grounded in proprietary data
 D. Reinforcement learning alone
 
 ### 23. TikTok's primary ranking signal is:
-A. Content-quality signals (completion, rewatch, hook, niche affiliation) — NOT follower count
+A. Content-quality signals (completion, rewatch, hook, niche affiliation), NOT follower count
 B. Hashtag count
 C. Follower count
 D. Account age
@@ -210,11 +210,11 @@ D. Owned media (your blog, list, app) is what you fully control
 ## 📖 Detailed answer rationales
 
 ### Q1. Answer: D
-**Why D is correct.** Owned media (Module 1, POESM) is anything the brand fully controls — your blog sits on a domain you own, runs on a CMS you choose, and the content stays unless you remove it.
+**Why D is correct.** Owned media (Module 1, POESM) is anything the brand fully controls, your blog sits on a domain you own, runs on a CMS you choose, and the content stays unless you remove it.
 **Why the others are wrong.**
 - A: A sponsored Instagram post is *paid* media (you're paying for the placement, not the platform).
-- B: A Google search ad is *paid*, not owned — Google decides if it shows.
-- C: A backlink from a news outlet is *earned* — you influenced but didn't pay.
+- B: A Google search ad is *paid*, not owned, Google decides if it shows.
+- C: A backlink from a news outlet is *earned*, you influenced but didn't pay.
 **Exam-takeaway.** When in doubt: "Do I control the publish button without paying?" → owned.
 
 ### Q2. Answer: D
@@ -226,17 +226,17 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** ROAS uses revenue; ROI uses profit. McKinsey's 2024 *State of Marketing* called confusing these the #1 attribution error.
 
 ### Q3. Answer: C
-**Why C is correct.** The four 2026 walled gardens are Google, Meta, Amazon, and TikTok — collectively ~75% of global digital ad spend per WARC/eMarketer.
+**Why C is correct.** The four 2026 walled gardens are Google, Meta, Amazon, and TikTok, collectively ~75% of global digital ad spend per WARC/eMarketer.
 **Why the others are wrong.**
-- A: Apple, Microsoft, Snap — Microsoft is influential but smaller than the four; Apple doesn't run a comparable ad-platform; Snap is much smaller.
-- B: LinkedIn, Pinterest, X — sizeable but not the top-four.
+- A: Apple, Microsoft, Snap, Microsoft is influential but smaller than the four; Apple doesn't run a comparable ad-platform; Snap is much smaller.
+- B: LinkedIn, Pinterest, X, sizeable but not the top-four.
 - D: Adobe sells martech, not consumer ad inventory at this scale.
 **Exam-takeaway.** Memorize the four: Google + Meta + Amazon + TikTok. Microsoft Advertising (Bing + LinkedIn) is the meaningful "fifth."
 
 ### Q4. Answer: A
-**Why A is correct.** AI Overviews summarize directly above the organic blue links — they preferentially hurt generic "what is X" TOFU content where the answer can be condensed in 3 sentences without the click.
+**Why A is correct.** AI Overviews summarize directly above the organic blue links, they preferentially hurt generic "what is X" TOFU content where the answer can be condensed in 3 sentences without the click.
 **Why the others are wrong.**
-- B: Branded BOFU pages serve users who already know your brand and are searching for you specifically — AI Overviews rarely intercept these.
+- B: Branded BOFU pages serve users who already know your brand and are searching for you specifically, AI Overviews rarely intercept these.
 - C: Product pages with schema are actually *favored* by AI Overviews as citation sources.
 - D: Customer review pages provide unique social proof AI Overviews can't synthesize from training data.
 **Exam-takeaway.** "Zero-click search" eats TOFU SEO. BOFU is safer.
@@ -250,7 +250,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** AI > ML > Deep Learning > GenAI > LLM. Know the nesting.
 
 ### Q6. Answer: A
-**Why A is correct.** "Attention Is All You Need" (Vaswani et al., 2017, Google) introduced the Transformer architecture, which powers GPT, Claude, Gemini, Llama, Mistral — every major modern LLM.
+**Why A is correct.** "Attention Is All You Need" (Vaswani et al., 2017, Google) introduced the Transformer architecture, which powers GPT, Claude, Gemini, Llama, Mistral, every major modern LLM.
 **Why the others are wrong.**
 - B: CNNs (Convolutional Neural Networks) dominate image classification, not LLMs.
 - C: RNNs (Recurrent Neural Networks) preceded Transformers and have been largely replaced for sequence tasks.
@@ -260,7 +260,7 @@ D. Owned media (your blog, list, app) is what you fully control
 ### Q7. Answer: D
 **Why D is correct.** 1 token ≈ 4 characters of English ≈ ¾ of a word. OpenAI's tokenizer documentation makes this explicit.
 **Why the others are wrong.**
-- A: 1 character is too granular — most tokens span multiple characters.
+- A: 1 character is too granular, most tokens span multiple characters.
 - B: 1 sentence is far too coarse.
 - C: 1 word is close but slightly off; common short words are 1 token, but "marketers" is 2 ("marketer" + "s").
 **Exam-takeaway.** When budgeting context windows or API cost, treat 1,000 words ≈ 1,300 tokens.
@@ -268,13 +268,13 @@ D. Owned media (your blog, list, app) is what you fully control
 ### Q8. Answer: B
 **Why B is correct.** RAG = Retrieval-Augmented Generation. The system retrieves relevant docs from a vector database, then feeds them into the LLM along with the user's question (Module 2).
 **Why the others are wrong.**
-- A: "Random Access Generation" — not a real term.
-- C: "Reasoning-Aware Grounding" — sounds plausible but isn't the standard expansion.
-- D: "Reduced Attention Generator" — invented.
+- A: "Random Access Generation", not a real term.
+- C: "Reasoning-Aware Grounding", sounds plausible but isn't the standard expansion.
+- D: "Reduced Attention Generator", invented.
 **Exam-takeaway.** RAG is the cheapest, fastest way to ground an LLM in your own docs.
 
 ### Q9. Answer: B
-**Why B is correct.** RAG retrieves relevant passages at query time — no model retraining required. Days of setup, not weeks.
+**Why B is correct.** RAG retrieves relevant passages at query time, no model retraining required. Days of setup, not weeks.
 **Why the others are wrong.**
 - A: Training a foundation model from scratch costs millions and takes months.
 - C: Fine-tuning per doc is impractical and overkill.
@@ -284,9 +284,9 @@ D. Owned media (your blog, list, app) is what you fully control
 ### Q10. Answer: B
 **Why B is correct.** Google added the second "E" (Experience) to E-A-T in December 2022, making it E-E-A-T (Module 3).
 **Why the others are wrong.**
-- A: December 2020 — too early.
-- C: December 2021 — close, but the change was 2022.
-- D: December 2023 — too late.
+- A: December 2020, too early.
+- C: December 2021, close, but the change was 2022.
+- D: December 2023, too late.
 **Exam-takeaway.** E-E-A-T = Experience, Expertise, Authoritativeness, Trust. The second E was added December 2022.
 
 ### Q11. Answer: B
@@ -300,13 +300,13 @@ D. Owned media (your blog, list, app) is what you fully control
 ### Q12. Answer: A
 **Why A is correct.** LCP "Good" threshold is ≤ 2.5 seconds per Google's Core Web Vitals documentation.
 **Why the others are wrong.**
-- B: 1.0s is too aggressive — even fast sites rarely hit this.
+- B: 1.0s is too aggressive, even fast sites rarely hit this.
 - C: 4.0s is the "Needs Improvement" upper bound, not Good.
 - D: 6.0s is "Poor."
 **Exam-takeaway.** LCP ≤ 2.5s = Good; ≤ 4.0s = Needs Improvement; > 4.0s = Poor.
 
 ### Q13. Answer: D
-**Why D is correct.** YMYL = Your Money or Your Life — Google's term for content in health, finance, legal, and safety, held to higher E-E-A-T standards.
+**Why D is correct.** YMYL = Your Money or Your Life, Google's term for content in health, finance, legal, and safety, held to higher E-E-A-T standards.
 **Why the others are wrong.**
 - A, B, C: Invented expansions that don't appear in Google's Search Quality Rater Guidelines.
 **Exam-takeaway.** YMYL = health/finance/legal/safety. Higher trust bar, real money fines for misinformation.
@@ -322,15 +322,15 @@ D. Owned media (your blog, list, app) is what you fully control
 ### Q15. Answer: D
 **Why D is correct.** Bhattacharya et al. (Princeton/Harvard/Allen Institute, 2024) found citations + FAQ + statistics + expert quotes are the highest-impact GEO tactics.
 **Why the others are wrong.**
-- A: Keyword stuffing — penalized since 2013.
-- B: Removing internal links — actively hurts crawlability.
-- C: Hiding text in CSS — black-hat tactic, manual penalty risk.
+- A: Keyword stuffing, penalized since 2013.
+- B: Removing internal links, actively hurts crawlability.
+- C: Hiding text in CSS, black-hat tactic, manual penalty risk.
 **Exam-takeaway.** GEO = citation-friendly content. Cite well, get cited.
 
 ### Q16. Answer: C
 **Why C is correct.** HubSpot invented and popularized the term "pillar / cluster" in their 2017 *State of Marketing* and inbound methodology.
 **Why the others are wrong.**
-- A: Google didn't coin or push the term — it's their preferred topology, but HubSpot named it.
+- A: Google didn't coin or push the term, it's their preferred topology, but HubSpot named it.
 - B, D: Ahrefs and SEMrush document it but didn't originate the concept.
 **Exam-takeaway.** Pillar/cluster = HubSpot. Brian Halligan + Dharmesh Shah.
 
@@ -340,7 +340,7 @@ D. Owned media (your blog, list, app) is what you fully control
 - A: 5% understates the finding.
 - B: 50% overstates and is closer to senior-expert hype.
 - D: 200% is hallucinated marketing-blog territory.
-**Exam-takeaway.** 14% average / 35% novices — Brynjolfsson NBER 2023. Memorize this.
+**Exam-takeaway.** 14% average / 35% novices, Brynjolfsson NBER 2023. Memorize this.
 
 ### Q18. Answer: B
 **Why B is correct.** Hub-and-spoke: one long-form "hub" (podcast, video, webinar) is repurposed into many derivative "spoke" assets across channels.
@@ -359,7 +359,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** Firefly = clean licensing. Midjourney and SD have had lawsuits over training data.
 
 ### Q20. Answer: C
-**Why C is correct.** Synthesia and HeyGen specialize in AI avatar talking-head video — the canonical use case for corporate training, multilingual content, and personalized sales videos.
+**Why C is correct.** Synthesia and HeyGen specialize in AI avatar talking-head video, the canonical use case for corporate training, multilingual content, and personalized sales videos.
 **Why the others are wrong.**
 - A: Text-to-image is Midjourney, DALL-E, Firefly.
 - B: Real-time translation is HeyGen-adjacent but not the headline use.
@@ -367,7 +367,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** Synthesia/HeyGen = AI talking-head video.
 
 ### Q21. Answer: A
-**Why A is correct.** BuzzFeed's 2023 AI-content rollout produced multiple AI-generated travel guides with obvious errors and bland prose — the canonical "AI without sufficient editorial oversight" story (Module 4).
+**Why A is correct.** BuzzFeed's 2023 AI-content rollout produced multiple AI-generated travel guides with obvious errors and bland prose, the canonical "AI without sufficient editorial oversight" story (Module 4).
 **Why the others are wrong.**
 - B: Far from "gold standard."
 - C: BuzzFeed's AI content was *not* successful programmatic SEO.
@@ -375,7 +375,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** BuzzFeed = AI editorial cautionary tale. Mailchimp = the contrasting success.
 
 ### Q22. Answer: C
-**Why C is correct.** Mailchimp's AI subject-line generator is embedded in the daily workflow (inside the Campaign Builder) and trained on billions of past Mailchimp sends — proprietary outcome data.
+**Why C is correct.** Mailchimp's AI subject-line generator is embedded in the daily workflow (inside the Campaign Builder) and trained on billions of past Mailchimp sends, proprietary outcome data.
 **Why the others are wrong.**
 - A: It's not RAG over public web.
 - B: Not foundation-model training (that's a labs-scale effort).
@@ -383,7 +383,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** Mailchimp's example = AI in-workflow + proprietary data. That's the moat.
 
 ### Q23. Answer: A
-**Why A is correct.** TikTok's algorithm weights completion rate, rewatch rate, hook strength (first 3s), and niche affiliation — *content quality signals*, not follower count.
+**Why A is correct.** TikTok's algorithm weights completion rate, rewatch rate, hook strength (first 3s), and niche affiliation, *content quality signals*, not follower count.
 **Why the others are wrong.**
 - B: Hashtag count is not a primary signal.
 - C: New accounts can break out from day one if content scores well.
@@ -399,7 +399,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** LinkedIn = link suppression. Workaround = link in first comment.
 
 ### Q25. Answer: A
-**Why A is correct.** Micro-influencers (10K–100K) consistently deliver best ROI per HypeAuditor, IZEA, and Influencer Marketing Hub benchmark reports — high enough reach to matter, high enough engagement to convert.
+**Why A is correct.** Micro-influencers (10K–100K) consistently deliver best ROI per HypeAuditor, IZEA, and Influencer Marketing Hub benchmark reports, high enough reach to matter, high enough engagement to convert.
 **Why the others are wrong.**
 - B: Nano-influencers have highest engagement % but too little reach for most brands.
 - C: Macro-influencers cost more and convert less efficiently.
@@ -407,7 +407,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** Micro = sweet spot for most brands.
 
 ### Q26. Answer: C
-**Why C is correct.** Lil Miquela (created by Brud, then Dapper Labs) is the canonical example of a virtual / AI influencer — millions of followers, deals with Calvin Klein, Prada, BMW.
+**Why C is correct.** Lil Miquela (created by Brud, then Dapper Labs) is the canonical example of a virtual / AI influencer, millions of followers, deals with Calvin Klein, Prada, BMW.
 **Why the others are wrong.**
 - A: She's not a traditional human celebrity.
 - B: She's not an algorithm.
@@ -415,7 +415,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** Lil Miquela = virtual influencer reference case.
 
 ### Q27. Answer: A
-**Why A is correct.** Pinterest's stated mission is to be a discovery engine — clicks to your blog or shop are *desirable* on Pinterest, unlike most social platforms that suppress outbound links.
+**Why A is correct.** Pinterest's stated mission is to be a discovery engine, clicks to your blog or shop are *desirable* on Pinterest, unlike most social platforms that suppress outbound links.
 **Why the others are wrong.**
 - B: TikTok wants you in-app.
 - C: Instagram wants you in-app (only verified accounts can add links in stories).
@@ -423,7 +423,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** Pinterest = the social platform that *wants* outbound clicks. Strong commercial-intent platform.
 
 ### Q28. Answer: B
-**Why B is correct.** Wendy's mid-2010s sarcastic, brand-voiced Twitter responses are the canonical "brand voice as competitive advantage" case study — Quelch's 2018 HBR case study.
+**Why B is correct.** Wendy's mid-2010s sarcastic, brand-voiced Twitter responses are the canonical "brand voice as competitive advantage" case study, Quelch's 2018 HBR case study.
 **Why the others are wrong.**
 - A: Wendy's was social, not SEO.
 - C: Wendy's didn't run subject-line AI tests publicly.
@@ -439,7 +439,7 @@ D. Owned media (your blog, list, app) is what you fully control
 **Exam-takeaway.** PMax = Google. Advantage+ = Meta. Cross-naming is the #1 paid-ads exam trap.
 
 ### Q30. Answer: D
-**Why D is correct.** POESM = Paid / Owned / Earned / Shared. Owned media (your blog, your list, your app) is what you *fully control* — no algorithm intermediary.
+**Why D is correct.** POESM = Paid / Owned / Earned / Shared. Owned media (your blog, your list, your app) is what you *fully control*, no algorithm intermediary.
 **Why the others are wrong.**
 - A: "Paid means free" is nonsense.
 - B: Shared media exists (Reddit, Discord, Slack communities).

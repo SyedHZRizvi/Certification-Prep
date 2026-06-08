@@ -1,6 +1,6 @@
 # Module 6: Programmatic + Retargeting 🎯
 
-> **Why this module matters:** Once you've launched on Google + Meta + TikTok + LinkedIn, the next frontier is programmatic — reaching users across the open web with precision. And retargeting is where 60% of your conversions actually come from. This module connects both.
+> **Why this module matters:** Once you've launched on Google + Meta + TikTok + LinkedIn, the next frontier is programmatic, reaching users across the open web with precision. And retargeting is where 60% of your conversions actually come from. This module connects both.
 
 ---
 
@@ -20,14 +20,14 @@ Their growth team built what became the textbook DTC retargeting playbook (publi
 3. **CDP-fed audiences**: Their customer data platform (Segment → Klaviyo → Meta + AdRoll) pushed real-time updates so a buyer was excluded from retargeting within minutes
 4. **Result**: Recovered $4.2M in 2018 from cart-abandon retargeting alone. ROI of the program: 18:1.
 
-The lesson isn't that retargeting works — everyone knows that. The lesson is **discipline** — sequencing creative across days, capping frequency, excluding converted users, and connecting your CDP so the audiences update in real time. Most marketers get the audience right and the sequencing/capping wrong, then wonder why their CAC drifts.
+The lesson isn't that retargeting works everyone knows that. The lesson is **discipline** sequencing creative across days, capping frequency, excluding converted users, and connecting your CDP so the audiences update in real time. Most marketers get the audience right and the sequencing/capping wrong, then wonder why their CAC drifts.
 
 This module teaches you to build it right.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Funnel-stage targeting and audience-signal vs hard-targeting — covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md)
-> - Meta Custom Audiences and attribution windows (post-iOS 14.5) — covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - LinkedIn Matched Audiences (the B2B equivalent) — covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
+> - Funnel-stage targeting and audience-signal vs hard-targeting, covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md)
+> - Meta Custom Audiences and attribution windows (post-iOS 14.5), covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
+> - LinkedIn Matched Audiences (the B2B equivalent), covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -65,7 +65,7 @@ Example:
 
 **DV360**: Google's enterprise programmatic. Minimum spend typically ~$2,000/mo. Integrates with Google Ads, GA4, Campaign Manager 360. Use when you're already on the Google Marketing Platform.
 
-**The Trade Desk**: The independent giant. Strong on Connected TV (CTV) — programmatic Hulu, Disney+, Roku inventory. Used by most large agencies. Minimum spend varies by IO (insertion order).
+**The Trade Desk**: The independent giant. Strong on Connected TV (CTV), programmatic Hulu, Disney+, Roku inventory. Used by most large agencies. Minimum spend varies by IO (insertion order).
 
 **AdRoll**: SMB-friendly. The classic "first programmatic platform a DTC brand tries." Decent for retargeting. Self-serve. Starts at ~$300/mo.
 
@@ -83,11 +83,11 @@ Header bidding is a publisher-side mechanism that asks ALL buyers to bid simulta
 - **Header bidding (2018+)**: Every buyer bids at once; the publisher picks the highest. Fairer auction.
 - **What it means for advertisers**: more inventory available to your DSP, often at lower CPMs
 
-You don't configure header bidding as an advertiser — publishers do. But knowing it exists explains why some publisher inventory only became biddable on certain DSPs after ~2018.
+You don't configure header bidding as an advertiser, publishers do. But knowing it exists explains why some publisher inventory only became biddable on certain DSPs after ~2018.
 
 ---
 
-## 🔄 Retargeting Strategy — The Discipline
+## 🔄 Retargeting Strategy, The Discipline
 
 ### Define Retargeting Audiences By Behavior
 
@@ -104,9 +104,9 @@ You don't configure header bidding as an advertiser — publishers do. But knowi
 ### The 3-Stage Funnel Pattern (Casper-style)
 
 ```
-Day 1-3:   Aggressive — product image + offer
-Day 4-7:   Social proof — testimonial creative
-Day 8-14:  Final push — urgency + scarcity
+Day 1-3:   Aggressive, product image + offer
+Day 4-7:   Social proof, testimonial creative
+Day 8-14:  Final push, urgency + scarcity
 Day 15+:   Exclude from retargeting (likely won't convert)
 ```
 
@@ -126,7 +126,7 @@ Without caps, retargeting becomes harassment:
 
 ## 🏭 CDP-Fed Retargeting (The 2026 Standard)
 
-A **Customer Data Platform (CDP)** is a database that unifies customer data from your website, app, CRM, email, and POS — then pushes audiences to ad platforms in real time. This solves a critical problem: lag.
+A **Customer Data Platform (CDP)** is a database that unifies customer data from your website, app, CRM, email, and POS, then pushes audiences to ad platforms in real time. This solves a critical problem: lag.
 
 ### The Lag Problem
 
@@ -165,7 +165,7 @@ Your website / app / CRM
 
 ---
 
-## 📊 Attribution Windows — Reality vs. Reporting
+## 📊 Attribution Windows, Reality vs. Reporting
 
 An attribution window is the time period after an ad interaction during which a conversion is credited to that ad.
 
@@ -177,7 +177,7 @@ An attribution window is the time period after an ad interaction during which a 
 | **1-day view** | Conversion within 1 day of VIEWING the ad (without clicking) is credited |
 | **7-day click + 1-day view** | Both above counted (current Meta default) |
 | **28-day click + 1-day view** | The pre-iOS-14 standard |
-| **View-through only** | Conversion within X days of viewing — overcredits |
+| **View-through only** | Conversion within X days of viewing, overcredits |
 | **Last-click** | The LAST ad clicked gets all credit |
 | **Linear** | All ads in path get equal credit |
 | **Data-driven** | ML model distributes credit |
@@ -207,18 +207,18 @@ Programmatic's dirty secret: a lot of impressions go to fraud, bots, or sketchy 
 | Term | Meaning |
 |------|---------|
 | **Brand Safety** | Ensuring ads don't appear next to harmful content (hate speech, violence, fake news) |
-| **Brand Suitability** | More nuanced than safety — picking placements aligned with brand values |
+| **Brand Suitability** | More nuanced than safety, picking placements aligned with brand values |
 | **Invalid Traffic (IVT)** | Bots + fraud + non-human traffic |
 | **GIVT (General IVT)** | Common bots, easily detected |
 | **SIVT (Sophisticated IVT)** | Advanced bots, click farms, hijacked clicks |
 | **MFA (Made-For-Advertising)** | Low-quality sites built just to harvest ad spend |
-| **CTV Fraud** | Especially bad on cheap CTV inventory — fake households, bot streaming |
+| **CTV Fraud** | Especially bad on cheap CTV inventory, fake households, bot streaming |
 
 ### Tools to Protect Yourself
 
 | Tool | Purpose |
 |------|---------|
-| **DoubleVerify** | Industry-standard verification — fraud, viewability, brand safety |
+| **DoubleVerify** | Industry-standard verification, fraud, viewability, brand safety |
 | **IAS (Integral Ad Science)** | Same category as DoubleVerify; both used by enterprise |
 | **HUMAN (formerly White Ops)** | Bot detection specialist |
 | **MOAT (Oracle)** | Attention metrics + viewability |
@@ -246,7 +246,7 @@ In any DSP, block these categories minimum:
 
 ---
 
-## 📦 Retargeting Walkthrough — A Real Setup
+## 📦 Retargeting Walkthrough, A Real Setup
 
 **Scenario:** DTC apparel store, $1,500/month retargeting budget, mix of Meta + AdRoll.
 
@@ -255,10 +255,10 @@ In any DSP, block these categories minimum:
 ```
 On your website (via Pixel + Insight Tag + AdRoll pixel):
   
-  AUDIENCE A: All visitors (last 30 days)        — $300/mo
-  AUDIENCE B: Product viewers (last 14 days)      — $400/mo
-  AUDIENCE C: Add-to-Cart (last 14 days)          — $400/mo
-  AUDIENCE D: Cart Abandoners (last 30 days)      — $400/mo
+  AUDIENCE A: All visitors (last 30 days): $300/mo
+  AUDIENCE B: Product viewers (last 14 days): $400/mo
+  AUDIENCE C: Add-to-Cart (last 14 days): $400/mo
+  AUDIENCE D: Cart Abandoners (last 30 days): $400/mo
   EXCLUDE: Past purchasers (last 60 days)
 ```
 
@@ -298,7 +298,7 @@ Google Ads Display + PMax retargeting: 10% of budget
 
 ---
 
-## 📺 Connected TV (CTV) — The 2026 Frontier
+## 📺 Connected TV (CTV), The 2026 Frontier
 
 Connected TV (Hulu, Disney+, Roku, Peacock with ads) is the fastest-growing programmatic channel. Per [Magna Global's 2025 forecast](https://www.magnaglobal.com/), CTV ad spend will pass linear TV by 2027.
 
@@ -325,23 +325,23 @@ For SMB / DTC under $10K/mo total budget: skip CTV. Stick to Meta + Google + Tik
 
 | Term | Definition |
 |------|------------|
-| **DSP** | Demand-Side Platform — where advertisers buy programmatic inventory |
-| **SSP** | Supply-Side Platform — where publishers sell their inventory |
+| **DSP** | Demand-Side Platform, where advertisers buy programmatic inventory |
+| **SSP** | Supply-Side Platform, where publishers sell their inventory |
 | **Ad Exchange** | The marketplace connecting DSPs and SSPs (e.g., Google AdX) |
 | **DV360** | Google's enterprise programmatic DSP |
-| **TTD** | The Trade Desk — largest independent DSP |
+| **TTD** | The Trade Desk, largest independent DSP |
 | **AdRoll** | SMB-friendly retargeting platform |
 | **Criteo** | DTC-focused dynamic product retargeting DSP |
-| **CDP** | Customer Data Platform — unifies customer data and syncs to ad platforms |
+| **CDP** | Customer Data Platform, unifies customer data and syncs to ad platforms |
 | **Segment** | Most common CDP, owned by Twilio |
 | **Frequency Cap** | Limit on times one user sees an ad |
 | **Attribution Window** | Time period after ad interaction during which a conversion is credited |
-| **MMM** | Marketing Mix Modeling — statistical model attributing sales to channels |
+| **MMM** | Marketing Mix Modeling, statistical model attributing sales to channels |
 | **Incrementality Test** | A/B test that measures TRUE causal impact of a channel |
-| **IVT** | Invalid Traffic — bots and fraud |
-| **MFA** | Made-For-Advertising — low-quality sites built just to harvest ad spend |
+| **IVT** | Invalid Traffic, bots and fraud |
+| **MFA** | Made-For-Advertising, low-quality sites built just to harvest ad spend |
 | **DoubleVerify / IAS** | Industry-standard ad verification tools |
-| **CTV** | Connected TV — programmatic streaming inventory (Hulu, Disney+, etc.) |
+| **CTV** | Connected TV, programmatic streaming inventory (Hulu, Disney+, etc.) |
 | **Header Bidding** | Publisher mechanism for fair simultaneous bidding |
 
 ---
@@ -362,7 +362,7 @@ For SMB / DTC under $10K/mo total budget: skip CTV. Stick to Meta + Google + Tik
 
 ## 🎓 Real Case Study: Criteo's "Dynamic Retargeting" Edge
 
-Criteo's business model is built on one feature: **dynamic creative**. Instead of you uploading 20 banners, you upload your product catalog. Criteo's algorithm then creates personalized banners showing the EXACT product each user viewed — cropped from your catalog imagery, with their abandoned cart price.
+Criteo's business model is built on one feature: **dynamic creative**. Instead of you uploading 20 banners, you upload your product catalog. Criteo's algorithm then creates personalized banners showing the EXACT product each user viewed, cropped from your catalog imagery, with their abandoned cart price.
 
 ASOS, the fashion ecom giant, publicly shared at IAB Engage 2023 that Criteo's dynamic retargeting drove 38% of their retargeting conversions. They specifically credited Criteo's ability to show a UK user who viewed a £45 dress in size M the exact same dress + size + price on every site they visit afterward.
 
@@ -379,7 +379,7 @@ You now know:
 - 🔄 Retargeting audience taxonomy (visitors → ATC → cart abandoners → buyers)
 - 🏭 CDP-fed retargeting and why it solves the lag problem
 - 📊 Attribution windows and how they bias your data
-- 🛡️ Brand safety, IVT, MFA — and how to block junk inventory
+- 🛡️ Brand safety, IVT, MFA, and how to block junk inventory
 - 📦 A complete retargeting setup walkthrough
 - 📺 When CTV is right (and when it's not)
 
@@ -391,15 +391,15 @@ You now know:
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
-Each prompt forces a real trade-off — argue from the frameworks in this module.
+Each prompt forces a real trade-off, argue from the frameworks in this module.
 
 1. ANA's 2024 study estimated ~20% of open-web display spend hits Made-For-Advertising sites. A growth lead argues this is acceptable "system loss" if the remaining 80% performs. Build the case for both (a) accepting MFA leakage and chasing scale, and (b) hard-blocking via inclusion lists and accepting smaller reach. Where does the answer flip?
-2. Casper's 3-stage retargeting funnel runs 14 days, then excludes users from retargeting. A team argues for extending it to 30 days because "we haven't lost them yet." Walk through the brand-perception and ROI math — when does length stop helping?
+2. Casper's 3-stage retargeting funnel runs 14 days, then excludes users from retargeting. A team argues for extending it to 30 days because "we haven't lost them yet." Walk through the brand-perception and ROI math, when does length stop helping?
 3. Last-click attribution still gets >60% of marketers' default reports despite the reading calling it broken. Defend the case that last-click is STILL the right model for some campaigns. When is it actually defensible, and when is it lazy?
 4. CDPs add $1K-10K/month in subscription cost. For a DTC brand at $80K/month revenue, build the case for and against adopting a CDP this year vs waiting. What's the breakeven trigger?
-5. Criteo's dynamic retargeting drove 38% of ASOS's retargeting conversions by showing the EXACT product abandoned. Argue when this creative specificity is creepy enough to harm brand trust — and what guardrails (frequency, decay, exclusions) prevent it.
+5. Criteo's dynamic retargeting drove 38% of ASOS's retargeting conversions by showing the EXACT product abandoned. Argue when this creative specificity is creepy enough to harm brand trust, and what guardrails (frequency, decay, exclusions) prevent it.
 
 ---
 
@@ -412,9 +412,9 @@ Each prompt forces a real trade-off — argue from the frameworks in this module
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [IAB Tech Lab — programmatic standards](https://iabtechlab.com/)
-- 📖 [The Trade Desk Education Hub](https://www.thetradedesk.com/us/resource-desk) — free programmatic 101
+- 📖 [IAB Tech Lab, programmatic standards](https://iabtechlab.com/)
+- 📖 [The Trade Desk Education Hub](https://www.thetradedesk.com/us/resource-desk), free programmatic 101
 - 📖 [Criteo Performance Marketer's Playbook](https://www.criteo.com/insights/)
-- 📖 [ANA — Programmatic Media Supply Chain Transparency Study (2024)](https://www.ana.net/) — the report that exposed 20% MFA waste
-- 📖 [Wynter buyer-research blog](https://wynter.com/blog) — buyer journey data
-- 📖 [Common Thread Collective — Casper retargeting case study](https://commonthreadco.com/)
+- 📖 [ANA Programmatic Media Supply Chain Transparency Study (2024)](https://www.ana.net/) the report that exposed 20% MFA waste
+- 📖 [Wynter buyer-research blog](https://wynter.com/blog), buyer journey data
+- 📖 [Common Thread Collective, Casper retargeting case study](https://commonthreadco.com/)

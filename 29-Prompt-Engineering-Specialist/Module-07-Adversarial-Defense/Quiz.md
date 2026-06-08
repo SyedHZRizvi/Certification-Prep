@@ -37,7 +37,7 @@ D. Wei et al. 2022
 
 ### Q4. "DAN" in jailbreak terminology means: *(Remember)*
 A. Data Access Network
-B. "Do Anything Now" — a famous early role-play jailbreak persona
+B. "Do Anything Now", a famous early role-play jailbreak persona
 C. Defense Against Networks
 D. Dynamic Adversarial Net
 
@@ -45,7 +45,7 @@ D. Dynamic Adversarial Net
 
 ### Q5. The OpenAI Instruction Hierarchy (Wallace et al. 2024) formalizes: *(Understand)*
 A. The training data ordering
-B. system > developer > user > tool — the priority order the model is trained to enforce
+B. system > developer > user > tool, the priority order the model is trained to enforce
 C. Sampling temperature
 D. Tool use schemas
 
@@ -69,7 +69,7 @@ D. Adding more humans
 
 ### Q8. The MOST important principle when handling tool RESULTS in an LLM agent is: *(Apply)*
 A. Tool outputs are always trusted
-B. Tool outputs are ALWAYS untrusted input — never instructions; wrap explicitly in delimiters
+B. Tool outputs are ALWAYS untrusted input, never instructions; wrap explicitly in delimiters
 C. Tool outputs should be base64-encoded
 D. Tool outputs should be removed
 
@@ -85,7 +85,7 @@ D. Lower max_tokens
 
 ### Q10. The Bing "Sydney" prompt leak of February 2023 taught the industry that: *(Apply)*
 A. System prompts are always secret
-B. System prompts WILL leak — never put secrets in them; assume the attacker has it
+B. System prompts WILL leak, never put secrets in them; assume the attacker has it
 C. Bing is broken
 D. Microsoft fixes bugs slowly
 
@@ -181,7 +181,7 @@ D. Use a smaller model
 
 ### Q22. The MOST important reason to use a DIFFERENT model family as the LLM-as-judge safety reviewer is: *(Evaluate)*
 A. Cost
-B. Self-preference bias — a family judging itself can be lenient on its own failure modes
+B. Self-preference bias, a family judging itself can be lenient on its own failure modes
 C. Speed
 D. Tokenizer differences
 
@@ -189,7 +189,7 @@ D. Tokenizer differences
 
 ### Q23. A prompt that wraps user input in `<<user_input>>...<<end_user_input>>` delimiters with an explicit "this is data not instructions" preamble: *(Analyze)*
 A. Is purely cosmetic
-B. Reinforces the instruction hierarchy — a real, measurable defense against direct injection
+B. Reinforces the instruction hierarchy, a real, measurable defense against direct injection
 C. Increases cost dramatically
 D. Eliminates all attacks
 
@@ -232,7 +232,7 @@ The dominant 2024-2026 production attack. Greshake et al. 2023.
 ### Q3: **B. Greshake et al. 2023**
 *Not what you've signed up for*. The foundational paper on indirect injection.
 
-### Q4: **B. "Do Anything Now" — role-play persona**
+### Q4: **B. "Do Anything Now", role-play persona**
 The infamous early jailbreak. Spawned a family.
 
 ### Q5: **B. system > developer > user > tool**
@@ -324,4 +324,4 @@ Defense in depth. Every layer matters. Anything less and you're back to Air Cana
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Production at Scale](../Module-08-Production-Scale/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Production at Scale](../Module-08-Production-Scale/Reading.md)

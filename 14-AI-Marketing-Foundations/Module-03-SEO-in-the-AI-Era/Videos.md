@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SEO for Beginners — Complete Guide</p>
+      <p class="vg-title">SEO for Beginners, Complete Guide</p>
       <p class="vg-creator">Brian Dean / Backlinko</p>
       <span class="vg-duration">⏱ 13 min · The three pillars overview</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Surfer SEO Walkthrough — On-Page Optimization</p>
+      <p class="vg-title">Surfer SEO Walkthrough, On-Page Optimization</p>
       <p class="vg-creator">Surfer SEO</p>
       <span class="vg-duration">⏱ 11 min · Hands-on with an AI SEO tool</span>
     </div>
@@ -137,7 +137,7 @@
 | **Brian Dean / Backlinko** | Step-by-step, screenshot-driven, beginner-friendly |
 | **Matt Diggity** | Aggressive but data-driven; great on 2024+ AI changes |
 | **SEMrush Academy** | Curriculum-quality structured courses |
-| **Google Search Central** | The official source — short, direct guidance |
+| **Google Search Central** | The official source, short, direct guidance |
 | **Surfer SEO** | Tool walkthroughs + theory |
 | **Income School** | Programmatic SEO + niche site case studies |
 | **Aleyda Solis** | International + technical SEO |

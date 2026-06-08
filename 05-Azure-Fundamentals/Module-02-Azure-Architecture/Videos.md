@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Management Groups, Subscriptions & Resource Groups</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 12 min · Logical hierarchy</span>
     </div>
   </a>
@@ -89,7 +89,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Availability Zones vs Availability Sets</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 10 min · Common confusion</span>
     </div>
   </a>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Landing Zones — Enterprise Subscription Design</p>
+      <p class="vg-title">Landing Zones, Enterprise Subscription Design</p>
       <p class="vg-creator">Microsoft Cloud Adoption Framework</p>
       <span class="vg-duration">⏱ 20 min · Beyond AZ-900 but useful</span>
     </div>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Deep, exam-aligned, current |
-| **Adam Marczak — Azure for Everyone** | Cleanest visuals for hierarchies |
+| **Adam Marczak, Azure for Everyone** | Cleanest visuals for hierarchies |
 | **Microsoft Learn** | Authoritative source |
 | **Tim Warner** | Practical AZ-900 deep dives |
 

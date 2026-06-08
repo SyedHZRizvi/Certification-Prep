@@ -1,4 +1,4 @@
-# Module 4 Cheat Sheet — Advanced Lip Sync 🎤
+# Module 4 Cheat Sheet, Advanced Lip Sync 🎤
 
 ## Preston Blair Viseme Quick Reference
 
@@ -35,12 +35,12 @@ On frame:         Reads slightly late
 
 ---
 
-## Less Is More — The Three Rules
+## Less Is More, The Three Rules
 
 ```
-1. ANCHOR M/B/P ONLY  — non-negotiable sync landmarks
-2. BLEND intermediate shapes  — don't keyframe every vowel
-3. PERFORMANCE FIRST  — emotion drives shape selection
+1. ANCHOR M/B/P ONLY , non-negotiable sync landmarks
+2. BLEND intermediate shapes , don't keyframe every vowel
+3. PERFORMANCE FIRST , emotion drives shape selection
 ```
 
 ---
@@ -64,7 +64,7 @@ On frame:         Reads slightly late
 ```
 STEP 1:  Block body + head + eyes. NO MOUTH. Show with audio off.
 STEP 2:  Add M/B/P closures only (2f ahead of peaks).
-STEP 3:  Evaluate — 80% should read sync-correct at this point.
+STEP 3:  Evaluate, 80% should read sync-correct at this point.
 STEP 4:  Add Ah, Oh, Ee shapes only. Blend, don't keyframe.
 STEP 5:  Full phoneme detail ONLY if hero character in close-up.
 ```
@@ -107,7 +107,7 @@ STEP 5:  Full phoneme detail ONLY if hero character in close-up.
 | Oo | Oo | AU18 pucker + AU22 |
 | Rest | (default) | AU25 very slight separation |
 
-**Note:** Ee uses AU20 (lip stretcher), NOT AU12 (smile) — a common confusion.
+**Note:** Ee uses AU20 (lip stretcher), NOT AU12 (smile), a common confusion.
 
 ---
 
@@ -115,7 +115,7 @@ STEP 5:  Full phoneme detail ONLY if hero character in close-up.
 
 | Layer | Content | Priority |
 |-------|---------|---------|
-| 1. Sync accuracy | M/B/P closures; 2f lead | Baseline — non-negotiable |
+| 1. Sync accuracy | M/B/P closures; 2f lead | Baseline, non-negotiable |
 | 2. Emotional performance | FACS expression; brow state; eye direction | Essential |
 | 3. Thought rhythm | Micro-pauses; mid-word hesitations | Senior |
 | 4. Involuntary signals | Swallows; micro-expressions; moisture changes | Master level |
@@ -142,11 +142,11 @@ STEP 5:  Full phoneme detail ONLY if hero character in close-up.
 | Language | Approx. Syllables/Minute | Sync Implication |
 |---------|------------------------|-----------------|
 | English | ~220 | Animation baseline |
-| Spanish | ~250 | Faster — English animation runs slow |
+| Spanish | ~250 | Faster, English animation runs slow |
 | French | ~280 | More mouth movement required |
 | Mandarin | ~230 | Comparable; tonal structure differs |
 | Italian | ~260 | Similar to French challenge |
-| Japanese | ~320–350 | Significantly more — simplify or re-time |
+| Japanese | ~320–350 | Significantly more, simplify or re-time |
 
 ---
 
@@ -154,11 +154,11 @@ STEP 5:  Full phoneme detail ONLY if hero character in close-up.
 
 | Question | Answer |
 |---------|--------|
-| Only fully closed viseme | M, B, P — the only lip-to-lip contact |
+| Only fully closed viseme | M, B, P, the only lip-to-lip contact |
 | Why 2-frame lead is neurological | Auditory processing is 40–80ms faster than visual (~2f at 24fps) |
-| Why keyframing every phoneme fails | Creates "puppety" mouth — excessive movement |
+| Why keyframing every phoneme fails | Creates "puppety" mouth, excessive movement |
 | 1s vs 2s: fast dialogue threshold | Above 180 wpm → use 1s |
-| Performance-first step 1 | Block body, head, eyes — NO MOUTH |
-| Japanese dubbing simplification | Syllable density too high — use open/close only |
+| Performance-first step 1 | Block body, head, eyes, NO MOUTH |
+| Japanese dubbing simplification | Syllable density too high, use open/close only |
 | F/V viseme mechanism | Lower lip under UPPER TEETH (not lip-to-lip) |
 | Ee viseme AU | AU20 lip stretcher (not AU12 smile) |

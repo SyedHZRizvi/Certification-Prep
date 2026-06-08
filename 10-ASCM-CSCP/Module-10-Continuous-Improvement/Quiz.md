@@ -120,7 +120,7 @@ D. AR − AP
 ---
 
 ### Q15. SMED stands for: *(Remember)*
-A. Single-Minute Exchange of Die — quick changeover
+A. Single-Minute Exchange of Die, quick changeover
 B. Standard Mode Equipment Design
 C. Small Manufacturing Engineering Department
 D. Step-Method Estimation Diagram
@@ -145,7 +145,7 @@ D. Prepare, Develop, Calculate, Apply
 
 ### Q18. Jidoka in Lean refers to: *(Remember)*
 A. Goods-to-person automation
-B. Autonomation — stop the line when defect detected
+B. Autonomation, stop the line when defect detected
 C. Vendor-managed inventory
 D. Quick changeover
 

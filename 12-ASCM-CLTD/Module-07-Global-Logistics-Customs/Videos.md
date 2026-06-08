@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">All 11 Incoterms 2020 — Walkthrough</p>
+      <p class="vg-title">All 11 Incoterms 2020, Walkthrough</p>
       <p class="vg-creator">ASCM</p>
       <span class="vg-duration">⏱ 15 min · The big one</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">FOB vs FCA — The Container Trap</p>
+      <p class="vg-title">FOB vs FCA, The Container Trap</p>
       <p class="vg-creator">Supply Chain Today</p>
       <span class="vg-duration">⏱ 10 min · Critical distinction</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">C-TPAT and AEO — Trusted Trader Programs</p>
+      <p class="vg-title">C-TPAT and AEO, Trusted Trader Programs</p>
       <p class="vg-creator">ASCM</p>
       <span class="vg-duration">⏱ 11 min · Faster customs</span>
     </div>

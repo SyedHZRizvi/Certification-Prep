@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Trustworthy A/B Testing — Kohavi</p>
+      <p class="vg-title">Trustworthy A/B Testing, Kohavi</p>
       <p class="vg-creator">Ron Kohavi (formerly LinkedIn/Airbnb/Microsoft)</p>
       <span class="vg-duration">⏱ 26 min · The textbook A/B framework</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Baymard Institute — Checkout Usability</p>
+      <p class="vg-title">Baymard Institute, Checkout Usability</p>
       <p class="vg-creator">Baymard</p>
       <span class="vg-duration">⏱ 22 min · 17% checkout-flow abandonment</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Core Web Vitals — LCP, INP, CLS</p>
+      <p class="vg-title">Core Web Vitals, LCP, INP, CLS</p>
       <p class="vg-creator">Google / Web.dev</p>
       <span class="vg-duration">⏱ 18 min · The speed standard (INP since March 2024)</span>
     </div>
@@ -51,7 +51,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PDP Anatomy — 10 Conversion Elements</p>
+      <p class="vg-title">PDP Anatomy, 10 Conversion Elements</p>
       <p class="vg-creator">Baymard / Common Thread Collective</p>
       <span class="vg-duration">⏱ 18 min · 6-12 images, zoom, reviews, sticky ATC</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Microsoft Clarity — Free Heatmaps</p>
+      <p class="vg-title">Microsoft Clarity, Free Heatmaps</p>
       <p class="vg-creator">Microsoft</p>
       <span class="vg-duration">⏱ 14 min · Free + unlimited replays</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Reviews + UGC — Conversion Multipliers</p>
+      <p class="vg-title">Reviews + UGC, Conversion Multipliers</p>
       <p class="vg-creator">Yotpo / Okendo</p>
       <span class="vg-duration">⏱ 14 min · 1.5x-2.8x CVR lift</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Booking.com — 1,000 Tests/Year</p>
+      <p class="vg-title">Booking.com, 1,000 Tests/Year</p>
       <p class="vg-creator">Booking.com Engineering</p>
       <span class="vg-duration">⏱ 22 min · The experimentation moat</span>
     </div>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Algolia NeuralSearch — AI-Powered Site Search</p>
+      <p class="vg-title">Algolia NeuralSearch, AI-Powered Site Search</p>
       <p class="vg-creator">Algolia</p>
       <span class="vg-duration">⏱ 16 min · Semantic search for retail</span>
     </div>
@@ -115,7 +115,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Walmart — The 1-Second Page-Load Study</p>
+      <p class="vg-title">Walmart, The 1-Second Page-Load Study</p>
       <p class="vg-creator">Walmart / Akamai</p>
       <span class="vg-duration">⏱ 12 min · The 2012 case still cited</span>
     </div>

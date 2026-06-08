@@ -78,7 +78,7 @@ D. ASR
 
 ---
 
-### Q10. Yes/No — Defender for Endpoint. *(Understand)*
+### Q10. Yes/No, Defender for Endpoint. *(Understand)*
 
 **S1:** Plan 1 includes Attack Surface Reduction rules.
 **S2:** Plan 2 includes Advanced Hunting with KQL.
@@ -122,7 +122,7 @@ D. Browser zero-days
 
 ---
 
-### Q14. Yes/No — BitLocker. *(Understand)*
+### Q14. Yes/No, BitLocker. *(Understand)*
 
 **S1:** XTS-AES 256 is more secure than 128.
 **S2:** "Used Space Only" encryption is faster than full disk for new devices.
@@ -187,11 +187,11 @@ D. Web content filtering
 A. Windows 10/11 and Windows Server 2016+ (built-in)
 B. Only Defender for Endpoint Plan 1
 C. Only enterprise SKUs
-D. None — must be purchased separately
+D. None, must be purchased separately
 
 ---
 
-### Q22. Yes/No — EDR. *(Evaluate)*
+### Q22. Yes/No, EDR. *(Evaluate)*
 
 **S1:** Live response lets an admin run scripts on the device remotely.
 **S2:** Device isolation cuts network access while keeping MDE connectivity.
@@ -213,7 +213,7 @@ D. BitLocker
 ---
 
 ### Q24. A non-Microsoft third-party AV is in primary mode. Defender runs in passive mode. EDR is in block mode. What happens when malicious behavior is detected? *(Analyze)*
-A. Nothing — Defender is passive
+A. Nothing, Defender is passive
 B. Defender's EDR enforcement blocks the malicious artifact
 C. The third-party AV always wins
 D. Both block simultaneously, causing conflict
@@ -237,7 +237,7 @@ EDR is the Plan 2 differentiator. Plan 1 = prevention/protection only.
 The three ASR modes. Warn prompts the user for one-time bypass.
 
 ### Q3: **B. Audit first, monitor 7–14 days, then Block**
-The canonical rollout — find false positives before enforcing.
+The canonical rollout, find false positives before enforcing.
 
 ### Q4: **B. The device object in Microsoft Entra ID**
 Recovery keys live on the device record, not the user.
@@ -246,13 +246,13 @@ Recovery keys live on the device record, not the user.
 The Intune-deployed silent enablement pattern.
 
 ### Q6: **A. Word from launching PowerShell or cmd.exe (canonical macro-malware pattern)**
-The most-tested ASR rule — stops the typical macro-attack chain.
+The most-tested ASR rule, stops the typical macro-attack chain.
 
 ### Q7: **B. A third-party AV is the primary engine but you want Defender's response capabilities**
 Defender runs passive; EDR enforces actions.
 
 ### Q8: **B. Cloud Access Security Broker (CASB) for SaaS apps**
-Defender for Cloud Apps is CASB — discover/control SaaS.
+Defender for Cloud Apps is CASB, discover/control SaaS.
 
 ### Q9: **B. Tamper protection**
 Prevents disabling Defender. Always on in production.
@@ -270,7 +270,7 @@ Audit → monitor → exclusions → Block pilot → expand.
 CFA is anti-ransomware folder protection.
 
 ### Q14: **B. Yes / Yes / No**
-256 > 128 in encryption strength (Yes). Used Space Only is faster (Yes). Deleting Intune device record does NOT automatically delete the recovery key — but you lose easy access (No, key may persist on Entra device object until that's purged).
+256 > 128 in encryption strength (Yes). Used Space Only is faster (Yes). Deleting Intune device record does NOT automatically delete the recovery key, but you lose easy access (No, key may persist on Entra device object until that's purged).
 
 ### Q15: **B. Microsoft Entra device object**
 LAPS for Entra-joined stores on the device object in Entra ID.

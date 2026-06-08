@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Stripe Payments API — End-to-End</p>
+      <p class="vg-title">Stripe Payments API, End-to-End</p>
       <p class="vg-creator">Stripe Developers</p>
       <span class="vg-duration">⏱ 22 min · PaymentIntents, Customers, Disputes</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PCI-DSS v4.0 — What Changed</p>
+      <p class="vg-title">PCI-DSS v4.0, What Changed</p>
       <p class="vg-creator">PCI Council / Stripe</p>
       <span class="vg-duration">⏱ 18 min · v4.0 mandatory March 2025</span>
     </div>
@@ -51,7 +51,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">EU VAT — OSS, IOSS, Cross-Border 2021</p>
+      <p class="vg-title">EU VAT, OSS, IOSS, Cross-Border 2021</p>
       <p class="vg-creator">European Commission / Stripe Tax</p>
       <span class="vg-duration">⏱ 16 min · 27-state simplification</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">3DS2 & SCA — PSD2 Explained</p>
+      <p class="vg-title">3DS2 & SCA, PSD2 Explained</p>
       <p class="vg-creator">Adyen / Stripe</p>
       <span class="vg-duration">⏱ 18 min · Frictionless authentication</span>
     </div>
@@ -74,8 +74,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Klarna & BNPL Regulation — UK FCA 2024</p>
-      <p class="vg-creator">Various — Financial Times / TechCrunch</p>
+      <p class="vg-title">Klarna & BNPL Regulation, UK FCA 2024</p>
+      <p class="vg-creator">Various, Financial Times / TechCrunch</p>
       <span class="vg-duration">⏱ 22 min · The 85% valuation crash + recovery</span>
     </div>
   </a>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Wallets — Apple Pay vs Shop Pay vs PayPal</p>
+      <p class="vg-title">Wallets, Apple Pay vs Shop Pay vs PayPal</p>
       <p class="vg-creator">Baymard / Shopify</p>
       <span class="vg-duration">⏱ 14 min · Conversion benchmarks</span>
     </div>
@@ -115,7 +115,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Friendly Fraud — The 40% Problem</p>
+      <p class="vg-title">Friendly Fraud, The 40% Problem</p>
       <p class="vg-creator">Visa / Riskified</p>
       <span class="vg-duration">⏱ 12 min · Chargeback abuse trends</span>
     </div>

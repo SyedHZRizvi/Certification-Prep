@@ -87,10 +87,10 @@ D. A NFT minted by Satoshi
 ---
 
 ### Q11. The "Pizza Day" transaction was: *(Remember)*
-A. May 22, 2010 — Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas
-B. December 12, 2010 — Satoshi's last forum post
-C. February 9, 2011 — first parity with USD
-D. April 20, 2024 — the fourth halving
+A. May 22, 2010, Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas
+B. December 12, 2010, Satoshi's last forum post
+C. February 9, 2011, first parity with USD
+D. April 20, 2024, the fourth halving
 
 ---
 
@@ -118,7 +118,7 @@ D. Burned as part of the protocol
 
 ---
 
-### Q15. The cypherpunk who proposed Hashcash (1997) — the proof-of-work scheme Satoshi adopted — is: *(Remember)*
+### Q15. The cypherpunk who proposed Hashcash (1997) the proof-of-work scheme Satoshi adopted is: *(Remember)*
 A. David Chaum
 B. Adam Back
 C. Wei Dai
@@ -126,7 +126,7 @@ D. Nick Szabo
 
 ---
 
-### Q16. A property Bitcoin claims to deliver — but which is OFTEN confused — is: *(Apply)*
+### Q16. A property Bitcoin claims to deliver but which is OFTEN confused is: *(Apply)*
 A. Anonymous transactions
 B. Free transactions
 C. Pseudonymous transactions (with public on-chain history)
@@ -166,7 +166,7 @@ D. Merkle trees in block headers
 
 ---
 
-### Q21. Mt. Gox — at one point ~70% of global BTC trading volume — collapsed in: *(Remember)*
+### Q21. Mt. Gox at one point ~70% of global BTC trading volume collapsed in: *(Remember)*
 A. October 2013
 B. February 2014
 C. August 2010
@@ -184,7 +184,7 @@ D. b-money
 
 ### Q23. A board member argues that "Bitcoin can be banned and shut down by a coordinated G7 ban." Which is the strongest reasoned reply? *(Evaluate)*
 A. Agree; no protocol can survive simultaneous state-level bans
-B. Disagree; G7 nations have already tried, and Bitcoin's distributed-node model means nodes outside G7 jurisdictions would continue producing blocks — China's 2021 mining ban relocated, did not destroy, hashrate
+B. Disagree; G7 nations have already tried, and Bitcoin's distributed-node model means nodes outside G7 jurisdictions would continue producing blocks, China's 2021 mining ban relocated, did not destroy, hashrate
 C. Agree; mining is too concentrated to survive
 D. Agree; exchanges control the network
 
@@ -204,10 +204,10 @@ D. The chain with the most users wins by social consensus
 The white paper was posted on Halloween 2008. The Genesis block came two months later (January 3, 2009).
 
 ### Q2: **C. The metzdowd.com cryptography mailing list**
-Satoshi posted to the low-traffic crypto list run by Perry Metzger and others — not the Cypherpunks list (which was effectively dormant by 2008).
+Satoshi posted to the low-traffic crypto list run by Perry Metzger and others, not the Cypherpunks list (which was effectively dormant by 2008).
 
 ### Q3: **B. Hashcash and b-money**
-Satoshi cites Adam Back's Hashcash (1997) and Wei Dai's b-money (1998) in the white paper. He does NOT cite Bit Gold (Szabo) — a long-noted curiosity.
+Satoshi cites Adam Back's Hashcash (1997) and Wei Dai's b-money (1998) in the white paper. He does NOT cite Bit Gold (Szabo), a long-noted curiosity.
 
 ### Q4: **B. January 3, 2009**
 Block 0 was mined at 18:15:05 UTC. The block height is special-cased in code.
@@ -230,7 +230,7 @@ Exact issued total is 20,999,999.9769 BTC due to integer rounding in the protoco
 ### Q10: **C. A chain of digital signatures over previous transaction outputs**
 Direct quote from §2 of the white paper. This is the foundation of the UTXO model.
 
-### Q11: **A. May 22, 2010 — Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas**
+### Q11: **A. May 22, 2010, Laszlo Hanyecz paid 10,000 BTC for two Papa John's pizzas**
 The first widely-cited commercial BTC transaction. Now celebrated annually as Bitcoin Pizza Day.
 
 ### Q12: **C. ~184 billion**
@@ -243,7 +243,7 @@ The C4 CBP and every academic source treats Satoshi's identity as unknown. Craig
 The Genesis-block reward is not added to the UTXO set as a normal output. Even Satoshi can't spend block 0's 50 BTC.
 
 ### Q15: **B. Adam Back**
-Back's *Hashcash — A Denial of Service Counter-Measure* (1997) is the proof-of-work scheme Satoshi adopted.
+Back's *Hashcash, A Denial of Service Counter-Measure* (1997) is the proof-of-work scheme Satoshi adopted.
 
 ### Q16: **C. Pseudonymous transactions (with public on-chain history)**
 Bitcoin is pseudonymous, not anonymous. The most-tested fact about Bitcoin privacy. Chain-analysis companies like Chainalysis routinely de-anonymize patterns.
@@ -266,7 +266,7 @@ Mt. Gox suspended trading on Feb 7, 2014 and filed for bankruptcy on Feb 28. App
 ### Q22: **C. eCash / DigiCash (with blind signatures, 1983)**
 Chaum's blind-signature scheme was the first cryptographic digital cash. DigiCash bankrupted in 1998. Influenced but is not cited by Satoshi.
 
-### Q23: **B. Disagree; G7 nations have already tried, and Bitcoin's distributed-node model means nodes outside G7 jurisdictions would continue producing blocks — China's 2021 mining ban relocated, did not destroy, hashrate**
+### Q23: **B. Disagree; G7 nations have already tried, and Bitcoin's distributed-node model means nodes outside G7 jurisdictions would continue producing blocks, China's 2021 mining ban relocated, did not destroy, hashrate**
 The China mining ban in May 2021 is the empirical proof: hashrate dropped ~50% in weeks but the chain continued, and hashrate fully recovered within a year.
 
 ### Q24: **B. The chain with the most cumulative proof-of-work wins, which may NOT be the chain with most blocks**

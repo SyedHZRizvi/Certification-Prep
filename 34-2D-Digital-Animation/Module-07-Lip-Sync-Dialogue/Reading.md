@@ -7,7 +7,7 @@ title: "Module 7: Lip Sync & Dialogue"
 
 ## The 10-Second Rule
 
-There is an old animation school exercise where students are given 10 seconds of recorded dialogue — someone saying a single line — and asked to animate a character delivering it. The exercise sounds simple. It is not. Ten seconds of dialogue reveals whether an animator understands timing, whether they understand phonemes, whether they understand that a character "acts" through the body as much as the mouth, and whether they understand the difference between "the mouth is moving in time with the audio" (technical lip sync) and "this character is speaking from a place of genuine emotion" (performance).
+There is an old animation school exercise where students are given 10 seconds of recorded dialogue someone saying a single line and asked to animate a character delivering it. The exercise sounds simple. It is not. Ten seconds of dialogue reveals whether an animator understands timing, whether they understand phonemes, whether they understand that a character "acts" through the body as much as the mouth, and whether they understand the difference between "the mouth is moving in time with the audio" (technical lip sync) and "this character is speaking from a place of genuine emotion" (performance).
 
 This module covers the technical side thoroughly. But never forget: technical lip sync is the floor, not the ceiling. The ceiling is performance.
 
@@ -15,7 +15,7 @@ This module covers the technical side thoroughly. But never forget: technical li
 
 ## 🔤 Phoneme Breakdown
 
-A phoneme is the smallest unit of sound in a language. English has approximately 44 phonemes. For animation purposes, we reduce these to a small set of visually distinct mouth shapes — because many phonemes that sound different look nearly identical.
+A phoneme is the smallest unit of sound in a language. English has approximately 44 phonemes. For animation purposes, we reduce these to a small set of visually distinct mouth shapes, because many phonemes that sound different look nearly identical.
 
 ### Phoneme-to-Mouth-Shape Reduction
 
@@ -85,7 +85,7 @@ The dope sheet (After Effects equivalent: the Dope Sheet editor in AE) maps audi
 
 Professional animators often use printed frame stills or specialized breakdown software to make this process faster.
 
-### Dope Sheet — Lip Sync Example
+### Dope Sheet, Lip Sync Example
 
 For the line "I'm ready" at 24fps:
 
@@ -106,7 +106,7 @@ Adobe Character Animator (Ch) is a separate application in Creative Cloud that a
 
 ### How Character Animator Works
 
-1. Import a "puppet" — a layered Photoshop or Illustrator file with the character's face layers organized as Character Animator expects.
+1. Import a "puppet", a layered Photoshop or Illustrator file with the character's face layers organized as Character Animator expects.
 2. Ch recognizes layer names corresponding to phoneme groups (e.g., layers named "Open," "MBP," "FV," etc.).
 3. During recording or audio analysis, Ch's lip sync engine analyzes the audio and automatically triggers the correct face layers in sync.
 4. The result is exported as a video or as an image sequence for compositing in After Effects or Premiere.
@@ -130,7 +130,7 @@ Character Animator maps audio to a simplified phoneme set:
 
 > 🎯 **What the exam tests:** Character Animator's phoneme groups are similar but not identical to Preston Blair's set. On the exam, know BOTH sets. Preston Blair is used in Animate/manual workflows; Character Animator's groups are specific to Ch.
 
-### Preston Blair vs. Character Animator — Comparison
+### Preston Blair vs. Character Animator, Comparison
 
 | Concept | Preston Blair Set | Character Animator Set |
 |---------|------------------|----------------------|
@@ -147,9 +147,9 @@ Character Animator maps audio to a simplified phoneme set:
 
 For Character Animator to recognize mouth shapes, the source file (Photoshop or Illustrator) must have:
 
-1. **Named layers** — each layer name must match Ch's expected mouth group names (or be tagged in the Ch puppet properties).
-2. **Toggles** — mouth layers are set as "exclusive behaviors" — only one is visible at a time.
-3. **The head group** — all face features (eyes, brows, mouth) grouped under a head group that tracks face position via Ch's live camera or audio-only mode.
+1. **Named layers**, each layer name must match Ch's expected mouth group names (or be tagged in the Ch puppet properties).
+2. **Toggles** mouth layers are set as "exclusive behaviors" only one is visible at a time.
+3. **The head group**, all face features (eyes, brows, mouth) grouped under a head group that tracks face position via Ch's live camera or audio-only mode.
 
 > 🎯 **What the exam tests:** Character Animator reads layer names to identify which layer represents which phoneme. If the layer is named incorrectly or inconsistently, Ch cannot perform auto lip sync. The layer naming convention is part of the exam.
 
@@ -189,7 +189,7 @@ In After Effects, you can enable audio waveform visualization on a layer:
 
 ## 🎬 Production Case Study: Hazbin Hotel & The Owl House Dialogue
 
-**Hazbin Hotel**: The production's dialogue scenes required extensive lip sync. For the pilot (Flash-based), the team used the Preston Blair phoneme set with swap-symbol mouth shapes in Adobe Animate — a fully manual, frame-by-frame swap workflow. For the Amazon series, the upgraded pipeline in Toon Boom Harmony used the same principle (swap drawings for each phoneme) but with Harmony's more powerful drawing substitution system.
+**Hazbin Hotel**: The production's dialogue scenes required extensive lip sync. For the pilot (Flash-based), the team used the Preston Blair phoneme set with swap-symbol mouth shapes in Adobe Animate, a fully manual, frame-by-frame swap workflow. For the Amazon series, the upgraded pipeline in Toon Boom Harmony used the same principle (swap drawings for each phoneme) but with Harmony's more powerful drawing substitution system.
 
 **The Owl House**: Disney's production pipeline required character-consistent dialogue performance across multiple episodes. The team maintained a locked library of mouth shapes for each character (following the Preston Blair set), with clear guidelines specifying which shape to use for which type of sound. Senior animators blocked the major phoneme positions; assistant animators filled in the transitions.
 
@@ -204,11 +204,11 @@ Technical lip sync answers the question: is the right mouth open at the right ti
 Performance lip sync answers: does this character *mean* what they're saying?
 
 Key performance elements to layer on top of technical sync:
-- **Eye reactions** — the eyes change before the mouth. Characters don't speak like robots; they react first.
-- **Body acting** — where is the character's weight as they say each line? Do they lean in for emphasis?
-- **Brow animation** — brows are the most expressive part of the face and should be keyed independently.
-- **Posing between words** — characters hold positions on held syllables; they don't constantly jiggle.
-- **The pause before the answer** — a character that pauses believably before responding feels real; one that answers instantly feels like a script being read.
+- **Eye reactions**, the eyes change before the mouth. Characters don't speak like robots; they react first.
+- **Body acting**, where is the character's weight as they say each line? Do they lean in for emphasis?
+- **Brow animation**, brows are the most expressive part of the face and should be keyed independently.
+- **Posing between words**, characters hold positions on held syllables; they don't constantly jiggle.
+- **The pause before the answer**, a character that pauses believably before responding feels real; one that answers instantly feels like a script being read.
 
 > 🎯 **What the exam tests:** Adobe Certified Professional exam questions may address Character Animator setup (layer naming, puppet preparation) as well as the general principles of lip sync timing. Know both the technical and conceptual sides.
 
@@ -263,7 +263,7 @@ Key performance elements to layer on top of technical sync:
 - **Preston Blair ≠ Character Animator groups:** These are different label systems. The exam tests both. Preston Blair is the standard for Animate/manual work. Ch uses its own group names.
 - **Stream sync is non-negotiable for lip sync:** Event sync will drift immediately if the timeline stutters. Students often forget this.
 - **Layer naming is critical in Character Animator:** If a layer is named "mouth_open" instead of "Open," Character Animator will not recognize it.
-- **Technical sync alone is not enough:** Exam questions may ask what makes dialogue animation convincing. The answer always includes body acting and brow animation — not just correct mouth shapes.
+- **Technical sync alone is not enough:** Exam questions may ask what makes dialogue animation convincing. The answer always includes body acting and brow animation, not just correct mouth shapes.
 - **Waveform peaks = stressed syllables:** Large waveform amplitude = louder, more open sounds. Flat waveform = quiet/silence = REST shape.
 
 ---
@@ -303,7 +303,7 @@ For animation done "on twos" (12fps drawings at 24fps playback), each mouth shap
 
 ### Anticipation in Lip Sync
 
-Characters don't just react — they anticipate. Good dialogue animation shows the character:
+Characters don't just react, they anticipate. Good dialogue animation shows the character:
 1. **Pre-empting** a key word: the body and face begin to shift 2–4 frames before the stressed syllable
 2. **Sustaining** important words: the most emotionally weighted words get held 2–4 frames longer
 3. **Recovering** after emotional peaks: the face returns to neutral through a series of transitional shapes, not a single snap
@@ -323,7 +323,7 @@ Characters don't just react — they anticipate. Good dialogue animation shows t
 
 [Module 8: Walk Cycles & Action →](../Module-08-Walk-Cycles-Action/Reading.md)
 
-Module 8 covers the most fundamental animation exercise after the bouncing ball: the walk cycle. Contact, down, pass, up — and everything that makes a walk feel like a real person and not a marionette.
+Module 8 covers the most fundamental animation exercise after the bouncing ball: the walk cycle. Contact, down, pass, up, and everything that makes a walk feel like a real person and not a marionette.
 
 ## 🎬 Advanced Sync Tools: Auto Lip Sync in Third-Party Software
 
@@ -342,7 +342,7 @@ For the Adobe Certified Professional exam, **Adobe Character Animator** is the o
 
 ## 🎭 Character Animator Live Performance Mode
 
-Beyond recorded audio analysis, Character Animator supports live performance mode — where the animator speaks into a microphone and the character moves in real time:
+Beyond recorded audio analysis, Character Animator supports live performance mode, where the animator speaks into a microphone and the character moves in real time:
 
 | Feature | How It Works | Use Case |
 |---------|-------------|---------|
@@ -360,10 +360,10 @@ Character Animator's live performance mode is used in broadcast situations (virt
 
 ## 📚 Further Reading
 
-- *Cartoon Animation* — Preston Blair, Chapter 5 (lip sync breakdown and mouth charts)
+- *Cartoon Animation*, Preston Blair, Chapter 5 (lip sync breakdown and mouth charts)
 - Adobe Character Animator User Guide: [helpx.adobe.com/character-animator/user-guide.html](https://helpx.adobe.com/character-animator/user-guide.html)
-- School of Motion: "Lip Sync in After Effects" — free article
-- *Animation: The Mechanics of Motion* — Chris Webster (performance and acting chapters)
+- School of Motion: "Lip Sync in After Effects", free article
+- *Animation: The Mechanics of Motion*, Chris Webster (performance and acting chapters)
 
 ---
 
@@ -382,25 +382,25 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 

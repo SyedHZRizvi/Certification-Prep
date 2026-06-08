@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Webflow Portfolio Site — Start To Launch</p>
+      <p class="vg-title">Webflow Portfolio Site, Start To Launch</p>
       <p class="vg-creator">Various Webflow channels</p>
       <span class="vg-duration">⏱ 18 min · Polished path</span>
     </div>

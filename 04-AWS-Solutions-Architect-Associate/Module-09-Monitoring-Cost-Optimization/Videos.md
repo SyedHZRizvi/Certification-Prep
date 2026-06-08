@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CloudWatch — Metrics, Logs, Alarms, Insights</p>
+      <p class="vg-title">CloudWatch, Metrics, Logs, Alarms, Insights</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 22 min · The full picture</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">CloudWatch Agent — Memory & Disk Metrics</p>
+      <p class="vg-title">CloudWatch Agent, Memory & Disk Metrics</p>
       <p class="vg-creator">AWS Training</p>
       <span class="vg-duration">⏱ 11 min · Common gotcha</span>
     </div>

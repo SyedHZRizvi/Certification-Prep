@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Performance Max vs Search — When To Use What</p>
+      <p class="vg-title">Performance Max vs Search, When To Use What</p>
       <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 14 min · Why we said avoid PMax for now</span>
     </div>

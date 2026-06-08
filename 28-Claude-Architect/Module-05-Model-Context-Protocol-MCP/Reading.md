@@ -1,6 +1,6 @@
 # Module 5: Model Context Protocol (MCP) 🔌
 
-> **Why this module matters:** Tool use (Module 4) tells you how Claude *requests* a tool. MCP tells you how that tool gets *discovered, connected, and shared across applications*. Announced by Anthropic on **November 25, 2024**, the **Model Context Protocol** is the open standard that turned "every agent reinvents its own tool surface" into "every Claude app speaks the same plug protocol." If tool use is USB, MCP is the USB-C spec — the part the industry agrees on.
+> **Why this module matters:** Tool use (Module 4) tells you how Claude *requests* a tool. MCP tells you how that tool gets *discovered, connected, and shared across applications*. Announced by Anthropic on **November 25, 2024**, the **Model Context Protocol** is the open standard that turned "every agent reinvents its own tool surface" into "every Claude app speaks the same plug protocol." If tool use is USB, MCP is the USB-C spec, the part the industry agrees on.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Module 4 (Claude tool use semantics)
@@ -12,7 +12,7 @@
 
 ## 📖 A Story: The Day Cursor Made Every Tool a Plugin
 
-It is December 2024. The Cursor team — already shipping the most popular AI code editor in the world — adds support for "MCP servers" to the Cursor settings panel. With three checkboxes, a Cursor user can give Claude (running inside Cursor) tools that read GitHub issues, query a Postgres database, control a Figma file, take screenshots through Playwright, or chat with Linear. None of these tools were written by the Cursor team. They were written by anyone — Anthropic, GitHub, the Postgres community, a 22-year-old hacker in Sao Paulo — and they all work because they all speak the **Model Context Protocol**.
+It is December 2024. The Cursor team already shipping the most popular AI code editor in the world adds support for "MCP servers" to the Cursor settings panel. With three checkboxes, a Cursor user can give Claude (running inside Cursor) tools that read GitHub issues, query a Postgres database, control a Figma file, take screenshots through Playwright, or chat with Linear. None of these tools were written by the Cursor team. They were written by anyone Anthropic, GitHub, the Postgres community, a 22-year-old hacker in Sao Paulo and they all work because they all speak the **Model Context Protocol**.
 
 Three months earlier this would have been impossible. Each AI app had a bespoke tool integration. The Cursor team wrote `read_file` and `edit_file` themselves. The Aider team wrote *their* `read_file` and *their* `edit_file`. The Lindy team wrote *theirs*. The same tools, three times. The same maintenance burden, three times. The same security review, three times.
 
@@ -24,7 +24,7 @@ By Q1 2026, **Claude Desktop**, **Cursor**, **Windsurf**, **Zed**, **Sourcegraph
 
 ## 🧬 What MCP Actually Is (One Paragraph)
 
-The Model Context Protocol is a **JSON-RPC 2.0 based protocol** for an AI application (the **client**, often the host of a Claude session) to discover and use **tools, resources, and prompts** exposed by an external process (the **server**). The protocol is transport-agnostic — typically **stdio** (the server runs as a subprocess of the client) or **SSE / HTTP** (the server runs as an HTTP service the client connects to). The protocol specifies: capability negotiation, tool discovery (`tools/list`), tool invocation (`tools/call`), resource discovery (`resources/list`), resource read (`resources/read`), prompt discovery (`prompts/list`), prompt get (`prompts/get`), and a few admin/notification methods.
+The Model Context Protocol is a **JSON-RPC 2.0 based protocol** for an AI application (the **client**, often the host of a Claude session) to discover and use **tools, resources, and prompts** exposed by an external process (the **server**). The protocol is transport-agnostic, typically **stdio** (the server runs as a subprocess of the client) or **SSE / HTTP** (the server runs as an HTTP service the client connects to). The protocol specifies: capability negotiation, tool discovery (`tools/list`), tool invocation (`tools/call`), resource discovery (`resources/list`), resource read (`resources/read`), prompt discovery (`prompts/list`), prompt get (`prompts/get`), and a few admin/notification methods.
 
 That sentence is the whole module in compressed form. The rest is making it operational.
 
@@ -34,7 +34,7 @@ That sentence is the whole module in compressed form. The rest is making it oper
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  CLIENT (AI app — Claude Desktop / Cursor / your app)        │
+│  CLIENT (AI app, Claude Desktop / Cursor / your app)        │
 │                                                              │
 │  ┌────────────────────────────────────────────────────────┐  │
 │  │  Claude model (via Anthropic API)                      │  │
@@ -59,9 +59,9 @@ That sentence is the whole module in compressed form. The rest is making it oper
 
 The roles:
 
-- **Client / Host** — the application running Claude. It owns the user's session and the model. It connects to one or more MCP servers and *exposes the servers' tools to Claude*.
-- **Server** — a process (local or remote) that implements the MCP protocol and offers tools, resources, and prompts. Independent of any particular model.
-- **Transport** — stdio (subprocess pipes) or HTTP+SSE. Stdio is the most common for local servers.
+- **Client / Host**, the application running Claude. It owns the user's session and the model. It connects to one or more MCP servers and *exposes the servers' tools to Claude*.
+- **Server**, a process (local or remote) that implements the MCP protocol and offers tools, resources, and prompts. Independent of any particular model.
+- **Transport**, stdio (subprocess pipes) or HTTP+SSE. Stdio is the most common for local servers.
 
 Critically: **Claude does not "know about MCP."** Claude only sees the tool definitions in the API call (Module 4). The MCP client converts MCP-served tools into Claude-API tool definitions and routes tool_use calls back to MCP servers. MCP is a layer *above* the Anthropic API, not inside it.
 
@@ -69,13 +69,13 @@ Critically: **Claude does not "know about MCP."** Claude only sees the tool defi
 
 ---
 
-## 🧱 The MCP Primitives — Tools, Resources, Prompts
+## 🧱 The MCP Primitives, Tools, Resources, Prompts
 
 MCP defines three first-class primitives. All clients support tools at minimum; many also support resources and prompts.
 
 ### Tools (most important)
 
-Tools are model-controllable functions. Same shape as Claude tool definitions — `name`, `description`, `inputSchema` (camelCase in JSON-RPC). The MCP client surfaces these to Claude as Claude-API tool definitions. The model decides when to call them; the call routes through the MCP client to the server.
+Tools are model-controllable functions. Same shape as Claude tool definitions, `name`, `description`, `inputSchema` (camelCase in JSON-RPC). The MCP client surfaces these to Claude as Claude-API tool definitions. The model decides when to call them; the call routes through the MCP client to the server.
 
 ```json
 // Server response to tools/list
@@ -119,7 +119,7 @@ Resources are **read-only data sources** the user (or sometimes the model) can a
 
 ### Prompts (less common but powerful)
 
-Prompts are **server-defined parameterized prompt templates** the user can pick from a menu in the host. Useful for "agent recipes" — `summarize_pr`, `code_review`, `refactor_with_tests`.
+Prompts are **server-defined parameterized prompt templates** the user can pick from a menu in the host. Useful for "agent recipes", `summarize_pr`, `code_review`, `refactor_with_tests`.
 
 ```json
 // Server response to prompts/list
@@ -141,7 +141,7 @@ Prompts are **server-defined parameterized prompt templates** the user can pick 
 
 ---
 
-## 🚌 Transports — stdio vs SSE / HTTP
+## 🚌 Transports, stdio vs SSE / HTTP
 
 MCP is transport-agnostic. In practice you'll see two:
 
@@ -196,7 +196,7 @@ When a client connects to a server, they exchange capabilities. Negotiation is J
 ```
 Client → Server : initialize { capabilities: { tools: {}, resources: {}, prompts: {} } }
 Server → Client : initialize-response { capabilities: { tools: {listChanged: true}, ... } }
-Client → Server : initialized (notification — confirms handshake complete)
+Client → Server : initialized (notification, confirms handshake complete)
 ... normal RPC traffic ...
 ```
 
@@ -225,7 +225,7 @@ The standard JSON-RPC method names you must recognize:
 The official Python SDK is `mcp` (`pip install mcp`).
 
 ```python
-# server.py — a tiny MCP server exposing two tools and one resource
+# server.py, a tiny MCP server exposing two tools and one resource
 import asyncio
 from mcp.server import Server
 from mcp.server.stdio import stdio_server
@@ -360,13 +360,13 @@ await server.connect(transport);
 
 By Q1 2026 the MCP ecosystem includes:
 
-- **Anthropic's reference servers** — filesystem, github, gitlab, postgres, sqlite, brave-search, fetch, memory, puppeteer, gdrive, google-maps, slack, sentry, time
-- **Block (Square), GitLab, Replit, Apollo (Salesforce MCP), Cloudflare, Stripe, Linear, Notion, Atlassian, Figma, MongoDB, Snowflake** — first-party MCP servers from these companies
-- **Community registries** — searchable indexes like `mcp.so`, `mcphub`, the official Anthropic spec site listings
-- **Claude Code** — Anthropic's CLI exposes MCP server config; many users add 5–15 servers
-- **Cursor / Windsurf / Zed / Cody** — all expose MCP server configuration in settings
+- **Anthropic's reference servers**, filesystem, github, gitlab, postgres, sqlite, brave-search, fetch, memory, puppeteer, gdrive, google-maps, slack, sentry, time
+- **Block (Square), GitLab, Replit, Apollo (Salesforce MCP), Cloudflare, Stripe, Linear, Notion, Atlassian, Figma, MongoDB, Snowflake**, first-party MCP servers from these companies
+- **Community registries**, searchable indexes like `mcp.so`, `mcphub`, the official Anthropic spec site listings
+- **Claude Code**, Anthropic's CLI exposes MCP server config; many users add 5–15 servers
+- **Cursor / Windsurf / Zed / Cody**, all expose MCP server configuration in settings
 
-The pattern: a SaaS company publishes an MCP server (often `npx`-runnable). Any MCP-aware AI app can adopt it in two lines of config. The flywheel — more clients → more value to publish a server → more servers → more reason to be a client — is precisely the "USB-C for AI" story.
+The pattern: a SaaS company publishes an MCP server (often `npx`-runnable). Any MCP-aware AI app can adopt it in two lines of config. The flywheel more clients → more value to publish a server → more servers → more reason to be a client is precisely the "USB-C for AI" story.
 
 ---
 
@@ -382,7 +382,7 @@ MCP is transport-agnostic; security depends on the transport.
 
 ### Remote / HTTP + SSE
 
-- Server needs proper auth — **OAuth 2.0**, **API keys**, **mTLS**, depending on deployment.
+- Server needs proper auth, **OAuth 2.0**, **API keys**, **mTLS**, depending on deployment.
 - The 2025 spec evolution added a recommended **OAuth-style flow** for remote MCP authorization.
 - Threats: standard HTTP threats (TLS termination, replay, SSRF) plus tool-injection threats (a malicious server could expose tools that lie about what they do).
 
@@ -390,7 +390,7 @@ MCP is transport-agnostic; security depends on the transport.
 
 Independent of transport: just because the model calls a tool doesn't mean the server should execute it. Re-validate caller identity & scope in the server. Default to "deny unless permitted."
 
-🚨 **Trap on the exam:** *"MCP servers are sandboxed by default."* — FALSE. Server processes inherit the spawning user's permissions. Security is the operator's responsibility.
+🚨 **Trap on the exam:** *"MCP servers are sandboxed by default."*, FALSE. Server processes inherit the spawning user's permissions. Security is the operator's responsibility.
 
 ---
 
@@ -403,7 +403,7 @@ Independent of transport: just because the model calls a tool doesn't mean the s
 | **MCP** | Cross-vendor STANDARD for tool discovery and invocation between AI apps and tool servers | Yes; open spec, multi-vendor |
 | **LangChain Tools / LlamaIndex Tools** | Python/JS framework abstractions over per-vendor APIs | Library-specific; opinionated |
 
-MCP is *not* a replacement for tool_use. MCP **uses** tool_use under the hood (when the host is Claude). MCP **standardizes the layer above** — discovery, transport, and the contract between independent processes.
+MCP is *not* a replacement for tool_use. MCP **uses** tool_use under the hood (when the host is Claude). MCP **standardizes the layer above**, discovery, transport, and the contract between independent processes.
 
 🎯 **Exam pattern:** *"Does MCP replace Anthropic's tool_use?"* → **No. MCP composes with tool_use. MCP standardizes tool *discovery and transport*; tool_use is the *model-side runtime mechanism*.**
 
@@ -415,13 +415,13 @@ MCP is *not* a replacement for tool_use. MCP **uses** tool_use under the hood (w
 
 Anthropic also exposes a public **MCP server gallery** with one-click installs. Some popular Claude Code MCP servers:
 
-- **GitHub** — issues, PRs, search, releases
-- **Filesystem** — beyond the workspace, for cross-repo work
-- **Slack** — read channels, post messages
-- **Linear** — read/update issues
-- **Postgres / SQLite** — query databases
-- **Sentry** — read errors, query events
-- **Playwright / Puppeteer** — browser automation
+- **GitHub**, issues, PRs, search, releases
+- **Filesystem**, beyond the workspace, for cross-repo work
+- **Slack**, read channels, post messages
+- **Linear**, read/update issues
+- **Postgres / SQLite**, query databases
+- **Sentry**, read errors, query events
+- **Playwright / Puppeteer**, browser automation
 
 When you use these in claude-code, the tools appear in your Bash / Read / etc. tool surface as `mcp__<server>__<tool_name>` (the `mcp__` prefix disambiguates from built-in tools).
 
@@ -429,14 +429,14 @@ When you use these in claude-code, the tools appear in your Bash / Read / etc. t
 
 ## 🔬 Scenario Walkthrough
 
-> **Scenario:** Your engineering org wants a "company copilot" — Claude Desktop, with access to GitHub issues, internal documentation (Notion), the production Postgres database (read-only), and the team Slack. How do you architect this with MCP, and what is the security review?
+> **Scenario:** Your engineering org wants a "company copilot", Claude Desktop, with access to GitHub issues, internal documentation (Notion), the production Postgres database (read-only), and the team Slack. How do you architect this with MCP, and what is the security review?
 
 **Walkthrough:**
 
 1. **Identify MCP servers needed:**
    - GitHub: official `@modelcontextprotocol/server-github` (stdio, PAT auth)
    - Notion: official Notion MCP server (HTTP, OAuth)
-   - Postgres: official `@modelcontextprotocol/server-postgres` — but use a **read-only role** with row-level security as appropriate (critical)
+   - Postgres: official `@modelcontextprotocol/server-postgres`, but use a **read-only role** with row-level security as appropriate (critical)
    - Slack: official Slack MCP server (OAuth)
 
 2. **Deployment model:**
@@ -473,8 +473,8 @@ This is a real organizational architecture as of 2026. Many Fortune 500s are run
 | "MCP servers are sandboxed by default." | Not by the protocol. The OS/container is the sandbox. |
 | "MCP is HTTP-only." | Stdio is the most common transport for local servers. |
 | "There's no auth in MCP." | Auth is transport- and server-specific; the protocol allows it but doesn't prescribe a single mechanism. |
-| "Resources are only for documents." | Any URI-addressable read-only data — DB tables, API endpoints, file paths. |
-| "I can't write my own MCP server." | Trivial — the SDKs are <100 LOC for a basic server. |
+| "Resources are only for documents." | Any URI-addressable read-only data, DB tables, API endpoints, file paths. |
+| "I can't write my own MCP server." | Trivial, the SDKs are <100 LOC for a basic server. |
 
 ---
 
@@ -482,7 +482,7 @@ This is a real organizational architecture as of 2026. Many Fortune 500s are run
 
 | Term | Definition |
 |------|------------|
-| **MCP** | Model Context Protocol — open standard for AI-to-tool interop, announced by Anthropic Nov 2024 |
+| **MCP** | Model Context Protocol, open standard for AI-to-tool interop, announced by Anthropic Nov 2024 |
 | **MCP client** | Application (Claude Desktop, Cursor, etc.) that connects to MCP servers |
 | **MCP server** | Process exposing tools/resources/prompts via the MCP protocol |
 | **stdio transport** | Subprocess-based transport; client spawns server, JSON-RPC over stdin/stdout |
@@ -499,7 +499,7 @@ This is a real organizational architecture as of 2026. Many Fortune 500s are run
 
 ---
 
-## 📊 Case Study — Block (Square) and the Goose Agent
+## 📊 Case Study, Block (Square) and the Goose Agent
 
 **Situation.** Block (the fintech holding company behind Square, Cash App, Tidal) shipped an open-source AI agent called **Goose** in early 2025. Goose is positioned as a "developer agent that can drive your terminal, IDE, and the rest of your dev tooling." It runs primarily on Claude.
 
@@ -523,23 +523,23 @@ This is a real organizational architecture as of 2026. Many Fortune 500s are run
 
 You now know:
 
-- 🧬 **What MCP is** — JSON-RPC 2.0-based interop protocol for AI tool integration; announced Nov 25, 2024
-- 🏛️ **Architecture** — clients (Claude Desktop, Cursor, claude-code) ↔ MCP client lib ↔ servers (local or remote)
-- 🧱 **Three primitives** — tools, resources, prompts
-- 🚌 **Two main transports** — stdio (local subprocess) and HTTP+SSE (remote)
-- 🤝 **Handshake** — `initialize` → `initialized` capability negotiation
-- 🛠️ **How to build a server** — Python and TypeScript SDKs, <100 LOC for a basic one
-- 🧭 **The ecosystem** — Anthropic reference servers, first-party SaaS servers, community registries
-- 🔒 **Security** — transport-dependent; local stdio servers inherit user perms; remote needs OAuth/keys
-- 🆚 **MCP vs tool_use** — MCP is the discovery/transport layer above tool_use; they compose
+- 🧬 **What MCP is**, JSON-RPC 2.0-based interop protocol for AI tool integration; announced Nov 25, 2024
+- 🏛️ **Architecture**, clients (Claude Desktop, Cursor, claude-code) ↔ MCP client lib ↔ servers (local or remote)
+- 🧱 **Three primitives**, tools, resources, prompts
+- 🚌 **Two main transports**, stdio (local subprocess) and HTTP+SSE (remote)
+- 🤝 **Handshake**, `initialize` → `initialized` capability negotiation
+- 🛠️ **How to build a server**, Python and TypeScript SDKs, <100 LOC for a basic one
+- 🧭 **The ecosystem**, Anthropic reference servers, first-party SaaS servers, community registries
+- 🔒 **Security**, transport-dependent; local stdio servers inherit user perms; remote needs OAuth/keys
+- 🆚 **MCP vs tool_use**, MCP is the discovery/transport layer above tool_use; they compose
 - 📊 **Block's Goose / Cursor / Claude Desktop** as real adopters
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🛠️ **Hands-on:** Install Claude Desktop. Add the filesystem MCP server. Ask Claude to list files in your home directory. Then build the `hello-world` server above and add it.
-5. ➡️ Move on: [Module 6 — Agentic Patterns](../Module-06-Agentic-Patterns/Reading.md)
+5. ➡️ Move on: [Module 6, Agentic Patterns](../Module-06-Agentic-Patterns/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 6](../Module-06-Agentic-Patterns/Reading.md) shows how to build full agent loops on top of these primitives. [Module 8](../Module-08-Production-Patterns-Safety/Reading.md) covers MCP security in prod.
@@ -558,6 +558,6 @@ You now know:
 - 📄 [*Reference MCP servers*](https://github.com/modelcontextprotocol/servers). The Anthropic-maintained collection.
 
 **Case-study / practitioner:**
-- 📖 Block / Square. [*Introducing Goose*](https://block.github.io/goose/) — open-source Claude-powered agent.
-- 📖 Anthropic. [*Introducing the Model Context Protocol*](https://www.anthropic.com/news/model-context-protocol) — Nov 25, 2024 launch announcement.
+- 📖 Block / Square. [*Introducing Goose*](https://block.github.io/goose/), open-source Claude-powered agent.
+- 📖 Anthropic. [*Introducing the Model Context Protocol*](https://www.anthropic.com/news/model-context-protocol), Nov 25, 2024 launch announcement.
 - 📖 Public MCP server registries: [mcp.so](https://mcp.so) and similar listings.

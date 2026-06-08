@@ -28,7 +28,7 @@
 ```
 User → Event → Parameters (25/event; 50 custom dimensions; 50 custom metrics)
         ↓
-   Daily BigQuery export (free, sandbox tier; NOT backfilled — enable day 1)
+   Daily BigQuery export (free, sandbox tier; NOT backfilled, enable day 1)
 ```
 
 **Reporting identities:** Blended (2024 default) · Observed · Device-based.
@@ -106,7 +106,7 @@ Long-term:    $6.90/cu.ft after 271 days
 
 ---
 
-## 🎁 Walmart Connect — Why It Matters
+## 🎁 Walmart Connect, Why It Matters
 
 ```
 2024 ad revenue:    $4B+ (~30% YoY)
@@ -154,19 +154,19 @@ Retail media: Walmart Connect MMM, Amazon Marketing Cloud
 
 ## 🗓️ Key Dates
 
-- **1960s-70s** — MMM invented (Marion Harper / McCann)
-- **2004** — Hau Lee Triple-A Supply Chain (HBR)
-- **April 26, 2021** — iOS 14.5 ATT
-- **November 2021** — Meta open-sources Robyn
-- **July 1, 2023** — Universal Analytics retired
-- **2023** — GA4 DDA default · Walmart Connect MMM-as-a-service
-- **2024** — Google Meridian · Walmart Connect $4B+ · Vizio acquisition closes
+- **1960s-70s**, MMM invented (Marion Harper / McCann)
+- **2004**, Hau Lee Triple-A Supply Chain (HBR)
+- **April 26, 2021**, iOS 14.5 ATT
+- **November 2021**, Meta open-sources Robyn
+- **July 1, 2023**, Universal Analytics retired
+- **2023**, GA4 DDA default · Walmart Connect MMM-as-a-service
+- **2024**, Google Meridian · Walmart Connect $4B+ · Vizio acquisition closes
 
 ---
 
 ## ✏️ Quick Self-Check
 
-1. GA4 fundamental unit + key events? 2. DDA vs MMM vs incrementality — when each? 3. Amazon take-rate + Q4 storage spike? 4. Walmart Connect MMM advantage? 5. Why geo-holdout > platform lift? 6. Why enable BigQuery export day 1? 7. Hau Lee's Triple-A?
+1. GA4 fundamental unit + key events? 2. DDA vs MMM vs incrementality, when each? 3. Amazon take-rate + Q4 storage spike? 4. Walmart Connect MMM advantage? 5. Why geo-holdout > platform lift? 6. Why enable BigQuery export day 1? 7. Hau Lee's Triple-A?
 
 If 7/7 in 90 sec, you own this module. ✅
 

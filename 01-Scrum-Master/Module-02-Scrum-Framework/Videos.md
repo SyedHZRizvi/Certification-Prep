@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The Sprint — The Heart of Scrum</p>
+      <p class="vg-title">The Sprint, The Heart of Scrum</p>
       <p class="vg-creator">Lucas Caicoya</p>
       <span class="vg-duration">⏱ 10 min · Why Sprints are timeboxed</span>
     </div>

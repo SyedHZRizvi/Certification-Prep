@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">"Attention Is All You Need" — The Transformer Explained</p>
+      <p class="vg-title">"Attention Is All You Need", The Transformer Explained</p>
       <p class="vg-creator">Yannic Kilcher / Andrej Karpathy</p>
       <span class="vg-duration">⏱ 20 min · The foundational paper walkthrough</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gemini Launch — Demis Hassabis Keynote</p>
+      <p class="vg-title">Gemini Launch, Demis Hassabis Keynote</p>
       <p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 18 min · The Dec 2023 unveiling</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gemini 1.5 Pro — 1M Token Context Demo</p>
+      <p class="vg-title">Gemini 1.5 Pro, 1M Token Context Demo</p>
       <p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 12 min · Why 1M context changes things</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gemini Family — Nano vs Flash vs Pro vs Ultra</p>
+      <p class="vg-title">Gemini Family, Nano vs Flash vs Pro vs Ultra</p>
       <p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 10 min · Picking the right tier</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Google AI Principles — The Governance Doc</p>
+      <p class="vg-title">Google AI Principles, The Governance Doc</p>
       <p class="vg-creator">Google AI</p>
       <span class="vg-duration">⏱ 15 min · 7 principles + 4 red lines</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Gemini vs GPT vs Claude — Honest Comparison</p>
+      <p class="vg-title">Gemini vs GPT vs Claude, Honest Comparison</p>
       <p class="vg-creator">AI Explained / Matt Wolfe</p>
       <span class="vg-duration">⏱ 15 min · Model bake-off</span>
     </div>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Gemini 2.5 Pro — Thinking Mode</p>
+      <p class="vg-title">Gemini 2.5 Pro, Thinking Mode</p>
       <p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 14 min · Extended reasoning on the latest tier</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AlphaGo — The Documentary</p>
+      <p class="vg-title">AlphaGo, The Documentary</p>
       <p class="vg-creator">DeepMind / Greg Kohs</p>
       <span class="vg-duration">⏱ 90 min · DeepMind's defining moment</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AlphaFold 2 — Nobel-Tier Protein Folding</p>
+      <p class="vg-title">AlphaFold 2, Nobel-Tier Protein Folding</p>
       <p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 25 min · Science from the same lab</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Mercado Libre — Vertex AI Case Study</p>
+      <p class="vg-title">Mercado Libre, Vertex AI Case Study</p>
       <p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 18 min · Real-world Vertex deployment</span>
     </div>
@@ -147,7 +147,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Project Astra — Real-Time Multimodal Agent</p>
+      <p class="vg-title">Project Astra, Real-Time Multimodal Agent</p>
       <p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 12 min · The future of Gemini</span>
     </div>

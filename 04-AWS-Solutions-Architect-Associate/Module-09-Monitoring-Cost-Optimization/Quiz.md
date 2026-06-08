@@ -108,7 +108,7 @@ D. Only in us-east-1
 A. Management Events
 B. Data Events (opt-in)
 C. Insight Events
-D. None — S3 has its own log
+D. None, S3 has its own log
 
 ---
 
@@ -176,7 +176,7 @@ D. CloudTrail alone
 
 ---
 
-### Q22. Spend alert from CloudWatch billing metric vs AWS Budgets — key difference: *(Evaluate)*
+### Q22. Spend alert from CloudWatch billing metric vs AWS Budgets, key difference: *(Evaluate)*
 A. They are identical
 B. Budgets supports forecasted-spend alerts and usage tracking; billing metric is single-threshold
 C. Budgets is paid; metric is free

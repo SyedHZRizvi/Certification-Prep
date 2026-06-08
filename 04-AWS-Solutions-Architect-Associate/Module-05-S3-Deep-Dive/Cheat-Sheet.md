@@ -67,8 +67,8 @@ Requires: **versioning ON** on source AND destination + replication IAM role.
 |---------|------|
 | Versioning | Keep every version; delete creates a marker |
 | MFA Delete | Require MFA token to delete versions (root-only enable, CLI) |
-| Object Lock — Governance | Override possible with special perm |
-| Object Lock — Compliance | NOBODY can override during retention |
+| Object Lock, Governance | Override possible with special perm |
+| Object Lock, Compliance | NOBODY can override during retention |
 | Legal Hold | Indefinite hold, no retention period |
 
 ---
@@ -80,18 +80,18 @@ Requires: **versioning ON** on source AND destination + replication IAM role.
 | Multipart Upload | Files > 100 MB |
 | Transfer Acceleration | Global users uploading fast |
 | Byte-Range Fetch | Parallel GET of large object |
-| S3 Select | SQL on CSV/JSON/Parquet — partial read |
+| S3 Select | SQL on CSV/JSON/Parquet, partial read |
 
 ---
 
 ## 🛡️ Access Control Stack
 
-1. **Block Public Access (BPA)** — Account + bucket level. Overrides everything else.
-2. **Bucket Policy** — Resource-based JSON. Primary cross-account tool.
-3. **IAM Policy** — Identity-based.
-4. **ACL** — Legacy. Mostly disabled by default.
-5. **Access Points** — Per-app endpoints with own policies.
-6. **VPC Endpoint Policy** — Limit which buckets a VPC can talk to.
+1. **Block Public Access (BPA)**, Account + bucket level. Overrides everything else.
+2. **Bucket Policy**, Resource-based JSON. Primary cross-account tool.
+3. **IAM Policy**, Identity-based.
+4. **ACL**, Legacy. Mostly disabled by default.
+5. **Access Points**, Per-app endpoints with own policies.
+6. **VPC Endpoint Policy**, Limit which buckets a VPC can talk to.
 
 ---
 

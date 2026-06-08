@@ -1,6 +1,6 @@
 # Module 10: Production Patterns & Capstone Case Studies 🏁
 
-> **Why this module matters:** Modules 1–9 gave you the components. This module is the *architect's tour* — five canonical real-world deployments deconstructed end-to-end, the cost-optimization playbook, the security checklist, and a capstone exercise that asks you to design a Google-Cloud-AI architecture for a scenario you have not seen. Pass this module and you can walk into any Fortune 500 boardroom and defend a Vertex AI deployment design.
+> **Why this module matters:** Modules 1–9 gave you the components. This module is the *architect's tour*, five canonical real-world deployments deconstructed end-to-end, the cost-optimization playbook, the security checklist, and a capstone exercise that asks you to design a Google-Cloud-AI architecture for a scenario you have not seen. Pass this module and you can walk into any Fortune 500 boardroom and defend a Vertex AI deployment design.
 
 > **Prerequisites for this module.** Modules 1–9 complete. You should be able to draw the Vertex AI MLOps loop, name the four safety_setting categories, and explain the difference between Vertex AI Search and Vector Search without looking.
 
@@ -8,22 +8,22 @@
 
 ## 📖 A Story: The Day McDonald's Cancelled, Wendy's Doubled Down
 
-It is June 2024. McDonald's announces it is ending its partnership with IBM on AI-powered drive-thru voice ordering after three years of testing. Press coverage focuses on order-accuracy issues — viral TikToks of customers being added orders of dozens of Big Macs, repeatedly. By contrast, six months earlier, Wendy's renewed and expanded its **FreshAI** partnership with Google Cloud — same hardware concept (drive-thru voice ordering), different software stack (Vertex AI + Gemini + Conversational Agents + Chirp), better order-accuracy reports, and aggressive rollout.
+It is June 2024. McDonald's announces it is ending its partnership with IBM on AI-powered drive-thru voice ordering after three years of testing. Press coverage focuses on order-accuracy issues viral TikToks of customers being added orders of dozens of Big Macs, repeatedly. By contrast, six months earlier, Wendy's renewed and expanded its **FreshAI** partnership with Google Cloud same hardware concept (drive-thru voice ordering), different software stack (Vertex AI + Gemini + Conversational Agents + Chirp), better order-accuracy reports, and aggressive rollout.
 
 What did Wendy's and Google do differently? Per Wendy's Q2 2024 investor call + Google Cloud Next 2024 keynote analysis, the difference came down to four architectural choices:
 
-1. **Native audio understanding** — Gemini's native multi-modal processed raw audio directly, eliminating a brittle transcription-then-LLM pipeline (the McDonald's/IBM stack apparently had separate transcription + understanding steps; errors compounded).
-2. **Deterministic state machine for order flow** — Conversational Agents owned the menu/customization state; Gemini was confined to disambiguation and synthesis. The result: no model "creativity" on menu items.
-3. **Grounded responses** — Vertex AI Search indexed over the actual menu; if a customer asked about an item, the response was grounded against the menu, never hallucinated.
-4. **Tight escalation path** — Conversational Agents explicitly defined "if ambiguous, escalate to human." Wendy's measured deflection rate, not just AI completion.
+1. **Native audio understanding**, Gemini's native multi-modal processed raw audio directly, eliminating a brittle transcription-then-LLM pipeline (the McDonald's/IBM stack apparently had separate transcription + understanding steps; errors compounded).
+2. **Deterministic state machine for order flow**, Conversational Agents owned the menu/customization state; Gemini was confined to disambiguation and synthesis. The result: no model "creativity" on menu items.
+3. **Grounded responses**, Vertex AI Search indexed over the actual menu; if a customer asked about an item, the response was grounded against the menu, never hallucinated.
+4. **Tight escalation path**, Conversational Agents explicitly defined "if ambiguous, escalate to human." Wendy's measured deflection rate, not just AI completion.
 
-The lesson is not "Google won, IBM lost" — IBM still ships great AI for plenty of workloads. The lesson is **architecture matters more than model choice**. The same Gemini model with a worse architecture would fail; a different model with this architecture might also work. The exam tests whether you can identify the *architectural pattern*, not just name the products.
+The lesson is not "Google won, IBM lost", IBM still ships great AI for plenty of workloads. The lesson is **architecture matters more than model choice**. The same Gemini model with a worse architecture would fail; a different model with this architecture might also work. The exam tests whether you can identify the *architectural pattern*, not just name the products.
 
 This module deconstructs five such architectures and ends with a capstone that asks you to design one.
 
 ---
 
-## 🍔 Case Study 1 — Wendy's FreshAI Drive-Thru
+## 🍔 Case Study 1, Wendy's FreshAI Drive-Thru
 
 **Workload:** Voice-driven drive-thru order taking; replaces or augments human order taker.
 **Scale:** 6,000+ restaurants (rollout in progress through 2026); millions of orders/day at scale.
@@ -34,9 +34,9 @@ This module deconstructs five such architectures and ends with a capstone that a
 ```
 [Customer voice at drive-thru]
    ↓
-[Chirp ASR — real-time speech-to-text + intent confidence]
+[Chirp ASR, real-time speech-to-text + intent confidence]
    ↓
-[Vertex AI Agent Builder: Conversational Agent — order flow state machine]
+[Vertex AI Agent Builder: Conversational Agent, order flow state machine]
    ├─ Page: Welcome
    ├─ Page: CollectItems (slot: menu_item)
    ├─ Page: Customize (slots: size, sides, drink, customizations)
@@ -50,11 +50,11 @@ This module deconstructs five such architectures and ends with a capstone that a
    - get_pricing(items)
    - submit_order(items)
    ↓
-[Vertex AI Search — grounding for menu items + allergens + regional variations]
+[Vertex AI Search, grounding for menu items + allergens + regional variations]
    ↓
-[Gemini Flash — disambiguation + upsell synthesis]
+[Gemini Flash, disambiguation + upsell synthesis]
    ↓
-[Chirp TTS — brand-voice spoken output]
+[Chirp TTS, brand-voice spoken output]
    ↓
 [Customer hears response]
 ```
@@ -63,7 +63,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 - **Conversational Agents** owns the order *state*, not Gemini. Gemini only handles language understanding + creative synthesis.
 - **Vertex AI Search** grounds against the menu. Hallucinated menu items would be a brand crisis.
-- **Flash** for the disambiguation step — sub-second latency budget.
+- **Flash** for the disambiguation step, sub-second latency budget.
 - **Region-pinned** per franchise area; reduces round-trip latency.
 - **Cloud Audit Logs** with per-restaurant tagging for compliance + analytics.
 - **Kill switch** in the Agent Builder console for any restaurant having quality issues.
@@ -76,7 +76,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 ---
 
-## 🚗 Case Study 2 — Mercedes-Benz MBUX Voice Assistant
+## 🚗 Case Study 2, Mercedes-Benz MBUX Voice Assistant
 
 **Workload:** In-car voice assistant with rich function calling (navigation, climate, media, communication, e-commerce).
 **Scale:** Millions of new Mercedes vehicles annually starting model-year 2024+; per-driver session.
@@ -87,13 +87,13 @@ This module deconstructs five such architectures and ends with a capstone that a
 ```
 [Driver voice (microphone)]
    ↓
-[On-device Gemini Nano — wake word + lightweight intent (no network)]
+[On-device Gemini Nano, wake word + lightweight intent (no network)]
    ↓ (if needs cloud:)
 [Vehicle modem → Vertex AI in driver's region (EU/US/APAC)]
    ↓
 [Chirp ASR with vehicle-noise-tuned models]
    ↓
-[Vertex AI Agent Builder: Conversational Agent — multi-domain flow]
+[Vertex AI Agent Builder: Conversational Agent, multi-domain flow]
    ├─ navigation_flow
    ├─ climate_flow
    ├─ media_flow
@@ -107,12 +107,12 @@ This module deconstructs five such architectures and ends with a capstone that a
    - send_message(contact, body)
    - search_business(category, near, open_now)
    ↓
-[Vertex AI Search grounding — for businesses, points of interest]
-[Grounding with Google Search — for real-time data (traffic, weather)]
+[Vertex AI Search grounding, for businesses, points of interest]
+[Grounding with Google Search, for real-time data (traffic, weather)]
    ↓
-[Gemini Pro — synthesis + contextual personalization]
+[Gemini Pro, synthesis + contextual personalization]
    ↓
-[Chirp TTS — Mercedes brand voice]
+[Chirp TTS, Mercedes brand voice]
    ↓
 [Spoken response + in-display UI update]
 ```
@@ -133,7 +133,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 ---
 
-## 🛒 Case Study 3 — Shopify Sidekick (Merchant AI Assistant)
+## 🛒 Case Study 3, Shopify Sidekick (Merchant AI Assistant)
 
 **Workload:** AI assistant for Shopify merchants helping with store management, product description writing, marketing copy, sales analytics queries, action automation.
 **Scale:** Hundreds of thousands of Shopify merchants.
@@ -150,7 +150,7 @@ This module deconstructs five such architectures and ends with a capstone that a
    ↓
 [ADK multi-step orchestration]
    ↓
-[Function calls — Shopify Admin API]
+[Function calls, Shopify Admin API]
    - get_products(filter)
    - update_product(id, fields)
    - get_orders(date_range, filter)
@@ -158,9 +158,9 @@ This module deconstructs five such architectures and ends with a capstone that a
    - create_discount_code(rules)
    - send_email_campaign(audience, content)
    ↓
-[Vertex AI Search — Shopify help docs grounding]
+[Vertex AI Search, Shopify help docs grounding]
    ↓
-[Conversational Agents — for "guided flow" features ("set up Black Friday campaign")]
+[Conversational Agents, for "guided flow" features ("set up Black Friday campaign")]
    ↓
 [Gemini synthesis with cited sources]
    ↓
@@ -171,7 +171,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 - **Multi-tenant isolation:** per-merchant service-account scoping for tool calls; one merchant's tools cannot reach another's data.
 - **Context caching** for the Shopify-help-docs grounding context (stable across merchants).
-- **ADK** for multi-step ("show me the best-selling product, then draft a promotion email for it") — multi-tool, multi-turn.
+- **ADK** for multi-step ("show me the best-selling product, then draft a promotion email for it"), multi-tool, multi-turn.
 - **Conversational Agents** for "wizard"-style flows.
 - **Function calling** with strict allow-listed tool surfaces per merchant tier.
 
@@ -183,7 +183,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 ---
 
-## 📷 Case Study 4 — Google Photos with Gemini
+## 📷 Case Study 4, Google Photos with Gemini
 
 **Workload:** Photo organization + semantic search across the user's library.
 **Scale:** Billions of users; trillions of photos.
@@ -223,7 +223,7 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 ### Key architectural choices
 
-- **Pre-compute per photo** at upload time — search latency is dominated by indexing freshness, not query inference.
+- **Pre-compute per photo** at upload time, search latency is dominated by indexing freshness, not query inference.
 - **Hybrid retrieval:** ANN over embeddings + keyword on entities + structured filters on date/location.
 - **Per-user index:** strict tenant isolation; one user's photos cannot leak to another.
 - **Gemini as analysis pipeline**, not query-time inference (mostly): keeps cost predictable.
@@ -236,9 +236,9 @@ This module deconstructs five such architectures and ends with a capstone that a
 
 ---
 
-## 🏥 Case Study 5 — Verily Med-PaLM 2 Clinical Decision Support
+## 🏥 Case Study 5, Verily Med-PaLM 2 Clinical Decision Support
 
-**Workload:** Clinical-decision support — physician asks a clinical question, gets evidence-based suggestion + citations to literature.
+**Workload:** Clinical-decision support, physician asks a clinical question, gets evidence-based suggestion + citations to literature.
 **Scale:** Pilot deployments in three hospital systems (low volume, high stakes).
 **Constraints:** HIPAA-compliant; per-patient privacy; clinician-in-the-loop required; every response must cite literature; auditable.
 
@@ -261,17 +261,17 @@ This module deconstructs five such architectures and ends with a capstone that a
    ↓
 [SynthID watermarking enabled]
    ↓
-[Clinician-in-the-loop review — no output reaches patient chart unsigned]
+[Clinician-in-the-loop review, no output reaches patient chart unsigned]
    ↓
 [Audit log: every call tagged with physician identity, patient ID, response, citations]
 ```
 
 ### Key architectural choices
 
-- **Vertex AI in HIPAA-eligible region + signed BAA + CMEK + VPC-SC** — the minimum HIPAA stack.
-- **Specialist model (Med-PaLM 2)** chosen over generic Gemini — domain-tuned matters.
-- **Grounding is mandatory** — hallucinated medical advice could kill someone.
-- **Clinician-in-the-loop** is the safety net — the model is a tool, not a decision-maker.
+- **Vertex AI in HIPAA-eligible region + signed BAA + CMEK + VPC-SC**, the minimum HIPAA stack.
+- **Specialist model (Med-PaLM 2)** chosen over generic Gemini, domain-tuned matters.
+- **Grounding is mandatory**, hallucinated medical advice could kill someone.
+- **Clinician-in-the-loop** is the safety net, the model is a tool, not a decision-maker.
 - **Audit trail** is regulatory.
 
 ### Lessons
@@ -492,7 +492,7 @@ This is the kind of full-system answer the PMLE exam wants from you in scenario 
 
 ---
 
-## 🎓 Key Terms (Module 10 — Synthesis)
+## 🎓 Key Terms (Module 10, Synthesis)
 
 | Term | Definition |
 |------|------------|
@@ -519,15 +519,15 @@ This is the kind of full-system answer the PMLE exam wants from you in scenario 
 
 You now know:
 
-- 🍔 **Wendy's FreshAI** — deterministic flow + grounded Gemini for drive-thru
-- 🚗 **Mercedes MBUX** — hybrid on-device + cloud for in-car
-- 🛒 **Shopify Sidekick** — multi-tenant ADK + Conversational Agents for SaaS AI
-- 📷 **Google Photos** — batch-index with Gemini + query with vectors
-- 🏥 **Verily Med-PaLM 2** — HIPAA-grade clinical decision support
-- 💰 **Cost optimization playbook** — 8-step
-- 🛡️ **Security checklist** — 18 items
-- 🆚 **Cross-cloud comparison** — Google vs AWS vs Azure
-- 🎓 **Capstone exercise** — full claims-processing architecture
+- 🍔 **Wendy's FreshAI**, deterministic flow + grounded Gemini for drive-thru
+- 🚗 **Mercedes MBUX**, hybrid on-device + cloud for in-car
+- 🛒 **Shopify Sidekick**, multi-tenant ADK + Conversational Agents for SaaS AI
+- 📷 **Google Photos**, batch-index with Gemini + query with vectors
+- 🏥 **Verily Med-PaLM 2**, HIPAA-grade clinical decision support
+- 💰 **Cost optimization playbook**, 8-step
+- 🛡️ **Security checklist**, 18 items
+- 🆚 **Cross-cloud comparison**, Google vs AWS vs Azure
+- 🎓 **Capstone exercise**, full claims-processing architecture
 
 **Course total: ~90 hours of material, 10 modules, 5 case studies, 1 capstone, 3 practice exams + 120 flashcards waiting.**
 

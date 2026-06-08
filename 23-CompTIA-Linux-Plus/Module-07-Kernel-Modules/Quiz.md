@@ -170,7 +170,7 @@ D. `df -h`
 
 ### Q21. A user reports `dmesg` is empty on a normally-running server. The MOST likely cause is: *(Analyze)*
 A. The kernel is broken
-B. The ring buffer was cleared (`dmesg --clear` was run) or has wrapped — use `journalctl -k` for persistence
+B. The ring buffer was cleared (`dmesg --clear` was run) or has wrapped, use `journalctl -k` for persistence
 C. The user lacks permissions
 D. dmesg is disabled
 
@@ -186,7 +186,7 @@ D. `lspci -t`
 
 ### Q23. Which is TRUE about XFS resize behavior? *(Evaluate)*
 A. XFS can grow AND shrink online
-B. XFS can grow (with `xfs_growfs`) but CANNOT shrink — only backup-mkfs-restore
+B. XFS can grow (with `xfs_growfs`) but CANNOT shrink, only backup-mkfs-restore
 C. XFS can only shrink
 D. XFS supports no online resize at all
 
@@ -283,7 +283,7 @@ You MUST shrink the FILESYSTEM FIRST (to move data within the new boundary), the
 Tree form by default, with mount points. `lsblk -f` adds fstype + UUID.
 
 ### Q14: **B. The snapshot LV fills up**
-LVM snapshots are CoW — they store changed blocks. If the source LV changes more than the snapshot can hold, the snapshot is invalidated.
+LVM snapshots are CoW, they store changed blocks. If the source LV changes more than the snapshot can hold, the snapshot is invalidated.
 
 ### Q15: **B. `partprobe` (or `partx -u`)**
 Tells the kernel to re-read partition tables. Especially useful after `parted` changes when the device is in use.
@@ -301,15 +301,15 @@ dmidecode reads SMBIOS tables. `-t bios`, `-t memory`, `-t system`, `-t processo
 After editing rules.d files, reload the rules. Then either `udevadm trigger` the device or unplug/replug.
 
 ### Q20: **B. `vgs`**
-The `vgs` output includes a `VFree` column — free space available for new LV allocation.
+The `vgs` output includes a `VFree` column, free space available for new LV allocation.
 
-### Q21: **B. Buffer cleared or wrapped — use `journalctl -k`**
+### Q21: **B. Buffer cleared or wrapped, use `journalctl -k`**
 The kernel ring buffer is finite in RAM. Heavy boot output or `dmesg --clear` can leave it empty. `journalctl -k` is persistent if journald is configured for `Storage=persistent`.
 
 ### Q22: **B. `lsusb -t`**
 Tree form shows the USB topology (host controllers, hubs, devices). Useful for figuring out which physical port a device is on.
 
-### Q23: **B. Grow only — no shrink**
+### Q23: **B. Grow only, no shrink**
 XFS deliberately doesn't support shrink. To shrink: backup, mkfs.xfs smaller, restore.
 
 ### Q24: **B. They remain in `/lib/modules/<old-version>/`**
@@ -355,4 +355,4 @@ Choice B skips LVM entirely (and uses raw disks, missing partitions). Choice C s
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Linux Security & Hardening](../Module-08-Security/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Linux Security & Hardening](../Module-08-Security/Reading.md)

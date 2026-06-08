@@ -26,7 +26,7 @@
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gesture Drawing for Animators — The Line of Action</p>
+      <p class="vg-title">Gesture Drawing for Animators, The Line of Action</p>
       <p class="vg-creator">Proko / Sycra</p>
       <span class="vg-duration">⏱ 20 min · What gesture means and why it matters</span>
     </div>
@@ -44,7 +44,7 @@
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Foreshortening — Perspective in Figure Drawing</p>
+      <p class="vg-title">Foreshortening, Perspective in Figure Drawing</p>
       <p class="vg-creator">Ctrl+Paint / Proko</p>
       <span class="vg-duration">⏱ 20 min · How depth works in a flat drawing</span>
     </div>
@@ -58,7 +58,7 @@
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Aaron Blaise — Drawing Animals for Animation</p>
+      <p class="vg-title">Aaron Blaise, Drawing Animals for Animation</p>
       <p class="vg-creator">Aaron Blaise</p>
       <span class="vg-duration">⏱ 20 min · Study-then-draw method from a Disney master</span>
     </div>
@@ -67,7 +67,7 @@
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Character Proportions — From Realistic to Stylized</p>
+      <p class="vg-title">Character Proportions, From Realistic to Stylized</p>
       <p class="vg-creator">Toniko Pantoja / Character Design References</p>
       <span class="vg-duration">⏱ 18 min · Head-to-body ratios across animation styles</span>
     </div>
@@ -76,7 +76,7 @@
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Why Animators Need Life Drawing — Professional Advice</p>
+      <p class="vg-title">Why Animators Need Life Drawing, Professional Advice</p>
       <p class="vg-creator">Animation Career Review / Bloop Animation</p>
       <span class="vg-duration">⏱ 15 min · The DreamWorks animator story in practice</span>
     </div>
@@ -99,7 +99,7 @@
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Building a Gesture Drawing Practice — Daily Habits</p>
+      <p class="vg-title">Building a Gesture Drawing Practice, Daily Habits</p>
       <p class="vg-creator">Sinix Design / Uncomfortable</p>
       <span class="vg-duration">⏱ 18 min · How to improve with 20 min/day</span>
     </div>
@@ -108,7 +108,7 @@
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Drawing from Imagination vs Reference — The Right Approach</p>
+      <p class="vg-title">Drawing from Imagination vs Reference, The Right Approach</p>
       <p class="vg-creator">Marc Brunet / Moderndayjames</p>
       <span class="vg-duration">⏱ 20 min · How professionals use reference without becoming dependent</span>
     </div>

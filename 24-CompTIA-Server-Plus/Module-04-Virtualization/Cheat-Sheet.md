@@ -22,7 +22,7 @@
 | **VMDK** | VMware |
 | **VHDX** (legacy: VHD) | Microsoft Hyper-V |
 | **qcow2** | KVM/QEMU |
-| **OVF / OVA** | Open Virtualization Format / Archive — portable |
+| **OVF / OVA** | Open Virtualization Format / Archive, portable |
 
 ---
 
@@ -57,7 +57,7 @@
 |---|---|
 | **HA** | Auto-restart VMs on surviving host after host fail (minutes downtime) |
 | **DRS** | Continuously balance load via live migration |
-| **FT** | Lockstep VM pair — zero downtime on host fail |
+| **FT** | Lockstep VM pair, zero downtime on host fail |
 | **Affinity** | "Keep these together" |
 | **Anti-affinity** | "Keep these apart" (DCs, DB replicas) |
 
@@ -113,7 +113,7 @@
 | vCPU | Virtual CPU presented to guest |
 | CPU **ready time** | Time vCPU is ready but waiting for physical core (high = overcommit problem) |
 | **Ballooning** | Cooperative guest driver reclaims unused RAM |
-| **TPS** | Transparent Page Sharing — dedup identical pages |
+| **TPS** | Transparent Page Sharing, dedup identical pages |
 | **Swap** | Last-resort hypervisor swap (perf collapse) |
 | **SR-IOV** | Direct NIC virtual function to VM (bypass vSwitch) |
 | Thin VMDK/VHDX | Disk grows as written |
@@ -160,11 +160,11 @@
 
 Cover the answers and recite:
 
-1. Type 1 vs Type 2 — production = which? ___
+1. Type 1 vs Type 2, production = which? ___
 2. 4 things needed for vMotion? ___
-3. Snapshot vs backup — why snapshot is NOT enough? ___
-4. Container vs VM — single biggest difference? ___
-5. Anti-affinity — give an example? ___
+3. Snapshot vs backup, why snapshot is NOT enough? ___
+4. Container vs VM, single biggest difference? ___
+5. Anti-affinity, give an example? ___
 6. K8s smallest scheduling unit? ___
 
 If you can answer all 6 in under 60 seconds, you own this module. ✅

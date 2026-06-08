@@ -4,7 +4,7 @@
 
 ---
 
-## 🧭 RAG vs Stuff — Decision Rule
+## 🧭 RAG vs Stuff, Decision Rule
 
 ```
 Per-query relevant corpus < ~150K tokens?
@@ -78,7 +78,7 @@ Ingestion cost (with full-doc caching): **~$1.02 per million tokens**.
 
 ---
 
-## 📑 Citations — Two Patterns
+## 📑 Citations, Two Patterns
 
 ### Inline (prompt-based)
 
@@ -131,7 +131,7 @@ Returns response with citation blocks containing character-offset spans.
 
 | Method | Notes |
 |--------|-------|
-| **Reciprocal Rank Fusion (RRF)** | Combine multiple result lists by rank reciprocals — robust default |
+| **Reciprocal Rank Fusion (RRF)** | Combine multiple result lists by rank reciprocals, robust default |
 | **Weighted score fusion** | Tune α × semantic_score + (1-α) × bm25_score |
 | **Cross-encoder rerank** | Best precision; higher latency |
 
@@ -231,7 +231,7 @@ Cost: **~$3/call** Sonnet at full 1M. Use when:
 ## ✏️ Quick Self-Check
 
 1. Decision rule for RAG vs stuff? ___
-2. Contextual Retrieval — what + headline number? ___
+2. Contextual Retrieval, what + headline number? ___
 3. Hybrid retrieval merging algorithm name? ___
 4. When does 1M-context beta justify its cost? ___
 5. Native Citations field on document content blocks? ___

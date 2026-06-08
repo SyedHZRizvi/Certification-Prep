@@ -228,7 +228,7 @@ D. Cryptojacker
 
 ### Q28 (Scenario). Pen-tester reports your web app accepts `id=42 UNION SELECT username, password FROM users--` in a query parameter and returns data. The MOST specific finding is: *(Create)*
 
-> *Create-level note:* this is best treated as a remediation-design exercise — identifying the bug *and* recommending the precise fix (Q5 covers fix; this question covers identification).
+> *Create-level note:* this is best treated as a remediation-design exercise, identifying the bug *and* recommending the precise fix (Q5 covers fix; this question covers identification).
 A. Improper error handling
 B. SQL injection (UNION-based)
 C. Insecure direct object reference
@@ -257,10 +257,10 @@ Input filtering helps but is bypassable; parameterized queries make injection st
 The malicious script is stored on the server and runs for every viewer.
 
 ### Q7: **A. CSRF**
-Cross-Site Request Forgery — victim's authenticated browser makes a state-changing request without their consent.
+Cross-Site Request Forgery, victim's authenticated browser makes a state-changing request without their consent.
 
 ### Q8: **A. SSRF**
-`169.254.169.254` is the AWS/Azure cloud metadata endpoint — classic SSRF target.
+`169.254.169.254` is the AWS/Azure cloud metadata endpoint, classic SSRF target.
 
 ### Q9: **B. Directory traversal**
 The `../../` pattern is the giveaway.
@@ -296,7 +296,7 @@ Forged 802.11 deauth/disassoc frames force clients off the AP.
 "Rogue AP" describes any unauthorized AP. "Evil twin" specifies impersonation of a legit SSID.
 
 ### Q20: **C. Password spraying**
-One password across many usernames — avoids per-user lockout.
+One password across many usernames, avoids per-user lockout.
 
 ### Q21: **B. Credential stuffing**
 Reusing stolen creds across services.
@@ -337,8 +337,8 @@ The `UNION SELECT` is the classic SQLi pattern for data extraction.
 
 - Each malware type with defining trait
 - OWASP Top 10 names
-- SQLi / XSS / CSRF / SSRF — what each does + best fix
-- Brute / dictionary / spraying / stuffing — one-line tell
+- SQLi / XSS / CSRF / SSRF, what each does + best fix
+- Brute / dictionary / spraying / stuffing, one-line tell
 - Each social engineering type by channel
 - The 7 psychological principles
 

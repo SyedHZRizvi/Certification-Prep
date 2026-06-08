@@ -1,27 +1,27 @@
 # Module 2: Identity & Entra ID Hybrid Integration 🆔
 
-> **Why this module matters:** Hybrid identity is the single biggest topic that bridges AZ-800 and AZ-801. Every modern Microsoft enterprise runs *both* on-prem AD and Microsoft Entra ID — and the exam ruthlessly tests when to use which sync engine, which sign-in method, which join state, and which licensing tier. Get this module wrong and the network module, the file-server module, and the Azure Arc module all collapse with it. Get it right and you've locked down a category that historically traps 30%+ of test-takers.
+> **Why this module matters:** Hybrid identity is the single biggest topic that bridges AZ-800 and AZ-801. Every modern Microsoft enterprise runs *both* on-prem AD and Microsoft Entra ID, and the exam ruthlessly tests when to use which sync engine, which sign-in method, which join state, and which licensing tier. Get this module wrong and the network module, the file-server module, and the Azure Arc module all collapse with it. Get it right and you've locked down a category that historically traps 30%+ of test-takers.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The forest/domain/OU model and FSMO roles — [Module 1](../Module-01-Active-Directory/Reading.md)
-> - Basic Microsoft Entra ID concepts (users, groups, conditional access) — [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md)
+> - The forest/domain/OU model and FSMO roles, [Module 1](../Module-01-Active-Directory/Reading.md)
+> - Basic Microsoft Entra ID concepts (users, groups, conditional access), [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md)
 > - HTTP/HTTPS basics, what TLS does, what a JWT is
 >
-> If those are shaky, pause and review. This module assumes you can already explain "what is Entra ID" — and gets straight to "how do we marry it to AD."
+> If those are shaky, pause and review. This module assumes you can already explain "what is Entra ID", and gets straight to "how do we marry it to AD."
 
 ---
 
 ## 🔗 A Story: The Doctor With Two Sets of Keys
 
-Dr. Rivera works at St. Augustine's, a 4,200-bed hospital system in Texas. Every morning she swipes her badge to enter the doctor's lounge — that's the **on-prem Active Directory** part. Same badge unlocks her office. Same badge logs her into the Cerner EHR. Same badge gets her into the radiology PACS. Inside the hospital, one identity rules everything.
+Dr. Rivera works at St. Augustine's, a 4,200-bed hospital system in Texas. Every morning she swipes her badge to enter the doctor's lounge, that's the **on-prem Active Directory** part. Same badge unlocks her office. Same badge logs her into the Cerner EHR. Same badge gets her into the radiology PACS. Inside the hospital, one identity rules everything.
 
-But Dr. Rivera also publishes research, reviews journal articles, signs into Microsoft 365 from her laptop at home, joins Teams calls from her phone at the airport, and accesses the hospital's Azure-hosted insurance-claim portal — all of which run on **Microsoft Entra ID**, the cloud directory.
+But Dr. Rivera also publishes research, reviews journal articles, signs into Microsoft 365 from her laptop at home, joins Teams calls from her phone at the airport, and accesses the hospital's Azure-hosted insurance-claim portal, all of which run on **Microsoft Entra ID**, the cloud directory.
 
 If those two identities aren't connected, Dr. Rivera lives in a horror movie: two passwords, two MFA methods, two help-desk queues, and on the day IT resets her password, she's locked out of half her tools for hours.
 
 The fix is **hybrid identity**: a sync engine that copies users from AD to Entra ID (and increasingly, attributes back the other way), a sign-in method that lets a single password work in both clouds, and a device-join model that makes both Windows and Azure see the laptop as "trusted."
 
-This module is about building exactly that bridge — and being able to answer Microsoft's favorite question: *"Given these requirements, which sync engine and which sign-in method should the admin choose?"*
+This module is about building exactly that bridge, and being able to answer Microsoft's favorite question: *"Given these requirements, which sync engine and which sign-in method should the admin choose?"*
 
 ---
 
@@ -31,7 +31,7 @@ Microsoft has two production sync agents, and the exam tests the choice between 
 
 | Feature | **Entra Connect Sync** (legacy) | **Entra Cloud Sync** (modern) |
 |---------|--------------------------------|------------------------------|
-| Where it runs | Single Windows Server, with SQL Server LocalDB or full SQL | Lightweight agent — install on 2+ servers for HA |
+| Where it runs | Single Windows Server, with SQL Server LocalDB or full SQL | Lightweight agent, install on 2+ servers for HA |
 | Memory/disk footprint | Heavy (SQL, full schema cache) | Light (no local DB; cloud rules) |
 | Source AD topology | Single multi-forest setup | **Multiple disconnected forests**, M&A scenarios |
 | Group writeback | Yes | Yes (general availability since 2023) |
@@ -55,7 +55,7 @@ Microsoft has two production sync agents, and the exam tests the choice between 
 - **Lightweight agent on 2+ servers** for HA without SQL Server
 - Pure cloud-first with PHS
 
-📌 **Both can coexist** in one tenant — Cloud Sync for one forest, Connect Sync for another. Microsoft documents this as "coexistence mode."
+📌 **Both can coexist** in one tenant, Cloud Sync for one forest, Connect Sync for another. Microsoft documents this as "coexistence mode."
 
 ---
 
@@ -63,7 +63,7 @@ Microsoft has two production sync agents, and the exam tests the choice between 
 
 Once a user is synced, **how** does Entra ID validate their password?
 
-### 1. Password Hash Sync (PHS) — the recommended default
+### 1. Password Hash Sync (PHS), the recommended default
 
 ```
 User types password at sign-in
@@ -103,7 +103,7 @@ A lightweight **PTA Agent** (install ≥3 for HA) sits behind your firewall and 
 **Cons:**
 - Sign-ins fail if all PTA Agents are offline
 - Requires the agents to maintain outbound 443 connectivity
-- Cannot fall back to PHS unless PHS is *also* enabled (it can be — coexistence is supported)
+- Cannot fall back to PHS unless PHS is *also* enabled (it can be, coexistence is supported)
 
 ### 3. Federation with AD FS
 
@@ -125,13 +125,13 @@ The on-prem **AD FS** farm (with WAP / Web Application Proxy in DMZ) becomes the
 - Sign-ins fail if AD FS is down
 - Microsoft is actively pushing customers *off* AD FS (announced retirement focus 2023+)
 
-🚨 **Trap on the exam:** Microsoft 2024+ guidance is *"Migrate from federation to cloud authentication (PHS or PTA + Seamless SSO)."* If a question describes a federation deployment and asks "What should the admin recommend going forward?" — the answer is almost always "migrate to PHS + Seamless SSO."
+🚨 **Trap on the exam:** Microsoft 2024+ guidance is *"Migrate from federation to cloud authentication (PHS or PTA + Seamless SSO)."* If a question describes a federation deployment and asks "What should the admin recommend going forward?", the answer is almost always "migrate to PHS + Seamless SSO."
 
 ---
 
 ## 🚪 Seamless SSO (SSSO)
 
-Seamless SSO works with **PHS or PTA** (not Federation — AD FS does its own SSO).
+Seamless SSO works with **PHS or PTA** (not Federation, AD FS does its own SSO).
 
 ### How it works
 1. Cloud Sync (or Connect Sync) creates a computer account in AD called `AZUREADSSOACC$`
@@ -152,7 +152,7 @@ New-AzureADSSOAuthenticationContext -CloudCredentials $creds
 Update-AzureADSSOForest -OnPremCredentials (Get-Credential)
 ```
 
-🔥 **MEMORIZE:** SSSO does *not* work with Entra Joined devices (no AD trust). Use **Primary Refresh Token (PRT)** on Entra Joined devices instead — the system gives SSO automatically.
+🔥 **MEMORIZE:** SSSO does *not* work with Entra Joined devices (no AD trust). Use **Primary Refresh Token (PRT)** on Entra Joined devices instead, the system gives SSO automatically.
 
 ---
 
@@ -171,14 +171,14 @@ For Windows 10/11 domain-joined devices to auto-Hybrid-Join Entra ID:
 1. Configure **device options** in Entra Connect Sync (one-time wizard)
 2. Make sure devices can reach `enterpriseregistration.windows.net` (port 443)
 3. (Pre-2018 devices) Use a GPO to deploy a scheduled task that runs `dsregcmd /join`
-4. Verify with `dsregcmd /status` — look for `AzureAdJoined : YES` and `DomainJoined : YES`
+4. Verify with `dsregcmd /status`, look for `AzureAdJoined : YES` and `DomainJoined : YES`
 
 ```cmd
-:: On any Windows 10/11 device — see the device's join state
+:: On any Windows 10/11 device, see the device's join state
 dsregcmd /status
 ```
 
-🚨 **Common confusion:** **Entra Joined** ≠ **Hybrid Entra Joined**. Entra Joined is *cloud-only* (no AD presence). Hybrid is *both*. The exam tests this distinction relentlessly — pick the right one based on whether the org still has on-prem dependencies the device needs to honor.
+🚨 **Common confusion:** **Entra Joined** ≠ **Hybrid Entra Joined**. Entra Joined is *cloud-only* (no AD presence). Hybrid is *both*. The exam tests this distinction relentlessly, pick the right one based on whether the org still has on-prem dependencies the device needs to honor.
 
 ---
 
@@ -203,11 +203,11 @@ Microsoft retired the legacy "MFA settings" page in **September 2025**. Today, a
 
 ## 🏢 Microsoft Entra Domain Services (Entra DS)
 
-Different beast. Entra DS = a **managed domain** in Azure that speaks **LDAP, NTLM, Kerberos** — for legacy apps that need on-prem-style AD but you don't want to run DCs.
+Different beast. Entra DS = a **managed domain** in Azure that speaks **LDAP, NTLM, Kerberos**, for legacy apps that need on-prem-style AD but you don't want to run DCs.
 
 | Feature | AD DS (on-prem) | Entra DS (managed) | Entra ID (cloud) |
 |---------|----------------|-------------------|------------------|
-| Domain controllers | You run them | Microsoft runs them | None — different protocol set |
+| Domain controllers | You run them | Microsoft runs them | None, different protocol set |
 | Schema | Editable | Not editable | Not user-editable |
 | LDAP / Kerberos / NTLM | Yes | Yes | No (OAuth/OIDC/SAML) |
 | Group Policy | Yes | Limited | No |
@@ -218,13 +218,13 @@ Different beast. Entra DS = a **managed domain** in Azure that speaks **LDAP, NT
 
 ---
 
-## 🌐 Cross-Tenant Access Settings (B2B/B2C — the 2024+ replacements)
+## 🌐 Cross-Tenant Access Settings (B2B/B2C, the 2024+ replacements)
 
 If you collaborate with a partner who also has an Entra ID tenant, modern cross-tenant access settings let you:
 
-- **Inbound** — what their users can do in your tenant
-- **Outbound** — what your users can do in their tenant
-- **Tenant restrictions** — block your users from signing into *other* tenants from corporate devices (defeats data exfil via personal Gmail-like Entra accounts)
+- **Inbound**, what their users can do in your tenant
+- **Outbound**, what your users can do in their tenant
+- **Tenant restrictions**, block your users from signing into *other* tenants from corporate devices (defeats data exfil via personal Gmail-like Entra accounts)
 
 This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern cross-tenant access settings, not just legacy B2B invitations.
 
@@ -250,29 +250,29 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 
 ---
 
-## 📊 Case Study — The 2023 Midnight Blizzard / Storm-0558 Entra ID Token-Signing Key Compromise
+## 📊 Case Study, The 2023 Midnight Blizzard / Storm-0558 Entra ID Token-Signing Key Compromise
 
-**Situation.** In July 2023, Microsoft disclosed that **Storm-0558** (a China-state-sponsored adversary tracked as APT15 / Salt Typhoon family) had forged Entra ID auth tokens for ~25 organizations including the US State Department, the US Department of Commerce, and at least one EU foreign ministry (Microsoft Security Response Center, *Mitigation for China-Based Threat Actor Storm-0558*, July 11 2023; CISA Cybersecurity Advisory AA23-193A). The root cause: Storm-0558 had stolen a **Microsoft Account (MSA) consumer signing key** in 2021, then exploited a validation flaw to use that *consumer* key to sign *enterprise* Entra ID tokens — a cross-trust-boundary bug Microsoft had not detected for almost two years. Affected tenants' Outlook Web Access and OWA-for-Business mail was accessible to the adversary; in some cases the adversary maintained access for weeks before the State Department's SOC noticed anomalous mail-API patterns in their **Microsoft Purview audit logs**.
+**Situation.** In July 2023, Microsoft disclosed that **Storm-0558** (a China-state-sponsored adversary tracked as APT15 / Salt Typhoon family) had forged Entra ID auth tokens for ~25 organizations including the US State Department, the US Department of Commerce, and at least one EU foreign ministry (Microsoft Security Response Center, *Mitigation for China-Based Threat Actor Storm-0558*, July 11 2023; CISA Cybersecurity Advisory AA23-193A). The root cause: Storm-0558 had stolen a **Microsoft Account (MSA) consumer signing key** in 2021, then exploited a validation flaw to use that *consumer* key to sign *enterprise* Entra ID tokens, a cross-trust-boundary bug Microsoft had not detected for almost two years. Affected tenants' Outlook Web Access and OWA-for-Business mail was accessible to the adversary; in some cases the adversary maintained access for weeks before the State Department's SOC noticed anomalous mail-API patterns in their **Microsoft Purview audit logs**.
 
 **Decision.** The US Cyber Safety Review Board (CSRB) published its formal review (March 2024) and concluded that the breach was **preventable**, naming five remediation areas Microsoft committed to:
 
-1. **Eliminate the dual-trust-zone signing flaw** — Entra ID enterprise tokens can no longer be validated against consumer MSA keys.
+1. **Eliminate the dual-trust-zone signing flaw**, Entra ID enterprise tokens can no longer be validated against consumer MSA keys.
 2. **Rotate all token-signing keys on a fixed cadence** and audit every signing operation.
-3. **Force audit log access into the lowest licensing tier** — previously Purview audit logs that revealed the breach were behind an E5 paywall, so most victims couldn't *detect* the compromise.
+3. **Force audit log access into the lowest licensing tier**, previously Purview audit logs that revealed the breach were behind an E5 paywall, so most victims couldn't *detect* the compromise.
 4. **Push customers to FIDO2 / passwordless** to harden the identity perimeter against the next class of attack.
-5. **Adopt the Secure Future Initiative (SFI)** — Microsoft's company-wide identity hardening commitment.
+5. **Adopt the Secure Future Initiative (SFI)**, Microsoft's company-wide identity hardening commitment.
 
-**Outcome.** Microsoft published the *Secure Future Initiative* (November 2023) and announced that all Purview standard audit logs would become free across all tiers (April 2024). State Department incident-response cost was estimated at $2.1M (House Oversight Committee testimony, October 2023). The biggest hybrid-identity-practitioner takeaway: even with cloud-only identity perfectly configured, *Microsoft itself can be compromised at the IdP layer* — meaning defense-in-depth at the **Conditional Access**, **device compliance**, and **continuous access evaluation (CAE)** layers is non-negotiable. Federation (AD FS) advocates argued — controversially — that on-prem token issuance would have prevented this *specific* attack class.
+**Outcome.** Microsoft published the *Secure Future Initiative* (November 2023) and announced that all Purview standard audit logs would become free across all tiers (April 2024). State Department incident-response cost was estimated at $2.1M (House Oversight Committee testimony, October 2023). The biggest hybrid-identity-practitioner takeaway: even with cloud-only identity perfectly configured, *Microsoft itself can be compromised at the IdP layer* meaning defense-in-depth at the **Conditional Access**, **device compliance**, and **continuous access evaluation (CAE)** layers is non-negotiable. Federation (AD FS) advocates argued controversially, that on-prem token issuance would have prevented this *specific* attack class.
 
 **Lesson for the exam / for practitioners.** AZ-801 will not ask about Storm-0558 by name, but it will test the building blocks of the response:
 
 - *Why* Microsoft recommends **PHS + Seamless SSO** over federation in 2026 (operational simplicity + Microsoft's commitment to harden its own IdP > the marginal benefit of on-prem token issuance, which Storm-0558 ironically vindicated).
 - *Why* **Conditional Access** with device-compliance enforcement matters even on cloud-only deployments (any layer can be compromised; never depend on a single control).
 - *Why* **CAE** is now default-on (revokes tokens within minutes of admin disable / risk detection, rather than waiting for the 1-hour access-token TTL).
-- *Why* **continuous logging and SIEM ingestion** (Defender for Cloud + Sentinel) matters more than ever — without logs, you cannot detect.
+- *Why* **continuous logging and SIEM ingestion** (Defender for Cloud + Sentinel) matters more than ever, without logs, you cannot detect.
 
 **Discussion (Socratic).**
-- **Q1.** Storm-0558 specifically used the stolen key to forge tokens for Outlook Web Access. Conditional Access policies *did* exist on the victim tenants — but the policies evaluated at sign-in only, and the forged tokens bypassed sign-in. **Continuous Access Evaluation (CAE)** is now default-on. Build the case that CAE is the single most important post-Storm-0558 control, and explain the operational trade-off (CAE can revoke tokens during a session, which feels disruptive to users).
+- **Q1.** Storm-0558 specifically used the stolen key to forge tokens for Outlook Web Access. Conditional Access policies *did* exist on the victim tenants, but the policies evaluated at sign-in only, and the forged tokens bypassed sign-in. **Continuous Access Evaluation (CAE)** is now default-on. Build the case that CAE is the single most important post-Storm-0558 control, and explain the operational trade-off (CAE can revoke tokens during a session, which feels disruptive to users).
 - **Q2.** A regulated financial-services firm with 8,000 employees still runs AD FS. Their CISO points to Storm-0558 and says, *"This is why we keep on-prem federation."* Argue both sides: does keeping AD FS reduce or increase risk in 2026?
 - **Q3.** Microsoft's published guidance in 2024 was "passwordless first." A 50-person nonprofit cannot afford FIDO2 hardware keys for everyone. What's the *practical* minimum bar for passwordless in this scenario, and how do you stage the rollout while still defending against the next IdP-layer attack?
 
@@ -285,12 +285,12 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 | "Entra Connect Sync supports multi-forest scenarios out of the box" | ❌ It supports one connector per forest in a single instance; **Cloud Sync** is better for disconnected multi-forest M&A |
 | "Cloud Sync supports Hybrid Entra Join device writeback" | ❌ Use Connect Sync for Hybrid Join |
 | "PTA agents send the password to Entra ID" | ❌ Password never leaves on-prem; only outbound 443 from the agent |
-| "SSSO works on Entra Joined (cloud-only) devices" | ❌ Use Primary Refresh Token (PRT) instead — SSSO is for AD-joined devices |
+| "SSSO works on Entra Joined (cloud-only) devices" | ❌ Use Primary Refresh Token (PRT) instead, SSSO is for AD-joined devices |
 | "AD FS is Microsoft's recommended sign-in method for 2026" | ❌ Microsoft is actively pushing customers OFF AD FS toward PHS + SSSO |
 | "Entra DS is the same as Entra Connect" | ❌ Entra DS = managed AD destination; Connect = sync engine |
 | "Entra Joined and Hybrid Entra Joined are the same thing" | ❌ Entra Joined = cloud-only device identity; Hybrid = both AD and Entra |
 | "PHS sends the plaintext password to Entra ID" | ❌ It re-hashes the on-prem MD4 hash with PBKDF2 + HMAC-SHA256 + salt |
-| "You must choose PHS OR PTA — they can't coexist" | ❌ They CAN coexist; PHS as fallback for PTA agent outages is supported |
+| "You must choose PHS OR PTA, they can't coexist" | ❌ They CAN coexist; PHS as fallback for PTA agent outages is supported |
 | "Federation gives the best user experience" | ❌ PHS + SSSO is now considered the best operational + user experience |
 
 ---
@@ -301,18 +301,18 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 |------|------------|
 | **Entra Connect Sync** | Legacy full-featured sync agent (one Windows server + SQL) |
 | **Entra Cloud Sync** | Lightweight modern sync agent (multi-instance, no SQL) |
-| **PHS** | Password Hash Sync — re-hashed AD password hash synced to Entra |
-| **PTA** | Pass-Through Authentication — on-prem agent validates passwords |
+| **PHS** | Password Hash Sync, re-hashed AD password hash synced to Entra |
+| **PTA** | Pass-Through Authentication, on-prem agent validates passwords |
 | **Federation** | AD FS (or 3rd party) issues SAML token to Entra |
-| **SSSO** | Seamless SSO — Kerberos-based silent sign-in for AD-joined devices |
-| **PRT** | Primary Refresh Token — Entra-issued token that gives SSO on Entra Joined devices |
-| **Entra Registered** | Personal/BYOD — cloud identity only, light management |
+| **SSSO** | Seamless SSO, Kerberos-based silent sign-in for AD-joined devices |
+| **PRT** | Primary Refresh Token, Entra-issued token that gives SSO on Entra Joined devices |
+| **Entra Registered** | Personal/BYOD, cloud identity only, light management |
 | **Entra Joined** | Cloud-only corporate device |
 | **Hybrid Entra Joined** | Both AD and Entra |
 | **Entra DS** | Managed AD-style domain in Azure (LDAP, Kerberos, NTLM) |
 | **Staging Mode** | Entra Connect DR (imports/syncs but does not export) |
 | **`AZUREADSSOACC$`** | Computer account in AD that backs SSSO |
-| **CAE** | Continuous Access Evaluation — near-real-time token revocation |
+| **CAE** | Continuous Access Evaluation, near-real-time token revocation |
 | **Cross-tenant access settings** | Modern B2B inbound/outbound + tenant restrictions |
 
 ---
@@ -322,10 +322,10 @@ This replaced/extended the older "B2B collaboration" model. AZ-801 tests modern 
 You now know:
 
 - 🌉 The difference between Entra Connect Sync and Entra Cloud Sync, and when each is the right answer
-- 🔐 PHS, PTA, and Federation — pros, cons, and Microsoft's 2026 recommendation
-- 🚪 Seamless SSO (SSSO) — Kerberos-based silent sign-in for AD-joined devices
+- 🔐 PHS, PTA, and Federation, pros, cons, and Microsoft's 2026 recommendation
+- 🚪 Seamless SSO (SSSO), Kerberos-based silent sign-in for AD-joined devices
 - 🪪 The three device join states: Entra Registered, Entra Joined, Hybrid Entra Joined
-- 🛂 Modern auth methods — Microsoft's passwordless push (FIDO2, Hello, passkeys)
+- 🛂 Modern auth methods, Microsoft's passwordless push (FIDO2, Hello, passkeys)
 - 🏢 Entra Domain Services for legacy LDAP/NTLM/Kerberos apps in Azure
 - 🌐 Cross-tenant access settings (replaces legacy B2B settings)
 - 🚨 The 10 most common exam traps in hybrid identity
@@ -345,9 +345,9 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **Connect Sync vs Cloud Sync after a merger.** Two companies merge — each has its own Entra ID tenant. The plan is to consolidate into one Entra tenant over 18 months. During the consolidation, the IT team must sync the *acquired* company's forest into the *surviving* tenant. Defend the choice between Entra Connect Sync (running on a new staging server) vs Cloud Sync (lightweight agent on existing servers). Which scales better for the eventual decommission of the acquired forest?
+1. **Connect Sync vs Cloud Sync after a merger.** Two companies merge, each has its own Entra ID tenant. The plan is to consolidate into one Entra tenant over 18 months. During the consolidation, the IT team must sync the *acquired* company's forest into the *surviving* tenant. Defend the choice between Entra Connect Sync (running on a new staging server) vs Cloud Sync (lightweight agent on existing servers). Which scales better for the eventual decommission of the acquired forest?
 2. **Federation in 2026.** A 9,000-employee Fortune-500 bank still runs AD FS because regulators require "on-prem token issuance for privileged users." Build the case that Microsoft's PHS + SSSO + Conditional Access + Privileged Identity Management is now operationally and security-wise *superior* to federation for the bank, and identify the one or two scenarios where AD FS still wins.
 3. **PHS and the privacy regulator.** A German subsidiary's data-protection officer (GDPR-influenced) refuses to allow any password-derived material to leave EU on-prem infrastructure. The org's parent in the US has standardized on PHS. Negotiate the architectural compromise: PTA-only with PHS off? Multi-region Connect Sync with EU isolation? AD FS for EU users only? Which preserves both compliance and operational simplicity?
 4. **Hybrid Join rollout for 12,000 devices.** A 12,000-device estate has 80% Windows 10/11 domain-joined laptops and 20% Macs. The IT director wants every Windows device Hybrid Entra Joined within 90 days. Build the realistic rollout plan: which prerequisites must be in place (Connect Sync version, network reachability of `enterpriseregistration.windows.net`, GPO for the Intranet Zone), and how do you handle the 20% of devices (Macs) that cannot Hybrid Join?
@@ -361,7 +361,7 @@ You now know:
 - 📖 [Choose the right authentication method for your hybrid identity solution](https://learn.microsoft.com/entra/identity/hybrid/connect/choose-ad-authn)
 - 📖 [Entra Cloud Sync vs Connect Sync comparison](https://learn.microsoft.com/entra/identity/hybrid/cloud-sync/what-is-cloud-sync)
 - 📖 [Plan a Microsoft Entra hybrid join implementation](https://learn.microsoft.com/entra/identity/devices/hybrid-join-plan)
-- 📖 US Cyber Safety Review Board, *Review of the Summer 2023 Microsoft Exchange Online Intrusion* (March 2024) — the canonical Storm-0558 post-mortem
-- 📖 Microsoft, *Secure Future Initiative* (November 2023 announcement; ongoing) — Microsoft's company-wide identity hardening commitment
-- 📖 NIST SP 800-63 *Digital Identity Guidelines* (Rev 3, 2017; Rev 4 draft 2024) — the canonical reference for authenticator assurance levels (AAL1–AAL3) that Entra's method strengths map to
+- 📖 US Cyber Safety Review Board, *Review of the Summer 2023 Microsoft Exchange Online Intrusion* (March 2024), the canonical Storm-0558 post-mortem
+- 📖 Microsoft, *Secure Future Initiative* (November 2023 announcement; ongoing), Microsoft's company-wide identity hardening commitment
+- 📖 NIST SP 800-63 *Digital Identity Guidelines* (Rev 3, 2017; Rev 4 draft 2024), the canonical reference for authenticator assurance levels (AAL1–AAL3) that Entra's method strengths map to
 - 📖 [Microsoft Entra security operations guide](https://learn.microsoft.com/entra/architecture/security-operations-introduction)

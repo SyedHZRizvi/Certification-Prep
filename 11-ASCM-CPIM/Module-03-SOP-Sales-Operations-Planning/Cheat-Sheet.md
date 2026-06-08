@@ -4,7 +4,7 @@
 
 ---
 
-## 📅 The 5-Step S&OP Process (Wallace) — MEMORIZE
+## 📅 The 5-Step S&OP Process (Wallace), MEMORIZE
 
 | # | Step | Who Leads | Output |
 |---|------|-----------|--------|
@@ -115,8 +115,8 @@ When you see these, often **wrong**:
 ## ✏️ Quick Self-Check
 
 1. List the 5 steps + who leads each. ___
-2. S&OP vs IBP — one key difference? ___
-3. Level vs Chase — when does each fit? ___
+2. S&OP vs IBP, one key difference? ___
+3. Level vs Chase, when does each fit? ___
 4. Below S&OP in the planning hierarchy is? ___
 5. Why family-level (not SKU-level)? ___
 

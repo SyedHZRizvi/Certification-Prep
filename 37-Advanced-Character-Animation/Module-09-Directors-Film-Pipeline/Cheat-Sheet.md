@@ -1,4 +1,4 @@
-# Module 9 Cheat Sheet — Directors, Notes, and the Film Pipeline 🎬
+# Module 9 Cheat Sheet, Directors, Notes, and the Film Pipeline 🎬
 
 ## Decoding Director's Notes
 
@@ -15,13 +15,13 @@
 
 ---
 
-## Revision Etiquette — 4 Rules
+## Revision Etiquette, 4 Rules
 
 ```
 1. NEVER argue in the review room
 2. IMPLEMENT the exact note FIRST (even if you disagree)
 3. Show the SAME shot from the SAME angle (only change what was noted)
-4. COMMUNICATE proactively — flag delays before they become surprises
+4. COMMUNICATE proactively, flag delays before they become surprises
 ```
 
 ---
@@ -32,7 +32,7 @@
 YES:  Implement the exact note as stated
 AND:  Optionally offer one variation that builds on it
 
-"I implemented the change you asked for — I also have a 
+"I implemented the change you asked for, I also have a 
  take with faster timing if you'd like to compare."
 ```
 
@@ -64,7 +64,7 @@ Conflicting notes between levels → Escalate to Director of Animation
 | First spline review (full team + director) | 15–30 min |
 | Revision pass | 1–3 days |
 | Final review | 15 min |
-| Approval | — |
+| Approval |, |
 
 ---
 
@@ -103,7 +103,7 @@ HANDLES: Add 4–8f held pose at start AND end of every shot
 | Handles | 4–8f of hold at shot start/end |
 | Approved | Director signed off; technically/creatively complete |
 | ShotGrid | Industry-standard shot tracking software |
-| Anim Sup | Animation Supervisor — your primary pipeline contact |
+| Anim Sup | Animation Supervisor, your primary pipeline contact |
 
 ---
 
@@ -111,10 +111,10 @@ HANDLES: Add 4–8f held pose at start AND end of every shot
 
 | Status Code | Meaning | Animator Action |
 |------------|---------|----------------|
-| wtg | Waiting — not yet started | Monitor for assignment |
+| wtg | Waiting, not yet started | Monitor for assignment |
 | ip | In progress | Update daily with new version |
 | rev | Ready for review | Upload latest version; notify supervisor |
-| fin | Final — approved | DO NOT mark without supervisor approval |
+| fin | Final, approved | DO NOT mark without supervisor approval |
 | hld | On hold | Confirm hold reason with supervisor |
 
 **CRITICAL:** Marking `fin` prematurely triggers downstream departments (FX, lighting, comp) to begin work on unfinished animation. This creates pipeline debt.
@@ -183,6 +183,6 @@ APPROVED SHOT REVISION PASSES (documented):
 | Handles: how many frames | 4–8 frames at shot start AND end |
 | ShotGrid "fin" risk | Triggers downstream departments to begin work on unfinished animation |
 | Approval chain order | Anim Sup → Director of Animation → Director → Producer |
-| Note conflict resolution | Escalate to Director of Animation — do not implement conflicting notes |
+| Note conflict resolution | Escalate to Director of Animation, do not implement conflicting notes |
 | "Animating to editorial" means | Edit length and cut points confirmed BEFORE blocking begins |
 | Pixar dailies culture key feature | Ugly early work expected; no career stigma for showing in-progress work |

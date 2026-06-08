@@ -4,7 +4,7 @@
 
 ---
 
-## 🛒 Google Performance Max (PMax) — Day-Zero Settings (MEMORIZE)
+## 🛒 Google Performance Max (PMax), Day-Zero Settings (MEMORIZE)
 
 ```
 1. Brand Exclusions          → MOST IMPORTANT day-zero setting
@@ -35,7 +35,7 @@ MMM:        Recast, Meta Robyn (open-source), Bain MMM
 Incrementality: Geo-holdouts (5-10% market, 4 weeks)
 ```
 
-**iOS 14.5 ATT — April 26, 2021** | **Opt-out: 70-75%** | **Meta 2022 impact: $10B**
+**iOS 14.5 ATT, April 26, 2021** | **Opt-out: 70-75%** | **Meta 2022 impact: $10B**
 
 ---
 
@@ -168,13 +168,13 @@ Healthy feed disapproval rate: **< 5%**.
 
 ## 🗓️ Key Dates
 
-- **April 26, 2021** — iOS 14.5 ATT
-- **Late 2021** — PMax launched
-- **July 2022** — Smart Shopping deprecated
-- **Late 2022** — ASC launched
-- **September 2023** — TikTok Shop US launch
-- **2023** — Temu $1.7B Meta+Google spend
-- **2024** — EU AI Act passed (disclosure required)
+- **April 26, 2021**, iOS 14.5 ATT
+- **Late 2021**, PMax launched
+- **July 2022**, Smart Shopping deprecated
+- **Late 2022**, ASC launched
+- **September 2023**, TikTok Shop US launch
+- **2023**, Temu $1.7B Meta+Google spend
+- **2024**, EU AI Act passed (disclosure required)
 
 ---
 

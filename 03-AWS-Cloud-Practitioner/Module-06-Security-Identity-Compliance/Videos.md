@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Security, Identity & Compliance
 
-> **How to use:** Security & Compliance is 30% of your exam — the LARGEST domain. Watch all Essentials twice if you have to. The Shared Responsibility Model video is the single highest-yield video in the whole course.
+> **How to use:** Security & Compliance is 30% of your exam, the LARGEST domain. Watch all Essentials twice if you have to. The Shared Responsibility Model video is the single highest-yield video in the whole course.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS Shared Responsibility Model — Every Detail Explained</p>
+      <p class="vg-title">AWS Shared Responsibility Model, Every Detail Explained</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 14 min · HIGHEST-yield video</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">IAM — Users, Groups, Roles, Policies Explained</p>
+      <p class="vg-title">IAM, Users, Groups, Roles, Policies Explained</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 12 min · Core IAM</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GuardDuty vs Macie vs Inspector — Which Detects What?</p>
+      <p class="vg-title">GuardDuty vs Macie vs Inspector, Which Detects What?</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 13 min · Service disambiguation</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">KMS, CloudHSM, Secrets Manager — Encryption Stack</p>
+      <p class="vg-title">KMS, CloudHSM, Secrets Manager, Encryption Stack</p>
       <p class="vg-creator">Tutorials Dojo</p>
       <span class="vg-duration">⏱ 11 min · Encryption services</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Organizations + SCPs — Multi-Account Done Right</p>
+      <p class="vg-title">AWS Organizations + SCPs, Multi-Account Done Right</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 10 min · Enterprise guardrails</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">CloudTrail vs Config — Who Did What vs What Changed</p>
+      <p class="vg-title">CloudTrail vs Config, Who Did What vs What Changed</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 8 min · Audit services</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Security Hub — One Dashboard for Everything</p>
+      <p class="vg-title">Security Hub, One Dashboard for Everything</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 20 min · Aggregator pattern</span>
     </div>
@@ -134,10 +134,10 @@
 
 ## ✅ After watching
 
-1. Shared Responsibility — give 3 things on each side.
-2. IAM Roles vs Users — when to use which?
-3. GuardDuty vs Macie vs Inspector — one-liner each.
-4. KMS vs CloudHSM — when to pick which?
-5. CloudTrail vs Config — what does each track?
+1. Shared Responsibility, give 3 things on each side.
+2. IAM Roles vs Users, when to use which?
+3. GuardDuty vs Macie vs Inspector, one-liner each.
+4. KMS vs CloudHSM, when to pick which?
+5. CloudTrail vs Config, what does each track?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

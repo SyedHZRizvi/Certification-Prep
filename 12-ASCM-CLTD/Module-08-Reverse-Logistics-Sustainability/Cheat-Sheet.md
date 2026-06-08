@@ -45,7 +45,7 @@
 
 ---
 
-## 🌳 Circular Economy — 7Rs
+## 🌳 Circular Economy, 7Rs
 
 ```
 Refuse → Reduce → Reuse → Refurbish/Remanufacture/Recycle → Recover → Dispose
@@ -165,7 +165,7 @@ Usually WRONG:
 
 1. 5 returns steps? ___
 2. Refurbish vs remanufacture? ___
-3. Scope 1, 2, 3 — one example each? ___
+3. Scope 1, 2, 3, one example each? ___
 4. Closed-loop vs circular economy? ___
 5. ISO 14001 vs ISO 14064? ___
 

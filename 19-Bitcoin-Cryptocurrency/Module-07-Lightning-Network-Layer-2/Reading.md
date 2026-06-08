@@ -1,11 +1,11 @@
 # Module 7: Lightning Network & Layer-2 ⚡
 
-> **Why this module matters:** Bitcoin's main chain settles ~7 transactions per second with ~10-minute finality. That is by design — the on-chain layer prioritizes security and verifiability over throughput. **Layer-2 protocols, especially the Lightning Network, are where Bitcoin transitions from "digital gold" to "digital cash."** This module explains how a single Bitcoin transaction can collateralize millions of off-chain payments via payment channels — and why El Salvador, Strike, Cash App, and most institutional payments rails in 2026 use Lightning.
+> **Why this module matters:** Bitcoin's main chain settles ~7 transactions per second with ~10-minute finality. That is by design the on-chain layer prioritizes security and verifiability over throughput. **Layer-2 protocols, especially the Lightning Network, are where Bitcoin transitions from "digital gold" to "digital cash."** This module explains how a single Bitcoin transaction can collateralize millions of off-chain payments via payment channels and why El Salvador, Strike, Cash App, and most institutional payments rails in 2026 use Lightning.
 
 > **Prerequisites for this module.** Before starting:
-> - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md) — HASH160, ECDSA, Schnorr
-> - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md) — 10-min blocks, mempool
-> - [Module 6 (Script & Programmability)](../Module-06-Bitcoin-Script-Programmability/Reading.md) — SegWit malleability fix, CSV, HTLC primitives
+> - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md), HASH160, ECDSA, Schnorr
+> - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md), 10-min blocks, mempool
+> - [Module 6 (Script & Programmability)](../Module-06-Bitcoin-Script-Programmability/Reading.md), SegWit malleability fix, CSV, HTLC primitives
 >
 > Lightning would have been *impossible* without SegWit's malleability fix. Module 6's coverage is the foundation here.
 
@@ -13,19 +13,19 @@
 
 ## ☕ A Story: A Country and Its 10-Million-Person Lightning Test
 
-**September 7, 2021**. The Republic of **El Salvador** — population ~6.5 million — makes Bitcoin **legal tender** alongside the US dollar, the first sovereign nation to do so. The government's distribution strategy involves giving every citizen $30 worth of BTC via a state-issued mobile wallet called **Chivo**, which uses the **Lightning Network** as its primary payment rail.
+**September 7, 2021**. The Republic of **El Salvador** population ~6.5 million makes Bitcoin **legal tender** alongside the US dollar, the first sovereign nation to do so. The government's distribution strategy involves giving every citizen $30 worth of BTC via a state-issued mobile wallet called **Chivo**, which uses the **Lightning Network** as its primary payment rail.
 
-The bet is bold: Lightning, a technology released in production by Lightning Labs only 3 years earlier, was supposed to instantly become the de-facto payments rail for a country. McDonald's, Starbucks, Pizza Hut, and Walmart — operating in El Salvador — accept Chivo-Lightning. So do roadside vendors who'd never previously had a payment terminal of any kind.
+The bet is bold: Lightning, a technology released in production by Lightning Labs only 3 years earlier, was supposed to instantly become the de-facto payments rail for a country. McDonald's, Starbucks, Pizza Hut, and Walmart operating in El Salvador accept Chivo-Lightning. So do roadside vendors who'd never previously had a payment terminal of any kind.
 
-What actually happened over 2021-2024 was messier than the marketing suggested. **Chivo had bugs.** **Onboarding KYC was a disaster.** Many citizens immediately cashed out their $30 of BTC into USD (~40% per Bank of El Salvador surveys). The Bitcoin Beach community at El Zonte — where the experiment had been bottom-up since 2019 — actually adopted Lightning for daily commerce; most of the rest of the country didn't.
+What actually happened over 2021-2024 was messier than the marketing suggested. **Chivo had bugs.** **Onboarding KYC was a disaster.** Many citizens immediately cashed out their $30 of BTC into USD (~40% per Bank of El Salvador surveys). The Bitcoin Beach community at El Zonte where the experiment had been bottom-up since 2019 actually adopted Lightning for daily commerce; most of the rest of the country didn't.
 
 But the *Lightning Network itself* did something it had never done at scale: it processed a country's worth of micropayment volume reliably, with sub-cent fees and sub-second latency, alongside a national fiat payment rail. As of 2026, **Strike, Cash App, Wallet of Satoshi, Phoenix, and Breez** between them carry significantly more Lightning volume monthly than Visa carries in mid-tier corridors like US-Philippines.
 
-That story is your first lesson: **Lightning is not a future technology. It is a deployed, working layer-2 payment network handling significant volume in 2026.** It's also a complex protocol with real failure modes — channel jamming, watchtower attacks, liquidity drains. This module covers both.
+That story is your first lesson: **Lightning is not a future technology. It is a deployed, working layer-2 payment network handling significant volume in 2026.** It's also a complex protocol with real failure modes, channel jamming, watchtower attacks, liquidity drains. This module covers both.
 
 ---
 
-## ⚖️ The Scaling Trilemma — Why L2 Exists
+## ⚖️ The Scaling Trilemma, Why L2 Exists
 
 The "blockchain trilemma" (informally coined around 2017 by Vitalik Buterin, formalized in many papers since) claims a blockchain can pick at most 2 of:
 
@@ -40,7 +40,7 @@ Security    Scalability
 
 Bitcoin's choice: maximize decentralization + security; throughput stays at ~7 tps. The trade-off feels unworkable for retail payments. **Layer-2 protocols are the resolution: Bitcoin L1 stays the settlement layer; L2 protocols (Lightning, RGB, sidechains) handle high-frequency commerce, settling to L1 periodically.**
 
-🎯 **MEMORIZE THIS.** Lightning is **not** a sidechain. Lightning channels are anchored in **regular Bitcoin transactions** on L1 — every channel open and close is a regular Bitcoin transaction. What happens *between* open and close is off-chain.
+🎯 **MEMORIZE THIS.** Lightning is **not** a sidechain. Lightning channels are anchored in **regular Bitcoin transactions** on L1, every channel open and close is a regular Bitcoin transaction. What happens *between* open and close is off-chain.
 
 ---
 
@@ -66,7 +66,7 @@ Three properties make this work:
 2. **The latest commitment transaction is signed by both parties.** Either can broadcast it unilaterally.
 3. **Older commitment transactions are revoked** via a clever penalty scheme: if Bob broadcasts an old (earlier-state) commitment to cheat, Alice can use a "revocation secret" to claim *all* of Bob's channel funds.
 
-🎯 **Exam tip.** The "revocation" mechanism — penalty if you broadcast an old state — is what makes Lightning trust-minimized. The economic game: cheating is detectable and severely punished.
+🎯 **Exam tip.** The "revocation" mechanism penalty if you broadcast an old state is what makes Lightning trust-minimized. The economic game: cheating is detectable and severely punished.
 
 ---
 
@@ -90,7 +90,7 @@ Production-quality implementations followed:
 
 ---
 
-## ⚡ HTLCs — Hash Time-Locked Contracts
+## ⚡ HTLCs, Hash Time-Locked Contracts
 
 To route a payment from Alice through Bob to Carol, the protocol needs a way to:
 
@@ -119,9 +119,9 @@ The timeout cascade (Carol's 24h < Bob's 48h) ensures Bob always has time to cla
 
 ---
 
-## 🛣️ Routing — How a Payment Finds Its Path
+## 🛣️ Routing, How a Payment Finds Its Path
 
-Lightning uses **source routing**: the sender (Alice's node) chooses the entire payment path. Why? Privacy — intermediate nodes only know about their immediate neighbors, not the full path.
+Lightning uses **source routing**: the sender (Alice's node) chooses the entire payment path. Why? Privacy, intermediate nodes only know about their immediate neighbors, not the full path.
 
 The routing protocol:
 
@@ -141,7 +141,7 @@ The Lightning protocol's onion construction is called **Sphinx** (Danezis & Gold
 | **Liquidity** | Available capacity in a specific direction (Alice→Bob vs Bob→Alice) |
 | **Channel age** | Time since the channel opened; older = more reliable |
 | **Base fee** | Fixed fee per HTLC routed (typically 0-100 sats) |
-| **Fee rate** | Proportional fee (ppm — parts per million; typically 1-2000 ppm) |
+| **Fee rate** | Proportional fee (ppm, parts per million; typically 1-2000 ppm) |
 
 🎯 **Exam tip.** A channel can have full capacity but zero liquidity in one direction (all funds on one side). Routing failures often stem from liquidity gaps, not capacity gaps. CBSA tests this.
 
@@ -171,7 +171,7 @@ The Lightning protocol's onion construction is called **Sphinx** (Danezis & Gold
 
 ---
 
-## 🏠 Lightning Wallets — The Ecosystem in 2026
+## 🏠 Lightning Wallets, The Ecosystem in 2026
 
 | Wallet | Type | Trust Model |
 |--------|------|-------------|
@@ -189,7 +189,7 @@ The Lightning protocol's onion construction is called **Sphinx** (Danezis & Gold
 
 ---
 
-## 🛡️ Watchtowers — Defending Against Cheaters
+## 🛡️ Watchtowers, Defending Against Cheaters
 
 A user goes offline; the counterparty broadcasts an old (favorable to them) commitment transaction. If the user doesn't notice within the CSV timeout (typically 144 blocks ≈ 24 hours), the cheat succeeds.
 
@@ -215,7 +215,7 @@ Lightning's hardest operational challenge: **liquidity management**. A channel m
 | Technique | What it does |
 |-----------|--------------|
 | **Loop out** (Lightning Labs) | Swap Lightning balance for on-chain BTC; refills inbound capacity |
-| **Loop in** (Lightning Labs) | Reverse — swap on-chain to Lightning |
+| **Loop in** (Lightning Labs) | Reverse, swap on-chain to Lightning |
 | **Submarine swaps** | Generic cross-channel swap mechanism |
 | **Splicing** | Add/remove funds from an existing channel without closing |
 | **Lightning Pool** | Marketplace for inbound liquidity |
@@ -243,7 +243,7 @@ Lightning's hardest operational challenge: **liquidity management**. A channel m
 
 ## 🌐 Other Layer-2 Protocols (Briefly)
 
-Lightning is by far the dominant Bitcoin L2. But the ecosystem includes others — CBP tests recognition of these.
+Lightning is by far the dominant Bitcoin L2. But the ecosystem includes others, CBP tests recognition of these.
 
 | L2 | Description | Use case |
 |----|-------------|----------|
@@ -256,13 +256,13 @@ Lightning is by far the dominant Bitcoin L2. But the ecosystem includes others �
 | **Ark** | Off-chain payment pools | Payments without channel-jamming |
 | **BitVM** | Generic computation via Bitcoin Script tricks | Theoretical / experimental |
 
-🎯 **Exam tip.** **Liquid** is a federated sidechain — block production by a 15-of-15-ish federation, not by PoW. Faster settlement, confidential transactions. Used by exchanges for inter-exchange transfers. Different trust model from Bitcoin L1; CBP tests this.
+🎯 **Exam tip.** **Liquid** is a federated sidechain, block production by a 15-of-15-ish federation, not by PoW. Faster settlement, confidential transactions. Used by exchanges for inter-exchange transfers. Different trust model from Bitcoin L1; CBP tests this.
 
 ---
 
-## 💼 Case Study — Strike + the El Salvador Lightning Rollout (2021-2024)
+## 💼 Case Study, Strike + the El Salvador Lightning Rollout (2021-2024)
 
-**Situation.** **Strike** (founded 2019 by Jack Mallers, Chicago) is a Bitcoin-Lightning-USD app that lets users send dollars instantly worldwide via Lightning, often without the receiver knowing Bitcoin is involved. By 2021 Strike was processing significant USD-MXN, USD-PHP, and other cross-border corridor volume — orders of magnitude cheaper than Western Union or MoneyGram.
+**Situation.** **Strike** (founded 2019 by Jack Mallers, Chicago) is a Bitcoin-Lightning-USD app that lets users send dollars instantly worldwide via Lightning, often without the receiver knowing Bitcoin is involved. By 2021 Strike was processing significant USD-MXN, USD-PHP, and other cross-border corridor volume, orders of magnitude cheaper than Western Union or MoneyGram.
 
 When El Salvador adopted Bitcoin as legal tender in September 2021, Strike was the chosen technology partner for the government-issued Chivo wallet's Bitcoin/Lightning rails. The plan: every Salvadoran gets $30 of BTC via Chivo, can spend it via Lightning at participating merchants.
 
@@ -383,7 +383,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The custodial-Lightning paradox.** ~80% of Lightning volume flows through a handful of custodial wallets (Wallet of Satoshi, Strike, Cash App). Is this a Lightning failure or a Lightning success? At what point would the centralization become a protocol concern?
 2. **The channel-jamming open problem.** Channel jamming is acknowledged as Lightning's biggest open attack class. Construct a 2030 outlook: do you expect a clean solution? An acceptable mitigation? An evolution to a different L2?
@@ -395,14 +395,14 @@ You now know:
 
 ## 📚 Further Reading
 
-- 📖 **Antonopoulos / Osuntokun / Pickhardt — *Mastering the Lightning Network*** (O'Reilly, 2021). Free on GitHub.
-- 📰 **Poon & Dryja — "The Bitcoin Lightning Network"** (January 2016, lightning.network).
+- 📖 **Antonopoulos / Osuntokun / Pickhardt, *Mastering the Lightning Network*** (O'Reilly, 2021). Free on GitHub.
+- 📰 **Poon & Dryja, "The Bitcoin Lightning Network"** (January 2016, lightning.network).
 - 📰 **BOLT specifications** at github.com/lightning/bolts.
 - 📰 **Lightning Labs blog** (lightning.engineering/posts).
-- 📰 **Bitcoin Optech newsletter — Lightning Section** (bitcoinops.org).
+- 📰 **Bitcoin Optech newsletter, Lightning Section** (bitcoinops.org).
 - 📰 **Amboss + 1ML + mempool.space Lightning explorers.**
-- 📰 **Galoy / Blink — Open-source Lightning wallet stack.**
-- 📰 **Pickhardt & Richter — "Optimally Reliable & Cheap Payment Flows"** (2021). Min-cost flow routing.
-- 🎓 **MIT 15.S12 — Lecture 8** (Scaling Solutions for Bitcoin).
-- 🎓 **Princeton MOOC — supplementary Lightning lecture.**
-- 🎓 **Stanford CS251 — Lecture 9** (Off-chain Scaling).
+- 📰 **Galoy / Blink, Open-source Lightning wallet stack.**
+- 📰 **Pickhardt & Richter, "Optimally Reliable & Cheap Payment Flows"** (2021). Min-cost flow routing.
+- 🎓 **MIT 15.S12, Lecture 8** (Scaling Solutions for Bitcoin).
+- 🎓 **Princeton MOOC, supplementary Lightning lecture.**
+- 🎓 **Stanford CS251, Lecture 9** (Off-chain Scaling).

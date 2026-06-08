@@ -1,4 +1,4 @@
-# 🏆 Final Mock Exam — MD-102 (Real Format Simulation)
+# 🏆 Final Mock Exam, MD-102 (Real Format Simulation)
 
 > **Conditions:** **100 minutes. 50 questions.** Match the real MD-102 conditions exactly.
 > **Pass mark:** 35/50 (≈ 70%, matching the real exam's 700/1000 cut)
@@ -134,7 +134,7 @@ D. Sends daily emails
 A. Delete CA-eligible groups
 B. Use Users → Exclude on every CA policy
 C. Give Global Administrator role only
-D. Don't — break-glass must be subject to all policies
+D. Don't, break-glass must be subject to all policies
 
 ### 22. **Order these steps** to enforce "compliant device required" for SharePoint:
 
@@ -305,7 +305,7 @@ B. Retire
 C. Fresh start
 D. Autopilot reset
 
-### 49. **Yes/No** — Final synthesis.
+### 49. **Yes/No**, Final synthesis.
 
 **S1:** A device can be both Entra registered AND Entra joined simultaneously.
 **S2:** Plan 1 of Defender for Endpoint includes EDR.
@@ -345,10 +345,10 @@ D. No mobile email access
 
 | Score | Verdict | Action |
 |-------|---------|--------|
-| 47–50 | 🏆 Crushing it — schedule exam this week | Light review of weak Qs only |
+| 47–50 | 🏆 Crushing it, schedule exam this week | Light review of weak Qs only |
 | 40–46 | ✅ Comfortable pass | Review missed Qs + retake weakest module quiz |
 | 35–39 | ⚠️ Will pass but tight | 2–3 days of targeted review before exam |
-| 28–34 | 🟡 Borderline — don't sit yet | Re-read 2–3 weakest modules, retake in 7 days |
+| 28–34 | 🟡 Borderline, don't sit yet | Re-read 2–3 weakest modules, retake in 7 days |
 | <28 | 🔁 Not ready | Restart problematic modules + re-take Practice 1 and 2 |
 
 ---
@@ -372,7 +372,7 @@ Before exam day:
 
 **Day of exam:**
 - 100 minutes / 50 questions = ~2 minutes per question
-- Flag and skip anything > 90 seconds — return later
+- Flag and skip anything > 90 seconds, return later
 - Read the question stem TWICE before reading the options
 - Eliminate obviously wrong options first
 - When two answers seem right, look for the qualifier ("BEST", "MOST EFFICIENT", "FIRST step")
@@ -423,7 +423,7 @@ Good luck! 💪
 
 **Q20. Answer: B.** Report-only logs what would have happened.
 
-**Q21. Answer: B.** Standard pattern — exclude break-glass from every CA policy.
+**Q21. Answer: B.** Standard pattern, exclude break-glass from every CA policy.
 
 **Q22. Answer: A.** Compliance built → verify sync → CA created → Report-only → switch on.
 
@@ -449,7 +449,7 @@ Good luck! 💪
 
 **Q33. Answer: B.** Per device object in Entra ID.
 
-**Q34. Answer: A.** Word/Excel launching PowerShell/cmd.exe — the canonical macro attack chain.
+**Q34. Answer: A.** Word/Excel launching PowerShell/cmd.exe, the canonical macro attack chain.
 
 **Q35. Answer: B.** EDR enforces while Defender stays passive when 3rd-party AV is primary.
 
@@ -457,7 +457,7 @@ Good luck! 💪
 
 **Q37. Answer: B.** Prevents disabling Defender locally.
 
-**Q38. Answer: B.** Feature / Quality / Driver — the three WUfB categories.
+**Q38. Answer: B.** Feature / Quality / Driver, the three WUfB categories.
 
 **Q39. Answer: B.** Pilot → Broad → Deferred is the canonical topology.
 
@@ -481,4 +481,4 @@ Good luck! 💪
 
 **Q49. Answer: B.** S1 No (mutually exclusive). S2 No (EDR is Plan 2 only). S3 Yes (Microsoft Autopatch hands rings to Microsoft).
 
-**Q50. Answer: B.** MAM-only + CA require approved client app + require APP + block legacy/ActiveSync — the Unilever model.
+**Q50. Answer: B.** MAM-only + CA require approved client app + require APP + block legacy/ActiveSync, the Unilever model.

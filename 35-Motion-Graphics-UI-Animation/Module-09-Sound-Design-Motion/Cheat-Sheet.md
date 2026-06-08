@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-09-Sound-Design-Motion/Cheat-
 title: "Module 9 Cheat Sheet: Sound Design & Motion"
 ---
 
-# ⚡ Module 9 Cheat Sheet — Sound Design & Motion
+# ⚡ Module 9 Cheat Sheet, Sound Design & Motion
 
 ## Three Layers of Sound
 
@@ -48,9 +48,9 @@ title: "Module 9 Cheat Sheet: Sound Design & Motion"
 | Sync License | Composition used in video sync |
 | Master License | Specific recording used in video |
 | Royalty-Free | One-time fee, no per-use royalties |
-| CC0 | Public domain — any use |
+| CC0 | Public domain, any use |
 | CC BY | Attribution required |
-| CC BY-NC | Non-commercial only — check before client work |
+| CC BY-NC | Non-commercial only, check before client work |
 
 ---
 
@@ -131,7 +131,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

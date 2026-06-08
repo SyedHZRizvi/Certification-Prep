@@ -6,7 +6,7 @@
 
 ## 📊 The Headline Stat
 
-**$36 ROI per $1 spent** on email (DMA *Marketer Email Tracker* — most-cited).
+**$36 ROI per $1 spent** on email (DMA *Marketer Email Tracker*, most-cited).
 
 ---
 
@@ -101,9 +101,9 @@ iOS 15 (Sep 2021) → Mail Privacy Protection auto-prefetches images → **open 
 
 ## 🚨 Common Traps
 
-- ❌ "Open rate is most important" (post-iOS 15 — no)
-- ❌ "Drip = lifecycle" (no — time vs behavior)
-- ❌ "GDPR is only for EU companies" (no — extraterritorial)
+- ❌ "Open rate is most important" (post-iOS 15, no)
+- ❌ "Drip = lifecycle" (no, time vs behavior)
+- ❌ "GDPR is only for EU companies" (no, extraterritorial)
 - ❌ "Buy a list to grow fast" (illegal + tanks reputation)
 - ❌ "SPF/DKIM/DMARC are nice-to-haves" (mandatory for bulk)
 - ❌ Skip the welcome series

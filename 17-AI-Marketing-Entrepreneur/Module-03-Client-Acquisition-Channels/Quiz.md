@@ -193,7 +193,7 @@ D. He had a sales team of 8
 
 ### Q24. Why does the reading recommend AGAINST running 7 channels at once? *(Understand)*
 A. The tools are too expensive
-B. With limited time, you run them all badly — pick 2 and go deep
+B. With limited time, you run them all badly, pick 2 and go deep
 C. It's illegal under GDPR
 D. You can't measure them
 
@@ -208,8 +208,8 @@ D. Never pitch
 ---
 
 ### Q26. A founder asks "should I run cold ads to my $2,000 audit?" The right answer per the reading is: *(Apply)*
-A. Yes — scale immediately
-B. No — paid ads typically don't profit on offers below ~$7,500 ACV
+A. Yes, scale immediately
+B. No, paid ads typically don't profit on offers below ~$7,500 ACV
 C. Yes, but only Meta
 D. Only if your CAC is $100
 
@@ -248,7 +248,7 @@ Justin Welsh's publicly documented operating cadence.
 Below this ACV, paid CAC ($800–$2,500 per booked call) doesn't math out for solo operators.
 
 ### Q11: **B. Referrals**
-Per Hampton survey data, referrals convert at 35–55% — the highest of any channel.
+Per Hampton survey data, referrals convert at 35–55%, the highest of any channel.
 
 ### Q12: **B. Build a documented program with explicit ask + incentive + closing-loop step**
 Referrals come from systems, not hope.
@@ -286,13 +286,13 @@ Pierri's FletchPMM is publicly attributed to LinkedIn content as the dominant ch
 ### Q23: **B. 70%+ from Twitter + Product Hunt in Years 1–2**
 Public statement on multiple podcasts (My First Million, Starter Story).
 
-### Q24: **B. With limited time, you run them all badly — pick 2 and go deep**
+### Q24: **B. With limited time, you run them all badly, pick 2 and go deep**
 Channel discipline is the rule.
 
 ### Q25: **B. 5–7 days, value-add messages first; soft CTA in week 3**
 The Diego/value-first LinkedIn playbook.
 
-### Q26: **B. No — paid ads typically don't profit on offers below ~$7,500 ACV**
+### Q26: **B. No, paid ads typically don't profit on offers below ~$7,500 ACV**
 The math: CAC of $800–$2,500 against a $2,000 ACV loses money.
 
 ---

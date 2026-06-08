@@ -78,9 +78,9 @@ D. The jacket will cause green spill in unexpected ways
 
 A VFX supervisor on a greenscreen shoot has the option to use either a green or blue backing. The talent has platinum blonde hair and wears a blue dress. Which backing is more appropriate?
 
-A. Green — because platinum hair is better separated from green
-B. Blue — because green would conflict with the hair highlight reflections
-C. Green — because blue backing would be keyed along with the blue dress
+A. Green, because platinum hair is better separated from green
+B. Blue, because green would conflict with the hair highlight reflections
+C. Green, because blue backing would be keyed along with the blue dress
 D. It makes no difference with modern keying tools
 
 ---
@@ -92,7 +92,7 @@ In the three-step key workflow, at which step should aggressive Clip Black and C
 A. Step 1 (Rough Key)
 B. Step 2 (Refined Key)
 C. Step 3 (Fine Key)
-D. Never — aggressive Clip Black/White destroys semi-transparent edge pixels
+D. Never, aggressive Clip Black/White destroys semi-transparent edge pixels
 
 ---
 
@@ -200,7 +200,7 @@ D. High Air Resistance only, no Turbulence, zero Gravity
 The Mandalorian's StageCraft LED Volume technology's primary advantage over traditional green screen production for practical (non-CG) elements like helmets and chrome props is:
 
 A. It renders faster than greenscreen post-production
-B. Physical reflections on practical props are real — the chrome helmet reflects the actual LED environment
+B. Physical reflections on practical props are real, the chrome helmet reflects the actual LED environment
 C. It eliminates the need for any VFX work on the production
 D. It allows the actors to be composited in post without any on-set performance
 
@@ -232,7 +232,7 @@ D. Position, Scale, Rotation only
 
 A difference matte is being used to extract a subject from footage. The clean plate was shot on the same day from the same camera position, but a cloud moved between the two takes, changing the sky brightness. What will be the effect on the matte?
 
-A. No effect — difference mattes are lighting-agnostic
+A. No effect, difference mattes are lighting-agnostic
 B. The sky area of the difference matte will produce a non-zero value, including sky pixels incorrectly in the foreground matte
 C. The matte will automatically correct for the lighting change using adaptive thresholding
 D. The matte will work correctly because the subject area is unaffected by the sky change
@@ -244,7 +244,7 @@ D. The matte will work correctly because the subject area is unaffected by the s
 In the Avengers: Endgame production at ILM, what was the primary mechanism for ensuring consistent look-development of the Thanos character across multiple vendors?
 
 A. All Thanos compositing was centralized at a single ILM location
-B. A "look bible" — shared Nuke scripts and look-dev renders — was distributed to all vendors for consistency
+B. A "look bible" shared Nuke scripts and look-dev renders was distributed to all vendors for consistency
 C. Thanos was only animated by one vendor (ILM), with all others handling environment and extras
 D. The ACES color pipeline automatically normalized all Thanos renders to a consistent look
 
@@ -276,7 +276,7 @@ D. Normal at 100% opacity
 
 ILM was the primary VFX vendor for Avengers: Infinity War and Endgame. Which other major studios were also vendors on Endgame?
 
-A. Only ILM — all Avengers VFX is done exclusively at ILM
+A. Only ILM, all Avengers VFX is done exclusively at ILM
 B. Weta Digital, Digital Domain, and Framestore
 C. MPC, DNEG, and Scanline VFX
 D. Pixar, Blue Sky Studios, and Animal Logic

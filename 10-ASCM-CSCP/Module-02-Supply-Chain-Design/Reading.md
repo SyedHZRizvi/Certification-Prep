@@ -1,10 +1,10 @@
 # Module 2: Supply Chain Design 🏗️
 
-> **Why this module matters:** Domain 2 of the CSCP is "Supply Chain Design" — about 20% of your exam. Strategy in Module 1 said *what* you compete on; this module says *how the network is shaped to deliver it*. Get this wrong, and every operational decision later compounds the mistake.
+> **Why this module matters:** Domain 2 of the CSCP is "Supply Chain Design", about 20% of your exam. Strategy in Module 1 said *what* you compete on; this module says *how the network is shaped to deliver it*. Get this wrong, and every operational decision later compounds the mistake.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [SCOR 13.0 vocabulary](../Module-01-SCM-Foundations-Strategy/Reading.md) — covered in Module 1
-> - [Hau Lee's strategy matrix](../Module-01-SCM-Foundations-Strategy/Reading.md) — covered in Module 1
+> - [SCOR 13.0 vocabulary](../Module-01-SCM-Foundations-Strategy/Reading.md), covered in Module 1
+> - [Hau Lee's strategy matrix](../Module-01-SCM-Foundations-Strategy/Reading.md), covered in Module 1
 > - Basic make-or-buy logic and value-chain concept (Porter)
 > - Square-root math and linear-programming intuition (helpful, not required)
 > If SCOR-Source or the CODP feels shaky, pause and re-read Module 1 sections before continuing.
@@ -15,11 +15,11 @@
 
 Sami runs **Knot Right Pretzels**, a 14-year-old snack company that supplies grocery chains in 9 states. In 2017 a competitor opened up across the river with prices 12% lower. Panic. Sami's first instinct was to negotiate harder with his flour supplier. Margin barely moved.
 
-His ops VP walked in with a different question: *"What if we owned the flour?"* They studied it for six months. The wheat fields were $3.2M, the milling line $1.8M, plus working capital. **Make-or-buy** analysis said yes — vertical integration upstream would pay back in 4.2 years and lock in supply. They bought the field.
+His ops VP walked in with a different question: *"What if we owned the flour?"* They studied it for six months. The wheat fields were $3.2M, the milling line $1.8M, plus working capital. **Make-or-buy** analysis said yes, vertical integration upstream would pay back in 4.2 years and lock in supply. They bought the field.
 
-A year later a different problem hit: customers in Texas were getting pretzels that arrived 4 days slower than the Midwest stores, with twice the breakage. The fix wasn't a price cut. It was **network design** — adding a regional DC in Dallas. Modeled it, simulated lane costs, ran a center-of-gravity calculation on store locations. The Dallas DC saved $1.1M/year and cut Texas breakage by 60%.
+A year later a different problem hit: customers in Texas were getting pretzels that arrived 4 days slower than the Midwest stores, with twice the breakage. The fix wasn't a price cut. It was **network design**, adding a regional DC in Dallas. Modeled it, simulated lane costs, ran a center-of-gravity calculation on store locations. The Dallas DC saved $1.1M/year and cut Texas breakage by 60%.
 
-Same product. Two completely different design decisions — *vertical integration* and *network design*. Both belong in this module. Both are tested.
+Same product. Two completely different design decisions, *vertical integration* and *network design*. Both belong in this module. Both are tested.
 
 ---
 
@@ -57,11 +57,11 @@ A factory built in Vietnam this year is still there in 2034. Switching costs are
                                                            └─┘└─┘└─┘
 ```
 
-### Inventory pooling — the math hint
+### Inventory pooling, the math hint
 
 When you consolidate inventory across N locations, safety stock scales with **√N** rather than N (because demand variance pools). Cut from 10 DCs to 5 and safety stock drops by √2 ≈ 30% even though throughput is the same.
 
-🎯 **Exam tip:** "Square-root law of inventory" — fewer locations means dramatically less safety stock at the cost of longer lanes. Trade-off question.
+🎯 **Exam tip:** "Square-root law of inventory", fewer locations means dramatically less safety stock at the cost of longer lanes. Trade-off question.
 
 ---
 
@@ -176,7 +176,7 @@ The exam frequently bundles these as a confused multiple-choice. Memorize:
 | **Single-source** | Deep relationship, volume leverage, simpler | One disruption = total stoppage |
 | **Dual-source** | Backup capacity, competitive tension | Coordination overhead |
 | **Multi-source** | Maximum resilience, price competition | High admin cost, less leverage |
-| **Sole source** (no choice) | N/A — you're stuck | Highest risk |
+| **Sole source** (no choice) | N/A, you're stuck | Highest risk |
 
 > 🚨 **Trap on the exam:** "Single source" and "sole source" are NOT the same. Single source = you *chose* one supplier from many available. Sole source = only one exists in the market.
 
@@ -184,7 +184,7 @@ The exam frequently bundles these as a confused multiple-choice. Memorize:
 
 ## 🎯 Supplier / Customer Segmentation
 
-Not all suppliers — or customers — deserve the same treatment.
+Not all suppliers or customers deserve the same treatment.
 
 ### Pareto / ABC for customers (and suppliers)
 
@@ -194,9 +194,9 @@ Not all suppliers — or customers — deserve the same treatment.
 | B | ~15% | Standard SLAs, scheduled reviews |
 | C | ~5% | Self-service, transactional |
 
-### Kraljic supplier matrix (preview — covered deeply in Module 6)
+### Kraljic supplier matrix (preview, covered deeply in Module 6)
 
-**Peter Kraljic, *"Purchasing Must Become Supply Management"*** (Harvard Business Review, September-October 1983 — McKinsey & Co.).
+**Peter Kraljic, *"Purchasing Must Become Supply Management"*** (Harvard Business Review, September-October 1983, McKinsey & Co.).
 
 |                              | Low supply risk | High supply risk |
 |------------------------------|-----------------|-------------------|
@@ -258,20 +258,20 @@ Cost
 
 ---
 
-## 📊 Case Study — Boeing 787 Dreamliner Outsourcing (2007-2013)
+## 📊 Case Study, Boeing 787 Dreamliner Outsourcing (2007-2013)
 
-**Situation.** In the early 2000s, Boeing's commercial airplanes group (Seattle) faced an existential question: how to fund and build the next-generation 787 "Dreamliner" — a clean-sheet composite-fuselage aircraft — while Airbus's A380 was eating government-subsidized lunch. Then-CEO Jim McNerney and then-VP Mike Bair championed a radically outsourced design: instead of Boeing's traditional 70% in-house build (the 737/747 pattern), the 787 would be ~70% outsourced. Tier-1 partners would design AND build major sub-assemblies (the carbon-composite wing in Japan, the center fuselage in Italy at Alenia, the forward fuselage at Spirit AeroSystems in Wichita, the landing gear from Messier-Dowty in France). Boeing would do final integration in Everett, Washington — flying complete sub-assemblies in on its specially-modified 747 "Dreamlifter." The promise: parallel development cut time-to-market from 6 years to 4, and Boeing's capital expenditure would drop by 40%.
+**Situation.** In the early 2000s, Boeing's commercial airplanes group (Seattle) faced an existential question: how to fund and build the next-generation 787 "Dreamliner" a clean-sheet composite-fuselage aircraft while Airbus's A380 was eating government-subsidized lunch. Then-CEO Jim McNerney and then-VP Mike Bair championed a radically outsourced design: instead of Boeing's traditional 70% in-house build (the 737/747 pattern), the 787 would be ~70% outsourced. Tier-1 partners would design AND build major sub-assemblies (the carbon-composite wing in Japan, the center fuselage in Italy at Alenia, the forward fuselage at Spirit AeroSystems in Wichita, the landing gear from Messier-Dowty in France). Boeing would do final integration in Everett, Washington, flying complete sub-assemblies in on its specially-modified 747 "Dreamlifter." The promise: parallel development cut time-to-market from 6 years to 4, and Boeing's capital expenditure would drop by 40%.
 
-**Decision.** Boeing committed in 2003-2004. By 2007, when first flight was due, none of the major assemblies fit. Center-fuselage barrels arrived from Italy with components missing — Alenia had subcontracted to Vought Aircraft Industries, which had subcontracted further to Israeli and Korean suppliers Boeing didn't know existed. Boeing's "system integrator" model assumed Tier-1 partners had Boeing-grade systems engineering capability. They didn't. Tier-2 and Tier-3 suppliers were invisible to Seattle. By 2008, Boeing had to **buy Vought outright** for $580M to gain visibility, then later acquire chunks of the South Carolina fuselage operation. First flight slipped from 2007 → 2009. First customer delivery (ANA) slipped from 2008 → September 2011 — three years late.
+**Decision.** Boeing committed in 2003-2004. By 2007, when first flight was due, none of the major assemblies fit. Center-fuselage barrels arrived from Italy with components missing Alenia had subcontracted to Vought Aircraft Industries, which had subcontracted further to Israeli and Korean suppliers Boeing didn't know existed. Boeing's "system integrator" model assumed Tier-1 partners had Boeing-grade systems engineering capability. They didn't. Tier-2 and Tier-3 suppliers were invisible to Seattle. By 2008, Boeing had to **buy Vought outright** for $580M to gain visibility, then later acquire chunks of the South Carolina fuselage operation. First flight slipped from 2007 → 2009. First customer delivery (ANA) slipped from 2008 → September 2011 three years late.
 
-**Outcome.** The 787 program ultimately delivered a technically excellent aircraft and 1,800+ orders by 2024. But the outsourcing-driven launch cost roughly **$32B in delays, supplier-acquisition costs, and rework** vs the original plan. Lithium-ion battery fires grounded the global 787 fleet in 2013 — partly attributable to the same multi-tier visibility failure (battery supplier GS Yuasa's process variations weren't transparent to Boeing). Christopher Tang and Joshua Zimmerman's analysis in *California Management Review* (2009) made the 787 the canonical "outsourced too deep" case in operations textbooks worldwide.
+**Outcome.** The 787 program ultimately delivered a technically excellent aircraft and 1,800+ orders by 2024. But the outsourcing-driven launch cost roughly **$32B in delays, supplier-acquisition costs, and rework** vs the original plan. Lithium-ion battery fires grounded the global 787 fleet in 2013, partly attributable to the same multi-tier visibility failure (battery supplier GS Yuasa's process variations weren't transparent to Boeing). Christopher Tang and Joshua Zimmerman's analysis in *California Management Review* (2009) made the 787 the canonical "outsourced too deep" case in operations textbooks worldwide.
 
-**Lesson for the exam / for practitioners.** The 787 violated the make-vs-buy rules this module teaches. The carbon-composite wing technology was **core competency** and **IP-critical** — exactly the wrong thing to outsource. Boeing also outsourced **systems integration** — the actual capability that distinguishes a prime contractor from a parts assembler. The case maps directly to Kraljic: Boeing treated strategic-quadrant items (high profit impact + high supply risk) as if they were leverage-quadrant (competitive bidding, transactional). Strategic items demand partnership maturity + Tier-2/Tier-3 visibility, not arms-length contracts. On the exam: "outsource core competency" is almost always the wrong answer; "outsource non-core with supplier scale advantage" is almost always right.
+**Lesson for the exam / for practitioners.** The 787 violated the make-vs-buy rules this module teaches. The carbon-composite wing technology was **core competency** and **IP-critical** exactly the wrong thing to outsource. Boeing also outsourced **systems integration** the actual capability that distinguishes a prime contractor from a parts assembler. The case maps directly to Kraljic: Boeing treated strategic-quadrant items (high profit impact + high supply risk) as if they were leverage-quadrant (competitive bidding, transactional). Strategic items demand partnership maturity + Tier-2/Tier-3 visibility, not arms-length contracts. On the exam: "outsource core competency" is almost always the wrong answer; "outsource non-core with supplier scale advantage" is almost always right.
 
 **Discussion (Socratic).**
-- Q1: McNerney's defenders argue the outsourced model would have worked if Boeing had built Tier-1 partner capability before launch — and that the underlying logic (capital efficiency, parallel development) is correct. Build the strongest case that the 787 model is *recoverable* (e.g., for the next clean-sheet aircraft), with what preconditions.
+- Q1: McNerney's defenders argue the outsourced model would have worked if Boeing had built Tier-1 partner capability before launch, and that the underlying logic (capital efficiency, parallel development) is correct. Build the strongest case that the 787 model is *recoverable* (e.g., for the next clean-sheet aircraft), with what preconditions.
 - Q2: Apple outsources nearly 100% of iPhone manufacturing to Foxconn yet maintains strong IP and quality control. Boeing failed at 70% outsourcing of the 787. What structural difference between consumer electronics and aerospace explains the divergence?
-- Q3: A new CEO at a Tier-1 auto supplier reads the 787 case and says "we'll never outsource core IP again." Construct the counter-argument that *selective* outsourcing of even IP-rich activities can be right — with what governance.
+- Q3: A new CEO at a Tier-1 auto supplier reads the 787 case and says "we'll never outsource core IP again." Construct the counter-argument that *selective* outsourcing of even IP-rich activities can be right, with what governance.
 
 ---
 
@@ -280,7 +280,7 @@ Cost
 | Misconception | Reality |
 |---------------|---------|
 | "Make is always cheaper long-term" | Only if you have core competency, scale, and capital |
-| "Single source is risky" | True only if no backup — single-source with proven supplier can outperform multi-source |
+| "Single source is risky" | True only if no backup, single-source with proven supplier can outperform multi-source |
 | "More DCs = better service" | Up to a point; beyond it, inventory dominates and cost climbs |
 | "Vertical integration = full control" | Also = full capital lock-up, exposure to demand shocks |
 | "Outsourcing = offshoring" | Not the same; either can happen without the other |
@@ -290,12 +290,12 @@ Cost
 
 ## 🚨 Exam Traps
 
-1. **Single source vs sole source** — single = chosen; sole = only option.
-2. **Center-of-gravity assumptions** — straight-line distance, uniform rate, single facility.
-3. **Outsourcing core competency** — usually wrong answer; you'd keep core, outsource non-core.
-4. **"Add more DCs to improve service"** — true up to the trade-off curve sweet spot, false beyond.
-5. **Vertical integration as cure-all** — increases asset intensity and reduces agility.
-6. **Service SC treated like goods SC** — services can't be inventoried; capacity is the buffer.
+1. **Single source vs sole source**, single = chosen; sole = only option.
+2. **Center-of-gravity assumptions**, straight-line distance, uniform rate, single facility.
+3. **Outsourcing core competency**, usually wrong answer; you'd keep core, outsource non-core.
+4. **"Add more DCs to improve service"**, true up to the trade-off curve sweet spot, false beyond.
+5. **Vertical integration as cure-all**, increases asset intensity and reduces agility.
+6. **Service SC treated like goods SC**, services can't be inventoried; capacity is the buffer.
 
 ---
 
@@ -349,7 +349,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The Apple-Vietnam-India hedge.** Apple has spent 2022-2025 diversifying iPhone assembly from Foxconn-Zhengzhou (China) to Tata (India) and Luxshare (Vietnam). Foxconn's per-unit costs are still lowest. Using the make-or-buy + offshoring framework from this module, what discount rate / probability of disruption justifies Apple's diversification? Defend a position to a CFO who argues "stay with the cheapest."
 2. **Center-of-gravity vs LP.** A pretzel maker has 14 customers across the US with annual demand from 8K to 280K cases. The CFO wants the new DC location to be solved by "center-of-gravity in 30 minutes." Build the strongest argument for CoG AND the strongest for full transport LP. At what scale does CoG's simplicity stop being worth it?
@@ -361,11 +361,11 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 Sunil Chopra & Peter Meindl, *Supply Chain Management: Strategy, Planning, and Operation* — Pearson, 7e 2019, chapters 4–6
-- 📖 Peter Kraljic, *"Purchasing Must Become Supply Management"* — HBR, September-October 1983 (foundational supplier segmentation)
-- 📖 Christopher Tang & Joshua Zimmerman, *"Managing New Product Development and Supply Chain Risks: The Boeing 787 Case"* — California Management Review, 2009 (the canonical outsourcing failure case)
-- 📖 Michael E. Porter, *Competitive Advantage* — Free Press, 1985 (the value chain framework)
-- 📖 Robert Hayes & Steven Wheelwright, *Restoring Our Competitive Edge: Competing Through Manufacturing* — Wiley, 1984 (classic make-vs-buy + manufacturing strategy)
-- 📖 ASCM CSCP Learning System — Module 2 vocabulary mirrors APICS dictionary verbatim
-- 📖 David Simchi-Levi, *Operations Rules* — MIT Press 2010 (network design case studies)
-- 📖 Marc Levinson, *The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger* — Princeton University Press, 2e 2016 (containerization history)
+- 📖 Sunil Chopra & Peter Meindl, *Supply Chain Management: Strategy, Planning, and Operation*, Pearson, 7e 2019, chapters 4–6
+- 📖 Peter Kraljic, *"Purchasing Must Become Supply Management"*, HBR, September-October 1983 (foundational supplier segmentation)
+- 📖 Christopher Tang & Joshua Zimmerman, *"Managing New Product Development and Supply Chain Risks: The Boeing 787 Case"*, California Management Review, 2009 (the canonical outsourcing failure case)
+- 📖 Michael E. Porter, *Competitive Advantage*, Free Press, 1985 (the value chain framework)
+- 📖 Robert Hayes & Steven Wheelwright, *Restoring Our Competitive Edge: Competing Through Manufacturing*, Wiley, 1984 (classic make-vs-buy + manufacturing strategy)
+- 📖 ASCM CSCP Learning System, Module 2 vocabulary mirrors APICS dictionary verbatim
+- 📖 David Simchi-Levi, *Operations Rules*, MIT Press 2010 (network design case studies)
+- 📖 Marc Levinson, *The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger*, Princeton University Press, 2e 2016 (containerization history)

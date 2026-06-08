@@ -1,13 +1,13 @@
 # Module 3: SEO in the AI Era 🔍
 
-> **Why this module matters:** SEO used to be "rank a page for a keyword." In 2026, ranking is just the cover charge. The real game is *being cited by AI Overviews, ChatGPT Search, and Perplexity* — and most marketers haven't caught up. This module is the new playbook.
+> **Why this module matters:** SEO used to be "rank a page for a keyword." In 2026, ranking is just the cover charge. The real game is *being cited by AI Overviews, ChatGPT Search, and Perplexity*, and most marketers haven't caught up. This module is the new playbook.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 — The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) — POESM, TOFU/MOFU/BOFU, walled gardens; AI Overviews are introduced there
-> - [Module 2 — AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) — embeddings, RAG, and how LLMs "read" your content; GEO/AEO depends on it
+> - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM, TOFU/MOFU/BOFU, walled gardens; AI Overviews are introduced there
+> - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) embeddings, RAG, and how LLMs "read" your content; GEO/AEO depends on it
 > - Basic HTML literacy: knowing what a `<title>` tag, an H1, and a meta description are
 >
-> If you've never set up Google Search Console or used an SEO tool (Ahrefs, SEMrush, Moz), open a free trial alongside this reading — the tactical sections benefit from following along.
+> If you've never set up Google Search Console or used an SEO tool (Ahrefs, SEMrush, Moz), open a free trial alongside this reading, the tactical sections benefit from following along.
 
 ---
 
@@ -15,11 +15,11 @@
 
 In 2014, Airbnb was small relative to Marriott, Hilton, and Booking.com. They had a problem: they couldn't outbid the giants on paid search.
 
-So they did something audacious. They built **landing pages for every neighborhood in every major city** — millions of pages, each with a unique title ("Best places to stay in Brooklyn"), unique photos, neighborhood description, and a list of available homes. This is called **programmatic SEO** — using a database + a template to generate at-scale.
+So they did something audacious. They built **landing pages for every neighborhood in every major city** millions of pages, each with a unique title ("Best places to stay in Brooklyn"), unique photos, neighborhood description, and a list of available homes. This is called **programmatic SEO** using a database + a template to generate at-scale.
 
 By 2019, Airbnb was outranking traditional hotels on hundreds of thousands of long-tail city-and-neighborhood queries. They captured BOFU intent ("places to stay in [neighborhood]") essentially for free. Reportedly, organic SEO became their largest single channel for new bookings.
 
-Then came **August 2024**. Google launched AI Overviews broadly across US English. By 2025, queries like "places to stay in Brooklyn" started returning AI-generated summaries above any organic result — including Airbnb's. SparkToro's analysis showed many travel queries dropping 30–60% in click-through from the organic blue links.
+Then came **August 2024**. Google launched AI Overviews broadly across US English. By 2025, queries like "places to stay in Brooklyn" started returning AI-generated summaries above any organic result, including Airbnb's. SparkToro's analysis showed many travel queries dropping 30–60% in click-through from the organic blue links.
 
 Airbnb's response (as documented in their 2024–2025 earnings calls and Search Engine Land coverage) was to **double down on E-E-A-T signals** (Experience, Expertise, Authoritativeness, Trust), invest heavily in unique on-page data Google can cite, and start optimizing for **inclusion as a source in AI Overviews** rather than just ranking #1.
 
@@ -39,7 +39,7 @@ Every certification exam, from Google to HubSpot, organizes SEO into three pilla
 What you put *on* your page so search engines understand it.
 
 **Includes:**
-- **Title tag** (`<title>` — 50–60 chars; the headline in search results)
+- **Title tag** (`<title>`, 50–60 chars; the headline in search results)
 - **Meta description** (~150–160 chars; the snippet under the title)
 - **H1, H2, H3 hierarchy** (use exactly one H1; structure content under H2s and H3s)
 - **URL slug** (short, descriptive, hyphen-separated, lowercase)
@@ -51,13 +51,13 @@ What you put *on* your page so search engines understand it.
 What lets Google crawl, render, and index your site at all.
 
 **Includes:**
-- **Site speed** (Core Web Vitals: LCP, INP, CLS — Google's official 2026 metrics)
+- **Site speed** (Core Web Vitals: LCP, INP, CLS, Google's official 2026 metrics)
 - **Mobile-friendliness** (mobile-first indexing since 2019; absolute in 2026)
 - **HTTPS** (encrypted; non-HTTPS is penalized)
 - **XML sitemaps** (a list of your URLs for crawlers)
 - **Robots.txt** (which paths crawlers can access)
 - **Canonical tags** (which version of duplicate pages is the "real" one)
-- **Schema / structured data** (machine-readable labels — covered later)
+- **Schema / structured data** (machine-readable labels, covered later)
 - **JavaScript rendering** (Google can render JS, but slowly; SSR/SSG helps)
 - **Crawl budget** (the volume of pages Google bothers to crawl)
 
@@ -65,11 +65,11 @@ What lets Google crawl, render, and index your site at all.
 What other sites and signals say *about* your page.
 
 **Includes:**
-- **Backlinks** (other sites linking to you — quality > quantity)
+- **Backlinks** (other sites linking to you, quality > quantity)
 - **Brand mentions** (unlinked mentions also count via "implied links")
 - **Reviews** (Google reviews, third-party review platforms)
-- **Social signals** (debated — Google says not a direct factor; correlated indirectly)
-- **E-E-A-T** (the trust framework — covered next)
+- **Social signals** (debated, Google says not a direct factor; correlated indirectly)
+- **E-E-A-T** (the trust framework, covered next)
 
 🎯 **MEMORIZE THIS.** Every SEO interview question maps to one of these three pillars. When asked "what would you do to improve a page's ranking?", structure your answer in the same three buckets.
 
@@ -77,7 +77,7 @@ What other sites and signals say *about* your page.
 
 ## 🎖️ E-E-A-T: Google's Quality Framework
 
-Google's **Search Quality Rater Guidelines** (a public PDF, updated regularly, last major version 2022) introduced **E-A-T** in 2014 — Expertise, Authoritativeness, Trustworthiness. In **December 2022**, Google added a second E: **Experience**. The result is **E-E-A-T**:
+Google's **Search Quality Rater Guidelines** (a public PDF, updated regularly, last major version 2022) introduced **E-A-T** in 2014, Expertise, Authoritativeness, Trustworthiness. In **December 2022**, Google added a second E: **Experience**. The result is **E-E-A-T**:
 
 | Letter | Meaning | How to demonstrate |
 |---|---|---|
@@ -88,7 +88,7 @@ Google's **Search Quality Rater Guidelines** (a public PDF, updated regularly, l
 
 🎯 **Why E-E-A-T matters even more in 2026:** AI Overviews preferentially cite sources Google's algorithms judge to have high E-E-A-T. If your content is generic AI-generated slop with no author bio and no first-hand experience, AI Overviews are unlikely to cite you. If your content is grounded in first-person experience and trustworthy citations, you become exactly the kind of source AI Overviews want.
 
-🚨 **Trap on the exam:** "YMYL" content (Your Money or Your Life — health, finance, legal, safety) is held to a *higher* E-E-A-T bar. Google's quality raters are explicitly told to demote YMYL content that lacks expertise.
+🚨 **Trap on the exam:** "YMYL" content (Your Money or Your Life, health, finance, legal, safety) is held to a *higher* E-E-A-T bar. Google's quality raters are explicitly told to demote YMYL content that lacks expertise.
 
 ---
 
@@ -125,7 +125,7 @@ Take your AI-expanded list into Ahrefs / SEMrush / Moz and pull search volume + 
 - **High commercial intent** if BOFU is the goal
 
 #### Step 4: Topic cluster mapping
-Group your keywords into **pillars** (broad parent topics) and **clusters** (specific child topics that link to the pillar). This is the **pillar / cluster** model HubSpot popularized — covered in Module 4 too.
+Group your keywords into **pillars** (broad parent topics) and **clusters** (specific child topics that link to the pillar). This is the **pillar / cluster** model HubSpot popularized, covered in Module 4 too.
 
 #### Step 5: Prioritize
 Score each keyword on:
@@ -166,12 +166,12 @@ You type "best CRM for small business." Google now:
 1. Identifies the **entities** in your query: "CRM" (a software category), "small business" (a customer segment).
 2. Identifies related entities the page should cover: "lead management," "pipeline," "free tier," "HubSpot," "Pipedrive," "Salesforce Essentials," etc.
 3. Compares your query's *meaning* to each page's *meaning* using embeddings.
-4. Surfaces pages that semantically and entity-comprehensively cover the topic — not pages that just stuff the phrase.
+4. Surfaces pages that semantically and entity-comprehensively cover the topic, not pages that just stuff the phrase.
 
 ### What this means practically:
 
 - **Cover entities and adjacent concepts comprehensively**, not just the target keyword.
-- **Use synonyms and related phrases naturally** — Google understands them.
+- **Use synonyms and related phrases naturally**, Google understands them.
 - **Build topic clusters** (pillar page + supporting articles) so your *whole site* is recognized as an authority on the topic.
 - **Internal linking** with descriptive anchor text reinforces entity relationships.
 
@@ -179,7 +179,7 @@ You type "best CRM for small business." Google now:
 
 ---
 
-## 🏷️ Schema Markup (Structured Data) — Why It Matters More in the AI Era
+## 🏷️ Schema Markup (Structured Data), Why It Matters More in the AI Era
 
 **Schema** (managed by Schema.org, a vocabulary co-sponsored by Google, Microsoft, Yahoo, and Yandex) is a way to label your page's content so search engines and AI systems understand its structure without guessing.
 
@@ -234,17 +234,17 @@ You add it via **JSON-LD** (JavaScript Object Notation for Linked Data) in your 
 
 "AI Overview Optimization" goes by several names:
 
-- **GEO** — Generative Engine Optimization
-- **AEO** — Answer Engine Optimization
-- **AIO** — AI Overview Optimization
+- **GEO**, Generative Engine Optimization
+- **AEO**, Answer Engine Optimization
+- **AIO**, AI Overview Optimization
 
-It is the discipline of writing content that **AI engines cite, summarize, and link to**. The leading research (Bhattacharya et al., 2024 — Princeton/Harvard/Allen Institute, *"GEO: Generative Engine Optimization"*) found roughly the following moves matter most:
+It is the discipline of writing content that **AI engines cite, summarize, and link to**. The leading research (Bhattacharya et al., 2024, Princeton/Harvard/Allen Institute, *"GEO: Generative Engine Optimization"*) found roughly the following moves matter most:
 
 | Tactic | Effect |
 |---|---|
 | **Add citations to authoritative sources** | AI engines prefer to cite content that itself cites well |
-| **Include statistics and data** | AI engines love quantitative answers — they're "summarize-friendly" |
-| **Use direct, declarative answer language** | "X is Y because Z" — easier to extract |
+| **Include statistics and data** | AI engines love quantitative answers, they're "summarize-friendly" |
+| **Use direct, declarative answer language** | "X is Y because Z", easier to extract |
 | **Add quotations from experts** | Quotes get pulled into AI summaries |
 | **Optimize for question-style queries** | Use the question as the H2; answer in 1–3 sentences immediately after |
 | **Maintain freshness** | Outdated content is downranked harder by AI engines than by classic search |
@@ -268,7 +268,7 @@ H2: [FAQ]
 Author bio with credentials + photo + LinkedIn link.
 ```
 
-🎯 **MEMORIZE THIS.** The two highest-impact GEO tactics are: (1) authoritative citations within your content, and (2) FAQ sections with concise Q&A — both directly map to how AI summarizers extract content.
+🎯 **MEMORIZE THIS.** The two highest-impact GEO tactics are: (1) authoritative citations within your content, and (2) FAQ sections with concise Q&A, both directly map to how AI summarizers extract content.
 
 ---
 
@@ -283,7 +283,7 @@ Database (locations, products, comparisons, etc.)
    ↓
 Template ("Best X in {location}" or "{Product A} vs {Product B}")
    ↓
-Thousands of generated pages — each genuinely useful
+Thousands of generated pages, each genuinely useful
    ↓
 Long-tail search traffic at scale
 ```
@@ -292,7 +292,7 @@ Long-tail search traffic at scale
 
 Generative AI lowered the cost of producing unique, useful content per template instance. Instead of just slot-filling ("In {city}, you can find..."), you can now generate genuinely *useful* unique sections per page.
 
-**Caveat — Google's spam policies (March 2024 update):** Google's *"Scaled Content Abuse"* policy explicitly targets sites that publish AI-generated content "primarily to manipulate search rankings." The line is:
+**Caveat, Google's spam policies (March 2024 update):** Google's *"Scaled Content Abuse"* policy explicitly targets sites that publish AI-generated content "primarily to manipulate search rankings." The line is:
 
 - ✅ AI-assisted, unique-per-page, genuinely useful → fine
 - ❌ AI-generated boilerplate at scale with no human editing → spam, will be deindexed
@@ -319,7 +319,7 @@ You measure Core Web Vitals using:
 
 - **PageSpeed Insights** (Google, free)
 - **Chrome DevTools Lighthouse** (free, in any Chrome browser)
-- **Search Console Core Web Vitals report** (free, shows real user data — CrUX)
+- **Search Console Core Web Vitals report** (free, shows real user data, CrUX)
 - **Web Vitals Chrome extension** (free)
 
 ---
@@ -330,12 +330,12 @@ HubSpot's blog is the canonical "content-marketing-as-business" case study. Foun
 
 The HubSpot SEO playbook (as Halligan and Shah have shared publicly in talks at Inbound, GrowthBeat, and HBR):
 
-1. **Pillar + cluster topology** — one pillar page per major topic, dozens of cluster posts linking to it. (HubSpot invented and popularized this term.)
-2. **Aggressive historical optimization** — they refresh old high-traffic posts every 6–12 months rather than just publishing new ones. Internal studies showed historical optimization can yield 100–200% traffic lifts on a single post.
-3. **Free tools as content** — interactive calculators, generators, and assessments rank well, capture leads, and earn massive backlinks.
-4. **Topical depth over keyword volume** — they would rather own a topic than chase volume.
+1. **Pillar + cluster topology**, one pillar page per major topic, dozens of cluster posts linking to it. (HubSpot invented and popularized this term.)
+2. **Aggressive historical optimization**, they refresh old high-traffic posts every 6–12 months rather than just publishing new ones. Internal studies showed historical optimization can yield 100–200% traffic lifts on a single post.
+3. **Free tools as content**, interactive calculators, generators, and assessments rank well, capture leads, and earn massive backlinks.
+4. **Topical depth over keyword volume**, they would rather own a topic than chase volume.
 
-When AI Overviews launched in 2024, HubSpot publicly acknowledged that they had to adapt — their Search Engine Journal interview and Inbound 2024 talk both emphasized "writing for citation, not just ranking." They added authored bylines, expert quotes, and primary research to articles that previously relied on aggregation.
+When AI Overviews launched in 2024, HubSpot publicly acknowledged that they had to adapt, their Search Engine Journal interview and Inbound 2024 talk both emphasized "writing for citation, not just ranking." They added authored bylines, expert quotes, and primary research to articles that previously relied on aggregation.
 
 This is the kind of evolution every content-led business has had to make. HubSpot is a worked example.
 
@@ -348,8 +348,8 @@ Three SEO sub-specialties worth recognizing on exams:
 ### Local SEO
 For brick-and-mortar businesses. Driven primarily by:
 
-- **Google Business Profile** (formerly Google My Business) — must be set up, verified, and active.
-- **NAP consistency** (Name, Address, Phone — same across the web).
+- **Google Business Profile** (formerly Google My Business), must be set up, verified, and active.
+- **NAP consistency** (Name, Address, Phone, same across the web).
 - **Local citations** (mentions on Yelp, TripAdvisor, Yellow Pages, BBB, industry directories).
 - **Reviews** (Google reviews + responses).
 - **Localized schema** (`LocalBusiness` schema type).
@@ -359,10 +359,10 @@ For multi-country / multi-language sites:
 
 - **hreflang tags** (telling Google which language version of a page to show to which audience)
 - **Country-targeted ccTLDs** (.de, .fr) or subdirectories (/de/, /fr/)
-- **Localized content** (not just translation — proper localization)
+- **Localized content** (not just translation, proper localization)
 
 ### Voice Search SEO
-Voice queries are longer, more conversational, and more question-shaped. Optimizing for voice and optimizing for AI Overviews overlap heavily — both reward question-shaped H2s with direct, concise answers.
+Voice queries are longer, more conversational, and more question-shaped. Optimizing for voice and optimizing for AI Overviews overlap heavily, both reward question-shaped H2s with direct, concise answers.
 
 ---
 
@@ -384,8 +384,8 @@ Voice queries are longer, more conversational, and more question-shaped. Optimiz
 
 1. **E-E-A-T (not E-A-T).** The second E (Experience) was added December 2022.
 2. **FID is dead. INP replaced it.** March 2024.
-3. **AI Overviews don't kill SEO — they kill *passive* TOFU SEO.** BOFU and branded SEO still win.
-4. **Schema doesn't cause ranking, it enables rich results.** Don't say "add schema and you'll rank #1" — say "add schema and your snippet is more likely to be a rich result, and AI engines are more likely to cite you."
+3. **AI Overviews don't kill SEO, they kill *passive* TOFU SEO.** BOFU and branded SEO still win.
+4. **Schema doesn't cause ranking, it enables rich results.** Don't say "add schema and you'll rank #1", say "add schema and your snippet is more likely to be a rich result, and AI engines are more likely to cite you."
 5. **HTTPS is a ranking factor.** Has been since 2014.
 6. **Mobile-first indexing is universal.** Google's primary index is the mobile version of your site.
 7. **Programmatic SEO at scale with AI: useful = fine, spam = deindexed.** Know the line.
@@ -400,21 +400,21 @@ Voice queries are longer, more conversational, and more question-shaped. Optimiz
 | **Technical SEO** | Infrastructure (speed, mobile, crawling, schema) |
 | **Off-page SEO** | External signals (backlinks, brand mentions, reviews) |
 | **E-E-A-T** | Experience, Expertise, Authoritativeness, Trustworthiness |
-| **YMYL** | Your Money or Your Life — high-stakes content held to higher E-E-A-T |
-| **Core Web Vitals** | LCP, INP, CLS — Google's UX-as-ranking metrics |
-| **LCP** | Largest Contentful Paint — load speed of largest element (≤ 2.5s good) |
-| **INP** | Interaction to Next Paint — responsiveness (≤ 200ms good) — replaced FID in March 2024 |
-| **CLS** | Cumulative Layout Shift — visual stability (≤ 0.1 good) |
+| **YMYL** | Your Money or Your Life, high-stakes content held to higher E-E-A-T |
+| **Core Web Vitals** | LCP, INP, CLS, Google's UX-as-ranking metrics |
+| **LCP** | Largest Contentful Paint, load speed of largest element (≤ 2.5s good) |
+| **INP** | Interaction to Next Paint responsiveness (≤ 200ms good) replaced FID in March 2024 |
+| **CLS** | Cumulative Layout Shift, visual stability (≤ 0.1 good) |
 | **Schema / JSON-LD** | Structured data labeling content for machines |
 | **Semantic SEO** | Ranking based on meaning and entities, not keyword match |
 | **Programmatic SEO** | Database + template = thousands of unique pages |
-| **GEO / AEO** | Generative / Answer Engine Optimization — for AI Overviews |
+| **GEO / AEO** | Generative / Answer Engine Optimization, for AI Overviews |
 | **Pillar / cluster** | One broad pillar page + many cluster pages linking to it |
 | **Backlink** | A link from another site to yours |
 | **Anchor text** | The clickable text of a link |
 | **Canonical tag** | Tells Google which version of duplicate pages is the original |
 | **hreflang** | Language/region targeting tag for international SEO |
-| **CrUX** | Chrome User Experience Report — Google's real-user CWV data |
+| **CrUX** | Chrome User Experience Report, Google's real-user CWV data |
 | **SERP** | Search Engine Results Page |
 
 ---
@@ -428,14 +428,14 @@ You now know:
 - 🔑 A modern AI-assisted keyword research workflow
 - 🧬 The shift from keyword-match to semantic / entity-based ranking
 - 🏷️ Schema (JSON-LD) and the most common types
-- 🤖 GEO / AEO — how to optimize for AI Overviews
+- 🤖 GEO / AEO, how to optimize for AI Overviews
 - 🏗️ Programmatic SEO and the AI content line (helpful vs spam)
 - 🔧 Core Web Vitals (LCP, INP, CLS) with current 2026 thresholds
 - 🌐 Local, international, and voice SEO sub-specialties
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 4: Content Marketing with Generative AI](../Module-04-Content-Marketing-Generative-AI/Reading.md)
 
@@ -448,22 +448,22 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The TOFU-SEO sunsetting question.** A B2B content team's existing 200 "what is X" blog posts collectively bring 60% of their organic traffic, but per Search Console, AI-Overview impressions on those queries are climbing 20% month-over-month while clicks fall. Three options: (a) hard-pivot the content team to BOFU + branded; (b) keep TOFU but rewrite every post for GEO citation (FAQ + stats + expert quotes + author bio); (c) shrink the content team and re-allocate spend to retargeting. Make the case for one, then steel-man the strongest objection. Which is right when the content team is 3 people vs 15?
 2. **E-E-A-T and the small-team brand.** Google's E-E-A-T framework rewards Experience + Expertise + Authoritativeness + Trust. A SMB has none of the conventional signals (no Wikipedia entry, no major-publication bylines, no industry awards). What's the *minimum credible* set of E-E-A-T signals they can build in 90 days that materially changes AI-Overview citation probability? Cite specific tactics from the reading (author bios, citations, schema) and rank them by cost vs likely impact.
 3. **Programmatic SEO under the Helpful Content rule.** A travel-tech founder wants to ship 50,000 "Best Restaurants in {neighborhood}" pages. Google's March 2024 Scaled Content Abuse policy will deindex if the content is "lightly-edited AI at scale." The Airbnb playbook from the reading argues this *can* be done well. Where exactly is the line? Design a publication threshold (e.g. "at least N hand-written sentences per page; at least M unique stats; human review of every Xth page") that you'd actually defend to Google's quality raters and to your CFO.
-4. **Schema as a double-edged sword.** Schema markup increases the odds AI engines extract and cite your content — but it also *gives them what they need to answer the query without sending the user to your page*. Construct the argument that schema is net-positive for an authority publisher (high-trust source) but net-negative for a low-margin affiliate site. Where does the trade-off flip?
-5. **The "writing for citation, not for ranking" thesis.** HubSpot's Inbound 2024 talk argued the 2026 SEO bar is no longer "rank #1" but "be the most-cited source the AI Overview uses." Construct two scenarios — one for a service-area local business, one for a global SaaS — where this reframing changes your actual content choices (page structure, length, author signals, internal linking). What stays the same in both, and what diverges?
+4. **Schema as a double-edged sword.** Schema markup increases the odds AI engines extract and cite your content, but it also *gives them what they need to answer the query without sending the user to your page*. Construct the argument that schema is net-positive for an authority publisher (high-trust source) but net-negative for a low-margin affiliate site. Where does the trade-off flip?
+5. **The "writing for citation, not for ranking" thesis.** HubSpot's Inbound 2024 talk argued the 2026 SEO bar is no longer "rank #1" but "be the most-cited source the AI Overview uses." Construct two scenarios one for a service-area local business, one for a global SaaS where this reframing changes your actual content choices (page structure, length, author signals, internal linking). What stays the same in both, and what diverges?
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Google Search Quality Rater Guidelines* (free PDF — the actual rubric Google uses)
-- 📖 *Google Search Central Documentation* — the canonical SEO reference (search.google.com/search-central)
+- 📖 *Google Search Quality Rater Guidelines* (free PDF, the actual rubric Google uses)
+- 📖 *Google Search Central Documentation*, the canonical SEO reference (search.google.com/search-central)
 - 📰 Search Engine Land + Search Engine Journal + Search Engine Roundtable (the trade press)
-- 📰 *"GEO: Generative Engine Optimization"* — Bhattacharya, Chakraborty, et al., 2024 (Princeton/Harvard/Allen Institute paper on arXiv)
-- 📰 Ahrefs Blog, Backlinko (Brian Dean), Moz Blog — the three canonical SEO blogs
-- 📰 SparkToro *State of Search* — annual zero-click research
-- 📚 *"They Ask, You Answer"* by Marcus Sheridan — the question-answer SEO method that maps perfectly to AI Overviews
+- 📰 *"GEO: Generative Engine Optimization"*, Bhattacharya, Chakraborty, et al., 2024 (Princeton/Harvard/Allen Institute paper on arXiv)
+- 📰 Ahrefs Blog, Backlinko (Brian Dean), Moz Blog, the three canonical SEO blogs
+- 📰 SparkToro *State of Search*, annual zero-click research
+- 📚 *"They Ask, You Answer"* by Marcus Sheridan, the question-answer SEO method that maps perfectly to AI Overviews

@@ -22,9 +22,9 @@
 
 | Option | Role | % chosen | Multiple of A |
 |---|---|---|---|
-| A — Low | Decoy | 10–20% | 1x |
-| **B — Middle** | **Target** | **60–70%** | 1.5–2x |
-| C — High | Anchor | 10–25% | 2.5–3x |
+| A, Low | Decoy | 10–20% | 1x |
+| **B, Middle** | **Target** | **60–70%** | 1.5–2x |
+| C, High | Anchor | 10–25% | 2.5–3x |
 
 ---
 
@@ -56,7 +56,7 @@
 | Termination | 30-day notice |
 | AI disclosure | Required 2025+ |
 
-⚖️ **Not legal advice — have a licensed attorney review your template once ($400–$1,200).**
+⚖️ **Not legal advice, have a licensed attorney review your template once ($400–$1,200).**
 
 ---
 
@@ -86,18 +86,18 @@
 ## 🧮 5-10 Day Sales Sequence
 
 ```
-Day 0   — Discovery call (45–60 min)
-Day 0   — Recap email
-Day 1–2 — Draft proposal
-Day 2   — Send w/ 5–7 day expiry
-Day 3–4 — Proposal-review call (30 min)
-Day 5–6 — Client decides
-Day 6–7 — Sign + invoice + kickoff
+Day 0  , Discovery call (45–60 min)
+Day 0  , Recap email
+Day 1–2, Draft proposal
+Day 2  , Send w/ 5–7 day expiry
+Day 3–4, Proposal-review call (30 min)
+Day 5–6, Client decides
+Day 6–7, Sign + invoice + kickoff
 ```
 
 ---
 
-## 🛠️ Proposal/Contract Tools (2026 — verify)
+## 🛠️ Proposal/Contract Tools (2026, verify)
 
 | Tool | $/mo |
 |---|---|
@@ -154,6 +154,6 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-> ⚖️ Not legal/financial advice — consult a licensed attorney and CPA for your jurisdiction.
+> ⚖️ Not legal/financial advice, consult a licensed attorney and CPA for your jurisdiction.
 
 ➡️ [Module 5: AI Marketing Tech Stack](../Module-05-AI-Marketing-Tech-Stack-Cost-Efficient/Reading.md)

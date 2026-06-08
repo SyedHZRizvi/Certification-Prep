@@ -12,7 +12,7 @@ title: "Module 5 Cheat Sheet: Particle Systems in After Effects"
 | Particles | Individual elements: position, velocity, life, color, size |
 | Physics | Forces: gravity, wind, turbulence, air resistance |
 
-**Every particle system — in every tool — is built on these three components.**
+**Every particle system in every tool is built on these three components.**
 
 ---
 
@@ -36,7 +36,7 @@ title: "Module 5 Cheat Sheet: Particle Systems in After Effects"
 | Fire core | −200 to −350 | 100–200 | 0.5–1.0 | 200–400 |
 | Fire smoke | −20 to −50 | 50–100 | 1.5–2.5 | 50–100 |
 | Dust cloud | −5 to −20 | 150–300 | 3.0–6.0 | 500–2000 |
-| Rain | 350–500 | 0–30 | — | 1000–3000 |
+| Rain | 350–500 | 0–30 |, | 1000–3000 |
 | Snow | 30–80 | 10–50 | 2.0–4.0 | 200–600 |
 | Embers | 150–250 | 30–80 | 0.8–1.5 | 20–60 |
 | Magic sparks | −10 to 10 | 80–150 | 0.3–0.8 | 50–200 |
@@ -96,7 +96,7 @@ title: "Module 5 Cheat Sheet: Particle Systems in After Effects"
 
 ---
 
-## Fractal Noise Fire (No Plugins) — Step Reference
+## Fractal Noise Fire (No Plugins), Step Reference
 
 | Step | Setting |
 |------|---------|
@@ -130,7 +130,7 @@ title: "Module 5 Cheat Sheet: Particle Systems in After Effects"
 | Dust opacity | Reference footage | Match Opacity over Life curve to practical footage |
 | Dust scale | Match practical visible particles | Turbulence Scale + particle size tuning |
 
-**Always sample color from the practical reference — never invent a digital particle color from memory.**
+**Always sample color from the practical reference, never invent a digital particle color from memory.**
 
 ---
 

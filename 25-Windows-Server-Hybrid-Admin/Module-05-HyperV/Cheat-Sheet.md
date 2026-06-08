@@ -29,7 +29,7 @@
 
 ### Modern teaming
 
-**SET (Switch Embedded Teaming)** — required for S2D + modern Hyper-V. LBFO is legacy.
+**SET (Switch Embedded Teaming)**, required for S2D + modern Hyper-V. LBFO is legacy.
 
 ---
 
@@ -63,7 +63,7 @@
 | Recovery points | 24 hourly snapshots |
 | Failovers | Planned, Unplanned, **Test** (non-disruptive) |
 
-🚨 **Test failover doesn't disrupt active replication** — run it monthly!
+🚨 **Test failover doesn't disrupt active replication**, run it monthly!
 
 ---
 
@@ -73,10 +73,10 @@
 Gen 2 VM + vTPM + BitLocker
     │
     ▼
-HGS (Host Guardian Service) — 3-node cluster, bastion forest
+HGS (Host Guardian Service), 3-node cluster, bastion forest
     │
     ▼  attestation
-Guarded Host (Hyper-V) — keys released, VM boots
+Guarded Host (Hyper-V), keys released, VM boots
 ```
 
 | HGS Mode | Strength | Use |
@@ -108,7 +108,7 @@ Guarded Host (Hyper-V) — keys released, VM boots
 |---|-----|----------|
 | Max | 2 TB | 64 TB |
 | 4K aligned | No | Yes |
-| Azure | **Yes — required** | Convert before upload |
+| Azure | **Yes, required** | Convert before upload |
 
 ---
 
@@ -118,7 +118,7 @@ Guarded Host (Hyper-V) — keys released, VM boots
 |---------|------|
 | **VMQ** | Default; per-VM queues at 10 GbE+ |
 | **vRSS** | Multi-core scaling inside the VM |
-| **SR-IOV** | Wire-speed VMs (FW, NFV) — **bypasses vSwitch (no VLAN/extensions)** |
+| **SR-IOV** | Wire-speed VMs (FW, NFV), **bypasses vSwitch (no VLAN/extensions)** |
 
 ---
 

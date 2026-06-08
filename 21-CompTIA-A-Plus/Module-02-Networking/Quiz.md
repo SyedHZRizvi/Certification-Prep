@@ -35,7 +35,7 @@ D. UDP, 53 and 123
 ### Q4. A user's PC has IP address 169.254.42.10 / 16. What does this MOST likely indicate? *(Apply)*
 A. The PC has a valid public IP
 B. The PC has been manually configured by IT
-C. APIPA — the PC failed to reach a DHCP server
+C. APIPA, the PC failed to reach a DHCP server
 D. The PC is on a Cisco device
 
 ---
@@ -169,10 +169,10 @@ D. Loopback plug
 ---
 
 ### Q21. A Cat 6 cable run is measured at 80m and configured for 10 Gbps. Is this likely to work? *(Analyze)*
-A. Yes — Cat 6 handles 10 Gbps to 100m
-B. No — Cat 6 supports 10 Gbps only up to ~55m; Cat 6a is needed for 100m
-C. Yes — Cat 6 is fiber
-D. No — Cat 6 maxes at 100 Mbps
+A. Yes, Cat 6 handles 10 Gbps to 100m
+B. No, Cat 6 supports 10 Gbps only up to ~55m; Cat 6a is needed for 100m
+C. Yes, Cat 6 is fiber
+D. No, Cat 6 maxes at 100 Mbps
 
 ---
 
@@ -212,7 +212,7 @@ D. APIPA is in use
 
 > *Create-level note:* you are picking the *combination* of features that achieves the goal.
 A. One single SSID for everyone
-B. Two SSIDs / VLANs — one guest (no LAN access), one staff (with LAN access); both on the same AP using VLAN tagging
+B. Two SSIDs / VLANs, one guest (no LAN access), one staff (with LAN access); both on the same AP using VLAN tagging
 C. Use POP3 instead of IMAP
 D. Disable the firewall
 
@@ -229,7 +229,7 @@ HTTP = 80, HTTPS = 443. Memorize the pair.
 ### Q3: **B. UDP, 67 and 68**
 DHCP server listens on UDP 67; client on UDP 68. The DORA exchange happens over these.
 
-### Q4: **C. APIPA — the PC failed to reach a DHCP server**
+### Q4: **C. APIPA, the PC failed to reach a DHCP server**
 169.254.0.0/16 is the APIPA self-assigned range when Windows can't find DHCP.
 
 ### Q5: **B. T568B**
@@ -266,7 +266,7 @@ SSH = Secure SHell, port 22, encrypted, replaces Telnet.
 Microwave ovens are 2.4 GHz. Add Bluetooth + neighbors' Wi-Fi → noise floor rises. Try 5 GHz.
 
 ### Q16: **A. SAE replaces 4-way PSK handshake → resists offline brute force**
-WPA3's SAE handshake (Dragonfly) makes captured handshakes useless for offline cracking — a major WPA2 weakness.
+WPA3's SAE handshake (Dragonfly) makes captured handshakes useless for offline cracking, a major WPA2 weakness.
 
 ### Q17: **B. Forward off-network traffic**
 The default route. If the destination is not on the local subnet, the host sends the packet to the gateway.
@@ -280,7 +280,7 @@ DMZ host or specific port forwarding rules direct inbound NAT to a specific inte
 ### Q20: **B. Wi-Fi analyzer**
 Apps like WiFi Analyzer (Android), inSSIDer, NetSpot show SSIDs by channel and signal strength.
 
-### Q21: **B. No — Cat 6 supports 10 Gbps only up to ~55m; Cat 6a needed for 100m**
+### Q21: **B. No, Cat 6 supports 10 Gbps only up to ~55m; Cat 6a needed for 100m**
 This is the most-asked Cat 6 vs Cat 6a question.
 
 ### Q22: **B. tracert / traceroute**
@@ -321,4 +321,4 @@ Multi-SSID with VLAN tagging is the modern dental-office (and every-SMB) setup. 
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Hardware](../Module-03-Hardware/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Hardware](../Module-03-Hardware/Reading.md)

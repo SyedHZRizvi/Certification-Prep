@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 Sprint Planning — 3 Topics
+## 🎯 Sprint Planning, 3 Topics
 
 1. **WHY** is this Sprint valuable? → Sprint Goal
 2. **WHAT** can be done? → PBIs selected
@@ -37,7 +37,7 @@
 
 - 🎯 Inspect **product** & adapt **backlog**
 - 👥 Scrum Team + **STAKEHOLDERS** (the only event!)
-- 🚫 NOT just a demo — collaborative working session
+- 🚫 NOT just a demo, collaborative working session
 - 🚫 NOT a sign-off / acceptance gate
 
 ---
@@ -45,7 +45,7 @@
 ## 🪞 Sprint Retrospective
 
 - 🎯 Inspect **process** (people, interactions, tools, DoD)
-- 👥 Scrum Team only — NO stakeholders
+- 👥 Scrum Team only, NO stakeholders
 - 📋 Output: at least one improvement to act on
 
 ---

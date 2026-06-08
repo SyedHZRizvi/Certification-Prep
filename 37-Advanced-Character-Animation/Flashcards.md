@@ -267,7 +267,7 @@
 **A:** If I were in this character's situation, what would I truthfully do? The foundational question of Method acting applied to animation.
 
 **Q:** What is a character's "Objective" in Stanislavski's system?
-**A:** What the character wants specifically in THIS shot or scene — not globally. Always an active verb.
+**A:** What the character wants specifically in THIS shot or scene, not globally. Always an active verb.
 
 **Q:** What is the "Super-Objective"?
 **A:** The overarching want that drives all of the character's objectives throughout the entire story.
@@ -291,7 +291,7 @@
 **A:** Found = spontaneous, unplanned take capturing genuine reaction. Staged = confirms a predetermined plan.
 
 **Q:** What 3-step process breaks the planning trap?
-**A:** (1) Film reference before thumbnailing. (2) One "crazy take" per session. (3) Show reference to peer without context — ask what emotion they see.
+**A:** (1) Film reference before thumbnailing. (2) One "crazy take" per session. (3) Show reference to peer without context, ask what emotion they see.
 
 **Q:** What is "subtext" in character animation?
 **A:** The gap between what a character says and what they actually mean or feel. Where the best animation lives.
@@ -300,7 +300,7 @@
 **A:** "This boy knows. I need to manage this. Smile wider. Touch his shoulder. Don't let him think." Led to: smile reaches mouth before eyes (0.5s delay).
 
 **Q:** What animation choice conveyed Luisa's anxiety in Encanto's Surface Pressure?
-**A:** Increasing blink rate through the second verse — a physiological sign of escalating anxiety.
+**A:** Increasing blink rate through the second verse, a physiological sign of escalating anxiety.
 
 **Q:** What two body areas conveyed the tension in Luisa's performance simultaneously?
 **A:** Straight spine = performed strength. Tight scapulae = hidden anxiety.
@@ -316,13 +316,13 @@
 **A:** The area on the ground between the character's feet. COG must project into this area or the character falls.
 
 **Q:** In a walking cycle, the COG traces what shape?
-**A:** An inverted arc — rises at mid-stride (weight on one foot), falls at contact (weight transfers).
+**A:** An inverted arc, rises at mid-stride (weight on one foot), falls at contact (weight transfers).
 
 **Q:** What is "animated physics" vs "real physics"?
-**A:** Animated physics exaggerates real physics to make audiences FEEL the physics in a 2D projection — slightly slower for emotion, faster for comedy, slow-in/slow-out in freefall.
+**A:** Animated physics exaggerates real physics to make audiences FEEL the physics in a 2D projection, slightly slower for emotion, faster for comedy, slow-in/slow-out in freefall.
 
 **Q:** In the seven-phase punch, what is the power source?
-**A:** The hip drive — hips rotate first. The arm is the last link in a chain: ground → foot → hip → torso → shoulder → arm.
+**A:** The hip drive, hips rotate first. The arm is the last link in a chain: ground → foot → hip → torso → shoulder → arm.
 
 **Q:** What is the "pancake error" in fall animation?
 **A:** The character falls as a rigid unit without the hips leading. Fix: hips lead; head trails 4–6 frames.
@@ -337,35 +337,35 @@
 **A:** Far-overshooting, lingering, high-frequency oscillation. Whips to a stop rather than settling.
 
 **Q:** What is the "ground reaction" principle in lifting?
-**A:** The feet press harder into the ground at the initiation of the lift — the force originates from the ground up.
+**A:** The feet press harder into the ground at the initiation of the lift, the force originates from the ground up.
 
 **Q:** What does "drag" mean in the 12 principles?
 **A:** Secondary parts resist the START of motion. The tail doesn't move when the body starts; it catches up.
 
 **Q:** At the apex of a jump, which animation principle is applied?
-**A:** Stretch — the body elongates at maximum height. Brief slow-in as it transitions from rise to fall.
+**A:** Stretch, the body elongates at maximum height. Brief slow-in as it transitions from rise to fall.
 
 ---
 
 ## 😶 MODULE 3: FACIAL ANIMATION
 
 **Q:** What does FACS stand for?
-**A:** Facial Action Coding System — developed by Paul Ekman and Wallace Friesen in 1978. 44 Action Units.
+**A:** Facial Action Coding System, developed by Paul Ekman and Wallace Friesen in 1978. 44 Action Units.
 
 **Q:** What is the difference between a genuine and a social smile?
-**A:** Genuine (Duchenne) = AU6 + AU12. Social = AU12 alone. AU6 raises cheeks and creates crow's-feet — cannot be voluntarily faked in isolation.
+**A:** Genuine (Duchenne) = AU6 + AU12. Social = AU12 alone. AU6 raises cheeks and creates crow's-feet, cannot be voluntarily faked in isolation.
 
 **Q:** Name the seven universal facial expressions.
 **A:** Happiness, Sadness, Fear, Disgust, Anger, Surprise, Contempt.
 
 **Q:** Which universal expression is the only asymmetric one?
-**A:** Contempt — AU12R (right side only). If symmetric, it reads as something else.
+**A:** Contempt, AU12R (right side only). If symmetric, it reads as something else.
 
 **Q:** What is a micro-expression?
 **A:** A suppressed emotion that flashes across the face for 1–5 frames at 24fps before the maintained surface expression settles.
 
 **Q:** What are saccades?
-**A:** Rapid, ballistic jumps of the eye between fixation points (10–50ms). Eyes do NOT smoothly track — they jump. Use stepped tangents.
+**A:** Rapid, ballistic jumps of the eye between fixation points (10–50ms). Eyes do NOT smoothly track, they jump. Use stepped tangents.
 
 **Q:** Name five causes of the "dead eye" problem.
 **A:** (1) No saccades. (2) Uniform blink timing. (3) Missing one-eye offset. (4) Upper lid not following gaze. (5) No micro-squint on attention.
@@ -374,7 +374,7 @@
 **A:** Closes in 4 frames (fast). Holds 0–2 frames. Opens in 5–6 frames (slower). Upper lid does 75% of the work.
 
 **Q:** What does AU1 (Inner Brow Raise) express?
-**A:** Concern, worry, sadness. The most emotionally specific zone of the face — grief, sympathy, and nuanced worry all live here.
+**A:** Concern, worry, sadness. The most emotionally specific zone of the face, grief, sympathy, and nuanced worry all live here.
 
 **Q:** What FACS AU combination produces fear?
 **A:** AU1+2 (full brow raise) + AU4 (brow lower) + AU5 (upper lid raise) + AU20 (lip stretch).
@@ -390,7 +390,7 @@
 ## 🎤 MODULE 4: ADVANCED LIP SYNC
 
 **Q:** Which phonemes require the ONLY fully closed mouth shape?
-**A:** M, B, and P. These closures are the primary sync landmarks — the audience's main reference for sync.
+**A:** M, B, and P. These closures are the primary sync landmarks, the audience's main reference for sync.
 
 **Q:** State the 2-frame lead rule for lip sync.
 **A:** The mouth must precede the audio by 2 frames. Neurological fact: auditory processing is faster than visual processing (~40–80ms = ~2 frames at 24fps).
@@ -402,7 +402,7 @@
 **A:** Audiences can read sync with as few as 5 shapes if M/B/P closures and general open/closed timing are correct.
 
 **Q:** When should dialogue be animated on 1s?
-**A:** Fast dialogue (>180wpm), hero close-ups, emotional climaxes — where subtlety and precision are critical.
+**A:** Fast dialogue (>180wpm), hero close-ups, emotional climaxes, where subtlety and precision are critical.
 
 **Q:** What is the first step of the performance-first lip sync workflow?
 **A:** Block the character's head, body, and eyes to convey the emotional performance with NO mouth animation at all.
@@ -411,10 +411,10 @@
 **A:** Japanese has more syllables per concept than English. The original English animation's mouth timing must be significantly expanded.
 
 **Q:** What percentage of dialogue scenes read as adequately synced after adding M/B/P closures only?
-**A:** Approximately 80% — closures are the audience's main sync reference.
+**A:** Approximately 80%, closures are the audience's main sync reference.
 
 **Q:** The "F/V" viseme is distinctive because:
-**A:** The lower lip contacts the upper teeth — the only dental-lip contact shape.
+**A:** The lower lip contacts the upper teeth, the only dental-lip contact shape.
 
 ---
 
@@ -445,13 +445,13 @@
 **A:** A production document specifying the behavioral vocabulary for each creature type. All animators reference it for consistency.
 
 **Q:** In tail animation, which part has the greatest time offset?
-**A:** The tail tip — greatest lag, highest frequency in follow-through. Base moves first.
+**A:** The tail tip, greatest lag, highest frequency in follow-through. Base moves first.
 
 **Q:** What does the amplitude of a quadruped's tail motion indicate?
 **A:** Emotional state. Large amplitude = excited/happy. Low amplitude = submissive/fearful. Stiff/slow = aggressive.
 
 **Q:** What was Nick Wilde's (Zootropolis) behavioral borrowing?
-**A:** Crow — side-eye, body stillness before action, deliberate head bobs.
+**A:** Crow, side-eye, body stillness before action, deliberate head bobs.
 
 ---
 
@@ -461,22 +461,22 @@
 **A:** (1) Geometric. (2) Texture/look. (3) Timing (phase offset). (4) Motion quality (clip selection). (5) Behavioral.
 
 **Q:** Which single dimension can make geometrically identical agents read as individuals?
-**A:** Timing variation (phase offset) — even identical character models feel individual if on different cycle phases.
+**A:** Timing variation (phase offset), even identical character models feel individual if on different cycle phases.
 
 **Q:** What is the "1-in-10 rule" for crowd animation?
 **A:** At least 1 in every 10 visible agents should be doing something distinctly different from the others.
 
 **Q:** What decision system does Massive use for agent behavior?
-**A:** Fuzzy logic networks — input nodes → fuzzy nodes → logic nodes → output nodes that select motion clips.
+**A:** Fuzzy logic networks, input nodes → fuzzy nodes → logic nodes → output nodes that select motion clips.
 
 **Q:** What is "emergent behavior" in the LOTR crowd simulation?
-**A:** Authentic behavior arising from the simulation's logic without human direction — e.g., orcs routing when enough allies fell.
+**A:** Authentic behavior arising from the simulation's logic without human direction, e.g., orcs routing when enough allies fell.
 
 **Q:** When should you use simulation vs keyframe for crowds?
 **A:** Simulation: 1000+ agents needing emergent behavior. Keyframe: 20–50 hero-adjacent characters needing specific marks. Hybrid: between.
 
 **Q:** What is the "hero crowd" in a hybrid shot?
-**A:** The 20–50 agents closest to camera that must hit specific marks — animated via keyframe.
+**A:** The 20–50 agents closest to camera that must hit specific marks, animated via keyframe.
 
 **Q:** What does the editorial principle "edit drives simulation" mean?
 **A:** The simulation must produce appropriate visual content at every planned cut point. Editorial does not adapt to the simulation.
@@ -501,10 +501,10 @@
 **A:** Scales and proportion-adjusts the captured motion to fit a character with different proportions.
 
 **Q:** What is the "retargeting paradox"?
-**A:** A character with shorter legs taking the same number of steps as a taller actor covers less ground — appears to move faster.
+**A:** A character with shorter legs taking the same number of steps as a taller actor covers less ground, appears to move faster.
 
 **Q:** What does "foot locking" solve in mocap cleanup?
-**A:** Prevents feet from sliding, skidding, or floating after retargeting — pins feet to world-space at contact frames.
+**A:** Prevents feet from sliding, skidding, or floating after retargeting, pins feet to world-space at contact frames.
 
 **Q:** In MotionBuilder, what does "Plot" do?
 **A:** Bakes the live retargeting relationship to discrete keyframes for export to Maya/Houdini.
@@ -526,7 +526,7 @@
 ## 📈 MODULE 8: GRAPH EDITOR ADVANCED
 
 **Q:** What does a flat (horizontal) curve segment in the graph editor mean?
-**A:** The value is held constant — no motion in that channel. A held pose.
+**A:** The value is held constant, no motion in that channel. A held pose.
 
 **Q:** What does an S-curve represent in the graph editor?
 **A:** Organic motion: slow-in (object resists starting) → fast middle → slow-out (object resists stopping).
@@ -535,22 +535,22 @@
 **A:** Stepped. Used exclusively during the blocking phase.
 
 **Q:** What is the difference between Spline and Clamped tangents?
-**A:** Spline can overshoot past the keyframe's value. Clamped cannot overshoot — it stays contained.
+**A:** Spline can overshoot past the keyframe's value. Clamped cannot overshoot, it stays contained.
 
 **Q:** What does tangent handle LENGTH control?
 **A:** How strongly the curve is pulled toward the key's value. Long = slow approach. Short = fast approach.
 
 **Q:** What is the "spline switch moment" in the stepped workflow?
-**A:** When you change stepped tangents to spline — your clean blocked poses become a "swimming" mess. This is normal.
+**A:** When you change stepped tangents to spline, your clean blocked poses become a "swimming" mess. This is normal.
 
 **Q:** What are "swimming poses"?
 **A:** Unexpected in-between positions generated by spline interpolation between blocked keyframes. Fixed by tangent refinement.
 
 **Q:** What tangent type should impact contact frames use?
-**A:** Linear or flat — objects do not ease into hard surfaces.
+**A:** Linear or flat, objects do not ease into hard surfaces.
 
 **Q:** What expression pattern creates secondary motion offset (tail follows body with 5-frame delay)?
-**A:** `getAttr -t (frame - 5) bodyControl.attribute` — retrieve the body's value from 5 frames ago.
+**A:** `getAttr -t (frame - 5) bodyControl.attribute`, retrieve the body's value from 5 frames ago.
 
 **Q:** How do you diagnose "character floats before landing"?
 **A:** The curve is too slow-in on Y-translation approaching the ground. Shorten the incoming tangent or use linear.
@@ -563,10 +563,10 @@
 ## 🎬 MODULE 9: DIRECTORS AND FILM PIPELINE
 
 **Q:** When a director says "it's too much," what is the technical translation?
-**A:** Over-animation — too busy. Reduce secondary motion, simplify the performance.
+**A:** Over-animation, too busy. Reduce secondary motion, simplify the performance.
 
 **Q:** When a director says "it's not alive," what is the technical translation?
-**A:** Under-animation — too stiff. Add breathing, eye movement, and timing variety.
+**A:** Under-animation, too stiff. Add breathing, eye movement, and timing variety.
 
 **Q:** What is the ONE clarifying question to ask in an ambiguous review?
 **A:** "Can you point to a specific moment in the shot that isn't working?"
@@ -584,7 +584,7 @@
 **A:** The editorial cut determines shot length, cut points, and emotional context. Confirm these BEFORE blocking.
 
 **Q:** What are "handles" on a delivered animation shot?
-**A:** 4–8 frames of held pose at the beginning and end — provides editorial flexibility for cut point adjustments.
+**A:** 4–8 frames of held pose at the beginning and end, provides editorial flexibility for cut point adjustments.
 
 **Q:** What is the Animation Supervisor's primary role?
 **A:** Translates director vision into animator-actionable notes, maintains cross-shot consistency, reviews all work before the director.
@@ -603,7 +603,7 @@
 **A:** (1) Reel = weakest shot. (2) Show what you want to get hired to do. (3) Variety within the discipline.
 
 **Q:** Where should your best shot appear in the reel order?
-**A:** First — recruiter attention is highest at the opening. Hook immediately.
+**A:** First, recruiter attention is highest at the opening. Hook immediately.
 
 **Q:** What is the professional length standard for a character animation demo reel?
 **A:** 60–90 seconds. Sweet spot: 75–85 seconds.
@@ -612,7 +612,7 @@
 **A:** Play the reel with the audio OFF. For each shot ask: "Does this shot earn its time on screen?"
 
 **Q:** What is the "Bohemian Rhapsody problem"?
-**A:** Using a famous song — recruiter associates their feelings about the song with your reel instead of your animation.
+**A:** Using a famous song, recruiter associates their feelings about the song with your reel instead of your animation.
 
 **Q:** What are the two questions to ask in a structured peer review?
 **A:** (1) "Which shot made you most engaged?" (2) "Was there a moment you wanted to look away?"

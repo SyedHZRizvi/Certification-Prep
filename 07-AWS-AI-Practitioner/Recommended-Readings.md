@@ -1,9 +1,9 @@
 ---
 permalink: /07-AWS-AI-Practitioner/Recommended-Readings/
-title: Recommended Readings — AWS AI Practitioner
+title: Recommended Readings, AWS AI Practitioner
 ---
 
-# Recommended Readings — AWS AI Practitioner (AIF-C01) 📚
+# Recommended Readings, AWS AI Practitioner (AIF-C01) 📚
 
 > This reading list is intentionally short and high-signal. Read the **canonical textbooks** as background while studying. Read the **seminal papers** before or during the modules they anchor (notes below). Read the **industry resources** weekly during your study period. Use the **free academic courses** for any topic where the course modules feel too compressed.
 >
@@ -13,7 +13,7 @@ title: Recommended Readings — AWS AI Practitioner
 
 ## 📖 Canonical textbooks
 
-### 1. *Deep Learning* — Goodfellow, Bengio, Courville (MIT Press, 2016)
+### 1. *Deep Learning*, Goodfellow, Bengio, Courville (MIT Press, 2016)
 
 The canonical free-online textbook for deep learning. The first 5 chapters give you everything Module 1's vocabulary needs plus the math intuition. Skip the second half unless you're aiming beyond AIF-C01.
 
@@ -21,7 +21,7 @@ The canonical free-online textbook for deep learning. The first 5 chapters give 
 - **Why it's worth your time:** No book is cited more in the field; you'll see "Goodfellow et al." referenced in nearly every academic talk
 - **Free online:** https://www.deeplearningbook.org/
 
-### 2. *AWS Certified AI Practitioner Official Study Guide: Exam AIF-C01* — AWS / Sybex (Wiley, 2025)
+### 2. *AWS Certified AI Practitioner Official Study Guide: Exam AIF-C01*, AWS / Sybex (Wiley, 2025)
 
 The official Sybex study guide. Best used as a *cross-reference* against the modules in this course; if a topic feels under-covered here, look there next. Includes domain-by-domain breakdowns and ~100 practice questions in the book + ~200 in the online supplement.
 
@@ -29,7 +29,7 @@ The official Sybex study guide. Best used as a *cross-reference* against the mod
 - **Why it's worth your time:** Wiley books are the closest thing to "the official answer key" for AWS exams
 - **ISBN-13:** 978-1394330158
 
-### 3. *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.) — Aurélien Géron (O'Reilly, 2022)
+### 3. *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.), Aurélien Géron (O'Reilly, 2022)
 
 The "ML practitioner's handbook." Chapters 1–4 cover everything Module 1 expects you to know, with worked code. The deep-learning second half (Keras + TensorFlow) is more than AIF-C01 needs but invaluable if you continue toward the AWS Machine Learning Engineer Associate or beyond.
 
@@ -37,7 +37,7 @@ The "ML practitioner's handbook." Chapters 1–4 cover everything Module 1 expec
 - **Why it's worth your time:** Bridges concept and code better than any single book in 2026
 - **ISBN-13:** 978-1098125974
 
-### 4. *Machine Learning Yearning* — Andrew Ng (free, 2018)
+### 4. *Machine Learning Yearning*, Andrew Ng (free, 2018)
 
 A short (~118 pages), strategic-rather-than-mathematical book on how to *prioritize* ML work. Reads in 2–3 hours. The chapters on bias/variance, error analysis, and human-level performance are the practical complement to Module 1's vocabulary.
 
@@ -45,7 +45,7 @@ A short (~118 pages), strategic-rather-than-mathematical book on how to *priorit
 - **Why it's worth your time:** Andrew Ng's career-distilled advice on what *matters* in ML projects
 - **Free PDF:** https://www.deeplearning.ai/machine-learning-yearning/
 
-### 5. *Designing Machine Learning Systems* — Chip Huyen (O'Reilly, 2022)
+### 5. *Designing Machine Learning Systems*, Chip Huyen (O'Reilly, 2022)
 
 The MLOps textbook. The chapters on feature stores, model monitoring, and the data flywheel directly support Module 2 and reinforce the Pinterest case study.
 
@@ -57,7 +57,7 @@ The MLOps textbook. The chapters on feature stores, model monitoring, and the da
 
 ## 📰 Seminal papers and industry references (skim, don't memorize math)
 
-### 6. "Attention Is All You Need" — Vaswani et al. (NeurIPS 2017)
+### 6. "Attention Is All You Need", Vaswani et al. (NeurIPS 2017)
 
 The Transformer paper. The architectural backbone of every LLM you'll touch (Claude, Nova, Titan, Llama, Mistral, Cohere). The first 3 pages are sufficient for AIF-C01 intuition.
 
@@ -65,7 +65,7 @@ The Transformer paper. The architectural backbone of every LLM you'll touch (Cla
 - **Why:** It's *the* reference for any AI discussion past 2017
 - **arXiv:** https://arxiv.org/abs/1706.03762
 
-### 7. "Language Models are Few-Shot Learners" — Brown et al. (NeurIPS 2020)
+### 7. "Language Models are Few-Shot Learners", Brown et al. (NeurIPS 2020)
 
 The GPT-3 paper. Introduces the language and framing of *foundation model* + *few-shot prompting* that Module 3 and Module 5 use.
 
@@ -73,7 +73,7 @@ The GPT-3 paper. Introduces the language and framing of *foundation model* + *fe
 - **Why:** Defines half the vocabulary on the exam
 - **arXiv:** https://arxiv.org/abs/2005.14165
 
-### 8. "Training Language Models to Follow Instructions with Human Feedback" — Ouyang et al. (NeurIPS 2022)
+### 8. "Training Language Models to Follow Instructions with Human Feedback", Ouyang et al. (NeurIPS 2022)
 
 The InstructGPT paper. Introduces RLHF as the standard chat-LLM alignment technique. Module 1's brief RLHF mention and Module 6's alignment vocabulary trace back here.
 
@@ -81,7 +81,7 @@ The InstructGPT paper. Introduces RLHF as the standard chat-LLM alignment techni
 - **Why:** The reason ChatGPT works; the reason chat-LLMs feel different from raw GPT-3
 - **arXiv:** https://arxiv.org/abs/2203.02155
 
-### 9. "Constitutional AI: Harmlessness from AI Feedback" — Bai et al. (Anthropic, 2022)
+### 9. "Constitutional AI: Harmlessness from AI Feedback", Bai et al. (Anthropic, 2022)
 
 Anthropic's alternative alignment technique using an AI critic against a written constitution. The lineage behind Claude on Bedrock and why Anthropic's models are positioned the way they are.
 
@@ -89,7 +89,7 @@ Anthropic's alternative alignment technique using an AI critic against a written
 - **Why:** Differentiates Anthropic's approach in the marketplace
 - **arXiv:** https://arxiv.org/abs/2212.08073
 
-### 10. "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" — Wei et al. (NeurIPS 2022)
+### 10. "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models", Wei et al. (NeurIPS 2022)
 
 The CoT paper. Module 5's chain-of-thought technique is *this* paper.
 
@@ -97,7 +97,7 @@ The CoT paper. Module 5's chain-of-thought technique is *this* paper.
 - **Why:** Cited in every prompt-engineering discussion since
 - **arXiv:** https://arxiv.org/abs/2201.11903
 
-### 11. "ReAct: Synergizing Reasoning and Acting in Language Models" — Yao et al. (ICLR 2023)
+### 11. "ReAct: Synergizing Reasoning and Acting in Language Models", Yao et al. (ICLR 2023)
 
 The ReAct paper. The architectural pattern behind Bedrock Agents (Module 5).
 
@@ -105,7 +105,7 @@ The ReAct paper. The architectural pattern behind Bedrock Agents (Module 5).
 - **Why:** Names the reasoning + tool-use loop pattern verbatim
 - **arXiv:** https://arxiv.org/abs/2210.03629
 
-### 12. "BloombergGPT: A Large Language Model for Finance" — Wu et al. (Bloomberg, 2023)
+### 12. "BloombergGPT: A Large Language Model for Finance", Wu et al. (Bloomberg, 2023)
 
 The case study from Module 6. The reference for "when is from-scratch domain training justified?" Read the abstract and the eval-results section.
 
@@ -115,13 +115,13 @@ The case study from Module 6. The reference for "when is from-scratch domain tra
 
 ### 13. AWS Responsible AI whitepaper + Bedrock Security & Privacy User Guide
 
-AWS's official voice on Responsible AI patterns plus the Bedrock-specific security/privacy posture (no-train-on-customer-data, KMS, IAM, PrivateLink). Read these twice — the AIF-C01 exam treats these as canon.
+AWS's official voice on Responsible AI patterns plus the Bedrock-specific security/privacy posture (no-train-on-customer-data, KMS, IAM, PrivateLink). Read these twice, the AIF-C01 exam treats these as canon.
 
 - **Read when:** Module 7 and Module 8
 - **Why:** The exam's "official answer" comes from these documents
 - **Sources:** https://aws.amazon.com/ai/responsible-ai/ and https://docs.aws.amazon.com/bedrock/latest/userguide/security.html
 
-### 14. NIST AI Risk Management Framework — NIST AI 100-1 (January 2023)
+### 14. NIST AI Risk Management Framework, NIST AI 100-1 (January 2023)
 
 The US federal voluntary framework, named on the exam. The four functions (Govern, Map, Measure, Manage) anchor the Capstone Project's §4.
 
@@ -129,7 +129,7 @@ The US federal voluntary framework, named on the exam. The four functions (Gover
 - **Why:** Exam tests recognition of the framework name and its four functions
 - **PDF:** https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf
 
-### 15. EU AI Act — Regulation (EU) 2024/1689 (in force 1 August 2024)
+### 15. EU AI Act, Regulation (EU) 2024/1689 (in force 1 August 2024)
 
 The EU's risk-tiered AI regulation. The exam tests recognition of the tier names (unacceptable, high, limited, minimal). The Capstone Project §4 requires a defended position on whether the FNOL summarizer is "high-risk" under Annex III.
 
@@ -148,28 +148,28 @@ Official AWS source for new model releases, Bedrock feature drops, and AWS Respo
 - **Why:** Exam refresh cycles track AWS announcements
 - **Source:** https://aws.amazon.com/blogs/machine-learning/
 
-### 17. Andrej Karpathy — *Intro to LLMs* (1-hour YouTube talk) + *Neural Networks: Zero to Hero* (free YouTube series)
+### 17. Andrej Karpathy, *Intro to LLMs* (1-hour YouTube talk) + *Neural Networks: Zero to Hero* (free YouTube series)
 
 The single best free explainer of how LLMs actually work. Karpathy is a co-founder of OpenAI and former Tesla Director of AI. The 1-hour talk fits in Module 3 prep; the *Zero to Hero* series is a multi-week deeper dive.
 
 - **Why:** Best free intuition for foundation-model mechanics
-- **Source:** YouTube — search "Karpathy intro to LLMs" and "Karpathy Neural Networks Zero to Hero"
+- **Source:** YouTube, search "Karpathy intro to LLMs" and "Karpathy Neural Networks Zero to Hero"
 
-### 18. Sebastian Raschka — *Ahead of AI* substack
+### 18. Sebastian Raschka, *Ahead of AI* substack
 
 Weekly digests of important new ML papers, plus deep dives on specific architectures (LoRA, RLHF, DPO, mixture-of-experts). Written for technical practitioners; matches AIF-C01 depth.
 
 - **Why:** Top-tier signal-to-noise for current ML developments
 - **Source:** https://magazine.sebastianraschka.com/
 
-### 19. Jack Clark — *Import AI* newsletter
+### 19. Jack Clark, *Import AI* newsletter
 
 A free weekly newsletter from one of Anthropic's co-founders. Mixes policy, technical, and industry coverage. The single best way to know what AI policy debate matters this week.
 
 - **Why:** Anchor for Module 7's EU AI Act / NIST AI RMF discussions
 - **Source:** https://importai.substack.com/
 
-### 20. *AI Snake Oil* — Arvind Narayanan & Sayash Kapoor (Princeton, 2024)
+### 20. *AI Snake Oil*, Arvind Narayanan & Sayash Kapoor (Princeton, 2024)
 
 Both a book and an ongoing substack. Strongly skeptical of AI hype; the necessary counterweight to vendor-fueled enthusiasm. Read at least the introduction.
 
@@ -181,14 +181,14 @@ Both a book and an ongoing substack. Strongly skeptical of AI hype; the necessar
 
 ## 🎓 Free academic courses
 
-### 21. Andrew Ng — *Machine Learning Specialization* on Coursera (Stanford / DeepLearning.AI)
+### 21. Andrew Ng, *Machine Learning Specialization* on Coursera (Stanford / DeepLearning.AI)
 
 The reboot of the classic Coursera ML course. ~3 months part-time. Audits are free. Covers Modules 1–2 of this course at deeper depth.
 
 - **Use when:** Module 1 feels too compressed
 - **Source:** https://www.coursera.org/specializations/machine-learning-introduction
 
-### 22. Andrew Ng — *Deep Learning Specialization* + *Generative AI with LLMs* on Coursera
+### 22. Andrew Ng, *Deep Learning Specialization* + *Generative AI with LLMs* on Coursera
 
 Two short specializations that map almost directly to Modules 3, 5, 6 of this course. ~6 weeks part-time. Audit free.
 
@@ -197,12 +197,12 @@ Two short specializations that map almost directly to Modules 3, 5, 6 of this co
 
 ### 23. Stanford CS231n / CS224n / CS336
 
-Stanford's free CS lecture series for computer vision (CS231n), NLP (CS224n), and large-scale ML systems (CS336). All recordings and slides are freely posted. Skim the first two lectures of each — the slide decks alone are exam-grade reference material.
+Stanford's free CS lecture series for computer vision (CS231n), NLP (CS224n), and large-scale ML systems (CS336). All recordings and slides are freely posted. Skim the first two lectures of each, the slide decks alone are exam-grade reference material.
 
 - **Use when:** Anytime you want academic depth
 - **Sources:** https://cs231n.stanford.edu/ , https://web.stanford.edu/class/cs224n/ , https://stanford-cs336.github.io/
 
-### 24. Fast.ai — *Practical Deep Learning for Coders*
+### 24. Fast.ai, *Practical Deep Learning for Coders*
 
 Jeremy Howard's free, code-first deep-learning course. ~20 hours of video. Practitioner orientation matches the AIF-C01 better than purely theoretical courses.
 
@@ -238,11 +238,11 @@ A library of 1-hour applied courses with hands-on notebooks: *LangChain*, *RAG*,
 
 For the AIF-C01 specifically, *avoid*:
 
-- Detailed math behind backpropagation, attention mechanics, or Transformer internals — the exam does not test these
-- Implementation-level Python code — the exam is multiple choice / multiple response
-- Pre-2023 generic "intro to AI" books — most are stale on the GenAI shift
-- Anthropic / OpenAI / Cohere full developer docs — read AWS Bedrock's wrapping instead
-- YouTube ad-supported "AWS exam dumps" channels — they violate AWS exam terms and are often factually wrong
+- Detailed math behind backpropagation, attention mechanics, or Transformer internals, the exam does not test these
+- Implementation-level Python code, the exam is multiple choice / multiple response
+- Pre-2023 generic "intro to AI" books, most are stale on the GenAI shift
+- Anthropic / OpenAI / Cohere full developer docs, read AWS Bedrock's wrapping instead
+- YouTube ad-supported "AWS exam dumps" channels, they violate AWS exam terms and are often factually wrong
 
 ---
 

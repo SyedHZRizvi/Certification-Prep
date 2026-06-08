@@ -1,11 +1,11 @@
 # Module 3: Claude API & SDK Deep Dive 🔌
 
-> **Why this module matters:** Anything you can do with Claude, you can do with a 30-line script — once you know the API. The Messages API is small (one endpoint, ten or so parameters), but the details — streaming semantics, batch economics, prompt caching, retries, error taxonomy — are what separate a junior engineer from one who can stand up a Claude-powered service that does not page anyone at 2 a.m.
+> **Why this module matters:** Anything you can do with Claude, you can do with a 30-line script once you know the API. The Messages API is small (one endpoint, ten or so parameters), but the details streaming semantics, batch economics, prompt caching, retries, error taxonomy, are what separate a junior engineer from one who can stand up a Claude-powered service that does not page anyone at 2 a.m.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1 and 2 (model tiers + prompting conventions)
 > - HTTP basics (status codes, headers, JSON, streaming responses, server-sent events)
-> - Python OR TypeScript at intermediate level — the examples are language-equivalent
+> - Python OR TypeScript at intermediate level, the examples are language-equivalent
 > - Async programming basics (async/await, futures, promises)
 > - Environment variables and basic secret hygiene
 
@@ -13,7 +13,7 @@
 
 ## 📖 A Story: The 2 a.m. Page That Should Never Have Happened
 
-It is March 2024, 2:13 a.m. Pacific. Wendy is the lone on-call SRE for Beacon, a 40-person startup whose entire product flow runs through Claude 3 Opus. PagerDuty fires. The dashboard shows 100% error rate to the Anthropic API. Sample error: `429 Too Many Requests — rate limit exceeded`.
+It is March 2024, 2:13 a.m. Pacific. Wendy is the lone on-call SRE for Beacon, a 40-person startup whose entire product flow runs through Claude 3 Opus. PagerDuty fires. The dashboard shows 100% error rate to the Anthropic API. Sample error: `429 Too Many Requests, rate limit exceeded`.
 
 Wendy's first instinct is to scale the workers. She doubles them. Errors double. She quadruples them. Errors quadruple. The product is down for 47 minutes before her engineering lead, Sam, wakes up and asks the question Wendy has not thought of: *"What does your retry logic look like?"*
 
@@ -21,7 +21,7 @@ The answer: there isn't one. The code does `client.messages.create(...)` and sur
 
 The fix is 8 lines: exponential backoff with jitter on 429 and 5xx, surfaced from the SDK's built-in retry helper. The fix is also free; it ships in the Anthropic SDK out of the box and just needs to be *enabled*. Wendy ships it the next morning. The 2 a.m. page never repeats.
 
-The lesson this module exists to teach: **the API call is the easy part. The discipline around the API call — retries, streaming, caching, batching, observability — is the engineering.**
+The lesson this module exists to teach: **the API call is the easy part. The discipline around the API call retries, streaming, caching, batching, observability is the engineering.**
 
 ---
 
@@ -76,7 +76,7 @@ That is the entire API surface for a basic call. Tool use (Module 4) adds `tools
 
 ---
 
-## 🐍 Python SDK — `anthropic`
+## 🐍 Python SDK, `anthropic`
 
 ### Install + initialize
 
@@ -139,13 +139,13 @@ with client.messages.stream(
     print(f"\n\nTotal: {final.usage.input_tokens}+{final.usage.output_tokens} tokens")
 ```
 
-The SDK handles the SSE parsing for you. If you call the HTTP endpoint directly, you receive events like `message_start`, `content_block_start`, `content_block_delta`, `content_block_stop`, `message_delta`, `message_stop` — Anthropic's documented streaming protocol.
+The SDK handles the SSE parsing for you. If you call the HTTP endpoint directly, you receive events like `message_start`, `content_block_start`, `content_block_delta`, `content_block_stop`, `message_delta`, `message_stop`, Anthropic's documented streaming protocol.
 
 🎯 **Exam pattern:** *"What is the SDK helper that exposes a clean iterator over text deltas?"* → **`client.messages.stream(...)` with `stream.text_stream`**.
 
 ---
 
-## 🟦 TypeScript SDK — `@anthropic-ai/sdk`
+## 🟦 TypeScript SDK, `@anthropic-ai/sdk`
 
 ### Install + initialize
 
@@ -199,7 +199,7 @@ The TS SDK exposes both an event-stream iterator and a `.finalMessage()` helper,
 
 ---
 
-## ⚡ Streaming — Why You (Almost) Always Want It
+## ⚡ Streaming, Why You (Almost) Always Want It
 
 Without streaming, the user waits for the full response before seeing a single character. For a Sonnet response of ~600 tokens, that's typically **3–6 seconds of dead air**. With streaming, the first token arrives in 250–500 ms (the **time to first token**, TTFT) and the rest flows.
 
@@ -208,7 +208,7 @@ Without streaming, the user waits for the full response before seeing a single c
 | Time to first byte | ~3–6s (full response) | ~250–500 ms (first token) |
 | Perceived latency | Bad | Good |
 | Memory at client | Lower (one big chunk) | Lower (incremental) |
-| Implementation complexity | Trivial | Slight — handle SSE / iterator |
+| Implementation complexity | Trivial | Slight, handle SSE / iterator |
 | Use when | Background jobs, batches | Anywhere a human is waiting |
 
 🎯 **Exam pattern:** *"A chat UI feels slow at 4 seconds. What is the single highest-impact engineering change?"* → **Stream the response** (TTFT drops to ~500 ms).
@@ -222,7 +222,7 @@ Without streaming, the user waits for the full response before seeing a single c
 
 ---
 
-## 🧊 Prompt Caching — The 90% Cost Cut
+## 🧊 Prompt Caching, The 90% Cost Cut
 
 Anthropic shipped prompt caching in mid-2024. It works by hashing the prompt prefix and serving repeated requests against the same prefix from a server-side cache. Cached tokens are billed at roughly **10% of standard input price** (so ~90% off).
 
@@ -250,7 +250,7 @@ response = client.messages.create(
                 },
                 {
                     "type": "text",
-                    "text": "[per-request variable content — NOT cached]"
+                    "text": "[per-request variable content, NOT cached]"
                 }
             ]
         }
@@ -266,11 +266,11 @@ print(response.usage)
 ### Rules to internalize
 
 1. **Cache attaches to a specific PREFIX**, ending at the `cache_control` marker. Everything BEFORE the marker is cacheable; everything after is not (for that cache point).
-2. **You can mark multiple cache points** (up to ~4) — the API caches each prefix separately. Use this for layered structures.
-3. **TTL is short** — ~5 minutes ephemeral. The cache "warms" on the first call and "hits" on subsequent calls within TTL. A *hit* renews the TTL.
+2. **You can mark multiple cache points** (up to ~4), the API caches each prefix separately. Use this for layered structures.
+3. **TTL is short**, ~5 minutes ephemeral. The cache "warms" on the first call and "hits" on subsequent calls within TTL. A *hit* renews the TTL.
 4. **Minimum cacheable content** is ~1024 tokens for most models (smaller models may have lower thresholds). Marking a 300-token block does nothing.
 5. **`cache_creation_input_tokens` are billed at a small markup** (typically ~25% MORE than standard input, one-time). Subsequent reads are 10% of standard. The break-even is usually 2 calls.
-6. **Prompt MUST match byte-for-byte** — a single changed whitespace invalidates the cache.
+6. **Prompt MUST match byte-for-byte**, a single changed whitespace invalidates the cache.
 
 ### The economics
 
@@ -292,11 +292,11 @@ At 1,000 calls (within the TTL hit cycle, well-warmed):
 
 This is why Notion and Cursor talk about caching as a *make-or-break* economics decision.
 
-🚨 **Trap on the exam:** *"Prompt caching reduces input cost by 50%."* — FALSE. The cached portion is reduced by ~90% (billed at ~10%).
+🚨 **Trap on the exam:** *"Prompt caching reduces input cost by 50%."*, FALSE. The cached portion is reduced by ~90% (billed at ~10%).
 
 ---
 
-## 📦 Batch API — When Latency Doesn't Matter
+## 📦 Batch API, When Latency Doesn't Matter
 
 For workloads where you can wait minutes-to-hours for responses (overnight enrichment, classification of a corpus, dataset generation), Anthropic offers the **Message Batches API** at **50% discount** on both input and output tokens.
 
@@ -371,7 +371,7 @@ This calls the **`/messages/count_tokens` endpoint**, which returns the same tok
 
 ### Why not "len(text)/4"?
 
-- Rough rule of thumb only — accurate to within ~20% for English prose
+- Rough rule of thumb only, accurate to within ~20% for English prose
 - *Bad* for code, JSON, non-Latin scripts, very long words
 - Bad for tool-use payloads (tool definitions add hidden tokens)
 
@@ -391,12 +391,12 @@ client = Anthropic(max_retries=3, timeout=60.0)
 
 | Status | Class | Retry? | What it means |
 |--------|-------|--------|---------------|
-| **400** | `BadRequestError` | ❌ | Invalid request — bug on your side |
+| **400** | `BadRequestError` | ❌ | Invalid request, bug on your side |
 | **401** | `AuthenticationError` | ❌ | Bad API key |
 | **403** | `PermissionDeniedError` | ❌ | API key valid but lacks scope |
 | **404** | `NotFoundError` | ❌ | Bad model name, batch ID, etc. |
 | **409** | `ConflictError` | ❌ | Resource state conflict |
-| **413** | `RequestTooLargeError` | ❌ | Prompt exceeds limit — shrink it |
+| **413** | `RequestTooLargeError` | ❌ | Prompt exceeds limit, shrink it |
 | **422** | `UnprocessableEntityError` | ❌ | Schema validation failed |
 | **429** | `RateLimitError` | ✅ | Honor the `retry-after` header |
 | **500** | `InternalServerError` | ✅ | Server issue; back off and retry |
@@ -424,7 +424,7 @@ def call_with_retry(max_attempts=5):
             time.sleep(wait)
 ```
 
-The SDK does this for you — but if you wrap it in your own client (which you will, for observability), preserve the same shape.
+The SDK does this for you, but if you wrap it in your own client (which you will, for observability), preserve the same shape.
 
 ### Rate limit headers (always log these)
 
@@ -438,7 +438,7 @@ The SDK does this for you — but if you wrap it in your own client (which you w
 | `anthropic-ratelimit-output-tokens-limit` | Per-minute output token cap |
 | `retry-after` | On 429/529: seconds to wait |
 
-Surface these in your dashboards. The 90th-percentile "tokens-remaining at end of minute" should never approach zero — if it does, you need to request a tier upgrade.
+Surface these in your dashboards. The 90th-percentile "tokens-remaining at end of minute" should never approach zero, if it does, you need to request a tier upgrade.
 
 🎯 **Exam pattern:** *"Your service hits HTTP 429 repeatedly under load. The correct response is:"* → **Exponential backoff with jitter, honor `retry-after`, and consider requesting a tier upgrade.**
 
@@ -456,7 +456,7 @@ Anthropic has multiple **rate limit tiers** (Tier 1 / 2 / 3 / 4) that gate your 
 | **Tier 4** | $5,000+ | 4,000+ | 200–400K+ |
 | **Custom (Scale Plan)** | Negotiated | Negotiated | Negotiated |
 
-These numbers vary by model and date — check the [console rate limits page](https://console.anthropic.com/settings/limits) for current values. The pattern matters more than the specific numbers.
+These numbers vary by model and date, check the [console rate limits page](https://console.anthropic.com/settings/limits) for current values. The pattern matters more than the specific numbers.
 
 ### Practical implications
 
@@ -470,8 +470,8 @@ These numbers vary by model and date — check the [console rate limits page](ht
 
 ### API key formats
 
-- Anthropic direct: `sk-ant-api03-xxxxx` (or similar — version prefix changes)
-- AWS Bedrock: standard AWS SigV4 — uses your IAM credentials
+- Anthropic direct: `sk-ant-api03-xxxxx` (or similar, version prefix changes)
+- AWS Bedrock: standard AWS SigV4, uses your IAM credentials
 - GCP Vertex: Google service account auth
 
 ### Rules
@@ -481,7 +481,7 @@ These numbers vary by model and date — check the [console rate limits page](ht
 - **Rotate periodically.** Anthropic exposes key creation/deletion in the console.
 - **Tag keys by purpose** so the org-admin view shows who owns what.
 - **Server-side only.** Never ship an API key to the browser. If you have a JS frontend, proxy through a backend that holds the key.
-- **Tag requests with `metadata.user_id`** for abuse monitoring — Anthropic uses this to detect compromised keys.
+- **Tag requests with `metadata.user_id`** for abuse monitoring, Anthropic uses this to detect compromised keys.
 
 ---
 
@@ -508,7 +508,7 @@ The SDK on Bedrock (uses `anthropic` library with the bedrock client):
 from anthropic import AnthropicBedrock
 client = AnthropicBedrock(
     aws_region="us-east-1",
-    # aws_secret_key, aws_access_key — or implicit from environment
+    # aws_secret_key, aws_access_key, or implicit from environment
 )
 ```
 
@@ -525,7 +525,7 @@ Same `client.messages.create(...)` interface across all three. **Code portabilit
 
 ---
 
-## 🔬 Observability — What to Log
+## 🔬 Observability, What to Log
 
 Production Claude services live or die on telemetry. The minimum logged set per call:
 
@@ -551,7 +551,7 @@ Plug into **Langfuse**, **Helicone**, **OpenLLMetry**, **Datadog LLM Observabili
 
 **Walkthrough:**
 1. **Tier choice**: Sonnet 4.6 default; route truly trivial intents (greeting/closing) to Haiku 4.5 via a cheap intent classifier (also Haiku).
-2. **Caching**: 8K system prompt — mark cache_control on the system block. Should hit cache > 95% of the time at 200K/day = ~2.3 req/sec, well within the 5-min TTL.
+2. **Caching**: 8K system prompt, mark cache_control on the system block. Should hit cache > 95% of the time at 200K/day = ~2.3 req/sec, well within the 5-min TTL.
 3. **Streaming**: REQUIRED for <1s TTFT. Use SDK `stream(...)`.
 4. **Retries**: SDK `max_retries=3`. Wrap in your own retry loop only for application-level concerns (e.g., regenerate on `stop_reason=max_tokens`).
 5. **Observability**: Log all 9 fields above to Langfuse. Alert on P99 TTFT > 2s, on `stop_reason=max_tokens` rate > 0.5%, on 429 rate > 0.1%.
@@ -568,13 +568,13 @@ This is the layered answer expected of an architect.
 | Misconception | Reality |
 |---------------|---------|
 | "Prompt caching reduces cost by 50%." | ~90% off cached input. 50% off is Batch API (different feature). |
-| "Anthropic SDK doesn't retry by default." | It does — 2 retries by default with backoff. |
-| "Streaming reduces total tokens." | No, same tokens — improves *perceived* latency (TTFT). |
-| "Batch API is for low-throughput jobs." | Opposite — Batch is for HIGH-volume async jobs; 50% discount, hours SLA. |
+| "Anthropic SDK doesn't retry by default." | It does, 2 retries by default with backoff. |
+| "Streaming reduces total tokens." | No, same tokens, improves *perceived* latency (TTFT). |
+| "Batch API is for low-throughput jobs." | Opposite, Batch is for HIGH-volume async jobs; 50% discount, hours SLA. |
 | "I should set max_tokens very high to be safe." | High `max_tokens` increases your billed ceiling and reduces concurrency; size it to actual need. |
 | "Rate limit is just about RPM." | Often TPM (tokens/min) is the binding limit, especially on Opus. |
-| "Token counting requires sending the prompt." | Use `messages.count_tokens(...)` — same tokenizer, no inference charge. |
-| "I can use my API key in the browser." | NEVER — proxy through your backend. |
+| "Token counting requires sending the prompt." | Use `messages.count_tokens(...)`, same tokenizer, no inference charge. |
+| "I can use my API key in the browser." | NEVER, proxy through your backend. |
 | "529 means I'm rate-limited." | 529 = Anthropic capacity overflow (different from 429 = your tier limit). |
 
 ---
@@ -587,7 +587,7 @@ This is the layered answer expected of an architect.
 | **anthropic-version header** | Required version pin (`2023-06-01` is canonical) |
 | **anthropic-beta header** | Opt into preview features (prompt caching, computer use, etc.) |
 | **Streaming** | Server-sent events delivering text deltas as the model generates |
-| **TTFT** | Time To First Token — the latency-perception metric |
+| **TTFT** | Time To First Token, the latency-perception metric |
 | **stop_reason** | `end_turn`, `max_tokens`, `stop_sequence`, `tool_use` |
 | **usage** | Per-response counts of input/output/cache tokens |
 | **cache_control** | The `{"type":"ephemeral"}` marker enabling prompt caching |
@@ -601,13 +601,13 @@ This is the layered answer expected of an architect.
 
 ---
 
-## 📊 Case Study — Klarna's Customer Support Transformation
+## 📊 Case Study, Klarna's Customer Support Transformation
 
-**Situation.** Klarna (Swedish fintech, ~150M customers) publicly announced in early 2024 that an AI assistant — built primarily on Claude — was handling roughly two-thirds of L1 customer-support interactions, equivalent to the work of ~700 full-time agents, with customer satisfaction scores matching human agents.
+**Situation.** Klarna (Swedish fintech, ~150M customers) publicly announced in early 2024 that an AI assistant built primarily on Claude was handling roughly two-thirds of L1 customer-support interactions, equivalent to the work of ~700 full-time agents, with customer satisfaction scores matching human agents.
 
 **The technical pattern (paraphrasing their public talks).**
 - **Sonnet-class model** as primary; cheaper tier for trivial routing
-- **Heavy use of prompt caching** for stable product/policy context — they did not disclose exact percentages but cited "transformative" unit economics impact
+- **Heavy use of prompt caching** for stable product/policy context, they did not disclose exact percentages but cited "transformative" unit economics impact
 - **Streaming** for real-time agent UX
 - **Tool use** for account lookups, refund processing, order status (Module 4)
 - **Observability via internal stack** plus Anthropic's usage reporting
@@ -623,7 +623,7 @@ This is the layered answer expected of an architect.
 **Discussion (Socratic).**
 - **Q1:** Klarna processes ~50 messages/sec at peak. Design a queuing / load-shedding strategy that respects Anthropic's TPM limits without dropping conversations.
 - **Q2:** A regional spike of 3× normal load occurs. What automatic vs human-in-the-loop responses would your system take?
-- **Q3:** A new prompt version goes out. Detect a regression on Day 1 — what telemetry must you have?
+- **Q3:** A new prompt version goes out. Detect a regression on Day 1, what telemetry must you have?
 
 ---
 
@@ -631,23 +631,23 @@ This is the layered answer expected of an architect.
 
 You now know:
 
-- 🛣️ **The Messages API** — single endpoint, well-defined parameters, predictable response shape
-- 🐍🟦 **Python and TypeScript SDKs** — install, init, streaming, async
-- ⚡ **Streaming** — when to use, gotchas, TTFT improvement
-- 🧊 **Prompt caching** — 90% cost cut, prefix-based, 5-min TTL, byte-exact match
-- 📦 **Batch API** — 50% discount for async bulk workloads
-- 🔢 **Token counting** — `messages.count_tokens` is the right way
-- 🔁 **Retries + error taxonomy** — what's retryable, exponential backoff, `retry-after`
-- 💸 **Rate limit tiers** — RPM, TPM, spend ceilings, tier-up paths
-- 🌐 **Hosting options** — Anthropic direct, AWS Bedrock, GCP Vertex
-- 🔬 **Observability** — what to log, where to send it
+- 🛣️ **The Messages API**, single endpoint, well-defined parameters, predictable response shape
+- 🐍🟦 **Python and TypeScript SDKs**, install, init, streaming, async
+- ⚡ **Streaming**, when to use, gotchas, TTFT improvement
+- 🧊 **Prompt caching**, 90% cost cut, prefix-based, 5-min TTL, byte-exact match
+- 📦 **Batch API**, 50% discount for async bulk workloads
+- 🔢 **Token counting**, `messages.count_tokens` is the right way
+- 🔁 **Retries + error taxonomy**, what's retryable, exponential backoff, `retry-after`
+- 💸 **Rate limit tiers**, RPM, TPM, spend ceilings, tier-up paths
+- 🌐 **Hosting options**, Anthropic direct, AWS Bedrock, GCP Vertex
+- 🔬 **Observability**, what to log, where to send it
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🛠️ **Hands-on:** clone the [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook). Run the `streaming`, `prompt_caching`, and `batch` examples end-to-end on your own API key.
-5. ➡️ Move on: [Module 4 — Tool Use & Function Calling](../Module-04-Tool-Use-Function-Calling/Reading.md)
+5. ➡️ Move on: [Module 4, Tool Use & Function Calling](../Module-04-Tool-Use-Function-Calling/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 4](../Module-04-Tool-Use-Function-Calling/Reading.md) extends the API with `tools`. [Module 8](../Module-08-Production-Patterns-Safety/Reading.md) goes deep on production observability.
@@ -667,7 +667,7 @@ You now know:
 - 📄 Anthropic. [*Streaming Messages*](https://docs.anthropic.com/claude/reference/messages-streaming). SSE event spec.
 
 **Practitioner:**
-- 📖 [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook) — runnable recipes
-- 📖 [Anthropic SDK Python source](https://github.com/anthropics/anthropic-sdk-python) — read the retry logic
-- 📖 [Anthropic SDK TypeScript source](https://github.com/anthropics/anthropic-sdk-typescript) — same
-- 📖 Klarna AI assistant — public earnings calls and CEO interviews
+- 📖 [anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook), runnable recipes
+- 📖 [Anthropic SDK Python source](https://github.com/anthropics/anthropic-sdk-python), read the retry logic
+- 📖 [Anthropic SDK TypeScript source](https://github.com/anthropics/anthropic-sdk-typescript), same
+- 📖 Klarna AI assistant, public earnings calls and CEO interviews

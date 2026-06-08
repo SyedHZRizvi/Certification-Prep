@@ -3,27 +3,27 @@
 > **Why this module matters:** The "Cost-Optimized Architectures" domain is 20% of SAA-C03 and you cannot answer those questions without knowing CloudWatch, Compute Optimizer, Cost Explorer, Budgets, and how tagging works. Monitoring/logging questions also pepper the Resilient and Secure domains: CloudTrail, X-Ray, Config, GuardDuty. This module makes sure those are easy points.
 
 > **Prerequisites for this module.**
-> - All previous modules — monitoring touches everything
-> - [Module 2](../Module-02-IAM-Organizations/Reading.md) — CloudTrail is the IAM audit log
-> - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md) — Compute Optimizer rightsizing
-> - [Module 6](../Module-06-Databases/Reading.md) — Performance Insights for RDS
-> - Basic understanding of telemetry concepts: **metrics**, **logs**, **traces** — see the Google SRE book (Beyer et al., O'Reilly 2016) chapters 6 and 11
+> - All previous modules, monitoring touches everything
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md), CloudTrail is the IAM audit log
+> - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md), Compute Optimizer rightsizing
+> - [Module 6](../Module-06-Databases/Reading.md), Performance Insights for RDS
+> - Basic understanding of telemetry concepts: **metrics**, **logs**, **traces**, see the Google SRE book (Beyer et al., O'Reilly 2016) chapters 6 and 11
 
 ---
 
 ## 🩺 A Story: The Hospital With No Vital Signs Monitors
 
-Imagine a hospital where doctors have no monitors — no pulse, no blood pressure, no temperature. They couldn't catch a heart attack before it happened. Reactive medicine. People die that didn't need to.
+Imagine a hospital where doctors have no monitors, no pulse, no blood pressure, no temperature. They couldn't catch a heart attack before it happened. Reactive medicine. People die that didn't need to.
 
 Now imagine a hospital with monitors on every bed, alarms when readings are abnormal, and dashboards at the nurse's station. Doctors catch problems early. Patients survive.
 
-That's monitoring on AWS. **CloudWatch** is the vital signs monitor. **CloudTrail** is the security camera. **X-Ray** is the X-ray machine — see inside the body of a distributed system. **AWS Config** is the audit clipboard.
+That's monitoring on AWS. **CloudWatch** is the vital signs monitor. **CloudTrail** is the security camera. **X-Ray** is the X-ray machine, see inside the body of a distributed system. **AWS Config** is the audit clipboard.
 
-And just like a hospital, you don't only watch — you optimize. **Cost Explorer** is the billing department. **Budgets** is the warning siren. **Compute Optimizer** is the consultant who says "you bought too much oxygen."
+And just like a hospital, you don't only watch, you optimize. **Cost Explorer** is the billing department. **Budgets** is the warning siren. **Compute Optimizer** is the consultant who says "you bought too much oxygen."
 
 ---
 
-## 📊 Amazon CloudWatch — Metrics, Logs, Alarms, Insights
+## 📊 Amazon CloudWatch, Metrics, Logs, Alarms, Insights
 
 CloudWatch has FIVE main capabilities. Know what each does.
 
@@ -74,14 +74,14 @@ Custom dashboards combining metrics, alarms, log queries. Can be shared cross-ac
 
 ### Also:
 
-- **CloudWatch Synthetics** — canary scripts to monitor endpoints (uptime tests).
-- **CloudWatch RUM** (Real User Monitoring) — JS in the browser reports actual user perf.
-- **CloudWatch Application Insights** — AI-assisted analysis.
-- **CloudWatch Contributor Insights** — top-N tables (e.g. top 10 IPs).
+- **CloudWatch Synthetics**, canary scripts to monitor endpoints (uptime tests).
+- **CloudWatch RUM** (Real User Monitoring), JS in the browser reports actual user perf.
+- **CloudWatch Application Insights**, AI-assisted analysis.
+- **CloudWatch Contributor Insights**, top-N tables (e.g. top 10 IPs).
 
 ---
 
-## 📝 AWS CloudTrail — Audit Log
+## 📝 AWS CloudTrail, Audit Log
 
 Records EVERY AWS API call. Who, what, when, where (IP), and source identity.
 
@@ -108,9 +108,9 @@ Destinations: S3 (always), CloudWatch Logs (optional), EventBridge (events).
 
 ---
 
-## ⚙️ AWS Config — Resource Configuration Compliance
+## ⚙️ AWS Config, Resource Configuration Compliance
 
-Tracks each resource's config over time. Lets you write rules like "all S3 buckets must have encryption enabled" — non-compliance triggers an alert.
+Tracks each resource's config over time. Lets you write rules like "all S3 buckets must have encryption enabled", non-compliance triggers an alert.
 
 | Concept | What |
 |---------|------|
@@ -123,7 +123,7 @@ Tracks each resource's config over time. Lets you write rules like "all S3 bucke
 
 ---
 
-## 🔬 AWS X-Ray — Distributed Tracing
+## 🔬 AWS X-Ray, Distributed Tracing
 
 Trace a request through a distributed system (API Gateway → Lambda → DynamoDB). Visualize service map, latency, errors.
 
@@ -172,7 +172,7 @@ ML detects unusual spend patterns and alerts.
 Available within Cost Explorer.
 
 ### Tagging Strategy
-Cost allocation tags (e.g., `CostCenter`, `Environment`, `Owner`) — must be activated in the billing console to appear in reports. Tag at create-time via SCPs.
+Cost allocation tags (e.g., `CostCenter`, `Environment`, `Owner`), must be activated in the billing console to appear in reports. Tag at create-time via SCPs.
 
 🎯 **Exam pattern:**
 - "Which team's S3 buckets are costing the most?" → Tagging + Cost Explorer filtered by tag.
@@ -183,7 +183,7 @@ Cost allocation tags (e.g., `CostCenter`, `Environment`, `Owner`) — must be ac
 
 ## 🔥 The Big "Reduce Cost" Patterns
 
-Memorize these — they're the easy points on cost questions:
+Memorize these, they're the easy points on cost questions:
 
 | Symptom | Cure |
 |---------|------|
@@ -219,11 +219,11 @@ Memorize these — they're the easy points on cost questions:
 
 | Misconception | Reality |
 |---------------|---------|
-| "CloudWatch tracks EC2 memory automatically" | No — install CloudWatch Agent. |
-| "CloudTrail is for app logs" | No — CloudTrail is for AWS API calls. App logs go to CloudWatch Logs. |
-| "Config is the same as CloudTrail" | No — Config tracks resource configurations over time; CloudTrail tracks API calls. |
-| "GuardDuty needs you to install agents" | No — it analyzes CloudTrail, VPC Flow Logs, DNS automatically. |
-| "Trusted Advisor is fully available on the free Basic Support plan" | No — only 7 checks. Need Business/Enterprise for all. |
+| "CloudWatch tracks EC2 memory automatically" | No, install CloudWatch Agent. |
+| "CloudTrail is for app logs" | No, CloudTrail is for AWS API calls. App logs go to CloudWatch Logs. |
+| "Config is the same as CloudTrail" | No, Config tracks resource configurations over time; CloudTrail tracks API calls. |
+| "GuardDuty needs you to install agents" | No, it analyzes CloudTrail, VPC Flow Logs, DNS automatically. |
+| "Trusted Advisor is fully available on the free Basic Support plan" | No, only 7 checks. Need Business/Enterprise for all. |
 | "Compute Optimizer is paid" | Free service. |
 | "Cost Explorer is real-time" | Updated multiple times daily, but not real-time. |
 
@@ -231,9 +231,9 @@ Memorize these — they're the easy points on cost questions:
 
 ## 🚨 Exam Traps
 
-1. **CloudTrail (API calls) vs CloudWatch Logs (app logs) vs Config (resource state)** — know which answers which question.
+1. **CloudTrail (API calls) vs CloudWatch Logs (app logs) vs Config (resource state)**, know which answers which question.
 2. **EC2 memory metric requires CW Agent.**
-3. **GuardDuty does NOT need agents** — uses VPC Flow Logs, CloudTrail, DNS.
+3. **GuardDuty does NOT need agents**, uses VPC Flow Logs, CloudTrail, DNS.
 4. **Compute Optimizer is FREE** and gives rightsizing.
 5. **Budgets** for spend alerts, **Cost Anomaly Detection** for ML-based anomaly alerts.
 6. **Macie** finds PII in S3. (Don't confuse with Inspector or GuardDuty.)
@@ -271,9 +271,9 @@ Memorize these — they're the easy points on cost questions:
 You now know:
 
 - 📊 CloudWatch's 5 capabilities (Metrics, Logs, Alarms, Insights, Dashboards)
-- 📝 CloudTrail vs CloudWatch Logs vs Config — the audit triangle
+- 📝 CloudTrail vs CloudWatch Logs vs Config, the audit triangle
 - 🔬 X-Ray for distributed tracing
-- 🛡️ GuardDuty, Macie, Inspector, Security Hub, Detective — when each
+- 🛡️ GuardDuty, Macie, Inspector, Security Hub, Detective, when each
 - 💸 Cost Explorer, Budgets, Compute Optimizer, Trusted Advisor, Cost Anomaly Detection
 - 🔥 The 12 cost-reduction patterns to recognize on the exam
 - 🚨 9 most-tested monitoring/cost exam traps
@@ -286,9 +286,9 @@ You now know:
 
 ---
 
-## 📖 Case Study — Twitter/X's Partial Migration Off the Cloud (2022–2024)
+## 📖 Case Study, Twitter/X's Partial Migration Off the Cloud (2022–2024)
 
-**Situation.** Twitter (rebranded as X in 2023) had run its core feed-generation pipeline on Google Cloud Platform (GCP) and AWS for years, complemented by its own data centers. Following Elon Musk's October 2022 acquisition, cost-cutting became existential — Musk publicly stated infrastructure costs were "roughly $1B/year" and that the cloud bill was excessive. Engineering leadership (much of it new) was directed to **repatriate** workloads from cloud to owned data centers.
+**Situation.** Twitter (rebranded as X in 2023) had run its core feed-generation pipeline on Google Cloud Platform (GCP) and AWS for years, complemented by its own data centers. Following Elon Musk's October 2022 acquisition, cost-cutting became existential, Musk publicly stated infrastructure costs were "roughly $1B/year" and that the cloud bill was excessive. Engineering leadership (much of it new) was directed to **repatriate** workloads from cloud to owned data centers.
 
 **Decision.** Per Musk's December 2022 thread and subsequent SREcon 2024 talks by former and current Twitter/X engineers, the program:
 
@@ -300,21 +300,21 @@ You now know:
 
 **The architecture-level audit drivers** (what every team had to defend):
 
-- **Data egress cost** ("Slack-style cross-AZ tax") — Twitter's feed generation made *enormous* lateral data movement; in the cloud this was the dominant cost line
-- **Compute utilization** — Twitter's workload was steady 24/7, the worst possible match for cloud's "pay for what you use" pricing model. On-prem with depreciated hardware was ~70% cheaper at 95%+ utilization
-- **Predictable scale** — Twitter's traffic peaks (US Sports finals, election nights) are predictable; elasticity premium wasn't worth $200M/year
-- **Engineering capacity** — Twitter had the SRE depth to run a data center; many companies don't, which changes the math
+- **Data egress cost** ("Slack-style cross-AZ tax"), Twitter's feed generation made *enormous* lateral data movement; in the cloud this was the dominant cost line
+- **Compute utilization**, Twitter's workload was steady 24/7, the worst possible match for cloud's "pay for what you use" pricing model. On-prem with depreciated hardware was ~70% cheaper at 95%+ utilization
+- **Predictable scale**, Twitter's traffic peaks (US Sports finals, election nights) are predictable; elasticity premium wasn't worth $200M/year
+- **Engineering capacity**, Twitter had the SRE depth to run a data center; many companies don't, which changes the math
 
 **Outcome.** Twitter/X's repatriation became the high-water mark for the **"come down from the cloud"** movement that emerged in 2022–2024. David Heinemeier Hansson's *37signals* blog post *"Why we're leaving the cloud"* (October 2022, `world.hey.com/dhh`) had set the tone; Twitter validated it at extreme scale. The HBR article *"How Companies Are Trying to Bring the Cloud Down to Earth"* (HBR, 2024) cited Twitter, 37signals, and Dropbox (which had famously partially repatriated in 2017) as the trio defining the pattern.
 
-**Lesson for the exam / for practitioners.** The SAA exam does **not** test you on when *NOT* to use AWS — but the FinOps / cost-optimization frame matters for every "most cost-effective" question. The Twitter case sharpens the framing:
+**Lesson for the exam / for practitioners.** The SAA exam does **not** test you on when *NOT* to use AWS, but the FinOps / cost-optimization frame matters for every "most cost-effective" question. The Twitter case sharpens the framing:
 
 - **Compute Optimizer + Trusted Advisor** are the AWS-native version of the audit Twitter did manually
 - **Reserved Instances / Savings Plans (3-year all-upfront)** capture ~60% of the on-prem efficiency without the operational cost
-- **Outposts** give you the AWS API on your own hardware — splits the difference between full cloud and full repatriation
+- **Outposts** give you the AWS API on your own hardware, splits the difference between full cloud and full repatriation
 - **AWS Backup cross-region + Aurora Global** can serve as DR for a primary on-prem deployment
 
-When the SAA exam asks "company runs a steady 24/7 workload for 5 years — most cost-effective EC2 purchase option?" the answer is **3-year Standard Reserved Instances, all upfront**. That's the "closest to on-prem economics" option AWS offers.
+When the SAA exam asks "company runs a steady 24/7 workload for 5 years, most cost-effective EC2 purchase option?" the answer is **3-year Standard Reserved Instances, all upfront**. That's the "closest to on-prem economics" option AWS offers.
 
 The bigger meta-lesson: **monitoring and cost data are the prerequisite to any optimization, on-cloud or off-cloud**. Twitter couldn't have repatriated without first knowing where every dollar went. The same Compute Optimizer / Cost Explorer / Cost Anomaly Detection toolkit on the SAA exam is what made the audit possible.
 
@@ -325,11 +325,11 @@ The bigger meta-lesson: **monitoring and cost data are the prerequisite to any o
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
-1. **Cost allocation tags as governance.** Tagging requires discipline — SCPs can enforce "no untagged resources." Argue: should tag enforcement live in SCPs (deny create without required tags), in IaC pipeline checks (CloudFormation guard), or in post-deploy audits (Config rules + Lambda)? Trade-offs?
+1. **Cost allocation tags as governance.** Tagging requires discipline, SCPs can enforce "no untagged resources." Argue: should tag enforcement live in SCPs (deny create without required tags), in IaC pipeline checks (CloudFormation guard), or in post-deploy audits (Config rules + Lambda)? Trade-offs?
 2. **CloudWatch Logs Insights vs OpenSearch vs third-party (Datadog).** All can query logs. CloudWatch is cheapest, OpenSearch is most flexible, Datadog has the best UX. Build a 3-axis decision rule.
-3. **Compute Optimizer's recommendations — when do you trust them?** They're ML-based but lack business context. What's the SRE workflow for going from "Compute Optimizer says downsize" to actually shipping it without an incident?
+3. **Compute Optimizer's recommendations, when do you trust them?** They're ML-based but lack business context. What's the SRE workflow for going from "Compute Optimizer says downsize" to actually shipping it without an incident?
 4. **Budgets vs Cost Anomaly Detection.** Budgets are threshold-based and predictable. Anomaly Detection is ML-based and finds surprises. Why use both? What's the failure mode if you skip one?
 5. **GuardDuty + Security Hub vs SIEM (Splunk, Datadog Security).** AWS's native security tooling vs a vendor SIEM. What's the cost-vs-coverage trade-off, and when does each win?
 
@@ -338,8 +338,8 @@ The bigger meta-lesson: **monitoring and cost data are the prerequisite to any o
 ## ➡️ Where This Leads
 
 > **Where this leads.**
-> - **Inside this course:** Module 10 (DR) builds on the monitoring foundation — CloudWatch alarms + Route 53 health checks drive failover. The Capstone Project requires you to design the full cost model, including FinOps governance.
-> - **Cross-course:** `02-PMP` Module 08 (Cost Management) covers EVM and forecasting — applicable to cloud cost forecasting. `07-AWS-AI-Practitioner` Module 07 covers cost monitoring for Bedrock/SageMaker workloads (a fast-growing share).
+> - **Inside this course:** Module 10 (DR) builds on the monitoring foundation, CloudWatch alarms + Route 53 health checks drive failover. The Capstone Project requires you to design the full cost model, including FinOps governance.
+> - **Cross-course:** `02-PMP` Module 08 (Cost Management) covers EVM and forecasting, applicable to cloud cost forecasting. `07-AWS-AI-Practitioner` Module 07 covers cost monitoring for Bedrock/SageMaker workloads (a fast-growing share).
 > - **Practice:** Practice Exam 2 has 6 monitoring/cost questions; Final Mock has 7.
 > - **Real world:** Enable Cost Explorer + Compute Optimizer + Trusted Advisor (free tier) in a personal AWS account; tag every resource by environment.
 
@@ -348,12 +348,12 @@ The bigger meta-lesson: **monitoring and cost data are the prerequisite to any o
 ## 📚 Further Sources (This Module)
 
 **AWS official**
-- 📖 **CloudWatch User Guide** — `docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/`
-- 📖 **CloudTrail User Guide** — `docs.aws.amazon.com/awscloudtrail/latest/userguide/`
-- 📖 **Config Developer Guide** — `docs.aws.amazon.com/config/latest/developerguide/`
-- 📖 **Cost Management User Guide** — `docs.aws.amazon.com/cost-management/latest/userguide/`
-- 📖 **Compute Optimizer User Guide** — `docs.aws.amazon.com/compute-optimizer/latest/ug/`
-- 📖 **AWS Well-Architected — Cost Optimization Pillar Whitepaper** — free PDF; the source of every cost question on the exam.
+- 📖 **CloudWatch User Guide**, `docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/`
+- 📖 **CloudTrail User Guide**, `docs.aws.amazon.com/awscloudtrail/latest/userguide/`
+- 📖 **Config Developer Guide**, `docs.aws.amazon.com/config/latest/developerguide/`
+- 📖 **Cost Management User Guide**, `docs.aws.amazon.com/cost-management/latest/userguide/`
+- 📖 **Compute Optimizer User Guide**, `docs.aws.amazon.com/compute-optimizer/latest/ug/`
+- 📖 **AWS Well-Architected Cost Optimization Pillar Whitepaper** free PDF; the source of every cost question on the exam.
 
 **re:Invent talks**
 - 🎤 **COP201 (2023): *AWS Cost optimization fundamentals***
@@ -362,11 +362,11 @@ The bigger meta-lesson: **monitoring and cost data are the prerequisite to any o
 
 **Academic foundations**
 - 📖 **Beyer, Betsy et al. (2016).** *Site Reliability Engineering.* O'Reilly. The Google SRE book; chapters 6 (Monitoring), 9 (Simplicity), 11 (Being On-Call), and 18 (Software Engineering in SRE).
-- 📖 **Beyer, Betsy et al. (2018).** *The Site Reliability Workbook.* O'Reilly. The companion volume — chapter 5 on Alerting on SLOs.
-- 📰 **The FinOps Foundation (finops.org)** — the canonical cloud financial management body, with a free certification curriculum.
+- 📖 **Beyer, Betsy et al. (2018).** *The Site Reliability Workbook.* O'Reilly. The companion volume, chapter 5 on Alerting on SLOs.
+- 📰 **The FinOps Foundation (finops.org)**, the canonical cloud financial management body, with a free certification curriculum.
 
 **Industry**
-- 📰 **David Heinemeier Hansson (2022).** *"Why we're leaving the cloud."* world.hey.com/dhh — the manifesto.
-- 📰 **HBR (2024).** *"How Companies Are Trying to Bring the Cloud Down to Earth."* Harvard Business Review — the broader trend piece.
-- 📰 **Corey Quinn — *Last Week in AWS* and *AWS Morning Brief*** — sharpest cost commentary in public.
-- 📰 **The Duckbill Group case studies** — public AWS bill audits.
+- 📰 **David Heinemeier Hansson (2022).** *"Why we're leaving the cloud."* world.hey.com/dhh, the manifesto.
+- 📰 **HBR (2024).** *"How Companies Are Trying to Bring the Cloud Down to Earth."* Harvard Business Review, the broader trend piece.
+- 📰 **Corey Quinn *Last Week in AWS* and *AWS Morning Brief*** sharpest cost commentary in public.
+- 📰 **The Duckbill Group case studies**, public AWS bill audits.

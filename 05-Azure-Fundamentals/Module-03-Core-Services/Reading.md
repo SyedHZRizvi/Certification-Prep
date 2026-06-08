@@ -1,13 +1,13 @@
 # Module 3: Core Azure Services 🛠️
 
-> **Why this module matters:** AZ-900 loves "which service does X?" questions. This module is your map. Compute, networking, storage, databases — know what each does in one breath. ~35–40% of the exam lives in this module's territory.
+> **Why this module matters:** AZ-900 loves "which service does X?" questions. This module is your map. Compute, networking, storage, databases, know what each does in one breath. ~35–40% of the exam lives in this module's territory.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [IaaS / PaaS / SaaS service models and shared responsibility](../Module-01-Cloud-Concepts/Reading.md#-the-three-service-models-iaas-paas-saas) — covered in Module 1
-> - [The Azure resource hierarchy + regions + AZs](../Module-02-Azure-Architecture/Reading.md) — covered in Module 2
+> - [IaaS / PaaS / SaaS service models and shared responsibility](../Module-01-Cloud-Concepts/Reading.md#-the-three-service-models-iaas-paas-saas), covered in Module 1
+> - [The Azure resource hierarchy + regions + AZs](../Module-02-Azure-Architecture/Reading.md), covered in Module 2
 > - Basic networking vocabulary: IP address, subnet, load balancer, DNS, HTTPS vs TCP/UDP
 >
-> This is the biggest module in the course — it's where you learn the named Azure services the exam expects you to recognize on sight. If you're not yet solid on "Microsoft manages X in PaaS, I manage Y," pause and re-read Module 1 §3 before continuing.
+> This is the biggest module in the course, it's where you learn the named Azure services the exam expects you to recognize on sight. If you're not yet solid on "Microsoft manages X in PaaS, I manage Y," pause and re-read Module 1 §3 before continuing.
 
 ---
 
@@ -26,7 +26,7 @@ Each of those needs a different Azure service. By the end of this module, you'll
 
 ---
 
-## 💻 COMPUTE — "Run My Code / OS"
+## 💻 COMPUTE, "Run My Code / OS"
 
 Compute is anything that runs your code or workload. Azure has six main flavors. **Pick the wrong one on a scenario question and you lose the mark.**
 
@@ -47,9 +47,9 @@ Compute is anything that runs your code or workload. Azure has six main flavors.
 - *"Run a single container for a 5-minute batch job"* → **ACI**
 - *"Run our microservices platform with hundreds of services"* → **AKS**
 
-⚠️ **Trap:** AKS is *managed Kubernetes* — Microsoft runs the control plane (PaaS) but you pay for worker node VMs. Don't confuse with ACI (single container, no orchestration).
+⚠️ **Trap:** AKS is *managed Kubernetes*, Microsoft runs the control plane (PaaS) but you pay for worker node VMs. Don't confuse with ACI (single container, no orchestration).
 
-### Azure Virtual Desktop (AVD) — the "remote desktop" answer
+### Azure Virtual Desktop (AVD), the "remote desktop" answer
 
 | Service | What it does |
 |---------|--------------|
@@ -59,7 +59,7 @@ Compute is anything that runs your code or workload. Azure has six main flavors.
 
 ---
 
-## 🌐 NETWORKING — "Connect All The Things"
+## 🌐 NETWORKING, "Connect All The Things"
 
 | Service | What it does | Real use |
 |---------|--------------|----------|
@@ -102,7 +102,7 @@ Need a CDN for static content?          → Azure CDN / Front Door
 
 ---
 
-## 💾 STORAGE — "Save My Bytes"
+## 💾 STORAGE, "Save My Bytes"
 
 Storage Accounts in Azure are containers that can hold **four data services**:
 
@@ -139,7 +139,7 @@ Storage Accounts in Azure are containers that can hold **four data services**:
 | **Premium SSD** | Most production workloads | High IOPS, low latency |
 | **Ultra Disk** | Top-tier DB / SAP HANA / analytics | Highest perf, $$$ |
 
-### Storage Redundancy Options (MEMORIZE — exam favorite)
+### Storage Redundancy Options (MEMORIZE, exam favorite)
 
 | Option | Copies | Where |
 |--------|--------|-------|
@@ -153,7 +153,7 @@ Storage Accounts in Azure are containers that can hold **four data services**:
 
 ---
 
-## 🗄️ DATABASES — "Store My Structured Data"
+## 🗄️ DATABASES, "Store My Structured Data"
 
 | Service | Type | When to use |
 |---------|------|-------------|
@@ -161,12 +161,12 @@ Storage Accounts in Azure are containers that can hold **four data services**:
 | **Azure SQL Managed Instance** | Near-100% SQL Server compatibility | Lift-and-shift SQL Server with minimal changes |
 | **SQL Server on Azure VM** | IaaS SQL Server (you manage everything) | Need full OS + SQL control |
 | **Cosmos DB** | Globally distributed NoSQL (multi-model) | Massive scale, multi-region writes, low-latency |
-| **Azure Database for MySQL — Flexible Server** | Managed MySQL | OSS MySQL workloads |
-| **Azure Database for PostgreSQL — Flexible Server** | Managed PostgreSQL | OSS Postgres workloads |
-| **Azure Database for MariaDB** | (Retired — replaced by MySQL/PostgreSQL) | (Don't pick this on exam) |
+| **Azure Database for MySQL, Flexible Server** | Managed MySQL | OSS MySQL workloads |
+| **Azure Database for PostgreSQL, Flexible Server** | Managed PostgreSQL | OSS Postgres workloads |
+| **Azure Database for MariaDB** | (Retired, replaced by MySQL/PostgreSQL) | (Don't pick this on exam) |
 | **Azure Cache for Redis** | Managed in-memory cache | Speed up DB calls, session state |
 
-### Cosmos DB — The exam darling
+### Cosmos DB, The exam darling
 
 Cosmos DB is the answer when the question mentions ANY of:
 
@@ -198,14 +198,14 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 |---------|--------------|
 | **Service Bus** | Enterprise messaging (queues, topics, sessions, transactions) |
 | **Event Grid** | Event routing (publish/subscribe for events) |
-| **Event Hubs** | High-throughput event ingestion (millions/sec — IoT, telemetry) |
+| **Event Hubs** | High-throughput event ingestion (millions/sec, IoT, telemetry) |
 | **Logic Apps** | Low-code workflow / integration (connect SaaS, etc.) |
 
 ### Big data / analytics (light touch)
 
 | Service | What it does |
 |---------|--------------|
-| **Azure Synapse Analytics** | Unified analytics (SQL + Spark + pipelines) — modern data warehouse |
+| **Azure Synapse Analytics** | Unified analytics (SQL + Spark + pipelines), modern data warehouse |
 | **Azure Databricks** | Apache Spark-based analytics platform |
 | **HDInsight** | Managed Hadoop/Spark/Kafka |
 | **Microsoft Fabric** | Unified data + analytics SaaS (newer) |
@@ -218,7 +218,7 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 | **IoT Central** | SaaS app builder for IoT (higher-level than IoT Hub) |
 | **Azure Sphere** | Secure microcontroller + OS + cloud security service |
 
-### AI / ML (super light — AZ-900 names only)
+### AI / ML (super light, AZ-900 names only)
 
 | Service | What it does |
 |---------|--------------|
@@ -266,14 +266,14 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 
 | Misconception | Reality |
 |---------------|---------|
-| "App Service is IaaS" | No — it's PaaS. You don't see the OS. |
-| "AKS = ACI for big jobs" | No — AKS is full Kubernetes orchestration; ACI is just a single container |
-| "VPN Gateway and ExpressRoute are the same with different speeds" | No — ExpressRoute is a *private* circuit (no public internet), VPN goes over the internet |
-| "Blob can be mounted as a file share" | No — use Azure Files for SMB/NFS file shares |
-| "Archive blobs are instantly readable" | No — must be rehydrated (hours) |
-| "Cosmos DB is for SQL workloads" | No — Cosmos DB is NoSQL; for SQL use Azure SQL Database |
-| "GRS replicates across AZs in one region" | No — that's ZRS. GRS replicates to the paired region. |
-| "App Gateway and Load Balancer are interchangeable" | No — App Gateway is L7 (HTTP), Load Balancer is L4 (TCP/UDP) |
+| "App Service is IaaS" | No, it's PaaS. You don't see the OS. |
+| "AKS = ACI for big jobs" | No, AKS is full Kubernetes orchestration; ACI is just a single container |
+| "VPN Gateway and ExpressRoute are the same with different speeds" | No, ExpressRoute is a *private* circuit (no public internet), VPN goes over the internet |
+| "Blob can be mounted as a file share" | No, use Azure Files for SMB/NFS file shares |
+| "Archive blobs are instantly readable" | No, must be rehydrated (hours) |
+| "Cosmos DB is for SQL workloads" | No, Cosmos DB is NoSQL; for SQL use Azure SQL Database |
+| "GRS replicates across AZs in one region" | No, that's ZRS. GRS replicates to the paired region. |
+| "App Gateway and Load Balancer are interchangeable" | No, App Gateway is L7 (HTTP), Load Balancer is L4 (TCP/UDP) |
 
 ---
 
@@ -282,16 +282,16 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 | Term | Definition |
 |------|------------|
 | **VM** | IaaS virtual machine; you manage OS |
-| **VMSS** | VM Scale Set — group of identical VMs that auto-scale |
+| **VMSS** | VM Scale Set, group of identical VMs that auto-scale |
 | **App Service** | PaaS web app / API hosting |
 | **ACI** | Single Docker container, fastest start |
 | **AKS** | Managed Kubernetes (PaaS control plane) |
 | **Functions** | Serverless event-driven code (FaaS) |
-| **AVD** | Azure Virtual Desktop — streamed Windows desktops |
+| **AVD** | Azure Virtual Desktop, streamed Windows desktops |
 | **VNet** | Private network in Azure |
 | **VPN Gateway** | Encrypted tunnel over internet to on-prem |
 | **ExpressRoute** | Private dedicated circuit to Azure |
-| **NSG** | Network Security Group — basic firewall rules |
+| **NSG** | Network Security Group, basic firewall rules |
 | **Front Door** | Global L7 entry + CDN + WAF |
 | **Application Gateway** | Regional L7 load balancer + WAF |
 | **Load Balancer** | L4 load balancer (TCP/UDP) |
@@ -306,39 +306,39 @@ It supports multiple APIs: **NoSQL (native), MongoDB, Cassandra, Gremlin (graph)
 
 ---
 
-## 📊 Case Study — Walgreens Boots Alliance's Azure migration (2018–2023)
+## 📊 Case Study, Walgreens Boots Alliance's Azure migration (2018–2023)
 
-**Situation.** Walgreens Boots Alliance (WBA) is the world's largest pharmacy retailer — more than 9,000 stores in the U.S. (Walgreens) plus the UK Boots chain, ~10,000+ stores worldwide, and roughly **380,000 employee endpoints** as of 2023. Before 2018, WBA's IT estate was a sprawl of acquired-company datacenters from decades of M&A (Walgreens + Alliance Boots merged in 2014; Rite Aid stores were added in 2017–2018). The retailer was running point-of-sale, e-commerce, prescription-management, and customer-facing apps on owned hardware in roughly a dozen U.S. and EU datacenters. None of the pieces talked easily to each other. CEO Stefano Pessina announced a multi-year cloud strategy in 2018 with Microsoft as the partner of record (Walgreens / Microsoft joint announcement, 2019-01-15).
+**Situation.** Walgreens Boots Alliance (WBA) is the world's largest pharmacy retailer, more than 9,000 stores in the U.S. (Walgreens) plus the UK Boots chain, ~10,000+ stores worldwide, and roughly **380,000 employee endpoints** as of 2023. Before 2018, WBA's IT estate was a sprawl of acquired-company datacenters from decades of M&A (Walgreens + Alliance Boots merged in 2014; Rite Aid stores were added in 2017–2018). The retailer was running point-of-sale, e-commerce, prescription-management, and customer-facing apps on owned hardware in roughly a dozen U.S. and EU datacenters. None of the pieces talked easily to each other. CEO Stefano Pessina announced a multi-year cloud strategy in 2018 with Microsoft as the partner of record (Walgreens / Microsoft joint announcement, 2019-01-15).
 
 **Decision.** WBA committed to a **7-year strategic partnership with Microsoft** worth a "multi-billion-dollar" book of business. The headline moves:
 
-- Migrate Walgreens.com, the **myWalgreens** loyalty platform, the pharmacy management system, and the corporate productivity stack to Azure + Microsoft 365 — about **380,000 endpoints** to M365 and the core retail/e-commerce stack to Azure (Microsoft press release, 2019-01-15)
+- Migrate Walgreens.com, the **myWalgreens** loyalty platform, the pharmacy management system, and the corporate productivity stack to Azure + Microsoft 365, about **380,000 endpoints** to M365 and the core retail/e-commerce stack to Azure (Microsoft press release, 2019-01-15)
 - Use **Azure Virtual Machines + VM Scale Sets** for the lifted-and-shifted Windows Server applications (legacy ERP, pharmacy back-office, Rite Aid systems)
 - Use **Azure App Service + Azure SQL Database** for the rebuilt e-commerce front-end
 - Deploy globally across **US East / US West / North Europe / UK South** for latency-to-store plus regulatory residency (UK Boots data stays in UK South)
 - Use **Azure Site Recovery + Azure Backup** to replace on-prem DR setups
-- Build a *retail-as-a-service* platform on top — Azure became the substrate WBA later used to offer in-store healthcare clinics, prescription home-delivery integration, and (post-2020) COVID vaccination scheduling at U.S. scale
+- Build a *retail-as-a-service* platform on top, Azure became the substrate WBA later used to offer in-store healthcare clinics, prescription home-delivery integration, and (post-2020) COVID vaccination scheduling at U.S. scale
 
 **Outcome.** By 2023:
 
 - WBA shut down or repurposed roughly **two-thirds of its owned datacenter footprint** (WBA infrastructure reporting, FY2023 annual report)
-- During the U.S. COVID vaccine rollout (Dec 2020 onward), Walgreens administered **70+ million doses** through Azure-hosted scheduling and inventory-management systems — a peak load that would have been impossible on the pre-2018 infrastructure
+- During the U.S. COVID vaccine rollout (Dec 2020 onward), Walgreens administered **70+ million doses** through Azure-hosted scheduling and inventory-management systems, a peak load that would have been impossible on the pre-2018 infrastructure
 - The myWalgreens loyalty program crossed **100 million members** in 2022, running on Azure-native data services + Azure Cosmos DB for the customer-360 profile
-- WBA's e-commerce same-store digital sales grew double-digit percent year-over-year through 2021–2022 — Walgreens went from "physical pharmacy with a website" to "omnichannel retailer with a fulfillment network"
-- The migration also surfaced WBA's significant *cost-pressure* problem (executive turnover 2022–2024, retail margin compression) — but the cloud platform itself is consistently cited as enabling the company to *respond faster* to those pressures than they could have on owned hardware
+- WBA's e-commerce same-store digital sales grew double-digit percent year-over-year through 2021–2022, Walgreens went from "physical pharmacy with a website" to "omnichannel retailer with a fulfillment network"
+- The migration also surfaced WBA's significant *cost-pressure* problem (executive turnover 2022–2024, retail margin compression), but the cloud platform itself is consistently cited as enabling the company to *respond faster* to those pressures than they could have on owned hardware
 
 **Lesson for the exam / for practitioners.** Three AZ-900 concepts are visible end-to-end:
 
-1. **Compute service-picker discipline.** WBA didn't move *everything* to one Azure compute service. Legacy ERP → VMs (lift-and-shift IaaS). New e-commerce → App Service (PaaS). Vaccine-scheduling APIs → Azure Functions + Cosmos DB. Bulk batch jobs → ACI / Spot. The exam's "which service?" questions reflect exactly this discipline — different workloads → different services.
+1. **Compute service-picker discipline.** WBA didn't move *everything* to one Azure compute service. Legacy ERP → VMs (lift-and-shift IaaS). New e-commerce → App Service (PaaS). Vaccine-scheduling APIs → Azure Functions + Cosmos DB. Bulk batch jobs → ACI / Spot. The exam's "which service?" questions reflect exactly this discipline, different workloads → different services.
 2. **Hybrid + sovereignty in one company.** UK Boots data sits in UK South (GDPR). U.S. Walgreens data sits in US East/West (HIPAA, state pharmacy boards). One global identity (Microsoft Entra ID, formerly Azure AD) ties them together. This is the canonical multi-region, multi-regulatory pattern the exam tests.
-3. **Cloud economics under pressure.** Even at 380K-endpoint scale, the math worked out — but WBA's later cost issues are a reminder that the cloud isn't a magic profitability switch. It's an *agility* lever; whether the business converts agility into profit is up to leadership. (See the §6 discussion in Module 1.)
+3. **Cloud economics under pressure.** Even at 380K-endpoint scale, the math worked out, but WBA's later cost issues are a reminder that the cloud isn't a magic profitability switch. It's an *agility* lever; whether the business converts agility into profit is up to leadership. (See the §6 discussion in Module 1.)
 
 Microsoft has used the WBA case in multiple Microsoft Mechanics and Ignite sessions as the canonical "Fortune 500 enterprise lift-and-shift + modernization" reference (Microsoft Mechanics, "Walgreens on Azure," 2022-09; Microsoft Ignite 2023).
 
 **Discussion (Socratic).**
 - **Q1:** WBA chose Azure exclusively over a multi-cloud (AWS + Azure) strategy. Argue both sides. At what point in WBA's growth did exclusivity stop being "vendor lock-in" and start being "strategic depth with one partner"? What's the contract clause you'd insist on if you were WBA's CIO signing the 2019 deal?
-- **Q2:** WBA's lift-and-shift of legacy ERP onto Azure VMs (IaaS) preserved the OS, the patch cycles, and the operational pain — they just moved it to someone else's hardware. A purist would argue this is the *wrong* migration pattern and they should have refactored to PaaS. Defend the lift-and-shift choice at WBA's scale and timeline (380K endpoints in 7 years). When is lift-and-shift the *strategically correct* answer rather than a copout?
-- **Q3:** During COVID vaccine rollout (Dec 2020 – mid-2021), Walgreens' Azure-hosted scheduling system absorbed an unprecedented spike — millions of appointments booked in a single week. Compare this to Anna's pizza-shop scaling story in Module 1. At what enterprise scale does the *cloud-as-utility* argument stop being a marketing pitch and become an existential requirement? (Cite the auto-scale economics and the seasonality argument explicitly.)
+- **Q2:** WBA's lift-and-shift of legacy ERP onto Azure VMs (IaaS) preserved the OS, the patch cycles, and the operational pain, they just moved it to someone else's hardware. A purist would argue this is the *wrong* migration pattern and they should have refactored to PaaS. Defend the lift-and-shift choice at WBA's scale and timeline (380K endpoints in 7 years). When is lift-and-shift the *strategically correct* answer rather than a copout?
+- **Q3:** During COVID vaccine rollout (Dec 2020 – mid-2021), Walgreens' Azure-hosted scheduling system absorbed an unprecedented spike, millions of appointments booked in a single week. Compare this to Anna's pizza-shop scaling story in Module 1. At what enterprise scale does the *cloud-as-utility* argument stop being a marketing pitch and become an existential requirement? (Cite the auto-scale economics and the seasonality argument explicitly.)
 
 ---
 
@@ -363,17 +363,17 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 4 secures every service named here (RBAC + Policy + Locks across compute / network / storage / data); Module 5 puts cost and SLA math on top — including the composite-SLA calculation across App Service + SQL DB which this module names; Module 6 introduces the tools (Bicep, Azure Migrate, Azure Monitor) that operationalize this service catalog.
-> - Cross-course: `06-Azure-Administrator` Module 3–7 (AZ-104) covers the same services at *operational* depth — networking deep-dive, storage performance tuning, VM lifecycle management. `08-Azure-AI-Engineer` (AI-102) builds on the Cosmos DB + Azure OpenAI services introduced here.
+> - Inside this course: Module 4 secures every service named here (RBAC + Policy + Locks across compute / network / storage / data); Module 5 puts cost and SLA math on top, including the composite-SLA calculation across App Service + SQL DB which this module names; Module 6 introduces the tools (Bicep, Azure Migrate, Azure Monitor) that operationalize this service catalog.
+> - Cross-course: `06-Azure-Administrator` Module 3–7 (AZ-104) covers the same services at *operational* depth, networking deep-dive, storage performance tuning, VM lifecycle management. `08-Azure-AI-Engineer` (AI-102) builds on the Cosmos DB + Azure OpenAI services introduced here.
 > - Practice: Practice Exam 1 (after Modules 1–3) draws roughly 10–12 questions from this module's service catalog. Final Mock Exam includes the Cosmos DB "multi-API" question (Q50) which is canonical.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **The compute-service decision tree under pressure.** A team gets a request to "host this thing on Azure" — it's a Python script that processes 100GB of CSV files once a week from a partner FTP. Walk through the service-picker decision: VM vs App Service vs Functions vs ACI vs AKS. What's the *cheapest* answer? The *fastest* answer? The *easiest-to-hand-off-to-an-intern* answer? Which is the *right* answer, and why is it not the cheapest? (Cite the Module 3 compute table.)
+1. **The compute-service decision tree under pressure.** A team gets a request to "host this thing on Azure", it's a Python script that processes 100GB of CSV files once a week from a partner FTP. Walk through the service-picker decision: VM vs App Service vs Functions vs ACI vs AKS. What's the *cheapest* answer? The *fastest* answer? The *easiest-to-hand-off-to-an-intern* answer? Which is the *right* answer, and why is it not the cheapest? (Cite the Module 3 compute table.)
 2. **ExpressRoute vs VPN at the breakeven.** A 200-person company is moving its primary database to Azure. ExpressRoute would cost ~$3,000/month plus a one-time circuit setup fee (telco involvement, 6–8 weeks). VPN Gateway costs ~$140/month and is up in an afternoon. The CFO loves VPN; the database team's SLO is sub-50ms write latency from the on-prem application servers. Argue both sides. What's the *workload characteristic* that flips the answer between them, and at what company size do you stop being able to justify ExpressRoute's cost? (Reference the VPN-vs-ExpressRoute table.)
-3. **Cosmos DB as the universal answer (trap).** A junior architect tries to pick Cosmos DB for *every* new project because "globally distributed multi-model NoSQL with single-digit-ms latency" sounds best. List the three workload profiles where Cosmos DB is *the wrong choice* — and what the right Azure database service is for each. (Hint: think about a regulated SQL Server lift-and-shift, a tiny in-memory cache, and a relational reporting workload.)
+3. **Cosmos DB as the universal answer (trap).** A junior architect tries to pick Cosmos DB for *every* new project because "globally distributed multi-model NoSQL with single-digit-ms latency" sounds best. List the three workload profiles where Cosmos DB is *the wrong choice*, and what the right Azure database service is for each. (Hint: think about a regulated SQL Server lift-and-shift, a tiny in-memory cache, and a relational reporting workload.)
 4. **The blob tier optimization problem.** A media company stores **5 PB of raw video footage** that is accessed *maybe once per quarter*. Their finance team budgeted Hot tier "to be safe." Calculate (qualitatively) the cost difference of Hot vs Cool vs Cold vs Archive. What's the right tier, and what's the trap nobody mentions until the first time they need to rehydrate? When would you *intentionally* over-pay for Hot instead of Archive, even at this access pattern?
 5. **L4 vs L7 vs global L7.** A retailer has a regional e-commerce site (single Azure region, US East), serving Black-Friday-scale spikes. The current stack uses an Azure Load Balancer (L4) in front of App Service. The new VP of Engineering wants to swap in Front Door (global L7 + WAF + CDN) instead "because best practices." Walk through the *honest* cost-benefit. When is L4 the right tool and L7 over-engineering? When does going global (Front Door) actually help a *single-region* business? (Hint: latency, DDoS protection, and TLS termination economics.)
 
@@ -381,10 +381,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Microsoft Learn — Azure compute services](https://learn.microsoft.com/training/modules/azure-compute-fundamentals/) — compute service overview
-- 📖 [Microsoft Learn — Azure networking services](https://learn.microsoft.com/training/modules/azure-networking-fundamentals/) — VNet, peering, gateways
-- 📖 [Microsoft Learn — Azure storage services](https://learn.microsoft.com/training/modules/azure-storage-fundamentals/) — Blob, Files, Queue, Table + redundancy options
-- 📖 [Microsoft Learn — Azure database services](https://learn.microsoft.com/training/modules/azure-database-fundamentals/) — SQL DB, Managed Instance, Cosmos DB, MySQL/Postgres
-- 📖 [Choose an Azure compute service decision tree](https://learn.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree) — the official Microsoft picker
-- 📖 **Microsoft Cloud Adoption Framework — *Migrate* methodology** (Microsoft, current edition checked 2026-05). Has named patterns for lift-and-shift (rehost), refactor (repurpose), rebuild, and replace — exactly the choices WBA worked through.
-- 📖 *Designing Distributed Systems* — Brendan Burns, 2018, O'Reilly. The pattern catalog for the AKS / multi-service architectures introduced here.
+- 📖 [Microsoft Learn Azure compute services](https://learn.microsoft.com/training/modules/azure-compute-fundamentals/) compute service overview
+- 📖 [Microsoft Learn Azure networking services](https://learn.microsoft.com/training/modules/azure-networking-fundamentals/) VNet, peering, gateways
+- 📖 [Microsoft Learn Azure storage services](https://learn.microsoft.com/training/modules/azure-storage-fundamentals/) Blob, Files, Queue, Table + redundancy options
+- 📖 [Microsoft Learn Azure database services](https://learn.microsoft.com/training/modules/azure-database-fundamentals/) SQL DB, Managed Instance, Cosmos DB, MySQL/Postgres
+- 📖 [Choose an Azure compute service decision tree](https://learn.microsoft.com/azure/architecture/guide/technology-choices/compute-decision-tree), the official Microsoft picker
+- 📖 **Microsoft Cloud Adoption Framework *Migrate* methodology** (Microsoft, current edition checked 2026-05). Has named patterns for lift-and-shift (rehost), refactor (repurpose), rebuild, and replace exactly the choices WBA worked through.
+- 📖 *Designing Distributed Systems*, Brendan Burns, 2018, O'Reilly. The pattern catalog for the AKS / multi-service architectures introduced here.

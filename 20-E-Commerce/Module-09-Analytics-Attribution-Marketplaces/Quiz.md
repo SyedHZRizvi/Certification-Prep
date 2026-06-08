@@ -102,7 +102,7 @@ D. Use only platform conversion lift
 
 ### Q13. A "conversion lift study" run by Meta on Meta inventory measures: *(Evaluate)*
 A. Independent incrementality
-B. Meta's incremental contribution as Meta defines the baseline — first-party graded
+B. Meta's incremental contribution as Meta defines the baseline, first-party graded
 C. Cross-channel attribution
 D. MMM coefficients
 
@@ -182,7 +182,7 @@ D. ABC analysis
 
 ### Q23. A brand reports 4.5x ROAS on Amazon and 1.2x MMM incrementality on Amazon. Reconcile: *(Analyze)*
 A. They must be wrong
-B. ROAS measures attributed click-through revenue; MMM measures causal lift above baseline organic — both can be true simultaneously
+B. ROAS measures attributed click-through revenue; MMM measures causal lift above baseline organic, both can be true simultaneously
 C. The MMM is the only valid measure
 D. ROAS is the only valid measure
 
@@ -190,7 +190,7 @@ D. ROAS is the only valid measure
 
 ### Q24. A CFO argues that GA4's DDA (4.2x ROAS) and Meta Ads' last-click (8.5x ROAS) for the same campaign mean Meta is over-reporting. Best response: *(Evaluate)*
 A. Meta is lying
-B. Both are valid within their model assumptions; the gap reflects upper-funnel discounting in DDA vs last-click crediting in Meta — independent incrementality testing settles it
+B. Both are valid within their model assumptions; the gap reflects upper-funnel discounting in DDA vs last-click crediting in Meta, independent incrementality testing settles it
 C. Just trust Meta
 D. Just trust GA4
 
@@ -198,7 +198,7 @@ D. Just trust GA4
 
 ### Q25. The single most important reason to enable GA4 BigQuery export on day 1: *(Apply)*
 A. It's cheaper than Universal Analytics
-B. Historical event data is NOT backfilled — only forward-looking data is captured
+B. Historical event data is NOT backfilled, only forward-looking data is captured
 C. Faster reports in the UI
 D. Free Google support
 
@@ -223,7 +223,7 @@ GA4 e-commerce reports populate ONLY on the exact recommended event names.
 ### Q3: **B. `transaction_id`, `items`, `value`, `currency`**
 
 ### Q4: **B. Free for sandbox tier; row-level; not backfilled**
-Enable day 1 — historical data is lost otherwise.
+Enable day 1, historical data is lost otherwise.
 
 ### Q5: **A. Registered in Admin → Custom definitions**
 
@@ -245,7 +245,7 @@ Bayesian; integrates with Google Ads and Analytics.
 
 ### Q12: **B. 5-10% of US markets for 4-8 weeks; measure lift vs control**
 
-### Q13: **B. First-party graded — Meta defines its own baseline**
+### Q13: **B. First-party graded, Meta defines its own baseline**
 Independent geo-holdout is methodologically cleaner.
 
 ### Q14: **B. 30-45% of GMV**

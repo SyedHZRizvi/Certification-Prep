@@ -106,7 +106,7 @@ D. Hashing trick
 
 ### Q13. SMOTE applied to the **entire dataset before** train/val split is: *(Analyze)*
 A. Best practice
-B. Data leakage — synthetic minority points spill into validation
+B. Data leakage, synthetic minority points spill into validation
 C. Encryption
 D. Required by AWS
 
@@ -137,7 +137,7 @@ D. Mean Squared Error (MSE)
 ---
 
 ### Q17. A tree-based model (XGBoost) is being trained on raw features (no scaling). The team is told to "scale numeric features for better performance". The MOST accurate response is: *(Analyze)*
-A. Yes — always scale numeric features
+A. Yes, always scale numeric features
 B. Trees are scale-invariant; scaling doesn't hurt but typically doesn't help
 C. Convert to one-hot first, then scale
 D. Apply PCA instead
@@ -170,7 +170,7 @@ D. Use SageMaker Debugger
 
 ### Q21. A dataset has duplicate rows that appear in both train and validation splits after shuffling. The result is: *(Analyze)*
 A. Faster training
-B. Data leakage — validation accuracy is inflated
+B. Data leakage, validation accuracy is inflated
 C. Higher precision
 D. Lower variance
 
@@ -223,7 +223,7 @@ MaxAbsScaler preserves sparsity (doesn't shift zeros). StandardScaler centres da
 40,000 columns of one-hot is impractical. Ordinal encoding implies false ordering. Target encoding with CV-fold computation is best; hashing or frequency encoding are acceptable alternatives.
 
 ### Q5: **A. Linear relationships**
-PCA finds orthogonal axes of max variance — a linear projection. Non-linear structure needs t-SNE / UMAP / autoencoders.
+PCA finds orthogonal axes of max variance, a linear projection. Non-linear structure needs t-SNE / UMAP / autoencoders.
 
 ### Q6: **B. Outside Q1 − 1.5·IQR to Q3 + 1.5·IQR**
 Standard Tukey IQR rule. 3σ is the Z-score rule.
@@ -235,7 +235,7 @@ The complete imbalance toolkit. Stratified preserves class proportions; class we
 Data Wrangler is the no-code visual data-prep tool inside SageMaker Studio. DataBrew (Glue) is similar but separate from SageMaker Pipelines.
 
 ### Q9: **B. SageMaker Feature Store online + offline**
-The dual-mode design — online for inference (low latency), offline (S3) for training. The MLS-C01 canonical answer.
+The dual-mode design, online for inference (low latency), offline (S3) for training. The MLS-C01 canonical answer.
 
 ### Q10: **C. Random Cut Forest**
 RCF is unsupervised, designed for streaming, no labels needed. The standard SageMaker answer for tabular anomaly detection.
@@ -259,7 +259,7 @@ PCA is linear dim. reduction that preserves variance. t-SNE / UMAP are for visua
 MSE is a regression loss, not a Clarify bias metric. DPL, CI, KL, JS, Lp, TVD, CDDL are valid Clarify pre-training bias metrics.
 
 ### Q17: **B. Trees are scale-invariant**
-XGBoost / RF use threshold splits — feature scale doesn't change splits. Scaling is harmless but not helpful.
+XGBoost / RF use threshold splits, feature scale doesn't change splits. Scaling is harmless but not helpful.
 
 ### Q18: **C. Learned embedding layer**
 Embeddings compress IDs to dense vectors learned during training. One-hot gives 10,000+ sparse columns; PCA on IDs is meaningless.

@@ -110,9 +110,9 @@ Bundles:
 
 | Tool | What |
 |------|------|
-| **Defender for Cloud Apps** | CASB — discover/control SaaS |
+| **Defender for Cloud Apps** | CASB, discover/control SaaS |
 | **Defender Firewall** | Built-in Windows Firewall, Intune-managed |
-| **WDAC** | Windows Defender Application Control — code integrity |
+| **WDAC** | Windows Defender Application Control, code integrity |
 | **Smart App Control** | Cloud-driven AppLocker successor (Windows 11) |
 | **AppLocker** | Legacy GPO app whitelisting |
 | **Windows LAPS** | Rotates + escrows local admin password (Entra device object) |
@@ -156,11 +156,11 @@ When you see these, often **wrong**:
 
 Cover the answers, recite:
 
-1. Plan 1 vs Plan 2 — what does Plan 2 add? ___
+1. Plan 1 vs Plan 2, what does Plan 2 add? ___
 2. 3 ASR modes? ___ Rollout pattern? ___
 3. BitLocker recovery key escrow target? ___
-4. Tamper protection — what does it prevent? ___
-5. EDR in block mode — when? ___
+4. Tamper protection, what does it prevent? ___
+5. EDR in block mode, when? ___
 
 ---
 

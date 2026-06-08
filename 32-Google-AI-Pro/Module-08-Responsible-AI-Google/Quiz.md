@@ -42,7 +42,7 @@ D. RED → ORANGE → YELLOW → GREEN
 A. Disable all safety with BLOCK_NONE everywhere
 B. Loosen ONLY `DANGEROUS_CONTENT` to BLOCK_ONLY_HIGH; keep others at default; document; monitor
 C. Loosen all categories
-D. Keep defaults — medical doesn't need adjustment
+D. Keep defaults, medical doesn't need adjustment
 
 ---
 
@@ -56,7 +56,7 @@ D. Doesn't exist
 
 ### Q7. The FIRST technical lever to reduce hallucination is: *(Apply)*
 A. Lower temperature to 0
-B. Grounding (Google Search or Vertex AI Search) — anchor responses to retrieved context
+B. Grounding (Google Search or Vertex AI Search), anchor responses to retrieved context
 C. Bigger model
 D. Disable safety_settings
 
@@ -64,7 +64,7 @@ D. Disable safety_settings
 
 ### Q8. SynthID watermarking variants include: *(Remember)*
 A. Image only
-B. Image, audio, AND text — all invisible, detectable watermarks
+B. Image, audio, AND text, all invisible, detectable watermarks
 C. Text only
 D. Audio only
 
@@ -80,7 +80,7 @@ D. Are publicly indexed
 
 ### Q10. CMEK protects: *(Understand)*
 A. Data in transit
-B. Data at rest — with keys you control (rotate, disable, destroy)
+B. Data at rest, with keys you control (rotate, disable, destroy)
 C. Network perimeter
 D. Quota
 
@@ -202,7 +202,7 @@ D. Vertex AI is the default for HIPAA-eligible Gemini deployments
 A. Just safety_settings BLOCK_NONE
 B. Vertex AI in HIPAA-eligible region + signed BAA + CMEK + VPC-SC + training-opt-out confirmed + safety_settings (loosened DANGEROUS_CONTENT to BLOCK_ONLY_HIGH) + grounding with Vertex AI Search over clinical guidelines + Cloud Audit Logs + per-call clinician identity + clinician-in-the-loop sign-off + Eval gates + monthly red-team review + kill switch on the fronting API key + SynthID enabled
 C. Just Google AI Studio
-D. Self-host Gemini (impossible — closed weights)
+D. Self-host Gemini (impossible, closed weights)
 
 ---
 
@@ -221,7 +221,7 @@ D. Self-host Gemini (impossible — closed weights)
 ### Q11: **B. Data exfiltration outside perimeter**
 ### Q12: **B. SAIF**
 ### Q13: **B. Untrusted retrieved content hijacks model**
-### Q14: **B. Defense in depth — authority hierarchy + tagging + filtering + least-privilege**
+### Q14: **B. Defense in depth, authority hierarchy + tagging + filtering + least-privilege**
 ### Q15: **B. Blocked by safety_settings**
 ### Q16: **A. Vertex AI + BAA + region + CMEK + VPC-SC + audit + HITL**
 ### Q17: **B. BLOCK_LOW_AND_ABOVE on all four**
@@ -231,7 +231,7 @@ D. Self-host Gemini (impossible — closed weights)
 ### Q21: **B. Project Maven backlash 2018**
 ### Q22: **B. Vertex AI = opt-out default; consumer may use for improvement**
 ### Q23: **B. The full 12-item checklist**
-### Q24: **A. Recitation checker can be disabled — FALSE**
+### Q24: **A. Recitation checker can be disabled, FALSE**
 It cannot.
 ### Q25: **B. The full responsible-AI stack**
 
@@ -245,4 +245,4 @@ It cannot.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9 — MLOps on Vertex AI](../Module-09-MLOps-Vertex-AI/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9, MLOps on Vertex AI](../Module-09-MLOps-Vertex-AI/Reading.md)

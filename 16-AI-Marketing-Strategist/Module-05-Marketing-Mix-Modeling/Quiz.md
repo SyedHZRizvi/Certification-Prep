@@ -15,8 +15,8 @@ D. Cookie-level data
 ---
 
 ### Q2. MMM is "immune" to which 2024–2026 privacy headwinds? *(Understand)*
-A. None — it suffers like MTA does
-B. ITP, ATT, third-party-cookie loss — because MMM does not use user-level data
+A. None, it suffers like MTA does
+B. ITP, ATT, third-party-cookie loss, because MMM does not use user-level data
 C. Only ITP
 D. Only ATT
 
@@ -245,7 +245,7 @@ Broadbent 1979. Ad-stock = today's spend + (decay × yesterday's ad-stock).
 `half-life = log(0.5) / log(0.5) = 1`. Memorize: λ=0.5 → 1-week half-life.
 
 ### Q5: **A. 1–2 days**
-Paid search is intent-driven. The carry-over is short — users who searched a query and didn't click rarely come back later via the ad's residual effect.
+Paid search is intent-driven. The carry-over is short, users who searched a query and didn't click rarely come back later via the ad's residual effect.
 
 ### Q6: **C. 8–12 weeks**
 Brand TV builds brand memory; its effect persists much longer than direct-response.
@@ -257,7 +257,7 @@ The Hill function. α controls shape; K is the half-saturation point.
 K is the spend level at which the Hill function equals 0.5 of maximum.
 
 ### Q9: **B. "Would have happened anyway" sales**
-Baseline includes brand equity, distribution, seasonality, price — everything except current paid marketing.
+Baseline includes brand equity, distribution, seasonality, price, everything except current paid marketing.
 
 ### Q10: **A. R (Python port in dev)**
 Robyn is R-native. Python port is in active development as of 2025–2026.
@@ -266,16 +266,16 @@ Robyn is R-native. Python port is in active development as of 2025–2026.
 Meridian uses TFP for Bayesian inference under the hood.
 
 ### Q12: **B. Native R&F inputs**
-Meridian was designed to take reach + frequency as native model inputs, not just spend dollars — important for TV, podcast, OOH.
+Meridian was designed to take reach + frequency as native model inputs, not just spend dollars, important for TV, podcast, OOH.
 
 ### Q13: **B. 2 years of weekly data**
 Standard floor. Below this, you can't separately identify seasonality + channel effects.
 
 ### Q14: **B. Posterior distributions over parameters**
-This is the Bayesian advantage. You report "95% credible interval for paid-search ROAS is [2.1, 3.4]" — not a single number.
+This is the Bayesian advantage. You report "95% credible interval for paid-search ROAS is [2.1, 3.4]", not a single number.
 
 ### Q15: **A. Pareto front of error vs decomposition stability**
-Robyn outputs multiple Pareto-optimal models — the analyst picks among them based on business judgment.
+Robyn outputs multiple Pareto-optimal models, the analyst picks among them based on business judgment.
 
 ### Q16: **B. Constraining coefficients using incrementality results**
 Without calibration, MMM can drift. Incrementality tests act as ground-truth anchors.
@@ -333,8 +333,8 @@ ROAS alone is insufficient; the CFO needs to see *where to reallocate* and *why*
 - Ad-stock formula + half-life formula
 - Typical half-lives by channel
 - Hill function with α and K
-- Robyn vs Meridian — 2 differences
-- Bayesian vs OLS — main advantage
+- Robyn vs Meridian, 2 differences
+- Bayesian vs OLS, main advantage
 - 2-year weekly data requirement
 - Pareto-optimal model definition
 - Calibration with incrementality

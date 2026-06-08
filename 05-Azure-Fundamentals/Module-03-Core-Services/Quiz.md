@@ -1,7 +1,7 @@
 # ✏️ Module 3 Quiz: Core Azure Services
 
 > **Instructions:** Answer all 28 questions WITHOUT looking at the reading.
-> Then check your answers below. Aim for 24/28 minimum. This is the biggest module — extra practice pays off.
+> Then check your answers below. Aim for 24/28 minimum. This is the biggest module, extra practice pays off.
 
 ---
 
@@ -179,7 +179,7 @@ D. File sharing across VMs
 A. LRS
 B. ZRS
 C. GRS
-D. None — pick a different region
+D. None, pick a different region
 
 ---
 
@@ -255,10 +255,10 @@ Geo-Redundant Storage = 6 copies (3 primary + 3 paired region).
 SMB / NFS mountable file share. Blob is object storage, not a file share.
 
 ### Q10: **C. Cosmos DB**
-Globally distributed, multi-model NoSQL — Cosmos DB's pitch.
+Globally distributed, multi-model NoSQL, Cosmos DB's pitch.
 
 ### Q11: **B. Azure SQL Managed Instance**
-Near-100% SQL Server compatibility — designed for lift-and-shift of complex SQL Server workloads.
+Near-100% SQL Server compatibility, designed for lift-and-shift of complex SQL Server workloads.
 
 ### Q12: **D. Archive**
 Cheapest storage cost, highest retrieval cost, must be rehydrated (hours) before reading. 180-day min retention.
@@ -276,7 +276,7 @@ NSGs are free, basic L3/L4 rules. Azure Firewall is the managed cloud-scale fire
 Massive event ingestion (millions/sec). Service Bus is for enterprise messaging, not raw throughput.
 
 ### Q17: **A. Service Bus**
-Queues, topics, sessions, transactions, dead-letter — full enterprise messaging.
+Queues, topics, sessions, transactions, dead-letter, full enterprise messaging.
 
 ### Q18: **B. Azure Virtual Desktop**
 Multi-session Windows 10/11 desktops streamed to users. Formerly Windows Virtual Desktop.
@@ -303,20 +303,20 @@ Regional, L7 (HTTP/HTTPS), WAF built-in. Front Door is global; Load Balancer is 
 Cosmos DB supports NoSQL (native), MongoDB, Cassandra, Gremlin (graph), and Table APIs.
 
 ### Q26: **B. No**
-Archive must be rehydrated to Hot/Cool first — takes hours.
+Archive must be rehydrated to Hot/Cool first, takes hours.
 
 ### Q27: **B. No**
 App Service is PaaS. Microsoft patches the OS.
 
 ### Q28: **B. VM Scale Set OR App Service auto-scale**
-Stateless + spike traffic = horizontal scaling — exactly what VMSS and App Service auto-scale do.
+Stateless + spike traffic = horizontal scaling, exactly what VMSS and App Service auto-scale do.
 
 ---
 
 ## 📊 Score Yourself
 
 - 27–28/28 → 🏆 You can take Practice Exam 1 right now
-- 24–26/28 → ✅ Solid — review wrong answers, then take Practice Exam 1
+- 24–26/28 → ✅ Solid, review wrong answers, then take Practice Exam 1
 - 20–23/28 → ⚠️ Re-read the compute + storage sections
 - <20/28 → 🔁 Re-do reading + re-watch Adam Marczak compute video
 
@@ -327,7 +327,7 @@ Stateless + spike traffic = horizontal scaling — exactly what VMSS and App Ser
 - Compute service decoder (pick rule for each)
 - VPN vs ExpressRoute one-liner
 - L4 vs L7 load balancers (Load Balancer, App Gateway, Front Door)
-- Storage redundancy (LRS / ZRS / GRS / GZRS — copy counts and locations)
+- Storage redundancy (LRS / ZRS / GRS / GZRS, copy counts and locations)
 - 4 blob access tiers
 - Cosmos DB vs Azure SQL DB vs Managed Instance
 

@@ -46,7 +46,7 @@
 
 ---
 
-## 🧾 Audit Stack — Don't Confuse
+## 🧾 Audit Stack, Don't Confuse
 
 | Service | Captures |
 |---------|----------|
@@ -65,7 +65,7 @@
 |-------|------|
 | **At rest (discover)** | AWS Macie (S3) |
 | **In transit / programmatic** | Amazon Comprehend PII Detection |
-| **At inference time** | Bedrock Guardrails — Sensitive Information filter |
+| **At inference time** | Bedrock Guardrails, Sensitive Information filter |
 
 ---
 
@@ -128,7 +128,7 @@ Usually right:
 Usually wrong:
 
 - ❌ "CloudTrail captures full prompts"
-- ❌ "Bedrock auto-encrypts everything to satisfy HIPAA — no extra steps"
+- ❌ "Bedrock auto-encrypts everything to satisfy HIPAA, no extra steps"
 - ❌ "Guardrails replace IAM"
 - ❌ "GDPR doesn't apply to US companies"
 - ❌ "Default Bedrock traffic is private"
@@ -154,7 +154,7 @@ Usually wrong:
 | "capture the prompt + response for audit" | **Bedrock model invocation logging** (to S3 / CloudWatch Logs) |
 | "log who called what API and when" | **CloudTrail** |
 | "discover PII at rest in S3" | **AWS Macie** |
-| "block / redact PII at inference time" | **Bedrock Guardrails — Sensitive Information filter** |
+| "block / redact PII at inference time" | **Bedrock Guardrails, Sensitive Information filter** |
 | "encrypt custom Bedrock model with auditable keys" | **Customer-managed KMS (CMK)** |
 | "compliance report (SOC, ISO, HIPAA, FedRAMP)" | **AWS Artifact** |
 | "evidence package aligned to NIST / ISO / PCI" | **AWS Audit Manager** |

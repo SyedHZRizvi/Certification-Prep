@@ -1,8 +1,8 @@
 # Module 2: Google AI Studio & Gemini API 🛠️
 
-> **Why this module matters:** Knowing what Gemini *is* is not enough. The exam will ask you, in scenario form, *how* to call it — which SDK, which endpoint, which auth pattern, which generation_config knobs, how to constrain output to a JSON schema, how to set safety_settings without breaking your assistant, how to count tokens before you spend them. This module turns Module 1's knowledge into running code.
+> **Why this module matters:** Knowing what Gemini *is* is not enough. The exam will ask you, in scenario form, *how* to call it, which SDK, which endpoint, which auth pattern, which generation_config knobs, how to constrain output to a JSON schema, how to set safety_settings without breaking your assistant, how to count tokens before you spend them. This module turns Module 1's knowledge into running code.
 
-> **Prerequisites for this module.** Module 1 finished. Python 3.10+ installed locally (or use a Colab / Vertex AI Workbench notebook). A free Google AI Studio account at `aistudio.google.com` (no credit card required for prototyping). For Vertex AI sections, a Google Cloud project with billing enabled — Google offers $300 free credit for new sign-ups.
+> **Prerequisites for this module.** Module 1 finished. Python 3.10+ installed locally (or use a Colab / Vertex AI Workbench notebook). A free Google AI Studio account at `aistudio.google.com` (no credit card required for prototyping). For Vertex AI sections, a Google Cloud project with billing enabled, Google offers $300 free credit for new sign-ups.
 
 ---
 
@@ -19,15 +19,15 @@ response = model.generate_content("Suggest a pasta sauce I can make from things 
 print(response.text)
 ```
 
-Logan copies that into VS Code, pastes his API key, runs it. The same response, in his terminal. Total time from "I want to try Gemini" to "I have a working program calling it" — **under 90 seconds**, with no Google Cloud project, no IAM dance, no billing setup.
+Logan copies that into VS Code, pastes his API key, runs it. The same response, in his terminal. Total time from "I want to try Gemini" to "I have a working program calling it", **under 90 seconds**, with no Google Cloud project, no IAM dance, no billing setup.
 
-That 90-second on-ramp is the *entire point* of **Google AI Studio**. It is Google's bet that *prototyping should be free and frictionless*. Once Logan is ready to put that pasta-recommender into a real customer-facing product — with auth, with rate limits, with audit logging, with data-residency, with team management — the same code with a one-line change can target **Vertex AI** instead, where all those enterprise concerns are first-class.
+That 90-second on-ramp is the *entire point* of **Google AI Studio**. It is Google's bet that *prototyping should be free and frictionless*. Once Logan is ready to put that pasta-recommender into a real customer-facing product with auth, with rate limits, with audit logging, with data-residency, with team management the same code with a one-line change can target **Vertex AI** instead, where all those enterprise concerns are first-class.
 
 This module deconstructs both surfaces. By the end you will be able to call Gemini from Python, Node, and raw `curl`; configure every meaningful generation parameter; reliably get JSON-schema-conformant output; configure safety_settings without surprises; count tokens before you spend them; use the Batch API to save money on async workloads; and know exactly when to switch from AI Studio to Vertex AI for a real product. You will know the difference between the `google-generativeai` SDK (Gemini API) and the `google-cloud-aiplatform` SDK (Vertex AI), and *when* each is right.
 
 ---
 
-## 🛠️ Google AI Studio — The Free Prototyping Playground
+## 🛠️ Google AI Studio, The Free Prototyping Playground
 
 **URL:** `aistudio.google.com`
 **Cost:** Free for prototyping (rate-limited; ~60 requests/minute on the free tier as of 2026-05). Paid tier (Google AI for Developers / Gemini API paid) unlocks production rates.
@@ -37,15 +37,15 @@ This module deconstructs both surfaces. By the end you will be able to call Gemi
 
 ### What AI Studio gives you
 
-1. **The chat playground** — interactive, multi-turn, with system instructions, temperature, top-p, max output tokens, safety_settings, stop sequences all configurable in the side panel
-2. **Multi-modal input** — drag-and-drop images, audio, video, PDFs straight into the prompt
-3. **Function calling preview** — define a tool, see Gemini call it, inspect the JSON
-4. **Structured output mode** — paste a JSON schema, Gemini conforms
-5. **Code execution** — Gemini writes + runs Python inside the chat (sandbox)
-6. **"Get code"** button — emits a working Python / Node / Go / cURL snippet for whatever you just did
-7. **Prompt gallery** — Google-curated examples for common tasks
-8. **System instructions field** — a separate, distinct text box for the system prompt (analogous to OpenAI's `system` role)
-9. **Free Gemini API key generation** — one click, copy the key
+1. **The chat playground**, interactive, multi-turn, with system instructions, temperature, top-p, max output tokens, safety_settings, stop sequences all configurable in the side panel
+2. **Multi-modal input**, drag-and-drop images, audio, video, PDFs straight into the prompt
+3. **Function calling preview**, define a tool, see Gemini call it, inspect the JSON
+4. **Structured output mode**, paste a JSON schema, Gemini conforms
+5. **Code execution**, Gemini writes + runs Python inside the chat (sandbox)
+6. **"Get code"** button, emits a working Python / Node / Go / cURL snippet for whatever you just did
+7. **Prompt gallery**, Google-curated examples for common tasks
+8. **System instructions field**, a separate, distinct text box for the system prompt (analogous to OpenAI's `system` role)
+9. **Free Gemini API key generation**, one click, copy the key
 
 ### Anatomy of an AI Studio session
 
@@ -59,10 +59,10 @@ This module deconstructs both surfaces. By the end you will be able to call Gemi
 ├─────────────────────────────────────────────────────────────┤
 │ CHAT                                                        │
 │ User: I have spaghetti, garlic, olive oil, parmesan.        │
-│ Gemini: Aglio e olio — classic Roman. Boil 200g pasta…       │
+│ Gemini: Aglio e olio, classic Roman. Boil 200g pasta…       │
 │                                                             │
 │ User: [drags photo of pantry] What else can I add?          │
-│ Gemini: I see anchovies and red pepper flakes — perfect      │
+│ Gemini: I see anchovies and red pepper flakes, perfect      │
 │ for puttanesca tomorrow…                                     │
 ├─────────────────────────────────────────────────────────────┤
 │ < / > Get code   ↓ Save prompt   ⚙ Advanced settings        │
@@ -83,7 +83,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 print(model.generate_content("Hello, Gemini").text)
 ```
 
-The Gemini API uses **API keys** — string secrets you generate in AI Studio. One-click creation; copy and use. Best practice: store in `GOOGLE_API_KEY` env var; never commit to git; rotate on team-member offboarding.
+The Gemini API uses **API keys**, string secrets you generate in AI Studio. One-click creation; copy and use. Best practice: store in `GOOGLE_API_KEY` env var; never commit to git; rotate on team-member offboarding.
 
 ### Vertex AI surface (production)
 
@@ -97,7 +97,7 @@ model = GenerativeModel("gemini-2.5-flash")
 print(model.generate_content("Hello, Gemini").text)
 ```
 
-Vertex AI uses **Application Default Credentials (ADC)** — your normal Google Cloud auth (`gcloud auth application-default login` on dev; service account on prod). No API key. Auth is enforced by IAM, with the typical `roles/aiplatform.user` role granting access. This is the enterprise pattern.
+Vertex AI uses **Application Default Credentials (ADC)**, your normal Google Cloud auth (`gcloud auth application-default login` on dev; service account on prod). No API key. Auth is enforced by IAM, with the typical `roles/aiplatform.user` role granting access. This is the enterprise pattern.
 
 🎯 **Exam pattern:** *"Which auth method does Vertex AI use?"* → **IAM via ADC, NOT API keys.** *"A junior engineer hardcodes a `sk-Goog-...`-shaped API key into a React frontend. Correct fix?"* → **Move the call server-side; the frontend talks to your backend, which holds the key.** (API keys belong nowhere near a browser.)
 
@@ -151,7 +151,7 @@ const result = await model.generateContent("Write a fibonacci function.");
 console.log(result.response.text());
 ```
 
-### 3. REST (cURL — useful for any-language, server-side)
+### 3. REST (cURL, useful for any-language, server-side)
 
 ```bash
 curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GOOGLE_API_KEY}" \
@@ -171,7 +171,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:g
 
 ---
 
-## ⚙️ generation_config — Every Knob You Will Touch
+## ⚙️ generation_config, Every Knob You Will Touch
 
 | Knob | Default | What it does |
 |------|---------|--------------|
@@ -201,7 +201,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:g
 
 ---
 
-## 📜 System Instructions — The Single Most Powerful Prompt Lever
+## 📜 System Instructions, The Single Most Powerful Prompt Lever
 
 Gemini supports a **system_instruction** field separate from the chat history. Everything you put there has the highest training-time authority Gemini assigns to instructions. Practical conventions:
 
@@ -269,7 +269,7 @@ assert parsed["sentiment"] in ("positive", "neutral", "negative")
 
 ---
 
-## 🛡️ safety_settings — Configure With Care
+## 🛡️ safety_settings, Configure With Care
 
 Gemini's safety system blocks four harm categories. Each can be set per call to one of four thresholds.
 
@@ -280,10 +280,10 @@ Gemini's safety system blocks four harm categories. Each can be set per call to 
 - `HARM_CATEGORY_DANGEROUS_CONTENT`
 
 **Thresholds (strict → permissive):**
-- `BLOCK_LOW_AND_ABOVE` — block content rated low harm or higher (most strict; most blocks)
-- `BLOCK_MEDIUM_AND_ABOVE` — default for many surfaces
-- `BLOCK_ONLY_HIGH` — only block high-confidence harms
-- `BLOCK_NONE` — return the content; no automatic blocking (only available on Vertex AI, gated; not all categories)
+- `BLOCK_LOW_AND_ABOVE`, block content rated low harm or higher (most strict; most blocks)
+- `BLOCK_MEDIUM_AND_ABOVE`, default for many surfaces
+- `BLOCK_ONLY_HIGH`, only block high-confidence harms
+- `BLOCK_NONE`, return the content; no automatic blocking (only available on Vertex AI, gated; not all categories)
 
 ```python
 safety_settings = [
@@ -333,7 +333,7 @@ print(response.usage_metadata.total_token_count)        # 2098
 
 ---
 
-## 📦 Batch API — Half-Price for Async Workloads
+## 📦 Batch API, Half-Price for Async Workloads
 
 Vertex AI's **Batch Prediction** lets you submit prompts asynchronously for a **~50% discount** on input and output tokens. Best for:
 
@@ -359,7 +359,7 @@ job.refresh()   # poll for status
 
 ---
 
-## 🛠️ Code Execution — Built-In Python Sandbox
+## 🛠️ Code Execution, Built-In Python Sandbox
 
 Gemini can execute Python natively as a tool. Pass `tools=["code_execution"]` and the model emits Python code, runs it in Google's sandbox, sees the result, and continues reasoning.
 
@@ -379,7 +379,7 @@ print(r.text)
 
 ---
 
-## 🔄 Streaming — Better Perceived Latency
+## 🔄 Streaming, Better Perceived Latency
 
 ```python
 response_stream = model.generate_content("Write a long article.", stream=True)
@@ -387,7 +387,7 @@ for chunk in response_stream:
     print(chunk.text, end="", flush=True)
 ```
 
-Streaming reduces **time-to-first-token (TTFT)** dramatically. Total tokens, total cost, total wall-clock — all unchanged. Use whenever the user is watching a UI render.
+Streaming reduces **time-to-first-token (TTFT)** dramatically. Total tokens, total cost, total wall-clock, all unchanged. Use whenever the user is watching a UI render.
 
 🎯 **Exam pattern:** *"User complains the chatbot 'feels slow' even though latency is 1.5s."* → Stream the response; TTFT drops to ~250ms even though total time is unchanged. Perceived latency is the metric users feel.
 
@@ -402,7 +402,7 @@ print(chat.send_message("What did I just say?").text)
 # History is automatically maintained; the model sees prior turns.
 ```
 
-Under the hood, multi-turn chat is just sending the full conversation history on each call. You pay tokens for the *whole* history on every turn — which is why context caching matters.
+Under the hood, multi-turn chat is just sending the full conversation history on each call. You pay tokens for the *whole* history on every turn, which is why context caching matters.
 
 ---
 
@@ -504,7 +504,7 @@ This staged path is *the* canonical Google-recommended pattern. AI Studio gets y
 | "Setting `BLOCK_NONE` on safety is fine for any workload." | **No.** Only loosen the category you have a documented need to loosen. Document and alert. |
 | "Streaming reduces total cost." | **No.** Streaming only reduces *perceived* latency (TTFT). Total tokens, total cost unchanged. |
 | "Batch API is real-time but cheaper." | **No.** Batch is *async* (within 24 hours) and ~50% cheaper. Not for real-time. |
-| "Context caching is automatic." | **No (on Vertex).** It's *explicit* — you create a `CachedContent` object with a TTL. Some implicit caching exists; the cost saving is on explicit cache. |
+| "Context caching is automatic." | **No (on Vertex).** It's *explicit*, you create a `CachedContent` object with a TTL. Some implicit caching exists; the cost saving is on explicit cache. |
 | "You should retry 400 errors." | **No.** 400 is your request's fault. Fix it. Only retry transient errors (429, 500, 503, 504). |
 | "Token counting requires a generation call." | **No.** `model.count_tokens()` is a separate, free endpoint. |
 | "All Gemini features land on AI Studio first." | **Mixed.** Many do; some enterprise-only features (CMEK, Provisioned Throughput, Vertex AI Agent Builder, signed BAA) are Vertex-only. |
@@ -558,12 +558,12 @@ This staged path is *the* canonical Google-recommended pattern. AI Studio gets y
 
 ---
 
-## 📊 Case Study — Snap MyAI and the Free-Tier-to-Production Path
+## 📊 Case Study, Snap MyAI and the Free-Tier-to-Production Path
 
 **Situation.** Snap Inc. (Snapchat) launched **MyAI** in 2023 as a built-in AI chatbot for its ~750M monthly active users. Originally built on OpenAI's GPT, in 2024 Snap announced (Google Cloud blog + Snap Q3 2024 earnings) that MyAI's multi-modal features (image understanding, recipe generation from a photo of ingredients, AR-lens prompts) would run on Gemini on Vertex AI.
 
 **The decision.**
-- **Multi-modal native.** Snap's user base sends ~5 billion image/video snaps per day. Adding "describe this photo" or "what can I cook with what's in this fridge pic" requires *native* multi-modal — the bolted-on-vision pattern was too slow and lossy.
+- **Multi-modal native.** Snap's user base sends ~5 billion image/video snaps per day. Adding "describe this photo" or "what can I cook with what's in this fridge pic" requires *native* multi-modal, the bolted-on-vision pattern was too slow and lossy.
 - **Scale economics.** At Snap's scale (hundreds of millions of MyAI interactions per week), Gemini Flash's pricing beats GPT-4o-mini and Claude Haiku at similar quality on the routing layer.
 - **Regional residency.** EU users → EU region. APAC users → Tokyo/Sydney. Vertex AI's per-region deployment supports the privacy story Snap promises EU regulators.
 
@@ -587,24 +587,24 @@ This staged path is *the* canonical Google-recommended pattern. AI Studio gets y
 You now know:
 
 - 🛠️ **Google AI Studio** as a free prototyping surface and *how it differs* from Vertex AI
-- 🔑 **Two auth surfaces** — API keys (AI Studio / Gemini API) vs ADC/IAM (Vertex AI)
-- 📞 **Three call interfaces** — Python `google-generativeai`, Node `@google/generative-ai`, REST cURL
-- ⚙️ **generation_config** — every knob you'll touch (temperature, top_p, max_output_tokens, stop_sequences, response_mime_type, response_schema)
+- 🔑 **Two auth surfaces**, API keys (AI Studio / Gemini API) vs ADC/IAM (Vertex AI)
+- 📞 **Three call interfaces**, Python `google-generativeai`, Node `@google/generative-ai`, REST cURL
+- ⚙️ **generation_config**, every knob you'll touch (temperature, top_p, max_output_tokens, stop_sequences, response_mime_type, response_schema)
 - 📜 **System instructions** as the single most powerful prompt lever
 - 📝 **Structured output** with `response_schema` for guaranteed JSON-conformant output
-- 🛡️ **safety_settings** — four categories, four thresholds, when to loosen vs not
+- 🛡️ **safety_settings**, four categories, four thresholds, when to loosen vs not
 - 🔢 **Token counting** with the free `count_tokens()` endpoint
 - 📦 **Batch API** at ~50% discount for async workloads
 - 🛠️ **Code execution** built-in Python sandbox
 - 🔄 **Streaming** for low TTFT (perceived latency)
 - 💾 **Explicit context caching** for ~75% off cached input
-- 🚦 **Retryability matrix** — which status codes to retry and which to fix
+- 🚦 **Retryability matrix**, which status codes to retry and which to fix
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
 2. ✏️ Take the quiz: [Quiz.md](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 3 — Vertex AI Platform Deep Dive](../Module-03-Vertex-AI-Platform/Reading.md)
+4. ➡️ Move on: [Module 3, Vertex AI Platform Deep Dive](../Module-03-Vertex-AI-Platform/Reading.md)
 
 ---
 

@@ -3,11 +3,11 @@ permalink: /34-2D-Digital-Animation/Module-07-Lip-Sync-Dialogue/Cheat-Sheet/
 title: "Module 7 Cheat Sheet: Lip Sync & Dialogue"
 ---
 
-# ⚡ Module 7 Cheat Sheet — Lip Sync & Dialogue
+# ⚡ Module 7 Cheat Sheet, Lip Sync & Dialogue
 
 ---
 
-## Preston Blair Phoneme Set — MEMORIZE
+## Preston Blair Phoneme Set, MEMORIZE
 
 | Group | Sounds | Mouth Shape |
 |-------|--------|-------------|
@@ -30,22 +30,22 @@ title: "Module 7 Cheat Sheet: Lip Sync & Dialogue"
 
 | Mode | Use |
 |------|-----|
-| **Stream** | Lip sync — tied to playhead ← ALWAYS |
-| **Event** | SFX, music — plays independently |
+| **Stream** | Lip sync, tied to playhead ← ALWAYS |
+| **Event** | SFX, music, plays independently |
 
 ---
 
 ## Manual Lip Sync Workflow
 
 ```
-1. Import audio — Stream sync
+1. Import audio, Stream sync
 2. Listen 5+ times before touching animation
 3. Mark syllable positions on waveform/dope sheet
 4. Assign Preston Blair mouth shape per syllable
 5. Block mouth shapes (rough pass)
 6. Add body acting + head rotation
 7. Add brow + eye animation
-8. RAM Preview with audio — verify sync
+8. RAM Preview with audio, verify sync
 9. Refine off-sync frames
 10. Check: does the performance feel true?
 ```
@@ -116,7 +116,7 @@ shun → U
 - Body weight shifts during speech emphasis
 - Held poses between words (no constant jiggle)
 - Natural pause before answering
-- Character "means" what they say — acting, not reciting
+- Character "means" what they say, acting, not reciting
 
 ---
 

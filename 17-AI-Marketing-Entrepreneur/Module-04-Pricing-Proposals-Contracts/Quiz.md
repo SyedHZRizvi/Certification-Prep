@@ -200,8 +200,8 @@ D. 6 months
 ---
 
 ### Q25. A founder's close rate is 75%+. What does the reading suggest this means? *(Evaluate)*
-A. Excellent — keep going
-B. Pricing is likely too low — try raising prices
+A. Excellent, keep going
+B. Pricing is likely too low, try raising prices
 C. Healthy proposal hygiene
 D. Time to hire
 
@@ -224,10 +224,10 @@ The outcome-not-time mindset is the central pricing pivot.
 Same Lena, same scope; the proposal structure + ROI projection moved the buyer from gut number to value choice.
 
 ### Q3: **C. 60–70%**
-The classic decoy-pricing pattern — buyers gravitate to the middle option.
+The classic decoy-pricing pattern, buyers gravitate to the middle option.
 
 ### Q4: **C. 2.5–3x Option A**
-Designed as the anchor — makes B feel reasonable.
+Designed as the anchor, makes B feel reasonable.
 
 ### Q5: **B. Quoting a price on the call**
 Founders who quote on calls quote low. Always send a proposal.
@@ -248,7 +248,7 @@ The kill fee protects you against sudden mid-engagement cancellations.
 Standard liability cap to protect the operator from catastrophic exposure.
 
 ### Q11: **A. 100% upfront**
-For short, productized engagements, 100% upfront is standard — no AR risk.
+For short, productized engagements, 100% upfront is standard, no AR risk.
 
 ### Q12: **B. 25–40% upfront / 30–40% milestone / 25–40% on completion**
 Spreads cashflow and risk for large projects.
@@ -260,7 +260,7 @@ Standard accounting terminology.
 2025+ standard, especially in regulated industries (healthcare, legal, financial).
 
 ### Q15: **B. Try selling at 3x your gut price**
-The "tripled price" exercise — most productized services sell at 2–3x the founder's gut number.
+The "tripled price" exercise, most productized services sell at 2–3x the founder's gut number.
 
 ### Q16: **B. 30–50%**
 Below 30% suggests pricing too high or poor fit; above 50% often suggests underpriced.
@@ -275,7 +275,7 @@ Proposals should be 6–10 pages. Methodology appendices kill close rates.
 A short expiration creates urgency without seeming aggressive.
 
 ### Q20: **B. Make the middle option look like the obvious choice**
-The decoy doesn't sell — it positions the target option as the right pick.
+The decoy doesn't sell, it positions the target option as the right pick.
 
 ### Q21: **B. $4,995/mo**
 Williams tested and held at $4,995/mo based on market feedback.
@@ -289,7 +289,7 @@ False. Every engagement needs at least a SOW.
 ### Q24: **B. 5–10 business days**
 Beyond that, close rates drop sharply.
 
-### Q25: **B. Pricing is likely too low — try raising prices**
+### Q25: **B. Pricing is likely too low, try raising prices**
 A 75%+ close rate signals underpricing. Healthy range is 30–50%.
 
 ### Q26: **B. IP usually transfers on full payment; provider retains portfolio + reference rights**

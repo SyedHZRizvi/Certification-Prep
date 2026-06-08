@@ -22,9 +22,9 @@ D. Is a cloth object constrained to behave rigidly
 ### Q2.
 The **Restitution** (Bounciness) setting on a rigid body, when set to 0, means:
 
-A. Maximum bouncing — completely elastic collision
+A. Maximum bouncing, completely elastic collision
 B. The object ignores gravity
-C. **No bounce at all — all kinetic energy absorbed on collision**
+C. **No bounce at all, all kinetic energy absorbed on collision**
 D. The object passes through colliders without interaction
 
 ---
@@ -65,7 +65,7 @@ Cloth simulation instability (explosions, spikes) is most commonly caused by:
 A. Using the Silk preset instead of Cotton
 B. Enabling Self-Collision on thin meshes
 C. Setting the Domain resolution too high
-D. **Poor mesh quality — n-gons, extremely long thin quads, or non-manifold geometry**
+D. **Poor mesh quality, n-gons, extremely long thin quads, or non-manifold geometry**
 
 ---
 
@@ -192,7 +192,7 @@ D. An NLA strip-based system for hair animation
 ### Q19.
 What happens if you render an animation without baking a cloth simulation, and your renderer renders Frame 47 before Frame 46?
 
-A. Nothing — Blender renders frames in sequential order always
+A. Nothing, Blender renders frames in sequential order always
 B. Frame 47 shows the cloth in the Frame 46 position (off by one)
 C. **The simulation recalculates from frame 1 for each frame, causing incorrect and inconsistent results**
 D. The cloth simulation is skipped and the mesh renders in its rest pose
@@ -252,28 +252,28 @@ D. The cloth from being influenced by gravity
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Passive = fixed collider, does not move
-Q2.  C — Restitution 0 = no bounce (all energy absorbed)
-Q3.  D — Convex Hull is best for most solid props
-Q4.  D — Always bake before rendering
-Q5.  D — Pinning vertex group = vertices that don't move (attach points)
-Q6.  D — Bad mesh topology causes cloth explosion/instability
-Q7.  C — Domain, Flow, Effector are the three required types
-Q8.  C — APIC better for swirling/vortex-rich flows
-Q9.  C — Domain = bounding box for the simulation
-Q10. D — Mantaflow uses OpenVDB (.vdb) for volume cache
-Q11. C — Children → Interpolated generates dense child hairs between parents
-Q12. D — Particle Edit Mode = comb, cut, smooth hair
-Q13. C — Mantaflow handles fluid (liquid + gas/smoke)
-Q14. C — Time Scale < 1.0 = slow motion fluid
-Q15. B — Vertex cache = baking cloth to .bphys for stable render
-Q16. C — Higher mass = more resistance to forces; heavier feel
-Q17. B — Collision modifier goes on the body mesh (the obstacle)
-Q18. C — Blender 4.0 = Hair Curves + Geometry Nodes grooming
-Q19. C — Unbaked sim recalculates from frame 1 each render call
-Q20. D — High viscosity = thick fluid (honey, lava)
-Q21. C — Friction = surface resistance to sliding
-Q22. B — The Mitchells vs. the Machines (2021)
-Q23. D — Changing physics params invalidates cache; full re-bake required
-Q24. C — Self Collision prevents cloth from passing through itself
+Q1.  C, Passive = fixed collider, does not move
+Q2.  C, Restitution 0 = no bounce (all energy absorbed)
+Q3.  D, Convex Hull is best for most solid props
+Q4.  D, Always bake before rendering
+Q5.  D, Pinning vertex group = vertices that don't move (attach points)
+Q6.  D, Bad mesh topology causes cloth explosion/instability
+Q7.  C, Domain, Flow, Effector are the three required types
+Q8.  C, APIC better for swirling/vortex-rich flows
+Q9.  C, Domain = bounding box for the simulation
+Q10. D, Mantaflow uses OpenVDB (.vdb) for volume cache
+Q11. C, Children → Interpolated generates dense child hairs between parents
+Q12. D, Particle Edit Mode = comb, cut, smooth hair
+Q13. C, Mantaflow handles fluid (liquid + gas/smoke)
+Q14. C, Time Scale < 1.0 = slow motion fluid
+Q15. B, Vertex cache = baking cloth to .bphys for stable render
+Q16. C, Higher mass = more resistance to forces; heavier feel
+Q17. B, Collision modifier goes on the body mesh (the obstacle)
+Q18. C, Blender 4.0 = Hair Curves + Geometry Nodes grooming
+Q19. C, Unbaked sim recalculates from frame 1 each render call
+Q20. D, High viscosity = thick fluid (honey, lava)
+Q21. C, Friction = surface resistance to sliding
+Q22. B, The Mitchells vs. the Machines (2021)
+Q23. D, Changing physics params invalidates cache; full re-bake required
+Q24. C, Self Collision prevents cloth from passing through itself
 ```

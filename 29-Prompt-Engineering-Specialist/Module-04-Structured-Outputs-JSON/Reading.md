@@ -1,6 +1,6 @@
 # Module 4: Structured Outputs & JSON 📦
 
-> **Why this module matters:** 13% of the Final Mock. The moment your LLM output flows into other software — a database, an API, a UI, another LLM — you need *guaranteed* structure. Hoping for valid JSON is how you wake up at 3am to a 500-error log full of "trailing comma" and "unterminated string." This module is the engineering layer that ends that pager.
+> **Why this module matters:** 13% of the Final Mock. The moment your LLM output flows into other software a database, an API, a UI, another LLM you need *guaranteed* structure. Hoping for valid JSON is how you wake up at 3am to a 500-error log full of "trailing comma" and "unterminated string." This module is the engineering layer that ends that pager.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1, 2, 3
@@ -13,11 +13,11 @@
 
 ## 🛒 A Story: The E-Commerce Site That Returned $1.2M in Refunds Because of Invalid JSON
 
-Meet Rashid, lead engineer at a 4-year-old D2C cosmetics brand. His team shipped a "Tell us in plain English what you want, and our AI builds your shopping cart" feature in 2024 — a natural-language interface that calls GPT-4 to extract product names and quantities from a user message, then constructs a real cart.
+Meet Rashid, lead engineer at a 4-year-old D2C cosmetics brand. His team shipped a "Tell us in plain English what you want, and our AI builds your shopping cart" feature in 2024, a natural-language interface that calls GPT-4 to extract product names and quantities from a user message, then constructs a real cart.
 
-The first week, the feature converted at 28% — higher than the form-based flow. Marketing celebrated.
+The first week, the feature converted at 28%, higher than the form-based flow. Marketing celebrated.
 
-Then a customer wrote: *"I'd like 2 of the rose oil serums, the lipstick in nude, and I'll think about the eye cream — actually yes one of those too."*
+Then a customer wrote: *"I'd like 2 of the rose oil serums, the lipstick in nude, and I'll think about the eye cream, actually yes one of those too."*
 
 The LLM extracted (correct content, broken JSON):
 
@@ -31,7 +31,7 @@ The LLM extracted (correct content, broken JSON):
 
 See the missing closing quote after "Cream"? Standard JSON parser → `ValueError`. The team's catch-all error handler routed the user to a generic "we couldn't process your order" page. The user left.
 
-Multiply that pattern over 6 months. Rashid's team estimated **$1.2M in lost cart revenue** from parse failures across thousands of variations of the same bug — quoted strings inside product names, em-dashes that looked like minus signs, currency symbols that became Unicode escapes, trailing commas, unmatched braces, hallucinated keys, missing required fields.
+Multiply that pattern over 6 months. Rashid's team estimated **$1.2M in lost cart revenue** from parse failures across thousands of variations of the same bug, quoted strings inside product names, em-dashes that looked like minus signs, currency symbols that became Unicode escapes, trailing commas, unmatched braces, hallucinated keys, missing required fields.
 
 The fix took 4 days when they finally understood the tooling: **structured outputs**, **JSON mode**, **tool use**, and the **Pydantic + instructor + retry-on-validation-error** pattern. After the rebuild: 0 parse failures in 60 days. Module 4 is exactly that toolkit.
 
@@ -41,7 +41,7 @@ The fix took 4 days when they finally understood the tooling: **structured outpu
 
 | Level | What you get | How |
 |-------|--------------|-----|
-| **L0: Prompt-only** | "Please respond in JSON" — model usually complies but can break | Just ask in the prompt |
+| **L0: Prompt-only** | "Please respond in JSON", model usually complies but can break | Just ask in the prompt |
 | **L1: JSON Mode** | Model is constrained to produce *some* valid JSON | OpenAI `response_format={"type": "json_object"}` |
 | **L2: Schema-enforced (Structured Outputs)** | Model is constrained to produce JSON matching YOUR schema | OpenAI `response_format={"type": "json_schema", ...}`, Anthropic tool use, Gemini structured output |
 
@@ -49,7 +49,7 @@ Each level eliminates a category of failure. L0 → L1 → L2 is the progression
 
 ---
 
-## L0️⃣ Prompt-Only JSON — The Naïve Approach
+## L0️⃣ Prompt-Only JSON, The Naïve Approach
 
 ```python
 prompt = """Extract the product names and quantities from this message.
@@ -73,7 +73,7 @@ Message: I want 2 lipsticks and 3 serums."""
 | Type mismatch (string where int expected) | ~1% |
 | Output truncated at max_tokens | varies |
 
-A 1% parse failure rate is **10,000 broken orders per million** — Rashid's pager.
+A 1% parse failure rate is **10,000 broken orders per million**, Rashid's pager.
 
 ### Defensive prompting helps but doesn't solve
 
@@ -89,7 +89,7 @@ But none of these *guarantee* validity. The only guaranteed solutions are L1 and
 
 ---
 
-## L1️⃣ JSON Mode — Constrained Decoding to Valid JSON
+## L1️⃣ JSON Mode, Constrained Decoding to Valid JSON
 
 OpenAI introduced **JSON Mode** in November 2023. The model is constrained to emit only tokens that form valid JSON.
 
@@ -117,11 +117,11 @@ response = client.chat.completions.create(
 - Field types matching expectations
 - Sane enum values
 
-🚨 **Two traps:** OpenAI JSON Mode requires the *string* "json" to appear in the prompt. Gemini's "JSON mode" is actually closer to L2 — you provide a schema. Vendor terminology varies.
+🚨 **Two traps:** OpenAI JSON Mode requires the *string* "json" to appear in the prompt. Gemini's "JSON mode" is actually closer to L2, you provide a schema. Vendor terminology varies.
 
 ---
 
-## L2️⃣ Structured Outputs — Schema-Enforced (The 2026 Standard)
+## L2️⃣ Structured Outputs, Schema-Enforced (The 2026 Standard)
 
 Released by OpenAI in August 2024 (and the analog on Anthropic and Gemini followed), **Structured Outputs** constrain the model to produce JSON that *exactly matches* a JSON Schema you provide.
 
@@ -155,7 +155,7 @@ The model output is guaranteed to match the Pydantic schema. Period. No try/exce
 
 ### Anthropic Structured Outputs (via tool use)
 
-Anthropic doesn't have a separate "structured outputs" flag — they leverage **tool use**. You define a tool with a JSON Schema; the model is constrained to call it with valid args.
+Anthropic doesn't have a separate "structured outputs" flag, they leverage **tool use**. You define a tool with a JSON Schema; the model is constrained to call it with valid args.
 
 ```python
 import anthropic
@@ -191,7 +191,7 @@ response = client.messages.create(
 cart = response.content[0].input  # the structured tool input
 ```
 
-The `tool_choice={"type": "tool", "name": "..."}` forces the model to ALWAYS call this tool — turning it into a guaranteed structured-output mechanism.
+The `tool_choice={"type": "tool", "name": "..."}` forces the model to ALWAYS call this tool, turning it into a guaranteed structured-output mechanism.
 
 ### Gemini Structured Output
 
@@ -272,12 +272,12 @@ print(cart.items)
 
 | Feature | Benefit |
 |---------|---------|
-| `Field(description=...)` | Becomes part of the schema the model sees — improves accuracy |
+| `Field(description=...)` | Becomes part of the schema the model sees, improves accuracy |
 | `Field(ge=1)` / `pattern=r"..."` | Compile-time constraints, validation-time enforcement |
 | `Optional[...]` / `X | None` | Optional fields modeled cleanly |
 | `Enum`, `Literal["a", "b"]` | Categorical constraints (model can ONLY pick from the enum values) |
 | `max_retries=3` | If the model violates, instructor reprompts with the validation error context |
-| Provider-swap | `instructor.from_anthropic`, `from_gemini` — same Pydantic class everywhere |
+| Provider-swap | `instructor.from_anthropic`, `from_gemini`, same Pydantic class everywhere |
 
 ### Constraint patterns to know cold
 
@@ -325,13 +325,13 @@ Previous attempt failed validation: 'Magical Unicorn Cream' is not a real produc
 Please correct the response.
 ```
 
-This is **closed-loop self-correction** — one of the most powerful patterns in production prompting.
+This is **closed-loop self-correction**, one of the most powerful patterns in production prompting.
 
 ---
 
 ## 🛠️ Tool Use Schemas (Function Calling)
 
-Tool use (a.k.a. function calling) is structurally identical to structured outputs — the model is constrained to produce a function name + JSON arguments. The semantic difference is intent: with tool use, your code is going to *execute* the call.
+Tool use (a.k.a. function calling) is structurally identical to structured outputs, the model is constrained to produce a function name + JSON arguments. The semantic difference is intent: with tool use, your code is going to *execute* the call.
 
 ### The canonical tool-use shape
 
@@ -377,7 +377,7 @@ The model reads `description` and `properties[].description` to decide which too
 
 ## 🚨 Where Structured Outputs Still Break
 
-Even L2 has failure modes — they're just rarer and more predictable.
+Even L2 has failure modes, they're just rarer and more predictable.
 
 | Failure | Cause | Defense |
 |---------|-------|---------|
@@ -390,7 +390,7 @@ Even L2 has failure modes — they're just rarer and more predictable.
 
 ---
 
-## 🧪 CoT + Structured Outputs — Reasoning JSON
+## 🧪 CoT + Structured Outputs, Reasoning JSON
 
 A common pattern: ask the model to *reason* then *output structured*. Use a dedicated `reasoning` field:
 
@@ -412,7 +412,7 @@ The model thinks in the `reasoning` field, then commits to the categorical answe
 
 > **Scenario:** Rashid's team has the broken cart-extraction prompt. Walk through their 4-day rebuild.
 
-**Day 1 — Add schema:**
+**Day 1, Add schema:**
 ```python
 class CartItem(BaseModel):
     product_id: str = Field(..., pattern=r"^SKU-\d{6}$")
@@ -421,7 +421,7 @@ class CartItem(BaseModel):
 ```
 Move from L0 to L2. Pydantic + instructor + GPT-4-turbo.
 
-**Day 2 — Add product validator:**
+**Day 2, Add product validator:**
 ```python
 @field_validator("product_id")
 @classmethod
@@ -431,14 +431,14 @@ def must_exist_in_catalog(cls, v):
     return v
 ```
 
-**Day 3 — Add fuzzy-match prompt:**
+**Day 3, Add fuzzy-match prompt:**
 Customers say "Rose Oil Serum" but the catalog has `SKU-103456`. Add a tool call to look up SKU by name:
 ```python
 tools = [{"name": "lookup_sku", "description": "Find SKU by product name", ...}]
 ```
 Model now calls `lookup_sku("rose oil serum")` → gets SKU → puts SKU in the final structured output.
 
-**Day 4 — Eval harness:**
+**Day 4, Eval harness:**
 Build 200 golden examples (Module 6). Run the new pipeline. 0/200 parse failures, 197/200 correct extraction. Ship.
 
 After 60 days in production: **0 parse failures, 99.4% extraction accuracy, $1.2M annualized recovered revenue.**
@@ -474,9 +474,9 @@ After 60 days in production: **0 parse failures, 99.4% extraction accuracy, $1.2
 | **instructor** | Multi-provider library wrapping LLM clients with Pydantic schemas |
 | **Outlines** | Alternative library for structured generation (works on open-source models) |
 | **Guidance** | Microsoft library for constrained generation |
-| **Constrained decoding** | The technical mechanism — model is restricted to tokens that keep output valid |
+| **Constrained decoding** | The technical mechanism, model is restricted to tokens that keep output valid |
 | **Field constraint** | `ge`, `le`, `min_length`, `max_length`, `pattern`, `default_factory` |
-| **Enum / Literal** | Categorical field types — model can ONLY pick from the listed values |
+| **Enum / Literal** | Categorical field types, model can ONLY pick from the listed values |
 | **Validator** | A Pydantic method that runs after parsing to enforce semantic rules |
 | **Retry-on-invalid** | Catch validation error, re-prompt with the error context, let the model self-correct |
 | **`tool_choice`** | Per-API control over whether/which tool the model must call |
@@ -490,16 +490,16 @@ After 60 days in production: **0 parse failures, 99.4% extraction accuracy, $1.2
 | JSON | JavaScript Object Notation |
 | OpenAI SO | OpenAI Structured Outputs |
 | ASA | (informal) Anthropic Schema Adherence (via tool use) |
-| BAML | Boundary's "AI ML language" — schema-first prompt language |
+| BAML | Boundary's "AI ML language", schema-first prompt language |
 | TS | TypeScript / interface (analog of Pydantic in JS land) |
 
 ---
 
-## 📊 Case Study — OpenAI Structured Outputs Launch (August 2024)
+## 📊 Case Study, OpenAI Structured Outputs Launch (August 2024)
 
 **Situation.** Before August 2024, the industry standard for "force the LLM to output JSON" was a hodgepodge: JSON mode (OpenAI), tool calling abuse (Anthropic), Outlines/Guidance/instructor wrappers (open-source), or just prompt-and-pray. Across the ecosystem, **5–15% of production LLM JSON outputs failed validation** even with JSON mode. Every team that shipped LLM-to-database or LLM-to-API had a retry layer.
 
-**The announcement.** On August 6, 2024, OpenAI launched **Structured Outputs** — a `response_format` mode that constrained the model's token sampling to a user-supplied JSON Schema, with **100% schema adherence guaranteed**. The launch blog and an accompanying paper showed:
+**The announcement.** On August 6, 2024, OpenAI launched **Structured Outputs**, a `response_format` mode that constrained the model's token sampling to a user-supplied JSON Schema, with **100% schema adherence guaranteed**. The launch blog and an accompanying paper showed:
 
 - 100% schema adherence in tests (vs ~85.9% for prompt-only)
 - ~40% reduction in tokens spent on retries
@@ -508,7 +508,7 @@ After 60 days in production: **0 parse failures, 99.4% extraction accuracy, $1.2
 **The technical mechanism.** OpenAI implemented this via **context-free grammar masking**: before each token is sampled, only tokens that keep the output on a valid path through the schema's grammar are allowed. This is the same technique used by Outlines (open-source, 2023) and similar to lm-format-enforcer.
 
 **The industry response.**
-- **Anthropic** had `tool_choice={"type":"tool", "name":"..."}` since early 2024 — already an L2 mechanism in practice, but they continued to refine the doc story.
+- **Anthropic** had `tool_choice={"type":"tool", "name":"..."}` since early 2024, already an L2 mechanism in practice, but they continued to refine the doc story.
 - **Google** added Gemini structured output with Pydantic/JSON Schema later in 2024.
 - **Mistral, Cohere, Groq** all adopted similar patterns.
 - **DeepSeek, Llama-via-Together** added it in 2025.
@@ -518,12 +518,12 @@ By early 2026, schema-enforced structured output is the **default** for any new 
 **Lesson for the exam / for practitioners.**
 - Always use the highest level of structure guarantee your provider supports.
 - Pydantic + instructor is the lingua franca for cross-provider structured work.
-- Schema design matters — over-deep nesting, missing descriptions, ambiguous enums all hurt accuracy even with constrained decoding.
-- Tool descriptions ARE prompt engineering — write them with the same care as system prompts.
+- Schema design matters, over-deep nesting, missing descriptions, ambiguous enums all hurt accuracy even with constrained decoding.
+- Tool descriptions ARE prompt engineering, write them with the same care as system prompts.
 
 **Discussion (Socratic).**
 - **Q1:** A startup CTO insists their team's elaborate JSON-mode + regex retry layer is "good enough." Make the technical and business case for migrating to schema-enforced structured outputs.
-- **Q2:** Anthropic doesn't have a `response_format` flag — they use tool use. Are these meaningfully different from a developer's POV, or just spelling? Argue both sides.
+- **Q2:** Anthropic doesn't have a `response_format` flag, they use tool use. Are these meaningfully different from a developer's POV, or just spelling? Argue both sides.
 - **Q3:** Constrained decoding can occasionally produce *low-quality* outputs because the model is forced into a token it didn't want to pick. When does this trade-off matter? How do you measure it?
 
 ---
@@ -542,9 +542,9 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 5 — Multi-Modal Prompting](../Module-05-Multi-Modal/Reading.md)
+4. ➡️ Move on: [Module 5, Multi-Modal Prompting](../Module-05-Multi-Modal/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 5](../Module-05-Multi-Modal/Reading.md) extracts structured outputs from images. [Module 6](../Module-06-Evaluation-AB-Testing/Reading.md) builds an eval harness that checks both schema and semantics. [Module 7](../Module-07-Adversarial-Defense/Reading.md) explores tool-use as a prompt-injection vector.
@@ -557,21 +557,21 @@ You now know:
 
 **Primary sources:**
 - 📄 OpenAI (2024). *Introducing Structured Outputs in the API*. https://openai.com/index/introducing-structured-outputs-in-the-api/
-- 📄 Willard & Louf (2023). *Efficient Guided Generation for Large Language Models* — the Outlines paper.
-- 📄 IETF (2020). *JSON Schema Specification — Draft 2020-12*.
+- 📄 Willard & Louf (2023). *Efficient Guided Generation for Large Language Models*, the Outlines paper.
+- 📄 IETF (2020). *JSON Schema Specification, Draft 2020-12*.
 
 **Vendor docs:**
-- 📖 [OpenAI — Structured Outputs Guide](https://platform.openai.com/docs/guides/structured-outputs)
-- 📖 [Anthropic — Tool Use](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)
-- 📖 [Google Gemini — Generate Structured Output](https://ai.google.dev/gemini-api/docs/structured-output)
+- 📖 [OpenAI, Structured Outputs Guide](https://platform.openai.com/docs/guides/structured-outputs)
+- 📖 [Anthropic, Tool Use](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)
+- 📖 [Google Gemini, Generate Structured Output](https://ai.google.dev/gemini-api/docs/structured-output)
 
 **Libraries:**
-- 📖 [instructor — Structured outputs powered by LLMs](https://python.useinstructor.com)
-- 📖 [Outlines](https://github.com/dottxt-ai/outlines) — works on open-source models
+- 📖 [instructor, Structured outputs powered by LLMs](https://python.useinstructor.com)
+- 📖 [Outlines](https://github.com/dottxt-ai/outlines), works on open-source models
 - 📖 [Pydantic Docs](https://docs.pydantic.dev)
-- 📖 [Guidance (Microsoft)](https://github.com/guidance-ai/guidance) — constrained generation framework
-- 📖 [BAML](https://docs.boundaryml.com) — schema-first prompt language
+- 📖 [Guidance (Microsoft)](https://github.com/guidance-ai/guidance), constrained generation framework
+- 📖 [BAML](https://docs.boundaryml.com), schema-first prompt language
 
 **Practitioner:**
-- 📖 [Jason Liu — instructor patterns](https://jxnl.co)
-- 📖 [Simon Willison — Schema-enforced LLM output](https://simonwillison.net/tags/openai/) (search for structured outputs posts)
+- 📖 [Jason Liu, instructor patterns](https://jxnl.co)
+- 📖 [Simon Willison, Schema-enforced LLM output](https://simonwillison.net/tags/openai/) (search for structured outputs posts)

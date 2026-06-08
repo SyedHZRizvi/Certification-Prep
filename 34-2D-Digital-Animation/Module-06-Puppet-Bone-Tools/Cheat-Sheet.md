@@ -1,9 +1,9 @@
 ---
 permalink: /34-2D-Digital-Animation/Module-06-Puppet-Bone-Tools/Cheat-Sheet/
-title: "Module 6 Cheat Sheet: Puppet & Bone Tools — DUIK Rigging"
+title: "Module 6 Cheat Sheet: Puppet & Bone Tools, DUIK Rigging"
 ---
 
-# ⚡ Module 6 Cheat Sheet — Puppet & Bone Tools — DUIK Rigging
+# ⚡ Module 6 Cheat Sheet Puppet & Bone Tools DUIK Rigging
 
 ---
 
@@ -56,7 +56,7 @@ title: "Module 6 Cheat Sheet: Puppet & Bone Tools — DUIK Rigging"
 | **Damping** | Bounces long | Snaps back quickly |
 
 **Common spring uses:** Ponytail, loose clothing, antenna, belly, ears, cape.
-**Key fact:** Spring rigs need NO keyframes — procedural only.
+**Key fact:** Spring rigs need NO keyframes, procedural only.
 
 ---
 
@@ -70,7 +70,7 @@ title: "Module 6 Cheat Sheet: Puppet & Bone Tools — DUIK Rigging"
 
 ---
 
-## Joysticks 'n Sliders (J+S) — Setup
+## Joysticks 'n Sliders (J+S), Setup
 
 ```
 Five positions to draw:

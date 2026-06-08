@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎓</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Princeton — Mechanics of Bitcoin</p>
+      <p class="vg-title">Princeton, Mechanics of Bitcoin</p>
       <p class="vg-creator">Arvind Narayanan</p>
       <span class="vg-duration">⏱ 24 min · Transactions, blocks, scripts</span>
     </div>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🔱</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">The Bitcoin Cash Fork — Block Size War</p>
+      <p class="vg-title">The Bitcoin Cash Fork, Block Size War</p>
       <p class="vg-creator">Jonathan Bier / Coindesk</p>
       <span class="vg-duration">⏱ 18 min · The August 2017 split</span>
     </div>
@@ -109,7 +109,7 @@
     <div class="vg-thumb"><span>↩️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">RBF and CPFP — Unsticking Transactions</p>
+      <p class="vg-title">RBF and CPFP, Unsticking Transactions</p>
       <p class="vg-creator">Bitcoin Magazine technical</p>
       <span class="vg-duration">⏱ 12 min · BIP-125 in practice</span>
     </div>

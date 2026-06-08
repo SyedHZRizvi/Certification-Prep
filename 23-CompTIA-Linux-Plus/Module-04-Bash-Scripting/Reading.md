@@ -1,10 +1,10 @@
 # Module 4: Bash Scripting & Automation 💻
 
-> **Why this module matters:** Domain 3 (Scripting, Containers, and Automation) is 19% of the exam — about 17 questions. Half of those are bash. You will be asked to *read* a script and identify what it does, to *fix* a broken script, and to compose small one-liners with `sed`, `awk`, `grep`, and pipes. PBQs will give you the full text of a 25-line script and ask you to spot the bug. This module makes that reflexive.
+> **Why this module matters:** Domain 3 (Scripting, Containers, and Automation) is 19% of the exam, about 17 questions. Half of those are bash. You will be asked to *read* a script and identify what it does, to *fix* a broken script, and to compose small one-liners with `sed`, `awk`, `grep`, and pipes. PBQs will give you the full text of a 25-line script and ask you to spot the bug. This module makes that reflexive.
 
 > **Prerequisites for this module.** You should be comfortable with:
-> - Module 1 (systemd) — services and timers are how scripts get scheduled
-> - Module 2 (filesystem permissions) — your scripts must be executable
+> - Module 1 (systemd), services and timers are how scripts get scheduled
+> - Module 2 (filesystem permissions), your scripts must be executable
 > - Running `chmod +x script.sh` and `./script.sh` from a shell
 
 ---
@@ -19,14 +19,14 @@ cd /var/log
 find . -name "*.log" -mtime +7 -exec gzip {} \;
 ```
 
-Cute. Innocuous. Until the day the server's hostname changes and a stale NFS mount drops, so `cd /var/log` silently fails. The script keeps running — in `$HOME`, which is `/root`. `find . -name "*.log"` matches *every* `.log` in the root user's recursive home (some left there by another admin's experiment). And it gzips them. Including a 12 GB SQL dump someone had saved as `dump.log` because they didn't know any better.
+Cute. Innocuous. Until the day the server's hostname changes and a stale NFS mount drops, so `cd /var/log` silently fails. The script keeps running, in `$HOME`, which is `/root`. `find . -name "*.log"` matches *every* `.log` in the root user's recursive home (some left there by another admin's experiment). And it gzips them. Including a 12 GB SQL dump someone had saved as `dump.log` because they didn't know any better.
 
 The next morning Marcus opens a ticket queue full of "where is my data" notes. The fix takes 3 hours of `gunzip`-ing and validating files. The root cause is two lines of bash hygiene the original author skipped:
 
 1. `set -euo pipefail` at the top → `cd` failure would have exited the script immediately.
 2. `cd /var/log || exit 1` as the explicit guard → defense in depth.
 
-This module will make these reflexes second nature. The exam tests them constantly — `set -e`, quoting `"$@"`, the difference between `$var` and `"$var"`, exit-code checking, here-docs. Get them right and bash will be a tool you trust.
+This module will make these reflexes second nature. The exam tests them constantly, `set -e`, quoting `"$@"`, the difference between `$var` and `"$var"`, exit-code checking, here-docs. Get them right and bash will be a tool you trust.
 
 ---
 
@@ -64,7 +64,7 @@ PATH_TO_LOG="/var/log/app.log"
 ```
 
 **Important rules:**
-- No spaces around `=` — `NAME = "x"` is a *command* invocation, not assignment
+- No spaces around `=`, `NAME = "x"` is a *command* invocation, not assignment
 - Quote strings that contain spaces or expand variables
 - Convention: UPPER_SNAKE_CASE for constants, lower_snake_case for locals
 
@@ -89,7 +89,7 @@ echo "`date +%F`"       # legacy backtick form, avoid
 ```bash
 NAME="Alice Bob"
 echo "$NAME"             # 'Alice Bob' (one arg)
-echo $NAME               # 'Alice' 'Bob' (two args — bug surface!)
+echo $NAME               # 'Alice' 'Bob' (two args, bug surface!)
 echo '$NAME'             # literal: $NAME
 ```
 
@@ -103,8 +103,8 @@ echo "${NAME:=Anonymous}"        # like :- but also ASSIGNS to NAME
 echo "${NAME:?error msg}"        # print error and exit if NAME unset
 echo "${NAME:+set}"              # only expand if NAME IS set
 echo "${PATH_TO_LOG%.log}"       # remove shortest suffix matching .log
-echo "${PATH_TO_LOG##*/}"        # basename — remove longest prefix up to /
-echo "${PATH_TO_LOG%/*}"         # dirname — remove shortest suffix from /
+echo "${PATH_TO_LOG##*/}"        # basename, remove longest prefix up to /
+echo "${PATH_TO_LOG%/*}"         # dirname, remove shortest suffix from /
 echo "${NAME/Alice/Bob}"         # replace first Alice with Bob
 echo "${NAME//Alice/Bob}"        # replace ALL Alices
 ```
@@ -178,7 +178,7 @@ if [[ "$EMAIL" =~ ^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$ ]]; then
 fi
 ```
 
-🚨 **Trap on the exam:** `[ ... ]` (single brackets) is POSIX `test` — pattern matching limited, regex unsupported, less safe with empty vars. `[[ ... ]]` (double brackets) is a bash builtin with safer parsing, regex, and `&&`/`||` inside. Prefer `[[ ]]` for new bash; `[ ]` for POSIX-portable scripts (use `#!/bin/sh`).
+🚨 **Trap on the exam:** `[ ... ]` (single brackets) is POSIX `test`, pattern matching limited, regex unsupported, less safe with empty vars. `[[ ... ]]` (double brackets) is a bash builtin with safer parsing, regex, and `&&`/`||` inside. Prefer `[[ ]]` for new bash; `[ ]` for POSIX-portable scripts (use `#!/bin/sh`).
 
 ### `case`
 
@@ -238,7 +238,7 @@ while IFS= read -r line; do
     echo "line: $line"
 done < /etc/hostname
 
-# Until — opposite of while
+# Until, opposite of while
 until ping -c1 server.example.com >/dev/null 2>&1; do
     echo "waiting for server..."
     sleep 5
@@ -252,7 +252,7 @@ while (( count < 5 )); do
 done
 ```
 
-🚨 **Trap on the exam:** Reading a file with `for line in $(cat file)` is broken — it word-splits on whitespace, mangling lines with spaces. The correct pattern is `while IFS= read -r line; do ... done < file`.
+🚨 **Trap on the exam:** Reading a file with `for line in $(cat file)` is broken, it word-splits on whitespace, mangling lines with spaces. The correct pattern is `while IFS= read -r line; do ... done < file`.
 
 ---
 
@@ -267,8 +267,8 @@ done
 | `2>>` | Append stderr |
 | `2>&1` | Redirect stderr to wherever stdout is currently going |
 | `&>` | Redirect both stdout AND stderr (bash; not POSIX) |
-| `<<EOF` | Here-doc — feed a literal block to stdin |
-| `<<<` | Here-string — feed a single string to stdin |
+| `<<EOF` | Here-doc, feed a literal block to stdin |
+| `<<<` | Here-string, feed a single string to stdin |
 | `\|` | Pipe stdout of left → stdin of right |
 | `\|&` | Pipe stdout AND stderr |
 
@@ -344,10 +344,10 @@ set -euo pipefail
 IFS=$'\n\t'              # safer word splitting
 ```
 
-- `set -e` — exit on any command failure
-- `set -u` — exit on use of undefined variable
-- `set -o pipefail` — make a pipeline fail if any command in it fails (not just the last)
-- `IFS=$'\n\t'` — split on newlines and tabs only (not spaces), reducing accidental word splits
+- `set -e`, exit on any command failure
+- `set -u`, exit on use of undefined variable
+- `set -o pipefail`, make a pipeline fail if any command in it fails (not just the last)
+- `IFS=$'\n\t'`, split on newlines and tabs only (not spaces), reducing accidental word splits
 
 🎯 **Exam pattern:** *"This script's pipeline `grep ERROR log.txt | wc -l` exits 0 even when `grep` fails. Why?"* → Without `pipefail`, the pipeline returns only the last command's exit code (`wc` always succeeds).
 
@@ -387,7 +387,7 @@ if is_root; then echo "running as root"; fi
 
 ## 🔧 The Pipeline Toolkit: grep, sed, awk, cut, sort, uniq, tr
 
-### grep — find lines matching a pattern
+### grep, find lines matching a pattern
 
 ```bash
 grep ERROR /var/log/app.log              # match lines
@@ -404,7 +404,7 @@ grep -C 3 "ERROR" log.txt                # 3 lines CONTEXT around
 grep -q "ERROR" log.txt && echo "errors!"  # quiet, exit-code only
 ```
 
-### sed — stream editor
+### sed, stream editor
 
 ```bash
 sed 's/old/new/' file.txt                # substitute FIRST match per line
@@ -417,7 +417,7 @@ sed '/^#/d' config.conf                  # DELETE comment lines
 sed -e 's/foo/bar/' -e 's/baz/qux/'      # multiple expressions
 ```
 
-### awk — field-based processor
+### awk, field-based processor
 
 ```bash
 awk '{ print $1 }' file.txt              # first whitespace-field
@@ -431,7 +431,7 @@ awk 'BEGIN { OFS="," } { print $1, $2 }' # set output field separator
 
 🎯 **Exam pattern:** *"Print only the home directories from `/etc/passwd`."* → `awk -F: '{ print $6 }' /etc/passwd`. (`$6` because the 6th field is the home dir.)
 
-### cut — slice columns
+### cut, slice columns
 
 ```bash
 cut -d: -f1 /etc/passwd                  # first field
@@ -454,7 +454,7 @@ sort | uniq -d                           # only show duplicates
 
 🚨 **Trap on the exam:** `uniq` only removes *adjacent* duplicates. You almost always pipe `sort | uniq`.
 
-### tr — transliterate
+### tr, transliterate
 
 ```bash
 echo "Hello" | tr 'a-z' 'A-Z'            # → HELLO
@@ -466,7 +466,7 @@ cat file.txt | tr ' ' '\n'               # spaces → newlines
 
 ## ⏰ Scheduling: cron, at, systemd timers
 
-### cron — the classic scheduler
+### cron, the classic scheduler
 
 Each user has a crontab (`crontab -e` to edit). The format:
 
@@ -489,13 +489,13 @@ Special strings: `@reboot`, `@hourly`, `@daily`, `@weekly`, `@monthly`, `@yearly
 
 System-wide cron locations:
 
-- `/etc/crontab` — system-wide (has an extra USER field after the time fields)
-- `/etc/cron.d/` — drop-in dir for packages
-- `/etc/cron.hourly/`, `/etc/cron.daily/`, `/etc/cron.weekly/`, `/etc/cron.monthly/` — scripts run at those intervals
+- `/etc/crontab`, system-wide (has an extra USER field after the time fields)
+- `/etc/cron.d/`, drop-in dir for packages
+- `/etc/cron.hourly/`, `/etc/cron.daily/`, `/etc/cron.weekly/`, `/etc/cron.monthly/`, scripts run at those intervals
 
 🚨 **Trap on the exam:** cron jobs run with a minimal PATH (`/usr/bin:/bin`). If your script calls `aws` or any non-standard binary, either `export PATH=...` at the top of the script or use absolute paths.
 
-### at — one-shot scheduling
+### at, one-shot scheduling
 
 ```bash
 at 03:00 tomorrow <<EOF
@@ -506,9 +506,9 @@ atq                          # list pending at jobs
 atrm 3                       # remove job ID 3
 ```
 
-`at` is for "run this once at this time" — opposite of cron's repeating schedule.
+`at` is for "run this once at this time", opposite of cron's repeating schedule.
 
-### systemd timers — the modern cron
+### systemd timers, the modern cron
 
 A `.timer` unit triggers a `.service` unit on schedule.
 
@@ -568,13 +568,13 @@ done > /var/log/healthcheck.log
 > Identify at least 4 bugs and propose a fixed version.
 
 **Bugs:**
-1. **`for host in $(cat file)`** — word-splits on whitespace. If a hostname has odd whitespace or the file has blank lines, it breaks. Use `while IFS= read -r host; do ... done < file`.
-2. **`$host` unquoted** — vulnerable to globbing/word-splitting. Use `"$host"`.
-3. **No exit-code tracking** — script always exits 0 regardless of ping failures.
-4. **No timestamps in log** — requirement (c) violated.
-5. **Single redirect `> log`** — overwrites the log instead of appending.
-6. **No defensive header** — no `set -euo pipefail`.
-7. **No stderr capture** — ping errors silently lost.
+1. **`for host in $(cat file)`**, word-splits on whitespace. If a hostname has odd whitespace or the file has blank lines, it breaks. Use `while IFS= read -r host; do ... done < file`.
+2. **`$host` unquoted**, vulnerable to globbing/word-splitting. Use `"$host"`.
+3. **No exit-code tracking**, script always exits 0 regardless of ping failures.
+4. **No timestamps in log**, requirement (c) violated.
+5. **Single redirect `> log`**, overwrites the log instead of appending.
+6. **No defensive header**, no `set -euo pipefail`.
+7. **No stderr capture**, ping errors silently lost.
 
 **Fixed:**
 
@@ -600,7 +600,7 @@ done < "$INPUT"
 exit "$overall_status"
 ```
 
-That's a typical PBQ — 25 lines of buggy bash and 4–7 things to identify or fix.
+That's a typical PBQ, 25 lines of buggy bash and 4–7 things to identify or fix.
 
 ---
 
@@ -608,16 +608,16 @@ That's a typical PBQ — 25 lines of buggy bash and 4–7 things to identify or 
 
 | Misconception | Reality |
 |---------------|---------|
-| `for x in $(cat file)` is fine | NO — word-splits on whitespace. Use `while read -r`. |
+| `for x in $(cat file)` is fine | NO, word-splits on whitespace. Use `while read -r`. |
 | `$var` and `"$var"` are the same | Unquoted, word-splits. ALWAYS quote unless you specifically need splitting. |
 | `[ ]` and `[[ ]]` are interchangeable | `[[ ]]` is bash with safer parsing + regex + `&&`/`||`. `[ ]` is POSIX. |
-| `2>&1 > file` redirects both to file | No — order matters. Use `> file 2>&1`. |
-| cron has the full PATH | NO — minimal PATH. Use absolute paths or export PATH. |
+| `2>&1 > file` redirects both to file | No, order matters. Use `> file 2>&1`. |
+| cron has the full PATH | NO, minimal PATH. Use absolute paths or export PATH. |
 | `uniq` finds all duplicates | Only ADJACENT duplicates. Pipe `sort | uniq`. |
-| `sed s/x/y/ file` modifies the file | No — that prints to stdout. Use `-i` for in-place. |
+| `sed s/x/y/ file` modifies the file | No, that prints to stdout. Use `-i` for in-place. |
 | `set -e` catches all errors | It misses errors in subshells, in `if` test branches, and (without pipefail) in pipes. |
 | Functions need `return` | `return N` sets exit code (0–255). Data "returns" via stdout. |
-| `&&` and `||` short-circuit just like in C | Yes — chain with care (`mkdir -p x && cd x || exit 1`). |
+| `&&` and `||` short-circuit just like in C | Yes, chain with care (`mkdir -p x && cd x || exit 1`). |
 
 ---
 
@@ -625,13 +625,13 @@ That's a typical PBQ — 25 lines of buggy bash and 4–7 things to identify or 
 
 | Term | Definition |
 |------|------------|
-| **Shebang** | `#!/bin/bash` — interpreter directive on line 1 |
+| **Shebang** | `#!/bin/bash`, interpreter directive on line 1 |
 | **Positional params** | `$1`, `$2`, ..., `"$@"`, `$#` |
 | **Exit code** | Integer 0–255 from a command; `$?` reads the last one |
 | **set -euo pipefail** | Defensive script header (exit on error, undef var, pipe failure) |
 | **`[[ ]]`** | Bash conditional with regex, safer than `[ ]` |
-| **Here-doc** | `<<EOF ... EOF` — multiline string to stdin |
-| **Here-string** | `<<<` — single string to stdin |
+| **Here-doc** | `<<EOF ... EOF`, multiline string to stdin |
+| **Here-string** | `<<<`, single string to stdin |
 | **`2>&1`** | Redirect stderr to wherever stdout is going |
 | **grep -v** | Invert match |
 | **sed -i** | In-place edit |
@@ -655,7 +655,7 @@ That's a typical PBQ — 25 lines of buggy bash and 4–7 things to identify or 
 
 ---
 
-## 📊 Case Study — Steam's `rm -rf "$STEAMROOT/"*`
+## 📊 Case Study, Steam's `rm -rf "$STEAMROOT/"*`
 
 **Situation.** In January 2015, GitHub user `Keyvan` reported [Steam Issue #3671](https://github.com/ValveSoftware/steam-for-linux/issues/3671) on Valve's Steam-for-Linux tracker. After moving his Steam installation and following a particular re-install path, Steam's uninstall/cleanup script deleted **every file in his home directory**, plus an external NFS-mounted drive of irreplaceable family photos.
 
@@ -665,7 +665,7 @@ That's a typical PBQ — 25 lines of buggy bash and 4–7 things to identify or 
 rm -rf "$STEAMROOT/"*
 ```
 
-If `$STEAMROOT` was somehow empty (which the bug path made possible), the line became `rm -rf "/"*` — recursively deleting everything from `/` down that the user had permission to delete.
+If `$STEAMROOT` was somehow empty (which the bug path made possible), the line became `rm -rf "/"*`, recursively deleting everything from `/` down that the user had permission to delete.
 
 **Outcome.** The Internet erupted. The story became the most-shared cautionary bash tale of the decade. Valve patched within days. Bash style guides everywhere added "guard against empty variables in destructive commands" to their first chapters. The "Steam pipe" became a verb in sysadmin slang ("don't steam-pipe your home dir").
 
@@ -681,10 +681,10 @@ fi
 rm -rf "${STEAMROOT:?}/"*       # the :? form also fails if empty
 ```
 
-The exam tests these via "what would have prevented the bug" questions and via reading a script and spotting the unsafe pattern. The hard-to-remember fact: `${VAR:?}` causes the expansion to exit with an error if VAR is empty or unset — exactly the safety net `rm` deserves.
+The exam tests these via "what would have prevented the bug" questions and via reading a script and spotting the unsafe pattern. The hard-to-remember fact: `${VAR:?}` causes the expansion to exit with an error if VAR is empty or unset, exactly the safety net `rm` deserves.
 
 **Discussion (Socratic).**
-- **Q1:** Beyond `set -u` and `${VAR:?}`, what *third* defensive measure would have prevented this? (Hint: think about least privilege — what could Steam have done with `sudo` or capabilities?)
+- **Q1:** Beyond `set -u` and `${VAR:?}`, what *third* defensive measure would have prevented this? (Hint: think about least privilege, what could Steam have done with `sudo` or capabilities?)
 - **Q2:** Many DevOps tools (Ansible, Terraform, Helm) execute embedded shell snippets where authors can't always control the runtime shell flags. How do you ship safe destructive commands in those contexts?
 - **Q3:** Argue for or against the position: "Bash is inherently unsafe for destructive operations and should be replaced with Python/Go for anything that calls `rm -rf` in production." What's the trade-off?
 
@@ -695,11 +695,11 @@ The exam tests these via "what would have prevented the bug" questions and via r
 You now know:
 
 - 💻 The **shebang** and **executable bit** that turn a text file into a runnable script
-- 📦 **Variables**, **quoting**, **substitution** — the most-tested set of bash facts
+- 📦 **Variables**, **quoting**, **substitution**, the most-tested set of bash facts
 - 🧮 The **special variables** (`$0`, `$@`, `$#`, `$?`, `$$`, `$!`)
 - 🔀 **Conditionals** with `[[ ... ]]`, all file/string/numeric tests, and `case`
-- 🔁 **Loops** — `for`, `while IFS= read -r`, `until`, C-style
-- ↪️ **Redirection** — `>`, `>>`, `2>&1`, `&>`, here-docs, here-strings, pipes
+- 🔁 **Loops**, `for`, `while IFS= read -r`, `until`, C-style
+- ↪️ **Redirection**, `>`, `>>`, `2>&1`, `&>`, here-docs, here-strings, pipes
 - 🔢 **Exit codes** and the **defensive header** (`set -euo pipefail`)
 - 🧩 **Functions** with `local`, return values via stdout
 - 🔧 The pipeline toolkit: **grep, sed, awk, cut, sort, uniq, tr**
@@ -707,12 +707,12 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 5 — Users, Groups & sudo](../Module-05-Users-Groups/Reading.md)
+4. ➡️ Move on: [Module 5, Users, Groups & sudo](../Module-05-Users-Groups/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 5](../Module-05-Users-Groups/Reading.md) — your scripts will read `/etc/passwd` with `awk -F:`; [Module 6](../Module-06-Networking-SSH/Reading.md) — `ssh user@host 'remote_cmd'` is bash-on-bash; [Module 8](../Module-08-Security/Reading.md) — auditd rules read like little scripts.
+> - Inside this course: [Module 5](../Module-05-Users-Groups/Reading.md) your scripts will read `/etc/passwd` with `awk -F:`; [Module 6](../Module-06-Networking-SSH/Reading.md) `ssh user@host 'remote_cmd'` is bash-on-bash; [Module 8](../Module-08-Security/Reading.md), auditd rules read like little scripts.
 > - Practice: Practice Exam 1 has ~8 questions drawing from this module; the Final Mock has ~12.
 
 ---
@@ -720,14 +720,14 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 GNU Bash Reference Manual — [bash.5 and the manual on gnu.org](https://www.gnu.org/software/bash/manual/) — read the "Shell Expansions" and "Conditional Constructs" sections at least twice.
-- 📄 POSIX.1-2017 (IEEE Std 1003.1-2017) — Chapter 2 (Shell Command Language).
+- 📄 GNU Bash Reference Manual [bash.5 and the manual on gnu.org](https://www.gnu.org/software/bash/manual/) read the "Shell Expansions" and "Conditional Constructs" sections at least twice.
+- 📄 POSIX.1-2017 (IEEE Std 1003.1-2017), Chapter 2 (Shell Command Language).
 - 📄 Mike Mol et al., [*Bash Pitfalls*](https://mywiki.wooledge.org/BashPitfalls). The single most useful bash debugging resource on the Internet.
-- 📄 [Google Shell Style Guide](https://google.github.io/styleguide/shellguide.html) — the most-adopted style guide in industry. Read at least once.
-- 📄 [ShellCheck](https://www.shellcheck.net/) — install (`apt install shellcheck` / `dnf install ShellCheck`) and run on every script you write.
+- 📄 [Google Shell Style Guide](https://google.github.io/styleguide/shellguide.html), the most-adopted style guide in industry. Read at least once.
+- 📄 [ShellCheck](https://www.shellcheck.net/), install (`apt install shellcheck` / `dnf install ShellCheck`) and run on every script you write.
 
 **Practitioner / exam:**
-- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023) — Chapter 11.
-- 📖 Daniel Robbins's classic [Bash by Example articles on IBM developerWorks (archived)](https://www.ibm.com/developerworks/library/l-bash/) — still gold.
-- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021) — Chapter 11 (Shell Scripts).
-- 📖 Mendel Cooper, [*Advanced Bash-Scripting Guide*](https://tldp.org/LDP/abs/html/) — the canonical free reference.
+- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023), Chapter 11.
+- 📖 Daniel Robbins's classic [Bash by Example articles on IBM developerWorks (archived)](https://www.ibm.com/developerworks/library/l-bash/), still gold.
+- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021), Chapter 11 (Shell Scripts).
+- 📖 Mendel Cooper, [*Advanced Bash-Scripting Guide*](https://tldp.org/LDP/abs/html/), the canonical free reference.

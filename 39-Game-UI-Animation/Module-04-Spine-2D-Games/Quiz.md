@@ -148,7 +148,7 @@ D. Cloth simulation for the knight's cloak
 A. The walk animation being completely replaced by the attack animation
 B. Both animations blending additively, potentially causing distorted poses
 C. The attack animation playing on top of or blending with the walk animation based on each track's alpha value and mix settings
-D. A runtime error — Spine-Unity supports only one track at a time
+D. A runtime error, Spine-Unity supports only one track at a time
 
 ---
 
@@ -164,7 +164,7 @@ D. Path attachment
 ### Q18. A Fate/Grand Order servant with 100+ costume variants is implemented in Spine using:
 
 A. 100 separate Spine skeletons, one per costume
-B. One skeleton with skin variants — a base skin plus per-costume variant skins swapped at runtime
+B. One skeleton with skin variants, a base skin plus per-costume variant skins swapped at runtime
 C. 100 separate texture atlases loaded and unloaded at runtime
 D. An animation event that changes the draw order of all slots simultaneously
 
@@ -227,28 +227,28 @@ D. Exporting skeletons as `.skel` binary format instead of `.json` text format
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — Spine moves a bone hierarchy; frame-by-frame draws each frame separately
-Q2:  B — Slot is a draw-order entry specifying which attachment is visible on a bone
-Q3:  B — Region attachment = rectangular image from atlas, no per-vertex deformation
-Q4:  B — 2 bone influences per vertex is the mobile GPU skinning recommendation
-Q5:  B — FFD moves mesh vertices directly without binding them to additional bones
-Q6:  B — Mix = 0.0 means pure FK; IK target has no influence
-Q7:  C — Dead Cells used 15–25 bones per enemy (per Motion Twin)
-Q8:  C — SkeletonAnimation is the runtime animation component for Spine-Unity
-Q9:  B — Track 0 typically holds the base looping animation (walk, idle)
-Q10: C — Skins enable attachment swapping for character variants on one skeleton
-Q11: B — GPU compression (ETC2, ASTC, DXT) requires power-of-two dimensions
-Q12: B — Premultiply alpha bakes alpha into RGB to prevent edge fringing
-Q13: B — Bounding Box attachments define hit detection / collision regions
-Q14: B — Compress allows the chain to shorten when target is too close
-Q15: B — Hollow Knight used IK for hand/foot contact placement on surfaces
-Q16: C — Track 1 overlays on Track 0 based on alpha and mix settings
-Q17: D — Path attachment defines a curve for bone constraints (tails, tentacles)
-Q18: B — Skin variants: one skeleton + per-costume skins swapped at runtime
-Q19: C — 1024×1024 is the recommended mobile atlas page size
-Q20: B — Spine exports: .json/.skel + .atlas + .png
-Q21: B — Transform Constraint links one bone's transform to another with mix values
-Q22: B — Bind Pose = mesh vertex positions before any bone transformation
-Q23: B — Motion Twin used optimized Spine C runtime with batched draw calls
-Q24: C — 2-bone influence limit + atlas batching is the critical mobile optimization
+Q1:  B, Spine moves a bone hierarchy; frame-by-frame draws each frame separately
+Q2:  B, Slot is a draw-order entry specifying which attachment is visible on a bone
+Q3:  B, Region attachment = rectangular image from atlas, no per-vertex deformation
+Q4:  B, 2 bone influences per vertex is the mobile GPU skinning recommendation
+Q5:  B, FFD moves mesh vertices directly without binding them to additional bones
+Q6:  B, Mix = 0.0 means pure FK; IK target has no influence
+Q7:  C, Dead Cells used 15–25 bones per enemy (per Motion Twin)
+Q8:  C, SkeletonAnimation is the runtime animation component for Spine-Unity
+Q9:  B, Track 0 typically holds the base looping animation (walk, idle)
+Q10: C, Skins enable attachment swapping for character variants on one skeleton
+Q11: B, GPU compression (ETC2, ASTC, DXT) requires power-of-two dimensions
+Q12: B, Premultiply alpha bakes alpha into RGB to prevent edge fringing
+Q13: B, Bounding Box attachments define hit detection / collision regions
+Q14: B, Compress allows the chain to shorten when target is too close
+Q15: B, Hollow Knight used IK for hand/foot contact placement on surfaces
+Q16: C, Track 1 overlays on Track 0 based on alpha and mix settings
+Q17: D, Path attachment defines a curve for bone constraints (tails, tentacles)
+Q18: B, Skin variants: one skeleton + per-costume skins swapped at runtime
+Q19: C, 1024×1024 is the recommended mobile atlas page size
+Q20: B, Spine exports: .json/.skel + .atlas + .png
+Q21: B, Transform Constraint links one bone's transform to another with mix values
+Q22: B, Bind Pose = mesh vertex positions before any bone transformation
+Q23: B, Motion Twin used optimized Spine C runtime with batched draw calls
+Q24: C, 2-bone influence limit + atlas batching is the critical mobile optimization
 ```

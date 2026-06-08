@@ -70,11 +70,11 @@ UP: Standing leg pushes off; body rises
 
 ## Self-Critique Framework (5 Steps)
 
-1. **Watch without sound** — does it read from movement alone?
-2. **Cover character, watch background** — is staging clear from negative space?
-3. **Play at half speed** — do in-betweens hold up? Any pops or slides?
-4. **Show to fresh eyes** — what story do they see?
-5. **Wait 48 hours, watch again** — fresh eyes reveal what familiarity hides
+1. **Watch without sound**, does it read from movement alone?
+2. **Cover character, watch background**, is staging clear from negative space?
+3. **Play at half speed**, do in-betweens hold up? Any pops or slides?
+4. **Show to fresh eyes**, what story do they see?
+5. **Wait 48 hours, watch again**, fresh eyes reveal what familiarity hides
 
 ---
 
@@ -85,7 +85,7 @@ UP: Standing leg pushes off; body rises
 | Ball is fastest at arc top | Ball is SLOWEST at arc top (almost stationary); fastest at bottom |
 | Arms and legs swing same side | Opposite arm from leading leg swings forward |
 | Body is lowest at passing position | Body is HIGHEST at passing; lowest at contact/down |
-| Volume changes with squash | Volume stays CONSTANT — wider when squashed, narrower when stretched |
+| Volume changes with squash | Volume stays CONSTANT, wider when squashed, narrower when stretched |
 | V-shaped bounce paths are OK | Arcs must be parabolic curves, never V-shapes |
 
 
@@ -122,7 +122,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 
@@ -161,7 +161,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

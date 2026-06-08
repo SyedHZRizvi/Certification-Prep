@@ -3,21 +3,21 @@
 > **Why this module matters:** For the first thirteen years of Bitcoin's life, the question "how do institutions hold Bitcoin?" was answered with a shrug, an exchange account, or a Grayscale Trust premium that swung between +130% and -50%. On **January 10, 2024**, the SEC approved 11 spot Bitcoin ETFs simultaneously, and "institutional Bitcoin" became a product line, not an aspiration. This module is the bridge between Bitcoin-the-protocol (Modules 1-7) and Bitcoin-the-market. You'll leave able to compare CEX vs DEX architecture, walk through the hot/warm/cold wallet hierarchy, explain why MPC and multi-sig are NOT the same thing, read on-chain metrics like MVRV and SOPR, and articulate exactly what changed for capital markets when **IBIT** hit $10B in AUM in 50 trading days.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 4 (Wallets, Keys, Self-Custody)](../Module-04-Wallets-Keys-Self-Custody/Reading.md) — single-sig vs multi-sig, hot/cold separation
-> - [Module 6 (Bitcoin Script & Programmability)](../Module-06-Bitcoin-Script-Programmability/Reading.md) — P2WSH, Taproot, MuSig2
-> - [Module 8 (Regulatory & Compliance)](../Module-08-Regulatory-Compliance-Tax/Reading.md) — Travel Rule, KYC, AML obligations
+> - [Module 4 (Wallets, Keys, Self-Custody)](../Module-04-Wallets-Keys-Self-Custody/Reading.md), single-sig vs multi-sig, hot/cold separation
+> - [Module 6 (Bitcoin Script & Programmability)](../Module-06-Bitcoin-Script-Programmability/Reading.md), P2WSH, Taproot, MuSig2
+> - [Module 8 (Regulatory & Compliance)](../Module-08-Regulatory-Compliance-Tax/Reading.md), Travel Rule, KYC, AML obligations
 
 ---
 
 ## ☕ A Story: The Decade-Long "No"
 
-It is **January 10, 2024**, 4:00 PM Eastern. The U.S. Securities and Exchange Commission posts an order on its website. The wording is deliberately bureaucratic — *"approving rule changes... to list and trade shares of..."* — but the substance is historic. Eleven spot Bitcoin exchange-traded funds, including BlackRock's **iShares Bitcoin Trust (IBIT)**, Fidelity's **FBTC**, Ark/21Shares' **ARKB**, and Bitwise's **BITB**, will begin trading the following morning on NYSE Arca, Cboe BZX, and Nasdaq.
+It is **January 10, 2024**, 4:00 PM Eastern. The U.S. Securities and Exchange Commission posts an order on its website. The wording is deliberately bureaucratic *"approving rule changes... to list and trade shares of..."* but the substance is historic. Eleven spot Bitcoin exchange-traded funds, including BlackRock's **iShares Bitcoin Trust (IBIT)**, Fidelity's **FBTC**, Ark/21Shares' **ARKB**, and Bitwise's **BITB**, will begin trading the following morning on NYSE Arca, Cboe BZX, and Nasdaq.
 
-The decade leading to that single PDF reads like an industry-long denial sequence. The Winklevoss twins filed the first spot Bitcoin ETF application in **2013**. It was rejected. They re-filed in 2017. Rejected. SolidX, Bitwise, VanEck, Wilshire Phoenix — every applicant between 2013 and 2023 received the same form letter: *"the proposing exchange has not demonstrated that its proposal is designed to prevent fraudulent and manipulative acts."*
+The decade leading to that single PDF reads like an industry-long denial sequence. The Winklevoss twins filed the first spot Bitcoin ETF application in **2013**. It was rejected. They re-filed in 2017. Rejected. SolidX, Bitwise, VanEck, Wilshire Phoenix, every applicant between 2013 and 2023 received the same form letter: *"the proposing exchange has not demonstrated that its proposal is designed to prevent fraudulent and manipulative acts."*
 
-The wall began to crack in **August 2023**. The D.C. Circuit Court of Appeals ruled in *Grayscale Investments v. SEC* that the Commission's denial of Grayscale's GBTC-to-ETF conversion was "arbitrary and capricious" — the agency had approved Bitcoin *futures* ETFs (BITO, October 2021) while rejecting spot products, and could not coherently distinguish the two on surveillance grounds. The SEC did not appeal. In hindsight, that was the moment the institutional door swung open.
+The wall began to crack in **August 2023**. The D.C. Circuit Court of Appeals ruled in *Grayscale Investments v. SEC* that the Commission's denial of Grayscale's GBTC-to-ETF conversion was "arbitrary and capricious", the agency had approved Bitcoin *futures* ETFs (BITO, October 2021) while rejecting spot products, and could not coherently distinguish the two on surveillance grounds. The SEC did not appeal. In hindsight, that was the moment the institutional door swung open.
 
-What happened next looked like a starting gun. By **mid-March 2024**, IBIT alone held **$15 billion** in AUM. By **July 2024**, it crossed **$50 billion** — the fastest ETF in history to reach that threshold, beating SPDR Gold Shares (GLD, 2004) by years. Cumulative net inflows across the eleven spot Bitcoin ETFs exceeded **$30 billion** in their first six months — roughly one-third of GBTC's total assets converted into the new wrappers, plus enormous net-new institutional demand.
+What happened next looked like a starting gun. By **mid-March 2024**, IBIT alone held **$15 billion** in AUM. By **July 2024**, it crossed **$50 billion** the fastest ETF in history to reach that threshold, beating SPDR Gold Shares (GLD, 2004) by years. Cumulative net inflows across the eleven spot Bitcoin ETFs exceeded **$30 billion** in their first six months roughly one-third of GBTC's total assets converted into the new wrappers, plus enormous net-new institutional demand.
 
 Behind the headline AUM number, something quieter but more important happened: **Bitcoin became a workflow.** Compliance teams at pension funds, RIAs, family offices, and corporate treasuries no longer had to negotiate around "is this even an investible asset class?" They had a 13F-reportable, tax-clean, custody-insured ticker on NYSE. The question shifted from *whether* to *how much*.
 
@@ -27,21 +27,21 @@ This module unpacks the full machine: exchange architecture, custody hierarchies
 
 ---
 
-## 🏛️ Exchanges — The Market Layer
+## 🏛️ Exchanges, The Market Layer
 
-A **cryptocurrency exchange** is the venue where Bitcoin meets fiat (and other crypto assets). It is also where 90%+ of price discovery happens. Understanding the architecture is essential — because every exchange failure (Mt. Gox, QuadrigaCX, FTX) maps back to a structural choice the exchange made.
+A **cryptocurrency exchange** is the venue where Bitcoin meets fiat (and other crypto assets). It is also where 90%+ of price discovery happens. Understanding the architecture is essential, because every exchange failure (Mt. Gox, QuadrigaCX, FTX) maps back to a structural choice the exchange made.
 
-### CEX vs DEX — the two architectures
+### CEX vs DEX, the two architectures
 
 | Dimension | Centralized exchange (CEX) | Decentralized exchange (DEX) |
 |-----------|---------------------------|-------------------------------|
 | **Custody** | Exchange custodies user funds | User custodies own funds (self-custody) |
 | **Order matching** | Off-chain order book engine | On-chain via smart contract |
-| **Market structure** | Order book (CLOB) | Automated market maker (AMM) — primarily |
+| **Market structure** | Order book (CLOB) | Automated market maker (AMM), primarily |
 | **KYC / AML** | Mandatory (regulated) | Often none (permissionless) |
 | **Speed** | Microseconds; off-chain | Limited by block time |
 | **Liquidity** | Deep; concentrated on top venues | Thinner; fragmented across pools |
-| **Counterparty risk** | YES — exchange can fail (FTX) | Smart-contract risk only |
+| **Counterparty risk** | YES, exchange can fail (FTX) | Smart-contract risk only |
 | **Examples** | Coinbase, Kraken, Binance, Gemini | Uniswap (ETH), Bisq (BTC) |
 
 🎯 **MEMORIZE THIS.** A CEX is an **IOU economy**: when you "buy Bitcoin" on Coinbase, you're buying a database entry that says Coinbase owes you Bitcoin. A DEX is **non-custodial**: trades are atomic swaps executed by code, with no intermediary holding your keys.
@@ -60,9 +60,9 @@ x · y = k
 
 …where `x` and `y` are the two pool reserves and `k` is invariant. A trader who deposits `Δx` receives `Δy` such that `(x+Δx)(y-Δy) = k`. The price slips as the trade size grows relative to pool depth.
 
-🎯 **Exam tip.** Bitcoin itself doesn't have native AMMs — Bitcoin Script (Module 6) isn't expressive enough for that kind of stateful smart contract. Bitcoin DEXs (Bisq, Hodl Hodl) are mostly **escrow-based peer-to-peer** trading systems, not AMM-style pools. AMM pricing belongs to the EVM world (Module 10).
+🎯 **Exam tip.** Bitcoin itself doesn't have native AMMs, Bitcoin Script (Module 6) isn't expressive enough for that kind of stateful smart contract. Bitcoin DEXs (Bisq, Hodl Hodl) are mostly **escrow-based peer-to-peer** trading systems, not AMM-style pools. AMM pricing belongs to the EVM world (Module 10).
 
-### Spot vs derivatives — the three product layers
+### Spot vs derivatives, the three product layers
 
 | Product | What it trades | Key features | Major venues (2026) |
 |---------|---------------|--------------|---------------------|
@@ -70,25 +70,25 @@ x · y = k
 | **Futures** | Cash-settled BTC contract with expiry | Standardized; daily mark-to-market; expiry on date | CME (regulated), Binance, OKX |
 | **Perpetuals** | Futures with no expiry | Funding-rate mechanism keeps perp price ≈ spot | Binance, Bybit, OKX, dYdX |
 
-**CME Group launched Bitcoin futures on December 17, 2017** — the first regulated U.S. venue for BTC derivatives. CME futures (BTC, MBT, BIT) settle in cash, not coin, and are limited to qualified institutional buyers. They became the price-discovery benchmark Bloomberg and Reuters reference.
+**CME Group launched Bitcoin futures on December 17, 2017**, the first regulated U.S. venue for BTC derivatives. CME futures (BTC, MBT, BIT) settle in cash, not coin, and are limited to qualified institutional buyers. They became the price-discovery benchmark Bloomberg and Reuters reference.
 
 **Perpetual swaps** ("perps") were invented by BitMEX (Arthur Hayes, 2016). The mechanism: there is no expiry, but every 8 hours, longs pay shorts (or vice versa) a **funding rate** proportional to how far the perp price diverges from the underlying spot index. Positive funding → longs are paying → shorts are getting paid → arbitrageurs push the perp price back toward spot. The funding rate itself becomes a leading sentiment indicator (positive funding = leveraged longs; extreme positive funding precedes liquidation cascades).
 
-🚨 **Trap on the exam:** "Bitcoin futures" can mean two different things — CME-style regulated cash-settled with expiry, or offshore perpetuals with no expiry. They are NOT the same product.
+🚨 **Trap on the exam:** "Bitcoin futures" can mean two different things, CME-style regulated cash-settled with expiry, or offshore perpetuals with no expiry. They are NOT the same product.
 
 ### OTC desks and the iceberg below the order book
 
-The Coinbase Pro order book shows perhaps 5-10% of true institutional Bitcoin flow on any given day. The rest happens off-book through **over-the-counter (OTC) desks** — bilateral negotiated trades between high-net-worth individuals, institutions, miners, and ETF authorized participants. Major desks: Cumberland (DRW), Genesis (collapsed Jan 2023), GSR, B2C2, Galaxy Digital. Trades typically settle in 1-5 BTC minimum blocks, with execution off any public order book to prevent market impact.
+The Coinbase Pro order book shows perhaps 5-10% of true institutional Bitcoin flow on any given day. The rest happens off-book through **over-the-counter (OTC) desks**, bilateral negotiated trades between high-net-worth individuals, institutions, miners, and ETF authorized participants. Major desks: Cumberland (DRW), Genesis (collapsed Jan 2023), GSR, B2C2, Galaxy Digital. Trades typically settle in 1-5 BTC minimum blocks, with execution off any public order book to prevent market impact.
 
 🎯 **Exam tip.** When IBIT receives a $200M institutional buy order, the issuer's authorized participant (typically Jane Street, Virtu, or Flow Traders) does NOT lift the public order book for $200M of Bitcoin. They execute through OTC desks, then deliver coin into custody for ETF creation. The mechanism is invisible from CoinGecko but it's how the ETF flow actually moves.
 
 ---
 
-## 🔐 Custody — The Hierarchy
+## 🔐 Custody, The Hierarchy
 
-If exchanges are the market layer, **custody** is the security layer. Every institutional Bitcoin product — from a $1B ETF to a $50K corporate treasury — sits on a custody architecture decision: who holds the keys, where are they stored, and what's the threshold to spend?
+If exchanges are the market layer, **custody** is the security layer. Every institutional Bitcoin product from a $1B ETF to a $50K corporate treasury sits on a custody architecture decision: who holds the keys, where are they stored, and what's the threshold to spend?
 
-### Custodial vs self-custody — the binary
+### Custodial vs self-custody, the binary
 
 | Model | Who holds keys | Failure mode | Best for |
 |-------|---------------|--------------|----------|
@@ -107,26 +107,26 @@ Every custodian (and every well-architected institutional self-custody operation
 | **Warm** | Periodically | Re-balancing the hot wallet; medium-volume ops | 5-15% | Multi-sig with operations-team co-signers |
 | **Cold** | Never (air-gapped) | Long-term storage; reserves | 80-95% | Multi-sig + geographically distributed HSMs |
 
-🎯 **MEMORIZE THIS.** Every major exchange hack has been a **hot wallet** breach. Mt. Gox (2014), Bitfinex (2016, $72M), Coincheck (2018, $530M), KuCoin (2020, $280M), Poly Network (2021, $611M) — every single one, hot wallet. The cold storage was untouched. The lesson: keep as little online as your business model permits.
+🎯 **MEMORIZE THIS.** Every major exchange hack has been a **hot wallet** breach. Mt. Gox (2014), Bitfinex (2016, $72M), Coincheck (2018, $530M), KuCoin (2020, $280M), Poly Network (2021, $611M), every single one, hot wallet. The cold storage was untouched. The lesson: keep as little online as your business model permits.
 
-### Multi-sig vs MPC — they are NOT the same
+### Multi-sig vs MPC, they are NOT the same
 
 This is a common confusion the exam will test.
 
 | Property | Multi-sig (P2WSH / P2TR) | MPC (Multi-Party Computation) |
 |----------|--------------------------|-------------------------------|
-| **What it is** | Bitcoin Script primitive — M-of-N pubkeys on-chain | Cryptographic protocol that splits a SINGLE private key across N parties |
+| **What it is** | Bitcoin Script primitive, M-of-N pubkeys on-chain | Cryptographic protocol that splits a SINGLE private key across N parties |
 | **On-chain footprint** | M-of-N script visible (pre-Taproot) or single key (Taproot MuSig2) | Always looks like single-sig (1 pubkey on-chain) |
 | **Quorum changes** | Requires migrating funds (new script) | Can re-share key without moving funds |
-| **Auditability** | On-chain — see the multi-sig structure | Off-chain only; trust the vendor's protocol |
+| **Auditability** | On-chain, see the multi-sig structure | Off-chain only; trust the vendor's protocol |
 | **Vendors** | Casa, Unchained Capital, Sparrow, Specter | Fireblocks, Copper, Curv (Anchorage), BitGo Modular |
 | **Recovery** | Recover individual keys → quorum | Recover threshold key shares |
 
-🎯 **MEMORIZE THIS.** **Multi-sig** is a Bitcoin Script feature (Module 6) — multiple distinct keys whose signatures are checked separately at spend time. **MPC** is a cryptographic protocol — there is ONE private key, mathematically distributed into N shares so M of them together can produce a signature WITHOUT ever reconstructing the key in one place. MPC includes **threshold signature schemes (TSS)** like GG18 (Gennaro & Goldfeder, 2018) and FROST (Komlo & Goldberg, 2020).
+🎯 **MEMORIZE THIS.** **Multi-sig** is a Bitcoin Script feature (Module 6) multiple distinct keys whose signatures are checked separately at spend time. **MPC** is a cryptographic protocol there is ONE private key, mathematically distributed into N shares so M of them together can produce a signature WITHOUT ever reconstructing the key in one place. MPC includes **threshold signature schemes (TSS)** like GG18 (Gennaro & Goldfeder, 2018) and FROST (Komlo & Goldberg, 2020).
 
 **Why MPC matters institutionally:** the quorum is invisible on-chain. A Fireblocks-secured Bitcoin holding looks like a single-sig address on a block explorer, while internally requiring 3-of-5 employee approvals to move. This combines the audit-quality of multi-sig with the privacy of single-sig. Trade-off: you trust the MPC vendor's protocol implementation, since the key splitting happens in their software.
 
-### Institutional qualified custodians — the 2026 landscape
+### Institutional qualified custodians, the 2026 landscape
 
 | Custodian | Founded / acquired | Regulatory status | Notable clients |
 |-----------|---------------------|---------------------|-----------------|
@@ -140,7 +140,7 @@ This is a common confusion the exam will test.
 
 🎯 **Exam tip.** A **"qualified custodian"** under the U.S. Investment Advisers Act of 1940, Rule 206(4)-2 (the "Custody Rule"), is a bank, registered broker-dealer, futures commission merchant, or certain regulated foreign institutions. RIAs (registered investment advisers) holding client assets MUST use qualified custodians. Coinbase Custody Trust and Anchorage Digital Bank are qualified custodians; Coinbase Inc. (the consumer brokerage) generally is not.
 
-### CCSS — the security standard
+### CCSS, the security standard
 
 The **CryptoCurrency Security Standard (CCSS)**, published by the **CryptoCurrency Certification Consortium (C4)** in 2015, defines security requirements for any organization handling cryptocurrencies. Three levels:
 
@@ -154,17 +154,17 @@ The **CryptoCurrency Security Standard (CCSS)**, published by the **CryptoCurren
 
 ---
 
-## 💼 Case Study — BlackRock's iShares Bitcoin Trust (IBIT) Launch (January 11, 2024)
+## 💼 Case Study, BlackRock's iShares Bitcoin Trust (IBIT) Launch (January 11, 2024)
 
-**Situation.** In June 2023, BlackRock — the world's largest asset manager at $9 trillion AUM — filed an S-1 to launch a spot Bitcoin ETF. The filing was met with skepticism. BlackRock CEO Larry Fink had called Bitcoin "an index of money laundering" in 2017. The SEC had rejected every spot Bitcoin ETF application for ten consecutive years. And Grayscale's $20B GBTC Trust — the dominant institutional vehicle — was trading at a 50%+ discount to NAV, suggesting deep market dysfunction.
+**Situation.** In June 2023, BlackRock the world's largest asset manager at $9 trillion AUM filed an S-1 to launch a spot Bitcoin ETF. The filing was met with skepticism. BlackRock CEO Larry Fink had called Bitcoin "an index of money laundering" in 2017. The SEC had rejected every spot Bitcoin ETF application for ten consecutive years. And Grayscale's $20B GBTC Trust the dominant institutional vehicle was trading at a 50%+ discount to NAV, suggesting deep market dysfunction.
 
-Three things were different in 2023. First, the August 2023 D.C. Circuit ruling in *Grayscale v. SEC* found the SEC's denial reasoning "arbitrary and capricious." Second, BlackRock had a 575-1 record on prior ETF approvals (Bloomberg, 2023) and named Coinbase Custody as custodian — a regulated NYDFS trust company. Third, Fidelity, ARK/21Shares, Bitwise, Invesco, Valkyrie, VanEck, WisdomTree, Hashdex, Franklin Templeton, and Grayscale all filed competing S-1s, presenting the SEC with a fait accompli.
+Three things were different in 2023. First, the August 2023 D.C. Circuit ruling in *Grayscale v. SEC* found the SEC's denial reasoning "arbitrary and capricious." Second, BlackRock had a 575-1 record on prior ETF approvals (Bloomberg, 2023) and named Coinbase Custody as custodian, a regulated NYDFS trust company. Third, Fidelity, ARK/21Shares, Bitwise, Invesco, Valkyrie, VanEck, WisdomTree, Hashdex, Franklin Templeton, and Grayscale all filed competing S-1s, presenting the SEC with a fait accompli.
 
 **Decision.** BlackRock filed with these features:
 
 - **Custodian:** Coinbase Custody Trust (qualified custodian, NYDFS-regulated, CCSS L3)
 - **Authorized Participants (APs):** Jane Street and JPMorgan Securities (later Virtu, ABN AMRO, Macquarie added)
-- **Cash creation model:** APs deliver USD (not BTC) to the trust; the trust acquires BTC via OTC desks. (The SEC rejected in-kind creation in the final rounds — concerned about AP self-dealing.)
+- **Cash creation model:** APs deliver USD (not BTC) to the trust; the trust acquires BTC via OTC desks. (The SEC rejected in-kind creation in the final rounds, concerned about AP self-dealing.)
 - **Fee:** **0.25%** management fee, with a 0% waiver on the first $5B AUM for 12 months.
 - **Listing:** NYSE Arca, ticker **IBIT**.
 
@@ -172,16 +172,16 @@ The SEC approved all 11 ETFs simultaneously on January 10, 2024, in a "rip the b
 
 **Outcome.**
 - **Day 1 (Jan 11, 2024):** $4.6B in trading volume across the 11 ETFs.
-- **Day 50 (March 2024):** IBIT crossed **$10B AUM** — fastest ETF to that threshold in history (previous record: ~700 days).
+- **Day 50 (March 2024):** IBIT crossed **$10B AUM**, fastest ETF to that threshold in history (previous record: ~700 days).
 - **6 months (July 2024):** IBIT at **$50B+**; cumulative net flows into the 11 ETFs surpassed **$30B**.
 - **GBTC unwind:** Grayscale's converted GBTC (highest fee at 1.50%) lost $20B+ in outflows in the first six months as holders rotated to lower-fee competitors.
-- **Spot price effect:** Bitcoin moved from $46K (ETF approval) to $73K (March 2024 all-time high) — the institutional bid was real.
+- **Spot price effect:** Bitcoin moved from $46K (ETF approval) to $73K (March 2024 all-time high), the institutional bid was real.
 - **Knock-on Asia approvals:** Hong Kong (April 2024) and several European jurisdictions approved spot Bitcoin ETPs in 2024.
 
 **Lesson for the exam / for practitioners.** Three principles:
 
-1. **Regulation creates and destroys access at scale.** Bitcoin's spot price had little to do with "what's a Bitcoin worth?" the day before the ETFs and the day after — but the institutional buyable supply shifted massively. CBP candidates should understand that regulatory wrappers don't change the underlying asset; they change who can hold it.
-2. **Custody is the precondition for institutional access.** Without Coinbase Custody's NYDFS trust charter + CCSS Level 3 + SOC 2 attestation + insurance, no ETF approval would have been possible. The custody layer (Modules 4 and 9) is not an afterthought — it's the load-bearing pillar.
+1. **Regulation creates and destroys access at scale.** Bitcoin's spot price had little to do with "what's a Bitcoin worth?" the day before the ETFs and the day after, but the institutional buyable supply shifted massively. CBP candidates should understand that regulatory wrappers don't change the underlying asset; they change who can hold it.
+2. **Custody is the precondition for institutional access.** Without Coinbase Custody's NYDFS trust charter + CCSS Level 3 + SOC 2 attestation + insurance, no ETF approval would have been possible. The custody layer (Modules 4 and 9) is not an afterthought, it's the load-bearing pillar.
 3. **The "Bitcoin is just for criminals" narrative collapsed quietly in 2024.** When BlackRock, Fidelity, Franklin Templeton, and Invesco simultaneously offer the asset, the narrative shift is structural, not cyclical. Practitioners should expect Bitcoin to be discussed at corporate treasury committees the way gold has been since 1971.
 
 **Discussion (Socratic).**
@@ -191,7 +191,7 @@ The SEC approved all 11 ETFs simultaneously on January 10, 2024, in a "rip the b
 
 ---
 
-## 📊 On-Chain Analysis — Reading the Network
+## 📊 On-Chain Analysis, Reading the Network
 
 A unique property of Bitcoin (and other public blockchains) is that **every transaction is publicly observable**. This enables a discipline traditional finance can only dream of: **on-chain analysis**, where market participants extract leading and coincident indicators directly from the blockchain.
 
@@ -208,24 +208,24 @@ A unique property of Bitcoin (and other public blockchains) is that **every tran
 
 ### The five most-cited on-chain metrics
 
-1. **MVRV (Market Value to Realized Value)** — Pricing model, Puell / Coinmetrics 2018.
+1. **MVRV (Market Value to Realized Value)**, Pricing model, Puell / Coinmetrics 2018.
    - **Market Value** = current price × circulating supply.
    - **Realized Value** = aggregate cost basis of every UTXO (price at the last time each UTXO moved).
    - **MVRV ratio** = Market Value / Realized Value. Historically: **>3.7 = top zone; <1.0 = bottom zone**.
-2. **SOPR (Spent Output Profit Ratio)** — Renato Shirakashi, 2019.
+2. **SOPR (Spent Output Profit Ratio)**, Renato Shirakashi, 2019.
    - For each spent UTXO: (price sold ÷ price acquired). SOPR > 1 = average UTXO spent at profit; SOPR < 1 = at loss.
    - Cycle bottoms historically see SOPR briefly dip below 1; reset signal.
-3. **HODL waves** — Unchained Capital (Hayward, 2018).
+3. **HODL waves**, Unchained Capital (Hayward, 2018).
    - The fraction of supply that has not moved in N (e.g., 1y, 2y, 5y, 10y) buckets.
    - Long-term holder behavior is a leading indicator: when 1y+ HODL fraction declines, distribution is happening.
-4. **Realized cap** — Coinmetrics (Arcane, 2018).
+4. **Realized cap**, Coinmetrics (Arcane, 2018).
    - Sum of every UTXO valued at its last-moved price. A cost-basis-weighted "true" market cap.
-5. **Exchange netflow** — CryptoQuant / Glassnode.
+5. **Exchange netflow**, CryptoQuant / Glassnode.
    - BTC flowing onto exchanges vs off. Inflow = potential sell pressure; outflow = withdrawal to self-custody (bullish signal historically).
 
-🎯 **Exam tip.** On-chain metrics are **descriptive, not predictive** — they describe what happened, with sometimes-useful leading properties. They are NOT cash-flow valuation models (Bitcoin doesn't produce cash flow). They sit alongside (not replace) traditional macro analysis.
+🎯 **Exam tip.** On-chain metrics are **descriptive, not predictive**, they describe what happened, with sometimes-useful leading properties. They are NOT cash-flow valuation models (Bitcoin doesn't produce cash flow). They sit alongside (not replace) traditional macro analysis.
 
-### Address tiers — the "whale" taxonomy
+### Address tiers, the "whale" taxonomy
 
 Glassnode and others segment Bitcoin holders by address size:
 
@@ -242,7 +242,7 @@ Glassnode and others segment Bitcoin holders by address size:
 
 ---
 
-## 🏗️ Market Structure — Who's Quoting
+## 🏗️ Market Structure, Who's Quoting
 
 A modern Bitcoin market has four classes of participants whose interactions determine price:
 
@@ -253,7 +253,7 @@ A modern Bitcoin market has four classes of participants whose interactions dete
 | **Arbitrageurs** | Trade price discrepancies across venues / products | Seconds to hours |
 | **Institutional asset managers** | Build / rebalance long-term positions via OTC + ETFs | Months to years |
 
-**Market makers** are typically paid via **maker rebates** — exchanges pay them a small rebate (e.g., -0.01%) for posting limit orders that add liquidity (the "maker" side), while charging fees (0.02-0.10%) to traders who take liquidity (the "taker" side). The net rebate is how MMs earn their P&L; if they get filled, they immediately hedge into another venue.
+**Market makers** are typically paid via **maker rebates**, exchanges pay them a small rebate (e.g., -0.01%) for posting limit orders that add liquidity (the "maker" side), while charging fees (0.02-0.10%) to traders who take liquidity (the "taker" side). The net rebate is how MMs earn their P&L; if they get filled, they immediately hedge into another venue.
 
 **Arbitrageurs** keep prices coherent across venues. The classic CME-vs-Binance arbitrage: when CME BTC futures trade $200 above Binance spot, arbs short CME / long Binance until prices converge. This is also how spot ETF "creation/redemption" arbitrage keeps IBIT NAV pegged to spot Bitcoin.
 
@@ -269,19 +269,19 @@ A modern Bitcoin market has four classes of participants whose interactions dete
 | "ETFs let you spend Bitcoin" | No. IBIT shares are securities; you can sell them for USD, but you cannot withdraw the underlying BTC. Use self-custody if you want to spend. |
 | "Coinbase Custody = Coinbase the exchange" | No. Coinbase Custody Trust Company (CCTC) is a separate NYDFS-regulated trust company. Bankruptcy-remote from the brokerage. |
 | "Cold storage means USB drive in a safe" | At institutional scale, cold storage = HSMs, geographically distributed key shards, multi-sig quorums, ceremony-based signing. Not a hard drive. |
-| "All CEX hacks were cold-wallet breaches" | No — virtually every major hack was hot-wallet. Cold storage has held up. |
+| "All CEX hacks were cold-wallet breaches" | No, virtually every major hack was hot-wallet. Cold storage has held up. |
 | "CCSS is mandatory" | No. CCSS is voluntary, but institutional custodians and the better exchanges seek it as a market signal. |
 | "On-chain metrics predict price" | They describe network state and have some leading properties. They are not a crystal ball. |
-| "Spot ETF approval changed Bitcoin's price by mechanism X" | Multiple mechanisms — new institutional access, reduced regulatory uncertainty, GBTC discount closure, basis-trade unwind, narrative shift. Don't oversimplify. |
+| "Spot ETF approval changed Bitcoin's price by mechanism X" | Multiple mechanisms, new institutional access, reduced regulatory uncertainty, GBTC discount closure, basis-trade unwind, narrative shift. Don't oversimplify. |
 
 ---
 
 ## ⚠️ Exam Traps to Watch For
 
-1. **CEX vs DEX** — CEX is IOU-custodial; DEX is non-custodial smart-contract.
-2. **CME futures (Dec 2017)** vs **spot BTC ETF (Jan 11, 2024)** — different products, different milestones.
+1. **CEX vs DEX**, CEX is IOU-custodial; DEX is non-custodial smart-contract.
+2. **CME futures (Dec 2017)** vs **spot BTC ETF (Jan 11, 2024)**, different products, different milestones.
 3. **Multi-sig ≠ MPC.** Different cryptographic primitives.
-4. **Hot/warm/cold wallet hierarchy** — 80-95% should be cold.
+4. **Hot/warm/cold wallet hierarchy**, 80-95% should be cold.
 5. **CCSS has 3 levels.** Level 3 is qualified-custodian-grade.
 6. **Qualified custodian** is a regulatory term (Investment Advisers Act Rule 206(4)-2). Not all custodians qualify.
 7. **MVRV >3.7 historically = top; <1.0 historically = bottom.** These are not laws; they're empirical bands.
@@ -308,7 +308,7 @@ A modern Bitcoin market has four classes of participants whose interactions dete
 | **Multi-sig** | M-of-N pubkeys at the Bitcoin Script layer |
 | **MPC / TSS** | Multi-Party Computation; single key split into N cryptographic shares |
 | **GG18 / FROST** | Threshold signature schemes |
-| **Qualified custodian** | Regulatory term — bank or trust company per Advisers Act 206(4)-2 |
+| **Qualified custodian** | Regulatory term, bank or trust company per Advisers Act 206(4)-2 |
 | **CCSS** | CryptoCurrency Security Standard (C4, 2015); 3 levels |
 | **MVRV / SOPR / HODL waves / Realized cap / Exchange netflow** | The five major on-chain metrics |
 | **Authorized Participant (AP)** | ETF wholesaler who creates/redeems shares |
@@ -321,7 +321,7 @@ A modern Bitcoin market has four classes of participants whose interactions dete
 You now know:
 
 - 🏛️ The CEX vs DEX architecture and the "not your keys, not your coins" rule
-- 📊 Spot, futures, and perpetuals — three layers; perpetuals use funding rates
+- 📊 Spot, futures, and perpetuals, three layers; perpetuals use funding rates
 - 💼 OTC desks, where the institutional iceberg moves
 - 🔐 Custodial vs self-custody; hot/warm/cold hierarchy
 - 🔑 The crucial distinction between multi-sig (Script) and MPC (cryptographic key splitting)
@@ -329,7 +329,7 @@ You now know:
 - 📜 CCSS Levels 1, 2, 3
 - 📈 The five major on-chain metrics: MVRV, SOPR, HODL waves, realized cap, exchange netflow
 - 💼 The IBIT case and the January 11, 2024 spot-ETF launch
-- 🧮 Market structure — market makers, arbs, APs, the post-2024 institutional market
+- 🧮 Market structure, market makers, arbs, APs, the post-2024 institutional market
 
 **Next steps:**
 1. 🎥 Watch [Videos.md](./Videos.md)
@@ -340,13 +340,13 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 10 zooms out to the broader blockchain ecosystem (Ethereum, rollups, DeFi, stablecoins) — most of which depends on institutional custody primitives covered here. The Capstone Project requires an end-to-end custody architecture you must defend.
+> - Inside this course: Module 10 zooms out to the broader blockchain ecosystem (Ethereum, rollups, DeFi, stablecoins), most of which depends on institutional custody primitives covered here. The Capstone Project requires an end-to-end custody architecture you must defend.
 > - Cross-course: `04-AWS-Solutions-Architect-Associate` Module-09 (Security & Identity) overlaps on HSM design; `09-CompTIA-Security-Plus` Module-08 (Cryptographic Solutions) overlaps on threshold cryptography.
 > - Practice: Practice Exam 2 has 6-8 questions on custody, ETFs, and on-chain analytics. Final Mock has scenario questions on architecting custody for an institutional client.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The custodian-concentration problem.** Eight of eleven U.S. spot Bitcoin ETFs use Coinbase Custody. From a systemic-risk standpoint, this is more concentrated than the equity-ETF custodian landscape (where BNY Mellon, State Street, and JPM split flow). Build the strongest case that this is acceptable AND the strongest case that the SEC should have demanded custodian diversity as a condition of approval. Which would you defend?
 2. **MPC vs multi-sig for a $500M corporate treasury.** A CFO asks you to choose between (a) BitGo MPC with 3-of-5 employee approvals, or (b) Casa multi-sig with 3-of-5 hardware wallets distributed across executives + a recovery key with a lawyer. List the failure modes for each. What's the org-design implication of choosing one over the other?
@@ -358,17 +358,17 @@ You now know:
 
 ## 📚 Further Reading
 
-- 📖 **Antonopoulos — *Mastering Bitcoin* 2e** Chapter 4 (Keys, Addresses) revisits multi-sig; appendix on custody architecture.
+- 📖 **Antonopoulos, *Mastering Bitcoin* 2e** Chapter 4 (Keys, Addresses) revisits multi-sig; appendix on custody architecture.
 - 📰 **SEC Order Approving Spot Bitcoin ETFs**, Release No. 34-99306, January 10, 2024. The actual approval document.
 - 📰 ***Grayscale Investments v. SEC***, D.C. Circuit No. 22-1142, August 29, 2023. The decision that broke the dam.
 - 📰 **CryptoCurrency Security Standard (CCSS) v8.0** at cryptoconsortium.org.
-- 📰 **Coinbase Custody whitepapers** — particularly the 2020 cold-storage architecture paper.
+- 📰 **Coinbase Custody whitepapers**, particularly the 2020 cold-storage architecture paper.
 - 📰 **BlackRock IBIT Prospectus**, S-1 filed June 2023; effective January 2024 at sec.gov/Archives/edgar.
-- 📰 **Fidelity Digital Assets — *Bitcoin First* (2022) and *Institutional Investor Digital Assets Survey* (annual, 2021-2025).**
-- 📰 **Glassnode — On-chain analysis methodology** at insights.glassnode.com.
-- 📰 **Gennaro & Goldfeder — *Fast Multiparty Threshold ECDSA with Fast Trustless Setup* (CCS 2018)** — the GG18 protocol.
-- 📰 **Komlo & Goldberg — *FROST: Flexible Round-Optimized Schnorr Threshold Signatures* (2020).**
-- 📰 **Jameson Lopp — *bitcoin-security checklist*** at lopp.net.
-- 📰 **CME Group — Bitcoin futures launch announcement (December 17, 2017).**
-- 🎓 **MIT 15.S12 — Lecture 9** (Exchanges and Custody).
-- 🎓 **Princeton COS-597K — Bitcoin & Cryptocurrencies** — Lectures on market microstructure.
+- 📰 **Fidelity Digital Assets, *Bitcoin First* (2022) and *Institutional Investor Digital Assets Survey* (annual, 2021-2025).**
+- 📰 **Glassnode, On-chain analysis methodology** at insights.glassnode.com.
+- 📰 **Gennaro & Goldfeder *Fast Multiparty Threshold ECDSA with Fast Trustless Setup* (CCS 2018)** the GG18 protocol.
+- 📰 **Komlo & Goldberg, *FROST: Flexible Round-Optimized Schnorr Threshold Signatures* (2020).**
+- 📰 **Jameson Lopp, *bitcoin-security checklist*** at lopp.net.
+- 📰 **CME Group, Bitcoin futures launch announcement (December 17, 2017).**
+- 🎓 **MIT 15.S12, Lecture 9** (Exchanges and Custody).
+- 🎓 **Princeton COS-597K Bitcoin & Cryptocurrencies** Lectures on market microstructure.

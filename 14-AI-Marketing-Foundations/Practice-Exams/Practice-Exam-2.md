@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AI Digital Marketing Foundations (All 10 Modules)
+# 🧪 Practice Exam 2, AI Digital Marketing Foundations (All 10 Modules)
 
 > **Conditions:** Set a 70-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 38/50 (75%)
@@ -285,7 +285,7 @@ C. €500M
 D. €5 billion
 
 ### 47. The Apple Card / Goldman Sachs episode (2019) is most cited as a study of:
-A. *Perceived* algorithmic discrimination — even where statistical bias was investigated and not proven
+A. *Perceived* algorithmic discrimination, even where statistical bias was investigated and not proven
 B. Successful credit underwriting
 C. AI hiring bias
 D. Email deliverability
@@ -296,7 +296,7 @@ B. Add more tools indiscriminately
 C. A stack audit (cancel bottom 20% by ROI)
 D. Increase per-seat pricing
 
-### 49. Make.com vs Zapier — the typical differentiator is:
+### 49. Make.com vs Zapier, the typical differentiator is:
 A. They are identical
 B. Make is visual + handles complex multi-step scenarios; Zapier has more app integrations + is simpler
 C. Make is only for engineers
@@ -330,12 +330,12 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 ## 📖 Detailed answer rationales
 
 ### Q1. Answer: C
-**Why C is correct.** The DMA's *Marketer Email Tracker* has put email ROI at $36 per $1 spent for over a decade — consistent across DMA, Litmus, and HubSpot studies.
+**Why C is correct.** The DMA's *Marketer Email Tracker* has put email ROI at $36 per $1 spent for over a decade, consistent across DMA, Litmus, and HubSpot studies.
 **Why the others are wrong.**
 - A: $5 per $1 understates dramatically.
 - B: $12 is a misremembered figure.
 - D: $200 is implausible.
-**Exam-takeaway.** $36 per $1 — the most-quoted email-ROI statistic. Memorize.
+**Exam-takeaway.** $36 per $1, the most-quoted email-ROI statistic. Memorize.
 
 ### Q2. Answer: C
 **Why C is correct.** SPF, DKIM, DMARC are the three DNS-based email-authentication standards required for inbox placement; Gmail/Yahoo's Feb 2024 enforcement made them mandatory for bulk senders.
@@ -346,7 +346,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** SPF (path) + DKIM (signature) + DMARC (policy) = the deliverability trio.
 
 ### Q3. Answer: A
-**Why A is correct.** Gmail and Yahoo's Feb 2024 enforcement requires a complaint rate below 0.3% — exceeding this gets your domain deliverability cut.
+**Why A is correct.** Gmail and Yahoo's Feb 2024 enforcement requires a complaint rate below 0.3%, exceeding this gets your domain deliverability cut.
 **Why the others are wrong.**
 - B: <0.1% would be ideal but isn't the enforcement threshold.
 - C: <1% is too lenient.
@@ -354,7 +354,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** 0.3% complaint-rate ceiling. Above that = deliverability collapse.
 
 ### Q4. Answer: C
-**Why C is correct.** Drip campaigns are time-based linear sequences — Day 1 welcome, Day 3 tip, Day 7 offer, regardless of subscriber behavior.
+**Why C is correct.** Drip campaigns are time-based linear sequences, Day 1 welcome, Day 3 tip, Day 7 offer, regardless of subscriber behavior.
 **Why the others are wrong.**
 - A: That's lifecycle marketing, not drip.
 - B: Drips work in both B2B and B2C.
@@ -370,7 +370,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** Post-iOS-15: trust click rate, not open rate.
 
 ### Q6. Answer: A
-**Why A is correct.** Klaviyo's product is built around native Shopify (and BigCommerce, etc.) data sync + e-commerce-specific predictive analytics — they own the Shopify ESP space.
+**Why A is correct.** Klaviyo's product is built around native Shopify (and BigCommerce, etc.) data sync + e-commerce-specific predictive analytics, they own the Shopify ESP space.
 **Why the others are wrong.**
 - B: Salesforce-stack enterprise = Salesforce Marketing Cloud or Pardot.
 - C: Klaviyo isn't government-focused.
@@ -380,7 +380,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 ### Q7. Answer: A
 **Why A is correct.** Modern ad auctions (Google, Meta, TikTok, LinkedIn) all follow Bid × Ad Quality × User Signals → winner. The winner pays slightly more than the second-highest score, not their full bid.
 **Why the others are wrong.**
-- B: Higher bid alone doesn't win — quality matters.
+- B: Higher bid alone doesn't win, quality matters.
 - C: Random selection is wrong.
 - D: "Creative votes" isn't a real auction mechanic.
 **Exam-takeaway.** Auctions are quality-adjusted, not pure-bid. Improve relevance + landing-page experience + CTR to lower CPC.
@@ -410,7 +410,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** CAPI = Meta's iOS-14.5 workaround. Concept exists at Google (Enhanced Conversions) and TikTok (Events API) too.
 
 ### Q11. Answer: A
-**Why A is correct.** eMarketer projected US Retail Media Network spend to exceed $100 billion in 2025 — the fastest-growing digital ad category.
+**Why A is correct.** eMarketer projected US Retail Media Network spend to exceed $100 billion in 2025, the fastest-growing digital ad category.
 **Why the others are wrong.**
 - B: $10B was 2022-ish.
 - C: $1B is pre-RMN era.
@@ -420,13 +420,13 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 ### Q12. Answer: A
 **Why A is correct.** Wayfair's public PMax case (Google Marketing Live + trade press) reported ~13% incremental conversion lift and ~25% CAC improvement.
 **Why the others are wrong.**
-- B: PMax delivered meaningful lift — 0% is wrong.
+- B: PMax delivered meaningful lift, 0% is wrong.
 - C: 50% revenue drop never happened.
 - D: PMax can cannibalize branded search but Wayfair managed it.
 **Exam-takeaway.** Wayfair PMax = 13% lift + 25% CAC improvement. The canonical enterprise case.
 
 ### Q13. Answer: D
-**Why D is correct.** Universal Analytics was sunset July 1, 2023 — it stopped processing data on that date. GA4 is the only Google Analytics version since.
+**Why D is correct.** Universal Analytics was sunset July 1, 2023, it stopped processing data on that date. GA4 is the only Google Analytics version since.
 **Why the others are wrong.**
 - A: January 1, 2022 = too early.
 - B: UA is not still active in 2026.
@@ -434,7 +434,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** UA sunset = July 1, 2023. GA4 only since.
 
 ### Q14. Answer: D
-**Why D is correct.** GA4's data model is event-based — pageviews, sessions, and conversions are all *types of events*. UA's session-centric model is gone.
+**Why D is correct.** GA4's data model is event-based, pageviews, sessions, and conversions are all *types of events*. UA's session-centric model is gone.
 **Why the others are wrong.**
 - A: Pageview is just one type of event in GA4.
 - B: Session still exists but is no longer the core unit.
@@ -474,13 +474,13 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 ### Q19. Answer: D
 **Why D is correct.** Robyn is Meta's open-source MMM library (2021).
 **Why the others are wrong.**
-- A: Atlas was Meta's old attribution tool — discontinued.
+- A: Atlas was Meta's old attribution tool, discontinued.
 - B: Meridian is Google's MMM (cross-trap).
 - C: Looker is dashboards, not MMM.
 **Exam-takeaway.** Robyn = Meta. Meridian = Google. Both free, both open-source, both 2026 must-knows.
 
 ### Q20. Answer: D
-**Why D is correct.** New Coke (1985) is the canonical *measurement error* case study — Coca-Cola measured taste preference but ignored brand identity / ritual / attachment, the variables that actually drove purchase.
+**Why D is correct.** New Coke (1985) is the canonical *measurement error* case study, Coca-Cola measured taste preference but ignored brand identity / ritual / attachment, the variables that actually drove purchase.
 **Why the others are wrong.**
 - A: New Coke was a relaunch *failure*, not success.
 - B: Pre-internet, no email connection.
@@ -491,7 +491,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Why D is correct.** Spotify Wrapped is the visible output of a year-long first-party data + ML personalization stack. Most of Spotify's measurement work is invisible.
 **Why the others are wrong.**
 - A: Wrapped is not just an email campaign.
-- B: It's been annual since 2016 — not short-lived.
+- B: It's been annual since 2016, not short-lived.
 - C: It's not paid ads.
 **Exam-takeaway.** Wrapped = tip of the iceberg. Data-driven marketing reference architecture.
 
@@ -504,7 +504,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** "4% global revenue OR €20M, whichever higher." Most-quoted GDPR number.
 
 ### Q23. Answer: A
-**Why A is correct.** The EU AI Act was passed in March 2024 — the world's first comprehensive AI law.
+**Why A is correct.** The EU AI Act was passed in March 2024, the world's first comprehensive AI law.
 **Why the others are wrong.**
 - B: December 2023 = AI Act *agreement*, but passage was March 2024.
 - C: June 2022 = too early.
@@ -512,11 +512,11 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** EU AI Act passed March 2024. Phased rollout through 2026–2027.
 
 ### Q24. Answer: B
-**Why B is correct.** Most marketing AI (chatbots, AI-generated content, deepfakes used in ads) falls into *Limited Risk* under the EU AI Act — disclosure is mandatory.
+**Why B is correct.** Most marketing AI (chatbots, AI-generated content, deepfakes used in ads) falls into *Limited Risk* under the EU AI Act, disclosure is mandatory.
 **Why the others are wrong.**
-- A: Unacceptable = social scoring, real-time biometric ID — not marketing.
-- C: High-risk = hiring, credit, education admission, law enforcement — not most marketing AI.
-- D: Minimal risk = spam filters, video games — not customer-facing AI marketing.
+- A: Unacceptable = social scoring, real-time biometric ID, not marketing.
+- C: High-risk = hiring, credit, education admission, law enforcement, not most marketing AI.
+- D: Minimal risk = spam filters, video games, not customer-facing AI marketing.
 **Exam-takeaway.** Marketing AI = Limited Risk = disclosure required.
 
 ### Q25. Answer: D
@@ -528,7 +528,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** CCPA = 50K; CPRA = 100K. Plus $25M revenue threshold separately.
 
 ### Q26. Answer: D
-**Why D is correct.** COPPA (Children's Online Privacy Protection Act, 1998) protects under-13s' personal information — requires verifiable parental consent.
+**Why D is correct.** COPPA (Children's Online Privacy Protection Act, 1998) protects under-13s' personal information, requires verifiable parental consent.
 **Why the others are wrong.**
 - A: EU citizens = GDPR territory.
 - B: All US consumers = no federal omnibus US privacy law (yet).
@@ -536,7 +536,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** COPPA = under-13s. YouTube paid $170M in 2019 for violations.
 
 ### Q27. Answer: D
-**Why D is correct.** Gender Shades (Buolamwini, MIT Media Lab, 2018) showed commercial facial-recognition error rates were 0.8% on light-skinned men vs 34.7% on dark-skinned women — kickstarting modern AI-bias research.
+**Why D is correct.** Gender Shades (Buolamwini, MIT Media Lab, 2018) showed commercial facial-recognition error rates were 0.8% on light-skinned men vs 34.7% on dark-skinned women, kickstarting modern AI-bias research.
 **Why the others are wrong.**
 - A: LLM safety came later.
 - B: Programmatic ad fraud is unrelated.
@@ -552,7 +552,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** Memorize the five-layer 2026 strategic answer.
 
 ### Q29. Answer: C
-**Why C is correct.** Segment is the canonical Customer Data Platform (CDP) — unifies first-party data across channels into a central customer profile.
+**Why C is correct.** Segment is the canonical Customer Data Platform (CDP), unifies first-party data across channels into a central customer profile.
 **Why the others are wrong.**
 - A: ESP = email senders (Mailchimp, Klaviyo).
 - B: CRM = Salesforce, HubSpot.
@@ -584,7 +584,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** Mailchimp + Intuit + 2021 + $12B. Decade-defining marketing M&A.
 
 ### Q33. Answer: D
-**Why D is correct.** Notion sits in the stack as knowledge management / second brain / project hub — Stripe's company-wide hub follows this pattern.
+**Why D is correct.** Notion sits in the stack as knowledge management / second brain / project hub, Stripe's company-wide hub follows this pattern.
 **Why the others are wrong.**
 - A: Notion isn't a CRM (though some teams misuse it that way).
 - B: Notion can't send transactional email at scale.
@@ -592,7 +592,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** Notion = knowledge hub. Stripe, Lenny Rachitsky, and most 2026 stacks center on it.
 
 ### Q34. Answer: D
-**Why D is correct.** ChatGPT was publicly launched on November 30, 2022 — the fastest-growing consumer app in history (100M users in 2 months per UBS).
+**Why D is correct.** ChatGPT was publicly launched on November 30, 2022, the fastest-growing consumer app in history (100M users in 2 months per UBS).
 **Why the others are wrong.**
 - A: May 2020 = GPT-3, not ChatGPT.
 - B: March 2024 is way off.
@@ -608,7 +608,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** Second brain = Tiago Forte. The PKM canon.
 
 ### Q36. Answer: A
-**Why A is correct.** Microsoft Clarity is the free Microsoft-stack alternative to Hotjar — both offer heatmaps + session replay.
+**Why A is correct.** Microsoft Clarity is the free Microsoft-stack alternative to Hotjar, both offer heatmaps + session replay.
 **Why the others are wrong.**
 - B: SharePoint = document collaboration.
 - C: Power BI = dashboards (Tableau alternative, not Hotjar).
@@ -616,7 +616,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** Microsoft Clarity = free Hotjar alternative. Don't pay for heatmaps you can get free.
 
 ### Q37. Answer: C
-**Why C is correct.** MMM is aggregate-level (weekly or monthly spend × outcome) — doesn't need cookies, doesn't need user IDs. That's why it's the 2024–2026 comeback star.
+**Why C is correct.** MMM is aggregate-level (weekly or monthly spend × outcome), doesn't need cookies, doesn't need user IDs. That's why it's the 2024–2026 comeback star.
 **Why the others are wrong.**
 - A: User-level tracking is precisely what MMM *avoids*.
 - B: MMM works for B2C and B2B.
@@ -624,7 +624,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** MMM = aggregate + econometric + cookie-resilient.
 
 ### Q38. Answer: C
-**Why C is correct.** ElevenLabs is the leading AI voice / audio tool — TTS, voice cloning, multilingual voice work.
+**Why C is correct.** ElevenLabs is the leading AI voice / audio tool, TTS, voice cloning, multilingual voice work.
 **Why the others are wrong.**
 - A: Image generation = Midjourney, DALL-E, Firefly.
 - B: ElevenLabs isn't a PM tool.
@@ -632,7 +632,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** ElevenLabs = voice. The most-cited 2026 AI voice tool.
 
 ### Q39. Answer: C
-**Why C is correct.** Google's Helpful Content guidance reduces to: "Does a human reader feel the page provides unique value?" — yes = fine, AI-assisted or not; no = penalized.
+**Why C is correct.** Google's Helpful Content guidance reduces to: "Does a human reader feel the page provides unique value?", yes = fine, AI-assisted or not; no = penalized.
 **Why the others are wrong.**
 - A: Plagiarism checkers don't catch AI slop.
 - B: Word count isn't the criterion.
@@ -648,11 +648,11 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** AI translation + native review = production-grade. Pure-AI = first draft only.
 
 ### Q41. Answer: A
-**Why A is correct.** Anthropic's safety approach is called Constitutional AI — a written set of principles guides model behavior during training (RLAIF technique).
+**Why A is correct.** Anthropic's safety approach is called Constitutional AI, a written set of principles guides model behavior during training (RLAIF technique).
 **Why the others are wrong.**
-- B: "Reinforcement Tuning" — not a real Anthropic term.
+- B: "Reinforcement Tuning", not a real Anthropic term.
 - C: Rule-Based AI is a 1980s expert-systems approach, not Anthropic's.
-- D: "Principled Learning" — invented.
+- D: "Principled Learning", invented.
 **Exam-takeaway.** Constitutional AI = Anthropic = the most-cited AI safety reference.
 
 ### Q42. Answer: B
@@ -686,7 +686,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** RMNs are the growth category. Amazon Ads is the anchor.
 
 ### Q46. Answer: B
-**Why B is correct.** Meta's May 2023 GDPR fine for transferring EU data to the US was approximately €1.2 billion — the largest GDPR fine to date.
+**Why B is correct.** Meta's May 2023 GDPR fine for transferring EU data to the US was approximately €1.2 billion, the largest GDPR fine to date.
 **Why the others are wrong.**
 - A: €100M would be a smaller fine (Amazon Lux was ~€750M).
 - C: €500M is wrong magnitude.
@@ -694,7 +694,7 @@ D. Master a small stack, build a prompt + asset library, automate compounding wo
 **Exam-takeaway.** Meta = €1.2B = largest GDPR fine. May 2023.
 
 ### Q47. Answer: A
-**Why A is correct.** The 2019 Apple Card / Goldman Sachs case became a study in *perceived* algorithmic discrimination — the NY Department of Financial Services investigated and ultimately found no statistical bias.
+**Why A is correct.** The 2019 Apple Card / Goldman Sachs case became a study in *perceived* algorithmic discrimination, the NY Department of Financial Services investigated and ultimately found no statistical bias.
 **Why the others are wrong.**
 - B: Wasn't "successful underwriting."
 - C: Wasn't hiring bias.
@@ -749,4 +749,4 @@ For EACH wrong answer:
 
 ---
 
-➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md) — 60 questions, 90 minutes, the certification exam
+➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md), 60 questions, 90 minutes, the certification exam

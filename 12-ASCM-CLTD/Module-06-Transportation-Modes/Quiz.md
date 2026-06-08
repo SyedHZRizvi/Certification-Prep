@@ -7,7 +7,7 @@
 
 ## Questions
 
-### Q1. A shipper has 15 pallets totaling 28,000 lbs going from Chicago to Dallas — one origin, one destination. Best mode: *(Apply)*
+### Q1. A shipper has 15 pallets totaling 28,000 lbs going from Chicago to Dallas, one origin, one destination. Best mode: *(Apply)*
 A. LTL
 B. FTL
 C. Parcel
@@ -87,7 +87,7 @@ D. Containers
 
 ---
 
-### Q11. Rail vs Truck — rail is approximately how much more fuel-efficient (ton-miles per gallon)? *(Remember)*
+### Q11. Rail vs Truck, rail is approximately how much more fuel-efficient (ton-miles per gallon)? *(Remember)*
 A. 0.5×
 B. 1×
 C. 3–4×
@@ -213,7 +213,7 @@ D. The carrier's marketing
 15 pallets / 28,000 lbs / one origin / one destination = textbook FTL.
 
 ### Q2: **B. LTL**
-600 lbs × 2 = 1,200 lbs total. Too big for parcel, too small for FTL — LTL fits.
+600 lbs × 2 = 1,200 lbs total. Too big for parcel, too small for FTL, LTL fits.
 
 ### Q3: **B. Twenty-foot Equivalent Unit**
 TEU = 20' container equivalent. Industry standardization unit.
@@ -243,7 +243,7 @@ Pipelines move oil, gas, refined products, NGL, ammonia. Not for solids.
 Rail ≈ 480 ton-miles/gal; truck ≈ 130. Rail is ~3.7× more fuel-efficient.
 
 ### Q12: **B. Intermodal = standardized equipment; multimodal = single contract**
-Common trap — both involve multiple modes; the difference is *contract structure*.
+Common trap, both involve multiple modes; the difference is *contract structure*.
 
 ### Q13: **B. 11 hours**
 FMCSA HOS: 11-hour driving limit per day; 14-hour duty window; 10 off.
@@ -261,7 +261,7 @@ Asia → USWC typical. East Coast via Panama is 26–35 days.
 Last-mile is the most expensive leg by far due to low drop density and time per stop.
 
 ### Q18: **B. Inject parcel deeper into region**
-Move parcels via LTL/truckload to a deeper hub, then inject — saves per-parcel cost.
+Move parcels via LTL/truckload to a deeper hub, then inject, saves per-parcel cost.
 
 ### Q19: **B. LTL pricing (50–500)**
 NMFC classifies LTL freight by density, value, stowability, handling. Class drives rate.

@@ -26,11 +26,11 @@
 ## 📞 The PACT-O Discovery Framework
 
 ```
-P — Problem        (quantify the pain)
-A — Authority      (who decides?)
-C — Constraints    (budget, timeline, regulatory)
-T — Target outcome (6/12-mo vision)
-O — Other options  (what's been tried + why it failed)
+P, Problem        (quantify the pain)
+A, Authority      (who decides?)
+C, Constraints    (budget, timeline, regulatory)
+T, Target outcome (6/12-mo vision)
+O, Other options  (what's been tried + why it failed)
 ```
 
 🧠 **Buyer talks 70%. Take notes. Don't pitch.**
@@ -69,16 +69,16 @@ NEXT STEPS    [proposal within 48 hr → review call → kickoff]
 ## 🤝 Kickoff Cadence
 
 ```
-Day 0    — Contract signed; deposit invoiced
-Day 1    — Kickoff Loom sent (15 min)
-Day 2    — Kickoff call (45 min)
-Day 3–5  — Intake completed
-Day 6–10 — Build phase
-Day 11   — Mid-build check-in
-Day 12   — First draft delivered
-Day 13–14 — Revisions
-Day 15   — Final delivery + walkthrough Loom
-Day 16+  — Final invoice + upsell window opens
+Day 0   , Contract signed; deposit invoiced
+Day 1   , Kickoff Loom sent (15 min)
+Day 2   , Kickoff call (45 min)
+Day 3–5 , Intake completed
+Day 6–10, Build phase
+Day 11  , Mid-build check-in
+Day 12  , First draft delivered
+Day 13–14, Revisions
+Day 15  , Final delivery + walkthrough Loom
+Day 16+ , Final invoice + upsell window opens
 ```
 
 ---
@@ -99,7 +99,7 @@ METRICS
 - [Number] [Number]
 ```
 
-🎯 **Send every Friday afternoon — even quiet weeks.**
+🎯 **Send every Friday afternoon, even quiet weeks.**
 
 ---
 
@@ -164,7 +164,7 @@ When you see these, they're often **wrong**:
 - ❌ "Quote a price during the call..."
 - ❌ "Wait for the client to reach out..."
 - ❌ "Skip the testimonial ask..."
-- ❌ "No upsell — just deliver and move on..."
+- ❌ "No upsell, just deliver and move on..."
 
 ---
 
@@ -196,4 +196,4 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 > ⚖️ Always confirm legal/contract templates with an attorney before sending real engagements.
 
-➡️ Final step: [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) — 50 Q / 70 min / 75% to pass
+➡️ Final step: [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md), 50 Q / 70 min / 75% to pass

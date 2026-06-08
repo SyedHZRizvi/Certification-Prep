@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Battery Drain Diagnosis — Both Platforms</p>
+      <p class="vg-title">Battery Drain Diagnosis, Both Platforms</p>
       <p class="vg-creator">Dion Training</p>
       <span class="vg-duration">⏱ 9 min · Real symptoms</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">FBI SIM Swap PSA — Real Cases</p>
+      <p class="vg-title">FBI SIM Swap PSA, Real Cases</p>
       <p class="vg-creator">FBI / CISA</p>
       <span class="vg-duration">⏱ 15 min · Why it matters</span>
     </div>

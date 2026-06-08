@@ -7,7 +7,7 @@
 ## ☁️ Architecture
 
 - Admin portal: **intune.microsoft.com**
-- Cloud SaaS — no on-prem servers
+- Cloud SaaS, no on-prem servers
 - Uses each platform's native MDM channel:
 
   - Windows MDM stack
@@ -26,7 +26,7 @@
 | Wipe | Whole device | Only work data |
 | Right for | Corporate-owned | BYOD |
 
-🔥 If only one thing — memorize this table.
+🔥 If only one thing, memorize this table.
 
 ---
 
@@ -106,7 +106,7 @@ The MAM workhorse. Key settings:
 
 | Type | When |
 |------|------|
-| **Settings catalog** | Modern default — thousands of settings |
+| **Settings catalog** | Modern default, thousands of settings |
 | Templates | Wi-Fi, VPN, cert, email, kiosk |
 | Administrative templates (ADMX) | Windows GPO equivalent |
 | Imported ADMX | Custom ADMX files |
@@ -164,9 +164,9 @@ When you see these, often **wrong**:
 Cover the answers, recite:
 
 1. MDM vs MAM in one sentence? ___
-2. Plan 1 vs Plan 2 vs Suite — what does each add? ___
+2. Plan 1 vs Plan 2 vs Suite, what does each add? ___
 3. Apple cert required for iOS management? ___
-4. Exclude vs Include — which wins? ___
+4. Exclude vs Include, which wins? ___
 5. Modern preferred configuration surface? ___
 
 ---

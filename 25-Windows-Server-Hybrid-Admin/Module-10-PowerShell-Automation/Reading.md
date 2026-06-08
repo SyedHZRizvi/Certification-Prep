@@ -1,12 +1,12 @@
 # Module 10: PowerShell, DSC & Automation 🤖
 
-> **Why this module matters:** Automation is the *thread* that runs through every other module. Onboarding 500 servers to Arc, deploying AMA at scale, enforcing security baseline, rotating krbtgt — none of these scale without scripting. The exam directly tests PowerShell 5.1 vs 7 differences, JEA, DSC, and Azure Automation/Automanage; indirectly it tests automation thinking in every drag-drop "complete this command" item. Master this module and you've made the rest of the cert dramatically easier.
+> **Why this module matters:** Automation is the *thread* that runs through every other module. Onboarding 500 servers to Arc, deploying AMA at scale, enforcing security baseline, rotating krbtgt, none of these scale without scripting. The exam directly tests PowerShell 5.1 vs 7 differences, JEA, DSC, and Azure Automation/Automanage; indirectly it tests automation thinking in every drag-drop "complete this command" item. Master this module and you've made the rest of the cert dramatically easier.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - PowerShell basics — pipelines, cmdlet syntax, parameter binding, variables
+> - PowerShell basics, pipelines, cmdlet syntax, parameter binding, variables
 > - WS-Management / WinRM ports (5985/5986)
 > - JSON / YAML for DSC config syntax
-> - Azure Resource Manager basics (resource groups, RBAC) — for Azure Automation
+> - Azure Resource Manager basics (resource groups, RBAC), for Azure Automation
 >
 > If those are shaky, pause and review. This module assumes you can already write `Get-Process | Where-Object Name -eq "explorer" | Stop-Process`.
 
@@ -14,7 +14,7 @@
 
 ## 💻 A Story: From 30-Click Onboarding to 30-Second Onboarding
 
-It's Monday morning at Globex. The IT director has a problem: every new server provisioning takes **30 manual clicks** in the portal + ~12 minutes of admin time. Globex provisions ~40 servers per week. That's 8 hours/week of click-work — half an FTE.
+It's Monday morning at Globex. The IT director has a problem: every new server provisioning takes **30 manual clicks** in the portal + ~12 minutes of admin time. Globex provisions ~40 servers per week. That's 8 hours/week of click-work, half an FTE.
 
 The fix is a 50-line PowerShell script that:
 
@@ -29,7 +29,7 @@ The fix is a 50-line PowerShell script that:
 
 Time per provision drops from 12 minutes to 30 seconds. The half-FTE returns to project work. The CIO writes a "thank you" email and approves the next automation budget.
 
-That story plays out across every Microsoft shop in some form. The exam tests *which automation tool* is the right answer for *which scenario* — PowerShell vs DSC vs Automation Runbook vs Automanage vs Logic App.
+That story plays out across every Microsoft shop in some form. The exam tests *which automation tool* is the right answer for *which scenario*, PowerShell vs DSC vs Automation Runbook vs Automanage vs Logic App.
 
 ---
 
@@ -109,7 +109,7 @@ Enter-PSSession -HostName linuxserver01 -UserName alice -SSHTransport
 ### Build a simple JEA endpoint
 
 ```powershell
-# Step 1: Create role capability — "DNS Operators can manage zones but not service"
+# Step 1: Create role capability, "DNS Operators can manage zones but not service"
 $rcPath = "$env:ProgramFiles\WindowsPowerShell\Modules\DnsOpsJEA\RoleCapabilities\DnsOps.psrc"
 New-Item -ItemType Directory -Path (Split-Path $rcPath) -Force
 
@@ -122,7 +122,7 @@ New-PSRoleCapabilityFile -Path $rcPath `
 ```
 
 ```powershell
-# Step 2: Create session config — map AD group to role capability
+# Step 2: Create session config, map AD group to role capability
 $psscPath = "C:\temp\DnsOps.pssc"
 
 New-PSSessionConfigurationFile -Path $psscPath `
@@ -200,14 +200,14 @@ Start-DscConfiguration -Path C:\DSC -ComputerName WEB01 -Wait -Verbose
 
 | Mode | How |
 |------|-----|
-| **Push** | Admin runs `Start-DscConfiguration` against targets — simple but admin-initiated |
-| **Pull** | Target's LCM pulls config from a Pull Server on a schedule (every 30 min by default) — scales better, supports drift correction |
+| **Push** | Admin runs `Start-DscConfiguration` against targets, simple but admin-initiated |
+| **Pull** | Target's LCM pulls config from a Pull Server on a schedule (every 30 min by default), scales better, supports drift correction |
 
 ### DSC v2 → Azure Machine Configuration (replaced Azure Automation DSC in 2023)
 
 | | Azure Automation DSC | **Azure Machine Configuration** (current) |
 |---|---------------------|-------------------------------------------|
-| Status | Retired (Sept 2023) | Active — part of Azure Policy guest configuration |
+| Status | Retired (Sept 2023) | Active, part of Azure Policy guest configuration |
 | Scope | Azure-only | Azure + **Arc-enabled servers** |
 | Engine | DSC v1 (Windows PowerShell 5.1) | DSC v3 (cross-platform) |
 | Authoring | PowerShell DSC | PowerShell DSC v3 or guest config packages |
@@ -270,11 +270,11 @@ Lets you run a runbook *on* an on-prem or Arc machine instead of in Azure's sand
 
 | Profile | Best for |
 |---------|----------|
-| **Production** | Production workloads — enables Backup, Update Mgmt, Defender, Change Tracking, MAA |
+| **Production** | Production workloads, enables Backup, Update Mgmt, Defender, Change Tracking, MAA |
 | **Dev/Test** | Lower-fidelity, doesn't enable Backup |
 | **Custom profile** | Tailor to your standards |
 
-Onboard a VM with one click — Automanage handles ongoing service-enablement and drift correction.
+Onboard a VM with one click, Automanage handles ongoing service-enablement and drift correction.
 
 ```bash
 # Onboard a VM to Automanage with the Production profile
@@ -351,17 +351,17 @@ New-AzVM -ResourceGroupName "rg-test" -Name "TestVM01" -Image "Win2022Datacenter
 8. ✅ Monitor compliance in Azure Policy → Compliance pane
 9. ✅ Adjust policy as needed; redeploy
 
-⚠️ Skipping step 3 (signing) is the #1 mistake at scale — unsigned packages may fail to apply if WDAC or signed-only execution policies are in place.
+⚠️ Skipping step 3 (signing) is the #1 mistake at scale, unsigned packages may fail to apply if WDAC or signed-only execution policies are in place.
 
 ---
 
-## 📊 Case Study — How GitHub Builds Its 50,000-Server Infrastructure with Code
+## 📊 Case Study, How GitHub Builds Its 50,000-Server Infrastructure with Code
 
 **Situation.** GitHub, owned by Microsoft since 2018, runs its global infrastructure on ~50,000 servers across multiple data centers and clouds. Every day, GitHub deploys ~100 production changes to that infrastructure. By 2022, GitHub had moved entirely to an **infrastructure-as-code** model: every server's config, every firewall rule, every CDN setting, every DNS record is defined in version-controlled Terraform / DSC / Ansible files, peer-reviewed via PRs, and applied via automated runners.
 
 **Decision.** GitHub's IaC philosophy (publicly documented in *GitHub's Engineering Blog: Production-quality infrastructure with Terraform*, July 2022):
 
-1. **Everything is code.** A server config that's not in git isn't a config — it's a manual artifact and will drift.
+1. **Everything is code.** A server config that's not in git isn't a config, it's a manual artifact and will drift.
 2. **Drift detection runs every 10 minutes.** Any DSC / Terraform `plan` mismatch creates a Slack alert and an automatic PR.
 3. **Approval gates for sensitive changes.** Production AD/Tier-0 changes require 2-of-3 senior approvers + business-hours-only window.
 4. **Audit log of every apply.** Stored in Splunk + GitHub Actions logs for 7 years.
@@ -376,17 +376,17 @@ New-AzVM -ResourceGroupName "rg-test" -Name "TestVM01" -Image "Win2022Datacenter
 
 **Lesson for the exam / for practitioners.** AZ-801 won't ask about GitHub's internals but tests:
 
-- *DSC at scale* — Azure Machine Configuration / DSC v3 / guest configuration is GitHub's pattern made small
-- *JEA / RBAC for least privilege* — same philosophy as GitHub's resource-type RBAC
-- *Automation runbooks for routine ops* — startup / shutdown scripts, rotating certs, etc.
-- *Drift detection* — DSC's LCM in pull mode handles this automatically
+- *DSC at scale*, Azure Machine Configuration / DSC v3 / guest configuration is GitHub's pattern made small
+- *JEA / RBAC for least privilege*, same philosophy as GitHub's resource-type RBAC
+- *Automation runbooks for routine ops*, startup / shutdown scripts, rotating certs, etc.
+- *Drift detection*, DSC's LCM in pull mode handles this automatically
 
 The exam will phrase: *"How do you ensure all 200 production Windows Servers have IIS installed and W3SVC running, with automatic correction if state drifts?"* → **DSC in pull mode** or **Azure Machine Configuration via Azure Policy DINE**.
 
 **Discussion (Socratic).**
 - **Q1.** GitHub's "everything is code" requires every engineer to learn Terraform/DSC. The cultural transition is the hardest part. Build the case for the 6-week training plan to bring a 50-engineer ops team to IaC fluency, and identify the *single* skill that gates the rest (hint: git workflow, including PR review).
 - **Q2.** JEA at scale (thousands of role capabilities) becomes its own management problem. Build the case that **fewer, broader role definitions** + **PIM activation for sensitive ones** beats hyper-granular JEA-everywhere. Where does the simplicity-vs-least-privilege trade-off live?
-- **Q3.** DSC drift detection at 10-minute intervals catches deliberate manual changes — but engineers will argue "sometimes I need to make a quick fix during an outage." Build the policy: when is manual change *ever* allowed (probably "outage-only with retroactive PR within 24 hours"), and how do you enforce the retroactive PR requirement?
+- **Q3.** DSC drift detection at 10-minute intervals catches deliberate manual changes, but engineers will argue "sometimes I need to make a quick fix during an outage." Build the policy: when is manual change *ever* allowed (probably "outage-only with retroactive PR within 24 hours"), and how do you enforce the retroactive PR requirement?
 
 ---
 
@@ -411,19 +411,19 @@ The exam will phrase: *"How do you ensure all 200 production Windows Servers hav
 
 | Term | Definition |
 |------|------------|
-| **Windows PowerShell 5.1** | `powershell.exe` — legacy, Windows-only, .NET Framework |
-| **PowerShell 7** | `pwsh.exe` — current, cross-platform, .NET |
+| **Windows PowerShell 5.1** | `powershell.exe`, legacy, Windows-only, .NET Framework |
+| **PowerShell 7** | `pwsh.exe`, current, cross-platform, .NET |
 | **WSMan** | WS-Management protocol (PSRemoting transport) |
 | **Implicit remoting** | Import remote module into local session |
-| **JEA** | Just Enough Administration — constrained remoting endpoints |
-| **Role Capability File** | `.psrc` — what cmdlets/parameters are allowed |
-| **Session Configuration File** | `.pssc` — maps AD groups to role capabilities |
+| **JEA** | Just Enough Administration, constrained remoting endpoints |
+| **Role Capability File** | `.psrc`, what cmdlets/parameters are allowed |
+| **Session Configuration File** | `.pssc`, maps AD groups to role capabilities |
 | **Virtual Account** | Per-session elevated identity for JEA |
 | **DSC** | Desired State Configuration |
 | **MOF** | Compiled DSC output format |
 | **LCM** | Local Configuration Manager (the DSC engine on each node) |
 | **Pull / Push mode** | DSC distribution patterns |
-| **Azure Machine Configuration** | Replaces Azure Automation DSC (2023) — Azure + Arc |
+| **Azure Machine Configuration** | Replaces Azure Automation DSC (2023), Azure + Arc |
 | **Azure Automation** | Runbooks + schedules + modules + credentials |
 | **Hybrid Runbook Worker** | Runs runbooks on-prem (legacy) |
 | **Runbook extension on Arc** | Modern equivalent |
@@ -435,13 +435,13 @@ The exam will phrase: *"How do you ensure all 200 production Windows Servers hav
 
 You now know:
 
-- 🐚 PowerShell 5.1 vs 7 — coexist; pick 7 for cross-platform / new development
+- 🐚 PowerShell 5.1 vs 7, coexist; pick 7 for cross-platform / new development
 - 🌐 PowerShell Remoting via WSMan 5985/5986 (or SSH on PS 7)
-- 🚧 JEA — role-capability-based constrained endpoints with virtual accounts
-- 📜 DSC — declarative config, Push vs Pull, LCM
+- 🚧 JEA, role-capability-based constrained endpoints with virtual accounts
+- 📜 DSC, declarative config, Push vs Pull, LCM
 - 🆕 Azure Machine Configuration replaces Azure Automation DSC (2023)
-- ☁️ Azure Automation — runbooks, schedules, Hybrid Runbook Worker
-- 🪄 Azure Automanage — best-practice service auto-enablement
+- ☁️ Azure Automation, runbooks, schedules, Hybrid Runbook Worker
+- 🪄 Azure Automanage, best-practice service auto-enablement
 - 📜 Top admin cmdlets per module (AD, DNS, DHCP, Hyper-V, Az)
 - 🚨 The 10 most common exam traps in this domain
 
@@ -461,24 +461,24 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **PowerShell 5.1 retirement.** Microsoft has signaled that 5.1 is "complete" — security fixes only, no new features. Build the case for proactively migrating internal scripts to 7 (cross-platform, performance, async support) vs the cost of 5.1's stability and rare module incompatibilities. What's the realistic migration timeline for a 20K-script enterprise estate?
-2. **JEA depth — how granular?** A naive JEA implementation has one role capability per cmdlet (hyper-granular). A pragmatic implementation groups cmdlets by job function. Defend the **functional-grouping** approach and identify the workload class where hyper-granular is genuinely needed (hint: regulated, separation-of-duties).
+1. **PowerShell 5.1 retirement.** Microsoft has signaled that 5.1 is "complete", security fixes only, no new features. Build the case for proactively migrating internal scripts to 7 (cross-platform, performance, async support) vs the cost of 5.1's stability and rare module incompatibilities. What's the realistic migration timeline for a 20K-script enterprise estate?
+2. **JEA depth, how granular?** A naive JEA implementation has one role capability per cmdlet (hyper-granular). A pragmatic implementation groups cmdlets by job function. Defend the **functional-grouping** approach and identify the workload class where hyper-granular is genuinely needed (hint: regulated, separation-of-duties).
 3. **DSC vs Group Policy.** GPO still does most of what DSC does for Windows. Build the case for DSC: cross-platform (Linux too), declarative drift detection, version-controlled config, integration with Azure. Then identify the workloads where GPO remains the right answer.
 4. **Azure Automation vs GitHub Actions vs Logic Apps.** All three can run scheduled code in Azure. Defend Automation (PowerShell-native, runbook gallery, hybrid worker), Actions (developer-friendly, deep git integration), Logic Apps (low-code, business-user-friendly). What's the per-workflow decision matrix?
-5. **Automanage adoption.** Automanage auto-enables Backup, Defender, Update Mgmt, etc. on a VM — costs ~$1/VM/month for the profile. Build the case for and against fleet-wide Automanage vs hand-rolled policy enforcement. When does each win for a 5,000-VM enterprise?
+5. **Automanage adoption.** Automanage auto-enables Backup, Defender, Update Mgmt, etc. on a VM, costs ~$1/VM/month for the profile. Build the case for and against fleet-wide Automanage vs hand-rolled policy enforcement. When does each win for a 5,000-VM enterprise?
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Microsoft Learn — PowerShell documentation](https://learn.microsoft.com/powershell/scripting/overview)
-- 📖 [PowerShell 7 — What's new](https://learn.microsoft.com/powershell/scripting/whats-new/what-s-new-in-powershell-70)
+- 📖 [Microsoft Learn, PowerShell documentation](https://learn.microsoft.com/powershell/scripting/overview)
+- 📖 [PowerShell 7, What's new](https://learn.microsoft.com/powershell/scripting/whats-new/what-s-new-in-powershell-70)
 - 📖 [Just Enough Administration (JEA) overview](https://learn.microsoft.com/powershell/scripting/learn/remoting/jea/overview)
 - 📖 [Desired State Configuration overview](https://learn.microsoft.com/powershell/dsc/overview)
 - 📖 [Azure Machine Configuration documentation](https://learn.microsoft.com/azure/governance/machine-configuration/overview)
 - 📖 [Azure Automation documentation](https://learn.microsoft.com/azure/automation/overview)
 - 📖 [Azure Automanage documentation](https://learn.microsoft.com/azure/automanage/overview-about)
-- 📖 Jeffrey Snover, "Monad Manifesto" (2002) — the foundational PowerShell vision document; required cultural reading
-- 📖 Don Jones and Jeffery Hicks, *Learn Windows PowerShell in a Month of Lunches* (4th ed., Manning, 2019) — the canonical PowerShell intro text
+- 📖 Jeffrey Snover, "Monad Manifesto" (2002), the foundational PowerShell vision document; required cultural reading
+- 📖 Don Jones and Jeffery Hicks, *Learn Windows PowerShell in a Month of Lunches* (4th ed., Manning, 2019), the canonical PowerShell intro text

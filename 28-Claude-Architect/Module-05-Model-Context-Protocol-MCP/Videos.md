@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: Model Context Protocol (MCP)
 
-> **How to use:** MCP is newest and shifts most. Bias to Anthropic-channel videos and watch in publication order — the spec evolved through 2025. Build something after the essential block.
+> **How to use:** MCP is newest and shifts most. Bias to Anthropic-channel videos and watch in publication order, the spec evolved through 2025. Build something after the essential block.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Tools / Resources / Prompts — The Three MCP Primitives</p>
+      <p class="vg-title">Tools / Resources / Prompts, The Three MCP Primitives</p>
       <p class="vg-creator">community / Matt Pocock</p>
       <span class="vg-duration">⏱ 12 min · Spec primitives</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">MCP TypeScript SDK — Build a Server</p>
+      <p class="vg-title">MCP TypeScript SDK, Build a Server</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 18 min · TS-flavored</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">stdio vs SSE Transports — Trade-offs</p>
+      <p class="vg-title">stdio vs SSE Transports, Trade-offs</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 12 min · Local vs remote</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Goose — Block's Open-Source MCP-First Agent</p>
+      <p class="vg-title">Goose, Block's Open-Source MCP-First Agent</p>
       <p class="vg-creator">Block</p>
       <span class="vg-duration">⏱ 10 min · Production MCP at scale</span>
     </div>

@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-05-Infographic-Data-Viz/Quiz/
 title: "Module 5 Quiz: Infographic & Data Viz"
 ---
 
-# 🧠 Module 5 Quiz — Infographic & Data Viz
+# 🧠 Module 5 Quiz, Infographic & Data Viz
 
 ### Q1.
 When animating a bar chart in After Effects, the anchor point of each bar should be positioned at:
@@ -48,10 +48,10 @@ D. 100
 ### Q5.
 Which data storytelling principle states that the key insight should appear at approximately what point in the animation's timeline?
 
-A. At the start — front-load the insight  
-B. At the 50% mark — the middle is most memorable  
-C. At the 2/3 mark — after establishing context  
-D. At the very end — save the best for last  
+A. At the start, front-load the insight  
+B. At the 50% mark, the middle is most memorable  
+C. At the 2/3 mark, after establishing context  
+D. At the very end, save the best for last  
 
 ---
 
@@ -68,9 +68,9 @@ D. Generating automated animation rigs for character animation
 ### Q7.
 When using AEJuice presets on a client project, the professional approach is:
 
-A. Use presets as-is — they are designed for professional use  
+A. Use presets as-is, they are designed for professional use  
 B. Only use presets from the paid AEJuice packs, not the free ones  
-C. Always customize timing, color, and typography before delivery — unmodified presets are immediately recognizable  
+C. Always customize timing, color, and typography before delivery, unmodified presets are immediately recognizable  
 D. Get written permission from AEJuice before using in commercial projects  
 
 ---
@@ -99,7 +99,7 @@ D. 3:1 (bar three times wider than gap)
 In a data animation, when should annotation text labels appear relative to the data event they describe?
 
 A. Before the data event, to prime the viewer  
-B. At the same time as the data event — synchronized precisely  
+B. At the same time as the data event, synchronized precisely  
 C. After the data event, as a summary  
 D. At a fixed time (e.g., always at 50% of total duration)  
 
@@ -139,7 +139,7 @@ D. Animating a map route to trace a travel path
 In a news graphics context, a "Trim Paths" reveal on a map route layer communicates:
 
 A. The geographic borders of regions  
-B. A path being traveled, drawn, or traced in real-time — a journey or route  
+B. A path being traveled, drawn, or traced in real-time, a journey or route  
 C. Color coding by region  
 D. A zoom animation from a wide view to a close-up  
 
@@ -229,7 +229,7 @@ D. When the data has a circular shape
 In a Trim Paths line chart reveal, adding a small dot element that travels along the line as it draws creates which effect?
 
 A. A waypoint marker at the end of the line  
-B. A leading indicator that gives the eye something to follow — the dot "pulls" the line forward  
+B. A leading indicator that gives the eye something to follow, the dot "pulls" the line forward  
 C. A pulsing animation at key data points  
 D. A shadow following the line path  
 
@@ -248,51 +248,51 @@ D. Premiere Pro sequences via Dynamic Link
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  C — Bottom center anchor so Scale Y animation grows the bar upward from the baseline. Top-center anchor would grow downward.
+Q1:  C, Bottom center anchor so Scale Y animation grows the bar upward from the baseline. Top-center anchor would grow downward.
 
-Q2:  B — Trim Paths End property animates from 0% (no line visible) to 100% (full line visible), creating the progressive draw-on reveal.
+Q2:  B, Trim Paths End property animates from 0% (no line visible) to 100% (full line visible), creating the progressive draw-on reveal.
 
-Q3:  B — A Track Matte (specifically an Alpha Matte from a solid circle shape layer) masks the center of the pie, creating the donut cutout.
+Q3:  B, A Track Matte (specifically an Alpha Matte from a solid circle shape layer) masks the center of the pie, creating the donut cutout.
 
-Q4:  C — 73 cells fill for 73%. The waffle chart maps directly: 1 cell = 1%.
+Q4:  C, 73 cells fill for 73%. The waffle chart maps directly: 1 cell = 1%.
 
-Q5:  C — The insight should appear at the 2/3 mark. The first third establishes context (what are we measuring?); the last third gives the viewer time to absorb the insight.
+Q5:  C, The insight should appear at the 2/3 mark. The first third establishes context (what are we measuring?); the last third gives the viewer time to absorb the insight.
 
-Q6:  B — Motion Bro is a panel extension for managing and previewing preset packs within AE. It doesn't export or import motion data.
+Q6:  B, Motion Bro is a panel extension for managing and previewing preset packs within AE. It doesn't export or import motion data.
 
-Q7:  C — Unmodified AEJuice presets are immediately identifiable by experienced designers. Always customize timing, color, and typography for professional delivery.
+Q7:  C, Unmodified AEJuice presets are immediately identifiable by experienced designers. Always customize timing, color, and typography for professional delivery.
 
-Q8:  B — A choropleth map encodes data as fill color per region. Higher values = darker/more saturated color (or the variable's chosen color scale).
+Q8:  B, A choropleth map encodes data as fill color per region. Higher values = darker/more saturated color (or the variable's chosen color scale).
 
-Q9:  C — 2:1 ratio (bar twice as wide as gap) is the standard data visualization guideline. Gaps wider than bars make the chart feel sparse; equal widths feel mechanical.
+Q9:  C, 2:1 ratio (bar twice as wide as gap) is the standard data visualization guideline. Gaps wider than bars make the chart feel sparse; equal widths feel mechanical.
 
-Q10: B — Annotations should be precisely synchronized to the data event they describe. Pre-display is confusing (what does this label refer to?); post-display means the viewer missed the connection.
+Q10: B, Annotations should be precisely synchronized to the data event they describe. Pre-display is confusing (what does this label refer to?); post-display means the viewer missed the connection.
 
-Q11: B — Rosling's work demonstrated that animation can make time-series data emotionally compelling and reveal causal relationships (e.g., wealth driving health) that static charts cannot convey.
+Q11: B, Rosling's work demonstrated that animation can make time-series data emotionally compelling and reveal causal relationships (e.g., wealth driving health) that static charts cannot convey.
 
-Q12: B — Link the text layer's Y Position to the bar's Scale Y value via an expression. When the bar reaches 70% height, the label tracks to 70% height position.
+Q12: B, Link the text layer's Y Position to the bar's Scale Y value via an expression. When the bar reaches 70% height, the label tracks to 70% height position.
 
-Q13: B — Animating the chart frame's border with a decorative glow effect is motion that doesn't carry data — it's decorative noise. The other options all animate elements that represent the data.
+Q13: B, Animating the chart frame's border with a decorative glow effect is motion that doesn't carry data, it's decorative noise. The other options all animate elements that represent the data.
 
-Q14: B — Trim Paths on a route line creates a progressive draw that reads as a journey or path being traced — the natural visual metaphor for travel/routing.
+Q14: B, Trim Paths on a route line creates a progressive draw that reads as a journey or path being traced, the natural visual metaphor for travel/routing.
 
-Q15: B — A Master Controller with sliders for each data value, linked via expressions to chart elements, allows team members to update values without touching keyframes.
+Q15: B, A Master Controller with sliders for each data value, linked via expressions to chart elements, allows team members to update values without touching keyframes.
 
-Q16: B — Proportional duration: a 200% increase should animate roughly twice as long as a 100% increase, preserving the viewer's intuitive sense of scale.
+Q16: B, Proportional duration: a 200% increase should animate roughly twice as long as a 100% increase, preserving the viewer's intuitive sense of scale.
 
-Q17: B — Color encodes meaning in data visualization. Using multiple hues decoratively trains the viewer to ignore color — then it fails when you actually need it to communicate.
+Q17: B, Color encodes meaning in data visualization. Using multiple hues decoratively trains the viewer to ignore color, then it fails when you actually need it to communicate.
 
-Q18: D — Bar #4 (0-indexed: index 3) → delay = 3 * 5 frames = 15 frames → 15/24fps ≈ 0.625 seconds.
+Q18: D, Bar #4 (0-indexed: index 3) → delay = 3 * 5 frames = 15 frames → 15/24fps ≈ 0.625 seconds.
 
-Q19: B — Camera Z-position animation with a fixed map provides a natural zoom (perspective) effect. Scaling the map layer works but doesn't provide the same depth quality.
+Q19: B, Camera Z-position animation with a fixed map provides a natural zoom (perspective) effect. Scaling the map layer works but doesn't provide the same depth quality.
 
-Q20: C — AEJuice Starter Pack includes transitions, text presets, and basic infographic elements — all motion graphics assets. Not footage, not audio, not 3D.
+Q20: C, AEJuice Starter Pack includes transitions, text presets, and basic infographic elements, all motion graphics assets. Not footage, not audio, not 3D.
 
-Q21: B — Staging: the viewer needs a clear focus at every moment. Multiple simultaneous changes with no hierarchy leave the eye without guidance — a staging failure.
+Q21: B, Staging: the viewer needs a clear focus at every moment. Multiple simultaneous changes with no hierarchy leave the eye without guidance, a staging failure.
 
-Q22: B — Bar charts are superior for comparing values across multiple categories, especially when there are more than 5. Pie charts are for parts-of-a-whole with ≤5 categories.
+Q22: B, Bar charts are superior for comparing values across multiple categories, especially when there are more than 5. Pie charts are for parts-of-a-whole with ≤5 categories.
 
-Q23: B — A leading dot gives the eye something to follow — it "pulls" the line forward and makes the progressive reveal feel dynamic rather than passive.
+Q23: B, A leading dot gives the eye something to follow, it "pulls" the line forward and makes the progressive reveal feel dynamic rather than passive.
 
-Q24: A — After Effects cannot natively import CSV files as live data. Data-driven animation requires third-party scripts (e.g., Datamator, AEUX) or manual input via expressions.
+Q24: A, After Effects cannot natively import CSV files as live data. Data-driven animation requires third-party scripts (e.g., Datamator, AEUX) or manual input via expressions.
 ```

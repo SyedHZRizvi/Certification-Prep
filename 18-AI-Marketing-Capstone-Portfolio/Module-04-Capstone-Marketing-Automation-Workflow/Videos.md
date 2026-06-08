@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">n8n Full Tutorial — Self-Hosted Setup</p>
+      <p class="vg-title">n8n Full Tutorial, Self-Hosted Setup</p>
       <p class="vg-creator">n8n (official) / Various</p>
       <span class="vg-duration">⏱ 17 min · Alternative tool, dev signal</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Zapier vs Make.com vs n8n — Which To Pick</p>
+      <p class="vg-title">Zapier vs Make.com vs n8n, Which To Pick</p>
       <p class="vg-creator">Various</p>
       <span class="vg-duration">⏱ 13 min · The trade-off matrix</span>
     </div>
@@ -146,7 +146,7 @@
 | **n8n (official)** | OSS reference content |
 | **Zapier Learn** | Free Zapier courses |
 | **HubSpot Academy** | If you're going B2B |
-| **Adam Marczak (Azure)** | Tangential — great for "system thinking" examples |
+| **Adam Marczak (Azure)** | Tangential, great for "system thinking" examples |
 | **Loom (official)** | Recording technique |
 
 ---

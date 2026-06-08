@@ -1,6 +1,6 @@
 # Module 8: Scaling Scrum 🏗️
 
-> **Why this module matters:** PSM I touches scaling lightly (~10% of exam) but the questions are sneaky. You don't need deep SAFe knowledge — just the basics + how Scrum scales.
+> **Why this module matters:** PSM I touches scaling lightly (~10% of exam) but the questions are sneaky. You don't need deep SAFe knowledge, just the basics + how Scrum scales.
 
 ---
 
@@ -38,7 +38,7 @@ The Scrum Guide is clear:
 
 ### Why Most Teams DON'T Scale:
 
-- 🚫 They have only 1 team — Scrum natively supports them
+- 🚫 They have only 1 team, Scrum natively supports them
 - 🚫 They confuse "scaling" with "complexity"
 - 🚫 Their org has lots of people but the *work* doesn't need scaling
 
@@ -67,11 +67,11 @@ The Scrum Guide is clear:
 
 #### What's Added in Nexus:
 
-- 🆕 **Nexus Integration Team** — coordinates dependencies
-- 🆕 **Nexus Sprint Goal** — shared goal across all teams
-- 🆕 **Nexus Sprint Backlog** — combines all team backlogs
-- 🆕 **Nexus Daily Scrum** — for representatives from each team
-- 🆕 **Nexus Sprint Planning, Review, Retro** — across the Nexus
+- 🆕 **Nexus Integration Team**, coordinates dependencies
+- 🆕 **Nexus Sprint Goal**, shared goal across all teams
+- 🆕 **Nexus Sprint Backlog**, combines all team backlogs
+- 🆕 **Nexus Daily Scrum**, for representatives from each team
+- 🆕 **Nexus Sprint Planning, Review, Retro**, across the Nexus
 
 🎯 **Exam pattern:** "What is added in Nexus?" → Integration Team + Nexus events.
 
@@ -81,11 +81,11 @@ The Scrum Guide is clear:
 
 Key concepts (high level):
 
-- **Agile Release Train (ART)** — group of teams working on a "value stream" (e.g., 5–12 teams)
-- **PI (Program Increment)** — typically 8–12 weeks, multiple sprints aligned
-- **PI Planning** — big event where all teams plan together (legendary 2-day meeting)
-- **System Demo** — like Sprint Review at the program level
-- **Inspect & Adapt** — like Retro at the program level
+- **Agile Release Train (ART)**, group of teams working on a "value stream" (e.g., 5–12 teams)
+- **PI (Program Increment)**, typically 8–12 weeks, multiple sprints aligned
+- **PI Planning**, big event where all teams plan together (legendary 2-day meeting)
+- **System Demo**, like Sprint Review at the program level
+- **Inspect & Adapt**, like Retro at the program level
 
 🚨 **NOT in the Scrum Guide.** SAFe is its own thing. Critics say it's too heavy and "fake agile."
 
@@ -236,7 +236,7 @@ You DON'T need:
 
 You now know:
 
-- 🤝 Most teams don't need scaling — single Scrum Team is powerful
+- 🤝 Most teams don't need scaling, single Scrum Team is powerful
 - 🏗️ When scaling: 1 PO, 1 Product Backlog, 1 Product Goal
 - 🎯 Three frameworks: Nexus (Scrum.org), SAFe (heavy), LeSS (minimal)
 - ✅ Feature teams > Component teams
@@ -254,44 +254,44 @@ You now know:
 ---
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The three Scrum accountabilities and their boundaries ([Module 3 — Roles](../Module-03-Roles/Reading.md))
-> - Single-team Scrum end to end — all artifacts, events, commitments (Modules 4 and 5)
-> - The Definition of Done — including who creates it and when it's shared ([Module 6](../Module-06-Done-Estimation/Reading.md))
+> - The three Scrum accountabilities and their boundaries ([Module 3, Roles](../Module-03-Roles/Reading.md))
+> - Single-team Scrum end to end, all artifacts, events, commitments (Modules 4 and 5)
+> - The Definition of Done, including who creates it and when it's shared ([Module 6](../Module-06-Done-Estimation/Reading.md))
 > - The servant-leadership model and the 5 SM stances ([Module 7](../Module-07-Servant-Leadership/Reading.md))
 >
 > Scaling questions on PSM I are designed to test whether you can transfer single-team Scrum reasoning to multi-team contexts. If single-team Scrum is shaky, scaling won't make sense. Do *not* skip this prerequisite check.
 
 ---
 
-## 📊 Case Study — Bosch Software Innovations: SAFe at Scale for IoT (2017–2024)
+## 📊 Case Study, Bosch Software Innovations: SAFe at Scale for IoT (2017–2024)
 
-**Situation.** Bosch — the German engineering giant — has a software arm (Bosch Software Innovations, now Bosch Connected Industry) that builds the IoT platform underlying Bosch's smart-factory, connected-mobility, and energy-management products. By 2017, BSI employed ~3,000 engineers globally (Stuttgart, Bangalore, Pittsburgh, Shanghai) building both *platform* software (Bosch IoT Suite) and *vertical* applications. The challenge: each business unit (Bosch Automotive, Bosch Home, Bosch Industrial) had its own product roadmap, but they all wanted to leverage the shared IoT platform. Without coordination, the platform team kept getting pulled in five directions.
+**Situation.** Bosch the German engineering giant has a software arm (Bosch Software Innovations, now Bosch Connected Industry) that builds the IoT platform underlying Bosch's smart-factory, connected-mobility, and energy-management products. By 2017, BSI employed ~3,000 engineers globally (Stuttgart, Bangalore, Pittsburgh, Shanghai) building both *platform* software (Bosch IoT Suite) and *vertical* applications. The challenge: each business unit (Bosch Automotive, Bosch Home, Bosch Industrial) had its own product roadmap, but they all wanted to leverage the shared IoT platform. Without coordination, the platform team kept getting pulled in five directions.
 
-**Decision.** Between 2017 and 2019, Bosch adopted **SAFe (Scaled Agile Framework)** across BSI — 24 Agile Release Trains (ARTs), each comprising 5–12 Scrum teams, with quarterly PI (Program Increment) Planning events that aligned all the platform-consuming business units. The Scrum at the team level was kept *unmodified* — same 3 accountabilities, same 5 events, same 3 artifacts. SAFe added program-level events (PI Planning, System Demo, Inspect & Adapt) and program-level roles (Release Train Engineer = "Chief Scrum Master" for an ART, Product Management = a tier above POs). Crucially, Bosch decided early that PI Planning would always be *in person*, even for distributed ARTs — flying ~500 people to Stuttgart twice a quarter for two-day events.
+**Decision.** Between 2017 and 2019, Bosch adopted **SAFe (Scaled Agile Framework)** across BSI 24 Agile Release Trains (ARTs), each comprising 5–12 Scrum teams, with quarterly PI (Program Increment) Planning events that aligned all the platform-consuming business units. The Scrum at the team level was kept *unmodified* same 3 accountabilities, same 5 events, same 3 artifacts. SAFe added program-level events (PI Planning, System Demo, Inspect & Adapt) and program-level roles (Release Train Engineer = "Chief Scrum Master" for an ART, Product Management = a tier above POs). Crucially, Bosch decided early that PI Planning would always be *in person*, even for distributed ARTs, flying ~500 people to Stuttgart twice a quarter for two-day events.
 
-**Outcome.** By 2022, Bosch IoT Suite was running on ~28 million connected devices (Bosch Connected World 2022). Feature delivery for cross-business-unit features dropped from 6+ months to ~12 weeks. However, internal post-mortems (per the 2022 Bosch ConnectedExperience report) flagged three persistent issues: (1) PI Planning was overhead-heavy for teams that *didn't* have cross-team dependencies, (2) the "Chief Scrum Master" (RTE) role drifted toward project-management behaviors in ~30% of ARTs, and (3) the program-level layer occasionally clashed with team-level self-management (a SAFe critique that Schwaber himself has voiced publicly). By 2024, Bosch was selectively *de-scaling* — pulling some ARTs out of SAFe back to lighter coordination (closer to Nexus or LeSS) where dependencies didn't justify the overhead.
+**Outcome.** By 2022, Bosch IoT Suite was running on ~28 million connected devices (Bosch Connected World 2022). Feature delivery for cross-business-unit features dropped from 6+ months to ~12 weeks. However, internal post-mortems (per the 2022 Bosch ConnectedExperience report) flagged three persistent issues: (1) PI Planning was overhead-heavy for teams that *didn't* have cross-team dependencies, (2) the "Chief Scrum Master" (RTE) role drifted toward project-management behaviors in ~30% of ARTs, and (3) the program-level layer occasionally clashed with team-level self-management (a SAFe critique that Schwaber himself has voiced publicly). By 2024, Bosch was selectively *de-scaling*, pulling some ARTs out of SAFe back to lighter coordination (closer to Nexus or LeSS) where dependencies didn't justify the overhead.
 
-**Lesson for the exam / for practitioners.** Three takeaways. (1) **Scaling should be *minimal*, not maximal**: don't scale further than the work requires. (2) **Single-team Scrum stays unchanged when you scale** — Bosch did *not* modify what happens at the team level; SAFe added a layer above. (3) **SAFe is not in the Scrum Guide.** The PSM I exam emphasizes Nexus (Scrum.org's framework) for awareness, but only requires deep knowledge of how *multiple Scrum Teams on the same product* should share the PO, the Product Backlog, the Product Goal, and a common DoD.
+**Lesson for the exam / for practitioners.** Three takeaways. (1) **Scaling should be *minimal*, not maximal**: don't scale further than the work requires. (2) **Single-team Scrum stays unchanged when you scale**, Bosch did *not* modify what happens at the team level; SAFe added a layer above. (3) **SAFe is not in the Scrum Guide.** The PSM I exam emphasizes Nexus (Scrum.org's framework) for awareness, but only requires deep knowledge of how *multiple Scrum Teams on the same product* should share the PO, the Product Backlog, the Product Goal, and a common DoD.
 
 **Discussion (Socratic).**
 - Q1: Bosch found ~30% of RTEs (Release Train Engineers) drifted into project-management behaviors. What does this tell you about role design in scaled frameworks? Could this happen to a Scrum Master serving multiple teams in a Nexus setup?
-- Q2: Bosch decided PI Planning would always be in-person — flying ~500 people twice a quarter. What's the principle behind that decision? Could you make the same case for in-person Sprint Reviews at single-team Scrum (e.g., John Deere from Module 4)?
-- Q3: Bosch is selectively *de-scaling* — pulling ARTs back to lighter coordination. What signal triggers de-scaling? When is "scale down" the right answer vs "improve our scaling implementation"?
+- Q2: Bosch decided PI Planning would always be in-person, flying ~500 people twice a quarter. What's the principle behind that decision? Could you make the same case for in-person Sprint Reviews at single-team Scrum (e.g., John Deere from Module 4)?
+- Q3: Bosch is selectively *de-scaling*, pulling ARTs back to lighter coordination. What signal triggers de-scaling? When is "scale down" the right answer vs "improve our scaling implementation"?
 
 ---
 
 > **Where this leads.**
-> - Inside this course: After this module, you've completed the framework content — next is exam prep. Take [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), then [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), then the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md). Review wrong answers and re-read the relevant module's Reading.md.
-> - Cross-course: `02-PMP` Module 3 (Lifecycle Selection) covers when to choose a predictive vs adaptive vs hybrid lifecycle — useful for PMP scenario questions that test whether scaling is even the right answer. `02-PMP` Module 5 (Stakeholders) is relevant when you have to coordinate stakeholder engagement across multiple Scrum Teams.
+> - Inside this course: After this module, you've completed the framework content, next is exam prep. Take [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), then [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), then the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md). Review wrong answers and re-read the relevant module's Reading.md.
+> - Cross-course: `02-PMP` Module 3 (Lifecycle Selection) covers when to choose a predictive vs adaptive vs hybrid lifecycle, useful for PMP scenario questions that test whether scaling is even the right answer. `02-PMP` Module 5 (Stakeholders) is relevant when you have to coordinate stakeholder engagement across multiple Scrum Teams.
 > - Practice: Practice-Exam-1 has ~3 scaling questions, Practice-Exam-2 has ~5, Final Mock has ~5. Scaling is a smaller exam weight (~10%) but the *single PO / single Product Backlog / single Product Goal / shared DoD* mapping is the most tested fact.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The "we need to scale" question.** A 12-person team claims they need to "scale to Nexus" because their work has grown. Walk through your diagnostic before recommending scaling. What three signals would tip you toward "split into 2 teams" vs "stay as one"?
 2. **One PO, ten teams.** A product with 10 Scrum Teams has one Product Owner. Is that feasible? At what point does the PO become a bottleneck, and what would you do about it? Cite the Scrum Guide and Schwaber/Sutherland's writings.
-3. **Component teams as anti-pattern — but why?** A large enterprise has organized their teams by tech layer (UI team, API team, DB team). Walk through three concrete problems this creates that feature teams would avoid. What's the org's *real* reason for component teams, and how would you challenge it?
+3. **Component teams as anti-pattern, but why?** A large enterprise has organized their teams by tech layer (UI team, API team, DB team). Walk through three concrete problems this creates that feature teams would avoid. What's the org's *real* reason for component teams, and how would you challenge it?
 4. **SAFe vs Nexus vs LeSS.** Pick a specific organizational context (e.g., a 200-person bank's digital arm). Defend Nexus as the right choice. Then defend LeSS. Then defend SAFe. What's the principled tie-breaker?
 5. **De-scaling.** Bosch is pulling ARTs out of SAFe back to lighter coordination. Construct the case for de-scaling at a company you know. What does the org *give up*, and what does it *gain*? When is de-scaling actually a backslide vs a maturation?
 
@@ -321,4 +321,4 @@ You now know:
 | *Practices for Scaling Lean & Agile Development* (THE multi-team text) | Larman & Vodde | 2010 | Addison-Wesley |
 | Tesla Gigafactory (iterative build, brief reference) | Tesla public disclosures | 2014–2024 | Tesla Investor Day disclosures; Walter Isaacson's *Elon Musk* (2023) |
 
-**Verification note.** The Scrum Guide explicitly states that multiple Scrum Teams on the same product must share one PO, one Product Backlog, one Product Goal, and a common Definition of Done. SAFe and the Spotify model are *not* in the Scrum Guide. Nexus *is* a Scrum.org product and the Nexus Guide is the authoritative reference. The PSM I exam tests scaling *lightly* — the deep tests are in PSM II and SPS (Scaled Professional Scrum), but knowing the single-PO / single-backlog / single-goal / shared-DoD rule is essential.
+**Verification note.** The Scrum Guide explicitly states that multiple Scrum Teams on the same product must share one PO, one Product Backlog, one Product Goal, and a common Definition of Done. SAFe and the Spotify model are *not* in the Scrum Guide. Nexus *is* a Scrum.org product and the Nexus Guide is the authoritative reference. The PSM I exam tests scaling *lightly*, the deep tests are in PSM II and SPS (Scaled Professional Scrum), but knowing the single-PO / single-backlog / single-goal / shared-DoD rule is essential.

@@ -1,12 +1,12 @@
 # Module 6: Hiring & Managing AI-Native Teams 👥
 
-> **Why this module matters:** Hiring is where most founders go from "thriving solo" to "struggling small business." Hire too early — you trap yourself doing both the work AND the management. Hire wrong — you double your burn for half the output. This module shows you when to hire, what the AI-native employee profile looks like, where to find them, how to test them, and how to build the playbooks that make a 5-person team deliver like 15.
+> **Why this module matters:** Hiring is where most founders go from "thriving solo" to "struggling small business." Hire too early you trap yourself doing both the work AND the management. Hire wrong you double your burn for half the output. This module shows you when to hire, what the AI-native employee profile looks like, where to find them, how to test them, and how to build the playbooks that make a 5-person team deliver like 15.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - A working delivery process (SKU + scope-control + SLA) from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md) — without a documented playbook, every hire becomes a custom training project
-> - Acquisition cadence from [Module 3](../Module-03-Client-Acquisition-Channels/Reading.md) — you need predictable demand before the math of the 1.5x rule works
-> - Awareness of the financial discipline in [Module 7](../Module-07-Financials-Cash-Flow-Taxes/Reading.md) — the 30% tax bucket + cash-flow forecasting are what tell you whether you can actually afford a hire
-> - Awareness that nothing in this module is legal or tax advice — 1099 vs W-2 classification, EOR contracts, and equity / profit-share design all require a licensed attorney and CPA in your jurisdiction
+> - A working delivery process (SKU + scope-control + SLA) from [Module 2](../Module-02-Productizing-AI-Marketing-Services/Reading.md), without a documented playbook, every hire becomes a custom training project
+> - Acquisition cadence from [Module 3](../Module-03-Client-Acquisition-Channels/Reading.md), you need predictable demand before the math of the 1.5x rule works
+> - Awareness of the financial discipline in [Module 7](../Module-07-Financials-Cash-Flow-Taxes/Reading.md), the 30% tax bucket + cash-flow forecasting are what tell you whether you can actually afford a hire
+> - Awareness that nothing in this module is legal or tax advice, 1099 vs W-2 classification, EOR contracts, and equity / profit-share design all require a licensed attorney and CPA in your jurisdiction
 >
 > If you have not yet documented at least one delivery SOP, pause and write one. Hiring before the SOP exists turns the first hire into a question-asker rather than a force multiplier.
 
@@ -14,7 +14,7 @@
 
 ## 👤 A Story: The Hire Who Made Maya $200K More
 
-It's October 2024. Maya (from Module 1's recovery-center Google Ads story) has 11 clients. She's working 58 hours a week. Two clients have just been told her "next available onboarding" is 5 weeks out — which probably loses her one of them.
+It's October 2024. Maya (from Module 1's recovery-center Google Ads story) has 11 clients. She's working 58 hours a week. Two clients have just been told her "next available onboarding" is 5 weeks out, which probably loses her one of them.
 
 She knows she needs to hire. But she's nervous: every founder she knows who hired prematurely got destroyed.
 
@@ -43,15 +43,15 @@ The right hire at the right time is the single biggest leverage move a solo agen
 
 There are exactly **three legitimate reasons** to make your first hire. If none apply, you are hiring too early.
 
-### Trigger 1 — Sustained capacity overflow
+### Trigger 1, Sustained capacity overflow
 
 You have logged **8+ consecutive weeks at 50+ hours**, with another 2–4 prospects in the pipeline that you cannot serve.
 
-### Trigger 2 — A specific bottleneck task
+### Trigger 2, A specific bottleneck task
 
 There is ONE specific task type (asset prep, reporting, content production, transcript editing) that consumes **15+ hours/week** and can be cleanly delegated to someone earning $14–$40/hr.
 
-### Trigger 3 — Active revenue you're turning away
+### Trigger 3, Active revenue you're turning away
 
 You have at least **2 inbound prospects per month you are saying no to** because you cannot deliver. The cost of saying no exceeds the cost of hiring.
 
@@ -73,7 +73,7 @@ A common rule of thumb in productized service businesses: a new hire should gene
 
 ## 🧬 The AI-Native Employee Profile (What To Hire For)
 
-In 2026, hiring is not about hiring "marketers" — it's about hiring **AI-native operators**. The profile:
+In 2026, hiring is not about hiring "marketers", it's about hiring **AI-native operators**. The profile:
 
 ### The 5 traits to screen for
 
@@ -87,7 +87,7 @@ In 2026, hiring is not about hiring "marketers" — it's about hiring **AI-nativ
 
 - ❌ Says "I work better in person" without flexibility
 - ❌ Refuses to use AI ("I'm a real writer / designer")
-- ❌ Brittle ego — can't accept rapid feedback
+- ❌ Brittle ego, can't accept rapid feedback
 
 ### Job titles that work for AI-native operators
 
@@ -101,7 +101,7 @@ In 2026, hiring is not about hiring "marketers" — it's about hiring **AI-nativ
 | **Growth Marketer** | Funnel optimization | $80K–$160K |
 | **Senior Strategist** | Client-facing strategy lead | $110K–$220K |
 
-Numbers above are aggregated from Glassdoor 2024–2025, Levels.fyi, Pavilion Compensation Report 2024, and Built In's 2024 marketing salary survey. Adjust for cost of living. Verify current data — pricing/comp shifts annually.
+Numbers above are aggregated from Glassdoor 2024–2025, Levels.fyi, Pavilion Compensation Report 2024, and Built In's 2024 marketing salary survey. Adjust for cost of living. Verify current data, pricing/comp shifts annually.
 
 ---
 
@@ -109,7 +109,7 @@ Numbers above are aggregated from Glassdoor 2024–2025, Levels.fyi, Pavilion Co
 
 Where you look matters enormously. Some platforms are saturated with low-fit candidates; others are quiet goldmines.
 
-### Tier 1 — High-quality, narrow
+### Tier 1, High-quality, narrow
 
 | Source | What it is | Best for | Cost |
 |---|---|---|---|
@@ -120,7 +120,7 @@ Where you look matters enormously. Some platforms are saturated with low-fit can
 | **MicroConf community** | Bootstrapped SaaS founders | Tech-native operators | Free/paid tiers |
 | **RevGenius** | Sales/marketing community | RevOps + sales hires | Free |
 
-### Tier 2 — Public listings
+### Tier 2, Public listings
 
 | Source | Quality | Best for | Cost |
 |---|---|---|---|
@@ -132,7 +132,7 @@ Where you look matters enormously. Some platforms are saturated with low-fit can
 | **Indeed** | Volume; mixed quality | Junior + admin | Free + sponsored |
 | **YC Work at a Startup** | Tech-startup network | Senior tech-native | Free |
 
-### Tier 3 — International contractors
+### Tier 3, International contractors
 
 | Source | What it is | Best for | Cost |
 |---|---|---|---|
@@ -164,10 +164,10 @@ DM them directly. "Saw your post on [X]. I'm hiring for [role]. Pays $[Y]/mo. Wa
 
 | Stage | What happens | Time |
 |---|---|---|
-| 1 — Application screen | Review portfolio + custom application questions | 15 min |
-| 2 — 30-min intro call | Mutual fit, role overview, comp confirmation | 30 min |
-| 3 — Paid work-sample test (the deciding step) | Real task, 2–4 hours, paid at hourly rate | 2–4 hr |
-| 4 — Final call + offer | Reference check + offer | 30 min |
+| 1, Application screen | Review portfolio + custom application questions | 15 min |
+| 2, 30-min intro call | Mutual fit, role overview, comp confirmation | 30 min |
+| 3, Paid work-sample test (the deciding step) | Real task, 2–4 hours, paid at hourly rate | 2–4 hr |
+| 4, Final call + offer | Reference check + offer | 30 min |
 
 > 🎯 **The work sample is the entire interview.** Behavioral questions can be faked; work output cannot.
 
@@ -215,7 +215,7 @@ Two reference calls, 15 min each. Ask:
 
 The first 30 days determine whether a hire becomes a force multiplier or a drag. Use this exact playbook.
 
-### Week 1 — Context
+### Week 1, Context
 
 | Day | Goal | Activities |
 |---|---|---|
@@ -225,15 +225,15 @@ The first 30 days determine whether a hire becomes a force multiplier or a drag.
 | 4 | Tool deep-dive | Hands-on tour of Apollo / Make / Notion / etc. |
 | 5 | First task | Small real task with a partner / your supervision |
 
-### Week 2 — Shadowing
+### Week 2, Shadowing
 
 Pair them on real client work. They observe, take notes, ask questions. End-of-week 1-hour debrief.
 
-### Week 3 — Driving
+### Week 3, Driving
 
 They lead one workflow end-to-end with your review. Increase autonomy daily.
 
-### Week 4 — Solo
+### Week 4, Solo
 
 They run independent client work. You do daily 15-min check-ins.
 
@@ -247,18 +247,18 @@ By Day 60: Owns [Y workflow] end-to-end; quality matches Maya's
 By Day 90: Has identified at least 1 process improvement; is freeing 30+ hr/mo
 ```
 
-### The "SOP library" — your most important asset
+### The "SOP library", your most important asset
 
 Every recurring task needs a written SOP (Standard Operating Procedure). Build them in Notion. Each SOP has:
 
-1. **Trigger** — when this SOP fires
-2. **Inputs** — what's needed before starting
-3. **Steps** — numbered, specific
-4. **Tools** — links to specific software
-5. **Output** — what "done" looks like
-6. **QA checklist** — review items before delivery
-7. **Owner** — who is responsible
-8. **Notes** — gotchas, exceptions
+1. **Trigger**, when this SOP fires
+2. **Inputs**, what's needed before starting
+3. **Steps**, numbered, specific
+4. **Tools**, links to specific software
+5. **Output**, what "done" looks like
+6. **QA checklist**, review items before delivery
+7. **Owner**, who is responsible
+8. **Notes**, gotchas, exceptions
 
 A team of 5 running off a solid SOP library outproduces a team of 15 reinventing wheels.
 
@@ -300,7 +300,7 @@ For agencies (not VC-funded), equity is rare. **Profit-sharing pools** are commo
 
 ---
 
-## 🏗️ Managing AI-Native Teams — The Cadence
+## 🏗️ Managing AI-Native Teams, The Cadence
 
 ### Weekly cadence
 
@@ -364,38 +364,38 @@ If your AI-native hire isn't producing 3–5x what a 2020-era hire would, **some
 
 ## 📚 Case Studies: Hiring That Worked
 
-### Case 1 — Hannah's First Hire (Module 2 carryover)
+### Case 1, Hannah's First Hire (Module 2 carryover)
 
 After her £490K Year 2, Hannah hired a part-time analyst at £24/hr to run data pulls + standardize her deliverables. ROI: she signed 4 more audit clients/month because her capacity opened up. Net new revenue/mo: ~£7,000. Analyst cost: £1,920/mo.
 
-### Case 2 — Designjoy's Founder-Only Choice (Brett Williams)
+### Case 2, Designjoy's Founder-Only Choice (Brett Williams)
 
 Famously, Brett Williams has chosen to remain solo. He's discussed this on My First Million and Starter Story: he uses contractors and AI to extend his capacity rather than hire FT. His position: solo is optimized for *his* life, not for $5M+ revenue. Lesson: hiring is a choice, not a mandate.
 
-### Case 3 — FletchPMM's hiring approach (Anthony Pierri, public LinkedIn)
+### Case 3, FletchPMM's hiring approach (Anthony Pierri, public LinkedIn)
 
 Pierri has publicly hired Marketing Strategists at $90K–$110K + comp upside. He uses a paid 3-hour work-sample test as the deciding step. ROI: each hire becomes profitable within 6 months because they're billable on client engagements.
 
-### Case 4 — The "Maya composite" hire
+### Case 4, The "Maya composite" hire
 
 Discussed in the opening story: a $14/hr Filipino contractor → 50+ hours of founder time freed → ~$50K/mo in new ARR. The single highest-ROI hire pattern most solo agency founders can make.
 
 ---
 
-## 💼 Case Study — Buffer's Open-Salaries, Remote-First Hiring Model (2013–2024)
+## 💼 Case Study, Buffer's Open-Salaries, Remote-First Hiring Model (2013–2024)
 
 **Situation.** In 2010, Joel Gascoigne founded Buffer as a social-media scheduling SaaS. By December 2013, Buffer had grown to ~15 employees and $1M ARR but faced two acute hiring problems: (1) US-only hiring meant they couldn't compete with Twitter, Facebook, and HubSpot on cash comp; (2) interview processes were producing inconsistent hire quality, with ~30% of new hires not surviving year one. Gascoigne and co-founder Leo Widrich made an unconventional bet: instead of trying to compete on cash with SF/NYC firms, they would compete on *transparency + remote-first culture + structured async work*. They were the first VC-backed startup to publish every employee's salary publicly with the exact formula used to compute it. The decision was documented in real-time on the Buffer Open blog (open.buffer.com), starting with Gascoigne's December 19, 2013 post "Introducing Open Salaries at Buffer."
 
-**Decision.** Buffer published, for every employee from CEO to support: (1) the *exact* salary formula — a public spreadsheet where comp = role base × experience multiplier × location multiplier × seniority + dependents allowance; (2) every individual employee's current salary with name attached; (3) every raise event, every promotion, every dismissal explained on the blog (with the employee's consent). They committed to fully remote — no offices, no HQ, no "remote-friendly with US-Pacific-only" compromise. Hiring switched to a 5-stage funnel: (1) written application with structured questions, (2) values screen call, (3) *paid* skills test (45-day "Buffer Bootcamp" trial at full pay, ~$8,000 per candidate, with no obligation either side), (4) team interviews, (5) final offer with 1-year buyback clause. The Bootcamp specifically replicates what Schmidt & Hunter (1998, cited in this module) call work-sample testing — extended to 6 weeks rather than 4 hours. By 2017, Buffer had ~85 employees across 18 time zones.
+**Decision.** Buffer published, for every employee from CEO to support: (1) the *exact* salary formula a public spreadsheet where comp = role base × experience multiplier × location multiplier × seniority + dependents allowance; (2) every individual employee's current salary with name attached; (3) every raise event, every promotion, every dismissal explained on the blog (with the employee's consent). They committed to fully remote no offices, no HQ, no "remote-friendly with US-Pacific-only" compromise. Hiring switched to a 5-stage funnel: (1) written application with structured questions, (2) values screen call, (3) *paid* skills test (45-day "Buffer Bootcamp" trial at full pay, ~$8,000 per candidate, with no obligation either side), (4) team interviews, (5) final offer with 1-year buyback clause. The Bootcamp specifically replicates what Schmidt & Hunter (1998, cited in this module) call work-sample testing, extended to 6 weeks rather than 4 hours. By 2017, Buffer had ~85 employees across 18 time zones.
 
-**Outcome.** Verified from Buffer's publicly maintained transparency dashboard (open.buffer.com/salaries, last verified by the *Built In* salary survey 2024, and replicated by GitLab's *Remote Manifesto* citing Buffer as the foundational case): voluntary attrition dropped to 7.2% by 2019 (industry benchmark for SaaS: ~13–18%); time-to-hire compressed from 84 days → 47 days because the salary transparency eliminated the negotiation back-and-forth (every candidate knew the exact offer before applying); Bootcamp-to-permanent conversion stabilized at 78% (where industry first-year survival for traditionally-hired employees was ~70% per LinkedIn 2022 data). Open-salary critics predicted internal envy and resignations; the actual measured outcome over a decade was the opposite — internal mobility (lateral moves + promotions) accelerated because employees could see exactly what role/skill earned what. Buffer scaled to ~95 employees, $20M+ ARR, and was profitable from 2019 onward without raising additional capital — a rarity among 2013-cohort SaaS startups. As of 2024, Buffer still publishes every salary.
+**Outcome.** Verified from Buffer's publicly maintained transparency dashboard (open.buffer.com/salaries, last verified by the *Built In* salary survey 2024, and replicated by GitLab's *Remote Manifesto* citing Buffer as the foundational case): voluntary attrition dropped to 7.2% by 2019 (industry benchmark for SaaS: ~13–18%); time-to-hire compressed from 84 days → 47 days because the salary transparency eliminated the negotiation back-and-forth (every candidate knew the exact offer before applying); Bootcamp-to-permanent conversion stabilized at 78% (where industry first-year survival for traditionally-hired employees was ~70% per LinkedIn 2022 data). Open-salary critics predicted internal envy and resignations; the actual measured outcome over a decade was the opposite internal mobility (lateral moves + promotions) accelerated because employees could see exactly what role/skill earned what. Buffer scaled to ~95 employees, $20M+ ARR, and was profitable from 2019 onward without raising additional capital a rarity among 2013-cohort SaaS startups. As of 2024, Buffer still publishes every salary.
 
-**Lesson for the practitioner.** Buffer's model directly maps the work-sample-first interview framework in §"The Interview Framework" — but extended from 4 hours to 6 weeks at full pay. For a $1M+ agency operator, the full 6-week Bootcamp is overkill, but the principle (the work sample IS the deciding step) is identical. The salary-transparency play is the rarer lesson: if your wedge depends on attracting AI-native operators who are also operators-at-heart (i.e., they could be founders themselves), traditional opacity around comp filters them out. AI-native operators tend to want stake clarity, the same way they want SOP clarity. Buffer's outcome (78% Bootcamp conversion, 7.2% attrition) is what happens when a hiring process is structurally honest. The §"AI-Native Employee Profile" 5-trait screen plus a Buffer-style paid extended trial produces the highest-quality hires per dollar that publicly documented data captures.
+**Lesson for the practitioner.** Buffer's model directly maps the work-sample-first interview framework in §"The Interview Framework", but extended from 4 hours to 6 weeks at full pay. For a $1M+ agency operator, the full 6-week Bootcamp is overkill, but the principle (the work sample IS the deciding step) is identical. The salary-transparency play is the rarer lesson: if your wedge depends on attracting AI-native operators who are also operators-at-heart (i.e., they could be founders themselves), traditional opacity around comp filters them out. AI-native operators tend to want stake clarity, the same way they want SOP clarity. Buffer's outcome (78% Bootcamp conversion, 7.2% attrition) is what happens when a hiring process is structurally honest. The §"AI-Native Employee Profile" 5-trait screen plus a Buffer-style paid extended trial produces the highest-quality hires per dollar that publicly documented data captures.
 
 **Discussion (Socratic).**
 - Q1: Buffer pays each candidate ~$8K for a 6-week Bootcamp regardless of outcome. At a 22% rejection rate, that's ~$1,760 of "wasted" Bootcamp pay per filled seat. A skeptic argues this is unaffordable for a sub-$500K-revenue agency. Construct her cost-only argument. Then construct the counter using the §"1.5x rule" and the cost of one bad hire (replacement cost ~$15K + 4 months of lost productivity per Glassdoor 2023). At what revenue threshold does Buffer's Bootcamp model become positive-ROI for an AI-marketing agency?
 - Q2: Buffer publishes every salary. A founder argues that this is feasible at a values-first SaaS but actively destructive for a services agency where senior strategists and junior coordinators sit on the same Slack and one resents the other's number. Build her argument. Then construct the counter using Buffer's measured outcome (envy went *down*, not up, because the formula was visible and gameable). Is the lesson "publish all salaries" or "publish the FORMULA that produces salaries"? Where do you draw the line?
-- Q3: The hidden cost of Buffer's remote-first model is *async management overhead* — every decision documented in writing, every meeting recorded, every onboarding turned into a 90-min Loom. For a 2-person agency, the overhead is invisible (you ARE the company). At what team size (5? 10? 15?) does the async-documentation tax start to exceed the cash savings from going remote-first, and what specific signal (decision velocity, onboarding time, founder hours spent in writing) tells you you've crossed it?
+- Q3: The hidden cost of Buffer's remote-first model is *async management overhead*, every decision documented in writing, every meeting recorded, every onboarding turned into a 90-min Loom. For a 2-person agency, the overhead is invisible (you ARE the company). At what team size (5? 10? 15?) does the async-documentation tax start to exceed the cash savings from going remote-first, and what specific signal (decision velocity, onboarding time, founder hours spent in writing) tells you you've crossed it?
 
 ---
 
@@ -434,8 +434,8 @@ Discussed in the opening story: a $14/hr Filipino contractor → 50+ hours of fo
 |---|---|
 | **AI-native operator** | Someone who uses AI in 50%+ of their work today |
 | **Work-sample test** | A paid, real-task assessment used as the deciding interview step |
-| **SOP** | Standard Operating Procedure — documented playbook |
-| **EOR** | Employer of Record — service that hires international employees on your behalf |
+| **SOP** | Standard Operating Procedure, documented playbook |
+| **EOR** | Employer of Record, service that hires international employees on your behalf |
 | **1099 vs W-2** | US tax classification for contractors vs employees |
 | **30/60/90 plan** | Onboarding milestones at days 30, 60, 90 |
 | **Profit-share pool** | % of net profit shared with team |
@@ -476,31 +476,31 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; the best answers cite the 3 hiring triggers, the 1.5x rule, the Schmidt & Hunter (1998) work-sample research, and at least one named case (Maya's Filipino contractor, Designjoy's solo-by-choice, FletchPMM's $90K+ hires, the Hampton + Pavilion comp data).
 
-1. **Solo-by-choice vs scale-by-default.** Brett Williams has remained solo at $1.5M ARR; FletchPMM hires Marketing Strategists at $90K–$110K. Both are documented Year-3+ outcomes. A founder asks which path is "right." Construct the strongest argument for each archetype — what client profile, what founder personality, what financial goal does each fit? Then defend the path you'd choose, citing at least three concrete trade-offs (founder hours, P&L volatility, exit optionality).
-2. **Work-sample tests at scale — fair or extractive?** The reading endorses paid 2–4 hour work-sample tests at the candidate's hourly rate (Schmidt & Hunter, 1998). A senior recruiter argues this is extractive at scale (10 candidates × $120 each = $1,200 to fill one role) and disadvantages candidates who can't afford to "audition" for free outside their hourly rate. Build her ethical objection. Then construct the counter: why does *paying* for the work-sample test resolve most of the objection, and what edge cases remain?
+1. **Solo-by-choice vs scale-by-default.** Brett Williams has remained solo at $1.5M ARR; FletchPMM hires Marketing Strategists at $90K–$110K. Both are documented Year-3+ outcomes. A founder asks which path is "right." Construct the strongest argument for each archetype, what client profile, what founder personality, what financial goal does each fit? Then defend the path you'd choose, citing at least three concrete trade-offs (founder hours, P&L volatility, exit optionality).
+2. **Work-sample tests at scale, fair or extractive?** The reading endorses paid 2–4 hour work-sample tests at the candidate's hourly rate (Schmidt & Hunter, 1998). A senior recruiter argues this is extractive at scale (10 candidates × $120 each = $1,200 to fill one role) and disadvantages candidates who can't afford to "audition" for free outside their hourly rate. Build her ethical objection. Then construct the counter: why does *paying* for the work-sample test resolve most of the objection, and what edge cases remain?
 3. **The "I'm a real writer" anti-trait.** The reading flags refusal-to-use-AI as a hard-pass red flag. A skeptic argues this filters out the most experienced writers / designers (who developed taste in a pre-AI era) and biases the team toward AI-native juniors who lack craft. Build the strongest version of her argument. Then construct the counter: how do you tell the difference between principled craft objection and AI-illiteracy? What work-sample test would distinguish the two?
-4. **First hire — VA vs US contractor vs FT.** Maya's first hire was a $1,400/mo Filipino contractor. FletchPMM's first hires were $90K–$110K W-2 US employees. Both succeeded. A founder asks which is the right Year-1 first-hire pattern. Construct the strongest argument for each, then defend the path you'd recommend to a founder at $20K MRR with a 14-day productized SKU as the primary deliverable. Reference the 1.5x rule and the AI-leverage multiplier.
+4. **First hire, VA vs US contractor vs FT.** Maya's first hire was a $1,400/mo Filipino contractor. FletchPMM's first hires were $90K–$110K W-2 US employees. Both succeeded. A founder asks which is the right Year-1 first-hire pattern. Construct the strongest argument for each, then defend the path you'd recommend to a founder at $20K MRR with a 14-day productized SKU as the primary deliverable. Reference the 1.5x rule and the AI-leverage multiplier.
 5. **Profit-share vs equity for agencies.** The reading recommends profit-share pools (5–15% of net profit by tenure × performance) rather than equity for non-VC-funded agencies. A senior hire pushes back: she wants 5% equity, not 5% of profit, because equity carries upside in an acquisition. Build her argument. Then construct the counter from the founder's perspective. What conditions (likelihood of exit, expected exit multiple, profit volatility) would tip the answer toward equity, and what conditions keep it on profit-share?
 
-There are no "official" answers — defend your reasoning with specifics. Strong responses cite the hiring triggers, the comp bands, the work-sample rubric dimensions, and at least one named case.
+There are no "official" answers, defend your reasoning with specifics. Strong responses cite the hiring triggers, the comp bands, the work-sample rubric dimensions, and at least one named case.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-> ⚖️ **Disclaimer:** US tax/employment classification (1099 vs W-2), international hiring, and contractor agreements have serious legal and tax implications. This module is operational guidance — not legal or tax advice. Always consult a CPA + an employment attorney before hiring.
+> ⚖️ **Disclaimer:** US tax/employment classification (1099 vs W-2), international hiring, and contractor agreements have serious legal and tax implications. This module is operational guidance, not legal or tax advice. Always consult a CPA + an employment attorney before hiring.
 
-- 📖 *Who* by Geoff Smart — the foundational hiring book (the "A-Method")
-- 📖 *The Hard Thing About Hard Things* by Ben Horowitz — management foundations
-- 📖 *High Output Management* by Andy Grove — cadence + 1:1s
-- 📖 *Designjoy founder posts on Twitter* — solo-by-choice case
-- 📖 *Greg Isenberg on YouTube* — AI-native team builds
-- 📖 *Anthony Pierri's LinkedIn* — paid work-sample interview thread
-- 📖 *Pavilion Compensation Reports* — real market comp data
-- 📖 *Built In Salary Guide* — annual marketing salary surveys
-- 📖 *OnlineJobs.ph guides* — Filipino remote hiring
-- 📖 *Deel + Remote.com* — international EOR documentation
+- 📖 *Who* by Geoff Smart, the foundational hiring book (the "A-Method")
+- 📖 *The Hard Thing About Hard Things* by Ben Horowitz, management foundations
+- 📖 *High Output Management* by Andy Grove, cadence + 1:1s
+- 📖 *Designjoy founder posts on Twitter*, solo-by-choice case
+- 📖 *Greg Isenberg on YouTube*, AI-native team builds
+- 📖 *Anthony Pierri's LinkedIn*, paid work-sample interview thread
+- 📖 *Pavilion Compensation Reports*, real market comp data
+- 📖 *Built In Salary Guide*, annual marketing salary surveys
+- 📖 *OnlineJobs.ph guides*, Filipino remote hiring
+- 📖 *Deel + Remote.com*, international EOR documentation

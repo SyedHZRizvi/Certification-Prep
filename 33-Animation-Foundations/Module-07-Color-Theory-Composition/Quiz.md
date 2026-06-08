@@ -15,9 +15,9 @@ D. The saturation level of a specific hue
 
 ### Q2. Which of the three color properties (hue, saturation, value) is considered most important for readability and emotional impact in animation?
 
-A. Hue — the specific color name is the primary identifier
-B. Saturation — intensity determines emotional impact most directly
-C. Value — lightness/darkness contrast determines whether elements are distinguishable
+A. Hue, the specific color name is the primary identifier
+B. Saturation, intensity determines emotional impact most directly
+C. Value, lightness/darkness contrast determines whether elements are distinguishable
 D. All three are equally important; none takes precedence
 
 ---
@@ -60,7 +60,7 @@ D. A single hue in multiple saturations
 
 ### Q7. In *Coco*, the Land of the Dead is designed with extreme color saturation and brightness. The living world is more desaturated. This reversal of expected color logic communicates:
 
-A. The cultural celebration aspect of Día de los Muertos — death as joyful reunion, not sadness
+A. The cultural celebration aspect of Día de los Muertos, death as joyful reunion, not sadness
 B. That the Land of the Dead is a dream sequence, using bright colors to signal unreality
 C. A technical requirement of the 3D rendering pipeline that makes dark environments harder to light
 D. That Coco's grandfather in the Land of the Dead is a more interesting character than the family in the living world
@@ -69,17 +69,17 @@ D. That Coco's grandfather in the Land of the Dead is a more interesting charact
 
 ### Q8. Warm colors (red, orange, yellow) appear to do what in a composition?
 
-A. Recede — they move away from the viewer
-B. Unify — they create harmony across all elements
-C. Advance — they appear to move toward the viewer
-D. Neutralize — they balance cool colors without creating depth
+A. Recede, they move away from the viewer
+B. Unify, they create harmony across all elements
+C. Advance, they appear to move toward the viewer
+D. Neutralize, they balance cool colors without creating depth
 
 ---
 
 ### Q9. The professional color approach at Pixar begins by establishing:
 
-A. The hue palette — choosing specific named colors for each scene
-B. Strong value relationships first — compositions that work in grayscale will work in color
+A. The hue palette, choosing specific named colors for each scene
+B. Strong value relationships first, compositions that work in grayscale will work in color
 C. The saturation level of each environment relative to its emotional weight
 D. The complementary color pairs for each major character
 
@@ -106,7 +106,7 @@ D. A technique for separating foreground and background through color contrast
 ### Q12. A "color script" in animation production is:
 
 A. The script supervisor's notes on continuity of character colors across scenes
-B. A large-scale planning document showing the color arc of an entire film — how palette shifts from beginning to end
+B. A large-scale planning document showing the color arc of an entire film, how palette shifts from beginning to end
 C. The digital file format (.colorscript) used by Pixar's proprietary rendering software
 D. A list of approved colors that all departments must use for consistency
 
@@ -124,7 +124,7 @@ D. The technique of using background characters to comment on foreground action
 ### Q14. "Negative space" in composition is:
 
 A. The dark, shadow areas of a composition that reduce readability
-B. Space that is used actively in the composition — empty areas that breathe and balance the filled areas
+B. Space that is used actively in the composition, empty areas that breathe and balance the filled areas
 C. A composition error where too much of the frame is empty and unfilled
 D. The area behind a character that the camera cannot capture
 
@@ -151,7 +151,7 @@ D. Guidelines used in the rough animation pass before cleanup
 ### Q17. In *Up* (Pixar), the opening montage moves from high saturation to low saturation as the story progresses from young married life to grief. This technique uses:
 
 A. Complementary color contrast to signal emotional change
-B. Saturation as an emotional volume control — full saturation = joy; desaturated = grief
+B. Saturation as an emotional volume control, full saturation = joy; desaturated = grief
 C. A monochromatic palette to signal the passage of years
 D. Value shifts rather than saturation shifts to communicate emotional change
 
@@ -159,10 +159,10 @@ D. Value shifts rather than saturation shifts to communicate emotional change
 
 ### Q18. Cool colors (blue, purple, green) in composition typically:
 
-A. Advance — they appear closer to the viewer than they physically are
+A. Advance, they appear closer to the viewer than they physically are
 B. Create comedic contrast when placed next to warm characters
-C. Recede — they appear to move away from the viewer, which is used to establish depth in animation backgrounds
-D. Neutralize — they do not affect depth perception in animation
+C. Recede, they appear to move away from the viewer, which is used to establish depth in animation backgrounds
+D. Neutralize, they do not affect depth perception in animation
 
 ---
 
@@ -222,50 +222,50 @@ D. Dynamic symmetry
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** Value = lightness/darkness of a color, independent of hue. A red can have high value (pink) or low value (dark red).
+**Q1, B.** Value = lightness/darkness of a color, independent of hue. A red can have high value (pink) or low value (dark red).
 
-**Q2 — C.** Value contrast is most important for readability. Similar values (even of different hues) are harder to distinguish than high value contrast.
+**Q2, C.** Value contrast is most important for readability. Similar values (even of different hues) are harder to distinguish than high value contrast.
 
-**Q3 — B.** Analogous colors are adjacent on the color wheel. They harmonize naturally.
+**Q3, B.** Analogous colors are adjacent on the color wheel. They harmonize naturally.
 
-**Q4 — B.** Complementary colors are directly opposite on the color wheel. They create high contrast and visual tension.
+**Q4, B.** Complementary colors are directly opposite on the color wheel. They create high contrast and visual tension.
 
-**Q5 — C.** The desaturation communicates Riley's deteriorating emotional state — depression shown through color.
+**Q5 C.** The desaturation communicates Riley's deteriorating emotional state depression shown through color.
 
-**Q6 — B.** High-key = predominantly light values. Creates openness, joy, brightness.
+**Q6, B.** High-key = predominantly light values. Creates openness, joy, brightness.
 
-**Q7 — A.** *Coco*'s saturated Land of the Dead communicates the celebration of Día de los Muertos — death as joyful reunion, not darkness.
+**Q7 A.** *Coco*'s saturated Land of the Dead communicates the celebration of Día de los Muertos death as joyful reunion, not darkness.
 
-**Q8 — C.** Warm colors advance — they appear to move toward the viewer. This is used in animation to push foreground characters forward.
+**Q8 C.** Warm colors advance they appear to move toward the viewer. This is used in animation to push foreground characters forward.
 
-**Q9 — B.** Pixar establishes value relationships first — compositions that work in grayscale work in color.
+**Q9 B.** Pixar establishes value relationships first compositions that work in grayscale work in color.
 
-**Q10 — A.** Monochromatic = one hue in multiple values and saturations.
+**Q10, A.** Monochromatic = one hue in multiple values and saturations.
 
-**Q11 — B.** Chromatic aberration in Spider-Verse = stylistic simulation of camera lens color channel misalignment. Deliberate, not an error.
+**Q11, B.** Chromatic aberration in Spider-Verse = stylistic simulation of camera lens color channel misalignment. Deliberate, not an error.
 
-**Q12 — B.** Color script = planning document showing the film's color arc from beginning to end.
+**Q12, B.** Color script = planning document showing the film's color arc from beginning to end.
 
-**Q13 — C.** Figure-ground relationship = high contrast between subject and background for clear readability.
+**Q13, C.** Figure-ground relationship = high contrast between subject and background for clear readability.
 
-**Q14 — B.** Negative space = empty areas used actively in composition. Not a mistake — a tool.
+**Q14 B.** Negative space = empty areas used actively in composition. Not a mistake a tool.
 
-**Q15 — B.** Triadic = three colors equally spaced around the wheel (120 degrees apart).
+**Q15, B.** Triadic = three colors equally spaced around the wheel (120 degrees apart).
 
-**Q16 — B.** Leading lines = visual lines in the environment that guide the eye to the focal point.
+**Q16, B.** Leading lines = visual lines in the environment that guide the eye to the focal point.
 
-**Q17 — B.** Saturation functions as emotional volume control — *Up* uses desaturation to communicate grief.
+**Q17 B.** Saturation functions as emotional volume control *Up* uses desaturation to communicate grief.
 
-**Q18 — C.** Cool colors recede — they appear to move away from the viewer, establishing depth in backgrounds.
+**Q18 C.** Cool colors recede they appear to move away from the viewer, establishing depth in backgrounds.
 
-**Q19 — C.** Ensemble characters must be distinguishable from each other, especially in shared scenes.
+**Q19, C.** Ensemble characters must be distinguishable from each other, especially in shared scenes.
 
-**Q20 — B.** The Pixar grayscale rule: establish value relationships before adding hue. A composition that fails in grayscale will fail in color.
+**Q20, B.** The Pixar grayscale rule: establish value relationships before adding hue. A composition that fails in grayscale will fail in color.
 
-**Q21 — C.** Safety, innocence, joy = high-key palette (light values, bright, open).
+**Q21, C.** Safety, innocence, joy = high-key palette (light values, bright, open).
 
-**Q22 — B.** Complementary accent = analogous palette + one accent in the complementary color to draw the eye.
+**Q22, B.** Complementary accent = analogous palette + one accent in the complementary color to draw the eye.
 
-**Q23 — B.** Color temperature = warm/cool perception and how it affects emotional reading and depth perception in animation.
+**Q23, B.** Color temperature = warm/cool perception and how it affects emotional reading and depth perception in animation.
 
-**Q24 — B.** Placing subjects at the four intersection points of a 3x3 grid = the rule of thirds.
+**Q24, B.** Placing subjects at the four intersection points of a 3x3 grid = the rule of thirds.

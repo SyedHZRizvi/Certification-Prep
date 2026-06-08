@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AWS Solutions Architect Associate (SAA-C03)
+# 🧪 Final Mock Exam, AWS Solutions Architect Associate (SAA-C03)
 
 > **Conditions:** Set a 130-minute timer. 65 questions. **REAL exam length & time.** No notes, no Google, no breaks. This is your dress rehearsal.
 > **Pass mark:** 47/65 (72%)
@@ -155,7 +155,7 @@ D. Multi-Site Active-Active
 ### 25. To replace an aging physical tape backup system while keeping existing software:
 A. Snowball
 B. AWS Backup
-C. Storage Gateway — Tape Gateway (VTL)
+C. Storage Gateway, Tape Gateway (VTL)
 D. CloudFront
 
 ### 26. A workload requires immutable retention of records for 7 years with zero ability to override:
@@ -375,7 +375,7 @@ C. Config
 D. Macie
 
 ### 62. A workload has spiky traffic. To match capacity with demand and pay only for usage:
-A. Lambda (or Fargate / Aurora Serverless v2) — pay per use
+A. Lambda (or Fargate / Aurora Serverless v2), pay per use
 B. EC2 reserved for max capacity
 C. Dedicated Hosts
 D. Outposts
@@ -422,135 +422,135 @@ D. AWS Config rule + SSM auto-remediation
 
 ## Detailed answer rationales
 
-**Q1. Answer: B — Target tracking on average CPU.** Target tracking is the simplest scaling policy: ASG maintains a target CPU value. A: Step scaling is for more granular alarm-driven response. C: Scheduled is for predictable patterns. D: Manual defeats auto-scaling. **Takeaway:** Simple CPU-based scaling = target tracking.
+**Q1. Answer: B, Target tracking on average CPU.** Target tracking is the simplest scaling policy: ASG maintains a target CPU value. A: Step scaling is for more granular alarm-driven response. C: Scheduled is for predictable patterns. D: Manual defeats auto-scaling. **Takeaway:** Simple CPU-based scaling = target tracking.
 
-**Q2. Answer: B — Spot Instances with checkpointing.** Spot = up to 90% off; fault-tolerant batch is the canonical Spot use case. A: On-Demand is full price. C: 3-yr RI requires steady use. D: Dedicated Hosts are for licensing isolation. **Takeaway:** Fault-tolerant batch = Spot.
+**Q2. Answer: B, Spot Instances with checkpointing.** Spot = up to 90% off; fault-tolerant batch is the canonical Spot use case. A: On-Demand is full price. C: 3-yr RI requires steady use. D: Dedicated Hosts are for licensing isolation. **Takeaway:** Fault-tolerant batch = Spot.
 
-**Q3. Answer: B — Gateway VPC Endpoint for S3.** Free, eliminates NAT data charges. A: NAT has per-GB cost. C: Public subnets defeat private-subnet design. D: CloudFront is delivery. **Takeaway:** Private subnet + S3 = Gateway endpoint.
+**Q3. Answer: B, Gateway VPC Endpoint for S3.** Free, eliminates NAT data charges. A: NAT has per-GB cost. C: Public subnets defeat private-subnet design. D: CloudFront is delivery. **Takeaway:** Private subnet + S3 = Gateway endpoint.
 
-**Q4. Answer: D — CloudFront in front of ALB and S3.** CloudFront caches at edge globally, reduces origin load. A-C: All unrelated to global content delivery. **Takeaway:** Global users + reduce origin load = CloudFront.
+**Q4. Answer: D, CloudFront in front of ALB and S3.** CloudFront caches at edge globally, reduces origin load. A-C: All unrelated to global content delivery. **Takeaway:** Global users + reduce origin load = CloudFront.
 
-**Q5. Answer: B — AWS WAF.** WAF managed rule groups block SQLi/XSS at layer 7. A: NACL is L3/4. C: NAT is outbound. D: Inspector is for vuln scanning. **Takeaway:** SQLi/XSS = WAF.
+**Q5. Answer: B, AWS WAF.** WAF managed rule groups block SQLi/XSS at layer 7. A: NACL is L3/4. C: NAT is outbound. D: Inspector is for vuln scanning. **Takeaway:** SQLi/XSS = WAF.
 
-**Q6. Answer: A — Aurora Global Database write-forwarding.** Aurora Global supports cross-region writes with forwarding to primary; failover under 1 min. B: Multi-AZ is single-region. C: Daily snapshots = hours of RPO. D: EBS multi-attach is single-AZ. **Takeaway:** Stateful relational + global active-active = Aurora Global with write-forwarding.
+**Q6. Answer: A, Aurora Global Database write-forwarding.** Aurora Global supports cross-region writes with forwarding to primary; failover under 1 min. B: Multi-AZ is single-region. C: Daily snapshots = hours of RPO. D: EBS multi-attach is single-AZ. **Takeaway:** Stateful relational + global active-active = Aurora Global with write-forwarding.
 
-**Q7. Answer: B — Amazon EFS.** NFS, mount targets per AZ, accessible by EC2 across AZs and via on-prem NFS clients. A: EBS gp3 single-instance/single-AZ. C: Instance Store ephemeral. D: S3 lacks POSIX. **Takeaway:** Shared NFS across AZs (+on-prem) = EFS.
+**Q7. Answer: B, Amazon EFS.** NFS, mount targets per AZ, accessible by EC2 across AZs and via on-prem NFS clients. A: EBS gp3 single-instance/single-AZ. C: Instance Store ephemeral. D: S3 lacks POSIX. **Takeaway:** Shared NFS across AZs (+on-prem) = EFS.
 
-**Q8. Answer: C — Gateway VPC Endpoint for DynamoDB.** Free, no internet route. A: CloudFront is HTTP. B: NAT needs internet. D: Direct Connect is hybrid. **Takeaway:** Private DynamoDB access = Gateway VPC Endpoint (DynamoDB or S3 only).
+**Q8. Answer: C, Gateway VPC Endpoint for DynamoDB.** Free, no internet route. A: CloudFront is HTTP. B: NAT needs internet. D: Direct Connect is hybrid. **Takeaway:** Private DynamoDB access = Gateway VPC Endpoint (DynamoDB or S3 only).
 
-**Q9. Answer: D — Kinesis Data Firehose.** Managed near-real-time delivery to S3, Redshift, OpenSearch — no shard management. A: Step Functions is orchestration. B: SQS is queue not stream. C: Streams require shard management. **Takeaway:** Stream data to S3/Redshift, minimal management = Firehose.
+**Q9. Answer: D Kinesis Data Firehose.** Managed near-real-time delivery to S3, Redshift, OpenSearch no shard management. A: Step Functions is orchestration. B: SQS is queue not stream. C: Streams require shard management. **Takeaway:** Stream data to S3/Redshift, minimal management = Firehose.
 
-**Q10. Answer: B — Bucket policy denying unencrypted PUTs.** Enforces KMS encryption at bucket level for all callers. A: BPA blocks public access. C: CloudFront is delivery. D: Tag-based IAM is per-identity, not bucket-wide. **Takeaway:** Enforce KMS uploads = bucket policy.
+**Q10. Answer: B, Bucket policy denying unencrypted PUTs.** Enforces KMS encryption at bucket level for all callers. A: BPA blocks public access. C: CloudFront is delivery. D: Tag-based IAM is per-identity, not bucket-wide. **Takeaway:** Enforce KMS uploads = bucket policy.
 
-**Q11. Answer: C — RDS Multi-AZ.** Synchronous standby with 60-120s auto-failover. A: Single-AZ has no failover. B: Same-AZ replicas don't survive AZ failure. D: Snapshots are point-in-time. **Takeaway:** OLTP + AZ HA = Multi-AZ.
+**Q11. Answer: C, RDS Multi-AZ.** Synchronous standby with 60-120s auto-failover. A: Single-AZ has no failover. B: Same-AZ replicas don't survive AZ failure. D: Snapshots are point-in-time. **Takeaway:** OLTP + AZ HA = Multi-AZ.
 
-**Q12. Answer: D — Aurora Read Replicas (up to 15).** Aurora supports 15 low-lag readers. A: NACLs unrelated. B: Multi-AZ doesn't scale reads (standard mode). C: RDS supports up to 5 replicas vs Aurora's 15. **Takeaway:** Aurora read scaling = up to 15 Read Replicas.
+**Q12. Answer: D, Aurora Read Replicas (up to 15).** Aurora supports 15 low-lag readers. A: NACLs unrelated. B: Multi-AZ doesn't scale reads (standard mode). C: RDS supports up to 5 replicas vs Aurora's 15. **Takeaway:** Aurora read scaling = up to 15 Read Replicas.
 
-**Q13. Answer: A — DMS with CDC + SCT.** Heterogeneous + minimal downtime = SCT (schema) + DMS CDC (ongoing data). B-D all unrelated. **Takeaway:** Heterogeneous DB migration with CDC = DMS + SCT.
+**Q13. Answer: A, DMS with CDC + SCT.** Heterogeneous + minimal downtime = SCT (schema) + DMS CDC (ongoing data). B-D all unrelated. **Takeaway:** Heterogeneous DB migration with CDC = DMS + SCT.
 
-**Q14. Answer: A — AWS Application Migration Service (MGN).** Block-level VM replication to EC2; minimal cutover. B-D all unsuitable. **Takeaway:** Lift-and-shift VMs = MGN.
+**Q14. Answer: A, AWS Application Migration Service (MGN).** Block-level VM replication to EC2; minimal cutover. B-D all unsuitable. **Takeaway:** Lift-and-shift VMs = MGN.
 
-**Q15. Answer: D — Cross-account IAM Role with ExternalId.** Vendor read-only access pattern. A-C all security anti-patterns. **Takeaway:** Vendor cross-account = Role + ExternalId.
+**Q15. Answer: D, Cross-account IAM Role with ExternalId.** Vendor read-only access pattern. A-C all security anti-patterns. **Takeaway:** Vendor cross-account = Role + ExternalId.
 
-**Q16. Answer: D — Service Control Policy (SCP) at the OU/root.** Org-wide guardrails via SCPs at OU/root. A: SCP only on management acct doesn't affect members. B: Per-acct IAM doesn't scale. C: NACL is network. **Takeaway:** Org-wide guardrails = SCP at OU/root.
+**Q16. Answer: D, Service Control Policy (SCP) at the OU/root.** Org-wide guardrails via SCPs at OU/root. A: SCP only on management acct doesn't affect members. B: Per-acct IAM doesn't scale. C: NACL is network. **Takeaway:** Org-wide guardrails = SCP at OU/root.
 
-**Q17. Answer: A — Cognito Identity Pools.** Temporary AWS creds for app end-users. B-D anti-patterns. **Takeaway:** Mobile-app user creds = Cognito Identity Pools.
+**Q17. Answer: A, Cognito Identity Pools.** Temporary AWS creds for app end-users. B-D anti-patterns. **Takeaway:** Mobile-app user creds = Cognito Identity Pools.
 
-**Q18. Answer: B — AWS Global Accelerator.** 2 static Anycast IPs, L4 routing to multi-region with health checks. A: CloudFront is L7 HTTP. C: Route 53 Simple has no health-checked failover. D: NAT is outbound. **Takeaway:** Static IPs + L4 multi-region = Global Accelerator.
+**Q18. Answer: B, AWS Global Accelerator.** 2 static Anycast IPs, L4 routing to multi-region with health checks. A: CloudFront is L7 HTTP. C: Route 53 Simple has no health-checked failover. D: NAT is outbound. **Takeaway:** Static IPs + L4 multi-region = Global Accelerator.
 
-**Q19. Answer: C — AWS Direct Connect.** Lowest latency private fiber to AWS. A,B: VPN over internet. D: CloudFront is CDN. **Takeaway:** Private + predictable throughput from on-prem = Direct Connect.
+**Q19. Answer: C, AWS Direct Connect.** Lowest latency private fiber to AWS. A,B: VPN over internet. D: CloudFront is CDN. **Takeaway:** Private + predictable throughput from on-prem = Direct Connect.
 
-**Q20. Answer: A — CloudWatch Alarm on SQS backlog → ASG scale-out.** Standard pattern. B-D all manual or unrelated. **Takeaway:** Queue-depth scaling = CloudWatch alarm → ASG.
+**Q20. Answer: A, CloudWatch Alarm on SQS backlog → ASG scale-out.** Standard pattern. B-D all manual or unrelated. **Takeaway:** Queue-depth scaling = CloudWatch alarm → ASG.
 
-**Q21. Answer: A — Amazon GuardDuty.** Agentless ML threat detection on CloudTrail, VPC Flow, DNS. B: Macie is PII. C: Inspector is vuln scan. D: Config is compliance. **Takeaway:** ML threat detection = GuardDuty.
+**Q21. Answer: A, Amazon GuardDuty.** Agentless ML threat detection on CloudTrail, VPC Flow, DNS. B: Macie is PII. C: Inspector is vuln scan. D: Config is compliance. **Takeaway:** ML threat detection = GuardDuty.
 
-**Q22. Answer: D — Amazon Macie.** PII discovery in S3. A-C all wrong tool. **Takeaway:** PII in S3 = Macie.
+**Q22. Answer: D, Amazon Macie.** PII discovery in S3. A-C all wrong tool. **Takeaway:** PII in S3 = Macie.
 
-**Q23. Answer: A — AWS X-Ray.** Distributed tracing across services. B: Just alarms. C: Audit log. D: Vuln scan. **Takeaway:** Distributed tracing = X-Ray.
+**Q23. Answer: A, AWS X-Ray.** Distributed tracing across services. B: Just alarms. C: Audit log. D: Vuln scan. **Takeaway:** Distributed tracing = X-Ray.
 
-**Q24. Answer: B — Backup & Restore.** Cheapest tier when RTO hours OK. A,C: Pricier. D: Most expensive. **Takeaway:** Hours-RTO + cheap = Backup & Restore.
+**Q24. Answer: B, Backup & Restore.** Cheapest tier when RTO hours OK. A,C: Pricier. D: Most expensive. **Takeaway:** Hours-RTO + cheap = Backup & Restore.
 
-**Q25. Answer: C — Tape Gateway (VTL).** Replaces tape library, keeps existing backup software. A: One-time. B: Requires new software. D: CDN. **Takeaway:** Replace tape, keep software = Tape Gateway.
+**Q25. Answer: C, Tape Gateway (VTL).** Replaces tape library, keeps existing backup software. A: One-time. B: Requires new software. D: CDN. **Takeaway:** Replace tape, keep software = Tape Gateway.
 
-**Q26. Answer: C — Object Lock Compliance mode.** Immutable, no override even by root. A: Versioning alone deletable. B: Governance allows override. D: MFA-required isn't immutable. **Takeaway:** Immutable + no override = Object Lock Compliance.
+**Q26. Answer: C, Object Lock Compliance mode.** Immutable, no override even by root. A: Versioning alone deletable. B: Governance allows override. D: MFA-required isn't immutable. **Takeaway:** Immutable + no override = Object Lock Compliance.
 
-**Q27. Answer: D — Snowball Edge Storage Optimized.** 500TB over 100Mbps = months. Snowball ~1 week. **Takeaway:** Big offline transfer = Snowball.
+**Q27. Answer: D, Snowball Edge Storage Optimized.** 500TB over 100Mbps = months. Snowball ~1 week. **Takeaway:** Big offline transfer = Snowball.
 
-**Q28. Answer: A — Kinesis Data Streams with 7-day retention.** Replay + multiple consumers. B: SQS deletes after read. C: SNS no retention. D: Step Functions is orchestration. **Takeaway:** Replay + multi-consumer = Kinesis Streams.
+**Q28. Answer: A, Kinesis Data Streams with 7-day retention.** Replay + multiple consumers. B: SQS deletes after read. C: SNS no retention. D: Step Functions is orchestration. **Takeaway:** Replay + multi-consumer = Kinesis Streams.
 
-**Q29. Answer: C — EventBridge Scheduler / scheduled rule.** Cron-style Lambda invocation. Other options are hacks or unrelated. **Takeaway:** Lambda on schedule = EventBridge.
+**Q29. Answer: C, EventBridge Scheduler / scheduled rule.** Cron-style Lambda invocation. Other options are hacks or unrelated. **Takeaway:** Lambda on schedule = EventBridge.
 
-**Q30. Answer: C — Backup & Restore → Pilot Light → Warm Standby → Multi-Site.** This is the canonical 4-tier ladder cheapest-to-most-expensive, worst-to-best RPO/RTO. **Takeaway:** MEMORIZE this order.
+**Q30. Answer: C, Backup & Restore → Pilot Light → Warm Standby → Multi-Site.** This is the canonical 4-tier ladder cheapest-to-most-expensive, worst-to-best RPO/RTO. **Takeaway:** MEMORIZE this order.
 
-**Q31. Answer: D — IAM Role via instance profile.** EC2 short-lived auto-rotated creds. A-C anti-patterns. **Takeaway:** EC2 to AWS service = IAM role.
+**Q31. Answer: D, IAM Role via instance profile.** EC2 short-lived auto-rotated creds. A-C anti-patterns. **Takeaway:** EC2 to AWS service = IAM role.
 
-**Q32. Answer: D — SNS FIFO with multiple SQS FIFO subscribers.** Ordered + exactly-once + fan-out. A: EventBridge no FIFO. B: Standard loses ordering. C: Firehose buffers. **Takeaway:** Ordered fan-out = SNS FIFO → SQS FIFO.
+**Q32. Answer: D, SNS FIFO with multiple SQS FIFO subscribers.** Ordered + exactly-once + fan-out. A: EventBridge no FIFO. B: Standard loses ordering. C: Firehose buffers. **Takeaway:** Ordered fan-out = SNS FIFO → SQS FIFO.
 
-**Q33. Answer: B — SCP using `aws:RequestedRegion`.** Region restriction across accounts = SCP. A: Doesn't exist. C: Network. D: Geo-restriction. **Takeaway:** Region restriction = SCP.
+**Q33. Answer: B, SCP using `aws:RequestedRegion`.** Region restriction across accounts = SCP. A: Doesn't exist. C: Network. D: Geo-restriction. **Takeaway:** Region restriction = SCP.
 
-**Q34. Answer: B — DAX.** Sub-ms DynamoDB cache. A: ms-class. C: HTTP edge. D: Analytics. **Takeaway:** DynamoDB hot keys = DAX.
+**Q34. Answer: B, DAX.** Sub-ms DynamoDB cache. A: ms-class. C: HTTP edge. D: Analytics. **Takeaway:** DynamoDB hot keys = DAX.
 
-**Q35. Answer: A — Application Load Balancer.** Path-based routing is L7. B: NLB is L4. C: GWLB is for 3rd-party appliances. D: NAT is networking. **Takeaway:** Path routing = ALB.
+**Q35. Answer: A, Application Load Balancer.** Path-based routing is L7. B: NLB is L4. C: GWLB is for 3rd-party appliances. D: NAT is networking. **Takeaway:** Path routing = ALB.
 
-**Q36. Answer: B — Enable ELB health check on the ASG.** ELB checks app health; ASG replaces unhealthy. A: EC2 checks miss app failures. C-D defeat purpose. **Takeaway:** ASG + ELB = ELB health check.
+**Q36. Answer: B, Enable ELB health check on the ASG.** ELB checks app health; ASG replaces unhealthy. A: EC2 checks miss app failures. C-D defeat purpose. **Takeaway:** ASG + ELB = ELB health check.
 
-**Q37. Answer: C — Failover routing with health checks.** Active-passive DNS DR pattern. A-B,D wrong patterns. **Takeaway:** Active-passive DR DNS = Failover routing.
+**Q37. Answer: C, Failover routing with health checks.** Active-passive DNS DR pattern. A-B,D wrong patterns. **Takeaway:** Active-passive DR DNS = Failover routing.
 
-**Q38. Answer: D — AWS Fargate (ECS or EKS).** Serverless containers, no servers. A: Outposts is hybrid hardware. B: K8s requires server mgmt. C: Lambda is functions not containers. **Takeaway:** Serverless containers = Fargate.
+**Q38. Answer: D, AWS Fargate (ECS or EKS).** Serverless containers, no servers. A: Outposts is hybrid hardware. B: K8s requires server mgmt. C: Lambda is functions not containers. **Takeaway:** Serverless containers = Fargate.
 
-**Q39. Answer: A — Schedule stop/start; Lambda or Spot for tests.** Cost-effective for idle dev. B-D over-commitments. **Takeaway:** Dev idle = stop after hours.
+**Q39. Answer: A, Schedule stop/start; Lambda or Spot for tests.** Cost-effective for idle dev. B-D over-commitments. **Takeaway:** Dev idle = stop after hours.
 
-**Q40. Answer: A — Intelligent-Tiering.** Unknown / shifting patterns = AWS auto-tiers. B: Always-hot. C: Cold archive. D: Single-AZ. **Takeaway:** Unknown access pattern = Intelligent-Tiering.
+**Q40. Answer: A, Intelligent-Tiering.** Unknown / shifting patterns = AWS auto-tiers. B: Always-hot. C: Cold archive. D: Single-AZ. **Takeaway:** Unknown access pattern = Intelligent-Tiering.
 
-**Q41. Answer: B — CloudFront + OAC + BPA on.** Modern private-origin pattern. A: Defeats purpose. C-D unrelated. **Takeaway:** Private S3 + CloudFront = OAC + BPA on.
+**Q41. Answer: B, CloudFront + OAC + BPA on.** Modern private-origin pattern. A: Defeats purpose. C-D unrelated. **Takeaway:** Private S3 + CloudFront = OAC + BPA on.
 
-**Q42. Answer: C — Cache-aside (lazy load) with TTL.** Few hot keys + rare changes = cache-aside is simple and correct. A: Continuous replication wastes resources. B: No caching loses opportunity. D: Glacier is archival. **Takeaway:** Read-heavy hot keys + rare changes = cache-aside.
+**Q42. Answer: C, Cache-aside (lazy load) with TTL.** Few hot keys + rare changes = cache-aside is simple and correct. A: Continuous replication wastes resources. B: No caching loses opportunity. D: Glacier is archival. **Takeaway:** Read-heavy hot keys + rare changes = cache-aside.
 
-**Q43. Answer: C — Materialized Views in Redshift.** Pre-aggregated for repeated dashboard queries. A: WAF unrelated. B: NACL unrelated. D: Vuln scan. **Takeaway:** Pre-aggregate in Redshift = Materialized Views.
+**Q43. Answer: C, Materialized Views in Redshift.** Pre-aggregated for repeated dashboard queries. A: WAF unrelated. B: NACL unrelated. D: Vuln scan. **Takeaway:** Pre-aggregate in Redshift = Materialized Views.
 
-**Q44. Answer: C — RI Standard 3-year all-upfront.** Deepest discount for steady predictable workload. A-B,D unsuitable. **Takeaway:** Steady 3-year = Standard RI 3yr all-upfront.
+**Q44. Answer: C, RI Standard 3-year all-upfront.** Deepest discount for steady predictable workload. A-B,D unsuitable. **Takeaway:** Steady 3-year = Standard RI 3yr all-upfront.
 
-**Q45. Answer: A — Compute Savings Plan.** Flexibility across families/sizes + Lambda + Fargate. B-D less flexible. **Takeaway:** Flexible compute discount = Compute SP.
+**Q45. Answer: A, Compute Savings Plan.** Flexibility across families/sizes + Lambda + Fargate. B-D less flexible. **Takeaway:** Flexible compute discount = Compute SP.
 
-**Q46. Answer: A — Enable Versioning + create IAM role.** CRR prerequisites. B: Multi-AZ unrelated. C: VPC endpoint unrelated. D: BPA unrelated. **Takeaway:** CRR prerequisites = versioning + IAM role.
+**Q46. Answer: A, Enable Versioning + create IAM role.** CRR prerequisites. B: Multi-AZ unrelated. C: VPC endpoint unrelated. D: BPA unrelated. **Takeaway:** CRR prerequisites = versioning + IAM role.
 
-**Q47. Answer: D — Resource Access Manager (RAM) or expose via API.** RAM shares specific resources across accounts. A: Networking. B: Anti-pattern. C: Operational pain. **Takeaway:** Share resources cross-account = RAM.
+**Q47. Answer: D, Resource Access Manager (RAM) or expose via API.** RAM shares specific resources across accounts. A: Networking. B: Anti-pattern. C: Operational pain. **Takeaway:** Share resources cross-account = RAM.
 
-**Q48. Answer: D — AWS Cost Anomaly Detection.** ML, no thresholds. A: Web firewall. B-C threshold-based. **Takeaway:** ML cost surprises = Cost Anomaly Detection.
+**Q48. Answer: D, AWS Cost Anomaly Detection.** ML, no thresholds. A: Web firewall. B-C threshold-based. **Takeaway:** ML cost surprises = Cost Anomaly Detection.
 
-**Q49. Answer: D — AWS Backup.** Centralized cross-service backups. A-C unrelated services. **Takeaway:** Cross-service backups = AWS Backup.
+**Q49. Answer: D, AWS Backup.** Centralized cross-service backups. A-C unrelated services. **Takeaway:** Cross-service backups = AWS Backup.
 
-**Q50. Answer: A — SNS topic → multiple SQS subscriptions (fan-out).** Standard pattern. B: Anti-pattern. C: Buffered delivery. D: Orchestration. **Takeaway:** Fan-out one event to many queues = SNS → SQS.
+**Q50. Answer: A, SNS topic → multiple SQS subscriptions (fan-out).** Standard pattern. B: Anti-pattern. C: Buffered delivery. D: Orchestration. **Takeaway:** Fan-out one event to many queues = SNS → SQS.
 
-**Q51. Answer: C — Task IAM roles with narrow permissions.** Fargate's per-task IAM. A-B,D anti-patterns. **Takeaway:** Fargate least privilege = task IAM role.
+**Q51. Answer: C, Task IAM roles with narrow permissions.** Fargate's per-task IAM. A-B,D anti-patterns. **Takeaway:** Fargate least privilege = task IAM role.
 
-**Q52. Answer: C — Gateway Load Balancer (GWLB).** Bump-in-the-wire for 3rd-party appliances using GENEVE. A: L4 only. B: L7 HTTP. D: NAT. **Takeaway:** 3rd-party firewall fleet = GWLB.
+**Q52. Answer: C, Gateway Load Balancer (GWLB).** Bump-in-the-wire for 3rd-party appliances using GENEVE. A: L4 only. B: L7 HTTP. D: NAT. **Takeaway:** 3rd-party firewall fleet = GWLB.
 
-**Q53. Answer: C — 5 TB.** S3 max object size. **Takeaway:** Memorize: 5GB single PUT, 5TB max object.
+**Q53. Answer: C, 5 TB.** S3 max object size. **Takeaway:** Memorize: 5GB single PUT, 5TB max object.
 
-**Q54. Answer: C — Health check grace period + ELB health checks.** Same as PE-1 Q26 — give app warm-up time, then ELB-based health check. **Takeaway:** Slow app + ASG = grace + ELB health.
+**Q54. Answer: C Health check grace period + ELB health checks.** Same as PE-1 Q26 give app warm-up time, then ELB-based health check. **Takeaway:** Slow app + ASG = grace + ELB health.
 
-**Q55. Answer: D — eu-central-1 + SCP denying other regions.** Combo of correct region + governance. A-C insufficient or wrong. **Takeaway:** Data residency = right region + SCP.
+**Q55. Answer: D, eu-central-1 + SCP denying other regions.** Combo of correct region + governance. A-C insufficient or wrong. **Takeaway:** Data residency = right region + SCP.
 
-**Q56. Answer: A — API Gateway usage plans + caching.** Built-in throttling and response caching. B-D unrelated. **Takeaway:** API throttling + caching = API Gateway features.
+**Q56. Answer: A, API Gateway usage plans + caching.** Built-in throttling and response caching. B-D unrelated. **Takeaway:** API throttling + caching = API Gateway features.
 
-**Q57. Answer: B — AWS Firewall Manager.** Centralizes WAF/Shield across Org. Others wrong service. **Takeaway:** Centralized WAF/Shield = Firewall Manager.
+**Q57. Answer: B, AWS Firewall Manager.** Centralizes WAF/Shield across Org. Others wrong service. **Takeaway:** Centralized WAF/Shield = Firewall Manager.
 
-**Q58. Answer: B — AWS DataSync (scheduled tasks).** Online NFS sync to S3. A: Offline. C: Tape replacement. D: Not managed. **Takeaway:** Scheduled NFS-to-S3 sync = DataSync.
+**Q58. Answer: B, AWS DataSync (scheduled tasks).** Online NFS sync to S3. A: Offline. C: Tape replacement. D: Not managed. **Takeaway:** Scheduled NFS-to-S3 sync = DataSync.
 
-**Q59. Answer: A — AWS Wavelength.** AWS in 5G telco network. B: Customer DC. C: Major metros (not 5G specifically). D: CDN. **Takeaway:** 5G mobile edge = Wavelength.
+**Q59. Answer: A, AWS Wavelength.** AWS in 5G telco network. B: Customer DC. C: Major metros (not 5G specifically). D: CDN. **Takeaway:** 5G mobile edge = Wavelength.
 
-**Q60. Answer: B — AWS Security Hub.** Aggregates findings from GuardDuty, Inspector, Macie, partners. A: Compliance. C: Metrics. D: Web firewall. **Takeaway:** Consolidated security findings = Security Hub.
+**Q60. Answer: B, AWS Security Hub.** Aggregates findings from GuardDuty, Inspector, Macie, partners. A: Compliance. C: Metrics. D: Web firewall. **Takeaway:** Consolidated security findings = Security Hub.
 
-**Q61. Answer: B — CloudTrail.** Records every API call including delete actions. A: Metrics, not who/what. C: Config tracks state, lacks API caller details for one-off deletes the same way. D: PII discovery. **Takeaway:** Who did what API call = CloudTrail.
+**Q61. Answer: B, CloudTrail.** Records every API call including delete actions. A: Metrics, not who/what. C: Config tracks state, lacks API caller details for one-off deletes the same way. D: PII discovery. **Takeaway:** Who did what API call = CloudTrail.
 
-**Q62. Answer: A — Lambda (or Fargate / Aurora Serverless v2).** Pay-per-use serverless. B: Pay for peak idle. C-D fixed. **Takeaway:** Spiky pay-per-use = serverless services.
+**Q62. Answer: A, Lambda (or Fargate / Aurora Serverless v2).** Pay-per-use serverless. B: Pay for peak idle. C-D fixed. **Takeaway:** Spiky pay-per-use = serverless services.
 
-**Q63. Answer: C — IAM Access Analyzer.** Detects cross-account / public exposure proactively. A: Offline. B: Web firewall. D: Schema conversion. **Takeaway:** Public/cross-account access detection = IAM Access Analyzer.
+**Q63. Answer: C, IAM Access Analyzer.** Detects cross-account / public exposure proactively. A: Offline. B: Web firewall. D: Schema conversion. **Takeaway:** Public/cross-account access detection = IAM Access Analyzer.
 
-**Q64. Answer: D — AWS Transit Gateway with VPN/DX attachments.** Hub-and-spoke for many VPCs + on-prem. A-C wrong patterns. **Takeaway:** Hub-and-spoke = TGW.
+**Q64. Answer: D, AWS Transit Gateway with VPN/DX attachments.** Hub-and-spoke for many VPCs + on-prem. A-C wrong patterns. **Takeaway:** Hub-and-spoke = TGW.
 
-**Q65. Answer: D — AWS Config rule + SSM auto-remediation.** Config detects drift; SSM auto-fixes. A: Web firewall. B: API log. C: Vuln scan. **Takeaway:** Compliance + auto-remediation = Config + SSM.
+**Q65. Answer: D, AWS Config rule + SSM auto-remediation.** Config detects drift; SSM auto-fixes. A: Web firewall. B: API log. C: Vuln scan. **Takeaway:** Compliance + auto-remediation = Config + SSM.
 
 ---
 
@@ -558,9 +558,9 @@ D. AWS Config rule + SSM auto-remediation
 
 | Raw Score | Approx. Scaled | Verdict |
 |-----------|----------------|---------|
-| 60–65 | 900+ | 🏆 You're more than ready — go book the exam |
+| 60–65 | 900+ | 🏆 You're more than ready, go book the exam |
 | 47–59 | 720–890 | ✅ Pass; review your weak spots once more |
-| 39–46 | 600–710 | ⚠️ Border — wait a few days, drill flashcards, retest |
+| 39–46 | 600–710 | ⚠️ Border, wait a few days, drill flashcards, retest |
 | <39 | <600 | 🔁 Re-study weak modules; don't book yet |
 
 ---
@@ -568,7 +568,7 @@ D. AWS Config rule + SSM auto-remediation
 ## 🔍 Review Process
 
 1. Take the exam under realistic conditions: 130 minutes timer, no notes, no breaks.
-2. After finishing — score yourself.
+2. After finishing, score yourself.
 3. For each wrong answer:
 
    - Note the module

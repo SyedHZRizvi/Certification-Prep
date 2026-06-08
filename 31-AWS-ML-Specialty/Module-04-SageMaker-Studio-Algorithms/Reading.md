@@ -1,6 +1,6 @@
 # Module 4: SageMaker Studio & Built-In Algorithms 🧠
 
-> **Why this module matters:** Domain 3 of the MLS-C01 exam is **Modeling — 36%** of every question — by far the biggest block. About half of that is *"given a problem, pick the right SageMaker algorithm and the right hyperparameters."* SageMaker has **17 built-in algorithms**, and you need to know which one solves which problem, what input format it needs, what the key hyperparameters do, and what the gotchas are. This module makes you fluent in the SageMaker model layer.
+> **Why this module matters:** Domain 3 of the MLS-C01 exam is **Modeling 36%** of every question by far the biggest block. About half of that is *"given a problem, pick the right SageMaker algorithm and the right hyperparameters."* SageMaker has **17 built-in algorithms**, and you need to know which one solves which problem, what input format it needs, what the key hyperparameters do, and what the gotchas are. This module makes you fluent in the SageMaker model layer.
 
 > **Prerequisites for this module.** Modules 1, 2, 3 of this course. Helpful background:
 > - Comfort with scikit-learn-style `fit() / predict()` patterns
@@ -12,9 +12,9 @@
 
 ## 🍕 A Story: One IDE, One API, Seventeen Algorithms
 
-Meet Aditi. She is a data scientist at JPMorgan's COiN ("Contract Intelligence") team. In 2017 she built a model to triage commercial-loan documents that previously took 360,000 attorney-hours per year to review. The model used a custom Spark MLlib pipeline, custom feature extraction, and a self-hosted CPU cluster. The model worked beautifully — but every new project required reinventing the wheel.
+Meet Aditi. She is a data scientist at JPMorgan's COiN ("Contract Intelligence") team. In 2017 she built a model to triage commercial-loan documents that previously took 360,000 attorney-hours per year to review. The model used a custom Spark MLlib pipeline, custom feature extraction, and a self-hosted CPU cluster. The model worked beautifully, but every new project required reinventing the wheel.
 
-In 2020 her team moved to **Amazon SageMaker**. Where Aditi used to write 800 lines of orchestration glue, she now writes 8. The same `estimator.fit()` API works for XGBoost, Linear Learner, Object2Vec, BlazingText, and the team's own PyTorch container. Training data comes from S3; the model artifact goes back to S3; an endpoint is one `model.deploy()` call. Hyperparameter tuning, distributed training, model monitoring — all become a checkbox.
+In 2020 her team moved to **Amazon SageMaker**. Where Aditi used to write 800 lines of orchestration glue, she now writes 8. The same `estimator.fit()` API works for XGBoost, Linear Learner, Object2Vec, BlazingText, and the team's own PyTorch container. Training data comes from S3; the model artifact goes back to S3; an endpoint is one `model.deploy()` call. Hyperparameter tuning, distributed training, model monitoring, all become a checkbox.
 
 In 2024 the team retrains 14 models nightly across three lines of business. The data scientists ship 5× more experiments per quarter. JPMorgan's per-model cost-to-build fell ~70%.
 
@@ -22,7 +22,7 @@ That is the promise of SageMaker. This module teaches you the **IDE (Studio)**, 
 
 ---
 
-## 🖥️ SageMaker Studio — The IDE
+## 🖥️ SageMaker Studio, The IDE
 
 SageMaker Studio is a fully-managed, web-based ML IDE. It is the default place to do ML work on AWS in 2026.
 
@@ -73,7 +73,7 @@ SageMaker Studio is a fully-managed, web-based ML IDE. It is the default place t
 
 ---
 
-## 🐍 The SageMaker Python SDK — The Five-Line Pattern
+## 🐍 The SageMaker Python SDK, The Five-Line Pattern
 
 The exam will show you SDK code snippets. **Recognise this pattern.**
 
@@ -148,7 +148,7 @@ These are the algorithms the exam expects you to recognise. We will deepen each 
 | 16 | **Semantic Segmentation (built-in)** | Per-pixel classification | Image + mask pairs | FCN / PSP / DeepLab v3 |
 | 17 | **DeepAR** | Time-series forecasting | JSON Lines | Probabilistic multi-series forecasting |
 
-🎯 **Memory hook for the table:** **6 are tabular** (XGBoost, Linear Learner, K-Means, k-NN, Factorization Machines, RCF). **3 are NLP / embedding** (Object2Vec, NTM, LDA, BlazingText, seq2seq — well, 5 if we count seq2seq + Object2Vec; depends on how you slice). **3 are vision** (Image Classification, Object Detection, Semantic Segmentation). **1 is time-series** (DeepAR). **1 is anomaly** (IP Insights / RCF). **1 is dim. reduction** (PCA).
+🎯 **Memory hook for the table:** **6 are tabular** (XGBoost, Linear Learner, K-Means, k-NN, Factorization Machines, RCF). **3 are NLP / embedding** (Object2Vec, NTM, LDA, BlazingText, seq2seq, well, 5 if we count seq2seq + Object2Vec; depends on how you slice). **3 are vision** (Image Classification, Object Detection, Semantic Segmentation). **1 is time-series** (DeepAR). **1 is anomaly** (IP Insights / RCF). **1 is dim. reduction** (PCA).
 
 ### Drilling in: the algorithms you MUST know cold
 
@@ -156,7 +156,7 @@ We'll cover XGBoost, Linear Learner, K-Means, RCF, BlazingText, DeepAR, and Imag
 
 ---
 
-## 🌳 XGBoost — The Tabular Workhorse
+## 🌳 XGBoost, The Tabular Workhorse
 
 **XGBoost** = eXtreme Gradient Boosting. Created by Tianqi Chen (2014). The single most-used algorithm on Kaggle for tabular problems. SageMaker offers XGBoost as both a built-in algorithm AND a framework container (`framework_version="1.7-1"` or similar).
 
@@ -190,7 +190,7 @@ XGBoost (built-in) accepts CSV, Parquet, libsvm, and RecordIO-protobuf. **Header
 - For libsvm: standard sparse format (`label idx1:val1 idx2:val2 ...`)
 - For Parquet: explicit column mapping via hyperparameters
 
-### XGBoost on SageMaker — script vs algorithm mode
+### XGBoost on SageMaker, script vs algorithm mode
 
 | Mode | When |
 |------|------|
@@ -200,7 +200,7 @@ XGBoost (built-in) accepts CSV, Parquet, libsvm, and RecordIO-protobuf. **Header
 
 ---
 
-## 📈 Linear Learner — Multiple Linear/Logistic Models in Parallel
+## 📈 Linear Learner, Multiple Linear/Logistic Models in Parallel
 
 Built-in algorithm that fits multiple linear / logistic regression models in parallel and returns the best one (essentially built-in HPO inside the algorithm itself).
 
@@ -210,37 +210,37 @@ Built-in algorithm that fits multiple linear / logistic regression models in par
 | **Loss** | Logistic (classification), squared (regression), absolute, hinge, etc. |
 | **Key hyperparameter** | `predictor_type` = `binary_classifier` / `multiclass_classifier` / `regressor` |
 | **Regularisation** | `l1` (Lasso) and `wd` (weight decay = L2) |
-| **Sparse support** | Yes — RecordIO-protobuf is the recommended format |
+| **Sparse support** | Yes, RecordIO-protobuf is the recommended format |
 | **Built-in calibration** | `binary_classifier_model_selection_criteria` chooses the best model by metric like `accuracy`, `f_beta`, `precision_at_target_recall` |
 
 🎯 **Exam pattern.** *"Need a fast, interpretable linear model with built-in regularisation tuning."* → **Linear Learner**.
 
 ---
 
-## 🟣 K-Means — Unsupervised Clustering
+## 🟣 K-Means, Unsupervised Clustering
 
 | Property | Detail |
 |----------|--------|
 | **Task** | Cluster points into `k` groups |
-| **Key hyperparameter** | `k` (number of clusters) — pick via elbow method or silhouette score |
-| **Distance metric** | Euclidean (built-in only supports this — for cosine, use BYO) |
+| **Key hyperparameter** | `k` (number of clusters), pick via elbow method or silhouette score |
+| **Distance metric** | Euclidean (built-in only supports this, for cosine, use BYO) |
 | **Initialisation** | `random` or `kmeans++` (default) |
 | **Output** | Cluster assignments + cluster centroids |
 
 🎯 **Exam pattern.** *"Segment customers into 5 buckets based on purchase patterns."* → **K-Means with k=5**.
 
 🎯 **Pick `k`:**
-- **Elbow method** — plot SSE vs k, pick the inflection
-- **Silhouette score** — measure cluster cohesion/separation
+- **Elbow method**, plot SSE vs k, pick the inflection
+- **Silhouette score**, measure cluster cohesion/separation
 
 ---
 
-## 🌲 Random Cut Forest — Unsupervised Anomaly
+## 🌲 Random Cut Forest, Unsupervised Anomaly
 
 | Property | Detail |
 |----------|--------|
 | **Task** | Detect anomalies in tabular / time-series data |
-| **Labels needed** | None — unsupervised |
+| **Labels needed** | None, unsupervised |
 | **Output** | Anomaly score per point (higher = more anomalous) |
 | **Key hyperparameter** | `num_trees`, `num_samples_per_tree`, `feature_dim` |
 | **Best for** | Streaming, low-feature anomalies (e.g. sensor data, network traffic) |
@@ -249,7 +249,7 @@ Built-in algorithm that fits multiple linear / logistic regression models in par
 
 ---
 
-## 🔮 IP Insights — User-IP Anomaly
+## 🔮 IP Insights, User-IP Anomaly
 
 | Property | Detail |
 |----------|--------|
@@ -262,7 +262,7 @@ Built-in algorithm that fits multiple linear / logistic regression models in par
 
 ---
 
-## 🤝 Factorization Machines — Sparse Recommendation
+## 🤝 Factorization Machines, Sparse Recommendation
 
 | Property | Detail |
 |----------|--------|
@@ -275,7 +275,7 @@ Built-in algorithm that fits multiple linear / logistic regression models in par
 
 ---
 
-## 🧭 K-Nearest Neighbors — Lazy Learner
+## 🧭 K-Nearest Neighbors, Lazy Learner
 
 | Property | Detail |
 |----------|--------|
@@ -288,13 +288,13 @@ Built-in algorithm that fits multiple linear / logistic regression models in par
 
 ---
 
-## 📊 PCA — Dimensionality Reduction (Built-In)
+## 📊 PCA, Dimensionality Reduction (Built-In)
 
 Same PCA as Module 3 but accessible as a SageMaker training job. Key hyperparameter: `num_components`.
 
 ---
 
-## 💬 BlazingText — Word Embeddings + Text Classification
+## 💬 BlazingText, Word Embeddings + Text Classification
 
 | Property | Detail |
 |----------|--------|
@@ -311,7 +311,7 @@ Same PCA as Module 3 but accessible as a SageMaker training job. Key hyperparame
 
 ---
 
-## 🔗 Object2Vec — General Embedding
+## 🔗 Object2Vec, General Embedding
 
 | Property | Detail |
 |----------|--------|
@@ -324,7 +324,7 @@ Same PCA as Module 3 but accessible as a SageMaker training job. Key hyperparame
 
 ---
 
-## 📚 Neural Topic Model (NTM) and LDA — Topic Modelling
+## 📚 Neural Topic Model (NTM) and LDA, Topic Modelling
 
 Both find latent topics in document collections.
 
@@ -339,7 +339,7 @@ Hyperparameter for both: `num_topics`.
 
 ---
 
-## 🌐 Sequence-to-Sequence — Encoder-Decoder
+## 🌐 Sequence-to-Sequence, Encoder-Decoder
 
 Older AWS algorithm. For new seq2seq work (translation, summarisation), **Bedrock or Hugging Face containers** are usually preferred. Still tested.
 
@@ -362,7 +362,7 @@ Older AWS algorithm. For new seq2seq work (translation, summarisation), **Bedroc
 
 🎯 **Exam pattern.** *"Classify 50,000 product images into 200 categories."* → **Image Classification with transfer learning from ImageNet** (`use_pretrained_model=1`).
 
-🎯 **Augmentation hyperparameters** — built-in supports `augmentation_type=crop,color,crop_color,crop_color_transform` to combat overfitting on small image sets.
+🎯 **Augmentation hyperparameters**, built-in supports `augmentation_type=crop,color,crop_color,crop_color_transform` to combat overfitting on small image sets.
 
 ---
 
@@ -390,14 +390,14 @@ Older AWS algorithm. For new seq2seq work (translation, summarisation), **Bedroc
 
 ---
 
-## ⏰ DeepAR — Probabilistic Time-Series Forecasting
+## ⏰ DeepAR, Probabilistic Time-Series Forecasting
 
 | Property | Detail |
 |----------|--------|
 | **Task** | Forecast future values for many related time series |
-| **Strength** | **Multi-series** — learns one model across many series (cold start for new series works!) |
+| **Strength** | **Multi-series**, learns one model across many series (cold start for new series works!) |
 | **Architecture** | RNN (LSTM) with quantile loss |
-| **Output** | Quantile forecasts (p10, p50, p90) — probabilistic |
+| **Output** | Quantile forecasts (p10, p50, p90), probabilistic |
 | **Key hyperparameter** | `context_length` (input window), `prediction_length` (forecast horizon), `num_layers`, `num_cells` |
 | **Input** | JSON Lines: `{"start": "...", "target": [...]}` per series |
 | **Use case** | Forecast demand across thousands of SKUs |
@@ -408,7 +408,7 @@ Older AWS algorithm. For new seq2seq work (translation, summarisation), **Bedroc
 
 ---
 
-## 🤖 SageMaker AutoML — Autopilot & Canvas
+## 🤖 SageMaker AutoML, Autopilot & Canvas
 
 When you don't want to pick an algorithm at all:
 
@@ -424,7 +424,7 @@ When you don't want to pick an algorithm at all:
 
 ---
 
-## 🐳 Bring-Your-Own (BYO) — Custom Containers
+## 🐳 Bring-Your-Own (BYO), Custom Containers
 
 When none of the 17 built-ins fits, write your own training image.
 
@@ -500,7 +500,7 @@ A SageMaker training job involves these moving parts:
 estimator.fit({"train": train_input}, local_mode=True)
 ```
 
-Runs the same training script on a local Docker daemon — no spin-up time, no AWS bill until you flip the switch. Standard development pattern.
+Runs the same training script on a local Docker daemon, no spin-up time, no AWS bill until you flip the switch. Standard development pattern.
 
 ---
 
@@ -510,7 +510,7 @@ Runs the same training script on a local Docker daemon — no spin-up time, no A
 |-------|--------|
 | **Spot training** (`use_spot_instances=True`, `max_wait`) | Up to **90% off** with checkpointing |
 | **Right-sized instance** | Don't use `ml.p3.16xlarge` if `ml.g5.xlarge` is enough |
-| **Distributed training** (Module 5) | Faster wall clock — sometimes cheaper despite more nodes |
+| **Distributed training** (Module 5) | Faster wall clock, sometimes cheaper despite more nodes |
 | **Pipe / FastFile mode** | Less idle waiting |
 | **Early stopping** | Stop unproductive trials |
 | **Checkpointing to S3** | Resume Spot interruptions |
@@ -519,18 +519,18 @@ Runs the same training script on a local Docker daemon — no spin-up time, no A
 
 ---
 
-## 📖 Case Study — Netflix's Recommendation Stack at Algorithmic Layer
+## 📖 Case Study, Netflix's Recommendation Stack at Algorithmic Layer
 
 **Problem.** Recommend the next video to ~250M subscribers in real time, personalised per user across 700+ models (different ranking models for thumbnails, autoplay, search, kids profiles, etc.).
 
 **Algorithms in use (public, 2022-2024 talks).**
-- **Matrix Factorisation** (classic collaborative filtering): user × item embeddings via implicit ALS — historically Spark MLlib on EMR; equivalent on SageMaker = **Factorization Machines**
+- **Matrix Factorisation** (classic collaborative filtering): user × item embeddings via implicit ALS, historically Spark MLlib on EMR; equivalent on SageMaker = **Factorization Machines**
 - **Neural Collaborative Filtering**: deep two-tower model with user side + item side embeddings; equivalent = **Object2Vec**
 - **Sequence models**: transformer ranking on viewing history; equivalent = custom PyTorch on SageMaker
 - **Tree ensembles**: XGBoost on tabular session features for re-ranking
 - **Bandit / contextual bandit**: explore-exploit at serving time
 
-**Lesson for the exam.** Netflix uses both classical (XGBoost, FM, ALS) AND deep (transformer, two-tower) models depending on the sub-problem. MLS-C01 questions often resolve to "**which built-in algorithm matches this scenario?**" — the right answer almost always exists in SageMaker's catalogue.
+**Lesson for the exam.** Netflix uses both classical (XGBoost, FM, ALS) AND deep (transformer, two-tower) models depending on the sub-problem. MLS-C01 questions often resolve to "**which built-in algorithm matches this scenario?**", the right answer almost always exists in SageMaker's catalogue.
 
 ---
 
@@ -542,8 +542,8 @@ Runs the same training script on a local Docker daemon — no spin-up time, no A
 | "Deep learning beats tree models" | Not for tabular. Often the opposite. |
 | "Built-ins are slower than custom code" | Built-ins are heavily optimised C++ / CUDA; usually faster than naive Python. |
 | "K-Means works for any clustering" | Assumes spherical clusters and Euclidean distance. For other shapes use DBSCAN or hierarchical. |
-| "DeepAR is just LSTM" | It learns from MANY series jointly — that's the special sauce. |
-| "Random Cut Forest needs labels" | No — fully unsupervised. |
+| "DeepAR is just LSTM" | It learns from MANY series jointly, that's the special sauce. |
+| "Random Cut Forest needs labels" | No, fully unsupervised. |
 | "BlazingText is only for embeddings" | It has a classification mode too. |
 | "Canvas can replace SageMaker" | Canvas is no-code AutoML for tabular; not a full replacement. |
 
@@ -590,7 +590,7 @@ Runs the same training script on a local Docker daemon — no spin-up time, no A
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **"XGBoost or DL?"** On tabular data, XGBoost typically wins. Argue when a DL model BECOMES competitive on tabular (hint: very large rows, high-cardinality categoricals, or learned embeddings).
 2. **The built-in vs script-mode trade-off.** Built-ins are turnkey; script mode is flexible. At what team size does flexibility win? At what size does turnkey win?
@@ -640,19 +640,19 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **SageMaker Developer Guide — Built-in algorithms** — `docs.aws.amazon.com/sagemaker/latest/dg/algos.html`
-- 📖 **SageMaker Python SDK docs** — `sagemaker.readthedocs.io`
-- 📖 **AWS ML Blog** — `aws.amazon.com/blogs/machine-learning/`
+- 📖 **SageMaker Developer Guide Built-in algorithms** `docs.aws.amazon.com/sagemaker/latest/dg/algos.html`
+- 📖 **SageMaker Python SDK docs**, `sagemaker.readthedocs.io`
+- 📖 **AWS ML Blog**, `aws.amazon.com/blogs/machine-learning/`
 
 **Textbooks**
-- 📖 **Géron, Aurélien (2022).** *Hands-On Machine Learning…* (3rd ed.). O'Reilly — chapters 6-7 (decision trees, ensembles)
-- 📖 **Burkov (2019).** *The Hundred-Page ML Book.* — chapters 3-4
+- 📖 **Géron, Aurélien (2022).** *Hands-On Machine Learning…* (3rd ed.). O'Reilly, chapters 6-7 (decision trees, ensembles)
+- 📖 **Burkov (2019).** *The Hundred-Page ML Book.*, chapters 3-4
 
 **Academic foundations**
-- 📄 **Chen & Guestrin (2016).** *XGBoost: A Scalable Tree Boosting System.* KDD — the XGBoost paper
-- 📄 **Liu, Ting & Zhou (2008).** *Isolation Forest.* ICDM — Isolation Forest foundation
-- 📄 **Salinas et al. (2020).** *DeepAR: Probabilistic forecasting with autoregressive recurrent networks.* International Journal of Forecasting — the DeepAR paper
+- 📄 **Chen & Guestrin (2016).** *XGBoost: A Scalable Tree Boosting System.* KDD, the XGBoost paper
+- 📄 **Liu, Ting & Zhou (2008).** *Isolation Forest.* ICDM, Isolation Forest foundation
+- 📄 **Salinas et al. (2020).** *DeepAR: Probabilistic forecasting with autoregressive recurrent networks.* International Journal of Forecasting, the DeepAR paper
 
 **Industry**
-- 📰 **Netflix Tech Blog** — recommendation system posts
-- 📰 **Kaggle solutions write-ups** — XGBoost mastery in the wild
+- 📰 **Netflix Tech Blog**, recommendation system posts
+- 📰 **Kaggle solutions write-ups**, XGBoost mastery in the wild

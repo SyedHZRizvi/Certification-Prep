@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Shopify Plus vs Adobe Commerce — Honest Comparison</p>
+      <p class="vg-title">Shopify Plus vs Adobe Commerce, Honest Comparison</p>
       <p class="vg-creator">Various agencies (BORN Group, Vaimo)</p>
       <span class="vg-duration">⏱ 22 min · TCO + use-case differences</span>
     </div>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Shopify Hydrogen + Oxygen — Headless Walkthrough</p>
+      <p class="vg-title">Shopify Hydrogen + Oxygen, Headless Walkthrough</p>
       <p class="vg-creator">Shopify Dev / Tobi Lütke talks</p>
       <span class="vg-duration">⏱ 16 min · React + Remix on Shopify's edge</span>
     </div>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">commercetools Composable Commerce — Walkthrough</p>
+      <p class="vg-title">commercetools Composable Commerce, Walkthrough</p>
       <p class="vg-creator">commercetools / MACH Alliance</p>
       <span class="vg-duration">⏱ 22 min · API-first commerce engine demo</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">PCI-DSS v4.0 — E-Commerce Implications</p>
+      <p class="vg-title">PCI-DSS v4.0, E-Commerce Implications</p>
       <p class="vg-creator">Stripe + PCI Council</p>
       <span class="vg-duration">⏱ 18 min · SAQ A/A-EP/D walkthrough</span>
     </div>

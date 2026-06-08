@@ -75,7 +75,7 @@
 | **Standard** | up to 1 year | Long, audit, exactly-once, human approval |
 | **Express** | up to 5 min | High-volume short event-driven |
 
-Direct integration with 200+ AWS APIs — no Lambda glue needed.
+Direct integration with 200+ AWS APIs, no Lambda glue needed.
 
 ---
 
@@ -103,8 +103,8 @@ Direct integration with 200+ AWS APIs — no Lambda glue needed.
 
 ## ⚠️ Anti-Patterns
 
-- ❌ Producer-side fan-out loop (publish to N queues) — use SNS
-- ❌ FIFO for "just be safe" — costs throughput
+- ❌ Producer-side fan-out loop (publish to N queues), use SNS
+- ❌ FIFO for "just be safe", costs throughput
 - ❌ No DLQ on production queues
 - ❌ Step Functions Standard for high-volume short workflows (use Express)
 - ❌ Kinesis Firehose when you need replay

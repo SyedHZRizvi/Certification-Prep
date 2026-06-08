@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">OpenAI Structured Outputs — Full Tutorial</p>
+      <p class="vg-title">OpenAI Structured Outputs, Full Tutorial</p>
       <p class="vg-creator">OpenAI / DevDay</p>
       <span class="vg-duration">⏱ 20 min · The 2024 launch</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Anthropic Tool Use — End to End</p>
+      <p class="vg-title">Anthropic Tool Use, End to End</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 18 min · tool_choice + schemas</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">instructor + Pydantic — The 2026 Default</p>
+      <p class="vg-title">instructor + Pydantic, The 2026 Default</p>
       <p class="vg-creator">Jason Liu</p>
       <span class="vg-duration">⏱ 22 min · The cross-provider pattern</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Gemini Structured Output — Hands On</p>
+      <p class="vg-title">Gemini Structured Output, Hands On</p>
       <p class="vg-creator">Google AI Developers</p>
       <span class="vg-duration">⏱ 14 min · response_schema</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Outlines — Constrained Generation for Open-Source</p>
+      <p class="vg-title">Outlines, Constrained Generation for Open-Source</p>
       <p class="vg-creator">dottxt.ai</p>
       <span class="vg-duration">⏱ 16 min · Local-model structured output</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">BAML — Schema-First Prompts</p>
+      <p class="vg-title">BAML, Schema-First Prompts</p>
       <p class="vg-creator">Boundary</p>
       <span class="vg-duration">⏱ 18 min · The new player in 2025</span>
     </div>

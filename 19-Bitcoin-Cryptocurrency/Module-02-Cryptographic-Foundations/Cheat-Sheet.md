@@ -104,7 +104,7 @@ SPV proof for Tx2: send `Tx2 + H_A + H_CD` (3 hashes ≈ 96 bytes). Cost = log�
 | Nonce | 4 |
 | **Total** | **80** |
 
-🧠 Memory: "V-P-M-T-B-N — 4-32-32-4-4-4 = 80."
+🧠 Memory: "V-P-M-T-B-N, 4-32-32-4-4-4 = 80."
 
 ---
 
@@ -133,11 +133,11 @@ SPV proof for Tx2: send `Tx2 + H_A + H_CD` (3 hashes ≈ 96 bytes). Cost = log�
 ## 🚨 Top 8 Exam Traps
 
 1. secp256k**1**, not secp256r1 (NIST P-256)
-2. HASH160 = RIPEMD160(SHA256(x)) — SHA first, RIPEMD second
+2. HASH160 = RIPEMD160(SHA256(x)), SHA first, RIPEMD second
 3. Schnorr activated Nov 2021 (BIPs 340/341/342), NOT 2017
 4. Bitcoin does NOT use RSA, AES, NIST curves, or Keccak (SHA-3)
 5. ECDSA nonce reuse = private-key disclosure
-6. Merkle proof size = log₂(N) — not N, not constant
+6. Merkle proof size = log₂(N), not N, not constant
 7. Block header is 80 bytes regardless of tx count
 8. Quantum: Shor breaks ECDSA (future); Grover only halves SHA-256 (still safe)
 
@@ -148,7 +148,7 @@ SPV proof for Tx2: send `Tx2 + H_A + H_CD` (3 hashes ≈ 96 bytes). Cost = log�
 - ✅ "secp256k1, not a NIST curve"
 - ✅ "Deterministic ECDSA per RFC 6979"
 - ✅ "BIP-340 Schnorr enables MuSig aggregation"
-- ✅ "Defense in depth — SHA-256 AND RIPEMD-160"
+- ✅ "Defense in depth, SHA-256 AND RIPEMD-160"
 - ✅ "Log(N) Merkle proof scales to any block size"
 
 ---

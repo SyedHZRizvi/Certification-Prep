@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Bouncing Ball Animation — Complete Tutorial</p>
+      <p class="vg-title">Bouncing Ball Animation, Complete Tutorial</p>
       <p class="vg-creator">Bloop Animation / Alan Becker</p>
       <span class="vg-duration">⏱ 20 min · All principles applied to one exercise</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🚶</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Walk Cycle Tutorial — Key Poses & Timing</p>
+      <p class="vg-title">Walk Cycle Tutorial, Key Poses & Timing</p>
       <p class="vg-creator">Animation Mentor / Aaron Blaise</p>
       <span class="vg-duration">⏱ 25 min · Contact, passing, up, down positions with timing</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Character Acting for Animation — Pantomime Performance</p>
+      <p class="vg-title">Character Acting for Animation, Pantomime Performance</p>
       <p class="vg-creator">Animation Mentor / Toniko Pantoja</p>
       <span class="vg-duration">⏱ 20 min · Performing emotion through movement alone</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Bouncing Ball Variations — 5 Different Materials</p>
+      <p class="vg-title">Bouncing Ball Variations, 5 Different Materials</p>
       <p class="vg-creator">School of Motion / animatorhub</p>
       <span class="vg-duration">⏱ 18 min · Golf ball vs bowling ball vs water balloon</span>
     </div>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>🚶</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Walk Cycle Personality — How Timing Changes Character</p>
+      <p class="vg-title">Walk Cycle Personality, How Timing Changes Character</p>
       <p class="vg-creator">Toniko Pantoja / Richard Williams Institute</p>
       <span class="vg-duration">⏱ 18 min · Same walk, different timing, different person</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Indie Animation Production Checklist — Short Film</p>
+      <p class="vg-title">Indie Animation Production Checklist, Short Film</p>
       <p class="vg-creator">Film Riot / RocketJump Film School</p>
       <span class="vg-duration">⏱ 20 min · Pre-production through delivery</span>
     </div>

@@ -12,7 +12,7 @@
 | **Counterparty risk** | YES (FTX, Mt. Gox) | Smart-contract risk only |
 | **Examples** | Coinbase, Kraken, Binance | Uniswap (ETH), Bisq (BTC) |
 
-🧠 **"Not your keys, not your coins."** — Antonopoulos
+🧠 **"Not your keys, not your coins."**, Antonopoulos
 
 ---
 
@@ -79,13 +79,13 @@
 | Custodian | Regulator | Notable |
 |-----------|-----------|---------|
 | **Coinbase Custody Trust** | NYDFS | 8 of 11 spot ETFs |
-| **Anchorage Digital** | OCC (Jan 2021 — first crypto national bank) | BNY Mellon, Visa, Apollo |
+| **Anchorage Digital** | OCC (Jan 2021, first crypto national bank) | BNY Mellon, Visa, Apollo |
 | **BitGo Trust** | SD trust | Many crypto-native funds |
 | **Fidelity Digital Assets** | NY trust | Fidelity wealth platform |
 | **Gemini Custody** | NYDFS | Standalone custody |
 | **Komainu** | Jersey FSC | European institutions |
 
-🧠 "Qualified custodian" = Investment Advisers Act 206(4)-2 — bank, BD, FCM, or regulated foreign institution.
+🧠 "Qualified custodian" = Investment Advisers Act 206(4)-2, bank, BD, FCM, or regulated foreign institution.
 
 ---
 

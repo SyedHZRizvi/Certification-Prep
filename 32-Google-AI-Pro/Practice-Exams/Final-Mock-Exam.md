@@ -1,7 +1,7 @@
-# 🎓 Final Mock Exam — Google AI Pro (60 Q / 90 min)
+# 🎓 Final Mock Exam, Google AI Pro (60 Q / 90 min)
 
 > **Conditions:** Set a 90-minute timer. 60 questions. Sit in one block.
-> **Pass mark:** 48/60 (~80%) — Google Cloud Generative AI Leader scaled-score equivalent.
+> **Pass mark:** 48/60 (~80%), Google Cloud Generative AI Leader scaled-score equivalent.
 > Take this 2–3 days before booking the real exam. Score 48+ before declaring yourself ready.
 
 This exam mirrors the Google Cloud Generative AI Leader format (50–60 questions / 90 minutes) and weights across all 10 modules:
@@ -76,7 +76,7 @@ C. PII, PHI, PCI, IP
 D. Bias, Toxicity, Privacy, Copyright
 
 ### 10. To count tokens before paying:
-A. `model.count_tokens(prompt)` — free endpoint
+A. `model.count_tokens(prompt)`, free endpoint
 B. Char count ÷ 4
 C. Call with `max_tokens=1`
 D. Not possible
@@ -93,7 +93,7 @@ B. 50%
 C. ~75%
 D. 99%
 
-### 13. Google AI Studio vs Vertex AI — the KEY difference:
+### 13. Google AI Studio vs Vertex AI, the KEY difference:
 A. Same product
 B. AI Studio = consumer playground (API keys); Vertex AI = enterprise (IAM, VPC-SC, BAA, region, audit)
 C. Vertex AI is free
@@ -245,7 +245,7 @@ D. Faster inference
 
 ### 38. DPO vs RLHF:
 A. Same
-B. DPO directly optimizes on preference pairs WITHOUT RL phase or reward model — simpler
+B. DPO directly optimizes on preference pairs WITHOUT RL phase or reward model, simpler
 C. DPO older
 D. None
 
@@ -409,7 +409,7 @@ D. ChatGPT Plus
 - **42–47** → ⚠️ Close, but more study needed; re-take in 1 week
 - **<42** → 🔁 Re-read the modules that produced the most misses; restart eval cycle
 
-### Topic breakdown — review modules if multiple misses per section
+### Topic breakdown, review modules if multiple misses per section
 
 - **Module 1 (Foundations):** Q1–6
 - **Module 2 (AI Studio & API):** Q7–12

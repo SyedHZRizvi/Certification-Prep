@@ -51,7 +51,7 @@ D. Disabling networking
 
 ### Q6. Snapshots are NOT a backup because: *(Analyze)*
 A. They use more space than backups
-B. They live on the same datastore as the VM — if the datastore is lost, the snapshots are lost with it
+B. They live on the same datastore as the VM, if the datastore is lost, the snapshots are lost with it
 C. They cannot be restored
 D. They are illegal in the EU
 
@@ -155,7 +155,7 @@ D. Smaller RAM ceiling
 
 ### Q19. Live migration between VMware ESXi and Microsoft Hyper-V: *(Analyze)*
 A. Works natively
-B. Requires conversion (V2V) — no native cross-hypervisor live migration
+B. Requires conversion (V2V), no native cross-hypervisor live migration
 C. Works only over fiber
 D. Requires Kubernetes
 
@@ -235,7 +235,7 @@ Hyper-V uses VHDX (replacing legacy VHD). VMware = VMDK. KVM/QEMU = qcow2.
 ### Q5: **B. Shared storage, L2 network, CPU compatibility (or EVC), sufficient resources on the target**
 Live migration's standard prerequisites. Modern variants relax some (e.g., vMotion-without-shared-storage), but the exam tests the classic four.
 
-### Q6: **B. They live on the same datastore as the VM — if the datastore is lost, the snapshots are lost with it**
+### Q6: **B. They live on the same datastore as the VM, if the datastore is lost, the snapshots are lost with it**
 Snapshots are point-in-time deltas on the same storage. They are not independent copies. Use real backups for actual DR.
 
 ### Q7: **B. HA (High Availability)**
@@ -251,7 +251,7 @@ Anti-affinity = "do not place these together." Prevents one host failure from ta
 The kernel split is the categorical difference. Drives density, isolation, OS-family constraints, startup speed.
 
 ### Q11: **C. Pod**
-A Pod is one or more co-located containers — the smallest schedulable unit in K8s.
+A Pod is one or more co-located containers, the smallest schedulable unit in K8s.
 
 ### Q12: **B. `Dockerfile`**
 The default name. Compose uses `docker-compose.yml` for multi-container stacks.
@@ -260,21 +260,21 @@ The default name. Compose uses `docker-compose.yml` for multi-container stacks.
 Short-lived high-density CI jobs are the textbook container use case. Containers start in ms, VMs in seconds-to-minutes.
 
 ### Q14: **B. A linked clone shares the parent's base disk and stores only deltas, so it depends on the parent**
-Saves space (VDI uses heavily) but creates a parent dependency — losing the parent breaks all linked clones.
+Saves space (VDI uses heavily) but creates a parent dependency, losing the parent breaks all linked clones.
 
 ### Q15: **B. The vCPU wants to run but is waiting for a physical core because of overcommit**
 CPU ready time = the contention metric. Reduce vCPU count or move VMs to less-loaded hosts.
 
 ### Q16: **B. Lets the hypervisor reclaim unused RAM from guests via a cooperative driver**
-The balloon driver in the guest "inflates" to make the guest think pages are used, returning them to the hypervisor. Cooperative — requires VM tools.
+The balloon driver in the guest "inflates" to make the guest think pages are used, returning them to the hypervisor. Cooperative, requires VM tools.
 
 ### Q17: **B. Assign a virtual NIC function directly to a VM, bypassing the vSwitch for performance**
-Single-Root I/O Virtualization presents Virtual Functions of a physical NIC directly to VMs — useful for latency-sensitive workloads (NFV, HPC).
+Single-Root I/O Virtualization presents Virtual Functions of a physical NIC directly to VMs, useful for latency-sensitive workloads (NFV, HPC).
 
 ### Q18: **B. UEFI firmware, Secure Boot, larger boot disks (over 2 TB), modern OS support**
 Gen 1 is legacy BIOS; Gen 2 is UEFI. Modern Windows Server / Linux distros increasingly require Gen 2.
 
-### Q19: **B. Requires conversion (V2V) — no native cross-hypervisor live migration**
+### Q19: **B. Requires conversion (V2V), no native cross-hypervisor live migration**
 Each hypervisor's live migration is intra-product. Crossing platforms requires Virtual-to-Virtual conversion tools (and downtime).
 
 ### Q20: **B. Storage volume (VMFS on block, NFS share, vSAN) holding VM files**
@@ -313,7 +313,7 @@ Each requirement maps to a feature: live migration → zero-downtime patching; H
 
 - Type 1 vs Type 2 + product examples
 - Disk formats: VMDK / VHDX / qcow2 / OVF/OVA
-- Template / Clone / Linked clone / Snapshot — what each does
+- Template / Clone / Linked clone / Snapshot, what each does
 - vMotion / Live Migration prerequisites (4 items)
 - HA / DRS / FT / affinity / anti-affinity
 - Container vs VM (kernel sharing)
@@ -323,4 +323,4 @@ Each requirement maps to a feature: live migration → zero-downtime patching; H
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — Disaster Recovery & Backup](../Module-05-Disaster-Recovery/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, Disaster Recovery & Backup](../Module-05-Disaster-Recovery/Reading.md)

@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">High Output Management — Andy Grove's Principles</p>
+      <p class="vg-title">High Output Management, Andy Grove's Principles</p>
       <p class="vg-creator">Stanford GSB</p>
       <span class="vg-duration">⏱ 22 min · The org-leader's OS</span>
     </div>
@@ -148,7 +148,7 @@
 1. State the four marketing org structures.
 2. Define RACI.
 3. Name the 5 questions the CFO will ask every time.
-4. The 30-30-30-10 rule — what does each share cover?
+4. The 30-30-30-10 rule, what does each share cover?
 5. What promotes a strategist from Manager to Director?
 
 If you can answer all 5 in under 8 minutes, you're ready for the [Quiz](./Quiz.md).

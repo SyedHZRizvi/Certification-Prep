@@ -37,7 +37,7 @@ I - Informed (kept aware)
 
 ---
 
-## 🛒 Stack — Top Categories + Vendors (2026)
+## 🛒 Stack, Top Categories + Vendors (2026)
 
 | Category | Vendors |
 |----------|---------|

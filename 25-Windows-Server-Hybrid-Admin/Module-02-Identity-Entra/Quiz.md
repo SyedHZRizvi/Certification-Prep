@@ -41,7 +41,7 @@ D. Workplace Joined
 ### Q5. To use Hybrid Entra Join with device writeback, you MUST use: *(Apply)*
 A. Entra Cloud Sync
 B. Entra Connect Sync
-C. Either Connect Sync or Cloud Sync — both support it
+C. Either Connect Sync or Cloud Sync, both support it
 D. AD FS only
 
 ---
@@ -71,7 +71,7 @@ D. The plaintext password is encrypted, not hashed
 ---
 
 ### Q9. A staging Entra Connect Sync server: *(Understand)*
-A. Imports and syncs but does NOT export to Entra ID — DR-only
+A. Imports and syncs but does NOT export to Entra ID, DR-only
 B. Is the active production sync server
 C. Is required for PHS
 D. Replaces the primary on failure automatically
@@ -80,13 +80,13 @@ D. Replaces the primary on failure automatically
 
 ### Q10. To pin which Entra Joined devices a user can sign into, while preventing them signing into their personal Entra tenant from a corporate machine, use: *(Apply)*
 A. Conditional Access blocking external tenants
-B. Cross-tenant access settings — Tenant Restrictions
+B. Cross-tenant access settings, Tenant Restrictions
 C. Smart Lockout
 D. Authenticator app number matching
 
 ---
 
-### Q11. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q11. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** Cloud Sync supports federation as a sign-in method.
 **S2:** PHS sends the plaintext password to Entra ID.
@@ -177,7 +177,7 @@ D. FIDO2 security key
 
 ---
 
-### Q21. **Yes/No** — Cloud Sync feature support. *(Analyze)*
+### Q21. **Yes/No**, Cloud Sync feature support. *(Analyze)*
 
 **S1:** Cloud Sync supports password hash sync (PHS).
 **S2:** Cloud Sync supports Hybrid Entra Join device writeback.
@@ -194,7 +194,7 @@ D. Yes / Yes / Yes
 A. Daily
 B. Every 30 days
 C. Every 90 days
-D. Never — auto-managed entirely
+D. Never, auto-managed entirely
 
 ---
 
@@ -202,11 +202,11 @@ D. Never — auto-managed entirely
 A. Immediately
 B. Within the next sync interval (~2 min by default for the password hash but full attribute sync runs ~30 min)
 C. After the next forest functional level change
-D. Never — disable doesn't propagate
+D. Never, disable doesn't propagate
 
 ---
 
-### Q24. **Yes/No** — Sign-in resiliency. *(Apply)*
+### Q24. **Yes/No**, Sign-in resiliency. *(Apply)*
 
 **S1:** PHS sign-in continues to work even when on-prem WAN is down.
 **S2:** PTA sign-in continues to work even when on-prem agents are unreachable.
@@ -261,10 +261,10 @@ Microsoft's published guidance. Federation is being deprecated; PTA is fine but 
 ### Q8: **B. MD4 → PBKDF2 + HMAC-SHA256 + salt → Entra**
 The on-prem AD password is already MD4-hashed; PHS re-hashes that MD4 value before sending. Never the plaintext password.
 
-### Q9: **A. Imports and syncs but does NOT export to Entra ID — DR-only**
+### Q9: **A. Imports and syncs but does NOT export to Entra ID, DR-only**
 Staging mode is a passive replica. To activate it after primary failure, switch staging mode off (manual operation, not automatic).
 
-### Q10: **B. Cross-tenant access settings — Tenant Restrictions**
+### Q10: **B. Cross-tenant access settings, Tenant Restrictions**
 Tenant Restrictions block sign-in to other Entra tenants from corporate-managed networks/devices. CA can support this, but the official feature is Tenant Restrictions.
 
 ### Q11: **A. No / No / Yes**
@@ -280,7 +280,7 @@ Microsoft recommends 3 agents minimum for production HA. Fewer = single-point-of
 Entra DS = managed AD DCs in Azure for legacy apps. Entra ID = cloud-native OAuth/OIDC/SAML.
 
 ### Q15: **B. Install Entra Cloud Sync agents on multiple servers in the acquired forest**
-Cloud Sync is exactly designed for this M&A scenario — light, multi-forest, no forest trust needed.
+Cloud Sync is exactly designed for this M&A scenario, light, multi-forest, no forest trust needed.
 
 ### Q16: **B. Entra Registered**
 BYOD/personal devices with cloud identity only. App-level SSO; cannot enforce full device policy.
@@ -301,13 +301,13 @@ Hardware-backed, phishing-resistant, passwordless. SMS/voice are weak; OTP via e
 Cloud Sync supports PHS; does NOT support Hybrid Join writeback or require SQL.
 
 ### Q22: **B. Every 30 days**
-Microsoft's published guidance — the SSSO computer account password is a high-value target.
+Microsoft's published guidance, the SSSO computer account password is a high-value target.
 
 ### Q23: **B. Within the next sync interval**
 Password hash syncs every 2 minutes; other attributes (including AccountEnabled) on the standard sync cycle (default 30 min). This is one of PHS's weaknesses relative to PTA.
 
 ### Q24: **A. Yes / No / No**
-Only PHS survives on-prem outages — the entire validation happens in Entra ID. PTA needs an agent; Federation needs AD FS.
+Only PHS survives on-prem outages, the entire validation happens in Entra ID. PTA needs an agent; Federation needs AD FS.
 
 ### Q25: **B. Entra ID itself, after device authenticates with the Entra-issued device certificate**
 The PRT is issued by Entra after the device proves identity via its registered cert. It is *not* the same as a Kerberos TGT.
@@ -329,9 +329,9 @@ Microsoft has clear public guidance to migrate to cloud authentication. AD FS is
 ## 🃏 Add To Your Flashcards
 
 - Connect Sync vs Cloud Sync feature matrix (Hybrid Join → Connect; multi-forest M&A → Cloud)
-- PHS / PTA / Federation — when each wins
+- PHS / PTA / Federation, when each wins
 - SSSO uses `AZUREADSSOACC$` Kerberos
-- Entra Registered / Entra Joined / Hybrid Entra Joined — pick the right one
+- Entra Registered / Entra Joined / Hybrid Entra Joined, pick the right one
 - PHS hash chain: MD4 → PBKDF2 + HMAC-SHA256 + salt
 - PTA: outbound 443 only, 3 agents minimum
 - Entra DS = managed LDAP/Kerberos/NTLM (not Entra Connect)

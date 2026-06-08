@@ -73,12 +73,12 @@ D. Mirror-accelerated parity
 ### Q9. Can ReFS be the OS BOOT drive? *(Remember)*
 A. Yes, always
 B. Only on Server Core
-C. No — boot/page file requires NTFS
+C. No, boot/page file requires NTFS
 D. Only on Windows Server Datacenter
 
 ---
 
-### Q10. **Yes/No** — S2D requirements. *(Evaluate)*
+### Q10. **Yes/No**, S2D requirements. *(Evaluate)*
 
 **S1:** S2D requires identical hardware across all nodes.
 **S2:** S2D requires a minimum of 10 GbE networking.
@@ -115,7 +115,7 @@ D. Mesh replication
 
 ---
 
-### Q14. **Yes/No** — Mark each statement. *(Analyze)*
+### Q14. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** DFS-R is a backup solution.
 **S2:** A DFS-R conflict moves the older file to the `ConflictAndDeleted` folder.
@@ -175,7 +175,7 @@ D. DFS-R encryption
 
 ---
 
-### Q20. **Yes/No** — ReFS features. *(Apply)*
+### Q20. **Yes/No**, ReFS features. *(Apply)*
 
 **S1:** ReFS supports the `dedup` Windows Server feature.
 **S2:** ReFS supports the EFS file-level encryption.
@@ -212,7 +212,7 @@ D. ExFAT
 
 ---
 
-### Q24. **Yes/No** — Storage Replica scenarios. *(Analyze)*
+### Q24. **Yes/No**, Storage Replica scenarios. *(Analyze)*
 
 **S1:** Storage Replica synchronous works at any distance.
 **S2:** Storage Replica destination volume is mounted and readable during normal replication.
@@ -259,7 +259,7 @@ Sync mode requires sub-5-ms RTT for application performance. Async is for any di
 Storage Replica's destination is offline during normal replication. Must reverse partnership to use it.
 
 ### Q6: **B. A virtual unified path like `\\contoso.com\shares` routing to physical servers**
-DFS-N is a virtual namespace layer. Doesn't replicate or encrypt — just routes.
+DFS-N is a virtual namespace layer. Doesn't replicate or encrypt, just routes.
 
 ### Q7: **B. Remote Differential Compression (RDC)**
 RDC sends only the changed blocks, making large-file replication efficient.
@@ -267,7 +267,7 @@ RDC sends only the changed blocks, making large-file replication efficient.
 ### Q8: **C. EFS file-level encryption**
 ReFS has no EFS support. Use BitLocker for volume-level encryption instead.
 
-### Q9: **C. No — boot/page file requires NTFS**
+### Q9: **C. No, boot/page file requires NTFS**
 Critical exam fact. OS drive is always NTFS.
 
 ### Q10: **A. Yes / Yes / No**
@@ -283,7 +283,7 @@ A DFS-N folder can have up to 32 targets.
 One failover cluster spanning two sites. Server-to-server is non-clustered single volumes.
 
 ### Q14: **C. No / Yes / No**
-S1 wrong (DFS-R is replication, not backup). S2 correct (`ConflictAndDeleted` folder). S3 careful — sync mode protects against a single *node* failure only at the *storage* layer; broader HA needs a cluster role.
+S1 wrong (DFS-R is replication, not backup). S2 correct (`ConflictAndDeleted` folder). S3 careful, sync mode protects against a single *node* failure only at the *storage* layer; broader HA needs a cluster role.
 
 ### Q15: **B. Hosted Cache**
 Hosted = dedicated branch server. Distributed = peer-to-peer client caching.
@@ -298,7 +298,7 @@ Block cloning is ReFS's headline Hyper-V optimization.
 Features → validate → cluster → enable S2D → create CSV volume. Standard deployment flow.
 
 ### Q19: **B. Access-Based Enumeration (ABE)**
-ABE filters the namespace listing so users see only what they can access. Doesn't grant permissions — just hides irrelevant folders.
+ABE filters the namespace listing so users see only what they can access. Doesn't grant permissions, just hides irrelevant folders.
 
 ### Q20: **A. Yes / No / Yes**
 S1 correct (Server 2019+ ReFS supports dedup), S2 wrong (no EFS), S3 correct (block cloning is the big win).

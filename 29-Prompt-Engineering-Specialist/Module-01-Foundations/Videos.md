@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Foundations of Prompt Engineering
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Anthropic — Prompt Engineering Overview</p>
+      <p class="vg-title">Anthropic, Prompt Engineering Overview</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 18 min · The Claude team's official guide</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">OpenAI — A Survey of Techniques (Isa Fulford)</p>
+      <p class="vg-title">OpenAI, A Survey of Techniques (Isa Fulford)</p>
       <p class="vg-creator">OpenAI / DevDay</p>
       <span class="vg-duration">⏱ 22 min · OpenAI's own playbook</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Temperature, top-p, top-k — visual explanation</p>
+      <p class="vg-title">Temperature, top-p, top-k, visual explanation</p>
       <p class="vg-creator">AssemblyAI / Cohere</p>
       <span class="vg-duration">⏱ 12 min · Sampling parameters demystified</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Lost in the Middle — long context paper walkthrough</p>
+      <p class="vg-title">Lost in the Middle, long context paper walkthrough</p>
       <p class="vg-creator">Yannic Kilcher</p>
       <span class="vg-duration">⏱ 25 min · Why position matters</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Microsoft Tay — 24 Hour Disaster Postmortem</p>
+      <p class="vg-title">Microsoft Tay, 24 Hour Disaster Postmortem</p>
       <p class="vg-creator">Computerphile</p>
       <span class="vg-duration">⏱ 14 min · Case study from the reading</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Claude vs GPT vs Gemini vs Llama — head to head</p>
+      <p class="vg-title">Claude vs GPT vs Gemini vs Llama, head to head</p>
       <p class="vg-creator">AI Explained</p>
       <span class="vg-duration">⏱ 22 min · 2026 model landscape</span>
     </div>

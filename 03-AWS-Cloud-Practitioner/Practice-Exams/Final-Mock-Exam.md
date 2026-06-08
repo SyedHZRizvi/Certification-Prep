@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AWS Cloud Practitioner (CLF-C02)
+# 🧪 Final Mock Exam, AWS Cloud Practitioner (CLF-C02)
 
 > **Conditions:** Set a 90-minute timer. 65 questions. EXACT real-exam length and timing.
 > **Pass mark:** 46/65 (≈ 70% = 700/1000 scaled)
@@ -448,7 +448,7 @@ D. 6
 
 **Q10. B.** Fargate launch type = no host management. **A:** EC2 launch type still requires host management. **C:** Lambda isn't a container launch type. **D:** Outposts is on-prem hardware. **Takeaway.** "Containers + no host management" → Fargate.
 
-**Q11. C.** Stopped = no compute, but EBS volumes still bill. **A:** Wrong (EBS still charges). **B:** Backwards. **D:** Network only — wrong. **Takeaway.** Stop = no compute, keep storage. Terminate = no compute, no storage (default).
+**Q11. C.** Stopped = no compute, but EBS volumes still bill. **A:** Wrong (EBS still charges). **B:** Backwards. **D:** Network only, wrong. **Takeaway.** Stop = no compute, keep storage. Terminate = no compute, no storage (default).
 
 **Q12. D.** Glacier Deep Archive = cheapest, 12–48 hr retrieval. **A:** Standard-IA has ms retrieval. **B:** Glacier Instant has ms retrieval. **C:** Glacier Flexible is minutes-hours, not 12-48 hr. **Takeaway.** Cheapest + slowest = Glacier Deep Archive.
 
@@ -500,7 +500,7 @@ D. 6
 
 **Q36. B.** Least privilege + MFA = IAM canonical best practice. **A:** Never use root daily. **C/D:** Never share or hard-code creds. **Takeaway.** Memorize the IAM Best Practices list.
 
-**Q37. C.** IAM Role on the instance = temporary credentials, auto-rotated. **A:** Public bucket exposes data. **B:** Root creds = blast radius infinity. **D:** Long-lived keys are the Capital One pattern — avoid. **Takeaway.** EC2 → AWS service = IAM Role always.
+**Q37. C.** IAM Role on the instance = temporary credentials, auto-rotated. **A:** Public bucket exposes data. **B:** Root creds = blast radius infinity. **D:** Long-lived keys are the Capital One pattern, avoid. **Takeaway.** EC2 → AWS service = IAM Role always.
 
 **Q38. D.** Explicit Deny always wins. **A:** Allow loses. **B/C:** order doesn't matter. **Takeaway.** Single most-tested IAM rule.
 
@@ -564,11 +564,11 @@ D. 6
 
 | Score | Verdict | Action |
 |-------|---------|--------|
-| 58–65 | 🏆 90%+ — you're ready | Sleep well, take the exam tomorrow |
-| 52–57 | ✅ 80–88% — strong | Review wrong answers in your notes |
-| 46–51 | ⚠️ 70–78% — pass-equivalent but tight | Re-study weak modules tonight |
-| 39–45 | 🛑 60–69% — at risk of failing | Postpone the exam by 1 week; intensive review |
-| <39 | 🔁 — significant gaps | Don't take the real exam yet; restudy ≥ 1 module |
+| 58–65 | 🏆 90%+, you're ready | Sleep well, take the exam tomorrow |
+| 52–57 | ✅ 80–88%, strong | Review wrong answers in your notes |
+| 46–51 | ⚠️ 70–78%, pass-equivalent but tight | Re-study weak modules tonight |
+| 39–45 | 🛑 60–69%, at risk of failing | Postpone the exam by 1 week; intensive review |
+| <39 | 🔁, significant gaps | Don't take the real exam yet; restudy ≥ 1 module |
 
 ---
 
@@ -598,19 +598,19 @@ For EACH wrong answer:
 
 1. **Sleep 8 hours.** Cramming will hurt you more than it helps.
 2. **Eat protein + carbs** ~2 hours before. No sugar crash.
-3. **Don't second-guess** — your first instinct is usually right on the AWS exams.
+3. **Don't second-guess**, your first instinct is usually right on the AWS exams.
 4. **Mark and move on.** If you can't decide in 30 seconds, flag and come back.
-5. **Watch the timer** — 90 min for 65 Qs = ~80 sec each.
-6. **"BEST", "MOST", "LEAST"** — these words shift the answer. Underline them.
+5. **Watch the timer**, 90 min for 65 Qs = ~80 sec each.
+6. **"BEST", "MOST", "LEAST"**, these words shift the answer. Underline them.
 7. **Eliminate wrong answers first.** Usually 2 are obviously wrong; pick between the remaining 2.
-8. **Trust the exam guide language** — if AWS says it, it's the answer.
+8. **Trust the exam guide language**, if AWS says it, it's the answer.
 
 ---
 
 ## 🎓 After You Pass
 
 - Add the AWS Certified Cloud Practitioner badge to LinkedIn (Credly)
-- Get **50% off** your next AWS exam — book SAA-C03 (Solutions Architect Associate) within 12 months
+- Get **50% off** your next AWS exam, book SAA-C03 (Solutions Architect Associate) within 12 months
 - Tell a friend. The best way to retain knowledge is to teach it.
 
 You got this. ☁️

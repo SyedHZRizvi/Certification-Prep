@@ -8,7 +8,7 @@
 
 ### Q1. BIP-32 standardizes: *(Remember)*
 A. Mnemonic seed phrases
-B. Hierarchical Deterministic (HD) wallets — derive a tree of keys from one seed
+B. Hierarchical Deterministic (HD) wallets, derive a tree of keys from one seed
 C. Derivation paths
 D. Multi-signature scripts
 
@@ -176,7 +176,7 @@ D. No screens can be trusted
 
 ### Q22. Storing your seed phrase as a photo in your phone's camera roll is: *(Apply)*
 A. Fine; phones are secure
-B. The most dangerous common practice — cloud backup means anyone with iCloud / Google Photos access (or malware) can extract it
+B. The most dangerous common practice, cloud backup means anyone with iCloud / Google Photos access (or malware) can extract it
 C. Required by BIP-39
 D. Recommended by hardware-wallet manufacturers
 
@@ -184,7 +184,7 @@ D. Recommended by hardware-wallet manufacturers
 
 ### Q23. A "vanity address" generator from an unknown website is dangerous because: *(Analyze)*
 A. It produces invalid addresses
-B. The tool sees your private key during generation — and may exfiltrate it
+B. The tool sees your private key during generation, and may exfiltrate it
 C. It's against BIP rules
 D. It produces only legacy addresses
 
@@ -200,11 +200,11 @@ D. Only viable on testnet
 
 ## 🎯 Answers + Explanations
 
-### Q1: **B. HD wallets — derive a tree of keys from one seed**
+### Q1: **B. HD wallets, derive a tree of keys from one seed**
 Pieter Wuille, 2012. The HMAC-SHA512-based derivation tree.
 
 ### Q2: **B. Mnemonic seed phrases (12 / 24 English words)**
-Palatinus, Rusnák, Voisine, Bowe — 2013.
+Palatinus, Rusnák, Voisine, Bowe, 2013.
 
 ### Q3: **C. 256 bits + 8 checksum (264 total)**
 24 words × 11 bits each = 264 bits = 256 entropy + 8 checksum. 12 words = 132 = 128 + 4.
@@ -231,7 +231,7 @@ The xpub enables receive-only and balance-display wallets. The xprv (extended pr
 M-of-N where M=2 and N=3. Loss of 1 key = still recoverable; theft of 1 key = still safe.
 
 ### Q11: **B. 95 : 4 : 1**
-Industry standard. Cold dominates by design — operational liquidity in hot is minimized.
+Industry standard. Cold dominates by design, operational liquidity in hot is minimized.
 
 ### Q12: **C. 850,000 BTC**
 ~200K were later recovered; ~650K remain unrecovered. The most-tested institutional-failure fact.
@@ -246,7 +246,7 @@ The fundamental architectural distinction. MPC = chain-agnostic, vendor-dependen
 BIP-174. The standard handoff format for multi-step signing (hardware wallet + laptop, or multiple cosigners in multi-sig).
 
 ### Q16: **B. Hardened requires the parent private key**
-Hardened (apostrophe / H suffix) breaks the xpub-can-derive-children property — used at account boundaries.
+Hardened (apostrophe / H suffix) breaks the xpub-can-derive-children property, used at account boundaries.
 
 ### Q17: **C. 2,048**
 PBKDF2 with 2,048 iterations transforms the mnemonic into the 64-byte seed. Not 1,024, not 10,000.
@@ -255,7 +255,7 @@ PBKDF2 with 2,048 iterations transforms the mnemonic into the 64-byte seed. Not 
 The two industry-standard approaches. Both better than seed-sharing.
 
 ### Q19: **B. Worsening privacy and pre-Taproot revealing the full public key**
-Chain analysis clusters reused addresses. Pre-Taproot, spending revealed the full public key — opening to (theoretical) quantum-attack risk.
+Chain analysis clusters reused addresses. Pre-Taproot, spending revealed the full public key, opening to (theoretical) quantum-attack risk.
 
 ### Q20: **B. CEO Gerald Cotten died holding sole knowledge of cold-storage keys**
 $190M CAD in customer funds lost. The single-point-of-failure custody anti-pattern.

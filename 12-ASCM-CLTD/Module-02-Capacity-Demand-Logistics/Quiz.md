@@ -26,7 +26,7 @@ D. Match daily with fixed-staff only
 
 ### Q3. "Capacity cushion" refers to: *(Remember)*
 A. The mattresses in the break room
-B. Planned slack — the unused fraction of capacity
+B. Planned slack, the unused fraction of capacity
 C. The overtime budget
 D. The contingency reserve in dollars
 
@@ -44,7 +44,7 @@ D. The throughput in dollars
 A. ~25%
 B. ~50%
 C. ~85–90%
-D. 100% — utilization is always good
+D. 100%, utilization is always good
 
 ---
 
@@ -171,7 +171,7 @@ D. Three-month moving averages only
 ### Q21. An A-mover SKU should be slotted: *(Apply)*
 A. At the back of the warehouse, on the top shelf
 B. In a forward-pick area, in the ergonomic golden zone (waist-shoulder)
-C. Anywhere — velocity doesn't affect slotting
+C. Anywhere, velocity doesn't affect slotting
 D. In the reserve area only
 
 ---
@@ -201,7 +201,7 @@ D. Only one is exam-relevant
 ---
 
 ### Q25. A forecast has tracking signal +8 for 4 weeks running. The correct action: *(Evaluate)*
-A. Ignore — tracking signal is unreliable
+A. Ignore, tracking signal is unreliable
 B. Tighten safety stock
 C. Investigate and retune the forecast model
 D. Switch carriers
@@ -229,12 +229,12 @@ Queueing theory shows wait time approaches infinity as utilization → 100% with
 MAD = mean of absolute deviations. Signs don't cancel.
 
 ### Q7: **C. Positive bias**
-Σ(Actual − Forecast) negative means forecast > actual → over-predicting → **positive bias** in the "forecast is high" sense. Note: bias sign conventions vary; ASCM defines bias as Σ(A−F)/N — so chronic over-forecast gives **negative** bias. The exam will be explicit; here we follow the convention that bias = Actual − Forecast (negative = over). Correction: **B. Negative bias** is the ASCM convention.
+Σ(Actual − Forecast) negative means forecast > actual → over-predicting → **positive bias** in the "forecast is high" sense. Note: bias sign conventions vary; ASCM defines bias as Σ(A−F)/N, so chronic over-forecast gives **negative** bias. The exam will be explicit; here we follow the convention that bias = Actual − Forecast (negative = over). Correction: **B. Negative bias** is the ASCM convention.
 
 *[Best practice on exam: read the convention; ASCM defines bias = Σ(A−F)/N. Over-forecast → A<F → negative bias.]*
 
 ### Q8: **C. 4 to 6**
-Tracking signal alerts when |TS| exceeds 4 to 6 — model needs retuning.
+Tracking signal alerts when |TS| exceeds 4 to 6, model needs retuning.
 
 ### Q9: **C. 110**
 (100+110+120)/3 = 110.

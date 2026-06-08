@@ -213,7 +213,7 @@ D. Compensating
 
 ### Q26. A small company has no SIEM and cannot afford one. They implement weekly manual log reviews instead. The manual reviews function as a: *(Create)*
 
-> *Create-level note:* the question is framed as a control-design exercise — you are choosing *which* category best describes the *substitute architecture* you've designed.
+> *Create-level note:* the question is framed as a control-design exercise, you are choosing *which* category best describes the *substitute architecture* you've designed.
 A. Preventive control
 B. Compensating control
 C. Directive control
@@ -254,7 +254,7 @@ The PEP lives in the **data plane** (where traffic flows) and physically lets tr
 Adaptive Identity uses signals like device posture, geolocation, time, behavior to dial up or down friction. Logging in from your usual laptop at noon = low friction; from a new device in another country at 3 a.m. = high friction or deny.
 
 ### Q11: **C. Deterrent control**
-Deterrents try to *discourage* the attacker from acting. The sign doesn't physically stop anyone — it changes their decision. If the camera actually existed AND recorded, that recording would be a detective control.
+Deterrents try to *discourage* the attacker from acting. The sign doesn't physically stop anyone, it changes their decision. If the camera actually existed AND recorded, that recording would be a detective control.
 
 ### Q12: **B. Detective**
 The sensor *spots* the event; it doesn't prevent it. Detection generates the alert for response.
@@ -263,13 +263,13 @@ The sensor *spots* the event; it doesn't prevent it. Detection generates the ale
 Policies and procedures are managerial controls.
 
 ### Q14: **B. Physical / Preventive**
-The lock physically prevents entry (preventive), and it's a physical object (physical type). A biometric *reader* is both — the physical hardware AND the logical decision.
+The lock physically prevents entry (preventive), and it's a physical object (physical type). A biometric *reader* is both, the physical hardware AND the logical decision.
 
 ### Q15: **B. Compensating control**
 Compensating controls are alternatives used when the primary control (patching) isn't feasible.
 
 ### Q16: **B. Corrective**
-The malware already executed (detection happened first). Quarantine *corrects* — undoes damage and removes the threat. Pure prevention would have blocked execution.
+The malware already executed (detection happened first). Quarantine *corrects*, undoes damage and removes the threat. Pure prevention would have blocked execution.
 
 ### Q17: **B. Gap analysis**
 Comparing current posture to a target framework = gap analysis. Output is a remediation roadmap.
@@ -296,7 +296,7 @@ S/MIME or PGP signatures bind the message to the sender's private key. A forged 
 Claim → prove → permit → log. The full lifecycle.
 
 ### Q25: **A. Preventive**
-Awareness training prevents (reduces likelihood of) successful phishing. It's also operational by type. "Directive only" misses the prevention angle — Sec+ usually classifies training as preventive.
+Awareness training prevents (reduces likelihood of) successful phishing. It's also operational by type. "Directive only" misses the prevention angle, Sec+ usually classifies training as preventive.
 
 ### Q26: **B. Compensating control**
 They cannot afford the primary control (SIEM) so they substitute manual reviews. That substitution is by definition a compensating control.
@@ -317,9 +317,9 @@ They cannot afford the primary control (SIEM) so they substitute manual reviews.
 - CIA + non-repudiation (4 cards, one per property)
 - AAA + Identification (4 cards)
 - Zero Trust components: PE, PA, PEP, Adaptive Identity, Threat Scope Reduction
-- Control TYPES (4) and CATEGORIES (6) — make a card per cell of the 4×6 grid
+- Control TYPES (4) and CATEGORIES (6), make a card per cell of the 4×6 grid
 - Change management terms: CAB, backout, impact analysis, CMDB
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Cryptography & PKI](../Module-02-Cryptography-PKI/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Cryptography & PKI](../Module-02-Cryptography-PKI/Reading.md)

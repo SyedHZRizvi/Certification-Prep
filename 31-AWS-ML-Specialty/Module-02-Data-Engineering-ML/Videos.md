@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🌊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS Glue — Crawler, Catalog, ETL Walkthrough</p>
+      <p class="vg-title">AWS Glue, Crawler, Catalog, ETL Walkthrough</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 18 min · Glue's core concepts</span>
     </div>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🏞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Lake Formation — Governance Made Easy</p>
+      <p class="vg-title">AWS Lake Formation, Governance Made Easy</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 20 min · LF-Tags, row/column security</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>📂</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Parquet vs ORC vs Avro — Choosing The Right Format</p>
+      <p class="vg-title">Parquet vs ORC vs Avro, Choosing The Right Format</p>
       <p class="vg-creator">Data Engineering Café</p>
       <span class="vg-duration">⏱ 18 min · Why Parquet wins for ML</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🧹</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Glue DataBrew — No-Code Data Prep</p>
+      <p class="vg-title">Glue DataBrew, No-Code Data Prep</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 22 min · 250+ transforms, analyst-friendly</span>
     </div>
@@ -127,7 +127,7 @@
     <div class="vg-thumb"><span>❄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AWS Snowball Edge — When to Ship a Disk</p>
+      <p class="vg-title">AWS Snowball Edge, When to Ship a Disk</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 13 min · Petabyte-scale offline transfer</span>
     </div>

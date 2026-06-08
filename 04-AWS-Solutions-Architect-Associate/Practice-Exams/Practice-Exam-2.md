@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AWS Solutions Architect Associate (SAA-C03)
+# 🧪 Practice Exam 2, AWS Solutions Architect Associate (SAA-C03)
 
 > **Conditions:** Set a 100-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 36/50 (72%)
@@ -90,7 +90,7 @@ D. AWS Application Migration Service (MGN)
 A. CloudFront
 B. AWS Backup
 C. Snowball
-D. Storage Gateway — Tape Gateway (VTL)
+D. Storage Gateway, Tape Gateway (VTL)
 
 ### 15. To centrally back up EBS, RDS, EFS, DynamoDB, and FSx under one policy:
 A. CloudWatch
@@ -198,7 +198,7 @@ D. SCT
 A. Route 53 Geolocation routing
 B. CloudFront geo restriction (and/or Geolocation routing)
 C. WAF country-block rule
-D. Any of A, B, or C — depending on layer
+D. Any of A, B, or C, depending on layer
 
 ### 33. A workload requires ordered, exactly-once message processing with fan-out to multiple SQS queues. The BEST design is:
 A. EventBridge
@@ -329,7 +329,7 @@ D. S3 Select
 
 ## Detailed answer rationales
 
-**Q1. Answer: C — Aurora Global Database**
+**Q1. Answer: C, Aurora Global Database**
 
 **Why C is correct.** Aurora Global Database supports cross-region replication with <1 second lag and rapid managed failover (typically <1 min). Designed exactly for this use case.
 
@@ -342,9 +342,9 @@ D. S3 Select
 
 ---
 
-**Q2. Answer: C — Kinesis Data Streams**
+**Q2. Answer: C, Kinesis Data Streams**
 
-**Why C is correct.** Kinesis Data Streams retains data (up to 365 days) and supports multiple independent consumers each tracking their own position — enabling replay.
+**Why C is correct.** Kinesis Data Streams retains data (up to 365 days) and supports multiple independent consumers each tracking their own position, enabling replay.
 
 **Why the others are wrong.**
 - A: SQS Standard is delete-after-read; can't replay.
@@ -355,7 +355,7 @@ D. S3 Select
 
 ---
 
-**Q3. Answer: A — S3 Glacier Deep Archive**
+**Q3. Answer: A, S3 Glacier Deep Archive**
 
 **Why A is correct.** Deep Archive is the cheapest tier (~$0.00099/GB-mo); 12-hour retrieval matches the requirement.
 
@@ -368,7 +368,7 @@ D. S3 Select
 
 ---
 
-**Q4. Answer: C — CloudFront with signed URLs/cookies + OAC + private S3**
+**Q4. Answer: C, CloudFront with signed URLs/cookies + OAC + private S3**
 
 **Why C is correct.** Signed URLs/cookies restrict CloudFront access to authenticated users; OAC keeps S3 private. Standard subscription-content pattern.
 
@@ -381,7 +381,7 @@ D. S3 Select
 
 ---
 
-**Q5. Answer: B — S3 Transfer Acceleration**
+**Q5. Answer: B, S3 Transfer Acceleration**
 
 **Why B is correct.** TA uses CloudFront's edge network for the upload path, dramatically accelerating long-distance uploads.
 
@@ -394,9 +394,9 @@ D. S3 Select
 
 ---
 
-**Q6. Answer: A — S3 event notification → Lambda**
+**Q6. Answer: A, S3 event notification → Lambda**
 
-**Why A is correct.** S3 Event Notifications natively trigger Lambda on object creation — zero infrastructure.
+**Why A is correct.** S3 Event Notifications natively trigger Lambda on object creation, zero infrastructure.
 
 **Why the others are wrong.**
 - B: CloudFront is delivery, not event source.
@@ -407,7 +407,7 @@ D. S3 Select
 
 ---
 
-**Q7. Answer: A — EventBridge with rules and SaaS partner integration**
+**Q7. Answer: A, EventBridge with rules and SaaS partner integration**
 
 **Why A is correct.** EventBridge supports content-based routing (rules) and has native SaaS partner sources/targets including Datadog.
 
@@ -420,7 +420,7 @@ D. S3 Select
 
 ---
 
-**Q8. Answer: B — EventBridge Scheduler (or scheduled rule)**
+**Q8. Answer: B, EventBridge Scheduler (or scheduled rule)**
 
 **Why B is correct.** EventBridge Scheduler is the modern AWS service for cron-style scheduled Lambda invocations.
 
@@ -433,7 +433,7 @@ D. S3 Select
 
 ---
 
-**Q9. Answer: B — Warm Standby**
+**Q9. Answer: B, Warm Standby**
 
 **Why B is correct.** Warm Standby: scaled-down stack always running in DR region; scale up on failover. RTO/RPO of minutes is achievable.
 
@@ -446,9 +446,9 @@ D. S3 Select
 
 ---
 
-**Q10. Answer: A — Backup & Restore**
+**Q10. Answer: A, Backup & Restore**
 
-**Why A is correct.** Cheapest tier — only backups in DR region; rebuild from IaC on disaster.
+**Why A is correct.** Cheapest tier, only backups in DR region; rebuild from IaC on disaster.
 
 **Why the others are wrong.**
 - B-D: All more expensive (Pilot/Warm/Multi-Site).
@@ -457,7 +457,7 @@ D. S3 Select
 
 ---
 
-**Q11. Answer: A — Snowball Edge Storage Optimized**
+**Q11. Answer: A, Snowball Edge Storage Optimized**
 
 **Why A is correct.** 500 TB over 200 Mbps = ~230 days online. Snowball ships in ~1 week.
 
@@ -470,7 +470,7 @@ D. S3 Select
 
 ---
 
-**Q12. Answer: A — DMS + Schema Conversion Tool (SCT)**
+**Q12. Answer: A, DMS + Schema Conversion Tool (SCT)**
 
 **Why A is correct.** Heterogeneous migration (SQL Server → Aurora PostgreSQL) requires SCT for schema and DMS with CDC for data + ongoing replication.
 
@@ -483,9 +483,9 @@ D. S3 Select
 
 ---
 
-**Q13. Answer: D — AWS Application Migration Service (MGN)**
+**Q13. Answer: D, AWS Application Migration Service (MGN)**
 
-**Why D is correct.** MGN replicates VMs block-by-block to EC2 with minimal cutover downtime — purpose-built for lift-and-shift.
+**Why D is correct.** MGN replicates VMs block-by-block to EC2 with minimal cutover downtime, purpose-built for lift-and-shift.
 
 **Why the others are wrong.**
 - A: CloudFront is CDN.
@@ -496,7 +496,7 @@ D. S3 Select
 
 ---
 
-**Q14. Answer: D — Storage Gateway Tape Gateway (VTL)**
+**Q14. Answer: D, Storage Gateway Tape Gateway (VTL)**
 
 **Why D is correct.** Tape Gateway presents a Virtual Tape Library to existing backup software, storing data in S3 + Glacier. No software changes needed.
 
@@ -509,7 +509,7 @@ D. S3 Select
 
 ---
 
-**Q15. Answer: C — AWS Backup**
+**Q15. Answer: C, AWS Backup**
 
 **Why C is correct.** AWS Backup centralizes EBS, RDS, EFS, DynamoDB, FSx, S3 (and more) under one policy + vault lock + cross-region/account copies.
 
@@ -522,9 +522,9 @@ D. S3 Select
 
 ---
 
-**Q16. Answer: A — DAX**
+**Q16. Answer: A, DAX**
 
-**Why A is correct.** Same as PE-1 Q29 — sub-ms reads on DynamoDB hot keys with minimal code change = DAX.
+**Why A is correct.** Same as PE-1 Q29, sub-ms reads on DynamoDB hot keys with minimal code change = DAX.
 
 **Why the others are wrong.**
 - B: Memcached is ms-class.
@@ -535,7 +535,7 @@ D. S3 Select
 
 ---
 
-**Q17. Answer: C — GuardDuty**
+**Q17. Answer: C, GuardDuty**
 
 **Why C is correct.** GuardDuty analyzes CloudTrail, VPC Flow Logs, and DNS logs with ML to detect crypto-mining and unusual IAM activity.
 
@@ -548,7 +548,7 @@ D. S3 Select
 
 ---
 
-**Q18. Answer: C — Macie**
+**Q18. Answer: C, Macie**
 
 **Why C is correct.** Macie's purpose is discovering and protecting sensitive data (PII, PHI, financial) in S3 buckets.
 
@@ -561,7 +561,7 @@ D. S3 Select
 
 ---
 
-**Q19. Answer: D — AWS Config rules with optional remediation**
+**Q19. Answer: D, AWS Config rules with optional remediation**
 
 **Why D is correct.** Config tracks resource state and rules check compliance ("all buckets encrypted"). SSM auto-remediation can fix drift.
 
@@ -574,7 +574,7 @@ D. S3 Select
 
 ---
 
-**Q20. Answer: D — AWS X-Ray**
+**Q20. Answer: D, AWS X-Ray**
 
 **Why D is correct.** X-Ray provides distributed tracing across API Gateway → Lambda → DynamoDB with latency breakdown and service maps.
 
@@ -587,7 +587,7 @@ D. S3 Select
 
 ---
 
-**Q21. Answer: D — CloudWatch Billing alarm OR AWS Budgets**
+**Q21. Answer: D, CloudWatch Billing alarm OR AWS Budgets**
 
 **Why D is correct.** Both can alert on forecasted spend exceeding a threshold; AWS Budgets is the more flexible modern option.
 
@@ -600,9 +600,9 @@ D. S3 Select
 
 ---
 
-**Q22. Answer: B — AWS Cost Anomaly Detection**
+**Q22. Answer: B, AWS Cost Anomaly Detection**
 
-**Why B is correct.** ML-based; finds unusual spend without manual thresholds — exactly the use case.
+**Why B is correct.** ML-based; finds unusual spend without manual thresholds, exactly the use case.
 
 **Why the others are wrong.**
 - A: CloudWatch needs a manual threshold.
@@ -613,7 +613,7 @@ D. S3 Select
 
 ---
 
-**Q23. Answer: A — AWS Compute Optimizer (free)**
+**Q23. Answer: A, AWS Compute Optimizer (free)**
 
 **Why A is correct.** Free ML-based rightsizing for EC2, ASG, EBS, Lambda, Fargate.
 
@@ -626,7 +626,7 @@ D. S3 Select
 
 ---
 
-**Q24. Answer: B — DynamoDB Global Tables**
+**Q24. Answer: B, DynamoDB Global Tables**
 
 **Why B is correct.** Multi-region active-active for NoSQL; writes anywhere replicate to all replicas (eventually consistent globally).
 
@@ -639,7 +639,7 @@ D. S3 Select
 
 ---
 
-**Q25. Answer: D — AWS PrivateLink (Endpoint Service)**
+**Q25. Answer: D, AWS PrivateLink (Endpoint Service)**
 
 **Why D is correct.** PrivateLink exposes one service across accounts/VPCs without VPC peering or public internet.
 
@@ -652,9 +652,9 @@ D. S3 Select
 
 ---
 
-**Q26. Answer: D — Failover routing with health checks**
+**Q26. Answer: D, Failover routing with health checks**
 
-**Why D is correct.** Failover routing returns primary while healthy, then secondary on health-check failure — canonical active-passive DR pattern.
+**Why D is correct.** Failover routing returns primary while healthy, then secondary on health-check failure, canonical active-passive DR pattern.
 
 **Why the others are wrong.**
 - A: Simple routing has no failover.
@@ -665,7 +665,7 @@ D. S3 Select
 
 ---
 
-**Q27. Answer: D — Cognito Identity Pools**
+**Q27. Answer: D, Cognito Identity Pools**
 
 **Why D is correct.** Identity Pools issue temporary AWS credentials to end-users (authenticated via Cognito User Pools or external IdPs) for direct S3 uploads.
 
@@ -678,7 +678,7 @@ D. S3 Select
 
 ---
 
-**Q28. Answer: B — Mixed instances policy with multiple instance types**
+**Q28. Answer: B, Mixed instances policy with multiple instance types**
 
 **Why B is correct.** Mixed-instances policy in the ASG launch template lets you specify a percentage Spot + diversified instance types for resilience against Spot interruption.
 
@@ -691,9 +691,9 @@ D. S3 Select
 
 ---
 
-**Q29. Answer: C — Step Functions Express**
+**Q29. Answer: C, Step Functions Express**
 
-**Why C is correct.** Express workflows are designed for high-volume (tens of millions/day) short workflows — pay per invocation + duration; much cheaper than Standard for this scale.
+**Why C is correct.** Express workflows are designed for high-volume (tens of millions/day) short workflows, pay per invocation + duration; much cheaper than Standard for this scale.
 
 **Why the others are wrong.**
 - A: EC2 cron lacks orchestration.
@@ -704,7 +704,7 @@ D. S3 Select
 
 ---
 
-**Q30. Answer: B — Origin Access Control (OAC)**
+**Q30. Answer: B, Origin Access Control (OAC)**
 
 **Why B is correct.** OAC is the modern AWS-recommended way to lock an S3 origin to CloudFront. Supports SSE-KMS, all regions, and signed requests.
 
@@ -717,7 +717,7 @@ D. S3 Select
 
 ---
 
-**Q31. Answer: C — AWS WAF with managed rule groups**
+**Q31. Answer: C, AWS WAF with managed rule groups**
 
 **Why C is correct.** WAF + managed rule groups (e.g., AWS Managed SQL Injection Rule Set, OWASP Core) protect at layer 7 for SQLi/XSS.
 
@@ -730,7 +730,7 @@ D. S3 Select
 
 ---
 
-**Q32. Answer: D — Any of A, B, or C**
+**Q32. Answer: D, Any of A, B, or C**
 
 **Why D is correct.** Geo-restriction can be implemented at Route 53 (DNS), CloudFront (CDN), or WAF (request filter). All are valid depending on architecture.
 
@@ -740,7 +740,7 @@ D. S3 Select
 
 ---
 
-**Q33. Answer: D — SNS FIFO + multiple SQS FIFO subscribers**
+**Q33. Answer: D, SNS FIFO + multiple SQS FIFO subscribers**
 
 **Why D is correct.** Strict ordering and exactly-once with fan-out requires FIFO on both topic (SNS FIFO) and queues (SQS FIFO).
 
@@ -753,7 +753,7 @@ D. S3 Select
 
 ---
 
-**Q34. Answer: D — Stop instances after-hours + Spot for tests**
+**Q34. Answer: D, Stop instances after-hours + Spot for tests**
 
 **Why D is correct.** Idle 24/7 EC2 is the most common cost leak. Stopping after hours (or using Lambda for short workloads) plus Spot for non-critical tests minimizes cost.
 
@@ -766,7 +766,7 @@ D. S3 Select
 
 ---
 
-**Q35. Answer: B — Enable Versioning before deletions occur**
+**Q35. Answer: B, Enable Versioning before deletions occur**
 
 **Why B is correct.** Versioning keeps every version; a delete just creates a delete marker that can be removed.
 
@@ -779,7 +779,7 @@ D. S3 Select
 
 ---
 
-**Q36. Answer: A — AWS Network Firewall**
+**Q36. Answer: A, AWS Network Firewall**
 
 **Why A is correct.** Network Firewall provides stateful L3/L4/L7 IPS-style inspection inside the VPC.
 
@@ -792,9 +792,9 @@ D. S3 Select
 
 ---
 
-**Q37. Answer: C — Scheduled scaling**
+**Q37. Answer: C, Scheduled scaling**
 
-**Why C is correct.** Predictable weekday 9–6 pattern matches scheduled scaling — you set the schedule, ASG scales accordingly.
+**Why C is correct.** Predictable weekday 9–6 pattern matches scheduled scaling, you set the schedule, ASG scales accordingly.
 
 **Why the others are wrong.**
 - A: Step scaling reacts to alarms; over-engineered for predictable patterns.
@@ -805,12 +805,12 @@ D. S3 Select
 
 ---
 
-**Q38. Answer: C — Snowball Edge Compute Optimized**
+**Q38. Answer: C, Snowball Edge Compute Optimized**
 
 **Why C is correct.** Compute Optimized adds CPU/memory + GPU options for local processing during transfer.
 
 **Why the others are wrong.**
-- A: DataSync alone is online — the question says "slow internet link."
+- A: DataSync alone is online, the question says "slow internet link."
 - B: Storage Optimized lacks compute.
 - D: Direct Connect provisioning takes weeks.
 
@@ -818,7 +818,7 @@ D. S3 Select
 
 ---
 
-**Q39. Answer: C — Spiky or idle workloads needing per-second scaling**
+**Q39. Answer: C, Spiky or idle workloads needing per-second scaling**
 
 **Why C is correct.** Aurora Serverless v2 (GA April 2022) scales in 0.5 ACU increments per second. Designed for spiky/idle relational workloads.
 
@@ -831,7 +831,7 @@ D. S3 Select
 
 ---
 
-**Q40. Answer: A — CloudFront in front of S3 with OAC**
+**Q40. Answer: A, CloudFront in front of S3 with OAC**
 
 **Why A is correct.** CloudFront's 600+ edge locations cache static images globally; OAC keeps S3 private. Cheapest global pattern.
 
@@ -844,9 +844,9 @@ D. S3 Select
 
 ---
 
-**Q41. Answer: A — QLDB**
+**Q41. Answer: A, QLDB**
 
-**Why A is correct.** QLDB (Quantum Ledger Database) provides cryptographically verifiable immutable ledger — purpose-built for financial audit.
+**Why A is correct.** QLDB (Quantum Ledger Database) provides cryptographically verifiable immutable ledger, purpose-built for financial audit.
 
 **Why the others are wrong.**
 - B: RDS isn't tamper-evident by default.
@@ -857,7 +857,7 @@ D. S3 Select
 
 ---
 
-**Q42. Answer: B — Amazon Keyspaces**
+**Q42. Answer: B, Amazon Keyspaces**
 
 **Why B is correct.** Keyspaces is AWS's Apache-Cassandra-compatible serverless managed service.
 
@@ -870,7 +870,7 @@ D. S3 Select
 
 ---
 
-**Q43. Answer: B — ElastiCache (Redis if HA/persistence)**
+**Q43. Answer: B, ElastiCache (Redis if HA/persistence)**
 
 **Why B is correct.** Cache-aside reduces repeated identical reads on the RDS instance. Redis preferred for HA/persistence.
 
@@ -883,9 +883,9 @@ D. S3 Select
 
 ---
 
-**Q44. Answer: A — AWS Outposts**
+**Q44. Answer: A, AWS Outposts**
 
-**Why A is correct.** Outposts is an AWS-managed rack physically installed in your data center — local AWS services with consistent APIs.
+**Why A is correct.** Outposts is an AWS-managed rack physically installed in your data center, local AWS services with consistent APIs.
 
 **Why the others are wrong.**
 - B: Direct Connect is connectivity.
@@ -896,7 +896,7 @@ D. S3 Select
 
 ---
 
-**Q45. Answer: B — AWS Local Zones**
+**Q45. Answer: B, AWS Local Zones**
 
 **Why B is correct.** Local Zones are AWS-owned, in major metros (LA, Boston, etc.), providing sub-10ms latency for regional users.
 
@@ -909,9 +909,9 @@ D. S3 Select
 
 ---
 
-**Q46. Answer: B — Bucket policy denying PUTs without `s3:x-amz-server-side-encryption: aws:kms`**
+**Q46. Answer: B, Bucket policy denying PUTs without `s3:x-amz-server-side-encryption: aws:kms`**
 
-**Why B is correct.** Same as PE-1 Q23 — enforce KMS encryption via bucket policy denial pattern.
+**Why B is correct.** Same as PE-1 Q23, enforce KMS encryption via bucket policy denial pattern.
 
 **Why the others are wrong.**
 - A: BPA blocks public access, not encryption enforcement.
@@ -922,7 +922,7 @@ D. S3 Select
 
 ---
 
-**Q47. Answer: A — AWS Firewall Manager**
+**Q47. Answer: A, AWS Firewall Manager**
 
 **Why A is correct.** Firewall Manager centralizes WAF, Shield Advanced, SG, and Network Firewall policies across an Org.
 
@@ -935,7 +935,7 @@ D. S3 Select
 
 ---
 
-**Q48. Answer: C — DMS with CDC tasks**
+**Q48. Answer: C, DMS with CDC tasks**
 
 **Why C is correct.** DMS Change Data Capture (CDC) replicates ongoing changes from source to target, enabling near-zero-downtime cutover.
 
@@ -948,7 +948,7 @@ D. S3 Select
 
 ---
 
-**Q49. Answer: B — RDS Proxy**
+**Q49. Answer: B, RDS Proxy**
 
 **Why B is correct.** RDS Proxy pools/multiplexes connections, eliminating connection storm failures from short-lived Lambda invocations.
 
@@ -961,9 +961,9 @@ D. S3 Select
 
 ---
 
-**Q50. Answer: D — S3 Select**
+**Q50. Answer: D, S3 Select**
 
-**Why D is correct.** S3 Select runs SQL queries server-side on CSV/JSON/Parquet, returning only matching rows — minimal data transfer.
+**Why D is correct.** S3 Select runs SQL queries server-side on CSV/JSON/Parquet, returning only matching rows, minimal data transfer.
 
 **Why the others are wrong.**
 - A: Streaming download transfers the whole file.

@@ -89,7 +89,7 @@
     <div class="vg-thumb"><span>🌊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Liquid Network — Federated Sidechain</p>
+      <p class="vg-title">Liquid Network, Federated Sidechain</p>
       <p class="vg-creator">Blockstream</p>
       <span class="vg-duration">⏱ 18 min · The alternative L2</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">RGB and Stacks — Smart Contracts on Bitcoin</p>
+      <p class="vg-title">RGB and Stacks, Smart Contracts on Bitcoin</p>
       <p class="vg-creator">RGB Foundation / Stacks</p>
       <span class="vg-duration">⏱ 22 min · The smart-contract L2 alternatives</span>
     </div>

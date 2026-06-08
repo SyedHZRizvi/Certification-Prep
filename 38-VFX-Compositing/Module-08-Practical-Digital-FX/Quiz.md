@@ -68,7 +68,7 @@ D. Warp Stabilizer with the wire region excluded
 The film *1917* (2019, directed by Sam Mendes) appeared to be shot in a single continuous take. What VFX technique made this possible?
 
 A. The film was genuinely shot in a single continuous take without VFX
-B. Digital stitching — separately shot scenes were composited together at carefully chosen transition points
+B. Digital stitching, separately shot scenes were composited together at carefully chosen transition points
 C. The LED Volume stage was used to simulate continuous environments
 D. Blender simulations were used to fill gaps between shots
 
@@ -79,7 +79,7 @@ D. Blender simulations were used to fill gaps between shots
 What is "beauty work" in a VFX context?
 
 A. Adding decorative visual effects (sparkles, glows) to a scene
-B. Digital retouching of talent appearances — blemish removal, skin smoothing, under-eye correction, de-aging
+B. Digital retouching of talent appearances, blemish removal, skin smoothing, under-eye correction, de-aging
 C. The final color grade applied by the colorist to make footage look attractive
 D. Applying a beauty filter LUT to the entire sequence
 
@@ -178,7 +178,7 @@ D. A copyright-free stock footage crowd composited into the background
 Atmospheric haze in a set extension serves what compositional purpose?
 
 A. It adds drama by obscuring the quality of the digital work
-B. It simulates the real-world effect of light scattering through air at distance, reducing contrast and saturation — making distant elements appear physically integrated with the plate
+B. It simulates the real-world effect of light scattering through air at distance, reducing contrast and saturation, making distant elements appear physically integrated with the plate
 C. It improves render performance by reducing visible texture detail
 D. It is required by ACES color management standards for set extensions
 
@@ -189,7 +189,7 @@ D. It is required by ACES color management standards for set extensions
 In a sky replacement composite, "light wrap" is applied at the interface between the foreground subject and the new sky. What does this simulate?
 
 A. The way clouds in the sky cast hard shadows on the foreground
-B. The physical scattering of sky light around the edges of foreground subjects — integrating them with the new sky illumination
+B. The physical scattering of sky light around the edges of foreground subjects, integrating them with the new sky illumination
 C. The reflection of the sky in windows and reflective surfaces in the scene
 D. The vignette that occurs at the edges of wide-angle lenses
 
@@ -221,9 +221,9 @@ D. Using the Mandalorian LED Volume to shoot both scenes simultaneously from dif
 
 When does a compositor perform beauty/cleanup work vs when does a dedicated paint artist perform it?
 
-A. There is no distinction — all VFX artists do both
+A. There is no distinction, all VFX artists do both
 B. A compositor does light cleanup integrated into the comp workflow; a dedicated paint artist handles heavy, shot-wide cleanup work that requires specialized paint expertise
-C. Compositors never do cleanup — it is always done by roto artists
+C. Compositors never do cleanup, it is always done by roto artists
 D. Paint artists handle all VFX work; compositors only do color grading
 
 ---
@@ -274,50 +274,50 @@ D. The director preferred practical effects for aesthetic reasons, regardless of
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** Edwards' philosophy: shoot real things (locations, practical elements) and build digital around them. *Monsters* is the purest expression of this — shot on real locations in Mexico, with digital creatures added in post.
+**Q1 B.** Edwards' philosophy: shoot real things (locations, practical elements) and build digital around them. *Monsters* is the purest expression of this shot on real locations in Mexico, with digital creatures added in post.
 
-**Q2 — B.** A set extension expands the physical set. The actors and the physical set are real; the digital environment beyond the physical boundaries is the extension.
+**Q2, B.** A set extension expands the physical set. The actors and the physical set are real; the digital environment beyond the physical boundaries is the extension.
 
-**Q3 — B.** Atmospheric depth — haze, saturation falloff, reduced contrast at distance — is the most important integration technique. Real-world atmospherics always reduce contrast and saturation with distance.
+**Q3 B.** Atmospheric depth haze, saturation falloff, reduced contrast at distance, is the most important integration technique. Real-world atmospherics always reduce contrast and saturation with distance.
 
-**Q4 — B.** With a clean plate, the workflow is: track/align the clean plate to the wire shot → paint or clone the clean plate's clean pixels over the wire pixels. This is fast, accurate, and preserves the real background texture.
+**Q4, B.** With a clean plate, the workflow is: track/align the clean plate to the wire shot → paint or clone the clean plate's clean pixels over the wire pixels. This is fast, accurate, and preserves the real background texture.
 
-**Q5 — C.** AE's Content-Aware Fill (2019+) can intelligently fill a roto-masked region by analyzing surrounding frame content. It is less precise than a clean plate but automated.
+**Q5, C.** AE's Content-Aware Fill (2019+) can intelligently fill a roto-masked region by analyzing surrounding frame content. It is less precise than a clean plate but automated.
 
-**Q6 — B.** *1917* was shot in separate scenes over many days. DNEG composited these scenes together at carefully planned digital transition points — dark frames, through tunnels, behind objects — to create the illusion of a single continuous take.
+**Q6 B.** *1917* was shot in separate scenes over many days. DNEG composited these scenes together at carefully planned digital transition points dark frames, through tunnels, behind objects, to create the illusion of a single continuous take.
 
-**Q7 — B.** Beauty work is digital retouching of talent: blemish removal, skin smoothing, under-eye correction, tattoo removal, de-aging. It is the VFX equivalent of portrait retouching in photography.
+**Q7, B.** Beauty work is digital retouching of talent: blemish removal, skin smoothing, under-eye correction, tattoo removal, de-aging. It is the VFX equivalent of portrait retouching in photography.
 
-**Q8 — C.** *Gravity* (2013) won the Oscar for Best Visual Effects. Framestore built over 80% of the film's visual world, making it one of the highest proportions of VFX to total runtime in Oscar history.
+**Q8, C.** *Gravity* (2013) won the Oscar for Best Visual Effects. Framestore built over 80% of the film's visual world, making it one of the highest proportions of VFX to total runtime in Oscar history.
 
-**Q9 — B.** The foreground must receive a warm color correction to match the ambient light from the golden sky. Mismatched color temperature between sky and foreground is the most common sky replacement error.
+**Q9, B.** The foreground must receive a warm color correction to match the ambient light from the golden sky. Mismatched color temperature between sky and foreground is the most common sky replacement error.
 
-**Q10 — B.** No atmospheric depth — a sharp, high-contrast extension with the same saturation as the foreground — immediately reads as incorrect. Real distance always reduces sharpness, contrast, and saturation.
+**Q10 B.** No atmospheric depth a sharp, high-contrast extension with the same saturation as the foreground, immediately reads as incorrect. Real distance always reduces sharpness, contrast, and saturation.
 
-**Q11 — B.** Professional de-aging requires: reference scans (archival footage or directed photography of the younger actor), a machine learning or manual facial texture transfer workflow, and intensive 2D cleanup in Nuke per shot.
+**Q11, B.** Professional de-aging requires: reference scans (archival footage or directed photography of the younger actor), a machine learning or manual facial texture transfer workflow, and intensive 2D cleanup in Nuke per shot.
 
-**Q12 — C.** *Gravity* used wire rigs to position actors (wires removed in post by Framestore), LED lighting rigs for space environment illumination, and CG environmental elements. The weightlessness was a combination of wire performance and Framestore's digital integration.
+**Q12, C.** *Gravity* used wire rigs to position actors (wires removed in post by Framestore), LED lighting rigs for space environment illumination, and CG environmental elements. The weightlessness was a combination of wire performance and Framestore's digital integration.
 
-**Q13 — B.** The Edwards philosophy: find real period locations and use digital extensions only where necessary. A real period street corner with a modest digital extension of the skyline is more convincing than a fully digital environment.
+**Q13, B.** The Edwards philosophy: find real period locations and use digital extensions only where necessary. A real period street corner with a modest digital extension of the skyline is more convincing than a fully digital environment.
 
-**Q14 — C.** The RotoPaint node in Nuke is the professional paint and clone tool. It provides frame-by-frame clone stamping from the clean plate onto the wire region.
+**Q14, C.** The RotoPaint node in Nuke is the professional paint and clone tool. It provides frame-by-frame clone stamping from the clean plate onto the wire region.
 
-**Q15 — B.** Digital crowd extension: taking the filmed extras and multiplying/duplicating them digitally (or adding CG crowd agents) to fill a larger space than was available on the day.
+**Q15, B.** Digital crowd extension: taking the filmed extras and multiplying/duplicating them digitally (or adding CG crowd agents) to fill a larger space than was available on the day.
 
-**Q16 — B.** Atmospheric haze simulates the real-world physics of light scattering through air particles at distance. It is not an artistic choice — it is a physical reality that compositors must replicate for integration.
+**Q16 B.** Atmospheric haze simulates the real-world physics of light scattering through air particles at distance. It is not an artistic choice it is a physical reality that compositors must replicate for integration.
 
-**Q17 — B.** Light wrap simulates how sky light scatters around the edges of foreground subjects. When a new sky is composited, its light should appear to wrap around the foreground edges — this is what ties the two elements together.
+**Q17 B.** Light wrap simulates how sky light scatters around the edges of foreground subjects. When a new sky is composited, its light should appear to wrap around the foreground edges this is what ties the two elements together.
 
-**Q18 — C.** Edwards (with co-director Jasper James and a very small team) used consumer-grade VFX software (After Effects, Photoshop) to composite feature-quality creature effects into real Mexico City location footage. It proved a professional feature was achievable with minimal resources.
+**Q18, C.** Edwards (with co-director Jasper James and a very small team) used consumer-grade VFX software (After Effects, Photoshop) to composite feature-quality creature effects into real Mexico City location footage. It proved a professional feature was achievable with minimal resources.
 
-**Q19 — B.** The *1917* stitch finds frame moments — a character moving through a doorway, a flash of light, a motion-blurred pan — where both separately shot scenes can be seamlessly joined in the composite.
+**Q19 B.** The *1917* stitch finds frame moments a character moving through a doorway, a flash of light, a motion-blurred pan, where both separately shot scenes can be seamlessly joined in the composite.
 
-**Q20 — B.** This is a practical workflow division. Light cleanup integrated into the compositing workflow is done by the compositor. Heavy, shot-wide cleanup requiring dedicated paint expertise is done by a specialized paint/cleanup artist.
+**Q20, B.** This is a practical workflow division. Light cleanup integrated into the compositing workflow is done by the compositor. Heavy, shot-wide cleanup requiring dedicated paint expertise is done by a specialized paint/cleanup artist.
 
-**Q21 — B.** The clean plate — a take of the set without the wire/rig in frame — is the single most important on-set data for wire removal. Without it, post work takes significantly longer.
+**Q21 B.** The clean plate a take of the set without the wire/rig in frame, is the single most important on-set data for wire removal. Without it, post work takes significantly longer.
 
-**Q22 — D.** Both A (Rotobrush + Particular breath steam element) and B (keyed breath steam element) are valid professional approaches. Tighter shots with mouth close-up detail need A for precise integration; wider shots where the steam is less detailed work with B.
+**Q22, D.** Both A (Rotobrush + Particular breath steam element) and B (keyed breath steam element) are valid professional approaches. Tighter shots with mouth close-up detail need A for precise integration; wider shots where the steam is less detailed work with B.
 
-**Q23 — C.** A 200-foot digital explosion hero sequence is the opposite of invisible — it is a spectacle effect. The others (sky replacement, wire removal, atmospheric enhancement) are all invisible effect categories.
+**Q23 C.** A 200-foot digital explosion hero sequence is the opposite of invisible it is a spectacle effect. The others (sky replacement, wire removal, atmospheric enhancement) are all invisible effect categories.
 
-**Q24 — B.** Physical elements provide photographic authenticity — real smoke moves like real smoke, real fire has real light, real explosions have real shockwaves. CG elements provide the scale, specificity, and control that practical cannot. Combining them produces results that are more believable than either alone.
+**Q24 B.** Physical elements provide photographic authenticity real smoke moves like real smoke, real fire has real light, real explosions have real shockwaves. CG elements provide the scale, specificity, and control that practical cannot. Combining them produces results that are more believable than either alone.

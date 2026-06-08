@@ -18,7 +18,7 @@
 .vg-section-desc { font-size: 14px; color: #64748b; margin: 0 0 4px; }
 </style>
 
-# 🎥 Module 6 Videos: Predictive Analytics — CLV, Churn & Propensity
+# 🎥 Module 6 Videos: Predictive Analytics, CLV, Churn & Propensity
 
 > **How to use:** Watch the Peter Fader CLV lecture twice. It's the single best marketing-analytics lecture on YouTube and gives you the conceptual basis for everything in this module.
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CLV From The Author — Peter Fader</p>
+      <p class="vg-title">CLV From The Author, Peter Fader</p>
       <p class="vg-creator">Wharton / Peter Fader</p>
       <span class="vg-duration">⏱ 28 min · BG/NBD explained</span>
     </div>

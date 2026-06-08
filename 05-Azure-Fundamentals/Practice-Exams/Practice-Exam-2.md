@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — AZ-900 (Full-Course Check)
+# 🧪 Practice Exam 2, AZ-900 (Full-Course Check)
 
 > **Conditions:** Set a 40-minute timer. 40 questions. Treat it like the real thing.
-> **Pass mark:** 28/40 (70%) — minimum to be confident for the real exam
+> **Pass mark:** 28/40 (70%), minimum to be confident for the real exam
 > Take this AFTER finishing ALL 6 modules.
 
 ---
@@ -257,9 +257,9 @@ B. No
 
 **Q2. Answer: C.** Pay-per-GB monthly is the textbook OpEx pattern. A/B/D are CapEx (buying assets / committing to long-dated procurement). **Takeaway:** Consumption pricing = OpEx.
 
-**Q3. Answer: C.** Microsoft documents East US ↔ West US as a paired region. A is wrong because pairs are within a geography (West Europe pairs to North Europe). B (Central US) is in the same geography but not the documented pair. D is wrong (the pair exists). **Takeaway:** Memorize a few canonical pairs — East US↔West US, North Europe↔West Europe, Japan East↔Japan West.
+**Q3. Answer: C.** Microsoft documents East US ↔ West US as a paired region. A is wrong because pairs are within a geography (West Europe pairs to North Europe). B (Central US) is in the same geography but not the documented pair. D is wrong (the pair exists). **Takeaway:** Memorize a few canonical pairs, East US↔West US, North Europe↔West Europe, Japan East↔Japan West.
 
-**Q4. Answer: A, D.** Owner grants access; User Access Administrator manages access specifically. B (Contributor) cannot grant access — the canonical Contributor distinction. C (Reader) can only view. **Takeaway:** Owner OR User Access Administrator = grant-access; Contributor explicitly *cannot*.
+**Q4. Answer: A, D.** Owner grants access; User Access Administrator manages access specifically. B (Contributor) cannot grant access, the canonical Contributor distinction. C (Reader) can only view. **Takeaway:** Owner OR User Access Administrator = grant-access; Contributor explicitly *cannot*.
 
 **Q5. Answer: A.** Azure Policy with Append or Modify effect adds/changes resource fields (like tags) at deploy time or via remediation. B (Lock) prevents delete/modify but doesn't enforce tag content. C (RBAC) controls who, not what shape. D (Monitor) is observability, not enforcement. **Takeaway:** Enforce *what resources look like* = Policy.
 
@@ -267,29 +267,29 @@ B. No
 
 **Q7. Answer: A.** Defender for Cloud's headline features are CSPM + Secure Score + CWPP. B (Sentinel) is SIEM/SOAR. C (Monitor) is observability. D (Policy) is compliance rules, no score. **Takeaway:** "Secure Score" is the Defender for Cloud signature.
 
-**Q8. Answer: A.** Entra ID is the post-2023 name for Azure AD. B is wrong — Entra ID uses OAuth/SAML/OIDC, *not* Kerberos/LDAP (which on-prem AD DS uses). C is wrong — Entra is cloud-only. D is wrong — features and protocol are different from AD DS. **Takeaway:** Entra ID = Azure AD (renamed). Different from on-prem AD DS in protocol, structure, and feature.
+**Q8. Answer: A.** Entra ID is the post-2023 name for Azure AD. B is wrong Entra ID uses OAuth/SAML/OIDC, *not* Kerberos/LDAP (which on-prem AD DS uses). C is wrong Entra is cloud-only. D is wrong, features and protocol are different from AD DS. **Takeaway:** Entra ID = Azure AD (renamed). Different from on-prem AD DS in protocol, structure, and feature.
 
 **Q9. Answer: C.** Conditional Access requires Entra ID P1 or higher. Free tier doesn't include it. **Takeaway:** Conditional Access ⇒ Entra ID P1+.
 
-**Q10. Answer: A (Yes).** Resource locks apply to *everyone* including Owners — until the lock itself is removed. The locks override RBAC for delete/modify actions. **Takeaway:** Locks are universal — including Owners.
+**Q10. Answer: A (Yes).** Resource locks apply to *everyone* including Owners until the lock itself is removed. The locks override RBAC for delete/modify actions. **Takeaway:** Locks are universal including Owners.
 
 **Q11. Answer: B (No).** Budgets *alert*; they do NOT shut down resources. (You can wire alerts to Logic Apps to automate shutdown.) **Takeaway:** Budget = notification, not enforcement.
 
 **Q12. Answer: C.** 3-year Reservation gives the biggest discount (up to 72%) for a steady, predictable 3-year workload. A is full price. B (Spot) can be evicted. D (Dev/Test) requires MSDN subscription. **Takeaway:** Steady predictable 24/7 = Reservation, longest term.
 
-**Q13. Answer: B.** 0.9995 × 0.9999 ≈ 0.9994 = 99.94%. A is the higher single component (wrong — composite is always lower). C is the lower single component (wrong — composite is lower than both). D is "no degradation" (impossible). **Takeaway:** Composite SLA always lower than the lowest single dependency.
+**Q13. Answer: B.** 0.9995 × 0.9999 ≈ 0.9994 = 99.94%. A is the higher single component (wrong composite is always lower). C is the lower single component (wrong composite is lower than both). D is "no degradation" (impossible). **Takeaway:** Composite SLA always lower than the lowest single dependency.
 
-**Q14. Answer: A.** Batch render farms are interruptible — Spot's eviction is acceptable. B/C/D all require always-on. **Takeaway:** Spot = batch / render / dev / fault-tolerant queue workers.
+**Q14. Answer: A.** Batch render farms are interruptible, Spot's eviction is acceptable. B/C/D all require always-on. **Takeaway:** Spot = batch / render / dev / fault-tolerant queue workers.
 
 **Q15. Answer: C.** Bicep is Microsoft's recommended modern Azure IaC language. A (ARM JSON) is the older format Bicep compiles to. B (Terraform) is third-party multi-cloud. D (Ansible) is config management, not Azure-native IaC. **Takeaway:** Bicep = modern Azure-only IaC.
 
 **Q16. Answer: A.** Service Health is the *personalized* view of Azure platform issues affecting *your* resources. B (Monitor) is your-workload metrics. C (status.azure.com) is public, anonymous, global. D (Advisor) is recommendations. **Takeaway:** Service Health = personalized Azure-platform issues.
 
-**Q17. Answer: B (No).** status.azure.com is public — anyone can view without logging in. (The personalized view is in the portal at Service Health.) **Takeaway:** Public global = status.azure.com. Personalized = Service Health (in portal).
+**Q17. Answer: B (No).** status.azure.com is public, anyone can view without logging in. (The personalized view is in the portal at Service Health.) **Takeaway:** Public global = status.azure.com. Personalized = Service Health (in portal).
 
-**Q18. Answer: C.** The five Advisor pillars are Cost, Security, Performance, Reliability, and Operational Excellence. *Compliance* is not one of them. **Takeaway:** Five pillars — no Compliance pillar; compliance is tracked elsewhere (Compliance Manager, Defender for Cloud).
+**Q18. Answer: C.** The five Advisor pillars are Cost, Security, Performance, Reliability, and Operational Excellence. *Compliance* is not one of them. **Takeaway:** Five pillars, no Compliance pillar; compliance is tracked elsewhere (Compliance Manager, Defender for Cloud).
 
-**Q19. Answer: D.** Azure Arc extends Azure management (Policy, Defender, Monitor, RBAC) to non-Azure resources where they live — on-prem, AWS, GCP. A (Migrate) is for *moving* resources. B (CLI) is a tool. C (Site Recovery) is replication/DR, not unified management. **Takeaway:** Arc = manage non-Azure resources *in place*. Migrate = *move* them to Azure.
+**Q19. Answer: D.** Azure Arc extends Azure management (Policy, Defender, Monitor, RBAC) to non-Azure resources where they live, on-prem, AWS, GCP. A (Migrate) is for *moving* resources. B (CLI) is a tool. C (Site Recovery) is replication/DR, not unified management. **Takeaway:** Arc = manage non-Azure resources *in place*. Migrate = *move* them to Azure.
 
 **Q20. Answer: A.** Azure Data Box is the physical-appliance offline transfer service for TB–PB scale. B (ExpressRoute) is online and capped at circuit speed. C (VPN) is too slow at this volume. D (HTTPS upload) is also too slow for 80TB. **Takeaway:** Mail in TB-PB = Data Box.
 
@@ -297,9 +297,9 @@ B. No
 
 **Q22. Answer: A (Yes).** A subscription belongs to exactly one Microsoft Entra ID tenant. (A tenant can have many subscriptions, but each subscription has one tenant.) **Takeaway:** Subscription:Tenant = many:one.
 
-**Q23. Answer: A (Yes).** Microsoft documents up to 6 levels of nesting beneath the root MG. **Takeaway:** 6-level max — common exam trivia.
+**Q23. Answer: A (Yes).** Microsoft documents up to 6 levels of nesting beneath the root MG. **Takeaway:** 6-level max, common exam trivia.
 
-**Q24. Answer: B.** AKS is the only Microsoft-managed Kubernetes service — for orchestrating hundreds of microservices in containers. A (ACI) is single-container. C (App Service) doesn't orchestrate containers at scale. D (VMSS) is plain VM auto-scale, not container orchestration. **Takeaway:** Many containers + orchestration = AKS.
+**Q24. Answer: B.** AKS is the only Microsoft-managed Kubernetes service, for orchestrating hundreds of microservices in containers. A (ACI) is single-container. C (App Service) doesn't orchestrate containers at scale. D (VMSS) is plain VM auto-scale, not container orchestration. **Takeaway:** Many containers + orchestration = AKS.
 
 **Q25. Answer: C.** ACI = single Docker container, fastest start, perfect for short batch jobs. A (AKS) is overkill for one container. B (App Service) doesn't fit a 30-min batch container well. D (VM) is the most expensive option. **Takeaway:** One container, short job = ACI.
 
@@ -311,11 +311,11 @@ B. No
 
 **Q29. Answer: D.** Conditional Access is the policy engine that decides *when* to require MFA based on signals (location, device state, app, risk). A (plain MFA) is *always*-on, not conditional. B (Policy) governs resources, not auth. C (RBAC) governs permissions, not auth conditions. **Takeaway:** "MFA but only when X" = Conditional Access.
 
-**Q30. Answer: D.** Azure SQL Managed Instance offers near-100% SQL Server compatibility — designed for complex SQL Server lift-and-shift. A (Azure SQL DB) is cloud-native, not 100% SQL Server compatible. B (Storage) is not a database. C (Cosmos) is NoSQL. **Takeaway:** "Lift-and-shift SQL Server with minimal changes" = SQL Managed Instance.
+**Q30. Answer: D.** Azure SQL Managed Instance offers near-100% SQL Server compatibility, designed for complex SQL Server lift-and-shift. A (Azure SQL DB) is cloud-native, not 100% SQL Server compatible. B (Storage) is not a database. C (Cosmos) is NoSQL. **Takeaway:** "Lift-and-shift SQL Server with minimal changes" = SQL Managed Instance.
 
-**Q31. Answer: D.** Azure Bastion provides browser-based RDP/SSH via a private hop — VMs have no public IPs. A (Front Door) is HTTPS, not RDP/SSH. B (VPN) requires client setup. C (ExpressRoute) is hybrid connectivity, not VM access. **Takeaway:** Browser RDP/SSH, no public IP = Bastion.
+**Q31. Answer: D.** Azure Bastion provides browser-based RDP/SSH via a private hop, VMs have no public IPs. A (Front Door) is HTTPS, not RDP/SSH. B (VPN) requires client setup. C (ExpressRoute) is hybrid connectivity, not VM access. **Takeaway:** Browser RDP/SSH, no public IP = Bastion.
 
-**Q32. Answer: B (No).** Tags do NOT inherit by default — you need an Azure Policy (e.g., the built-in "Inherit a tag from the resource group" policy) to enforce inheritance. **Takeaway:** Tag inheritance = Policy-enforced, not automatic.
+**Q32. Answer: B (No).** Tags do NOT inherit by default, you need an Azure Policy (e.g., the built-in "Inherit a tag from the resource group" policy) to enforce inheritance. **Takeaway:** Tag inheritance = Policy-enforced, not automatic.
 
 **Q33. Answer: A.** Azure Key Vault is purpose-built for secrets, keys, and certificates, HSM-backed, with managed-identity integration. B/D are insecure. C is absurd. **Takeaway:** Secrets/keys/certs = Key Vault.
 
@@ -323,7 +323,7 @@ B. No
 
 **Q35. Answer: A.** Azure Hybrid Benefit lets you bring existing on-prem Windows Server / SQL Server licenses (with Software Assurance) to Azure VMs for up to 85% discount. B/C/D conflate this with unrelated services. **Takeaway:** Hybrid Benefit = reuse on-prem licenses on Azure.
 
-**Q36. Answer: B.** Azure Monitor is the workload-observability service — metrics, logs, traces, alerts. A (SIEM) is Sentinel. C (CDN) is Azure CDN / Front Door. D (Backup) is its own service. **Takeaway:** Monitor = your-workload observability.
+**Q36. Answer: B.** Azure Monitor is the workload-observability service, metrics, logs, traces, alerts. A (SIEM) is Sentinel. C (CDN) is Azure CDN / Front Door. D (Backup) is its own service. **Takeaway:** Monitor = your-workload observability.
 
 **Q37. Answer: B.** Azure Policy with Deny effect blocks creation of non-compliant resources (e.g., outside approved regions). A (RBAC Reader) is about who, not what shape. C (Lock) blocks delete/modify, not creation in wrong region. D (NSG) is network filtering, not region restriction. **Takeaway:** "Restrict to approved regions" = Policy + Deny effect.
 
@@ -331,7 +331,7 @@ B. No
 
 **Q39. Answer: B.** Microsoft's documented three Zero Trust principles: Verify explicitly, Use least-privilege access, Assume breach. A scrambles the words. C lists the AAA triad. D lists the IR phases. **Takeaway:** Memorize verbatim: verify explicitly / least privilege / assume breach.
 
-**Q40. Answer: A (Yes).** Sentinel ingests logs from anywhere — Azure, AWS, on-prem firewalls, M365, third-party SaaS — making it a true multi-source SIEM. **Takeaway:** Sentinel = multi-source SIEM/SOAR.
+**Q40. Answer: A (Yes).** Sentinel ingests logs from anywhere Azure, AWS, on-prem firewalls, M365, third-party SaaS making it a true multi-source SIEM. **Takeaway:** Sentinel = multi-source SIEM/SOAR.
 
 ---
 
@@ -340,7 +340,7 @@ B. No
 | Score | Verdict |
 |-------|---------|
 | 36–40 | 🏆 Ready for the Final Mock Exam |
-| 28–35 | ✅ Solid — review wrong answers, then take Final Mock |
+| 28–35 | ✅ Solid, review wrong answers, then take Final Mock |
 | 22–27 | ⚠️ Re-study weak modules; retake in 2 days |
 | <22 | 🔁 Restart from the modules you missed; re-read cheat sheets |
 
@@ -363,4 +363,4 @@ This exam included several Yes/No-style items (#10, #11, #17, #22, #23, #27, #32
 
 ---
 
-➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md) — 50 questions, 45 minutes, real exam length
+➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md), 50 questions, 45 minutes, real exam length

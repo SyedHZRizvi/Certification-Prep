@@ -3,10 +3,10 @@
 > **Why this module matters:** Disaster Recovery + Migration is 15–20% of AZ-801 by itself, plus another 20–25% on the Migration domain. Combined, this single module covers ~40% of the exam. The exam loves *"given this RPO/RTO, which combination of MARS / MABS / ASR / Storage Migration Service / Azure Migrate?"* Get the toolset taxonomy into reflex memory and you've locked down the second-largest exam concentration after Security.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Azure resource hierarchy and storage redundancy (LRS/ZRS/GRS) — [`06-Azure-Administrator` Module 3](../../06-Azure-Administrator/Module-03-Storage-Accounts-Blobs/Reading.md)
-> - On-prem storage concepts (VSS, snapshots, dedup) — [Module 4](../Module-04-File-Storage/Reading.md)
-> - Hyper-V basics (especially Hyper-V Replica as the on-prem DR primitive) — [Module 5](../Module-05-HyperV/Reading.md)
-> - Azure Arc (used to enable Azure Backup on Arc-projected machines) — [Module 6](../Module-06-Azure-Arc/Reading.md)
+> - Azure resource hierarchy and storage redundancy (LRS/ZRS/GRS), [`06-Azure-Administrator` Module 3](../../06-Azure-Administrator/Module-03-Storage-Accounts-Blobs/Reading.md)
+> - On-prem storage concepts (VSS, snapshots, dedup), [Module 4](../Module-04-File-Storage/Reading.md)
+> - Hyper-V basics (especially Hyper-V Replica as the on-prem DR primitive), [Module 5](../Module-05-HyperV/Reading.md)
+> - Azure Arc (used to enable Azure Backup on Arc-projected machines), [Module 6](../Module-06-Azure-Arc/Reading.md)
 >
 > If those are shaky, pause and review. This module assumes you know what an RPO and RTO are.
 
@@ -14,7 +14,7 @@
 
 ## 🏥 A Story: The Hospital That Recovered in 47 Minutes
 
-It's Saturday at 11:14 p.m. at Riverstone Health, a 290-bed regional hospital network. A regional ransomware attack — Conti variant — encrypts the Cerner EHR file shares, the PACS imaging system, the SQL backup target, and ~140 staff workstations. The IT director's pager goes off at 11:18 p.m.
+It's Saturday at 11:14 p.m. at Riverstone Health, a 290-bed regional hospital network. A regional ransomware attack Conti variant encrypts the Cerner EHR file shares, the PACS imaging system, the SQL backup target, and ~140 staff workstations. The IT director's pager goes off at 11:18 p.m.
 
 By 11:53 p.m., the IT team has confirmed: **every backup target has been encrypted too**. The attacker found and encrypted the on-prem Veeam repository. The decision: invoke the Azure DR runbook.
 
@@ -25,17 +25,17 @@ At 11:55 p.m., they trigger:
 - Conditional Access policy locks out all on-prem accounts; new short-lived passwords issued via TAP
 - DNS records flip to Azure-side endpoints
 
-At **12:01 a.m. Sunday — 47 minutes from first alert** — the EHR is back online. The radiology PACS comes back at 12:18 a.m. Workstations are reimaged from PXE boot starting at 01:00 a.m. By 7 a.m., 87% of operations are restored.
+At **12:01 a.m. Sunday 47 minutes from first alert** the EHR is back online. The radiology PACS comes back at 12:18 a.m. Workstations are reimaged from PXE boot starting at 01:00 a.m. By 7 a.m., 87% of operations are restored.
 
 The CISO told the board the following week: *"Every dollar we'd spent on Azure Backup + Azure Site Recovery in the prior 18 months paid for itself in that 47 minutes. The ransom demand was $4.8M. We paid nothing."*
 
-That's what Backup + ASR is for. The exam tests *which tool* applies to *which scenario* — and getting that mapping wrong costs real money.
+That's what Backup + ASR is for. The exam tests *which tool* applies to *which scenario*, and getting that mapping wrong costs real money.
 
 ---
 
-## 🛡️ Azure Backup — The Service Family
+## 🛡️ Azure Backup, The Service Family
 
-Azure Backup is a family of agents and services backing different workload types. The common foundation is the **Recovery Services Vault** — Azure's encrypted backup storage container.
+Azure Backup is a family of agents and services backing different workload types. The common foundation is the **Recovery Services Vault**, Azure's encrypted backup storage container.
 
 | Agent / Service | What it backs up | From / to |
 |-----------------|------------------|-----------|
@@ -56,7 +56,7 @@ The vault stores backup data and ASR replication data. Per-region.
 | Property | Detail |
 |----------|--------|
 | Redundancy | LRS, ZRS, **GRS (default)** |
-| Soft delete | **Enabled by default** (14 days) — protects against ransomware deletion |
+| Soft delete | **Enabled by default** (14 days), protects against ransomware deletion |
 | **Immutable vault** (newer) | Lock policies prevent deletion within configured period (compliance-grade) |
 | Encryption | Microsoft-managed keys by default; customer-managed keys (CMK) supported |
 | Cross-region restore | Available for GRS vaults (read from secondary region) |
@@ -80,7 +80,7 @@ Set-AzRecoveryServicesVaultProperty -VaultId $vault.ID -SoftDeleteFeatureState E
 
 ## 🪪 MARS Agent (File / Folder / System State Backup)
 
-**MARS** is the lightweight agent for backing up files, folders, and Windows System State directly to a Recovery Services Vault — no MABS server needed.
+**MARS** is the lightweight agent for backing up files, folders, and Windows System State directly to a Recovery Services Vault, no MABS server needed.
 
 | Property | Detail |
 |----------|--------|
@@ -102,7 +102,7 @@ MARSAgentInstaller.exe /q
 # Register with vault using downloaded credentials file
 Start-OBRegistration -RecoveryServiceVaultCredsFile "C:\vault-credentials.VaultCredentials"
 
-# Set encryption passphrase (CRITICAL — store securely)
+# Set encryption passphrase (CRITICAL, store securely)
 Set-OBMachineSetting -EncryptionPassPhrase (Read-Host -AsSecureString -Prompt "Enter passphrase")
 
 # Create backup policy and target
@@ -128,7 +128,7 @@ Set-OBPolicy -Policy $pol -Confirm:$false
 | Local storage | Optional but recommended (faster restores) |
 | Sources backed up | Windows / Linux servers, VMs (Hyper-V, VMware), **application-consistent SQL, SharePoint, Exchange**, file shares, system state |
 | Limits | Up to 1 PB / instance, 800 VMs / instance, depending on version |
-| Application awareness | Yes — VSS-aware for SQL, SharePoint, Exchange |
+| Application awareness | Yes, VSS-aware for SQL, SharePoint, Exchange |
 | Network | MABS ↔ Azure: outbound 443 |
 | Best for | On-prem app-aware backup with Azure offload |
 
@@ -144,7 +144,7 @@ Set-OBPolicy -Policy $pol -Confirm:$false
 
 ---
 
-## 🚀 Azure Site Recovery (ASR) — Disaster Recovery
+## 🚀 Azure Site Recovery (ASR), Disaster Recovery
 
 **ASR** is Microsoft's DR-as-a-service. Replicates VMs/physical/AWS to Azure (or Azure-to-Azure between regions) and orchestrates failover.
 
@@ -155,7 +155,7 @@ Set-OBPolicy -Policy $pol -Confirm:$false
 | Hyper-V VMs (on-prem) | Azure |
 | VMware VMs | Azure |
 | Physical Windows / Linux servers | Azure |
-| Azure VMs (region A) | Azure VMs (region B) — Azure-to-Azure |
+| Azure VMs (region A) | Azure VMs (region B), Azure-to-Azure |
 | AWS EC2 instances | Azure |
 
 ### Key metrics
@@ -165,7 +165,7 @@ Set-OBPolicy -Policy $pol -Confirm:$false
 | **RPO** | ~30 seconds (continuous replication) |
 | **RTO** | Minutes (depends on VM startup + DNS) |
 | Replication frequency | Continuous (via Mobility Service agent → cache storage → vault) |
-| Recovery points kept | Configurable — typically 24 hourly + 7 daily |
+| Recovery points kept | Configurable, typically 24 hourly + 7 daily |
 | Recovery plans | Multi-VM orchestration with custom scripts |
 | Test failover | **Non-disruptive** (creates parallel test environment) |
 | Planned failover | Application-consistent shutdown then failover |
@@ -199,7 +199,7 @@ Start-AzRecoveryServicesAsrTestFailoverJob -ReplicationProtectedItem $repItem `
     -Direction PrimaryToRecovery -AzureVMNetworkId $testVnet.Id
 ```
 
-🔥 **Test failover is non-disruptive** — creates a separate "test" environment in Azure for validation. Always run quarterly minimum.
+🔥 **Test failover is non-disruptive**, creates a separate "test" environment in Azure for validation. Always run quarterly minimum.
 
 ### Recovery plan example flow
 
@@ -256,8 +256,8 @@ Recovery Plan: "Tier-1-DC-Failover"
 
 | Phase | Tool / Service |
 |-------|----------------|
-| **Discover** | Azure Migrate appliance (on-prem) — collects VM inventory, dependencies, performance |
-| **Assess** | Azure Migrate assessment — right-sizing recommendations + cost estimate |
+| **Discover** | Azure Migrate appliance (on-prem), collects VM inventory, dependencies, performance |
+| **Assess** | Azure Migrate assessment, right-sizing recommendations + cost estimate |
 | **Migrate** | Azure Migrate: Server Migration (uses ASR underneath) |
 
 ### Common migration paths via Azure Migrate
@@ -278,7 +278,7 @@ Recovery Plan: "Tier-1-DC-Failover"
 
 | Property | Detail |
 |----------|--------|
-| Status | "Available but no longer actively developed by Microsoft" — community-supported |
+| Status | "Available but no longer actively developed by Microsoft", community-supported |
 | Source / target | AD domains in any forests |
 | SID History | Preserves original SIDs for resource access continuity |
 | Password migration | Yes (with Password Export Server installed on source) |
@@ -302,7 +302,7 @@ Recovery Plan: "Tier-1-DC-Failover"
 
 1. ✅ Create a **Recovery Services Vault** `rsv-atl-prod` in West US, GRS redundancy, soft delete enabled
 2. ✅ For file-level backup: install **MABS** on a clean Windows Server 2022 in Atlanta, register the vault, install MABS agents on the 12 file servers
-3. ✅ Create MABS Protection Groups for each file server — short-term local + long-term Azure
+3. ✅ Create MABS Protection Groups for each file server, short-term local + long-term Azure
 4. ✅ For VM-level DR: install **Azure Site Recovery provider** on each Hyper-V host, register hosts in the vault
 5. ✅ Create replication policy: 30-sec frequency, 24-hour recovery points, 4-hour app-consistent snapshots
 6. ✅ Enable replication on each VM via portal → ASR → "Enable replication"
@@ -310,19 +310,19 @@ Recovery Plan: "Tier-1-DC-Failover"
 8. ✅ Quarterly: run a **test failover** in a sandbox VNet → validate → clean up
 9. ✅ Document failover runbook, escalation paths, DNS cutover steps, and post-failover validation
 
-⚠️ Skipping step 8 (regular test failovers) is the #1 reason real DR events fail. ASR's test-failover is non-disruptive — run it at least quarterly.
+⚠️ Skipping step 8 (regular test failovers) is the #1 reason real DR events fail. ASR's test-failover is non-disruptive, run it at least quarterly.
 
 ---
 
-## 📊 Case Study — The 2017 Maersk NotPetya Disaster and the $300M Recovery
+## 📊 Case Study, The 2017 Maersk NotPetya Disaster and the $300M Recovery
 
-**Situation.** On June 27, 2017, the **NotPetya** worm (initially disguised as ransomware but actually a wiper masquerading as ransomware, attributed by US/UK governments to Russia's GRU) spread through Ukrainian accounting software (M.E.Doc) and globally via SMB1 lateral movement (EternalBlue exploit) into 65+ countries. **Maersk** — the world's largest container shipping company, then handling ~20% of global container trade — was among the hardest hit (Maersk Annual Report 2017; Andy Greenberg, *Sandworm*, Doubleday 2019). At its peak, NotPetya encrypted **49,000 Maersk laptops, 4,000 servers, and 2,500 applications across 600 locations** within 7 hours. Operations stopped at all 76 of Maersk's port terminals. Bookings could not be made. Container ships at sea had no destination instructions. The estimated revenue loss: **$200–$300M**, with total recovery and lost-business cost reaching $300M+.
+**Situation.** On June 27, 2017, the **NotPetya** worm (initially disguised as ransomware but actually a wiper masquerading as ransomware, attributed by US/UK governments to Russia's GRU) spread through Ukrainian accounting software (M.E.Doc) and globally via SMB1 lateral movement (EternalBlue exploit) into 65+ countries. **Maersk** the world's largest container shipping company, then handling ~20% of global container trade was among the hardest hit (Maersk Annual Report 2017; Andy Greenberg, *Sandworm*, Doubleday 2019). At its peak, NotPetya encrypted **49,000 Maersk laptops, 4,000 servers, and 2,500 applications across 600 locations** within 7 hours. Operations stopped at all 76 of Maersk's port terminals. Bookings could not be made. Container ships at sea had no destination instructions. The estimated revenue loss: **$200–$300M**, with total recovery and lost-business cost reaching $300M+.
 
 **Decision.** Maersk's recovery was orchestrated by Andy Powell (then CISO) and the IT response team. Their published playbook (NotPetya: A Wake-Up Call for Globally Distributed Manufacturing and Logistics, Maersk public statement August 2017; updated CISO interviews 2018–2019):
 
-1. **A single surviving DC.** Of Maersk's ~150 domain controllers, exactly *one* — in Ghana, offline at the time due to a power outage — survived. That DC was physically flown to the IT war room in Maidenhead, UK, and became the seed of the entire AD rebuild.
+1. **A single surviving DC.** Of Maersk's ~150 domain controllers, exactly *one* in Ghana, offline at the time due to a power outage survived. That DC was physically flown to the IT war room in Maidenhead, UK, and became the seed of the entire AD rebuild.
 2. **No usable backups.** Maersk's backup strategy at the time was tape-based + on-network. The on-network backup repositories were also wiped. The tape backups had not been restoration-tested in months.
-3. **10 days to rebuild.** From June 27 to July 7, Maersk replaced 4,000 servers and 45,000 PCs from scratch — partly by airlifting equipment from Maersk facilities worldwide.
+3. **10 days to rebuild.** From June 27 to July 7, Maersk replaced 4,000 servers and 45,000 PCs from scratch, partly by airlifting equipment from Maersk facilities worldwide.
 4. **Post-incident: complete backup architecture rebuild.** Maersk migrated to a **cloud-first, immutable-vault** backup model with Microsoft Azure as a primary target. Recovery Services Vault with soft delete + immutability locks + cross-region GRS.
 5. **Modernized DR with ASR.** All Tier-1 application workloads now replicate to Azure via ASR with quarterly tested recovery plans.
 
@@ -339,9 +339,9 @@ Recovery Plan: "Tier-1-DC-Failover"
 The exam will phrase scenarios like: *"After a ransomware attack on the on-prem environment, the IT team finds that all on-prem backups have also been encrypted. What architectural choice would have prevented this?"* → **Azure Backup Recovery Services Vault with soft delete + immutability**, accessed via separate Entra ID credentials with conditional access.
 
 **Discussion (Socratic).**
-- **Q1.** Maersk's tape backups existed but had not been restoration-tested in months. Build the case that *untested backups are not backups* — define the minimum test-restoration cadence for a Tier-1 workload (monthly?, quarterly?) and the time-budget cost.
+- **Q1.** Maersk's tape backups existed but had not been restoration-tested in months. Build the case that *untested backups are not backups*, define the minimum test-restoration cadence for a Tier-1 workload (monthly?, quarterly?) and the time-budget cost.
 - **Q2.** Recovery Services Vault soft delete defaults to 14 days. For a deeply targeted attack where the adversary persists for months and then triggers, 14 days is not enough. Build the case for the **immutable vault** feature with a 1-year lock vs the operational cost of "you literally cannot delete backups, even if you want to" for a year.
-- **Q3.** ASR replicates to Azure with RPO ~30 seconds. For ultra-low-latency apps (high-frequency trading), even 30 seconds is too much. Defend ASR + Azure regional failover for mainstream business workloads, and identify the workload class where it's not enough (and the alternative — typically synchronous Storage Replica + stretch cluster, or app-level replication like SQL Always-On AG with sync mode).
+- **Q3.** ASR replicates to Azure with RPO ~30 seconds. For ultra-low-latency apps (high-frequency trading), even 30 seconds is too much. Defend ASR + Azure regional failover for mainstream business workloads, and identify the workload class where it's not enough (and the alternative, typically synchronous Storage Replica + stretch cluster, or app-level replication like SQL Always-On AG with sync mode).
 
 ---
 
@@ -352,9 +352,9 @@ The exam will phrase scenarios like: *"After a ransomware attack on the on-prem 
 | "MARS can do application-consistent SQL backup" | ❌ MARS = files/folders/system state only; use MABS for SQL VSS |
 | "MARS allows unlimited daily backups" | ❌ 3 per day maximum |
 | "Recovery Services Vault redundancy can be changed anytime" | ❌ Can only be set BEFORE first backup |
-| "Soft delete prevents all deletion" | ❌ Soft delete retains for 14 days then permanent — use Immutable Vault for harder lock |
+| "Soft delete prevents all deletion" | ❌ Soft delete retains for 14 days then permanent, use Immutable Vault for harder lock |
 | "ASR test failover disrupts production replication" | ❌ Non-disruptive (parallel test VNet) |
-| "ADMT is recommended for new migrations" | ❌ "Available but not actively developed" — Microsoft pushes toward modern Entra ID tools |
+| "ADMT is recommended for new migrations" | ❌ "Available but not actively developed", Microsoft pushes toward modern Entra ID tools |
 | "Azure Migrate replaces ASR" | ❌ Azure Migrate USES ASR under the hood for VM migration |
 | "Storage Migration Service supports any OS" | ❌ Windows Server 2003+ and Linux SMB only |
 | "MABS requires SQL Server license" | ❌ MABS includes SQL Express; free for the MABS use case |
@@ -369,9 +369,9 @@ The exam will phrase scenarios like: *"After a ransomware attack on the on-prem 
 | **Recovery Services Vault** | Azure backup + ASR storage container |
 | **MARS** | Microsoft Azure Recovery Services agent (file-level) |
 | **MABS** | Microsoft Azure Backup Server (DPM-based, full-featured) |
-| **ASR** | Azure Site Recovery — DRaaS |
-| **RPO** | Recovery Point Objective — max acceptable data loss |
-| **RTO** | Recovery Time Objective — max acceptable downtime |
+| **ASR** | Azure Site Recovery, DRaaS |
+| **RPO** | Recovery Point Objective, max acceptable data loss |
+| **RTO** | Recovery Time Objective, max acceptable downtime |
 | **Soft delete** | 14-day retention of deleted backups |
 | **Immutable vault** | Lock policies prevent deletion |
 | **Recovery Plan** | Multi-VM orchestrated failover script |
@@ -388,14 +388,14 @@ The exam will phrase scenarios like: *"After a ransomware attack on the on-prem 
 
 You now know:
 
-- 🛡️ Azure Backup family — MARS, MABS, Azure VM, Azure Files, SQL, SAP HANA, Blobs
-- 🏛️ Recovery Services Vault — redundancy locked at first backup, soft delete + immutable vault
-- 🪪 MARS — 3 backups/day max, files/folders/system state only
-- 🖥️ MABS — full-featured, app-aware (SQL/SP/Exchange), Hyper-V/VMware VMs
-- 🚀 ASR — ~30s RPO, recovery plans, non-disruptive test failover
-- 📦 Storage Migration Service — modernize Windows file servers with IP/name swap
-- ☁️ Azure Migrate — discover + assess + migrate; uses ASR under the hood for VM migration
-- 🪪 ADMT — legacy AD migration tool with SID History
+- 🛡️ Azure Backup family, MARS, MABS, Azure VM, Azure Files, SQL, SAP HANA, Blobs
+- 🏛️ Recovery Services Vault, redundancy locked at first backup, soft delete + immutable vault
+- 🪪 MARS, 3 backups/day max, files/folders/system state only
+- 🖥️ MABS, full-featured, app-aware (SQL/SP/Exchange), Hyper-V/VMware VMs
+- 🚀 ASR, ~30s RPO, recovery plans, non-disruptive test failover
+- 📦 Storage Migration Service, modernize Windows file servers with IP/name swap
+- ☁️ Azure Migrate, discover + assess + migrate; uses ASR under the hood for VM migration
+- 🪪 ADMT, legacy AD migration tool with SID History
 - 🚨 The 10 most common exam traps in this domain
 
 **Next steps:**
@@ -413,7 +413,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **MARS vs MABS for branch backup.** A 12-branch retailer has each branch with one Windows Server hosting POS + file shares. Defend MARS for the branch (cheap, simple, direct to Azure) vs MABS at each branch (faster local restores, more complex). Where does each win in the cost-vs-operational-speed trade-off?
 2. **Immutable vault adoption.** Default soft delete is 14 days. For an enterprise with confirmed APT-level threats (i.e., adversaries with months of dwell time), defend immutable vault with a 365-day lock vs the operational cost of "I literally cannot delete." What's the test-restoration cost difference?
@@ -425,11 +425,11 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Microsoft Learn — Azure Backup overview](https://learn.microsoft.com/azure/backup/backup-overview)
-- 📖 [Microsoft Learn — Azure Site Recovery overview](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview)
+- 📖 [Microsoft Learn, Azure Backup overview](https://learn.microsoft.com/azure/backup/backup-overview)
+- 📖 [Microsoft Learn, Azure Site Recovery overview](https://learn.microsoft.com/azure/site-recovery/site-recovery-overview)
 - 📖 [Storage Migration Service overview](https://learn.microsoft.com/windows-server/storage/storage-migration-service/overview)
 - 📖 [Azure Migrate overview](https://learn.microsoft.com/azure/migrate/migrate-services-overview)
-- 📖 [Recovery Services Vault — immutable vault feature](https://learn.microsoft.com/azure/backup/backup-azure-immutable-vault-concept)
+- 📖 [Recovery Services Vault, immutable vault feature](https://learn.microsoft.com/azure/backup/backup-azure-immutable-vault-concept)
 - 📖 [ADMT documentation (still hosted, marked legacy)](https://learn.microsoft.com/troubleshoot/windows-server/identity/admt-installation)
-- 📖 Andy Greenberg, *Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers* (Doubleday, 2019) — definitive narrative on NotPetya/Maersk
-- 📖 Harvard Business School Case 9-619-058, *Maersk: Surviving NotPetya* (2019) — the classroom MBA take
+- 📖 Andy Greenberg, *Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers* (Doubleday, 2019), definitive narrative on NotPetya/Maersk
+- 📖 Harvard Business School Case 9-619-058, *Maersk: Surviving NotPetya* (2019), the classroom MBA take

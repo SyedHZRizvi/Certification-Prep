@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Entra ID & RBAC
 
-> **How to use:** Click any card to search YouTube and watch the latest top result. The essentials are not optional for this module — identity questions are ~20% of the exam.
+> **How to use:** Click any card to search YouTube and watch the latest top result. The essentials are not optional for this module, identity questions are ~20% of the exam.
 
 ## ⭐ Essential watching (~90 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Microsoft Entra ID — Complete Overview</p>
+      <p class="vg-title">Microsoft Entra ID, Complete Overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 30 min · The definitive intro</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure RBAC Deep Dive — Built-In vs Custom</p>
+      <p class="vg-title">Azure RBAC Deep Dive, Built-In vs Custom</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 25 min · Control vs data plane</span>
     </div>
@@ -47,8 +47,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Conditional Access — Practical Walkthrough</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">Conditional Access, Practical Walkthrough</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 18 min · Signals → controls</span>
     </div>
   </a>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Privileged Identity Management — Just-In-Time Roles</p>
+      <p class="vg-title">Privileged Identity Management, Just-In-Time Roles</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · Eligible vs Active</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">B2B vs B2C vs External ID — Which to Use</p>
+      <p class="vg-title">B2B vs B2C vs External ID, Which to Use</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 14 min · Customer vs partner</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Identity Protection — Sign-In & User Risk</p>
+      <p class="vg-title">Identity Protection, Sign-In & User Risk</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 20 min · P2 feature deep dive</span>
     </div>
@@ -133,8 +133,8 @@
 
 | Channel | Why |
 |---------|-----|
-| **John Savill's Technical Training** | Identity is his strongest topic — non-negotiable subscribe. |
-| **Adam Marczak — Azure for Everyone** | Clear visuals on CA policy logic. |
+| **John Savill's Technical Training** | Identity is his strongest topic, non-negotiable subscribe. |
+| **Adam Marczak, Azure for Everyone** | Clear visuals on CA policy logic. |
 | **Tim Warner** | Pragmatic AZ-104 / SC-300 angle. |
 | **Inside Cloud and Security** | Enterprise identity patterns. |
 | **Microsoft Mechanics** | Polished, vendor-tinted but useful for newest features. |

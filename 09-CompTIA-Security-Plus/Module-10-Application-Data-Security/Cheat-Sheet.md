@@ -1,6 +1,6 @@
 # 📋 Module 10 Cheat Sheet: Application & Data Security
 
-> One page. Last module — final touches before the practice exam.
+> One page. Last module, final touches before the practice exam.
 
 ---
 
@@ -59,7 +59,7 @@ PUBLIC → INTERNAL → CONFIDENTIAL → RESTRICTED
 
 ---
 
-## 🎭 Data Protection — The Right Tool
+## 🎭 Data Protection, The Right Tool
 
 | Goal | Use |
 |------|-----|
@@ -120,11 +120,11 @@ PUBLIC → INTERNAL → CONFIDENTIAL → RESTRICTED
 
 ## ✏️ Quick Self-Check
 
-1. SAST vs DAST vs SCA — when each runs?
+1. SAST vs DAST vs SCA, when each runs?
 2. STRIDE letters?
 3. 3 data states + protection mechanism?
-4. Pseudonymization vs anonymization — GDPR implication?
-5. PCI / PHI / PII — which reg covers each?
+4. Pseudonymization vs anonymization, GDPR implication?
+5. PCI / PHI / PII, which reg covers each?
 
 ---
 

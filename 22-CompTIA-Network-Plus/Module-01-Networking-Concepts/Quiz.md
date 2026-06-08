@@ -224,16 +224,16 @@ D. Bus requires VLANs to function
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Layer 2 (Data Link)**
-MAC addresses are the L2 addressing scheme — burned into the NIC, used for hop-to-hop delivery within a single broadcast domain. IP addresses (L3) are used between networks.
+MAC addresses are the L2 addressing scheme, burned into the NIC, used for hop-to-hop delivery within a single broadcast domain. IP addresses (L3) are used between networks.
 
 ### Q2: **B. Layer 3**
-Routers forward by IP address — an L3 concept. (A *L3 switch* is a hybrid, but a "router" by definition operates at L3.)
+Routers forward by IP address, an L3 concept. (A *L3 switch* is a hybrid, but a "router" by definition operates at L3.)
 
 ### Q3: **C. Segment**
 TCP at L4 = segment. UDP at L4 = datagram. L3 IP = packet. L2 = frame.
 
 ### Q4: **B. Please Do Not Throw Sausage Pizza Away**
-Physical, Data Link, Network, Transport, Session, Presentation, Application — bottom up. (A is top-down; both are real mnemonics — read the question carefully.)
+Physical, Data Link, Network, Transport, Session, Presentation, Application bottom up. (A is top-down; both are real mnemonics read the question carefully.)
 
 ### Q5: **B. MAC addresses**
 A switch's CAM/MAC table maps each MAC to the port where it was learned. Routers use IP; DNS uses hostnames.
@@ -242,13 +242,13 @@ A switch's CAM/MAC table maps each MAC to the port where it was learned. Routers
 ISO/IEC 7498-1 (1984). IETF defines TCP/IP (4-layer); IEEE defines L2 standards (802.x); Cisco didn't invent OSI.
 
 ### Q7: **B. Layer 6 (Presentation)**
-On Network+, TLS lives at L6 (Presentation) — it handles encryption/compression/formatting *between* application and session/transport.
+On Network+, TLS lives at L6 (Presentation), it handles encryption/compression/formatting *between* application and session/transport.
 
 ### Q8: **B. Each layer adding its own header**
 Encapsulation = wrapping. The receiving side does the inverse (decapsulation).
 
 ### Q9: **C. Unreliable, connectionless**
-UDP is fire-and-forget — no handshake, no retransmit, no ordering guarantees. Just speed.
+UDP is fire-and-forget, no handshake, no retransmit, no ordering guarantees. Just speed.
 
 ### Q10: **A. SYN, SYN-ACK, ACK**
 Classic TCP 3-way handshake from RFC 793. FIN is for connection teardown.
@@ -275,7 +275,7 @@ A cable fault (continuity, short, attenuation) is a Physical layer problem.
 A combined router+switch+AP+DHCP appliance is the textbook Small Office/Home Office device.
 
 ### Q18: **C. Spine-and-leaf**
-Spine-and-leaf provides predictable 2-hop east-west latency within the fabric — the modern data-center default that has replaced 3-tier in most builds.
+Spine-and-leaf provides predictable 2-hop east-west latency within the fabric, the modern data-center default that has replaced 3-tier in most builds.
 
 ### Q19: **D. Broadcast**
 IPv6 has no broadcast address. Its replacements use multicast (e.g., all-nodes FF02::1, all-routers FF02::2). Unicast/multicast/anycast are all supported.
@@ -284,22 +284,22 @@ IPv6 has no broadcast address. Its replacements use multicast (e.g., all-nodes F
 Same VLAN = same broadcast domain = same L2 segment. The two hosts ARP each other's MAC, switch forwards frame; no L3 routing required.
 
 ### Q21: **B. ICMP**
-The TTL-exceeded reply ("Time Exceeded", type 11) is an ICMP message. This is exactly how `traceroute` works — it intentionally crafts low-TTL packets to elicit ICMP responses from each hop.
+The TTL-exceeded reply ("Time Exceeded", type 11) is an ICMP message. This is exactly how `traceroute` works, it intentionally crafts low-TTL packets to elicit ICMP responses from each hop.
 
 ### Q22: **B. A broadcast frame (Layer 2 broadcast)**
-`FF:FF:FF:FF:FF:FF` is the L2 broadcast address — all bits set. Sent to every device on the segment.
+`FF:FF:FF:FF:FF:FF` is the L2 broadcast address, all bits set. Sent to every device on the segment.
 
 ### Q23: **B. Point-to-point**
 Two devices, one direct link = point-to-point.
 
 ### Q24: **B. UDP**
-UDP segments are called *datagrams*. TCP at L4 uses *segments*. (IP "datagrams" at L3 are technically the same word — context matters; the Network+ answer at L4 is UDP.)
+UDP segments are called *datagrams*. TCP at L4 uses *segments*. (IP "datagrams" at L3 are technically the same word, context matters; the Network+ answer at L4 is UDP.)
 
 ### Q25: **B. 10**
 5 × 4 / 2 = 10.
 
 ### Q26: **B. Any single cable fault would isolate every node…**
-Bus topology has zero fault tolerance — one break breaks everyone — and modern star topology with cheap managed switches is both cheaper and more reliable. Bus is essentially extinct outside Network+ trivia for these exact reasons.
+Bus topology has zero fault tolerance one break breaks everyone and modern star topology with cheap managed switches is both cheaper and more reliable. Bus is essentially extinct outside Network+ trivia for these exact reasons.
 
 ---
 
@@ -323,4 +323,4 @@ Bus topology has zero fault tolerance — one break breaks everyone — and mode
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — TCP/IP & Subnetting](../Module-02-TCP-IP-Subnetting/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, TCP/IP & Subnetting](../Module-02-TCP-IP-Subnetting/Reading.md)

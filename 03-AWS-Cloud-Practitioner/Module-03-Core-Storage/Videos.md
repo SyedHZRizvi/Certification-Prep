@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Amazon S3 — Buckets, Objects, Versioning Explained</p>
+      <p class="vg-title">Amazon S3, Buckets, Objects, Versioning Explained</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 14 min · S3 fundamentals</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">EBS vs EFS vs S3 — The Storage Showdown</p>
+      <p class="vg-title">EBS vs EFS vs S3, The Storage Showdown</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 10 min · The trichotomy</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS Snow Family — Snowcone, Snowball, Snowmobile</p>
+      <p class="vg-title">AWS Snow Family, Snowcone, Snowball, Snowmobile</p>
       <p class="vg-creator">Tutorials Dojo</p>
       <span class="vg-duration">⏱ 9 min · Physical data transfer</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">EBS Volume Types — gp3, io2, st1, sc1</p>
+      <p class="vg-title">EBS Volume Types, gp3, io2, st1, sc1</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 9 min · When to pick which</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Storage Gateway — File, Volume, Tape</p>
+      <p class="vg-title">AWS Storage Gateway, File, Volume, Tape</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 10 min · Hybrid storage</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">FSx Variants — Windows, Lustre, NetApp, OpenZFS</p>
+      <p class="vg-title">FSx Variants, Windows, Lustre, NetApp, OpenZFS</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 8 min · Specialized file systems</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">S3 Lifecycle Rules — Automate Cost Savings</p>
+      <p class="vg-title">S3 Lifecycle Rules, Automate Cost Savings</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 12 min · Hands-on demo</span>
     </div>
@@ -136,8 +136,8 @@
 
 1. Name the 3 storage paradigms (block, file, object) and one AWS service for each.
 2. List the 7 S3 storage classes from most-expensive to cheapest.
-3. EBS vs Instance Store — what's the key difference?
-4. EFS vs FSx for Windows — when to pick which?
+3. EBS vs Instance Store, what's the key difference?
+4. EFS vs FSx for Windows, when to pick which?
 5. When would you use a Snowball Edge instead of just uploading over the internet?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

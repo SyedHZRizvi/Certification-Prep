@@ -4,7 +4,7 @@
 
 ---
 
-## 📡 802.11 Standards — MEMORIZE
+## 📡 802.11 Standards, MEMORIZE
 
 | Standard | Wi-Fi name | Year | Band(s) | Max speed |
 |----------|------------|------|---------|-----------|
@@ -52,7 +52,7 @@
 
 ---
 
-## ⚡ PoE — Power Over Ethernet
+## ⚡ PoE, Power Over Ethernet
 
 | Standard | Max W/port | Use |
 |----------|-----------|-----|
@@ -160,7 +160,7 @@ Cover the answers and recite:
 1. The 3 non-overlapping 2.4 GHz channels? ___
 2. Which generations add 6 GHz support? ___
 3. WPA3's replacement for the 4-way handshake? ___
-4. EAP-TLS — what's required on both sides? ___
+4. EAP-TLS, what's required on both sides? ___
 5. Disable which two convenience features on SOHO routers for security? ___
 
 ---

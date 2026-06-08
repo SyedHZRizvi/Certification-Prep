@@ -126,9 +126,9 @@ Usually WRONG:
 
 ## ✏️ Quick Self-Check
 
-1. U vs I shape — when each? ___
+1. U vs I shape, when each? ___
 2. 7-step workflow? ___
-3. AS/RS vs AGV vs AMR — one-line each? ___
+3. AS/RS vs AGV vs AMR, one-line each? ___
 4. Cube utilization target? ___
 5. Drive-in racking is FIFO or LIFO? ___
 

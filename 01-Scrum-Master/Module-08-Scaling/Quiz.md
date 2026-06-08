@@ -169,7 +169,7 @@ Hand-offs slow delivery.
 SoS is XP/Scrum tradition, not formally part of Scrum.
 
 ### Q11: **A. 1**
-One Product, one Product Goal — even with multiple teams. The Product Goal is shared across all teams working on the same product.
+One Product, one Product Goal, even with multiple teams. The Product Goal is shared across all teams working on the same product.
 
 ### Q12: **B. Scrum.org**
 Nexus is the official scaling framework from Scrum.org, designed for 3–9 Scrum Teams on one product.
@@ -193,7 +193,7 @@ Component teams (DB, UI, etc.) require coordination across teams to deliver any 
 Direct from the Scrum Guide. The org-chart fix is more managers; the Scrum fix is more cohesive teams sharing one product.
 
 ### Q19: **B. Coordinate across teams to ensure an integrated, Done Increment**
-The Nexus Integration Team's purpose is dependency coordination and integration — not approval, backlog ownership, or replacing SMs.
+The Nexus Integration Team's purpose is dependency coordination and integration, not approval, backlog ownership, or replacing SMs.
 
 ### Q20: **B. SAFe is a separate scaling framework, not part of the Scrum Guide**
 SAFe is its own framework. Some teams use it, but the SM should be transparent that it is not "official Scrum."
@@ -233,9 +233,9 @@ The Nexus Daily Scrum focuses on cross-team integration issues and is attended b
 
 ## 🚀 Additional higher-Bloom questions (Q23–Q28, advanced)
 
-### Q23. Bosch Software Innovations (Module 8 case study) is selectively *de-scaling* — pulling ARTs out of SAFe back to lighter coordination. Analyze what signal would trigger de-scaling for any organization. *(Analyze)*
+### Q23. Bosch Software Innovations (Module 8 case study) is selectively *de-scaling*, pulling ARTs out of SAFe back to lighter coordination. Analyze what signal would trigger de-scaling for any organization. *(Analyze)*
 A. Cost-cutting season
-B. The coordination overhead of the scaling framework exceeds the value of cross-team alignment for those teams. Specifically: if the teams in an ART have *few* cross-team dependencies, the PI Planning + System Demo + Inspect & Adapt overhead is pure waste — those teams would deliver more value as semi-independent Scrum teams with lighter coordination (Scrum of Scrums or Nexus)
+B. The coordination overhead of the scaling framework exceeds the value of cross-team alignment for those teams. Specifically: if the teams in an ART have *few* cross-team dependencies, the PI Planning + System Demo + Inspect & Adapt overhead is pure waste, those teams would deliver more value as semi-independent Scrum teams with lighter coordination (Scrum of Scrums or Nexus)
 C. The framework is broken
 D. Leadership changed
 
@@ -243,7 +243,7 @@ D. Leadership changed
 
 ### Q24. A 60-person org has 6 Scrum Teams working on one product. Apply the Scrum Guide's scaling rules to determine: How many Product Owners, Product Backlogs, Product Goals, and Definitions of Done should exist? *(Apply)*
 A. 6 of each
-B. 1 PO, 1 Product Backlog, 1 Product Goal, 1 shared Definition of Done. (Each team has its own Scrum Master and its own Sprint Backlog — those are team-level, not product-level.)
+B. 1 PO, 1 Product Backlog, 1 Product Goal, 1 shared Definition of Done. (Each team has its own Scrum Master and its own Sprint Backlog, those are team-level, not product-level.)
 C. 1 PO, 6 backlogs
 D. 6 POs sharing one backlog
 
@@ -251,7 +251,7 @@ D. 6 POs sharing one backlog
 
 ### Q25. Evaluate the claim: "Conway's Law (1968) explains why component teams are an anti-pattern in Scrum." Construct the argument. *(Evaluate)*
 A. Conway's Law is irrelevant
-B. Conway's Law states that organizations design systems that mirror their communication structures. A component-team org (UI team, API team, DB team) will produce systems whose components mirror those team boundaries — and the *handoffs* between teams become the system's hand-off seams. This produces tight coupling between layers but loose coupling across feature flow, making end-to-end feature delivery slow. Feature teams reverse this: communication is end-to-end, and the system's structure mirrors *value flow*
+B. Conway's Law states that organizations design systems that mirror their communication structures. A component-team org (UI team, API team, DB team) will produce systems whose components mirror those team boundaries, and the *handoffs* between teams become the system's hand-off seams. This produces tight coupling between layers but loose coupling across feature flow, making end-to-end feature delivery slow. Feature teams reverse this: communication is end-to-end, and the system's structure mirrors *value flow*
 C. Conway's Law only applies to hardware
 D. Component teams violate Conway's Law
 
@@ -267,39 +267,39 @@ D. Full Nexus immediately
 
 ### Q27. Spotify (Module 1 case study) and ING Netherlands (Module 3 case study) both adopted variants of the Spotify model. Spotify itself walked the model back; ING ~10% of squads drifted into "Scrum in name only." Analyze what the two cases together teach about copying scaling structures. *(Analyze)*
 A. Both companies failed
-B. Both cases reveal that *structure* (squads, tribes, chapters) is the *easy* part to copy and the *culture* (autonomy, empiricism, servant leadership) is the hard part. Companies copying the structure without the culture get "ceremony Scrum" — the visible artifacts of Agile without the mindset. The lesson: scaling decisions must start with mindset adoption, not with org chart redesign
+B. Both cases reveal that *structure* (squads, tribes, chapters) is the *easy* part to copy and the *culture* (autonomy, empiricism, servant leadership) is the hard part. Companies copying the structure without the culture get "ceremony Scrum", the visible artifacts of Agile without the mindset. The lesson: scaling decisions must start with mindset adoption, not with org chart redesign
 C. Spotify was wrong from the start
 D. ING should have copied Spotify exactly
 
 ---
 
-### Q28. The Scrum Guide says multiple Scrum Teams on the same product MUST share one PO, one Product Backlog, one Product Goal, and a common Definition of Done. Evaluate WHY the Scrum Guide is so explicit about this — what fails if a team violates the rule? *(Evaluate)*
+### Q28. The Scrum Guide says multiple Scrum Teams on the same product MUST share one PO, one Product Backlog, one Product Goal, and a common Definition of Done. Evaluate WHY the Scrum Guide is so explicit about this, what fails if a team violates the rule? *(Evaluate)*
 A. The Guide is arbitrary
-B. (1) Without one PO, prioritization is contested — value-maximization decisions become committee outputs, which is what the PO accountability was designed to prevent. (2) Without one Product Backlog, work is duplicated and dependencies are hidden. (3) Without one Product Goal, teams optimize locally and the product drifts. (4) Without a common DoD, integrated Increments fail to integrate — Team A's "Done" doesn't compose with Team B's "Done." The four-fold requirement is the operational definition of "one product, multiple teams"
+B. (1) Without one PO, prioritization is contested value-maximization decisions become committee outputs, which is what the PO accountability was designed to prevent. (2) Without one Product Backlog, work is duplicated and dependencies are hidden. (3) Without one Product Goal, teams optimize locally and the product drifts. (4) Without a common DoD, integrated Increments fail to integrate Team A's "Done" doesn't compose with Team B's "Done." The four-fold requirement is the operational definition of "one product, multiple teams"
 C. Scrum Guide rules are religious
 D. The rule applies only to small orgs
 
 ---
 
-## 🎯 Answer key — Q23–Q28
+## 🎯 Answer key, Q23–Q28
 
 ### Q23: **B. Coordination overhead > value of alignment**
-The lean principle: optimize for value, not for structure. When teams in an ART have few cross-team dependencies, the SAFe-level events (PI Planning is 2 days every 8–12 weeks) are pure overhead. Bosch's de-scaling response is to pull those teams back to lighter coordination — which is correct empirical reasoning.
+The lean principle: optimize for value, not for structure. When teams in an ART have few cross-team dependencies, the SAFe-level events (PI Planning is 2 days every 8–12 weeks) are pure overhead. Bosch's de-scaling response is to pull those teams back to lighter coordination, which is correct empirical reasoning.
 
 ### Q24: **B. 1, 1, 1, 1 (at product level); team-level SMs and Sprint Backlogs**
-The Scrum Guide is explicit. Each team has its own SM (typically) and its own Sprint Backlog (which is team-level, not product-level). But PO, Product Backlog, Product Goal, and DoD are product-level — one each.
+The Scrum Guide is explicit. Each team has its own SM (typically) and its own Sprint Backlog (which is team-level, not product-level). But PO, Product Backlog, Product Goal, and DoD are product-level, one each.
 
 ### Q25: **B. Conway's Law explains it directly**
 Conway's 1968 paper is the canonical explanation. Component teams produce component-oriented systems with handoff seams; feature teams produce value-flow-oriented systems. The PSM I exam doesn't test Conway directly, but understanding *why* feature teams are preferred makes the exam scenarios obvious.
 
 ### Q26: **B. Three teams + Scrum of Scrums**
-Start as small as possible — three teams with shared product elements + lightweight cross-team coordination. Add Nexus events or Integration Team only if the lightweight structure proves insufficient. This is the "scale as little as possible" principle from the Module 8 reading.
+Start as small as possible, three teams with shared product elements + lightweight cross-team coordination. Add Nexus events or Integration Team only if the lightweight structure proves insufficient. This is the "scale as little as possible" principle from the Module 8 reading.
 
 ### Q27: **B. Structure is easy, culture is hard**
 The combined lesson: copying squads-tribes-chapters is trivial; building empirical, self-managing, servant-led culture takes years. Spotify dismantled its own structure as it learned; ING kept the structure but ~10% drifted because the culture didn't follow. The rule for any org adopting scaling: start with mindset, then choose structure.
 
 ### Q28: **B. Four operational failures**
-The Scrum Guide's rule isn't arbitrary — each component (single PO, single PB, single PG, common DoD) prevents a specific operational failure. Together they constitute the operational definition of "one product, multiple teams." Violating any one of them produces predictable dysfunction.
+The Scrum Guide's rule isn't arbitrary, each component (single PO, single PB, single PG, common DoD) prevents a specific operational failure. Together they constitute the operational definition of "one product, multiple teams." Violating any one of them produces predictable dysfunction.
 
 ---
 

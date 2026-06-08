@@ -1,4 +1,4 @@
-# 📋 Module 6 Cheat Sheet: Predictive Analytics — CLV, Churn & Propensity
+# 📋 Module 6 Cheat Sheet: Predictive Analytics, CLV, Churn & Propensity
 
 > One page. Print it. Tape it to your monitor.
 
@@ -11,7 +11,7 @@
 | Contractual (subscription) | AOV × Freq × Lifespan × Margin (or survival analysis) | Lifespan observable |
 | Non-contractual (e-commerce) | BG/NBD + Gamma-Gamma | Probabilistic, per-customer |
 
-### BG/NBD — what each letter means
+### BG/NBD, what each letter means
 
 ```
 B  = Beta       (dropout probability prior)
@@ -26,7 +26,7 @@ NBD = Negative Binomial Distribution (purchase rate prior)
 - **T** = observation window
 - **monetary_value** = avg transaction value
 
-### Python — `lifetimes`
+### Python, `lifetimes`
 
 ```python
 from lifetimes import BetaGeoFitter, GammaGammaFitter
@@ -125,7 +125,7 @@ M = Monetary  (5 = AOV > $200, 1 = < $25)
 
 - "BG/NBD for non-contractual customer-base analysis..."
 - "Calibrate before using as a probability threshold..."
-- "Target middle deciles for marketing — top deciles are sure things..."
+- "Target middle deciles for marketing, top deciles are sure things..."
 - "Uplift modeling finds Persuadables..."
 - "LTV:CAC ≥ 3:1 is the sustainability floor..."
 

@@ -29,7 +29,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Garden+claude+llama+gemini+models" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Model Garden — 200 Models, One Platform</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">Model Garden, 200 Models, One Platform</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · Gemini + Claude + Llama on Vertex</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Search+vs+Vector+Search+difference+RAG" target="_blank" rel="noopener">
@@ -76,7 +76,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Monitoring+drift+detection+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Model Monitoring — Drift & Skew Detection</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">Model Monitoring, Drift & Skew Detection</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · Catch silent failures</span></div>
   </a>
 </div>
@@ -87,7 +87,7 @@
   <a class="vg-card" data-video-id="hBMHohkRgAA" href="https://www.youtube.com/results?search_query=Spotify+Vertex+AI+migration+ML+platform+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Spotify on Vertex AI — Case Study</p><p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-title">Spotify on Vertex AI, Case Study</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 25 min · 3,000 models consolidated</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Wayfair+vertex+ai+vector+search+generative+shopping" target="_blank" rel="noopener">
@@ -109,7 +109,7 @@
 ## ✅ After watching
 
 1. List 8 Vertex AI sub-products and one purpose each.
-2. Vertex AI Search vs Vertex AI Vector Search — when each?
+2. Vertex AI Search vs Vertex AI Vector Search, when each?
 3. When does Provisioned Throughput beat PAYG?
-4. CMEK vs VPC-SC — what does each protect?
+4. CMEK vs VPC-SC, what does each protect?
 5. Default-region considerations for an EU regulated workload.

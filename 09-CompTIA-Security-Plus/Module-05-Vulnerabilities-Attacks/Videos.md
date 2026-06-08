@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Credential Attacks — Spraying / Stuffing / Brute</p>
+      <p class="vg-title">Credential Attacks, Spraying / Stuffing / Brute</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 10 min · Tell them apart</span>
     </div>
@@ -138,7 +138,7 @@
 | **IppSec** | HackTheBox walkthroughs of real exploits |
 | **LiveOverflow** | Low-level memory & exploit education |
 | **NetworkChuck** | Friendly intro to network attacks |
-| **MyDFIR** | Detection side — see indicators of these attacks in logs |
+| **MyDFIR** | Detection side, see indicators of these attacks in logs |
 
 ---
 
@@ -148,6 +148,6 @@
 2. SQLi → which web log line is the giveaway?
 3. What is the BEST defense against SQL injection?
 4. What's the difference between vishing and smishing?
-5. Pass-the-Hash — why does it bypass needing the plaintext password?
+5. Pass-the-Hash, why does it bypass needing the plaintext password?
 
 If solid, you're ready for the [Quiz](./Quiz.md) and [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md).

@@ -1,10 +1,10 @@
 # Module 4: Content Marketing with Generative AI ✍️
 
-> **Why this module matters:** GenAI didn't kill content marketing — it 10× the production capacity while raising the editorial bar. The marketers who win 2026 are the ones who treat AI as a *first-draft co-pilot* inside a disciplined editorial workflow, not as a magic button.
+> **Why this module matters:** GenAI didn't kill content marketing, it 10× the production capacity while raising the editorial bar. The marketers who win 2026 are the ones who treat AI as a *first-draft co-pilot* inside a disciplined editorial workflow, not as a magic button.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 2 — AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) — the ROLE/CONTEXT/TASK prompt template, hallucination mitigation, multimodal toolkit
-> - [Module 3 — SEO in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md) — pillar/cluster, E-E-A-T, GEO/AEO; content strategy reuses these
+> - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) the ROLE/CONTEXT/TASK prompt template, hallucination mitigation, multimodal toolkit
+> - [Module 3 SEO in the AI Era](../Module-03-SEO-in-the-AI-Era/Reading.md) pillar/cluster, E-E-A-T, GEO/AEO; content strategy reuses these
 > - Basic content production literacy: knowing what an editorial calendar, brief, and outline look like
 >
 > If you've never published a blog post or a long-form social piece, the tactical sections will land best if you treat them as exercises to do alongside reading rather than abstractly absorbing.
@@ -13,15 +13,15 @@
 
 ## 👟 A Story: How Nike's "You Can't Stop Us" Campaign Used ML Before Anyone Called It AI
 
-In July 2020, Nike released **"You Can't Stop Us,"** a 90-second spot that became one of the most-discussed ad films of the decade. It split-screened thousands of clips of real athletes — sometimes mid-action, sometimes still — into perfectly mirrored compositions where the left and right halves matched movement, color, and rhythm exactly.
+In July 2020, Nike released **"You Can't Stop Us,"** a 90-second spot that became one of the most-discussed ad films of the decade. It split-screened thousands of clips of real athletes sometimes mid-action, sometimes still into perfectly mirrored compositions where the left and right halves matched movement, color, and rhythm exactly.
 
 You couldn't have done that by hand. Wieden+Kennedy (Nike's agency of record) and post-production studio The Mill used a machine-learning pipeline to score and match clips from over **4,000 hours of footage**. The ad was effectively curated by an algorithm, then assembled by humans.
 
-This was *content marketing as ML pipeline* — and most viewers didn't notice. They noticed the *message*.
+This was *content marketing as ML pipeline*, and most viewers didn't notice. They noticed the *message*.
 
 The lesson: **the best AI in marketing is invisible. It accelerates the workflow without dictating it.**
 
-Fast-forward to 2026. The tooling is dramatically cheaper. Any small-business marketer has access to image generation (Midjourney, DALL-E, Firefly), video generation (Synthesia, HeyGen, Runway), and long-form writing (ChatGPT, Claude, Gemini, Jasper, Copy.ai) that 2020 Nike would have killed for. The question isn't *whether* you'll use AI in content marketing — it's *how disciplined* your editorial workflow is.
+Fast-forward to 2026. The tooling is dramatically cheaper. Any small-business marketer has access to image generation (Midjourney, DALL-E, Firefly), video generation (Synthesia, HeyGen, Runway), and long-form writing (ChatGPT, Claude, Gemini, Jasper, Copy.ai) that 2020 Nike would have killed for. The question isn't *whether* you'll use AI in content marketing, it's *how disciplined* your editorial workflow is.
 
 That's what this module teaches.
 
@@ -184,17 +184,17 @@ Example:
 
 ### Common pitfalls
 
-- **Hands** — most image models still struggle. Inspect every hand in every output.
-- **Text in images** — DALL-E 3 and Ideogram are good; Midjourney variable. Always proof.
-- **Brand colors** — be specific ("muted forest green, hex #2D5C3E" works better than "green").
-- **Bias** — models default to certain demographics. Specify diversity intentionally.
-- **Copyright** — Midjourney and Stable Diffusion have faced lawsuits; Firefly's training-data provenance is the cleanest for commercial use as of writing.
+- **Hands**, most image models still struggle. Inspect every hand in every output.
+- **Text in images**, DALL-E 3 and Ideogram are good; Midjourney variable. Always proof.
+- **Brand colors**, be specific ("muted forest green, hex #2D5C3E" works better than "green").
+- **Bias**, models default to certain demographics. Specify diversity intentionally.
+- **Copyright**, Midjourney and Stable Diffusion have faced lawsuits; Firefly's training-data provenance is the cleanest for commercial use as of writing.
 
 ---
 
 ## 🎥 AI Video Generation
 
-A newer space — quality jumped dramatically in 2024–2025.
+A newer space, quality jumped dramatically in 2024–2025.
 
 | Tool | What it does | Best For |
 |---|---|---|
@@ -208,10 +208,10 @@ A newer space — quality jumped dramatically in 2024–2025.
 
 **Realistic 2026 use cases for marketers:**
 
-1. **Personalized sales videos at scale** — HeyGen + a CRM integration can produce "Hi [Name], I noticed you visited our pricing page" videos personalized per prospect.
-2. **Multilingual content** — record once, dub into 30 languages.
-3. **Repurposing** — Descript turns a podcast into a YouTube video, social clips, and a blog post in one workflow.
-4. **Concept testing** — Runway or Sora can pre-visualize a brand-film concept before paying for full production.
+1. **Personalized sales videos at scale**, HeyGen + a CRM integration can produce "Hi [Name], I noticed you visited our pricing page" videos personalized per prospect.
+2. **Multilingual content**, record once, dub into 30 languages.
+3. **Repurposing**, Descript turns a podcast into a YouTube video, social clips, and a blog post in one workflow.
+4. **Concept testing**, Runway or Sora can pre-visualize a brand-film concept before paying for full production.
 
 **Limitations as of writing:**
 - 30-second to 1-minute clips are the practical max for fully-generated video.
@@ -220,7 +220,7 @@ A newer space — quality jumped dramatically in 2024–2025.
 
 ---
 
-## ♻️ Content Repurposing — The Highest-Leverage AI Workflow
+## ♻️ Content Repurposing, The Highest-Leverage AI Workflow
 
 The single most underrated AI workflow in 2026 marketing is **content repurposing**: turn one asset into many.
 
@@ -231,12 +231,12 @@ HUB:  Long-form podcast / video / blog / webinar
        ↓
 SPOKES:
 - Transcript (Otter / Fireflies / Whisper)
-- Blog post (ChatGPT / Claude — from transcript)
-- LinkedIn post (Postwise / Taplio — from blog)
+- Blog post (ChatGPT / Claude, from transcript)
+- LinkedIn post (Postwise / Taplio, from blog)
 - 5 Twitter/X threads (ChatGPT)
 - Instagram carousel script (Canva + ChatGPT)
 - TikTok / Reels script (Captions / Opus Clip)
-- Email newsletter (ChatGPT — from blog + LI angle)
+- Email newsletter (ChatGPT, from blog + LI angle)
 - Short YouTube clip (Opus Clip / Descript)
 - Quote graphics (Ideogram + Canva)
 - Slide deck (Gamma.app)
@@ -250,7 +250,7 @@ One podcast episode can produce ~15 derivative assets in a 1-hour AI-assisted wo
 
 ## 🚦 The Human-in-the-Loop: Editorial Quality at Scale
 
-The dirty secret of AI content is that quality bar has *risen* as production cost *fell*. Anyone can generate a passable blog post in 5 minutes — which means the published bar is now genuinely-useful-and-distinctive, not just "exists."
+The dirty secret of AI content is that quality bar has *risen* as production cost *fell*. Anyone can generate a passable blog post in 5 minutes, which means the published bar is now genuinely-useful-and-distinctive, not just "exists."
 
 ### Your Editorial Checklist (Print this for the team)
 
@@ -290,7 +290,7 @@ The broader takeaway: **the highest-value AI in marketing isn't ChatGPT-in-a-bro
 
 The cautionary mirror to Mailchimp.
 
-In January 2023, BuzzFeed announced it would use OpenAI to assist in producing content. Throughout 2023, AI-generated quizzes and travel guides appeared on BuzzFeed-owned sites. The reception was mixed at best — Futurism and other outlets documented multiple AI-generated travel guides with obvious errors and bland, generic prose.
+In January 2023, BuzzFeed announced it would use OpenAI to assist in producing content. Throughout 2023, AI-generated quizzes and travel guides appeared on BuzzFeed-owned sites. The reception was mixed at best, Futurism and other outlets documented multiple AI-generated travel guides with obvious errors and bland, generic prose.
 
 By **May 2023**, BuzzFeed News (the journalism arm) shut down entirely (separate, but the timing fed the narrative). The trade press treated it as an early lesson in over-reliance on AI without sufficient editorial oversight.
 
@@ -304,7 +304,7 @@ The takeaway: **AI lowers the floor of content cost; the editorial bar rose simu
 |---|---|
 | "AI will write our blog with one prompt" | The first draft, maybe. The published article, never (yet). |
 | "More content = better SEO" | Google's Helpful Content + Scaled Content Abuse policies say otherwise. |
-| "AI removes the need for a brand voice" | Worse — AI without brand voice = generic slop. You need voice MORE. |
+| "AI removes the need for a brand voice" | Worse, AI without brand voice = generic slop. You need voice MORE. |
 | "Free AI tiers are fine for production" | They throttle, lose context, use older models. Use paid for production. |
 | "If it's not original, it doesn't matter" | Many quality dimensions matter; original POV is one of several. |
 | "AI images are copyright-free" | Murky. Adobe Firefly is the cleanest commercial-license story. |
@@ -330,7 +330,7 @@ The takeaway: **AI lowers the floor of content cost; the editorial bar rose simu
 |---|---|
 | **Pillar page** | A long, comprehensive page on a broad topic |
 | **Cluster pages** | Deeper articles on sub-topics linking back to the pillar |
-| **JTBD** | Jobs-to-be-Done — what "job" the reader is hiring content to do |
+| **JTBD** | Jobs-to-be-Done, what "job" the reader is hiring content to do |
 | **Content matrix** | 2×2 of Awareness↔Decision × Rational↔Emotional (Chaffey) |
 | **Hub and spoke** | One long-form asset feeds many derivative formats |
 | **Human-in-the-loop** | Required human editorial review of AI output |
@@ -354,14 +354,14 @@ You now know:
 - 🎯 The 8-step AI-assisted content workflow
 - 🖊️ The 2026 AI long-form tools landscape (ChatGPT, Claude, Gemini, Jasper, Copy.ai)
 - 🎨 The 2026 AI image tools and prompt structure (Subject → Setting → Composition → Mood → Lighting → Style → Format)
-- 🎥 AI video: Synthesia, HeyGen, Runway, Sora — and the four realistic 2026 use cases
+- 🎥 AI video: Synthesia, HeyGen, Runway, Sora, and the four realistic 2026 use cases
 - ♻️ The hub-and-spoke repurposing pattern
 - 🚦 The editorial checklist that separates published-worthy from AI slop
 - 📊 Mailchimp (the winning model) and BuzzFeed (the cautionary model)
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 5: Social Media & AI Tools](../Module-05-Social-Media-AI-Tools/Reading.md)
 
@@ -374,24 +374,24 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The BuzzFeed-vs-Mailchimp distinction.** Both companies bet on AI in their content workflows in 2021–2023. BuzzFeed became a cautionary tale; Mailchimp became a textbook. The reading offers four reasons. Pick the *single most decisive* difference and defend it against a colleague who argues it was just luck of timing. Then propose a 60-day test that would tell a publisher *which side of this line* their AI content strategy is on.
 2. **Editorial quality at scale.** A content director says: "If a human edits every AI piece, we lose 80% of AI's speed advantage. Pure-AI output with statistical QA (sample 1-in-20) is the right operating point." Construct the strongest argument for the 1-in-20 sampling approach and the strongest argument for full human-in-the-loop on every piece. Where exactly should the sampling threshold sit, and what content types should be exempted in either direction?
-3. **Brand voice in the AI era — moat or vanity?** The reading argues brand voice matters *more* in the AI era because without it, AI output is generic. A skeptic counters that brand voice is an artifact of when production was scarce — when everyone can produce "Wendy's-tier" snark with a single prompt, voice ceases to be a moat. Steel-man both. Where does brand voice still compound, and where has it been commoditized?
-4. **The hub-and-spoke saturation question.** Hub-and-spoke turns one podcast into 15 derivative assets in an hour. If everyone runs this play, the marginal value of any one derivative drops. At what point does the channel get *too noisy*, and what's the marketer's response — produce more, produce less, or change the *kind* of derivative? Defend with reference to specific platforms from Module 5.
+3. **Brand voice in the AI era moat or vanity?** The reading argues brand voice matters *more* in the AI era because without it, AI output is generic. A skeptic counters that brand voice is an artifact of when production was scarce when everyone can produce "Wendy's-tier" snark with a single prompt, voice ceases to be a moat. Steel-man both. Where does brand voice still compound, and where has it been commoditized?
+4. **The hub-and-spoke saturation question.** Hub-and-spoke turns one podcast into 15 derivative assets in an hour. If everyone runs this play, the marginal value of any one derivative drops. At what point does the channel get *too noisy*, and what's the marketer's response, produce more, produce less, or change the *kind* of derivative? Defend with reference to specific platforms from Module 5.
 5. **The 14% / 35% productivity finding, generalized.** Brynjolfsson, Li, and Raymond (NBER 2023) found 14% average / 35% novice productivity lift for customer-service workers using AI. A skeptic argues this *cannot* generalize to creative work because creative quality, unlike support ticket resolution, has no objective ground truth. Steel-man the skeptic. What measurement design would you propose to test whether the lift holds in marketing content production specifically?
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *They Ask, You Answer* by Marcus Sheridan — the question-answer content framework that maps perfectly to AI Overviews
-- 📖 *Inbound Marketing* by Halligan & Shah — the canonical inbound book
-- 📖 *Building a StoryBrand* by Donald Miller — narrative framework for marketing
-- 📖 *Made to Stick* by Chip & Dan Heath — the SUCCES principles for sticky ideas
-- 📰 *Generative AI at Work* — Brynjolfsson, Li, Raymond (NBER, 2023)
+- 📖 *They Ask, You Answer* by Marcus Sheridan, the question-answer content framework that maps perfectly to AI Overviews
+- 📖 *Inbound Marketing* by Halligan & Shah, the canonical inbound book
+- 📖 *Building a StoryBrand* by Donald Miller, narrative framework for marketing
+- 📖 *Made to Stick* by Chip & Dan Heath, the SUCCES principles for sticky ideas
+- 📰 *Generative AI at Work*, Brynjolfsson, Li, Raymond (NBER, 2023)
 - 📰 HBR "How Generative AI Can Augment Human Creativity" (Mollick, 2023)
-- 📰 *Marketing AI Institute* — newsletter + reports from Paul Roetzer
-- 📰 *Marketing Brew* (Morning Brew) — daily marketing newsletter
-- 📰 *The Brand Gap* and *Zag* by Marty Neumeier — brand strategy fundamentals
+- 📰 *Marketing AI Institute*, newsletter + reports from Paul Roetzer
+- 📰 *Marketing Brew* (Morning Brew), daily marketing newsletter
+- 📰 *The Brand Gap* and *Zag* by Marty Neumeier, brand strategy fundamentals

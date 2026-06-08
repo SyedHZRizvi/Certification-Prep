@@ -3,22 +3,22 @@
 > **Why this module matters:** After the contract is signed, the real work begins. CPSM tests SRM heavily because *most savings and most risks happen in the post-award lifecycle*. Master tiering, scorecards, and supplier development and you'll dominate dozens of exam questions.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 2 — Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): SRM tiering uses Kraljic outputs directly
-> - [Module 3 — Contracts and SLAs](../Module-03-Negotiation-Contracts/Reading.md): SRM enforces what was negotiated
-> - Cross-course: [ASCM CSCP Module 4 — SRM & Customer Relationships](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) for the broader chain-of-chains relationship view
+> - [Module 2, Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): SRM tiering uses Kraljic outputs directly
+> - [Module 3, Contracts and SLAs](../Module-03-Negotiation-Contracts/Reading.md): SRM enforces what was negotiated
+> - Cross-course: [ASCM CSCP Module 4, SRM & Customer Relationships](../../10-ASCM-CSCP/Module-04-Supply-Planning-SOP/Reading.md) for the broader chain-of-chains relationship view
 > If either of the above is shaky, pause and review before continuing.
 
 ---
 
 ## 🏗️ A Story: The Supplier Who Saved a Company
 
-In 2017, an automotive Tier-1 supplier in Michigan was about to lose its biggest customer. Defect rates were 4× target. On-time delivery had collapsed to 71%. The customer issued a 90-day cure notice — fix it or be terminated.
+In 2017, an automotive Tier-1 supplier in Michigan was about to lose its biggest customer. Defect rates were 4× target. On-time delivery had collapsed to 71%. The customer issued a 90-day cure notice, fix it or be terminated.
 
-The customer's supply VP did something unusual. Instead of replacing the supplier, she sent a 4-person team — two quality engineers, a Lean expert, and a logistics planner — to live at the supplier for 90 days. They ran kaizen events, redesigned the line layout, taught SPC (statistical process control), and rewired the planning system.
+The customer's supply VP did something unusual. Instead of replacing the supplier, she sent a 4-person team two quality engineers, a Lean expert, and a logistics planner to live at the supplier for 90 days. They ran kaizen events, redesigned the line layout, taught SPC (statistical process control), and rewired the planning system.
 
 90 days later: defects at 0.4× target, on-time at 96%. The supplier kept the business. Three years later, that supplier was the customer's #1 partner for a new product platform.
 
-What happened? **Supplier development**. Most procurement organizations would have switched suppliers — burning the cost of qualifying a new one, losing tribal knowledge, and creating supply risk during transition. The CPSM-trained leader saw a strategic supplier worth saving.
+What happened? **Supplier development**. Most procurement organizations would have switched suppliers, burning the cost of qualifying a new one, losing tribal knowledge, and creating supply risk during transition. The CPSM-trained leader saw a strategic supplier worth saving.
 
 That's the SRM mindset.
 
@@ -107,9 +107,9 @@ A common 4-color (or 4-rank) output:
 
 ---
 
-## 🛠️ Supplier Development — Investing in Their Capability
+## 🛠️ Supplier Development, Investing in Their Capability
 
-The discipline of investing in suppliers traces to the Toyota Production System and is canonized in Jeffrey K. Liker's *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer* (Liker, 2004, McGraw-Hill; 2nd ed. 2020). Liker's "Two Pillars" are **continuous improvement** and **respect for people** — applied to suppliers, this becomes the discipline of *developing* rather than *switching*. Supplier development means actively helping suppliers improve. Forms include:
+The discipline of investing in suppliers traces to the Toyota Production System and is canonized in Jeffrey K. Liker's *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer* (Liker, 2004, McGraw-Hill; 2nd ed. 2020). Liker's "Two Pillars" are **continuous improvement** and **respect for people**, applied to suppliers, this becomes the discipline of *developing* rather than *switching*. Supplier development means actively helping suppliers improve. Forms include:
 
 - **Embedded engineers** (quality, manufacturing, logistics) seconded into the supplier
 - **Kaizen events** at the supplier site
@@ -242,23 +242,23 @@ Strategic suppliers can be a *source of innovation*. Programs include:
 
 ---
 
-## 📊 Case Study — Toyota's Chip Shortage Response (2021-2023)
+## 📊 Case Study, Toyota's Chip Shortage Response (2021-2023)
 
-**Situation.** In Q4 2020 / early 2021, the global semiconductor industry buckled under a confluence of demand spikes (PCs, gaming, smartphones, EVs) and supply constraints. Most automakers — Ford, GM, Stellantis, Volkswagen, Honda — slashed production. Ford shut F-150 lines. GM idled multiple plants. The industry lost an estimated **$210 billion in revenue and 7.7 million units of production in 2021 alone** (AlixPartners and IHS Markit/S&P Global data).
+**Situation.** In Q4 2020 / early 2021, the global semiconductor industry buckled under a confluence of demand spikes (PCs, gaming, smartphones, EVs) and supply constraints. Most automakers Ford, GM, Stellantis, Volkswagen, Honda slashed production. Ford shut F-150 lines. GM idled multiple plants. The industry lost an estimated **$210 billion in revenue and 7.7 million units of production in 2021 alone** (AlixPartners and IHS Markit/S&P Global data).
 
-Toyota Motor Corporation, by contrast, made roughly 766,000 fewer vehicles in calendar 2021 than originally planned — a significant cut, but materially smaller than competitors as a percentage of plan. Toyota's chip inventory and supplier visibility ran on a **fundamentally different SRM model** that paid back its 30-year investment in a single quarter.
+Toyota Motor Corporation, by contrast, made roughly 766,000 fewer vehicles in calendar 2021 than originally planned, a significant cut, but materially smaller than competitors as a percentage of plan. Toyota's chip inventory and supplier visibility ran on a **fundamentally different SRM model** that paid back its 30-year investment in a single quarter.
 
-**Decision.** After the 2011 Tōhoku earthquake exposed automotive supply-chain fragility, Toyota's purchasing organization spent a decade building what came to be called **"Rescue"** — a database tracking ~50,000 parts to Tier-4 (and in some cases Tier-5) with mandated inventory buffers for high-risk components, including semiconductors. Key elements:
+**Decision.** After the 2011 Tōhoku earthquake exposed automotive supply-chain fragility, Toyota's purchasing organization spent a decade building what came to be called **"Rescue"**, a database tracking ~50,000 parts to Tier-4 (and in some cases Tier-5) with mandated inventory buffers for high-risk components, including semiconductors. Key elements:
 
-1. **Mandated chip stockpiles** of 2-6 months at strategic Tier-1 suppliers (Denso, Aisin) — explicitly contrary to "lean" JIT orthodoxy for components Toyota classified as long-lead-time-risk.
+1. **Mandated chip stockpiles** of 2-6 months at strategic Tier-1 suppliers (Denso, Aisin), explicitly contrary to "lean" JIT orthodoxy for components Toyota classified as long-lead-time-risk.
 2. **Multi-tier mapping** so Toyota knew which fab made which wafer for which Tier-1 assembly.
 3. **Cross-investment** in supplier-of-supplier relationships: Toyota stakes in Denso, Denso stakes in fabs.
-4. **Joint engineering programs** — Toyota engineers embedded at Denso, Denso engineers at TSMC and Renesas.
+4. **Joint engineering programs**, Toyota engineers embedded at Denso, Denso engineers at TSMC and Renesas.
 5. **Annual supplier "Genchi Genbutsu"** (go and see) visits by Toyota's own purchasing executives.
 
 When the 2021 shortage hit, Toyota's buffer absorbed the first 3-4 months of disruption. Competitors who relied purely on JIT had no buffer at all.
 
-**Outcome.** Toyota reported a **record operating profit of ¥2.99 trillion (~$26B)** for fiscal year 2022 — the highest in its history at the time. Vehicle production was still down vs plan, but margin per vehicle was up materially because Toyota could keep building high-margin models (Lexus, Land Cruiser, Sienna) while competitors shifted to whatever they could ship. By 2023 the shortage had eased and Toyota's relative advantage closed — but its market-cap premium versus US Big 3 had widened. The investment in SRM became a Harvard Business School case (Reeves, Whitaker & Fink, *Harvard Business Review*, March 2022, "How Resilient Businesses Created Advantage in Adversity").
+**Outcome.** Toyota reported a **record operating profit of ¥2.99 trillion (~$26B)** for fiscal year 2022 the highest in its history at the time. Vehicle production was still down vs plan, but margin per vehicle was up materially because Toyota could keep building high-margin models (Lexus, Land Cruiser, Sienna) while competitors shifted to whatever they could ship. By 2023 the shortage had eased and Toyota's relative advantage closed but its market-cap premium versus US Big 3 had widened. The investment in SRM became a Harvard Business School case (Reeves, Whitaker & Fink, *Harvard Business Review*, March 2022, "How Resilient Businesses Created Advantage in Adversity").
 
 **Lesson for the exam / for practitioners.** This is Liker's "Two Pillars" applied to procurement at industrial scale:
 
@@ -267,7 +267,7 @@ When the 2021 shortage hit, Toyota's buffer absorbed the first 3-4 months of dis
 
 Note four exam-relevant patterns: (1) Toyota's *strategic* suppliers (Module 4 Tier-1) were not the place to push for JIT savings; (2) the cost of carrying 2-6 months of chip inventory looked indefensible on a quarterly cost scorecard, but the *risk* lens (Module 7) flipped the math; (3) multi-tier mapping (Module 7) is impossible without long-term Tier-1 relationships (Module 4); (4) Toyota's *transformational + servant* leadership style (Module 8) is what makes the 30-year horizon survive C-suite turnover.
 
-When a CPSM scenario asks "BEST response when a strategic supplier struggles," the answer is rarely "switch suppliers" — Toyota's playbook is to invest, not exit.
+When a CPSM scenario asks "BEST response when a strategic supplier struggles," the answer is rarely "switch suppliers", Toyota's playbook is to invest, not exit.
 
 **Discussion (Socratic).**
 - Q1: Toyota's 2-6 month chip stockpile violates JIT/lean orthodoxy. The carrying cost is non-trivial. Defend the decision quantitatively to a CFO who reads only quarterly scorecards. What metric would you put on the dashboard?
@@ -295,7 +295,7 @@ Sometimes you must exit a supplier. Manage it:
 
 | Term | Definition |
 |---|---|
-| SRM | Supplier Relationship Management — lifecycle approach |
+| SRM | Supplier Relationship Management, lifecycle approach |
 | Tiering / segmentation | Classifying suppliers by strategic importance |
 | Strategic supplier | Tier-1, partnership, multi-year |
 | Scorecard / QCDS | Quality, Cost, Delivery, Service rating |
@@ -325,13 +325,13 @@ Sometimes you must exit a supplier. Manage it:
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **The Toyota model vs the Walmart model.** Toyota's SRM emphasizes long-term partnership; Walmart's emphasizes year-over-year price reduction (the Sam Walton "if a supplier won't reduce price, we find one who will" approach). Both have built durable competitive advantage. Defend each as the *right* model for its industry. Could Walmart adopt Toyota's playbook? Could Toyota adopt Walmart's?
 2. **Tier-2 diversity reporting in 2026.** As of January 2024, EU CSRD requires large companies to report Scope 3 emissions and supply-chain diligence. Argue whether Tier-2 diversity reporting (which is voluntary in the US except for federal contractors) will become *de facto* mandatory by 2027 for any company selling into the EU. What's the trade-off?
-3. **When supplier development is a sunk-cost trap.** This module says "invest in supplier development when the capability gap is fixable." But sunk costs distort that judgment — the more you've already invested, the harder it gets to switch. Build a 3-question test that a category manager could apply to know when supplier development has crossed from investment to sunk-cost trap.
+3. **When supplier development is a sunk-cost trap.** This module says "invest in supplier development when the capability gap is fixable." But sunk costs distort that judgment, the more you've already invested, the harder it gets to switch. Build a 3-question test that a category manager could apply to know when supplier development has crossed from investment to sunk-cost trap.
 4. **The auditor finds child labor at Tier-1. What's actually best?** The textbook answer is "engage on remediation; escalate; document; prepare contractual action up to termination." But abrupt termination puts the affected workers worse off (they lose income and the buyer loses visibility). Defend a position on the *true* best action when remediation may take 12-18 months but customers expect immediate termination.
-5. **The 2026 question: AI-driven SRM.** Coupa, SAP Ariba, JAGGAER, and Resilinc all shipped AI-powered SRM features in 2024-2025 — auto-scoring suppliers, auto-detecting risk from news feeds, auto-drafting QBR agendas. What's the highest-stakes failure mode of AI-driven SRM, and what governance would you put in place to prevent it?
+5. **The 2026 question: AI-driven SRM.** Coupa, SAP Ariba, JAGGAER, and Resilinc all shipped AI-powered SRM features in 2024-2025, auto-scoring suppliers, auto-detecting risk from news feeds, auto-drafting QBR agendas. What's the highest-stakes failure mode of AI-driven SRM, and what governance would you put in place to prevent it?
 
 ---
 
@@ -343,7 +343,7 @@ You now know:
 - 🏷️ Supplier tiering (strategic / preferred / approved / tail)
 - 📊 QCDS+ scorecards and their action matrix
 - 🤝 Partnership vs transactional models
-- 🛠️ Supplier development — when and how
+- 🛠️ Supplier development, when and how
 - 🌈 Diversity categories and tier-2 reporting
 - 🏭 Audit types and frequency
 - 📈 QBR structure
@@ -354,7 +354,7 @@ You now know:
 1. 🎥 [Videos](./Videos.md)
 2. ✏️ [Quiz](./Quiz.md)
 3. 📋 [Cheat-Sheet](./Cheat-Sheet.md)
-4. 📝 Take **Practice-Exam-1** in `Practice-Exams/` after this module — it covers Modules 1–4.
+4. 📝 Take **Practice-Exam-1** in `Practice-Exams/` after this module, it covers Modules 1–4.
 5. ➡️ [Module 5: Cost Management & TCO](../Module-05-Cost-Management-TCO/Reading.md)
 
 > **Where this leads.**
@@ -366,10 +366,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 Liker, *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer*, 2nd ed. (McGraw-Hill, 2020) — the supplier development bible
+- 📖 Liker, *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer*, 2nd ed. (McGraw-Hill, 2020), the supplier development bible
 - 📖 *Supplier Relationship Management: How to Develop Strategic Partnerships* by Jonathan O'Brien (4th ed., Kogan Page, 2023)
-- 📖 *Strategic Sourcing in the New Economy* by Vitasek & Keith (2016, Palgrave Macmillan) — vested outsourcing
-- 📖 Reeves, Whitaker & Fink, "How Resilient Businesses Created Advantage in Adversity" — *HBR*, March 2022 (Toyota chip-shortage case)
+- 📖 *Strategic Sourcing in the New Economy* by Vitasek & Keith (2016, Palgrave Macmillan), vested outsourcing
+- 📖 Reeves, Whitaker & Fink, "How Resilient Businesses Created Advantage in Adversity", *HBR*, March 2022 (Toyota chip-shortage case)
 - 📖 NMSDC (nmsdc.org) and WBENC (wbenc.org) certification websites
-- 📖 ISM *Principles of Sustainability and Social Responsibility* — free PDF
+- 📖 ISM *Principles of Sustainability and Social Responsibility*, free PDF
 - 📖 SAE J7000 (supply chain risk management) and AS9100 (aerospace quality)

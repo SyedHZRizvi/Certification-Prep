@@ -43,9 +43,9 @@
 
 | Tier | Approx $/Mtok In | $/Mtok Out | Latency | Context | Mental Model |
 |------|------------------|------------|---------|---------|--------------|
-| **Haiku 4.5** | $1 | $5 | ~250ms | 200K | Smart intern — fast, cheap |
-| **Sonnet 4.6** | $3 | $15 | ~600ms | 200K (1M β) | Senior engineer — default |
-| **Opus 4.6** | $15 | $75 | ~1.5s | 500K | Distinguished engineer — slow, smart |
+| **Haiku 4.5** | $1 | $5 | ~250ms | 200K | Smart intern, fast, cheap |
+| **Sonnet 4.6** | $3 | $15 | ~600ms | 200K (1M β) | Senior engineer, default |
+| **Opus 4.6** | $15 | $75 | ~1.5s | 500K | Distinguished engineer, slow, smart |
 
 **Prompt caching:** Cached tokens billed at ~10% of standard → **~90% cost cut** on stable prompt prefixes.
 
@@ -64,12 +64,12 @@
 
 ---
 
-## 🛡️ Responsible Scaling Policy — ASL Levels
+## 🛡️ Responsible Scaling Policy, ASL Levels
 
 | Level | Description |
 |-------|-------------|
 | ASL-1 | Low-risk older models |
-| ASL-2 | Current/recent frontier — limited bio/chem/cyber uplift |
+| ASL-2 | Current/recent frontier, limited bio/chem/cyber uplift |
 | ASL-3 | Meaningful uplift → significantly hardened security, 3rd-party evals |
 | ASL-4 | Meaningful autonomy → BSL-4-grade controls (commitments still being finalized) |
 | ASL-5 | Hypothetical superintelligence territory |
@@ -78,7 +78,7 @@ Analogous to **BSL (BioSafety Levels)** in biology.
 
 ---
 
-## 🔬 Claude vs GPT vs Gemini — When to Pick Which
+## 🔬 Claude vs GPT vs Gemini, When to Pick Which
 
 | Pick Claude when | Pick GPT when | Pick Gemini when |
 |------------------|---------------|------------------|
@@ -170,7 +170,7 @@ Analogous to **BSL (BioSafety Levels)** in biology.
 
 Cover the answers and recite:
 
-1. RLHF vs Constitutional AI — one-line difference? ___
+1. RLHF vs Constitutional AI, one-line difference? ___
 2. Three Claude tiers and one use case each? ___
 3. What does ASL-3 commit Anthropic to? ___
 4. Three places you can run Claude in production? ___

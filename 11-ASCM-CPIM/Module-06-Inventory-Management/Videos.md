@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Inventory Management
 
-> **How to use:** Inventory is heavy on formulas. Pause every video that shows a calculation and re-derive on paper. Don't skip EOQ derivation — many CPIM questions probe assumptions.
+> **How to use:** Inventory is heavy on formulas. Pause every video that shows a calculation and re-derive on paper. Don't skip EOQ derivation, many CPIM questions probe assumptions.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">EPQ — Economic Production Quantity</p>
+      <p class="vg-title">EPQ, Economic Production Quantity</p>
       <p class="vg-creator">Education Edge</p>
       <span class="vg-duration">⏱ 10 min · Production vs purchase</span>
     </div>

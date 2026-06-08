@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CPU Features &amp; Sockets — 220-1101</p>
+      <p class="vg-title">CPU Features &amp; Sockets, 220-1101</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 12 min · LGA, cores, threads</span>
     </div>
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Power Supplies — Sizing &amp; 80 PLUS</p>
+      <p class="vg-title">Power Supplies, Sizing &amp; 80 PLUS</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 10 min · Modular, connectors</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">How to Build a PC — Beginner</p>
+      <p class="vg-title">How to Build a PC, Beginner</p>
       <p class="vg-creator">Linus Tech Tips</p>
       <span class="vg-duration">⏱ 25 min · See it assembled</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">RAID Explained — 0/1/5/6/10</p>
+      <p class="vg-title">RAID Explained, 0/1/5/6/10</p>
       <p class="vg-creator">Gamers Nexus</p>
       <span class="vg-duration">⏱ 16 min · Performance + redundancy</span>
     </div>
@@ -127,7 +127,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ECC RAM — When You Actually Need It</p>
+      <p class="vg-title">ECC RAM, When You Actually Need It</p>
       <p class="vg-creator">Level1Techs (Wendell)</p>
       <span class="vg-duration">⏱ 20 min · Server + workstation</span>
     </div>
@@ -153,7 +153,7 @@
 ## ✅ After watching
 
 1. Recite the difference between LGA and PGA.
-2. List the minimum disks for RAID 0, 1, 5, 6, 10 — and the fault tolerance of each.
+2. List the minimum disks for RAID 0, 1, 5, 6, 10, and the fault tolerance of each.
 3. Explain why a 650W PSU might be undersized for a build with an RTX 4080 + i7-14700K.
 4. Name the three required-for-Win11 hardware features (you should know all three).
 5. Describe the M.2 keying gotcha in your own words.

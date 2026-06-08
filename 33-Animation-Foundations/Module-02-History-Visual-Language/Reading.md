@@ -1,6 +1,6 @@
 # Module 2: Animation History & Visual Language 🎞️
 
-> **Why this module matters:** You cannot make creative decisions — about framing, pacing, style, or cultural reference — without knowing what came before. Every director you will ever work with expects you to understand what they mean when they say "Fleischer energy," "Miyazaki-esque staging," or "Tex Avery timing." This module is the map.
+> **Why this module matters:** You cannot make creative decisions about framing, pacing, style, or cultural reference without knowing what came before. Every director you will ever work with expects you to understand what they mean when they say "Fleischer energy," "Miyazaki-esque staging," or "Tex Avery timing." This module is the map.
 
 > **Prerequisites:** Module 1 (12 Principles). You should know what anticipation, staging, and timing mean before studying how different eras applied them.
 
@@ -10,9 +10,9 @@
 
 It is 1878. Leland Stanford, the railroad baron and former California governor, has bet $25,000 on a question that every horse owner in America is arguing about: does a galloping horse ever have all four feet off the ground simultaneously?
 
-Stanford hires Eadweard Muybridge, a photographer with a reputation for technical ingenuity, to settle the question. Muybridge rigs a series of 24 cameras along a racetrack at Stanford's stock farm in Palo Alto, with trip-wires that each camera will shoot as the horse gallops past. The result — a sequence of photographs showing a galloping horse clearly airborne at the peak of its stride — answers the question, wins the bet, and accidentally **invents the science of motion study that every animation school in the world still uses**.
+Stanford hires Eadweard Muybridge, a photographer with a reputation for technical ingenuity, to settle the question. Muybridge rigs a series of 24 cameras along a racetrack at Stanford's stock farm in Palo Alto, with trip-wires that each camera will shoot as the horse gallops past. The result a sequence of photographs showing a galloping horse clearly airborne at the peak of its stride answers the question, wins the bet, and accidentally **invents the science of motion study that every animation school in the world still uses**.
 
-Muybridge went on to produce his *Animal Locomotion* series (1887): 781 plates showing humans and animals in sequential motion. Every CalArts student has studied these. Every Disney animator who worked on *Bambi*, *The Lion King*, or *Fantasia* had pages of Muybridge on their desk. The horse was the first motion study; the principles it revealed — arc paths, weight shift, follow-through — are still the backbone of every animation curriculum.
+Muybridge went on to produce his *Animal Locomotion* series (1887): 781 plates showing humans and animals in sequential motion. Every CalArts student has studied these. Every Disney animator who worked on *Bambi*, *The Lion King*, or *Fantasia* had pages of Muybridge on their desk. The horse was the first motion study; the principles it revealed arc paths, weight shift, follow-through are still the backbone of every animation curriculum.
 
 The story of animation history is the story of technology creating new problems, artists solving them with craft, and the solutions becoming principles. Muybridge's camera created the motion study. Thomas Edison's kinetoscope created the concept of projected motion. Winsor McCay's *Gertie the Dinosaur* (1914) proved that a drawn character could have personality. Walt Disney's *Steamboat Willie* (1928) proved sound would be synchronized. Every era adds a layer.
 
@@ -38,22 +38,22 @@ The story of animation history is the story of technology creating new problems,
 ## 🎬 The Pioneers: Four Names You Must Know
 
 ### Eadweard Muybridge (1830–1904)
-Not an animator — a photographer. But his *Animal Locomotion* plates are the first systematic study of motion and the ancestor of every rotoscoping technique, every motion study course, and every reference library at every animation studio. Know his name; know his contribution.
+Not an animator, a photographer. But his *Animal Locomotion* plates are the first systematic study of motion and the ancestor of every rotoscoping technique, every motion study course, and every reference library at every animation studio. Know his name; know his contribution.
 
 ### Winsor McCay (1866–1934)
-The first person to prove that a drawn character could have personality, weight, and emotional performance. *Gertie the Dinosaur* (1914) was so convincing that audiences in the theater called out to Gertie as if she were real. McCay animated the flour-sack exercises that every animation school still uses — he proved that mass and weight could be communicated through drawing before the 12 Principles were named.
+The first person to prove that a drawn character could have personality, weight, and emotional performance. *Gertie the Dinosaur* (1914) was so convincing that audiences in the theater called out to Gertie as if she were real. McCay animated the flour-sack exercises that every animation school still uses, he proved that mass and weight could be communicated through drawing before the 12 Principles were named.
 
 ### Walt Disney (1901–1966) and the Nine Old Men
-Disney did not animate — he produced. His genius was in creating the studio environment where animators like Frank Thomas, Ollie Johnston, Milt Kahl, Ward Kimball, and the others could develop and codify the 12 Principles over three decades of production. The Disney studio from 1930 to 1960 was the most important animation research institution in history.
+Disney did not animate, he produced. His genius was in creating the studio environment where animators like Frank Thomas, Ollie Johnston, Milt Kahl, Ward Kimball, and the others could develop and codify the 12 Principles over three decades of production. The Disney studio from 1930 to 1960 was the most important animation research institution in history.
 
 ### Hayao Miyazaki (born 1941)
-The most influential living animator and director in the world. Miyazaki's Studio Ghibli films — *My Neighbor Totoro* (1988), *Princess Mononoke* (1997), *Spirited Away* (2001), *Howl's Moving Castle* (2004) — established that animation is a medium for adult drama, spiritual inquiry, and environmental philosophy. The Pixar generation (Lasseter, Bird, Stanton) cites Miyazaki as a primary influence. When *Spirited Away* won the Academy Award for Best Animated Feature in 2003, it was the first non-English-language film to win the award.
+The most influential living animator and director in the world. Miyazaki's Studio Ghibli films *My Neighbor Totoro* (1988), *Princess Mononoke* (1997), *Spirited Away* (2001), *Howl's Moving Castle* (2004) established that animation is a medium for adult drama, spiritual inquiry, and environmental philosophy. The Pixar generation (Lasseter, Bird, Stanton) cites Miyazaki as a primary influence. When *Spirited Away* won the Academy Award for Best Animated Feature in 2003, it was the first non-English-language film to win the award.
 
 ---
 
 ## 🎥 Visual Language: The Camera as Storyteller
 
-Animation inherits its visual language from cinema. Every shot type, every camera move, every editing principle that film uses — animation uses too, with the added freedom that in animation, the "camera" can go anywhere, do anything, and cost exactly the same as a static shot.
+Animation inherits its visual language from cinema. Every shot type, every camera move, every editing principle that film uses, animation uses too, with the added freedom that in animation, the "camera" can go anywhere, do anything, and cost exactly the same as a static shot.
 
 ### Shot Types
 
@@ -84,17 +84,17 @@ Animation inherits its visual language from cinema. Every shot type, every camer
 
 **Screen direction** is the direction a character appears to be moving or facing within the frame.
 
-**The 180-Degree Rule:** In any scene, there is an imaginary line — the "axis of action" — drawn through the primary action. All camera positions must stay on the same side of this line. If the camera crosses the line between two shots, characters appear to switch sides of the screen, which is spatially disorienting and breaks the audience's sense of physical space.
+**The 180-Degree Rule:** In any scene, there is an imaginary line the "axis of action" drawn through the primary action. All camera positions must stay on the same side of this line. If the camera crosses the line between two shots, characters appear to switch sides of the screen, which is spatially disorienting and breaks the audience's sense of physical space.
 
 ### Case Study: How *Spider-Verse* Breaks the Rules Deliberately
 
-*Into the Spider-Verse* violates the 180-degree rule repeatedly — and deliberately. Different Spider-People come from different universes; the visual disorientation when they interact reflects their incompatibility within a shared space. The violation is a storytelling choice, not an error. This is the key principle about rules in visual language: **you must know the rule before you can break it productively**.
+*Into the Spider-Verse* violates the 180-degree rule repeatedly, and deliberately. Different Spider-People come from different universes; the visual disorientation when they interact reflects their incompatibility within a shared space. The violation is a storytelling choice, not an error. This is the key principle about rules in visual language: **you must know the rule before you can break it productively**.
 
 ---
 
 ## 🎨 The Rule of Thirds in Animation
 
-The **Rule of Thirds** divides the frame into a 3x3 grid. The four intersection points (the "power points") are where the eye naturally gravitates. Placing the most important element at a power point — rather than dead center — creates more dynamic, engaging composition.
+The **Rule of Thirds** divides the frame into a 3x3 grid. The four intersection points (the "power points") are where the eye naturally gravitates. Placing the most important element at a power point rather than dead center creates more dynamic, engaging composition.
 
 **In animation specifically:**
 - Characters looking toward center screen feel trapped
@@ -102,7 +102,7 @@ The **Rule of Thirds** divides the frame into a 3x3 grid. The four intersection 
 - Characters in the upper third feel elevated, powerful, or idealistic
 - Characters in the lower third feel grounded, oppressed, or humble
 
-**The Miyazaki exception:** Miyazaki frequently stages important characters in the exact center of the frame — but does so deliberately to create a sense of stillness, inevitability, or sacred weight. Understanding the rule means knowing when to apply and when to override it.
+**The Miyazaki exception:** Miyazaki frequently stages important characters in the exact center of the frame, but does so deliberately to create a sense of stillness, inevitability, or sacred weight. Understanding the rule means knowing when to apply and when to override it.
 
 ---
 
@@ -123,7 +123,7 @@ The Fleischer aesthetic nearly vanished after Disney's *Snow White* (1937) prove
 
 ## 🎬 Case Study: *Spider-Verse* as Visual Language Manifesto
 
-*Spider-Man: Into the Spider-Verse* (2018) is the most discussed film in animation studies since *Toy Story* — not because it is the most commercially successful, but because it deliberately challenged every received assumption about how animation should look and why.
+*Spider-Man: Into the Spider-Verse* (2018) is the most discussed film in animation studies since *Toy Story*, not because it is the most commercially successful, but because it deliberately challenged every received assumption about how animation should look and why.
 
 The film's directors (Peter Ramsey, Bob Persichetti, and Rodney Rothman) and producers (Phil Lord and Christopher Miller) made the following visual language decisions, each of which broke from the industry norm:
 
@@ -135,19 +135,19 @@ The film's directors (Peter Ramsey, Bob Persichetti, and Rodney Rothman) and pro
 
 **Decision 4: Deliberate motion blur rejection.** Most 3D animation includes motion blur as standard. *Spider-Verse* turned motion blur off for most characters, replacing it with hand-drawn motion smears (action lines extended from key frames). This makes the action feel more graphic and intentional, less cinematic.
 
-**The lesson:** Visual language is a choice made by the filmmakers. Every convention that *Spider-Verse* rejected was adopted by default in the rest of the industry. Knowing a convention is a convention — and understanding why it became a convention — is the prerequisite for making meaningful decisions about when to follow or break it.
+**The lesson:** Visual language is a choice made by the filmmakers. Every convention that *Spider-Verse* rejected was adopted by default in the rest of the industry. Knowing a convention is a convention and understanding why it became a convention is the prerequisite for making meaningful decisions about when to follow or break it.
 
 ---
 
 ## 🌏 Studio Ghibli and the Non-Disney Standard
 
-While American animation debated whether CGI would replace traditional drawing, Hayao Miyazaki's Studio Ghibli was quietly building the most critically respected body of work in animation history using hand-drawn 2D — without ever compromising its commitment to craft.
+While American animation debated whether CGI would replace traditional drawing, Hayao Miyazaki's Studio Ghibli was quietly building the most critically respected body of work in animation history using hand-drawn 2D, without ever compromising its commitment to craft.
 
 Founded in 1985 by Miyazaki and Isao Takahata, Studio Ghibli established a set of production values that explicitly rejected the cost-cutting practices that had hollowed out television animation:
-- **Full animation** — no limited movement to save drawing costs
-- **Detailed backgrounds** — painted to a level of craft that rivaled the Disney golden age
-- **Environmental storytelling** — the natural world (forests, oceans, cities) is a character, not a backdrop
-- **Slow cinema rhythms** — scenes breathe; characters stand still and look at things
+- **Full animation**, no limited movement to save drawing costs
+- **Detailed backgrounds**, painted to a level of craft that rivaled the Disney golden age
+- **Environmental storytelling**, the natural world (forests, oceans, cities) is a character, not a backdrop
+- **Slow cinema rhythms**, scenes breathe; characters stand still and look at things
 
 The Ghibli effect on animation history is clearest in this comparison table:
 
@@ -166,7 +166,7 @@ The Ghibli effect on animation history is clearest in this comparison table:
 
 ## 🕸️ The Digital Revolution: Pixar and What Changed
 
-The 1995 release of *Toy Story* — the first fully computer-animated theatrical feature — is the most significant technological event in animation history since synchronized sound in 1928. Understanding what changed, and what did not, is essential to understanding the modern industry.
+The 1995 release of *Toy Story* the first fully computer-animated theatrical feature is the most significant technological event in animation history since synchronized sound in 1928. Understanding what changed, and what did not, is essential to understanding the modern industry.
 
 **What changed with CGI:**
 
@@ -182,7 +182,7 @@ The 1995 release of *Toy Story* — the first fully computer-animated theatrical
 
 ### DreamWorks vs Pixar: The 2000s Rivalry
 
-The competition between Pixar and DreamWorks Animation through the 2000s produced some of the most commercially successful animated films ever made — and two distinct aesthetic philosophies.
+The competition between Pixar and DreamWorks Animation through the 2000s produced some of the most commercially successful animated films ever made, and two distinct aesthetic philosophies.
 
 | Dimension | Pixar | DreamWorks |
 |-----------|-------|------------|
@@ -204,10 +204,10 @@ The modern animation industry is not only film studios. Understanding the full l
 ### Animation in Games
 
 Game animation has developed its own craft tradition, with distinct technical requirements:
-- **Real-time rendering** — game animation must run at 30–60fps without pre-rendering
-- **State machines and blending** — character motion is built from a library of animation clips that blend based on player input
-- **Procedural animation** — physics-driven secondary action (hair, cloth, foliage) replaces hand-animated secondary action in many productions
-- **Mocap + keyframe** — motion capture provides base performance; keyframe animators refine and exaggerate
+- **Real-time rendering**, game animation must run at 30–60fps without pre-rendering
+- **State machines and blending**, character motion is built from a library of animation clips that blend based on player input
+- **Procedural animation**, physics-driven secondary action (hair, cloth, foliage) replaces hand-animated secondary action in many productions
+- **Mocap + keyframe**, motion capture provides base performance; keyframe animators refine and exaggerate
 
 The game animation field at major studios (Naughty Dog, Riot Games, Epic, CD Projekt Red) is now considered as creatively prestigious as film animation, with salaries that often exceed film studio equivalents at senior levels.
 
@@ -216,10 +216,10 @@ The game animation field at major studios (Naughty Dog, Riot Games, Epic, CD Pro
 The 2021 Netflix series *Arcane* (produced by Riot Games and Fortiche Productions) is the most significant animation production of the streaming era and represents a new benchmark for adult animation.
 
 *Arcane* is notable for:
-- **A hybrid 2D/3D pipeline** — 3D animation treated with 2D painterly textures and manual touch-up to achieve a look impossible in either pure 2D or pure 3D
-- **Cinematic pacing** — the series runs at 24fps with film-quality lighting and staging, breaking from TV animation norms
-- **Adult dramatic complexity** — no villain/hero binary; trauma, addiction, and grief as central themes
-- **Critical and commercial impact** — won the Annie Award for Outstanding Achievement for Animated Feature in 2022 despite being a series
+- **A hybrid 2D/3D pipeline**, 3D animation treated with 2D painterly textures and manual touch-up to achieve a look impossible in either pure 2D or pure 3D
+- **Cinematic pacing**, the series runs at 24fps with film-quality lighting and staging, breaking from TV animation norms
+- **Adult dramatic complexity**, no villain/hero binary; trauma, addiction, and grief as central themes
+- **Critical and commercial impact**, won the Annie Award for Outstanding Achievement for Animated Feature in 2022 despite being a series
 
 The visual language choices in *Arcane* directly reference:
 - The graphic novel aesthetic of early comics and concept art
@@ -238,11 +238,11 @@ United Productions of America (UPA), founded in 1945 by former Disney employees,
 - **Flat graphic shapes** instead of round, dimensional forms
 - **Simplified backgrounds** with intentional empty space
 - **Modernist design** influenced by contemporaneous graphic art (Saul Bass, Paul Rand)
-- **Voice performance over physical movement** — the audience's imagination fills in what the animation does not show
+- **Voice performance over physical movement**, the audience's imagination fills in what the animation does not show
 
-*Gerald McBoing-Boing* (1950, directed by Robert Cannon) won the Academy Award for Best Animated Short — beating Disney, demonstrating that limited animation was not a budget compromise but a valid aesthetic position.
+*Gerald McBoing-Boing* (1950, directed by Robert Cannon) won the Academy Award for Best Animated Short, beating Disney, demonstrating that limited animation was not a budget compromise but a valid aesthetic position.
 
-**The UPA-to-anime connection:** UPA's approach to limited animation directly influenced the Japanese animation studios of the 1960s and 1970s. Osamu Tezuka — the "God of Manga" and founder of Mushi Production — visited the US, encountered UPA's work, and brought its principles back to Japan as an aesthetic framework for television anime. The large expressive eyes, simplified backgrounds, and emphasis on character expression over physical motion that characterize anime are partly an inheritance of UPA's limited animation philosophy.
+**The UPA-to-anime connection:** UPA's approach to limited animation directly influenced the Japanese animation studios of the 1960s and 1970s. Osamu Tezuka the "God of Manga" and founder of Mushi Production visited the US, encountered UPA's work, and brought its principles back to Japan as an aesthetic framework for television anime. The large expressive eyes, simplified backgrounds, and emphasis on character expression over physical motion that characterize anime are partly an inheritance of UPA's limited animation philosophy.
 
 🎯 **What the exam tests:** Know UPA as the origin of "limited animation as artistic choice" and *Gerald McBoing-Boing* as the specific film that proved this. Know the chain from UPA → Tezuka → anime conventions.
 
@@ -252,9 +252,9 @@ United Productions of America (UPA), founded in 1945 by former Disney employees,
 
 The shift to television in the 1950s created an economic crisis for animation. A Disney theatrical short cost $100,000 in 1950; a full-length television cartoon could not cost that per episode. The solution was **limited animation**: fewer frames, simplified designs, static backgrounds with panning camera moves.
 
-Hanna-Barbera industrialized this in the 1960s (*The Flintstones*, *Scooby-Doo*, *Yogi Bear*). The result was animation that communicated through voice acting, timing of cuts, and character design — not through fluid motion. This is not a lesser form of animation; it is a different form. The audience fills in the missing motion from context.
+Hanna-Barbera industrialized this in the 1960s (*The Flintstones*, *Scooby-Doo*, *Yogi Bear*). The result was animation that communicated through voice acting, timing of cuts, and character design, not through fluid motion. This is not a lesser form of animation; it is a different form. The audience fills in the missing motion from context.
 
-The Japanese animation industry (anime) developed a parallel, distinct approach to limited animation that became its own aesthetic: bold action lines, carefully chosen still frames, expressive eyes. The expressive face and minimized body motion of anime reflects different aesthetic values from Disney-influenced Western animation — not lower quality, but different priorities.
+The Japanese animation industry (anime) developed a parallel, distinct approach to limited animation that became its own aesthetic: bold action lines, carefully chosen still frames, expressive eyes. The expressive face and minimized body motion of anime reflects different aesthetic values from Disney-influenced Western animation, not lower quality, but different priorities.
 
 ---
 
@@ -264,7 +264,7 @@ The most frequently tested visual language concepts require not just identificat
 
 ### Depth and Lens Choice
 
-The choice between a wide-angle lens (short focal length) and a telephoto lens (long focal length) creates dramatically different spatial relationships in animation — even in productions that have no "real" lens.
+The choice between a wide-angle lens (short focal length) and a telephoto lens (long focal length) creates dramatically different spatial relationships in animation, even in productions that have no "real" lens.
 
 | Lens Type | Focal Length | Effect | Animation Use |
 |-----------|-------------|--------|---------------|
@@ -272,11 +272,11 @@ The choice between a wide-angle lens (short focal length) and a telephoto lens (
 | **Normal** | 50mm | Closest to natural human vision; neutral | Dialogue; character relationship scenes |
 | **Telephoto** | 85–200mm | Shallow depth of field; background compressed toward foreground; faces appear flatter | Emotional close-ups; surveillance feeling; compressed urban environments |
 
-Miyazaki frequently uses long "telephoto" lens compositions to compress depth in crowd or environmental scenes, creating a sense of density and overwhelming visual information. *Spirited Away*'s spirit world is staged this way — the compression makes Chihiro feel pressed-in by the crowd.
+Miyazaki frequently uses long "telephoto" lens compositions to compress depth in crowd or environmental scenes, creating a sense of density and overwhelming visual information. *Spirited Away*'s spirit world is staged this way, the compression makes Chihiro feel pressed-in by the crowd.
 
 ### Editing Rhythm as Visual Language
 
-Editing pace is a form of visual language. The average shot length (ASL) — the total runtime of a film divided by the number of cuts — measures how fast a film is edited.
+Editing pace is a form of visual language. The average shot length (ASL) the total runtime of a film divided by the number of cuts measures how fast a film is edited.
 
 | Film / Production | Average Shot Length | Effect |
 |------------------|-------------------|--------|
@@ -317,7 +317,7 @@ These are the facts, names, and dates most frequently tested at the foundational
 
 ## 💬 Socratic Questions for Discussion
 
-1. Muybridge's motion studies were created to answer a scientific question. Is the science of motion study — including modern motion capture — a continuation of Muybridge's project, or has it replaced it with something fundamentally different?
+1. Muybridge's motion studies were created to answer a scientific question. Is the science of motion study including modern motion capture a continuation of Muybridge's project, or has it replaced it with something fundamentally different?
 2. The Fleischer aesthetic nearly disappeared after Disney's *Snow White* dominated critical and commercial opinion. Is the 21st-century Fleischer revival (Adventure Time, Spider-Verse, Cuphead) a genuine aesthetic recovery, or is it nostalgic pastiche?
 3. Studio Ghibli's films are considered globally influential, but they are deeply rooted in Japanese cultural and spiritual traditions. Does global distribution of culturally specific animation expand cultural understanding, or does it risk reducing the source culture to aesthetic texture?
 4. The streaming era (Netflix, Apple TV+, Amazon) has fundamentally changed animation financing. What are the consequences of streaming studios making animation financing decisions based on subscriber engagement data rather than critical or award reception?
@@ -326,14 +326,14 @@ These are the facts, names, and dates most frequently tested at the foundational
 
 ## 🎓 Recommended Animation History Viewing: A Structured Curriculum
 
-To understand animation history as a living tradition rather than a list of dates and names, watch the following films in this order. Each pair represents a dialogue — two different answers to the same creative question.
+To understand animation history as a living tradition rather than a list of dates and names, watch the following films in this order. Each pair represents a dialogue, two different answers to the same creative question.
 
 | Pair | Film 1 | Film 2 | The Dialogue |
 |------|--------|--------|-------------|
 | **Weight vs graphic style** | *Bambi* (1942) | *Gerald McBoing-Boing* (1950) | Naturalistic weight vs graphic minimalism |
 | **Character vs spectacle** | *Fantasia* (1940) | *Silly Symphonies: The Skeleton Dance* (1929) | Music as narrative vs music as pure entertainment |
 | **American vs Japanese tradition** | *The Jungle Book* (1967) | *My Neighbor Totoro* (1988) | Western anthropomorphism vs Ghibli ecological spirit |
-| **CGI revolution** | *Toy Story* (1995) | *Spirited Away* (2001) | Two different directions for animation in the same year (technically 2001 for Spirited Away, 1995 for Toy Story — the contrast is still illuminating) |
+| **CGI revolution** | *Toy Story* (1995) | *Spirited Away* (2001) | Two different directions for animation in the same year (technically 2001 for Spirited Away, 1995 for Toy Story, the contrast is still illuminating) |
 | **Style as statement** | *The Incredibles* (2004) | *Into the Spider-Verse* (2018) | Perfected house style vs deliberate house style rejection |
 
 ---
@@ -346,9 +346,9 @@ These are the specific confusions that appear most often in assessments at the f
 |------------------|---------------------|
 | Winsor McCay vs Walt Disney | McCay was a performer-animator in the pre-studio era (1906–1930s); Disney was a studio producer who built the industrial system. They never directly competed. |
 | "First sound animation" vs "first successful sound animation" | *Dinner Time* (1928, Van Beuren) technically preceded *Steamboat Willie* but had no commercial distribution. *Steamboat Willie* is "first" in the culturally significant sense. |
-| Camera "zooms" vs camera "pushes" | A zoom changes focal length (the lens changes); a push moves the camera toward the subject. They look similar but feel different — a push creates depth parallax that a zoom does not. |
+| Camera "zooms" vs camera "pushes" | A zoom changes focal length (the lens changes); a push moves the camera toward the subject. They look similar but feel different, a push creates depth parallax that a zoom does not. |
 | "Limited animation" means "bad animation" | Limited animation is a distinct aesthetic tradition. UPA's *Gerald McBoing-Boing* won the Academy Award. Limited animation requires different craft, not less craft. |
-| The 180-degree rule prevents crossing the line | The rule does not prevent anything — it describes what happens when you cross the line (spatial disorientation) and when you might choose that effect deliberately. |
+| The 180-degree rule prevents crossing the line | The rule does not prevent anything, it describes what happens when you cross the line (spatial disorientation) and when you might choose that effect deliberately. |
 | Dutch angle vs handheld camera | Dutch angle is a deliberate tilt of the camera for psychological effect; handheld is a camera movement style. They can be combined but are distinct concepts. |
 
 ---
@@ -367,24 +367,24 @@ You now know:
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
 2. ✏️ Take the quiz: [Quiz.md](./Quiz.md)
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 3 — Drawing Fundamentals](../Module-03-Drawing-Fundamentals/Reading.md)
+4. ➡️ Move on: [Module 3, Drawing Fundamentals](../Module-03-Drawing-Fundamentals/Reading.md)
 
 ---
 
 ## 📚 Further Reading
 
-- 📘 Barrier, M. (2007). *Hollywood Cartoons: American Animation in Its Golden Age.* Oxford. — The authoritative history.
-- 📘 Solomon, C. (1989). *Enchanted Drawings: The History of Animation.* Knopf. — Broader scope, beautifully illustrated.
-- 🎬 *Chuck Amuck* (1989) — Chuck Jones's autobiography; the funniest book about animation ever written.
-- 🌐 [Animation World Network](https://www.awn.com) — Industry news with deep archive of historical features.
+- 📘 Barrier, M. (2007). *Hollywood Cartoons: American Animation in Its Golden Age.* Oxford., The authoritative history.
+- 📘 Solomon, C. (1989). *Enchanted Drawings: The History of Animation.* Knopf., Broader scope, beautifully illustrated.
+- 🎬 *Chuck Amuck* (1989), Chuck Jones's autobiography; the funniest book about animation ever written.
+- 🌐 [Animation World Network](https://www.awn.com), Industry news with deep archive of historical features.
 
 **Advanced / Supplementary:**
-- 📘 Wells, P. (1998). *Understanding Animation.* Routledge. — Academic analysis of animation form and history; the standard university text.
-- 📘 Crafton, D. (1993). *Before Mickey: The Animated Film 1898–1928.* University of Chicago Press. — The definitive history of the pre-Disney era.
-- 📘 Napier, S. (2001). *Anime from Akira to Princess Mononoke: Experiencing Contemporary Japanese Animation.* Palgrave Macmillan. — Academic treatment of anime's visual language and cultural context.
-- 🎬 *Fantasia* (1940) — the most experimental Disney film; a laboratory of visual language choices.
-- 🎬 *Arcane* (Season 1, 2021, Netflix) — the definitive contemporary case study for hybrid 2D/3D pipeline and cinematic animation aesthetics.
-- 🎬 *The Tale of Princess Kaguya* (2013, Studio Ghibli, directed by Isao Takahata) — hand-painted sumi-e watercolor style; one of the most visually distinctive productions in animation history.
-- 🌐 [Animation Studies 2.0](https://animationstudies.org) — Academic journal dedicated to animation scholarship; free access to back issues.
+- 📘 Wells, P. (1998). *Understanding Animation.* Routledge., Academic analysis of animation form and history; the standard university text.
+- 📘 Crafton, D. (1993). *Before Mickey: The Animated Film 1898–1928.* University of Chicago Press., The definitive history of the pre-Disney era.
+- 📘 Napier, S. (2001). *Anime from Akira to Princess Mononoke: Experiencing Contemporary Japanese Animation.* Palgrave Macmillan., Academic treatment of anime's visual language and cultural context.
+- 🎬 *Fantasia* (1940), the most experimental Disney film; a laboratory of visual language choices.
+- 🎬 *Arcane* (Season 1, 2021, Netflix), the definitive contemporary case study for hybrid 2D/3D pipeline and cinematic animation aesthetics.
+- 🎬 *The Tale of Princess Kaguya* (2013, Studio Ghibli, directed by Isao Takahata), hand-painted sumi-e watercolor style; one of the most visually distinctive productions in animation history.
+- 🌐 [Animation Studies 2.0](https://animationstudies.org), Academic journal dedicated to animation scholarship; free access to back issues.
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*

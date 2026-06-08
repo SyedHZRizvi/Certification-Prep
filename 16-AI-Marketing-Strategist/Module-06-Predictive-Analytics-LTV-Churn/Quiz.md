@@ -1,4 +1,4 @@
-# ✏️ Module 6 Quiz: Predictive Analytics — CLV, Churn & Propensity
+# ✏️ Module 6 Quiz: Predictive Analytics, CLV, Churn & Propensity
 
 > **Instructions:** 26 questions. No notes. Aim for 22/26 (85%).
 
@@ -112,7 +112,7 @@ D. Push, Pull, Anxiety, Habit
 
 ### Q14. "Sure Things" should be marketed to: *(Apply)*
 A. Aggressively
-B. Not at all — they'll convert anyway, ads waste impressions
+B. Not at all, they'll convert anyway, ads waste impressions
 C. With offers only
 D. Via email only
 
@@ -144,7 +144,7 @@ D. Recurring, Free, Marketing
 
 ### Q18. An "RFM 555" customer is: *(Understand)*
 A. A churned customer
-B. A Champion — recent + frequent + high-value
+B. A Champion, recent + frequent + high-value
 C. A new customer
 D. A low-value customer
 
@@ -160,7 +160,7 @@ D. The largest cluster
 
 ### Q20. Targeting the TOP decile of propensity scores in paid ads is typically: *(Analyze)*
 A. The best strategy
-B. Wasteful — these users convert anyway; the middle deciles have higher incremental value
+B. Wasteful, these users convert anyway; the middle deciles have higher incremental value
 C. Required by law
 D. The default for all platforms
 
@@ -191,9 +191,9 @@ D. Publishing a blog post
 ---
 
 ### Q24. A LightGBM model output of `0.6` should be interpreted as a 60% probability: *(Apply)*
-A. Always — LightGBM is auto-calibrated
+A. Always, LightGBM is auto-calibrated
 B. Only after calibration (isotonic / Platt). Raw LightGBM outputs are often miscalibrated.
-C. Never — LightGBM doesn't output probabilities
+C. Never, LightGBM doesn't output probabilities
 D. With at least 1M training examples
 
 ---
@@ -238,7 +238,7 @@ Models the monetary value per transaction. Companion to BG/NBD.
 Cameron Davidson-Pilon's library. `pip install lifetimes`. There's also a PyMC-Marketing alternative for the Bayesian variant.
 
 ### Q8: **B. >0.80**
-Below 0.70 the model is barely better than random. >0.85 is great. Beware of >0.95 — likely data leakage.
+Below 0.70 the model is barely better than random. >0.85 is great. Beware of >0.95, likely data leakage.
 
 ### Q9: **B. Gradient-boosted trees**
 LightGBM and CatBoost dominate production churn modeling in 2026.
@@ -255,7 +255,7 @@ Propensity = who will buy. Uplift = who buys *because* of marketing. The latter 
 ### Q13: **A. Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs**
 Memorize all four. Strategist's grid.
 
-### Q14: **B. Not at all — wasted impressions**
+### Q14: **B. Not at all, wasted impressions**
 Sure Things buy without marketing. Marketing to them increases nothing except cost.
 
 ### Q15: **B. causalml (or scikit-uplift)**
@@ -273,11 +273,11 @@ Highest tier in all three dimensions: recent, frequent, high-value.
 ### Q19: **B. Elbow method + silhouette score**
 Inertia (sum of squared distances) drops as K increases; the "elbow" indicates diminishing returns. Silhouette measures cluster cohesion + separation.
 
-### Q20: **B. Wasteful — target middle deciles**
+### Q20: **B. Wasteful, target middle deciles**
 The strategist's anti-pattern correction. Top deciles convert anyway; middle deciles have the highest *incremental* marketing value.
 
 ### Q21: **B. 85% vs 11% retention**
-The activation threshold concept generalizes — every product has one, find yours.
+The activation threshold concept generalizes, every product has one, find yours.
 
 ### Q22: **B. No-code / managed-ML tools**
 The 2026 no-code stack for marketing predictive modeling.

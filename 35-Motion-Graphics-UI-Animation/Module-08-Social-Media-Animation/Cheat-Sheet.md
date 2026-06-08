@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-08-Social-Media-Animation/Che
 title: "Module 8 Cheat Sheet: Social Media Animation"
 ---
 
-# ⚡ Module 8 Cheat Sheet — Social Media Animation
+# ⚡ Module 8 Cheat Sheet, Social Media Animation
 
 ## Platform Specs Quick Reference
 
@@ -11,7 +11,7 @@ title: "Module 8 Cheat Sheet: Social Media Animation"
 |----------|-----------|-------|-----|-------------|-----------|
 | Instagram Reels | 1080×1920 | 9:16 | 30 | 90s | 15–30s |
 | Instagram Stories | 1080×1920 | 9:16 | 30 | 60s | 15s |
-| Instagram Feed (video) | 1080×1350 | 4:5 | 30 | — | 15–30s |
+| Instagram Feed (video) | 1080×1350 | 4:5 | 30 |, | 15–30s |
 | TikTok | 1080×1920 | 9:16 | 24/30 | 10min | 7–30s |
 | YouTube Shorts | 1080×1920 | 9:16 | 60 rec. | 60s | 30–60s |
 | LinkedIn | 1920×1080 | 16:9 | 30 | 10min | 30–90s |
@@ -133,7 +133,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

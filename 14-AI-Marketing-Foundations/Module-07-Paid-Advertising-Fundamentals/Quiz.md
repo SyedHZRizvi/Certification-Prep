@@ -222,7 +222,7 @@ CAPI moves conversion tracking to server-side, recovering signal lost to App Tra
 Retargeting works on warm traffic. Caveat: frequency caps matter.
 
 ### Q8: **A. Google Search Ads**
-Search captures existing demand — the user already typed their need. Best for BOFU.
+Search captures existing demand, the user already typed their need. Best for BOFU.
 
 ### Q9: **B. Problem-Agitate-Solve**
 Classic direct-response copy framework.

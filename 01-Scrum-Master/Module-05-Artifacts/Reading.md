@@ -1,6 +1,6 @@
 # Module 5: Artifacts & Commitments 📦
 
-> **Why this module matters:** Artifacts are *physical things* in Scrum. Commitments are the *promises* attached to them. The exam loves to test these mappings — they're easy points if you know them.
+> **Why this module matters:** Artifacts are *physical things* in Scrum. Commitments are the *promises* attached to them. The exam loves to test these mappings, they're easy points if you know them.
 
 ---
 
@@ -18,7 +18,7 @@ Just the items Sofia and her team can actually bake this week. Maybe 12 items. P
 
 **List 3: The Display Case** (the **Increment**)
 What's actually finished and on display. Real, working, ready-to-eat pastries.
-**Promise:** "Every pastry meets our quality standard — fresh, beautiful, labeled." (the **Definition of Done**)
+**Promise:** "Every pastry meets our quality standard, fresh, beautiful, labeled." (the **Definition of Done**)
 
 That's 3 artifacts + 3 commitments. **Scrum.**
 
@@ -28,7 +28,7 @@ That's 3 artifacts + 3 commitments. **Scrum.**
 
 > *"Scrum's artifacts represent work or value. They are designed to maximize transparency of key information."*
 
-Each artifact has a **commitment** — a "what does success look like" attached to it.
+Each artifact has a **commitment**, a "what does success look like" attached to it.
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -51,9 +51,9 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 
 ### Properties:
 
-- 📜 **Emergent** — never "complete," constantly evolving
-- 📊 **Ordered** — top items most refined and ready
-- 🎯 **Single source of truth** — no parallel lists
+- 📜 **Emergent**, never "complete," constantly evolving
+- 📊 **Ordered**, top items most refined and ready
+- 🎯 **Single source of truth**, no parallel lists
 - 👤 **Owned by the PO** (PO orders it, manages it)
 - 🤝 **Refined by the team** with PO
 
@@ -72,7 +72,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 
 ### How Items Get Ordered:
 
-- Value, risk, dependencies, learning, cost — all weighed
+- Value, risk, dependencies, learning, cost, all weighed
 - PO has final say
 - Top of backlog = "ready" (refined, small enough to do)
 - Bottom = larger, less defined (still evolving)
@@ -81,7 +81,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 **Backlog Refinement** = the act of breaking down & clarifying items.
 - Ongoing, not a formal event
 - Top items most refined
-- Items at top are "Ready" — small, clear, estimated
+- Items at top are "Ready", small, clear, estimated
 - Rule of thumb: top items should be < 1 sprint of work each
 
 ---
@@ -130,7 +130,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 
 - 🛠️ **Owned by the Developers** (yes, NOT the PO!)
 - 📈 **Updated daily** as work progresses
-- 👀 **Highly visible** — burndown chart, task board, etc.
+- 👀 **Highly visible**, burndown chart, task board, etc.
 - 🔄 **Negotiable mid-Sprint** with the PO (scope can be refined)
 
 ### What It's NOT:
@@ -152,7 +152,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 
 - 🎯 ONE goal per Sprint
 - 🌟 Created collaboratively in Sprint Planning
-- 🛡️ Provides flexibility — team can negotiate scope, but the **goal stays**
+- 🛡️ Provides flexibility, team can negotiate scope, but the **goal stays**
 - 🔥 Drives team focus and commitment
 
 ### Good Sprint Goal Examples:
@@ -199,7 +199,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 
 ### What It's NOT:
 
-- ❌ A "release" — Increments may or may not be released
+- ❌ A "release", Increments may or may not be released
 - ❌ Only the *last* version of the product
 - ❌ Documentation about the product
 
@@ -215,7 +215,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 - 📋 A **checklist** of quality criteria
 - 👥 Created by the **Developers** (or organization, if standardized)
 - 🔄 Can evolve over time (especially as quality goals raise)
-- 🛡️ **Mandatory** — work that doesn't meet DoD isn't done
+- 🛡️ **Mandatory**, work that doesn't meet DoD isn't done
 - 📤 If multiple Scrum Teams work on same product → shared DoD
 
 ### Example DoD:
@@ -236,7 +236,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 | Set by Developers (& org) | Set by PO |
 | Mostly stable | Per-item |
 
-🎯 **Exam pattern:** "DoD vs Acceptance Criteria — which is which?"
+🎯 **Exam pattern:** "DoD vs Acceptance Criteria, which is which?"
 - DoD = quality, applies to all
 - AC = functional, applies to one item
 
@@ -277,7 +277,7 @@ Each artifact has a **commitment** — a "what does success look like" attached 
 
 - 😱 **PO modifying it** unilaterally (Devs own it)
 - 😱 **Untracked side work** during Sprint
-- 😱 **No visible plan** — black box
+- 😱 **No visible plan**, black box
 
 ### Increment Anti-Patterns:
 
@@ -323,39 +323,39 @@ You now know:
 ---
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Sprint Planning's three topics — Why / What / How ([Module 4 — Events](../Module-04-Events/Reading.md))
-> - Who owns what (PO → backlog, Devs → Sprint Backlog) — [Module 3 — Roles](../Module-03-Roles/Reading.md)
+> - Sprint Planning's three topics Why / What / How ([Module 4 Events](../Module-04-Events/Reading.md))
+> - Who owns what (PO → backlog, Devs → Sprint Backlog) [Module 3 Roles](../Module-03-Roles/Reading.md)
 > - The 2020 Scrum Guide's introduction of "commitments" as a new concept ([Module 2](../Module-02-Scrum-Framework/Reading.md))
 >
 > The artifact-commitment pairing (Product Backlog→Product Goal, Sprint Backlog→Sprint Goal, Increment→DoD) is the single most-tested table in the Scrum Guide. Memorize it before going further.
 
 ---
 
-## 📊 Case Study — GE Aviation: Digital-Twin Sprint Boards (2017–2023)
+## 📊 Case Study, GE Aviation: Digital-Twin Sprint Boards (2017–2023)
 
-**Situation.** GE Aviation builds and services jet engines (CF6, CFM56, GE9X, GEnx) for Boeing 747/777/787 and Airbus A380/A350 fleets — high-stakes hardware with software, sensors, and predictive-maintenance models embedded in every engine. By 2017, GE Aviation's Digital business was building "digital twins" — software models of physical engines that ingest real-time sensor data and predict maintenance needs. The team ran on Scrum, but with a unique artifact problem: their Product Backlog had to coordinate across software releases, sensor firmware updates, ML model versions, and physical-engine certification cycles (each subject to FAA approval). Sprint Backlogs were *literally* dependent on physical hardware ground-test slots in Cincinnati.
+**Situation.** GE Aviation builds and services jet engines (CF6, CFM56, GE9X, GEnx) for Boeing 747/777/787 and Airbus A380/A350 fleets high-stakes hardware with software, sensors, and predictive-maintenance models embedded in every engine. By 2017, GE Aviation's Digital business was building "digital twins" software models of physical engines that ingest real-time sensor data and predict maintenance needs. The team ran on Scrum, but with a unique artifact problem: their Product Backlog had to coordinate across software releases, sensor firmware updates, ML model versions, and physical-engine certification cycles (each subject to FAA approval). Sprint Backlogs were *literally* dependent on physical hardware ground-test slots in Cincinnati.
 
 **Decision.** Between 2017 and 2019, the Digital Twin team built a *layered* Product Backlog visualization that ran across two large physical walls in their Cincinnati War Room and was mirrored in Azure DevOps: the **top swimlane** held the Product Goal ("predict any engine failure 30+ days before in-flight detection by 2022"), the **middle band** held the active Product Backlog with FAA-certification dependencies tagged in red, and the **bottom band** held the Increment-in-progress (the latest digital-twin version flying live on a customer's fleet). Every Sprint Backlog was constrained by: (1) FAA certification windows, (2) sensor-data refresh cadence from operating engines, (3) the model-validation queue. The Definition of Done explicitly required FAA-clearable code paths.
 
 **Outcome.** By 2020, GE Aviation had deployed digital twins on ~30,000 engines worldwide. The 30-day-prediction-window goal was met for the CFM56 fleet by Q2 2021 (announced at Paris Air Show 2021). Maintenance cost reductions for participating airlines (Delta, Lufthansa, Air France-KLM, ANA) were $250–$400M aggregate over 2021–2023 (GE Aviation 2023 Industrials Day). The artifact visualization itself became internal benchmark: GE Power and GE Healthcare adopted the same layered Product Backlog format for their own regulated-product Scrum teams.
 
-**Lesson for the exam / for practitioners.** Three takeaways. (1) The Product Backlog is *emergent* — even in a regulated industry, GE Aviation didn't lock the backlog upfront; they let it evolve with FAA cycles. (2) The Definition of Done can encode regulatory requirements — and *should*, when the product is safety-critical. (3) The artifact-commitment pairing matters operationally: when the Product Goal is "predict failures 30 days early," every backlog item is judged by *that* commitment, not by feature checklists.
+**Lesson for the exam / for practitioners.** Three takeaways. (1) The Product Backlog is *emergent* even in a regulated industry, GE Aviation didn't lock the backlog upfront; they let it evolve with FAA cycles. (2) The Definition of Done can encode regulatory requirements and *should*, when the product is safety-critical. (3) The artifact-commitment pairing matters operationally: when the Product Goal is "predict failures 30 days early," every backlog item is judged by *that* commitment, not by feature checklists.
 
 **Discussion (Socratic).**
-- Q1: GE Aviation's DoD required FAA-clearable code paths. Is that DoD too strict — is GE Aviation accidentally re-introducing Waterfall sign-offs into Scrum? Defend with a citation from the Scrum Guide on what DoD is *for*.
-- Q2: GE's Product Backlog was visualized across a physical wall *and* mirrored in Azure DevOps. What does the Scrum Guide say about backlog tooling? Could GE have used the wall alone — and what would they have lost?
+- Q1: GE Aviation's DoD required FAA-clearable code paths. Is that DoD too strict, is GE Aviation accidentally re-introducing Waterfall sign-offs into Scrum? Defend with a citation from the Scrum Guide on what DoD is *for*.
+- Q2: GE's Product Backlog was visualized across a physical wall *and* mirrored in Azure DevOps. What does the Scrum Guide say about backlog tooling? Could GE have used the wall alone, and what would they have lost?
 - Q3: GE Aviation's Product Goal ("predict any engine failure 30+ days in advance") spanned 5+ years. Is that an appropriate Product Goal, or is it actually a vision? Cite the Scrum Guide's definition of Product Goal.
 
 ---
 
 > **Where this leads.**
-> - Inside this course: [Module 6 — Done & Estimation](../Module-06-Done-Estimation/Reading.md) deep-dives the Definition of Done you've now met. [Module 8 — Scaling](../Module-08-Scaling/Reading.md) revisits multi-team artifact sharing (one Product Backlog across multiple teams).
-> - Cross-course: `02-PMP` Module 4 covers Scope Management (WBS, scope baseline) — the predictive counterpart to Product Backlog management. `02-PMP` Module 8 covers Quality Management — the predictive counterpart to Definition of Done.
-> - Practice: Practice-Exam-1 has ~6 artifact questions; Practice-Exam-2 has ~10. Artifacts and their commitments are an exam goldmine — they're concrete and unambiguous.
+> - Inside this course: [Module 6 Done & Estimation](../Module-06-Done-Estimation/Reading.md) deep-dives the Definition of Done you've now met. [Module 8 Scaling](../Module-08-Scaling/Reading.md) revisits multi-team artifact sharing (one Product Backlog across multiple teams).
+> - Cross-course: `02-PMP` Module 4 covers Scope Management (WBS, scope baseline) the predictive counterpart to Product Backlog management. `02-PMP` Module 8 covers Quality Management the predictive counterpart to Definition of Done.
+> - Practice: Practice-Exam-1 has ~6 artifact questions; Practice-Exam-2 has ~10. Artifacts and their commitments are an exam goldmine, they're concrete and unambiguous.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Multiple backlogs anti-pattern.** A 60-person Scrum org has one Product Owner and three teams working on the same product, but each team has built its own backlog of "their" work. What's wrong with this picture? What organizational pressure typically produces this anti-pattern? Cite the Scrum Guide.
 2. **Sprint Backlog ownership.** The Scrum Guide says Developers own the Sprint Backlog. But the Product Owner often wants to update it mid-Sprint to add a "small" new item. Walk through the SM's coaching response. When is mid-Sprint scope-add OK, and when is it ScrumBut?
@@ -375,7 +375,7 @@ You now know:
 | Product Goal (new artifact commitment in 2020) | Sutherland & Schwaber | 2020 | Scrum Guide 2020 |
 | Definition of Done | Schwaber | 2002 | *Agile Software Development with Scrum* (Schwaber & Beedle, Prentice Hall) |
 | Acceptance Criteria | Cohn | 2004 | *User Stories Applied* (Addison-Wesley); also XP tradition (Beck) |
-| INVEST criteria for user stories | Wake | 2003 | *"INVEST in good stories, and SMART tasks"* — Bill Wake's blog post, xp123.com |
+| INVEST criteria for user stories | Wake | 2003 | *"INVEST in good stories, and SMART tasks"*, Bill Wake's blog post, xp123.com |
 | User-story format ("As a … I want … so that …") | Cohn | 2004 | *User Stories Applied* (Addison-Wesley); originated in XP (Beck 1999) |
 | Backlog Refinement | Sutherland & Schwaber | 2020 | Scrum Guide 2020 |
 | Cone of Uncertainty (referenced indirectly via "emergent" backlog) | Boehm; later McConnell | 1981; 1996 | *Software Engineering Economics* (Boehm, Prentice Hall, 1981); *Rapid Development* (McConnell, Microsoft Press, 1996) |
@@ -384,4 +384,4 @@ You now know:
 | MoSCoW prioritization (referenced as ordering technique, *not* in Scrum) | Clegg & Barker | 1994 | *Fast-Track A New Approach to Drug Development* (Avebury); later popularized by DSDM Consortium |
 | Kano model (referenced as ordering technique, *not* in Scrum) | Kano | 1984 | *"Attractive quality and must-be quality"*, *Journal of the Japanese Society for Quality Control* |
 
-**Verification note.** The Sprint Backlog's "3 parts" (Sprint Goal + selected PBIs + actionable plan) is a 2020 Scrum Guide change — pre-2020, the Sprint Backlog was defined as just the PBIs + plan, with the Sprint Goal as a separate concept. The exam tests this explicitly. INVEST is from Bill Wake's blog post and is *not* in the Scrum Guide — the Guide is intentionally silent on user-story criteria.
+**Verification note.** The Sprint Backlog's "3 parts" (Sprint Goal + selected PBIs + actionable plan) is a 2020 Scrum Guide change pre-2020, the Sprint Backlog was defined as just the PBIs + plan, with the Sprint Goal as a separate concept. The exam tests this explicitly. INVEST is from Bill Wake's blog post and is *not* in the Scrum Guide the Guide is intentionally silent on user-story criteria.

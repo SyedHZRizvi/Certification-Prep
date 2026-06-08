@@ -7,7 +7,7 @@ title: "Module 9: Rendering & Output"
 
 ## The Final Translation
 
-Every model, material, rig, animation, and simulation in a Blender project is invisible until the render. The renderer is the final translator — it takes the mathematical description of a 3D scene and produces a 2D image that a human can watch on screen. That translation is expensive. A single frame of a Pixar feature film might take 16–100+ CPU hours to render on a farm of thousands of machines. A 10-second Blender indie short at 1920×1080 24fps takes 240 frames — and each frame might take 30 seconds on an RTX 3080 (2 hours total) or 4 minutes on a CPU (16 hours total).
+Every model, material, rig, animation, and simulation in a Blender project is invisible until the render. The renderer is the final translator it takes the mathematical description of a 3D scene and produces a 2D image that a human can watch on screen. That translation is expensive. A single frame of a Pixar feature film might take 16–100+ CPU hours to render on a farm of thousands of machines. A 10-second Blender indie short at 1920×1080 24fps takes 240 frames and each frame might take 30 seconds on an RTX 3080 (2 hours total) or 4 minutes on a CPU (16 hours total).
 
 Knowing which renderer to use, how to configure it, and how to structure the output for compositing is what separates a finisher from a non-finisher.
 
@@ -57,7 +57,7 @@ Knowing which renderer to use, how to configure it, and how to structure the out
 | **Caustics** | Yes (enable in Render → Caustics) | No |
 | **Volumetrics** | Full volumetric path tracing | Screen-space approximation |
 
-> 🎯 **Exam tip:** In Blender 4.x, there is a third renderer option: **Workbench**. Workbench is the engine that powers Solid mode in the viewport — it renders very quickly but has no material support (only flat colors and normals). Workbench is used for animatics, previz, and reference renders, not final output. The exam may ask to identify all three render engines.
+> 🎯 **Exam tip:** In Blender 4.x, there is a third renderer option: **Workbench**. Workbench is the engine that powers Solid mode in the viewport, it renders very quickly but has no material support (only flat colors and normals). Workbench is used for animatics, previz, and reference renders, not final output. The exam may ask to identify all three render engines.
 
 ---
 
@@ -95,11 +95,11 @@ Path-traced rendering (Cycles) produces noise at low sample counts. **Denoising*
 | Real-time preview (any GPU) | None (preview quality) | 32–64 | Noise acceptable for playback preview |
 | Architectural viz | OIDN or OptiX | 1024–4096 | Very high quality; long render time acceptable |
 
-**Temporal denoising (Blender 4.x):** OIDN in Blender 4.x can perform temporal denoising — using information from neighboring frames to stabilize the denoised result. This prevents the "shimmering" artifact that can occur when static scenes have slightly different random noise patterns per frame.
+**Temporal denoising (Blender 4.x):** OIDN in Blender 4.x can perform temporal denoising, using information from neighboring frames to stabilize the denoised result. This prevents the "shimmering" artifact that can occur when static scenes have slightly different random noise patterns per frame.
 
 Enable temporal denoising: Render Properties → Sampling → Denoise → check **Temporal** (requires Albedo and Normal passes to be enabled in View Layer).
 
-> ⚠️ **Gotcha — Fireflies (Bright Outlier Pixels):** Bright single-pixel "firefly" artifacts in Cycles renders are caused by high-energy light paths hitting direct emission materials at oblique angles. The fixes in order of preference: (1) Enable **Clamp Indirect** in Render → Light Paths (set to 10 — clamps extreme indirect bounce values); (2) Reduce the Emission Strength on any emissive materials; (3) Enable **Caustics → Filter Glossy** (set to 1.0 — smears caustic hotspots). Never increase samples as a primary fix for fireflies — clamping is far more efficient.
+> ⚠️ **Gotcha Fireflies (Bright Outlier Pixels):** Bright single-pixel "firefly" artifacts in Cycles renders are caused by high-energy light paths hitting direct emission materials at oblique angles. The fixes in order of preference: (1) Enable **Clamp Indirect** in Render → Light Paths (set to 10 clamps extreme indirect bounce values); (2) Reduce the Emission Strength on any emissive materials; (3) Enable **Caustics → Filter Glossy** (set to 1.0 smears caustic hotspots). Never increase samples as a primary fix for fireflies clamping is far more efficient.
 
 ---
 
@@ -128,7 +128,7 @@ Enable temporal denoising: Render Properties → Sampling → Denoise → check 
 - All enabled passes are written to a single .exr file per frame
 - Open in Blender's Compositor with an Image node → all passes accessible
 
-> 🚨 **Trap:** Always render to **PNG sequences or EXR sequences** — never directly to MP4 for production work. If the render crashes on frame 180 of 240, PNG sequences let you resume from frame 180. MP4 must render from the beginning.
+> 🚨 **Trap:** Always render to **PNG sequences or EXR sequences**, never directly to MP4 for production work. If the render crashes on frame 180 of 240, PNG sequences let you resume from frame 180. MP4 must render from the beginning.
 
 ---
 
@@ -177,7 +177,7 @@ Is this the final deliverable to a client or viewer?
 | VP9 | FFmpeg → VP9, CRF 31 | Small | High | WebM format for web |
 | ProRes 4444 | FFmpeg → ProRes | Very large | Lossless | Broadcast delivery, color-grade pipeline |
 
-> ⚠️ **Gotcha — Always Render Sequences, Not Video:** Rendering directly to MP4 in Blender is unreliable because MP4 is a streaming container format — if the render crashes at frame 180, the partial file is unrecoverable. PNG sequences store each frame as a separate file, so a crash at frame 180 means only frame 181+ need re-rendering. Encode the final PNG sequence to MP4 in the Video Sequence Editor (VSE) after the full render completes.
+> ⚠️ **Gotcha Always Render Sequences, Not Video:** Rendering directly to MP4 in Blender is unreliable because MP4 is a streaming container format if the render crashes at frame 180, the partial file is unrecoverable. PNG sequences store each frame as a separate file, so a crash at frame 180 means only frame 181+ need re-rendering. Encode the final PNG sequence to MP4 in the Video Sequence Editor (VSE) after the full render completes.
 
 ---
 
@@ -206,21 +206,21 @@ The **Compositor** (Compositing workspace) is a node-based post-processing edito
 
 ## 9.5b Compositor Workflow: The *Sprite Fright* Post Pipeline
 
-The *Sprite Fright* compositing pipeline (documented in the Blender Institute production blog) used Blender's Compositor exclusively — no After Effects, no Nuke. The full node chain:
+The *Sprite Fright* compositing pipeline (documented in the Blender Institute production blog) used Blender's Compositor exclusively, no After Effects, no Nuke. The full node chain:
 
-**Layer 1 — Character renders (Cycles, 512 samples, OptiX denoising):**
+**Layer 1, Character renders (Cycles, 512 samples, OptiX denoising):**
 - Render Layers (character view layer) → Denoise (with Albedo + Normal) → Color Balance (slight warm midtone) → Image output
 
-**Layer 2 — Background renders (Cycles, 64 samples, faster):**
+**Layer 2, Background renders (Cycles, 64 samples, faster):**
 - Render Layers (background view layer) → Denoise → Alpha Over (below character)
 
-**Layer 3 — Compositing:**
+**Layer 3, Compositing:**
 - AO pass Multiply over Diffuse pass (deepens contact shadows)
 - Cryptomatte selection → edge softening with Dilate/Erode → Blur to soften character edge against background
 - Glare node (Streak mode, 0.2 strength) on Emission-driven practical lights (mushroom glow)
 - Final Color Balance → Composite output
 
-**The key insight:** Using **separate View Layers** for characters and backgrounds — rendered at different sample counts — cut total render time by 40% compared to rendering everything in one layer at the highest sample count. The compositor blended the layers seamlessly.
+**The key insight:** Using **separate View Layers** for characters and backgrounds rendered at different sample counts cut total render time by 40% compared to rendering everything in one layer at the highest sample count. The compositor blended the layers seamlessly.
 
 > 🎯 **What the exam tests:** View Layers are the primary tool for multi-pass, multi-quality rendering in Blender. Know that each View Layer can have its own: (1) object visibility (which objects render in this layer), (2) sample count (via Render Properties → Sampling → override per-layer), and (3) enabled render passes (some layers need Cryptomatte; others don't). This separation is core to any production render pipeline.
 
@@ -234,8 +234,8 @@ The *Sprite Fright* compositing pipeline (documented in the Blender Institute pr
 | Average shot length | ~5.3 seconds |
 | Total film runtime | 13 minutes |
 | Render engine | Cycles (all shots) |
-| Sample count — characters | 256–512 |
-| Sample count — backgrounds | 64–128 |
+| Sample count, characters | 256–512 |
+| Sample count, backgrounds | 64–128 |
 | Denoising | OptiX (NVIDIA RTX) |
 | Render farm | 500+ CPU cores + 50+ RTX GPUs |
 | Average frame time (GPU) | 2–8 minutes |
@@ -258,7 +258,7 @@ The Blender Institute's *Sprite Fright* (2021) used Cycles exclusively for final
 - **Output:** EXR MultiLayer → Composited in Blender's Compositor → PNG sequences → final H.265 encode
 - **Resolution:** 2048×858 (2K DCI scope aspect ratio, 2.39:1)
 
-**Key insight from production:** The team used **View Layer-level** optimization — different objects in different view layers with their own render settings. Background elements (trees, rocks) rendered at lower sample counts (64 samples) than foreground characters (512 samples). Composite blended them together. This "multi-pass, multi-sample" approach cut total render time by approximately 40%.
+**Key insight from production:** The team used **View Layer-level** optimization, different objects in different view layers with their own render settings. Background elements (trees, rocks) rendered at lower sample counts (64 samples) than foreground characters (512 samples). Composite blended them together. This "multi-pass, multi-sample" approach cut total render time by approximately 40%.
 
 ---
 
@@ -299,11 +299,11 @@ Blender's color management system converts between different color spaces throug
 
 **The Look setting:** Applied on top of View Transform for additional creative grading:
 - **None:** Clean transform with no additional grade
-- **High Contrast:** Stronger darks, brighter whites — cinematic
+- **High Contrast:** Stronger darks, brighter whites, cinematic
 - **Low Contrast:** Flatter, softer image
 - **Very High Contrast:** Strong filmic punch
 
-> ⚠️ **Gotcha — AgX vs. Filmic in Blender 4.x:** Blender 4.0 introduced AgX as the new recommended View Transform, replacing Filmic as the default in newer builds. AgX handles out-of-gamut colors (very saturated lights) more gracefully than Filmic. However, if your project has locked-off color grades from earlier Blender 3.x renders using Filmic, switching to AgX mid-project will change the color appearance. Do not switch View Transforms mid-production.
+> ⚠️ **Gotcha, AgX vs. Filmic in Blender 4.x:** Blender 4.0 introduced AgX as the new recommended View Transform, replacing Filmic as the default in newer builds. AgX handles out-of-gamut colors (very saturated lights) more gracefully than Filmic. However, if your project has locked-off color grades from earlier Blender 3.x renders using Filmic, switching to AgX mid-project will change the color appearance. Do not switch View Transforms mid-production.
 
 ---
 
@@ -343,7 +343,7 @@ Blender's color management system converts between different color spaces throug
 
 ## 9.9 Cryptomatte: Per-Object Masking in Compositing
 
-**Cryptomatte** is a render pass system that generates per-object or per-material ID masks — without any manual matte painting. In post-production (compositing), Cryptomatte allows isolating any object in the scene and applying color correction, blurring, or compositing effects independently.
+**Cryptomatte** is a render pass system that generates per-object or per-material ID masks, without any manual matte painting. In post-production (compositing), Cryptomatte allows isolating any object in the scene and applying color correction, blurring, or compositing effects independently.
 
 **Enabling Cryptomatte:**
 1. View Layer Properties → Passes → Cryptomatte
@@ -358,32 +358,32 @@ Blender's color management system converts between different color spaces throug
 4. The Cryptomatte node outputs a black-and-white mask for that character
 5. Use the mask to drive any compositing effect (Color Balance, Blur, etc.) applied only to the character
 
-**Production use case:** In *Sprite Fright*, Cryptomatte was used to apply per-character color grade adjustments — each character had a slightly different tonal treatment (warmer for the human protagonist, cooler for the alien sprites) applied in the Compositor using Cryptomatte masks rather than re-rendering with different lighting.
+**Production use case:** In *Sprite Fright*, Cryptomatte was used to apply per-character color grade adjustments, each character had a slightly different tonal treatment (warmer for the human protagonist, cooler for the alien sprites) applied in the Compositor using Cryptomatte masks rather than re-rendering with different lighting.
 
-> 🎯 **What the exam tests:** Cryptomatte is tested as a compositing pass — not just a render setting. Know: (1) enabled in View Layer → Passes; (2) accessed in Compositor via Cryptomatte node; (3) levels = how many overlapping objects can be isolated (level 2 = 4 objects per pixel, level 3 = 8 objects per pixel); (4) works with EXR output only (not PNG).
+> 🎯 **What the exam tests:** Cryptomatte is tested as a compositing pass, not just a render setting. Know: (1) enabled in View Layer → Passes; (2) accessed in Compositor via Cryptomatte node; (3) levels = how many overlapping objects can be isolated (level 2 = 4 objects per pixel, level 3 = 8 objects per pixel); (4) works with EXR output only (not PNG).
 
 ---
 
 ## 📚 Next Steps
 
-Proceed to [Module 10: Short Film Project](../Module-10-Short-Project/Reading.md) — now render your own complete short.
+Proceed to [Module 10: Short Film Project](../Module-10-Short-Project/Reading.md), now render your own complete short.
 
 ---
 
 ## 📖 Further Reading
 
-- 📖 **Blender Manual — Cycles Render Engine** (docs.blender.org)
-- 📖 **Blender Manual — EEVEE** (docs.blender.org)
-- 📖 **Blender Institute — *Sprite Fright* Technical Production Blog** (blender.org/about/projects/)
+- 📖 **Blender Manual, Cycles Render Engine** (docs.blender.org)
+- 📖 **Blender Manual, EEVEE** (docs.blender.org)
+- 📖 **Blender Institute, *Sprite Fright* Technical Production Blog** (blender.org/about/projects/)
 - 📖 **Intel Open Image Denoise documentation** (openimagedenoise.github.io)
-- 📖 **Blender Manual — Color Management** (docs.blender.org) — Filmic, AgX, and OCIO pipeline documentation
+- 📖 **Blender Manual Color Management** (docs.blender.org) Filmic, AgX, and OCIO pipeline documentation
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

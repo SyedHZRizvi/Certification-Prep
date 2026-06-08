@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -293,7 +293,7 @@
 **A:** Public = all in AWS. Private = your own DC (or GovCloud). Hybrid = on-prem + public cloud connected (e.g., Outposts, Direct Connect).
 
 **Q:** What is AWS Outposts?
-**A:** Physical AWS hardware racks installed in YOUR data center — hybrid deployment with the same AWS APIs.
+**A:** Physical AWS hardware racks installed in YOUR data center, hybrid deployment with the same AWS APIs.
 
 **Q:** What is AWS Wavelength?
 **A:** AWS compute embedded INSIDE 5G carrier networks for single-digit-millisecond mobile latency.
@@ -302,7 +302,7 @@
 **A:** Extensions of an AWS Region close to large metropolitan areas (LA, Phoenix, Boston) for low-latency apps.
 
 **Q:** What is AWS GovCloud?
-**A:** Isolated AWS Regions for US government workloads — supports FedRAMP High and ITAR. Requires a separate AWS account / approval.
+**A:** Isolated AWS Regions for US government workloads, supports FedRAMP High and ITAR. Requires a separate AWS account / approval.
 
 **Q:** What are the 3 types of AWS Free Tier?
 **A:** (1) 12-Months Free, (2) Always Free (forever within limits), (3) Trials (30–60 days).
@@ -313,7 +313,7 @@
 **Q:** What's the difference between scalability and elasticity?
 **A:** Scalability = capacity to handle growth (architectural). Elasticity = automatic scaling up/down with demand (dynamic).
 
-**Q:** Fault tolerance vs high availability — what's the difference?
+**Q:** Fault tolerance vs high availability, what's the difference?
 **A:** HA = system recovers quickly from failure. Fault tolerance = system continues correctly *while* components fail (stronger).
 
 ---
@@ -336,19 +336,19 @@
 **A:** 15 minutes (hard limit).
 
 **Q:** Does a stopped EC2 instance still incur charges?
-**A:** Yes — for attached EBS volumes. Compute charges stop. Terminate to fully stop all charges.
+**A:** Yes, for attached EBS volumes. Compute charges stop. Terminate to fully stop all charges.
 
 **Q:** What's the difference between ECS, EKS, and Fargate?
 **A:** ECS = AWS-native container orchestrator. EKS = managed Kubernetes. Fargate = serverless launch type for ECS/EKS (no EC2 hosts to manage).
 
 **Q:** What is Amazon ECR?
-**A:** Elastic Container Registry — managed Docker image registry for storing container images.
+**A:** Elastic Container Registry, managed Docker image registry for storing container images.
 
 **Q:** What is AWS Elastic Beanstalk?
-**A:** PaaS where you upload code and AWS handles EC2, load balancing, scaling, and monitoring. The Beanstalk service is free — you only pay for the underlying resources.
+**A:** PaaS where you upload code and AWS handles EC2, load balancing, scaling, and monitoring. The Beanstalk service is free, you only pay for the underlying resources.
 
 **Q:** What is AWS Lightsail?
-**A:** Bundled VPS with predictable monthly billing — great for simple apps like WordPress.
+**A:** Bundled VPS with predictable monthly billing, great for simple apps like WordPress.
 
 **Q:** What is AWS Batch?
 **A:** Managed batch job runner. Queues jobs and provisions optimal EC2/Fargate (often Spot) to run them.
@@ -370,7 +370,7 @@
 **A:** 11 nines (99.999999999%). Availability is 99.99%.
 
 **Q:** When would you pick S3 One Zone-IA over Standard-IA?
-**A:** When the data is easily recreatable and you want ~20% cost savings — accepting that loss of one AZ would destroy the data.
+**A:** When the data is easily recreatable and you want ~20% cost savings, accepting that loss of one AZ would destroy the data.
 
 **Q:** What's S3 Glacier Deep Archive's typical retrieval time?
 **A:** 12 to 48 hours. It's the cheapest tier, with 180-day minimum storage.
@@ -431,7 +431,7 @@
 **A:** CloudFront caches HTTP content at the edge. Global Accelerator gives you 2 static anycast IPs and routes any TCP/UDP traffic over the AWS backbone.
 
 **Q:** What is a VPC Gateway Endpoint used for?
-**A:** Private access to S3 and DynamoDB from within a VPC — no internet traversal. Free; uses route tables.
+**A:** Private access to S3 and DynamoDB from within a VPC, no internet traversal. Free; uses route tables.
 
 **Q:** What is AWS PrivateLink (Interface Endpoint)?
 **A:** Private access (via ENI with private IP) to most AWS services and partner services without using the internet.
@@ -459,7 +459,7 @@
 **A:** A serverless, fully managed key-value/document NoSQL database with single-digit millisecond latency at any scale.
 
 **Q:** What is DAX?
-**A:** DynamoDB Accelerator — an in-memory cache providing microsecond reads for DynamoDB.
+**A:** DynamoDB Accelerator, an in-memory cache providing microsecond reads for DynamoDB.
 
 **Q:** What is Amazon ElastiCache?
 **A:** Managed Redis or Memcached for sub-millisecond in-memory caching.
@@ -486,7 +486,7 @@
 **A:** Amazon Timestream.
 
 **Q:** What is Amazon QLDB?
-**A:** Quantum Ledger Database — a centralized, immutable, cryptographically verifiable ledger for audit/supply chain. (Not blockchain.)
+**A:** Quantum Ledger Database, a centralized, immutable, cryptographically verifiable ledger for audit/supply chain. (Not blockchain.)
 
 ---
 
@@ -499,19 +499,19 @@
 **A:** The customer. AWS handles the hypervisor/hardware below.
 
 **Q:** Who patches the OS underlying RDS, Lambda, or Fargate?
-**A:** AWS — these are managed services (PaaS / FaaS).
+**A:** AWS, these are managed services (PaaS / FaaS).
 
 **Q:** How are IAM Users, Groups, Roles, and Policies different?
 **A:** User = long-lived identity. Group = bucket of users. Role = temporary credentials assumed by services or users. Policy = JSON document defining permissions.
 
 **Q:** Why use IAM Roles instead of access keys on EC2?
-**A:** Roles deliver temporary credentials via the instance metadata service — no long-lived keys to leak or rotate.
+**A:** Roles deliver temporary credentials via the instance metadata service, no long-lived keys to leak or rotate.
 
 **Q:** In IAM policy evaluation, what wins: Allow or Deny?
 **A:** Explicit Deny always wins over any Allow.
 
 **Q:** Should you use the root user for daily admin tasks?
-**A:** No — protect root with MFA and use it only for a small set of account-level tasks (e.g., closing the account, billing). Use IAM Admin users / Identity Center for daily work.
+**A:** No, protect root with MFA and use it only for a small set of account-level tasks (e.g., closing the account, billing). Use IAM Admin users / Identity Center for daily work.
 
 **Q:** What does AWS Organizations + SCPs do?
 **A:** Manages multiple AWS accounts as one org, with consolidated billing, OUs, and Service Control Policies as guardrails on what accounts/OUs are ALLOWED to do.
@@ -532,7 +532,7 @@
 **A:** 24/7 access to the DDoS Response Team (DRT), enhanced attack diagnostics, and cost protection (refunds for scaling/data-transfer charges incurred during attacks). ~$3,000/month.
 
 **Q:** What does GuardDuty do?
-**A:** Intelligent threat detection — analyzes CloudTrail, VPC Flow Logs, DNS logs, and EKS audit logs for anomalies (e.g., crypto-mining, port scans).
+**A:** Intelligent threat detection, analyzes CloudTrail, VPC Flow Logs, DNS logs, and EKS audit logs for anomalies (e.g., crypto-mining, port scans).
 
 **Q:** What does Amazon Macie do?
 **A:** Discovers and classifies sensitive data (PII, credit cards, SSNs) inside S3 buckets using machine learning.
@@ -581,7 +581,7 @@
 **A:** AWS Cost & Usage Report (CUR), delivered to S3 in CSV/Parquet.
 
 **Q:** Do AWS Budgets prevent or alert?
-**A:** Alert — Budgets send notifications when spend/usage crosses thresholds. They do NOT block spending automatically.
+**A:** Alert, Budgets send notifications when spend/usage crosses thresholds. They do NOT block spending automatically.
 
 **Q:** What's the data transfer rule of thumb?
 **A:** Data IN to AWS is generally FREE. Data OUT to the internet and cross-AZ/Region transfer costs money.
@@ -598,7 +598,7 @@
 **Q:** What is AWS Health Dashboard (Your Account Health / Personal Health Dashboard)?
 **A:** A view of events affecting YOUR specific resources (e.g., EC2 retirement notices, scheduled maintenance).
 
-**Q:** Which AWS services are FREE — you only pay for resources they create?
+**Q:** Which AWS services are FREE, you only pay for resources they create?
 **A:** IAM, VPC, CloudFormation, Elastic Beanstalk, AWS Organizations, Auto Scaling.
 
 **Q:** What is AWS Cost Allocation Tags?
@@ -621,10 +621,10 @@
 **A:** Rehost, Replatform, Repurchase, Refactor, Retire, Retain.
 
 **Q:** What's a Rehost migration?
-**A:** Lift-and-shift — move a VM to EC2 with no code changes. Lowest effort.
+**A:** Lift-and-shift, move a VM to EC2 with no code changes. Lowest effort.
 
 **Q:** What's a Replatform migration?
-**A:** Lift, tinker, and shift — make minor cloud optimizations (e.g., move a self-managed MySQL on EC2 to Amazon RDS Aurora).
+**A:** Lift, tinker, and shift, make minor cloud optimizations (e.g., move a self-managed MySQL on EC2 to Amazon RDS Aurora).
 
 **Q:** What's a Repurchase migration?
 **A:** Switch to a different product (e.g., on-prem CRM → Salesforce SaaS).
@@ -633,7 +633,7 @@
 **A:** Re-architect using cloud-native services (e.g., monolith → Lambda + DynamoDB + API Gateway). Highest effort, highest value.
 
 **Q:** What's a Retire migration strategy?
-**A:** Decommission — you don't need this app anymore, shut it down.
+**A:** Decommission, you don't need this app anymore, shut it down.
 
 **Q:** What's a Retain migration strategy?
 **A:** Keep on-prem for now and revisit later (often due to compliance or low value).
@@ -654,7 +654,7 @@
 **A:** A paid offering where AWS OPERATES your AWS account for you (Enterprise-tier).
 
 **Q:** What's the next logical AWS certification after Cloud Practitioner?
-**A:** Solutions Architect Associate (SAA-C03) — the most popular next step.
+**A:** Solutions Architect Associate (SAA-C03), the most popular next step.
 
 ---
 
@@ -662,7 +662,7 @@
 
 1. Drill flashcards daily (10–20 minutes); don't just re-read
 2. Take the Quizzes at the end of each module before moving on
-3. The Shared Responsibility Model and Support Plans each appear 3+ times — over-learn them
+3. The Shared Responsibility Model and Support Plans each appear 3+ times, over-learn them
 4. Use the AWS Free Tier to *touch* the services (4 hours of clicking beats 4 hours of reading)
 5. Take the Final Mock Exam the day before the real exam, not the day of
 
@@ -670,8 +670,8 @@
 
 - Read the Cheat-Sheet for each module the night before
 - Sleep 8 hours
-- 65 questions in 90 minutes = ~80 seconds each — pace yourself
-- "BEST", "MOST", "LEAST" change the answer — underline them
+- 65 questions in 90 minutes = ~80 seconds each, pace yourself
+- "BEST", "MOST", "LEAST" change the answer, underline them
 - Eliminate wrong answers first, then pick between the remaining 2
 - Flag-and-move-on if stuck > 30 seconds
 - Trust your first instinct

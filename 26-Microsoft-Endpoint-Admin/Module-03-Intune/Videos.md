@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MDM vs MAM — When to Use Each</p>
+      <p class="vg-title">MDM vs MAM, When to Use Each</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 22 min · The core distinction</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Intune Plan 1 vs Plan 2 vs Suite — What You Pay For</p>
+      <p class="vg-title">Intune Plan 1 vs Plan 2 vs Suite, What You Pay For</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 18 min · The license matrix</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Settings Catalog — The Modern Configuration Surface</p>
+      <p class="vg-title">Settings Catalog, The Modern Configuration Surface</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 20 min · The default in 2024+</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Intune for Linux (Ubuntu LTS) — What's Actually Supported</p>
+      <p class="vg-title">Intune for Linux (Ubuntu LTS), What's Actually Supported</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 14 min · The narrow Linux story</span>
     </div>
@@ -134,10 +134,10 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Deep, exam-focused. |
-| **Microsoft Mechanics** | Official MS — best for new feature rollouts. |
+| **Microsoft Mechanics** | Official MS, best for new feature rollouts. |
 | **Andy Malone MVP** | Practical MD-102 prep. |
 | **Peter van der Woude** | Detailed Intune blog + video archive. |
-| **Christiaan Brinkhoff** | Microsoft engineering — authoritative. |
+| **Christiaan Brinkhoff** | Microsoft engineering, authoritative. |
 | **Cloud Architects** | Real-world Intune patterns. |
 
 ---

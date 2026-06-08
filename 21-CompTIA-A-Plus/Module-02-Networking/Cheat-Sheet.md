@@ -156,7 +156,7 @@ Mnemonic: **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way (bo
 
 1. Recite the top 10 ports? ___
 2. APIPA address range? ___
-3. Cat 6 vs Cat 6a — what's the practical difference? ___
+3. Cat 6 vs Cat 6a, what's the practical difference? ___
 4. OSI layer of a switch? Of a router? ___
 5. Why disable Telnet? ___
 

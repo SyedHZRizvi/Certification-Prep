@@ -1,11 +1,11 @@
 # Module 6: Email Marketing & AI Personalization 📧
 
-> **Why this module matters:** Email is the channel marketers under-invest in and over-deliver from. The DMA's annual studies put email ROI at $36–$42 for every $1 spent — the highest in marketing. Add 2026 AI personalization and you have the channel most likely to outperform any other on your résumé.
+> **Why this module matters:** Email is the channel marketers under-invest in and over-deliver from. The DMA's annual studies put email ROI at $36–$42 for every $1 spent, the highest in marketing. Add 2026 AI personalization and you have the channel most likely to outperform any other on your résumé.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 — The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) — POESM (email = owned), funnel basics
-> - [Module 2 — AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) — prompting structure for AI-drafting emails
-> - Comfort signing up for a free ESP account (Mailchimp, Beehiiv, or ConvertKit/Kit) — the tutorial sections benefit from a live account
+> - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM (email = owned), funnel basics
+> - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) prompting structure for AI-drafting emails
+> - Comfort signing up for a free ESP account (Mailchimp, Beehiiv, or ConvertKit/Kit), the tutorial sections benefit from a live account
 >
 > You do not need prior email-marketing background. If you've never set up SPF/DKIM/DMARC, the reading will explain the role each plays without requiring you to do it for a real domain in this session.
 
@@ -13,7 +13,7 @@
 
 ## 📬 A Story: How Morning Brew Built a $75 Million Business From a Free Email
 
-In 2015, a 21-year-old University of Michigan student named **Alex Lieberman** started a free email newsletter called **Morning Brew** — a snappy daily summary of business news, written for college students who found the Wall Street Journal stuffy.
+In 2015, a 21-year-old University of Michigan student named **Alex Lieberman** started a free email newsletter called **Morning Brew**, a snappy daily summary of business news, written for college students who found the Wall Street Journal stuffy.
 
 Five years later, Morning Brew had **2.5 million subscribers** and was acquired by Insider Inc. for a reported **$75 million** (Axios, October 2020). They never spent significant money on paid ads. They never built a sophisticated app. They didn't have a complicated stack.
 
@@ -27,7 +27,7 @@ Email is the channel where AI personalization, careful list hygiene, deliverabil
 
 ## 📊 Why Email's ROI Stays the Highest
 
-The **Data & Marketing Association (DMA)** publishes an annual *Marketer Email Tracker*. The widely-cited number — **$36 ROI per $1 spent** — has shown up consistently across DMA, Litmus, and HubSpot studies for the past decade.
+The **Data & Marketing Association (DMA)** publishes an annual *Marketer Email Tracker*. The widely-cited number **$36 ROI per $1 spent** has shown up consistently across DMA, Litmus, and HubSpot studies for the past decade.
 
 Reasons email outperforms most channels:
 
@@ -35,7 +35,7 @@ Reasons email outperforms most channels:
 2. **High intent.** Subscribers opted in.
 3. **Cheap distribution.** Sending a million emails costs cents-per-thousand, not dollars-per-thousand.
 4. **Easy to personalize.** Modern ESPs make dynamic content trivial.
-5. **Measurable.** Open, click, conversion, revenue per email — all native.
+5. **Measurable.** Open, click, conversion, revenue per email, all native.
 
 🎯 **MEMORIZE THIS.** The DMA $36-per-$1-ROI stat appears on essentially every HubSpot, Google, and Meta exam in some form.
 
@@ -44,7 +44,7 @@ Reasons email outperforms most channels:
 ## 🧱 Email Marketing 101: The Five Foundations
 
 ### 1. List Building (Permission, Not Purchase)
-- Never buy lists — illegal under CAN-SPAM, GDPR, and most local laws.
+- Never buy lists, illegal under CAN-SPAM, GDPR, and most local laws.
 - Use **opt-in forms** with clear value propositions.
 - **Double opt-in** (confirmation email after signup) reduces spam and improves deliverability.
 - Lead magnets (PDF guide, free template, discount, checklist) are the standard exchange.
@@ -60,11 +60,11 @@ Sending one email to your whole list = poor performance. **Segment by:**
 ### 3. Deliverability
 The difference between "I sent it" and "they received it in inbox" is **deliverability**. Three load-bearing pieces:
 
-- **Authentication**: **SPF**, **DKIM**, **DMARC** — three DNS records that prove you are who you say. *Mandatory* for bulk senders to Gmail and Yahoo since February 2024.
+- **Authentication**: **SPF**, **DKIM**, **DMARC**, three DNS records that prove you are who you say. *Mandatory* for bulk senders to Gmail and Yahoo since February 2024.
 - **List hygiene**: Remove hard-bounces, inactive subscribers, and complainers. A "dirty" list tanks sender reputation.
 - **Engagement signals**: ISPs (Gmail, Outlook, Apple Mail) watch open + click rates as inbox/spam signals.
 
-🚨 **2024 Gmail/Yahoo enforcement (effective February 1, 2024):** Bulk senders (>5,000 emails/day to Gmail) must have SPF, DKIM, DMARC, one-click unsubscribe, and a complaint rate below 0.3%. This is a hard cutoff — not advisory. Marketers who didn't implement it in late 2023 saw deliverability collapse.
+🚨 **2024 Gmail/Yahoo enforcement (effective February 1, 2024):** Bulk senders (>5,000 emails/day to Gmail) must have SPF, DKIM, DMARC, one-click unsubscribe, and a complaint rate below 0.3%. This is a hard cutoff, not advisory. Marketers who didn't implement it in late 2023 saw deliverability collapse.
 
 ### 4. Sending Cadence
 Too rare = forgotten. Too frequent = unsubscribed.
@@ -117,7 +117,7 @@ Beyond `{{ first_name }}`, modern personalization can swap entire blocks based o
 - Location + weather + time
 - Lifecycle stage
 
-Example: A retail email shows hiking boots to last month's outdoor-category buyers and yoga gear to wellness-segment subscribers — same campaign send, different content.
+Example: A retail email shows hiking boots to last month's outdoor-category buyers and yoga gear to wellness-segment subscribers, same campaign send, different content.
 
 ### AI Capability 4: Generative Drafting
 Most major ESPs added Claude-powered or GPT-powered drafting in 2023–2024. You describe the campaign; the ESP drafts subject, preview, body, and even alt text. The human edits and ships.
@@ -172,7 +172,7 @@ AI assigns sub-segments to A/B variants, monitors significance in real-time, and
 
 🚨 **Trap on the exam:** "Drip" and "lifecycle" are not synonyms. Drip = time-based. Lifecycle = behavior-triggered. Many exam questions probe this.
 
-### The Welcome Series — Highest-ROI Sequence in Email
+### The Welcome Series, Highest-ROI Sequence in Email
 
 The single highest-revenue-per-email sequence for nearly every business is the **welcome series**. Per Klaviyo's 2024 benchmark report, welcome emails have ~50% open rates (vs ~20% for normal sends) and outsized conversion rates.
 
@@ -206,7 +206,7 @@ Skim these now; Module 9 goes deep.
 - Right to access, correct, delete
 - 72-hour breach notification
 - Penalties up to 4% of global revenue or €20M (whichever higher)
-- Applies to anyone marketing to EU residents — not just EU-based companies
+- Applies to anyone marketing to EU residents, not just EU-based companies
 
 ### CASL (Canada, 2014)
 - Express consent for commercial email
@@ -274,10 +274,10 @@ By 2023, Klaviyo had become the dominant ESP for Shopify-powered brands and went
 
 Why Klaviyo won (per Bialecki's public interviews and Klaviyo's own benchmark reports):
 
-1. **Native Shopify (and BigCommerce, etc.) data sync.** Customers, products, orders, browsing — all auto-flowing.
-2. **Predictive analytics built on that data.** Predicted CLV, predicted next-order date, predicted churn — for each subscriber.
+1. **Native Shopify (and BigCommerce, etc.) data sync.** Customers, products, orders, browsing, all auto-flowing.
+2. **Predictive analytics built on that data.** Predicted CLV, predicted next-order date, predicted churn, for each subscriber.
 3. **Segmentation language tuned for e-commerce.** "Bought 2+ orders, last 90 days, hasn't opened in 30 days" is a one-click filter.
-4. **Pre-built playbooks** for cart abandonment, browse abandonment, post-purchase, win-back — all the highest-ROI e-commerce sequences.
+4. **Pre-built playbooks** for cart abandonment, browse abandonment, post-purchase, win-back, all the highest-ROI e-commerce sequences.
 
 The Klaviyo case demonstrates the broader thesis: **the next generation of ESPs is winning by being vertical-specific and data-native**, not by adding more generic features.
 
@@ -302,7 +302,7 @@ The Klaviyo case demonstrates the broader thesis: **the next generation of ESPs 
 
 1. **iOS 15 Mail Privacy Protection (Sep 2021)** inflated open rates by auto-prefetching images. Open rate became unreliable. Click rate is now the better signal.
 2. **Gmail/Yahoo Feb 2024 sender requirements** are mandatory, not optional, for >5K sends/day.
-3. **CAN-SPAM unsubscribe window is 10 business days.** Not "as fast as possible" — 10 days.
+3. **CAN-SPAM unsubscribe window is 10 business days.** Not "as fast as possible", 10 days.
 4. **GDPR applies to non-EU companies** that market to EU residents.
 5. **DMA's $36-per-$1 ROI stat** is the most-quoted email-ROI statistic.
 6. **Klaviyo dominates Shopify e-commerce email.** Know the vertical leaders.
@@ -354,7 +354,7 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 7: Paid Advertising Fundamentals](../Module-07-Paid-Advertising-Fundamentals/Reading.md)
 
@@ -367,22 +367,22 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **Open rate after iOS 15: salvage or replace?** iOS 15 Mail Privacy Protection (Sep 2021) made open rate unreliable for ~70% of inboxes. The reading recommends shifting to click rate + conversion. A senior email marketer counters: "Open rate is still useful as a *relative* metric — same subscriber, same campaign, year-over-year. Don't throw it out." Construct the strongest argument for keeping open rate in the dashboard, and the strongest argument for retiring it entirely. Where exactly do you draw the line, and what does your weekly email dashboard look like as a result?
+1. **Open rate after iOS 15: salvage or replace?** iOS 15 Mail Privacy Protection (Sep 2021) made open rate unreliable for ~70% of inboxes. The reading recommends shifting to click rate + conversion. A senior email marketer counters: "Open rate is still useful as a *relative* metric, same subscriber, same campaign, year-over-year. Don't throw it out." Construct the strongest argument for keeping open rate in the dashboard, and the strongest argument for retiring it entirely. Where exactly do you draw the line, and what does your weekly email dashboard look like as a result?
 2. **The welcome series ROI assumption.** Klaviyo's data shows welcome series has the highest per-email revenue. But a SaaS lifecycle manager argues that for *their* business, the post-purchase series (specifically, day-7 onboarding nudge) outperforms welcome. Steel-man both. Under what business conditions does welcome win, and under what conditions does some other sequence dominate? (Hint: consider order-frequency, purchase cycle, customer lifecycle.)
 3. **The deliverability cliff after Feb 2024.** Gmail and Yahoo's Feb 2024 bulk-sender enforcement forced SPF/DKIM/DMARC + one-click unsubscribe + <0.3% complaint rate. A growth marketer says this favors big senders who can hire deliverability engineers; a SMB advocate says it just enforces hygiene that should always have been mandatory. Make both cases. Is the Feb-2024 enforcement net-positive for the email-marketing ecosystem, or net-negative for small senders trying to grow?
-4. **Phrasee, Mailchimp AI, and the moat question.** Mailchimp's AI subject-line generator is grounded in billions of past sends. Phrasee's tool reports 10–40% lift across enterprise clients. As LLMs commoditize text generation, what's the durable moat for these AI subject-line tools — proprietary outcome data, integration into the daily workflow, or brand trust? Defend the strongest single answer, then identify what would *break* the moat by 2028.
+4. **Phrasee, Mailchimp AI, and the moat question.** Mailchimp's AI subject-line generator is grounded in billions of past sends. Phrasee's tool reports 10–40% lift across enterprise clients. As LLMs commoditize text generation, what's the durable moat for these AI subject-line tools, proprietary outcome data, integration into the daily workflow, or brand trust? Defend the strongest single answer, then identify what would *break* the moat by 2028.
 5. **First-party email list as the post-cookie play.** "Build the list, own the channel" is the most-cited 2026 strategic answer. But list-building costs (lead magnets, paid acquisition into email funnels, double opt-in friction) have risen sharply. At what point does email-list-building stop being the cheapest first-party play and start being just another paid acquisition channel with extra steps? Walk through the math with an example CAC-to-email-subscriber number for an e-commerce brand at $30 CPM and 1% form conversion.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📰 *DMA Marketer Email Tracker* — annual
-- 📰 *Litmus State of Email* — annual
-- 📰 *Klaviyo benchmark reports* — annual, free, e-commerce-focused
-- 📰 *Phrasee blog* — AI subject-line case studies
-- 📖 *Email Marketing Rules* by Chad White — the most thorough deliverability + strategy book
+- 📰 *DMA Marketer Email Tracker*, annual
+- 📰 *Litmus State of Email*, annual
+- 📰 *Klaviyo benchmark reports*, annual, free, e-commerce-focused
+- 📰 *Phrasee blog*, AI subject-line case studies
+- 📖 *Email Marketing Rules* by Chad White, the most thorough deliverability + strategy book
 - 📰 Gmail's *Email sender guidelines* (developers.google.com/gmail/sender-guidelines)
-- 📰 Litmus blog — practical accessibility, design, and rendering tips
+- 📰 Litmus blog, practical accessibility, design, and rendering tips

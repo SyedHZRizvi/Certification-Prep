@@ -1,10 +1,10 @@
-# Final Mock Exam — Bitcoin & Cryptocurrency (CBP-style)
+# Final Mock Exam, Bitcoin & Cryptocurrency (CBP-style)
 
 > **Conditions:** 75 questions · 75 minutes · Closed book. Treat this as the REAL exam.
 > **Pass mark:** 56/75 (~75%). The real Certified Bitcoin Professional (CBP) passes at ~70%.
 > Take this 2-3 days before your booked exam. Aim for **63+ correct**.
 >
-> Questions 71-75 are scenario-heavy multi-factor decision questions — the kind that distinguish a passing candidate from a top-quartile candidate.
+> Questions 71-75 are scenario-heavy multi-factor decision questions, the kind that distinguish a passing candidate from a top-quartile candidate.
 
 ---
 
@@ -120,7 +120,7 @@ D. Difficulty adjustment every 2,016 blocks based on actual vs expected (1,209,6
 
 ### 13. A *soft fork* in Bitcoin is:
 
-A. A backward-compatible tightening of consensus rules — old nodes still accept the new blocks
+A. A backward-compatible tightening of consensus rules, old nodes still accept the new blocks
 B. A breaking change that splits the chain irreversibly
 C. A community fork of the source code
 D. A short fork of the chain that gets resolved naturally
@@ -130,7 +130,7 @@ D. A short fork of the chain that gets resolved naturally
 ### 14. A *hard fork* is:
 
 A. Backward-compatible
-B. A consensus-rule change that introduces blocks/transactions invalid under old rules — old nodes reject them, requiring a network-wide upgrade
+B. A consensus-rule change that introduces blocks/transactions invalid under old rules, old nodes reject them, requiring a network-wide upgrade
 C. The same as a soft fork
 D. A change to the wallet UI
 
@@ -258,7 +258,7 @@ D. An exchange protocol
 A. An invalid block
 B. A coinbase
 C. A nonce
-D. A "share" — proof of work below pool difficulty but above network difficulty, used to allocate pool rewards
+D. A "share", proof of work below pool difficulty but above network difficulty, used to allocate pool rewards
 
 ---
 
@@ -303,7 +303,7 @@ D. Bitcoin uses more energy than all of humanity
 A. Miners stranded at sea
 B. Mining that strands the chain
 C. Mining done with no internet
-D. Mining operations that monetize otherwise-wasted energy (flared natural gas, curtailed wind/solar, off-peak hydro) — turning negative-value energy into positive revenue
+D. Mining operations that monetize otherwise-wasted energy (flared natural gas, curtailed wind/solar, off-peak hydro), turning negative-value energy into positive revenue
 
 ---
 
@@ -318,7 +318,7 @@ D. NFT, ICO, DAO
 
 ### 35. Multi-signature was originally enabled on Bitcoin via:
 
-A. P2SH (BIP-16, Andresen, 2012) — wrapping a multi-sig redeem script in a script hash
+A. P2SH (BIP-16, Andresen, 2012), wrapping a multi-sig redeem script in a script hash
 B. Taproot only
 C. Lightning channels
 D. The Genesis block
@@ -339,7 +339,7 @@ D. Free transactions
 A. An absolute timelock
 B. A coinbase rule
 C. A multi-sig rule
-D. A *relative* timelock — UTXO can't be spent until N blocks after its inclusion
+D. A *relative* timelock, UTXO can't be spent until N blocks after its inclusion
 
 ---
 
@@ -428,7 +428,7 @@ D. Holdings over 1 year are tax-exempt
 
 A. Bitcoin specifically
 B. Mining
-C. Stablecoins — both asset-backed (ARTs) and e-money tokens (EMTs)
+C. Stablecoins, both asset-backed (ARTs) and e-money tokens (EMTs)
 D. Exchange UI design
 
 ---
@@ -437,7 +437,7 @@ D. Exchange UI design
 
 A. *Howey v. SEC* (1946)
 B. *Ripple v. SEC* (2023)
-C. *Grayscale v. SEC* (D.C. Circuit, Aug 2023) — vacated the SEC's denial of GBTC's spot conversion
+C. *Grayscale v. SEC* (D.C. Circuit, Aug 2023), vacated the SEC's denial of GBTC's spot conversion
 D. *SEC v. Coinbase* (2024)
 
 ---
@@ -464,7 +464,7 @@ D. A government license
 
 A. A 51% attack
 B. A Bitcoin protocol bug
-C. Commingling of customer funds with the affiliated trading firm (Alameda Research) — a custody and accounting failure, prosecuted as fraud (Bankman-Fried sentenced 2024)
+C. Commingling of customer funds with the affiliated trading firm (Alameda Research), a custody and accounting failure, prosecuted as fraud (Bankman-Fried sentenced 2024)
 D. A regulatory raid
 
 ---
@@ -473,7 +473,7 @@ D. A regulatory raid
 
 A. Insurance
 B. Tax benefits
-C. Direct cryptographic control over funds — no third-party action (regulator, court, custodian failure) can confiscate without compromising the user's keys
+C. Direct cryptographic control over funds, no third-party action (regulator, court, custodian failure) can confiscate without compromising the user's keys
 D. Speed
 
 ---
@@ -508,7 +508,7 @@ D. Cloud backups
 ### 56. An exchange forces a user to re-authenticate via SMS after a "new device" login. This MFA channel is:
 
 A. Quantum-resistant
-B. Phishable and SIM-swap vulnerable — recommended only as a fallback, never as the primary factor for high-value accounts
+B. Phishable and SIM-swap vulnerable, recommended only as a fallback, never as the primary factor for high-value accounts
 C. Inherently secure
 D. Not authentication
 
@@ -516,7 +516,7 @@ D. Not authentication
 
 ### 57. The *deanonymization risk* of Bitcoin is:
 
-A. Zero — Bitcoin is fully anonymous
+A. Zero, Bitcoin is fully anonymous
 B. Only government attackers can deanonymize
 C. The chain is pseudonymous; chain analysis (Chainalysis, Elliptic, TRM) can link addresses to identities via exchange KYC, address reuse, common-input heuristics, and timing analysis
 D. Requires a court order
@@ -580,7 +580,7 @@ D. A bug fix
 ### 64. *Zero-knowledge proofs* (ZKPs) are used in modern blockchains for:
 
 A. Mining
-B. Proving knowledge of a value (e.g., transaction validity) without revealing the value itself — zk-SNARKs (Zcash) and zk-Rollups (Ethereum L2s like zkSync)
+B. Proving knowledge of a value (e.g., transaction validity) without revealing the value itself, zk-SNARKs (Zcash) and zk-Rollups (Ethereum L2s like zkSync)
 C. Wallet generation
 D. Hashing
 
@@ -652,7 +652,7 @@ D. 11-of-11 multi-sig
 ### 72. **(Scenario)** A user receives a "Bitcoin double-your-coins" email from "[bitcoin-support@coinbasse.com](mailto:bitcoin-support@coinbasse.com)" (note misspelling) asking for their seed phrase to "verify wallet". The CORRECT response is:
 
 A. Reply with the seed to claim the doubling promotion
-B. Recognize this as a phishing attack — never share a seed phrase with anyone, ever, under any circumstance; report and delete
+B. Recognize this as a phishing attack, never share a seed phrase with anyone, ever, under any circumstance; report and delete
 C. Reply with only half the seed
 D. Encrypt the seed and reply
 
@@ -661,7 +661,7 @@ D. Encrypt the seed and reply
 ### 73. **(Scenario)** A regulated US investment adviser wants to gain Bitcoin exposure for $50M in client assets. The MOST appropriate path is:
 
 A. Self-custody on the principal's laptop
-B. Spot Bitcoin ETF (IBIT/FBTC) inside client brokerage accounts, OR qualified custodian (Coinbase Custody, Fidelity Digital Assets) for direct exposure — satisfying SEC Custody Rule 206(4)-2
+B. Spot Bitcoin ETF (IBIT/FBTC) inside client brokerage accounts, OR qualified custodian (Coinbase Custody, Fidelity Digital Assets) for direct exposure, satisfying SEC Custody Rule 206(4)-2
 C. Bitcoin futures (CME) only (no spot)
 D. Buy from a Telegram OTC broker
 
@@ -727,10 +727,10 @@ D. The IR playbook alone
 **Q4. Answer: B**
 - **Why B is correct.** 2^256 ≈ 1.16 × 10^77, comparable to a tiny fraction of atoms in the observable universe (~10^80).
 - **Why others are wrong.** A, C, D: All severely undercount the keyspace.
-- **Exam-takeaway.** Bitcoin's security at the key level is "guess a specific atom in the universe" — practically impossible.
+- **Exam-takeaway.** Bitcoin's security at the key level is "guess a specific atom in the universe", practically impossible.
 
 **Q5. Answer: B**
-- **Why B is correct.** `HASH160(x) = RIPEMD-160(SHA-256(x))` — the Bitcoin macro for address derivation.
+- **Why B is correct.** `HASH160(x) = RIPEMD-160(SHA-256(x))`, the Bitcoin macro for address derivation.
 - **Why others are wrong.** A: SHA256d = `SHA256(SHA256(x))`. C: HMAC-160 not a standard. D: Not a real name.
 - **Exam-takeaway.** Two hashes, two motives: SHA-256 for cryptographic strength, RIPEMD-160 for shorter output (20 bytes) and defense in depth.
 
@@ -757,7 +757,7 @@ D. The IR playbook alone
 **Q10. Answer: A**
 - **Why A is correct.** Fee = inputs - outputs. Miners maximize block revenue by including highest fee-rate (sat/vB) txs.
 - **Why others are wrong.** B: No fixed rate. C, D: Wrong issuer.
-- **Exam-takeaway.** Fee is a market — set by sender, accepted by miners. mempool.space shows real-time fee estimates.
+- **Exam-takeaway.** Fee is a market, set by sender, accepted by miners. mempool.space shows real-time fee estimates.
 
 **Q11. Answer: B**
 - **Why B is correct.** Low-fee txs sit in mempool. Bitcoin Core's default mempool eviction is ~14 days; the tx is then dropped silently. Senders can RBF or CPFP (child-pays-for-parent) to bump.
@@ -840,7 +840,7 @@ D. The IR playbook alone
 - **Exam-takeaway.** The 2-of-3 pattern is the canonical "personal/family" custody architecture.
 
 **Q27. Answer: B**
-- **Why B is correct (Stratum = pool protocol).** Stratum (Slush Pool, 2012) is the de-facto mining-pool protocol — coordinates work assignment, share submission, and reward attribution.
+- **Why B is correct (Stratum = pool protocol).** Stratum (Slush Pool, 2012) is the de-facto mining-pool protocol, coordinates work assignment, share submission, and reward attribution.
 - **Why others are wrong.** A: Pool protocol, not consensus. C: Not a wallet. D: Not an exchange.
 - **Exam-takeaway.** Stratum is on the CBSA syllabus more than CBP, but generally appears as "what is the pool protocol called?"
 
@@ -872,7 +872,7 @@ D. The IR playbook alone
 **Q33. Answer: D**
 - **Why D is correct.** Stranded energy = energy that would otherwise be wasted (flared, curtailed, off-peak). Mining converts it to revenue. Examples: ExxonMobil's Bakken flare mining, Permian gas-to-mining pilots.
 - **Why others are wrong.** A, B, C: Misreadings.
-- **Exam-takeaway.** Stranded energy is the strongest "energy good" argument for Bitcoin — turns negative-value energy positive.
+- **Exam-takeaway.** Stranded energy is the strongest "energy good" argument for Bitcoin, turns negative-value energy positive.
 
 **Q34. Answer: B**
 - **Why B is correct.** Five locking script types account for >99% of UTXO set: P2PKH (legacy `1`), P2SH (`3`), P2WPKH (native SegWit `bc1q`), P2WSH (SegWit script), P2TR (Taproot `bc1p`).
@@ -880,7 +880,7 @@ D. The IR playbook alone
 - **Exam-takeaway.** Five output types, five prefixes. Memorize each.
 
 **Q35. Answer: A**
-- **Why A is correct.** BIP-16 (Gavin Andresen, 2012) introduced P2SH — the spender's input "reveals" the redeem script, hashed to match the address. Enabled multi-sig at scale.
+- **Why A is correct.** BIP-16 (Gavin Andresen, 2012) introduced P2SH, the spender's input "reveals" the redeem script, hashed to match the address. Enabled multi-sig at scale.
 - **Why others are wrong.** B: Taproot is much later. C, D: Wrong layer.
 - **Exam-takeaway.** P2SH = the breakthrough that made multi-sig practical and address-encodable.
 
@@ -896,7 +896,7 @@ D. The IR playbook alone
 
 **Q38. Answer: C**
 - **Why C is correct.** Commitment txs are signed off-chain after each payment. Either party can broadcast unilaterally; honest counterparties only broadcast the latest.
-- **Why others are wrong.** A: Pre-broadcast — not yet on chain. B: Not consensus. D: Not a backup.
+- **Why others are wrong.** A: Pre-broadcast, not yet on chain. B: Not consensus. D: Not a backup.
 - **Exam-takeaway.** Commitment transaction = "current channel state, signed but unpublished." Mutual updates rotate which version is "current."
 
 **Q39. Answer: B**
@@ -915,7 +915,7 @@ D. The IR playbook alone
 - **Exam-takeaway.** Onion routing in Lightning = each hop's privacy is preserved by design.
 
 **Q42. Answer: B**
-- **Why B is correct (open/close + inbound liquidity bottleneck).** Channel opens/closes are on-chain (expensive in fees). Inbound liquidity requires either someone opening to you or paying a "liquidity service" (Lightning Pool, Magma) — a chicken-and-egg problem.
+- **Why B is correct (open/close + inbound liquidity bottleneck).** Channel opens/closes are on-chain (expensive in fees). Inbound liquidity requires either someone opening to you or paying a "liquidity service" (Lightning Pool, Magma), a chicken-and-egg problem.
 - **Why others are wrong.** A, C, D: Not the bottleneck.
 - **Exam-takeaway.** Lightning's UX bottleneck is inbound liquidity. Splicing (Q44 of PE-2) reduces some friction.
 
@@ -936,7 +936,7 @@ D. The IR playbook alone
 
 **Q46. Answer: B**
 - **Why B is correct (short vs long-term capital gains).** US capital-gains rules: short-term (≤1 yr) at ordinary rates (up to 37%); long-term (>1 yr) at 0/15/20% based on income bracket.
-- **Why others are wrong.** A: There IS a distinction. C: Opposite — long-term holdings owe LESS. D: Not exempt.
+- **Why others are wrong.** A: There IS a distinction. C: Opposite, long-term holdings owe LESS. D: Not exempt.
 - **Exam-takeaway.** HODL ≥1 year for long-term capital-gains treatment in the US.
 
 **Q47. Answer: C**
@@ -960,7 +960,7 @@ D. The IR playbook alone
 - **Exam-takeaway.** PoR alone is insufficient. Proof of Solvency = PoR + Proof of Liabilities (audited customer-balance Merkle tree).
 
 **Q51. Answer: C**
-- **Why C is correct.** Bankman-Fried sentenced March 28, 2024 to 25 years. Customer funds were commingled with Alameda's trading book — accounting fraud, not protocol failure.
+- **Why C is correct.** Bankman-Fried sentenced March 28, 2024 to 25 years. Customer funds were commingled with Alameda's trading book, accounting fraud, not protocol failure.
 - **Why others are wrong.** A: Not a chain attack. B: Bitcoin protocol fine. D: Not a regulatory raid causation.
 - **Exam-takeaway.** FTX = "not your keys, not your coins" canonical case post-Mt.-Gox. Self-custody mitigates this entire failure class.
 
@@ -1030,7 +1030,7 @@ D. The IR playbook alone
 - **Exam-takeaway.** ZKPs are the cryptographic frontier. Bitcoin uses them in Lightning rollouts (no Layer-1 ZK yet) and proposed Citrea-style L2s.
 
 **Q65. Answer: D**
-- **Why D is correct.** Shor's algorithm on a sufficiently large quantum computer would break ECDSA. Addresses whose pubkey is revealed (post-spend, P2PK era) are exposed. P2PKH addresses pre-spend are guarded by HASH160 — a quantum attacker would need a pre-image attack on HASH160 to extract the pubkey from the address.
+- **Why D is correct.** Shor's algorithm on a sufficiently large quantum computer would break ECDSA. Addresses whose pubkey is revealed (post-spend, P2PK era) are exposed. P2PKH addresses pre-spend are guarded by HASH160, a quantum attacker would need a pre-image attack on HASH160 to extract the pubkey from the address.
 - **Why others are wrong.** A: Real threat. B: Some protection until first spend. C: Not improvement.
 - **Exam-takeaway.** Quantum threat ≠ instant break. Defense-in-depth (HASH160 layer) buys time. ~5M BTC are at "high quantum risk" (P2PK + reused addresses).
 
@@ -1082,7 +1082,7 @@ D. The IR playbook alone
 **Q75. Answer: C**
 - **Why C is correct.** Customer make-whole depends on multiple compounding factors: cold-storage architecture (was the breach truly limited to hot?); insurance terms (per-incident limits, exclusions for insider acts); solvency (does the exchange have reserves beyond what was stolen?); and the jurisdiction's protection law (US BitLicense vs. offshore differ greatly).
 - **Why others are wrong.** A: Amount alone doesn't determine make-whole; coverage might exceed it or fall short. B: SOC 2 is an audit standard, not a guarantee. D: IR playbook is process, not solvency.
-- **Exam-takeaway.** Multi-factor reasoning. CBP and CBSA exams reward "best combined answer" — recognize when a single factor is insufficient.
+- **Exam-takeaway.** Multi-factor reasoning. CBP and CBSA exams reward "best combined answer", recognize when a single factor is insufficient.
 
 ---
 
@@ -1090,7 +1090,7 @@ D. The IR playbook alone
 
 | Score | Verdict |
 |-------|---------|
-| 67-75 | Excellent — book the real CBP exam this week |
+| 67-75 | Excellent, book the real CBP exam this week |
 | 56-66 | On track. Review wrong answers and weak modules; sit the real exam within 2 weeks |
 | 45-55 | Re-study weak modules; redo this exam in 1-2 weeks |
 | <45 | Defer the real exam. Revisit Modules 1-10 in full. |

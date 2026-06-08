@@ -1,13 +1,13 @@
 # Module 8: Security Operations 🛰️
 
-> **Why this module matters:** Domain 4 (Security Operations) is **28%** of the Sec+ exam — the largest single domain. This is where the SOC actually lives: SIEM, SOAR, incident response, forensics, threat hunting, vulnerability management. Master this and you're more than a quarter of the way to passing.
+> **Why this module matters:** Domain 4 (Security Operations) is **28%** of the Sec+ exam, the largest single domain. This is where the SOC actually lives: SIEM, SOAR, incident response, forensics, threat hunting, vulnerability management. Master this and you're more than a quarter of the way to passing.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Threat actor types, motivations, TTPs](../Module-04-Threats-Threat-Actors/Reading.md) — needed to interpret what you're detecting.
-> - [Attack indicators](../Module-05-Vulnerabilities-Attacks/Reading.md) — the IOCs/IOAs the SIEM is looking for.
-> - [Network appliances and log sources](../Module-06-Network-Security/Reading.md) — what feeds the SIEM.
-> - [Endpoint EDR and cloud telemetry](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) — major detection sources.
-> - General Linux/Windows admin literacy — needed for forensics, scripting, and EDR concepts.
+> - [Threat actor types, motivations, TTPs](../Module-04-Threats-Threat-Actors/Reading.md), needed to interpret what you're detecting.
+> - [Attack indicators](../Module-05-Vulnerabilities-Attacks/Reading.md), the IOCs/IOAs the SIEM is looking for.
+> - [Network appliances and log sources](../Module-06-Network-Security/Reading.md), what feeds the SIEM.
+> - [Endpoint EDR and cloud telemetry](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md), major detection sources.
+> - General Linux/Windows admin literacy, needed for forensics, scripting, and EDR concepts.
 
 ---
 
@@ -30,7 +30,7 @@ Each tool exists because alerts arrive faster than humans can analyze them. The 
 
 ---
 
-## 📦 Asset Management — Before You Can Defend, You Must Inventory
+## 📦 Asset Management, Before You Can Defend, You Must Inventory
 
 You can't protect what you don't know exists. Sec+ tests asset lifecycle:
 
@@ -45,9 +45,9 @@ You can't protect what you don't know exists. Sec+ tests asset lifecycle:
 ### Data destruction (Sec+ vocabulary)
 | Term | What |
 |------|------|
-| **Wiping / Overwrite** | DoD 5220.22-M and similar — overwrite multiple times |
+| **Wiping / Overwrite** | DoD 5220.22-M and similar, overwrite multiple times |
 | **Crypto-erase** | Destroy encryption keys → data unrecoverable |
-| **Degaussing** | Magnetic field destroys magnetic media (HDD, tapes) — doesn't work on SSD |
+| **Degaussing** | Magnetic field destroys magnetic media (HDD, tapes), doesn't work on SSD |
 | **Shredding / Pulverizing** | Physical destruction (HDD, SSD, optical, paper) |
 | **Incineration** | Burn (regulated for some industries) |
 | **Certificate of Destruction** | Proof from a vendor with chain of custody |
@@ -56,7 +56,7 @@ You can't protect what you don't know exists. Sec+ tests asset lifecycle:
 
 ---
 
-## 📊 SIEM — Security Information & Event Management
+## 📊 SIEM, Security Information & Event Management
 
 A **SIEM** collects logs from across the environment, normalizes them, correlates events, and alerts on suspicious patterns. Examples: Splunk, Elastic Security, IBM QRadar, Microsoft Sentinel, Sumo Logic, Chronicle.
 
@@ -78,14 +78,14 @@ A **SIEM** collects logs from across the environment, normalizes them, correlate
 - **Search & investigation UI**
 
 ### Important SIEM concepts
-- **UEBA** (User & Entity Behavior Analytics) — baseline normal, alert on deviation
-- **Use cases / detection rules** — encoded knowledge of what to alert on
-- **Time normalization** — all timestamps to UTC + NTP sync
-- **False positive vs false negative** — both are costly; tuning is constant work
+- **UEBA** (User & Entity Behavior Analytics), baseline normal, alert on deviation
+- **Use cases / detection rules**, encoded knowledge of what to alert on
+- **Time normalization**, all timestamps to UTC + NTP sync
+- **False positive vs false negative**, both are costly; tuning is constant work
 
 ---
 
-## 🤖 SOAR — Security Orchestration, Automation & Response
+## 🤖 SOAR, Security Orchestration, Automation & Response
 
 A **SOAR** automates routine responses via **playbooks** and **runbooks**.
 
@@ -106,7 +106,7 @@ A **SOAR** automates routine responses via **playbooks** and **runbooks**.
 
 ---
 
-## 📜 Logging — Sources Sec+ Names
+## 📜 Logging, Sources Sec+ Names
 
 | Log type | What it tells you |
 |----------|-------------------|
@@ -127,13 +127,13 @@ A **SOAR** automates routine responses via **playbooks** and **runbooks**.
 
 Important: **NetFlow vs sFlow vs IPFIX**
 - All three are flow-data formats showing connections (not packet contents)
-- **NetFlow** — Cisco original
-- **sFlow** — sampled flow (less complete, lower overhead)
-- **IPFIX** — IETF standardized version of NetFlow v9
+- **NetFlow**, Cisco original
+- **sFlow**, sampled flow (less complete, lower overhead)
+- **IPFIX**, IETF standardized version of NetFlow v9
 
 ---
 
-## 🚨 Incident Response (IR) — The Lifecycle
+## 🚨 Incident Response (IR), The Lifecycle
 
 Sec+ uses the **NIST SP 800-61 Rev 2** IR lifecycle (Cichonski, Millar, Grance & Scarfone, *Computer Security Incident Handling Guide*, August 2012). The successor **SP 800-61 Rev 3** (final, April 2024) restructures the lifecycle around the NIST Cybersecurity Framework 2.0 functions (Govern, Identify, Protect, Detect, Respond, Recover) but Sec+ as of 2026 still tests on the Rev 2 six-phase model below. Memorize the phases **in order**:
 
@@ -156,17 +156,17 @@ Sec+ uses the **NIST SP 800-61 Rev 2** IR lifecycle (Cichonski, Millar, Grance &
 | **Lessons Learned** | Post-incident review, update playbooks, share with stakeholders |
 
 ### Containment strategies
-- **Isolation** — pull network, EDR-quarantine
-- **Segmentation** — VLAN move to a sandbox
-- **Sinkhole** — redirect C2 DNS to /dev/null
-- **Allow short-term to gather intel?** Sometimes deliberately allow continued (controlled) activity to learn more — risky, deliberate decision
+- **Isolation**, pull network, EDR-quarantine
+- **Segmentation**, VLAN move to a sandbox
+- **Sinkhole**, redirect C2 DNS to /dev/null
+- **Allow short-term to gather intel?** Sometimes deliberately allow continued (controlled) activity to learn more, risky, deliberate decision
 
 ### Tabletop, simulation, parallel tests
-- **Tabletop exercise** — discussion-based, scenarios talked through
-- **Walk-through** — step-by-step rehearsal
-- **Simulation** — controlled live exercise
-- **Parallel test** — failover to DR site without taking prod down
-- **Full-interruption** — actual cutover (high-risk, high-value)
+- **Tabletop exercise**, discussion-based, scenarios talked through
+- **Walk-through**, step-by-step rehearsal
+- **Simulation**, controlled live exercise
+- **Parallel test**, failover to DR site without taking prod down
+- **Full-interruption**, actual cutover (high-risk, high-value)
 
 ---
 
@@ -174,7 +174,7 @@ Sec+ uses the **NIST SP 800-61 Rev 2** IR lifecycle (Cichonski, Millar, Grance &
 
 When an incident may lead to litigation/discipline, forensic discipline matters.
 
-### Order of Volatility (MEMORIZE — this is heavily tested)
+### Order of Volatility (MEMORIZE, this is heavily tested)
 
 From MOST to LEAST volatile (collect in this order):
 
@@ -187,11 +187,11 @@ From MOST to LEAST volatile (collect in this order):
 
 🎯 *Capture memory BEFORE shutting down the system. Once you power off, RAM is gone.*
 
-### Forensic process — KEY TERMS
+### Forensic process, KEY TERMS
 | Term | What |
 |------|------|
 | **Acquisition** | Bit-for-bit forensic image (using `dd`, FTK Imager, EnCase) |
-| **Hash verification** | Compute SHA-256 of original + image — must match |
+| **Hash verification** | Compute SHA-256 of original + image, must match |
 | **Chain of custody** | Documented log of who handled the evidence, when, where, why |
 | **Legal hold** | Order to preserve data (suspend retention/deletion) |
 | **E-discovery** | Process of identifying + producing electronically stored info for litigation |
@@ -256,40 +256,40 @@ DISCOVER → IDENTIFY → ANALYZE → PRIORITIZE → RESPOND (patch/mitigate/acc
 | **Passive** | Listens only (no traffic generated) |
 | **Internal vs external** | Scanning position |
 | **Web app scan (DAST)** | Crawls + probes web apps |
-| **Static analysis (SAST)** | Reads source code — see Module 10 |
-| **SCA** | Software Composition Analysis — finds vulns in dependencies — see Module 10 |
+| **Static analysis (SAST)** | Reads source code, see Module 10 |
+| **SCA** | Software Composition Analysis finds vulns in dependencies see Module 10 |
 | **Container scan** | Scans Docker/OCI images for known CVEs |
 | **Cloud scan / CSPM** | Configuration vulns in cloud |
 
 ### Pen testing
-- **Black box** — tester knows nothing
-- **White / clear box** — tester has full access (source, designs)
-- **Gray box** — partial information
-- **Internal vs external** — perspective
-- **Red team / blue team / purple team** — offensive / defensive / collaborative
-- **Bug bounty** — open invitation to find vulns
+- **Black box**, tester knows nothing
+- **White / clear box**, tester has full access (source, designs)
+- **Gray box**, partial information
+- **Internal vs external**, perspective
+- **Red team / blue team / purple team**, offensive / defensive / collaborative
+- **Bug bounty**, open invitation to find vulns
 
 ### Prioritization metrics
 
 | Metric | What |
 |--------|------|
-| **CVE** | Common Vulnerabilities and Exposures — unique ID per vuln |
+| **CVE** | Common Vulnerabilities and Exposures, unique ID per vuln |
 | **CVSS** | Scoring system (0-10); higher = worse |
 | **CVSS Base** | Inherent characteristics |
 | **CVSS Temporal** | Changes over time (exploit availability) |
 | **CVSS Environmental** | Specific to your environment |
-| **CWE** | Common Weakness Enumeration — categories (e.g., CWE-89 SQLi) |
-| **EPSS** | Exploit Prediction Scoring System — probability of exploitation in the wild |
-| **KEV** (CISA) | Known Exploited Vulnerabilities catalog — patch THESE first |
+| **CWE** | Common Weakness Enumeration, categories (e.g., CWE-89 SQLi) |
+| **EPSS** | Exploit Prediction Scoring System, probability of exploitation in the wild |
+| **KEV** (CISA) | Known Exploited Vulnerabilities catalog, patch THESE first |
 
 🎯 **Prioritize by:** (CVSS or EPSS) × asset exposure/criticality × exploitability.
 
 ### Responses to a vulnerability
-1. **Patch** — apply vendor fix
-2. **Mitigate** (compensating control) — disable feature, segment, WAF rule
-3. **Accept** — formal risk acceptance (documented)
-4. **Transfer** — insurance, outsource
-5. **Avoid** — discontinue affected functionality
+1. **Patch**, apply vendor fix
+2. **Mitigate** (compensating control), disable feature, segment, WAF rule
+3. **Accept**, formal risk acceptance (documented)
+4. **Transfer**, insurance, outsource
+5. **Avoid**, discontinue affected functionality
 
 ---
 
@@ -318,7 +318,7 @@ DISCOVER → IDENTIFY → ANALYZE → PRIORITIZE → RESPOND (patch/mitigate/acc
 
 ## 🔬 Scenario Walkthrough (PBQ-style)
 
-> **Scenario:** At 02:14 the SIEM correlates: (a) EDR alert on `host-fin-04` — PowerShell encoded command, (b) outbound DNS to `bad-domain[.]tld`, (c) 4 successful auths from `host-fin-04` to other internal hosts in 6 minutes. Order the following actions correctly per NIST IR lifecycle:
+> **Scenario:** At 02:14 the SIEM correlates: (a) EDR alert on `host-fin-04`, PowerShell encoded command, (b) outbound DNS to `bad-domain[.]tld`, (c) 4 successful auths from `host-fin-04` to other internal hosts in 6 minutes. Order the following actions correctly per NIST IR lifecycle:
 >
 > A. Wipe and re-image `host-fin-04`
 > B. Capture memory image + EDR triage data
@@ -343,28 +343,28 @@ A PBQ would let you drag the actions into ordered slots.
 
 ---
 
-## 📊 Case Study — MGM Resorts Ransomware (September 2023)
+## 📊 Case Study, MGM Resorts Ransomware (September 2023)
 
 **Situation.** **MGM Resorts International** operates 31 hotel-casino properties (Bellagio, MGM Grand, ARIA, Mandalay Bay, Cosmopolitan, Borgata, etc.), 75,000+ employees, ~$14B annual revenue. MGM's IT estate spans hospitality (Property Management Systems), gaming (slot-machine and table-game floor systems), point-of-sale, payroll, loyalty programs, and reservations. In September 2023 MGM was running a cloud-first identity strategy on **Okta** as its primary IdP and **Microsoft Active Directory** on-prem for legacy systems.
 
-**Decision.** On **10 September 2023** a young English-speaking attacker (later named **"Scattered Spider"** / UNC3944 / 0ktapus / Muddled Libra — overlapping with the Okta-targeting group from Module 3) used **publicly available LinkedIn data** to identify an MGM IT employee, then called the **MGM IT help desk** impersonating that employee, claiming to be locked out. The help-desk technician — following standard procedures — verified the caller's identity using *publicly available* corporate-directory information (employee ID, manager name, last 4 of SSN — which had been previously breached elsewhere). The technician then **reset the employee's MFA** and gave the attacker an Okta authentication code. Total elapsed time: **~10 minutes**. With the IT employee's identity, the attacker enrolled their own MFA device, gained Okta admin access, escalated to Microsoft Azure (Entra ID) admin, and from there acquired domain-admin on the on-prem AD forest. Within hours, the attacker deployed **ALPHV/BlackCat ransomware** across thousands of servers.
+**Decision.** On **10 September 2023** a young English-speaking attacker (later named **"Scattered Spider"** / UNC3944 / 0ktapus / Muddled Libra overlapping with the Okta-targeting group from Module 3) used **publicly available LinkedIn data** to identify an MGM IT employee, then called the **MGM IT help desk** impersonating that employee, claiming to be locked out. The help-desk technician following standard procedures verified the caller's identity using *publicly available* corporate-directory information (employee ID, manager name, last 4 of SSN which had been previously breached elsewhere). The technician then **reset the employee's MFA** and gave the attacker an Okta authentication code. Total elapsed time: **~10 minutes**. With the IT employee's identity, the attacker enrolled their own MFA device, gained Okta admin access, escalated to Microsoft Azure (Entra ID) admin, and from there acquired domain-admin on the on-prem AD forest. Within hours, the attacker deployed **ALPHV/BlackCat ransomware** across thousands of servers.
 
-**Outcome.** MGM's IT teams responded by **shutting down nearly every internet-facing system** — including reservations, room keys, slot machines, ATMs, restaurant POS, and the digital casino-floor systems — for **10 days** (10-20 September 2023, with full restoration not until late September). Guests checked in with handwritten keys, couldn't use room charges, found slot machines bricked. The MGM mobile app, websites, and reservation systems went dark. Public statements were silent for days; SEC 8-K disclosure on **12 September 2023**. Total reported impact: **$100M+ in revenue loss** (MGM Q3 2023 earnings call), plus ~$10M in IR costs, plus class-action litigation continuing into 2024-2025. Caesar's Entertainment — separately attacked by the *same* group days earlier — had quietly paid **~$15M ransom** and avoided MGM's public ordeal. The contrast became a case study in itself: pay-vs-don't-pay calculus.
+**Outcome.** MGM's IT teams responded by **shutting down nearly every internet-facing system** including reservations, room keys, slot machines, ATMs, restaurant POS, and the digital casino-floor systems for **10 days** (10-20 September 2023, with full restoration not until late September). Guests checked in with handwritten keys, couldn't use room charges, found slot machines bricked. The MGM mobile app, websites, and reservation systems went dark. Public statements were silent for days; SEC 8-K disclosure on **12 September 2023**. Total reported impact: **$100M+ in revenue loss** (MGM Q3 2023 earnings call), plus ~$10M in IR costs, plus class-action litigation continuing into 2024-2025. Caesar's Entertainment separately attacked by the *same* group days earlier had quietly paid **~$15M ransom** and avoided MGM's public ordeal. The contrast became a case study in itself: pay-vs-don't-pay calculus.
 
-The **same week**, the FTC and SEC opened investigations. CISA published an advisory on Scattered Spider TTPs (AA23-320A, November 2023). MGM's CFO later acknowledged the recovery cost was *less* than the demanded ransom — vindicating the no-pay decision financially even setting aside legal/ethical concerns.
+The **same week**, the FTC and SEC opened investigations. CISA published an advisory on Scattered Spider TTPs (AA23-320A, November 2023). MGM's CFO later acknowledged the recovery cost was *less* than the demanded ransom, vindicating the no-pay decision financially even setting aside legal/ethical concerns.
 
 **Lesson for the exam / for practitioners.** MGM is the textbook 2020s SOC case:
 
-- **Vishing + help-desk social engineering** (Module 5) — 10 minutes of phone call defeated MFA. The attack vector wasn't a 0-day; it was a *process* gap. Sec+ tests: "what control would have prevented this?" → caller-callback verification, MFA reset only via in-person / video-verified protocol, **just-in-time admin elevation** with separate approval.
-- **Privilege escalation in cloud-and-on-prem hybrid** (Module 3, 7) — Okta → Azure → on-prem AD pivot. MGM's hybrid identity design meant compromising Okta cascaded to domain admin. PAM (Privileged Access Management) would have required just-in-time elevation for each tier.
-- **IR lifecycle execution** (this module) — MGM's NIST IR phases unfolded in real time: Detection (Sept 10), Containment (Sept 11, by shutting *everything* off — extreme containment), Eradication + Recovery (Sept 11-20), Lessons Learned (ongoing through 2024). The "shut everything down" choice is a textbook **extreme containment** — Sec+ tests when this is and isn't appropriate.
-- **Tabletop exercises and IR playbook readiness** — MGM had IR plans but had not tabletop-tested the "help-desk-was-social-engineered + ransomware + can't process payments" scenario. The 10-day outage suggests the playbook addressed individual systems but not full-stack outage.
-- **Threat intel sharing** — CISA's AA23-320A advisory listed Scattered Spider TTPs derived in part from MGM/Caesar's incidents. ISACs (Module 4) — particularly the Gaming-ISAC and IT-ISAC — distributed IOCs and detection rules across casinos and other targeted sectors within weeks.
+- **Vishing + help-desk social engineering** (Module 5), 10 minutes of phone call defeated MFA. The attack vector wasn't a 0-day; it was a *process* gap. Sec+ tests: "what control would have prevented this?" → caller-callback verification, MFA reset only via in-person / video-verified protocol, **just-in-time admin elevation** with separate approval.
+- **Privilege escalation in cloud-and-on-prem hybrid** (Module 3, 7), Okta → Azure → on-prem AD pivot. MGM's hybrid identity design meant compromising Okta cascaded to domain admin. PAM (Privileged Access Management) would have required just-in-time elevation for each tier.
+- **IR lifecycle execution** (this module) MGM's NIST IR phases unfolded in real time: Detection (Sept 10), Containment (Sept 11, by shutting *everything* off extreme containment), Eradication + Recovery (Sept 11-20), Lessons Learned (ongoing through 2024). The "shut everything down" choice is a textbook **extreme containment**, Sec+ tests when this is and isn't appropriate.
+- **Tabletop exercises and IR playbook readiness**, MGM had IR plans but had not tabletop-tested the "help-desk-was-social-engineered + ransomware + can't process payments" scenario. The 10-day outage suggests the playbook addressed individual systems but not full-stack outage.
+- **Threat intel sharing** CISA's AA23-320A advisory listed Scattered Spider TTPs derived in part from MGM/Caesar's incidents. ISACs (Module 4) particularly the Gaming-ISAC and IT-ISAC, distributed IOCs and detection rules across casinos and other targeted sectors within weeks.
 
 **Discussion (Socratic).**
-- **Q1:** Caesar's paid ~$15M and avoided MGM's 10-day public outage; MGM didn't pay and lost $100M+ in revenue. Strictly financially, Caesar's "won." Build the case that MGM's no-pay decision was nonetheless correct — referencing OFAC ransom-payment guidance, incentive effects on future attacks, and stakeholder ethics. Then argue the opposing view. Which would you defend at a board-of-directors meeting?
+- **Q1:** Caesar's paid ~$15M and avoided MGM's 10-day public outage; MGM didn't pay and lost $100M+ in revenue. Strictly financially, Caesar's "won." Build the case that MGM's no-pay decision was nonetheless correct, referencing OFAC ransom-payment guidance, incentive effects on future attacks, and stakeholder ethics. Then argue the opposing view. Which would you defend at a board-of-directors meeting?
 - **Q2:** The compromised vector was a help-desk MFA reset. Designing the *next* MGM help desk: how would you balance ITIL/customer-service goals (fast resolution, low friction) against zero-trust security (callback verification, in-person verification, manager approval)? At what scale is each level economically defensible?
-- **Q3:** MGM's "containment by total shutdown" preserved evidence and stopped lateral movement, but cost $100M in revenue. A more surgical containment might have cost less directly but allowed undetected re-entry. As IR commander on the night of 10 September, what containment criteria would you apply (decision rule, not a single answer) — and how would you defend that rule in a post-incident board review?
+- **Q3:** MGM's "containment by total shutdown" preserved evidence and stopped lateral movement, but cost $100M in revenue. A more surgical containment might have cost less directly but allowed undetected re-entry. As IR commander on the night of 10 September, what containment criteria would you apply (decision rule, not a single answer), and how would you defend that rule in a post-incident board review?
 
 ---
 
@@ -372,15 +372,15 @@ The **same week**, the FTC and SEC opened investigations. CISA published an advi
 
 | Misconception | Reality |
 |---------------|---------|
-| "Shut down the compromised host immediately to stop the attack" | NO — capture memory first (order of volatility) |
+| "Shut down the compromised host immediately to stop the attack" | NO, capture memory first (order of volatility) |
 | "SIEM and SOAR are the same" | SIEM = detect. SOAR = respond/automate. |
 | "Containment = eradication" | Containment is short-term isolation. Eradication is removing the threat. |
-| "Chain of custody starts after litigation" | NO — starts the moment you touch evidence |
+| "Chain of custody starts after litigation" | NO, starts the moment you touch evidence |
 | "Patching ranks are CVSS-only" | Use **EPSS + KEV** alongside CVSS for real-world prioritization |
-| "Forensic analysis on the original drive is fine" | NO — work on a hashed forensic image; original goes in evidence storage |
-| "Degauss the SSD to wipe it" | NO — degaussing only works on magnetic media |
+| "Forensic analysis on the original drive is fine" | NO, work on a hashed forensic image; original goes in evidence storage |
+| "Degauss the SSD to wipe it" | NO, degaussing only works on magnetic media |
 | "Tabletop exercise tests technology" | Tabletop is **discussion-based**. Simulation/parallel tests touch tech. |
-| "False positives only waste time" | They erode trust — analysts start ignoring alerts (alert fatigue) |
+| "False positives only waste time" | They erode trust, analysts start ignoring alerts (alert fatigue) |
 | "EDR alone replaces SIEM" | EDR sees endpoint. SIEM correlates across the environment. |
 
 ---
@@ -438,21 +438,21 @@ You now know:
 
 - 📦 Asset lifecycle + data destruction methods (and why SSDs need different treatment)
 - 📊 **SIEM** (detect) and **SOAR** (respond) and how they fit together
-- 📜 Every log source Sec+ names — including NetFlow vs sFlow vs IPFIX vs PCAP
+- 📜 Every log source Sec+ names, including NetFlow vs sFlow vs IPFIX vs PCAP
 - 🚨 The **NIST IR lifecycle** in order + tabletop/walkthrough/simulation/parallel exercise types
-- 🔍 **Digital forensics** — order of volatility, acquisition, hashing, chain of custody, legal hold, e-discovery
+- 🔍 **Digital forensics**, order of volatility, acquisition, hashing, chain of custody, legal hold, e-discovery
 - 🐺 **Threat hunting** vs reactive IR
-- 🩹 **Vulnerability management** — CVE / CVSS / CWE / EPSS / KEV, scan types, pen test types, prioritization
+- 🩹 **Vulnerability management**, CVE / CVSS / CWE / EPSS / KEV, scan types, pen test types, prioritization
 
 **Next steps:**
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 9 — GRC, Risk & Compliance](../Module-09-GRC-Risk-Compliance/Reading.md)
+4. ➡️ [Module 9, GRC, Risk & Compliance](../Module-09-GRC-Risk-Compliance/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers BCP/DR — the post-recovery business-continuity planning that complements technical IR; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers application-layer prevention.
-> - Cross-course: AWS Solutions Architect (course 04) covers AWS Security Hub, CloudTrail, GuardDuty — the AWS-native SIEM stack. Azure courses cover Sentinel.
+> - Inside this course: [Module 9](../Module-09-GRC-Risk-Compliance/Reading.md) covers BCP/DR, the post-recovery business-continuity planning that complements technical IR; [Module 10](../Module-10-Application-Data-Security/Reading.md) covers application-layer prevention.
+> - Cross-course: AWS Solutions Architect (course 04) covers AWS Security Hub, CloudTrail, GuardDuty, the AWS-native SIEM stack. Azure courses cover Sentinel.
 > - Practice: Practice Exam 2 has ~12 SOC/IR/forensics questions; Final Mock has ~16 (the largest module slice). Order-of-volatility and NIST IR phase order are nearly guaranteed exam questions.
 
 ---
@@ -464,9 +464,9 @@ You now know:
 - 📄 NIST SP 800-61 Rev 3 (2024, draft → final). The successor under NIST CSF 2.0. (Sec+ will eventually shift to this; track CompTIA exam-objective updates.)
 - 📄 NIST SP 800-86 (2006). [*Guide to Integrating Forensic Techniques into Incident Response*](https://csrc.nist.gov/publications/detail/sp/800-86/final). (Order-of-volatility canonical source.)
 - 📄 FIRST (Forum of Incident Response and Security Teams). CVSS v4.0 (released November 2023). [first.org/cvss](https://www.first.org/cvss/).
-- 📄 FIRST. [EPSS — Exploit Prediction Scoring System](https://www.first.org/epss/).
+- 📄 FIRST. [EPSS, Exploit Prediction Scoring System](https://www.first.org/epss/).
 - 📄 CISA. [Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog) (updated continually).
-- 📄 MITRE ATT&CK v15 (April 2024) — [attack.mitre.org](https://attack.mitre.org/).
+- 📄 MITRE ATT&CK v15 (April 2024), [attack.mitre.org](https://attack.mitre.org/).
 
 **Case-study sources (MGM):**
 - 📄 MGM Resorts International, SEC 8-K filing, 12 September 2023; subsequent Q3 2023 earnings call (8 November 2023).
@@ -474,7 +474,7 @@ You now know:
 - 📄 Krebs, B. (2023). MGM Resorts coverage on [Krebs on Security](https://krebsonsecurity.com/), September-October 2023.
 
 **Practitioner / hands-on:**
-- 📖 The Volatility Foundation. *Volatility 3* — memory-forensics framework.
-- 📖 SANS Reading Room — annual SOC and DFIR papers.
-- 📖 The DFIR Report — public IR walkthroughs of real ransomware engagements.
+- 📖 The Volatility Foundation. *Volatility 3*, memory-forensics framework.
+- 📖 SANS Reading Room, annual SOC and DFIR papers.
+- 📖 The DFIR Report, public IR walkthroughs of real ransomware engagements.
 - 📖 Anderson, R. (2020). *Security Engineering* (3rd ed.). Chapters on intrusion detection and incident response.

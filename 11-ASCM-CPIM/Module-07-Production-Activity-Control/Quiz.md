@@ -123,7 +123,7 @@ D. Inventory turnover
 
 ### Q20. A growing queue at a work center over consecutive weeks signals: *(Analyze)*
 A. The work center has surplus capacity
-B. Inputs exceed outputs — capacity insufficient or releases too aggressive
+B. Inputs exceed outputs, capacity insufficient or releases too aggressive
 C. Quality is improving
 D. Everything is normal
 
@@ -131,7 +131,7 @@ D. Everything is normal
 A. Be allowed to run intermittently
 B. Be protected with a buffer of work to avoid starvation
 C. Have lowest priority
-D. Be ignored — focus on non-bottlenecks
+D. Be ignored, focus on non-bottlenecks
 
 ### Q22. Average flow time vs makespan: which is the time from first job start to last job finish? *(Remember)*
 A. Flow time
@@ -207,7 +207,7 @@ Cells exploit part-family similarity to compress all three.
 Shingo's methodology. Aim: single-digit-minute setup.
 
 ### Q16: **B. Identify internal vs external setup activities and convert internal to external where possible**
-This is THE core SMED step — pull as much work as possible to occur while the machine is still running the prior job.
+This is THE core SMED step, pull as much work as possible to occur while the machine is still running the prior job.
 
 ### Q17: **B. Actual downstream demand or consumption**
 A pull system reacts to real consumption (kanban, etc.).
@@ -218,7 +218,7 @@ Push = MRP planner releases per schedule, regardless of downstream readiness.
 ### Q19: **B. Planned vs actual work released and completed at each work center over time**
 The I/O Control report tracks input (release) and output (completion) discipline.
 
-### Q20: **B. Inputs exceed outputs — capacity insufficient or releases too aggressive**
+### Q20: **B. Inputs exceed outputs, capacity insufficient or releases too aggressive**
 Growing queue is the early warning of an overloaded work center.
 
 ### Q21: **B. Be protected with a buffer of work to avoid starvation**
@@ -253,7 +253,7 @@ Smith's theorem applies on a *single* machine. Multi-machine sequencing needs Jo
 - SPT minimizes mean flow time (single machine)
 - EDD minimizes max tardiness
 - Manufacturing cell definition
-- SMED — internal vs external setup
+- SMED, internal vs external setup
 - Push vs Pull
 
 ---

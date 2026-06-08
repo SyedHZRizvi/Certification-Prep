@@ -127,7 +127,7 @@
 - "Replace the motherboard first"
 - "DDR4 works in a DDR5 slot"
 - "RAID is a backup"
-- "Skip the QVL — any RAM works"
+- "Skip the QVL, any RAM works"
 - "Use Legacy BIOS for Win 11"
 
 ---

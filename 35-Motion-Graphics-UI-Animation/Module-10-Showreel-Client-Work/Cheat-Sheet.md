@@ -3,15 +3,15 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-10-Showreel-Client-Work/Cheat
 title: "Module 10 Cheat Sheet: Showreel & Client Work"
 ---
 
-# ⚡ Module 10 Cheat Sheet — Showreel & Client Work
+# ⚡ Module 10 Cheat Sheet, Showreel & Client Work
 
 ## Four-Zone Showreel Structure
 
 | Zone | Timing | Content |
 |------|--------|---------|
-| Hook | 0–5s | Single strongest piece — stop the skip |
+| Hook | 0–5s | Single strongest piece, stop the skip |
 | Body | 5–45s | 6–10 pieces, 4–8 seconds each |
-| Climax | 45–55s | Longer complex piece — prove depth |
+| Climax | 45–55s | Longer complex piece, prove depth |
 | Close | 55–60s | Name, contact, website |
 
 ---
@@ -24,7 +24,7 @@ title: "Module 10 Cheat Sheet: Showreel & Client Work"
 - Strongest FIRST and LAST (primacy + recency)
 - Alternate fast/slow; don't put similar styles adjacent
 - Watch on a phone, not a monitor
-- Watch on mute — does it work?
+- Watch on mute, does it work?
 - Compare to your 3 favorite reels immediately after
 
 ---
@@ -50,7 +50,7 @@ If the answer is vague → CUT IT.
 
 ## Project Rate Structure
 
-- Always include **2 rounds of revisions** — state explicitly
+- Always include **2 rounds of revisions**, state explicitly
 - Define revision: "one consolidated set of changes, submitted together"
 - Additional rounds: quote separately at hourly rate
 - Get all revision requests in writing
@@ -149,7 +149,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

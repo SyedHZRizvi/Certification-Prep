@@ -210,7 +210,7 @@ The widely-cited GDPR cap.
 The EU AI Act was approved by the European Parliament in March 2024, the world's first comprehensive AI law.
 
 ### Q4: **C. Limited risk (disclosure required)**
-Chatbots, AI-generated content, deepfakes — all "limited risk" with transparency/disclosure obligations.
+Chatbots, AI-generated content, deepfakes, all "limited risk" with transparency/disclosure obligations.
 
 ### Q5: **B. 100K**
 CPRA increased CCPA's 50K threshold to 100K California consumers.
@@ -240,13 +240,13 @@ Not a Privacy Sandbox API. The real Privacy Sandbox APIs include Topics, Protect
 NYC's pioneering AI bias law, effective July 2023.
 
 ### Q14: **A. LGPD**
-Lei Geral de Proteção de Dados — Brazil's law since 2020.
+Lei Geral de Proteção de Dados, Brazil's law since 2020.
 
 ### Q15: **B. PIPL**
-Personal Information Protection Law — China, 2021.
+Personal Information Protection Law, China, 2021.
 
 ### Q16: **C. PDPA**
-Personal Data Protection Act — Singapore, 2014 (updated 2021).
+Personal Data Protection Act, Singapore, 2014 (updated 2021).
 
 ### Q17: **B. Data collected by your company, with consent, on your own properties**
 The standard first-party data definition.
@@ -255,7 +255,7 @@ The standard first-party data definition.
 Coined by Forrester in 2018. Highest-trust data signal.
 
 ### Q19: **B. A voluntary US framework increasingly cited by enforcement agencies**
-Voluntary, but functionally important — agencies like the FTC reference it.
+Voluntary, but functionally important, agencies like the FTC reference it.
 
 ### Q20: **A. Forcing destruction of AI models trained on improperly obtained data**
 A novel and increasingly-used FTC remedy. Notable: a 2022 Cambridge Analytica-related case and 2024 Rite Aid case.

@@ -252,28 +252,28 @@ D. **Rotate the HDRI so its brightest point (sun/window) aligns with your key li
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Fill light reduces shadow contrast (does not eliminate shadow)
-Q2.  B — Sun light position is irrelevant; only rotation matters
-Q3.  B — Larger light source = softer, more diffuse shadows
-Q4.  D — Horror = 16:1 or more (very high contrast)
-Q5.  B — HDRI = High Dynamic Range Image
-Q6.  C — Poly Haven (polyhaven.com) — free CC0 HDRIs
-Q7.  C — Mapping node (+ Texture Coordinate) before Environment Texture for rotation
-Q8.  C — Overcast sky = ~6,500K
-Q9.  C — 12–18 lights per average Sprite Fright shot
-Q10. C — Rim light separates subject from background, adds depth
-Q11. D — Candlelight = ~1,800K
-Q12. B — Sun light = parallel rays (directional, infinite)
-Q13. C — Spot light = theatrical/flashlight directional accent
-Q14. B — Strength on Background node = environment lighting intensity
-Q15. C — "Every light has a reason" (motivated source)
-Q16. D — Point light = omnidirectional
-Q17. D — Comedy/family = 2:1 to 3:1 (low contrast, visible fill)
-Q18. B — Sprite Fright HDRI strength = 0.3–0.6
-Q19. C — Key-to-fill ratio = intensity ratio of key vs. fill
-Q20. C — Enable "Use Temperature" on light → enter Kelvin value
-Q21. B — .hdr and .exr are Blender's HDR environment formats
-Q22. C — Motivated = light source explained by something in the scene
-Q23. C — Cool rim (6,500K) suggests sky bounce light from above
-Q24. D — Rotate HDRI so brightest point aligns with key light direction
+Q1.  C, Fill light reduces shadow contrast (does not eliminate shadow)
+Q2.  B, Sun light position is irrelevant; only rotation matters
+Q3.  B, Larger light source = softer, more diffuse shadows
+Q4.  D, Horror = 16:1 or more (very high contrast)
+Q5.  B, HDRI = High Dynamic Range Image
+Q6.  C, Poly Haven (polyhaven.com), free CC0 HDRIs
+Q7.  C, Mapping node (+ Texture Coordinate) before Environment Texture for rotation
+Q8.  C, Overcast sky = ~6,500K
+Q9.  C, 12–18 lights per average Sprite Fright shot
+Q10. C, Rim light separates subject from background, adds depth
+Q11. D, Candlelight = ~1,800K
+Q12. B, Sun light = parallel rays (directional, infinite)
+Q13. C, Spot light = theatrical/flashlight directional accent
+Q14. B, Strength on Background node = environment lighting intensity
+Q15. C, "Every light has a reason" (motivated source)
+Q16. D, Point light = omnidirectional
+Q17. D, Comedy/family = 2:1 to 3:1 (low contrast, visible fill)
+Q18. B, Sprite Fright HDRI strength = 0.3–0.6
+Q19. C, Key-to-fill ratio = intensity ratio of key vs. fill
+Q20. C, Enable "Use Temperature" on light → enter Kelvin value
+Q21. B, .hdr and .exr are Blender's HDR environment formats
+Q22. C, Motivated = light source explained by something in the scene
+Q23. C, Cool rim (6,500K) suggests sky bounce light from above
+Q24. D, Rotate HDRI so brightest point aligns with key light direction
 ```

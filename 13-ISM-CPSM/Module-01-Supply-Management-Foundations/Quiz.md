@@ -106,7 +106,7 @@ D. Accounts payable
 ### Q13. In a hybrid (center-led) model, corporate supply typically owns: *(Remember)*
 A. All transactional POs across the organization
 B. Strategic categories, policy, and standards; local teams handle tactical/local spend
-C. Nothing — every BU operates independently
+C. Nothing, every BU operates independently
 D. Only the supplier scorecards
 
 ---
@@ -184,7 +184,7 @@ D. Risk and ethics oversight of the supply base
 ---
 
 ### Q23. A new buyer asks: "Why don't we always centralize? Leverage is best, right?" The BEST answer: *(Evaluate)*
-A. We should — centralized is universally cheapest
+A. We should, centralized is universally cheapest
 B. Centralization maximizes leverage but can damage responsiveness when business units have very different needs; the optimal model depends on context
 C. Decentralized is always best because it's faster
 D. It depends on what software we use
@@ -218,7 +218,7 @@ D. Outsource procurement to a third party
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Acquiring goods/services and managing the supply base to deliver value**
-ISM defines supply management strategically — purchasing is a subset.
+ISM defines supply management strategically, purchasing is a subset.
 
 ### Q2: **C. Designing a multi-year category strategy**
 The others are tactical. CPSM rewards strategic time allocation.
@@ -230,13 +230,13 @@ Alignment matters. Reverse auctions on innovation-critical categories destroy co
 Classic high-supplier-power conditions. Mitigation: dual-source, backward integrate, or lock in long-term contracts.
 
 ### Q5: **B. Support activity**
-Porter placed procurement as support, alongside HR, technology, and firm infrastructure. Modern supply management influences primary activities — but on the exam, Porter's classification is **support**.
+Porter placed procurement as support, alongside HR, technology, and firm infrastructure. Modern supply management influences primary activities, but on the exam, Porter's classification is **support**.
 
 ### Q6: **B. Decentralized or hybrid with local autonomy**
 Diverse, unrelated business units gain little from centralized leverage and lose responsiveness.
 
 ### Q7: **B. Provides methodology, tools, and analytics**
-CoE enables — it doesn't own all the spend. Influence without authority.
+CoE enables, it doesn't own all the spend. Influence without authority.
 
 ### Q8: **A. Stage 1–2 (reactive / mechanical)**
 Price-variance-only with no analytics = early maturity. Move forward with spend analytics and category strategies.
@@ -251,7 +251,7 @@ Proprietary content with trade secrets is a classic "make" case to protect IP an
 Module 4 will go deeper. CPSM expects partnership thinking on strategic suppliers.
 
 ### Q12: **B. HR / Marketing / Board**
-Ethical sourcing affects brand and reputation — owned by HR, Marketing, and ultimately the Board.
+Ethical sourcing affects brand and reputation, owned by HR, Marketing, and ultimately the Board.
 
 ### Q13: **B. Strategic categories, policy, standards; BUs handle tactical/local**
 That's the hybrid (center-led) model in a sentence.
@@ -269,7 +269,7 @@ Senior leaders own strategy. Spending 60% on tactical issues is a sign of role m
 Make-or-buy is an objective analysis. Personal preference has no place in it.
 
 ### Q18: **B. Understand competitive structure of a supply market**
-That's exactly what Five Forces does — it scopes the supply market before sourcing strategy.
+That's exactly what Five Forces does, it scopes the supply market before sourcing strategy.
 
 ### Q19: **C. Engage Marketing, expedite fast-track qualification, align on contingency**
 Balance stakeholder needs with risk. Saying "no" or "yes" outright is suboptimal. Supply manages risk while serving the business.
@@ -281,7 +281,7 @@ Primary activities (Porter): inbound logistics, operations, outbound logistics, 
 Aligned. B contradicts (auctioning R&D). C contradicts (niche firm sourcing from commodity giants is misaligned). D is more aligned with a differentiator than a cost-leader.
 
 ### Q22: **C. Setting customer pricing**
-Pricing the company's products is Marketing/Sales/Finance — not supply management.
+Pricing the company's products is Marketing/Sales/Finance, not supply management.
 
 ### Q23: **B. Centralization maximizes leverage but can damage responsiveness**
 The honest answer. CPSM rewards nuanced trade-off thinking.

@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Cohort Analysis 101 — Retention &amp; LTV</p>
+      <p class="vg-title">Cohort Analysis 101, Retention &amp; LTV</p>
       <p class="vg-creator">ChartMogul</p>
       <span class="vg-duration">⏱ 22 min · The canonical tutorial</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Meta Advantage+ Audience — How It Replaces Lookalikes</p>
+      <p class="vg-title">Meta Advantage+ Audience, How It Replaces Lookalikes</p>
       <p class="vg-creator">Meta Blueprint</p>
       <span class="vg-duration">⏱ 15 min · The 2024+ default</span>
     </div>
@@ -144,10 +144,10 @@
 
 ## ✅ After watching
 
-1. Read a cohort matrix — what do row trends mean?
+1. Read a cohort matrix, what do row trends mean?
 2. The three canonical retention curve shapes?
 3. Why are average retention numbers misleading?
-4. Look-alike vs Advantage+ — when to use which?
+4. Look-alike vs Advantage+, when to use which?
 5. Define the "death spiral" pre-churn pattern.
 
 If you can answer all 5 in under 8 minutes, you're ready for the [Quiz](./Quiz.md).

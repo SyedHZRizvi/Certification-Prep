@@ -15,7 +15,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">How to Build a VFX Demo Reel That Gets You Hired</div>
     <div class="vg-card-meta">Film Riot / VFX career channel · ~20 min</div>
-    <div class="vg-card-desc">What VFX supervisors look for in a reel — structure, before/after format, shot selection, and length. With real reel critique examples.</div>
+    <div class="vg-card-desc">What VFX supervisors look for in a reel, structure, before/after format, shot selection, and length. With real reel critique examples.</div>
   </div>
 </a>
 
@@ -24,7 +24,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artist vs Compositor: Career Path Differences Explained</div>
     <div class="vg-card-meta">VFX career channel · ~16 min</div>
-    <div class="vg-card-desc">The distinction between the VFX artist and compositor career tracks — skills, typical day, career progression, and salaries.</div>
+    <div class="vg-card-desc">The distinction between the VFX artist and compositor career tracks, skills, typical day, career progression, and salaries.</div>
   </div>
 </a>
 
@@ -33,7 +33,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">Working at ILM: Inside Industrial Light & Magic</div>
     <div class="vg-card-meta">ILM / VFX career interview · ~18 min</div>
-    <div class="vg-card-desc">What it's like to work at ILM — the specialization culture, project types, hiring standards, and career trajectory.</div>
+    <div class="vg-card-desc">What it's like to work at ILM, the specialization culture, project types, hiring standards, and career trajectory.</div>
   </div>
 </a>
 
@@ -42,7 +42,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">Freelance VFX Career: Rates, Getting Clients, and Building Your Business</div>
     <div class="vg-card-meta">Film Riot · ~17 min</div>
-    <div class="vg-card-desc">How to build a freelance VFX career — day rates at different levels, finding work, invoicing, and transitioning from studio to independent.</div>
+    <div class="vg-card-desc">How to build a freelance VFX career, day rates at different levels, finding work, invoicing, and transitioning from studio to independent.</div>
   </div>
 </a>
 
@@ -68,7 +68,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Reel Critiques: Common Mistakes and How to Fix Them</div>
     <div class="vg-card-meta">VFX supervisor review channel · ~22 min</div>
-    <div class="vg-card-desc">Real reel critiques from working VFX supervisors — the most common errors that cause reels to be rejected and how to avoid them.</div>
+    <div class="vg-card-desc">Real reel critiques from working VFX supervisors, the most common errors that cause reels to be rejected and how to avoid them.</div>
   </div>
 </a>
 
@@ -77,7 +77,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">Boutique VFX Studio vs Major Studio: Which Career Path Is Right for You?</div>
     <div class="vg-card-meta">VFX career channel · ~15 min</div>
-    <div class="vg-card-desc">The practical comparison — specialization vs generalism, job security, salary, advancement speed, and creative opportunities.</div>
+    <div class="vg-card-desc">The practical comparison, specialization vs generalism, job security, salary, advancement speed, and creative opportunities.</div>
   </div>
 </a>
 
@@ -86,7 +86,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">Editing Your VFX Breakdown Reel in After Effects</div>
     <div class="vg-card-meta">Surfaced Studio · ~14 min</div>
-    <div class="vg-card-desc">Technical tutorial for assembling a professional VFX breakdown reel — split-screen, wipe transitions, timing, and export settings.</div>
+    <div class="vg-card-desc">Technical tutorial for assembling a professional VFX breakdown reel, split-screen, wipe transitions, timing, and export settings.</div>
   </div>
 </a>
 
@@ -103,7 +103,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">Getting a Job at Weta FX: New Zealand VFX Career Guide</div>
     <div class="vg-card-meta">Weta FX / career channel · ~15 min</div>
-    <div class="vg-card-desc">How to target and get hired at Weta FX in Wellington — reel requirements, relocation, and what the studio culture is like.</div>
+    <div class="vg-card-desc">How to target and get hired at Weta FX in Wellington, reel requirements, relocation, and what the studio culture is like.</div>
   </div>
 </a>
 
@@ -112,7 +112,7 @@ title: "Module 10 Videos: VFX Breakdown Reel & Career"
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Industry Job Market: What's Changed in 2025–2026</div>
     <div class="vg-card-meta">VFX industry news channel · ~18 min</div>
-    <div class="vg-card-desc">The current state of the VFX job market — streaming platform impact, remote work, AI tools, and where hiring is happening in 2026.</div>
+    <div class="vg-card-desc">The current state of the VFX job market, streaming platform impact, remote work, AI tools, and where hiring is happening in 2026.</div>
   </div>
 </a>
 

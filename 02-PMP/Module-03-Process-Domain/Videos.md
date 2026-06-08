@@ -18,7 +18,7 @@
 
 # 🎥 PMP Module 3 Videos: Process Domain (50% of exam!)
 
-> **How to use:** Click any card to search YouTube. Watch in order. Pause and take notes. Process is half the exam — don't skim.
+> **How to use:** Click any card to search YouTube. Watch in order. Pause and take notes. Process is half the exam, don't skim.
 
 ## ⭐ Essential watching (~90 min)
 

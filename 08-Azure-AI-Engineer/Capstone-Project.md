@@ -1,12 +1,12 @@
-# Capstone Project — Azure AI Engineer (AI-102)
+# Capstone Project, Azure AI Engineer (AI-102)
 
-> **Pedagogical intent.** This capstone is the synthesis of every module in `08-Azure-AI-Engineer/`. You will design — and partially build — a production-grade GenAI system end-to-end under realistic constraints. The grading rubric mirrors the *implicit* rubric Microsoft would apply to a senior Azure AI engineer interview at a mid-market enterprise.
+> **Pedagogical intent.** This capstone is the synthesis of every module in `08-Azure-AI-Engineer/`. You will design and partially build a production-grade GenAI system end-to-end under realistic constraints. The grading rubric mirrors the *implicit* rubric Microsoft would apply to a senior Azure AI engineer interview at a mid-market enterprise.
 
 ---
 
 ## Brief
 
-You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insurance** — a 1,800-person mid-market US property-and-casualty insurer ($1.4B annual gross premiums; HQ in Hartford, CT; regulated under state DOI rules + emerging AI insurance regulations and NAIC model laws). The CIO has given you a 20-week mandate: stand up a **production-grade GenAI-powered claims processing system** covering the full intake → triage → routing → adjuster-summary lifecycle, on Azure.
+You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insurance**, a 1,800-person mid-market US property-and-casualty insurer ($1.4B annual gross premiums; HQ in Hartford, CT; regulated under state DOI rules + emerging AI insurance regulations and NAIC model laws). The CIO has given you a 20-week mandate: stand up a **production-grade GenAI-powered claims processing system** covering the full intake → triage → routing → adjuster-summary lifecycle, on Azure.
 
 **Required platform components.**
 - Azure OpenAI Service (GPT-4o family + embeddings).
@@ -22,13 +22,13 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 - **Security:** No keys in code; Private Endpoints + disabled public network access; Customer-Managed Keys (CMK) via Key Vault for at-rest encryption of training data and search index; approved Azure OpenAI **abuse-monitoring opt-out** for PHI flows.
 - **Cost ceiling:** $720K/year all-in (Azure consumption + Foundry features). Inflation-adjusted scenarios required for the cost forecast.
 - **Operational:** Go/no-go review against the current Microsoft AI-102 blueprint sections (Plan + Manage; Decision Support; Computer Vision; NLP; Knowledge Mining + Document Intelligence; Generative AI Solutions).
-- **Timeline:** 20 weeks. You will not ship "perfectly" — the capstone evaluates how you sequence risk and what you defer.
+- **Timeline:** 20 weeks. You will not ship "perfectly", the capstone evaluates how you sequence risk and what you defer.
 
 ---
 
 ## Deliverables (7 artifacts)
 
-1. **Target architecture document.** Diagram-driven (you may hand-draw or use any tool that exports PDF/PNG). Must show: Hub → Project; Connections; Azure OpenAI deployments (with SKU mix — Standard / PTU / Global Batch — and justification per workload); AI Search index schema (vector dimensions, semantic config, security trimming); Document Intelligence model topology (Custom Neural + Custom Classifier for routing); Content Safety placement; network + identity boundaries; Application Insights wiring. Cite **Vaswani et al. (2017)** for the transformer foundation, **Microsoft Responsible AI Standard v2 (2022)** for the RAI alignment, and **NIST AI RMF 1.0 (2023)** for federal-reference governance.
+1. **Target architecture document.** Diagram-driven (you may hand-draw or use any tool that exports PDF/PNG). Must show: Hub → Project; Connections; Azure OpenAI deployments (with SKU mix Standard / PTU / Global Batch and justification per workload); AI Search index schema (vector dimensions, semantic config, security trimming); Document Intelligence model topology (Custom Neural + Custom Classifier for routing); Content Safety placement; network + identity boundaries; Application Insights wiring. Cite **Vaswani et al. (2017)** for the transformer foundation, **Microsoft Responsible AI Standard v2 (2022)** for the RAI alignment, and **NIST AI RMF 1.0 (2023)** for federal-reference governance.
 
 2. **RAG evaluation harness with citation provenance.** Build (in code, or specify in detail) a **Foundry Evaluation** workflow with a held-out golden dataset of ≥500 claim-document Q&A pairs. Must score Groundedness, Relevance, Coherence, Fluency, Similarity, Safety. Define your **release-gate thresholds** (e.g., Groundedness ≥ 0.85 on the validation set). Show example citation-provenance output linking adjuster-summary sentences to source paragraphs in the policy PDF.
 
@@ -57,7 +57,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 | **Go/no-go review** | 10 | Honest red/yellow/green; phase-2 plan; cross-referenced to AI-102 blueprint sections | Some sections scored; partial blueprint mapping | Generic "we're ready" or "nothing's ready" |
 | **Written argument quality** | 5 | Defends every controversial choice with named-source citations | Some defense; few citations | Assertions without justification |
 
-**Pass mark:** 75/100. **"Excellent — graduate-level professional quality:** 90+/100.
+**Pass mark:** 75/100. **"Excellent, graduate-level professional quality:** 90+/100.
 
 ---
 
@@ -91,7 +91,7 @@ You have just been hired as the **Azure AI Engineer** at **Harbor Mutual Insuran
 You should produce, in `~/capstone-azure-ai-engineer/`:
 
 - `architecture.md` + `architecture-diagram.pdf`
-- `eval-harness/` — golden dataset (CSV/JSONL), the eval-config YAML/JSON for Foundry, sample run output
+- `eval-harness/`, golden dataset (CSV/JSONL), the eval-config YAML/JSON for Foundry, sample run output
 - `rai-control-plan.md`
 - `security-review.md` + `network-diagram.pdf`
 - `cost-forecast.xlsx` or `cost-forecast.md`
@@ -107,7 +107,7 @@ You should produce, in `~/capstone-azure-ai-engineer/`:
 ## Optional stretch goals
 
 - Add a **second Agent** for fraud-flag classification on the claim summary, gated on a confidence threshold.
-- Add a **Speech in/out** layer for adjusters to dictate notes and receive audio summaries (TTS Neural Voice — *not* CNV).
+- Add a **Speech in/out** layer for adjusters to dictate notes and receive audio summaries (TTS Neural Voice, *not* CNV).
 - Add a **multilingual** flow (Translator + region-pinned deployments) for a hypothetical EU subsidiary.
 - Build a **drift-detection** loop: when the eval-baseline groundedness drops > 5%, file a Microsoft support ticket for the model upgrade and freeze the deployment.
 - Build a **prompt-injection red-team** in PyRIT and run it against your system; document mitigations.
@@ -117,9 +117,9 @@ You should produce, in `~/capstone-azure-ai-engineer/`:
 ## Why this Capstone passes the graduate-level standard
 
 - **Integrates ≥ 60% of the course modules** (Modules 1, 2, 5, 7, 8 are load-bearing; Modules 3, 4, 6 surface in extensions).
-- **Requires technical work AND written justification** — the rubric rewards the "argue your choice" pedagogy Harvard MBA cases use.
-- **Real, defensible scenario** — Harbor Mutual is fictional, but the regulatory, cost, and architectural constraints are the ones a mid-market insurer would face in 2026.
-- **Maps to the AI-102 blueprint** — passing this capstone implies passing the certification, with the bonus that you will have actual deployment artifacts and a story to tell at interview.
+- **Requires technical work AND written justification**, the rubric rewards the "argue your choice" pedagogy Harvard MBA cases use.
+- **Real, defensible scenario**, Harbor Mutual is fictional, but the regulatory, cost, and architectural constraints are the ones a mid-market insurer would face in 2026.
+- **Maps to the AI-102 blueprint**, passing this capstone implies passing the certification, with the bonus that you will have actual deployment artifacts and a story to tell at interview.
 
 Good luck. Ship something defensible. Then defend it.
 

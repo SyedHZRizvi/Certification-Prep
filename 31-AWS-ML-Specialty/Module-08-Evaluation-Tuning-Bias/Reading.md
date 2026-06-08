@@ -1,12 +1,12 @@
 # Module 8: Evaluation, Hyperparameter Tuning & Bias 🎯
 
-> **Why this module matters:** Domain 3 of MLS-C01 (Modeling) is 36% of the exam, and a big chunk of it — perhaps a third — is *evaluation*: confusion matrices, ROC vs PR-AUC, RMSE vs MAE, cross-validation, hyperparameter tuning strategies, and the operational side of fairness (Clarify SHAP, model cards, A2I). This module makes you fluent in the *measurement* side of ML: how do you *know* a model is good?
+> **Why this module matters:** Domain 3 of MLS-C01 (Modeling) is 36% of the exam, and a big chunk of it perhaps a third is *evaluation*: confusion matrices, ROC vs PR-AUC, RMSE vs MAE, cross-validation, hyperparameter tuning strategies, and the operational side of fairness (Clarify SHAP, model cards, A2I). This module makes you fluent in the *measurement* side of ML: how do you *know* a model is good?
 
 > **Prerequisites for this module.** Modules 1–7 of this course. Helpful background:
 > - High-school statistics (confidence intervals, hypothesis testing)
 > - Module 1's metric overview
 > - Module 4's hyperparameter coverage
-> - Module 3's pre-training bias section (Clarify) — we now layer post-training bias
+> - Module 3's pre-training bias section (Clarify), we now layer post-training bias
 
 ---
 
@@ -18,7 +18,7 @@ Meet Daniel. He led the ML team at a regional US bank in 2023, building a loan-d
 - AUC: **0.92**
 - F1: **0.79**
 
-The model was launched. Three months later, the compliance team flagged it. The model approved 71% of loan applications from one demographic group and 41% from another — even when applicants had similar credit scores and incomes. The bank was investigated by federal regulators and ultimately fined.
+The model was launched. Three months later, the compliance team flagged it. The model approved 71% of loan applications from one demographic group and 41% from another, even when applicants had similar credit scores and incomes. The bank was investigated by federal regulators and ultimately fined.
 
 Daniel had never run a **post-training bias report**. He had never produced **SHAP explanations** for declined applications. He had never set up **A2I** human review for low-confidence outcomes. The model's headline accuracy was real, but the failure mode was systemic.
 
@@ -28,15 +28,15 @@ That is the lesson of this module. Accuracy alone is not enough. You must measur
 
 ---
 
-## 📐 Train, Validation, Test — The Sacred Split
+## 📐 Train, Validation, Test, The Sacred Split
 
 This is the foundation that everything else builds on. **Memorise this.**
 
 | Split | Purpose | Touch it? |
 |-------|---------|-----------|
-| **Train** | Fit the model's parameters (weights) | Yes — heavily |
-| **Validation** | Tune hyperparameters; pick best model; early stopping | Yes — repeatedly |
-| **Test** | Final unbiased estimate of generalisation | **TOUCH ONCE** — at the very end |
+| **Train** | Fit the model's parameters (weights) | Yes, heavily |
+| **Validation** | Tune hyperparameters; pick best model; early stopping | Yes, repeatedly |
+| **Test** | Final unbiased estimate of generalisation | **TOUCH ONCE**, at the very end |
 
 🚨 **Cardinal sin:** *using the test set to tune hyperparameters*. Then your reported test metric is biased upward. The test set is a one-shot resource.
 
@@ -47,7 +47,7 @@ This is the foundation that everything else builds on. **Memorise this.**
 | Small (<10K) | 60 / 20 / 20 |
 | Medium (10K – 1M) | 70 / 15 / 15 or 80 / 10 / 10 |
 | Large (>1M) | 98 / 1 / 1 (just need enough samples in val/test for statistical significance) |
-| Time-series | Sequential split — train on past, val on near future, test on far future |
+| Time-series | Sequential split, train on past, val on near future, test on far future |
 
 🚨 **Trap.** Random splitting of time series leaks future into past. Always use **time-based / chronological** splits for time-series.
 
@@ -60,17 +60,17 @@ When the dataset is small, a single train/val split is noisy. **K-fold cross-val
 | Method | Use |
 |--------|-----|
 | **K-fold CV** | Standard; K=5 or K=10 typical |
-| **Stratified K-fold** | Classification with imbalanced classes — preserves class proportions in folds |
+| **Stratified K-fold** | Classification with imbalanced classes, preserves class proportions in folds |
 | **Leave-One-Out (LOO)** | Tiny datasets only (K = N) |
-| **Time-series CV (walk-forward / expanding window)** | Time-series data — never train on future |
-| **Group K-fold** | Records share an identifier (e.g. patient_id) — keep groups intact in each fold |
+| **Time-series CV (walk-forward / expanding window)** | Time-series data, never train on future |
+| **Group K-fold** | Records share an identifier (e.g. patient_id), keep groups intact in each fold |
 | **Repeated K-fold** | Run K-fold multiple times with different splits |
 
 🎯 **Exam pattern.** *"Cross-validate a churn model on 5,000 customers where each customer has multiple records."* → **Group K-fold** by customer_id (otherwise data leaks across folds).
 
 ---
 
-## 📊 Classification Metrics — The Confusion Matrix Foundation
+## 📊 Classification Metrics, The Confusion Matrix Foundation
 
 Every classification metric derives from the **confusion matrix**:
 
@@ -107,7 +107,7 @@ All of the above depend on a chosen decision threshold (default 0.5). For thresh
 
 🎯 **Exam pattern.** *"Evaluate a fraud detector on a 99.5% / 0.5% imbalanced dataset."* → **PR-AUC** + **precision-recall curve**, NOT ROC-AUC and NOT accuracy.
 
-🎯 **Exam pattern.** *"FN costs $100k, FP costs $50."* → use **recall** (or **F-beta with β>1**) — minimise FN.
+🎯 **Exam pattern.** *"FN costs $100k, FP costs $50."* → use **recall** (or **F-beta with β>1**), minimise FN.
 
 🎯 **Exam pattern.** *"Cost-sensitive learning."* → Weight losses by class costs; equivalent to threshold tuning at inference time.
 
@@ -143,7 +143,7 @@ For an MLS-C01 question, "**lower the decision threshold**" usually pairs with "
 
 ---
 
-## 🎯 Hyperparameter Tuning — SageMaker Automatic Model Tuning (HPO)
+## 🎯 Hyperparameter Tuning, SageMaker Automatic Model Tuning (HPO)
 
 SageMaker's built-in HPO is **Bayesian optimisation** with optional random and grid search.
 
@@ -222,7 +222,7 @@ Bedrock has built-in **model evaluation jobs**:
 
 ---
 
-## 🔬 SageMaker Clarify — Post-Training Bias & SHAP
+## 🔬 SageMaker Clarify, Post-Training Bias & SHAP
 
 We saw pre-training bias in Module 3. Now we cover **post-training** (after the model is trained).
 
@@ -242,7 +242,7 @@ We saw pre-training bias in Module 3. Now we cover **post-training** (after the 
 
 🎯 **Exam pattern.** *"After deployment, the model approves 65% of one group and 41% of another."* → **Disparate Impact (DI) or DPPL via Clarify post-training bias job**.
 
-### SHAP — Per-Prediction Explainability
+### SHAP, Per-Prediction Explainability
 
 **SHAP (SHapley Additive exPlanations)** uses cooperative game theory to attribute a prediction to its feature contributions. SageMaker Clarify produces SHAP explanations as part of the bias workflow.
 
@@ -279,9 +279,9 @@ A **model card** is a structured document describing a model's intended use, per
 
 ---
 
-## 🤝 A2I — Human Review (Recap)
+## 🤝 A2I, Human Review (Recap)
 
-Already covered in Module 6 — applies here as a fairness/quality tool: route low-confidence predictions OR predictions with detected bias to humans for review and labelling.
+Already covered in Module 6, applies here as a fairness/quality tool: route low-confidence predictions OR predictions with detected bias to humans for review and labelling.
 
 ---
 
@@ -299,15 +299,15 @@ Already covered in Module 6 — applies here as a fairness/quality tool: route l
 
 ---
 
-## 📖 Case Study — Amazon's Internal "Model Reviews"
+## 📖 Case Study, Amazon's Internal "Model Reviews"
 
-**Situation.** Amazon (the retailer) operates 700+ production ML models across Search, Personalization, Pricing, Fraud, Logistics. By 2019, model proliferation outpaced review — questionable models occasionally shipped to production.
+**Situation.** Amazon (the retailer) operates 700+ production ML models across Search, Personalization, Pricing, Fraud, Logistics. By 2019, model proliferation outpaced review, questionable models occasionally shipped to production.
 
 **Solution (internal program, partially public via re:Invent 2022 talks).**
 - **Mandatory pre-launch review** for every customer-impacting model
-- **Standard metric reporting** — calibration, fairness, drift readiness
+- **Standard metric reporting**, calibration, fairness, drift readiness
 - **Mandatory model card** in a centralised registry
-- **Tiered review** — Tier 1 (high-impact, like Search ranking) gets executive review; Tier 3 (internal-only) gets peer review
+- **Tiered review**, Tier 1 (high-impact, like Search ranking) gets executive review; Tier 3 (internal-only) gets peer review
 - **Quarterly Clarify-style bias audit**
 - **Human-in-the-loop** for any model classified as "high stakes" (fraud declines, account suspensions)
 
@@ -326,7 +326,7 @@ Already covered in Module 6 — applies here as a fairness/quality tool: route l
 | "Cross-validation works on any data" | Time-series needs walk-forward; grouped data needs Group K-fold. |
 | "Bayesian HPO is always better than random search" | At small budgets (<20 trials), random is competitive. |
 | "Clarify only does bias detection" | It also produces SHAP explanations. |
-| "Model Monitor handles bias drift" | Yes — pair with Clarify (Module 9). |
+| "Model Monitor handles bias drift" | Yes, pair with Clarify (Module 9). |
 | "Fine-tuning eliminates bias" | Often amplifies bias from training data. |
 | "More data fixes all fairness issues" | Only if the new data is representative. |
 | "ROC-AUC and PR-AUC always agree" | They diverge sharply on imbalanced data. |
@@ -345,7 +345,7 @@ Already covered in Module 6 — applies here as a fairness/quality tool: route l
 7. **"Tune XGBoost with fewest jobs"** → **Bayesian**.
 8. **"Document model use for compliance"** → **SageMaker Model Card**.
 9. **"Detect post-training bias on demographic facet"** → **Clarify post-training bias** (DI, DPPL).
-10. **"Detect bias drift in production"** → Module 9 — **Model Monitor + Clarify**.
+10. **"Detect bias drift in production"** → Module 9, **Model Monitor + Clarify**.
 
 ---
 
@@ -353,7 +353,7 @@ Already covered in Module 6 — applies here as a fairness/quality tool: route l
 
 | Term | Definition |
 |------|------------|
-| **Train / val / test split** | Three disjoint sets — fit / tune / final evaluate |
+| **Train / val / test split** | Three disjoint sets, fit / tune / final evaluate |
 | **K-fold CV** | Split into K folds, average results |
 | **Stratified K-fold** | Preserves class proportions |
 | **Group K-fold** | Keeps grouped records together |
@@ -377,9 +377,9 @@ Already covered in Module 6 — applies here as a fairness/quality tool: route l
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
-1. **The "fair model" definition wars.** Demographic parity, equal opportunity, equalised odds — all defensible definitions of fairness but **provably mutually incompatible** in most realistic settings. Pick a use case (lending, hiring, parole) and argue which definition is best — and what you give up.
+1. **The "fair model" definition wars.** Demographic parity, equal opportunity, equalised odds all defensible definitions of fairness but **provably mutually incompatible** in most realistic settings. Pick a use case (lending, hiring, parole) and argue which definition is best and what you give up.
 2. **Cross-validation's hidden trap on time-series.** Random K-fold leaks future into past. Yet many beginner notebooks do this. Sketch a thought experiment showing how bad this can be on a stock-price forecaster.
 3. **Hyperparameter tuning's diminishing returns.** Beyond a point, more HPO trials yield no benefit. How would you estimate the right budget?
 4. **SHAP's limitations.** SHAP attributes contributions assuming feature independence. In a model with strongly correlated features, SHAP can be misleading. How would you mitigate?
@@ -402,15 +402,15 @@ Already covered in Module 6 — applies here as a fairness/quality tool: route l
 You now know:
 
 - 📐 The **train / validation / test** split discipline and CV variants (K-fold, stratified, group, walk-forward)
-- 📊 **Classification metrics** — accuracy, precision, recall, F1, F-beta, ROC AUC, PR AUC — and when each is the right one
-- 📈 **Regression metrics** — RMSE, MAE, MAPE, R², quantile loss
-- 🎯 **SageMaker HPO** — Bayesian (default), Random, Grid, **Hyperband**
-- 🤖 **LLM evaluation** — BLEU / ROUGE / BERTScore / MMLU / LLM-as-judge / Bedrock Evaluations
-- 🔬 **SageMaker Clarify post-training bias** — DI, DPPL, DAR, DRR, AD, RD, SD, FT, TE
-- 💡 **SHAP** — global and local feature attribution; TreeSHAP / KernelSHAP / DeepSHAP
+- 📊 **Classification metrics** accuracy, precision, recall, F1, F-beta, ROC AUC, PR AUC and when each is the right one
+- 📈 **Regression metrics**, RMSE, MAE, MAPE, R², quantile loss
+- 🎯 **SageMaker HPO**, Bayesian (default), Random, Grid, **Hyperband**
+- 🤖 **LLM evaluation**, BLEU / ROUGE / BERTScore / MMLU / LLM-as-judge / Bedrock Evaluations
+- 🔬 **SageMaker Clarify post-training bias**, DI, DPPL, DAR, DRR, AD, RD, SD, FT, TE
+- 💡 **SHAP**, global and local feature attribution; TreeSHAP / KernelSHAP / DeepSHAP
 - 🃏 **SageMaker Model Cards** for documentation
 - 🤝 **A2I** as the human-review safety net
-- 📖 **Amazon's internal model-review program** — the operational template
+- 📖 **Amazon's internal model-review program**, the operational template
 
 **Next:**
 1. 🎥 [`Videos.md`](./Videos.md)
@@ -423,26 +423,26 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **SageMaker Clarify** — `docs.aws.amazon.com/sagemaker/latest/dg/clarify.html`
-- 📖 **SageMaker Model Cards** — `docs.aws.amazon.com/sagemaker/latest/dg/model-cards.html`
-- 📖 **SageMaker Automatic Model Tuning** — `docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html`
+- 📖 **SageMaker Clarify**, `docs.aws.amazon.com/sagemaker/latest/dg/clarify.html`
+- 📖 **SageMaker Model Cards**, `docs.aws.amazon.com/sagemaker/latest/dg/model-cards.html`
+- 📖 **SageMaker Automatic Model Tuning**, `docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html`
 
 **Textbooks**
-- 📖 **Géron (2022).** *Hands-On ML…* (3rd ed.) — chapters 3 (classification metrics), 4 (training)
-- 📖 **Bishop (2006).** *PRML.* — chapter 1 (decision theory), 2 (probability)
+- 📖 **Géron (2022).** *Hands-On ML…* (3rd ed.), chapters 3 (classification metrics), 4 (training)
+- 📖 **Bishop (2006).** *PRML.*, chapter 1 (decision theory), 2 (probability)
 
 **Academic foundations**
-- 📄 **Lundberg & Lee (2017).** *A Unified Approach to Interpreting Model Predictions.* NIPS — SHAP origin
-- 📄 **Hardt, Price, Srebro (2016).** *Equality of Opportunity in Supervised Learning.* NeurIPS — fairness definitions
+- 📄 **Lundberg & Lee (2017).** *A Unified Approach to Interpreting Model Predictions.* NIPS, SHAP origin
+- 📄 **Hardt, Price, Srebro (2016).** *Equality of Opportunity in Supervised Learning.* NeurIPS, fairness definitions
 - 📄 **Mitchell et al. (2019).** *Model Cards for Model Reporting.* FAT*
 
 **Industry**
-- 📰 **Christoph Molnar's *Interpretable Machine Learning* (free online book)** — best ML interpretability text
-- 📰 **Fairlearn / IBM AIF360 documentation** — open-source fairness toolkits
+- 📰 **Christoph Molnar's *Interpretable Machine Learning* (free online book)**, best ML interpretability text
+- 📰 **Fairlearn / IBM AIF360 documentation**, open-source fairness toolkits
 
 ---
 
-## 🛠️ Appendix A — Worked Example: SageMaker Automatic Model Tuning
+## 🛠️ Appendix A, Worked Example: SageMaker Automatic Model Tuning
 
 ```python
 from sagemaker.tuner import (
@@ -510,7 +510,7 @@ best_estimator = tuner.best_estimator()
 
 ---
 
-## 🛠️ Appendix B — Worked Example: SageMaker Clarify Bias & SHAP
+## 🛠️ Appendix B, Worked Example: SageMaker Clarify Bias & SHAP
 
 ```python
 from sagemaker.clarify import (
@@ -586,15 +586,15 @@ clarify.run_explainability(
 
 🎯 **Exam pattern.** Recognise the **three methods** on `SageMakerClarifyProcessor`:
 
-- `run_pre_training_bias` — Module 3 territory (data-level)
-- `run_post_training_bias` — this module (model-level: DI, DPPL, DAR, ...)
-- `run_explainability` — SHAP, both global and local
+- `run_pre_training_bias`, Module 3 territory (data-level)
+- `run_post_training_bias`, this module (model-level: DI, DPPL, DAR, ...)
+- `run_explainability`, SHAP, both global and local
 
 The outputs land as JSON / HTML reports in S3; can be attached to a Model Card or referenced by Model Monitor's bias-drift schedule.
 
 ---
 
-## 🛠️ Appendix C — Bedrock Model Evaluation Example
+## 🛠️ Appendix C, Bedrock Model Evaluation Example
 
 ```python
 import boto3
@@ -633,7 +633,7 @@ For **human evaluation**, the same API supports a `human` config with a workforc
 
 ---
 
-## 🛠️ Appendix D — Choosing The Right Metric — Decision Tree
+## 🛠️ Appendix D Choosing The Right Metric Decision Tree
 
 ```
 What is the task?
@@ -682,4 +682,4 @@ What is the task?
     └─ Post-training → DI, DPPL, DAR, DRR, AD, RD, SD, FT, TE
 ```
 
-🎯 **Memorise this decision tree.** Many MLS-C01 scenario questions resolve to "which metric?" — the wrong choice trips many candidates.
+🎯 **Memorise this decision tree.** Many MLS-C01 scenario questions resolve to "which metric?", the wrong choice trips many candidates.

@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -281,7 +281,7 @@
 **A:** Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability.
 
 **Q:** Under the Shared Responsibility Model, who patches the OS on an EC2 instance?
-**A:** The customer (EC2 is IaaS). For RDS, AWS patches the OS — RDS is managed.
+**A:** The customer (EC2 is IaaS). For RDS, AWS patches the OS, RDS is managed.
 
 **Q:** What does Multi-AZ NOT protect against?
 **A:** A full regional outage. For that, you need multi-region replication.
@@ -321,13 +321,13 @@
 **A:** Prevents the "confused deputy" problem when a 3rd-party SaaS vendor accesses your AWS account. The vendor must present the agreed-upon ExternalId.
 
 **Q:** Identity-based policy + Resource-based policy in same account: union or intersection?
-**A:** Union — either allowing is sufficient (absent explicit Deny). Cross-account is intersection.
+**A:** Union, either allowing is sufficient (absent explicit Deny). Cross-account is intersection.
 
 **Q:** What is the modern way to give humans SSO access to many AWS accounts?
 **A:** AWS IAM Identity Center (formerly AWS SSO) with permission sets federated to the corporate IdP.
 
 **Q:** How do you give a mobile app's end users temporary AWS credentials?
-**A:** Amazon Cognito Identity Pools — issues temporary STS credentials.
+**A:** Amazon Cognito Identity Pools, issues temporary STS credentials.
 
 **Q:** What is a permissions boundary?
 **A:** A per-identity (user/role) cap on the MAXIMUM permissions that identity can ever have, regardless of identity policies attached.
@@ -343,16 +343,16 @@
 **A:** Spot (up to 90%) > Reserved Instance Standard 3yr all-upfront (~72%) > Compute Savings Plan (~66%) > Convertible RI (~54%) > On-Demand (0%).
 
 **Q:** When should you use Spot Instances?
-**A:** Fault-tolerant batch workloads with checkpointing — ML training, big-data processing, CI/CD, stateless web tiers.
+**A:** Fault-tolerant batch workloads with checkpointing, ML training, big-data processing, CI/CD, stateless web tiers.
 
 **Q:** What does a Compute Savings Plan cover?
-**A:** Hourly compute spend across EC2 (any family, region, size, OS), Fargate, and Lambda — most flexible.
+**A:** Hourly compute spend across EC2 (any family, region, size, OS), Fargate, and Lambda, most flexible.
 
 **Q:** Difference between ALB, NLB, and GWLB?
 **A:** ALB = L7 HTTP/HTTPS (path/host routing). NLB = L4 TCP/UDP (static IPs, ultra-low latency). GWLB = inserts 3rd-party network appliances (firewalls/IDS) via GENEVE.
 
 **Q:** What are the 3 EC2 placement group types?
-**A:** Cluster (same rack, lowest latency, 1 AZ); Spread (separate hardware, max 7/AZ); Partition (logical racks, up to 7/AZ — for Cassandra, Kafka, HDFS).
+**A:** Cluster (same rack, lowest latency, 1 AZ); Spread (separate hardware, max 7/AZ); Partition (logical racks, up to 7/AZ, for Cassandra, Kafka, HDFS).
 
 **Q:** EFS vs EBS?
 **A:** EFS is multi-AZ NFS for many concurrent EC2 instances. EBS is single-AZ block storage (mostly one instance at a time; io2 supports multi-attach same AZ).
@@ -389,13 +389,13 @@
 **A:** DX = private fiber, lowest latency, weeks to provision, NOT encrypted by default. VPN = IPSec over internet, minutes to set up.
 
 **Q:** What's PrivateLink?
-**A:** Lets you privately expose a single service (NLB-backed) to other VPCs or accounts via an Interface Endpoint — no VPC peering needed.
+**A:** Lets you privately expose a single service (NLB-backed) to other VPCs or accounts via an Interface Endpoint, no VPC peering needed.
 
 **Q:** How do you achieve highly available NAT?
 **A:** One NAT Gateway per AZ, with each AZ's private subnets routing to their own local NAT GW.
 
 **Q:** How can you block a specific malicious IP range from reaching a subnet?
-**A:** NACL with an explicit deny rule. Security Groups cannot deny — only NACLs can.
+**A:** NACL with an explicit deny rule. Security Groups cannot deny, only NACLs can.
 
 **Q:** What's an Egress-Only Internet Gateway for?
 **A:** Outbound-only IPv6 (the IPv6 analog of NAT for IPv4).
@@ -411,7 +411,7 @@
 **A:** 5 TB. Single PUT max is 5 GB; use Multipart Upload above that.
 
 **Q:** Which S3 storage class is best for unknown / shifting access patterns?
-**A:** S3 Intelligent-Tiering — auto-moves objects between tiers.
+**A:** S3 Intelligent-Tiering, auto-moves objects between tiers.
 
 **Q:** Cheapest S3 storage class for archive accessed once a year with 12-hour retrieval OK?
 **A:** S3 Glacier Deep Archive.
@@ -429,13 +429,13 @@
 **A:** Uses CloudFront edge locations to speed long-distance uploads to an S3 bucket.
 
 **Q:** What's a CloudFront Origin Access Control (OAC)?
-**A:** Modern way to restrict an S3 bucket so only a specific CloudFront distribution can access it — replaces OAI; supports SSE-KMS.
+**A:** Modern way to restrict an S3 bucket so only a specific CloudFront distribution can access it, replaces OAI; supports SSE-KMS.
 
 **Q:** Signed URL vs Signed Cookie in CloudFront?
 **A:** Signed URL = time-limited access to ONE object. Signed Cookie = access to MANY objects for a user session.
 
 **Q:** What does S3 Select do?
-**A:** Server-side SQL on CSV/JSON/Parquet objects — retrieve only matching rows without downloading the whole object.
+**A:** Server-side SQL on CSV/JSON/Parquet objects, retrieve only matching rows without downloading the whole object.
 
 ---
 
@@ -451,12 +451,12 @@
 **A:** Spiky, idle, or unpredictable relational workloads that benefit from fine-grained per-second auto-scaling.
 
 **Q:** What is DAX?
-**A:** DynamoDB Accelerator — an in-memory cache in front of DynamoDB delivering microsecond reads for cached items. Works only with DynamoDB.
+**A:** DynamoDB Accelerator, an in-memory cache in front of DynamoDB delivering microsecond reads for cached items. Works only with DynamoDB.
 
 **Q:** DynamoDB Global Tables provide what?
-**A:** Multi-region, multi-active replication — writes accepted in any region replicate to others.
+**A:** Multi-region, multi-active replication, writes accepted in any region replicate to others.
 
-**Q:** ElastiCache Redis vs Memcached — when each?
+**Q:** ElastiCache Redis vs Memcached, when each?
 **A:** Redis when you need persistence, replication, Multi-AZ failover, sorted sets, pub/sub. Memcached for simple multi-threaded ephemeral cache.
 
 **Q:** What is Amazon Redshift designed for?
@@ -472,7 +472,7 @@
 **A:** Amazon Timestream.
 
 **Q:** What's RDS Proxy used for?
-**A:** Pooling connections in front of RDS — solves Lambda connection storms and reduces failover time.
+**A:** Pooling connections in front of RDS, solves Lambda connection storms and reduces failover time.
 
 ---
 
@@ -484,7 +484,7 @@
 **Q:** What is the SNS-to-SQS fan-out pattern?
 **A:** One SNS topic → multiple SQS subscriptions. Each subscriber gets its own copy of every message.
 
-**Q:** EventBridge vs SNS — when each?
+**Q:** EventBridge vs SNS, when each?
 **A:** EventBridge for content-based rules, SaaS partner events, schema registry, archive+replay. SNS for high-throughput fan-out at lower per-message cost.
 
 **Q:** What is an SQS Dead Letter Queue (DLQ)?
@@ -538,13 +538,13 @@
 **A:** CloudTrail = "who made this API call?" (audit). CloudWatch Logs = application logs. Config = resource configuration over time + compliance rules.
 
 **Q:** Is EC2 memory a default CloudWatch metric?
-**A:** No — install the CloudWatch Agent to publish memory and disk metrics.
+**A:** No, install the CloudWatch Agent to publish memory and disk metrics.
 
 **Q:** What does AWS Compute Optimizer do?
 **A:** ML-based rightsizing recommendations for EC2, ASGs, EBS, Lambda, and ECS Fargate. Free.
 
 **Q:** GuardDuty data sources?
-**A:** CloudTrail events, VPC Flow Logs, DNS logs — analyzed by ML. No agents required.
+**A:** CloudTrail events, VPC Flow Logs, DNS logs, analyzed by ML. No agents required.
 
 **Q:** What does Amazon Macie do?
 **A:** Discovers and protects sensitive data (PII like SSNs, credit cards) in S3 buckets.
@@ -572,16 +572,16 @@
 **A:** Backup & Restore → Pilot Light → Warm Standby → Multi-Site Active-Active.
 
 **Q:** Pilot Light pattern in AWS?
-**A:** Core data already replicating (e.g., Aurora reader); application compute is minimal or off — scale up on failover.
+**A:** Core data already replicating (e.g., Aurora reader); application compute is minimal or off, scale up on failover.
 
 **Q:** Warm Standby pattern in AWS?
-**A:** A scaled-down but functional copy of production running in the DR region — scale up to full size on failover.
+**A:** A scaled-down but functional copy of production running in the DR region, scale up to full size on failover.
 
 **Q:** When to use Snowball Edge vs DataSync?
 **A:** Snowball = offline (ship physical device) when network is too slow for the volume. DataSync = online file/object sync over network.
 
 **Q:** Difference between DMS and SCT?
-**A:** DMS = migrates database data (with optional CDC). SCT = Schema Conversion Tool — converts schemas between different engines (e.g., Oracle → PostgreSQL).
+**A:** DMS = migrates database data (with optional CDC). SCT = Schema Conversion Tool, converts schemas between different engines (e.g., Oracle → PostgreSQL).
 
 **Q:** What does AWS Application Migration Service (MGN) do?
 **A:** Lift-and-shift on-prem or other-cloud VMs to EC2 with block-level continuous replication and minimal downtime cutover.
@@ -615,4 +615,4 @@
 - ☑ Re-read every Cheat-Sheet (10 minutes total)
 - ☑ Run through this entire deck once
 - ☑ Score 80%+ on the Final Mock Exam
-- ☑ Sleep, hydrate, breathe — you've got this. ☁️
+- ☑ Sleep, hydrate, breathe, you've got this. ☁️

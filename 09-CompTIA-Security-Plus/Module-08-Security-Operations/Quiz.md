@@ -1,6 +1,6 @@
 # ✏️ Module 8 Quiz: Security Operations
 
-> **Instructions:** 28 questions. Aim for 23/28. This is the biggest domain — drill these.
+> **Instructions:** 28 questions. Aim for 23/28. This is the biggest domain, drill these.
 >
 > Every question is tagged with its **Bloom's taxonomy level**.
 >
@@ -148,7 +148,7 @@ D. They include encryption overhead
 
 ### Q18. Threat hunting differs from reactive IR by being: *(Apply)*
 A. Faster
-B. Proactive — searches for adversaries that automated detection missed
+B. Proactive, searches for adversaries that automated detection missed
 C. Performed by Tier 1 analysts only
 D. Compliance-driven
 
@@ -220,7 +220,7 @@ D. Disable all email
 
 ### Q27 (Scenario). A vendor publishes CVE-2025-1234 (CVSS 9.8). Your CSPM shows 14 vulnerable instances. EPSS is 0.92 and CISA added it to KEV today. Priority? *(Evaluate)*
 A. Patch next quarter
-B. Patch immediately — highest priority
+B. Patch immediately, highest priority
 C. Accept the risk
 D. Disable EDR to investigate
 
@@ -249,7 +249,7 @@ Before anything else, you prepare (plans, tools, training).
 The NIST 800-61 order.
 
 ### Q5: **B. RAM and process state**
-Most volatile data — gone the moment you power off.
+Most volatile data, gone the moment you power off.
 
 ### Q6: **B. The moment evidence is touched/seized**
 Chain of custody starts at acquisition.
@@ -273,7 +273,7 @@ EPSS adds threat intelligence to prioritization.
 KEV catalog tells you "patch THIS first."
 
 ### Q13: **B. Logged-in view**
-Sees installed software, configs, missing patches — much more accurate.
+Sees installed software, configs, missing patches, much more accurate.
 
 ### Q14: **B. Discussion-based walkthrough**
 Tabletop = talk through; no live systems touched.
@@ -281,7 +281,7 @@ Tabletop = talk through; no live systems touched.
 ### Q15: **B. Failover to DR site without taking prod down**
 Parallel test runs both sites concurrently to validate DR.
 
-### Q16: **B. Flow-data formats — connection metadata**
+### Q16: **B. Flow-data formats, connection metadata**
 Not payloads.
 
 ### Q17: **A. Full packet contents**
@@ -341,4 +341,4 @@ Powering off destroys volatile evidence; tweeting tips the attacker. Stealth obs
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9 — GRC, Risk & Compliance](../Module-09-GRC-Risk-Compliance/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9, GRC, Risk & Compliance](../Module-09-GRC-Risk-Compliance/Reading.md)

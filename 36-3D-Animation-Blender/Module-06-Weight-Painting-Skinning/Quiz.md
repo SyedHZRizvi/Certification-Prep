@@ -184,7 +184,7 @@ D. Applying a physically-based falloff formula to all vertex groups at once
 
 A. Complex joint areas like armpits and hips
 B. Detailed mechanical rigs with gear-tooth deformation
-C. **Simple cylindrical limbs, spine, and head — areas with clear bone-to-surface correspondence**
+C. **Simple cylindrical limbs, spine, and head, areas with clear bone-to-surface correspondence**
 D. Any character mesh, requiring no further manual correction
 
 ---
@@ -195,7 +195,7 @@ When a vertex has a total weight sum greater than 1.0 across all vertex groups (
 A. The vertex is excluded from the Armature modifier's calculation
 B. The vertex is assigned to the bone with the highest individual weight only
 C. The vertex renders with a red error indicator in the viewport
-D. **The vertex moves more than it should — "double-moving" or distorting beyond expected range**
+D. **The vertex moves more than it should, "double-moving" or distorting beyond expected range**
 
 ---
 
@@ -252,28 +252,28 @@ D. Bone-deformed expressions that don't require shape keys
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Red = weight 1.0 (full influence)
-Q2.  C — Auto Normalize enforces sum-to-1.0 across all vertex groups
-Q3.  C — Ctrl+Tab → Weight Paint (or Mode dropdown in header)
-Q4.  C — Blur brush smooths the weight gradient
-Q5.  C — 0.5 each bone (Auto Normalize keeps total at 1.0)
-Q6.  D — Skin bag occurs at armpits and hips
-Q7.  B — Active vertex group in Object Data Properties shows current bone
-Q8.  D — Subtract blend mode reduces weights under the brush
-Q9.  C — Shape key = stored deformed mesh geometry blended by slider value
-Q10. D — Basis = neutral rest-pose geometry
-Q11. C — Shape keys add additively; conflicting shapes fight each other
-Q12. D — Driver links shape key value to bone rotation
-Q13. C — Sprite Fright: 2–4 days per character for weight painting + shape keys
-Q14. B — Blur/Average smooths jagged weight boundaries
-Q15. C — Strength = brush opacity/intensity (0.1=subtle, 1.0=instant)
-Q16. C — Add new shape key, enter Edit Mode for that key, move eyelid vertices
-Q17. B — Weight Gradient creates smooth linear/radial weight transitions
-Q18. C — Auto weights best for simple cylindrical limbs and spine
-Q19. D — Weight sum >1.0 = vertex over-moves ("double-moves")
-Q20. C — Data Transfer modifier copies vertex groups from body to clothing
-Q21. D — Driving shape keys from bone rotation via Driver system
-Q22. B — 0° = 0.0 (closed), -30° = 1.0 (open) is the typical jaw mapping
-Q23. C — Cyan/green = approximately 0.3–0.5 weight
-Q24. C — Independent per-eye shape keys allow asymmetric blinks
+Q1.  C, Red = weight 1.0 (full influence)
+Q2.  C, Auto Normalize enforces sum-to-1.0 across all vertex groups
+Q3.  C, Ctrl+Tab → Weight Paint (or Mode dropdown in header)
+Q4.  C, Blur brush smooths the weight gradient
+Q5.  C, 0.5 each bone (Auto Normalize keeps total at 1.0)
+Q6.  D, Skin bag occurs at armpits and hips
+Q7.  B, Active vertex group in Object Data Properties shows current bone
+Q8.  D, Subtract blend mode reduces weights under the brush
+Q9.  C, Shape key = stored deformed mesh geometry blended by slider value
+Q10. D, Basis = neutral rest-pose geometry
+Q11. C, Shape keys add additively; conflicting shapes fight each other
+Q12. D, Driver links shape key value to bone rotation
+Q13. C, Sprite Fright: 2–4 days per character for weight painting + shape keys
+Q14. B, Blur/Average smooths jagged weight boundaries
+Q15. C, Strength = brush opacity/intensity (0.1=subtle, 1.0=instant)
+Q16. C, Add new shape key, enter Edit Mode for that key, move eyelid vertices
+Q17. B, Weight Gradient creates smooth linear/radial weight transitions
+Q18. C, Auto weights best for simple cylindrical limbs and spine
+Q19. D, Weight sum >1.0 = vertex over-moves ("double-moves")
+Q20. C, Data Transfer modifier copies vertex groups from body to clothing
+Q21. D, Driving shape keys from bone rotation via Driver system
+Q22. B, 0° = 0.0 (closed), -30° = 1.0 (open) is the typical jaw mapping
+Q23. C, Cyan/green = approximately 0.3–0.5 weight
+Q24. C, Independent per-eye shape keys allow asymmetric blinks
 ```

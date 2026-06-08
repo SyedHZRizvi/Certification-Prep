@@ -6,35 +6,35 @@
 
 ## 🎯 A Real Story: How Wayfair Cracked the Long-Tail in 2017
 
-In 2017, Wayfair's paid search team had a problem. They had 14 million SKUs. They were paying for "couch" — and getting clicks that cost $4.20 and converted at 0.3%. Meanwhile their CFO was breathing down their neck on CAC.
+In 2017, Wayfair's paid search team had a problem. They had 14 million SKUs. They were paying for "couch", and getting clicks that cost $4.20 and converted at 0.3%. Meanwhile their CFO was breathing down their neck on CAC.
 
-Their analyst Niraj Bhargava (publicly cited in [Search Engine Land's 2018 case study](https://searchengineland.com/)) made a bet: what if they stopped bidding on the head terms entirely and went deep on long-tail SKU-level queries? "Mid-century modern sleeper sofa with chaise under $800" — that query has 90 monthly searches. CPC of $0.45. Conversion rate of 11.2%.
+Their analyst Niraj Bhargava (publicly cited in [Search Engine Land's 2018 case study](https://searchengineland.com/)) made a bet: what if they stopped bidding on the head terms entirely and went deep on long-tail SKU-level queries? "Mid-century modern sleeper sofa with chaise under $800", that query has 90 monthly searches. CPC of $0.45. Conversion rate of 11.2%.
 
 They restructured the account into **single-keyword ad groups (SKAGs)** for the top 5,000 long-tail queries. CAC dropped 38% in 90 days. Revenue from paid search went up 22%.
 
-The lesson isn't "use SKAGs" — Google's Smart Bidding now makes SKAGs less effective. The lesson is: **Google Ads rewards specificity at the query level, not the keyword level.** Every campaign you build for the rest of your life should start with the question: "What's the EXACT thing my customer is typing in at the moment of intent?"
+The lesson isn't "use SKAGs", Google's Smart Bidding now makes SKAGs less effective. The lesson is: **Google Ads rewards specificity at the query level, not the keyword level.** Every campaign you build for the rest of your life should start with the question: "What's the EXACT thing my customer is typing in at the moment of intent?"
 
 This module teaches you to answer that, then build the campaign around it.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Writing a campaign brief — covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md) of this course
-> - KPI hierarchy by funnel stage (TOFU/MOFU/BOFU) — also Module 1
-> - Search-intent and keyword fundamentals — covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
+> - Writing a campaign brief, covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md) of this course
+> - KPI hierarchy by funnel stage (TOFU/MOFU/BOFU), also Module 1
+> - Search-intent and keyword fundamentals, covered in [14-AI-Marketing-Foundations Module 5](../../14-AI-Marketing-Foundations/Module-05-Social-Media-AI-Tools/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
 
-## 🏗️ Google Ads Account Structure — The Anatomy
+## 🏗️ Google Ads Account Structure, The Anatomy
 
 Before you build anything, get the hierarchy straight. The exam tests this constantly.
 
 ```
-Manager Account (MCC — Optional)
+Manager Account (MCC, Optional)
 └── Account
     └── Campaign (budget + bidding + geo + schedule live here)
         └── Ad Group (theme + keywords + audiences)
             └── Keyword
-            └── Ad (RSA — Responsive Search Ad)
+            └── Ad (RSA, Responsive Search Ad)
             └── Extensions (Sitelinks, Callouts, Snippets, etc.)
 ```
 
@@ -46,7 +46,7 @@ Manager Account (MCC — Optional)
 - **Ads** sit in ad groups
 - **Audiences** can be added at campaign OR ad group level (more on this below)
 
-🎯 **Trap on the exam:** "Where do you set the bid for a specific keyword?" If you're using a smart bidding strategy (tCPA, tROAS, Max Conversions), there is NO per-keyword bid — Google decides. Only Manual CPC lets you set keyword-level bids.
+🎯 **Trap on the exam:** "Where do you set the bid for a specific keyword?" If you're using a smart bidding strategy (tCPA, tROAS, Max Conversions), there is NO per-keyword bid, Google decides. Only Manual CPC lets you set keyword-level bids.
 
 ---
 
@@ -59,7 +59,7 @@ Google changed match types significantly between 2021 and 2025. Here's the curre
 | **Exact match** `[ ]` | `[running shoes]` | Variants with same intent | Includes close variants, synonyms, paraphrases, reordered words |
 | **Phrase match** `" "` | `"running shoes"` | Searches that include the meaning | Includes variants where meaning matches, in any order |
 | **Broad match** | `running shoes` | Any related search | Now uses Smart Bidding signals heavily; AI-driven |
-| **Broad match modifier (BMM)** `+running +shoes` | `+running +shoes` | RETIRED — folded into phrase match in 2021 | DO NOT USE on the exam (will be a trap answer) |
+| **Broad match modifier (BMM)** `+running +shoes` | `+running +shoes` | RETIRED, folded into phrase match in 2021 | DO NOT USE on the exam (will be a trap answer) |
 
 🚨 **MEMORIZE this exam trap:** Broad Match Modifier was retired in 2021. If an answer choice references "BMM" or `+keyword +keyword`, it's wrong.
 
@@ -77,11 +77,11 @@ START
   │     └─ NO  → PHRASE match is the safe middle ground.
 ```
 
-**The 2026 reality**: Google is aggressively pushing broad match because Smart Bidding works best with broad input. The correct answer on the exam is almost always: *"Broad match WITH an audience signal AND tCPA/tROAS bidding"* — never broad match alone.
+**The 2026 reality**: Google is aggressively pushing broad match because Smart Bidding works best with broad input. The correct answer on the exam is almost always: *"Broad match WITH an audience signal AND tCPA/tROAS bidding"*, never broad match alone.
 
 ---
 
-## 💰 Bidding Strategies — When to Use Each
+## 💰 Bidding Strategies, When to Use Each
 
 This is the single most-tested topic on the Google Ads Search Cert. Get the table below into your bones.
 
@@ -95,7 +95,7 @@ This is the single most-tested topic on the Google Ads Search Cert. Get the tabl
 | **Maximize Conversion Value** | Maximize total conversion value (no target) | Ecom that wants to scale revenue, no fixed ROAS target | If protecting margin matters |
 | **Target Impression Share** | Show on top of page X% of the time | Brand defense, competitor terms | Performance campaigns |
 
-🎯 **The 30-conversion rule:** Google's Smart Bidding strategies (tCPA, tROAS) need a minimum of **30 conversions in the last 30 days** to work well. Less than that and the algorithm doesn't have enough signal — it'll spend wildly. This is a constant exam question.
+🎯 **The 30-conversion rule:** Google's Smart Bidding strategies (tCPA, tROAS) need a minimum of **30 conversions in the last 30 days** to work well. Less than that and the algorithm doesn't have enough signal, it'll spend wildly. This is a constant exam question.
 
 🚨 **Trap on the exam:** "A new account with 5 conversions/month wants to use tCPA." → WRONG. Use Max Conversions until you cross the 30-conversion threshold.
 
@@ -103,7 +103,7 @@ This is the single most-tested topic on the Google Ads Search Cert. Get the tabl
 
 ## 🤖 What Smart Bidding Actually Does (Under the Hood)
 
-Smart Bidding sounds magical. Here's what it's really doing — useful to know for exam questions and for diagnosing why a campaign is misbehaving.
+Smart Bidding sounds magical. Here's what it's really doing, useful to know for exam questions and for diagnosing why a campaign is misbehaving.
 
 At every auction (every time someone searches), Google's model evaluates **billions of signals** in milliseconds:
 
@@ -115,9 +115,9 @@ At every auction (every time someone searches), Google's model evaluates **billi
 | **Historical signals** | Past conversion rate for this segment, recent campaign performance |
 | **Intent signals** | Query similarity to converting queries, intent strength score |
 
-It produces a **bid prediction** — the bid most likely to win an auction that ALSO meets your tCPA / tROAS target. Then it bids that amount in that specific auction.
+It produces a **bid prediction**, the bid most likely to win an auction that ALSO meets your tCPA / tROAS target. Then it bids that amount in that specific auction.
 
-⚠️ **Common mistake:** Marketers think Smart Bidding "decides where to show ads." It doesn't — it decides **how much to bid** when an ad COULD show. Showing or not is still governed by your keyword match, audience targeting, and ad relevance.
+⚠️ **Common mistake:** Marketers think Smart Bidding "decides where to show ads." It doesn't, it decides **how much to bid** when an ad COULD show. Showing or not is still governed by your keyword match, audience targeting, and ad relevance.
 
 🧠 **MEMORIZE the 3 prerequisites for Smart Bidding success:**
 1. Working conversion tracking (no broken pixels)
@@ -126,7 +126,7 @@ It produces a **bid prediction** — the bid most likely to win an auction that 
 
 ---
 
-## ✍️ Responsive Search Ads (RSAs) — The Only Ad Type That Matters
+## ✍️ Responsive Search Ads (RSAs), The Only Ad Type That Matters
 
 In 2022, Google retired Expanded Text Ads. RSAs are now the ONLY search ad type. Here's the spec.
 
@@ -134,7 +134,7 @@ In 2022, Google retired Expanded Text Ads. RSAs are now the ONLY search ad type.
 |---------|----------------|-----------|----------|
 | Headlines | 30 each | 15 | Yes (3 minimum) |
 | Descriptions | 90 each | 4 | Yes (2 minimum) |
-| Final URL | — | 1 per ad | Yes |
+| Final URL |, | 1 per ad | Yes |
 | Display Path | 15 each | 2 fields | Optional |
 
 ### How RSAs Work
@@ -158,7 +158,7 @@ Headlines (15 slots):
   Slots 1-3:  Match search intent ("Buy Mid-Century Sleeper Sofa")
   Slots 4-6:  Unique value prop ("Free Delivery + 30-Day Returns")
   Slots 7-9:  Social proof ("Rated 4.8 by 12,000+ Buyers")
-  Slots 10-12: Urgency / offer ("Spring Sale — 20% Off Today")
+  Slots 10-12: Urgency / offer ("Spring Sale, 20% Off Today")
   Slots 13-15: Brand or differentiator ("Made in Vermont · 100-Yr Warranty")
 
 Descriptions (4 slots):
@@ -172,9 +172,9 @@ Descriptions (4 slots):
 
 ---
 
-## 🚀 Performance Max for Ecommerce (Brief — Deep Dive in Module 3)
+## 🚀 Performance Max for Ecommerce (Brief, Deep Dive in Module 3)
 
-Performance Max (PMax) is Google's all-channels-in-one campaign. It runs across Search, Display, YouTube, Discover, Gmail, and Maps — simultaneously. For ecommerce with a Merchant Center feed, PMax is often the highest-ROI campaign type.
+Performance Max (PMax) is Google's all-channels-in-one campaign. It runs across Search, Display, YouTube, Discover, Gmail, and Maps, simultaneously. For ecommerce with a Merchant Center feed, PMax is often the highest-ROI campaign type.
 
 **Quick rule for Module 2 purposes:**
 - If you have a product feed + GA4 conversion tracking + 50+ purchases/month → run BOTH a Search campaign AND a PMax campaign with brand exclusions on PMax.
@@ -184,13 +184,13 @@ Module 3 covers PMax architecture in full.
 
 ---
 
-## 🚫 Negative Keywords — The Discipline That Saves Budgets
+## 🚫 Negative Keywords, The Discipline That Saves Budgets
 
 If there's ONE habit that separates pros from amateurs in Google Ads, it's negative keyword discipline. Here's the protocol.
 
 ### The Weekly Negative Keyword Routine (15 min, every Monday)
 
-1. Open the campaign → **Search Terms report** (NOT keywords — search terms = actual queries people typed)
+1. Open the campaign → **Search Terms report** (NOT keywords, search terms = actual queries people typed)
 2. Sort by **Cost descending**
 3. Look at the top 20 spending queries
 4. For each: ask "Was this a valid query for our offer?"
@@ -228,7 +228,7 @@ This is the worked example. Print this. Build it for a real client.
 
 **Scenario:** A Phoenix-area Pilates studio offering free trial classes. Budget: $200/month. Goal: 25 free-trial signups.
 
-### Step 1 — Conversion Tracking First (Day 0)
+### Step 1, Conversion Tracking First (Day 0)
 
 Before you build the campaign:
 
@@ -240,13 +240,13 @@ Before you build the campaign:
 
 If you skip this step, NO bidding strategy except Manual CPC will work.
 
-### Step 2 — Account Structure
+### Step 2, Account Structure
 
 ```
 Account: Sunday Studio - Pilates Phoenix
 └── Campaign 1: Phoenix Free Trial (Search)
     ├── Daily budget: $7
-    ├── Bidding: Maximize Conversions (no tCPA yet — not enough data)
+    ├── Bidding: Maximize Conversions (no tCPA yet, not enough data)
     ├── Geo: 10-mile radius around studio + Scottsdale + Tempe (NOT all Arizona)
     ├── Networks: Search Network ONLY (uncheck Display partners)
     ├── Schedule: 6am–10pm (people don't sign up at 3am)
@@ -270,12 +270,12 @@ Account: Sunday Studio - Pilates Phoenix
         └── 1 RSA with 12 headlines, 4 descriptions
 ```
 
-### Step 3 — RSA For This Campaign
+### Step 3, RSA For This Campaign
 
 ```
 Headlines:
 1. Free Pilates Class in Phoenix
-2. Try Pilates — Phoenix Studio
+2. Try Pilates, Phoenix Studio
 3. New To Pilates? First Class Free
 4. Reformer + Mat Pilates Classes
 5. Phoenix's Top-Rated Pilates Studio
@@ -283,18 +283,18 @@ Headlines:
 7. Book Your Free Trial Today
 8. 12-Mat Studio in Scottsdale
 9. Beginner-Friendly Pilates Phoenix
-10. Try Pilates — No Membership Required
+10. Try Pilates, No Membership Required
 11. {LOCATION(City):Phoenix} Pilates Studio
 12. Rated 4.9 by 800+ Members
 
 Descriptions:
 1. New to Pilates? Your first class is on us. Expert instructors, small groups, all levels welcome. Book online in 30 seconds.
-2. Reformer and mat classes 6am–8pm daily. Free trial covers your first class. Cancel anytime — no contracts.
+2. Reformer and mat classes 6am–8pm daily. Free trial covers your first class. Cancel anytime, no contracts.
 3. Phoenix's most-loved Pilates studio. 12 reformers, certified instructors, beginner-through-advanced. Try your first class free.
 4. Book a free trial in 30 seconds. Walk-in or schedule online. 7 days a week. Free parking. Phoenix's #1 Pilates studio.
 ```
 
-### Step 4 — Sitelinks + Extensions
+### Step 4, Sitelinks + Extensions
 
 ```
 Sitelinks (link to specific pages):
@@ -319,7 +319,7 @@ Call extension: studio phone number
 Location extension: linked to Google Business Profile
 ```
 
-### Step 5 — Daily Routine (15 minutes)
+### Step 5, Daily Routine (15 minutes)
 
 | Day | Action |
 |-----|--------|
@@ -330,7 +330,7 @@ Location extension: linked to Google Business Profile
 | Day 21 | Add a second ad group for a different keyword theme (e.g., "Reformer Pilates"). |
 | Day 28 | If you have 30+ conversions, switch from Maximize Conversions to **tCPA at $8**. |
 
-### Step 6 — Expected Results (Realistic 2026 Benchmarks)
+### Step 6, Expected Results (Realistic 2026 Benchmarks)
 
 | Metric | Realistic range | Action if outside range |
 |--------|----------------|-------------------------|
@@ -342,7 +342,7 @@ Location extension: linked to Google Business Profile
 
 ---
 
-## 🏆 Quality Score — The Most Misunderstood Metric
+## 🏆 Quality Score, The Most Misunderstood Metric
 
 Quality Score is a 1–10 score Google assigns each keyword. It's based on three components:
 
@@ -375,7 +375,7 @@ This means: **a higher Quality Score lets you bid LESS but still rank above comp
 | **Identical RSAs** | 15 nearly-identical headlines | Vary themes; check Ad Strength = Excellent |
 | **Set-and-forget negatives** | Never opening Search Terms report | Weekly 15-min negative routine |
 | **Premature tCPA** | Setting tCPA with < 30 conversions/month | Use Max Conversions first, switch at 30+ |
-| **Mixing brand + non-brand** | Brand keywords in same campaign as generic | Separate brand campaign — they have very different CPCs |
+| **Mixing brand + non-brand** | Brand keywords in same campaign as generic | Separate brand campaign, they have very different CPCs |
 
 ---
 
@@ -385,9 +385,9 @@ Google Ads Editor is a **free desktop application** that lets you build campaign
 
 **Three things Editor does that the web UI can't (easily):**
 
-1. **Bulk import keywords + ads from a spreadsheet** — upload a CSV of 500 keywords and 50 ads in seconds
-2. **Copy a campaign from one account to another** — preserves all settings, ad groups, negatives
-3. **Find/replace across campaigns** — change "Free Trial" to "Try Free" in 1000 ads at once
+1. **Bulk import keywords + ads from a spreadsheet**, upload a CSV of 500 keywords and 50 ads in seconds
+2. **Copy a campaign from one account to another**, preserves all settings, ad groups, negatives
+3. **Find/replace across campaigns**, change "Free Trial" to "Try Free" in 1000 ads at once
 
 Download from: <https://ads.google.com/intl/en_us/home/tools/ads-editor/>
 
@@ -401,12 +401,12 @@ Allbirds (the DTC shoe brand) ran a famously tight Google Ads account from 2020�
 
 - **5 campaigns only**: Brand, Generic, Sustainable, Running, Re-targeting
 - **30 ad groups total** across all campaigns
-- **Each ad group: ONE clear theme** (e.g., "Wool Runners — Men's", "Tree Dashers — Trail")
+- **Each ad group: ONE clear theme** (e.g., "Wool Runners Men's", "Tree Dashers Trail")
 - **Brand defense campaign** ran on tROAS = 8 (very profitable; brand traffic converts)
 - **Generic campaign** ran on tCPA = $35 (matched their unit economics)
 - **All campaigns**: paused Display network, paused Search Partners
 
-What made it work wasn't sophistication — it was **discipline**: clear naming, clear themes, clear KPI per campaign, weekly negative work, weekly RSA refresh.
+What made it work wasn't sophistication, it was **discipline**: clear naming, clear themes, clear KPI per campaign, weekly negative work, weekly RSA refresh.
 
 🎯 The lesson: a tight 5-campaign account outperforms a sprawling 50-campaign account 9 times out of 10.
 
@@ -416,17 +416,17 @@ What made it work wasn't sophistication — it was **discipline**: clear naming,
 
 | Term | Definition |
 |------|------------|
-| **CPC** | Cost Per Click — the amount you pay each time someone clicks your ad |
-| **CPA** | Cost Per Acquisition — total spend / conversions |
-| **ROAS** | Return on Ad Spend — revenue / spend (often expressed as a ratio like 4x) |
-| **RSA** | Responsive Search Ad — the only Google search ad format (up to 15 headlines, 4 descriptions) |
-| **tCPA** | Target CPA — Smart Bidding strategy that aims for a specific cost per acquisition |
-| **tROAS** | Target ROAS — Smart Bidding strategy that aims for a specific return ratio |
-| **SKAG** | Single Keyword Ad Group — pre-Smart Bidding tactic, now mostly obsolete |
+| **CPC** | Cost Per Click, the amount you pay each time someone clicks your ad |
+| **CPA** | Cost Per Acquisition, total spend / conversions |
+| **ROAS** | Return on Ad Spend, revenue / spend (often expressed as a ratio like 4x) |
+| **RSA** | Responsive Search Ad, the only Google search ad format (up to 15 headlines, 4 descriptions) |
+| **tCPA** | Target CPA, Smart Bidding strategy that aims for a specific cost per acquisition |
+| **tROAS** | Target ROAS, Smart Bidding strategy that aims for a specific return ratio |
+| **SKAG** | Single Keyword Ad Group, pre-Smart Bidding tactic, now mostly obsolete |
 | **Quality Score** | 1–10 score combining expected CTR, ad relevance, landing page experience |
 | **Ad Rank** | What determines auction position: bid × QS + extensions |
 | **Search Terms** | Actual queries people typed (vs. "keywords" which are what YOU bid on) |
-| **MCC** | My Client Center — Manager Account, used by agencies to manage multiple accounts |
+| **MCC** | My Client Center, Manager Account, used by agencies to manage multiple accounts |
 | **Negative keyword** | A query you DON'T want to show for |
 | **Audience signal** | A hint to Smart Bidding about who your customer is, added to a campaign or ad group |
 
@@ -453,13 +453,13 @@ You now know:
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
-Use these to pressure-test your understanding. Each is defensible from multiple angles — argue from the frameworks in this module.
+Use these to pressure-test your understanding. Each is defensible from multiple angles, argue from the frameworks in this module.
 
 1. Smart Bidding (tCPA/tROAS) requires ~30 conversions in 30 days to stabilize. A bootstrapped founder is doing 8 conversions/month. Build the case for AND against running Manual CPC for the first 90 days vs running tCPA underpowered. Which would you defend at a CFO review?
 2. Wayfair's 2017 SKAG strategy was famous; the reading says Smart Bidding now makes SKAGs less effective. Where does the underlying principle of "specificity at the query level" still apply in a Smart Bidding world, and which Google Ads features now do that work for you?
-3. The reading says Quality Score is mostly determined by expected CTR, ad relevance, and landing page experience. A marketer claims you can buy your way past a low QS by simply raising bids. Walk through the Ad Rank math and explain where this logic breaks down — and where it has a kernel of truth.
+3. The reading says Quality Score is mostly determined by expected CTR, ad relevance, and landing page experience. A marketer claims you can buy your way past a low QS by simply raising bids. Walk through the Ad Rank math and explain where this logic breaks down, and where it has a kernel of truth.
 4. "Include Display Network" defaults to ON for new Search campaigns. Argue why Google sets the default this way despite the reading recommending you turn it off. Whose interests does each default serve?
 5. An ICP-validated B2B company has only 80 monthly searches for its category. The brief says "run Search." Build the strongest argument for running Search anyway, then the strongest argument for skipping Search entirely. Which channel mix would you actually recommend, and why?
 
@@ -474,8 +474,8 @@ Use these to pressure-test your understanding. Each is defensible from multiple 
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Google Ads Search Certification — Free Skillshop Course](https://skillshop.exceedlms.com/student/path/18128) — the actual cert prep
-- 📖 [Google Ads Help — Smart Bidding](https://support.google.com/google-ads/answer/7066642) — official documentation
-- 📖 [Frederick Vallaeys — *Unlevel the Playing Field* (book)](https://optmyzr.com/book/) — Optmyzr founder; one of the deepest books on Google Ads strategy
-- 📖 [Search Engine Land — Quality Score guide](https://searchengineland.com/) — annually-updated Quality Score deep dive
-- 📖 [Surfside PPC YouTube channel](https://www.youtube.com/@SurfsidePPC) — the most thorough free Google Ads tutorials on the internet
+- 📖 [Google Ads Search Certification Free Skillshop Course](https://skillshop.exceedlms.com/student/path/18128) the actual cert prep
+- 📖 [Google Ads Help Smart Bidding](https://support.google.com/google-ads/answer/7066642) official documentation
+- 📖 [Frederick Vallaeys *Unlevel the Playing Field* (book)](https://optmyzr.com/book/) Optmyzr founder; one of the deepest books on Google Ads strategy
+- 📖 [Search Engine Land Quality Score guide](https://searchengineland.com/) annually-updated Quality Score deep dive
+- 📖 [Surfside PPC YouTube channel](https://www.youtube.com/@SurfsidePPC), the most thorough free Google Ads tutorials on the internet

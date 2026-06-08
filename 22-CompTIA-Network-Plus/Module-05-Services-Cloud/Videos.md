@@ -18,7 +18,7 @@
 
 # 🎥 Module 5 Videos: Network Services & Cloud Connectivity
 
-> **How to use:** DNS and DHCP are fundamentals — watch both Professor Messer videos for those topics. The cloud videos are newer to the N10-009 blueprint.
+> **How to use:** DNS and DHCP are fundamentals, watch both Professor Messer videos for those topics. The cloud videos are newer to the N10-009 blueprint.
 
 ## ⭐ Essential watching (~65 min)
 
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">DNS Demystified — with dig</p>
+      <p class="vg-title">DNS Demystified, with dig</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 14 min · Hands-on lookups</span>
     </div>
@@ -152,7 +152,7 @@ Answer in your notebook (without re-watching):
 1. Walk through resolving `www.example.com` step by step.
 2. Walk through DHCP DORA, naming each message direction.
 3. Why is NTP critical for Kerberos / TLS / token validation?
-4. Compare a Site-to-Site VPN, AWS Direct Connect, and SD-WAN — when does each fit best?
+4. Compare a Site-to-Site VPN, AWS Direct Connect, and SD-WAN, when does each fit best?
 5. What's the practical difference between SD-WAN and SASE?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

@@ -4,9 +4,9 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - [Module 7](../Module-07-Virtual-Networks/Reading.md): VNets, subnets, reserved subnet names (`AzureFirewallSubnet`, `AzureBastionSubnet`), and the hub-spoke topology.
-> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): Conditional Access (this module's controls operate at the *network* layer; CA operates at the *identity* layer — they're complementary).
-> - OSI model layers 3, 4, and 7 — you need to know what "L4 stateful" vs. "L7 inspection" actually means.
-> - The OWASP Top 10 (2021 revision; refresh expected late 2025) — App Gateway and Front Door WAF rules are based on it. Covered in [`09-CompTIA-Security-Plus` Module 5](../../09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading.md).
+> - [Module 2](../Module-02-Entra-ID-RBAC/Reading.md): Conditional Access (this module's controls operate at the *network* layer; CA operates at the *identity* layer, they're complementary).
+> - OSI model layers 3, 4, and 7, you need to know what "L4 stateful" vs. "L7 inspection" actually means.
+> - The OWASP Top 10 (2021 revision; refresh expected late 2025), App Gateway and Front Door WAF rules are based on it. Covered in [`09-CompTIA-Security-Plus` Module 5](../../09-CompTIA-Security-Plus/Module-05-Vulnerabilities-Attacks/Reading.md).
 >
 > This module is dense. If NSG rule precedence has never clicked, do Microsoft Learn's *Network Security* sandbox before reading.
 
@@ -16,8 +16,8 @@
 
 Picture a shopping mall on Black Friday. The crowd is enormous. Security is layered:
 
-1. **At the parking lot entrance**: a guard waves through cars by license plate (allow/deny by source IP — that's an **NSG**).
-2. **At a private back door for delivery trucks**: a manifest check by trusted vendor (an **Application Security Group** — same role, friendlier model).
+1. **At the parking lot entrance**: a guard waves through cars by license plate (allow/deny by source IP, that's an **NSG**).
+2. **At a private back door for delivery trucks**: a manifest check by trusted vendor (an **Application Security Group**, same role, friendlier model).
 3. **At the main mall doors**: a security team scans bags for weapons and inspects suspicious packages with a deeper sniff (an **Azure Firewall**).
 4. **Outside a flagship boutique that sells $50K watches**: extra biometric verification, with a web-app-aware filter that checks for fake-receipt scams (**Application Gateway with WAF**).
 5. **For the global website that drives all online customers in**: a worldwide CDN-style routing layer that picks the fastest mall to send them to and dodges DDoS waves (**Azure Front Door**).
@@ -55,7 +55,7 @@ A **stateful** layer-4 firewall that filters traffic based on **5-tuple** (sourc
 | 65001 | AllowInternetOutBound | Any | Internet | Allow |
 | 65500 | DenyAllOutBound | Any | Any | **Deny** |
 
-🔥 **MEMORIZE:** lower priority number = evaluated **first**. **First match wins.** There's no "implicit allow on top" — only the 6 defaults at the bottom.
+🔥 **MEMORIZE:** lower priority number = evaluated **first**. **First match wins.** There's no "implicit allow on top", only the 6 defaults at the bottom.
 
 ### Effective security rules
 
@@ -107,7 +107,7 @@ az network vnet subnet update \
 
 ## 🏷️ Application Security Groups (ASGs)
 
-A logical tag you attach to NICs. Then your NSG rule says "allow from ASG `web-tier` to ASG `app-tier` on port 8080" — no IP addresses needed.
+A logical tag you attach to NICs. Then your NSG rule says "allow from ASG `web-tier` to ASG `app-tier` on port 8080", no IP addresses needed.
 
 ```bash
 # Create ASGs
@@ -132,7 +132,7 @@ az network nsg rule create \
     --direction Inbound
 ```
 
-🔥 ASGs only work **within a single VNet** — they don't cross peering boundaries.
+🔥 ASGs only work **within a single VNet**, they don't cross peering boundaries.
 
 ---
 
@@ -148,9 +148,9 @@ A **stateful, fully managed, L3–L7** firewall-as-a-service. Lives in `AzureFir
 
 ### Rule types (stack in order)
 
-1. **DNAT rules** — translate public IP:port to a private internal target (e.g., publish a VM)
-2. **Network rules** — L3/L4 allow/deny by IP/port/protocol
-3. **Application rules** — L7 allow by FQDN (e.g., `*.contoso.com`) or FQDN tag
+1. **DNAT rules**, translate public IP:port to a private internal target (e.g., publish a VM)
+2. **Network rules**, L3/L4 allow/deny by IP/port/protocol
+3. **Application rules**, L7 allow by FQDN (e.g., `*.contoso.com`) or FQDN tag
 
 🔥 **Rule processing order:** DNAT → Network → Application (within the same priority). Higher priority rule collections win across the board.
 
@@ -188,7 +188,7 @@ A **layer-4** distributor for TCP/UDP traffic. Two SKUs:
 | SLA | No SLA | 99.99% (with min 2 instances) |
 | Outbound rules | No | Yes |
 | Required for VMSS Flex | ❌ | ✅ |
-| Security model | Open by default | **Secure by default — needs explicit NSG rule** |
+| Security model | Open by default | **Secure by default, needs explicit NSG rule** |
 
 🔥 **Basic Load Balancer is being deprecated Sep 2025.** Always pick Standard now.
 
@@ -201,12 +201,12 @@ A **layer-4** distributor for TCP/UDP traffic. Two SKUs:
 
 ### Components
 
-- **Frontend IP** — the LB's listening IP
-- **Backend pool** — VMs / VMSS instances
-- **Health probe** — TCP / HTTP / HTTPS check
-- **Load balancing rule** — frontend port → backend port
-- **Inbound NAT rule** — single-VM port forward (e.g., specific RDP per VM)
-- **Outbound rule** — define SNAT behavior for backend pool's egress
+- **Frontend IP**, the LB's listening IP
+- **Backend pool**, VMs / VMSS instances
+- **Health probe**, TCP / HTTP / HTTPS check
+- **Load balancing rule**, frontend port → backend port
+- **Inbound NAT rule**, single-VM port forward (e.g., specific RDP per VM)
+- **Outbound rule**, define SNAT behavior for backend pool's egress
 
 ```bash
 az network lb create \
@@ -238,7 +238,7 @@ Features that aren't in plain Load Balancer:
 - **End-to-end TLS** or TLS termination at the gateway
 - **Cookie-based session affinity**
 - **HTTP/2** support
-- **WAF rules** — OWASP CRS, bot protection, geo-blocking
+- **WAF rules**, OWASP CRS, bot protection, geo-blocking
 
 ### Backend pool types
 
@@ -284,17 +284,17 @@ az network application-gateway create \
 | **Standard** | CDN + static content + L7 routing |
 | **Premium** | + Private origins + Microsoft Defender threat intel + advanced WAF |
 
-🔥 **Front Door vs Traffic Manager vs Cross-region LB** — exam favorite:
+🔥 **Front Door vs Traffic Manager vs Cross-region LB**, exam favorite:
 
 | Service | Layer | Routing |
 |---------|-------|---------|
 | **Front Door** | L7 (HTTP/HTTPS) | Edge routing, caching, WAF |
-| **Traffic Manager** | DNS-only | Client uses returned IP — no proxy |
+| **Traffic Manager** | DNS-only | Client uses returned IP, no proxy |
 | **Cross-region Load Balancer** | L4 global | Routes TCP/UDP globally |
 
 ---
 
-## 🌐 Public DNS Zones (already covered in M7 — bonus security angle)
+## 🌐 Public DNS Zones (already covered in M7, bonus security angle)
 
 DNSSEC and Azure Public DNS now in preview/GA depending on region. For most AZ-104 questions, just remember:
 
@@ -348,7 +348,7 @@ DNSSEC and Azure Public DNS now in preview/GA depending on region. For most AZ-1
 
 | Trap | Reality |
 |------|---------|
-| "NSG is stateless" | ❌ Stateful — return traffic auto-allowed |
+| "NSG is stateless" | ❌ Stateful, return traffic auto-allowed |
 | "Higher priority number wins" | ❌ Lower number wins (100 > 200) |
 | "First-rule-in-list wins" | ❌ Lowest priority among matching wins |
 | "ASG works across peered VNets" | ❌ Single VNet only |
@@ -389,7 +389,7 @@ You now know:
 - 🛡️ NSG mechanics: stateful, priority order, default rules, subnet vs NIC
 - 🏷️ ASGs for IP-free segmentation within a VNet
 - 🔥 Azure Firewall SKUs + the DNAT/Network/Application rule order
-- 🚪 Standard LB vs Application Gateway vs Front Door — when each wins
+- 🚪 Standard LB vs Application Gateway vs Front Door, when each wins
 - 🌍 Front Door + Private Link origins (modern secure pattern)
 - 🛡️ DDoS Protection tiers
 - ⚠️ The 8 common traps
@@ -402,18 +402,18 @@ You now know:
 
 ---
 
-## 📊 Case Study — The MOVEit Transfer Breach (2023) and What Azure Network Security Would Have Stopped
+## 📊 Case Study, The MOVEit Transfer Breach (2023) and What Azure Network Security Would Have Stopped
 
 **Situation.** MOVEit Transfer is a managed file-transfer (MFT) product made by Progress Software, deployed by thousands of enterprises for B2B file exchange (healthcare records, payroll, government data). On May 27, 2023, a previously-unknown SQL injection vulnerability (**CVE-2023-34362**) was actively exploited by the **Cl0p ransomware group**. By the time Progress shipped a patch on May 31, hundreds of organizations had been compromised. Final tally (per *Emsisoft, MOVEit Hack Victim Tracker*, December 2023): **~2,773 confirmed organizations breached**, including the U.S. Department of Energy, Shell, BBC, British Airways, the State of Maine, the Government of Nova Scotia, IBM, and PwC. **~95 million individuals' data** was exfiltrated. Direct losses, settlements, and remediation costs are estimated north of **$15 billion** industry-wide (*IT Governance Limited*, breach impact analysis, 2024).
 
 **Decision.** The MOVEit Transfer software itself was the vulnerability, but the *blast radius* was determined by how victim organizations had networked it. Two architecture patterns separated organizations that lost millions of records from those that did not:
 
-1. **Public exposure**: Organizations that deployed MOVEit with a *public IP*, no WAF, and no upstream proxy — typical "stand it up in the DMZ" architecture — had the vulnerability reachable from the open internet. The attacker scanned, exploited, and exfiltrated in hours.
+1. **Public exposure**: Organizations that deployed MOVEit with a *public IP*, no WAF, and no upstream proxy typical "stand it up in the DMZ" architecture had the vulnerability reachable from the open internet. The attacker scanned, exploited, and exfiltrated in hours.
 2. **No L7 anomaly detection on egress**: Even after the SQL injection succeeded, exfil required the MOVEit host to upload gigabytes of data outbound. Organizations without **NSG egress restrictions**, **Azure Firewall with FQDN-based allow-listing**, or **network anomaly detection** had no choke point. The data left through a default `0.0.0.0/0 → Internet` egress path.
 
 If MOVEit had been deployed on Azure with this module's recommended controls, the attack would have been substantially mitigated:
 
-- **Azure Front Door Premium with WAF policy in Prevention mode** would have blocked the SQL-injection POST against managed-rule "OWASP CRS 3.2: SQL Injection / SQLI" — even though the CVE was novel, the *attack pattern* (`'; DECLARE @s VARCHAR(8000) ...`) matched a CRS rule that's been in place since 2017.
+- **Azure Front Door Premium with WAF policy in Prevention mode** would have blocked the SQL-injection POST against managed-rule "OWASP CRS 3.2: SQL Injection / SQLI", even though the CVE was novel, the *attack pattern* (`'; DECLARE @s VARCHAR(8000) ...`) matched a CRS rule that's been in place since 2017.
 - **Private Link origin** from Front Door to the MOVEit App Service / VM would have eliminated the public IP exposure. Even if WAF was bypassed, the attacker would need to compromise something inside the VNet first.
 - **Azure Firewall Premium with IDPS** would have alerted on the post-exploit C2 traffic (Cl0p's beacons hit known-bad IPs catalogued in Microsoft Threat Intelligence). IDPS rules block-on-known-malicious automatically.
 - **NSG egress rule**: outbound from MOVEit subnet allowed only to specific FQDNs (your partner upload endpoints + Microsoft Update). Exfiltration to attacker-controlled servers blocked at the subnet edge.
@@ -431,20 +431,20 @@ If MOVEit had been deployed on Azure with this module's recommended controls, th
 The exam-favorite trap is reaching for *one* of these when the right answer is *all of them, layered*. MOVEit is the cautionary tale for why layering matters.
 
 **Discussion (Socratic).**
-- **Q1.** WAFs in 2023 had rules covering SQL injection patterns going back decades — yet hundreds of orgs were breached. Defend the strongest argument that WAFs are still the right primary control. Then defend the strongest counter-argument (that WAFs invite complacency). Where does the practitioner's defense land?
+- **Q1.** WAFs in 2023 had rules covering SQL injection patterns going back decades, yet hundreds of orgs were breached. Defend the strongest argument that WAFs are still the right primary control. Then defend the strongest counter-argument (that WAFs invite complacency). Where does the practitioner's defense land?
 - **Q2.** Azure Firewall Premium IDPS subscribes to Microsoft Threat Intelligence and updates continuously. A skeptic argues that IDPS gives a false sense of security against novel zero-days (like MOVEit's was). Construct the strongest case for IDPS as a *defense-in-depth* layer specifically against zero-days. (Hint: think about what IDPS catches *after* the initial compromise.)
 - **Q3.** NSG egress controls are widely under-used because they break "things just work." Walk through the operational discipline a team needs to deploy *deny-by-default egress* with FQDN allow-lists for a 30-microservice estate. What's the realistic month-one acceptance criterion versus month-six?
 
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 10 wires NSG Flow Logs, WAF logs, and Firewall logs into Azure Monitor — the *detection* half of the prevention-detect-respond loop this module covered.
+> - Inside this course: Module 10 wires NSG Flow Logs, WAF logs, and Firewall logs into Azure Monitor, the *detection* half of the prevention-detect-respond loop this module covered.
 > - Cross-course: [`09-CompTIA-Security-Plus`](../../../09-CompTIA-Security-Plus/) Modules 4, 5 cover the threat-actor side (Cl0p, ransomware-as-a-service models, MITRE ATT&CK techniques); [`04-AWS-Solutions-Architect-Associate` Module 8](../../04-AWS-Solutions-Architect-Associate/Module-08-Caching-CDN-Edge/Reading.md) covers the AWS analogues (Security Groups, AWS WAF, Shield, GuardDuty).
-> - Practice: PE-2 has 12 questions from this module — it's the heaviest single-module test; Final Mock combines with VNet, identity, monitoring.
+> - Practice: PE-2 has 12 questions from this module, it's the heaviest single-module test; Final Mock combines with VNet, identity, monitoring.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The NSG priority trap.** A team adds an `AllowHttpsFromInternet` rule at priority 4096 and a `DenyAll` rule at priority 100, then complains traffic is blocked. Walk through the evaluation and identify the misconception. Then propose a *team policy* (priority allocation scheme) that makes this misconfiguration nearly impossible at design time.
 2. **Service tags vs. hard IPs.** Service tags (`Storage.EastUS`, `AzureFrontDoor.Backend`) are symbolic and auto-update. Hard-coded CIDR allow-lists are explicit. When is the *explicit-IP* approach actually better? (Hint: think about regulatory audit reports that require "the IP allow-list as of date X.")
@@ -461,6 +461,6 @@ The exam-favorite trap is reaching for *one* of these when the right answer is *
 - 📖 [Application Gateway overview](https://learn.microsoft.com/azure/application-gateway/overview)
 - 📖 [Azure Front Door overview](https://learn.microsoft.com/azure/frontdoor/front-door-overview)
 - 📖 [Load Balancer SKUs](https://learn.microsoft.com/azure/load-balancer/skus)
-- 📖 *OWASP Top 10* (2021; new revision expected late 2025) — the WAF managed-rule basis.
-- 📖 *NIST Cybersecurity Framework 2.0* (NIST, February 2024) — the modern reference for the prevent / detect / respond / recover loop this module exemplifies.
-- 📖 CISA, *MOVEit Transfer Advisory* (AA23-158A, June 2023; updated through 2024) — the canonical incident write-up.
+- 📖 *OWASP Top 10* (2021; new revision expected late 2025), the WAF managed-rule basis.
+- 📖 *NIST Cybersecurity Framework 2.0* (NIST, February 2024), the modern reference for the prevent / detect / respond / recover loop this module exemplifies.
+- 📖 CISA, *MOVEit Transfer Advisory* (AA23-158A, June 2023; updated through 2024), the canonical incident write-up.

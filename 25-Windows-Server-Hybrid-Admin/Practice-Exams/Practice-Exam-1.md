@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AZ-800 (Core Hybrid Infrastructure)
+# 🧪 Practice Exam 1, AZ-800 (Core Hybrid Infrastructure)
 
 > **Conditions:** Set an 80-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 28/40 (≈ 70%, matching the real exam)
@@ -56,7 +56,7 @@ B. Local → Site → Domain → OU
 C. Site → Domain → OU → Local
 D. OU → Domain → Site → Local
 
-### 9. **Yes/No** — Mark each statement.
+### 9. **Yes/No**, Mark each statement.
 
 **S1:** An OU is a security boundary equivalent to a domain.
 **S2:** Forest functional level 2008 R2 is required for the AD Recycle Bin.
@@ -181,7 +181,7 @@ B. Integrity streams
 C. EFS file-level encryption + boot/page file support
 D. Mirror-accelerated parity
 
-### 29. **Yes/No** — Mark each statement.
+### 29. **Yes/No**, Mark each statement.
 
 **S1:** ReFS can be the OS boot drive.
 **S2:** S2D requires identical hardware across nodes.
@@ -258,7 +258,7 @@ B. 8
 C. 16
 D. 32
 
-### 39. **Yes/No** — Mark each statement.
+### 39. **Yes/No**, Mark each statement.
 
 **S1:** Storage Replica's destination volume is unmounted/inaccessible during normal replication.
 **S2:** DFS-R is a backup solution.
@@ -272,7 +272,7 @@ D. Yes / No / No
 ### 40. For a brand-new Windows Server 2022 VM that needs vTPM for BitLocker, the correct VM generation is:
 A. Gen 1
 B. Gen 2
-C. Either — vTPM works on both
+C. Either, vTPM works on both
 D. Server 2022 doesn't support vTPM
 
 ---
@@ -298,7 +298,7 @@ D. Server 2022 doesn't support vTPM
 
 | Score | Verdict |
 |-------|---------|
-| 36–40 | 🏆 Excellent — AZ-800 ready |
+| 36–40 | 🏆 Excellent, AZ-800 ready |
 | 28–35 | ✅ On track. Review missed Qs, then continue to Practice Exam 2 |
 | 20–27 | ⚠️ Re-study weak modules (use map below) |
 | <20   | 🔁 Restart from Module 1 |
@@ -344,7 +344,7 @@ For EACH wrong answer:
 
 **Q7. Answer: D.** *Why D is correct.* 180 days since Server 2003 SP1. *Why the other options are wrong.* **A**: 30/60 were earlier defaults. **B/C**: Wrong. *Exam-takeaway.* 180 days for tombstone + Recycle Bin deleted-object lifetime.
 
-**Q8. Answer: B.** *Why B is correct.* LSDOU — Local → Site → Domain → OU, with the closest OU winning under normal precedence. *Why the other options are wrong.* **A**: Domain comes after Site, not before. **C**: Local must come first. **D**: Reversed order. *Exam-takeaway.* LSDOU; Enforced + Block flip the rules.
+**Q8. Answer: B.** *Why B is correct.* LSDOU, Local → Site → Domain → OU, with the closest OU winning under normal precedence. *Why the other options are wrong.* **A**: Domain comes after Site, not before. **C**: Local must come first. **D**: Reversed order. *Exam-takeaway.* LSDOU; Enforced + Block flip the rules.
 
 **Q9. Answer: B.** *Why B is correct.* S1 wrong (OUs are delegation containers, NOT security boundaries). S2 correct. S3 correct. *Why the other options are wrong.* They all mark S1 as Yes. *Exam-takeaway.* OUs ≠ security boundaries.
 
@@ -366,7 +366,7 @@ For EACH wrong answer:
 
 **Q18. Answer: B.** *Why B is correct.* AD-integrated zones replicate via AD's multi-master. *Why the other options are wrong.* **A**: File-based primary is single-master. **C**: Secondaries are read-only but not AD-integrated. **D**: Replication is per-partition scope. *Exam-takeaway.* AD-integrated = multi-master.
 
-**Q19. Answer: B.** *Why B is correct.* Stub zones auto-refresh NS records — best for dynamic remote topologies. *Why the other options are wrong.* **A**: Conditional forwarders are static. **C**: Static A records won't scale. **D**: WINS is legacy NetBIOS. *Exam-takeaway.* Dynamic remote NS → stub zone.
+**Q19. Answer: B.** *Why B is correct.* Stub zones auto-refresh NS records, best for dynamic remote topologies. *Why the other options are wrong.* **A**: Conditional forwarders are static. **C**: Static A records won't scale. **D**: WINS is legacy NetBIOS. *Exam-takeaway.* Dynamic remote NS → stub zone.
 
 **Q20. Answer: B.** *Why B is correct.* DS record at the PARENT anchors the trust chain. *Why the other options are wrong.* **A**: DNSKEY is in the signed zone; DS is parent's. **C**: TXT is unrelated. **D**: NS records don't carry signatures. *Exam-takeaway.* DS = parent anchor.
 

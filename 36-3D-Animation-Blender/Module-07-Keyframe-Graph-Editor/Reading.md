@@ -7,7 +7,7 @@ title: "Module 7: Keyframe Animation & Graph Editor"
 
 ## The Space Between Poses
 
-Richard Williams, the director of animation for *Who Framed Roger Rabbit* and author of *The Animator's Survival Kit*, taught that the drawing between two key poses is where animation lives. The key poses define the storytelling. The inbetweens define the physics, the weight, the personality. In 3D animation, the "inbetweens" are computed by the software — but the curve that defines how the software interpolates between poses is entirely under the animator's control.
+Richard Williams, the director of animation for *Who Framed Roger Rabbit* and author of *The Animator's Survival Kit*, taught that the drawing between two key poses is where animation lives. The key poses define the storytelling. The inbetweens define the physics, the weight, the personality. In 3D animation, the "inbetweens" are computed by the software, but the curve that defines how the software interpolates between poses is entirely under the animator's control.
 
 That curve is what the **Graph Editor** shows you. Learning to read and sculpt animation curves is the difference between an animation that feels mechanical and one that feels alive.
 
@@ -80,15 +80,15 @@ The **Non-Linear Animation Editor** is the production backbone for any shot invo
 5. Walk strip on Track 2, Repeat = 20, placed at frame 1
 6. WaveArm strip on Track 3, placed at frame 240, Blend In = 6 frames
 
-This creates a 720-frame animated character from three short actions — the NLA handles all the compositing.
+This creates a 720-frame animated character from three short actions, the NLA handles all the compositing.
 
-> ⚠️ **Gotcha — NLA Track Order Matters:** In the NLA Editor, tracks higher up the list have higher priority (they override lower tracks when Blend Type is Replace). Put the most specific, shot-specific actions on the top tracks; the repeating cycles on the bottom. If your walk cycle is above the specific gestures, the gestures will not show through.
+> ⚠️ **Gotcha, NLA Track Order Matters:** In the NLA Editor, tracks higher up the list have higher priority (they override lower tracks when Blend Type is Replace). Put the most specific, shot-specific actions on the top tracks; the repeating cycles on the bottom. If your walk cycle is above the specific gestures, the gestures will not show through.
 
 ---
 
 ## 7.3 The Graph Editor
 
-The **Graph Editor** displays animation as F-Curves (Function Curves) — mathematical curves that define how a value changes over time. The horizontal axis is time (frames), the vertical axis is the property value.
+The **Graph Editor** displays animation as F-Curves (Function Curves), mathematical curves that define how a value changes over time. The horizontal axis is time (frames), the vertical axis is the property value.
 
 **Navigating the Graph Editor:**
 - **MMB drag:** pan
@@ -99,7 +99,7 @@ The **Graph Editor** displays animation as F-Curves (Function Curves) — mathem
 
 **Anatomy of an F-Curve:**
 - Each keyframe has a **left handle** and a **right handle**
-- The handles determine the **interpolation** — how the curve approaches and leaves the keyframe
+- The handles determine the **interpolation**, how the curve approaches and leaves the keyframe
 - **Bezier handles** (the default) can be dragged freely to sculpt the curve shape
 - **Handle types:** Free (fully independent), Aligned (symmetrical), Vector (creates straight-line segments), Auto (automatic smooth handle)
 
@@ -131,7 +131,7 @@ F-Curve **modifiers** apply mathematical operations to a curve without adding in
 
 **Repeat with Offset** is essential for walk cycles: as the walk cycle repeats, the character's location X/Y progresses forward by the stride distance each cycle, rather than teleporting back to the start position.
 
-> 🎯 **What the exam tests:** F-Curve modifiers (especially Cycles) are heavily tested. Know that a Cycles modifier with **Repeat** mode makes the curve loop but the position value resets to the start — causing the character to teleport. **Repeat with Offset** is the fix for locomotion cycles. Know how to add a modifier: Graph Editor → Properties panel (N) → F-Curve Modifiers → Add.
+> 🎯 **What the exam tests:** F-Curve modifiers (especially Cycles) are heavily tested. Know that a Cycles modifier with **Repeat** mode makes the curve loop but the position value resets to the start, causing the character to teleport. **Repeat with Offset** is the fix for locomotion cycles. Know how to add a modifier: Graph Editor → Properties panel (N) → F-Curve Modifiers → Add.
 
 ---
 
@@ -151,11 +151,11 @@ F-Curve **modifiers** apply mathematical operations to a curve without adding in
 - **T** → Interpolation mode menu
 - Or: right-click → Interpolation Mode
 
-**The most important Graph Editor concept — "Ease In/Out":**
+**The most important Graph Editor concept, "Ease In/Out":**
 
-When a Bezier curve has flat handles at a keyframe (the curve is horizontal at the key point), the value changes slowly near that frame — this is called "ease in" (approaching) or "ease out" (departing). This is what separates mechanical, linear animation from organic, physical animation. The rule: **almost every physical object eases in and out of its poses.**
+When a Bezier curve has flat handles at a keyframe (the curve is horizontal at the key point), the value changes slowly near that frame, this is called "ease in" (approaching) or "ease out" (departing). This is what separates mechanical, linear animation from organic, physical animation. The rule: **almost every physical object eases in and out of its poses.**
 
-> 🚨 **Trap:** A common beginner mistake is setting all handles to "Auto" and trusting the automatic smooth. Auto handles often overshoot — especially when the values between two keyframes are very different. Always check for overshooting arcs in the viewport and manually adjust handles in the Graph Editor.
+> 🚨 **Trap:** A common beginner mistake is setting all handles to "Auto" and trusting the automatic smooth. Auto handles often overshoot, especially when the values between two keyframes are very different. Always check for overshooting arcs in the viewport and manually adjust handles in the Graph Editor.
 
 ---
 
@@ -163,7 +163,7 @@ When a Bezier curve has flat handles at a keyframe (the curve is horizontal at t
 
 ### Actions
 
-An **Action** in Blender is a named collection of F-Curves that defines one "performance" of an animation — a walk cycle, an idle breathing animation, a wave, a jump. Actions are stored in the Action Editor (a context of the Dope Sheet).
+An **Action** in Blender is a named collection of F-Curves that defines one "performance" of an animation, a walk cycle, an idle breathing animation, a wave, a jump. Actions are stored in the Action Editor (a context of the Dope Sheet).
 
 **Creating Actions:**
 1. In the Action Editor, click the action name dropdown → "+" to create a new Action
@@ -219,7 +219,7 @@ The twelve principles of animation (Disney, 1981) map directly to Blender tools:
 | **Follow Through** | F-Curve shape after peak keyframe | Overshoot + settle using handle adjustment |
 | **Overlapping Action** | Offset keyframes on secondary parts | Tail, cloth, hair keys offset 4–8 frames behind the primary motion |
 | **Slow In / Slow Out** | F-Curve handle flatness | Flat handles at keyframes = ease; auto handles |
-| **Arcs** | Graph Editor + viewport playback review | All limbs must trace curved arcs — check with onion skin |
+| **Arcs** | Graph Editor + viewport playback review | All limbs must trace curved arcs, check with onion skin |
 | **Secondary Action** | Separate action or offset keys | Hair, clothing, props with their own F-curves |
 | **Timing** | Dope Sheet spacing | More frames between keys = slower; fewer = faster |
 | **Exaggeration** | Pose values pushed beyond realistic range | Scale transforms to 120–150% in Graph Editor |
@@ -234,12 +234,12 @@ The twelve principles of animation (Disney, 1981) map directly to Blender tools:
 The Blender Institute's 2022 short *Charge* (directed by Andy Goralczyk) documented its animation pipeline in unusual detail. Key observations:
 
 **Blocking first, then spline:**
-- Animators worked in **Stepped interpolation** (constant mode) for the first blocking pass — all keyframes jump to the next pose instantly. This allows the timing to be judged without the distraction of inbetween motion.
+- Animators worked in **Stepped interpolation** (constant mode) for the first blocking pass, all keyframes jump to the next pose instantly. This allows the timing to be judged without the distraction of inbetween motion.
 - After the director approved the blocking, animators switched to **Bezier/Spline mode** and began polishing the curves in the Graph Editor.
 - This "blocking → spline" workflow is the industry standard at every studio from Pixar to individual freelancers.
 
 **Graph Editor discipline:**
-- Each animator was required to check every F-Curve for "rogue keys" — unexpected keyframes that the auto-key system inserted accidentally
+- Each animator was required to check every F-Curve for "rogue keys", unexpected keyframes that the auto-key system inserted accidentally
 - Channels that should be clean (like an object that only moves on frame 1 and frame 48) were cleaned manually to remove any stray intermediate keys
 
 **Cycle efficiency:**
@@ -255,16 +255,16 @@ The *Sprite Fright* making-of documentation identifies overlapping action and se
 
 **Overlapping action for character hair/ears:**
 - The sprite characters' leaf-like ears were animated as separate bones with keyframes offset 4–6 frames behind the head rotation
-- This means when the head turns right at frame 20, the ears reach the same rotation at frame 24–26 — the "drag" delay creates the organic lag that communicates mass and flexibility
+- This means when the head turns right at frame 20, the ears reach the same rotation at frame 24–26, the "drag" delay creates the organic lag that communicates mass and flexibility
 
 **Secondary motion for the forest environment:**
 - Background tree branches used the **Noise F-Curve modifier** with Phase set to a random value per branch
-- The same Noise settings on all branches create synchronized swaying (wrong — looks like a single plant)
+- The same Noise settings on all branches create synchronized swaying (wrong, looks like a single plant)
 - Different Phase values per branch create the natural visual complexity of independently moving vegetation
 
-**The practical rule from the *Sprite Fright* animators:** "Anything that hangs, trails, or is attached at one end will move 4–8 frames behind whatever it's attached to. Hair, tails, loose fabric, ears — if you key them at the same frame as the head, they'll look glued on."
+**The practical rule from the *Sprite Fright* animators:** "Anything that hangs, trails, or is attached at one end will move 4–8 frames behind whatever it's attached to. Hair, tails, loose fabric, ears, if you key them at the same frame as the head, they'll look glued on."
 
-> ⚠️ **Gotcha — Auto Keyframing in Blocking:** During the blocking pass, Auto Keying (the record button in the Timeline header) is convenient for capturing poses quickly. However, it inserts keyframes on ALL channels that change — including Location Z if you accidentally nudge a character up while rotating. After blocking, always open the Dope Sheet and delete any unexpected channels (a clean blocking pass typically has Location X/Y/Z + Rotation XYZ on the root control, plus some key bone rotations — nothing else).
+> ⚠️ **Gotcha Auto Keyframing in Blocking:** During the blocking pass, Auto Keying (the record button in the Timeline header) is convenient for capturing poses quickly. However, it inserts keyframes on ALL channels that change including Location Z if you accidentally nudge a character up while rotating. After blocking, always open the Dope Sheet and delete any unexpected channels (a clean blocking pass typically has Location X/Y/Z + Rotation XYZ on the root control, plus some key bone rotations, nothing else).
 
 ---
 
@@ -285,12 +285,12 @@ The *Sprite Fright* making-of documentation identifies overlapping action and se
 
 ## 7.8b Camera Animation: The Missing Foundation
 
-Character animation without camera animation is incomplete. The camera IS the story — it defines what the audience sees and when.
+Character animation without camera animation is incomplete. The camera IS the story, it defines what the audience sees and when.
 
 **Keyframing the camera:**
 - Select the camera object → **I** key → **LocRotScale** → camera keyframes in the timeline
 - Camera focal length (zoom) is animatable: Properties → Object Data → Lens → right-click → Insert Keyframe
-- **Lock Camera to View** (N-Panel → View → Lock Camera to View): moves the camera in real time as you navigate in camera view (Numpad 0) — enable only during camera placement, then disable to prevent accidental camera drift
+- **Lock Camera to View** (N-Panel → View → Lock Camera to View): moves the camera in real time as you navigate in camera view (Numpad 0), enable only during camera placement, then disable to prevent accidental camera drift
 
 **Animated camera vs. Static camera:**
 | Approach | When to Use | Technical Consideration |
@@ -301,12 +301,12 @@ Character animation without camera animation is incomplete. The camera IS the st
 | Handheld (noise) | Live-action feel, tension | Add Noise F-Curve modifier to camera rotation |
 | Crane (arc up) | Reveal scale; awe moment | G → Z while in camera-aligned space |
 
-**Depth of Field animation:** The camera's F-Stop and Focus Distance can be keyframed to create a rack focus effect — where the focus shifts from one subject to another while the camera is static:
+**Depth of Field animation:** The camera's F-Stop and Focus Distance can be keyframed to create a rack focus effect, where the focus shifts from one subject to another while the camera is static:
 1. Object Data → Depth of Field → Focus Object: set to a target Empty or the character
 2. Or: Focus Distance: set manually and keyframe from one value to another over 12–24 frames
 3. F-Stop: 1.4–2.8 = cinematic shallow DoF; 11–22 = everything in focus
 
-> 🎯 **What the exam tests:** Camera animation is covered in Blender certification as part of the animation module. Know that: (1) the camera is just another object — all G/R/S transforms work; (2) focal length is in the Object Data properties; (3) depth of field requires Focus Object or Focus Distance to be set; (4) F-Stop controls the blur amount (lower = more blur).
+> 🎯 **What the exam tests:** Camera animation is covered in Blender certification as part of the animation module. Know that: (1) the camera is just another object, all G/R/S transforms work; (2) focal length is in the Object Data properties; (3) depth of field requires Focus Object or Focus Distance to be set; (4) F-Stop controls the blur amount (lower = more blur).
 
 ---
 
@@ -317,7 +317,7 @@ Character animation without camera animation is incomplete. The camera IS the st
 | Keyframe insertion | I key → menu; right-click property → Insert; Auto-Keying |
 | Dope Sheet contexts | Dope Sheet (all), Action Editor (single action), Shape Key Editor |
 | Graph Editor navigation | MMB pan; V zoom to selection; Home frame all |
-| F-Curve handle types | Free, Aligned, Vector, Auto — and their visual behaviors |
+| F-Curve handle types | Free, Aligned, Vector, Auto, and their visual behaviors |
 | Interpolation modes | Bezier (default), Linear, Constant, Bounce/Elastic |
 | Ease in/out | Flat handles at key = ease; angled = continued momentum |
 | F-Curve Cycles modifier | Repeat (teleports) vs. Repeat with Offset (advances by stride) |
@@ -363,27 +363,27 @@ The full animation toolkit includes keyframes, but also systems that compute val
 - If the value should *repeat or cycle* indefinitely → F-Curve Cycles modifier or NLA strip
 - If the value should *match geometry sculpted ahead of time* → Shape key keyframed
 
-> ⚠️ **Gotcha — Drivers vs. Keyframes:** A property cannot have both a Driver AND keyframes simultaneously — they conflict. If you add a Driver to a property that already has keyframes, Blender will warn you that the keyframes will be ignored. Choose one system per property. Most production rigs use Drivers for procedural behaviors (shape keys driven by bones) and Keyframes for creative performance (the bone's own rotation, driven by the animator).
+> ⚠️ **Gotcha Drivers vs. Keyframes:** A property cannot have both a Driver AND keyframes simultaneously they conflict. If you add a Driver to a property that already has keyframes, Blender will warn you that the keyframes will be ignored. Choose one system per property. Most production rigs use Drivers for procedural behaviors (shape keys driven by bones) and Keyframes for creative performance (the bone's own rotation, driven by the animator).
 
 ---
 
 ## 📚 Next Steps
 
-Proceed to [Module 8: Physics & Simulations](../Module-08-Physics-Simulations/Reading.md) — your animated character needs a world with gravity, cloth, and physics.
+Proceed to [Module 8: Physics & Simulations](../Module-08-Physics-Simulations/Reading.md), your animated character needs a world with gravity, cloth, and physics.
 
 ---
 
 ## 📖 Further Reading
 
-- 📖 **Williams, Richard (2009). *The Animator's Survival Kit.* Faber & Faber** — the definitive animation timing reference
-- 📖 **Blender Manual — F-Curves** (docs.blender.org)
-- 📖 **Blender Institute — *Charge* Production Blog** (blender.org/about/projects/)
-- 📖 **Grant Abbitt — "Blender Animation for Beginners"** (YouTube, see Videos.md)
+- 📖 **Williams, Richard (2009). *The Animator's Survival Kit.* Faber & Faber**, the definitive animation timing reference
+- 📖 **Blender Manual, F-Curves** (docs.blender.org)
+- 📖 **Blender Institute, *Charge* Production Blog** (blender.org/about/projects/)
+- 📖 **Grant Abbitt, "Blender Animation for Beginners"** (YouTube, see Videos.md)
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

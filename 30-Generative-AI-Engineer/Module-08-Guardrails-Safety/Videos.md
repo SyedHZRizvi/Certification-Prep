@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Injection — Simon Willison's talk</p>
+      <p class="vg-title">Prompt Injection, Simon Willison's talk</p>
       <p class="vg-creator">Simon Willison</p>
       <span class="vg-duration">⏱ 40m · The clearest explanation in existence</span>
     </div>
@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">NeMo Guardrails — full tutorial</p>
+      <p class="vg-title">NeMo Guardrails, full tutorial</p>
       <p class="vg-creator">NVIDIA</p>
       <span class="vg-duration">⏱ 1h · Colang flows + integrations</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Guardrails AI — open-source validators</p>
+      <p class="vg-title">Guardrails AI, open-source validators</p>
       <p class="vg-creator">Guardrails AI</p>
       <span class="vg-duration">⏱ 35m · Hub + custom validators</span>
     </div>
@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">OWASP Top 10 for LLMs — walkthrough</p>
+      <p class="vg-title">OWASP Top 10 for LLMs, walkthrough</p>
       <p class="vg-creator">OWASP / community</p>
       <span class="vg-duration">⏱ 40m · The security baseline</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Llama Guard — safety classifier</p>
+      <p class="vg-title">Llama Guard, safety classifier</p>
       <p class="vg-creator">Meta AI</p>
       <span class="vg-duration">⏱ 25m · Open-weight guard model</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Constitutional AI — Anthropic's approach</p>
+      <p class="vg-title">Constitutional AI, Anthropic's approach</p>
       <p class="vg-creator">Anthropic / paper review</p>
       <span class="vg-duration">⏱ 35m · The training-time guardrail</span>
     </div>
@@ -93,7 +93,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Many-shot jailbreaks — Anthropic research</p>
+      <p class="vg-title">Many-shot jailbreaks, Anthropic research</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 20m · Long-context attack pattern</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Air Canada chatbot — the legal precedent</p>
+      <p class="vg-title">Air Canada chatbot, the legal precedent</p>
       <p class="vg-creator">analysis videos</p>
       <span class="vg-duration">⏱ 15m · The case in detail</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Detoxify — open-source toxicity detection</p>
+      <p class="vg-title">Detoxify, open-source toxicity detection</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 20m · Quick integration</span>
     </div>
@@ -134,7 +134,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Outlines + grammars — structured output as guardrail</p>
+      <p class="vg-title">Outlines + grammars, structured output as guardrail</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 25m · Schema-constrained generation</span>
     </div>
@@ -160,7 +160,7 @@
 1. List 5 elements of defense-in-depth for a chatbot.
 2. Why is there "no perfect defense" against prompt injection?
 3. Name 3 PII categories Presidio detects out of the box.
-4. NeMo vs Guardrails AI — when do you pick each?
-5. Air Canada chatbot — what guardrails would have prevented the incident?
+4. NeMo vs Guardrails AI, when do you pick each?
+5. Air Canada chatbot, what guardrails would have prevented the incident?
 
 Then [Quiz](./Quiz.md).

@@ -7,12 +7,12 @@
 ## 🧭 The 6 RAI Principles (MEMORIZE)
 
 ```
-1. FAIRNESS              — equitable outcomes across groups
-2. RELIABILITY & SAFETY  — works under expected + edge conditions
-3. PRIVACY & SECURITY    — protect data; don't leak training data
-4. INCLUSIVENESS         — usable by diverse abilities
-5. TRANSPARENCY          — users know it's AI + how it decided
-6. ACCOUNTABILITY        — humans answer for AI outcomes
+1. FAIRNESS             , equitable outcomes across groups
+2. RELIABILITY & SAFETY , works under expected + edge conditions
+3. PRIVACY & SECURITY   , protect data; don't leak training data
+4. INCLUSIVENESS        , usable by diverse abilities
+5. TRANSPARENCY         , users know it's AI + how it decided
+6. ACCOUNTABILITY       , humans answer for AI outcomes
 ```
 🧠 Mnemonic: **F**riendly **R**obots **P**rotect **I**nclusive **T**ech **A**ccountably
 
@@ -161,14 +161,14 @@ If you can answer all 5 in 60 seconds, you own Module 2. ✅
 | **Microsoft Responsible AI Standard v2** | June 2022 | The source standard |
 | **NIST AI RMF 1.0** | January 2023 | Microsoft maps RAI controls to NIST |
 | **EU AI Act (Reg. 2024/1689)** | June 2024 (force Aug 2024) | Risk-tier compliance staged through 2027 |
-| **NIST SP 800-218A — GenAI Secure Dev** | 2024 | Companion guidance |
+| **NIST SP 800-218A, GenAI Secure Dev** | 2024 | Companion guidance |
 | **ISO/IEC 42001 (AI Management)** | December 2023 | Voluntary AI management certification |
 
 ## 🏷️ Limited-Access Services To Memorize
 
 | Service | What's gated | Why |
 |---|---|---|
-| Face — Verify / Identify | 1-to-1, 1-to-N | Biometric privacy |
+| Face, Verify / Identify | 1-to-1, 1-to-N | Biometric privacy |
 | Custom Neural Voice | Train branded voice | Deepfake / impersonation risk |
 | Speaker Recognition | Voice-print auth | Biometric privacy |
 | Azure OpenAI Abuse-Monitoring Opt-Out | Disable 30-day prompt retention | Regulated workloads only |

@@ -1,4 +1,4 @@
-# Module 9: MLOps — Pipelines, Deployment & Monitoring 🚀
+# Module 9: MLOps, Pipelines, Deployment & Monitoring 🚀
 
 > **Why this module matters:** Domain 4 of MLS-C01 (ML Implementation & Operations) is **20%** of the exam. It tests the production side of ML: pipelines, deployment patterns, monitoring, retraining, A/B tests, blue-green releases, shadow deployments. This is also the area where most candidates lose points because their hands-on experience is heavier on training than on operating. This module makes you fluent in SageMaker Pipelines, the four endpoint types, Model Registry, Model Monitor, and the CI/CD glue (Projects, CodePipeline, EventBridge, Step Functions).
 
@@ -11,7 +11,7 @@
 
 ## 🍕 A Story: From 1 Model To 73 Models In Two Years
 
-Meet Sara. She runs MLE at a 200-engineer SaaS company. In 2022 they had **one** production ML model — a churn predictor — that they retrained quarterly by running a Jupyter notebook by hand. Releases were "Sara commits a new model artifact to S3 and Slack-pings the platform team to redeploy the API." It worked. Until it didn't.
+Meet Sara. She runs MLE at a 200-engineer SaaS company. In 2022 they had **one** production ML model a churn predictor that they retrained quarterly by running a Jupyter notebook by hand. Releases were "Sara commits a new model artifact to S3 and Slack-pings the platform team to redeploy the API." It worked. Until it didn't.
 
 By mid-2023 they had **9** production models. Each one had a different deployment process. When the upstream Snowflake schema changed, **5 of the 9 models silently broke** for two weeks before anyone noticed. The CEO wrote a memo: "We are *operating* this thing like 1995 PHP."
 
@@ -25,13 +25,13 @@ In 2024 Sara rebuilt the ML platform on AWS:
 - **Blue-green and shadow** deployment patterns per model
 - **EventBridge** to retrain on upstream data freshness signals
 
-By end of 2024 they had **73** production models with **3** MLOps engineers. Each model retrained automatically and deployed via PR with code review. The CEO's next memo was about hiring more product engineers — not more ML platform staff.
+By end of 2024 they had **73** production models with **3** MLOps engineers. Each model retrained automatically and deployed via PR with code review. The CEO's next memo was about hiring more product engineers, not more ML platform staff.
 
 That is the lesson of Module 9. The hard part of production ML is **operating** it, not training it.
 
 ---
 
-## 🔁 SageMaker Pipelines — Native ML CI/CD
+## 🔁 SageMaker Pipelines, Native ML CI/CD
 
 SageMaker Pipelines is a DAG (directed acyclic graph) of ML workflow steps, designed specifically for ML.
 
@@ -39,7 +39,7 @@ SageMaker Pipelines is a DAG (directed acyclic graph) of ML workflow steps, desi
 
 | Step | Purpose |
 |------|---------|
-| **Processing** | Run a Processing job (Spark, scikit, custom container) — preprocess data |
+| **Processing** | Run a Processing job (Spark, scikit, custom container), preprocess data |
 | **Training** | Run a training job |
 | **Tuning** | Run an HPO job |
 | **Model** | Create a Model artifact |
@@ -57,11 +57,11 @@ SageMaker Pipelines is a DAG (directed acyclic graph) of ML workflow steps, desi
 ```
 DataIngestion (Processing)
         ↓
-DataValidation (Processing — Deequ / Great Expectations)
+DataValidation (Processing, Deequ / Great Expectations)
         ↓
 Train (Training)
         ↓
-Evaluate (Processing — compute metrics)
+Evaluate (Processing, compute metrics)
         ↓
 ConditionStep: AUC > 0.85?
    YES → RegisterModel → DeployStep (Lambda triggers endpoint update)
@@ -77,7 +77,7 @@ ConditionStep: AUC > 0.85?
 | **ML-aware** | ✅ Native | Generic | Generic |
 | **Versioned** | ✅ | Partial | ✅ |
 | **Integration with Model Registry** | ✅ | Manual | Manual |
-| **Used by SageMaker Projects** | ✅ | — | — |
+| **Used by SageMaker Projects** | ✅ | | |
 | **Best for ML** | ✅ | When you also orchestrate non-ML | If you already use Airflow |
 
 🎯 **Exam pattern.** *"Choose ML-native orchestrator for SageMaker workflow."* → **SageMaker Pipelines**.
@@ -114,7 +114,7 @@ A **Project** is a templated end-to-end MLOps setup using:
 
 ---
 
-## 🚀 Inference / Deployment Patterns — The Four Endpoint Types
+## 🚀 Inference / Deployment Patterns, The Four Endpoint Types
 
 You MUST know this table cold. Many exam questions hinge on it.
 
@@ -129,9 +129,9 @@ You MUST know this table cold. Many exam questions hinge on it.
 
 - Always-on, multi-AZ
 - Auto-scaling via CloudWatch metrics
-- **Multi-Model Endpoint (MME)** — host many models on one endpoint, loaded on demand
-- **Multi-Container Endpoint** — multiple containers behind one endpoint with routing
-- **Inference Components** (2023+) — fine-grained component-level scaling
+- **Multi-Model Endpoint (MME)**, host many models on one endpoint, loaded on demand
+- **Multi-Container Endpoint**, multiple containers behind one endpoint with routing
+- **Inference Components** (2023+), fine-grained component-level scaling
 
 ### Serverless inference
 
@@ -172,7 +172,7 @@ You MUST know this table cold. Many exam questions hinge on it.
 
 ---
 
-## 🎨 Deployment Strategies — Blue/Green, Canary, Shadow
+## 🎨 Deployment Strategies, Blue/Green, Canary, Shadow
 
 | Strategy | How |
 |----------|-----|
@@ -203,9 +203,9 @@ Detects drift in production after deployment. Four monitor types:
 
 ### Setup
 
-1. **Baseline job** — compute baseline statistics on training data
-2. **Schedule** — periodic comparison of production data to baseline
-3. **Reports** — published to S3; CloudWatch alarms on violations
+1. **Baseline job**, compute baseline statistics on training data
+2. **Schedule**, periodic comparison of production data to baseline
+3. **Reports**, published to S3; CloudWatch alarms on violations
 
 🎯 **Exam pattern.** *"Detect when a model's input feature distribution shifts in production."* → **Data Quality monitor** (one of four Model Monitor types).
 
@@ -232,7 +232,7 @@ Detects drift in production after deployment. Four monitor types:
 
 | Type | When |
 |------|------|
-| **Target tracking** | "Keep average requests per instance at X" — default |
+| **Target tracking** | "Keep average requests per instance at X", default |
 | **Step scaling** | Scale by N instances when alarm threshold crossed |
 | **Scheduled scaling** | Predictable patterns (e.g. business hours) |
 
@@ -242,7 +242,7 @@ Real-time endpoints can scale on `InvocationsPerInstance`, `CPUUtilization`, `GP
 
 ---
 
-## 📊 Observability — CloudWatch + X-Ray + CloudTrail
+## 📊 Observability, CloudWatch + X-Ray + CloudTrail
 
 | Service | Use for ML |
 |---------|------------|
@@ -251,7 +251,7 @@ Real-time endpoints can scale on `InvocationsPerInstance`, `CPUUtilization`, `GP
 | **CloudWatch Alarms** | Trigger on drift, errors, latency, cost anomalies |
 | **CloudWatch Synthetics** | Canary tests against endpoints |
 | **AWS X-Ray** | Distributed trace through Lambda + endpoint + downstream services |
-| **CloudTrail** | API audit — who called CreateEndpoint? |
+| **CloudTrail** | API audit, who called CreateEndpoint? |
 
 🎯 **Exam pattern.** *"Identify root cause of inference latency spikes spanning Lambda, SageMaker endpoint, and DynamoDB."* → **AWS X-Ray** distributed traces.
 
@@ -285,11 +285,11 @@ SageMaker **Inference Recommender** automatically benchmarks your model on diffe
 
 ---
 
-## 📖 Case Study — Amazon Music's MLOps Stack
+## 📖 Case Study, Amazon Music's MLOps Stack
 
 **Situation.** Amazon Music runs ~200 ML models in production (ranking, recommendations, query understanding, audio fingerprinting, content moderation). Per-model deployment was bespoke; on-call paged every week for some model misbehaving.
 
-**Architecture (re:Invent 2023 — AIM403).**
+**Architecture (re:Invent 2023, AIM403).**
 - **SageMaker Pipelines** for every training workflow
 - **Model Registry** with approval-required gates
 - **SageMaker Projects** template per team
@@ -301,7 +301,7 @@ SageMaker **Inference Recommender** automatically benchmarks your model on diffe
 
 **Outcome.** Page-out rate fell ~80%. New-model time-to-production fell from ~6 weeks to ~5 days. The team now ships 30+ model updates per week.
 
-**Lesson for the exam.** This stack — **Pipelines + Registry + Projects + Monitor + Blue/Green + EventBridge** — is the *canonical* MLS-C01 reference architecture for production ML. Memorise the names and what each does.
+**Lesson for the exam.** This stack **Pipelines + Registry + Projects + Monitor + Blue/Green + EventBridge** is the *canonical* MLS-C01 reference architecture for production ML. Memorise the names and what each does.
 
 ---
 
@@ -367,7 +367,7 @@ SageMaker **Inference Recommender** automatically benchmarks your model on diffe
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **"Real-time or serverless?"** A team has 3 models with very different traffic: 1000 QPS predictable; 5 QPS occasional; 10 QPS spiky. Pick the best endpoint per model and explain.
 2. **The drift-to-retrain reflex.** Most "drift detected, retrain" workflows over-retrain. When would retraining make the model *worse*? (Hint: data quality degradation vs genuine distribution shift.)
@@ -395,11 +395,11 @@ You now know:
 - 📦 **Model Registry** with approval workflow
 - 🏗️ **SageMaker Projects** as the templated MLOps bootstrapper
 - 🚀 The **four endpoint types** (real-time / serverless / async / batch) and when each wins
-- 🎨 **Deployment strategies** — all-at-once / blue-green / canary / linear / shadow
-- 🔬 **Model Monitor's four types** — data quality, model quality, bias drift, feature attribution drift
+- 🎨 **Deployment strategies**, all-at-once / blue-green / canary / linear / shadow
+- 🔬 **Model Monitor's four types**, data quality, model quality, bias drift, feature attribution drift
 - ♻️ **Automatic retraining patterns** via EventBridge + Pipelines
-- 🛡️ **Endpoint auto-scaling** — target tracking / step / scheduled
-- 📊 **Observability** — CloudWatch / X-Ray / CloudTrail roles
+- 🛡️ **Endpoint auto-scaling**, target tracking / step / scheduled
+- 📊 **Observability**, CloudWatch / X-Ray / CloudTrail roles
 - 🧪 **A/B testing** with production variants
 - 🎁 **Inference Recommender** for cost-optimal instance picking
 - 📖 The **Amazon Music MLOps reference architecture** you will see paraphrased
@@ -415,27 +415,27 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **SageMaker Pipelines docs** — `docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html`
-- 📖 **SageMaker Model Registry** — `docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html`
-- 📖 **SageMaker Model Monitor** — `docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html`
-- 📖 **AWS Well-Architected ML Lens — Operational Excellence pillar**
+- 📖 **SageMaker Pipelines docs**, `docs.aws.amazon.com/sagemaker/latest/dg/pipelines.html`
+- 📖 **SageMaker Model Registry**, `docs.aws.amazon.com/sagemaker/latest/dg/model-registry.html`
+- 📖 **SageMaker Model Monitor**, `docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html`
+- 📖 **AWS Well-Architected ML Lens, Operational Excellence pillar**
 
 **re:Invent talks**
-- 🎤 AIM403 — *MLOps at Amazon Music*
-- 🎤 AIM319 — *Capital One real-time fraud (MLOps side)*
+- 🎤 AIM403, *MLOps at Amazon Music*
+- 🎤 AIM319, *Capital One real-time fraud (MLOps side)*
 
 **Academic foundations**
-- 📄 **Sculley et al. (2015).** *Hidden Technical Debt in Machine Learning Systems.* NIPS — the foundational MLOps paper
+- 📄 **Sculley et al. (2015).** *Hidden Technical Debt in Machine Learning Systems.* NIPS, the foundational MLOps paper
 - 📄 **Breck et al. (2017).** *The ML Test Score: A Rubric for ML Production Readiness.* IEEE Big Data
 
 **Industry**
-- 📰 **Google's MLOps maturity model** — public whitepaper
-- 📰 **Eugene Yan's blog** — practical MLOps essays
-- 📰 **Made With ML (Goku Mohandas)** — modern MLOps curriculum
+- 📰 **Google's MLOps maturity model**, public whitepaper
+- 📰 **Eugene Yan's blog**, practical MLOps essays
+- 📰 **Made With ML (Goku Mohandas)**, modern MLOps curriculum
 
 ---
 
-## 🛠️ Appendix A — Worked Example: A Production SageMaker Pipeline
+## 🛠️ Appendix A, Worked Example: A Production SageMaker Pipeline
 
 ```python
 from sagemaker.workflow.pipeline import Pipeline
@@ -522,7 +522,7 @@ register_step = ModelStep(
 
 fail_step = FailStep(
     name="MetricBelowThreshold",
-    error_message="AUC below 0.85 — refusing to register.",
+    error_message="AUC below 0.85, refusing to register.",
 )
 
 cond_step = ConditionStep(
@@ -551,7 +551,7 @@ pipeline.start()
 
 ---
 
-## 🛠️ Appendix B — Endpoint Auto-Scaling Configuration
+## 🛠️ Appendix B, Endpoint Auto-Scaling Configuration
 
 ```python
 import boto3
@@ -588,7 +588,7 @@ client.put_scaling_policy(
 
 ---
 
-## 🛠️ Appendix C — Model Monitor Setup Sketch
+## 🛠️ Appendix C, Model Monitor Setup Sketch
 
 ```python
 from sagemaker.model_monitor import DefaultModelMonitor
@@ -627,7 +627,7 @@ monitor.create_monitoring_schedule(
 
 ---
 
-## 🛠️ Appendix D — The Production Endpoint Checklist
+## 🛠️ Appendix D, The Production Endpoint Checklist
 
 Before any model goes to production, verify:
 

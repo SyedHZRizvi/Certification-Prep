@@ -16,7 +16,7 @@
 7. Cleaning      (residual toner removed)
 ```
 
-🧠 Mnemonic: **C**ool **P**eople **E**at **D**onuts **T**o **F**use **C**arbs (CPEDTFC — your own works fine too).
+🧠 Mnemonic: **C**ool **P**eople **E**at **D**onuts **T**o **F**use **C**arbs (CPEDTFC, your own works fine too).
 
 ---
 
@@ -41,7 +41,7 @@
 | Streaks (laser) | Clean drum, replace toner |
 | Streaks (inkjet) | Run head clean |
 | Repeating defect every X inches | Match X to drum/fuser circumference |
-| Garbled output (1 user) | Wrong driver — reinstall |
+| Garbled output (1 user) | Wrong driver, reinstall |
 | Faded thermal | Bad head, old paper |
 
 ---
@@ -138,10 +138,10 @@
 
 1. Recite the 7 laser steps? ___
 2. Direct thermal vs thermal transfer? ___
-3. USB-C vs Thunderbolt — what's the practical difference? ___
+3. USB-C vs Thunderbolt, what's the practical difference? ___
 4. Common cause of recurring paper jams? ___
 5. Default port for IPP / IPPS? ___
 
 ---
 
-➡️ **Core 2 begins:** [Module 7 — Operating Systems](../Module-07-Operating-Systems/Reading.md)
+➡️ **Core 2 begins:** [Module 7, Operating Systems](../Module-07-Operating-Systems/Reading.md)

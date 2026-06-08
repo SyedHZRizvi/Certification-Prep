@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Markov Chain Attribution In Python — Step By Step</p>
+      <p class="vg-title">Markov Chain Attribution In Python, Step By Step</p>
       <p class="vg-creator">Data Science marketing channels</p>
       <span class="vg-duration">⏱ 20 min · The math + the code</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Google Colab For Marketers — Crash Course</p>
+      <p class="vg-title">Google Colab For Marketers, Crash Course</p>
       <p class="vg-creator">Various data channels</p>
       <span class="vg-duration">⏱ 15 min · If you're going Python route</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Customer Journey Visualization — Sankey Charts</p>
+      <p class="vg-title">Customer Journey Visualization, Sankey Charts</p>
       <p class="vg-creator">Data viz channels</p>
       <span class="vg-duration">⏱ 14 min · Make your chart memorable</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">MMM vs MTA — Which Should You Use?</p>
+      <p class="vg-title">MMM vs MTA, Which Should You Use?</p>
       <p class="vg-creator">Various analytics channels</p>
       <span class="vg-duration">⏱ 15 min · The bigger picture</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Incrementality Testing — Beyond Attribution</p>
+      <p class="vg-title">Incrementality Testing, Beyond Attribution</p>
       <p class="vg-creator">Marketing science channels</p>
       <span class="vg-duration">⏱ 18 min · Where attribution falls short</span>
     </div>

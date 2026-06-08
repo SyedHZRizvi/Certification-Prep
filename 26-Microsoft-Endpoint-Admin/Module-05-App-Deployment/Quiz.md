@@ -62,7 +62,7 @@ D. The app is shown only to compliant devices
 
 ---
 
-### Q8. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q8. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Win32 apps support MSI product code as a detection rule.
 **S2:** Win32 apps can have up to 100 supersedence relationships.
@@ -118,7 +118,7 @@ D. Faster installation
 A. Apple Business Manager + VPP tokens
 B. Google Workspace
 C. Microsoft Store credentials
-D. None — they're free
+D. None, they're free
 
 ---
 
@@ -162,7 +162,7 @@ D. Microsoft Store apps
 
 ---
 
-### Q19. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q19. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Win32 apps can target user groups, device groups, or both.
 **S2:** "Available with or without enrollment" is an iOS / Android assignment intent for MAM-only.
@@ -207,7 +207,7 @@ D. Conditional Access is blocking
 
 ---
 
-### Q24. Yes/No — For each statement, mark Yes or No. *(Evaluate)*
+### Q24. Yes/No, For each statement, mark Yes or No. *(Evaluate)*
 
 **S1:** Win32 supersedence can chain v2024 → v2023 → v2022 → v2021 (depth 3).
 **S2:** App Configuration Policies push per-app settings to managed apps.
@@ -224,7 +224,7 @@ D. Yes / No / No
 A. All apps assigned to "All devices" on day one
 B. Pilot → Broad → Deferred rings, mandatory detection rules, App Categories enforced
 C. Direct APK uploads for Android
-D. No supersedence — replace and reassign manually
+D. No supersedence, replace and reassign manually
 
 ---
 
@@ -246,7 +246,7 @@ Max supersedence depth = 2. Chains of 3+ won't work.
 Up to 100 dependencies per Win32 app.
 
 ### Q6: **B. A separate Win32 app set as a dependency relationship**
-Don't bundle dependencies — make them a tracked relationship.
+Don't bundle dependencies, make them a tracked relationship.
 
 ### Q7: **A. The app is auto-installed on every targeted device**
 Required = forced install. Available = user-pick.
@@ -279,7 +279,7 @@ All Android Enterprise apps go through Managed Google Play.
 ACP pushes per-app settings via the MDM channel for managed devices.
 
 ### Q17: **B. Organizing the Company Portal app catalog with tabs**
-Categories are UX — not access control.
+Categories are UX, not access control.
 
 ### Q18: **B. A simple MSI with no extras**
 LOB is the simple path. Win32 is for anything with extras.

@@ -41,7 +41,7 @@
   <a class="vg-card" data-video-id="P4VFL9nIaIA" href="https://www.youtube.com/results?search_query=Google+ADK+agent+development+kit+multi+agent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ADK — Agent Development Kit</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">ADK, Agent Development Kit</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · Open-source agent SDK</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercedes+Benz+MBUX+Gemini+Google+Cloud+voice+assistant" target="_blank" rel="noopener">
@@ -64,7 +64,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+drive+thru+architecture+conversational+agents" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Wendy's FreshAI — Drive-Thru Deep Dive</p><p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-title">Wendy's FreshAI, Drive-Thru Deep Dive</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 17 min · State machine + voice</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=multi+agent+orchestration+coordinator+specialist+pattern" target="_blank" rel="noopener">
@@ -105,7 +105,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Snap+MyAI+gemini+agent+features+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Snap MyAI — Agent Features</p><p class="vg-creator">Snap Inc / Google Cloud</p>
+      <p class="vg-title">Snap MyAI, Agent Features</p><p class="vg-creator">Snap Inc / Google Cloud</p>
       <span class="vg-duration">⏱ 15 min · Multi-modal agentic UX</span></div>
   </a>
 </div>
@@ -114,7 +114,7 @@
 
 ## ✅ After watching
 
-1. Conversational Agents vs ADK — when each?
+1. Conversational Agents vs ADK, when each?
 2. Three components in the Mercedes MBUX flow?
 3. Function calling vs JSON mode?
 4. What is a coordinator agent?

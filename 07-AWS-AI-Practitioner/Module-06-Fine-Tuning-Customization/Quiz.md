@@ -72,8 +72,8 @@ D. Reinforcement learning
 ---
 
 ### Q9. "Lower perplexity is better" is: *(Understand)*
-A. False — higher is better
-B. True — lower perplexity means the model is less surprised
+A. False, higher is better
+B. True, lower perplexity means the model is less surprised
 C. Only true for image models
 D. Irrelevant to LLMs
 
@@ -232,7 +232,7 @@ Perplexity ≈ how surprised the model is by held-out text. Lower = better fit.
 Standard alignment technique for Claude/GPT/Llama-chat.
 
 ### Q11: **B. Parameter-efficient fine-tuning**
-Train small adapters (LoRA) instead of all weights — cheap and fast.
+Train small adapters (LoRA) instead of all weights, cheap and fast.
 
 ### Q12: **B. Large amounts of UNLABELED domain text**
 Continued pre-training extends base pre-training; fine-tuning uses small labeled sets.
@@ -247,7 +247,7 @@ The most-repeated heuristic on this exam.
 Bedrock Model Evaluation supports all four flavors.
 
 ### Q16: **C. BERTScore**
-Embedding-based semantic similarity — closer to human judgment than n-gram overlap.
+Embedding-based semantic similarity, closer to human judgment than n-gram overlap.
 
 ### Q17: **A. Provisioned Throughput**
 Required to serve custom Bedrock models. Same answer as Q6 by design.
@@ -280,7 +280,7 @@ R² is a regression metric. Not used for generative text evaluation.
 - 23–24/24 → 🏆 You've mastered the customization spectrum.
 - 20–22/24 → ✅ Solid.
 - 17–19/24 → ⚠️ Re-read the customization comparison table and metrics section.
-- <17 → 🔁 Re-do this module — it carries heavy exam weight.
+- <17 → 🔁 Re-do this module, it carries heavy exam weight.
 
 ---
 
@@ -289,7 +289,7 @@ R² is a regression metric. Not used for generative text evaluation.
 - 4 customization approaches with cost ordering
 - "RAG for facts, fine-tuning for behaviors"
 - BLEU (translation), ROUGE (summarization), Perplexity (intrinsic), BERTScore (semantic)
-- RLHF, DPO, instruction tuning, PEFT/LoRA — definitions
+- RLHF, DPO, instruction tuning, PEFT/LoRA, definitions
 - Provisioned Throughput required for customized Bedrock models
 - Bedrock Batch = 50% off offline workloads
 - 4 evaluation types in Bedrock Model Evaluation

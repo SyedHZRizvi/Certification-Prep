@@ -38,7 +38,7 @@ audience  deliverable  proof point
 
 ---
 
-## 💼 Pricing Models — Pick One
+## 💼 Pricing Models, Pick One
 
 | Model | New founders | Why |
 |---|---|---|
@@ -124,6 +124,6 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-> ⚖️ All financial figures are illustrative. Not professional advice — consult a CPA / business coach for your situation.
+> ⚖️ All financial figures are illustrative. Not professional advice, consult a CPA / business coach for your situation.
 
 ➡️ [Module 2: Productizing AI Marketing Services](../Module-02-Productizing-AI-Marketing-Services/Reading.md)

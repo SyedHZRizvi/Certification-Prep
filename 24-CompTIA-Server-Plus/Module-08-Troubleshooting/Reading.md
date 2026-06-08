@@ -1,9 +1,9 @@
 # Module 8: Troubleshooting & Documentation 🔧
 
-> **Why this module matters:** Troubleshooting is **28%** of SK0-005 — the second-biggest domain. Every PBQ will hand you a symptom (beep code, LED, slow query, dropped connection) and ask you to isolate the cause. Server+ also tests the formal **6-step methodology** by name — answer it wrong and you lose easy points. This module gives you the methodology, the per-subsystem diagnostic vocabulary, and the documentation hygiene the exam rewards.
+> **Why this module matters:** Troubleshooting is **28%** of SK0-005 the second-biggest domain. Every PBQ will hand you a symptom (beep code, LED, slow query, dropped connection) and ask you to isolate the cause. Server+ also tests the formal **6-step methodology** by name answer it wrong and you lose easy points. This module gives you the methodology, the per-subsystem diagnostic vocabulary, and the documentation hygiene the exam rewards.
 
 > **Prerequisites for this module.** Before starting:
-> - All previous modules (1–7) — troubleshooting is integrative
+> - All previous modules (1–7), troubleshooting is integrative
 > - Comfort with running commands from a terminal (Windows + Linux)
 >
 > If those are shaky, pause and review before continuing.
@@ -43,9 +43,9 @@ CompTIA tests this **by name** across A+, Network+, Server+, Security+. **Memori
 | **5** | **Verify full system functionality and, if applicable, implement preventive measures** | Confirm fix; verify dependent systems; add a monitoring check that would catch this earlier next time |
 | **6** | **Document findings, actions, and outcomes** | Tickets, runbook updates, post-mortem, CMDB updates, knowledge base entry |
 
-🎯 **Exam pattern:** *"After confirming a theory of probable cause, what is the NEXT step?"* → **Step 4 — establish a plan and implement.**
+🎯 **Exam pattern:** *"After confirming a theory of probable cause, what is the NEXT step?"* → **Step 4, establish a plan and implement.**
 
-🚨 **Trap on the exam:** Steps are tested with phrasing like "before you implement…" or "after verifying functionality, you…" — practice the order until you can recite it backwards.
+🚨 **Trap on the exam:** Steps are tested with phrasing like "before you implement…" or "after verifying functionality, you…", practice the order until you can recite it backwards.
 
 ---
 
@@ -61,7 +61,7 @@ CompTIA tests this **by name** across A+, Network+, Server+, Security+. **Memori
 6. Boot device selection per UEFI/BIOS boot order
 7. Hand off to bootloader
 
-### Beep codes — vendor-specific
+### Beep codes, vendor-specific
 
 Each vendor publishes a beep-code table. Common patterns:
 
@@ -104,7 +104,7 @@ Reading server LEDs is a Server+ rite of passage.
 | **PSU** | Solid green = OK; off = no AC; amber = fail |
 | **NIC link/activity** | Green = link; amber/yellow = different speed; blinking = traffic |
 | **Drive bay** | Green = active; blue = identify (admin-toggled); blinking green = activity; amber = pre-fail / failed |
-| **Locator / ID** | Blue — operator pressed identify so the tech can find it in the rack |
+| **Locator / ID** | Blue, operator pressed identify so the tech can find it in the rack |
 | **iDRAC/iLO status** | Solid green = OK; amber = mgmt subsystem alert |
 
 🚨 **Trap on the exam:** Solid amber drive LED + activity LED still flashing → **wait for the array to mark the drive failed before pulling**. Pulling mid-write corrupts the array (Module 1 also).
@@ -123,9 +123,9 @@ Tools:
 |---|---|
 | **Windows Memory Diagnostic** | Windows boot-time test (`mdsched.exe`) |
 | **MemTest86 / MemTest86+** | Bootable USB; thorough multi-pass test |
-| **BMC SEL** | Vendor management interface — counts correctable + uncorrectable ECC errors per DIMM |
-| **`dmidecode -t memory`** | Linux — physical DIMM enumeration |
-| **`edac-util`** | Linux — Memory Controller error reports |
+| **BMC SEL** | Vendor management interface, counts correctable + uncorrectable ECC errors per DIMM |
+| **`dmidecode -t memory`** | Linux, physical DIMM enumeration |
+| **`edac-util`** | Linux, Memory Controller error reports |
 
 If the SEL shows correctable ECC errors on one DIMM trending upward → schedule replacement. If uncorrectable → already corrupted data; replace immediately and audit affected workloads.
 
@@ -169,7 +169,7 @@ If the SEL shows correctable ECC errors on one DIMM trending upward → schedule
 
 ---
 
-## 🔥 Performance Bottlenecks — CPU / RAM / Disk / Network
+## 🔥 Performance Bottlenecks, CPU / RAM / Disk / Network
 
 Diagnosing "the server is slow" means *finding the saturated resource*.
 
@@ -206,12 +206,12 @@ Diagnosing "the server is slow" means *finding the saturated resource*.
 
 ### Bottleneck triage (rule-of-thumb sequence)
 
-1. **CPU** — sustained > 80% across all cores during the slow period?
-2. **Memory** — paging/swapping? available memory near 0?
-3. **Disk** — latency > 20 ms? queue chronically full?
-4. **Network** — pps or bps near link rate? errors/drops on the interface?
+1. **CPU**, sustained > 80% across all cores during the slow period?
+2. **Memory**, paging/swapping? available memory near 0?
+3. **Disk**, latency > 20 ms? queue chronically full?
+4. **Network**, pps or bps near link rate? errors/drops on the interface?
 
-🎯 **Exam pattern:** *"App is slow. CPU 35%, memory 60%, disk latency 6 ms, NIC 200 Mbps of 10 Gb."* → None of the four are saturated; investigate application-level issues (DB query plan, GC, lock contention) — not infrastructure.
+🎯 **Exam pattern:** *"App is slow. CPU 35%, memory 60%, disk latency 6 ms, NIC 200 Mbps of 10 Gb."* → None of the four are saturated; investigate application-level issues (DB query plan, GC, lock contention), not infrastructure.
 
 ---
 
@@ -219,7 +219,7 @@ Diagnosing "the server is slow" means *finding the saturated resource*.
 
 | Symptom | First tool |
 |---|---|
-| Cannot reach a host by name | `nslookup` / `dig` — is DNS resolving? |
+| Cannot reach a host by name | `nslookup` / `dig`, is DNS resolving? |
 | Resolves but cannot connect | `ping` (ICMP), `traceroute` / `tracert` (path) |
 | Connection times out on a port | `nc -vz host port` / `Test-NetConnection host -Port port` |
 | Connected but slow | `iperf3` for end-to-end throughput baseline |
@@ -246,7 +246,7 @@ Diagnosing "the server is slow" means *finding the saturated resource*.
 | `tcpdump -ni eth0 port 443` | Packet capture |
 | `nmap -p 22,80,443 host` | Port scan |
 
-🎯 **Exam pattern:** *"Server connects to internet but cannot reach internal DB server. Both are on the same subnet."* → ARP, host firewall on the DB, or VLAN/access-port misconfig — not internet routing.
+🎯 **Exam pattern:** *"Server connects to internet but cannot reach internal DB server. Both are on the same subnet."* → ARP, host firewall on the DB, or VLAN/access-port misconfig, not internet routing.
 
 ---
 
@@ -259,14 +259,14 @@ Diagnosing "the server is slow" means *finding the saturated resource*.
 | Slow query on a previously-fast DB | Stats out of date, missing index, query-plan change, locking, disk latency, snapshot chain |
 | Backup window growing nightly | Data growth, RAID rebuild during window, MTU change, missing dedup, controller queue saturation |
 | Random reboots | Overheating (check inlet temp + fan SEL), PSU failing under load, kernel panic, scheduled task triggering reboot |
-| RAID rebuild taking days | Drive count + size; concurrent I/O load; controller bottleneck — patience or rate-limit array activity |
+| RAID rebuild taking days | Drive count + size; concurrent I/O load; controller bottleneck, patience or rate-limit array activity |
 | VM performance crashed after a host patch | EVC level changed, vMotion compat lost, driver regression, time sync |
 | New LUN appears as N disks | MPIO not installed (Module 3) |
 | Storage VLAN suddenly slow | MTU mismatch (Module 7), STP loop, port flapping |
 
 ---
 
-## 📑 Documentation — The Discipline That Saves You
+## 📑 Documentation, The Discipline That Saves You
 
 ### What to document
 
@@ -319,9 +319,9 @@ Runbooks are tested under fire. Run them in tabletop exercises (Module 5).
 
 ---
 
-## 🔄 Change Management — Why It Belongs Here Too
+## 🔄 Change Management, Why It Belongs Here Too
 
-(Some content recap from Module 1 of Sec+ / Module 2 / Module 5 — re-stated because Server+ tests it in the troubleshooting context.)
+(Some content recap from Module 1 of Sec+ / Module 2 / Module 5, re-stated because Server+ tests it in the troubleshooting context.)
 
 | Term | What |
 |---|---|
@@ -348,11 +348,11 @@ Runbooks are tested under fire. Run them in tabletop exercises (Module 5).
 
 **Walkthrough.**
 
-1. **Identify the problem.** Get specifics — what does "slow" mean? Time to load page? When did it start? Just this user, or company-wide? Any recent changes? You check monitoring: SharePoint p95 latency tripled at 14:32 today, affecting all users. No changes are logged in the change calendar.
+1. **Identify the problem.** Get specifics, what does "slow" mean? Time to load page? When did it start? Just this user, or company-wide? Any recent changes? You check monitoring: SharePoint p95 latency tripled at 14:32 today, affecting all users. No changes are logged in the change calendar.
 2. **Establish a theory.** Three candidates: (a) SharePoint app server hit a CPU/RAM/disk bottleneck; (b) SQL Server backend is slow; (c) network path is degraded.
-3. **Test the theory.** Open Resource Monitor on the SharePoint server — CPU 22%, RAM 50%, disk latency 4 ms. Not saturated. Open SQL Server Activity Monitor — `WRITELOG` waits dominating, disk queue chronically full on the log volume. Investigate the storage path: `multipath -ll` shows one of two paths failed at 14:32. Theory confirmed: lost a storage path; MPIO is in degraded fallback; SQL log writes are bottlenecked.
+3. **Test the theory.** Open Resource Monitor on the SharePoint server CPU 22%, RAM 50%, disk latency 4 ms. Not saturated. Open SQL Server Activity Monitor `WRITELOG` waits dominating, disk queue chronically full on the log volume. Investigate the storage path: `multipath -ll` shows one of two paths failed at 14:32. Theory confirmed: lost a storage path; MPIO is in degraded fallback; SQL log writes are bottlenecked.
 4. **Plan + implement.** Plan: identify and fail the bad path explicitly, schedule replacement of the bad SFP+ optic during the next maintenance window. Communicate via Slack to stakeholders. Implement: `multipath -f /dev/mapper/badpath` and verify SQL latency drops.
-5. **Verify + preventive.** SharePoint p95 latency back to baseline. Add monitoring alert for "any MPIO path down > 5 min" — would have paged at 14:37, not at user complaint at 16:15.
+5. **Verify + preventive.** SharePoint p95 latency back to baseline. Add monitoring alert for "any MPIO path down > 5 min", would have paged at 14:37, not at user complaint at 16:15.
 6. **Document.** Incident ticket with timeline, root cause (degraded SFP+), action taken (failed bad path), follow-up (replace optic in MW). Runbook updated with the path-down alert procedure. Post-mortem scheduled.
 
 Total time to resolution: ~30 min. Documentation discipline turned a 4-hour scramble into a clean, learnable incident.
@@ -365,12 +365,12 @@ Total time to resolution: ~30 min. Documentation discipline turned a 4-hour scra
 |---|---|
 | "The 6-step methodology is theoretical and nobody uses it." | CompTIA tests it *by name*. Memorize the order. |
 | "If the server beeps, just reboot." | Beep codes are *diagnostic*. Match to vendor chart; usually RAM. |
-| "Slow = need more RAM/CPU." | Maybe — measure first. Often it's disk latency, network, or app code. |
+| "Slow = need more RAM/CPU." | Maybe, measure first. Often it's disk latency, network, or app code. |
 | "Documentation is for compliance, not for me." | The runbook you write at 2 p.m. is what saves you at 3 a.m. |
 | "We don't need a change record for small changes." | "Small changes" are how environments drift and incidents become unexplainable. |
 | "If monitoring isn't alerting, the system is fine." | Monitoring blind spots are real; observed symptoms outrank silent dashboards. |
 | "Pull the bad drive immediately when amber LED appears." | Wait for the controller to mark it failed; pulling mid-write corrupts the array. |
-| "MTU mismatches show as obvious errors." | Often they show as silent drops + worse performance — verify with sized pings. |
+| "MTU mismatches show as obvious errors." | Often they show as silent drops + worse performance, verify with sized pings. |
 | "Whoever installed it knows where it is." | They quit 2 years ago. Document the rack location, BMC IP, service tag, owner. |
 | "Postmortems blame people, not systems." | A good postmortem is blameless, focused on system improvements. CompTIA aligns with this culture (and frameworks like Google SRE). |
 
@@ -421,11 +421,11 @@ Total time to resolution: ~30 min. Documentation discipline turned a 4-hour scra
 
 ---
 
-## 📊 Case Study — The 2012 AWS US-East-1 EBS Outage (Why Bottleneck Diagnosis Matters)
+## 📊 Case Study, The 2012 AWS US-East-1 EBS Outage (Why Bottleneck Diagnosis Matters)
 
 **Situation.** On 22 October 2012 AWS US-East-1 (the largest AWS region at the time) suffered a major outage of the EBS (Elastic Block Storage) service. A latent memory leak in the EBS storage server software triggered a feedback loop: EBS servers became unresponsive, customers' EC2 instances saw degraded volumes, instances were terminated and re-launched (compounding the load on remaining servers), and the cascade tore through availability zones. The outage took down portions of Netflix, Reddit, Heroku, Pinterest, and many other major services for ~6 hours (AWS public post-mortem, 22 October 2012).
 
-**Diagnostic challenge.** From the *customer* side, symptoms were chaotic: EC2 instances unresponsive, EBS volume metrics "frozen," API calls timing out, sometimes intermittent recovery. Customers who followed methodology, escalated through AWS Support, and held off on bulk-restarting their own workloads recovered faster than those who panicked and did "everything at once" — which compounded the load.
+**Diagnostic challenge.** From the *customer* side, symptoms were chaotic: EC2 instances unresponsive, EBS volume metrics "frozen," API calls timing out, sometimes intermittent recovery. Customers who followed methodology, escalated through AWS Support, and held off on bulk-restarting their own workloads recovered faster than those who panicked and did "everything at once", which compounded the load.
 
 **Outcome.** AWS published a public post-mortem the following week detailing the latent bug, the feedback loop, and changes to throttle the re-launch cascade. Multi-AZ best-practice guidance was strengthened; customers reviewed their architectures for single-AZ dependencies.
 
@@ -433,7 +433,7 @@ Total time to resolution: ~30 min. Documentation discipline turned a 4-hour scra
 
 - **Methodology under pressure.** Random restarts during an incident often make it worse. Stop, identify, theorize.
 - **Cascading failures are real.** A single subsystem under stress can pull more subsystems down via re-launch / retry storms.
-- **Cloud monitoring blind spots exist.** AWS metrics may freeze when the underlying control plane is degraded — operators must reason from multiple angles, not one dashboard.
+- **Cloud monitoring blind spots exist.** AWS metrics may freeze when the underlying control plane is degraded, operators must reason from multiple angles, not one dashboard.
 - **Post-mortems must be public-ish, blameless, action-oriented.** AWS sets a high bar; the post-mortem is itself a Server+/SRE teaching artifact.
 - **The 6-step methodology applies even at hyperscale.** "Identify, theorize, test, implement, verify, document" is universal.
 
@@ -450,24 +450,24 @@ This is the scenario Server+ tests when asking "what is the NEXT troubleshooting
 
 You now know:
 
-- 🎯 The **CompTIA 6-step troubleshooting methodology** — memorized cold
+- 🎯 The **CompTIA 6-step troubleshooting methodology**, memorized cold
 - ⚡ **POST**, **beep codes**, **boot symptom → root cause** patterns
 - 💡 **LED meanings** including the locator/identify blue LED
 - 🧠 **Memory** diagnostics (BMC SEL, MemTest86, edac-util)
 - 💽 **Storage** diagnostics (RAID controller utilities, SMART, MPIO, perfmon/iostat)
-- 🔥 **Performance bottleneck** triage across CPU / RAM / disk / network — and the per-platform tools
+- 🔥 **Performance bottleneck** triage across CPU / RAM / disk / network, and the per-platform tools
 - 🌐 **Network** troubleshooting: nslookup, ping, traceroute, nc, iperf3, tcpdump, MTU verification
-- 📑 **Documentation hygiene** — CMDB, runbooks, post-mortems, asset records
+- 📑 **Documentation hygiene**, CMDB, runbooks, post-mortems, asset records
 - 🔄 **Change management** vocabulary in the troubleshooting context
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 21/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 21/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
 4. ➡️ Take **Practice Exam 1** (after Modules 1–4 if you haven't already), then **Practice Exam 2**, then the **Final Mock**.
 
 > **Where this leads.**
-> - Inside this course: this is the integration module — it draws on every previous module. Re-read sections you struggle on.
+> - Inside this course: this is the integration module, it draws on every previous module. Re-read sections you struggle on.
 > - Cross-course: **SRE / Site Reliability Engineering** (Google's free book) covers observability, incident response, and post-mortems at depth. **ITIL Foundation** is the formal change-management methodology.
 > - Practice: Practice Exam 2 has ~10 questions from this module; the Final Mock has ~16.
 
@@ -476,19 +476,19 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 *Site Reliability Engineering: How Google Runs Production Systems* (Beyer, Jones, Petoff, Murphy — O'Reilly, free online) — incident response, postmortems, capacity
-- 📄 *The Phoenix Project* (Kim, Behr, Spafford) — IT operations narrative; readable
-- 📄 ITIL 4 Foundation — change management formal framework
+- 📄 *Site Reliability Engineering: How Google Runs Production Systems* (Beyer, Jones, Petoff, Murphy O'Reilly, free online) incident response, postmortems, capacity
+- 📄 *The Phoenix Project* (Kim, Behr, Spafford), IT operations narrative; readable
+- 📄 ITIL 4 Foundation, change management formal framework
 - 📄 NIST SP 800-61 Rev 2 (2012). *Computer Security Incident Handling Guide*
 - 📄 NIST SP 800-184 (2016). *Guide for Cybersecurity Event Recovery*
 
 **Case-study sources:**
-- 📄 AWS post-mortems — `aws.amazon.com/message/` — historical canonical examples
+- 📄 AWS post-mortems `aws.amazon.com/message/` historical canonical examples
 - 📄 Google SRE Book chapter on postmortems
-- 📄 Cloudflare engineering blog — incident write-ups
+- 📄 Cloudflare engineering blog, incident write-ups
 
 **Practitioner / exam:**
 - 📖 *CompTIA Server+ SK0-005 Exam Objectives* (free PDF)
 - 📖 [Professor Messer SK0-005 videos](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)
-- 📖 Mike Meyers, *CompTIA Server+ All-in-One Exam Guide, 5th ed.* — troubleshooting chapter
-- 📖 *Systems Performance: Enterprise and the Cloud* (Brendan Gregg) — bottleneck analysis bible
+- 📖 Mike Meyers, *CompTIA Server+ All-in-One Exam Guide, 5th ed.*, troubleshooting chapter
+- 📖 *Systems Performance: Enterprise and the Cloud* (Brendan Gregg), bottleneck analysis bible

@@ -16,7 +16,7 @@ D. To demonstrate the animation style to potential investors and distributors
 ### Q2. In the *Finding Nemo* example from this module, why were storyboard revisions the correct tool for fixing the first act?
 
 A. The final animation was already complete and only needed a few touch-ups
-B. Story artist drawings are reversible — redrawing a panel costs an afternoon, while redoing final animation costs weeks and enormous budget
+B. Story artist drawings are reversible, redrawing a panel costs an afternoon, while redoing final animation costs weeks and enormous budget
 C. The director, Andrew Stanton, preferred to communicate with story artists rather than animators
 D. Pixar's pipeline required all problems to be identified at the boarding stage before any other work could begin
 
@@ -61,7 +61,7 @@ D. Each storyboard must contain exactly 3 panels per page
 ### Q7. A "story reel" at Pixar is equivalent to:
 
 A. The final colored and composited animation
-B. An animatic — the storyboards cut to timing with placeholder audio
+B. An animatic, the storyboards cut to timing with placeholder audio
 C. A reel of reference footage used by animators before production
 D. A collection of "best takes" selected by the director from completed animation
 
@@ -71,7 +71,7 @@ D. A collection of "best takes" selected by the director from completed animatio
 
 A. A wide shot that establishes the geographic relationships in a scene
 B. A close-up on a character's face showing their emotional reaction
-C. What a specific character sees — their point of view
+C. What a specific character sees, their point of view
 D. The director's preferred composition for the scene
 
 ---
@@ -88,7 +88,7 @@ D. Indicate that a new scene is beginning
 ### Q10. The primary information that an animatic provides, which still storyboard panels cannot:
 
 A. The quality of the final character designs
-B. Whether the scene works in time — pacing, rhythm, and the timing of reveals and emotional beats
+B. Whether the scene works in time, pacing, rhythm, and the timing of reveals and emotional beats
 C. The correct color palette for the sequence
 D. The number of shots required to complete the sequence
 
@@ -125,7 +125,7 @@ D. It shows the color zones of the lighting setup for the sequence
 
 A. Displaying the panels on a screen in sequential order without narration
 B. Reading the dialogue lines from a script while the director views the panels
-C. Performing the boards — describing action, voicing dialogue, conveying emotion with physical energy
+C. Performing the boards, describing action, voicing dialogue, conveying emotion with physical energy
 D. Presenting only the most critical panels and leaving the director to review the rest independently
 
 ---
@@ -175,21 +175,21 @@ D. Studio budgets allocate more money to the storyboard phase than the animation
 
 ---
 
-### Q20. A director gives the following note during a board pitch: "The reveal of the monster feels rushed — the audience won't have time to be scared." Which production element should the story artist address?
+### Q20. A director gives the following note during a board pitch: "The reveal of the monster feels rushed, the audience won't have time to be scared." Which production element should the story artist address?
 
-A. The character design of the monster — it should be more visually menacing
-B. The pacing of the animatic — more panels or longer holds should be added before the reveal
-C. The lighting in the background — darker environments create more tension
-D. The dialogue in the scene — the characters should comment on the monster's presence
+A. The character design of the monster, it should be more visually menacing
+B. The pacing of the animatic, more panels or longer holds should be added before the reveal
+C. The lighting in the background, darker environments create more tension
+D. The dialogue in the scene, the characters should comment on the monster's presence
 
 ---
 
 ### Q21. A storyboard panel for a scene between two characters includes a shot labeled "OTS." What does this mean?
 
-A. Off-Target Staging — the character is not positioned correctly within the frame
-B. Over-the-Shoulder — a shot from behind one character's shoulder, looking at the other character
-C. Original Take Shot — the first composition drawn for this panel
-D. On-the-Scene — a wide shot showing both characters in their full environment
+A. Off-Target Staging, the character is not positioned correctly within the frame
+B. Over-the-Shoulder, a shot from behind one character's shoulder, looking at the other character
+C. Original Take Shot, the first composition drawn for this panel
+D. On-the-Scene, a wide shot showing both characters in their full environment
 
 ---
 
@@ -206,8 +206,8 @@ D. The outgoing image slides off-screen to be replaced by the incoming image
 
 A. Character design consistency across panels
 B. Spatial continuity and the failure to establish geography clearly at the beginning of the sequence
-C. The pacing of the animatic — the sequence is too fast
-D. The dialogue — it should reveal the location more explicitly
+C. The pacing of the animatic, the sequence is too fast
+D. The dialogue, it should reveal the location more explicitly
 
 ---
 
@@ -222,50 +222,50 @@ D. An over-the-shoulder shot from the protagonist's perspective looking at the a
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** The fundamental value of storyboards and animatics is finding and fixing problems at the cheapest possible stage.
+**Q1, B.** The fundamental value of storyboards and animatics is finding and fixing problems at the cheapest possible stage.
 
-**Q2 — B.** Redrawing a board panel costs an afternoon; redoing final animation costs weeks and large budget. The story reel proved the fix worked before expensive resources were committed.
+**Q2, B.** Redrawing a board panel costs an afternoon; redoing final animation costs weeks and large budget. The story reel proved the fix worked before expensive resources were committed.
 
-**Q3 — C.** An inward-pointing arrow = camera push (moving toward the subject).
+**Q3, C.** An inward-pointing arrow = camera push (moving toward the subject).
 
-**Q4 — C.** A cut is the instantaneous switch with no optical effect — the most common transition.
+**Q4 C.** A cut is the instantaneous switch with no optical effect the most common transition.
 
-**Q5 — C.** Dissolves communicate time passage, memory, or dream sequences.
+**Q5, C.** Dissolves communicate time passage, memory, or dream sequences.
 
-**Q6 — B.** The 3-thumbnail rule: draw at least 3 options for each significant beat; the third is usually the most interesting.
+**Q6, B.** The 3-thumbnail rule: draw at least 3 options for each significant beat; the third is usually the most interesting.
 
-**Q7 — B.** A story reel is Pixar's term for an animatic — boards cut to timing with placeholder audio.
+**Q7 B.** A story reel is Pixar's term for an animatic boards cut to timing with placeholder audio.
 
-**Q8 — C.** POV = point of view — what a specific character sees.
+**Q8 C.** POV = point of view what a specific character sees.
 
-**Q9 — B.** An insert shot cuts to a specific object for emphasis.
+**Q9, B.** An insert shot cuts to a specific object for emphasis.
 
-**Q10 — B.** The animatic proves or disproves whether the scene works in time — pacing, rhythm, emotional timing.
+**Q10 B.** The animatic proves or disproves whether the scene works in time pacing, rhythm, emotional timing.
 
-**Q11 — C.** Final color and texture details are NOT in a storyboard panel. These are in character design and production design documents.
+**Q11, C.** Final color and texture details are NOT in a storyboard panel. These are in character design and production design documents.
 
-**Q12 — B.** Spatial continuity = consistent character positions relative to each other and the environment across cuts.
+**Q12, B.** Spatial continuity = consistent character positions relative to each other and the environment across cuts.
 
-**Q13 — B.** A floor plan is a bird's-eye diagram showing character positions and camera placements for spatial continuity planning.
+**Q13, B.** A floor plan is a bird's-eye diagram showing character positions and camera placements for spatial continuity planning.
 
-**Q14 — C.** Board pitches are performances — the artist describes action, voices dialogue, and conveys emotion with physical energy.
+**Q14 C.** Board pitches are performances the artist describes action, voices dialogue, and conveys emotion with physical energy.
 
-**Q15 — B.** A match cut visually matches a shape, movement, or composition element between two shots for an elegant transition.
+**Q15, B.** A match cut visually matches a shape, movement, or composition element between two shots for an elegant transition.
 
-**Q16 — B.** A J-cut = audio from the incoming scene begins before the visual cut to that scene.
+**Q16, B.** A J-cut = audio from the incoming scene begins before the visual cut to that scene.
 
-**Q17 — B.** Storyboard Pro integrates drawing, panel management, camera simulation, audio, and animatic export in one application.
+**Q17, B.** Storyboard Pro integrates drawing, panel management, camera simulation, audio, and animatic export in one application.
 
-**Q18 — D.** Outward-pointing arrow = camera pull (moving away from the subject).
+**Q18, D.** Outward-pointing arrow = camera pull (moving away from the subject).
 
-**Q19 — B.** Finding problems at the storyboard/animatic stage is preferred because the cost of revision is a small fraction of final animation cost.
+**Q19, B.** Finding problems at the storyboard/animatic stage is preferred because the cost of revision is a small fraction of final animation cost.
 
-**Q20 — B.** The director wants more time before the reveal — more panels or longer holds in the animatic. This is a pacing issue.
+**Q20 B.** The director wants more time before the reveal more panels or longer holds in the animatic. This is a pacing issue.
 
-**Q21 — B.** OTS = Over-the-Shoulder.
+**Q21, B.** OTS = Over-the-Shoulder.
 
-**Q22 — B.** A fade to black: image gradually → black → hold → incoming scene gradually appears.
+**Q22, B.** A fade to black: image gradually → black → hold → incoming scene gradually appears.
 
-**Q23 — B.** The director cannot tell where the scene is set — spatial continuity and geographic establishment failed.
+**Q23 B.** The director cannot tell where the scene is set spatial continuity and geographic establishment failed.
 
-**Q24 — C.** Wide shot with protagonist small in the lower third, antagonist large in the upper frame, low-angle — combines size difference, staging, and camera angle to communicate threat and power imbalance.
+**Q24 C.** Wide shot with protagonist small in the lower third, antagonist large in the upper frame, low-angle combines size difference, staging, and camera angle to communicate threat and power imbalance.

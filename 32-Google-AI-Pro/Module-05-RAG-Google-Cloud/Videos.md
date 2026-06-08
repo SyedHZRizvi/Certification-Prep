@@ -23,7 +23,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Search+RAG+managed+tutorial+google+cloud" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Vertex AI Search — End-to-End RAG</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">Vertex AI Search, End-to-End RAG</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 18 min · The managed default</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Vector+Search+matching+engine+ANN+tutorial" target="_blank" rel="noopener">
@@ -35,13 +35,13 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+grounding+with+google+search+vertex+ai+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Grounding — Google Search vs Vertex AI Search</p><p class="vg-creator">Google for Developers</p>
+      <p class="vg-title">Grounding, Google Search vs Vertex AI Search</p><p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 14 min · The two grounding modes</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=AlloyDB+AI+pgvector+gemini+in+database+embedding" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AlloyDB AI — Vectors + Gemini Inside SQL</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">AlloyDB AI, Vectors + Gemini Inside SQL</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 16 min · The Postgres + vector pattern</span></div>
   </a>
   <a class="vg-card" data-video-id="QdDoFfkVkcw" href="https://www.youtube.com/results?search_query=Gemini+embedding+text+embedding+004+multilingual+vertex" target="_blank" rel="noopener">
@@ -64,7 +64,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+search+seller+assistant+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Mercado Libre — Seller Assistant Architecture</p><p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-title">Mercado Libre, Seller Assistant Architecture</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 18 min · The case study</span></div>
   </a>
   <a class="vg-card" data-video-id="8OJC21T2SL4" href="https://www.youtube.com/results?search_query=RAG+chunking+strategy+overlap+token+size+best+practice" target="_blank" rel="noopener">
@@ -99,7 +99,7 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=ScaNN+approximate+nearest+neighbor+Google+ANN" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ScaNN — Google's ANN Library</p><p class="vg-creator">Google Research</p>
+      <p class="vg-title">ScaNN, Google's ANN Library</p><p class="vg-creator">Google Research</p>
       <span class="vg-duration">⏱ 18 min · Inside Vector Search</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+embedding+CLIP+google+vertex+image+text" target="_blank" rel="noopener">
@@ -115,7 +115,7 @@
 ## ✅ After watching
 
 1. The 5 GCP RAG stacks and one-line "pick when"?
-2. Vertex AI Search vs Vector Search — what does each manage?
+2. Vertex AI Search vs Vector Search, what does each manage?
 3. Three Google embedding models and a use case for each?
 4. The two main grounding modes on Gemini?
 5. What metric distinguishes "retrieved the right doc" from "wrote a faithful answer"?

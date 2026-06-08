@@ -53,7 +53,7 @@ D. Replaces the MCP protocol with its own
 A. A web request
 B. A subprocess command (e.g., `npx`, `python`, `node`) defined in the config; stdio transport
 C. A Docker push to ECR
-D. None — the server is built into Claude Desktop
+D. None, the server is built into Claude Desktop
 
 ---
 
@@ -90,7 +90,7 @@ D. JSON-RPC requires HTTP
 ---
 
 ### Q11. The PRIMARY security risk of installing a community MCP server locally is: *(Understand)*
-A. The server is sandboxed by the protocol — no risk
+A. The server is sandboxed by the protocol, no risk
 B. The server process inherits your local permissions and can exfiltrate data or run arbitrary code if malicious
 C. The server cannot read environment variables
 D. It will slow down your computer
@@ -141,14 +141,14 @@ D. `plugin_`
 A. Streamable HTTP
 B. WebSocket++
 C. gRPC-over-MCP
-D. None — SSE is final
+D. None, SSE is final
 
 ---
 
 ### Q18. An MCP server publishes 5 tools. Adding it to a host app exposes: *(Understand)*
 A. 5 tools to the model (each prefixed/namespaced by the host)
 B. 1 mega-tool
-C. Nothing — must rewrite each tool
+C. Nothing, must rewrite each tool
 D. The model decides which to ignore
 
 ---
@@ -238,7 +238,7 @@ Client sends `initialize`, server replies, client sends `initialized` notificati
 JSON-RPC method name. Pairs with `tools/call`.
 
 ### Q9: **B. Read-only URI-addressable data sources**
-Files, DB tables, API endpoints — anything URI-addressable that the user (or model) wants to attach as reference data.
+Files, DB tables, API endpoints, anything URI-addressable that the user (or model) wants to attach as reference data.
 
 ### Q10: **B. The server is remote or multi-user**
 stdio is local-only by nature. HTTP+SSE is for scaled / shared / cloud deployments.
@@ -313,4 +313,4 @@ Defense in depth. This is real enterprise MCP architecture.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Agentic Patterns](../Module-06-Agentic-Patterns/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Agentic Patterns](../Module-06-Agentic-Patterns/Reading.md)

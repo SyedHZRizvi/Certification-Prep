@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -299,13 +299,13 @@
 **A:** 20-Conversation Test, Search Volume Test, Look-Alike Affordability Test.
 
 **Q:** What is PLG?
-**A:** Product-Led Growth — growth driven primarily by product usage (Notion, Slack, Figma).
+**A:** Product-Led Growth, growth driven primarily by product usage (Notion, Slack, Figma).
 
 **Q:** What is MSA (in media planning)?
-**A:** Metropolitan Statistical Area — preferred geo unit for US targeting.
+**A:** Metropolitan Statistical Area, preferred geo unit for US targeting.
 
 **Q:** What is DMA?
-**A:** Designated Market Area — Nielsen's TV market regions, common in media buys.
+**A:** Designated Market Area, Nielsen's TV market regions, common in media buys.
 
 **Q:** What are the 4 layers of the AI Briefing Prompt?
 **A:** Context, Inputs, Task, Validation. The Validation layer ("list 3 assumptions to verify") makes AI briefs usable.
@@ -321,7 +321,7 @@
 **A:** Campaign level. NOT ad group, NOT keyword.
 
 **Q:** What happened to Broad Match Modifier (BMM)?
-**A:** Retired in 2021 — folded into phrase match. Any answer choice referencing BMM is wrong.
+**A:** Retired in 2021, folded into phrase match. Any answer choice referencing BMM is wrong.
 
 **Q:** What is the 30-conversion rule?
 **A:** Smart Bidding strategies (tCPA, tROAS) need 30+ conversions in last 30 days to stabilize. Below that, use Maximize Conversions.
@@ -339,32 +339,32 @@
 **A:** Search Terms are what searchers actually typed. Keywords are what YOU bid on.
 
 **Q:** What default settings should you UNCHECK on every new Google Search campaign?
-**A:** "Include Search Partners" and "Include Display Network" — both default to ON.
+**A:** "Include Search Partners" and "Include Display Network", both default to ON.
 
 **Q:** What is a SKAG?
-**A:** Single Keyword Ad Group — pre-Smart Bidding tactic, mostly obsolete in 2026.
+**A:** Single Keyword Ad Group, pre-Smart Bidding tactic, mostly obsolete in 2026.
 
 **Q:** When should you NOT use tCPA bidding?
-**A:** When you have fewer than 30 conversions per 30 days — the algorithm starves.
+**A:** When you have fewer than 30 conversions per 30 days, the algorithm starves.
 
 ---
 
 ## 📦 SECTION 3: PMax, Display & YouTube
 
 **Q:** Where does Performance Max serve ads?
-**A:** Search, Display, YouTube, Discover, Gmail, and Maps — all simultaneously.
+**A:** Search, Display, YouTube, Discover, Gmail, and Maps, all simultaneously.
 
 **Q:** What's the most important PMax day-0 setting?
-**A:** Brand Exclusions — prevents PMax from cannibalizing your brand search campaign.
+**A:** Brand Exclusions, prevents PMax from cannibalizing your brand search campaign.
 
 **Q:** What is an audience signal in PMax?
-**A:** A HINT to the algorithm about who converts — NOT hard targeting. PMax can serve outside the signal.
+**A:** A HINT to the algorithm about who converts, NOT hard targeting. PMax can serve outside the signal.
 
 **Q:** Max headlines per PMax asset group?
 **A:** 15 (same as RSAs).
 
 **Q:** Which image aspect ratios should you upload to PMax?
-**A:** 1.91:1, 1:1, and 4:5 — all three for full reach across surfaces.
+**A:** 1.91:1, 1:1, and 4:5, all three for full reach across surfaces.
 
 **Q:** When are skippable in-stream YouTube ads charged?
 **A:** Viewer watches 30 seconds OR full play. Skipping at 5 seconds = no charge.
@@ -376,7 +376,7 @@
 **A:** Vertical 9:16, 6-60 seconds, CPM pricing.
 
 **Q:** What pricing model do In-Feed (Discovery) YouTube ads use?
-**A:** CPC — you pay only when the user clicks to watch.
+**A:** CPC, you pay only when the user clicks to watch.
 
 **Q:** What is Demand Gen?
 **A:** YouTube + Discover + Gmail campaign type (renamed from Discovery in 2024).
@@ -395,7 +395,7 @@
 **A:** 7-day click + 1-day view.
 
 **Q:** What does AEM require?
-**A:** Aggregated Event Measurement — rank top 8 conversion events per verified domain.
+**A:** Aggregated Event Measurement, rank top 8 conversion events per verified domain.
 
 **Q:** Minimum recommended Lookalike Audience seed size?
 **A:** 1,000+ (ideally 5,000+).
@@ -407,10 +407,10 @@
 **A:** 50+ daily purchases, a product catalog, $50+/day budget.
 
 **Q:** What does the Existing Customer Budget cap do in ASC?
-**A:** Limits spend on existing customers — forces Meta to prospect new customers.
+**A:** Limits spend on existing customers, forces Meta to prospect new customers.
 
 **Q:** What are DCT's axes?
-**A:** Hook × Body × CTA — typically 4 × 4 × 4 = up to 64 variants.
+**A:** Hook × Body × CTA, typically 4 × 4 × 4 = up to 64 variants.
 
 **Q:** Minimum impressions before judging a DCT variant?
 **A:** ~1,000 per variant. Killing at 100 impressions is just noise.
@@ -447,13 +447,13 @@
 **A:** Events API (their CAPI).
 
 **Q:** Cross-posting Meta Reels to TikTok typical performance?
-**A:** ~40% worse than native TikTok content — different visual grammar.
+**A:** ~40% worse than native TikTok content, different visual grammar.
 
 **Q:** What is a Thought-Leadership Ad (TLA)?
 **A:** LinkedIn ad format that boosts an individual employee's personal post (looks organic; outperforms brand ads ~2x).
 
 **Q:** What does LinkedIn "Account List Upload" enable?
-**A:** Account-Based Marketing (ABM) — target specific named companies' employees by job title/function.
+**A:** Account-Based Marketing (ABM), target specific named companies' employees by job title/function.
 
 **Q:** Minimum LinkedIn Account List size?
 **A:** 1,000+ accounts (match rate is ~50-70%).
@@ -465,29 +465,29 @@
 **A:** LinkedIn CPCs are 5-10x higher BUT leads convert to closed-won at much higher rates. Compare the right metric.
 
 **Q:** What is Sales Navigator?
-**A:** LinkedIn's premium ABM tool for sales teams ($99/seat) — builds prospect lists, maps account committees, integrates with CRM.
+**A:** LinkedIn's premium ABM tool for sales teams ($99/seat), builds prospect lists, maps account committees, integrates with CRM.
 
 ---
 
 ## 📦 SECTION 6: Programmatic + Retargeting
 
 **Q:** What is a DSP?
-**A:** Demand-Side Platform — where advertisers buy programmatic ad inventory.
+**A:** Demand-Side Platform, where advertisers buy programmatic ad inventory.
 
 **Q:** What is an SSP?
-**A:** Supply-Side Platform — where publishers sell their inventory.
+**A:** Supply-Side Platform, where publishers sell their inventory.
 
 **Q:** What's the largest independent DSP?
 **A:** The Trade Desk (TTD).
 
 **Q:** What's DV360?
-**A:** Display & Video 360 — Google's enterprise programmatic DSP, part of Google Marketing Platform.
+**A:** Display & Video 360, Google's enterprise programmatic DSP, part of Google Marketing Platform.
 
 **Q:** Which DSP specializes in dynamic product retargeting for DTC?
 **A:** Criteo.
 
 **Q:** What does a CDP do?
-**A:** Customer Data Platform — unifies customer data and syncs audiences to ad platforms in real time.
+**A:** Customer Data Platform, unifies customer data and syncs audiences to ad platforms in real time.
 
 **Q:** Recommended frequency cap per user per day?
 **A:** 3 impressions.
@@ -499,16 +499,16 @@
 **A:** 25-30 touches.
 
 **Q:** What is MFA?
-**A:** Made-For-Advertising sites — low-quality sites built only to harvest ad spend. ANA 2024: ~20% of open-web display waste.
+**A:** Made-For-Advertising sites, low-quality sites built only to harvest ad spend. ANA 2024: ~20% of open-web display waste.
 
 **Q:** What is IVT?
-**A:** Invalid Traffic — bots, fraud, non-human. GIVT = general bots; SIVT = sophisticated bots.
+**A:** Invalid Traffic, bots, fraud, non-human. GIVT = general bots; SIVT = sophisticated bots.
 
 **Q:** What do DoubleVerify and IAS do?
-**A:** Industry-standard ad verification — fraud detection, viewability, brand safety.
+**A:** Industry-standard ad verification, fraud detection, viewability, brand safety.
 
 **Q:** What does CTV stand for?
-**A:** Connected TV — programmatic streaming inventory (Hulu, Disney+, Roku, etc.).
+**A:** Connected TV, programmatic streaming inventory (Hulu, Disney+, Roku, etc.).
 
 ---
 
@@ -524,13 +524,13 @@
 **A:** A "probability the treatment is better" statement (e.g., 92% chance).
 
 **Q:** What is MDE in A/B testing?
-**A:** Minimum Detectable Effect — the smallest relative lift you want to detect.
+**A:** Minimum Detectable Effect, the smallest relative lift you want to detect.
 
 **Q:** What is statistical power?
 **A:** The probability of detecting an effect IF it exists. Typically 0.80.
 
 **Q:** Mutiny's specialty?
-**A:** B2B website personalization via reverse-IP detection — personalizes copy by visitor's company.
+**A:** B2B website personalization via reverse-IP detection, personalizes copy by visitor's company.
 
 **Q:** What does Unbounce Smart Traffic do?
 **A:** Uses ML to route each visitor to the variant most likely to convert them.
@@ -561,24 +561,24 @@
 **A:** Gemini 2.5 Pro.
 
 **Q:** What does Midjourney's `--cref` parameter do?
-**A:** Character reference — maintains consistent person across multiple images.
+**A:** Character reference, maintains consistent person across multiple images.
 
 **Q:** What does Midjourney's `--sref` parameter do?
-**A:** Style reference — mimics a reference image's aesthetic without copying its content.
+**A:** Style reference, mimics a reference image's aesthetic without copying its content.
 
 **Q:** Can Midjourney v7 render text well inside images?
-**A:** Still no — use Canva/Figma for text overlays.
+**A:** Still no, use Canva/Figma for text overlays.
 
 **Q:** Runway Gen-4 specs?
 **A:** Up to 4K resolution, ~10 seconds max, text-to-video and image-to-video.
 
 **Q:** What is HeyGen used for?
-**A:** AI avatar talking-head videos — multi-language with lip sync.
+**A:** AI avatar talking-head videos, multi-language with lip sync.
 
 **Q:** What is ElevenLabs Multilingual v3 used for?
 **A:** Voice generation and cloning in 30+ languages with consistent voice character.
 
-**Q:** Make.com vs Zapier vs n8n — cheapest at 10K+ ops/mo?
+**Q:** Make.com vs Zapier vs n8n, cheapest at 10K+ ops/mo?
 **A:** n8n self-hosted (free + compute costs).
 
 **Q:** US Copyright Office's 2024 position on AI-generated work?
@@ -649,23 +649,23 @@
 **Q:** Minimum capstone runtime?
 **A:** 14-21 days. 7 days is not enough.
 
-**Q:** Day 1 of capstone — what do you produce first?
+**Q:** Day 1 of capstone, what do you produce first?
 **A:** The campaign brief (creative + media brief).
 
-**Q:** First 5 days post-launch — what's the rule?
+**Q:** First 5 days post-launch, what's the rule?
 **A:** Daily CHECK only. No edits. Smart Bidding and Meta's learning phase need uninterrupted data.
 
 **Q:** What are the 4 capstone deliverables?
 **A:** Brief + Daily Log + Final Report + Lessons-Learned Blog Post.
 
 **Q:** Daily ops routine duration?
-**A:** 15 minutes — 5 min Google, 5 min Meta, 5 min conversion check.
+**A:** 15 minutes, 5 min Google, 5 min Meta, 5 min conversion check.
 
 **Q:** Honest framing if you only have 5 conversions at end of 14 days?
-**A:** "I had only 5 conversions; statistical significance is impossible with this sample — numbers have wide error bars."
+**A:** "I had only 5 conversions; statistical significance is impossible with this sample, numbers have wide error bars."
 
 **Q:** Which real cert exam is the easiest first win after the capstone?
-**A:** Google Ads Search Certification — free, 50 questions, 75 minutes, 80% pass mark, on Skillshop.
+**A:** Google Ads Search Certification, free, 50 questions, 75 minutes, 80% pass mark, on Skillshop.
 
 **Q:** Number of dimensions in the capstone grading rubric?
 **A:** 8 (Brief, Tracking, Creative, Structure, Launch, Optimization, Measurement, Post-Mortem).

@@ -1,4 +1,4 @@
-# ✏️ Module 3 Quiz: S&OP — Sales & Operations Planning
+# ✏️ Module 3 Quiz: S&OP, Sales & Operations Planning
 
 > **Instructions:** Answer all 25 questions WITHOUT looking at the reading.
 > Aim for 21/25 minimum.
@@ -32,10 +32,10 @@ D. Step 4
 ---
 
 ### Q4. Which step of S&OP is led by the Operations function? *(Understand)*
-A. Step 1 — Product/Portfolio
-B. Step 2 — Demand Review
-C. Step 3 — Supply Review
-D. Step 5 — Executive S&OP
+A. Step 1, Product/Portfolio
+B. Step 2, Demand Review
+C. Step 3, Supply Review
+D. Step 5, Executive S&OP
 
 ---
 
@@ -218,20 +218,20 @@ Aggregating at family makes forecasts accurate and decisions tractable. SKU plan
 ### Q3: **B. Step 2**
 The 5 steps: 1-Product/Portfolio, 2-Demand, 3-Supply, 4-Pre-S&OP, 5-Executive S&OP.
 
-### Q4: **C. Step 3 — Supply Review**
+### Q4: **C. Step 3, Supply Review**
 Operations leads the supply review. Sales/Marketing leads the demand review (Step 2).
 
 ### Q5: **D. Step 5**
-Executive S&OP is the final step — CEO-chaired, decision-making.
+Executive S&OP is the final step, CEO-chaired, decision-making.
 
 ### Q6: **C. Step 4**
-Pre-S&OP is the reconciliation/integration step — a working session that prepares the decision package for Step 5.
+Pre-S&OP is the reconciliation/integration step, a working session that prepares the decision package for Step 5.
 
 ### Q7: **B. Unconstrained, then reconciled to supply later**
 The Step 2 demand plan is *unconstrained* (what we *would* sell). Constraining happens in the supply review and reconciliation.
 
 ### Q8: **C. Adds explicit financial and strategic integration**
-IBP (Oliver Wight's term) is the mature form of S&OP — extends to 24–36 months, integrates P&L and strategic initiatives.
+IBP (Oliver Wight's term) is the mature form of S&OP, extends to 24–36 months, integrates P&L and strategic initiatives.
 
 ### Q9: **A. Production rate is constant; inventory absorbs demand variation**
 Stable workforce, predictable plan; the cost of variation is paid in inventory carrying.
@@ -264,10 +264,10 @@ Resource Planning sits at the top of the capacity hierarchy (plants, shifts, maj
 The horizon rolls forward each month; the plan is never frozen.
 
 ### Q19: **C. CEO (or top executive)**
-The defining feature of Executive S&OP — leadership ratifies the plan at the top. If the CEO doesn't show up, S&OP is broken.
+The defining feature of Executive S&OP, leadership ratifies the plan at the top. If the CEO doesn't show up, S&OP is broken.
 
 ### Q20: **B. Pre-S&OP reconciliation**
-This is exactly what Step 4 is for — surfacing demand-supply gaps and preparing alternatives for the executive meeting.
+This is exactly what Step 4 is for, surfacing demand-supply gaps and preparing alternatives for the executive meeting.
 
 ### Q21: **A. Use level production for the workforce baseline and overtime/contract for demand peaks**
 The hybrid approach blends the stability of level with the responsiveness of chase.
@@ -279,7 +279,7 @@ Step 1 reviews NPIs, transitions, and EOLs that change the demand assumptions.
 When demand exceeds supply you either grow supply or reduce demand. Layoffs (C) make the gap worse; idling (D) doesn't apply.
 
 ### Q24: **C. Both units AND dollars**
-Mature S&OP/IBP financializes the plan so it ties to revenue/cost/cash. Units alone is "operational S&OP" — early-stage maturity.
+Mature S&OP/IBP financializes the plan so it ties to revenue/cost/cash. Units alone is "operational S&OP", early-stage maturity.
 
 ### Q25: **B. Bottom-up forecasting**
 Forecast each SKU separately, then sum. Opposite of top-down (start at total, allocate down). Both fight; pyramid reconciles.

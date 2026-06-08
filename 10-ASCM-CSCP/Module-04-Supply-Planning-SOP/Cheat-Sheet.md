@@ -58,9 +58,9 @@ Levers: overtime, hire/fire, subcontract, inventory buildup, backorders, demand 
    Now         DTF          PTF
    Actual orders  Manual chg  MRP auto-plans
 ```
-- **DTF** (closer) — only firm orders count
-- **PTF** (further) — changes need master scheduler
-- **Outside PTF** — system replans freely
+- **DTF** (closer), only firm orders count
+- **PTF** (further), changes need master scheduler
+- **Outside PTF**, system replans freely
 
 ---
 

@@ -6,21 +6,21 @@
 
 ## 🎯 The 6 Functions of Inventory
 
-1. **Cycle** (lot-size) — buying in batches
-2. **Safety** (buffer) — protect against variability
-3. **Anticipation** — built ahead of known spike
-4. **Transit** (pipeline) — in motion
-5. **Hedge** — against price/exchange
-6. **Decoupling** — WIP between stages
+1. **Cycle** (lot-size), buying in batches
+2. **Safety** (buffer), protect against variability
+3. **Anticipation**, built ahead of known spike
+4. **Transit** (pipeline), in motion
+5. **Hedge**, against price/exchange
+6. **Decoupling**, WIP between stages
 
 ---
 
 ## 💰 The 4 Inventory Costs
 
-- **Ordering / Setup (S)** — per order/setup
-- **Carrying (H)** — per unit per year (often 20–35% of item cost)
-- **Stockout** — lost sale, expedite
-- **Item** — purchase cost
+- **Ordering / Setup (S)**, per order/setup
+- **Carrying (H)**, per unit per year (often 20–35% of item cost)
+- **Stockout**, lost sale, expedite
+- **Item**, purchase cost
 
 ---
 

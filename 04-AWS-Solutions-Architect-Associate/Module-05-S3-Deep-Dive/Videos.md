@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: S3 Deep Dive
 
-> **How to use:** S3 is dense with rules. Don't skip the storage class and lifecycle videos — they're directly testable.
+> **How to use:** S3 is dense with rules. Don't skip the storage class and lifecycle videos, they're directly testable.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🪣</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">S3 Complete Tour — Buckets, Objects, Permissions</p>
+      <p class="vg-title">S3 Complete Tour, Buckets, Objects, Permissions</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 22 min · The foundation</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">S3 Encryption — SSE-S3, SSE-KMS, SSE-C</p>
+      <p class="vg-title">S3 Encryption, SSE-S3, SSE-KMS, SSE-C</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 15 min · Key management options</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🔒</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">S3 Object Lock — Governance vs Compliance</p>
+      <p class="vg-title">S3 Object Lock, Governance vs Compliance</p>
       <p class="vg-creator">AWS</p>
       <span class="vg-duration">⏱ 14 min · WORM made simple</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🔎</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">S3 Select — SQL on Objects</p>
+      <p class="vg-title">S3 Select, SQL on Objects</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 15 min · Skip the full download</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎫</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">S3 Access Points — Per-App Policies</p>
+      <p class="vg-title">S3 Access Points, Per-App Policies</p>
       <p class="vg-creator">AWS</p>
       <span class="vg-duration">⏱ 11 min · Multi-tenant buckets</span>
     </div>
@@ -145,7 +145,7 @@
 1. List the 7 S3 storage classes from most-to-least available.
 2. When do you pick Intelligent-Tiering?
 3. What's the difference between SSE-S3, SSE-KMS, and SSE-C?
-4. Object Lock Governance vs Compliance — which can be overridden?
+4. Object Lock Governance vs Compliance, which can be overridden?
 5. What does Transfer Acceleration use under the hood?
 
 Ready? [Quiz](./Quiz.md).

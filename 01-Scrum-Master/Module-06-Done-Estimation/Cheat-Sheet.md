@@ -36,8 +36,8 @@ If used: criteria a PBI must meet *before* entering a Sprint.
 | Question | Answer |
 |----------|--------|
 | Who estimates? | **Developers** |
-| Required method? | **None** — Scrum is silent |
-| Story points = time? | **No** — relative complexity |
+| Required method? | **None**, Scrum is silent |
+| Story points = time? | **No**, relative complexity |
 | Common scale? | Fibonacci: 1, 2, 3, 5, 8, 13, 20 |
 | Common technique? | Planning Poker, T-shirt, Affinity |
 

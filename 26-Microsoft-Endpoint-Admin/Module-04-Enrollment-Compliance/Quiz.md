@@ -101,7 +101,7 @@ D. 3 → 2 → 1 → 5 → 4
 
 ---
 
-### Q12. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q12. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Supervised iOS devices can be locked to a single app via kiosk profile.
 **S2:** Enrollment restrictions assign to device groups.
@@ -126,7 +126,7 @@ D. A consultant's personal phone
 A. Delete its CA-eligible groups
 B. Use the Users → Exclude clause on every CA policy
 C. Give it the Global Administrator role only
-D. Skip — break-glass should be subject to all policies
+D. Skip, break-glass should be subject to all policies
 
 ---
 
@@ -146,7 +146,7 @@ D. Manage Apple software updates
 
 ---
 
-### Q17. Yes/No — Conditional Access. *(Understand)*
+### Q17. Yes/No, Conditional Access. *(Understand)*
 
 **S1:** A CA policy can require both MFA and a compliant device.
 **S2:** A CA policy can target a specific cloud app like Salesforce.
@@ -191,7 +191,7 @@ D. User scans a QR code
 
 ---
 
-### Q22. Yes/No — Compliance & CA. *(Evaluate)*
+### Q22. Yes/No, Compliance & CA. *(Evaluate)*
 
 **S1:** Compliance grace period delays action when a device falls out of compliance.
 **S2:** A user can be in both a CA Include group and Exclude group; Include wins.
@@ -231,7 +231,7 @@ D. No mobile email access
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Assign company-purchased Apple devices to your MDM and bulk-buy apps**
-ABM is Apple's enterprise device + app portal — required for ADE and VPP.
+ABM is Apple's enterprise device + app portal, required for ADE and VPP.
 
 ### Q2: **B. Apple Business Manager + Automated Device Enrollment (ADE)**
 Supervision only comes via ADE/ABM, not manual enrollment.
@@ -270,7 +270,7 @@ Supervised iOS supports kiosk (Yes). Enrollment restrictions target *user* group
 Device-affinity = no primary user. Kiosk/shared scenarios.
 
 ### Q14: **B. Use the Users → Exclude clause on every CA policy**
-Standard pattern — exclude break-glass from every CA.
+Standard pattern, exclude break-glass from every CA.
 
 ### Q15: **C. Compliance policy requiring Device Health Attestation + Defender for Endpoint machine risk**
 Attestation + risk score = high-assurance compliance signal.

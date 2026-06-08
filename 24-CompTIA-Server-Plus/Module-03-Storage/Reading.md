@@ -1,10 +1,10 @@
-# Module 3: Storage — RAID, SAN, NAS 💾
+# Module 3: Storage, RAID, SAN, NAS 💾
 
 > **Why this module matters:** Storage is the single most heavily-tested *quantitative* topic on SK0-005. You will be asked to compute usable capacity for RAID 5/6/10 with N disks under exam-time pressure. You will be asked to pick the right tier (SAN vs NAS) for a scenario. You will be asked about deduplication, thin provisioning, multipathing, and LUN masking by name. Master this module and you bank a comfortable chunk of the score.
 
 > **Prerequisites for this module.** Before starting you should be comfortable with:
 > - Modules 1–2 (hardware, basic admin)
-> - Decimal arithmetic in your head — at minimum multiplying small integers
+> - Decimal arithmetic in your head, at minimum multiplying small integers
 > - Basic TCP/IP (ports, IP routing)
 >
 > If those are shaky, pause and review before continuing.
@@ -13,14 +13,14 @@
 
 ## 🐟 A Story: The Aquarium Database
 
-Meet Sam. She runs IT for a chain of 22 saltwater-fish stores. Each store has a desktop with a copy of their POS application, but the master inventory database lives on Sam's central server. Five years ago Sam bought a 1U server with **two 4 TB SATA disks in RAID 1** — mirrored, predictable, and "good enough for now."
+Meet Sam. She runs IT for a chain of 22 saltwater-fish stores. Each store has a desktop with a copy of their POS application, but the master inventory database lives on Sam's central server. Five years ago Sam bought a 1U server with **two 4 TB SATA disks in RAID 1**, mirrored, predictable, and "good enough for now."
 
 Five years later, "now" is a lot bigger:
 
 - The database is 1.6 TB and growing at 8 GB/week
 - Backups, photos, and shipping manifests have spilled onto a USB drive bolted to the back of the server
 - Last quarter a drive failed; rebuild took 11 hours and nobody could check inventory
-- The CFO wants overnight reports — currently impossible because the disks max out at 200 IOPS
+- The CFO wants overnight reports, currently impossible because the disks max out at 200 IOPS
 
 Sam needs to do *all* of the following in one project:
 
@@ -28,7 +28,7 @@ Sam needs to do *all* of the following in one project:
 2. Get more IOPS (random reads/writes)
 3. Tolerate **two** simultaneous drive failures (recent stats spooked her)
 4. Stop using USB
-5. Add a second copy of data to another building 800 m away — same campus, different power
+5. Add a second copy of data to another building 800 m away, same campus, different power
 
 This module is everything Sam needs to choose:
 
@@ -43,11 +43,11 @@ By the end you'll know what Sam should buy.
 
 ---
 
-## 🎚️ RAID Levels — The Big Six
+## 🎚️ RAID Levels, The Big Six
 
 **RAID** = Redundant Array of Inexpensive (or Independent) Disks, coined by Patterson, Gibson & Katz at UC Berkeley in their 1988 SIGMOD paper *"A Case for Redundant Arrays of Inexpensive Disks (RAID)."* The original paper defined RAID 1–5; RAID 0 and 6 came later. Server+ tests these six.
 
-### Quick-reference table — **MEMORIZE COLD**
+### Quick-reference table, **MEMORIZE COLD**
 
 | RAID | Min disks | Usable capacity | Failures tolerated | Reads | Writes | Write penalty |
 |---|---|---|---|---|---|---|
@@ -60,7 +60,7 @@ By the end you'll know what Sam should buy.
 
 Where N = number of disks and D = smallest disk size.
 
-### RAID 0 — Striping (no redundancy)
+### RAID 0, Striping (no redundancy)
 
 ```
 [ A1 | A2 | A3 ]   ← stripe across 3 disks
@@ -70,7 +70,7 @@ Where N = number of disks and D = smallest disk size.
 - **Use:** scratch/temp data, video editing render cache, tempdb where loss is acceptable.
 - **Reality check:** never for production data. One disk dies, *everything* dies.
 
-### RAID 1 — Mirror
+### RAID 1, Mirror
 
 ```
 [ A | A ]    [ B | B ]
@@ -80,7 +80,7 @@ Where N = number of disks and D = smallest disk size.
 - **Use:** boot volumes, two-disk small servers, financially-priced databases.
 - **Reality check:** simple, fast, predictable. 50% capacity overhead.
 
-### RAID 5 — Striping with distributed parity
+### RAID 5, Striping with distributed parity
 
 ```
 [ A1 | A2 | Pa ]
@@ -92,7 +92,7 @@ Where N = number of disks and D = smallest disk size.
 - **Write penalty 4**: read-modify-write cycle (read old data + read old parity + write new data + write new parity).
 - **Reality check:** **on modern large drives (4–20 TB), rebuild times can exceed 24 hours**, during which another failure = total loss. Many shops have abandoned RAID 5 in favor of RAID 6 or 10 for arrays >4 TB.
 
-### RAID 6 — Striping with double distributed parity
+### RAID 6, Striping with double distributed parity
 
 ```
 [ A1 | A2 | Pa | Qa ]
@@ -104,7 +104,7 @@ Where N = number of disks and D = smallest disk size.
 - **Write penalty 6**: read old data + read both parities + write new data + write both parities.
 - **Reality check:** the modern standard for large bulk arrays. Slightly slower writes than RAID 5; massively safer during rebuild.
 
-### RAID 10 — Mirror + Stripe (RAID 1+0)
+### RAID 10, Mirror + Stripe (RAID 1+0)
 
 ```
 Stripe across mirrored pairs:
@@ -114,7 +114,7 @@ Stripe across mirrored pairs:
 ```
 
 - 4 disks minimum, in pairs. Capacity = N/2. Survives the loss of one disk *per mirror pair*.
-- **Write penalty 2** — far better than RAID 5/6 for write-heavy DB workloads.
+- **Write penalty 2**, far better than RAID 5/6 for write-heavy DB workloads.
 - **Reality check:** the gold standard for **databases** (SQL, MySQL, Postgres). Best IOPS-vs-redundancy mix. 50% capacity cost.
 
 ### RAID 0+1 vs RAID 1+0 (rare but exam-trappy)
@@ -122,14 +122,14 @@ Stripe across mirrored pairs:
 - **RAID 1+0 (10)**: mirror first, then stripe → survives one disk per mirror pair.
 - **RAID 0+1**: stripe first, then mirror → one disk failure kills its entire stripe, leaving the other stripe as a single-fault-tolerant copy. Worse fault tolerance than 1+0 with same disk count.
 
-🚨 **Trap on the exam:** if a question asks "best resiliency with 4 disks for a database" — RAID 10, not 0+1.
+🚨 **Trap on the exam:** if a question asks "best resiliency with 4 disks for a database", RAID 10, not 0+1.
 
 ### Nested RAID 50, 60
 
 - **RAID 50** = RAID 5 stripes mirrored at the controller level: RAID 0 across multiple RAID 5 sets. Better large-array performance than plain RAID 5.
 - **RAID 60** = same with RAID 6 sets. Combines RAID 6 safety with stripe-set performance.
 
-### Capacity worked examples — **DRILL THIS**
+### Capacity worked examples, **DRILL THIS**
 
 | Configuration | Calculation | Usable |
 |---|---|---|
@@ -150,17 +150,17 @@ Practice until each takes < 10 seconds.
 
 ### Hot spare
 
-A **hot spare** is an extra drive sitting idle in the chassis. When the controller marks a drive failed, the hot spare auto-rebuilds in its place — no admin action needed.
+A **hot spare** is an extra drive sitting idle in the chassis. When the controller marks a drive failed, the hot spare auto-rebuilds in its place, no admin action needed.
 
-- **Dedicated spare** — assigned to one specific array.
-- **Global spare** — available to any array on the controller.
-- **Hot spare ≠ extra capacity** — it's not part of any active array until a failure.
+- **Dedicated spare**, assigned to one specific array.
+- **Global spare**, available to any array on the controller.
+- **Hot spare ≠ extra capacity**, it's not part of any active array until a failure.
 
 🎯 **Exam pattern:** *"How do you shorten the window of vulnerability after a disk failure on a RAID 5 array?"* → **Add a hot spare** so the rebuild starts immediately.
 
 ---
 
-## 🌐 SAN vs NAS — The Categorical Difference
+## 🌐 SAN vs NAS, The Categorical Difference
 
 This is the second most-tested storage concept. Get it cold.
 
@@ -187,15 +187,15 @@ This is the second most-tested storage concept. Get it cold.
 
 ### SAN vocabulary you MUST know
 
-- **WWN / WWPN / WWNN** — World-Wide Name / Port Name / Node Name. Like a MAC address for FC.
-- **IQN** — iSCSI Qualified Name. Like a WWN for iSCSI. Format: `iqn.YYYY-MM.naming-authority:unique-name` (e.g., `iqn.2024-01.com.example:storage.lun01`).
-- **Initiator** — the host (client) requesting storage.
-- **Target** — the storage array exposing LUNs.
-- **LUN** — Logical Unit Number; a slice of storage presented to one or more initiators as a block device.
-- **Zoning** (FC) — restricting which initiator WWPNs can talk to which target WWPNs at the *switch fabric* level.
-- **LUN masking** — restricting which initiators can see which LUNs at the *storage array* level.
-- **Multipathing (MPIO)** — multiple physical paths from host to LUN for redundancy + load balance. Windows: MPIO. Linux: `multipathd`.
-- **Boot from SAN** — server has no internal boot drive; UEFI loads the bootloader from a SAN LUN.
+- **WWN / WWPN / WWNN**, World-Wide Name / Port Name / Node Name. Like a MAC address for FC.
+- **IQN**, iSCSI Qualified Name. Like a WWN for iSCSI. Format: `iqn.YYYY-MM.naming-authority:unique-name` (e.g., `iqn.2024-01.com.example:storage.lun01`).
+- **Initiator**, the host (client) requesting storage.
+- **Target**, the storage array exposing LUNs.
+- **LUN**, Logical Unit Number; a slice of storage presented to one or more initiators as a block device.
+- **Zoning** (FC), restricting which initiator WWPNs can talk to which target WWPNs at the *switch fabric* level.
+- **LUN masking**, restricting which initiators can see which LUNs at the *storage array* level.
+- **Multipathing (MPIO)**, multiple physical paths from host to LUN for redundancy + load balance. Windows: MPIO. Linux: `multipathd`.
+- **Boot from SAN**, server has no internal boot drive; UEFI loads the bootloader from a SAN LUN.
 
 ### NAS protocols
 
@@ -203,9 +203,9 @@ This is the second most-tested storage concept. Get it cold.
 |---|---|---|
 | **NFS** (Network File System) | TCP/UDP 2049 | Unix/Linux; NFS v3 stateless, v4 stateful w/ ACLs |
 | **SMB / CIFS** (Server Message Block) | TCP 445 (modern) | Windows; macOS, Linux via Samba |
-| **AFP** (Apple Filing Protocol) | TCP 548 | macOS (legacy) — Apple now prefers SMB |
+| **AFP** (Apple Filing Protocol) | TCP 548 | macOS (legacy), Apple now prefers SMB |
 
-🚨 **Trap on the exam:** SMB 1.0 should be disabled everywhere — it's the EternalBlue exploit surface (NotPetya / WannaCry). Modern SMB 3.x has encryption + signing.
+🚨 **Trap on the exam:** SMB 1.0 should be disabled everywhere, it's the EternalBlue exploit surface (NotPetya / WannaCry). Modern SMB 3.x has encryption + signing.
 
 ### Decision: SAN or NAS?
 
@@ -247,7 +247,7 @@ Common 10×–30× savings on VDI golden images, backups, mailboxes. Less on alr
 
 ### Compression
 
-Algorithmic data shrinking (LZ4, zstd) — distinct from dedup. Often combined.
+Algorithmic data shrinking (LZ4, zstd), distinct from dedup. Often combined.
 
 ### Storage tiering
 
@@ -256,7 +256,7 @@ Move "hot" (frequently accessed) data to fast media (SSD/NVMe) and "cold" data t
 | Method | Granularity |
 |---|---|
 | **Manual tiering** | Per-LUN or per-volume by admin |
-| **Auto-tiering** | Sub-LUN, by array policy — block heat maps |
+| **Auto-tiering** | Sub-LUN, by array policy, block heat maps |
 | **Lifecycle policies** (cloud) | Object storage moves after N days (S3 → Glacier) |
 
 ---
@@ -265,8 +265,8 @@ Move "hot" (frequently accessed) data to fast media (SSD/NVMe) and "cold" data t
 
 Multiple physical paths from a host to the same LUN. Provides:
 
-- **Failover** — path A dies (HBA, cable, switch port), traffic continues on path B.
-- **Load balancing** — round-robin or weighted distribution across active paths.
+- **Failover**, path A dies (HBA, cable, switch port), traffic continues on path B.
+- **Load balancing**, round-robin or weighted distribution across active paths.
 
 Without multipathing, the OS sees the same LUN as N separate disks (one per path) and may corrupt data by writing simultaneously. **Always install the multipath driver.**
 
@@ -278,7 +278,7 @@ Without multipathing, the OS sees the same LUN as N separate disks (one per path
 
 ---
 
-## 🛡️ LUN Masking and Zoning — Who Sees What
+## 🛡️ LUN Masking and Zoning, Who Sees What
 
 These two terms confuse candidates. Both restrict access, but at different layers.
 
@@ -290,7 +290,7 @@ These two terms confuse candidates. Both restrict access, but at different layer
 - **Zoning** controls which initiator WWPNs can even *see* which target WWPNs at the SAN-fabric level. Coarse-grained.
 - **LUN masking** controls which already-visible initiators get presented which specific LUNs. Fine-grained.
 
-🎯 **Exam pattern:** *"After fabric login, host A still sees host B's LUN — fix?"* → **LUN masking** on the storage array.
+🎯 **Exam pattern:** *"After fabric login, host A still sees host B's LUN, fix?"* → **LUN masking** on the storage array.
 
 iSCSI equivalent: **CHAP authentication** + **target ACLs** restrict initiators per LUN.
 
@@ -321,13 +321,13 @@ Two distinct strategies on the exam:
 | **ext4** | Linux | Default for many distros; journaling; up to 1 EB |
 | **XFS** | Linux (RHEL default) | Excellent for large files/parallel I/O |
 | **Btrfs** | Linux | CoW, snapshots, subvolumes; SUSE default |
-| **ZFS** | Solaris / FreeBSD / Linux (OpenZFS) | CoW, integrity-checked, snapshots, dedup, compression — *the* storage filesystem |
+| **ZFS** | Solaris / FreeBSD / Linux (OpenZFS) | CoW, integrity-checked, snapshots, dedup, compression, *the* storage filesystem |
 | **VMFS** | VMware ESXi | Block clustering filesystem for VM datastores |
 | **HFS+ / APFS** | macOS | Legacy / current |
 
 ---
 
-## 🔬 Scenario Walkthrough (PBQ-style thinking) — Back to Sam
+## 🔬 Scenario Walkthrough (PBQ-style thinking), Back to Sam
 
 > **Scenario.** Sam (the aquarium-chain CTO) needs more capacity + IOPS + double-failure tolerance + replication to a second building 800 m away. Budget is moderate; downtime tolerance is low. Pick the architecture.
 
@@ -358,7 +358,7 @@ This is the kind of integration question Server+ PBQs ask. Notice how every choi
 | "Dedup works equally well on everything." | Excellent on VDI/backup/email. Poor on pre-compressed media. Test before relying on a ratio. |
 | "Multipathing is automatic." | The OS won't multipath unless you install the multipath driver. Skipping it = data corruption risk. |
 | "Synchronous replication has unlimited distance." | Latency physics: ~5 ms ≈ 1000 km. Synchronous replication over WAN cripples application performance. Use async beyond metro distance. |
-| "Hot spare = extra capacity I can use." | No — it sits idle until a drive fails. Don't count it toward usable capacity. |
+| "Hot spare = extra capacity I can use." | No, it sits idle until a drive fails. Don't count it toward usable capacity. |
 
 ---
 
@@ -369,15 +369,15 @@ This is the kind of integration question Server+ PBQs ask. Notice how every choi
 | **RAID 0/1/5/6/10/50/60** | Striping / Mirror / Stripe+Parity / Stripe+2Parity / Mirror+Stripe / nested |
 | **Hot spare** | Idle drive that auto-rebuilds on failure |
 | **Write penalty** | Number of disk operations per host write (RAID 5 = 4, RAID 6 = 6, RAID 10 = 2) |
-| **SAN** | Storage Area Network — block-level |
-| **NAS** | Network-Attached Storage — file-level |
+| **SAN** | Storage Area Network, block-level |
+| **NAS** | Network-Attached Storage, file-level |
 | **FC / FCoE** | Fibre Channel / FC over Ethernet |
 | **iSCSI** | IP-based block protocol (TCP 3260) |
 | **NVMe-oF** | NVMe over Fabrics (RDMA or TCP) |
 | **WWN / WWPN / WWNN** | World-Wide Name / Port Name / Node Name (FC) |
 | **IQN** | iSCSI Qualified Name |
 | **Initiator / Target** | SAN client / SAN server |
-| **LUN** | Logical Unit Number — a presented block volume |
+| **LUN** | Logical Unit Number, a presented block volume |
 | **Zoning** | FC fabric access control |
 | **LUN masking** | Array-side access control |
 | **MPIO / Multipathing** | Multiple physical paths to a LUN |
@@ -414,7 +414,7 @@ This is the kind of integration question Server+ PBQs ask. Notice how every choi
 
 ---
 
-## 📊 Case Study — Salesforce's 2016 NA14 Storage Outage
+## 📊 Case Study, Salesforce's 2016 NA14 Storage Outage
 
 **Situation.** On 9 May 2016, Salesforce experienced a major outage of its NA14 production instance (one of dozens of US production "instances" hosting many customer orgs). Trigger: a **storage array firmware bug** that produced silent data corruption on a critical metadata volume during an upgrade. Replication faithfully copied the corruption to the DR instance, then a failover compounded the problem (Salesforce post-mortem and *RFO/Root-Cause-Analysis*, May 2016 trust.salesforce.com history; public RFC summaries).
 
@@ -441,19 +441,19 @@ This is the scenario Server+ tests when asking "design a storage strategy that s
 
 You now know:
 
-- 🎚️ All six **RAID levels** — min disks, capacity formula, fault tolerance, write penalty — and can compute usable capacity in your head
+- 🎚️ All six **RAID levels** min disks, capacity formula, fault tolerance, write penalty and can compute usable capacity in your head
 - 🌐 The categorical difference between **SAN (block)** and **NAS (file)** + protocols (FC, iSCSI, FCoE, NVMe-oF, NFS, SMB)
-- 🛡️ How **zoning** (FC) and **LUN masking** (array) work — and why you need both
+- 🛡️ How **zoning** (FC) and **LUN masking** (array) work, and why you need both
 - 🛣️ Why **multipathing** matters and how it's implemented per OS
 - 🗜️ **Thin vs thick provisioning**, **dedup**, **compression**, **storage tiering**
-- 🔁 **Synchronous vs asynchronous replication** — and when to pick each
+- 🔁 **Synchronous vs asynchronous replication**, and when to pick each
 - 🧪 The main server filesystems (NTFS, ReFS, ext4, XFS, ZFS, VMFS)
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 21/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 21/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 4 — Virtualization & Containers](../Module-04-Virtualization/Reading.md)
+4. ➡️ Move on: [Module 4, Virtualization & Containers](../Module-04-Virtualization/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 4](../Module-04-Virtualization/Reading.md) sits hypervisors on top of these storage tiers (datastores, VMDK/VHDX, NFS); [Module 5](../Module-05-Disaster-Recovery/Reading.md) builds backups and DR atop snapshots, replication, and tape; [Module 7](../Module-07-Networking/Reading.md) covers jumbo frames and iSCSI VLANs; [Module 8](../Module-08-Troubleshooting/Reading.md) diagnoses array LEDs, paths, and slow rebuilds.
@@ -466,18 +466,18 @@ You now know:
 
 **Primary sources:**
 - 📄 Patterson, D. A., Gibson, G., & Katz, R. H. (1988). *"A Case for Redundant Arrays of Inexpensive Disks (RAID)."* SIGMOD 1988. (The original RAID paper.)
-- 📄 SNIA — *Common RAID Disk Drive Format (DDF) Specification*, SNIA Storage Management Initiative documentation
-- 📄 IETF RFC 3720 (2004) — *Internet Small Computer Systems Interface (iSCSI)*
-- 📄 IETF RFC 3530 / 7530 — NFS v4 / 4.1 protocol
-- 📄 Microsoft — *MS-SMB2 Server Message Block (SMB) Protocol Version 2 and 3 Specification*
+- 📄 SNIA, *Common RAID Disk Drive Format (DDF) Specification*, SNIA Storage Management Initiative documentation
+- 📄 IETF RFC 3720 (2004), *Internet Small Computer Systems Interface (iSCSI)*
+- 📄 IETF RFC 3530 / 7530, NFS v4 / 4.1 protocol
+- 📄 Microsoft, *MS-SMB2 Server Message Block (SMB) Protocol Version 2 and 3 Specification*
 
 **Case-study sources:**
-- 📄 Salesforce trust.salesforce.com — public RFOs (Reasons for Outage) for NA14 (May 2016) and subsequent outages
-- 📄 Andrew Brunton, "Why RAID 5 still works for SMBs" — community technical write-up
-- 📄 BackBlaze hard-drive stats — annualized failure rate data (public quarterly reports)
+- 📄 Salesforce trust.salesforce.com, public RFOs (Reasons for Outage) for NA14 (May 2016) and subsequent outages
+- 📄 Andrew Brunton, "Why RAID 5 still works for SMBs", community technical write-up
+- 📄 BackBlaze hard-drive stats, annualized failure rate data (public quarterly reports)
 
 **Practitioner / exam:**
 - 📖 *CompTIA Server+ SK0-005 Exam Objectives* (free PDF)
 - 📖 [Professor Messer SK0-005 videos](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)
-- 📖 Mike Meyers, *CompTIA Server+ All-in-One Exam Guide, 5th ed.* — storage chapters
+- 📖 Mike Meyers, *CompTIA Server+ All-in-One Exam Guide, 5th ed.*, storage chapters
 - 📖 Bruce Schneier-style breakdowns of array vendor whitepapers (Pure, NetApp, Dell EMC)

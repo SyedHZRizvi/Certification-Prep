@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Consent Mode v2 — Complete Walkthrough</p>
+      <p class="vg-title">Consent Mode v2, Complete Walkthrough</p>
       <p class="vg-creator">Simo Ahava</p>
       <span class="vg-duration">⏱ 28 min · The canonical guide</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Privacy Sandbox — Topics + Protected Audience</p>
+      <p class="vg-title">Privacy Sandbox, Topics + Protected Audience</p>
       <p class="vg-creator">Google Chrome Developers</p>
       <span class="vg-duration">⏱ 20 min · The 7 APIs explained</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">GDPR / CCPA / CPRA — What Marketers Need</p>
+      <p class="vg-title">GDPR / CCPA / CPRA, What Marketers Need</p>
       <p class="vg-creator">Future of Privacy Forum</p>
       <span class="vg-duration">⏱ 18 min · Compliance overview</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">iOS ATT — 4 Years Later</p>
+      <p class="vg-title">iOS ATT, 4 Years Later</p>
       <p class="vg-creator">AppsFlyer Research</p>
       <span class="vg-duration">⏱ 22 min · Empirical impact</span>
     </div>
@@ -147,7 +147,7 @@
 1. Name the 4 Consent Mode v2 parameters.
 2. Difference between Basic and Advanced Consent Mode?
 3. Why does Pixel + CAPI deduplicate better than Pixel alone?
-4. SKAdNetwork conversion value — how many bits?
+4. SKAdNetwork conversion value, how many bits?
 5. List 3 of the 7 Privacy Sandbox APIs.
 
 If you can answer all 5 in under 8 minutes, you're ready for the [Quiz](./Quiz.md).

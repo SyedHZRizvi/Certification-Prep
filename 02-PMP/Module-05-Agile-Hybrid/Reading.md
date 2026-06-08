@@ -35,11 +35,11 @@ Where Scrum is iteration-based, **Kanban** is **flow-based**.
 ### Core Kanban Practices:
 
 1. 👀 **Visualize the workflow** (the Kanban board)
-2. 🚦 **Limit Work In Progress (WIP)** — don't take on more than you can finish
-3. 📊 **Manage flow** — measure cycle time, throughput
-4. 📋 **Make policies explicit** — entry/exit criteria for each column
-5. 🔄 **Implement feedback loops** — daily reviews
-6. 📈 **Improve collaboratively** — continuous improvement
+2. 🚦 **Limit Work In Progress (WIP)**, don't take on more than you can finish
+3. 📊 **Manage flow**, measure cycle time, throughput
+4. 📋 **Make policies explicit**, entry/exit criteria for each column
+5. 🔄 **Implement feedback loops**, daily reviews
+6. 📈 **Improve collaboratively**, continuous improvement
 
 ### Kanban Board Example:
 ```
@@ -68,7 +68,7 @@ Where Scrum is iteration-based, **Kanban** is **flow-based**.
 
 **Lean** (from Toyota Production System) emphasizes:
 
-- Eliminating waste (the 8 wastes — TIM-WOODS):
+- Eliminating waste (the 8 wastes, TIM-WOODS):
 
   - **T**ransport
   - **I**nventory
@@ -87,20 +87,20 @@ Where Scrum is iteration-based, **Kanban** is **flow-based**.
 
 ---
 
-## 🎨 XP (Extreme Programming) — Engineering Practices
+## 🎨 XP (Extreme Programming), Engineering Practices
 
 XP focuses on technical excellence:
 
 ### Key Practices:
 
-- 👯 **Pair Programming** — two devs, one keyboard
-- ✅ **TDD (Test-Driven Development)** — write tests first
-- 🔄 **Continuous Integration** — merge code often
-- 📐 **Refactoring** — improve code without changing behavior
-- 🎁 **Small Releases** — ship frequently
-- 👥 **Collective Code Ownership** — anyone can edit any code
+- 👯 **Pair Programming**, two devs, one keyboard
+- ✅ **TDD (Test-Driven Development)**, write tests first
+- 🔄 **Continuous Integration**, merge code often
+- 📐 **Refactoring**, improve code without changing behavior
+- 🎁 **Small Releases**, ship frequently
+- 👥 **Collective Code Ownership**, anyone can edit any code
 
-🎯 PMP tests these lightly — know what they ARE.
+🎯 PMP tests these lightly, know what they ARE.
 
 ---
 
@@ -117,9 +117,9 @@ XP focuses on technical excellence:
 
 ### Common Hybrid Patterns:
 
-- **Predictive shell + Agile inside** — broad timeline, sprint-based work
-- **Stage-Gate + Agile** — go/no-go gates, agile within stages
-- **Agile development + Predictive deployment** — build agile, ship predictive
+- **Predictive shell + Agile inside**, broad timeline, sprint-based work
+- **Stage-Gate + Agile**, go/no-go gates, agile within stages
+- **Agile development + Predictive deployment**, build agile, ship predictive
 
 🎯 **Exam pattern:** "Project has stable requirements for hardware but evolving software. Best approach?"
 - ✅ **Hybrid (predictive for hardware, agile for software)**
@@ -183,11 +183,11 @@ COMPLEX        │           DISORDER
 
 ### Common Techniques:
 
-- **Story Points** — relative complexity
-- **Planning Poker** — group consensus
-- **T-shirt sizing** — XS, S, M, L, XL
-- **Affinity grouping** — sort by relative size
-- **Ideal Days** — uninterrupted work days
+- **Story Points**, relative complexity
+- **Planning Poker**, group consensus
+- **T-shirt sizing**, XS, S, M, L, XL
+- **Affinity grouping**, sort by relative size
+- **Ideal Days**, uninterrupted work days
 
 ### Velocity-based Forecasting
 - Avg PBIs/sprint = velocity
@@ -202,12 +202,12 @@ COMPLEX        │           DISORDER
 
 ### Useful agile metrics (test-relevant):
 
-- 📈 **Velocity** — story points completed/sprint
-- ⏱️ **Cycle Time** — time from start to done (Kanban)
-- 📊 **Throughput** — items completed per period
-- 📈 **Burndown / Burnup Charts** — work remaining/completed
+- 📈 **Velocity**, story points completed/sprint
+- ⏱️ **Cycle Time**, time from start to done (Kanban)
+- 📊 **Throughput**, items completed per period
+- 📈 **Burndown / Burnup Charts**, work remaining/completed
 - 🎯 **Customer Satisfaction (NPS, CSAT)**
-- ⚡ **Lead Time** — request to delivery
+- ⚡ **Lead Time**, request to delivery
 
 ### Cumulative Flow Diagram (CFD)
 - Stacked area chart showing items in each state over time
@@ -282,11 +282,11 @@ Same as Product Backlog.
 
 ## ⚠️ Common PMP Agile Traps
 
-1. ❌ "PM assigns tasks in agile" — **NO**, team self-organizes
-2. ❌ "Detailed upfront plan in agile" — **NO**, plan adaptively
-3. ❌ "Scope baseline locked in agile" — **NO**, scope evolves
-4. ❌ "PM controls daily standup" — **NO**, team owns it
-5. ❌ "Agile = no plan" — **NO**, agile = continuous planning
+1. ❌ "PM assigns tasks in agile", **NO**, team self-organizes
+2. ❌ "Detailed upfront plan in agile", **NO**, plan adaptively
+3. ❌ "Scope baseline locked in agile", **NO**, scope evolves
+4. ❌ "PM controls daily standup", **NO**, team owns it
+5. ❌ "Agile = no plan", **NO**, agile = continuous planning
 
 ---
 
@@ -334,42 +334,42 @@ You now know:
 ### Prerequisites for this module
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - **PMBOK 7 principles** — Tailoring, Adaptability, Complexity (covered in [Module 01: Foundations](../Module-01-Foundations/Reading.md)).
-> - **Predictive process basics** — WBS, Critical Path, baselines (covered in [Module 03: Process Domain](../Module-03-Process-Domain/Reading.md)).
-> - **Scrum vocabulary** — Sprint, Backlog, Definition of Done. If new, [01-Scrum-Master Module 02: Scrum Framework](../../01-Scrum-Master/Module-02-Scrum-Framework/Reading.md) and Module 04 (Artifacts) are recommended.
+> - **PMBOK 7 principles**, Tailoring, Adaptability, Complexity (covered in [Module 01: Foundations](../Module-01-Foundations/Reading.md)).
+> - **Predictive process basics**, WBS, Critical Path, baselines (covered in [Module 03: Process Domain](../Module-03-Process-Domain/Reading.md)).
+> - **Scrum vocabulary**, Sprint, Backlog, Definition of Done. If new, [01-Scrum-Master Module 02: Scrum Framework](../../01-Scrum-Master/Module-02-Scrum-Framework/Reading.md) and Module 04 (Artifacts) are recommended.
 >
 > If any of these are shaky, pause and review before continuing.
 
 ### Where this leads
 
 > **Where this leads.**
-> - **Inside this course:** [Module 06 — Earned Value](../Module-06-Earned-Value/Reading.md) shows how to measure progress in hybrid contexts; [Module 09 — Procurement](../Module-09-Procurement/Reading.md) covers agile contract structures.
+> - **Inside this course:** [Module 06 Earned Value](../Module-06-Earned-Value/Reading.md) shows how to measure progress in hybrid contexts; [Module 09 Procurement](../Module-09-Procurement/Reading.md) covers agile contract structures.
 > - **Cross-course:** The entire [01-Scrum-Master](../../01-Scrum-Master/README.md) track is the agile-native deep dive; [12-ASCM-CLTD Module 06](../../12-ASCM-CLTD/Module-06-Transportation-Modes/Reading.md) extends Lean/TIM-WOODS thinking to logistics.
-> - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) collectively draw ~25–30% of their questions from agile/hybrid content — the highest single source.
+> - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) collectively draw ~25–30% of their questions from agile/hybrid content, the highest single source.
 
 ---
 
-## 📊 Case Study — HealthCare.gov Launch and Rescue (2013)
+## 📊 Case Study, HealthCare.gov Launch and Rescue (2013)
 
 **Situation.** HealthCare.gov was the US federal insurance marketplace required by the Affordable Care Act (ACA, 2010). The launch deadline was October 1, 2013. The Centers for Medicare & Medicaid Services (CMS) acted as program sponsor, with primary contractor CGI Federal building the front-end and 55 separate contractors handling other components. The estimated project cost grew from an initial ~$93.7M to over **$1.7 billion** by 2014 (GAO-14-694, July 2014).
 
-**Decision.** The program was structured as a predictive (waterfall) build with formal milestones, written specifications, and contract deliverables — typical federal IT practice. Integration testing was scheduled in the final 2 weeks before launch. Stakeholder coordination across CMS, the White House, 55 contractors, and 50 state-exchange interfaces was managed through traditional status-report cadences. Late changes to insurance rules (driven by political compromise) forced specification rewrites in 2013, but the schedule was held fixed. The launch went ahead despite internal flags from contractors that the system was not load-ready.
+**Decision.** The program was structured as a predictive (waterfall) build with formal milestones, written specifications, and contract deliverables, typical federal IT practice. Integration testing was scheduled in the final 2 weeks before launch. Stakeholder coordination across CMS, the White House, 55 contractors, and 50 state-exchange interfaces was managed through traditional status-report cadences. Late changes to insurance rules (driven by political compromise) forced specification rewrites in 2013, but the schedule was held fixed. The launch went ahead despite internal flags from contractors that the system was not load-ready.
 
-**Outcome.** On launch day (Oct 1, 2013), the site collapsed under load — only ~6 enrollees completed signup that day. Through October and November, error rates exceeded 60%. The political fallout was severe; White House Chief of Staff Denis McDonough commissioned a "tech surge" led by Jeff Zients (later Biden's National Economic Council director) and Mikey Dickerson (Google SRE veteran, later founder of US Digital Service). The rescue team **switched the operating model from waterfall to agile**: stand-up meetings twice daily, ruthless prioritization of the highest-traffic flows, war-room operations, and small cross-functional cells. Within ~8 weeks, the site was functional at scale (December 2013 enrollments exceeded the entire pre-rescue total). The rescue led directly to the creation of US Digital Service (USDS) and 18F — agile-first federal IT teams.
+**Outcome.** On launch day (Oct 1, 2013), the site collapsed under load only ~6 enrollees completed signup that day. Through October and November, error rates exceeded 60%. The political fallout was severe; White House Chief of Staff Denis McDonough commissioned a "tech surge" led by Jeff Zients (later Biden's National Economic Council director) and Mikey Dickerson (Google SRE veteran, later founder of US Digital Service). The rescue team **switched the operating model from waterfall to agile**: stand-up meetings twice daily, ruthless prioritization of the highest-traffic flows, war-room operations, and small cross-functional cells. Within ~8 weeks, the site was functional at scale (December 2013 enrollments exceeded the entire pre-rescue total). The rescue led directly to the creation of US Digital Service (USDS) and 18F agile-first federal IT teams.
 
-**Lesson for the exam / for practitioners.** This is a perfect Tailoring case (PMBOK 7 §3.7). The original program failed because it applied predictive-waterfall governance to a project with **evolving requirements**, **massive stakeholder count**, **integration complexity**, and **political uncertainty** — exactly the conditions where the Stacey Matrix points toward agile. The rescue worked because the operating model was tailored to fit the actual complexity. On the exam, when you see a scenario asking *"What approach should the team use?"* the right answer is almost never "the one in the original plan" — it's the one that matches the **current** requirement stability + customer involvement + risk profile + regulatory needs. HealthCare.gov is the canonical example of mid-project methodology shift saving (rather than killing) the program.
+**Lesson for the exam / for practitioners.** This is a perfect Tailoring case (PMBOK 7 §3.7). The original program failed because it applied predictive-waterfall governance to a project with **evolving requirements**, **massive stakeholder count**, **integration complexity**, and **political uncertainty** exactly the conditions where the Stacey Matrix points toward agile. The rescue worked because the operating model was tailored to fit the actual complexity. On the exam, when you see a scenario asking *"What approach should the team use?"* the right answer is almost never "the one in the original plan" it's the one that matches the **current** requirement stability + customer involvement + risk profile + regulatory needs. HealthCare.gov is the canonical example of mid-project methodology shift saving (rather than killing) the program.
 
 **Discussion (Socratic).**
 - Q1: Federal procurement law strongly prefers fixed-price predictive contracts for accountability reasons. How would you, as PM, push back on procurement officers who insist on waterfall structures for projects that obviously need agile flexibility?
-- Q2: The rescue team had executive air cover from the White House — a privilege not available to most PMs. What organizational structures, sponsor agreements, or "permission slips" would you negotiate at kickoff to be able to do a mid-project methodology shift without that level of cover?
+- Q2: The rescue team had executive air cover from the White House, a privilege not available to most PMs. What organizational structures, sponsor agreements, or "permission slips" would you negotiate at kickoff to be able to do a mid-project methodology shift without that level of cover?
 - Q3: USDS and 18F emerged as durable institutional changes from a single project failure. Is it ethical for a PM to deliberately let a project "fail visibly" if doing so produces broader organizational learning? Defend an answer with PMI's Code of Ethics.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Stacey Matrix in practice.** Take a project you've worked on; place it on the Stacey Matrix. Did the chosen methodology match the position? Where in the matrix is the boundary most contested in industry today?
-2. **Kanban WIP vs throughput.** A team's WIP limit is 4. Throughput is 12/week. A stakeholder argues raising the WIP limit to 6 will lift throughput. Is that defensible — and what would you measure to test it? Cite Little's Law (J. Little 1961).
+2. **Kanban WIP vs throughput.** A team's WIP limit is 4. Throughput is 12/week. A stakeholder argues raising the WIP limit to 6 will lift throughput. Is that defensible, and what would you measure to test it? Cite Little's Law (J. Little 1961).
 3. **TIM-WOODS in knowledge work.** Lean's 8 wastes were originally observed on Toyota factory floors. Apply each of the 8 to a 2024 software-engineering team and name a concrete example of each that you've seen.
 4. **Hybrid contract structure.** A regulated hardware-plus-software project needs predictive hardware delivery and agile software delivery. Design a contract structure (vendor-side) that pays appropriately for each. Cite PMBOK 7's Adaptability principle.
 5. **Velocity as a metric.** Velocity is famously easy to game and famously useful for forecasting. When is it the right metric, when is it a vanity metric, and what should replace it in 2024 (cite the Accelerate / DORA metrics framework, Forsgren/Humble/Kim 2018)?

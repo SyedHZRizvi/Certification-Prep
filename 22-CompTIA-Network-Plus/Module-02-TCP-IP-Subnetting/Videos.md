@@ -18,7 +18,7 @@
 
 # 🎥 Module 2 Videos: TCP/IP & Subnetting
 
-> **How to use:** This module is the single most video-critical of the course — subnetting is a *skill*, not a fact. Watch ALL the essential videos and DO the practice drills along with them.
+> **How to use:** This module is the single most video-critical of the course, subnetting is a *skill*, not a fact. Watch ALL the essential videos and DO the practice drills along with them.
 
 ## ⭐ Essential watching (~70 min)
 

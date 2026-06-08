@@ -5,7 +5,7 @@ title: Study Plan
 
 # 📅 Study Plan
 
-> Three guides that structure your prep from kickoff to exam day — applicable to any of the 32 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
+> Three guides that structure your prep from kickoff to exam day, applicable to any of the 32 certifications and tracks on this site. Read them in order, or jump to whatever you need most right now.
 
 **Study Plan** · Hub
 *Last updated: 2026-05*
@@ -26,7 +26,7 @@ title: Study Plan
 
 **The day-by-day schedule** that takes you from zero to certified. Built around 10 hours/week of study with realistic deload weeks.
 
-> ⚠️ **Note:** The detailed week-by-week schedule is written for the **Scrum Master → PMP** path. The same scheduling *principles* (spaced repetition, interleaving, mock-exam cadence, deload weeks) apply to every track in this course — see the "Adapting This Plan To Other Certs" section at the bottom of that page, plus each track's `README.md` for cert-specific pacing.
+> ⚠️ **Note:** The detailed week-by-week schedule is written for the **Scrum Master → PMP** path. The same scheduling *principles* (spaced repetition, interleaving, mock-exam cadence, deload weeks) apply to every track in this course, see the "Adapting This Plan To Other Certs" section at the bottom of that page, plus each track's `README.md` for cert-specific pacing.
 
 **Best for:** anyone who wants a clear, opinionated path with no decision fatigue.
 
@@ -43,9 +43,9 @@ What's inside:
 
 ### 🎯 [Exam Day Tips](./Exam-Day-Tips/)
 
-**Read the morning of your exam.** Mental tactics, time management strategies, common trap-question patterns, and how to recover when you hit a hard stretch — true for any cert.
+**Read the morning of your exam.** Mental tactics, time management strategies, common trap-question patterns, and how to recover when you hit a hard stretch, true for any cert.
 
-**Best for:** the day before and the day of your exam — keep this open in another tab.
+**Best for:** the day before and the day of your exam, keep this open in another tab.
 
 What's covered:
 
@@ -55,7 +55,7 @@ What's covered:
 - PSM I-specific strategies (45 sec/question)
 - PMP-specific strategies (~77 sec/question, breaks, traps)
 - Cert-specific exam-day notes for the variety of formats (Pearson VUE in-person, online proctored, Prometric, vendor-portal honor-system)
-- What to do if you fail (it happens — here's the path forward)
+- What to do if you fail (it happens, here's the path forward)
 
 > 💡 Cert-specific exam-day cheat sheets for AWS, Azure, AI, Security+, ASCM/ISM, AI Marketing, Bitcoin, and E-Commerce tracks live in each track's `README.md` and `Cheat-Sheet.md`. The mental tactics in this guide are universal.
 
@@ -63,7 +63,7 @@ What's covered:
 
 ## 🎓 Pick Your Track
 
-Below are the 32 courses, grouped by category. Pick the one you're preparing for and open its README — that's where the cert-specific schedule, modules, and resources live.
+Below are the 32 courses, grouped by category. Pick the one you're preparing for and open its README, that's where the cert-specific schedule, modules, and resources live.
 
 ### Project Management
 - 🏃 [**Scrum Master (PSM I)**](../01-Scrum-Master/)
@@ -85,7 +85,7 @@ Below are the 32 courses, grouped by category. Pick the one you're preparing for
 
 ### Generative & Agentic AI (foundation → advanced)
 
-**Foundation tier — entry-level, no/minimal prereqs:**
+**Foundation tier, entry-level, no/minimal prereqs:**
 - 🤖 [**AWS AI Practitioner (AIF-C01)**](../07-AWS-AI-Practitioner/)
 - 🧠 [**Azure AI Engineer (AI-102)**](../08-Azure-AI-Engineer/)
 - ✍️ [**Prompt Engineering Specialist** (Cert Hub original)](../29-Prompt-Engineering-Specialist/)
@@ -94,15 +94,15 @@ Below are the 32 courses, grouped by category. Pick the one you're preparing for
 **Intermediate → advanced:**
 - 🧬 [**Claude Architect** (Cert Hub original)](../28-Claude-Architect/)
 - ⚡ [**Generative AI Engineer** (Cert Hub original)](../30-Generative-AI-Engineer/)
-- 🔬 [**AWS ML Specialty (MLS-C01)** — Specialty tier, requires 2+ years experience](../31-AWS-ML-Specialty/)
+- 🔬 [**AWS ML Specialty (MLS-C01)**, Specialty tier, requires 2+ years experience](../31-AWS-ML-Specialty/)
 
 ### Supply Chain & Operations (foundation → advanced)
 
-**Foundation tier — no eligibility requirements:**
+**Foundation tier, no eligibility requirements:**
 - 🏭 [**ASCM CPIM**](../11-ASCM-CPIM/)
 - 🚛 [**ASCM CLTD**](../12-ASCM-CLTD/)
 
-**Senior tier — degree + experience required:**
+**Senior tier, degree + experience required:**
 - 📦 [**ASCM CSCP**](../10-ASCM-CSCP/) (Bachelor's + 2 yrs OR 5 yrs experience)
 - 🤝 [**ISM CPSM**](../13-ISM-CPSM/) (Bachelor's + 3 yrs OR 5 yrs experience)
 
@@ -124,4 +124,4 @@ Below are the 32 courses, grouped by category. Pick the one you're preparing for
 - 🚀 **Read the [Quick Start Guide](./Quick-Start-Guide/)** if you haven't picked a track yet
 - 📚 **Browse the [Certifications Catalog](../Resources/International-Certifications/)** to compare fees, formats, and renewal rules
 - 📖 **Open the [Books & Links](../Resources/Books-and-Links/)** page for free + paid resources per track
-- 🏠 [**Course Home**](../) — all 32 tracks at a glance
+- 🏠 [**Course Home**](../), all 32 tracks at a glance

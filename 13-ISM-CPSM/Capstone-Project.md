@@ -1,4 +1,4 @@
-# Capstone Project — ISM CPSM (Certified Professional in Supply Management)
+# Capstone Project, ISM CPSM (Certified Professional in Supply Management)
 
 > **Format:** Self-directed; 4-8 weeks; ~30-45 hours of work
 > **Deliverables:** 6 artifacts + a 12-slide executive readout
@@ -10,9 +10,9 @@
 
 You have just been hired as **Vice President of Supply Management at Northrop Specialty Foods Co.**, a privately-held $1.4B specialty-foods manufacturer headquartered in Chicago. Northrop produces premium frozen, dry, and ambient products across 1,200 SKUs sold to grocery, club, and food-service channels in the US, Canada, EU, and the UAE. Direct-spend categories include grains, dairy ingredients, oils, sweeteners, herbs/spices, and packaging. Indirect categories include logistics, MRO, contract labor, marketing services, and IT.
 
-**The situation you've walked into.** Eight months before your hire, Northrop issued a Class-I voluntary recall of 18 SKUs after a Listeria contamination was traced to a *sub-tier* supplier of dehydrated onion powder. The Tier-1 spice-blend supplier had subcontracted to a Tier-2 ingredient processor who in turn sourced from a Tier-3 farm cooperative — none of which appeared in Northrop's supplier master file. The recall cost ~$32M in direct expense, an estimated $90M in lost revenue from delisted SKUs, and immeasurable brand damage. The board has now hired you with a clear mandate from the CEO:
+**The situation you've walked into.** Eight months before your hire, Northrop issued a Class-I voluntary recall of 18 SKUs after a Listeria contamination was traced to a *sub-tier* supplier of dehydrated onion powder. The Tier-1 spice-blend supplier had subcontracted to a Tier-2 ingredient processor who in turn sourced from a Tier-3 farm cooperative, none of which appeared in Northrop's supplier master file. The recall cost ~$32M in direct expense, an estimated $90M in lost revenue from delisted SKUs, and immeasurable brand damage. The board has now hired you with a clear mandate from the CEO:
 
-> "12 months. Stand up a strategic supply management function — taxonomy, scorecards, risk register, sustainability, capability, dashboard. I want this to be the company's *strength*, not the line item we hide from the board."
+> "12 months. Stand up a strategic supply management function, taxonomy, scorecards, risk register, sustainability, capability, dashboard. I want this to be the company's *strength*, not the line item we hide from the board."
 
 You inherit a team of 28 (mostly buyers and 3 sourcing managers), 240 suppliers across 18 countries, no formal category management practice, scattered ERP data, and a budget of $4.5M operating + $2M for tooling and consulting.
 
@@ -67,7 +67,7 @@ Northrop's current team is mostly buyers. To execute Deliverables 1-4, you need 
 - **Org design** (which categories get dedicated managers, which are shared, which stay tactical)
 - **Capability framework** (skills, behaviors, certifications required by tier)
 - **Development plan** for the existing team (training, rotations, CPSM certification subsidization)
-- **Hiring plan** for the gap (how many, what level, what budget — work within the $4.5M operating)
+- **Hiring plan** for the gap (how many, what level, what budget, work within the $4.5M operating)
 - **Year-1 milestones** aligned to ADKAR (Awareness/Desire/Knowledge/Ability/Reinforcement)
 
 **Format:** 5-7 pages.
@@ -117,7 +117,7 @@ Compile Deliverables 1-6 into a **12-slide executive readout** + appendix. The 1
 - **Week 5:** Deliverable 5 (Capability Roadmap). Reuse Module 8. Apply Kotter + ADKAR explicitly.
 - **Week 6:** Deliverable 6 (Dashboard) + Deliverable 7 (Executive Readout). Self-score against rubric.
 
-If you have less time, compress weeks 1-2 into one and weeks 3-4 into one — but don't skip Deliverable 7. The readout is what hires you.
+If you have less time, compress weeks 1-2 into one and weeks 3-4 into one, but don't skip Deliverable 7. The readout is what hires you.
 
 ---
 
@@ -136,7 +136,7 @@ This is a portfolio you build for yourself. Save as:
    README.md  (1-page summary of approach + self-score)
 ```
 
-Self-grading: complete the rubric above honestly. If you're below 75, identify the 2-3 weakest deliverables and redo them — better than moving on. Peer review (an ISM CPSM colleague or LinkedIn supply community) is even better.
+Self-grading: complete the rubric above honestly. If you're below 75, identify the 2-3 weakest deliverables and redo them, better than moving on. Peer review (an ISM CPSM colleague or LinkedIn supply community) is even better.
 
 ---
 
@@ -154,6 +154,6 @@ If you want to push beyond pass:
 
 ## Why this Capstone Matters
 
-CPSM tests judgment under scenario pressure. This capstone forces you to integrate every module's frameworks into a single coherent transformation. If you can defend each deliverable to a peer or an ISM Mastery mentor, you will pass the three real CPSM exams comfortably — and more importantly, you'll be ready for the VP-of-Supply role this capstone simulates.
+CPSM tests judgment under scenario pressure. This capstone forces you to integrate every module's frameworks into a single coherent transformation. If you can defend each deliverable to a peer or an ISM Mastery mentor, you will pass the three real CPSM exams comfortably, and more importantly, you'll be ready for the VP-of-Supply role this capstone simulates.
 
 Good luck. 💪

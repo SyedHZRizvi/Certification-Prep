@@ -48,7 +48,7 @@ D. A neural network's softmax output
 
 ### Q6. Markov-chain attribution computes a channel's credit using: *(Understand)*
 A. The transition probability
-B. The "removal effect" — drop in conversion probability when the channel is removed
+B. The "removal effect", drop in conversion probability when the channel is removed
 C. SHAP values
 D. Linear regression coefficients
 
@@ -176,7 +176,7 @@ D. Display has 15% CTR
 
 ### Q22. AppsFlyer, Branch, and Adjust are: *(Remember)*
 A. CDPs
-B. Mobile Measurement Partners (MMPs) — postback attribution for app installs
+B. Mobile Measurement Partners (MMPs), postback attribution for app installs
 C. DMPs
 D. MMM vendors
 
@@ -184,7 +184,7 @@ D. MMM vendors
 
 ### Q23. The strategist's best answer to "which attribution model is right?" is: *(Analyze)*
 A. "Last-click."
-B. "It depends — DDA for trackable click channels, MMM for untrackable + brand, incrementality to validate."
+B. "It depends, DDA for trackable click channels, MMM for untrackable + brand, incrementality to validate."
 C. "Linear."
 D. "The vendor we just bought."
 
@@ -233,7 +233,7 @@ D. Random chance
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Bottom-funnel, click-driven channels**
-Last-click structurally rewards the channel closest to conversion — paid search, retargeting, branded affiliate. It under-credits upper-funnel.
+Last-click structurally rewards the channel closest to conversion, paid search, retargeting, branded affiliate. It under-credits upper-funnel.
 
 ### Q2: **B. 40% first + 40% last + 20% middle**
 U-shaped (a.k.a. position-based). Memorize this exact split.
@@ -272,7 +272,7 @@ The fundamental MTA limitation. Strategists answer "we use MMM + incrementality 
 Below this, the statistical power is too low to detect typical effect sizes. Smaller tests are possible but error bars widen substantially.
 
 ### Q14: **B. Control creative**
-The PSA isolates the *creative* effect — the holdout group still sees an ad, just not your ad.
+The PSA isolates the *creative* effect, the holdout group still sees an ad, just not your ad.
 
 ### Q15: **B. $50K**
 Meta's typical floor for Conversion Lift Tests is around $50K for a 4–6 week run. Below this, the test won't reach statistical significance.
@@ -287,7 +287,7 @@ The 2026 strategist triangle.
 The reconciliation rule. MMM is closer to ground-truth for *allocation* decisions; MTA can still inform *bid* decisions inside a channel.
 
 ### Q19: **C. 3,628,800 (10!)**
-Factorial growth — which is why production Shapley uses Monte Carlo sampling.
+Factorial growth, which is why production Shapley uses Monte Carlo sampling.
 
 ### Q20: **B. ~$80M reallocated + growth restored**
 The case study and the underlying lesson. Last-click was over-crediting paid search; switching to DDA + incrementality fixed budget allocation.
@@ -302,7 +302,7 @@ The three big MMPs. They handle postback attribution and SKAN aggregation.
 The hallmark strategist answer. Distinguishes you from "we use [vendor's name] for everything."
 
 ### Q24: **A. Next state depends only on current state**
-The Markov property. It's a *simplification* — real customer journeys have memory of earlier touches. This is why Markov + sampling-Shapley + ML approaches differ.
+The Markov property. It's a *simplification*, real customer journeys have memory of earlier touches. This is why Markov + sampling-Shapley + ML approaches differ.
 
 ### Q25: **B. Sampling-based Shapley computation**
 The paper that made Shapley computationally feasible for high-dimensional inputs and underpins SHAP.

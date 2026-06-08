@@ -3,7 +3,7 @@
 > **Instructions:** Answer all 25 questions WITHOUT looking at the reading.
 > Aim for 20/25 minimum. Time limit: 30 minutes.
 
-> **Bloom's distribution.** Remember 5 (20%) · Understand 6 (24%) · Apply 7 (28%) · Analyze/Evaluate 6 (24%) · Create 1 (4%). This mirrors the SAA-C03's scenario-heavy style — only ~20% of questions test pure recall.
+> **Bloom's distribution.** Remember 5 (20%) · Understand 6 (24%) · Apply 7 (28%) · Analyze/Evaluate 6 (24%) · Create 1 (4%). This mirrors the SAA-C03's scenario-heavy style, only ~20% of questions test pure recall.
 
 ---
 
@@ -59,7 +59,7 @@ D. EC2 instances across at least 2 edge locations
 
 ### Q7. A startup has unpredictable, spiky traffic. Which Well-Architected design principle BEST applies? *(Apply)*
 A. Perform operations as code
-B. Stop guessing capacity — adopt elasticity
+B. Stop guessing capacity, adopt elasticity
 C. Apply defense in depth
 D. Test recovery procedures
 
@@ -101,7 +101,7 @@ D. Use larger EC2 instance types
 A. Only the AWS CLI
 B. Only the AWS SDKs
 C. Both the AWS CLI and AWS SDKs
-D. Neither — the console is a separate API
+D. Neither, the console is a separate API
 
 ---
 
@@ -114,10 +114,10 @@ D. Hosting AWS managed databases
 ---
 
 ### Q14. RPO stands for: *(Remember)*
-A. Recovery Point Objective — maximum acceptable data loss
-B. Recovery Process Order — sequence of restore steps
-C. Resource Provisioning Output — number of resources provisioned
-D. Replication Performance Object — measure of replica lag
+A. Recovery Point Objective, maximum acceptable data loss
+B. Recovery Process Order, sequence of restore steps
+C. Resource Provisioning Output, number of resources provisioned
+D. Replication Performance Object, measure of replica lag
 
 ---
 
@@ -180,7 +180,7 @@ D. EC2, RDS, DynamoDB
 ### Q22. Which statement about regions is TRUE? *(Analyze)*
 A. All AWS services are available in every region on launch day
 B. Pricing is identical across all regions
-C. Most resources are region-scoped — they don't appear in other regions
+C. Most resources are region-scoped, they don't appear in other regions
 D. You can move an EC2 instance to a different region with a single click
 
 ---
@@ -212,7 +212,7 @@ D. Stop guessing capacity
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. One or more discrete data centers with independent power and networking**
-An AZ is *one or more* data centers — not a single building, not an entire region. They share a low-latency network within a region.
+An AZ is *one or more* data centers, not a single building, not an entire region. They share a low-latency network within a region.
 
 ### Q2: **B. Region selection**
 Regions are isolated; data doesn't leave a region unless you explicitly replicate it. For German residency, you'd pick `eu-central-1` (Frankfurt).
@@ -221,7 +221,7 @@ Regions are isolated; data doesn't leave a region unless you explicitly replicat
 The 6 pillars are: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability. Innovation isn't a pillar (though sustainability was added in 2021).
 
 ### Q4: **B. The customer**
-EC2 is IaaS — you own everything from the OS up. Contrast with RDS (managed), where AWS patches the OS and engine.
+EC2 is IaaS, you own everything from the OS up. Contrast with RDS (managed), where AWS patches the OS and engine.
 
 ### Q5: **B. Patching the underlying OS and DB engine**
 On RDS, AWS manages the OS, engine patches, backups, hardware. You manage DB users, network access, data, and IAM.
@@ -229,7 +229,7 @@ On RDS, AWS manages the OS, engine patches, backups, hardware. You manage DB use
 ### Q6: **B. EC2 across at least 2 AZs in one region**
 Multi-AZ is the minimum to survive a data-center loss. Multi-region is for regional outage protection.
 
-### Q7: **B. Stop guessing capacity — adopt elasticity**
+### Q7: **B. Stop guessing capacity, adopt elasticity**
 Spiky unpredictable traffic = use auto scaling / serverless instead of over-provisioning. That's the Reliability + Cost design principle "stop guessing capacity."
 
 ### Q8: **B. Infrastructure as code with CloudFormation and CI/CD**
@@ -250,7 +250,7 @@ Console, CLI, and SDKs all call the same underlying public AWS APIs with the sam
 ### Q13: **B. Caching content close to users and accelerating DNS**
 Edge locations serve CloudFront, Route 53, Global Accelerator, AWS Shield. They don't run EC2.
 
-### Q14: **A. Recovery Point Objective — maximum acceptable data loss**
+### Q14: **A. Recovery Point Objective, maximum acceptable data loss**
 RPO = how much data can you afford to lose (time-wise). RTO = how long you can afford to be down.
 
 ### Q15: **C. Outpost**
@@ -266,7 +266,7 @@ Multi-AZ ≠ multi-region. To survive a region outage, you need multi-region rep
 CloudFormation defines AWS infrastructure declaratively in YAML/JSON. CDK builds on top of it. CloudTrail logs API calls; CloudWatch is metrics/logs.
 
 ### Q19: **C. Reliability**
-Multi-AZ adds automatic failover for RDS. That's resilience — Reliability pillar.
+Multi-AZ adds automatic failover for RDS. That's resilience, Reliability pillar.
 
 ### Q20: **B. Lambda or Fargate**
 "Minimum operational overhead" → serverless / managed compute. EC2 means you patch OSes and manage scaling yourself.

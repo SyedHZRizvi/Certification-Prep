@@ -78,7 +78,7 @@ D. WMI
 
 ---
 
-### Q10. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q10. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** Windows PowerShell 5.1 and PowerShell 7 can coexist on the same Windows Server.
 **S2:** `pwsh` supports SSH-based remoting.
@@ -103,7 +103,7 @@ D. Group Policy Preferences
 A. Backup, Update Management, Defender, Change Tracking, MAA
 B. Backup only
 C. Defender only
-D. Nothing — Automanage is read-only
+D. Nothing, Automanage is read-only
 
 ---
 
@@ -145,7 +145,7 @@ D. User credentials in plain text
 
 ---
 
-### Q17. **Yes/No** — Mark each statement. *(Analyze)*
+### Q17. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** PowerShell DSC LCM can be configured for Push or Pull mode.
 **S2:** Azure Machine Configuration works for Arc-enabled servers as well as Azure VMs.
@@ -174,7 +174,7 @@ D. Email a script to each admin
 
 ---
 
-### Q20. **Yes/No** — Mark each statement. *(Analyze)*
+### Q20. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** PowerShell 7 can run most modules originally written for 5.1.
 **S2:** WinRM is required for Enter-PSSession over WSMan.
@@ -211,7 +211,7 @@ D. Just environment vars
 
 ---
 
-### Q24. **Yes/No** — Cross-functional. *(Apply)*
+### Q24. **Yes/No**, Cross-functional. *(Apply)*
 
 **S1:** `Install-WindowsFeature` is the modern cmdlet to install a Windows Server role.
 **S2:** `Add-Computer` joins a Windows machine to an AD domain.
@@ -306,7 +306,7 @@ All three correct. PS 7 has high backward compatibility; WinRM is the WSMan tran
 Modern Arc-native path.
 
 ### Q22: **B. Only specific cmdlets / parameters / functions as defined in the role capability**
-Constrained execution — the entire JEA point.
+Constrained execution, the entire JEA point.
 
 ### Q23: **A. Credentials, Variables (encrypted), Certificates, Connections**
 The four secure shared-resource types in an Automation Account.

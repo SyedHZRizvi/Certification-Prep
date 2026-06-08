@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: Disaster Recovery & Backup
 
-> **How to use:** Sketch the timeline for each backup type as the video plays — see when each backup happens and what each restore needs.
+> **How to use:** Sketch the timeline for each backup type as the video plays, see when each backup happens and what each restore needs.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">BCP vs DR — Wider Picture</p>
+      <p class="vg-title">BCP vs DR, Wider Picture</p>
       <p class="vg-creator">CISSP / community</p>
       <span class="vg-duration">⏱ 18 min · BCP = business, DR = IT</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Code Spaces 2014 — Backup Lessons</p>
+      <p class="vg-title">Code Spaces 2014, Backup Lessons</p>
       <p class="vg-creator">community case study</p>
       <span class="vg-duration">⏱ 22 min · Backups in the blast radius</span>
     </div>
@@ -134,9 +134,9 @@
 Answer these in your notebook:
 
 1. Define RTO and RPO and write a sentence with each.
-2. Compare incremental vs differential — which backs up *less* per night? Which restores *faster*?
+2. Compare incremental vs differential, which backs up *less* per night? Which restores *faster*?
 3. State the 3-2-1 rule + what the extra "-1-0" adds in 3-2-1-1-0.
-4. Cold / warm / hot site — match each to a recovery window.
+4. Cold / warm / hot site, match each to a recovery window.
 5. Why are synchronous replication and asynchronous replication a function of *distance*?
 6. Why are immutable backups important post-Code-Spaces?
 

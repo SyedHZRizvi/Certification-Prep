@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Robyn Open-Source MMM — Meta Walkthrough</p>
+      <p class="vg-title">Robyn Open-Source MMM, Meta Walkthrough</p>
       <p class="vg-creator">Meta Open Source</p>
       <span class="vg-duration">⏱ 28 min · The canonical Robyn intro</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Google Meridian — Bayesian MMM in Python</p>
+      <p class="vg-title">Google Meridian, Bayesian MMM in Python</p>
       <p class="vg-creator">Google Research / Google Ads</p>
       <span class="vg-duration">⏱ 25 min · 2024 launch + walkthrough</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MMM vs MTA — When to Use Which</p>
+      <p class="vg-title">MMM vs MTA, When to Use Which</p>
       <p class="vg-creator">Avinash Kaushik</p>
       <span class="vg-duration">⏱ 18 min · The decision tree</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Bayesian Statistics — Clearly Explained</p>
+      <p class="vg-title">Bayesian Statistics, Clearly Explained</p>
       <p class="vg-creator">StatQuest with Josh Starmer</p>
       <span class="vg-duration">⏱ 18 min · The math behind Bayesian MMM</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Dominique Hanssens — MMM From The Author</p>
+      <p class="vg-title">Dominique Hanssens, MMM From The Author</p>
       <p class="vg-creator">UCLA Anderson</p>
       <span class="vg-duration">⏱ 45 min · Academic depth</span>
     </div>
@@ -156,7 +156,7 @@
 1. Write the canonical MMM equation from memory.
 2. Define ad-stock and half-life in one sentence each.
 3. What does the Hill function model?
-4. Robyn vs Meridian — name one specific difference.
+4. Robyn vs Meridian, name one specific difference.
 5. When do you use MMM vs MTA?
 
 If you can answer all 5 in under 8 minutes, you're ready for the [Quiz](./Quiz.md).

@@ -90,7 +90,7 @@ D. Replace the SSD
 
 ### Q11. Reliability Monitor in Windows shows: *(Understand)*
 A. Hardware temperatures
-B. History of system crashes, app failures, and the days they occurred — with a stability index
+B. History of system crashes, app failures, and the days they occurred, with a stability index
 C. Just running processes
 D. The Wi-Fi signal
 
@@ -144,7 +144,7 @@ D. The cable in the wall is broken (would affect L1, not just one PC's speed)
 
 ---
 
-### Q18. The Windows tool that lists every program/driver that starts at boot — including stealth entries — is: *(Apply)*
+### Q18. The Windows tool that lists every program/driver that starts at boot including stealth entries is: *(Apply)*
 A. msconfig
 B. Autoruns (Sysinternals)
 C. taskmgr
@@ -245,13 +245,13 @@ Two common causes. Revoke browser notifications; remove unknown extensions.
 Option 5 at Startup Settings = Safe Mode with Networking.
 
 ### Q9: **B. Check file system + scan/recover bad sectors**
-The `/r` switch enables bad-sector recovery — much slower than `/f` alone.
+The `/r` switch enables bad-sector recovery, much slower than `/f` alone.
 
 ### Q10: **B. Uninstall latest update**
 Quickest first try when the timing points to the update.
 
 ### Q11: **B. History of crashes with stability index**
-`perfmon /rel`. Great for "this has been crashing for weeks — what's the pattern?"
+`perfmon /rel`. Great for "this has been crashing for weeks, what's the pattern?"
 
 ### Q12: **B. Event Viewer + disable Add-ins**
 Per the module's opening story. Diagnose before reinstalling.
@@ -287,9 +287,9 @@ Modern WinRE entry path (F8 is unreliable on UEFI fast boot).
 `nvlddmkm.sys` is NVIDIA's display driver. Roll back is the first try (recent update broke it), then update or clean reinstall.
 
 ### Q23: **A. Process Explorer**
-Sysinternals Process Explorer — the Task Manager that should have been built in.
+Sysinternals Process Explorer, the Task Manager that should have been built in.
 
-### Q24: **A. No platters; defrag wears flash without gain — use TRIM/Optimize**
+### Q24: **A. No platters; defrag wears flash without gain, use TRIM/Optimize**
 The fundamental SSD rule. Never defrag an SSD.
 
 ### Q25: **B. Staged kernel rollout + escrowed BitLocker keys**
@@ -322,4 +322,4 @@ The modern enterprise pattern that lets you roll back fast at fleet scale.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 10 — Operational Procedures](../Module-10-Operational-Procedures/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 10, Operational Procedures](../Module-10-Operational-Procedures/Reading.md)

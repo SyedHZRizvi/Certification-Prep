@@ -1,6 +1,6 @@
 # Module 2: Data Engineering for Machine Learning 🛠️
 
-> **Why this module matters:** Domain 1 of the MLS-C01 exam is **Data Engineering — 20%** of every question. The blueprint asks: can you *ingest, store, transform, catalogue, and govern* data so a SageMaker training job can read it? Most ML failures are data-engineering failures (broken schemas, partial files, missing partitions, drifted upstream sources, S3-class mistakes). This module makes you fluent in the AWS data plane that feeds every ML model in production.
+> **Why this module matters:** Domain 1 of the MLS-C01 exam is **Data Engineering, 20%** of every question. The blueprint asks: can you *ingest, store, transform, catalogue, and govern* data so a SageMaker training job can read it? Most ML failures are data-engineering failures (broken schemas, partial files, missing partitions, drifted upstream sources, S3-class mistakes). This module makes you fluent in the AWS data plane that feeds every ML model in production.
 
 > **Prerequisites for this module.** Module 1 of this course. Helpful background:
 > - Comfort with SQL at the level of GROUP BY, JOIN, window functions
@@ -12,7 +12,7 @@
 
 ## 🍕 A Story: The Toyota Factory That Could Not Find Its Data
 
-Meet Hideo. He runs ML at a Toyota assembly plant in Aichi, Japan. In 2022 he is asked to build a computer-vision model that flags chassis welds that are likely to fail QC. The CV expertise exists — what does not exist is a clean training pipeline. The training data lives in **five places**:
+Meet Hideo. He runs ML at a Toyota assembly plant in Aichi, Japan. In 2022 he is asked to build a computer-vision model that flags chassis welds that are likely to fail QC. The CV expertise exists, what does not exist is a clean training pipeline. The training data lives in **five places**:
 
 - Welding-robot logs: streaming **JSON** over UDP into an on-prem syslog server
 - Camera images: **JPG** files written to a NAS by 12 production cells, named with timestamps and ID-card scans
@@ -20,7 +20,7 @@ Meet Hideo. He runs ML at a Toyota assembly plant in Aichi, Japan. In 2022 he is
 - Manufacturing-execution-system events: **Apache Kafka** topic on the plant's OT network
 - Shift schedules: **CSV** files emailed weekly by HR
 
-For 18 months, Hideo cannot get a single end-to-end model working — because for every model iteration his data scientist spends *85%* of her time wrangling data. By the time data is joined, schema-validated, deduplicated, and labelled, the underlying manufacturing line has changed and the model is stale before it ever runs.
+For 18 months, Hideo cannot get a single end-to-end model working, because for every model iteration his data scientist spends *85%* of her time wrangling data. By the time data is joined, schema-validated, deduplicated, and labelled, the underlying manufacturing line has changed and the model is stale before it ever runs.
 
 In 2024 Toyota moves the whole stack to AWS. **Kinesis Data Streams** ingests the welding logs. **AWS Storage Gateway** mirrors the NAS into **S3**. **AWS DMS** continuously replicates the SQL Server into **S3 Parquet** via CDC. **MSK** (managed Kafka) replaces the on-prem Kafka. **AWS DataSync** picks up the HR CSVs. **AWS Glue Crawlers** catalogue every dataset; **Athena** lets the data scientist query everything as joined SQL. **Lake Formation** governs access. The 85%-on-data-wrangling figure drops to **18%**.
 
@@ -28,7 +28,7 @@ That is what this module teaches. The ML model is only as good as the pipeline t
 
 ---
 
-## 📦 S3 For ML — The Object Store You Will Use Every Day
+## 📦 S3 For ML, The Object Store You Will Use Every Day
 
 Amazon S3 is the foundation of every SageMaker workflow. The exam tests **storage classes, lifecycle, encryption, performance tuning, and integration with SageMaker**.
 
@@ -55,7 +55,7 @@ Amazon S3 is the foundation of every SageMaker workflow. The exam tests **storag
 | **Prefix parallelism** | S3 scales by *prefix*; >3,500 PUT/s and >5,500 GET/s per partitioned prefix | Spread keys across many prefixes (e.g. `s3://bucket/2026/01/01/`) |
 | **Multipart upload** | Faster + recoverable for files >100 MB | Boto3 `upload_file` does this automatically; manual via `create_multipart_upload` |
 | **S3 Transfer Acceleration** | Up to 5x faster cross-region uploads via CloudFront edge | Enable on bucket; upload to accelerated endpoint |
-| **S3 Select / Athena** | Read only the bytes you need from a Parquet file | `SELECT col_a FROM s3object` — saves egress + compute |
+| **S3 Select / Athena** | Read only the bytes you need from a Parquet file | `SELECT col_a FROM s3object`, saves egress + compute |
 | **Mountpoint for S3 (`s3fs`)** | Mount an S3 bucket as a filesystem for training | Use for read-heavy training data; fast random reads |
 | **FSx for Lustre with S3 lazy-load** | Sub-millisecond file access for distributed DL training | Link FSx Lustre to S3 → reads pull from S3 on demand |
 
@@ -75,7 +75,7 @@ Amazon S3 is the foundation of every SageMaker workflow. The exam tests **storag
 
 ---
 
-## 🌊 AWS Glue — The Data Catalogue & ETL Engine
+## 🌊 AWS Glue, The Data Catalogue & ETL Engine
 
 AWS Glue is THE service for cataloguing and transforming ML data. It is on every MLS-C01 exam.
 
@@ -83,7 +83,7 @@ AWS Glue is THE service for cataloguing and transforming ML data. It is on every
 
 | Component | What it does | Used for |
 |-----------|--------------|----------|
-| **Glue Data Catalogue** | Hive-compatible metastore — schemas, partitions, tables | Used by Athena, EMR, Redshift Spectrum, SageMaker, Lake Formation |
+| **Glue Data Catalogue** | Hive-compatible metastore, schemas, partitions, tables | Used by Athena, EMR, Redshift Spectrum, SageMaker, Lake Formation |
 | **Glue Crawler** | Scans S3 / RDS / Redshift, infers schema, populates the catalogue | First step to expose any new dataset to SQL queries |
 | **Glue ETL Job (Spark / Python Shell)** | Serverless Spark or Python jobs for transforms | Cleansing, joining, repartitioning, format conversion |
 | **Glue Studio** | Visual ETL job builder (drag-and-drop) | Quick prototyping |
@@ -93,7 +93,7 @@ AWS Glue is THE service for cataloguing and transforming ML data. It is on every
 | **Glue Schema Registry** | Versioned Avro / Protobuf / JSON Schema | Strict schema enforcement on streams |
 | **Glue Data Quality** | Rule-based DQ checks (completeness, uniqueness, ranges) | Quarantine bad data before training |
 
-### Glue Crawler — the workflow
+### Glue Crawler, the workflow
 
 ```
 S3 bucket with raw files
@@ -107,11 +107,11 @@ Creates / updates table in Glue Data Catalogue
 Athena / SageMaker / Redshift Spectrum can now SELECT FROM it
 ```
 
-🎯 **Exam pattern.** *"Engineering team adds 1,000 new Parquet files to S3 daily and wants them queryable in Athena automatically."* → **Glue Crawler on a daily schedule** (or partition projection — see below — to skip the crawler entirely).
+🎯 **Exam pattern.** *"Engineering team adds 1,000 new Parquet files to S3 daily and wants them queryable in Athena automatically."* → **Glue Crawler on a daily schedule** (or partition projection see below to skip the crawler entirely).
 
-🎯 **Optimisation tip:** if your data is well-partitioned (`year=/month=/day=/`), enable **Athena partition projection** in the table properties — no crawler needed; partitions are computed on query.
+🎯 **Optimisation tip:** if your data is well-partitioned (`year=/month=/day=/`), enable **Athena partition projection** in the table properties, no crawler needed; partitions are computed on query.
 
-### Glue ETL — the patterns
+### Glue ETL, the patterns
 
 ```python
 # Glue ETL job in PySpark (simplified)
@@ -142,9 +142,9 @@ glue.write_dynamic_frame.from_options(
 
 ---
 
-## ⚡ Kinesis — Streaming Data For ML
+## ⚡ Kinesis, Streaming Data For ML
 
-If the question mentions "real time", "near real time", "streaming", "clickstream", "IoT events", or "transactions per second" — you are usually in Kinesis territory.
+If the question mentions "real time", "near real time", "streaming", "clickstream", "IoT events", or "transactions per second", you are usually in Kinesis territory.
 
 ### The Kinesis family
 
@@ -161,7 +161,7 @@ If the question mentions "real time", "near real time", "streaming", "clickstrea
 - *"Compute features in real time (windowed averages, joins)"* → **Managed Apache Flink**
 - *"Stream camera frames into Rekognition"* → **Kinesis Video Streams**
 
-### Kinesis Data Streams — shard math
+### Kinesis Data Streams, shard math
 
 ```
 Per shard:
@@ -170,7 +170,7 @@ Per shard:
 
 For 5,000 records/sec:
   - Minimum shards = ceil(5000 / 1000) = 5 shards
-  - Watch for "hot shard" — if 80% of records hash to one partition key, you bottleneck
+  - Watch for "hot shard", if 80% of records hash to one partition key, you bottleneck
 
 On-Demand mode (since 2021):
   - AWS auto-scales shards
@@ -180,7 +180,7 @@ On-Demand mode (since 2021):
 
 🎯 **Exam pattern.** *"Application produces 10,000 records/s but one customer's data dominates 70% of traffic."* → **hot shard**. Fix: better **partition key** (e.g. UUID instead of customer_id), or move to **on-demand**.
 
-### Firehose for ML — the canonical land-zone
+### Firehose for ML, the canonical land-zone
 
 ```
 Producer (clickstream / IoT / Lambda)
@@ -200,7 +200,7 @@ Producer (clickstream / IoT / Lambda)
 
 ---
 
-## ⚙️ AWS Lambda — Serverless Preprocessing
+## ⚙️ AWS Lambda, Serverless Preprocessing
 
 For lightweight preprocessing or event-driven transforms, Lambda is the workhorse.
 
@@ -217,7 +217,7 @@ For lightweight preprocessing or event-driven transforms, Lambda is the workhors
 
 ---
 
-## 🐘 Amazon EMR — Big-Data ML
+## 🐘 Amazon EMR, Big-Data ML
 
 When data is genuinely big (TBs+) and Glue Spark is too slow or too expensive, EMR runs Spark, Hive, Hadoop, Presto, Flink, Trino on a cluster you control.
 
@@ -225,7 +225,7 @@ When data is genuinely big (TBs+) and Glue Spark is too slow or too expensive, E
 |-------|--------|
 | **EMR cluster types** | EC2-backed (most control); EMR on EKS (run Spark on existing Kubernetes); EMR Serverless (no cluster mgmt; scales to zero) |
 | **Spark MLlib** | Distributed ML algos (logistic regression, random forest, ALS for recommendations, K-Means) on top of Spark |
-| **Hive** | SQL on HDFS / S3 — old but still common |
+| **Hive** | SQL on HDFS / S3, old but still common |
 | **Presto / Trino** | Interactive SQL on S3 (similar to Athena but self-managed) |
 | **Notebooks** | EMR Studio / EMR Notebooks; integrates with SageMaker |
 
@@ -235,7 +235,7 @@ When data is genuinely big (TBs+) and Glue Spark is too slow or too expensive, E
 
 ---
 
-## 🔍 Amazon Athena — Serverless SQL On S3
+## 🔍 Amazon Athena, Serverless SQL On S3
 
 Athena is the *first* place a data scientist queries data on AWS. Pay per TB scanned. Backed by Glue Data Catalogue.
 
@@ -251,7 +251,7 @@ Athena is the *first* place a data scientist queries data on AWS. Pay per TB sca
 | **CTAS (Create Table As Select)** | Materialise a clean Parquet copy from raw data |
 | **Athena Federated Query** | Query DynamoDB / RDS / Redshift / HBase via connectors |
 
-🎯 **Exam pattern.** *"ML team Athena bill is $40K/month — most queries hit one partition."* → Convert raw JSON to **Parquet**, **partition by event_date**, enforce **column selection**, use **workgroup data-scan limits**.
+🎯 **Exam pattern.** *"ML team Athena bill is $40K/month, most queries hit one partition."* → Convert raw JSON to **Parquet**, **partition by event_date**, enforce **column selection**, use **workgroup data-scan limits**.
 
 🎯 **Athena vs Redshift Spectrum vs Glue ETL.**
 - **Athena** = ad-hoc SQL, serverless, per-TB billing
@@ -260,9 +260,9 @@ Athena is the *first* place a data scientist queries data on AWS. Pay per TB sca
 
 ---
 
-## 🏞️ AWS Lake Formation — Data Lake Governance
+## 🏞️ AWS Lake Formation, Data Lake Governance
 
-If the question mentions "**centralised access control**", "**fine-grained column- or row-level permissions**", "**cross-account data sharing**", or "**data lake governance**" — the answer is almost certainly Lake Formation.
+If the question mentions "**centralised access control**", "**fine-grained column- or row-level permissions**", "**cross-account data sharing**", or "**data lake governance**", the answer is almost certainly Lake Formation.
 
 | Feature | Why ML teams care |
 |---------|-------------------|
@@ -278,7 +278,7 @@ If the question mentions "**centralised access control**", "**fine-grained colum
 
 ---
 
-## 📂 File Formats — The 10-Minute Mastery
+## 📂 File Formats, The 10-Minute Mastery
 
 The exam will ask "**which format is BEST for ML training on S3?**" Memorise this table.
 
@@ -287,7 +287,7 @@ The exam will ask "**which format is BEST for ML training on S3?**" Memorise thi
 | **CSV** | Text | Optional (gzip) | No | Splittable if uncompressed | None | Human-readable; small data |
 | **JSON / JSONL** | Text | Optional | No | JSONL splittable | None (or loose) | API payloads; semi-structured |
 | **Avro** | Binary row | Yes | No | Yes | Yes (schema embedded) | Streaming Kafka; row reads |
-| **Parquet** | Binary column | Yes (Snappy default) | **Yes** | Yes | Yes (in footer) | **Default for ML on S3** — fast SQL, small reads |
+| **Parquet** | Binary column | Yes (Snappy default) | **Yes** | Yes | Yes (in footer) | **Default for ML on S3**, fast SQL, small reads |
 | **ORC** | Binary column | Yes | Yes | Yes | Yes | Hive ecosystem; similar to Parquet |
 | **TFRecord** | Binary | Yes | No | Yes | Protobuf | TensorFlow training pipelines |
 | **RecordIO-Protobuf** | Binary | Yes | No | Yes | Protobuf | **SageMaker built-in algos** prefer this for pipe mode |
@@ -297,7 +297,7 @@ The exam will ask "**which format is BEST for ML training on S3?**" Memorise thi
 
 🎯 **Exam pattern.** *"Use SageMaker pipe mode for streaming training data from S3."* → **RecordIO-protobuf** for built-in algorithms is the canonical format.
 
-🚨 **Trap.** Gzip is **not splittable** at the file level — a single 10 GB gzip file = single Spark task. Use Snappy + Parquet, or split before gzipping.
+🚨 **Trap.** Gzip is **not splittable** at the file level, a single 10 GB gzip file = single Spark task. Use Snappy + Parquet, or split before gzipping.
 
 ---
 
@@ -305,7 +305,7 @@ The exam will ask "**which format is BEST for ML training on S3?**" Memorise thi
 
 | Service | What it does | When to use for ML |
 |---------|--------------|--------------------|
-| **AWS DMS** | Database Migration Service — full + CDC replication | Replicate on-prem SQL / Oracle / Mongo / Postgres into S3 or RDS for training |
+| **AWS DMS** | Database Migration Service, full + CDC replication | Replicate on-prem SQL / Oracle / Mongo / Postgres into S3 or RDS for training |
 | **AWS DataSync** | Online filesystem-to-S3 sync (NFS, SMB, HDFS, etc.) | Move on-prem NAS image archives into S3 |
 | **AWS Snowball / Snowball Edge** | Physical device shipped to your DC | Petabyte-scale offline transfer |
 | **AWS Storage Gateway (File Gateway)** | NFS / SMB mount that transparently writes to S3 | Hybrid: on-prem apps think they're on NAS; data lands in S3 |
@@ -320,7 +320,7 @@ The exam will ask "**which format is BEST for ML training on S3?**" Memorise thi
 
 ---
 
-## 🧱 Putting It Together — A Reference ML Data Pipeline
+## 🧱 Putting It Together, A Reference ML Data Pipeline
 
 This is the architecture you should be able to sketch in 60 seconds.
 
@@ -367,9 +367,9 @@ This is the architecture you should be able to sketch in 60 seconds.
 
 ---
 
-## 📖 Case Study — Netflix's Maestro Data Platform
+## 📖 Case Study, Netflix's Maestro Data Platform
 
-**Situation.** Netflix produces ~1 PB of new event data per day from playback events, A/B tests, recommendation logs, and ML feature snapshots. Their ML training stack (for ranking, recommendation, autoencoder-based personalisation) needs every byte to be **queryable, versioned, and reproducible** — a 5-month-old model training run must be re-creatable byte-for-byte.
+**Situation.** Netflix produces ~1 PB of new event data per day from playback events, A/B tests, recommendation logs, and ML feature snapshots. Their ML training stack (for ranking, recommendation, autoencoder-based personalisation) needs every byte to be **queryable, versioned, and reproducible**, a 5-month-old model training run must be re-creatable byte-for-byte.
 
 **Architecture (publicly described in re:Invent 2022 / Netflix Tech Blog).**
 - **Ingest:** ~100K events/s into **Apache Kafka** → mirrored to **AWS MSK** for cloud workloads
@@ -385,7 +385,7 @@ This is the architecture you should be able to sketch in 60 seconds.
 **Lesson for the exam.** Netflix's stack uses many AWS-native equivalents you will be tested on: **MSK = Kinesis or Kafka**, **Iceberg = AWS-supported open format on S3**, **EMR = Spark**, **Flink = Kinesis Managed Apache Flink**. Translate Netflix's pieces to MLS-C01 vocabulary and you have your reference data-engineering architecture.
 
 **Discussion (Socratic).**
-- Q1. Iceberg gives **ACID transactions** on S3 — schema evolution, time travel, partition evolution. What MLS-C01 problem does this solve that plain Parquet does not?
+- Q1. Iceberg gives **ACID transactions** on S3, schema evolution, time travel, partition evolution. What MLS-C01 problem does this solve that plain Parquet does not?
 - Q2. Netflix re-trains ranking models *daily*. What is the cost vs accuracy trade-off? At what frequency does drift-driven retraining become wasteful?
 - Q3. They built a **proprietary feature store**. Today, SageMaker Feature Store would fit the bill. What features of Feature Store are most valuable, and which Netflix-internal capabilities does it still lack?
 
@@ -425,13 +425,13 @@ This is the architecture you should be able to sketch in 60 seconds.
 
 | Term | Definition |
 |------|------------|
-| **Object store** | Key-value blob storage (S3) — not a filesystem |
+| **Object store** | Key-value blob storage (S3), not a filesystem |
 | **Lifecycle policy** | S3 rule that auto-transitions objects between classes / expires them |
 | **Data catalogue** | Metadata store mapping table names to S3 locations + schemas (Glue) |
 | **Crawler** | Process that scans data and populates the catalogue |
 | **ETL** | Extract, Transform, Load |
-| **ELT** | Extract, Load, Transform — modern data-lake pattern (load raw → transform in place) |
-| **CDC** | Change Data Capture — stream only the rows that changed |
+| **ELT** | Extract, Load, Transform, modern data-lake pattern (load raw → transform in place) |
+| **CDC** | Change Data Capture, stream only the rows that changed |
 | **Partition projection** | Athena feature that computes partitions from key names without crawler |
 | **Columnar format** | File format where each column is stored together (Parquet, ORC) |
 | **Splittable file** | File a distributed reader can chunk in parallel |
@@ -447,21 +447,21 @@ This is the architecture you should be able to sketch in 60 seconds.
 
 ---
 
-## 💬 Discussion — Socratic Prompts (15 min reflection)
+## 💬 Discussion, Socratic Prompts (15 min reflection)
 
 1. **The cost of pretty data.** A common pattern is to land raw JSON, then transform to Parquet, then aggregate into features. Each hop costs storage AND compute. For a 50-engineer ML team, where would you draw the line between raw retention (forever?) vs aggressive curation?
-2. **Glue vs EMR — when do you graduate?** Glue is serverless and easy; EMR gives more control. Argue both sides for a team that currently runs 12 Glue jobs costing $8K/month.
+2. **Glue vs EMR, when do you graduate?** Glue is serverless and easy; EMR gives more control. Argue both sides for a team that currently runs 12 Glue jobs costing $8K/month.
 3. **The Lake Formation adoption tax.** LF is technically correct for governance, but requires every team to migrate from IAM-based to LF-based grants. At what organisation size does LF stop being optional?
 4. **Streaming vs batch for ML features.** Capital One needs sub-100ms feature lookups for fraud, so a Feature Store is mandatory. A B2B SaaS retraining nightly might be fine with batch CSV. What is the trade-off, and how do you decide?
-5. **The "schema-on-read" gamble.** S3 + Glue Crawler is "schema-on-read" — you can land anything and figure out structure later. The alternative is "schema-on-write" (enforce schema at ingest with Schema Registry). When does laziness backfire?
+5. **The "schema-on-read" gamble.** S3 + Glue Crawler is "schema-on-read", you can land anything and figure out structure later. The alternative is "schema-on-write" (enforce schema at ingest with Schema Registry). When does laziness backfire?
 
 ---
 
 ## ➡️ Where This Leads
 
 > **Where this leads.**
-> - **Inside this course:** Module 03 (EDA / Feature Engineering) uses everything in this module — clean curated S3 data, queried via Athena or pulled into Data Wrangler.
-> - **Cross-course:** `04-AWS-Solutions-Architect-Associate` Module 5 (S3) and Module 7 (Decoupling / Kinesis) are essentially the SAA version of this material — same services, less ML focus.
+> - **Inside this course:** Module 03 (EDA / Feature Engineering) uses everything in this module, clean curated S3 data, queried via Athena or pulled into Data Wrangler.
+> - **Cross-course:** `04-AWS-Solutions-Architect-Associate` Module 5 (S3) and Module 7 (Decoupling / Kinesis) are essentially the SAA version of this material, same services, less ML focus.
 > - **Practice:** Practice Exam 1 has 6 questions, Practice Exam 2 has 4 questions, and the Final Mock Exam has 9 questions directly drawn from this module's material.
 > - **Real world:** Build a tiny pipeline in your own AWS account: drop a CSV in S3 → Glue Crawler → query in Athena → SageMaker Data Wrangler. Free Tier covers most of it.
 
@@ -492,30 +492,30 @@ You now know:
 ## 📚 Further Sources (This Module)
 
 **AWS official**
-- 📖 **AWS Glue Developer Guide** — `docs.aws.amazon.com/glue/`
-- 📖 **Amazon Kinesis docs** — `docs.aws.amazon.com/kinesis/`
-- 📖 **Amazon S3 Best Practices** — `docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html`
-- 📖 **AWS Big Data Blog** — `aws.amazon.com/blogs/big-data/`
-- 📖 **AWS Lake Formation User Guide** — `docs.aws.amazon.com/lake-formation/`
+- 📖 **AWS Glue Developer Guide**, `docs.aws.amazon.com/glue/`
+- 📖 **Amazon Kinesis docs**, `docs.aws.amazon.com/kinesis/`
+- 📖 **Amazon S3 Best Practices**, `docs.aws.amazon.com/AmazonS3/latest/userguide/optimizing-performance.html`
+- 📖 **AWS Big Data Blog**, `aws.amazon.com/blogs/big-data/`
+- 📖 **AWS Lake Formation User Guide**, `docs.aws.amazon.com/lake-formation/`
 
 **re:Invent talks**
-- 🎤 ANT337 — *Best practices for building data lakes on AWS*
-- 🎤 ANT309 — *Real-time data processing with Kinesis*
-- 🎤 AIM319 — *Capital One real-time fraud detection on SageMaker* (data side)
+- 🎤 ANT337, *Best practices for building data lakes on AWS*
+- 🎤 ANT309, *Real-time data processing with Kinesis*
+- 🎤 AIM319, *Capital One real-time fraud detection on SageMaker* (data side)
 
 **Textbooks**
-- 📖 **Kleppmann, Martin (2017).** *Designing Data-Intensive Applications.* O'Reilly — chapters 3 (storage engines), 10 (batch), 11 (streaming) are the academic spine
-- 📖 **Reis & Housley (2022).** *Fundamentals of Data Engineering.* O'Reilly — modern DE canon
-- 📖 **Inmon, Strauss, Neushloss (2008).** *DW 2.0: The Architecture for the Next Generation of Data Warehousing.* Morgan Kaufmann — historical context for the lake-vs-warehouse debate
+- 📖 **Kleppmann, Martin (2017).** *Designing Data-Intensive Applications.* O'Reilly, chapters 3 (storage engines), 10 (batch), 11 (streaming) are the academic spine
+- 📖 **Reis & Housley (2022).** *Fundamentals of Data Engineering.* O'Reilly, modern DE canon
+- 📖 **Inmon, Strauss, Neushloss (2008).** *DW 2.0: The Architecture for the Next Generation of Data Warehousing.* Morgan Kaufmann, historical context for the lake-vs-warehouse debate
 
 **Industry**
-- 📰 **Netflix Tech Blog** — *Maestro*, *Iceberg*, *Genie* posts
-- 📰 **Airbnb Engineering Blog** — *Building Airflow*, *Minerva* metrics platform
-- 📰 **Maxime Beauchemin's blog** — Airflow creator's essays on data engineering
+- 📰 **Netflix Tech Blog**, *Maestro*, *Iceberg*, *Genie* posts
+- 📰 **Airbnb Engineering Blog**, *Building Airflow*, *Minerva* metrics platform
+- 📰 **Maxime Beauchemin's blog**, Airflow creator's essays on data engineering
 
 ---
 
-## 🛠️ Appendix A — A Working Athena + Parquet Setup For ML
+## 🛠️ Appendix A, A Working Athena + Parquet Setup For ML
 
 ```sql
 -- 1. Create a Parquet, partitioned, projected table over your curated zone
@@ -561,14 +561,14 @@ LIMIT 100;
 - `PARTITIONED BY` (partition pruning)
 - `projection.enabled='true'` (no crawler latency)
 - `WHERE year = ... AND month BETWEEN ...` (only relevant partitions scanned)
-- `SELECT customer_id, SUM(...)` (column projection — only the needed columns read)
+- `SELECT customer_id, SUM(...)` (column projection, only the needed columns read)
 
 ---
 
-## 🛠️ Appendix B — Glue Job Bookmarks Sketch
+## 🛠️ Appendix B, Glue Job Bookmarks Sketch
 
 ```python
-# Inside a Glue ETL job — process only new files since last run
+# Inside a Glue ETL job, process only new files since last run
 import sys
 from awsglue.utils import getResolvedOptions
 from awsglue.context import GlueContext
@@ -609,7 +609,7 @@ job.commit()   # advances the bookmark
 
 ---
 
-## 🛠️ Appendix C — Kinesis Firehose To Parquet — IaC Snippet
+## 🛠️ Appendix C Kinesis Firehose To Parquet IaC Snippet
 
 ```yaml
 # CloudFormation (excerpt)
@@ -646,6 +646,6 @@ ClickstreamFirehose:
 
 🎯 **Exam patterns.**
 - `DataFormatConversionConfiguration` is the JSON→Parquet feature
-- `SchemaConfiguration` points at a Glue table — that's how Firehose knows the Parquet schema
-- `BufferingHints` minimum is 60 seconds — Firehose is *near* real-time, never sub-second
+- `SchemaConfiguration` points at a Glue table, that's how Firehose knows the Parquet schema
+- `BufferingHints` minimum is 60 seconds, Firehose is *near* real-time, never sub-second
 - `KMSEncryptionConfig` keeps the landed Parquet KMS-encrypted automatically

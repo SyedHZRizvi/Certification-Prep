@@ -75,7 +75,7 @@ D. Rationing and shortage gaming
 A. RAM is the winner; battery life is the qualifier
 B. RAM is the qualifier; battery life is the winner
 C. Both are winners
-D. Neither — these are operational metrics
+D. Neither, these are operational metrics
 
 ---
 
@@ -221,7 +221,7 @@ D. Always made-to-stock
 The three flows are the bedrock definition. Don't confuse this with three-letter acronyms or actor lists.
 
 ### Q2: **C. 6**
-Plan, Source, Make, Deliver, Return, **Enable**. Older texts say 5 — they're outdated. Enable was added in SCOR 11.
+Plan, Source, Make, Deliver, Return, **Enable**. Older texts say 5, they're outdated. Enable was added in SCOR 11.
 🧠 Memory: "P-S-M-D-R-E."
 
 ### Q3: **B. Source**
@@ -249,7 +249,7 @@ Qualifiers get you considered; winners earn the sale. RAM is the minimum bar; ba
 Cost, quality, delivery, flexibility, and innovation are the five priorities. Flexibility covers volume, mix, and new-product agility.
 
 ### Q11: **D. Engineer-to-Order**
-A one-of-a-kind dam is designed per project — the CODP sits at the design phase. Longest customer wait, lowest inventory.
+A one-of-a-kind dam is designed per project, the CODP sits at the design phase. Longest customer wait, lowest inventory.
 
 ### Q12: **C. Spans multiple firms**
 Value chain (Porter) is internal to one firm. Supply chain spans many firms.

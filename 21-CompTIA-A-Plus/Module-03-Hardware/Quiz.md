@@ -36,7 +36,7 @@ D. Mirroring
 A. A1 + A2
 B. A2 + B2 (matched-color pair per the manual)
 C. A1 + B2
-D. Any combination — dual-channel is automatic regardless
+D. Any combination, dual-channel is automatic regardless
 
 ---
 
@@ -74,7 +74,7 @@ D. SATA drive
 
 ### Q9. A user reports random reboots only under heavy GPU+CPU load. The MOST likely first suspect: *(Analyze)*
 A. RAM is wrong color
-B. The PSU is undersized or failing — sagging rails under load
+B. The PSU is undersized or failing, sagging rails under load
 C. The DNS server failed
 D. The SSD needs defragmenting
 
@@ -137,7 +137,7 @@ D. UEFI requires Linux
 ---
 
 ### Q17. A PC has 16 GB of DDR4-3200 RAM. The user wants to upgrade to 32 GB. They buy a single 16 GB DDR4-3200 stick. What's the risk? *(Analyze)*
-A. None — DDR4 is always compatible
+A. None, DDR4 is always compatible
 B. Mixing kits can drop dual-channel benefits or cause instability; QVL-matched kits are preferred
 C. The CPU will not POST
 D. The motherboard will catch fire
@@ -170,7 +170,7 @@ D. Smartphones
 
 ### Q21. A user reports a constant beep at boot on a desktop. The MOST common cause: *(Apply)*
 A. CPU failure
-B. RAM problem — reseat or test
+B. RAM problem, reseat or test
 C. The hard drive needs defragmenting
 D. Windows update
 
@@ -193,14 +193,14 @@ D. iGPUs have more VRAM
 ---
 
 ### Q24. A PC requires a CPU+GPU swap. The user mentions the cooler hasn't been cleaned in 5 years. As you replace the CPU, you should: *(Apply)*
-A. Skip thermal paste — it's optional
+A. Skip thermal paste, it's optional
 B. Clean the IHS and cooler with isopropyl alcohol, then apply fresh thermal paste
 C. Apply 1 cm thick paste blob
 D. Boot without a cooler to test
 
 ---
 
-### Q25. NAS vs SAN — which is correct? *(Analyze)*
+### Q25. NAS vs SAN, which is correct? *(Analyze)*
 A. NAS is block-level over fiber channel; SAN is file-level over Ethernet
 B. NAS is file-level (SMB/NFS) over Ethernet; SAN is block-level (iSCSI/FC) and looks like a local disk
 C. They are identical
@@ -252,7 +252,7 @@ Standard ATX. mATX is 9.6 sq. ITX is 6.7 sq. E-ATX is the largest.
 SATA III 6 Gbps is the cap. SATA SSDs max around 550 MB/s sequential.
 
 ### Q12: **B. Server or workstation**
-ECC corrects single-bit errors — critical for long uptime + data integrity. Consumer use rarely justifies the cost.
+ECC corrects single-bit errors, critical for long uptime + data integrity. Consumer use rarely justifies the cost.
 
 ### Q13: **C. M-key**
 M-key supports PCIe ×4 NVMe. B-key tops out at ×2 (and may be SATA). E-key is WiFi.
@@ -267,18 +267,18 @@ RAID 10 = mirror of stripes. Minimum is 4 disks, and the count must be even.
 Legacy BIOS is 16-bit real mode with MBR (2 TB cap). UEFI is the modern replacement.
 
 ### Q17: **B. Mixing kits can break dual-channel benefits or cause instability**
-QVL-matched kits (sold as a kit) are stability-tested together. Mixing risks subtle issues — XMP/EXPO may fail to apply, capacity may run at single-channel, etc.
+QVL-matched kits (sold as a kit) are stability-tested together. Mixing risks subtle issues, XMP/EXPO may fail to apply, capacity may run at single-channel, etc.
 
 ### Q18: **B. Modern high-end GPUs**
 16-pin 12VHPWR (now revised to 12V-2x6) delivers up to 600W to RTX 30/40/50 series cards.
 
 ### Q19: **B. PCIe**
-NVMe (Non-Volatile Memory Express) is a protocol on PCIe lanes — typically delivered via M.2 or U.2.
+NVMe (Non-Volatile Memory Express) is a protocol on PCIe lanes, typically delivered via M.2 or U.2.
 
 ### Q20: **B. Laptops, mini-PCs, NUCs**
 SODIMM (Small Outline DIMM) is the laptop form factor. Desktops use full DIMM.
 
-### Q21: **B. RAM problem — reseat or test**
+### Q21: **B. RAM problem, reseat or test**
 Continuous beeps almost universally indicate a RAM issue. Reseat, then test single sticks.
 
 ### Q22: **C. 16 TB**
@@ -312,12 +312,12 @@ Need to survive 2 failures → RAID 6 (dual parity). RAID 5 only survives 1 fail
 - Sockets: LGA 1700/1851, AM4/AM5
 - DDR4 vs DDR5 differences
 - ATX vs mATX vs ITX dimensions
-- RAID 0/1/5/6/10 — min disks, fault tolerance, capacity formula
+- RAID 0/1/5/6/10, min disks, fault tolerance, capacity formula
 - 80 PLUS efficiency tiers
-- 24-pin / 8-pin EPS / 6+2 PCIe / 12VHPWR — what each powers
+- 24-pin / 8-pin EPS / 6+2 PCIe / 12VHPWR, what each powers
 - M.2 keying: B / M / B+M / A+E
 - Win11 trifecta: TPM 2.0 + UEFI + Secure Boot
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Virtualization & Cloud](../Module-04-Virtualization-Cloud/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Virtualization & Cloud](../Module-04-Virtualization-Cloud/Reading.md)

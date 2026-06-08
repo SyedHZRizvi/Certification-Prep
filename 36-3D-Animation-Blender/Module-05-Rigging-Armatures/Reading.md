@@ -7,7 +7,7 @@ title: "Module 5: Rigging & Armatures"
 
 ## The Puppet's Wire
 
-Before digital rigs, stop-motion animators used wire armatures — internal skeletons of aluminum wire bent into the character's pose one frame at a time. Ray Harryhausen's skeletons in *Jason and the Argonauts* (1963) were wire armatures driven by hand, one 24th-of-a-second at a time. Blender's armature system is a direct digital descendant: a hierarchy of bones, each parented to the one above, that drives the surface of the character.
+Before digital rigs, stop-motion animators used wire armatures, internal skeletons of aluminum wire bent into the character's pose one frame at a time. Ray Harryhausen's skeletons in *Jason and the Argonauts* (1963) were wire armatures driven by hand, one 24th-of-a-second at a time. Blender's armature system is a direct digital descendant: a hierarchy of bones, each parented to the one above, that drives the surface of the character.
 
 A rig is a control system, not just a skeleton. A good rig hides complexity from the animator. The animator should never need to think about which joint angle prevents gimbal lock or which axis a bone's twist tracks. All of that complexity lives in the rig, exposed only as clean, intuitive controls. This is the art of rigging.
 
@@ -98,12 +98,12 @@ Every animator faces this choice at every limb:
 | Hand grabbing an object | IK | Hand locks to object position |
 | Arm waving freely in air | FK | Natural arcing motion easier in FK |
 | Tail follow-through | FK | Follow-through is sequential bone rotation |
-| Spine — blocking phase | FK | Cleaner control over each spine segment |
-| Spine — secondary motion | IK | Hips drive belly/chest naturally with IK |
+| Spine, blocking phase | FK | Cleaner control over each spine segment |
+| Spine, secondary motion | IK | Hips drive belly/chest naturally with IK |
 | Mechanical arm (industrial robot) | IK | End effector control is the natural description |
-| Hero facial expression (jaw) | Neither — shape key | Bone rotation + driver = clean animator UX |
+| Hero facial expression (jaw) | Neither, shape key | Bone rotation + driver = clean animator UX |
 
-> ⚠️ **Gotcha — IK/FK Popping on Switch:** Switching between IK and FK mid-animation causes the character to "pop" — the pose jumps when the blend value crosses 0.5. The correct technique is to **snap IK to FK** (or vice versa) before switching — Rigify includes a "Snap IK→FK" button in the rig UI that aligns bone positions before the switch. Always snap before switching; never switch without snapping.
+> ⚠️ **Gotcha IK/FK Popping on Switch:** Switching between IK and FK mid-animation causes the character to "pop" the pose jumps when the blend value crosses 0.5. The correct technique is to **snap IK to FK** (or vice versa) before switching, Rigify includes a "Snap IK→FK" button in the rig UI that aligns bone positions before the switch. Always snap before switching; never switch without snapping.
 
 ---
 
@@ -145,7 +145,7 @@ Beyond IK constraints, Blender's bone constraint system drives sophisticated rig
 2. Add Hook modifiers to the curve's control points, each hooked to a control bone
 3. In Pose Mode, select all bones in the chain → Bone Constraints → Spline IK → set Curve to the Bezier curve
 4. Adjust **Chain Length** to match the bone count in the tail
-5. Animators now move the hook control bones — the curve (and the chain) follows
+5. Animators now move the hook control bones, the curve (and the chain) follows
 
 ---
 
@@ -175,7 +175,7 @@ Beyond IK constraints, Blender's bone constraint system drives sophisticated rig
 
 ## 5.6b The NLA Editor for Complex Rigs
 
-The **Non-Linear Animation (NLA) Editor** is not just for walk cycles — it is a powerful tool for managing complex character rigs with multiple layered animations. This is where rigging and animation intersect.
+The **Non-Linear Animation (NLA) Editor** is not just for walk cycles, it is a powerful tool for managing complex character rigs with multiple layered animations. This is where rigging and animation intersect.
 
 **NLA for a complex scene (e.g., a character simultaneously breathing and talking):**
 1. Create a "Breathing" Action: subtle chest rise/fall cycle at 2 seconds per breath
@@ -183,7 +183,7 @@ The **Non-Linear Animation (NLA) Editor** is not just for walk cycles — it is 
 3. Push both down to NLA strips
 4. Breathing strip: set to Repeat for the full shot duration
 5. Lip Sync strip: placed at the correct frame, at full influence (1.0)
-6. In NLA, the two actions **blend together** additively — the character breathes AND lip-syncs simultaneously
+6. In NLA, the two actions **blend together** additively, the character breathes AND lip-syncs simultaneously
 
 **NLA strip blend types:**
 
@@ -206,7 +206,7 @@ The **Non-Linear Animation (NLA) Editor** is not just for walk cycles — it is 
 
 ## 5.7 Corrective Shape Keys
 
-**Shape keys** are pre-sculpted mesh deformations that can be blended in based on bone rotation. **Corrective shape keys** fix deformation problems — the "candy wrapper twist" at the forearm, the "skin bag" at the armpit, the collapsing chest when the arm is raised.
+**Shape keys** are pre-sculpted mesh deformations that can be blended in based on bone rotation. **Corrective shape keys** fix deformation problems, the "candy wrapper twist" at the forearm, the "skin bag" at the armpit, the collapsing chest when the arm is raised.
 
 **Creating a corrective shape key:**
 1. Pose the character in the problem position (e.g., arm at 90°)
@@ -231,7 +231,7 @@ The **Non-Linear Animation (NLA) Editor** is not just for walk cycles — it is 
 | **Spline IK (curves)** | 30 min | Good | Excellent for tails/snakes | Non-humanoid appendages |
 | **Shape key driven (no bones)** | Variable | Limited | Very easy for morph targets | Facial animation, soft objects |
 
-> ⚠️ **Gotcha — Rigify Scale:** Rigify's Human Meta-Rig is placed at world scale (default size). If your character mesh is at a different scale (e.g., it was modeled at 10× size without Apply Scale), the generated rig will be at the wrong scale relative to the mesh. Always **Apply Scale** (Ctrl+A → Scale) to both the mesh and the Meta-Rig before generating the rig. Mismatched scale causes the Armature modifier to deform the mesh incorrectly.
+> ⚠️ **Gotcha, Rigify Scale:** Rigify's Human Meta-Rig is placed at world scale (default size). If your character mesh is at a different scale (e.g., it was modeled at 10× size without Apply Scale), the generated rig will be at the wrong scale relative to the mesh. Always **Apply Scale** (Ctrl+A → Scale) to both the mesh and the Meta-Rig before generating the rig. Mismatched scale causes the Armature modifier to deform the mesh incorrectly.
 
 ---
 
@@ -244,7 +244,7 @@ The *Sprite Fright* characters used custom rigs built from Rigify as a base. The
 - IK/FK sliders were prominently placed in the rig UI for animator convenience
 - Corrective shape keys were added at the shoulder, hip, and knee for all principal characters
 
-For indie productions (1–3 person teams), **Rigify produces a studio-quality rig in under 30 minutes** once the mesh is properly prepared — compared to building a custom rig from scratch (8–40 hours). The trade-off is that Rigify rigs are heavy (hundreds of bones) and may need optimization for game-engine export.
+For indie productions (1–3 person teams), **Rigify produces a studio-quality rig in under 30 minutes** once the mesh is properly prepared, compared to building a custom rig from scratch (8–40 hours). The trade-off is that Rigify rigs are heavy (hundreds of bones) and may need optimization for game-engine export.
 
 ---
 
@@ -264,7 +264,7 @@ For indie productions (1–3 person teams), **Rigify produces a studio-quality r
 
 ## 5.9b Face Rigging: Beyond Shape Keys
 
-For complex facial performances, production rigs combine shape keys AND bones — each approach for its strengths:
+For complex facial performances, production rigs combine shape keys AND bones, each approach for its strengths:
 
 **Bone-driven facial regions (structure):**
 - Jaw bone → drives Mouth.Open shape key AND moves the jaw geometry
@@ -272,9 +272,9 @@ For complex facial performances, production rigs combine shape keys AND bones �
 - Brow bones (1 per side) → raise/lower driven by animator; shape key handles eyelid follow
 
 **Shape key-driven facial regions (fine detail):**
-- Lip corners, lip compression, lip stretch — shape keys only; no bones needed
-- Eyelid blink — shape key driven by bone, but eyelid subtleties (flutter, squint) are additional shape keys on top
-- Nostril flare — shape key; too subtle for bone-level control
+- Lip corners, lip compression, lip stretch, shape keys only; no bones needed
+- Eyelid blink, shape key driven by bone, but eyelid subtleties (flutter, squint) are additional shape keys on top
+- Nostril flare, shape key; too subtle for bone-level control
 
 **Blend shape performance retargeting:** In productions that use face capture (mocap cameras on an actor's face), the captured data is translated into Blender shape key values via a Python script. The FACS Action Units from the capture device map directly to the FACS-aligned shape keys in the Blender rig. This workflow is used for game characters and increasingly for short film productions using Blender.
 
@@ -287,7 +287,7 @@ For complex facial performances, production rigs combine shape keys AND bones �
 | Cheeks | Puff shape key | None |
 | Nostrils | Nostril shape key | None |
 
-> ⚠️ **Gotcha — Applying the Armature Modifier Destroys Rigs:** The Armature modifier must NEVER be applied on a character that is still being animated. Applying it bakes the current posed position into the mesh and severs the rig connection. The only legitimate time to apply the Armature modifier is for game export (where you need a baked T-pose or specific pose). In animation production: leave the Armature modifier unapplied forever.
+> ⚠️ **Gotcha, Applying the Armature Modifier Destroys Rigs:** The Armature modifier must NEVER be applied on a character that is still being animated. Applying it bakes the current posed position into the mesh and severs the rig connection. The only legitimate time to apply the Armature modifier is for game export (where you need a baked T-pose or specific pose). In animation production: leave the Armature modifier unapplied forever.
 
 ---
 
@@ -324,8 +324,8 @@ Object (Armature type)
 ```
 
 **Key distinction: Bones vs. Pose Bones:**
-- `bpy.data.armatures["MyRig"].bones["UpperArm.L"]` — the static geometry definition (head/tail position in rest pose, roll, parent)
-- `bpy.context.active_object.pose.bones["UpperArm.L"]` — the animated state (current location, rotation, constraints, drivers)
+- `bpy.data.armatures["MyRig"].bones["UpperArm.L"]`, the static geometry definition (head/tail position in rest pose, roll, parent)
+- `bpy.context.active_object.pose.bones["UpperArm.L"]`, the animated state (current location, rotation, constraints, drivers)
 - Animators work with Pose Bones; riggers work with both
 
 **Practical Python for rig automation:**
@@ -355,7 +355,7 @@ Production rigs expose **custom properties** so animators can control complex be
 **Adding a custom property to a bone:**
 1. Pose Mode → select a control bone (e.g., the hip master bone)
 2. Object Properties → Custom Properties → "+" to add
-3. Name: "IK_FK_Arm_L" — Type: Float — Min: 0.0 — Max: 1.0
+3. Name: "IK_FK_Arm_L" Type: Float Min: 0.0, Max: 1.0
 4. Right-click the new property → Copy as New Driver → paste onto the IK Constraint's Influence socket
 
 **Driving constraint influence from custom properties:**
@@ -371,19 +371,19 @@ Production rigs expose **custom properties** so animators can control complex be
 
 ## 📚 Next Steps
 
-Proceed to [Module 6: Weight Painting & Skinning](../Module-06-Weight-Painting-Skinning/Reading.md) — the rig exists, but the mesh still needs to learn which bones control which vertices.
+Proceed to [Module 6: Weight Painting & Skinning](../Module-06-Weight-Painting-Skinning/Reading.md), the rig exists, but the mesh still needs to learn which bones control which vertices.
 
 ---
 
 ## 📖 Further Reading
 
-- 📖 **CGCookie — "Introduction to Rigging in Blender"** (YouTube, see Videos.md)
-- 📖 **Blender Manual — Rigify Documentation** (docs.blender.org/manual/en/latest/addons/rigging/rigify/)
-- 📖 **Blender Institute — *Sprite Fright* rigging documentation** (blender.org/about/projects/)
-- 📖 **Derakhshani, Dariush (2020). *Introducing Character Animation with Blender.* Sybex** — chapters 6–8
+- 📖 **CGCookie, "Introduction to Rigging in Blender"** (YouTube, see Videos.md)
+- 📖 **Blender Manual, Rigify Documentation** (docs.blender.org/manual/en/latest/addons/rigging/rigify/)
+- 📖 **Blender Institute, *Sprite Fright* rigging documentation** (blender.org/about/projects/)
+- 📖 **Derakhshani, Dariush (2020). *Introducing Character Animation with Blender.* Sybex**, chapters 6–8
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

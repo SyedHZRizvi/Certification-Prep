@@ -1,12 +1,12 @@
 # Module 8: Reverse Logistics & Sustainability 🔄🌱
 
-> **Why this module matters:** This is the smallest domain by exam weight (~9%) but the easiest to fully master. It's also the fastest-growing area of logistics — circular economy, ESG reporting, and carbon-aware shipping are reshaping the field.
+> **Why this module matters:** This is the smallest domain by exam weight (~9%) but the easiest to fully master. It's also the fastest-growing area of logistics, circular economy, ESG reporting, and carbon-aware shipping are reshaping the field.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 4](../Module-04-Inventory-Distribution/Reading.md) inventory mechanics — returns are inventory in motion
-> - [Module 5](../Module-05-Warehouse-Operations/Reading.md) warehouse processes — returns centers are specialized warehouses
-> - [Module 7](../Module-07-Global-Logistics-Customs/Reading.md) FTZ + customs — returns of imported goods have special rules
-> - Basic emissions vocabulary (CO₂e, ton-km, kWh) — Module 8 deepens this
+> - [Module 4](../Module-04-Inventory-Distribution/Reading.md) inventory mechanics, returns are inventory in motion
+> - [Module 5](../Module-05-Warehouse-Operations/Reading.md) warehouse processes, returns centers are specialized warehouses
+> - [Module 7](../Module-07-Global-Logistics-Customs/Reading.md) FTZ + customs, returns of imported goods have special rules
+> - Basic emissions vocabulary (CO₂e, ton-km, kWh), Module 8 deepens this
 >
 > Cross-course: [CSCP Module 9 (Sustainability, Risk, CSR)](../../10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading.md) covers sustainability at the broader supply-chain level with deeper risk and CSR content.
 
@@ -20,16 +20,16 @@ What she doesn't see:
 
 - The return label costs the retailer $9 in parcel freight (paid by the retailer).
 - The DC opens the box, inspects, photographs, and grades the sneakers (15 minutes of labor: $7).
-- The sneakers go to a returns processing center for restocking — but they've been worn briefly, so they can't be sold as new. They're routed to a liquidator (3 weeks later, sold for $25).
+- The sneakers go to a returns processing center for restocking, but they've been worn briefly, so they can't be sold as new. They're routed to a liquidator (3 weeks later, sold for $25).
 - Total returned-shoe cost to the retailer: $9 freight + $7 inspection + $5 packaging + ($90 cost − $25 liquidation) = **~$86**. Almost the entire original sale, gone.
 
-Now multiply by 30% of all apparel orders being returned. **Returns are a logistics problem the same size as outbound** — and most companies treat them as an afterthought.
+Now multiply by 30% of all apparel orders being returned. **Returns are a logistics problem the same size as outbound**, and most companies treat them as an afterthought.
 
 This module covers reverse logistics, returns management, and the sustainability frameworks ASCM expects you to know.
 
 ---
 
-> **Citation.** The reverse-logistics definition used by ASCM derives from Rogers, Dale S. & Tibben-Lembke, Ronald S., *Going Backwards: Reverse Logistics Trends and Practices* (Reverse Logistics Executive Council, 1998 — the foundational academic study) and Stock, James R., *Reverse Logistics* (Council of Logistics Management, 1992). The closed-loop / circular economy framing draws from McDonough, William & Braungart, Michael, *Cradle to Cradle: Remaking the Way We Make Things* (North Point Press, 2002) and the Ellen MacArthur Foundation's *Towards the Circular Economy* (Vol. 1, 2012; Vol. 3, 2014). The triple-bottom-line framework was named in Elkington, John, *Cannibals with Forks: The Triple Bottom Line of 21st Century Business* (Capstone Publishing, 1997). Modern GHG accounting standards: WRI + WBCSD, *The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard* (Revised ed., World Resources Institute, 2004) and the *Corporate Value Chain (Scope 3) Standard* (WRI/WBCSD, 2011). Logistics-specific factors: Smart Freight Centre, *Global Logistics Emissions Council (GLEC) Framework v3.0* (Smart Freight Centre, 2023). Science-based targets: Science Based Targets initiative (SBTi), *Corporate Net-Zero Standard* (SBTi, 2021; updated 2023).
+> **Citation.** The reverse-logistics definition used by ASCM derives from Rogers, Dale S. & Tibben-Lembke, Ronald S., *Going Backwards: Reverse Logistics Trends and Practices* (Reverse Logistics Executive Council, 1998, the foundational academic study) and Stock, James R., *Reverse Logistics* (Council of Logistics Management, 1992). The closed-loop / circular economy framing draws from McDonough, William & Braungart, Michael, *Cradle to Cradle: Remaking the Way We Make Things* (North Point Press, 2002) and the Ellen MacArthur Foundation's *Towards the Circular Economy* (Vol. 1, 2012; Vol. 3, 2014). The triple-bottom-line framework was named in Elkington, John, *Cannibals with Forks: The Triple Bottom Line of 21st Century Business* (Capstone Publishing, 1997). Modern GHG accounting standards: WRI + WBCSD, *The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard* (Revised ed., World Resources Institute, 2004) and the *Corporate Value Chain (Scope 3) Standard* (WRI/WBCSD, 2011). Logistics-specific factors: Smart Freight Centre, *Global Logistics Emissions Council (GLEC) Framework v3.0* (Smart Freight Centre, 2023). Science-based targets: Science Based Targets initiative (SBTi), *Corporate Net-Zero Standard* (SBTi, 2021; updated 2023).
 
 ## 🔄 What is Reverse Logistics?
 
@@ -45,7 +45,7 @@ Reverse logistics is everything that flows **backward** through the supply chain
 
 CSCMP defines it as: *"The process of planning, implementing, and controlling the efficient, cost-effective flow of raw materials, in-process inventory, finished goods, and related information from the point of consumption to the point of origin for the purpose of recapturing value or proper disposal."*
 
-🎯 **Exam tip:** Reverse logistics is *value recapture* and *responsible disposal* — not just returns.
+🎯 **Exam tip:** Reverse logistics is *value recapture* and *responsible disposal*, not just returns.
 
 ---
 
@@ -90,7 +90,7 @@ Returned shipment arrives at the dedicated returns center. WMS check-in by RMA. 
 | **Hazardous disposal** | Regulated waste stream |
 | **Destroy** | Counterfeit, recalled, brand-protection |
 
-🎯 **Exam tip:** Gatekeeping decisions directly drive *value recovery rate* — % of original value recaptured.
+🎯 **Exam tip:** Gatekeeping decisions directly drive *value recovery rate*, % of original value recaptured.
 
 ### Step 4: Refurbish / Repackage
 
@@ -144,10 +144,10 @@ Traditional supply chain: linear (extract → make → use → dispose).
 **Closed-loop** = forward + reverse merged into a single managed system.
 
 **Examples:**
-- **Caterpillar Reman** — buyers return cores; CAT remanufactures at near-new quality, sold at lower price
-- **HP printer cartridges** — return spent cartridges via prepaid mailers; HP remanufactures
-- **Patagonia Worn Wear** — repair, resell, recycle old garments
-- **Apple GiveBack** — trade-in for credit; refurbish to "certified pre-owned" or recover materials
+- **Caterpillar Reman**, buyers return cores; CAT remanufactures at near-new quality, sold at lower price
+- **HP printer cartridges**, return spent cartridges via prepaid mailers; HP remanufactures
+- **Patagonia Worn Wear**, repair, resell, recycle old garments
+- **Apple GiveBack**, trade-in for credit; refurbish to "certified pre-owned" or recover materials
 
 🎯 **Exam tip:** Closed-loop reduces both raw-material cost and disposal cost.
 
@@ -166,7 +166,7 @@ Broader framework than closed-loop. The 5R hierarchy (and other variants):
 6. Dispose (last resort)
 ```
 
-🧠 **Memory hook:** "Refuse, Reduce, Reuse, Refurbish, Recycle, Recover, Dispose" — *the 7Rs*.
+🧠 **Memory hook:** "Refuse, Reduce, Reuse, Refurbish, Recycle, Recover, Dispose", *the 7Rs*.
 
 ### Refurbish vs Remanufacture vs Recycle
 
@@ -290,11 +290,11 @@ Mode factors (rough; GLEC):
 
 ### Sustainable Logistics Industry Initiatives
 
-- **Smart Freight Centre** — global logistics emissions
-- **Clean Cargo Working Group (CCWG)** — ocean carrier emissions data
-- **EPA SmartWay** — US carrier program
-- **Lean & Green** — European logistics CO₂ reduction
-- **Green Truck Partnership** — emissions reduction for trucking
+- **Smart Freight Centre**, global logistics emissions
+- **Clean Cargo Working Group (CCWG)**, ocean carrier emissions data
+- **EPA SmartWay**, US carrier program
+- **Lean & Green**, European logistics CO₂ reduction
+- **Green Truck Partnership**, emissions reduction for trucking
 
 ### Sustainability KPIs (CLTD-testable)
 
@@ -333,16 +333,16 @@ Drives both cost and emissions.
 
 ---
 
-## 📜 Case Study — DHL Resilience360 / NEXST Risk-Visibility Platform (2018–2024)
+## 📜 Case Study, DHL Resilience360 / NEXST Risk-Visibility Platform (2018–2024)
 
-**Situation.** Following the Fukushima earthquake (2011), the Thailand floods (2011), and the Tianjin port explosion (2015), global shippers realized their supply chains lacked real-time risk visibility. A volcanic eruption, a port strike, or a hurricane could disrupt deliveries for weeks before anyone in the logistics control tower knew. DHL Supply Chain, the world's largest contract logistics provider, developed an internal capability to monitor ~150 risk types (geopolitical, climate, labor, supply, regulatory) globally — and decided to commercialize it.
+**Situation.** Following the Fukushima earthquake (2011), the Thailand floods (2011), and the Tianjin port explosion (2015), global shippers realized their supply chains lacked real-time risk visibility. A volcanic eruption, a port strike, or a hurricane could disrupt deliveries for weeks before anyone in the logistics control tower knew. DHL Supply Chain, the world's largest contract logistics provider, developed an internal capability to monitor ~150 risk types (geopolitical, climate, labor, supply, regulatory) globally, and decided to commercialize it.
 
 **Decision.** In 2018 DHL launched **Resilience360** as a standalone subscription SaaS platform, sold to non-DHL shippers including Cisco, Daimler, GlaxoSmithKline, and Procter & Gamble. Key capabilities through 2024:
 
-- **Real-time risk monitoring** — feeds from 30,000+ public + private sources (news, weather, port data, government alerts) classified by AI/ML.
-- **Supplier mapping** — visibility of tier-1, tier-2, tier-3 suppliers' physical locations matched against risk events.
-- **Shipment tracking** — real-time location of in-transit ocean/air/road shipments, with ETA recomputation when disruptions occur.
-- **Scenario simulation** — "what if Port of Long Beach closes for 3 days?" — model the impact on specific SKUs and lanes.
+- **Real-time risk monitoring**, feeds from 30,000+ public + private sources (news, weather, port data, government alerts) classified by AI/ML.
+- **Supplier mapping**, visibility of tier-1, tier-2, tier-3 suppliers' physical locations matched against risk events.
+- **Shipment tracking**, real-time location of in-transit ocean/air/road shipments, with ETA recomputation when disruptions occur.
+- **Scenario simulation** "what if Port of Long Beach closes for 3 days?" model the impact on specific SKUs and lanes.
 - **2021:** Spun out as **Everstream Analytics** via partnership with private-equity firm Columbia Capital. DHL retained a stake.
 - **2022:** Everstream acquired **NEXST** (specialized in supply chain risk) and rolled it into the platform.
 - **2024:** Everstream Analytics partnered with several major TMS providers (project44, FourKites) for embedded risk visibility. Platform was tracking ~4M+ active shipments daily.
@@ -352,17 +352,17 @@ Drives both cost and emissions.
 - During the 2024 Red Sea Houthi attacks (see Module 6 case), Everstream-subscribing shippers received automated routing recommendations within hours, while non-subscribing shippers needed days of manual analysis.
 - During the 2024 Baltimore Francis Scott Key Bridge collapse (March 2024 cargo ship strike → bridge collapse → Port of Baltimore closure for ~3 months), Everstream subscribers had pre-modeled scenarios for Port of Baltimore disruptions and could shift to NY/NJ or Norfolk within hours.
 - Adoption: by Q4 2024, ~600+ major shippers globally subscribed to Everstream-class platforms (also from competitors Riskmethods/Sphera, Interos, Sayari).
-- Business model validation: DHL's pivot from "logistics provider" to also "risk-visibility SaaS vendor" generated ~€200M annual SaaS revenue by 2024 — a 4PL/5PL evolution.
+- Business model validation: DHL's pivot from "logistics provider" to also "risk-visibility SaaS vendor" generated ~€200M annual SaaS revenue by 2024, a 4PL/5PL evolution.
 
 **Lesson for the exam / for practitioners.** Three Module 8 themes converge here:
 
-1. **Reverse logistics is one of many supply-chain risk dimensions, not a standalone topic.** Risk visibility platforms monitor *forward* (delivery delays), *reverse* (recall events, product safety alerts), *supplier* (financial distress, ESG violations), and *regulatory* (sanctions, customs changes) — all in one frame.
+1. **Reverse logistics is one of many supply-chain risk dimensions, not a standalone topic.** Risk visibility platforms monitor *forward* (delivery delays), *reverse* (recall events, product safety alerts), *supplier* (financial distress, ESG violations), and *regulatory* (sanctions, customs changes), all in one frame.
 
-2. **The 5PL evolution.** A risk-visibility platform integrates data from carriers, customs, weather, suppliers, news — exactly the data-orchestrator role that Module 1 defined as 5PL. DHL effectively created a 5PL business as a sustainability+resilience layer atop its 3PL/4PL operations.
+2. **The 5PL evolution.** A risk-visibility platform integrates data from carriers, customs, weather, suppliers, news, exactly the data-orchestrator role that Module 1 defined as 5PL. DHL effectively created a 5PL business as a sustainability+resilience layer atop its 3PL/4PL operations.
 
 3. **ESG / TCFD risk reporting requires this data.** TCFD (Task Force on Climate-related Financial Disclosures) and the EU CSRD require companies to disclose climate-related supply-chain risk. Without a platform like Everstream, this disclosure is essentially impossible at scale. Module 8's ESG reporting frameworks (GRI, SASB, TCFD, ISSB, CSRD) are *demand drivers* for these platforms.
 
-The CLTD exam tests this in scenarios about "the logistics function's role in enterprise risk management" — the modern answer is: a logistics director *owns* supply-chain risk visibility as a Board-level KPI.
+The CLTD exam tests this in scenarios about "the logistics function's role in enterprise risk management", the modern answer is: a logistics director *owns* supply-chain risk visibility as a Board-level KPI.
 
 **Discussion (Socratic).**
 - Q1: A risk-visibility platform costs ~$300K–$1.5M/yr at scale. A small importer ($50M revenue) cannot afford it. What lower-cost alternatives can capture 60–70% of the value?
@@ -390,7 +390,7 @@ The CLTD exam tests this in scenarios about "the logistics function's role in en
 
 🚨 **Trap 2:** Remanufactured products typically come with new-equivalent warranty; refurbished do not.
 
-🚨 **Trap 3:** ISO 14001 (environmental management) vs ISO 14064 (GHG quantification) — distinct.
+🚨 **Trap 3:** ISO 14001 (environmental management) vs ISO 14064 (GHG quantification), distinct.
 
 🚨 **Trap 4:** Closed-loop and circular economy are related but distinct. Closed-loop = your value chain reuses your products. Circular economy = systemic, society-wide.
 
@@ -444,18 +444,18 @@ You now know:
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🧪 Take [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) (Modules 1–8 covered)
 5. 🧪 Then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
-6. 🎓 [Capstone Project](../Capstone-Project.md) — end-to-end transformation case
-7. 📖 [Recommended Readings](../Recommended-Readings.md) — depth resources
+6. 🎓 [Capstone Project](../Capstone-Project.md), end-to-end transformation case
+7. 📖 [Recommended Readings](../Recommended-Readings.md), depth resources
 
 ---
 
 ## 🤔 Discussion (Socratic prompts)
 
-1. **Free-returns moral hazard.** Many e-commerce retailers have abandoned free returns in 2023–2024 (Zara, H&M, J. Crew now charge returns fees). Free returns drove higher purchase rates but also higher return rates (~30%+ in apparel). Build both arguments — is charging returns fees the right strategic shift, or short-term profit at long-term brand damage?
+1. **Free-returns moral hazard.** Many e-commerce retailers have abandoned free returns in 2023–2024 (Zara, H&M, J. Crew now charge returns fees). Free returns drove higher purchase rates but also higher return rates (~30%+ in apparel). Build both arguments, is charging returns fees the right strategic shift, or short-term profit at long-term brand damage?
 
-2. **Scope 3 measurement reality.** Most logistics teams know their Scope 1 (fleet fuel) and Scope 2 (warehouse electricity) emissions. Scope 3 (purchased transportation + supplier emissions) is theoretically required by CSRD but practically impossible to measure precisely. What measurement standard should logistics adopt today — perfect-but-impossible or imperfect-and-actionable?
+2. **Scope 3 measurement reality.** Most logistics teams know their Scope 1 (fleet fuel) and Scope 2 (warehouse electricity) emissions. Scope 3 (purchased transportation + supplier emissions) is theoretically required by CSRD but practically impossible to measure precisely. What measurement standard should logistics adopt today, perfect-but-impossible or imperfect-and-actionable?
 
-3. **Carbon-offset legitimacy.** Companies like Amazon, Microsoft, Google have spent billions on carbon offsets in 2020–2024. Some recent journalism (Guardian, 2023) found ~90% of rainforest offsets had no real climate benefit. Argue both sides — should logistics teams use offsets or refuse them on integrity grounds?
+3. **Carbon-offset legitimacy.** Companies like Amazon, Microsoft, Google have spent billions on carbon offsets in 2020–2024. Some recent journalism (Guardian, 2023) found ~90% of rainforest offsets had no real climate benefit. Argue both sides, should logistics teams use offsets or refuse them on integrity grounds?
 
 4. **Closed-loop economics at small scale.** Caterpillar Reman works at CAT's scale. A medium-size equipment dealer with $80M annual revenue probably *can't* run a closed-loop remanufacturing program profitably. When does closed-loop economics break? Where is the size threshold?
 
@@ -471,10 +471,10 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 - 📖 *Reverse Logistics and Closed-Loop Supply Chain Management* by Govindan & Bouzon
-- 📖 *Cradle to Cradle* by McDonough & Braungart — circular economy classic
-- 🔗 [Reverse Logistics Association](https://rla.org/) — industry body
-- 🔗 [GHG Protocol Corporate Standard](https://ghgprotocol.org/) — emissions accounting
-- 🔗 [GLEC Framework](https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/) — logistics-specific GHG
+- 📖 *Cradle to Cradle* by McDonough & Braungart, circular economy classic
+- 🔗 [Reverse Logistics Association](https://rla.org/), industry body
+- 🔗 [GHG Protocol Corporate Standard](https://ghgprotocol.org/), emissions accounting
+- 🔗 [GLEC Framework](https://www.smartfreightcentre.org/en/our-programs/global-logistics-emissions-council/), logistics-specific GHG
 - 🔗 [Science Based Targets initiative (SBTi)](https://sciencebasedtargets.org/)
-- 🔗 [GRI Standards](https://www.globalreporting.org/standards/) — sustainability reporting
-- 🔗 [Ellen MacArthur Foundation](https://ellenmacarthurfoundation.org/) — circular economy
+- 🔗 [GRI Standards](https://www.globalreporting.org/standards/), sustainability reporting
+- 🔗 [Ellen MacArthur Foundation](https://ellenmacarthurfoundation.org/), circular economy

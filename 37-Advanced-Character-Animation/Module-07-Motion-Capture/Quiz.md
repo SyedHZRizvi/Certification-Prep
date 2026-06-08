@@ -46,7 +46,7 @@ D. Contact between character feet and other characters
 
 ### Q6. Raw mocap data is:
 A. Production-ready and can be used directly without cleanup  
-B. The beginning of the work — it must be cleaned, retargeted, and in many cases substantially reanimated  
+B. The beginning of the work, it must be cleaned, retargeted, and in many cases substantially reanimated  
 C. Identical to the final character animation in most productions  
 D. Only useful for background characters; hero characters always use keyframe  
 
@@ -117,7 +117,7 @@ D. The character's rig and control setup
 ---
 
 ### Q15. The foot lock IK constraint transition should blend in/out over:
-A. 0 frames — instantaneous for clean contact  
+A. 0 frames, instantaneous for clean contact  
 B. 2–4 frames to avoid snapping  
 C. 10–15 frames for smooth weight transfer  
 D. 1 full second (24 frames) for maximum subtlety  
@@ -181,8 +181,8 @@ D. Foot locking
 ---
 
 ### Q23. Andy Serkis's performance as Caesar is described as:
-A. Pure keyframe animation — Serkis was only a voice actor  
-B. Pure mocap — his data was used unmodified in the final film  
+A. Pure keyframe animation, Serkis was only a voice actor  
+B. Pure mocap, his data was used unmodified in the final film  
 C. Performance capture data that was cleaned, retargeted, and substantially enhanced by keyframe animators  
 D. A combination of rotoscoping and traditional animation  
 
@@ -199,28 +199,28 @@ D. Exporting final animation to narrative editing software
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Optical: reflective markers + infrared cameras
-Q2.  B — Inertial: drift accumulates; relative position only
-Q3.  B — Retargeting: scale/proportion-adjust to different character
-Q4.  B — Character definition: bone mapping to standard template
-Q5.  B — Foot locking: prevents sliding/floating after retargeting
-Q6.  B — Raw mocap: beginning of work; requires full cleanup pipeline
-Q7.  B — Contact intent: retargeted character touches ground same frames
-Q8.  B — Avatar: real-time Na'vi playback for actors during performance
-Q9.  C — War for Apes: ape locomotion keyframed by Weta animators
-Q10. B — Markerless: retroactive reconstruction of existing footage
-Q11. B — Plot: bakes live retargeting to discrete keyframes
-Q12. C — Cartoon pantomime with comedy timing: keyframe
-Q13. B — Full body no fingers: 40–55 markers
-Q14. B — Actor node: raw mocap data
-Q15. B — Foot lock blend: 2–4 frames to avoid snapping
-Q16. B — After foot lock: adjust root/hip control
-Q17. B — Superhero: real physics doesn't match visual language
-Q18. C — Avatar volume: 6× larger than previous productions
-Q19. C — After skeleton solving: retargeting
-Q20. B — Retargeting paradox: same steps, less ground = appears faster
-Q21. B — Close-up mocap: micro-expression nuance rarely captured
-Q22. C — Ambient occlusion baking is NOT a mocap cleanup phase
-Q23. C — Serkis: mocap + cleanup + significant keyframe enhancement
-Q24. B — Story tool: non-linear editing of mocap clips
+Q1.  C, Optical: reflective markers + infrared cameras
+Q2.  B, Inertial: drift accumulates; relative position only
+Q3.  B, Retargeting: scale/proportion-adjust to different character
+Q4.  B, Character definition: bone mapping to standard template
+Q5.  B, Foot locking: prevents sliding/floating after retargeting
+Q6.  B, Raw mocap: beginning of work; requires full cleanup pipeline
+Q7.  B, Contact intent: retargeted character touches ground same frames
+Q8.  B, Avatar: real-time Na'vi playback for actors during performance
+Q9.  C, War for Apes: ape locomotion keyframed by Weta animators
+Q10. B, Markerless: retroactive reconstruction of existing footage
+Q11. B, Plot: bakes live retargeting to discrete keyframes
+Q12. C, Cartoon pantomime with comedy timing: keyframe
+Q13. B, Full body no fingers: 40–55 markers
+Q14. B, Actor node: raw mocap data
+Q15. B, Foot lock blend: 2–4 frames to avoid snapping
+Q16. B, After foot lock: adjust root/hip control
+Q17. B, Superhero: real physics doesn't match visual language
+Q18. C, Avatar volume: 6× larger than previous productions
+Q19. C, After skeleton solving: retargeting
+Q20. B, Retargeting paradox: same steps, less ground = appears faster
+Q21. B, Close-up mocap: micro-expression nuance rarely captured
+Q22. C, Ambient occlusion baking is NOT a mocap cleanup phase
+Q23. C, Serkis: mocap + cleanup + significant keyframe enhancement
+Q24. B, Story tool: non-linear editing of mocap clips
 ```

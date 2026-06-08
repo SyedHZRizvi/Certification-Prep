@@ -159,7 +159,7 @@ D. Image segmentations
 ---
 
 ### Q20. A team upgrades from `text-embedding-3-small` to `text-embedding-3-large` (different dimensionality and trained differently). The CORRECT migration approach: *(Apply)*
-A. Do nothing — vectors are interchangeable
+A. Do nothing, vectors are interchangeable
 B. Re-embed the corpus into a new index; route traffic gradually; tag embeddings with model version
 C. Truncate the new vectors to match the old dimensions
 D. Average the two
@@ -169,7 +169,7 @@ D. Average the two
 ### Q21. Pure vector retrieval recall on exact-term queries (part numbers, SKUs, IDs) is typically: *(Analyze)*
 A. Higher than BM25
 B. Roughly the same as BM25
-C. Lower than BM25 — exact-token matches are sparse-retrieval's strength
+C. Lower than BM25, exact-token matches are sparse-retrieval's strength
 D. Identical to BM25
 
 ---
@@ -220,7 +220,7 @@ D. GPT-4 to embed each chunk one at a time on every query
 Cosine measures angle, normalizing out magnitude. Most modern embedders L2-normalize their output, making cosine ≡ dot product.
 
 ### Q2: **C. `input_type` separates queries from documents**
-Cohere's embed-v3 was trained asymmetrically — queries and documents land in different spots of the space. Get the prefix wrong and you lose 5–15 MRR points.
+Cohere's embed-v3 was trained asymmetrically, queries and documents land in different spots of the space. Get the prefix wrong and you lose 5–15 MRR points.
 
 ### Q3: **B. Multi-layer navigable small-world graph for ANN**
 Hierarchical layers; top is sparse highway, bottom is locally dense. Search descends greedily.
@@ -247,13 +247,13 @@ Score-free, robust to heterogeneous retrievers. k=60 is the default.
 The chunk that contained the agenda's heading was split from the bullet points; the resulting embedding was dominated by adjacent CRM content. Header-aware chunking + overlap + reranker fixed it.
 
 ### Q11: **B. Cross-encoders see (query, doc) together**
-Bi-encoders must commit to a single vector per document before seeing the query. Cross-encoders run a full transformer over the pair — far more expressive.
+Bi-encoders must commit to a single vector per document before seeing the query. Cross-encoders run a full transformer over the pair, far more expressive.
 
 ### Q12: **A. N×M token-level MaxSim**
-Late interaction — query and document keep multiple token vectors; final score is the max-similarity over token pairs.
+Late interaction, query and document keep multiple token vectors; final score is the max-similarity over token pairs.
 
 ### Q13: **B. BM25 is needed**
-Exact identifiers, part numbers, and rare strings are *sparse* signal — exactly what BM25 captures and dense embeddings smooth away.
+Exact identifiers, part numbers, and rare strings are *sparse* signal, exactly what BM25 captures and dense embeddings smooth away.
 
 ### Q14: **B. Recursive splitter, ~512 tokens, 128 overlap, header-aware**
 Production-grade default. Iterate from here.
@@ -271,7 +271,7 @@ Per-chunk embeddings inherit the document's full context without you having to p
 For HNSW, vectors + graph live in RAM. For PQ-quantized indexes, on disk. Either way, dim × N dominates.
 
 ### Q19: **B. Learned-sparse vectors with vocab-keyed dimensions**
-SPLADE outputs are mostly-zero high-dimensional vectors where active dims correspond to expansion terms — pairs nicely with dense via hybrid.
+SPLADE outputs are mostly-zero high-dimensional vectors where active dims correspond to expansion terms, pairs nicely with dense via hybrid.
 
 ### Q20: **B. Re-embed corpus, route gradually, tag with model version**
 Embedding spaces don't transfer. Different model = new index. Tag with version metadata so you can A/B test and roll back.
@@ -286,7 +286,7 @@ Every extra chunk fights for attention budget and dilutes relevance.
 These cycle through the MTEB top spots. Plain word2vec or GPT-2 hidden states are 5+ years behind.
 
 ### Q24: **B. They run a full transformer pass per (query, candidate) pair**
-Bi-encoders pre-compute doc embeddings once. Cross-encoders can't — they must see the query and the doc together every time.
+Bi-encoders pre-compute doc embeddings once. Cross-encoders can't, they must see the query and the doc together every time.
 
 ### Q25: **B. DiskANN/IVF-PQ + horizontal sharding + pre-filter**
 1B vectors won't fit in one HNSW RAM index. Disk-based graph + partitioning + pre-filter is the modern playbook.
@@ -308,14 +308,14 @@ Multilingual (10 languages) → Cohere v3 or BGE-M3. Filters → Qdrant or Weavi
 ## 🃏 Add To Your Flashcards
 
 - HNSW (M, efConstruction, efSearch)
-- IVF-PQ, DiskANN, ScaNN — when each is right
-- BM25 vs dense vs SPLADE — failure modes
+- IVF-PQ, DiskANN, ScaNN, when each is right
+- BM25 vs dense vs SPLADE, failure modes
 - RRF formula
-- Contextual retrieval — what + why
-- Reranker — Cohere / Voyage / bge-reranker-v2-m3 / ColBERT
+- Contextual retrieval, what + why
+- Reranker, Cohere / Voyage / bge-reranker-v2-m3 / ColBERT
 - Asymmetric embedder prefixes (E5, BGE) / `input_type` (Cohere)
-- Matryoshka — truncate to 256 / 512 / 1024
+- Matryoshka, truncate to 256 / 512 / 1024
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — RAG Architecture](../Module-03-RAG-Architecture/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, RAG Architecture](../Module-03-RAG-Architecture/Reading.md)

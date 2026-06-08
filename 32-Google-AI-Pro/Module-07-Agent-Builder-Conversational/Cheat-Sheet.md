@@ -169,7 +169,7 @@ Merchant query
 
 ## ✏️ Quick Self-Check
 
-1. Conversational Agents vs ADK — when each? ___
+1. Conversational Agents vs ADK, when each? ___
 2. Function calling vs JSON mode? ___
 3. Three components of Mercedes MBUX flow? ___
 4. Three FunctionCallingConfig modes? ___

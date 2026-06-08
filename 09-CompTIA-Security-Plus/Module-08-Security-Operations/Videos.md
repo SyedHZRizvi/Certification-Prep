@@ -143,7 +143,7 @@
 ## ✅ After watching
 
 1. Order the NIST IR phases from memory.
-2. Order of volatility — top 4.
-3. SIEM vs SOAR — one line each.
-4. CVSS vs EPSS vs KEV — what does each tell you?
+2. Order of volatility, top 4.
+3. SIEM vs SOAR, one line each.
+4. CVSS vs EPSS vs KEV, what does each tell you?
 5. Why do you image disks instead of analyzing them directly?

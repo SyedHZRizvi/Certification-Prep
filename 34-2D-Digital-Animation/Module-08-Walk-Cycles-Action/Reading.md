@@ -9,7 +9,7 @@ title: "Module 8: Walk Cycles & Action"
 
 You can tell almost everything about a character from how they walk. The swagger of a confident person. The shuffle of someone exhausted. The tip-toeing stealth of someone trying not to be caught. A dragging foot that tells a story of injury. An enthusiastic bounce that says "I am happy and I have too much energy." An animation professor once said: "I don't need to see a character's face to know who they are. Show me them walking across a room."
 
-The walk cycle is the most studied, most analyzed, most referenced exercise in the history of animation. Richard Williams spent decades refining his understanding of it. Preston Blair drew hundreds of variations. Every animation school assigns it in the first month. And yet, after all the analysis, the thing that makes a walk cycle feel alive is not the four-pose formula — it's the *personality* built into every aspect of the timing, the arcs, and the weight.
+The walk cycle is the most studied, most analyzed, most referenced exercise in the history of animation. Richard Williams spent decades refining his understanding of it. Preston Blair drew hundreds of variations. Every animation school assigns it in the first month. And yet, after all the analysis, the thing that makes a walk cycle feel alive is not the four-pose formula, it's the *personality* built into every aspect of the timing, the arcs, and the weight.
 
 This module gives you the four-pose formula (because you need the structure before you can break it), then shows you how Cuphead, Gravity Falls, and Avatar: The Last Airbender break it beautifully.
 
@@ -17,7 +17,7 @@ This module gives you the four-pose formula (because you need the structure befo
 
 ## 🦶 The Four-Pose Walk Cycle
 
-Every walk cycle — no matter the character, no matter the style — is built from four key poses:
+Every walk cycle no matter the character, no matter the style is built from four key poses:
 
 ### Contact Position
 The heel of the lead foot touches the ground. The opposite foot is about to push off. The body is at a medium height. Arms are at opposite swing positions (left arm forward with right leg forward). The key tension point of the pose: the heel strike. This is the moment of maximum extension.
@@ -35,7 +35,7 @@ The body has reached its highest point and is about to descend into the next con
 
 ## 📐 Timing the Walk Cycle
 
-A standard walk cycle at 24fps runs 12 frames — 6 frames per step.
+A standard walk cycle at 24fps runs 12 frames, 6 frames per step.
 
 | Frame | Pose |
 |-------|------|
@@ -47,7 +47,7 @@ A standard walk cycle at 24fps runs 12 frames — 6 frames per step.
 | 11 | Down |
 | 13 | Back to frame 1 |
 
-The cycle then loops. Note that a 12-frame cycle repeats 2 times per second at 24fps — a normal walking pace. Slower characters use 16–20 frame cycles; faster characters use 8–10 frame cycles.
+The cycle then loops. Note that a 12-frame cycle repeats 2 times per second at 24fps, a normal walking pace. Slower characters use 16–20 frame cycles; faster characters use 8–10 frame cycles.
 
 ### Walk Cycle Timing by Character Type
 
@@ -79,7 +79,7 @@ A run differs from a walk in fundamental ways:
 | Arm swing: parallel to legs | Arm swing: exaggerated, often crossing centerline |
 | Head relatively stable | Head pitches forward; strong forward lean |
 
-The run's **airborne position** — where both feet are off the ground — is the defining moment. For a snappy, energetic run, the airborne pose is held for 2–3 frames. For a floaty, superhero-style run, the airborne phase is longer.
+The run's **airborne position** where both feet are off the ground is the defining moment. For a snappy, energetic run, the airborne pose is held for 2–3 frames. For a floaty, superhero-style run, the airborne phase is longer.
 
 ### Run Cycle Variations
 
@@ -94,7 +94,7 @@ The run's **airborne position** — where both feet are off the ground — is th
 
 ## ⚡ Anticipation Before Action
 
-Anticipation is a preparatory motion before a major action. It prepares the audience for what's about to happen and gives the action contrast — the more the character winds up, the more impactful the release.
+Anticipation is a preparatory motion before a major action. It prepares the audience for what's about to happen and gives the action contrast, the more the character winds up, the more impactful the release.
 
 ### Anticipation Formula
 
@@ -157,7 +157,7 @@ Gravity Falls uses more in-betweens per action and softer arc transitions, givin
 
 ### Avatar: The Last Airbender's Reference-Based Style
 
-Avatar's action sequences were designed by bending masters — each bending style (water, earth, fire, air) is based on a specific real-world martial art (Tai Chi, Hung Gar Kung Fu, Northern Shaolin, Ba Gua). The animators rotoscoped reference from martial arts practitioners to get the footwork right, then stylized it into the cartoon idiom.
+Avatar's action sequences were designed by bending masters, each bending style (water, earth, fire, air) is based on a specific real-world martial art (Tai Chi, Hung Gar Kung Fu, Northern Shaolin, Ba Gua). The animators rotoscoped reference from martial arts practitioners to get the footwork right, then stylized it into the cartoon idiom.
 
 **Bending Styles and Martial Arts Reference:**
 
@@ -216,11 +216,11 @@ Once the standard walk is mastered, stylistic variations become possible:
 
 ## 🎬 Production Case Study: Cuphead, Gravity Falls, Avatar
 
-**Cuphead (Studio MDHR, 2017):** The entire team studied Fleischer Brothers cartoons from the 1930s before animating a single frame. They drew reference models on paper first, then digitized. The snappy walk cycle in Cuphead uses exactly 6 drawings on twos (12 frames), with aggressive squash on the down position and a strong bounce on the Up position — deliberately exaggerated beyond anatomical accuracy to achieve the visual energy of the source material.
+**Cuphead (Studio MDHR, 2017):** The entire team studied Fleischer Brothers cartoons from the 1930s before animating a single frame. They drew reference models on paper first, then digitized. The snappy walk cycle in Cuphead uses exactly 6 drawings on twos (12 frames), with aggressive squash on the down position and a strong bounce on the Up position, deliberately exaggerated beyond anatomical accuracy to achieve the visual energy of the source material.
 
-**Gravity Falls (Disney, 2012–2016):** Dipper's walk cycle was animated to convey a precocious 12-year-old — slightly awkward, energetic but not athletic, arms a bit too long. The cycle uses fluid in-betweens and subtle secondary motion on the backpack. When Grunkle Stan walks, it's a completely different cycle: slower, more deliberate, shoulders back, slightly threatening even in casual movement. The walk cycle IS character design in motion.
+**Gravity Falls (Disney, 2012–2016):** Dipper's walk cycle was animated to convey a precocious 12-year-old, slightly awkward, energetic but not athletic, arms a bit too long. The cycle uses fluid in-betweens and subtle secondary motion on the backpack. When Grunkle Stan walks, it's a completely different cycle: slower, more deliberate, shoulders back, slightly threatening even in casual movement. The walk cycle IS character design in motion.
 
-**Avatar: The Last Airbender (Nickelodeon, 2005–2008):** The show employed Korean animation studios (JM Animation and DR Movie) who executed the character animation. The martial arts reference footage provided by the US team was studied and translated into 2D drawings that preserved the weight and rootedness of the martial arts while working within the stylized cartoon idiom. Aang's airbending sequences show particular mastery of the "constant motion" quality of Ba Gua Zhang — he rarely fully stops, making his combat style feel fluid and evasive.
+**Avatar: The Last Airbender (Nickelodeon, 2005–2008):** The show employed Korean animation studios (JM Animation and DR Movie) who executed the character animation. The martial arts reference footage provided by the US team was studied and translated into 2D drawings that preserved the weight and rootedness of the martial arts while working within the stylized cartoon idiom. Aang's airbending sequences show particular mastery of the "constant motion" quality of Ba Gua Zhang, he rarely fully stops, making his combat style feel fluid and evasive.
 
 ---
 
@@ -256,7 +256,7 @@ Once the standard walk is mastered, stylistic variations become possible:
 - **Walk: one foot always on the ground. Run: both feet can be off.** This is the fundamental physical difference. Exam questions about "what defines a run" often hinge on this.
 - **Anticipation goes OPPOSITE to main action:** A character jumping UP first moves DOWN. Students frequently reverse this.
 - **Passing position = highest point of body, not mid-stance:** The body is at its highest in the Passing Position, not in the Up position. The Up position is where the body is high and about to begin descending.
-- **Cuphead-style snappiness is intentional, not lazy:** On questions about animation quality, snappiness is a legitimate stylistic choice — it's not indicative of fewer drawings being a shortcut.
+- **Cuphead-style snappiness is intentional, not lazy:** On questions about animation quality, snappiness is a legitimate stylistic choice, it's not indicative of fewer drawings being a shortcut.
 - **Avatar's martial arts reference is specific:** Water = Tai Chi. Earth = Hung Gar. Fire = Northern Shaolin. Air = Ba Gua. These are frequently tested in pairs.
 
 ---
@@ -290,12 +290,12 @@ A walk cycle without secondary motion looks like a puppet on a stick. Secondary 
 Making a walk cycle loop seamlessly is a technical skill worth practicing:
 
 1. Animate the full 12-frame cycle (Contact L → Down → Passing → Up → Contact R → Down → Passing → Up).
-2. At frame 13, the first Contact L pose repeats — this is the loop point.
+2. At frame 13, the first Contact L pose repeats, this is the loop point.
 3. In Animate, set the symbol or clip to loop at the end of the 12-frame cycle.
 4. For a looping walk across the stage: the outer tween moves the root position leftward/rightward while the inner cycle plays.
 5. The horizontal movement speed must match the stride length: if each step covers 50px and the cycle is 12 frames, the outer tween moves 100px per 12 frames (both feet complete one full step).
 
-> 🎯 **What the exam tests:** Knowing that the walk cycle's position movement must be calibrated to match the stride — otherwise the character appears to "skate" (slide without appropriate foot-to-ground contact).
+> 🎯 **What the exam tests:** Knowing that the walk cycle's position movement must be calibrated to match the stride, otherwise the character appears to "skate" (slide without appropriate foot-to-ground contact).
 
 ---
 
@@ -306,7 +306,7 @@ Making a walk cycle loop seamlessly is a technical skill worth practicing:
 - Anticipation always moves in the opposite direction of the main action; hold before anticipation is essential.
 - Snappy styles (Cuphead) use long holds + few fast transition frames; fluid styles (Gravity Falls, Avatar) use more in-betweens.
 - Impact poses: maximum stretch just before impact; maximum squash at impact.
-- Walk style expresses character personality — the structure is the starting point, not the finish line.
+- Walk style expresses character personality, the structure is the starting point, not the finish line.
 
 ## ➡️ Next Steps
 
@@ -334,33 +334,33 @@ Before animating any action sequence, professional animators plan at the storybo
 
 Richard Williams' *The Animator's Survival Kit* dedicates six chapters to walk analysis. Key findings that directly apply to exam questions:
 
-- A character's **personality is visible in the extremes** — the contact and passing positions tell you who the person is
-- The **arm swing counterbalances the leg swing** — left arm swings when right leg swings forward
-- **Head bob is a secondary effect** of the body rising and falling — it shouldn't be animated independently unless exaggerating for style
-- **Feet should never slide** — the planted foot stays on a fixed horizontal line until it lifts
-- **"Nice walk" is not interesting** — emotion, weight, and attitude come from the deviation from the standard formula
+- A character's **personality is visible in the extremes**, the contact and passing positions tell you who the person is
+- The **arm swing counterbalances the leg swing**, left arm swings when right leg swings forward
+- **Head bob is a secondary effect** of the body rising and falling, it shouldn't be animated independently unless exaggerating for style
+- **Feet should never slide**, the planted foot stays on a fixed horizontal line until it lifts
+- **"Nice walk" is not interesting**, emotion, weight, and attitude come from the deviation from the standard formula
 
 ---
 
 ## 📚 Further Reading
 
-- *The Animator's Survival Kit* — Richard Williams, Chapters 10–16 (complete walk cycle analysis)
-- *Cartoon Animation* — Preston Blair (walk and run variations in Chapter 4)
-- Aaron Blaise YouTube: "How to Animate a Walk Cycle" — free, detailed tutorial from a Disney veteran
+- *The Animator's Survival Kit*, Richard Williams, Chapters 10–16 (complete walk cycle analysis)
+- *Cartoon Animation*, Preston Blair (walk and run variations in Chapter 4)
+- Aaron Blaise YouTube: "How to Animate a Walk Cycle", free, detailed tutorial from a Disney veteran
 
 ## 🎯 Weight and Force in Action Animation
 
-All great action animation communicates force — the sense that physical mass is acting on and being acted upon by the environment. These principles apply directly to walk cycles and action sequences:
+All great action animation communicates force, the sense that physical mass is acting on and being acted upon by the environment. These principles apply directly to walk cycles and action sequences:
 
 | Principle | Description | Example Application |
 |-----------|-------------|-------------------|
 | **Weight down** | Heavy characters compress more on impact; light characters bounce | Giant's Down position is much lower than a child's |
 | **Force through joints** | A punch's force travels from the ground, through the legs, hips, torso, and out the arm | Body rotation drives the arm, not the arm alone |
 | **Reaction equal to action** | When a character punches something, they also react | The punching arm shoulder rotates; the body twists back |
-| **Weight transfer on landing** | Feet don't just stop — weight shifts from ball to heel as it plants | Contact position shows where weight is landing |
+| **Weight transfer on landing** | Feet don't just stop, weight shifts from ball to heel as it plants | Contact position shows where weight is landing |
 | **Drag on reversal** | When direction changes, heavy elements lag before following | Hair, clothing, belly all trail the direction change |
 
-> 🎯 **What the exam tests:** "Weight" in animation is not about drawing heavier lines — it's about timing (heavier things take longer to accelerate and decelerate) and how impacts propagate through the body. An animator who understands force produces action that audiences feel, not just see.
+> 🎯 **What the exam tests:** "Weight" in animation is not about drawing heavier lines, it's about timing (heavier things take longer to accelerate and decelerate) and how impacts propagate through the body. An animator who understands force produces action that audiences feel, not just see.
 
 ---
 
@@ -379,25 +379,25 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 

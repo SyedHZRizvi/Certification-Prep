@@ -37,7 +37,7 @@
 | **Reserved (RI)** | up to 72% | 1 or 3 yr | Steady 24/7 |
 | **Savings Plan** | up to 72% | 1 or 3 yr | Flexible (any family, EC2/Fargate/Lambda) |
 | **Spot** | up to 90% | None (2-min reclaim) | Fault-tolerant batch, CI |
-| **Dedicated Host** | — | Physical server | BYOL licensing |
+| **Dedicated Host** |, | Physical server | BYOL licensing |
 | **Dedicated Instance** | small premium | Single-tenant HW | Compliance |
 | **Capacity Reservation** | none | Capacity guarantee | DR / launch events |
 
@@ -156,7 +156,7 @@ Usually wrong:
 2. 4 main pricing models? ___
 3. Lambda max runtime? ___
 4. Fargate vs EC2 launch type? ___
-5. ASG vs ELB — what does each do? ___
+5. ASG vs ELB, what does each do? ___
 
 ---
 

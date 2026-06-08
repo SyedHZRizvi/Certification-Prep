@@ -68,7 +68,7 @@ Initiative = bundle of policies (e.g. MCSB, NIST 800-53). Remediation Task bring
 | Type | Effect |
 |------|--------|
 | CanNotDelete | Read + modify OK, no delete |
-| ReadOnly | Read only — breaks many ops |
+| ReadOnly | Read only, breaks many ops |
 
 Inherits down. Only Owner / UAA can create.
 
@@ -120,7 +120,7 @@ Often **wrong**:
 ## ✏️ Quick Self-Check
 
 1. Metrics retention vs default Log Analytics retention? ___
-2. AMA vs MMA — which is current? ___
+2. AMA vs MMA, which is current? ___
 3. KQL keywords for filtering + grouping + sorting? ___
 4. Effect that triggers an embedded ARM deployment? ___
 5. Where do NSG Flow Logs v2 land natively? ___

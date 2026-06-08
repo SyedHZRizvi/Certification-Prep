@@ -78,12 +78,12 @@ title: "Module 8 Cheat Sheet: Practical Digital FX"
 
 ---
 
-## De-Aging Pipeline (FLUX System — ILM)
+## De-Aging Pipeline (FLUX System, ILM)
 
 | Step | Action |
 |------|--------|
 | 1 | Reference scan of actor at younger age (photogrammetry) |
-| 2 | On-set clean plate capture — no motion capture equipment |
+| 2 | On-set clean plate capture, no motion capture equipment |
 | 3 | FLUX tracks performance from clean plate (no markers) |
 | 4 | CG de-aged face rendered in Arnold with full skin shaders |
 | 5 | Per-frame roto of face region with soft feather at skin boundary |
@@ -137,8 +137,8 @@ title: "Module 8 Cheat Sheet: Practical Digital FX"
 ## Exam Quick-Hits
 
 - **Atmospheric sharpness rule:** Sharpness, saturation, and contrast all decrease with distance. A sharp background extension fails.
-- **FLUX de-aging:** No motion capture — tracked from clean plate. Performance retained, appearance modified.
-- **1917 stitch:** Not one shot — dozens of shots joined invisibly. 5-point match required for each stitch.
+- **FLUX de-aging:** No motion capture, tracked from clean plate. Performance retained, appearance modified.
+- **1917 stitch:** Not one shot, dozens of shots joined invisibly. 5-point match required for each stitch.
 - **Clean plate priority:** The single most impactful on-set decision for wire removal speed.
 
 

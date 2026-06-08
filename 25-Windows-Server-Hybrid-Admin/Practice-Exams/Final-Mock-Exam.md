@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — Windows Server Hybrid Administrator (AZ-800 + AZ-801)
+# 🧪 Final Mock Exam, Windows Server Hybrid Administrator (AZ-800 + AZ-801)
 
 > **Conditions:** Set a 120-minute timer. 60 questions. This is structured to mirror EITHER exam (combined content across all 10 modules).
 > **Pass mark:** 42/60 (≈ 70%)
@@ -128,7 +128,7 @@ B. NTLM
 C. Kerberos with constrained delegation
 D. Smart card
 
-### 21. **Yes/No** — Mark each statement.
+### 21. **Yes/No**, Mark each statement.
 
 **S1:** An OU is a security boundary equivalent to a domain.
 **S2:** ReFS can be the OS boot drive.
@@ -260,8 +260,8 @@ C. 4 hours
 D. 24 hours
 
 ### 42. ASR test failover is:
-A. Disruptive — pauses replication
-B. Non-disruptive — parallel test environment
+A. Disruptive, pauses replication
+B. Non-disruptive, parallel test environment
 C. Same as production failover
 D. Not supported
 
@@ -327,7 +327,7 @@ B. 2 → 1 → 3 → 4 → 5 → 6
 C. 1 → 3 → 2 → 4 → 5 → 6
 D. 3 → 1 → 2 → 4 → 5 → 6
 
-### 51. **Yes/No** — Mark each statement.
+### 51. **Yes/No**, Mark each statement.
 
 **S1:** Arc requires inbound RDP/SSH.
 **S2:** Defender for Servers covers both Azure VMs and Arc-enabled servers.
@@ -338,7 +338,7 @@ B. Yes / Yes / Yes
 C. No / No / Yes
 D. Yes / No / Yes
 
-### 52. **Yes/No** — Mark each statement.
+### 52. **Yes/No**, Mark each statement.
 
 **S1:** Storage Replica synchronous mode works at any geographic distance.
 **S2:** Hyper-V Replica is asynchronous.
@@ -356,12 +356,12 @@ C. AWS Migration Service
 D. Hyper-V Replica
 
 ### 54. The Microsoft Tier 0 administrative model includes:
-A. Forest root, AD DCs, AD CS, Entra Connect, AD FS — identity control plane
+A. Forest root, AD DCs, AD CS, Entra Connect, AD FS, identity control plane
 B. Web servers only
 C. End-user workstations
 D. SharePoint sites
 
-### 55. **Yes/No** — Mark each statement.
+### 55. **Yes/No**, Mark each statement.
 
 **S1:** Azure Machine Configuration works on Arc-enabled servers.
 **S2:** WDAC is Microsoft's modern app allowlisting (AppLocker is legacy).
@@ -396,7 +396,7 @@ B. Arc Runbook extension (deploy via Azure Policy)
 C. SSH manually
 D. SCCM
 
-### 60. **Yes/No** — Final integrative.
+### 60. **Yes/No**, Final integrative.
 
 **S1:** Defender for Servers P2 includes File Integrity Monitoring + JIT + Vulnerability Assessment.
 **S2:** ASR Recovery Plans support pre/post scripts via Azure Automation runbooks.
@@ -430,9 +430,9 @@ D. Yes / Yes / No
 
 | Score | Verdict |
 |-------|---------|
-| 54–60 | 🏆 Excellent — schedule the exam |
+| 54–60 | 🏆 Excellent, schedule the exam |
 | 42–53 | ✅ Strong. Review missed Qs the day before exam |
-| 30–41 | ⚠️ Re-study weak modules (use map below) — postpone exam 1 week |
+| 30–41 | ⚠️ Re-study weak modules (use map below), postpone exam 1 week |
 | <30   | 🔁 Restart from your weakest module |
 
 ---
@@ -463,7 +463,7 @@ For EACH wrong answer:
 
 ---
 
-## Detailed answer rationales (selected — common stumbles)
+## Detailed answer rationales (selected, common stumbles)
 
 **Q1. B.** F-T-D-O-O. Memorize cold.
 
@@ -487,7 +487,7 @@ For EACH wrong answer:
 
 **Q22. B.** Arc machines = `Microsoft.HybridCompute/machines`.
 
-**Q23. A.** Outbound HTTPS 443 only — Arc agent has NO inbound port needs.
+**Q23. A.** Outbound HTTPS 443 only, Arc agent has NO inbound port needs.
 
 **Q24. D.** Least-privilege = Azure Connected Machine Onboarding role.
 
@@ -515,7 +515,7 @@ For EACH wrong answer:
 
 **Q41. A.** ASR ~30s RPO.
 
-**Q42. B.** Test failover is non-disruptive — parallel test VNet.
+**Q42. B.** Test failover is non-disruptive, parallel test VNet.
 
 **Q44. B.** `pwsh.exe` = PowerShell 7.
 
@@ -560,7 +560,7 @@ For EACH wrong answer:
 - Eat protein, not sugar
 - Bring water + your passport / govt ID
 - Read each question TWICE before clicking; underline keywords ("zone-redundant," "lowest cost," "Arc-enabled")
-- Mark and move on if stuck — come back at the end
-- For drag-drop "complete the command" items, **most languages tolerate the parameter order shown in the official docs** — when in doubt, choose the order Microsoft Learn uses
+- Mark and move on if stuck, come back at the end
+- For drag-drop "complete the command" items, **most languages tolerate the parameter order shown in the official docs**, when in doubt, choose the order Microsoft Learn uses
 
 **You've got this.** 🎯

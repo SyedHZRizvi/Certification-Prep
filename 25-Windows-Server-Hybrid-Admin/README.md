@@ -7,7 +7,7 @@ title: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801)
 
 **🖥️ Hybrid · Microsoft** › Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801)
 
-> **Goal:** Pass *both* required Microsoft exams — **AZ-800** (Administering Windows Server Hybrid Core Infrastructure) and **AZ-801** (Configuring Windows Server Hybrid Advanced Services) — at 700/1000 or higher on first attempt for each.
+> **Goal:** Pass *both* required Microsoft exams **AZ-800** (Administering Windows Server Hybrid Core Infrastructure) and **AZ-801** (Configuring Windows Server Hybrid Advanced Services) at 700/1000 or higher on first attempt for each.
 > **Duration:** 10–14 weeks part-time (10–12 hrs/week)
 > **Cost:** ~$165 USD per exam · ~$330 total · cert is valid 1 year, renewable free online
 > **Difficulty:** Associate · AZ-104 (Azure Administrator) and 5+ years of Windows Server experience strongly recommended
@@ -18,28 +18,28 @@ title: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801)
 
 ### 🎯 The promise
 
-The Microsoft Certified: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801) is the credential for the systems engineer who *runs* the real enterprise — the one with on-prem Active Directory, Hyper-V clusters, file servers, DFS, DHCP, IPAM, IIS, plus the Azure Arc / Entra Connect / Azure Monitor / Azure Backup integration every Fortune 500 actually uses in 2026. It is one of the most demanding credentials Microsoft awards at the associate tier — passing **two** exams — and one of the most respected in the hybrid-infrastructure career market.
+The Microsoft Certified: Windows Server Hybrid Administrator Associate (AZ-800 + AZ-801) is the credential for the systems engineer who *runs* the real enterprise the one with on-prem Active Directory, Hyper-V clusters, file servers, DFS, DHCP, IPAM, IIS, plus the Azure Arc / Entra Connect / Azure Monitor / Azure Backup integration every Fortune 500 actually uses in 2026. It is one of the most demanding credentials Microsoft awards at the associate tier passing **two** exams, and one of the most respected in the hybrid-infrastructure career market.
 
 ### 💼 Career outcomes after passing
 
-- **Windows Systems Administrator** ($85K–$125K) — running on-prem AD, file servers, Hyper-V
-- **Hybrid Infrastructure Engineer** ($110K–$155K) — Windows Server + Azure Arc + Entra Connect at scale
-- **Senior Systems Engineer** ($120K–$170K) — design and ops across hybrid environments
-- **Active Directory Engineer / Identity Engineer** ($115K–$165K) — AD DS forests, FSMO design, Entra ID integration
-- **Infrastructure Architect (Microsoft track)** ($140K–$195K) — typical 3–5 years post-AZ-800/801
-- **DevOps Engineer (Microsoft stack)** ($120K–$160K) — Windows Server + Azure + DSC / PowerShell
-- **Senior Cloud Consultant (Microsoft Partner)** ($130K–$185K + bonus) — Avanade, Insight, Cognizant
+- **Windows Systems Administrator** ($85K–$125K), running on-prem AD, file servers, Hyper-V
+- **Hybrid Infrastructure Engineer** ($110K–$155K), Windows Server + Azure Arc + Entra Connect at scale
+- **Senior Systems Engineer** ($120K–$170K), design and ops across hybrid environments
+- **Active Directory Engineer / Identity Engineer** ($115K–$165K), AD DS forests, FSMO design, Entra ID integration
+- **Infrastructure Architect (Microsoft track)** ($140K–$195K), typical 3–5 years post-AZ-800/801
+- **DevOps Engineer (Microsoft stack)** ($120K–$160K), Windows Server + Azure + DSC / PowerShell
+- **Senior Cloud Consultant (Microsoft Partner)** ($130K–$185K + bonus), Avanade, Insight, Cognizant
 
 This is the senior credential in the most coherent Microsoft sysadmin ladder: **AZ-900 (course 05) → AZ-104 (course 06) → AZ-800/801 (this course) → AZ-305 (Solutions Architect Expert)**. AZ-800/801 holders typically command a 20–30% premium over AZ-104-only peers thanks to the breadth and depth required to pass both exams.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every module begins with a real enterprise scenario (an AD forest recovery after ransomware, a Hyper-V cluster split-brain, a file-server migration of 4,200 user mailboxes)
-- **Original questions only** — every quiz and practice exam written from Microsoft's published skills-measured outlines for both AZ-800 and AZ-801; no copyrighted dumps
-- **Real-world case studies** — Maersk's NotPetya AD recovery, SolarWinds 2020 (AD as the target), a real hospital's Storage Spaces Direct migration, a regional bank's Azure Arc rollout
-- **One author, one voice** — coherent vocabulary across all 10 modules and both exam blueprints
-- **Updated for the 2026 AZ-800 / AZ-801 blueprint** — Windows Server 2022/2025, Storage Replica/Spaces Direct, Azure Arc-enabled servers, Azure Stack HCI, the current Defender for Servers posture
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every module begins with a real enterprise scenario (an AD forest recovery after ransomware, a Hyper-V cluster split-brain, a file-server migration of 4,200 user mailboxes)
+- **Original questions only**, every quiz and practice exam written from Microsoft's published skills-measured outlines for both AZ-800 and AZ-801; no copyrighted dumps
+- **Real-world case studies**, Maersk's NotPetya AD recovery, SolarWinds 2020 (AD as the target), a real hospital's Storage Spaces Direct migration, a regional bank's Azure Arc rollout
+- **One author, one voice**, coherent vocabulary across all 10 modules and both exam blueprints
+- **Updated for the 2026 AZ-800 / AZ-801 blueprint**, Windows Server 2022/2025, Storage Replica/Spaces Direct, Azure Arc-enabled servers, Azure Stack HCI, the current Defender for Servers posture
 
 ### 🚀 Ready to start?
 
@@ -53,11 +53,11 @@ Begin with [Module 1: Active Directory →](./Module-01-Active-Directory/Reading
 
 By the end of this track, you'll be able to:
 
-- Deploy and manage **Active Directory Domain Services** at enterprise scale — forests, trusts, FSMO roles, sites, GPOs, and RODCs
+- Deploy and manage **Active Directory Domain Services** at enterprise scale, forests, trusts, FSMO roles, sites, GPOs, and RODCs
 - Integrate on-prem AD with **Microsoft Entra ID** via Entra Connect, password hash sync, pass-through auth, and federation
 - Build resilient networking with **Windows DNS Server, DHCP, IPAM**, and IP Address Management for hybrid environments
 - Design **file servers and storage** using S2D, Storage Replica, DFS-N, DFS-R, ReFS, FSRM, Work Folders, BranchCache, and iSCSI
-- Operate **Hyper-V** at scale — Gen 1 vs Gen 2 VMs, nested virtualization, Hyper-V Replica, shielded VMs, live migration, SR-IOV
+- Operate **Hyper-V** at scale, Gen 1 vs Gen 2 VMs, nested virtualization, Hyper-V Replica, shielded VMs, live migration, SR-IOV
 - Onboard servers to **Azure Arc** for centralized management of on-prem, multicloud, and edge Windows Server workloads
 - Monitor everything from a single pane using **Azure Monitor**, the Azure Monitor Agent (AMA), Data Collection Rules, and Log Analytics
 - Secure servers with **Microsoft Defender for Servers**, WDAC, Credential Guard, secured-core, and just-in-time VM access
@@ -83,7 +83,7 @@ By the end of this track, you'll be able to:
 
 **Total study time:** ~42 hours reading + 12 hours videos + 12 hours labs/quizzes = **~66 hours**
 
-Modules 1–5 are the AZ-800 backbone (core infrastructure). Modules 6–10 are the AZ-801 backbone (advanced services + hybrid). The exam split isn't perfectly clean — Identity (M2) and Networking (M3) appear in both — but this is the standard split most candidates use.
+Modules 1–5 are the AZ-800 backbone (core infrastructure). Modules 6–10 are the AZ-801 backbone (advanced services + hybrid). The exam split isn't perfectly clean Identity (M2) and Networking (M3) appear in both but this is the standard split most candidates use.
 
 ---
 
@@ -93,7 +93,7 @@ Modules 1–5 are the AZ-800 backbone (core infrastructure). Modules 6–10 are 
 |------|-----------------|--------|------------|-------|
 | [Practice-Exam-1](./Practice-Exams/Practice-Exam-1.md) | After Modules 1–5 | 40 Q · 80 min | ⭐⭐⭐ | AZ-800 core infrastructure |
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 6–10 | 60 Q · 120 min | ⭐⭐⭐⭐ | AZ-801 hybrid + advanced services |
-| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before each exam | 60 Q · 120 min | ⭐⭐⭐⭐⭐ | Combined — mirror of either exam |
+| [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before each exam | 60 Q · 120 min | ⭐⭐⭐⭐⭐ | Combined, mirror of either exam |
 
 **Plus:** Spin up a **Windows Server 2022 Eval ISO** (free, 180 days) in Hyper-V or VirtualBox AND a **$10–$25/month Azure pay-as-you-go subscription**. Hybrid Administrator is brutal without hands-on time. Microsoft asks "click-through" sequencing questions you cannot pass from theory.
 
@@ -101,15 +101,15 @@ Modules 1–5 are the AZ-800 backbone (core infrastructure). Modules 6–10 are 
 
 ## 📖 The Single Most Important Resources
 
-🔗 **[Microsoft Learn AZ-800 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-800)** and **[AZ-801 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-801)** — the exact, current list of "skills measured" for each exam. Print both. Tick off every bullet as you study. Microsoft updates these every 3–6 months — always trust the latest version.
+🔗 **[Microsoft Learn AZ-800 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-800)** and **[AZ-801 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/az-801)** the exact, current list of "skills measured" for each exam. Print both. Tick off every bullet as you study. Microsoft updates these every 3–6 months always trust the latest version.
 
 Also bookmark:
 
-- 🔗 [Windows Server documentation](https://learn.microsoft.com/windows-server/) — official docs
-- 🔗 [Azure Arc documentation](https://learn.microsoft.com/azure/azure-arc/) — the heart of AZ-801
-- 🔗 [Microsoft Learn free sandbox modules — AZ-800](https://learn.microsoft.com/training/courses/az-800t00) and [AZ-801](https://learn.microsoft.com/training/courses/az-801t00) — hands-on without your own infra
-- 🔗 [Windows Admin Center](https://learn.microsoft.com/windows-server/manage/windows-admin-center/overview) — the modern admin GUI
-- 🔗 [Microsoft Tech Community — Windows Server blog](https://techcommunity.microsoft.com/category/windows-server) — current product announcements
+- 🔗 [Windows Server documentation](https://learn.microsoft.com/windows-server/), official docs
+- 🔗 [Azure Arc documentation](https://learn.microsoft.com/azure/azure-arc/), the heart of AZ-801
+- 🔗 [Microsoft Learn free sandbox modules AZ-800](https://learn.microsoft.com/training/courses/az-800t00) and [AZ-801](https://learn.microsoft.com/training/courses/az-801t00) hands-on without your own infra
+- 🔗 [Windows Admin Center](https://learn.microsoft.com/windows-server/manage/windows-admin-center/overview), the modern admin GUI
+- 🔗 [Microsoft Tech Community Windows Server blog](https://techcommunity.microsoft.com/category/windows-server) current product announcements
 
 ---
 
@@ -126,12 +126,12 @@ Also bookmark:
 | Format | Multiple choice + multi-select + drag-drop ordering + Yes/No groups + case studies | Same |
 | Delivery | Pearson VUE test center or OnVUE online proctored | Same |
 | Retake | Wait 24 hrs after 1st fail, 14 days after 2nd–4th, 1 year after 5th | Same |
-| Validity | 1 year — renew free via online assessment on Microsoft Learn | Same |
+| Validity | 1 year, renew free via online assessment on Microsoft Learn | Same |
 | Prereq | None required (AZ-104 + hands-on Windows Server strongly recommended) | None required (AZ-800 should be passed first in practice) |
 
 ### Domain Weights (Memorize These)
 
-**AZ-800 — Administering Windows Server Hybrid Core Infrastructure**
+**AZ-800, Administering Windows Server Hybrid Core Infrastructure**
 
 | Domain | Weight |
 |--------|--------|
@@ -141,7 +141,7 @@ Also bookmark:
 | Implement and manage an on-prem and hybrid networking infrastructure | 15–20% |
 | Manage storage and file services | 15–20% |
 
-**AZ-801 — Configuring Windows Server Hybrid Advanced Services**
+**AZ-801, Configuring Windows Server Hybrid Advanced Services**
 
 | Domain | Weight |
 |--------|--------|
@@ -171,19 +171,19 @@ Week 12:   Final-Mock-Exam · review wrong-answer modules · SCHEDULE AZ-801
 ```
 
 10-week pace: skip the explicit lab weeks and learn one cert at a time.
-14-week pace: stretch Modules 1, 4, and 6 across two weeks each — they're the densest.
+14-week pace: stretch Modules 1, 4, and 6 across two weeks each, they're the densest.
 
 ---
 
 ## ⚠️ The 7 Most Common Reasons People Fail These Exams
 
-1. ❌ **Treated AZ-801 as "AZ-800 + a little Azure"** — it's the opposite. Arc, Monitor, Defender, ASR, and Migrate dominate AZ-801. If you don't have an Azure sub, you will fail.
-2. ❌ **Skipped Group Policy preference vs setting** — and the Filtering/Block Inheritance/Enforced precedence rules. These are 5+ questions guaranteed on AZ-800.
-3. ❌ **Confused Entra Connect (legacy) with Entra Cloud Sync** — they coexist and have different capabilities. The exam tests when each is the right choice.
-4. ❌ **Memorized cmdlet names but not parameter order** — drag-drop "complete this command" items demand finger memory.
-5. ❌ **Ignored Storage Spaces Direct prerequisites** — RDMA NICs, 10 GbE+, identical hardware, 2–16 node range. Misremembering S2D limits is the #1 storage miss.
-6. ❌ **Underestimated DNS** — conditional forwarders, DNSSEC trust anchors, GlobalNames zones, scavenging. DNS is 8% of total marks across the two exams.
-7. ❌ **Out-of-date material** — "Azure AD" → "Microsoft Entra ID" (2023), "Azure AD Connect" → "Microsoft Entra Connect Sync" (2023). Use 2024+ resources only.
+1. ❌ **Treated AZ-801 as "AZ-800 + a little Azure"**, it's the opposite. Arc, Monitor, Defender, ASR, and Migrate dominate AZ-801. If you don't have an Azure sub, you will fail.
+2. ❌ **Skipped Group Policy preference vs setting**, and the Filtering/Block Inheritance/Enforced precedence rules. These are 5+ questions guaranteed on AZ-800.
+3. ❌ **Confused Entra Connect (legacy) with Entra Cloud Sync**, they coexist and have different capabilities. The exam tests when each is the right choice.
+4. ❌ **Memorized cmdlet names but not parameter order**, drag-drop "complete this command" items demand finger memory.
+5. ❌ **Ignored Storage Spaces Direct prerequisites**, RDMA NICs, 10 GbE+, identical hardware, 2–16 node range. Misremembering S2D limits is the #1 storage miss.
+6. ❌ **Underestimated DNS**, conditional forwarders, DNSSEC trust anchors, GlobalNames zones, scavenging. DNS is 8% of total marks across the two exams.
+7. ❌ **Out-of-date material**, "Azure AD" → "Microsoft Entra ID" (2023), "Azure AD Connect" → "Microsoft Entra Connect Sync" (2023). Use 2024+ resources only.
 
 ---
 

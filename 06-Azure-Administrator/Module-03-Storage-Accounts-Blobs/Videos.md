@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: Storage Accounts & Blobs
 
-> **How to use:** Click any card to search YouTube. Watch in order. The redundancy + SAS questions appear on every AZ-104 exam — don't skip those videos.
+> **How to use:** Click any card to search YouTube. Watch in order. The redundancy + SAS questions appear on every AZ-104 exam, don't skip those videos.
 
 ## ⭐ Essential watching (~80 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Storage Redundancy — LRS vs ZRS vs GRS vs GZRS</p>
+      <p class="vg-title">Azure Storage Redundancy, LRS vs ZRS vs GRS vs GZRS</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · The definitive comparison</span>
     </div>
@@ -38,8 +38,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Storage Accounts — Tutorial</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">Azure Storage Accounts, Tutorial</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 18 min · Kinds + creation walkthrough</span>
     </div>
   </a>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Storage Account Private Endpoints — End to End</p>
+      <p class="vg-title">Storage Account Private Endpoints, End to End</p>
       <p class="vg-creator">Inside Cloud and Security</p>
       <span class="vg-duration">⏱ 18 min · vs service endpoints</span>
     </div>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Best Azure storage deep dives, period. |
-| **Adam Marczak — Azure for Everyone** | Clean intros to each service. |
+| **Adam Marczak, Azure for Everyone** | Clean intros to each service. |
 | **Tim Warner** | AZ-104 exam-focused. |
 | **Inside Cloud and Security** | Networking + storage interplay. |
 | **Microsoft Mechanics** | Newest features (Cold tier, etc.). |

@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Akeneo PIM — Complete Walkthrough</p>
+      <p class="vg-title">Akeneo PIM, Complete Walkthrough</p>
       <p class="vg-creator">Akeneo</p>
       <span class="vg-duration">⏱ 22 min · Family, attribute, channel, locale</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GTIN, UPC, EAN — The GS1 Identifier Family</p>
+      <p class="vg-title">GTIN, UPC, EAN, The GS1 Identifier Family</p>
       <p class="vg-creator">GS1 / various</p>
       <span class="vg-duration">⏱ 12 min · Identifier types + Google Shopping</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Product Taxonomy + Category Tree Design</p>
-      <p class="vg-creator">Various — Baymard, eCommerceFuel</p>
+      <p class="vg-creator">Various, Baymard, eCommerceFuel</p>
       <span class="vg-duration">⏱ 18 min · Customer-facing vs internal</span>
     </div>
   </a>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Amazon Image Requirements — Main + Variant</p>
+      <p class="vg-title">Amazon Image Requirements, Main + Variant</p>
       <p class="vg-creator">Amazon Sellers / Helium 10</p>
       <span class="vg-duration">⏱ 14 min · Pure white background rules</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Lily AI — AI Attribute Enrichment</p>
+      <p class="vg-title">Lily AI, AI Attribute Enrichment</p>
       <p class="vg-creator">Lily AI</p>
       <span class="vg-duration">⏱ 16 min · AI-augmented PIM</span>
     </div>
@@ -98,7 +98,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Home Depot's E-Commerce Catalog Transformation</p>
-      <p class="vg-creator">Various — Modern Retail / Digital Commerce 360</p>
+      <p class="vg-creator">Various, Modern Retail / Digital Commerce 360</p>
       <span class="vg-duration">⏱ 14 min · 700K to 2.5M SKU case</span>
     </div>
   </a>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">GS1 Digital Link — 2024 Standard</p>
+      <p class="vg-title">GS1 Digital Link, 2024 Standard</p>
       <p class="vg-creator">GS1</p>
       <span class="vg-duration">⏱ 12 min · QR codes + IoT</span>
     </div>
@@ -115,7 +115,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Pimcore — Open Source PIM</p>
+      <p class="vg-title">Pimcore, Open Source PIM</p>
       <p class="vg-creator">Pimcore</p>
       <span class="vg-duration">⏱ 14 min · Custom-build PIM platform</span>
     </div>
@@ -126,7 +126,7 @@
 
 ## ✅ After watching
 
-1. Define PIM, ERP, PLM, DAM, CMS — one sentence each.
+1. Define PIM, ERP, PLM, DAM, CMS, one sentence each.
 2. What's the difference between a Family and a Category in Akeneo?
 3. State the GTIN identifier types: UPC, EAN-13, EAN-8, ISBN, ITF-14.
 4. List the Amazon main image requirements.

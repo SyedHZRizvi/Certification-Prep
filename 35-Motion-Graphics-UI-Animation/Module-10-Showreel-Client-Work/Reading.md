@@ -7,9 +7,9 @@ title: "Module 10: Showreel & Client Work"
 
 ## The 90-Second Lie
 
-Every motion designer you admire has a showreel that is a fiction. It is the best 60–90 seconds of work from years of projects — the highlights from dozens of pieces, each selected because it shows something specific, each ordered deliberately, each paired with music that makes everything feel more dramatic than it was.
+Every motion designer you admire has a showreel that is a fiction. It is the best 60–90 seconds of work from years of projects, the highlights from dozens of pieces, each selected because it shows something specific, each ordered deliberately, each paired with music that makes everything feel more dramatic than it was.
 
-The showreel is not a portfolio. It is a pitch. It does not show everything you've done — it shows the best version of what you *could* do for the person watching.
+The showreel is not a portfolio. It is a pitch. It does not show everything you've done, it shows the best version of what you *could* do for the person watching.
 
 Understanding this is the first step to building a reel that actually gets you hired.
 
@@ -28,13 +28,13 @@ Understanding this is the first step to building a reel that actually gets you h
 
 ### The Ruthless Edit
 
-The golden rule: **if a piece makes you hesitate even for a second about including it, cut it.** Weak pieces don't make a reel look broader — they make it look worse. A reel with 8 excellent pieces is stronger than one with 12 pieces where 4 are mediocre.
+The golden rule: **if a piece makes you hesitate even for a second about including it, cut it.** Weak pieces don't make a reel look broader, they make it look worse. A reel with 8 excellent pieces is stronger than one with 12 pieces where 4 are mediocre.
 
 > 🎯 **Exam Tip:** The most common showreel mistake is length. Every experienced creative director will tell you the same thing: cut 30% of what you think you need. Then cut another 10%. 60 seconds is the absolute maximum for a motion design showreel. 45 seconds is better.
 
 ### The Pacing Rule
 
-Each piece should change before the viewer gets comfortable. If a piece holds on a single moment for more than 3–4 seconds, that is time you've borrowed from another piece that might be stronger. Edit to the music — cuts on beats feel better than cuts in the middle of musical phrases.
+Each piece should change before the viewer gets comfortable. If a piece holds on a single moment for more than 3–4 seconds, that is time you've borrowed from another piece that might be stronger. Edit to the music, cuts on beats feel better than cuts in the middle of musical phrases.
 
 ---
 
@@ -42,11 +42,11 @@ Each piece should change before the viewer gets comfortable. If a piece holds on
 
 ### How to Watch Your Own Work Critically
 
-1. Watch it at actual size on a phone — not on a large monitor
-2. Watch it on mute — does the visual storytelling still work?
+1. Watch it at actual size on a phone, not on a large monitor
+2. Watch it on mute, does the visual storytelling still work?
 3. Watch it once, then immediately watch your three favorite reels from designers you admire
 4. After that comparison: how does yours feel?
-5. Get written feedback from someone who will be honest — not just encouraging
+5. Get written feedback from someone who will be honest, not just encouraging
 
 ### The Specificity Test
 
@@ -59,10 +59,10 @@ For each piece in your reel, ask: **"Why is this piece in the reel? What specifi
 ### Reel Sequencing
 
 Do NOT organize chronologically (worst mistake) or alphabetically (absurd). Organize by:
-1. **Strongest first, second strongest last** — viewers remember beginnings and endings
-2. **Alternate fast/slow** — rhythm in the reel itself
-3. **Similar styles away from each other** — if you have two kinetic type pieces, don't put them adjacent
-4. **Your specialty in the middle** — the body of the reel should show your deepest skill
+1. **Strongest first, second strongest last**, viewers remember beginnings and endings
+2. **Alternate fast/slow**, rhythm in the reel itself
+3. **Similar styles away from each other**, if you have two kinetic type pieces, don't put them adjacent
+4. **Your specialty in the middle**, the body of the reel should show your deepest skill
 
 ---
 
@@ -70,29 +70,29 @@ Do NOT organize chronologically (worst mistake) or alphabetically (absurd). Orga
 
 > 🎯 **Exam Callout 1:** The maximum showreel length is **60 seconds**. The preferred length is **45 seconds**. The exam tests: what is the recommended maximum duration for a motion design showreel? Any answer above 60 seconds is wrong.
 
-> 🎯 **Exam Callout 2:** The Hook Zone (first 0–5 seconds) should contain your **single strongest piece** — not an intro slate, not your name, not a title card. The exam tests: what content belongs in the first 5 seconds of a showreel?
+> 🎯 **Exam Callout 2:** The Hook Zone (first 0–5 seconds) should contain your **single strongest piece**, not an intro slate, not your name, not a title card. The exam tests: what content belongs in the first 5 seconds of a showreel?
 
 > 🎯 **Exam Callout 3:** **Day rates for motion designers are not hourly rates × 8.** Day rates reflect overhead, non-billable time (administrative, business development), software licenses, hardware depreciation, and market value. The exam tests: what additional costs are reflected in a motion designer's day rate beyond their hourly skill value?
 
-> 🎯 **Exam Callout 4:** The industry standard for revisions included in a project rate is **2 rounds**. A revision round is defined as one consolidated set of changes submitted at the same time — not individual changes submitted one by one. The exam tests: how many revision rounds are included in a standard motion design project rate?
+> 🎯 **Exam Callout 4:** The industry standard for revisions included in a project rate is **2 rounds**. A revision round is defined as one consolidated set of changes submitted at the same time, not individual changes submitted one by one. The exam tests: how many revision rounds are included in a standard motion design project rate?
 
-> 🎯 **Exam Callout 5:** **Spec work** — creating design work without payment in hopes of winning a project — is considered unethical by the motion design community and by professional organizations including AIGA. The exam frames a spec work scenario and asks whether participating is recommended. The answer is always: no.
+> 🎯 **Exam Callout 5:** **Spec work** creating design work without payment in hopes of winning a project is considered unethical by the motion design community and by professional organizations including AIGA. The exam frames a spec work scenario and asks whether participating is recommended. The answer is always: no.
 
 > 🎯 **Exam Callout 6:** Can you use client work in your showreel? Generally yes, if: the project has been publicly released, there is no NDA, and the contract doesn't explicitly prohibit portfolio use. The exam tests these three conditions.
 
-> 🎯 **Exam Callout 7:** The most important single conversation in a client project is the **reference call** — a 30-minute session reviewing 5–10 video references together to surface aesthetic preferences the client can't articulate in a written brief. The exam tests: what is the purpose of the reference call?
+> 🎯 **Exam Callout 7:** The most important single conversation in a client project is the **reference call**, a 30-minute session reviewing 5–10 video references together to surface aesthetic preferences the client can't articulate in a written brief. The exam tests: what is the purpose of the reference call?
 
 ---
 
 ## ⚠️ Common Traps: Showreel & Client Work
 
-**Trap 1 — Organizing Chronologically:** Organizing the showreel by date (oldest first or newest first) is the most common sequencing mistake. Creative directors watch for your best 10 seconds — not your career progression. Sequencing by quality and variety, not chronology, is the standard.
+**Trap 1 Organizing Chronologically:** Organizing the showreel by date (oldest first or newest first) is the most common sequencing mistake. Creative directors watch for your best 10 seconds not your career progression. Sequencing by quality and variety, not chronology, is the standard.
 
-**Trap 2 — Including "Proof of Process" Work:** Students include wireframes, test renders, and early drafts to "show process." A showreel is not a case study — it is a highlight reel. Process is for portfolio websites and job interviews. The showreel shows final, polished output only.
+**Trap 2 Including "Proof of Process" Work:** Students include wireframes, test renders, and early drafts to "show process." A showreel is not a case study it is a highlight reel. Process is for portfolio websites and job interviews. The showreel shows final, polished output only.
 
-**Trap 3 — Confusing Day Rate and Project Rate:** A day rate implies the designer is available exclusively for that client for that day (or at least, that billing day). A project rate implies a defined deliverable regardless of how many days it takes. Mixing these models creates contractual ambiguity — define clearly which model applies in every proposal.
+**Trap 3 Confusing Day Rate and Project Rate:** A day rate implies the designer is available exclusively for that client for that day (or at least, that billing day). A project rate implies a defined deliverable regardless of how many days it takes. Mixing these models creates contractual ambiguity define clearly which model applies in every proposal.
 
-**Trap 4 — Verbal Revision Requests:** Revisions communicated verbally (Zoom call, phone) are not documented. When a client later disputes what was agreed, there is no record. The professional standard: every revision request must be submitted in writing (email) with a consolidated list. Acknowledge receipt in writing.
+**Trap 4, Verbal Revision Requests:** Revisions communicated verbally (Zoom call, phone) are not documented. When a client later disputes what was agreed, there is no record. The professional standard: every revision request must be submitted in writing (email) with a consolidated list. Acknowledge receipt in writing.
 
 ---
 
@@ -132,15 +132,15 @@ A brief is the document that defines the project before any work begins. A good 
 | **Audience** | Who is this for? Age, platform context, technical literacy |
 | **Duration** | Exact runtime; is there flexibility? |
 | **Deliverables** | File format(s), sizes, versions needed |
-| **Brand Guidelines** | Colors, fonts, logos — what already exists |
-| **References** | "Make it look like X" — actual reference videos |
+| **Brand Guidelines** | Colors, fonts, logos, what already exists |
+| **References** | "Make it look like X", actual reference videos |
 | **Timeline** | When is the draft due? Approval? Final delivery? |
 | **Budget** | Total budget for the project |
 | **Revision Policy** | How many rounds are included? |
 
 ### The Reference Call
 
-The most important conversation in any motion project is the reference call — a 30-minute conversation where you and the client look at 5–10 videos together and identify which elements of each they like and dislike. This surfaces aesthetic preferences that clients can't articulate in writing.
+The most important conversation in any motion project is the reference call, a 30-minute conversation where you and the client look at 5–10 videos together and identify which elements of each they like and dislike. This surfaces aesthetic preferences that clients can't articulate in writing.
 
 ---
 
@@ -163,7 +163,7 @@ Understanding the studio landscape helps you position yourself for the right opp
 The quality of your showreel is the primary determinant of which tier hires you. This is not linear:
 - A reel that passes Tier 3 standards but not Tier 2 will earn Tier 3 rates indefinitely
 - A reel that clears Tier 1 standards typically does so after 5–8 years of professional work
-- The transition from Tier 3 to Tier 2 usually requires one "anchor piece" — a well-known project that immediately establishes credibility
+- The transition from Tier 3 to Tier 2 usually requires one "anchor piece", a well-known project that immediately establishes credibility
 
 ---
 
@@ -179,9 +179,9 @@ The quality of your showreel is the primary determinant of which tier hires you.
 
 The most common freelance disaster: a "quick change" that becomes a full redesign. Protect yourself:
 
-1. Define revisions clearly in the proposal ("changes to timing, color, and text — not structural redesigns")
+1. Define revisions clearly in the proposal ("changes to timing, color, and text, not structural redesigns")
 2. Respond to scope-expanding requests with: "That would constitute a new phase of work. I'd be happy to quote it separately."
-3. Track all revision requests in writing (email, not Slack) — verbal requests are easily forgotten or disputed
+3. Track all revision requests in writing (email, not Slack), verbal requests are easily forgotten or disputed
 
 ---
 
@@ -199,12 +199,12 @@ A detailed, numbered list of exactly what will be delivered:
 3. One static thumbnail for each format
 4. All source files (AE project, assets) upon final payment
 
-**Why This Matters:** Everything NOT on this list is out of scope. If the client asks for a "square version" later, you say: "That's not in the agreed scope — here's a quote for the additional format."
+**Why This Matters:** Everything NOT on this list is out of scope. If the client asks for a "square version" later, you say: "That's not in the agreed scope, here's a quote for the additional format."
 
 ### Section 3: Investment
 > "Total project investment: $[X]. 50% deposit due before work begins. 50% balance due upon final delivery."
 
-**Never start work without a deposit.** The deposit is not a down payment on trust — it is what converts a verbal agreement into a financial commitment.
+**Never start work without a deposit.** The deposit is not a down payment on trust, it is what converts a verbal agreement into a financial commitment.
 
 ### Section 4: Revision Policy
 > "This project includes two (2) rounds of revisions. A revision round is one consolidated set of changes submitted together via email. Additional rounds are available at $[X]/hour. Structural redesigns (changes to concept, format, or narrative) are quoted separately."
@@ -245,7 +245,7 @@ When you complete a motion design project for a client, what are you handing ove
 "Spec work" (speculative work) means creating design work without payment in hopes of winning a project. This is common in motion design in the form of "design competitions" and "unpaid pitches."
 
 The motion design community's consensus: **do not do spec work.** The reasons:
-1. It devalues the profession — you're competing against yourself
+1. It devalues the profession, you're competing against yourself
 2. The "winning" work often isn't used, and you have no recourse
 3. It normalizes clients getting professional work without paying
 4. Experienced designers never do it; only those new to the industry do, which perpetuates the problem
@@ -260,7 +260,7 @@ Can you put client work in your showreel? Generally yes, with these conditions:
 - You credit the client in your reel or reel description
 - You don't show work that reveals confidential business information
 
-If in doubt, ask the client. Most clients are happy to have their work in a designer's reel — it's free publicity.
+If in doubt, ask the client. Most clients are happy to have their work in a designer's reel, it's free publicity.
 
 ---
 
@@ -287,7 +287,7 @@ A case study is distinct from a showreel:
 
 Case studies answer: "Why did you make this? What was the challenge? How did you solve it?"
 
-Studios at Tier 1 and Tier 2 increasingly request case studies alongside showreels for senior roles, because they reveal how a designer thinks — not just what they can produce.
+Studios at Tier 1 and Tier 2 increasingly request case studies alongside showreels for senior roles, because they reveal how a designer thinks, not just what they can produce.
 
 **Case Study Structure:**
 1. Client context (1–2 sentences)
@@ -319,11 +319,11 @@ Studios at Tier 1 and Tier 2 increasingly request case studies alongside showree
 
 **What Now?**
 
-1. Build your showreel — 60 seconds, using the four-zone structure
-2. Take the Final Mock Exam — aim for 85%+
-3. Drill the Flashcards — 15 minutes daily for two weeks
-4. Apply for School of Motion's Animation Bootcamp or Explainer Camp — the community accelerates career growth faster than any individual course
-5. Get on Motionographer, Vimeo, and Behance — the platforms where creative directors look for motion designers
+1. Build your showreel, 60 seconds, using the four-zone structure
+2. Take the Final Mock Exam, aim for 85%+
+3. Drill the Flashcards, 15 minutes daily for two weeks
+4. Apply for School of Motion's Animation Bootcamp or Explainer Camp, the community accelerates career growth faster than any individual course
+5. Get on Motionographer, Vimeo, and Behance, the platforms where creative directors look for motion designers
 
 ---
 
@@ -348,11 +348,11 @@ Buck (the studio behind Google's motion identity, Headspace, Apple TV+, and hund
 
 **What Buck Looks For (per interviews with their creative directors):**
 
-1. **A clear voice in the first 10 seconds.** Not technical complexity. Not software sophistication. A voice — evidence that the designer has aesthetic opinions and makes them visible.
+1. **A clear voice in the first 10 seconds.** Not technical complexity. Not software sophistication. A voice, evidence that the designer has aesthetic opinions and makes them visible.
 
 2. **Evidence of principle, not process.** Buck doesn't care whether you used AE or Cinema 4D. They care whether the timing is intentional. "Why did this element take 300ms?" If the answer is "because it looked good," that's a process answer. If the answer is "because this element is carrying a lot of visual weight and needed time to settle," that's a principle answer.
 
-3. **The weakest piece.** Buck's creative directors report that they look specifically for the weakest piece in a reel. A reel where the weakest piece is still strong indicates a consistent skill level. A reel where the weakest piece is significantly weaker indicates a designer who included filler — which suggests poor self-editing judgment.
+3. **The weakest piece.** Buck's creative directors report that they look specifically for the weakest piece in a reel. A reel where the weakest piece is still strong indicates a consistent skill level. A reel where the weakest piece is significantly weaker indicates a designer who included filler, which suggests poor self-editing judgment.
 
 4. **Unrecognizable influences.** Work that looks exactly like other studios' work shows technical competence but not artistic development. Buck values designers who have processed their influences through their own sensibility.
 
@@ -383,24 +383,24 @@ For each piece you include in your reel, apply the 8-second test yourself. Show 
 
 ## 🗣️ Socratic Discussion Questions
 
-1. The showreel is described as "a fiction" — a curated 60 seconds that doesn't represent the full range of your work. But some studios (particularly 3D and VFX studios) increasingly request case studies that show process, not just results. How do you build two different presentation formats — a showreel and a process portfolio — from the same body of work?
+1. The showreel is described as "a fiction" a curated 60 seconds that doesn't represent the full range of your work. But some studios (particularly 3D and VFX studios) increasingly request case studies that show process, not just results. How do you build two different presentation formats a showreel and a process portfolio, from the same body of work?
 
 2. The "ruthless edit" rule says: if you hesitate even a moment about including a piece, cut it. But early-career designers often have only 3–4 strong pieces. Is it better to show 3 excellent pieces in a 30-second reel, or pad to 60 seconds with 6 adequate pieces?
 
 3. Spec work is considered unethical by the motion design community. But many clients, especially small businesses with no prior experience hiring designers, genuinely don't understand the norms. How do you educate a first-time client about spec work without losing the project?
 
-4. The reference call is described as the most important conversation in a project. But senior creative directors often don't have 30 minutes for a call — they send a brief and expect a proposal. How do you extract reference information from clients who communicate primarily in writing?
+4. The reference call is described as the most important conversation in a project. But senior creative directors often don't have 30 minutes for a call, they send a brief and expect a proposal. How do you extract reference information from clients who communicate primarily in writing?
 
-5. Licensing is the most complex legal area in freelance motion design — fonts, music, stock footage, plugins, and the final video itself all have separate licensing implications. At what career stage should a motion designer engage an entertainment lawyer to review their standard contract, and what would that review cost relative to the risk of not having one?
+5. Licensing is the most complex legal area in freelance motion design, fonts, music, stock footage, plugins, and the final video itself all have separate licensing implications. At what career stage should a motion designer engage an entertainment lawyer to review their standard contract, and what would that review cost relative to the risk of not having one?
 
 ---
 
 ## 📚 Further Reading
 
-- [School of Motion — Building a Showreel](https://www.youtube.com/results?search_query=school+of+motion+showreel+how+to+build) — the most comprehensive free guide to showreel structure, pacing, and sequencing
-- [Motion Hatch Podcast](https://www.youtube.com/results?search_query=motion+hatch+podcast+freelance+motion+design) — the leading podcast on the business of motion design; episodes on pricing and client work are directly exam-relevant
-- *The Business of Illustration* — Steven Heller & Marshall Arisman (Allworth Press, 2012) — the chapter structures on contracts, pricing, and client management map directly to motion design; the most practical business book for independent creatives
-- *Burn Your Portfolio* — Michael Janda (New Riders, 2013) — frank, practical advice on the business of design from a studio owner's perspective; the spec work chapter is the definitive statement on the ethics question
-- *Getting Real* — Jason Fried & DHH (37signals, 2006) — the philosophy of building (and presenting) only your best work; short chapters apply well to showreel curation thinking
-- [Buck's Creative Brief Template](https://www.youtube.com/results?search_query=creative+brief+motion+design+client+workflow) — how a top studio structures project briefs; the template is the industry standard
-- [Motionographer](https://motionographer.com) — daily motion design inspiration + industry news; the site where creative directors look for designers to hire
+- [School of Motion Building a Showreel](https://www.youtube.com/results?search_query=school+of+motion+showreel+how+to+build) the most comprehensive free guide to showreel structure, pacing, and sequencing
+- [Motion Hatch Podcast](https://www.youtube.com/results?search_query=motion+hatch+podcast+freelance+motion+design), the leading podcast on the business of motion design; episodes on pricing and client work are directly exam-relevant
+- *The Business of Illustration* Steven Heller & Marshall Arisman (Allworth Press, 2012) the chapter structures on contracts, pricing, and client management map directly to motion design; the most practical business book for independent creatives
+- *Burn Your Portfolio* Michael Janda (New Riders, 2013) frank, practical advice on the business of design from a studio owner's perspective; the spec work chapter is the definitive statement on the ethics question
+- *Getting Real* Jason Fried & DHH (37signals, 2006) the philosophy of building (and presenting) only your best work; short chapters apply well to showreel curation thinking
+- [Buck's Creative Brief Template](https://www.youtube.com/results?search_query=creative+brief+motion+design+client+workflow), how a top studio structures project briefs; the template is the industry standard
+- [Motionographer](https://motionographer.com), daily motion design inspiration + industry news; the site where creative directors look for designers to hire

@@ -1,6 +1,6 @@
 ---
 permalink: /36-3D-Animation-Blender/Practice-Exams/Practice-Exam-1/
-title: "Practice Exam 1: Blender Fundamentals — Modules 1–5"
+title: "Practice Exam 1: Blender Fundamentals, Modules 1–5"
 ---
 
 # 🧪 Practice Exam 1: Blender Fundamentals (Modules 1–5)
@@ -104,7 +104,7 @@ UV seams should be placed:
 
 A. Along the nose bridge and center face for the most accurate UV layout
 B. On every edge loop to maximize UV resolution
-C. Only at non-deforming areas (hard surfaces, props — never characters)
+C. Only at non-deforming areas (hard surfaces, props, never characters)
 D. **At areas least visible to the camera: under arms, inside legs, behind ears**
 
 ---
@@ -312,34 +312,34 @@ D. **Applying scale (Ctrl+A → Apply Scale) on the mesh**
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.   B — Ctrl+Spacebar maximizes the active editor
-2.   C — Y axis = forward (into the scene)
-3.   D — Outliner = scene hierarchy management
-4.   C — Non-unit scale causes armature bone math errors
-5.   D — Ctrl+Alt+Click selects edge ring
-6.   C — Pinching at elbow = too few edge loops
-7.   C — Subsurf level 2 = ×16 polygon multiplier
-8.   C — Metallic must be 0 or 1; 0.6 is not physically valid
-9.   D — Normal maps must be Non-Color in Image Texture node
-10.  D — Seams at hidden areas (under arms, inside legs, behind ears)
-11.  C — Material Preview = HDRI-based shader preview without full render
-12.  C — Model → Texture → Rig → Weight paint
-13.  D — Bone Collections replace Bone Layers in Blender 4.x
-14.  C — Armature modifier on the mesh object
-15.  C — E extrudes a new connected bone from the tail
-16.  C — Pole target defines elbow/knee bending direction
-17.  C — Environment Texture node in World Shader with .hdr/.exr file
-18.  D — 16:1 ratio = horror/thriller (extreme contrast)
-19.  C — Sprite Fright averaged 12–18 lights per shot
-20.  D — CTRL bones are the animator-facing controls
-21.  B — Skin bag = armpit/hip collapses when limb is raised
-22.  C — Mesh → Symmetrize (with .L/.R naming)
-23.  C — Ctrl+N recalculates bone roll
-24.  D — Scroll wheel resizes Proportional Editing radius during transform
-25.  C — Corrective shape keys fix joint deformation artifacts
-26.  D — Sprite Fright (2021) is the benchmark open movie
-27.  B — Shading workspace or any editor set to Shader Editor type
-28.  D — Mirror modifier for automatic symmetry
-29.  C — Chain Length 2 = 2 bones above the tip in the chain
-30.  D — Apply scale before rigging
+1.   B: Ctrl+Spacebar maximizes the active editor
+2.   C: Y axis = forward (into the scene)
+3.   D: Outliner = scene hierarchy management
+4.   C: Non-unit scale causes armature bone math errors
+5.   D: Ctrl+Alt+Click selects edge ring
+6.   C: Pinching at elbow = too few edge loops
+7.   C: Subsurf level 2 = ×16 polygon multiplier
+8.   C: Metallic must be 0 or 1; 0.6 is not physically valid
+9.   D: Normal maps must be Non-Color in Image Texture node
+10.  D: Seams at hidden areas (under arms, inside legs, behind ears)
+11.  C: Material Preview = HDRI-based shader preview without full render
+12.  C: Model → Texture → Rig → Weight paint
+13.  D: Bone Collections replace Bone Layers in Blender 4.x
+14.  C: Armature modifier on the mesh object
+15.  C: E extrudes a new connected bone from the tail
+16.  C: Pole target defines elbow/knee bending direction
+17.  C: Environment Texture node in World Shader with .hdr/.exr file
+18.  D: 16:1 ratio = horror/thriller (extreme contrast)
+19.  C: Sprite Fright averaged 12–18 lights per shot
+20.  D: CTRL bones are the animator-facing controls
+21.  B: Skin bag = armpit/hip collapses when limb is raised
+22.  C: Mesh → Symmetrize (with .L/.R naming)
+23.  C: Ctrl+N recalculates bone roll
+24.  D: Scroll wheel resizes Proportional Editing radius during transform
+25.  C: Corrective shape keys fix joint deformation artifacts
+26.  D: Sprite Fright (2021) is the benchmark open movie
+27.  B: Shading workspace or any editor set to Shader Editor type
+28.  D: Mirror modifier for automatic symmetry
+29.  C: Chain Length 2 = 2 bones above the tip in the chain
+30.  D: Apply scale before rigging
 ```

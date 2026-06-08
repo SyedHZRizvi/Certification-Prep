@@ -1,6 +1,6 @@
-# Module 3 Cheat Sheet — Facial Animation 😶
+# Module 3 Cheat Sheet, Facial Animation 😶
 
-## FACS Quick Reference — Top 20 Action Units
+## FACS Quick Reference, Top 20 Action Units
 
 | AU | Name | Expression |
 |----|------|-----------|
@@ -23,7 +23,7 @@
 
 ---
 
-## 7 Universal Expressions — AU Combos
+## 7 Universal Expressions, AU Combos
 
 | Emotion | Key AUs |
 |---------|---------|
@@ -33,7 +33,7 @@
 | Disgust | AU9 + AU15 + AU16 |
 | Anger | AU4 + AU5 + AU7 + AU23 |
 | Surprise | AU1+2 + AU5 + AU26 |
-| Contempt | AU12R (right side ONLY — asymmetric) |
+| Contempt | AU12R (right side ONLY, asymmetric) |
 
 ---
 
@@ -49,7 +49,7 @@ Lower lid = 25% of movement
 
 ---
 
-## Dead Eye — 5 Causes and Fixes
+## Dead Eye, 5 Causes and Fixes
 
 | Cause | Fix |
 |-------|-----|
@@ -80,7 +80,7 @@ Lower lid = 25% of movement
 Social smile:   AU12 alone (mouth only)
 Genuine smile:  AU6 + AU12 (cheeks rise; crow's-feet; eye narrows from below)
 
-AU6 cannot be voluntarily faked in isolation — the key authenticity marker
+AU6 cannot be voluntarily faked in isolation, the key authenticity marker
 ```
 
 ---
@@ -149,7 +149,7 @@ The perceptual signals of AUs can be mimicked through anatomically incorrect but
 | AU15 Lip depression | Depressor anguli | Mouth line angle downward |
 | AU4 Brow lower | Corrugator | Stripe / marking pattern shifted forward |
 
-**Principle:** FACS is a perceptual system. Any visual element that mimics the output signal of an AU will be read as that expression — regardless of the anatomy producing it.
+**Principle:** FACS is a perceptual system. Any visual element that mimics the output signal of an AU will be read as that expression, regardless of the anatomy producing it.
 
 ---
 
@@ -169,11 +169,11 @@ The perceptual signals of AUs can be mimicked through anatomically incorrect but
 
 | Question | Answer |
 |---------|--------|
-| AU for Duchenne smile cheek raise | AU6 (Cheek Raiser — orbicularis oculi orbital) |
-| Contempt: which side | Right side (character's right) — uniquely asymmetric |
+| AU for Duchenne smile cheek raise | AU6 (Cheek Raiser, orbicularis oculi orbital) |
+| Contempt: which side | Right side (character's right), uniquely asymmetric |
 | Blink: upper vs lower lid travel | Upper lid 75%, lower lid 25% |
-| Saccade tangent type | Stepped — eyes jump, never glide |
-| Marlin paradox | FACS is perceptual not anatomical — surrogates produce same perception |
+| Saccade tangent type | Stepped, eyes jump, never glide |
+| Marlin paradox | FACS is perceptual not anatomical, surrogates produce same perception |
 | Blink: close or open faster | Close (4f) is faster than open (5–6f) |
-| Concentration: which AUs | AU7 (lid tighten) + AU4 (brow lower) — without AU23 anger component |
+| Concentration: which AUs | AU7 (lid tighten) + AU4 (brow lower), without AU23 anger component |
 | Lying person's blink rate | Suppressed (slower), not increased |

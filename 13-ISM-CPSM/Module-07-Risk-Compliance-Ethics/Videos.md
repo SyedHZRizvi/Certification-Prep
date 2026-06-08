@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">BCP for Supply Chain — BIA, RTO, RPO</p>
+      <p class="vg-title">BCP for Supply Chain, BIA, RTO, RPO</p>
       <p class="vg-creator">Source One Management Services</p>
       <span class="vg-duration">⏱ 11 min · BCP fundamentals</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Scope 3 Emissions — Why Procurement Owns It</p>
+      <p class="vg-title">Scope 3 Emissions, Why Procurement Owns It</p>
       <p class="vg-creator">Sievo Procurement</p>
       <span class="vg-duration">⏱ 12 min · GHG Protocol</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ISM Code of Ethics — CPSM Scenarios</p>
+      <p class="vg-title">ISM Code of Ethics, CPSM Scenarios</p>
       <p class="vg-creator">Procurement Tactics</p>
       <span class="vg-duration">⏱ 18 min · Gift, bribery, conflict-of-interest cases</span>
     </div>

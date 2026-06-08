@@ -7,7 +7,7 @@
 ## 📅 21-Day Timeline
 
 ```
-WEEK 1 — FOUNDATION
+WEEK 1, FOUNDATION
   Day 1: Brief
   Day 2: Media brief + ICP validation
   Day 3: GA4 + conv tracking
@@ -16,12 +16,12 @@ WEEK 1 — FOUNDATION
   Day 6: Creative (AI pipeline)
   Day 7: Campaign drafts in Ads Editor
 
-WEEK 2 — LAUNCH + LEARN
+WEEK 2, LAUNCH + LEARN
   Day 8: Google launch
   Day 9: Meta launch
   Day 10-14: Daily ops (no major edits in first 5 days)
 
-WEEK 3 — SCALE + DOCUMENT
+WEEK 3, SCALE + DOCUMENT
   Day 15: Scale OR diagnose
   Day 16: DCT new creative
   Day 17: Refresh underperformers
@@ -36,9 +36,9 @@ WEEK 3 — SCALE + DOCUMENT
 ## 🎯 The 4 Deliverables
 
 ```
-00-Brief.pdf          (Day 1 — your contract)
+00-Brief.pdf          (Day 1, your contract)
 01-Daily-Log.md       (14+ daily notes)
-02-Final-Report.md    (Day 21 — numbers + analysis)
+02-Final-Report.md    (Day 21, numbers + analysis)
 03-Lessons-Blog.md    (1,500-2,000 words for portfolio)
 ```
 
@@ -99,13 +99,13 @@ CONVERSION (5 min):
 
 ---
 
-## 🎯 First 14 Days — What's Normal vs What's Wrong
+## 🎯 First 14 Days, What's Normal vs What's Wrong
 
 | Metric | Normal | Diagnose |
 |--------|--------|----------|
 | Day 1-3 CTR | 1-5% | < 0.5% = creative issue |
 | Day 1-3 CPM | $5-$25 | > $40 = audience too narrow |
-| Day 1-3 Conv | 0-3 (small) | Don't panic — learning phase |
+| Day 1-3 Conv | 0-3 (small) | Don't panic, learning phase |
 | Day 7 CPA | Could be 2-3x target | Diagnose, don't pause |
 | Day 14 CPA | Should be ≤ target | If above: pivot |
 

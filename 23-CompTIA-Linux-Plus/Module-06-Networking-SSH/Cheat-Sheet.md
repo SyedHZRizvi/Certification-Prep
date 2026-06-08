@@ -77,7 +77,7 @@ Profiles in `/etc/NetworkManager/system-connections/*.nmconnection`.
 
 ---
 
-## 🔌 sshd (server) — `/etc/ssh/sshd_config`
+## 🔌 sshd (server), `/etc/ssh/sshd_config`
 
 ```
 Port 22

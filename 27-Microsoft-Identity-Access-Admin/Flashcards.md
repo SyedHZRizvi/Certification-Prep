@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,7 +275,7 @@
 ## 🪪 SECTION 1: ENTRA ID FUNDAMENTALS
 
 **Q:** What was Microsoft Entra ID called before mid-2023?
-**A:** Azure Active Directory (Azure AD). Microsoft rebranded but the exam may still use the old term — they mean the same service.
+**A:** Azure Active Directory (Azure AD). Microsoft rebranded but the exam may still use the old term, they mean the same service.
 
 **Q:** Name the four Entra ID editions.
 **A:** Free, Microsoft Entra ID P1, Microsoft Entra ID P2, Microsoft Entra External ID (formerly Azure AD B2C).
@@ -287,7 +287,7 @@
 **A:** P2.
 
 **Q:** What is a tenant in Entra ID?
-**A:** A dedicated, isolated instance of the Entra ID directory representing your organization — your identity boundary.
+**A:** A dedicated, isolated instance of the Entra ID directory representing your organization, your identity boundary.
 
 **Q:** Format of the default Entra tenant domain?
 **A:** `<yourorg>.onmicrosoft.com` (cannot be deleted, cannot be renamed).
@@ -336,7 +336,7 @@
 **A:** Assign a license SKU to a group; members automatically inherit and lose the license as they join/leave the group.
 
 **Q:** What is entitlement management used for?
-**A:** Lets non-admins request bundles of access (an access package) — groups, apps, SharePoint sites — with approval workflows and time bounds. P2 feature.
+**A:** Lets non-admins request bundles of access (an access package) groups, apps, SharePoint sites with approval workflows and time bounds. P2 feature.
 
 **Q:** What is a Terms of Use document in Entra ID?
 **A:** A PDF you can require users (or specific groups/apps) to accept at sign-in via a Conditional Access policy. Acceptance is logged for audit.
@@ -345,14 +345,14 @@
 **A:** Upload a CSV in the Entra portal's "Bulk create" tool, or use Microsoft Graph PowerShell `New-MgUser` in a loop.
 
 **Q:** Difference between an assigned group and a dynamic group for license assignment?
-**A:** Both can hold the license. Dynamic auto-adjusts membership from attributes; assigned needs manual changes — but license processing time is the same.
+**A:** Both can hold the license. Dynamic auto-adjusts membership from attributes; assigned needs manual changes, but license processing time is the same.
 
 ---
 
 ## 🔑 SECTION 3: AUTHENTICATION (MFA & PASSWORDLESS)
 
 **Q:** Define "passwordless" in Entra terms.
-**A:** A sign-in method that doesn't require a password at all — FIDO2 keys, Windows Hello for Business, Microsoft Authenticator phone sign-in, or certificate-based authentication.
+**A:** A sign-in method that doesn't require a password at all, FIDO2 keys, Windows Hello for Business, Microsoft Authenticator phone sign-in, or certificate-based authentication.
 
 **Q:** Three Microsoft-supported passwordless methods?
 **A:** FIDO2 security keys, Windows Hello for Business, Microsoft Authenticator phone sign-in (Authenticator app passkey).
@@ -367,7 +367,7 @@
 **A:** A single user experience to register MFA *and* SSPR methods together (Microsoft Authenticator, phone, email, FIDO2). Now the default for all tenants.
 
 **Q:** When was number-matching enabled by default in Microsoft Authenticator?
-**A:** February 2023 — Microsoft enabled it for all tenants to mitigate MFA-fatigue push-bombing.
+**A:** February 2023, Microsoft enabled it for all tenants to mitigate MFA-fatigue push-bombing.
 
 **Q:** What does the Temporary Access Pass (TAP) do?
 **A:** A time-bounded passcode an admin issues so a user can register passwordless methods (e.g. a new FIDO2 key) without ever entering a password.
@@ -376,7 +376,7 @@
 **A:** "Multifactor authentication" (any MFA), "Passwordless MFA", and "Phishing-resistant MFA" (FIDO2 / Windows Hello / certificate-based).
 
 **Q:** What is certificate-based authentication (CBA) used for?
-**A:** Cloud-native authentication using X.509 certificates — required for FedRAMP High / DoD scenarios where smart cards replace passwords.
+**A:** Cloud-native authentication using X.509 certificates, required for FedRAMP High / DoD scenarios where smart cards replace passwords.
 
 **Q:** What is SSPR (Self-Service Password Reset)?
 **A:** Lets users reset their own forgotten passwords using registered methods (e.g. Authenticator, phone). Requires P1 for cloud users and `M365 Apps for business` or P1 for synced users.
@@ -389,7 +389,7 @@
 **A:** Assignments (who/what), Conditions (signals like risk, device, location), and Access controls (grant or block, with controls like MFA, compliant device).
 
 **Q:** What is "report-only" mode?
-**A:** A CA policy state where the policy is evaluated and logged but not enforced — safe way to test before turning it on.
+**A:** A CA policy state where the policy is evaluated and logged but not enforced, safe way to test before turning it on.
 
 **Q:** What does a "named location" do in Conditional Access?
 **A:** Defines IP ranges or countries as a named entity (e.g. "Corporate HQ"). Used in policy conditions to trigger or exclude controls.
@@ -404,10 +404,10 @@
 **A:** Entra ID P2.
 
 **Q:** What is "session control" in Conditional Access?
-**A:** Modifies the session after sign-in — e.g. sign-in frequency, app-enforced restrictions, persistent browser session, Defender for Cloud Apps proxy.
+**A:** Modifies the session after sign-in, e.g. sign-in frequency, app-enforced restrictions, persistent browser session, Defender for Cloud Apps proxy.
 
 **Q:** What does CA block by default when configured to "block legacy authentication"?
-**A:** Older auth protocols (POP, IMAP, SMTP AUTH, MAPI, Exchange Online PowerShell pre-modernauth) that don't support MFA — the most common attack vector.
+**A:** Older auth protocols (POP, IMAP, SMTP AUTH, MAPI, Exchange Online PowerShell pre-modernauth) that don't support MFA, the most common attack vector.
 
 **Q:** How do you safely exclude break-glass accounts from CA?
 **A:** Create 2 cloud-only accounts with long unique passwords, store them in a sealed envelope/vault, and add them to "Exclude" on every CA policy.
@@ -416,14 +416,14 @@
 **A:** User risk policy with "Require password change" as the access control (typically at High user risk).
 
 **Q:** What does the "What If" tool in CA do?
-**A:** Simulates which policies would apply to a hypothetical user/app/condition combination — used to verify policy design before deploying.
+**A:** Simulates which policies would apply to a hypothetical user/app/condition combination, used to verify policy design before deploying.
 
 ---
 
 ## 🔗 SECTION 5: APPLICATIONS & SSO
 
 **Q:** Difference between an "App Registration" and an "Enterprise App"?
-**A:** App Registration = the application's definition (the manifest, redirect URIs, secrets, API permissions) in your home tenant. Enterprise App = the service principal — the local instance/identity of the app in each tenant that uses it.
+**A:** App Registration = the application's definition (the manifest, redirect URIs, secrets, API permissions) in your home tenant. Enterprise App = the service principal, the local instance/identity of the app in each tenant that uses it.
 
 **Q:** Three SSO protocols Entra supports for SaaS apps?
 **A:** OpenID Connect (OIDC), SAML 2.0, WS-Federation.
@@ -432,7 +432,7 @@
 **A:** OpenID Connect (OIDC) on top of OAuth 2.0. SAML is more common for legacy enterprise SaaS.
 
 **Q:** What is Microsoft Entra Application Proxy?
-**A:** Publishes on-premises web apps to the internet through Entra ID without opening firewall ports — uses a lightweight connector on a Windows Server inside the corporate network.
+**A:** Publishes on-premises web apps to the internet through Entra ID without opening firewall ports, uses a lightweight connector on a Windows Server inside the corporate network.
 
 **Q:** Difference between user consent and admin consent?
 **A:** User consent lets individual users grant the app delegated permissions to their data. Admin consent is required for app permissions (no user context) or any permission flagged as "admin-only," and applies tenant-wide.
@@ -457,7 +457,7 @@
 ## 🛂 SECTION 6: GOVERNANCE & PIM
 
 **Q:** What does Privileged Identity Management (PIM) do?
-**A:** Turns "always on" admin role assignments into "eligible — activate just-in-time, with MFA, optional approval, and a time limit." Records every activation for audit.
+**A:** Turns "always on" admin role assignments into "eligible, activate just-in-time, with MFA, optional approval, and a time limit." Records every activation for audit.
 
 **Q:** Two kinds of role assignments in PIM?
 **A:** Eligible (must activate JIT) and Active (always assigned, optionally time-bound).
@@ -481,7 +481,7 @@
 **A:** A container of resources and access packages, scoped to a business unit. Catalog owners delegate without granting Entra admin rights.
 
 **Q:** What is a Lifecycle Workflow?
-**A:** Automates joiner/mover/leaver scenarios — e.g. on hire, run "send welcome email + add to default groups + generate TAP." On leave, "remove from all groups + disable account + revoke sessions."
+**A:** Automates joiner/mover/leaver scenarios, e.g. on hire, run "send welcome email + add to default groups + generate TAP." On leave, "remove from all groups + disable account + revoke sessions."
 
 **Q:** When does a Lifecycle Workflow trigger?
 **A:** Scheduled (daily) against attribute changes (`employeeHireDate`, `employeeLeaveDateTime`) or on-demand by an admin.
@@ -491,7 +491,7 @@
 ## 🌉 SECTION 7: HYBRID IDENTITY
 
 **Q:** Two main hybrid identity sync products from Microsoft?
-**A:** Microsoft Entra Connect (legacy, Windows Server agent — formerly Azure AD Connect) and Microsoft Entra Cloud Sync (newer, lighter, agent-based, cloud-driven config).
+**A:** Microsoft Entra Connect (legacy, Windows Server agent, formerly Azure AD Connect) and Microsoft Entra Cloud Sync (newer, lighter, agent-based, cloud-driven config).
 
 **Q:** Three Entra authentication topologies for hybrid?
 **A:** Password Hash Sync (PHS), Pass-Through Authentication (PTA), and Federation (AD FS or third-party).
@@ -503,10 +503,10 @@
 **A:** Forwards the password validation request to an on-prem agent that validates it against AD. Password never leaves the on-prem domain.
 
 **Q:** What is Seamless SSO?
-**A:** Silently signs corporate-network users into Entra-integrated apps using Kerberos against a computer account (`AZUREADSSOACC`) — no UPN re-entry. Works with PHS and PTA.
+**A:** Silently signs corporate-network users into Entra-integrated apps using Kerberos against a computer account (`AZUREADSSOACC`), no UPN re-entry. Works with PHS and PTA.
 
 **Q:** Difference between Entra Connect Sync and Entra Cloud Sync?
-**A:** Connect Sync = full-featured, complex topologies, Windows Server install. Cloud Sync = lightweight agent, multi-forest with no trust required, config in the cloud, simpler — but fewer features (no device write-back, fewer attribute customizations).
+**A:** Connect Sync = full-featured, complex topologies, Windows Server install. Cloud Sync = lightweight agent, multi-forest with no trust required, config in the cloud, simpler, but fewer features (no device write-back, fewer attribute customizations).
 
 **Q:** Four write-back features Entra Connect supports?
 **A:** Password write-back (SSPR changes flow to AD), Group write-back, Device write-back (legacy), Attribute write-back (user attribute writeback from Entra to AD).
@@ -515,7 +515,7 @@
 **A:** A device joined to on-prem AD that's also registered to Entra ID, enabling Conditional Access and Intune on AD-joined devices.
 
 **Q:** What does the staging server in Entra Connect do?
-**A:** A second Connect installation in staging mode — receives changes but doesn't export to AD/Entra. Used for HA/upgrade testing; promote it to active in case of primary failure.
+**A:** A second Connect installation in staging mode, receives changes but doesn't export to AD/Entra. Used for HA/upgrade testing; promote it to active in case of primary failure.
 
 **Q:** How do you filter which OUs sync to Entra ID?
 **A:** Entra Connect Configuration Wizard → Domain and OU filtering → select only the OUs to sync. (Cloud Sync: per-scoping filter on the provisioning config.)
@@ -534,7 +534,7 @@
 **A:** Configure Diagnostic Settings → send to Log Analytics workspace (KQL), an Event Hub (downstream SIEM), or a storage account (archive).
 
 **Q:** What is KQL?
-**A:** Kusto Query Language — Microsoft's pipe-style query language used in Log Analytics, Sentinel, Defender, and Resource Graph.
+**A:** Kusto Query Language, Microsoft's pipe-style query language used in Log Analytics, Sentinel, Defender, and Resource Graph.
 
 **Q:** Example KQL to find failed sign-ins in the last hour?
 **A:** `SigninLogs | where TimeGenerated > ago(1h) | where ResultType != 0 | summarize count() by UserPrincipalName, ResultType`.
@@ -543,7 +543,7 @@
 **A:** A 0–100% score Microsoft calculates from your identity configuration (MFA registration, legacy auth blocked, admin counts, etc.) with prescriptive improvement actions.
 
 **Q:** What is Microsoft Defender for Identity (formerly ATP)?
-**A:** Agent-based detection on Domain Controllers and AD FS servers — detects on-prem attacks (Golden Ticket, DCSync, lateral movement) and reports to the Defender XDR portal.
+**A:** Agent-based detection on Domain Controllers and AD FS servers, detects on-prem attacks (Golden Ticket, DCSync, lateral movement) and reports to the Defender XDR portal.
 
 **Q:** Why use break-glass accounts?
 **A:** Insurance against a tenant-wide lockout caused by misconfigured CA, expired admin MFA, or compromised federation. 2 cloud-only Global Admins, no MFA via federated method, vaulted credentials.
@@ -552,7 +552,7 @@
 **A:** Exactly 2 accounts, cloud-only (no sync), excluded from ALL CA policies, monitored with a SignInLogs alert on every use, password split across two safes.
 
 **Q:** What's the right tool for tenant-wide identity threat hunting?
-**A:** Microsoft Sentinel — ingest SigninLogs + AuditLogs + Defender alerts, run analytics rules + UEBA, and build SOAR playbooks.
+**A:** Microsoft Sentinel, ingest SigninLogs + AuditLogs + Defender alerts, run analytics rules + UEBA, and build SOAR playbooks.
 
 ---
 
@@ -580,7 +580,7 @@
 **A:** Lifecycle Workflows, custom extensions/Logic Apps in entitlement management, machine-learning recommendations for access reviews.
 
 **Q:** Does Microsoft 365 E3 include Entra ID P1?
-**A:** Yes — E3 includes Entra ID P1; E5 includes Entra ID P2 + Identity Protection + PIM + entitlement management.
+**A:** Yes, E3 includes Entra ID P1; E5 includes Entra ID P2 + Identity Protection + PIM + entitlement management.
 
 ---
 
@@ -590,7 +590,7 @@
 **A:** A Conditional Access policy has "Sign-in frequency = Every time" set. Lower it (e.g. 7 days) or disable that session control.
 
 **Q:** Trap: You disabled Security Defaults to roll out custom CA. What must you confirm?
-**A:** That you've replaced *every* protection Security Defaults gave you — MFA registration, legacy auth block, MFA for admins, MFA for risky sign-ins.
+**A:** That you've replaced *every* protection Security Defaults gave you, MFA registration, legacy auth block, MFA for admins, MFA for risky sign-ins.
 
 **Q:** Trap: A guest user can't see an app you assigned them. What's the most common cause?
 **A:** "Assignment required" is enabled on the Enterprise App but the guest was added directly to the user; or the user hasn't completed the B2B invitation redemption.
@@ -605,21 +605,21 @@
 **A:** The user is a guest and "external collaboration settings" restrict guest access to directory, or the apps are user-assigned and the guest wasn't added.
 
 **Q:** Trap: SAML SSO fails with "Audience URI mismatch."
-**A:** The SAML response `Audience` (entity ID) doesn't match what the app expects — fix the Entity ID in the Entra Enterprise App SAML SSO config.
+**A:** The SAML response `Audience` (entity ID) doesn't match what the app expects, fix the Entity ID in the Entra Enterprise App SAML SSO config.
 
-**Q:** Trap: Entra Connect won't install — "Insufficient privileges."
+**Q:** Trap: Entra Connect won't install, "Insufficient privileges."
 **A:** The setup account needs Enterprise Admin in on-prem AD AND Global Administrator (or Hybrid Identity Administrator) in Entra ID for first-time install.
 
 **Q:** Trap: A break-glass account is locked out after you enable strong CA policies.
-**A:** Break-glass accounts must be **excluded** from every CA policy — including the "require MFA for admins" one. They're insurance; CA must not gate them.
+**A:** Break-glass accounts must be **excluded** from every CA policy, including the "require MFA for admins" one. They're insurance; CA must not gate them.
 
 ---
 
 ## 📚 STUDY TIPS
 
-- Build cards from your wrong answers in Quizzes 1–8 — they target your real weaknesses.
-- Review 20 cards/day starting Week 1 — spaced repetition beats cramming.
-- Star the License Matrix cards — they alone are worth 5–7 exam questions.
+- Build cards from your wrong answers in Quizzes 1–8, they target your real weaknesses.
+- Review 20 cards/day starting Week 1, spaced repetition beats cramming.
+- Star the License Matrix cards, they alone are worth 5–7 exam questions.
 - Whenever you read a Microsoft doc page that names a portal blade, add a flashcard: "Where do you configure X?"
 
 ## 🎯 BEFORE THE EXAM

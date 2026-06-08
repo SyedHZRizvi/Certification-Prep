@@ -1,12 +1,12 @@
 # Module 4: Wireless & SOHO Networks 📡
 
-> **Why this module matters:** Wireless is where the user *actually* connects in 2026. ~12% of the Network+ exam directly targets wireless standards, security, and deployment — and every help-desk ticket starts with "Wi-Fi is slow." Knowing 802.11 standards, channels, and WPA3 cold is the difference between solving the problem and rebooting the router for the 17th time.
+> **Why this module matters:** Wireless is where the user *actually* connects in 2026. ~12% of the Network+ exam directly targets wireless standards, security, and deployment, and every help-desk ticket starts with "Wi-Fi is slow." Knowing 802.11 standards, channels, and WPA3 cold is the difference between solving the problem and rebooting the router for the 17th time.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–3 (OSI especially L1/L2, IP addressing, VLANs)
 > - The concept of frequencies (Hz/MHz/GHz) at a basic level
 >
-> If you've never thought about radio waves, picture them as invisible water — they propagate, reflect off walls, attenuate over distance, and interfere when two transmitters overlap. That's enough physics for this module.
+> If you've never thought about radio waves, picture them as invisible water, they propagate, reflect off walls, attenuate over distance, and interfere when two transmitters overlap. That's enough physics for this module.
 
 ---
 
@@ -14,13 +14,13 @@
 
 You're at a downtown coffee shop on a Saturday. Twenty people are on Wi-Fi. Your phone shows 4 bars but pages take forever to load. The barista says "sorry, the router is overloaded." But the router has gigabit fiber. What's actually broken?
 
-The answer is **the radio spectrum, not the router**. All twenty laptops are sharing the same 2.4 GHz spectrum, taking turns transmitting. With 20 contenders, half-second pauses to grab the channel become noticeable. The Wi-Fi 4 router can also only modulate so many bits-per-second into the channel. Worse, two neighboring coffee shops are also on channel 6 — their traffic collides with yours. Adding more clients doesn't increase total throughput; it **shrinks each user's slice of a fixed pie**.
+The answer is **the radio spectrum, not the router**. All twenty laptops are sharing the same 2.4 GHz spectrum, taking turns transmitting. With 20 contenders, half-second pauses to grab the channel become noticeable. The Wi-Fi 4 router can also only modulate so many bits-per-second into the channel. Worse, two neighboring coffee shops are also on channel 6, their traffic collides with yours. Adding more clients doesn't increase total throughput; it **shrinks each user's slice of a fixed pie**.
 
-That's the core of wireless networking. Wired Ethernet is full-duplex, switched, contention-free. Wireless is **half-duplex, shared medium, collision-prone**. Every design decision — frequency, channel width, AP placement, standard — boils down to managing this contention. This module gives you the vocabulary.
+That's the core of wireless networking. Wired Ethernet is full-duplex, switched, contention-free. Wireless is **half-duplex, shared medium, collision-prone**. Every design decision frequency, channel width, AP placement, standard boils down to managing this contention. This module gives you the vocabulary.
 
 ---
 
-## 📡 The 802.11 Family — Standards & Frequencies
+## 📡 The 802.11 Family, Standards & Frequencies
 
 Wi-Fi is standardized by the IEEE in the **802.11** working group. Each new standard adds speed, range, or spectrum. **Memorize the table.**
 
@@ -55,20 +55,20 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 - **Channels 1–14** worldwide (varies by region; US allows 1–11)
 - Each channel is **20 MHz wide** but spaced only 5 MHz apart → **overlapping**
 - **Only 3 non-overlapping channels in the US: 1, 6, 11**
-- Crowded — also used by Bluetooth, microwaves, cordless phones, baby monitors
+- Crowded, also used by Bluetooth, microwaves, cordless phones, baby monitors
 
 ### 5 GHz band
 
-- Many more channels (36, 40, 44, 48, …, 165) — 23+ non-overlapping at 20 MHz
+- Many more channels (36, 40, 44, 48, …, 165), 23+ non-overlapping at 20 MHz
 - Channel widths: 20, 40, 80, 160 MHz (wider = faster but fewer channels available)
-- **DFS channels** (Dynamic Frequency Selection) — 52–144 must yield to radar (weather, military); APs that detect radar must switch automatically
+- **DFS channels** (Dynamic Frequency Selection), 52–144 must yield to radar (weather, military); APs that detect radar must switch automatically
 - Less crowded, shorter range due to physics (higher frequency = more absorption)
 
 ### 6 GHz band (Wi-Fi 6E / Wi-Fi 7)
 
 - Unlicensed in 2020 by FCC; ~1,200 MHz of fresh spectrum
 - 59 new 20-MHz channels (in the US)
-- Pristine — no legacy devices, so no contention
+- Pristine, no legacy devices, so no contention
 - 6 GHz devices must be Wi-Fi 6E (802.11ax) or Wi-Fi 7 (802.11be) capable
 
 🚨 **Trap on the exam:** *"What are the three non-overlapping channels in 2.4 GHz US?"* → **1, 6, 11**. Memorize this exactly.
@@ -96,9 +96,9 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 
 ### Key wireless terms
 
-- **SSID** (Service Set Identifier) — the human-readable network name (max 32 chars)
-- **BSSID** — the MAC address of the AP (unique per AP)
-- **ESSID** — the SSID used by an Extended Service Set (multiple APs)
+- **SSID** (Service Set Identifier), the human-readable network name (max 32 chars)
+- **BSSID**, the MAC address of the AP (unique per AP)
+- **ESSID**, the SSID used by an Extended Service Set (multiple APs)
 
 ---
 
@@ -106,7 +106,7 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 
 | Standard | Year | Encryption | Status |
 |----------|------|------------|--------|
-| **WEP** | 1997 | RC4 (broken) | **Deprecated** — broken in 2001 (Fluhrer–Mantin–Shamir attack) |
+| **WEP** | 1997 | RC4 (broken) | **Deprecated**, broken in 2001 (Fluhrer–Mantin–Shamir attack) |
 | **WPA** | 2003 | TKIP | Deprecated |
 | **WPA2** | 2004 | AES-CCMP (preferred) or TKIP | Widely deployed; **KRACK** vulnerability disclosed 2017 |
 | **WPA3** | 2018 | AES-GCMP-256 | **Current standard** |
@@ -115,9 +115,9 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 
 ### WPA3 features (memorize)
 
-- **SAE** (Simultaneous Authentication of Equals) replaces WPA2's 4-way PSK handshake — defeats offline dictionary attacks
-- **Forward secrecy** — even if password is later cracked, captured sessions stay safe
-- **Enhanced Open** for guest networks — opportunistic encryption without a password
+- **SAE** (Simultaneous Authentication of Equals) replaces WPA2's 4-way PSK handshake, defeats offline dictionary attacks
+- **Forward secrecy**, even if password is later cracked, captured sessions stay safe
+- **Enhanced Open** for guest networks, opportunistic encryption without a password
 - **192-bit "Enterprise" mode** for high-security environments
 
 ### Authentication modes
@@ -130,16 +130,16 @@ Wi-Fi divides each band into **channels**. The width of a channel determines ban
 
 ### Enterprise EAP variants
 
-- **EAP-TLS** — certificates on both client and server (most secure; deployment-heavy)
-- **PEAP** (Protected EAP) — server cert + user credentials inside TLS tunnel
-- **EAP-TTLS** — similar to PEAP, more flexible inner methods
-- **EAP-FAST** — Cisco's lightweight alternative
+- **EAP-TLS**, certificates on both client and server (most secure; deployment-heavy)
+- **PEAP** (Protected EAP), server cert + user credentials inside TLS tunnel
+- **EAP-TTLS**, similar to PEAP, more flexible inner methods
+- **EAP-FAST**, Cisco's lightweight alternative
 
 🎯 **Exam pattern:** *"Which authentication method requires certificates on BOTH client AND server?"* → EAP-TLS.
 
 ---
 
-## 🚪 Captive Portal — The Coffee-Shop Login Page
+## 🚪 Captive Portal, The Coffee-Shop Login Page
 
 A **captive portal** intercepts HTTP requests on a guest network and redirects the user to a web page (sign-in, agree-to-terms, payment). Common on hotel, airport, coffee-shop Wi-Fi.
 
@@ -150,11 +150,11 @@ A **captive portal** intercepts HTTP requests on a guest network and redirects t
 4. After the user accepts/logs in, the gateway adds the client's MAC to an "allowed" list
 5. Subsequent traffic flows freely
 
-🚨 **Trap:** Captive portals over **HTTP only** intercept — they cannot intercept HTTPS sessions cleanly (browsers complain about certificate errors). Modern OSes use a "captive portal detection" URL probe (e.g., Apple's `captive.apple.com`) to detect and pop up the login UI.
+🚨 **Trap:** Captive portals over **HTTP only** intercept, they cannot intercept HTTPS sessions cleanly (browsers complain about certificate errors). Modern OSes use a "captive portal detection" URL probe (e.g., Apple's `captive.apple.com`) to detect and pop up the login UI.
 
 ---
 
-## ⚡ PoE — Powering APs Over Ethernet
+## ⚡ PoE, Powering APs Over Ethernet
 
 **Power over Ethernet** lets a single Ethernet cable deliver both data AND DC power to an AP, IP phone, IP camera, etc. Eliminates the need for a separate power outlet at the ceiling.
 
@@ -165,7 +165,7 @@ A **captive portal** intercepts HTTP requests on a guest network and redirects t
 | **802.3bt Type 3 (PoE++)** | 60 W (51 W usable) | 2018 |
 | **802.3bt Type 4 (PoE++)** | 100 W (71 W usable) | 2018 |
 
-🎯 **Exam pattern:** *"A new AP requires 30 W. Which PoE standard supports it?"* → 802.3at (PoE+) — at exactly the edge; PoE++ for headroom.
+🎯 **Exam pattern:** *"A new AP requires 30 W. Which PoE standard supports it?"* → 802.3at (PoE+), at exactly the edge; PoE++ for headroom.
 
 ---
 
@@ -212,7 +212,7 @@ A **site survey** is the engineering exercise of measuring RF coverage, interfer
 
 🧠 **Less-negative is better.** -50 is stronger than -80.
 
-### SNR — Signal-to-Noise Ratio
+### SNR, Signal-to-Noise Ratio
 
 - Signal − Noise = SNR in dB
 - Example: signal -65 dBm, noise -90 dBm → SNR = 25 dB
@@ -237,29 +237,29 @@ The Small Office / Home Office router is a one-box combo. Key features tested:
 | **DMZ** (1-host) | Forward all unsolicited inbound to one internal host (risky; rarely used) |
 | **Guest network** | Separate SSID/VLAN for visitors |
 | **QoS** | Prioritize VoIP/video over bulk traffic |
-| **UPnP** | Auto port forwarding (security risk — disable if not needed) |
-| **WPS** | One-button pairing (PIN method vulnerable — disable) |
+| **UPnP** | Auto port forwarding (security risk, disable if not needed) |
+| **WPS** | One-button pairing (PIN method vulnerable, disable) |
 
 🚨 **Trap:** UPnP and WPS are convenience features that automatically poke holes in security. Network+ likes to test "what to disable for security on a SOHO router" → UPnP and WPS.
 
 ---
 
-## 🔬 Scenario Walkthrough — Wi-Fi Roaming Failure
+## 🔬 Scenario Walkthrough, Wi-Fi Roaming Failure
 
 > **Scenario:** A user with a VoIP softphone reports that calls drop when they walk from the lobby to the conference room. There's good signal in both areas (-55 dBm each), and there are two APs configured with the same SSID. What's happening?
 
 **Walkthrough:**
-1. Both APs on same SSID + same WPA2 settings → an **ESS** (Extended Service Set) — clients should roam transparently.
+1. Both APs on same SSID + same WPA2 settings → an **ESS** (Extended Service Set), clients should roam transparently.
 2. Roaming is triggered by the *client*, not the AP. The client picks when to associate with a different BSSID based on signal degradation thresholds.
 3. Possible issues:
 
    - **Sticky client**: client doesn't release the old AP even when signal weakens; keeps using a marginal connection. Fix: enable **802.11k/v/r** (assisted roaming, BSS transition, fast transition) on the controller.
-   - **AP placement gap**: dead zone in the hallway between lobby and conference room — signal dips below -75 dBm during the walk, killing the call. Fix: add an AP or boost coverage.
+   - **AP placement gap**: dead zone in the hallway between lobby and conference room, signal dips below -75 dBm during the walk, killing the call. Fix: add an AP or boost coverage.
    - **Channel overlap**: both APs on channel 6, interfering. Fix: assign one to channel 1, other to channel 11.
    - **Different VLANs / SSIDs**: subtle config drift across APs. Fix: standardize.
-4. Verify with a site-survey tool (NetSpot, Ekahau, WiFi Analyzer on Android) — walk the path and watch signal/BSSID transitions live.
+4. Verify with a site-survey tool (NetSpot, Ekahau, WiFi Analyzer on Android), walk the path and watch signal/BSSID transitions live.
 
-This is a high-value PBQ template — wireless troubleshooting questions on Network+ frequently involve roaming.
+This is a high-value PBQ template, wireless troubleshooting questions on Network+ frequently involve roaming.
 
 ---
 
@@ -269,13 +269,13 @@ This is a high-value PBQ template — wireless troubleshooting questions on Netw
 |---------------|---------|
 | "5 GHz is always better than 2.4 GHz" | 5 GHz has more bandwidth + cleaner channels, but **shorter range** because higher frequencies attenuate faster through walls. Both have their place. |
 | "Wi-Fi 6 is the same as Wi-Fi 6E" | Wi-Fi 6 = 2.4 + 5 GHz. Wi-Fi 6E = also includes 6 GHz. Hardware must explicitly support 6 GHz. |
-| "WEP is acceptable for guest networks" | NEVER — WEP is broken since 2001. Use WPA3 or Enhanced Open. |
+| "WEP is acceptable for guest networks" | NEVER, WEP is broken since 2001. Use WPA3 or Enhanced Open. |
 | "Channel 12 and 13 are usable in the US" | 12, 13 are forbidden in the US for 2.4 GHz (allowed in most of the rest of the world). 14 is Japan-only. |
-| "DFS channels are slow" | DFS channels are fine — they just must yield to radar detection. Brief outages possible if radar detected. |
-| "More antennas = more speed" | Up to a point — MIMO benefits depend on client support. A single-stream phone doesn't see the speed advantage. |
-| "WPS is fine if I use the push-button method" | The PIN method is broken (Reaver attack). Disable WPS entirely — push-button doesn't make up for the risk. |
-| "UPnP makes my network better" | UPnP allows apps to open inbound ports automatically — convenient but a known attack surface. Disable unless required. |
-| "Captive portals secure the connection" | A captive portal is sign-in only — not encryption. Open SSIDs with captive portals have ZERO over-the-air encryption (unless WPA3 Enhanced Open). |
+| "DFS channels are slow" | DFS channels are fine, they just must yield to radar detection. Brief outages possible if radar detected. |
+| "More antennas = more speed" | Up to a point, MIMO benefits depend on client support. A single-stream phone doesn't see the speed advantage. |
+| "WPS is fine if I use the push-button method" | The PIN method is broken (Reaver attack). Disable WPS entirely, push-button doesn't make up for the risk. |
+| "UPnP makes my network better" | UPnP allows apps to open inbound ports automatically, convenient but a known attack surface. Disable unless required. |
+| "Captive portals secure the connection" | A captive portal is sign-in only, not encryption. Open SSIDs with captive portals have ZERO over-the-air encryption (unless WPA3 Enhanced Open). |
 
 ---
 
@@ -299,7 +299,7 @@ This is a high-value PBQ template — wireless troubleshooting questions on Netw
 | **Mesh** | APs talk to each other wirelessly for coverage |
 | **MIMO / MU-MIMO** | Multiple antennas; multi-user-MIMO serves several clients simultaneously |
 | **OFDMA** | Wi-Fi 6 multi-user subcarrier scheduling |
-| **MLO** | Multi-Link Operation (Wi-Fi 7) — use multiple bands simultaneously |
+| **MLO** | Multi-Link Operation (Wi-Fi 7), use multiple bands simultaneously |
 
 ### Acronyms cheat-row (Module 4)
 | Acronym | Meaning |
@@ -324,19 +324,19 @@ This is a high-value PBQ template — wireless troubleshooting questions on Netw
 
 ---
 
-## 📊 Case Study — The 2017 KRACK Attack and the WPA3 Response
+## 📊 Case Study, The 2017 KRACK Attack and the WPA3 Response
 
-**Situation.** On **16 October 2017**, **Mathy Vanhoef** of KU Leuven published the **KRACK** (Key Reinstallation Attack) family of vulnerabilities affecting **every** Wi-Fi device on Earth using **WPA/WPA2**. The flaw was in the *protocol itself* — specifically in the **4-way handshake** that establishes session keys after a client associates. By forcing reinstallation of an already-used encryption key, an attacker within Wi-Fi range could decrypt traffic, inject malicious data, and (with TKIP) forge frames.
+**Situation.** On **16 October 2017**, **Mathy Vanhoef** of KU Leuven published the **KRACK** (Key Reinstallation Attack) family of vulnerabilities affecting **every** Wi-Fi device on Earth using **WPA/WPA2**. The flaw was in the *protocol itself*, specifically in the **4-way handshake** that establishes session keys after a client associates. By forcing reinstallation of an already-used encryption key, an attacker within Wi-Fi range could decrypt traffic, inject malicious data, and (with TKIP) forge frames.
 
-**Decision.** The disclosure was coordinated with major vendors months in advance. Microsoft patched Windows on the same day. Apple, Google, Cisco, Aruba followed within weeks. But the deeper problem was that **patching every device on Earth — phones, IoT cameras, smart refrigerators, point-of-sale terminals — was operationally impossible**. Hundreds of millions of devices would never be patched, creating a long tail of vulnerable Wi-Fi clients.
+**Decision.** The disclosure was coordinated with major vendors months in advance. Microsoft patched Windows on the same day. Apple, Google, Cisco, Aruba followed within weeks. But the deeper problem was that **patching every device on Earth phones, IoT cameras, smart refrigerators, point-of-sale terminals was operationally impossible**. Hundreds of millions of devices would never be patched, creating a long tail of vulnerable Wi-Fi clients.
 
-**Outcome.** The Wi-Fi Alliance accelerated work on **WPA3**, announced in January 2018 and finalized June 2018. WPA3 replaced the PSK 4-way handshake with **SAE** (Simultaneous Authentication of Equals, based on the Dragonfly key-exchange), providing **forward secrecy** — even if a password is later cracked, captured traffic cannot be retroactively decrypted. WPA3 also added Enhanced Open for guest networks and 192-bit Enterprise.
+**Outcome.** The Wi-Fi Alliance accelerated work on **WPA3**, announced in January 2018 and finalized June 2018. WPA3 replaced the PSK 4-way handshake with **SAE** (Simultaneous Authentication of Equals, based on the Dragonfly key-exchange), providing **forward secrecy**, even if a password is later cracked, captured traffic cannot be retroactively decrypted. WPA3 also added Enhanced Open for guest networks and 192-bit Enterprise.
 
 Adoption was slow:
 
 - Wi-Fi 6 (2019) and Wi-Fi 6E (2021) shipped with WPA3 support
 - Most enterprise APs supported WPA3 by 2020 but defaulted to mixed WPA2/WPA3 mode for client compatibility
-- The IoT long tail remained — many devices stayed on WPA2 forever
+- The IoT long tail remained, many devices stayed on WPA2 forever
 - Dragonblood vulnerabilities (Vanhoef and Ronen, April 2019) showed early SAE implementations had side-channel weaknesses; SAE was hardened in late 2019
 
 By 2026 most enterprise Wi-Fi deployments are WPA3-Enterprise (with EAP-TLS or PEAP); home networks default to WPA3-Personal with WPA2 fallback for old devices.
@@ -344,12 +344,12 @@ By 2026 most enterprise Wi-Fi deployments are WPA3-Enterprise (with EAP-TLS or P
 **Lesson for the exam / for practitioners.** This case touches every wireless concept in this module:
 
 - **Why WPA3** is now the correct answer when "most secure Wi-Fi standard" is asked
-- **Why WPA2 is acceptable but not preferred** — operational reality, especially for legacy IoT
-- **Why open + Enhanced Open** matters for guest networks — opportunistic encryption without passwords
-- **Why patching matters** at every layer — even a protocol-level fix doesn't help unpatched devices
-- **Why 802.1X / EAP-TLS** is preferred in enterprise — per-user certs avoid the shared-PSK risk entirely
+- **Why WPA2 is acceptable but not preferred**, operational reality, especially for legacy IoT
+- **Why open + Enhanced Open** matters for guest networks, opportunistic encryption without passwords
+- **Why patching matters** at every layer, even a protocol-level fix doesn't help unpatched devices
+- **Why 802.1X / EAP-TLS** is preferred in enterprise, per-user certs avoid the shared-PSK risk entirely
 
-This case is exactly what Network+ tests when asking, "Which is the most secure Wi-Fi standard?" or "What replaces the WPA2 4-way handshake?" The answer is WPA3 / SAE — and the deeper lesson is *why*.
+This case is exactly what Network+ tests when asking, "Which is the most secure Wi-Fi standard?" or "What replaces the WPA2 4-way handshake?" The answer is WPA3 / SAE, and the deeper lesson is *why*.
 
 **Discussion (Socratic).**
 - **Q1:** An enterprise has 15,000 IoT sensors that only support WPA2-PSK. Migration is a multi-year project. What three compensating controls would you put in place in the meantime to limit blast radius if KRACK or a successor is exploited?
@@ -363,19 +363,19 @@ This case is exactly what Network+ tests when asking, "Which is the most secure 
 You now know:
 
 - 📡 The 802.11 standards a→be, marketing names Wi-Fi 5/6/6E/7, and what bands each operates on
-- 🔢 Channels — 1/6/11 in 2.4 GHz US; 5 GHz channel widths and DFS; 6 GHz pristine spectrum
-- 📶 Topology modes — IBSS, BSS, ESS, mesh; SSID/BSSID/ESSID terminology
-- 🛡️ Security — WEP broken, WPA2 acceptable, WPA3 + SAE current; WPA2/3-Personal vs Enterprise; EAP variants
-- 🚪 Captive portals — sign-in, not encryption
-- ⚡ PoE standards (af/at/bt — 15/30/60/100 W)
+- 🔢 Channels, 1/6/11 in 2.4 GHz US; 5 GHz channel widths and DFS; 6 GHz pristine spectrum
+- 📶 Topology modes, IBSS, BSS, ESS, mesh; SSID/BSSID/ESSID terminology
+- 🛡️ Security, WEP broken, WPA2 acceptable, WPA3 + SAE current; WPA2/3-Personal vs Enterprise; EAP variants
+- 🚪 Captive portals, sign-in, not encryption
+- ⚡ PoE standards (af/at/bt, 15/30/60/100 W)
 - 🗺️ Site survey types, AP placement, RSSI/SNR thresholds, antenna types
 - 🏠 SOHO features and what to disable for security (UPnP, WPS)
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 5 — Network Services & Cloud Connectivity](../Module-05-Services-Cloud/Reading.md)
+4. ➡️ Move on: [Module 5, Network Services & Cloud Connectivity](../Module-05-Services-Cloud/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 6](../Module-06-Security/Reading.md) revisits 802.1X and WPA3-Enterprise; [Module 7](../Module-07-Monitoring-Tools/Reading.md) covers wireless monitoring via WLC dashboards and SNMP; [Module 8](../Module-08-Troubleshooting/Reading.md) revisits roaming + signal-strength troubleshooting.
@@ -389,10 +389,10 @@ You now know:
 **Primary sources (the originals):**
 - 📄 IEEE Std 802.11-2020 (current revision). [*Wireless LAN MAC and PHY Specifications*](https://standards.ieee.org/standard/802_11-2020.html).
 - 📄 Vanhoef, M. & Piessens, F. (2017). "Key Reinstallation Attacks: Forcing Nonce Reuse in WPA2." *ACM CCS 2017*. (The KRACK paper.)
-- 📄 Wi-Fi Alliance (2018). "WPA3 Specification" — at https://www.wi-fi.org/discover-wi-fi/security
+- 📄 Wi-Fi Alliance (2018). "WPA3 Specification", at https://www.wi-fi.org/discover-wi-fi/security
 - 📄 Fluhrer, S., Mantin, I., Shamir, A. (2001). "Weaknesses in the Key Scheduling Algorithm of RC4." *Selected Areas in Cryptography 2001*. (The WEP-killer paper.)
 
 **Practitioner / exam:**
 - 📖 [Professor Messer Wireless playlist](https://www.professormesser.com/network-plus/n10-009/n10-009-video-training-course/)
-- 📖 [Ekahau site survey blog](https://www.ekahau.com/blog/) — free articles on RF design
-- 📖 [Mike Albano's WLAN Pi project](https://wlanpi.com/) — hands-on Wi-Fi survey hardware
+- 📖 [Ekahau site survey blog](https://www.ekahau.com/blog/), free articles on RF design
+- 📖 [Mike Albano's WLAN Pi project](https://wlanpi.com/), hands-on Wi-Fi survey hardware

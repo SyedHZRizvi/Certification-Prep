@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: The Digital Marketing Landscape 2026
 
-> **How to use:** Click any card to search YouTube for the latest top result on that topic. Search URLs never rot. Take notes between videos — don't binge.
+> **How to use:** Click any card to search YouTube for the latest top result on that topic. Search URLs never rot. Take notes between videos, don't binge.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">CAC, LTV, and ROAS — Marketing Math Made Simple</p>
+      <p class="vg-title">CAC, LTV, and ROAS, Marketing Math Made Simple</p>
       <p class="vg-creator">Brian Dean / Backlinko</p>
       <span class="vg-duration">⏱ 13 min · Calculator-along format</span>
     </div>
@@ -134,12 +134,12 @@
 | Channel | Why |
 |---|---|
 | **HubSpot Academy** | The free official curriculum behind the HubSpot Marketing Software exam |
-| **Google Skillshop** | Google Ads + GA4 + Performance Max — official, free, exam-aligned |
+| **Google Skillshop** | Google Ads + GA4 + Performance Max, official, free, exam-aligned |
 | **Meta Blueprint** | Meta's official certification prep, free courses |
 | **Neil Patel** | Pragmatic, founder-of-NP-Digital, weekly updates on platform shifts |
 | **Ahrefs** | SEO + content marketing, very tactical, free tools |
-| **Brian Dean / Backlinko** | SEO and email — the master of step-by-step playbooks |
-| **Adam Erhart** | Funnels, paid ads, small business — short and clear |
+| **Brian Dean / Backlinko** | SEO and email, the master of step-by-step playbooks |
+| **Adam Erhart** | Funnels, paid ads, small business, short and clear |
 | **SparkToro (Rand Fishkin)** | The data on zero-click search, AI Overviews, organic decline |
 
 ---

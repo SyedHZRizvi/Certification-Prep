@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -268,7 +268,7 @@
 
 # 🃏 Windows Server Hybrid Admin Flashcards (Master Set)
 
-> **How to use:** Each card has a Q on one line and A on the next. Click any card to flip. Filter by section, shuffle, and mark cards as "Got it" — your progress saves locally. Aim for daily review until both exams.
+> **How to use:** Each card has a Q on one line and A on the next. Click any card to flip. Filter by section, shuffle, and mark cards as "Got it", your progress saves locally. Aim for daily review until both exams.
 
 ---
 
@@ -281,7 +281,7 @@
 **A:** Forest-wide: Schema Master, Domain Naming Master. Domain-wide: RID Master, PDC Emulator, Infrastructure Master.
 
 **Q:** Which FSMO role handles password changes and time sync?
-**A:** PDC Emulator — also the default Group Policy editing target and authoritative time source.
+**A:** PDC Emulator, also the default Group Policy editing target and authoritative time source.
 
 **Q:** Which FSMO role hands out RID pools to DCs?
 **A:** RID Master (domain-wide).
@@ -293,7 +293,7 @@
 **A:** Notify-based replication every ~15 seconds (with a 1-second urgent threshold for password changes via PDC).
 
 **Q:** What's the default inter-site replication interval?
-**A:** 180 minutes (3 hours) — adjustable via site link properties.
+**A:** 180 minutes (3 hours), adjustable via site link properties.
 
 **Q:** What does the AD Recycle Bin do, and what's required to enable it?
 **A:** Recovers deleted AD objects with all attributes intact for 180 days (default). Forest functional level must be 2008 R2 or higher; enable is one-way.
@@ -308,7 +308,7 @@
 **A:** Forest functional level Windows Server 2008 R2 or higher.
 
 **Q:** What does Group Policy precedence look like (top to bottom)?
-**A:** LSDOU — Local → Site → Domain → OU (lower OUs override higher). Enforced GPOs reverse this; Block Inheritance stops higher-level GPOs unless Enforced.
+**A:** LSDOU, Local → Site → Domain → OU (lower OUs override higher). Enforced GPOs reverse this; Block Inheritance stops higher-level GPOs unless Enforced.
 
 ---
 
@@ -321,7 +321,7 @@
 **A:** Password Hash Sync (PHS), Pass-Through Authentication (PTA), and Federation with AD FS.
 
 **Q:** Which sign-in method is Microsoft's recommended default for hybrid identity?
-**A:** Password Hash Sync with Seamless SSO — the simplest, most resilient option (no on-prem dependency at sign-in).
+**A:** Password Hash Sync with Seamless SSO, the simplest, most resilient option (no on-prem dependency at sign-in).
 
 **Q:** What is Seamless SSO?
 **A:** Auto sign-in to Entra ID-joined resources for users on domain-joined corporate devices via a Kerberos ticket exchange to a computer account `AZUREADSSOACC`.
@@ -330,10 +330,10 @@
 **A:** Join = cloud-only device identity. Hybrid Join = device is in *both* on-prem AD AND Entra. Registration = BYOD personal device with limited management.
 
 **Q:** What does PHS actually sync to Entra ID?
-**A:** A hash of the AD password hash (re-hashed with HMAC-SHA256 + salt) — *not* the password itself. This is irreversible and one-way.
+**A:** A hash of the AD password hash (re-hashed with HMAC-SHA256 + salt), *not* the password itself. This is irreversible and one-way.
 
 **Q:** What's a staging server in Entra Connect?
-**A:** A second Entra Connect server running in standby mode for disaster recovery — it imports/syncs but does not export.
+**A:** A second Entra Connect server running in standby mode for disaster recovery, it imports/syncs but does not export.
 
 **Q:** Where does the Entra Connect server sync metadata get stored?
 **A:** In LocalDB (SQL Server Express) by default. SQL Server full edition is supported for >100,000 objects.
@@ -346,7 +346,7 @@
 ## 🌐 SECTION 3: NETWORKING, DNS & DHCP
 
 **Q:** What's the difference between a stub zone and a conditional forwarder?
-**A:** Stub zone keeps a current list of authoritative NS records for a zone. Conditional forwarder forwards queries for a specific domain to specified IPs — simpler, no zone data.
+**A:** Stub zone keeps a current list of authoritative NS records for a zone. Conditional forwarder forwards queries for a specific domain to specified IPs, simpler, no zone data.
 
 **Q:** What does DNSSEC sign in a zone?
 **A:** It cryptographically signs zone data with KSK (Key Signing Key) and ZSK (Zone Signing Key), and validates responses via trust anchors. Protects against cache poisoning.
@@ -361,7 +361,7 @@
 **A:** Superscope groups multiple scopes onto one physical subnet (multi-subnet on one segment). Split-scope manually splits one scope between two DHCP servers (80/20 rule).
 
 **Q:** What is IPAM, and what does it require?
-**A:** IP Address Management — central tracking of DHCP/DNS/AD-DS across a forest. Cannot run on a DC. Single IPAM server can manage up to 150 DHCP servers and 500 DNS servers.
+**A:** IP Address Management, central tracking of DHCP/DNS/AD-DS across a forest. Cannot run on a DC. Single IPAM server can manage up to 150 DHCP servers and 500 DNS servers.
 
 **Q:** What's the difference between Inbound/Outbound rules in Windows Firewall?
 **A:** Inbound rules govern traffic *to* the host; outbound rules govern traffic *from* the host. Default policy in Domain profile: inbound block-unless-allowed, outbound allow.
@@ -382,14 +382,14 @@
 **Q:** What is Storage Replica and the two modes?
 **A:** Block-level, volume-level replication between servers/clusters. **Synchronous** (zero data loss, same-metro only ≤ ~5 ms RTT) and **Asynchronous** (cross-region, eventual consistency).
 
-**Q:** DFS-N vs DFS-R — what does each do?
+**Q:** DFS-N vs DFS-R, what does each do?
 **A:** DFS-N (Namespaces) presents a unified `\\contoso.com\shares` view across servers. DFS-R (Replication) is multi-master replication of folder contents using RDC (Remote Differential Compression).
 
 **Q:** What does ReFS provide that NTFS doesn't?
 **A:** Block-cloning (faster copies, fast Hyper-V VHD provisioning), integrity streams (checksums + auto-repair on mirror), data deduplication on Windows Server 2019+, and better resiliency against silent corruption.
 
 **Q:** What does FSRM do?
-**A:** File Server Resource Manager — quotas, file screens (block .exe etc.), storage reports, file classification, and access denied assistance.
+**A:** File Server Resource Manager, quotas, file screens (block .exe etc.), storage reports, file classification, and access denied assistance.
 
 **Q:** What is Work Folders?
 **A:** A self-managed user data sync feature (alternative to OneDrive). Workfolders cmdlets sync a user's folder to multiple corporate devices over HTTPS, with optional Workplace Join authentication.
@@ -426,7 +426,7 @@
 **A:** Offloads per-VM NIC processing to dedicated queues on the physical NIC, reducing CPU overhead at 10 GbE+. Strongly recommended on production hosts with multiple VMs.
 
 **Q:** What is SR-IOV and when do you use it?
-**A:** Single Root IO Virtualization — assigns a virtual function (VF) of a SR-IOV-capable NIC directly to a VM, bypassing the vSwitch for near-line-rate throughput. Used for VMs needing wire-speed networking (firewalls, NFV).
+**A:** Single Root IO Virtualization, assigns a virtual function (VF) of a SR-IOV-capable NIC directly to a VM, bypassing the vSwitch for near-line-rate throughput. Used for VMs needing wire-speed networking (firewalls, NFV).
 
 ---
 
@@ -439,13 +439,13 @@
 **A:** The Connected Machine agent (`azcmagent`), which authenticates to Azure and registers the server as a "Microsoft.HybridCompute/machines" resource.
 
 **Q:** What protocols and ports does the Arc Connected Machine agent use outbound?
-**A:** HTTPS (443) outbound only — to specific Azure endpoints (Arc data plane, Azure AD, etc.). No inbound ports required.
+**A:** HTTPS (443) outbound only, to specific Azure endpoints (Arc data plane, Azure AD, etc.). No inbound ports required.
 
 **Q:** What's the difference between Arc-enabled servers and Arc-enabled Kubernetes?
 **A:** Arc-enabled servers projects individual VMs/physical machines into Azure. Arc-enabled Kubernetes connects an existing K8s cluster (anywhere) for GitOps, Azure Policy, Azure Monitor, and Defender for Containers.
 
 **Q:** Can you assign Azure Policy to Arc-enabled servers?
-**A:** Yes — at scale via management groups. Common initiatives include "Deploy Azure Monitor agent to Arc machines" and "Enable Defender for Servers on Arc."
+**A:** Yes, at scale via management groups. Common initiatives include "Deploy Azure Monitor agent to Arc machines" and "Enable Defender for Servers on Arc."
 
 **Q:** What is Extended Security Updates (ESUs) via Arc?
 **A:** Azure-billed channel to deliver ESUs to out-of-support OS versions (e.g., Windows Server 2012/R2 after Oct 2023 EOL). Requires the server to be Arc-onboarded and ESU-enabled in the portal.
@@ -458,7 +458,7 @@
 ## 📈 SECTION 7: AZURE MONITOR & HYBRID MONITORING
 
 **Q:** What is Azure Monitor Agent (AMA), and what does it replace?
-**A:** Unified telemetry agent for VMs/Arc machines. Replaces the legacy MMA (Log Analytics agent / OMS agent) — MMA retired August 2024.
+**A:** Unified telemetry agent for VMs/Arc machines. Replaces the legacy MMA (Log Analytics agent / OMS agent), MMA retired August 2024.
 
 **Q:** What is a Data Collection Rule (DCR)?
 **A:** A reusable JSON/portal definition of *what* to collect (perf counters, event logs, syslog, custom logs) and *where* to send it (Log Analytics workspace, Azure Monitor metrics). Replaces MMA workspace-level config.
@@ -470,7 +470,7 @@
 **A:** `where` (filter), `summarize` (aggregate), `project` (select/rename columns). Plus `take`, `top`, `join`, `extend`, `render` (charts).
 
 **Q:** What is VM Insights?
-**A:** A pre-packaged Azure Monitor solution for VMs/Arc machines that provides performance trends, dependency maps (process-to-process), and health views — built atop DCRs.
+**A:** A pre-packaged Azure Monitor solution for VMs/Arc machines that provides performance trends, dependency maps (process-to-process), and health views, built atop DCRs.
 
 **Q:** What is an Azure Monitor Workbook?
 **A:** A canvas combining text, queries, charts, and parameters for interactive dashboards. Saved per-workspace; can use KQL and Resource Graph as data sources.
@@ -492,13 +492,13 @@
 **A:** Application allowlisting at the kernel level. Successor to AppLocker; tamper-resistant and policy-based (signed code, hashes, paths). Supports Audit and Enforce modes.
 
 **Q:** What does Credential Guard protect against?
-**A:** Uses virtualization-based security (VBS) to isolate LSASS secrets (NTLM hashes, Kerberos tickets) into a separate hypervisor-protected process — defeats Pass-the-Hash and Mimikatz-style attacks.
+**A:** Uses virtualization-based security (VBS) to isolate LSASS secrets (NTLM hashes, Kerberos tickets) into a separate hypervisor-protected process, defeats Pass-the-Hash and Mimikatz-style attacks.
 
 **Q:** What is a Secured-core server?
 **A:** A hardware + firmware + OS bundle Microsoft certifies that includes TPM 2.0, Secure Boot, DMA protection, VBS, HVCI, and System Guard. Available in Windows Server 2022+.
 
 **Q:** What does Exploit Guard's "Attack Surface Reduction" (ASR) do?
-**A:** Policy-based rules that block common exploit techniques — e.g., "Block Office apps creating child processes," "Block credential stealing from LSASS." Configured via GPO, MEM (Intune), or PowerShell.
+**A:** Policy-based rules that block common exploit techniques, e.g., "Block Office apps creating child processes," "Block credential stealing from LSASS." Configured via GPO, MEM (Intune), or PowerShell.
 
 **Q:** How does Microsoft Defender for Endpoint (MDE) onboard a Windows Server?
 **A:** Via Defender for Servers (auto-onboards Azure/Arc VMs), Group Policy script (for non-cloud), Intune, or direct PowerShell script using an onboarding package downloaded from the MDE portal.
@@ -520,13 +520,13 @@
 **A:** DR-as-a-service. Replicates on-prem VMs/physical/AWS or Azure VMs to Azure (or to a paired region for Azure-to-Azure). RPO ~30 sec, RTO minutes via planned/test/unplanned failovers.
 
 **Q:** What is the Storage Migration Service (SMS)?
-**A:** Built into Windows Admin Center. Inventories source servers (Win Server 2003+ and Linux SMB), transfers files+ACLs, and "cuts over" — renames new server and IP to look like old server.
+**A:** Built into Windows Admin Center. Inventories source servers (Win Server 2003+ and Linux SMB), transfers files+ACLs, and "cuts over", renames new server and IP to look like old server.
 
 **Q:** What is Azure Migrate?
 **A:** Hub for server, database, and web app migration. Includes appliance-based discovery, dependency analysis, right-sizing recommendations, and 3 migration tools (server migration via ASR, DB Migration Assistant, App Service migration).
 
 **Q:** What is ADMT, and what's its current status?
-**A:** Active Directory Migration Tool — moves users/groups/computers between AD domains and forests with SID history. Still works but Microsoft no longer actively develops it; community-supported.
+**A:** Active Directory Migration Tool, moves users/groups/computers between AD domains and forests with SID history. Still works but Microsoft no longer actively develops it; community-supported.
 
 **Q:** What's the default ASR RPO and how is it achieved?
 **A:** ~30 seconds. Achieved by Mobility Service agent on the source writing to a cache storage account, ASR processing servers replicating to target, and Recovery Services Vault recovery points.
@@ -574,6 +574,6 @@
 
 ## 📚 BEFORE THE EXAM
 
-Sleep. Eat. Show up 30 minutes early. Read each question twice. **Underline keywords** ("zone-redundant," "lowest cost," "without downtime"). Mark and move on if stuck — come back at the end.
+Sleep. Eat. Show up 30 minutes early. Read each question twice. **Underline keywords** ("zone-redundant," "lowest cost," "without downtime"). Mark and move on if stuck, come back at the end.
 
 You've got this.

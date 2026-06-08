@@ -6,9 +6,9 @@ title: "Module 5 Cheat Sheet: State Machines & Blend Trees"
 
 ## 🎯 The 3 Factors of Animation Responsiveness
 
-1. **Transition latency** — How frequently conditions are checked (every frame = most responsive)
-2. **Blend duration** — How long the crossfade takes (shorter = snappier)
-3. **Interrupt conditions** — Whether a new input can cancel an in-progress blend
+1. **Transition latency**, How frequently conditions are checked (every frame = most responsive)
+2. **Blend duration**, How long the crossfade takes (shorter = snappier)
+3. **Interrupt conditions**, Whether a new input can cancel an in-progress blend
 
 ---
 
@@ -16,7 +16,7 @@ title: "Module 5 Cheat Sheet: State Machines & Blend Trees"
 
 | Setting | Who Can Interrupt |
 |---------|------------------|
-| None | Nobody — blend must complete |
+| None | Nobody, blend must complete |
 | **Current State** | Transitions from the **source** state |
 | Next State | Transitions from the **destination** state |
 | Current Then Next | Check current first, then next |
@@ -86,7 +86,7 @@ Coyote Time:  Grace window 0.1–0.15s at ledge before fall state
 |-----------|-----------|--------|-----------------|
 | Blend time | 0.05–0.08s | 0.1–0.2s | 0.2–0.4s |
 | Lerp speed | 12+ u/s | 8–12 u/s | 4–6 u/s |
-| Coyote time | 0.1–0.15s | — | — |
+| Coyote time | 0.1–0.15s | | |
 | Hit stop | 2–4 frames | 4–8 frames | 8–16 frames |
 
 ---
@@ -107,12 +107,12 @@ Coyote Time:  Grace window 0.1–0.15s at ledge before fall state
 | Trap | Fix |
 |------|-----|
 | AnyState loop | Use Trigger (auto-reset) + guard conditions |
-| Long blend = smooth | Long blend = laggy — tune per transition priority |
+| Long blend = smooth | Long blend = laggy, tune per transition priority |
 | Additive uses full pose | Author additive clips as deltas from reference pose |
 | Freeform 2D for stylized anim | Use Simple Directional if you control exact directions |
 | Coyote time not animated | Add edge-peek state; don't snap walk → fall |
-| Bool for death state | Use Trigger — Bool keeps re-triggering death loop |
-| Same blend time for all transitions | Use asymmetric blend times — raise ≠ lower; dodge ≠ walk |
+| Bool for death state | Use Trigger, Bool keeps re-triggering death loop |
+| Same blend time for all transitions | Use asymmetric blend times, raise ≠ lower; dodge ≠ walk |
 
 ---
 

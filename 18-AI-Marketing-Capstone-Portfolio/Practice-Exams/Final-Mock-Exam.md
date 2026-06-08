@@ -1,4 +1,4 @@
-# 🧪 Final Assessment — Recruiter / Client Readiness
+# 🧪 Final Assessment, Recruiter / Client Readiness
 
 > **Conditions:** Set a 70-minute timer. 50 questions modeled on what a real hiring manager or first client would evaluate.
 > **Pass mark:** 40/50 (80%) at the "Strong" level (see grading guidance).
@@ -155,7 +155,7 @@ C. "Depends on scope"
 D. Don't know
 
 ### 25. "Have you ever lost money on a campaign?"
-A. Yes — reference the $200 ROAS-negative paid campaign honestly
+A. Yes, reference the $200 ROAS-negative paid campaign honestly
 B. Yes, less detail
 C. Hedge
 D. "Always profitable"
@@ -275,7 +275,7 @@ C. Buzzword
 D. Don't know
 
 ### 45. "Have you led other people?"
-A. Honest answer (maybe mentoring, maybe no — both fine, just honest)
+A. Honest answer (maybe mentoring, maybe no, both fine, just honest)
 B. Hedge if no
 C. Inflate
 D. Avoid
@@ -333,17 +333,17 @@ D. Apologetic
 
 **The "Show The Work" Block (Q1, Q4, Q19, Q28, Q35)**
 
-For each, you should be able to point to a specific public URL. The format: *"Yes, here — [link]. Want me to walk you through it?"* If you can't link it, the work isn't real to the interviewer.
+For each, you should be able to point to a specific public URL. The format: *"Yes, here, [link]. Want me to walk you through it?"* If you can't link it, the work isn't real to the interviewer.
 
 **The "Failure Honesty" Block (Q2, Q15, Q25, Q37, Q38, Q42)**
 
 Hiring managers test for honesty. A polished "I'm too detail-oriented" answer to Q15 = junior tell. A specific, honest weakness + how you're addressing it = senior.
 
-Example for Q2 (failure): *"My $200 paid campaign came in at 0.84 ROAS — net loss of $30. Two of three creatives bombed. Lesson: I'd skip Meta Carousel entirely; UGC won by 3x. Case study is public."*
+Example for Q2 (failure): *"My $200 paid campaign came in at 0.84 ROAS, net loss of $30. Two of three creatives bombed. Lesson: I'd skip Meta Carousel entirely; UGC won by 3x. Case study is public."*
 
 **The "Specificity" Block (Q5, Q9, Q21, Q31, Q39, Q44, Q47)**
 
-Generic answers cluster you with 90% of applicants. Specific = differentiates. *"My favorite tool is Make.com because the visual scenario builder lets me ship a 7-step lead-routing flow in 2 hours — built one as a portfolio piece, link if you want to see it."*
+Generic answers cluster you with 90% of applicants. Specific = differentiates. *"My favorite tool is Make.com because the visual scenario builder lets me ship a 7-step lead-routing flow in 2 hours, built one as a portfolio piece, link if you want to see it."*
 
 **The "Analytical Depth" Block (Q3, Q6, Q8, Q20, Q33)**
 
@@ -385,7 +385,7 @@ These determine whether you understand THEIR business + can show value-add. Spec
 
 ### For each B answer:
 
-1. **Identify the gap** — usually "could be more specific."
+1. **Identify the gap**, usually "could be more specific."
 2. **Add one specific detail** (a number, a screenshot reference, a tool name).
 3. **Re-practice once.**
 
@@ -404,17 +404,17 @@ The Recruiter Readiness Assessment is the dry run. The real test is:
 
 Will you be ready to answer the questions in this exam, cold, in a 30-min Zoom call?
 
-If yes — congratulations, you've earned the portfolio. **Start the outreach machine.**
+If yes, congratulations, you've earned the portfolio. **Start the outreach machine.**
 
-If not — the gap is usually preparation, not capability. Spend a week practicing the 10 hardest questions in this exam, then retest.
+If not, the gap is usually preparation, not capability. Spend a week practicing the 10 hardest questions in this exam, then retest.
 
 ---
 
 ## Detailed answer rationales
 
-> The Final Mock is unique: every "question" is a real interview/sales-call question with no "right" answer in the academic sense — but there is a "Strong" answer (the "A" benchmark) that a capstone-armed marketer would give. The rationales below break down the highest-stakes questions, explaining what each option represents and what a hiring manager hears when you give that response.
+> The Final Mock is unique: every "question" is a real interview/sales-call question with no "right" answer in the academic sense, but there is a "Strong" answer (the "A" benchmark) that a capstone-armed marketer would give. The rationales below break down the highest-stakes questions, explaining what each option represents and what a hiring manager hears when you give that response.
 
-**Q1. "Walk me through your strongest portfolio piece." — Answer: A**
+**Q1. "Walk me through your strongest portfolio piece.", Answer: A**
 
 **Why A is the Strong answer.** A 60-90 second cold pitch with numbers signals two things: (1) you have a real portfolio piece, and (2) you've internalized it deeply enough to articulate without notes. Both = senior.
 
@@ -427,33 +427,33 @@ If not — the gap is usually preparation, not capability. Spend a week practici
 
 ---
 
-**Q2. "Tell me about a time you failed." — Answer: A**
+**Q2. "Tell me about a time you failed.", Answer: A**
 
 **Why A is the Strong answer.** The $200 paid campaign post-mortem is purpose-built for this question. Specific numbers + lessons + what you'd do differently = the "interview-friendly failure" archetype hiring managers recognize.
 
 **Why the other options fall short.**
 - **B (Have a story, less polished)**: The arc is there but the numbers are vague. Easy fix: re-read your own post-mortem before any interview.
-- **C (Could pull from somewhere)**: Most candidates fall here. Result: under-pressure they default to "I'm too detail-oriented" — the junior tell.
+- **C (Could pull from somewhere)**: Most candidates fall here. Result: under-pressure they default to "I'm too detail-oriented", the junior tell.
 - **D (Don't have a failure story ready)**: Indicates you may have hidden failures in your portfolio. Hiring managers can smell sanitization.
 
 **Exam-takeaway.** The pre-rehearsed failure story is a *strength* signal in 2026 interviews, not a weakness. Have one ready. The paid campaign is the obvious source if you ran it honestly.
 
 ---
 
-**Q3. "What's the difference between Last-Click and Markov attribution?" — Answer: A**
+**Q3. "What's the difference between Last-Click and Markov attribution?", Answer: A**
 
-**Why A is the Strong answer.** 60-second articulate explanation, including when to use each, signals real depth — most marketers either say "Markov is better" without nuance, or default to GA4's settings without thinking.
+**Why A is the Strong answer.** 60-second articulate explanation, including when to use each, signals real depth, most marketers either say "Markov is better" without nuance, or default to GA4's settings without thinking.
 
 **Why the other options fall short.**
 - **B (Can explain Markov specifically)**: Half-credit. Misses the trade-off framing that senior interviewers test for.
 - **C (Roughly)**: Likely the most-common answer. Junior-leaning unless paired with strong specifics elsewhere.
 - **D (Not confident)**: Indicates you built the attribution capstone without internalizing the math. Re-read Module 5's primer section.
 
-**Exam-takeaway.** "Last-Click vs Markov" is the analytical-depth filter question. Memorize a 30-second cleaner version: *"Last-Click credits 100% to the final touchpoint — simple but ignores the journey. Markov credits each channel by 'removal effect': how much does conversion probability drop if you remove this channel? It's data-driven and fairer for awareness channels, but it assumes the Markov property which doesn't perfectly hold for marketing journeys."*
+**Exam-takeaway.** "Last-Click vs Markov" is the analytical-depth filter question. Memorize a 30-second cleaner version: *"Last-Click credits 100% to the final touchpoint, simple but ignores the journey. Markov credits each channel by 'removal effect': how much does conversion probability drop if you remove this channel? It's data-driven and fairer for awareness channels, but it assumes the Markov property which doesn't perfectly hold for marketing journeys."*
 
 ---
 
-**Q4. "Show me code you've written." — Answer: A**
+**Q4. "Show me code you've written.", Answer: A**
 
 **Why A is the Strong answer.** GitHub repo link + clean README + a single command to run = the artifact that makes the AI agent capstone real. Most marketers can't answer this question at all.
 
@@ -466,20 +466,20 @@ If not — the gap is usually preparation, not capability. Spend a week practici
 
 ---
 
-**Q12. "Why should we hire you over someone with more years of experience?" — Answer: A**
+**Q12. "Why should we hire you over someone with more years of experience?", Answer: A**
 
-**Why A is the Strong answer.** The capstone-portfolio strategy is *specifically* designed to answer this question. "I've shipped 5 portfolio pieces, including a working AI agent on GitHub, in the last 6 weeks. Most candidates with 10 years' experience have never built any of this — they ran things at companies but can't show me the artifact."
+**Why A is the Strong answer.** The capstone-portfolio strategy is *specifically* designed to answer this question. "I've shipped 5 portfolio pieces, including a working AI agent on GitHub, in the last 6 weeks. Most candidates with 10 years' experience have never built any of this, they ran things at companies but can't show me the artifact."
 
 **Why the other options fall short.**
 - **B (List capabilities)**: Same as every other applicant. Doesn't differentiate.
-- **C (Hedge)**: "I'm a quick learner" — fatal junior phrase.
+- **C (Hedge)**: "I'm a quick learner", fatal junior phrase.
 - **D (Apologize)**: Tells the manager you're insecure about the experience gap, which makes it real.
 
 **Exam-takeaway.** The "less experience but more recent shipped work" framing is the entire pitch of this course. Memorize a confident 30-second version that names 2 of your 5 capstones by hook.
 
 ---
 
-**Q15. "What's your weakness?" — Answer: A**
+**Q15. "What's your weakness?", Answer: A**
 
 **Why A is the Strong answer.** Honest + specific + paired with how you're addressing it. *"I'm still learning Python well enough to build complex multi-step agents. I'm addressing it by building 2 more agents in Q3 with progressively more tool use."* This signals self-awareness, specificity, and growth.
 
@@ -492,7 +492,7 @@ If not — the gap is usually preparation, not capability. Spend a week practici
 
 ---
 
-**Q19. "Tell me about your automation workflow." — Answer: A**
+**Q19. "Tell me about your automation workflow.", Answer: A**
 
 **Why A is the Strong answer.** Reference Module 4's 7-step Make.com / n8n scenario with quantified value ("replaces ~6 manual hours/week"). Specific architecture decisions named (Router, scoring formula, error handling). Loom + JSON export linked.
 
@@ -505,20 +505,20 @@ If not — the gap is usually preparation, not capability. Spend a week practici
 
 ---
 
-**Q25. "Have you ever lost money on a campaign?" — Answer: A**
+**Q25. "Have you ever lost money on a campaign?", Answer: A**
 
-**Why A is the Strong answer.** *"Yes — my $200 paid campaign came in at 0.84 ROAS, slight loss. Two of three Meta creatives bombed. Public case study with the math."* Specific, honest, includes the lesson. Same energy as Q2 but reframed as a money question.
+**Why A is the Strong answer.** *"Yes, my $200 paid campaign came in at 0.84 ROAS, slight loss. Two of three Meta creatives bombed. Public case study with the math."* Specific, honest, includes the lesson. Same energy as Q2 but reframed as a money question.
 
 **Why the other options fall short.**
 - **B (Yes, less detail)**: Honest but vague. Misses the credibility of specific numbers.
-- **C (Hedge)**: "We had a campaign that didn't perform as expected" — corporate-speak, low signal.
+- **C (Hedge)**: "We had a campaign that didn't perform as expected", corporate-speak, low signal.
 - **D ("Always profitable")**: Either dishonest or you haven't run real campaigns. Both are red flags.
 
-**Exam-takeaway.** Negative ROAS on a small budget is a *strength* signal — you've actually run real campaigns. Don't hide it; lead with it.
+**Exam-takeaway.** Negative ROAS on a small budget is a *strength* signal, you've actually run real campaigns. Don't hide it; lead with it.
 
 ---
 
-**Q34. "What questions do you have for me?" — Answer: A**
+**Q34. "What questions do you have for me?", Answer: A**
 
 **Why A is the Strong answer.** 3+ thoughtful, prepared questions show: (1) you researched the company, (2) you're interviewing them as much as they're interviewing you, (3) you're a senior collaborator, not a candidate hoping to be picked.
 
@@ -531,7 +531,7 @@ If not — the gap is usually preparation, not capability. Spend a week practici
 
 ---
 
-**Q35. "Tell me about your AI agent." — Answer: A**
+**Q35. "Tell me about your AI agent.", Answer: A**
 
 **Why A is the Strong answer.** Reference GitHub repo + Loom + tool use (if used) + cost analysis. Quantify ("$0.04 per run, ~$4 per 100 runs"). Specific use case named ("competitor research agent that produces a 2-page strategic brief from a homepage URL in 90 seconds").
 
@@ -544,7 +544,7 @@ If not — the gap is usually preparation, not capability. Spend a week practici
 
 ---
 
-**Q50. "Why should I hire YOU specifically?" — Answer: A**
+**Q50. "Why should I hire YOU specifically?", Answer: A**
 
 **Why A is the Strong answer.** The closing question. The full 60-second pitch: identity + 5 capstones + AI-native positioning + the post-mortem culture differentiator. Confident. Specific. Backed by public links.
 
@@ -559,14 +559,14 @@ If not — the gap is usually preparation, not capability. Spend a week practici
 
 **Generalization for the rest.**
 
-The Final Mock's 50 questions test the *integration* of everything in the course — capstones + LinkedIn + portfolio + pitch + practiced answers. For any question scored C or D:
+The Final Mock's 50 questions test the *integration* of everything in the course, capstones + LinkedIn + portfolio + pitch + practiced answers. For any question scored C or D:
 
 1. **Locate the source module.** Most questions trace to a specific Module 2-8 capstone.
 2. **Find the 90-second pitch from that module's quiz** and re-practice out loud 5 times.
 3. **Record yourself**, listen back, polish.
-4. **Test in the wild** — share with a peer for a mock call.
+4. **Test in the wild**, share with a peer for a mock call.
 
-The "Conversation Quality" block (Q14, Q34, Q36, Q38) is the hardest to fake — it tests judgment under pressure. Run real mock interviews with 2+ peers before any high-stakes recruiter call.
+The "Conversation Quality" block (Q14, Q34, Q36, Q38) is the hardest to fake, it tests judgment under pressure. Run real mock interviews with 2+ peers before any high-stakes recruiter call.
 
 ---
 

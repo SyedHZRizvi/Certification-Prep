@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: Inventory & Distribution
 
-> **How to use:** Watch in order. The DRP record video is the single most important one — re-watch it twice.
+> **How to use:** Watch in order. The DRP record video is the single most important one, re-watch it twice.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Postponement Strategy — Benetton Case</p>
+      <p class="vg-title">Postponement Strategy, Benetton Case</p>
       <p class="vg-creator">Supply Chain Today</p>
       <span class="vg-duration">⏱ 10 min · Form, time, place</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Bullwhip Effect — Cause and Cure</p>
+      <p class="vg-title">Bullwhip Effect, Cause and Cure</p>
       <p class="vg-creator">Damelin Online</p>
       <span class="vg-duration">⏱ 8 min · Beer game</span>
     </div>
@@ -145,8 +145,8 @@
 
 1. Read a DRP record and identify when to release a planned order.
 2. State the safety stock formula.
-3. Square-root rule — what's the inventory impact of going from 4 DCs to 1?
+3. Square-root rule, what's the inventory impact of going from 4 DCs to 1?
 4. Name three causes of the bullwhip effect.
-5. Postponement — give an example of each of form, time, and place.
+5. Postponement, give an example of each of form, time, and place.
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

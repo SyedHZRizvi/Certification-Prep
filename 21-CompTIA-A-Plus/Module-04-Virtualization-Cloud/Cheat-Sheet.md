@@ -13,7 +13,7 @@
 
 ---
 
-## ☁️ NIST Cloud — Memorize Cold
+## ☁️ NIST Cloud, Memorize Cold
 
 ### 5 Essential Characteristics
 1. On-demand self-service
@@ -31,10 +31,10 @@
 | **SaaS** | Data + config only | M365, Salesforce, Slack |
 
 ### 4 Deployment Models
-- **Public** — multi-tenant 3rd-party (AWS, Azure, GCP)
-- **Private** — single org (on-prem or hosted)
-- **Community** — shared by similar orgs (gov, health)
-- **Hybrid** — mix with orchestration
+- **Public**, multi-tenant 3rd-party (AWS, Azure, GCP)
+- **Private**, single org (on-prem or hosted)
+- **Community**, shared by similar orgs (gov, health)
+- **Hybrid**, mix with orchestration
 
 ---
 
@@ -64,14 +64,14 @@
 
 ## 🖥️ VM Resource Terms
 
-- **vCPU** — virtual core, maps to host core/thread
-- **vRAM** — allocated from host RAM
-- **vNIC** — attached to vSwitch / vNet
-- **Thin provisioning** — disk grows on write
-- **Thick provisioning** — full size pre-allocated
-- **Snapshot** — point-in-time, NOT a backup
-- **Clone** — copy of a VM (linked or full)
-- **vMotion / Live Migration** — move running VM, zero downtime
+- **vCPU**, virtual core, maps to host core/thread
+- **vRAM**, allocated from host RAM
+- **vNIC**, attached to vSwitch / vNet
+- **Thin provisioning**, disk grows on write
+- **Thick provisioning**, full size pre-allocated
+- **Snapshot**, point-in-time, NOT a backup
+- **Clone**, copy of a VM (linked or full)
+- **vMotion / Live Migration**, move running VM, zero downtime
 
 ---
 
@@ -120,8 +120,8 @@
 1. 3 NIST service models + 1 example each? ___
 2. 5 essential cloud characteristics? ___
 3. Who patches the OS in IaaS vs SaaS? ___
-4. Type 1 vs Type 2 hypervisor — example of each? ___
-5. Snapshot vs backup — what's the difference? ___
+4. Type 1 vs Type 2 hypervisor, example of each? ___
+5. Snapshot vs backup, what's the difference? ___
 
 ---
 

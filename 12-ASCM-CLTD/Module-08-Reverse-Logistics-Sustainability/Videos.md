@@ -135,8 +135,8 @@
 ## ✅ After watching
 
 1. List the 5 returns-management steps.
-2. Refurbish vs remanufacture — give an example of each.
-3. Scope 1 vs 2 vs 3 emissions — give an example of each.
+2. Refurbish vs remanufacture, give an example of each.
+3. Scope 1 vs 2 vs 3 emissions, give an example of each.
 4. Difference between closed-loop and circular economy?
 5. ISO 14001 vs ISO 14064?
 

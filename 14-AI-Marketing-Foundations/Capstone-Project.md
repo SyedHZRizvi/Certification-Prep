@@ -1,4 +1,4 @@
-# Capstone Project — AI Digital Marketing Foundations
+# Capstone Project, AI Digital Marketing Foundations
 
 > **Format:** Self-directed; 4-8 weeks; ~25-40 hours of work
 > **Deliverables:** 7 artifacts + a board-ready 1-pager
@@ -26,9 +26,9 @@ Write a **2-3 page ICP memo** that defines who Northwind sells to. It must inclu
 
 - **Firmographic profile** (industry, company size, revenue band, geography, funding stage)
 - **Buyer persona** (job title, daily pain, the 3 jobs-to-be-done they hire your product for)
-- **Anti-ICP** (who you explicitly will not sell to, and why — pricing, churn, support cost)
+- **Anti-ICP** (who you explicitly will not sell to, and why, pricing, churn, support cost)
 - **Validation evidence** (cite 3-5 closed-won deals from the last 6 months; if data is thin, list the 5 customer-interview questions you would run in Week 1)
-- **Why this matters now** — connect the ICP to the $115K → $200K MRR target
+- **Why this matters now**, connect the ICP to the $115K → $200K MRR target
 
 **Format:** Markdown or Google Doc, 800-1,500 words. Use the JTBD framework from Christensen (*Competing Against Luck*, 2016) and reference at least one named competitor.
 
@@ -38,7 +38,7 @@ Build a **week-by-week content calendar** across **three channels**: SEO blog (l
 
 - **8 SEO articles** mapped to keywords with intent + difficulty + estimated TAM (use Ahrefs free or Google Keyword Planner)
 - **24 social posts** (3/week across LinkedIn + X), each with a hook + format (text, carousel, video)
-- **6 email campaigns** (2 nurture sequences for new MQLs + 4 broadcast emails — pricing change, customer story, product update, webinar)
+- **6 email campaigns** (2 nurture sequences for new MQLs + 4 broadcast emails, pricing change, customer story, product update, webinar)
 - **For each piece**: AI tool used (Claude / ChatGPT / Midjourney / HeyGen), human edit-time estimate, owner
 
 **Format:** Google Sheet or Notion database with columns: Week, Channel, Title/Hook, Keyword/Audience, AI Tool, Edit Time, Owner, Status.
@@ -47,9 +47,9 @@ Build a **week-by-week content calendar** across **three channels**: SEO blog (l
 
 You have **$22K/month of the $35K budget** allocated to paid. Design 3 paid-channel test plans:
 
-- **Google Ads** (Search + Performance Max) — restructure the existing $40K spend into a $12K/month structure. Include account architecture, 3 ad groups per campaign, negative-keyword seed list, bidding strategy with justification (Maximize Conversions vs Target CPA vs Target ROAS).
-- **LinkedIn Ads** — $6K/month, Sponsored Content + Conversation Ads. Include audience targeting (Matched Audiences from CRM + lookalikes + job-title-based).
-- **One contrarian test** — $4K/month on a channel you suspect is underutilized for B2B SaaS (Reddit Ads, X Ads, podcast pre-rolls, or a niche newsletter). Justify the hypothesis in 1 paragraph.
+- **Google Ads** (Search + Performance Max), restructure the existing $40K spend into a $12K/month structure. Include account architecture, 3 ad groups per campaign, negative-keyword seed list, bidding strategy with justification (Maximize Conversions vs Target CPA vs Target ROAS).
+- **LinkedIn Ads**, $6K/month, Sponsored Content + Conversation Ads. Include audience targeting (Matched Audiences from CRM + lookalikes + job-title-based).
+- **One contrarian test**, $4K/month on a channel you suspect is underutilized for B2B SaaS (Reddit Ads, X Ads, podcast pre-rolls, or a niche newsletter). Justify the hypothesis in 1 paragraph.
 
 For each plan: target CAC, target conversion event in GA4 + ad platform, learnings hypothesis ("If LinkedIn CAC is below $1,400, we double down in Week 5"), and the 2-week kill criteria.
 
@@ -60,10 +60,10 @@ For each plan: target CAC, target conversion event in GA4 + ad platform, learnin
 Northwind's GA4 is "set up but broken." You inherit it. Design:
 
 - **A custom-event taxonomy** (10-15 events: `signup_started`, `trial_activated`, `pricing_viewed`, `demo_requested`, `webinar_registered`, etc.) with parameter schemas
-- **Conversion event flagging** — which 5-7 events count as Key Events (formerly Conversions) and feed Google Ads + LinkedIn CAPI
-- **Audience definitions** — 6 GA4 audiences (e.g., "Pricing Page Bouncers", "Trial Activated Not Converted", "Webinar Attendees")
-- **Looker Studio dashboard** — a 1-page exec view (MRR, MQLs, CAC, CAC payback, CVR by source) sketched in markdown wireframe
-- **Consent Mode v2 + Enhanced Conversions** — implementation checklist (which tag manager, which forms, which fields hash)
+- **Conversion event flagging**, which 5-7 events count as Key Events (formerly Conversions) and feed Google Ads + LinkedIn CAPI
+- **Audience definitions**, 6 GA4 audiences (e.g., "Pricing Page Bouncers", "Trial Activated Not Converted", "Webinar Attendees")
+- **Looker Studio dashboard**, a 1-page exec view (MRR, MQLs, CAC, CAC payback, CVR by source) sketched in markdown wireframe
+- **Consent Mode v2 + Enhanced Conversions**, implementation checklist (which tag manager, which forms, which fields hash)
 
 **Format:** 3-4 pages of markdown + 1 wireframe sketch (ASCII or screenshot).
 
@@ -90,7 +90,7 @@ Design a **weekly OKR scorecard** the marketing team will fill out every Monday.
 - **3 marketing OKRs** for the 8-week period (one revenue, one funnel, one efficiency)
 - **For each OKR**: 3-5 weekly KRs with formula, owner, data source, current vs target
 - **Leading vs lagging indicator** designation on each KR
-- **The "red flag" rule** — if any KR is red 2 weeks in a row, what triggers (escalate to CEO, kill the channel, reallocate budget)
+- **The "red flag" rule**, if any KR is red 2 weeks in a row, what triggers (escalate to CEO, kill the channel, reallocate budget)
 
 Reference Doerr's *Measure What Matters* (2018) framework explicitly.
 
@@ -137,7 +137,7 @@ Compile the plan into a **single 1-page board document** the CEO will present to
 - **Week 7:** Optimization sprint. Cut the 2 worst-performing pieces of content + the worst-performing paid channel. Double down on the winner.
 - **Week 8:** Final board readout. Update the 1-pager with actuals vs plan. Self-grade the rubric.
 
-If you have only 4 weeks (compressed mode): combine Weeks 1-2, Weeks 4-5, and Weeks 7-8. Do not skip Deliverable 7 — the board 1-pager is what gets you re-funded.
+If you have only 4 weeks (compressed mode): combine Weeks 1-2, Weeks 4-5, and Weeks 7-8. Do not skip Deliverable 7, the board 1-pager is what gets you re-funded.
 
 ---
 
@@ -166,7 +166,7 @@ If you want to push beyond pass:
 
 1. **AI Overviews optimization audit.** Take your 8 SEO articles and re-optimize them for Google's AI Overviews using semantic SEO + schema. Document the on-page changes.
 2. **Predictive send-time test.** Add an A/B test to Deliverable 6 that compares AI-predicted send time (Klaviyo or HubSpot Smart Send Time) vs a fixed Tuesday 10am send.
-3. **Webinar funnel.** Design a webinar funnel for one of the content pieces — landing page, registration confirmation email, reminder cadence, replay nurture, MQL handoff to sales.
+3. **Webinar funnel.** Design a webinar funnel for one of the content pieces, landing page, registration confirmation email, reminder cadence, replay nurture, MQL handoff to sales.
 4. **Privacy-first measurement.** Implement Consent Mode v2 + Enhanced Conversions + Meta CAPI end-to-end. Document the cookie-deprecation contingency plan.
 5. **Brand-vs-performance budget split rationale.** Write a 2-page memo arguing the optimal brand-vs-performance split for Northwind right now, citing Binet & Field's *The Long and the Short of It* (IPA, 2013).
 
@@ -174,6 +174,6 @@ If you want to push beyond pass:
 
 ## Why this Capstone Matters
 
-Foundations courses teach you the names of things. This capstone forces you to integrate those names into a defensible plan a CEO would actually approve and a board would actually review. If you can defend each deliverable to a peer or a real marketing leader, you will pass HubSpot Marketing Software, Google Digital Marketing & E-commerce, and the Meta Certified Digital Marketing Associate exams comfortably — and more importantly, you'll be ready for the marketing-manager role this capstone simulates.
+Foundations courses teach you the names of things. This capstone forces you to integrate those names into a defensible plan a CEO would actually approve and a board would actually review. If you can defend each deliverable to a peer or a real marketing leader, you will pass HubSpot Marketing Software, Google Digital Marketing & E-commerce, and the Meta Certified Digital Marketing Associate exams comfortably, and more importantly, you'll be ready for the marketing-manager role this capstone simulates.
 
 Good luck. 🚀

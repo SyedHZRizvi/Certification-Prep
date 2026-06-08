@@ -1,7 +1,7 @@
 # 📋 Module 7 Cheat Sheet: Financials, Cash Flow & Taxes
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
-> ⚖️ NOT tax/legal/financial advice — consult a CPA + attorney for your situation.
+> ⚖️ NOT tax/legal/financial advice, consult a CPA + attorney for your situation.
 
 ---
 
@@ -41,7 +41,7 @@ S-corp at higher profit: 25 / 25 / 50
 | Sole prop | Year 1 / <$50K | None |
 | LLC (single member) | Year 1–2 / <$80K | None |
 | **LLC + S-corp election** | **$80K–$400K profit** | **Significant** |
-| C-corp | Raising VC | N/A — different model |
+| C-corp | Raising VC | N/A, different model |
 
 International equivalents: UK Ltd, German GmbH, French SAS/SARL, Canadian fed corp, Australian Pty Ltd, Spanish SL.
 
@@ -119,7 +119,7 @@ W1   |     $X     |   $X    |    $X    |   $X
 
 ---
 
-## 🛠️ Tools (2026 — verify)
+## 🛠️ Tools (2026, verify)
 
 | Tool | $/mo |
 |---|---|
@@ -181,4 +181,4 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 > ⚖️ Every number here is illustrative. Verify with current IRS / your tax authority, and consult a CPA.
 
-➡️ [Module 8: Capstone — First Client Engagement](../Module-08-Capstone-First-Client-Engagement/Reading.md)
+➡️ [Module 8: Capstone, First Client Engagement](../Module-08-Capstone-First-Client-Engagement/Reading.md)

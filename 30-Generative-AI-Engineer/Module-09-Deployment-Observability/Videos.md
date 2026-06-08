@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">vLLM + PagedAttention — production serving</p>
+      <p class="vg-title">vLLM + PagedAttention, production serving</p>
       <p class="vg-creator">vLLM authors</p>
       <span class="vg-duration">⏱ 50m · The serving standard</span>
     </div>
@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LiteLLM — gateway + routing tutorial</p>
+      <p class="vg-title">LiteLLM, gateway + routing tutorial</p>
       <p class="vg-creator">LiteLLM team</p>
       <span class="vg-duration">⏱ 40m · One API, all providers</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Langfuse — open-source observability</p>
+      <p class="vg-title">Langfuse, open-source observability</p>
       <p class="vg-creator">Langfuse team</p>
       <span class="vg-duration">⏱ 45m · Traces + costs + evals</span>
     </div>
@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt caching — Anthropic + OpenAI</p>
+      <p class="vg-title">Prompt caching, Anthropic + OpenAI</p>
       <p class="vg-creator">community / DevRel</p>
       <span class="vg-duration">⏱ 30m · Up to 90% cost saving</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Modal — serverless GPU inference</p>
+      <p class="vg-title">Modal, serverless GPU inference</p>
       <p class="vg-creator">Modal Labs</p>
       <span class="vg-duration">⏱ 35m · "Lambda for GPUs"</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Helicone — proxy-based observability</p>
+      <p class="vg-title">Helicone, proxy-based observability</p>
       <p class="vg-creator">Helicone</p>
       <span class="vg-duration">⏱ 30m · Cheapest path to visibility</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Speculative decoding — latency 2-3× faster</p>
+      <p class="vg-title">Speculative decoding, latency 2-3× faster</p>
       <p class="vg-creator">community / paper review</p>
       <span class="vg-duration">⏱ 30m · Draft + verify</span>
     </div>
@@ -93,7 +93,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">GPTCache — semantic caching</p>
+      <p class="vg-title">GPTCache, semantic caching</p>
       <p class="vg-creator">Zilliz</p>
       <span class="vg-duration">⏱ 25m · 30-70% cost cut on hot queries</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">TensorRT-LLM — NVIDIA serving</p>
+      <p class="vg-title">TensorRT-LLM, NVIDIA serving</p>
       <p class="vg-creator">NVIDIA</p>
       <span class="vg-duration">⏱ 40m · The fastest serving stack</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Ollama — local LLM in 1 command</p>
+      <p class="vg-title">Ollama, local LLM in 1 command</p>
       <p class="vg-creator">Ollama</p>
       <span class="vg-duration">⏱ 20m · Consumer-grade serving</span>
     </div>
@@ -125,7 +125,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Groq LPU — lowest-latency serving</p>
+      <p class="vg-title">Groq LPU, lowest-latency serving</p>
       <p class="vg-creator">Groq</p>
       <span class="vg-duration">⏱ 25m · Custom inference hardware</span>
     </div>
@@ -134,7 +134,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Cursor team — building an AI IDE</p>
+      <p class="vg-title">Cursor team, building an AI IDE</p>
       <p class="vg-creator">Cursor / podcasts</p>
       <span class="vg-duration">⏱ 1h · The full latency war</span>
     </div>
@@ -159,9 +159,9 @@
 ## ✅ After watching
 
 1. Three production techniques that reduced Cursor's latency below 200ms p95?
-2. vLLM PagedAttention — what does it do?
+2. vLLM PagedAttention, what does it do?
 3. List 5 things to track on a cost dashboard.
-4. Streaming + early-cancel — sketch the architecture.
-5. Hosted vs self-hosted — when does break-even happen?
+4. Streaming + early-cancel, sketch the architecture.
+5. Hosted vs self-hosted, when does break-even happen?
 
 Then [Quiz](./Quiz.md).

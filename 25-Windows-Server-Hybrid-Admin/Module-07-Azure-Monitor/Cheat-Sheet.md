@@ -169,7 +169,7 @@ Usually **wrong**:
 
 ## ✏️ Quick Self-Check
 
-1. AMA vs MMA — what changed? ___
+1. AMA vs MMA, what changed? ___
 2. DCR purpose + one-per-machine vs one-per-workload? ___
 3. Top 5 KQL operators? ___
 4. Metric alert vs log alert latency? ___

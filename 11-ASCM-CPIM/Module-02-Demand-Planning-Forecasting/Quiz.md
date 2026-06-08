@@ -1,6 +1,6 @@
 # ✏️ Module 2 Quiz: Demand Planning & Forecasting
 
-> **Instructions:** Answer all 26 questions WITHOUT looking at the reading. This quiz has 8 calculation questions — work them on paper.
+> **Instructions:** Answer all 26 questions WITHOUT looking at the reading. This quiz has 8 calculation questions, work them on paper.
 > Aim for 22/26 minimum.
 
 ---
@@ -71,7 +71,7 @@ D. Maximum Allowable Deviation
 
 ---
 
-### Q9. Given the following errors: -10, +5, +10, -20, +5 — what is the MAD? *(Apply)*
+### Q9. Given the following errors: -10, +5, +10, -20, +5, what is the MAD? *(Apply)*
 A. -2
 B. 5
 C. 10
@@ -79,7 +79,7 @@ D. 50
 
 ---
 
-### Q10. Using the same errors (-10, +5, +10, -20, +5) — what is the cumulative bias (sum of errors)? *(Apply)*
+### Q10. Using the same errors (-10, +5, +10, -20, +5), what is the cumulative bias (sum of errors)? *(Apply)*
 A. 50
 B. 0
 C. -10
@@ -105,7 +105,7 @@ D. MSE ÷ MAD
 
 ### Q13. A tracking signal of +5.2 over many periods typically means: *(Analyze)*
 A. The forecast is unbiased and accurate
-B. The forecast is consistently *under*-forecasting (positive bias indicates demand > forecast) — model should be revised
+B. The forecast is consistently *under*-forecasting (positive bias indicates demand > forecast), model should be revised
 C. The forecast is consistently over-forecasting
 D. Random variation only
 
@@ -259,7 +259,7 @@ MAPE = average of (|error| / demand) × 100. Useful for comparing forecasts acro
 Tracking signal = cumulative forecast error (bias) ÷ MAD. Most texts flag the model when |TS| > 4 (some use ±6).
 
 ### Q13: **B. The forecast is consistently *under*-forecasting**
-A *positive* bias (TS > 0) means cumulative errors are positive — i.e., Actual > Forecast over time — so the forecast is consistently low. Note: convention is e_t = D − F, so positive errors = under-forecast.
+A *positive* bias (TS > 0) means cumulative errors are positive i.e., Actual > Forecast over time so the forecast is consistently low. Note: convention is e_t = D − F, so positive errors = under-forecast.
 
 ### Q14: **C. MSE**
 MSE squares each error, which makes large misses disproportionately costly. Useful when one big miss is much worse than several small ones.
@@ -315,7 +315,7 @@ Documented across decades of forecasting competitions (M-competitions). Complex 
 
 - The 4 components of demand (TCSR)
 - The 3 time-series formulas: SMA, WMA, exponential smoothing
-- MAD, MSE, MAPE, bias, tracking signal — the formulas
+- MAD, MSE, MAPE, bias, tracking signal, the formulas
 - α: high = responsive; low = smooth
 - The 4 CPFR activities
 - Causes & cures of the bullwhip effect

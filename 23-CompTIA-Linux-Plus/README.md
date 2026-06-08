@@ -18,28 +18,28 @@ title: CompTIA Linux+ Track (XK0-005)
 
 ### 🎯 The promise
 
-CompTIA Linux+ (XK0-005) is the credential that takes you from someone who *runs commands* to someone who *administers* Linux systems in production. Linux runs **90%+ of the public cloud**, the majority of enterprise servers, every container in Kubernetes, every Android phone, every embedded device, and the supercomputers on the TOP500 list. It is the operating system the modern world actually runs on. Pass Linux+ and you are recognized as a credentialed Linux sysadmin — qualified for any role where "Linux experience" appears in the job description.
+CompTIA Linux+ (XK0-005) is the credential that takes you from someone who *runs commands* to someone who *administers* Linux systems in production. Linux runs **90%+ of the public cloud**, the majority of enterprise servers, every container in Kubernetes, every Android phone, every embedded device, and the supercomputers on the TOP500 list. It is the operating system the modern world actually runs on. Pass Linux+ and you are recognized as a credentialed Linux sysadmin, qualified for any role where "Linux experience" appears in the job description.
 
 ### 💼 Career outcomes after passing
 
-- **Linux Systems Administrator** ($80K–$115K) — operating Linux fleets in production
-- **DevOps Engineer** ($105K–$145K) — Linux fluency is the foundational requirement; layer on cloud + CI/CD
-- **Site Reliability Engineer (SRE)** ($120K–$170K) — Linux deeply, plus observability + automation
-- **Cloud Engineer (Linux focus)** ($110K–$155K) — AWS / Azure / GCP plus production Linux skill
-- **Cybersecurity Engineer (Linux specialization)** ($110K–$155K) — incident response, forensics, threat hunting on Linux fleets
-- **Kubernetes / Container Engineer** ($125K–$175K) — Linux+ floor, layered with CKA / CKAD certs
-- **Open-Source Software Engineer** ($120K–$180K) — at Red Hat, SUSE, Canonical, the Linux Foundation member companies
+- **Linux Systems Administrator** ($80K–$115K), operating Linux fleets in production
+- **DevOps Engineer** ($105K–$145K), Linux fluency is the foundational requirement; layer on cloud + CI/CD
+- **Site Reliability Engineer (SRE)** ($120K–$170K), Linux deeply, plus observability + automation
+- **Cloud Engineer (Linux focus)** ($110K–$155K), AWS / Azure / GCP plus production Linux skill
+- **Cybersecurity Engineer (Linux specialization)** ($110K–$155K), incident response, forensics, threat hunting on Linux fleets
+- **Kubernetes / Container Engineer** ($125K–$175K), Linux+ floor, layered with CKA / CKAD certs
+- **Open-Source Software Engineer** ($120K–$180K), at Red Hat, SUSE, Canonical, the Linux Foundation member companies
 
 Linux+ pairs cleanly with **Network+ (course 22)** and **Security+ (course 09)** for the infrastructure / security path, and with cloud certs (courses 03–08) for the cloud-engineer path. CompTIA's salary data places Linux+ holders at roughly **$95K average**, with a 15–25% premium over non-certified Linux operators in equivalent roles.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every command introduced through a real ops scenario (a load-balancer fix at 3am, a kernel-panic forensic walkthrough, a systemd unit-file rescue)
-- **Original questions only** — every quiz and practice exam written from CompTIA's published XK0-005 exam objectives; no copyrighted dumps
-- **Real-world case studies** — the Heartbleed disclosure timeline, the Dirty COW kernel exploit lifecycle, a real outage post-mortem from a SaaS company, systemd vs sysvinit migration battle stories
-- **One author, one voice** — coherent vocabulary across all 8 modules
-- **Updated for the XK0-005 blueprint** — including systemd-everything, modern containers (Docker, Podman), nftables (not iptables), modern Bash, and the current security-control set (SELinux / AppArmor)
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every command introduced through a real ops scenario (a load-balancer fix at 3am, a kernel-panic forensic walkthrough, a systemd unit-file rescue)
+- **Original questions only**, every quiz and practice exam written from CompTIA's published XK0-005 exam objectives; no copyrighted dumps
+- **Real-world case studies**, the Heartbleed disclosure timeline, the Dirty COW kernel exploit lifecycle, a real outage post-mortem from a SaaS company, systemd vs sysvinit migration battle stories
+- **One author, one voice**, coherent vocabulary across all 8 modules
+- **Updated for the XK0-005 blueprint**, including systemd-everything, modern containers (Docker, Podman), nftables (not iptables), modern Bash, and the current security-control set (SELinux / AppArmor)
 
 ### 🚀 Ready to start?
 
@@ -95,15 +95,15 @@ By the end of this track, you'll be able to:
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[Sander van Vugt's CompTIA Linux+ Complete Video Course (Pearson)](https://www.pearson.com/en-us/search.html/?q=Linux%2B+XK0-005)** — the most rigorous video set aligned to XK0-005 objectives. Pair with his book *CompTIA Linux+ XK0-005 Cert Guide*.
+🔗 **[Sander van Vugt's CompTIA Linux+ Complete Video Course (Pearson)](https://www.pearson.com/en-us/search.html/?q=Linux%2B+XK0-005)**, the most rigorous video set aligned to XK0-005 objectives. Pair with his book *CompTIA Linux+ XK0-005 Cert Guide*.
 
 Honorable mentions:
 
-- 📘 *CompTIA Linux+ XK0-005 Cert Guide* (Ross Brunson & Sander van Vugt, Pearson) — gold-standard text
-- 📘 *Linux Bible* (Christopher Negus, Wiley, 11th ed.) — the most readable comprehensive Linux book
-- 📘 *How Linux Works* (Brian Ward, No Starch, 3rd ed.) — the under-the-hood book MIT recommends to its sysadmin TAs
-- 📘 *Linux Pocket Guide* (Daniel Barrett, O'Reilly, 4th ed.) — keep it open while practicing
-- 🎥 [The Linux Foundation's free "Intro to Linux"](https://training.linuxfoundation.org/training/introduction-to-linux/) on edX — vendor-neutral, perfectly aligned
+- 📘 *CompTIA Linux+ XK0-005 Cert Guide* (Ross Brunson & Sander van Vugt, Pearson), gold-standard text
+- 📘 *Linux Bible* (Christopher Negus, Wiley, 11th ed.), the most readable comprehensive Linux book
+- 📘 *How Linux Works* (Brian Ward, No Starch, 3rd ed.), the under-the-hood book MIT recommends to its sysadmin TAs
+- 📘 *Linux Pocket Guide* (Daniel Barrett, O'Reilly, 4th ed.), keep it open while practicing
+- 🎥 [The Linux Foundation's free "Intro to Linux"](https://training.linuxfoundation.org/training/introduction-to-linux/) on edX, vendor-neutral, perfectly aligned
 
 ---
 
@@ -115,8 +115,8 @@ Honorable mentions:
 | Exam code | XK0-005 (released July 2022; current version) |
 | Cost | $369 USD (vouchers often discount via student/military deals) |
 | Time | 90 minutes |
-| Questions | **Up to 90** — mix of multiple-choice (single + multi) and **Performance-Based Questions (PBQs)** |
-| Pass mark | **720 / 900** (~80%) — scaled, not raw percentage |
+| Questions | **Up to 90**, mix of multiple-choice (single + multi) and **Performance-Based Questions (PBQs)** |
+| Pass mark | **720 / 900** (~80%), scaled, not raw percentage |
 | Delivery | Pearson VUE test center OR online proctored |
 | Validity | 3 years; renew with CEUs, a higher cert, or by retaking |
 | Prerequisites | None official; CompTIA recommends 12+ months hands-on Linux + Network+/Server+ baseline |
@@ -130,7 +130,7 @@ Honorable mentions:
 | 3.0 Scripting, Containers & Automation | **19%** | Module 4 |
 | 4.0 Troubleshooting | **28%** | Modules 1, 6, 7 (woven throughout) |
 
-System Management is the **biggest domain** — don't shortchange Modules 1–3. Troubleshooting is the second biggest and is tested via PBQs in every domain.
+System Management is the **biggest domain**, don't shortchange Modules 1–3. Troubleshooting is the second biggest and is tested via PBQs in every domain.
 
 ---
 
@@ -159,19 +159,19 @@ Week 8:    Final Mock + flashcards + Cheat-Sheets review → REAL EXAM
 
 ## ⚠️ The 7 Most Common Reasons People Fail
 
-1. ❌ **No live Linux system to practice on** — Reading about `ip addr` is nothing like running it. Spin up a VM, a Pi, or WSL on day one.
-2. ❌ **Picked one distro and ignored the others** — XK0-005 is vendor-neutral. Know `apt` AND `dnf`, `firewalld` AND `nftables`, `journalctl` AND classic syslog.
-3. ❌ **Memorized commands but skipped the *why*** — PBQs ask you to fix a broken system. You need to understand systemd unit ordering, not just `systemctl start`.
-4. ❌ **Skipped LVM and SELinux** — they each look like one slide but each gets 4–6 questions. The lab investment pays back hugely.
-5. ❌ **Treated Bash as optional** — Domain 3 (Scripting) is 19%. You will read and modify scripts on the exam.
-6. ❌ **Confused similar tools** — `ip` vs `ifconfig`, `ss` vs `netstat`, `nftables` vs `iptables`, `journalctl` vs `tail /var/log/messages`. Flashcards fix this.
-7. ❌ **No time management** — 90 questions in 90 minutes = 60 seconds each. Mark long PBQs for review and come back to them last.
+1. ❌ **No live Linux system to practice on**, Reading about `ip addr` is nothing like running it. Spin up a VM, a Pi, or WSL on day one.
+2. ❌ **Picked one distro and ignored the others**, XK0-005 is vendor-neutral. Know `apt` AND `dnf`, `firewalld` AND `nftables`, `journalctl` AND classic syslog.
+3. ❌ **Memorized commands but skipped the *why***, PBQs ask you to fix a broken system. You need to understand systemd unit ordering, not just `systemctl start`.
+4. ❌ **Skipped LVM and SELinux**, they each look like one slide but each gets 4–6 questions. The lab investment pays back hugely.
+5. ❌ **Treated Bash as optional**, Domain 3 (Scripting) is 19%. You will read and modify scripts on the exam.
+6. ❌ **Confused similar tools**, `ip` vs `ifconfig`, `ss` vs `netstat`, `nftables` vs `iptables`, `journalctl` vs `tail /var/log/messages`. Flashcards fix this.
+7. ❌ **No time management**, 90 questions in 90 minutes = 60 seconds each. Mark long PBQs for review and come back to them last.
 
 ---
 
 ## 🃏 Use the Flashcards
 
-Linux+ has hundreds of commands, flags, and config-file paths. The [Master Flashcards](./Flashcards.md) deck has 120+ cards covering every command, port, filesystem, and signal you must know cold. Drill them daily — even 10 minutes/day for two weeks beats one cram session.
+Linux+ has hundreds of commands, flags, and config-file paths. The [Master Flashcards](./Flashcards.md) deck has 120+ cards covering every command, port, filesystem, and signal you must know cold. Drill them daily, even 10 minutes/day for two weeks beats one cram session.
 
 ---
 

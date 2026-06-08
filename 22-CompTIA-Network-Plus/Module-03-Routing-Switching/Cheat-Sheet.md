@@ -4,7 +4,7 @@
 
 ---
 
-## 🚦 Administrative Distance — Memorize Order
+## 🚦 Administrative Distance, Memorize Order
 
 | Source | AD |
 |--------|----|
@@ -53,13 +53,13 @@
 | Element | Value |
 |---------|-------|
 | Standard | IEEE 802.1D (classic) |
-| RSTP | IEEE 802.1w — fast (sec) |
-| MSTP | IEEE 802.1s — per-VLAN-group |
+| RSTP | IEEE 802.1w, fast (sec) |
+| MSTP | IEEE 802.1s, per-VLAN-group |
 | Default priority | 32,768 |
 | Root election | Lowest Bridge ID (priority + MAC) |
 | Port roles | Root, Designated, Blocking/Alternate |
 | Convergence (classic) | ~30–50 seconds |
-| PortFast | ACCESS PORTS ONLY — skips listening/learning |
+| PortFast | ACCESS PORTS ONLY, skips listening/learning |
 | BPDU Guard | Disables PortFast port if BPDU received |
 | Root Guard | Prevents interface from becoming root port |
 

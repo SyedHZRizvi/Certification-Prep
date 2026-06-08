@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Midjourney v7 — Complete Tutorial for Marketers</p>
+      <p class="vg-title">Midjourney v7, Complete Tutorial for Marketers</p>
       <p class="vg-creator">Various creators</p>
       <span class="vg-duration">⏱ 24 min · Prompts + parameters</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">HeyGen — Founder-Style AI Avatar Videos</p>
+      <p class="vg-title">HeyGen, Founder-Style AI Avatar Videos</p>
       <p class="vg-creator">HeyGen + creators</p>
       <span class="vg-duration">⏱ 14 min · Multi-language avatars</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Make.com — Batch AI Content Pipelines</p>
+      <p class="vg-title">Make.com, Batch AI Content Pipelines</p>
       <p class="vg-creator">Make + automation creators</p>
       <span class="vg-duration">⏱ 20 min · Chain AI tools</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Sora (OpenAI) — Long-Form AI Video</p>
+      <p class="vg-title">Sora (OpenAI), Long-Form AI Video</p>
       <p class="vg-creator">OpenAI + creator tests</p>
       <span class="vg-duration">⏱ 17 min · 60+ sec realistic video</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Pika vs Runway vs Sora — Tool Comparison</p>
+      <p class="vg-title">Pika vs Runway vs Sora, Tool Comparison</p>
       <p class="vg-creator">AI video creators</p>
       <span class="vg-duration">⏱ 15 min · Pick the right tool</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">n8n Self-Hosted — Free Marketing Automation</p>
+      <p class="vg-title">n8n Self-Hosted, Free Marketing Automation</p>
       <p class="vg-creator">n8n creator community</p>
       <span class="vg-duration">⏱ 18 min · Beyond Make.com pricing</span>
     </div>
@@ -149,6 +149,6 @@ Answer these in your notebook (without re-watching):
 2. Which model is best for long-form brand content?
 3. What does Midjourney's `--cref` parameter do?
 4. How does HeyGen produce founder-style videos?
-5. Make.com vs Zapier vs n8n — when to use which?
+5. Make.com vs Zapier vs n8n, when to use which?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

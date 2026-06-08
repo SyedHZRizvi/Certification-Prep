@@ -1,6 +1,6 @@
 # Module 6: Multi-Agent Systems 🤖🤖🤖
 
-> **Why this module matters:** "Multi-agent" is the most-hyped, most-misused term in applied GenAI 2024–2026. Half the time, the right answer is "one agent with good tools." The other half, a well-orchestrated team of specialized agents is the only thing that works. This module is how to tell which is which — and how to build it when the answer is multi-agent.
+> **Why this module matters:** "Multi-agent" is the most-hyped, most-misused term in applied GenAI 2024–2026. Half the time, the right answer is "one agent with good tools." The other half, a well-orchestrated team of specialized agents is the only thing that works. This module is how to tell which is which, and how to build it when the answer is multi-agent.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–5
@@ -16,7 +16,7 @@ March 2023. AutoGPT exploded onto the scene: a GitHub repo claiming to be the "f
 
 Because AutoGPT, in practice, was *spectacularly* bad at finishing tasks. It would spin in loops, repeat itself, run up API costs, and produce 200-line plans for "buy a domain and host a hello world site" before failing at step 8 because it couldn't authenticate to a service it had never been told about. A widely-circulated benchmark in mid-2023 showed AutoGPT successfully completed roughly **8%** of the tasks it attempted.
 
-The 2024 takeaway, written in many post-mortems, was unsentimental: **autonomous open-ended agents don't work yet.** What does work is *scoped agents* — agents with a well-defined goal, a small set of tools, a limited budget of steps, and a clear stop condition. Most of "multi-agent systems" in 2026 is the engineering of *constrained collaboration*, not "let the AI figure it out."
+The 2024 takeaway, written in many post-mortems, was unsentimental: **autonomous open-ended agents don't work yet.** What does work is *scoped agents*, agents with a well-defined goal, a small set of tools, a limited budget of steps, and a clear stop condition. Most of "multi-agent systems" in 2026 is the engineering of *constrained collaboration*, not "let the AI figure it out."
 
 This module is built on the post-AutoGPT consensus.
 
@@ -28,7 +28,7 @@ Multi-agent is *appropriate* when:
 
 1. **The task naturally decomposes into roles** with different expertise and tools. Example: a coding assistant where a *planner* writes a spec, a *coder* implements, a *tester* runs tests, a *reviewer* critiques.
 2. **Parallel processing helps.** Multiple agents researching different sub-topics simultaneously can compress wall-clock time for "summarize what's happening in 5 fields of ML."
-3. **Different personas need separation.** A "red team" agent that tries to break a "blue team" agent's output — a structured form of self-critique that single-agent prompts can't easily reproduce.
+3. **Different personas need separation.** A "red team" agent that tries to break a "blue team" agent's output, a structured form of self-critique that single-agent prompts can't easily reproduce.
 4. **Tools belong to different domains.** One agent has SQL access; another has Python; another has web search. Routing tools by agent role can be cleaner than dumping them all on one agent.
 5. **You need diversity.** Multiple agents with different personas / temperatures / models, voting on an answer, can outperform a single agent (LLM-as-judge-ensemble).
 
@@ -129,13 +129,13 @@ These are special-purpose, not general frameworks. Worth knowing exists; rarely 
 
 ### Anthropic's Computer Use / Claude as a desktop agent
 
-Released October 2024. Claude controls a virtual desktop — sees screenshots, moves the mouse, types. Multi-step automation of GUI tasks. The "tools" are *primitives* (click_at, type, screenshot, key_press) rather than domain-specific APIs.
+Released October 2024. Claude controls a virtual desktop, sees screenshots, moves the mouse, types. Multi-step automation of GUI tasks. The "tools" are *primitives* (click_at, type, screenshot, key_press) rather than domain-specific APIs.
 
-Computer Use is a *new shape* of agent — sensorimotor rather than text-tool. Production deployments in 2025–2026 wrap it with strict guardrails because the action space is enormous.
+Computer Use is a *new shape* of agent, sensorimotor rather than text-tool. Production deployments in 2025–2026 wrap it with strict guardrails because the action space is enormous.
 
 ### OpenAI Swarm / OpenAI Agents SDK
 
-OpenAI released the experimental "Swarm" framework in October 2024, then the production "Agents SDK" in 2025. Swarm models *handoffs* — one agent decides which other agent to transfer control to.
+OpenAI released the experimental "Swarm" framework in October 2024, then the production "Agents SDK" in 2025. Swarm models *handoffs*, one agent decides which other agent to transfer control to.
 
 ```python
 from agents import Agent, Runner
@@ -200,8 +200,8 @@ Every agent system needs an answer to: *when do we stop?*
 
 Common stop conditions:
 
-- **Max iterations** (hard cap on agent loop count) — the most important defense against infinite loops
-- **Budget cap** ($1, $5, $20 per task) — defense against runaway cost
+- **Max iterations** (hard cap on agent loop count), the most important defense against infinite loops
+- **Budget cap** ($1, $5, $20 per task), defense against runaway cost
 - **Goal-completion signal** (agent emits a `DONE` token or empty tool list)
 - **Confidence threshold** (the supervisor judges "we have an answer")
 - **Time budget** (hard wall-clock cap)
@@ -219,17 +219,17 @@ A central, versioned tool registry (in MCP, Pinecone-style "agent registry", or 
 
 ### Memory (shared vs private)
 
-- **Shared scratchpad** — all agents read/write a shared state object. Risk: contention; one bad write can poison everyone.
-- **Private chains-of-thought** — each agent's reasoning stays local; only outputs are shared. Safer; more common in production.
-- **Episodic memory** — vector store of past interactions; agents retrieve relevant precedents.
+- **Shared scratchpad**, all agents read/write a shared state object. Risk: contention; one bad write can poison everyone.
+- **Private chains-of-thought**, each agent's reasoning stays local; only outputs are shared. Safer; more common in production.
+- **Episodic memory**, vector store of past interactions; agents retrieve relevant precedents.
 
 ### Inter-agent message protocols
 
-MCP (Module 4) handles agent-to-tool. Agent-to-agent is rougher — no universal standard. Common approaches: structured JSON envelopes; protobuf-style schemas; or simple "natural-language messages with role tags."
+MCP (Module 4) handles agent-to-tool. Agent-to-agent is rougher, no universal standard. Common approaches: structured JSON envelopes; protobuf-style schemas; or simple "natural-language messages with role tags."
 
 ### Computer Use & Browser Automation
 
-Anthropic Computer Use, OpenAI's o1-with-browser, Microsoft's UFO project — all give an agent direct control of a screen. Best paired with:
+Anthropic Computer Use, OpenAI's o1-with-browser, Microsoft's UFO project, all give an agent direct control of a screen. Best paired with:
 
 - Sandboxed VMs (never on production hosts)
 - Action-level rate limiting + human approval for "destructive" actions
@@ -255,7 +255,7 @@ Anthropic Computer Use, OpenAI's o1-with-browser, Microsoft's UFO project — al
 
 ## 🏗️ Lab: Build a Research Crew + LangGraph Supervisor
 
-Goal: build two flavors of the same task — "given a topic, produce a 1,000-word technical brief":
+Goal: build two flavors of the same task, "given a topic, produce a 1,000-word technical brief":
 
 1. **CrewAI implementation:** roles for researcher, fact-checker, writer, editor. Sequential process. ~80 lines of code.
 2. **LangGraph implementation:** supervisor agent + same four worker agents as graph nodes. Conditional edges: supervisor routes to the next agent or to END. Add a "needs more research" loop.
@@ -268,7 +268,7 @@ Then:
 
 ---
 
-## 📊 Case Study — Anthropic's "Claude as a Software Engineer" Internal Experiment (2024)
+## 📊 Case Study, Anthropic's "Claude as a Software Engineer" Internal Experiment (2024)
 
 **Situation.** In late 2024, Anthropic published a research blog post about using Claude (specifically Claude 3.5 Sonnet) as a software-engineering assistant *internally* for their own codebases. They tried both single-agent and multi-agent configurations.
 
@@ -277,10 +277,10 @@ Then:
 **Multi-agent (planner + coder + reviewer):** A planner Claude reads the issue and writes a step-by-step plan; a coder Claude implements; a reviewer Claude critiques and the coder revises. Achieved roughly **64% on SWE-bench Verified**.
 
 **The lessons (paraphrasing Anthropic's published commentary):**
-1. **The 15-point gap is real** — multi-agent matters for genuinely difficult, multi-step tasks like code generation.
+1. **The 15-point gap is real**, multi-agent matters for genuinely difficult, multi-step tasks like code generation.
 2. **Cost is 3-4× higher.** Each turn of the loop is multiple Claude calls.
 3. **Latency is 2-3× higher.** The loop runs sequentially.
-4. **Quality variance is much lower** — multi-agent reduces the "tail" of catastrophic failures, even when the median quality is similar.
+4. **Quality variance is much lower**, multi-agent reduces the "tail" of catastrophic failures, even when the median quality is similar.
 
 **The honest take:** for *expensive*, *high-stakes*, *high-difficulty* tasks (like code generation against a real codebase), multi-agent earns its cost. For "summarize this email," it's overkill.
 
@@ -298,7 +298,7 @@ You now know:
 - 🚦 When multi-agent is actually right (and the much more common "use one agent" path)
 - 🧱 The major frameworks: LangGraph, CrewAI, AutoGen, OpenAI Agents SDK, Computer Use
 - 🤝 Communication patterns: supervisor, hierarchical, sequential, debate, voting, reflection
-- 🛑 Stop conditions — every agent system must have them
+- 🛑 Stop conditions, every agent system must have them
 - 🧰 Tools, MCP, shared vs private state
 - 🚨 The anti-patterns that crash production multi-agent systems
 
@@ -306,12 +306,12 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 7 — Evaluation & RAGAS](../Module-07-Evaluation-RAGAS/Reading.md)
+4. ➡️ Move on: [Module 7, Evaluation & RAGAS](../Module-07-Evaluation-RAGAS/Reading.md)
 
 > **Where this leads.**
 > - Module 7 covers eval of agent systems (which is much harder than eval of single LLM calls).
 > - Module 8 covers guardrails on agent actions (essential for any agent that touches the world).
-> - Module 9 covers observability of multi-step agents — the only way to debug them.
+> - Module 9 covers observability of multi-step agents, the only way to debug them.
 
 ---
 
@@ -325,4 +325,4 @@ You now know:
 - 📖 [LangGraph Multi-Agent docs](https://langchain-ai.github.io/langgraph/concepts/multi_agent/)
 - 📖 [CrewAI documentation](https://docs.crewai.com/)
 - 📖 [AutoGen docs](https://microsoft.github.io/autogen/)
-- 🎬 Andrew Ng's "What's next for AI agentic workflows" — DeepLearning.AI
+- 🎬 Andrew Ng's "What's next for AI agentic workflows", DeepLearning.AI

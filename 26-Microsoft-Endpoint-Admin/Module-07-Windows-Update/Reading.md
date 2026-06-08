@@ -1,19 +1,19 @@
 # Module 7: Windows Update for Business & Servicing 🔄
 
-> **Why this module matters:** Windows servicing is the recurring operational rhythm of every endpoint program. MD-102 tests update rings, feature vs quality vs driver separation, expedited updates, and Delivery Optimization repeatedly. The exam loves "the zero-day Patch Tuesday with a known-exploited vuln" scenarios — get WUfB cold and these become trivial.
+> **Why this module matters:** Windows servicing is the recurring operational rhythm of every endpoint program. MD-102 tests update rings, feature vs quality vs driver separation, expedited updates, and Delivery Optimization repeatedly. The exam loves "the zero-day Patch Tuesday with a known-exploited vuln" scenarios, get WUfB cold and these become trivial.
 
 > **Prerequisites for this module.** Before starting:
-> - Module 1 (Modern Workplace) — Windows-as-a-Service mental model.
-> - Module 3 (Intune Fundamentals) — group targeting + Settings Catalog.
-> - Awareness of Windows update history — what Patch Tuesday is, what a feature update vs cumulative update means.
+> - Module 1 (Modern Workplace), Windows-as-a-Service mental model.
+> - Module 3 (Intune Fundamentals), group targeting + Settings Catalog.
+> - Awareness of Windows update history, what Patch Tuesday is, what a feature update vs cumulative update means.
 
 ---
 
 ## 🍕 A Story: Patch Tuesday + Zero-Day
 
-It's Tuesday, May 13th. Microsoft releases the May 2026 Patch Tuesday update at 1pm Eastern. Among the patches is **KB5037890** — a critical Remote Code Execution vuln in the Windows Print Spooler that's already being exploited in the wild. The CISO sends one message:
+It's Tuesday, May 13th. Microsoft releases the May 2026 Patch Tuesday update at 1pm Eastern. Among the patches is **KB5037890**, a critical Remote Code Execution vuln in the Windows Print Spooler that's already being exploited in the wild. The CISO sends one message:
 
-> *"Maria — every Windows 11 endpoint needs KB5037890 in production within 48 hours. CVSS 9.8. Active exploitation. Go."*
+> *"Maria, every Windows 11 endpoint needs KB5037890 in production within 48 hours. CVSS 9.8. Active exploitation. Go."*
 
 Maria's options:
 
@@ -23,13 +23,13 @@ Maria's options:
 
 Maria picks option 2. By 5pm Eastern she's confirmed 99.1% deployment. The remaining 0.9% are mostly devices offline (vacation, business travel) and 8 devices stuck due to free-space issues that her team resolves overnight. **The CISO updates the board Wednesday morning: "Zero exposure to the active exploit within 24 hours."**
 
-This module is everything that made the 4-hour response possible — and the policy machinery that operates the normal cadence the other 51 weeks of the year.
+This module is everything that made the 4-hour response possible, and the policy machinery that operates the normal cadence the other 51 weeks of the year.
 
 ---
 
-## 🔄 Windows Update for Business (WUfB) — The Core (MEMORIZE THIS)
+## 🔄 Windows Update for Business (WUfB), The Core (MEMORIZE THIS)
 
-WUfB is Microsoft's free service that lets you defer and manage Windows updates via policy (Intune or Group Policy). No update content servers needed — devices pull from Microsoft's content delivery network with optional peer-to-peer optimization via Delivery Optimization.
+WUfB is Microsoft's free service that lets you defer and manage Windows updates via policy (Intune or Group Policy). No update content servers needed, devices pull from Microsoft's content delivery network with optional peer-to-peer optimization via Delivery Optimization.
 
 | Update category | What | Cadence |
 |-----------------|------|---------|
@@ -37,11 +37,11 @@ WUfB is Microsoft's free service that lets you defer and manage Windows updates 
 | **Feature updates** | OS version uplift (e.g., 24H2 → 25H2) | Annually, typically September/October |
 | **Driver updates** | OEM-provided drivers + firmware via Windows Update | Variable |
 
-Each category can be controlled separately. The exam tests this — feature and quality are NOT the same policy.
+Each category can be controlled separately. The exam tests this, feature and quality are NOT the same policy.
 
 ---
 
-## 📊 Update Rings — The Canonical Pattern
+## 📊 Update Rings, The Canonical Pattern
 
 The standard recommended ring topology:
 
@@ -52,9 +52,9 @@ The standard recommended ring topology:
 | **Deferred** | Sensitive workloads (~10%) | 14–30 days | 90 days |
 | **Critical** (optional) | Mission-critical systems (~5%) | 30 days | 180 days |
 
-The deferral is **calendar days from Microsoft release** — not from the previous ring. So a 7-day quality deferral means "wait 7 days after Microsoft's Patch Tuesday to install."
+The deferral is **calendar days from Microsoft release**, not from the previous ring. So a 7-day quality deferral means "wait 7 days after Microsoft's Patch Tuesday to install."
 
-🔥 **MEMORIZE:** The Pilot → Broad → Deferred pattern is the canonical answer to "design an update ring topology." Avoid "everyone in one ring" — that's the wrong answer.
+🔥 **MEMORIZE:** The Pilot → Broad → Deferred pattern is the canonical answer to "design an update ring topology." Avoid "everyone in one ring", that's the wrong answer.
 
 🎯 **Exam tip:** Multiple update rings reduce blast radius. If a Microsoft update breaks something, the Pilot ring discovers it first, and you can pause Broad before users hit the issue.
 
@@ -158,7 +158,7 @@ A free Azure-hosted report that shows update deployment status across your fleet
 
 ## 🚗 Windows Driver Updates via WUfB
 
-Microsoft Intune (with WUfB) can manage **driver updates** as a separate policy — distinct from feature/quality updates. New in 2023+.
+Microsoft Intune (with WUfB) can manage **driver updates** as a separate policy, distinct from feature/quality updates. New in 2023+.
 
 | Action | What |
 |--------|------|
@@ -175,7 +175,7 @@ Microsoft Intune (with WUfB) can manage **driver updates** as a separate policy 
 | Tool | When |
 |------|------|
 | **WUfB (cloud)** | Modern default for cloud-managed devices |
-| **WSUS (on-prem)** | Legacy on-prem update server — being deprecated for cloud-managed |
+| **WSUS (on-prem)** | Legacy on-prem update server, being deprecated for cloud-managed |
 | **ConfigMgr software updates** | Used in ConfigMgr-managed environments; can integrate with WSUS |
 | **Microsoft Autopatch** | Microsoft-managed update orchestration (covered below) |
 
@@ -185,7 +185,7 @@ Microsoft Intune (with WUfB) can manage **driver updates** as a separate policy 
 
 ## 🎯 Microsoft Autopatch
 
-**Microsoft Autopatch** is Microsoft's managed update service — Microsoft operates the ring topology, deferrals, and rollback decisions for you. Available with Microsoft 365 E3/E5 + Intune Plan 1+.
+**Microsoft Autopatch** is Microsoft's managed update service, Microsoft operates the ring topology, deferrals, and rollback decisions for you. Available with Microsoft 365 E3/E5 + Intune Plan 1+.
 
 | Feature | What |
 |---------|------|
@@ -194,7 +194,7 @@ Microsoft Intune (with WUfB) can manage **driver updates** as a separate policy 
 | **Update reporting** | Built-in reports on update deployment |
 | **Covered update types** | Windows quality + Office + Edge + Teams + drivers (some) |
 
-🎯 **Exam tip:** Autopatch is the right answer for "managed update service — Microsoft owns the orchestration." Self-managed WUfB is the right answer for "we want control over our own rings."
+🎯 **Exam tip:** Autopatch is the right answer for "managed update service, Microsoft owns the orchestration." Self-managed WUfB is the right answer for "we want control over our own rings."
 
 ---
 
@@ -220,8 +220,8 @@ So Windows 11 24H2 (October 2024):
 
 | Action | When |
 |--------|------|
-| **Pause updates** | Newly discovered issue — pause ring for up to 35 days |
-| **Uninstall last quality update** | Quality update broke something — roll back |
+| **Pause updates** | Newly discovered issue, pause ring for up to 35 days |
+| **Uninstall last quality update** | Quality update broke something, roll back |
 | **Uninstall last feature update** | Within 10 days of install (default) |
 | **Block specific KB** | Stop a specific known-bad update |
 
@@ -238,7 +238,7 @@ So Windows 11 24H2 (October 2024):
 | "Pause is unlimited" | ❌ Max 35 days |
 | "Driver updates ride with quality updates" | ❌ Separate driver update policy |
 | "Expedited updates respect ring deferrals" | ❌ They override deferrals |
-| "WSUS is the modern answer" | ❌ WUfB is — WSUS deprecating for cloud-managed |
+| "WSUS is the modern answer" | ❌ WUfB is, WSUS deprecating for cloud-managed |
 | "Feature update rollback is unlimited" | ❌ ~10 days default |
 
 ---
@@ -249,15 +249,15 @@ So Windows 11 24H2 (October 2024):
 
 The correct sequence:
 
-1. ✅ **Define ring composition** — name the user groups (e.g., IT-Pilot, All-Knowledge-Workers, Sensitive-Workloads)
+1. ✅ **Define ring composition**, name the user groups (e.g., IT-Pilot, All-Knowledge-Workers, Sensitive-Workloads)
 2. ✅ **Create Entra ID groups** for each ring
 3. ✅ **Create Intune update ring #1: Pilot** (deferrals: 0/0 quality/feature)
 4. ✅ **Create Intune update ring #2: Broad** (deferrals: 7/30)
 5. ✅ **Create Intune update ring #3: Deferred** (deferrals: 14/90)
 6. ✅ **Assign each ring to its group**
 7. ✅ **Set up WUfB reports** (Log Analytics workspace + solution)
-8. ✅ **Define ring promotion criteria** — "if Pilot stable for 7 days, promote Broad"
-9. ✅ **Build a rollback playbook** — what to do if Broad reveals an issue
+8. ✅ **Define ring promotion criteria**, "if Pilot stable for 7 days, promote Broad"
+9. ✅ **Build a rollback playbook**, what to do if Broad reveals an issue
 10. ✅ **Document the topology + rationale**
 
 ⚠️ Skipping step 9 means scrambling during a bad update. Skipping step 7 means flying blind on rollout progress.
@@ -314,9 +314,9 @@ You now know:
 
 ---
 
-## 📊 Case Study — The PrintNightmare Patch Cycle (2021–2022)
+## 📊 Case Study, The PrintNightmare Patch Cycle (2021–2022)
 
-**Situation.** In late June 2021, Microsoft published CVE-2021-1675 / CVE-2021-34527 — the **PrintNightmare** Print Spooler RCE vulnerability. Within days, working exploits were publicly available. Every Windows endpoint with the Print Spooler service running (effectively every Windows machine) was vulnerable. Microsoft's first patches in June and July were incomplete and required additional out-of-band updates.
+**Situation.** In late June 2021, Microsoft published CVE-2021-1675 / CVE-2021-34527, the **PrintNightmare** Print Spooler RCE vulnerability. Within days, working exploits were publicly available. Every Windows endpoint with the Print Spooler service running (effectively every Windows machine) was vulnerable. Microsoft's first patches in June and July were incomplete and required additional out-of-band updates.
 
 For organizations that had not adopted update rings + expedited updates, the response cycle was painful (multiple post-mortem analyses, e.g., SANS Internet Storm Center, July 2021):
 
@@ -345,23 +345,23 @@ For organizations that had not adopted update rings + expedited updates, the res
 
 **Discussion (Socratic).**
 - **Q1.** PrintNightmare's out-of-band patches caused some printing breakage on certain print servers. Argue both sides: should an admin push the expedited update knowing some printing might break, or test more? What does each choice say about risk tolerance and breach impact?
-- **Q2.** Expedited updates override ring deferrals. A risk-averse CISO argues "expedited should still respect deferrals for the Deferred ring." Defend Microsoft's design — why does expedited *override* matter?
+- **Q2.** Expedited updates override ring deferrals. A risk-averse CISO argues "expedited should still respect deferrals for the Deferred ring." Defend Microsoft's design, why does expedited *override* matter?
 - **Q3.** WSUS is deprecating for cloud-managed. A legacy bank with 50,000 endpoints all on WSUS argues for keeping WSUS for control. Defend the migration to WUfB by naming the operational scenario (like PrintNightmare) where WSUS would have failed to meet the response window.
 
 ---
 
 > **Where this leads.**
 > - Inside this course: Module 8 covers monitoring + reporting, including the dashboards that surface WUfB deployment status.
-> - Cross-course: [`06-Azure-Administrator` Module 10](../../06-Azure-Administrator/Module-10-Monitor-Governance/Reading.md) covers Azure Monitor — useful since WUfB reports use Log Analytics.
+> - Cross-course: [`06-Azure-Administrator` Module 10](../../06-Azure-Administrator/Module-10-Monitor-Governance/Reading.md) covers Azure Monitor, useful since WUfB reports use Log Analytics.
 > - Practice: Practice Exam 2 has roughly 5–7 questions from this module (rings, expedited, DO, WUfB reports). Final Mock Exam revisits with operational scenarios.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Pilot ring size.** Microsoft recommends ~5% of fleet for Pilot. A 100-device shop says "5 devices isn't statistically meaningful." Defend the 5% guideline at scale, and identify what additional signals you'd add for a small fleet.
 2. **Autopatch vs self-managed WUfB.** Microsoft Autopatch hands ring orchestration to Microsoft. A risk-averse CIO insists "we must own our update decisions." Defend Autopatch by naming the operational benefits and the one scenario where Autopatch is clearly wrong.
-3. **Driver updates separation.** Microsoft made driver updates a separate policy in 2023+. Defend the design — why isn't "driver updates ride with quality" the simpler answer?
+3. **Driver updates separation.** Microsoft made driver updates a separate policy in 2023+. Defend the design, why isn't "driver updates ride with quality" the simpler answer?
 4. **Delivery Optimization in office vs WFH.** Office WFH has thin home internet but high coordination cost. Office on-site has fat LAN. Defend the DO mode + bandwidth settings you'd pick for each, and identify the surprise gotcha for WFH (hint: home network peer discovery).
 5. **End-of-servicing dates.** Microsoft publishes EOS 24 months out for Home/Pro and 36 months for Enterprise. Defend the architectural argument that "always be on N or N-1" is the right operating discipline, citing the security and compatibility trade-offs.
 
@@ -375,4 +375,4 @@ For organizations that had not adopted update rings + expedited updates, the res
 - 📖 [Windows Update for Business reports](https://learn.microsoft.com/windows/deployment/update/wufb-reports-overview)
 - 📖 [Windows 11 release information + end-of-servicing](https://learn.microsoft.com/windows/release-health/windows11-release-information)
 - 📖 [Microsoft Autopatch overview](https://learn.microsoft.com/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
-- 📖 SANS Internet Storm Center, *PrintNightmare timeline* (July 2021) — canonical post-mortem
+- 📖 SANS Internet Storm Center, *PrintNightmare timeline* (July 2021), canonical post-mortem

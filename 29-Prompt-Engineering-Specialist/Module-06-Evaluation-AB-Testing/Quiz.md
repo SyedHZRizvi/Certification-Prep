@@ -61,7 +61,7 @@ D. Removing the criteria
 
 ### Q7. Cohen's kappa above ~0.7 between two human raters indicates: *(Remember)*
 A. Bad rubric
-B. Substantial inter-annotator agreement — the task is well-defined and raters agree
+B. Substantial inter-annotator agreement, the task is well-defined and raters agree
 C. Random scoring
 D. Self-preference
 
@@ -85,7 +85,7 @@ D. Micro requires more data
 
 ### Q10. Bea's harness blocked Sam's "sharper-feeling" prompt because: *(Apply)*
 A. Sam's prompt was longer
-B. The regression check showed F1 dropped vs the production baseline — quantitative beat intuition
+B. The regression check showed F1 dropped vs the production baseline, quantitative beat intuition
 C. The team didn't like Sam
 D. The prompt timed out
 
@@ -101,7 +101,7 @@ D. Cost only
 
 ### Q12. "Faithfulness" in RAG eval means: *(Understand)*
 A. The model is honest
-B. The answer uses ONLY the retrieved context — no hallucination beyond it
+B. The answer uses ONLY the retrieved context, no hallucination beyond it
 C. The retrieval is fast
 D. The model is verbose
 
@@ -133,7 +133,7 @@ D. The model's temperature
 
 ### Q16. BLEU and ROUGE measure: *(Understand)*
 A. Semantic meaning
-B. N-gram overlap with reference — useful as one signal but blind to semantics
+B. N-gram overlap with reference, useful as one signal but blind to semantics
 C. Cost
 D. Latency
 
@@ -173,7 +173,7 @@ D. Internal Slack messages
 
 ### Q21. A team's LLM judge consistently rates GPT-5 outputs higher than equivalent Claude outputs in a side-by-side. The MOST likely cause: *(Analyze)*
 A. GPT-5 is universally better
-B. Self-preference bias — the judge IS GPT-5 (or a sibling). Fix by using Claude as judge or averaging across judges
+B. Self-preference bias, the judge IS GPT-5 (or a sibling). Fix by using Claude as judge or averaging across judges
 C. Position bias only
 D. Verbosity bias only
 
@@ -181,7 +181,7 @@ D. Verbosity bias only
 
 ### Q22. The MOST robust single metric for free-form generation is: *(Evaluate)*
 A. BLEU
-B. There is no single robust metric — combine LLM-judge + embedding similarity + human spot-check + safety classifier
+B. There is no single robust metric, combine LLM-judge + embedding similarity + human spot-check + safety classifier
 C. Word count
 D. Token count
 
@@ -189,7 +189,7 @@ D. Token count
 
 ### Q23. A regression suite should run: *(Apply)*
 A. Once when the prompt is created
-B. On EVERY change, before any deploy — block when metric drops beyond a threshold
+B. On EVERY change, before any deploy, block when metric drops beyond a threshold
 C. Only weekly
 D. Only when revenue drops
 
@@ -197,7 +197,7 @@ D. Only when revenue drops
 
 ### Q24. "Distribution shift" in prompt eval means: *(Understand)*
 A. Compression artifact
-B. Production inputs diverge from the eval set — your eval becomes misleading; refresh from production samples regularly
+B. Production inputs diverge from the eval set, your eval becomes misleading; refresh from production samples regularly
 C. The output is JSON
 D. The model is updated
 
@@ -283,10 +283,10 @@ UK AISI's specialty. Third-party rigor.
 ### Q20: **B. Eval prompts, system prompts, and parameters**
 The transparency norm. Other labs followed.
 
-### Q21: **B. Self-preference bias — judge is the same family**
+### Q21: **B. Self-preference bias, judge is the same family**
 Most likely explanation. Fix with cross-family or averaged-judge.
 
-### Q22: **B. No single metric — combine layers**
+### Q22: **B. No single metric, combine layers**
 Defense in depth. The trap is hoping for a single magic number.
 
 ### Q23: **B. Every change, before deploy, with threshold-block**
@@ -325,4 +325,4 @@ The full mature flow: regression → safety → A/B → pre-registered metric �
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — Adversarial Prompts & Jailbreak Defense](../Module-07-Adversarial-Defense/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, Adversarial Prompts & Jailbreak Defense](../Module-07-Adversarial-Defense/Reading.md)

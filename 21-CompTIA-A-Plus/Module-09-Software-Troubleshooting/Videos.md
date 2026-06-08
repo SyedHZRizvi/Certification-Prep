@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">CrowdStrike 2024 Outage — Technical Explainer</p>
+      <p class="vg-title">CrowdStrike 2024 Outage, Technical Explainer</p>
       <p class="vg-creator">Various / LowLevel Learning</p>
       <span class="vg-duration">⏱ 18 min · Case study</span>
     </div>

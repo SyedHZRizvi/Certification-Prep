@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -349,7 +349,7 @@
 **A:** Always launch with 3 creative variants per platform. Tests learning, not just delivery.
 
 **Q:** Why pick Search (not PMax) for first Google campaign?
-**A:** PMax hides controls and learning. Search shows you exactly what's working — better for portfolio narrative.
+**A:** PMax hides controls and learning. Search shows you exactly what's working, better for portfolio narrative.
 
 **Q:** What's CPL?
 **A:** Cost Per Lead. Total spend / number of leads. Key efficiency metric.
@@ -420,7 +420,7 @@
 **A:** Splits credit equally across all touchpoints in the journey.
 
 **Q:** What's Markov Chain attribution?
-**A:** Data-driven model using "removal effect" — measures how much conversion probability drops when you remove each channel from the journey.
+**A:** Data-driven model using "removal effect", measures how much conversion probability drops when you remove each channel from the journey.
 
 **Q:** What's "removal effect"?
 **A:** The drop in conversion probability when a specific channel is removed from the customer journey. Used to allocate credit in Markov.
@@ -531,7 +531,7 @@
 **A:** Day 0 initial, Day 4 soft check, Day 10 value follow-up, Day 21 final. Post-21: monthly newsletter touchpoints.
 
 **Q:** Why NOT attach the portfolio link in cold message #1?
-**A:** First message is connection, not pitch. Save the link for after they reply — it converts higher.
+**A:** First message is connection, not pitch. Save the link for after they reply, it converts higher.
 
 **Q:** What's the recommended cold message length?
 **A:** ~80 words. LinkedIn DM should fit in the preview without scrolling.
@@ -546,7 +546,7 @@
 **A:** Single-page document: what they want, what you'll do, timeline, investment, next step. Proposals over 2 pages rarely get signed.
 
 **Q:** Realistic cold-outreach response rate?
-**A:** 5-15% on message 1; jumps to 15-25% by message 4 (with follow-ups). Most students quit after 1 — don't.
+**A:** 5-15% on message 1; jumps to 15-25% by message 4 (with follow-ups). Most students quit after 1, don't.
 
 ---
 
@@ -586,31 +586,31 @@
 **Q:** What's the 60-second cold-open pitch structure?
 **A:** Identity → Portfolio hook (5 capstones in one line) → Current state → What interests me → CTA ("happy to walk you through any of them").
 
-**Q:** "Walk me through your strongest case study" — how to answer?
+**Q:** "Walk me through your strongest case study", how to answer?
 **A:** 90-second P-C-A-R-L. Context → Problem → Approach → Result with numbers → Lesson honest.
 
-**Q:** "Tell me about a marketing failure" — answer pattern?
+**Q:** "Tell me about a marketing failure", answer pattern?
 **A:** Use the paid campaign post-mortem. Specific spend + result + 2 specific things that bombed + the one that worked + what you'd do differently.
 
-**Q:** "What's your weakness?" — answer pattern?
-**A:** Honest + specific + paired with how you're addressing it. Not "I work too hard" — that's a junior tell.
+**Q:** "What's your weakness?", answer pattern?
+**A:** Honest + specific + paired with how you're addressing it. Not "I work too hard", that's a junior tell.
 
-**Q:** "Why should we hire you?" — answer pattern?
+**Q:** "Why should we hire you?", answer pattern?
 **A:** Reference 5 shipped portfolio pieces + AI fluency + post-mortem culture. Specific, not list-of-skills.
 
-**Q:** "What questions do you have for me?" — what to bring?
+**Q:** "What questions do you have for me?", what to bring?
 **A:** 3+ thoughtful questions, prepared. About: their current biggest channel challenge, who you'd work with, how they measure success in this role.
 
-**Q:** "Have you used AI in marketing?" — answer pattern?
+**Q:** "Have you used AI in marketing?", answer pattern?
 **A:** Reference the AI agent on GitHub + Claude API + tool use disclosed. NOT "I use ChatGPT" (table stakes).
 
-**Q:** "How do you measure marketing performance?" — answer pattern?
+**Q:** "How do you measure marketing performance?", answer pattern?
 **A:** Reference attribution capstone. Talk about multi-touch reasoning vs last-click. Show analytical depth.
 
 **Q:** Soft-close line for a discovery call?
 **A:** "If this fits, I'll send a proposal in 48 hrs. If not, no hard feelings. What questions do you have?"
 
-**Q:** When client says "you're too expensive" — what's the response?
+**Q:** When client says "you're too expensive", what's the response?
 **A:** "I appreciate the honest feedback. Out of curiosity, what would feel right for the scope? I'd rather hear it now than guess." Reframes from defense to dialogue.
 
 ---
@@ -618,7 +618,7 @@
 ## ✅ SECTION 11: ANTI-PATTERNS TO AVOID
 
 **Q:** Top portfolio anti-pattern from Module 1?
-**A:** "Tools List Trap" — listing software instead of work. Tools without projects = generic.
+**A:** "Tools List Trap", listing software instead of work. Tools without projects = generic.
 
 **Q:** Top SEO audit anti-pattern?
 **A:** Including the 5 trap findings (bounce rate, "more pages," etc.). Closes the tab for senior reviewers.
@@ -633,7 +633,7 @@
 **A:** Importing a library with no explanation of the algorithm. "Junior tell" vs senior who shows math.
 
 **Q:** Top AI agent anti-pattern?
-**A:** Building a "ChatGPT wrapper" — single API call, no specific use case, no structured output. Doesn't demonstrate agent thinking.
+**A:** Building a "ChatGPT wrapper", single API call, no specific use case, no structured output. Doesn't demonstrate agent thinking.
 
 **Q:** Top personal brand anti-pattern?
 **A:** Rebuilding LinkedIn but never posting. Module 7 isn't done at "headline rewritten."

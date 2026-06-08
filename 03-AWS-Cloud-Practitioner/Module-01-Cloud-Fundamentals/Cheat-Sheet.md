@@ -46,7 +46,7 @@
 
 ---
 
-## 🗺️ AWS Global Infrastructure — 4 Layers
+## 🗺️ AWS Global Infrastructure, 4 Layers
 
 ```
 🌍 Region (geographic area, e.g. us-east-1)
@@ -124,7 +124,7 @@ Usually wrong:
 
 - ❌ Single-AZ production deployment claimed as "highly available"
 - ❌ Storing GDPR data in a US Region with no replication controls
-- ❌ "Cloud will always be cheaper" — not true for steady predictable workloads
+- ❌ "Cloud will always be cheaper", not true for steady predictable workloads
 - ❌ Treating Edge Locations as substitutes for AZs
 
 ---
@@ -145,7 +145,7 @@ Cover the answers and recite:
 
 1. AWS definition of cloud computing? ___
 2. 6 benefits of cloud? ___
-3. Region vs AZ vs Edge — one line each? ___
+3. Region vs AZ vs Edge, one line each? ___
 4. Outposts vs Wavelength vs Local Zones? ___
 5. Best tool for repeatable infra? ___
 

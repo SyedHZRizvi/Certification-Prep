@@ -85,10 +85,10 @@ app = g.compile(checkpointer=MemorySaver())
 
 ## 🧰 Tools & State
 
-- **Tool catalog** — versioned registry (MCP or YAML)
-- **Shared state** — scope tightly; private CoT
-- **Inter-agent messages** — structured JSON envelopes preferred
-- **Computer Use** — sandbox + allowlist + screen recording
+- **Tool catalog**, versioned registry (MCP or YAML)
+- **Shared state**, scope tightly; private CoT
+- **Inter-agent messages**, structured JSON envelopes preferred
+- **Computer Use**, sandbox + allowlist + screen recording
 
 ---
 

@@ -86,7 +86,7 @@ D. 4 hours
 
 ---
 
-### Q11. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q11. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** DNS scavenging is enabled by default on AD-integrated zones.
 **S2:** A conditional forwarder is configured at the DNS server level, not within a zone.
@@ -177,9 +177,9 @@ D. 042
 
 ---
 
-### Q21. **Yes/No** — Mark each statement. *(Analyze)*
+### Q21. **Yes/No**, Mark each statement. *(Analyze)*
 
-**S1:** A stub zone holds the NS, SOA, and glue A records of the target zone — auto-refreshing.
+**S1:** A stub zone holds the NS, SOA, and glue A records of the target zone, auto-refreshing.
 **S2:** GlobalNames Zone resolves single-label names across the forest.
 **S3:** A primary file-based zone supports multi-master writes.
 
@@ -206,7 +206,7 @@ D. Caching all queries
 
 ---
 
-### Q24. **Yes/No** — Mark each statement. *(Apply)*
+### Q24. **Yes/No**, Mark each statement. *(Apply)*
 
 **S1:** NLB is the right choice to load-balance an SQL Always-On AG listener.
 **S2:** NLB Drainstop gracefully completes existing connections before going offline.
@@ -244,16 +244,16 @@ AD-integrated zones store data in AD and any DC with DNS can accept writes. File
 SRV records carry service + protocol + port. AD's _msdcs hierarchy is entirely SRV-driven.
 
 ### Q3: **B. The parent zone, anchoring trust**
-The DS record at the parent is the cryptographic anchor — resolvers chain trust through DS records up to a configured trust anchor (typically the root).
+The DS record at the parent is the cryptographic anchor, resolvers chain trust through DS records up to a configured trust anchor (typically the root).
 
 ### Q4: **B. NSEC3**
-NSEC3 hashes names to prevent enumeration of the zone (zone-walking). NSEC reveals next-name in canonical order — easier to enumerate.
+NSEC3 hashes names to prevent enumeration of the zone (zone-walking). NSEC reveals next-name in canonical order, easier to enumerate.
 
 ### Q5: **B. Disabled by default**
 A common gotcha. Must be explicitly enabled, then 7/7/7 days are the default intervals.
 
 ### Q6: **B. Stub zone**
-Stub zones auto-refresh their NS list — better for dynamic remote topologies.
+Stub zones auto-refresh their NS list, better for dynamic remote topologies.
 
 ### Q7: **A. Conditional forwarder**
 Conditional forwarders are static and simplest for stable partner zones.
@@ -307,7 +307,7 @@ Connection Security Rules are how WFAS expresses IPsec policies.
 DNS Policies (with zone scopes + client subnets) handle geo-aware responses without separate zones.
 
 ### Q24: **A. No / Yes / Yes**
-S1 wrong — NLB is for stateless workloads only; SQL AG listener uses an AG-listener IP that's typically fronted by a Failover Cluster IP resource, not NLB. S2 and S3 correct.
+S1 wrong, NLB is for stateless workloads only; SQL AG listener uses an AG-listener IP that's typically fronted by a Failover Cluster IP resource, not NLB. S2 and S3 correct.
 
 ### Q25: **B. `ipconfig /registerdns`**
 Forces the client's DHCP/static A/PTR registration immediately.

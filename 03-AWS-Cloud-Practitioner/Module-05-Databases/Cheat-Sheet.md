@@ -15,7 +15,7 @@ Analytical (OLAP)  →  Redshift, Athena (S3 SQL)
 
 ---
 
-## 🐘 RDS — The Big Picture
+## 🐘 RDS, The Big Picture
 
 Engines: **MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, Aurora**
 

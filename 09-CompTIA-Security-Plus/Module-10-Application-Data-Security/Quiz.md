@@ -108,7 +108,7 @@ D. Required by HIPAA but not GDPR
 
 ### Q13. Pseudonymization differs from anonymization because: *(Analyze)*
 A. Pseudonymization is permanent
-B. With a mapping key, pseudonymized data can be re-identified — GDPR still applies
+B. With a mapping key, pseudonymized data can be re-identified, GDPR still applies
 C. Pseudonymization uses AES
 D. Pseudonymization is older
 
@@ -203,7 +203,7 @@ D. Python
 ---
 
 ### Q25 (Scenario). A microservice is exposed to the internet. SAST shows 0 critical findings; SCA finds a Log4Shell-vulnerable library. The CORRECT immediate action is: *(Evaluate)*
-A. Ignore — SAST said zero criticals
+A. Ignore, SAST said zero criticals
 B. Patch / upgrade the vulnerable dependency (or apply documented mitigation) and rebuild
 C. Disable SAST
 D. Make the service internal-only without updating
@@ -286,7 +286,7 @@ EO 14028 mandates SBOMs for federal software.
 Manual memory mgmt = many memory vulns.
 
 ### Q25: **B. Patch the library**
-SCA flagged a real risk; SAST didn't because it's not in your code — it's in the dependency.
+SCA flagged a real risk; SAST didn't because it's not in your code, it's in the dependency.
 
 ### Q26: **C. True anonymization**
 Pseudonymization with shared key = re-identifiable, fails the constraint.
@@ -306,7 +306,7 @@ Pseudonymization with shared key = re-identifiable, fails the constraint.
 
 - SAST / DAST / IAST / SCA / RASP / fuzzing (one-line each)
 - 3 data states + protection
-- Tokenization / masking / hashing / encryption / pseudo / anon — when each
+- Tokenization / masking / hashing / encryption / pseudo / anon, when each
 - STRIDE letters
 - SBOM definition + EO 14028
 - PII / PHI / PCI examples

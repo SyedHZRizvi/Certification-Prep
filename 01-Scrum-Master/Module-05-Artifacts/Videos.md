@@ -102,7 +102,7 @@
 1. List the 3 artifacts and their commitments.
 2. Who owns the Sprint Backlog?
 3. What 3 things make up a Sprint Backlog?
-4. DoD vs Acceptance Criteria — what's the difference?
+4. DoD vs Acceptance Criteria, what's the difference?
 5. Where does the Product Goal live?
 
 ➡️ [Quiz.md](./Quiz.md)

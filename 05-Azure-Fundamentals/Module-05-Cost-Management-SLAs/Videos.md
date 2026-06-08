@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: Cost Management & SLAs
 
-> **How to use:** Pay extra attention to the composite SLA math video — that's where free points hide. The Cost Management walkthrough will visually cement the tag-based showback workflow.
+> **How to use:** Pay extra attention to the composite SLA math video, that's where free points hide. The Cost Management walkthrough will visually cement the tag-based showback workflow.
 
 ## ⭐ Essential watching (~40 min)
 
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Pricing Calculator vs TCO Calculator</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 10 min · Tell them apart</span>
     </div>
   </a>
@@ -80,7 +80,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Azure Spot VMs Explained</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 10 min · 90% off but evictable</span>
     </div>
   </a>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Azure Free Account — What's Included</p>
+      <p class="vg-title">Azure Free Account, What's Included</p>
       <p class="vg-creator">Various</p>
       <span class="vg-duration">⏱ 8 min · Free tier walkthrough</span>
     </div>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Cost mgmt deep-dives |
-| **Adam Marczak — Azure for Everyone** | Comparison videos (Pricing vs TCO etc.) |
+| **Adam Marczak, Azure for Everyone** | Comparison videos (Pricing vs TCO etc.) |
 | **Microsoft Mechanics** | Official Reservations / Savings Plans content |
 
 ---
@@ -143,10 +143,10 @@
 
 Answer these in your notebook:
 
-1. Pricing Calculator vs TCO Calculator — what's each FOR?
+1. Pricing Calculator vs TCO Calculator, what's each FOR?
 2. What does a Budget actually do (and NOT do)?
 3. Composite SLA formula for two dependent services?
-4. Reservations vs Savings Plans — when each?
+4. Reservations vs Savings Plans, when each?
 5. Why don't Preview services have an SLA?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

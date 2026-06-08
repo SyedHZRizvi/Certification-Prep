@@ -29,7 +29,7 @@
 | KERNEL_SECURITY_CHECK_FAILURE | Driver/RAM |
 | BAD_POOL_HEADER | Driver/RAM |
 | NTFS_FILE_SYSTEM | Disk → chkdsk |
-| SYSTEM_THREAD_EXCEPTION_NOT_HANDLED | Faulting module named — research it |
+| SYSTEM_THREAD_EXCEPTION_NOT_HANDLED | Faulting module named, research it |
 
 🎯 **Always note the faulting module on the BSOD or in Event Viewer.**
 
@@ -85,7 +85,7 @@
 sfc /scannow
 dism /Online /Cleanup-Image /RestoreHealth
 chkdsk C: /r
-defrag C:           (HDD only — NEVER SSD)
+defrag C:           (HDD only, NEVER SSD)
 optimize C:         (SSD-safe, runs TRIM)
 ipconfig /flushdns
 netsh winsock reset
@@ -95,10 +95,10 @@ perfmon /rel
 ```
 
 ### Sysinternals essentials
-- **Process Explorer** — Task Manager on steroids
-- **Process Monitor** — file/registry trace
-- **Autoruns** — all boot-time persistence
-- **PsExec / PsKill** — remote admin
+- **Process Explorer**, Task Manager on steroids
+- **Process Monitor**, file/registry trace
+- **Autoruns**, all boot-time persistence
+- **PsExec / PsKill**, remote admin
 
 ---
 

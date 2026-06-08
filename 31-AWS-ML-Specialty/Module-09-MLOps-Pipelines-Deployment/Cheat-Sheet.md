@@ -15,9 +15,9 @@
 
 Plus:
 
-- **Multi-Model Endpoint (MME)** — many models, one endpoint
-- **Multi-Container Endpoint (MCE)** — multiple containers, one endpoint
-- **Inference Components** — fine-grained scaling units
+- **Multi-Model Endpoint (MME)**, many models, one endpoint
+- **Multi-Container Endpoint (MCE)**, multiple containers, one endpoint
+- **Inference Components**, fine-grained scaling units
 
 ---
 
@@ -35,7 +35,7 @@ Plus:
 
 ---
 
-## 🔬 Model Monitor — 4 Types
+## 🔬 Model Monitor, 4 Types
 
 | Type | Watches |
 |------|---------|
@@ -50,15 +50,15 @@ Pipeline: baseline job → schedule → reports in S3 → CloudWatch alarms.
 
 ## 🔁 SageMaker Pipelines Step Types
 
-- **ProcessingStep** — data preprocessing
-- **TrainingStep** — train a model
-- **TuningStep** — HPO
-- **CreateModelStep / ModelStep** — package model
-- **RegisterModel** — Model Registry
-- **ConditionStep** — branch on metric
-- **FailStep** — explicit failure
-- **LambdaStep** — glue
-- **ClarifyCheck** (Quality/Bias/Explainability) — pre-deploy guards
+- **ProcessingStep**, data preprocessing
+- **TrainingStep**, train a model
+- **TuningStep**, HPO
+- **CreateModelStep / ModelStep**, package model
+- **RegisterModel**, Model Registry
+- **ConditionStep**, branch on metric
+- **FailStep**, explicit failure
+- **LambdaStep**, glue
+- **ClarifyCheck** (Quality/Bias/Explainability), pre-deploy guards
 - **EMRStep / CallbackStep / AutoMLStep**
 
 ---
@@ -169,7 +169,7 @@ Benchmarks model on different instance types; picks cost-optimal for your latenc
 
 ## ✏️ Self-Check
 
-1. 4 inference modes — name each and when. ___
+1. 4 inference modes, name each and when. ___
 2. Detect input drift = ___ monitor.
 3. Risk-free test on real traffic = ___ variant.
 4. Many small models sparse traffic = ___ endpoint.

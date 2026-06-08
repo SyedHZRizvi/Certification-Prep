@@ -196,4 +196,4 @@ chosen. v2 I'd add Shapley + segmentation."
 
 ---
 
-➡️ [Module 6: Capstone 5 — AI Marketing Agent](../Module-06-Capstone-AI-Agent-Build/Reading.md)
+➡️ [Module 6: Capstone 5, AI Marketing Agent](../Module-06-Capstone-AI-Agent-Build/Reading.md)

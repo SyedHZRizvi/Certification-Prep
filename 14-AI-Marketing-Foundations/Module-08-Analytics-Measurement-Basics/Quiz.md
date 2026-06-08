@@ -170,7 +170,7 @@ D. Higher cost
 A. The cost of Google Cloud
 B. Reliance on the user's browser to send tracking data
 C. The need for analytics
-D. Site speed (no — sometimes improves it)
+D. Site speed (no, sometimes improves it)
 
 ---
 

@@ -59,12 +59,12 @@
 
 ## 📈 CloudWatch Quick
 
-- **Metrics** — time series, std + custom
-- **Logs** — log groups + streams; retention configurable
-- **Alarms** — OK / ALARM / INSUFFICIENT_DATA → SNS, ASG, EC2 actions
-- **Logs Insights** — query language for logs
-- **Dashboards** — custom panels
-- **Synthetics / RUM / App Insights** — extras
+- **Metrics**, time series, std + custom
+- **Logs**, log groups + streams; retention configurable
+- **Alarms**, OK / ALARM / INSUFFICIENT_DATA → SNS, ASG, EC2 actions
+- **Logs Insights**, query language for logs
+- **Dashboards**, custom panels
+- **Synthetics / RUM / App Insights**, extras
 - ⚠️ **EC2 memory ≠ default. Install CW Agent.**
 
 ---
@@ -108,7 +108,7 @@
 2. EC2 memory metric? ___
 3. PII in S3? ___
 4. Detect cryptomining in your account? ___
-5. NAT for S3 — what's the cheap alternative? ___
+5. NAT for S3, what's the cheap alternative? ___
 
 ---
 

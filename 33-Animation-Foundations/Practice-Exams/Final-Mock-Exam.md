@@ -17,7 +17,7 @@ D. *Animation: The Mechanics of Motion* by Chris Webster
 ### 2. Squash and stretch is considered the "most fundamental" principle because:
 
 A. It appears in every professional animation exercise from beginner to advanced
-B. Without deformation of volume under force, objects feel rigid and lifeless — it is the root of physical reality in animation
+B. Without deformation of volume under force, objects feel rigid and lifeless, it is the root of physical reality in animation
 C. It is mathematically calculable, making it more precise than other principles
 D. Walt Disney personally invented it and required it in all Disney productions
 
@@ -79,10 +79,10 @@ D. An S-shaped curve (flat at start and end, steep in middle)
 
 ### 9. A timing chart with drawings evenly distributed between two key poses produces:
 
-A. Slow-in/slow-out — the most natural-feeling motion
-B. Constant speed — mechanical, robotic, unnatural motion
-C. Slow-in only — the motion decelerates toward the end
-D. A hold — the character appears stationary
+A. Slow-in/slow-out, the most natural-feeling motion
+B. Constant speed, mechanical, robotic, unnatural motion
+C. Slow-in only, the motion decelerates toward the end
+D. A hold, the character appears stationary
 
 ---
 
@@ -97,10 +97,10 @@ D. 96 seconds
 
 ### 11. Which principle distinguishes Miyazaki's staging in *Spirited Away* when Chihiro is shown tiny in the frame with the enormous bathhouse behind her?
 
-A. Exaggeration — the bathhouse is larger than reality
-B. Secondary Action — the bathhouse is a supporting element
-C. Staging — her tiny size in the frame communicates her emotional state (overwhelmed, small)
-D. Solid Drawing — the three-dimensional form of the bathhouse is established clearly
+A. Exaggeration, the bathhouse is larger than reality
+B. Secondary Action, the bathhouse is a supporting element
+C. Staging, her tiny size in the frame communicates her emotional state (overwhelmed, small)
+D. Solid Drawing, the three-dimensional form of the bathhouse is established clearly
 
 ---
 
@@ -206,7 +206,7 @@ D. S-curve (flat, steep, flat)
 ### 23. The principle of "appeal" in animation means:
 
 A. Characters must be cute, rounded, and friendly to attract the broadest audience
-B. Characters must have engaging quality — clarity of character — that makes audiences want to watch them
+B. Characters must have engaging quality clarity of character that makes audiences want to watch them
 C. Characters must appeal to the target demographic through focused market research
 D. The character design must be approved by the studio's appeal committee before production
 
@@ -224,9 +224,9 @@ D. Three equidistant colors on the color wheel as the scene's palette
 ### 25. A "high-key" color palette in animation communicates:
 
 A. Danger, menace, and psychological darkness
-B. Joy, innocence, and safety — predominantly light values
-C. The passage of time — high key indicates the past
-D. Ambiguity — neither safe nor dangerous
+B. Joy, innocence, and safety, predominantly light values
+C. The passage of time, high key indicates the past
+D. Ambiguity, neither safe nor dangerous
 
 ---
 
@@ -296,9 +296,9 @@ D. The camera slowly pushing in to a close-up during the emotional moment
 ### 33. Which H.264 problem makes it inappropriate as a production master format?
 
 A. H.264 cannot be played back in real-time without specialized hardware
-B. H.264 is lossy — quality degrades every time it is re-encoded
+B. H.264 is lossy, quality degrades every time it is re-encoded
 C. H.264 does not support alpha channels (transparency)
-D. Both B and C — H.264 is lossy and does not support alpha channels
+D. Both B and C, H.264 is lossy and does not support alpha channels
 
 ---
 
@@ -307,7 +307,7 @@ D. Both B and C — H.264 is lossy and does not support alpha channels
 A. It was the first animated feature to use computer-generated backgrounds with hand-drawn characters
 B. It was the first feature-length film created entirely with computer-generated imagery
 C. It was the first Pixar feature and proved CGI characters could have personality
-D. Both B and C — first all-CGI feature with personality-driven characters
+D. Both B and C, first all-CGI feature with personality-driven characters
 
 ---
 
@@ -333,7 +333,7 @@ D. Intelligence and sophistication
 
 A. Rendering final animation in the cloud
 B. Compositing multiple rendered layers into final shots
-C. Production tracking — managing shot progress, version approvals, schedules
+C. Production tracking, managing shot progress, version approvals, schedules
 D. Client review and approval of individual shots
 
 ---
@@ -341,8 +341,8 @@ D. Client review and approval of individual shots
 ### 38. The "feast-or-famine" cycle in freelance animation describes:
 
 A. Periods of abundant creative inspiration followed by creative blocks
-B. Variable income — very busy periods with multiple clients alternating with slow periods with little work
-C. The seasonal nature of animation — busy in Q4 (holiday content), slow in summer
+B. Variable income, very busy periods with multiple clients alternating with slow periods with little work
+C. The seasonal nature of animation, busy in Q4 (holiday content), slow in summer
 D. The first year of freelancing (feast of experience) vs later years (famine of new learning)
 
 ---
@@ -413,17 +413,17 @@ D. The arms rising to neutral during the passing position lift the entire body
 ### 46. The IP (Intellectual Property) consideration most relevant to freelance animators is:
 
 A. Ensuring their personal style does not resemble any existing animated series
-B. Understanding that the employer/client typically owns the designs and animations created on their project — ownership should be confirmed in the contract
+B. Understanding that the employer/client typically owns the designs and animations created on their project, ownership should be confirmed in the contract
 C. Registering all original characters with the Copyright Office before delivering to clients
 D. Ensuring all reference material used during production is cleared for commercial use
 
 ---
 
-### 47. A frame rate mismatch — animating at 24fps for a 25fps broadcast — is most likely to produce:
+### 47. A frame rate mismatch animating at 24fps for a 25fps broadcast is most likely to produce:
 
 A. Color saturation differences due to different gamma settings at different frame rates
 B. A slight speed difference (the 24fps content plays approximately 4% faster at 25fps) or conversion artifacts
-C. No visible difference — the human eye cannot distinguish 24fps from 25fps
+C. No visible difference, the human eye cannot distinguish 24fps from 25fps
 D. Synchronization loss between audio and video tracks that cannot be corrected in post
 
 ---
@@ -431,7 +431,7 @@ D. Synchronization loss between audio and video tracks that cannot be corrected 
 ### 48. The "appeal" principle, applied to the villain Scar from *The Lion King*, demonstrates that:
 
 A. Even villains must have some redeeming quality to be marketable to children
-B. Appeal means engaging clarity of character — not cuteness — and Scar's theatrical vanity and intelligence are what make him compelling to watch
+B. Appeal means engaging clarity of character not cuteness and Scar's theatrical vanity and intelligence are what make him compelling to watch
 C. Villains in children's films must be less threatening than adult film villains to pass Disney approval
 D. Scar's design was deliberately given appeal to make his betrayal more surprising
 
@@ -440,7 +440,7 @@ D. Scar's design was deliberately given appeal to make his betrayal more surpris
 ### 49. The professional reel length rule (90 seconds, maximum 2 minutes) exists because:
 
 A. Studios have a technical limit on video file sizes they will receive via email
-B. Every second in the reel must be strong — the weakest shot sets the viewer's impression of the animator's level
+B. Every second in the reel must be strong, the weakest shot sets the viewer's impression of the animator's level
 C. Animation union rules require reels to be under 2 minutes for apprenticeship applications
 D. 90 seconds is the time required to demonstrate all 12 Principles in a typical reel
 
@@ -485,7 +485,7 @@ D. Storyboarding and pre-visualization
 ### 54. A color composition that fails in grayscale (where key elements cannot be distinguished from each other) will:
 
 A. Still work in full color because hue contrast compensates for value similarity
-B. Also fail in full color — value contrast is the foundation, and hue cannot compensate for absent value contrast
+B. Also fail in full color, value contrast is the foundation, and hue cannot compensate for absent value contrast
 C. Work better in color because saturated colors are more distinguishable than gray values
 D. Require only minor adjustments in the color grade to compensate for poor value structure
 
@@ -494,7 +494,7 @@ D. Require only minor adjustments in the color grade to compensate for poor valu
 ### 55. "Negative space" in a storyboard composition is used by professional artists as:
 
 A. The dark areas of a scene that should be avoided for clear communication
-B. Empty space that is used actively in the composition — as intentional as the filled areas
+B. Empty space that is used actively in the composition, as intentional as the filled areas
 C. The space between characters in a dialogue scene that signals emotional distance
 D. The unboarded areas of a storyboard page that indicate scenes not yet designed
 
@@ -548,64 +548,64 @@ D. Graduate from a top animation school such as CalArts, SCAD, or Ringling
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B — The Illusion of Life: Disney Animation (1981)
-2.  B — Root of physical reality in animation; rigidity = lifelessness
-3.  C — Deliberate squash-and-stretch to communicate effort and weight
-4.  B — Long pause at the building's edge; film refuses to let moment arrive
-5.  B — All cameras stay on same side of axis of action
-6.  C — Proved drawn characters can have personality and emotional performance
-7.  B — Television budget constraints made full animation economically impossible
-8.  D — S-shaped curve (flat at start and end, steep in middle)
-9.  B — Constant speed (mechanical, robotic)
-10. B — 4 seconds (96 ÷ 24 = 4)
-11. C — Staging (her tiny size communicates emotional state)
-12. B — Rubber-hose limbs, jazz-synchronized, vaudeville energy
-13. C — Vertical grid; each row = one frame; columns = layers
-14. B — Single curved line through pose communicating directional energy
-15. C — Big head / short body (approximately 2:1)
-16. B — Observe deeply, close reference, draw from understanding
-17. C — Limb appears shorter due to depth compression in 2D
-18. C — At least three composition options before committing
-19. B — Audio from incoming scene begins before visual cut
-20. B — PNG/ProRes 4444 → ProRes 422 → H.264/H.265
-21. B — Deliberate stylistic effect simulating lens distortion
-22. B — Flat then steepening (concave, slow-in only)
-23. B — Engaging clarity of character; not necessarily cute
-24. B — Analogous palette with one complementary accent
-25. B — Joy, innocence, safety — predominantly light values
-26. C — Opposite arm from leading leg swings forward
-27. C — Free leg passes planted leg; body at highest point
-28. C — The animator's most important skill
-29. B — Game animation and film visual development
-30. B — Developed over three decades (1930s-1950s), published 1981
-31. B — Beyond literal reality to communicate clearly
-32. B — Lip trembling and controlled blinks while holding still
-33. D — Both: lossy (degrades on re-encode) AND no alpha channel
-34. D — Both: first all-CGI feature and demonstrated personality
-35. C — Leading foot landing; body at lowest point
-36. C — Friendliness, approachability, youthfulness
-37. C — Production tracking
-38. B — Variable income; busy/slow cycles
-39. C — Low-key (dark values, strong shadows)
-40. C — 12 unique drawings per second (24 ÷ 2)
-41. C — Psychological unease, disorientation, wrongness
-42. B — Consistent in-betweening across all animators/riggers
-43. B — A local disaster destroys all copies stored in the same location
-44. C — Dissolve or Fade to Black
-45. B — Momentum from push-off and free leg swing carries body upward
-46. B — Employer typically owns designs; confirm in contract
-47. B — Slight speed difference (~4% faster) or conversion artifacts
-48. B — Appeal = engaging clarity; Scar's intelligence and theatricality
-49. B — Every second must be strong; weakest shot sets the impression
-50. B — Rigging and animation stages are where the problems manifest
-51. B — Synchronizing every musical beat to a visual action
-52. B — Communicating intent, emotion, narrative through movement alone
-53. B — 3D character animation for major film and game productions
-54. B — Also fails in color — value contrast cannot be compensated by hue
-55. B — Empty space used actively and intentionally in composition
-56. C — Half speed reveals in-between problems invisible at full speed
-57. C — Deliberate subversion for narrative complexity
-58. B — Cramped, timid marks lacking confidence and expressive range
-59. B — $55K–$80K US base (2025–2026)
-60. B — Strong demo reel (best shot first, 90 seconds, all strong shots)
+1.  B: The Illusion of Life: Disney Animation (1981)
+2.  B: Root of physical reality in animation; rigidity = lifelessness
+3.  C: Deliberate squash-and-stretch to communicate effort and weight
+4.  B: Long pause at the building's edge; film refuses to let moment arrive
+5.  B: All cameras stay on same side of axis of action
+6.  C: Proved drawn characters can have personality and emotional performance
+7.  B: Television budget constraints made full animation economically impossible
+8.  D: S-shaped curve (flat at start and end, steep in middle)
+9.  B: Constant speed (mechanical, robotic)
+10. B: 4 seconds (96 ÷ 24 = 4)
+11. C: Staging (her tiny size communicates emotional state)
+12. B: Rubber-hose limbs, jazz-synchronized, vaudeville energy
+13. C: Vertical grid; each row = one frame; columns = layers
+14. B: Single curved line through pose communicating directional energy
+15. C: Big head / short body (approximately 2:1)
+16. B: Observe deeply, close reference, draw from understanding
+17. C: Limb appears shorter due to depth compression in 2D
+18. C: At least three composition options before committing
+19. B: Audio from incoming scene begins before visual cut
+20. B: PNG/ProRes 4444 → ProRes 422 → H.264/H.265
+21. B: Deliberate stylistic effect simulating lens distortion
+22. B: Flat then steepening (concave, slow-in only)
+23. B: Engaging clarity of character; not necessarily cute
+24. B: Analogous palette with one complementary accent
+25. B: Joy, innocence, safety, predominantly light values
+26. C: Opposite arm from leading leg swings forward
+27. C: Free leg passes planted leg; body at highest point
+28. C: The animator's most important skill
+29. B: Game animation and film visual development
+30. B: Developed over three decades (1930s-1950s), published 1981
+31. B: Beyond literal reality to communicate clearly
+32. B: Lip trembling and controlled blinks while holding still
+33. D: Both: lossy (degrades on re-encode) AND no alpha channel
+34. D: Both: first all-CGI feature and demonstrated personality
+35. C: Leading foot landing; body at lowest point
+36. C: Friendliness, approachability, youthfulness
+37. C: Production tracking
+38. B: Variable income; busy/slow cycles
+39. C: Low-key (dark values, strong shadows)
+40. C: 12 unique drawings per second (24 ÷ 2)
+41. C: Psychological unease, disorientation, wrongness
+42. B: Consistent in-betweening across all animators/riggers
+43. B: A local disaster destroys all copies stored in the same location
+44. C: Dissolve or Fade to Black
+45. B: Momentum from push-off and free leg swing carries body upward
+46. B: Employer typically owns designs; confirm in contract
+47. B: Slight speed difference (~4% faster) or conversion artifacts
+48. B: Appeal = engaging clarity; Scar's intelligence and theatricality
+49. B: Every second must be strong; weakest shot sets the impression
+50. B: Rigging and animation stages are where the problems manifest
+51. B: Synchronizing every musical beat to a visual action
+52. B: Communicating intent, emotion, narrative through movement alone
+53. B: 3D character animation for major film and game productions
+54. B: Also fails in color, value contrast cannot be compensated by hue
+55. B: Empty space used actively and intentionally in composition
+56. C: Half speed reveals in-between problems invisible at full speed
+57. C: Deliberate subversion for narrative complexity
+58. B: Cramped, timid marks lacking confidence and expressive range
+59. B: $55K–$80K US base (2025–2026)
+60. B: Strong demo reel (best shot first, 90 seconds, all strong shots)
 ```

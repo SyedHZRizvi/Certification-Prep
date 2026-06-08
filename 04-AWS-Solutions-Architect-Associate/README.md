@@ -5,7 +5,7 @@ title: AWS Solutions Architect Associate Track (SAA-C03)
 
 # ☁️ AWS Solutions Architect Associate Track (SAA-C03)
 
-**☁️ Cloud · AWS** › Solutions Architect — Associate
+**☁️ Cloud · AWS** › Solutions Architect, Associate
 
 > **Goal:** Pass the AWS Certified Solutions Architect – Associate exam (SAA-C03) with 750+/1000
 > **Duration:** 8 weeks part-time (or 4 weeks full-tilt if you already know cloud basics)
@@ -22,23 +22,23 @@ The AWS Solutions Architect Associate (SAA-C03) is the credential that takes you
 
 ### 💼 Career outcomes after passing
 
-- **Cloud Solutions Architect** ($110K–$150K) — the headline role; designs cloud infrastructure for one or more business units
-- **DevOps Engineer** ($105K–$145K) — SAA-C03 is widely listed as preferred for senior DevOps positions
-- **Cloud Consultant (AWS Partner / Big-4)** ($120K–$160K) — billable consulting at AWS Premier Partners (Slalom, Onica, Deloitte, EY)
-- **Senior Cloud Engineer** ($125K–$170K) — IC-track at most enterprises
-- **Site Reliability Engineer (cloud-leaning)** ($130K–$180K total comp) — SAA-C03 increasingly listed alongside SRE expectations
-- **Solutions Architect at AWS itself** ($170K–$240K total comp) — the dream role; SAA is the floor, SAP-C02 (Professional) is the standard
+- **Cloud Solutions Architect** ($110K–$150K), the headline role; designs cloud infrastructure for one or more business units
+- **DevOps Engineer** ($105K–$145K), SAA-C03 is widely listed as preferred for senior DevOps positions
+- **Cloud Consultant (AWS Partner / Big-4)** ($120K–$160K), billable consulting at AWS Premier Partners (Slalom, Onica, Deloitte, EY)
+- **Senior Cloud Engineer** ($125K–$170K), IC-track at most enterprises
+- **Site Reliability Engineer (cloud-leaning)** ($130K–$180K total comp), SAA-C03 increasingly listed alongside SRE expectations
+- **Solutions Architect at AWS itself** ($170K–$240K total comp), the dream role; SAA is the floor, SAP-C02 (Professional) is the standard
 
 Average compensation uplift after passing: **15–25%** in the 6–12 months following certification, per Global Knowledge, Skillsoft, and Robert Half salary studies. SAA-C03 sits in the middle of a coherent ladder: **CLF-C02 (course 03) → SAA-C03 (this course) → SAP-C02 (Professional) / Developer / SysOps / Specialty (Security, ML, Data, Networking)**.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every module solves a real architecture problem before introducing services
-- **Original questions only** — no copyrighted dumps; every quiz and practice exam written from the AWS Exam Guide
-- **Real-world case studies** — Pinterest's growth architecture, Netflix's chaos engineering, Capital One's all-in migration, Airbnb's global multi-region design
-- **One author, one voice** — coherent vocabulary across all 10 modules and the SAA-C03 capstone
-- **Updated for the SAA-C03 (Aug 2022 → current) blueprint** — including the newer Amazon Q, Bedrock, and 2024–2026 generation of compute and database options
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every module solves a real architecture problem before introducing services
+- **Original questions only**, no copyrighted dumps; every quiz and practice exam written from the AWS Exam Guide
+- **Real-world case studies**, Pinterest's growth architecture, Netflix's chaos engineering, Capital One's all-in migration, Airbnb's global multi-region design
+- **One author, one voice**, coherent vocabulary across all 10 modules and the SAA-C03 capstone
+- **Updated for the SAA-C03 (Aug 2022 → current) blueprint**, including the newer Amazon Q, Bedrock, and 2024–2026 generation of compute and database options
 
 ### 🚀 Ready to start?
 
@@ -56,7 +56,7 @@ By the end of this track, you'll be able to:
 - Pick the **right compute** (EC2 family, ASG, Lambda, ECS, Fargate) for the workload
 - Design **secure** systems with IAM, KMS, Security Groups, NACLs, and least privilege
 - Build **decoupled** systems with SQS / SNS / EventBridge / Step Functions
-- Choose between RDS, Aurora, DynamoDB, ElastiCache, and Redshift — and know **when** to use each
+- Choose between RDS, Aurora, DynamoDB, ElastiCache, and Redshift, and know **when** to use each
 - Optimize **cost** with the right purchase options, storage tiers, and lifecycle policies
 - Pick the right **DR strategy** (Backup & Restore → Pilot Light → Warm Standby → Multi-Site)
 - Read a scenario in 60 seconds and pick the **most cost-effective** or **most resilient** answer
@@ -96,13 +96,13 @@ By the end of this track, you'll be able to:
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[AWS SAA-C03 Exam Guide (official PDF)](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)** — 17 pages. Read it twice. The blueprint lists every service in scope and the proportion of questions per domain. If our content contradicts the official guide, the official guide wins.
+🔗 **[AWS SAA-C03 Exam Guide (official PDF)](https://d1.awsstatic.com/training-and-certification/docs-sa-assoc/AWS-Certified-Solutions-Architect-Associate_Exam-Guide.pdf)**, 17 pages. Read it twice. The blueprint lists every service in scope and the proportion of questions per domain. If our content contradicts the official guide, the official guide wins.
 
 Also pin these:
 
-- 🔗 **[AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)** — six pillars; quoted directly in exam questions
-- 🔗 **[AWS Architecture Center](https://aws.amazon.com/architecture/)** — reference architectures
-- 🔗 **[AWS Pricing Calculator](https://calculator.aws/)** — practice picking the cost-optimized option
+- 🔗 **[AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)**, six pillars; quoted directly in exam questions
+- 🔗 **[AWS Architecture Center](https://aws.amazon.com/architecture/)**, reference architectures
+- 🔗 **[AWS Pricing Calculator](https://calculator.aws/)**, practice picking the cost-optimized option
 
 ---
 
@@ -113,15 +113,15 @@ Also pin these:
 | Provider | AWS (via Pearson VUE or PSI online proctor) |
 | Cost | $150 USD |
 | Time | 130 minutes |
-| Questions | 65 (50 scored + 15 unscored — you don't know which) |
+| Questions | 65 (50 scored + 15 unscored, you don't know which) |
 | Format | Multiple-choice (single answer) and multiple-response (2+ answers) |
-| Pass mark | **720 / 1000** (≈ 72%) — scaled score, not raw % |
+| Pass mark | **720 / 1000** (≈ 72%), scaled score, not raw % |
 | Languages | English, Japanese, Korean, Simplified Chinese (+ more) |
 | Delivery | Online proctored or in-person test center |
 | Validity | 3 years; renew with any current AWS associate/pro/specialty cert or recert exam |
 | Retake | 14-day wait between attempts; no annual cap |
 
-### 📊 Domain Weights (Memorize These — They Tell You Where to Spend Study Time)
+### 📊 Domain Weights (Memorize These, They Tell You Where to Spend Study Time)
 
 | Domain | Weight |
 |--------|--------|
@@ -130,13 +130,13 @@ Also pin these:
 | **Design High-Performing Architectures** | 24% |
 | **Design Cost-Optimized Architectures** | 20% |
 
-🧠 **Memory hook:** **S**ecure > **R**esilient > **H**igh-perf > **C**ost (≈ 30/26/24/20). Security is biggest — never skimp on IAM and encryption study.
+🧠 **Memory hook:** **S**ecure > **R**esilient > **H**igh-perf > **C**ost (≈ 30/26/24/20). Security is biggest, never skimp on IAM and encryption study.
 
 ---
 
 ## 🚦 Recommended Path
 
-### 8-Week Plan (Recommended — Sustainable)
+### 8-Week Plan (Recommended, Sustainable)
 
 ```
 Week 1: Module 1 (Foundations)        + Module 2 (IAM)
@@ -162,7 +162,7 @@ Week 4: Flashcards + Final Mock + REAL EXAM
 
 ## ⚠️ The 7 Most Common Reasons People Fail
 
-1. ❌ **Memorizing services instead of comparing them.** The exam asks "which is the BEST fit" — you must rank options. (Example: SQS vs SNS vs EventBridge — when each one?)
+1. ❌ **Memorizing services instead of comparing them.** The exam asks "which is the BEST fit" you must rank options. (Example: SQS vs SNS vs EventBridge when each one?)
 2. ❌ **Skipping VPC and IAM.** Networking and security are ~50% of the exam combined. They're also the hardest. Do not rush them.
 3. ❌ **Ignoring the cost-optimized angle.** Many "correct" answers are cheaper, not just technically valid. Always ask: which uses *less* compute, *cheaper* storage, *fewer* idle resources?
 4. ❌ **Confusing Multi-AZ with Read Replicas** in RDS. Multi-AZ = HA. Read Replicas = read scaling. Easy points if you nail this.
@@ -174,19 +174,19 @@ Week 4: Flashcards + Final Mock + REAL EXAM
 
 ## 🃏 Flashcards
 
-🔗 **[Master Flashcards](./Flashcards.md)** — 100+ cards covering every module. Use the interactive widget (mark "Got it" to skip in future sessions).
+🔗 **[Master Flashcards](./Flashcards.md)**, 100+ cards covering every module. Use the interactive widget (mark "Got it" to skip in future sessions).
 
 ---
 
 ## 🏗️ Capstone Project
 
-🔗 **[Capstone Project — Larkin Health Analytics migration](./Capstone-Project.md)** — Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable migration design for a Series-C healthcare SaaS (~$2.8M budget, 9-month deadline, HIPAA + GDPR + SOC 2). Rubric scored out of 100. This is the difference between "I passed SAA" and "I could lead this at a real company on Monday."
+🔗 **[Capstone Project Larkin Health Analytics migration](./Capstone-Project.md)** Once you've finished all 10 modules, the capstone is the graduate-level professional standard synthesis exercise: a 7-deliverable migration design for a Series-C healthcare SaaS (~$2.8M budget, 9-month deadline, HIPAA + GDPR + SOC 2). Rubric scored out of 100. This is the difference between "I passed SAA" and "I could lead this at a real company on Monday."
 
 ---
 
 ## 📚 Recommended Readings
 
-🔗 **[Recommended Readings — full bibliography](./Recommended-Readings.md)** — 65+ curated sources: canonical textbooks (Kleppmann's *DDIA*, the Sybex SAA study guide, *The Phoenix Project*, the Google SRE Book), seminal academic papers (CAP, Paxos, Dynamo, Aurora SIGMOD), the AWS Builders' Library essays, re:Invent talks 2014–2024, industry blogs (Quinn, DeBrie, Cockcroft), and three free academic courses (MIT 6.824, Stanford CS245, CMU 15-721). Sequenced by where in the course to engage with each.
+🔗 **[Recommended Readings full bibliography](./Recommended-Readings.md)** 65+ curated sources: canonical textbooks (Kleppmann's *DDIA*, the Sybex SAA study guide, *The Phoenix Project*, the Google SRE Book), seminal academic papers (CAP, Paxos, Dynamo, Aurora SIGMOD), the AWS Builders' Library essays, re:Invent talks 2014–2024, industry blogs (Quinn, DeBrie, Cockcroft), and three free academic courses (MIT 6.824, Stanford CS245, CMU 15-721). Sequenced by where in the course to engage with each.
 
 ---
 

@@ -14,7 +14,7 @@
 
 ---
 
-## 🏰 Bedrock — Model Catalog (providers + use)
+## 🏰 Bedrock, Model Catalog (providers + use)
 
 | Provider | Family | Modality | Use case |
 |----------|--------|----------|----------|
@@ -41,7 +41,7 @@
 
 ---
 
-## 🧠 Amazon Q — Tell the Cousins Apart
+## 🧠 Amazon Q, Tell the Cousins Apart
 
 | Variant | Audience | What it does |
 |---------|----------|--------------|

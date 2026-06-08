@@ -90,7 +90,7 @@ D. Reset network settings
 
 ### Q11. Jailbreak (iOS) / root (Android) detected by MDM typically triggers: *(Understand)*
 A. A free upgrade
-B. Auto-quarantine — block corporate resources, notify user/admin
+B. Auto-quarantine, block corporate resources, notify user/admin
 C. Increased data plan
 D. Nothing
 
@@ -136,7 +136,7 @@ D. Wi-Fi attack
 
 ---
 
-### Q17. A user reports their Microsoft Authenticator app shows a "Sign-in attempt from Lagos, Nigeria" — but they are in Chicago. The CORRECT response: *(Apply)*
+### Q17. A user reports their Microsoft Authenticator app shows a "Sign-in attempt from Lagos, Nigeria", but they are in Chicago. The CORRECT response: *(Apply)*
 A. Approve to dismiss the prompt
 B. **Deny** the sign-in; immediately reset password; notify IT
 C. Ignore
@@ -170,7 +170,7 @@ D. Cellular data only
 
 ### Q21. Bluetooth audio routes to phone speaker instead of paired headphones. Likely cause: *(Apply)*
 A. The headphones don't work
-B. Output device not selected — pick headphones in Control Center / quick settings
+B. Output device not selected, pick headphones in Control Center / quick settings
 C. Phone has malware
 D. Wi-Fi interference
 
@@ -186,7 +186,7 @@ D. Call carrier
 
 ### Q23. The PRIMARY reason corporate apps refuse to run on jailbroken phones: *(Evaluate)*
 A. Jailbreak makes the phone faster
-B. Jailbreak removes OS sandbox protections — corporate data could be read by any app; security risk is unacceptable
+B. Jailbreak removes OS sandbox protections, corporate data could be read by any app; security risk is unacceptable
 C. Jailbreak voids the iOS warranty only
 D. Apple disables corporate apps
 
@@ -238,7 +238,7 @@ Device must meet app's minimum OS version. Older devices may not support the lat
 Standard MDM behavior. The device is untrustworthy until restored to a known-good state.
 
 ### Q12: **B. Lock + track first; wipe per policy timing**
-Don't wipe immediately — that kills tracking. Lock prevents access while you assess.
+Don't wipe immediately, that kills tracking. Lock prevents access while you assess.
 
 ### Q13: **B. Open a browser to a non-HTTPS site or captive.apple.com**
 Force the captive-portal redirect. The iOS automatic captive-portal helper sometimes fails.
@@ -300,4 +300,4 @@ The complete corporate mobile architecture. Each layer matters.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then **[Module 12 — Documentation, Change & DR](../Module-12-Documentation-DR/Reading.md)**
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then **[Module 12, Documentation, Change & DR](../Module-12-Documentation-DR/Reading.md)**

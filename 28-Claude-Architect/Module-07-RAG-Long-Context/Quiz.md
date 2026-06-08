@@ -25,7 +25,7 @@ D. Rerank-And-Generate
 
 ---
 
-### Q3. A single 80-page legal contract that fits in 200K tokens, with multiple questions per contract — BEST approach: *(Apply)*
+### Q3. A single 80-page legal contract that fits in 200K tokens, with multiple questions per contract, BEST approach: *(Apply)*
 A. RAG with K=3 chunks
 B. Stuff the full contract into context (with prompt caching for repeat queries)
 C. Stuff into Gemini 2M context only
@@ -66,7 +66,7 @@ D. Encrypts the data
 ---
 
 ### Q8. Chunking with ~500-1000 tokens and 10-15% overlap is: *(Apply)*
-A. Wrong — always use 50-token chunks
+A. Wrong, always use 50-token chunks
 B. A reasonable sweet spot for general-purpose RAG
 C. Only for code RAG
 D. Only for image RAG
@@ -81,7 +81,7 @@ D. Two databases
 
 ---
 
-### Q10. A user-facing RAG app with 18M source contracts and live updates — BEST architecture: *(Apply)*
+### Q10. A user-facing RAG app with 18M source contracts and live updates, BEST architecture: *(Apply)*
 A. Stuff all 18M into 200K context (impossible)
 B. Full RAG pipeline: metadata filter → hybrid retrieval (BM25 + Voyage) → reranker → Claude
 C. Skip retrieval; answer from training data
@@ -99,7 +99,7 @@ D. There is no such feature
 
 ### Q12. The MOST important reason to put the question AT THE END of a long-context prompt: *(Understand)*
 A. Aesthetics
-B. Recency bias — LLMs weight later tokens more heavily; the question gets fresher attention
+B. Recency bias, LLMs weight later tokens more heavily; the question gets fresher attention
 C. Required by the API
 D. Reduces token cost
 
@@ -117,7 +117,7 @@ D. Smaller chunks always win
 A. ~$0.001 (cached input ~150K × $0.30/Mtok + small output)
 B. ~$10
 C. ~$100
-D. Negligible — caching is free
+D. Negligible, caching is free
 
 ---
 
@@ -156,7 +156,7 @@ D. None of the above
 ### Q19. The PalmettoLegal vs Recursion Holdings case study illustrates: *(Analyze)*
 A. RAG is always better
 B. Stuffing is always better
-C. Same model, two architectures, both correct — choice depends on corpus size and structure
+C. Same model, two architectures, both correct, choice depends on corpus size and structure
 D. One firm was right and the other was wrong
 
 ---
@@ -170,10 +170,10 @@ D. Vector DB fees
 ---
 
 ### Q21. A team's eval suite shows native Citations API returns more reliable spans than prompt-based citations. The likely reason: *(Analyze)*
-A. The API uses character offsets at the model layer instead of relying on the model emitting text identifiers — fewer drift opportunities
+A. The API uses character offsets at the model layer instead of relying on the model emitting text identifiers, fewer drift opportunities
 B. Random
 C. Magic
-D. It does not — they are identical
+D. It does not, they are identical
 
 ---
 
@@ -283,7 +283,7 @@ The full-stack number from Anthropic's published Contextual Retrieval results.
 Narrow factual question → small K. Broader research questions → larger K with reranker.
 
 ### Q24: **C. The 1M context window is free**
-FALSE. It's a beta with regular per-token pricing — at 1M, that's ~$3/call on Sonnet.
+FALSE. It's a beta with regular per-token pricing, at 1M, that's ~$3/call on Sonnet.
 
 ### Q25: **B. The composed RAG architecture with Citations**
 Vector DB + hybrid + reranker + Citations API + tier mix is the standard answer.
@@ -316,4 +316,4 @@ Vector DB + hybrid + reranker + Citations API + tier mix is the standard answer.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Production Patterns & Safety](../Module-08-Production-Patterns-Safety/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Production Patterns & Safety](../Module-08-Production-Patterns-Safety/Reading.md)

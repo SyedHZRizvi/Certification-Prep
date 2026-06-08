@@ -29,7 +29,7 @@ LOW           │  e-cat / Pcard│   bidding/auction│
 
 ---
 
-## 💸 Spend Analysis — Quick Facts
+## 💸 Spend Analysis, Quick Facts
 
 - **Direct spend** = goes INTO the product (raw materials, components)
 - **Indirect spend** = supports operations (IT, MRO, facilities, travel)

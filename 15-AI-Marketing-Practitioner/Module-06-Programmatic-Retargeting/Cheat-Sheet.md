@@ -45,9 +45,9 @@ ADVERTISER → DSP → AD EXCHANGE → SSP → PUBLISHER
 ## 🪜 Casper-Style 3-Stage Funnel
 
 ```
-Day 1-3:   Aggressive — product + offer
-Day 4-7:   Social proof — testimonial
-Day 8-14:  Urgency — discount expires
+Day 1-3:   Aggressive, product + offer
+Day 4-7:   Social proof, testimonial
+Day 8-14:  Urgency, discount expires
 Day 15+:   EXCLUDE
 ```
 
@@ -158,7 +158,7 @@ Single-touch attribution credits: 1 of 30
 
 ## ✏️ Quick Self-Check
 
-1. DSP vs SSP — which does which?
+1. DSP vs SSP, which does which?
 2. The 4 DSPs and their specialties?
 3. 3-stage funnel days?
 4. Why CDP matters?

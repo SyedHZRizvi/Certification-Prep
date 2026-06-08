@@ -3,7 +3,7 @@
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Aim for 21/26 minimum. Time limit: 35 minutes.
 
-> **Bloom's distribution.** Remember 5 (19%) · Understand 6 (23%) · Apply 8 (31%) · Analyze/Evaluate 6 (23%) · Create 1 (4%). Heavy scenario weighting — IAM is the most scenario-tested SAA topic.
+> **Bloom's distribution.** Remember 5 (19%) · Understand 6 (23%) · Apply 8 (31%) · Analyze/Evaluate 6 (23%) · Create 1 (4%). Heavy scenario weighting, IAM is the most scenario-tested SAA topic.
 
 ---
 
@@ -58,8 +58,8 @@ D. Only the root user can assume a role
 ---
 
 ### Q7. A bucket in Account B has no resource policy. A user in Account A has an identity policy allowing `s3:GetObject` on Account B's bucket. The user's request will be: *(Analyze)*
-A. Allowed — identity policy is sufficient
-B. Denied — cross-account access requires the destination's resource policy or role to also allow
+A. Allowed, identity policy is sufficient
+B. Denied, cross-account access requires the destination's resource policy or role to also allow
 C. Allowed only with MFA
 D. Allowed only if the bucket is public
 
@@ -130,8 +130,8 @@ D. `"Resource": "MFA"`
 ---
 
 ### Q16. Within the same account, when both an identity policy and a resource policy apply: *(Analyze)*
-A. They are intersected — both must allow
-B. They are unioned — either allows
+A. They are intersected, both must allow
+B. They are unioned, either allows
 C. Resource policy always wins
 D. Identity policy always wins
 
@@ -163,7 +163,7 @@ D. A budget alert
 
 ### Q20. A trust policy is attached to: *(Remember)*
 A. An S3 bucket
-B. An IAM Role — it defines who can assume the role
+B. An IAM Role, it defines who can assume the role
 C. A VPC
 D. An EC2 instance
 
@@ -229,7 +229,7 @@ Explicit Deny always overrides any Allow. This is the #1 IAM rule.
 Third-party access pattern: cross-account role, principal is the vendor's AWS account, condition `sts:ExternalId` prevents confused-deputy attacks.
 
 ### Q4: **B. Limits maximum permissions**
-SCPs are guardrails — they cap what's possible, never grant.
+SCPs are guardrails, they cap what's possible, never grant.
 
 ### Q5: **B. IAM Identity Center federated to corporate IdP**
 Permission sets + IdP federation = modern, scalable multi-account access. IAM users in 30 accounts is an operational nightmare.
@@ -237,7 +237,7 @@ Permission sets + IdP federation = modern, scalable multi-account access. IAM us
 ### Q6: **B. Roles are assumed via STS, return short-lived creds**
 Roles have no long-term creds. They're temporarily assumed.
 
-### Q7: **B. Denied — cross-account requires both sides to allow**
+### Q7: **B. Denied, cross-account requires both sides to allow**
 For cross-account access, BOTH source identity policy AND destination resource/role policy must allow. No bucket policy = no cross-account access.
 
 ### Q8: **A. `aws:SourceIp`**
@@ -247,7 +247,7 @@ Use `IpAddress` operator with `aws:SourceIp` for IP-based conditions.
 Permissions boundary = per-identity cap. Doesn't grant; just limits.
 
 ### Q10: **B. SCP denying CloudTrail stop/delete**
-SCPs are the right tool to enforce org-wide rules — including against the root user of member accounts.
+SCPs are the right tool to enforce org-wide rules, including against the root user of member accounts.
 
 ### Q11: **C. STS**
 Security Token Service issues temp creds for roles, federation, Cognito identity pools, etc.
@@ -271,12 +271,12 @@ Same account: either policy allowing is sufficient (no explicit Deny). Cross-acc
 Cross-account = intersection of permissions.
 
 ### Q18: **D. Automatic deletion of unused accounts**
-Organizations does consolidated billing, SCPs, RI/Savings Plan sharing — but does not auto-delete accounts.
+Organizations does consolidated billing, SCPs, RI/Savings Plan sharing, but does not auto-delete accounts.
 
 ### Q19: **B. SCP with `aws:RequestedRegion`**
 Org-wide region lockdown = SCP. Single user = permissions boundary or IAM policy.
 
-### Q20: **B. IAM Role — defines who can assume it**
+### Q20: **B. IAM Role, defines who can assume it**
 Trust policy = "who can AssumeRole me?" Permission policies = "what can the assumer then do?"
 
 ### Q21: **C. Execution role with DynamoDB permissions**
@@ -304,7 +304,7 @@ Short-lived, principle of least privilege, time-bounded. Don't create permanent 
 - 25–26/26 → 🏆 You've mastered IAM. Move to Module 3!
 - 21–24/26 → ✅ Solid. Review the wrong ones, then move on.
 - 17–20/26 → ⚠️ IAM is huge on the exam. Re-read and re-quiz tomorrow.
-- <17/26 → 🔁 Restart Module 2 — IAM gaps WILL cost you exam points.
+- <17/26 → 🔁 Restart Module 2, IAM gaps WILL cost you exam points.
 
 ---
 

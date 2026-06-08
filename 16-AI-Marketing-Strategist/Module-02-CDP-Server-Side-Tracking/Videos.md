@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: CDPs & Server-Side Tracking
 
-> **How to use:** This is the most technical-architecture module in the course. The Simo Ahava videos in particular are essential — bookmark his channel.
+> **How to use:** This is the most technical-architecture module in the course. The Simo Ahava videos in particular are essential, bookmark his channel.
 
 ## ⭐ Essential watching (~90 min)
 

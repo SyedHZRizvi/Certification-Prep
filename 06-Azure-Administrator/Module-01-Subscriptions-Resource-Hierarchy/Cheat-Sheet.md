@@ -22,7 +22,7 @@ TENANT (Entra ID)
 
 | Thing | Inherits down? | Override? |
 |-------|----------------|-----------|
-| RBAC (role assignments) | ✅ Yes — additive | No "deny" — assignments combine |
+| RBAC (role assignments) | ✅ Yes additive | No "deny" assignments combine |
 | Azure Policy | ✅ Yes | Use **exemption**, not counter-policy |
 | Resource Locks | ✅ Yes (down) | Remove at scope where applied |
 | Tags | ❌ NO | Enforce via `Modify` policy |
@@ -78,7 +78,7 @@ Built-in policies to know:
 | Type | Effect | Use when |
 |------|--------|----------|
 | **CanNotDelete** | Read/modify OK, no delete | Default for prod RGs |
-| **ReadOnly** | Read only | RARE — breaks key listing, scale, etc. |
+| **ReadOnly** | Read only | RARE, breaks key listing, scale, etc. |
 
 Only **Owner** + **User Access Admin** can create/remove.
 
@@ -105,7 +105,7 @@ Only **Owner** + **User Access Admin** can create/remove.
 | EA | Legacy enterprise |
 | **MCA** | Modern unified billing |
 | CSP | Through a partner |
-| Visual Studio | Dev/test only — **never** prod |
+| Visual Studio | Dev/test only, **never** prod |
 
 ---
 

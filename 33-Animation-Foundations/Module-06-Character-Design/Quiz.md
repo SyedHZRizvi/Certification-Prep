@@ -24,10 +24,10 @@ D. Oval
 
 ### Q3. Scar in *The Lion King* is designed with angular, elongated, triangular forms. What does this design communicate before the character speaks or acts?
 
-A. Scar is wise and experienced — older characters typically use angular designs
-B. Scar is dangerous and untrustworthy — triangles read as threatening
-C. Scar is a predator by nature — lions are naturally angular animals
-D. Scar is creative and energetic — triangles communicate artistic personality
+A. Scar is wise and experienced, older characters typically use angular designs
+B. Scar is dangerous and untrustworthy, triangles read as threatening
+C. Scar is a predator by nature, lions are naturally angular animals
+D. Scar is creative and energetic, triangles communicate artistic personality
 
 ---
 
@@ -88,7 +88,7 @@ D. Blue
 ### Q10. In *Inside Out* (Pixar), Joy's color palette (yellow/gold) and Sadness's color palette (blue) were chosen to:
 
 A. Match the colors of corresponding emotions in brain science research
-B. Communicate their personalities and roles — warmth and optimism for Joy; melancholy and depth for Sadness — before dialogue
+B. Communicate their personalities and roles warmth and optimism for Joy; melancholy and depth for Sadness before dialogue
 C. Contrast with the production's background palette of red and orange
 D. Match the color preferences of the target demographic (children prefer yellow and blue)
 
@@ -106,9 +106,9 @@ D. Perfectly symmetrical designs are copyrighted and cannot be used in commercia
 ### Q12. "IP considerations" in character design refer to:
 
 A. The intellectual development process that character designers use to develop character backstories
-B. Intellectual Property concerns — ensuring designs do not infringe on existing trademarked designs, and understanding ownership of created designs
-C. International Proportions — standardized head-to-body ratios used across international co-productions
-D. Internal Protocol — the studio's internal approval process for character design
+B. Intellectual Property concerns, ensuring designs do not infringe on existing trademarked designs, and understanding ownership of created designs
+C. International Proportions, standardized head-to-body ratios used across international co-productions
+D. Internal Protocol, the studio's internal approval process for character design
 
 ---
 
@@ -123,7 +123,7 @@ D. Natural environments and growth themes
 
 ### Q14. Why should a character's color palette contrast with the production's background palette?
 
-A. Background palette is always muted; character palette is always saturated — this is a technical requirement
+A. Background palette is always muted; character palette is always saturated, this is a technical requirement
 B. Contrasting with backgrounds ensures the character remains visually distinct and readable against the environments they inhabit
 C. Strong color contrast reduces file size in digital animation production
 D. The background palette is selected after character design and automatically adapts to complement the character
@@ -143,7 +143,7 @@ D. Slight asymmetry in the eyebrow shapes
 
 A. Her Scandinavian heritage and the Nordic cultural context of the film
 B. Her isolation, emotional coldness, and the icy nature of her magic
-C. That she is the most powerful character — blue is the color of authority
+C. That she is the most powerful character, blue is the color of authority
 D. The color preferences of Disney's primary audience demographic
 
 ---
@@ -152,7 +152,7 @@ D. The color preferences of Disney's primary audience demographic
 
 A. Clichéd and should be avoided in favor of more ambiguous design choices
 B. An effective, industry-standard application of shape language that communicates character roles to young audiences immediately
-C. Incorrect — circles are for sidekicks and squares are for heroes
+C. Incorrect, circles are for sidekicks and squares are for heroes
 D. Only applicable in traditional 2D animation; 3D animation does not use shape language principles
 
 ---
@@ -161,7 +161,7 @@ D. Only applicable in traditional 2D animation; 3D animation does not use shape 
 
 A. A production error that was later corrected in the second season
 B. That the show's designers did not understand color-personality associations
-C. A deliberate, sophisticated subversion of conventional color associations — color conventions can be intentionally defied for narrative effect
+C. A deliberate, sophisticated subversion of conventional color associations, color conventions can be intentionally defied for narrative effect
 D. That the color-personality associations from this module only apply to children's animation
 
 ---
@@ -170,7 +170,7 @@ D. That the color-personality associations from this module only apply to childr
 
 A. The color palette chosen for the character
 B. The overall shape created by the character's outline in a standard standing pose
-C. The facial features — eyes, nose, and mouth — which audiences use to identify characters
+C. The facial features eyes, nose, and mouth which audiences use to identify characters
 D. The character's costume rather than their underlying body design
 
 ---
@@ -187,7 +187,7 @@ D. Characters who interact frequently should use similar colors to signal their 
 ### Q21. A "character arc" from a design perspective refers to:
 
 A. The path the character's center of gravity travels during a walk cycle
-B. Changes in the character's visual design — costume, color, style — that reflect internal transformation over the story
+B. Changes in the character's visual design costume, color, style that reflect internal transformation over the story
 C. The angle of the character's body during key emotional moments
 D. The character turnaround document that shows all views of the character
 
@@ -205,7 +205,7 @@ D. Designs are automatically in the public domain once delivered to the client
 ### Q23. Which of the following is the best description of "designing for movement" in character design?
 
 A. Creating characters that have been approved by the animation department for use in action sequences
-B. Designing characters with considerations for how they will animate — joint clarity, detail placement, silhouette consistency in extreme poses
+B. Designing characters with considerations for how they will animate, joint clarity, detail placement, silhouette consistency in extreme poses
 C. Choosing color palettes that appear vibrant when the character is in motion
 D. Ensuring characters can be animated at any frame rate without design modification
 
@@ -213,59 +213,59 @@ D. Ensuring characters can be animated at any frame rate without design modifica
 
 ### Q24. A character design for a mentor or father figure would most logically draw on which shape language?
 
-A. Triangle — to communicate the authority and danger of power
-B. Circle — to communicate the approachability and warmth of a nurturing relationship
-C. Square/Rectangle — to communicate stability, dependability, and reliable strength
+A. Triangle, to communicate the authority and danger of power
+B. Circle, to communicate the approachability and warmth of a nurturing relationship
+C. Square/Rectangle, to communicate stability, dependability, and reliable strength
 D. A combination of all three shapes equally, to show the character has multiple dimensions
 
 ---
 
 ## 🎯 Answers + Explanations
 
-**Q1 — C.** Circles are associated with friendliness, approachability, safety, and youth.
+**Q1, C.** Circles are associated with friendliness, approachability, safety, and youth.
 
-**Q2 — C.** Triangles communicate danger, instability, menace, and dynamic energy.
+**Q2, C.** Triangles communicate danger, instability, menace, and dynamic energy.
 
-**Q3 — B.** Triangular, angular forms communicate danger and untrustworthiness — this is shape language in service of character role.
+**Q3 B.** Triangular, angular forms communicate danger and untrustworthiness this is shape language in service of character role.
 
-**Q4 — B.** The silhouette test = fill with solid black and see if the character and action still read clearly.
+**Q4, B.** The silhouette test = fill with solid black and see if the character and action still read clearly.
 
-**Q5 — B.** Failing the silhouette test means the character cannot be identified or their action understood from the black shape alone.
+**Q5, B.** Failing the silhouette test means the character cannot be identified or their action understood from the black shape alone.
 
-**Q6 — C.** Front, 3/4, side, back, and 3/4 back — the five standard turnaround views.
+**Q6 C.** Front, 3/4, side, back, and 3/4 back the five standard turnaround views.
 
-**Q7 — B.** Clear joint locations ensure all animators maintain consistent in-betweening across a production.
+**Q7, B.** Clear joint locations ensure all animators maintain consistent in-betweening across a production.
 
-**Q8 — C.** Complex hair can obscure the face in extreme poses, making facial expression unreadable. This is a design-for-animation problem.
+**Q8, C.** Complex hair can obscure the face in extreme poses, making facial expression unreadable. This is a design-for-animation problem.
 
-**Q9 — D.** Blue is associated with trustworthiness, calm, reliability.
+**Q9, D.** Blue is associated with trustworthiness, calm, reliability.
 
-**Q10 — B.** Joy's yellow/gold communicates warmth and optimism; Sadness's blue communicates melancholy — before dialogue.
+**Q10 B.** Joy's yellow/gold communicates warmth and optimism; Sadness's blue communicates melancholy before dialogue.
 
-**Q11 — B.** Slight asymmetry allows more natural animation and reflects reality. Perfect symmetry looks robotic and artificial.
+**Q11, B.** Slight asymmetry allows more natural animation and reflects reality. Perfect symmetry looks robotic and artificial.
 
-**Q12 — B.** IP = Intellectual Property — design infringement risk and ownership of created designs.
+**Q12 B.** IP = Intellectual Property design infringement risk and ownership of created designs.
 
-**Q13 — C.** Purple is associated with power, mysticism, royalty, and villainy.
+**Q13, C.** Purple is associated with power, mysticism, royalty, and villainy.
 
-**Q14 — B.** Characters must contrast against backgrounds to remain visually distinct and readable.
+**Q14, B.** Characters must contrast against backgrounds to remain visually distinct and readable.
 
-**Q15 — B.** Hair covering the upper face in a resting position will obscure expressions in extreme poses — a major animation design problem.
+**Q15 B.** Hair covering the upper face in a resting position will obscure expressions in extreme poses a major animation design problem.
 
-**Q16 — B.** Elsa's blue = isolation and emotional coldness. This is the intended character communication.
+**Q16, B.** Elsa's blue = isolation and emotional coldness. This is the intended character communication.
 
-**Q17 — B.** This is an effective, standard application of shape language. Young audiences read these conventions easily and reliably.
+**Q17, B.** This is an effective, standard application of shape language. Young audiences read these conventions easily and reliably.
 
-**Q18 — C.** *Arcane* deliberately subverts color conventions for narrative complexity. Color associations are not rules — they are tools that can be intentionally defied.
+**Q18 C.** *Arcane* deliberately subverts color conventions for narrative complexity. Color associations are not rules they are tools that can be intentionally defied.
 
-**Q19 — B.** Silhouette = the outline shape in a standard pose. This is what defines the character's visual identity at a distance.
+**Q19, B.** Silhouette = the outline shape in a standard pose. This is what defines the character's visual identity at a distance.
 
-**Q20 — B.** Ensemble characters must be distinguishable from each other, especially in shared scenes.
+**Q20, B.** Ensemble characters must be distinguishable from each other, especially in shared scenes.
 
-**Q21 — B.** Character arc = visual design changes reflecting internal transformation (costume, color, style changes).
+**Q21, B.** Character arc = visual design changes reflecting internal transformation (costume, color, style changes).
 
-**Q22 — B.** Freelance ownership depends on the contract. Typically the client owns designs created for their project. Always clarify in writing.
+**Q22, B.** Freelance ownership depends on the contract. Typically the client owns designs created for their project. Always clarify in writing.
 
-**Q23 — B.** Designing for movement = considering joint clarity, detail placement, and silhouette in extreme poses.
+**Q23, B.** Designing for movement = considering joint clarity, detail placement, and silhouette in extreme poses.
 
-**Q24 — C.** Square/Rectangle for mentors and father figures — communicates stability, dependability, reliable strength.
+**Q24 C.** Square/Rectangle for mentors and father figures communicates stability, dependability, reliable strength.

@@ -1,6 +1,6 @@
 # Module 6: Fine-Tuning & Model Customization on Vertex AI 🔧
 
-> **Why this module matters:** Fine-tuning is the most-misunderstood lever in the GenAI toolbox. Half the time engineers reach for it, they should be using RAG or a better prompt. The other half, they reach for it but pick the wrong *kind* of fine-tuning, end up with a brittle model that costs 5x what it should, and conclude "fine-tuning doesn't work." This module is the practitioner's guide to fine-tuning Gemini on Vertex AI — what it actually does, when to use it, and the SFT/RLHF/distillation choices that determine whether your fine-tuned model ships.
+> **Why this module matters:** Fine-tuning is the most-misunderstood lever in the GenAI toolbox. Half the time engineers reach for it, they should be using RAG or a better prompt. The other half, they reach for it but pick the wrong *kind* of fine-tuning, end up with a brittle model that costs 5x what it should, and conclude "fine-tuning doesn't work." This module is the practitioner's guide to fine-tuning Gemini on Vertex AI, what it actually does, when to use it, and the SFT/RLHF/distillation choices that determine whether your fine-tuned model ships.
 
 > **Prerequisites for this module.** Modules 1–5 finished. Familiarity with the *concept* of supervised learning (input → label → loss → gradient update). Some experience labeling or curating a small dataset (~100 examples) helps.
 
@@ -8,13 +8,13 @@
 
 ## 📖 A Story: When Adore Me Discovered Fine-Tuning Was the Wrong Answer
 
-It is early 2024. **Adore Me** (a Victoria's Secret-owned lingerie brand) wants to deploy Gemini-powered product descriptions across its ~3,000 SKUs in five languages. The brief: "Each description must use Adore Me's voice — body-positive, inclusive, casually friendly, no purple prose, no clinical terminology." The team's first instinct is to fine-tune Gemini on 500 Adore Me-authored descriptions.
+It is early 2024. **Adore Me** (a Victoria's Secret-owned lingerie brand) wants to deploy Gemini-powered product descriptions across its ~3,000 SKUs in five languages. The brief: "Each description must use Adore Me's voice, body-positive, inclusive, casually friendly, no purple prose, no clinical terminology." The team's first instinct is to fine-tune Gemini on 500 Adore Me-authored descriptions.
 
-The fine-tune produces a brittle model. It nails Adore Me's voice on products *similar* to the training set (bras, panties) but produces stilted, off-brand copy for sleepwear and swim — categories under-represented in the training data. Each new product category requires *adding to the training set and re-fine-tuning*. The team is shipping fine-tuned model versions monthly.
+The fine-tune produces a brittle model. It nails Adore Me's voice on products *similar* to the training set (bras, panties) but produces stilted, off-brand copy for sleepwear and swim, categories under-represented in the training data. Each new product category requires *adding to the training set and re-fine-tuning*. The team is shipping fine-tuned model versions monthly.
 
 The team's published reflection (Google Cloud Customer Story 2024) describes a pivot. Instead of fine-tuning, they:
 
-1. Wrote a precise **system_instruction** — 800 words specifying the voice, the do's, the don'ts, three exemplars
+1. Wrote a precise **system_instruction**, 800 words specifying the voice, the do's, the don'ts, three exemplars
 2. Built a **few-shot prompt template** with 8 hand-picked examples covering the full category spread
 3. Indexed brand guidelines + competitor-don't-do examples in **Vertex AI Search**; grounded against them
 4. Ran a **prompt eval** with LLM-as-judge scoring against a held-out test set every time the prompt changed
@@ -43,19 +43,19 @@ There are five ways to customize an LLM's behavior on Vertex AI, in increasing o
 
 ## 🎓 What Fine-Tuning Actually Does
 
-Fine-tuning is **gradient descent on the model's weights using new training data**. It does *not* add new knowledge in the way a corpus does (RAG is better for that). It *shapes behavior* — what kinds of patterns the model produces, what vocabulary it favors, how it formats output, how it handles your domain's specific edge cases.
+Fine-tuning is **gradient descent on the model's weights using new training data**. It does *not* add new knowledge in the way a corpus does (RAG is better for that). It *shapes behavior*, what kinds of patterns the model produces, what vocabulary it favors, how it formats output, how it handles your domain's specific edge cases.
 
 **Three things fine-tuning is excellent at:**
 
-1. **Style and tone** — adopt a brand voice, a domain register (legal, medical), a fixed output format
-2. **Task specialization** — make Gemini's classification labels match your taxonomy exactly
-3. **Vocabulary adaptation** — internal jargon, product codes, proprietary terminology
+1. **Style and tone**, adopt a brand voice, a domain register (legal, medical), a fixed output format
+2. **Task specialization**, make Gemini's classification labels match your taxonomy exactly
+3. **Vocabulary adaptation**, internal jargon, product codes, proprietary terminology
 
 **Three things fine-tuning is bad at:**
 
-1. **Knowledge updates** — the model still doesn't know about facts it didn't see; RAG is for this
-2. **Catastrophic forgetting** — over-fine-tune and the model forgets general capabilities
-3. **Cost-efficiency** — fine-tuning runs are expensive; serving fine-tuned models is more expensive than the base
+1. **Knowledge updates**, the model still doesn't know about facts it didn't see; RAG is for this
+2. **Catastrophic forgetting**, over-fine-tune and the model forgets general capabilities
+3. **Cost-efficiency**, fine-tuning runs are expensive; serving fine-tuned models is more expensive than the base
 
 ---
 
@@ -122,9 +122,9 @@ print(tuning_job.tuned_model_endpoint_name)
 ```
 
 **Hyperparameters that matter:**
-- `epochs` — how many passes over the data. Too few → underfit; too many → overfit. Start with 3-5.
-- `learning_rate_multiplier` — relative to Google's default. Start with 1.0.
-- `adapter_size` — for parameter-efficient methods (LoRA rank). Smaller = faster + less overfit risk; larger = more capacity.
+- `epochs`, how many passes over the data. Too few → underfit; too many → overfit. Start with 3-5.
+- `learning_rate_multiplier`, relative to Google's default. Start with 1.0.
+- `adapter_size`, for parameter-efficient methods (LoRA rank). Smaller = faster + less overfit risk; larger = more capacity.
 
 ### Cost & duration
 
@@ -152,9 +152,9 @@ Full-parameter fine-tuning of a Gemini Flash-sized model would be cost-prohibiti
 
 **The `adapter_size` hyperparameter** controls the rank of the LoRA matrices:
 
-- `adapter_size=1` — very small adapter; minimal change
-- `adapter_size=4` — typical default
-- `adapter_size=8` or `16` — more capacity, more risk of overfit
+- `adapter_size=1`, very small adapter; minimal change
+- `adapter_size=4`, typical default
+- `adapter_size=8` or `16`, more capacity, more risk of overfit
 
 🎯 **Exam pattern:** *"Why is Vertex AI's Gemini SFT much cheaper than full fine-tuning?"* → **LoRA / parameter-efficient adapters; only a small number of adapter parameters update.**
 
@@ -162,7 +162,7 @@ Full-parameter fine-tuning of a Gemini Flash-sized model would be cost-prohibiti
 
 ## 🎚️ RLHF on Vertex AI
 
-**Reinforcement Learning from Human Feedback (RLHF)** — pioneered by OpenAI in 2022 (Ouyang et al.), used for InstructGPT and ChatGPT — is also available on Vertex AI for specialized customization. The training loop:
+**Reinforcement Learning from Human Feedback (RLHF)** pioneered by OpenAI in 2022 (Ouyang et al.), used for InstructGPT and ChatGPT is also available on Vertex AI for specialized customization. The training loop:
 
 ```
 1. SFT first (per above)
@@ -180,13 +180,13 @@ Full-parameter fine-tuning of a Gemini Flash-sized model would be cost-prohibiti
 
 ### DPO as a simpler alternative
 
-**Direct Preference Optimization (DPO)**, published by Rafailov et al. 2023, achieves RLHF-like behavior without the RL machinery — directly optimizes the model on pairwise preference data. Simpler and increasingly preferred.
+**Direct Preference Optimization (DPO)**, published by Rafailov et al. 2023, achieves RLHF-like behavior without the RL machinery, directly optimizes the model on pairwise preference data. Simpler and increasingly preferred.
 
 🎯 **Exam pattern:** *"A team wants their model to give subjectively-better customer-service responses. The team has 5K pairs of (better, worse) example responses ranked by their CX leads. The fastest path is..."* → **DPO** (or RLHF) on Vertex AI. SFT alone misses the comparative signal.
 
 ---
 
-## 🪞 Distillation — Smaller Student from Bigger Teacher
+## 🪞 Distillation, Smaller Student from Bigger Teacher
 
 **Distillation** is training a small model (the *student*) to mimic the outputs of a large model (the *teacher*). On Vertex AI:
 
@@ -217,7 +217,7 @@ for prompt in prompts:
 
 ## 🧪 Evaluating a Fine-Tuned Model
 
-After fine-tuning, evaluate on the **holdout** — data the model never saw during training. Vertex AI Evaluation Service handles this:
+After fine-tuning, evaluate on the **holdout**, data the model never saw during training. Vertex AI Evaluation Service handles this:
 
 ```python
 from vertexai.evaluation import EvalTask, MetricPromptTemplateExamples
@@ -246,7 +246,7 @@ Compare:
 
 ---
 
-## 🤔 Fine-Tune vs Prompt vs RAG — The Decision Matrix
+## 🤔 Fine-Tune vs Prompt vs RAG, The Decision Matrix
 
 | Need | Tool |
 |------|------|
@@ -264,14 +264,14 @@ Compare:
 
 ## 🎯 Three Real Fine-Tune Use Cases That Worked
 
-### 1. Adore Me — Eventually Decided Against
+### 1. Adore Me, Eventually Decided Against
 Discovered prompting + RAG was enough; case study in *what NOT to fine-tune*. Saved ~10× cost.
 
-### 2. Vodafone — Network-Ticket Classification
+### 2. Vodafone, Network-Ticket Classification
 Vodafone published a 2024 case study (Google Cloud Next) of SFT on Gemini Flash for classifying customer network tickets into 80+ technical categories with proprietary error codes. 12K labeled tickets → SFT → 35% accuracy improvement over base Flash with few-shot. Production deployment via Endpoint canary.
 
-### 3. Mayo Clinic — MedLM Domain Specialization
-Mayo Clinic uses MedLM (Med-PaLM 2 successor in Vertex AI Model Garden) — already domain-tuned by Google — *plus* lightweight SFT on Mayo-specific clinical-decision-support note templates. The two-step (domain tune + institutional tune) avoids catastrophic forgetting of medical knowledge.
+### 3. Mayo Clinic, MedLM Domain Specialization
+Mayo Clinic uses MedLM (Med-PaLM 2 successor in Vertex AI Model Garden) already domain-tuned by Google *plus* lightweight SFT on Mayo-specific clinical-decision-support note templates. The two-step (domain tune + institutional tune) avoids catastrophic forgetting of medical knowledge.
 
 ---
 
@@ -308,7 +308,7 @@ Mayo Clinic uses MedLM (Med-PaLM 2 successor in Vertex AI Model Garden) — alre
 | **Learning rate multiplier** | Vertex AI's LR knob (relative to default) |
 | **Catastrophic forgetting** | Tuned model forgets general capabilities |
 | **Holdout** | Final unseen evaluation set |
-| **JSONL** | JSON lines — one example per line; Vertex AI's tuning format |
+| **JSONL** | JSON lines, one example per line; Vertex AI's tuning format |
 | **MedLM** | Domain-tuned medical model on Vertex AI |
 | **Vertex AI Evaluation Service** | Built-in eval framework |
 | **Pointwise metric** | Score each example individually |
@@ -320,16 +320,16 @@ Mayo Clinic uses MedLM (Med-PaLM 2 successor in Vertex AI Model Garden) — alre
 
 You now know:
 
-- 🪜 **Customization ladder** — prompt → few-shot → RAG → SFT → RLHF
-- 🎓 **What SFT actually does** — behavior, not knowledge
+- 🪜 **Customization ladder**, prompt → few-shot → RAG → SFT → RLHF
+- 🎓 **What SFT actually does**, behavior, not knowledge
 - ⚡ **LoRA** as Vertex AI's tuning mechanism
 - 🎚️ **RLHF + DPO** for subjective quality
 - 🪞 **Distillation** for cheap quality on narrow tasks
-- 🧪 **Evaluation** — holdout, catastrophic forgetting checks
+- 🧪 **Evaluation**, holdout, catastrophic forgetting checks
 - 🤔 **Decision matrix** for fine-tune vs RAG vs prompt
-- ⚠️ **Common traps** — knowledge updates ≠ fine-tune
+- ⚠️ **Common traps**, knowledge updates ≠ fine-tune
 
-**Next:** [Module 7 — Agent Builder & Conversational AI](../Module-07-Agent-Builder-Conversational/Reading.md)
+**Next:** [Module 7, Agent Builder & Conversational AI](../Module-07-Agent-Builder-Conversational/Reading.md)
 
 ---
 
@@ -341,4 +341,4 @@ You now know:
 - 📖 [MedLM](https://cloud.google.com/medical-large-language-models)
 - 📄 Hu et al. (2021) [*LoRA: Low-Rank Adaptation of Large Language Models*](https://arxiv.org/abs/2106.09685)
 - 📄 Rafailov et al. (2023) [*Direct Preference Optimization*](https://arxiv.org/abs/2305.18290)
-- 📄 Ouyang et al. (2022) [*InstructGPT — RLHF*](https://arxiv.org/abs/2203.02155)
+- 📄 Ouyang et al. (2022) [*InstructGPT, RLHF*](https://arxiv.org/abs/2203.02155)

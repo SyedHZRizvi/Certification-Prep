@@ -62,10 +62,10 @@
 - Cost per request
 
 ### RAG (RAGAS)
-- **Faithfulness** — answer uses only retrieved context
-- **Answer relevance** — addresses the question
-- **Context precision** — retrieved chunks are relevant
-- **Context recall** — relevant chunks were retrieved
+- **Faithfulness**, answer uses only retrieved context
+- **Answer relevance**, addresses the question
+- **Context precision**, retrieved chunks are relevant
+- **Context recall**, relevant chunks were retrieved
 
 ---
 
@@ -249,7 +249,7 @@ if new_metrics["overall_accuracy"] < baseline["overall_accuracy"] - 0.01:
 if new_metrics["safety_violations"] > baseline["safety_violations"]:
     raise RegressionError("Safety regression detected")
 
-print("OK — ready to deploy v17")
+print("OK, ready to deploy v17")
 ```
 
 ### Per-tag breakdown for diagnosis

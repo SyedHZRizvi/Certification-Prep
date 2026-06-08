@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — AWS Cloud Practitioner (CLF-C02 Style)
+# 🧪 Practice Exam 2, AWS Cloud Practitioner (CLF-C02 Style)
 
 > **Conditions:** Set a 70-minute timer. 50 questions. Treat it like the real thing.
-> **Pass mark:** 35/50 (70%) — but aim for 40+ to feel confident for the final mock
+> **Pass mark:** 35/50 (70%), but aim for 40+ to feel confident for the final mock
 > Take this AFTER finishing ALL 8 Modules.
 
 ---
@@ -188,7 +188,7 @@ B. Download AWS compliance reports (SOC, ISO, PCI, etc.)
 C. Provision EC2
 D. Block DDoS
 
-### 31. Which is FREE — you only pay for resources it creates?
+### 31. Which is FREE, you only pay for resources it creates?
 A. EC2
 B. RDS
 C. AWS Elastic Beanstalk
@@ -329,105 +329,105 @@ D. AWS Security Hub
 
 ## 📚 Detailed answer rationales
 
-**Q1. Answer: C** — **The customer.** EC2 is IaaS; customer owns OS patching and up. **Wrong:** A (AWS only patches hypervisor + hardware); B (no 50/50 split per Shared Responsibility); D (AWS Support advises but doesn't run your patches). **Takeaway.** EC2 = customer patches OS. RDS / Lambda = AWS patches OS. Memorize the boundary.
+**Q1. Answer: C**, **The customer.** EC2 is IaaS; customer owns OS patching and up. **Wrong:** A (AWS only patches hypervisor + hardware); B (no 50/50 split per Shared Responsibility); D (AWS Support advises but doesn't run your patches). **Takeaway.** EC2 = customer patches OS. RDS / Lambda = AWS patches OS. Memorize the boundary.
 
-**Q2. Answer: C** — **AWS.** Physical security is security OF the cloud, always AWS's job. **Wrong:** A (local government doesn't run AWS data centers); B (customer never has DC physical access); D (CSA publishes standards, doesn't operate DCs). **Takeaway.** Physical → always AWS.
+**Q2. Answer: C**, **AWS.** Physical security is security OF the cloud, always AWS's job. **Wrong:** A (local government doesn't run AWS data centers); B (customer never has DC physical access); D (CSA publishes standards, doesn't operate DCs). **Takeaway.** Physical → always AWS.
 
-**Q3. Answer: A** — **GuardDuty.** Analyzes CloudTrail + VPC Flow Logs + DNS + EKS audit logs for threats via ML. **Wrong:** B (Macie = S3 PII discovery, different signal); C (Inspector = vulnerability scanning, not behavior anomalies); D (Trusted Advisor = best-practice checks, not threat detection). **Takeaway.** "Anomalous account behavior" → GuardDuty.
+**Q3. Answer: A**, **GuardDuty.** Analyzes CloudTrail + VPC Flow Logs + DNS + EKS audit logs for threats via ML. **Wrong:** B (Macie = S3 PII discovery, different signal); C (Inspector = vulnerability scanning, not behavior anomalies); D (Trusted Advisor = best-practice checks, not threat detection). **Takeaway.** "Anomalous account behavior" → GuardDuty.
 
-**Q4. Answer: C** — **Macie.** Macie uses ML to find PII inside S3. **Wrong:** A (GuardDuty looks at logs not bucket contents); B (Inspector scans EC2/ECR/Lambda for CVEs); D (Config tracks resource state). **Takeaway.** "PII in S3" → Macie, always.
+**Q4. Answer: C**, **Macie.** Macie uses ML to find PII inside S3. **Wrong:** A (GuardDuty looks at logs not bucket contents); B (Inspector scans EC2/ECR/Lambda for CVEs); D (Config tracks resource state). **Takeaway.** "PII in S3" → Macie, always.
 
-**Q5. Answer: B** — **AWS Organizations + SCPs.** Organizations provides multi-account management + consolidated billing; SCPs are the guardrails. **Wrong:** A (IAM Identity Center is for user SSO, not account guardrails); C (Trusted Advisor recommends, doesn't enforce); D (Artifact downloads compliance reports). **Takeaway.** Multi-account guardrails = Organizations + SCPs.
+**Q5. Answer: B**, **AWS Organizations + SCPs.** Organizations provides multi-account management + consolidated billing; SCPs are the guardrails. **Wrong:** A (IAM Identity Center is for user SSO, not account guardrails); C (Trusted Advisor recommends, doesn't enforce); D (Artifact downloads compliance reports). **Takeaway.** Multi-account guardrails = Organizations + SCPs.
 
-**Q6. Answer: A** — **MFA + small set of tasks.** Root is for account-level operations only; MFA required. **Wrong:** B (daily admin = create an IAM admin user, never root); C (NEVER share root); D (Lambda uses IAM Roles, not root). **Takeaway.** Root = lock down + MFA + use only for billing / account closure.
+**Q6. Answer: A**, **MFA + small set of tasks.** Root is for account-level operations only; MFA required. **Wrong:** B (daily admin = create an IAM admin user, never root); C (NEVER share root); D (Lambda uses IAM Roles, not root). **Takeaway.** Root = lock down + MFA + use only for billing / account closure.
 
-**Q7. Answer: A** — **Explicit Deny always wins.** Fundamental IAM rule from the IAM policy evaluation logic. **Wrong:** B (Allow loses to explicit Deny); C (order doesn't matter); D (policies absolutely can conflict). **Takeaway.** Explicit Deny > anything. Memorize this single rule.
+**Q7. Answer: A**, **Explicit Deny always wins.** Fundamental IAM rule from the IAM policy evaluation logic. **Wrong:** B (Allow loses to explicit Deny); C (order doesn't matter); D (policies absolutely can conflict). **Takeaway.** Explicit Deny > anything. Memorize this single rule.
 
-**Q8. Answer: B** — **IAM Role on the instance.** Roles deliver temporary, auto-rotating credentials via instance metadata. **Wrong:** A (long-lived keys are a Capital One-breach-style risk); C (root credentials = blast radius infinity); D (public S3 fixes the wrong problem). **Takeaway.** EC2 → AWS service = always an IAM Role, never embedded keys.
+**Q8. Answer: B**, **IAM Role on the instance.** Roles deliver temporary, auto-rotating credentials via instance metadata. **Wrong:** A (long-lived keys are a Capital One-breach-style risk); C (root credentials = blast radius infinity); D (public S3 fixes the wrong problem). **Takeaway.** EC2 → AWS service = always an IAM Role, never embedded keys.
 
-**Q9. Answer: B** — **ACM.** AWS Certificate Manager provides free public TLS certs for use with ALB / CloudFront / API Gateway. **Wrong:** A (KMS is for symmetric/asymmetric encryption keys, not TLS certs); C (CloudHSM is FIPS-140-2 L3 HSM hardware); D (Secrets Manager stores secrets, doesn't issue certs). **Takeaway.** Free TLS for AWS services → ACM.
+**Q9. Answer: B**, **ACM.** AWS Certificate Manager provides free public TLS certs for use with ALB / CloudFront / API Gateway. **Wrong:** A (KMS is for symmetric/asymmetric encryption keys, not TLS certs); C (CloudHSM is FIPS-140-2 L3 HSM hardware); D (Secrets Manager stores secrets, doesn't issue certs). **Takeaway.** Free TLS for AWS services → ACM.
 
-**Q10. Answer: A** — **Free + automatic.** Shield Standard is on by default for ELB / CloudFront / Route 53, no setup, no cost. **Wrong:** B ($3K/mo is Shield Advanced); C (Shield Standard isn't tied to support); D (PII discovery is Macie). **Takeaway.** Shield Standard = free, automatic, basic DDoS.
+**Q10. Answer: A**, **Free + automatic.** Shield Standard is on by default for ELB / CloudFront / Route 53, no setup, no cost. **Wrong:** B ($3K/mo is Shield Advanced); C (Shield Standard isn't tied to support); D (PII discovery is Macie). **Takeaway.** Shield Standard = free, automatic, basic DDoS.
 
-**Q11. Answer: A** — **DRT + cost protection.** Shield Advanced uniquely gives DDoS Response Team access + bill credits for autoscaling/data transfer during attacks. **Wrong:** B (Auto Scaling is unrelated); C (free EC2 isn't a Shield benefit); D (Multi-AZ is a deployment pattern). **Takeaway.** Shield Advanced (~$3K/mo) = DRT + cost protection + enhanced detection.
+**Q11. Answer: A**, **DRT + cost protection.** Shield Advanced uniquely gives DDoS Response Team access + bill credits for autoscaling/data transfer during attacks. **Wrong:** B (Auto Scaling is unrelated); C (free EC2 isn't a Shield benefit); D (Multi-AZ is a deployment pattern). **Takeaway.** Shield Advanced (~$3K/mo) = DRT + cost protection + enhanced detection.
 
-**Q12. Answer: A** — **Secrets Manager.** Built-in rotation for RDS / Redshift / DocumentDB. **Wrong:** B (S3 isn't a secret store); C (CloudTrail is audit); D (Health Dashboard is operational events). **Takeaway.** "Secrets + auto-rotate" → Secrets Manager. Parameter Store is similar but no built-in rotation.
+**Q12. Answer: A**, **Secrets Manager.** Built-in rotation for RDS / Redshift / DocumentDB. **Wrong:** B (S3 isn't a secret store); C (CloudTrail is audit); D (Health Dashboard is operational events). **Takeaway.** "Secrets + auto-rotate" → Secrets Manager. Parameter Store is similar but no built-in rotation.
 
-**Q13. Answer: D** — **RDS Multi-AZ.** Synchronous standby + auto failover = textbook HA for relational. **Wrong:** A (DynamoDB is NoSQL, not relational); B (ElastiCache is in-memory cache, not OLTP DB); C (Redshift is OLAP). **Takeaway.** "Relational + HA" → RDS Multi-AZ.
+**Q13. Answer: D**, **RDS Multi-AZ.** Synchronous standby + auto failover = textbook HA for relational. **Wrong:** A (DynamoDB is NoSQL, not relational); B (ElastiCache is in-memory cache, not OLTP DB); C (Redshift is OLAP). **Takeaway.** "Relational + HA" → RDS Multi-AZ.
 
-**Q14. Answer: D** — **Asynchronous read scaling.** Read Replicas exist to offload reads from the primary; async replication. **Wrong:** A (sync HA = Multi-AZ); B (cross-region is a use case but not the only one); C (backups are separate). **Takeaway.** Multi-AZ = HA. Read Replicas = read scaling. Different.
+**Q14. Answer: D**, **Asynchronous read scaling.** Read Replicas exist to offload reads from the primary; async replication. **Wrong:** A (sync HA = Multi-AZ); B (cross-region is a use case but not the only one); C (backups are separate). **Takeaway.** Multi-AZ = HA. Read Replicas = read scaling. Different.
 
-**Q15. Answer: C** — **DynamoDB.** Serverless NoSQL, single-digit ms. **Wrong:** A (RDS is provisioned + relational); B (Redshift is OLAP analytics); D (Neptune is graph). **Takeaway.** "Serverless + key-value + ms at any scale" → DynamoDB.
+**Q15. Answer: C**, **DynamoDB.** Serverless NoSQL, single-digit ms. **Wrong:** A (RDS is provisioned + relational); B (Redshift is OLAP analytics); D (Neptune is graph). **Takeaway.** "Serverless + key-value + ms at any scale" → DynamoDB.
 
-**Q16. Answer: A** — **Redshift.** Petabyte OLAP for BI. **Wrong:** B (DynamoDB is OLTP key-value); C (ElastiCache is in-memory); D (Lambda doesn't do analytics scans). **Takeaway.** "BI + petabytes + analytical" → Redshift.
+**Q16. Answer: A**, **Redshift.** Petabyte OLAP for BI. **Wrong:** B (DynamoDB is OLTP key-value); C (ElastiCache is in-memory); D (Lambda doesn't do analytics scans). **Takeaway.** "BI + petabytes + analytical" → Redshift.
 
-**Q17. Answer: C** — **MySQL + PostgreSQL.** Aurora's two editions. **Wrong:** A (MongoDB = DocumentDB; Cassandra = Keyspaces); B (Oracle/SQL Server have their own RDS editions, not Aurora); D (SQLite is local-file). **Takeaway.** Aurora = MySQL OR PostgreSQL compatible. Memorize.
+**Q17. Answer: C**, **MySQL + PostgreSQL.** Aurora's two editions. **Wrong:** A (MongoDB = DocumentDB; Cassandra = Keyspaces); B (Oracle/SQL Server have their own RDS editions, not Aurora); D (SQLite is local-file). **Takeaway.** Aurora = MySQL OR PostgreSQL compatible. Memorize.
 
-**Q18. Answer: C** — **6 copies across 3 AZs.** Aurora's signature storage architecture. **Wrong:** A (single-AZ would defeat HA); B (4-region is unrealistic); D (snapshot model is for RDS). **Takeaway.** Aurora storage = 6×3. Tested directly.
+**Q18. Answer: C**, **6 copies across 3 AZs.** Aurora's signature storage architecture. **Wrong:** A (single-AZ would defeat HA); B (4-region is unrealistic); D (snapshot model is for RDS). **Takeaway.** Aurora storage = 6×3. Tested directly.
 
-**Q19. Answer: D** — **ElastiCache.** Sub-ms in-memory cache (Redis or Memcached). **Wrong:** A (S3 is object, ~tens of ms); B (Redshift is OLAP); C (Glue is ETL). **Takeaway.** "Sub-ms cache in front of RDS" → ElastiCache.
+**Q19. Answer: D**, **ElastiCache.** Sub-ms in-memory cache (Redis or Memcached). **Wrong:** A (S3 is object, ~tens of ms); B (Redshift is OLAP); C (Glue is ETL). **Takeaway.** "Sub-ms cache in front of RDS" → ElastiCache.
 
-**Q20. Answer: D** — **Neptune.** Graph DB for relationship queries. **Wrong:** A (DynamoDB is key-value); B (Timestream is time-series); C (RDS PostgreSQL can do recursive CTEs but doesn't scale to graph workloads). **Takeaway.** "Friend-of-friend / relationship" → Neptune.
+**Q20. Answer: D**, **Neptune.** Graph DB for relationship queries. **Wrong:** A (DynamoDB is key-value); B (Timestream is time-series); C (RDS PostgreSQL can do recursive CTEs but doesn't scale to graph workloads). **Takeaway.** "Friend-of-friend / relationship" → Neptune.
 
-**Q21. Answer: D** — **DMS + SCT.** DMS migrates data; SCT converts cross-engine schemas (Oracle → Aurora PG). **Wrong:** A (MGN is for servers, not databases); B (Snowball is physical disk transfer); C (DataSync is for files, not databases). **Takeaway.** "Cross-engine DB migration" → DMS + SCT.
+**Q21. Answer: D**, **DMS + SCT.** DMS migrates data; SCT converts cross-engine schemas (Oracle → Aurora PG). **Wrong:** A (MGN is for servers, not databases); B (Snowball is physical disk transfer); C (DataSync is for files, not databases). **Takeaway.** "Cross-engine DB migration" → DMS + SCT.
 
-**Q22. Answer: B** — **Every API call.** CloudTrail = audit log of who/what/when. **Wrong:** A (CPU metrics = CloudWatch); C (resource state = Config); D (vuln scans = Inspector). **Takeaway.** CloudTrail = WHO did the API call. Config = WHAT does the resource look like.
+**Q22. Answer: B**, **Every API call.** CloudTrail = audit log of who/what/when. **Wrong:** A (CPU metrics = CloudWatch); C (resource state = Config); D (vuln scans = Inspector). **Takeaway.** CloudTrail = WHO did the API call. Config = WHAT does the resource look like.
 
-**Q23. Answer: A** — **Metrics + logs + alarms.** CloudWatch's three pillars. **Wrong:** B (API audit = CloudTrail); C (DDoS = Shield); D (compliance = Artifact). **Takeaway.** CloudWatch = M+L+A for AWS resources.
+**Q23. Answer: A**, **Metrics + logs + alarms.** CloudWatch's three pillars. **Wrong:** B (API audit = CloudTrail); C (DDoS = Shield); D (compliance = Artifact). **Takeaway.** CloudWatch = M+L+A for AWS resources.
 
-**Q24. Answer: B** — **Config over time + rules.** Tracks resource config and evaluates against compliance rules. **Wrong:** A (CPU = CloudWatch); C (bandwidth = CloudWatch / VPC Flow Logs); D (cache hits = CloudFront metrics). **Takeaway.** Config = resource state drift + compliance.
+**Q24. Answer: B**, **Config over time + rules.** Tracks resource config and evaluates against compliance rules. **Wrong:** A (CPU = CloudWatch); C (bandwidth = CloudWatch / VPC Flow Logs); D (cache hits = CloudFront metrics). **Takeaway.** Config = resource state drift + compliance.
 
-**Q25. Answer: D** — **Session Manager.** Browser-based SSH-less access to EC2 via Systems Manager. **Wrong:** A (Direct Connect = on-prem connectivity); B (bastion still requires SSH); C (public IP = exposed to internet). **Takeaway.** "Connect to EC2, no port 22" → Session Manager. No more bastion hosts.
+**Q25. Answer: D**, **Session Manager.** Browser-based SSH-less access to EC2 via Systems Manager. **Wrong:** A (Direct Connect = on-prem connectivity); B (bastion still requires SSH); C (public IP = exposed to internet). **Takeaway.** "Connect to EC2, no port 22" → Session Manager. No more bastion hosts.
 
-**Q26. Answer: D** — **Migration.** Migration is NOT a Trusted Advisor category. The 5 are: Cost Optimization, Performance, Security, Fault Tolerance, Service Limits. **Wrong:** A, B, C are all valid categories. **Takeaway.** Memorize the 5 Trusted Advisor categories.
+**Q26. Answer: D**, **Migration.** Migration is NOT a Trusted Advisor category. The 5 are: Cost Optimization, Performance, Security, Fault Tolerance, Service Limits. **Wrong:** A, B, C are all valid categories. **Takeaway.** Memorize the 5 Trusted Advisor categories.
 
-**Q27. Answer: D** — **Email + one contact + business hours.** Developer Support's defining limits. **Wrong:** A (24/7 phone + TAM = Enterprise); B (TLS certs are ACM); C (full Trusted Advisor = Business+). **Takeaway.** Developer = cheap, email-only, business hours.
+**Q27. Answer: D**, **Email + one contact + business hours.** Developer Support's defining limits. **Wrong:** A (24/7 phone + TAM = Enterprise); B (TLS certs are ACM); C (full Trusted Advisor = Business+). **Takeaway.** Developer = cheap, email-only, business hours.
 
-**Q28. Answer: B** — **< 1 hour.** Business Support's production-down SLA. **Wrong:** A (15 min = Enterprise); C (30 min = Enterprise On-Ramp); D (4 hours is below Business standard). **Takeaway.** Memorize Business < 1 hr, Enterprise On-Ramp < 30 min, Enterprise < 15 min.
+**Q28. Answer: B**, **< 1 hour.** Business Support's production-down SLA. **Wrong:** A (15 min = Enterprise); C (30 min = Enterprise On-Ramp); D (4 hours is below Business standard). **Takeaway.** Memorize Business < 1 hr, Enterprise On-Ramp < 30 min, Enterprise < 15 min.
 
-**Q29. Answer: C** — **Enterprise (dedicated).** Only Enterprise tier has a *dedicated* TAM. **Wrong:** A (Developer has no TAM); B (Business has no TAM); D (Enterprise On-Ramp has *pool* of TAMs, not dedicated). **Takeaway.** Dedicated TAM = Enterprise. Pool of TAMs = Enterprise On-Ramp.
+**Q29. Answer: C**, **Enterprise (dedicated).** Only Enterprise tier has a *dedicated* TAM. **Wrong:** A (Developer has no TAM); B (Business has no TAM); D (Enterprise On-Ramp has *pool* of TAMs, not dedicated). **Takeaway.** Dedicated TAM = Enterprise. Pool of TAMs = Enterprise On-Ramp.
 
-**Q30. Answer: B** — **Compliance reports.** Artifact is the self-service portal for SOC 2 / ISO / PCI / FedRAMP reports. **Wrong:** A (CI/CD = CodePipeline); C (provision EC2 = console/CFN); D (DDoS = Shield). **Takeaway.** "Download compliance reports" → Artifact.
+**Q30. Answer: B**, **Compliance reports.** Artifact is the self-service portal for SOC 2 / ISO / PCI / FedRAMP reports. **Wrong:** A (CI/CD = CodePipeline); C (provision EC2 = console/CFN); D (DDoS = Shield). **Takeaway.** "Download compliance reports" → Artifact.
 
-**Q31. Answer: C** — **Elastic Beanstalk.** Beanstalk service itself is free; you pay for EC2/ELB/RDS it spins up. **Wrong:** A (EC2 charges hourly); B (RDS charges hourly); D (NAT Gateway is per-hour + per-GB). **Takeaway.** Free services include IAM, VPC (basic), CloudFormation, Beanstalk, Organizations — you only pay for the resources they create.
+**Q31. Answer: C** **Elastic Beanstalk.** Beanstalk service itself is free; you pay for EC2/ELB/RDS it spins up. **Wrong:** A (EC2 charges hourly); B (RDS charges hourly); D (NAT Gateway is per-hour + per-GB). **Takeaway.** Free services include IAM, VPC (basic), CloudFormation, Beanstalk, Organizations you only pay for the resources they create.
 
-**Q32. Answer: D** — **In free, out paid.** Data IN is generally free; data OUT to internet costs $. **Wrong:** A reverses it; B (not all transfer is the same); C (all-free is wrong). **Takeaway.** "Data IN free, data OUT $$$" — the #1 surprise on AWS bills.
+**Q32. Answer: D** **In free, out paid.** Data IN is generally free; data OUT to internet costs $. **Wrong:** A reverses it; B (not all transfer is the same); C (all-free is wrong). **Takeaway.** "Data IN free, data OUT $$$" the #1 surprise on AWS bills.
 
-**Q33. Answer: D** — **"Lifetime Free" doesn't exist.** The 3 categories are 12-Months Free, Always Free, Trials. **Wrong:** A, B, C are all valid categories. **Takeaway.** Memorize the 3 Free Tier categories.
+**Q33. Answer: D**, **"Lifetime Free" doesn't exist.** The 3 categories are 12-Months Free, Always Free, Trials. **Wrong:** A, B, C are all valid categories. **Takeaway.** Memorize the 3 Free Tier categories.
 
-**Q34. Answer: D** — **Compute Optimizer.** ML-based right-sizing for EC2 / EBS / Lambda. **Wrong:** A (Snow = physical migration); B (WAF = web firewall); C (Marketplace = software catalog). **Takeaway.** "ML right-sizing" → Compute Optimizer.
+**Q34. Answer: D**, **Compute Optimizer.** ML-based right-sizing for EC2 / EBS / Lambda. **Wrong:** A (Snow = physical migration); B (WAF = web firewall); C (Marketplace = software catalog). **Takeaway.** "ML right-sizing" → Compute Optimizer.
 
-**Q35. Answer: B** — **Alerts, not enforcement.** Budgets sends alerts; doesn't block spend. **Wrong:** A (Budgets cannot prevent spending — common misconception); C (Budgets don't auto-purchase SP); D (CloudWatch is unrelated). **Takeaway.** Budgets = alert; SCP = prevent.
+**Q35. Answer: B** **Alerts, not enforcement.** Budgets sends alerts; doesn't block spend. **Wrong:** A (Budgets cannot prevent spending common misconception); C (Budgets don't auto-purchase SP); D (CloudWatch is unrelated). **Takeaway.** Budgets = alert; SCP = prevent.
 
-**Q36. Answer: A** — **Cost Allocation Tags.** Tag resources, activate in Billing Console, see breakdown in Cost Explorer / CUR. **Wrong:** B (IAM Groups = permissions); C (VPCs = network); D (Security Groups = firewall). **Takeaway.** "Chargeback by team" → Cost Allocation Tags.
+**Q36. Answer: A**, **Cost Allocation Tags.** Tag resources, activate in Billing Console, see breakdown in Cost Explorer / CUR. **Wrong:** B (IAM Groups = permissions); C (VPCs = network); D (Security Groups = firewall). **Takeaway.** "Chargeback by team" → Cost Allocation Tags.
 
-**Q37. Answer: C** — **Migration is NOT a pillar.** The 6 pillars are Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability. **Wrong:** A, B, D are valid pillars. **Takeaway.** Memorize the 6 pillars. Sustainability was added in 2021.
+**Q37. Answer: C**, **Migration is NOT a pillar.** The 6 pillars are Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability. **Wrong:** A, B, D are valid pillars. **Takeaway.** Memorize the 6 pillars. Sustainability was added in 2021.
 
-**Q38. Answer: C** — **2021.** Sustainability pillar was added at re:Invent 2021. **Wrong:** A, B (too early); D (too late). **Takeaway.** Sustainability = 2021. Original 5 pillars = 2015.
+**Q38. Answer: C**, **2021.** Sustainability pillar was added at re:Invent 2021. **Wrong:** A, B (too early); D (too late). **Takeaway.** Sustainability = 2021. Original 5 pillars = 2015.
 
-**Q39. Answer: C** — **Rehost.** "Lift-and-shift" with no code changes = Rehost. **Wrong:** A (Refactor = rewrite); B (Replatform = lift + minor optimization); D (Retire = decommission). **Takeaway.** Memorize the 6 Rs trigger phrases.
+**Q39. Answer: C**, **Rehost.** "Lift-and-shift" with no code changes = Rehost. **Wrong:** A (Refactor = rewrite); B (Replatform = lift + minor optimization); D (Retire = decommission). **Takeaway.** Memorize the 6 Rs trigger phrases.
 
-**Q40. Answer: A** — **Repurchase.** Switching to a different SaaS product = Repurchase. **Wrong:** B (Replatform = same product, cloud-optimized); C (Refactor = rewrite for cloud-native); D (Retain = keep on-prem). **Takeaway.** "Switch products" → Repurchase.
+**Q40. Answer: A**, **Repurchase.** Switching to a different SaaS product = Repurchase. **Wrong:** B (Replatform = same product, cloud-optimized); C (Refactor = rewrite for cloud-native); D (Retain = keep on-prem). **Takeaway.** "Switch products" → Repurchase.
 
-**Q41. Answer: A** — **Lift-and-shift servers.** MGN (replaces older SMS / CloudEndure) is the modern server migration tool. **Wrong:** B (DBs = DMS); C (files = DataSync); D (AI training = SageMaker). **Takeaway.** MGN = server lift-and-shift. Modern, post-2021.
+**Q41. Answer: A**, **Lift-and-shift servers.** MGN (replaces older SMS / CloudEndure) is the modern server migration tool. **Wrong:** B (DBs = DMS); C (files = DataSync); D (AI training = SageMaker). **Takeaway.** MGN = server lift-and-shift. Modern, post-2021.
 
-**Q42. Answer: B** — **DataSync.** Bulk file transfer over internet / DX, with bandwidth control + scheduling. **Wrong:** A (MGN = servers); C (Storage Gateway = ongoing hybrid); D (Direct Connect alone provides the pipe but not the orchestration). **Takeaway.** "Bulk file transfer + scheduling" → DataSync.
+**Q42. Answer: B**, **DataSync.** Bulk file transfer over internet / DX, with bandwidth control + scheduling. **Wrong:** A (MGN = servers); C (Storage Gateway = ongoing hybrid); D (Direct Connect alone provides the pipe but not the orchestration). **Takeaway.** "Bulk file transfer + scheduling" → DataSync.
 
-**Q43. Answer: B** — **Free self-assessment.** Well-Architected Tool is free; walks you through the 6-pillar checklist. **Wrong:** A (not paid); C (not a migration tool); D (not DDoS). **Takeaway.** WA Framework = principles. WA Tool = free self-assessment service.
+**Q43. Answer: B**, **Free self-assessment.** Well-Architected Tool is free; walks you through the 6-pillar checklist. **Wrong:** A (not paid); C (not a migration tool); D (not DDoS). **Takeaway.** WA Framework = principles. WA Tool = free self-assessment service.
 
-**Q44. Answer: A** — **Select → Advanced → Premier.** APN tier order, lowest to highest. **Wrong:** B, C, D are made-up tier names. **Takeaway.** Memorize Select → Advanced → Premier.
+**Q44. Answer: A**, **Select → Advanced → Premier.** APN tier order, lowest to highest. **Wrong:** B, C, D are made-up tier names. **Takeaway.** Memorize Select → Advanced → Premier.
 
-**Q45. Answer: B** — **6 perspectives.** CAF perspectives: Business, People, Governance, Platform, Security, Operations. **Wrong:** A (4 is wrong), C, D (too many). **Takeaway.** CAF = 6 perspectives. Well-Architected = 6 pillars. Two different "sixes."
+**Q45. Answer: B**, **6 perspectives.** CAF perspectives: Business, People, Governance, Platform, Security, Operations. **Wrong:** A (4 is wrong), C, D (too many). **Takeaway.** CAF = 6 perspectives. Well-Architected = 6 pillars. Two different "sixes."
 
-**Q46. Answer: B** — **DB users + data.** On RDS (PaaS), AWS handles OS / engine / hardware; customer handles users, schema, and data access. **Wrong:** A (OS patching = AWS on RDS); C (HW = AWS); D (DC security = AWS). **Takeaway.** RDS boundary: AWS owns the engine; you own the data inside.
+**Q46. Answer: B**, **DB users + data.** On RDS (PaaS), AWS handles OS / engine / hardware; customer handles users, schema, and data access. **Wrong:** A (OS patching = AWS on RDS); C (HW = AWS); D (DC security = AWS). **Takeaway.** RDS boundary: AWS owns the engine; you own the data inside.
 
-**Q47. Answer: A** — **CloudWatch Alarm.** Watches a metric, fires on threshold, can SNS-notify or trigger Auto Scaling. **Wrong:** B (Config Rule evaluates config state); C (CloudTrail Event is API call log); D (Trusted Advisor is best-practice scoring). **Takeaway.** "Threshold + alert" → CloudWatch Alarm.
+**Q47. Answer: A**, **CloudWatch Alarm.** Watches a metric, fires on threshold, can SNS-notify or trigger Auto Scaling. **Wrong:** B (Config Rule evaluates config state); C (CloudTrail Event is API call log); D (Trusted Advisor is best-practice scoring). **Takeaway.** "Threshold + alert" → CloudWatch Alarm.
 
-**Q48. Answer: C** — **Wavelength.** AWS compute *inside* 5G carrier networks for ultra-low mobile latency. **Wrong:** A (Outposts = your DC); B (Local Zones = metros); D (GovCloud = isolated regions). **Takeaway.** "Inside 5G" → Wavelength.
+**Q48. Answer: C**, **Wavelength.** AWS compute *inside* 5G carrier networks for ultra-low mobile latency. **Wrong:** A (Outposts = your DC); B (Local Zones = metros); D (GovCloud = isolated regions). **Takeaway.** "Inside 5G" → Wavelength.
 
-**Q49. Answer: B** — **Non-transitive.** VPC Peering does not transit through intermediate VPCs. **Wrong:** A (would be transitive — wrong); C (no DX dependency); D (works in all regions). **Takeaway.** VPC Peering non-transitive → use Transit Gateway for hub topology.
+**Q49. Answer: B** **Non-transitive.** VPC Peering does not transit through intermediate VPCs. **Wrong:** A (would be transitive wrong); C (no DX dependency); D (works in all regions). **Takeaway.** VPC Peering non-transitive → use Transit Gateway for hub topology.
 
-**Q50. Answer: D** — **Security Hub.** Aggregates findings from GuardDuty / Inspector / Macie / partners + runs benchmarks. **Wrong:** A (Config tracks state); B (Trusted Advisor is best-practice); C (CloudWatch Logs is operational). **Takeaway.** "Single security dashboard" → Security Hub.
+**Q50. Answer: D**, **Security Hub.** Aggregates findings from GuardDuty / Inspector / Macie / partners + runs benchmarks. **Wrong:** A (Config tracks state); B (Trusted Advisor is best-practice); C (CloudWatch Logs is operational). **Takeaway.** "Single security dashboard" → Security Hub.
 
 ---
 
@@ -436,7 +436,7 @@ D. AWS Security Hub
 | Score | Verdict |
 |-------|---------|
 | 45–50 | 🏆 You're ready for the Final Mock! |
-| 40–44 | ✅ Good — review wrong answers, then Final Mock |
+| 40–44 | ✅ Good, review wrong answers, then Final Mock |
 | 35–39 | ⚠️ Pass-equivalent but tight; restudy weak modules |
 | 28–34 | 🔁 Significant gaps; restudy + retake in 4 days |
 | <28 | 🛑 Restart from Module 1 |

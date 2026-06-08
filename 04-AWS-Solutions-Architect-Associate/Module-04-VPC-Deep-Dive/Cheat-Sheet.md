@@ -136,10 +136,10 @@ Your own service across VPCs? → PrivateLink (NLB-backed)
 ## ✏️ Quick Self-Check
 
 1. What makes a subnet public? ___
-2. Gateway vs Interface endpoint — when each? ___
-3. SG vs NACL — main differences? ___
-4. Peering vs TGW — when each? ___
-5. DX vs VPN — when each? ___
+2. Gateway vs Interface endpoint, when each? ___
+3. SG vs NACL, main differences? ___
+4. Peering vs TGW, when each? ___
+5. DX vs VPN, when each? ___
 
 ---
 

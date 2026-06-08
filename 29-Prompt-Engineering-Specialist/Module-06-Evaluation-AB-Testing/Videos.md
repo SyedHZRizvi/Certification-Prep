@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">G-Eval — LLM-as-Judge with CoT (Liu 2023)</p>
+      <p class="vg-title">G-Eval, LLM-as-Judge with CoT (Liu 2023)</p>
       <p class="vg-creator">Yannic Kilcher</p>
       <span class="vg-duration">⏱ 22 min · Why CoT in evals matters</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Anthropic — Building Evals for Claude</p>
+      <p class="vg-title">Anthropic, Building Evals for Claude</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 18 min · The official harness</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RAGAS — RAG Evaluation Framework</p>
+      <p class="vg-title">RAGAS, RAG Evaluation Framework</p>
       <p class="vg-creator">LlamaIndex</p>
       <span class="vg-duration">⏱ 14 min · Faithfulness + relevance</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Promptfoo — Quick A/B Testing</p>
+      <p class="vg-title">Promptfoo, Quick A/B Testing</p>
       <p class="vg-creator">Promptfoo</p>
       <span class="vg-duration">⏱ 14 min · YAML-driven evals</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">OpenAI Evals — Full Walkthrough</p>
+      <p class="vg-title">OpenAI Evals, Full Walkthrough</p>
       <p class="vg-creator">OpenAI</p>
       <span class="vg-duration">⏱ 18 min · The open-source framework</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Braintrust — Hosted Eval Platform</p>
+      <p class="vg-title">Braintrust, Hosted Eval Platform</p>
       <p class="vg-creator">Braintrust</p>
       <span class="vg-duration">⏱ 18 min · Datasets + judges + dashboards</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">HELM — Holistic Evaluation of LMs</p>
+      <p class="vg-title">HELM, Holistic Evaluation of LMs</p>
       <p class="vg-creator">Stanford CRFM</p>
       <span class="vg-duration">⏱ 22 min · Academic benchmarking</span>
     </div>

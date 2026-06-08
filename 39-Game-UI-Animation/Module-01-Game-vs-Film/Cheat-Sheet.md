@@ -16,7 +16,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 
 ---
 
-## 🔄 Film vs. Game Animation — Core Comparison
+## 🔄 Film vs. Game Animation, Core Comparison
 
 | Factor | Film | Game |
 |--------|------|------|
@@ -33,18 +33,18 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 
 | Type | Use Case | Resets? |
 |------|----------|---------|
-| **Bool** | Persistent state (IsGrounded, IsAiming) | No — stays until code sets it |
+| **Bool** | Persistent state (IsGrounded, IsAiming) | No, stays until code sets it |
 | **Float** | Continuous values (Speed, Direction) | No |
 | **Integer** | Discrete values (WeaponIndex) | No |
-| **Trigger** | One-shot actions (Jump, Attack, Roll) | **Yes — consumed on transition** |
+| **Trigger** | One-shot actions (Jump, Attack, Roll) | **Yes, consumed on transition** |
 
 ---
 
 ## 🎮 Game Feel Framework (Swink)
 
-1. **Input** — Control scheme + dead zone + button buffer
-2. **Response** — Character reacts within the 16ms budget
-3. **Context** — Environment confirms the action (screen shake, VFX, sound)
+1. **Input**, Control scheme + dead zone + button buffer
+2. **Response**, Character reacts within the 16ms budget
+3. **Context**, Environment confirms the action (screen shake, VFX, sound)
 
 ---
 
@@ -53,7 +53,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 | Game | Hit Stop Duration | Notes |
 |------|------------------|-------|
 | Hades (Supergiant) | 4–8 frames | Exaggerated for top-down readability |
-| DOOM Eternal | 2–4 frames | Fast, violent — shorter for pace |
+| DOOM Eternal | 2–4 frames | Fast, violent, shorter for pace |
 | Street Fighter II | 10–16 frames | Origin of the technique (Capcom, 1991) |
 
 ---
@@ -90,8 +90,8 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 | Motion Matching | Database-driven pose selection by velocity (DOOM Eternal, FIFA) |
 | Hit Stop | Deliberate brief freeze of attacker + defender on impact |
 | Game Feel | Tactile, kinesthetic sensation of controlling a virtual object |
-| LOD | Level of Detail — simplified assets at distance |
-| IK | Inverse Kinematics — target-driven pose solving |
+| LOD | Level of Detail, simplified assets at distance |
+| IK | Inverse Kinematics, target-driven pose solving |
 
 ---
 
@@ -101,7 +101,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 |------|--------|---------------|----------------------|
 | Hades | Supergiant Games | Readability, exaggeration, hit stop 4–8f | 2-frame minimum enemy windup; Spine 2D |
 | DOOM Eternal | id Software | Momentum, motion matching, interruption | < 2ms animation budget at 60fps; minimal IK |
-| Hollow Knight | Team Cherry | Indie budget philosophy — ≤ 30 bones | 28-bone Knight; mesh deform for cloak |
+| Hollow Knight | Team Cherry | Indie budget philosophy, ≤ 30 bones | 28-bone Knight; mesh deform for cloak |
 | Dead Cells | Motion Twin | Low bone count for crisp silhouette | 15–25 bones per enemy; custom C runtime |
 | Valorant | Riot Games | Competitive fairness; silhouette clarity | 16ms input lag budget; hitbox/visual sync |
 | The Last of Us II | Naughty Dog | Seamless cinematic-to-gameplay transitions | Pose matching at transition; 0.1–0.25s blend |
@@ -124,7 +124,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 
 ---
 
-## 🎮 Game Feel — Quantified Parameters
+## 🎮 Game Feel, Quantified Parameters
 
 | Parameter | Typical Range | Too Low Effect | Too High Effect |
 |-----------|--------------|----------------|-----------------|
@@ -132,7 +132,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 | Transition blend time | 0.05–0.25s | Visible pop | Laggy, floaty |
 | Coyote time window | 0.1–0.15s | Misses ledge jumps | Feels like floating |
 | Enemy windup (Hades min) | 2 frames min | Feels cheap/unfair | Too easy to read |
-| Input-to-response latency (Valorant) | < 16ms | — | Competitive disadvantage |
+| Input-to-response latency (Valorant) | < 16ms |, | Competitive disadvantage |
 
 ---
 
@@ -144,7 +144,7 @@ title: "Module 1 Cheat Sheet: Game vs. Film Animation"
 | Input | Parameters trigger transitions | Velocity + direction drive pose selection |
 | Used in | Most games | DOOM Eternal, FIFA, Assassin's Creed |
 | Complexity | Manageable for small teams | Requires large motion capture database |
-| Foot sliding | Possible if clip speed ≠ move speed | Minimal — pose is velocity-matched |
+| Foot sliding | Possible if clip speed ≠ move speed | Minimal, pose is velocity-matched |
 
 > **Key exam fact:** Motion matching databases typically require 15–60 minutes of recorded motion capture per character type to provide sufficient pose coverage at all velocities and directions.
 

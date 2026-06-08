@@ -97,7 +97,7 @@ C. Verified deliverables
 D. Lessons learned
 
 ### 16. PM team identifies risk during execution not in the register. They should:
-A. Ignore — was't planned
+A. Ignore, was't planned
 B. Add to register, analyze, plan response
 C. Stop the project
 D. Escalate to sponsor immediately
@@ -244,7 +244,7 @@ D. Lost reputation
 A. Schedule weekly meeting
 B. Tailor communication and engagement to their level/preference
 C. Send daily updates
-D. Ignore — they're low priority
+D. Ignore, they're low priority
 
 ### 41. The Project Management Plan is:
 A. The Charter
@@ -329,8 +329,8 @@ D. Predictive only
 
 | Score | Verdict |
 |-------|---------|
-| 45-50 | 🏆 Excellent — book real exam |
-| 38-44 | ✅ Solid — Final Mock next |
+| 45-50 | 🏆 Excellent, book real exam |
+| 38-44 | ✅ Solid, Final Mock next |
 | 30-37 | ⚠️ Address gaps |
 | <30 | 🔁 Need 3-4 more weeks |
 

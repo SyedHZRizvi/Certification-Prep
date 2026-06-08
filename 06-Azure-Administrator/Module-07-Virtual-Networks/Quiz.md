@@ -23,8 +23,8 @@ D. VnetGatewaySubnet
 ---
 
 ### Q3. VNet peering is: *(Understand)*
-A. Transitive — A↔B and B↔C implies A↔C
-B. Non-transitive — to make A↔C work via B, you need a hub firewall/NVA + UDRs
+A. Transitive, A↔B and B↔C implies A↔C
+B. Non-transitive, to make A↔C work via B, you need a hub firewall/NVA + UDRs
 C. Always cross-region
 D. Limited to one peering per VNet
 
@@ -87,12 +87,12 @@ D. Virtual WAN
 ### Q10. Route-based VPN supports BGP and multiple tunnels; policy-based does not. To support modern hybrid connectivity, you should pick: *(Apply)*
 A. Policy-based, Basic SKU
 B. Route-based, VpnGw2 or higher
-C. Either — same features
+C. Either, same features
 D. ExpressRoute Local
 
 ---
 
-### Q11. Yes/No — VPN gateways. *(Evaluate)*
+### Q11. Yes/No, VPN gateways. *(Evaluate)*
 
 **S1:** A `Basic` VPN gateway supports BGP.
 **S2:** A `VpnGw1AZ` is zone-redundant.
@@ -113,7 +113,7 @@ D. Enable forwarded traffic on the peering
 
 ---
 
-### Q13. Yes/No — Peering settings. *(Evaluate)*
+### Q13. Yes/No, Peering settings. *(Evaluate)*
 
 **S1:** "Allow gateway transit" must be ON on the hub side to share its gateway with a spoke.
 **S2:** "Use remote gateways" should be ON on the spoke side to use the hub's gateway.
@@ -142,7 +142,7 @@ D. /29
 
 ---
 
-### Q16. Yes/No — Private DNS. *(Evaluate)*
+### Q16. Yes/No, Private DNS. *(Evaluate)*
 
 **S1:** A Private DNS Zone is linked to one or more VNets.
 **S2:** Auto-registration in a Private DNS Zone lets VMs in linked VNets self-register their DNS records.
@@ -195,7 +195,7 @@ D. Overlap is automatically rewritten
 
 ---
 
-### Q22. To allow an Azure SQL Database to be reachable from only one subnet (and route via the Microsoft backbone) — with the SQL still having a public IP — use: *(Apply)*
+### Q22. To allow an Azure SQL Database to be reachable from only one subnet (and route via the Microsoft backbone) with the SQL still having a public IP use: *(Apply)*
 A. Private endpoint
 B. Service endpoint
 C. NSG only
@@ -233,7 +233,7 @@ D. Private DNS Zones can be linked to only one VNet
 
 ---
 
-### Q26. Yes/No — Subnet basics. *(Understand)*
+### Q26. Yes/No, Subnet basics. *(Understand)*
 
 **S1:** A subnet must be entirely within the VNet's address space.
 **S2:** You can resize an existing subnet if no NICs are attached.
@@ -281,7 +281,7 @@ Build DNS zone → link to VNet → create PE → wire up DNS zone group for aut
 ExpressRoute = private. Never traverses the public internet.
 
 ### Q9: **B. ExpressRoute Premium with Global Reach**
-Global Reach connects two ER circuits through MS backbone — site-to-site via Microsoft.
+Global Reach connects two ER circuits through MS backbone, site-to-site via Microsoft.
 
 ### Q10: **B. Route-based, VpnGw2 or higher**
 Always pick route-based for modern hybrid; pick a SKU that meets your BW + zone-redundancy needs.
@@ -332,7 +332,7 @@ P2S = per-device. S2S = whole site.
 False. A Private DNS Zone can be linked to many VNets (across regions/subscriptions).
 
 ### Q26: **A. Yes / Yes / Yes**
-All true. Resize is constrained — easier to plan ahead.
+All true. Resize is constrained, easier to plan ahead.
 
 ### Q27: **B. Must be named `AzureBastionSubnet` and be at least `/26`**
 Same case-sensitive naming pattern as other reserved subnets.

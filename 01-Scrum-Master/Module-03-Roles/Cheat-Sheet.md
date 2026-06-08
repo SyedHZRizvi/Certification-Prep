@@ -4,7 +4,7 @@
 
 ## 🎭 The 3 Accountabilities
 
-### 👤 Product Owner — "What & Why"
+### 👤 Product Owner, "What & Why"
 - ✅ Maximizes value
 - ✅ Manages Product Backlog
 - ✅ Develops Product Goal
@@ -12,19 +12,19 @@
 - ❌ Doesn't tell devs HOW
 - ❌ Doesn't estimate
 
-### 🛡️ Scrum Master — "How It's Working"
+### 🛡️ Scrum Master, "How It's Working"
 Serves THREE groups:
 
-1. **Scrum Team** — coaches, removes impediments
-2. **Product Owner** — backlog techniques
-3. **Organization** — Scrum adoption
+1. **Scrum Team**, coaches, removes impediments
+2. **Product Owner**, backlog techniques
+3. **Organization**, Scrum adoption
 
 - ❌ NOT a manager
 - ❌ NOT a project manager
 - ❌ NO authority to assign work
 - ✅ Servant leader / true leader who serves
 
-### 🛠️ Developers — "How"
+### 🛠️ Developers, "How"
 - ✅ Anyone doing the work (coders, testers, designers, etc.)
 - ✅ Create Sprint plan
 - ✅ Estimate work

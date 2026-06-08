@@ -1,11 +1,11 @@
 # Module 6: Endpoint Security & Defender for Endpoint 🛡️
 
-> **Why this module matters:** Endpoint security is the largest single MD-102 sub-domain by weight. Modern attacks land on the endpoint first (phishing, malicious docs, browser exploits, supply-chain compromise) and Microsoft Defender for Endpoint is your front-line. Get MDE Plan 1 vs Plan 2, ASR rules, BitLocker, EDR, and security baselines internalized — they'll touch 8–12 questions.
+> **Why this module matters:** Endpoint security is the largest single MD-102 sub-domain by weight. Modern attacks land on the endpoint first (phishing, malicious docs, browser exploits, supply-chain compromise) and Microsoft Defender for Endpoint is your front-line. Get MDE Plan 1 vs Plan 2, ASR rules, BitLocker, EDR, and security baselines internalized, they'll touch 8–12 questions.
 
 > **Prerequisites for this module.** Before starting:
-> - Module 3 (Intune Fundamentals) — settings catalog and group targeting.
-> - Module 4 (Compliance) — compliance + CA flow that consumes Defender signals.
-> - Basic Windows security primitives — what Antivirus, EDR, and firewalls do at a conceptual level.
+> - Module 3 (Intune Fundamentals), settings catalog and group targeting.
+> - Module 4 (Compliance), compliance + CA flow that consumes Defender signals.
+> - Basic Windows security primitives, what Antivirus, EDR, and firewalls do at a conceptual level.
 
 ---
 
@@ -13,7 +13,7 @@
 
 Maria's pager goes off at 3:14am Wednesday. The alert:
 
-> *"DEFENDER ALERT: HIGH — Suspicious PowerShell behavior on `NWP-FIN-024`. Process tree: outlook.exe → winword.exe → powershell.exe → encoded download. Containment: device isolated. Investigation: in progress."*
+> *"DEFENDER ALERT: HIGH, Suspicious PowerShell behavior on `NWP-FIN-024`. Process tree: outlook.exe → winword.exe → powershell.exe → encoded download. Containment: device isolated. Investigation: in progress."*
 
 A finance employee in Princeton opened a Word doc attached to a phishing email. The macro tried to launch PowerShell to download a stage-two payload. Microsoft Defender for Endpoint:
 
@@ -30,7 +30,7 @@ This module is everything that made the above sequence work in 8 seconds, not 8 
 
 ---
 
-## 🛡️ Microsoft Defender for Endpoint — Plan 1 vs Plan 2 (MEMORIZE THIS)
+## 🛡️ Microsoft Defender for Endpoint, Plan 1 vs Plan 2 (MEMORIZE THIS)
 
 Microsoft Defender for Endpoint (MDE) is Microsoft's flagship endpoint security platform. Two plans:
 
@@ -89,7 +89,7 @@ ASR rules are pre-defined Defender behaviors that block specific malicious patte
 | Mode | Effect |
 |------|--------|
 | **Audit** | Logs but allows (use to test) |
-| **Block** | Enforces — blocks the behavior |
+| **Block** | Enforces, blocks the behavior |
 | **Warn** | Prompts the user; user can bypass once |
 
 ### The most-tested ASR rules
@@ -129,7 +129,7 @@ ASR rules are pre-defined Defender behaviors that block specific malicious patte
 
 ---
 
-## 🔐 BitLocker — Full-Disk Encryption
+## 🔐 BitLocker, Full-Disk Encryption
 
 BitLocker encrypts the entire OS drive (and optionally data drives) using TPM-backed keys.
 
@@ -183,11 +183,11 @@ A special configuration where MDE blocks malicious artifacts **even when a third
 
 Microsoft Defender for Cloud Apps is Microsoft's CASB (Cloud Access Security Broker). It:
 
-- **Discovers shadow IT** — what cloud apps are users accessing?
-- **Controls SaaS apps** — sanction / un-sanction, conditional access policies for cloud apps
-- **Detects threats in SaaS** — anomaly detection across Microsoft 365 + 3rd party
-- **Integrates with MDE** — Defender for Endpoint discovers cloud apps via network protection telemetry
-- **Information protection** — DLP across SaaS apps
+- **Discovers shadow IT**, what cloud apps are users accessing?
+- **Controls SaaS apps**, sanction / un-sanction, conditional access policies for cloud apps
+- **Detects threats in SaaS**, anomaly detection across Microsoft 365 + 3rd party
+- **Integrates with MDE**, Defender for Endpoint discovers cloud apps via network protection telemetry
+- **Information protection**, DLP across SaaS apps
 
 🎯 **Exam tip:** "Discover shadow IT" or "control unsanctioned SaaS" = Defender for Cloud Apps.
 
@@ -241,7 +241,7 @@ Windows LAPS (replaces the older Active Directory LAPS) rotates the local admin 
 
 | Feature | What |
 |---------|------|
-| **Windows Defender Application Control (WDAC)** | Code integrity policy — only signed apps allowed |
+| **Windows Defender Application Control (WDAC)** | Code integrity policy, only signed apps allowed |
 | **Smart App Control** | Cloud-driven AppLocker successor for Windows 11 |
 | **AppLocker** | Legacy GPO-based app whitelisting |
 
@@ -269,7 +269,7 @@ Windows LAPS (replaces the older Active Directory LAPS) rotates the local admin 
 
 The correct sequence:
 
-1. ✅ **Pick the rules** — start with "Block Office child process" + "Block credential stealing from LSASS"
+1. ✅ **Pick the rules**, start with "Block Office child process" + "Block credential stealing from LSASS"
 2. ✅ **Configure in Audit mode** via Endpoint security blade
 3. ✅ **Deploy to a pilot group** (10–50 devices)
 4. ✅ **Monitor Advanced Hunting for false positives** for 7–14 days
@@ -289,26 +289,26 @@ The correct sequence:
 |------|------------|
 | **Microsoft Defender for Endpoint (MDE)** | Microsoft's flagship endpoint security platform |
 | **Plan 1 vs Plan 2** | Prevention/protection vs prevention + detection + response |
-| **EDR** | Endpoint Detection and Response — Plan 2 capability |
+| **EDR** | Endpoint Detection and Response, Plan 2 capability |
 | **EDR in block mode** | Defender enforces even when 3rd-party AV is primary |
-| **NGAV** | Next-Gen Antivirus — Defender Antivirus with cloud + behavior |
+| **NGAV** | Next-Gen Antivirus, Defender Antivirus with cloud + behavior |
 | **Tamper protection** | Prevents disabling Defender via admin or malware |
 | **ASR rule** | Pre-defined Defender rule blocking specific behaviors |
 | **Audit / Block / Warn** | The three ASR modes |
-| **BAFS** | Block at First Sight — submit unknown files to cloud sandbox |
-| **CFA** | Controlled Folder Access — anti-ransomware folder protection |
+| **BAFS** | Block at First Sight, submit unknown files to cloud sandbox |
+| **CFA** | Controlled Folder Access, anti-ransomware folder protection |
 | **SmartScreen** | URL + file reputation engine for Edge + shell |
 | **Network protection** | OS-level malicious URL blocking |
 | **Web content filtering** | Category-based web filtering (Plan 2) |
 | **BitLocker** | Full-disk encryption using TPM-backed keys |
 | **Silent BitLocker enablement** | Intune-driven encryption without user prompts |
-| **Windows LAPS** | Local Administrator Password Solution — rotates + escrows local admin password |
-| **WDAC** | Windows Defender Application Control — code integrity policy |
+| **Windows LAPS** | Local Administrator Password Solution, rotates + escrows local admin password |
+| **WDAC** | Windows Defender Application Control, code integrity policy |
 | **Smart App Control** | Cloud-driven app control for Windows 11 |
 | **Security baseline** | Microsoft-published pre-configured security settings |
-| **Microsoft Defender for Cloud Apps** | CASB — discovers/controls SaaS apps |
-| **TVM** | Threat & Vulnerability Management — Plan 2 vuln scanning |
-| **AIR** | Automated Investigation & Response — Plan 2 auto-triage |
+| **Microsoft Defender for Cloud Apps** | CASB, discovers/controls SaaS apps |
+| **TVM** | Threat & Vulnerability Management, Plan 2 vuln scanning |
+| **AIR** | Automated Investigation & Response, Plan 2 auto-triage |
 | **Advanced Hunting** | KQL query interface for endpoint telemetry (Plan 2) |
 
 ---
@@ -317,12 +317,12 @@ The correct sequence:
 
 You now know:
 
-- 🛡️ MDE Plan 1 vs Plan 2 — what features each unlocks (memorize this)
+- 🛡️ MDE Plan 1 vs Plan 2, what features each unlocks (memorize this)
 - 🦠 Defender Antivirus capabilities (NGAV, BAFS, CFA, tamper protection)
 - 🛑 The most-tested ASR rules and the Audit → Block rollout pattern
 - 🌐 SmartScreen, Network protection, and Web content filtering
 - 🔐 BitLocker silent enablement + recovery key escrow to Entra ID
-- 🔍 EDR capabilities — process trees, isolation, live response, AIR, Advanced Hunting
+- 🔍 EDR capabilities, process trees, isolation, live response, AIR, Advanced Hunting
 - 🌍 Microsoft Defender for Cloud Apps as the CASB for SaaS
 - 🔒 Windows Firewall via Intune
 - 📜 Security baselines as Microsoft's recommended configurations
@@ -338,11 +338,11 @@ You now know:
 
 ---
 
-## 📊 Case Study — Norsk Hydro's LockerGoga Attack Recovery (2019–2024)
+## 📊 Case Study, Norsk Hydro's LockerGoga Attack Recovery (2019–2024)
 
-**Situation.** On March 19, 2019, Norwegian aluminum producer Norsk Hydro (~35,000 employees globally) was hit by **LockerGoga ransomware** — a then-novel variant that encrypted 22,000 endpoints across 170 sites in 40 countries in a matter of hours. Norsk Hydro made the unusual public decision to refuse paying ransom and instead transparently rebuilt its IT estate. The attack cost an estimated $70M+ in downtime, customer compensation, and recovery labor. Hydro publicly documented the event in a 2019 transparency report (Norsk Hydro, *Cyber Attack Response 2019*, plus Microsoft case study, 2021).
+**Situation.** On March 19, 2019, Norwegian aluminum producer Norsk Hydro (~35,000 employees globally) was hit by **LockerGoga ransomware**, a then-novel variant that encrypted 22,000 endpoints across 170 sites in 40 countries in a matter of hours. Norsk Hydro made the unusual public decision to refuse paying ransom and instead transparently rebuilt its IT estate. The attack cost an estimated $70M+ in downtime, customer compensation, and recovery labor. Hydro publicly documented the event in a 2019 transparency report (Norsk Hydro, *Cyber Attack Response 2019*, plus Microsoft case study, 2021).
 
-**Decision.** Post-recovery, Norsk Hydro standardized on a Microsoft Defender for Endpoint-centric architecture (Microsoft case study, *Norsk Hydro — Strengthening security post-LockerGoga*, 2021, updated 2024):
+**Decision.** Post-recovery, Norsk Hydro standardized on a Microsoft Defender for Endpoint-centric architecture (Microsoft case study, *Norsk Hydro, Strengthening security post-LockerGoga*, 2021, updated 2024):
 
 1. **Defender for Endpoint Plan 2 on every Windows endpoint** + Windows Server (via Defender for Servers).
 2. **EDR in block mode** as a defense-in-depth layer.
@@ -374,14 +374,14 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 7 covers Windows Update for Business, which keeps the OS patched so security baselines hold. Module 8 covers monitoring + reporting, including how Defender signals flow into compliance + CA.
-> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/README.md) covers endpoint security at the SY0-701 depth — useful for cross-vendor context. [`06-Azure-Administrator` Module 8](../../06-Azure-Administrator/Module-08-Network-Security/Reading.md) covers network security primitives.
+> - Cross-course: [`09-CompTIA-Security-Plus`](../../09-CompTIA-Security-Plus/README.md) covers endpoint security at the SY0-701 depth, useful for cross-vendor context. [`06-Azure-Administrator` Module 8](../../06-Azure-Administrator/Module-08-Network-Security/Reading.md) covers network security primitives.
 > - Practice: Practice Exam 2 has roughly 8–10 questions from this module (MDE plans, ASR rules, BitLocker, EDR, security baselines). Final Mock Exam revisits with incident-response scenarios.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **MDE Plan 1 vs Plan 2 for a regulated bank.** A bank's CIO argues Plan 1 is enough — "we have a separate EDR vendor." Defend the Plan 2 case by naming the integration advantages Plan 2 provides over a third-party EDR (hint: think about Conditional Access, Intune compliance signal, and Microsoft Sentinel ingestion).
+1. **MDE Plan 1 vs Plan 2 for a regulated bank.** A bank's CIO argues Plan 1 is enough, "we have a separate EDR vendor." Defend the Plan 2 case by naming the integration advantages Plan 2 provides over a third-party EDR (hint: think about Conditional Access, Intune compliance signal, and Microsoft Sentinel ingestion).
 2. **ASR rule rollout cadence.** Microsoft recommends Audit → Block per rule. A CISO under regulatory pressure wants Block on Day 1. Defend the Audit step by naming a real-world failure mode that would have caused outages.
 3. **Silent BitLocker for executives.** Executives often demand no friction. Silent BitLocker means no user prompts but admin-only key escrow. Defend the executive-applicable scenario where silent BitLocker is the right answer over user-prompted BitLocker.
 4. **EDR in block mode with third-party AV.** When is EDR in block mode the right answer vs replacing the third-party AV entirely? Defend with reference to migration risk, vendor lock-in, and SOC tooling cost.
@@ -397,5 +397,5 @@ You now know:
 - 📖 [Microsoft Defender for Cloud Apps overview](https://learn.microsoft.com/defender-cloud-apps/)
 - 📖 [Windows LAPS documentation](https://learn.microsoft.com/windows-server/identity/laps/laps-overview)
 - 📖 [Security baselines in Microsoft Intune](https://learn.microsoft.com/mem/intune/protect/security-baselines)
-- 📖 Norsk Hydro, *Cyber Attack Response 2019* — the canonical public-disclosure case study
-- 📖 Microsoft *Anatomy of a Cyberattack* whitepaper series (latest edition) — attack chain references
+- 📖 Norsk Hydro, *Cyber Attack Response 2019*, the canonical public-disclosure case study
+- 📖 Microsoft *Anatomy of a Cyberattack* whitepaper series (latest edition), attack chain references

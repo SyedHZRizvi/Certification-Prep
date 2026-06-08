@@ -171,8 +171,8 @@ Modern **3-2-1-1-0**:
 
 Cover the answers and recite:
 
-1. RTO vs RPO — one-liner each? ___
-2. Which restore is faster — incremental or differential? ___
+1. RTO vs RPO, one-liner each? ___
+2. Which restore is faster, incremental or differential? ___
 3. State the 3-2-1 rule. ___
 4. Hot vs warm site recovery window? ___
 5. Why sync replication is metro-only? ___

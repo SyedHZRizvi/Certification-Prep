@@ -1,6 +1,6 @@
 # ✏️ Module 8 Quiz: Well-Architected & Migration
 
-> **Instructions:** 24 questions. Aim for 20/24 minimum. Final module — bring it home!
+> **Instructions:** 24 questions. Aim for 20/24 minimum. Final module, bring it home!
 
 ---
 
@@ -30,7 +30,7 @@ D. 2024
 
 ---
 
-### Q4. A company is moving a VM-based app to AWS with no code changes — just running it on EC2. This is: *(Apply)*
+### Q4. A company is moving a VM-based app to AWS with no code changes, just running it on EC2. This is: *(Apply)*
 A. Refactor
 B. Rehost (lift-and-shift)
 C. Repurchase
@@ -54,7 +54,7 @@ D. Refactor
 
 ---
 
-### Q7. A company decides to keep an app on-prem for now due to compliance — they may revisit later. This is: *(Apply)*
+### Q7. A company decides to keep an app on-prem for now due to compliance, they may revisit later. This is: *(Apply)*
 A. Retire
 B. Retain
 C. Rehost
@@ -204,10 +204,10 @@ D. SAP on AWS Specialty
 Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, Sustainability.
 
 ### Q2: **C. Migration**
-Migration is not a pillar — it's a separate workstream. Sustainability is the newest pillar (added 2021).
+Migration is not a pillar, it's a separate workstream. Sustainability is the newest pillar (added 2021).
 
 ### Q3: **C. 2021**
-AWS added Sustainability at re:Invent 2021. Don't pick "5 pillars" — that's outdated.
+AWS added Sustainability at re:Invent 2021. Don't pick "5 pillars", that's outdated.
 
 ### Q4: **B. Rehost (lift-and-shift)**
 Move VM to EC2 with no code changes. Lowest effort, fastest.
@@ -243,7 +243,7 @@ The free console-based self-assessment tool. Trusted Advisor checks best practic
 The 3 APN partner tiers, lowest to highest.
 
 ### Q15: **B. A service where AWS OPERATES your AWS account for you**
-AMS (Managed Services) is a paid offering where AWS handles operations on your behalf — for large enterprises.
+AMS (Managed Services) is a paid offering where AWS handles operations on your behalf, for large enterprises.
 
 ### Q16: **A. Operational Excellence**
 "Make frequent, small, reversible changes" is the canonical Op Ex principle. Anticipate failure, learn from events.

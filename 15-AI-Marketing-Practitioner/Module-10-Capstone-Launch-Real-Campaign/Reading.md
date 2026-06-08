@@ -1,10 +1,10 @@
-# Module 10: Capstone — Launch a Real Campaign 🚀
+# Module 10: Capstone, Launch a Real Campaign 🚀
 
 > **Why this module matters:** Everything you've learned so far is theory unless you run a campaign in the real world with real money. This capstone takes you from theory to running ads, measuring results, and writing a post-mortem that becomes a portfolio piece.
 
 ---
 
-## 🎯 The Capstone Project — What You're Doing
+## 🎯 The Capstone Project, What You're Doing
 
 You're going to launch a **real, live ad campaign** with **$200 of your own money** (or a friend's brand's money, with permission). You'll:
 
@@ -15,16 +15,16 @@ You're going to launch a **real, live ad campaign** with **$200 of your own mone
 5. Launch on Google Search ($100) + Meta Reels ($100)
 6. Run for 14-21 days with daily optimization (15 min/day)
 7. Write a post-mortem document analyzing what worked, what failed
-8. Publish a "Lessons Learned" blog post — your portfolio piece
+8. Publish a "Lessons Learned" blog post, your portfolio piece
 
-This module IS the assignment brief, the grading rubric, and the post-mortem template — all in one.
+This module IS the assignment brief, the grading rubric, and the post-mortem template, all in one.
 
 > **Prerequisites for this module.** Before starting, you should have:
 > - Completed Modules 1-9 of this course AND passed Practice Exam 1 and 2
 > - A working creative brief from [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md) (you'll reuse it)
-> - Functioning Google Ads, Meta Business Manager, and GA4 accounts — from [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md), [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md), and [Module 9](../Module-09-Marketing-Automation-AI/Reading.md)
+> - Functioning Google Ads, Meta Business Manager, and GA4 accounts, from [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md), [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md), and [Module 9](../Module-09-Marketing-Automation-AI/Reading.md)
 > - $200 of budget you can spend (yours or a friend's brand's, with written permission)
-> If any of these are shaky, pause and complete that prerequisite first — this capstone is real-money.
+> If any of these are shaky, pause and complete that prerequisite first, this capstone is real-money.
 
 ---
 
@@ -117,7 +117,7 @@ Replace the example details with YOUR project. Write this on Day 1.
 ═══════════════════════════════════════════════════════════════
 
 PROJECT NAME:  [Your campaign name]
-DATES:         [Day 8 — Day 19, e.g., "May 30 – June 10, 2026"]
+DATES:         [Day 8, Day 19, e.g., "May 30 – June 10, 2026"]
 BUDGET:        $200 ($100 Google Search + $100 Meta Reels)
 
 ═══════════════════════════════════════════════════════════════
@@ -154,9 +154,9 @@ Why They Don't:     [The barrier]
                     KPIs
 ═══════════════════════════════════════════════════════════════
 
-Primary KPI:     [ONE metric — e.g., "25 PDF downloads at CPA <= $8"]
-Secondary KPI:   [Health metric — e.g., "CTR > 3%"]
-Guardrail KPI:   [Pause trigger — e.g., "Pause channel if CPA > $15 for 2 days"]
+Primary KPI:     [ONE metric, e.g., "25 PDF downloads at CPA <= $8"]
+Secondary KPI:   [Health metric, e.g., "CTR > 3%"]
+Guardrail KPI:   [Pause trigger, e.g., "Pause channel if CPA > $15 for 2 days"]
 
 ═══════════════════════════════════════════════════════════════
                     CHANNELS + BUDGET
@@ -195,9 +195,9 @@ Score yourself out of 100 across these dimensions:
 | **TOTAL** | 100 | |
 
 **Grading scale:**
-- 90-100: Excellent — submit this as a portfolio piece
-- 80-89: Strong — fix 1-2 weak areas before showing off
-- 70-79: Passable — would do better next time
+- 90-100: Excellent, submit this as a portfolio piece
+- 80-89: Strong, fix 1-2 weak areas before showing off
+- 70-79: Passable, would do better next time
 - < 70: Re-do specific weak modules and try again
 
 ---
@@ -208,7 +208,7 @@ You will repeat this daily during launch weeks. Print it.
 
 ```
 ═══════════════════════════════════════════════════════════════
-                      DAILY OPS — 15 MIN
+                      DAILY OPS, 15 MIN
 ═══════════════════════════════════════════════════════════════
 
 GOOGLE ADS (5 min):
@@ -238,7 +238,7 @@ Day 9 (June 1):
 - Conv: 1 PDF download
 - CPA: $14.20 (above target $8)
 - Note: Google Search winning so far. Meta CPM at $18, normal.
-- Action: Don't touch yet — too early.
+- Action: Don't touch yet, too early.
 
 Day 10 (June 2):
 - Spend: $13.85
@@ -321,11 +321,11 @@ This is your portfolio piece. Write it for a marketing manager who might hire yo
 
 These are real practitioners who shared their own first-campaign learnings publicly. Look at the depth and honesty:
 
-- **Demand Curve's "I spent $1,000 on ads" series**: [demandcurve.com/case-studies](https://www.demandcurve.com/) — short-form case studies with numbers
-- **DTC Newsletter — Founder spend reports**: candid breakdowns from real DTC founders
-- **Reforge — Growth case studies**: longer-form analysis (paid newsletter, free articles available)
+- **Demand Curve's "I spent $1,000 on ads" series**: [demandcurve.com/case-studies](https://www.demandcurve.com/), short-form case studies with numbers
+- **DTC Newsletter, Founder spend reports**: candid breakdowns from real DTC founders
+- **Reforge, Growth case studies**: longer-form analysis (paid newsletter, free articles available)
 
-These are the bar. Your capstone doesn't need to match their scale — but it should match their honesty.
+These are the bar. Your capstone doesn't need to match their scale, but it should match their honesty.
 
 ---
 
@@ -373,7 +373,7 @@ These are the bar. Your capstone doesn't need to match their scale — but it sh
 
 Once you've completed the capstone, you're ready for:
 
-1. **Take a real certification exam**: pick from the list (Google Ads Search is the easiest first win — free, 80% pass mark)
+1. **Take a real certification exam**: pick from the list (Google Ads Search is the easiest first win, free, 80% pass mark)
 2. **Take on a freelance client**: even $500 for a "first campaign" project is achievable post-capstone
 3. **Apply for a paid media role**: your capstone + cert is a strong portfolio
 4. **Move to Course 3 in the ladder**: AI Digital Marketing Strategist (when available)
@@ -383,7 +383,7 @@ Once you've completed the capstone, you're ready for:
 
 ## 🎓 Key Terms To Know
 
-This module doesn't introduce new terms — it integrates everything from Modules 1-9.
+This module doesn't introduce new terms, it integrates everything from Modules 1-9.
 
 If you can't define any of these without checking, return to the relevant module:
 
@@ -412,20 +412,20 @@ You now:
 **Now what?**
 1. ✏️ Take `Quiz.md` (capstone process check)
 2. 📋 Review `Cheat-Sheet.md` (daily ops printout)
-3. 🚀 **START THE CAPSTONE** — pick your brand TODAY
+3. 🚀 **START THE CAPSTONE**, pick your brand TODAY
 4. ➡️ Take the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) once you've completed the capstone
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
-Reflect honestly. There's no single right answer — what matters is the discipline of arguing your decision from data.
+Reflect honestly. There's no single right answer, what matters is the discipline of arguing your decision from data.
 
-1. You finish 21 days with only 5 conversions and wide error bars on CAC. A friend says "you can't write a useful report off 5 conversions — wait until you've spent more." Argue both why the report IS useful now (process honesty, hypothesis test, lesson catalog) AND when it really isn't enough (zero learnings to generalize). What does honest analysis at small N look like?
+1. You finish 21 days with only 5 conversions and wide error bars on CAC. A friend says "you can't write a useful report off 5 conversions, wait until you've spent more." Argue both why the report IS useful now (process honesty, hypothesis test, lesson catalog) AND when it really isn't enough (zero learnings to generalize). What does honest analysis at small N look like?
 2. The capstone splits $100 to Google Search and $100 to Meta Reels. A capstone student insists they should put all $200 on Meta because "it's where their audience is." Walk through when the diversified split is right (de-risking, cross-channel learning) and when concentrating is right (CAC efficiency, hypothesis sharpness). Defend a position.
-3. The reading prescribes "daily CHECK only" for the first 5 days (don't edit — learning phase). A growth marketer says this rule comes from Meta's playbook and is wrong for Google Search, which doesn't have the same learning phase. Reconcile — what's the underlying principle, and which platform's rule applies?
-4. Your blog post / portfolio piece will be read by future employers. You want to look competent, but the data says you missed your CPA target by 40%. Build the strongest case for both (a) leading with the miss and your hypothesis-test framing, and (b) leading with what worked and burying the miss in section 4. Which would impress a hiring manager — and which would impress YOU as the writer?
-5. The reading argues the single best reason to do the capstone is "you can't truly learn marketing without running real campaigns with real money." A theoretical student counters that you can learn just as much from case studies + simulations and avoid the $200 cost. Defend the harder position — that real money creates skin-in-the-game learning no case study can — and steelman the opposite.
+3. The reading prescribes "daily CHECK only" for the first 5 days (don't edit learning phase). A growth marketer says this rule comes from Meta's playbook and is wrong for Google Search, which doesn't have the same learning phase. Reconcile what's the underlying principle, and which platform's rule applies?
+4. Your blog post / portfolio piece will be read by future employers. You want to look competent, but the data says you missed your CPA target by 40%. Build the strongest case for both (a) leading with the miss and your hypothesis-test framing, and (b) leading with what worked and burying the miss in section 4. Which would impress a hiring manager, and which would impress YOU as the writer?
+5. The reading argues the single best reason to do the capstone is "you can't truly learn marketing without running real campaigns with real money." A theoretical student counters that you can learn just as much from case studies + simulations and avoid the $200 cost. Defend the harder position that real money creates skin-in-the-game learning no case study can and steelman the opposite.
 
 ---
 
@@ -438,13 +438,13 @@ Reflect honestly. There's no single right answer — what matters is the discipl
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Demand Curve — Spend reports](https://www.demandcurve.com/) — real case studies in the style you should write yours
-- 📖 [Reforge — Growth Case Study Library](https://www.reforge.com/) — long-form analysis examples
-- 📖 [DTC Newsletter](https://dtcnews.com/) — founder case study reports
-- 📖 [Growth Marketing Pro — first campaign templates](https://www.growthmarketingpro.com/)
-- 📖 [Your local SCORE chapter](https://www.score.org/) — free mentorship for SMB campaigns
-- 📖 [Google Skillshop — Take all 4 Google Ads certs for FREE](https://skillshop.exceedlms.com/)
-- 📖 [Meta Blueprint — Media Buying Pro exam](https://www.facebook.com/business/learn/certification) — $150, after capstone you're ready
+- 📖 [Demand Curve Spend reports](https://www.demandcurve.com/) real case studies in the style you should write yours
+- 📖 [Reforge Growth Case Study Library](https://www.reforge.com/) long-form analysis examples
+- 📖 [DTC Newsletter](https://dtcnews.com/), founder case study reports
+- 📖 [Growth Marketing Pro, first campaign templates](https://www.growthmarketingpro.com/)
+- 📖 [Your local SCORE chapter](https://www.score.org/), free mentorship for SMB campaigns
+- 📖 [Google Skillshop, Take all 4 Google Ads certs for FREE](https://skillshop.exceedlms.com/)
+- 📖 [Meta Blueprint Media Buying Pro exam](https://www.facebook.com/business/learn/certification) $150, after capstone you're ready
 
 ---
 

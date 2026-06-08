@@ -32,7 +32,7 @@ D. A title sequence naming all the films you worked on
 
 ### Q3.
 
-Why is a reel that shows only the finished composite — with no before/after breakdown — insufficient?
+Why is a reel that shows only the finished composite with no before/after breakdown insufficient?
 
 A. The finished composite is sufficient; breakdown format is optional
 B. Studios already have the finished film; they want to see the plate, individual elements, and your decision-making process
@@ -111,8 +111,8 @@ D. As many shots as possible to maximize portfolio coverage
 
 A reel that shows excellent keying work but nothing else (no tracking, no 3D integration, no cleanup, no FX) will be perceived as:
 
-A. Excellent — specializing in one skill is preferable
-B. Incomplete — it suggests the artist can only key, not composite the full range of a shot's needs
+A. Excellent, specializing in one skill is preferable
+B. Incomplete, it suggests the artist can only key, not composite the full range of a shot's needs
 C. Appropriate for entry-level positions only
 D. The industry standard for compositor reels
 
@@ -123,7 +123,7 @@ D. The industry standard for compositor reels
 Which on a team shot should be clearly labeled in a reel?
 
 A. The names of all other team members who worked on the shot
-B. Specifically what you did on the shot — what elements you were responsible for
+B. Specifically what you did on the shot, what elements you were responsible for
 C. The name of the VFX supervisor who reviewed the shot
 D. The deadline date and delivery specifications
 
@@ -189,9 +189,9 @@ D. Flash video (FLV) for maximum browser compatibility
 A compositing supervisor reviewing reels immediately notices one candidate whose "composite" shows a slightly too-saturated CG element that clearly doesn't match the plate's color. What does this tell the supervisor?
 
 A. The compositor is more creative than technically accurate
-B. The compositor lacks understanding of color matching — a fundamental compositing skill
+B. The compositor lacks understanding of color matching, a fundamental compositing skill
 C. The compositor used After Effects instead of Nuke
-D. The compositor's monitor is incorrectly calibrated — a hardware problem, not a skills problem
+D. The compositor's monitor is incorrectly calibrated, a hardware problem, not a skills problem
 
 ---
 
@@ -211,7 +211,7 @@ D. Phoenix, Arizona
 The "VFX Artist" career track (as distinct from "Compositor") emphasizes which primary skillset?
 
 A. Shot finishing, color matching, and 2D integration
-B. Creating and simulating FX elements — particles, fluids, destruction — primarily in Houdini and 3D tools
+B. Creating and simulating FX elements particles, fluids, destruction primarily in Houdini and 3D tools
 C. Camera operation and on-set VFX supervision
 D. Pipeline engineering and Python automation
 
@@ -222,7 +222,7 @@ D. Pipeline engineering and Python automation
 A VFX supervisor at a major film studio says a reel shows "floating" CG elements. What specific technical issue does this mean?
 
 A. The CG elements have no gravity simulation
-B. CG elements that don't receive correct shadows and interactive light from the environment — they look separate from the plate, as if composited on top rather than integrated within it
+B. CG elements that don't receive correct shadows and interactive light from the environment, they look separate from the plate, as if composited on top rather than integrated within it
 C. The CG elements are not tracked correctly and drift from frame to frame
 D. The CG elements are rendered with incorrect anti-aliasing
 
@@ -233,7 +233,7 @@ D. The CG elements are rendered with incorrect anti-aliasing
 ProductionHub is primarily used for what in the VFX industry?
 
 A. Downloading stock VFX elements for commercial use
-B. Finding freelance VFX work — a professional platform connecting film/TV productions with VFX freelancers
+B. Finding freelance VFX work, a professional platform connecting film/TV productions with VFX freelancers
 C. Sharing VFX tutorials with the community
 D. Purchasing licensed footage for VFX reference
 
@@ -243,9 +243,9 @@ D. Purchasing licensed footage for VFX reference
 
 For a 90-second VFX reel targeting a senior compositor position, which shot mix is MOST appropriate?
 
-A. Six shots all demonstrating particle effects (fire, smoke, magic) — your deepest expertise
+A. Six shots all demonstrating particle effects (fire, smoke, magic), your deepest expertise
 B. A varied set of 5–6 shots including keying, roto, 3D CG integration, color matching, cleanup work, and one strong action/FX shot
-C. Only two shots — the most complex possible compositions — to demonstrate depth over breadth
+C. Only two shots the most complex possible compositions to demonstrate depth over breadth
 D. Twelve quick shots (5–7 seconds each) covering every possible VFX category
 
 ---
@@ -266,7 +266,7 @@ D. France
 When presenting a destruction/explosion sequence in a VFX reel breakdown, what does a "breakdown sequence" format typically show?
 
 A. The full final shot at multiple speeds (normal, slow-motion, reverse)
-B. A progressive reveal — the plate alone, then adding element layers one at a time (shockwave, fireball, smoke, debris), finishing with the complete composite
+B. A progressive reveal, the plate alone, then adding element layers one at a time (shockwave, fireball, smoke, debris), finishing with the complete composite
 C. A side-by-side comparison of two different explosion designs
 D. The 3D simulation viewport rendering from Blender before compositing
 
@@ -274,50 +274,50 @@ D. The 3D simulation viewport rendering from Blender before compositing
 
 ## 🎯 Answers + Explanations
 
-**Q1 — C.** Professional VFX reels are 60–120 seconds. Longer reels dilute quality and demonstrate poor self-editing judgment. Shorter is acceptable if all shots are excellent.
+**Q1, C.** Professional VFX reels are 60–120 seconds. Longer reels dilute quality and demonstrate poor self-editing judgment. Shorter is acceptable if all shots are excellent.
 
-**Q2 — C.** Your best shot first, no intro, cut directly to the work. Supervisors reviewing 200+ reels per week must triage immediately. Your best shot earns you the next 15 seconds of attention.
+**Q2, C.** Your best shot first, no intro, cut directly to the work. Supervisors reviewing 200+ reels per week must triage immediately. Your best shot earns you the next 15 seconds of attention.
 
-**Q3 — B.** Studios already have the finished film. They want to see the decision-making process — the plate, the elements, the matte, the integration. A composite without breakdown tells them nothing about your process.
+**Q3 B.** Studios already have the finished film. They want to see the decision-making process the plate, the elements, the matte, the integration. A composite without breakdown tells them nothing about your process.
 
-**Q4 — B.** Split-screen or wipe (plate left, comp right) is the standard format for showing keying and integration work. It makes the quality of the key and integration immediately legible.
+**Q4, B.** Split-screen or wipe (plate left, comp right) is the standard format for showing keying and integration work. It makes the quality of the key and integration immediately legible.
 
-**Q5 — B.** ILM was founded in 1975 by George Lucas to create the visual effects for *Star Wars: A New Hope* (1977). It is the oldest and most historically significant VFX studio in the world.
+**Q5, B.** ILM was founded in 1975 by George Lucas to create the visual effects for *Star Wars: A New Hope* (1977). It is the oldest and most historically significant VFX studio in the world.
 
-**Q6 — B.** ILM's culture is deep specialization — a junior artist may work on a single character for months. Boutique culture is generalist — the same artist may key, roto, track, and finish shots in the same day.
+**Q6 B.** ILM's culture is deep specialization a junior artist may work on a single character for months. Boutique culture is generalist, the same artist may key, roto, track, and finish shots in the same day.
 
-**Q7 — B.** Film studios (ILM, Weta, Framestore, MPC) use Nuke as their primary compositing tool. A reel showing only After Effects work, with no Nuke demonstrated, signals that the candidate hasn't developed the tool fluency required for film work.
+**Q7, B.** Film studios (ILM, Weta, Framestore, MPC) use Nuke as their primary compositing tool. A reel showing only After Effects work, with no Nuke demonstrated, signals that the candidate hasn't developed the tool fluency required for film work.
 
-**Q8 — B.** IATSE Local 839 (The Animation Guild) covers animators, visual effects artists, concept artists, and storyboard artists in the US film and TV industry.
+**Q8, B.** IATSE Local 839 (The Animation Guild) covers animators, visual effects artists, concept artists, and storyboard artists in the US film and TV industry.
 
-**Q9 — B.** 4–8 shots is the professional standard. Each shot should demonstrate a distinct skill category. More shots dilute the reel; fewer shots may suggest limited experience.
+**Q9, B.** 4–8 shots is the professional standard. Each shot should demonstrate a distinct skill category. More shots dilute the reel; fewer shots may suggest limited experience.
 
-**Q10 — B.** A single-skill reel (keying only, particles only) suggests a specialist who cannot handle the full scope of a compositor's responsibilities. Studios want evidence of the complete compositing skill set.
+**Q10, B.** A single-skill reel (keying only, particles only) suggests a specialist who cannot handle the full scope of a compositor's responsibilities. Studios want evidence of the complete compositing skill set.
 
-**Q11 — B.** On team shots, you must clearly label what specifically you did — which elements were yours, which parts of the composite were your work. Taking unearned credit or being vague about your contribution is a serious reel offense.
+**Q11 B.** On team shots, you must clearly label what specifically you did which elements were yours, which parts of the composite were your work. Taking unearned credit or being vague about your contribution is a serious reel offense.
 
-**Q12 — B.** The compositor career ladder: Junior → Mid → Senior → Lead → VFX Supervisor / CG Supervisor. This is the standard progression at major studios.
+**Q12, B.** The compositor career ladder: Junior → Mid → Senior → Lead → VFX Supervisor / CG Supervisor. This is the standard progression at major studios.
 
-**Q13 — C.** Mid-level freelance VFX artists (2–5 years) typically charge $520–$800/day in the US market. Entry-level is $280–$480; senior is $800–$1400+.
+**Q13, C.** Mid-level freelance VFX artists (2–5 years) typically charge $520–$800/day in the US market. Entry-level is $280–$480; senior is $800–$1400+.
 
-**Q14 — B.** Weta FX (formerly Weta Digital, split from Weta Workshop in 2021) is known for Lord of the Rings, Avatar, Planet of the Apes, and numerous other major productions. The studio was founded by Peter Jackson.
+**Q14, B.** Weta FX (formerly Weta Digital, split from Weta Workshop in 2021) is known for Lord of the Rings, Avatar, Planet of the Apes, and numerous other major productions. The studio was founded by Peter Jackson.
 
-**Q15 — B.** The 2023 IATSE contract delivered the most significant wage increase for animation and VFX workers in 15 years — a result of sustained collective bargaining pressure following the 2021 near-strike.
+**Q15 B.** The 2023 IATSE contract delivered the most significant wage increase for animation and VFX workers in 15 years a result of sustained collective bargaining pressure following the 2021 near-strike.
 
-**Q16 — B.** H.264/H.265 MP4 or ProRes 422 at 1920×1080 minimum is the professional standard. It balances quality, file size, and universal playback compatibility for both online submission and in-person portfolio review.
+**Q16, B.** H.264/H.265 MP4 or ProRes 422 at 1920×1080 minimum is the professional standard. It balances quality, file size, and universal playback compatibility for both online submission and in-person portfolio review.
 
-**Q17 — B.** A CG element that's too saturated relative to the plate indicates the compositor doesn't understand color matching — one of the most fundamental compositing skills. This is not a monitor calibration problem; it's a judgment problem.
+**Q17 B.** A CG element that's too saturated relative to the plate indicates the compositor doesn't understand color matching one of the most fundamental compositing skills. This is not a monitor calibration problem; it's a judgment problem.
 
-**Q18 — D.** Phoenix, Arizona has no significant VFX industry presence. The major global VFX centers in 2026 are Los Angeles, London, Vancouver, Melbourne, Mumbai, Singapore, and Wellington.
+**Q18, D.** Phoenix, Arizona has no significant VFX industry presence. The major global VFX centers in 2026 are Los Angeles, London, Vancouver, Melbourne, Mumbai, Singapore, and Wellington.
 
-**Q19 — B.** The VFX Artist (FX Artist) track focuses on creating simulation elements — Houdini FX (fluids, fire, destruction, cloth, crowds), Blender simulation, and particle-system-based effects creation. The Compositor integrates these elements into the final shot.
+**Q19 B.** The VFX Artist (FX Artist) track focuses on creating simulation elements Houdini FX (fluids, fire, destruction, cloth, crowds), Blender simulation, and particle-system-based effects creation. The Compositor integrates these elements into the final shot.
 
-**Q20 — B.** "Floating" describes CG elements that don't receive interactive shadows and light from the environment — they appear to sit on top of the plate rather than existing within its world. Correct interactive light, shadow, and reflection integration eliminates this problem.
+**Q20 B.** "Floating" describes CG elements that don't receive interactive shadows and light from the environment they appear to sit on top of the plate rather than existing within its world. Correct interactive light, shadow, and reflection integration eliminates this problem.
 
-**Q21 — B.** ProductionHub is the primary professional platform for film/TV freelance work in North America — connecting productions with editors, VFX artists, DPs, sound designers, and other crew.
+**Q21 B.** ProductionHub is the primary professional platform for film/TV freelance work in North America connecting productions with editors, VFX artists, DPs, sound designers, and other crew.
 
-**Q22 — B.** A varied set of 5–6 shots is the correct answer for a senior compositor reel: keying, roto, 3D CG integration, color matching, cleanup, and action/FX. This demonstrates the full scope of a senior compositor's capabilities.
+**Q22, B.** A varied set of 5–6 shots is the correct answer for a senior compositor reel: keying, roto, 3D CG integration, color matching, cleanup, and action/FX. This demonstrates the full scope of a senior compositor's capabilities.
 
-**Q23 — C.** BECTU (Broadcasting, Entertainment, Communications and Theatre Union) is the UK equivalent of IATSE — covering film, TV, and VFX workers in the United Kingdom.
+**Q23 C.** BECTU (Broadcasting, Entertainment, Communications and Theatre Union) is the UK equivalent of IATSE covering film, TV, and VFX workers in the United Kingdom.
 
-**Q24 — B.** A destruction breakdown sequence progressively reveals the composite: starting with the plate alone, adding elements one at a time — shockwave, fireball, smoke, debris — until the final composite is complete. This shows the supervisor exactly how the shot was built and demonstrates your understanding of layer order and timing.
+**Q24 B.** A destruction breakdown sequence progressively reveals the composite: starting with the plate alone, adding elements one at a time shockwave, fireball, smoke, debris, until the final composite is complete. This shows the supervisor exactly how the shot was built and demonstrates your understanding of layer order and timing.

@@ -1,6 +1,6 @@
 # Module 1: The Agile Mindset 🧠
 
-> **Why this module matters:** You can memorize Scrum without understanding *why* it exists. The exam will catch you. This module gives you the *why* — and once you have it, every other concept clicks.
+> **Why this module matters:** You can memorize Scrum without understanding *why* it exists. The exam will catch you. This module gives you the *why*, and once you have it, every other concept clicks.
 
 ---
 
@@ -8,7 +8,7 @@
 
 Let's start with Tony.
 
-Tony owns a pizza shop in 1995. He's old-school. Every Monday, he plans the entire week's menu, orders all ingredients, prints flyers, and locks in promotions. Then Tuesday hits — and a customer asks for *gluten-free crust*. Tony shrugs. "Maybe next week." By Wednesday, three more customers ask. By Friday, a competitor opens up *with* gluten-free pizza. Tony's locked into his Monday plan. He loses customers all week.
+Tony owns a pizza shop in 1995. He's old-school. Every Monday, he plans the entire week's menu, orders all ingredients, prints flyers, and locks in promotions. Then Tuesday hits, and a customer asks for *gluten-free crust*. Tony shrugs. "Maybe next week." By Wednesday, three more customers ask. By Friday, a competitor opens up *with* gluten-free pizza. Tony's locked into his Monday plan. He loses customers all week.
 
 **That's how software was built before Agile.**
 
@@ -22,7 +22,7 @@ Now meet Tony's daughter, Maria, in 2015. Maria runs the same pizza shop differe
 
 In **February 2001**, 17 software developers met at a ski lodge in Snowbird, Utah. They were *fed up*. Software projects were taking 2–3 years, costing millions, and shipping products customers didn't want.
 
-After 2 days of arguing (and skiing), they wrote **The Agile Manifesto** — a 68-word document that changed software forever.
+After 2 days of arguing (and skiing), they wrote **The Agile Manifesto**, a 68-word document that changed software forever.
 
 Here's all 4 lines:
 
@@ -35,7 +35,7 @@ Here's all 4 lines:
 >
 > *That is, while there is value in the items on the right, we value the items on the left more.*
 
-🔥 **MEMORIZE THIS.** The exam will paraphrase it. You'll see questions like *"Which is more valuable — comprehensive docs or working software?"* and you'll smirk.
+🔥 **MEMORIZE THIS.** The exam will paraphrase it. You'll see questions like *"Which is more valuable, comprehensive docs or working software?"* and you'll smirk.
 
 ---
 
@@ -50,7 +50,7 @@ Here's all 4 lines:
 ### 2️⃣ Working Software > Comprehensive Documentation
 
 **What it means:** Ship something usable in 2 weeks, not a 200-page spec in 6 months.
-**Real example:** Instagram launched with *one* feature: photo filters. They added stories, reels, and shopping later — based on user behavior, not a master plan.
+**Real example:** Instagram launched with *one* feature: photo filters. They added stories, reels, and shopping later, based on user behavior, not a master plan.
 **Trap on the exam:** "Document everything before coding" is *almost always* wrong.
 
 ### 3️⃣ Customer Collaboration > Contract Negotiation
@@ -69,7 +69,7 @@ Here's all 4 lines:
 
 ## 🏛️ The 12 Agile Principles (You Need ~5 of These)
 
-You don't have to memorize all 12. But know these **5 critical ones** — they show up on the exam constantly:
+You don't have to memorize all 12. But know these **5 critical ones**, they show up on the exam constantly:
 
 ### Principle 1: "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software."
 🎯 **Translation:** Ship early. Ship often. Show value FAST.
@@ -96,10 +96,10 @@ Now we get to the *real* foundation of Scrum.
 
 **Empirical process control** = "make decisions based on what is known, observed, and measured." NOT based on plans, predictions, or hope.
 
-Three pillars hold this up. **MEMORIZE these — they appear in 5+ exam questions:**
+Three pillars hold this up. **MEMORIZE these, they appear in 5+ exam questions:**
 
 ### 🔍 Pillar 1: Transparency
-*Everyone sees the same truth.* The work, progress, problems — all visible to all.
+*Everyone sees the same truth.* The work, progress, problems, all visible to all.
 **Example:** A burndown chart on the wall. Everyone knows where the team stands.
 **Anti-example:** PM has a private spreadsheet that says one thing, team's Jira says another.
 
@@ -137,7 +137,7 @@ TRANSPARENCY → ADAPT
 | Best for | Stable, well-known requirements | Uncertain, evolving requirements |
 | Example | Building a bridge | Building Spotify |
 
-**🚨 Test trap:** "Which method is better?" — Neither. They suit different contexts. Don't fall for "Agile is always best."
+**🚨 Test trap:** "Which method is better?", Neither. They suit different contexts. Don't fall for "Agile is always best."
 
 But for the PSM/PMP exams: when in doubt, the agile answer wins.
 
@@ -225,7 +225,7 @@ You now know:
 
 - 📖 *Agile Manifesto* (full text + signatories): <https://agilemanifesto.org/>
 - 📖 *Agile Manifesto Principles:* <https://agilemanifesto.org/principles.html>
-- 📖 *"The Phoenix Project"* by Gene Kim — a fun novel about agile/DevOps transformation
+- 📖 *"The Phoenix Project"* by Gene Kim, a fun novel about agile/DevOps transformation
 - 📖 *"Scrum: The Art of Doing Twice the Work in Half the Time"* by Jeff Sutherland (Scrum co-creator)
 
 ---
@@ -239,13 +239,13 @@ You now know:
 
 ---
 
-## 📊 Case Study — Spotify "Spotify Model" (2012–2022, retrospectively dismantled)
+## 📊 Case Study, Spotify "Spotify Model" (2012–2022, retrospectively dismantled)
 
-**Situation.** In 2012, Spotify was scaling from a single-product Stockholm startup to a multi-product, multi-region music company. Henrik Kniberg and Anders Ivarsson published two now-famous internal whitepapers ("Scaling Agile @ Spotify with Tribes, Squads, Chapters and Guilds") describing a structure of small autonomous **Squads** (Scrum-team-sized), grouped into **Tribes** (~50–150 people working on related products), with cross-cutting **Chapters** (functional skill groups) and **Guilds** (interest-based communities). The whitepapers went viral. Within five years, hundreds of enterprises — ING, Cerner, Cisco, parts of LEGO, Bosch, and many banks — had announced "Spotify-model" transformations.
+**Situation.** In 2012, Spotify was scaling from a single-product Stockholm startup to a multi-product, multi-region music company. Henrik Kniberg and Anders Ivarsson published two now-famous internal whitepapers ("Scaling Agile @ Spotify with Tribes, Squads, Chapters and Guilds") describing a structure of small autonomous **Squads** (Scrum-team-sized), grouped into **Tribes** (~50–150 people working on related products), with cross-cutting **Chapters** (functional skill groups) and **Guilds** (interest-based communities). The whitepapers went viral. Within five years, hundreds of enterprises ING, Cerner, Cisco, parts of LEGO, Bosch, and many banks had announced "Spotify-model" transformations.
 
 **Decision.** Spotify itself, however, never claimed the model was *finished* or even uniformly adopted. Internal accounts (Jeremiah Lee 2020, "Failed #SquadGoals"; Joakim Sundén's 2022 Agile Alliance talk) revealed that by 2017 Spotify had already quietly walked back many of the prescriptive elements: PMs/PgMs were reintroduced, "alignment" projects layered on top of squads, and many Tribes used variants closer to LeSS or vanilla Scrum. Atlassian's 2020 case write-up acknowledged that "the Spotify model the world copied was already obsolete inside Spotify when it was published."
 
-**Outcome.** Spotify continued to grow (489M MAUs by 2023, $13.2B revenue 2023), but several large enterprises who copied the whitepaper *literally* — most famously ING Netherlands (also a case in Module 3) and a US insurance carrier publicly written up in MIT Sloan Management Review (2020) — reported squad autonomy drifting into product fragmentation, duplicated technology, and what Sundén called "anti-Scrum" patterns (no PO, fluid sprints, no DoD). By 2022, "Spotify model" was being used in conferences as a *cautionary tale* about copying culture artifacts without copying the underlying Agile mindset.
+**Outcome.** Spotify continued to grow (489M MAUs by 2023, $13.2B revenue 2023), but several large enterprises who copied the whitepaper *literally* most famously ING Netherlands (also a case in Module 3) and a US insurance carrier publicly written up in MIT Sloan Management Review (2020) reported squad autonomy drifting into product fragmentation, duplicated technology, and what Sundén called "anti-Scrum" patterns (no PO, fluid sprints, no DoD). By 2022, "Spotify model" was being used in conferences as a *cautionary tale* about copying culture artifacts without copying the underlying Agile mindset.
 
 **Lesson for the exam / for practitioners.** Agile is a *mindset*, not a *structure*. Squads, Tribes, Chapters, Guilds are just labels; the four Manifesto values and the empiricism pillars are what actually do the work. The Scrum Guide deliberately stays minimal so that teams cannot reduce Scrum to an org chart. On the PSM I exam, when a scenario asks "should we adopt the Spotify model?" or "should we replicate what worked at another company?", the correct answer is almost always to *coach* the team on inspection-and-adaptation toward *their* context, not to import a foreign structure. This is also the Manifesto's Principle 5 ("build projects around motivated individuals … and trust them to get the job done").
 
@@ -257,23 +257,23 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: [Module 2 — The Scrum Framework](../Module-02-Scrum-Framework/Reading.md) turns this mindset into a concrete framework (3 accountabilities, 5 events, 3 artifacts). [Module 7 — Servant Leadership](../Module-07-Servant-Leadership/Reading.md) operationalizes the Manifesto's Principle 5. [Module 8 — Scaling Scrum](../Module-08-Scaling/Reading.md) returns to the Spotify-model question with the scaling-frameworks lens.
-> - Cross-course: `02-PMP` Module 1 covers predictive-vs-adaptive lifecycle selection from the PMBOK 7th edition angle — useful when you face PMP-style scenario questions that contrast Agile with traditional project management. `02-PMP` Module 4 also revisits the Tuckman team-formation stages we touch on briefly here.
+> - Inside this course: [Module 2 The Scrum Framework](../Module-02-Scrum-Framework/Reading.md) turns this mindset into a concrete framework (3 accountabilities, 5 events, 3 artifacts). [Module 7 Servant Leadership](../Module-07-Servant-Leadership/Reading.md) operationalizes the Manifesto's Principle 5. [Module 8, Scaling Scrum](../Module-08-Scaling/Reading.md) returns to the Spotify-model question with the scaling-frameworks lens.
+> - Cross-course: `02-PMP` Module 1 covers predictive-vs-adaptive lifecycle selection from the PMBOK 7th edition angle, useful when you face PMP-style scenario questions that contrast Agile with traditional project management. `02-PMP` Module 4 also revisits the Tuckman team-formation stages we touch on briefly here.
 > - Practice: [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) draws ~4 questions from this module's content (empiricism pillars, Manifesto values, ScrumBut). [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) layers them into cross-module synthesis (e.g., "which Manifesto principle is the Retrospective an embodiment of?").
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 Use these as journal prompts, study-group questions, or interview-prep drills. Strong answers cite specific frameworks (Manifesto values, empiricism pillars) and named cases (Spotify, Mailchimp, Tony's pizza shop) rather than personal anecdote alone.
 
 1. **The "we already do Agile" trap.** A team you've just been hired to coach claims they "already do Agile" because they hold a daily stand-up and use Jira. Walk through how you would diagnose, in their first sprint with you, whether they are *practicing the Agile mindset* or *cargo-culting the rituals*. What three pieces of evidence would you look for, and what would each one tell you?
-2. **Manifesto value tension in practice.** "Individuals and interactions over processes and tools" sounds like it conflicts with "Welcome changing requirements, even late in development" — the first prizes stability of people, the second prizes change. Construct a real scenario (use Maria the pizza-shop owner, or a software team you know) where these two values are in tension. Which one wins, and why? Cite the Manifesto.
-3. **The empiricism vs prediction debate.** A senior engineer argues that empiricism "doesn't scale" — that once you have 50 engineers and a $20M annual budget, you *need* predictive planning. Build the strongest argument for AND against. Which would you defend at a board review of a regulated-industry product (e.g., medical device firmware)? What's the principled middle ground?
+2. **Manifesto value tension in practice.** "Individuals and interactions over processes and tools" sounds like it conflicts with "Welcome changing requirements, even late in development", the first prizes stability of people, the second prizes change. Construct a real scenario (use Maria the pizza-shop owner, or a software team you know) where these two values are in tension. Which one wins, and why? Cite the Manifesto.
+3. **The empiricism vs prediction debate.** A senior engineer argues that empiricism "doesn't scale", that once you have 50 engineers and a $20M annual budget, you *need* predictive planning. Build the strongest argument for AND against. Which would you defend at a board review of a regulated-industry product (e.g., medical device firmware)? What's the principled middle ground?
 4. **ScrumBut as organizational signal.** When a team says "we do Scrum, but we don't do retros," what *organizational dysfunction* is most likely producing that omission? Pick the three most common root causes and rank-order them by how often you would expect to see each.
 5. **Reading the Scrum Guide three times.** The Recommended Path in the course README says to read the Scrum Guide 3+ times. Why three? Defend or critique this advice using the inspection pillar of empiricism. What does a Scrum Master gain on the third read that they did not see on the first?
 
-There are no "official" answers — strong responses cite at least one Manifesto value, one empiricism pillar, and one real case (Spotify, Mailchimp, Tony/Maria pizza shop, or one of your own).
+There are no "official" answers, strong responses cite at least one Manifesto value, one empiricism pillar, and one real case (Spotify, Mailchimp, Tony/Maria pizza shop, or one of your own).
 
 ---
 
@@ -299,6 +299,6 @@ Every framework named above traces back to a specific paper, book, or document. 
 | *Scrum: The Art of Doing Twice the Work in Half the Time* | Sutherland | 2014 | Crown Business (Penguin Random House) |
 | *The Phoenix Project* (DevOps novel referenced in Further Reading) | Kim, Behr, Spafford | 2013 | IT Revolution Press |
 | Spotify model (squads / tribes / chapters / guilds) | Kniberg & Ivarsson | 2012 | Spotify internal whitepaper, *"Scaling Agile @ Spotify"* (publicly released October 2012) |
-| Critique of Spotify model | Lee (Jeremiah) | 2020 | *"Failed #SquadGoals"*, jeremiahlee.com — and Joakim Sundén's 2022 Agile Alliance talk |
+| Critique of Spotify model | Lee (Jeremiah) | 2020 | *"Failed #SquadGoals"*, jeremiahlee.com, and Joakim Sundén's 2022 Agile Alliance talk |
 
 **Verification note.** All publication years and venues verified as of 2026-05 against the original publishers' listings (agilemanifesto.org, scrumguides.org, scrum.org, scaledagileframework.com, less.works, Addison-Wesley, Crown Business). The Scrum Guide is freely available; *Scrum: The Art of Doing Twice the Work in Half the Time* is the most-cited Scrum trade book and the recommended "supplement" to the 13-page Guide.

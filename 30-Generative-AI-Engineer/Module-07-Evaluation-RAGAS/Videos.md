@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Evaluating LLM Applications — Hamel Husain</p>
+      <p class="vg-title">Evaluating LLM Applications, Hamel Husain</p>
       <p class="vg-creator">Hamel Husain</p>
       <span class="vg-duration">⏱ 1h · The eval-first philosophy</span>
     </div>
@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RAGAS — RAG evaluation tutorial</p>
+      <p class="vg-title">RAGAS, RAG evaluation tutorial</p>
       <p class="vg-creator">community / RAGAS team</p>
       <span class="vg-duration">⏱ 45m · Faithfulness/relevancy/precision/recall</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LLM-as-Judge — biases and mitigations</p>
+      <p class="vg-title">LLM-as-Judge, biases and mitigations</p>
       <p class="vg-creator">paper review</p>
       <span class="vg-duration">⏱ 30m · MT-Bench lessons</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Promptfoo — A/B testing prompts</p>
+      <p class="vg-title">Promptfoo, A/B testing prompts</p>
       <p class="vg-creator">Promptfoo</p>
       <span class="vg-duration">⏱ 30m · YAML-driven experiments</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Arize Phoenix — open-source RAG eval</p>
+      <p class="vg-title">Arize Phoenix, open-source RAG eval</p>
       <p class="vg-creator">Arize</p>
       <span class="vg-duration">⏱ 40m · Trace + eval together</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">G-Eval — rubric + CoT judge</p>
+      <p class="vg-title">G-Eval, rubric + CoT judge</p>
       <p class="vg-creator">paper review</p>
       <span class="vg-duration">⏱ 25m · Better than vanilla judge</span>
     </div>
@@ -93,7 +93,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Production LLM evals — Eugene Yan</p>
+      <p class="vg-title">Production LLM evals, Eugene Yan</p>
       <p class="vg-creator">Eugene Yan</p>
       <span class="vg-duration">⏱ 40m · Practitioner deep dive</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OpenAI Evals — library tour</p>
+      <p class="vg-title">OpenAI Evals, library tour</p>
       <p class="vg-creator">OpenAI DevRel</p>
       <span class="vg-duration">⏱ 30m · YAML + Python evals</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Anthropic Evals — open-source harness</p>
+      <p class="vg-title">Anthropic Evals, open-source harness</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 25m · Their internal-ish eval framework</span>
     </div>
@@ -125,7 +125,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Inspect AI — frontier safety evals</p>
+      <p class="vg-title">Inspect AI, frontier safety evals</p>
       <p class="vg-creator">UK AISI</p>
       <span class="vg-duration">⏱ 35m · Gold-standard rigor</span>
     </div>
@@ -134,7 +134,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">TruLens — open-source RAG eval</p>
+      <p class="vg-title">TruLens, open-source RAG eval</p>
       <p class="vg-creator">TruLens</p>
       <span class="vg-duration">⏱ 30m · Alternative to RAGAS</span>
     </div>
@@ -161,6 +161,6 @@
 2. List 5 biases of LLM-as-judge.
 3. Why is a golden dataset important?
 4. What does it mean to "gate PRs on eval"?
-5. CI eval workflow — sketch the YAML.
+5. CI eval workflow, sketch the YAML.
 
 Then [Quiz](./Quiz.md).

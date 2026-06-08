@@ -19,7 +19,7 @@
 
 ---
 
-## 🤖 EU AI Act (March 2024) — 4 Tiers
+## 🤖 EU AI Act (March 2024), 4 Tiers
 
 | Tier | Examples | Requirement |
 |---|---|---|
@@ -36,13 +36,13 @@ Penalties up to **7% global rev OR €35M** for prohibited.
 
 ## 🇺🇸 US AI Enforcement (2026)
 
-- **FTC Section 5** — unfair/deceptive practices
-- **FTC Endorsement Guides** (updated 2023) — AI endorsements must disclose
-- **Algorithmic disgorgement** — destroy improperly-trained models
-- **Colorado AI Act** (May 2024) — first state-level; effective Feb 2026
-- **NYC Local Law 144** (July 2023) — bias audits for employment AI
-- **NIST AI RMF 1.0** (Jan 2023) — voluntary but influential
-- **ISO/IEC 42001** (Dec 2023) — international AI standard
+- **FTC Section 5**, unfair/deceptive practices
+- **FTC Endorsement Guides** (updated 2023), AI endorsements must disclose
+- **Algorithmic disgorgement**, destroy improperly-trained models
+- **Colorado AI Act** (May 2024), first state-level; effective Feb 2026
+- **NYC Local Law 144** (July 2023), bias audits for employment AI
+- **NIST AI RMF 1.0** (Jan 2023), voluntary but influential
+- **ISO/IEC 42001** (Dec 2023), international AI standard
 
 ---
 
@@ -95,7 +95,7 @@ Penalties up to **7% global rev OR €35M** for prohibited.
 
 ## 🚨 Common Traps
 
-- ❌ "GDPR only applies in EU" (no — extraterritorial)
+- ❌ "GDPR only applies in EU" (no, extraterritorial)
 - ❌ "Cookies will be gone by [date]" (Google moved to user-choice)
 - ❌ "AI content is unregulated" (EU AI Act + FTC apply)
 - ❌ "First-party data is unlimited" (still subject to GDPR/CCPA)

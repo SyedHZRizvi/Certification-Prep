@@ -92,11 +92,11 @@ Form factors: 3.5" LFF · 2.5" SFF · M.2 · U.2/U.3 · EDSFF.
 | Cisco UCS | **CIMC** |
 | Whitebox / Supermicro | generic **IPMI** |
 
-- **IPMI = UDP 623** — vendor-neutral standard
-- BMC runs on standby power — works when host is OFF
+- **IPMI = UDP 623**, vendor-neutral standard
+- BMC runs on standby power, works when host is OFF
 - Virtual console + virtual media = remote OS install pre-boot
 
-🚨 Never expose IPMI to internet — segment the management network.
+🚨 Never expose IPMI to internet, segment the management network.
 
 ---
 

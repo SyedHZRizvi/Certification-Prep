@@ -63,9 +63,9 @@ For opportunities: prefer MORE positive
 ---
 
 ## 🎯 Tolerances/Thresholds
-- **Appetite** — overall willingness
-- **Tolerance** — acceptable variation
-- **Threshold** — specific limit
+- **Appetite**, overall willingness
+- **Tolerance**, acceptable variation
+- **Threshold**, specific limit
 
 ---
 

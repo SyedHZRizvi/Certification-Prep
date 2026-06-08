@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Virtualization Fundamentals — 220-1101</p>
+      <p class="vg-title">Virtualization Fundamentals, 220-1101</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 11 min · Type 1 vs Type 2</span>
     </div>
@@ -132,7 +132,7 @@
 | Channel | Why |
 |---------|-----|
 | **Professor Messer** | Start here for A+ scope |
-| **NetworkChuck** | Containers, cloud, Linux — fun |
+| **NetworkChuck** | Containers, cloud, Linux, fun |
 | **ExplainingComputers** | Great for setting up your own VirtualBox lab |
 | **Lawrence Systems** | Proxmox, pfSense, real-world IT |
 | **Microsoft Learn / AWS Educate** | Vendor-official tutorials |

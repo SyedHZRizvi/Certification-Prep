@@ -3,9 +3,9 @@
 > **Why this module matters:** Intune is the management plane for everything in MD-102. Modules 4–8 are all "doing things in Intune." If you can't navigate the Intune admin center, name the platforms it manages, and explain MDM vs MAM in your sleep, every later module collapses. This is the central nervous system.
 
 > **Prerequisites for this module.** Before starting:
-> - Module 1 (Modern Workplace) — you should know the three Entra device join states and the difference between MDM and MAM.
-> - Module 2 (Deployment) — you should know how a device gets to Intune-managed state via Autopilot.
-> - Microsoft 365 / Azure Portal navigation basics — clicking around blades, tenant ID, admin role basics.
+> - Module 1 (Modern Workplace), you should know the three Entra device join states and the difference between MDM and MAM.
+> - Module 2 (Deployment), you should know how a device gets to Intune-managed state via Autopilot.
+> - Microsoft 365 / Azure Portal navigation basics, clicking around blades, tenant ID, admin role basics.
 >
 > If you've never opened the Intune admin center (`intune.microsoft.com`), do that first. Sign up for a free 90-day Microsoft 365 E5 developer tenant if you don't have access.
 
@@ -15,14 +15,14 @@
 
 Maria returns from a week of PTO. Her inbox has:
 
-1. A ticket from Cork — *"My iPad isn't getting the WiFi password from our policy."*
-2. A ticket from San Diego — *"I left the company laptop in a coffee shop. Need to remote-wipe it. NOW."*
-3. A ticket from a contractor — *"I can't open the project files on my Mac — keeps saying I'm not enrolled."*
-4. A ticket from a sales rep — *"My Android phone won't let me copy from Outlook to my personal Notes app, and that's by design but my manager wants an exception."*
-5. A ticket from the CFO — *"What's our Intune license posture? Are we paying for Plan 2 features we don't use?"*
-6. A request from legal — *"We're being acquired by a German company. They have their own M365 tenant. What's the plan to migrate our 1,400 devices?"*
+1. A ticket from Cork, *"My iPad isn't getting the WiFi password from our policy."*
+2. A ticket from San Diego, *"I left the company laptop in a coffee shop. Need to remote-wipe it. NOW."*
+3. A ticket from a contractor *"I can't open the project files on my Mac keeps saying I'm not enrolled."*
+4. A ticket from a sales rep, *"My Android phone won't let me copy from Outlook to my personal Notes app, and that's by design but my manager wants an exception."*
+5. A ticket from the CFO, *"What's our Intune license posture? Are we paying for Plan 2 features we don't use?"*
+6. A request from legal, *"We're being acquired by a German company. They have their own M365 tenant. What's the plan to migrate our 1,400 devices?"*
 
-In 30 years of IT, the laptop-in-the-coffee-shop scenario was the worst Maria would face. Today it's one of six things she'll handle before lunch — and every one of them lives in the same console. **Microsoft Intune.** This module teaches you the console, the architecture, and the licensing matrix that decides which buttons you're allowed to push.
+In 30 years of IT, the laptop-in-the-coffee-shop scenario was the worst Maria would face. Today it's one of six things she'll handle before lunch, and every one of them lives in the same console. **Microsoft Intune.** This module teaches you the console, the architecture, and the licensing matrix that decides which buttons you're allowed to push.
 
 ---
 
@@ -33,7 +33,7 @@ Microsoft Intune is a cloud SaaS. There is no on-prem Intune server. The compone
 ```
                    ┌─────────────────────────────────────┐
                    │   intune.microsoft.com              │
-                   │   (admin portal — Azure-hosted)     │
+                   │   (admin portal, Azure-hosted)     │
                    └────────────────┬────────────────────┘
                                     │
        ┌────────────────────────────┼────────────────────────────┐
@@ -57,13 +57,13 @@ Microsoft Intune is a cloud SaaS. There is no on-prem Intune server. The compone
        └──────────────────────────┘  └──────────────────────────┘
 ```
 
-Key insight: **Intune doesn't manage devices directly.** It uses each platform's native MDM channel (Windows MDM Stack, Apple MDM Protocol, Android Enterprise APIs, Linux's lightweight MDM agent). Intune is a *policy authority* — it tells the channel what to apply.
+Key insight: **Intune doesn't manage devices directly.** It uses each platform's native MDM channel (Windows MDM Stack, Apple MDM Protocol, Android Enterprise APIs, Linux's lightweight MDM agent). Intune is a *policy authority*, it tells the channel what to apply.
 
 🔥 **MEMORIZE:** Intune lives at `intune.microsoft.com`. The admin center is technically called *Microsoft Intune admin center* (previously *MEM admin center*, previously *endpoint.microsoft.com*).
 
 ---
 
-## 📱 MDM vs MAM — The Single Most Important Distinction
+## 📱 MDM vs MAM, The Single Most Important Distinction
 
 If you only memorize one Intune concept, memorize this:
 
@@ -97,7 +97,7 @@ If you only memorize one Intune concept, memorize this:
 
 ---
 
-## 💳 Intune Licensing — Plan 1 vs Plan 2 vs Suite
+## 💳 Intune Licensing, Plan 1 vs Plan 2 vs Suite
 
 This is one of the most frequently tested topics. Memorize the matrix:
 
@@ -116,7 +116,7 @@ Bundled in larger packages:
 | **EMS E3** | Intune Plan 1 + Entra ID P1 + Azure Information Protection P1 |
 | **EMS E5** | Intune Plan 1 + Entra ID P2 + AIP P2 + Defender for Cloud Apps |
 
-🔥 **MEMORIZE:** When the exam asks "what license unlocks feature X" — the matrix above is the answer.
+🔥 **MEMORIZE:** When the exam asks "what license unlocks feature X", the matrix above is the answer.
 
 ---
 
@@ -149,7 +149,7 @@ Scope tags **partition** what an admin can see. Example: a help desk operator in
 
 ## 🎯 Group Targeting in Intune
 
-Intune assigns policies and apps to **Microsoft Entra ID groups** — never to individuals directly. The groups can be:
+Intune assigns policies and apps to **Microsoft Entra ID groups**, never to individuals directly. The groups can be:
 
 | Group type | Membership |
 |------------|------------|
@@ -157,12 +157,12 @@ Intune assigns policies and apps to **Microsoft Entra ID groups** — never to i
 | **Dynamic user** | Membership rule based on user attributes (`user.department -eq "Finance"`) |
 | **Dynamic device** | Membership rule based on device attributes (`device.deviceOSType -eq "iOS"`) |
 | **Security group** | Standard Entra group for assignments |
-| **Microsoft 365 group** | Tied to a Team or SharePoint — can be assignment target |
+| **Microsoft 365 group** | Tied to a Team or SharePoint, can be assignment target |
 
 Special groups:
 
-- **All users** — pseudo-group covering every licensed user
-- **All devices** — pseudo-group covering every enrolled device
+- **All users**, pseudo-group covering every licensed user
+- **All devices**, pseudo-group covering every enrolled device
 
 ### Assignment patterns
 
@@ -176,9 +176,9 @@ Special groups:
 
 ---
 
-## 🛡️ App Protection Policies (APP) — The MAM Workhorse
+## 🛡️ App Protection Policies (APP), The MAM Workhorse
 
-App protection policies are the way you protect corporate data inside apps without enrolling the device. APP applies to apps that integrate with the **Microsoft Intune App SDK** or are wrapped with the App Wrapping Tool — most importantly Microsoft 365 apps (Outlook, OneDrive, Teams, Edge, Word, Excel, PowerPoint).
+App protection policies are the way you protect corporate data inside apps without enrolling the device. APP applies to apps that integrate with the **Microsoft Intune App SDK** or are wrapped with the App Wrapping Tool, most importantly Microsoft 365 apps (Outlook, OneDrive, Teams, Edge, Word, Excel, PowerPoint).
 
 ### Common APP settings
 
@@ -198,7 +198,7 @@ App protection policies are the way you protect corporate data inside apps witho
 
 APP can target by:
 
-- App (Outlook, Teams, Word, etc.) — typically the standard Microsoft 365 set
+- App (Outlook, Teams, Word, etc.), typically the standard Microsoft 365 set
 - Public apps (defined by Microsoft) vs custom apps (wrapped with SDK or App Wrapping Tool)
 
 🎯 **Exam tip:** "Stop sales reps from copying customer data from Outlook to WhatsApp" = APP with "Cut, copy, paste with other apps" set to **Policy managed apps** (Outlook can copy to other managed apps, not WhatsApp).
@@ -222,7 +222,7 @@ The Company Portal app exists for Windows, iOS, Android, and macOS. There's also
 
 ---
 
-## 🔄 Configuration Profiles — The MDM Workhorse
+## 🔄 Configuration Profiles, The MDM Workhorse
 
 Configuration profiles are how Intune applies device settings. There are several types:
 
@@ -232,8 +232,8 @@ Configuration profiles are how Intune applies device settings. There are several
 | **Templates** | Pre-built templates (Wi-Fi, VPN, certificate, email, kiosk, OEMConfig, etc.) |
 | **Administrative templates** | Group Policy-style ADMX-backed settings for Windows |
 | **Imported ADMX** | Custom ADMX/ADML files you upload |
-| **Custom (OMA-URI)** | Direct OMA-URI custom CSP paths — for settings not exposed in UI |
-| **Endpoint Protection** | (Legacy) Windows-only security settings — now mostly absorbed by Endpoint Security blade |
+| **Custom (OMA-URI)** | Direct OMA-URI custom CSP paths, for settings not exposed in UI |
+| **Endpoint Protection** | (Legacy) Windows-only security settings, now mostly absorbed by Endpoint Security blade |
 
 🎯 **Exam tip:** Settings Catalog is the answer to most "how do I configure setting X" questions in 2024+. Custom OMA-URI is for the rare CSP path not yet surfaced.
 
@@ -258,19 +258,19 @@ Configuration profiles are how Intune applies device settings. There are several
 | Term | Definition |
 |------|------------|
 | **Microsoft Intune** | Microsoft's cloud-based MDM + MAM service |
-| **Intune admin center** | `intune.microsoft.com` — the admin portal |
-| **MDM** | Mobile Device Management — full device enrollment + control |
-| **MAM** | Mobile Application Management — protect data inside apps |
-| **App Protection Policy (APP)** | The MAM policy surface — controls cut/copy/paste, encryption, PIN |
-| **Configuration profile** | The MDM policy surface — settings catalog, templates, etc. |
+| **Intune admin center** | `intune.microsoft.com`, the admin portal |
+| **MDM** | Mobile Device Management, full device enrollment + control |
+| **MAM** | Mobile Application Management, protect data inside apps |
+| **App Protection Policy (APP)** | The MAM policy surface, controls cut/copy/paste, encryption, PIN |
+| **Configuration profile** | The MDM policy surface, settings catalog, templates, etc. |
 | **Compliance policy** | Rules evaluating device health (encryption, OS version, jailbreak) |
 | **Settings catalog** | The modern, flexible UI for configuration settings |
 | **Scope tags** | Labels that partition admin visibility |
 | **Plan 1 / Plan 2 / Suite** | Intune licensing tiers |
-| **EPM** | Endpoint Privilege Management — Intune Suite feature for elevated permissions |
-| **Remote Help** | Intune's built-in remote-control tool — Suite feature |
-| **APNs** | Apple Push Notification service — required cert for iOS/macOS management |
-| **Managed Google Play** | Google's enterprise account model — required for Android Enterprise |
+| **EPM** | Endpoint Privilege Management, Intune Suite feature for elevated permissions |
+| **Remote Help** | Intune's built-in remote-control tool, Suite feature |
+| **APNs** | Apple Push Notification service, required cert for iOS/macOS management |
+| **Managed Google Play** | Google's enterprise account model, required for Android Enterprise |
 | **Company Portal** | The end-user-facing Intune app and website |
 
 ---
@@ -280,7 +280,7 @@ Configuration profiles are how Intune applies device settings. There are several
 You now know:
 
 - ☁️ The Intune architecture and its dependency on native MDM channels
-- 📱 MDM vs MAM — the core distinction underlying every Intune scenario
+- 📱 MDM vs MAM, the core distinction underlying every Intune scenario
 - 🖥️ The 6 platforms Intune manages and the quirks of each (especially Linux)
 - 💳 Plan 1 vs Plan 2 vs Suite licensing and what features each unlocks
 - 🏢 Intune RBAC roles + scope tags for delegating admin access
@@ -297,23 +297,23 @@ You now know:
 
 ---
 
-## 📊 Case Study — Heineken Global Intune Adoption (2020–2024)
+## 📊 Case Study, Heineken Global Intune Adoption (2020–2024)
 
 **Situation.** Heineken N.V. (the world's second-largest brewer, ~80,000 employees in 70 countries) faced a textbook fragmented endpoint management story circa 2019: ~85,000 endpoints across Windows, iOS, Android, and macOS, with each region running a different mix of ConfigMgr, MobileIron (a legacy MDM), AirWatch, and Intune. App protection was inconsistent. The CISO could not answer "how many of our devices have current Defender signatures?" with a single number. The COVID-19 work-from-home shift in March 2020 made the fragmentation untenable: VPN concentrators saturated, BYOD enrollment requests spiked 400%, and remote IT support was nearly impossible to standardize.
 
-**Decision.** Heineken's central IT, advised by Microsoft FastTrack, consolidated on **Microsoft Intune as the single MDM/MAM authority** for all platforms (Microsoft customer story, *Heineken — Modern Workplace Transformation*, 2022, refreshed 2024):
+**Decision.** Heineken's central IT, advised by Microsoft FastTrack, consolidated on **Microsoft Intune as the single MDM/MAM authority** for all platforms (Microsoft customer story, *Heineken, Modern Workplace Transformation*, 2022, refreshed 2024):
 
-1. **Standardize on Microsoft 365 E5** for all corporate users — bundles Intune Plan 1 + Entra ID P2 + Defender for Endpoint Plan 2.
+1. **Standardize on Microsoft 365 E5** for all corporate users, bundles Intune Plan 1 + Entra ID P2 + Defender for Endpoint Plan 2.
 2. **Migrate all Windows endpoints off ConfigMgr** to Intune via co-management slider workloads (Module 1), targeting full Intune for compliance + Windows Update first.
-3. **Migrate all iOS/iPad/Android off MobileIron and AirWatch** to Intune through cutover (no parallel migration — clean break).
-4. **App Protection Policies on every BYOD device** — every employee can use Outlook Mobile on their personal phone, protected by APP without enrollment.
-5. **Scope tags by region** — EMEA admins see EMEA devices; APAC admins see APAC devices.
-6. **Defender for Endpoint signal integration** with Intune compliance — high-risk devices automatically marked non-compliant, blocked by CA.
+3. **Migrate all iOS/iPad/Android off MobileIron and AirWatch** to Intune through cutover (no parallel migration, clean break).
+4. **App Protection Policies on every BYOD device**, every employee can use Outlook Mobile on their personal phone, protected by APP without enrollment.
+5. **Scope tags by region**, EMEA admins see EMEA devices; APAC admins see APAC devices.
+6. **Defender for Endpoint signal integration** with Intune compliance, high-risk devices automatically marked non-compliant, blocked by CA.
 
 **Outcome.** Heineken reported (Microsoft customer story, 2024 update):
 
 - **Device management consolidation**: from 4 MDM vendors to 1 (Intune) across the entire fleet of ~85,000 endpoints.
-- **BYOD adoption**: ~22,000 personal devices enrolled in MAM (no device enrollment, app-protected only) — a 4× increase over the legacy MobileIron BYOD count.
+- **BYOD adoption**: ~22,000 personal devices enrolled in MAM (no device enrollment, app-protected only), a 4× increase over the legacy MobileIron BYOD count.
 - **Defender signal coverage**: from estimated 50% (legacy AV mix) to >98% of fleet on Defender for Endpoint with EDR.
 - **MTTR for "lost phone"**: from "open ticket, queue 24h, IT calls user" to **under 5 minutes** (self-service remote wipe via Company Portal).
 - **App protection compliance**: 99.4% of users on protected versions of Outlook + Teams + OneDrive (vs ~70% in fragmented state).
@@ -331,27 +331,27 @@ You now know:
 
 > **Where this leads.**
 > - Inside this course: Module 4 covers all the enrollment paths into Intune (Apple ABM, Android Enterprise, Windows Autopilot, manual); Module 5 covers app deployment (which fills the app catalog the Company Portal exposes); Module 6 covers endpoint security (Defender + ASR + BitLocker integrated with Intune).
-> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra groups, dynamic membership, and CA — all of which Intune leans on heavily.
+> - Cross-course: [`06-Azure-Administrator` Module 2](../../06-Azure-Administrator/Module-02-Entra-ID-RBAC/Reading.md) covers Entra groups, dynamic membership, and CA, all of which Intune leans on heavily.
 > - Practice: Practice Exam 1 has roughly 6–8 questions from this module (MDM/MAM, licensing, group targeting, APP settings). Final Mock Exam revisits with case-study synthesis.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **MDM vs MAM for a regulated bank.** A bank wants to issue corporate iPhones to all employees ($800 × 4,000 phones = $3.2M). The IT team argues for MDM full enrollment; the CFO asks "why can't we use MAM and let people keep their personal phones?" Defend the right answer for a regulated bank, naming the one regulatory or operational scenario that decides it.
 2. **Plan 1 vs Plan 2 vs Suite.** A 1,000-employee software company is on Microsoft 365 E3 (Intune Plan 1 included). They're debating adding Plan 2 vs the full Suite. Defend each upgrade path by naming the one feature in each that would justify the spend.
 3. **Settings Catalog vs OMA-URI.** Microsoft is moving most settings into the modern Settings Catalog UI. When is a custom OMA-URI configuration *still* the right answer in 2026? Defend with reference to setting timing, CSP support, and the cost of maintaining custom OMA-URI strings.
 4. **Scope tags vs separate tenants.** A holding company with 5 subsidiaries debates separate Intune tenants per subsidiary vs one tenant with scope tags. Defend each model by considering admin training, billing, and what happens when subsidiaries are sold off.
-5. **Exclude beats Include — by design.** Intune's "Exclude wins" rule means a VIP user can be exempted from a strict policy by adding them to an Exclude group. A skeptical auditor says "this creates an audit blind spot." Defend the design by naming the specific Intune feature that closes that audit gap.
+5. **Exclude beats Include, by design.** Intune's "Exclude wins" rule means a VIP user can be exempted from a strict policy by adding them to an Exclude group. A skeptical auditor says "this creates an audit blind spot." Defend the design by naming the specific Intune feature that closes that audit gap.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
 - 📖 [Microsoft Intune documentation home](https://learn.microsoft.com/mem/intune/) (Microsoft, current revision)
-- 📖 [Intune licensing — Plan 1, Plan 2, Suite](https://learn.microsoft.com/mem/intune/fundamentals/intune-add-ons)
+- 📖 [Intune licensing, Plan 1, Plan 2, Suite](https://learn.microsoft.com/mem/intune/fundamentals/intune-add-ons)
 - 📖 [App Protection Policy framework](https://learn.microsoft.com/mem/intune/apps/app-protection-framework)
 - 📖 [Settings Catalog in Microsoft Intune](https://learn.microsoft.com/mem/intune/configuration/settings-catalog)
 - 📖 [Custom OMA-URI configuration profiles](https://learn.microsoft.com/mem/intune/configuration/custom-settings-configure)
 - 📖 [Intune scope tags + RBAC](https://learn.microsoft.com/mem/intune/fundamentals/scope-tags)
-- 📖 [Microsoft Mechanics — Intune at scale](https://www.youtube.com/c/MicrosoftMechanicsSeries) — episode archive
+- 📖 [Microsoft Mechanics Intune at scale](https://www.youtube.com/c/MicrosoftMechanicsSeries) episode archive

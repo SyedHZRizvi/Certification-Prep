@@ -51,12 +51,12 @@ raise RuntimeError(f"Did not finish in {MAX_STEPS} steps")
 
 ## 🚧 The 6 Hard Parts (Beyond the Loop)
 
-1. **Step cap** — `MAX_STEPS = 25`
-2. **Cost cap** — `MAX_COST_USD = 5.00`
-3. **Per-tool timeout** — `tool_timeout = 10s`
+1. **Step cap**, `MAX_STEPS = 25`
+2. **Cost cap**, `MAX_COST_USD = 5.00`
+3. **Per-tool timeout**, `tool_timeout = 10s`
 4. **Confirmation gates** for destructive actions
 5. **Restart-from-checkpoint** for failed runs
-6. **Observability** — every step logged
+6. **Observability**, every step logged
 
 ---
 
@@ -86,7 +86,7 @@ Cost: more tokens, more latency. Benefit: better hard-reasoning accuracy.
 
 ---
 
-## 🧪 Evals — The 4 Levels
+## 🧪 Evals, The 4 Levels
 
 | Level | Cheap → Costly | Tools |
 |-------|---------------|-------|
@@ -116,11 +116,11 @@ Cheaper than human review, surprisingly well-correlated.
 
 ---
 
-## 🧰 Frameworks — Pragmatic Take
+## 🧰 Frameworks, Pragmatic Take
 
 | Framework | Use when |
 |-----------|----------|
-| **Raw Anthropic SDK + 60 lines** | Most cases — maximum control |
+| **Raw Anthropic SDK + 60 lines** | Most cases, maximum control |
 | **claude-agent-sdk** | When you want Anthropic-opinionated defaults (step caps, MCP, hooks) |
 | **LangChain** | Multi-vendor abstraction; mature RAG bits |
 | **LlamaIndex** | RAG-first systems |

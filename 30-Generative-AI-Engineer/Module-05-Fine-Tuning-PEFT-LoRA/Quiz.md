@@ -48,7 +48,7 @@ D. Quantity-only matters
 
 ### Q6. The PRIMARY failure mode of the "$84K legal-tech mistake" was: *(Analyze)*
 A. Wrong GPU
-B. Fine-tuning style/persona while the actual gap was factual knowledge — RAG would have solved it for ~$2K
+B. Fine-tuning style/persona while the actual gap was factual knowledge, RAG would have solved it for ~$2K
 C. Wrong tokenizer
 D. Too few epochs
 
@@ -288,7 +288,7 @@ The LIMA insight reshaped the post-2023 fine-tuning playbook.
 ### Q24: **B. QLoRA fits comfortably on one 80GB H100**
 Without QLoRA, even one 80GB H100 cannot full-FT a 70B model.
 
-### Q25: **B. Trainable params + percentage — the critical sanity check**
+### Q25: **B. Trainable params + percentage, the critical sanity check**
 First thing you check after instantiating a PEFT model. Catches "I forgot to apply LoRA" and "I LoRA'd the wrong modules."
 
 ### Q26: **B. RAG + small SFT + DPO + guardrails**
@@ -317,4 +317,4 @@ Cheap, fast, ships in a quarter. From-scratch training is unjustifiable at this 
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Multi-Agent Systems](../Module-06-Multi-Agent-Systems/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Multi-Agent Systems](../Module-06-Multi-Agent-Systems/Reading.md)

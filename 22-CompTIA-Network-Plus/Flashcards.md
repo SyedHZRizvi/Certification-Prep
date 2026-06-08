@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -286,7 +286,7 @@
 **Q:** Which OSI layer do port numbers live at?
 **A:** Layer 4 (Transport).
 
-**Q:** TCP vs UDP — which layer?
+**Q:** TCP vs UDP, which layer?
 **A:** Both Layer 4 (Transport).
 
 **Q:** Which OSI layer does HTTP live at?
@@ -307,13 +307,13 @@
 **Q:** What is encapsulation?
 **A:** Each layer wraps the upper-layer PDU with its own header (and sometimes trailer) as the data moves down the stack.
 
-**Q:** Star topology — every device connects to what?
-**A:** A central switch (or hub). One device fails — others keep working. Switch fails — all down.
+**Q:** Star topology, every device connects to what?
+**A:** A central switch (or hub). One device fails others keep working. Switch fails all down.
 
 **Q:** Full-mesh formula for links between N nodes?
 **A:** N(N-1)/2. Six nodes → 15 links.
 
-**Q:** Unicast vs broadcast vs multicast vs anycast — one-line each.
+**Q:** Unicast vs broadcast vs multicast vs anycast, one-line each.
 **A:** Unicast = one-to-one. Broadcast = one-to-all-on-segment. Multicast = one-to-group. Anycast = one-to-nearest-of-many.
 
 ---
@@ -330,7 +330,7 @@
 **A:** 192.0.0.0–223.255.255.255, /24 (255.255.255.0).
 
 **Q:** Class D and what it's used for?
-**A:** 224.0.0.0–239.255.255.255 — multicast.
+**A:** 224.0.0.0–239.255.255.255, multicast.
 
 **Q:** RFC 1918 private ranges?
 **A:** 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16.
@@ -354,9 +354,9 @@
 **A:** First 27 bits are the network portion. Mask = 255.255.255.224. Five host bits → 30 hosts/subnet.
 
 **Q:** What is VLSM?
-**A:** Variable Length Subnet Mask — different subnet sizes within a single network for efficient address use.
+**A:** Variable Length Subnet Mask, different subnet sizes within a single network for efficient address use.
 
-**Q:** NAT vs PAT — one-line difference?
+**Q:** NAT vs PAT, one-line difference?
 **A:** NAT translates IPs 1:1. PAT (overload) translates many internal IPs to one public IP using unique port numbers.
 
 **Q:** IPv6 loopback address?
@@ -371,10 +371,10 @@
 **Q:** IPv6 multicast prefix?
 **A:** FF00::/8.
 
-**Q:** SLAAC — what is it?
-**A:** Stateless Address Auto-Configuration — IPv6 host generates its own address from router advertisement + interface ID. No DHCP needed.
+**Q:** SLAAC, what is it?
+**A:** Stateless Address Auto-Configuration, IPv6 host generates its own address from router advertisement + interface ID. No DHCP needed.
 
-**Q:** EUI-64 — what does it do?
+**Q:** EUI-64, what does it do?
 **A:** Generates the host portion of an IPv6 address from the MAC by flipping the 7th bit and inserting FFFE in the middle.
 
 **Q:** Default gateway = ?
@@ -384,20 +384,20 @@
 
 ## 🔀 SECTION 3: ROUTING & SWITCHING
 
-**Q:** Distance vector vs link state — name one of each.
-**A:** Distance vector: RIP (or EIGRP — hybrid). Link state: OSPF, IS-IS.
+**Q:** Distance vector vs link state, name one of each.
+**A:** Distance vector: RIP (or EIGRP, hybrid). Link state: OSPF, IS-IS.
 
 **Q:** What is OSPF's metric?
 **A:** Cost (based on bandwidth: reference bandwidth / link bandwidth).
 
 **Q:** What is EIGRP's metric?
-**A:** Composite — bandwidth + delay by default (can include load, reliability, MTU).
+**A:** Composite, bandwidth + delay by default (can include load, reliability, MTU).
 
 **Q:** RIP max hop count?
 **A:** 15. 16 = unreachable.
 
-**Q:** BGP — what does it do?
-**A:** Border Gateway Protocol — routes between autonomous systems on the Internet. The "Internet's routing protocol."
+**Q:** BGP, what does it do?
+**A:** Border Gateway Protocol, routes between autonomous systems on the Internet. The "Internet's routing protocol."
 
 **Q:** Default 802.1Q VLAN tag size?
 **A:** 4 bytes added to the Ethernet header. VLAN ID = 12 bits (max 4,094 usable VLANs).
@@ -418,12 +418,12 @@
 **A:** Root port (best path to root), Designated port (forwarding on a segment), Blocking/Alternate port (loop-free standby).
 
 **Q:** What is RSTP?
-**A:** Rapid STP (802.1w) — much faster convergence (seconds vs ~50s for classic STP).
+**A:** Rapid STP (802.1w), much faster convergence (seconds vs ~50s for classic STP).
 
 **Q:** Link aggregation standard?
 **A:** 802.3ad / LACP (Link Aggregation Control Protocol). Bundles multiple physical links into one logical link.
 
-**Q:** Port security — what does sticky MAC mean?
+**Q:** Port security, what does sticky MAC mean?
 **A:** Switch dynamically learns the MAC on the port and saves it as a static, allowed entry.
 
 ---
@@ -446,7 +446,7 @@
 **A:** 2.4 GHz: longer range, slower, more interference. 5 GHz: shorter range, faster, less crowded.
 
 **Q:** WPA3 personal authentication uses?
-**A:** SAE (Simultaneous Authentication of Equals) — replaces WPA2's PSK 4-way handshake, defeats offline dictionary attacks.
+**A:** SAE (Simultaneous Authentication of Equals), replaces WPA2's PSK 4-way handshake, defeats offline dictionary attacks.
 
 **Q:** WPA2 Enterprise authentication uses?
 **A:** 802.1X with RADIUS + EAP (PEAP, EAP-TLS, etc.).
@@ -454,35 +454,35 @@
 **Q:** What is a captive portal?
 **A:** Web page that intercepts HTTP requests on a guest network, forcing terms-of-use or sign-in before granting Internet access.
 
-**Q:** Site survey — purpose?
+**Q:** Site survey, purpose?
 **A:** Measure RF coverage, detect interference, plan AP placement and channel reuse.
 
 **Q:** SSID purpose?
-**A:** Service Set Identifier — the human-readable name of a wireless network (max 32 characters).
+**A:** Service Set Identifier, the human-readable name of a wireless network (max 32 characters).
 
 ---
 
 ## 🗂️ SECTION 5: NETWORK SERVICES & CLOUD
 
-**Q:** DNS A record — what does it map?
+**Q:** DNS A record, what does it map?
 **A:** Hostname → IPv4 address.
 
-**Q:** DNS AAAA record — what does it map?
+**Q:** DNS AAAA record, what does it map?
 **A:** Hostname → IPv6 address.
 
-**Q:** DNS CNAME record — what does it do?
+**Q:** DNS CNAME record, what does it do?
 **A:** Alias one hostname to another (canonical name).
 
-**Q:** DNS MX record — purpose?
-**A:** Mail Exchange — points to a domain's mail servers (with a priority/preference value).
+**Q:** DNS MX record, purpose?
+**A:** Mail Exchange, points to a domain's mail servers (with a priority/preference value).
 
-**Q:** DNS PTR record — purpose?
-**A:** Reverse lookup — IP → hostname. Used in spam filtering, logging.
+**Q:** DNS PTR record, purpose?
+**A:** Reverse lookup, IP → hostname. Used in spam filtering, logging.
 
-**Q:** DNS TXT record — common uses?
+**Q:** DNS TXT record, common uses?
 **A:** SPF, DKIM, DMARC anti-spam records; domain ownership verification.
 
-**Q:** DNS SRV record — purpose?
+**Q:** DNS SRV record, purpose?
 **A:** Locate the host and port for a specific service (used by SIP, AD, XMPP).
 
 **Q:** DNS NS record?
@@ -491,10 +491,10 @@
 **Q:** DNS port and protocol?
 **A:** UDP 53 for queries; TCP 53 for zone transfers and responses >512 bytes.
 
-**Q:** DHCP DORA — what do the letters stand for?
+**Q:** DHCP DORA, what do the letters stand for?
 **A:** Discover, Offer, Request, Acknowledge.
 
-**Q:** DHCP — UDP ports?
+**Q:** DHCP, UDP ports?
 **A:** Client: UDP 68. Server: UDP 67.
 
 **Q:** DHCP reservation vs scope?
@@ -506,7 +506,7 @@
 **Q:** NTP port and protocol?
 **A:** UDP 123.
 
-**Q:** FTP — control + data ports?
+**Q:** FTP, control + data ports?
 **A:** TCP 21 (control), TCP 20 (active-mode data).
 
 **Q:** SFTP port?
@@ -521,63 +521,63 @@
 **Q:** Azure dedicated cloud link?
 **A:** Azure ExpressRoute.
 
-**Q:** SD-WAN — one-line definition?
-**A:** Software-Defined WAN — centrally managed overlay that intelligently routes traffic across multiple links (MPLS, broadband, LTE) based on policy and link health.
+**Q:** SD-WAN, one-line definition?
+**A:** Software-Defined WAN, centrally managed overlay that intelligently routes traffic across multiple links (MPLS, broadband, LTE) based on policy and link health.
 
 ---
 
 ## 🔒 SECTION 6: NETWORK SECURITY
 
-**Q:** Stateful vs stateless firewall — one-line difference.
+**Q:** Stateful vs stateless firewall, one-line difference.
 **A:** Stateful tracks connection state (allows replies to outbound automatically). Stateless evaluates each packet in isolation.
 
 **Q:** Next-Gen Firewall adds what beyond stateful?
 **A:** Application-layer inspection, IDS/IPS integration, user identity awareness, TLS decryption.
 
-**Q:** IDS vs IPS — one-line difference.
+**Q:** IDS vs IPS, one-line difference.
 **A:** IDS detects and alerts (out-of-band). IPS detects and blocks (inline).
 
-**Q:** ACL — what is it?
-**A:** Access Control List — ordered rules permitting or denying traffic based on packet attributes (IPs, ports, protocols).
+**Q:** ACL, what is it?
+**A:** Access Control List, ordered rules permitting or denying traffic based on packet attributes (IPs, ports, protocols).
 
-**Q:** NAC — purpose?
-**A:** Network Access Control — posture-checks devices (patch level, AV, OS) before granting network access.
+**Q:** NAC, purpose?
+**A:** Network Access Control, posture-checks devices (patch level, AV, OS) before granting network access.
 
 **Q:** Zero Trust core principle?
-**A:** "Never trust, always verify" — no implicit trust based on network location.
+**A:** "Never trust, always verify", no implicit trust based on network location.
 
-**Q:** IPsec — two main protocols?
-**A:** AH (Authentication Header — integrity only) and ESP (Encapsulating Security Payload — encryption + integrity). ESP is what's used in practice.
+**Q:** IPsec, two main protocols?
+**A:** AH (Authentication Header integrity only) and ESP (Encapsulating Security Payload encryption + integrity). ESP is what's used in practice.
 
-**Q:** IPsec — two modes?
+**Q:** IPsec, two modes?
 **A:** Transport mode (encrypts payload only, host-to-host) and Tunnel mode (encrypts entire packet, gateway-to-gateway VPNs).
 
 **Q:** SSL/TLS VPN benefits over IPsec?
 **A:** Works over TCP 443 (firewall-friendly), often clientless (browser-based), easier remote-user deployment.
 
-**Q:** 802.1X — what does it do?
+**Q:** 802.1X, what does it do?
 **A:** Port-based authentication for wired/wireless. Three roles: supplicant (client), authenticator (switch/AP), authentication server (RADIUS).
 
 ---
 
 ## 📊 SECTION 7: MONITORING & TOOLS
 
-**Q:** SNMP — port and purpose?
+**Q:** SNMP, port and purpose?
 **A:** UDP 161 (queries), UDP 162 (traps). Polls device metrics like CPU, interface counters, errors.
 
 **Q:** Three SNMP versions?
-**A:** v1 (cleartext community strings), v2c (cleartext, bulk ops), v3 (authentication + encryption — use this).
+**A:** v1 (cleartext community strings), v2c (cleartext, bulk ops), v3 (authentication + encryption, use this).
 
-**Q:** Syslog — port and purpose?
+**Q:** Syslog, port and purpose?
 **A:** UDP 514 (TCP 6514 for syslog over TLS). Collects log messages from network devices into a central server.
 
-**Q:** Syslog severity levels — name a few in order?
+**Q:** Syslog severity levels, name a few in order?
 **A:** 0 Emergency, 1 Alert, 2 Critical, 3 Error, 4 Warning, 5 Notice, 6 Informational, 7 Debug.
 
-**Q:** NetFlow — what does it report?
+**Q:** NetFlow, what does it report?
 **A:** Per-flow traffic metadata (source/dest IP + port, protocol, byte/packet counts). For bandwidth analysis and security visibility.
 
-**Q:** Latency vs jitter — one-line each.
+**Q:** Latency vs jitter, one-line each.
 **A:** Latency = average round-trip time. Jitter = variation in latency over time (bad for VoIP/video).
 
 **Q:** Throughput vs bandwidth?
@@ -589,7 +589,7 @@
 **Q:** What command tests reachability with ICMP echo?
 **A:** `ping`.
 
-**Q:** `nslookup` vs `dig` — purpose?
+**Q:** `nslookup` vs `dig`, purpose?
 **A:** Both perform DNS lookups from the CLI. `dig` (Linux/macOS) gives more detailed output; `nslookup` is cross-platform.
 
 **Q:** What does Wireshark do?
@@ -606,7 +606,7 @@
 **A:** 1) Identify the problem, 2) Establish a theory of probable cause, 3) Test the theory, 4) Plan of action, 5) Implement the solution, 6) Verify full system functionality, 7) Document findings and outcomes.
 
 **Q:** When testing your theory fails, what's the next move?
-**A:** Establish a NEW theory (back to step 2) — or escalate.
+**A:** Establish a NEW theory (back to step 2), or escalate.
 
 **Q:** What does "approach the problem from the top down" mean in OSI troubleshooting?
 **A:** Start at Layer 7 (the application) and work down toward Layer 1.
@@ -614,17 +614,17 @@
 **Q:** Bottom-up troubleshooting starts where?
 **A:** Layer 1 (cables, signal, link lights) and works up.
 
-**Q:** Cable tester vs cable certifier vs TDR — purpose?
+**Q:** Cable tester vs cable certifier vs TDR, purpose?
 **A:** Tester checks continuity / pinout. Certifier validates against TIA category (e.g., Cat6 specs). TDR (Time-Domain Reflectometer) locates faults by distance.
 
-**Q:** Wi-Fi signal strength — what units?
+**Q:** Wi-Fi signal strength, what units?
 **A:** dBm (decibel-milliwatts). -30 dBm = excellent, -67 = good for VoIP, -80 = poor, -90 = unusable.
 
 **Q:** What is duplex mismatch?
 **A:** One end of a link is full-duplex, other is half-duplex. Symptom: connectivity works but throughput collapses with errors/collisions.
 
 **Q:** What's the easy fix for a "works on one switch port, broken on another" issue?
-**A:** Check the port config — VLAN assignment, duplex/speed, port security, errors. Or simply move the cable to a known-good port and verify.
+**A:** Check the port config, VLAN assignment, duplex/speed, port security, errors. Or simply move the cable to a known-good port and verify.
 
 ---
 
@@ -637,7 +637,7 @@
 **A:** SSH / SFTP / SCP. TCP.
 
 **Q:** Port 23?
-**A:** Telnet (cleartext — don't use). TCP.
+**A:** Telnet (cleartext, don't use). TCP.
 
 **Q:** Port 25?
 **A:** SMTP. TCP.
@@ -706,11 +706,11 @@
 **Q:** Often-wrong answer phrases:
 **A:** "Skip documentation" / "Use Telnet" / "Use FTP for sensitive data" / "Disable STP to fix loops" / "Trust traffic from inside the network" / "Use WEP" / "Hardcode passwords in plaintext config."
 
-**Q:** "FIRST" in a question — what's it asking?
+**Q:** "FIRST" in a question, what's it asking?
 **A:** Initial step. Often identification, isolation, or following the troubleshooting model in order.
 
-**Q:** "BEST" or "MOST appropriate" — strategy?
-**A:** Multiple answers may "work" — pick the one that is most efficient, secure, and aligned with the methodology.
+**Q:** "BEST" or "MOST appropriate", strategy?
+**A:** Multiple answers may "work", pick the one that is most efficient, secure, and aligned with the methodology.
 
 ---
 
@@ -718,7 +718,7 @@
 
 1. **Anki recommendation:** Spaced repetition is undefeated.
 2. **Daily review:** 10–15 min/day until exam.
-3. **Subnetting daily:** Add 5 fresh subnetting drills to your routine — they'll feel like math homework, then they'll feel like reflex.
+3. **Subnetting daily:** Add 5 fresh subnetting drills to your routine, they'll feel like math homework, then they'll feel like reflex.
 4. **Add cards as you find weak spots:** Reading.md → wrong quiz answers → new card.
 5. **Mix decks:** Don't just review one section at a time. Interleave.
 
@@ -737,6 +737,6 @@ You should be able to instantly answer:
 - The 7-step CompTIA troubleshooting model
 - IPsec vs SSL/TLS VPN differences
 - VLAN tagging (802.1Q), native VLAN, trunk vs access port
-- STP basics — root bridge election, port roles
+- STP basics, root bridge election, port roles
 
 Good luck! 🚀

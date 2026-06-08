@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">The Graph Editor — Mastering Ease In/Ease Out</p>
+      <p class="vg-title">The Graph Editor, Mastering Ease In/Ease Out</p>
       <p class="vg-creator">Animation Mentor / School of Motion</p>
       <span class="vg-duration">⏱ 22 min · F-curves, S-curves, and what they produce</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Bambi Deer-on-Ice — Timing Breakdown</p>
+      <p class="vg-title">Bambi Deer-on-Ice, Timing Breakdown</p>
       <p class="vg-creator">Animation Analysis Channel</p>
       <span class="vg-duration">⏱ 15 min · Frame-by-frame timing analysis</span>
     </div>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The Incredibles Fight Scene — Timing & Rhythm</p>
+      <p class="vg-title">The Incredibles Fight Scene, Timing & Rhythm</p>
       <p class="vg-creator">Corridor Crew / Pixar analysis</p>
       <span class="vg-duration">⏱ 15 min · Fast action timing vs dramatic timing</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Frame Rates Explained — 24fps vs 30fps vs 60fps</p>
+      <p class="vg-title">Frame Rates Explained, 24fps vs 30fps vs 60fps</p>
       <p class="vg-creator">Tom Scott / Corridor Digital</p>
       <span class="vg-duration">⏱ 12 min · Why 24fps feels "cinematic"</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Spider-Verse "On 2s" — Why Miles Animates at 12fps</p>
+      <p class="vg-title">Spider-Verse "On 2s", Why Miles Animates at 12fps</p>
       <p class="vg-creator">Corridor Crew / Sony Pictures Animation</p>
       <span class="vg-duration">⏱ 20 min · The creative decision behind the frame rate choice</span>
     </div>

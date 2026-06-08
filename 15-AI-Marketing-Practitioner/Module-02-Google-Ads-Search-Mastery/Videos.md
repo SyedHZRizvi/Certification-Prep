@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Google Ads Search Mastery
 
-> **How to use:** Watch the Essentials in order — they build on each other. Then dip into Recommended after you've launched your first campaign.
+> **How to use:** Watch the Essentials in order, they build on each other. Then dip into Recommended after you've launched your first campaign.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -38,9 +38,9 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Match Types in 2026 — What Actually Works</p>
+      <p class="vg-title">Match Types in 2026, What Actually Works</p>
       <p class="vg-creator">Aaron Young (Define Digital)</p>
-      <span class="vg-duration">⏱ 15 min · BMM is dead — what now</span>
+      <span class="vg-duration">⏱ 15 min · BMM is dead, what now</span>
     </div>
   </a>
   <a class="vg-card" data-video-id="FvmO43J7iCo" href="https://www.youtube.com/results?search_query=Kasim+Aslam+smart+bidding+strategies+google+ads" target="_blank" rel="noopener">
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Responsive Search Ads — Hit Excellent Ad Strength</p>
+      <p class="vg-title">Responsive Search Ads, Hit Excellent Ad Strength</p>
       <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 16 min · The RSA writing framework</span>
     </div>
@@ -71,7 +71,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Where Google Ads Is Headed (Strategy Deep Dive)</p>
-      <p class="vg-creator">Frederick Vallaeys — Optmyzr</p>
+      <p class="vg-creator">Frederick Vallaeys, Optmyzr</p>
       <span class="vg-duration">⏱ 22 min · Ex-Googler strategist</span>
     </div>
   </a>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Negative Keyword Strategy — Weekly Routine</p>
+      <p class="vg-title">Negative Keyword Strategy, Weekly Routine</p>
       <p class="vg-creator">Aaron Young</p>
       <span class="vg-duration">⏱ 13 min · Real screen-share</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Google Ads Editor — Bulk Editing 101</p>
+      <p class="vg-title">Google Ads Editor, Bulk Editing 101</p>
       <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 18 min · The pro tool</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Google Ads Search Cert — Study Guide</p>
+      <p class="vg-title">Google Ads Search Cert, Study Guide</p>
       <p class="vg-creator">Multiple educators</p>
       <span class="vg-duration">⏱ 25 min · Direct exam prep</span>
     </div>

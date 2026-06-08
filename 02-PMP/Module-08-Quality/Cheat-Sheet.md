@@ -21,8 +21,8 @@
 ---
 
 ## 🔄 Cycles
-- **PDCA** — Plan, Do, Check, Act (Deming)
-- **DMAIC** — Define, Measure, Analyze, Improve, Control (Six Sigma)
+- **PDCA**, Plan, Do, Check, Act (Deming)
+- **DMAIC**, Define, Measure, Analyze, Improve, Control (Six Sigma)
 
 ---
 
@@ -58,8 +58,8 @@
 ---
 
 ## ⚖️ Tolerances vs Control Limits
-- **Tolerances** — customer-specified
-- **Control limits** — process-based
+- **Tolerances**, customer-specified
+- **Control limits**, process-based
 
 ---
 

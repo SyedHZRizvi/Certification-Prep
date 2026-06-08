@@ -1,24 +1,24 @@
 # Module 2: Networking Fundamentals 🌐
 
-> **Why this module matters:** 20% of the 220-1101 exam — about 18 questions, your second-largest Core 1 chapter. Networking is also the *most-tested* concept implicitly across every other module: troubleshooting, security, mobile, virtualization all assume you know cables, ports, and the layer-by-layer model. Get this cold or every later module is harder.
+> **Why this module matters:** 20% of the 220-1101 exam, about 18 questions, your second-largest Core 1 chapter. Networking is also the *most-tested* concept implicitly across every other module: troubleshooting, security, mobile, virtualization all assume you know cables, ports, and the layer-by-layer model. Get this cold or every later module is harder.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic IP concepts (you know your home router has an IP and your phone has an IP)
 > - Plugging in an Ethernet cable / joining a Wi-Fi network
 >
-> If those are unfamiliar, take 15 minutes to find your home router's admin page in a browser and look around. You don't need to change anything — just see what's there.
+> If those are unfamiliar, take 15 minutes to find your home router's admin page in a browser and look around. You don't need to change anything, just see what's there.
 
 ---
 
 ## 🏢 A Story: The 12-Year-Old Cable That Killed an Acquisition
 
-Meet Reza. He's a 23-year-old field tech for a managed-service provider. His client — a 60-person law firm — has just acquired a smaller firm and is consolidating both offices into a single floor of a Class-A downtown building. The cable installer pulled new Cat 6a everywhere. The new switch fleet is gigabit-managed. Wi-Fi 6E mesh APs are bolted in. Reza's been on-site for two days getting it ready for the partners to walk in Monday morning.
+Meet Reza. He's a 23-year-old field tech for a managed-service provider. His client a 60-person law firm has just acquired a smaller firm and is consolidating both offices into a single floor of a Class-A downtown building. The cable installer pulled new Cat 6a everywhere. The new switch fleet is gigabit-managed. Wi-Fi 6E mesh APs are bolted in. Reza's been on-site for two days getting it ready for the partners to walk in Monday morning.
 
-Sunday night, the network breaks. Specifically: every conference-room jack works except one — the largest one, the one the senior partner will video-conference from at 9:00 a.m. tomorrow with a $40M acquisition counter-party.
+Sunday night, the network breaks. Specifically: every conference-room jack works except one, the largest one, the one the senior partner will video-conference from at 9:00 a.m. tomorrow with a $40M acquisition counter-party.
 
-Reza checks the jack with a cable tester. Continuity, all 8 pins, pass. He swaps the patch cable. No difference. He swaps the keystone jack on the wall. No difference. He moves the laptop to a different jack — it works. The partner needs *this* jack.
+Reza checks the jack with a cable tester. Continuity, all 8 pins, pass. He swaps the patch cable. No difference. He swaps the keystone jack on the wall. No difference. He moves the laptop to a different jack, it works. The partner needs *this* jack.
 
-He pulls the patch panel cover. The horizontal cable feeding that jack is **Cat 5** — not 5e, not 6, not 6a. Cat 5. The installer hadn't replaced one run because it disappeared into the wall behind a structural beam they couldn't access. Cat 5 maxes at 100 Mbps. The switch port was negotiating gigabit, failing, and falling back — except some negotiations were just crashing the link entirely.
+He pulls the patch panel cover. The horizontal cable feeding that jack is **Cat 5** not 5e, not 6, not 6a. Cat 5. The installer hadn't replaced one run because it disappeared into the wall behind a structural beam they couldn't access. Cat 5 maxes at 100 Mbps. The switch port was negotiating gigabit, failing, and falling back except some negotiations were just crashing the link entirely.
 
 Reza ran a fresh Cat 6a from a nearby empty conduit at 11 p.m., punched it down, retested at gigabit. Done by 2 a.m. The partner walked in at 8:55, plugged in, and started the call.
 
@@ -26,7 +26,7 @@ Reza ran a fresh Cat 6a from a nearby empty conduit at 11 p.m., punched it down,
 
 ---
 
-## 📋 Cables — The Physical Layer
+## 📋 Cables, The Physical Layer
 
 ### Twisted-pair copper (Ethernet)
 
@@ -40,10 +40,10 @@ Reza ran a fresh Cat 6a from a nearby empty conduit at 11 p.m., punched it down,
 | **Cat 7** | 10 Gbps | 100m | 600 MHz | Shielded, not widely adopted; uses GG45/TERA |
 | **Cat 8** | 25–40 Gbps | 30m only | 2000 MHz | Data center top-of-rack only |
 
-Two pin-out standards — **T568A** and **T568B** — for terminating an RJ-45.
+Two pin-out standards **T568A** and **T568B** for terminating an RJ-45.
 
 - **Straight-through** patch cable: both ends are the same standard (both A or both B). Use to connect PC ↔ switch, router ↔ switch.
-- **Crossover** cable: one end A, other end B. Use to connect two like devices (PC ↔ PC, switch ↔ switch) — *unless* one of them supports Auto-MDI/MDIX (almost everything does since ~2003). On the exam, the crossover question still appears.
+- **Crossover** cable: one end A, other end B. Use to connect two like devices (PC ↔ PC, switch ↔ switch), *unless* one of them supports Auto-MDI/MDIX (almost everything does since ~2003). On the exam, the crossover question still appears.
 - **Rollover (console) cable**: reverses all 8 wires. Used to connect a PC serial port to a Cisco router console port.
 
 ### Coaxial
@@ -62,7 +62,7 @@ Connector: **F-type** (screw-on threaded).
 | **Single-mode (SMF)** | ~9 μm | Up to 40+ km | Laser | Yellow |
 | **Multi-mode (MMF)** | 50 or 62.5 μm | Up to 2 km | LED or VCSEL | Orange (OM1/OM2), aqua (OM3), aqua/erika violet (OM4/OM5) |
 
-**Connectors:** LC (small, dual-fiber, most common in data centers), SC (square push-pull), ST (round bayonet — legacy), MTP/MPO (multi-fiber bundle for 40/100/400G).
+**Connectors:** LC (small, dual-fiber, most common in data centers), SC (square push-pull), ST (round bayonet, legacy), MTP/MPO (multi-fiber bundle for 40/100/400G).
 
 ---
 
@@ -135,23 +135,23 @@ Enterprise modes (WPA2-Enterprise / WPA3-Enterprise) use **802.1X / RADIUS / EAP
 
 ### Special / loopback / APIPA
 
-- **127.0.0.0/8** — loopback (`127.0.0.1`)
-- **169.254.0.0/16** — APIPA (Automatic Private IP Addressing) — assigned by Windows when DHCP fails
-- **224.0.0.0/4** — multicast
-- **255.255.255.255** — limited broadcast
+- **127.0.0.0/8**, loopback (`127.0.0.1`)
+- **169.254.0.0/16** APIPA (Automatic Private IP Addressing) assigned by Windows when DHCP fails
+- **224.0.0.0/4**, multicast
+- **255.255.255.255**, limited broadcast
 
 ### IPv6 essentials
 
 - 128 bits, written as 8 groups of 4 hex digits separated by colons: `2001:0db8:85a3::8a2e:0370:7334`
 - `::` compresses one run of consecutive zero groups (only once per address)
-- **Link-local prefix:** `fe80::/10` (analogous to APIPA — every IPv6 interface gets one)
+- **Link-local prefix:** `fe80::/10` (analogous to APIPA, every IPv6 interface gets one)
 - **Unique local (ULA):** `fc00::/7` (analogous to RFC 1918 private)
-- **Global unicast:** `2000::/3` — internet-routable
+- **Global unicast:** `2000::/3`, internet-routable
 
 ### Subnetting in 60 seconds (just enough for A+)
 
 A subnet mask of `/24` = 256 addresses (254 usable: 1 network + 1 broadcast reserved).
-`/25` = 128 addresses. `/26` = 64. `/27` = 32. `/28` = 16. `/29` = 8. `/30` = 4 (2 usable — point-to-point links).
+`/25` = 128 addresses. `/26` = 64. `/27` = 32. `/28` = 16. `/29` = 8. `/30` = 4 (2 usable, point-to-point links).
 
 🎯 **Exam pattern:** *"A user can ping 192.168.1.10 but not 8.8.8.8."* → Local works; off-network fails. Check **default gateway** and **DNS**.
 
@@ -163,11 +163,11 @@ A subnet mask of `/24` = 256 addresses (254 usable: 1 network + 1 broadcast rese
 |------|----------|---------|
 | 20/21 | FTP | File transfer (control/data) |
 | 22 | SSH / SFTP / SCP | Encrypted shell + file transfer |
-| 23 | Telnet | Unencrypted remote shell — **do not use** |
+| 23 | Telnet | Unencrypted remote shell, **do not use** |
 | 25 | SMTP | Mail server-to-server |
 | 53 | DNS | Name resolution (TCP and UDP) |
 | 67/68 | DHCP | IP assignment (server/client) |
-| 69 | TFTP | Trivial FTP — firmware updates, PXE boot |
+| 69 | TFTP | Trivial FTP, firmware updates, PXE boot |
 | 80 | HTTP | Web (unencrypted) |
 | 110 | POP3 | Mail fetch |
 | 123 | NTP | Time sync |
@@ -198,17 +198,17 @@ A subnet mask of `/24` = 256 addresses (254 usable: 1 network + 1 broadcast rese
 
 ---
 
-## 📶 The SOHO Router — What's Actually Inside
+## 📶 The SOHO Router, What's Actually Inside
 
 A typical home/small-office router is *multiple devices in one box*:
 
-1. **Modem** (often separate) — translates between ISP medium (cable, DSL, fiber) and Ethernet
-2. **Router** — does NAT and forwards between LAN and WAN
-3. **Switch** — 4–8 LAN ports
-4. **Wireless AP** — broadcasts SSID(s)
-5. **DHCP server** — hands out IPs to clients
-6. **Firewall** — basic packet filtering, often SPI (Stateful Packet Inspection)
-7. **DNS forwarder** — points clients at ISP's DNS by default
+1. **Modem** (often separate), translates between ISP medium (cable, DSL, fiber) and Ethernet
+2. **Router**, does NAT and forwards between LAN and WAN
+3. **Switch**, 4–8 LAN ports
+4. **Wireless AP**, broadcasts SSID(s)
+5. **DHCP server**, hands out IPs to clients
+6. **Firewall**, basic packet filtering, often SPI (Stateful Packet Inspection)
+7. **DNS forwarder**, points clients at ISP's DNS by default
 
 ### Common SOHO settings to know
 
@@ -217,11 +217,11 @@ A typical home/small-office router is *multiple devices in one box*:
 | **SSID** | Wi-Fi network name |
 | **PSK / WPA3 passphrase** | Wi-Fi password |
 | **Channel** | 2.4 GHz: pick 1/6/11 (non-overlapping). 5 GHz: many to choose. |
-| **Channel width** | 20/40/80/160 MHz — wider = faster but more interference |
-| **MAC filtering** | Allow/deny specific device MACs — weak security, easily spoofed |
+| **Channel width** | 20/40/80/160 MHz, wider = faster but more interference |
+| **MAC filtering** | Allow/deny specific device MACs, weak security, easily spoofed |
 | **Port forwarding** | Inbound NAT for hosting services |
-| **DMZ host** | Forwards *all* inbound to one host — risky |
-| **UPnP** | Apps auto-create port-forward rules — convenient but security risk |
+| **DMZ host** | Forwards *all* inbound to one host, risky |
+| **UPnP** | Apps auto-create port-forward rules, convenient but security risk |
 | **Guest network** | Isolated SSID with no LAN access |
 | **DHCP reservation** | Always assign same IP to a specific MAC |
 
@@ -233,12 +233,12 @@ A typical home/small-office router is *multiple devices in one box*:
 |------|---------------|----------|
 | **DSL** | 1–100 Mbps down, slower up | Phone-line broadband; declining |
 | **Cable (DOCSIS 3.1)** | 100–1,000+ Mbps down | Most US/EU homes |
-| **Fiber to the Home (FTTH/GPON)** | 200 Mbps – 10 Gbps symmetric | Best — symmetric up/down |
+| **Fiber to the Home (FTTH/GPON)** | 200 Mbps – 10 Gbps symmetric | Best, symmetric up/down |
 | **Cellular (4G/5G fixed wireless)** | 50 Mbps – 1 Gbps | Rural, T-Mobile/Verizon home internet |
 | **Satellite (geostationary)** | 10–50 Mbps, ~600ms latency | Remote areas; latency hurts gaming/VoIP |
-| **Satellite (LEO — Starlink)** | 50–250 Mbps, 30–50ms latency | Rural broadband replacement |
+| **Satellite (LEO, Starlink)** | 50–250 Mbps, 30–50ms latency | Rural broadband replacement |
 | **WISP (Wireless ISP)** | 25–300 Mbps | Rural fixed-wireless |
-| **Dial-up** | 56 Kbps | Almost extinct — emergency backup only |
+| **Dial-up** | 56 Kbps | Almost extinct, emergency backup only |
 
 ---
 
@@ -250,10 +250,10 @@ A typical home/small-office router is *multiple devices in one box*:
 | **Tone generator + probe** | Trace a cable end-to-end in a wall/punch panel |
 | **Crimper** | Attach RJ-45/RJ-11 to a cable |
 | **Punch-down tool** | Terminate cable into keystone jack / patch panel |
-| **Wi-Fi analyzer** | Shows SSIDs, channels, signal strength — pick best channel |
+| **Wi-Fi analyzer** | Shows SSIDs, channels, signal strength, pick best channel |
 | **Loopback plug** | Tests a NIC by looping TX → RX |
 | **Multimeter** | Continuity / voltage on cables and connectors |
-| **Cable certifier** (Fluke) | Pro-grade — measures NEXT, return loss, certifies Cat 6a |
+| **Cable certifier** (Fluke) | Pro-grade, measures NEXT, return loss, certifies Cat 6a |
 | **Network tap / SPAN port** | Mirror traffic for analysis (Wireshark) |
 
 ### Command-line basics
@@ -278,12 +278,12 @@ A typical home/small-office router is *multiple devices in one box*:
 > **Scenario:** A user reports "I can't reach the internet but I can print to the office printer." Other users in the same office are unaffected.
 
 **Walkthrough:**
-1. **Identify the problem** — *one* user, only *internet* (off-LAN), LAN (printer) works.
-2. **Establish a theory** — Local IP and LAN routing fine. Off-LAN failing. Possibilities: (a) default gateway misconfigured/wrong; (b) DNS broken (try `ping 8.8.8.8` to bypass DNS); (c) HOSTS file poisoned; (d) firewall blocking outbound for this user.
-3. **Test the theory** — `ipconfig /all` shows default gateway = `192.168.1.10` but the office gateway is `192.168.1.1`. Static IP was set by a previous tech and never cleaned up.
-4. **Plan of action** — Switch to DHCP (or correct the static config).
-5. **Verify** — `ping 8.8.8.8` succeeds; `ping google.com` succeeds; user can browse.
-6. **Document** — note in KB: "User's NIC had static IP from prior tech. Switched to DHCP."
+1. **Identify the problem**, *one* user, only *internet* (off-LAN), LAN (printer) works.
+2. **Establish a theory**, Local IP and LAN routing fine. Off-LAN failing. Possibilities: (a) default gateway misconfigured/wrong; (b) DNS broken (try `ping 8.8.8.8` to bypass DNS); (c) HOSTS file poisoned; (d) firewall blocking outbound for this user.
+3. **Test the theory**, `ipconfig /all` shows default gateway = `192.168.1.10` but the office gateway is `192.168.1.1`. Static IP was set by a previous tech and never cleaned up.
+4. **Plan of action**, Switch to DHCP (or correct the static config).
+5. **Verify**, `ping 8.8.8.8` succeeds; `ping google.com` succeeds; user can browse.
+6. **Document**, note in KB: "User's NIC had static IP from prior tech. Switched to DHCP."
 
 This is layer-by-layer thinking: physical (cable plugged in?) → link (DHCP got an IP?) → network (right gateway? DNS works?) → transport/app (does the destination answer?).
 
@@ -293,13 +293,13 @@ This is layer-by-layer thinking: physical (cable plugged in?) → link (DHCP got
 
 | Misconception | Reality |
 |---------------|---------|
-| "Cat 6 always runs 10 Gbps over 100m" | No — Cat 6 is 1 Gbps over 100m, or 10 Gbps over only 55m. Cat 6a runs 10 Gbps over the full 100m. |
+| "Cat 6 always runs 10 Gbps over 100m" | No, Cat 6 is 1 Gbps over 100m, or 10 Gbps over only 55m. Cat 6a runs 10 Gbps over the full 100m. |
 | "Hub = switch" | Hub repeats to all ports (collision domain). Switch learns MACs and forwards selectively. |
 | "An IP and a MAC are the same" | MAC = layer 2, hardware burned-in. IP = layer 3, logical, assigned. |
 | "DHCP always uses TCP" | DHCP uses UDP 67/68. |
 | "5 GHz is always faster than 2.4 GHz" | Faster *throughput*, shorter *range*. Through walls, 2.4 GHz may have better signal. |
 | "WPA2 and WPA3 are the same" | WPA3 uses SAE (replaces PSK 4-way handshake), more resistant to offline brute force. |
-| "Crossover cables are still needed" | Almost never — Auto-MDI/MDIX since ~2003. Still exam-tested. |
+| "Crossover cables are still needed" | Almost never, Auto-MDI/MDIX since ~2003. Still exam-tested. |
 | "DMZ is safe" | A DMZ *host* in a SOHO router forwards all unsolicited traffic to one host. Very risky. |
 
 ---
@@ -308,9 +308,9 @@ This is layer-by-layer thinking: physical (cable plugged in?) → link (DHCP got
 
 | Term | Definition |
 |------|------------|
-| **DHCP** | Dynamic Host Configuration Protocol — assigns IPs (UDP 67/68) |
-| **DNS** | Domain Name System — name → IP (TCP/UDP 53) |
-| **NAT** | Network Address Translation — many private IPs ↔ one public |
+| **DHCP** | Dynamic Host Configuration Protocol, assigns IPs (UDP 67/68) |
+| **DNS** | Domain Name System, name → IP (TCP/UDP 53) |
+| **NAT** | Network Address Translation, many private IPs ↔ one public |
 | **APIPA** | 169.254.0.0/16 self-assigned when DHCP fails |
 | **PoE / PoE+ / PoE++** | Power over Ethernet (15.4 / 30 / 60–100W) |
 | **SSID** | Wi-Fi network name |
@@ -340,13 +340,13 @@ This is layer-by-layer thinking: physical (cable plugged in?) → link (DHCP got
 
 ---
 
-## 📊 Case Study — The 2016 Dyn DDoS (Mirai Botnet)
+## 📊 Case Study, The 2016 Dyn DDoS (Mirai Botnet)
 
-**Situation.** On 21 October 2016, Dyn (a major Managed DNS provider) suffered three massive distributed-denial-of-service (DDoS) waves between 11:10 UTC and 21:11 UTC. At peak, attack traffic exceeded **1.2 Tbps** — at the time, the largest DDoS ever recorded.
+**Situation.** On 21 October 2016, Dyn (a major Managed DNS provider) suffered three massive distributed-denial-of-service (DDoS) waves between 11:10 UTC and 21:11 UTC. At peak, attack traffic exceeded **1.2 Tbps**, at the time, the largest DDoS ever recorded.
 
-**The network detail.** The attack was launched by the **Mirai botnet** — roughly 100,000 compromised IoT devices: IP cameras, DVRs, home routers, baby monitors. The exploit chain was almost embarrassingly simple: Mirai scanned the public internet for Telnet (port 23) open with default credentials (`admin/admin`, `root/root`, factory defaults from a handful of manufacturers). Devices became bots in seconds. Once enlisted, each bot sent UDP and TCP floods at Dyn's authoritative DNS servers — and Dyn's customers (Twitter, GitHub, Reddit, Spotify, Netflix, Airbnb, Box, PayPal, Pinterest, Sony PlayStation Network) were unreachable for hours on the US East Coast.
+**The network detail.** The attack was launched by the **Mirai botnet** roughly 100,000 compromised IoT devices: IP cameras, DVRs, home routers, baby monitors. The exploit chain was almost embarrassingly simple: Mirai scanned the public internet for Telnet (port 23) open with default credentials (`admin/admin`, `root/root`, factory defaults from a handful of manufacturers). Devices became bots in seconds. Once enlisted, each bot sent UDP and TCP floods at Dyn's authoritative DNS servers and Dyn's customers (Twitter, GitHub, Reddit, Spotify, Netflix, Airbnb, Box, PayPal, Pinterest, Sony PlayStation Network) were unreachable for hours on the US East Coast.
 
-**Decision and outcome.** Dyn mitigated by aggressive Anycast re-routing, BGP scrubbing partnerships, and customer-side fail-over to secondary DNS providers (Google Public DNS, Cloudflare). The incident drove the cybersecurity industry to (a) demand vendors stop shipping devices with default Telnet credentials, (b) deprecate Telnet (port 23) entirely from any production exposure, and (c) advocate for **multi-provider DNS strategies** — having your domain delegated to two competing DNS providers so one outage doesn't kill you.
+**Decision and outcome.** Dyn mitigated by aggressive Anycast re-routing, BGP scrubbing partnerships, and customer-side fail-over to secondary DNS providers (Google Public DNS, Cloudflare). The incident drove the cybersecurity industry to (a) demand vendors stop shipping devices with default Telnet credentials, (b) deprecate Telnet (port 23) entirely from any production exposure, and (c) advocate for **multi-provider DNS strategies**, having your domain delegated to two competing DNS providers so one outage doesn't kill you.
 
 **Lesson for the exam / for practitioners.**
 - **Telnet (port 23) should be disabled or filtered at every perimeter.** SSH (port 22) replaces it.
@@ -366,7 +366,7 @@ You now know:
 
 - 📋 Cable categories (5e/6/6a) and pinouts (T568A/B, straight, crossover, rollover)
 - 📡 Wi-Fi standards 1–7 and the 2.4 vs 5 vs 6 GHz trade-offs
-- 🌐 IPv4 / IPv6 basics — private ranges, APIPA, subnet mask, default gateway, DNS
+- 🌐 IPv4 / IPv6 basics, private ranges, APIPA, subnet mask, default gateway, DNS
 - 🔢 The top 25 ports and protocols (port 22 = SSH, 53 = DNS, 80/443 = HTTP/S, 445 = SMB, 3389 = RDP)
 - 📶 What's inside a SOHO router (modem + router + switch + AP + DHCP + firewall)
 - 🛠️ The command-line toolkit: `ipconfig`, `ping`, `tracert`, `nslookup`, `netstat`, `arp`
@@ -375,23 +375,23 @@ You now know:
 1. 🎥 Watch: [Videos.md](./Videos.md)
 2. ✏️ Take the quiz: [Quiz.md](./Quiz.md)
 3. 📋 Print the [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 3 — Hardware](../Module-03-Hardware/Reading.md)
+4. ➡️ Move on: [Module 3, Hardware](../Module-03-Hardware/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 3](../Module-03-Hardware/Reading.md) covers NICs and motherboard headers; [Module 5](../Module-05-Troubleshooting/Reading.md) is the dedicated network-troubleshooting deep-dive. [Module 8](../Module-08-Security/Reading.md) revisits Wi-Fi security in depth.
-> - Cross-course: CompTIA Network+ (course 22) is the natural next certification — most of A+ networking is review there.
+> - Cross-course: CompTIA Network+ (course 22) is the natural next certification, most of A+ networking is review there.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 RFC 791 — Internet Protocol (Postel, 1981)
-- 📄 RFC 793 / 9293 — Transmission Control Protocol
-- 📄 RFC 1918 — Address Allocation for Private Internets (1996)
-- 📄 IEEE 802.11 series — Wi-Fi specifications
-- 📄 TIA-568-C — twisted-pair cabling standard
-- 📄 RFC 2131 — Dynamic Host Configuration Protocol (Droms, 1997)
+- 📄 RFC 791, Internet Protocol (Postel, 1981)
+- 📄 RFC 793 / 9293, Transmission Control Protocol
+- 📄 RFC 1918, Address Allocation for Private Internets (1996)
+- 📄 IEEE 802.11 series, Wi-Fi specifications
+- 📄 TIA-568-C, twisted-pair cabling standard
+- 📄 RFC 2131, Dynamic Host Configuration Protocol (Droms, 1997)
 
 **Case-study sources:**
 - 📄 Krebs on Security (October 2016). *KrebsOnSecurity Hit With Record DDoS*.
@@ -400,4 +400,4 @@ You now know:
 
 **Practitioner / exam:**
 - 📖 [Professor Messer 220-1101 networking module](https://www.professormesser.com/free-a-plus-training/220-1101/220-1101-video-training-course/)
-- 📖 *Computer Networking: A Top-Down Approach* (Kurose & Ross) — gold-standard textbook
+- 📖 *Computer Networking: A Top-Down Approach* (Kurose & Ross), gold-standard textbook

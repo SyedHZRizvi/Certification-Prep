@@ -8,16 +8,16 @@
 
 ## Questions
 
-### Q1. Did you pick a real subject (your own micro-product, friend's business, or indie maker) — NOT a hypothetical? *(Apply)*
-A. Yes — real subject, written agreement on data sharing
-B. Yes — real subject, verbal agreement
+### Q1. Did you pick a real subject (your own micro-product, friend's business, or indie maker), NOT a hypothetical? *(Apply)*
+A. Yes, real subject, written agreement on data sharing
+B. Yes, real subject, verbal agreement
 C. Real subject, no agreement
 D. Subject is hypothetical / made up
 
 ---
 
 ### Q2. Did you spend at least $150 across Google + Meta (or one of them if single-channel)? *(Apply)*
-A. Yes — $180–$220 spent
+A. Yes, $180–$220 spent
 B. $150–$179 or $221–$250
 C. $50–$149
 D. <$50 or didn't actually launch
@@ -25,7 +25,7 @@ D. <$50 or didn't actually launch
 ---
 
 ### Q3. Did you write a campaign brief BEFORE launching (not after)? *(Create)*
-A. Yes — brief written, dated, before launch
+A. Yes, brief written, dated, before launch
 B. Brief written but partially backfilled
 C. Notes written, not formal brief
 D. No pre-launch brief
@@ -33,7 +33,7 @@ D. No pre-launch brief
 ---
 
 ### Q4. Did you set up conversion tracking AND verify it was firing BEFORE the campaign launched? *(Apply)*
-A. Yes — both pixels installed, both verified with test events
+A. Yes, both pixels installed, both verified with test events
 B. Tracking installed, partial verification
 C. Tracking installed, not verified
 D. No tracking / didn't realize it was needed
@@ -41,7 +41,7 @@ D. No tracking / didn't realize it was needed
 ---
 
 ### Q5. Did you launch with at least 3 creative variants per platform? *(Create)*
-A. Yes — 3+ per platform (Google RSA + Meta variants)
+A. Yes, 3+ per platform (Google RSA + Meta variants)
 B. 3+ on one platform, fewer on the other
 C. 1–2 per platform
 D. Only one creative
@@ -49,7 +49,7 @@ D. Only one creative
 ---
 
 ### Q6. Did the campaign run live for at least 14 consecutive days? *(Apply)*
-A. Yes — 14+ days
+A. Yes, 14+ days
 B. 10–13 days
 C. 5–9 days
 D. <5 days or didn't go live
@@ -57,7 +57,7 @@ D. <5 days or didn't go live
 ---
 
 ### Q7. Did you keep a daily optimization log with date-stamped entries? *(Apply)*
-A. Yes — 14 entries, all date-stamped
+A. Yes, 14 entries, all date-stamped
 B. 10–13 entries
 C. 5–9 entries
 D. <5 entries or no log
@@ -65,15 +65,15 @@ D. <5 entries or no log
 ---
 
 ### Q8. Did you make optimization changes during the campaign (paused losers, scaled winners)? *(Analyze)*
-A. Yes — at least 3 deliberate changes, each documented with rationale
-B. Yes — 1–2 changes documented
+A. Yes, at least 3 deliberate changes, each documented with rationale
+B. Yes, 1–2 changes documented
 C. Made changes, didn't document
 D. Set it and forgot it / no changes
 
 ---
 
 ### Q9. Do you have screenshots of: campaign setup, daily ad-manager views, top creatives, final results? *(Apply)*
-A. Yes — all four screenshot categories
+A. Yes, all four screenshot categories
 B. 3 of 4
 C. 1–2
 D. None
@@ -81,7 +81,7 @@ D. None
 ---
 
 ### Q10. Did you capture the FAILING creatives too, not just the winners? *(Apply)*
-A. Yes — losing creatives screenshot + documented
+A. Yes, losing creatives screenshot + documented
 B. Some failures captured
 C. Only winners
 D. No screenshot of losers
@@ -89,7 +89,7 @@ D. No screenshot of losers
 ---
 
 ### Q11. Does your post-mortem write-up clock in at 1,500–2,500 words? *(Evaluate)*
-A. Yes — within range
+A. Yes, within range
 B. 1,000–1,499 or 2,500–3,500
 C. 500–999
 D. <500 or unwritten
@@ -97,7 +97,7 @@ D. <500 or unwritten
 ---
 
 ### Q12. Does the post-mortem open with a hook (not "In May I ran a campaign...")? *(Create)*
-A. Yes — opens with the most interesting moment
+A. Yes, opens with the most interesting moment
 B. Opens with subject context
 C. Opens with the goal
 D. Opens with date / generic intro
@@ -105,7 +105,7 @@ D. Opens with date / generic intro
 ---
 
 ### Q13. Does your write-up include final numbers in a clear table format? *(Apply)*
-A. Yes — full table: spend, CPL, CPC, conversions, ROAS, by channel
+A. Yes, full table: spend, CPL, CPC, conversions, ROAS, by channel
 B. Numbers listed without table
 C. Some numbers
 D. No numbers
@@ -113,7 +113,7 @@ D. No numbers
 ---
 
 ### Q14. Did you publish the post-mortem on a public URL (blog, Medium, Notion, LinkedIn article)? *(Apply)*
-A. Yes — public + indexable
+A. Yes, public + indexable
 B. Public but on Medium / LinkedIn only
 C. Drafted, not published
 D. Not written
@@ -121,7 +121,7 @@ D. Not written
 ---
 
 ### Q15. Did you build a LinkedIn carousel summarizing the post-mortem? *(Create)*
-A. Yes — 6–10 slides, posted, with engagement
+A. Yes, 6–10 slides, posted, with engagement
 B. Carousel built + posted, no engagement yet
 C. Carousel drafted, not posted
 D. No carousel
@@ -129,7 +129,7 @@ D. No carousel
 ---
 
 ### Q16. Did you include "what didn't work" prominently (not buried)? *(Evaluate)*
-A. Yes — failures called out in section header / slide
+A. Yes, failures called out in section header / slide
 B. Failures included but minor
 C. Failures glossed over
 D. Failures hidden / not mentioned
@@ -137,7 +137,7 @@ D. Failures hidden / not mentioned
 ---
 
 ### Q17. Is your ROAS / result framed honestly (regardless of outcome)? *(Evaluate)*
-A. Yes — honest framing, even if negative
+A. Yes, honest framing, even if negative
 B. Mostly honest, minor spin
 C. Spun toward positive
 D. Result misrepresented
@@ -145,7 +145,7 @@ D. Result misrepresented
 ---
 
 ### Q18. Did you analyze what you'd do differently next time? *(Evaluate)*
-A. Yes — 3+ specific lessons, actionable
+A. Yes, 3+ specific lessons, actionable
 B. 1–2 lessons
 C. Generic lessons
 D. No lessons section
@@ -153,7 +153,7 @@ D. No lessons section
 ---
 
 ### Q19. Did you film a Loom (or screen recording) walkthrough of either the ad manager or the campaign setup? *(Create)*
-A. Yes — Loom shareable + linked in post-mortem
+A. Yes, Loom shareable + linked in post-mortem
 B. Recording exists, not linked
 C. Planned, not done
 D. No
@@ -161,7 +161,7 @@ D. No
 ---
 
 ### Q20. Did you use AI tools (Midjourney / DALL·E / Canva) for at least one creative? *(Apply)*
-A. Yes — multiple AI-generated creatives
+A. Yes, multiple AI-generated creatives
 B. One AI creative
 C. Plan included AI, didn't use it
 D. No AI tooling
@@ -169,7 +169,7 @@ D. No AI tooling
 ---
 
 ### Q21. Did your subject (friend / indie maker / your own business) give you a testimonial or quote? *(Apply)*
-A. Yes — testimonial included
+A. Yes, testimonial included
 B. Asked, awaiting reply
 C. Plan to ask
 D. Won't ask / haven't asked
@@ -177,7 +177,7 @@ D. Won't ask / haven't asked
 ---
 
 ### Q22. Could you defend any specific optimization decision in an interview? *(Evaluate)*
-A. Yes — every decision had a rationale, written
+A. Yes, every decision had a rationale, written
 B. Most, yes
 C. Some, yes
 D. Vibes-based decisions
@@ -185,7 +185,7 @@ D. Vibes-based decisions
 ---
 
 ### Q23. Did you set negative keywords in Google Ads (or use exclusion lists in Meta)? *(Apply)*
-A. Yes — robust negative list, updated mid-campaign
+A. Yes, robust negative list, updated mid-campaign
 B. Initial negative list
 C. Tried but didn't know how
 D. No negative keywords
@@ -193,7 +193,7 @@ D. No negative keywords
 ---
 
 ### Q24. Did you check the search terms report (Google) or breakdown report (Meta) at least 3 times during the campaign? *(Analyze)*
-A. Yes — checked + acted on it
+A. Yes, checked + acted on it
 B. Checked, didn't act
 C. Checked once
 D. Didn't check
@@ -201,7 +201,7 @@ D. Didn't check
 ---
 
 ### Q25. Did you spend at least 10 minutes per day on the campaign for 14 days? *(Apply)*
-A. Yes — 14 days of 10-min check-ins
+A. Yes, 14 days of 10-min check-ins
 B. 8–13 days
 C. 4–7 days
 D. Set and forgot
@@ -209,7 +209,7 @@ D. Set and forgot
 ---
 
 ### Q26. Does the post-mortem include screenshots from BOTH ad managers? *(Apply)*
-A. Yes — Google + Meta screenshots throughout
+A. Yes, Google + Meta screenshots throughout
 B. One platform's screenshots
 C. Few screenshots
 D. None
@@ -217,7 +217,7 @@ D. None
 ---
 
 ### Q27. Did you note the cost of each creative production (Midjourney sub, Canva sub, your time)? *(Analyze)*
-A. Yes — production cost accounted in ROAS
+A. Yes, production cost accounted in ROAS
 B. Tool cost noted
 C. Mentioned briefly
 D. Not tracked
@@ -225,7 +225,7 @@ D. Not tracked
 ---
 
 ### Q28. If the campaign lost money, did you draw a clear conclusion about what scaled-up version would change? *(Evaluate)*
-A. Yes — specific "if I scaled, here's what I'd change" section
+A. Yes, specific "if I scaled, here's what I'd change" section
 B. General notes
 C. Said "I'd test more"
 D. No scaling analysis
@@ -233,7 +233,7 @@ D. No scaling analysis
 ---
 
 ### Q29. Have you practiced the 90-second pitch for this capstone out loud? *(Apply)*
-A. Yes — 3+ times
+A. Yes, 3+ times
 B. Once
 C. Drafted, not practiced
 D. Not yet
@@ -241,9 +241,9 @@ D. Not yet
 ---
 
 ### Q30. Would you put this case study at the top of your portfolio as the "money-at-stake" project? *(Evaluate)*
-A. Yes — flagship piece
-B. Yes — solid piece
-C. Maybe — needs polish
+A. Yes, flagship piece
+B. Yes, solid piece
+C. Maybe, needs polish
 D. No, would hide
 
 ---
@@ -272,7 +272,7 @@ Three creative variants per platform. Anything less and you have no creative lea
 14 date-stamped entries, 2–4 sentences each. This is what makes the post-mortem readable as a story rather than a report.
 
 ### Q8: Excellent looks like: **A**
-Three deliberate changes, each documented. Examples: "Day 3 — paused Variant B, CTR was 0.4%." "Day 7 — rebuilt landing-page hero, CR went from 0.8% to 3.2%."
+Three deliberate changes, each documented. Examples: "Day 3 paused Variant B, CTR was 0.4%." "Day 7 rebuilt landing-page hero, CR went from 0.8% to 3.2%."
 
 ### Q9: Excellent looks like: **A**
 All 4 screenshot categories. Hiring managers can SEE the campaign was real if they can see the ad manager. They can't if you only describe it.
@@ -290,7 +290,7 @@ Hook opens with the most interesting moment. Read 5 Cody Schneider posts before 
 Full table format. Per-channel + total. Including the bad numbers. This is the "I'm rigorous about data" signal.
 
 ### Q14: Excellent looks like: **A**
-Public + indexable. Medium, your blog, Notion (public mode), Substack — all work. LinkedIn-only is OK but the URL won't index well.
+Public + indexable. Medium, your blog, Notion (public mode), Substack, all work. LinkedIn-only is OK but the URL won't index well.
 
 ### Q15: Excellent looks like: **A**
 6–10 slides, posted on LinkedIn. The carousel is what gets discovery; the post-mortem is what closes the deal.
@@ -299,7 +299,7 @@ Public + indexable. Medium, your blog, Notion (public mode), Substack — all wo
 "What Didn't Work" as a section header / slide. NOT buried at the end. Featured.
 
 ### Q17: Excellent looks like: **A**
-Honest framing wins. *"ROAS came in at 0.84x — net loss of $30 against $186 spent. Here's why I still call this a win."* That's the tone.
+Honest framing wins. *"ROAS came in at 0.84x, net loss of $30 against $186 spent. Here's why I still call this a win."* That's the tone.
 
 ### Q18: Excellent looks like: **A**
 3+ specific, actionable lessons. *"I'd skip Meta Carousel entirely. The UGC video crushed by 3x."*

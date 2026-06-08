@@ -4,7 +4,7 @@
 
 ---
 
-## 🌐 DNS Records — MEMORIZE
+## 🌐 DNS Records, MEMORIZE
 
 | Record | What it maps |
 |--------|--------------|
@@ -19,15 +19,15 @@
 | **SRV** | Service location (host + port) |
 
 ### Anti-spam TXT records
-- **SPF** — which IPs may send for this domain
-- **DKIM** — signature; receiver verifies via public key in DNS
-- **DMARC** — policy if SPF/DKIM fails (none / quarantine / reject) + reports
+- **SPF**, which IPs may send for this domain
+- **DKIM**, signature; receiver verifies via public key in DNS
+- **DMARC**, policy if SPF/DKIM fails (none / quarantine / reject) + reports
 
 ### DNS transports & ports
-- **UDP 53** — standard queries / responses
-- **TCP 53** — zone transfers, responses > 512 bytes
-- **DoT** — TCP 853 over TLS
-- **DoH** — TCP 443 over HTTPS
+- **UDP 53**, standard queries / responses
+- **TCP 53**, zone transfers, responses > 512 bytes
+- **DoT**, TCP 853 over TLS
+- **DoH**, TCP 443 over HTTPS
 
 ---
 
@@ -51,11 +51,11 @@
 
 - **UDP 123**
 - Stratum 0 = atomic/GPS · Stratum 1 = direct connection · lower stratum = more authoritative
-- Critical for Kerberos, JWT, TLS cert validity — skew > 5 min breaks auth
+- Critical for Kerberos, JWT, TLS cert validity, skew > 5 min breaks auth
 
 ---
 
-## 📁 File Transfer — Ports
+## 📁 File Transfer, Ports
 
 | Protocol | Port | Encrypted? |
 |----------|------|-----------|
@@ -68,13 +68,13 @@
 
 ---
 
-## ✉️ Email — Ports
+## ✉️ Email, Ports
 
 | Protocol | Port | TLS port |
 |----------|------|----------|
 | SMTP server-to-server | 25 | 25+STARTTLS |
 | SMTP submission | 587 | 587+STARTTLS |
-| SMTPS (legacy) | — | 465 |
+| SMTPS (legacy) |, | 465 |
 | POP3 | 110 | **995** (POP3S) |
 | IMAP | 143 | **993** (IMAPS) |
 
@@ -135,7 +135,7 @@ Often **wrong**:
 
 - ❌ "Use Telnet for remote management"
 - ❌ "CNAME points to an IP"
-- ❌ "DHCP server on a different subnet — no helper needed"
+- ❌ "DHCP server on a different subnet, no helper needed"
 - ❌ "SMTP for downloading email"
 - ❌ "SASE replaces DNS"
 

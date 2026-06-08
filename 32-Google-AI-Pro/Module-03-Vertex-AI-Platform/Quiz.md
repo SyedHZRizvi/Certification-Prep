@@ -30,7 +30,7 @@ D. `tensorflow`
 
 ---
 
-### Q4. Vertex AI Search vs Vertex AI Vector Search — the difference is: *(Understand)*
+### Q4. Vertex AI Search vs Vertex AI Vector Search, the difference is: *(Understand)*
 A. Same product, two names
 B. Search = managed RAG (chunking + embedding + indexing + retrieval + grounding); Vector Search = ANN index for custom embeddings
 C. Search is text-only; Vector Search is image-only
@@ -72,7 +72,7 @@ D. Cost overruns
 
 ### Q9. CMEK on Vertex AI provides: *(Understand)*
 A. Free encryption
-B. Customer-Managed Encryption Keys via your KMS — you can rotate/revoke
+B. Customer-Managed Encryption Keys via your KMS, you can rotate/revoke
 C. Per-request encryption
 D. Self-hosting
 
@@ -277,7 +277,7 @@ Spotify's published rationale was platform-consolidation, not cost-cutting per s
 ### Q23: **B. Vertex AI + signed BAA + HIPAA-eligible region + eligible services + VPC-SC + CMEK**
 Full HIPAA-eligible deployment requires all of these.
 
-### Q24: **A. Vertex AI is one product — FALSE**
+### Q24: **A. Vertex AI is one product, FALSE**
 It's an umbrella over ~25 sub-products.
 
 ### Q25: **B. Gemini Pro + Vertex AI Search + Agent Builder + VPC-SC + CMEK + Audit Logs + Pipelines + Provisioned Throughput**
@@ -293,4 +293,4 @@ The canonical enterprise architecture.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Multi-Modal AI with Gemini](../Module-04-Multi-Modal-Gemini/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Multi-Modal AI with Gemini](../Module-04-Multi-Modal-Gemini/Reading.md)

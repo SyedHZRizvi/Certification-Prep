@@ -27,9 +27,9 @@ title: "Module 4 Cheat Sheet: Lighting & HDRI"
 | Type | Shadows | Best For |
 |---|---|---|
 | Point | Spherical falloff | Candles, small practicals |
-| Sun | Parallel (infinite) | Outdoor sunlight — rotation only, not position |
+| Sun | Parallel (infinite) | Outdoor sunlight, rotation only, not position |
 | Spot | Cone, defined edge | Flashlights, stage spotlights |
-| Area | Soft, realistic | Studio key/fill — most versatile |
+| Area | Soft, realistic | Studio key/fill, most versatile |
 
 ---
 
@@ -63,7 +63,7 @@ title: "Module 4 Cheat Sheet: Lighting & HDRI"
 
 - **Large area light** → soft, diffuse shadows (overcast feel)
 - **Small area light / spot** → hard, sharp shadows (theatrical feel)
-- Size setting on Area light is in meters — match to real-world equivalent
+- Size setting on Area light is in meters, match to real-world equivalent
 
 ---
 
@@ -146,7 +146,7 @@ IES (.ies) files describe real-world light distributions. Load via: Object Data 
 
 | Gotcha | Fix |
 |---|---|
-| Sun position doesn't change shadows | Sun uses rotation only — R → X to tilt |
+| Sun position doesn't change shadows | Sun uses rotation only, R → X to tilt |
 | HDRI doesn't light interior (EEVEE) | Add Irradiance Volume probe + bake irradiance |
 | Rim light too strong / washes out | Reduce to 75–120% of key; move further behind subject |
 | Fireflies in Cycles | Enable Clamp Indirect (10); reduce Emission Strength |

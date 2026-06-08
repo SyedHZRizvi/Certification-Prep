@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Spark Ads — How to Get & Use Creator Codes</p>
+      <p class="vg-title">Spark Ads, How to Get & Use Creator Codes</p>
       <p class="vg-creator">TikTok For Business + creators</p>
       <span class="vg-duration">⏱ 14 min · The 2026 winning format</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Thought-Leadership Ads — Step-by-Step</p>
+      <p class="vg-title">Thought-Leadership Ads, Step-by-Step</p>
       <p class="vg-creator">B2B LinkedIn educators</p>
       <span class="vg-duration">⏱ 12 min · The 2x performance format</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">TikTok Creative — Hooks That Stop the Scroll</p>
+      <p class="vg-title">TikTok Creative, Hooks That Stop the Scroll</p>
       <p class="vg-creator">Various creators</p>
       <span class="vg-duration">⏱ 15 min · 1.5-sec hook patterns</span>
     </div>

@@ -1,9 +1,9 @@
 ---
 permalink: /34-2D-Digital-Animation/Practice-Exams/Practice-Exam-1/
-title: "Practice Exam 1 — 2D Digital Animation (Modules 1–5)"
+title: "Practice Exam 1, 2D Digital Animation (Modules 1–5)"
 ---
 
-# 📝 Practice Exam 1 — 2D Digital Animation
+# 📝 Practice Exam 1, 2D Digital Animation
 ## Modules 1–5 · 30 Questions · 40 Minutes
 
 **Instructions:** Take this exam after completing Modules 1–5. Score 80%+ before moving to Module 6. Each question has one correct answer.
@@ -174,7 +174,7 @@ D. Puppet Pin deformation data into clean vector shapes
 
 ### 19. A Null Object in After Effects is:
 
-A. A pre-composition with no visible content — only audio
+A. A pre-composition with no visible content, only audio
 B. An invisible object at render time used as a rig controller via parenting
 C. A solid layer set to 0% opacity for guide reference
 D. A disabled keyframe that does not affect animation playback
@@ -202,7 +202,7 @@ D. F11
 ### 22. The Speed Graph in After Effects' Graph Editor shows:
 
 A. The absolute value of a property at each point in time
-B. The rate of change (velocity) of a property — peaks = fast, valleys = slow
+B. The rate of change (velocity) of a property, peaks = fast, valleys = slow
 C. The memory usage during playback
 D. The number of keyframes per second in the composition
 
@@ -211,7 +211,7 @@ D. The number of keyframes per second in the composition
 ### 23. Which method is recommended for importing a layered Illustrator file into After Effects while keeping individual layers accessible?
 
 A. Import as Footage (Merge Layers)
-B. Import as Composition — Retain Layer Sizes
+B. Import as Composition, Retain Layer Sizes
 C. Drag and drop directly from Finder/Explorer
 D. Open in Illustrator and copy-paste into AE
 
@@ -286,7 +286,7 @@ D. Delete the keyframe and regenerate it with the new symbol
 1.  B   Objects entirely outside the Stage don't appear in exports.
 2.  C   Movie Clips have independent timelines; Graphic symbols sync to parent.
 3.  C   On twos at 24fps = 12 unique drawings per second.
-4.  C   Stream sync ties audio to the playhead — required for lip sync.
+4.  C   Stream sync ties audio to the playhead, required for lip sync.
 5.  B   F7 inserts a blank keyframe (hollow circle).
 6.  C   Registration point at the joint (shoulder) for correct rotation.
 7.  B   Crowded start, spread end = decelerating motion (ease out).
@@ -305,7 +305,7 @@ D. Delete the keyframe and regenerate it with the new symbol
 20. B   The Pick Whip creates parent-child layer relationships.
 21. C   F9 applies Easy Ease to selected keyframes.
 22. B   Speed Graph shows velocity (rate of change).
-23. B   Import as Composition — Retain Layer Sizes keeps individual layers.
+23. B   Import as Composition, Retain Layer Sizes keeps individual layers.
 24. B   Puppet Pin Tool is for mesh deformation on a single flattened layer.
 25. A   Pre-composing = packaging layers into a reusable nested comp = symbol equivalent.
 26. B   Cleanup layer goes above roughs; clean lines trace over the rough guide.

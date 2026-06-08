@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Demand Forecasting Methods — Full Overview</p>
+      <p class="vg-title">Demand Forecasting Methods, Full Overview</p>
       <p class="vg-creator">Edureka SCM</p>
       <span class="vg-duration">⏱ 18 min · Qualitative + quantitative</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MAD, MSE, MAPE — Forecast Error Metrics</p>
+      <p class="vg-title">MAD, MSE, MAPE, Forecast Error Metrics</p>
       <p class="vg-creator">GreyCampus</p>
       <span class="vg-duration">⏱ 12 min · All three formulas worked</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Tracking Signal — When to Replace a Forecast</p>
+      <p class="vg-title">Tracking Signal, When to Replace a Forecast</p>
       <p class="vg-creator">GreyCampus</p>
       <span class="vg-duration">⏱ 8 min · Bias / MAD interpretation</span>
     </div>

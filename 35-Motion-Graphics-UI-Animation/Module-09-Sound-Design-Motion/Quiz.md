@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-09-Sound-Design-Motion/Quiz/
 title: "Module 9 Quiz: Sound Design & Motion"
 ---
 
-# 🧠 Module 9 Quiz — Sound Design & Motion
+# 🧠 Module 9 Quiz, Sound Design & Motion
 
 ### Q1.
 Who coined the term "sound design" in the context of film, and is credited with the idea that sound accounts for approximately half the cinematic experience?
@@ -29,7 +29,7 @@ D. Music
 A "transient" in audio is:
 
 A. A brief moment of silence between sound events  
-B. The initial attack of a sound — the first milliseconds of a percussion hit or accent  
+B. The initial attack of a sound, the first milliseconds of a percussion hit or accent  
 C. A sound that transitions between two musical keys  
 D. An audio effect that blends two sound layers  
 
@@ -38,7 +38,7 @@ D. An audio effect that blends two sound layers
 ### Q4.
 Within how many frames of discrepancy will a visual event and audio event be perceived as perfectly synchronized?
 
-A. 0 frames — exact sync only  
+A. 0 frames, exact sync only  
 B. ±1 frame  
 C. ±2 frames  
 D. ±5 frames  
@@ -60,7 +60,7 @@ D. Add a cross-fade of 2 frames to smooth the mismatch
 
 A. The music is free to use in any context  
 B. No credit is required when using the music  
-C. You pay once (a license fee) and don't owe per-use royalties — but you still pay a fee and must follow the license terms  
+C. You pay once (a license fee) and don't owe per-use royalties, but you still pay a fee and must follow the license terms  
 D. The music copyright has expired and entered the public domain  
 
 ---
@@ -190,7 +190,7 @@ The After Effects Audio Spectrum "Frequency Bands" parameter controls:
 
 A. How many channels of audio are processed  
 B. The pitch range of the spectrum (low to high)  
-C. The number of bars displayed — more bands = more frequency detail  
+C. The number of bars displayed, more bands = more frequency detail  
 D. The smoothing applied to the spectrum motion  
 
 ---
@@ -209,7 +209,7 @@ D. Mechanical License
 Artlist's annual license model provides:
 
 A. Monthly credits for downloading up to 10 songs  
-B. Unlimited downloads with perpetual use rights — content licensed while subscribed can be used indefinitely even after cancellation  
+B. Unlimited downloads with perpetual use rights, content licensed while subscribed can be used indefinitely even after cancellation  
 C. Per-song pricing with no subscription  
 D. Free use for non-commercial projects only  
 
@@ -219,14 +219,14 @@ D. Free use for non-commercial projects only
 In the AE Audio Spectrum effect, the "Softness" parameter controls:
 
 A. The volume of the audio layer  
-B. The amount of blur applied to the bar tops — 0 = sharp, higher = smooth/blurred  
+B. The amount of blur applied to the bar tops, 0 = sharp, higher = smooth/blurred  
 C. The speed at which the spectrum reacts to audio  
 D. The opacity of the spectrum  
 
 ---
 
 ### Q23.
-Deliberate audio-visual contrast — peaceful music over chaotic visuals (or vice versa) — is used to:
+Deliberate audio-visual contrast peaceful music over chaotic visuals (or vice versa) is used to:
 
 A. Create synchrony between audio and visual events  
 B. Save time on sound design by reusing existing music  
@@ -240,7 +240,7 @@ Freesound.org provides audio under Creative Commons licenses. Before using a Fre
 
 A. Credit Freesound.org in your video description  
 B. Pay a $10 per-clip fee  
-C. Check the specific CC license type — some allow commercial use (CC0, CC BY), some do not (CC BY-NC)  
+C. Check the specific CC license type, some allow commercial use (CC0, CC BY), some do not (CC BY-NC)  
 D. Request written permission from Freesound.org  
 
 ---
@@ -248,51 +248,51 @@ D. Request written permission from Freesound.org
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  C — Walter Murch coined "sound design" while working on Apocalypse Now. He articulated the idea that sound is half the film experience.
+Q1:  C, Walter Murch coined "sound design" while working on Apocalypse Now. He articulated the idea that sound is half the film experience.
 
-Q2:  D — Music is the emotional foundation layer. SFX are event-specific. Ambient is textural. Voice-over (not always present) carries information.
+Q2:  D, Music is the emotional foundation layer. SFX are event-specific. Ambient is textural. Voice-over (not always present) carries information.
 
-Q3:  B — A transient is the initial attack of a sound — the first milliseconds where amplitude rises sharply. It's the ideal sync point.
+Q3:  B, A transient is the initial attack of a sound, the first milliseconds where amplitude rises sharply. It's the ideal sync point.
 
-Q4:  C — ±2 frames. Within two frames of a transient, a visual event is perceived as perfectly synchronized. Beyond that, the sync feels off.
+Q4:  C, ±2 frames. Within two frames of a transient, a visual event is perceived as perfectly synchronized. Beyond that, the sync feels off.
 
-Q5:  B — Lead the audio (visual slightly before the audio). Visuals that lead audio by 1 frame feel tight and intentional. Visuals that lag audio feel sluggish.
+Q5:  B, Lead the audio (visual slightly before the audio). Visuals that lead audio by 1 frame feel tight and intentional. Visuals that lag audio feel sluggish.
 
-Q6:  C — Royalty-free means one-time fee + no per-use royalties. You still pay; you still have license terms. It does not mean "free."
+Q6:  C, Royalty-free means one-time fee + no per-use royalties. You still pay; you still have license terms. It does not mean "free."
 
-Q7:  B — Epidemic Sound is a subscription service (~$15/month individual) for music and SFX with licenses for content creation (YouTube, social, client work, etc.).
+Q7:  B, Epidemic Sound is a subscription service (~$15/month individual) for music and SFX with licenses for content creation (YouTube, social, client work, etc.).
 
-Q8:  B — Sweetening: subtle SFX that enhance without calling attention to themselves. The sounds you feel before you consciously hear them.
+Q8:  B, Sweetening: subtle SFX that enhance without calling attention to themselves. The sounds you feel before you consciously hear them.
 
-Q9:  B — Layer > Audio > Convert Audio to Keyframes. This creates a null layer with keyframes mapping to amplitude peaks — use these to drive animations.
+Q9:  B, Layer > Audio > Convert Audio to Keyframes. This creates a null layer with keyframes mapping to amplitude peaks, use these to drive animations.
 
-Q10: B — Effect > Generate > Audio Spectrum is the correct menu path in After Effects.
+Q10: B, Effect > Generate > Audio Spectrum is the correct menu path in After Effects.
 
-Q11: B — For circular display, you need a mask path (ellipse) on the solid layer first. The Audio Spectrum effect will then draw the spectrum along the ellipse path.
+Q11: B, For circular display, you need a mask path (ellipse) on the solid layer first. The Audio Spectrum effect will then draw the spectrum along the ellipse path.
 
-Q12: C — Tone of Motion: the emotional quality of audio and animation should match (or deliberately contrast for artistic effect). Not about tempo or key.
+Q12: C, Tone of Motion: the emotional quality of audio and animation should match (or deliberately contrast for artistic effect). Not about tempo or key.
 
-Q13: C — Soundsnap is specifically SFX-focused with a large, searchable library. Artlist and Epidemic Sound primarily emphasize music, with SFX as secondary.
+Q13: C, Soundsnap is specifically SFX-focused with a large, searchable library. Artlist and Epidemic Sound primarily emphasize music, with SFX as secondary.
 
-Q14: B — A sync license grants permission to use a musical composition (not the recording) synchronized to video. It's distinct from the master license.
+Q14: B, A sync license grants permission to use a musical composition (not the recording) synchronized to video. It's distinct from the master license.
 
-Q15: B — Correct workflow: music first (sets emotional tone) → mark beats → build animation to beats → SFX last → mix. Starting with SFX is backwards.
+Q15: B, Correct workflow: music first (sets emotional tone) → mark beats → build animation to beats → SFX last → mix. Starting with SFX is backwards.
 
-Q16: B — Standard voice-over mix: music -6 to -12dB (barely audible under VO), SFX -3 to 0dB (slightly above music), voice-over at 0dB reference (loudest, clearest).
+Q16: B, Standard voice-over mix: music -6 to -12dB (barely audible under VO), SFX -3 to 0dB (slightly above music), voice-over at 0dB reference (loudest, clearest).
 
-Q17: B — High-energy electronic = fast, sharp, linear-eased motion with high contrast. This is the matching pair in the Tone of Motion matrix.
+Q17: B, High-energy electronic = fast, sharp, linear-eased motion with high contrast. This is the matching pair in the Tone of Motion matrix.
 
-Q18: B — A hit point is where a visual event exactly coincides with an audio event (transient or musical accent). The combination feels like a single unified moment.
+Q18: B, A hit point is where a visual event exactly coincides with an audio event (transient or musical accent). The combination feels like a single unified moment.
 
-Q19: C — Frequency Bands = number of bars. 32 bands = 32 bars; 128 bands = 128 bars with more frequency detail. More bands = more CPU load.
+Q19: C, Frequency Bands = number of bars. 32 bands = 32 bars; 128 bands = 128 bars with more frequency detail. More bands = more CPU load.
 
-Q20: C — Master License. The Sync License covers the composition; the Master License covers the specific recording. You need both to use a recorded song in video.
+Q20: C, Master License. The Sync License covers the composition; the Master License covers the specific recording. You need both to use a recorded song in video.
 
-Q21: B — Artlist: unlimited downloads, perpetual use rights. Content you license while subscribed can be used in published projects even after you cancel the subscription.
+Q21: B, Artlist: unlimited downloads, perpetual use rights. Content you license while subscribed can be used in published projects even after you cancel the subscription.
 
-Q22: B — Softness controls blur on the bar tops. 0 = sharp geometric bars. Higher values = smooth, organic-looking spectrum tops.
+Q22: B, Softness controls blur on the bar tops. 0 = sharp geometric bars. Higher values = smooth, organic-looking spectrum tops.
 
-Q23: C — Deliberate audio-visual contrast creates cognitive dissonance that forces attention and heightens emotional impact. Used in advertising, documentary, and music videos.
+Q23: C, Deliberate audio-visual contrast creates cognitive dissonance that forces attention and heightens emotional impact. Used in advertising, documentary, and music videos.
 
-Q24: C — Check the specific CC license. CC0 = public domain (any use). CC BY = attribution required. CC BY-NC = non-commercial only. Never assume commercial use is permitted.
+Q24: C, Check the specific CC license. CC0 = public domain (any use). CC BY = attribution required. CC BY-NC = non-commercial only. Never assume commercial use is permitted.
 ```

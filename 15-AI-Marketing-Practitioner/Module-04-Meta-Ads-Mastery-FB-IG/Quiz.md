@@ -105,7 +105,7 @@ D. Brand × Category
 
 ### Q13. Killing a DCT variant after 100 impressions is: *(Analyze)*
 A. Best practice
-B. A mistake — variants need ~1,000 impressions minimum before judging
+B. A mistake, variants need ~1,000 impressions minimum before judging
 C. Required by Meta
 D. Only valid for retargeting
 
@@ -137,7 +137,7 @@ D. Applies only to manual bidding
 
 ### Q17. Editing an ad set DURING the learning phase typically: *(Analyze)*
 A. Helps the algorithm learn faster
-B. Resets the learning phase — performance becomes unstable
+B. Resets the learning phase, performance becomes unstable
 C. Has no effect
 D. Is recommended weekly
 
@@ -249,7 +249,7 @@ Pre-iOS 14, default was 28-day click + 1-day view. Now 7-day click + 1-day view 
 AEM requires you to pick and rank your top 8 conversion events. Only the priority event is reported for users who opt out of tracking.
 
 ### Q6: **D. No expiry (until you refresh it)**
-Customer list custom audiences don't expire on their own — they shrink as Meta loses match accuracy over time, but there's no "expiration date." Refresh quarterly.
+Customer list custom audiences don't expire on their own, they shrink as Meta loses match accuracy over time, but there's no "expiration date." Refresh quarterly.
 
 ### Q7: **B. 1,000+ (ideally 5,000+)**
 Meta needs a substantial seed to find patterns. 1,000 is minimum; 5,000+ is reliable.
@@ -264,18 +264,18 @@ Like PMax's audience signals on Google, Advantage+ Audience is directional, not 
 ASC needs scale to work. Below ~50 daily conversions, the algorithm doesn't have enough signal. Also requires a catalog.
 
 ### Q11: **B. Limit spend on existing customers (forcing prospecting on new ones)**
-Default is 100% blended. Setting 30% existing-customer cap forces Meta to spend 70% finding new customers — a key prospecting mechanism.
+Default is 100% blended. Setting 30% existing-customer cap forces Meta to spend 70% finding new customers, a key prospecting mechanism.
 
 ### Q12: **B. Hook × Body × CTA**
 Classic DCT axes: hook (opening), body (main content), CTA (call to action). Meta auto-combines and reports back winners.
 
-### Q13: **B. A mistake — need ~1,000 impressions minimum**
+### Q13: **B. A mistake, need ~1,000 impressions minimum**
 Killing creative at 100 impressions is noise. You need ~1,000+ impressions per variant before performance signal is meaningful.
 
 ### Q14: **C. 9:16 vertical**
 Reels are vertical 9:16, 1080×1920 minimum. Different from horizontal Feed creative.
 
-### Q15: **B. Fails — Reels has different visual grammar**
+### Q15: **B. Fails, Reels has different visual grammar**
 Cropped Feed creative looks awkward and performs poorly. Reels needs native vertical content with fast pacing.
 
 ### Q16: **B. Over after ~50 conversions in 7 days**
@@ -285,7 +285,7 @@ Meta's algorithm stabilizes after ~50 conversions. Below that, performance is vo
 Significant edits (budget change >20%, creative swap, audience change) reset learning. Hands off during the first 50 conversions.
 
 ### Q18: **B. ABO for testing; CBO for scaling**
-Ad-set Budget Optimization lets you test audiences with controlled spend. Campaign Budget Optimization lets Meta allocate to winners — best after you know who works.
+Ad-set Budget Optimization lets you test audiences with controlled spend. Campaign Budget Optimization lets Meta allocate to winners, best after you know who works.
 
 ### Q19: **B. Cart abandoners + Add-to-cart, last 14–30 days**
 Standard retargeting: people who showed buying intent recently. Broader audiences are prospecting, not retargeting.

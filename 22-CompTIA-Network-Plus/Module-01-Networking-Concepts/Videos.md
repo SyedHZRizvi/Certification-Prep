@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Networking Concepts & OSI Model
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~45 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">OSI Model — N10-009</p>
+      <p class="vg-title">OSI Model, N10-009</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 8 min · The 7 layers explained</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Network Topologies — Star, Mesh, Ring</p>
+      <p class="vg-title">Network Topologies, Star, Mesh, Ring</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 9 min · LAN designs</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">TCP vs UDP — Side by Side</p>
+      <p class="vg-title">TCP vs UDP, Side by Side</p>
       <p class="vg-creator">Dion Training</p>
       <span class="vg-duration">⏱ 10 min · Handshake explained</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Mirai Botnet — The Dyn Attack</p>
+      <p class="vg-title">Mirai Botnet, The Dyn Attack</p>
       <p class="vg-creator">Black Hat / DEFCON</p>
       <span class="vg-duration">⏱ 35 min · Case study deep dive</span>
     </div>
@@ -137,9 +137,9 @@
 | **Dion Training (Jason Dion)** | Polished delivery, scenario-heavy explanations, great practice questions on his site |
 | **NetworkChuck** | Fun, energetic intros that make networking memorable |
 | **David Bombal** | CCNA-depth content, packed with hands-on labs |
-| **PowerCert Animated Videos** | Crystal-clear short animations — perfect for visual learners |
-| **Chris Greer** | THE Wireshark guy — relevant for Modules 7 and 8 |
-| **Practical Networking** | Deep dives into routing/switching — gold for advanced topics |
+| **PowerCert Animated Videos** | Crystal-clear short animations, perfect for visual learners |
+| **Chris Greer** | THE Wireshark guy, relevant for Modules 7 and 8 |
+| **Practical Networking** | Deep dives into routing/switching, gold for advanced topics |
 
 ---
 
@@ -151,6 +151,6 @@ Answer these in your notebook (without re-watching):
 2. What is the PDU name at each of layers 1, 2, 3, and 4 (TCP and UDP)?
 3. Calculate the number of links in a full mesh of 10 nodes.
 4. Give one device that lives at each layer (1, 2, 3) and one protocol that lives at each (3, 4, 7).
-5. Why does IPv6 have no broadcast — and what replaces it?
+5. Why does IPv6 have no broadcast, and what replaces it?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watch the Messer OSI video.

@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gemini API in Python — SDK Tutorial</p>
+      <p class="vg-title">Gemini API in Python, SDK Tutorial</p>
       <p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 15 min · generate_content + generation_config</span>
     </div>
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">safety_settings — Configure with Care</p>
+      <p class="vg-title">safety_settings, Configure with Care</p>
       <p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 13 min · 4 categories, 4 thresholds</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Code Execution — Built-in Python Sandbox</p>
+      <p class="vg-title">Code Execution, Built-in Python Sandbox</p>
       <p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 14 min · tools=code_execution</span>
     </div>
@@ -95,7 +95,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Batch API — 50% Discount for Async</p>
+      <p class="vg-title">Batch API, 50% Discount for Async</p>
       <p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 13 min · BatchPredictionJob</span>
     </div>
@@ -104,7 +104,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Gemini API vs Vertex AI — When To Switch</p>
+      <p class="vg-title">Gemini API vs Vertex AI, When To Switch</p>
       <p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 18 min · Migration path</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Snap MyAI on Gemini — Case Study</p>
+      <p class="vg-title">Snap MyAI on Gemini, Case Study</p>
       <p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 22 min · The prototype-to-prod path</span>
     </div>
@@ -136,7 +136,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">count_tokens — Cost Estimation Before Spend</p>
+      <p class="vg-title">count_tokens, Cost Estimation Before Spend</p>
       <p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 8 min · Free token count endpoint</span>
     </div>
@@ -145,7 +145,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Temperature, top_p, top_k — Sampling Demystified</p>
+      <p class="vg-title">Temperature, top_p, top_k, Sampling Demystified</p>
       <p class="vg-creator">Jay Alammar / DeepLearning.AI</p>
       <span class="vg-duration">⏱ 18 min · The decoding parameters</span>
     </div>
@@ -158,7 +158,7 @@
 
 Answer in your notebook:
 
-1. Name the two Python SDK package names — Gemini API vs Vertex AI.
+1. Name the two Python SDK package names, Gemini API vs Vertex AI.
 2. What's the difference between API-key auth and ADC?
 3. The two fields that together force JSON-Schema-conformant output?
 4. The four safety_setting harm categories?

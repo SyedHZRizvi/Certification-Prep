@@ -228,7 +228,7 @@ Anthropic has documented Claude's strong attention to XML tags as delimiters; th
 Prefill forces format compliance from token one. Pure instruction-following is less reliable; OpenAI's `response_format` flag does not exist on the Anthropic API.
 
 ### Q3: **A. The system prompt**
-Role, format, and stable constraints belong in system. This is also the cacheable prefix — double win.
+Role, format, and stable constraints belong in system. This is also the cacheable prefix, double win.
 
 ### Q4: **B. The cache attaches to the prompt PREFIX**
 Cache reuse requires the prompt prefix to match exactly. Stable content first.
@@ -326,4 +326,4 @@ Schema + abstention rule + examples + tags + prefill + caching + tier choice. Th
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Claude API & SDK Deep Dive](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Claude API & SDK Deep Dive](../Module-03-Claude-API-SDK-Deep-Dive/Reading.md)

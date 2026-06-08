@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Storyboarding Fundamentals — Beginner to Intermediate</p>
+      <p class="vg-title">Storyboarding Fundamentals, Beginner to Intermediate</p>
       <p class="vg-creator">Bloop Animation / Film Riot</p>
       <span class="vg-duration">⏱ 25 min · Shot types, format, arrow conventions</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">How to Make an Animatic — Story Reel Basics</p>
+      <p class="vg-title">How to Make an Animatic, Story Reel Basics</p>
       <p class="vg-creator">Toniko Pantoja / School of Motion</p>
       <span class="vg-duration">⏱ 20 min · From boards to timed video</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Pixar's Storyboarding Process — Story Reels Explained</p>
+      <p class="vg-title">Pixar's Storyboarding Process, Story Reels Explained</p>
       <p class="vg-creator">Pixar / Art of Story</p>
       <span class="vg-duration">⏱ 18 min · How Pixar uses animatics to fix problems cheaply</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Thumbnailing Compositions — Before the Full Board</p>
+      <p class="vg-title">Thumbnailing Compositions, Before the Full Board</p>
       <p class="vg-creator">NoBullshit Art School / D&D is for Nerds</p>
       <span class="vg-duration">⏱ 15 min · Why your first idea is usually wrong</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Toon Boom Storyboard Pro — Getting Started</p>
+      <p class="vg-title">Toon Boom Storyboard Pro, Getting Started</p>
       <p class="vg-creator">Toon Boom Animation</p>
       <span class="vg-duration">⏱ 20 min · Industry tool introduction</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Continuity Editing in Animation — Spatial Logic</p>
+      <p class="vg-title">Continuity Editing in Animation, Spatial Logic</p>
       <p class="vg-creator">Film Riot / StudioBinder</p>
       <span class="vg-duration">⏱ 20 min · Floor plans, 180-degree rule applied to boarding</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Film Transitions — Cut, Dissolve, Wipe, Match Cut</p>
+      <p class="vg-title">Film Transitions, Cut, Dissolve, Wipe, Match Cut</p>
       <p class="vg-creator">Now You See It / Every Frame a Painting</p>
       <span class="vg-duration">⏱ 15 min · When to use each transition type</span>
     </div>
@@ -108,6 +108,6 @@
 
 ## ✅ After Watching
 
-1. Board a single scene from a movie you know well — 6 to 10 panels minimum.
+1. Board a single scene from a movie you know well, 6 to 10 panels minimum.
 2. Make a simple animatic: scan/photograph the boards, cut them in video with temp audio.
 3. What problem from *Finding Nemo*'s production would NOT have been catchable in an animatic?

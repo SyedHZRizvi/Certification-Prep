@@ -39,9 +39,9 @@ POWER  ├──────────────┼────────�
 ---
 
 ## 🎲 Salience Model (3D)
-- **Power** — can enforce
-- **Legitimacy** — appropriate involvement
-- **Urgency** — time pressure
+- **Power**, can enforce
+- **Legitimacy**, appropriate involvement
+- **Urgency**, time pressure
 
 ---
 

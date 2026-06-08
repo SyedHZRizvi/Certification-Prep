@@ -11,7 +11,7 @@
 
 ### Q1. An "access control vestibule" / mantrap is BEST described as: *(Remember)*
 A. A single security door
-B. Two-door entry where the second door opens only after the first closes — defeats tailgating
+B. Two-door entry where the second door opens only after the first closes, defeats tailgating
 C. A keypad
 D. A camera tower
 
@@ -27,7 +27,7 @@ D. Replace BIOS
 
 ### Q3. Without a **UEFI password**, the value of Secure Boot is: *(Analyze)*
 A. Higher than ever
-B. Largely negated — an attacker with physical access can disable Secure Boot in seconds
+B. Largely negated, an attacker with physical access can disable Secure Boot in seconds
 C. Doubled
 D. Equal to having it
 
@@ -83,7 +83,7 @@ D. PCI scanning tools
 
 ### Q10. The **highest-priority** patch list to act on every week is: *(Apply)*
 A. Microsoft Office patches
-B. CISA Known Exploited Vulnerabilities (KEV) catalog — actively exploited in the wild
+B. CISA Known Exploited Vulnerabilities (KEV) catalog, actively exploited in the wild
 C. Browser betas
 D. Driver updates only
 
@@ -99,7 +99,7 @@ D. Is older
 
 ### Q12. EDR adds what value over traditional antivirus? *(Analyze)*
 A. Lower price
-B. Behavioral analytics, threat-intel feeds, IR tooling, cloud-managed telemetry — well beyond signature scanning
+B. Behavioral analytics, threat-intel feeds, IR tooling, cloud-managed telemetry, well beyond signature scanning
 C. No alerts
 D. Slower performance
 
@@ -123,7 +123,7 @@ D. They work across forests automatically
 
 ### Q15. A server in a colocation rack has Self-Encrypting Drives with BitLocker bound to the TPM. The drives are physically stolen. Data is: *(Apply)*
 A. Trivially readable in another machine
-B. Unreadable without the original TPM-bound key — encryption protects data at rest
+B. Unreadable without the original TPM-bound key, encryption protects data at rest
 C. Recovered by the SAS controller automatically
 D. Sent to the cloud
 
@@ -140,7 +140,7 @@ D. A red team's playbook
 ### Q17. A vulnerability scan finds 14 critical CVEs; a patch is available for all. Patch management policy says critical < 7 days. The next step is: *(Apply)*
 A. Wait until the next quarterly window
 B. Test in staging, schedule a maintenance window with a backout plan, deploy within the SLA
-C. Ignore — there's been no breach yet
+C. Ignore, there's been no breach yet
 D. Disable the vuln scanner
 
 ---
@@ -155,7 +155,7 @@ D. Shared via email
 
 ### Q19. A water-pipe sprinkler over an active server room is: *(Analyze)*
 A. The recommended fire-suppression mechanism
-B. An anti-pattern — use clean-agent (FM-200/Novec) or pre-action dry-pipe; wet-pipe overhead risks accidental discharge
+B. An anti-pattern, use clean-agent (FM-200/Novec) or pre-action dry-pipe; wet-pipe overhead risks accidental discharge
 C. Required by NFPA
 D. Permanent
 
@@ -220,13 +220,13 @@ D. Telnet on for support, no firewall
 
 ## 🎯 Answers + Explanations
 
-### Q1: **B. Two-door entry where the second door opens only after the first closes — defeats tailgating**
+### Q1: **B. Two-door entry where the second door opens only after the first closes, defeats tailgating**
 Mantrap / access control vestibule design.
 
 ### Q2: **B. Verify that the bootloader is signed by a trusted key chained to the firmware's trust store**
 Secure Boot's job is to block bootkits and unsigned bootloaders.
 
-### Q3: **B. Largely negated — an attacker with physical access can disable Secure Boot in seconds**
+### Q3: **B. Largely negated, an attacker with physical access can disable Secure Boot in seconds**
 Without a UEFI password, anyone with console access can toggle Secure Boot off, change boot order, etc. Both are needed.
 
 ### Q4: **B. A tamper-resistant chip (or firmware) storing keys and boot-stage measurement hashes**
@@ -247,13 +247,13 @@ JIT eliminates standing admin and forces deliberate elevation.
 ### Q9: **B. Hardening guides for OSes, browsers, cloud services from the Center for Internet Security**
 Industry-standard secure configurations.
 
-### Q10: **B. CISA Known Exploited Vulnerabilities (KEV) catalog — actively exploited in the wild**
+### Q10: **B. CISA Known Exploited Vulnerabilities (KEV) catalog, actively exploited in the wild**
 KEV = the "patch this NOW" list. Federal agencies are mandated to remediate KEV per BOD 22-01 within tight timeframes.
 
 ### Q11: **B. Can BLOCK suspicious activity, not just alert**
 HIDS detects only; HIPS detects AND blocks. Same engine class, different action level.
 
-### Q12: **B. Behavioral analytics, threat-intel feeds, IR tooling, cloud-managed telemetry — well beyond signature scanning**
+### Q12: **B. Behavioral analytics, threat-intel feeds, IR tooling, cloud-managed telemetry, well beyond signature scanning**
 Modern EDR (CrowdStrike, Defender for Endpoint, SentinelOne) sees patterns AV misses.
 
 ### Q13: **B. The EternalBlue exploit family used by WannaCry / NotPetya**
@@ -262,7 +262,7 @@ SMB 1.0 is the protocol EternalBlue targets. Disable SMB1 in Windows Features.
 ### Q14: **B. Their passwords are automatically rotated by AD; admins never need to know the password**
 gMSAs solve the "service account password rotation" pain point with AD-managed keys.
 
-### Q15: **B. Unreadable without the original TPM-bound key — encryption protects data at rest**
+### Q15: **B. Unreadable without the original TPM-bound key, encryption protects data at rest**
 SED + TPM-bound key = drives removed are useless. Encryption is the answer to physical theft.
 
 ### Q16: **B. Basic, broadly-applicable hardening most enterprises can deploy without breaking things**
@@ -274,14 +274,14 @@ Standard patch-management cadence; under no circumstances ignore critical CVEs.
 ### Q18: **C. Changed during commissioning; OOB mgmt network segmented; MFA enabled if supported**
 Default vendor creds are publicly documented and are the #1 attack vector for BMC compromise.
 
-### Q19: **B. An anti-pattern — use clean-agent (FM-200/Novec) or pre-action dry-pipe; wet-pipe overhead risks accidental discharge**
+### Q19: **B. An anti-pattern, use clean-agent (FM-200/Novec) or pre-action dry-pipe; wet-pipe overhead risks accidental discharge**
 Server rooms should use clean-agent suppression to avoid water on energized equipment.
 
 ### Q20: **C. Enforcing**
 SELinux modes: Enforcing (deny on violation), Permissive (log only), Disabled. Production = Enforcing.
 
 ### Q21: **B. Manage unique, randomized local admin passwords per machine, stored securely in AD**
-LAPS prevents shared local admin password reuse — a Pass-the-Hash pivot vector.
+LAPS prevents shared local admin password reuse, a Pass-the-Hash pivot vector.
 
 ### Q22: **B. Missing least-privilege scope + network segmentation between vendor portal and production**
 The Target HVAC pattern. Segmentation + role scoping would have stopped the pivot.
@@ -323,4 +323,4 @@ Each control maps to a requirement: SED+BitLocker = data theft protection; UEFI 
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — Networking for Servers](../Module-07-Networking/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, Networking for Servers](../Module-07-Networking/Reading.md)

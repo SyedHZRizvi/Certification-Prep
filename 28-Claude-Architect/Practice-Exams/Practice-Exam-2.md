@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — Claude Architect (Modules 5–8 focus)
+# 🧪 Practice Exam 2, Claude Architect (Modules 5–8 focus)
 
 > **Conditions:** Set a 30-minute timer. 30 questions. Treat it like the real assessment.
-> **Pass mark:** 25/30 (~85%) — the live assessment passes at 85%.
+> **Pass mark:** 25/30 (~85%), the live assessment passes at 85%.
 > Take this AFTER finishing Modules 5–8. Covers MCP, Agentic Patterns, RAG/Long-Context, Production Patterns & Safety.
 
 ---
@@ -71,7 +71,7 @@ D. Increase temperature
 
 ### 11. A long agent trajectory (47 steps for a simple question) is USUALLY:
 A. A sign of deep reasoning
-B. A sign of thrashing — investigate; set step caps
+B. A sign of thrashing, investigate; set step caps
 C. Optimal
 D. Unrelated to quality
 
@@ -81,7 +81,7 @@ B. Cold, warm, hot, lava
 C. A, B, C, D
 D. Local, region, global, universe
 
-### 13. A 600-page single legal contract (~150K tokens) with multiple questions per contract — BEST approach:
+### 13. A 600-page single legal contract (~150K tokens) with multiple questions per contract, BEST approach:
 A. RAG with K=3 chunks
 B. Stuff the full contract into context, with caching
 C. RAG with K=100

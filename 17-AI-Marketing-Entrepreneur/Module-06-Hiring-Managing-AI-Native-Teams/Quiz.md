@@ -185,7 +185,7 @@ D. Always 0
 
 ### Q23. The reading says the FIRST hire is usually: *(Understand)*
 A. The right hire
-B. The wrong hire — plan for it
+B. The wrong hire, plan for it
 C. The CEO
 D. The CFO
 
@@ -234,7 +234,7 @@ Schmidt & Hunter (1998); replicated by Google, IDEO, Stripe.
 Paid, real-task, time-boxed.
 
 ### Q9: **D. Buying email lists from data brokers**
-Not a hiring source — and not advisable.
+Not a hiring source, and not advisable.
 
 ### Q10: **B. An EOR like Deel, Remote.com, or Multiplier**
 EORs handle compliance for international FT hires.
@@ -275,7 +275,7 @@ The standard variable-comp structure.
 ### Q22: **A. 5–15% of annual net profit, allocated by tenure × performance**
 Standard agency profit-share structure.
 
-### Q23: **B. Wrong hire — plan for it**
+### Q23: **B. Wrong hire, plan for it**
 A documented agency-founder mantra.
 
 ### Q24: **B. Pairing them with prompt templates, approved AI workflows, and house-style guides**

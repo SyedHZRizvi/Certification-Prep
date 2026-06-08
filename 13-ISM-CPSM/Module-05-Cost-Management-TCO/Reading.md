@@ -3,10 +3,10 @@
 > **Why this module matters:** CPSM does not test "lowest price." It tests **total cost of ownership**, **should-cost analysis**, and **value engineering**. Get this mindset and you'll answer 20+ exam questions correctly that price-only thinkers will miss.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 — make-or-buy](../Module-01-Supply-Management-Foundations/Reading.md): TCO is the math you needed there
-> - [Module 2 — Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): cost levers vary by quadrant
+> - [Module 1, make-or-buy](../Module-01-Supply-Management-Foundations/Reading.md): TCO is the math you needed there
+> - [Module 2, Kraljic matrix](../Module-02-Category-Management-Sourcing/Reading.md): cost levers vary by quadrant
 > - Basic finance: NPV, IRR, payback, time-value-of-money
-> - Cross-course: [PMP Module 4 — Cost Management](../../02-PMP/Module-04-Business-Environment/Reading.md) for project-level cost concepts (earned value, contingency reserves)
+> - Cross-course: [PMP Module 4, Cost Management](../../02-PMP/Module-04-Business-Environment/Reading.md) for project-level cost concepts (earned value, contingency reserves)
 > If Module 2 or basic NPV math is shaky, pause and review.
 
 ---
@@ -15,15 +15,15 @@
 
 A 12,000-person company was excited about a new desktop printer model: $40 cheaper per unit than the incumbent. Procurement signed a 5-year deal for 1,500 printers, saving "$60,000 over the term."
 
-Two years later, IT was screaming. The new printers used proprietary toner cartridges at 2.3× the cost of the old ones. Each printer's annual toner spend went up $480 — across the fleet, **$720,000/year**, or **$3.6M over 5 years**.
+Two years later, IT was screaming. The new printers used proprietary toner cartridges at 2.3× the cost of the old ones. Each printer's annual toner spend went up $480, across the fleet, **$720,000/year**, or **$3.6M over 5 years**.
 
 Procurement saved $60,000. The company lost $3,540,000.
 
-That is the classic **TCO failure** — buying on **acquisition price** while ignoring the **operating costs** and **disposal costs** that dwarf it. CPSM-trained professionals do not make this mistake.
+That is the classic **TCO failure**, buying on **acquisition price** while ignoring the **operating costs** and **disposal costs** that dwarf it. CPSM-trained professionals do not make this mistake.
 
 ---
 
-## 🎯 Total Cost of Ownership (TCO) — THE Most Important Concept In Cost
+## 🎯 Total Cost of Ownership (TCO), THE Most Important Concept In Cost
 
 TCO = the **full cost over the entire life** of a product or service.
 
@@ -37,7 +37,7 @@ Three phases:
 
 🎯 **MEMORIZE:** TCO is acquisition + operating + disposal. Lowest acquisition price rarely wins on TCO.
 
-### Worked Example — Forklift TCO (5-year horizon)
+### Worked Example, Forklift TCO (5-year horizon)
 
 | Cost Element | Vendor A | Vendor B |
 |---|---|---|
@@ -150,7 +150,7 @@ A **price index** tracks the price of a commodity or category over time relative
 Examples: PPI (Producer Price Index), CRU steel index, Platts oil benchmarks, semiconductor index.
 
 ### Uses
-- Validate supplier price changes ("Steel went up 8% per CRU — supplier asking 18% increase is unjustified.")
+- Validate supplier price changes ("Steel went up 8% per CRU, supplier asking 18% increase is unjustified.")
 - Build escalation clauses (FP-EPA contracts, Module 3)
 - Forecast budget impact
 
@@ -159,11 +159,11 @@ Examples: PPI (Producer Price Index), CRU steel index, Platts oil benchmarks, se
 
 If index rises to 220, new price = $1,100. If it falls to 180, new price = $900.
 
-🎯 **Exam tip:** Indexed contracts protect BOTH parties from commodity swings. A 100% fixed price on a multi-year commodity contract benefits no one — supplier breaks the contract if prices spike; buyer overpays if prices crash.
+🎯 **Exam tip:** Indexed contracts protect BOTH parties from commodity swings. A 100% fixed price on a multi-year commodity contract benefits no one, supplier breaks the contract if prices spike; buyer overpays if prices crash.
 
 ---
 
-## 🛡️ Hedging — Locking In Future Prices
+## 🛡️ Hedging, Locking In Future Prices
 
 When you have material exposure to volatile commodities (oil, copper, aluminum, FX), you can use financial instruments to lock in prices.
 
@@ -184,7 +184,7 @@ When you have material exposure to volatile commodities (oil, copper, aluminum, 
 
 ---
 
-## 💵 Payment Terms — Working Capital Lever
+## 💵 Payment Terms, Working Capital Lever
 
 Payment terms (Net 30, Net 60, Net 90, 2/10 Net 30) are a cost lever.
 
@@ -208,24 +208,24 @@ Some large buyers stretch terms to Net 90+ and offer **supply chain finance** so
 
 A typical "cost-down" toolkit:
 
-1. Demand management — Need less (reduce specs, eliminate waste)
-2. Specification rationalization — Standardize variants
-3. Volume consolidation — Aggregate spend
-4. Competitive bidding — Force market test
-5. Negotiation — Improve terms within current supplier
-6. Make-or-buy reversal — In-source or outsource
-7. Should-cost / VA / VE — Attack the cost itself
-8. Process redesign — Eliminate non-value steps
-9. Total acquisition redesign — Pull-based, lean, JIT
-10. Supplier consolidation — Fewer suppliers, more leverage
-11. Low-cost-country sourcing — Where it makes sense (TCO!)
-12. Supplier-driven innovation — Suppliers find new approaches
+1. Demand management, Need less (reduce specs, eliminate waste)
+2. Specification rationalization, Standardize variants
+3. Volume consolidation, Aggregate spend
+4. Competitive bidding, Force market test
+5. Negotiation, Improve terms within current supplier
+6. Make-or-buy reversal, In-source or outsource
+7. Should-cost / VA / VE, Attack the cost itself
+8. Process redesign, Eliminate non-value steps
+9. Total acquisition redesign, Pull-based, lean, JIT
+10. Supplier consolidation, Fewer suppliers, more leverage
+11. Low-cost-country sourcing, Where it makes sense (TCO!)
+12. Supplier-driven innovation, Suppliers find new approaches
 
 🎯 **Exam pattern:** When asked "BEST cost reduction approach for this category," apply Kraljic. Strategic categories favor levers 7-12. Leverage categories favor 3-5. Bottleneck favors 1, 2, 11 carefully.
 
 ---
 
-## 📊 ROI, Payback, and NPV — Quick Reference
+## 📊 ROI, Payback, and NPV, Quick Reference
 
 You'll see these in CPSM cost questions.
 
@@ -240,23 +240,23 @@ You'll see these in CPSM cost questions.
 
 ---
 
-## 📊 Case Study — Boeing 787 Dreamliner Outsourcing Failure (2007-2013)
+## 📊 Case Study, Boeing 787 Dreamliner Outsourcing Failure (2007-2013)
 
-**Situation.** In the early 2000s, Boeing committed to a radical new approach for its 787 Dreamliner program: **~70% of the design and manufacturing would be outsourced** to a global network of Tier-1 partners (Mitsubishi, Kawasaki, Fuji, Alenia, Spirit AeroSystems, Vought, etc.) who would in turn manage their own multi-tier supply chains. Boeing would "snap together" the major sections — fuselage, wings, engines, electrical — in Everett, Washington. The unit-price math looked extraordinary on acquisition: lower labor costs in partner countries, partner-funded R&D, fixed-price contracts shifting risk away from Boeing.
+**Situation.** In the early 2000s, Boeing committed to a radical new approach for its 787 Dreamliner program: **~70% of the design and manufacturing would be outsourced** to a global network of Tier-1 partners (Mitsubishi, Kawasaki, Fuji, Alenia, Spirit AeroSystems, Vought, etc.) who would in turn manage their own multi-tier supply chains. Boeing would "snap together" the major sections fuselage, wings, engines, electrical in Everett, Washington. The unit-price math looked extraordinary on acquisition: lower labor costs in partner countries, partner-funded R&D, fixed-price contracts shifting risk away from Boeing.
 
 **Decision.** Boeing executives (chief among them then-CEO Alan Mulally and successor Jim McNerney) bought the consultancy thesis (a McKinsey/Bain-influenced view of "global value chains") that outsourcing 70% of the airframe would cut development cost from $10B to $6B and time-to-market from 6 to 4 years. The unit cost lens was acquisition-price-dominated. Boeing dramatically reduced its in-house engineering on airframe structures. It executed on this aggressively from 2003 to 2007.
 
-**Outcome.** The 787 program slipped by **three and a half years** (first delivery in 2011 instead of 2008) and cost over **$32B** versus the original $6-10B plan. Battery fires in early 787s (2013) triggered a worldwide grounding by the FAA — root-causing back to supplier-managed sub-tier engineering decisions Boeing did not control. *Bloomberg Businessweek* later quoted Mike Bair, the 787 program manager, describing the supplier-quality problems as the "worst nightmare of an outsourced operation." Operating cost analysis published in the *Harvard Business Review* (Christensen & Bever, "The Capitalist's Dilemma," HBR, June 2014) and by John Hart-Smith of Boeing (in an internal-then-leaked 2001 white paper *Out-Sourced Profits — the Cornerstone of Successful Subcontracting*) showed that **TCO including coordination cost, rework, schedule slippage, and warranty exposure exceeded what vertical integration would have cost by an estimated $10-15B**.
+**Outcome.** The 787 program slipped by **three and a half years** (first delivery in 2011 instead of 2008) and cost over **$32B** versus the original $6-10B plan. Battery fires in early 787s (2013) triggered a worldwide grounding by the FAA root-causing back to supplier-managed sub-tier engineering decisions Boeing did not control. *Bloomberg Businessweek* later quoted Mike Bair, the 787 program manager, describing the supplier-quality problems as the "worst nightmare of an outsourced operation." Operating cost analysis published in the *Harvard Business Review* (Christensen & Bever, "The Capitalist's Dilemma," HBR, June 2014) and by John Hart-Smith of Boeing (in an internal-then-leaked 2001 white paper *Out-Sourced Profits the Cornerstone of Successful Subcontracting*) showed that **TCO including coordination cost, rework, schedule slippage, and warranty exposure exceeded what vertical integration would have cost by an estimated $10-15B**.
 
-By 2013-2014, Boeing began *insourcing* significant portions of the 787 work — buying Vought's fuselage operations in Charleston SC, taking back wing-design authority, and famously restructuring its relationship with Spirit AeroSystems. The 737 MAX program (developed 2011-2017) used a much less aggressive outsourcing model. Boeing's 2024 acquisition of Spirit AeroSystems (announced June 2024) — the company spun out from Boeing in 2005 — is the symbolic close of that outsourcing cycle.
+By 2013-2014, Boeing began *insourcing* significant portions of the 787 work buying Vought's fuselage operations in Charleston SC, taking back wing-design authority, and famously restructuring its relationship with Spirit AeroSystems. The 737 MAX program (developed 2011-2017) used a much less aggressive outsourcing model. Boeing's 2024 acquisition of Spirit AeroSystems (announced June 2024) the company spun out from Boeing in 2005, is the symbolic close of that outsourcing cycle.
 
 **Lesson for the exam / for practitioners.** This is the textbook **TCO failure**:
 
-- **Acquisition price was lower** — outsourced parts looked cheap on a per-unit basis.
-- **Operating costs exploded** — coordination, rework, certification delays, warranty.
-- **Disposal cost (long-term)** — Boeing's loss of in-house engineering capability took a decade to rebuild.
+- **Acquisition price was lower**, outsourced parts looked cheap on a per-unit basis.
+- **Operating costs exploded**, coordination, rework, certification delays, warranty.
+- **Disposal cost (long-term)**, Boeing's loss of in-house engineering capability took a decade to rebuild.
 
-Note three exam-relevant patterns: (1) when a make-or-buy decision involves *core competence* and *IP*, TCO must include the capability-erosion risk that doesn't fit cleanly in a 5-year NPV; (2) "fixed-price contracts shifting risk to suppliers" only works when suppliers can absorb the risk — many 787 partners couldn't, and Boeing ended up bailing them out; (3) value-analysis (VA/VE) and should-cost analysis only work when the buyer has the engineering depth to challenge supplier cost estimates — outsourcing 70% destroyed that depth.
+Note three exam-relevant patterns: (1) when a make-or-buy decision involves *core competence* and *IP*, TCO must include the capability-erosion risk that doesn't fit cleanly in a 5-year NPV; (2) "fixed-price contracts shifting risk to suppliers" only works when suppliers can absorb the risk many 787 partners couldn't, and Boeing ended up bailing them out; (3) value-analysis (VA/VE) and should-cost analysis only work when the buyer has the engineering depth to challenge supplier cost estimates outsourcing 70% destroyed that depth.
 
 When a CPSM scenario asks "BEST way to evaluate an outsourcing decision," the answer is rarely "compute the unit-price delta." The answer is "compute TCO including the *competence-loss* opportunity cost over a 10+ year horizon."
 
@@ -314,12 +314,12 @@ CPSM distinguishes these.
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **TCO vs the quarterly P&L.** TCO horizons are typically 5-10 years. CFOs are measured quarterly. Build a 60-second pitch you'd give a new CFO to defend a TCO-driven supplier choice that costs $200K more on day 1. What metric on the dashboard makes the case stick?
-2. **Hedging — when speculation is reasonable.** This module says "hedge known exposure; don't speculate." But sophisticated supply organizations sometimes layer modest speculation on top of pure hedging (e.g., to lock in below-trend prices when their analyst sees a peak coming). Defend a position on whether modest, governed speculation by procurement should be allowed, banned, or required.
+2. **Hedging, when speculation is reasonable.** This module says "hedge known exposure; don't speculate." But sophisticated supply organizations sometimes layer modest speculation on top of pure hedging (e.g., to lock in below-trend prices when their analyst sees a peak coming). Defend a position on whether modest, governed speculation by procurement should be allowed, banned, or required.
 3. **Should-cost in the AI era.** Generative AI can now produce bottom-up should-cost models in hours that used to take weeks. Does that change the should-cost discipline materially, or does it just lower the cost barrier to entry? What's the highest-stakes failure mode of an AI-driven should-cost model in a real negotiation?
-4. **The 2/10 Net 30 math is great — until it isn't.** A 2/10 Net 30 discount annualizes to ~36.5%, which is irresistible math. Yet many large enterprises stretch terms instead of taking discounts. Build the case that *extending* terms can be more valuable than *taking* discounts even when the math says otherwise.
+4. **The 2/10 Net 30 math is great, until it isn't.** A 2/10 Net 30 discount annualizes to ~36.5%, which is irresistible math. Yet many large enterprises stretch terms instead of taking discounts. Build the case that *extending* terms can be more valuable than *taking* discounts even when the math says otherwise.
 5. **Boeing 787 is the textbook TCO failure. What's the textbook TCO success?** Pick a real company that's run the opposite playbook from Boeing 787 (e.g., Apple in-house chip design, Tesla's vertical integration of batteries, SpaceX's Raptor engine production). Why did *that* company's TCO math work where Boeing's didn't?
 
 ---
@@ -355,10 +355,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 Miles, *Techniques of Value Analysis and Engineering* (1961, McGraw-Hill) — the founding text of VA/VE
+- 📖 Miles, *Techniques of Value Analysis and Engineering* (1961, McGraw-Hill), the founding text of VA/VE
 - 📖 *Cost Reduction and Optimization for Manufacturing and Industrial Companies* by Joseph Berk (2010, Wiley/Scrivener)
-- 📖 SAVE International (value-eng.org) — society of value engineers; case-study library
-- 📖 CME Group education center — free futures and hedging tutorials
-- 📖 US Bureau of Labor Statistics PPI (bls.gov/ppi) — free producer-price-index data
+- 📖 SAVE International (value-eng.org), society of value engineers; case-study library
+- 📖 CME Group education center, free futures and hedging tutorials
+- 📖 US Bureau of Labor Statistics PPI (bls.gov/ppi), free producer-price-index data
 - 📖 Shank & Govindarajan, *Strategic Cost Management* (1993, Free Press)
-- 📖 Christensen & Bever, "The Capitalist's Dilemma" — *HBR*, June 2014 (Boeing 787 referenced)
+- 📖 Christensen & Bever, "The Capitalist's Dilemma", *HBR*, June 2014 (Boeing 787 referenced)

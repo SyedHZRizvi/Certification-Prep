@@ -73,8 +73,8 @@
 ## 🚨 Common Traps
 
 - ❌ Believing follower count drives TikTok ranking (it doesn't)
-- ❌ Posting blog links directly in LinkedIn (downranked — put link in first comment)
-- ❌ Treating Pinterest like Instagram (different — drives outbound)
+- ❌ Posting blog links directly in LinkedIn (downranked, put link in first comment)
+- ❌ Treating Pinterest like Instagram (different, drives outbound)
 - ❌ Spreading thin across 7 platforms
 - ❌ Buying followers (engagement falls; algorithm punishes)
 - ❌ Skipping FTC disclosure on AI-generated endorsements
@@ -99,7 +99,7 @@
 ## ✏️ Quick Self-Check
 
 1. TikTok's primary ranking factor? ___
-2. LinkedIn's link suppression — what's the workaround? ___
+2. LinkedIn's link suppression, what's the workaround? ___
 3. The four influencer tiers + which is best ROI? ___
 4. Two AI listening tools for SMB budgets? ___
 5. Why is Pinterest unique? ___

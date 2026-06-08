@@ -70,7 +70,7 @@ D. Replace Server with Linux
 
 ---
 
-### Q9. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q9. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** Defender for Servers covers both Azure VMs and Arc-enabled servers.
 **S2:** JIT requires the `Microsoft.Compute/virtualMachines/openConnectionPortDirectly/action` permission.
@@ -115,7 +115,7 @@ D. WiFi snooping
 
 ---
 
-### Q14. **Yes/No** — Mark each statement. *(Analyze)*
+### Q14. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** Defender for Servers P2 includes File Integrity Monitoring.
 **S2:** Defender for Servers P1 includes Vulnerability Assessment.
@@ -132,7 +132,7 @@ D. Yes / No / No
 A. P1
 B. P2
 C. Both
-D. None — it's standalone
+D. None, it's standalone
 
 ---
 
@@ -159,7 +159,7 @@ D. JIT is too slow for admins
 
 ---
 
-### Q18. **Yes/No** — Mark each statement. *(Apply)*
+### Q18. **Yes/No**, Mark each statement. *(Apply)*
 
 **S1:** A Privileged Access Workstation (PAW) should be used for Tier-0 admin tasks only.
 **S2:** PAW devices should have unrestricted internet access for browsing.
@@ -176,12 +176,12 @@ D. No / No / Yes
 A. ASR rule "Block process creations from PSExec and WMI commands"
 B. WDAC + appropriate allowlist rules
 C. Both A and B
-D. Neither — Defender doesn't see this
+D. Neither, Defender doesn't see this
 
 ---
 
 ### Q20. The Microsoft Tier 0 administrative model includes which assets? *(Remember)*
-A. Forest root, AD DCs, AD CS, Entra Connect server, ADFS — the identity control plane
+A. Forest root, AD DCs, AD CS, Entra Connect server, ADFS, the identity control plane
 B. Web servers only
 C. End-user workstations
 D. SharePoint sites
@@ -212,7 +212,7 @@ D. DNS resolution
 
 ---
 
-### Q24. **Yes/No** — Defender for Servers integration. *(Analyze)*
+### Q24. **Yes/No**, Defender for Servers integration. *(Analyze)*
 
 **S1:** Defender for Servers can be enabled on a subscription via Azure CLI.
 **S2:** Defender for Servers writes findings to a Log Analytics workspace.
@@ -244,7 +244,7 @@ D. Passive / Active
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. P2**
-JIT is Plan 2 only — along with VA, FIM, adaptive controls, network hardening, regulatory compliance.
+JIT is Plan 2 only, along with VA, FIM, adaptive controls, network hardening, regulatory compliance.
 
 ### Q2: **B. Microsoft Defender for Endpoint (MDE)**
 MDE is bundled in Defender for Servers (both P1 and P2). You can also buy MDE standalone.
@@ -253,7 +253,7 @@ MDE is bundled in Defender for Servers (both P1 and P2). You can also buy MDE st
 Default max JIT request duration is 3 hours. Configurable up to 24h per port.
 
 ### Q4: **B. Kernel mode**
-WDAC enforces at the kernel — tamper-resistant against local admins.
+WDAC enforces at the kernel, tamper-resistant against local admins.
 
 ### Q5: **B. WDAC**
 WDAC is the modern default; AppLocker is legacy support only.
@@ -262,7 +262,7 @@ WDAC is the modern default; AppLocker is legacy support only.
 VBS creates an isolated process space using the hypervisor. Hyper-V hypervisor is the foundation.
 
 ### Q7: **A. NTLM, DES, RC4 Kerberos, credential caching, unconstrained delegation**
-Protected Users disables all four — a big package.
+Protected Users disables all four, a big package.
 
 ### Q8: **B. Certified OEM hardware with TPM 2.0 + UEFI Secure Boot + DMA protection**
 Secured-core requires the hardware + firmware + OS combo. No software shortcut.
@@ -277,10 +277,10 @@ The three modern centralized paths.
 Defender detects the 3rd-party and switches to Passive, providing threat intel only.
 
 ### Q12: **B. "Block Office apps from creating child processes"**
-One of the most-deployed ASR rules — defeats macro→PowerShell attacks.
+One of the most-deployed ASR rules, defeats macro→PowerShell attacks.
 
 ### Q13: **A. Ransomware encryption of files in protected folders**
-Anti-ransomware feature — only allowlisted apps can write to specified folders.
+Anti-ransomware feature, only allowlisted apps can write to specified folders.
 
 ### Q14: **A. Yes / No / Yes**
 S1 correct (FIM is P2). S2 wrong (VA is P2 only). S3 correct (500 MB/node/day free with P2).
@@ -295,25 +295,25 @@ Audit → pilot → review → enforce → broader rollout. Standard safe deploy
 Attack-surface reduction philosophy. Always-open RDP is brute-force / RCE bait.
 
 ### Q18: **A. Yes / No / Yes**
-S1 correct. S2 wrong (PAWs have NO internet browsing — Tier-0 asset). S3 correct.
+S1 correct. S2 wrong (PAWs have NO internet browsing, Tier-0 asset). S3 correct.
 
 ### Q19: **C. Both A and B**
 ASR rules block known suspicious behaviors; WDAC blocks unknown/unsigned binaries. Defense in depth.
 
-### Q20: **A. Forest root, AD DCs, AD CS, Entra Connect server, ADFS — the identity control plane**
+### Q20: **A. Forest root, AD DCs, AD CS, Entra Connect server, ADFS, the identity control plane**
 Tier-0 = anything that, if compromised, gives forest-wide control.
 
 ### Q21: **B. Prevents non-IT-approved changes to AV settings**
 Local admin alone cannot disable; need to go through MEM/Defender XDR portal.
 
 ### Q22: **B. A faulty kernel-mode driver content update causing BSOD**
-The July 2024 outage — channel file 291.
+The July 2024 outage, channel file 291.
 
 ### Q23: **A. Browser-launched executable from the email attachment running**
 ASR specifically blocks executables originating from email/webmail attempting to launch.
 
 ### Q24: **B. Yes / Yes / No**
-S1 correct. S2 correct. S3 wrong — Azure Arc is the *recommended* path for non-Azure servers but Defender for Endpoint can also be deployed standalone via GPO/Intune/SCCM.
+S1 correct. S2 correct. S3 wrong, Azure Arc is the *recommended* path for non-Azure servers but Defender for Endpoint can also be deployed standalone via GPO/Intune/SCCM.
 
 ### Q25: **B. Credential Guard + Protected Users + LAPS**
 The classic Tier-0 hardening triad.

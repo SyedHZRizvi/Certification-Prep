@@ -1,6 +1,6 @@
 # Module 5: RAG on Google Cloud 🔎
 
-> **Why this module matters:** RAG (Retrieval-Augmented Generation) is *the* pattern for keeping LLM outputs accurate, current, and grounded in your own data. Google Cloud has *five different RAG primitives*, and the exam loves to test whether you can pick the right one for a given workload. Worse, the products keep being renamed — Discovery Engine → Vertex AI Search, Matching Engine → Vertex AI Vector Search, GenAI App Builder → Agent Builder. This module is the canonical map.
+> **Why this module matters:** RAG (Retrieval-Augmented Generation) is *the* pattern for keeping LLM outputs accurate, current, and grounded in your own data. Google Cloud has *five different RAG primitives*, and the exam loves to test whether you can pick the right one for a given workload. Worse, the products keep being renamed, Discovery Engine → Vertex AI Search, Matching Engine → Vertex AI Vector Search, GenAI App Builder → Agent Builder. This module is the canonical map.
 
 > **Prerequisites for this module.** Modules 1–4 finished. A Vertex AI project; some test documents (PDFs or text files) in a GCS bucket; basic familiarity with embeddings (a single sentence → a vector of ~768 floats).
 
@@ -16,9 +16,9 @@ The team builds the first version the "right" way: open-source RAG with Sentence
 2. The Pinecone index is in us-east-1 (Virginia); Mercado Libre serves Brazil and Argentina; round-trip latency from São Paulo is 180ms before Gemini even starts thinking.
 3. The hybrid-retrieval logic (semantic + keyword) is in a Python service the team wrote in a hurry; it ranks "cómo cambiar contraseña" (Spanish for "how to change password") below an unrelated English document because the BM25 component is English-tuned.
 
-Mercado Libre's team migrates to **Vertex AI Search** in late 2023. Vertex AI Search handles chunking, embedding (using Google's multi-lingual embedding model), regional deployment in São Paulo, hybrid retrieval (BM25 + dense), reranking, and citation extraction — out of the box. Gemini Pro grounds against the Vertex AI Search retrieval result with a single API call. The team's published case study (Google Cloud Next 2024) reports: less code than the open-source version, lower latency for South American users, better Portuguese + Spanish quality, and the engineering team is no longer responsible for re-tuning chunking when seller policies change.
+Mercado Libre's team migrates to **Vertex AI Search** in late 2023. Vertex AI Search handles chunking, embedding (using Google's multi-lingual embedding model), regional deployment in São Paulo, hybrid retrieval (BM25 + dense), reranking, and citation extraction, out of the box. Gemini Pro grounds against the Vertex AI Search retrieval result with a single API call. The team's published case study (Google Cloud Next 2024) reports: less code than the open-source version, lower latency for South American users, better Portuguese + Spanish quality, and the engineering team is no longer responsible for re-tuning chunking when seller policies change.
 
-The lesson: **Vertex AI Search is RAG for teams that do not want to build RAG.** And it is the right choice *most of the time*. But sometimes — when you have a custom embedding model, when you need ANN at extreme scale, when you need a stack you can customize — Vertex AI Vector Search (the lower-level primitive) is the right choice. The exam is testing whether you can tell the difference.
+The lesson: **Vertex AI Search is RAG for teams that do not want to build RAG.** And it is the right choice *most of the time*. But sometimes when you have a custom embedding model, when you need ANN at extreme scale, when you need a stack you can customize Vertex AI Vector Search (the lower-level primitive) is the right choice. The exam is testing whether you can tell the difference.
 
 ---
 
@@ -38,12 +38,12 @@ A RAG pipeline has six logical stages:
 6. **Generate:** pass the retrieved chunks to the LLM as context; LLM answers grounded.
 
 **Why RAG (vs fine-tuning or long-context stuffing):**
-- Fresh data — change the source, re-index, no retrain
-- Citations — every claim traces to a chunk → a page → a document
-- Cost — embedding + retrieval is cheap; only retrieved tokens go to LLM input
-- Auditability — you can show *which document* the LLM grounded against
+- Fresh data, change the source, re-index, no retrain
+- Citations, every claim traces to a chunk → a page → a document
+- Cost, embedding + retrieval is cheap; only retrieved tokens go to LLM input
+- Auditability, you can show *which document* the LLM grounded against
 
-🎯 **Exam pattern:** *"You want Gemini to answer questions about your company's policies, which change quarterly. RAG or fine-tune?"* → **RAG**. Fine-tune is for *behavior* changes (tone, format, output structure) — not knowledge updates.
+🎯 **Exam pattern:** *"You want Gemini to answer questions about your company's policies, which change quarterly. RAG or fine-tune?"* → **RAG**. Fine-tune is for *behavior* changes (tone, format, output structure), not knowledge updates.
 
 ---
 
@@ -53,7 +53,7 @@ Google offers five distinct RAG building blocks. Pick by workload:
 
 | Stack | What you bring | What Google manages | Best for |
 |-------|----------------|---------------------|----------|
-| **Vertex AI Search** | Source docs (PDFs, HTML, GCS, BQ, etc.) | Chunking + embedding + index + retrieval + reranking + grounding | "I want RAG fast" — most production workloads |
+| **Vertex AI Search** | Source docs (PDFs, HTML, GCS, BQ, etc.) | Chunking + embedding + index + retrieval + reranking + grounding | "I want RAG fast", most production workloads |
 | **Vertex AI Vector Search** | Embeddings (you compute), data store | Just the ANN index | Custom embedding model, extreme scale, custom retrieval logic |
 | **AlloyDB AI + pgvector** | SQL data + embeddings via in-DB function | Postgres-compatible DB with vector indexing | Hybrid SQL + vector workload on existing AlloyDB |
 | **Cloud SQL pgvector** | SQL data + embeddings via app code | Postgres / MySQL with the pgvector extension | Small-scale, existing Cloud SQL Postgres |
@@ -63,7 +63,7 @@ The exam loves these distinctions. Memorize what each manages and what it doesn'
 
 ---
 
-## 🥇 Vertex AI Search — The Managed RAG Default
+## 🥇 Vertex AI Search, The Managed RAG Default
 
 **Vertex AI Search** is the highest-level RAG primitive: you point it at a corpus, it indexes, you query.
 
@@ -80,13 +80,13 @@ The exam loves these distinctions. Memorize what each manages and what it doesn'
 
 ### What it does behind the curtain
 
-1. **Auto-chunking** — semantically aware; respects paragraph boundaries
-2. **Embedding** — Google's text-embedding-004 (or multilingual-embedding-002 for non-English)
-3. **Index** — managed inverted + vector hybrid
-4. **Retrieval** — hybrid BM25 (keyword) + dense (semantic) → fused
-5. **Reranking** — secondary model reorders top-K for relevance
-6. **Snippet extraction** — returns highlighted snippets + document URIs
-7. **Citation linking** — for grounding, returns machine-readable spans
+1. **Auto-chunking**, semantically aware; respects paragraph boundaries
+2. **Embedding**, Google's text-embedding-004 (or multilingual-embedding-002 for non-English)
+3. **Index**, managed inverted + vector hybrid
+4. **Retrieval**, hybrid BM25 (keyword) + dense (semantic) → fused
+5. **Reranking**, secondary model reorders top-K for relevance
+6. **Snippet extraction**, returns highlighted snippets + document URIs
+7. **Citation linking**, for grounding, returns machine-readable spans
 
 ### Connecting to Gemini (grounding)
 
@@ -118,7 +118,7 @@ Per-query pricing + index storage. Roughly $4 per 1,000 search queries on the st
 
 ---
 
-## 🥈 Vertex AI Vector Search — The ANN Primitive
+## 🥈 Vertex AI Vector Search, The ANN Primitive
 
 When you need:
 
@@ -179,8 +179,8 @@ for neighbor in response[0]:
 **AlloyDB** is Google's PostgreSQL-compatible distributed database (a Spanner-Postgres hybrid). **AlloyDB AI** is an extension suite that adds:
 
 1. **`pgvector`** extension for storing + querying vectors in SQL
-2. **In-DB embedding generation** — `embedding('text')` SQL function calls Vertex AI behind the scenes
-3. **In-DB Gemini calls** — `google_ml.predict_row()` for inference-from-SQL
+2. **In-DB embedding generation**, `embedding('text')` SQL function calls Vertex AI behind the scenes
+3. **In-DB Gemini calls**, `google_ml.predict_row()` for inference-from-SQL
 4. **ScaNN-style indexing** for fast vector queries
 
 ```sql
@@ -278,7 +278,7 @@ Not for: low-latency (<200ms) online inference; that's what Vertex AI Search or 
 
 ---
 
-## 🪡 Choosing the Right RAG Stack — Decision Tree
+## 🪡 Choosing the Right RAG Stack, Decision Tree
 
 ```
 Q1: Is the source structured (SQL/BQ) or unstructured (PDFs/docs)?
@@ -311,7 +311,7 @@ You will pick an embedding model for your vectors. The major options on Vertex A
 | **gemini-embedding-001** | 768 | English + improved | The Gemini-aligned embedding (highest quality) |
 | **multilingual-embedding-002** | 768 | 100+ languages | Multilingual content (Mercado Libre's pick) |
 | **text-multilingual-embedding-002** | 768 | 100+ languages | Multilingual workloads |
-| **multimodalembedding** | 1408 | text + image | CLIP-style — match text against images |
+| **multimodalembedding** | 1408 | text + image | CLIP-style, match text against images |
 
 ```python
 from vertexai.language_models import TextEmbeddingModel
@@ -441,7 +441,7 @@ result = task.evaluate(model=grounded_model)
 | **Embedding** | Dense vector representation of text/image |
 | **ANN** | Approximate Nearest Neighbor |
 | **ScaNN** | Google's ANN library (used internally by Vector Search) |
-| **HNSW** | Hierarchical Navigable Small World — popular ANN algorithm |
+| **HNSW** | Hierarchical Navigable Small World, popular ANN algorithm |
 | **IVF** | Inverted File index |
 | **Vertex AI Search** | Managed RAG service |
 | **Vertex AI Vector Search** | ANN index primitive |
@@ -452,12 +452,12 @@ result = task.evaluate(model=grounded_model)
 | **gemini-embedding-001** | Gemini-aligned embedding (high quality) |
 | **multimodalembedding** | Text + image embedding (CLIP-style) |
 | **Grounding** | LLM citing retrieved sources |
-| **Faithfulness** | RAG metric — answer uses only retrieved context |
-| **Recall@K** | Retrieval metric — right doc in top-K |
+| **Faithfulness** | RAG metric, answer uses only retrieved context |
+| **Recall@K** | Retrieval metric, right doc in top-K |
 | **Hybrid retrieval** | BM25 (keyword) + dense (semantic) merge |
 | **Reranking** | Second-pass model reorders top-K by relevance |
 | **Chunk overlap** | Tokens shared between adjacent chunks for context preservation |
-| **Contextual chunking** | Anthropic 2024 pattern — LLM adds context to each chunk |
+| **Contextual chunking** | Anthropic 2024 pattern, LLM adds context to each chunk |
 
 ---
 
@@ -465,18 +465,18 @@ result = task.evaluate(model=grounded_model)
 
 You now know:
 
-- 🧠 **RAG fundamentals** — ingest → chunk → embed → index → retrieve → generate
+- 🧠 **RAG fundamentals**, ingest → chunk → embed → index → retrieve → generate
 - 🗺️ **Five Google Cloud RAG stacks** and how to pick
 - 🥇 **Vertex AI Search** as the managed default
 - 🥈 **Vertex AI Vector Search** for custom embeddings and extreme scale
 - 🐘 **AlloyDB AI + pgvector** for SQL-side vector + in-DB Gemini
 - 🛢️ **Cloud SQL pgvector** for simpler relational workloads
 - 📊 **BigQuery vector search** for analytics-side semantic
-- 🧮 **Google's embedding model family** — 004/005/gemini-001/multilingual-002/multimodal
+- 🧮 **Google's embedding model family**, 004/005/gemini-001/multilingual-002/multimodal
 - 🧪 **Four grounding modes** on Gemini
-- 🎯 **RAG evaluation metrics** — recall@K, faithfulness, answer relevance
+- 🎯 **RAG evaluation metrics**, recall@K, faithfulness, answer relevance
 
-**Next:** [Module 6 — Fine-Tuning on Vertex AI](../Module-06-Fine-Tuning-Vertex-AI/Reading.md)
+**Next:** [Module 6, Fine-Tuning on Vertex AI](../Module-06-Fine-Tuning-Vertex-AI/Reading.md)
 
 ---
 
@@ -489,4 +489,4 @@ You now know:
 - 📖 [AlloyDB AI](https://cloud.google.com/alloydb/ai)
 - 📖 [BigQuery vector search](https://cloud.google.com/bigquery/docs/vector-search-intro)
 - 📖 [Text embeddings reference](https://cloud.google.com/vertex-ai/generative-ai/docs/embeddings/get-text-embeddings)
-- 📄 [Anthropic Contextual Retrieval (Sept 2024)](https://www.anthropic.com/news/contextual-retrieval) — the chunking technique
+- 📄 [Anthropic Contextual Retrieval (Sept 2024)](https://www.anthropic.com/news/contextual-retrieval), the chunking technique

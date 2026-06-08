@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">BCP / DRP — RTO &amp; RPO</p>
+      <p class="vg-title">BCP / DRP, RTO &amp; RPO</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 10 min</span>
     </div>
@@ -142,6 +142,6 @@
 
 1. Compute ALE for a $500k asset, 40% loss per incident, 0.5 incidents/year.
 2. Distinguish MSA, SOW, SLA, MOU, BPA, DPA in one line each.
-3. RTO vs RPO — which is downtime, which is data loss?
-4. Hot vs warm vs cold site — pick one for a financial trading platform.
+3. RTO vs RPO, which is downtime, which is data loss?
+4. Hot vs warm vs cold site, pick one for a financial trading platform.
 5. NIST CSF functions in order?

@@ -1,14 +1,14 @@
 ---
-title: "Module 3: Unreal Animation Blueprint — Blend Spaces, Control Rig & Sequencer"
+title: "Module 3: Unreal Animation Blueprint, Blend Spaces, Control Rig & Sequencer"
 ---
 
 # 🔵 Module 3: Unreal Animation Blueprint
 
 ## The Animation Lead Who Rebuilt Valorant's Agent Movement
 
-In 2019, Riot Games Animation Lead Ryan Duffin gave an internal talk that later surfaced as a GDC 2020 presentation: "Building the Animations of Valorant." The central challenge Riot faced was building a competitive tactical shooter where every frame of animation had to serve gameplay clarity rather than cinematic beauty. In a game like Valorant, where players use agent silhouettes at 200+ feet to make split-second decisions — "is that Reyna planting or running?" — animation is a competitive information system, not an aesthetic one.
+In 2019, Riot Games Animation Lead Ryan Duffin gave an internal talk that later surfaced as a GDC 2020 presentation: "Building the Animations of Valorant." The central challenge Riot faced was building a competitive tactical shooter where every frame of animation had to serve gameplay clarity rather than cinematic beauty. In a game like Valorant, where players use agent silhouettes at 200+ feet to make split-second decisions "is that Reyna planting or running?" animation is a competitive information system, not an aesthetic one.
 
-The Valorant team built their character animation in Unreal Engine 4 using Animation Blueprints. Their Blend Space for agent locomotion had to satisfy two mutually exclusive demands: it needed to look smooth enough that players found the agents appealing, and it needed to be clear enough at distance that the silhouette never ambiguously read a planting animation as a running one. The solution was a tiered Blend Space where fast movement states had exaggerated silhouettes — wider leg spread, stronger directional lean — while idle and slow walk states prioritized smooth blending.
+The Valorant team built their character animation in Unreal Engine 4 using Animation Blueprints. Their Blend Space for agent locomotion had to satisfy two mutually exclusive demands: it needed to look smooth enough that players found the agents appealing, and it needed to be clear enough at distance that the silhouette never ambiguously read a planting animation as a running one. The solution was a tiered Blend Space where fast movement states had exaggerated silhouettes wider leg spread, stronger directional lean while idle and slow walk states prioritized smooth blending.
 
 The Coalition's Gears 5, Epic Games' Fortnite, and Riot's Valorant all ship on Unreal Engine Animation Blueprints. Understanding this system is non-negotiable for any serious game animator.
 
@@ -18,8 +18,8 @@ The Coalition's Gears 5, Epic Games' Fortnite, and Riot's Valorant all ship on U
 
 Unreal Engine's **Animation Blueprint** (AnimBP) is a specialized Blueprint that controls how a Skeletal Mesh animates at runtime. Unlike Unity's Animator Controller (which is a data asset with a state machine editor), the Animation Blueprint is a full visual scripting environment combining:
 
-1. **AnimGraph** — the visual state machine and blend node graph; defines *what* plays and *how* clips blend
-2. **Event Graph** — standard Blueprint event graph; defines *when* and *what* properties change (code logic that drives AnimGraph parameters)
+1. **AnimGraph**, the visual state machine and blend node graph; defines *what* plays and *how* clips blend
+2. **Event Graph**, standard Blueprint event graph; defines *when* and *what* properties change (code logic that drives AnimGraph parameters)
 
 Every Skeletal Mesh Actor that animates at runtime needs an Animation Blueprint class assigned to its Skeletal Mesh Component.
 
@@ -101,7 +101,7 @@ Epic Games published details of Fortnite's animation architecture in Unreal Dev 
 - X axis: Speed (0 to max sprint speed, ~800 cm/s)
 - Y axis: Direction (−180° to 180°, derived from movement direction vs. character facing)
 
-The key insight: Fortnite's fast-paced build loop requires that locomotion transitions feel instant. Epic tuned the Blend Space **interpolation speed** (the rate at which the sample position in the Blend Space moves) to be fast — roughly 8–12 units/second — so that a player who changes direction feels immediate feedback. Slower interpolation would feel smooth but muddy; players would perceive it as input lag.
+The key insight: Fortnite's fast-paced build loop requires that locomotion transitions feel instant. Epic tuned the Blend Space **interpolation speed** (the rate at which the sample position in the Blend Space moves) to be fast roughly 8–12 units/second so that a player who changes direction feels immediate feedback. Slower interpolation would feel smooth but muddy; players would perceive it as input lag.
 
 > 🚨 **Trap on the exam:** Blend Space interpolation speed (in the Blend Space editor settings) is NOT the same as the animation transition blend time in the state machine. The interpolation speed controls how quickly the 2D sample position moves; the transition blend controls how long a crossfade between states takes.
 
@@ -115,9 +115,9 @@ The key insight: Fortnite's fast-paced build loop requires that locomotion trans
 - Create runtime IK, secondary motion, and deformation systems that run on the animation thread
 
 ### Why Control Rig Matters for Production
-Before Control Rig, procedural animation in Unreal required C++ or AnimGraph Blueprint nodes that were difficult to iterate on. Control Rig exposes a dedicated rigging graph with FK/IK nodes, constraint nodes, and math operations — similar to Maya's Node Editor but designed for real-time.
+Before Control Rig, procedural animation in Unreal required C++ or AnimGraph Blueprint nodes that were difficult to iterate on. Control Rig exposes a dedicated rigging graph with FK/IK nodes, constraint nodes, and math operations, similar to Maya's Node Editor but designed for real-time.
 
-The Coalition used Control Rig for Gears 5's environmental interaction system — Kait Diaz's hands and body procedurally adapt when she vaults over walls, crawls under obstacles, or leans around cover. The rig logic to detect the obstacle geometry and solve the body pose runs in real-time at 60fps.
+The Coalition used Control Rig for Gears 5's environmental interaction system, Kait Diaz's hands and body procedurally adapt when she vaults over walls, crawls under obstacles, or leans around cover. The rig logic to detect the obstacle geometry and solve the body pose runs in real-time at 60fps.
 
 ### Control Rig Key Concepts
 
@@ -134,7 +134,7 @@ The Coalition used Control Rig for Gears 5's environmental interaction system �
 
 ## 🎬 Sequencer: Cinematic Animation in Unreal
 
-**Sequencer** is Unreal Engine's non-linear animation editor for in-game cinematics. It is equivalent to Unity's Timeline, but significantly more powerful — it can control animation, camera cuts, audio, particle systems, lighting, and Blueprint events in a single unified track-based interface.
+**Sequencer** is Unreal Engine's non-linear animation editor for in-game cinematics. It is equivalent to Unity's Timeline, but significantly more powerful, it can control animation, camera cuts, audio, particle systems, lighting, and Blueprint events in a single unified track-based interface.
 
 ### Sequencer vs. Animation Blueprint
 
@@ -153,7 +153,7 @@ Epic's **MetaHuman** system provides photorealistic digital humans with facial r
 - Generates facial animation curves that drive the MetaHuman rig
 - Exports to Sequencer or the Animation Blueprint as an animation asset
 
-MetaHuman facial rigs have 265 pose space deformation controls — far more than typical game characters. The real-time deformation runs on the GPU in UE5.
+MetaHuman facial rigs have 265 pose space deformation controls, far more than typical game characters. The real-time deformation runs on the GPU in UE5.
 
 ---
 
@@ -168,21 +168,21 @@ The Coalition (Microsoft's internal Gears of War studio) gave a GDC 2019 talk on
 
 ---
 
-## 🎮 Case Study: Valorant — Agent Ability Animation Design
+## 🎮 Case Study: Valorant, Agent Ability Animation Design
 
 Riot's GDC 2020 presentation "Building the Animations of Valorant" by Ryan Duffin covers the specific Animation Blueprint design decisions that make Valorant's agent animations work in a competitive context. Three critical decisions:
 
-**1. Ability animations are Montages, not state machine states.** Every agent ability animation plays via a Montage on a specific Slot, leaving the locomotion state machine fully active beneath it. A Sage healing a teammate does not "stop walking" in the animation system — the locomotion Blend Space continues on Layer 0, and the healing Montage overrides the upper body on Layer 1. This means healing can happen while walking without any transition logic.
+**1. Ability animations are Montages, not state machine states.** Every agent ability animation plays via a Montage on a specific Slot, leaving the locomotion state machine fully active beneath it. A Sage healing a teammate does not "stop walking" in the animation system, the locomotion Blend Space continues on Layer 0, and the healing Montage overrides the upper body on Layer 1. This means healing can happen while walking without any transition logic.
 
-**2. Blend Space interpolation speed is tuned per-agent.** Reyna, designed as an aggressive duelist, has a Blend Space interpolation speed of ~12 units/second — faster than most other agents. Sage, designed as a methodical support, runs at ~8 units/second. The difference is subtle (milliseconds of lag in direction changes) but playtesting showed that players felt Reyna was more "aggressive" with the higher interpolation speed.
+**2. Blend Space interpolation speed is tuned per-agent.** Reyna, designed as an aggressive duelist, has a Blend Space interpolation speed of ~12 units/second, faster than most other agents. Sage, designed as a methodical support, runs at ~8 units/second. The difference is subtle (milliseconds of lag in direction changes) but playtesting showed that players felt Reyna was more "aggressive" with the higher interpolation speed.
 
-**3. Zero-frame transitions for competitive-critical states.** Agent states like "planting the spike" and "defusing the spike" have a 0.0-second transition from all locomotion states. Any blend duration here would mean the visual state and game state are desynchronized — visually planting at 0.2s but logically already planting at 0.0s. The animation system snaps immediately.
+**3. Zero-frame transitions for competitive-critical states.** Agent states like "planting the spike" and "defusing the spike" have a 0.0-second transition from all locomotion states. Any blend duration here would mean the visual state and game state are desynchronized, visually planting at 0.2s but logically already planting at 0.0s. The animation system snaps immediately.
 
 ---
 
-## 🎮 Case Study: DOOM Eternal — Animation Budget Tiers at id Software
+## 🎮 Case Study: DOOM Eternal, Animation Budget Tiers at id Software
 
-id Software's approach to animation budgeting for DOOM Eternal is notable for its **tiered budget system** — different animation systems have different hard ceilings based on their per-frame impact.
+id Software's approach to animation budgeting for DOOM Eternal is notable for its **tiered budget system**, different animation systems have different hard ceilings based on their per-frame impact.
 
 | Animation System | Budget (ms) | Notes |
 |---|---|---|
@@ -194,11 +194,11 @@ id Software's approach to animation budgeting for DOOM Eternal is notable for it
 
 The total animation budget for DOOM Eternal at 60fps is approximately **15ms** (leaving 1.67ms for render pipeline overhead). id achieves this through aggressive LOD on distant demons (disable non-essential bone updates at > 20 meters), animation update rate reduction for off-screen entities, and pre-baked secondary motion on all demon models.
 
-> ⚠️ **Performance trap:** DOOM Eternal's enemy kill animation design deliberately sidesteps real-time animation constraints. Glory kill sequences are pre-authored Sequencer-equivalent cutlets that temporarily disable the game's AI and physics simulation — during the 1.5–2 second kill sequence, the game is essentially paused for all entities except the Doom Slayer and the target demon. This is how they achieve cinematic-quality kill animations without an animation budget.
+> ⚠️ **Performance trap:** DOOM Eternal's enemy kill animation design deliberately sidesteps real-time animation constraints. Glory kill sequences are pre-authored Sequencer-equivalent cutlets that temporarily disable the game's AI and physics simulation, during the 1.5–2 second kill sequence, the game is essentially paused for all entities except the Doom Slayer and the target demon. This is how they achieve cinematic-quality kill animations without an animation budget.
 
 ---
 
-## 🎮 Case Study: The Last of Us — Naughty Dog's Unreal-Adjacent Architecture
+## 🎮 Case Study: The Last of Us, Naughty Dog's Unreal-Adjacent Architecture
 
 While The Last of Us runs on Naughty Dog's proprietary ICE engine (not Unreal), the animation architecture maps almost directly onto Unreal's Animation Blueprint model. Naughty Dog engineers who have worked on both systems (including Jonathan Cooper, who later documented Naughty Dog's animation approach in "Game Anim") describe the architecture as:
 
@@ -264,7 +264,7 @@ if (AnimInstance && AttackMontage) {
 
 > 🎯 **What the exam tests 5:** What does "Blend Space interpolation speed" control in Unreal? It controls how quickly the 2D sample position moves inside the Blend Space when the parameter values change. It is NOT the same as animation transition blend duration. Fast interpolation = instant-feeling direction changes. Slow interpolation = gradual, smooth direction changes.
 
-> 🎯 **What the exam tests 6:** What is Control Rig and where does it run? Control Rig is Unreal Engine's native procedural animation and rigging system. It runs on the **animation thread** at full game frame rate — not the game thread. It is designed for real-time procedural IK, secondary motion, and environmental interaction.
+> 🎯 **What the exam tests 6:** What is Control Rig and where does it run? Control Rig is Unreal Engine's native procedural animation and rigging system. It runs on the **animation thread** at full game frame rate, not the game thread. It is designed for real-time procedural IK, secondary motion, and environmental interaction.
 
 > 🎯 **What the exam tests 7:** What is FABRIK in Unreal's Control Rig? FABRIK (Forward And Backward Reaching Inverse Kinematics) is Unreal's built-in multi-joint IK solver. It handles chains of arbitrary length (arms, legs, spine) by iterating forward then backward through the chain until the end effector reaches the target.
 
@@ -292,7 +292,7 @@ if (AnimInstance && AttackMontage) {
 
 ---
 
-## 📊 Unreal vs. Unity vs. Godot — Full Animation Feature Comparison
+## 📊 Unreal vs. Unity vs. Godot, Full Animation Feature Comparison
 
 Understanding how animation concepts map across the three major game engines is essential for any animator or technical artist who will move between projects and studios.
 
@@ -329,7 +329,7 @@ Understanding where the Unreal Animation Blueprint spends time helps architects 
 | Control Rig (simple) | 0.2–0.5ms | Depends on graph complexity |
 | Control Rig (complex) | 1–3ms | Environment interaction, full-body rig |
 | Aim Offset | 0.1–0.2ms | Additive; relatively cheap |
-| Cached Pose (reuse) | Near zero | Cache once, reference many times — use aggressively |
+| Cached Pose (reuse) | Near zero | Cache once, reference many times, use aggressively |
 | Montage (active) | +0.1ms | Overhead during Montage playback |
 
 > 🎯 **Exam Callout:** The Cached Pose node is one of the most underused optimization tools in the Animation Blueprint. If the same computed pose (e.g., the locomotion Blend Space result) is referenced in multiple branches of the AnimGraph, wrapping it in a Cached Pose avoids computing it twice. On characters with complex AnimBPs, this can reduce animation thread cost by 20–30%.
@@ -380,11 +380,11 @@ We move to 2D: Spine's skeletal animation workflow, mesh deformation, and the ru
 - 🔗 [Unreal Engine Blend Spaces](https://docs.unrealengine.com/5.3/en-US/blend-spaces-in-unreal-engine/)
 - 🔗 [Control Rig Documentation](https://docs.unrealengine.com/5.3/en-US/control-rig-in-unreal-engine/)
 - 🔗 [Sequencer Overview](https://docs.unrealengine.com/5.3/en-US/cinematics-and-movie-making-in-unreal-engine/)
-- 🎬 GDC: "Building the Animations of Valorant" — Ryan Duffin, Riot Games (GDC Vault)
-- 🎬 GDC: "Technical Animation in Gears 5" — The Coalition (GDC Vault)
+- 🎬 GDC: "Building the Animations of Valorant", Ryan Duffin, Riot Games (GDC Vault)
+- 🎬 GDC: "Technical Animation in Gears 5", The Coalition (GDC Vault)
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

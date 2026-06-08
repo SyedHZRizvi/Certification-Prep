@@ -28,7 +28,7 @@ D. SO-DIMM
 ---
 
 ### Q3. Two PSUs are installed in a server. Both are plugged into the same PDU. The redundancy is BEST described as: *(Apply)*
-A. True 2N — fully fault tolerant
+A. True 2N, fully fault tolerant
 B. N+1 PSU redundancy, but a single shared point of failure remains at the PDU
 C. 2N+1 because there are two units
 D. No redundancy at all
@@ -60,7 +60,7 @@ D. CIMC
 ---
 
 ### Q7. A server has its own BMC with a dedicated NIC. The host OS is hung. What can the BMC still do? *(Understand)*
-A. Nothing — the BMC depends on the host OS
+A. Nothing, the BMC depends on the host OS
 B. Power-cycle the server, open a virtual console, read sensor data
 C. Only display sensor data; cannot affect power
 D. Mount a virtual ISO only if the host OS is running
@@ -180,7 +180,7 @@ D. RDP
 ---
 
 ### Q22. A four-PSU server is configured 2+2 (two on feed A, two on feed B). One PSU on feed A fails and feed B is later lost entirely. The server: *(Analyze)*
-A. Stays up — one PSU on feed A continues to handle the full load
+A. Stays up, one PSU on feed A continues to handle the full load
 B. Crashes immediately
 C. Reduces to half performance
 D. Depends only on the BMC
@@ -197,7 +197,7 @@ D. The 80 PLUS rating of the PSU
 
 ### Q24. Match: A LOM port on a server motherboard is: *(Understand)*
 A. A serial console port
-B. The onboard "LAN on Motherboard" — typically 1× or 2× 1 or 10 GbE built-in NIC
+B. The onboard "LAN on Motherboard", typically 1× or 2× 1 or 10 GbE built-in NIC
 C. A storage backplane connector
 D. An always-on iLO-only port
 
@@ -213,7 +213,7 @@ D. IPMI
 
 ### Q26. *Design exercise.* You are building a 1U pizza-box server for a branch office. It must run 3 production VMs, survive a single PSU failure, survive a single drive failure, allow remote OS reinstall, and report cooling failures by email before thermal shutdown. Pick the minimum-viable bill of materials: *(Create)*
 
-> *Create-level note:* you are designing — picking the smallest set of components that satisfies every stated requirement.
+> *Create-level note:* you are designing, picking the smallest set of components that satisfies every stated requirement.
 
 A. Single PSU, 2 consumer SSDs in software mirror, no BMC, monitor via SSH only
 B. Dual hot-swap PSUs on the same PDU, 2 SATA SSDs in software mirror, basic IPMI
@@ -231,7 +231,7 @@ D. Single PSU, 4 SATA HDDs in RAID 5, full iDRAC, ECC RAM
 ECC = Error-Correcting Code. RDIMM (Registered) is the most common server form. UDIMM may or may not be ECC; ECC UDIMM exists but is less dense than RDIMM/LRDIMM.
 
 ### Q3: **B. N+1 PSU redundancy, but a single shared point of failure remains at the PDU**
-Two PSUs survive *one PSU* failure (N+1 at the PSU layer). But both depend on the same PDU — if the PDU breaker trips or the feed dies, the server dies. True 2N requires separate feeds.
+Two PSUs survive *one PSU* failure (N+1 at the PSU layer). But both depend on the same PDU, if the PDU breaker trips or the feed dies, the server dies. True 2N requires separate feeds.
 
 ### Q4: **C. UDP 623**
 IPMI runs on UDP 623. Historical CVEs (cleartext passwords in 1.5, cipher-0 auth bypass) mean the management network must be segmented. Never expose IPMI to the internet.
@@ -246,7 +246,7 @@ Integrated Lights-Out, HPE.
 The BMC runs on standby power and is independent of the host OS/CPU/RAM. Even a totally hung server can be controlled by the BMC.
 
 ### Q8: **B. In-flight writes held in cache against sudden power loss**
-The cache stores writes the controller has acknowledged but not yet flushed to disk. Without the battery (or supercap+flash), a sudden power loss loses those writes — disastrous for RAID 5/6 parity (torn writes).
+The cache stores writes the controller has acknowledged but not yet flushed to disk. Without the battery (or supercap+flash), a sudden power loss loses those writes, disastrous for RAID 5/6 parity (torn writes).
 
 ### Q9: **B. SAS**
 SAS drives are dual-ported, enabling two HBA/controller paths to the same drive. SATA is single-port; M.2 consumer is single-ported.
@@ -255,22 +255,22 @@ SAS drives are dual-ported, enabling two HBA/controller paths to the same drive.
 That is what makes the redundancy honest: losing an entire feed still leaves a powered PSU. Same-PDU defeats the design intent.
 
 ### Q11: **D. Console-mount**
-Tower, rack, blade (and converged/HCI) are the recognized form factors. "Console-mount" is not a Server+ form factor — KVM consoles are a separate device.
+Tower, rack, blade (and converged/HCI) are the recognized form factors. "Console-mount" is not a Server+ form factor, KVM consoles are a separate device.
 
 ### Q12: **D. 94% efficient**
 80 PLUS Titanium is ~94% at 50% load (and even better at 20%/100%). Gold = 87%, Platinum = 90%, Titanium = 94%.
 
 ### Q13: **C. At least detects them, typically triggering a machine-check / kernel panic so corruption is not silent**
-SECDED = Single Error Correct, Double Error Detect. Single-bit = corrected silently. Double-bit = detected (system halts or marks the page bad) — preventing silent corruption.
+SECDED = Single Error Correct, Double Error Detect. Single-bit = corrected silently. Double-bit = detected (system halts or marks the page bad), preventing silent corruption.
 
 ### Q14: **B. Inlet ambient temperature at the front of the rack**
 ASHRAE recommends 18–27 °C inlet (A1 envelope). CPU temp is a downstream effect; if inlet rises, CPU temp follows. Cooling is sized to keep inlet in spec.
 
 ### Q15: **B. Remotely power-cycle individual outlets via IP**
-Switched PDUs are your last-ditch recovery — when even the BMC is unreachable, cycle the outlet.
+Switched PDUs are your last-ditch recovery, when even the BMC is unreachable, cycle the outlet.
 
 ### Q16: **B. Connect to the iDRAC/iLO, mount a virtual ISO, open the virtual console, install**
-Virtual media + virtual console are core OOB features. This is exactly what they're for — install an OS over the network without a tech at the rack.
+Virtual media + virtual console are core OOB features. This is exactly what they're for, install an OS over the network without a tech at the rack.
 
 ### Q17: **C. PCIe**
 NVMe = Non-Volatile Memory Express over PCIe. M.2 slots and U.2 bays both wire to PCIe lanes on the motherboard.
@@ -279,21 +279,21 @@ NVMe = Non-Volatile Memory Express over PCIe. M.2 slots and U.2 bays both wire t
 This separates intake air from exhaust air, preventing hot exhaust from being re-ingested. Mixing directions destroys cooling efficiency.
 
 ### Q19: **C. Blade chassis**
-Blades stack 10–16+ servers per chassis sharing PSUs/cooling/network. Highest compute density per rack — at the cost of vendor lock-in and a single-chassis blast radius.
+Blades stack 10–16+ servers per chassis sharing PSUs/cooling/network. Highest compute density per rack, at the cost of vendor lock-in and a single-chassis blast radius.
 
 ### Q20: **B. Wait until the array marks the drive failed and rebuilds onto the hot spare, then pull the failed drive with the activity LED off**
-Hot-swap means *capable of being swapped while running* — but only after the array has marked the drive failed and stopped using it. Yanking mid-write can corrupt the array. The amber LED indicates a problem; wait for activity LED to go dark.
+Hot-swap means *capable of being swapped while running*, but only after the array has marked the drive failed and stopped using it. Yanking mid-write can corrupt the array. The amber LED indicates a problem; wait for activity LED to go dark.
 
 ### Q21: **C. Generic IPMI 2.0**
 iDRAC, iLO, CIMC are vendor brands. IPMI 2.0 is the vendor-neutral standard most whitebox servers (e.g., Supermicro, ASRock Rack) implement.
 
-### Q22: **A. Stays up — one PSU on feed A continues to handle the full load**
-2+2 means each pair can carry the full load. Losing one PSU on A and the entire B feed leaves a single working PSU on A — provided that one PSU has the wattage capacity for full load, the server runs. (Some configs are dual-redundant *for half load* — read the vendor spec.)
+### Q22: **A. Stays up, one PSU on feed A continues to handle the full load**
+2+2 means each pair can carry the full load. Losing one PSU on A and the entire B feed leaves a single working PSU on A provided that one PSU has the wattage capacity for full load, the server runs. (Some configs are dual-redundant *for half load* read the vendor spec.)
 
 ### Q23: **B. That the server is using ECC RAM and that no DIMMs report uncorrectable errors in the BMC SEL**
 Silent data corruption with no software bug points strongly at memory. Check ECC enablement first, then SEL for memory error counters. If DIMMs are non-ECC, replace immediately.
 
-### Q24: **B. The onboard "LAN on Motherboard" — typically 1× or 2× 1 or 10 GbE built-in NIC**
+### Q24: **B. The onboard "LAN on Motherboard", typically 1× or 2× 1 or 10 GbE built-in NIC**
 LOM = LAN-on-Motherboard. Adds basic NICs without consuming a PCIe slot.
 
 ### Q25: **D. IPMI**
@@ -326,4 +326,4 @@ This is the only option that satisfies all 5 requirements: PSU redundancy on sep
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Server Administration (Windows & Linux)](../Module-02-Server-Administration/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Server Administration (Windows & Linux)](../Module-02-Server-Administration/Reading.md)

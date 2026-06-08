@@ -1,11 +1,11 @@
 # Module 7: RAG & Long-Context with Claude 📚
 
-> **Why this module matters:** Most production Claude apps need to ground the model in *your* data — your docs, your tickets, your code, your contracts. There are two main paths: stuff the data into the 200K-token context window, or retrieve the relevant subset via RAG. Both have a place. This module makes you fluent in choosing, plus implementing the Claude-flavored version of each.
+> **Why this module matters:** Most production Claude apps need to ground the model in *your* data, your docs, your tickets, your code, your contracts. There are two main paths: stuff the data into the 200K-token context window, or retrieve the relevant subset via RAG. Both have a place. This module makes you fluent in choosing, plus implementing the Claude-flavored version of each.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–4 (model, prompting, API, tool use)
 > - General "embeddings" intuition (vectors representing text similarity)
-> - A vector database concept (Pinecone, Weaviate, Qdrant, pgvector — pick your fighter)
+> - A vector database concept (Pinecone, Weaviate, Qdrant, pgvector, pick your fighter)
 > - Basic chunking concepts
 
 ---
@@ -14,9 +14,9 @@
 
 Two stories. Same model (Claude 4 Sonnet). Two opposite architectural conclusions.
 
-**Story 1: PalmettoLegal.** A 200-attorney mid-market law firm in Charleston. Their AI workflow ingested 800-page commercial leases and answered questions: "What's the escalation clause? Cap on rent?" Initially they built a chunked RAG pipeline — chunks → embeddings → vector search → top-K → Claude. Accuracy hovered around 78%. Half the misses were "the answer is in a different chunk than the one we retrieved." In March 2025, the team rebuilt the pipeline to **stuff the entire 200-page lease into a single Claude call** (Sonnet 4.5 with prompt caching on the lease text). Accuracy jumped to 96%. They retired the vector store.
+**Story 1: PalmettoLegal.** A 200-attorney mid-market law firm in Charleston. Their AI workflow ingested 800-page commercial leases and answered questions: "What's the escalation clause? Cap on rent?" Initially they built a chunked RAG pipeline, chunks → embeddings → vector search → top-K → Claude. Accuracy hovered around 78%. Half the misses were "the answer is in a different chunk than the one we retrieved." In March 2025, the team rebuilt the pipeline to **stuff the entire 200-page lease into a single Claude call** (Sonnet 4.5 with prompt caching on the lease text). Accuracy jumped to 96%. They retired the vector store.
 
-**Story 2: Recursion Holdings.** A 4,000-attorney firm with offices in 16 cities. Their AI workflow searches across **18 million** historical contracts to answer "Find me every NDA in our archive with a non-compete > 12 months and a jurisdiction in Texas." Stuffing the entire archive into context is not possible — it's terabytes. The team built a sophisticated multi-stage RAG: metadata filter → semantic search via Voyage AI embeddings → BM25 keyword overlay → Claude reranker → Claude answer composer with citations. Accuracy: 91%. The vector store is the whole product.
+**Story 2: Recursion Holdings.** A 4,000-attorney firm with offices in 16 cities. Their AI workflow searches across **18 million** historical contracts to answer "Find me every NDA in our archive with a non-compete > 12 months and a jurisdiction in Texas." Stuffing the entire archive into context is not possible, it's terabytes. The team built a sophisticated multi-stage RAG: metadata filter → semantic search via Voyage AI embeddings → BM25 keyword overlay → Claude reranker → Claude answer composer with citations. Accuracy: 91%. The vector store is the whole product.
 
 The same model. Two architectures. Both right.
 
@@ -46,11 +46,11 @@ And how strict are citation requirements?
 └── Audit-grade ("regulator must verify") → RAG with traceable retrieval pipeline
 ```
 
-🎯 **Exam pattern:** *"A 600-page lease, single document, structured Q&A with page citations — RAG or stuff?"* → **Stuff** (fits in context; simpler; better citations). *"18M contracts, semantic search across the archive — RAG or stuff?"* → **RAG required.**
+🎯 **Exam pattern:** *"A 600-page lease, single document, structured Q&A with page citations RAG or stuff?"* → **Stuff** (fits in context; simpler; better citations). *"18M contracts, semantic search across the archive RAG or stuff?"* → **RAG required.**
 
 ---
 
-## 🧊 Stuffing the Context — The "Long-Context" Pattern
+## 🧊 Stuffing the Context, The "Long-Context" Pattern
 
 When the relevant data fits in Claude's 200K-token window, often the right answer is *put it all in*. Anthropic explicitly designs the long-context behavior to make this practical.
 
@@ -76,16 +76,16 @@ ASSISTANT (prefill):
 ### Why this works on Claude specifically
 
 - **200K token window** comfortably handles a 400-page document
-- **Strong long-context attention** — Anthropic publishes "needle in haystack" benchmark results
-- **Citation discipline** — when prompted to cite, Claude is reliable about anchoring to specific sections
-- **Prompt caching** — that 80K-token lease can be cached, dropping repeat-query cost by 90%
+- **Strong long-context attention**, Anthropic publishes "needle in haystack" benchmark results
+- **Citation discipline**, when prompted to cite, Claude is reliable about anchoring to specific sections
+- **Prompt caching**, that 80K-token lease can be cached, dropping repeat-query cost by 90%
 
 ### Pitfalls
 
-- **Recency bias** — put the question at the END (after the documents)
-- **Token cost** — without caching, 80K tokens × $3/Mtok = $0.24 per query (Sonnet)
-- **Latency** — TTFT grows with input length; streaming mitigates the perception
-- **Catastrophic over-stuffing** — at 180K+ tokens, the model can miss things; below 100K is the "sweet spot"
+- **Recency bias**, put the question at the END (after the documents)
+- **Token cost**, without caching, 80K tokens × $3/Mtok = $0.24 per query (Sonnet)
+- **Latency**, TTFT grows with input length; streaming mitigates the perception
+- **Catastrophic over-stuffing**, at 180K+ tokens, the model can miss things; below 100K is the "sweet spot"
 
 ### When stuffing is the right call
 
@@ -96,7 +96,7 @@ ASSISTANT (prefill):
 
 ---
 
-## 🔍 RAG (Retrieval-Augmented Generation) — The Workhorse
+## 🔍 RAG (Retrieval-Augmented Generation), The Workhorse
 
 When the corpus is too big to stuff, RAG retrieves the relevant subset for each query and gives that subset to Claude.
 
@@ -119,24 +119,24 @@ When the corpus is too big to stuff, RAG retrieves the relevant subset for each 
 - Semantic: use embeddings to find topic boundaries
 - Document-structure-aware: respect headings, tables, sections
 
-**Embeddings.** Map text → fixed-size vector (typically 384–3072 dims). For Claude, **Voyage AI** is the recommended partner — Anthropic explicitly invested in / partnered with Voyage:
+**Embeddings.** Map text → fixed-size vector (typically 384–3072 dims). For Claude, **Voyage AI** is the recommended partner, Anthropic explicitly invested in / partnered with Voyage:
 
-- `voyage-3-large` / `voyage-3.5` — top general-purpose
-- `voyage-code-3` — code-specialized
-- `voyage-finance-2` / `voyage-law-2` — domain-tuned
+- `voyage-3-large` / `voyage-3.5`, top general-purpose
+- `voyage-code-3`, code-specialized
+- `voyage-finance-2` / `voyage-law-2`, domain-tuned
 - (OpenAI's `text-embedding-3-small` / `-large` work fine; Cohere `embed-v3` works fine; the *choice* matters less than the *evals*)
 
 **Vector DB.** Stores embeddings + metadata; queries by cosine similarity / dot product. Popular options:
 
-- **Pinecone** — managed, simple
-- **Weaviate** — open-source, hybrid search built-in
-- **Qdrant** — open-source, fast, Rust core
-- **pgvector** — Postgres extension; "good enough" for <10M vectors
-- **Chroma** — Python-first, ergonomic for dev
-- **Vespa** — Yahoo's; ultra-scale
-- **LanceDB** — Rust-based; great DX
-- **Turbopuffer** — newer; cost-optimized
-- **Elasticsearch / OpenSearch** — with dense vector support
+- **Pinecone**, managed, simple
+- **Weaviate**, open-source, hybrid search built-in
+- **Qdrant**, open-source, fast, Rust core
+- **pgvector**, Postgres extension; "good enough" for <10M vectors
+- **Chroma**, Python-first, ergonomic for dev
+- **Vespa**, Yahoo's; ultra-scale
+- **LanceDB**, Rust-based; great DX
+- **Turbopuffer**, newer; cost-optimized
+- **Elasticsearch / OpenSearch**, with dense vector support
 
 **Retrieval.** Embed the query, find top-K (typically K=5-20) most similar chunks, often combined with a sparse keyword search (BM25) for "hybrid" retrieval.
 
@@ -173,7 +173,7 @@ Claude answers: "Per our refund policy [c1], refunds are only available within 3
 
 ---
 
-## 🧠 Contextual Retrieval — The September 2024 Anthropic Technique
+## 🧠 Contextual Retrieval, The September 2024 Anthropic Technique
 
 In September 2024, Anthropic published a blog post titled **"Introducing Contextual Retrieval"** describing a technique that dramatically improves RAG accuracy. The headline numbers:
 
@@ -211,7 +211,7 @@ The prefixed chunk's embedding now better captures "what this chunk is about," n
 
 ### Implementation cost
 
-You pay extra Claude calls during ingestion (one per chunk). Prompt caching helps massively: the document content is constant across all its chunks, so cache it. Anthropic reports **~$1.02 per million tokens** of original documents using this technique with caching — a small fraction of the total RAG pipeline cost.
+You pay extra Claude calls during ingestion (one per chunk). Prompt caching helps massively: the document content is constant across all its chunks, so cache it. Anthropic reports **~$1.02 per million tokens** of original documents using this technique with caching, a small fraction of the total RAG pipeline cost.
 
 ### Add a reranker
 
@@ -221,7 +221,7 @@ For the extra accuracy boost, Anthropic recommends a **reranker** (Voyage rerank
 2. Rerank → top-20
 3. Pass top-20 to Claude
 
-🎯 **Exam pattern:** *"What is Anthropic's Sept-2024 RAG improvement technique?"* → **Contextual Retrieval — prefix each chunk with model-generated context before embedding.**
+🎯 **Exam pattern:** *"What is Anthropic's Sept-2024 RAG improvement technique?"* → **Contextual Retrieval, prefix each chunk with model-generated context before embedding.**
 
 ---
 
@@ -306,8 +306,8 @@ Use when: open-ended research-style questions where one-shot retrieval misses.
 
 ### Chunk size
 
-- **Too small (<200 tokens)** — chunks lose context, retrieval becomes noisy
-- **Too large (>2000 tokens)** — fewer chunks per query, less precise retrieval
+- **Too small (<200 tokens)**, chunks lose context, retrieval becomes noisy
+- **Too large (>2000 tokens)**, fewer chunks per query, less precise retrieval
 - **Sweet spot: 500–1000 tokens** with 10–15% overlap
 
 ### K (number of retrieved chunks)
@@ -326,9 +326,9 @@ Before semantic search, filter by metadata (date ranges, document type, customer
 
 ### Re-indexing strategy
 
-- **Real-time** — every doc change triggers re-embedding (most expensive, freshest)
-- **Batch nightly** — much cheaper, slightly stale
-- **Hybrid** — high-priority docs real-time, the rest nightly
+- **Real-time**, every doc change triggers re-embedding (most expensive, freshest)
+- **Batch nightly**, much cheaper, slightly stale
+- **Hybrid**, high-priority docs real-time, the rest nightly
 
 ### Embedding model choice
 
@@ -344,7 +344,7 @@ Anthropic has shipped (and may have GA'd by the time you read this) a **1M-token
 - A 1000-page legal case file
 - Many hours of meeting transcripts
 
-The cost is real: 1M tokens × $3/Mtok = $3 per call (Sonnet). Caching helps for repeated queries on the same corpus. At 1M tokens, recency bias is significant — placement of the question matters more.
+The cost is real: 1M tokens × $3/Mtok = $3 per call (Sonnet). Caching helps for repeated queries on the same corpus. At 1M tokens, recency bias is significant, placement of the question matters more.
 
 ```python
 response = client.messages.create(
@@ -359,7 +359,7 @@ response = client.messages.create(
 
 ---
 
-## 🆚 Stuffed Context vs RAG — Side-by-Side
+## 🆚 Stuffed Context vs RAG, Side-by-Side
 
 | Dimension | Stuffed context | RAG |
 |-----------|-----------------|-----|
@@ -386,10 +386,10 @@ A common decision rule:
 
 **Walkthrough:**
 1. **Per-lease scope:** Each query is about ONE lease. The corpus per query is one document (80–200 pages = ~50K–120K tokens).
-2. **Stuff vs RAG:** Comfortably fits in 200K. Stuff the lease. RAG would actually be *worse* — the answer often spans multiple sections.
+2. **Stuff vs RAG:** Comfortably fits in 200K. Stuff the lease. RAG would actually be *worse*, the answer often spans multiple sections.
 3. **Caching:** Each lease may be queried multiple times. Cache the lease text. First query: $0.30; subsequent: ~$0.03.
 4. **Citations:** Use the Citations API for machine-readable section pointers.
-5. **Model tier:** Sonnet 4.6 — accuracy matters; Haiku risks missing edge cases.
+5. **Model tier:** Sonnet 4.6, accuracy matters; Haiku risks missing edge cases.
 6. **Latency:** Streaming for TTFT < 1s; total response in 4-7s.
 7. **Eval:** A 100-lease holdout set with annotated expected answers. LLM-as-judge for the answer body; deterministic checks on cited sections.
 
@@ -404,11 +404,11 @@ This is exactly the PalmettoLegal architecture from the opening story.
 | "RAG is always better than long-context." | Often the opposite for small, focused corpora. |
 | "Bigger context = always better." | Recency bias kicks in; stuffing 180K may hurt vs stuffing 60K of the most relevant content. |
 | "Cosine similarity ≈ semantic understanding." | It's a *proxy*. Hybrid (semantic + BM25) + reranker beats pure semantic. |
-| "Voyage is required for Claude RAG." | No — OpenAI / Cohere / open-source embeddings all work. Voyage is a recommended partner. |
+| "Voyage is required for Claude RAG." | No, OpenAI / Cohere / open-source embeddings all work. Voyage is a recommended partner. |
 | "K=top-3 is always enough." | Depends on question scope. K too small misses; K too big floods context. |
-| "Contextual retrieval is a tool you install." | It's a *technique* — generate context per chunk during ingestion. |
+| "Contextual retrieval is a tool you install." | It's a *technique*, generate context per chunk during ingestion. |
 | "Native Citations replace RAG." | They are an output-format feature, not a retrieval system. They compose with RAG OR with stuffing. |
-| "1M context obsoletes RAG." | At 1M-token cost (~$3 per call), it does not — RAG is still cheaper per query at scale. |
+| "1M context obsoletes RAG." | At 1M-token cost (~$3 per call), it does not, RAG is still cheaper per query at scale. |
 
 ---
 
@@ -416,7 +416,7 @@ This is exactly the PalmettoLegal architecture from the opening story.
 
 | Term | Definition |
 |------|------------|
-| **RAG** | Retrieval-Augmented Generation — retrieve relevant chunks, then have LLM answer |
+| **RAG** | Retrieval-Augmented Generation, retrieve relevant chunks, then have LLM answer |
 | **Long-context / stuffed context** | Putting the full corpus into the LLM call |
 | **Chunking** | Splitting documents into smaller pieces for retrieval |
 | **Embedding** | Vector representation of text for similarity comparison |
@@ -430,11 +430,11 @@ This is exactly the PalmettoLegal architecture from the opening story.
 | **Recency bias** | LLMs weight later tokens more; affects long-context placement |
 | **Reciprocal Rank Fusion (RRF)** | Algorithm to merge multiple retrieval result lists |
 | **K** | Number of chunks retrieved per query |
-| **TTFT** | Time To First Token — longer for stuffed prompts |
+| **TTFT** | Time To First Token, longer for stuffed prompts |
 
 ---
 
-## 📊 Case Study — Anthropic's Own Contextual Retrieval Numbers
+## 📊 Case Study, Anthropic's Own Contextual Retrieval Numbers
 
 **Situation.** In September 2024 Anthropic published a blog post + cookbook recipe on "Contextual Retrieval." It included quantified benchmark results across a few document collections.
 
@@ -468,23 +468,23 @@ This is exactly the PalmettoLegal architecture from the opening story.
 
 You now know:
 
-- 🧭 **RAG vs long-context** — when each is right, the decision tree
-- 🧊 **Stuffed context** — how to do it well with Claude, citations, caching
-- 🔍 **Classic RAG** — chunking, embeddings, vector DBs, retrieval, generation
-- 🧠 **Contextual Retrieval** — Anthropic's Sept-2024 technique (49% failure reduction)
-- 📑 **Citations** — inline patterns and the native Citations API
-- 🧊 **Hybrid patterns** — RAG-then-stuff, stuff-then-summarize, agentic RAG
-- 🔧 **Engineering decisions** — chunk size, K, hybrid retrieval, embedding choice
-- 🪟 **1M-token beta context** — when it's worth the price
-- 📊 **PalmettoLegal vs Recursion Holdings** — two opposite right answers
+- 🧭 **RAG vs long-context**, when each is right, the decision tree
+- 🧊 **Stuffed context**, how to do it well with Claude, citations, caching
+- 🔍 **Classic RAG**, chunking, embeddings, vector DBs, retrieval, generation
+- 🧠 **Contextual Retrieval**, Anthropic's Sept-2024 technique (49% failure reduction)
+- 📑 **Citations**, inline patterns and the native Citations API
+- 🧊 **Hybrid patterns**, RAG-then-stuff, stuff-then-summarize, agentic RAG
+- 🔧 **Engineering decisions**, chunk size, K, hybrid retrieval, embedding choice
+- 🪟 **1M-token beta context**, when it's worth the price
+- 📊 **PalmettoLegal vs Recursion Holdings**, two opposite right answers
 - 📊 **Anthropic's published Contextual Retrieval numbers**
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 21/25
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 21/25
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🛠️ **Hands-on:** Build a tiny RAG pipeline: chunk a 30-page PDF, embed with Voyage (or OpenAI), store in pgvector or Chroma, query with Claude. Then add contextual prefixes and measure the difference.
-5. ➡️ Move on: [Module 8 — Production Patterns & Safety](../Module-08-Production-Patterns-Safety/Reading.md)
+5. ➡️ Move on: [Module 8, Production Patterns & Safety](../Module-08-Production-Patterns-Safety/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 8](../Module-08-Production-Patterns-Safety/Reading.md) covers production observability, including RAG-specific concerns (retrieval recall metrics).
@@ -498,13 +498,13 @@ You now know:
 **Primary sources:**
 - 📄 Anthropic (Sept 2024). [*Introducing Contextual Retrieval*](https://www.anthropic.com/news/contextual-retrieval). Required reading.
 - 📄 Anthropic. [*Citations API documentation*](https://docs.anthropic.com/claude/docs/citations). The native citation pattern.
-- 📄 Anthropic Cookbook — [contextual-retrieval recipe](https://github.com/anthropics/anthropic-cookbook/tree/main/skills/contextual-embeddings).
-- 📄 [Voyage AI documentation](https://docs.voyageai.com/) — the partnered embeddings provider.
+- 📄 Anthropic Cookbook, [contextual-retrieval recipe](https://github.com/anthropics/anthropic-cookbook/tree/main/skills/contextual-embeddings).
+- 📄 [Voyage AI documentation](https://docs.voyageai.com/), the partnered embeddings provider.
 - 📄 Lewis et al. (2020). [*Retrieval-Augmented Generation for Knowledge-Intensive NLP*](https://arxiv.org/abs/2005.11401). The original RAG paper.
 
 **Practitioner:**
-- 📖 [LlamaIndex documentation](https://docs.llamaindex.ai/) — RAG-first framework with many concrete patterns
+- 📖 [LlamaIndex documentation](https://docs.llamaindex.ai/), RAG-first framework with many concrete patterns
 - 📖 [LangChain RAG documentation](https://python.langchain.com/docs/use_cases/question_answering/)
-- 📖 Pinecone learning center — practical chunking and retrieval guides
-- 📖 [Voyage AI blog](https://blog.voyageai.com/) — embedding model deep dives
-- 📺 AI Engineer Conf — many "we shipped RAG" talks; pattern-rich
+- 📖 Pinecone learning center, practical chunking and retrieval guides
+- 📖 [Voyage AI blog](https://blog.voyageai.com/), embedding model deep dives
+- 📺 AI Engineer Conf, many "we shipped RAG" talks; pattern-rich

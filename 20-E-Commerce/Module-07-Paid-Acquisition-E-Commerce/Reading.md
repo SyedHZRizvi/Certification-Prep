@@ -1,6 +1,6 @@
 # Module 7: Paid Acquisition for E-Commerce 📢
 
-> **Why this module matters:** Paid acquisition is where most e-commerce P&Ls live or die. A correctly-architected paid program at a 4.0x ROAS on 35% contribution margin pays back in 8 months. The same brand at 2.8x ROAS bleeds margin and runs out of cash. This module gives you the playbook — Google Shopping + Performance Max, Meta Advantage+ Shopping, Amazon Sponsored Products, TikTok Shop, and the post-iOS-14.5 measurement infrastructure that makes any of this honest.
+> **Why this module matters:** Paid acquisition is where most e-commerce P&Ls live or die. A correctly-architected paid program at a 4.0x ROAS on 35% contribution margin pays back in 8 months. The same brand at 2.8x ROAS bleeds margin and runs out of cash. This module gives you the playbook, Google Shopping + Performance Max, Meta Advantage+ Shopping, Amazon Sponsored Products, TikTok Shop, and the post-iOS-14.5 measurement infrastructure that makes any of this honest.
 
 ---
 
@@ -8,33 +8,33 @@
 
 In September 2022, Temu launched in the US. Owned by PDD Holdings (parent of Pinduoduo, China's #2 e-commerce platform after Alibaba), the company entered the most competitive paid-acquisition market on Earth.
 
-By the end of 2023, Temu was the most-downloaded shopping app in the United States. The reason was simple: an estimated $1.7B in paid acquisition spend across Meta and Google in 2023 alone, plus a Super Bowl 2023 ad campaign that cost $14M for 30-second spots. The aggressive spend made Meta and Google's 2023 revenue numbers — they cited Temu (and rival Shein) as a meaningful driver of Q2-Q4 2023 ad-revenue acceleration.
+By the end of 2023, Temu was the most-downloaded shopping app in the United States. The reason was simple: an estimated $1.7B in paid acquisition spend across Meta and Google in 2023 alone, plus a Super Bowl 2023 ad campaign that cost $14M for 30-second spots. The aggressive spend made Meta and Google's 2023 revenue numbers, they cited Temu (and rival Shein) as a meaningful driver of Q2-Q4 2023 ad-revenue acceleration.
 
 The economics: Temu was clearly losing money per order (negative contribution margin at the unit level). The bet: Chinese-supply-chain unit economics would, over 24-36 months, allow the brand to compress costs, retain customers, and eventually approach profitability. By Q4 2024, Temu's monthly active users in the US exceeded Amazon Mobile App in some demographics, but profitability remained elusive and regulatory pressure mounted (EU's classification of Shein/Temu as VLOPs under the Digital Services Act, France's "fast-fashion law" in 2024).
 
 The lesson is two-fold:
 
-1. **Paid acquisition is the largest line in most DTC P&Ls.** A $50M brand often spends $15-22M/year on paid media — bigger than salaries, bigger than fulfillment, bigger than COGS for some.
+1. **Paid acquisition is the largest line in most DTC P&Ls.** A $50M brand often spends $15-22M/year on paid media, bigger than salaries, bigger than fulfillment, bigger than COGS for some.
 2. **CAC is a strategic weapon.** Temu/Shein bid up the auction; non-Chinese-supply-chain brands had to defend. Every brand competing for the same customers had their CAC inflate 15-30% in 2023-2024 because Temu was willing to lose money on each customer.
 
 This module gives you the operating knowledge to run paid acquisition profitably in this environment.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Unit economics (CAC, CLV, contribution margin) — covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
-> - Catalog/PIM hygiene (Google Shopping feed requirements) — covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
-> - Conversion + Core Web Vitals — covered in [Module 6](../Module-06-Conversion-Optimization-UX/Reading.md)
+> - Unit economics (CAC, CLV, contribution margin), covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
+> - Catalog/PIM hygiene (Google Shopping feed requirements), covered in [Module 3](../Module-03-Product-Catalog-Information-Management/Reading.md)
+> - Conversion + Core Web Vitals, covered in [Module 6](../Module-06-Conversion-Optimization-UX/Reading.md)
 > - Cross-course: [15-AI-Marketing-Practitioner Module 2-5](../../15-AI-Marketing-Practitioner/Module-02-Google-Ads-Search-Mastery/Reading.md) covers Google Ads, Meta Ads, TikTok at depth.
 > If any of these are shaky, pause and review before continuing.
 
 ---
 
-## 🛒 Google Shopping + Performance Max — The DTC Backbone
+## 🛒 Google Shopping + Performance Max, The DTC Backbone
 
 Google Shopping ads are product-listing ads that surface in Google Search, YouTube, Discover, Gmail, and the Shopping tab. They're typically the highest-intent traffic source for e-commerce.
 
 ### Google Merchant Center (GMC)
 
-GMC is the product-feed home. Your catalog uploads here (manually, via API, or — for Shopify Plus — via the native Google channel). GMC then feeds:
+GMC is the product-feed home. Your catalog uploads here (manually, via API, or for Shopify Plus via the native Google channel). GMC then feeds:
 
 - **Google Shopping Ads** (paid CPC product listings)
 - **Surfaces Across Google** (free organic Shopping listings)
@@ -42,20 +42,20 @@ GMC is the product-feed home. Your catalog uploads here (manually, via API, or �
 - **Performance Max for retail** (the auto-driven campaign type)
 
 **Feed requirements (the must-haves):**
-- `id` — your unique SKU identifier
-- `title` — 70-150 characters, keyword-relevant
-- `description` — 200-2,000 characters
-- `link` — destination URL (PDP)
-- `image_link` — main image URL
-- `availability` — in stock / out of stock / preorder
-- `price` — with currency
-- `condition` — new / refurbished / used
-- `brand` — for branded products
-- `gtin` — required for branded products
-- `mpn` — Manufacturer Part Number (alternative when no GTIN)
-- `google_product_category` — Google's 5,400-category taxonomy
-- `product_type` — your taxonomy (for internal use)
-- `availability_date` — for preorder
+- `id`, your unique SKU identifier
+- `title`, 70-150 characters, keyword-relevant
+- `description`, 200-2,000 characters
+- `link`, destination URL (PDP)
+- `image_link`, main image URL
+- `availability`, in stock / out of stock / preorder
+- `price`, with currency
+- `condition`, new / refurbished / used
+- `brand`, for branded products
+- `gtin`, required for branded products
+- `mpn`, Manufacturer Part Number (alternative when no GTIN)
+- `google_product_category`, Google's 5,400-category taxonomy
+- `product_type`, your taxonomy (for internal use)
+- `availability_date`, for preorder
 
 🧠 **MEMORIZE THIS.** Required attributes: id, title, description, link, image_link, availability, price, condition, brand, gtin (branded), google_product_category. Missing any of these = feed disapproval.
 
@@ -72,11 +72,11 @@ Google launched Performance Max (PMax) in late 2021 and made it the dominant e-c
 - Maps
 
 **Day-zero settings that matter:**
-1. **Brand Exclusions** — Add your own brand name + variants to prevent PMax from cannibalizing branded search. The most important PMax setting day-zero (Mejuri's 2023 case showed CAC dropped from $52 to $34 partly via brand exclusions).
-2. **Final URL Expansion** — OFF initially. ON allows PMax to send traffic to URLs you haven't specified. Brand-control risk.
-3. **Customer Acquisition Goals** — Set bidding to optimize for new-customer acquisition (vs all conversions). Critical for retention-heavy brands.
-4. **Audience Signals** — Hints to the algorithm. Not hard targeting. Provide your best CRM segments.
-5. **Asset Groups** — Themed creative + audience clusters. Maintain at least 3 per campaign.
+1. **Brand Exclusions**, Add your own brand name + variants to prevent PMax from cannibalizing branded search. The most important PMax setting day-zero (Mejuri's 2023 case showed CAC dropped from $52 to $34 partly via brand exclusions).
+2. **Final URL Expansion**, OFF initially. ON allows PMax to send traffic to URLs you haven't specified. Brand-control risk.
+3. **Customer Acquisition Goals**, Set bidding to optimize for new-customer acquisition (vs all conversions). Critical for retention-heavy brands.
+4. **Audience Signals**, Hints to the algorithm. Not hard targeting. Provide your best CRM segments.
+5. **Asset Groups**, Themed creative + audience clusters. Maintain at least 3 per campaign.
 
 🚨 **Trap on the exam:** PMax "audience signals" are HINTS, not hard targets. The algorithm can serve outside your signals if it finds higher-converting users. This is different from Google Display's "custom audiences."
 
@@ -93,24 +93,24 @@ Meta launched Advantage+ Shopping Campaigns in late 2022. By 2024, ASC was the d
 - Auto-rotation through 150+ creatives (you upload many; Meta picks).
 - Up-to $50K/day daily budget.
 - Existing Customer Budget (ECB) cap controls new-vs-returning customer split.
-- Limited audience exclusions (DABA — Detailed Audience Beyond Anyone — and ASC-specific exclusions).
+- Limited audience exclusions (DABA Detailed Audience Beyond Anyone and ASC-specific exclusions).
 
 **The ECB Cap Decision:**
-- ECB at 20% — Force 80% spend on new customers (prospecting-heavy).
-- ECB at 50% — Balanced.
-- ECB at 70% — Retention-heavy (lets Meta serve more to existing customers).
+- ECB at 20%, Force 80% spend on new customers (prospecting-heavy).
+- ECB at 50%, Balanced.
+- ECB at 70%, Retention-heavy (lets Meta serve more to existing customers).
 
 🎯 **Exam tip:** ASC's ECB cap is the single most-important setting for retention vs prospecting balance. Memorize: low ECB = prospecting; high ECB = retention.
 
-### iOS 14.5 / Apple ATT — The April 26, 2021 Event
+### iOS 14.5 / Apple ATT, The April 26, 2021 Event
 
 On April 26, 2021, Apple launched App Tracking Transparency in iOS 14.5. Apps had to explicitly ask users for permission to track them across other apps and websites. The opt-in rate was ~25-30% globally; the opt-OUT rate was ~70-75%.
 
 Meta's revenue was disproportionately affected. Meta's CFO said in early 2022 that ATT would cost the company $10B in 2022 revenue. By 2024, Meta had largely adapted via:
 
-- **CAPI (Conversions API)** — server-side event sharing, complementing the deprecated Pixel.
-- **AEM (Aggregated Event Measurement)** — Meta's framework for measuring conversion events under iOS 14.5+. Max 8 events per verified domain, ranked by priority.
-- **SKAdNetwork 4** — Apple's framework for app install attribution; less relevant for web e-commerce.
+- **CAPI (Conversions API)**, server-side event sharing, complementing the deprecated Pixel.
+- **AEM (Aggregated Event Measurement)**, Meta's framework for measuring conversion events under iOS 14.5+. Max 8 events per verified domain, ranked by priority.
+- **SKAdNetwork 4**, Apple's framework for app install attribution; less relevant for web e-commerce.
 
 🧠 **MEMORIZE THIS.** Post-iOS 14.5: CAPI server-side is mandatory for any Meta-heavy program. Without CAPI, Meta gets ~30-40% less conversion signal, ROAS reads ~30-40% lower than reality.
 
@@ -118,9 +118,9 @@ Meta's revenue was disproportionately affected. Meta's CFO said in early 2022 th
 
 Conversions API sends events server-side from your store to Meta. Three implementation paths:
 
-- **Native integration** — Shopify CAPI (free, official, since 2022). BigCommerce CAPI similar.
-- **Tag-managed** — Google Tag Manager + Meta CAPI Gateway (medium complexity).
-- **Server-to-server custom** — Most flexible; needs engineering.
+- **Native integration**, Shopify CAPI (free, official, since 2022). BigCommerce CAPI similar.
+- **Tag-managed**, Google Tag Manager + Meta CAPI Gateway (medium complexity).
+- **Server-to-server custom**, Most flexible; needs engineering.
 
 **Event deduplication** is critical: Meta needs to know that a single conversion (e.g., a purchase) was sent via both Pixel and CAPI, so it counts once. Use a unique event_id passed to both.
 
@@ -135,10 +135,10 @@ Amazon Advertising (formerly Amazon Marketing Services) is now $50B+/year in ad 
 Keyword-targeted CPC ads in Amazon search results and product pages. The bread-and-butter of Amazon advertising.
 
 **Targeting types:**
-- **Automatic** — Amazon picks keywords. Use for discovery; harvest into Manual.
-- **Manual Keyword** — Broad / Phrase / Exact match. Most-used.
-- **Manual ASIN** — Target specific competitor ASINs (conquesting).
-- **Category targeting** — Less specific than ASIN; broader category presence.
+- **Automatic**, Amazon picks keywords. Use for discovery; harvest into Manual.
+- **Manual Keyword**, Broad / Phrase / Exact match. Most-used.
+- **Manual ASIN**, Target specific competitor ASINs (conquesting).
+- **Category targeting**, Less specific than ASIN; broader category presence.
 
 ### Sponsored Brands (SB)
 
@@ -163,10 +163,10 @@ Audience-targeted ads on AND off Amazon. The Amazon Ads version of retargeting.
 TikTok Shop launched US in September 2023 and grew rapidly through 2024. By end of 2024, TikTok Shop was processing ~$30M/day GMV in the US (per industry estimates).
 
 **TikTok Shop Ads campaign types:**
-- **Video Shopping Ads** — Auto-generated from organic Shop content; in-feed.
-- **Live Shopping Ads** — Live-stream commerce; creator-led; high engagement.
-- **Smart Performance Campaigns** — TikTok's PMax equivalent.
-- **Standard Bidding** — Manual ROAS or CPA targets.
+- **Video Shopping Ads**, Auto-generated from organic Shop content; in-feed.
+- **Live Shopping Ads**, Live-stream commerce; creator-led; high engagement.
+- **Smart Performance Campaigns**, TikTok's PMax equivalent.
+- **Standard Bidding**, Manual ROAS or CPA targets.
 
 **Creator-led commerce** is the TikTok differentiator. The 2024 industry pattern:
 
@@ -182,20 +182,20 @@ TikTok Shop launched US in September 2023 and grew rapidly through 2024. By end 
 
 ---
 
-## 💼 Case Study — Apple's ATT (April 26, 2021) Impact on Meta Ads
+## 💼 Case Study, Apple's ATT (April 26, 2021) Impact on Meta Ads
 
-**Situation.** In 2020-Q4, Apple announced the iOS 14.5 release would include App Tracking Transparency (ATT) — a system requiring apps to explicitly ask for permission to track users across other apps and websites. The ATT prompt is a system-level dialog with two options: "Ask App Not to Track" (the default in many UI implementations) or "Allow."
+**Situation.** In 2020-Q4, Apple announced the iOS 14.5 release would include App Tracking Transparency (ATT), a system requiring apps to explicitly ask for permission to track users across other apps and websites. The ATT prompt is a system-level dialog with two options: "Ask App Not to Track" (the default in many UI implementations) or "Allow."
 
 Meta (Facebook) immediately recognized this as a fundamental threat to its advertising model. Meta's CFO Dave Wehner, in a January 2022 earnings call, said ATT would cost Meta "in the order of $10 billion in 2022 revenue alone." Meta took out full-page ads in the *New York Times*, *Wall Street Journal*, and *Washington Post* in late 2020 / early 2021 framing the change as harmful to small businesses.
 
-**Decision.** Apple shipped iOS 14.5 with ATT on April 26, 2021. Global opt-in rates settled around 25-30% — meaning 70-75% of iOS users opted out of cross-app tracking. The Meta Pixel (a JavaScript snippet on advertiser websites that fires on conversion events) stopped receiving signal for these users.
+**Decision.** Apple shipped iOS 14.5 with ATT on April 26, 2021. Global opt-in rates settled around 25-30%, meaning 70-75% of iOS users opted out of cross-app tracking. The Meta Pixel (a JavaScript snippet on advertiser websites that fires on conversion events) stopped receiving signal for these users.
 
 Meta's response unfolded over 2021-2024:
 
-1. **CAPI (Conversions API)** — server-side event sharing. Each Pixel event also gets sent server-side from the advertiser's backend. Bypassed the IDFA-block.
-2. **AEM (Aggregated Event Measurement)** — Meta's framework for measuring conversion events under iOS 14.5+. Advertisers verify domain ownership and rank top 8 conversion events. For opted-out users, only the priority event is tracked.
-3. **Privacy-Enhancing Technologies (PETs)** — differential privacy, on-device machine learning, federated learning.
-4. **Advantage+ Shopping Campaigns** — the AI-driven campaign type that compensated for lost individual targeting via stronger algorithmic learning.
+1. **CAPI (Conversions API)**, server-side event sharing. Each Pixel event also gets sent server-side from the advertiser's backend. Bypassed the IDFA-block.
+2. **AEM (Aggregated Event Measurement)**, Meta's framework for measuring conversion events under iOS 14.5+. Advertisers verify domain ownership and rank top 8 conversion events. For opted-out users, only the priority event is tracked.
+3. **Privacy-Enhancing Technologies (PETs)**, differential privacy, on-device machine learning, federated learning.
+4. **Advantage+ Shopping Campaigns**, the AI-driven campaign type that compensated for lost individual targeting via stronger algorithmic learning.
 
 E-commerce advertisers had to:
 
@@ -204,7 +204,7 @@ E-commerce advertisers had to:
 - Accept ~30-40% reduction in observable Meta ROAS during 2021-2022.
 - Adopt Advantage+ Shopping Campaigns (launched late 2022) as the primary acquisition channel.
 
-**Outcome.** Meta's 2022 revenue was $116.6B (flat to slightly down from 2021's $117.9B — the first revenue decline in company history). The stock fell 65% from peak in 2021 to trough in late 2022. By 2024, Meta's revenue had recovered to $164.5B (up 21% YoY in Q1 2024), driven by Advantage+ Shopping Campaigns, Reels monetization, and AI-driven Reels ranking. E-commerce advertisers who survived 2021-2022 with CAPI + AEM + ASC saw competitive ROAS by 2024.
+**Outcome.** Meta's 2022 revenue was $116.6B (flat to slightly down from 2021's $117.9B, the first revenue decline in company history). The stock fell 65% from peak in 2021 to trough in late 2022. By 2024, Meta's revenue had recovered to $164.5B (up 21% YoY in Q1 2024), driven by Advantage+ Shopping Campaigns, Reels monetization, and AI-driven Reels ranking. E-commerce advertisers who survived 2021-2022 with CAPI + AEM + ASC saw competitive ROAS by 2024.
 
 The downstream impact:
 
@@ -213,7 +213,7 @@ The downstream impact:
 - E-commerce CAC rose 18-25% industry-wide between 2020 and 2023.
 - ROAS measurements became fundamentally less reliable; many brands shifted to MMM (Marketing Mix Modeling) and incrementality testing.
 
-**Lesson for the exam / for practitioners.** Platform-policy changes can vaporize attribution overnight. The defense: server-side measurement (CAPI on Meta, Conversions API on Google, GA4 Measurement Protocol), proper domain verification, and 8-event AEM ranking. Brands that didn't implement these in 2021 ran 12-24 months with broken Meta attribution. The exam tests this aggressively — questions on iOS 14.5, ATT, CAPI, AEM, and the recovery playbook are 4-6 questions on most certifications.
+**Lesson for the exam / for practitioners.** Platform-policy changes can vaporize attribution overnight. The defense: server-side measurement (CAPI on Meta, Conversions API on Google, GA4 Measurement Protocol), proper domain verification, and 8-event AEM ranking. Brands that didn't implement these in 2021 ran 12-24 months with broken Meta attribution. The exam tests this aggressively, questions on iOS 14.5, ATT, CAPI, AEM, and the recovery playbook are 4-6 questions on most certifications.
 
 **Discussion (Socratic).**
 - Q1: Apple's framing was "user privacy." Meta's framing was "harm to small businesses." Both contain truth. What's the principle that a regulator should use to balance them?
@@ -343,7 +343,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. Temu spent $1.7B in 2023 partly to bid CAC up across the auction. As a $20M DTC brand, you can't outbid Temu. What's your defense? Identify three principles that determine which channels Temu's spend doesn't disrupt.
 
@@ -370,7 +370,7 @@ You now know:
 - 📖 [Meta Advantage+ Shopping playbook](https://www.facebook.com/business/learn)
 - 📖 [Meta Conversions API documentation](https://developers.facebook.com/docs/marketing-api/conversions-api)
 - 📖 [Amazon Ads Foundations free course](https://advertising.amazon.com/learn)
-- 📖 [TikTok for Business — Shop Ads playbook](https://www.tiktok.com/business/en/learn/badge)
-- 📖 [Common Thread Collective — *Ecommerce DTC Quarterly Report*](https://commonthreadco.com/blogs/coachs-corner) — paid-media benchmarks
-- 📖 [Andrew Faris — *AJF Growth* newsletter](https://ajfgrowth.com) — operator analysis
-- 📖 [EU AI Act 2024 — Article 50 (transparency obligations)](https://eur-lex.europa.eu/) — AI-content disclosure
+- 📖 [TikTok for Business, Shop Ads playbook](https://www.tiktok.com/business/en/learn/badge)
+- 📖 [Common Thread Collective *Ecommerce DTC Quarterly Report*](https://commonthreadco.com/blogs/coachs-corner) paid-media benchmarks
+- 📖 [Andrew Faris *AJF Growth* newsletter](https://ajfgrowth.com) operator analysis
+- 📖 [EU AI Act 2024 Article 50 (transparency obligations)](https://eur-lex.europa.eu/) AI-content disclosure

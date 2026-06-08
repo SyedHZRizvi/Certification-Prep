@@ -1,6 +1,6 @@
-# Recommended Readings — ASCM CSCP Track
+# Recommended Readings, ASCM CSCP Track
 
-> **Purpose:** Each course module has a "Further Reading" section with module-specific items. This file is the **whole-course canonical reading list** — the books, papers, and resources that have shaped supply-chain thinking and are still load-bearing in 2024-2026. Engage with these as your time and budget allow; you do NOT need all of them to pass the CSCP, but the depth they provide is what separates a passing student from a future CSCO.
+> **Purpose:** Each course module has a "Further Reading" section with module-specific items. This file is the **whole-course canonical reading list**, the books, papers, and resources that have shaped supply-chain thinking and are still load-bearing in 2024-2026. Engage with these as your time and budget allow; you do NOT need all of them to pass the CSCP, but the depth they provide is what separates a passing student from a future CSCO.
 
 ---
 
@@ -21,7 +21,7 @@
 - **Publisher:** Pearson, 7th edition 2019. Kellogg School of Management.
 - **ISBN:** 978-0134731889
 - **Why it's worth your time:** The US graduate-school textbook. Strong quantitative depth (transportation LP, inventory math, network design) where the CSCP often stays conceptual. Chapter 11 (sourcing) and Chapter 14 (information tech) are gold.
-- **When to engage:** As reference for Modules 2, 5, and 7 — especially for capstone calculation practice.
+- **When to engage:** As reference for Modules 2, 5, and 7, especially for capstone calculation practice.
 
 ### 4. Goldratt, Eliyahu M. & Cox, Jeff. *The Goal: A Process of Ongoing Improvement.*
 - **Publisher:** North River Press, 4th edition 2014 (original 1984).
@@ -68,24 +68,24 @@
 
 ### 11. Porter, Michael E. *Competitive Strategy: Techniques for Analyzing Industries and Competitors.*
 - **Publisher:** Free Press / Harvard Business School Press, 1980. (Companion 1985 *Competitive Advantage* introduced the value chain.)
-- **Why it matters:** The five forces + the value chain — the strategic frame inside which every supply chain operates. Required reading at every MBA program globally.
+- **Why it matters:** The five forces + the value chain, the strategic frame inside which every supply chain operates. Required reading at every MBA program globally.
 - **When to engage:** As reference for the strategy modules (1, 9). Companion to ASCM CSCP Learning System.
 
 ### 12. Hayes, Robert H. & Wheelwright, Steven C. *Restoring Our Competitive Edge: Competing Through Manufacturing.*
 - **Publisher:** John Wiley & Sons, 1984. Harvard Business School.
 - **ISBN:** 978-0471051152
-- **Why it matters:** Defined make-vs-buy and the "product-process matrix" — the foundation of how modern manufacturing strategy is taught. Hayes-Wheelwright is in every operations strategy textbook.
+- **Why it matters:** Defined make-vs-buy and the "product-process matrix", the foundation of how modern manufacturing strategy is taught. Hayes-Wheelwright is in every operations strategy textbook.
 
 ### 13. Elkington, John. *Cannibals with Forks: The Triple Bottom Line of 21st Century Business.*
 - **Publisher:** Capstone Publishing, 1997 (original CMR article 1994).
 - **ISBN:** 978-1900961271
-- **Why it matters:** The People-Planet-Profit synthesis. Foundation of every modern sustainability framework. Elkington publicly issued a "product recall" in 2018 because TBL had been reduced to greenwashing accounting — that critique is worth reading too.
+- **Why it matters:** The People-Planet-Profit synthesis. Foundation of every modern sustainability framework. Elkington publicly issued a "product recall" in 2018 because TBL had been reduced to greenwashing accounting, that critique is worth reading too.
 
 ### 14. Carroll, Archie B. *"The Pyramid of Corporate Social Responsibility."*
 - **Venue:** Business Horizons 34(4), July-August 1991. University of Georgia Terry College of Business.
 - **Why it matters:** The economic → legal → ethical → philanthropic CSR pyramid. Tested on the CSCP and used at every business school.
 
-### 15. Kaplan, Robert S. & Norton, David P. *"The Balanced Scorecard — Measures That Drive Performance."*
+### 15. Kaplan, Robert S. & Norton, David P. *"The Balanced Scorecard, Measures That Drive Performance."*
 - **Venue:** Harvard Business Review, January-February 1992. Their 1996 book *The Balanced Scorecard: Translating Strategy into Action* (HBS Press) is the full treatment.
 - **Why it matters:** The 4-perspective scorecard. Tested directly.
 
@@ -119,7 +119,7 @@
 
 ### 21. CSCMP *Supply Chain Quarterly* + *Supply Chain Management Review*
 - **URL:** cscmp.org, supplychainquarterly.com
-- **Why subscribe:** Council of Supply Chain Management Professionals (CSCMP) is the practitioner-side counterpart to ASCM. SCMR runs deep case studies — Apple India, Walmart RFID, Maersk crisis communications.
+- **Why subscribe:** Council of Supply Chain Management Professionals (CSCMP) is the practitioner-side counterpart to ASCM. SCMR runs deep case studies, Apple India, Walmart RFID, Maersk crisis communications.
 - **Best for:** Practitioner-grade case material for your capstone.
 
 ### 22. McKinsey Operations practice
@@ -134,7 +134,7 @@
 
 ### 24. *Logistics Management* magazine + *Journal of Commerce* (JOC.com)
 - **URL:** logisticsmgmt.com, joc.com
-- **Why subscribe:** Practitioner-side logistics news. JOC covers ocean and intermodal in depth — essential for the post-Suez / Houthi / Panama Canal context of 2024-2026.
+- **Why subscribe:** Practitioner-side logistics news. JOC covers ocean and intermodal in depth, essential for the post-Suez / Houthi / Panama Canal context of 2024-2026.
 - **Best for:** Module 7 + 8 current events.
 
 ### 25. *FreightWaves*
@@ -177,10 +177,10 @@
 
 If you have limited time (e.g., 12 weeks to the exam):
 
-1. ASCM CSCP Learning System (#1) — week 1-12.
-2. *The Goal* (#4) — one weekend, ideally week 4.
-3. Kraljic 1983 (#8) + Fisher 1997 (#9) + Hau Lee 2004 (#10) — three afternoons, week 6.
-4. ASCM *SCM Now* (#20) — one issue per week.
+1. ASCM CSCP Learning System (#1), week 1-12.
+2. *The Goal* (#4), one weekend, ideally week 4.
+3. Kraljic 1983 (#8) + Fisher 1997 (#9) + Hau Lee 2004 (#10), three afternoons, week 6.
+4. ASCM *SCM Now* (#20), one issue per week.
 
 If you have 6 months to the exam and CSCO ambition:
 

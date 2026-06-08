@@ -3,10 +3,10 @@
 > **Why this module matters:** MPS and MRP are the *engines* of manufacturing planning. Roughly 20–25% of CPIM exam questions live in this module. If you can hand-compute an MRP table and read a time-fence policy, you'll bank a lot of points. If you can't, you'll lose them by the dozen.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1: Manufacturing Strategy](../Module-01-Manufacturing-Strategy/Reading.md) — MTS/ATO/MTO determines whether you need a one-level or two-level MPS
-> - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md) — the forecast is one of the three MPS inputs
-> - [Module 3: S&OP](../Module-03-SOP-Sales-Operations-Planning/Reading.md) — the agreed family plan is the third MPS input
-> - Arithmetic — the MRP gross-to-net calculation is a discipline, not a math problem; you'll do it by hand
+> - [Module 1: Manufacturing Strategy](../Module-01-Manufacturing-Strategy/Reading.md), MTS/ATO/MTO determines whether you need a one-level or two-level MPS
+> - [Module 2: Demand Planning & Forecasting](../Module-02-Demand-Planning-Forecasting/Reading.md), the forecast is one of the three MPS inputs
+> - [Module 3: S&OP](../Module-03-SOP-Sales-Operations-Planning/Reading.md), the agreed family plan is the third MPS input
+> - Arithmetic, the MRP gross-to-net calculation is a discipline, not a math problem; you'll do it by hand
 >
 > This module is the densest on the exam. Expect to spend 4+ hours on the reading and another 4 hours practicing MRP tables by hand. If you can't hand-compute an MRP record cold by the end of the module, re-work the *Velo Frères* and worked-example sections.
 
@@ -16,7 +16,7 @@
 
 **Velo Frères**, a Belgian bicycle assembly plant, builds 6 finished bike models. Each model uses different combinations of frames, wheels, gears, brakes, chains, pedals, and saddles. About 250 unique components in total.
 
-Until 2019, the planning was done in Excel. The buyer ordered roughly twice the average monthly usage of each part. Stockouts were "rare but painful." When a stockout *did* happen, the assembly line stopped — sometimes for days waiting on an obscure $1.20 pedal.
+Until 2019, the planning was done in Excel. The buyer ordered roughly twice the average monthly usage of each part. Stockouts were "rare but painful." When a stockout *did* happen, the assembly line stopped, sometimes for days waiting on an obscure $1.20 pedal.
 
 In 2020 they implemented MRP. The MPS at the finished-good level said: "Build 1,200 Model-A bikes the week of June 7." MRP exploded that through the Bill of Materials: 1,200 frames, 2,400 wheels, 1,200 chains, 2,400 pedals, etc. Then it offset each requirement by the supplier lead time: chains arrive in 2 weeks, frames in 6 weeks, pedals in 1 week. The system generated a planned order for *each component*, in *each week*, to arrive *just in time*.
 
@@ -37,9 +37,9 @@ Stockouts dropped 94%. Inventory dropped 38%. The owner cried.
 | **Driven by** | S&OP, customer orders, forecast | MPS + BOMs + inventory + lead times |
 | **Owner** | Master Scheduler | Planner / Buyer-Planner |
 
-🎯 **Critical CPIM concept:** **Independent demand** comes from outside the plant (customers, forecasts). **Dependent demand** is *calculated* from the BOM of items that use it. Pedals are dependent on the bike MPS. Bikes are independent — driven by customer/forecast.
+🎯 **Critical CPIM concept:** **Independent demand** comes from outside the plant (customers, forecasts). **Dependent demand** is *calculated* from the BOM of items that use it. Pedals are dependent on the bike MPS. Bikes are independent, driven by customer/forecast.
 
-🚨 **Trap on the exam:** A *spare part* sold to a customer is *independent demand* even if it's a component. The same physical part used inside a finished good = dependent. Many shops have both — handled via "service parts MPS" alongside the regular MPS.
+🚨 **Trap on the exam:** A *spare part* sold to a customer is *independent demand* even if it's a component. The same physical part used inside a finished good = dependent. Many shops have both, handled via "service parts MPS" alongside the regular MPS.
 
 ---
 
@@ -78,7 +78,7 @@ ATP_period = MPS_period − sum of customer orders before next MPS
 
 **Worked example.** MPS in week 3 = 100 units. Customer orders against that MPS receipt: 60 units (committed by existing orders). ATP for week 3 = 100 − 60 = **40 units** the salesperson can sell to a new customer.
 
-🎯 **Exam pattern:** "A customer asks if you can ship 50 units in week 4. ATP for week 4 = 30. What do you do?" → Offer 30 in week 4, push the rest to week 5 (where more ATP exists) — OR coordinate with the master scheduler to expedite/replan.
+🎯 **Exam pattern:** "A customer asks if you can ship 50 units in week 4. ATP for week 4 = 30. What do you do?" → Offer 30 in week 4, push the rest to week 5 (where more ATP exists), OR coordinate with the master scheduler to expedite/replan.
 
 ---
 
@@ -88,13 +88,13 @@ Time fences divide the MPS horizon into zones with different change rules.
 
 | Fence | Position | Who Can Change | Why |
 |-------|----------|----------------|-----|
-| **Demand Time Fence (DTF)** | Near term, e.g., weeks 1–2 | No changes without senior management OK; forecast is *ignored* — only actual orders count | Material and capacity committed; change is costly |
+| **Demand Time Fence (DTF)** | Near term, e.g., weeks 1–2 | No changes without senior management OK; forecast is *ignored*, only actual orders count | Material and capacity committed; change is costly |
 | **Planning Time Fence (PTF)** | Mid-term, e.g., through cumulative lead time | Master Scheduler can change with approval | Some flexibility, but trade-offs |
 | **Beyond PTF** | Long-term | System can replan freely | No commitments yet |
 
 🧠 **Mnemonic:** **DTF < PTF** in *time* (DTF is closer). DTF is "frozen." PTF is "slushy." Beyond PTF is "liquid."
 
-🚨 **Classic exam trap:** Inside the DTF, the forecast is *ignored* — only firm customer orders drive the projected available balance. Many candidates miss this.
+🚨 **Classic exam trap:** Inside the DTF, the forecast is *ignored*, only firm customer orders drive the projected available balance. Many candidates miss this.
 
 ---
 
@@ -125,7 +125,7 @@ Bicycle Model A (level 0)
 
 Each item gets a **low-level code** equal to the *lowest* level at which it appears anywhere in the BOM structure.
 
-**Why it matters:** the MRP system processes items in low-level-code order. A "frame tube set" appearing at Level 2 in Bike A *and* at Level 3 in Bike B gets coded at Level 3 — so MRP nets requirements from *both* parents before issuing planned orders.
+**Why it matters:** the MRP system processes items in low-level-code order. A "frame tube set" appearing at Level 2 in Bike A *and* at Level 3 in Bike B gets coded at Level 3, so MRP nets requirements from *both* parents before issuing planned orders.
 
 🎯 **Exam pattern:** "Why is low-level coding used in MRP?" → To ensure all dependent demand for an item across multiple parents is fully netted before its planned orders are computed.
 
@@ -148,7 +148,7 @@ For each component, in low-level-code order, MRP computes:
 | Planned order receipts | When the order must arrive |
 | Planned order releases | When the order must be released (= receipt − lead time) |
 
-### Worked Example — MRP Calculation
+### Worked Example, MRP Calculation
 
 **Item:** Pedal
 **Lead time:** 1 week
@@ -164,7 +164,7 @@ Parent demand (from Bike A MPS): 1,200 bikes per week × 2 pedals per bike = 2,4
 | Projected on hand (start 500) | 100 | -2,300 | -4,700 | -7,100 |
 | Net requirements | 0 | 2,300 | 2,400 | 2,400 |
 | Planned order receipts | 0 | 2,300 | 2,400 | 2,400 |
-| Planned order releases (LT=1) | 2,300 | 2,400 | 2,400 | — |
+| Planned order releases (LT=1) | 2,300 | 2,400 | 2,400 |, |
 
 Reading this:
 
@@ -204,10 +204,10 @@ Reading this:
 
 **Action messages** are MRP's nudges to humans:
 
-- **Release** — "Release this planned order now."
-- **Reschedule in** — "Pull this scheduled receipt earlier."
-- **Reschedule out** — "Push this scheduled receipt later."
-- **Cancel** — "Cancel this open order."
+- **Release**, "Release this planned order now."
+- **Reschedule in**, "Pull this scheduled receipt earlier."
+- **Reschedule out**, "Push this scheduled receipt later."
+- **Cancel**, "Cancel this open order."
 
 ---
 
@@ -227,22 +227,22 @@ CTP is more sophisticated and used in ATO/ETO environments where each customer o
 
 | Misconception | Reality |
 |---------------|---------|
-| "MPS and MRP are the same thing" | No — MPS = finished good; MRP = components |
-| "MRP is a forecast" | No — MRP is a *calculation* of dependent demand from MPS + BOM |
+| "MPS and MRP are the same thing" | No, MPS = finished good; MRP = components |
+| "MRP is a forecast" | No, MRP is a *calculation* of dependent demand from MPS + BOM |
 | "Lead time is constant in MRP" | Standard MRP treats it as fixed; APS/finite scheduling treats it variably |
-| "Inside the DTF, forecast still drives PAB" | No — only firm orders count inside the DTF |
+| "Inside the DTF, forecast still drives PAB" | No, only firm orders count inside the DTF |
 | "ATP and CTP are interchangeable" | ATP = current schedule only; CTP = if we replan |
-| "Every component needs its own low-level code" | Yes — but the code is the *deepest* level where it appears |
+| "Every component needs its own low-level code" | Yes, but the code is the *deepest* level where it appears |
 | "MRP guarantees on-time delivery" | Only if data is clean: BOMs accurate, inventory records correct, lead times realistic |
 
 ---
 
 ## 🎯 Exam Traps Specific to Module 4
 
-1. **Demand Time Fence — forecast is ignored.** Inside DTF, projected available balance uses ONLY firm customer orders, not forecast.
+1. **Demand Time Fence, forecast is ignored.** Inside DTF, projected available balance uses ONLY firm customer orders, not forecast.
 2. **PTF > DTF in time.** Planning Time Fence is *further out* than Demand Time Fence. Many candidates flip this.
 3. **MPS unit ≠ MRP unit.** MPS plans in finished-good units (bikes). MRP plans in components (pedals, frames).
-4. **"Dependent demand should be forecast."** No — dependent demand is *calculated* from the BOM. Forecasting it is the classic pre-MRP error.
+4. **"Dependent demand should be forecast."** No, dependent demand is *calculated* from the BOM. Forecasting it is the classic pre-MRP error.
 5. **ATP computed wrong.** ATP = MPS receipt minus sum of orders booked *before next MPS receipt*. Not just "MPS minus all orders."
 6. **Lot-sizing trade-offs.** L4L minimizes inventory but maximizes setup cost. EOQ does the opposite.
 
@@ -274,7 +274,7 @@ CTP is more sophisticated and used in ATO/ETO environments where each customer o
 
 ---
 
-## 🤖 2024–2026 Update — MRP, DDMRP, and APS Coexisting
+## 🤖 2024–2026 Update, MRP, DDMRP, and APS Coexisting
 
 The 2020s have seen meaningful structural evolution in MRP/MPS practice that the modern CPIM expects awareness of:
 
@@ -283,20 +283,20 @@ The 2020s have seen meaningful structural evolution in MRP/MPS practice that the
 | **Classic MRP** (Orlicky 1975) | Push-based, time-phased explosion from MPS through BOMs | Stable demand, accurate BOMs, predictable lead times |
 | **MRP II** (Wight 1984) | Adds capacity (CRP) and financial integration to MRP | Standard ERP-era reference |
 | **APS / Finite Capacity Scheduling** (Black & Hopp/Spearman, 1990s) | Treats capacity as finite from the start; optimizes across constraints | Complex job shops, semiconductor, automotive |
-| **DDMRP — Demand Driven MRP** (Ptak & Smith, 2011, 2nd ed. 2019) | Replaces forecast-driven planning at strategic positions with buffer-based replenishment; combines MRP + lean + TOC | Long-lead-time, high-variability environments |
+| **DDMRP, Demand Driven MRP** (Ptak & Smith, 2011, 2nd ed. 2019) | Replaces forecast-driven planning at strategic positions with buffer-based replenishment; combines MRP + lean + TOC | Long-lead-time, high-variability environments |
 | **Concurrent/Connected Planning** (Kinaxis, o9, Anaplan circa 2022–2026) | Re-runs the full MRP explosion continuously, not batch | Sub-daily replanning is operationally important |
 
-The ASCM Dictionary (16th ed., 2022) now includes DDMRP entries. The modern CPIM exam treats classic MRP as the default and tests awareness — not deep mechanics — of DDMRP and APS as alternatives. The CPIM-recognized "Demand Driven Planner Professional (CDDP)" credential, also from ASCM, is the deeper certification for DDMRP specifically.
+The ASCM Dictionary (16th ed., 2022) now includes DDMRP entries. The modern CPIM exam treats classic MRP as the default and tests awareness not deep mechanics of DDMRP and APS as alternatives. The CPIM-recognized "Demand Driven Planner Professional (CDDP)" credential, also from ASCM, is the deeper certification for DDMRP specifically.
 
 ---
 
-## 📊 Case Study — Boeing 787 Production-Ramp Problems (2007–2013)
+## 📊 Case Study, Boeing 787 Production-Ramp Problems (2007–2013)
 
-**Situation.** The Boeing 787 Dreamliner was a generational program: composite-fuselage construction, novel electrical architecture, fly-by-wire systems. Boeing committed to delivery dates in late 2008 to launch customer All Nippon Airways (ANA), with full production ramp targeted for 2010. The supply-chain architecture was unprecedented for Boeing: roughly **70% of the airframe was outsourced to a tier-1 supplier network** (Mitsubishi for the wings, Spirit AeroSystems for the forward fuselage section, Vought / Alenia for the aft fuselage, Kawasaki for the wing-body fairing) with each tier-1 doing its own design integration. Boeing's intent: distribute risk and capital, leverage supplier engineering capacity. The classical MRP assumption — *Boeing knows the BOM, owns the engineering content, controls lead times* — was structurally broken from day one. Tier-1s did not always know their own tier-2 BOMs at the level of detail Boeing's planning system required, and supplier lead-time estimates were known to be optimistic.
+**Situation.** The Boeing 787 Dreamliner was a generational program: composite-fuselage construction, novel electrical architecture, fly-by-wire systems. Boeing committed to delivery dates in late 2008 to launch customer All Nippon Airways (ANA), with full production ramp targeted for 2010. The supply-chain architecture was unprecedented for Boeing: roughly **70% of the airframe was outsourced to a tier-1 supplier network** (Mitsubishi for the wings, Spirit AeroSystems for the forward fuselage section, Vought / Alenia for the aft fuselage, Kawasaki for the wing-body fairing) with each tier-1 doing its own design integration. Boeing's intent: distribute risk and capital, leverage supplier engineering capacity. The classical MRP assumption *Boeing knows the BOM, owns the engineering content, controls lead times* was structurally broken from day one. Tier-1s did not always know their own tier-2 BOMs at the level of detail Boeing's planning system required, and supplier lead-time estimates were known to be optimistic.
 
 **Decision.** Boeing's program management committed to the original schedule and continued to push tier-1s to deliver on time, releasing assemblies to Everett with quality-acceptance gaps that were planned to be closed during final assembly. The MRP planning treated tier-1 commitments as firm; the engineering BOMs were treated as stable. Both assumptions were violated continuously through 2008–2010.
 
-**Outcome.** The 787 program suffered **seven delivery-date slips** between 2008 and 2011. First customer delivery slipped from May 2008 to September 2011 — a **40-month delay** vs original schedule. Boeing took **$32B+ in deferred production cost** on its books through 2014. The production-ramp recovery (2011–2013) required Boeing to vertically reintegrate critical content (Boeing bought Vought's Charleston facility in 2009 for $1B; built a second-line 787 final-assembly capability in Charleston in 2010) — fundamentally rewriting the make/buy strategy of the program. In January 2013 the global 787 fleet was grounded for 3 months following lithium-ion battery thermal events; a separate but related quality-cascade issue. By 2024, with the 787 now in steady-state production, the program is widely treated as a master case in MPS / MRP / supply-network design.
+**Outcome.** The 787 program suffered **seven delivery-date slips** between 2008 and 2011. First customer delivery slipped from May 2008 to September 2011 a **40-month delay** vs original schedule. Boeing took **$32B+ in deferred production cost** on its books through 2014. The production-ramp recovery (2011–2013) required Boeing to vertically reintegrate critical content (Boeing bought Vought's Charleston facility in 2009 for $1B; built a second-line 787 final-assembly capability in Charleston in 2010) fundamentally rewriting the make/buy strategy of the program. In January 2013 the global 787 fleet was grounded for 3 months following lithium-ion battery thermal events; a separate but related quality-cascade issue. By 2024, with the 787 now in steady-state production, the program is widely treated as a master case in MPS / MRP / supply-network design.
 
 **Lesson for the exam / for practitioners.** The 787 demonstrates several connected MPS/MRP failures:
 
@@ -305,12 +305,12 @@ The ASCM Dictionary (16th ed., 2022) now includes DDMRP entries. The modern CPIM
 3. **Variable lead times treated as fixed.** Classic MRP assumes fixed lead times. The 787 program had genuine LT variance of months on critical items; APS / finite-capacity scheduling would have at least surfaced the risk.
 4. **Override of the planning system by program management.** When the planning system surfaced infeasibility, program leadership "willed" the schedule rather than re-planning. The CPIM-canonical answer would have been: re-baseline the MPS, push the DTF out, and renegotiate customer commitments. Boeing's culture in this period chose not to.
 
-CPIM exam-takeaway: **MRP/MPS is a tool, not a guarantee.** Its outputs are only as good as its inputs (BOMs, lead times, capacity). When inputs are systematically wrong, the planning system will give plausible-looking infeasible answers — and the discipline of *re-baselining* the MPS to honest inputs is a critical management decision that the planning system itself cannot make.
+CPIM exam-takeaway: **MRP/MPS is a tool, not a guarantee.** Its outputs are only as good as its inputs (BOMs, lead times, capacity). When inputs are systematically wrong, the planning system will give plausible-looking infeasible answers, and the discipline of *re-baselining* the MPS to honest inputs is a critical management decision that the planning system itself cannot make.
 
 **Discussion (Socratic).**
 - Q1: A program manager in your division insists that "the schedule is the schedule" even when the master scheduler flags MRP infeasibility three months out. Build the strongest argument for the program manager's position (program credibility, customer trust, the slippery-slope to chronic delays) AND for the master scheduler's position (the planning system is right; willing the schedule destroys credibility downstream). At what scale of overrun does the calculation flip?
 - Q2: The 787 outsourcing decision was correct in 2003 but became wrong by 2009. What's the principled rule for when a *high-outsource* MPS architecture is right vs when vertical integration is right? Use the Hayes & Wheelwright lens from Module 1 and the time-fence logic from this module.
-- Q3: Modern aerospace programs (Airbus A350, the Boeing 777X) have moved toward shorter tier-1 networks with tighter Boeing/Airbus involvement in tier-1 engineering. Is this a *retreat* from the 787 outsourcing model, or a *correction* of it — and what does the answer tell you about how MPS should be designed for highly engineered products?
+- Q3: Modern aerospace programs (Airbus A350, the Boeing 777X) have moved toward shorter tier-1 networks with tighter Boeing/Airbus involvement in tier-1 engineering. Is this a *retreat* from the 787 outsourcing model, or a *correction* of it, and what does the answer tell you about how MPS should be designed for highly engineered products?
 
 ---
 
@@ -320,7 +320,7 @@ You now know:
 
 - 🗓️ MPS plans finished goods; MRP plans components
 - 🟢 How to compute ATP and what it means to "promise" a customer
-- 🚧 Time fences: DTF (frozen) vs PTF (slushy) — and what each rule means
+- 🚧 Time fences: DTF (frozen) vs PTF (slushy), and what each rule means
 - 🌳 BOM structure + low-level coding + why MRP needs it
 - ⚙️ The MRP gross-to-net calculation with a worked example
 - 📦 Lot-sizing rules: L4L, EOQ, POQ, FOQ, Min/Max
@@ -328,8 +328,8 @@ You now know:
 - 🚨 The four classic traps: forecast-inside-DTF, PTF/DTF order, dependent-demand-as-forecast, ATP math
 
 **Next steps:**
-1. 🎥 Watch the videos in `Videos.md` — especially the MRP table walkthrough
-2. ✏️ Take `Quiz.md` — has 7 calculation questions; do them on paper
+1. 🎥 Watch the videos in `Videos.md`, especially the MRP table walkthrough
+2. ✏️ Take `Quiz.md`, has 7 calculation questions; do them on paper
 3. 📋 Master `Cheat-Sheet.md`
 4. ➡️ Take [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) after this module
 5. ➡️ Move to [Module 5: Capacity Planning](../Module-05-Capacity-Planning/Reading.md)
@@ -337,28 +337,28 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 5 (Capacity) — RCCP supports the MPS you build here, and CRP supports the MRP plan; Module 6 (Inventory) uses MRP outputs to drive lot-sizing; Module 7 (PAC) executes MRP's planned releases on the floor.
+> - Inside this course: Module 5 (Capacity), RCCP supports the MPS you build here, and CRP supports the MRP plan; Module 6 (Inventory) uses MRP outputs to drive lot-sizing; Module 7 (PAC) executes MRP's planned releases on the floor.
 > - Cross-course: `10-ASCM-CSCP` Module 6 generalizes MRP across multi-plant networks (DRP, distribution requirements planning); `12-ASCM-CLTD` Module 5 uses MRP-style logic at distribution centers.
-> - Practice: Practice Exam 1 includes 8–10 MRP calculation questions; Final Mock Exam has 12–15. *Do not* skip the calculation questions — they are the highest-yield exam content.
+> - Practice: Practice Exam 1 includes 8–10 MRP calculation questions; Final Mock Exam has 12–15. *Do not* skip the calculation questions, they are the highest-yield exam content.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Time-fence policy under volatile demand.** A consumer electronics company runs an 8-week DTF and 16-week PTF. Their cumulative product lead time has grown from 12 to 22 weeks due to 2024–2026 chip-shortage aftershocks. Build the strongest argument for *extending* the DTF and PTF AND for *keeping* them where they are and accepting more replanning churn. Which would you defend at the next MPS-policy committee, and what's the indicator that would change your mind?
-2. **DDMRP vs classic MRP.** DDMRP (Ptak & Smith, 2011, 2nd ed. 2019) places strategic buffers at decoupling points and uses actual consumption (not forecast) to drive replenishment. Under what production environment from Module 1 (MTS, ATO, MTO, ETO) does DDMRP make the most sense — and where does classic MRP still beat it? Cite at least one piece of literature.
+2. **DDMRP vs classic MRP.** DDMRP (Ptak & Smith, 2011, 2nd ed. 2019) places strategic buffers at decoupling points and uses actual consumption (not forecast) to drive replenishment. Under what production environment from Module 1 (MTS, ATO, MTO, ETO) does DDMRP make the most sense, and where does classic MRP still beat it? Cite at least one piece of literature.
 3. **Lot-sizing in 2026.** Lot-for-Lot is the lean / kanban default; EOQ assumes setup-cost matters; FOQ reflects supplier minimums. With 3D printing / additive manufacturing now mature for many metal parts, setup cost has collapsed for many SKUs. Should L4L become the universal default, or do EOQ/FOQ still earn their place? Defend with reference to specific industries.
-4. **The override problem.** Inside the DTF, MPS commitments are supposed to be frozen. In practice, sales VPs override the DTF to take big customer orders. What's the right organizational design — a hard "no override" policy, or a structured override-with-impact-assessment process? Use the Boeing 787 case as a stress test for your answer.
-5. **MRP nervousness and how to dampen it.** A planner observes that small forecast changes propagate into large MRP plan changes ("MRP nervousness"). Standard countermeasures: firmer time fences, pegging-based exception filtering, planning bills, dampening logic. Pick two and defend them as the right combination — vs the argument that nervousness is a *feature* (the system surfacing real plan changes) not a bug.
+4. **The override problem.** Inside the DTF, MPS commitments are supposed to be frozen. In practice, sales VPs override the DTF to take big customer orders. What's the right organizational design, a hard "no override" policy, or a structured override-with-impact-assessment process? Use the Boeing 787 case as a stress test for your answer.
+5. **MRP nervousness and how to dampen it.** A planner observes that small forecast changes propagate into large MRP plan changes ("MRP nervousness"). Standard countermeasures: firmer time fences, pegging-based exception filtering, planning bills, dampening logic. Pick two and defend them as the right combination, vs the argument that nervousness is a *feature* (the system surfacing real plan changes) not a bug.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Manufacturing Planning and Control for Supply Chain Management* — Vollmann, Berry, Whybark & Jacobs, 6th ed. (McGraw-Hill, 2011) — Chapters 3–6 are the canonical MPS/MRP source.
-- 📖 *Orlicky's Material Requirements Planning, 3rd Edition* — Ptak, Carol & Smith, Chad (McGraw-Hill, 2011) — the founding text of MRP, updated for the DDMRP era.
-- 📖 *Master Scheduling: A Practical Guide to Competitive Manufacturing, 3rd ed.* — Proud, John F. (Wiley, 2007) — the practitioner's manual for MPS.
-- 📖 *Demand Driven Material Requirements Planning (DDMRP), 2nd ed.* — Ptak, Carol & Smith, Chad (Industrial Press, 2019) — the modern DDMRP playbook.
-- 📖 *Factory Physics, 3rd ed.* — Hopp, Wallace J. & Spearman, Mark L. (Waveland Press, 2008) — the math of WIP, throughput, and APS-style finite scheduling.
-- 📖 ASCM Dictionary, 16th edition (2022) — entries for MPS, MRP, ATP, CTP, time fence, BOM, low-level code, lot-for-lot, pegging, DDMRP, planning bill.
-- 📰 *The Boeing 787: Lessons Learned* — Tang, Christopher S. & Zimmerman, Joshua D., *California Management Review* 51(2), 2009 — early-program post-mortem; pair with *Aviation Week* 2011–2014 ramp-recovery coverage.
+- 📖 *Manufacturing Planning and Control for Supply Chain Management* Vollmann, Berry, Whybark & Jacobs, 6th ed. (McGraw-Hill, 2011) Chapters 3–6 are the canonical MPS/MRP source.
+- 📖 *Orlicky's Material Requirements Planning, 3rd Edition* Ptak, Carol & Smith, Chad (McGraw-Hill, 2011) the founding text of MRP, updated for the DDMRP era.
+- 📖 *Master Scheduling: A Practical Guide to Competitive Manufacturing, 3rd ed.* Proud, John F. (Wiley, 2007) the practitioner's manual for MPS.
+- 📖 *Demand Driven Material Requirements Planning (DDMRP), 2nd ed.* Ptak, Carol & Smith, Chad (Industrial Press, 2019) the modern DDMRP playbook.
+- 📖 *Factory Physics, 3rd ed.* Hopp, Wallace J. & Spearman, Mark L. (Waveland Press, 2008) the math of WIP, throughput, and APS-style finite scheduling.
+- 📖 ASCM Dictionary, 16th edition (2022), entries for MPS, MRP, ATP, CTP, time fence, BOM, low-level code, lot-for-lot, pegging, DDMRP, planning bill.
+- 📰 *The Boeing 787: Lessons Learned* Tang, Christopher S. & Zimmerman, Joshua D., *California Management Review* 51(2), 2009 early-program post-mortem; pair with *Aviation Week* 2011–2014 ramp-recovery coverage.

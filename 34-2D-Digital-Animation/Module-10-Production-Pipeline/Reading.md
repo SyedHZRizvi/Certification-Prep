@@ -9,7 +9,7 @@ title: "Module 10: Production Pipeline"
 
 Every animation tutorial teaches you tools. This module teaches you where those tools fit on a map that professional studios have been refining for ninety years.
 
-A production pipeline is the sequence of stages, decisions, and handoffs that takes an idea from "we want to make an animated show" to "here is the broadcast-ready episode." Understanding the pipeline does not make you a better animator the way that practicing walk cycles makes you a better animator. It makes you a better professional — someone who understands where their work comes from and where it goes, who their collaborators are, what they're doing, and how to communicate with them.
+A production pipeline is the sequence of stages, decisions, and handoffs that takes an idea from "we want to make an animated show" to "here is the broadcast-ready episode." Understanding the pipeline does not make you a better animator the way that practicing walk cycles makes you a better animator. It makes you a better professional, someone who understands where their work comes from and where it goes, who their collaborators are, what they're doing, and how to communicate with them.
 
 A studio animator who understands the pipeline is worth twice as much as one who only knows their own specialty.
 
@@ -37,11 +37,11 @@ Pre-production is where the most important decisions are made at the lowest cost
 
 ### The Script
 
-The script establishes dialogue, scene descriptions, and timing. Animation scripts are different from live-action scripts: they must account for the visual storytelling that animation can do that prose can't — specifying a reaction shot, describing how a character's physicality changes.
+The script establishes dialogue, scene descriptions, and timing. Animation scripts are different from live-action scripts: they must account for the visual storytelling that animation can do that prose can't, specifying a reaction shot, describing how a character's physicality changes.
 
 ### The Storyboard
 
-The storyboard translates the script into visual form: rough panel drawings showing camera angles, character blocking, and key moments. A storyboard is not animation — it's a plan for animation.
+The storyboard translates the script into visual form: rough panel drawings showing camera angles, character blocking, and key moments. A storyboard is not animation, it's a plan for animation.
 
 ### The Animatic
 
@@ -72,7 +72,7 @@ Model sheets are the character specification documents. They show:
 - Color specifications with exact color codes or Pantone references
 - Notes on stylistic rules (this character's hair always moves this way)
 
-Model sheets are the reference that all animators use. Consistency of character appearance across an episode — and across a series — depends on model sheets.
+Model sheets are the reference that all animators use. Consistency of character appearance across an episode and across a series depends on model sheets.
 
 ---
 
@@ -96,13 +96,13 @@ These three stages are the core animation production stages:
 
 ### Rough Animation
 
-The rough animation stage is about timing and poses — not line quality. Animators draw key poses and rough in-betweens that capture the performance and timing of a scene. These drawings look messy, often with multiple lines searching for the right shape (called "hairy" drawings in the industry).
+The rough animation stage is about timing and poses, not line quality. Animators draw key poses and rough in-betweens that capture the performance and timing of a scene. These drawings look messy, often with multiple lines searching for the right shape (called "hairy" drawings in the industry).
 
 ### Cleanup
 
-Cleanup artists take the rough animation drawings and redraw them with clean, precise, on-model lines — lines that match the character's model sheet. This is specialized work: a cleanup artist needs to understand the animation well enough to know what the rough was intending, and needs the discipline to replicate the model precisely.
+Cleanup artists take the rough animation drawings and redraw them with clean, precise, on-model lines, lines that match the character's model sheet. This is specialized work: a cleanup artist needs to understand the animation well enough to know what the rough was intending, and needs the discipline to replicate the model precisely.
 
-In cut-out animation (like in Adobe Animate), cleanup is partly replaced by the rigging setup — the cleaned-up character is rigged once, and the rig is animated rather than being re-drawn. But even cut-out productions need a cleanup pass for any hand-drawn elements (effects animation, expressive moments that the rig can't capture).
+In cut-out animation (like in Adobe Animate), cleanup is partly replaced by the rigging setup, the cleaned-up character is rigged once, and the rig is animated rather than being re-drawn. But even cut-out productions need a cleanup pass for any hand-drawn elements (effects animation, expressive moments that the rig can't capture).
 
 ### Ink & Paint / Digital Color
 
@@ -117,12 +117,12 @@ Digital color in Animate uses:
 
 ## 🔗 Compositing
 
-Compositing is the stage where everything that has been created separately — character animation, background art, effects animation, lighting layers — is assembled into the final shot.
+Compositing is the stage where everything that has been created separately character animation, background art, effects animation, lighting layers is assembled into the final shot.
 
 In 2D animation, compositing happens in:
-- **Adobe After Effects** — most common for TV, YouTube, and commercial productions
-- **Nuke** — used in high-end productions and VFX-heavy animation
-- **Toon Boom Harmony** — for productions that complete fully within Harmony
+- **Adobe After Effects**, most common for TV, YouTube, and commercial productions
+- **Nuke**, used in high-end productions and VFX-heavy animation
+- **Toon Boom Harmony**, for productions that complete fully within Harmony
 
 Compositing adds:
 - Depth of field (background blur for foreground focus)
@@ -186,7 +186,7 @@ Different productions use different software combinations. Here is the industry 
 
 - **Development:** Riot Games IP; visual direction established over 3 years before production
 - **Pre-production:** Storyboarding and animatics in Toon Boom Storyboard Pro
-- **Character animation:** Custom Fortiche pipeline combining 3D rigs with hand-painted texture passes — effectively a 2.5D approach
+- **Character animation:** Custom Fortiche pipeline combining 3D rigs with hand-painted texture passes, effectively a 2.5D approach
 - **Effects animation:** After Effects with custom-built particle and effect systems
 - **Compositing:** After Effects + proprietary color grading tools to achieve the signature painted look
 - **Delivery:** Netflix HDR master (P3 color space, 2160p 4K, Dolby Atmos audio)
@@ -197,7 +197,7 @@ Arcane's 3-year production schedule for 9 episodes (roughly 6 episodes per seaso
 
 ## 🎬 The Revisions Process
 
-In professional animation, revisions are not exceptions — they are built into the schedule. Understanding the revision culture helps animators communicate professionally:
+In professional animation, revisions are not exceptions, they are built into the schedule. Understanding the revision culture helps animators communicate professionally:
 
 | Revision Type | Timing | Common Causes | Who Initiates |
 |--------------|--------|--------------|--------------|
@@ -229,7 +229,7 @@ Never delete older versions until the production is fully delivered and archived
 - **Compositing:** After Effects; depth layers, lighting overlays, color grading
 - **Delivery:** Disney+ streaming master + broadcast master for Disney Channel
 
-The show demonstrates the mid-budget TV animation pipeline in detail — accessible tools (Animate + AE) used with professional rigor (model sheets, color scripts, multiple review rounds).
+The show demonstrates the mid-budget TV animation pipeline in detail, accessible tools (Animate + AE) used with professional rigor (model sheets, color scripts, multiple review rounds).
 
 ---
 
@@ -261,7 +261,7 @@ A color script is a visual document created in development that maps the color p
 | Scene-by-scene color swatches | Quick overview of the whole episode's color journey |
 | Palette evolution | Shows how color temperature shifts with story (warm = safety; cool = threat) |
 | Character palette consistency | Ensures hero/villain/secondary characters are visually distinct across all lighting conditions |
-| Special event callouts | Action sequences, emotional peaks, flashbacks — each gets a distinct palette treatment |
+| Special event callouts | Action sequences, emotional peaks, flashbacks, each gets a distinct palette treatment |
 
 Productions like *Arcane* and *The Owl House* had elaborate color scripts that were treated as production documents on par with the script itself.
 
@@ -284,7 +284,7 @@ Productions like *Arcane* and *The Owl House* had elaborate color scripts that w
 
 ## 🚨 Exam Trap Section
 
-- **Animatic is NOT rough animation:** The animatic is a storyboard cut to audio — it's still pre-production. Rough animation comes later. Students confuse these.
+- **Animatic is NOT rough animation:** The animatic is a storyboard cut to audio, it's still pre-production. Rough animation comes later. Students confuse these.
 - **Cleanup ≠ coloring:** Cleanup is redrawn clean lines. Color fill (Ink & Paint) comes after cleanup. These are separate stages.
 - **Harmony and Animate have different price tiers:** Harmony's pricing ($109–$239/mo) is significantly higher than Animate's CC subscription. Major studios use Harmony; indie/YouTube uses Animate.
 - **Compositing is not the same as color grading:** Compositing assembles elements. Color grading is one part of what compositing adds. The exam may test both concepts.
@@ -339,7 +339,7 @@ Understanding which studio uses which pipeline tools provides industry context f
 ## 📋 Summary
 
 - The 2D studio pipeline: Development → Pre-production → Layout → Rough → Cleanup → Color → Composite → Sound → QC/Delivery.
-- Animatics are the most cost-effective stage for catching timing and pacing problems — changes here cost hours; changes after animation cost weeks.
+- Animatics are the most cost-effective stage for catching timing and pacing problems, changes here cost hours; changes after animation cost weeks.
 - Toon Boom Harmony is the dominant tool at major broadcast studios; Adobe Animate is standard for commercial/indie work; TVPaint is preferred for high-quality hand-drawn.
 - Compositing in AE (most pipelines) or Harmony assembles character, background, effects, and lighting.
 - Broadcast studios have larger teams, longer timelines, and strict delivery specs; YouTube animators have smaller teams, faster cycles, and simpler delivery.
@@ -347,7 +347,7 @@ Understanding which studio uses which pipeline tools provides industry context f
 
 ## ➡️ You've Finished the Modules
 
-Congratulations — all 10 modules are complete. Time to drill the Flashcards and take the Final Mock Exam.
+Congratulations, all 10 modules are complete. Time to drill the Flashcards and take the Final Mock Exam.
 
 [→ Master Flashcards](../Flashcards.md)
 [→ Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
@@ -370,17 +370,17 @@ Professional animation studios use version control systems to manage the enormou
 project01_ep02_sc04_sh01_v003_APPROVED.an
 ```
 
-This naming convention ensures that any file can be identified at a glance without opening it — critical when a production has thousands of files.
+This naming convention ensures that any file can be identified at a glance without opening it, critical when a production has thousands of files.
 
 ---
 
 ## 📚 Further Reading
 
-- *Cartoon Modern* — Amid Amidi (history of UPA and modern cartoon style)
-- *The Animation Book* — Kit Laybourne (production pipeline from pre-pro to delivery)
-- Animation Career Review: [animationcareers.net](https://www.animationcareers.net) — industry salary and studio profiles
+- *Cartoon Modern*, Amid Amidi (history of UPA and modern cartoon style)
+- *The Animation Book*, Kit Laybourne (production pipeline from pre-pro to delivery)
+- Animation Career Review: [animationcareers.net](https://www.animationcareers.net), industry salary and studio profiles
 - Toon Boom Harmony documentation: [toonboom.com/learn-toonboom](https://www.toonboom.com/learn-toonboom)
-- Cartoon Brew: [cartoonbrew.com](https://www.cartoonbrew.com) — industry news and studio profiles
+- Cartoon Brew: [cartoonbrew.com](https://www.cartoonbrew.com), industry news and studio profiles
 
 ---
 
@@ -399,25 +399,25 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 

@@ -201,7 +201,7 @@ A VFX artist composites an explosion over a live-action plate but forgets to add
 
 A. The explosion will look too bright
 B. The smoke column will appear in the wrong position
-C. The explosion will look like a pure ball of fire that appeared and disappeared without physically disturbing the environment — no physical material flying through the frame
+C. The explosion will look like a pure ball of fire that appeared and disappeared without physically disturbing the environment, no physical material flying through the frame
 D. The shockwave ring will not appear correctly
 
 ---
@@ -222,9 +222,9 @@ D. It is used to match the ambient occlusion of the live plate in real time
 At Frame 0 of an explosion, the fireball core should have what characteristics?
 
 A. Dark orange color, large size, low opacity (the explosion is just starting)
-B. Very bright white/yellow, maximum opacity — the initial incandescent flash before the fireball cools and darkens
-C. Pure black — Frame 0 is the pre-explosion reference frame
-D. Small orange flame with no shockwave — the explosion builds slowly
+B. Very bright white/yellow, maximum opacity, the initial incandescent flash before the fireball cools and darkens
+C. Pure black, Frame 0 is the pre-explosion reference frame
+D. Small orange flame with no shockwave, the explosion builds slowly
 
 ---
 
@@ -244,7 +244,7 @@ D. Normal
 For a long-duration battle sequence shot, the smoke column from an explosion must continue to be present for 10+ seconds after the initial blast. Which particle system approach is most appropriate for this element?
 
 A. Trapcode Particular with Life = 0.5s and high Particles/sec (the smoke will keep emitting)
-B. Trapcode Particular with Life = 8–15s, low Particles/sec, negative Gravity, and large turbulence scale — producing long-duration rising smoke that persists throughout the shot
+B. Trapcode Particular with Life = 8–15s, low Particles/sec, negative Gravity, and large turbulence scale, producing long-duration rising smoke that persists throughout the shot
 C. CC Particle World with Longevity = 10s and Particle Type = Sphere
 D. A static Fractal Noise layer that doesn't animate
 
@@ -255,7 +255,7 @@ D. A static Fractal Noise layer that doesn't animate
 The "secondary fire" layer (Layer 6) in the explosion stack represents what physical phenomenon?
 
 A. A duplicate of the fireball core placed further from the camera
-B. Smaller fires that continue to burn after the initial blast, on debris, fuel sources, or the ground — the post-blast burn state
+B. Smaller fires that continue to burn after the initial blast, on debris, fuel sources, or the ground, the post-blast burn state
 C. The reflection of the explosion in a water surface
 D. A lens flare from the explosion flash
 
@@ -274,50 +274,50 @@ D. The smoke and flash are always the same element on the same frame range
 
 ## 🎯 Answers + Explanations
 
-**Q1 — C.** The rule of 7 layers refers to the minimum seven distinct, independently timed physical components of a real explosion, each composited as a separate layer: fireball, shockwave, smoke, debris, dust, secondary fire, and ambient light.
+**Q1, C.** The rule of 7 layers refers to the minimum seven distinct, independently timed physical components of a real explosion, each composited as a separate layer: fireball, shockwave, smoke, debris, dust, secondary fire, and ambient light.
 
-**Q2 — C.** The fireball core is the initial incandescent flash — it peaks in 1–3 frames and begins decaying immediately. It is the fastest-changing element in the explosion stack.
+**Q2 C.** The fireball core is the initial incandescent flash it peaks in 1–3 frames and begins decaying immediately. It is the fastest-changing element in the explosion stack.
 
-**Q3 — B.** The shockwave ring is a nearly-invisible atmospheric pressure wave — best simulated as a fast-expanding radial distortion (CC Lens, Optics Compensation, or Displacement Map) that travels outward rapidly. It is extremely subtle — barely visible — but its presence is felt.
+**Q3 B.** The shockwave ring is a nearly-invisible atmospheric pressure wave best simulated as a fast-expanding radial distortion (CC Lens, Optics Compensation, or Displacement Map) that travels outward rapidly. It is extremely subtle barely visible but its presence is felt.
 
-**Q4 — C.** Add (or Screen) blend mode allows fire and flame elements to add their luminance to the background. Dark pixels (black) in the flame element become invisible; bright pixels contribute light. This is physically correct for luminous fire.
+**Q4, C.** Add (or Screen) blend mode allows fire and flame elements to add their luminance to the background. Dark pixels (black) in the flame element become invisible; bright pixels contribute light. This is physically correct for luminous fire.
 
-**Q5 — C.** The environmental light layer simulates the brief warm light from the muzzle flash illuminating the nearby environment — the actor's face, walls, and surfaces. This physical interaction is what makes the muzzle flash feel real.
+**Q5 C.** The environmental light layer simulates the brief warm light from the muzzle flash illuminating the nearby environment the actor's face, walls, and surfaces. This physical interaction is what makes the muzzle flash feel real.
 
-**Q6 — B.** A 2D point track on the muzzle tip position creates a Null that follows the weapon through the frame. The flash, smoke, and all muzzle elements are parented to this Null.
+**Q6, B.** A 2D point track on the muzzle tip position creates a Null that follows the weapon through the frame. The flash, smoke, and all muzzle elements are parented to this Null.
 
-**Q7 — C.** The opacity of the lens flare must be animated (keyed) to reduce when an object occludes the light source. A persistent flare that ignores occlusion looks digital and disconnected from the scene.
+**Q7, C.** The opacity of the lens flare must be animated (keyed) to reduce when an object occludes the light source. A persistent flare that ignores occlusion looks digital and disconnected from the scene.
 
-**Q8 — B.** Film grain should be a single unified Adjustment Layer at the top of the entire composite. This ensures all elements — plate, CG, VFX — share the same grain, making them feel captured by the same physical camera.
+**Q8 B.** Film grain should be a single unified Adjustment Layer at the top of the entire composite. This ensures all elements plate, CG, VFX, share the same grain, making them feel captured by the same physical camera.
 
-**Q9 — B.** Real lens chromatic aberration is most pronounced at the edges and corners of the frame where the optical path length is longest. It affects high-contrast edges (where different wavelengths diverge most visibly).
+**Q9, B.** Real lens chromatic aberration is most pronounced at the edges and corners of the frame where the optical path length is longest. It affects high-contrast edges (where different wavelengths diverge most visibly).
 
-**Q10 — B.** Cell Fracture is a built-in Blender add-on that divides a mesh into fragments using Voronoi cell calculations, creating natural-looking fracture patterns suitable for destruction simulations.
+**Q10, B.** Cell Fracture is a built-in Blender add-on that divides a mesh into fragments using Voronoi cell calculations, creating natural-looking fracture patterns suitable for destruction simulations.
 
-**Q11 — B.** The ambient lighting effect is a top-level Adjustment Layer that simulates the explosion's light flashing across the actors and surrounding environment. It is keyframed to match the fireball's brightness curve over time.
+**Q11, B.** The ambient lighting effect is a top-level Adjustment Layer that simulates the explosion's light flashing across the actors and surrounding environment. It is keyframed to match the fireball's brightness curve over time.
 
-**Q12 — B.** Smoke begins rising from the fireball's combustion products as they cool — typically starting several frames after the fireball itself peaks. The long smoke column tail can persist for hundreds of frames while the fireball is already gone.
+**Q12 B.** Smoke begins rising from the fireball's combustion products as they cool typically starting several frames after the fireball itself peaks. The long smoke column tail can persist for hundreds of frames while the fireball is already gone.
 
-**Q13 — B.** The 3D camera solve from the plate is the most critical data. It allows the Blender camera to be set up to exactly match the live-action camera, ensuring the destruction simulation occupies the correct 3D position in the frame.
+**Q13, B.** The 3D camera solve from the plate is the most critical data. It allows the Blender camera to be set up to exactly match the live-action camera, ensuring the destruction simulation occupies the correct 3D position in the frame.
 
-**Q14 — B.** Optical Flares is Video Copilot's professional lens flare plugin for After Effects — providing hundreds of photorealistic preset flares with tracking and occlusion controls.
+**Q14 B.** Optical Flares is Video Copilot's professional lens flare plugin for After Effects providing hundreds of photorealistic preset flares with tracking and occlusion controls.
 
-**Q15 — B.** An Adjustment Layer with a radial gradient mask, Curves brightening, and warm color shift is the standard practical technique. It is keyframed to match the explosion's brightness — brightening as the fireball peaks and fading as it dissipates.
+**Q15 B.** An Adjustment Layer with a radial gradient mask, Curves brightening, and warm color shift is the standard practical technique. It is keyframed to match the explosion's brightness brightening as the fireball peaks and fading as it dissipates.
 
-**Q16 — B.** The standard chromatic aberration technique: duplicate footage three times; scale R copy up (100.5%), scale B copy down (99.5%), leave G as is; combine with Channel Combiner. This produces color fringing at high-contrast edges.
+**Q16, B.** The standard chromatic aberration technique: duplicate footage three times; scale R copy up (100.5%), scale B copy down (99.5%), leave G as is; combine with Channel Combiner. This produces color fringing at high-contrast edges.
 
-**Q17 — B.** Cell Fracture divides the mesh along Voronoi cell boundaries — similar to how real brittle materials break under impact, producing irregular but natural-looking fragment shapes.
+**Q17 B.** Cell Fracture divides the mesh along Voronoi cell boundaries similar to how real brittle materials break under impact, producing irregular but natural-looking fragment shapes.
 
-**Q18 — C.** Without the debris field, the explosion looks like a pure ball of fire that appeared without physical cause. Real explosions throw material outward — the debris field provides the physical evidence that the explosion had weight and force.
+**Q18 C.** Without the debris field, the explosion looks like a pure ball of fire that appeared without physical cause. Real explosions throw material outward the debris field provides the physical evidence that the explosion had weight and force.
 
-**Q19 — B.** The shadow catcher material in Blender renders only the shadows cast by CG objects onto an invisible plane (the ground). This provides a shadow-only render that the compositor places over the live-action plate to give the CG destruction its correct ground shadow.
+**Q19, B.** The shadow catcher material in Blender renders only the shadows cast by CG objects onto an invisible plane (the ground). This provides a shadow-only render that the compositor places over the live-action plate to give the CG destruction its correct ground shadow.
 
-**Q20 — B.** Frame 0 of the fireball is the hottest, brightest moment — nearly white/yellow, maximum opacity, maximum size (or near-maximum). The initial incandescent phase is the most energetic state.
+**Q20 B.** Frame 0 of the fireball is the hottest, brightest moment nearly white/yellow, maximum opacity, maximum size (or near-maximum). The initial incandescent phase is the most energetic state.
 
-**Q21 — C.** Film grain plates are typically overlaid with Overlay or Soft Light blend mode, which blends the grain's texture into the underlying image without dramatically shifting values. Normal blend at low opacity also works but with less physical accuracy.
+**Q21, C.** Film grain plates are typically overlaid with Overlay or Soft Light blend mode, which blends the grain's texture into the underlying image without dramatically shifting values. Normal blend at low opacity also works but with less physical accuracy.
 
-**Q22 — B.** A long-duration smoke column for a battle sequence: long Life (8–15s), low Particles/sec (continuous emission, not burst), negative Gravity (smoke rises), large turbulence scale (large billowing swirls). This produces a continuous smoke emission that persists through the shot.
+**Q22, B.** A long-duration smoke column for a battle sequence: long Life (8–15s), low Particles/sec (continuous emission, not burst), negative Gravity (smoke rises), large turbulence scale (large billowing swirls). This produces a continuous smoke emission that persists through the shot.
 
-**Q23 — B.** Secondary fire is the post-blast burn state — smaller fires burning on debris, fuel sources, and the ground after the initial fireball has dissipated. This layer is what makes an explosion scene feel like a real, lasting physical event.
+**Q23 B.** Secondary fire is the post-blast burn state smaller fires burning on debris, fuel sources, and the ground after the initial fireball has dissipated. This layer is what makes an explosion scene feel like a real, lasting physical event.
 
-**Q24 — B.** The smoke puff appears simultaneously with or just after the flash frame and persists for 3–15 frames as the propellant gases exit the muzzle and dissipate. The flash itself is only 1–3 frames; the smoke carries the visual weight of the event.
+**Q24, B.** The smoke puff appears simultaneously with or just after the flash frame and persists for 3–15 frames as the propellant gases exit the muzzle and dissipate. The flash itself is only 1–3 frames; the smoke carries the visual weight of the event.

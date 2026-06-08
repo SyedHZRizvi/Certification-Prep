@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-07-Lottie-Web-Animation/Cheat
 title: "Module 7 Cheat Sheet: Lottie & Web Animation"
 ---
 
-# ⚡ Module 7 Cheat Sheet — Lottie & Web Animation
+# ⚡ Module 7 Cheat Sheet, Lottie & Web Animation
 
 ## Lottie: Supported vs Not Supported
 
@@ -161,7 +161,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

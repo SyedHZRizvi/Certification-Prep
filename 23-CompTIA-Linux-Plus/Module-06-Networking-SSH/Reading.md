@@ -1,10 +1,10 @@
 # Module 6: Networking, SSH & Firewalls 🌐
 
-> **Why this module matters:** Domain 4 (Troubleshooting) is 28% of the exam — second-biggest — and *most* of those questions live here. A server you can't ping, a service you can't reach, a key-based SSH login that prompts for a password, a firewall rule that's in the wrong zone. Linux+ also tests both the modern (`ip`, `ss`, `nftables`, `firewalld`) AND the legacy (`ifconfig`, `netstat`, `iptables`) tooling. You need both. The exam will deliberately mix them.
+> **Why this module matters:** Domain 4 (Troubleshooting) is 28% of the exam second-biggest and *most* of those questions live here. A server you can't ping, a service you can't reach, a key-based SSH login that prompts for a password, a firewall rule that's in the wrong zone. Linux+ also tests both the modern (`ip`, `ss`, `nftables`, `firewalld`) AND the legacy (`ifconfig`, `netstat`, `iptables`) tooling. You need both. The exam will deliberately mix them.
 
 > **Prerequisites for this module.** You should be comfortable with:
-> - Module 1 (systemd) — NetworkManager and sshd are systemd services
-> - Module 4 (bash) — most network troubleshooting is shell pipelines
+> - Module 1 (systemd), NetworkManager and sshd are systemd services
+> - Module 4 (bash), most network troubleshooting is shell pipelines
 > - Basic TCP/IP concepts: IP addresses, ports, TCP vs UDP, DNS
 
 ---
@@ -17,7 +17,7 @@ Meet Diego. He's onboarding a new developer, Priya. He follows the playbook:
 2. Diego adds Priya's public key to `~/.ssh/authorized_keys` on the bastion host.
 3. Priya runs `ssh priya@bastion.corp` and is *still* prompted for a password.
 
-He spends 25 minutes checking the obvious: firewall (port 22 open), sshd_config (`PubkeyAuthentication yes`), `~/.ssh/authorized_keys` exists with the right key. He even SSHs in himself — works fine. Why is just Priya prompted?
+He spends 25 minutes checking the obvious: firewall (port 22 open), sshd_config (`PubkeyAuthentication yes`), `~/.ssh/authorized_keys` exists with the right key. He even SSHs in himself, works fine. Why is just Priya prompted?
 
 He runs:
 
@@ -31,7 +31,7 @@ drwxrwxr-x 2 priya priya 4096 May 26 09:14 /home/priya/.ssh
 -rw-r--r-- 1 priya priya  395 May 26 09:14 /home/priya/.ssh/authorized_keys
 ```
 
-There it is. `/home/priya/.ssh` is mode `775` (group-writable) and `authorized_keys` is `644` (also group-readable). OpenSSH's `StrictModes yes` (the default) refuses to use a key if `~/.ssh` is group-writable or `authorized_keys` is world-readable — the security model assumes the keyring is private to the owner.
+There it is. `/home/priya/.ssh` is mode `775` (group-writable) and `authorized_keys` is `644` (also group-readable). OpenSSH's `StrictModes yes` (the default) refuses to use a key if `~/.ssh` is group-writable or `authorized_keys` is world-readable, the security model assumes the keyring is private to the owner.
 
 He fixes it:
 
@@ -41,7 +41,7 @@ chmod 600 /home/priya/.ssh/authorized_keys
 chown -R priya:priya /home/priya/.ssh
 ```
 
-`/var/log/auth.log` would have told the story sooner — there was a line:
+`/var/log/auth.log` would have told the story sooner, there was a line:
 ```
 Authentication refused: bad ownership or modes for directory /home/priya/.ssh
 ```
@@ -68,7 +68,7 @@ Linux+ doesn't quiz the OSI model explicitly, but every troubleshooting PBQ foll
 
 ## 🌐 The Modern Network Toolkit (iproute2)
 
-### `ip` — the one command for L2/L3
+### `ip`, the one command for L2/L3
 
 `ip` from the iproute2 suite replaces `ifconfig`, `route`, and `arp`. **MEMORIZE these subcommands.**
 
@@ -98,7 +98,7 @@ ip -6 a                                   # only IPv6
 ip -br a                                  # BRIEF one-line-per-interface
 ```
 
-🚨 **Trap on the exam:** `ifconfig` may not be installed by default on modern distros (it's in `net-tools` package). Modern questions use `ip` exclusively. Old questions might still use `ifconfig` — know both syntaxes.
+🚨 **Trap on the exam:** `ifconfig` may not be installed by default on modern distros (it's in `net-tools` package). Modern questions use `ip` exclusively. Old questions might still use `ifconfig`, know both syntaxes.
 
 | Old (net-tools) | New (iproute2) |
 |-----------------|----------------|
@@ -110,7 +110,7 @@ ip -br a                                  # BRIEF one-line-per-interface
 | `netstat -tulpn` | `ss -tulpn` |
 | `netstat -rn` | `ip route` |
 
-### `ss` — socket statistics (replaces netstat)
+### `ss`, socket statistics (replaces netstat)
 
 ```bash
 ss -tulpn                                 # TCP+UDP, listening, processes, numeric
@@ -155,7 +155,7 @@ search corp.local
 options timeout:2 attempts:3
 ```
 
-🚨 **Trap on the exam:** On systemd-resolved or NetworkManager systems, `/etc/resolv.conf` is often a symlink to `/run/systemd/resolve/stub-resolv.conf` — your edits will be overwritten. Configure DNS via `nmcli` or systemd-resolved configs.
+🚨 **Trap on the exam:** On systemd-resolved or NetworkManager systems, `/etc/resolv.conf` is often a symlink to `/run/systemd/resolve/stub-resolv.conf`, your edits will be overwritten. Configure DNS via `nmcli` or systemd-resolved configs.
 
 ### DNS query tools
 
@@ -224,7 +224,7 @@ Apply: `sudo netplan apply`. Netplan generates configs for the underlying render
 
 ---
 
-## 🔌 OpenSSH — Server (sshd)
+## 🔌 OpenSSH, Server (sshd)
 
 ### `/etc/ssh/sshd_config` essentials
 
@@ -253,7 +253,7 @@ UsePAM yes                                 # delegate to /etc/pam.d/sshd
 
 After editing: `sshd -t` (test config syntax) then `systemctl reload sshd`.
 
-🚨 **Trap on the exam:** `sshd -t` returns silently on success. ALWAYS test before reload — a typo can lock you out.
+🚨 **Trap on the exam:** `sshd -t` returns silently on success. ALWAYS test before reload, a typo can lock you out.
 
 ### Per-user / per-host overrides
 
@@ -281,7 +281,7 @@ Match User buildbot
 
 ---
 
-## 🔑 OpenSSH — Client
+## 🔑 OpenSSH, Client
 
 ### Key generation
 
@@ -347,7 +347,7 @@ ssh-add -l                                # list cached keys
 ssh -A bastion                            # forward agent (don't put keys on bastion)
 ```
 
-🚨 **Agent forwarding is risky** — root on the bastion can use your agent socket. Prefer `ProxyJump` over `-A` for jump-host workflows.
+🚨 **Agent forwarding is risky**, root on the bastion can use your agent socket. Prefer `ProxyJump` over `-A` for jump-host workflows.
 
 ---
 
@@ -446,7 +446,7 @@ firewall-cmd --zone=public --add-rich-rule='rule family="ipv4" source address="1
 
 🚨 **Trap on the exam:** Without `--permanent`, changes are RUNTIME ONLY and disappear after `firewall-cmd --reload` or service restart. The `--permanent` flag writes to disk; `--reload` then applies them.
 
-### `ufw` — Ubuntu's friendly firewall
+### `ufw`, Ubuntu's friendly firewall
 
 Ubuntu's frontend (on top of iptables/nftables):
 
@@ -513,7 +513,7 @@ wget https://example.com/file.tar.gz      # download
 
    - **Server-side firewall** (firewalld/iptables on the API host) blocking 8443.
    - **Network firewall** between you and the API blocking 8443.
-   - **Server-side service not listening on the expected port** — verify on the API host: `ss -lnp sport :8443`.
+   - **Server-side service not listening on the expected port**, verify on the API host: `ss -lnp sport :8443`.
 4. **TLS handshake:** `openssl s_client -connect 10.0.5.20:8443 -servername api.internal.corp`. If it errors:
 
    - Cert mismatch / expired / untrusted CA.
@@ -528,14 +528,14 @@ The PBQ might show the output of step 2 (ping fails) and ask "what's the next co
 
 | Misconception | Reality |
 |---------------|---------|
-| "`ifconfig` is the standard" | NO — it's legacy. Modern systems use `ip` from iproute2. ifconfig may not even be installed. |
-| "`netstat -an` is the standard" | NO — replaced by `ss`. Same flags work (`-tulpn`). |
+| "`ifconfig` is the standard" | NO, it's legacy. Modern systems use `ip` from iproute2. ifconfig may not even be installed. |
+| "`netstat -an` is the standard" | NO, replaced by `ss`. Same flags work (`-tulpn`). |
 | "Editing /etc/resolv.conf persists" | On systemd-resolved/NetworkManager systems, the file is regenerated. Use nmcli or systemd-resolved configs. |
-| "firewalld changes are permanent by default" | NO — without `--permanent` they're runtime only. |
-| "iptables rules persist across reboots" | NO — must be saved to `/etc/iptables/rules.v4` (Debian) or via `iptables-services` (RHEL). |
-| "Public-key auth requires copying private key to server" | NO — you copy the PUBLIC key (`*.pub`). Private key stays on client. |
+| "firewalld changes are permanent by default" | NO, without `--permanent` they're runtime only. |
+| "iptables rules persist across reboots" | NO, must be saved to `/etc/iptables/rules.v4` (Debian) or via `iptables-services` (RHEL). |
+| "Public-key auth requires copying private key to server" | NO, you copy the PUBLIC key (`*.pub`). Private key stays on client. |
 | "SSH keys grant root access" | The key is added to a specific user's `authorized_keys`. Root access depends on what *that user* can do. |
-| "`-L` and `-R` are interchangeable" | NO — `-L` listens locally; `-R` listens remotely. Memorize the direction. |
+| "`-L` and `-R` are interchangeable" | NO, `-L` listens locally; `-R` listens remotely. Memorize the direction. |
 | "Default sshd port is 22 and can't be changed" | Can be changed in sshd_config. SELinux on RHEL may need `semanage port -a -t ssh_port_t -p tcp 2222`. |
 | "ping uses TCP" | ping uses ICMP. Some networks block ICMP. Use `nc -vz` for TCP-port reachability. |
 
@@ -555,7 +555,7 @@ The PBQ might show the output of step 2 (ping fails) and ask "what's the next co
 | **`/etc/nsswitch.conf`** | Name resolution order (files, dns, ldap, ...) |
 | **systemd-resolved** | Modern stub resolver |
 | **OpenSSH sshd** | The SSH server daemon |
-| **`StrictModes`** | sshd default — rejects key auth if perms are loose |
+| **`StrictModes`** | sshd default, rejects key auth if perms are loose |
 | **`authorized_keys`** | List of public keys allowed to log in as this user |
 | **`-L` / `-R` / `-D`** | SSH local / remote / dynamic (SOCKS) port forwarding |
 | **`ProxyJump` / `-J`** | Chain through a bastion safely |
@@ -584,7 +584,7 @@ The PBQ might show the output of step 2 (ping fails) and ask "what's the next co
 
 ---
 
-## 📊 Case Study — The 2021 Facebook BGP Outage
+## 📊 Case Study, The 2021 Facebook BGP Outage
 
 **Situation.** On 4 October 2021 at 15:39 UTC, Facebook (then including Instagram, WhatsApp, and Oculus) vanished from the global Internet for ~7 hours. A scheduled BGP (Border Gateway Protocol) audit on Facebook's backbone routers ran a routine command that withdrew the BGP routes for Facebook's authoritative DNS prefixes. Without DNS, all of Facebook's domains (facebook.com, fbcdn.net, whatsapp.net) became unresolvable. Worse, the BGP withdrawal also took out the routes used by Facebook's internal tools, the badge-reader systems that opened data-center doors, and the SSH paths engineers used to remotely fix things.
 
@@ -595,11 +595,11 @@ The PBQ might show the output of step 2 (ping fails) and ask "what's the next co
 **Lesson for the exam / for practitioners.** XK0-005 doesn't test BGP, but it DOES test the underlying principles:
 
 1. **Always preserve out-of-band access.** If your firewall lockout takes out SSH, you need a console route. (`Match Address 192.168.99.0/24 PermitRootLogin yes` for a single management subnet is one pattern.)
-2. **DNS is critical infrastructure — protect it.** Multiple resolvers, multiple subnets, cached zones, hosts-file fallbacks for *your own* infra.
+2. **DNS is critical infrastructure, protect it.** Multiple resolvers, multiple subnets, cached zones, hosts-file fallbacks for *your own* infra.
 3. **Always test firewall rules with a path that doesn't lose you access.** `firewall-cmd --reload` after `--permanent` change can be the unrecoverable moment. Use `firewall-cmd --runtime-to-permanent` to elevate runtime-tested rules.
-4. **Plan for the recovery scenario** — what's your console access? Is your bastion in the affected zone?
+4. **Plan for the recovery scenario**, what's your console access? Is your bastion in the affected zone?
 
-These all surface in PBQs as "you locked yourself out — what's the right way?" scenarios.
+These all surface in PBQs as "you locked yourself out, what's the right way?" scenarios.
 
 **Discussion (Socratic).**
 - **Q1:** Design a 3-tier firewall change-management process that would have prevented the Facebook-scale outage analog at a smaller company (a single Linux host with `firewall-cmd`). What's the cost of the safety net vs the cost of locking yourself out?
@@ -616,16 +616,16 @@ You now know:
 - 🧱 **iproute2** (`ip`, `ss`) and how it replaces ifconfig/netstat/route/arp
 - 🗺️ **DNS resolution** chain (hosts → resolv.conf → nsswitch) and tools (dig, host, getent)
 - 🎛️ **NetworkManager / nmcli** for persistent IP config; **netplan** on Ubuntu Server
-- 🔌 **OpenSSH sshd** — config hardening (PermitRootLogin no, PasswordAuthentication no)
-- 🔑 **OpenSSH client** — keygen, copy-id, `~/.ssh/config`, port forwarding (`-L`, `-R`, `-D`, `-J`)
+- 🔌 **OpenSSH sshd**, config hardening (PermitRootLogin no, PasswordAuthentication no)
+- 🔑 **OpenSSH client**, keygen, copy-id, `~/.ssh/config`, port forwarding (`-L`, `-R`, `-D`, `-J`)
 - 🔥 **The four firewall worlds**: iptables, nftables, firewalld (zones, --permanent), ufw
 - 🛠️ The full **troubleshooting toolkit** (ping, traceroute, mtr, nc, nmap, tcpdump, curl)
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 7 — Kernel Modules, Devices & LVM](../Module-07-Kernel-Modules/Reading.md)
+4. ➡️ Move on: [Module 7, Kernel Modules, Devices & LVM](../Module-07-Kernel-Modules/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 7](../Module-07-Kernel-Modules/Reading.md) covers the kernel-level NIC drivers; [Module 8](../Module-08-Security/Reading.md) deepens SSH hardening, fail2ban, and SELinux's effect on networking.
@@ -636,15 +636,15 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 [iproute2 home page](https://wiki.linuxfoundation.org/networking/iproute2) — the canonical project page.
-- 📄 [OpenSSH project — sshd_config(5)](https://man.openbsd.org/sshd_config.5) — the man page is the only authoritative reference.
-- 📄 [nftables wiki](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page) — the upstream documentation.
-- 📄 [firewalld documentation](https://firewalld.org/documentation/) — official zones/services/rules reference.
+- 📄 [iproute2 home page](https://wiki.linuxfoundation.org/networking/iproute2), the canonical project page.
+- 📄 [OpenSSH project sshd_config(5)](https://man.openbsd.org/sshd_config.5) the man page is the only authoritative reference.
+- 📄 [nftables wiki](https://wiki.nftables.org/wiki-nftables/index.php/Main_Page), the upstream documentation.
+- 📄 [firewalld documentation](https://firewalld.org/documentation/), official zones/services/rules reference.
 - 📄 [systemd-resolved man page (resolved.conf(5))](https://www.freedesktop.org/software/systemd/man/resolved.conf.html).
 - 📄 [Cloudflare's BGP/DNS post-mortem of the Facebook outage (5 Oct 2021)](https://blog.cloudflare.com/october-2021-facebook-outage/).
 
 **Practitioner / exam:**
-- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023) — Chapters 13, 15, 18.
-- 📖 W. Richard Stevens & Stephen Rago, *Advanced Programming in the UNIX Environment* (Addison-Wesley, 3rd ed., 2013) — for the truly curious about sockets.
-- 📖 Michael W. Lucas, *SSH Mastery* (2nd ed., 2018) — the most readable SSH book.
-- 📖 Steve Suehring, *Linux Firewalls* (No Starch Press, 4th ed., 2015) — covers iptables to modern nftables transition.
+- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023), Chapters 13, 15, 18.
+- 📖 W. Richard Stevens & Stephen Rago, *Advanced Programming in the UNIX Environment* (Addison-Wesley, 3rd ed., 2013), for the truly curious about sockets.
+- 📖 Michael W. Lucas, *SSH Mastery* (2nd ed., 2018), the most readable SSH book.
+- 📖 Steve Suehring, *Linux Firewalls* (No Starch Press, 4th ed., 2015), covers iptables to modern nftables transition.

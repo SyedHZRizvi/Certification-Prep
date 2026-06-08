@@ -18,7 +18,7 @@
 
 # 🎥 Module 3 Videos: MFA & Passwordless
 
-> **How to use:** Click any card to open a YouTube search — pick the top current result. Watch in order; follow along by registering FIDO2 + Authenticator on your dev tenant.
+> **How to use:** Click any card to open a YouTube search, pick the top current result. Watch in order; follow along by registering FIDO2 + Authenticator on your dev tenant.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Authentication Methods Policy — Migration From Legacy</p>
+      <p class="vg-title">Authentication Methods Policy, Migration From Legacy</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 20 min · Why the modern policy + migration steps</span>
     </div>
@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">FIDO2 Security Keys — Setup End-to-End</p>
+      <p class="vg-title">FIDO2 Security Keys, Setup End-to-End</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · Policy → register → sign in</span>
     </div>
@@ -45,8 +45,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Temporary Access Pass (TAP) — Bootstrap Passwordless</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-title">Temporary Access Pass (TAP), Bootstrap Passwordless</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 12 min · Why TAP solves new-hire flows</span>
     </div>
   </a>
@@ -54,7 +54,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Number Matching — Why Microsoft Mandated It</p>
+      <p class="vg-title">Number Matching, Why Microsoft Mandated It</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 15 min · Push-bombing defense</span>
     </div>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Windows Hello for Business — Cloud Kerberos Trust</p>
+      <p class="vg-title">Windows Hello for Business, Cloud Kerberos Trust</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · Modern hybrid WHFB</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Passwordless Rollout Plan — Real-World Steps</p>
+      <p class="vg-title">Passwordless Rollout Plan, Real-World Steps</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 13 min · Pilot → expand → enforce</span>
     </div>
@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Security Defaults vs Conditional Access — Which When</p>
+      <p class="vg-title">Security Defaults vs Conditional Access, Which When</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 14 min · Decision matrix</span>
     </div>
@@ -134,7 +134,7 @@
 | **John Savill** | Definitive walkthroughs of every method. |
 | **Andy Malone MVP** | M365 admin + identity, exam-focused. |
 | **Microsoft Mechanics** | Official launches; very current. |
-| **Dean Cefola — Azure Academy** | Practical labs. |
+| **Dean Cefola, Azure Academy** | Practical labs. |
 | **Concepts Work** | New SC-300 channel with focused content. |
 
 ---
@@ -145,7 +145,7 @@ Answer these in your notebook (without re-watching):
 
 1. List the 3 phishing-resistant authentication methods.
 2. Why is "Authenticator push with number matching" MFA but NOT passwordless?
-3. Walk through the TAP issuance flow — when does an admin choose 60 min vs 8 hours vs 7 days?
+3. Walk through the TAP issuance flow, when does an admin choose 60 min vs 8 hours vs 7 days?
 4. What's the right WHFB deployment model in 2026 for a Hybrid Entra Joined fleet?
 5. Why must you BLOCK LEGACY AUTH before enforcing MFA?
 

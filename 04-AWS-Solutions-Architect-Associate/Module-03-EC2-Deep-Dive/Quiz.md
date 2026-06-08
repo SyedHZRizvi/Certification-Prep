@@ -228,7 +228,7 @@ Fault-tolerant batch with checkpointing = textbook Spot scenario; up to 90% disc
 R = memory optimized. Best for in-memory caches, large DBs, real-time analytics.
 
 ### Q4: **B. Compute Savings Plan**
-Compute SP applies to EC2 (any family/region/size), Fargate, AND Lambda — most flexible.
+Compute SP applies to EC2 (any family/region/size), Fargate, AND Lambda, most flexible.
 
 ### Q5: **B. ALB**
 ALB does L7 routing including path-based, host-based, header-based.
@@ -237,10 +237,10 @@ ALB does L7 routing including path-based, host-based, header-based.
 NLB provides static IPs per AZ and operates at L4 with ultra-low latency.
 
 ### Q7: **C. Partition**
-Partition spreads instances across distinct racks (partitions) — ideal for big-data clusters like Cassandra, HDFS, Kafka.
+Partition spreads instances across distinct racks (partitions), ideal for big-data clusters like Cassandra, HDFS, Kafka.
 
 ### Q8: **C. EFS**
-EFS is regional NFS — multi-AZ, many instances simultaneously read/write. EBS is single-AZ.
+EFS is regional NFS, multi-AZ, many instances simultaneously read/write. EBS is single-AZ.
 
 ### Q9: **B. FSx for Windows File Server**
 SMB + AD integration + Windows-native = FSx for Windows. EFS is NFS for Linux.
@@ -273,7 +273,7 @@ Hibernate writes RAM to the EBS root volume and powers off; restarting resumes t
 Instance store is on-host ephemeral storage and is wiped on stop/terminate/host failure. EBS persists.
 
 ### Q19: **A. SG on EC2 allowing port 80 from LB's SG**
-Security groups can reference other SGs as source — cleanest least-privilege pattern.
+Security groups can reference other SGs as source, cleanest least-privilege pattern.
 
 ### Q20: **B. Stateless, subnet-level, allow + deny**
 NACLs are subnet-level, numbered, stateless (you must allow both directions explicitly). SGs are stateful and instance-level.
@@ -288,7 +288,7 @@ Capacity Reservations guarantee capacity in an AZ but don't reduce price. Pair w
 Cluster packs instances on the same rack in one AZ for lowest inter-node latency. Spread is the opposite.
 
 ### Q24: **A. ALB Cognito/OIDC user authentication**
-ALB can authenticate users via Cognito User Pools or any OIDC IdP before forwarding requests — no app code change.
+ALB can authenticate users via Cognito User Pools or any OIDC IdP before forwarding requests, no app code change.
 
 ### Q25: **C. Scheduled scaling**
 Known time-based patterns = scheduled scaling. Predictive is for less-known patterns it forecasts.

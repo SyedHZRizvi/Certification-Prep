@@ -82,7 +82,7 @@ D. 1 admin + 0 documentation
 
 ### Q10. A ticket marked P1 in most SMB ticketing systems means: *(Apply)*
 A. Lowest priority
-B. Highest priority — business-critical / site-down
+B. Highest priority, business-critical / site-down
 C. Just a request
 D. Closed
 
@@ -114,7 +114,7 @@ D. Marketing slogan
 
 ### Q14. Untested backups are: *(Understand)*
 A. Always good
-B. Unknown-good — they may or may not restore successfully when you actually need them
+B. Unknown-good, they may or may not restore successfully when you actually need them
 C. Worth paying ransom
 D. Better than tested ones
 
@@ -123,7 +123,7 @@ D. Better than tested ones
 ### Q15. The MOST appropriate test of a DR plan that's never been tested: *(Apply)*
 A. Wait for a real disaster
 B. Start with a tabletop exercise, then walkthrough, then partial restore, then full drill
-C. Skip testing — it's covered in CAB
+C. Skip testing, it's covered in CAB
 D. Email the team
 
 ---
@@ -136,7 +136,7 @@ D. The price
 
 ---
 
-### Q17. A 4-disk RAID 5 array of 8 TB drives — what's the usable capacity? *(Apply)*
+### Q17. A 4-disk RAID 5 array of 8 TB drives, what's the usable capacity? *(Apply)*
 A. 8 TB
 B. 16 TB
 C. 24 TB
@@ -152,7 +152,7 @@ D. They moved to Macs
 
 ---
 
-### Q19. Hot / Warm / Cold site RTOs (minutes / hours / days respectively) compared with cost (high/mid/low) — the BEST match for a SMB with a 4-hour RTO and modest budget: *(Apply)*
+### Q19. Hot / Warm / Cold site RTOs (minutes / hours / days respectively) compared with cost (high/mid/low), the BEST match for a SMB with a 4-hour RTO and modest budget: *(Apply)*
 A. Hot site
 B. Warm site
 C. Cold site
@@ -162,15 +162,15 @@ D. No DR
 
 ### Q20. BCP differs from DR in that BCP: *(Understand)*
 A. Is the same as DR
-B. Covers the whole business (people, premises, processes) — DR is the IT-specific subset
+B. Covers the whole business (people, premises, processes), DR is the IT-specific subset
 C. Is only for hospitals
 D. Doesn't include IT
 
 ---
 
 ### Q21. A ticket that "Resolved" but the user reports the issue still exists should be: *(Apply)*
-A. Closed anyway — tech knows best
-B. Reopened — investigate further; do not close until user confirms
+A. Closed anyway, tech knows best
+B. Reopened, investigate further; do not close until user confirms
 C. Deleted
 D. Marked spam
 
@@ -178,7 +178,7 @@ D. Marked spam
 
 ### Q22. The biggest lesson from the Maersk NotPetya case for your backup strategy: *(Evaluate)*
 A. Use only Linux
-B. Backups must survive the disaster they're meant to recover from — separate auth domain, immutable storage, AD-forest backup independence
+B. Backups must survive the disaster they're meant to recover from, separate auth domain, immutable storage, AD-forest backup independence
 C. Pay all ransoms
 D. Never run Windows
 
@@ -198,7 +198,7 @@ D. Months
 A. Just nightly tape backups
 B. **3-2-1-1-0 strategy**: local backup (Veeam) + cloud immutable (S3 Object Lock) + warm DR site OR cloud DR (Azure/AWS) + quarterly partial restore tests + annual full drill + tabletop every 6 months
 C. RAID 5 array only
-D. No DR — buy insurance
+D. No DR, buy insurance
 
 ---
 
@@ -220,7 +220,7 @@ Hot is the most expensive but recovers in minutes. Warm needs hours.
 The most-tested distinction. Repeat: RAID ≠ backup.
 
 ### Q6: **B. Changes since last backup of any type (small, fast)**
-Restore requires last full + every incremental — slow restore, fast backup.
+Restore requires last full + every incremental, slow restore, fast backup.
 
 ### Q7: **A. Changes since last full backup**
 Each diff is bigger than the previous (grows daily). Restore = last full + latest diff.
@@ -232,7 +232,7 @@ The whole point of immutability. Don't pay; restore from clean copy.
 The modern best-practice extension. Immutability for ransomware; testing for confidence.
 
 ### Q10: **B. Business-critical / site-down**
-P1 = highest. P5 = lowest. (Some systems reverse — always check the org's standard.)
+P1 = highest. P5 = lowest. (Some systems reverse, always check the org's standard.)
 
 ### Q11: **B. Step-by-step for a specific task**
 Runbook = task-specific. SOP = process-level. KB article = solution-specific.
@@ -264,7 +264,7 @@ The famous Maersk story. Pure luck. Modern DR plans engineer that luck deliberat
 ### Q20: **B. BCP covers the whole business; DR is IT-specific subset**
 BCP includes manual workarounds when IT is down. DR is the IT-restoration piece.
 
-### Q21: **B. Reopen — user confirms before close**
+### Q21: **B. Reopen, user confirms before close**
 Always validate with the user. Closing prematurely is a SLA violation in most systems.
 
 ### Q22: **B. Backups must survive the disaster they protect against**
@@ -291,7 +291,7 @@ The complete modern architecture. Each layer addresses one of the three requirem
 
 - 3-2-1 + 3-2-1-1-0 rules
 - RPO / RTO / MTBF / MTTR
-- Full / Incremental / Differential — speed trade-offs
+- Full / Incremental / Differential, speed trade-offs
 - Hot / Warm / Cold sites + RTOs
 - BCP vs DR
 - Backout plan = always required for changes
@@ -307,8 +307,8 @@ The complete modern architecture. Each layer addresses one of the three requirem
 
 Then take the practice exams:
 
-- [Practice Exam 1 — Core 1](../Practice-Exams/Practice-Exam-1.md)
-- [Practice Exam 2 — Core 2](../Practice-Exams/Practice-Exam-2.md)
-- [Final Mock Exam — 90 Q / 90 min](../Practice-Exams/Final-Mock-Exam.md)
+- [Practice Exam 1, Core 1](../Practice-Exams/Practice-Exam-1.md)
+- [Practice Exam 2, Core 2](../Practice-Exams/Practice-Exam-2.md)
+- [Final Mock Exam, 90 Q / 90 min](../Practice-Exams/Final-Mock-Exam.md)
 
 Good luck with the real exams! 🛠️

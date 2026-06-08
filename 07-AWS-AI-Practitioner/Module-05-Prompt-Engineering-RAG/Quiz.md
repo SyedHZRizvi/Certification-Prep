@@ -121,7 +121,7 @@ D. Train a new model
 
 ### Q15. A "ReAct" prompt pattern alternates: *(Understand)*
 A. Read and Act
-B. Reason, Act, Observe — repeatedly until a final answer
+B. Reason, Act, Observe, repeatedly until a final answer
 C. Retrieve and Acknowledge
 D. Real-time and Async
 
@@ -230,7 +230,7 @@ RAG grounds the model in your real, current data → less hallucination and acce
 That's the query phase of RAG.
 
 ### Q5: **A. Knowledge Bases for Amazon Bedrock**
-Managed RAG — handles chunking, embedding, retrieval, and integrates with Bedrock LLMs.
+Managed RAG, handles chunking, embedding, retrieval, and integrates with Bedrock LLMs.
 
 ### Q6: **D. Amazon Redshift**
 Bedrock KB vector stores: OpenSearch Serverless, Aurora pgvector, Neptune, DocumentDB, MemoryDB, Pinecone, Redis Enterprise, MongoDB Atlas. Redshift is not on the list.
@@ -239,7 +239,7 @@ Bedrock KB vector stores: OpenSearch Serverless, Aurora pgvector, Neptune, Docum
 Default and most-recommended Bedrock-native vector store.
 
 ### Q8: **B. Malicious instruction overriding the system prompt**
-The "SQL injection of LLMs" — OWASP #1 LLM risk.
+The "SQL injection of LLMs", OWASP #1 LLM risk.
 
 ### Q9: **B. Hidden in content the LLM reads (PDF, webpage)**
 Indirect = via ingested data. More dangerous in RAG/agent scenarios than direct user injection.
@@ -259,7 +259,7 @@ Combines dense (vector) + sparse (keyword/BM25) for the best of both worlds.
 ### Q14: **B. Re-score top-K to surface better top-N**
 Rerankers improve precision on the most relevant chunks before the LLM sees them.
 
-### Q15: **B. Reason, Act, Observe — repeated**
+### Q15: **B. Reason, Act, Observe, repeated**
 ReAct = Reason + Act loop. The architectural pattern behind Bedrock Agents.
 
 ### Q16: **B. Cheaper, instantly updatable, citable, no weight changes**
@@ -284,7 +284,7 @@ Memorize this cost-and-invasiveness ladder. Module 6 expands on it.
 "DAN" and similar prompts try to get the model to ignore its alignment/safety training.
 
 ### Q23: **B. Guardrails + input/output filtering + least-privilege**
-A defense-in-depth approach — never rely on a single layer.
+A defense-in-depth approach, never rely on a single layer.
 
 ### Q24: **B. Managed ingestion, chunking, embedding, retrieval**
 You bring data sources; Bedrock handles the rest.
@@ -302,7 +302,7 @@ Exact identifiers are the classic semantic-search blind spot. Keyword + vector t
 - 25–26/26 → 🏆 RAG + prompting are reflex.
 - 22–24/26 → ✅ Strong. Note your wrong ones and continue.
 - 18–21/26 → ⚠️ Re-read the RAG + prompt-injection sections.
-- <18 → 🔁 Re-do the whole module — this is the highest-leverage one for the exam.
+- <18 → 🔁 Re-do the whole module, this is the highest-leverage one for the exam.
 
 ---
 

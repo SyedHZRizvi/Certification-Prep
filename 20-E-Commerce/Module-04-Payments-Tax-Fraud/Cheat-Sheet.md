@@ -80,7 +80,7 @@ Exemptions:
 
 ---
 
-## 🇺🇸 US Sales Tax — Post-Wayfair (2018)
+## 🇺🇸 US Sales Tax, Post-Wayfair (2018)
 
 ```
 Wayfair v. South Dakota (2018) = economic nexus
@@ -147,15 +147,15 @@ Eliminated July 2021: €22 low-value exemption
 
 ```
 Chargeback ratios:
-< 0.5% — Healthy
-0.5-1.0% — Watch
-1.0%+ — Visa CMP enrollment
-1.5%+ — Excessive CMP; processor termination risk
+< 0.5%, Healthy
+0.5-1.0%, Watch
+1.0%+, Visa CMP enrollment
+1.5%+, Excessive CMP; processor termination risk
 
 Types:
 - Card-not-present (stolen card)
 - Account takeover (account hijack)
-- Friendly fraud (customer disputes legit purchase) — 40% of all
+- Friendly fraud (customer disputes legit purchase), 40% of all
 - Triangulation (fake reseller)
 - Refund fraud
 - Loyalty point fraud
@@ -202,13 +202,13 @@ Travel ~0.2%  Apparel ~0.5%  Electronics ~1.5%
 
 ## 🗓️ Key Dates
 
-- **2010** — Stripe founded
-- **2018** — Adobe acquired Magento ($1.68B); Wayfair decided
-- **2019** — PSD2 SCA effective (EU)
-- **July 2021** — EU IOSS / OSS launched; €22 exemption eliminated
-- **2022** — PCI-DSS v4.0 published; Klarna 85% valuation crash
-- **2024** — UK FCA BNPL regulation announced
-- **March 2025** — PCI-DSS v4.0 mandatory
+- **2010**, Stripe founded
+- **2018**, Adobe acquired Magento ($1.68B); Wayfair decided
+- **2019**, PSD2 SCA effective (EU)
+- **July 2021**, EU IOSS / OSS launched; €22 exemption eliminated
+- **2022**, PCI-DSS v4.0 published; Klarna 85% valuation crash
+- **2024**, UK FCA BNPL regulation announced
+- **March 2025**, PCI-DSS v4.0 mandatory
 
 ---
 

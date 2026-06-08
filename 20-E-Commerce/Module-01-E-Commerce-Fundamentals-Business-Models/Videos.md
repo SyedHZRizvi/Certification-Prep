@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Customer Centricity & CLV — Wharton</p>
+      <p class="vg-title">Customer Centricity & CLV, Wharton</p>
       <p class="vg-creator">Peter Fader (Wharton)</p>
       <span class="vg-duration">⏱ 22 min · The foundational customer-centricity framework</span>
     </div>
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">The Bezos 1997 Letter & Day 1 Doctrine</p>
-      <p class="vg-creator">Various — Amazon-history channels</p>
+      <p class="vg-creator">Various, Amazon-history channels</p>
       <span class="vg-duration">⏱ 18 min · The operating doctrine still in force at Amazon</span>
     </div>
   </a>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DTC Unit Economics — CAC, LTV, Payback</p>
+      <p class="vg-title">DTC Unit Economics, CAC, LTV, Payback</p>
       <p class="vg-creator">Common Thread Collective (Taylor Holiday)</p>
       <span class="vg-duration">⏱ 22 min · CAC, contribution margin, payback walked through</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Shopify's Origin Story — From Snowdevil to Platform</p>
+      <p class="vg-title">Shopify's Origin Story, From Snowdevil to Platform</p>
       <p class="vg-creator">Tobi Lütke interviews</p>
       <span class="vg-duration">⏱ 18 min · How Shopify pivoted from snowboards to platform</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Jobs to Be Done — Christensen's Milkshake Story</p>
+      <p class="vg-title">Jobs to Be Done, Christensen's Milkshake Story</p>
       <p class="vg-creator">Clayton Christensen (HBS)</p>
       <span class="vg-duration">⏱ 14 min · The JTBD framework's most famous example</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The Long Tail — Chris Anderson TED</p>
+      <p class="vg-title">The Long Tail, Chris Anderson TED</p>
       <p class="vg-creator">Chris Anderson (Wired)</p>
       <span class="vg-duration">⏱ 16 min · The niche-demand framework</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">DTC at $1M to $10M — What Actually Works</p>
+      <p class="vg-title">DTC at $1M to $10M, What Actually Works</p>
       <p class="vg-creator">Andrew Faris (AJF Growth)</p>
       <span class="vg-duration">⏱ 24 min · Operator-grade DTC strategy</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Working Backwards — Amazon's Operating Mechanisms</p>
+      <p class="vg-title">Working Backwards, Amazon's Operating Mechanisms</p>
       <p class="vg-creator">Colin Bryar & Bill Carr</p>
       <span class="vg-duration">⏱ 26 min · The PR/FAQ + 6-pager system</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">DTC Founder's Notes — Beardbrand</p>
+      <p class="vg-title">DTC Founder's Notes, Beardbrand</p>
       <p class="vg-creator">Eric Bandholz</p>
       <span class="vg-duration">⏱ 18 min · Indie-founder DTC perspective at $20M</span>
     </div>
@@ -146,7 +146,7 @@
 Answer these in your notebook (without re-watching):
 
 1. What are the seven e-commerce business models?
-2. Define AOV, CAC, contribution margin, CLV, and payback period — formulas only.
+2. Define AOV, CAC, contribution margin, CLV, and payback period, formulas only.
 3. What's the healthy CLV:CAC ratio and why does going above 5:1 indicate under-investment?
 4. State Bezos's six 1997 principles in your own words.
 5. Why does Anderson's Long Tail require PIM discipline to operationalize?

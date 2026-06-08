@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AWS AI Practitioner (AIF-C01 Style) — Halftime
+# 🧪 Practice Exam 1 AWS AI Practitioner (AIF-C01 Style) Halftime
 
 > **Conditions:** Set a 60-minute timer. 32 questions. Treat it like the real thing.
 > **Pass mark:** 22/32 (70%)
@@ -189,9 +189,9 @@ C. AWS Glue
 D. Amazon Athena
 
 ### 31. A bank using Bedrock asks: "Does AWS train its base foundation models on our prompts and outputs?" The CORRECT answer is:
-A. Yes — that's how Bedrock works
+A. Yes, that's how Bedrock works
 B. Only if you enable PartyRock
-C. No — by default customer prompts/outputs are NOT used to train base FMs and stay in the customer's account/Region
+C. No, by default customer prompts/outputs are NOT used to train base FMs and stay in the customer's account/Region
 D. Only in the EU region
 
 ### 32. A team wants steady, predictable, high-volume Bedrock capacity at a known cost. They should choose:
@@ -225,7 +225,7 @@ D. Bedrock Provisioned Throughput
 
 **Why the other options are wrong.**
 - A: Reverses ML and AI (ML can't contain AI; AI is broader).
-- B: Inverts the hierarchy entirely — Generative AI is the *smallest* nested doll, not the largest.
+- B: Inverts the hierarchy entirely, Generative AI is the *smallest* nested doll, not the largest.
 - C: Drops Generative AI from the chain; it's a subset of DL, not an unrelated category.
 
 **Exam-takeaway.** Memorize the four-level hierarchy and the direction of the ⊃ symbol.
@@ -237,7 +237,7 @@ D. Bedrock Provisioned Throughput
 **Why D is correct.** Labels are present ("fraud / not fraud"), the target is categorical, so this is supervised classification.
 
 **Why the other options are wrong.**
-- A: Unsupervised has no labels — but labels exist here.
+- A: Unsupervised has no labels, but labels exist here.
 - B: Generative AI creates new content; it doesn't classify discrete categories from labeled examples.
 - C: Reinforcement learning uses rewards/actions, not labels.
 
@@ -275,7 +275,7 @@ D. Bedrock Provisioned Throughput
 **Why B is correct.** With 99% legitimate transactions, a model that predicts "not fraud" every time scores 99% accuracy but catches zero fraud. Recall on the positive (fraud) class is what reveals this failure.
 
 **Why the other options are wrong.**
-- A: Accuracy is the *trap* metric on imbalanced data — it looks great while the model is useless.
+- A: Accuracy is the *trap* metric on imbalanced data, it looks great while the model is useless.
 - C, D: RMSE and R² are regression metrics; this is a classification problem.
 
 **Exam-takeaway.** Imbalanced classification → recall (and/or F1), not accuracy.
@@ -288,7 +288,7 @@ D. Bedrock Provisioned Throughput
 
 **Why the other options are wrong.**
 - B: Training Jobs are code-driven (Python + SDK).
-- C: Pipelines orchestrate ML workflows — still code.
+- C: Pipelines orchestrate ML workflows, still code.
 - D: AWS Glue is data ETL, not model training.
 
 **Exam-takeaway.** "No-code business user" → Canvas.
@@ -314,7 +314,7 @@ D. Bedrock Provisioned Throughput
 
 **Why the other options are wrong.**
 - A: Canvas can do forecasting but Forecast is the dedicated managed service the exam favors.
-- B: Rekognition is vision — wrong modality.
+- B: Rekognition is vision, wrong modality.
 - D: Personalize is for recommendations.
 
 **Exam-takeaway.** "Forecasts of SKUs / demand / time-series" → Forecast.
@@ -326,7 +326,7 @@ D. Bedrock Provisioned Throughput
 **Why B is correct.** Textract is the AWS-managed OCR service with built-in form and table extraction. Specifically designed for document workflows.
 
 **Why the other options are wrong.**
-- A: Rekognition is general vision (objects, faces, scenes) — not document-aware.
+- A: Rekognition is general vision (objects, faces, scenes), not document-aware.
 - C: Comprehend is NLP on free-form text.
 - D: Glue is ETL.
 
@@ -402,7 +402,7 @@ D. Bedrock Provisioned Throughput
 **Why C is correct.** A hallucination is when the LLM generates fabricated information that *sounds* right but is factually incorrect.
 
 **Why the other options are wrong.**
-- A, B, D: These are different categories of failure (crash, IAM error, latency) — not hallucinations.
+- A, B, D: These are different categories of failure (crash, IAM error, latency), not hallucinations.
 
 **Exam-takeaway.** Hallucination = confidently wrong, plausible-sounding output.
 
@@ -423,7 +423,7 @@ D. Bedrock Provisioned Throughput
 
 **Q17. Answer: C.** Numerical vectors where similar meanings are close in vector space.
 
-**Why C is correct.** Embeddings encode meaning geometrically — semantically similar text → small cosine distance.
+**Why C is correct.** Embeddings encode meaning geometrically, semantically similar text → small cosine distance.
 
 **Why the other options are wrong.**
 - A: Embeddings are vectors, not JSON strings.
@@ -447,7 +447,7 @@ D. Bedrock Provisioned Throughput
 
 **Q19. Answer: B.** Amazon Bedrock.
 
-**Why B is correct.** Bedrock is the serverless API for Claude — no infrastructure to manage, pay per token, ready in minutes.
+**Why B is correct.** Bedrock is the serverless API for Claude, no infrastructure to manage, pay per token, ready in minutes.
 
 **Why the other options are wrong.**
 - A: JumpStart requires you to provision a SageMaker endpoint (instance management).
@@ -460,7 +460,7 @@ D. Bedrock Provisioned Throughput
 
 **Q20. Answer: D.** Code suggestions inside an IDE / AWS console assistant.
 
-**Why D is correct.** Amazon Q Developer (formerly CodeWhisperer) lives in VS Code, JetBrains, the AWS Console, the CLI, and GitHub — specifically for engineers.
+**Why D is correct.** Amazon Q Developer (formerly CodeWhisperer) lives in VS Code, JetBrains, the AWS Console, the CLI, and GitHub, specifically for engineers.
 
 **Why the other options are wrong.**
 - A: Enterprise chatbot over company docs is **Q Business**.
@@ -597,9 +597,9 @@ D. Bedrock Provisioned Throughput
 
 ---
 
-**Q31. Answer: C.** No — by default customer prompts/outputs are NOT used to train base FMs and stay in the customer's account/Region.
+**Q31. Answer: C.** No, by default customer prompts/outputs are NOT used to train base FMs and stay in the customer's account/Region.
 
-**Why C is correct.** This is Bedrock's documented default behavior — central to its enterprise positioning.
+**Why C is correct.** This is Bedrock's documented default behavior, central to its enterprise positioning.
 
 **Why the other options are wrong.**
 - A: False.
@@ -612,7 +612,7 @@ D. Bedrock Provisioned Throughput
 
 **Q32. Answer: D.** Bedrock Provisioned Throughput.
 
-**Why D is correct.** Provisioned Throughput reserves dedicated model-unit (MU) capacity at known hourly cost — for steady, high-volume traffic and for invoking custom (fine-tuned) models.
+**Why D is correct.** Provisioned Throughput reserves dedicated model-unit (MU) capacity at known hourly cost, for steady, high-volume traffic and for invoking custom (fine-tuned) models.
 
 **Why the other options are wrong.**
 - A: PartyRock is a sandbox.
@@ -630,7 +630,7 @@ D. Bedrock Provisioned Throughput
 | 29–32 | 🏆 Excellent halftime. Continue to Modules 5–8 confidently. |
 | 22–28 | ✅ Passing. Review wrongs, then push into Modules 5–8. |
 | 17–21 | ⚠️ Marginal. Re-quiz the weakest module before continuing. |
-| < 17 | 🔁 Re-read Modules 1–4 — especially the SageMaker tools table and Bedrock catalog. |
+| < 17 | 🔁 Re-read Modules 1–4, especially the SageMaker tools table and Bedrock catalog. |
 
 ---
 

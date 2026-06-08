@@ -5,10 +5,10 @@ title: ISM CPSM Track (Certified Professional in Supply Management)
 
 # 🛍️ ISM CPSM Track (Certified Professional in Supply Management)
 
-**🚚 Supply Chain · ISM** › CPSM — Certified Professional in Supply Management
+**🚚 Supply Chain · ISM** › CPSM, Certified Professional in Supply Management
 
 > **Goal:** Pass all **three** ISM CPSM exams with confidence and earn the global standard for supply management professionals.
-> **Duration:** 10–14 weeks part-time (longer than most certs — there are 3 exams)
+> **Duration:** 10–14 weeks part-time (longer than most certs, there are 3 exams)
 > **Cost:** $589 (ISM member) or $1,179 (non-member) **per exam × 3 exams** = $1,767–$3,537 total
 > **Difficulty:** Professional · bachelor's + 3 yrs (or 5 yrs experience without degree)
 
@@ -18,27 +18,27 @@ title: ISM CPSM Track (Certified Professional in Supply Management)
 
 ### 🎯 The promise
 
-The ISM Certified Professional in Supply Management (CPSM) is the highest credential the Institute for Supply Management awards — the global standard for procurement, sourcing, supplier management, and category leadership. While CSCP and CPIM cover the *operational* supply chain, CPSM is the *commercial* supply chain: contracts, negotiation, supplier relationships, sustainability, risk, and the strategic spend that often equals 60–70% of a company's revenue. Pass CPSM and you are recognized as the procurement leader the CFO trusts to defend a billion dollars of category spend.
+The ISM Certified Professional in Supply Management (CPSM) is the highest credential the Institute for Supply Management awards, the global standard for procurement, sourcing, supplier management, and category leadership. While CSCP and CPIM cover the *operational* supply chain, CPSM is the *commercial* supply chain: contracts, negotiation, supplier relationships, sustainability, risk, and the strategic spend that often equals 60–70% of a company's revenue. Pass CPSM and you are recognized as the procurement leader the CFO trusts to defend a billion dollars of category spend.
 
 ### 💼 Career outcomes after passing
 
-- **Senior Procurement Specialist / Buyer** ($85K–$120K) — managing direct or indirect categories
-- **Category Manager** ($100K–$140K) — owning the strategy for a specific spend category (IT, logistics, MRO, marketing)
-- **Procurement Manager** ($105K–$145K) — leading a buying team; CPSM is increasingly preferred
-- **Sourcing Director** ($130K–$180K) — owning a function's sourcing strategy and supplier portfolio
-- **Chief Procurement Officer track** ($180K–$280K + bonus) — CPSM is one of two credentials (with CIPS MCIPS) recognized for CPO-track hiring
-- **Supply Chain / Procurement Consultant (Big-4)** ($120K–$170K + bonus) — Deloitte, KPMG, EY procurement transformation practice
+- **Senior Procurement Specialist / Buyer** ($85K–$120K), managing direct or indirect categories
+- **Category Manager** ($100K–$140K), owning the strategy for a specific spend category (IT, logistics, MRO, marketing)
+- **Procurement Manager** ($105K–$145K), leading a buying team; CPSM is increasingly preferred
+- **Sourcing Director** ($130K–$180K), owning a function's sourcing strategy and supplier portfolio
+- **Chief Procurement Officer track** ($180K–$280K + bonus), CPSM is one of two credentials (with CIPS MCIPS) recognized for CPO-track hiring
+- **Supply Chain / Procurement Consultant (Big-4)** ($120K–$170K + bonus), Deloitte, KPMG, EY procurement transformation practice
 
-ISM's own Salary Survey (annual) shows CPSM holders earn an average **~$30K more** than non-certified peers in equivalent procurement roles — a roughly 25–30% premium. CPSM is the procurement complement to the supply-chain ladder formed by **CSCP (course 10)**, **CPIM (course 11)**, and **CLTD (course 12)**.
+ISM's own Salary Survey (annual) shows CPSM holders earn an average **~$30K more** than non-certified peers in equivalent procurement roles, a roughly 25–30% premium. CPSM is the procurement complement to the supply-chain ladder formed by **CSCP (course 10)**, **CPIM (course 11)**, and **CLTD (course 12)**.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — concepts grounded in real procurement (Apple's component sourcing, Toyota's keiretsu, P&G's supplier development, Walmart's "Made in USA" pledge)
-- **Original questions only** — every quiz and practice exam written from ISM's published exam content; no copyrighted dumps
-- **Real-world case studies** — semiconductor supply crisis 2020–2023, Boeing's outsourcing lessons, Nike's Pakistan supplier transparency, Patagonia's regenerative sourcing
-- **One author, one voice** — coherent vocabulary across all 8 modules and all three CPSM exam blueprints
-- **Updated for the 2026 CPSM blueprint** — including ESG/CSRD reporting, AI-enabled spend analytics, geopolitical risk, and the post-COVID supplier-diversification playbook
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, concepts grounded in real procurement (Apple's component sourcing, Toyota's keiretsu, P&G's supplier development, Walmart's "Made in USA" pledge)
+- **Original questions only**, every quiz and practice exam written from ISM's published exam content; no copyrighted dumps
+- **Real-world case studies**, semiconductor supply crisis 2020–2023, Boeing's outsourcing lessons, Nike's Pakistan supplier transparency, Patagonia's regenerative sourcing
+- **One author, one voice**, coherent vocabulary across all 8 modules and all three CPSM exam blueprints
+- **Updated for the 2026 CPSM blueprint**, including ESG/CSRD reporting, AI-enabled spend analytics, geopolitical risk, and the post-COVID supplier-diversification playbook
 
 ### 🚀 Ready to start?
 
@@ -48,7 +48,7 @@ Begin with [Module 1: Supply Management Foundations →](./Module-01-Supply-Mana
 
 ---
 
-## ⚠️ Read This First — The CPSM Is Three Exams, Not One
+## ⚠️ Read This First, The CPSM Is Three Exams, Not One
 
 Unlike most certifications, CPSM is awarded only after you pass **three separate proctored exams**:
 
@@ -70,7 +70,7 @@ By the end of this track you'll be able to:
 
 - Define supply management as a strategic, value-creating function (not just "purchasing")
 - Run a full category-management cycle: spend analysis → Kraljic → sourcing → award
-- Negotiate using BATNA, ZOPA, and integrative tactics — and write a contract that survives a dispute
+- Negotiate using BATNA, ZOPA, and integrative tactics, and write a contract that survives a dispute
 - Build and run an SRM program with scorecards, tiering, and supplier development
 - Calculate total cost of ownership (TCO), should-cost, and value-engineering savings
 - Apply Incoterms 2020 correctly and manage cross-border, currency, and trade-compliance risk
@@ -104,7 +104,7 @@ By the end of this track you'll be able to:
 | Practice-Exam-2 | After Modules 5–8 | 125 | 135 min | ⭐⭐⭐⭐ |
 | Final-Mock-Exam | One week before the real exam | **165** | **180 min** | ⭐⭐⭐⭐⭐ |
 
-The Final-Mock-Exam matches the size and time of **one** real ISM exam. Treat it like the real thing — locked room, timer running, no notes.
+The Final-Mock-Exam matches the size and time of **one** real ISM exam. Treat it like the real thing, locked room, timer running, no notes.
 
 **Plus:** ISM offers an official online learning system and exam-style practice tests through the ISM Mastery Model. Strongly recommended before sitting any of the three real exams.
 
@@ -114,14 +114,14 @@ The Final-Mock-Exam matches the size and time of **one** real ISM exam. Treat it
 
 This track also includes two course-root resources that go beyond exam preparation:
 
-- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 6-deliverable, 4-8 week scenario where you act as the new VP Supply Management at a $1.4B specialty-foods manufacturer recovering from a sub-tier-caused recall. Builds your portfolio piece and integrates every module. Self-graded with a 7-criterion rubric.
-- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: ISM Mastery Model, Johnson & Leenders, Christopher, Liker's *The Toyota Way*, Goldratt's *The Goal*; seminal HBR papers (Kraljic 1983, Fisher 1997, Hau Lee 2004, Porter, Kotter, Elkington); industry resources (ISM, CIPS, Spend Matters, Procurement Leaders); free academic courses (MIT CTL MicroMasters, Stanford GSB).
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 6-deliverable, 4-8 week scenario where you act as the new VP Supply Management at a $1.4B specialty-foods manufacturer recovering from a sub-tier-caused recall. Builds your portfolio piece and integrates every module. Self-graded with a 7-criterion rubric.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md), The full canonical bibliography: ISM Mastery Model, Johnson & Leenders, Christopher, Liker's *The Toyota Way*, Goldratt's *The Goal*; seminal HBR papers (Kraljic 1983, Fisher 1997, Hau Lee 2004, Porter, Kotter, Elkington); industry resources (ISM, CIPS, Spend Matters, Procurement Leaders); free academic courses (MIT CTL MicroMasters, Stanford GSB).
 
 ---
 
 ## 📖 The Single Most Important Resource
 
-🔗 **The ISM CPSM Study Guide & Body of Knowledge** — buy the latest edition from the ISM bookstore (`ismworld.org`). The three exam blueprints (one per exam) describe every testable topic. If a question in this course contradicts the official ISM blueprint, the ISM blueprint wins.
+🔗 **The ISM CPSM Study Guide & Body of Knowledge**, buy the latest edition from the ISM bookstore (`ismworld.org`). The three exam blueprints (one per exam) describe every testable topic. If a question in this course contradicts the official ISM blueprint, the ISM blueprint wins.
 
 Secondary musts:
 
@@ -161,19 +161,19 @@ Week 11:     Buy ISM official practice; drill until 80%+
 Week 12:     Sit Exam 1 (Foundation). Then repeat weeks 9–11 cadence for Exams 2 and 3.
 ```
 
-If you have a strong supply background already, compress to 8 weeks. Most candidates underestimate the **leadership** and **international** content — don't skip those modules.
+If you have a strong supply background already, compress to 8 weeks. Most candidates underestimate the **leadership** and **international** content, don't skip those modules.
 
 ---
 
 ## ⚠️ The 8 Most Common Reasons People Fail CPSM
 
-1. ❌ Treated CPSM like a "purchasing exam" — it's a **strategic supply management** exam.
+1. ❌ Treated CPSM like a "purchasing exam", it's a **strategic supply management** exam.
 2. ❌ Memorized definitions but couldn't apply Kraljic to a scenario.
-3. ❌ Underestimated Incoterms 2020 — there are 11, and you need the responsibility split cold.
-4. ❌ Skipped the ethics & sustainability content — it's tested heavily as judgment scenarios.
+3. ❌ Underestimated Incoterms 2020, there are 11, and you need the responsibility split cold.
+4. ❌ Skipped the ethics & sustainability content, it's tested heavily as judgment scenarios.
 5. ❌ Confused contract types (fixed-price vs. cost-plus vs. T&M risk allocation).
 6. ❌ Didn't practice the leadership/change-management content (Kotter, ADKAR, Tuckman).
-7. ❌ Took only one exam, then waited a year for the next — momentum matters.
+7. ❌ Took only one exam, then waited a year for the next, momentum matters.
 8. ❌ Walked in without practicing under a 180-minute / 165-question pace.
 
 ---

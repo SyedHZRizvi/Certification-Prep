@@ -6,10 +6,10 @@
 
 ### Q1. Richard Williams, author of *The Animator's Survival Kit*, identifies which skill as "the animator's most important"?
 
-A. Drawing ability — the foundation of all animation craft
-B. Software proficiency — the tool that makes professional production possible
-C. Timing and spacing — the skill that determines whether animation feels alive
-D. Character design — the ability to create compelling visual personalities
+A. Drawing ability, the foundation of all animation craft
+B. Software proficiency, the tool that makes professional production possible
+C. Timing and spacing, the skill that determines whether animation feels alive
+D. Character design, the ability to create compelling visual personalities
 
 ---
 
@@ -27,7 +27,7 @@ D. 6
 A. Constant speed (linear interpolation)
 B. Slow-in: the action eases slowly out of Key A and speeds up toward Key B
 C. Slow-out: the action is fast out of Key A and eases slowly into Key B
-D. A hold — the character remains stationary for several frames
+D. A hold, the character remains stationary for several frames
 
 ---
 
@@ -61,16 +61,16 @@ D. A jagged, irregular curve with sharp direction changes
 ### Q7. Which of the following timing choices would most effectively communicate that a character is experiencing profound grief?
 
 A. 4 frames from beginning to end of the action
-B. 10–16 frames — normal, life-sized movement
-C. 60–96 frames — extremely slow, ceremonial weight
-D. 2 frames — shock and sudden impact
+B. 10–16 frames, normal, life-sized movement
+C. 60–96 frames, extremely slow, ceremonial weight
+D. 2 frames, shock and sudden impact
 
 ---
 
 ### Q8. The "trap" of the graph editor in digital animation is:
 
 A. It is too difficult to use correctly, causing beginners to give up timing adjustment
-B. Its smooth, mathematically beautiful curves produce motion that feels lifeless — smooth and dead rather than alive and varied
+B. Its smooth, mathematically beautiful curves produce motion that feels lifeless, smooth and dead rather than alive and varied
 C. It only works correctly at 24fps and produces errors at other frame rates
 D. It cannot represent slow-in/slow-out correctly and requires manual timing chart adjustment
 
@@ -78,10 +78,10 @@ D. It cannot represent slow-in/slow-out correctly and requires manual timing cha
 
 ### Q9. In *Into the Spider-Verse*, Miles Morales is animated on 2s (12fps) while Gwen Stacy is on 1s (24fps). This represents a deliberate application of which principle?
 
-A. Exaggeration — different frame rates exaggerate the visual difference between the characters
-B. Timing — the different frame rates communicate something about each character's relationship to the Spider-Verse
-C. Staging — the frame rates affect where the audience's eye is directed
-D. Solid Drawing — the different frame rates ensure each character maintains three-dimensional form
+A. Exaggeration, different frame rates exaggerate the visual difference between the characters
+B. Timing, the different frame rates communicate something about each character's relationship to the Spider-Verse
+C. Staging, the frame rates affect where the audience's eye is directed
+D. Solid Drawing, the different frame rates ensure each character maintains three-dimensional form
 
 ---
 
@@ -89,7 +89,7 @@ D. Solid Drawing — the different frame rates ensure each character maintains t
 
 A. Slow-in (eases into the motion)
 B. Slow-out (eases out of the motion)
-C. Constant speed (linear interpolation — mechanical, even motion)
+C. Constant speed (linear interpolation, mechanical, even motion)
 D. A hold (the value does not change over time)
 
 ---
@@ -142,7 +142,7 @@ D. 12–16 frames
 ### Q16. Which statement best describes the relationship between timing and emotion?
 
 A. Faster timing always communicates comedy; slower timing always communicates drama
-B. Timing is neutral — emotion is determined entirely by facial expression and design
+B. Timing is neutral, emotion is determined entirely by facial expression and design
 C. Timing must match the specific emotional goal of the scene; the same action at different timings can shift genre from comedy to tragedy
 D. Longer timing always communicates more powerful emotion, regardless of the type
 
@@ -151,17 +151,17 @@ D. Longer timing always communicates more powerful emotion, regardless of the ty
 ### Q17. In traditional 2D animation at 24fps, "on 1s" means:
 
 A. Only one character is animated in the scene; others are held
-B. Every frame is a unique drawing — 24 different drawings per second
+B. Every frame is a unique drawing, 24 different drawings per second
 C. The animation uses one frame of movement for every two frames of hold
 D. The animation has a single key pose that is held for the entire scene
 
 ---
 
-### Q18. A director notes: "This scene feels like a camera tracking a statue on a turntable — smooth, but dead." This is most likely caused by:
+### Q18. A director notes: "This scene feels like a camera tracking a statue on a turntable, smooth, but dead." This is most likely caused by:
 
 A. The character's proportions are inconsistent across the shot
 B. Over-reliance on the graph editor's default smooth curves, producing mathematically smooth but lifeless motion
-C. The character's facial expressions are not animated — only the body is moving
+C. The character's facial expressions are not animated, only the body is moving
 D. The camera move is too smooth; it should be handheld for realism
 
 ---
@@ -170,7 +170,7 @@ D. The camera move is too smooth; it should be handheld for realism
 
 A. Spacing is the amount of time between shots in an edited sequence
 B. Spacing refers to the physical distance between characters in a composition
-C. Spacing is the distance between successive drawing positions in space — how far each drawing moves from the previous one — which determines perceived speed
+C. Spacing is the distance between successive drawing positions in space how far each drawing moves from the previous one which determines perceived speed
 D. Spacing is the amount of negative space in a composition
 
 ---
@@ -178,7 +178,7 @@ D. Spacing is the amount of negative space in a composition
 ### Q20. Bambi's deer-on-ice scene uses approximately 7 seconds to show the fawn losing footing. The extended duration of this scene primarily communicates:
 
 A. Bambi's young age and inexperience, establishing character backstory
-B. A specific physical reality — the character genuinely struggling with an environment that offers no traction — while creating the emotional space for both comedy and tenderness
+B. A specific physical reality the character genuinely struggling with an environment that offers no traction while creating the emotional space for both comedy and tenderness
 C. The 12-Principle of Slow-In/Slow-Out applied incorrectly, which is why later Disney films improved on this scene
 D. The technical limitations of 1942 animation, which required more frames to complete complex movement
 
@@ -205,13 +205,13 @@ D. Overshooting (motion that passes beyond the target pose before settling)
 ### Q23. The "Incredibles fight scene" uses 4–8 frame hits and rapid-fire timing. This is the correct timing choice because:
 
 A. Fight scenes must always use fast timing for legal clearance with athletic organizations
-B. Fast timing here communicates physical capability and power — extending the timing would make the action feel laborious, which conflicts with the scene's emotional goal
+B. Fast timing here communicates physical capability and power, extending the timing would make the action feel laborious, which conflicts with the scene's emotional goal
 C. Brad Bird had contractual obligations to match the timing of the original comic-book fights
 D. 24fps cannot render slow-motion fight scenes without requiring expensive optical effects
 
 ---
 
-### Q24. A hold in animation — where a character freezes completely for several frames — is most effectively used to:
+### Q24. A hold in animation where a character freezes completely for several frames is most effectively used to:
 
 A. Hide the animator's error in maintaining consistent volume during a moving scene
 B. Allow the audience to register an important action, reaction, or joke beat before the scene continues
@@ -222,50 +222,50 @@ D. Simulate the look of a photograph being shown on screen
 
 ## 🎯 Answers + Explanations
 
-**Q1 — C.** Williams specifically named timing and spacing as the most important skill — not drawing, not software.
+**Q1 C.** Williams specifically named timing and spacing as the most important skill not drawing, not software.
 
-**Q2 — C.** On 2s at 24fps = 24÷2 = 12 unique drawings per second.
+**Q2, C.** On 2s at 24fps = 24÷2 = 12 unique drawings per second.
 
-**Q3 — B.** Clustered near Key A = slow start (slow-in); spreading toward Key B = accelerating toward B.
+**Q3, B.** Clustered near Key A = slow start (slow-in); spreading toward Key B = accelerating toward B.
 
-**Q4 — B.** Film standard is 24fps.
+**Q4, B.** Film standard is 24fps.
 
-**Q5 — B.** The dope sheet is a vertical frame grid with layer columns.
+**Q5, B.** The dope sheet is a vertical frame grid with layer columns.
 
-**Q6 — C.** Ease in/ease out produces an S-curve: flat (slow) at the start, steep (fast) in the middle, flat (slow) at the end.
+**Q6, C.** Ease in/ease out produces an S-curve: flat (slow) at the start, steep (fast) in the middle, flat (slow) at the end.
 
-**Q7 — C.** 60–96 frames = ceremonial, grand emotional weight, grief. The extreme duration creates the weight.
+**Q7, C.** 60–96 frames = ceremonial, grand emotional weight, grief. The extreme duration creates the weight.
 
-**Q8 — B.** The trap: smooth mathematical curves produce dead, robot-like motion. Real performance is messier.
+**Q8, B.** The trap: smooth mathematical curves produce dead, robot-like motion. Real performance is messier.
 
-**Q9 — B.** Different fps = application of Timing principle; the frame rate communicates character differentiation.
+**Q9, B.** Different fps = application of Timing principle; the frame rate communicates character differentiation.
 
-**Q10 — C.** A straight diagonal line in the graph editor = constant speed = linear interpolation.
+**Q10, C.** A straight diagonal line in the graph editor = constant speed = linear interpolation.
 
-**Q11 — B.** Dope sheet dialogue column maps phonemes to frame numbers for lip sync.
+**Q11, B.** Dope sheet dialogue column maps phonemes to frame numbers for lip sync.
 
-**Q12 — B.** The ball is slowest at the peak of its arc (momentarily stationary) and at the moment of catch. Drawings cluster at the slowest moments.
+**Q12, B.** The ball is slowest at the peak of its arc (momentarily stationary) and at the moment of catch. Drawings cluster at the slowest moments.
 
-**Q13 — B.** PAL = 25fps (Europe, Australia, most of Asia outside Japan).
+**Q13, B.** PAL = 25fps (Europe, Australia, most of Asia outside Japan).
 
-**Q14 — C.** Three repetitions create expectation; the fourth variation creates surprise. Structural basis of physical comedy.
+**Q14, C.** Three repetitions create expectation; the fourth variation creates surprise. Structural basis of physical comedy.
 
-**Q15 — C.** 2–4 frames = instantaneous, violent, shocking impact.
+**Q15, C.** 2–4 frames = instantaneous, violent, shocking impact.
 
-**Q16 — C.** Timing is not fixed in emotional valence. Same action, different timing, different emotional reading. Context determines the correct timing.
+**Q16, C.** Timing is not fixed in emotional valence. Same action, different timing, different emotional reading. Context determines the correct timing.
 
-**Q17 — B.** On 1s = every frame is a unique drawing = 24 drawings per second at 24fps.
+**Q17, B.** On 1s = every frame is a unique drawing = 24 drawings per second at 24fps.
 
-**Q18 — B.** "Smooth but dead" = default graph editor curves producing mathematically smooth but lifeless motion. This is the graph editor trap.
+**Q18, B.** "Smooth but dead" = default graph editor curves producing mathematically smooth but lifeless motion. This is the graph editor trap.
 
-**Q19 — C.** Spacing = how far each drawing moves from the previous one in space. Close spacing = slow; wide spacing = fast.
+**Q19, C.** Spacing = how far each drawing moves from the previous one in space. Close spacing = slow; wide spacing = fast.
 
-**Q20 — B.** The 7-second duration creates physical reality (genuine traction problem) AND emotional space (comedy + tenderness together). It is not an error.
+**Q20, B.** The 7-second duration creates physical reality (genuine traction problem) AND emotional space (comedy + tenderness together). It is not an error.
 
-**Q21 — B.** 24fps is the standard film frame rate; it is associated with the "cinematic look."
+**Q21, B.** 24fps is the standard film frame rate; it is associated with the "cinematic look."
 
-**Q22 — C.** Evenly distributed in-betweens = constant speed = linear/mechanical motion.
+**Q22, C.** Evenly distributed in-betweens = constant speed = linear/mechanical motion.
 
-**Q23 — B.** Fast timing is correct for this scene because the scene is about power and capability — extending it would feel wrong for the emotional goal.
+**Q23 B.** Fast timing is correct for this scene because the scene is about power and capability extending it would feel wrong for the emotional goal.
 
-**Q24 — B.** Holds allow the audience to register a moment before the scene continues. They are dramatically intentional, not technical fixes.
+**Q24, B.** Holds allow the audience to register a moment before the scene continues. They are dramatically intentional, not technical fixes.

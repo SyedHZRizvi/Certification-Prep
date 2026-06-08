@@ -20,8 +20,8 @@ title: "Module 2 Cheat Sheet: Unity Animation System"
 |------|----------|-------------|
 | **Float** | Speed, Direction | No |
 | **Int** | WeaponIndex, AttackType | No |
-| **Bool** | IsGrounded, IsAiming | No — set manually |
-| **Trigger** | Jump, Attack, Roll | **Yes — consumed** |
+| **Bool** | IsGrounded, IsAiming | No, set manually |
+| **Trigger** | Jump, Attack, Roll | **Yes, consumed** |
 
 > Key rule: Use **Trigger** for one-shot actions, **Bool** for persistent states.
 
@@ -66,7 +66,7 @@ title: "Module 2 Cheat Sheet: Unity Animation System"
 | Setting | Purpose |
 |---------|---------|
 | **Has Exit Time** | Auto-fires transition at exit time fraction |
-| **Exit Time** | Fraction of clip (0.75 = 75% through) — NOT seconds |
+| **Exit Time** | Fraction of clip (0.75 = 75% through), NOT seconds |
 | **Transition Duration** | Crossfade blend time in seconds |
 | **Transition Offset** | Start point in destination clip |
 | **Interruption Source** | Whether competing transitions can interrupt |
@@ -99,11 +99,11 @@ void OnAnimatorIK(int layer) {
 
 ---
 
-## 📣 Animation Events — Quick Facts
+## 📣 Animation Events, Quick Facts
 
 - Fire at specific **frames** within a clip
 - Call methods on **MonoBehaviour** components on the **same GameObject**
-- Run on the **main thread** — keep callbacks lightweight
+- Run on the **main thread**, keep callbacks lightweight
 - Add via: Animation window → Events row, or FBX import Inspector → Animation → Events
 
 ---
@@ -112,11 +112,11 @@ void OnAnimatorIK(int layer) {
 
 | Trap | Reality |
 |------|---------|
-| Has Exit Time = plays to completion | No — fires at exit time fraction (default 0.75) |
-| Triggers stay set | No — consumed after one valid transition |
-| Humanoid always better | No — Generic has less overhead for custom rigs |
+| Has Exit Time = plays to completion | No, fires at exit time fraction (default 0.75) |
+| Triggers stay set | No, consumed after one valid transition |
+| Humanoid always better | No, Generic has less overhead for custom rigs |
 | Additive vs Override confusion | Additive ADDS delta; Override REPLACES |
-| IK in Update() | Wrong — must be in OnAnimatorIK() |
+| IK in Update() | Wrong, must be in OnAnimatorIK() |
 | Root Motion + NavMesh | Fight each other; use OnAnimatorMove() or In-Place |
 
 ---
@@ -156,7 +156,7 @@ void OnAnimatorIK(int layer) {
 
 ---
 
-## ⚡ Animator C# API — Full Reference
+## ⚡ Animator C# API, Full Reference
 
 ```csharp
 // Set parameters

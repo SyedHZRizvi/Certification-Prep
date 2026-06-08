@@ -94,7 +94,7 @@
 
 ---
 
-## 🚦 New Tenant — Day-1 Checklist
+## 🚦 New Tenant, Day-1 Checklist
 
 ```
 1. Sign in to Entra admin center → Create a tenant

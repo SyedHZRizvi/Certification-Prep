@@ -8,7 +8,7 @@
 
 ### Q1. Gemini's multi-modal architecture is BEST described as: *(Remember)*
 A. Text-only with vision via CLIP adapter
-B. Natively multi-modal — trained on text + image + audio + video jointly from scratch
+B. Natively multi-modal, trained on text + image + audio + video jointly from scratch
 C. Vision-only
 D. Three separate models bundled
 
@@ -48,7 +48,7 @@ D. 100,000
 
 ### Q6. For a file larger than 20MB used across multiple Gemini calls, the BEST pattern is: *(Apply)*
 A. Inline base64 in every prompt
-B. Files API — upload once, reference URI on subsequent calls
+B. Files API, upload once, reference URI on subsequent calls
 C. Don't use multi-modal
 D. Email the file to Google
 
@@ -202,7 +202,7 @@ D. Video samples at 1 fps by default
 A. Three separate model pipelines
 B. Vertex AI in `europe-west1` + Gemini 2.5 Pro (multi-modal native: image + audio + PDF in one call) + structured output schema for troubleshooting steps + context caching for stable system prompt + VPC-SC + CMEK + audit logs
 C. Google AI Studio with personal keys
-D. Self-host Gemini (impossible — closed weights)
+D. Self-host Gemini (impossible, closed weights)
 
 ---
 
@@ -223,7 +223,7 @@ Default. Tunable via VideoMetadata.
 ### Q5: **C. 1,000 pages**
 Per-prompt PDF limit.
 
-### Q6: **B. Files API — upload once, reference many**
+### Q6: **B. Files API, upload once, reference many**
 Persists 48h (Gemini API) or longer in GCS (Vertex).
 
 ### Q7: **C. Normalized 0-1000**
@@ -277,7 +277,7 @@ The natural pairing.
 ### Q23: **B. Imagen is Google's dedicated text-to-image family, complementary**
 Both are in Vertex AI Model Garden.
 
-### Q24: **C. Multi-modal input tokens are FREE — FALSE**
+### Q24: **C. Multi-modal input tokens are FREE, FALSE**
 You pay for image/audio/video tokens.
 
 ### Q25: **B. Vertex AI EU + Gemini Pro + multi-modal in one call + caching + VPC-SC + CMEK + audit**
@@ -293,4 +293,4 @@ The canonical architecture.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — RAG on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, RAG on Google Cloud](../Module-05-RAG-Google-Cloud/Reading.md)

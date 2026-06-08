@@ -1,18 +1,18 @@
 ---
-title: "Module 8: Game VFX & Shaders — Unity VFX Graph, Unreal Niagara & the Art of Juice"
+title: "Module 8: Game VFX & Shaders, Unity VFX Graph, Unreal Niagara & the Art of Juice"
 ---
 
-# ✨ Module 8: Game VFX & Shaders — Unity VFX Graph, Unreal Niagara & the Art of Juice
+# ✨ Module 8: Game VFX & Shaders, Unity VFX Graph, Unreal Niagara & the Art of Juice
 
 ## How Supergiant Games Makes Every Ability Feel Different
 
-In *Hades*, every ability has a distinct visual signature. Zag's sword feels different from the spear. The dash feels different from the attack. The death boon feels completely different from the kill. This is not an accident — it is systematic design.
+In *Hades*, every ability has a distinct visual signature. Zag's sword feels different from the spear. The dash feels different from the attack. The death boon feels completely different from the kill. This is not an accident, it is systematic design.
 
-In their GDC 2020 talk, Supergiant's VFX artist Chloe Wen described a system where each weapon's VFX was built around a single "golden path" of communicating its archetype. The sword is fast and decisive — short, bright flashes. The shield is slow and defensive — wide, arc-shaped barriers. The bow is precise and long-range — thin, directional streaks. The flaming whip is chaotic — wide, overlapping orange particles with a trailing smoke effect.
+In their GDC 2020 talk, Supergiant's VFX artist Chloe Wen described a system where each weapon's VFX was built around a single "golden path" of communicating its archetype. The sword is fast and decisive short, bright flashes. The shield is slow and defensive wide, arc-shaped barriers. The bow is precise and long-range thin, directional streaks. The flaming whip is chaotic wide, overlapping orange particles with a trailing smoke effect.
 
 Each of these VFX was built using a combination of Unity's Shuriken particle system (older), custom shader graphs, and procedural screen effects. The result is a game where you can tell, in peripheral vision, which weapon you're using from the VFX alone.
 
-This module teaches you the tools to build at that level: Unity VFX Graph, Unreal Niagara, shader graphs for stylized effects, and the design philosophy of "juice" — the cocktail of screen shake, hit stop, squash/stretch, and VFX that makes interactions feel satisfying.
+This module teaches you the tools to build at that level: Unity VFX Graph, Unreal Niagara, shader graphs for stylized effects, and the design philosophy of "juice", the cocktail of screen shake, hit stop, squash/stretch, and VFX that makes interactions feel satisfying.
 
 ---
 
@@ -26,7 +26,7 @@ Unity's **VFX Graph** (Visual Effect Graph) is a node-based particle system intr
 |--|---------|-----------|
 | Computation | CPU-based | GPU-based (compute shader) |
 | Max particles | ~50,000 practical | 1M+ |
-| Visual scripting | No — Inspector only | Yes — node graph |
+| Visual scripting | No Inspector only | Yes node graph |
 | Custom logic | Limited to modules | Full GPU shader logic |
 | HDRP/URP support | All pipelines | HDRP + URP (not built-in RP) |
 | Use for | Simple particles, legacy | Complex, high-count, stylized |
@@ -42,7 +42,7 @@ A VFX Graph is made of **Contexts** (vertically stacked) and **Operators/Blocks*
 | **Update** | Per-frame simulation (gravity, drag, forces, collision) |
 | **Output** | How particles are rendered (billboard, mesh, strip) |
 
-The graph runs entirely on the GPU. No C# code touches particle simulation — you connect math nodes in the graph.
+The graph runs entirely on the GPU. No C# code touches particle simulation, you connect math nodes in the graph.
 
 ### Key VFX Graph Operators
 
@@ -121,7 +121,7 @@ Unreal Engine's **Niagara** VFX system (UE4.16+, production-ready in UE4.20) is 
 
 ### Niagara Events
 
-**Niagara Events** allow particles to communicate between emitters — or to spawn new emitters on collision events:
+**Niagara Events** allow particles to communicate between emitters, or to spawn new emitters on collision events:
 - A projectile particle can fire a "death event" when it collides
 - A second emitter listens for death events and spawns an explosion burst at the collision point
 
@@ -139,17 +139,17 @@ Supergiant's GDC 2020 session revealed key design choices for Hades' VFX:
 | Bow (Coronacht) | Precise, long-range | Thin directional streak, no spread |
 | Whip (Malphon) | Chaotic, overlapping | Wide orange particles, smoke trail |
 
-All VFX were designed to **read at small sizes** — the game's camera is far from the character. This drove the choice of **high contrast, saturated colors** and **large individual particle sizes** (few large particles rather than many small ones).
+All VFX were designed to **read at small sizes**, the game's camera is far from the character. This drove the choice of **high contrast, saturated colors** and **large individual particle sizes** (few large particles rather than many small ones).
 
 ---
 
-## 🎮 Case Study: DOOM Eternal — Kill Animation Design and Animation Budget Tiers
+## 🎮 Case Study: DOOM Eternal, Kill Animation Design and Animation Budget Tiers
 
 DOOM Eternal's glory kill system provides an instructive case study in **intentional animation budget cheating**. During a glory kill (the melee finisher sequence), id Software does something technically audacious: they temporarily **pause the game's AI and physics simulation** for all non-participant entities during the 1.5–2 second kill sequence. Only the Doom Slayer and the target demon remain animated. All other demons freeze.
 
-This allows id to render glory kill animations at cinematic quality — full-body IK, secondary motion, facial deformation — without the animation budget implications of running those systems in parallel with active combat. The player never notices the freeze because they are focused entirely on the kill sequence.
+This allows id to render glory kill animations at cinematic quality full-body IK, secondary motion, facial deformation without the animation budget implications of running those systems in parallel with active combat. The player never notices the freeze because they are focused entirely on the kill sequence.
 
-The design rule this illustrates: **animation budget tiers are not just about optimization — they are about identifying which moments can "cheat" within the design contract with the player**.
+The design rule this illustrates: **animation budget tiers are not just about optimization, they are about identifying which moments can "cheat" within the design contract with the player**.
 
 | DOOM Eternal VFX System | Budget | Budget Type | Notes |
 |---|---|---|---|
@@ -161,21 +161,21 @@ The design rule this illustrates: **animation budget tiers are not just about op
 
 ---
 
-## 🎮 Case Study: Dead Cells — 2D Hit Flash and Spine Squash
+## 🎮 Case Study: Dead Cells, 2D Hit Flash and Spine Squash
 
 Motion Twin designed Dead Cells' hit feedback system to communicate damage hierarchy through three layered visual signals:
 
-1. **White flash** (1–2 frames): every entity flashes fully white on any hit. The flash duration is 1 frame for small enemies, 2 frames for large/boss enemies — indicating relative "weight."
+1. **White flash** (1–2 frames): every entity flashes fully white on any hit. The flash duration is 1 frame for small enemies, 2 frames for large/boss enemies, indicating relative "weight."
 2. **Squash** (3–4 frames): the enemy skeleton squashes in the hit direction (0.8 scale perpendicular to hit, 1.2 scale along hit axis) and spring-rebounds over 5 frames via Spine root bone scale keyframes.
 3. **Knockback particles** (4–8 particles): 2–3 blood/impact sprites spawned at the contact point, velocity-directed away from the attack direction.
 
 The key insight: all three signals fire simultaneously at frame 0 of the hit. The player's brain integrates all three as a single "impact" sensation rather than three separate effects. This is the **juice stacking** principle applied to 2D skeletal animation.
 
-Dead Cells also uses **hit stagger animations** (the enemy's skeleton recoils 10–20px in the hit direction) as a fourth signal for elite enemies. Standard enemies don't stagger — they die or continue attacking. Elite enemies stagger visually, communicating "this enemy can take hits," which is gameplay-relevant information.
+Dead Cells also uses **hit stagger animations** (the enemy's skeleton recoils 10–20px in the hit direction) as a fourth signal for elite enemies. Standard enemies don't stagger, they die or continue attacking. Elite enemies stagger visually, communicating "this enemy can take hits," which is gameplay-relevant information.
 
 ---
 
-## 🎮 Case Study: Hades — VFX System as Visual Language
+## 🎮 Case Study: Hades, VFX System as Visual Language
 
 Supergiant's VFX artist Chloe Wen's GDC 2020 talk ("VFX in Hades") documents a specific design principle: **VFX as visual language**. Every VFX element in Hades is designed to communicate one of four gameplay messages:
 
@@ -184,13 +184,13 @@ Supergiant's VFX artist Chloe Wen's GDC 2020 talk ("VFX in Hades") documents a s
 3. **Reward**: pickup, upgrade, or healing VFX (gold/green; warm, inviting)
 4. **Damage confirmation**: hit VFX on enemies (white flash + ability color bleed; confirms hit landed)
 
-The color language is consistent across the entire game. The Underworld palette (orange/red for threats, blue/purple for Olympian abilities) is not an aesthetic choice — it is a communication system. Players subconsciously learn to parse the color language, which is why Hades' combat reads well even at high enemy density.
+The color language is consistent across the entire game. The Underworld palette (orange/red for threats, blue/purple for Olympian abilities) is not an aesthetic choice, it is a communication system. Players subconsciously learn to parse the color language, which is why Hades' combat reads well even at high enemy density.
 
 ---
 
 ## ⚠️ Performance Trap: Particle Systems on Mobile
 
-Unity VFX Graph and Unreal Niagara are both GPU-driven — but this does not mean they are free on mobile. Several specific mobile performance traps:
+Unity VFX Graph and Unreal Niagara are both GPU-driven, but this does not mean they are free on mobile. Several specific mobile performance traps:
 
 **1. VFX Graph on mobile (Unity)**
 
@@ -198,7 +198,7 @@ Unity VFX Graph requires URP or HDRP and compute shader support. On older iOS de
 
 **2. Particle overdraw on mobile**
 
-Each particle is drawn as a textured quad over the scene. High-opacity, large-area particles cause **overdraw** — the same screen pixel is shaded multiple times. On mobile GPUs (which have significantly less fill rate than desktop GPUs), overdraw above 3–4× per pixel causes visible frame rate drops. Solution: limit particle sizes, use alpha-erosion masks to reduce the effective opaque area, and prefer fewer-larger particles over many-small ones.
+Each particle is drawn as a textured quad over the scene. High-opacity, large-area particles cause **overdraw**, the same screen pixel is shaded multiple times. On mobile GPUs (which have significantly less fill rate than desktop GPUs), overdraw above 3–4× per pixel causes visible frame rate drops. Solution: limit particle sizes, use alpha-erosion masks to reduce the effective opaque area, and prefer fewer-larger particles over many-small ones.
 
 **3. Niagara GPU Simulation on mobile**
 
@@ -215,7 +215,7 @@ Unreal Niagara's GPU simulation mode requires SM5/SM6 hardware. On mobile (iOS M
 
 ## 🎮 Case Study: Destiny 2 Weapon VFX (Bungie)
 
-Destiny 2's weapon VFX — presented in Bungie's GDC sessions — are a masterclass in communicating weapon class through particle design:
+Destiny 2's weapon VFX presented in Bungie's GDC sessions are a masterclass in communicating weapon class through particle design:
 
 | Weapon Class | VFX Signature | Shader Technique |
 |---|---|---|
@@ -225,13 +225,13 @@ Destiny 2's weapon VFX — presented in Bungie's GDC sessions — are a mastercl
 | Sword | Trailing energy streak | GPU trail strip with velocity-based width |
 | Super (e.g., Golden Gun) | Full-screen rim light + particles | Screen-space post-process + world particles |
 
-The key design principle: **a weapon's VFX should tell you what the weapon IS before you read the damage numbers**. Bungie calls this the "first read" — the VFX you can parse in peripheral vision.
+The key design principle: **a weapon's VFX should tell you what the weapon IS before you read the damage numbers**. Bungie calls this the "first read", the VFX you can parse in peripheral vision.
 
 ---
 
 ## 🍹 The Art of Juice
 
-"Juice" is the design industry term for the collection of layered visual and audio feedback effects that make interactions feel satisfying. The term was popularized by Martin Jonasson and Petri Purho at GDC 2012 ("Juice It or Lose It — A Talk by Two Indie Developers").
+"Juice" is the design industry term for the collection of layered visual and audio feedback effects that make interactions feel satisfying. The term was popularized by Martin Jonasson and Petri Purho at GDC 2012 ("Juice It or Lose It, A Talk by Two Indie Developers").
 
 ### The Four Core Juice Elements
 
@@ -305,23 +305,23 @@ The player consciously registers "that hit felt great" without being able to ide
 
 ## 🎯 Exam Callouts: What the Test Checks
 
-> 🎯 **What the exam tests 1:** What rendering pipeline does Unity VFX Graph require? URP or HDRP — it does NOT work with the legacy Built-in Render Pipeline. Check `SystemInfo.supportsComputeShaders` at runtime for mobile compatibility.
+> 🎯 **What the exam tests 1:** What rendering pipeline does Unity VFX Graph require? URP or HDRP, it does NOT work with the legacy Built-in Render Pipeline. Check `SystemInfo.supportsComputeShaders` at runtime for mobile compatibility.
 
 > 🎯 **What the exam tests 2:** What is the Spawn → Initialize → Update → Output context flow in Unity VFX Graph? Spawn: how many particles and at what rate. Initialize: starting attribute values (position, velocity, color, lifetime). Update: per-frame simulation (forces, drag, collision). Output: render type (billboard, mesh, line strip).
 
 > 🎯 **What the exam tests 3:** How does a Dissolve effect work in Shader Graph? Sample a noise texture; compare the value against a `Dissolve Amount` parameter using `Step` (hard edge) or `Smoothstep` (soft edge); output to Alpha. Add emission color at the threshold boundary for a burn/energy rim effect.
 
-> 🎯 **What the exam tests 4:** What is the difference between Fresnel outline and inverted hull outline in shaders? Fresnel uses the dot product of view direction and surface normal — edges facing away from the camera glow. Inverted hull renders a second pass of the mesh scaled outward with inverted normals and a flat outline color — works even when the object faces the camera directly.
+> 🎯 **What the exam tests 4:** What is the difference between Fresnel outline and inverted hull outline in shaders? Fresnel uses the dot product of view direction and surface normal edges facing away from the camera glow. Inverted hull renders a second pass of the mesh scaled outward with inverted normals and a flat outline color works even when the object faces the camera directly.
 
 > 🎯 **What the exam tests 5:** What are the four elements of "juice" and their typical durations? Screen Shake (0.1–0.3s, decaying amplitude); Hit Stop (2–12 frames at 60fps); Squash/Stretch (2–4 frames squash, 5–8 frames spring-back); Flash (1–3 frames full white, 3–6 frames fade). All fire simultaneously at frame 0 of impact.
 
-> 🎯 **What the exam tests 6:** What is overdraw in particle systems and why is it a mobile-specific problem? Overdraw occurs when multiple particles cover the same screen pixel — the pixel shader runs multiple times per pixel. Mobile GPUs have much lower fill rate than desktop GPUs, so high overdraw (> 3–4× per pixel) causes severe frame drops. Fix: alpha-erosion masks, limit particle count, prefer fewer larger particles.
+> 🎯 **What the exam tests 6:** What is overdraw in particle systems and why is it a mobile-specific problem? Overdraw occurs when multiple particles cover the same screen pixel, the pixel shader runs multiple times per pixel. Mobile GPUs have much lower fill rate than desktop GPUs, so high overdraw (> 3–4× per pixel) causes severe frame drops. Fix: alpha-erosion masks, limit particle count, prefer fewer larger particles.
 
-> 🎯 **What the exam tests 7:** How does DOOM Eternal maintain cinematic-quality glory kill animations without animation budget cost? During glory kill sequences, id pauses all non-participant AI and physics simulation. Only the Doom Slayer and target demon are animated. This is an intentional design choice — the player's attention is focused on the kill, so the pause is imperceptible.
+> 🎯 **What the exam tests 7:** How does DOOM Eternal maintain cinematic-quality glory kill animations without animation budget cost? During glory kill sequences, id pauses all non-participant AI and physics simulation. Only the Doom Slayer and target demon are animated. This is an intentional design choice, the player's attention is focused on the kill, so the pause is imperceptible.
 
-> 🎯 **What the exam tests 8:** What is a Niagara Event and how is it used? A Niagara Event allows particles to communicate between emitters — e.g., a projectile particle fires a "death event" on collision, and a second emitter listens for death events and spawns an explosion burst at the collision point.
+> 🎯 **What the exam tests 8:** What is a Niagara Event and how is it used? A Niagara Event allows particles to communicate between emitters, e.g., a projectile particle fires a "death event" on collision, and a second emitter listens for death events and spawns an explosion burst at the collision point.
 
-> 🎯 **What the exam tests 9:** In Hades, what four gameplay messages does VFX color language communicate? (1) Threat — red/orange, enemy attack windup; (2) Ability — blue/purple, player ability activation; (3) Reward — gold/green, pickups and healing; (4) Damage confirmation — white flash + ability color, hit landed.
+> 🎯 **What the exam tests 9:** In Hades, what four gameplay messages does VFX color language communicate? (1) Threat red/orange, enemy attack windup; (2) Ability blue/purple, player ability activation; (3) Reward gold/green, pickups and healing; (4) Damage confirmation white flash + ability color, hit landed.
 
 > 🎯 **What the exam tests 10:** What is the "first read" principle in Bungie's Destiny 2 VFX design? A weapon's VFX must communicate what the weapon IS before the player reads any damage numbers or UI. The muzzle flash, trail, and impact effect create an immediately recognizable weapon identity readable in peripheral vision.
 
@@ -343,13 +343,13 @@ The player consciously registers "that hit felt great" without being able to ide
 
 ---
 
-## 📊 VFX Budget Tier Reference — Studio-Level Targets
+## 📊 VFX Budget Tier Reference, Studio-Level Targets
 
 | VFX Category | Mobile Budget | Console/PC Budget | Notes |
 |---|---|---|---|
 | Player ability burst | 0.5ms | 1.0ms | Highest-priority VFX; must always be clear |
 | Enemy hit reaction | 0.3ms | 0.5ms | Per enemy; multiply by active enemy count |
-| Environmental ambience | 0.2ms | 0.8ms | Fire, smoke, water — run at reduced update rate |
+| Environmental ambience | 0.2ms | 0.8ms | Fire, smoke, water, run at reduced update rate |
 | UI VFX (damage numbers, pickups) | 0.1ms | 0.3ms | Screen-space; very cheap |
 | Death/destruction | Not budgeted (event) | Not budgeted (event) | One-time events; can exceed frame budget for 1–2 frames |
 | Persistent world effects | 0.5ms | 1.5ms | Rain, dust, magic zones |
@@ -373,7 +373,7 @@ The player consciously registers "that hit felt great" without being able to ide
 You've completed all 8 modules of the Game & UI Animation track. Next steps:
 
 1. Build your **portfolio**: a locomotion state machine in Unity or Unreal + a Spine 2D character animation + a GSAP ScrollTrigger marketing page + at least one stylized VFX shader
-2. Take the **[Final Mock Exam](../../Practice-Exams/Final-Mock-Exam.md)** — score 80%+ before applying to studios
+2. Take the **[Final Mock Exam](../../Practice-Exams/Final-Mock-Exam.md)**, score 80%+ before applying to studios
 3. Apply to: game studios (Unity/Spine/VFX roles), UI motion designer roles (GSAP/Framer Motion), or technical artist positions (shaders/VFX)
 
 ---
@@ -383,8 +383,8 @@ You've completed all 8 modules of the Game & UI Animation track. Next steps:
 - 🔗 [Unity VFX Graph Documentation](https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@12.0/manual/index.html)
 - 🔗 [Unity Shader Graph Documentation](https://docs.unity3d.com/Packages/com.unity.shadergraph@12.0/manual/index.html)
 - 🔗 [Unreal Niagara Documentation](https://docs.unrealengine.com/5.3/en-US/creating-visual-effects-in-niagara-for-unreal-engine/)
-- 🎬 GDC 2012: "Juice It or Lose It" — Martin Jonasson and Petri Purho (foundational talk on game feel/juice)
-- 🎬 GDC 2020: "VFX in Hades" — Chloe Wen, Supergiant Games
-- 🎬 GDC: Destiny 2 VFX talks — Bungie (search GDC Vault for "Destiny weapons VFX")
+- 🎬 GDC 2012: "Juice It or Lose It", Martin Jonasson and Petri Purho (foundational talk on game feel/juice)
+- 🎬 GDC 2020: "VFX in Hades", Chloe Wen, Supergiant Games
+- 🎬 GDC: Destiny 2 VFX talks, Bungie (search GDC Vault for "Destiny weapons VFX")
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*

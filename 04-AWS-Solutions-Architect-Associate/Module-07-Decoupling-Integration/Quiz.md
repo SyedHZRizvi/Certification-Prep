@@ -242,7 +242,7 @@ Long-running, branching, retries, human approval (`waitForTaskToken`).
 Express is for high-throughput event workflows. Standard is for long, audit-heavy.
 
 ### Q11: **B. Amazon MQ**
-MQ supports AMQP, JMS, MQTT, STOMP — for lift-and-shift. SQS uses its own API.
+MQ supports AMQP, JMS, MQTT, STOMP, for lift-and-shift. SQS uses its own API.
 
 ### Q12: **B. Limit Lambda reserved concurrency**
 Cap concurrent Lambda executions so the DB isn't overwhelmed. Use SQS as the buffer.

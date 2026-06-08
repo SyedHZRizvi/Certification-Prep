@@ -7,7 +7,7 @@ title: "Module 1: Adobe Animate Interface & Workflow"
 
 ## The First Day in a New City
 
-Think of learning Adobe Animate like arriving in a new city. On day one, you don't need to know every street — you need to know where your hotel is, where the nearest coffee shop is, and how the subway works. Everything else can wait. The animators who struggle with Animate are the ones who try to memorize every panel and every menu before they create a single drawing. The animators who succeed open the application, orient themselves, and make *something* — even if that something is a badly drawn circle that spins around.
+Think of learning Adobe Animate like arriving in a new city. On day one, you don't need to know every street you need to know where your hotel is, where the nearest coffee shop is, and how the subway works. Everything else can wait. The animators who struggle with Animate are the ones who try to memorize every panel and every menu before they create a single drawing. The animators who succeed open the application, orient themselves, and make *something* even if that something is a badly drawn circle that spins around.
 
 This module is your city map. By the end of it, you'll know where everything is, why the major zones of the interface exist, and how to work with the core primitives that Animate uses to represent everything: symbols, layers, the timeline, and the library.
 
@@ -19,7 +19,7 @@ When you open Adobe Animate and create a new document, the application presents 
 
 | Zone | Name | What It Does |
 |------|------|--------------|
-| Center | Stage | Your canvas — what the viewer sees |
+| Center | Stage | Your canvas, what the viewer sees |
 | Top | Toolbar | Drawing and selection tools |
 | Left | Tools Panel | Extended tool options |
 | Bottom | Timeline | Frame-by-frame control of everything on stage |
@@ -28,7 +28,7 @@ When you open Adobe Animate and create a new document, the application presents 
 
 ### The Stage
 
-The Stage is the white rectangle in the center of your screen. Its dimensions are set when you create a document (typically 1920×1080 for HD, or 1280×720 for YouTube). Everything outside the Stage is the "pasteboard" — a gray area where you can stage elements before bringing them on-screen. Objects on the pasteboard are invisible to the viewer but visible to you.
+The Stage is the white rectangle in the center of your screen. Its dimensions are set when you create a document (typically 1920×1080 for HD, or 1280×720 for YouTube). Everything outside the Stage is the "pasteboard", a gray area where you can stage elements before bringing them on-screen. Objects on the pasteboard are invisible to the viewer but visible to you.
 
 > 🎯 **What the exam tests:** Objects placed entirely outside the Stage bounds do not appear in the final export. Objects partially overlapping the Stage edge will be clipped at the Stage boundary.
 
@@ -43,7 +43,7 @@ The Timeline is the most important panel in Animate. It is organized into:
 
 ### The Library Panel
 
-Every symbol, bitmap, sound clip, or component you import or create lives in the Library. Think of it as your project's asset manager. You can organize items into folders, rename them, duplicate them, and delete unused assets. A key insight: **dragging an item from the Library onto the Stage creates an *instance* of that item — not the item itself.** You can have dozens of instances of a single symbol, each with its own position, scale, rotation, and color transform, all while the underlying symbol is defined only once.
+Every symbol, bitmap, sound clip, or component you import or create lives in the Library. Think of it as your project's asset manager. You can organize items into folders, rename them, duplicate them, and delete unused assets. A key insight: **dragging an item from the Library onto the Stage creates an *instance* of that item, not the item itself.** You can have dozens of instances of a single symbol, each with its own position, scale, rotation, and color transform, all while the underlying symbol is defined only once.
 
 ---
 
@@ -80,7 +80,7 @@ Animate reads pressure data from any Wacom-compatible tablet or from the Apple P
 - **Opacity** (lighter touch = more transparent stroke, if configured)
 - **Smoothing** (high smoothing straightens wobble; low smoothing preserves hand character)
 
-For character animation, most professionals set smoothing to 20–40% — enough to eliminate the shakiness of a nervous hand without losing the organic feel of real drawing.
+For character animation, most professionals set smoothing to 20–40%, enough to eliminate the shakiness of a nervous hand without losing the organic feel of real drawing.
 
 ---
 
@@ -94,23 +94,23 @@ A **symbol** in Animate is a reusable asset that lives in the Library and is ref
 | **Movie Clip** | An independent animation | Has its own timeline; plays independently of the parent |
 | **Button** | An interactive element (up/over/down/hit states) | For interactive projects; rarely used in pure animation |
 
-> 🚨 **Exam Trap:** Graphic symbols and Movie Clips are often confused. A Graphic symbol's animation is tied to the parent timeline — if the parent pauses, the Graphic pauses. A Movie Clip plays independently. For character rigs, you almost always want **Graphic symbols** so that the character's animation stays in sync with the main scene.
+> 🚨 **Exam Trap:** Graphic symbols and Movie Clips are often confused. A Graphic symbol's animation is tied to the parent timeline, if the parent pauses, the Graphic pauses. A Movie Clip plays independently. For character rigs, you almost always want **Graphic symbols** so that the character's animation stays in sync with the main scene.
 
 ### Converting Drawings to Symbols
 
 To convert any selection of drawings into a symbol:
 1. Select all the artwork.
 2. Press F8 (or Modify → Convert to Symbol).
-3. Name the symbol, choose a type, and set the registration point (where the symbol's origin is — usually the joint you'll rotate from).
+3. Name the symbol, choose a type, and set the registration point (where the symbol's origin is, usually the joint you'll rotate from).
 
 The registration point is critical for character animation. If you're rigging an arm, the registration point should be at the shoulder joint, not the center of the arm's bounding box.
 
 ### Editing Symbols
 
-Double-clicking a symbol instance enters **Symbol Editing Mode** — a focused view that shows only the symbol's content. Changes here affect every instance of that symbol across the entire project. This is powerful and dangerous: it's easy to accidentally edit a symbol when you meant to edit only one instance.
+Double-clicking a symbol instance enters **Symbol Editing Mode**, a focused view that shows only the symbol's content. Changes here affect every instance of that symbol across the entire project. This is powerful and dangerous: it's easy to accidentally edit a symbol when you meant to edit only one instance.
 
 To edit only one instance, you must either:
-- Break Apart the instance (Ctrl+B / Cmd+B) — this permanently disconnects it from the Library symbol
+- Break Apart the instance (Ctrl+B / Cmd+B), this permanently disconnects it from the Library symbol
 - Or swap it for a new symbol
 
 ---
@@ -146,7 +146,7 @@ Animate supports multiple artboards within a single document, which lets you mai
 
 To add an artboard: Window → Scene (in older versions) or use the Scene panel. Each scene is essentially a separate timeline that shares the same Library.
 
-> 🎯 **What the exam tests:** Scenes in Animate are analogous to artboards in Photoshop or Illustrator — they share the same Library but have independent timelines, stage dimensions, and frame rates.
+> 🎯 **What the exam tests:** Scenes in Animate are analogous to artboards in Photoshop or Illustrator, they share the same Library but have independent timelines, stage dimensions, and frame rates.
 
 ---
 
@@ -164,7 +164,7 @@ The most important document setting is frame rate, measured in frames per second
 | 30 fps | NTSC broadcast standard (US, Japan); YouTube default | Most US TV animation |
 | 60 fps | Gaming UI; smooth motion graphics | Game UI, web apps |
 
-**"Animating on twos"** means drawing a new pose every 2 frames at 24fps — effectively 12 unique drawings per second. This is the foundation of classic hand-drawn animation and is still used intentionally in modern productions for aesthetic reasons. The creators of *Spider-Man: Into the Spider-Verse* famously animated Miles Morales "on twos" while other characters used different rates — a deliberate artistic choice that gave the film its unique, hand-crafted visual texture.
+**"Animating on twos"** means drawing a new pose every 2 frames at 24fps effectively 12 unique drawings per second. This is the foundation of classic hand-drawn animation and is still used intentionally in modern productions for aesthetic reasons. The creators of *Spider-Man: Into the Spider-Verse* famously animated Miles Morales "on twos" while other characters used different rates a deliberate artistic choice that gave the film its unique, hand-crafted visual texture.
 
 > 🎯 **What the exam tests:** Know which frame rate belongs to which broadcast standard. PAL = 25fps (Europe/Australia). NTSC = 29.97fps (US/Japan). Cinema = 24fps. "On twos" = 12 unique drawings per second at 24fps.
 
@@ -187,7 +187,7 @@ Animate supports MP3 and WAV files. Audio imported into the Library can be place
 | Sync Mode | Behavior | Use Case |
 |-----------|----------|---------|
 | **Event** | Sound starts playing when the playhead reaches the keyframe; plays to completion even if the timeline stops | SFX, background music loops |
-| **Stream** | Sound is tied to the timeline; if the timeline pauses, the sound pauses; perfect for lip sync | Dialogue, lip sync — always |
+| **Stream** | Sound is tied to the timeline; if the timeline pauses, the sound pauses; perfect for lip sync | Dialogue, lip sync, always |
 
 > 🚨 **Exam Trap:** For lip sync, you must use **Stream** sync. Event-synced audio will play out of sync as soon as the timeline stutters during scrubbing or playback. This is one of the most common mistakes beginners make and a frequent exam question.
 
@@ -209,7 +209,7 @@ When beginning a 2D animation project, choosing the right application matters. H
 
 ---
 
-## 📊 Properties Panel — Context Is Everything
+## 📊 Properties Panel, Context Is Everything
 
 The Properties panel is context-sensitive: what it shows depends entirely on what is selected.
 
@@ -268,7 +268,7 @@ Understanding the full range of layer types available in the Animate Timeline pr
 | Motion Guide layer | Curved arrow | Special guide for Classic Tween path-following | Classic Tween path animation |
 | Folder layer | Folder | Organizes layers into a collapsible group | Large projects with many layers |
 
-> 🎯 **What the exam tests:** Guide layers (including Motion Guide layers) are **never exported** to the final render. Students sometimes wonder why their reference drawings don't appear in the final video — they were on a Guide layer.
+> 🎯 **What the exam tests:** Guide layers (including Motion Guide layers) are **never exported** to the final render. Students sometimes wonder why their reference drawings don't appear in the final video, they were on a Guide layer.
 
 ---
 
@@ -284,7 +284,7 @@ Animate supports multiple document types, and knowing which to choose at project
 | **AIR for Desktop** | AIR | Desktop app with Flash/Animate UI |
 | **Custom** | Video export | Video animation that will be exported to MP4/MOV |
 
-For pure animation work intended for video delivery, the **HTML5 Canvas** document type is the modern standard. The Stage, Timeline, and Library all work identically regardless of document type — but the publish/export options differ significantly.
+For pure animation work intended for video delivery, the **HTML5 Canvas** document type is the modern standard. The Stage, Timeline, and Library all work identically regardless of document type, but the publish/export options differ significantly.
 
 > 🚨 **Exam Trap:** Creating an ActionScript 3.0 document instead of HTML5 Canvas is a common beginner mistake. The project setup question on the exam often tests whether you know which document type is appropriate for a given delivery target.
 
@@ -295,11 +295,11 @@ For pure animation work intended for video delivery, the **HTML5 Canvas** docume
 Both *The Owl House* (Dana Terrace) and *Gravity Falls* (Alex Hirsch) were Disney Channel/Disney+ productions that used a primarily digital cut-out approach with Adobe Animate and After Effects. Key observations:
 
 - **Character rigs** were built as layered symbol hierarchies in Animate, with separate symbols for each major body part
-- **Expressive moments** required hand-drawn overlays on top of the rigged animation — the rig provided the foundation; the artists pushed past it for key emotional beats
+- **Expressive moments** required hand-drawn overlays on top of the rigged animation, the rig provided the foundation; the artists pushed past it for key emotional beats
 - **Background art** was painted in Photoshop and composited in After Effects
-- Both shows prioritized **character consistency across episodes** — model sheets and a locked Library of approved symbols were essential to maintaining the visual standard
+- Both shows prioritized **character consistency across episodes**, model sheets and a locked Library of approved symbols were essential to maintaining the visual standard
 
-This hybrid approach — rigged animation plus selective hand-drawn augmentation — is characteristic of mid-budget TV animation and is exactly the workflow this module prepares you for.
+This hybrid approach rigged animation plus selective hand-drawn augmentation is characteristic of mid-budget TV animation and is exactly the workflow this module prepares you for.
 
 ---
 
@@ -328,7 +328,7 @@ Adobe Animate is available on iPad, and understanding the differences between de
 |---------|----------------|----------------|
 | Full timeline | Yes | Yes |
 | All symbol types | Yes | Yes |
-| Apple Pencil support | Via Astro app bridge | Native — full pressure and tilt |
+| Apple Pencil support | Via Astro app bridge | Native, full pressure and tilt |
 | Plugin support | Full | Limited |
 | File format | .fla / .an | .an (same format) |
 | Best for | Full production | Sketching rigs; storyboard-level animation |
@@ -375,13 +375,13 @@ The iPad version excels for pencil-based drawing and frame-by-frame work where n
 
 [Module 2: Frame-by-Frame Animation →](../Module-02-Frame-by-Frame/Reading.md)
 
-Now that you can navigate Animate and understand its primitive objects, Module 2 goes hands-on with the frame-by-frame technique — drawing individual poses, using onion skinning to see where you've been, and building the muscle memory that separates real animators from people who only tween.
+Now that you can navigate Animate and understand its primitive objects, Module 2 goes hands-on with the frame-by-frame technique, drawing individual poses, using onion skinning to see where you've been, and building the muscle memory that separates real animators from people who only tween.
 
 ## 📚 Further Reading
 
 - Adobe Animate User Guide: [helpx.adobe.com/animate/user-guide.html](https://helpx.adobe.com/animate/user-guide.html)
-- *The Animator's Survival Kit* — Richard Williams (Faber & Faber) — Chapter 1: Why Animate?
-- School of Motion: "What is Adobe Animate?" — free article on [schoolofmotion.com/blog](https://www.schoolofmotion.com/blog)
+- *The Animator's Survival Kit* Richard Williams (Faber & Faber) Chapter 1: Why Animate?
+- School of Motion: "What is Adobe Animate?", free article on [schoolofmotion.com/blog](https://www.schoolofmotion.com/blog)
 
 ---
 
@@ -400,25 +400,25 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 

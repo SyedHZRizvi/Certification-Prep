@@ -85,7 +85,7 @@ D. `reasoning_level`
 
 ### Q10. A team wants to add CoT to a customer-support reply suggester. The MOST likely outcome is: *(Apply)*
 A. Massive accuracy lift
-B. Modest or no lift, plus higher cost and latency — CoT is overkill for trivial tasks
+B. Modest or no lift, plus higher cost and latency, CoT is overkill for trivial tasks
 C. Cost goes to zero
 D. The model refuses
 
@@ -149,7 +149,7 @@ D. Reason / Vote / Answer
 
 ### Q18. Self-consistency at N=5 vs N=40 typically: *(Understand)*
 A. Gives 0% of the lift of N=40
-B. Often captures most of the lift at much lower cost — eval to find the right N for your task
+B. Often captures most of the lift at much lower cost, eval to find the right N for your task
 C. Is always identical
 D. Is 8× the cost
 
@@ -165,7 +165,7 @@ D. A classification model
 
 ### Q20. The CoT "faithfulness" research from Anthropic and others suggests: *(Analyze)*
 A. CoT traces are always causally faithful to the model's actual computation
-B. CoT traces are often post-hoc rationalizations and not strictly faithful — but they still improve accuracy and aid debugging
+B. CoT traces are often post-hoc rationalizations and not strictly faithful, but they still improve accuracy and aid debugging
 C. CoT is meaningless
 D. CoT traces are random
 
@@ -227,7 +227,7 @@ D. All three on the same flagship at temperature 1.5
 Definition of CoT. The intermediate reasoning IS the technique.
 
 ### Q2: **B. Wei et al. 2022**
-*Chain-of-Thought Prompting Elicits Reasoning in Large Language Models* — NeurIPS 2022. Cite it correctly.
+*Chain-of-Thought Prompting Elicits Reasoning in Large Language Models*, NeurIPS 2022. Cite it correctly.
 
 ### Q3: **C. "Let's think step by step."**
 Kojima et al. 2022's zero-shot CoT trigger. The most famous 7 words in prompt engineering.
@@ -250,7 +250,7 @@ o1/o3 thinking tokens are real and metered. Reasoning model cost discipline is c
 ### Q9: **B. `budget_tokens`**
 Claude Extended Thinking parameter. Caps how many thinking tokens the model is allowed.
 
-### Q10: **B. Modest/no lift + higher cost — overkill**
+### Q10: **B. Modest/no lift + higher cost, overkill**
 Reply suggestions are trivial. CoT is not free. Route by task complexity.
 
 ### Q11: **B. "Would a smart human need to deliberate?"**
@@ -274,7 +274,7 @@ January 2025 release. Reproducible, downloadable, with visible reasoning traces.
 ### Q17: **B. Thought / Action / Observation**
 The canonical ReAct triple. Each iteration.
 
-### Q18: **B. Often most of the lift at lower N — eval to find right N**
+### Q18: **B. Often most of the lift at lower N, eval to find right N**
 The diminishing-returns curve flattens. N=5 captures a lot; eval for your task.
 
 ### Q19: **B. Reasoning model**
@@ -322,4 +322,4 @@ Routing by task complexity is the production pattern. The all-on-o3 option bankr
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Structured Outputs & JSON](../Module-04-Structured-Outputs-JSON/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Structured Outputs & JSON](../Module-04-Structured-Outputs-JSON/Reading.md)

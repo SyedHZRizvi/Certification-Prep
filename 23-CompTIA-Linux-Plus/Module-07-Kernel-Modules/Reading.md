@@ -1,10 +1,10 @@
 # Module 7: Kernel Modules, Devices & LVM ⚙️
 
-> **Why this module matters:** This is the "under the hood" module. The exam tests three converging topics: (1) kernel modules — loading drivers, querying `lsmod`, blacklisting; (2) device discovery — `/proc`, `/sys`, `udev`, `dmesg`, `lspci`/`lsusb`/`lsblk`; and (3) LVM — physical volumes, volume groups, logical volumes. LVM gets disproportionately tested (6+ questions on the real exam) because it's foundational to RHEL/CentOS installs. PBQs will show you a 4-disk system and ask you to assemble a 3-disk RAID-0 VG and carve a 100 GB LV.
+> **Why this module matters:** This is the "under the hood" module. The exam tests three converging topics: (1) kernel modules loading drivers, querying `lsmod`, blacklisting; (2) device discovery `/proc`, `/sys`, `udev`, `dmesg`, `lspci`/`lsusb`/`lsblk`; and (3) LVM, physical volumes, volume groups, logical volumes. LVM gets disproportionately tested (6+ questions on the real exam) because it's foundational to RHEL/CentOS installs. PBQs will show you a 4-disk system and ask you to assemble a 3-disk RAID-0 VG and carve a 100 GB LV.
 
 > **Prerequisites for this module.** You should be comfortable with:
-> - Module 1 (boot) — initramfs has kernel modules baked in
-> - Module 2 (filesystem) — LVM sits between block devices and filesystems
+> - Module 1 (boot), initramfs has kernel modules baked in
+> - Module 2 (filesystem), LVM sits between block devices and filesystems
 > - Running `sudo` and reading `dmesg` output
 
 ---
@@ -60,7 +60,7 @@ The exam will test this chain at every layer: kernel saw it (`dmesg`) → device
 
 ## 🧱 The Kernel + Modules Mental Model
 
-The Linux kernel is a single executable file (`/boot/vmlinuz-<version>`) but most drivers and many filesystems are loaded as **modules** — separate `.ko` files in `/lib/modules/<version>/`.
+The Linux kernel is a single executable file (`/boot/vmlinuz-<version>`) but most drivers and many filesystems are loaded as **modules**, separate `.ko` files in `/lib/modules/<version>/`.
 
 ```
                 ┌──────────────────────────────────────┐
@@ -126,7 +126,7 @@ After editing modprobe.d files OR adding new modules:
 
 ```bash
 depmod -a                                 # rebuild dep DB
-dracut -f                                 # rebuild initramfs (RHEL) — needed if module is used at boot
+dracut -f                                 # rebuild initramfs (RHEL), needed if module is used at boot
 update-initramfs -u                       # rebuild initramfs (Debian)
 ```
 
@@ -145,7 +145,7 @@ br_netfilter
 
 ## 🔌 Hardware Discovery
 
-### `lspci` — PCI devices (NICs, GPUs, RAID controllers)
+### `lspci`, PCI devices (NICs, GPUs, RAID controllers)
 
 ```bash
 lspci                                     # one-line per device
@@ -158,7 +158,7 @@ lspci -s 00:1f.2 -v                       # specific device by slot
 
 🎯 **Exam pattern:** *"Which kernel driver is bound to PCI device 04:00.0?"* → `lspci -k -s 04:00.0`.
 
-### `lsusb` — USB devices
+### `lsusb`, USB devices
 
 ```bash
 lsusb                                     # one-line per USB device
@@ -166,7 +166,7 @@ lsusb -v                                  # verbose
 lsusb -t                                  # tree (which port?)
 ```
 
-### `lsblk` — block devices
+### `lsblk`, block devices
 
 ```bash
 lsblk                                     # interfaces, partitions, mountpoints
@@ -176,7 +176,7 @@ lsblk -d                                  # disks only (skip partitions)
 lsblk -S                                  # SCSI/SATA topology
 ```
 
-### `lshw` — the comprehensive superset
+### `lshw`, the comprehensive superset
 
 ```bash
 lshw                                      # all hardware (long)
@@ -185,7 +185,7 @@ lshw -class disk                          # only disks
 lshw -class network                       # only network adapters
 ```
 
-### `dmidecode` — BIOS/firmware data (SMBIOS)
+### `dmidecode`, BIOS/firmware data (SMBIOS)
 
 ```bash
 dmidecode -t bios                         # BIOS info
@@ -198,9 +198,9 @@ dmidecode -t processor                    # CPU info from SMBIOS
 
 ---
 
-## 📜 dmesg — Kernel Ring Buffer
+## 📜 dmesg, Kernel Ring Buffer
 
-`dmesg` prints the kernel's ring buffer — messages about boot, drivers, hardware events, OOM kills, etc.
+`dmesg` prints the kernel's ring buffer, messages about boot, drivers, hardware events, OOM kills, etc.
 
 ```bash
 dmesg                                     # all kernel messages
@@ -221,7 +221,7 @@ On systemd, `journalctl -k` is the equivalent and is **persistent** if `Storage=
 
 Two virtual filesystems exposing the kernel's view of the world:
 
-### `/proc` — processes and runtime kernel info
+### `/proc`, processes and runtime kernel info
 
 ```bash
 cat /proc/cpuinfo                         # CPU details (flags, model)
@@ -237,12 +237,12 @@ cat /proc/<pid>/cmdline                   # the command
 ls -l /proc/<pid>/fd/                     # open file descriptors
 readlink /proc/<pid>/exe                  # the binary path
 
-# Tunables under /proc/sys/ — same hierarchy as sysctl
+# Tunables under /proc/sys/, same hierarchy as sysctl
 cat /proc/sys/net/ipv4/ip_forward         # is IP forwarding on?
-echo 1 > /proc/sys/net/ipv4/ip_forward    # turn on (NOT persistent — use /etc/sysctl.d/)
+echo 1 > /proc/sys/net/ipv4/ip_forward    # turn on (NOT persistent, use /etc/sysctl.d/)
 ```
 
-### `/sys` — devices, drivers, kernel objects (sysfs)
+### `/sys`, devices, drivers, kernel objects (sysfs)
 
 ```bash
 ls /sys/class/net/                        # NICs
@@ -257,7 +257,7 @@ ls /sys/firmware/efi/efivars              # UEFI variables (UEFI systems only)
 
 ---
 
-## ⚙️ udev — Dynamic Device Management
+## ⚙️ udev, Dynamic Device Management
 
 When the kernel detects a device (boot or hot-plug), it emits a **uevent** to udev. udev reads rules in `/etc/udev/rules.d/` and `/lib/udev/rules.d/`, then:
 
@@ -289,14 +289,14 @@ When an FTDI USB-serial dongle is plugged in, udev creates `/dev/ftdi-serial` (i
 
 ---
 
-## 💾 LVM — The Layered Storage Model
+## 💾 LVM, The Layered Storage Model
 
 LVM (Logical Volume Manager) sits between block devices and filesystems. It gives you:
 
-- **Dynamic resize** — grow/shrink filesystems online
-- **Pooling** — combine multiple disks into one logical pool
-- **Snapshots** — point-in-time copies for backup or testing
-- **Migration** — move data between physical disks without unmount
+- **Dynamic resize**, grow/shrink filesystems online
+- **Pooling**, combine multiple disks into one logical pool
+- **Snapshots**, point-in-time copies for backup or testing
+- **Migration**, move data between physical disks without unmount
 
 ### The three layers
 
@@ -378,7 +378,7 @@ sudo lvextend -r -L +100G /dev/vg_data/lv_app
 sudo xfs_growfs /srv/app
 ```
 
-🚨 **Trap on the exam:** XFS can only GROW. ext4 can grow AND shrink. Btrfs can both. Reducing an XFS filesystem requires a backup, mkfs, and restore — not online resize.
+🚨 **Trap on the exam:** XFS can only GROW. ext4 can grow AND shrink. Btrfs can both. Reducing an XFS filesystem requires a backup, mkfs, and restore, not online resize.
 
 ### Shrink an LV (ext4 only, with care)
 
@@ -395,7 +395,7 @@ sudo mount /srv/app
 ### Snapshots
 
 ```bash
-# Create a 10 GB snapshot of lv_app (CoW — uses space only as source changes)
+# Create a 10 GB snapshot of lv_app (CoW, uses space only as source changes)
 sudo lvcreate -L 10G -s -n lv_app_snap /dev/vg_data/lv_app
 
 # Mount snapshot read-only for backup
@@ -409,7 +409,7 @@ sudo umount /mnt/snap
 sudo lvremove /dev/vg_data/lv_app_snap
 ```
 
-🚨 **Trap on the exam:** If a snapshot fills up (the source LV churns more than the snapshot has room for), the snapshot is INVALIDATED — it can't be used. Size snapshots based on expected churn.
+🚨 **Trap on the exam:** If a snapshot fills up (the source LV churns more than the snapshot has room for), the snapshot is INVALIDATED, it can't be used. Size snapshots based on expected churn.
 
 ### Remove the whole stack
 
@@ -501,9 +501,9 @@ sudo findmnt /var/log/app                  # verify
 sudo lvcreate -L 2T -n lv_archive vg_data
 ```
 
-The `nofail` in fstab is what makes the boot resilient — if a disk in the LVM is somehow missing, the system won't drop to emergency mode (though LVM will likely refuse to activate the VG until the PV is back; `nofail` covers the corner case of the LV being temporarily unavailable).
+The `nofail` in fstab is what makes the boot resilient, if a disk in the LVM is somehow missing, the system won't drop to emergency mode (though LVM will likely refuse to activate the VG until the PV is back; `nofail` covers the corner case of the LV being temporarily unavailable).
 
-This is a typical PBQ — given 4 blank disks, build a resilient LVM stack and a future-extensible layout.
+This is a typical PBQ, given 4 blank disks, build a resilient LVM stack and a future-extensible layout.
 
 ---
 
@@ -511,16 +511,16 @@ This is a typical PBQ — given 4 blank disks, build a resilient LVM stack and a
 
 | Misconception | Reality |
 |---------------|---------|
-| "`insmod` resolves dependencies" | NO — only `modprobe` does. `insmod` is for one-off loading of a specific .ko. |
-| "Blacklisting a loaded module unloads it" | NO — blacklist prevents FUTURE loading. To unload now: `modprobe -r`. |
-| "`dmesg` is persistent across reboots" | NO — it's a RAM ring buffer. Use `journalctl -k` with persistent journal for history. |
-| "/proc and /sys are on disk" | NO — both are virtual (procfs and sysfs). |
+| "`insmod` resolves dependencies" | NO, only `modprobe` does. `insmod` is for one-off loading of a specific .ko. |
+| "Blacklisting a loaded module unloads it" | NO, blacklist prevents FUTURE loading. To unload now: `modprobe -r`. |
+| "`dmesg` is persistent across reboots" | NO, it's a RAM ring buffer. Use `journalctl -k` with persistent journal for history. |
+| "/proc and /sys are on disk" | NO, both are virtual (procfs and sysfs). |
 | "LVM and RAID are the same" | LVM is volume management; RAID is data redundancy. LVM CAN do RAID-like layouts but mdadm is the dedicated RAID tool. |
-| "`lvreduce` is safe online" | NO — shrinking requires unmount + fsck + shrink FS + shrink LV (in that order). |
-| "XFS supports shrink" | NO — XFS grows only. To shrink: backup, mkfs, restore. |
-| "Snapshots are persistent backups" | NO — snapshots share blocks with source. Lose the source = lose the snapshot. Use for short-term consistency, not long-term backup. |
-| "All PCI devices have a kernel driver loaded automatically" | Most do — but some need explicit `modprobe` (e.g., proprietary GPU drivers). `lspci -k` shows which. |
-| "After installing a new kernel, modules from the old kernel work" | NO — modules are per-kernel-version. Each kernel install gets its own `/lib/modules/<version>/` tree. |
+| "`lvreduce` is safe online" | NO, shrinking requires unmount + fsck + shrink FS + shrink LV (in that order). |
+| "XFS supports shrink" | NO, XFS grows only. To shrink: backup, mkfs, restore. |
+| "Snapshots are persistent backups" | NO, snapshots share blocks with source. Lose the source = lose the snapshot. Use for short-term consistency, not long-term backup. |
+| "All PCI devices have a kernel driver loaded automatically" | Most do, but some need explicit `modprobe` (e.g., proprietary GPU drivers). `lspci -k` shows which. |
+| "After installing a new kernel, modules from the old kernel work" | NO, modules are per-kernel-version. Each kernel install gets its own `/lib/modules/<version>/` tree. |
 
 ---
 
@@ -537,8 +537,8 @@ This is a typical PBQ — given 4 blank disks, build a resilient LVM stack and a
 | **`/etc/modprobe.d/`** | Admin module config (blacklist, options) |
 | **`/etc/modules-load.d/`** | Auto-load at boot |
 | **`dmesg`** | Kernel ring buffer |
-| **`/proc`** | procfs — processes + runtime kernel info |
-| **`/sys`** | sysfs — devices + drivers |
+| **`/proc`** | procfs, processes + runtime kernel info |
+| **`/sys`** | sysfs, devices + drivers |
 | **udev** | Dynamic device manager (creates /dev nodes) |
 | **udev rules** | `/etc/udev/rules.d/*.rules` for custom device naming/permissions |
 | **`udevadm trigger`** | Re-emit uevents |
@@ -568,7 +568,7 @@ This is a typical PBQ — given 4 blank disks, build a resilient LVM stack and a
 
 ---
 
-## 📊 Case Study — The Heartbleed Initramfs Problem (Spring 2014)
+## 📊 Case Study, The Heartbleed Initramfs Problem (Spring 2014)
 
 **Situation.** On 7 April 2014, the [Heartbleed CVE-2014-0160](https://heartbleed.com/) bug in OpenSSL was disclosed. Every Linux system running OpenSSL 1.0.1–1.0.1f needed the OpenSSL library patched, restarted, AND every long-running TLS process (web, mail, VPN) restarted to actually load the patched library. Sysadmins worldwide began emergency `apt-get upgrade && systemctl restart nginx postfix dovecot ...` runs.
 
@@ -580,15 +580,15 @@ This is a typical PBQ — given 4 blank disks, build a resilient LVM stack and a
 
 1. **When to rebuild the initramfs:** kernel update, `/etc/crypttab` change, LVM/RAID layout change, change to early-boot modules.
 2. **Commands to rebuild:** `dracut -f` (RHEL family) or `update-initramfs -u` (Debian family).
-3. **Symptom recognition:** boot drops to dracut emergency shell with "cannot find root device" or "failed to start LUKS volume" — almost always an initramfs problem.
+3. **Symptom recognition:** boot drops to dracut emergency shell with "cannot find root device" or "failed to start LUKS volume", almost always an initramfs problem.
 4. **Recovery workflow:** boot rescue image → mount target root → `chroot` → rebuild initramfs → reboot.
 
-These all show up in PBQs as "after upgrading X, the system fails to boot — what command would have prevented it?"
+These all show up in PBQs as "after upgrading X, the system fails to boot, what command would have prevented it?"
 
 **Discussion (Socratic).**
 - **Q1:** Should distros automatically rebuild the initramfs on any package upgrade that touches early-boot dependencies? What's the cost (CPU, time, disk churn) vs the safety benefit?
-- **Q2:** A common practice is to keep multiple kernels installed (the previous + current) for rollback. How does this interact with initramfs — is the OLD kernel's initramfs untouched by the upgrade?
-- **Q3:** Argue for and against "all storage drivers should be built into the kernel as monolithic, not modules" — eliminating the initramfs entirely. What does this cost? What does it save?
+- **Q2:** A common practice is to keep multiple kernels installed (the previous + current) for rollback. How does this interact with initramfs, is the OLD kernel's initramfs untouched by the upgrade?
+- **Q3:** Argue for and against "all storage drivers should be built into the kernel as monolithic, not modules", eliminating the initramfs entirely. What does this cost? What does it save?
 
 ---
 
@@ -600,16 +600,16 @@ You now know:
 - 🛠️ **Module commands**: `lsmod`, `modinfo`, `modprobe`, `depmod`, blacklist via `/etc/modprobe.d/`
 - 🔌 **Hardware discovery**: `lspci -k`, `lsusb`, `lsblk -f`, `lshw`, `dmidecode`
 - 📜 **`dmesg`** for kernel ring buffer (and `journalctl -k` for persistence)
-- 📁 **`/proc` vs `/sys`** — runtime kernel info vs the device tree
-- ⚙️ **udev** — `/etc/udev/rules.d/`, `udevadm trigger`, `udevadm monitor`
-- 💾 **LVM** — PV/VG/LV layers, create/extend/snapshot, online resize
+- 📁 **`/proc` vs `/sys`**, runtime kernel info vs the device tree
+- ⚙️ **udev**, `/etc/udev/rules.d/`, `udevadm trigger`, `udevadm monitor`
+- 💾 **LVM**, PV/VG/LV layers, create/extend/snapshot, online resize
 - 💿 Partitioning with `parted`/`fdisk`/`gdisk`, then `partprobe`
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 8 — Linux Security & Hardening](../Module-08-Security/Reading.md)
+4. ➡️ Move on: [Module 8, Linux Security & Hardening](../Module-08-Security/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 1](../Module-01-Boot-Systemd/Reading.md) covered the initramfs; this module shows what's inside it; [Module 8](../Module-08-Security/Reading.md) covers LUKS (the encryption that's unlocked by initramfs modules).
@@ -620,14 +620,14 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 [The Linux Kernel Documentation — Modules](https://www.kernel.org/doc/html/latest/admin-guide/module-signing.html) and [kobject/sysfs](https://www.kernel.org/doc/html/latest/core-api/kobject.html).
+- 📄 [The Linux Kernel Documentation, Modules](https://www.kernel.org/doc/html/latest/admin-guide/module-signing.html) and [kobject/sysfs](https://www.kernel.org/doc/html/latest/core-api/kobject.html).
 - 📄 [Filesystem Hierarchy Standard §3 (/proc, /sys, /dev)](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html).
-- 📄 [Greg Kroah-Hartman, *Writing udev rules*](http://www.reactivated.net/writing_udev_rules.html) — the canonical reference.
-- 📄 [Red Hat LVM Administration Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/index) — authoritative LVM docs.
-- 📄 [lvm(8), pvcreate(8), vgcreate(8), lvcreate(8), lvextend(8) man pages](https://man7.org/linux/man-pages/) — the man pages are the truth.
+- 📄 [Greg Kroah-Hartman, *Writing udev rules*](http://www.reactivated.net/writing_udev_rules.html), the canonical reference.
+- 📄 [Red Hat LVM Administration Guide](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_logical_volumes/index), authoritative LVM docs.
+- 📄 [lvm(8), pvcreate(8), vgcreate(8), lvcreate(8), lvextend(8) man pages](https://man7.org/linux/man-pages/), the man pages are the truth.
 
 **Practitioner / exam:**
-- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023) — Chapters 9 & 17.
-- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021) — Chapter 3 (Devices) and Chapter 8 (Processes & Resource Utilization).
-- 📖 Christopher Negus, *Linux Bible* (Wiley, 11th ed., 2020) — Chapter 12 (LVM) + Chapter 13 (Drives & Filesystems).
-- 📖 Evi Nemeth et al., *UNIX and Linux System Administration Handbook* (5th ed., 2017) — the storage chapter is the most thorough in print.
+- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023), Chapters 9 & 17.
+- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021), Chapter 3 (Devices) and Chapter 8 (Processes & Resource Utilization).
+- 📖 Christopher Negus, *Linux Bible* (Wiley, 11th ed., 2020), Chapter 12 (LVM) + Chapter 13 (Drives & Filesystems).
+- 📖 Evi Nemeth et al., *UNIX and Linux System Administration Handbook* (5th ed., 2017), the storage chapter is the most thorough in print.

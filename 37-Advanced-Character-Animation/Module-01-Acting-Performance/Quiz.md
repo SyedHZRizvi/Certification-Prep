@@ -62,9 +62,9 @@ D. To remember his promise to Ellie
 ---
 
 ### Q8. The "planning trap" is most dangerous for animators at which career stage?
-A. First 6 months — they have too little technique to plan  
-B. Years 3–7 — enough technique to execute a mediocre plan perfectly  
-C. Years 15+ — overconfidence after decades of experience  
+A. First 6 months, they have too little technique to plan  
+B. Years 3–7, enough technique to execute a mediocre plan perfectly  
+C. Years 15+, overconfidence after decades of experience  
 D. It only affects directors, not production animators  
 
 ---
@@ -184,7 +184,7 @@ D. A test of the animator's knowledge of the twelve principles
 ### Q23. When is it **wrong** to use the Meisner approach of "don't plan, discover"?
 A. For short dialogue shots under 3 seconds  
 B. For crowd shots where individual performance is irrelevant  
-C. Never — it applies to all animation regardless of context  
+C. Never, it applies to all animation regardless of context  
 D. For highly technical action shots where physics accuracy is paramount  
 
 ---
@@ -200,28 +200,28 @@ D. Direct a colleague to perform the scene instead
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — The magic "if": what would you truthfully do in this situation?
-Q2.  B — Objective is scene-specific, not story-wide (that's Super-Objective)
-Q3.  B — Indicating = showing rather than experiencing
-Q4.  C — Meisner: discover through genuine reaction, don't pre-plan
-Q5.  D — Spontaneous pass = before a plan; raw truthfulness
-Q6.  B — Reference = truth study, not motion tracing
-Q7.  C — Carl's objective is the mundane act of making breakfast (grief leaks through)
-Q8.  B — Years 3–7: enough technique to execute mediocre plans perfectly
-Q9.  B — Smile reaches mouth before eyes, 0.5-second upper-face delay
-Q10. C — Subtext = gap between stated meaning and felt meaning
-Q11. C — 6-frame micro-expression of collapse + sharp breath recovery
-Q12. B — Super-Objective: the overarching want across the entire story
-Q13. C — Increasing blink rate in the second verse = anxiety signal
-Q14. B — Found = spontaneous; staged = confirming a predetermined plan
-Q15. A — Laban: effort qualities — weight, time, space, flow
-Q16. B — Through-line: chain of objectives building toward super-objective
-Q17. B — Still → micro-swallow → eyes flick down-left → recovery
-Q18. B — Given Circumstances = totality of facts before action begins
-Q19. C — Reference before thumbnails + one "crazy take" per session
-Q20. B — Internal monologue surfaces unexpected, non-intellectual performance choices
-Q21. B — Performed strength (spine) vs hidden tension (scapulae) = subtext in body
-Q22. B — Pete Docter's emotional authenticity challenge for the UP opening
-Q23. B — Crowd shots: individual performance nuance is irrelevant at that scale
-Q24. C — Forget Take 1; allow genuine, unplanned responses to emerge
+Q1.  C, The magic "if": what would you truthfully do in this situation?
+Q2.  B, Objective is scene-specific, not story-wide (that's Super-Objective)
+Q3.  B, Indicating = showing rather than experiencing
+Q4.  C, Meisner: discover through genuine reaction, don't pre-plan
+Q5.  D, Spontaneous pass = before a plan; raw truthfulness
+Q6.  B, Reference = truth study, not motion tracing
+Q7.  C, Carl's objective is the mundane act of making breakfast (grief leaks through)
+Q8.  B, Years 3–7: enough technique to execute mediocre plans perfectly
+Q9.  B, Smile reaches mouth before eyes, 0.5-second upper-face delay
+Q10. C, Subtext = gap between stated meaning and felt meaning
+Q11. C, 6-frame micro-expression of collapse + sharp breath recovery
+Q12. B, Super-Objective: the overarching want across the entire story
+Q13. C, Increasing blink rate in the second verse = anxiety signal
+Q14. B, Found = spontaneous; staged = confirming a predetermined plan
+Q15. A, Laban: effort qualities, weight, time, space, flow
+Q16. B, Through-line: chain of objectives building toward super-objective
+Q17. B, Still → micro-swallow → eyes flick down-left → recovery
+Q18. B, Given Circumstances = totality of facts before action begins
+Q19. C, Reference before thumbnails + one "crazy take" per session
+Q20. B, Internal monologue surfaces unexpected, non-intellectual performance choices
+Q21. B, Performed strength (spine) vs hidden tension (scapulae) = subtext in body
+Q22. B, Pete Docter's emotional authenticity challenge for the UP opening
+Q23. B, Crowd shots: individual performance nuance is irrelevant at that scale
+Q24. C, Forget Take 1; allow genuine, unplanned responses to emerge
 ```

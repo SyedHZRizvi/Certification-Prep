@@ -20,7 +20,7 @@
 
 # 🎥 Module 10 Videos: Capstone Launch + Real Campaigns
 
-> **How to use:** These are case studies and operational walkthroughs from real practitioners who've shared their first $200-$1,000 campaigns. Watch FOR INSPIRATION — then go run yours.
+> **How to use:** These are case studies and operational walkthroughs from real practitioners who've shared their first $200-$1,000 campaigns. Watch FOR INSPIRATION, then go run yours.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">$200 Meta Ads Campaign — Full Walkthrough</p>
+      <p class="vg-title">$200 Meta Ads Campaign, Full Walkthrough</p>
       <p class="vg-creator">Ben Heath</p>
       <span class="vg-duration">⏱ 16 min · End-to-end execution</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Marketing Post-Mortem — What to Include</p>
+      <p class="vg-title">Marketing Post-Mortem, What to Include</p>
       <p class="vg-creator">Various growth leaders</p>
       <span class="vg-duration">⏱ 12 min · Template + examples</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">DTC Founders — Lessons From First Ads</p>
+      <p class="vg-title">DTC Founders, Lessons From First Ads</p>
       <p class="vg-creator">DTC Newsletter + DTC podcasts</p>
       <span class="vg-duration">⏱ 22 min · Multiple founder stories</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Triple Whale / Hyros — Attribution for Capstones</p>
+      <p class="vg-title">Triple Whale / Hyros, Attribution for Capstones</p>
       <p class="vg-creator">Triple Whale + Hyros panels</p>
       <span class="vg-duration">⏱ 18 min · Beyond Pixel attribution</span>
     </div>

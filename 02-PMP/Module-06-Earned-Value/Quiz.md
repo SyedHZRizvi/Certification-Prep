@@ -152,7 +152,7 @@ D. +$25K
 
 ### Q1: B (EV - AC)
 ### Q2: A (EV / PV)
-### Q3: C (CPI = $0.85 earned per $1 spent — over budget)
+### Q3: C (CPI = $0.85 earned per $1 spent, over budget)
 ### Q4: B (>1 = ahead)
 ### Q5: B (BAC / CPI)
 ### Q6: B (EAC - AC = remaining work cost)
@@ -165,11 +165,11 @@ D. +$25K
 ### Q13: **A. -$30K**
 CV = EV - AC = $120K - $150K = -$30K. Negative CV indicates the project is over budget.
 ### Q14: **B. 0.80**
-CPI = EV / AC = $120K / $150K = 0.80. The team earns only $0.80 of value for every $1.00 spent — cost-inefficient.
+CPI = EV / AC = $120K / $150K = 0.80. The team earns only $0.80 of value for every $1.00 spent, cost-inefficient.
 ### Q15: **B. $500K**
 EAC (default) = BAC / CPI = $600K / 1.20 = $500K. Because CPI > 1, the project is forecast to finish under budget.
 ### Q16: **B. 0.80**
-SPI = EV / PV = $200K / $250K = 0.80. The project is progressing at only 80% of the planned schedule pace — behind schedule.
+SPI = EV / PV = $200K / $250K = 0.80. The project is progressing at only 80% of the planned schedule pace, behind schedule.
 ### Q17: **B. -$200K**
 VAC = BAC - EAC = $800K - $1,000K = -$200K. A negative VAC means the project is forecast to finish $200K over budget.
 ### Q18: **B. $450K**
@@ -230,8 +230,8 @@ CPI = EV/AC = $100K/$125K = 0.80. EAC = BAC/CPI = $250K/0.80 = $312.5K. VAC = BA
 
 ## Bonus questions (higher-Bloom)
 
-### Q25. Mars Climate Orbiter (from the case study). Your project's EVM dashboard shows CPI = 1.05 and SPI = 1.02 — both green. A junior engineer raises a concern that two subsystems may be using inconsistent units. Using PMBOK 7's Measurement principle, what is the MOST defensible PM action? *(Evaluate)*
-A. Dismiss the concern — EVM is green.
+### Q25. Mars Climate Orbiter (from the case study). Your project's EVM dashboard shows CPI = 1.05 and SPI = 1.02, both green. A junior engineer raises a concern that two subsystems may be using inconsistent units. Using PMBOK 7's Measurement principle, what is the MOST defensible PM action? *(Evaluate)*
+A. Dismiss the concern, EVM is green.
 B. Reduce IV&V cycles further to "lock in the cost win."
 C. Treat EVM as necessary-but-not-sufficient: launch an immediate interface-control review against the unit-convention documentation; do not allow the green metrics to suppress signal-from-the-team; document the concern in the risk register; report transparently to the sponsor that EVM does not cover interface integrity; if needed, invoke the Code of Ethics' Responsibility provision to refuse to proceed without resolution.
 D. Tell the engineer to "let the metrics speak."
@@ -243,7 +243,7 @@ C. Terminate without analysis.
 D. Triple the team to spend faster.
 
 ### Q27. A regulated medical-device project shows CPI = 1.10 but a known unknown (an upcoming FDA inspection) has been raised by QA. The sponsor proposes celebrating the cost win in a board update. What's the MOST defensible PM action? *(Evaluate)*
-A. Celebrate — CPI is great.
+A. Celebrate, CPI is great.
 B. Hold off on celebration: report CPI honestly but contextualize it with the upcoming inspection risk; present an EAC that includes Contingency for inspection-driven rework (probabilistically weighted); cite the Code of Ethics' Honesty value in support of presenting both data points to the board; do not let a single good metric override transparent risk communication.
 C. Suppress the inspection risk.
 D. Resign.
@@ -255,9 +255,9 @@ C. Adapt: define "value units" as completed-to-Definition-of-Done backlog items 
 D. Use story points alone as "value."
 
 ### Q29. A senior engineer quits at sprint 8 of 12. CPI = 1.02 currently, but the engineer's work was on the critical path. The default EAC = BAC/CPI predicts under-budget completion. Which EAC variant should you use, and why? *(Analyze)*
-A. EAC = BAC / CPI (default) — it predicts the optimistic outcome.
-B. EAC = AC + (BAC - EV) / (CPI × SPI) and/or EAC = AC + Bottom-up ETC: the default assumes current cost efficiency continues, but the engineer's departure invalidates that assumption — both the CPI×SPI variant (accounts for forecasted schedule slip) and a re-estimated bottom-up ETC capture the post-event reality; present both to the sponsor with the assumption stated.
-C. EAC = AC + (BAC - EV) — assumes future at original rate, ignoring the loss.
+A. EAC = BAC / CPI (default), it predicts the optimistic outcome.
+B. EAC = AC + (BAC - EV) / (CPI × SPI) and/or EAC = AC + Bottom-up ETC: the default assumes current cost efficiency continues, but the engineer's departure invalidates that assumption, both the CPI×SPI variant (accounts for forecasted schedule slip) and a re-estimated bottom-up ETC capture the post-event reality; present both to the sponsor with the assumption stated.
+C. EAC = AC + (BAC - EV), assumes future at original rate, ignoring the loss.
 D. Refuse to re-forecast.
 
 ```

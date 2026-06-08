@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Silhouette Readability — The Black Shape Test</p>
+      <p class="vg-title">Silhouette Readability, The Black Shape Test</p>
       <p class="vg-creator">Bloop Animation / Character Design References</p>
       <span class="vg-duration">⏱ 15 min · Why silhouette determines design quality</span>
     </div>
@@ -51,7 +51,7 @@
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Character Turnarounds — Model Sheets for Animation</p>
+      <p class="vg-title">Character Turnarounds, Model Sheets for Animation</p>
       <p class="vg-creator">Animation Career Review / NoBullshit Art</p>
       <span class="vg-duration">⏱ 15 min · Front, 3/4, side, back in consistent proportion</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Lion King Character Design — Shape Language Analysis</p>
+      <p class="vg-title">Lion King Character Design, Shape Language Analysis</p>
       <p class="vg-creator">Corridor Crew / Disney art analysis</p>
       <span class="vg-duration">⏱ 18 min · Simba vs Scar visual design breakdown</span>
     </div>
@@ -74,7 +74,7 @@
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Designing Characters for Animation — Movement-First Approach</p>
+      <p class="vg-title">Designing Characters for Animation, Movement-First Approach</p>
       <p class="vg-creator">School of Motion / Bloop Animation</p>
       <span class="vg-duration">⏱ 18 min · What changes when the character needs to animate</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Arcane — Character Design Breakdown</p>
+      <p class="vg-title">Arcane, Character Design Breakdown</p>
       <p class="vg-creator">Corridor Crew / ArtStation</p>
       <span class="vg-duration">⏱ 20 min · How Jinx and Vi's designs communicate character</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Pixar Character Design Process — Inside Out</p>
+      <p class="vg-title">Pixar Character Design Process, Inside Out</p>
       <p class="vg-creator">Pixar Animation Studios</p>
       <span class="vg-duration">⏱ 20 min · Joy vs Sadness design contrast as storytelling</span>
     </div>

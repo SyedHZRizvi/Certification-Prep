@@ -28,7 +28,7 @@ poller = client.begin_analyze_document(
 
 ---
 
-## 🧠 Azure AI Search — DISKS Model
+## 🧠 Azure AI Search, DISKS Model
 
 ```
   ┌──────────────┐  pull   ┌──────────┐ enrich  ┌──────────┐
@@ -130,7 +130,7 @@ poller = client.begin_analyze_document(
 ## ✏️ Quick Self-Check
 
 1. DISKS spelled out? ___
-2. Custom Template vs Neural — which for varying layouts? ___
+2. Custom Template vs Neural, which for varying layouts? ___
 3. text-embedding-3-large dimensions? ___
 4. Minimum SKU for semantic ranker? ___
 5. Default vector algorithm + distance? ___

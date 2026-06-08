@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: LLM Architecture & Tokenization
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. The Karpathy two-parter is the centerpiece — give it your full attention; it's the single best free transformer tutorial in existence.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. The Karpathy two-parter is the centerpiece, give it your full attention; it's the single best free transformer tutorial in existence.
 
 ## ⭐ Essential watching (~5–6 hrs, but it's worth it)
 
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Stanford CS25 — Transformers United</p>
+      <p class="vg-title">Stanford CS25, Transformers United</p>
       <p class="vg-creator">Stanford Online</p>
       <span class="vg-duration">⏱ Lecture series · Frontier guest speakers</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Attention Is All You Need — paper + code</p>
+      <p class="vg-title">Attention Is All You Need, paper + code</p>
       <p class="vg-creator">Umar Jamil</p>
       <span class="vg-duration">⏱ 2h · Paper-walkthrough style</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Mixture of Experts — Sparse MoE explained</p>
+      <p class="vg-title">Mixture of Experts, Sparse MoE explained</p>
       <p class="vg-creator">Yannic Kilcher</p>
       <span class="vg-duration">⏱ 45m · MoE deep-dive</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">FlashAttention — Tri Dao's talk</p>
+      <p class="vg-title">FlashAttention, Tri Dao's talk</p>
       <p class="vg-creator">Tri Dao / Stanford MLSys</p>
       <span class="vg-duration">⏱ 40m · The kernel that made long context cheap</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Mamba — Linear-Time State Space Models</p>
+      <p class="vg-title">Mamba, Linear-Time State Space Models</p>
       <p class="vg-creator">Albert Gu</p>
       <span class="vg-duration">⏱ 50m · The Mamba author</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">RoPE — Rotary Positional Embeddings</p>
+      <p class="vg-title">RoPE, Rotary Positional Embeddings</p>
       <p class="vg-creator">Eleuther / community</p>
       <span class="vg-duration">⏱ 20m · The position scheme</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Anthropic prompt caching — how it works</p>
+      <p class="vg-title">Anthropic prompt caching, how it works</p>
       <p class="vg-creator">Anthropic / DevRel</p>
       <span class="vg-duration">⏱ 15m · KV-cache reuse</span>
     </div>

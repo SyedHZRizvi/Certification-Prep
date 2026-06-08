@@ -7,12 +7,12 @@
 ## 🏛️ The 6 Well-Architected Pillars (in order)
 
 ```
-1. Operational Excellence  — Run, monitor, improve systems
-2. Security                — Protect data, identities, assets
-3. Reliability             — Recover from failure, scale dynamically
-4. Performance Efficiency  — Use resources efficiently
-5. Cost Optimization       — Right-size, avoid waste
-6. Sustainability          — Minimize environmental impact (added 2021)
+1. Operational Excellence , Run, monitor, improve systems
+2. Security               , Protect data, identities, assets
+3. Reliability            , Recover from failure, scale dynamically
+4. Performance Efficiency , Use resources efficiently
+5. Cost Optimization      , Right-size, avoid waste
+6. Sustainability         , Minimize environmental impact (added 2021)
 ```
 
 🧠 **"Old Sea Rats Pop Cool Sodas"**
@@ -37,7 +37,7 @@
 | **Retire** | Decommission | Trivial |
 | **Retain** | Keep on-prem (for now) | Trivial |
 
-🧠 Pick the right R per app — most migrations use 2–3 different Rs.
+🧠 Pick the right R per app, most migrations use 2–3 different Rs.
 
 ---
 
@@ -57,7 +57,7 @@
 
 ---
 
-## ☁️ Cloud Adoption Framework (CAF) — 6 Perspectives
+## ☁️ Cloud Adoption Framework (CAF), 6 Perspectives
 
 ```
 1. Business
@@ -122,7 +122,7 @@ Specialty:     SCS, ANS, MLA, MLS, DBS, DAS, PAS
 Wrong:
 ❌ "5 pillars" (it's 6 since 2021)
 ❌ "DMS migrates servers" (DMS = databases)
-❌ "All migrations should Refactor" (no — pick the right R)
+❌ "All migrations should Refactor" (no, pick the right R)
 ❌ "Retire = keep on-prem" (Retire = decommission)
 
 ---

@@ -1,7 +1,7 @@
-# 🧪 Final Mock Exam — AI Digital Marketing Strategist (Full Length)
+# 🧪 Final Mock Exam, AI Digital Marketing Strategist (Full Length)
 
-> **Conditions:** Set a 100-minute timer. 75 questions. Treat it like the real thing — no notes, no Google, no breaks.
-> **Pass mark:** 60/75 (80%). This is the advanced course's final exam — the bar is higher than Foundations or Practitioner.
+> **Conditions:** Set a 100-minute timer. 75 questions. Treat it like the real thing, no notes, no Google, no breaks.
+> **Pass mark:** 60/75 (80%). This is the advanced course's final exam, the bar is higher than Foundations or Practitioner.
 > Take this AFTER you have scored ≥80% on Practice-Exam-1 and Practice-Exam-2.
 
 ---
@@ -267,7 +267,7 @@ C. >95%
 D. Always 50%
 
 ### 44. The strategist's answer to "MMM or MTA?" is:
-A. "It depends — MMM for cross-channel allocation; MTA for within-channel tactics; both calibrated by incrementality"
+A. "It depends, MMM for cross-channel allocation; MTA for within-channel tactics; both calibrated by incrementality"
 B. MTA
 C. MMM
 D. Neither
@@ -339,7 +339,7 @@ C. Thompson Sampling
 D. Random
 
 ### 56. Contextual bandit decision adds:
-A. Nothing — same as bandit
+A. Nothing, same as bandit
 B. Weekly retraining
 C. Deep neural network
 D. User / context features in addition to variant
@@ -503,18 +503,18 @@ After your final mock attempt:
 4. **Retake** the mock exam after 5 days.
 5. **Don't book the real exam** until you're consistently above 80% on the final mock.
 
-This is the advanced course. The bar is higher because the next role is harder. You're not just learning to pass an exam — you're becoming the person who runs measurement strategy. Be patient with yourself and persistent with the material.
+This is the advanced course. The bar is higher because the next role is harder. You're not just learning to pass an exam, you're becoming the person who runs measurement strategy. Be patient with yourself and persistent with the material.
 
 ---
 
 ## 🎓 Recommended Real Certifications After This Course
 
-1. **Google Analytics 4 Certification** (Skillshop, free) — direct match to Module 3.
-2. **Meta Marketing Science Professional** ($150, Meta Blueprint) — Modules 4, 5, 8, 9.
-3. **Optional:** **CXL Digital Analytics Mini-Degree** (paid) — depth in CRO + analytics.
-4. **Optional:** **Reforge Marketing Analytics Sprint** (paid) — strategic frame.
+1. **Google Analytics 4 Certification** (Skillshop, free), direct match to Module 3.
+2. **Meta Marketing Science Professional** ($150, Meta Blueprint), Modules 4, 5, 8, 9.
+3. **Optional:** **CXL Digital Analytics Mini-Degree** (paid), depth in CRO + analytics.
+4. **Optional:** **Reforge Marketing Analytics Sprint** (paid), strategic frame.
 
-You've completed a 6-month, 160-hour curriculum at the depth of a graduate course. Your next move is execution — apply the toolkit in a real role or real project. The frameworks alone don't pay. The work does.
+You've completed a 6-month, 160-hour curriculum at the depth of a graduate course. Your next move is execution, apply the toolkit in a real role or real project. The frameworks alone don't pay. The work does.
 
 Good luck. 🎯
 
@@ -522,377 +522,377 @@ Good luck. 🎯
 
 ## Detailed answer rationales
 
-**Q1. Answer: A — Segmentation, Targeting, Positioning.**
-- **Why A is correct.** Smith (1956), operationalized by Kotler — the canonical strategic-marketing trio.
-- **Why the other options are wrong.** B (Strategy/Tactics/Planning — different abstractions), C (Stakeholders/Touchpoints/Personas — UX research vocabulary), D (Sustainability/Trust/Promise — brand language).
+**Q1. Answer: A, Segmentation, Targeting, Positioning.**
+- **Why A is correct.** Smith (1956), operationalized by Kotler, the canonical strategic-marketing trio.
+- **Why the other options are wrong.** B (Strategy/Tactics/Planning different abstractions), C (Stakeholders/Touchpoints/Personas UX research vocabulary), D (Sustainability/Trust/Promise, brand language).
 - **Exam-takeaway.** STP literal expansion is exam-day reflex material.
 
-**Q2. Answer: C — Inexpensive.**
+**Q2. Answer: C, Inexpensive.**
 - **Why C is correct.** ISADA = Identifiable, Substantial, Accessible, Differentiable, Actionable. Cost is not in the criteria.
 - **Why the other options are wrong.** A, B, D are valid ISADA criteria.
 - **Exam-takeaway.** ISADA.
 
-**Q3. Answer: D — 50–70% (sandbagged if always 100%).**
+**Q3. Answer: D, 50–70% (sandbagged if always 100%).**
 - **Why D is correct.** Doerr's prescribed attainment range.
-- **Why the other options are wrong.** A (100% — sandbagging), B (none defined — Doerr defines one), C (25–50% — execution failure).
+- **Why the other options are wrong.** A (100% sandbagging), B (none defined Doerr defines one), C (25–50%, execution failure).
 - **Exam-takeaway.** 0.6–0.8 is healthy; 1.0 = red flag.
 
-**Q4. Answer: A — Initiative.**
+**Q4. Answer: A, Initiative.**
 - **Why A is correct.** "Ship X by date Y" is a project/activity, not a measurable outcome.
-- **Why the other options are wrong.** B (KR — outcome metric), C (Objective — qualitative direction), D (KPI — recurring measurement metric).
+- **Why the other options are wrong.** B (KR outcome metric), C (Objective qualitative direction), D (KPI, recurring measurement metric).
 - **Exam-takeaway.** Initiatives drive KRs; don't list one in the other's slot.
 
-**Q5. Answer: D — JTBD + STP + OKR design.**
+**Q5. Answer: D, JTBD + STP + OKR design.**
 - **Why D is correct.** The Spotify Wrapped strategic stack.
 - **Why the other options are wrong.** A (situational frames, not operating ones), B (lifecycle/funnel frames), C (corporate/industry frames).
 - **Exam-takeaway.** Wrapped = JTBD + STP + OKR. Memorize.
 
-**Q6. Answer: A — Entrants, suppliers, buyers, substitutes, rivalry.**
+**Q6. Answer: A, Entrants, suppliers, buyers, substitutes, rivalry.**
 - **Why A is correct.** Porter's Five Forces (Porter 1979, *HBR*).
 - **Why the other options are wrong.** B (digital metrics), C (PDCA), D (SWOT).
 - **Exam-takeaway.** Memorize the five exactly.
 
-**Q7. Answer: A — Product development.**
+**Q7. Answer: A, Product development.**
 - **Why A is correct.** Ansoff: existing market × new product = Product development.
-- **Why the other options are wrong.** B (Market development — same product / new market), C (Penetration — both existing), D (Diversification — both new).
+- **Why the other options are wrong.** B (Market development same product / new market), C (Penetration both existing), D (Diversification, both new).
 - **Exam-takeaway.** Ansoff 2×2: memorize all four cells.
 
-**Q8. Answer: D — Low share, high growth.**
+**Q8. Answer: D, Low share, high growth.**
 - **Why D is correct.** Question Marks in BCG.
 - **Why the other options are wrong.** A (Star), B (Cash Cow), C (Dog).
 - **Exam-takeaway.** Question Marks demand decision: invest or divest.
 
-**Q9. Answer: C — Push, pull, anxiety, habit.**
+**Q9. Answer: C, Push, pull, anxiety, habit.**
 - **Why C is correct.** JTBD switching forces (Christensen).
 - **Why the other options are wrong.** A (AIDA funnel), B (PDCA), D (digital marketing metrics).
 - **Exam-takeaway.** Marketing's job: amplify Push/Pull, reduce Anxiety/Habit.
 
-**Q10. Answer: B — Friend-7-days (users with 7+ friends in 10 days).**
-- **Why B is correct.** Facebook's famous 2007 North Star — the activation predictor.
-- **Why the other options are wrong.** A (sign-ups — vanity), C (DAU — too broad), D (revenue — lagging).
+**Q10. Answer: B, Friend-7-days (users with 7+ friends in 10 days).**
+- **Why B is correct.** Facebook's famous 2007 North Star, the activation predictor.
+- **Why the other options are wrong.** A (sign-ups vanity), C (DAU too broad), D (revenue, lagging).
 - **Exam-takeaway.** North Stars are threshold-anchored.
 
-**Q11. Answer: D — Real-time bidding capability.**
+**Q11. Answer: D, Real-time bidding capability.**
 - **Why D is correct.** Not a CDP property. RTB is a DMP/DSP function.
 - **Why the other options are wrong.** A, B, C are all CDP Institute properties.
 - **Exam-takeaway.** Memorize the CDP Institute's 5 properties.
 
-**Q12. Answer: D — Packaged, composable, self-hosted/OSS, embedded-in-marketing-cloud.**
+**Q12. Answer: D, Packaged, composable, self-hosted/OSS, embedded-in-marketing-cloud.**
 - **Why D is correct.** The four canonical CDP patterns.
 - **Why the other options are wrong.** A (pricing), B (deployment topology), C (B2x splits).
 - **Exam-takeaway.** Pattern × example vendor mappings are exam-bait.
 
-**Q13. Answer: C — Reverse ETL.**
+**Q13. Answer: C, Reverse ETL.**
 - **Why C is correct.** Hightouch + Census are the category leaders.
-- **Why the other options are wrong.** A (CDPs — Segment, mParticle), B (CRMs — Salesforce), D (DSPs — DV360, TTD).
+- **Why the other options are wrong.** A (CDPs Segment, mParticle), B (CRMs Salesforce), D (DSPs, DV360, TTD).
 - **Exam-takeaway.** Reverse ETL ≠ ETL; warehouse → activation.
 
-**Q14. Answer: D — 25–35%.**
+**Q14. Answer: D, 25–35%.**
 - **Why D is correct.** iOS 14.5 (April 2021) ATT settled here.
-- **Why the other options are wrong.** A (5–10% — too low), B (>90% — far too high), C (50–70% — too high).
+- **Why the other options are wrong.** A (5–10% too low), B (>90% far too high), C (50–70%, too high).
 - **Exam-takeaway.** 25–35% IDFA opt-in is the industry baseline.
 
-**Q15. Answer: C — 5–25%.**
+**Q15. Answer: C, 5–25%.**
 - **Why C is correct.** Server-side recovers technical loss, not consent loss.
-- **Why the other options are wrong.** A (~100% — fantasy), B (60–80% — overstates), D (None — understates).
+- **Why the other options are wrong.** A (~100% fantasy), B (60–80% overstates), D (None, understates).
 - **Exam-takeaway.** Server-side does NOT recover consent loss.
 
-**Q16. Answer: C — Managed hosting + power-ups for server-side GTM.**
+**Q16. Answer: C, Managed hosting + power-ups for server-side GTM.**
 - **Why C is correct.** Stape.io's positioning.
-- **Why the other options are wrong.** A (reverse ETL — Hightouch/Census), B (data warehouse), D (DMP — declining category).
+- **Why the other options are wrong.** A (reverse ETL Hightouch/Census), B (data warehouse), D (DMP declining category).
 - **Exam-takeaway.** Stape = sGTM-as-a-service.
 
-**Q17. Answer: A — Regulators treat it as "tracking" requiring consent.**
+**Q17. Answer: A, Regulators treat it as "tracking" requiring consent.**
 - **Why A is correct.** GDPR + emerging US state laws classify probabilistic ID as tracking.
-- **Why the other options are wrong.** B (cost — irrelevant), C (accuracy — actually improving), D (CDPs still support it).
+- **Why the other options are wrong.** B (cost irrelevant), C (accuracy actually improving), D (CDPs still support it).
 - **Exam-takeaway.** Probabilistic ID is a regulatory risk in 2026.
 
-**Q18. Answer: D — Event.**
+**Q18. Answer: D, Event.**
 - **Why D is correct.** GA4 is event-first.
-- **Why the other options are wrong.** A (session), B (pageview), C (user property) — all derived from events.
+- **Why the other options are wrong.** A (session), B (pageview), C (user property), all derived from events.
 - **Exam-takeaway.** GA4 = event-first.
 
-**Q19. Answer: A — July 1 2023.**
+**Q19. Answer: A, July 1 2023.**
 - **Why A is correct.** UA stopped collecting; UA 360 stopped July 1 2024.
-- **Why the other options are wrong.** B (Dec 31 2020 — fictional), C (Jan 1 2024 — wrong by 6 months), D (July 1 2024 — that's UA 360, not standard UA).
+- **Why the other options are wrong.** B (Dec 31 2020 fictional), C (Jan 1 2024 wrong by 6 months), D (July 1 2024, that's UA 360, not standard UA).
 - **Exam-takeaway.** July 1 2023 = UA sunset; July 1 2024 = UA 360 sunset.
 
-**Q20. Answer: B — 25.**
+**Q20. Answer: B, 25.**
 - **Why B is correct.** Per-event param limit in GA4.
-- **Why the other options are wrong.** A (10 — too low), C (50 — confused with Key Events cap), D (100 — too high).
+- **Why the other options are wrong.** A (10 too low), C (50 confused with Key Events cap), D (100, too high).
 - **Exam-takeaway.** 25 params/event; exceeding silently drops.
 
-**Q21. Answer: C — 50.**
+**Q21. Answer: C, 50.**
 - **Why C is correct.** Free GA4 custom-dimension limit.
-- **Why the other options are wrong.** A (10), B (25 — that's the param limit), D (100 — that's 360's limit).
+- **Why the other options are wrong.** A (10), B (25 that's the param limit), D (100 that's 360's limit).
 - **Exam-takeaway.** 50 custom dimensions (free); 125 (360).
 
-**Q22. Answer: B — 50.**
+**Q22. Answer: B, 50.**
 - **Why B is correct.** GA4 Key Events hard cap.
-- **Why the other options are wrong.** A (25 — param limit), C (30 — fictional), D (100 — too high).
+- **Why the other options are wrong.** A (25 param limit), C (30 fictional), D (100, too high).
 - **Exam-takeaway.** 50 Key Events; design 3–8 well.
 
-**Q23. Answer: A — >10s OR conversion OR 2+ screens/pages.**
+**Q23. Answer: A, >10s OR conversion OR 2+ screens/pages.**
 - **Why A is correct.** GA4's engaged-session definition.
-- **Why the other options are wrong.** B (>5s — too lenient), C (>60s — too strict), D (purchase only — too narrow).
+- **Why the other options are wrong.** B (>5s too lenient), C (>60s too strict), D (purchase only, too narrow).
 - **Exam-takeaway.** Memorize the three OR conditions exactly.
 
-**Q24. Answer: B — User ID > Google Signals > Device ID > Modeled.**
+**Q24. Answer: B, User ID > Google Signals > Device ID > Modeled.**
 - **Why B is correct.** GA4 identifier priority order.
-- **Why the other options are wrong.** A (Device first — wrong priority), C (Modeled first — wrong), D (Random — not how GA4 works).
+- **Why the other options are wrong.** A (Device first wrong priority), C (Modeled first wrong), D (Random, not how GA4 works).
 - **Exam-takeaway.** Memorize the 4-step priority order.
 
-**Q25. Answer: D — 2 months (raise to 14).**
+**Q25. Answer: D, 2 months (raise to 14).**
 - **Why D is correct.** GA4 free default is 2 months; can be raised to 14 in settings.
-- **Why the other options are wrong.** A (6 months — fictional), B (50 months — that's 360 max), C (Forever — no, even paid has limits).
+- **Why the other options are wrong.** A (6 months fictional), B (50 months that's 360 max), C (Forever, no, even paid has limits).
 - **Exam-takeaway.** Set retention to 14 months immediately; default 2 months blindsides analysts.
 
-**Q26. Answer: C — Free for both free GA4 and 360.**
+**Q26. Answer: C, Free for both free GA4 and 360.**
 - **Why C is correct.** As of 2026, the GA4 BigQuery export is free at both tiers.
-- **Why the other options are wrong.** A (paid for both — false), B (360-only — was UA legacy), D (not available — incorrect).
+- **Why the other options are wrong.** A (paid for both false), B (360-only was UA legacy), D (not available, incorrect).
 - **Exam-takeaway.** Use the free export; BigQuery storage/query is the only paid component.
 
-**Q27. Answer: B — 400 conversions per type / 30 days.**
+**Q27. Answer: B, 400 conversions per type / 30 days.**
 - **Why B is correct.** GA4 DDA threshold.
-- **Why the other options are wrong.** A (100/month — too low), C (10K/year — too high), D (no minimum — false).
+- **Why the other options are wrong.** A (100/month too low), C (10K/year too high), D (no minimum, false).
 - **Exam-takeaway.** Below 400/30d → no DDA.
 
-**Q28. Answer: B — `SELECT value.string_value FROM UNNEST(event_params) WHERE key='page_location'`.**
+**Q28. Answer: B, `SELECT value.string_value FROM UNNEST(event_params) WHERE key='page_location'`.**
 - **Why B is correct.** `event_params` is `ARRAY<STRUCT>`; UNNEST + filter by key.
-- **Why the other options are wrong.** A (direct dotted access — doesn't work on ARRAY<STRUCT>), C (JSON_EXTRACT — schema is structured, not JSON), D (params['x'] — not valid syntax).
-- **Exam-takeaway.** UNNEST + WHERE key = ... — memorize this exact pattern.
+- **Why the other options are wrong.** A (direct dotted access doesn't work on ARRAY<STRUCT>), C (JSON_EXTRACT schema is structured, not JSON), D (params['x'], not valid syntax).
+- **Exam-takeaway.** UNNEST + WHERE key = ..., memorize this exact pattern.
 
-**Q29. Answer: D — Purchase probability, churn probability, predicted revenue.**
+**Q29. Answer: D, Purchase probability, churn probability, predicted revenue.**
 - **Why D is correct.** GA4's three predictive metrics.
-- **Why the other options are wrong.** A (random behaviors), B (RFM/LTV/CAC — analytical frameworks), C (paid-media KPIs).
+- **Why the other options are wrong.** A (random behaviors), B (RFM/LTV/CAC, analytical frameworks), C (paid-media KPIs).
 - **Exam-takeaway.** Three exact names.
 
-**Q30. Answer: A — Bottom-funnel, click-driven channels.**
+**Q30. Answer: A, Bottom-funnel, click-driven channels.**
 - **Why A is correct.** Last-click structurally over-credits channels closest to conversion.
-- **Why the other options are wrong.** B (brand — under-credited), C (offline — usually no last-click credit), D (untrackable — no credit by definition).
+- **Why the other options are wrong.** B (brand under-credited), C (offline usually no last-click credit), D (untrackable, no credit by definition).
 - **Exam-takeaway.** Last-click → bottom-funnel bias of 30–60%.
 
-**Q31. Answer: B — Average marginal contribution across all orderings.**
+**Q31. Answer: B, Average marginal contribution across all orderings.**
 - **Why B is correct.** Shapley value definition.
-- **Why the other options are wrong.** A (final touch — last-click), C (equal split — linear), D (linear regression — different model).
+- **Why the other options are wrong.** A (final touch last-click), C (equal split linear), D (linear regression, different model).
 - **Exam-takeaway.** Shapley = average marginal contribution.
 
-**Q32. Answer: D — Removal effect on conversion probability.**
+**Q32. Answer: D, Removal effect on conversion probability.**
 - **Why D is correct.** Markov-chain attribution computes credit via removal effect.
-- **Why the other options are wrong.** A (Hill — MMM), B (K-means — clustering), C (SHAP — ML interpretability).
+- **Why the other options are wrong.** A (Hill MMM), B (K-means clustering), C (SHAP, ML interpretability).
 - **Exam-takeaway.** Markov MTA = removal effect.
 
-**Q33. Answer: A — ML interpretability built on Shapley axioms, used for non-linear models.**
+**Q33. Answer: A, ML interpretability built on Shapley axioms, used for non-linear models.**
 - **Why A is correct.** SHAP (Lundberg & Lee 2017) generalizes Shapley to arbitrary ML outputs.
-- **Why the other options are wrong.** B (same as Shapley — close but no; SHAP extends Shapley), C (vendor — wrong category), D (regression diagnostic — wrong abstraction).
+- **Why the other options are wrong.** B (same as Shapley close but no; SHAP extends Shapley), C (vendor wrong category), D (regression diagnostic, wrong abstraction).
 - **Exam-takeaway.** Shapley is the foundation; SHAP is the ML-applied generalization.
 
-**Q34. Answer: D — Apple's privacy-preserving iOS install attribution framework.**
+**Q34. Answer: D, Apple's privacy-preserving iOS install attribution framework.**
 - **Why D is correct.** SKAdNetwork (SKAN) is Apple's framework; AdAttributionKit is the 2024+ expansion.
-- **Why the other options are wrong.** A (open-source — wrong), B (Google — wrong), C (Meta — wrong).
+- **Why the other options are wrong.** A (open-source wrong), B (Google wrong), C (Meta, wrong).
 - **Exam-takeaway.** SKAN = Apple.
 
-**Q35. Answer: B — Mobile Measurement Partners (MMPs).**
+**Q35. Answer: B, Mobile Measurement Partners (MMPs).**
 - **Why B is correct.** AppsFlyer/Branch/Adjust are the leading MMPs for mobile install attribution.
-- **Why the other options are wrong.** A (CDPs — wrong category), C (DMPs — declining), D (MMM — different methodology).
+- **Why the other options are wrong.** A (CDPs wrong category), C (DMPs declining), D (MMM, different methodology).
 - **Exam-takeaway.** Mobile attribution lives in MMPs, not CDPs.
 
-**Q36. Answer: B — MTA + MMM + Incrementality.**
-- **Why B is correct.** The 2026 measurement triangle — three complementary methods.
+**Q36. Answer: B, MTA + MMM + Incrementality.**
+- **Why B is correct.** The 2026 measurement triangle, three complementary methods.
 - **Why the other options are wrong.** A (channel types), C (technical layers), D (surface metrics).
 - **Exam-takeaway.** Triangle = methodologies, not metrics.
 
-**Q37. Answer: C — 1 week.**
+**Q37. Answer: C, 1 week.**
 - **Why C is correct.** `half-life = log(0.5)/log(0.5) = 1` week.
-- **Why the other options are wrong.** A (0.5 weeks — the value of λ, not half-life), B (2 weeks — corresponds to λ≈0.71), D (4 weeks — corresponds to λ≈0.84).
+- **Why the other options are wrong.** A (0.5 weeks the value of λ, not half-life), B (2 weeks corresponds to λ≈0.71), D (4 weeks, corresponds to λ≈0.84).
 - **Exam-takeaway.** Practice the λ ↔ half-life conversion.
 
-**Q38. Answer: C — `x^α / (x^α + K^α)`.**
+**Q38. Answer: C, `x^α / (x^α + K^α)`.**
 - **Why C is correct.** Hill saturation function.
-- **Why the other options are wrong.** A (exponential decay — wrong shape), B (linear — no saturation), D (logarithmic — different functional form).
+- **Why the other options are wrong.** A (exponential decay wrong shape), B (linear no saturation), D (logarithmic, different functional form).
 - **Exam-takeaway.** Memorize Hill's form exactly.
 
-**Q39. Answer: A — R (with Python port in dev).**
+**Q39. Answer: A, R (with Python port in dev).**
 - **Why A is correct.** Robyn is R-native; Python port in development through 2025–2026.
-- **Why the other options are wrong.** B (Python only — incorrect), C (Excel — too limited), D (Java — wrong).
+- **Why the other options are wrong.** B (Python only incorrect), C (Excel too limited), D (Java, wrong).
 - **Exam-takeaway.** Robyn = R; Meridian = Python.
 
-**Q40. Answer: B — Python + TensorFlow Probability.**
+**Q40. Answer: B, Python + TensorFlow Probability.**
 - **Why B is correct.** Meridian's stack.
-- **Why the other options are wrong.** A (R — that's Robyn), C (SAS — legacy stats), D (Stata — academic stats).
+- **Why the other options are wrong.** A (R that's Robyn), C (SAS legacy stats), D (Stata, academic stats).
 - **Exam-takeaway.** Meridian = Python + TFP.
 
-**Q41. Answer: A — Posterior distributions over parameters.**
+**Q41. Answer: A, Posterior distributions over parameters.**
 - **Why A is correct.** Bayesian MMM gives posterior distributions, enabling credible intervals.
-- **Why the other options are wrong.** B (point estimates — frequentist), C (p-values — wrong paradigm), D (categorical labels — wrong output type).
+- **Why the other options are wrong.** B (point estimates frequentist), C (p-values wrong paradigm), D (categorical labels, wrong output type).
 - **Exam-takeaway.** Bayesian = uncertainty intervals; present them honestly.
 
-**Q42. Answer: B — Constraining coefficients using incrementality test ground truth.**
+**Q42. Answer: B, Constraining coefficients using incrementality test ground truth.**
 - **Why B is correct.** MMM calibration definition.
-- **Why the other options are wrong.** A (chart colors — cosmetic), C (re-running daily — frequency), D (more channels — model spec).
+- **Why the other options are wrong.** A (chart colors cosmetic), C (re-running daily frequency), D (more channels, model spec).
 - **Exam-takeaway.** Calibration = grounding in causal experiments.
 
-**Q43. Answer: B — 50–80%.**
+**Q43. Answer: B, 50–80%.**
 - **Why B is correct.** Typical baseline share.
-- **Why the other options are wrong.** A (5–15% — too low), C (>95% — too high), D (always 50% — no rule).
+- **Why the other options are wrong.** A (5–15% too low), C (>95% too high), D (always 50%, no rule).
 - **Exam-takeaway.** Baseline outside 50–80% → investigate.
 
-**Q44. Answer: A — "It depends — MMM for cross-channel allocation; MTA for within-channel tactics; both calibrated by incrementality."**
+**Q44. Answer: A "It depends MMM for cross-channel allocation; MTA for within-channel tactics; both calibrated by incrementality."**
 - **Why A is correct.** The strategist's canonical 2026 answer.
-- **Why the other options are wrong.** B (MTA only — bottom-funnel bias), C (MMM only — misses tactical), D (neither — abdication).
+- **Why the other options are wrong.** B (MTA only bottom-funnel bias), C (MMM only misses tactical), D (neither, abdication).
 - **Exam-takeaway.** Combine, don't choose.
 
-**Q45. Answer: D — Total revenue/profit expected over the customer's relationship with the business.**
+**Q45. Answer: D, Total revenue/profit expected over the customer's relationship with the business.**
 - **Why D is correct.** CLV definition.
-- **Why the other options are wrong.** A (annual — too short), B (lifetime MRR — close but excludes margin), C (first-year — too short).
+- **Why the other options are wrong.** A (annual too short), B (lifetime MRR close but excludes margin), C (first-year, too short).
 - **Exam-takeaway.** CLV = lifetime revenue/profit, not annualized.
 
-**Q46. Answer: C — Contractual / steady-state businesses (subscriptions).**
-- **Why C is correct.** The simple formula assumes stable frequency and lifespan — true of subscriptions.
-- **Why the other options are wrong.** A (all businesses — formula breaks for e-com), B (non-contractual e-com — needs BG/NBD), D (B2B only — formula works for B2C too).
+**Q46. Answer: C, Contractual / steady-state businesses (subscriptions).**
+- **Why C is correct.** The simple formula assumes stable frequency and lifespan, true of subscriptions.
+- **Why the other options are wrong.** A (all businesses formula breaks for e-com), B (non-contractual e-com needs BG/NBD), D (B2B only, formula works for B2C too).
 - **Exam-takeaway.** Simple formula = contractual; BG/NBD = non-contractual.
 
-**Q47. Answer: A — Fader & Hardie.**
+**Q47. Answer: A, Fader & Hardie.**
 - **Why A is correct.** BG/NBD is Fader & Hardie's 2005 *Marketing Science* paper.
-- **Why the other options are wrong.** B (Kahneman/Tversky — behavioral economics), C (Pareto/Hardie — different model, Pareto/NBD), D (Christensen/Moore — JTBD/positioning).
+- **Why the other options are wrong.** B (Kahneman/Tversky behavioral economics), C (Pareto/Hardie different model, Pareto/NBD), D (Christensen/Moore, JTBD/positioning).
 - **Exam-takeaway.** BG/NBD = Fader & Hardie 2005.
 
-**Q48. Answer: B — Beta (dropout prior).**
+**Q48. Answer: B, Beta (dropout prior).**
 - **Why B is correct.** B = Beta distribution over the dropout probability.
-- **Why the other options are wrong.** A (Bayesian — the meta-method), C (Binomial — wrong distribution), D (Block — fictional).
+- **Why the other options are wrong.** A (Bayesian the meta-method), C (Binomial wrong distribution), D (Block, fictional).
 - **Exam-takeaway.** B-G-/-N-B-D: Beta-Geometric / Negative-Binomial-Distribution.
 
-**Q49. Answer: C — Gamma-Gamma.**
+**Q49. Answer: C, Gamma-Gamma.**
 - **Why C is correct.** Fader-Hardie's companion model for monetary value.
-- **Why the other options are wrong.** A (Beta-Bernoulli — wrong), B (Hill — MMM), D (Markov — MTA).
+- **Why the other options are wrong.** A (Beta-Bernoulli wrong), B (Hill MMM), D (Markov, MTA).
 - **Exam-takeaway.** BG/NBD = frequency; Gamma-Gamma = value.
 
-**Q50. Answer: C — lifetimes.**
+**Q50. Answer: C, lifetimes.**
 - **Why C is correct.** Cam Davidson-Pilon's canonical Python library.
-- **Why the other options are wrong.** A (scikit-learn — general ML), B (tensorflow — DL framework), D (pytorch — DL framework).
+- **Why the other options are wrong.** A (scikit-learn general ML), B (tensorflow DL framework), D (pytorch, DL framework).
 - **Exam-takeaway.** `pip install lifetimes`.
 
-**Q51. Answer: B — >0.80.**
+**Q51. Answer: B, >0.80.**
 - **Why B is correct.** Operational threshold for production churn model.
-- **Why the other options are wrong.** A (>0.55 — barely random), C (=1.0 — overfit), D (AUC doesn't matter — false).
+- **Why the other options are wrong.** A (>0.55 barely random), C (=1.0 overfit), D (AUC doesn't matter, false).
 - **Exam-takeaway.** AUC > 0.80 = ship; > 0.85 = great.
 
-**Q52. Answer: C — Isotonic regression or Platt scaling.**
+**Q52. Answer: C, Isotonic regression or Platt scaling.**
 - **Why C is correct.** Calibration techniques for raw model probabilities.
-- **Why the other options are wrong.** A (random sampling — not calibration), B (z-score — feature scaling), D (min-max — feature scaling).
+- **Why the other options are wrong.** A (random sampling not calibration), B (z-score feature scaling), D (min-max, feature scaling).
 - **Exam-takeaway.** Calibrate before using probabilities operationally.
 
-**Q53. Answer: C — Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs (Sleeping Dogs).**
+**Q53. Answer: C, Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs (Sleeping Dogs).**
 - **Why C is correct.** The four uplift segments.
 - **Why the other options are wrong.** A (BCG portfolio quadrants), B (RFM segments), D (JTBD forces).
 - **Exam-takeaway.** Persuadables are the only segment with positive uplift.
 
-**Q54. Answer: C — Wasted impressions.**
+**Q54. Answer: C, Wasted impressions.**
 - **Why C is correct.** Sure Things convert anyway; marketing impressions are wasted.
-- **Why the other options are wrong.** A (best practice — backwards), B (GDPR — not relevant), D (Meta default — vendor incentives push it, but it's wrong).
+- **Why the other options are wrong.** A (best practice backwards), B (GDPR not relevant), D (Meta default, vendor incentives push it, but it's wrong).
 - **Exam-takeaway.** Spend on Persuadables, not Sure Things.
 
-**Q55. Answer: C — Thompson Sampling.**
+**Q55. Answer: C, Thompson Sampling.**
 - **Why C is correct.** 2026 production default for bandits.
-- **Why the other options are wrong.** A (ε-greedy — teaching example), B (UCB — alternative), D (Random — non-bandit).
+- **Why the other options are wrong.** A (ε-greedy teaching example), B (UCB alternative), D (Random, non-bandit).
 - **Exam-takeaway.** Thompson Sampling = default.
 
-**Q56. Answer: D — User / context features in addition to variant.**
+**Q56. Answer: D, User / context features in addition to variant.**
 - **Why D is correct.** Contextual bandits use a feature vector at decision time.
-- **Why the other options are wrong.** A (nothing — false), B (weekly retraining — frequency, irrelevant), C (DNN — not required).
+- **Why the other options are wrong.** A (nothing false), B (weekly retraining frequency, irrelevant), C (DNN, not required).
 - **Exam-takeaway.** Contextual = features at decision time.
 
-**Q57. Answer: A — User × item rating matrix into latent-factor matrices.**
+**Q57. Answer: A, User × item rating matrix into latent-factor matrices.**
 - **Why A is correct.** Matrix factorization decomposition.
-- **Why the other options are wrong.** B (time series — different problem), C (transition matrix — Markov), D (customer journey — different concept).
+- **Why the other options are wrong.** B (time series different problem), C (transition matrix Markov), D (customer journey, different concept).
 - **Exam-takeaway.** MF decomposes user×item → U and V latent matrices.
 
-**Q58. Answer: B — Ensemble dominated by matrix factorization.**
+**Q58. Answer: B, Ensemble dominated by matrix factorization.**
 - **Why B is correct.** The 2009 Netflix Prize winner used a stacked ensemble heavily dominated by MF + RBM + neighborhood models.
-- **Why the other options are wrong.** A (single DNN — predates deep learning's dominance), C (item-item CF only — too simple), D (K-means — wrong model class).
+- **Why the other options are wrong.** A (single DNN predates deep learning's dominance), C (item-item CF only too simple), D (K-means, wrong model class).
 - **Exam-takeaway.** Netflix Prize → MF foundation for modern recsys.
 
-**Q59. Answer: A — Separate user and item networks producing embeddings, scored by similarity.**
+**Q59. Answer: A, Separate user and item networks producing embeddings, scored by similarity.**
 - **Why A is correct.** Two-Tower architecture.
-- **Why the other options are wrong.** B (attention heads — transformer concept), C (CNN+RNN — image+sequence stack), D (linear+logistic — wrong abstraction).
+- **Why the other options are wrong.** B (attention heads transformer concept), C (CNN+RNN image+sequence stack), D (linear+logistic, wrong abstraction).
 - **Exam-takeaway.** Two-Tower = separate towers + embedding similarity + ANN retrieval.
 
-**Q60. Answer: D — DLRM (Deep Learning Recommendation Model).**
+**Q60. Answer: D, DLRM (Deep Learning Recommendation Model).**
 - **Why D is correct.** Meta's open-source production recsys.
-- **Why the other options are wrong.** A (PinSage — Pinterest's GNN), B (RecBole — academic toolkit), C (BERT4Rec — academic transformer).
+- **Why the other options are wrong.** A (PinSage Pinterest's GNN), B (RecBole academic toolkit), C (BERT4Rec, academic transformer).
 - **Exam-takeaway.** Each vendor has a flagship; memorize the mapping.
 
-**Q61. Answer: D — Filter bubbles + popularity bias.**
+**Q61. Answer: D, Filter bubbles + popularity bias.**
 - **Why D is correct.** Pure NDCG concentrates on popular items.
-- **Why the other options are wrong.** A (better serendipity — opposite), B (improved cold start — opposite), C (higher diversity — opposite).
+- **Why the other options are wrong.** A (better serendipity opposite), B (improved cold start opposite), C (higher diversity, opposite).
 - **Exam-takeaway.** NDCG alone is a pathology; pair with diversity/serendipity/coverage.
 
-**Q62. Answer: C — The month of acquisition.**
+**Q62. Answer: C, The month of acquisition.**
 - **Why C is correct.** M0 by convention is the cohort's acquisition month.
-- **Why the other options are wrong.** A (current month — variable), B (first month after — M1), D (last observation — variable).
+- **Why the other options are wrong.** A (current month variable), B (first month after M1), D (last observation, variable).
 - **Exam-takeaway.** M0 = acquisition.
 
-**Q63. Answer: A — L-curve, smile, cliff.**
+**Q63. Answer: A, L-curve, smile, cliff.**
 - **Why A is correct.** The three canonical retention shapes.
-- **Why the other options are wrong.** B (statistical distributions), C (functional forms — but not the canonical names), D (frequencies — not shapes).
+- **Why the other options are wrong.** B (statistical distributions), C (functional forms but not the canonical names), D (frequencies not shapes).
 - **Exam-takeaway.** L = drop+plateau; smile = dip+return; cliff = sudden drop at tenure point.
 
-**Q64. Answer: B — (start ARR + expansion − contraction − churn) / start ARR.**
+**Q64. Answer: B, (start ARR + expansion − contraction − churn) / start ARR.**
 - **Why B is correct.** NRR formula.
-- **Why the other options are wrong.** A (quarter-over-quarter — too coarse), C (CLV/CAC — different metric), D (start/end MRR — close but wrong direction and missing expansion).
+- **Why the other options are wrong.** A (quarter-over-quarter too coarse), C (CLV/CAC different metric), D (start/end MRR, close but wrong direction and missing expansion).
 - **Exam-takeaway.** Memorize the formula exactly.
 
-**Q65. Answer: B — >120%.**
+**Q65. Answer: B, >120%.**
 - **Why B is correct.** Best-in-class B2B SaaS NRR.
-- **Why the other options are wrong.** A (>50% — failing), C (<60% — failing), D (=100% — flat).
+- **Why the other options are wrong.** A (>50% failing), C (<60% failing), D (=100%, flat).
 - **Exam-takeaway.** Benchmark: 120%+ = top quartile.
 
-**Q66. Answer: A — ML-driven 2024+ replacement for manual look-alikes.**
+**Q66. Answer: A, ML-driven 2024+ replacement for manual look-alikes.**
 - **Why A is correct.** Meta Advantage+ Audience's positioning.
-- **Why the other options are wrong.** B (same as Custom — false), C (GDPR mandate — false), D (CDP — wrong category).
+- **Why the other options are wrong.** B (same as Custom false), C (GDPR mandate false), D (CDP, wrong category).
 - **Exam-takeaway.** Feed Advantage+ high-quality signals; let it work.
 
-**Q67. Answer: B — Gradual usage decline in the weeks before churn.**
+**Q67. Answer: B, Gradual usage decline in the weeks before churn.**
 - **Why B is correct.** Death spiral pattern.
-- **Why the other options are wrong.** A (sudden cancellation — opposite), C (random — no pattern), D (inverse-to-revenue — different concept).
+- **Why the other options are wrong.** A (sudden cancellation opposite), C (random no pattern), D (inverse-to-revenue, different concept).
 - **Exam-takeaway.** Detect death spirals to enable proactive win-back.
 
-**Q68. Answer: A — session_storage.**
+**Q68. Answer: A, session_storage.**
 - **Why A is correct.** Not a Consent Mode v2 parameter. The four are ad_storage, ad_user_data, ad_personalization, analytics_storage.
 - **Why the other options are wrong.** B, C, D are all real Consent Mode v2 parameters.
 - **Exam-takeaway.** Memorize the four exact names.
 
-**Q69. Answer: D — In Advanced, anonymized pings fire when consent is denied → Google models lost conversions.**
+**Q69. Answer: D, In Advanced, anonymized pings fire when consent is denied → Google models lost conversions.**
 - **Why D is correct.** Advanced Consent Mode's defining behavior.
-- **Why the other options are wrong.** A (cost — irrelevant), B (Advanced 360-only — false), C (Basic EU-only — false).
+- **Why the other options are wrong.** A (cost irrelevant), B (Advanced 360-only false), C (Basic EU-only, false).
 - **Exam-takeaway.** Basic = no tags on deny; Advanced = anonymized + modeling.
 
-**Q70. Answer: B — event_id + event_name + event_time + fbc/fbp.**
+**Q70. Answer: B, event_id + event_name + event_time + fbc/fbp.**
 - **Why B is correct.** Meta's CAPI deduplication keys.
-- **Why the other options are wrong.** A (event_name only — collisions guaranteed), C (server timestamp only — insufficient), D (random sampling — wrong approach).
+- **Why the other options are wrong.** A (event_name only collisions guaranteed), C (server timestamp only insufficient), D (random sampling, wrong approach).
 - **Exam-takeaway.** Always set event_id when running Pixel + CAPI in parallel.
 
-**Q71. Answer: C — 6 (0–63).**
+**Q71. Answer: C, 6 (0–63).**
 - **Why C is correct.** SKAN conversion-value is 6-bit (64 states).
-- **Why the other options are wrong.** A (1 — too narrow), B (8 — close but wrong; would be 256 states), D (16 — too wide).
+- **Why the other options are wrong.** A (1 too narrow), B (8 close but wrong; would be 256 states), D (16, too wide).
 - **Exam-takeaway.** SKAN = 6 bits; encoding design is strategist's job.
 
-**Q72. Answer: B — ~3 weekly topics from a 470-topic taxonomy.**
+**Q72. Answer: B, ~3 weekly topics from a 470-topic taxonomy.**
 - **Why B is correct.** Topics API design.
-- **Why the other options are wrong.** A (per-user emails — opposite of privacy-preserving), C (random cookies — backwards), D (none of the above — incorrect).
+- **Why the other options are wrong.** A (per-user emails opposite of privacy-preserving), C (random cookies backwards), D (none of the above, incorrect).
 - **Exam-takeaway.** Topics = 3 topics/week from ~470 taxonomy.
 
-**Q73. Answer: A — A privacy-preserving multi-party query environment without raw data exchange.**
+**Q73. Answer: A, A privacy-preserving multi-party query environment without raw data exchange.**
 - **Why A is correct.** Data clean room definition.
-- **Why the other options are wrong.** B (physical server — wrong abstraction), C (CDP — wrong category), D (pixel vendor — wrong category).
+- **Why the other options are wrong.** B (physical server wrong abstraction), C (CDP wrong category), D (pixel vendor, wrong category).
 - **Exam-takeaway.** Clean rooms = queries on joint data; outputs are aggregate or DP-protected.
 
-**Q74. Answer: D — Hub-and-spoke.**
+**Q74. Answer: D, Hub-and-spoke.**
 - **Why D is correct.** 2026 default org structure for mid-market revenue.
-- **Why the other options are wrong.** A (centralized — under $10M), B (outsourced — rare), C (federated — above $1B).
+- **Why the other options are wrong.** A (centralized under $10M), B (outsourced rare), C (federated, above $1B).
 - **Exam-takeaway.** Org structure scales with revenue.
 
-**Q75. Answer: D — "What's the CEO's favorite metric?"**
+**Q75. Answer: D, "What's the CEO's favorite metric?"**
 - **Why D is correct.** Not in the 5 canonical CFO questions. The CFO cares about ROI/incrementality/efficiency, not the CEO's mood.
 - **Why the other options are wrong.** A, B, C are all in the canonical 5 (the others: "Which channels are growing?", "What efficiency are we trending toward?").
 - **Exam-takeaway.** Memorize the 5 CFO questions and rehearse a numeric answer to each.

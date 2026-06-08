@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Color Theory Fundamentals — Hue, Saturation, Value</p>
+      <p class="vg-title">Color Theory Fundamentals, Hue, Saturation, Value</p>
       <p class="vg-creator">Ctrl+Paint / Proko</p>
       <span class="vg-duration">⏱ 20 min · The core vocabulary + why value is most important</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Composition for Animation — Rules and How to Break Them</p>
+      <p class="vg-title">Composition for Animation, Rules and How to Break Them</p>
       <p class="vg-creator">School of Motion / Film Riot</p>
       <span class="vg-duration">⏱ 18 min · Rule of thirds, leading lines, negative space</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Coco's Color Design — Living World vs Land of Dead</p>
+      <p class="vg-title">Coco's Color Design, Living World vs Land of Dead</p>
       <p class="vg-creator">Corridor Crew / Pixar featurette</p>
       <span class="vg-duration">⏱ 15 min · Saturated underworld vs desaturated living world</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Spirited Away — Color and Art Direction Analysis</p>
+      <p class="vg-title">Spirited Away, Color and Art Direction Analysis</p>
       <p class="vg-creator">Like Stories of Old / Thomas Flight</p>
       <span class="vg-duration">⏱ 18 min · Ghibli's color palette approach</span>
     </div>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Chromatic Aberration in Animation — Spider-Verse Technique</p>
+      <p class="vg-title">Chromatic Aberration in Animation, Spider-Verse Technique</p>
       <p class="vg-creator">Corridor Crew / CG Geek</p>
       <span class="vg-duration">⏱ 15 min · How Spider-Verse uses optical artifacts as storytelling</span>
     </div>

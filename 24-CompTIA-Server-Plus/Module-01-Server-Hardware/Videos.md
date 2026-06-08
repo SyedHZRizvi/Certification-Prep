@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Server Hardware & Components
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Server Form Factors — Tower, Rack, Blade</p>
+      <p class="vg-title">Server Form Factors, Tower, Rack, Blade</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 8 min · The 3 shapes</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OpenBMC — Open-Source BMC Firmware</p>
+      <p class="vg-title">OpenBMC, Open-Source BMC Firmware</p>
       <p class="vg-creator">Linux Foundation</p>
       <span class="vg-duration">⏱ 25 min · How the BMC actually works</span>
     </div>
@@ -144,7 +144,7 @@
 |---------|-----|
 | **Professor Messer** | THE Server+ teacher. Free, comprehensive, exam-aligned. Start every module here. |
 | **Dion Training (Jason Dion)** | Polished delivery, scenario-heavy explanations, great paid practice questions on his site |
-| **ServeTheHome** | Patrick Kennedy's deep dives — vendor reviews, teardowns, BMC walk-throughs. Best server-hardware channel on YouTube. |
+| **ServeTheHome** | Patrick Kennedy's deep dives, vendor reviews, teardowns, BMC walk-throughs. Best server-hardware channel on YouTube. |
 | **Linus Tech Tips** | Accessible explanations + entertaining server builds; good for visual learners |
 | **Lawrence Systems** | Sysadmin-focused tutorials, networking + storage, real production environments |
 | **NetworkChuck** | Fun, energetic intros to infrastructure topics |

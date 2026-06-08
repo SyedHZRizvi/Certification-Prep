@@ -1,6 +1,6 @@
 # 📋 Module 7 Cheat Sheet: Risk, Compliance & Ethics
 
-> Print. Drill. Use weekly. Ethics is judgment — practice it.
+> Print. Drill. Use weekly. Ethics is judgment, practice it.
 
 ---
 
@@ -123,7 +123,7 @@ Tool: RMI's CMRT (Conflict Minerals Reporting Template).
 |---|---|
 | 1 | Direct (your facilities, fleet) |
 | 2 | Indirect from purchased energy |
-| 3 | All other indirect — **supply chain (70–90% for most firms)** |
+| 3 | All other indirect, **supply chain (70–90% for most firms)** |
 
 ---
 

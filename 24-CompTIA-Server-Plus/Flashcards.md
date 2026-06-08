@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,31 +275,31 @@
 ## 🖥️ SECTION 1: SERVER HARDWARE
 
 **Q:** What does ECC RAM stand for and why do servers use it?
-**A:** Error-Correcting Code. ECC detects and corrects single-bit memory errors automatically — preventing data corruption from cosmic-ray bit flips. Mandatory for production servers.
+**A:** Error-Correcting Code. ECC detects and corrects single-bit memory errors automatically, preventing data corruption from cosmic-ray bit flips. Mandatory for production servers.
 
 **Q:** What is the height (in U) of a 1U rack server?
 **A:** 1U = 1.75 inches (4.45 cm). A standard rack is 42U tall (~73.5 inches).
 
-**Q:** Tower vs rack vs blade — when do you pick each?
+**Q:** Tower vs rack vs blade, when do you pick each?
 **A:** Tower = small office, low density. Rack = standardized data-center workhorse, dense, hot-swap. Blade = highest density (multiple blades share PSUs/network in a chassis); great for compute farms.
 
 **Q:** What does a redundant power supply (PSU) configuration provide?
-**A:** Hot-swap, N+1 (or 2N) failover — a single PSU failure does not bring down the server. Both PSUs should be plugged into separate PDUs / power feeds for full redundancy.
+**A:** Hot-swap, N+1 (or 2N) failover, a single PSU failure does not bring down the server. Both PSUs should be plugged into separate PDUs / power feeds for full redundancy.
 
 **Q:** What is hot-swap in the context of server hardware?
 **A:** The ability to replace a component (drive, PSU, fan) while the server is powered on, without downtime.
 
 **Q:** Define IPMI.
-**A:** Intelligent Platform Management Interface — vendor-neutral out-of-band management standard. Lets you power-cycle, console, view sensors over the network even when the OS is down.
+**A:** Intelligent Platform Management Interface, vendor-neutral out-of-band management standard. Lets you power-cycle, console, view sensors over the network even when the OS is down.
 
 **Q:** What is a BMC?
-**A:** Baseboard Management Controller — the dedicated microcontroller on the motherboard that implements IPMI. Has its own NIC, runs even when the host is off (as long as power is connected).
+**A:** Baseboard Management Controller, the dedicated microcontroller on the motherboard that implements IPMI. Has its own NIC, runs even when the host is off (as long as power is connected).
 
-**Q:** iDRAC vs iLO — what are they?
+**Q:** iDRAC vs iLO, what are they?
 **A:** Vendor brand names for BMC-based out-of-band management. iDRAC = Dell (Integrated Dell Remote Access Controller). iLO = HPE (Integrated Lights-Out). Both expose a web UI + IPMI.
 
 **Q:** What does a RAID controller do, and why prefer hardware over software RAID?
-**A:** Manages disk arrays (striping, mirroring, parity). Hardware RAID = dedicated chip + battery-backed write cache (BBWC) — faster, OS-independent. Software RAID = OS does the math, cheaper.
+**A:** Manages disk arrays (striping, mirroring, parity). Hardware RAID = dedicated chip + battery-backed write cache (BBWC), faster, OS-independent. Software RAID = OS does the math, cheaper.
 
 **Q:** What is a BBWC / FBWC?
 **A:** Battery-Backed / Flash-Backed Write Cache on a RAID controller. Protects in-flight writes against a sudden power loss by holding them in non-volatile storage until they flush to disk.
@@ -308,14 +308,14 @@
 **A:** SAS = Serial Attached SCSI; dual-port, full-duplex, higher RPM (10k/15k), built for 24/7 server workloads. SATA = consumer/cheaper, single-port, half-duplex; OK for capacity/archival tiers.
 
 **Q:** What is NVMe?
-**A:** Non-Volatile Memory Express — a protocol designed for SSDs over PCIe. Massively higher IOPS and lower latency than AHCI/SATA. Modern servers use NVMe for hot data.
+**A:** Non-Volatile Memory Express, a protocol designed for SSDs over PCIe. Massively higher IOPS and lower latency than AHCI/SATA. Modern servers use NVMe for hot data.
 
 ---
 
 ## 🪟 SECTION 2: SERVER ADMINISTRATION
 
 **Q:** What is AD DS?
-**A:** Active Directory Domain Services — Microsoft's directory service. Manages users, computers, groups, GPOs across a Windows domain.
+**A:** Active Directory Domain Services, Microsoft's directory service. Manages users, computers, groups, GPOs across a Windows domain.
 
 **Q:** What is a Windows Server "role" vs a "feature"?
 **A:** Role = major function (AD DS, DNS, DHCP, IIS, Hyper-V). Feature = supporting capability (Telnet client, BitLocker, .NET Framework, SMB 1.0).
@@ -330,7 +330,7 @@
 **A:** RDP = TCP 3389. SSH = TCP 22. WinRM = TCP 5985 (HTTP) / TCP 5986 (HTTPS).
 
 **Q:** What is WinRM?
-**A:** Windows Remote Management — Microsoft's implementation of WS-Management. Used by PowerShell remoting (`Enter-PSSession`, `Invoke-Command`).
+**A:** Windows Remote Management, Microsoft's implementation of WS-Management. Used by PowerShell remoting (`Enter-PSSession`, `Invoke-Command`).
 
 **Q:** What does `chmod 755 file` mean?
 **A:** Owner rwx (7=4+2+1), group rx (5=4+1), others rx (5). Common executable script permission set.
@@ -345,19 +345,19 @@
 
 ## 💾 SECTION 3: STORAGE & RAID
 
-**Q:** RAID 0 — what does it do?
+**Q:** RAID 0, what does it do?
 **A:** Striping only. No redundancy. Capacity = N × smallest disk. Fast reads/writes; one disk failure = total loss. Use only for scratch/tempdb.
 
-**Q:** RAID 1 — what does it do?
+**Q:** RAID 1, what does it do?
 **A:** Mirroring (2 disks). Capacity = 1 × disk. Survives 1 disk failure. Read-fast, write-same.
 
-**Q:** RAID 5 — what does it do?
+**Q:** RAID 5, what does it do?
 **A:** Striping with distributed parity. Min 3 disks. Capacity = (N−1) × smallest disk. Survives 1 disk failure. Write penalty due to parity calc.
 
-**Q:** RAID 6 — what does it do?
+**Q:** RAID 6, what does it do?
 **A:** Striping with double distributed parity. Min 4 disks. Capacity = (N−2) × smallest disk. Survives 2 simultaneous disk failures. Preferred for large arrays.
 
-**Q:** RAID 10 — what does it do?
+**Q:** RAID 10, what does it do?
 **A:** Stripe of mirrors (RAID 1+0). Min 4 disks (even count). Capacity = N/2 × disk. Survives loss of one drive from each mirror pair. Best performance + redundancy; uses 50% capacity.
 
 **Q:** You have 6 × 1 TB disks in RAID 5. Usable capacity?
@@ -372,20 +372,20 @@
 **Q:** What is a hot spare?
 **A:** An idle drive in the array that automatically rebuilds in place of a failed drive, with no admin action. Cuts the window of vulnerability after a failure.
 
-**Q:** SAN vs NAS — one-line difference?
-**A:** SAN = block-level storage over a dedicated network (FC/iSCSI) — looks like a local disk. NAS = file-level storage over LAN (NFS/SMB) — looks like a network share.
+**Q:** SAN vs NAS, one-line difference?
+**A:** SAN = block-level storage over a dedicated network (FC/iSCSI) looks like a local disk. NAS = file-level storage over LAN (NFS/SMB) looks like a network share.
 
 **Q:** Default ports: iSCSI, NFS, SMB?
 **A:** iSCSI = TCP 3260. NFS = TCP/UDP 2049. SMB = TCP 445.
 
 **Q:** What is a LUN?
-**A:** Logical Unit Number — a slice of SAN storage presented to a host as a block device. Hosts see a LUN as if it were a local disk.
+**A:** Logical Unit Number, a slice of SAN storage presented to a host as a block device. Hosts see a LUN as if it were a local disk.
 
 **Q:** What does LUN masking do?
 **A:** Restricts which hosts (by initiator WWN/IQN) can see which LUNs. Prevents host A from accidentally mounting host B's storage.
 
 **Q:** Thin provisioning vs thick provisioning?
-**A:** Thick = allocate full capacity up front (predictable, no overcommit). Thin = allocate on demand from a shared pool (overcommit possible — risk of running out at the array level).
+**A:** Thick = allocate full capacity up front (predictable, no overcommit). Thin = allocate on demand from a shared pool (overcommit possible, risk of running out at the array level).
 
 **Q:** What is deduplication in storage?
 **A:** Detecting and storing only one copy of identical data blocks (or files). Huge space savings on backups, VDI golden images, mailboxes.
@@ -401,13 +401,13 @@
 ## 🖧 SECTION 4: VIRTUALIZATION & CONTAINERS
 
 **Q:** Type 1 vs Type 2 hypervisor?
-**A:** Type 1 = bare-metal (runs directly on hardware) — ESXi, Hyper-V, KVM, Xen. Type 2 = hosted (runs on top of an OS) — VMware Workstation, VirtualBox.
+**A:** Type 1 = bare-metal (runs directly on hardware) ESXi, Hyper-V, KVM, Xen. Type 2 = hosted (runs on top of an OS) VMware Workstation, VirtualBox.
 
 **Q:** What is vMotion / live migration?
 **A:** Moving a running VM from one physical host to another with no downtime. Requires shared storage and a fast network. VMware = vMotion; Hyper-V = Live Migration; KVM = Live Migration.
 
 **Q:** Snapshot vs clone vs template?
-**A:** Snapshot = point-in-time saved state of a VM (deltas — temporary). Clone = full copy of a VM (independent VM). Template = master image used to deploy new VMs.
+**A:** Snapshot = point-in-time saved state of a VM (deltas, temporary). Clone = full copy of a VM (independent VM). Template = master image used to deploy new VMs.
 
 **Q:** What is a Hyper-V Generation 2 VM?
 **A:** UEFI-firmware VM (vs legacy BIOS Gen 1). Supports Secure Boot, larger boot disks, modern OS features. Required for newer Windows Server / Linux distros.
@@ -422,34 +422,34 @@
 **A:** Orchestrates many containers across many hosts. Handles scheduling, health checks, scaling, service discovery, rolling updates. Pods, Deployments, Services are the core objects.
 
 **Q:** What is a hypervisor's "guest tools"?
-**A:** Drivers + agent installed inside the guest OS (VMware Tools, Hyper-V Integration Services, virtio-guest) — enables better performance, time sync, mouse, clean shutdown from the hypervisor.
+**A:** Drivers + agent installed inside the guest OS (VMware Tools, Hyper-V Integration Services, virtio-guest), enables better performance, time sync, mouse, clean shutdown from the hypervisor.
 
 ---
 
 ## 🔁 SECTION 5: DISASTER RECOVERY & BACKUP
 
-**Q:** RTO — define and give an example.
+**Q:** RTO, define and give an example.
 **A:** Recovery Time Objective: maximum tolerable downtime. Example: "Email must be back within 4 hours" → RTO = 4 hr.
 
-**Q:** RPO — define and give an example.
+**Q:** RPO, define and give an example.
 **A:** Recovery Point Objective: maximum tolerable data loss measured in time. Example: "We can lose at most 15 min of transactions" → RPO = 15 min → need replication/log shipping every ≤15 min.
 
-**Q:** Full backup — what does it back up and what does it set on the archive bit?
+**Q:** Full backup, what does it back up and what does it set on the archive bit?
 **A:** Every selected file. Clears the archive bit on each file.
 
-**Q:** Incremental backup — what does it back up?
+**Q:** Incremental backup, what does it back up?
 **A:** Files changed since the LAST backup of ANY type. Clears the archive bit. Fastest to back up, slowest to restore (need full + every incremental in order).
 
-**Q:** Differential backup — what does it back up?
+**Q:** Differential backup, what does it back up?
 **A:** Files changed since the last FULL backup. Does NOT clear the archive bit. Each differential grows over time. Restore = full + most recent differential.
 
-**Q:** Synthetic full backup — what is it?
-**A:** A "full" assembled on the backup server by combining the last real full + subsequent incrementals — no need to re-read all production data. Saves backup-window bandwidth.
+**Q:** Synthetic full backup, what is it?
+**A:** A "full" assembled on the backup server by combining the last real full + subsequent incrementals, no need to re-read all production data. Saves backup-window bandwidth.
 
 **Q:** State the 3-2-1 backup rule.
 **A:** 3 copies of the data, on 2 different media types, with 1 copy off-site. (Modern variant 3-2-1-1-0 adds 1 immutable / air-gapped + 0 verified errors.)
 
-**Q:** GFS rotation — what does it stand for?
+**Q:** GFS rotation, what does it stand for?
 **A:** Grandfather-Father-Son: monthly (grandfather) + weekly (father) + daily (son) tapes. Provides multi-month retention without storing every daily forever.
 
 **Q:** Cold site vs warm site vs hot site?
@@ -458,11 +458,11 @@
 **Q:** Synchronous vs asynchronous replication?
 **A:** Synchronous = write returns only after BOTH sites confirm (RPO=0, latency-sensitive). Asynchronous = write returns immediately, replication catches up (RPO>0, tolerates long-haul links).
 
-**Q:** Business Continuity vs Disaster Recovery — what's the difference?
+**Q:** Business Continuity vs Disaster Recovery, what's the difference?
 **A:** BCP = the broader plan to keep the business operating during any disruption (people, process, alt sites). DR = the technical IT subset focused on recovering systems and data.
 
 **Q:** Default MTBF and MTTR meanings?
-**A:** MTBF = Mean Time Between Failures (reliability — higher is better). MTTR = Mean Time To Repair (restoration speed — lower is better).
+**A:** MTBF = Mean Time Between Failures (reliability higher is better). MTTR = Mean Time To Repair (restoration speed lower is better).
 
 ---
 
@@ -475,9 +475,9 @@
 **A:** Prevents an attacker with physical access from changing boot order, disabling Secure Boot, or booting to USB/CD to bypass the OS.
 
 **Q:** What is the principle of least privilege?
-**A:** Give every account exactly the rights it needs to do its job — no more. Reduces blast radius if the account is compromised.
+**A:** Give every account exactly the rights it needs to do its job, no more. Reduces blast radius if the account is compromised.
 
-**Q:** RBAC — define.
+**Q:** RBAC, define.
 **A:** Role-Based Access Control: permissions assigned to roles, users assigned to roles. Easier to manage than per-user ACLs at scale.
 
 **Q:** Service account best practice?
@@ -487,12 +487,12 @@
 **A:** The lifecycle of identifying, testing, deploying, and verifying security/feature patches. Includes a baseline + a maintenance window + a rollback plan.
 
 **Q:** What are CIS benchmarks?
-**A:** Center for Internet Security's hardening guides — step-by-step config recommendations for OSes, browsers, cloud services. Widely used as the "secure baseline."
+**A:** Center for Internet Security's hardening guides, step-by-step config recommendations for OSes, browsers, cloud services. Widely used as the "secure baseline."
 
 **Q:** HIDS vs HIPS?
 **A:** Host Intrusion Detection System = monitors a host and alerts. Host Intrusion Prevention System = monitors AND blocks. Same engine class, different action level.
 
-**Q:** Mantrap / access control vestibule — what is it?
+**Q:** Mantrap / access control vestibule, what is it?
 **A:** Two-door entry; the second door only unlocks after the first closes. Prevents tailgating into secure areas (data center, MDF, server room).
 
 ---
@@ -509,13 +509,13 @@
 **A:** 4-byte header inserted in the Ethernet frame identifying which VLAN the frame belongs to. Allows one physical link to carry traffic for many VLANs ("trunk port").
 
 **Q:** What is a jumbo frame and what MTU?
-**A:** Ethernet frame larger than the standard 1500-byte MTU — typically 9000 bytes. Reduces per-packet overhead for large transfers (storage, backups). Every device in the path must support it end-to-end.
+**A:** Ethernet frame larger than the standard 1500-byte MTU, typically 9000 bytes. Reduces per-packet overhead for large transfers (storage, backups). Every device in the path must support it end-to-end.
 
-**Q:** Layer 4 vs Layer 7 load balancer — difference?
+**Q:** Layer 4 vs Layer 7 load balancer, difference?
 **A:** L4 = balances on IP+port only (faster, no payload inspection). L7 = balances on HTTP host/path/headers/cookies (smarter routing, SSL termination, WAF integration).
 
 **Q:** What is KVM-over-IP?
-**A:** Network-accessible Keyboard/Video/Mouse switch — lets you control a server's console (BIOS, OS, even pre-boot) remotely over IP. Don't confuse with KVM the hypervisor.
+**A:** Network-accessible Keyboard/Video/Mouse switch, lets you control a server's console (BIOS, OS, even pre-boot) remotely over IP. Don't confuse with KVM the hypervisor.
 
 **Q:** What is Wake-on-LAN (WoL)?
 **A:** A special "magic packet" sent to a NIC's MAC address tells the network adapter to power the machine on. NIC and BIOS must both support it.
@@ -528,37 +528,37 @@
 **A:** (1) Identify the problem. (2) Establish a theory of probable cause. (3) Test the theory. (4) Establish a plan of action and implement. (5) Verify full system functionality (and preventive measures). (6) Document findings, actions, outcomes.
 
 **Q:** What is POST?
-**A:** Power-On Self-Test — the firmware diagnostic that runs when the server is powered on. Tests CPU, RAM, video, basic peripherals. Failures produce beep codes / on-screen errors.
+**A:** Power-On Self-Test, the firmware diagnostic that runs when the server is powered on. Tests CPU, RAM, video, basic peripherals. Failures produce beep codes / on-screen errors.
 
-**Q:** A server beeps 3 times at boot and refuses to POST — first thing to check?
+**Q:** A server beeps 3 times at boot and refuses to POST, first thing to check?
 **A:** RAM (most common cause of beep codes on boot). Reseat / swap modules; consult the vendor's beep-code chart for the exact meaning.
 
-**Q:** A server's amber drive LED is solid — what does it mean?
+**Q:** A server's amber drive LED is solid, what does it mean?
 **A:** Drive failure / predictive failure. Check the array status in the RAID controller utility and replace per vendor procedure.
 
 **Q:** What is a CMDB?
-**A:** Configuration Management Database — single source of truth for inventory: hosts, configs, owners, locations, relationships. Powers change impact analysis.
+**A:** Configuration Management Database, single source of truth for inventory: hosts, configs, owners, locations, relationships. Powers change impact analysis.
 
 **Q:** What is a runbook?
 **A:** Step-by-step operational procedure for a recurring task (patch night, DR failover, certificate renewal). Lets a less-senior tech execute consistently.
 
 **Q:** What is Change Management's CAB?
-**A:** Change Advisory Board — reviews and approves proposed changes before they hit production. Membership typically includes infra, security, app owners, business reps.
+**A:** Change Advisory Board, reviews and approves proposed changes before they hit production. Membership typically includes infra, security, app owners, business reps.
 
 **Q:** Bottleneck diagnosis: which tool on Windows shows CPU/RAM/disk/net counters in real time?
 **A:** Performance Monitor (perfmon) for detailed counters; Task Manager and Resource Monitor (resmon) for at-a-glance. Linux equivalents: `top`/`htop`, `iostat`, `vmstat`, `iftop`, `sar`.
 
-**Q:** A backup keeps failing at 87% with the same error every night — what should you do FIRST?
-**A:** Read the error message and check the backup logs / vendor KB. Most repeating failures have a specific root cause (file locked, permissions, full target, expired credential) — don't blindly restart.
+**Q:** A backup keeps failing at 87% with the same error every night, what should you do FIRST?
+**A:** Read the error message and check the backup logs / vendor KB. Most repeating failures have a specific root cause (file locked, permissions, full target, expired credential), don't blindly restart.
 
 ---
 
 ## 📝 STUDY TIPS FOR FLASHCARDS
 
 1. **Anki recommendation:** Spaced repetition beats cramming every time for acronym-heavy certs like Server+.
-2. **Daily review:** 10–15 min/day until exam — short and regular wins.
+2. **Daily review:** 10–15 min/day until exam, short and regular wins.
 3. **Drill RAID math out loud:** Pick a count + level + disk size, compute usable capacity in your head until it's instant.
-4. **Mix sections:** Don't only drill one section at a time — interleave to simulate the exam.
+4. **Mix sections:** Don't only drill one section at a time, interleave to simulate the exam.
 5. **Add cards from missed quiz questions:** Whenever you miss a question, write the new card before moving on.
 
 ---
@@ -568,12 +568,12 @@
 You should be able to instantly answer:
 
 - The 4 form factors (tower, rack 1U–4U, blade) and where each is used
-- All 5 RAID levels (0, 1, 5, 6, 10) — min disks, capacity formula, fault tolerance
+- All 5 RAID levels (0, 1, 5, 6, 10), min disks, capacity formula, fault tolerance
 - Default ports: SSH 22, RDP 3389, SMB 445, NFS 2049, iSCSI 3260, WinRM 5985/5986, IPMI 623
-- RTO vs RPO — and how to pick a backup/replication strategy from a scenario
+- RTO vs RPO, and how to pick a backup/replication strategy from a scenario
 - 3-2-1 rule + GFS rotation
 - Type 1 vs Type 2 hypervisor + container vs VM
 - Cold/warm/hot site tradeoffs
-- The 6-step troubleshooting methodology — in order
+- The 6-step troubleshooting methodology, in order
 
 Good luck! 🖥️

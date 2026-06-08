@@ -32,9 +32,9 @@ D. 100 leads, 10 calls, 1 sale
 ---
 
 ### Q4. A founder says: "I do AI marketing for businesses." This positioning is: *(Apply)*
-A. Strong — broad market = more clients
+A. Strong, broad market = more clients
 B. Acceptable for Year 1
-C. Too broad — not a niche
+C. Too broad, not a niche
 D. Perfect for inbound SEO
 
 ---
@@ -67,11 +67,11 @@ D. Hourly is illegal in most US states
 A. One axis only
 B. Two or three axes (e.g., vertical + deliverable)
 C. Five axes
-D. No axis — you stay general
+D. No axis, you stay general
 
 ---
 
-### Q9. The reading's three founder composites — Maya, Jordan, Sam — illustrate which lesson? *(Understand)*
+### Q9. The reading's three founder composites Maya, Jordan, Sam illustrate which lesson? *(Understand)*
 A. AI tools matter more than positioning
 B. Hourly billing is the safest for new founders
 C. Niching decisions in week one drive radically different outcomes two years out
@@ -122,7 +122,7 @@ D. "Full-service AI marketing partner"
 ### Q15. Which Year-1 mistake does the reading flag MOST strongly? *(Understand)*
 A. Spending too much on tools
 B. Not building a perfect website
-C. "I help businesses grow" positioning — generic and unmemorable
+C. "I help businesses grow" positioning, generic and unmemorable
 D. Charging too much
 
 ---
@@ -131,14 +131,14 @@ D. Charging too much
 A. 1 hour
 B. 6–10 hours
 C. 30 hours
-D. 0 hours — focus only on clients
+D. 0 hours, focus only on clients
 
 ---
 
 ### Q17. Which of the following is FALSE about niching, per the reading? *(Analyze)*
 A. Niching narrows your TAM but raises your price
 B. Niching makes inbound easier
-C. Niching limits your income ceiling — most niched solos cap at $75K/yr
+C. Niching limits your income ceiling, most niched solos cap at $75K/yr
 D. Niching makes word-of-mouth tighter
 
 ---
@@ -177,7 +177,7 @@ D. Only when revenue exceeds $5M ARR
 
 ### Q22. "Storyblok's positioning lesson" from the reading is: *(Understand)*
 A. Compete with WordPress on price
-B. Niche on "developer-friendly headless CMS for mid-market commerce" — win narrow first
+B. Niche on "developer-friendly headless CMS for mid-market commerce", win narrow first
 C. Pick the broadest possible CMS positioning
 D. Build for everyone
 
@@ -201,8 +201,8 @@ D. "I run the Google Ads audit for dental groups"
 
 ### Q25. A founder cannot get to 100 named companies for their niche. What does that mean? *(Apply)*
 A. The niche is too narrow
-B. The niche is fine — quality over quantity
-C. The niche is too narrow OR poorly defined — broaden or redefine
+B. The niche is fine, quality over quantity
+C. The niche is too narrow OR poorly defined, broaden or redefine
 D. Time to hire a sales rep
 
 ---
@@ -224,9 +224,9 @@ The reading opens with three founder composites whose Year-1 niche decision driv
 The three axes are Vertical, Channel, Deliverable. Geography can sometimes be added but is not one of the three primary axes.
 
 ### Q3: **B. 100 named companies, 10 watering holes, 1 painful shared problem**
-This is the canonical Philip Morgan / Jonathan Stark niche test — and the most useful exercise in Year 1.
+This is the canonical Philip Morgan / Jonathan Stark niche test, and the most useful exercise in Year 1.
 
-### Q4: **C. Too broad — not a niche**
+### Q4: **C. Too broad, not a niche**
 "AI marketing for businesses" is a category, not a niche. A real niche names the industry, size, geography, and buyer role.
 
 ### Q5: **B. Building a one-person ~$1.5M ARR productized design subscription**
@@ -259,17 +259,17 @@ This is the core premise of agency positioning literature (Morgan, Stark, Enns).
 ### Q14: **B. "Demand-gen for B2B FinTech $10–50M ARR"**
 Names industry + size + deliverable. The others are too generic.
 
-### Q15: **C. "I help businesses grow" positioning — generic and unmemorable**
+### Q15: **C. "I help businesses grow" positioning, generic and unmemorable**
 This is Mistake #1 in the reading: nobody searches for it, refers it, or pays a premium for it.
 
 ### Q16: **B. 6–10 hours**
-Non-negotiable founder time for marketing-the-business work — content, case studies, inbound.
+Non-negotiable founder time for marketing-the-business work, content, case studies, inbound.
 
-### Q17: **C. Niching limits your income ceiling — most niched solos cap at $75K/yr**
+### Q17: **C. Niching limits your income ceiling, most niched solos cap at $75K/yr**
 False. Niched solos commonly reach $180K–$420K in Year 2–3, and stacked-wedge operators can hit $1M+ solo.
 
 ### Q18: **B. "The $1,500 Google Ads audit, delivered in 5 days"**
-A pure deliverable wedge: fixed-scope, fixed-price, time-bound — agnostic to industry or channel.
+A pure deliverable wedge: fixed-scope, fixed-price, time-bound, agnostic to industry or channel.
 
 ### Q19: **B. $1,500–$2,500 Google Ads audit**
 This is the typical range for a 5–7 day audit, per the productized services table.
@@ -280,8 +280,8 @@ The Sherpa-level sentence has WHO + WHAT + WHY YOU. A roadmap is fine to have, b
 ### Q21: **B. When 50+ hr weeks for 8+ weeks OR turning away revenue OR specific bottleneck > 15 hrs/week**
 Hiring before this point traps the founder doing the work AND managing the work.
 
-### Q22: **B. Niche on "developer-friendly headless CMS for mid-market commerce" — win narrow first**
-Storyblok resisted being a "WordPress alternative" — narrow, win, then broaden.
+### Q22: **B. Niche on "developer-friendly headless CMS for mid-market commerce", win narrow first**
+Storyblok resisted being a "WordPress alternative", narrow, win, then broaden.
 
 ### Q23: **B. 3-month minimum, auto-renew, capped scope, QBR**
 The four rules for retainers that actually work, from the reading's retainer table.
@@ -289,7 +289,7 @@ The four rules for retainers that actually work, from the reading's retainer tab
 ### Q24: **C. "I'm a full-service marketing partner for ambitious brands"**
 This is the death sentence of agency landing pages. Generic, ungoogle-able, un-referrable.
 
-### Q25: **C. Niche is too narrow OR poorly defined — broaden or redefine**
+### Q25: **C. Niche is too narrow OR poorly defined, broaden or redefine**
 The 100 test is the breadth check. Failing it = redefine or broaden the niche.
 
 ### Q26: **B. The ratio by which AI multiplies your output per hour vs. doing the work manually**

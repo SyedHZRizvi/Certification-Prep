@@ -8,7 +8,7 @@
 
 ### Q1. The Wayfair (2018) Supreme Court ruling established: *(Remember)*
 A. Physical presence is the only sales-tax trigger
-B. Economic nexus — states can require remote sellers to collect tax based on $/transaction thresholds
+B. Economic nexus, states can require remote sellers to collect tax based on $/transaction thresholds
 C. No sales tax on internet sales
 D. Federal sales tax
 
@@ -208,7 +208,7 @@ D. 25%
 
 ## 🎯 Answers + Explanations
 
-### Q1: **B. Economic nexus — states can require remote sellers to collect tax based on $/transaction thresholds**
+### Q1: **B. Economic nexus, states can require remote sellers to collect tax based on $/transaction thresholds**
 South Dakota v. Wayfair (2018) overturned Quill (1992). 45 states adopted economic nexus by 2024.
 
 ### Q2: **B. March 2025**
@@ -236,19 +236,19 @@ The Financial Conduct Authority brought BNPL providers under UK consumer-credit 
 Visa's Chargeback Monitoring Program enrolls merchants at 1.0%+. 1.5%+ triggers Excessive Chargeback Program.
 
 ### Q10: **B. Chargeback guarantee (insurance model) at 0.5-1.5% per transaction**
-Signifyd indemnifies chargebacks — if a covered transaction results in a chargeback, Signifyd reimburses.
+Signifyd indemnifies chargebacks, if a covered transaction results in a chargeback, Signifyd reimburses.
 
 ### Q11: **B. Requirement 6.4.3 and 11.6.1**
-PCI-DSS v4.0's new script-management requirements (mandatory March 2025) — inventory and authorization of scripts on payment pages.
+PCI-DSS v4.0's new script-management requirements (mandatory March 2025), inventory and authorization of scripts on payment pages.
 
 ### Q12: **B. 3P seller to the marketplace operator**
-MFLs shift tax collection to the marketplace. As a 3P seller, you don't owe tax on marketplace sales in MFL states — but DO on DTC sales.
+MFLs shift tax collection to the marketplace. As a 3P seller, you don't owe tax on marketplace sales in MFL states, but DO on DTC sales.
 
 ### Q13: **B. 19%**
 Germany's standard VAT rate is 19% (reduced rate 7%). One of the lower EU rates.
 
 ### Q14: **B. Eliminated in July 2021**
-The €22 exemption was abused by AliExpress / Wish. Eliminated alongside the IOSS introduction — now all imports owe VAT.
+The €22 exemption was abused by AliExpress / Wish. Eliminated alongside the IOSS introduction, now all imports owe VAT.
 
 ### Q15: **B. 3-6% of transaction**
 BNPL providers take 3-6% in exchange for paying merchants upfront and taking credit risk. Higher than card processing but lift in conversion offsets.
@@ -266,7 +266,7 @@ Wallet-driven checkout converts 35-45% higher than manual card entry on mobile (
 Klarna's SoftBank Series H in June 2021 set $45.6B. The July 2022 down round set $6.7B. The largest fintech valuation crash on record.
 
 ### Q20: **B. 0.5% per transaction (capped)**
-Stripe Tax adds 0.5% (capped) for automated multi-jurisdiction sales tax handling — US, EU, UK, Australia.
+Stripe Tax adds 0.5% (capped) for automated multi-jurisdiction sales tax handling, US, EU, UK, Australia.
 
 ### Q21: **B. ~40%**
 Friendly fraud (customer disputes legitimate purchase) is now ~40% of all chargebacks per Visa 2024 data.

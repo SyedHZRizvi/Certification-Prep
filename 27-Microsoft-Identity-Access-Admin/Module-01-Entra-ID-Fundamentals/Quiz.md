@@ -65,13 +65,13 @@ D. Federated trust with Acme's tenant
 ### Q8. Which statement BEST distinguishes B2B from External ID? *(Understand)*
 A. B2B uses social IdPs; External ID uses Microsoft accounts
 B. B2B is for workforce partners (guests in your tenant); External ID is for consumer apps (separate tenant)
-C. They are the same — both for external users
+C. They are the same, both for external users
 D. B2B is for employees; External ID is for guests
 
 ---
 
 ### Q9. A Global Administrator wants to take Owner over an Azure subscription. What must they do FIRST? *(Apply)*
-A. Already implicit — GA has Owner everywhere
+A. Already implicit, GA has Owner everywhere
 B. Toggle "Access management for Azure resources" → Yes; then assign themselves User Access Admin at root scope
 C. Open a support ticket
 D. Have another Global Admin grant them Contributor
@@ -106,7 +106,7 @@ D. Enabling Identity Protection
 A. It can be renamed once after tenant creation
 B. It can be deleted after a custom domain is verified
 C. It is permanent and cannot be renamed or deleted
-D. It is optional — many tenants don't have one
+D. It is optional, many tenants don't have one
 
 ---
 
@@ -158,7 +158,7 @@ D. The guest needs to upgrade to a paid Microsoft account
 
 ---
 
-### Q20. **Yes/No** — For each statement, mark Yes or No. *(Understand)*
+### Q20. **Yes/No**, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Microsoft Entra ID Governance is a separate add-on SKU that adds Lifecycle Workflows.
 **S2:** Microsoft 365 E3 includes Entra ID P2.
@@ -185,7 +185,7 @@ D. 2 → 3 → 1 → 4
 
 ---
 
-### Q22. **Yes/No** — Roles. *(Understand)*
+### Q22. **Yes/No**, Roles. *(Understand)*
 
 **S1:** Entra ID roles and Azure RBAC roles are the same role system with different names.
 **S2:** A Global Administrator implicitly has Owner over every Azure subscription.
@@ -214,7 +214,7 @@ D. Assign Entra roles
 
 ---
 
-### Q25. **Yes/No** — Editions & feature mapping. *(Evaluate)*
+### Q25. **Yes/No**, Editions & feature mapping. *(Evaluate)*
 
 **S1:** Conditional Access works with Entra ID Free.
 **S2:** Identity Protection requires Entra ID P2.
@@ -235,7 +235,7 @@ Renamed to Microsoft Entra ID in mid-2023. SC-300 uses both names interchangeabl
 ### Q2: **B. P1**
 Conditional Access starts at P1. Identity Protection (risk-based CA) is the P2 feature.
 
-### Q3: **B and D — Identity Protection + PIM**
+### Q3: **B and D, Identity Protection + PIM**
 Conditional Access (A) is P1. Dynamic groups (C) is P1. Identity Protection and PIM both need P2.
 
 ### Q4: **C. `<tenant>.onmicrosoft.com`**
@@ -251,7 +251,7 @@ Microsoft 365 E5 bundles Entra ID P2; E3 bundles P1.
 Partners go through B2B. External ID is for consumer-facing apps, not workforce collaboration.
 
 ### Q8: **B. B2B is for workforce partners; External ID is for consumer apps (separate tenant)**
-Most important distinction in SC-300 — the exam will trick you here.
+Most important distinction in SC-300, the exam will trick you here.
 
 ### Q9: **B. Toggle "Access management for Azure resources" → Yes; then assign themselves User Access Admin at root scope**
 The deliberate, audited elevation path. GA does NOT have Azure RBAC by default.
@@ -266,7 +266,7 @@ The deliberate, audited elevation path. GA does NOT have Azure RBAC by default.
 The retention upgrade comes from where logs land, not from a license tier.
 
 ### Q13: **C. It is permanent and cannot be renamed or deleted**
-Plan accordingly — pick a name you can live with.
+Plan accordingly, pick a name you can live with.
 
 ### Q14: **B. Add a TXT (or MX) record at the DNS provider, then click Verify**
 Standard DNS-based ownership proof.
@@ -278,7 +278,7 @@ Free tenants get the generic Microsoft branding only.
 Microsoft's published guidance is to keep Global Admins ≤5; minimum 2 (so loss of one doesn't lock out the tenant).
 
 ### Q17: **D. To get around the 5,000 custom domain limit**
-Per-tenant limits aren't bypassed by splitting tenants — multi-tenancy is for isolation, not capacity.
+Per-tenant limits aren't bypassed by splitting tenants, multi-tenancy is for isolation, not capacity.
 
 ### Q18: **C. A user can have up to 250 app registrations by default**
 Default 250, configurable via Application Developer role.
@@ -296,7 +296,7 @@ Create tenant first, then break-glass accounts (so you're not locked out), then 
 S1 no (three separate systems). S2 no (must explicitly elevate). S3 yes.
 
 ### Q23: **B. Managed authentication keeps the user signal in Entra ID, enabling richer CA + Identity Protection signals**
-Federation pushes auth out — Entra loses sign-in signals (location, device, risk) that power CA + Identity Protection.
+Federation pushes auth out, Entra loses sign-in signals (location, device, risk) that power CA + Identity Protection.
 
 ### Q24: **C. Reset passwords for non-admins**
 Helpdesk Admin = password reset only, and only on non-admin accounts.

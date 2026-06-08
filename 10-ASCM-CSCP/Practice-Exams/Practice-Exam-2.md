@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — ASCM CSCP (Full-Scope Style)
+# 🧪 Practice Exam 2, ASCM CSCP (Full-Scope Style)
 
 > **Conditions:** Set a 150-minute timer. 110 questions. Treat it like the real thing.
-> **Pass mark:** 77/110 (70% — scaled-score 300 floor)
+> **Pass mark:** 77/110 (70%, scaled-score 300 floor)
 > Take this AFTER finishing all 10 Modules.
 
 ---
@@ -703,7 +703,7 @@ D. Risk-hedging
 
 | Score | Verdict |
 |-------|---------|
-| 99–110 | 🏆 Solid pass margin — book the exam |
+| 99–110 | 🏆 Solid pass margin, book the exam |
 | 77–98 | ✅ Above pass; review weak domains |
 | 60–76 | ⚠️ Below pass; redo Modules in weakest domain, retake in 2 weeks |
 | <60 | 🔁 Restart Modules + practice exam in 3 weeks |
@@ -728,126 +728,126 @@ Re-study the lowest-percentage domain first. Aim for ≥75% per domain before th
 ## Detailed answer rationales
 
 ### Q1-Q15 (Strategy / Environment / Design)
-- **Q1 (C. Material, information, cash)** — APICS dictionary three flows. Others list outcomes or actors.
-- **Q2 (B. Enable)** — Added in SCOR 11 (2012). Older texts say 5 processes; current is 6.
-- **Q3 (D. Efficient)** — Stable, predictable functional products (Fisher) → efficient/cost-focused SC.
-- **Q4 (A. Agile)** — Apple's high-demand + high-supply uncertainty (rare earths, geopolitics) = Hau Lee Agile. The other answers either miss demand uncertainty (Risk-hedging) or supply uncertainty (Responsive).
-- **Q5 (B. Design phase)** — ETO's CODP is at the design phase, the longest customer wait.
-- **Q6 (B. 50%)** — Square-root law: SS reduces from √16 = 4 to √4 = 2; ratio 2/4 = 50% reduction.
-- **Q7 (A)** — Center-of-gravity assumes straight-line, single facility, uniform freight rate. Others contradict these.
-- **Q8 (A. Nearshoring)** — China → Mexico for US market = nearshoring (closer, not back home). Reshoring would be to USA.
-- **Q9 (D. Profit impact and supply risk)** — Kraljic's two axes.
-- **Q10 (C. Strategic)** — High profit impact + high supply risk = Strategic quadrant.
-- **Q11 (C. 70-80%)** — Class A SKUs drive 70-80% of value with ~20% of SKU count.
-- **Q12 (C. Forecast)** — Independent demand = forecast.
-- **Q13 (B. MRP from BOM)** — Dependent demand = calculated, not forecast.
-- **Q14 (D. 216)** — F = 0.4·240 + 0.6·200 = 96 + 120 = 216.
-- **Q15 (C. Trend + seasonality)** — Holt-Winters handles both. Holt = trend only.
+- **Q1 (C. Material, information, cash)**, APICS dictionary three flows. Others list outcomes or actors.
+- **Q2 (B. Enable)**, Added in SCOR 11 (2012). Older texts say 5 processes; current is 6.
+- **Q3 (D. Efficient)**, Stable, predictable functional products (Fisher) → efficient/cost-focused SC.
+- **Q4 (A. Agile)**, Apple's high-demand + high-supply uncertainty (rare earths, geopolitics) = Hau Lee Agile. The other answers either miss demand uncertainty (Risk-hedging) or supply uncertainty (Responsive).
+- **Q5 (B. Design phase)**, ETO's CODP is at the design phase, the longest customer wait.
+- **Q6 (B. 50%)**, Square-root law: SS reduces from √16 = 4 to √4 = 2; ratio 2/4 = 50% reduction.
+- **Q7 (A)**, Center-of-gravity assumes straight-line, single facility, uniform freight rate. Others contradict these.
+- **Q8 (A. Nearshoring)**, China → Mexico for US market = nearshoring (closer, not back home). Reshoring would be to USA.
+- **Q9 (D. Profit impact and supply risk)**, Kraljic's two axes.
+- **Q10 (C. Strategic)**, High profit impact + high supply risk = Strategic quadrant.
+- **Q11 (C. 70-80%)**, Class A SKUs drive 70-80% of value with ~20% of SKU count.
+- **Q12 (C. Forecast)**, Independent demand = forecast.
+- **Q13 (B. MRP from BOM)**, Dependent demand = calculated, not forecast.
+- **Q14 (D. 216)**, F = 0.4·240 + 0.6·200 = 96 + 120 = 216.
+- **Q15 (C. Trend + seasonality)**, Holt-Winters handles both. Holt = trend only.
 
 ### Q16-Q30 (Forecasting + Planning + Execution)
-- **Q16 (C)** — CPFR's "one shared forecast" is the bullwhip antidote.
-- **Q17 (B)** — |TS| > 4 → investigate the model for bias.
-- **Q18 (C)** — MAPE breaks down when actuals are near zero (denominator approaches 0).
-- **Q19 (A)** — 5-step S&OP: Data → Demand → Supply → Pre-S&OP → Executive. Memorize the order.
-- **Q20 (A. Product family)** — S&OP plans at family level over 12-24 months; SKU detail in MPS.
-- **Q21 (D)** — MRP inputs: MPS, BOM, inventory records.
-- **Q22 (A)** — DTF: horizon inside which only firm orders should drive MPS.
-- **Q23 (A)** — RCCP validates MPS at key work centers. CRP validates MRP at all work centers.
-- **Q24 (D)** — CTP extends ATP by considering capacity + material availability.
-- **Q25 (B)** — Lot-for-lot = exactly the net requirement each period.
-- **Q26 (B. √(2DS/H))** — EOQ formula.
-- **Q27 (D. Quantity discounts)** — EOQ does NOT assume discounts; the others (constant demand, constant LT, instantaneous receipt) are assumed.
-- **Q28 (A. 550)** — Avg LT demand = 100 × 5 = 500. SS = 1.65 × 30 = 49.5 ≈ 50. ROP ≈ 550.
-- **Q29 (D. 75 days)** — C2C = 60 + 40 − 25 = 75.
-- **Q30 (A. 5)** — Turns = 50/10 = 5.
+- **Q16 (C)**, CPFR's "one shared forecast" is the bullwhip antidote.
+- **Q17 (B)**, |TS| > 4 → investigate the model for bias.
+- **Q18 (C)**, MAPE breaks down when actuals are near zero (denominator approaches 0).
+- **Q19 (A)**, 5-step S&OP: Data → Demand → Supply → Pre-S&OP → Executive. Memorize the order.
+- **Q20 (A. Product family)**, S&OP plans at family level over 12-24 months; SKU detail in MPS.
+- **Q21 (D)**, MRP inputs: MPS, BOM, inventory records.
+- **Q22 (A)**, DTF: horizon inside which only firm orders should drive MPS.
+- **Q23 (A)**, RCCP validates MPS at key work centers. CRP validates MRP at all work centers.
+- **Q24 (D)**, CTP extends ATP by considering capacity + material availability.
+- **Q25 (B)**, Lot-for-lot = exactly the net requirement each period.
+- **Q26 (B. √(2DS/H))**, EOQ formula.
+- **Q27 (D. Quantity discounts)**, EOQ does NOT assume discounts; the others (constant demand, constant LT, instantaneous receipt) are assumed.
+- **Q28 (A. 550)**, Avg LT demand = 100 × 5 = 500. SS = 1.65 × 30 = 49.5 ≈ 50. ROP ≈ 550.
+- **Q29 (D. 75 days)**, C2C = 60 + 40 − 25 = 75.
+- **Q30 (A. 5)**, Turns = 50/10 = 5.
 
 ### Q31-Q50 (Inventory + Sourcing)
-- **Q31 (C. 0.75)** — Critical ratio = 60/(60+20) = 0.75.
-- **Q32 (C)** — Cycle counting enables continuous accuracy without facility shutdown.
-- **Q33 (B)** — JIT relies on reliability, short LT, quality from suppliers.
-- **Q34 (B)** — Effective capacity considers realistic mix, schedule, maintenance.
-- **Q35 (C. Forecasting)** — TIMWOOD = Transport/Inventory/Motion/Waiting/Overproduction/Over-processing/Defects. Forecasting is NOT one of the 7 wastes.
-- **Q36 (C. Theory of Constraints)** — Drum-buffer-rope = Goldratt's TOC scheduling.
-- **Q37 (D. Capability information)** — RFI gathers capability info for a long-list.
-- **Q38 (C)** — RFQ is best for well-defined spec + price-dominant criterion (commodities).
-- **Q39 (D. Spend analysis)** — The 7-step strategic sourcing process begins with spend analysis.
-- **Q40 (C)** — TCO covers acquisition + operating + maintenance + disposal + hidden costs.
-- **Q41 (D)** — Strategic alliance level SRM = joint R&D, shared scorecards, sometimes equity.
-- **Q42 (B)** — BATNA = Best Alternative To a Negotiated Agreement (Fisher & Ury).
-- **Q43 (A. Buyer)** — Cost-plus transfers cost risk to the buyer. Fixed-price transfers risk to supplier.
-- **Q44 (C)** — SLA = Service-Level Agreement.
-- **Q45 (D. Ocean)** — Ocean has the lowest cost per ton-mile.
-- **Q46 (D)** — Intermodal = same container across modes without rehandling.
-- **Q47 (C)** — 4PL = asset-light orchestrator of multiple 3PLs.
-- **Q48 (C. Perfect order)** — Perfect order is the strictest (on-time + in-full + undamaged + docs).
-- **Q49 (C. Zone)** — Zone picking = pickers stay in zones; orders move between zones.
-- **Q50 (A)** — Goods-to-person automation suits high-throughput e-commerce FC.
+- **Q31 (C. 0.75)**, Critical ratio = 60/(60+20) = 0.75.
+- **Q32 (C)**, Cycle counting enables continuous accuracy without facility shutdown.
+- **Q33 (B)**, JIT relies on reliability, short LT, quality from suppliers.
+- **Q34 (B)**, Effective capacity considers realistic mix, schedule, maintenance.
+- **Q35 (C. Forecasting)**, TIMWOOD = Transport/Inventory/Motion/Waiting/Overproduction/Over-processing/Defects. Forecasting is NOT one of the 7 wastes.
+- **Q36 (C. Theory of Constraints)**, Drum-buffer-rope = Goldratt's TOC scheduling.
+- **Q37 (D. Capability information)**, RFI gathers capability info for a long-list.
+- **Q38 (C)**, RFQ is best for well-defined spec + price-dominant criterion (commodities).
+- **Q39 (D. Spend analysis)**, The 7-step strategic sourcing process begins with spend analysis.
+- **Q40 (C)**, TCO covers acquisition + operating + maintenance + disposal + hidden costs.
+- **Q41 (D)**, Strategic alliance level SRM = joint R&D, shared scorecards, sometimes equity.
+- **Q42 (B)**, BATNA = Best Alternative To a Negotiated Agreement (Fisher & Ury).
+- **Q43 (A. Buyer)**, Cost-plus transfers cost risk to the buyer. Fixed-price transfers risk to supplier.
+- **Q44 (C)**, SLA = Service-Level Agreement.
+- **Q45 (D. Ocean)**, Ocean has the lowest cost per ton-mile.
+- **Q46 (D)**, Intermodal = same container across modes without rehandling.
+- **Q47 (C)**, 4PL = asset-light orchestrator of multiple 3PLs.
+- **Q48 (C. Perfect order)**, Perfect order is the strictest (on-time + in-full + undamaged + docs).
+- **Q49 (C. Zone)**, Zone picking = pickers stay in zones; orders move between zones.
+- **Q50 (A)**, Goods-to-person automation suits high-throughput e-commerce FC.
 
 ### Q51-Q70 (Logistics + Trade)
-- **Q51 (D)** — Bonded warehouse = customs-supervised, deferred duty.
-- **Q52 (A)** — Drop-shipping = retailer takes order, manufacturer ships direct.
-- **Q53 (C. 48×40 GMA)** — North American standard pallet (vs EUR 1200×800).
-- **Q54 (C. 11)** — Incoterms 2020 has 11 terms.
-- **Q55 (D. Seller's premises)** — EXW: seller does the minimum; responsibility ends at seller's door.
-- **Q56 (D. DDP)** — DDP makes the seller responsible for everything including import duties.
-- **Q57 (D. Insurance Clause C)** — CIF adds minimum insurance (Clause C) vs CFR.
-- **Q58 (D)** — ICC recommends FCA over FOB for containerized cargo (risk should pass at the carrier, not the ship's rail).
-- **Q59 (B. 6 digits)** — HS codes globally harmonized at 6 digits; national extensions to 8-10.
-- **Q60 (D)** — Anti-dumping duty when import priced below fair value.
-- **Q61 (A. Letters of credit)** — UCP 600 = ICC rules for LCs.
-- **Q62 (B. Confirming bank)** — Confirming bank adds its own guarantee on top of issuing bank's.
-- **Q63 (A. Forward contract)** — Lock the rate for a future date. Default exam answer for known-amount, known-date FX hedge.
-- **Q64 (B)** — FTZ defers duty until release to domestic market.
-- **Q65 (B)** — ATA Carnet allows temporary admission of trade-show samples.
-- **Q66 (A. People, planet, profit)** — Elkington's TBL.
-- **Q67 (A. Purchased energy)** — Scope 2 = indirect from purchased energy.
-- **Q68 (B. 70-90%)** — Scope 3 dominates total footprint in most industries.
-- **Q69 (A. Refuse)** — Highest in the 9R hierarchy is Refuse (don't make/buy at all).
-- **Q70 (C. EMS)** — ISO 14001 certifies environmental management systems.
+- **Q51 (D)**, Bonded warehouse = customs-supervised, deferred duty.
+- **Q52 (A)**, Drop-shipping = retailer takes order, manufacturer ships direct.
+- **Q53 (C. 48×40 GMA)**, North American standard pallet (vs EUR 1200×800).
+- **Q54 (C. 11)**, Incoterms 2020 has 11 terms.
+- **Q55 (D. Seller's premises)**, EXW: seller does the minimum; responsibility ends at seller's door.
+- **Q56 (D. DDP)**, DDP makes the seller responsible for everything including import duties.
+- **Q57 (D. Insurance Clause C)**, CIF adds minimum insurance (Clause C) vs CFR.
+- **Q58 (D)**, ICC recommends FCA over FOB for containerized cargo (risk should pass at the carrier, not the ship's rail).
+- **Q59 (B. 6 digits)**, HS codes globally harmonized at 6 digits; national extensions to 8-10.
+- **Q60 (D)**, Anti-dumping duty when import priced below fair value.
+- **Q61 (A. Letters of credit)**, UCP 600 = ICC rules for LCs.
+- **Q62 (B. Confirming bank)**, Confirming bank adds its own guarantee on top of issuing bank's.
+- **Q63 (A. Forward contract)**, Lock the rate for a future date. Default exam answer for known-amount, known-date FX hedge.
+- **Q64 (B)**, FTZ defers duty until release to domestic market.
+- **Q65 (B)**, ATA Carnet allows temporary admission of trade-show samples.
+- **Q66 (A. People, planet, profit)**, Elkington's TBL.
+- **Q67 (A. Purchased energy)**, Scope 2 = indirect from purchased energy.
+- **Q68 (B. 70-90%)**, Scope 3 dominates total footprint in most industries.
+- **Q69 (A. Refuse)**, Highest in the 9R hierarchy is Refuse (don't make/buy at all).
+- **Q70 (C. EMS)**, ISO 14001 certifies environmental management systems.
 
 ### Q71-Q90 (Sustainability + Risk + CI)
-- **Q71 (C. Risk management)** — ISO 31000.
-- **Q72 (D. Tabulate)** — 4 T's: Tolerate, Treat, Transfer, Terminate. Tabulate is the distractor.
-- **Q73 (A. S × O × D)** — RPN = Severity × Occurrence × Detection (multiplicative).
-- **Q74 (A)** — RTO = Target time to restore function.
-- **Q75 (A)** — RPO = Maximum acceptable data loss.
-- **Q76 (C. Economic)** — CSR pyramid's foundation (Carroll 1991).
-- **Q77 (A)** — ESG raters: MSCI, Sustainalytics, ISS, S&P Global.
-- **Q78 (D)** — SBTi validates net-zero targets aligned with climate science.
-- **Q79 (D)** — TCFD = climate-related financial risk disclosure.
-- **Q80 (B. 2015)** — UN SDGs adopted in 2015 (Agenda 2030).
-- **Q81 (C. Likelihood vs impact)** — Risk heatmap axes.
-- **Q82 (A. Transfer)** — Insurance is risk transfer (you shift loss to insurer).
-- **Q83 (A)** — UFLPA/EU CSDDD/Modern Slavery Acts → multi-tier visibility for forced labor.
-- **Q84 (D)** — NIST CSF 5 functions: Identify, Protect, Detect, Respond, Recover.
-- **Q85 (B. 3.4 per million)** — Six Sigma target = 3.4 DPMO.
-- **Q86 (C)** — DMAIC = Define, Measure, Analyze, Improve, Control.
-- **Q87 (A. Exploit)** — TOC 5 steps: Identify → Exploit → Subordinate → Elevate → Repeat. Step 2 is Exploit.
-- **Q88 (B. A × P × Q)** — OEE = Availability × Performance × Quality.
-- **Q89 (B)** — 5S = Sort, Set, Shine, Standardize, Sustain.
-- **Q90 (B. Analyze)** — Fishbone is brainstorming root causes → Analyze phase.
+- **Q71 (C. Risk management)**, ISO 31000.
+- **Q72 (D. Tabulate)**, 4 T's: Tolerate, Treat, Transfer, Terminate. Tabulate is the distractor.
+- **Q73 (A. S × O × D)**, RPN = Severity × Occurrence × Detection (multiplicative).
+- **Q74 (A)**, RTO = Target time to restore function.
+- **Q75 (A)**, RPO = Maximum acceptable data loss.
+- **Q76 (C. Economic)**, CSR pyramid's foundation (Carroll 1991).
+- **Q77 (A)**, ESG raters: MSCI, Sustainalytics, ISS, S&P Global.
+- **Q78 (D)**, SBTi validates net-zero targets aligned with climate science.
+- **Q79 (D)**, TCFD = climate-related financial risk disclosure.
+- **Q80 (B. 2015)**, UN SDGs adopted in 2015 (Agenda 2030).
+- **Q81 (C. Likelihood vs impact)**, Risk heatmap axes.
+- **Q82 (A. Transfer)**, Insurance is risk transfer (you shift loss to insurer).
+- **Q83 (A)**, UFLPA/EU CSDDD/Modern Slavery Acts → multi-tier visibility for forced labor.
+- **Q84 (D)**, NIST CSF 5 functions: Identify, Protect, Detect, Respond, Recover.
+- **Q85 (B. 3.4 per million)**, Six Sigma target = 3.4 DPMO.
+- **Q86 (C)**, DMAIC = Define, Measure, Analyze, Improve, Control.
+- **Q87 (A. Exploit)**, TOC 5 steps: Identify → Exploit → Subordinate → Elevate → Repeat. Step 2 is Exploit.
+- **Q88 (B. A × P × Q)**, OEE = Availability × Performance × Quality.
+- **Q89 (B)**, 5S = Sort, Set, Shine, Standardize, Sustain.
+- **Q90 (B. Analyze)**, Fishbone is brainstorming root causes → Analyze phase.
 
 ### Q91-Q110 (CI + Synthesis)
-- **Q91 (B)** — Kaizen = continuous small frontline-driven improvement.
-- **Q92 (D)** — BSC perspectives: Financial / Customer / Internal Process / Learning & Growth.
-- **Q93 (C)** — TOC throughput = revenue − truly variable costs (NOT net profit, NOT revenue).
-- **Q94 (B)** — BPR differs from Kaizen most in pace + magnitude (radical vs incremental).
-- **Q95 (B)** — Perfect order = on-time + in-full + undamaged + correct documentation.
-- **Q96 (A. Control)** — Control charts live in DMAIC's Control phase.
-- **Q97 (A)** — SMED = Single-Minute Exchange of Die (quick changeover).
-- **Q98 (B. Mistake-proofing)** — Poka-yoke = mistake-proofing.
-- **Q99 (B)** — PDCA = Plan, Do, Check, Act (Deming cycle).
-- **Q100 (B. Functional)** — Comparing to Amazon (best-in-class outside industry) = functional benchmarking.
-- **Q101 (A)** — Green Belt = part-time within their role.
-- **Q102 (D. Visual signal)** — Andon = visual signal of problem on the line.
-- **Q103 (D. SWOT)** — SWOT is NOT in the classic 7 quality tools.
-- **Q104 (B. Digital twin)** — Industry 4.0's simulated physical-system model.
-- **Q105 (C)** — Gemba walk = going to the actual workplace.
-- **Q106 (C. The constraint)** — Drum-buffer-rope pulls at the constraint's pace.
-- **Q107 (A. Carrying cost — obsolescence)** — Obsolete inventory is a carrying cost.
-- **Q108 (B)** — CPFR's reason for adoption: aligning on a single forecast to dampen bullwhip.
-- **Q109 (D. 86%)** — R² = 0.86 explains 86% of variance.
-- **Q110 (D. Risk-hedging)** — Stable demand + unstable supply = Hau Lee Risk-hedging quadrant.
+- **Q91 (B)**, Kaizen = continuous small frontline-driven improvement.
+- **Q92 (D)**, BSC perspectives: Financial / Customer / Internal Process / Learning & Growth.
+- **Q93 (C)**, TOC throughput = revenue − truly variable costs (NOT net profit, NOT revenue).
+- **Q94 (B)**, BPR differs from Kaizen most in pace + magnitude (radical vs incremental).
+- **Q95 (B)**, Perfect order = on-time + in-full + undamaged + correct documentation.
+- **Q96 (A. Control)**, Control charts live in DMAIC's Control phase.
+- **Q97 (A)**, SMED = Single-Minute Exchange of Die (quick changeover).
+- **Q98 (B. Mistake-proofing)**, Poka-yoke = mistake-proofing.
+- **Q99 (B)**, PDCA = Plan, Do, Check, Act (Deming cycle).
+- **Q100 (B. Functional)**, Comparing to Amazon (best-in-class outside industry) = functional benchmarking.
+- **Q101 (A)**, Green Belt = part-time within their role.
+- **Q102 (D. Visual signal)**, Andon = visual signal of problem on the line.
+- **Q103 (D. SWOT)**, SWOT is NOT in the classic 7 quality tools.
+- **Q104 (B. Digital twin)**, Industry 4.0's simulated physical-system model.
+- **Q105 (C)**, Gemba walk = going to the actual workplace.
+- **Q106 (C. The constraint)**, Drum-buffer-rope pulls at the constraint's pace.
+- **Q107 (A. Carrying cost obsolescence)** Obsolete inventory is a carrying cost.
+- **Q108 (B)**, CPFR's reason for adoption: aligning on a single forecast to dampen bullwhip.
+- **Q109 (D. 86%)**, R² = 0.86 explains 86% of variance.
+- **Q110 (D. Risk-hedging)**, Stable demand + unstable supply = Hau Lee Risk-hedging quadrant.
 
 ---
 

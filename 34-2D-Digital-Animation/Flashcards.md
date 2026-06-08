@@ -243,7 +243,7 @@
 })();
 </script>
 
-## Module 1 — Animate Interface & Workflow
+## Module 1, Animate Interface & Workflow
 
 **Q:** What is the "pasteboard" in Adobe Animate?
 
@@ -253,7 +253,7 @@
 
 **Q:** What is the difference between a keyframe and a blank keyframe in Animate?
 
-**A:** A keyframe (filled circle ●) contains artwork and defines a state. A blank keyframe (hollow circle ○) contains no artwork — an intentionally empty moment.
+**A:** A keyframe (filled circle ●) contains artwork and defines a state. A blank keyframe (hollow circle ○) contains no artwork, an intentionally empty moment.
 
 ---
 
@@ -265,7 +265,7 @@
 
 **Q:** Which symbol type should be used for a character rig that must stay synchronized with the parent timeline?
 
-**A:** Graphic symbol — its animation syncs to the parent timeline, unlike Movie Clips which play independently.
+**A:** Graphic symbol, its animation syncs to the parent timeline, unlike Movie Clips which play independently.
 
 ---
 
@@ -277,7 +277,7 @@
 
 **Q:** What audio sync mode is required for lip sync in Adobe Animate?
 
-**A:** Stream — it ties audio to the playhead position. Event sync plays independently and goes out of sync.
+**A:** Stream, it ties audio to the playhead position. Event sync plays independently and goes out of sync.
 
 ---
 
@@ -307,13 +307,13 @@
 
 **Q:** Where should the registration point of an upper arm symbol be placed for correct rotation in a character rig?
 
-**A:** At the shoulder joint — the pivot point where the arm connects to the body, not the center of the arm.
+**A:** At the shoulder joint, the pivot point where the arm connects to the body, not the center of the arm.
 
 ---
 
 **Q:** What is an OAM file in Adobe Animate?
 
-**A:** An Open Adobe Animate Package — a bundled HTML5 Canvas animation with its dependencies, used for integration with tools like Adobe InDesign and Adobe Experience Manager.
+**A:** An Open Adobe Animate Package, a bundled HTML5 Canvas animation with its dependencies, used for integration with tools like Adobe InDesign and Adobe Experience Manager.
 
 ---
 
@@ -323,7 +323,7 @@
 
 ---
 
-## Module 2 — Frame-by-Frame Animation
+## Module 2, Frame-by-Frame Animation
 
 **Q:** What is onion skinning?
 
@@ -351,7 +351,7 @@
 
 **Q:** In the rough-to-cleanup workflow, what is the correct layer order?
 
-**A:** Cleanup layer ABOVE the roughs layer — the animator traces clean lines over the rough guide.
+**A:** Cleanup layer ABOVE the roughs layer, the animator traces clean lines over the rough guide.
 
 ---
 
@@ -369,7 +369,7 @@
 
 **Q:** What does "slow in / slow out" describe in animation?
 
-**A:** The clustering of in-between drawings near key poses — slow at the start and end of a motion, fast in the middle. One of the 12 Principles of Animation.
+**A:** The clustering of in-between drawings near key poses, slow at the start and end of a motion, fast in the middle. One of the 12 Principles of Animation.
 
 ---
 
@@ -379,7 +379,7 @@
 
 ---
 
-## Module 3 — Tweening & Motion Paths
+## Module 3, Tweening & Motion Paths
 
 **Q:** What is the key structural difference between a Classic Tween and a Motion Tween?
 
@@ -401,7 +401,7 @@
 
 **Q:** What does the "Back Out" ease preset do?
 
-**A:** The object overshoots its destination slightly, then settles back — creating a natural soft landing.
+**A:** The object overshoots its destination slightly, then settles back, creating a natural soft landing.
 
 ---
 
@@ -413,7 +413,7 @@
 
 **Q:** A flat section of the Motion Editor curve indicates:
 
-**A:** No property change — a hold or very slow movement.
+**A:** No property change, a hold or very slow movement.
 
 ---
 
@@ -429,7 +429,7 @@
 
 ---
 
-## Module 4 — Character Rigging in Animate
+## Module 4, Character Rigging in Animate
 
 **Q:** What is FK (Forward Kinematics)?
 
@@ -445,19 +445,19 @@
 
 **Q:** What is the Preston Blair phoneme for M, B, and P sounds?
 
-**A:** MBP — closed or nearly closed mouth.
+**A:** MBP, closed or nearly closed mouth.
 
 ---
 
 **Q:** What is the Preston Blair phoneme for F and V sounds?
 
-**A:** FV — upper front teeth resting on the lower lip.
+**A:** FV, upper front teeth resting on the lower lip.
 
 ---
 
 **Q:** What is the REST phoneme group?
 
-**A:** The mouth position for silence, pause, or exhale — a relaxed, slightly open position.
+**A:** The mouth position for silence, pause, or exhale, a relaxed, slightly open position.
 
 ---
 
@@ -485,7 +485,7 @@
 
 ---
 
-## Module 5 — After Effects for 2D
+## Module 5, After Effects for 2D
 
 **Q:** What does "Create Shapes from Vector Layers" do in After Effects?
 
@@ -537,11 +537,11 @@
 
 **Q:** How should you import a layered Illustrator file into AE to keep individual layers accessible?
 
-**A:** File → Import → File → "Import as: Composition — Retain Layer Sizes"
+**A:** File → Import → File → "Import as: Composition, Retain Layer Sizes"
 
 ---
 
-## Module 6 — Puppet & Bone Tools (DUIK)
+## Module 6, Puppet & Bone Tools (DUIK)
 
 **Q:** What is DUIK and who makes it?
 
@@ -591,7 +591,7 @@
 
 ---
 
-## Module 7 — Lip Sync & Dialogue
+## Module 7, Lip Sync & Dialogue
 
 **Q:** How many mouth shapes does the Preston Blair phoneme set use?
 
@@ -601,7 +601,7 @@
 
 **Q:** Why does animation use ~10 mouth shapes instead of all 44 English phonemes?
 
-**A:** Many phonemes that sound different look nearly identical — a reduced set captures the most visually distinct positions efficiently.
+**A:** Many phonemes that sound different look nearly identical, a reduced set captures the most visually distinct positions efficiently.
 
 ---
 
@@ -631,7 +631,7 @@
 
 **Q:** What does "exclusive behaviors" mean for Character Animator mouth layers?
 
-**A:** Only one mouth layer is visible at a time — Ch switches between them exclusively as phonemes change during playback.
+**A:** Only one mouth layer is visible at a time, Ch switches between them exclusively as phonemes change during playback.
 
 ---
 
@@ -641,7 +641,7 @@
 
 ---
 
-## Module 8 — Walk Cycles & Action
+## Module 8, Walk Cycles & Action
 
 **Q:** What is the Contact pose in a walk cycle?
 
@@ -681,7 +681,7 @@
 
 **Q:** What animation style does Cuphead use?
 
-**A:** Snappy animation — long held poses followed by sudden 2–3 frame fast transitions, based on the 1930s Fleischer Brothers style.
+**A:** Snappy animation, long held poses followed by sudden 2–3 frame fast transitions, based on the 1930s Fleischer Brothers style.
 
 ---
 
@@ -699,11 +699,11 @@
 
 **Q:** What should the frame just BEFORE an impact show?
 
-**A:** Maximum stretch — the body is at full extension before the compression of impact.
+**A:** Maximum stretch, the body is at full extension before the compression of impact.
 
 ---
 
-## Module 9 — Exporting & Delivery
+## Module 9, Exporting & Delivery
 
 **Q:** H.264 output from After Effects requires which application?
 
@@ -761,11 +761,11 @@
 
 **Q:** For web animation that requires transparency (alpha channel), which format should be used?
 
-**A:** WebM (VP9) — supports alpha transparency in web browsers.
+**A:** WebM (VP9), supports alpha transparency in web browsers.
 
 ---
 
-## Module 10 — Production Pipeline
+## Module 10, Production Pipeline
 
 **Q:** What are the stages of the 2D studio pipeline in order?
 
@@ -787,7 +787,7 @@
 
 **Q:** What is a model sheet?
 
-**A:** A reference document showing a character from multiple angles, in various expressions, with size comparisons and exact color specifications — used to ensure consistency across all animators.
+**A:** A reference document showing a character from multiple angles, in various expressions, with size comparisons and exact color specifications, used to ensure consistency across all animators.
 
 ---
 

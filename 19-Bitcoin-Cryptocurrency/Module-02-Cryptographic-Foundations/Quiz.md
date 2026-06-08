@@ -87,9 +87,9 @@ D. A trusted intermediary's attestation
 ---
 
 ### Q11. Bitcoin's choice of secp256k1 over NIST P-256 is best explained by: *(Evaluate)*
-A. Performance — secp256k1 is much faster
-B. Defense in depth — avoiding NIST curves due to post-2007 concerns about NIST parameter selection
-C. Patent issues — secp256r1 was patented in 2008
+A. Performance, secp256k1 is much faster
+B. Defense in depth, avoiding NIST curves due to post-2007 concerns about NIST parameter selection
+C. Patent issues, secp256r1 was patented in 2008
 D. Backwards compatibility with PGP
 
 ---
@@ -121,7 +121,7 @@ D. bc1p
 ### Q15. The Heartbleed bug (CVE-2014-0160) affected: *(Understand)*
 A. The Bitcoin Core codebase
 B. The SHA-256 algorithm
-C. OpenSSL's TLS heartbeat extension — not Bitcoin
+C. OpenSSL's TLS heartbeat extension, not Bitcoin
 D. The secp256k1 library
 
 ---
@@ -168,7 +168,7 @@ D. 512 bits
 
 ### Q21. Why does Bitcoin use BOTH SHA-256 AND RIPEMD-160 in address derivation rather than just one hash? *(Analyze)*
 A. SHA-256 alone is too long
-B. Defense in depth — if a future flaw is found in SHA-256, RIPEMD-160 provides a second layer
+B. Defense in depth, if a future flaw is found in SHA-256, RIPEMD-160 provides a second layer
 C. RIPEMD-160 is required by Base58Check
 D. Satoshi flipped a coin
 
@@ -207,7 +207,7 @@ SECG-specified, NOT a NIST curve. y² = x³ + 7 (mod p) where p ≈ 2^256.
 SHA-256 first (gives 32 bytes), THEN RIPEMD-160 (gives 20 bytes). This is the canonical "HASH160" composition used to derive address commitments.
 
 ### Q3: **B. A 256-bit integer in [1, n-1] where n is the curve order**
-32 random bytes. Search space ~2^256 — more than the number of atoms in the observable universe by many orders of magnitude.
+32 random bytes. Search space ~2^256, more than the number of atoms in the observable universe by many orders of magnitude.
 
 ### Q4: **B. Reusing the per-signature nonce `k`**
 Two signatures with the same `k` on different messages let an attacker solve for the private key algebraically. Famously broke Sony's PS3 ECDSA implementation in 2010.
@@ -219,7 +219,7 @@ RFC 6979 derives `k` deterministically from `sk` and `m` using HMAC. Every moder
 Activated at block 709,632 (Nov 14, 2021) via BIPs 340 (Schnorr), 341 (Taproot), 342 (Tapscript). Authors: Pieter Wuille, Jonas Nick, Tim Ruffing, Anthony Towns.
 
 ### Q7: **A. They are shorter and linearly aggregatable**
-Schnorr signatures can be aggregated such that a multi-sig spend looks identical to a single-sig spend on-chain — major privacy and block-space win.
+Schnorr signatures can be aggregated such that a multi-sig spend looks identical to a single-sig spend on-chain, major privacy and block-space win.
 
 ### Q8: **B. A binary tree where every non-leaf node is the hash of its children**
 Ralph Merkle's 1979 Stanford PhD thesis.
@@ -230,7 +230,7 @@ Any modification to any transaction → its leaf hash changes → percolates up 
 ### Q10: **C. Block header + Merkle proof (log₂(N) hashes) + the transaction**
 SPV is what makes light wallets possible. Logarithmic scaling means even very large blocks have small SPV proofs.
 
-### Q11: **B. Defense in depth — avoiding NIST curves due to post-2007 concerns**
+### Q11: **B. Defense in depth, avoiding NIST curves due to post-2007 concerns**
 Specifically post-Dual_EC_DRBG (2007-2013), where NIST/NSA were suspected of backdooring elliptic-curve parameters. Satoshi avoided NIST curves preemptively.
 
 ### Q12: **B. 100,000,000 sats and 160 bits**
@@ -242,7 +242,7 @@ Bech32-encoded native SegWit addresses (BIP-173, with `q` indicating witness ver
 ### Q14: **D. bc1p**
 Bech32m-encoded Taproot addresses (BIP-341 + BIP-350, with `p` indicating witness version 1).
 
-### Q15: **C. OpenSSL's TLS heartbeat extension — not Bitcoin**
+### Q15: **C. OpenSSL's TLS heartbeat extension, not Bitcoin**
 Bitcoin Core does not depend on OpenSSL for consensus. Heartbleed didn't directly threaten Bitcoin but underscored the importance of minimal cryptographic surface area.
 
 ### Q16: **B. Shor's algorithm would break ECDSA; Grover's would halve SHA-256's effective security**
@@ -252,13 +252,13 @@ The honest cryptographer's answer. Practical fault-tolerant quantum machines are
 Version (4) + previous hash (32) + Merkle root (32) + timestamp (4) + bits (4) + nonce (4) = 80 bytes. The Merkle root summarizes all transactions.
 
 ### Q18: **C. RSA**
-Bitcoin uses ECDSA (and now Schnorr) — never RSA. RSA is widely used in TLS, PGP, SSH legacy — but not in Bitcoin consensus.
+Bitcoin uses ECDSA (and now Schnorr) never RSA. RSA is widely used in TLS, PGP, SSH legacy but not in Bitcoin consensus.
 
 ### Q19: **B. 64 bytes**
 BIP-340 specifies Schnorr signatures as exactly 64 bytes (32 bytes for `R` + 32 bytes for `s`).
 
 ### Q20: **B. 160 bits**
-20 bytes. This is why Bitcoin addresses commit to 160 bits — RIPEMD-160 is the final hash in HASH160.
+20 bytes. This is why Bitcoin addresses commit to 160 bits, RIPEMD-160 is the final hash in HASH160.
 
 ### Q21: **B. Defense in depth**
 Same logic Satoshi applied to choosing secp256k1 over NIST P-256. Two unrelated hash families = two independent attack surfaces.
@@ -270,7 +270,7 @@ BIP-340 = Schnorr signatures, BIP-341 = Taproot (script-path/key-path spending),
 The xpub lets a wallet derive child public keys (and addresses) without ever seeing the private key. Used by exchanges, accountants, hardware wallets paired with mobile apps.
 
 ### Q24: **B. Computationally infeasible**
-The hard problem securing ECDSA. Best classical algorithms run in time ~√n where n is the curve order — for secp256k1, that's ~2^128 operations, which is computationally infeasible.
+The hard problem securing ECDSA. Best classical algorithms run in time ~√n where n is the curve order, for secp256k1, that's ~2^128 operations, which is computationally infeasible.
 
 ---
 

@@ -20,7 +20,7 @@
 | Nomic embed v1.5 | 768 | self-host | Fully open + Matryoshka |
 | all-MiniLM-L6-v2 | 384 | self-host | Tiny + fast baseline |
 
-🚨 **Asymmetric models — get the prefix right** (`input_type` for Cohere, `query: `/`passage: ` for E5, BGE has its own prompt).
+🚨 **Asymmetric models, get the prefix right** (`input_type` for Cohere, `query: `/`passage: ` for E5, BGE has its own prompt).
 
 ---
 
@@ -52,7 +52,7 @@
 **HNSW tuning:**
 - `M` = 16–48 (links per node)
 - `efConstruction` = 100–500 (build width)
-- `efSearch` = 50–500 (query width — recall ↑ but latency ↑)
+- `efSearch` = 50–500 (query width, recall ↑ but latency ↑)
 
 ---
 

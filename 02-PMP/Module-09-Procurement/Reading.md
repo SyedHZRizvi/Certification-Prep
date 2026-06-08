@@ -37,11 +37,11 @@ In project terms:
 
 ---
 
-## 📜 RFx — Request for What?
+## 📜 RFx, Request for What?
 
 | RFx | What It Asks | When |
 |-----|--------------|------|
-| **RFI** (Request for Information) | "What can you do?" | Early — gathering info |
+| **RFI** (Request for Information) | "What can you do?" | Early, gathering info |
 | **RFP** (Request for Proposal) | "How would you do it?" | Solution unclear |
 | **RFQ** (Request for Quotation) | "How much will you charge?" | Solution clear, just price |
 | **IFB / RFB** (Invitation/Request for Bid) | Sealed bids | Government, fixed scope |
@@ -77,7 +77,7 @@ In project terms:
 🎯 Use when: scope is **uncertain or evolving**.
 
 ### 3. Time & Materials (T&M) Contracts
-**Hybrid** — pay for time + materials.
+**Hybrid**, pay for time + materials.
 
 🎯 Use when: small, short-term, or staffing arrangements.
 
@@ -109,9 +109,9 @@ Describes the work to be procured:
 
 3 types:
 
-- **Performance SOW** — describe end results (vendor figures out how)
-- **Functional SOW** — performance + features
-- **Design SOW** — describe exactly how (rare in agile)
+- **Performance SOW**, describe end results (vendor figures out how)
+- **Functional SOW**, performance + features
+- **Design SOW**, describe exactly how (rare in agile)
 
 ---
 
@@ -161,8 +161,8 @@ When the work is done:
 
 ## 🤝 Centralized vs Decentralized Procurement
 
-- **Centralized** — one office handles all procurement (consistent, expert)
-- **Decentralized** — each PM handles theirs (faster, may lack expertise)
+- **Centralized**, one office handles all procurement (consistent, expert)
+- **Decentralized**, each PM handles theirs (faster, may lack expertise)
 
 ---
 
@@ -228,8 +228,8 @@ You now know:
 ### Prerequisites for this module
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - **Project Risk basics** — Module 07 introduces the risk-transfer concept that underlies contract families.
-> - **Business Case + Make-or-Buy fundamentals** — covered in [Module 04: Business Environment](../Module-04-Business-Environment/Reading.md).
+> - **Project Risk basics**, Module 07 introduces the risk-transfer concept that underlies contract families.
+> - **Business Case + Make-or-Buy fundamentals**, covered in [Module 04: Business Environment](../Module-04-Business-Environment/Reading.md).
 > - **Optional cross-course preparation:** [13-ISM-CPSM Module 05: Contract Management](../../13-ISM-CPSM/Module-05-Cost-Management-TCO/Reading.md) is the deep-dive on contract types and supplier management.
 >
 > If any of these are shaky, pause and review before continuing.
@@ -237,30 +237,30 @@ You now know:
 ### Where this leads
 
 > **Where this leads.**
-> - **Inside this course:** [Module 07 — Risk](../Module-07-Risk/Reading.md) discusses transfer-via-contract; [Module 10 — Stakeholders](../Module-10-Stakeholders/Reading.md) covers vendor-as-stakeholder.
+> - **Inside this course:** [Module 07 Risk](../Module-07-Risk/Reading.md) discusses transfer-via-contract; [Module 10 Stakeholders](../Module-10-Stakeholders/Reading.md) covers vendor-as-stakeholder.
 > - **Cross-course:** [13-ISM-CPSM Module 05](../../13-ISM-CPSM/Module-05-Cost-Management-TCO/Reading.md) is the supply-management deep dive; [10-ASCM-CSCP Module 09](../../10-ASCM-CSCP/Module-09-Sustainability-Risk-CSR/Reading.md) extends to strategic sourcing.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md), [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md), and [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) each draw ~5–10 questions on procurement and contracts.
 
 ---
 
-## 📊 Case Study — Denver International Airport Automated Baggage System (1989–1995)
+## 📊 Case Study, Denver International Airport Automated Baggage System (1989–1995)
 
-**Situation.** Denver International Airport (DIA) was a $4.8B mega-project to replace Stapleton International Airport. The Automated Baggage System (ABS) was one of the most ambitious civil-infrastructure software projects ever attempted: 26 miles of conveyor track, 4,000 telecars, 5,000+ electric eyes, and 56 barcode scanners — designed to handle bags airport-wide. The original contract was awarded to BAE Automated Systems in 1992, mid-construction. The intended scope was a single-airline (United) inbound + outbound automated handling.
+**Situation.** Denver International Airport (DIA) was a $4.8B mega-project to replace Stapleton International Airport. The Automated Baggage System (ABS) was one of the most ambitious civil-infrastructure software projects ever attempted: 26 miles of conveyor track, 4,000 telecars, 5,000+ electric eyes, and 56 barcode scanners, designed to handle bags airport-wide. The original contract was awarded to BAE Automated Systems in 1992, mid-construction. The intended scope was a single-airline (United) inbound + outbound automated handling.
 
-**Decision.** Procurement decisions cascaded into disaster: (1) the city of Denver issued a request for a full-airport automated system *after* construction had begun, with most of the airport's physical layout already locked in (a Design-SOW situation where the design was incomplete); (2) BAE was awarded a Firm Fixed-Price contract for a system whose requirements were not yet stable — bypassing the principle that FFP requires defined scope; (3) the contract did not include a deferred-acceptance milestone schedule with phased payments tied to subsystem performance; (4) other airlines (Continental, then-existing carriers) demanded coverage they hadn't paid for, expanding scope without formal change orders; (5) BAE warned in writing that timelines were not feasible, but the warnings were treated as negotiating posture by Denver's project leadership rather than as engineering reality.
+**Decision.** Procurement decisions cascaded into disaster: (1) the city of Denver issued a request for a full-airport automated system *after* construction had begun, with most of the airport's physical layout already locked in (a Design-SOW situation where the design was incomplete); (2) BAE was awarded a Firm Fixed-Price contract for a system whose requirements were not yet stable, bypassing the principle that FFP requires defined scope; (3) the contract did not include a deferred-acceptance milestone schedule with phased payments tied to subsystem performance; (4) other airlines (Continental, then-existing carriers) demanded coverage they hadn't paid for, expanding scope without formal change orders; (5) BAE warned in writing that timelines were not feasible, but the warnings were treated as negotiating posture by Denver's project leadership rather than as engineering reality.
 
-**Outcome.** The ABS opened in February 1995 — **16 months late**. During testing, the system **destroyed bags, mis-routed bags, and crashed repeatedly**. United Airlines reverted to a manual backup. The system was scaled back to United-outbound-only and was finally **decommissioned entirely in 2005**, with the airport paying ~$1M/month to keep the unused infrastructure powered until shutdown. Total cost overruns for the baggage system alone exceeded **$560 million** (well over 100% of the original ABS budget). Direct losses (airport opening delays at $1M/day, etc.) added at least **$2 billion** more. The 1996 GAO report (GAO/RCED-96-114) and Calleam Consulting's 2008 case study became the canonical "how *not* to procure a complex system" examples in software-engineering and PM curricula worldwide.
+**Outcome.** The ABS opened in February 1995, **16 months late**. During testing, the system **destroyed bags, mis-routed bags, and crashed repeatedly**. United Airlines reverted to a manual backup. The system was scaled back to United-outbound-only and was finally **decommissioned entirely in 2005**, with the airport paying ~$1M/month to keep the unused infrastructure powered until shutdown. Total cost overruns for the baggage system alone exceeded **$560 million** (well over 100% of the original ABS budget). Direct losses (airport opening delays at $1M/day, etc.) added at least **$2 billion** more. The 1996 GAO report (GAO/RCED-96-114) and Calleam Consulting's 2008 case study became the canonical "how *not* to procure a complex system" examples in software-engineering and PM curricula worldwide.
 
-**Lesson for the exam / for practitioners.** Denver Airport is the textbook example of *contract-family mismatch*. PMBOK 7 teaches: FFP requires stable scope; uncertain scope demands Cost-Reimbursable or T&M structures. The city of Denver chose FFP for a system whose scope was undefined and changing. The right answer to *"Project has uncertain scope, but a fixed-price contract was signed — what should the PM do?"* is *not* "renegotiate to FFP" — it is *"renegotiate to a hybrid (e.g., capped T&M, milestone-based, or Cost-Plus with incentive fees)"* AND *"engage the vendor in joint planning to scope-stabilize"*. The exam tests this distinction repeatedly. **Procurement is not contract paperwork — it is the formalized expression of project risk allocation.**
+**Lesson for the exam / for practitioners.** Denver Airport is the textbook example of *contract-family mismatch*. PMBOK 7 teaches: FFP requires stable scope; uncertain scope demands Cost-Reimbursable or T&M structures. The city of Denver chose FFP for a system whose scope was undefined and changing. The right answer to *"Project has uncertain scope, but a fixed-price contract was signed what should the PM do?"* is *not* "renegotiate to FFP" it is *"renegotiate to a hybrid (e.g., capped T&M, milestone-based, or Cost-Plus with incentive fees)"* AND *"engage the vendor in joint planning to scope-stabilize"*. The exam tests this distinction repeatedly. **Procurement is not contract paperwork, it is the formalized expression of project risk allocation.**
 
 **Discussion (Socratic).**
 - Q1: BAE warned in writing that the timeline was infeasible. The city treated the warning as posturing. From PMI's Code of Ethics perspective, what should BAE's PM have done next? What should Denver's PM have done?
 - Q2: The procurement officer chose FFP partly because public-sector procurement law often favors fixed-price (auditability, fairness to bidders). When does fiduciary procurement law conflict with project-management reality? Defend an answer.
-- Q3: Design a procurement framework for a 2024 project of similar complexity (e.g., a city-wide smart-traffic system) that incorporates the Denver lessons — what contract structure, payment schedule, and governance would you require?
+- Q3: Design a procurement framework for a 2024 project of similar complexity (e.g., a city-wide smart-traffic system) that incorporates the Denver lessons, what contract structure, payment schedule, and governance would you require?
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Contract-family selection.** A vendor wants Firm-Fixed-Price for a 3-year IoT deployment in 50 stores. The buyer's scope is still evolving as user research continues. Build the case for: (a) honoring the FFP request; (b) refusing and going CPIF; (c) a hybrid. Defend one.
 2. **Money-for-nothing change-for-free contract.** This unusual agile contract structure pays the vendor for un-delivered backlog and lets the buyer trade items for "free." Is it the right answer for any context, or is it always a gimmick? Cite specific use cases.

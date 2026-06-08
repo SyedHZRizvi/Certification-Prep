@@ -38,7 +38,7 @@ D. Animate the UV coordinates of the base color texture
 ### Q4. A Fresnel Effect node in Unity Shader Graph calculates:
 
 A. The refraction of light through transparent materials
-B. The dot product of the view direction and surface normal — high at glancing angles (edges)
+B. The dot product of the view direction and surface normal, high at glancing angles (edges)
 C. The specular highlight intensity based on light direction and camera angle
 D. The ambient occlusion in screen space
 
@@ -101,7 +101,7 @@ D. Fire Blueprint callbacks when all particles in a System have expired
 ### Q11. Bungie's "first read" design principle for Destiny 2 weapon VFX means:
 
 A. The VFX should play on the first frame of the weapon's fire animation
-B. The VFX should communicate the weapon's class/archetype before the player reads damage numbers — through peripheral vision
+B. The VFX should communicate the weapon's class/archetype before the player reads damage numbers, through peripheral vision
 C. Each weapon's first ability VFX is 3× more elaborate than its base attack VFX
 D. VFX are designed to be readable on the first attempt by new players
 
@@ -139,14 +139,14 @@ D. Using the stencil buffer to mark interior pixels and drawing only the boundar
 A. Built-in Render Pipeline only
 B. URP and HDRP (not the built-in render pipeline)
 C. All three: Built-in, URP, and HDRP
-D. HDRP only — URP uses Amplify Shader Editor
+D. HDRP only, URP uses Amplify Shader Editor
 
 ---
 
 ### Q16. Hades' sword (Stygius) VFX was designed with short, bright flashes specifically because:
 
 A. The sword is the weakest weapon and should have subtle VFX
-B. Short bright flashes read as "fast and decisive" — the sword's archetype — even in peripheral vision at camera distance
+B. Short bright flashes read as "fast and decisive" the sword's archetype even in peripheral vision at camera distance
 C. The sword has a low particle budget to save GPU resources
 D. Short flashes were the only Spine-compatible effect at release
 
@@ -227,28 +227,28 @@ D. Reduce the game's target frame rate to 30fps so 20fps during the effect is ac
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — VFX Graph = GPU compute shaders; Shuriken = CPU-based
-Q2:  B — Initialize: sets each particle's starting values
-Q3:  B — Noise texture masks material based on Dissolve Amount parameter
-Q4:  B — Fresnel = dot(view, normal) — high at glancing/edge angles
-Q5:  A — Juice makes games more satisfying without changing mechanics
-Q6:  B — Hit stop = brief pause of all animations on impact (2–12 frames)
-Q7:  B — Readability at camera distance: high contrast, large particles
-Q8:  B — Exposed Property = C# can read/write VFX Graph parameters at runtime
-Q9:  B — CPU: debuggable; GPU: far more particles (millions+)
-Q10: B — Niagara Events: particles in one emitter trigger another (collision → explosion)
-Q11: B — First read: VFX communicates weapon archetype before damage numbers
-Q12: B — Perlin noise has spatial coherence: directional shake vs. buzzing jitter
-Q13: C — Squash on impact axis (0.7), stretch perpendicular (1.3)
-Q14: B — Inverted hull: second pass with scaled-out inverted normals + flat color
-Q15: B — Shader Graph: URP and HDRP only (not built-in pipeline)
-Q16: B — Short bright flash reads as "fast and decisive" — the sword's archetype
-Q17: B — Scan lines: sine wave based on world Y position + time
-Q18: B — timeScale = 0 + WaitForSecondsRealtime coroutine to restore after hit stop
-Q19: B — VFX Graph requires URP or HDRP (not built-in RP)
-Q20: B — Juice stacking: satisfying as a unit; no element identified individually
-Q21: B — Simulation Stage: custom GPU compute shader pass for arbitrary particle logic
-Q22: B — Emissive ramp driven by charge parameter value
-Q23: B — Turbulence: noise-based force field for continuous organic motion
-Q24: B — VFX LOD: reduce particle count at mobile quality + Shuriken fallback at lowest
+Q1:  B, VFX Graph = GPU compute shaders; Shuriken = CPU-based
+Q2:  B, Initialize: sets each particle's starting values
+Q3:  B, Noise texture masks material based on Dissolve Amount parameter
+Q4:  B, Fresnel = dot(view, normal), high at glancing/edge angles
+Q5:  A, Juice makes games more satisfying without changing mechanics
+Q6:  B, Hit stop = brief pause of all animations on impact (2–12 frames)
+Q7:  B, Readability at camera distance: high contrast, large particles
+Q8:  B, Exposed Property = C# can read/write VFX Graph parameters at runtime
+Q9:  B, CPU: debuggable; GPU: far more particles (millions+)
+Q10: B, Niagara Events: particles in one emitter trigger another (collision → explosion)
+Q11: B, First read: VFX communicates weapon archetype before damage numbers
+Q12: B, Perlin noise has spatial coherence: directional shake vs. buzzing jitter
+Q13: C, Squash on impact axis (0.7), stretch perpendicular (1.3)
+Q14: B, Inverted hull: second pass with scaled-out inverted normals + flat color
+Q15: B, Shader Graph: URP and HDRP only (not built-in pipeline)
+Q16: B, Short bright flash reads as "fast and decisive", the sword's archetype
+Q17: B, Scan lines: sine wave based on world Y position + time
+Q18: B, timeScale = 0 + WaitForSecondsRealtime coroutine to restore after hit stop
+Q19: B, VFX Graph requires URP or HDRP (not built-in RP)
+Q20: B, Juice stacking: satisfying as a unit; no element identified individually
+Q21: B, Simulation Stage: custom GPU compute shader pass for arbitrary particle logic
+Q22: B, Emissive ramp driven by charge parameter value
+Q23: B, Turbulence: noise-based force field for continuous organic motion
+Q24: B, VFX LOD: reduce particle count at mobile quality + Shuriken fallback at lowest
 ```

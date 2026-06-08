@@ -56,11 +56,11 @@
 ## The Animatic's Job
 
 An animatic proves or disproves:
-- [ ] Pacing — does the scene breathe or drag?
-- [ ] Emotional timing — does the audience have time to feel?
-- [ ] Action clarity — can the audience follow?
-- [ ] Comedy timing — does the gag land?
-- [ ] Sound/music sync — does the visual match the audio?
+- [ ] Pacing, does the scene breathe or drag?
+- [ ] Emotional timing, does the audience have time to feel?
+- [ ] Action clarity, can the audience follow?
+- [ ] Comedy timing, does the gag land?
+- [ ] Sound/music sync, does the visual match the audio?
 
 ---
 
@@ -73,10 +73,10 @@ An animatic proves or disproves:
 
 ## Board Pitch Structure
 
-1. **Context** — where we are, what just happened
-2. **Walk the boards** — describe action, voice dialogue, show emotion
-3. **Justify key choices** — explain significant staging decisions
-4. **Invite notes** — specific questions to guide director feedback
+1. **Context**, where we are, what just happened
+2. **Walk the boards**, describe action, voice dialogue, show emotion
+3. **Justify key choices**, explain significant staging decisions
+4. **Invite notes**, specific questions to guide director feedback
 
 ---
 
@@ -124,7 +124,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

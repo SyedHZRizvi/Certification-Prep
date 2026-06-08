@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,7 +275,7 @@
 ## 🗺️ SECTION 1: LANDSCAPE & FUNDAMENTALS
 
 **Q:** What does POESM stand for?
-**A:** Paid, Owned, Earned, Shared Media — the four channel buckets.
+**A:** Paid, Owned, Earned, Shared Media, the four channel buckets.
 
 **Q:** Define TOFU / MOFU / BOFU.
 **A:** Top of Funnel (awareness, e.g., SEO blog), Middle (consideration, e.g., webinars), Bottom (decision, e.g., free trial / branded paid search).
@@ -302,13 +302,13 @@
 **A:** Intuit, 2021, $12 billion.
 
 **Q:** What was Coca-Cola's "Create Real Magic" (2023)?
-**A:** A consumer co-creation campaign with OpenAI / DALL-E — the canonical first major-brand GenAI marketing case study.
+**A:** A consumer co-creation campaign with OpenAI / DALL-E, the canonical first major-brand GenAI marketing case study.
 
 **Q:** What are the 4Cs of marketing (Lauterborn)?
-**A:** Customer, Cost, Convenience, Communication — a customer-centric reframing of the 4Ps.
+**A:** Customer, Cost, Convenience, Communication, a customer-centric reframing of the 4Ps.
 
 **Q:** What is JTBD and who popularized it?
-**A:** Jobs-to-be-Done — Clayton Christensen (Harvard). The frame: what "job" did the customer hire your product to do?
+**A:** Jobs-to-be-Done, Clayton Christensen (Harvard). The frame: what "job" did the customer hire your product to do?
 
 **Q:** What is SOSTAC?
 **A:** Situation → Objectives → Strategy → Tactics → Action → Control. PR Smith's planning framework.
@@ -327,7 +327,7 @@
 **A:** Artificial Intelligence. Underneath: ML → Deep Learning → Generative AI → LLM → Foundation Model.
 
 **Q:** When was the Transformer paper published?
-**A:** 2017 — "Attention Is All You Need" (Vaswani et al., Google).
+**A:** 2017, "Attention Is All You Need" (Vaswani et al., Google).
 
 **Q:** When was ChatGPT publicly released?
 **A:** November 30, 2022.
@@ -348,7 +348,7 @@
 **A:** GPT (OpenAI), Claude (Anthropic), Gemini (Google), Llama (Meta), Mistral.
 
 **Q:** What is RAG?
-**A:** Retrieval-Augmented Generation — embed your docs, store in vector DB, retrieve relevant ones at query time, feed to LLM.
+**A:** Retrieval-Augmented Generation, embed your docs, store in vector DB, retrieve relevant ones at query time, feed to LLM.
 
 **Q:** When should you choose RAG over fine-tuning?
 **A:** ~80% of "use my data" cases. Cheaper, faster, easier to keep up to date.
@@ -385,10 +385,10 @@
 **A:** Experience, Expertise, Authoritativeness, Trustworthiness. Second E (Experience) added December 2022.
 
 **Q:** What is YMYL content?
-**A:** "Your Money or Your Life" — health, finance, legal, safety topics; held to higher E-E-A-T bar.
+**A:** "Your Money or Your Life", health, finance, legal, safety topics; held to higher E-E-A-T bar.
 
 **Q:** Name the three 2026 Core Web Vitals.
-**A:** LCP (Largest Contentful Paint), INP (Interaction to Next Paint — replaced FID in March 2024), CLS (Cumulative Layout Shift).
+**A:** LCP (Largest Contentful Paint), INP (Interaction to Next Paint, replaced FID in March 2024), CLS (Cumulative Layout Shift).
 
 **Q:** What is the "good" LCP threshold?
 **A:** ≤ 2.5 seconds.
@@ -406,7 +406,7 @@
 **A:** Database + template = thousands of unique pages at scale. Canonical case: Airbnb's neighborhood pages.
 
 **Q:** What was Google's March 2024 anti-AI-spam policy called?
-**A:** Scaled Content Abuse policy — targets sites publishing AI content "primarily to manipulate rankings."
+**A:** Scaled Content Abuse policy, targets sites publishing AI content "primarily to manipulate rankings."
 
 **Q:** Name 3 high-impact GEO (Generative Engine Optimization) tactics.
 **A:** Authoritative citations within content; FAQ sections with question-style H2s; direct declarative answers + statistics.
@@ -434,16 +434,16 @@
 **A:** A cautionary tale of over-reliance on AI without sufficient human editorial oversight.
 
 **Q:** What is Mailchimp's AI subject-line generator a case study of?
-**A:** AI embedded in the marketer's workflow + grounded in proprietary data — the canonical "embedded AI" model.
+**A:** AI embedded in the marketer's workflow + grounded in proprietary data, the canonical "embedded AI" model.
 
 **Q:** Which AI image tool has the cleanest commercial-licensing story?
-**A:** Adobe Firefly — trained primarily on licensed Adobe Stock + public-domain content.
+**A:** Adobe Firefly, trained primarily on licensed Adobe Stock + public-domain content.
 
 **Q:** Recite the marketing image-prompt order.
 **A:** Subject → Setting → Composition → Mood → Lighting → Style → Format.
 
 **Q:** What are Synthesia and HeyGen used for?
-**A:** AI avatar talking-head video — corporate training, multilingual, personalized sales.
+**A:** AI avatar talking-head video, corporate training, multilingual, personalized sales.
 
 **Q:** What is Runway used for?
 **A:** Text-to-video, video-to-video, generative B-roll and visual effects.
@@ -452,14 +452,14 @@
 **A:** OpenAI's photorealistic generative video model.
 
 **Q:** What is Descript best at?
-**A:** Editing video and audio by editing the transcript — plus AI voice and clip generation.
+**A:** Editing video and audio by editing the transcript, plus AI voice and clip generation.
 
 ---
 
 ## 📱 SECTION 5: SOCIAL MEDIA & AI TOOLS
 
 **Q:** What ranks content on TikTok in 2026?
-**A:** Content-quality signals (completion rate, rewatch, hook strength, niche affiliation) — NOT follower count.
+**A:** Content-quality signals (completion rate, rewatch, hook strength, niche affiliation), NOT follower count.
 
 **Q:** What does LinkedIn's algorithm actively suppress?
 **A:** Posts with outbound links. Workaround: put the link in the first comment.
@@ -468,7 +468,7 @@
 **A:** Micro-influencers (10K–100K followers).
 
 **Q:** Who is Lil Miquela?
-**A:** The most-cited virtual / AI influencer — a CGI persona with millions of followers and real brand deals.
+**A:** The most-cited virtual / AI influencer, a CGI persona with millions of followers and real brand deals.
 
 **Q:** Why is Pinterest unique among social platforms?
 **A:** It actively wants to drive outbound clicks to blogs and shops (it's a discovery engine, not just a feed).
@@ -501,7 +501,7 @@
 **Q:** What changed for bulk senders to Gmail and Yahoo on February 1, 2024?
 **A:** SPF + DKIM + DMARC required, one-click unsubscribe required, complaint rate must be < 0.3%.
 
-**Q:** Drip vs lifecycle — define each.
+**Q:** Drip vs lifecycle, define each.
 **A:** Drip = time-based linear sequences. Lifecycle = behavior-triggered, often multi-channel sequences.
 
 **Q:** Which email sequence has the HIGHEST revenue per email?
@@ -551,10 +551,10 @@
 **A:** ~2.5× (since 1 / 0.4 = 2.5).
 
 **Q:** What is Conversions API (CAPI)?
-**A:** Meta's server-side conversion-tracking API — primarily a response to iOS 14.5 ATT.
+**A:** Meta's server-side conversion-tracking API, primarily a response to iOS 14.5 ATT.
 
 **Q:** What's Enhanced Conversions?
-**A:** Google's equivalent — hashed user data sent server-side to improve attribution.
+**A:** Google's equivalent, hashed user data sent server-side to improve attribution.
 
 **Q:** What's the projected 2025 US Retail Media Network spend?
 **A:** Over $100 billion (per eMarketer).
@@ -563,7 +563,7 @@
 **A:** Amazon Ads, Walmart Connect, Target Roundel, Instacart Ads, Kroger Precision Marketing.
 
 **Q:** Why is Google Search Ads strong for BOFU?
-**A:** Search captures *existing* demand — the user already typed their need. Meta/TikTok have to create it from interest signals.
+**A:** Search captures *existing* demand, the user already typed their need. Meta/TikTok have to create it from interest signals.
 
 **Q:** What does PAS stand for in ad copy?
 **A:** Problem, Agitate, Solve.
@@ -572,7 +572,7 @@
 **A:** Hook, Story, Offer.
 
 **Q:** What was the Wayfair Performance Max case study?
-**A:** ~13% incremental conversion lift + ~25% CAC improvement — most-cited enterprise PMax case.
+**A:** ~13% incremental conversion lift + ~25% CAC improvement, most-cited enterprise PMax case.
 
 ---
 
@@ -603,16 +603,16 @@
 **A:** Meridian.
 
 **Q:** Define MMM.
-**A:** Marketing Mix Modeling — econometric, aggregate-level attribution. Resilient to cookie loss.
+**A:** Marketing Mix Modeling, econometric, aggregate-level attribution. Resilient to cookie loss.
 
 **Q:** What is an "engaged session" in GA4?
 **A:** A session lasting ≥10 seconds OR with ≥2 page views OR with a conversion.
 
 **Q:** What's the "New Coke" episode the canonical case study for?
-**A:** Measurement error — measuring the wrong variable (taste preference) when the actual driver was brand identity.
+**A:** Measurement error, measuring the wrong variable (taste preference) when the actual driver was brand identity.
 
 **Q:** What's the 2026 best-practice measurement stack?
-**A:** Platform-reported + GA4 DDA + MMM + incrementality testing + first-party data — triangulated.
+**A:** Platform-reported + GA4 DDA + MMM + incrementality testing + first-party data, triangulated.
 
 ---
 
@@ -631,7 +631,7 @@
 **A:** Unacceptable (banned), High-risk, Limited risk (disclosure required), Minimal risk.
 
 **Q:** What tier does most marketing AI fall into?
-**A:** Limited risk — meaning disclosure is required.
+**A:** Limited risk, meaning disclosure is required.
 
 **Q:** What did the Gender Shades study (Buolamwini 2018) show?
 **A:** Commercial facial-recognition systems had error rates of 0.8% for light-skinned men and up to 34.7% for dark-skinned women.
@@ -670,10 +670,10 @@
 **Q:** Name the 6 stack tiers in this course.
 **A:** 1) Foundation (LLM + notes), 2) Content/Creative, 3) Distribution/Channel, 4) Measurement/CRM, 5) Workflow/Automation, 6) Specialized AI.
 
-**Q:** CDP vs CRM vs ESP vs MA platform — define each.
+**Q:** CDP vs CRM vs ESP vs MA platform, define each.
 **A:** CDP = unifies customer data (Segment). CRM = relationship database (Salesforce). ESP = sends email (Klaviyo). MA platform = automation + often CRM (HubSpot).
 
-**Q:** Zapier vs Make vs n8n — differentiate.
+**Q:** Zapier vs Make vs n8n, differentiate.
 **A:** Zapier = most apps, simplest. Make = visual + complex scenarios. n8n = open-source self-hostable.
 
 **Q:** Which knowledge tool does Stripe famously use as its company hub?
@@ -686,10 +686,10 @@
 **A:** Free Microsoft heatmap + session-replay tool. Equivalent functionality to Hotjar's paid tiers.
 
 **Q:** What's ElevenLabs known for?
-**A:** AI voice / audio — text-to-speech and voice cloning.
+**A:** AI voice / audio, text-to-speech and voice cloning.
 
 **Q:** What's a "stack audit" cadence?
-**A:** Every 6 months — list every paid tool, used in last 30 days? Cancel bottom 20% by ROI.
+**A:** Every 6 months, list every paid tool, used in last 30 days? Cancel bottom 20% by ROI.
 
 **Q:** What's a realistic solo marketer monthly stack budget?
 **A:** $50–$150 (LLM paid + ESP + scheduler + Notion + Canva + free analytics).

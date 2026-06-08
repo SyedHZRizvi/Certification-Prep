@@ -7,7 +7,7 @@
 ### Q1. In the context of animation, "gesture drawing" is primarily concerned with:
 
 A. Capturing every anatomical detail of the model accurately
-B. Capturing the line of action — the main thrust of energy, weight, and movement — quickly
+B. Capturing the line of action the main thrust of energy, weight, and movement quickly
 C. Practicing the construction method by building figures from geometric volumes
 D. Recreating the exact contour outline of a posed figure
 
@@ -35,8 +35,8 @@ D. A rectangle
 
 A. Slow-In / Slow-Out
 B. Follow-Through and Overlapping Action
-C. Foreshortening — objects closer to the camera should appear larger
-D. Solid Drawing — the fist should cast a shadow on the face
+C. Foreshortening, objects closer to the camera should appear larger
+D. Solid Drawing, the fist should cast a shadow on the face
 
 ---
 
@@ -72,7 +72,7 @@ D. Understanding of the 12 Principles through hands-on practice
 A. The relative speed of objects at different distances
 B. Spatial depth in a 2D or 3D frame
 C. The application of follow-through and overlapping action principle
-D. The staging principle — ensuring only one center of attention
+D. The staging principle, ensuring only one center of attention
 
 ---
 
@@ -80,7 +80,7 @@ D. The staging principle — ensuring only one center of attention
 
 A. The student is drawing wrist and hand details before the torso; correction is to start with the torso
 B. The student is making small, cramped marks using only wrist movement; correction is to draw from the shoulder for larger, more confident strokes
-C. The student is drawing the wrist incorrectly — it should be a sphere, not a box
+C. The student is drawing the wrist incorrectly, it should be a sphere, not a box
 D. The student is using too many strokes; correction is to use single-line gestures only
 
 ---
@@ -107,7 +107,7 @@ D. An over-the-shoulder shot where the background character is in tangent with t
 
 A. The character's costume and surface detail
 B. The contour outline of the silhouette
-C. The joint positions — shoulder, elbow, wrist, hip, knee, ankle
+C. The joint positions, shoulder, elbow, wrist, hip, knee, ankle
 D. The line of action and overall gesture direction
 
 ---
@@ -130,7 +130,7 @@ D. The space between the character and the camera
 
 ---
 
-### Q15. An animator notes that their character's proportions are drifting between shots — the head appears larger in some shots and smaller in others. The most likely root cause is:
+### Q15. An animator notes that their character's proportions are drifting between shots, the head appears larger in some shots and smaller in others. The most likely root cause is:
 
 A. The wrong codec settings causing the video to be compressed differently
 B. Inconsistent application of a proportion system; the construction method was not applied consistently
@@ -142,7 +142,7 @@ D. The character rig was scaled differently in each shot
 ### Q16. A character standing at rest with completely symmetrical weight distribution (both feet equally weighted, both arms at identical positions) communicates:
 
 A. Stability and readiness for action
-B. A neutral, lifeless quality — living things are rarely symmetrical
+B. A neutral, lifeless quality, living things are rarely symmetrical
 C. Strong appeal and clear silhouette readability
 D. Proper solid drawing technique
 
@@ -169,7 +169,7 @@ D. Darker, because it is in shadow due to its angle relative to the light source
 ### Q19. Why is it important to establish the line of action before beginning the detailed drawing of a pose?
 
 A. The line of action determines the character's color palette for that scene
-B. Without the line of action established first, all other drawing decisions lack a directional foundation — the pose will not read at distance
+B. Without the line of action established first, all other drawing decisions lack a directional foundation, the pose will not read at distance
 C. The line of action is required by studio technical standards as the first step in the production pipeline
 D. It serves as the guide for the follow-through and overlapping action animation that will be applied
 
@@ -177,10 +177,10 @@ D. It serves as the guide for the follow-through and overlapping action animatio
 
 ### Q20. A professional animator observes: "I spend 30 minutes on gesture drawing every morning before opening my software." This practice primarily benefits:
 
-A. Software skill — it warms up the animator's keyboard and mouse control
+A. Software skill, it warms up the animator's keyboard and mouse control
 B. Observation and visual thinking skills that transfer directly to better pose selection in animation
 C. Memorization of anatomy facts that can be recalled during production
-D. Speed — gesture drawing increases the animator's frames-per-day productivity
+D. Speed, gesture drawing increases the animator's frames-per-day productivity
 
 ---
 
@@ -196,7 +196,7 @@ D. Standard animation proportion (5:1) adapted with elongated deer anatomy
 ### Q22. What drawing mistake causes characters to appear "floating" in a scene rather than standing solidly on the ground?
 
 A. Using too many construction lines that are left visible in the final drawing
-B. Not establishing proper weight distribution — the center of gravity is not correctly positioned over the support foot or feet
+B. Not establishing proper weight distribution, the center of gravity is not correctly positioned over the support foot or feet
 C. Using a proportion system that is too stylized for the level of environment detail
 D. Drawing the line of action as too straight when it should be curved
 
@@ -204,10 +204,10 @@ D. Drawing the line of action as too straight when it should be curved
 
 ### Q23. The DreamWorks animator in this module's opening story improved her animation after taking life drawing classes. The specific improvement her supervisors noted was:
 
-A. Faster keyframe production — she could animate more shots per week
-B. "Strong poses, character comes through, this reads" — her poses communicated clearly
-C. Better technical execution — her graph editor curves were smoother
-D. More accurate proportions — her characters stopped drifting between shots
+A. Faster keyframe production, she could animate more shots per week
+B. "Strong poses, character comes through, this reads", her poses communicated clearly
+C. Better technical execution, her graph editor curves were smoother
+D. More accurate proportions, her characters stopped drifting between shots
 
 ---
 
@@ -215,57 +215,57 @@ D. More accurate proportions — her characters stopped drifting between shots
 
 A. Three-dimensional form and the illusion of volume in a flat image
 B. Foreshortening applied to limbs pointing toward the camera
-C. Overlap — closer forms obscuring farther forms to establish depth
+C. Overlap, closer forms obscuring farther forms to establish depth
 D. Color saturation and value contrast of a character's costume
 
 ---
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** Gesture drawing captures the line of action — energy, weight, direction — not anatomical detail.
+**Q1 B.** Gesture drawing captures the line of action energy, weight, direction, not anatomical detail.
 
-**Q2 — C.** The line of action is a single curved line running through the pose communicating its dominant directional energy.
+**Q2, C.** The line of action is a single curved line running through the pose communicating its dominant directional energy.
 
-**Q3 — C.** An egg or sphere. This form naturally suggests the three-dimensional roundness of a head and allows for consistent construction from multiple angles.
+**Q3, C.** An egg or sphere. This form naturally suggests the three-dimensional roundness of a head and allows for consistent construction from multiple angles.
 
-**Q4 — C.** Foreshortening — the fist closest to the camera should appear larger than it does at other angles. Making it the same size as the head ignores depth perspective.
+**Q4 C.** Foreshortening the fist closest to the camera should appear larger than it does at other angles. Making it the same size as the head ignores depth perspective.
 
-**Q5 — B.** 7–8 head-lengths for realistic adult human anatomy.
+**Q5, B.** 7–8 head-lengths for realistic adult human anatomy.
 
-**Q6 — B.** Study-then-draw: observe the reference, close it, draw from understanding, return only to check specifics.
+**Q6, B.** Study-then-draw: observe the reference, close it, draw from understanding, return only to check specifics.
 
-**Q7 — B.** Observational accuracy, speed, understanding of weight/balance, and hand-eye coordination.
+**Q7, B.** Observational accuracy, speed, understanding of weight/balance, and hand-eye coordination.
 
-**Q8 — B.** Overlap communicates spatial depth in a 2D frame.
+**Q8, B.** Overlap communicates spatial depth in a 2D frame.
 
-**Q9 — B.** Drawing from the wrist produces small, cramped, timid marks. Drawing from the shoulder produces larger, more confident, more expressive strokes.
+**Q9, B.** Drawing from the wrist produces small, cramped, timid marks. Drawing from the shoulder produces larger, more confident, more expressive strokes.
 
-**Q10 — C.** Chibi/super-deformed: 1:1 to 2:1 (the head is nearly as large as the body).
+**Q10, C.** Chibi/super-deformed: 1:1 to 2:1 (the head is nearly as large as the body).
 
-**Q11 — B.** A tangent is where two lines touch at exactly one point — the eye does not know which form is in front and which is behind. Overlap instead.
+**Q11 B.** A tangent is where two lines touch at exactly one point the eye does not know which form is in front and which is behind. Overlap instead.
 
-**Q12 — C.** After major volumes, establish joint positions. Joints define the limb structure.
+**Q12, C.** After major volumes, establish joint positions. Joints define the limb structure.
 
-**Q13 — B.** Gesture/Line of Action → Major Volumes → Joints → Connecting Cylinders → Refinement.
+**Q13, B.** Gesture/Line of Action → Major Volumes → Joints → Connecting Cylinders → Refinement.
 
-**Q14 — B.** Negative space is the area not occupied by the primary subject. It is as compositionally active as positive space.
+**Q14, B.** Negative space is the area not occupied by the primary subject. It is as compositionally active as positive space.
 
-**Q15 — B.** Proportion drift indicates inconsistent application of the proportion system. The construction method prevents drift by establishing consistent underlying volumes.
+**Q15, B.** Proportion drift indicates inconsistent application of the proportion system. The construction method prevents drift by establishing consistent underlying volumes.
 
-**Q16 — B.** Perfect symmetry reads as lifeless or robotic. Living things have weight distribution, shifted hips, varied arm positions.
+**Q16, B.** Perfect symmetry reads as lifeless or robotic. Living things have weight distribution, shifted hips, varied arm positions.
 
-**Q17 — C.** Aaron Blaise's method: observe deeply, then put the reference aside and draw from understanding.
+**Q17, C.** Aaron Blaise's method: observe deeply, then put the reference aside and draw from understanding.
 
-**Q18 — B.** Foreshortening makes a limb pointing toward the viewer appear shorter because the depth dimension is collapsed in a 2D image.
+**Q18, B.** Foreshortening makes a limb pointing toward the viewer appear shorter because the depth dimension is collapsed in a 2D image.
 
-**Q19 — B.** The line of action is the foundation — all other decisions serve it. Without it, the pose lacks a directional idea and will not read.
+**Q19 B.** The line of action is the foundation all other decisions serve it. Without it, the pose lacks a directional idea and will not read.
 
-**Q20 — B.** Gesture drawing primarily builds observation and visual thinking skills that transfer to better pose selection.
+**Q20, B.** Gesture drawing primarily builds observation and visual thinking skills that transfer to better pose selection.
 
-**Q21 — D.** Bambi uses a style adapted from realistic deer anatomy but with animation stylization appropriate to the story — approximately 5:1 with naturalistic deer anatomy, not strict human-proportion systems.
+**Q21 D.** Bambi uses a style adapted from realistic deer anatomy but with animation stylization appropriate to the story approximately 5:1 with naturalistic deer anatomy, not strict human-proportion systems.
 
-**Q22 — B.** Floating characters lack correctly placed weight distribution. The center of gravity must fall over the support foot.
+**Q22, B.** Floating characters lack correctly placed weight distribution. The center of gravity must fall over the support foot.
 
-**Q23 — B.** The supervisor notes changed to "strong poses, character comes through, this reads" — all pose and staging improvements, not technical ones.
+**Q23 B.** The supervisor notes changed to "strong poses, character comes through, this reads" all pose and staging improvements, not technical ones.
 
-**Q24 — D.** Color saturation is part of color theory, not solid drawing. Solid drawing covers form, volume, foreshortening, and overlap.
+**Q24, D.** Color saturation is part of color theory, not solid drawing. Solid drawing covers form, volume, foreshortening, and overlap.

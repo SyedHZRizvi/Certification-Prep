@@ -1,9 +1,9 @@
 ---
 permalink: /35-Motion-Graphics-UI-Animation/Module-05-Infographic-Data-Viz/Videos/
-title: "Module 5: Videos — Infographic & Data Viz"
+title: "Module 5: Videos, Infographic & Data Viz"
 ---
 
-# 🎬 Module 5 Videos — Infographic & Data Viz
+# 🎬 Module 5 Videos, Infographic & Data Viz
 
 ---
 
@@ -14,7 +14,7 @@ title: "Module 5: Videos — Infographic & Data Viz"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=animated+bar+chart+after+effects+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/NQKNZTGb2NA/mqdefault.jpg" alt="Animated Bar Chart AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Animated Bar Chart in After Effects — Complete Tutorial</div>
+    <div class="vg-card-title">Animated Bar Chart in After Effects, Complete Tutorial</div>
     <div class="vg-card-meta">School of Motion · Bar chart from scratch with expressions and stagger</div>
   </div>
 </a>
@@ -22,7 +22,7 @@ title: "Module 5: Videos — Infographic & Data Viz"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=animated+infographic+after+effects+data+visualization">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/v9IbYtGcGq4/mqdefault.jpg" alt="Infographic AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Animated Infographic in After Effects — Data Story</div>
+    <div class="vg-card-title">Animated Infographic in After Effects, Data Story</div>
     <div class="vg-card-meta">Motion Design School · Full 60-sec data animation walkthrough</div>
   </div>
 </a>
@@ -54,7 +54,7 @@ title: "Module 5: Videos — Infographic & Data Viz"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+animated+line+graph+chart+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/UODOQaLuR6U/mqdefault.jpg" alt="Line Graph AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Animated Line Graph in After Effects — Trim Paths Technique</div>
+    <div class="vg-card-title">Animated Line Graph in After Effects, Trim Paths Technique</div>
     <div class="vg-card-meta">School of Motion · Line reveal with moving dot and label</div>
   </div>
 </a>
@@ -62,7 +62,7 @@ title: "Module 5: Videos — Infographic & Data Viz"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+map+animation+route+news+graphics">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3p5HLGtHKrA/mqdefault.jpg" alt="Map Animation AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Map Animation in After Effects — Route and Zoom Techniques</div>
+    <div class="vg-card-title">Map Animation in After Effects, Route and Zoom Techniques</div>
     <div class="vg-card-meta">Evan Abrams · Geographic animation for news graphics</div>
   </div>
 </a>
@@ -70,7 +70,7 @@ title: "Module 5: Videos — Infographic & Data Viz"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=data+storytelling+animation+design+principles">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/2mVFJixMdH0/mqdefault.jpg" alt="Data Storytelling Design" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Data Storytelling for Animated Graphics — Structure and Pacing</div>
+    <div class="vg-card-title">Data Storytelling for Animated Graphics, Structure and Pacing</div>
     <div class="vg-card-meta">Alberto Cairo · Data visualization narrative principles</div>
   </div>
 </a>
@@ -94,7 +94,7 @@ title: "Module 5: Videos — Infographic & Data Viz"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=hans+rosling+animated+data+bubble+chart+gapminder" data-video-id="jbkSRLYSojo">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/jbkSRLYSojo/mqdefault.jpg" alt="Hans Rosling Data Animation" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Hans Rosling — 200 Countries, 200 Years, 4 Minutes</div>
+    <div class="vg-card-title">Hans Rosling, 200 Countries, 200 Years, 4 Minutes</div>
     <div class="vg-card-meta">BBC · The canonical example of data animation storytelling</div>
   </div>
 </a>
@@ -102,7 +102,7 @@ title: "Module 5: Videos — Infographic & Data Viz"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+news+graphics+television+animation+breakdown">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/vRJFQ6mB7kg/mqdefault.jpg" alt="News Graphics Breakdown" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Professional News Graphics Breakdown — CNN/BBC Style</div>
+    <div class="vg-card-title">Professional News Graphics Breakdown, CNN/BBC Style</div>
     <div class="vg-card-meta">Motion Design School · Election maps, data panels, broadcast specs</div>
   </div>
 </a>

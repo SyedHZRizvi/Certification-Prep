@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">sed, awk, grep — The Pipeline Toolkit</p>
+      <p class="vg-title">sed, awk, grep, The Pipeline Toolkit</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 15 min · The text-processing trio</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">cron & crontab — The Classic Scheduler</p>
+      <p class="vg-title">cron & crontab, The Classic Scheduler</p>
       <p class="vg-creator">Jay LaCroix / LearnLinuxTV</p>
       <span class="vg-duration">⏱ 11 min · 5-field format, gotchas</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">systemd Timers — Modern Scheduling</p>
+      <p class="vg-title">systemd Timers, Modern Scheduling</p>
       <p class="vg-creator">Veronica Explains</p>
       <span class="vg-duration">⏱ 12 min · OnCalendar, Persistent=true</span>
     </div>

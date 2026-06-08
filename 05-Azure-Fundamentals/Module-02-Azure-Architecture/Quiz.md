@@ -32,9 +32,9 @@ D. Two datacenters in the same building
 ---
 
 ### Q4. A resource group can contain resources from how many regions? *(Understand)*
-A. Exactly one — the RG's region
+A. Exactly one, the RG's region
 B. Up to two
-C. Resources from any region — the RG location is just metadata
+C. Resources from any region, the RG location is just metadata
 D. As many as your subscription allows
 
 ---
@@ -153,7 +153,7 @@ D. Chinese government workloads
 
 ### Q19. Which is TRUE about Availability Zones? *(Analyze)*
 A. Every Azure region has AZs
-B. Only AZ-enabled regions support AZs — check region docs
+B. Only AZ-enabled regions support AZs, check region docs
 C. AZs are billed extra per zone
 D. AZs are visible to end users as separate regions
 
@@ -219,12 +219,12 @@ B. No
 The classic hierarchy. Policies/RBAC at the top inherit down. Memorize this.
 
 ### Q2: **B. Physically separate datacenter within a region**
-AZs have independent power, cooling, and networking — designed to survive single-datacenter failure.
+AZs have independent power, cooling, and networking, designed to survive single-datacenter failure.
 
 ### Q3: **B. Two regions designated for sequential updates and prioritized recovery**
 Region pairs are 300+ miles apart within the same geography. Microsoft never updates both at once.
 
-### Q4: **C. Resources from any region — RG location is just metadata**
+### Q4: **C. Resources from any region, RG location is just metadata**
 This is a famous AZ-900 trap. RGs are logical, not regional.
 
 ### Q5: **B. Apply it at the management group level**
@@ -258,7 +258,7 @@ Zonal = "I pick AZ 1." Zone-redundant = "Azure spreads me across all AZs."
 GDPR / EU data residency means stay in the EU geography. Don't deploy to East US.
 
 ### Q15: **A. Resources can move between RGs (subject to service support)**
-Move is supported for many — not all — resource types. RGs themselves can also be moved between subscriptions.
+Move is supported for many not all resource types. RGs themselves can also be moved between subscriptions.
 
 ### Q16: **A. Policy and RBAC inheritance across many subscriptions**
 The MG is purely for governance at scale.
@@ -270,7 +270,7 @@ Locks stop accidental deletion or modification. Tags don't enforce anything; Pol
 Azure Government is U.S.-specific with U.S.-citizen operations and physical isolation.
 
 ### Q19: **B. Only AZ-enabled regions support AZs**
-Not every region has AZs — always check.
+Not every region has AZs, always check.
 
 ### Q20: **B. Multiple subscriptions with workloads in multiple regions**
 Real enterprises separate environments by subscription and spread for global reach + DR.
@@ -282,7 +282,7 @@ Examples: ZRS storage, zone-redundant SQL, zone-redundant App Gateway v2.
 MGs contain multiple subscriptions. RGs and resources live within one subscription.
 
 ### Q23: **B. Identifies where metadata is stored, does NOT restrict resource locations**
-A West US RG can hold East US, North Europe, and Japan East resources — all at once.
+A West US RG can hold East US, North Europe, and Japan East resources, all at once.
 
 ### Q24: **A. Deploy a second copy in the paired region and use Site Recovery / GRS**
 Region pair is the path of least resistance for cross-region DR.

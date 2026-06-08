@@ -51,7 +51,7 @@ D. Real-time Activation
 
 ### Q6. A long agent trajectory (47 turns to answer a simple question) is USUALLY: *(Understand)*
 A. A sign of deep reasoning
-B. A sign of thrashing — bias for short, confident trajectories; investigate
+B. A sign of thrashing, bias for short, confident trajectories; investigate
 C. Optimal
 D. Unrelated to quality
 
@@ -90,7 +90,7 @@ D. Marketing
 ---
 
 ### Q11. When NOT to use a framework like LangChain: *(Analyze)*
-A. Always — never use frameworks
+A. Always, never use frameworks
 B. When your control flow is simple/unique and a 60-line custom loop would be more debuggable
 C. When you already use Python
 D. When you have <100 users
@@ -115,7 +115,7 @@ D. They are the same
 
 ### Q14. The MAIN benefit of orchestrator-workers vs single-agent: *(Apply)*
 A. Cheaper
-B. The orchestrator dynamically plans subtasks while workers (with smaller tool surfaces) execute — better accuracy on complex tasks
+B. The orchestrator dynamically plans subtasks while workers (with smaller tool surfaces) execute, better accuracy on complex tasks
 C. No benefit
 D. Requires fewer evals
 
@@ -170,8 +170,8 @@ D. Improve latency
 ---
 
 ### Q21. Pure evaluator-optimizer loops should have a: *(Apply)*
-A. No cap — let the model decide
-B. Hard MAX_ITERATIONS cap (and a cost cap) — to prevent infinite refinement
+A. No cap, let the model decide
+B. Hard MAX_ITERATIONS cap (and a cost cap), to prevent infinite refinement
 C. Single iteration always
 D. Random cap
 
@@ -186,7 +186,7 @@ D. Local, region, global, universe
 ---
 
 ### Q23. A 30-eval suite of "golden" tasks regresses 5% on a new prompt. The correct action is: *(Apply)*
-A. Ship anyway — it's only 5%
+A. Ship anyway, it's only 5%
 B. Investigate the 5% regression cause; if cause-known and acceptable, ship with monitoring; if not, fix or abort the prompt change
 C. Switch frameworks
 D. Disable evals
@@ -265,7 +265,7 @@ Re-run on every prompt change.
 Langfuse / Phoenix / OpenLLMetry all support this.
 
 ### Q18: **A. Single call → single agent → orchestrator+workers → evaluator-optimizer → per-tier routing**
-Cursor's documented architecture progression — each stage applied a canonical pattern.
+Cursor's documented architecture progression, each stage applied a canonical pattern.
 
 ### Q19: **B. Named sub-agent with its own system prompt and tool subset**
 Anthropic's primitive for hierarchical / specialized flows.
@@ -302,11 +302,11 @@ Realistic incident-summarizer architecture: multiple canonical patterns + produc
 ## 🃏 Add To Your Flashcards
 
 - 5 workflow patterns: prompt chaining / routing / parallelization / orchestrator-workers / evaluator-optimizer
-- Workflow vs Agent — fixed flow vs model-decided flow
+- Workflow vs Agent, fixed flow vs model-decided flow
 - ReAct = Reason + Act
 - Step cap, cost cap, tool timeout, confirmation gate, restart-from-checkpoint, observability
 - Eval levels: unit / component / agent / system
-- LLM-as-judge — rubric-based scoring by a second LLM
+- LLM-as-judge, rubric-based scoring by a second LLM
 - Hierarchical agent fix for too-many-tools problem
 - Anthropic guidance: bias for simplest pattern that works
 - Holdout sets prevent silent regression
@@ -314,4 +314,4 @@ Realistic incident-summarizer architecture: multiple canonical patterns + produc
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — RAG & Long-Context](../Module-07-RAG-Long-Context/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, RAG & Long-Context](../Module-07-RAG-Long-Context/Reading.md)

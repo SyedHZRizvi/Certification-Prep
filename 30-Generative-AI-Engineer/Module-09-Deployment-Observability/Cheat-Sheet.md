@@ -11,7 +11,7 @@
 | Zero ops desired | Have GPU + ops talent |
 | Compliance OK with 3rd party | Strict data residency |
 
-**Hybrid is the production reality** — frontier hosted for hard queries; cheap hosted for default; self-host for cost/privacy.
+**Hybrid is the production reality**, frontier hosted for hard queries; cheap hosted for default; self-host for cost/privacy.
 
 ---
 
@@ -63,7 +63,7 @@ resp = completion(
 )
 ```
 
-Gateway gives you: routing / retries / fallback / cache / observability / rate limit / auth — all in one layer.
+Gateway gives you: routing / retries / fallback / cache / observability / rate limit / auth, all in one layer.
 
 ---
 
@@ -115,7 +115,7 @@ Gateway gives you: routing / retries / fallback / cache / observability / rate l
 - **PagedAttention** (vLLM) + FlashAttention → memory-efficient + fast
 - **Quantization** (W4A16, INT8, FP8)
 - **Prompt cache** for TTFT improvements
-- **Tail (p99) tracking** — cold starts, cache misses, long inputs
+- **Tail (p99) tracking**, cold starts, cache misses, long inputs
 
 ---
 
@@ -160,7 +160,7 @@ Gateway gives you: routing / retries / fallback / cache / observability / rate l
 - vLLM = PagedAttention + continuous batching + multi-LoRA
 - LiteLLM = gateway abstraction
 - Langfuse / LangSmith / Phoenix / Helicone
-- Prompt cache: Anthropic / OpenAI / Gemini — up to 90%
+- Prompt cache: Anthropic / OpenAI / Gemini, up to 90%
 - Semantic cache: GPTCache / pgvector
 - Speculative decoding: 2-3× speed
 - TTFT > Total latency for perceived UX

@@ -123,7 +123,7 @@ D. Layer (emission from a specific image layer)
 The "Size over Life" parameter in Trapcode Particular allows what behavior?
 
 A. Changing the size of the emitter over the duration of the composition
-B. Animating a particle's size from birth to death — for example, growing from small to large and shrinking at death
+B. Animating a particle's size from birth to death, for example, growing from small to large and shrinking at death
 C. Adjusting the particle size based on distance from the camera
 D. Scaling the entire particle system as the camera zooms
 
@@ -167,7 +167,7 @@ D. Box emitter with a very thin height
 What effect does increasing "Air Resistance" in Trapcode Particular have on particles?
 
 A. It makes particles fall faster due to air pressure
-B. It decelerates particles over time — high-speed particles slow down as they travel
+B. It decelerates particles over time, high-speed particles slow down as they travel
 C. It causes particles to orbit the emitter
 D. It increases the turbulence applied to particles
 
@@ -179,7 +179,7 @@ In the Fractal Noise fire method, what is the purpose of applying a Curves adjus
 
 A. To set the frame rate of the noise animation
 B. To increase the rendering speed of the effect
-C. To remap grayscale noise values to fire colors — making dark values transparent and bright values yellow/white
+C. To remap grayscale noise values to fire colors, making dark values transparent and bright values yellow/white
 D. To add lens flare on top of the fire
 
 ---
@@ -222,7 +222,7 @@ D. The order doesn't matter for fire effects
 The "Turbulence Scale" parameter in Trapcode Particular's Air Turbulence section controls what?
 
 A. The maximum speed of turbulent forces
-B. The size of the turbulent vortices — larger scale = bigger billowing swirls; smaller scale = smaller rapid flickering
+B. The size of the turbulent vortices, larger scale = bigger billowing swirls; smaller scale = smaller rapid flickering
 C. The duration of each turbulence cycle
 D. The number of turbulence layers in the simulation
 
@@ -246,7 +246,7 @@ A compositor wants fire particles to throw light onto a live-action scene below 
 A. Enable Global Illumination in After Effects' 3D rendering
 B. Use a Glow effect on an Adjustment Layer below the fire layer, driven by the fire's luminance
 C. Apply a Point Light in After Effects 3D space near the fire
-D. This is not possible in After Effects — it requires Nuke or Houdini
+D. This is not possible in After Effects, it requires Nuke or Houdini
 
 ---
 
@@ -274,50 +274,50 @@ D. Box Emitter, Zero Gravity, Air Resistance = 1.0, Particle Type = Line
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** The emitter is the source — the location and shape from which new particles are spawned into the simulation. Emitter types include point, sphere, box, line, and layer.
+**Q1 B.** The emitter is the source the location and shape from which new particles are spawned into the simulation. Emitter types include point, sphere, box, line, and layer.
 
-**Q2 — C.** Particles/sec (under the Emitter section) controls the number of new particles created per second. Higher values = denser effects.
+**Q2, C.** Particles/sec (under the Emitter section) controls the number of new particles created per second. Higher values = denser effects.
 
-**Q3 — C.** In Trapcode Particular, positive Gravity Y pulls particles downward; negative Gravity Y pushes particles upward. Flames are driven upward by convective forces — negative Gravity Y simulates this.
+**Q3 C.** In Trapcode Particular, positive Gravity Y pulls particles downward; negative Gravity Y pushes particles upward. Flames are driven upward by convective forces negative Gravity Y simulates this.
 
-**Q4 — B.** Air Turbulence creates a random turbulent force field that causes particles to deviate unpredictably from straight-line paths. This is essential for fire flickering, smoke billowing, and swirling magical effects.
+**Q4, B.** Air Turbulence creates a random turbulent force field that causes particles to deviate unpredictably from straight-line paths. This is essential for fire flickering, smoke billowing, and swirling magical effects.
 
-**Q5 — B.** The Aux System is a secondary particle emitter that spawns new particles at the location where primary particles die. This is excellent for producing sparks or embers when fireball particles die at the edge of the flame.
+**Q5, B.** The Aux System is a secondary particle emitter that spawns new particles at the location where primary particles die. This is excellent for producing sparks or embers when fireball particles die at the edge of the flame.
 
-**Q6 — C.** CC Particle World is built into every After Effects installation, requiring no purchase. Trapcode Particular requires a Red Giant/Maxon subscription.
+**Q6, C.** CC Particle World is built into every After Effects installation, requiring no purchase. Trapcode Particular requires a Red Giant/Maxon subscription.
 
-**Q7 — B.** Animating Evolution changes the fractal noise pattern over time, which simulates movement and flickering. This is the primary mechanism that makes the static noise look like moving fire.
+**Q7, B.** Animating Evolution changes the fractal noise pattern over time, which simulates movement and flickering. This is the primary mechanism that makes the static noise look like moving fire.
 
-**Q8 — B.** Smoke rises gently (low negative gravity) and billows and swirls (high air turbulence with large turbulence scale — large vortices = large billow shapes).
+**Q8 B.** Smoke rises gently (low negative gravity) and billows and swirls (high air turbulence with large turbulence scale large vortices = large billow shapes).
 
-**Q9 — B.** Life controls how long a particle exists (in seconds) before it fades out. Shorter life = faster-moving, more energetic effects; longer life = slower, more persistent effects like smoke or dust.
+**Q9, B.** Life controls how long a particle exists (in seconds) before it fades out. Shorter life = faster-moving, more energetic effects; longer life = slower, more persistent effects like smoke or dust.
 
-**Q10 — C.** A Box emitter with a wide, flat shape near the ground surface simulates the large area from which dust and debris are kicked up during an explosion.
+**Q10, C.** A Box emitter with a wide, flat shape near the ground surface simulates the large area from which dust and debris are kicked up during an explosion.
 
-**Q11 — B.** Size over Life animates the particle's physical size from birth to death. A smoke particle might start small and grow very large as it expands. A flame particle might grow to peak size at midlife then shrink at death.
+**Q11, B.** Size over Life animates the particle's physical size from birth to death. A smoke particle might start small and grow very large as it expands. A flame particle might grow to peak size at midlife then shrink at death.
 
-**Q12 — C.** Add (or Screen) blend mode causes the fire particles to add their luminance to the underlying footage. This produces the self-luminous, brightening effect of real fire — dark areas of the particle (black) become invisible.
+**Q12 C.** Add (or Screen) blend mode causes the fire particles to add their luminance to the underlying footage. This produces the self-luminous, brightening effect of real fire dark areas of the particle (black) become invisible.
 
-**Q13 — B.** Longevity in CC Particle World is the equivalent of Particular's Life — it controls how long each individual particle lives before it is removed from the simulation.
+**Q13 B.** Longevity in CC Particle World is the equivalent of Particular's Life it controls how long each individual particle lives before it is removed from the simulation.
 
-**Q14 — C.** A Layer emitter uses an image (a ring-shaped graphic) as the emission source. Particles spawn at pixel positions within the emitting layer, tracing the ring shape automatically.
+**Q14, C.** A Layer emitter uses an image (a ring-shaped graphic) as the emission source. Particles spawn at pixel positions within the emitting layer, tracing the ring shape automatically.
 
-**Q15 — B.** Air Resistance creates drag — it decelerates particles over time. Embers launched at high speed slow to a floating drift. Smoke particles that emerge quickly from the emitter slow to a gentle float.
+**Q15 B.** Air Resistance creates drag it decelerates particles over time. Embers launched at high speed slow to a floating drift. Smoke particles that emerge quickly from the emitter slow to a gentle float.
 
-**Q16 — C.** The Curves adjustment remaps the grayscale noise values to fire colors. Typically: the darkest values become transparent (invisible), mid-dark values become red/orange, and the brightest values become yellow/white (hottest part of the flame).
+**Q16, C.** The Curves adjustment remaps the grayscale noise values to fire colors. Typically: the darkest values become transparent (invisible), mid-dark values become red/orange, and the brightest values become yellow/white (hottest part of the flame).
 
-**Q17 — D.** The Lens (Convex or Biconcave) particle type in CC Particle World produces soft, circular light shapes that resemble out-of-focus lights — perfect for bokeh effects.
+**Q17 D.** The Lens (Convex or Biconcave) particle type in CC Particle World produces soft, circular light shapes that resemble out-of-focus lights perfect for bokeh effects.
 
-**Q18 — B.** Life Random, Velocity Random, and Size Random add variation per particle so not all particles behave identically. Without these, fire looks like a collection of identical moving elements.
+**Q18, B.** Life Random, Velocity Random, and Size Random add variation per particle so not all particles behave identically. Without these, fire looks like a collection of identical moving elements.
 
-**Q19 — A.** The recommended bottom-to-top order for fire is: Smoke (bottom, rendered behind everything), Outer Flame, Core Flame, Embers (top, brightest/closest elements on top). This matches how real fire is physically structured.
+**Q19, A.** The recommended bottom-to-top order for fire is: Smoke (bottom, rendered behind everything), Outer Flame, Core Flame, Embers (top, brightest/closest elements on top). This matches how real fire is physically structured.
 
-**Q20 — B.** Turbulence Scale controls the size of individual turbulent vortices. A large scale creates big, sweeping billowing movements (smoke). A small scale creates rapid, small-scale flickering (fire).
+**Q20, B.** Turbulence Scale controls the size of individual turbulent vortices. A large scale creates big, sweeping billowing movements (smoke). A small scale creates rapid, small-scale flickering (fire).
 
-**Q21 — A.** Producer Position Z controls the depth (Z-axis) of the CC Particle World emitter in 3D space. This allows the emitter to be positioned at different depths in the composition.
+**Q21, A.** Producer Position Z controls the depth (Z-axis) of the CC Particle World emitter in 3D space. This allows the emitter to be positioned at different depths in the composition.
 
-**Q22 — B.** A common AE technique for fire-thrown light is to duplicate the fire layer with a large Glow effect, set to a warm color, blended over the scene below. This is a 2D simulation of the interactive light, not physically accurate but visually convincing for most applications.
+**Q22, B.** A common AE technique for fire-thrown light is to duplicate the fire layer with a large Glow effect, set to a warm color, blended over the scene below. This is a 2D simulation of the interactive light, not physically accurate but visually convincing for most applications.
 
-**Q23 — B.** Opacity over Life in a smoke particle system typically produces: low opacity at birth (the particle spawns semi-transparent), increasing to peak opacity at midlife (the smoke body), then fading back to transparent at death (the smoke disperses).
+**Q23, B.** Opacity over Life in a smoke particle system typically produces: low opacity at birth (the particle spawns semi-transparent), increasing to peak opacity at midlife (the smoke body), then fading back to transparent at death (the smoke disperses).
 
-**Q24 — B.** A falling ember requires: high initial velocity (upward burst), positive gravity (it falls after the burst), high random spin (tumbling), medium life (it burns for 2–3 seconds before extinguishing), and a bright ember sprite as the visual.
+**Q24, B.** A falling ember requires: high initial velocity (upward burst), positive gravity (it falls after the burst), high random spin (tumbling), medium life (it burns for 2–3 seconds before extinguishing), and a bright ember sprite as the visual.

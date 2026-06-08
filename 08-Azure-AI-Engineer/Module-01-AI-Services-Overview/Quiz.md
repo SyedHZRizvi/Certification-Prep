@@ -74,10 +74,10 @@ D. `SubscriptionKey(key)`
 ---
 
 ### Q8. Azure OpenAI is included in the multi-service Azure AI services resource. (True / False) *(Understand)*
-A. True — it's part of `AIServices` kind
-B. True — but only in selected regions
-C. False — Azure OpenAI is always a separate resource kind
-D. False — only the Embeddings API is included
+A. True, it's part of `AIServices` kind
+B. True, but only in selected regions
+C. False, Azure OpenAI is always a separate resource kind
+D. False, only the Embeddings API is included
 
 ---
 
@@ -171,7 +171,7 @@ D. `az openai create --multi`
 
 ### Q20. The `Face` service identification API is: *(Remember)*
 A. Generally available to everyone
-B. Behind a Limited Access gate — requires application/approval
+B. Behind a Limited Access gate, requires application/approval
 C. Free for all customers
 D. Part of Custom Vision
 
@@ -227,7 +227,7 @@ D. Premium tier with reserved capacity
 
 ### Q27. A peer architect proposes using a single shared key (key1) for every team's Azure AI workloads, citing operational simplicity ("only one secret to rotate"). Evaluate this proposal against Microsoft's Responsible AI Standard v2 (2022) and the principle of least privilege (Saltzer & Schroeder, 1975). Which option below contains the *strongest* counter-argument? *(Evaluate)*
 A. The proposal is fine because Azure rotates keys automatically every 90 days
-B. The proposal collapses every team's audit trail into one identity, prevents per-team RBAC, and means a single leaked key compromises every workload — managed identity per workload + Cognitive Services User role would isolate blast radius and preserve per-team telemetry
+B. The proposal collapses every team's audit trail into one identity, prevents per-team RBAC, and means a single leaked key compromises every workload, managed identity per workload + Cognitive Services User role would isolate blast radius and preserve per-team telemetry
 C. The proposal is fine if the key is stored in Key Vault
 D. The proposal works only when all teams are in the same region
 
@@ -264,7 +264,7 @@ Legacy naming from the Azure API Management gateway, but still the correct heade
 ### Q7: **A. `AzureKeyCredential(key)`**
 The key-credential wrapper from `azure.core.credentials`.
 
-### Q8: **C. False — Azure OpenAI is always a separate resource kind**
+### Q8: **C. False, Azure OpenAI is always a separate resource kind**
 The `AIServices` multi-service resource excludes Azure OpenAI. Provision `Microsoft.CognitiveServices/accounts` with `kind=OpenAI` separately.
 
 ### Q9: **C. Cognitive Services User**
@@ -277,13 +277,13 @@ Personalizer has been retired. The others are all current.
 Two-key rotation prevents downtime. You always have one valid key in use while the other is being rotated.
 
 ### Q12: **B. Is required for Entra ID authentication**
-And it **cannot** be changed once set — pick carefully.
+And it **cannot** be changed once set, pick carefully.
 
 ### Q13: **B. `azure-ai-documentintelligence`**
 The current package. The legacy `azure-ai-formrecognizer` is still supported but considered older.
 
 ### Q14: **B. Only one F0 resource per service kind is allowed per subscription**
-The free tier is one per kind, per subscription — a common gotcha.
+The free tier is one per kind, per subscription, a common gotcha.
 
 ### Q15: **B. Walks a chain of credential sources**
 Order: environment variables → managed identity → Azure CLI → VS Code → interactive browser. The first that yields a token wins.
@@ -316,10 +316,10 @@ The 4.0 Image Analysis API uses this package. The older `ComputerVisionClient` f
 CMK lets you control the encryption key for at-rest data.
 
 ### Q25: **B. LUIS**
-Language Understanding (LUIS) is retired. CLU in Azure AI Language is its successor. (QnA Maker is replaced by Question Answering — different question.)
+Language Understanding (LUIS) is retired. CLU in Azure AI Language is its successor. (QnA Maker is replaced by Question Answering, different question.)
 
 ### Q26: **B. Single-service resource on the F0 (free) tier**
-F0 is free with strict throttling — ideal for a hackathon. Multi-service AIServices doesn't have an F0 tier for every sub-service.
+F0 is free with strict throttling, ideal for a hackathon. Multi-service AIServices doesn't have an F0 tier for every sub-service.
 
 ### Q27: **B. Collapses audit, prevents per-team RBAC, single point of failure**
 Microsoft's Responsible AI Standard v2 (June 2022) requires accountable identities, and Saltzer & Schroeder (1975) defines least privilege as the foundational security principle. A shared key violates both. Managed identity per workload + the narrow `Cognitive Services User` role gives you per-team audit trails and limits the impact of any single credential compromise.
@@ -346,7 +346,7 @@ Each clause maps to one of the constraints: (a) MI = no key in code; (b) Private
 | Evaluate | 1 | 4% | (combined w/ Analyze) |
 | Create | 1 | 4% | ~5% |
 
-¹ Slightly above target — acceptable for this introductory module where service-name + header recall is exam-critical; later modules rebalance toward more Apply/Analyze.
+¹ Slightly above target, acceptable for this introductory module where service-name + header recall is exam-critical; later modules rebalance toward more Apply/Analyze.
 
 ---
 

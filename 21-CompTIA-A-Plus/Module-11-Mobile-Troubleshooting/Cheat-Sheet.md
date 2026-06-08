@@ -11,7 +11,7 @@
 | Fast drain | Per-app usage; signal strength; Battery Health % |
 | Won't charge | Cable + charger + clean port |
 | Phone hot | Background app, case off, charging environment |
-| Battery swollen | Replace immediately — fire risk |
+| Battery swollen | Replace immediately, fire risk |
 
 ---
 
@@ -91,9 +91,9 @@
 
 ## 🔋 Battery Health Metrics
 
-- **Cycle count** — ~500-800 cycles before degradation
-- **Capacity** — iOS flags <80%
-- **iOS throttles** aged batteries — replace to restore performance
+- **Cycle count**, ~500-800 cycles before degradation
+- **Capacity**, iOS flags <80%
+- **iOS throttles** aged batteries, replace to restore performance
 
 ---
 
@@ -102,7 +102,7 @@
 ✅ Often **right**:
 
 - "Check MDM compliance first when corporate email fails"
-- "Selective wipe — only corporate data"
+- "Selective wipe, only corporate data"
 - "Lock before wipe for lost phones"
 - "Use app-based or hardware MFA, not SMS"
 - "Stop using a swollen battery"
@@ -113,7 +113,7 @@
 - "Use SMS MFA for high-value accounts"
 - "Charge from any public USB port"
 - "Approve every MFA prompt"
-- "Jailbreak — it's fine for work phones"
+- "Jailbreak, it's fine for work phones"
 
 ---
 
@@ -131,11 +131,11 @@
 
 ## ✏️ Quick Self-Check
 
-1. iPhone "No Service" — first 3 checks? ___
+1. iPhone "No Service", first 3 checks? ___
 2. Selective wipe vs full wipe? ___
 3. SIM swap attack defense? ___
-4. Push vs Fetch email — trade-off? ___
-5. App keeps crashing on Android — order of fixes? ___
+4. Push vs Fetch email, trade-off? ___
+5. App keeps crashing on Android, order of fixes? ___
 
 ---
 

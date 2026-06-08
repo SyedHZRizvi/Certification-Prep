@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Firewalls — Stateful vs NGFW</p>
+      <p class="vg-title">Firewalls, Stateful vs NGFW</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 10 min · Generations explained</span>
     </div>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">VPNs — IPsec &amp; SSL/TLS</p>
+      <p class="vg-title">VPNs, IPsec &amp; SSL/TLS</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 12 min · AH/ESP, tunnel mode</span>
     </div>
@@ -150,7 +150,7 @@
 Answer in your notebook (without re-watching):
 
 1. Compare stateful vs NGFW in one sentence each.
-2. Explain when you'd choose IDS over IPS — give one scenario.
+2. Explain when you'd choose IDS over IPS, give one scenario.
 3. Walk through an 802.1X authentication, naming all three roles.
 4. What does ZTNA grant the user that VPN doesn't (and vice versa)?
 5. Why is microsegmentation more effective than a single perimeter firewall?

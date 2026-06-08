@@ -48,8 +48,8 @@
 | Model | Preferred format |
 |-------|------------------|
 | **Claude** | XML tags (`<example>...</example>`) |
-| **GPT** | Agnostic — markdown, JSON, or XML all fine |
-| **Gemini** | Agnostic — markdown often cleanest |
+| **GPT** | Agnostic, markdown, JSON, or XML all fine |
+| **Gemini** | Agnostic, markdown often cleanest |
 | **Llama** | Markdown / JSON; test individually |
 
 ---
@@ -75,7 +75,7 @@
 [2] "Here are examples:"
 [3] <example>
       <input>...</input>
-      <reasoning>one sentence — optional but +5–15pt</reasoning>
+      <reasoning>one sentence, optional but +5–15pt</reasoning>
       <output>...</output>
     </example>
     × N
@@ -102,9 +102,9 @@
 ## 🧪 Many-Shot ICL Notes
 
 - Requires 200K+ context model (Claude, Gemini, GPT-5)
-- DeepMind 2024 (Agarwal et al.) — often matches fine-tune on narrow tasks
-- **Combine with Anthropic prompt caching** — 10% cost on cached prefix
-- Watch jailbreak vector — many-shot can erode safety training
+- DeepMind 2024 (Agarwal et al.), often matches fine-tune on narrow tasks
+- **Combine with Anthropic prompt caching**, 10% cost on cached prefix
+- Watch jailbreak vector, many-shot can erode safety training
 
 ---
 
@@ -134,7 +134,7 @@
 ❌ Often **wrong**:
 
 - "More examples always help" (diminishing returns + cost)
-- "Order doesn't matter" (it does — 30pt swings)
+- "Order doesn't matter" (it does, 30pt swings)
 - "Few-shot replaces fine-tuning in every case"
 - "Random labels are useless" (Min 2022 disagrees)
 - "All models prefer the same example format"
@@ -215,7 +215,7 @@ Reasoning:
 
 ---
 
-## 🧪 kNN Few-Shot — Pseudocode
+## 🧪 kNN Few-Shot, Pseudocode
 
 ```python
 # At index time

@@ -3,7 +3,7 @@
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Then check your answers below. Aim for 22/26 minimum.
 >
-> Every question is tagged with its **Bloom's taxonomy level**. **Methodology questions are heavily tested — drill them.**
+> Every question is tagged with its **Bloom's taxonomy level**. **Methodology questions are heavily tested, drill them.**
 >
 > **Bloom distribution (this quiz):** Remember 6 · Understand 6 · Apply 8 · Analyze/Evaluate 5 · Create 1.
 
@@ -84,15 +84,15 @@ D. A WPA3 misconfiguration
 ---
 
 ### Q10. When a fix worked but you didn't tell the user or check for new side effects, you skipped: *(Understand)*
-A. Step 1 — Identify
-B. Step 5 — Implement
-C. Step 6 — Verify full system functionality
-D. Step 7 — Document
+A. Step 1, Identify
+B. Step 5, Implement
+C. Step 6, Verify full system functionality
+D. Step 7, Document
 
 ---
 
 ### Q11. Documenting findings, actions, and outcomes is critical because: *(Understand)*
-A. It's not — it's optional
+A. It's not, it's optional
 B. The next technician (or future you) needs the context; it builds the KB and informs RCA
 C. CompTIA requires it for the cert
 D. It satisfies HIPAA only
@@ -109,7 +109,7 @@ D. Replace the cable
 
 ### Q13. A wall-port "just stopped working." The user's laptop works on other ports. The MOST likely L1/L2 cause to test FIRST is: *(Apply)*
 A. Firewall rule change
-B. Bad cable, dead port, or disabled port — swap cable, try another port, check switch port config
+B. Bad cable, dead port, or disabled port, swap cable, try another port, check switch port config
 C. DNS resolver failure
 D. STP root re-election
 
@@ -189,7 +189,7 @@ D. The cable is bad
 
 ### Q23. A VPN-connected user reports their TLS sessions to internal HTTPS apps fail with certificate errors after 5 minutes. The most likely root cause is: *(Analyze)*
 A. WPA3 mismatch
-B. Clock skew — the VPN client lost NTP sync; certificate validity windows fail
+B. Clock skew, the VPN client lost NTP sync; certificate validity windows fail
 C. DNS poisoning
 D. STP root election
 
@@ -197,7 +197,7 @@ D. STP root election
 
 ### Q24. The Meta (Facebook) October 2021 outage took 6 hours because: *(Analyze)*
 A. The attack was too sophisticated to mitigate
-B. The maintenance command withdrew DNS routes globally AND internal auth tooling depended on the same DNS — engineers couldn't log in remotely, and physical badge systems were affected; recovery required on-site console access
+B. The maintenance command withdrew DNS routes globally AND internal auth tooling depended on the same DNS, engineers couldn't log in remotely, and physical badge systems were affected; recovery required on-site console access
 C. SNMP polling failed
 D. The data center burned down
 
@@ -215,7 +215,7 @@ D. SMTP misconfiguration
 
 > *Create-level note:* you're proposing a managerial / cultural fix to a methodology gap.
 A. "Punish techs for missing tickets."
-B. "Mandate that no ticket can be closed without a documented root cause + actions taken + verification evidence, and tie the team's KPI to KB-article growth + ticket reopen rate — making documentation a measured outcome rather than a nice-to-have."
+B. "Mandate that no ticket can be closed without a documented root cause + actions taken + verification evidence, and tie the team's KPI to KB-article growth + ticket reopen rate, making documentation a measured outcome rather than a nice-to-have."
 C. "Send everyone to training."
 D. "Replace the ticket system."
 
@@ -230,7 +230,7 @@ Step 1 is always "Identify the problem." The methodology never starts with imple
 After confirmation (step 3), you plan (step 4), then implement (step 5), then verify (step 6), then document (step 7). If the theory had been *refuted*, you'd return to step 2 (new theory) or escalate.
 
 ### Q3: **C. Document findings, actions, and outcomes**
-Step 7 — always the last. Skipping it is the most common anti-pattern CompTIA tests.
+Step 7, always the last. Skipping it is the most common anti-pattern CompTIA tests.
 
 ### Q4: **B. DHCP failed; APIPA**
 169.254.x.x is APIPA. Hosts are link-local-only and cannot route.
@@ -250,14 +250,14 @@ Duplex mismatch is the classic "it works but slowly with errors" pattern. Connec
 ### Q9: **A. L2 loop without STP**
 Without STP (or with STP disabled), L2 loops multiply broadcast frames endlessly, saturating the network.
 
-### Q10: **C. Step 6 — Verify**
+### Q10: **C. Step 6, Verify**
 The "fix worked but didn't verify" pattern is the canonical Step 6 skip.
 
 ### Q11: **B. Next tech needs context + KB + RCA**
 Documentation has two audiences: the next tech and the post-incident review. Without it, every recurring issue is solved from scratch.
 
 ### Q12: **B. Divide-and-conquer**
-Internet works (rules out L1-L4 to outside), Google works (rules out general DNS + browser). The specific failure point is internal — DNS for the internal name, the internal route, or the app/server. Bisect.
+Internet works (rules out L1-L4 to outside), Google works (rules out general DNS + browser). The specific failure point is internal, DNS for the internal name, the internal route, or the app/server. Bisect.
 
 ### Q13: **B. Cable / port / port config**
 L1-L2 first when "one port doesn't work." Swap cable, swap port, check VLAN/duplex/speed/port-security.
@@ -287,7 +287,7 @@ Disabling STP is one of the most dangerous "fixes." Re-enable, configure root br
 Step 6 then Step 7. Closing without verifying is the anti-pattern.
 
 ### Q22: **A. Local DNS path broken**
-IP-direct works (network is fine); a 3rd-party resolver works (the name exists). The user's resolver path is the problem — local DNS server, hosts file, search domain, etc.
+IP-direct works (network is fine); a 3rd-party resolver works (the name exists). The user's resolver path is the problem, local DNS server, hosts file, search domain, etc.
 
 ### Q23: **B. Clock skew**
 TLS certs have validity windows; auth tokens (JWT, Kerberos) have time-bound validity. NTP keeps clocks aligned. If NTP fails over the VPN, drift accumulates until certs appear invalid.

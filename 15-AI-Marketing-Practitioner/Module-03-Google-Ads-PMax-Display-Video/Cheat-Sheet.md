@@ -54,7 +54,7 @@ OLD CAMPAIGNS:  Audience = TARGETING (restrictive)
 PMax / NEW:     Audience = SIGNAL (hint; can serve outside)
 ```
 
-🧠 **MEMORIZE this distinction** — it's tested.
+🧠 **MEMORIZE this distinction**, it's tested.
 
 ---
 
@@ -78,7 +78,7 @@ PMax / NEW:     Audience = SIGNAL (hint; can serve outside)
 25–30s: CTA + URL overlay + brand reveal
 ```
 
-🚨 **NO logo intros** — they kill retention.
+🚨 **NO logo intros**, they kill retention.
 
 ---
 
@@ -96,9 +96,9 @@ PMax / NEW:     Audience = SIGNAL (hint; can serve outside)
 
 ## 📊 PMax Reports to Check Weekly
 
-1. **Insights tab** — what themes Google found
-2. **Asset Group performance** — Best/Good/Low ratings
-3. **Brand Search cannibalization** — compare brand campaign drops
+1. **Insights tab**, what themes Google found
+2. **Asset Group performance**, Best/Good/Low ratings
+3. **Brand Search cannibalization**, compare brand campaign drops
 
 ---
 
@@ -136,9 +136,9 @@ ALWAYS use 28-day click + view-through.
 ## ✏️ Quick Self-Check
 
 1. Difference between audience signal and audience targeting?
-2. Brand exclusions setting — when to set it?
+2. Brand exclusions setting, when to set it?
 3. Pricing model for skippable in-stream?
-4. Final URL Expansion — default state?
+4. Final URL Expansion, default state?
 5. The 5 hook patterns for short video?
 
 ---

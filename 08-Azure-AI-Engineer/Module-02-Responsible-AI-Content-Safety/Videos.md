@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Responsible AI & Content Safety
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result. The Microsoft Responsible AI talks change frequently — pick the most recent one (within the last 12 months) when results show.
+> **How to use:** Click any video card to search YouTube and watch the latest top result. The Microsoft Responsible AI talks change frequently, pick the most recent one (within the last 12 months) when results show.
 
 ## ⭐ Essential watching (~45 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Content Safety — full walkthrough</p>
+      <p class="vg-title">Azure AI Content Safety, full walkthrough</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 15 min · Text + image + Prompt Shields</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure OpenAI Content Filters — custom configurations</p>
+      <p class="vg-title">Azure OpenAI Content Filters, custom configurations</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 12 min · Foundry filter UI</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Injection — Attacks & Azure Defenses</p>
+      <p class="vg-title">Prompt Injection, Attacks & Azure Defenses</p>
       <p class="vg-creator">Microsoft Security</p>
       <span class="vg-duration">⏱ 14 min · Direct + indirect injection</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">PyRIT — Red-team your GenAI app</p>
+      <p class="vg-title">PyRIT, Red-team your GenAI app</p>
       <p class="vg-creator">Microsoft Security</p>
       <span class="vg-duration">⏱ 12 min · Open-source toolkit</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Fairlearn — assessing model bias</p>
+      <p class="vg-title">Fairlearn, assessing model bias</p>
       <p class="vg-creator">Microsoft Research</p>
       <span class="vg-duration">⏱ 25 min · Hands-on</span>
     </div>

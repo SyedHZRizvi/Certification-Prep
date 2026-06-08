@@ -58,7 +58,7 @@ Shopify ≈ 1/3 of Adobe Commerce at this stage.
 
 ---
 
-## 🚀 Shopify Stack — Memorize
+## 🚀 Shopify Stack, Memorize
 
 ```
 Liquid          → Template language
@@ -73,7 +73,7 @@ Shopify B2B     → B2B module (2023, expanded 2024)
 
 ---
 
-## 🏗️ Adobe Commerce Stack — Memorize
+## 🏗️ Adobe Commerce Stack, Memorize
 
 ```
 Magento Open Source → Free, GPL-3 (self-hosted)
@@ -151,13 +151,13 @@ Salesforce B2C Commerce Architect cert ($400, 65 Q, 105 min) tests this heavily.
 
 ## 🗓️ Key Dates
 
-- **2006** — Shopify founded; Liquid created
-- **2018** — Adobe acquired Magento ($1.68B)
-- **2020** — MACH Alliance founded
-- **2021** — Online Store 2.0; Adobe Commerce rebrand; Shopify Markets
-- **2022** — PCI-DSS v4.0 published; Shopify acquired Remix
-- **2023** — Hydrogen GA; Shopify B2B launched
-- **March 2025** — PCI-DSS v4.0 mandatory
+- **2006**, Shopify founded; Liquid created
+- **2018**, Adobe acquired Magento ($1.68B)
+- **2020**, MACH Alliance founded
+- **2021**, Online Store 2.0; Adobe Commerce rebrand; Shopify Markets
+- **2022**, PCI-DSS v4.0 published; Shopify acquired Remix
+- **2023**, Hydrogen GA; Shopify B2B launched
+- **March 2025**, PCI-DSS v4.0 mandatory
 
 ---
 
@@ -166,7 +166,7 @@ Salesforce B2C Commerce Architect cert ($400, 65 Q, 105 min) tests this heavily.
 1. Three architecture patterns? ___
 2. MACH stands for? ___
 3. Shopify Plus GMV sweet spot? ___
-4. PCI SAQ levels — A vs A-EP vs D? ___
+4. PCI SAQ levels, A vs A-EP vs D? ___
 5. Adobe Commerce headless framework? ___
 6. commercetools is what kind of platform? ___
 

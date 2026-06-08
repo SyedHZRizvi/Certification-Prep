@@ -1,6 +1,6 @@
 # ✏️ PMP Module 2 Quiz: People Domain
 
-> 18 questions. Aim 15/18. Most exam-relevant module — drill it.
+> 18 questions. Aim 15/18. Most exam-relevant module, drill it.
 
 ## Questions
 
@@ -125,10 +125,10 @@ C. Safety/security needs
 D. Belonging
 
 ### Q21. The PM senses growing tension as roles are clarified and members push back on each other's ideas. Best technique to FIRST apply:
-A. Forcing — pick the strongest opinion
-B. Withdrawing — let it cool
-C. Confronting/Problem-solving — bring parties together for a win-win
-D. Smoothing — minimize the differences
+A. Forcing, pick the strongest opinion
+B. Withdrawing, let it cool
+C. Confronting/Problem-solving, bring parties together for a win-win
+D. Smoothing, minimize the differences
 
 ### Q22. A stakeholder is currently aware of the project but actively opposes it. Their engagement level is:
 A. Unaware
@@ -247,7 +247,7 @@ Don't disempower; clarify.
 Maslow's hierarchy says lower needs (safety) must be addressed before higher motivators work. Address job security concerns first.
 
 ### Q21: **C. Confronting/Problem-solving**
-The PMP-2021 default for technical/role conflict is Confronting (problem-solving) — bring parties together for a win-win.
+The PMP-2021 default for technical/role conflict is Confronting (problem-solving), bring parties together for a win-win.
 
 ### Q22: **B. Resistant**
 The 5 engagement levels: Unaware, Resistant, Neutral, Supportive, Leading. Aware-but-opposes = Resistant.
@@ -271,7 +271,7 @@ Pull = receiver retrieves information from a shared repository (intranet, ShareP
 The PMP mindset is coach-first. Develop people; don't reassign or remove growth opportunities.
 
 ### Q29: **B. Created collaboratively by the team**
-The Team Charter is owned by the team — values, ground rules, and decision-making norms come from the people doing the work.
+The Team Charter is owned by the team, values, ground rules, and decision-making norms come from the people doing the work.
 
 ### Q30: **B. Listen privately, then facilitate jointly**
 Servant leadership applies: listen first to understand, then bring the parties together (Confronting) to resolve. HR escalation is not the first step.
@@ -339,7 +339,7 @@ D. Issue a team-wide reminder about expectations.
 
 ### Q33. Spotify (from the case study) walked back the squad model partly because cross-squad dependencies overwhelmed autonomy benefits. You are PM of a 60-person program with 6 squads and growing inter-squad coupling. Per PMBOK 7's Tailoring principle, which intervention is MOST likely to preserve agile values without sacrificing coordination? *(Evaluate)*
 A. Abandon agile entirely; revert to a Gantt-chart waterfall.
-B. Keep the squad model unchanged — coordination problems will self-resolve.
+B. Keep the squad model unchanged, coordination problems will self-resolve.
 C. Add a thin program-management layer (a "missions" overlay or release-train coordinator), publish explicit dependency-mapping rituals, and time-box the experiment to one quarter with measurable health metrics; revisit fit.
 D. Outsource the coordination to a Directive PMO.
 
@@ -350,7 +350,7 @@ C. Pick one engineer's position and move on.
 D. Tell them to figure it out themselves over the weekend.
 
 ### Q35. Your sponsor proposes tying engineer bonuses to individual velocity (story points completed). The team is high-trust, currently Performing, and self-organizing. Using McGregor's (1960) Theory Y AND Herzberg's (1959) two-factor theory, evaluate the proposal. *(Evaluate)*
-A. Accept — financial incentives always work.
+A. Accept, financial incentives always work.
 B. Push back: individual-velocity bonuses are a hygiene-factor manipulation that erodes Theory-Y trust; propose alternatives such as team-level recognition tied to delivered customer value, professional-growth budgets, or peer-recognition systems, and frame the pushback in business terms (velocity gaming, sub-optimization) to the sponsor.
 C. Implement quietly without telling the team.
 D. Accept but cap the bonus at $500 so it's "harmless."

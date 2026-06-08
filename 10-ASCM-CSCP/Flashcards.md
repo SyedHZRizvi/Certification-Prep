@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -335,7 +335,7 @@
 **Q:** Define backward vs forward vs horizontal integration.
 **A:** Backward = upstream (buy supplier). Forward = downstream (own customer channel). Horizontal = competitor at same stage.
 
-**Q:** Outsourcing vs offshoring — what's the difference?
+**Q:** Outsourcing vs offshoring, what's the difference?
 **A:** Outsourcing = activity to an external firm (could be domestic or foreign). Offshoring = activity to a foreign country (could be in-house or external).
 
 **Q:** Nearshoring vs reshoring?
@@ -361,7 +361,7 @@
 **A:** Independent demand.
 
 **Q:** Which type of demand is calculated, not forecast?
-**A:** Dependent demand — calculated via MRP from the BOM.
+**A:** Dependent demand, calculated via MRP from the BOM.
 
 **Q:** Simple exponential smoothing formula.
 **A:** F(t+1) = α·A(t) + (1−α)·F(t), where 0 ≤ α ≤ 1.
@@ -385,13 +385,13 @@
 **A:** TS = Σ(A − F) / MAD. Investigate when |TS| > 4; replace model when > 6.
 
 **Q:** What is CPFR and what is its primary benefit?
-**A:** Collaborative Planning, Forecasting and Replenishment. One shared forecast across partners — dampens bullwhip.
+**A:** Collaborative Planning, Forecasting and Replenishment. One shared forecast across partners, dampens bullwhip.
 
 **Q:** Difference between CPFR and VMI?
 **A:** CPFR = joint planning by partners. VMI = supplier-executed replenishment using shared POS data.
 
 **Q:** What is demand sensing?
-**A:** Short-horizon forecasting (hours/days) using real-time POS, weather, social, and IoT signals — complements statistical forecasts.
+**A:** Short-horizon forecasting (hours/days) using real-time POS, weather, social, and IoT signals, complements statistical forecasts.
 
 **Q:** Describe Delphi technique.
 **A:** Anonymous iterative expert rounds with feedback to avoid groupthink.
@@ -418,7 +418,7 @@
 **Q:** What is the planning time fence (PTF)?
 **A:** The horizon inside which MPS changes require master scheduler intervention; outside PTF the system replans freely.
 
-**Q:** RCCP vs CRP — what's the difference?
+**Q:** RCCP vs CRP, what's the difference?
 **A:** RCCP validates MPS at key work centers; CRP validates MRP at every work center using routings.
 
 **Q:** Name the 3 aggregate planning strategies.
@@ -496,7 +496,7 @@
 **A:** For strategic / custom items requiring deep collaboration; or when supplier base is small or relationship matters.
 
 **Q:** What does BATNA stand for?
-**A:** Best Alternative To a Negotiated Agreement — your walk-away option. Strong BATNA = strong negotiating leverage.
+**A:** Best Alternative To a Negotiated Agreement, your walk-away option. Strong BATNA = strong negotiating leverage.
 
 **Q:** Name the 5 levels of SRM maturity.
 **A:** Adversarial → Cooperative → Collaborative → Strategic alliance → Vertical integration.
@@ -505,7 +505,7 @@
 **A:** Fixed-price = supplier bears risk (use when scope is clear). Cost-plus = buyer bears risk (use when scope is evolving).
 
 **Q:** What does SLA stand for?
-**A:** Service-Level Agreement — defines performance commitments and penalties.
+**A:** Service-Level Agreement, defines performance commitments and penalties.
 
 **Q:** What does MFN (Most Favored Nation) clause guarantee?
 **A:** The buyer receives pricing at least as good as the supplier gives any other customer.
@@ -539,10 +539,10 @@
 **A:** On-time + in-full + undamaged + correct documentation. The strictest service KPI.
 
 **Q:** What is a TEU?
-**A:** Twenty-foot Equivalent Unit — the ocean container standard size.
+**A:** Twenty-foot Equivalent Unit, the ocean container standard size.
 
 **Q:** What is a ULD?
-**A:** Unit Load Device — air cargo container used inside aircraft.
+**A:** Unit Load Device, air cargo container used inside aircraft.
 
 **Q:** Reverse logistics belongs to which SCOR process?
 **A:** Return.
@@ -564,10 +564,10 @@
 **A:** EXW, FCA, CPT, CIP, DAP, DPU, DDP.
 
 **Q:** Under EXW, what is the seller's responsibility?
-**A:** Make goods available at the seller's premises — the absolute minimum. Buyer handles export clearance, freight, and import.
+**A:** Make goods available at the seller's premises, the absolute minimum. Buyer handles export clearance, freight, and import.
 
 **Q:** Under DDP, what is the seller's responsibility?
-**A:** Everything, including import duties — the maximum.
+**A:** Everything, including import duties, the maximum.
 
 **Q:** Difference between CFR and CIF?
 **A:** CIF adds insurance (minimum Institute Cargo Clause C).
@@ -582,7 +582,7 @@
 **A:** 6 digits globally; countries extend to 10 for national tariff lines.
 
 **Q:** What does UCP 600 govern?
-**A:** Uniform Customs and Practice for Documentary Credits — ICC rules for letters of credit.
+**A:** Uniform Customs and Practice for Documentary Credits, ICC rules for letters of credit.
 
 **Q:** Name the parties to a letter of credit.
 **A:** Applicant (buyer), beneficiary (seller), issuing bank, advising bank, confirming bank (optional), negotiating bank.
@@ -594,7 +594,7 @@
 **A:** Temporary duty-free admission of goods (trade-show samples, professional equipment) for up to 1 year in 80+ countries.
 
 **Q:** What is an FTZ?
-**A:** Free Trade Zone — a designated area where goods can be imported, stored, processed without immediate duty.
+**A:** Free Trade Zone, a designated area where goods can be imported, stored, processed without immediate duty.
 
 **Q:** Best FX hedge for a known-date, known-amount foreign payable?
 **A:** Forward contract (lock today's rate for the future date).
@@ -613,13 +613,13 @@
 **A:** Scope 1 = direct (owned sources). Scope 2 = purchased energy. Scope 3 = value-chain emissions (suppliers, commute, end-of-life).
 
 **Q:** Which scope is usually the biggest?
-**A:** Scope 3 — 70-90% of most companies' footprint.
+**A:** Scope 3, 70-90% of most companies' footprint.
 
 **Q:** What does ISO 14001 certify?
 **A:** Environmental management systems (EMS).
 
 **Q:** What does ISO 31000 cover?
-**A:** Risk management — provides a process for identifying, analyzing, evaluating, treating, and monitoring risks.
+**A:** Risk management, provides a process for identifying, analyzing, evaluating, treating, and monitoring risks.
 
 **Q:** Name the 4 T's of risk treatment.
 **A:** Tolerate (accept), Treat (mitigate), Transfer, Terminate (avoid).
@@ -640,7 +640,7 @@
 **A:** UK Modern Slavery Act 2015, US UFLPA (Uyghur Forced Labor Prevention Act), EU CSDDD (Corporate Sustainability Due Diligence Directive).
 
 **Q:** What does the SBTi validate?
-**A:** Science-Based Targets initiative — validates net-zero targets aligned with climate science.
+**A:** Science-Based Targets initiative, validates net-zero targets aligned with climate science.
 
 **Q:** Name the 5 functions of NIST CSF.
 **A:** Identify, Protect, Detect, Respond, Recover.
@@ -659,7 +659,7 @@
 **A:** Define, Measure, Analyze, Improve, Control.
 
 **Q:** Name the 5 phases of DMADV.
-**A:** Define, Measure, Analyze, Design, Verify (used for Design for Six Sigma — DFSS).
+**A:** Define, Measure, Analyze, Design, Verify (used for Design for Six Sigma, DFSS).
 
 **Q:** What defect rate does Six Sigma target?
 **A:** 3.4 defects per million opportunities (DPMO).
@@ -671,7 +671,7 @@
 **A:** 1. Identify the constraint, 2. Exploit it, 3. Subordinate everything else, 4. Elevate, 5. Repeat.
 
 **Q:** Define throughput in TOC.
-**A:** The rate at which the system generates money through sales — revenue minus truly variable costs.
+**A:** The rate at which the system generates money through sales, revenue minus truly variable costs.
 
 **Q:** What does 5S stand for?
 **A:** Sort, Set in order, Shine, Standardize, Sustain.
@@ -680,13 +680,13 @@
 **A:** OEE = Availability × Performance × Quality. World-class ≥ 85%.
 
 **Q:** What does SMED mean?
-**A:** Single-Minute Exchange of Die — quick changeover technique.
+**A:** Single-Minute Exchange of Die, quick changeover technique.
 
 **Q:** What is Poka-yoke?
-**A:** Mistake-proofing — design that prevents errors before they happen.
+**A:** Mistake-proofing, design that prevents errors before they happen.
 
 **Q:** What is Jidoka?
-**A:** Autonomation — stop the line automatically when a defect is detected.
+**A:** Autonomation, stop the line automatically when a defect is detected.
 
 **Q:** What is Andon?
 **A:** Visual signal (light/board) used at the line to flag problems immediately.
@@ -716,12 +716,12 @@
 1. **Daily review**: 15 minutes a day beats 4 hours once a week.
 2. **Use the section dropdown** above to drill the area you're weakest in.
 3. **Mix study with practice exams**: After each section feels solid, do 25 Q's from the relevant Module Quiz.
-4. **Write the formulas by hand** — EOQ, SS, OEE, cash-to-cash, RPN, MAD/MAPE/TS — repeatedly. Muscle memory wins on the day.
-5. **Speak the definitions aloud** — APICS dictionary phrasing appears verbatim on the exam.
+4. **Write the formulas by hand** EOQ, SS, OEE, cash-to-cash, RPN, MAD/MAPE/TS repeatedly. Muscle memory wins on the day.
+5. **Speak the definitions aloud**, APICS dictionary phrasing appears verbatim on the exam.
 
 ## 📚 BEFORE THE EXAM
 
 - Complete this entire deck at least twice
 - Take all 3 practice exams
 - Re-read each module's Cheat-Sheet.md the day before
-- Hydrate, sleep 8 hours, eat balanced — exam day fuel matters
+- Hydrate, sleep 8 hours, eat balanced, exam day fuel matters

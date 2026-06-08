@@ -136,7 +136,7 @@ Response with citations
 
 ## ✏️ Self-Check
 
-1. RAG vs fine-tune — when each? ___
+1. RAG vs fine-tune, when each? ___
 2. Tools + APIs + KB orchestration → ___
 3. Default KB vector store? ___
 4. Block specific topics → ___

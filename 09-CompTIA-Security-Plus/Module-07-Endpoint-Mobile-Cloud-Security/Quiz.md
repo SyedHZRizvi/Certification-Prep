@@ -196,7 +196,7 @@ D. Community cloud
 
 ### Q24 (Scenario). Your company's marketing team starts using a new SaaS analytics tool, paid by personal credit card, no procurement involvement. The PRIMARY risk is: *(Analyze)*
 A. Vendor lock-in
-B. Shadow IT — no visibility, no policy enforcement, possible data leakage
+B. Shadow IT, no visibility, no policy enforcement, possible data leakage
 C. Cost overruns
 D. Slow performance
 
@@ -204,7 +204,7 @@ D. Slow performance
 
 ### Q25 (Scenario). An AWS IAM role attached to a Lambda function has `s3:*` on `Resource: *`. The BEST remediation is: *(Analyze)*
 A. Delete the role
-B. Apply least privilege — restrict to specific bucket + actions; use CIEM to keep it right-sized
+B. Apply least privilege, restrict to specific bucket + actions; use CIEM to keep it right-sized
 C. Replace with root credentials
 D. Disable CloudTrail
 
@@ -248,7 +248,7 @@ The provider handles the app itself; you handle who can access and what they do.
 The shared model puts data-classification and access-controls on the customer.
 
 ### Q10: **C. CASB**
-Cloud Access Security Broker — policy enforcement + shadow-IT discovery.
+Cloud Access Security Broker, policy enforcement + shadow-IT discovery.
 
 ### Q11: **B. Audits cloud configs**
 CSPM continuously checks for drift/misconfig.
@@ -257,7 +257,7 @@ CSPM continuously checks for drift/misconfig.
 ZTNA replaces broad-network VPN access with identity-aware per-app access.
 
 ### Q13: **B. Host OS kernel**
-Containers share the kernel — a kernel escape compromises the host.
+Containers share the kernel, a kernel escape compromises the host.
 
 ### Q14: **B. Running as root**
 Privileged containers + kernel exploits = host compromise.
@@ -320,4 +320,4 @@ The textbook OT-compensating-control answer.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Security Operations](../Module-08-Security-Operations/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Security Operations](../Module-08-Security-Operations/Reading.md)

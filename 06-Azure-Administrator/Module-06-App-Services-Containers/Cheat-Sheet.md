@@ -115,7 +115,7 @@ Often **wrong**:
 1. Lowest tier for slots? ___
 2. Tier needed for private endpoint on App Service? ___
 3. ACI restart policies? ___
-4. HPA vs cluster autoscaler — which scales what? ___
+4. HPA vs cluster autoscaler, which scales what? ___
 5. RWX-capable AKS storage driver? ___
 
 ---

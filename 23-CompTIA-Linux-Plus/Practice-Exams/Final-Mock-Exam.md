@@ -1,4 +1,4 @@
-# 🎓 Final Mock Exam — CompTIA Linux+ (XK0-005)
+# 🎓 Final Mock Exam, CompTIA Linux+ (XK0-005)
 
 > **Conditions:** Set a 90-minute timer. **90 questions.** Real exam length, real exam time. No notes. No looking up.
 > **Pass mark:** 720/900 (~80%). Aim for 85%+ here so you have margin on exam day.
@@ -8,7 +8,7 @@
 > - System Management (Modules 1, 2, 3, 7): 32% → ~29 questions
 > - Security (Modules 5, 8): 21% → ~19 questions
 > - Scripting & Automation (Module 4): 19% → ~17 questions
-> - Troubleshooting (Modules 1, 6, 7 — woven through all): 28% → ~25 questions
+> - Troubleshooting (Modules 1, 6, 7, woven through all): 28% → ~25 questions
 > - 4-5 multi-part scenario PBQs included
 
 ---
@@ -215,7 +215,7 @@ D. `like`
 
 ### 34. cron's PATH at script execution:
 A. The user's full PATH
-B. Minimal (`/usr/bin:/bin`) — use absolute paths
+B. Minimal (`/usr/bin:/bin`), use absolute paths
 C. `/`
 D. Inherited from systemd
 
@@ -598,7 +598,7 @@ D. `firewall-cmd --add-port=2222; restart sshd`
 - (a) Inode exhaustion: most common "free but full" symptom
 - (b) udev: kernel saw it (dmesg) but node missing → re-emit events
 - (c) Kernel upgrade often regenerates initramfs, but if it doesn't (or the LUKS/crypttab changed), boot fails to unlock
-- (d) StrictModes default yes — perm rejection
+- (d) StrictModes default yes, perm rejection
 
 ### Why #83 = B
 The canonical SELinux fix pattern. `chmod 777` doesn't bypass MAC. `setenforce 0` is the wrong-answer pattern. Steps: ausearch → semanage fcontext → restorecon.
@@ -620,13 +620,13 @@ Refer to the relevant module's Quiz for full discussion. The key patterns to int
 
 ### The 7 "exam pattern" wrong answers to recognize on sight:
 
-1. **"`setenforce 0`"** as the SELinux fix — almost always wrong
-2. **"`chmod 777`"** as the permission fix — almost always wrong
-3. **"`for line in $(cat file)`"** for reading lines — wrong
-4. **"`apt update`"** to upgrade packages — wrong (that REFRESHES metadata; `upgrade` upgrades)
-5. **"`usermod -G`"** without `-a` to add to a group — wrong
-6. **"`vi /etc/sudoers`"** instead of `visudo` — wrong
-7. **"`gpgcheck=0`"** to bypass GPG errors — wrong
+1. **"`setenforce 0`"** as the SELinux fix, almost always wrong
+2. **"`chmod 777`"** as the permission fix, almost always wrong
+3. **"`for line in $(cat file)`"** for reading lines, wrong
+4. **"`apt update`"** to upgrade packages, wrong (that REFRESHES metadata; `upgrade` upgrades)
+5. **"`usermod -G`"** without `-a` to add to a group, wrong
+6. **"`vi /etc/sudoers`"** instead of `visudo`, wrong
+7. **"`gpgcheck=0`"** to bypass GPG errors, wrong
 
 ### The 7 "exam pattern" right answers:
 
@@ -644,11 +644,11 @@ Refer to the relevant module's Quiz for full discussion. The key patterns to int
 
 | Score | Verdict | Action |
 |-------|---------|--------|
-| 81–90 | 🏆 90%+ — you're ready. Book the real exam. | Light review only, sleep well |
-| 72–80 | ✅ 80–89% — passing-band performance | One more pass of weakest modules |
-| 63–71 | ⚠️ 70–79% — borderline | Don't book yet; re-study weak areas, retake in 5 days |
-| 54–62 | 🔁 60–69% — not ready | Restart 3 weakest modules; retake in 1 week |
-| <54 | 🚨 <60% — at risk | Re-read all 8 modules; redo Practice Exams 1 & 2 first |
+| 81–90 | 🏆 90%+, you're ready. Book the real exam. | Light review only, sleep well |
+| 72–80 | ✅ 80–89%, passing-band performance | One more pass of weakest modules |
+| 63–71 | ⚠️ 70–79%, borderline | Don't book yet; re-study weak areas, retake in 5 days |
+| 54–62 | 🔁 60–69%, not ready | Restart 3 weakest modules; retake in 1 week |
+| <54 | 🚨 <60%, at risk | Re-read all 8 modules; redo Practice Exams 1 & 2 first |
 
 ---
 

@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Guardrails for Amazon Bedrock — Full Walkthrough</p>
+      <p class="vg-title">Guardrails for Amazon Bedrock, Full Walkthrough</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 18 min · PII, denied topics, content filters, grounding</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker Clarify — Bias &amp; Explainability</p>
+      <p class="vg-title">SageMaker Clarify, Bias &amp; Explainability</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 15 min · Pre/post-training bias + SHAP</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AIF-C01 — Responsible AI Domain Walkthrough</p>
+      <p class="vg-title">AIF-C01, Responsible AI Domain Walkthrough</p>
       <p class="vg-creator">ExamPro / Stephane Maarek</p>
       <span class="vg-duration">⏱ 14 min · Exam-aligned recap</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Amazon Augmented AI (A2I) — Human In The Loop</p>
+      <p class="vg-title">Amazon Augmented AI (A2I), Human In The Loop</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 12 min · Workforce + review workflows</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SageMaker Model Cards — Standardized Model Docs</p>
+      <p class="vg-title">SageMaker Model Cards, Standardized Model Docs</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 10 min · What goes in a model card</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">EU AI Act — Risk Categories Explained</p>
+      <p class="vg-title">EU AI Act, Risk Categories Explained</p>
       <p class="vg-creator">European Commission / DLA Piper</p>
       <span class="vg-duration">⏱ 20 min · Prohibited / high-risk / limited / minimal</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Red-Teaming LLMs — Finding Failures Before Attackers Do</p>
+      <p class="vg-title">Red-Teaming LLMs, Finding Failures Before Attackers Do</p>
       <p class="vg-creator">Anthropic / DeepLearning.AI</p>
       <span class="vg-duration">⏱ 25 min · Robust testing for safety</span>
     </div>

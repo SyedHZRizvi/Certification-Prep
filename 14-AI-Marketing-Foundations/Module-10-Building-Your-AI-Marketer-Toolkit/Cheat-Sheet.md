@@ -93,7 +93,7 @@ ASSET LIBRARY
 
 ## 🚨 Common Traps
 
-- ❌ More tools = more capability (no — more switching cost)
+- ❌ More tools = more capability (no, more switching cost)
 - ❌ Free tier forever (eventually throttles)
 - ❌ "Document later" (compounds; start month 1)
 - ❌ Confusing CDP with CRM with ESP

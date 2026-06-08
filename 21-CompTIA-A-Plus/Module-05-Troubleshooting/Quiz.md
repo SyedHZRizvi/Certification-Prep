@@ -34,7 +34,7 @@ D. Replace the PSU, then RAM, then GPU
 
 ### Q4. A user's `ipconfig /all` shows IP address 169.254.42.10. This indicates: *(Understand)*
 A. The PC is connected to a public IP
-B. APIPA — the PC failed to reach a DHCP server
+B. APIPA, the PC failed to reach a DHCP server
 C. The PC has been manually configured by IT
 D. The default gateway is wrong
 
@@ -50,7 +50,7 @@ D. The cable is damaged
 
 ### Q6. Continuous beeping at boot on a desktop is MOST commonly: *(Apply)*
 A. CPU failure
-B. RAM issue — reseat or test
+B. RAM issue, reseat or test
 C. The hard drive needs defragmentation
 D. Windows installer running
 
@@ -58,7 +58,7 @@ D. Windows installer running
 
 ### Q7. A RAID 5 array with 6 disks is rebuilding after a disk failure. During the rebuild, a second disk fails. What is the array's state? *(Analyze)*
 A. Fully functional
-B. Lost — RAID 5 only tolerates 1 disk failure; second failure during rebuild = total data loss
+B. Lost, RAID 5 only tolerates 1 disk failure; second failure during rebuild = total data loss
 C. Self-healing
 D. Still degraded but recoverable
 
@@ -89,7 +89,7 @@ D. arp -a
 ---
 
 ### Q11. SMART data reports a rising "Reallocated Sector Count" on a 5-year-old HDD. The MOST appropriate action: *(Apply)*
-A. Ignore — it's normal
+A. Ignore, it's normal
 B. Back up immediately and replace the drive proactively
 C. Defragment to fix
 D. Reformat to "heal" the drive
@@ -114,7 +114,7 @@ D. Reboot the DNS server
 
 ### Q14. A 3rd-floor office Wi-Fi is slow only at lunchtime. Most likely: *(Analyze)*
 A. The router is broken
-B. AP overloaded — many simultaneous clients during lunch + 2.4 GHz interference
+B. AP overloaded, many simultaneous clients during lunch + 2.4 GHz interference
 C. DNS is broken
 D. The cable run is too long
 
@@ -138,7 +138,7 @@ D. Defragment the disk
 
 ### Q17. A "click of death" sound from an HDD indicates: *(Remember)*
 A. Normal operation
-B. Failing read/write head — back up data immediately
+B. Failing read/write head, back up data immediately
 C. Cooling fan needs lubrication
 D. The PSU is dying
 
@@ -146,13 +146,13 @@ D. The PSU is dying
 
 ### Q18. A user reports their wired connection is now 100 Mbps instead of 1 Gbps. The MOST likely cause: *(Analyze)*
 A. The ISP downgraded the plan
-B. Cable issue — likely a bad pair (gigabit needs all 4 pairs; 100M only needs 2) or wrong patch panel category
+B. Cable issue, likely a bad pair (gigabit needs all 4 pairs; 100M only needs 2) or wrong patch panel category
 C. The motherboard is dying
 D. DNS is wrong
 
 ---
 
-### Q19. A PC won't power on at all — no fans, no LEDs. The FIRST three things to check: *(Apply)*
+### Q19. A PC won't power on at all, no fans, no LEDs. The FIRST three things to check: *(Apply)*
 A. Replace motherboard, then CPU, then RAM
 B. PSU switch on, wall outlet works, front-panel power connector seated
 C. Reformat the SSD
@@ -202,7 +202,7 @@ D. Normal POST
 
 ### Q25. A new technician suggests "replacing the motherboard" as the first step for a system that won't POST. The senior tech responds: *(Evaluate)*
 A. "Yes, motherboards are usually wrong"
-B. "Almost never first — start with PSU, RAM reseat, and cheap-fast tests before swapping expensive parts"
+B. "Almost never first, start with PSU, RAM reseat, and cheap-fast tests before swapping expensive parts"
 C. "Reformat the SSD instead"
 D. "Reinstall Windows first"
 
@@ -211,10 +211,10 @@ D. "Reinstall Windows first"
 ### Q26. Design challenge: A small business runs a critical SQL Server on a 4-disk array. They need: (a) survives 2 simultaneous disk failures, (b) decent write performance, (c) tolerant of long rebuilds. The BEST RAID choice is: *(Create)*
 
 > *Create-level note:* you are weighting redundancy vs performance vs rebuild safety.
-A. RAID 0 — speed first
-B. RAID 5 — best capacity
-C. RAID 6 with 4 disks — survives 2 failures, dual parity, slower writes but acceptable for SQL
-D. RAID 10 with 4 disks — survives 1 failure per mirror, but only specific 2-disk patterns
+A. RAID 0, speed first
+B. RAID 5, best capacity
+C. RAID 6 with 4 disks, survives 2 failures, dual parity, slower writes but acceptable for SQL
+D. RAID 10 with 4 disks, survives 1 failure per mirror, but only specific 2-disk patterns
 
 ---
 
@@ -229,7 +229,7 @@ Step 4 (after testing the theory). Documentation comes in step 6.
 ### Q3: **B. Monitor + cable + input, then RAM, then GPU**
 Cheapest fastest checks first. Standard methodology.
 
-### Q4: **B. APIPA — DHCP failure**
+### Q4: **B. APIPA, DHCP failure**
 169.254.0.0/16 is the APIPA self-assigned range when Windows can't reach a DHCP server.
 
 ### Q5: **B. DNS resolution is failing**
@@ -238,7 +238,7 @@ You can reach an IP (routing OK) but not by name → DNS is broken.
 ### Q6: **B. RAM issue**
 Continuous beeps almost universally = RAM. Reseat, then test individual sticks.
 
-### Q7: **B. Lost — RAID 5 only tolerates 1 disk failure**
+### Q7: **B. Lost, RAID 5 only tolerates 1 disk failure**
 A second failure during rebuild = total loss in RAID 5. This is the canonical RAID 5 risk.
 
 ### Q8: **B. Cable tester**
@@ -268,10 +268,10 @@ RAID 6's whole reason to exist. Slower writes but much safer than RAID 5 at larg
 ### Q16: **B. Run MemTest86**
 MEMORY_MANAGEMENT BSOD strongly suggests RAM. Test before replacing.
 
-### Q17: **B. Failing read/write head — back up**
+### Q17: **B. Failing read/write head, back up**
 The mechanical click is the head trying to position over the platter and failing. Back up immediately.
 
-### Q18: **B. Cable issue — bad pair, wrong category**
+### Q18: **B. Cable issue, bad pair, wrong category**
 Gigabit needs all 4 pairs; 100M needs 2. A damaged cable can downgrade. Cat 5 (not 5e) can do 100M but not 1G.
 
 ### Q19: **B. PSU switch, outlet, front-panel power connector**
@@ -290,9 +290,9 @@ The well-known "RAID 5 is dead" argument. At 18 TB drives, rebuilds take 40+ hou
 Can ping gateway = L3 to it works. Cannot ping internet = upstream broken.
 
 ### Q24: **B. Video / GPU**
-AMI 1 long + 3 short typically indicates video. (Other BIOS vendors differ — always consult the manual.)
+AMI 1 long + 3 short typically indicates video. (Other BIOS vendors differ, always consult the manual.)
 
-### Q25: **B. "Almost never first — cheap-fast tests first"**
+### Q25: **B. "Almost never first, cheap-fast tests first"**
 Standard troubleshooting wisdom. Motherboards are expensive and rarely the issue.
 
 ### Q26: **C. RAID 6 with 4 disks**
@@ -322,4 +322,4 @@ Survives 2 simultaneous failures. Only 50% capacity efficient with 4 disks but m
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Printers](../Module-06-Printers/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Printers](../Module-06-Printers/Reading.md)

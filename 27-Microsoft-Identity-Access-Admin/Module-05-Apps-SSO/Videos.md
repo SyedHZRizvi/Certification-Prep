@@ -18,7 +18,7 @@
 
 # 🎥 Module 5 Videos: Application Registration & SSO
 
-> **How to use:** Click any card to open a YouTube search — pick the top current result. Follow along by registering one OIDC app and one SAML gallery app in your dev tenant.
+> **How to use:** Click any card to open a YouTube search, pick the top current result. Follow along by registering one OIDC app and one SAML gallery app in your dev tenant.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -37,7 +37,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">SAML SSO Configuration End-to-End</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 18 min · Identifier, Reply URL, attributes</span>
     </div>
   </a>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Illicit OAuth Consent Attack — Mitigation</p>
+      <p class="vg-title">Illicit OAuth Consent Attack, Mitigation</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 16 min · The CFO-wire-fraud attack pattern</span>
     </div>
@@ -110,7 +110,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">SAML Troubleshooting Common Errors</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 13 min · Audience URI, cert, reply URL</span>
     </div>
   </a>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Defender for Cloud Apps — OAuth App Governance</p>
+      <p class="vg-title">Defender for Cloud Apps, OAuth App Governance</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 15 min · Risky-app detection</span>
     </div>
@@ -133,7 +133,7 @@
 |---------|-----|
 | **John Savill** | Deep, technically rigorous app + OAuth content. |
 | **Andy Malone MVP** | M365 admin perspective. |
-| **Dean Cefola — Azure Academy** | Practical SSO labs. |
+| **Dean Cefola, Azure Academy** | Practical SSO labs. |
 | **Microsoft Mechanics** | Official launches; current features. |
 | **Concepts Work** | Newer SC-300 channel. |
 

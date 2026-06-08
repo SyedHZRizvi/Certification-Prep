@@ -1,11 +1,11 @@
 # Module 4: Natural Language Processing 🗣️
 
-> **Why this module matters:** NLP is 15–20% of AI-102 and is split across three services — Azure AI Language, Translator, and Speech. The exam tests each by SDK call shape, by feature name, and by service selection. Don't mix them up.
+> **Why this module matters:** NLP is 15–20% of AI-102 and is split across three services, Azure AI Language, Translator, and Speech. The exam tests each by SDK call shape, by feature name, and by service selection. Don't mix them up.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The Azure AI resource model + auth — [Module 1](../Module-01-AI-Services-Overview/Reading.md)
-> - Responsible-AI principles (PII Detection sits here for a reason) — [Module 2](../Module-02-Responsible-AI-Content-Safety/Reading.md)
-> - Optional but helpful: the attention/transformer mental model from Vaswani et al. (2017), *"Attention Is All You Need"*, NeurIPS — every modern NLP feature in this module descends from that line of work.
+> - The Azure AI resource model + auth, [Module 1](../Module-01-AI-Services-Overview/Reading.md)
+> - Responsible-AI principles (PII Detection sits here for a reason), [Module 2](../Module-02-Responsible-AI-Content-Safety/Reading.md)
+> - Optional but helpful: the attention/transformer mental model from Vaswani et al. (2017), *"Attention Is All You Need"*, NeurIPS, every modern NLP feature in this module descends from that line of work.
 >
 > If you've never written a Python function that calls an HTTP API, walk through Module 1's snippets first.
 
@@ -24,7 +24,7 @@ That's literally the AI-102 NLP triad: **Language** (text understanding), **Tran
 
 ---
 
-## 🗣️ Azure AI Language — One Service, Many Features
+## 🗣️ Azure AI Language, One Service, Many Features
 
 Azure AI Language is what you used to call Text Analytics + LUIS + QnA Maker, all merged. One endpoint, many features, mostly through **`analyze_text`** or **`begin_analyze_actions`**.
 
@@ -111,7 +111,7 @@ Same pattern as Custom Vision:
 
 Training data lives in **Azure Storage** (BYOS) and is referenced from your Language resource.
 
-### CLU vs Question Answering — the chatbot brains
+### CLU vs Question Answering, the chatbot brains
 
 | | CLU | Question Answering |
 |---|---|---|
@@ -132,7 +132,7 @@ A standalone service (kind: `TextTranslation`) for multilingual translation.
 | Capability | What it does |
 |---|---|
 | **Text Translation** | Translate strings between 100+ languages |
-| **Document Translation** | Translate whole files (PDF, DOCX, PPTX) preserving format — uses Azure Storage |
+| **Document Translation** | Translate whole files (PDF, DOCX, PPTX) preserving format, uses Azure Storage |
 | **Custom Translator** | Train your own translation model on parallel domain corpora |
 | **Transliteration** | Convert script (e.g. Japanese → Latin) without translating meaning |
 | **Detection** | Detect input language (similar to Language service) |
@@ -212,7 +212,7 @@ synth.speak_text_async("Hello, this is Jenny.").get()
 
 ### Voices and SSML
 
-Microsoft's **Neural Voices** (e.g. `en-US-JennyNeural`, `es-MX-DaliaNeural`) sound human. **Custom Neural Voice** lets you train a voice from recordings — **Limited Access**.
+Microsoft's **Neural Voices** (e.g. `en-US-JennyNeural`, `es-MX-DaliaNeural`) sound human. **Custom Neural Voice** lets you train a voice from recordings, **Limited Access**.
 
 You can shape voice output with **SSML** (Speech Synthesis Markup Language):
 
@@ -231,15 +231,15 @@ SSML controls **rate**, **pitch**, **volume**, **breaks**, **pronunciation**, **
 
 | Custom thing | What you train |
 |---|---|
-| **Custom Speech (acoustic + language model)** | Improve transcription on your audio domain (noisy factory, medical jargon) — upload audio + transcripts |
+| **Custom Speech (acoustic + language model)** | Improve transcription on your audio domain (noisy factory, medical jargon), upload audio + transcripts |
 | **Custom Pronunciation** | Phonetic spelling for unusual words |
-| **Custom Neural Voice (CNV)** | Train a unique speaker voice — **Limited Access** |
-| **Voice Talent attestation** | Required when training CNV — voice talent must consent on recording |
+| **Custom Neural Voice (CNV)** | Train a unique speaker voice, **Limited Access** |
+| **Voice Talent attestation** | Required when training CNV, voice talent must consent on recording |
 
 ### Real-time vs Batch transcription
 
-- **Real-time** — SDK call, streams audio, low latency, ~30 minutes max
-- **Batch transcription (REST)** — upload audio files in Azure Storage, async job, ideal for hours of audio
+- **Real-time**, SDK call, streams audio, low latency, ~30 minutes max
+- **Batch transcription (REST)**, upload audio files in Azure Storage, async job, ideal for hours of audio
 
 ### Speech translation
 
@@ -282,22 +282,22 @@ print(result.translations["es"])
 |---|---|
 | "Translator and Speech translation are the same" | Translator = text in/text out. Speech translation = audio in/text out |
 | "PII detection only catches names" | It catches names, addresses, SSNs, credit cards, phone numbers, dates of birth, etc. (configurable categories) |
-| "CLU replaces QnA Maker" | No — **CLU replaces LUIS**, **Question Answering replaces QnA Maker** |
+| "CLU replaces QnA Maker" | No, **CLU replaces LUIS**, **Question Answering replaces QnA Maker** |
 | "TTS only has 5 voices" | 400+ neural voices across 140 locales |
 | "Custom Speech requires CNV approval" | CNV is Limited Access; Custom Speech (transcription) is not |
-| "SSML is optional" | You always send SSML under the hood — the SDK builds it from text+config |
-| "Translator doesn't need a region header" | It does — `Ocp-Apim-Subscription-Region` |
+| "SSML is optional" | You always send SSML under the hood, the SDK builds it from text+config |
+| "Translator doesn't need a region header" | It does, `Ocp-Apim-Subscription-Region` |
 
 ---
 
 ## 🚨 Exam Traps
 
-1. **CLU vs LUIS naming.** LUIS is retired — pick CLU for new projects.
+1. **CLU vs LUIS naming.** LUIS is retired, pick CLU for new projects.
 2. **QnA Maker vs Question Answering.** QnA Maker is retired.
 3. **Translator region header** is required for global resources.
 4. **Document Translation is async**, returns operation status; not a synchronous call.
 5. **Custom Neural Voice** requires both Limited Access approval AND voice talent attestation.
-6. **Abstractive summarization** can hallucinate — extractive is safer when traceability matters.
+6. **Abstractive summarization** can hallucinate, extractive is safer when traceability matters.
 7. **Speech-to-text** has multiple flavors: real-time, batch (REST), Whisper (Azure OpenAI). Know which fits the scenario.
 
 ---
@@ -312,7 +312,7 @@ print(result.translations["es"])
 | **PII Detection** | Finds & redacts personally identifiable info |
 | **Extractive Summarization** | Picks key sentences from source |
 | **Abstractive Summarization** | Generates new summary sentences (LLM-backed) |
-| **CLU** | Conversational Language Understanding — intent + entity (replaces LUIS) |
+| **CLU** | Conversational Language Understanding, intent + entity (replaces LUIS) |
 | **Question Answering** | KB-based Q&A in Language service (replaces QnA Maker) |
 | **Language Studio** | Portal UI for training custom Language models |
 | **Translator** | Standalone service for text/document/custom translation |
@@ -322,38 +322,38 @@ print(result.translations["es"])
 | **Text-to-Speech (TTS)** | Synthesize audio from text |
 | **Neural Voice** | High-quality TTS voice (e.g. JennyNeural) |
 | **Custom Neural Voice** | Train your own brand voice (Limited Access) |
-| **SSML** | Markup for TTS — rate, pitch, breaks, styles |
+| **SSML** | Markup for TTS, rate, pitch, breaks, styles |
 | **Real-time vs Batch transcription** | SDK streaming vs REST async file job |
 | **Speech Translation** | One Speech call that recognizes + translates audio |
 | **Speaker Recognition** | Verify or identify a speaker (Limited Access) |
 
 ---
 
-## 📖 Case Study — Walmart "Sparky" Shopping Assistant (2024)
+## 📖 Case Study, Walmart "Sparky" Shopping Assistant (2024)
 
-**Situation.** Walmart, the world's largest retailer by revenue, faced the post-2023 reality that its 250M+ weekly customers expected conversational, multilingual, multimodal shopping help — including voice. In April 2024, Walmart publicly announced **Sparky**, its generative-AI-powered shopping assistant, with Microsoft and OpenAI as part of the technology stack (Walmart corporate communications, April 2024; corroborated at Microsoft Build 2024 and Walmart's 2024 *Investor Community Meeting*; verified 2026-05).
+**Situation.** Walmart, the world's largest retailer by revenue, faced the post-2023 reality that its 250M+ weekly customers expected conversational, multilingual, multimodal shopping help, including voice. In April 2024, Walmart publicly announced **Sparky**, its generative-AI-powered shopping assistant, with Microsoft and OpenAI as part of the technology stack (Walmart corporate communications, April 2024; corroborated at Microsoft Build 2024 and Walmart's 2024 *Investor Community Meeting*; verified 2026-05).
 
 **Decision.** Sparky composes the entire NLP triad covered in this module:
 
-- **Azure AI Language** for input understanding — Sentiment Analysis on review prompts ("show me a kid-friendly version"), PII Detection so customer-uploaded photos / questions don't carry SSNs into the prompt context, and CLU for command intents ("track my order").
-- **Azure AI Translator** for multilingual flows — Walmart serves customers in dozens of languages across its global stores; Translator handles real-time text in/out plus Document Translation for international compliance documents (e.g., supplier contracts).
-- **Azure AI Speech** for voice in/out — STT (real-time + batch), TTS using Neural Voices for accessibility, and Speech Translation in pilot markets.
+- **Azure AI Language** for input understanding, Sentiment Analysis on review prompts ("show me a kid-friendly version"), PII Detection so customer-uploaded photos / questions don't carry SSNs into the prompt context, and CLU for command intents ("track my order").
+- **Azure AI Translator** for multilingual flows, Walmart serves customers in dozens of languages across its global stores; Translator handles real-time text in/out plus Document Translation for international compliance documents (e.g., supplier contracts).
+- **Azure AI Speech** for voice in/out, STT (real-time + batch), TTS using Neural Voices for accessibility, and Speech Translation in pilot markets.
 - An **Orchestration Workflow** routes between Sparky's CLU command intents and a Question Answering knowledge base over Walmart's help-center content.
 
 Critically, the team applied **Responsible AI** controls from Module 2: PII Detection upstream of every GPT-4o prompt; gender_neutral_caption equivalents in image-rich flows; Translator's region-header was set correctly so EU customer text stayed in EU Data Zones for GDPR.
 
-**Outcome.** By H2 2024, Sparky had been rolled out broadly across Walmart's online surface area. Walmart's investor-day materials cited a measurable lift in conversion among assistants users vs control. Microsoft used Sparky as a flagship reference at Build 2024 and again at Ignite 2024 for "enterprise GenAI with composed Azure AI services" — exactly the pattern this module teaches.
+**Outcome.** By H2 2024, Sparky had been rolled out broadly across Walmart's online surface area. Walmart's investor-day materials cited a measurable lift in conversion among assistants users vs control. Microsoft used Sparky as a flagship reference at Build 2024 and again at Ignite 2024 for "enterprise GenAI with composed Azure AI services", exactly the pattern this module teaches.
 
-**Lesson for the exam / for practitioners.** Walmart did not pick one NLP service — they composed all three (Language + Translator + Speech) with Orchestration on top. This is how the exam's case studies are written; this is how the real world looks. The principle: choose services by *task type*, then layer them; don't force an LLM to do work the specialized service does better (cheaper, faster, more compliant).
+**Lesson for the exam / for practitioners.** Walmart did not pick one NLP service, they composed all three (Language + Translator + Speech) with Orchestration on top. This is how the exam's case studies are written; this is how the real world looks. The principle: choose services by *task type*, then layer them; don't force an LLM to do work the specialized service does better (cheaper, faster, more compliant).
 
 **Discussion (Socratic).**
 - Q1: Walmart could have used Azure OpenAI's GPT-4o for translation and skipped Translator. Build the strongest argument for that choice (one model, fewer services) and against (Translator is purpose-built, cheaper, region-pinned, supports Document Translation for compliance docs, has a Custom Translator for retail-domain jargon). Where do you draw the line?
 - Q2: PII Detection sits *before* the prompt. From a Responsible AI standpoint, why is "redact then prompt" almost always better than "prompt then redact"? Defend the inverse for at least one scenario.
-- Q3: Walmart's Spanish-language flows used Translator with EU/US data-zone pinning. Argue the equivalent design for a healthcare provider that needs HIPAA + multilingual support — what changes? What stays the same?
+- Q3: Walmart's Spanish-language flows used Translator with EU/US data-zone pinning. Argue the equivalent design for a healthcare provider that needs HIPAA + multilingual support, what changes? What stays the same?
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **CLU vs Question Answering vs Orchestration.** A retail chatbot needs both "track my order" (command) and "what's your return policy?" (FAQ). One PM proposes a single GPT-4o prompt with both tools. Another proposes the canonical Azure stack (CLU + QA + Orchestration). Walk through the trade-offs (latency, cost, maintainability, fallback behaviour, observability). At what conversation volume does each architecture decisively beat the other?
 2. **Custom Translator's economics.** Training a Custom Translator model for legal terminology takes a parallel corpus of ~10K sentence pairs and engineering time. Argue both sides at a CFO meeting: when does the per-token translation savings + accuracy lift make it a winning investment, and when does the engineering time make it overkill?
@@ -367,8 +367,8 @@ Critically, the team applied **Responsible AI** controls from Module 2: PII Dete
 
 You now know:
 
-- 🗣️ Azure AI Language's full feature set — sentiment, PII, NER, summarization, CLU, QA, custom
-- 🌐 Translator's three modes — text, document, custom — and the region-header gotcha
+- 🗣️ Azure AI Language's full feature set, sentiment, PII, NER, summarization, CLU, QA, custom
+- 🌐 Translator's three modes text, document, custom and the region-header gotcha
 - 🎤 Speech's STT/TTS/Translation + customization (Custom Speech, CNV)
 - 🧩 SSML for fine-grained voice control
 - 🔀 Service selection across Language vs Translator vs Speech
@@ -379,7 +379,7 @@ You now know:
 1. 🎥 Watch [Videos.md](./Videos.md)
 2. ✏️ Take [Quiz.md](./Quiz.md)
 3. 📋 Review [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. 🧪 Take [**Practice Exam 1**](../Practice-Exams/Practice-Exam-1.md) — you now have the foundation for Modules 1–4
+4. 🧪 Take [**Practice Exam 1**](../Practice-Exams/Practice-Exam-1.md), you now have the foundation for Modules 1–4
 5. ➡️ Move to [Module 5: Document Intelligence + AI Search](../Module-05-Document-Intelligence-Knowledge-Mining/Reading.md)
 
 ---
@@ -395,11 +395,11 @@ You now know:
 
 - **Vaswani et al. (2017).** *"Attention Is All You Need."* NeurIPS 2017. The transformer foundation under every modern NLP feature here.
 - **Devlin et al. (2018).** *"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding."* The encoder-only line that powers many of Language service's classification / NER models.
-- **Brown et al. (2020).** *"Language Models are Few-Shot Learners."* (GPT-3 paper, NeurIPS 2020) — the lineage that culminates in GPT-4o.
-- **Microsoft Responsible AI Standard v2** (June 2022) — drove Custom Neural Voice's Limited Access policy and voice-talent attestation requirements.
-- **EU AI Act** (Regulation (EU) 2024/1689, June 2024) — synthetic voice / deepfake disclosure obligations.
-- **Walmart corporate communications (April 2024)** — public Sparky announcement; verified at Microsoft Build 2024 and Walmart investor-day materials, 2026-05.
-- **Microsoft Mechanics** (2024) — *Azure AI Language deep dive* and *Azure AI Speech: Custom Neural Voice* episodes.
+- **Brown et al. (2020).** *"Language Models are Few-Shot Learners."* (GPT-3 paper, NeurIPS 2020), the lineage that culminates in GPT-4o.
+- **Microsoft Responsible AI Standard v2** (June 2022), drove Custom Neural Voice's Limited Access policy and voice-talent attestation requirements.
+- **EU AI Act** (Regulation (EU) 2024/1689, June 2024), synthetic voice / deepfake disclosure obligations.
+- **Walmart corporate communications (April 2024)**, public Sparky announcement; verified at Microsoft Build 2024 and Walmart investor-day materials, 2026-05.
+- **Microsoft Mechanics** (2024), *Azure AI Language deep dive* and *Azure AI Speech: Custom Neural Voice* episodes.
 
 ---
 

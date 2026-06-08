@@ -225,7 +225,7 @@ Human-in-the-loop catches hallucinations, generic prose, and brand mismatches. T
 Multiple AI-generated travel guides on BuzzFeed-owned sites in 2023 contained generic or inaccurate content; the trade press treated it as a lesson.
 
 ### Q9: **B. AI embedded in the marketer's daily workflow and grounded in proprietary data**
-Inside-the-product AI trained on Mailchimp's own subject-line performance data — the canonical "embedded AI" case.
+Inside-the-product AI trained on Mailchimp's own subject-line performance data, the canonical "embedded AI" case.
 
 ### Q10: **B. Subject → Setting → Composition → Mood → Lighting → Style → Format**
 The widely-taught prompt order for marketing image generation.
@@ -264,7 +264,7 @@ Google's Helpful Content guidance language explicitly. Useful content is fine re
 Translation is increasingly accurate, but cultural localization (idiom, slang, regional preference) still benefits from a native reviewer.
 
 ### Q22: **B. ML pipelines in creative production**
-Wieden+Kennedy and The Mill used ML to score and match thousands of clips. Not generative AI — classical ML for selection.
+Wieden+Kennedy and The Mill used ML to score and match thousands of clips. Not generative AI, classical ML for selection.
 
 ### Q23: **A. Tone, vocabulary, sentence rhythm, words to avoid, sample passages**
 A useful brand voice guide tells the AI exactly how to sound. Logos and fonts are brand identity, not voice.

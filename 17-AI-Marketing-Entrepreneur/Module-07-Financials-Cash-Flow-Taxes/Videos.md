@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: Financials, Cash Flow & Taxes
 
-> **How to use:** Each card searches YouTube for the topic. These are operational concepts — NOT a replacement for a CPA. Watch, then book a real CPA call.
+> **How to use:** Each card searches YouTube for the topic. These are operational concepts, NOT a replacement for a CPA. Watch, then book a real CPA call.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Profit First — Multi-Account Method</p>
+      <p class="vg-title">Profit First, Multi-Account Method</p>
       <p class="vg-creator">Mike Michalowicz</p>
       <span class="vg-duration">⏱ 22 min · Discipline for service businesses</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">QuickBooks vs Xero — Pick One</p>
+      <p class="vg-title">QuickBooks vs Xero, Pick One</p>
       <p class="vg-creator">Accounting channels</p>
       <span class="vg-duration">⏱ 14 min · Bookkeeping decision</span>
     </div>

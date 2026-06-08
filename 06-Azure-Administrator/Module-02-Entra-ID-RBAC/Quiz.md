@@ -86,7 +86,7 @@ D. Custom RBAC role
 
 ---
 
-### Q11. Yes/No — Mark each statement. *(Evaluate)*
+### Q11. Yes/No, Mark each statement. *(Evaluate)*
 
 **S1:** A Conditional Access policy can require both MFA and a compliant device in one policy.
 **S2:** Security defaults and Conditional Access can both be enabled simultaneously.
@@ -133,7 +133,7 @@ D. Permissions inherit only one level
 
 ### Q16. Can a Contributor at a Resource Group level create role assignments at that RG? *(Understand)*
 A. Yes
-B. No — Contributor explicitly cannot assign roles
+B. No, Contributor explicitly cannot assign roles
 C. Yes, but only for self
 D. Only if MFA is satisfied
 
@@ -186,7 +186,7 @@ What can they do on a blob inside `storage1`?
 A. Read only
 B. Read/write at the control plane only
 C. Read, write, delete blob data and modify ACLs
-D. Nothing — conflicting roles cancel
+D. Nothing, conflicting roles cancel
 
 ---
 
@@ -206,7 +206,7 @@ D. It works only with Azure Functions
 
 ---
 
-### Q24. Yes/No — A Conditional Access policy is created with these conditions: All users, All cloud apps, Locations = Block list = Russia, Grant = Block. *(Analyze)*
+### Q24. Yes/No, A Conditional Access policy is created with these conditions: All users, All cloud apps, Locations = Block list = Russia, Grant = Block. *(Analyze)*
 
 **S1:** A user in Russia attempting to sign in will be blocked.
 **S2:** A user in Spain will also be blocked.
@@ -219,7 +219,7 @@ D. Yes / Yes / No
 
 ---
 
-### Q25. Per-user MFA, security defaults, and Conditional Access — which is the modern, recommended way to enforce MFA? *(Evaluate)*
+### Q25. Per-user MFA, security defaults, and Conditional Access, which is the modern, recommended way to enforce MFA? *(Evaluate)*
 A. Per-user MFA
 B. Security defaults (for basic baseline only)
 C. Conditional Access (granular, recommended)
@@ -268,9 +268,9 @@ No secrets to rotate, lifecycle is managed by Azure. Always preferred for Azure-
 AUs scope directory-level admin (User Admin, Helpdesk Admin) to a subset of users/groups.
 
 ### Q11: **A. Yes / Yes / Yes**
-All three are true. **However:** when you turn Security Defaults on, the portal nags about CA — and CA generally supersedes Security Defaults in practice. Microsoft does allow both, but the guidance is to migrate to CA.
+All three are true. **However:** when you turn Security Defaults on, the portal nags about CA, and CA generally supersedes Security Defaults in practice. Microsoft does allow both, but the guidance is to migrate to CA.
 
-(Correction note: Microsoft documentation states that enabling CA **disables** Security Defaults — if your exam phrases this strictly, S2 may be NO. Read the exact wording.)
+(Correction note: Microsoft documentation states that enabling CA **disables** Security Defaults, if your exam phrases this strictly, S2 may be NO. Read the exact wording.)
 
 ### Q12: **B. `alice_acme.com#EXT#@contoso.onmicrosoft.com`**
 The classic B2B guest UPN format.
@@ -284,7 +284,7 @@ Hardware-backed, phishing-resistant. SMS/voice are the weakest. Push without num
 ### Q15: **B. Union of all role assignments at and above the scope (additive)**
 Roles add up. No deny in standard RBAC.
 
-### Q16: **B. No — Contributor explicitly cannot assign roles**
+### Q16: **B. No, Contributor explicitly cannot assign roles**
 Even within the RG. Use Owner or UAA for that.
 
 ### Q17: **D. Management Group**
@@ -309,7 +309,7 @@ Deny assignments are reserved for Azure managed services. For policy-based deny,
 User-assigned MIs are their own ARM resource. System-assigned dies with its parent.
 
 ### Q24: **A. Yes / No / Yes**
-Russia is in the block list — blocked. Spain isn't — allowed. Report-only mode is a real CA setting and is recommended before enforcing.
+Russia is in the block list blocked. Spain isn't allowed. Report-only mode is a real CA setting and is recommended before enforcing.
 
 ### Q25: **C. Conditional Access**
 Per-user MFA is legacy; Security Defaults are a free baseline only; CA is the modern, granular path.

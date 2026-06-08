@@ -7,9 +7,9 @@ title: "Module 4: Character Rigging in Adobe Animate"
 
 ## The Puppet Behind the Curtain
 
-Every puppet show has a puppet behind the curtain. The audience never sees the armature, the strings, or the mechanisms — they see the character. In cut-out animation, the "puppet behind the curtain" is a symbol hierarchy: a set of nested graphics connected at joints, designed so that moving one part pulls the others in natural-looking ways.
+Every puppet show has a puppet behind the curtain. The audience never sees the armature, the strings, or the mechanisms, they see the character. In cut-out animation, the "puppet behind the curtain" is a symbol hierarchy: a set of nested graphics connected at joints, designed so that moving one part pulls the others in natural-looking ways.
 
-The show *Hazbin Hotel* — which went from an independent YouTube pilot to an Amazon Prime series — is animated primarily with cut-out rigs built in tools very similar to what Animate offers. The characters look drawn and expressive, but underneath each scene is a rigging system: body parts connected to each other through a hierarchy, with IK solving the leg positioning and a library of pre-drawn mouth shapes for lip sync. This module builds that system from the ground up.
+The show *Hazbin Hotel* which went from an independent YouTube pilot to an Amazon Prime series is animated primarily with cut-out rigs built in tools very similar to what Animate offers. The characters look drawn and expressive, but underneath each scene is a rigging system: body parts connected to each other through a hierarchy, with IK solving the leg positioning and a library of pre-drawn mouth shapes for lip sync. This module builds that system from the ground up.
 
 ---
 
@@ -69,12 +69,12 @@ The Asset Warp Tool creates deformation bones inside a symbol. These bones defor
 
 | Concept | Definition | Use Case |
 |---------|-----------|---------|
-| **Forward Kinematics (FK)** | Rotating each joint independently from parent to child | Arms, tails, hair — things that flow from a root |
+| **Forward Kinematics (FK)** | Rotating each joint independently from parent to child | Arms, tails, hair, things that flow from a root |
 | **Inverse Kinematics (IK)** | Moving the end effector; the system solves joint angles automatically | Legs planted on ground, reaching hand |
 
 ### FK in Practice
 
-FK is how symbol-hierarchy rigs work by default. You rotate the upper arm, then the lower arm, then the hand — each rotation cascades down the chain. It's intuitive but requires more keyframes to make a leg bend naturally as the foot stays planted.
+FK is how symbol-hierarchy rigs work by default. You rotate the upper arm, then the lower arm, then the hand, each rotation cascades down the chain. It's intuitive but requires more keyframes to make a leg bend naturally as the foot stays planted.
 
 ### IK in Animate
 
@@ -86,7 +86,7 @@ Dedicated IK plugins and external tools (like DUIK in After Effects, covered in 
 
 ## 💬 Lip Sync Asset Preparation
 
-A lip sync rig in Animate requires preparing a mouth set — a collection of mouth shapes corresponding to different phoneme groups.
+A lip sync rig in Animate requires preparing a mouth set, a collection of mouth shapes corresponding to different phoneme groups.
 
 ### The Preston Blair Phoneme Set
 
@@ -137,19 +137,19 @@ Cut-out animation originated in physical paper puppetry: characters were literal
 
 ### Cut-Out Workflow Steps
 
-1. **Character design** — design the character as flat, separated body parts that can be assembled
-2. **Art assets** — draw each body part as a separate vector or bitmap (Illustrator, Photoshop, or directly in Animate)
-3. **Import and organize** — import all parts into Animate's Library; organize into character folders
-4. **Build hierarchy** — assemble the character by nesting symbols; set registration points at joints
-5. **Rig testing** — animate a simple test (arm wave, head turn) to verify the rig works as expected
-6. **Lip sync prep** — add mouth shapes to the mouth layer; prepare swap-symbol chart
-7. **Scene animation** — animate the actual scene using the rig
+1. **Character design**, design the character as flat, separated body parts that can be assembled
+2. **Art assets**, draw each body part as a separate vector or bitmap (Illustrator, Photoshop, or directly in Animate)
+3. **Import and organize**, import all parts into Animate's Library; organize into character folders
+4. **Build hierarchy**, assemble the character by nesting symbols; set registration points at joints
+5. **Rig testing**, animate a simple test (arm wave, head turn) to verify the rig works as expected
+6. **Lip sync prep**, add mouth shapes to the mouth layer; prepare swap-symbol chart
+7. **Scene animation**, animate the actual scene using the rig
 
 ---
 
 ## 🔄 Swapping Symbols for Animation Flexibility
 
-One of the most powerful features of symbol-based rigs is **symbol swapping** — replacing one symbol instance on a specific frame with a different symbol, while keeping the same position and transform properties.
+One of the most powerful features of symbol-based rigs is **symbol swapping**, replacing one symbol instance on a specific frame with a different symbol, while keeping the same position and transform properties.
 
 Use cases:
 - **Mouth shapes:** swap from neutral to open to smile frame by frame
@@ -169,13 +169,13 @@ To swap a symbol: select the instance → Properties panel → Swap Symbol butto
 
 | Layer Name | Content |
 |-----------|---------|
-| `hero — head` | Head group (contains eyes, mouth sublayers) |
-| `hero — arm_r` | Right arm (upper + lower + hand nested) |
-| `hero — arm_l` | Left arm (upper + lower + hand nested) |
-| `hero — body` | Torso |
-| `hero — leg_r` | Right leg chain |
-| `hero — leg_l` | Left leg chain |
-| `hero — shadow` | Character shadow (non-animated or simple tween) |
+| `hero, head` | Head group (contains eyes, mouth sublayers) |
+| `hero, arm_r` | Right arm (upper + lower + hand nested) |
+| `hero, arm_l` | Left arm (upper + lower + hand nested) |
+| `hero, body` | Torso |
+| `hero, leg_r` | Right leg chain |
+| `hero, leg_l` | Left leg chain |
+| `hero, shadow` | Character shadow (non-animated or simple tween) |
 
 ### The Layer Order Problem
 
@@ -217,8 +217,8 @@ Before committing to a character design for cut-out production, experienced dire
 
 *Hazbin Hotel* began as an independent pilot created by Vivienne Medrano (VivziePop) and was later picked up by Amazon Prime. The production workflow illustrates a real-world cut-out pipeline:
 
-- **Character design** used Vivienne's distinctive style — angular, theatrical, Art Deco-influenced — which was translated into separated body parts in Adobe Animate/Flash
-- **Facial rigs** were complex: each major character had 10+ pre-drawn mouth shapes, multiple eye states, and brow variants — all organized as swappable Graphic symbols
+- **Character design** used Vivienne's distinctive style angular, theatrical, Art Deco-influenced which was translated into separated body parts in Adobe Animate/Flash
+- **Facial rigs** were complex: each major character had 10+ pre-drawn mouth shapes, multiple eye states, and brow variants, all organized as swappable Graphic symbols
 - **Expression extremes** that couldn't be captured by the rig were hand-drawn as overlay frames
 - **Transition to Amazon:** For the Amazon Prime series, the production upgraded to Toon Boom Harmony for its more powerful deformer system while retaining the same visual design language established in the pilot
 
@@ -301,7 +301,7 @@ Character rigs vary enormously in complexity. Here's a practical guide to what d
 | Complex (feature-grade) | 20–40 parts | 10–15 shapes | 6–10 states | 3–7 days |
 | Hero character (lead) | 40+ parts | 15+ shapes | 8–12 states | 1–2 weeks |
 
-> 🎯 **What the exam tests:** Understanding that a "production-ready" character rig is not a weekend project — it requires deliberate design of the character art to accommodate the rigging needs (flat-on separation of body parts, consistent sizing, registration point planning).
+> 🎯 **What the exam tests:** Understanding that a "production-ready" character rig is not a weekend project, it requires deliberate design of the character art to accommodate the rigging needs (flat-on separation of body parts, consistent sizing, registration point planning).
 
 ---
 
@@ -333,7 +333,7 @@ By keeping the rig in a separate master file and importing it into each scene, m
 
 [Module 5: After Effects for 2D →](../Module-05-After-Effects-2D/Reading.md)
 
-Module 5 moves from Animate to After Effects — a more powerful environment for character rigging, compositing, and effects. You'll learn to import your Animate and Illustrator assets into AE, apply the Puppet Pin Tool, and use the "Create Shapes from Vector Layers" command.
+Module 5 moves from Animate to After Effects, a more powerful environment for character rigging, compositing, and effects. You'll learn to import your Animate and Illustrator assets into AE, apply the Puppet Pin Tool, and use the "Create Shapes from Vector Layers" command.
 
 ## 📱 Rigging for Different Output Formats
 
@@ -369,9 +369,9 @@ Keeping a personal troubleshooting log during production helps build diagnostic 
 
 ## 📚 Further Reading
 
-- *Cartoon Animation* — Preston Blair (the phoneme chart and mouth shapes are in Chapter 5)
+- *Cartoon Animation*, Preston Blair (the phoneme chart and mouth shapes are in Chapter 5)
 - Adobe Animate User Guide: Asset Warp Tool
-- School of Motion: "Character Rigging in Adobe Animate" — free article
+- School of Motion: "Character Rigging in Adobe Animate", free article
 
 ---
 
@@ -390,25 +390,25 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 

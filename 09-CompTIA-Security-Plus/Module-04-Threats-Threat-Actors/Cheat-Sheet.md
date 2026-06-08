@@ -77,9 +77,9 @@ War/disrupt → Nation-state
 
 ## 🏆 Exam Power Phrases
 
-- ✅ "Nation-state / APT" — for persistent, well-resourced, espionage attacks
-- ✅ "Supply-chain attack" — when the malicious code comes from a vendor's update
-- ✅ "Insider (negligent)" vs "Insider (malicious)" — Sec+ distinguishes
+- ✅ "Nation-state / APT", for persistent, well-resourced, espionage attacks
+- ✅ "Supply-chain attack", when the malicious code comes from a vendor's update
+- ✅ "Insider (negligent)" vs "Insider (malicious)", Sec+ distinguishes
 - ✅ "Subscribe to industry ISAC"
 - ✅ "MITRE ATT&CK for TTPs"
 - ❌ "Hacktivists steal money"

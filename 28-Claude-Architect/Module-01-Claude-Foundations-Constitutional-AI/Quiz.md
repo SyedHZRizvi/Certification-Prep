@@ -36,10 +36,10 @@ D. Distillation
 ---
 
 ### Q4. Which Anthropic paper is the founding reference for Constitutional AI? *(Remember)*
-A. Vaswani et al. (2017) — Attention Is All You Need
-B. Bai et al. (2022) — Constitutional AI: Harmlessness from AI Feedback
-C. Brown et al. (2020) — Language Models are Few-Shot Learners
-D. Ouyang et al. (2022) — Training language models to follow instructions
+A. Vaswani et al. (2017), Attention Is All You Need
+B. Bai et al. (2022), Constitutional AI: Harmlessness from AI Feedback
+C. Brown et al. (2020), Language Models are Few-Shot Learners
+D. Ouyang et al. (2022), Training language models to follow instructions
 
 ---
 
@@ -78,8 +78,8 @@ D. Claude 2 (legacy)
 ### Q9. A team needs to refactor a 30-file Python codebase with cross-file dependencies. Which Claude tier is the BEST default? *(Apply)*
 A. Haiku 4.5
 B. Sonnet 4.6 (with Opus fallback for the hardest sub-tasks)
-C. The smallest tier always — refactoring is "just substitution"
-D. Any tier — they perform identically
+C. The smallest tier always, refactoring is "just substitution"
+D. Any tier, they perform identically
 
 ---
 
@@ -157,9 +157,9 @@ D. All current Claude models are ASL-5
 
 ### Q19. Reading a Claude model card, the appropriate FIRST sections to consult before integrating into production are: *(Apply)*
 A. Pricing only
-B. Intended use, known limits, and the evaluation results — to confirm fit and surface caveats
+B. Intended use, known limits, and the evaluation results, to confirm fit and surface caveats
 C. Marketing FAQ
-D. None — model cards are for researchers
+D. None, model cards are for researchers
 
 ---
 
@@ -180,10 +180,10 @@ D. The model uses reinforcement learning from gameplay traces
 ---
 
 ### Q22. A startup ingests 600-page legal contracts and needs structured extraction with per-page citations. The MOST appropriate model + reason is: *(Apply)*
-A. Haiku — speed first
-B. Sonnet or Opus — long-context handling + strong adherence to structured output schemas + citation support
-C. GPT-3.5 — to save cost
-D. Any model — they perform identically on long PDFs
+A. Haiku, speed first
+B. Sonnet or Opus, long-context handling + strong adherence to structured output schemas + citation support
+C. GPT-3.5, to save cost
+D. Any model, they perform identically on long PDFs
 
 ---
 
@@ -208,7 +208,7 @@ D. The constitution can draw on existing documents like the UDHR
 > *Create-level note:* multiple components must compose correctly.
 A. Anthropic direct API only, single Sonnet model, no caching, no observability
 B. AWS Bedrock for Claude (data residency) + tier router (Haiku/Sonnet/Opus) + prompt caching for system prompt + Langfuse or Helicone observability + per-team rate limits
-C. Self-hosted Claude open weights on EC2 (not possible — Claude weights are closed)
+C. Self-hosted Claude open weights on EC2 (not possible, Claude weights are closed)
 D. Forward every request straight to Opus, no router, no caching
 
 ---
@@ -224,7 +224,7 @@ This structure legally requires the board to consider broader societal impact, n
 ### Q3: **C. Constitutional AI (also called RLAIF for the RL phase)**
 RLAIF (Reinforcement Learning from AI Feedback) is the RL stage of the broader CAI methodology.
 
-### Q4: **B. Bai et al. (2022) — Constitutional AI: Harmlessness from AI Feedback**
+### Q4: **B. Bai et al. (2022), Constitutional AI: Harmlessness from AI Feedback**
 Published December 2022. The founding technical paper for Anthropic's safety approach.
 
 ### Q5: **C. Haiku, Sonnet, Opus**
@@ -234,10 +234,10 @@ Named after Japanese poetic forms, smallest to largest. Convention started with 
 Two-part benefit: less human labor for harm labels, and a written constitution you can review and revise.
 
 ### Q7: **B. Biosafety Level (BSL) framework from biology**
-Anthropic has explicitly cited BSL as the inspiration for ASL — both are capability/risk classes triggering stronger controls as you move up.
+Anthropic has explicitly cited BSL as the inspiration for ASL, both are capability/risk classes triggering stronger controls as you move up.
 
 ### Q8: **A. Haiku 4.5**
-High-volume, low-complexity classification is exactly the Haiku sweet spot — 5× cheaper than Sonnet at similar quality on simple tasks.
+High-volume, low-complexity classification is exactly the Haiku sweet spot, 5× cheaper than Sonnet at similar quality on simple tasks.
 
 ### Q9: **B. Sonnet 4.6 (with Opus fallback for the hardest sub-tasks)**
 Cross-file refactoring needs strong reasoning; Sonnet handles most cases, Opus for the hardest sub-tasks. Tier routing is real architecture.
@@ -246,10 +246,10 @@ Cross-file refactoring needs strong reasoning; Sonnet handles most cases, Opus f
 This is the canonical answer the exam is looking for. The structural difference is real and load-bearing for the safety thesis.
 
 ### Q11: **C. 90%**
-Cached input tokens are billed at roughly 10% of standard input price — a ~90% discount. The cache TTL is short (typically 5 minutes), so traffic patterns matter.
+Cached input tokens are billed at roughly 10% of standard input price, a ~90% discount. The cache TTL is short (typically 5 minutes), so traffic patterns matter.
 
 ### Q12: **D. Maximizing engagement / user attention**
-Helpfulness, harmlessness, honesty are core principles. Engagement maximization is *explicitly avoided* — it leads to manipulative behavior.
+Helpfulness, harmlessness, honesty are core principles. Engagement maximization is *explicitly avoided*, it leads to manipulative behavior.
 
 ### Q13: **B. "Claude is trained using Constitutional AI, an auditable safety methodology..."**
 This is the CFO/CISO-defensible one-sentence answer. Practice saying it out loud.
@@ -261,7 +261,7 @@ This is the CFO/CISO-defensible one-sentence answer. Practice saying it out loud
 Bedrock keeps data inside your AWS account; no egress to Anthropic-managed infra. This is *the* answer for "data must stay in our AWS account."
 
 ### Q16: **C. RLAIF**
-Reinforcement Learning from AI Feedback — the AI-critic-driven RL phase that distinguishes CAI from RLHF.
+Reinforcement Learning from AI Feedback, the AI-critic-driven RL phase that distinguishes CAI from RLHF.
 
 ### Q17: **B. Strong long-context instruction-following + clean multi-turn tool use + competitive prompt-caching economics**
 Cursor's publicly stated rationale combines all three. The full answer also includes refusal-profile improvements over time.
@@ -273,14 +273,14 @@ ASL is not a ban; it is a graduated commitment to stronger controls as capabilit
 The model card is your *risk-management* tool. Read these sections before any production decision.
 
 ### Q20: **A. ~$11K (still over budget)**
-1M × $0.011 = $11,000/day, which is roughly $330K/month. The "$4K budget" is the trap — at 1M convo/day even Haiku exceeds it. (Correct math: $0.011 × 1M × 30 ≈ $330K. **The intended answer is "still over budget" because we should re-shop tiers.** The trap is jumping at $11K — that's per day, not month.)
+1M × $0.011 = $11,000/day, which is roughly $330K/month. The "$4K budget" is the trap at 1M convo/day even Haiku exceeds it. (Correct math: $0.011 × 1M × 30 ≈ $330K. **The intended answer is "still over budget" because we should re-shop tiers.** The trap is jumping at $11K that's per day, not month.)
 
 *Note: This question is intentionally tricky to test that you do the math.*
 
 ### Q21: **B. The model generates → AI critic critiques against constitution → model revises → revised pair is training data**
 This is the textbook description of the supervised-revision stage of CAI. The RL stage uses AI preference labels instead.
 
-### Q22: **B. Sonnet or Opus — long-context handling + structured output adherence + citation support**
+### Q22: **B. Sonnet or Opus, long-context handling + structured output adherence + citation support**
 Long PDFs + structured output + citations is the canonical "use Claude" workload.
 
 ### Q23: **B. Amazon and Google**
@@ -316,4 +316,4 @@ The "AI gateway" pattern. Each component addresses a real concern: Bedrock for r
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Prompt Engineering with Claude](../Module-02-Prompt-Engineering-Claude/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Prompt Engineering with Claude](../Module-02-Prompt-Engineering-Claude/Reading.md)

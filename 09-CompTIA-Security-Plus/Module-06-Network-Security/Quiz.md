@@ -37,7 +37,7 @@ D. IPS is cloud-only
 ### Q4. A WAF protects which layer specifically? *(Remember)*
 A. Layer 2 (data link)
 B. Layer 3 (network)
-C. Layer 7 (application — HTTP/S)
+C. Layer 7 (application, HTTP/S)
 D. Layer 4 (transport)
 
 ---
@@ -124,7 +124,7 @@ D. WireGuard
 
 ### Q15. DNSSEC provides: *(Understand)*
 A. Encryption of DNS queries
-B. Integrity (signed records) — NOT encryption
+B. Integrity (signed records), NOT encryption
 C. Privacy from local network sniffers
 D. Compression of DNS responses
 
@@ -227,10 +227,10 @@ SFTP = SSH File Transfer Protocol.
 FTPS is FTP+TLS. Not SFTP.
 
 ### Q3: **B. IDS detects/alerts; IPS detects/blocks (inline)**
-Placement is the key — IPS sits inline so it can drop traffic; IDS observes via SPAN/TAP.
+Placement is the key, IPS sits inline so it can drop traffic; IDS observes via SPAN/TAP.
 
 ### Q4: **C. Layer 7 (HTTP/S)**
-Web Application Firewall — protects against OWASP-class attacks.
+Web Application Firewall, protects against OWASP-class attacks.
 
 ### Q5: **B. DMZ / screened subnet**
 Public-facing services isolated from internal.
@@ -254,7 +254,7 @@ Supplicant = client; Authenticator = switch/AP; Auth Server = RADIUS.
 Both client and server present certs.
 
 ### Q12: **B. IPSec in Tunnel mode**
-Tunnel mode encapsulates the entire IP packet — appropriate for site-to-site.
+Tunnel mode encapsulates the entire IP packet, appropriate for site-to-site.
 
 ### Q13: **A. Only corporate traffic via VPN**
 Trade-off: faster but less visibility/control.
@@ -319,4 +319,4 @@ Standard segmented layout.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — Endpoint, Mobile & Cloud Security](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, Endpoint, Mobile & Cloud Security](../Module-07-Endpoint-Mobile-Cloud-Security/Reading.md)

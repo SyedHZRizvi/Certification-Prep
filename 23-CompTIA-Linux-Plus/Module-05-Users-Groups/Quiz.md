@@ -131,7 +131,7 @@ D. Run nginx itself as root
 ### Q16. What does `passwd -S alice` show? *(Remember)*
 A. The hash of alice's password
 B. The password aging policy
-C. The account status — locked (L), password set (P), or none (NP)
+C. The account status, locked (L), password set (P), or none (NP)
 D. The shell
 
 ---
@@ -193,15 +193,15 @@ D. `account`
 ---
 
 ### Q24. A drop-in sudoers file `/etc/sudoers.d/my-rules.bak` is on disk. Will sudo evaluate it? *(Evaluate)*
-A. Yes — sudo reads everything in the directory
-B. No — sudo ignores files containing `.` or ending with `~` (or `.bak` in many configurations); rename to `my-rules`
+A. Yes, sudo reads everything in the directory
+B. No, sudo ignores files containing `.` or ending with `~` (or `.bak` in many configurations); rename to `my-rules`
 C. Yes, but only if owned by root
-D. No — sudoers.d is disabled by default
+D. No, sudoers.d is disabled by default
 
 ---
 
 ### Q25. The CORRECT order to apply password aging to a newly-created user with `useradd` defaults you want enforced is: *(Evaluate)*
-A. Edit `/etc/login.defs` first, then `useradd` — new user inherits the policy
+A. Edit `/etc/login.defs` first, then `useradd`, new user inherits the policy
 B. Run `useradd` first, then `chage -M 60 -W 7` on the user
 C. Edit `/etc/shadow` directly
 D. Use `passwd -m 60` after creation
@@ -281,11 +281,11 @@ The primary group GID is in /etc/passwd field 4. Secondary groups come from /etc
 ### Q15: **B. Run specifically `systemctl restart nginx` and nothing else**
 The command is path-restricted. Bob cannot run `systemctl restart anything-else` because his rule lists the specific command.
 
-### Q16: **C. Account status — L/P/NP/etc.**
+### Q16: **C. Account status, L/P/NP/etc.**
 `passwd -S` shows: username, status (L=locked, P=set, NP=no password), date last changed, min/max/warn/inactive days, full date of last change.
 
 ### Q17: **B. Read permission via ACL**
-ACLs are additive — juno gets `r` on top of whatever the regular owner/group/other bits already grant. Doesn't affect sudo or group membership.
+ACLs are additive, juno gets `r` on top of whatever the regular owner/group/other bits already grant. Doesn't affect sudo or group membership.
 
 ### Q18: **B. `/etc/login.defs`**
 Settings: UID_MIN, UID_MAX, GID_MIN, PASS_MAX_DAYS, PASS_MIN_DAYS, PASS_WARN_AGE, ENCRYPT_METHOD. Only NEW accounts inherit; doesn't retroactively change existing.
@@ -305,8 +305,8 @@ Lists every sudoers rule that matches you on this host. Run on every machine you
 ### Q23: **C. `auth`**
 faillock plugs into the auth stack to count failed authentications. (Counter increment happens at auth-time, decision in either auth or account depending on configuration.)
 
-### Q24: **B. No — sudo ignores files with `.` or `~`**
-By default, sudoers.d ignores files containing `.` (so `.bak`, `.orig`, `.old` are ignored) and files ending in `~`. This is deliberate — prevents accidental rule activation from temp files.
+### Q24: **B. No, sudo ignores files with `.` or `~`**
+By default, sudoers.d ignores files containing `.` (so `.bak`, `.orig`, `.old` are ignored) and files ending in `~`. This is deliberate, prevents accidental rule activation from temp files.
 
 ### Q25: **A. Edit `/etc/login.defs` first, then `useradd`**
 login.defs only affects NEW accounts. If you want a baseline (e.g., PASS_MAX_DAYS=90), set it before creating users. For existing users, run `chage` explicitly.
@@ -343,4 +343,4 @@ login.defs only affects NEW accounts. If you want a baseline (e.g., PASS_MAX_DAY
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Networking, SSH & Firewalls](../Module-06-Networking-SSH/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Networking, SSH & Firewalls](../Module-06-Networking-SSH/Reading.md)

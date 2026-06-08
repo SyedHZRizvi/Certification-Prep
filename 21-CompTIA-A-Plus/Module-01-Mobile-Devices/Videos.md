@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Mobile Devices & BYOD
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Mobile Device Hardware — 220-1101</p>
+      <p class="vg-title">Mobile Device Hardware, 220-1101</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 11 min · Connectors, displays, sensors</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Mobile Devices — Mike Meyers Overview</p>
+      <p class="vg-title">Mobile Devices, Mike Meyers Overview</p>
       <p class="vg-creator">Mike Meyers</p>
       <span class="vg-duration">⏱ 18 min · Friendly tour</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">eSIM vs Physical SIM — what changes?</p>
+      <p class="vg-title">eSIM vs Physical SIM, what changes?</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 12 min · Provisioning deep-dive</span>
     </div>

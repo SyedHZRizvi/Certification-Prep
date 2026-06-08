@@ -59,32 +59,32 @@ Private VPC
 
 ---
 
-## 💰 Cost Levers — Training
+## 💰 Cost Levers, Training
 
-- **Spot training** (`use_spot_instances=True` + checkpoints) — **up to 90% off**
-- **Trainium** vs NVIDIA — ~30-50% cheaper for many models
-- **Mixed precision** (FP16/BF16) — ~50% time + memory
+- **Spot training** (`use_spot_instances=True` + checkpoints), **up to 90% off**
+- **Trainium** vs NVIDIA, ~30-50% cheaper for many models
+- **Mixed precision** (FP16/BF16), ~50% time + memory
 - **Right-sized instance**
-- **Pipe / FastFile mode** — less idle waiting
-- **Training Compiler** — 10-50% speedup
-- **Early stopping** — kill bad trials
-- **Distributed (SMDDP)** — faster wall clock
+- **Pipe / FastFile mode**, less idle waiting
+- **Training Compiler**, 10-50% speedup
+- **Early stopping**, kill bad trials
+- **Distributed (SMDDP)**, faster wall clock
 
 ---
 
-## 💰 Cost Levers — Inference
+## 💰 Cost Levers, Inference
 
-- **Inferentia2** — often 50%+ cheaper than GPU
-- **Multi-Model Endpoints** — many models per endpoint
-- **Serverless inference** — scale to 0
-- **Async inference** — scale to 0; large payloads
-- **Compute Savings Plan** — 1-yr / 3-yr commitment discount
+- **Inferentia2**, often 50%+ cheaper than GPU
+- **Multi-Model Endpoints**, many models per endpoint
+- **Serverless inference**, scale to 0
+- **Async inference**, scale to 0; large payloads
+- **Compute Savings Plan**, 1-yr / 3-yr commitment discount
 - **Right-size with Inference Recommender**
 - **Graviton CPUs** for CPU inference
 
 ---
 
-## 💰 Cost Levers — Studio & Data
+## 💰 Cost Levers, Studio & Data
 
 - **Lifecycle config idle auto-shutdown** on Studio spaces
 - **Cost allocation tags** + Budgets
@@ -95,7 +95,7 @@ Private VPC
 
 ---
 
-## 💰 Cost Levers — Bedrock
+## 💰 Cost Levers, Bedrock
 
 - **Batch Inference** ~50% off
 - **Provisioned Throughput** for steady high volume

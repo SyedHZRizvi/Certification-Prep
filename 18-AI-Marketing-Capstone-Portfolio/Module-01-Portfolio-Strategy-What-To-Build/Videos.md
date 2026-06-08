@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Portfolio Strategy
 
-> **How to use:** This module is about strategy, not tools — so the videos here are short, opinion-heavy, and meant to shape how you think about what to build. Watch the Essential 4 before you draft your project list.
+> **How to use:** This module is about strategy, not tools, so the videos here are short, opinion-heavy, and meant to shape how you think about what to build. Watch the Essential 4 before you draft your project list.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -49,7 +49,7 @@
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">How To Build A Portfolio Site On Notion In One Afternoon</p>
       <p class="vg-creator">Ali Abdaal</p>
-      <span class="vg-duration">⏱ 11 min · Notion is fine — ship it</span>
+      <span class="vg-duration">⏱ 11 min · Notion is fine, ship it</span>
     </div>
   </a>
   <a class="vg-card" data-video-id="au-w0PH-55o" href="https://www.youtube.com/results?search_query=The+Futur+how+to+show+your+work" target="_blank" rel="noopener">
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Distribution Over Polish — Why Your Portfolio Is The Channel</p>
+      <p class="vg-title">Distribution Over Polish, Why Your Portfolio Is The Channel</p>
       <p class="vg-creator">Amanda Natividad / SparkToro</p>
       <span class="vg-duration">⏱ 14 min · Big-picture framing</span>
     </div>
@@ -153,4 +153,4 @@ Answer these in your notebook (without re-watching):
 4. Name your 5 capstone subjects (which real business or product will each one be about?)
 5. Where will your portfolio live (Notion / Read.cv / Webflow / GitHub Pages)?
 
-If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If you can't answer #4 yet, that's the most important homework — you can't start Capstone 2 without it.
+If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If you can't answer #4 yet, that's the most important homework, you can't start Capstone 2 without it.

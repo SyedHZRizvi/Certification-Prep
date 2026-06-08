@@ -22,14 +22,14 @@
 | Family | Pick | Key size | Status |
 |--------|------|----------|--------|
 | Symmetric | **AES-GCM** | 128 / 256 | ✅ Default |
-| Symmetric (legacy) | 3DES, DES, RC4 | — | ❌ Deprecated/broken |
+| Symmetric (legacy) | 3DES, DES, RC4 |, | ❌ Deprecated/broken |
 | Asymmetric | **RSA** | 2048 (min) / 3072+ | ✅ Common |
 | Asymmetric | **ECC / ECDSA** | 256-bit ≈ RSA 3072 | ✅ Modern, smaller |
-| Key exchange | **ECDHE** (or DHE) | — | ✅ PFS |
-| Hash | **SHA-256 / SHA-512 / SHA-3** | — | ✅ |
-| Hash (broken) | MD5, SHA-1 | — | ❌ |
-| MAC | **HMAC-SHA256** | — | ✅ |
-| Password hash | **bcrypt / Argon2 / scrypt / PBKDF2** | — | ✅ Use with salt |
+| Key exchange | **ECDHE** (or DHE) |, | ✅ PFS |
+| Hash | **SHA-256 / SHA-512 / SHA-3** |, | ✅ |
+| Hash (broken) | MD5, SHA-1 |, | ❌ |
+| MAC | **HMAC-SHA256** |, | ✅ |
+| Password hash | **bcrypt / Argon2 / scrypt / PBKDF2** |, | ✅ Use with salt |
 
 ---
 
@@ -115,7 +115,7 @@ Root CA  ──(signs)──▶  Intermediate CA  ──(signs)──▶  Server
 
 | Mode | Notes |
 |------|-------|
-| **ECB** | ❌ Never use — patterns leak |
+| **ECB** | ❌ Never use, patterns leak |
 | **CBC** | Confidentiality only; needs IV |
 | **CTR** | Stream-like, parallelizable |
 | **GCM** | ✅ Authenticated encryption (conf + integrity) |
@@ -142,7 +142,7 @@ Root CA  ──(signs)──▶  Intermediate CA  ──(signs)──▶  Server
 2. What is PFS and which algorithms provide it? ___
 3. Difference between TPM, HSM, KMS? ___
 4. Wildcard cert covers what? Does NOT cover what? ___
-5. Password storage — which 4 algorithms are acceptable? ___
+5. Password storage, which 4 algorithms are acceptable? ___
 
 If you can answer in 60 seconds, you own this module. ✅
 

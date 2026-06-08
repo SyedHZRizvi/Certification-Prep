@@ -3,12 +3,12 @@ permalink: /35-Motion-Graphics-UI-Animation/Practice-Exams/Final-Mock-Exam/
 title: "Final Mock Exam: Motion Graphics & UI Animation"
 ---
 
-# 🏆 Final Mock Exam — Motion Graphics & UI Animation
+# 🏆 Final Mock Exam, Motion Graphics & UI Animation
 
 **Covers:** All 10 Modules  
 **Time:** 90 minutes  
 **Questions:** 60  
-**Passing Score:** 85% (51/60) — Adobe Certified Professional standard  
+**Passing Score:** 85% (51/60), Adobe Certified Professional standard  
 **Format:** Multiple choice + scenario-based questions
 
 > Score 85%+ before claiming you're "showreel-ready." These questions are written from the same skill rubrics used by Adobe, School of Motion, and studio creative directors.
@@ -39,7 +39,7 @@ D. Animation-fill-mode
 A UI button scales down to 95% when tapped and returns to 100% on release. This primarily communicates:
 
 A. That the button is selected  
-B. Affordance — the button is pressable  
+B. Affordance, the button is pressable  
 C. That the button is loading  
 D. Error state  
 
@@ -109,7 +109,7 @@ D. 1:1
 An audio transient is:
 
 A. The decay of a sound  
-B. The initial attack — first milliseconds of amplitude rise  
+B. The initial attack, first milliseconds of amplitude rise  
 C. A transitional SFX effect  
 D. The reverberation tail of a sound  
 
@@ -139,7 +139,7 @@ D. ease
 The "Ramp Up" Range Selector Shape creates:
 
 A. A hard, abrupt transition between affected and unaffected characters  
-B. A soft, gradual transition — characters partially animated in the overlap zone  
+B. A soft, gradual transition, characters partially animated in the overlap zone  
 C. An animation that ramps up in speed  
 D. A transition that affects the top of characters first  
 
@@ -230,7 +230,7 @@ A creative director critiques your showreel: "The fourth piece brings the whole 
 
 A. Add more pieces after it to balance it out  
 B. Move it to the middle of the reel  
-C. Cut the piece — the director's instinct matches the ruthless edit rule  
+C. Cut the piece, the director's instinct matches the ruthless edit rule  
 D. Replace it with a title card explaining the context  
 
 ---
@@ -328,7 +328,7 @@ D. Adobe specification for cross-platform animation
 ### 32.
 Scenario: A client sends a "quick tweak" request that would require rebuilding the entire motion system. Your response should be:
 
-A. Absorb the change — client satisfaction is paramount  
+A. Absorb the change, client satisfaction is paramount  
 B. Acknowledge, offer a separate quote for the additional scope  
 C. Ask the client to submit the request through formal change management  
 D. Decline and refer to the original contract  
@@ -369,7 +369,7 @@ D. Variable-speed, spring-eased animation
 A donut chart in After Effects uses which technique to create the center hole?
 
 A. Erase tool applied to the center  
-B. Track Matte — a circular shape layer cuts out the center  
+B. Track Matte, a circular shape layer cuts out the center  
 C. The Doughnut shape option in the shape layer  
 D. Applying negative scale to the inner region  
 
@@ -408,10 +408,10 @@ D. 2021
 ### 40.
 An animated bar chart's bars should have their anchor point at:
 
-A. Top center — so bars grow downward from the top  
-B. Center — so bars scale symmetrically  
-C. Bottom center — so bars grow upward from the baseline  
-D. Left center — so bars wipe in from the left  
+A. Top center, so bars grow downward from the top  
+B. Center, so bars scale symmetrically  
+C. Bottom center, so bars grow upward from the baseline  
+D. Left center, so bars wipe in from the left  
 
 ---
 
@@ -420,7 +420,7 @@ D. Left center — so bars wipe in from the left
 
 A. Only for accessibility-specific builds  
 B. Only if the animation exceeds 500ms  
-C. Always — it is non-optional  
+C. Always, it is non-optional  
 D. Only for users who have explicitly requested accessibility settings  
 
 ---
@@ -429,7 +429,7 @@ D. Only for users who have explicitly requested accessibility settings
 The `loopOut("offset")` expression applied to a position property animating from 0 to 100px:
 
 A. Returns to 0px after each loop  
-B. Continuously adds 100px per loop cycle — infinite drift  
+B. Continuously adds 100px per loop cycle, infinite drift  
 C. Alternates between 0 and 100px  
 D. Holds at 100px after the first loop  
 
@@ -469,7 +469,7 @@ D. 75%
 Framer Motion's `transition={{ type: "spring" }}` creates animation that:
 
 A. Has a fixed duration of 300ms  
-B. Uses physics simulation — it settles naturally when spring reaches equilibrium  
+B. Uses physics simulation, it settles naturally when spring reaches equilibrium  
 C. Uses the browser's default spring easing  
 D. Plays 3 times before stopping  
 
@@ -480,7 +480,7 @@ The recommendation for visual events relative to audio transients is:
 
 A. Visual events should lag audio by 2 frames for a natural feel  
 B. Visual events should lead audio by ~1 frame for a tight, intentional feel  
-C. Visual events must be exactly on the transient — no deviation  
+C. Visual events must be exactly on the transient, no deviation  
 D. Visual events should lead audio by 4–5 frames for dramatic emphasis  
 
 ---
@@ -539,7 +539,7 @@ D. Unlimited rounds until client satisfaction
 In the data storytelling structure, after "establishing the metric," the next step is:
 
 A. Reveal the insight immediately  
-B. Show the baseline — the starting state of the data  
+B. Show the baseline, the starting state of the data  
 C. Add comparative annotations  
 D. Introduce the audio narration  
 
@@ -608,133 +608,133 @@ D. A call-to-action for immediate hiring
 ### 60.
 Scenario: You scored 75% on this mock exam. What should you do next?
 
-A. Claim interview-readiness — 75% is above the course passing threshold  
+A. Claim interview-readiness, 75% is above the course passing threshold  
 B. Review all incorrectly answered questions, re-read the relevant module sections, then attempt the exam again after 48+ hours  
 C. Move directly to building a showreel  
-D. The score is sufficient — no further study needed  
+D. The score is sufficient, no further study needed  
 
 ---
 
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1:  B — Timing. The number of frames = perceived weight and mass. More frames = heavier, slower = more inertia.
+1:  B, Timing. The number of frames = perceived weight and mass. More frames = heavier, slower = more inertia.
 
-2:  B — Easing functions (cubic-bezier). "Slow in and slow out" describes acceleration/deceleration = the easing curve.
+2:  B, Easing functions (cubic-bezier). "Slow in and slow out" describes acceleration/deceleration = the easing curve.
 
-3:  B — Affordance. Scale-down on tap communicates "this is pressable." The micro-interaction teaches interaction without instruction.
+3:  B, Affordance. Scale-down on tap communicates "this is pressable." The micro-interaction teaches interaction without instruction.
 
-4:  B — pingpong: plays forward to end, then reverses backward to start, alternating.
+4:  B, pingpong: plays forward to end, then reverses backward to start, alternating.
 
-5:  B — 67 cells filled = 67%. Each cell = 1%.
+5:  B, 67 cells filled = 67%. Each cell = 1%.
 
-6:  B — The Invert step applies a CSS transform (translate + scale) to make the element appear still at its First position, despite being in the Last position in the DOM.
+6:  B, The Invert step applies a CSS transform (translate + scale) to make the element appear still at its First position, despite being in the Last position in the DOM.
 
-7:  C — Skeleton screen. Per NNGroup: 20–40% reduction in perceived wait time. Provides layout context that spinners cannot.
+7:  C, Skeleton screen. Per NNGroup: 20–40% reduction in perceived wait time. Provides layout context that spinners cannot.
 
-8:  C — .json Lottie JSON format.
+8:  C, .json Lottie JSON format.
 
-9:  C — 9:16 vertical portrait.
+9:  C, 9:16 vertical portrait.
 
-10: B — A transient is the initial attack of a sound. The sharp amplitude rise at the very beginning.
+10: B, A transient is the initial attack of a sound. The sharp amplitude rise at the very beginning.
 
-11: B — time * 60 = 60 degrees per second → one full rotation every 360/60 = 6 seconds.
+11: B, time * 60 = 60 degrees per second → one full rotation every 360/60 = 6 seconds.
 
-12: C — ease-out for entrances (elements decelerate as they arrive). ease-in for exits.
+12: C, ease-out for entrances (elements decelerate as they arrive). ease-in for exits.
 
-13: B — Ramp Up creates a soft, gradual transition — characters in the overlap zone are partially affected, creating a smooth reveal.
+13: B, Ramp Up creates a soft, gradual transition, characters in the overlap zone are partially affected, creating a smooth reveal.
 
-14: B — Bodymovin (now LottieFiles for AE) exports AE animations as Lottie JSON.
+14: B, Bodymovin (now LottieFiles for AE) exports AE animations as Lottie JSON.
 
-15: B — exit in Framer Motion plays when the component unmounts. Requires AnimatePresence wrapper.
+15: B, exit in Framer Motion plays when the component unmounts. Requires AnimatePresence wrapper.
 
-16: C — 16–235. Full range is 0–255 but broadcast legal limits luminance to prevent signal issues.
+16: C, 16–235. Full range is 0–255 but broadcast legal limits luminance to prevent signal issues.
 
-17: D — 85% is the target on this course's Final Mock. Below 85% = not yet interview-ready.
+17: D, 85% is the target on this course's Final Mock. Below 85% = not yet interview-ready.
 
-18: B — Offset swept from -100% to 100% moves the animator's effect window progressively across characters, left to right.
+18: B, Offset swept from -100% to 100% moves the animator's effect window progressively across characters, left to right.
 
-19: C — Effect > Generate > Audio Spectrum.
+19: C, Effect > Generate > Audio Spectrum.
 
-20: B — React Spring uses physics: mass, tension (stiffness), friction. Not duration-based keyframes.
+20: B, React Spring uses physics: mass, tension (stiffness), friction. Not duration-based keyframes.
 
-21: B — Seamless loop: last frame exactly matches first frame. The transition is invisible.
+21: B, Seamless loop: last frame exactly matches first frame. The transition is invisible.
 
-22: C — Cut the piece. The ruthless edit rule: if it brings the reel down, it costs more than it contributes.
+22: C, Cut the piece. The ruthless edit rule: if it brings the reel down, it costs more than it contributes.
 
-23: B — valueAtTime(time - 0.3) samples Layer A's position from 0.3 seconds ago. Layer B lags 0.3 seconds behind.
+23: B, valueAtTime(time - 0.3) samples Layer A's position from 0.3 seconds ago. Layer B lags 0.3 seconds behind.
 
-24: A — "top 50%" = when the top of the trigger element reaches 50% (center) of the viewport.
+24: A, "top 50%" = when the top of the trigger element reaches 50% (center) of the viewport.
 
-25: B — Motion Bro is an AE extension for managing and previewing preset packs.
+25: B, Motion Bro is an AE extension for managing and previewing preset packs.
 
-26: B — Trim Paths End: 0% = nothing visible, 100% = full path drawn. Progressive path reveal.
+26: B, Trim Paths End: 0% = nothing visible, 100% = full path drawn. Progressive path reveal.
 
-27: B — Economy: the simplest motion achieving the goal. Restraint amplifies the moments of exaggeration.
+27: B, Economy: the simplest motion achieving the goal. Restraint amplifies the moments of exaggeration.
 
-28: B — Same number of anchor points. AE maps points by number; mismatches cause twisting.
+28: B, Same number of anchor points. AE maps points by number; mismatches cause twisting.
 
-29: B — Sweetening: subtle SFX that enhance the sonic environment without calling attention to themselves.
+29: B, Sweetening: subtle SFX that enhance the sonic environment without calling attention to themselves.
 
-30: B — index returns layer position in the stack. 1 = topmost layer.
+30: B, index returns layer position in the stack. 1 = topmost layer.
 
-31: B — The Web Animations API is native to the browser — no external library required.
+31: B, The Web Animations API is native to the browser, no external library required.
 
-32: B — Acknowledge and offer a separate quote for additional scope. Never absorb without agreement.
+32: B, Acknowledge and offer a separate quote for additional scope. Never absorb without agreement.
 
-33: B — Option+Click (Mac) / Alt+Click (Windows) the stopwatch adds an expression.
+33: B, Option+Click (Mac) / Alt+Click (Windows) the stopwatch adds an expression.
 
-34: B — AEJuice Starter Pack is the free tier offering 900+ animations.
+34: B, AEJuice Starter Pack is the free tier offering 900+ animations.
 
-35: C — Ambient/minimal audio matches slow, smooth, low-frequency wiggle motion in the Tone of Motion matrix.
+35: C, Ambient/minimal audio matches slow, smooth, low-frequency wiggle motion in the Tone of Motion matrix.
 
-36: B — Track Matte with a circular shape cuts the center. No native doughnut tool exists in AE shape layers.
+36: B, Track Matte with a circular shape cuts the center. No native doughnut tool exists in AE shape layers.
 
-37: B — 200–300ms. The Google Material Design motion standard for UI transitions.
+37: B, 200–300ms. The Google Material Design motion standard for UI transitions.
 
-38: B — '-=0.2' means the animation starts 0.2 seconds before the previous animation's end — creating a 0.2s overlap.
+38: B, '-=0.2' means the animation starts 0.2 seconds before the previous animation's end, creating a 0.2s overlap.
 
-39: C — 2019. The Netflix "tudum" sonic logo was introduced in 2019.
+39: C, 2019. The Netflix "tudum" sonic logo was introduced in 2019.
 
-40: C — Bottom center anchor. Scale Y animates upward from baseline. Top center would animate downward.
+40: C, Bottom center anchor. Scale Y animates upward from baseline. Top center would animate downward.
 
-41: C — Always. prefers-reduced-motion is not optional. Users with vestibular disorders depend on it.
+41: C, Always. prefers-reduced-motion is not optional. Users with vestibular disorders depend on it.
 
-42: B — loopOut("offset") adds the delta (100px) each loop. Continuous drift: 0→100, 100→200, 200→300...
+42: B, loopOut("offset") adds the delta (100px) each loop. Continuous drift: 0→100, 100→200, 200→300...
 
-43: B — An ellipse mask path on the solid layer. The Audio Spectrum effect draws along the mask path in circular mode.
+43: B, An ellipse mask path on the solid layer. The Audio Spectrum effect draws along the mask path in circular mode.
 
-44: C — Similar styles kept away from each other. Don't place two kinetic type pieces adjacent — it makes the reel feel narrow.
+44: C, Similar styles kept away from each other. Don't place two kinetic type pieces adjacent, it makes the reel feel narrow.
 
-45: C — Title Safe = 80%. Action Safe = 93.75%. Text and logos stay inside the 80% region.
+45: C, Title Safe = 80%. Action Safe = 93.75%. Text and logos stay inside the 80% region.
 
-46: B — Spring type uses physics. The animation settles when the spring reaches equilibrium — no fixed duration.
+46: B, Spring type uses physics. The animation settles when the spring reaches equilibrium, no fixed duration.
 
-47: B — Lead audio by ~1 frame. Visual slightly ahead = tight, intentional. Visual lagging = sluggish.
+47: B, Lead audio by ~1 frame. Visual slightly ahead = tight, intentional. Visual lagging = sluggish.
 
-48: C — sRGB. Social platforms process with sRGB assumptions. Adobe RGB or wider gamut can appear washed out.
+48: C, sRGB. Social platforms process with sRGB assumptions. Adobe RGB or wider gamut can appear washed out.
 
-49: B — Music (foundation) + SFX (events) + Ambient/Atmosphere (texture). The three-layer model.
+49: B, Music (foundation) + SFX (events) + Ambient/Atmosphere (texture). The three-layer model.
 
-50: C — width triggers layout recalculation (expensive). transform, opacity, and filter are GPU-accelerated.
+50: C, width triggers layout recalculation (expensive). transform, opacity, and filter are GPU-accelerated.
 
-51: B — seedRandom(index, true) gives each layer a unique noise seed, creating unique wiggle patterns.
+51: B, seedRandom(index, true) gives each layer a unique noise seed, creating unique wiggle patterns.
 
-52: B — 2 rounds, defined scope. The industry standard. Always stated explicitly in proposals.
+52: B, 2 rounds, defined scope. The industry standard. Always stated explicitly in proposals.
 
-53: B — Show the baseline after establishing the metric. Context before change.
+53: B, Show the baseline after establishing the metric. Context before change.
 
-54: C — Notion: extreme restraint (productivity tool). Linear: motion as brand differentiator (published motion spec).
+54: C, Notion: extreme restraint (productivity tool). Linear: motion as brand differentiator (published motion spec).
 
-55: B — 9:16 (mobile-first) master, then 16:9 reframe for LinkedIn. Never start in 16:9 for mobile content.
+55: B, 9:16 (mobile-first) master, then 16:9 reframe for LinkedIn. Never start in 16:9 for mobile content.
 
-56: B — ease(time, 1, 3, 0, 100): smooth transition from 0 to 100 between times 1 second and 3 seconds.
+56: B, ease(time, 1, 3, 0, 100): smooth transition from 0 to 100 between times 1 second and 3 seconds.
 
-57: B — Affordance signaling: animation that communicates HOW to interact (tap, drag, swipe, expand).
+57: B, Affordance signaling: animation that communicates HOW to interact (tap, drag, swipe, expand).
 
-58: B — Walter Murch's sync philosophy: every visual event should have an audio consequence or a deliberate reason for silence.
+58: B, Walter Murch's sync philosophy: every visual event should have an audio consequence or a deliberate reason for silence.
 
-59: B — Name, contact information, and website URL. The Close is professional information, not another animation.
+59: B, Name, contact information, and website URL. The Close is professional information, not another animation.
 
-60: B — Review incorrect questions, re-read module sections, retake after 48+ hours. 85% is required to claim interview-readiness.
+60: B, Review incorrect questions, re-read module sections, retake after 48+ hours. 85% is required to claim interview-readiness.
 ```

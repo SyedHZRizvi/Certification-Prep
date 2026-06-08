@@ -56,7 +56,7 @@ D. Sequencer Level Sequence
 ### Q6. In Valorant's animation system (per Riot Games GDC 2020), what was the primary criterion that drove animation design decisions?
 
 A. Maximum visual realism to attract players
-B. Competitive clarity — silhouette readability at distance
+B. Competitive clarity, silhouette readability at distance
 C. Lowest possible bone count for mobile optimization
 D. Cinematic quality matching animated films
 
@@ -227,28 +227,28 @@ D. Blend Space 2D with Yaw and Pitch axes
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — AnimGraph contains animation logic (pose nodes, state machines, blend nodes)
-Q2:  B — Event Graph sets variables by reading the owning pawn each tick
-Q3:  B — Blend Space interpolates between poses based on parameter axes
-Q4:  B — Normalize both axes to the same range to prevent interpolation bias
-Q5:  C — Animation Montage for one-shot animation overrides
-Q6:  B — Valorant's primary criterion was competitive clarity / silhouette readability
-Q7:  A — Aim Offset is a Blend Space of additive aiming poses (Yaw × Pitch)
-Q8:  B — Layered Blend Per Bone ≈ Unity's Avatar Mask with a layer
-Q9:  B — Control Rig runs on animation thread / GPU-compatible → 60fps on Xbox One
-Q10: B — Slot marks the AnimGraph point where Montages/Sequencer override the base pose
-Q11: C — AnimInstance->Montage_Play(AttackMontage, 1.0f)
-Q12: C — Sequencer ≈ Unity Timeline (linear track-based editor)
-Q13: D — MetaHuman has ~265 facial pose space deformation controls
-Q14: B — Cached Pose stores a computed pose for reuse in multiple graph branches
-Q15: B — Fast interpolation makes direction changes feel immediate, no input lag
-Q16: B — FABRIK = Forward And Backward Reaching IK; multi-joint IK solver
-Q17: C — 0.15 seconds max transition blend time in Gears 5's cover system
-Q18: B — Event Tick fires each game tick, correct for per-frame variable updates
-Q19: B — Apply Additive adds an additive pose on top of a base pose
-Q20: B — Blend Spaces interpolate continuously; state machines switch discretely
-Q21: B — Animation Notify ≈ Unity's Animation Event
-Q22: B — Look At rotates a bone toward a specified world-space target
-Q23: B — Animation Montage with configured blend in/out times
-Q24: C — MetaHuman Animator (UE5.1+) processes video capture into facial animation
+Q1:  B, AnimGraph contains animation logic (pose nodes, state machines, blend nodes)
+Q2:  B, Event Graph sets variables by reading the owning pawn each tick
+Q3:  B, Blend Space interpolates between poses based on parameter axes
+Q4:  B, Normalize both axes to the same range to prevent interpolation bias
+Q5:  C, Animation Montage for one-shot animation overrides
+Q6:  B, Valorant's primary criterion was competitive clarity / silhouette readability
+Q7:  A, Aim Offset is a Blend Space of additive aiming poses (Yaw × Pitch)
+Q8:  B, Layered Blend Per Bone ≈ Unity's Avatar Mask with a layer
+Q9:  B, Control Rig runs on animation thread / GPU-compatible → 60fps on Xbox One
+Q10: B, Slot marks the AnimGraph point where Montages/Sequencer override the base pose
+Q11: C, AnimInstance->Montage_Play(AttackMontage, 1.0f)
+Q12: C, Sequencer ≈ Unity Timeline (linear track-based editor)
+Q13: D, MetaHuman has ~265 facial pose space deformation controls
+Q14: B, Cached Pose stores a computed pose for reuse in multiple graph branches
+Q15: B, Fast interpolation makes direction changes feel immediate, no input lag
+Q16: B, FABRIK = Forward And Backward Reaching IK; multi-joint IK solver
+Q17: C, 0.15 seconds max transition blend time in Gears 5's cover system
+Q18: B, Event Tick fires each game tick, correct for per-frame variable updates
+Q19: B, Apply Additive adds an additive pose on top of a base pose
+Q20: B, Blend Spaces interpolate continuously; state machines switch discretely
+Q21: B, Animation Notify ≈ Unity's Animation Event
+Q22: B, Look At rotates a bone toward a specified world-space target
+Q23: B, Animation Montage with configured blend in/out times
+Q24: C, MetaHuman Animator (UE5.1+) processes video capture into facial animation
 ```

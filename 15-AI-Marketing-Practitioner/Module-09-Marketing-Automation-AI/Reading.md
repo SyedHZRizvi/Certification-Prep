@@ -1,6 +1,6 @@
 # Module 9: Marketing Automation + AI Agents 🤖
 
-> **Why this module matters:** A campaign without automation is a campaign with a leaky bucket. Every lead that doesn't get nurtured, every cart that doesn't get recovered, every customer that doesn't get a thank-you — that's money on the floor. This module wires it all up.
+> **Why this module matters:** A campaign without automation is a campaign with a leaky bucket. Every lead that doesn't get nurtured, every cart that doesn't get recovered, every customer that doesn't get a thank-you, that's money on the floor. This module wires it all up.
 
 ---
 
@@ -26,14 +26,14 @@ Results, publicly shared:
 The lesson: a campaign that ends at "thanks, we'll be in touch" is wasting your ad spend. The automation that follows the conversion is where most of the value gets extracted. This module wires up that automation.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Conversion events and tracking (Pixel, CAPI, GA4) — covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - LinkedIn Lead Gen Forms and CRM hand-offs — covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
-> - CDP-fed audience sync concepts — covered in [Module 6](../Module-06-Programmatic-Retargeting/Reading.md)
+> - Conversion events and tracking (Pixel, CAPI, GA4), covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
+> - LinkedIn Lead Gen Forms and CRM hand-offs, covered in [Module 5](../Module-05-TikTok-LinkedIn-Ads-B2B/Reading.md)
+> - CDP-fed audience sync concepts, covered in [Module 6](../Module-06-Programmatic-Retargeting/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
 
-## 🏗️ Marketing Automation 101 — The Conceptual Model
+## 🏗️ Marketing Automation 101, The Conceptual Model
 
 Marketing automation is software that:
 
@@ -113,10 +113,10 @@ IF/THEN: Did lead open Email 2?
 
 ### The 4 Core Workflows Every B2B Should Have
 
-1. **Hot Lead Workflow** — anyone who hits high-intent pages (pricing, demo, contact)
-2. **MQL → SQL Handoff** — when score crosses threshold, rep gets notified + lead gets prep emails
-3. **Customer Onboarding** — post-signup education flow
-4. **Re-engagement** — when contact goes inactive for 60+ days
+1. **Hot Lead Workflow**, anyone who hits high-intent pages (pricing, demo, contact)
+2. **MQL → SQL Handoff**, when score crosses threshold, rep gets notified + lead gets prep emails
+3. **Customer Onboarding**, post-signup education flow
+4. **Re-engagement**, when contact goes inactive for 60+ days
 
 ---
 
@@ -143,7 +143,7 @@ TRIGGER: "Checkout Started" event (last 24 hours, didn't complete)
    ↓
 DELAY: 1 hour
    ↓
-EMAIL 1: "You left something in your cart" — product image + return link
+EMAIL 1: "You left something in your cart", product image + return link
    ↓
 IF/THEN: Did they purchase?
    ├── YES → Exit
@@ -249,7 +249,7 @@ The LLM then orchestrates:
 ### The Claude API Tool Use Workflow
 
 ```python
-# Pseudocode example — what an actual AI agent looks like
+# Pseudocode example, what an actual AI agent looks like
 from anthropic import Anthropic
 
 client = Anthropic()
@@ -337,11 +337,11 @@ PURCHASER in Klaviyo →
    Trigger a "Thank You" SMS via Twilio
 ```
 
-This stack — automated cross-tool sync — is what made True Classic, ButcherBox, Glossier, and similar DTC brands able to scale to $100M+ with small teams.
+This stack automated cross-tool sync is what made True Classic, ButcherBox, Glossier, and similar DTC brands able to scale to $100M+ with small teams.
 
 ---
 
-## 🔌 Webhooks + APIs — The Glue You Should Understand
+## 🔌 Webhooks + APIs, The Glue You Should Understand
 
 You don't need to be a developer to use marketing automation. But you do need to understand 2 concepts:
 
@@ -367,7 +367,7 @@ An API is a way for one app to talk to another. Example calls:
 "Hey OpenAI API, generate copy for this prompt"
 ```
 
-In automation platforms, you usually don't write API calls directly — the platform handles it. But knowing what an API can do (read data, write data, trigger actions) helps you imagine what's possible.
+In automation platforms, you usually don't write API calls directly, the platform handles it. But knowing what an API can do (read data, write data, trigger actions) helps you imagine what's possible.
 
 🎯 **Exam tip**: "What is a webhook?" → "A URL that receives an HTTP POST when an event happens in another app."
 
@@ -435,8 +435,8 @@ The lesson: speed-to-lead automation isn't optional in 2026. Leads convert at 3-
 | **Action** | What the automation does (send email, add to list, etc.) |
 | **Branch** | A conditional fork in an automation (if/then) |
 | **Exit condition** | Rule that removes a contact from a workflow (e.g., "exit if purchased") |
-| **MQL** | Marketing Qualified Lead — engaged enough to be passed to sales |
-| **SQL** | Sales Qualified Lead — verified by sales as worth pursuing |
+| **MQL** | Marketing Qualified Lead, engaged enough to be passed to sales |
+| **SQL** | Sales Qualified Lead, verified by sales as worth pursuing |
 | **HubSpot Workflows** | HubSpot's automation engine |
 | **Klaviyo Flows** | Klaviyo's automation engine |
 | **Make.com** | Visual automation platform |
@@ -468,19 +468,19 @@ You now know:
 1. 🎥 Watch the videos in `Videos.md`
 2. ✏️ Take `Quiz.md`
 3. 📋 Review `Cheat-Sheet.md`
-4. ➡️ Move to [Module 10: Capstone — Launch a Real Campaign](../Module-10-Capstone-Launch-Real-Campaign/Reading.md)
+4. ➡️ Move to [Module 10: Capstone, Launch a Real Campaign](../Module-10-Capstone-Launch-Real-Campaign/Reading.md)
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
 Each prompt forces a judgment call. Argue from the frameworks in this module.
 
-1. HubSpot's speed-to-lead dropped from 4 hours to under 2 minutes via instant Slack pings. A team argues this volume of pings burns out sales reps. Build both sides — when does speed-to-lead helping conversion turn into burning out the humans on the other end?
+1. HubSpot's speed-to-lead dropped from 4 hours to under 2 minutes via instant Slack pings. A team argues this volume of pings burns out sales reps. Build both sides, when does speed-to-lead helping conversion turn into burning out the humans on the other end?
 2. Klaviyo recommends 7 must-have Flows (Welcome, Abandoned Cart, Browse, Post-Purchase, Win-Back, Birthday, Replenishment). A new DTC brand at $5K/month MRR says they'll only set up Welcome + Abandoned Cart "for now." Argue when the 80/20 is right, and when it leaves $20K+ on the table that would have been recovered.
 3. AI agents with Tool Use can call APIs and take actions. A founder wants to give Claude full write access to the marketing CRM. Walk through what could go right (10x ops efficiency) and what could go wrong (untrackable agent actions, lifecycle-stage damage, unsubscribe complaint cascades). What guardrails would you require before authorizing agent write access?
 4. Gmail/Yahoo's 2024 bulk-sender requirements (SPF + DKIM + DMARC + < 0.3% spam complaint rate) effectively raise the floor on email marketing. Defend the case that this is GOOD for the ecosystem and the case that it favors entrenched senders over startups. What does each side miss?
-5. The reading argues most marketers underuse automation. But over-automation can feel cold — every campaign reply is a robot, every "personal" email is templated. Where does the line fall between productive automation and brand-eroding automation, and how would you audit your own stack against it?
+5. The reading argues most marketers underuse automation. But over-automation can feel cold, every campaign reply is a robot, every "personal" email is templated. Where does the line fall between productive automation and brand-eroding automation, and how would you audit your own stack against it?
 
 ---
 
@@ -493,10 +493,10 @@ Each prompt forces a judgment call. Argue from the frameworks in this module.
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [HubSpot Academy — Marketing Automation Courses (Free)](https://academy.hubspot.com/)
-- 📖 [Klaviyo Academy](https://academy.klaviyo.com/) — official free Klaviyo training
-- 📖 [Make.com Academy](https://academy.make.com/) — visual automation training
-- 📖 [Anthropic — Claude API Tool Use Documentation](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)
+- 📖 [HubSpot Academy, Marketing Automation Courses (Free)](https://academy.hubspot.com/)
+- 📖 [Klaviyo Academy](https://academy.klaviyo.com/), official free Klaviyo training
+- 📖 [Make.com Academy](https://academy.make.com/), visual automation training
+- 📖 [Anthropic, Claude API Tool Use Documentation](https://docs.anthropic.com/en/docs/build-with-claude/tool-use)
 - 📖 [Gmail Bulk Sender Guidelines 2024](https://support.google.com/mail/answer/81126)
-- 📖 [Harvard Business Review — The Short Life of Online Sales Leads](https://hbr.org/2011/03/the-short-life-of-online-sales-leads) — the speed-to-lead research
-- 📖 [SaaStr — Drift Case Studies](https://www.saastr.com/) — B2B automation playbooks
+- 📖 [Harvard Business Review The Short Life of Online Sales Leads](https://hbr.org/2011/03/the-short-life-of-online-sales-leads) the speed-to-lead research
+- 📖 [SaaStr Drift Case Studies](https://www.saastr.com/) B2B automation playbooks

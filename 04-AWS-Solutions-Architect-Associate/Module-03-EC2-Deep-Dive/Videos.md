@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: EC2 Deep Dive
 
-> **How to use:** EC2 has more knobs than any other service. Don't skim the videos on purchase options and load balancers — those are exam gold.
+> **How to use:** EC2 has more knobs than any other service. Don't skim the videos on purchase options and load balancers, those are exam gold.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Spot Instances — Mixed Instance Policies</p>
+      <p class="vg-title">Spot Instances, Mixed Instance Policies</p>
       <p class="vg-creator">AWS Training</p>
       <span class="vg-duration">⏱ 25 min · Real cost savings</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Graviton vs x86 — Why Move?</p>
+      <p class="vg-title">Graviton vs x86, Why Move?</p>
       <p class="vg-creator">AWS</p>
       <span class="vg-duration">⏱ 18 min · ARM on AWS</span>
     </div>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **Stephane Maarek** | Best instance-type and pricing breakdowns |
-| **ExamPro** | Free SAA prep — heavy EC2 coverage |
+| **ExamPro** | Free SAA prep, heavy EC2 coverage |
 | **Be A Better Dev** | Hands-on demos in 15 min |
 | **AWS Events / re:Invent** | Deep architectural sessions |
 
@@ -144,7 +144,7 @@
 
 1. List the 6 instance family letters and one use case each.
 2. When would you pick Spot over Reserved Instances?
-3. ALB vs NLB — name 2 differences and a scenario for each.
+3. ALB vs NLB, name 2 differences and a scenario for each.
 4. What does a Launch Template do that a Launch Configuration cannot?
 5. What's the difference between Stop, Hibernate, and Terminate?
 

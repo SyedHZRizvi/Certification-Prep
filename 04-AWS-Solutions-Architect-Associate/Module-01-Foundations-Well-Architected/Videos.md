@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: AWS Foundations & Well-Architected
 
-> **How to use:** Click any card to search YouTube for the topic — top result is usually the freshest take. Watch in order, pause to take notes, then come back to the Quiz.
+> **How to use:** Click any card to search YouTube for the topic, top result is usually the freshest take. Watch in order, pause to take notes, then come back to the Quiz.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🏛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Well-Architected Framework — 6 Pillars</p>
+      <p class="vg-title">Well-Architected Framework, 6 Pillars</p>
       <p class="vg-creator">ExamPro / Andrew Brown</p>
       <span class="vg-duration">⏱ 20 min · Pillar-by-pillar walk-through</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">re:Invent — Well-Architected Deep Dive</p>
+      <p class="vg-title">re:Invent, Well-Architected Deep Dive</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 60 min · Real customer architectures</span>
     </div>
@@ -138,7 +138,7 @@
 | **ExamPro (Andrew Brown)** | Long-form free SAA course on YouTube |
 | **freeCodeCamp** | 10-hour AWS courses, completely free |
 | **Be A Better Dev** | Short, animated explainers of single services |
-| **AWS Training and Certification** | Official source — purest content |
+| **AWS Training and Certification** | Official source, purest content |
 
 ---
 
@@ -147,8 +147,8 @@
 Answer these in your notebook (without re-watching):
 
 1. What's the difference between an Availability Zone and a data center?
-2. Name the 6 pillars of the Well-Architected Framework — and one keyword each.
-3. On EC2, who is responsible for OS patching — you or AWS? What about on RDS?
+2. Name the 6 pillars of the Well-Architected Framework, and one keyword each.
+3. On EC2, who is responsible for OS patching, you or AWS? What about on RDS?
 4. Which is more resilient: Multi-AZ or Multi-Region? And which is more expensive?
 5. What are the three main cost drivers on AWS?
 

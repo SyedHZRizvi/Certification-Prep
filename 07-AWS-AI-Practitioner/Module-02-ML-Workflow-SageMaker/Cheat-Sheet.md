@@ -83,12 +83,12 @@
 
 ---
 
-## 📊 Model Monitor — 4 Drift Types
+## 📊 Model Monitor, 4 Drift Types
 
-1. **Data quality drift** — input distribution shifted
-2. **Model quality drift** — accuracy fell (needs labels)
-3. **Bias drift** — fairness metrics shifted
-4. **Feature attribution drift** — feature importance changed
+1. **Data quality drift**, input distribution shifted
+2. **Model quality drift**, accuracy fell (needs labels)
+3. **Bias drift**, fairness metrics shifted
+4. **Feature attribution drift**, feature importance changed
 
 ---
 
@@ -136,7 +136,7 @@ Usually wrong:
 2. Which endpoint type for spiky idle traffic? ___
 3. What service does OCR + form extraction? ___
 4. What does Clarify add on top of Model Monitor? ___
-5. Canvas vs Autopilot — one sentence each. ___
+5. Canvas vs Autopilot, one sentence each. ___
 
 ---
 

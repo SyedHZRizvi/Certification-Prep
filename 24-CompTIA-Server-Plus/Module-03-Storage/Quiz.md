@@ -1,4 +1,4 @@
-# ✏️ Module 3 Quiz: Storage — RAID, SAN, NAS
+# ✏️ Module 3 Quiz: Storage, RAID, SAN, NAS
 
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Aim for 21/26 minimum.
@@ -147,7 +147,7 @@ D. Manual
 
 ### Q18. Two data centers 4,000 km apart with 60 ms round-trip WAN. Strict RPO = 0 over this link would cause: *(Analyze)*
 A. No problem at all
-B. Severe write-latency penalties — synchronous replication is impractical at this distance; pick async with an acceptable RPO
+B. Severe write-latency penalties, synchronous replication is impractical at this distance; pick async with an acceptable RPO
 C. Improved performance
 D. No change in behavior
 
@@ -271,8 +271,8 @@ Backups have massive duplication. VDI golden images differ by minimal user-data 
 ### Q17: **B. Synchronous**
 80 km / 5 ms RTT is within metro range where synchronous replication is practical and RPO = 0 is required.
 
-### Q18: **B. Severe write-latency penalties — synchronous replication is impractical at this distance; pick async with an acceptable RPO**
-Light-in-fiber latency is ~5 ms per 1000 km one way. 4,000 km is ~40 ms one way / 80 ms round-trip even before equipment overhead. Synchronous writes wait for that on every write — application throughput collapses. Use async.
+### Q18: **B. Severe write-latency penalties, synchronous replication is impractical at this distance; pick async with an acceptable RPO**
+Light-in-fiber latency is ~5 ms per 1000 km one way. 4,000 km is ~40 ms one way / 80 ms round-trip even before equipment overhead. Synchronous writes wait for that on every write, application throughput collapses. Use async.
 
 ### Q19: **B. Dual-port connectivity for path redundancy**
 SAS drives have two ports, allowing connections to two HBAs/controllers. SATA has one. This is core to enterprise reliability.
@@ -312,7 +312,7 @@ Each storage need is matched to a fit-for-purpose tier: RAID 10 SSD for transact
 ## 🃏 Add To Your Flashcards
 
 - 6 RAID levels: min disks, capacity formula, fault tolerance, write penalty
-- Ports: iSCSI 3260, NFS 2049, SMB 445, FC (no IP port — FC fabric)
+- Ports: iSCSI 3260, NFS 2049, SMB 445, FC (no IP port, FC fabric)
 - WWN / WWPN / WWNN / IQN
 - Zoning (FC switch) vs LUN masking (array)
 - MPIO purpose + per-OS implementation
@@ -321,4 +321,4 @@ Each storage need is matched to a fit-for-purpose tier: RAID 10 SSD for transact
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Virtualization & Containers](../Module-04-Virtualization/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Virtualization & Containers](../Module-04-Virtualization/Reading.md)

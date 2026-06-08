@@ -4,7 +4,7 @@
 
 ---
 
-## 💾 Caching — Two Distinct Layers
+## 💾 Caching, Two Distinct Layers
 
 | Layer | What | Tools |
 |-------|------|-------|
@@ -205,7 +205,7 @@ Cover the answers and recite:
 
 1. Two cache types and when each? ___
 2. LiteLLM's three killer features? ___
-3. SLO targets — uptime, latency, quality? ___
+3. SLO targets, uptime, latency, quality? ___
 4. CI pipeline steps in order? ___
 5. Anthropic vs OpenAI vs Gemini cache tagging? ___
 
@@ -213,7 +213,7 @@ If you can answer all 5 in under 60 seconds, you own this module. ✅
 
 ---
 
-🎉 **You finished Module 8 — and the entire Prompt Engineering Specialist syllabus.**
+🎉 **You finished Module 8, and the entire Prompt Engineering Specialist syllabus.**
 
 ---
 
@@ -263,4 +263,4 @@ Next steps:
 1. Take [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md)
 2. Take the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
 3. Drill the [Master Flashcards](../Flashcards.md)
-4. Ship your capstone — 12 prompts, eval-tied, in version control
+4. Ship your capstone, 12 prompts, eval-tied, in version control

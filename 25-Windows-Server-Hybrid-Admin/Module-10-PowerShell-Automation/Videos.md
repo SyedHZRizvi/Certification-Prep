@@ -20,7 +20,7 @@
 
 # 🎥 Module 10 Videos: PowerShell, DSC & Automation
 
-> **How to use:** Click any card to search YouTube for the latest top result. Automation is the thread through both exams — heavily tested via drag-drop "complete this command" items.
+> **How to use:** Click any card to search YouTube for the latest top result. Automation is the thread through both exams, heavily tested via drag-drop "complete this command" items.
 
 ## ⭐ Essential watching (~95 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PowerShell 7 vs 5.1 — Differences</p>
+      <p class="vg-title">PowerShell 7 vs 5.1, Differences</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 20 min · powershell.exe vs pwsh.exe</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PowerShell Remoting — WinRM Deep Dive</p>
+      <p class="vg-title">PowerShell Remoting, WinRM Deep Dive</p>
       <p class="vg-creator">Server Academy</p>
       <span class="vg-duration">⏱ 22 min · 5985/5986, sessions</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">JEA — Constrained Admin Endpoints</p>
+      <p class="vg-title">JEA, Constrained Admin Endpoints</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 25 min · psrc / pssc / virtual accounts</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DSC — Declarative Config</p>
+      <p class="vg-title">DSC, Declarative Config</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 28 min · MOF, LCM, Push vs Pull</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Azure Automanage — One-Click Best Practices</p>
+      <p class="vg-title">Azure Automanage, One-Click Best Practices</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 14 min · Production vs Dev/Test</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Hybrid Runbook Worker — On-Prem Execution</p>
+      <p class="vg-title">Hybrid Runbook Worker, On-Prem Execution</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 16 min · Arc-based modern path</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">PowerShell SSH Remoting — Cross-Platform</p>
+      <p class="vg-title">PowerShell SSH Remoting, Cross-Platform</p>
       <p class="vg-creator">PSStudio</p>
       <span class="vg-duration">⏱ 14 min · PS 7 to Linux</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">IaC for Windows — Terraform + DSC</p>
+      <p class="vg-title">IaC for Windows, Terraform + DSC</p>
       <p class="vg-creator">HashiCorp Channel</p>
       <span class="vg-duration">⏱ 22 min · Modern config-as-code</span>
     </div>
@@ -145,11 +145,11 @@
 
 Answer these in your notebook:
 
-1. PowerShell 5.1 vs 7 — pick three differences?
+1. PowerShell 5.1 vs 7, pick three differences?
 2. WinRM ports for PSRemoting?
-3. JEA components — Role Capability File, Session Configuration File, Virtual Account — what does each do?
-4. DSC Push vs Pull — when each?
+3. JEA components Role Capability File, Session Configuration File, Virtual Account what does each do?
+4. DSC Push vs Pull, when each?
 5. What replaced Azure Automation DSC in 2023?
-6. Azure Automanage profiles — Production vs Dev/Test?
+6. Azure Automanage profiles, Production vs Dev/Test?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md) and then the [Practice Exams](../../../Practice-Exams/).

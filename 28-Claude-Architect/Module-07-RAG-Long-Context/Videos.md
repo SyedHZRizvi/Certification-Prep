@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: RAG & Long-Context with Claude
 
-> **How to use:** RAG is a deep topic with many opinions. Bias to Anthropic's "Contextual Retrieval" content first — it's the freshest authoritative take.
+> **How to use:** RAG is a deep topic with many opinions. Bias to Anthropic's "Contextual Retrieval" content first, it's the freshest authoritative take.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Anthropic Contextual Retrieval — Tutorial</p>
+      <p class="vg-title">Anthropic Contextual Retrieval, Tutorial</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 20 min · 49% failure reduction technique</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Long Context vs RAG — When to Pick Which</p>
+      <p class="vg-title">Long Context vs RAG, When to Pick Which</p>
       <p class="vg-creator">community / Anthropic</p>
       <span class="vg-duration">⏱ 15 min · The decision tree</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Citations API — Machine-Readable Grounding</p>
+      <p class="vg-title">Citations API, Machine-Readable Grounding</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 12 min · Audit-grade citations</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Hybrid Retrieval — BM25 + Vector + RRF</p>
+      <p class="vg-title">Hybrid Retrieval, BM25 + Vector + RRF</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 15 min · Beyond pure semantic</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Rerankers — The Last-Mile Accuracy Win</p>
+      <p class="vg-title">Rerankers, The Last-Mile Accuracy Win</p>
       <p class="vg-creator">Cohere / Voyage / community</p>
       <span class="vg-duration">⏱ 15 min · Cross-encoder vs bi-encoder</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Claude 1M Context Window — When It's Worth It</p>
+      <p class="vg-title">Claude 1M Context Window, When It's Worth It</p>
       <p class="vg-creator">Anthropic / community</p>
       <span class="vg-duration">⏱ 12 min · Cost-benefit at huge scale</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">pgvector — Postgres as a Vector DB</p>
+      <p class="vg-title">pgvector, Postgres as a Vector DB</p>
       <p class="vg-creator">Supabase / community</p>
       <span class="vg-duration">⏱ 20 min · Simplest viable stack</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">LlamaIndex — Production RAG with Claude</p>
+      <p class="vg-title">LlamaIndex, Production RAG with Claude</p>
       <p class="vg-creator">LlamaIndex</p>
       <span class="vg-duration">⏱ 25 min · Framework-flavored</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Agentic RAG — Iterative Retrieval</p>
+      <p class="vg-title">Agentic RAG, Iterative Retrieval</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 18 min · Agent-driven retrieval loops</span>
     </div>

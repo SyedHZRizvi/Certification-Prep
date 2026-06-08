@@ -204,7 +204,7 @@ D. Insider threat / revenge
 
 ### Q25 (Scenario). A pen-tester finds your perimeter exposes RDP (3389), SMB (445), and a Redis instance with no auth. Which threat vector category is in play? *(Create)*
 
-> *Create-level note:* this is best treated as a vulnerability-management triage exercise — you must integrate vector identification with remediation recommendation. (See PE-1 Q45 for the deeper variant.)
+> *Create-level note:* this is best treated as a vulnerability-management triage exercise, you must integrate vector identification with remediation recommendation. (See PE-1 Q45 for the deeper variant.)
 A. Email-based
 B. Open service ports
 C. Removable media
@@ -242,7 +242,7 @@ USB port control / endpoint device control specifically addresses removable-medi
 Smart-thermometer = IoT with default creds or weak network segmentation. The fish-tank story is the classic example.
 
 ### Q10: **C. CISA AIS**
-Automated Indicator Sharing — free, US govt-curated.
+Automated Indicator Sharing, free, US govt-curated.
 
 ### Q11: **B. Industry sector**
 FS-ISAC (financial), H-ISAC (health), MS-ISAC (state/local govt), etc.
@@ -310,4 +310,4 @@ RDP, SMB, exposed Redis = unprotected services reachable from the internet.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — Vulnerabilities & Attacks](../Module-05-Vulnerabilities-Attacks/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, Vulnerabilities & Attacks](../Module-05-Vulnerabilities-Attacks/Reading.md)

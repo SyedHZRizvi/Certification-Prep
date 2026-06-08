@@ -91,10 +91,10 @@ C. Developers
 D. Implementation Team
 
 ### Q15. A new project has well-defined, stable requirements and a fixed deadline. Should you use Scrum?
-A. Yes — Scrum works for everything
-B. No — Scrum is for complex problems with uncertainty
-C. Yes — but skip the retrospective
-D. Yes — but make sprints 6 weeks
+A. Yes, Scrum works for everything
+B. No, Scrum is for complex problems with uncertainty
+C. Yes, but skip the retrospective
+D. Yes, but make sprints 6 weeks
 
 ---
 
@@ -214,7 +214,7 @@ The 5 values: **Focus, Commitment, Courage, Respect, Openness** (FCCRO). Innovat
 Only the PO can cancel a Sprint. It's rare, only when the Sprint Goal becomes obsolete.
 
 ### Q6: **B. The objective of the Sprint**
-The Sprint Goal is *the* objective. Not a list of items — a single, coherent goal.
+The Sprint Goal is *the* objective. Not a list of items, a single, coherent goal.
 
 ### Q7: **C. Scrum is a framework**
 Per Scrum Guide: "Scrum is a lightweight **framework**." Not a methodology, not a process.
@@ -229,7 +229,7 @@ The 2020 Scrum Guide added "lean thinking" alongside empiricism.
 Quality is non-negotiable in Scrum. You may negotiate scope, never quality.
 
 ### Q11: **C. Openness**
-Openness enables sharing struggles, blockers, ignorance. Courage is also relevant (admitting requires courage), but Openness is the more direct fit. Both can be argued — exam typically picks Openness for "sharing/admitting" scenarios.
+Openness enables sharing struggles, blockers, ignorance. Courage is also relevant (admitting requires courage), but Openness is the more direct fit. Both can be argued, exam typically picks Openness for "sharing/admitting" scenarios.
 
 ### Q12: **B. Product Backlog**
 - **Product Backlog → Product Goal**
@@ -242,7 +242,7 @@ Each Sprint must produce a usable Increment. Multiple per sprint = fine. Less th
 ### Q14: **C. Developers**
 The 2020 Scrum Guide replaced "Development Team" with "Developers" to avoid implying a sub-team within the Scrum Team.
 
-### Q15: **B. No — Scrum is for complex problems**
+### Q15: **B. No, Scrum is for complex problems**
 Per Scrum Guide: "Scrum is...for complex problems." Stable, well-known requirements may suit predictive (Waterfall) approaches better.
 
 ### Q16: **B. Sprint Goal**
@@ -257,7 +257,7 @@ Scope can be clarified as more is learned. What's prohibited is changes that end
 Courage = tackling hard problems and speaking hard truths. Avoiding difficult conversations is a Courage gap (Openness is also adjacent, but Courage is the more direct fit for "difficult conversations").
 
 ### Q19: **B. The DoD's specific tools/practices**
-Scrum is deliberately silent on tools (Jira), estimation techniques (story points), and specific quality criteria — teams decide. Sprint Goal, Product Backlog, and Retrospective are all prescribed.
+Scrum is deliberately silent on tools (Jira), estimation techniques (story points), and specific quality criteria, teams decide. Sprint Goal, Product Backlog, and Retrospective are all prescribed.
 
 ### Q20: **C. Focus, Commitment, Courage, Respect, Openness**
 FCCRO. "Innovation," "Speed," and "Trust" are not Scrum values.
@@ -321,7 +321,7 @@ Direct from the Scrum Guide. NOT a methodology, NOT a process, NOT best practice
 | Q5 | Remember | Recall of who cancels Sprint |
 | Q6 | Understand | Define Sprint Goal in own words |
 | Q7 | Understand | Distinguish "framework" from "methodology" |
-| Q8 | Apply | Scenario — pick correct action |
+| Q8 | Apply | Scenario, pick correct action |
 | Q9 | Remember | Recall of Scrum's two foundations |
 | Q10 | Remember | Recall of quality rule |
 | Q11 | Apply | Map value to scenario (admitting "I don't know") |
@@ -342,7 +342,7 @@ Direct from the Scrum Guide. NOT a methodology, NOT a process, NOT best practice
 | Q26 | Analyze | Identify which Scrum rule is violated |
 | Q27 | Understand | Define what Scrum is |
 
-**Current distribution:** Remember 13 (48%), Understand 5 (19%), Apply 4 (15%), Analyze 2 (7%), Evaluate 2 (7%), Create 0 (0%). Recall-heavy — the new questions below add Apply/Analyze/Evaluate/Create depth.
+**Current distribution:** Remember 13 (48%), Understand 5 (19%), Apply 4 (15%), Analyze 2 (7%), Evaluate 2 (7%), Create 0 (0%). Recall-heavy, the new questions below add Apply/Analyze/Evaluate/Create depth.
 
 ---
 
@@ -350,8 +350,8 @@ Direct from the Scrum Guide. NOT a methodology, NOT a process, NOT best practice
 
 ### Q28. Your CTO has read the Scrum Guide and announces: "We follow the Guide exactly, so we should see results in 3 months." After 3 months, no measurable improvement. Analyzing this through the framework-vs-methodology lens, what's the MOST LIKELY error in the CTO's reasoning? *(Analyze)*
 A. The Scrum Guide is too detailed; they over-implemented
-B. Scrum is a framework — following the Guide is *necessary but not sufficient*; the team's practices inside the framework determine outcomes
-C. Three months is too short — Scrum requires 6 months minimum
+B. Scrum is a framework, following the Guide is *necessary but not sufficient*; the team's practices inside the framework determine outcomes
+C. Three months is too short, Scrum requires 6 months minimum
 D. The CTO should have hired a Scrum Master before starting
 
 ---
@@ -365,7 +365,7 @@ D. Lean and empiricism contradict each other; the Guide acknowledged the tension
 ---
 
 ### Q30. A team's Sprint Goal is "Enable users to reset passwords via email." Mid-Sprint, the PO realizes that an upcoming GDPR change requires *also* enabling SMS-based reset. The PO wants to add SMS reset to the current Sprint. Evaluating against the Scrum Guide, what's the correct response? *(Apply)*
-A. The PO can add SMS reset — they own the backlog
+A. The PO can add SMS reset, they own the backlog
 B. Coach the PO: scope can be *clarified* with the PO, but changes that *endanger the Sprint Goal* are prohibited. Adding SMS reset is a new goal; defer to next Sprint or cancel and re-plan
 C. The Developers should add SMS reset because regulations override Scrum
 D. The Scrum Master should cancel the Sprint
@@ -375,7 +375,7 @@ D. The Scrum Master should cancel the Sprint
 ### Q31. Salesforce's ADM transition (Module 2 case study) synchronized every team to the same 30-day Sprint boundary. Construct the case that this *enables* self-management AND the case that this *violates* self-management. Which is the stronger case for a 200-engineer org? *(Evaluate)*
 A. Synchronization is always anti-Scrum
 B. Synchronization is always pro-Scrum
-C. Synchronization enables self-management at scale by giving teams predictable integration points; teams still self-organize *within* the Sprint — the cadence is a shared constraint, not a directive
+C. Synchronization enables self-management at scale by giving teams predictable integration points; teams still self-organize *within* the Sprint, the cadence is a shared constraint, not a directive
 D. Self-management is unnecessary in orgs of 100+ people
 
 ---
@@ -396,22 +396,22 @@ D. 2-week Sprint with all events plus an extra "Sprint Zero" of 4 weeks for setu
 
 ---
 
-## 🎯 Answer key — Q28–Q33
+## 🎯 Answer key, Q28–Q33
 
 ### Q28: **B. Framework, not methodology**
-The Guide defines the *minimum* required structure (3 accountabilities, 5 events, 3 artifacts, 3 commitments). It deliberately leaves estimation, tooling, refinement practice, story format, and dozens of other choices to the team. Following the Guide *exactly* without filling in those choices well will produce no improvement — the team has to learn what works for *their* context. A is the opposite of true; C is arbitrary; D conflates with hiring practice.
+The Guide defines the *minimum* required structure (3 accountabilities, 5 events, 3 artifacts, 3 commitments). It deliberately leaves estimation, tooling, refinement practice, story format, and dozens of other choices to the team. Following the Guide *exactly* without filling in those choices well will produce no improvement, the team has to learn what works for *their* context. A is the opposite of true; C is arbitrary; D conflates with hiring practice.
 
 ### Q29: **B. Lean prevents ritual cruft**
-By 2020, Sutherland and Schwaber had seen 25 years of Scrum implementations accumulate ceremony bloat, over-engineered DoDs, refinement-as-meeting overload, and so on. Adding lean thinking explicitly invites teams to *eliminate waste* — including waste in their own Scrum practice. (A is factually wrong — lean is 1948+; C is invented; D is wrong — lean and empiricism are complementary, not contradictory.)
+By 2020, Sutherland and Schwaber had seen 25 years of Scrum implementations accumulate ceremony bloat, over-engineered DoDs, refinement-as-meeting overload, and so on. Adding lean thinking explicitly invites teams to *eliminate waste* including waste in their own Scrum practice. (A is factually wrong lean is 1948+; C is invented; D is wrong, lean and empiricism are complementary, not contradictory.)
 
 ### Q30: **B. Coach the PO**
-The Scrum Guide is explicit: scope can be clarified with the PO as more is learned, but changes that *endanger the Sprint Goal* are prohibited. SMS reset is a new goal, not a clarification of "email reset." Options: defer to next Sprint, or — *if* the email-reset goal has been rendered obsolete by GDPR — the PO can *cancel* the Sprint (rare). The SM should NOT cancel (D — only PO can); the team should not just add it (A, C).
+The Scrum Guide is explicit: scope can be clarified with the PO as more is learned, but changes that *endanger the Sprint Goal* are prohibited. SMS reset is a new goal, not a clarification of "email reset." Options: defer to next Sprint, or *if* the email-reset goal has been rendered obsolete by GDPR the PO can *cancel* the Sprint (rare). The SM should NOT cancel (D, only PO can); the team should not just add it (A, C).
 
 ### Q31: **C. Synchronization enables self-management at scale**
-The strongest defense for ADM-style synchronization is that cross-team integration points (release boundaries) impose a *constraint* on cadence but not on *how* teams work inside the Sprint. Each team still self-organizes within its Sprint. This is similar to all employees being required to attend an annual review meeting — the requirement is real, but doesn't dictate how they work day-to-day. Salesforce's experience supports this view: attrition went *down*, not up, after synchronization.
+The strongest defense for ADM-style synchronization is that cross-team integration points (release boundaries) impose a *constraint* on cadence but not on *how* teams work inside the Sprint. Each team still self-organizes within its Sprint. This is similar to all employees being required to attend an annual review meeting, the requirement is real, but doesn't dictate how they work day-to-day. Salesforce's experience supports this view: attrition went *down*, not up, after synchronization.
 
 ### Q32: **C. Deliberate incompleteness preserves self-organization**
-This is the Scrum Guide's own framing — Sutherland and Schwaber repeatedly emphasize that the Guide is "minimum sufficient" and that adding rules would defeat the framework's purpose. Teams in different contexts (regulated, distributed, hardware-coupled) need different practices; the Guide stays out of those choices. A, B, and D are dismissive non-answers.
+This is the Scrum Guide's own framing, Sutherland and Schwaber repeatedly emphasize that the Guide is "minimum sufficient" and that adding rules would defeat the framework's purpose. Teams in different contexts (regulated, distributed, hardware-coupled) need different practices; the Guide stays out of those choices. A, B, and D are dismissive non-answers.
 
 ### Q33: **B. 1-week Sprint with proportional timeboxes and a tight starting DoD**
 For a *new* team, 1-week Sprints maximize feedback cycles and force the team to encounter all 5 events quickly. Timeboxes scale proportionally (Planning 2 hr / Daily 15 min / Review 1 hr / Retro 45 min). Starting with a tight, achievable DoD ("deployable to staging") prevents the team from being crushed by perfectionism. Two PBIs to start is small enough to ship. A skips a required event; C delays critical learning (the Retro is *the* learning loop); D introduces "Sprint Zero" which is *not* in the Scrum Guide.
@@ -429,4 +429,4 @@ For a *new* team, 1-week Sprints maximize feedback cycles and force the team to 
 | Evaluate | 4 | 12% | within 20% |
 | Create | 2 | 6% | ~ 5% |
 
-Still above the 25% Remember ceiling — but no existing questions were modified (per the ADDITIVE-ONLY constraint). The new Q28–Q33 raise the floor of higher-Bloom coverage.
+Still above the 25% Remember ceiling, but no existing questions were modified (per the ADDITIVE-ONLY constraint). The new Q28–Q33 raise the floor of higher-Bloom coverage.

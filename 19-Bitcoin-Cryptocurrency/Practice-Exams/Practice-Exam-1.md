@@ -1,4 +1,4 @@
-# Practice Exam 1 — Bitcoin & Cryptocurrency
+# Practice Exam 1, Bitcoin & Cryptocurrency
 
 > **Conditions:** 30 questions · 30 minutes · Closed book.
 > **Pass mark:** 24/30 (~80%). The CBP real exam passes at ~70%, so aim higher in practice.
@@ -165,7 +165,7 @@ D. A random base64 string
 
 A. Private keys but no public keys
 B. The full seed phrase
-C. Public keys (xpub) only — can receive and view balances but cannot spend
+C. Public keys (xpub) only, can receive and view balances but cannot spend
 D. Encrypted credit-card data
 
 ---
@@ -297,11 +297,11 @@ D. The 21M supply cap
 
 ## 🎯 Detailed answer rationales
 
-> Every question explained: why the correct answer is right and why each distractor is wrong. This is the professional-grade discernment standard — not just "B is correct," but *what concept the wrong answers confuse with*.
+> Every question explained: why the correct answer is right and why each distractor is wrong. This is the professional-grade discernment standard, not just "B is correct," but *what concept the wrong answers confuse with*.
 
 **Q1. Answer: B**
-- **Why B is correct.** Satoshi Nakamoto posted *"Bitcoin: A Peer-to-Peer Electronic Cash System"* on October 31, 2008 to the metzdowd.com Cryptography Mailing List — a low-traffic cypherpunk forum (Nakamoto, 2008).
-- **Why the others are wrong.** A: January 3, 2009 is the Genesis-block date, not the white-paper date; bitcointalk.org didn't exist yet. C: May 22, 2010 is "Pizza Day" — the first BTC-for-goods purchase. D: December 2010 is when Satoshi made his last forum post and disappeared.
+- **Why B is correct.** Satoshi Nakamoto posted *"Bitcoin: A Peer-to-Peer Electronic Cash System"* on October 31, 2008 to the metzdowd.com Cryptography Mailing List, a low-traffic cypherpunk forum (Nakamoto, 2008).
+- **Why the others are wrong.** A: January 3, 2009 is the Genesis-block date, not the white-paper date; bitcointalk.org didn't exist yet. C: May 22, 2010 is "Pizza Day", the first BTC-for-goods purchase. D: December 2010 is when Satoshi made his last forum post and disappeared.
 - **Exam-takeaway.** Halloween 2008 = white paper. Three months later = Genesis. Memorize both dates.
 
 **Q2. Answer: C**
@@ -311,27 +311,27 @@ D. The 21M supply cap
 
 **Q3. Answer: A**
 - **Why A is correct.** The white paper's footnote [6] cites Back's Hashcash (1997). Footnote [b-money] cites Wei Dai (1998). Adam Back is among the few real people explicitly cited in the white paper's footnotes.
-- **Why others are wrong.** B: DigiCash predates the cypherpunks Satoshi cited but is not in the white-paper footnotes. C: Bit Gold is NOT cited in the white paper despite being the closest precursor — a source of 15 years of "Satoshi = Szabo?" speculation. D: Vitalik Buterin was 14 years old when the white paper was published; Ethereum was proposed in 2013.
+- **Why others are wrong.** B: DigiCash predates the cypherpunks Satoshi cited but is not in the white-paper footnotes. C: Bit Gold is NOT cited in the white paper despite being the closest precursor, a source of 15 years of "Satoshi = Szabo?" speculation. D: Vitalik Buterin was 14 years old when the white paper was published; Ethereum was proposed in 2013.
 - **Exam-takeaway.** Cited in white paper: Back (Hashcash), Dai (b-money), Merkle (trees). NOT cited: Szabo, Chaum.
 
 **Q4. Answer: A**
-- **Why A is correct.** Bitcoin's supply is capped at 20,999,999.9769 BTC, asymptotically — geometric series of `50 × 210,000 + 25 × 210,000 + ...` (Nakamoto, 2008, §6). Conventionally rounded to "21 million BTC."
-- **Why others are wrong.** B: Bitcoin is *explicitly* deflationary by design — no inflation. C: 100M is Litecoin's cap, not Bitcoin's. D: 1 billion satoshis = 10 BTC; satoshis aren't the unit of the cap.
+- **Why A is correct.** Bitcoin's supply is capped at 20,999,999.9769 BTC, asymptotically, geometric series of `50 × 210,000 + 25 × 210,000 + ...` (Nakamoto, 2008, §6). Conventionally rounded to "21 million BTC."
+- **Why others are wrong.** B: Bitcoin is *explicitly* deflationary by design, no inflation. C: 100M is Litecoin's cap, not Bitcoin's. D: 1 billion satoshis = 10 BTC; satoshis aren't the unit of the cap.
 - **Exam-takeaway.** 21M BTC = the most-tested numerical fact in the entire Bitcoin canon.
 
 **Q5. Answer: D**
 - **Why D is correct.** 1 BTC = 100,000,000 satoshis (10^8). The smallest divisible unit, named for Satoshi Nakamoto.
-- **Why others are wrong.** A: 1,000 is the millibit (mBTC). B: 1,000,000 is the microbit (μBTC / bit). C: Off by one order of magnitude — 10^9 not 10^8.
+- **Why others are wrong.** A: 1,000 is the millibit (mBTC). B: 1,000,000 is the microbit (μBTC / bit). C: Off by one order of magnitude, 10^9 not 10^8.
 - **Exam-takeaway.** 10^8 sats per BTC. The unit is named for Satoshi Nakamoto.
 
 **Q6. Answer: C**
 - **Why C is correct.** Bitcoin uses secp256k1, specified by SECG in 2000 with the equation `y² = x³ + 7 (mod p)`.
-- **Why others are wrong.** A: secp256r1 is NIST P-256 — used by TLS and Apple Secure Enclave but NOT by Bitcoin. Satoshi avoided NIST curves because of post-2007 suspicions (Dual_EC_DRBG controversy). B: Curve25519 is used by Signal, WireGuard, SSH — not Bitcoin. D: Brainpool curves are used in some EU systems, not Bitcoin.
+- **Why others are wrong.** A: secp256r1 is NIST P-256 used by TLS and Apple Secure Enclave but NOT by Bitcoin. Satoshi avoided NIST curves because of post-2007 suspicions (Dual_EC_DRBG controversy). B: Curve25519 is used by Signal, WireGuard, SSH not Bitcoin. D: Brainpool curves are used in some EU systems, not Bitcoin.
 - **Exam-takeaway.** secp256k**1** (Koblitz), not secp256**r1** (NIST random). Classic distractor.
 
 **Q7. Answer: A**
-- **Why A is correct.** `HASH160(x) = RIPEMD-160(SHA-256(x))` — SHA-256 first, then RIPEMD-160 (Antonopoulos, *Mastering Bitcoin* 2nd ed., Ch. 4).
-- **Why others are wrong.** B: Truncated SHA-512 is not the construction; RIPEMD is a separate algorithm. C: Order is reversed — SHA-256 first, then RIPEMD-160. D: HMAC-SHA-256 with that key is not a Bitcoin primitive.
+- **Why A is correct.** `HASH160(x) = RIPEMD-160(SHA-256(x))`, SHA-256 first, then RIPEMD-160 (Antonopoulos, *Mastering Bitcoin* 2nd ed., Ch. 4).
+- **Why others are wrong.** B: Truncated SHA-512 is not the construction; RIPEMD is a separate algorithm. C: Order is reversed, SHA-256 first, then RIPEMD-160. D: HMAC-SHA-256 with that key is not a Bitcoin primitive.
 - **Exam-takeaway.** Defense in depth: two different hash families. If either breaks, the other still protects.
 
 **Q8. Answer: C**
@@ -341,13 +341,13 @@ D. The 21M supply cap
 
 **Q9. Answer: A**
 - **Why A is correct.** Difficulty adjusts every 2,016 blocks (~2 weeks). Target is recomputed as `old × (actual_time / 1,209,600 sec)`, capped at ±4×.
-- **Why others are wrong.** B: 144 is blocks per day, not the epoch length. C: Difficulty does NOT recompute every block — it is fixed within an epoch. D: 210,000 is halving, not difficulty adjustment.
+- **Why others are wrong.** B: 144 is blocks per day, not the epoch length. C: Difficulty does NOT recompute every block, it is fixed within an epoch. D: 210,000 is halving, not difficulty adjustment.
 - **Exam-takeaway.** 2,016 = difficulty epoch. 210,000 = halving epoch. Confusing these is the #1 mistake on CBP.
 
 **Q10. Answer: B**
 - **Why B is correct.** Average block interval is 10 minutes, enforced by difficulty adjustment (Nakamoto, 2008, §11).
 - **Why others are wrong.** A: 1 minute is Litecoin's target (2.5 min on Litecoin, actually). C: 15 sec is roughly Ethereum's pre-Merge target. D: 1 hour would devastate confirmation latency.
-- **Exam-takeaway.** 10 minutes is a design parameter, not a physical law — chosen to balance propagation latency vs. confirmation speed.
+- **Exam-takeaway.** 10 minutes is a design parameter, not a physical law, chosen to balance propagation latency vs. confirmation speed.
 
 **Q11. Answer: D**
 - **Why D is correct.** The coinbase transaction is the first tx in every block, has no inputs (placeholder with arbitrary "coinbase field" data), and pays `block subsidy + total fees` to addresses chosen by the miner.
@@ -372,7 +372,7 @@ D. The 21M supply cap
 **Q15. Answer: D**
 - **Why D is correct.** BIP-32 (Pieter Wuille, 2012) defines hierarchical deterministic (HD) wallets that derive a tree of child keys from a single master seed via HMAC-SHA-512.
 - **Why others are wrong.** A: Mnemonic phrases are BIP-39, not BIP-32. B: Derivation paths like `m/44'/0'/0'` are BIP-44 (multi-account hierarchy). C: Schnorr signatures are BIP-340.
-- **Exam-takeaway.** BIP-32 = HD tree. BIP-39 = words. BIP-44 = paths. Three things, three BIPs — and exams routinely scramble them.
+- **Exam-takeaway.** BIP-32 = HD tree. BIP-39 = words. BIP-44 = paths. Three things, three BIPs, and exams routinely scramble them.
 
 **Q16. Answer: B**
 - **Why B is correct.** BIP-39 (Palatinus, Rusnák, Voisine, Bowe; 2013) defines mnemonic encoding of entropy into 12 or 24 English words from a 2,048-word list, with checksum bits.
@@ -382,27 +382,27 @@ D. The 21M supply cap
 **Q17. Answer: A**
 - **Why A is correct.** Standard BIP-39 seeds are 12 words (128 bits entropy) or 24 words (256 bits entropy), from a 2,048-word list. 11 bits per word.
 - **Why others are wrong.** B: PINs are device-unlock, not seed-phrase encoding. C: Hex would be brittle to transcribe. D: Base64 was rejected as harder for humans to remember and verify.
-- **Exam-takeaway.** 12 or 24 words. NOT 16, 18, 20, or 32 — distractors love these wrong counts.
+- **Exam-takeaway.** 12 or 24 words. NOT 16, 18, 20, or 32, distractors love these wrong counts.
 
 **Q18. Answer: C**
 - **Why C is correct.** A watch-only wallet holds an extended public key (xpub) and can derive receive addresses and view balances, but has no signing capability (Antonopoulos, *Mastering Bitcoin*, Ch. 5).
-- **Why others are wrong.** A: Reversed — watch-only has public keys, no privates. B: Holding the seed phrase IS full custody, not watch-only. D: Unrelated to credit cards.
+- **Why others are wrong.** A: Reversed, watch-only has public keys, no privates. B: Holding the seed phrase IS full custody, not watch-only. D: Unrelated to credit cards.
 - **Exam-takeaway.** Hardware-wallet workflow: laptop = watch-only (xpub), hardware device = signing (xprv). This separation is the whole point of "cold storage."
 
 **Q19. Answer: A**
 - **Why A is correct.** Industry standard (CCSS Level 3, plus Coinbase/Fidelity/BitGo published custody practices) is roughly 95% cold, 4% warm, 1% hot.
-- **Why others are wrong.** B: 50/50 hot/cold puts too much in hot wallets. C: Inverts the ratio — would replicate Mt. Gox's failure mode. D: 100% hot would be malpractice.
+- **Why others are wrong.** B: 50/50 hot/cold puts too much in hot wallets. C: Inverts the ratio, would replicate Mt. Gox's failure mode. D: 100% hot would be malpractice.
 - **Exam-takeaway.** Hot/warm/cold ratio is heavily tested. "Mostly cold" is the answer when in doubt.
 
 **Q20. Answer: D**
 - **Why D is correct.** Andreas Antonopoulos popularized this maxim in *Mastering Bitcoin* (2014) and countless conference talks; it has become the rallying cry for self-custody.
 - **Why others are wrong.** A: Hal Finney received the first transaction but is not the source of this phrase. B: Vitalik Buterin focuses on Ethereum-specific maxims. C: Satoshi Nakamoto wrote about trustless cash but did not coin this phrase.
-- **Exam-takeaway.** Attribution matters on certification exams — Andreas Antonopoulos for self-custody slogans, Nakamoto for the white paper, Wuille for BIP-32/Schnorr/Taproot.
+- **Exam-takeaway.** Attribution matters on certification exams, Andreas Antonopoulos for self-custody slogans, Nakamoto for the white paper, Wuille for BIP-32/Schnorr/Taproot.
 
 **Q21. Answer: B**
 - **Why B is correct.** Mt. Gox lost approximately 850,000 BTC in early 2014, of which ~142,000 have since been recovered for creditor distribution (Karpelès civil filings; trustee reports 2014-2024).
-- **Why others are wrong.** A: 100 BTC is trivial — would be a small hot wallet. C: 21M is total supply. D: 50 BTC was the original Genesis-era block subsidy.
-- **Exam-takeaway.** Mt. Gox is the canonical "what NOT to do" custody case — single hot wallet, no segregation, no multi-sig, no audit. Every modern custody framework is a response to it.
+- **Why others are wrong.** A: 100 BTC is trivial, would be a small hot wallet. C: 21M is total supply. D: 50 BTC was the original Genesis-era block subsidy.
+- **Exam-takeaway.** Mt. Gox is the canonical "what NOT to do" custody case, single hot wallet, no segregation, no multi-sig, no audit. Every modern custody framework is a response to it.
 
 **Q22. Answer: C**
 - **Why C is correct.** Mainnet Bitcoin P2P uses TCP port 8333 (binary, no TLS). Testnet3 = 18333; Signet = 38333; Regtest = 18444.
@@ -410,7 +410,7 @@ D. The 21M supply cap
 - **Exam-takeaway.** 8333 = Bitcoin mainnet. CompTIA-style port-memorization questions appear on CBSA too.
 
 **Q23. Answer: D**
-- **Why D is correct.** A full node validates, relays, and stores — but *does NOT mine* unless it is also configured as a miner. Most full nodes are not miners.
+- **Why D is correct.** A full node validates, relays, and stores, but *does NOT mine* unless it is also configured as a miner. Most full nodes are not miners.
 - **Why others are wrong.** A, B, C are all correct full-node duties.
 - **Exam-takeaway.** Miner ≠ Full Node. Many small miners delegate validation to a pool; the pool runs the full node. Module 3 of the course addresses this directly.
 
@@ -421,7 +421,7 @@ D. The 21M supply cap
 
 **Q25. Answer: D**
 - **Why D is correct.** Private keys are 256-bit numbers, so the keyspace is ~2^256 ≈ 1.158 × 10^77, comparable to the count of atoms in the observable universe (~10^80).
-- **Why others are wrong.** A, B, C all undercount by 32-200+ bits — would dramatically reduce security.
+- **Why others are wrong.** A, B, C all undercount by 32-200+ bits, would dramatically reduce security.
 - **Exam-takeaway.** 256-bit keyspace is so large that random collision probability is computationally zero. This is the security foundation of "32 random bytes can hold a trillion dollars."
 
 **Q26. Answer: C**
@@ -435,7 +435,7 @@ D. The 21M supply cap
 - **Exam-takeaway.** PoW source = Hashcash. The network/economic model draws from b-money. Memorize both attributions.
 
 **Q28. Answer: D**
-- **Why D is correct.** Cryptographic hashes are *one-way by design* — there is no "key" that reverses them. Reversibility would destroy pre-image resistance.
+- **Why D is correct.** Cryptographic hashes are *one-way by design*, there is no "key" that reverses them. Reversibility would destroy pre-image resistance.
 - **Why others are wrong.** A, B, C are textbook hash function properties (Stinson, *Cryptography: Theory and Practice*, 4th ed.).
 - **Exam-takeaway.** "Hashing is reversible" is always wrong on certification exams. Hashing is not encryption.
 
@@ -446,8 +446,8 @@ D. The 21M supply cap
 
 **Q30. Answer: B**
 - **Why B is correct.** Satoshi's phrase "one CPU one vote" describes how PoW makes Sybil attacks expensive: votes (block proposals) require burning CPU work, so creating many fake identities doesn't help unless you also pay the energy cost (Nakamoto, 2008, §4).
-- **Why others are wrong.** A: There's no shareholder vote — governance is emergent. C: Block-size limits are separate consensus rules. D: 21M cap is in §6, not §4.
-- **Exam-takeaway.** The modern formulation is "one joule one vote" — ASICs dominate, so the unit of voting is energy, not CPU cycles. This shift is the central tension of Module 5.
+- **Why others are wrong.** A: There's no shareholder vote, governance is emergent. C: Block-size limits are separate consensus rules. D: 21M cap is in §6, not §4.
+- **Exam-takeaway.** The modern formulation is "one joule one vote", ASICs dominate, so the unit of voting is energy, not CPU cycles. This shift is the central tension of Module 5.
 
 ---
 
@@ -455,7 +455,7 @@ D. The 21M supply cap
 
 | Score | Verdict |
 |-------|---------|
-| 28-30 | Excellent — proceed to Practice Exam 2 |
+| 28-30 | Excellent, proceed to Practice Exam 2 |
 | 24-27 | On track. Review wrong answers, then continue Modules 5-7 |
 | 18-23 | Re-study weak modules; redo this exam in 3 days |
 | <18 | Revisit Modules 1-4 in full |

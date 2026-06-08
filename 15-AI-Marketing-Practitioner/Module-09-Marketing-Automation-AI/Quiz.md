@@ -219,7 +219,7 @@ Klaviyo's Shopify integration is best-in-class. Built specifically for ecom flow
 HubSpot's CRM + Marketing Hub combo is purpose-built for B2B SaaS + content marketing. MQL→SQL handoff is native.
 
 ### Q4: **C. 38%**
-Drift publicly shared at SaaStr 2022 that their chatbot+automation reduced average sales cycle from 67 days to ~42 days — a 38% reduction.
+Drift publicly shared at SaaStr 2022 that their chatbot+automation reduced average sales cycle from 67 days to ~42 days, a 38% reduction.
 
 ### Q5: **B. Workflows**
 HubSpot calls it Workflows (available on Marketing Hub Professional+).
@@ -237,13 +237,13 @@ Harvard Business Review's lead-response research (2011, updated 2024) shows lead
 The 7 must-have Klaviyo Flows from the reading. Skipping any of these leaves money on the table.
 
 ### Q10: **B. 6-12%**
-Klaviyo's 2024 benchmark report. A well-built abandoned cart flow recovers 6-12% of abandoned carts — meaningful revenue on top of your ad spend.
+Klaviyo's 2024 benchmark report. A well-built abandoned cart flow recovers 6-12% of abandoned carts, meaningful revenue on top of your ad spend.
 
 ### Q11: **B. 1 hour after cart abandonment**
 Sweet spot. Immediate feels stalker-y. 24 hours is too late. ~1 hour after = "I just left the store, oh right, that thing."
 
 ### Q12: **B. A visual automation platform for chaining tools**
-Make.com is the "glue layer" that connects tools together. Not a CRM, not an email platform — a visual flow builder for cross-tool automation.
+Make.com is the "glue layer" that connects tools together. Not a CRM, not an email platform, a visual flow builder for cross-tool automation.
 
 ### Q13: **C. n8n self-hosted**
 n8n is open source and free; you pay only for hosting (a $5/mo VPS suffices for most). Make.com is mid-range. Zapier gets expensive fast at 10K+ ops/mo.

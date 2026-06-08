@@ -72,7 +72,7 @@ D. BLEU
 
 ### Q9. The PRIMARY danger of using the test set repeatedly to retune hyperparameters is: *(Analyze)*
 A. Faster training
-B. Contaminated test metric — final evaluation is over-optimistic
+B. Contaminated test metric, final evaluation is over-optimistic
 C. Lower precision
 D. None
 
@@ -150,9 +150,9 @@ D. Never
 
 ---
 
-### Q19. A model is deployed; over time, the approval rate for one demographic group rises while another falls — likely "bias drift". The MOST appropriate detection is: *(Apply)*
+### Q19. A model is deployed; over time, the approval rate for one demographic group rises while another falls, likely "bias drift". The MOST appropriate detection is: *(Apply)*
 A. CloudTrail
-B. SageMaker Model Monitor + Clarify (bias drift) — see Module 9
+B. SageMaker Model Monitor + Clarify (bias drift), see Module 9
 C. SageMaker Debugger
 D. CloudWatch Logs
 
@@ -255,7 +255,7 @@ Both are outlier-robust. Huber is smooth like MSE for small errors, MAE for larg
 PR-AUC remains informative on imbalanced data where ROC-AUC misleads.
 
 ### Q19: **B. Model Monitor + Clarify (bias drift)**
-Module 9 deepens this — production bias monitoring is Clarify integrated with Model Monitor.
+Module 9 deepens this, production bias monitoring is Clarify integrated with Model Monitor.
 
 ### Q20: **A. Tree ensembles**
 TreeSHAP is exact and fast for trees.
@@ -267,7 +267,7 @@ DeepSHAP / DeepLIFT-based approximation for DNNs.
 Early stopping (or Hyperband) saves compute on losing trials.
 
 ### Q23: **A. The four counts**
-Confusion matrix is the foundation — any classification metric derives from it, and the *type* of error matters.
+Confusion matrix is the foundation, any classification metric derives from it, and the *type* of error matters.
 
 ### Q24: **B. `IntegerParameter(50, 500)`**
 SageMaker HPO has Integer / Continuous / Categorical parameter types.

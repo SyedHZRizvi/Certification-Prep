@@ -1,4 +1,4 @@
-# 🛡️ De-Index Guide — 3-Minute Manual Steps
+# 🛡️ De-Index Guide, 3-Minute Manual Steps
 
 > Everything has been pre-staged on the website side. These three short tasks
 > only YOU can do because they require signing in to your own accounts.
@@ -16,7 +16,7 @@
 
 ---
 
-## 🎯 Task 1 — Google Search Console Removal (~2 minutes)
+## 🎯 Task 1, Google Search Console Removal (~2 minutes)
 
 ### Step-by-step
 
@@ -48,7 +48,7 @@
 
 ---
 
-## 🎯 Task 2 — Bing Webmasters Removal (~1 minute)
+## 🎯 Task 2, Bing Webmasters Removal (~1 minute)
 
 If you don't care about Bing search, skip this. Otherwise:
 
@@ -60,7 +60,7 @@ If you don't care about Bing search, skip this. Otherwise:
    ```html
    <meta name="msvalidate.01" content="ABCD1234..." />
    ```
-   **COPY THE `content="..."` VALUE.** Tell me — I'll paste it where the placeholder waits.
+   **COPY THE `content="..."` VALUE.** Tell me, I'll paste it where the placeholder waits.
 6. Once verified, in Bing Webmasters: **Configure My Site → Block URLs**
    - Add: `https://syedhzrizvi.github.io/Certification-Prep/`
    - Choose **"Directory"** type → Submit
@@ -68,7 +68,7 @@ If you don't care about Bing search, skip this. Otherwise:
 
 ---
 
-## 🎯 Task 3 — Archive.org (Wayback Machine) Removal (~1 minute)
+## 🎯 Task 3, Archive.org (Wayback Machine) Removal (~1 minute)
 
 The Wayback Machine has cached versions of your pages. They honor `robots.txt`
 going forward (already configured), but historical snapshots stay unless you
@@ -77,7 +77,7 @@ specifically request removal.
 ### Copy-paste this email exactly:
 
 **To:** `info@archive.org`
-**Subject:** `URL exclusion request — syedhzrizvi.github.io/Certification-Prep`
+**Subject:** `URL exclusion request, syedhzrizvi.github.io/Certification-Prep`
 
 ```
 Hello Archive.org team,
@@ -111,6 +111,7 @@ Archive.org typically responds within 1–4 weeks.
 
 The `noindex` meta tags + `robots.txt` are already live. Without the manual
 steps above:
+
 - Google will gradually drop indexed pages over the next **4–8 weeks** (next crawl cycle)
 - Bing similar
 - Wayback Machine snapshots stay until you email them

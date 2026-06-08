@@ -1,10 +1,10 @@
 # Module 6: NLP & Computer Vision Workflows 🗣️👁️
 
-> **Why this module matters:** AWS has a dozen *managed AI services* that solve NLP and CV problems with a single API call — no model training, no infrastructure. The MLS-C01 exam tests whether you can recognise when one of these (Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex, Kendra, Personalize, Forecast, Fraud Detector) is the BEST answer and when to instead build a custom SageMaker / Bedrock solution. This module makes you fluent in the "managed vs custom" decision and the specific capabilities of each managed L5 service.
+> **Why this module matters:** AWS has a dozen *managed AI services* that solve NLP and CV problems with a single API call, no model training, no infrastructure. The MLS-C01 exam tests whether you can recognise when one of these (Comprehend, Rekognition, Textract, Translate, Transcribe, Polly, Lex, Kendra, Personalize, Forecast, Fraud Detector) is the BEST answer and when to instead build a custom SageMaker / Bedrock solution. This module makes you fluent in the "managed vs custom" decision and the specific capabilities of each managed L5 service.
 
 > **Prerequisites for this module.** Modules 1–5 of this course. Helpful background:
-> - Basic understanding of NLP tasks (classification, NER, summarisation, translation) — Module 1 covered the families
-> - Basic understanding of CV tasks (classification, detection, segmentation) — Module 5 covered the architectures
+> - Basic understanding of NLP tasks (classification, NER, summarisation, translation), Module 1 covered the families
+> - Basic understanding of CV tasks (classification, detection, segmentation), Module 5 covered the architectures
 > - Some Python and Boto3 familiarity
 
 ---
@@ -17,14 +17,14 @@ Marcus is given an 18-month budget to build ML to reduce this cost. He starts by
 
 Then a senior architect rebuilds the plan around AWS's *managed* services:
 
-- **Rekognition Custom Labels** — train damage-class CNN with 200 labelled images (no SageMaker code)
-- **Textract** — extract forms, key-value pairs, tables from scanned PDFs
-- **Comprehend** — sentiment + entities from policy notes
-- **Comprehend Medical** — drug names from medical liability claims
-- **Transcribe** — recorded customer statements → text
-- **Comprehend Custom Classifier** — categorise transcribed claim type
-- **Translate** — Spanish-language statements
-- **A2I (Augmented AI)** — human review of low-confidence outputs
+- **Rekognition Custom Labels**, train damage-class CNN with 200 labelled images (no SageMaker code)
+- **Textract**, extract forms, key-value pairs, tables from scanned PDFs
+- **Comprehend**, sentiment + entities from policy notes
+- **Comprehend Medical**, drug names from medical liability claims
+- **Transcribe**, recorded customer statements → text
+- **Comprehend Custom Classifier**, categorise transcribed claim type
+- **Translate**, Spanish-language statements
+- **A2I (Augmented AI)**, human review of low-confidence outputs
 
 The new plan uses **three engineers and $1.2M annual budget**. Time-to-launch falls from 18 months to 4. By 2024 the company runs 11,000 claims/day with 7-minute average automated triage and zero increase in headcount. The reduced manual cost is ~$15M/year.
 
@@ -32,7 +32,7 @@ That is the lesson of this module. **Use the managed service before you train yo
 
 ---
 
-## 🗣️ AWS Managed NLP Services — The Six That Matter
+## 🗣️ AWS Managed NLP Services, The Six That Matter
 
 | Service | Task | Custom? | Headline use |
 |---------|------|---------|--------------|
@@ -41,10 +41,10 @@ That is the lesson of this module. **Use the managed service before you train yo
 | **Amazon Translate** | Machine translation, ~75 languages | Yes (Custom Terminology, Active Custom Translation) | Help-centre / chat translation |
 | **Amazon Transcribe** | Speech-to-text, batch & streaming | Yes (Custom Vocabulary, Custom Language Model) | Call-centre, captions, podcasts |
 | **Amazon Polly** | Text-to-speech (neural & generative voices, SSML) | Yes (custom lexicons) | Voice apps, accessibility |
-| **Amazon Lex** | Conversational bots (intents, slots) — Alexa-tech | Yes (intent / slot definition) | Chatbots, voice IVRs |
+| **Amazon Lex** | Conversational bots (intents, slots), Alexa-tech | Yes (intent / slot definition) | Chatbots, voice IVRs |
 | **Amazon Kendra** | Semantic enterprise search | Yes (data sources, FAQs) | Internal knowledge base |
 
-### Amazon Comprehend — The NLP Workhorse
+### Amazon Comprehend, The NLP Workhorse
 
 Comprehend has both **pre-trained APIs** and **custom models**.
 
@@ -79,7 +79,7 @@ A specialised vertical of Comprehend with built-in vocabularies for healthcare:
 
 - **NER** for medications (RxNorm codes), conditions (ICD-10-CM), anatomy, test procedures
 - **Relationship extraction** between entities (e.g. "drug X treats condition Y")
-- **HIPAA-eligible** — can process PHI
+- **HIPAA-eligible**, can process PHI
 
 🎯 **Exam pattern.** *"Extract drug names and dosages from clinical notes."* → **Comprehend Medical**.
 
@@ -143,9 +143,9 @@ Lex is the same engine as Alexa, exposed for your own apps. Two versions: V1 (le
 
 🎯 **Exam pattern.** *"Build a chatbot that takes restaurant orders."* → **Lex** for intent recognition; Lambda for backend logic; optional Polly for voice.
 
-🎯 **Exam pattern (newer).** *"Build a generative-AI chatbot answering questions about company policies."* → **Bedrock Agent** (Module 7) — Lex is intent-based and brittle for open-ended chat.
+🎯 **Exam pattern (newer).** *"Build a generative-AI chatbot answering questions about company policies."* → **Bedrock Agent** (Module 7), Lex is intent-based and brittle for open-ended chat.
 
-### Amazon Kendra — Semantic Enterprise Search
+### Amazon Kendra, Semantic Enterprise Search
 
 Where Comprehend is per-document NLP, **Kendra** is *across* a document corpus. It is the AWS-native semantic search engine.
 
@@ -164,7 +164,7 @@ Where Comprehend is per-document NLP, **Kendra** is *across* a document corpus. 
 
 ---
 
-## 👁️ AWS Managed Computer Vision — The Three That Matter
+## 👁️ AWS Managed Computer Vision, The Three That Matter
 
 | Service | Task | Custom? |
 |---------|------|---------|
@@ -225,7 +225,7 @@ Textract is OCR + structure-aware extraction.
 
 ---
 
-## 🤝 Augmented AI (A2I) — Human-In-The-Loop
+## 🤝 Augmented AI (A2I), Human-In-The-Loop
 
 When a managed AI service returns a *low-confidence* prediction, you can route it to a human reviewer using **Amazon A2I**.
 
@@ -289,7 +289,7 @@ Pre-built fraud-detection workflows:
 
 ---
 
-## 🧭 Managed vs Custom — The Decision Tree
+## 🧭 Managed vs Custom, The Decision Tree
 
 ```
                 Is there a managed L5 service for this task?
@@ -321,9 +321,9 @@ Pre-built fraud-detection workflows:
 
 ---
 
-## 📖 Case Study — JPMorgan COiN (Contract Intelligence)
+## 📖 Case Study, JPMorgan COiN (Contract Intelligence)
 
-**Situation.** JPMorgan's commercial-loan documents take ~360,000 attorney-hours per year to review for covenants, terms, and conditions. The team built **COiN** (Contract Intelligence) in 2017 — an internal NLP system to triage documents.
+**Situation.** JPMorgan's commercial-loan documents take ~360,000 attorney-hours per year to review for covenants, terms, and conditions. The team built **COiN** (Contract Intelligence) in 2017, an internal NLP system to triage documents.
 
 **Architecture (publicly described).**
 - **Textract-equivalent OCR** to digitise scanned contracts
@@ -332,7 +332,7 @@ Pre-built fraud-detection workflows:
 - **Rule-based post-processing** to enforce legal-domain constraints
 - **A2I-style human-in-loop** for low-confidence outputs
 
-**Outcome.** Review time fell from days to seconds; per-document cost dropped 80%. Importantly, attorneys *kept* their role — they shifted from rote extraction to high-judgment review.
+**Outcome.** Review time fell from days to seconds; per-document cost dropped 80%. Importantly, attorneys *kept* their role, they shifted from rote extraction to high-judgment review.
 
 **Lesson for the exam.** If you were rebuilding COiN on AWS today: **Textract** for OCR/extraction + **Comprehend Custom Entity Recognizer** for legal NER + **Comprehend Custom Classifier** for document type + **A2I** for human review. *Zero SageMaker model training.* The managed-service stack does it all.
 
@@ -375,7 +375,7 @@ Pre-built fraud-detection workflows:
 
 | Term | Definition |
 |------|------------|
-| **Comprehend** | Managed NLP — pre-trained + custom |
+| **Comprehend** | Managed NLP, pre-trained + custom |
 | **Comprehend Medical** | Medical NER (HIPAA-eligible) |
 | **Translate** | Managed translation |
 | **Custom Terminology / ACT** | Translate customisation features |
@@ -389,20 +389,20 @@ Pre-built fraud-detection workflows:
 | **Rekognition** | Managed CV (images + video) |
 | **Custom Labels** | Rekognition's no-code custom CNN training |
 | **Textract** | OCR + structure-aware extraction |
-| **A2I** | Augmented AI — human-in-the-loop review |
+| **A2I** | Augmented AI, human-in-the-loop review |
 | **Personalize** | Managed recommender |
 | **Forecast** | Managed time-series forecasting AutoML |
 | **Fraud Detector** | Managed fraud-detection workflows |
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **The managed-service vendor-lock question.** All these services produce proprietary models. If a competitor cloud offered the same APIs for 30% less, how easily could you migrate? What is the right time-cost to model this lock-in?
 2. **A2I and the "automation paradox".** A2I lets humans review low-confidence outputs. But over time, humans may become rusty at the underlying skill. How do you design the workflow so that human judgment *improves*?
 3. **Comprehend Custom vs BlazingText vs Bedrock.** Same task (12-class ticket classifier). Three solutions: Comprehend Custom Classifier ($0.50/hour-model), BlazingText (~$0.20/hour, more code), Bedrock zero-shot Claude ($X per call). At what daily volume does each one win?
 4. **Kendra vs Bedrock Knowledge Bases.** Both surface answers from your corpus. Kendra returns a ranked list of passages; Bedrock KB returns an LLM-synthesised answer. When prefer each, and when combine?
-5. **Speech and accessibility.** Polly's neural voices are excellent, but generative voices (2024) can be eerily human. Are there ethical limits — e.g. cloning a deceased person's voice? Where should AWS draw lines?
+5. **Speech and accessibility.** Polly's neural voices are excellent, but generative voices (2024) can be eerily human. Are there ethical limits, e.g. cloning a deceased person's voice? Where should AWS draw lines?
 
 ---
 
@@ -412,7 +412,7 @@ Pre-built fraud-detection workflows:
 > - **Inside this course:** Module 07 covers Bedrock and Amazon Q for generative AI; Module 08 covers evaluation; Module 09 covers deploying everything in production.
 > - **Cross-course:** `07-AWS-AI-Practitioner` Module 04 (AWS GenAI Stack) covers many of these services at a lighter level. `08-Azure-AI-Engineer` has the Azure-equivalent managed services for comparison.
 > - **Practice:** Practice Exam 1 has 5 questions, Practice Exam 2 has 6 questions, Final Mock has 9 questions on this material.
-> - **Real world:** In your AWS Free Tier account, try Comprehend `DetectSentiment` and Rekognition `DetectLabels` on sample data — each costs ~$0.0001 per call.
+> - **Real world:** In your AWS Free Tier account, try Comprehend `DetectSentiment` and Rekognition `DetectLabels` on sample data, each costs ~$0.0001 per call.
 
 ---
 
@@ -431,7 +431,7 @@ You now know:
 - 🤝 **A2I** for human-in-the-loop review
 - 🛒 **Personalize** for recommendations, **Forecast** for time series, **Fraud Detector** for fraud
 - 🧭 The **managed vs custom decision tree** that wins half the exam's modelling questions
-- 📖 The **JPMorgan COiN** reference architecture — pure managed-service stack
+- 📖 The **JPMorgan COiN** reference architecture, pure managed-service stack
 
 **Next:**
 1. 🎥 [`Videos.md`](./Videos.md)
@@ -444,18 +444,18 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **Comprehend Developer Guide** — `docs.aws.amazon.com/comprehend/`
-- 📖 **Rekognition Developer Guide** — `docs.aws.amazon.com/rekognition/`
-- 📖 **Textract Developer Guide** — `docs.aws.amazon.com/textract/`
-- 📖 **Amazon AI Services** consolidated landing — `aws.amazon.com/machine-learning/ai-services/`
+- 📖 **Comprehend Developer Guide**, `docs.aws.amazon.com/comprehend/`
+- 📖 **Rekognition Developer Guide**, `docs.aws.amazon.com/rekognition/`
+- 📖 **Textract Developer Guide**, `docs.aws.amazon.com/textract/`
+- 📖 **Amazon AI Services** consolidated landing, `aws.amazon.com/machine-learning/ai-services/`
 
 **Industry**
-- 📰 **JPMorgan COiN case studies** — Bloomberg / Wired write-ups (2017-2019)
-- 📰 **Stripe / Capital One / Amazon Personalize case studies** — AWS ML Blog
+- 📰 **JPMorgan COiN case studies**, Bloomberg / Wired write-ups (2017-2019)
+- 📰 **Stripe / Capital One / Amazon Personalize case studies**, AWS ML Blog
 
 ---
 
-## 🛠️ Appendix A — Comprehend Custom Classifier Quick Start
+## 🛠️ Appendix A, Comprehend Custom Classifier Quick Start
 
 ```python
 import boto3
@@ -499,7 +499,7 @@ print(result["Classes"])
 
 ---
 
-## 🛠️ Appendix B — Rekognition Custom Labels: Train From 10 Images
+## 🛠️ Appendix B, Rekognition Custom Labels: Train From 10 Images
 
 ```python
 import boto3
@@ -539,7 +539,7 @@ print(result["CustomLabels"])
 
 ---
 
-## 🛠️ Appendix C — Textract `AnalyzeDocument` for Forms + Tables
+## 🛠️ Appendix C, Textract `AnalyzeDocument` for Forms + Tables
 
 ```python
 import boto3
@@ -571,7 +571,7 @@ query_results = [b for b in resp["Blocks"] if b["BlockType"] == "QUERY_RESULT"]
 
 ---
 
-## 🛠️ Appendix D — Choosing The Right Decision Tree (Cheat Card)
+## 🛠️ Appendix D, Choosing The Right Decision Tree (Cheat Card)
 
 A simple sequential decision tree for picking among Module 6's services on the exam:
 
@@ -621,7 +621,7 @@ A simple sequential decision tree for picking among Module 6's services on the e
     → Amazon Fraud Detector
 
 12) Need human review of low-confidence model outputs?
-    → Augmented AI (A2I) — Comprehend / Rekognition / Textract / custom workflows
+    → Augmented AI (A2I), Comprehend / Rekognition / Textract / custom workflows
 ```
 
-🎯 **Use this on every Module-6 scenario question** — walk top-to-bottom; the first match is usually the right answer.
+🎯 **Use this on every Module-6 scenario question**, walk top-to-bottom; the first match is usually the right answer.

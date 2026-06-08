@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -305,7 +305,7 @@
 **A:** Measures customer value (not company outcome), is a leading indicator of long-term revenue, is bounded (resistant to gaming).
 
 **Q:** Give one publicly disclosed North Star metric and the company.
-**A:** Examples: Spotify — "time spent listening per active user". Airbnb — "nights booked". Facebook (2007) — "friend-7-days". Slack — "teams with 2,000+ messages". Dropbox — "files saved across 3+ devices".
+**A:** Examples: Spotify "time spent listening per active user". Airbnb "nights booked". Facebook (2007) "friend-7-days". Slack "teams with 2,000+ messages". Dropbox, "files saved across 3+ devices".
 
 ---
 
@@ -315,13 +315,13 @@
 **A:** Packaged (Segment, mParticle), Composable / warehouse-native (Hightouch, Census on Snowflake/BigQuery), Self-hosted / OSS (Snowplow, Jitsu, PostHog), Embedded-in-marketing-cloud (Adobe RT-CDP, Salesforce Data Cloud).
 
 **Q:** Difference between a CDP and a DMP?
-**A:** CDPs work with first-party PII / named customer data for activation. DMPs work with third-party / anonymized cookie data — historically for media buying. DMPs are sharply declining in 2024–2026.
+**A:** CDPs work with first-party PII / named customer data for activation. DMPs work with third-party / anonymized cookie data, historically for media buying. DMPs are sharply declining in 2024–2026.
 
 **Q:** What does Hightouch do?
-**A:** Reverse ETL — syncs data from the warehouse (Snowflake, BigQuery, Databricks) to SaaS marketing destinations. The core tool of the "composable CDP" pattern.
+**A:** Reverse ETL, syncs data from the warehouse (Snowflake, BigQuery, Databricks) to SaaS marketing destinations. The core tool of the "composable CDP" pattern.
 
 **Q:** What is server-side tagging and roughly how much measurement loss does it recover?
-**A:** Server-side tagging sends events from your server (not the browser) to ad/analytics platforms. Recovers ~5–25% of measurement loss versus client-side — NOT 100%.
+**A:** Server-side tagging sends events from your server (not the browser) to ad/analytics platforms. Recovers ~5–25% of measurement loss versus client-side, NOT 100%.
 
 **Q:** What is Stape.io?
 **A:** Managed hosting + power-ups for Google Tag Manager Server-Side (GTM-SS). Eliminates DevOps overhead.
@@ -376,7 +376,7 @@
 **A:** Free-form (pivot-table-style), Funnel, Path, Segment overlap, User lifetime. (Cohort is the 6th, separate technique.)
 
 **Q:** Is the GA4 → BigQuery export free?
-**A:** Yes — free for both free GA4 and GA4 360 (was 360-only in Universal Analytics).
+**A:** Yes, free for both free GA4 and GA4 360 (was 360-only in Universal Analytics).
 
 **Q:** What SQL pattern extracts a parameter from the GA4 BigQuery `event_params` array?
 **A:** `SELECT value.string_value FROM UNNEST(event_params) WHERE key = 'page_location'`
@@ -398,7 +398,7 @@
 **A:** 22.5% × 4 to First, Lead-creation, Opportunity-creation, Last touch + 10% spread across middle touches.
 
 **Q:** Define Shapley values in the attribution context.
-**A:** A channel's Shapley value is its average marginal contribution to conversions across every possible ordering of the channels in the journey. Computationally factorial — production uses sampling approximations.
+**A:** A channel's Shapley value is its average marginal contribution to conversions across every possible ordering of the channels in the journey. Computationally factorial, production uses sampling approximations.
 
 **Q:** Define the "removal effect" in Markov-chain attribution.
 **A:** (Conversion probability with channel present − Conversion probability with channel removed) / Conversion probability with channel present.
@@ -407,7 +407,7 @@
 **A:** SHAP (SHapley Additive exPlanations) is an ML interpretability framework built on Shapley axioms. Generalizes Shapley to non-linear ML models. Used to explain feature importance in modern attribution and ML.
 
 **Q:** What does the acronym SKAN stand for and what does it do?
-**A:** SKAdNetwork. Apple's privacy-preserving iOS install attribution framework. Reports noisy, aggregated, delayed conversion-value signals — cannot identify individual users.
+**A:** SKAdNetwork. Apple's privacy-preserving iOS install attribution framework. Reports noisy, aggregated, delayed conversion-value signals, cannot identify individual users.
 
 **Q:** How many bits is the SKAN conversion value?
 **A:** 6 bits (0–63 = 64 possible states). The strategist's job is to map LTV bins or behavioral milestones into these 64 states.
@@ -463,7 +463,7 @@
 
 ---
 
-## 📦 SECTION 6: PREDICTIVE ANALYTICS — CLV, CHURN, UPLIFT
+## 📦 SECTION 6: PREDICTIVE ANALYTICS, CLV, CHURN, UPLIFT
 
 **Q:** What does BG/NBD stand for?
 **A:** Beta-Geometric / Negative Binomial Distribution. Fader & Hardie 2005. The canonical non-contractual CLV model.
@@ -493,7 +493,7 @@
 **A:** Persuadables, Sure Things, Lost Causes, Do-Not-Disturbs (Sleeping Dogs).
 
 **Q:** Which uplift segment is the marketing target?
-**A:** Persuadables — users who buy only because of the marketing intervention.
+**A:** Persuadables, users who buy only because of the marketing intervention.
 
 **Q:** Why is it usually wrong to target the top decile of propensity scores in paid ads?
 **A:** Top-decile users are "Sure Things" who convert without ads. Marketing to them wastes impressions. Middle deciles have higher incremental value.
@@ -533,10 +533,10 @@
 **A:** FAISS (Meta open-source), ScaNN (Google open-source), Pinecone (managed service).
 
 **Q:** Why is optimizing only for NDCG dangerous?
-**A:** It produces filter-bubble pathology and popularity bias — narrowing the catalog over time. Tune for diversity and serendipity too.
+**A:** It produces filter-bubble pathology and popularity bias, narrowing the catalog over time. Tune for diversity and serendipity too.
 
 **Q:** Define "serendipity" in recsys.
-**A:** Recommendations that are relevant *and* unexpected — the discovery quality that drove Spotify's Discover Weekly success.
+**A:** Recommendations that are relevant *and* unexpected, the discovery quality that drove Spotify's Discover Weekly success.
 
 ---
 
@@ -546,7 +546,7 @@
 **A:** The month (or week, depending on granularity) of acquisition. M1 = next period after acquisition, etc.
 
 **Q:** Name the 3 canonical retention curve shapes.
-**A:** L-curve (heavy early dropoff + plateau), Smile curve (some users resurrect after dip), Cliff (sharp drop at a specific tenure point — typically a paywall or trial expiry).
+**A:** L-curve (heavy early dropoff + plateau), Smile curve (some users resurrect after dip), Cliff (sharp drop at a specific tenure point, typically a paywall or trial expiry).
 
 **Q:** Write the NRR formula.
 **A:** NRR = (start ARR + expansion − contraction − churn) / start ARR. >100% means existing customers grow even ignoring new sales.
@@ -564,7 +564,7 @@
 **A:** Feeding high-quality conversion signals (e.g., LTV-weighted events) to the platform. Manual lookalike construction is largely obsolete.
 
 **Q:** Define the "death spiral" pre-churn pattern.
-**A:** Gradual usage decline in the weeks before a customer churns — e.g., −5% by W-12, −28% by W-4, −51% by W-2. Provides a 2–4 week intervention window for win-back.
+**A:** Gradual usage decline in the weeks before a customer churns, e.g., −5% by W-12, −28% by W-4, −51% by W-2. Provides a 2–4 week intervention window for win-back.
 
 **Q:** What is an "activation event" or "activation threshold"?
 **A:** A behavior that, once performed, dramatically improves a user's retention probability. Spotify: playlist creation. Stitch Fix: 3rd Fix. Slack: 2,000 messages. Facebook (2007): 7 friends in 10 days.
@@ -607,13 +607,13 @@
 **A:** AWS Clean Rooms, Google Ads Data Hub (ADH), Snowflake Data Clean Room, Meta Audience Insights. (Also InfoSum, Habu/LiveRamp, LiveRamp Safe Haven.)
 
 **Q:** What is differential privacy and what does ε control?
-**A:** Mathematical privacy framework that adds calibrated noise to query results so individual records can't be identified. ε (epsilon) controls the privacy/utility trade-off — lower ε = stronger privacy + more noise.
+**A:** Mathematical privacy framework that adds calibrated noise to query results so individual records can't be identified. ε (epsilon) controls the privacy/utility trade-off, lower ε = stronger privacy + more noise.
 
 **Q:** Name the 4 dominant privacy regulations driving 2026 marketing decisions.
 **A:** GDPR (EU/EEA/UK), CCPA / CPRA (California, de facto US standard), MHMDA (Washington health data), COPPA (US kids).
 
 **Q:** Why is hashing PII not enough to remove GDPR obligations?
-**A:** A SHA-256 hash is one-way obfuscation but still identifies a person (or links to one). Personal data under GDPR — consent + DPA still required.
+**A:** A SHA-256 hash is one-way obfuscation but still identifies a person (or links to one). Personal data under GDPR, consent + DPA still required.
 
 ---
 
@@ -629,7 +629,7 @@
 **A:** Accountable. Data Engineering is Responsible for execution; Finance and Product are Consulted.
 
 **Q:** Approximately how many vendors did Scott Brinker's 2024 MarTech Landscape track?
-**A:** ~12,000. Strategists know the ~30–50 categories — not every vendor.
+**A:** ~12,000. Strategists know the ~30–50 categories, not every vendor.
 
 **Q:** What is the 30-30-30-10 rule for marketing tech-stack spend?
 **A:** 30% Infrastructure (CDP, warehouse, BI), 30% Activation (email/lifecycle/ad tooling), 30% Measurement (MTA, MMM, product analytics, A/B), 10% Experimental (new categories).
@@ -659,17 +659,17 @@
 
 ## ✅ STUDY TIPS
 
-1. **Review daily** — the widget tracks your "Got it" progress in localStorage.
-2. **Section-filter** — use the dropdown to drill on weak modules.
-3. **Shuffle weekly** — to avoid order-based memorization.
-4. **Pair with the cheat sheets** — every card maps to a Cheat-Sheet.md section.
-5. **Export to Anki** — if you want long-term retention beyond exam day, copy these into Anki with the same Q:/A: format.
+1. **Review daily**, the widget tracks your "Got it" progress in localStorage.
+2. **Section-filter**, use the dropdown to drill on weak modules.
+3. **Shuffle weekly**, to avoid order-based memorization.
+4. **Pair with the cheat sheets**, every card maps to a Cheat-Sheet.md section.
+5. **Export to Anki**, if you want long-term retention beyond exam day, copy these into Anki with the same Q:/A: format.
 
 ---
 
 ## 🎯 BEFORE THE REAL EXAM
 
-- Make sure every card in this deck is marked "Got it" — that's your readiness signal.
+- Make sure every card in this deck is marked "Got it", that's your readiness signal.
 - Re-take Final-Mock-Exam.md until you score ≥80% (60/75) consistently.
 - For the GA4 Certification specifically, also take the official Skillshop free practice.
 - For Meta Marketing Science Professional, complete Meta Blueprint's specific course modules.

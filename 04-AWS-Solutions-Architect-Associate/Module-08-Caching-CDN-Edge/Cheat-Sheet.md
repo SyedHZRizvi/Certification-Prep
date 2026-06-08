@@ -75,7 +75,7 @@ User → Shield (DDoS, free Standard) →
 
 | Pattern | When |
 |---------|------|
-| **Cache-aside (lazy)** | Default — read DB on miss, write to cache |
+| **Cache-aside (lazy)** | Default, read DB on miss, write to cache |
 | **Write-through** | Updates write to cache + DB simultaneously |
 | **TTL-based** | Set TTL on all entries |
 

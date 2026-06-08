@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -290,7 +290,7 @@
 **A:** A one-person ~$1.5M ARR productized design subscription at ~$4,995/mo and ~70% margin. The patron saint of productized services.
 
 **Q:** Define "ICP."
-**A:** Ideal Customer Profile — industry + company size + geography + buyer role + situation.
+**A:** Ideal Customer Profile, industry + company size + geography + buyer role + situation.
 
 **Q:** Why is "I help businesses grow" bad positioning?
 **A:** It's generic, ungoogleable, un-referrable. The #1 Year-1 mistake.
@@ -312,7 +312,7 @@
 **A:** Scope, Price, Process, Time, Outcome. Fail any one and you're back in consulting hell.
 
 **Q:** Why is hourly billing bad for AI-leveraged operators?
-**A:** AI makes you faster, so your billable hours drop with the same deliverable — income falls. Productize instead.
+**A:** AI makes you faster, so your billable hours drop with the same deliverable, income falls. Productize instead.
 
 **Q:** Name the 10 components of a productized service's anatomy.
 **A:** Promise, deliverables, process, intake form, kickoff Loom, deliverable template, walkthrough Loom, implementation handoff, upsell email, testimonial ask.
@@ -383,7 +383,7 @@
 **A:** 60–70%.
 
 **Q:** How should Option C in good-better-best be priced?
-**A:** 2.5–3x Option A — to serve as the anchor that makes Option B feel reasonable.
+**A:** 2.5–3x Option A, to serve as the anchor that makes Option B feel reasonable.
 
 **Q:** What's a healthy proposal close rate?
 **A:** 30–50%. Above 50% often signals underpricing.
@@ -438,7 +438,7 @@
 **A:** 1–2%.
 
 **Q:** Recommended Year-1 analytics stack cost?
-**A:** $0 — GA4 + Search Console + Looker Studio + Microsoft Clarity.
+**A:** $0, GA4 + Search Console + Looker Studio + Microsoft Clarity.
 
 **Q:** What's the day-1 security stack?
 **A:** YubiKey 5 NFC ($50 once) + 1Password or Bitwarden ($3–$8/mo). Cheapest insurance you can buy.
@@ -469,7 +469,7 @@
 **A:** Day 30: execute X workflow independently. Day 60: own Y workflow end-to-end. Day 90: identify 1 process improvement, free 30+ hr/mo.
 
 **Q:** What is an EOR?
-**A:** Employer of Record — a service (Deel, Remote.com, Multiplier) that legally employs international workers on your behalf.
+**A:** Employer of Record, a service (Deel, Remote.com, Multiplier) that legally employs international workers on your behalf.
 
 **Q:** Target AI-leverage multiplier per hire vs 2020 baseline?
 **A:** 3–5x output per person.
@@ -485,7 +485,7 @@
 **A:** Immediately transfer ~30% of every business deposit to a business savings account. Pretend it doesn't exist.
 
 **Q:** Minimum number of accounts to open day 1?
-**A:** 4 — business checking, business savings (tax bucket), personal checking, personal savings.
+**A:** 4, business checking, business savings (tax bucket), personal checking, personal savings.
 
 **Q:** When does the S-corp election typically make sense (US)?
 **A:** $80K–$400K profit, paired with a reasonable salary + distributions split, with CPA guidance.
@@ -506,7 +506,7 @@
 **A:** Contributions deductible, growth tax-free, qualified medical withdrawals tax-free. After 65, withdraws for any purpose (taxed as income).
 
 **Q:** Solo 401(k) max combined contribution (2024–2025, US)?
-**A:** ~$70K (~$77.5K+ if age 50+) — verify current IRS tables.
+**A:** ~$70K (~$77.5K+ if age 50+), verify current IRS tables.
 
 **Q:** Target gross margin for productized services?
 **A:** 60–80%.
@@ -534,7 +534,7 @@
 **A:** Email sent within 30 min of the discovery call summarizing current state, goals, constraints, next steps. Closes 2x more deals.
 
 **Q:** What kills 80% of "where are we?" emails?
-**A:** The kickoff Loom — a 15-min recorded video sent BEFORE the kickoff call walking the client through what happens next.
+**A:** The kickoff Loom, a 15-min recorded video sent BEFORE the kickoff call walking the client through what happens next.
 
 **Q:** When is the Friday weekly status email sent?
 **A:** Friday afternoons, even on quiet weeks. Predictability retains clients.
@@ -562,7 +562,7 @@
 ## 📦 SECTION 9: REAL FOUNDERS WORTH STUDYING
 
 **Q:** Who is Brett Williams?
-**A:** Founder of Designjoy — one-person ~$1.5M ARR productized design subscription, ~70% margin. The productized-service canonical case.
+**A:** Founder of Designjoy, one-person ~$1.5M ARR productized design subscription, ~70% margin. The productized-service canonical case.
 
 **Q:** Who is Justin Welsh?
 **A:** Solo creator/operator with publicly disclosed $5M+ revenue 2023–2024. Sells education products + 1:1 advisory at $25K/quarter. Famous for the LinkedIn Content OS.
@@ -598,7 +598,7 @@
 1. Filter by section. Master one section before moving on.
 2. Shuffle weekly to break order memorization.
 3. Pair flashcards with the Reading.md for each module.
-4. The "Got it" button persists in your browser — your progress stays.
+4. The "Got it" button persists in your browser, your progress stays.
 5. Aim for 100% known on all sections before the Final Mock Exam.
 
 ---
@@ -606,7 +606,7 @@
 ## 🧠 BEFORE THE FINAL MOCK EXAM
 
 - Re-read each Module's Cheat-Sheet (8 × 1 page = 8 pages, 30 min)
-- Take Practice Exams 1 and 2 — review every wrong answer
+- Take Practice Exams 1 and 2, review every wrong answer
 - Filter flashcards by your weakest section
 - Sleep well. Show up rested.
 - Pass mark: 38/50 (75%)

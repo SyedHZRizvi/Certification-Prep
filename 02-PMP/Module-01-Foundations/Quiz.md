@@ -299,14 +299,14 @@ These tags map each existing Q1–Q27 to a Bloom's-taxonomy level. Use them to g
 These supplemental questions exercise Apply, Analyze, Evaluate, and Create-level cognition. The numbering continues from Q27 so the verifier treats them as additional questions.
 
 ### Q28. Your sponsor pressures you to skip an FDA-mandated design-verification step "because we'll fix it post-launch." Using PMI's 4 ethics values AND PMBOK 7's Stewardship principle, write (in your head) the strongest justification for refusal. Which option below most closely matches that justification? *(Evaluate)*
-A. Comply — the sponsor has authority over scope and schedule.
-B. Refuse, document the request, propose a CCB-routed alternative that preserves verification, and escalate to the steering committee if pressure continues — citing Responsibility and Stewardship.
+A. Comply, the sponsor has authority over scope and schedule.
+B. Refuse, document the request, propose a CCB-routed alternative that preserves verification, and escalate to the steering committee if pressure continues, citing Responsibility and Stewardship.
 C. Comply but file a confidential whistleblower complaint after launch.
 D. Delegate the decision to the QA lead so the PM is not on record.
 
 ### Q29. A senior PM proposes installing a Directive PMO at a 90-person fintech that just hit Series C. The CTO objects, saying PMs should retain decision rights. Using PMBOK 7's Tailoring principle, what is the BEST framing for a compromise? *(Analyze)*
-A. Install a Directive PMO immediately — the CTO is wrong.
-B. Skip the PMO — autonomy is more important.
+A. Install a Directive PMO immediately, the CTO is wrong.
+B. Skip the PMO, autonomy is more important.
 C. Pilot a Controlling PMO with explicit "tailorable" gates, time-boxed to 6 months, with a metrics-based review to decide whether to evolve toward Directive or revert to Supportive.
 D. Outsource project governance to the finance department.
 
@@ -314,7 +314,7 @@ D. Outsource project governance to the finance department.
 A. Demand the team produce a 40-page lessons-learned document in week 1.
 B. Run two 60-minute facilitated retrospectives (one mid-project, one at closure), capture insights in a one-page structured template stored in the OPA repository, and have the team review/correct it together before sign-off.
 C. Write the lessons-learned yourself from memory and circulate for sign-off.
-D. Skip lessons learned — the team's hostility is a valid reason.
+D. Skip lessons learned, the team's hostility is a valid reason.
 
 ### Q31. A weak-matrix organization has six concurrent projects competing for the same five senior engineers. You are PM of the highest-strategic-value project but have the lowest formal authority. Which approach is MOST likely to succeed? *(Apply)*
 A. Demand the functional manager assign your project priority.
@@ -323,15 +323,15 @@ C. Quantify the strategic-value differential (using the Business Case), build a 
 D. Quietly poach engineers off the other projects.
 
 ### Q32. Two stakeholders give you contradictory direction: the sponsor says "lock the scope and ship," the customer says "we need late-stage flexibility." Both are formal signatories on the Project Charter. What does PMI's stewardship-mindset Code of Ethics tell you to do FIRST? *(Apply)*
-A. Pick the sponsor — they fund the project.
-B. Pick the customer — they're paying.
+A. Pick the sponsor, they fund the project.
+B. Pick the customer, they're paying.
 C. Surface the contradiction openly to both parties together, identify the underlying business interests behind each position, and facilitate a documented decision through the change-control process; do not unilaterally choose.
-D. Implement both — half the scope locked, half flexible — without consulting anyone.
+D. Implement both half the scope locked, half flexible without consulting anyone.
 
 ### Q33. Boeing 737 MAX (from the case study). A project engineer on your team raises a concern that a critical subsystem ties to a single sensor with no redundancy. The schedule is tight and the sponsor signals that re-architecting would slip launch by 8 weeks. Using both the Code of Ethics AND the PMBOK 7 Risk principle, evaluate the four responses below and pick the one most defensible at a future post-incident inquiry. *(Evaluate)*
 A. Note the concern in the risk register, classify as "Accept (low probability)," and continue.
 B. Re-architect to redundant sensors immediately, regardless of cost.
-C. Treat the concern as a single-point-of-failure threat (Identify), perform quantitative analysis (probability × impact), present at least three risk-response options to the Change Control Board with cost/schedule/value tradeoffs, and require a sponsor-level decision documented in writing — invoking Responsibility if the CCB tries to dismiss it.
+C. Treat the concern as a single-point-of-failure threat (Identify), perform quantitative analysis (probability × impact), present at least three risk-response options to the Change Control Board with cost/schedule/value tradeoffs, and require a sponsor-level decision documented in writing, invoking Responsibility if the CCB tries to dismiss it.
 D. Escalate to regulators directly without informing the sponsor.
 
 ```

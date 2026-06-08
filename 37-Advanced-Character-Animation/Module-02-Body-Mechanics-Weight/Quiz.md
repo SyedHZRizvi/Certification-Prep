@@ -15,14 +15,14 @@ D. The neck, where the spine meets the skull
 ### Q2. In a walking cycle, the COG traces:
 A. A straight horizontal path through the hips  
 B. An upward arc at contact, downward arc at mid-stride  
-C. An inverted arc — rising at mid-stride, falling at contact  
+C. An inverted arc, rising at mid-stride, falling at contact  
 D. A circular path around the body's vertical axis  
 
 ---
 
 ### Q3. The most common error in animating a punch is:
 A. Making the anticipation too long  
-B. Animating the arm independently of the COG — the arm throws the punch, not the ground  
+B. Animating the arm independently of the COG, the arm throws the punch, not the ground  
 C. Applying too much squash on impact  
 D. Over-rotating the shoulder before the arm extends  
 
@@ -40,7 +40,7 @@ D. The torso
 A. Wide, exaggerated overshoots that spring back quickly  
 B. Long anticipation, firm settle, minimal spring, shudder-and-settle secondary  
 C. Fast, staccato secondary that whips to a stop  
-D. No overlapping action — heavy characters are rigid  
+D. No overlapping action, heavy characters are rigid  
 
 ---
 
@@ -53,7 +53,7 @@ D. Over-squashing the character on ground contact
 ---
 
 ### Q7. In animated physics (vs real physics), timing is:
-A. Exactly accurate — animation must be scientifically precise  
+A. Exactly accurate, animation must be scientifically precise  
 B. Slightly slower for emotional beats, slightly faster for comedy  
 C. Always faster than real physics to maintain audience attention  
 D. Determined entirely by the audio track  
@@ -70,7 +70,7 @@ D. The contact point of the back foot only
 
 ### Q9. What happens to the COG during a character's anticipation (crouch) before a jump?
 A. It rises slightly in preparation for the upward movement  
-B. It stays neutral — anticipation is only about the limbs  
+B. It stays neutral, anticipation is only about the limbs  
 C. It drops significantly, storing potential energy  
 D. It shifts sideways to the dominant leg  
 
@@ -85,10 +85,10 @@ D. The delay between keyframes in stepped mode
 ---
 
 ### Q11. A staged (animated) fall lasts approximately:
-A. The same duration as a real fall — 200–400ms  
+A. The same duration as a real fall, 200–400ms  
 B. 1–2 frames longer than real for clarity  
-C. 12–30 frames (500ms–1.25s) — 2–3x longer than real  
-D. Exactly 1 second — the standard cinematic timing  
+C. 12–30 frames (500ms–1.25s), 2–3x longer than real  
+D. Exactly 1 second, the standard cinematic timing  
 
 ---
 
@@ -118,16 +118,16 @@ D. Dust particles must be added to ground contact for realism
 
 ### Q15. At the apex of a jump, the body should exhibit:
 A. A classic squash pose for comedy effect  
-B. The "stretch" principle — the body elongates at maximum height  
+B. The "stretch" principle, the body elongates at maximum height  
 C. A neutral pose with no deformation  
-D. Anticipation for the landing — knees begin to bend  
+D. Anticipation for the landing, knees begin to bend  
 
 ---
 
 ### Q16. For a "light" character, follow-through should be:
-A. Minimal — light characters stop quickly  
+A. Minimal, light characters stop quickly  
 B. Firm and weighted, settling slowly  
-C. Far-overshooting and lingering — high inertia relative to mass  
+C. Far-overshooting and lingering, high inertia relative to mass  
 D. The same as heavy characters, just faster  
 
 ---
@@ -141,7 +141,7 @@ D. Ground contact frames should be set first in the blocking phase
 ---
 
 ### Q18. In the punch's "hip drive" phase, the torso follows the hips with approximately:
-A. No delay — they move simultaneously  
+A. No delay, they move simultaneously  
 B. A 2-frame delay  
 C. A 10-frame delay  
 D. A full second of lag  
@@ -158,7 +158,7 @@ D. The head trails the body by several frames in a fall
 
 ### Q20. "Secondary settle" after a fall refers to:
 A. The character's emotional reaction after hitting the ground  
-B. A second wave of overlapping motion — head, then hair, then clothing — after initial impact  
+B. A second wave of overlapping motion head, then hair, then clothing after initial impact  
 C. The secondary character in the scene reacting to the fall  
 D. The sound design that follows the visual impact  
 
@@ -166,7 +166,7 @@ D. The sound design that follows the visual impact
 
 ### Q21. In the Shrek lifting example, which specific COG error was identified?
 A. The COG shifted too far backward, making Shrek fall  
-B. The COG never shifted forward and down before the lift — the pelvis stayed level  
+B. The COG never shifted forward and down before the lift, the pelvis stayed level  
 C. The COG moved correctly but the arms were too slow  
 D. The COG tracked correctly on the way up but not on the way down  
 
@@ -199,28 +199,28 @@ D. The body returning to exactly the same pose as before the jump
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — COG at pelvis, ~55% of total height
-Q2.  C — Inverted arc: rises at mid-stride, falls at contact
-Q3.  B — Arm animated independently without COG involvement
-Q4.  C — Hip drive is the power source; arm is the final link
-Q5.  B — Heavy: long anticipation, firm settle, no spring
-Q6.  B — Pancake: rigid unit fall without hip-lead
-Q7.  B — Slower for emotion, faster for comedy
-Q8.  B — Base of support = ground area between the feet
-Q9.  C — COG drops significantly; stores potential energy
-Q10. B — Drag = resistance of secondary parts to starting motion
-Q11. C — 12–30 frames (2–3x longer than real)
-Q12. C — Head trails body by 4–6 frames
-Q13. B — Feel the weight, not calculate the physics
-Q14. B — Feet press harder into ground at lift initiation
-Q15. B — Stretch principle at apex
-Q16. C — Light characters: far-overshooting, lingering follow-through
-Q17. B — Force propagates ground → feet → hips → torso → extremities
-Q18. B — Torso follows hips with ~2-frame delay
-Q19. B — Straight legs, all upper body = indicating weight, not experiencing it
-Q20. B — Secondary settle: head → hair → clothing after impact
-Q21. B — COG never shifted forward/down; pelvis stayed level
-Q22. B — 2D projection needs exaggeration to communicate physical feel
-Q23. B — Checking force propagation from ground upward
-Q24. B — Knees absorb; follow-through in secondary parts; COG settles
+Q1.  B, COG at pelvis, ~55% of total height
+Q2.  C, Inverted arc: rises at mid-stride, falls at contact
+Q3.  B, Arm animated independently without COG involvement
+Q4.  C, Hip drive is the power source; arm is the final link
+Q5.  B, Heavy: long anticipation, firm settle, no spring
+Q6.  B, Pancake: rigid unit fall without hip-lead
+Q7.  B, Slower for emotion, faster for comedy
+Q8.  B, Base of support = ground area between the feet
+Q9.  C, COG drops significantly; stores potential energy
+Q10. B, Drag = resistance of secondary parts to starting motion
+Q11. C, 12–30 frames (2–3x longer than real)
+Q12. C, Head trails body by 4–6 frames
+Q13. B, Feel the weight, not calculate the physics
+Q14. B, Feet press harder into ground at lift initiation
+Q15. B, Stretch principle at apex
+Q16. C, Light characters: far-overshooting, lingering follow-through
+Q17. B, Force propagates ground → feet → hips → torso → extremities
+Q18. B, Torso follows hips with ~2-frame delay
+Q19. B, Straight legs, all upper body = indicating weight, not experiencing it
+Q20. B, Secondary settle: head → hair → clothing after impact
+Q21. B, COG never shifted forward/down; pelvis stayed level
+Q22. B, 2D projection needs exaggeration to communicate physical feel
+Q23. B, Checking force propagation from ground upward
+Q24. B, Knees absorb; follow-through in secondary parts; COG settles
 ```

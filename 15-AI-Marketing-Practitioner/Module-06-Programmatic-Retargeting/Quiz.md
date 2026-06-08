@@ -9,7 +9,7 @@
 
 ### Q1. A DSP is: *(Remember)*
 A. A type of publisher
-B. Demand-Side Platform — where advertisers buy programmatic inventory
+B. Demand-Side Platform, where advertisers buy programmatic inventory
 C. A pixel
 D. A privacy tool
 
@@ -17,7 +17,7 @@ D. A privacy tool
 
 ### Q2. An SSP is: *(Remember)*
 A. The same as a DSP
-B. Supply-Side Platform — where publishers sell their inventory
+B. Supply-Side Platform, where publishers sell their inventory
 C. A search platform
 D. A CRM
 
@@ -137,7 +137,7 @@ D. 100+
 
 ### Q17. MMM stands for: *(Remember)*
 A. Multi-Media Marketing
-B. Marketing Mix Modeling — statistical model of channel impact
+B. Marketing Mix Modeling, statistical model of channel impact
 C. Master Marketing Method
 D. Mobile Media Manager
 
@@ -153,7 +153,7 @@ D. Brand recall
 
 ### Q19. MFA stands for: *(Remember)*
 A. Multi-Factor Authentication
-B. Made-For-Advertising — low-quality sites built just to harvest ad spend
+B. Made-For-Advertising, low-quality sites built just to harvest ad spend
 C. Mass Frequency Ads
 D. Mobile First Ads
 
@@ -177,7 +177,7 @@ D. Search platforms
 
 ### Q22. CTV stands for: *(Remember)*
 A. Cable Television
-B. Connected TV — programmatic streaming inventory (Hulu, Disney+, Roku, etc.)
+B. Connected TV, programmatic streaming inventory (Hulu, Disney+, Roku, etc.)
 C. Channel Verification
 D. Click-Through Volume
 
@@ -219,7 +219,7 @@ Publishers (NYT, CNN, Hulu) use SSPs to expose their inventory to DSPs. Magnite 
 The Trade Desk is the largest non-Google, non-Meta DSP. Strong on CTV, used by most agencies.
 
 ### Q4: **B. Google's enterprise programmatic DSP**
-DV360 is part of Google Marketing Platform — a different product from Google Ads. Used by enterprise + agencies. Typical minimum spend ~$2K/mo.
+DV360 is part of Google Marketing Platform, a different product from Google Ads. Used by enterprise + agencies. Typical minimum spend ~$2K/mo.
 
 ### Q5: **B. SMB-friendly retargeting setup**
 AdRoll is the classic "first programmatic platform a DTC brand tries." Self-serve, starts ~$300/mo.
@@ -258,7 +258,7 @@ Last-click attribution gives 100% credit to the final ad clicked, ignoring all e
 Per Wynter's 2024 buyer research, modern DTC customers average 25-30 brand interactions before purchase. Single-touch attribution credits 1 of 30.
 
 ### Q17: **B. Marketing Mix Modeling**
-MMM is a statistical model (often using regression) that estimates each channel's impact on sales over time. It works even without per-user tracking — using only aggregated data.
+MMM is a statistical model (often using regression) that estimates each channel's impact on sales over time. It works even without per-user tracking, using only aggregated data.
 
 ### Q18: **B. The TRUE causal impact of a channel**
 Incrementality testing uses A/B holdout groups: half the audience sees an ad, half doesn't. The difference in conversion rate = the channel's incremental lift.
@@ -272,14 +272,14 @@ The ANA's 2024 study estimated ~20% of open-web programmatic display spend goes 
 ### Q21: **B. Industry-standard ad verification tools**
 DoubleVerify and IAS verify viewability, fraud, brand safety. Used by enterprise advertisers. SMB/DTC typically uses DSP-level block lists instead.
 
-### Q22: **B. Connected TV — programmatic streaming inventory**
+### Q22: **B. Connected TV, programmatic streaming inventory**
 CTV = Hulu, Disney+, Roku, Peacock, etc. Streaming TV bought programmatically. Fastest-growing programmatic channel.
 
 ### Q23: **C. $50,000+/quarter**
 CTV CPMs are $25-$60. To get meaningful reach, you need substantial budget. SMBs under $10K/mo should skip CTV.
 
 ### Q24: **B. 38%**
-ASOS publicly shared at IAB Engage 2023 that Criteo's dynamic retargeting drove 38% of their retargeting conversions — by showing the exact product + size + price the user viewed.
+ASOS publicly shared at IAB Engage 2023 that Criteo's dynamic retargeting drove 38% of their retargeting conversions, by showing the exact product + size + price the user viewed.
 
 ### Q25: **B. Past purchasers (within last 30-60 days)**
 Exclude recent buyers from retargeting to avoid wasting budget. Reactivation campaigns at 60-90 days are different (use a separate audience + offer).

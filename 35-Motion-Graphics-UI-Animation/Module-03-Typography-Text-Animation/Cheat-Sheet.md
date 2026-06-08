@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-03-Typography-Text-Animation/
 title: "Module 3 Cheat Sheet: Typography & Text Animation"
 ---
 
-# ⚡ Module 3 Cheat Sheet — Typography & Text Animation
+# ⚡ Module 3 Cheat Sheet, Typography & Text Animation
 
 ## The Blur > Scale > Opacity Reveal (Setup)
 
@@ -83,7 +83,7 @@ Choose ONE entrance technique per piece. Vary:
 | Desktop | Personal/print use only |
 | Web | Website embedding (WOFF/WOFF2) |
 | App | Embedding in software applications |
-| Broadcast/Video | TV, film, commercial video — required for client work |
+| Broadcast/Video | TV, film, commercial video, required for client work |
 
 > Always check license before using a font in commercial video. Violation is a legal risk to you and your client.
 
@@ -130,7 +130,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

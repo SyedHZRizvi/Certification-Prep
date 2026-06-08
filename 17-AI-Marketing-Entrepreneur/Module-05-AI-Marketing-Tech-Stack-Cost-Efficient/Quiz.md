@@ -51,14 +51,14 @@ D. Self-hosted Llama only
 A. Zapier always
 B. Make.com (sweet spot); n8n self-hosted at high volume; Zapier for hard connectors
 C. Custom code only
-D. None — manual automation
+D. None, manual automation
 
 ---
 
 ### Q7. The recommended Year-1 SEO tool choice is: *(Apply)*
 A. Both Ahrefs Standard + SEMrush Guru
 B. ONE of Ahrefs Lite OR SEMrush Pro
-C. None — Year 1 doesn't need SEO tools
+C. None, Year 1 doesn't need SEO tools
 D. Moz Pro only
 
 ---
@@ -74,7 +74,7 @@ D. Enterprise Adobe Analytics
 ### Q9. The reading's recommended Year-1 billing/contracts tool is: *(Remember)*
 A. Salesforce
 B. Bonsai ($25/mo) or PandaDoc ($35/mo)
-C. None — handle manually
+C. None, handle manually
 D. DocuSign Enterprise
 
 ---

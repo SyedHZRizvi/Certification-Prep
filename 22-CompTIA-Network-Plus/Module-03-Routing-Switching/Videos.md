@@ -18,7 +18,7 @@
 
 # 🎥 Module 3 Videos: Routing & Switching
 
-> **How to use:** This module covers two huge subjects — routing protocols and switching. Watch the routing essentials first, then the switching essentials. Don't skip STP — it's one of the most-tested topics on Network+.
+> **How to use:** This module covers two huge subjects routing protocols and switching. Watch the routing essentials first, then the switching essentials. Don't skip STP it's one of the most-tested topics on Network+.
 
 ## ⭐ Essential watching (~80 min)
 
@@ -95,7 +95,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">BGP — The Glue of the Internet</p>
+      <p class="vg-title">BGP, The Glue of the Internet</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 14 min · Inter-AS routing</span>
     </div>

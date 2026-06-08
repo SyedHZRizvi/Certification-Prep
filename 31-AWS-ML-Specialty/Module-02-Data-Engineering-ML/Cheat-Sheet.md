@@ -4,7 +4,7 @@
 
 ---
 
-## 📦 S3 Storage Classes — One-Liner Recall
+## 📦 S3 Storage Classes, One-Liner Recall
 
 | Class | When |
 |-------|------|
@@ -30,7 +30,7 @@
 
 ---
 
-## 🌊 Glue — The Big Three
+## 🌊 Glue, The Big Three
 
 | Tool | Use |
 |------|-----|
@@ -84,14 +84,14 @@ Firehose buffer: **60 s OR 5 MiB** (whichever first). NOT real-time.
 
 ---
 
-## 🏞️ Lake Formation — When To Use
+## 🏞️ Lake Formation, When To Use
 
 - **Column / row-level security** on Glue tables
 - **LF-Tags** for tag-based grants
 - **Cross-account sharing** via RAM (no copy)
 - Centralised audit through CloudTrail
 
-🚨 LF is ON TOP of IAM — both are evaluated; LF doesn't override IAM `Deny`.
+🚨 LF is ON TOP of IAM, both are evaluated; LF doesn't override IAM `Deny`.
 
 ---
 

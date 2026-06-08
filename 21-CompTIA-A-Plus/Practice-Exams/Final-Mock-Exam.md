@@ -1,7 +1,7 @@
-# 🏆 Final Mock Exam — CompTIA A+ (220-1101 + 220-1102 Combined)
+# 🏆 Final Mock Exam, CompTIA A+ (220-1101 + 220-1102 Combined)
 
 > **Conditions:** Set a **90-minute timer**. 90 questions. Treat this EXACTLY like the real exam.
-> **Pass mark:** 77/90 (~85%) — the real Core 1 passes at 675/900 (~75%); Core 2 passes at 700/900 (~78%). Aim higher in practice.
+> **Pass mark:** 77/90 (~85%), the real Core 1 passes at 675/900 (~75%); Core 2 passes at 700/900 (~78%). Aim higher in practice.
 > Take this 2–3 days before your real CompTIA A+ exams.
 >
 > **Blueprint distribution (mirrors the real Core 1 + Core 2 weightings):**
@@ -148,7 +148,7 @@ D. Verify
 
 ### 23. A user's PC has IP 169.254.42.10. This indicates:
 A. Valid public IP
-B. APIPA — DHCP failure
+B. APIPA, DHCP failure
 C. Manually set
 D. Cisco device
 
@@ -164,7 +164,7 @@ B. PSU failure
 C. HDD failure
 D. Normal POST
 
-### 26. RAID 5 array rebuilds — the PRIMARY risk during rebuild:
+### 26. RAID 5 array rebuilds, the PRIMARY risk during rebuild:
 A. RAID is too fast
 B. A second simultaneous disk failure during rebuild = total data loss
 C. The array becomes RAID 6
@@ -188,7 +188,7 @@ B. Heat-sensitive paper (no ink, no ribbon)
 C. Wax ribbon
 D. Toner
 
-### 30. Inkjet printers with streaky output — the MOST appropriate first fix:
+### 30. Inkjet printers with streaky output, the MOST appropriate first fix:
 A. Replace printer
 B. Run the print-head cleaning utility
 C. Reformat PC
@@ -278,13 +278,13 @@ B. `dism /Online /Cleanup-Image /RestoreHealth`
 C. Replace SSD
 D. Roll back BIOS
 
-### 45. "BOOTMGR is missing" — BEST repair:
+### 45. "BOOTMGR is missing", BEST repair:
 A. Reformat
 B. bootrec from install media
 C. Replace CPU
 D. Disable Secure Boot
 
-### 46. `BSOD MEMORY_MANAGEMENT` — first diagnostic:
+### 46. `BSOD MEMORY_MANAGEMENT`, first diagnostic:
 A. Replace motherboard
 B. Run MemTest86 (at least 1 full pass)
 C. Reformat
@@ -424,7 +424,7 @@ D. iCloud full
 
 ### 69. Jailbreak detected by MDM typically triggers:
 A. Free upgrade
-B. Auto-quarantine — block corporate resources
+B. Auto-quarantine, block corporate resources
 C. Bigger data plan
 D. Nothing
 
@@ -500,7 +500,7 @@ B. NEVER (no platters; defrag wears flash). Use TRIM/Optimize instead.
 C. Done monthly
 D. Done daily
 
-### 82 (Scenario PBQ). A user reports a PC won't POST — fans spin, motherboard LEDs on, but no display. The MOST efficient sequence of FIRST 3 checks:
+### 82 (Scenario PBQ). A user reports a PC won't POST, fans spin, motherboard LEDs on, but no display. The MOST efficient sequence of FIRST 3 checks:
 A. Replace motherboard, then CPU, then RAM
 B. Verify monitor power + cable + correct input → reseat RAM → test with known-good GPU (or iGPU port)
 C. Reformat OS, reinstall drivers, update BIOS
@@ -546,7 +546,7 @@ MINIMUM viable architecture:
 A. Strong passwords + same-room NAS
 B. **BitLocker** + **MDM (Intune) selective wipe** + **3-2-1-1-0 backups with cloud immutable storage**
 C. Disable Defender
-D. No DR — buy insurance
+D. No DR, buy insurance
 
 ### 87 (Scenario PBQ). A user reports their Wi-Fi is slow only at lunchtime in the 3rd-floor office. MOST likely cause:
 A. ISP throttles at lunch
@@ -554,7 +554,7 @@ B. AP overloaded with client count + 2.4 GHz interference at lunchtime
 C. Router needs firmware
 D. Cable run too long
 
-### 88. A 4-disk RAID 5 array of 4 TB drives — usable capacity:
+### 88. A 4-disk RAID 5 array of 4 TB drives, usable capacity:
 A. 4 TB
 B. 8 TB
 C. 12 TB
@@ -566,9 +566,9 @@ B. netsh winsock reset
 C. format C:
 D. shutdown /r
 
-### 90. The MAERSK NotPetya 2017 recovery — primary lesson:
+### 90. The MAERSK NotPetya 2017 recovery, primary lesson:
 A. Pay ransoms
-B. **Backups must survive the disaster they protect against** — separate auth domain, immutable storage, AD-forest independence
+B. **Backups must survive the disaster they protect against**, separate auth domain, immutable storage, AD-forest independence
 C. Use Linux only
 D. Move everything to Mac
 
@@ -625,8 +625,8 @@ D. Move everything to Mac
 
 ✅ Read the Cheat-Sheet of every module the day before
 ✅ Get 7+ hours of sleep
-✅ Bring 2 forms of ID (one with photo) — required by Pearson VUE
+✅ Bring 2 forms of ID (one with photo), required by Pearson VUE
 ✅ Arrive 30 minutes early
-✅ Take a deep breath — you've prepared. You've earned this.
+✅ Take a deep breath, you've prepared. You've earned this.
 
 When you pass, return for [CompTIA Network+](../../22-CompTIA-Network-Plus/README.md) (course 22). Good luck! 🛠️

@@ -40,8 +40,8 @@ Layered enforcement:
 
 - Premium FileStorage only
 - LRS or ZRS (no GRS)
-- **No in-transit encryption** — protect via VNet / private endpoint
-- No AD/Kerberos — auth by network
+- **No in-transit encryption**, protect via VNet / private endpoint
+- No AD/Kerberos, auth by network
 
 ---
 
@@ -56,8 +56,8 @@ Storage Sync Service (Azure)
 
 Cloud tiering policies:
 
-- **Volume free space** — keep X% disk free
-- **Date** — tier files older than N days
+- **Volume free space**, keep X% disk free
+- **Date**, tier files older than N days
 - Both = stricter wins
 
 Excluded from tiering: system state, paging file, AV-quarantined.
@@ -109,7 +109,7 @@ Often **wrong**:
 
 1. NFS share requirements? ___
 2. Three identity-based SMB auth modes? ___
-3. Cloud tiering policies — name two? ___
+3. Cloud tiering policies, name two? ___
 4. Premium vs standard billing model? ___
 5. Where do file snapshots show up for Windows users? ___
 

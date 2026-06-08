@@ -10,9 +10,9 @@ Picture a movie set.
 
 The **Director** (Product Owner) has the vision. They decide what scenes to shoot, in what order, and what makes the cut. They're obsessed with the *audience experience*.
 
-The **Crew** (Developers) — cinematographers, sound techs, makeup, etc. — figure out *how* to actually capture the director's vision. They're the experts. They self-organize: nobody tells the lighting tech where to stand.
+The **Crew** (Developers) cinematographers, sound techs, makeup, etc. figure out *how* to actually capture the director's vision. They're the experts. They self-organize: nobody tells the lighting tech where to stand.
 
-The **Producer** (Scrum Master) doesn't direct the movie or operate cameras. They make sure the trailer arrives, the catering is good, the union rules are followed, and the director isn't being a tyrant. They serve everyone — and protect the film from chaos.
+The **Producer** (Scrum Master) doesn't direct the movie or operate cameras. They make sure the trailer arrives, the catering is good, the union rules are followed, and the director isn't being a tyrant. They serve everyone, and protect the film from chaos.
 
 **That's the Scrum Team.** Three accountabilities, no managers, no project managers, no tech leads.
 
@@ -22,7 +22,7 @@ The **Producer** (Scrum Master) doesn't direct the movie or operate cameras. The
 
 The Scrum Guide 2020 stopped calling these "**roles**" and started calling them "**accountabilities**." Why?
 
-> Roles imply *job titles*. But Scrum is a *team* — everyone is a member, with one of three accountabilities. A "Scrum Master" is a person with the *Scrum Master accountability* — not a job description.
+> Roles imply *job titles*. But Scrum is a *team* everyone is a member, with one of three accountabilities. A "Scrum Master" is a person with the *Scrum Master accountability* not a job description.
 
 🎯 **Exam tip:** The exam may use "roles" or "accountabilities" interchangeably, but if asked which is correct per the 2020 Guide, **accountabilities** wins.
 
@@ -34,12 +34,12 @@ The Scrum Guide 2020 stopped calling these "**roles**" and started calling them 
 > *"The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team."*
 
 ### What The PO Does
-- 📋 **Manages the Product Backlog** — orders it, refines it, makes it transparent
+- 📋 **Manages the Product Backlog**, orders it, refines it, makes it transparent
 - 🎯 **Develops & communicates the Product Goal**
 - ✍️ **Creates Product Backlog items** (PBIs / user stories)
 - 🗂️ **Orders the backlog** (priorities, value, risk)
 - 👀 **Ensures backlog is visible & understood** by the team
-- 💰 **Maximizes value** — the #1 KPI
+- 💰 **Maximizes value**, the #1 KPI
 
 ### What The PO Doesn't Do
 - ❌ Tell the developers HOW to build something
@@ -51,13 +51,13 @@ The Scrum Guide 2020 stopped calling these "**roles**" and started calling them 
 ### PO Power Rules
 1. **The Product Owner is ONE person.** Not a committee. Not a "PO Team."
 2. **The PO has FINAL authority on backlog order.** Even when stakeholders disagree.
-3. **The PO can be the same person as a Developer** (theoretically) — but not the Scrum Master.
+3. **The PO can be the same person as a Developer** (theoretically), but not the Scrum Master.
 
 ### Common PO Anti-Patterns
-- 😱 **"Proxy PO"** — PO has no real authority; passes everything to a "real" decision-maker
-- 😱 **"Order-taker PO"** — Just transcribes stakeholder requests; doesn't prioritize
-- 😱 **"Absent PO"** — Never available to clarify; team blocked constantly
-- 😱 **"Dictator PO"** — Tells developers HOW to build (overstepping)
+- 😱 **"Proxy PO"**, PO has no real authority; passes everything to a "real" decision-maker
+- 😱 **"Order-taker PO"**, Just transcribes stakeholder requests; doesn't prioritize
+- 😱 **"Absent PO"**, Never available to clarify; team blocked constantly
+- 😱 **"Dictator PO"**, Tells developers HOW to build (overstepping)
 
 🎯 **Exam pattern:** "Stakeholders disagree on priority. What should happen?"
 - Right: **PO decides**, possibly after consulting stakeholders.
@@ -106,10 +106,10 @@ The Scrum Master serves **three groups**:
 4. The SM has **NO authority** to assign work or change priorities
 
 ### Common SM Anti-Patterns
-- 😱 **"Secretary SM"** — Just schedules events, doesn't coach
-- 😱 **"Boss SM"** — Tells team what to do
-- 😱 **"Cheerleader SM"** — All positivity, no challenge
-- 😱 **"Process Police SM"** — Enforces rules without explaining value
+- 😱 **"Secretary SM"**, Just schedules events, doesn't coach
+- 😱 **"Boss SM"**, Tells team what to do
+- 😱 **"Cheerleader SM"**, All positivity, no challenge
+- 😱 **"Process Police SM"**, Enforces rules without explaining value
 
 🎯 **Exam pattern:** "Team is consistently late on commitments. What should the SM do?"
 - ❌ Wrong: "Tell them to work harder"
@@ -130,10 +130,10 @@ The Scrum Master serves **three groups**:
 - 🛠️ **Hold each other accountable** as professionals
 
 ### Developer Power Rules
-1. "Developers" includes **anyone** doing the work — not just programmers!
-   - Designers, testers, writers, ops, data analysts — all "Developers" in Scrum
-2. Developers are **cross-functional** — collectively, they have all skills needed
-3. Developers are **self-managing** — decide who does what, when, how
+1. "Developers" includes **anyone** doing the work, not just programmers!
+   - Designers, testers, writers, ops, data analysts, all "Developers" in Scrum
+2. Developers are **cross-functional**, collectively, they have all skills needed
+3. Developers are **self-managing**, decide who does what, when, how
 4. Developers **estimate** the work
 5. Developers **own the Sprint Backlog**
 
@@ -155,8 +155,8 @@ A "Developer" in Scrum is **NOT** the same as a "developer" in your job title.
 ### Developer Anti-Patterns
 - 😱 **Sub-teams within the team** ("front-end team" vs "back-end team")
 - 😱 **One person assigning tasks** to others
-- 😱 **"Not my job" mentality** — tester won't help debug
-- 😱 **Side commitments** — pulled to other projects mid-Sprint
+- 😱 **"Not my job" mentality**, tester won't help debug
+- 😱 **Side commitments**, pulled to other projects mid-Sprint
 
 ---
 
@@ -184,9 +184,9 @@ The whole team aligns on these. No splits.
 |-------------|----------|
 | PO + Developer | ✅ Technically yes, but not recommended |
 | SM + Developer | ✅ Yes, common in small teams |
-| SM + PO | ❌ NO — conflict of interest, impossible to do well |
-| Multiple POs | ❌ NO — one PO per product |
-| Multiple SMs | ❌ NO — one SM per team |
+| SM + PO | ❌ NO, conflict of interest, impossible to do well |
+| Multiple POs | ❌ NO, one PO per product |
+| Multiple SMs | ❌ NO, one SM per team |
 | One SM for multiple teams | ✅ Yes, common in scaling |
 
 🎯 **Exam pattern:** "Can the same person be Product Owner and Scrum Master?" → **No.**
@@ -241,7 +241,7 @@ Stakeholders are NOT part of the Scrum Team. They:
 ### Scenario C:
 > *Scrum Master notices the same person always presents at the Daily Scrum.*
 
-✅ Right: SM coaches the team that the Daily is for *all* developers, but doesn't force anyone — encourages self-organizing improvement.
+✅ Right: SM coaches the team that the Daily is for *all* developers, but doesn't force anyone, encourages self-organizing improvement.
 
 ### Scenario D:
 > *PO wants to skip the Sprint Review because no stakeholders can attend.*
@@ -249,7 +249,7 @@ Stakeholders are NOT part of the Scrum Team. They:
 ✅ Right: SM coaches PO that the Sprint Review is *required* and serves the team's inspection of progress, even with limited stakeholders.
 
 ### Scenario E:
-> *Developer says "QA should do this — not me."*
+> *Developer says "QA should do this, not me."*
 
 ✅ Right: SM coaches the team on cross-functional, "we" mindset. There are no sub-roles; all are Developers.
 
@@ -266,7 +266,7 @@ Stakeholders are NOT part of the Scrum Team. They:
 | **Self-managing** | Team decides who/when/how |
 | **Servant leader** | Leadership through service (true leader who serves) |
 | **Stakeholder** | Interested party, NOT a team member |
-| **Accountability (vs role)** | 2020 term — implies responsibility, not job title |
+| **Accountability (vs role)** | 2020 term, implies responsibility, not job title |
 
 ---
 
@@ -290,23 +290,23 @@ You now know:
 ---
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The Agile Manifesto (especially Value 1 and Principle 5 — see [Module 1](../Module-01-Agile-Mindset/Reading.md))
-> - The Scrum framework on one page — the 1-team / 5-events / 3-artifacts picture from [Module 2](../Module-02-Scrum-Framework/Reading.md)
+> - The Agile Manifesto (especially Value 1 and Principle 5, see [Module 1](../Module-01-Agile-Mindset/Reading.md))
+> - The Scrum framework on one page, the 1-team / 5-events / 3-artifacts picture from [Module 2](../Module-02-Scrum-Framework/Reading.md)
 > - Why the 2020 Scrum Guide replaced "roles" with "accountabilities" (Module 2)
 >
 > Roles are where most exam points are scored. Re-read Module 2's framework diagram before this module so you can map each accountability to the artifact/event it owns.
 
 ---
 
-## 📊 Case Study — ING Netherlands: 350 Squads, 13 Tribes (2015 transformation)
+## 📊 Case Study, ING Netherlands: 350 Squads, 13 Tribes (2015 transformation)
 
 **Situation.** In mid-2014, ING Netherlands (the retail bank arm of ING Group) faced a textbook crisis: customer expectations were shifting toward digital-native banking (mobile-first, instant transfers, real-time KYC), but ING's IT was structured into 17 hierarchical, function-aligned departments with quarterly release cycles. The CIO and HR head jointly proposed dissolving the existing IT/Product/Marketing org structures entirely and rebuilding around the Spotify model adapted for a regulated bank.
 
-**Decision.** Between January and June 2015, ING Netherlands restructured **~3,500 IT and product staff** into **350 multi-disciplinary Squads** (8–9 people each, each with a PO and a Scrum Master accountability) grouped into **13 Tribes** of ~150 people each, with Chapter Leads providing cross-squad functional discipline (e.g., a "data-engineering chapter" or a "compliance chapter"). Every employee re-applied for a job inside the new structure — only ~2,500 were hired back, with attrition shaped by the org change itself. ING built a **dual career ladder**: people could progress as Chapter members (deep skill mastery) or as Tribe/Squad leads (broader product accountability) without forcing every IC into management.
+**Decision.** Between January and June 2015, ING Netherlands restructured **~3,500 IT and product staff** into **350 multi-disciplinary Squads** (8–9 people each, each with a PO and a Scrum Master accountability) grouped into **13 Tribes** of ~150 people each, with Chapter Leads providing cross-squad functional discipline (e.g., a "data-engineering chapter" or a "compliance chapter"). Every employee re-applied for a job inside the new structure, only ~2,500 were hired back, with attrition shaped by the org change itself. ING built a **dual career ladder**: people could progress as Chapter members (deep skill mastery) or as Tribe/Squad leads (broader product accountability) without forcing every IC into management.
 
-**Outcome.** ING reported (McKinsey 2017 case write-up, *"ING's agile transformation"*): time-to-market dropped from quarterly to bi-weekly release for most products; employee Net Promoter Score rose ~30 points in the first 18 months; the IT operating cost of the Netherlands business dropped ~30% over the 2015–2018 period. However, internal accounts (including a 2019 University of Tilburg case study) noted that ~10% of the squads were "Scrum in name only" — no clear PO authority, fluid sprint boundaries, and Chapter Leads de facto operating as old-school managers. ING-Belgium subsequently adopted a *modified* version of the model (with fewer squads and stronger central PO governance) after observing both the wins and the dilution.
+**Outcome.** ING reported (McKinsey 2017 case write-up, *"ING's agile transformation"*): time-to-market dropped from quarterly to bi-weekly release for most products; employee Net Promoter Score rose ~30 points in the first 18 months; the IT operating cost of the Netherlands business dropped ~30% over the 2015–2018 period. However, internal accounts (including a 2019 University of Tilburg case study) noted that ~10% of the squads were "Scrum in name only", no clear PO authority, fluid sprint boundaries, and Chapter Leads de facto operating as old-school managers. ING-Belgium subsequently adopted a *modified* version of the model (with fewer squads and stronger central PO governance) after observing both the wins and the dilution.
 
-**Lesson for the exam / for practitioners.** The dual-ladder structure is the takeaway — and it matters for PSM I role questions. ING built it precisely because Scrum says *no one manages the Scrum Team*; but a 3,500-person bank still needs HR career paths. The Chapter Lead role was *not* a Scrum Master, *not* a Product Owner, and *not* a manager-in-disguise — they led functional skill development (think "head of front-end engineering practice") while having no work-assignment authority over individual squad members. When the exam asks "Can the Scrum Master also be the line manager?" — ING's answer (and the right exam answer) is **no**: separate the work-assignment authority from the skill-development authority.
+**Lesson for the exam / for practitioners.** The dual-ladder structure is the takeaway and it matters for PSM I role questions. ING built it precisely because Scrum says *no one manages the Scrum Team*; but a 3,500-person bank still needs HR career paths. The Chapter Lead role was *not* a Scrum Master, *not* a Product Owner, and *not* a manager-in-disguise they led functional skill development (think "head of front-end engineering practice") while having no work-assignment authority over individual squad members. When the exam asks "Can the Scrum Master also be the line manager?", ING's answer (and the right exam answer) is **no**: separate the work-assignment authority from the skill-development authority.
 
 **Discussion (Socratic).**
 - Q1: ING required every employee to re-apply for a job. What's the strongest argument that this was *necessary* for the transformation to work? What's the strongest argument that it violated the Manifesto's value of "Individuals and interactions"?
@@ -316,15 +316,15 @@ You now know:
 ---
 
 > **Where this leads.**
-> - Inside this course: [Module 4 — Events](../Module-04-Events/Reading.md) shows how each accountability participates in each event (e.g., who runs the Daily Scrum, who attends the Retrospective). [Module 7 — Servant Leadership](../Module-07-Servant-Leadership/Reading.md) deepens the Scrum Master behavior model (the 5 stances). [Module 8 — Scaling](../Module-08-Scaling/Reading.md) revisits ING's structure under the Nexus and LeSS lenses.
-> - Cross-course: `02-PMP` Module 5 (Stakeholders and Communication) covers stakeholder identification and engagement frameworks — useful counterpart since stakeholders in Scrum are NOT team members.
+> - Inside this course: [Module 4 Events](../Module-04-Events/Reading.md) shows how each accountability participates in each event (e.g., who runs the Daily Scrum, who attends the Retrospective). [Module 7 Servant Leadership](../Module-07-Servant-Leadership/Reading.md) deepens the Scrum Master behavior model (the 5 stances). [Module 8, Scaling](../Module-08-Scaling/Reading.md) revisits ING's structure under the Nexus and LeSS lenses.
+> - Cross-course: `02-PMP` Module 5 (Stakeholders and Communication) covers stakeholder identification and engagement frameworks, useful counterpart since stakeholders in Scrum are NOT team members.
 > - Practice: ~10 of the 40 Practice-Exam-1 questions, and ~8 of the 40 Practice-Exam-2 questions, test role boundaries. Role questions are *the* most reliable source of exam points.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **The proxy PO problem.** A team you coach has a PO who "passes everything to the steering committee for sign-off." Walk through how you would coach this PO over four Sprints — what specifically would you do in each Sprint? At what point would you escalate to the org, and what would you say?
+1. **The proxy PO problem.** A team you coach has a PO who "passes everything to the steering committee for sign-off." Walk through how you would coach this PO over four Sprints, what specifically would you do in each Sprint? At what point would you escalate to the org, and what would you say?
 2. **Cross-functional team in a specialist world.** Your team includes a single security specialist whose skill is required to ship any feature. The org claims the team is "cross-functional" because the specialist is on it. Defend or attack that claim. What's the strongest counter? (Hint: read the Scrum Guide's definition of "cross-functional" carefully.)
 3. **PO + Developer combined.** The Scrum Guide allows the same person to be PO and a Developer. Construct the strongest argument that this is a *good* idea for a 4-person startup AND the strongest argument that it's a *bad* idea for a 9-person corporate team. What changes between the two contexts?
 4. **ING's Chapter Lead role.** ING built the Chapter Lead role to give functional career growth without violating Scrum's "no one manages the team" rule. Is the Chapter Lead role compatible with the Scrum Guide? Cite the Guide to defend your position. What's the failure mode if the Chapter Lead drifts into work-assignment behavior?
@@ -348,7 +348,7 @@ You now know:
 | ING follow-up case | University of Tilburg | 2019 | Tilburg School of Economics and Management case series |
 | Type X / Y / Z patterns (referenced briefly) | Sutherland | 2014 | *Scrum: The Art of Doing Twice the Work in Half the Time* (Crown Business) |
 | Toyota's hoshin kanri (servant-leadership lineage referenced in Module 7) | Akao | 1991 | *Hoshin Kanri: Policy Deployment for Successful TQM* (Productivity Press) |
-| RACI matrix (counter-example — *not* in Scrum) | Smith & Erwin (often cited); originated in PMI symposia | 1981; codified in PMBOK 4th ed (2008) | *Project Management Institute Symposium* |
+| RACI matrix (counter-example, *not* in Scrum) | Smith & Erwin (often cited); originated in PMI symposia | 1981; codified in PMBOK 4th ed (2008) | *Project Management Institute Symposium* |
 | *Coaching Agile Teams* (definitive SM behavior text) | Adkins | 2010 | Addison-Wesley Professional |
 
-**Verification note.** Greenleaf's *Servant as Leader* essay is the canonical citation for servant leadership; the 1970 essay predates Greenleaf's 1977 book by seven years and is the more academically cited source. ING transformation numbers are from McKinsey's January 2017 public case write-up. The "Type X/Y/Z patterns" framing of teams is from Sutherland's 2014 book, which itself draws on Takeuchi & Nonaka's 1986 HBR article *"The New New Product Development Game"* — the paper that gave Scrum its name.
+**Verification note.** Greenleaf's *Servant as Leader* essay is the canonical citation for servant leadership; the 1970 essay predates Greenleaf's 1977 book by seven years and is the more academically cited source. ING transformation numbers are from McKinsey's January 2017 public case write-up. The "Type X/Y/Z patterns" framing of teams is from Sutherland's 2014 book, which itself draws on Takeuchi & Nonaka's 1986 HBR article *"The New New Product Development Game"*, the paper that gave Scrum its name.

@@ -41,7 +41,7 @@ D. Provide cross-tenant access
 ### Q5. Can you add an existing VM to an Availability Set after it's created? *(Understand)*
 A. Yes, anytime
 B. Only by stopping the VM
-C. No — AS must be specified at VM creation
+C. No, AS must be specified at VM creation
 D. Only with Azure Site Recovery
 
 ---
@@ -85,7 +85,7 @@ D. 1 → 2 → 4 → 3 → 5
 
 ---
 
-### Q10. Yes/No — Availability options. *(Evaluate)*
+### Q10. Yes/No, Availability options. *(Evaluate)*
 
 **S1:** An Availability Set and an Availability Zone can be combined for one VM.
 **S2:** Availability Zones provide physically separate datacenters in the same region.
@@ -154,7 +154,7 @@ D. Equates to AS update domains
 
 ---
 
-### Q18. Yes/No — Spot VMs. *(Evaluate)*
+### Q18. Yes/No, Spot VMs. *(Evaluate)*
 
 **S1:** Spot VMs can be evicted with 30 seconds' notice.
 **S2:** Spot VMs come with a 99.99% SLA.
@@ -207,7 +207,7 @@ D. VM backup
 
 ---
 
-### Q24. Yes/No — Disks & encryption. *(Evaluate)*
+### Q24. Yes/No, Disks & encryption. *(Evaluate)*
 
 **S1:** SSE at-rest with Microsoft-managed keys is always on by default for managed disks.
 **S2:** Encryption at host encrypts temp and cache disks at the physical host level.
@@ -266,7 +266,7 @@ The canonical Azure VM SLA ladder. Memorize.
 ### Q4: **B. Distribute VMs across fault & update domains within one datacenter**
 Two VMs in the same AS are guaranteed never to be in the same FD or UD at the same time.
 
-### Q5: **C. No — AS must be specified at VM creation**
+### Q5: **C. No, AS must be specified at VM creation**
 A famous gotcha. You'd have to redeploy.
 
 ### Q6: **C. Premium SSD v2**

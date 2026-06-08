@@ -108,12 +108,12 @@ AnimInstance->Montage_Stop(0.2f, AttackMontage);   // blend out over 0.2s
 
 | Trap | Reality |
 |------|---------|
-| AnimGraph for code | Wrong — AnimGraph is animation logic; Event Graph is code |
-| Blend Space replaces state machine | No — Blend Space lives inside a state machine state |
-| Control Rig = Sequencer only | No — Control Rig is real-time, runs on animation thread |
-| Montage = new state machine state | No — Montage is a Slot override, not a state |
-| Aim Offset = camera aim | No — Aim Offset is an additive pose overlay for weapon aiming |
-| Blend Space axes unequal range | Normalise both axes — unequal ranges bias interpolation toward the wider axis |
+| AnimGraph for code | Wrong, AnimGraph is animation logic; Event Graph is code |
+| Blend Space replaces state machine | No, Blend Space lives inside a state machine state |
+| Control Rig = Sequencer only | No, Control Rig is real-time, runs on animation thread |
+| Montage = new state machine state | No, Montage is a Slot override, not a state |
+| Aim Offset = camera aim | No, Aim Offset is an additive pose overlay for weapon aiming |
+| Blend Space axes unequal range | Normalise both axes, unequal ranges bias interpolation toward the wider axis |
 
 ---
 

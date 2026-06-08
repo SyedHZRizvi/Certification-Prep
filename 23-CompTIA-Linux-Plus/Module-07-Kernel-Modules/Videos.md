@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: Kernel Modules, Devices & LVM
 
-> **How to use:** Click any card. Watch in order. The LVM ones are most directly exam-relevant — set up a VM with extra virtual disks first.
+> **How to use:** Click any card. Watch in order. The LVM ones are most directly exam-relevant, set up a VM with extra virtual disks first.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LVM Complete Tutorial — PV, VG, LV</p>
+      <p class="vg-title">LVM Complete Tutorial, PV, VG, LV</p>
       <p class="vg-creator">Learn Linux TV</p>
       <span class="vg-duration">⏱ 20 min · End-to-end stack build</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">/proc & /sys — The Virtual Filesystems</p>
+      <p class="vg-title">/proc & /sys, The Virtual Filesystems</p>
       <p class="vg-creator">DorianDotSlash</p>
       <span class="vg-duration">⏱ 9 min · What's in there + why</span>
     </div>

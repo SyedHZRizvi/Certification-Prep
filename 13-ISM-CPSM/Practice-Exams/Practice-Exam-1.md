@@ -1,8 +1,8 @@
-# 🧪 Practice Exam 1 — ISM CPSM (Half-Length, Foundation + Sourcing Focus)
+# 🧪 Practice Exam 1, ISM CPSM (Half-Length, Foundation + Sourcing Focus)
 
 > **Conditions:** Set a 90-minute timer. 80 questions. Treat it like the real thing.
 > **Pass mark:** 60/80 (75%)
-> Take this AFTER finishing Modules 1–4. Covers Modules 1 (Foundations), 2 (Category & Sourcing), 3 (Negotiation & Contracts), 4 (SRM) — territory of Exam 1 and the first half of Exam 2 in the real CPSM series.
+> Take this AFTER finishing Modules 1–4. Covers Modules 1 (Foundations), 2 (Category & Sourcing), 3 (Negotiation & Contracts), 4 (SRM), territory of Exam 1 and the first half of Exam 2 in the real CPSM series.
 
 ---
 
@@ -388,13 +388,13 @@ D. PIP + possible dual-sourcing in parallel
 
 ### 64. Supplier audits should be:
 A. Identical for all
-B. Risk-based — frequency tied to tier and risk
+B. Risk-based, frequency tied to tier and risk
 C. Outsourced entirely
 D. Discontinued
 
 ### 65. The MOST appropriate response to a Tier-3 (transactional) supplier with slight underperformance:
 A. Launch a full development program
-B. Standard corrective action; replace if it continues — don't over-invest
+B. Standard corrective action; replace if it continues, don't over-invest
 C. Promote to Tier-1
 D. Ignore
 
@@ -540,7 +540,7 @@ The CPSM real exam tests **judgment**. If you missed scenario questions, slow do
 These rationales explain why the correct answer wins AND why each distractor fails. Use them to build the judgment patterns CPSM tests.
 
 **Q1. D.** Supply management is strategic and value-creating.
-- Why D: Matches the ISM definition (Module 1) — acquiring goods/services AND managing the supply base.
+- Why D: Matches the ISM definition (Module 1), acquiring goods/services AND managing the supply base.
 - A wrong: Issuing POs is *purchasing*, the transactional subset.
 - B wrong: Receiving and inspecting is *operations*, not supply mgmt.
 - C wrong: Lowest unit price is the Stage-1 maturity behavior CPSM explicitly tests against.
@@ -548,13 +548,13 @@ These rationales explain why the correct answer wins AND why each distractor fai
 
 **Q2. D.** Multi-year category strategy is the only strategic option listed.
 - Why D: Strategic = multi-year horizon, owned by senior supply leaders.
-- A, B, C wrong: All three are tactical day-to-day work — appropriate for buyers, not senior supply leaders.
+- A, B, C wrong: All three are tactical day-to-day work, appropriate for buyers, not senior supply leaders.
 - Exam-takeaway: When asked "most strategic," look for the option with the longest horizon and highest cross-functional impact.
 
 **Q3. A.** A CoE enables; it doesn't own all spend.
-- Why A: Module 1 definition — methodology, tools, analytics across the org.
+- Why A: Module 1 definition, methodology, tools, analytics across the org.
 - B wrong: Owning all spend is the *centralized* model, not a CoE.
-- C wrong: A CoE doesn't replace operating teams — it enables them.
+- C wrong: A CoE doesn't replace operating teams, it enables them.
 - D wrong: CoEs are domain-agnostic; "IT only" is a category team, not a CoE.
 - Exam-takeaway: CoE = influence without authority; centralized = authority with centralization.
 
@@ -576,9 +576,9 @@ These rationales explain why the correct answer wins AND why each distractor fai
 - Exam-takeaway: Org-model questions hinge on BU diversity and spend characteristics.
 
 **Q7. D.** Stage 5 (world-class).
-- Why D: Module 1 maturity model — Stage 5 = supply-enabled innovation drives revenue, board visibility.
+- Why D: Module 1 maturity model, Stage 5 = supply-enabled innovation drives revenue, board visibility.
 - A, B wrong: Lower stages don't include innovation-driving revenue.
-- C wrong: It IS in the model — Stage 5.
+- C wrong: It IS in the model, Stage 5.
 - Exam-takeaway: Memorize what each maturity stage *looks* like, not just the name.
 
 **Q8. A.** "Right relationship" is a modern addition, not part of the classic five.
@@ -592,7 +592,7 @@ These rationales explain why the correct answer wins AND why each distractor fai
 - Exam-takeaway: Any option that elevates personal preference over data is wrong.
 
 **Q10. D.** Visibility into historical spend.
-- Why D: Spend analysis is diagnostic — informs every downstream decision.
+- Why D: Spend analysis is diagnostic, informs every downstream decision.
 - A wrong: Identifying suppliers to terminate may follow, but isn't the primary purpose.
 - B wrong: AP audits are about controls, not category strategy.
 - C wrong: Working capital is treasury, not spend analysis.
@@ -722,7 +722,7 @@ These rationales explain why the correct answer wins AND why each distractor fai
 
 **Q37. A.** CISG applies by default between signatory countries unless opted out.
 - B, C, D wrong: Misunderstandings.
-- Exam-takeaway: Default-on regime — must explicitly opt out.
+- Exam-takeaway: Default-on regime, must explicitly opt out.
 
 **Q38. D.** FAR governs US federal government contracts.
 - A, B, C wrong: Wrong scopes.
@@ -780,7 +780,7 @@ These rationales explain why the correct answer wins AND why each distractor fai
 
 **Q51. C.** Tier-1 strategic = 1-5% of suppliers, 30-50% of spend.
 - A, B, D wrong: Wrong proportions.
-- Exam-takeaway: Pareto applies — concentrate effort where impact lives.
+- Exam-takeaway: Pareto applies, concentrate effort where impact lives.
 
 **Q52. B.** Balanced scorecard = Q + C + D + S + Innovation + ESG + Risk.
 - A, C, D wrong: Single-axis metrics aren't balanced.
@@ -830,7 +830,7 @@ These rationales explain why the correct answer wins AND why each distractor fai
 
 **Q62. C.** Engage remediation per ISM principles + escalate + document + prepare contractual action.
 - A, B, D wrong: Quiet switching, ignoring, or quiet cuts violate ISM ethics.
-- Exam-takeaway: Module 7 reinforces — there are no "minor" labor violations.
+- Exam-takeaway: Module 7 reinforces, there are no "minor" labor violations.
 
 **Q63. D.** RED = PIP + possible dual-source in parallel.
 - A wrong: Hoping isn't a plan.

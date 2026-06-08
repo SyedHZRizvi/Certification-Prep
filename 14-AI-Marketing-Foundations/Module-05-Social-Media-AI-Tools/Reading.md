@@ -3,9 +3,9 @@
 > **Why this module matters:** Social is the channel where AI tooling is moving fastest and the platform algorithms are most opaque. Most marketers waste 70% of their social budget because they don't understand each platform's 2026 algorithmic logic. This module fixes that.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 — The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) — POESM (especially Shared media), the walled-garden concept
-> - [Module 4 — Content Marketing with GenAI](../Module-04-Content-Marketing-Generative-AI/Reading.md) — hub-and-spoke repurposing, brand voice; both reappear here
-> - Hands-on social fluency — you should know what a Reel, a Tweet (now X post), and a LinkedIn comment look like as a user
+> - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) POESM (especially Shared media), the walled-garden concept
+> - [Module 4 Content Marketing with GenAI](../Module-04-Content-Marketing-Generative-AI/Reading.md) hub-and-spoke repurposing, brand voice; both reappear here
+> - Hands-on social fluency, you should know what a Reel, a Tweet (now X post), and a LinkedIn comment look like as a user
 >
 > If you don't actively use TikTok, LinkedIn, or Pinterest, scroll each platform for 15 minutes before the platform-specific sections. The reading lands far better when you have a live mental model of each algorithm's surface.
 
@@ -13,7 +13,7 @@
 
 ## 🍿 A Story: How Duolingo's TikTok Account Outperformed Its $80M Marketing Budget
 
-In 2021, Duolingo's social media manager (then-22-year-old Zaria Parvez) started posting unhinged TikToks featuring the company's mascot — a giant green owl — in increasingly absurd situations. The owl committed crimes. The owl thirsted after celebrities. The owl danced.
+In 2021, Duolingo's social media manager (then-22-year-old Zaria Parvez) started posting unhinged TikToks featuring the company's mascot a giant green owl in increasingly absurd situations. The owl committed crimes. The owl thirsted after celebrities. The owl danced.
 
 By 2023, Duolingo's TikTok had **8 million followers**, more than Disney+, ESPN, and most US-listed brands. CEO Luis von Ahn reported on earnings calls that the brand-awareness lift from social was equivalent to *tens of millions of dollars* of paid advertising. The marginal cost to Duolingo was a salary plus a wearable owl costume.
 
@@ -55,7 +55,7 @@ Every social algorithm in 2026 is some weighted version of: *(content quality si
 - Recency within the user's connection graph + algorithmic recommendations
 - Content from accounts the user has explicitly engaged with
 
-**Meta's official explanation (their public "How Instagram Ranks" docs, periodically refreshed):** Four signal classes — interest, recency, relationship, frequency — combined per-surface (Feed, Stories, Reels, Explore).
+**Meta's official explanation (their public "How Instagram Ranks" docs, periodically refreshed):** Four signal classes interest, recency, relationship, frequency combined per-surface (Feed, Stories, Reels, Explore).
 
 ### TikTok
 
@@ -65,7 +65,7 @@ Every social algorithm in 2026 is some weighted version of: *(content quality si
 - High share / save velocity in the first 30–60 minutes
 - Strong hook in the first 3 seconds (most predictive single feature)
 - Native trends, audio, and effects
-- "Niche affiliation" — TikTok now sorts users into hundreds of micro-niches and surfaces niche-affiliated content
+- "Niche affiliation", TikTok now sorts users into hundreds of micro-niches and surfaces niche-affiliated content
 
 🎯 **Trap on the exam:** Follower count is *not* a strong TikTok ranking signal. New accounts can go viral on day one if their content scores well. This is unique to TikTok and a frequent test question.
 
@@ -181,7 +181,7 @@ Answer in a notebook:
 Pick 2–3 platforms. Not 7. Not 1. **Two or three.**
 
 ### Step 2: Content pillars (15 min)
-Define 3–5 **content pillars** — recurring topic buckets that map to audience interest. For a project management SaaS, pillars might be:
+Define 3–5 **content pillars**, recurring topic buckets that map to audience interest. For a project management SaaS, pillars might be:
 
 - Team collaboration tips
 - Tool comparisons + reviews
@@ -238,7 +238,7 @@ Industry data (HypeAuditor, IZEA, and Influencer Marketing Hub all publish annua
 
 ### The 2026 wrinkle: AI influencers
 
-The most-cited example is **Lil Miquela** — a CGI/virtual influencer created by Brud (acquired by Dapper Labs in 2021). With millions of followers, brand deals with Calvin Klein, Prada, BMW, and Samsung, and entirely synthetic persona, Lil Miquela is the canonical case study for what the trade press calls "virtual influencers."
+The most-cited example is **Lil Miquela**, a CGI/virtual influencer created by Brud (acquired by Dapper Labs in 2021). With millions of followers, brand deals with Calvin Klein, Prada, BMW, and Samsung, and entirely synthetic persona, Lil Miquela is the canonical case study for what the trade press calls "virtual influencers."
 
 Why brands experiment with them:
 
@@ -271,7 +271,7 @@ Social listening has been around for 15+ years. What changed in 2024–2026 is t
 
 **A few honest caveats:**
 - Sentiment classifiers struggle with sarcasm and cultural context.
-- Volume isn't the same as importance — one viral negative post can outweigh 100 positive mentions.
+- Volume isn't the same as importance, one viral negative post can outweigh 100 positive mentions.
 - Most enterprise tools are expensive ($1,000+/month).
 
 For small teams, **Google Alerts + a manual weekly review + a small Mention or Brand24 subscription** covers 80% of value.
@@ -286,7 +286,7 @@ What it teaches:
 
 1. **Voice can be a competitive advantage** when it's distinct + consistent.
 2. **Engagement-driven posts beat polished broadcast** on most social platforms.
-3. **It only works with leadership air cover** — Wendy's CMO publicly stood behind the team.
+3. **It only works with leadership air cover**, Wendy's CMO publicly stood behind the team.
 4. **It's hard to replicate.** Many brands tried "snarky Wendy's style" in 2017–2019 and failed because they lacked Wendy's actual voice DNA.
 
 Wendy's stays load-bearing on social-marketing exams because it's the cleanest demonstration of **brand voice as a distribution moat.**
@@ -304,19 +304,19 @@ Wendy's stays load-bearing on social-marketing exams because it's the cleanest d
 | "LinkedIn is boring" | LinkedIn is the most monetizable B2B platform; the bar is different. |
 | "Influencer = celebrity" | Most ROI is in micro (10K–100K). |
 | "TikTok requires existing audience" | TikTok's algo rewards new accounts that score well from day one. |
-| "AI tools schedule, not strategize" | 2026 AI tools both generate ideas and time them — but human judgment still drives strategy. |
+| "AI tools schedule, not strategize" | 2026 AI tools both generate ideas and time them, but human judgment still drives strategy. |
 
 ---
 
 ## ⚠️ Exam Traps
 
 1. **TikTok's algorithm is content-quality-first.** Follower count is NOT a primary ranking signal.
-2. **LinkedIn suppresses outbound links.** Don't post your blog URL in the post — put it in the first comment.
+2. **LinkedIn suppresses outbound links.** Don't post your blog URL in the post, put it in the first comment.
 3. **YouTube and YouTube Shorts are different surfaces** with different optimization games.
 4. **Wendy's Twitter case study** is the canonical brand-voice example.
-5. **Lil Miquela = virtual / AI influencer** — the most-cited example.
+5. **Lil Miquela = virtual / AI influencer**, the most-cited example.
 6. **Pinterest wants you off-platform.** Unlike most social, it's a discovery engine that drives outbound clicks.
-7. **Engagement velocity in the first 30–60 minutes** matters on TikTok, X, and LinkedIn — not just on the day.
+7. **Engagement velocity in the first 30–60 minutes** matters on TikTok, X, and LinkedIn, not just on the day.
 
 ---
 
@@ -337,7 +337,7 @@ Wendy's stays load-bearing on social-marketing exams because it's the cleanest d
 | **Virtual influencer** | A computer-generated persona with a following (Lil Miquela) |
 | **Social listening** | Monitoring mentions of your brand / topic across platforms |
 | **Sentiment analysis** | Classifying mentions as positive / neutral / negative |
-| **FYP** | "For You Page" — TikTok's main algorithmic surface |
+| **FYP** | "For You Page", TikTok's main algorithmic surface |
 | **Hashtag** | A topic-affiliated tag (less weighted than 2018-era) |
 | **UGC** | User-generated content |
 | **Earned media value (EMV)** | Estimated $ value of organic media coverage |
@@ -350,7 +350,7 @@ You now know:
 
 - 🌐 The 10 major 2026 social platforms, their audiences, and algorithmic levers
 - 🧮 The 2026 algorithm cheat sheet, platform by platform
-- 🤖 The 2026 AI social tool landscape — schedulers, LI/X creator tools, listening, influencer discovery
+- 🤖 The 2026 AI social tool landscape, schedulers, LI/X creator tools, listening, influencer discovery
 - 📐 A 90-minute multi-platform social plan workflow
 - 🌟 The four influencer tiers + the AI / virtual influencer phenomenon
 - 👂 AI-powered social listening + sentiment analysis (and honest caveats)
@@ -358,7 +358,7 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 6: Email Marketing & AI Personalization](../Module-06-Email-Marketing-AI-Personalization/Reading.md)
 
@@ -371,9 +371,9 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **Pick-2 vs spread-thin.** The reading says "pick 2–3 platforms; mastery > coverage." A CMO objects: "We're a B2B SaaS — we *have to* be on LinkedIn AND X AND YouTube; that's already 3, and we should be testing TikTok and Threads anyway." Construct the argument that the CMO's "5+ platforms" is exactly the bloat the reading warns against. Then construct the strongest counter — what kind of company *should* be on 5+ platforms? Where exactly is the line?
+1. **Pick-2 vs spread-thin.** The reading says "pick 2–3 platforms; mastery > coverage." A CMO objects: "We're a B2B SaaS we *have to* be on LinkedIn AND X AND YouTube; that's already 3, and we should be testing TikTok and Threads anyway." Construct the argument that the CMO's "5+ platforms" is exactly the bloat the reading warns against. Then construct the strongest counter what kind of company *should* be on 5+ platforms? Where exactly is the line?
 2. **The Duolingo replicability question.** Duolingo's TikTok success has been studied (and attempted) by hundreds of brands. Most attempts to copy "the green owl going feral" fall flat. Why does Duolingo work and copycats fail? List the 3 structural conditions that made Duolingo work that competitors can't replicate, and identify *which one* a small SMB can realistically reproduce. (Hint: leadership air cover, content-team autonomy, brand permission, timing.)
 3. **AI influencers as a mainstream tactic.** Lil Miquela, Aitana López, and Imma are widely cited virtual influencers. The reading says these are still "niche" in 2026. A futurist argues that by 2028 every brand will use AI avatars to avoid scandal risk + multilingual scaling + 24/7 content. A skeptic counters that the trust gap will keep them niche permanently. Steel-man both. What's the *practical* timeline you'd commit to a CMO?
 4. **LinkedIn link-suppression: feature or bug?** LinkedIn actively downranks posts with outbound links. The official "put your link in the first comment" workaround is now standard. Is this LinkedIn's editorial judgment (keeping users on-platform = better experience) or rent-extraction (downranking creators who try to send users to their own properties)? Make the case for each interpretation, and predict what a marketer should do *if* LinkedIn ever changes the policy.
@@ -383,10 +383,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📰 *Influencer Marketing Hub* — annual benchmark reports
-- 📰 *HypeAuditor* — creator economy data
-- 📰 *Social Media Examiner* — annual *Social Media Marketing Industry Report*
-- 📖 *Contagious* by Jonah Berger (Wharton) — STEPPS framework for why things spread
-- 📰 *HBR* — Quelch's "Wendy's Twitter War" case (2018)
+- 📰 *Influencer Marketing Hub*, annual benchmark reports
+- 📰 *HypeAuditor*, creator economy data
+- 📰 *Social Media Examiner*, annual *Social Media Marketing Industry Report*
+- 📖 *Contagious* by Jonah Berger (Wharton), STEPPS framework for why things spread
+- 📰 *HBR*, Quelch's "Wendy's Twitter War" case (2018)
 - 📰 Meta's *Foundational Marketing Resources* in Meta Blueprint
 - 📰 TikTok for Business / TikTok Academy

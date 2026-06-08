@@ -29,7 +29,7 @@ ABM = Apple's enterprise portal. Used for:
 
 ---
 
-## 🤖 Android Enterprise — 4 Scenarios
+## 🤖 Android Enterprise, 4 Scenarios
 
 | Scenario | When |
 |----------|------|
@@ -160,7 +160,7 @@ Cover the answers, recite:
 1. 4 Android Enterprise scenarios? ___
 2. Supervision requires what? ___
 3. Compliance returns what 4 states? ___
-4. Filter for Devices vs dynamic group — when? ___
+4. Filter for Devices vs dynamic group, when? ___
 5. What's the mandatory exclusion on every CA policy? ___
 
 ---

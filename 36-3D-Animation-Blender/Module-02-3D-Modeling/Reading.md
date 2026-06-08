@@ -7,7 +7,7 @@ title: "Module 2: 3D Modeling for Animation"
 
 ## The Clay and the Wire
 
-Before the Pixar animators could make Woody walk, someone had to build Woody. Before Woody could deform believably when he bent his arm, the geometry beneath his skin had to follow specific rules — rules that were not invented for computers but borrowed from the clay-over-armature technique used in stop-motion and the cel-animation principle of "squash and stretch."
+Before the Pixar animators could make Woody walk, someone had to build Woody. Before Woody could deform believably when he bent his arm, the geometry beneath his skin had to follow specific rules, rules that were not invented for computers but borrowed from the clay-over-armature technique used in stop-motion and the cel-animation principle of "squash and stretch."
 
 3D modeling for animation is different from 3D modeling for architecture, product visualization, or games in one fundamental way: **the mesh must deform**. Every triangle you place, every edge loop you draw, exists not just to define the shape but to define *how the shape moves*. A character with the wrong topology at the elbow will collapse or pinch when the arm bends. No amount of rigging skill will fix bad topology.
 
@@ -19,9 +19,9 @@ This lesson teaches modeling the way a senior animator at the Blender Institute 
 
 **Topology** refers to the arrangement of vertices, edges, and faces that make up a mesh. Good topology means:
 
-- **Quad-dominant geometry** — four-sided faces (quads) deform predictably under subdivision and bone weighting; triangles (tris) and n-gons (5+ sides) create pinching artifacts
-- **Edge loops at deformation points** — joints (elbow, knee, shoulder, hip, knuckle, jaw) need concentric rings of edges to provide geometry for smooth bending
-- **Even edge spacing** — equally-spaced loops subdivide evenly; uneven spacing creates stretched or compressed texture coordinates
+- **Quad-dominant geometry**, four-sided faces (quads) deform predictably under subdivision and bone weighting; triangles (tris) and n-gons (5+ sides) create pinching artifacts
+- **Edge loops at deformation points**, joints (elbow, knee, shoulder, hip, knuckle, jaw) need concentric rings of edges to provide geometry for smooth bending
+- **Even edge spacing**, equally-spaced loops subdivide evenly; uneven spacing creates stretched or compressed texture coordinates
 
 | Face Type | Vertex Count | Deformation Behavior | When to Use |
 |---|---|---|---|
@@ -80,7 +80,7 @@ This is the most important topology skill. Before adding any fine detail, ensure
 | Jaw | 3 loops (jaw hinge area) | Wide open/close range |
 | Eyelid | 2 concentric oval loops | Blink deformation |
 
-Use **Ctrl+R** (loop cut) to add edge loops. The yellow preview line shows where the loop will be cut — scroll the mouse wheel to add multiple loops simultaneously.
+Use **Ctrl+R** (loop cut) to add edge loops. The yellow preview line shows where the loop will be cut, scroll the mouse wheel to add multiple loops simultaneously.
 
 ---
 
@@ -105,7 +105,7 @@ The Subdivision Surface modifier (Subsurf) is the cornerstone of production char
 
 **Creasing edges (sharpen without loops):** Select an edge in Edit Mode → **Shift+E** → drag to set crease value (0=no crease, 1=sharp). Alternatively, add support loops 2–3 rows either side of the edge to sharpen it.
 
-**Topology shortcut — Catmull-Clark rules:**
+**Topology shortcut, Catmull-Clark rules:**
 - 3-pole (3 edges at vertex): appears at the end of a loop; creates curvature pinch; use sparingly
 - 4-pole (4 edges): standard; no artifact
 - 5-pole (5 edges): appears at the start of a loop; creates slight hardening; acceptable at low curvature areas
@@ -126,11 +126,11 @@ Proportional Editing (**O** key) makes transforms fall off smoothly over a radiu
 
 | Falloff Type | Effect |
 |---|---|
-| Smooth | Gaussian bell curve — most natural |
+| Smooth | Gaussian bell curve, most natural |
 | Sphere | Smooth falloff stops at radius edge |
-| Root | Slower falloff — good for large surfaces |
+| Root | Slower falloff, good for large surfaces |
 | Inverse Square | Sharp center, slow edge |
-| Sharp | Fast falloff — nearly no influence at edge |
+| Sharp | Fast falloff, nearly no influence at edge |
 | Linear | Uniform taper |
 | Constant | All vertices in radius transform equally |
 
@@ -143,24 +143,24 @@ Scroll the mouse wheel while a transform is active to change the **influence rad
 The Blender Institute published the mesh topology for the *Sprite Fright* characters in their production blog. The main character (Ellie, a forest ranger) was built using the following approach:
 
 **Documented topology decisions:**
-- **Face topology:** 8–10 edge loops radiating from the nose, with concentric oval loops around the eyes and mouth. This is standard "radial face topology" — it allows the mouth to open, the eyes to blink, and the brow to furrow independently.
+- **Face topology:** 8–10 edge loops radiating from the nose, with concentric oval loops around the eyes and mouth. This is standard "radial face topology", it allows the mouth to open, the eyes to blink, and the brow to furrow independently.
 - **Limb density:** Approximately 8 edge loops around the circumference of the upper arm, stepping down to 6 at the forearm. This allows a clean, round silhouette at the muscle but saves polygons where detail is less visible.
-- **Polygon count:** Ellie's base mesh before subdivision was approximately 4,800 polygons. At subdivision level 2 (for final animation), this produces ~77,000 polygons — within the practical range for Cycles rendering at feature-quality.
+- **Polygon count:** Ellie's base mesh before subdivision was approximately 4,800 polygons. At subdivision level 2 (for final animation), this produces ~77,000 polygons, within the practical range for Cycles rendering at feature-quality.
 
 **The practical lesson:** 4,800 quads → 77,000 render polygons → believable feature-film character. Start low, subdivide high.
 
 ---
 
-## 2.5a Case Study: *Charge* (2022) — Hard-Surface Modeling for Animation
+## 2.5a Case Study: *Charge* (2022), Hard-Surface Modeling for Animation
 
-The Blender Institute's *Charge* (2022, directed by Andy Goralczyk) featured a fully hard-surface robotic character — a significant contrast to *Sprite Fright*'s organic characters. The *Charge* production blog documented:
+The Blender Institute's *Charge* (2022, directed by Andy Goralczyk) featured a fully hard-surface robotic character, a significant contrast to *Sprite Fright*'s organic characters. The *Charge* production blog documented:
 
 **Hard-surface topology approach:**
-- The robot's armor panels used **Boolean modifiers** in the early blocking phase, then manual topology cleanup afterward. Booleans are fast for blocking hard shapes but produce messy n-gon topology — the modeler retopologized the boolean result by hand.
+- The robot's armor panels used **Boolean modifiers** in the early blocking phase, then manual topology cleanup afterward. Booleans are fast for blocking hard shapes but produce messy n-gon topology, the modeler retopologized the boolean result by hand.
 - **Bevel Modifier** (not manual bevel loops) was used on static props where exact bevel width needed to be consistent across many objects. The modifier approach means changing one value globally rather than editing dozens of edge loops.
-- Panel line details (the small gaps between armor segments) were achieved with a combination of **Shrinkwrap modifier + Solidify modifier** — the panel lines are separate thin meshes shrinkwrapped onto the armor surface, not cut into the primary mesh. This keeps the primary mesh topology clean.
+- Panel line details (the small gaps between armor segments) were achieved with a combination of **Shrinkwrap modifier + Solidify modifier**, the panel lines are separate thin meshes shrinkwrapped onto the armor surface, not cut into the primary mesh. This keeps the primary mesh topology clean.
 
-**Industry insight:** Blender's modifier stack — particularly the combination of Boolean + Subdivision + Bevel — is used by concept modelers at game studios (including former Epic Games artists) for rapid hard-surface blocking. The key is knowing which stage each modifier belongs to:
+**Industry insight:** Blender's modifier stack particularly the combination of Boolean + Subdivision + Bevel is used by concept modelers at game studios (including former Epic Games artists) for rapid hard-surface blocking. The key is knowing which stage each modifier belongs to:
 
 | Stage | Modifier | Purpose |
 |---|---|---|
@@ -169,13 +169,13 @@ The Blender Institute's *Charge* (2022, directed by Andy Goralczyk) featured a f
 | Detail | Bevel | Consistent chamfered edges |
 | Final | Subdivision Surface | Smooth final silhouette |
 
-> ⚠️ **Gotcha — Boolean Modifier Order:** The Boolean modifier must come before the Subdivision Surface modifier in the stack, or the subdivision will smooth away the boolean cut. Blender applies modifiers top-to-bottom — order matters critically. If your boolean cut disappears, check that Boolean is above Subdivision in the modifier list.
+> ⚠️ **Gotcha Boolean Modifier Order:** The Boolean modifier must come before the Subdivision Surface modifier in the stack, or the subdivision will smooth away the boolean cut. Blender applies modifiers top-to-bottom order matters critically. If your boolean cut disappears, check that Boolean is above Subdivision in the modifier list.
 
 ---
 
 ## 2.5b Geometry Nodes for Modeling: Procedural Character Parts
 
-Blender 4.x's **Geometry Nodes** system allows parametric modeling — geometry that is defined by a node graph and can be changed non-destructively. For animation-focused modeling, this is useful for:
+Blender 4.x's **Geometry Nodes** system allows parametric modeling, geometry that is defined by a node graph and can be changed non-destructively. For animation-focused modeling, this is useful for:
 
 - **Procedural hair generation** on a character's head (without the Particle Hair system)
 - **Instance scatter**: trees, rocks, grass over terrain surfaces
@@ -184,7 +184,7 @@ Blender 4.x's **Geometry Nodes** system allows parametric modeling — geometry 
 
 **Geometry Nodes for topology control** (advanced): the **Mesh to Points** + **Points to Volume** + **Volume to Mesh** node chain can be used to convert high-polygon organic sculpts into clean voxel-based meshes for retopology purposes.
 
-> 🎯 **What the exam tests:** The Blender certification covers Geometry Nodes at a basic level — knowing that it is a modifier (added through the modifier stack), that it works with Group Input/Group Output nodes, and that it can be used for instancing and scatter. You are not expected to build complex node trees on the exam.
+> 🎯 **What the exam tests:** The Blender certification covers Geometry Nodes at a basic level, knowing that it is a modifier (added through the modifier stack), that it works with Group Input/Group Output nodes, and that it can be used for instancing and scatter. You are not expected to build complex node trees on the exam.
 
 ---
 
@@ -199,7 +199,7 @@ Blender 4.x's **Geometry Nodes** system allows parametric modeling — geometry 
 | **Boolean + retopo** | Hard-surface (robots, vehicles, props) | Organic surfaces |
 | **Geometry Nodes** | Procedural scatter, parametric props | Real-time rig deformation |
 
-> ⚠️ **Gotcha — Sculpt Mode vs. Edit Mode for Animation:** Sculpt Mode is ideal for adding detail (pores, wrinkles, scales) but sculpting tools move geometry without respecting topology. If you sculpt after rigging, you can shift vertices off bone influence zones, breaking weight painting. Always complete rigging before detailed sculpting, or use Multires workflow (Multires modifier, which keeps subdivision levels separate).
+> ⚠️ **Gotcha, Sculpt Mode vs. Edit Mode for Animation:** Sculpt Mode is ideal for adding detail (pores, wrinkles, scales) but sculpting tools move geometry without respecting topology. If you sculpt after rigging, you can shift vertices off bone influence zones, breaking weight painting. Always complete rigging before detailed sculpting, or use Multires workflow (Multires modifier, which keeps subdivision levels separate).
 
 ---
 
@@ -226,7 +226,7 @@ Sony Pictures Animation began integrating Blender into pre-visualization workflo
 - **Character proportion testing:** Low-poly proxy characters in Blender to test silhouette readability before committing to high-resolution Imageworks models
 - **Crowd duplication previz:** Geometry Nodes (and earlier particle-instance methods) to simulate hotel guest crowd density for environment scale decisions
 
-**The broader industry trend:** Blender's role in large-studio pipelines is almost always as a **pre-production and previz tool** rather than final renderer — the final renders go through proprietary or licensed renderers (Arnold, RenderMan, V-Ray). Blender bridges the gap between concept art and production, where fast iteration matters more than render quality.
+**The broader industry trend:** Blender's role in large-studio pipelines is almost always as a **pre-production and previz tool** rather than final renderer, the final renders go through proprietary or licensed renderers (Arnold, RenderMan, V-Ray). Blender bridges the gap between concept art and production, where fast iteration matters more than render quality.
 
 > 🎯 **What the exam tests:** Know the distinction between Blender's role as a complete pipeline (indie films, open movies) versus its role as a component in larger studio pipelines (previz, asset creation, add-on development). The Blender Foundation certification is targeted at complete-pipeline users, but industry context questions appear.
 
@@ -236,13 +236,13 @@ Sony Pictures Animation began integrating Blender into pre-visualization workflo
 
 A hand is the hardest part of a humanoid character. The correct topology approach:
 
-1. **Start with a flat plane for the palm** — 4 columns of quads (for 4 finger attachment points), 3 rows deep
-2. **Extrude fingers from the distal row** — select 4 groups of 4 edges, extrude Y → scale slightly for taper
-3. **Add 2 loop cuts per knuckle** (**Ctrl+R**, scroll to 2) — the loops must be close to the joint centerline
-4. **Curve the fingers slightly in Edit Mode** — proportional editing, smooth falloff, small radius
+1. **Start with a flat plane for the palm**, 4 columns of quads (for 4 finger attachment points), 3 rows deep
+2. **Extrude fingers from the distal row**, select 4 groups of 4 edges, extrude Y → scale slightly for taper
+3. **Add 2 loop cuts per knuckle** (**Ctrl+R**, scroll to 2), the loops must be close to the joint centerline
+4. **Curve the fingers slightly in Edit Mode**, proportional editing, smooth falloff, small radius
 5. **Thumb:** extruded separately from the palm side-edge, rotated 45° to anatomically correct position
 
-This hand approach is used by Grant Abbitt and CGCookie tutorials — both built their hand tutorials directly from the production topology principles above.
+This hand approach is used by Grant Abbitt and CGCookie tutorials, both built their hand tutorials directly from the production topology principles above.
 
 ---
 
@@ -251,7 +251,7 @@ This hand approach is used by Grant Abbitt and CGCookie tutorials — both built
 *Solitude* (2022), a short film by Blender artist Alberto Mielgo (Academy Award winner for *The Windshield Wiper*), demonstrated Blender's capability for painterly photorealism in environments. The modeling approach:
 
 - **Scatter-based environments:** Ground cover (grass, stones, leaves) was placed using Geometry Nodes scatters rather than individual modeling. A single detailed stone model, instanced 10,000 times across a terrain, looks like a rocky beach.
-- **Displacement-based terrain:** The terrain mesh itself was a simple flat plane with a Displacement modifier driven by a procedural noise texture — no hand-modeling of individual rocks or ridges.
+- **Displacement-based terrain:** The terrain mesh itself was a simple flat plane with a Displacement modifier driven by a procedural noise texture, no hand-modeling of individual rocks or ridges.
 - **Low poly + displacement = high detail:** A 200-polygon plane + Subdivision Level 6 + Displacement texture = millions of polygons of terrain detail at render time, with a file size of under 10 MB.
 
 **Modeling shortcuts for environment work:**
@@ -287,7 +287,7 @@ This hand approach is used by Grant Abbitt and CGCookie tutorials — both built
 
 ## 2.9b Multi-Resolution Modifier: Sculpt Without Losing Topology
 
-The **Multires modifier** (Multiresolution) allows non-destructive sculpting at multiple resolution levels — similar to subdivision, but with the ability to sculpt at each level independently:
+The **Multires modifier** (Multiresolution) allows non-destructive sculpting at multiple resolution levels, similar to subdivision, but with the ability to sculpt at each level independently:
 
 | Level | Use |
 |---|---|
@@ -302,11 +302,11 @@ The **Multires modifier** (Multiresolution) allows non-destructive sculpting at 
 1. Complete the base mesh topology (quads, edge loops at joints)
 2. Add Modifier → Generate → Multiresolution
 3. Click **Subdivide** in the modifier to go to level 1
-4. Switch to Sculpt Mode — sculpt broad forms at level 1
+4. Switch to Sculpt Mode, sculpt broad forms at level 1
 5. Subdivide again → level 2 → sculpt medium detail
-6. Bake normal maps: Properties → Object Data → Bake Multires Normal — bakes higher-level detail onto a normal map for the level-0 mesh
+6. Bake normal maps: Properties → Object Data → Bake Multires Normal, bakes higher-level detail onto a normal map for the level-0 mesh
 
-> ⚠️ **Gotcha — Multires and Modifiers Stack:** The Multires modifier must come AFTER the Mirror modifier but BEFORE the Armature modifier in the stack. If Mirror is above Multires, sculpting at level 2+ will not be mirrored. If Multires is above Armature, the rig deforms the high-res sculpt correctly. Stack order: Mirror → Multires → Armature.
+> ⚠️ **Gotcha, Multires and Modifiers Stack:** The Multires modifier must come AFTER the Mirror modifier but BEFORE the Armature modifier in the stack. If Mirror is above Multires, sculpting at level 2+ will not be mirrored. If Multires is above Armature, the rig deforms the high-res sculpt correctly. Stack order: Mirror → Multires → Armature.
 
 ---
 
@@ -348,20 +348,20 @@ Snap Element: Face
 Snap With: Closest
 Enable: Align Rotation to Target (normals align to sculpt surface)
 ```
-This setup makes every vertex you place snap to the surface of the underlying sculpt — the fastest retopology workflow in Blender without a third-party add-on.
+This setup makes every vertex you place snap to the surface of the underlying sculpt, the fastest retopology workflow in Blender without a third-party add-on.
 
-> ⚠️ **Gotcha — Snapping and Transform Orientation:** The snap system uses the current Transform Orientation (Global, Local, Normal, View). If snapping to a face but your transforms are in Global orientation, moving along Z might not mean "along the face normal." Switch to **Normal** orientation when working with Face snap on complex curved surfaces for predictable results.
+> ⚠️ **Gotcha, Snapping and Transform Orientation:** The snap system uses the current Transform Orientation (Global, Local, Normal, View). If snapping to a face but your transforms are in Global orientation, moving along Z might not mean "along the face normal." Switch to **Normal** orientation when working with Face snap on complex curved surfaces for predictable results.
 
 ---
 
 ## 2.11 Retopology: Converting Sculpts to Animation-Ready Meshes
 
-High-resolution sculpts (millions of polygons) created in Sculpt Mode or imported from ZBrush cannot be rigged — they have no coherent topology. **Retopology** is the process of drawing a clean quad mesh on top of the sculpt surface.
+High-resolution sculpts (millions of polygons) created in Sculpt Mode or imported from ZBrush cannot be rigged, they have no coherent topology. **Retopology** is the process of drawing a clean quad mesh on top of the sculpt surface.
 
 **Retopology workflow in Blender:**
 1. Import or finish the high-poly sculpt
 2. Add a **Shrinkwrap modifier** to a new flat plane: set Target to the sculpt, Mode to Nearest Surface Point
-3. In Edit Mode on the new plane, draw the low-poly mesh topology — it snaps to the sculpt surface
+3. In Edit Mode on the new plane, draw the low-poly mesh topology, it snaps to the sculpt surface
 4. Use **Snap to Face** (Shift+Tab → Snap On, Snap Element: Face) to keep vertices on the surface while placing them
 5. The Mirror Modifier with Clipping + Shrinkwrap can be combined for symmetric retopology
 6. When done: apply Shrinkwrap, then bake normal maps from high-poly to low-poly
@@ -374,17 +374,17 @@ High-resolution sculpts (millions of polygons) created in Sculpt Mode or importe
 
 ## 📚 Next Steps
 
-Proceed to [Module 3: Materials, Texturing & Shading](../Module-03-Materials-Texturing-Shading/Reading.md) — once your mesh is topologically clean, it is ready for PBR materials and UV-mapped textures.
+Proceed to [Module 3: Materials, Texturing & Shading](../Module-03-Materials-Texturing-Shading/Reading.md), once your mesh is topologically clean, it is ready for PBR materials and UV-mapped textures.
 
 ---
 
 ## 📖 Further Reading
 
-- 📖 **Grant Abbitt — "Learn Low-Poly Character Creation"** (YouTube, see Videos.md)
-- 📖 **CGCookie — "Introduction to Rigging in Blender"** (covers the topology requirements for rigging)
-- 📖 **Blender Institute — *Sprite Fright* Production Docs** (blender.org/about/projects/)
-- 📖 **"Digital Sculpting with Mudbox" (Mastering — Paul Allard)** — topology principles transfer directly to Blender
+- 📖 **Grant Abbitt, "Learn Low-Poly Character Creation"** (YouTube, see Videos.md)
+- 📖 **CGCookie, "Introduction to Rigging in Blender"** (covers the topology requirements for rigging)
+- 📖 **Blender Institute, *Sprite Fright* Production Docs** (blender.org/about/projects/)
+- 📖 **"Digital Sculpting with Mudbox" (Mastering Paul Allard)** topology principles transfer directly to Blender
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

@@ -42,7 +42,7 @@ D. Free
 A. Code Signing Cert
 B. Apple Push Notification service (APNs) certificate
 C. SSL EV Cert
-D. None — it's automatic
+D. None, it's automatic
 
 ---
 
@@ -157,7 +157,7 @@ D. The user's license is missing
 
 ---
 
-### Q19. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q19. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Intune can manage Linux devices' BitLocker equivalent disk encryption.
 **S2:** APP can encrypt corporate data inside Outlook Mobile.
@@ -202,7 +202,7 @@ D. Manage Conditional Access policies
 
 ---
 
-### Q24. Yes/No — For each statement, mark Yes or No. *(Evaluate)*
+### Q24. Yes/No, For each statement, mark Yes or No. *(Evaluate)*
 
 **S1:** Microsoft Intune Suite includes Endpoint Privilege Management.
 **S2:** Intune Plan 2 requires Plan 1 as a prerequisite license.
@@ -241,13 +241,13 @@ EPM is a Suite-only feature. Plan 2 has analytics + remote help base; Suite adds
 Apple requires APNs for MDM. The cert must be renewed annually.
 
 ### Q6: **B. Compliance policies + Microsoft Edge configuration**
-Linux Intune in 2024+ is intentionally narrow — compliance + Edge cfg only.
+Linux Intune in 2024+ is intentionally narrow, compliance + Edge cfg only.
 
 ### Q7: **B. Does NOT receive the policy (Exclude wins)**
 Memorize: Exclude beats Include.
 
 ### Q8: **B. Microsoft Entra ID groups**
-Policies and apps never target individual users — always Entra groups.
+Policies and apps never target individual users, always Entra groups.
 
 ### Q9: **B. Personally owned Android phones that should not be enrolled**
 APP shines for BYOD without enrollment.
@@ -259,13 +259,13 @@ Dynamic groups have rule-driven, auto-updating membership.
 Self-service iOS/Android enrollment requires Company Portal.
 
 ### Q12: **A. 1 → 2 → 4 → 3 → 5**
-Group → profile → assign → pilot test → monitor. (Or build profile first if you prefer order B — both defensible — but `1→2→4→3→5` is the most-common canonical sequence.)
+Group → profile → assign → pilot test → monitor. (Or build profile first if you prefer order B both defensible but `1→2→4→3→5` is the most-common canonical sequence.)
 
 ### Q13: **C. Help Desk Operator**
 Read + remote actions, no config. Intune Administrator is full control.
 
 ### Q14: **A. Restrict which devices an admin can see and manage**
-Scope tags partition admin visibility — devices, policies, apps inherit tags.
+Scope tags partition admin visibility, devices, policies, apps inherit tags.
 
 ### Q15: **A. Plan 1**
 M365 E3 = Intune Plan 1. Plan 2 features are separately licensed.
@@ -295,7 +295,7 @@ Android Enterprise requires Managed Google Play; Google Workspace is unrelated.
 The Company Portal's core user-facing functions.
 
 ### Q24: **A. Yes / Yes / No**
-Suite includes EPM (Yes). Plan 2 requires Plan 1 (Yes). Business Premium includes Intune Plan 1 but with some limitations on apps and config (No — not full unrestricted Plan 1).
+Suite includes EPM (Yes). Plan 2 requires Plan 1 (Yes). Business Premium includes Intune Plan 1 but with some limitations on apps and config (No, not full unrestricted Plan 1).
 
 ### Q25: **B. 1 tenant + scope tags per region + custom RBAC roles**
 The Heineken model. Separate tenants would mean 5× admin overhead and migration friction.

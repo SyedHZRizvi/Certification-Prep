@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1 — CompTIA Server+ (SK0-005 Style)
+# 🧪 Practice Exam 1, CompTIA Server+ (SK0-005 Style)
 
 > **Conditions:** Set a 45-minute timer. 45 questions. Treat it like the real thing.
-> **Pass mark:** 38/45 (~85%) — the real exam scales to 750/900 (~83%); practice higher.
+> **Pass mark:** 38/45 (~85%), the real exam scales to 750/900 (~83%); practice higher.
 > Take this AFTER finishing Modules 1–4. Covers Hardware, Administration, Storage, Virtualization.
 
 ---
@@ -21,7 +21,7 @@ C. LPDDR5
 D. SO-DIMM
 
 ### 3. Two PSUs are installed in a server but both are plugged into the same PDU. The configuration is BEST described as:
-A. True 2N — fully fault tolerant
+A. True 2N, fully fault tolerant
 B. N+1 PSU redundancy with a single shared point of failure at the PDU
 C. 2N+1
 D. No redundancy at all
@@ -244,7 +244,7 @@ D. Disabling networking
 
 ### 40. Snapshots are NOT a backup because:
 A. They use more space than backups
-B. They live on the same datastore as the VM — datastore loss = snapshot loss
+B. They live on the same datastore as the VM, datastore loss = snapshot loss
 C. They cannot be restored
 D. They are illegal in the EU
 
@@ -299,92 +299,92 @@ D. Single PSU, four SATA HDDs in RAID 5, full iDRAC, ECC RAM
 
 ## 📊 Detailed answer rationales
 
-**Q1. B — 1.75 inches.** 1U is the standard rack unit; 42U rack ≈ 73.5 in tall.
+**Q1. B, 1.75 inches.** 1U is the standard rack unit; 42U rack ≈ 73.5 in tall.
 
-**Q2. B — ECC RDIMM.** ECC = Error-Correcting Code (SECDED). Production servers always use ECC.
+**Q2. B, ECC RDIMM.** ECC = Error-Correcting Code (SECDED). Production servers always use ECC.
 
-**Q3. B — N+1 PSU; PDU is the shared SPOF.** Same-PDU defeats the redundancy intent. True 2N requires separate feeds.
+**Q3. B, N+1 PSU; PDU is the shared SPOF.** Same-PDU defeats the redundancy intent. True 2N requires separate feeds.
 
-**Q4. C — UDP 623.** IPMI runs on UDP 623; historical CVEs make management-VLAN segmentation mandatory.
+**Q4. C, UDP 623.** IPMI runs on UDP 623; historical CVEs make management-VLAN segmentation mandatory.
 
-**Q5. B — iDRAC.** Integrated Dell Remote Access Controller.
+**Q5. B, iDRAC.** Integrated Dell Remote Access Controller.
 
-**Q6. A — iLO.** Integrated Lights-Out (HPE).
+**Q6. A, iLO.** Integrated Lights-Out (HPE).
 
-**Q7. B — In-flight cached writes against sudden power loss.** Without it, RAID 5/6 parity can be torn-written.
+**Q7. B, In-flight cached writes against sudden power loss.** Without it, RAID 5/6 parity can be torn-written.
 
-**Q8. B — SAS.** SAS drives have dual ports, allowing two HBA paths for redundancy. SATA is single-port.
+**Q8. B, SAS.** SAS drives have dual ports, allowing two HBA paths for redundancy. SATA is single-port.
 
-**Q9. B — 18–27 °C.** ASHRAE A1 envelope. Measure front-of-rack inlet (not CPU temp).
+**Q9. B, 18–27 °C.** ASHRAE A1 envelope. Measure front-of-rack inlet (not CPU temp).
 
-**Q10. B — Two separate PDUs / power feeds.** Plugging both PSUs into the same PDU = no real redundancy.
+**Q10. B, Two separate PDUs / power feeds.** Plugging both PSUs into the same PDU = no real redundancy.
 
-**Q11. B — `systemctl enable --now sshd`.** The `--now` flag starts immediately.
+**Q11. B, `systemctl enable --now sshd`.** The `--now` flag starts immediately.
 
-**Q12. B — DNS and NTP.** AD relies on SRV/PTR records and 5-minute Kerberos skew.
+**Q12. B, DNS and NTP.** AD relies on SRV/PTR records and 5-minute Kerberos skew.
 
-**Q13. C — 3389.** RDP TCP 3389 (and UDP 3389 for newer low-latency mode).
+**Q13. C, 3389.** RDP TCP 3389 (and UDP 3389 for newer low-latency mode).
 
-**Q14. D — 5986.** WinRM HTTPS. HTTP listener is 5985.
+**Q14. D, 5986.** WinRM HTTPS. HTTP listener is 5985.
 
-**Q15. A — Authenticates the user BEFORE establishing a session.** Reduces pre-auth attack surface.
+**Q15. A, Authenticates the user BEFORE establishing a session.** Reduces pre-auth attack surface.
 
-**Q16. B — 750.** Owner rwx (7), group r-x (5), others --- (0).
+**Q16. B, 750.** Owner rwx (7), group r-x (5), others --- (0).
 
-**Q17. B — 5 minutes by default.** Above this, AD authentication fails.
+**Q17. B, 5 minutes by default.** Above this, AD authentication fails.
 
-**Q18. B — Cleartext credentials.** Use SSH (Linux) or WinRM HTTPS / RDP+NLA (Windows).
+**Q18. B, Cleartext credentials.** Use SSH (Linux) or WinRM HTTPS / RDP+NLA (Windows).
 
-**Q19. B — Production server roles.** Smaller attack surface, fewer patches, lower resource use.
+**Q19. B, Production server roles.** Smaller attack surface, fewer patches, lower resource use.
 
-**Q20. C — DNS servers.** Option 6.
+**Q20. C, DNS servers.** Option 6.
 
-**Q21. C — 4.** RAID 6 = 2 data + 2 parity minimum.
+**Q21. C, 4.** RAID 6 = 2 data + 2 parity minimum.
 
-**Q22. B — 12 TB.** (8 − 2) × 2 TB.
+**Q22. B, 12 TB.** (8 − 2) × 2 TB.
 
-**Q23. B — 12 TB.** 6/2 × 4 TB.
+**Q23. B, 12 TB.** 6/2 × 4 TB.
 
-**Q24. C — 4.** Read old data + read old parity + write new data + write new parity.
+**Q24. C, 4.** Read old data + read old parity + write new data + write new parity.
 
-**Q25. D — 6.** Two parity blocks (P + Q).
+**Q25. D, 6.** Two parity blocks (P + Q).
 
-**Q26. B — 2.** Write to both mirrors only.
+**Q26. B, 2.** Write to both mirrors only.
 
-**Q27. D — 3260.** iSCSI TCP 3260.
+**Q27. D, 3260.** iSCSI TCP 3260.
 
-**Q28. C — 2049.** NFS TCP/UDP 2049.
+**Q28. C, 2049.** NFS TCP/UDP 2049.
 
-**Q29. D — 445.** Modern SMB; legacy NetBIOS-over-TCP/IP (139/137) is deprecated.
+**Q29. D, 445.** Modern SMB; legacy NetBIOS-over-TCP/IP (139/137) is deprecated.
 
-**Q30. B — Block-level.** SAN presents LUNs as local-like disks; NAS exposes files.
+**Q30. B, Block-level.** SAN presents LUNs as local-like disks; NAS exposes files.
 
-**Q31. B — FC switch fabric.** Zoning lives on switches (Brocade, Cisco MDS).
+**Q31. B, FC switch fabric.** Zoning lives on switches (Brocade, Cisco MDS).
 
-**Q32. A — Storage array.** LUN masking lives on the array's controller.
+**Q32. A, Storage array.** LUN masking lives on the array's controller.
 
-**Q33. B — No MPIO/multipathing driver installed.** Each path appears as a separate disk without multipathing.
+**Q33. B, No MPIO/multipathing driver installed.** Each path appears as a separate disk without multipathing.
 
-**Q34. B — The shared pool filling, causing application-level errors while volumes still report free space.** Classic thin-provisioning hazard.
+**Q34. B, The shared pool filling, causing application-level errors while volumes still report free space.** Classic thin-provisioning hazard.
 
-**Q35. B — Synchronous replication.** Metro distance + RPO 0 → synchronous.
+**Q35. B, Synchronous replication.** Metro distance + RPO 0 → synchronous.
 
-**Q36. B — Bare-metal.** Type 1 = bare-metal (ESXi, Hyper-V, KVM). Type 2 = hosted.
+**Q36. B, Bare-metal.** Type 1 = bare-metal (ESXi, Hyper-V, KVM). Type 2 = hosted.
 
-**Q37. D — VMware Workstation.** ESXi/Hyper-V/KVM are Type 1.
+**Q37. D, VMware Workstation.** ESXi/Hyper-V/KVM are Type 1.
 
-**Q38. B — VHDX.** Hyper-V's modern disk format. VMDK = VMware, qcow2 = KVM.
+**Q38. B, VHDX.** Hyper-V's modern disk format. VMDK = VMware, qcow2 = KVM.
 
-**Q39. B — Shared storage + L2 + CPU compat (or EVC) + resources.** The four classic prerequisites.
+**Q39. B, Shared storage + L2 + CPU compat (or EVC) + resources.** The four classic prerequisites.
 
-**Q40. B — Same datastore = same SPOF.** Snapshots are point-in-time deltas, not independent copies.
+**Q40. B, Same datastore = same SPOF.** Snapshots are point-in-time deltas, not independent copies.
 
-**Q41. B — HA.** HA auto-restarts VMs on surviving hosts (minutes of downtime). DRS = continuous load balance.
+**Q41. B, HA.** HA auto-restarts VMs on surviving hosts (minutes of downtime). DRS = continuous load balance.
 
-**Q42. B — Anti-affinity rule.** Keeps the pair on separate hosts so one host failure doesn't take both down.
+**Q42. B, Anti-affinity rule.** Keeps the pair on separate hosts so one host failure doesn't take both down.
 
-**Q43. B — Containers share the host kernel; VMs each have their own kernel.** The categorical architectural distinction.
+**Q43. B, Containers share the host kernel; VMs each have their own kernel.** The categorical architectural distinction.
 
-**Q44. C — Pod.** Smallest schedulable unit; 1+ containers sharing networking/storage.
+**Q44. C, Pod.** Smallest schedulable unit; 1+ containers sharing networking/storage.
 
-**Q45. C — Dual hot-swap PSUs on separate PDUs, RAID 10 with FBWC, full iDRAC/iLO + SMTP alerts, ECC RAM.** Each requirement maps to a component. A, B, D fail multiple requirements.
+**Q45. C, Dual hot-swap PSUs on separate PDUs, RAID 10 with FBWC, full iDRAC/iLO + SMTP alerts, ECC RAM.** Each requirement maps to a component. A, B, D fail multiple requirements.

@@ -1,23 +1,23 @@
 # Module 2: Storefront Platforms & Architecture 🏗️
 
-> **Why this module matters:** Picking the wrong platform is the single most expensive mistake in e-commerce. A wrong call costs $200K-$2M and 9-18 months. By the end of this module, you'll be able to walk a CTO through Shopify vs Adobe Commerce vs BigCommerce vs Salesforce vs headless / composable — and defend a recommendation with TCO math.
+> **Why this module matters:** Picking the wrong platform is the single most expensive mistake in e-commerce. A wrong call costs $200K-$2M and 9-18 months. By the end of this module, you'll be able to walk a CTO through Shopify vs Adobe Commerce vs BigCommerce vs Salesforce vs headless / composable, and defend a recommendation with TCO math.
 
 ---
 
 ## 🎯 A Real Story: Tobi Lütke's Snowdevil Pivot
 
-In 2004, a 24-year-old programmer named Tobi Lütke opened an online store called Snowdevil to sell snowboards from his garage in Ottawa. He hated the e-commerce software he had to use (Yahoo! Stores, Miva Merchant, OsCommerce — clunky, slow, ugly). So he wrote his own.
+In 2004, a 24-year-old programmer named Tobi Lütke opened an online store called Snowdevil to sell snowboards from his garage in Ottawa. He hated the e-commerce software he had to use (Yahoo! Stores, Miva Merchant, OsCommerce, clunky, slow, ugly). So he wrote his own.
 
 A year later, the snowboards weren't selling. The software was. Tobi pivoted, renamed it Shopify, opened it to other merchants, and by 2010 had thousands of customers. In 2015 Shopify IPO'd. By 2024 it powered ~5M stores, processed >$200B GMV, and was the second-largest US retailer after Amazon by GMV.
 
-That pivot — from a single failing snowboard business to a platform — is the central tension every operator faces when picking a stack. Tobi shipped a tool he needed; the platform happened later. **Buy the tool that fits your stage, not the tool that fits your fantasy.** A $2M brand that picks Adobe Commerce because "we'll need it at $100M" will spend a year fighting their stack instead of growing.
+That pivot from a single failing snowboard business to a platform is the central tension every operator faces when picking a stack. Tobi shipped a tool he needed; the platform happened later. **Buy the tool that fits your stage, not the tool that fits your fantasy.** A $2M brand that picks Adobe Commerce because "we'll need it at $100M" will spend a year fighting their stack instead of growing.
 
 This module gives you the decision framework. Five major platform families (Shopify, Adobe Commerce, BigCommerce, Salesforce Commerce Cloud, composable/MACH), the three architecture patterns (monolithic, headless, composable), and the trade-offs that decide where a $10M, $50M, or $250M brand should live.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The unit-economics language (AOV, CAC, CLV, contribution margin) — covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
-> - Basic web architecture (frontend, backend, database, API) — outside this course; see MDN's Web Fundamentals
-> - The seven business models — covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
+> - The unit-economics language (AOV, CAC, CLV, contribution margin), covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
+> - Basic web architecture (frontend, backend, database, API), outside this course; see MDN's Web Fundamentals
+> - The seven business models, covered in [Module 1](../Module-01-E-Commerce-Fundamentals-Business-Models/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -79,7 +79,7 @@ Shopify Plus (the enterprise tier) costs $2,300-$25,000/month based on GMV. Incl
 **Weaknesses:**
 - Liquid templating language is showing its age (Shopify is migrating to React/Hydrogen).
 - B2B is newer than Adobe Commerce's; sophisticated price-list logic may require custom apps.
-- Multi-storefront across regions requires "Shopify Markets" (added 2021) — works but not as flexible as Adobe Commerce's multi-store.
+- Multi-storefront across regions requires "Shopify Markets" (added 2021), works but not as flexible as Adobe Commerce's multi-store.
 
 🎯 **Exam tip:** Shopify Theme Developer certification + Shopify Plus certification both test on Liquid + Online Store 2.0 + Polaris. Memorize that Polaris is the design system and Liquid is the template language.
 
@@ -87,8 +87,8 @@ Shopify Plus (the enterprise tier) costs $2,300-$25,000/month based on GMV. Incl
 
 Adobe acquired Magento for $1.68B in 2018. Today there are two flavors:
 
-- **Magento Open Source** (free, self-hosted, GPL-3 license) — the descendant of the original Magento.
-- **Adobe Commerce** (commercial, includes managed hosting, B2B module, advanced features) — typical license $40K-$200K/year + hosting.
+- **Magento Open Source** (free, self-hosted, GPL-3 license), the descendant of the original Magento.
+- **Adobe Commerce** (commercial, includes managed hosting, B2B module, advanced features), typical license $40K-$200K/year + hosting.
 
 **Architecture:** PHP-based, MySQL-backed, modular. The PWA Studio (since 2018) provides a headless option with a React frontend.
 
@@ -103,7 +103,7 @@ Adobe acquired Magento for $1.68B in 2018. Today there are two flavors:
 - Hosting cost is significant ($3K-$30K/month for AWS-hosted).
 - Magento 2 upgrade path from Magento 1 (deprecated June 2020) was painful.
 
-🚨 **Trap on the exam:** "Magento" and "Adobe Commerce" are both correct names. The free version is "Magento Open Source"; the paid version is "Adobe Commerce." Adobe rebranded in 2021. Don't confuse the two — Adobe Commerce includes the managed hosting on Adobe-managed AWS infrastructure.
+🚨 **Trap on the exam:** "Magento" and "Adobe Commerce" are both correct names. The free version is "Magento Open Source"; the paid version is "Adobe Commerce." Adobe rebranded in 2021. Don't confuse the two, Adobe Commerce includes the managed hosting on Adobe-managed AWS infrastructure.
 
 ### BigCommerce
 
@@ -125,7 +125,7 @@ Public-company (BIGC on NASDAQ since 2020). Sweet spot: mid-market merchants who
 Enterprise-scale (Sephora, Adidas, L'Oréal, Nestlé, Puma). Started as Demandware (founded 1998, IPO 2012, acquired by Salesforce 2016 for $2.8B).
 
 **Strengths:**
-- Deep Salesforce ecosystem (Marketing Cloud, Service Cloud, Data Cloud — first-party data unified).
+- Deep Salesforce ecosystem (Marketing Cloud, Service Cloud, Data Cloud, first-party data unified).
 - Einstein AI personalization built in.
 - Scales to billion-GMV brands.
 - OCAPI (Open Commerce API) and SCAPI (newer, RESTful) for headless implementations.
@@ -157,29 +157,29 @@ The MACH Alliance vendors. commercetools (Munich-based, founded 2006) is the mos
 
 ---
 
-## 💼 Case Study — Allbirds' Shopify-to-Replatform Journey (2022-2024)
+## 💼 Case Study, Allbirds' Shopify-to-Replatform Journey (2022-2024)
 
-**Situation.** Allbirds IPO'd in November 2021 at $15/share, $4B valuation. By mid-2022 the stock had dropped to ~$2, market cap < $300M. The board mandated a turnaround. The DTC tech stack — built on Shopify Plus with a heavily customized theme — was identified as a 12-month bottleneck: PDP performance was poor (LCP > 4 seconds on mobile), the international expansion required engineering work the team didn't have, and the B2B wholesale arm was outgrowing what the Shopify B2B module supported in 2022.
+**Situation.** Allbirds IPO'd in November 2021 at $15/share, $4B valuation. By mid-2022 the stock had dropped to ~$2, market cap < $300M. The board mandated a turnaround. The DTC tech stack built on Shopify Plus with a heavily customized theme was identified as a 12-month bottleneck: PDP performance was poor (LCP > 4 seconds on mobile), the international expansion required engineering work the team didn't have, and the B2B wholesale arm was outgrowing what the Shopify B2B module supported in 2022.
 
 **Decision.** Allbirds did NOT replatform off Shopify. Instead, in 2023-2024 they ran a parallel-track migration:
 
-- Refactored the customized theme onto Shopify's "Online Store 2.0" (sections-everywhere model) — got upgradeability back.
+- Refactored the customized theme onto Shopify's "Online Store 2.0" (sections-everywhere model), got upgradeability back.
 - Migrated PDP and Collection pages to Hydrogen (React/Remix on Shopify's commerce engine).
 - Adopted Shopify Markets for multi-region pricing and tax.
 - Stayed on the Shopify B2B module for wholesale (Shopify shipped substantial 2024 B2B updates that closed key gaps).
 
 **Outcome.** PDP LCP improved from 4.1s to 1.9s (Lighthouse 2024 audits). Conversion rate lifted ~9%. International order share grew from 14% to 22% of GMV. Total replatform spend: ~$1.4M vs the $3-4M an Adobe Commerce migration was quoted at.
 
-**Lesson for the exam / for practitioners.** Replatforming is almost never the right answer. The cost of a Shopify-to-Adobe-Commerce or Shopify-to-Salesforce migration is rarely justified by the gains. The right move is usually to *evolve within the platform* — Online Store 2.0 → Hydrogen → Markets → B2B. The exception is when the platform's commerce engine itself can't support the business model (e.g., subscription with complex bundling, B2B with custom pricing logic, multi-tenant marketplace operator) — then replatforming is required. Adobe Commerce Business Practitioner asks "should this company replatform?" questions; the right answer is usually NO with a specific evolution plan, unless the requirement is genuinely engine-level.
+**Lesson for the exam / for practitioners.** Replatforming is almost never the right answer. The cost of a Shopify-to-Adobe-Commerce or Shopify-to-Salesforce migration is rarely justified by the gains. The right move is usually to *evolve within the platform* Online Store 2.0 → Hydrogen → Markets → B2B. The exception is when the platform's commerce engine itself can't support the business model (e.g., subscription with complex bundling, B2B with custom pricing logic, multi-tenant marketplace operator) then replatforming is required. Adobe Commerce Business Practitioner asks "should this company replatform?" questions; the right answer is usually NO with a specific evolution plan, unless the requirement is genuinely engine-level.
 
 **Discussion (Socratic).**
 - Q1: Allbirds chose to stay on Shopify and refactor. At what point would the Adobe Commerce option have been correct? What capability would Allbirds need that Shopify couldn't provide?
 - Q2: Why did the official answer favor Hydrogen over a pure React frontend on Shopify Storefront API? What does Hydrogen add that a custom React app would have to rebuild?
-- Q3: Glossier made a different call in 2023 — they went all-in on Hydrogen for the primary storefront. What's the trade-off Glossier accepted that Allbirds rejected?
+- Q3: Glossier made a different call in 2023, they went all-in on Hydrogen for the primary storefront. What's the trade-off Glossier accepted that Allbirds rejected?
 
 ---
 
-## 🎯 The Platform Decision Framework — 6 Questions
+## 🎯 The Platform Decision Framework, 6 Questions
 
 When you walk a board through a platform choice, ask in order:
 
@@ -190,11 +190,11 @@ When you walk a board through a platform choice, ask in order:
 5. **In-house engineering capacity?** < 2 engineers → Shopify (low-engineering). 2-6 engineers → Shopify + Hydrogen or Adobe Commerce. 6+ engineers → composable.
 6. **Strategic differentiation through tech?** Tech is commodity → Shopify. Tech is competitive advantage → composable.
 
-🎯 **Exam tip:** Adobe Commerce Business Practitioner often gives scenarios with conflicting answers across these questions. The "right" answer is usually the platform that solves the MOST CONSTRAINING requirement — usually B2B complexity or multi-storefront.
+🎯 **Exam tip:** Adobe Commerce Business Practitioner often gives scenarios with conflicting answers across these questions. The "right" answer is usually the platform that solves the MOST CONSTRAINING requirement, usually B2B complexity or multi-storefront.
 
 ---
 
-## ⚡ Total Cost of Ownership — Year 1 vs 3-Year
+## ⚡ Total Cost of Ownership, Year 1 vs 3-Year
 
 The biggest mistake in platform decisions: comparing year-1 license cost. The right comparison is **3-year TCO** including license, hosting, engineering build, app stack, agency support, and replatform option-value.
 
@@ -223,7 +223,7 @@ If you decide to go headless on a Shopify or BigCommerce monolith, the choices a
 | Frontastic (commercetools) | commercetools | Acquired by commercetools 2021 |
 | Builder.io | Any | Visual headless CMS |
 
-Hydrogen is the path of least resistance for Shopify merchants going headless — it's officially supported, integrates with Shopify's Storefront API natively, and Oxygen hosting is on Cloudflare's edge (Shopify chose Cloudflare for compute in 2022).
+Hydrogen is the path of least resistance for Shopify merchants going headless, it's officially supported, integrates with Shopify's Storefront API natively, and Oxygen hosting is on Cloudflare's edge (Shopify chose Cloudflare for compute in 2022).
 
 🎯 **Exam tip:** Hydrogen replaced Shopify's earlier "Hydrogen + Oxygen Beta" (2021) and became GA in 2023. It's built on Remix (acquired by Shopify, late 2022). Adobe Commerce's equivalent is PWA Studio (React/Apollo on the GraphQL API).
 
@@ -268,11 +268,11 @@ Every platform decision has security implications. The PCI-DSS v4.0 standard (ma
 
 | Platform | PCI scope on you | ISO 27001 default |
 |----------|------------------|--------------------|
-| Shopify Plus | Minimal (SAQ A) — Shopify handles cardholder data | Yes (Shopify certified) |
-| Adobe Commerce Cloud | SAQ A-EP — Adobe-managed infrastructure | Yes (Adobe certified) |
-| Magento Open Source (self-hosted) | SAQ D — full PCI burden on you | Your responsibility |
+| Shopify Plus | Minimal (SAQ A), Shopify handles cardholder data | Yes (Shopify certified) |
+| Adobe Commerce Cloud | SAQ A-EP, Adobe-managed infrastructure | Yes (Adobe certified) |
+| Magento Open Source (self-hosted) | SAQ D, full PCI burden on you | Your responsibility |
 | BigCommerce | SAQ A | Yes |
-| Salesforce B2C Commerce Cloud | SAQ A — Salesforce handles | Yes |
+| Salesforce B2C Commerce Cloud | SAQ A, Salesforce handles | Yes |
 | Composable | Depends on payment processor | Depends |
 
 🧠 **MEMORIZE THIS.** SAQ levels: A = lowest burden (e-commerce, redirect to processor). A-EP = e-commerce with merchant-controlled embedded forms (iframes). D = full PCI compliance burden. Shopify and BigCommerce are SAQ A; self-hosted Magento is SAQ D.
@@ -285,7 +285,7 @@ Every platform decision has security implications. The PCI-DSS v4.0 standard (ma
 2. **Going composable too early.** Below $250M GMV the engineering overhead exceeds the marginal benefit.
 3. **Picking Shopify because of an app, not the platform.** App ecosystems shift; the platform's core capability matters more.
 4. **Self-hosting Magento Open Source on shared infrastructure.** PCI-DSS Level 1 requirements collapse on shared hosting; managed hosting is mandatory.
-5. **Ignoring the multi-storefront question early.** Brands that launch single-region on Shopify Plus, then need 5 regions with localized catalogs in year 2, often replatform — that's a $1M tax that could have been avoided with BigCommerce or Adobe Commerce day-1.
+5. **Ignoring the multi-storefront question early.** Brands that launch single-region on Shopify Plus, then need 5 regions with localized catalogs in year 2, often replatform, that's a $1M tax that could have been avoided with BigCommerce or Adobe Commerce day-1.
 
 ---
 
@@ -335,7 +335,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. A $35M GMV DTC brand on Shopify Plus is hitting a custom-checkout requirement that Shopify's Checkout Extensibility (2023+) can't quite meet. The CTO proposes a 12-month Adobe Commerce replatform at $1.4M. Build the strongest argument FOR replatforming and the strongest AGAINST. What metric would you commit to before the board agrees?
 
@@ -358,10 +358,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Shopify — *State of Commerce 2024*](https://www.shopify.com/research) — annual benchmark report
-- 📖 [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce) — the canonical reference
-- 📖 [MACH Alliance — *State of MACH 2024*](https://machalliance.org/insights) — composable commerce industry research
-- 📖 [Forrester Wave — *Digital Commerce Platforms* (Sucharita Kodali, 2024)](https://www.forrester.com/) — most-cited analyst report on platforms
-- 📖 [BigCommerce — *Headless Commerce Architecture Guide*](https://www.bigcommerce.com/articles/headless-commerce/) — headless 101
-- 📖 [Shopify Polaris Design System](https://polaris.shopify.com/) — design system reference
-- 📖 [PCI Security Standards Council — *PCI-DSS v4.0*](https://www.pcisecuritystandards.org/) — the security standard
+- 📖 [Shopify *State of Commerce 2024*](https://www.shopify.com/research) annual benchmark report
+- 📖 [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce), the canonical reference
+- 📖 [MACH Alliance *State of MACH 2024*](https://machalliance.org/insights) composable commerce industry research
+- 📖 [Forrester Wave *Digital Commerce Platforms* (Sucharita Kodali, 2024)](https://www.forrester.com/) most-cited analyst report on platforms
+- 📖 [BigCommerce *Headless Commerce Architecture Guide*](https://www.bigcommerce.com/articles/headless-commerce/) headless 101
+- 📖 [Shopify Polaris Design System](https://polaris.shopify.com/), design system reference
+- 📖 [PCI Security Standards Council *PCI-DSS v4.0*](https://www.pcisecuritystandards.org/) the security standard

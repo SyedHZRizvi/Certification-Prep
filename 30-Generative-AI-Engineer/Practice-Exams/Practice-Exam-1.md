@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — Generative AI Engineer (Modules 1–5)
+# 🧪 Practice Exam 1, Generative AI Engineer (Modules 1–5)
 
 > **Conditions:** Set a 40-minute timer. 30 questions. Treat it like the real thing.
 > **Pass mark:** 25/30 (~83%).
@@ -64,7 +64,7 @@ D. SQL index
 
 ### 10. Pre-filter vs post-filter in vector search for multi-tenant data:
 A. Always post-filter
-B. Pre-filter — the ANN index should never consider other tenants' vectors
+B. Pre-filter, the ANN index should never consider other tenants' vectors
 C. Filter doesn't matter
 D. Random
 

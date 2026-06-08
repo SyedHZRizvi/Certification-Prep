@@ -21,8 +21,8 @@
 
 ```
 STEP 1: Fill character design with solid black
-STEP 2: Ask — can you identify the character?
-STEP 3: Ask — can you read what they are doing?
+STEP 2: Ask, can you identify the character?
+STEP 3: Ask, can you read what they are doing?
 
 PASS: Design is strong; readable at distance and small scale
 FAIL: Design needs simplification or more distinctive poses
@@ -42,7 +42,7 @@ FAIL: Design needs simplification or more distinctive poses
 | Orange | Playful, adventurous | Nemo, Tigger |
 | Black/Dark | Mystery, villainy, sophistication | Scar, Maleficent |
 
-**Note:** These are conventions, not rules. *Arcane*'s Jinx uses blues/purples as a protagonist — deliberate subversion.
+**Note:** These are conventions, not rules. *Arcane*'s Jinx uses blues/purples as a protagonist, deliberate subversion.
 
 ---
 
@@ -77,7 +77,7 @@ All views must maintain consistent: proportions, volume, joint locations
 | Silhouette test = check black-and-white color | Silhouette test = fill with solid BLACK and check readability |
 | IP = international proportions | IP = Intellectual Property (copyright/trademark) |
 | Circle = hero, triangle = villain always | These are tools; Arcane's Jinx shows they can be subverted |
-| Freelancer always owns their designs | Ownership depends on contract — always clarify in writing |
+| Freelancer always owns their designs | Ownership depends on contract, always clarify in writing |
 | Turnaround = action pose sheet | Turnaround = rotation views (front, 3/4, side, back, 3/4 back) |
 
 
@@ -114,7 +114,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 
@@ -153,7 +153,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

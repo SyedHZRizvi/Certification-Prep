@@ -45,7 +45,7 @@ Originator + beneficiary info travels with VASP-to-VASP transfers. Scope = **VAS
 
 ## 🇪🇺 MiCA + 🇰🇷 South Korea
 
-**MiCA**: Reg. (EU) 2023/1114 — stablecoin titles in force Jun 30 2024; full CASP regime Dec 30 2024; passports all 27 EU states. Asset classes: **EMT** (USDC, EURC, USDT), **ART** (multi-asset stablecoins), **Other** (BTC, ETH). Companion **TFR** (Reg. 2023/1113) = €0 VASP-to-VASP.
+**MiCA**: Reg. (EU) 2023/1114, stablecoin titles in force Jun 30 2024; full CASP regime Dec 30 2024; passports all 27 EU states. Asset classes: **EMT** (USDC, EURC, USDT), **ART** (multi-asset stablecoins), **Other** (BTC, ETH). Companion **TFR** (Reg. 2023/1113) = €0 VASP-to-VASP.
 
 **South Korea**: SFTI Act amendment Mar 25 2021 → VASP regime (KoFIU registration + ISMS cert from KISA + real-name banking). **VAUPA** Jul 19 2024 = Korea's MiCA-equivalent. Survivors: Upbit, Bithumb, Coinone, Korbit, Gopax.
 
@@ -105,7 +105,7 @@ Originator + beneficiary info travels with VASP-to-VASP transfers. Scope = **VAS
 ## 📝 US Filing Stack + Wash-Sale Status
 
 - **Form 1040** digital-asset Y/N question · **Form 8949** itemize · **Schedule D** summary · **Form 1099-DA** broker (2025+)
-- **Wash-sale rule** (IRC §1091): applies to **securities only** → does NOT apply to crypto as of mid-2026 (proposed 2021/22/23, never enacted — tax-loss harvesting available but policy may change)
+- **Wash-sale rule** (IRC §1091): applies to **securities only** → does NOT apply to crypto as of mid-2026 (proposed 2021/22/23, never enacted, tax-loss harvesting available but policy may change)
 
 ---
 

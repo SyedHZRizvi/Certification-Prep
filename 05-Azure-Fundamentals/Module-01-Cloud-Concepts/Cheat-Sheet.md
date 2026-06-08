@@ -63,7 +63,7 @@ Horizontal (OUT) = more VMs   ([VM][VM][VM][VM])
 
 ---
 
-## 🤝 Shared Responsibility — ALWAYS Customer
+## 🤝 Shared Responsibility, ALWAYS Customer
 
 1. **Data**
 2. **Endpoints** (laptops, phones)
@@ -96,12 +96,12 @@ ALWAYS Microsoft: physical hardware, physical datacenter, physical network.
 
 ## ☁️ The 6 Cloud Benefits
 
-1. **High Availability** — stays up
-2. **Scalability** — grows with demand
-3. **Reliability** — recovers from failure
-4. **Predictability** — performance + cost forecastable
-5. **Security** — provider invests at massive scale
-6. **Governance** + **Manageability** — control at scale
+1. **High Availability**, stays up
+2. **Scalability**, grows with demand
+3. **Reliability**, recovers from failure
+4. **Predictability**, performance + cost forecastable
+5. **Security**, provider invests at massive scale
+6. **Governance** + **Manageability**, control at scale
 
 ---
 

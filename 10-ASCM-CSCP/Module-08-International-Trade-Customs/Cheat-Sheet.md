@@ -4,7 +4,7 @@
 
 ---
 
-## 📜 Incoterms 2020 — All 11 (MEMORIZE)
+## 📜 Incoterms 2020, All 11 (MEMORIZE)
 
 ### Any mode of transport (7)
 | Code | Name | Seller / Buyer Split |

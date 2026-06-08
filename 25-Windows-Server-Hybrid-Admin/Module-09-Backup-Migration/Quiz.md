@@ -55,8 +55,8 @@ D. 24 hours
 ---
 
 ### Q7. ASR test failover is: *(Understand)*
-A. Disruptive — pauses replication
-B. Non-disruptive — runs in a parallel test environment
+A. Disruptive, pauses replication
+B. Non-disruptive, runs in a parallel test environment
 C. Same as production failover
 D. Not supported
 
@@ -78,7 +78,7 @@ D. Storage Replica
 
 ---
 
-### Q10. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q10. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** MARS can do application-consistent SQL backup.
 **S2:** MABS is a free software (Azure-side storage is billed).
@@ -115,7 +115,7 @@ D. Hyper-V Replica
 
 ---
 
-### Q14. **Yes/No** — Mark each statement. *(Analyze)*
+### Q14. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** Storage Migration Service supports source servers from Windows Server 2003+.
 **S2:** Azure Migrate appliance must be deployed in the source environment for discovery.
@@ -151,7 +151,7 @@ D. 3 → 1 → 2 → 4 → 5
 
 ---
 
-### Q17. **Yes/No** — Mark each statement. *(Analyze)*
+### Q17. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** GRS Recovery Services Vault supports cross-region restore.
 **S2:** Per-vault soft delete cannot be disabled.
@@ -168,7 +168,7 @@ D. Yes / Yes / No
 A. One surviving DC in Ghana (offline at the time of attack)
 B. Azure Backup running at the time
 C. Pre-deployed ASR
-D. None of the above — Maersk lost everything
+D. None of the above, Maersk lost everything
 
 ---
 
@@ -196,7 +196,7 @@ D. Azure Migrate Database tool
 
 ---
 
-### Q22. **Yes/No** — Mark each statement. *(Apply)*
+### Q22. **Yes/No**, Mark each statement. *(Apply)*
 
 **S1:** ASR Recovery Plans can include pre-script and post-script automation.
 **S2:** ASR supports planned, unplanned, and test failover.
@@ -261,7 +261,7 @@ Default soft delete is 14 days. Configurable; immutable vault is harder lock.
 ### Q6: **A. ~30 seconds**
 ASR achieves ~30s RPO via continuous Mobility Service → cache → vault replication.
 
-### Q7: **B. Non-disruptive — runs in a parallel test environment**
+### Q7: **B. Non-disruptive, runs in a parallel test environment**
 Critical operational fact. Run quarterly minimum.
 
 ### Q8: **A. Inventory → Transfer → Cutover**
@@ -271,7 +271,7 @@ The three SMS phases.
 Azure Migrate uses ASR under the hood for VM migration.
 
 ### Q10: **A. No / Yes / Yes**
-S1 wrong (MARS is files/folders only — use MABS for SQL VSS). S2 correct. S3 correct.
+S1 wrong (MARS is files/folders only, use MABS for SQL VSS). S2 correct. S3 correct.
 
 ### Q11: **A. SID History**
 SID History preserves the original SIDs so file-server ACLs continue to work post-migration.

@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">RLHF Explained — How ChatGPT Learns</p>
+      <p class="vg-title">RLHF Explained, How ChatGPT Learns</p>
       <p class="vg-creator">Andrej Karpathy</p>
       <span class="vg-duration">⏱ 18 min · Background for understanding CAI</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Claude Model Cards — How to Read Them</p>
+      <p class="vg-title">Claude Model Cards, How to Read Them</p>
       <p class="vg-creator">DeepLearning.AI / Yann Dubois</p>
       <span class="vg-duration">⏱ 12 min · Benchmarks decoded</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">"Machines of Loving Grace" — Amodei's Vision Essay</p>
+      <p class="vg-title">"Machines of Loving Grace", Amodei's Vision Essay</p>
       <p class="vg-creator">Anthropic / Dwarkesh Patel</p>
       <span class="vg-duration">⏱ 90 min · The optimistic case for AI</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Enterprise Case Studies — Claude in Production</p>
+      <p class="vg-title">Enterprise Case Studies, Claude in Production</p>
       <p class="vg-creator">Anthropic / AI Engineer Conf</p>
       <span class="vg-duration">⏱ 25 min · Real deployments</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Cursor — Why Claude is the Coding Default</p>
+      <p class="vg-title">Cursor, Why Claude is the Coding Default</p>
       <p class="vg-creator">Cursor team / Lex Fridman</p>
       <span class="vg-duration">⏱ 60 min · Model bake-off in the wild</span>
     </div>

@@ -247,10 +247,10 @@ firewall-cmd --remove-port=22
 Returns one of: `Enforcing`, `Permissive`, `Disabled`. `sestatus` gives more detail.
 
 ### Q2: **A. `setenforce 0`**
-0 = Permissive, 1 = Enforcing. Runtime only — for persistence, edit /etc/selinux/config.
+0 = Permissive, 1 = Enforcing. Runtime only, for persistence, edit /etc/selinux/config.
 
 ### Q3: **C. semanage fcontext + restorecon**
-The PERSISTENT fix is to add a file-context rule AND apply it. `chcon` (D) works but is wiped by `restorecon` or any relabel — temporary fix. `chmod 777` doesn't bypass MAC. `setenforce 0` is the cowardly answer.
+The PERSISTENT fix is to add a file-context rule AND apply it. `chcon` (D) works but is wiped by `restorecon` or any relabel, temporary fix. `chmod 777` doesn't bypass MAC. `setenforce 0` is the cowardly answer.
 
 ### Q4: **B. AVC**
 Access Vector Cache. Look up SELinux denials with `ausearch -m AVC`.
@@ -259,7 +259,7 @@ Access Vector Cache. Look up SELinux denials with `ausearch -m AVC`.
 `ausearch` is the structured audit-log query tool. AVC denials are in `/var/log/audit/audit.log` (not syslog or journalctl directly on RHEL).
 
 ### Q6: **B. Network-facing daemons**
-The `targeted` policy (default on RHEL) confines processes that face untrusted input — sshd, httpd, named, postfix, etc. User shells and many other processes run as `unconfined_t`.
+The `targeted` policy (default on RHEL) confines processes that face untrusted input, sshd, httpd, named, postfix, etc. User shells and many other processes run as `unconfined_t`.
 
 ### Q7: **B. `aa-status`**
 Shows loaded profiles, mode (enforce/complain), and processes confined.
@@ -283,7 +283,7 @@ You need the recipient's PUBLIC key already imported. Produces `file.txt.gpg`.
 Verifies the detached `.asc` (or `.sig`) signature against the data file. Choice A is not a real gpg command.
 
 ### Q14: **B. Failed auth entries matched by regex**
-fail2ban uses "filters" — regexes that match failed-login patterns in log files. When N matches in time T, the source IP is banned.
+fail2ban uses "filters", regexes that match failed-login patterns in log files. When N matches in time T, the source IP is banned.
 
 ### Q15: **A. `bantime = 1h` (and 1d, 1w, etc.)**
 Modern fail2ban accepts human time units: 1s, 1m, 1h, 1d, 1w. Also accepts plain seconds.
@@ -307,10 +307,10 @@ Combined with `PubkeyAuthentication yes`, this disables password prompts entirel
 `setenforce 0` PROVES SELinux is the cause but is NEVER the production fix. Run `ausearch -m AVC` and address the root cause (label, boolean, port type).
 
 ### Q22: **B. Append-only**
-`+a` (append) is great for log files — opens for append only. `+i` (immutable) blocks all modifications. Only root can manage these.
+`+a` (append) is great for log files, opens for append only. `+i` (immutable) blocks all modifications. Only root can manage these.
 
 ### Q23: **C. LUKS full-disk encryption**
-Encryption is the only mechanism that defeats physical possession. SELinux, fail2ban, and SSH keys all assume the OS is running normally — useless if the attacker boots their own OS off the disk.
+Encryption is the only mechanism that defeats physical possession. SELinux, fail2ban, and SSH keys all assume the OS is running normally, useless if the attacker boots their own OS off the disk.
 
 ### Q24: **B. Write or attribute change**
 `-p wa` = write + attribute. Other perms: `r` (read), `x` (execute).

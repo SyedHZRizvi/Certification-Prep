@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,7 +275,7 @@
 ## ☁️ SECTION 1: CLOUD CONCEPTS
 
 **Q:** What does the cloud convert CapEx into?
-**A:** OpEx — you pay as you use rather than buying assets upfront.
+**A:** OpEx, you pay as you use rather than buying assets upfront.
 
 **Q:** Define IaaS, PaaS, and SaaS in one phrase each.
 **A:** IaaS = you manage OS+up (e.g., Azure VM). PaaS = you manage code+data (e.g., App Service). SaaS = you only use it (e.g., Microsoft 365).
@@ -289,11 +289,11 @@
 **Q:** What is elasticity?
 **A:** Automatic adding/removing of capacity to match real-time demand.
 
-**Q:** High Availability vs Disaster Recovery — one-liner each?
+**Q:** High Availability vs Disaster Recovery, one-liner each?
 **A:** HA = service stays up during component failure (in-region). DR = recover after a major event (often region failure).
 
 **Q:** Are Reservations CapEx or OpEx in Azure?
-**A:** OpEx — paid over time, no asset ownership, despite the multi-year commitment.
+**A:** OpEx, paid over time, no asset ownership, despite the multi-year commitment.
 
 **Q:** What is the cost of data INGRESS into Azure?
 **A:** Free. Only egress (outbound) is billed.
@@ -327,7 +327,7 @@
 **A:** 99.95%.
 
 **Q:** Can a resource group contain resources from multiple regions?
-**A:** Yes — the RG's location is just metadata. Resources inside can be from any region.
+**A:** Yes, the RG's location is just metadata. Resources inside can be from any region.
 
 **Q:** How many tenants does a subscription belong to?
 **A:** Exactly one Microsoft Entra ID tenant.
@@ -339,7 +339,7 @@
 **A:** 6 levels.
 
 **Q:** Does every Azure region have Availability Zones?
-**A:** No — only AZ-enabled regions have them.
+**A:** No, only AZ-enabled regions have them.
 
 ---
 
@@ -351,7 +351,7 @@
 **Q:** What does Azure Virtual Desktop (AVD) do?
 **A:** Streams multi-session Windows 10/11 desktops to remote workers from Azure.
 
-**Q:** VPN Gateway vs ExpressRoute — pick rule for each?
+**Q:** VPN Gateway vs ExpressRoute, pick rule for each?
 **A:** VPN Gateway = encrypted over internet, fast to set up, cheaper. ExpressRoute = private dedicated circuit, predictable bandwidth/latency, expensive, weeks to set up.
 
 **Q:** What does VNet Peering do?
@@ -379,9 +379,9 @@
 **A:** Azure SQL Database.
 
 **Q:** What does Azure Event Hubs do?
-**A:** High-throughput event ingestion (millions/sec) — ideal for IoT and telemetry.
+**A:** High-throughput event ingestion (millions/sec), ideal for IoT and telemetry.
 
-**Q:** Service Bus vs Event Hubs vs Event Grid — pick rule for each?
+**Q:** Service Bus vs Event Hubs vs Event Grid, pick rule for each?
 **A:** Service Bus = enterprise messaging (queues/topics/transactions). Event Hubs = massive event ingest. Event Grid = event routing (pub/sub).
 
 ---
@@ -424,7 +424,7 @@
 **Q:** Two types of Azure resource locks?
 **A:** CanNotDelete and ReadOnly. Both apply to everyone, including Owners.
 
-**Q:** Defender for Cloud vs Microsoft Sentinel — when each?
+**Q:** Defender for Cloud vs Microsoft Sentinel, when each?
 **A:** Defender for Cloud = posture + workload protection + Secure Score. Sentinel = SIEM + SOAR for multi-source logs and automated response.
 
 **Q:** The 3 principles of Zero Trust?
@@ -439,20 +439,20 @@
 **Q:** What is Private Endpoint / Private Link?
 **A:** Brings Azure PaaS services into your private VNet IP space (no public endpoint exposed).
 
-**Q:** External ID — B2B vs B2C?
+**Q:** External ID, B2B vs B2C?
 **A:** B2B = invite partner identities. B2C = customer sign-up for your app.
 
 ---
 
 ## 💰 SECTION 5: COST MANAGEMENT & SLAs
 
-**Q:** Pricing Calculator vs TCO Calculator vs Cost Management — one-liner each?
+**Q:** Pricing Calculator vs TCO Calculator vs Cost Management, one-liner each?
 **A:** Pricing Calculator = estimate new Azure cost. TCO Calculator = compare on-prem vs Azure. Cost Management = analyze + forecast actual spend.
 
 **Q:** Does a Budget in Cost Management automatically shut down resources?
-**A:** No — it only alerts. You'd wire a Logic App / Function to actually stop things.
+**A:** No, it only alerts. You'd wire a Logic App / Function to actually stop things.
 
-**Q:** Reservations vs Savings Plans — what's the difference?
+**Q:** Reservations vs Savings Plans, what's the difference?
 **A:** Reservations commit to specific SKU for 1/3 years (up to 72% off). Savings Plans commit to hourly compute spend, more flexible across families (up to 65% off).
 
 **Q:** Spot VMs save up to what % and what's the catch?
@@ -471,7 +471,7 @@
 **A:** ≈ 99.94%.
 
 **Q:** Do Preview services have an SLA?
-**A:** No — Preview is no-SLA. SLAs apply at GA (General Availability).
+**A:** No, Preview is no-SLA. SLAs apply at GA (General Availability).
 
 **Q:** What's in the Azure free account?
 **A:** $200 USD credit for 30 days + 12 months free of select services + always-free tier (e.g., F1 App Service, Cosmos DB free tier).
@@ -490,12 +490,12 @@
 **A:** Browser-based shell (Bash or PowerShell) with CLI/PS modules pre-installed; backed by a storage account for persistence.
 
 **Q:** What is Bicep, and how is it related to ARM templates?
-**A:** Bicep is a friendlier DSL that compiles to ARM JSON. Same engine — different syntax. Microsoft's recommended modern Azure IaC.
+**A:** Bicep is a friendlier DSL that compiles to ARM JSON. Same engine, different syntax. Microsoft's recommended modern Azure IaC.
 
 **Q:** When to use Terraform vs Bicep?
 **A:** Terraform = multi-cloud (Azure + AWS + GCP). Bicep = Azure-only, cleaner syntax.
 
-**Q:** Azure Monitor vs Service Health vs Azure Status — what does each watch?
+**Q:** Azure Monitor vs Service Health vs Azure Status, what does each watch?
 **A:** Azure Monitor = YOUR workload (metrics/logs/alerts). Service Health = AZURE platform issues affecting your subs (personalized). Azure Status = public global Azure status page.
 
 **Q:** Where is the public Azure status page?
@@ -505,18 +505,18 @@
 **A:** KQL (Kusto Query Language).
 
 **Q:** What is Application Insights?
-**A:** Application Performance Monitoring (APM) for web apps — part of Azure Monitor.
+**A:** Application Performance Monitoring (APM) for web apps, part of Azure Monitor.
 
 **Q:** The 5 pillars of Azure Advisor?
 **A:** Cost, Security, Performance, Reliability, Operational Excellence.
 
 **Q:** Does Azure Advisor automatically take action on its recommendations?
-**A:** No — Advisor is read-only recommendations. You implement them.
+**A:** No, Advisor is read-only recommendations. You implement them.
 
 **Q:** What is Azure Arc used for?
 **A:** Extending Azure management (Policy, Defender, Monitor) to non-Azure resources (on-prem, AWS, GCP, Kubernetes anywhere).
 
-**Q:** Azure Migrate vs Azure Site Recovery — when each?
+**Q:** Azure Migrate vs Azure Site Recovery, when each?
 **A:** Azure Migrate = discovery + assessment + migration hub for servers/DBs/web apps. Azure Site Recovery = replication-based DR + VM migration.
 
 **Q:** What is Azure Data Box?
@@ -539,7 +539,7 @@
 **A:** 45 minutes; 40–60 questions (typically ~45).
 
 **Q:** "Microsoft Entra ID" on the exam means what?
-**A:** It's the same as "Azure AD" — Microsoft renamed it in 2023.
+**A:** It's the same as "Azure AD", Microsoft renamed it in 2023.
 
 **Q:** Top mistake: confusing RBAC vs Policy vs Lock. Quick rule?
 **A:** RBAC = who can do what. Policy = what resources can exist / how configured. Lock = stop deletion or modification for everyone.

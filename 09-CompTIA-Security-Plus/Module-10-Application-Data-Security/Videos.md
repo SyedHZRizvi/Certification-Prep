@@ -142,8 +142,8 @@
 
 ## ✅ After watching
 
-1. SAST vs DAST vs SCA — what each finds.
-2. 3 data states — protection mechanism for each.
-3. Pseudonymization vs anonymization — GDPR implications.
-4. SBOM — why required for US federal software?
-5. STRIDE — name all 6 categories.
+1. SAST vs DAST vs SCA, what each finds.
+2. 3 data states, protection mechanism for each.
+3. Pseudonymization vs anonymization, GDPR implications.
+4. SBOM, why required for US federal software?
+5. STRIDE, name all 6 categories.

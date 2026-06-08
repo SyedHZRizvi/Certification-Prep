@@ -18,7 +18,7 @@
 
 # 🎥 Module 12 Videos: Documentation, Change & DR
 
-> Curated in study order. Final module — pair with the Practice Exams next.
+> Curated in study order. Final module, pair with the Practice Exams next.
 
 ## ⭐ Essential (~45 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Backup Strategies — Full / Incr / Diff + RPO/RTO</p>
+      <p class="vg-title">Backup Strategies, Full / Incr / Diff + RPO/RTO</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 13 min · The 3-2-1 rule</span>
     </div>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DR Sites — Hot / Warm / Cold</p>
+      <p class="vg-title">DR Sites, Hot / Warm / Cold</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 9 min · Pick the right tier</span>
     </div>
@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Maersk NotPetya 2017 — Recovery Story</p>
+      <p class="vg-title">Maersk NotPetya 2017, Recovery Story</p>
       <p class="vg-creator">Various / Adam Banks RSAC keynote</p>
       <span class="vg-duration">⏱ 25 min · Case study</span>
     </div>
@@ -143,13 +143,13 @@
 
 1. Recite the 3-2-1 backup rule + the modern 3-2-1-1-0 variant.
 2. Define RPO vs RTO + give an example of each.
-3. Hot vs Warm vs Cold site — recovery time of each?
+3. Hot vs Warm vs Cold site, recovery time of each?
 4. Walk through your steps when ransomware destroys both production AND local backup.
 5. Why must you TEST backups, not just take them?
 
 ---
 
-## 🏁 Course completion — your next moves
+## 🏁 Course completion, your next moves
 
 ✅ Take **Practice Exam 1** (Core 1)
 ✅ Take **Practice Exam 2** (Core 2)

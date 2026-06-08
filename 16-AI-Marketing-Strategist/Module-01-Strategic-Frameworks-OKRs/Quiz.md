@@ -1,7 +1,7 @@
 # ✏️ Module 1 Quiz: Strategic Frameworks & OKRs
 
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
-> Then check your answers below. Aim for 22/26 minimum (this is the advanced course — 85% is the bar).
+> Then check your answers below. Aim for 22/26 minimum (this is the advanced course, 85% is the bar).
 
 ---
 
@@ -144,10 +144,10 @@ D. The CEO's favorite number
 ---
 
 ### Q18. Which of the following is a publicly disclosed North Star metric? *(Remember)*
-A. Spotify — "Time spent listening per active user"
-B. Apple — "Stock price"
-C. Tesla — "Number of patents filed"
-D. Coca-Cola — "Number of countries served"
+A. Spotify, "Time spent listening per active user"
+B. Apple, "Stock price"
+C. Tesla, "Number of patents filed"
+D. Coca-Cola, "Number of countries served"
 
 ---
 
@@ -177,7 +177,7 @@ D. The journey map and the persona are interchangeable
 
 ### Q22. A marketing leader has 7 objectives and 31 key results for the quarter. The MOST likely problem is: *(Apply)*
 A. The team is too ambitious
-B. There are too many objectives — Doerr's guidance is 3–5 objectives and 3–5 key results each
+B. There are too many objectives, Doerr's guidance is 3–5 objectives and 3–5 key results each
 C. The compensation structure is wrong
 D. The OKRs need to be public
 
@@ -245,7 +245,7 @@ Cash cows generate the funds that pay for investing in Stars and selectively bac
 The Dogs quadrant is structurally unattractive, but org politics typically prevents teams from sun-setting their work. The discipline of BCG is the kill list, not the investment list.
 
 ### Q10: **B. Before 8:30 AM**
-The morning-commute pattern revealed the real "job" — entertainment, hand-occupation, and hunger-suppression for a long drive.
+The morning-commute pattern revealed the real "job", entertainment, hand-occupation, and hunger-suppression for a long drive.
 
 ### Q11: **C. Push, Pull, Anxiety, Habit**
 Push = frustration with status quo. Pull = attraction to new. Anxiety = fear of switching. Habit = inertia. The marketing job is to amplify Push and Pull while reducing Anxiety and Habit.
@@ -260,7 +260,7 @@ A tagline is the *external* expression that *may* derive from positioning. Posit
 Per Doerr's *Measure What Matters*: aggressive OKRs should produce 0.6–0.8 attainment. Consistent 1.0 attainment is a *failure mode*.
 
 ### Q15: **B. 50–70% (or 60–80%)**
-Per Doerr and Google's published guidance. Tying OKR scores to compensation almost guarantees sandbagging — which is why mature OKR orgs decouple them.
+Per Doerr and Google's published guidance. Tying OKR scores to compensation almost guarantees sandbagging, which is why mature OKR orgs decouple them.
 
 ### Q16: **C. An Initiative**
 Initiatives are projects/activities. Key Results are *outcomes/metrics*. The trap that ruins 70% of OKR rollouts is listing initiatives where key results belong.
@@ -268,7 +268,7 @@ Initiatives are projects/activities. Key Results are *outcomes/metrics*. The tra
 ### Q17: **C. A measure of customer value that is a leading indicator of revenue**
 Revenue is the *lagging* outcome. The North Star sits one step upstream: the customer-value driver that, when up, predicts revenue up.
 
-### Q18: **A. Spotify — "Time spent listening per active user"**
+### Q18: **A. Spotify, "Time spent listening per active user"**
 Other publicly disclosed examples: Airbnb (nights booked), early Facebook (friend-7-days), Slack (teams with 2k+ messages), Dropbox (files saved across 3+ devices).
 
 ### Q19: **B. Hierarchical with single apex**
@@ -287,13 +287,13 @@ Doerr's guidance: 3–5 objectives per team, 3–5 KRs per objective. More than 
 Tesla famously had no dealer network (minimal Place) and almost zero traditional advertising for the first decade (zero Promotion). Strategic *under-investment* in two Ps freed budget to win on the other two.
 
 ### Q24: **C. Low share, high growth**
-Question marks are growth-market entries where you have not yet won share — the decision is *invest aggressively or divest*.
+Question marks are growth-market entries where you have not yet won share, the decision is *invest aggressively or divest*.
 
 ### Q25: **B. Net Revenue Retention (NRR)**
 NRR = (starting ARR + expansion − churn − contraction) / starting ARR. Best-in-class B2B SaaS shoots for >120%.
 
 ### Q26: **A. Tangible cues that signal quality**
-Apple's retail stores, the Tesla delivery center, Ritz-Carlton's marble lobby — these are Physical Evidence in Booms & Bitner's 7Ps.
+Apple's retail stores, the Tesla delivery center, Ritz-Carlton's marble lobby, these are Physical Evidence in Booms & Bitner's 7Ps.
 
 ---
 
@@ -315,7 +315,7 @@ Apple's retail stores, the Tesla delivery center, Ritz-Carlton's marble lobby �
 - Ansoff Matrix (four quadrants)
 - BCG Matrix (Star / Cash cow / Question mark / Dog)
 - JTBD four forces (Push / Pull / Anxiety / Habit)
-- OKR rules — KR vs Initiative
+- OKR rules, KR vs Initiative
 - North Star definition + 3 criteria
 - KPI tree vs balanced scorecard
 

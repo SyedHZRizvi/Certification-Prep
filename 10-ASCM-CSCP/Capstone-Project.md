@@ -1,4 +1,4 @@
-# Capstone Project — ASCM CSCP Track
+# Capstone Project, ASCM CSCP Track
 
 > **Purpose:** Integrate all 10 modules into a single executive-grade deliverable. Most CSCP students never face a real Chief Supply Chain Officer (CSCO) decision until they're in the chair. This capstone is your dress rehearsal.
 
@@ -6,7 +6,7 @@
 
 ## Brief
 
-You are the newly hired **Chief Supply Chain Officer** at **Northwind Provisions**, a $2.4B consumer-packaged-goods (CPG) firm headquartered in Chicago. Northwind sells ~3,200 SKUs of food, beverages, and personal-care products to retailers (Walmart, Kroger, Costco, Target — ~60% of revenue), foodservice (Sysco, US Foods — 25%), and direct-to-consumer e-commerce (15%). The company:
+You are the newly hired **Chief Supply Chain Officer** at **Northwind Provisions**, a $2.4B consumer-packaged-goods (CPG) firm headquartered in Chicago. Northwind sells ~3,200 SKUs of food, beverages, and personal-care products to retailers (Walmart, Kroger, Costco, Target ~60% of revenue), foodservice (Sysco, US Foods 25%), and direct-to-consumer e-commerce (15%). The company:
 
 - Sources from 1,200+ suppliers across 38 countries
 - Operates 9 manufacturing plants (6 US, 2 Mexico, 1 Vietnam) and 14 distribution centers
@@ -27,11 +27,11 @@ You have:
 ## Deliverables (7 artifacts)
 
 ### 1. End-to-end SCM strategy mapped to APICS SCOR (Plan / Source / Make / Deliver / Return / Enable)
-A 6-section document — one section per SCOR process — articulating the target operating model, KPI targets, and 18-month roadmap per process. Each section ≥ 1 page; 6-10 pages total.
+A 6-section document one section per SCOR process articulating the target operating model, KPI targets, and 18-month roadmap per process. Each section ≥ 1 page; 6-10 pages total.
 
 **Requirements:**
 - For each SCOR process: list 3-5 current-state pain points, target-state vision, and 2-3 measurable KPIs (e.g., Perfect Order ≥ 95%, OTIF ≥ 96%, DIO ≤ 60 days).
-- Explicit alignment with Hau Lee's strategy framework — which of Lee's 4 quadrants is Northwind in *today*, and which target quadrant for 2027? Defend the choice.
+- Explicit alignment with Hau Lee's strategy framework, which of Lee's 4 quadrants is Northwind in *today*, and which target quadrant for 2027? Defend the choice.
 - Address SCOR-Enable explicitly: governance, IT, talent, risk management.
 
 ### 2. Supplier segmentation per Kraljic (4 quadrants)
@@ -40,7 +40,7 @@ A categorization of Northwind's 1,200 suppliers into Strategic / Leverage / Bott
 **Requirements:**
 - Sample categorization of 30 named or fictitious suppliers (10 strategic, 10 leverage, 5 bottleneck, 5 routine) with justification.
 - For each quadrant: contract type (FP / cost-plus / MSA), QBR cadence, scorecard KPIs, payment terms.
-- Address the post-2024 ESG-and-forced-labor compliance overlay — which suppliers move quadrants when CSDDD / UFLPA is factored in?
+- Address the post-2024 ESG-and-forced-labor compliance overlay, which suppliers move quadrants when CSDDD / UFLPA is factored in?
 - Identify 5 "strategic" suppliers where a 2026 deepening (joint R&D, equity, multi-year MSA) is warranted.
 
 ### 3. S&OP / IBP redesign
@@ -56,11 +56,11 @@ A revised monthly planning cadence applying Wallace/Stahl + Oliver Wight IBP pri
 Northwind exports ~$340M to the EU and is required to comply with CSRD from FY2025 (calendar year 2025) reporting.
 
 **Requirements:**
-- Scope 1, 2, 3 emissions baseline (with assumed numbers — show your work).
+- Scope 1, 2, 3 emissions baseline (with assumed numbers, show your work).
 - SBTi-aligned reduction targets for 2030 and 2050 (1.5°C path).
 - ESG scorecard with 8-12 KPIs aligned to GRI + SASB + TCFD frameworks.
 - Compliance roadmap: when each CSRD disclosure category goes from "voluntary" to "filed and audited" within 18 months.
-- Address modern slavery: UFLPA + CSDDD + UK Modern Slavery Act — multi-tier mapping plan for Tier-2 and Tier-3 supplier visibility.
+- Address modern slavery: UFLPA + CSDDD + UK Modern Slavery Act, multi-tier mapping plan for Tier-2 and Tier-3 supplier visibility.
 
 ### 5. Risk register with mitigations
 An ISO 31000-aligned risk register covering supply chain risks with treatment per the 4 T's (Tolerate / Treat / Transfer / Terminate).
@@ -73,12 +73,12 @@ An ISO 31000-aligned risk register covering supply chain risks with treatment pe
 - Explicitly address Red Sea / Houthi pattern (Q3/Q4 2023-2024) and how Northwind's Vietnamese supplier strategy would respond.
 
 ### 6. Capability roadmap
-A 6-quarter (18-month) Gantt-style roadmap of capability investments — talent, technology, process, governance.
+A 6-quarter (18-month) Gantt-style roadmap of capability investments, talent, technology, process, governance.
 
 **Requirements:**
 - 25-40 work-streams sequenced across 6 quarters.
 - Budget allocation across the $52M total (with at least 5 work-streams each ≥ $1M).
-- Capability dimensions: people (training, certifications — CSCP/CPIM/CLTD/CPSM for staff), technology (e.g., SAP IBP or Kinaxis or o9 selection rationale), process (S&OP redesign, supplier development), governance (CSCO operating model).
+- Capability dimensions: people (training, certifications, CSCP/CPIM/CLTD/CPSM for staff), technology (e.g., SAP IBP or Kinaxis or o9 selection rationale), process (S&OP redesign, supplier development), governance (CSCO operating model).
 - Quick-win identification: 3-5 work-streams that can show ROI within 6 months.
 
 ### 7. Board metrics dashboard (executive scorecard)
@@ -129,19 +129,19 @@ For a 4-week intensive: combine weeks 2-3, 4-5, 6-7 into single weeks; accept lo
 
 A single **PDF deliverable, 25-40 pages**, structured as:
 
-1. Executive Summary (1 page) — the elevator-pitch version of your transformation.
+1. Executive Summary (1 page), the elevator-pitch version of your transformation.
 2. SCOR-mapped strategy (6-10 pages).
 3. Kraljic supplier segmentation (3-5 pages).
 4. S&OP / IBP redesign (3-5 pages).
 5. Sustainability + CSRD scorecard (3-5 pages).
 6. Risk register + BCP (3-5 pages).
 7. Capability roadmap (Gantt or table, 2-4 pages).
-8. Board metrics dashboard (1 page — must fit on one page).
+8. Board metrics dashboard (1 page, must fit on one page).
 9. Appendix: assumptions, framework citations, glossary.
 
-You are doing this for yourself. There is no instructor. The grading rubric is your own honest review against the 100-point scale. If you score yourself <70 on any section, that's your weakness signal — re-read the relevant module and iterate.
+You are doing this for yourself. There is no instructor. The grading rubric is your own honest review against the 100-point scale. If you score yourself <70 on any section, that's your weakness signal, re-read the relevant module and iterate.
 
-**Peer-review prompt** (if a study buddy is available): Each peer takes the role of a different Board member — CEO (challenges strategy clarity), CFO (challenges budget defense), CLO (challenges legal/CSRD compliance), CHRO (challenges talent plan). Run a 30-minute defense session per peer.
+**Peer-review prompt** (if a study buddy is available): Each peer takes the role of a different Board member, CEO (challenges strategy clarity), CFO (challenges budget defense), CLO (challenges legal/CSRD compliance), CHRO (challenges talent plan). Run a 30-minute defense session per peer.
 
 ---
 
@@ -149,8 +149,8 @@ You are doing this for yourself. There is no instructor. The grading rubric is y
 
 - **Build a digital twin sketch** of Northwind's network using free tools (e.g., a Python notebook with simpy or AnyLogic free edition).
 - **Calculate the actual financial impact** of your top-5 risks via Monte Carlo simulation (Excel + a simple add-in is enough).
-- **Draft a 30-60-90-day "first 100 days" memo** to the CEO — the artifact you'd actually produce in week one if hired.
-- **Compare Northwind's transformation to a real 2020-2024 case** — e.g., Unilever's Compass strategy update, Procter & Gamble's productivity program, or Mars's net-zero supply chain. Where would you steal from each?
+- **Draft a 30-60-90-day "first 100 days" memo** to the CEO, the artifact you'd actually produce in week one if hired.
+- **Compare Northwind's transformation to a real 2020-2024 case**, e.g., Unilever's Compass strategy update, Procter & Gamble's productivity program, or Mars's net-zero supply chain. Where would you steal from each?
 - **Build a one-page Anki deck** of the 50 framework citations in this capstone (Porter 1980, Hau Lee 2004, Fisher 1997, Kraljic 1983, Goldratt 1984, Elkington 1994, Carroll 1991, Kaplan-Norton 1992, Wallace-Stahl 1999, Liker 2004 …) so they're exam-ready.
 
 ---
@@ -167,6 +167,6 @@ You are doing this for yourself. There is no instructor. The grading rubric is y
 - MIT CTL *Supply Chain Frontiers* magazine.
 - ASCM *SCM Now* magazine.
 
-The capstone is intentionally hard. The point is to feel what a real CSCO transformation feels like — and to discover where your CSCP-level knowledge is solid versus where you still rely on hand-waving. The day you can defend all 7 artifacts against a hostile Board, you've earned the credential in spirit as well as letter.
+The capstone is intentionally hard. The point is to feel what a real CSCO transformation feels like, and to discover where your CSCP-level knowledge is solid versus where you still rely on hand-waving. The day you can defend all 7 artifacts against a hostile Board, you've earned the credential in spirit as well as letter.
 
 🚚 Good luck.

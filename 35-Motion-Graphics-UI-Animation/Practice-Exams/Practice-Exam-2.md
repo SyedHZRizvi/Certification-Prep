@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Practice-Exams/Practice-Exam-2/
 title: "Practice Exam 2: Advanced Motion & Professional Practice (Modules 6–10)"
 ---
 
-# 🧪 Practice Exam 2 — Advanced Motion & Professional Practice
+# 🧪 Practice Exam 2, Advanced Motion & Professional Practice
 
 **Covers:** Modules 6–10 (UI Animation, Lottie/Web, Social Media, Sound Design, Showreel/Business)  
 **Time:** 40 minutes  
@@ -66,7 +66,7 @@ D. Masks
 In GSAP ScrollTrigger, `scrub: true` means:
 
 A. The animation cleans up when the element scrolls out of view  
-B. Animation progress is tied to scroll position — forward scroll plays forward, backward scroll reverses  
+B. Animation progress is tied to scroll position, forward scroll plays forward, backward scroll reverses  
 C. ScrollTrigger recalculates positions on every scroll event  
 D. The animation runs at double speed when scrubbing  
 
@@ -136,7 +136,7 @@ D. 99%
 A "transient" in audio is the:
 
 A. Moment of silence between sound events  
-B. Initial attack of a sound — the first milliseconds of amplitude rise  
+B. Initial attack of a sound, the first milliseconds of amplitude rise  
 C. Transition between two musical phrases  
 D. Fade-out of a sound effect  
 
@@ -227,7 +227,7 @@ The industry consensus on spec work for motion designers is:
 
 A. Acceptable for junior designers building their portfolio  
 B. Required for working with top studios  
-C. Do not do it — it devalues the profession  
+C. Do not do it, it devalues the profession  
 D. Acceptable if the prize exceeds $10,000  
 
 ---
@@ -297,17 +297,17 @@ When visual events lead audio by approximately one frame, the result feels:
 
 A. Out of sync and distracting  
 B. Sluggish and behind  
-C. Tight and intentional — slightly early is better than slightly late  
-D. Exactly on-beat — one frame is imperceptible  
+C. Tight and intentional, slightly early is better than slightly late  
+D. Exactly on-beat, one frame is imperceptible  
 
 ---
 
 ### 30.
 A client asks that a publicly released motion project not be shown in your showreel. The correct response is:
 
-A. Include it anyway — the work is publicly available  
+A. Include it anyway, the work is publicly available  
 B. Show only a still frame without the animation  
-C. Respect the client's wishes — client relationships are worth more than one reel piece  
+C. Respect the client's wishes, client relationships are worth more than one reel piece  
 D. Negotiate compensation for removing it from the reel  
 
 ---
@@ -315,63 +315,63 @@ D. Negotiate compensation for removing it from the reel
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1:  B — First, Last, Invert, Play. The technique animates only GPU-accelerated transforms by pre-applying the end state to the DOM, then inverting and playing.
+1:  B, First, Last, Invert, Play. The technique animates only GPU-accelerated transforms by pre-applying the end state to the DOM, then inverting and playing.
 
-2:  B — prefers-reduced-motion: reduce provides accessible alternatives for users with vestibular disorders. Always include this fallback in production code.
+2:  B, prefers-reduced-motion: reduce provides accessible alternatives for users with vestibular disorders. Always include this fallback in production code.
 
-3:  C — Same element names. Smart Animate maps same-named elements across frames and interpolates their properties.
+3:  C, Same element names. Smart Animate maps same-named elements across frames and interpolates their properties.
 
-4:  B — JSON files (.json). The Bodymovin plugin exports AE animations as Lottie JSON.
+4:  B, JSON files (.json). The Bodymovin plugin exports AE animations as Lottie JSON.
 
-5:  C — 3D camera animations are not supported by Lottie. Shape layers, Trim Paths, and masks are all supported.
+5:  C, 3D camera animations are not supported by Lottie. Shape layers, Trim Paths, and masks are all supported.
 
-6:  B — scrub: true links animation progress to scroll position. Forward scroll = play forward; backward scroll = reverse.
+6:  B, scrub: true links animation progress to scroll position. Forward scroll = play forward; backward scroll = reverse.
 
-7:  C — React Spring uses physics simulation: mass, tension (stiffness), and friction. Not duration-based.
+7:  C, React Spring uses physics simulation: mass, tension (stiffness), and friction. Not duration-based.
 
-8:  B — whileHover plays the animation while the cursor is hovering over the element, and reverses on mouse leave.
+8:  B, whileHover plays the animation while the cursor is hovering over the element, and reverses on mouse leave.
 
-9:  D — 9:16 vertical portrait is the native format for Instagram Reels, TikTok, and YouTube Shorts.
+9:  D, 9:16 vertical portrait is the native format for Instagram Reels, TikTok, and YouTube Shorts.
 
-10: B — 9:16 is native phone orientation. Starting in 16:9 and reframing to mobile leads to cropped content; mobile-first avoids this.
+10: B, 9:16 is native phone orientation. Starting in 16:9 and reframing to mobile leads to cropped content; mobile-first avoids this.
 
-11: B — Seamless loop: last frame exactly matches first frame. The transition between end and beginning is invisible.
+11: B, Seamless loop: last frame exactly matches first frame. The transition between end and beginning is invisible.
 
-12: C — 85% of social video (particularly Facebook/Meta platforms) is watched with sound off. Captions are essential.
+12: C, 85% of social video (particularly Facebook/Meta platforms) is watched with sound off. Captions are essential.
 
-13: B — A transient is the initial attack: the first milliseconds of a sound's amplitude rise. It's the ideal visual sync point.
+13: B, A transient is the initial attack: the first milliseconds of a sound's amplitude rise. It's the ideal visual sync point.
 
-14: C — ±2 frames. Within 2 frames = perceived as perfect sync. Beyond 2 frames = noticeably off.
+14: C, ±2 frames. Within 2 frames = perceived as perfect sync. Beyond 2 frames = noticeably off.
 
-15: B — Layer > Audio > Convert Audio to Keyframes. Creates a null layer with amplitude-mapped keyframes.
+15: B, Layer > Audio > Convert Audio to Keyframes. Creates a null layer with amplitude-mapped keyframes.
 
-16: C — Effect > Generate > Audio Spectrum. Not under the Audio sub-menu.
+16: C, Effect > Generate > Audio Spectrum. Not under the Audio sub-menu.
 
-17: B — 60 seconds maximum. 45 seconds preferred. Never longer.
+17: B, 60 seconds maximum. 45 seconds preferred. Never longer.
 
-18: C — The Hook (0–5s) is your single strongest piece. It must stop the viewer from skipping.
+18: C, The Hook (0–5s) is your single strongest piece. It must stop the viewer from skipping.
 
-19: C — Specificity Test: "Why is this in the reel? What specific skill does it demonstrate?" Vague answers = cut the piece.
+19: C, Specificity Test: "Why is this in the reel? What specific skill does it demonstrate?" Vague answers = cut the piece.
 
-20: B — $600–$1,200/day for mid-level (2–5 years) in a major US market. Not $400/day (hourly × 8 underestimates overhead).
+20: B: $600–$1,200/day for mid-level (2–5 years) in a major US market. Not $400/day (hourly × 8 underestimates overhead).
 
-21: B — Spec work: creating work without payment to win a project. Not about technical specs.
+21: B, Spec work: creating work without payment to win a project. Not about technical specs.
 
-22: C — Industry consensus: do not do spec work. It devalues the profession and benefits clients at the designer's expense.
+22: C, Industry consensus: do not do spec work. It devalues the profession and benefits clients at the designer's expense.
 
-23: B — 2 rounds of revisions is the professional standard. State this explicitly in every proposal.
+23: B, 2 rounds of revisions is the professional standard. State this explicitly in every proposal.
 
-24: B — playSegments([20, 80], true) plays frames 20 through 80 of the animation.
+24: B, playSegments([20, 80], true) plays frames 20 through 80 of the animation.
 
-25: C — transform and opacity are GPU-accelerated. width/height/top/left trigger layout recalculation. Use FLIP for layout changes.
+25: C, transform and opacity are GPU-accelerated. width/height/top/left trigger layout recalculation. Use FLIP for layout changes.
 
-26: C — Spinner for indeterminate (unknown) duration. Progress bar for determinate (known) progress.
+26: C, Spinner for indeterminate (unknown) duration. Progress bar for determinate (known) progress.
 
-27: B — Skeleton screens reduce cognitive uncertainty by showing the layout shape before data arrives. They don't affect actual network speed.
+27: B, Skeleton screens reduce cognitive uncertainty by showing the layout shape before data arrives. They don't affect actual network speed.
 
-28: C — Notion (extreme restraint), Linear (motion as brand), Vercel (split marketing/product motion) demonstrate that motion philosophy is product-specific.
+28: C, Notion (extreme restraint), Linear (motion as brand), Vercel (split marketing/product motion) demonstrate that motion philosophy is product-specific.
 
-29: C — Visuals leading audio by ~1 frame feels tight and intentional. Visuals lagging audio feels sluggish — the ear is ahead of the eye.
+29: C, Visuals leading audio by ~1 frame feels tight and intentional. Visuals lagging audio feels sluggish, the ear is ahead of the eye.
 
-30: C — Respect the client's wishes. The relationship is more valuable than one showreel piece. You can ask for reconsideration, but honor their decision.
+30: C, Respect the client's wishes. The relationship is more valuable than one showreel piece. You can ask for reconsideration, but honor their decision.
 ```

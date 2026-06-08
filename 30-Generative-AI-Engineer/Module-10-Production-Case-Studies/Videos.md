@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Cursor team — building the AI IDE</p>
+      <p class="vg-title">Cursor team, building the AI IDE</p>
       <p class="vg-creator">Cursor / Latent Space podcast</p>
       <span class="vg-duration">⏱ 1h 20m · The latency moat</span>
     </div>
@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GitHub Copilot — architecture evolution</p>
+      <p class="vg-title">GitHub Copilot, architecture evolution</p>
       <p class="vg-creator">GitHub Engineering</p>
       <span class="vg-duration">⏱ 50m · Codex → Workspace</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Notion AI — building Q&A at scale</p>
+      <p class="vg-title">Notion AI, building Q&A at scale</p>
       <p class="vg-creator">Notion Engineering</p>
       <span class="vg-duration">⏱ 45m · v1 → v2 → v3</span>
     </div>
@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Klarna AI Assistant — 700 FTEs replaced</p>
+      <p class="vg-title">Klarna AI Assistant, 700 FTEs replaced</p>
       <p class="vg-creator">Klarna / OpenAI</p>
       <span class="vg-duration">⏱ 30m · Cost engineering in detail</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Khanmigo — safety-first AI tutor</p>
+      <p class="vg-title">Khanmigo, safety-first AI tutor</p>
       <p class="vg-creator">Khan Academy</p>
       <span class="vg-duration">⏱ 35m · Designed-for-minors AI</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Stripe Radar — LLM-augmented fraud</p>
+      <p class="vg-title">Stripe Radar, LLM-augmented fraud</p>
       <p class="vg-creator">Stripe Engineering</p>
       <span class="vg-duration">⏱ 40m · LLM as adjudicator</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Perplexity AI architecture — modular RAG</p>
+      <p class="vg-title">Perplexity AI architecture, modular RAG</p>
       <p class="vg-creator">Perplexity Engineering / AI Engineer Conf</p>
       <span class="vg-duration">⏱ 40m · Search + LLM hybrid</span>
     </div>
@@ -93,7 +93,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Glean — enterprise search RAG architecture</p>
+      <p class="vg-title">Glean, enterprise search RAG architecture</p>
       <p class="vg-creator">Glean Engineering</p>
       <span class="vg-duration">⏱ 35m · ACL-aware enterprise RAG</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">claude.ai — Anthropic product engineering</p>
+      <p class="vg-title">claude.ai, Anthropic product engineering</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 50m · The reference product</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Replit Agent — AI software engineer</p>
+      <p class="vg-title">Replit Agent, AI software engineer</p>
       <p class="vg-creator">Replit Engineering</p>
       <span class="vg-duration">⏱ 40m · LangGraph in production</span>
     </div>
@@ -125,7 +125,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Devin (Cognition AI) — autonomous coder</p>
+      <p class="vg-title">Devin (Cognition AI), autonomous coder</p>
       <p class="vg-creator">Cognition AI / podcasts</p>
       <span class="vg-duration">⏱ 35m · Multi-agent SWE</span>
     </div>

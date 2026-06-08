@@ -13,7 +13,7 @@ title: "Module 3 Quiz: Materials, Texturing & Shading"
 The **Principled BSDF** shader implements which industry rendering standard?
 
 A. Phong/Blinn-Phong shading model
-B. **Physically Based Rendering (PBR) — Disney/Metallic-Roughness**
+B. **Physically Based Rendering (PBR), Disney/Metallic-Roughness**
 C. Oren-Nayar diffuse model
 D. Ward anisotropic shading
 
@@ -45,7 +45,7 @@ What does the **Roughness** parameter control in the Principled BSDF?
 A. The opacity of the material
 B. The amount of subsurface light scattering
 C. The overall brightness of the material
-D. **The micro-surface texture — how tight or broad the specular highlight is**
+D. **The micro-surface texture, how tight or broad the specular highlight is**
 
 ---
 
@@ -64,7 +64,7 @@ The best place to put UV seams for a humanoid character model is:
 
 A. Along the nose bridge, down the center of the face
 B. Along the outside of the arms and legs
-C. **Under the arms, inside the legs, behind the ears — areas rarely visible**
+C. **Under the arms, inside the legs, behind the ears, areas rarely visible**
 D. At every edge loop, to maximize UV resolution
 
 ---
@@ -252,28 +252,28 @@ D. **It adds a thin dielectric clearcoat layer over the base material (car paint
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — Principled BSDF = Disney PBR / Metallic-Roughness standard
-Q2.  C — Metallic must be 0 or 1; 0.5 has no physical basis
-Q3.  C — Normal map image must be Non-Color to avoid color-space remapping
-Q4.  D — Roughness = micro-surface texture; controls specular highlight tightness
-Q5.  B — A seam is a UV boundary edge cut
-Q6.  C — Seams go where they won't be seen: under arms, inside legs, behind ears
-Q7.  C — Ctrl+Shift+Click previews node output in viewport
-Q8.  B — Mapping node offsets/scales/rotates texture coordinates
-Q9.  C — Glass IOR = 1.45–1.5 (commonly 1.45 in Blender default)
-Q10. C — Subsurface Weight controls sub-surface light scattering (skin, wax)
-Q11. D — Quixel Megascans on Fab.com = CC0, free for all uses
-Q12. C — The Mitchells vs. the Machines (2021) used hybrid toon shading
-Q13. C — Shader to RGB converts light interaction to a flat color for toon effects
-Q14. C — Subsurface Radius = per-channel (R/G/B) penetration depth
-Q15. C — Shift+A adds nodes in all Blender node editors
-Q16. B — Color Ramp remaps gradient inputs to custom value ranges
-Q17. D — Object coordinates give seamless triplanar/box-projected texture
-Q18. C — Freestyle renders stylized outline/edge lines over 3D scenes
-Q19. C — Smart UV Project works best for hard-surface/architectural models
-Q20. C — Clone brush samples from another area of the texture
-Q21. D — Normal Map node converts color data to surface normals
-Q22. C — Blender Principled BSDF = Metallic/Roughness workflow
-Q23. C — 4096×4096 for feature animation; 2048×2048 for indie/broadcast
-Q24. D — Coat Weight simulates a clearcoat layer (car paint, lacquer)
+Q1.  B, Principled BSDF = Disney PBR / Metallic-Roughness standard
+Q2.  C, Metallic must be 0 or 1; 0.5 has no physical basis
+Q3.  C, Normal map image must be Non-Color to avoid color-space remapping
+Q4.  D, Roughness = micro-surface texture; controls specular highlight tightness
+Q5.  B, A seam is a UV boundary edge cut
+Q6.  C, Seams go where they won't be seen: under arms, inside legs, behind ears
+Q7.  C, Ctrl+Shift+Click previews node output in viewport
+Q8.  B, Mapping node offsets/scales/rotates texture coordinates
+Q9.  C, Glass IOR = 1.45–1.5 (commonly 1.45 in Blender default)
+Q10. C, Subsurface Weight controls sub-surface light scattering (skin, wax)
+Q11. D, Quixel Megascans on Fab.com = CC0, free for all uses
+Q12. C, The Mitchells vs. the Machines (2021) used hybrid toon shading
+Q13. C, Shader to RGB converts light interaction to a flat color for toon effects
+Q14. C, Subsurface Radius = per-channel (R/G/B) penetration depth
+Q15. C, Shift+A adds nodes in all Blender node editors
+Q16. B, Color Ramp remaps gradient inputs to custom value ranges
+Q17. D, Object coordinates give seamless triplanar/box-projected texture
+Q18. C, Freestyle renders stylized outline/edge lines over 3D scenes
+Q19. C, Smart UV Project works best for hard-surface/architectural models
+Q20. C, Clone brush samples from another area of the texture
+Q21. D, Normal Map node converts color data to surface normals
+Q22. C, Blender Principled BSDF = Metallic/Roughness workflow
+Q23. C, 4096×4096 for feature animation; 2048×2048 for indie/broadcast
+Q24. D, Coat Weight simulates a clearcoat layer (car paint, lacquer)
 ```

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — E-Commerce
+# 🧪 Practice Exam 1, E-Commerce
 
 > **Conditions:** Set a 40-minute timer. 25 questions. Treat it like the real thing.
 > **Pass mark:** 20/25 (80%)
@@ -254,13 +254,13 @@ D. Carousel-only
 
 **Q1. Answer: B**
 - **Why B is correct.** A CLV/CAC ratio of 3:1 or higher is the canonical health metric for a steady-state subscription or repeat-purchase DTC brand (Fader & Hardie, *Customer Centricity*, 2012, Wharton). Lower than 3:1 and the brand is over-paying to acquire; much higher and it is under-investing in growth.
-- **Why the others are wrong.** A (1:1) means you break even on acquisition — no profit. C (0.5:1) means you lose money per customer. D (100:1) is absurd in any competitive market.
+- **Why the others are wrong.** A (1:1) means you break even on acquisition, no profit. C (0.5:1) means you lose money per customer. D (100:1) is absurd in any competitive market.
 - **Exam-takeaway.** 3:1 is the rule of thumb; ≥4:1 is excellent; below 2:1 signals a unit-economics problem.
 
 **Q2. Answer: A**
 - **Why A is correct.** Contribution margin = Revenue − Variable Costs (COGS, payment processing, variable shipping, returns, variable fulfillment). Fixed corporate overhead is excluded by definition.
 - **Why the others are wrong.** B, C, D are all variable costs included in contribution margin.
-- **Exam-takeaway.** Contribution margin is the variable-cost-adjusted profit per order — fixed overhead is below the contribution line.
+- **Exam-takeaway.** Contribution margin is the variable-cost-adjusted profit per order, fixed overhead is below the contribution line.
 
 **Q3. Answer: B**
 - **Why B is correct.** Shopify Plus is Shopify's enterprise tier ($2,000-$40,000/month range depending on commit). It includes Checkout Extensibility, dedicated support, and B2B.
@@ -273,7 +273,7 @@ D. Carousel-only
 - **Exam-takeaway.** Adobe Commerce = Magento (rebranded 2018). Used heavily on the Adobe Commerce Business Practitioner exam.
 
 **Q5. Answer: D**
-- **Why D is correct.** PIM = Product Information Management — the system for managing product attributes, copy, images, and channel-specific syndication (Akeneo, inriver, Salsify, Plytix).
+- **Why D is correct.** PIM = Product Information Management, the system for managing product attributes, copy, images, and channel-specific syndication (Akeneo, inriver, Salsify, Plytix).
 - **Why the others are wrong.** A/B/C are fabricated acronyms.
 - **Exam-takeaway.** PIM sits between catalog/ERP and storefront; manages SKU-level data integrity.
 
@@ -328,7 +328,7 @@ D. Carousel-only
 - **Exam-takeaway.** IOSS = €150 + non-EU. OSS = EU seller cross-EU.
 
 **Q16. Answer: C**
-- **Why C is correct.** MACH = Microservices, API-first, Cloud-native, Headless (MACH Alliance, 2020 — commercetools, Contentstack, EPAM, Valtech).
+- **Why C is correct.** MACH = Microservices, API-first, Cloud-native, Headless (MACH Alliance, 2020, commercetools, Contentstack, EPAM, Valtech).
 - **Why the others are wrong.** A/B/D are invented acronym expansions.
 - **Exam-takeaway.** Memorize the four letters and the founding date.
 
@@ -355,7 +355,7 @@ D. Carousel-only
 **Q21. Answer: D**
 - **Why D is correct.** Shopify checkout customization is gated to Shopify Plus via Checkout Extensibility (and checkout.liquid until its June 2024 deprecation). Non-Plus tiers cannot customize checkout.
 - **Why the others are wrong.** A/C ignore the tier-gating; B is a retired entry tier with no enterprise customization.
-- **Exam-takeaway.** Checkout customization is a Plus-only feature — major reason brands upgrade from Advanced to Plus.
+- **Exam-takeaway.** Checkout customization is a Plus-only feature, major reason brands upgrade from Advanced to Plus.
 
 **Q22. Answer: B**
 - **Why B is correct.** Simplest CLV = AOV × Purchase Frequency × Customer Lifespan × Margin. Fader/Hardie/Bell (*Customer Centricity*, 2012, Wharton) introduced more sophisticated probabilistic models (BG/NBD) but the four-factor form is the universal teaching baseline.

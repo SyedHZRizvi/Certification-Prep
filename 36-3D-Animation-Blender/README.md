@@ -1,26 +1,26 @@
 ---
 permalink: /36-3D-Animation-Blender/
-title: 3D Animation with Blender — Professional Production Track
+title: 3D Animation with Blender, Professional Production Track
 ---
 
-# 🎬 3D Animation with Blender — Professional Production Track
+# 🎬 3D Animation with Blender, Professional Production Track
 
-**🎨 Creative Technology · 3D Animation** › Blender 4.x — Industry-Readiness Certification
+**🎨 Creative Technology · 3D Animation** › Blender 4.x, Industry-Readiness Certification
 
-> **Goal:** Master Blender 4.x from raw geometry to production-quality character animation — and build a portfolio short that gets you hired.
+> **Goal:** Master Blender 4.x from raw geometry to production-quality character animation, and build a portfolio short that gets you hired.
 > **Duration:** 12 weeks part-time (or 6 weeks full-tilt for artists with 2D or game-engine background).
 > **Target:** Industry-ready 3D animator at indie studios, post-production houses, and streaming-era VFX pipelines.
-> **Difficulty:** Beginner-friendly entry — Professional exit. No prior 3D experience required; curiosity and a working GPU recommended.
+> **Difficulty:** Beginner-friendly entry, Professional exit. No prior 3D experience required; curiosity and a working GPU recommended.
 
 ---
 
-## ✨ Why Blender — and Why Now
+## ✨ Why Blender, and Why Now
 
 ### 🎯 The Promise
 
-Blender is no longer "the free alternative." It is the strategic choice. Sony Pictures Animation used Blender for previz on *Spider-Man: Into the Spider-Verse*. Netflix's animation partners — Axis Studios, Sun Creature Studio, Titmouse — ship Blender-native pipelines to streaming at scale. The Blender Foundation's own open-movie projects — *Sprite Fright* (2021), *Charge* (2022), *Cosmos Laundromat* (2015) — are peer-reviewed against Hollywood feature pipelines and released as open source, giving students a Rosetta Stone between professional process and accessible tooling.
+Blender is no longer "the free alternative." It is the strategic choice. Sony Pictures Animation used Blender for previz on *Spider-Man: Into the Spider-Verse*. Netflix's animation partners Axis Studios, Sun Creature Studio, Titmouse ship Blender-native pipelines to streaming at scale. The Blender Foundation's own open-movie projects *Sprite Fright* (2021), *Charge* (2022), *Cosmos Laundromat* (2015) are peer-reviewed against Hollywood feature pipelines and released as open source, giving students a Rosetta Stone between professional process and accessible tooling.
 
-The credential this course builds toward is not a single proctored exam — it is a **portfolio short** that any studio recruiter can watch in 90 seconds. Studios hire animators who can ship; this course ends with a shipped, watchable, 10-second short.
+The credential this course builds toward is not a single proctored exam, it is a **portfolio short** that any studio recruiter can watch in 90 seconds. Studios hire animators who can ship; this course ends with a shipped, watchable, 10-second short.
 
 ### 💼 Career Outcomes
 
@@ -38,11 +38,11 @@ Average freelance rate for a credentialed Blender animator on Contra or Arc.dev:
 
 ### 🏛️ Why This Course Is Different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Open-movie case studies woven through every module** — *Sprite Fright*, *Charge*, *Wing It!*, *Coffee Run* are all documented publicly; we use them like Harvard Business School uses company filings
-- **Keyboard-first workflow enforced from day one** — the gap between a student animator and a studio animator is almost entirely shortcut fluency
-- **Real production benchmarks** — render time targets, polygon budgets, texture resolution constraints drawn from actual studio pipelines
-- **One voice, one vocabulary** — mesh, rig, bake, NLA, cache, pass — all defined once, used consistently across all 10 modules
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Open-movie case studies woven through every module**, *Sprite Fright*, *Charge*, *Wing It!*, *Coffee Run* are all documented publicly; we use them like Harvard Business School uses company filings
+- **Keyboard-first workflow enforced from day one**, the gap between a student animator and a studio animator is almost entirely shortcut fluency
+- **Real production benchmarks**, render time targets, polygon budgets, texture resolution constraints drawn from actual studio pipelines
+- **One voice, one vocabulary** mesh, rig, bake, NLA, cache, pass all defined once, used consistently across all 10 modules
 
 ---
 
@@ -50,16 +50,16 @@ Average freelance rate for a credentialed Blender animator on Contra or Arc.dev:
 
 By the end of this track you will be able to:
 
-- **Navigate Blender 4.x fluently** — workspace customization, editor types, viewport shading, keyboard-driven workflow faster than any mouse-only approach
-- **Model animation-ready characters** — edge-loop topology, subdivision surfaces, mirror modifier, correct deformation joints, clean UV maps
-- **Apply production-grade materials** — PBR Principled BSDF, Shader Editor node graphs, UV unwrapping, texture import from Substance Painter / Quixel Bridge
-- **Light a scene professionally** — three-point setups, HDRI environment maps, color temperature, shadow control, mood-matched lighting for genre (horror, comedy, drama)
-- **Rig characters for animation** — Rigify auto-rig, custom bone rolls, IK/FK chains, pole targets, corrective shape keys
-- **Paint weights and skin correctly** — vertex groups, the "skin bag" problem, facial shape keys, corrective drivers
-- **Animate on the Graph Editor** — auto-keying, Dope Sheet, interpolation modes, NLA Editor cycling actions, the Action Editor
-- **Simulate physics** — rigid bodies, cloth, FLIP fluid, particle hair, the Cache system for stable renders
-- **Render and composite** — Cycles vs EEVEE trade-offs, denoising, EXR multi-pass output, Blender's Compositor for color-grade and VFX
-- **Deliver a finished short** — a 10-second animated short from concept to MP4 at 1920×1080, ready for a portfolio reel
+- **Navigate Blender 4.x fluently**, workspace customization, editor types, viewport shading, keyboard-driven workflow faster than any mouse-only approach
+- **Model animation-ready characters**, edge-loop topology, subdivision surfaces, mirror modifier, correct deformation joints, clean UV maps
+- **Apply production-grade materials**, PBR Principled BSDF, Shader Editor node graphs, UV unwrapping, texture import from Substance Painter / Quixel Bridge
+- **Light a scene professionally**, three-point setups, HDRI environment maps, color temperature, shadow control, mood-matched lighting for genre (horror, comedy, drama)
+- **Rig characters for animation**, Rigify auto-rig, custom bone rolls, IK/FK chains, pole targets, corrective shape keys
+- **Paint weights and skin correctly**, vertex groups, the "skin bag" problem, facial shape keys, corrective drivers
+- **Animate on the Graph Editor**, auto-keying, Dope Sheet, interpolation modes, NLA Editor cycling actions, the Action Editor
+- **Simulate physics**, rigid bodies, cloth, FLIP fluid, particle hair, the Cache system for stable renders
+- **Render and composite**, Cycles vs EEVEE trade-offs, denoising, EXR multi-pass output, Blender's Compositor for color-grade and VFX
+- **Deliver a finished short**, a 10-second animated short from concept to MP4 at 1920×1080, ready for a portfolio reel
 
 ---
 
@@ -94,18 +94,18 @@ By the end of this track you will be able to:
 
 ## 📖 The Canonical References
 
-- 🔗 **[Blender Official Manual 4.x](https://docs.blender.org/manual/en/latest/)** — the authoritative source for every feature
-- 🔗 **[Blender Foundation Open Movies](https://www.blender.org/about/projects/)** — *Sprite Fright*, *Charge*, *Wing It!*, *Coffee Run* — all pipeline docs public
-- 🔗 **[Blender Artist Community](https://blenderartists.org/)** — peer critique, weekly challenges, industry feedback
-- 🔗 **[Blender Stack Exchange](https://blender.stackexchange.com/)** — 200K+ answered questions; use it for workflow debugging
-- 🔗 **[Poly Haven](https://polyhaven.com/)** — CC0 HDRIs, textures, and 3D models; zero licensing headaches for students
-- 🔗 **[Blender Guru (Andrew Price) — YouTube](https://www.youtube.com/@blenderguru)** — industry-standard Blender tutorials
+- 🔗 **[Blender Official Manual 4.x](https://docs.blender.org/manual/en/latest/)**, the authoritative source for every feature
+- 🔗 **[Blender Foundation Open Movies](https://www.blender.org/about/projects/)** *Sprite Fright*, *Charge*, *Wing It!*, *Coffee Run* all pipeline docs public
+- 🔗 **[Blender Artist Community](https://blenderartists.org/)**, peer critique, weekly challenges, industry feedback
+- 🔗 **[Blender Stack Exchange](https://blender.stackexchange.com/)**, 200K+ answered questions; use it for workflow debugging
+- 🔗 **[Poly Haven](https://polyhaven.com/)**, CC0 HDRIs, textures, and 3D models; zero licensing headaches for students
+- 🔗 **[Blender Guru (Andrew Price) YouTube](https://www.youtube.com/@blenderguru)** industry-standard Blender tutorials
 
 ---
 
 ## 🚦 Recommended Learning Path
 
-### 12-Week Plan (Sustainable — Part-Time)
+### 12-Week Plan (Sustainable, Part-Time)
 
 ```
 Week 1:   Module 1 (Interface) — Install Blender 4.x, set up preferences
@@ -149,7 +149,7 @@ Week 6:  Module 10 + Final Mock              + Short delivered
 
 ## 🃏 Flashcards
 
-🔗 **[Master Flashcards](./Flashcards.md)** — 110+ cards covering all 10 modules. Use the interactive widget to mark "Got it" and skip mastered cards on future runs.
+🔗 **[Master Flashcards](./Flashcards.md)**, 110+ cards covering all 10 modules. Use the interactive widget to mark "Got it" and skip mastered cards on future runs.
 
 ---
 

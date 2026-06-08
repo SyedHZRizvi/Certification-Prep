@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">OpenAI o1 — The Reasoning Era Begins</p>
+      <p class="vg-title">OpenAI o1, The Reasoning Era Begins</p>
       <p class="vg-creator">AI Explained</p>
       <span class="vg-duration">⏱ 24 min · System card + benchmarks</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Claude Extended Thinking — End-to-End</p>
+      <p class="vg-title">Claude Extended Thinking, End-to-End</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 18 min · budget_tokens, visible traces</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Tree-of-Thought — Game of 24 Demo</p>
+      <p class="vg-title">Tree-of-Thought, Game of 24 Demo</p>
       <p class="vg-creator">AI Coffee Break</p>
       <span class="vg-duration">⏱ 14 min · Search-based reasoning</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">DeepSeek R1 — Open-Source Reasoning</p>
+      <p class="vg-title">DeepSeek R1, Open-Source Reasoning</p>
       <p class="vg-creator">AI Explained</p>
       <span class="vg-duration">⏱ 28 min · January 2025 launch</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">GSM8K — The Math Reasoning Benchmark</p>
+      <p class="vg-title">GSM8K, The Math Reasoning Benchmark</p>
       <p class="vg-creator">Sebastian Raschka</p>
       <span class="vg-duration">⏱ 18 min · What the benchmarks measure</span>
     </div>
@@ -148,7 +148,7 @@ Answer these in your notebook (without re-watching):
 
 1. Why does CoT help so much on multi-step math but barely on sentiment?
 2. State the self-consistency algorithm in 4 steps.
-3. Describe ReAct's loop — what are the three role names per iteration?
+3. Describe ReAct's loop, what are the three role names per iteration?
 4. When would you reach for a reasoning model (o3, Extended Thinking) vs a standard model + CoT?
 5. Name two reasoning failure modes and a defense for each.
 

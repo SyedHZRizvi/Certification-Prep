@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Prompt Engineering with Claude
 
-> **How to use:** Open the cards in the order shown. The Anthropic-channel and DeepLearning.AI videos are particularly authoritative — Anthropic engineers themselves teach these. After watching, open the Workbench and *try* what you saw before moving on.
+> **How to use:** Open the cards in the order shown. The Anthropic-channel and DeepLearning.AI videos are particularly authoritative, Anthropic engineers themselves teach these. After watching, open the Workbench and *try* what you saw before moving on.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Engineering with Claude — Short Course</p>
+      <p class="vg-title">Prompt Engineering with Claude, Short Course</p>
       <p class="vg-creator">DeepLearning.AI × Anthropic</p>
       <span class="vg-duration">⏱ 60 min total · Chapters work standalone</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prefill — The Underused Claude Superpower</p>
+      <p class="vg-title">Prefill, The Underused Claude Superpower</p>
       <p class="vg-creator">Anthropic / Matt Pocock</p>
       <span class="vg-duration">⏱ 12 min · Force output discipline</span>
     </div>

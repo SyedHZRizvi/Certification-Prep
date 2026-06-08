@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Build a Lex Chatbot — End to End</p>
+      <p class="vg-title">Build a Lex Chatbot, End to End</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 16 min · Intents, slots, fulfillment</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🎙️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Amazon Transcribe — Batch & Streaming</p>
+      <p class="vg-title">Amazon Transcribe, Batch & Streaming</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 18 min · Custom Vocabulary + LM</span>
     </div>
@@ -75,7 +75,7 @@
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Amazon Kendra — Semantic Enterprise Search</p>
+      <p class="vg-title">Amazon Kendra, Semantic Enterprise Search</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 22 min · Connectors + FAQs</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🛒</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Amazon Personalize — Recommendations Made Easy</p>
+      <p class="vg-title">Amazon Personalize, Recommendations Made Easy</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 15 min · Netflix-style recs without code</span>
     </div>
@@ -98,7 +98,7 @@
     <div class="vg-thumb"><span>🔊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Polly — Neural + Generative Voices</p>
+      <p class="vg-title">Polly, Neural + Generative Voices</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 14 min</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>🤝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">A2I — Human-in-the-Loop for AI</p>
+      <p class="vg-title">A2I, Human-in-the-Loop for AI</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 18 min</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Amazon Forecast vs DeepAR — Decision</p>
+      <p class="vg-title">Amazon Forecast vs DeepAR, Decision</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 13 min</span>
     </div>
@@ -137,8 +137,8 @@
 ## ✅ After watching
 
 1. When Comprehend Custom Classifier vs BlazingText vs Bedrock zero-shot?
-2. Kendra vs Bedrock Knowledge Bases — pick the right one.
-3. Transcribe Custom Vocabulary vs Custom Language Model — when each?
+2. Kendra vs Bedrock Knowledge Bases, pick the right one.
+3. Transcribe Custom Vocabulary vs Custom Language Model, when each?
 4. Rekognition Custom Labels minimum images per class?
 5. When does A2I belong in your architecture?
 

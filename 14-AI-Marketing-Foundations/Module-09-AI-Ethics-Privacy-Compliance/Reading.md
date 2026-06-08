@@ -3,9 +3,9 @@
 > **Why this module matters:** Privacy and AI-ethics regulation is the area where ignorance is most expensive. GDPR fines, FTC enforcement, EU AI Act compliance, and state-level laws (CCPA, CPRA, Texas Data Privacy Act, Virginia CDPA) are no longer theoretical. This module is the legal floor every 2026 marketer must know.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1 — The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) — first-party data, cookie deprecation, attribution shifts
-> - [Module 2 — AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) — hallucinations, training data, bias surface
-> - [Module 6 — Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) — CAN-SPAM, GDPR-as-it-touches-email; this module deepens them
+> - [Module 1 The 2026 landscape](../Module-01-Digital-Marketing-Landscape-2026/Reading.md) first-party data, cookie deprecation, attribution shifts
+> - [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) hallucinations, training data, bias surface
+> - [Module 6 Email Marketing](../Module-06-Email-Marketing-AI-Personalization/Reading.md) CAN-SPAM, GDPR-as-it-touches-email; this module deepens them
 >
 > This module reads like a legal taxonomy. You don't need a law degree, but you should be ready to learn 9 regulatory acronyms (GDPR, CCPA/CPRA, COPPA, CAN-SPAM, CASL, LGPD, PIPL, PDPA, EU AI Act). Read with a regulatory glossary tab open.
 
@@ -13,7 +13,7 @@
 
 ## 🚨 A Story: The $746 Million Fine That Changed Everything
 
-In **July 2021**, Luxembourg's data-protection authority issued a **€746 million ($888M USD)** fine against **Amazon Europe**. At the time, it was the largest GDPR fine ever issued — a 750× multiple of the previous record set against Google a few years earlier.
+In **July 2021**, Luxembourg's data-protection authority issued a **€746 million ($888M USD)** fine against **Amazon Europe**. At the time, it was the largest GDPR fine ever issued, a 750× multiple of the previous record set against Google a few years earlier.
 
 The cause? Amazon's targeted advertising practices allegedly violated GDPR's requirement for explicit, freely-given consent. Amazon disputed the ruling, appealed, and the case continued through European courts for years.
 
@@ -31,11 +31,11 @@ In 2026, the FTC, EU regulators, and state attorneys-general are increasingly *e
 
 ## 🌍 The Big Privacy Regulations You Must Know
 
-### 1. GDPR — General Data Protection Regulation (EU, May 25, 2018)
+### 1. GDPR, General Data Protection Regulation (EU, May 25, 2018)
 
 The flagship privacy regulation of the 21st century. Applies to:
 
-- Any organization processing personal data of EU residents (regardless of company location — the famous "extraterritorial" scope)
+- Any organization processing personal data of EU residents (regardless of company location, the famous "extraterritorial" scope)
 - Both data controllers (companies deciding what to collect) and processors (vendors processing on their behalf)
 
 **Key requirements:**
@@ -46,13 +46,13 @@ The flagship privacy regulation of the 21st century. Applies to:
 - **72-hour breach notification**
 - **DPO (Data Protection Officer)** required for some organizations
 - **DPIA (Data Protection Impact Assessment)** for high-risk processing
-- **Privacy by Design** — default to most privacy-protective settings
+- **Privacy by Design**, default to most privacy-protective settings
 
 **Penalties:** Up to **4% of global annual revenue OR €20M, whichever is higher.**
 
 🎯 **MEMORIZE THIS:** The 4%/€20M cap is the single most-cited GDPR number.
 
-### 2. CCPA / CPRA — California Consumer Privacy Act (Jan 2020) / California Privacy Rights Act (Jan 2023)
+### 2. CCPA / CPRA, California Consumer Privacy Act (Jan 2020) / California Privacy Rights Act (Jan 2023)
 
 California's law, modeled on but distinct from GDPR.
 
@@ -72,7 +72,7 @@ California's law, modeled on but distinct from GDPR.
 
 **Penalties:** Up to **$2,500 per violation** (CCPA) and **$7,500 per intentional violation** (CPRA). Plus private right of action for data breaches.
 
-### 3. COPPA — Children's Online Privacy Protection Act (US, 1998; updated 2013)
+### 3. COPPA, Children's Online Privacy Protection Act (US, 1998; updated 2013)
 
 Protects under-13s' personal information.
 
@@ -82,15 +82,15 @@ Protects under-13s' personal information.
 - Right to review and delete data
 - Operators must not condition participation on disclosure of more info than necessary
 
-**Penalties:** Up to **$50,120 per violation** (inflation-adjusted; was originally $40K). YouTube paid $170 million in 2019 for COPPA violations — the largest at the time.
+**Penalties:** Up to **$50,120 per violation** (inflation-adjusted; was originally $40K). YouTube paid $170 million in 2019 for COPPA violations, the largest at the time.
 
 ### 4. CAN-SPAM (US, 2003)
 
-Covered in Module 6 — email-specific.
+Covered in Module 6, email-specific.
 
 ### 5. CASL (Canada, 2014)
 
-Canada's Anti-Spam Law — covers email + electronic messages. Penalties up to **CA$10 million**.
+Canada's Anti-Spam Law, covers email + electronic messages. Penalties up to **CA$10 million**.
 
 ### 6. LGPD (Brazil, 2020)
 
@@ -136,7 +136,7 @@ The world's first comprehensive AI law. Categorizes AI systems into four risk ti
 | **Limited risk** | Chatbots, deepfakes, AI-generated content | **Transparency / disclosure required** |
 | **Minimal risk** | Spam filters, video games | No special obligations |
 
-**For marketers:** Most marketing AI falls into **Limited Risk** — meaning **disclosure is mandatory**. Users must know when they're interacting with AI (chatbots) or viewing AI-generated content (deepfakes, synthetic media).
+**For marketers:** Most marketing AI falls into **Limited Risk**, meaning **disclosure is mandatory**. Users must know when they're interacting with AI (chatbots) or viewing AI-generated content (deepfakes, synthetic media).
 
 **Penalties:** Up to **7% of global revenue or €35M** for prohibited practices; up to **3% of global revenue or €15M** for other violations.
 
@@ -149,19 +149,19 @@ The Federal Trade Commission has been aggressively interpreting Section 5 of the
 - **AI-generated endorsements must be disclosed** (the FTC's Endorsement Guides, updated 2023)
 - **Deepfakes used to deceive are deceptive practices** (FTC has signaled enforcement intent)
 
-The FTC has also taken concrete action — including **algorithmic disgorgement** (forcing companies to destroy models trained on improperly-obtained data). Notable: the 2022 *Cambridge Analytica*-related case and the 2024 *Rite Aid facial-recognition* case.
+The FTC has also taken concrete action, including **algorithmic disgorgement** (forcing companies to destroy models trained on improperly-obtained data). Notable: the 2022 *Cambridge Analytica*-related case and the 2024 *Rite Aid facial-recognition* case.
 
 ### State-level AI laws
 
-- **Colorado AI Act (passed May 2024)** — first state-level AI act, focused on high-risk decisions; effective Feb 2026
-- **New York City Local Law 144 (effective July 2023)** — requires bias audits for automated employment decision tools
+- **Colorado AI Act (passed May 2024)**, first state-level AI act, focused on high-risk decisions; effective Feb 2026
+- **New York City Local Law 144 (effective July 2023)**, requires bias audits for automated employment decision tools
 
 ### Voluntary frameworks worth knowing
 
-- **NIST AI Risk Management Framework (AI RMF 1.0, Jan 2023)** — non-binding US framework increasingly cited by enforcement agencies
-- **ISO/IEC 42001 (Dec 2023)** — international AI management system standard
-- **OECD AI Principles** — the most-cited international set
-- **G7 Hiroshima Code of Conduct** — voluntary AI safety code (Oct 2023)
+- **NIST AI Risk Management Framework (AI RMF 1.0, Jan 2023)**, non-binding US framework increasingly cited by enforcement agencies
+- **ISO/IEC 42001 (Dec 2023)**, international AI management system standard
+- **OECD AI Principles**, the most-cited international set
+- **G7 Hiroshima Code of Conduct**, voluntary AI safety code (Oct 2023)
 
 ---
 
@@ -174,7 +174,7 @@ A separate but related story.
 | Date | Event |
 |---|---|
 | 2017 | Apple Safari introduces Intelligent Tracking Prevention (ITP) |
-| 2019 | Apple ITP 2.x — 7-day cookie cap |
+| 2019 | Apple ITP 2.x, 7-day cookie cap |
 | Jan 2020 | Google announces Chrome will deprecate third-party cookies "within 2 years" |
 | April 2021 | iOS 14.5 launches App Tracking Transparency |
 | 2022 | Google postpones cookie deprecation to 2023 |
@@ -187,13 +187,13 @@ A separate but related story.
 
 Google's set of replacement APIs:
 
-- **Topics API** — browser assigns user-interest topics; ads use those instead of cookies
-- **Protected Audience API** (formerly FLEDGE) — on-device remarketing
-- **Attribution Reporting API** — privacy-preserving conversion measurement
+- **Topics API**, browser assigns user-interest topics; ads use those instead of cookies
+- **Protected Audience API** (formerly FLEDGE), on-device remarketing
+- **Attribution Reporting API**, privacy-preserving conversion measurement
 
 The Privacy Sandbox is the *technical* answer to the cookie question. The *strategic* answer is **first-party data + Consent Mode v2 + Enhanced Conversions / CAPI + MMM**.
 
-🎯 **Trap on the exam:** "When did Chrome kill third-party cookies?" The honest 2026 answer is "Google moved to a user-choice model in 2025 rather than a hard kill." Trick questions will offer "January 2024" — that was one of the multiple postponed dates.
+🎯 **Trap on the exam:** "When did Chrome kill third-party cookies?" The honest 2026 answer is "Google moved to a user-choice model in 2025 rather than a hard kill." Trick questions will offer "January 2024", that was one of the multiple postponed dates.
 
 ---
 
@@ -208,14 +208,14 @@ The canonical study showing commercial facial-recognition systems had error rate
 Amazon built (and quietly killed) an AI hiring tool that was trained on 10 years of mostly-male resumes and learned to downrank candidates from women's colleges, resumes mentioning "women's chess club," etc. Now a textbook fairness case.
 
 ### Apple Card / Goldman Sachs (2019)
-The Apple Card faced widely-reported claims of gender-biased credit limit decisions. The New York Department of Financial Services investigated and ultimately found no statistical bias, but the episode became a case study in *perceived* algorithmic discrimination — which has its own brand and legal consequences.
+The Apple Card faced widely-reported claims of gender-biased credit limit decisions. The New York Department of Financial Services investigated and ultimately found no statistical bias, but the episode became a case study in *perceived* algorithmic discrimination, which has its own brand and legal consequences.
 
 ### What marketers should do
 
 1. **Audit AI marketing tools** for bias in audience targeting, copy generation, and creative selection.
 2. **Diverse training data + diverse testing.** Make sure your AI doesn't only work well for the demographic majority.
 3. **Human review** of AI decisions that affect people (who sees what ad, who gets what offer).
-4. **Document decisions** — auditable trails matter for regulators.
+4. **Document decisions**, auditable trails matter for regulators.
 5. **Don't use AI to make eligibility decisions** without explicit human oversight.
 
 ---
@@ -233,14 +233,14 @@ Data your company collects directly from your customers/users, with their consen
 - **It's yours.** No platform can take it away.
 - **It's compliant.** Consent is at the point of collection.
 - **It's high-quality.** You know exactly where it came from.
-- **It powers AI.** RAG, lookalike audiences, personalization — all rely on first-party data.
+- **It powers AI.** RAG, lookalike audiences, personalization, all rely on first-party data.
 
 ### How to build it
 1. **Capture email at every meaningful touchpoint** (with consent + clear value).
 2. **Loyalty programs and accounts** that incentivize first-party data sharing.
 3. **First-party cookies + server-side analytics** (yours, not third-party).
-4. **CDP (Customer Data Platform)** — Segment, mParticle, Tealium, BlueConic, Lytics — aggregates first-party data across systems.
-5. **Zero-party data** — what users *tell* you about themselves (preferences, intent) via surveys, quizzes, preference centers. Highest-trust signal.
+4. **CDP (Customer Data Platform)** Segment, mParticle, Tealium, BlueConic, Lytics aggregates first-party data across systems.
+5. **Zero-party data**, what users *tell* you about themselves (preferences, intent) via surveys, quizzes, preference centers. Highest-trust signal.
 
 🎯 **MEMORIZE THIS:** "First-party data + zero-party data + consent-aware tracking + MMM + incrementality" is the canonical 2026 measurement and growth stack.
 
@@ -287,21 +287,21 @@ The most-quoted is GDPR's: "adequate, relevant, and limited to what is necessary
 | "Disclosure of AI is optional" | EU AI Act mandates it; FTC enforces in the US. |
 | "Bias in AI is unavoidable so we just ignore it" | It's actionable. Auditing + diverse testing + human review reduce risk. |
 | "Once you have consent, you can do anything" | Consent must be specific, freely-given, and revocable. |
-| "First-party data is unlimited" | Still subject to GDPR/CCPA — purpose limitation, retention, security. |
+| "First-party data is unlimited" | Still subject to GDPR/CCPA, purpose limitation, retention, security. |
 | "If we're small, we don't matter" | CCPA threshold is $25M revenue OR 100K Californians; many SMBs hit it. |
 
 ---
 
 ## ⚠️ Exam Traps
 
-1. **GDPR is extraterritorial** — applies based on whose data you process, not where you're based.
-2. **4% of global revenue OR €20M** — the GDPR cap. Memorize.
+1. **GDPR is extraterritorial**, applies based on whose data you process, not where you're based.
+2. **4% of global revenue OR €20M**, the GDPR cap. Memorize.
 3. **EU AI Act is the world's first comprehensive AI law** (passed March 2024).
 4. **AI-generated endorsements require disclosure** (FTC + EU AI Act).
 5. **First-party + zero-party data** is the strategic response to cookie deprecation.
 6. **Robyn (Meta) + Meridian (Google)** are the open-source MMM tools privacy-resilient marketers cite (Module 8 + 9 overlap).
 7. **Gender Shades (Buolamwini, 2018)** is the most-cited AI-bias study.
-8. **Apple Card / Goldman case** — investigated, no statistical bias found, but a case study in *perceived* algorithmic discrimination.
+8. **Apple Card / Goldman case**, investigated, no statistical bias found, but a case study in *perceived* algorithmic discrimination.
 
 ---
 
@@ -347,7 +347,7 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 10: Building Your AI Marketer Toolkit](../Module-10-Building-Your-AI-Marketer-Toolkit/Reading.md)
 
@@ -360,25 +360,25 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Compliance as moat or compliance as tax.** A founder of a Series-B SaaS argues GDPR/CCPA/EU AI Act compliance is overhead that disadvantages startups vs Big Tech (who can hire compliance teams). A regulator counters that compliance is exactly what protects citizens *from* Big Tech and forces real privacy investment. Steel-man both. Where does compliance actually create competitive advantage (durable moat) vs become a cost-of-doing-business tax that flattens the playing field downward? Pick one and defend.
-2. **First-party data: ethical floor or just rebranded tracking?** "First-party + zero-party data" is the most-cited 2026 strategic response to cookie deprecation. A privacy advocate argues this just relocates surveillance from third parties to first parties without reducing total data collection. A marketer responds that first-party = consented = ethically distinct. Construct both arguments. Where do you place the ethical line — and what disclosure obligations should the marketer commit to publicly even when not legally required?
+2. **First-party data: ethical floor or just rebranded tracking?** "First-party + zero-party data" is the most-cited 2026 strategic response to cookie deprecation. A privacy advocate argues this just relocates surveillance from third parties to first parties without reducing total data collection. A marketer responds that first-party = consented = ethically distinct. Construct both arguments. Where do you place the ethical line, and what disclosure obligations should the marketer commit to publicly even when not legally required?
 3. **The Apple Card case study, re-examined.** New York DFS investigated and found *no* statistical bias in the Apple Card / Goldman Sachs algorithm, yet the episode became a canonical "algorithmic discrimination" case. Should marketers care more about *measurable* bias or *perceived* bias? What does this case teach about communications around AI decisions vs the AI decisions themselves? Be specific about what Goldman should have done in the first 72 hours after the public claims went viral.
-4. **EU AI Act tiers — too broad, too narrow, or right?** The EU AI Act puts most marketing AI into "Limited Risk" (disclosure required) and reserves "High-Risk" for hiring/credit/etc. A compliance attorney argues this is too lenient — AI ad targeting affecting protected classes should be High-Risk. A marketer counters that High-Risk classification would freeze marketing AI development. Make both cases. Where would *you* draw the AI-marketing/High-Risk line, and why?
-5. **Algorithmic disgorgement as deterrent.** The FTC has used "algorithmic disgorgement" (forcing destruction of improperly-trained models) in cases like Cambridge Analytica and Rite Aid. A defender says this is the only remedy with real teeth in AI enforcement. A critic says destroying a model that took years and millions to train is disproportionate. Construct both. What's the right threshold for algorithmic disgorgement — gross misconduct, repeated violation, or strict-liability-for-training-data?
+4. **EU AI Act tiers too broad, too narrow, or right?** The EU AI Act puts most marketing AI into "Limited Risk" (disclosure required) and reserves "High-Risk" for hiring/credit/etc. A compliance attorney argues this is too lenient AI ad targeting affecting protected classes should be High-Risk. A marketer counters that High-Risk classification would freeze marketing AI development. Make both cases. Where would *you* draw the AI-marketing/High-Risk line, and why?
+5. **Algorithmic disgorgement as deterrent.** The FTC has used "algorithmic disgorgement" (forcing destruction of improperly-trained models) in cases like Cambridge Analytica and Rite Aid. A defender says this is the only remedy with real teeth in AI enforcement. A critic says destroying a model that took years and millions to train is disproportionate. Construct both. What's the right threshold for algorithmic disgorgement, gross misconduct, repeated violation, or strict-liability-for-training-data?
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *European Data Protection Board (EDPB) Guidelines* — the official GDPR interpretation source
-- 📖 *FTC Endorsement Guides* (updated 2023) — required reading for any influencer marketer
+- 📖 *European Data Protection Board (EDPB) Guidelines*, the official GDPR interpretation source
+- 📖 *FTC Endorsement Guides* (updated 2023), required reading for any influencer marketer
 - 📖 *EU AI Act* official text (eur-lex.europa.eu)
 - 📖 *NIST AI Risk Management Framework 1.0* (free, ~80 pages)
-- 📰 *IAPP* (International Association of Privacy Professionals) — the privacy industry's main hub
-- 📰 *MIT Sloan Management Review* — multiple 2024 articles on AI ethics
-- 📰 *Harvard Business Review* — "How to Make AI Fair" and related ethics pieces
-- 📖 *Weapons of Math Destruction* by Cathy O'Neil — the popular intro to algorithmic harm
-- 📖 *Race After Technology* by Ruha Benjamin — bias in tech
-- 📰 *Algorithm Watch* — non-profit tracking algorithmic accountability
+- 📰 *IAPP* (International Association of Privacy Professionals), the privacy industry's main hub
+- 📰 *MIT Sloan Management Review*, multiple 2024 articles on AI ethics
+- 📰 *Harvard Business Review*, "How to Make AI Fair" and related ethics pieces
+- 📖 *Weapons of Math Destruction* by Cathy O'Neil, the popular intro to algorithmic harm
+- 📖 *Race After Technology* by Ruha Benjamin, bias in tech
+- 📰 *Algorithm Watch*, non-profit tracking algorithmic accountability

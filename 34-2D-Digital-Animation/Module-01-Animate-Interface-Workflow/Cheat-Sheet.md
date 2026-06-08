@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-01-Animate-Interface-Workflow/Cheat-S
 title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 ---
 
-# ⚡ Module 1 Cheat Sheet — Adobe Animate Interface & Workflow
+# ⚡ Module 1 Cheat Sheet, Adobe Animate Interface & Workflow
 
 ---
 
@@ -30,7 +30,7 @@ title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 
 ---
 
-## Symbol Types — Quick Reference
+## Symbol Types, Quick Reference
 
 | Type | Sync | Use For |
 |------|------|---------|
@@ -46,12 +46,12 @@ title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 
 | Mode | Shapes Merge? | Best For |
 |------|--------------|---------|
-| Merge Drawing (default) | Yes — same color merges; different cuts | Traditional cel-style work |
-| Object Drawing (J to toggle) | No — each shape is self-contained | Character rigs, layered comps |
+| Merge Drawing (default) | Yes, same color merges; different cuts | Traditional cel-style work |
+| Object Drawing (J to toggle) | No, each shape is self-contained | Character rigs, layered comps |
 
 ---
 
-## Key Shortcuts — Complete Reference
+## Key Shortcuts, Complete Reference
 
 | Action | Windows | Mac |
 |--------|---------|-----|
@@ -87,7 +87,7 @@ title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 | Mode | Behavior | Use When |
 |------|---------|---------|
 | **Event** | Plays to end regardless of timeline | SFX, background music |
-| **Stream** | Locked to playhead position | Lip sync — ALWAYS use this |
+| **Stream** | Locked to playhead position | Lip sync, ALWAYS use this |
 
 ---
 
@@ -95,7 +95,7 @@ title: "Module 1 Cheat Sheet: Animate Interface & Workflow"
 
 | FPS | Standard | Productions |
 |-----|---------|------------|
-| 12 | "On twos" — anime / classic cartoon | Cuphead, classic anime |
+| 12 | "On twos", anime / classic cartoon | Cuphead, classic anime |
 | 24 | Cinema standard | Spider-Verse, Avatar TLAB |
 | 25 | PAL (Europe, Australia) | BBC, European animation |
 | 30 | NTSC / YouTube standard | US TV, YouTube |
@@ -147,7 +147,7 @@ Prefix = character name. Always use folders per character.
 
 ---
 
-## Properties Panel — Context Guide
+## Properties Panel, Context Guide
 
 | What Is Selected | Panel Shows |
 |-----------------|------------|

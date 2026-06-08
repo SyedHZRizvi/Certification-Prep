@@ -3,8 +3,8 @@
 > **Why this module matters:** Inventory is where supply chain math lives. Expect 6–10 calculation questions on the exam: EOQ, safety stock, reorder point, days of supply, inventory turns. Get the formulas wrong here and you'll bleed points across the board.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Forecast error metrics (MAD, MAPE, σ)](../Module-03-Demand-Forecasting/Reading.md) — Module 3
-> - [The MPS, MRP, and lot-sizing rules](../Module-04-Supply-Planning-SOP/Reading.md) — Module 4
+> - [Forecast error metrics (MAD, MAPE, σ)](../Module-03-Demand-Forecasting/Reading.md), Module 3
+> - [The MPS, MRP, and lot-sizing rules](../Module-04-Supply-Planning-SOP/Reading.md), Module 4
 > - Basic statistics: normal distribution, Z-scores, percentile lookup
 > - Calculator comfort with square roots and percentages
 > If you've never computed a Z-score before, skim a 10-minute Khan Academy "Z-tables" video first.
@@ -13,7 +13,7 @@
 
 ## 🛒 A Story: The Hardware Store That Loved Its Stockroom Too Much
 
-Priya runs **HomeGood Hardware**, a 6-store chain. Her dad founded the business in 1987 and his rule was: "Never run out — fill the back room." For decades that worked. By 2022 the back rooms held $4.7M of inventory, much of it covered in dust. Cash flow was always tight. Insurance, shrinkage, and obsolescence ate margin.
+Priya runs **HomeGood Hardware**, a 6-store chain. Her dad founded the business in 1987 and his rule was: "Never run out, fill the back room." For decades that worked. By 2022 the back rooms held $4.7M of inventory, much of it covered in dust. Cash flow was always tight. Insurance, shrinkage, and obsolescence ate margin.
 
 Priya hired a consultant who ran an **ABC analysis** on 8,200 SKUs. Result: 412 SKUs (5%) generated 75% of revenue. Another 1,200 SKUs hadn't moved in 18 months. They wrote off slow movers, calculated EOQ per SKU, set safety stock based on lead-time variance (not gut feel), and instituted **cycle counting**. Inventory dropped to $2.6M. Service level went UP from 92% to 97%.
 
@@ -33,8 +33,8 @@ The lesson: more inventory ≠ better service. **Smart inventory** = better serv
 
 Also sometimes called out:
 
-- **Maintenance, Repair, Operating (MRO)** — supplies not in the BOM but needed for ops
-- **Promotional inventory** — built specifically for a marketing campaign
+- **Maintenance, Repair, Operating (MRO)**, supplies not in the BOM but needed for ops
+- **Promotional inventory**, built specifically for a marketing campaign
 
 ---
 
@@ -51,7 +51,7 @@ Also sometimes called out:
 
 ---
 
-## 📐 EOQ — Economic Order Quantity (the headline formula)
+## 📐 EOQ, Economic Order Quantity (the headline formula)
 
 EOQ minimizes the total of ordering + carrying cost for a given annual demand.
 
@@ -130,9 +130,9 @@ Apply the 80-20 principle to inventory.
 
 Variations:
 
-- **ABC-XYZ** — adds demand variability classification (X = stable, Y = variable, Z = lumpy)
-- **VED** (Vital / Essential / Desirable) — criticality classification
-- **HML** (High / Medium / Low) — price-based
+- **ABC-XYZ**, adds demand variability classification (X = stable, Y = variable, Z = lumpy)
+- **VED** (Vital / Essential / Desirable), criticality classification
+- **HML** (High / Medium / Low), price-based
 
 ---
 
@@ -173,17 +173,17 @@ Modern best practice: **cycle counting**, often automated with RFID, IoT, or sca
 
 ## 🏃 JIT, Lean, and Kanban Inventory
 
-The Toyota Production System was codified by **Taiichi Ohno** (Toyota plant manager → executive VP) over 1948-1975 and published in *Toyota Production System: Beyond Large-Scale Production* (Diamond Inc., 1978; English translation Productivity Press, 1988). The Western academic synthesis came from **Jeffrey K. Liker, *The Toyota Way: 14 Management Principles*** (McGraw-Hill, 2004; 2e 2020 — University of Michigan).
+The Toyota Production System was codified by **Taiichi Ohno** (Toyota plant manager → executive VP) over 1948-1975 and published in *Toyota Production System: Beyond Large-Scale Production* (Diamond Inc., 1978; English translation Productivity Press, 1988). The Western academic synthesis came from **Jeffrey K. Liker, *The Toyota Way: 14 Management Principles*** (McGraw-Hill, 2004; 2e 2020, University of Michigan).
 
 | Concept | Idea | Origin |
 |---------|------|--------|
 | **JIT (Just-in-Time)** | Inventory arrives just before needed | Toyota (Ohno, 1950s-70s) |
-| **Kanban** | Visual signal triggers replenishment | Toyota (Ohno, 1953 — inspired by Piggly Wiggly grocery shelves) |
+| **Kanban** | Visual signal triggers replenishment | Toyota (Ohno, 1953, inspired by Piggly Wiggly grocery shelves) |
 | **Heijunka** | Production leveling for smooth flow | Toyota |
 | **Pull system** | Downstream demand triggers upstream supply | Lean foundation |
 | **Single-piece flow** | Smallest possible lot size, ideally one | Lean ideal |
 
-JIT requires **reliable suppliers**, **short lead times**, **high quality**, and **flexible capacity**. When those preconditions break (e.g., COVID 2020), JIT supply chains shatter — hence the modern shift to "JIT + safety stock" or "JIC (just-in-case)" hybrids.
+JIT requires **reliable suppliers**, **short lead times**, **high quality**, and **flexible capacity**. When those preconditions break (e.g., COVID 2020), JIT supply chains shatter, hence the modern shift to "JIT + safety stock" or "JIC (just-in-case)" hybrids.
 
 🎯 **Exam tip:** A pure JIT firm carries minimal inventory but maximum supplier risk. Multi-source and proximity reduce that risk.
 
@@ -233,18 +233,18 @@ A holiday sweater sells for $80 with $30 cost. Leftover salvage = $20.
 
 ---
 
-## 📊 Case Study — JD.com's Automated Inventory Network (2017-2024)
+## 📊 Case Study, JD.com's Automated Inventory Network (2017-2024)
 
-**Situation.** China's #2 e-commerce platform after Alibaba, JD.com (Beijing) built its competitive advantage on **owned inventory + owned logistics** — the opposite of Alibaba's marketplace + 3PL model. By 2017 JD held 9.6 million SKUs across 500+ warehouses, growing ~30% YoY. The traditional approach — manual EOQ at SKU level, ABC tiering on a spreadsheet — was breaking down. SKU velocity ranged from "millions/day" (consumer staples) to "1 per year" (specialty industrial). A single buyer might re-order 200 SKUs daily; getting any one EOQ wrong meant a stockout in Beijing OR pallets of dead stock in a Chengdu DC.
+**Situation.** China's #2 e-commerce platform after Alibaba, JD.com (Beijing) built its competitive advantage on **owned inventory + owned logistics** the opposite of Alibaba's marketplace + 3PL model. By 2017 JD held 9.6 million SKUs across 500+ warehouses, growing ~30% YoY. The traditional approach manual EOQ at SKU level, ABC tiering on a spreadsheet, was breaking down. SKU velocity ranged from "millions/day" (consumer staples) to "1 per year" (specialty industrial). A single buyer might re-order 200 SKUs daily; getting any one EOQ wrong meant a stockout in Beijing OR pallets of dead stock in a Chengdu DC.
 
-**Decision.** Founder Richard Liu and CTO Zhang Chen invested $2.4B (2017-2022) in **end-to-end automation** with three pillars: (1) **AI-driven SKU-level demand sensing** using JD's POS data + weather + Weibo/WeChat social signals + same-day search query patterns, producing demand forecasts at hour granularity in 31 provinces; (2) **automated warehouses** — by 2023, JD operated 50+ "Asia No.1" mega-DCs with Geek+ robotics, achieving 24x productivity vs manual picking; (3) **AI-driven inventory positioning** — instead of EOQ at SKU level, JD's algorithm placed inventory dynamically across the network, treating each DC as a buffer in a hub-and-spoke math model. Critical: they did NOT abandon classical inventory math (EOQ, SS, ROP) — they automated and personalized it. Each SKU got its own α for ES, its own σ_LT calibration, its own service-level target based on contribution margin.
+**Decision.** Founder Richard Liu and CTO Zhang Chen invested $2.4B (2017-2022) in **end-to-end automation** with three pillars: (1) **AI-driven SKU-level demand sensing** using JD's POS data + weather + Weibo/WeChat social signals + same-day search query patterns, producing demand forecasts at hour granularity in 31 provinces; (2) **automated warehouses** by 2023, JD operated 50+ "Asia No.1" mega-DCs with Geek+ robotics, achieving 24x productivity vs manual picking; (3) **AI-driven inventory positioning** instead of EOQ at SKU level, JD's algorithm placed inventory dynamically across the network, treating each DC as a buffer in a hub-and-spoke math model. Critical: they did NOT abandon classical inventory math (EOQ, SS, ROP), they automated and personalized it. Each SKU got its own α for ES, its own σ_LT calibration, its own service-level target based on contribution margin.
 
-**Outcome.** By 2024: 92% of orders fulfilled same-day or next-day in tier-1/2 Chinese cities; cash-to-cash cycle ~30 days (vs Walmart ~12 days, Alibaba marketplace ~7 days but Alibaba carries no inventory). JD's 11.11 (Singles Day) 2023 generated $52B GMV with stockout rate <1% across millions of SKUs — physically and mathematically impossible without automated SS/ROP optimization. JD's Logistics IPO (2021) valued the unit at $40B. McKinsey featured JD's network in their 2023 *Supply Chain Frontier* report as the case study for "AI-augmented classical inventory science."
+**Outcome.** By 2024: 92% of orders fulfilled same-day or next-day in tier-1/2 Chinese cities; cash-to-cash cycle ~30 days (vs Walmart ~12 days, Alibaba marketplace ~7 days but Alibaba carries no inventory). JD's 11.11 (Singles Day) 2023 generated $52B GMV with stockout rate <1% across millions of SKUs, physically and mathematically impossible without automated SS/ROP optimization. JD's Logistics IPO (2021) valued the unit at $40B. McKinsey featured JD's network in their 2023 *Supply Chain Frontier* report as the case study for "AI-augmented classical inventory science."
 
-**Lesson for the exam / for practitioners.** The classical formulas in this module — EOQ, SS, ROP, ABC — are not obsolete in the AI era. They are the *engine*; AI just calibrates the parameters dynamically. JD's success rests on knowing the math cold first. On the exam: don't pick "AI replaces inventory math" as a correct answer — modern systems automate the formulas, they don't discard them. Also note: JD's high carrying cost (owned warehouses + owned trucks) is offset by *fast* turns (~12-15 per year for general merchandise). The cash-to-cash + service level + turn rate triangle is the executive-level CSCP question pattern.
+**Lesson for the exam / for practitioners.** The classical formulas in this module EOQ, SS, ROP, ABC are not obsolete in the AI era. They are the *engine*; AI just calibrates the parameters dynamically. JD's success rests on knowing the math cold first. On the exam: don't pick "AI replaces inventory math" as a correct answer, modern systems automate the formulas, they don't discard them. Also note: JD's high carrying cost (owned warehouses + owned trucks) is offset by *fast* turns (~12-15 per year for general merchandise). The cash-to-cash + service level + turn rate triangle is the executive-level CSCP question pattern.
 
 **Discussion (Socratic).**
-- Q1: Walmart's classic supply chain (1980s-2000s) used EOQ + supplier-managed inventory at SKU level. JD's 2024 model uses dynamic AI positioning. What ASCM CSCP framework would JD use to explain the trade-off when the AI mis-calibrates a SKU — and how does the human override fit?
+- Q1: Walmart's classic supply chain (1980s-2000s) used EOQ + supplier-managed inventory at SKU level. JD's 2024 model uses dynamic AI positioning. What ASCM CSCP framework would JD use to explain the trade-off when the AI mis-calibrates a SKU, and how does the human override fit?
 - Q2: A US-only e-commerce competitor wants to copy JD's model. China has cheap warehouse labor + dense urban demand patterns + 7×24 logistics tolerance. What three structural factors would make JD's playbook fail in the US, and what would you change?
 - Q3: A SKU in JD's network has demand σ = 50/day, lead-time σ = 5 days. The algorithm reports SS calculated for 99.5% service. The CFO asks "is 99.5% on a $30K-COGS slow-mover worth it?" Defend BOTH 99.5% and 92% service answers from a critical-ratio + financial perspective.
 
@@ -257,7 +257,7 @@ A holiday sweater sells for $80 with $30 cost. Leftover salvage = $20.
 | "More inventory = better service" | Up to a point; beyond it returns diminish and cost dominates |
 | "EOQ always applies" | Requires constant demand + lead time + no discounts |
 | "Service level 100% is achievable" | Asymptotically costs infinity to reach 100% |
-| "JIT means no inventory" | JIT means *just enough* — frequent small batches |
+| "JIT means no inventory" | JIT means *just enough*, frequent small batches |
 | "ABC classification is fixed" | Should be reviewed at least annually |
 | "Higher utilization is better" | Past ~85% wait-times explode (queueing) |
 | "Safety stock fixes bullwhip" | Better information sharing fixes bullwhip; SS only masks symptoms |
@@ -266,13 +266,13 @@ A holiday sweater sells for $80 with $30 cost. Leftover salvage = $20.
 
 ## 🚨 Exam Traps
 
-1. **EOQ assumptions** — discounts, variable demand, or variable lead time invalidate basic EOQ.
-2. **Service level vs fill rate** — service level is probability of no stockout in a cycle; fill rate is fraction of demand filled from stock.
-3. **Safety stock direction** — higher Z, higher SS. Square-root law applies if pooling locations.
-4. **Inventory turns interpretation** — Higher turns usually good but can mask stockouts.
-5. **Newsvendor for repeating demand** — Wrong; newsvendor is single-period only.
-6. **Utilization at 100%** — In stochastic systems wait time spikes long before 100%.
-7. **JIT works for everything** — No; high-variance, long-lead-time chains can collapse on JIT.
+1. **EOQ assumptions**, discounts, variable demand, or variable lead time invalidate basic EOQ.
+2. **Service level vs fill rate**, service level is probability of no stockout in a cycle; fill rate is fraction of demand filled from stock.
+3. **Safety stock direction**, higher Z, higher SS. Square-root law applies if pooling locations.
+4. **Inventory turns interpretation**, Higher turns usually good but can mask stockouts.
+5. **Newsvendor for repeating demand**, Wrong; newsvendor is single-period only.
+6. **Utilization at 100%**, In stochastic systems wait time spikes long before 100%.
+7. **JIT works for everything**, No; high-variance, long-lead-time chains can collapse on JIT.
 
 ---
 
@@ -313,7 +313,7 @@ You now know:
 - 🛍️ Newsvendor single-period model
 
 **Next steps:**
-1. 🎥 [Videos.md](./Videos.md) — practice EOQ and SS calculations
+1. 🎥 [Videos.md](./Videos.md), practice EOQ and SS calculations
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ [Module 6: Sourcing & Supplier Management](../Module-06-Sourcing-Supplier-Management/Reading.md)
@@ -327,22 +327,22 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The 100% service-level trap.** A new VP demands "99.99% service on everything." Walk through the math (Z = 3.72 for 99.99% vs Z = 1.65 for 95%) and the cost implication. Defend the principled push-back without losing the VP's confidence.
 2. **EOQ when discount tiers exist.** The classical EOQ ignores quantity discounts. A buyer's actual decision is between EOQ at price tier 1 vs slightly-above-EOQ at price tier 2 with a discount. Construct the decision tree, and explain why naïve EOQ can mislead.
 3. **JIT after COVID.** Many firms abandoned pure JIT after COVID-19 supplier failures. Is "JIT + safety stock + dual source" still JIT philosophically, or has Lean's "zero inventory" ideal effectively died? Cite Toyota's actual 2021-2023 behavior.
 4. **Newsvendor in the AI era.** A SaaS firm's "newsvendor" decision is daily compute capacity (over-provision = cloud bill; under-provision = customer SLA breach). How does the classical Cu/(Cu+Co) framework adapt when the cost asymmetry shifts every quarter with cloud pricing?
-5. **Cycle counting vs annual: defending the cost.** Cycle counting requires daily warehouse labor allocated to counts. Annual physical inventory is one weekend of shutdown. Build the cost-benefit argument for cycle counting that survives a CFO who insists "just do annual — it's cheaper labor."
+5. **Cycle counting vs annual: defending the cost.** Cycle counting requires daily warehouse labor allocated to counts. Annual physical inventory is one weekend of shutdown. Build the cost-benefit argument for cycle counting that survives a CFO who insists "just do annual, it's cheaper labor."
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 Steven Nahmias, *Production and Operations Analysis* — McGraw-Hill, 7e 2015 (chapters 4-6 are the inventory canon)
-- 📖 Edward A. Silver, David F. Pyke, Douglas J. Thomas, *Inventory and Production Management in Supply Chains* — CRC Press, 4e 2017 (the academic textbook)
-- 📖 James P. Womack & Daniel T. Jones, *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* — Free Press, 2003 (the synthesis of Toyota Production System)
-- 📖 Jeffrey K. Liker, *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer* — McGraw-Hill, 2e 2020
-- 📖 Taiichi Ohno, *Toyota Production System: Beyond Large-Scale Production* — Productivity Press, English ed. 1988
+- 📖 Steven Nahmias, *Production and Operations Analysis*, McGraw-Hill, 7e 2015 (chapters 4-6 are the inventory canon)
+- 📖 Edward A. Silver, David F. Pyke, Douglas J. Thomas, *Inventory and Production Management in Supply Chains*, CRC Press, 4e 2017 (the academic textbook)
+- 📖 James P. Womack & Daniel T. Jones, *Lean Thinking: Banish Waste and Create Wealth in Your Corporation*, Free Press, 2003 (the synthesis of Toyota Production System)
+- 📖 Jeffrey K. Liker, *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer*, McGraw-Hill, 2e 2020
+- 📖 Taiichi Ohno, *Toyota Production System: Beyond Large-Scale Production*, Productivity Press, English ed. 1988
 - 📖 ASCM CSCP Learning System Module 5
 - 📰 McKinsey & Co., *"Supply Chain Frontier"* (annual report, 2023 issue covered JD.com automation in depth)

@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Tool Use With Claude — Official Tutorial</p>
+      <p class="vg-title">Tool Use With Claude, Official Tutorial</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 18 min · End-to-end</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Computer Use Demo — Screenshots & Clicks</p>
+      <p class="vg-title">Computer Use Demo, Screenshots & Clicks</p>
       <p class="vg-creator">Anthropic (Oct 2024 launch)</p>
       <span class="vg-duration">⏱ 15 min · The beta in action</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The Multi-Turn Tool Loop — Python Walkthrough</p>
+      <p class="vg-title">The Multi-Turn Tool Loop, Python Walkthrough</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 15 min · while-loop pattern</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Sourcegraph Cody Agentic Mode — Architecture</p>
+      <p class="vg-title">Sourcegraph Cody Agentic Mode, Architecture</p>
       <p class="vg-creator">Sourcegraph</p>
       <span class="vg-duration">⏱ 20 min · Enterprise tool design</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Computer Use — Docker Sandbox Setup</p>
+      <p class="vg-title">Computer Use, Docker Sandbox Setup</p>
       <p class="vg-creator">Anthropic / community</p>
       <span class="vg-duration">⏱ 25 min · Self-host the executor</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Replit Agent — Architecture Deep Dive</p>
+      <p class="vg-title">Replit Agent, Architecture Deep Dive</p>
       <p class="vg-creator">Replit team</p>
       <span class="vg-duration">⏱ 30 min · Production agent</span>
     </div>
@@ -166,7 +166,7 @@ Answer these in your notebook (without re-watching):
 
 1. What role do you use to send tool results back to Claude?
 2. The four values of `tool_choice` and what each does?
-3. Parallel tool use — how does Claude communicate it?
+3. Parallel tool use, how does Claude communicate it?
 4. What does computer use give you and what beta header opts you in?
 5. Three rules for designing a safe tool suite?
 

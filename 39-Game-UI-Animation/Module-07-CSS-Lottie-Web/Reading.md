@@ -1,16 +1,16 @@
 ---
-title: "Module 7: CSS Animation, Lottie & Rive — Web Animation Without JavaScript"
+title: "Module 7: CSS Animation, Lottie & Rive, Web Animation Without JavaScript"
 ---
 
 # 🌐 Module 7: CSS Animation, Lottie & Rive
 
 ## The LottieFiles Origin Story
 
-In 2015, Airbnb's design engineering team — led by Brandon Withrow — faced a problem: their design team was creating complex animated illustrations in After Effects for the Airbnb app's onboarding screens, and the only way to ship those animations was as video files (.mp4). Video files were 500KB–2MB per animation, they couldn't be tinted or scaled dynamically, and they looked pixelated on high-DPI displays.
+In 2015, Airbnb's design engineering team led by Brandon Withrow faced a problem: their design team was creating complex animated illustrations in After Effects for the Airbnb app's onboarding screens, and the only way to ship those animations was as video files (.mp4). Video files were 500KB–2MB per animation, they couldn't be tinted or scaled dynamically, and they looked pixelated on high-DPI displays.
 
-Withrow built **Lottie** — an open-source library that parses After Effects animations exported as JSON via the AE plugin **Bodymovin**, and renders them natively in iOS, Android, and the browser. The JSON file for the same animation was typically 20–80KB versus 500KB+ for video, it was infinitely scalable (vector-based), and it could be controlled programmatically (play, pause, seek, speed).
+Withrow built **Lottie**, an open-source library that parses After Effects animations exported as JSON via the AE plugin **Bodymovin**, and renders them natively in iOS, Android, and the browser. The JSON file for the same animation was typically 20–80KB versus 500KB+ for video, it was infinitely scalable (vector-based), and it could be controlled programmatically (play, pause, seek, speed).
 
-By 2018, Lottie was downloaded 40,000 times per day. By 2023, **LottieFiles** — the marketplace and tooling platform built around the format — hosted over 100 million animation files. Every major design app (Adobe After Effects, Adobe Animate, Figma Plugins, Haiku Animator) had an export pathway to Lottie.
+By 2018, Lottie was downloaded 40,000 times per day. By 2023, **LottieFiles** the marketplace and tooling platform built around the format hosted over 100 million animation files. Every major design app (Adobe After Effects, Adobe Animate, Figma Plugins, Haiku Animator) had an export pathway to Lottie.
 
 The lesson is about more than a clever file format: it is about the power of choosing the right rendering primitive for the job. CSS handles stateless, declarative animation. Lottie handles complex After Effects exports. GSAP handles JavaScript-driven interactivity. Rive handles interactive, state-machine-driven illustrations. Each tool has its domain.
 
@@ -62,7 +62,7 @@ The lesson is about more than a clever file format: it is about the power of cho
 | `animation-fill-mode` | `none`, `forwards`, `backwards`, `both` | State before/after |
 | `animation-play-state` | `running`, `paused` | JS controllable |
 
-### `animation-fill-mode` — Critical
+### `animation-fill-mode`, Critical
 
 | Value | Behavior |
 |-------|----------|
@@ -81,8 +81,8 @@ The lesson is about more than a clever file format: it is about the power of cho
 |--|---------------|---------------|
 | Trigger | Property change (hover, class add) | Plays on attach (or delay) |
 | Direction | A → B | Full keyframe sequence |
-| Keyframes | No — interpolates between states | Yes — arbitrary keyframes |
-| Loop | No | Yes — `infinite` |
+| Keyframes | No interpolates between states | Yes arbitrary keyframes |
+| Loop | No | Yes, `infinite` |
 | JS control | Via class manipulation | Via class + `animation-play-state` |
 | Best for | Hover states, simple toggles | Complex sequences, looping |
 
@@ -95,7 +95,7 @@ The browser renders in three stages:
 2. **Paint**: fills pixels within each box
 3. **Composite**: combines layers in order
 
-Animating `transform` and `opacity` skips Layout and Paint — they go directly to Composite (GPU). This is why they are the only safe properties to animate for 60fps performance.
+Animating `transform` and `opacity` skips Layout and Paint, they go directly to Composite (GPU). This is why they are the only safe properties to animate for 60fps performance.
 
 ### Properties That Are GPU-Safe
 
@@ -104,9 +104,9 @@ Animating `transform` and `opacity` skips Layout and Paint — they go directly 
 | `transform` (translate, scale, rotate) | Composite | ✅ Yes |
 | `opacity` | Composite | ✅ Yes |
 | `filter` (blur, brightness) | Composite (on GPU) | ✅ Usually |
-| `background-color` | Paint | ⚠️ No — triggers repaint |
-| `width`, `height` | Layout | ❌ No — triggers layout |
-| `top`, `left`, `margin` | Layout | ❌ No — triggers layout |
+| `background-color` | Paint | ⚠️ No, triggers repaint |
+| `width`, `height` | Layout | ❌ No, triggers layout |
+| `top`, `left`, `margin` | Layout | ❌ No, triggers layout |
 | `border-radius` | Paint | ⚠️ Depends |
 
 ### `will-change`
@@ -131,7 +131,7 @@ Animating `transform` and `opacity` skips Layout and Paint — they go directly 
 ### Step 1: Create in After Effects
 
 Design the animation in After Effects. Best practices for Lottie export:
-- Use **solid layers, shape layers, and text** — avoid raster effects, 3D layers, expressions that aren't Bodymovin-compatible
+- Use **solid layers, shape layers, and text**, avoid raster effects, 3D layers, expressions that aren't Bodymovin-compatible
 - Keep layers under 50 for reasonable JSON size
 - No pre-compositions beyond 2 levels deep if possible
 - Avoid `time` expressions (they don't export cleanly to Lottie JSON)
@@ -265,7 +265,7 @@ if (!prefersReducedMotion) {
 
 ---
 
-## 📊 Lottie vs. Rive vs. CSS Animation — Full Comparison Matrix
+## 📊 Lottie vs. Rive vs. CSS Animation, Full Comparison Matrix
 
 Choosing the wrong animation tool for a given scenario is a common cause of both performance problems and unnecessary development complexity. This matrix covers the five key decision factors.
 
@@ -295,7 +295,7 @@ Two specific web animation patterns that appear safe but cause severe mobile per
 
 **1. CSS `filter: blur()` animation**
 
-Animating `filter: blur()` is GPU-composited on Chrome desktop and Firefox desktop. On iOS (all browsers use WebKit) and most Android WebViews, `filter: blur()` is rendered by the CPU — the browser repaints the filtered layer every frame. A single animated blur element can consume 3–5ms per frame on mid-range Android, leaving only 11–13ms for the rest of the render pipeline.
+Animating `filter: blur()` is GPU-composited on Chrome desktop and Firefox desktop. On iOS (all browsers use WebKit) and most Android WebViews, `filter: blur()` is rendered by the CPU, the browser repaints the filtered layer every frame. A single animated blur element can consume 3–5ms per frame on mid-range Android, leaving only 11–13ms for the rest of the render pipeline.
 
 Fix: Pre-render a blurred version of the element (as a separate DOM element or a background-image), then animate `opacity` to cross-fade between the sharp and blurred versions.
 
@@ -307,9 +307,9 @@ Fix: For complex Lottie animations on mobile, switch to `renderer: 'canvas'` ins
 
 | Renderer | DOM Elements | Mobile Performance | Accessibility | Crisp at HiDPI |
 |---|---|---|---|---|
-| SVG | N (one per layer) | Medium — struggles with complex paths | Yes (SVG is accessible) | Yes |
-| Canvas | 1 (canvas element) | High — single bitmap draw target | No (use aria-label) | Requires `devicePixelRatio` scaling |
-| HTML | N (div per layer) | Low — complex layout recalcs | Yes | Yes |
+| SVG | N (one per layer) | Medium, struggles with complex paths | Yes (SVG is accessible) | Yes |
+| Canvas | 1 (canvas element) | High, single bitmap draw target | No (use aria-label) | Requires `devicePixelRatio` scaling |
+| HTML | N (div per layer) | Low, complex layout recalcs | Yes | Yes |
 
 ---
 
@@ -332,23 +332,23 @@ Fix: For complex Lottie animations on mobile, switch to `renderer: 'canvas'` ins
 
 > 🎯 **What the exam tests 1:** What does `animation-fill-mode: forwards` do and why is it important? It holds the final keyframe values after the animation completes. Without it, the animated element snaps back to its original CSS-defined values. This is the most commonly tested CSS animation property after `animation-duration`.
 
-> 🎯 **What the exam tests 2:** What is the rendering stage difference between `transform` and `top/left` in CSS animation? `transform` triggers only the Composite stage (GPU). `top`/`left` trigger Layout + Paint + Composite — three stages instead of one. This is why `transform` is always preferred for animations.
+> 🎯 **What the exam tests 2:** What is the rendering stage difference between `transform` and `top/left` in CSS animation? `transform` triggers only the Composite stage (GPU). `top`/`left` trigger Layout + Paint + Composite, three stages instead of one. This is why `transform` is always preferred for animations.
 
 > 🎯 **What the exam tests 3:** What After Effects features cannot be exported to Lottie? 3D layers, 3D cameras, complex expressions (must be baked to keyframes), raster effects (Gaussian Blur in AE → use shape blur layer), and video footage layers.
 
-> 🎯 **What the exam tests 4:** When should you use Lottie `renderer: 'canvas'` vs. `'svg'`? Canvas for mobile and complex animations — better performance, single DOM element. SVG for desktop and animations that need CSS styling or DOM accessibility. HTML renderer for text-heavy animations with browser typography requirements.
+> 🎯 **What the exam tests 4:** When should you use Lottie `renderer: 'canvas'` vs. `'svg'`? Canvas for mobile and complex animations, better performance, single DOM element. SVG for desktop and animations that need CSS styling or DOM accessibility. HTML renderer for text-heavy animations with browser typography requirements.
 
-> 🎯 **What the exam tests 5:** What Rive input type maps to Unity's Trigger parameter concept? The **Trigger** input type in Rive — it fires once (`input.fire()`) and does not persist, equivalent to Unity's Trigger parameter that auto-resets after consuming a transition.
+> 🎯 **What the exam tests 5:** What Rive input type maps to Unity's Trigger parameter concept? The **Trigger** input type in Rive, it fires once (`input.fire()`) and does not persist, equivalent to Unity's Trigger parameter that auto-resets after consuming a transition.
 
-> 🎯 **What the exam tests 6:** What WCAG guideline covers `prefers-reduced-motion` implementation? WCAG 2.1 Guideline 2.3.3 (AAA level) — users can disable motion lasting > 5 seconds or repeating motion. WCAG 2.3.1 (AA level) covers content flashing > 3× per second (seizure risk, stricter).
+> 🎯 **What the exam tests 6:** What WCAG guideline covers `prefers-reduced-motion` implementation? WCAG 2.1 Guideline 2.3.3 (AAA level), users can disable motion lasting > 5 seconds or repeating motion. WCAG 2.3.1 (AA level) covers content flashing > 3× per second (seizure risk, stricter).
 
-> 🎯 **What the exam tests 7:** What is `animation-delay: -0.5s` (negative delay) used for? It starts the animation 0.5 seconds **into** the clip immediately — the animation appears to have already been playing for 0.5 seconds when the element renders. Used for staggered entry of pre-playing looping animations (e.g., a waving flag that appears already in motion).
+> 🎯 **What the exam tests 7:** What is `animation-delay: -0.5s` (negative delay) used for? It starts the animation 0.5 seconds **into** the clip immediately, the animation appears to have already been playing for 0.5 seconds when the element renders. Used for staggered entry of pre-playing looping animations (e.g., a waving flag that appears already in motion).
 
 > 🎯 **What the exam tests 8:** What is the Lottie production target file size and how do you achieve it? Under 50KB. Achieved via: LottieFiles Optimizer (lossily reduces keyframe precision), removing hidden layers from AE before export, reducing keyframe count in AE's Graph Editor, simplifying shape paths (fewer anchor points).
 
-> 🎯 **What the exam tests 9:** Why does `will-change: transform` hurt performance when applied globally? Each element with `will-change: transform` is promoted to a dedicated GPU compositing layer. GPU layers consume VRAM. Promoting every element on a page (via a global rule) can exhaust VRAM on mobile devices, causing the GPU to fall back to software rendering — the opposite of the intended effect.
+> 🎯 **What the exam tests 9:** Why does `will-change: transform` hurt performance when applied globally? Each element with `will-change: transform` is promoted to a dedicated GPU compositing layer. GPU layers consume VRAM. Promoting every element on a page (via a global rule) can exhaust VRAM on mobile devices, causing the GPU to fall back to software rendering, the opposite of the intended effect.
 
-> 🎯 **What the exam tests 10:** What is the key difference between `animation-direction: alternate` and `animation-direction: reverse`? `reverse` plays the keyframes from 100% to 0% on every iteration. `alternate` plays 0%→100% on odd iterations and 100%→0% on even iterations — creating a ping-pong effect that is smoother for looping animations like pulses and breathes.
+> 🎯 **What the exam tests 10:** What is the key difference between `animation-direction: alternate` and `animation-direction: reverse`? `reverse` plays the keyframes from 100% to 0% on every iteration. `alternate` plays 0%→100% on odd iterations and 100%→0% on even iterations, creating a ping-pong effect that is smoother for looping animations like pulses and breathes.
 
 ---
 
@@ -378,13 +378,13 @@ We return to game engines for the final module: Unity VFX Graph, Unreal Niagara,
 
 ## 📚 Further Reading
 
-- 🔗 [LottieFiles — Lottie Web Player Documentation](https://airbnb.io/lottie/#/web)
+- 🔗 [LottieFiles, Lottie Web Player Documentation](https://airbnb.io/lottie/#/web)
 - 🔗 [Rive Documentation](https://rive.app/community/doc/)
-- 🔗 [MDN Web Docs — CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
-- 🔗 [MDN Web Docs — prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
-- 📄 Brandon Withrow, "Lottie: Bringing Animations to Native Apps" (2017) — Airbnb Engineering Blog
-- 📄 Google Developers — "FLIP Your Animations: CSS Transforms vs JavaScript" (Paul Lewis)
+- 🔗 [MDN Web Docs, CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
+- 🔗 [MDN Web Docs, prefers-reduced-motion](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion)
+- 📄 Brandon Withrow, "Lottie: Bringing Animations to Native Apps" (2017), Airbnb Engineering Blog
+- 📄 Google Developers, "FLIP Your Animations: CSS Transforms vs JavaScript" (Paul Lewis)
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

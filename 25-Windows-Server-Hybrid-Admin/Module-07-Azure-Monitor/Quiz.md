@@ -78,7 +78,7 @@ D. AD replication monitoring
 
 ---
 
-### Q10. **Yes/No** — Mark each statement. *(Evaluate)*
+### Q10. **Yes/No**, Mark each statement. *(Evaluate)*
 
 **S1:** MMA was retired in August 2024.
 **S2:** A single DCR can be associated with many machines.
@@ -149,7 +149,7 @@ D. 3 → 1 → 2 → 4 → 5 → 6
 
 ### Q17. Application Insights data is stored in: *(Understand)*
 A. A separate Application Insights store
-B. A Log Analytics workspace (since 2023 — they merged)
+B. A Log Analytics workspace (since 2023, they merged)
 C. Cosmos DB
 D. Storage account
 
@@ -163,7 +163,7 @@ D. `select`
 
 ---
 
-### Q19. **Yes/No** — Mark each statement. *(Analyze)*
+### Q19. **Yes/No**, Mark each statement. *(Analyze)*
 
 **S1:** A metric alert can do a multi-table KQL JOIN.
 **S2:** Activity log alerts fire on data-plane events.
@@ -192,7 +192,7 @@ D. Network throughput
 
 ---
 
-### Q22. **Yes/No** — Mark each statement. *(Apply)*
+### Q22. **Yes/No**, Mark each statement. *(Apply)*
 
 **S1:** AMA can multi-home to multiple Log Analytics workspaces via multiple DCRs.
 **S2:** DCRs apply only to Azure VMs, not Arc machines.
@@ -276,7 +276,7 @@ The aggregation operator. Usually paired with `by` and `bin()`.
 Adds a computed column. `project` selects/excludes; `extend` adds.
 
 ### Q13: **A. KQL log + metric, Resource Graph, ARM, custom REST**
-Workbooks are versatile — combine many sources.
+Workbooks are versatile, combine many sources.
 
 ### Q14: **B. Billing applies against the QUERIED workspace**
 Cross-workspace queries are billed against the data's home workspace.
@@ -287,7 +287,7 @@ Action groups support many destinations.
 ### Q16: **A. 1 → 2 → 3 → 4 → 5 → 6**
 Workspace → DCR → policy assoc → remediate → alert → action group.
 
-### Q17: **B. A Log Analytics workspace (since 2023 — they merged)**
+### Q17: **B. A Log Analytics workspace (since 2023, they merged)**
 App Insights and Log Analytics merged. One data store, one query engine.
 
 ### Q18: **A. `where`**
@@ -297,7 +297,7 @@ Filter operator. Different from `having` (SQL) or `filter`.
 S1 wrong (metric alerts are simple thresholds, no joins). S2 wrong (activity log = control plane only). S3 correct.
 
 ### Q20: **C. Auxiliary**
-Auxiliary tier is ingestion-only — eDiscovery / forensic recall (cheap; can't query interactively).
+Auxiliary tier is ingestion-only, eDiscovery / forensic recall (cheap; can't query interactively).
 
 ### Q21: **B. Whether AMA is alive on the machine**
 Heartbeat is the canonical "is the agent reporting" signal.

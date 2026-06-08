@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Windows 11 Deployment & Imaging
 
-> **How to use:** Click any card to open a YouTube search for that topic — pick the top current result. Watch in order; follow along in the Intune admin center if you can.
+> **How to use:** Click any card to open a YouTube search for that topic, pick the top current result. Watch in order; follow along in the Intune admin center if you can.
 
 ## ⭐ Essential watching (~90 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Windows Autopilot Deep Dive — All 4 Modes</p>
+      <p class="vg-title">Windows Autopilot Deep Dive, All 4 Modes</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 30 min · The definitive Autopilot walkthrough</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Hardware Hash Collection — Manual + OEM</p>
+      <p class="vg-title">Hardware Hash Collection, Manual + OEM</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 20 min · The on-ramp to Autopilot</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Autopilot for Existing Devices — Migration Path</p>
+      <p class="vg-title">Autopilot for Existing Devices, Migration Path</p>
       <p class="vg-creator">Peter van der Woude</p>
       <span class="vg-duration">⏱ 22 min · Rebuild old fleet into Autopilot</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Hybrid Autopilot — The Intune Connector for AD</p>
+      <p class="vg-title">Hybrid Autopilot, The Intune Connector for AD</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 25 min · Domain join over the internet</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">MDT Task Sequence Tutorial — Reference Image</p>
+      <p class="vg-title">MDT Task Sequence Tutorial, Reference Image</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 20 min · Classic on-prem imaging</span>
     </div>

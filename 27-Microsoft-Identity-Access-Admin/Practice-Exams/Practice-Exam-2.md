@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — SC-300 (Second Half)
+# 🧪 Practice Exam 2, SC-300 (Second Half)
 
 > **Conditions:** Set a 95-minute timer. 50 questions. Treat it like the real thing.
 > **Pass mark:** 35/50 (≈ 70%, matching the real exam)
@@ -128,7 +128,7 @@ B. 50
 C. 100
 D. 250
 
-### 21. **Yes/No** — PIM mechanics.
+### 21. **Yes/No**, PIM mechanics.
 
 **S1:** An eligible user must complete MFA before activating most Entra roles.
 **S2:** PIM activation events are written to Entra audit logs.
@@ -181,7 +181,7 @@ B. `AZUREADSSOACC`
 C. `SeamlessSSO`
 D. `O365SSO`
 
-### 29. A scenario: "Multi-forest M&A — newly acquired forest has no trust to existing forest." Best fit:
+### 29. A scenario: "Multi-forest M&A, newly acquired forest has no trust to existing forest." Best fit:
 A. Entra Connect with forest trust
 B. Cloud Sync (supports multi-forest without trust)
 C. Federation
@@ -289,7 +289,7 @@ B. 2 → 3 → 1 → 4
 C. 4 → 3 → 2 → 1
 D. 3 → 2 → 4 → 1
 
-### 46. **Yes/No** — Sentinel & detections.
+### 46. **Yes/No**, Sentinel & detections.
 
 **S1:** Analytics rules in Sentinel are scheduled KQL queries that fire incidents.
 **S2:** SOAR playbooks are Logic Apps that auto-respond to incidents.
@@ -324,7 +324,7 @@ B. AuditLogs
 C. ProvisioningLogs
 D. RiskEvents
 
-### 50. **Yes/No** — Threat response & monitoring.
+### 50. **Yes/No**, Threat response & monitoring.
 
 **S1:** MFA alone defends against token theft (post-MFA refresh-token replay).
 **S2:** CAE shortens token revocation latency from ~1 hour to ~15 minutes.
@@ -358,7 +358,7 @@ D. No / No / Yes
 
 | Score | Verdict |
 |-------|---------|
-| 45–50 | 🏆 Excellent — ready for the Final Mock |
+| 45–50 | 🏆 Excellent, ready for the Final Mock |
 | 35–44 | ✅ On track. Review missed Qs, then take the Final Mock |
 | 25–34 | ⚠️ Re-study weak modules; re-quiz before Final Mock |
 | <25   | 🔁 Re-read Modules 5–8 carefully |
@@ -391,9 +391,9 @@ For EACH wrong answer:
 
 ## Detailed Answer Rationales
 
-**Q1. Answer: B.** App Registration is the recipe — the application's manifest/definition in the home tenant. *Wrong options.* **A** That's the Enterprise App. **C/D** Components, not the object.
+**Q1. Answer: B.** App Registration is the recipe, the application's manifest/definition in the home tenant. *Wrong options.* **A** That's the Enterprise App. **C/D** Components, not the object.
 
-**Q2. Answer: B.** Enterprise App is the dish — local service principal in this tenant. *Wrong options.* **A** That's the App Registration. **C/D** Different concepts.
+**Q2. Answer: B.** Enterprise App is the dish, local service principal in this tenant. *Wrong options.* **A** That's the App Registration. **C/D** Different concepts.
 
 **Q3. Answer: C.** OAuth = authz; OIDC = sign-in built on OAuth. Precise SC-300 answer.
 
@@ -429,7 +429,7 @@ For EACH wrong answer:
 
 **Q19. Answer: B.** Break-glass = active permanent + EXCLUDED from PIM (insurance against PIM outage).
 
-**Q20. Answer: A.** 0 — use PIM eligible-only is Microsoft's guidance.
+**Q20. Answer: A.** 0, use PIM eligible-only is Microsoft's guidance.
 
 **Q21. Answer: A.** S1 yes / S2 yes / S3 no (PIM for Groups manages MEMBERSHIP, not ownership).
 
@@ -437,7 +437,7 @@ For EACH wrong answer:
 
 **Q23. Answer: C.** PHS + Seamless SSO is Microsoft's 2026 preferred topology.
 
-**Q24. Answer: B.** PHS sends hash-of-hash, salted, 1,000 iterations — can't be reversed.
+**Q24. Answer: B.** PHS sends hash-of-hash, salted, 1,000 iterations, can't be reversed.
 
 **Q25. Answer: C.** ≥3 PTA agents for HA.
 
@@ -447,7 +447,7 @@ For EACH wrong answer:
 
 **Q28. Answer: B.** `AZUREADSSOACC` is the canonical name.
 
-**Q29. Answer: B.** Cloud Sync supports multi-forest WITHOUT trust — the major architectural win.
+**Q29. Answer: B.** Cloud Sync supports multi-forest WITHOUT trust, the major architectural win.
 
 **Q30. Answer: B.** Federation is being deprecated; PHS + Seamless SSO is the migration target.
 

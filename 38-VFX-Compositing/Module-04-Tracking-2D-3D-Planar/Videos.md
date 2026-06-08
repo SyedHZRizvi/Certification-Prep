@@ -1,8 +1,8 @@
 ---
-title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
+title: "Module 4 Videos: Tracking, 2D, 3D & Planar"
 ---
 
-# 📍 Module 4 Videos: Tracking — 2D, 3D & Planar
+# 📍 Module 4 Videos: Tracking, 2D, 3D & Planar
 
 ---
 
@@ -15,7 +15,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   <div class="vg-card-body">
     <div class="vg-card-title">After Effects 2D Tracker: One-Point and Two-Point Tracking</div>
     <div class="vg-card-meta">Video Copilot · ~16 min</div>
-    <div class="vg-card-desc">Complete guide to AE's built-in tracker — tracking features, applying motion data to Null objects, and attaching elements.</div>
+    <div class="vg-card-desc">Complete guide to AE's built-in tracker, tracking features, applying motion data to Null objects, and attaching elements.</div>
   </div>
 </a>
 
@@ -24,7 +24,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   <div class="vg-card-body">
     <div class="vg-card-title">Mocha AE Planar Tracking: Screen Replacement Tutorial</div>
     <div class="vg-card-meta">Boris FX / Surfaced Studio · ~20 min</div>
-    <div class="vg-card-desc">How to use Mocha AE's planar tracker for phone and monitor screen replacements — corner pin export back to After Effects.</div>
+    <div class="vg-card-desc">How to use Mocha AE's planar tracker for phone and monitor screen replacements, corner pin export back to After Effects.</div>
   </div>
 </a>
 
@@ -59,7 +59,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   <div class="vg-card-body">
     <div class="vg-card-title">Mocha Pro: Advanced Planar Tracking for VFX</div>
     <div class="vg-card-meta">Boris FX official · ~24 min</div>
-    <div class="vg-card-desc">Advanced Mocha Pro features — AdjustTrack, stabilize module, and tracking through occlusion for professional VFX work.</div>
+    <div class="vg-card-desc">Advanced Mocha Pro features, AdjustTrack, stabilize module, and tracking through occlusion for professional VFX work.</div>
   </div>
 </a>
 
@@ -68,7 +68,7 @@ title: "Module 4 Videos: Tracking — 2D, 3D & Planar"
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Camera Tracking: Free 3D Camera Solve Tutorial</div>
     <div class="vg-card-meta">Blender tutorial channel · ~22 min</div>
-    <div class="vg-card-desc">Complete Blender motion tracking workflow — placing markers, solving the camera, and rendering 3D elements for AE compositing.</div>
+    <div class="vg-card-desc">Complete Blender motion tracking workflow, placing markers, solving the camera, and rendering 3D elements for AE compositing.</div>
   </div>
 </a>
 

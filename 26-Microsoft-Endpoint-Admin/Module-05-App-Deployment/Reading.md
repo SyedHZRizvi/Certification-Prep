@@ -3,22 +3,22 @@
 > **Why this module matters:** MD-102 weighs application management at 10–15% but you'll see at least 5 questions about packaging, detection rules, dependencies, and supersedence. The exam loves "app stuck in Installing forever" troubleshooting scenarios. Get the Win32 packaging mental model right and these questions become trivial.
 
 > **Prerequisites for this module.** Before starting:
-> - Module 3 (Intune Fundamentals) — Settings Catalog, group targeting, RBAC.
-> - Module 4 (Enrollment & Compliance) — devices are enrolled; we're now pushing apps to them.
-> - Basic Windows command-line literacy — what `/quiet` and `/qn` flags do, why MSI vs EXE matters.
+> - Module 3 (Intune Fundamentals), Settings Catalog, group targeting, RBAC.
+> - Module 4 (Enrollment & Compliance), devices are enrolled; we're now pushing apps to them.
+> - Basic Windows command-line literacy, what `/quiet` and `/qn` flags do, why MSI vs EXE matters.
 
 ---
 
 ## 🍕 A Story: The Engineering App Rollout That Wasn't
 
-Maria's R&D team in San Diego needs a custom CAD application — call it **NorthwindCAD-2024.exe** — pushed to 53 engineering workstations. The product manager wants it on every engineer's machine by Friday. Tuesday morning Maria opens Intune, clicks **Apps → Add → Windows app (Win32)**, uploads the IntuneWin file, assigns it to the Engineering group, and goes to lunch.
+Maria's R&D team in San Diego needs a custom CAD application call it **NorthwindCAD-2024.exe** pushed to 53 engineering workstations. The product manager wants it on every engineer's machine by Friday. Tuesday morning Maria opens Intune, clicks **Apps → Add → Windows app (Win32)**, uploads the IntuneWin file, assigns it to the Engineering group, and goes to lunch.
 
 Friday morning. 53 devices. **17 show "Installed," 24 show "Installing," 8 show "Failed," 4 show "Not detected after install."** The product manager is furious. Maria spends the next day debugging:
 
-- The 24 "Installing" devices: she set the **detection rule to look for `C:\Program Files\NorthwindCAD\app.exe`** — but version 2024 installs to `C:\Program Files\NorthwindCAD-2024\app.exe`. The detection never fires.
+- The 24 "Installing" devices: she set the **detection rule to look for `C:\Program Files\NorthwindCAD\app.exe`**, but version 2024 installs to `C:\Program Files\NorthwindCAD-2024\app.exe`. The detection never fires.
 - The 8 "Failed" devices: the installer requires **Visual C++ Redistributable 2019** as a dependency, which she didn't include. She added it as a dependency relationship and it self-healed.
 - The 4 "Not detected after install": these are running an older v2023 version where install path differs again. She added a **supersedence** relationship from 2024 → 2023 to handle the upgrade.
-- One device shows "Failed" with error `0x80073CFE` — that's an MSI conflict because **another LOB app already installed v2024 to a different location**. She had to add an uninstall command for the old LOB version first.
+- One device shows "Failed" with error `0x80073CFE`, that's an MSI conflict because **another LOB app already installed v2024 to a different location**. She had to add an uninstall command for the old LOB version first.
 
 By Tuesday next week, 53/53 show "Installed." Maria has earned scars. This module gives you the scars without the customer-facing failures.
 
@@ -38,9 +38,9 @@ By Tuesday next week, 53/53 show "Installed." Maria has earned scars. This modul
 
 ---
 
-## 📦 Win32 App Packaging — The IntuneWinAppUtil Tool
+## 📦 Win32 App Packaging, The IntuneWinAppUtil Tool
 
-### Step 1 — Prepare your source folder
+### Step 1, Prepare your source folder
 
 ```
 C:\Source\NorthwindCAD\
@@ -50,7 +50,7 @@ C:\Source\NorthwindCAD\
 └── pre-install.ps1     ← optional pre-install script
 ```
 
-### Step 2 — Run IntuneWinAppUtil
+### Step 2, Run IntuneWinAppUtil
 
 ```cmd
 IntuneWinAppUtil.exe -c "C:\Source\NorthwindCAD" -s "setup.exe" -o "C:\Output"
@@ -63,7 +63,7 @@ This wraps everything in the source folder into a single `setup.intunewin` file 
 - Generates metadata (size, source path, version)
 - Names the output `<setup-file>.intunewin`
 
-### Step 3 — Upload to Intune
+### Step 3, Upload to Intune
 
 In Intune admin center → **Apps → Add → Windows app (Win32)** → upload `.intunewin`. You then configure:
 
@@ -78,7 +78,7 @@ In Intune admin center → **Apps → Add → Windows app (Win32)** → upload `
 
 ---
 
-## 🔍 Detection Rules — The Single Most Common Failure
+## 🔍 Detection Rules, The Single Most Common Failure
 
 Detection rules tell Intune **whether the app is already installed**. Without a working detection rule, Intune will:
 
@@ -90,10 +90,10 @@ Detection rules tell Intune **whether the app is already installed**. Without a 
 
 | Type | Use |
 |------|-----|
-| **MSI product code** | Best for MSI installers — pulled directly from the MSI metadata |
+| **MSI product code** | Best for MSI installers, pulled directly from the MSI metadata |
 | **File** | Check file exists at path, with optional version comparison |
 | **Registry** | Check registry key/value exists, with optional comparison |
-| **Custom script (PowerShell)** | Anything else — your script returns exit code 0 + stdout for "detected" |
+| **Custom script (PowerShell)** | Anything else, your script returns exit code 0 + stdout for "detected" |
 
 ### Custom detection script pattern
 
@@ -116,7 +116,7 @@ exit 1
 
 ---
 
-## 🔗 Dependencies — App A Requires App B First
+## 🔗 Dependencies, App A Requires App B First
 
 A dependency says "before this app installs, ensure App B is installed first." Intune handles it like a graph:
 
@@ -129,11 +129,11 @@ NorthwindCAD ──depends-on──> .NET Framework 4.8
 - Up to **100 dependencies** per Win32 app
 - Detection runs on dependencies first
 
-🎯 **Exam tip:** "App needs VC++ Redistributable first" = dependency relationship. Don't try to bundle it in the source folder — use the dependency feature so Intune tracks state.
+🎯 **Exam tip:** "App needs VC++ Redistributable first" = dependency relationship. Don't try to bundle it in the source folder, use the dependency feature so Intune tracks state.
 
 ---
 
-## 🔄 Supersedence — App A Replaces App B
+## 🔄 Supersedence, App A Replaces App B
 
 Supersedence says "this new app replaces these older apps." Intune handles it:
 
@@ -146,7 +146,7 @@ NorthwindCAD 2024 ──supersedes──> NorthwindCAD 2022 (uninstall before in
 - Maximum **two levels of supersedence depth**
 - Option per relationship: uninstall the old app before installing new, OR just update in place
 
-🚨 **Trap on the exam:** Supersedence has a **maximum depth of 2**. If you chain v2024 → v2023 → v2022 → v2021, that's depth 3 and won't work — flatten the chain.
+🚨 **Trap on the exam:** Supersedence has a **maximum depth of 2**. If you chain v2024 → v2023 → v2022 → v2021, that's depth 3 and won't work, flatten the chain.
 
 ---
 
@@ -157,7 +157,7 @@ NorthwindCAD 2024 ──supersedes──> NorthwindCAD 2022 (uninstall before in
 | Option | Effect |
 |--------|--------|
 | **System** | Runs as SYSTEM account (default for Win32) |
-| **User** | Runs in user context — needed for per-user installs |
+| **User** | Runs in user context, needed for per-user installs |
 
 ### Device restart behavior
 
@@ -182,7 +182,7 @@ You can map custom return codes to Success / Soft reboot / Hard reboot / Retry.
 
 ---
 
-## 📦 MSIX — The Modern Windows App Format
+## 📦 MSIX, The Modern Windows App Format
 
 **MSIX** is Microsoft's universal Windows app package format (replaces the old `.appx`). Benefits over MSI / Win32:
 
@@ -256,8 +256,8 @@ ACPs push per-app settings to managed apps. Two flavors:
 
 | Type | When |
 |------|------|
-| **Managed devices** (MDM channel) | Device is enrolled — settings push via OS MDM |
-| **Managed apps** (MAM channel) | App is APP-protected — settings push via APP |
+| **Managed devices** (MDM channel) | Device is enrolled, settings push via OS MDM |
+| **Managed apps** (MAM channel) | App is APP-protected, settings push via APP |
 
 Common settings pushed via ACP:
 
@@ -281,7 +281,7 @@ App categories are labels you create to organize the Company Portal app catalog.
 - "HR"
 - "Travel & Expenses"
 
-Users see categories as tabs in Company Portal. They don't affect functionality — purely UX.
+Users see categories as tabs in Company Portal. They don't affect functionality, purely UX.
 
 ---
 
@@ -290,7 +290,7 @@ Users see categories as tabs in Company Portal. They don't affect functionality 
 | Trap | Reality |
 |------|---------|
 | "Win32 and LOB are interchangeable" | ❌ LOB = simple MSI upload; Win32 = packaged with detection/dependencies/supersedence |
-| "Dependencies and supersedence are the same thing" | ❌ Different — one is prerequisite, other is replacement |
+| "Dependencies and supersedence are the same thing" | ❌ Different, one is prerequisite, other is replacement |
 | "Supersedence chains can be unlimited" | ❌ Max 2 levels deep, max 10 supersedences per app |
 | "App stuck in Installing = installer broken" | ❌ Almost always the detection rule |
 | "Required and Available do the same thing" | ❌ Required auto-installs; Available is user-pick |
@@ -311,7 +311,7 @@ The correct sequence:
 4. ✅ **Define install command** (e.g., `setup.exe /quiet`)
 5. ✅ **Define uninstall command** (e.g., `setup.exe /uninstall /quiet`)
 6. ✅ **Set requirements** (architecture, OS min ver, disk, memory)
-7. ✅ **Define detection rule** — test on a dev machine first
+7. ✅ **Define detection rule**, test on a dev machine first
 8. ✅ **Set dependencies** (e.g., VC++ Redist) and supersedence
 9. ✅ **Assign as Required** to pilot user group
 10. ✅ **Monitor install status** on pilot devices; debug detection issues
@@ -327,7 +327,7 @@ The correct sequence:
 | Term | Definition |
 |------|------------|
 | **Win32 app** | Intune's packaged-installer app type (`.intunewin`) |
-| **LOB app** | Line-of-business — raw MSI upload, no extras |
+| **LOB app** | Line-of-business, raw MSI upload, no extras |
 | **IntuneWinAppUtil.exe** | The Microsoft tool that wraps installers into `.intunewin` |
 | **Detection rule** | The check that tells Intune if the app is installed |
 | **Dependencies** | Other apps required before this app installs |
@@ -369,7 +369,7 @@ You now know:
 
 ---
 
-## 📊 Case Study — Walmart Win32 + MSIX Standardization (2022–2024)
+## 📊 Case Study, Walmart Win32 + MSIX Standardization (2022–2024)
 
 **Situation.** Walmart (2.1M associates globally, ~600,000 corporate-managed Windows endpoints, plus several hundred thousand store back-office devices) faced a long-standing app deployment fragmentation: store devices ran an MSI-based catalog managed by ConfigMgr; corporate devices were transitioning to Intune; back-office and supply chain had pockets of click-once and legacy InstallShield. The result was unpredictable upgrade behavior, slow deployment of critical updates (some apps took 90+ days to reach 90% of devices), and a high rate of "app stuck installing" tickets at the helpdesk.
 
@@ -391,12 +391,12 @@ You now know:
 - **Company Portal user satisfaction**: NPS for "I can find the app I need" rose from 32 to 71 after mandatory App Categories were enforced.
 - **Defender for Endpoint app-control rule violations**: dropped after every Win32 app was packaged with explicit detection + signature, since unmanaged installers became immediately distinguishable.
 
-**Lesson for the exam / for practitioners.** This is the textbook case for *why* MD-102 expects you to know detection rules cold and treat Win32 + detection + dependencies + supersedence as the canonical packaging model. The economic case is overwhelming: getting detection right means the difference between 9 days and 85 days for critical updates to reach 90% of fleet — a 9× improvement. When the exam describes "app stuck in installing forever" or "app reinstalls every cycle," the answer is almost always **detection rule misconfigured**, every time. The Walmart story is why.
+**Lesson for the exam / for practitioners.** This is the textbook case for *why* MD-102 expects you to know detection rules cold and treat Win32 + detection + dependencies + supersedence as the canonical packaging model. The economic case is overwhelming: getting detection right means the difference between 9 days and 85 days for critical updates to reach 90% of fleet, a 9× improvement. When the exam describes "app stuck in installing forever" or "app reinstalls every cycle," the answer is almost always **detection rule misconfigured**, every time. The Walmart story is why.
 
 **Discussion (Socratic).**
-- **Q1.** Walmart converted ~120 in-house apps to MSIX. A peer retailer's CTO argues "MSIX is solving a problem we don't have — MSI works fine." Defend the MSIX investment by naming the two specific operational scenarios (one per-user install, one upgrade cleanliness) where MSIX clearly wins.
+- **Q1.** Walmart converted ~120 in-house apps to MSIX. A peer retailer's CTO argues "MSIX is solving a problem we don't have, MSI works fine." Defend the MSIX investment by naming the two specific operational scenarios (one per-user install, one upgrade cleanliness) where MSIX clearly wins.
 - **Q2.** Walmart mandates pilot → broad → deferred for every Win32 app. A startup deploys to "all users" on day one. Defend the ring pattern by naming the one type of failure mode that almost always shows up first in pilot and would be devastating in broad.
-- **Q3.** Walmart's App Configuration Policies push tenant URL + branding to Edge + Outlook. A user privacy advocate asks "why push branding to Edge — is that surveillance?" Defend the ACP-pushed-branding pattern by naming the user-facing benefit that justifies the push.
+- **Q3.** Walmart's App Configuration Policies push tenant URL + branding to Edge + Outlook. A user privacy advocate asks "why push branding to Edge, is that surveillance?" Defend the ACP-pushed-branding pattern by naming the user-facing benefit that justifies the push.
 
 ---
 
@@ -407,7 +407,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Win32 vs LOB for simple MSI.** Microsoft technically supports uploading an MSI directly as LOB without wrapping. When would you wrap a simple MSI as Win32 anyway? Defend with reference to dependencies, detection, and the long-term maintainability picture.
 2. **MSIX adoption pace.** Microsoft has been pushing MSIX since 2018. Most enterprises have ~10% MSIX adoption in 2026. Defend why adoption is slow despite the technical advantages, and identify the one scenario where MSIX clearly justifies the migration effort.
@@ -419,7 +419,7 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Microsoft Learn — Win32 app management](https://learn.microsoft.com/mem/intune/apps/apps-win32-app-management) (Microsoft, current revision)
+- 📖 [Microsoft Learn, Win32 app management](https://learn.microsoft.com/mem/intune/apps/apps-win32-app-management) (Microsoft, current revision)
 - 📖 [Intune App Wrapping Tool overview](https://learn.microsoft.com/mem/intune/developer/apps-prepare-mobile-application-management)
 - 📖 [Win32 app dependencies and supersedence](https://learn.microsoft.com/mem/intune/apps/apps-win32-supersedence)
 - 📖 [App Configuration Policies for Intune](https://learn.microsoft.com/mem/intune/apps/app-configuration-policies-overview)

@@ -16,7 +16,7 @@ Ingest → Preprocess → Train → Eval gate → Register → Deploy (canary) �
 
 ## 🛤️ Vertex AI Pipelines
 
-- **Built on:** Kubeflow Pipelines v2 (KFP) — or TFX
+- **Built on:** Kubeflow Pipelines v2 (KFP), or TFX
 - **DAG:** containerized steps
 - **Tracking:** ML Metadata (MLMD) for artifacts + lineage
 - **Schedule:** PipelineJobSchedule with cron

@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — AWS Certified Machine Learning Specialty (MLS-C01)
+# 🧪 Practice Exam 2, AWS Certified Machine Learning Specialty (MLS-C01)
 
 > **Conditions:** Set an 80-minute timer. 30 questions. No notes.
-> **Pass mark for this practice exam:** 23/30 (~76%) — exam-realistic difficulty.
+> **Pass mark for this practice exam:** 23/30 (~76%), exam-realistic difficulty.
 > **When to take it:** After completing Modules 6–10.
 
 ---
@@ -179,7 +179,7 @@ D. AWS Config
 ### 29. The MOST common cause of "GPU sitting at 25% utilisation during training":
 A. Too much GPU memory
 B. Network bandwidth oversupply
-C. Data loader / I/O bottleneck — fix with more loader workers, FSx Lustre, Pipe mode
+C. Data loader / I/O bottleneck, fix with more loader workers, FSx Lustre, Pipe mode
 D. Too small a model
 
 ### 30. A team uses target encoding on a categorical feature applied to the ENTIRE dataset BEFORE splitting train/val. The MOST likely consequence:
@@ -205,65 +205,65 @@ D. Lower bias
 
 ## Detailed answer rationales
 
-**Q1. Answer: B — Comprehend Custom Classifier.** Managed AutoML for document classification; no MLOps overhead.
+**Q1. Answer: B, Comprehend Custom Classifier.** Managed AutoML for document classification; no MLOps overhead.
 
-**Q2. Answer: B — Comprehend Medical.** Medical NER (RxNorm, ICD-10) with HIPAA eligibility.
+**Q2. Answer: B, Comprehend Medical.** Medical NER (RxNorm, ICD-10) with HIPAA eligibility.
 
-**Q3. Answer: A — Translate + Custom Terminology.** Custom Terminology forces specific term translations for brand names.
+**Q3. Answer: A, Translate + Custom Terminology.** Custom Terminology forces specific term translations for brand names.
 
-**Q4. Answer: A — Textract `AnalyzeExpense`.** Purpose-built for invoices/receipts.
+**Q4. Answer: A, Textract `AnalyzeExpense`.** Purpose-built for invoices/receipts.
 
-**Q5. Answer: B — Lex.** Intent + slot model is canonical Lex; for tight predetermined flows.
+**Q5. Answer: B, Lex.** Intent + slot model is canonical Lex; for tight predetermined flows.
 
-**Q6. Answer: B — Bedrock KB + RetrieveAndGenerate.** Managed RAG for open-ended Q&A grounded in docs.
+**Q6. Answer: B, Bedrock KB + RetrieveAndGenerate.** Managed RAG for open-ended Q&A grounded in docs.
 
-**Q7. Answer: C — OpenSearch Serverless.** Default Bedrock KB vector store.
+**Q7. Answer: C, OpenSearch Serverless.** Default Bedrock KB vector store.
 
-**Q8. Answer: B — Bedrock Agent with action groups + KB.** Multi-step with tools requires Agent.
+**Q8. Answer: B, Bedrock Agent with action groups + KB.** Multi-step with tools requires Agent.
 
-**Q9. Answer: C — Batch Inference (~50% cheaper).** Cheapest mode for offline LLM workloads.
+**Q9. Answer: C, Batch Inference (~50% cheaper).** Cheapest mode for offline LLM workloads.
 
-**Q10. Answer: C — Contextual grounding check.** Verifies output is supported by retrieved KB content.
+**Q10. Answer: C, Contextual grounding check.** Verifies output is supported by retrieved KB content.
 
-**Q11. Answer: B — SageMaker Model Card.** Standard structured governance documentation.
+**Q11. Answer: B, SageMaker Model Card.** Standard structured governance documentation.
 
-**Q12. Answer: C — Clarify SHAP local.** Per-prediction feature attribution for regulatory explanations.
+**Q12. Answer: C, Clarify SHAP local.** Per-prediction feature attribution for regulatory explanations.
 
-**Q13. Answer: C — Walk-forward / expanding-window.** Never random K-fold on time series; future leakage.
+**Q13. Answer: C, Walk-forward / expanding-window.** Never random K-fold on time series; future leakage.
 
-**Q14. Answer: B — Data Quality monitor.** Watches input feature distributions against baseline.
+**Q14. Answer: B, Data Quality monitor.** Watches input feature distributions against baseline.
 
-**Q15. Answer: A — Shadow variant.** Mirrors traffic to new model without affecting user response.
+**Q15. Answer: A, Shadow variant.** Mirrors traffic to new model without affecting user response.
 
-**Q16. Answer: B — MME.** Many models per endpoint, loaded on demand.
+**Q16. Answer: B, MME.** Many models per endpoint, loaded on demand.
 
-**Q17. Answer: A — Monitor → EventBridge → Lambda → Pipeline.** Standard retrain-on-drift architecture.
+**Q17. Answer: A, Monitor → EventBridge → Lambda → Pipeline.** Standard retrain-on-drift architecture.
 
-**Q18. Answer: C — Hyperband.** Prunes losing trials early — best for DL with many epochs.
+**Q18. Answer: C Hyperband.** Prunes losing trials early best for DL with many epochs.
 
-**Q19. Answer: B — Recall (or F-beta β>1).** Recall = TP / (TP+FN); maximising it minimises FN.
+**Q19. Answer: B, Recall (or F-beta β>1).** Recall = TP / (TP+FN); maximising it minimises FN.
 
-**Q20. Answer: A — Bedrock Model Evaluation + ROUGE.** ROUGE is the canonical summarisation metric; Bedrock has built-in eval jobs.
+**Q20. Answer: A, Bedrock Model Evaluation + ROUGE.** ROUGE is the canonical summarisation metric; Bedrock has built-in eval jobs.
 
-**Q21. Answer: B — Custom IAM role + bucket policy.** Defence in depth — least privilege on both identity and resource.
+**Q21. Answer: B Custom IAM role + bucket policy.** Defence in depth least privilege on both identity and resource.
 
-**Q22. Answer: B — `enable_network_isolation=True` + private no-NAT subnet.** The strongest isolation pattern.
+**Q22. Answer: B, `enable_network_isolation=True` + private no-NAT subnet.** The strongest isolation pattern.
 
-**Q23. Answer: A — S3 Standard.** Hot training data accessed weekly = Standard. Glacier classes have retrieval delays.
+**Q23. Answer: A, S3 Standard.** Hot training data accessed weekly = Standard. Glacier classes have retrieval delays.
 
-**Q24. Answer: B — PrivateLink + Direct Connect.** Standard pattern for on-prem-only endpoint access.
+**Q24. Answer: B, PrivateLink + Direct Connect.** Standard pattern for on-prem-only endpoint access.
 
-**Q25. Answer: B — Lifecycle Configuration + idle shutdown.** The built-in mechanism for Studio spaces.
+**Q25. Answer: B, Lifecycle Configuration + idle shutdown.** The built-in mechanism for Studio spaces.
 
-**Q26. Answer: A — AWS Config rule.** Continuous compliance check across resources.
+**Q26. Answer: A, AWS Config rule.** Continuous compliance check across resources.
 
-**Q27. Answer: C — Async inference.** Designed for large payloads (1 GB) and long jobs (up to 1 h).
+**Q27. Answer: C, Async inference.** Designed for large payloads (1 GB) and long jobs (up to 1 h).
 
-**Q28. Answer: B — AWS X-Ray.** Distributed tracing across multiple services.
+**Q28. Answer: B, AWS X-Ray.** Distributed tracing across multiple services.
 
-**Q29. Answer: C — Data loader I/O bottleneck.** GPU starved by slow data delivery. Fix with workers, FSx, Pipe mode.
+**Q29. Answer: C, Data loader I/O bottleneck.** GPU starved by slow data delivery. Fix with workers, FSx, Pipe mode.
 
-**Q30. Answer: B — Target leakage; inflated metrics.** Target encoding must be computed inside CV folds to avoid leakage.
+**Q30. Answer: B, Target leakage; inflated metrics.** Target encoding must be computed inside CV folds to avoid leakage.
 
 ---
 

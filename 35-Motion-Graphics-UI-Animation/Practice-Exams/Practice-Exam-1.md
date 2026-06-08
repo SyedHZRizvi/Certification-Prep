@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Practice-Exams/Practice-Exam-1/
 title: "Practice Exam 1: Motion Design Foundations (Modules 1–5)"
 ---
 
-# 🧪 Practice Exam 1 — Motion Design Foundations
+# 🧪 Practice Exam 1, Motion Design Foundations
 
 **Covers:** Modules 1–5 (Principles, Expressions, Typography, Logo Motion, Infographics)  
 **Time:** 40 minutes  
@@ -55,10 +55,10 @@ D. Lines reveal from top to bottom
 ### 5.
 The Blur > Scale > Opacity text reveal is characterized by which starting state of Scale (in the "hidden" position)?
 
-A. 50% — characters start smaller and grow to full size  
-B. 100% — characters start at normal size  
-C. 120% or similar — characters start slightly oversized and deflate to final size  
-D. 0% — characters scale from invisible  
+A. 50%, characters start smaller and grow to full size  
+B. 100%, characters start at normal size  
+C. 120% or similar, characters start slightly oversized and deflate to final size  
+D. 0%, characters scale from invisible  
 
 ---
 
@@ -68,7 +68,7 @@ When should `ease-in` be applied to an element's animation?
 A. When the element enters the screen  
 B. When the element moves across the screen  
 C. When the element exits the screen  
-D. Always — ease-in is the default AE easing  
+D. Always, ease-in is the default AE easing  
 
 ---
 
@@ -117,7 +117,7 @@ Netflix's N ident uses which primary reveal technique?
 
 A. Draw-on trace along the N paths  
 B. Shape morph from a circle to the N letterform  
-C. Z-axis layered depth reveal — strips separate in 3D space before collapsing to 2D  
+C. Z-axis layered depth reveal, strips separate in 3D space before collapsing to 2D  
 D. Classic 3D Y-axis flip  
 
 ---
@@ -165,7 +165,7 @@ D. Stroke Effect with animated End property
 ### 16.
 AEJuice presets used in a client project should always be:
 
-A. Used as-is — they are designed for professional delivery  
+A. Used as-is, they are designed for professional delivery  
 B. Customized (timing, color, typography) before delivery; unmodified presets are immediately recognizable  
 C. Only used if the client owns an AEJuice license  
 D. Limited to 5 presets per project  
@@ -247,7 +247,7 @@ The `loopOut("continue")` expression:
 
 A. Loops keyframes by repeating them cyclically  
 B. Plays keyframes forward then backward  
-C. Continues the velocity of the last keyframe indefinitely (no loop — continuous drift)  
+C. Continues the velocity of the last keyframe indefinitely (no loop, continuous drift)  
 D. Continues playing the first keyframe value forever  
 
 ---
@@ -307,7 +307,7 @@ Which statement about "royalty-free" music is correct?
 
 A. Royalty-free music is always free to use commercially  
 B. Royalty-free music requires no credit in video descriptions  
-C. Royalty-free means you pay once and don't owe per-use royalties — but a license fee is required and terms must be followed  
+C. Royalty-free means you pay once and don't owe per-use royalties, but a license fee is required and terms must be followed  
 D. Royalty-free music can be re-sold to third parties  
 
 ---
@@ -315,63 +315,63 @@ D. Royalty-free music can be re-sold to third parties
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1:  B — Squash and Stretch. Objects elongate in motion direction (stretch) and compress on impact (squash). Volume is preserved.
+1:  B, Squash and Stretch. Objects elongate in motion direction (stretch) and compress on impact (squash). Volume is preserved.
 
-2:  C — cubic-bezier(0, 0, 0.58, 1) = ease-out. Fast start, slow finish.
+2:  C, cubic-bezier(0, 0, 0.58, 1) = ease-out. Fast start, slow finish.
 
-3:  C — loopOut("offset") adds the delta (80px) each loop. After 2 loops: 160px. It drifts infinitely.
+3:  C, loopOut("offset") adds the delta (80px) each loop. After 2 loops: 160px. It drifts infinitely.
 
-4:  B — Based On: Words causes each word to animate as a unit. The Offset sweep still goes left to right, but reveals whole words at a time.
+4:  B, Based On: Words causes each word to animate as a unit. The Offset sweep still goes left to right, but reveals whole words at a time.
 
-5:  C — 120% (or similar value above 100%). Characters start oversized and "deflate" to final size — the impression of arriving from "above."
+5:  C, 120% (or similar value above 100%). Characters start oversized and "deflate" to final size, the impression of arriving from "above."
 
-6:  C — ease-in for exits: elements accelerate as they leave the screen, matching the physics of something departing.
+6:  C, ease-in for exits: elements accelerate as they leave the screen, matching the physics of something departing.
 
-7:  B — The `time + index * 50` parameter de-syncs each layer's wiggle by offsetting the noise sample time. Each layer produces a unique wiggle pattern.
+7:  B, The `time + index * 50` parameter de-syncs each layer's wiggle by offsetting the noise sample time. Each layer produces a unique wiggle pattern.
 
-8:  B — Layer B mirrors Layer A's position with a 0.25-second delay (lag). Not future-looking — it samples the past.
+8:  B, Layer B mirrors Layer A's position with a 0.25-second delay (lag). Not future-looking, it samples the past.
 
-9:  B — Trim Paths End: 0% = nothing visible, 100% = full path visible. Animating End from 0 to 100 draws the path on progressively.
+9:  B, Trim Paths End: 0% = nothing visible, 100% = full path visible. Animating End from 0 to 100 draws the path on progressively.
 
-10: C — Same number of anchor points. AE maps Point 1 to Point 1. Mismatched counts cause tearing during morph.
+10: C, Same number of anchor points. AE maps Point 1 to Point 1. Mismatched counts cause tearing during morph.
 
-11: C — The N ident uses Z-axis depth layers that separate in 3D before snapping flat. Not a draw-on or a Y-axis flip.
+11: C, The N ident uses Z-axis depth layers that separate in 3D before snapping flat. Not a draw-on or a Y-axis flip.
 
-12: C — Broadcast legal: 16–235 luminance range (0–255 scale). Values outside this can cause signal issues in broadcast transmission.
+12: C, Broadcast legal: 16–235 luminance range (0–255 scale). Values outside this can cause signal issues in broadcast transmission.
 
-13: C — Rec. 709 (BT.709) is the HD broadcast color standard. sRGB is for web; Adobe RGB is for print/photography.
+13: C, Rec. 709 (BT.709) is the HD broadcast color standard. sRGB is for web; Adobe RGB is for print/photography.
 
-14: B — 2:1 ratio (bar twice as wide as gap). Standard data visualization best practice for bar charts.
+14: B, 2:1 ratio (bar twice as wide as gap). Standard data visualization best practice for bar charts.
 
-15: C — Trim Paths End: 0% → 100% progressively reveals the line path from start to end — the line "draws" across the chart.
+15: C, Trim Paths End: 0% → 100% progressively reveals the line path from start to end, the line "draws" across the chart.
 
-16: B — Always customize AEJuice presets. Unmodified presets are immediately identifiable to experienced viewers.
+16: B, Always customize AEJuice presets. Unmodified presets are immediately identifiable to experienced viewers.
 
-17: C — 2/3 mark. First 1/3 = context; middle 1/3 = data change; 2/3 mark = insight reveal; final 1/3 = absorption time.
+17: C, 2/3 mark. First 1/3 = context; middle 1/3 = data change; 2/3 mark = insight reveal; final 1/3 = absorption time.
 
-18: B — ease() creates smooth (ease-in-out) transition from 0 to 100 over the first 2 seconds, then holds at 100.
+18: B, ease() creates smooth (ease-in-out) transition from 0 to 100 over the first 2 seconds, then holds at 100.
 
-19: B — Staging: one primary motion at a time. The viewer's eye needs a single focus at every moment.
+19: B, Staging: one primary motion at a time. The viewer's eye needs a single focus at every moment.
 
-20: B — index returns the layer's position in the layer stack. 1 = topmost layer. Used for per-layer offsets.
+20: B, index returns the layer's position in the layer stack. 1 = topmost layer. Used for per-layer offsets.
 
-21: B — Tone of Motion: audio emotional quality should match (or deliberately contrast) animation vocabulary.
+21: B, Tone of Motion: audio emotional quality should match (or deliberately contrast) animation vocabulary.
 
-22: B — Correct syntax: thisComp.layer("CTRL").effect("Speed")("Slider")
+22: B, Correct syntax: thisComp.layer("CTRL").effect("Speed")("Slider")
 
-23: A — Title Safe: 80%, Action Safe: 93.75%. These are the broadcast standard zone percentages.
+23: A, Title Safe: 80%, Action Safe: 93.75%. These are the broadcast standard zone percentages.
 
-24: C — loopOut("continue") continues the velocity of the last keyframe forever — it doesn't repeat, it continues. Creates infinite drift in one direction.
+24: C, loopOut("continue") continues the velocity of the last keyframe forever, it doesn't repeat, it continues. Creates infinite drift in one direction.
 
-25: B — Google's canonical order: Blue, Red, Yellow, Green.
+25: B, Google's canonical order: Blue, Red, Yellow, Green.
 
-26: B — Layer > Create > Create Shapes from Vector Layer. This converts Illustrator artwork to editable AE shape layers.
+26: B, Layer > Create > Create Shapes from Vector Layer. This converts Illustrator artwork to editable AE shape layers.
 
-27: B — Ease High controls the softness of the transition at the high end of the Range Selector's affected range.
+27: B, Ease High controls the softness of the transition at the high end of the Range Selector's affected range.
 
-28: B — Follow-Through and Overlapping Action: parts stop at different times. Staggered exits are the motion graphics translation.
+28: B, Follow-Through and Overlapping Action: parts stop at different times. Staggered exits are the motion graphics translation.
 
-29: C — index. Each cell has a unique index (1–100) which is used to calculate its unique animation delay.
+29: C, index. Each cell has a unique index (1–100) which is used to calculate its unique animation delay.
 
-30: C — Royalty-free: one-time fee, no per-use royalties. Not free to use. Terms must still be read and followed.
+30: C, Royalty-free: one-time fee, no per-use royalties. Not free to use. Terms must still be read and followed.
 ```

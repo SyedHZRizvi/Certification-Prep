@@ -9,16 +9,16 @@ title: "Module 10 Cheat Sheet: Short Film Project"
 
 ## Production Phase Order
 
-1. **Pre-production** — Concept sheet, storyboard, animatic (VSE)
-2. **Modeling** — Quads, edge loops, UV unwrap, scale applied
-3. **Materials** — PBR or stylized; no missing materials
-4. **Rigging** — Rigify, auto weights, facial shape keys
-5. **Skinning** — Weight painting corrections, corrective shape keys
-6. **Animation** — Blocking (Constant) → spline polish (Bezier)
-7. **Lighting** — Three-point + HDRI per shot
-8. **Rendering** — Cycles, PNG sequences, bake physics first
-9. **Compositing** — Color grade, Glare, combine passes
-10. **Delivery** — H.264 MP4, CRF 18–23, 1920×1080, 24fps
+1. **Pre-production**, Concept sheet, storyboard, animatic (VSE)
+2. **Modeling**, Quads, edge loops, UV unwrap, scale applied
+3. **Materials**, PBR or stylized; no missing materials
+4. **Rigging**, Rigify, auto weights, facial shape keys
+5. **Skinning**, Weight painting corrections, corrective shape keys
+6. **Animation**, Blocking (Constant) → spline polish (Bezier)
+7. **Lighting**, Three-point + HDRI per shot
+8. **Rendering**, Cycles, PNG sequences, bake physics first
+9. **Compositing**, Color grade, Glare, combine passes
+10. **Delivery**, H.264 MP4, CRF 18–23, 1920×1080, 24fps
 
 ---
 
@@ -144,7 +144,7 @@ For a 10-second solo project, match *Coffee Run* scale: 1 character, 1 set, 4–
 | Exposure | 0 | Neutral; adjust in Compositor |
 | Gamma | 1.0 | Neutral |
 
-**Never use Standard view transform** — clips bright values to white; looks CG and flat.
+**Never use Standard view transform**, clips bright values to white; looks CG and flat.
 
 ---
 

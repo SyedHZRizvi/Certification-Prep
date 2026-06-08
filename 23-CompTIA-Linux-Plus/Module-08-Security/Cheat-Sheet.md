@@ -38,7 +38,7 @@ ps -eZ                                     # process contexts
 id -Z                                      # YOUR context
 ```
 
-Context = `user:role:type:level` — `type` is what policy cares about.
+Context = `user:role:type:level`, `type` is what policy cares about.
 
 ### Persistent label fix (the right way)
 ```bash
@@ -110,7 +110,7 @@ mount /dev/mapper/mydata /srv/encrypted
 # Persist
 echo "mydata UUID=abc-123 none luks" >> /etc/crypttab
 echo "/dev/mapper/mydata /srv/encrypted ext4 defaults 0 2" >> /etc/fstab
-dracut -f       # RHEL — REBUILD INITRAMFS
+dracut -f       # RHEL, REBUILD INITRAMFS
 # OR
 update-initramfs -u    # Debian
 
@@ -225,7 +225,7 @@ fs.suid_dumpable = 0
 
 ---
 
-## 🔐 SSH Hardening — The Core 10
+## 🔐 SSH Hardening, The Core 10
 
 ```
 Port 22                                    # or non-standard

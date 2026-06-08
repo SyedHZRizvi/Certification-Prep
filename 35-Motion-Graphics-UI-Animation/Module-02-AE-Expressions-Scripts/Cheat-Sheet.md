@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-02-AE-Expressions-Scripts/Che
 title: "Module 2 Cheat Sheet: AE Expressions & Scripts"
 ---
 
-# ⚡ Module 2 Cheat Sheet — AE Expressions & Scripts
+# ⚡ Module 2 Cheat Sheet, AE Expressions & Scripts
 
 ## How to Add an Expression
 `Option+Click` (Mac) / `Alt+Click` (Windows) the property stopwatch.
@@ -162,7 +162,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

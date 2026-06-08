@@ -217,7 +217,7 @@ D. Compressed data
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. The customer**
-On EC2 (IaaS), the customer is responsible for everything ABOVE the hypervisor — including OS patching. AWS only patches the hypervisor and hardware.
+On EC2 (IaaS), the customer is responsible for everything ABOVE the hypervisor, including OS patching. AWS only patches the hypervisor and hardware.
 
 ### Q2: **A. AWS**
 Physical security of data centers is unambiguously AWS's responsibility (security OF the cloud).
@@ -226,7 +226,7 @@ Physical security of data centers is unambiguously AWS's responsibility (securit
 The two cornerstone IAM best practices. Never share creds, never use root for daily work.
 
 ### Q4: **B. Attach an IAM Role to the EC2 instance with the right S3 permissions**
-Roles deliver temporary credentials via instance metadata — no long-lived access keys to leak.
+Roles deliver temporary credentials via instance metadata, no long-lived access keys to leak.
 
 ### Q5: **B. Deny wins (explicit deny always wins)**
 Fundamental IAM rule: explicit Deny overrides any Allow. Implicit deny (no rule) loses to explicit Allow.
@@ -274,7 +274,7 @@ Security Hub aggregates findings from GuardDuty, Inspector, Macie, partner tools
 Artifact is the self-service portal for downloading AWS compliance reports (SOC, ISO, PCI, FedRAMP, etc.).
 
 ### Q20: **B. Apply guardrails across multiple AWS accounts**
-SCPs set the maximum permissions for accounts/OUs. They don't grant access — they cap it.
+SCPs set the maximum permissions for accounts/OUs. They don't grant access, they cap it.
 
 ### Q21: **B. Be locked down with MFA and used only for a small set of account-level tasks**
 Best practice: MFA on root, no programmatic access keys, used only for tasks like billing or closing the account.
@@ -283,7 +283,7 @@ Best practice: MFA on root, no programmatic access keys, used only for tasks lik
 Identity Center provides federated SSO across multiple AWS accounts + many SaaS apps, integrating with Active Directory / Okta / Entra ID.
 
 ### Q23: **C. Granting permissions to database users + securing the data inside**
-RDS is PaaS — AWS handles OS / engine binaries / hardware. The customer handles users, schema, and data access.
+RDS is PaaS, AWS handles OS / engine binaries / hardware. The customer handles users, schema, and data access.
 
 ### Q24: **B. A service that helps continuously audit AWS usage for compliance**
 Audit Manager automates evidence collection for compliance frameworks (PCI, HIPAA, SOC, etc.).
@@ -301,7 +301,7 @@ Detective uses ML and graph analysis to help you investigate the root cause of s
 - 25–26 → 🏆 Security pro. The biggest exam domain is locked in.
 - 22–24 → ✅ Solid. Review wrong answers.
 - 18–21 → ⚠️ Re-read Shared Responsibility + service catalog table.
-- <18 → 🔁 Restart Module 6 — this is 30% of the exam, don't skimp.
+- <18 → 🔁 Restart Module 6, this is 30% of the exam, don't skimp.
 
 ---
 

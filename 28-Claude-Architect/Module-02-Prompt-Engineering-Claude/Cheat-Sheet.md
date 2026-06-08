@@ -64,7 +64,7 @@ Style: **lower_snake_case** is what the training data overwhelmingly uses.
 3. Match input format **exactly** (messy in / messy in)
 4. Match desired output format **exactly**
 5. For classification with abstention, include an **"unknown" example**
-6. Order matters — most canonical first
+6. Order matters, most canonical first
 
 ---
 
@@ -77,7 +77,7 @@ Style: **lower_snake_case** is what the training data overwhelmingly uses.
 | System auth | Strong | Stronger (trained to outrank user) |
 | Stop param | `stop` | `stop_sequences` (plural) |
 | "Reason out loud" | "Let's think step by step" | `<thinking>` + prefill |
-| "Human:/Assistant:" markers | N/A | **Retired with Completions API — do not use** |
+| "Human:/Assistant:" markers | N/A | **Retired with Completions API, do not use** |
 
 ---
 
@@ -91,7 +91,7 @@ Style: **lower_snake_case** is what the training data overwhelmingly uses.
 6. **Prefill** the response
 7. Chain prompts for complex flows
 8. Long-context: question AT THE END
-9. Avoid hallucination — "if unknown, say so"
+9. Avoid hallucination, "if unknown, say so"
 10. Iterate with Workbench prompt generator
 
 ---
@@ -102,7 +102,7 @@ Style: **lower_snake_case** is what the training data overwhelmingly uses.
 - Each document in its own `<document>` tag with `id` attribute
 - Explicit citation format: `[doc:N, line:M]` or similar
 - Tell Claude "only use information in `<document>` tags"
-- 200K is *working memory*, not *corporate memory* — still use RAG for big corpora
+- 200K is *working memory*, not *corporate memory*, still use RAG for big corpora
 
 ---
 
@@ -114,7 +114,7 @@ Style: **lower_snake_case** is what the training data overwhelmingly uses.
 | 5K stable | $0.015/call | $0.0015/call |
 | 50K stable | $0.150/call | $0.015/call |
 
-Cache TTL: **~5 minutes** (Anthropic-managed; renews on hit). For low-traffic prompts, you may rarely hit cache — design accordingly.
+Cache TTL: **~5 minutes** (Anthropic-managed; renews on hit). For low-traffic prompts, you may rarely hit cache, design accordingly.
 
 ---
 

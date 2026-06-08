@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Knowledge Bases for Amazon Bedrock — End-to-End Demo</p>
+      <p class="vg-title">Knowledge Bases for Amazon Bedrock, End-to-End Demo</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 18 min · The exam's reference RAG architecture</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Bedrock Agents — Plan, Reason, and Call APIs</p>
+      <p class="vg-title">Bedrock Agents, Plan, Reason, and Call APIs</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 20 min · Action groups, ReAct loop, KBs</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Injection &amp; Jailbreaking — LLM Security 101</p>
+      <p class="vg-title">Prompt Injection &amp; Jailbreaking, LLM Security 101</p>
       <p class="vg-creator">IBM Technology / OWASP</p>
       <span class="vg-duration">⏱ 12 min · Direct, indirect, defenses</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Hybrid Search — Vector + Keyword Together</p>
+      <p class="vg-title">Hybrid Search, Vector + Keyword Together</p>
       <p class="vg-creator">AWS OpenSearch</p>
       <span class="vg-duration">⏱ 12 min · Why pure semantic isn't enough</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ReAct Prompting — Reason &amp; Act</p>
+      <p class="vg-title">ReAct Prompting, Reason &amp; Act</p>
       <p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 14 min · Agentic loops explained</span>
     </div>

@@ -32,7 +32,7 @@ D. HTML-Lightning Connector
 
 ### Q4. The Lightning Network's onion routing protocol is based on: *(Remember)*
 A. Tor onion routing
-B. Sphinx (Danezis & Goldberg, 2009 — adapted)
+B. Sphinx (Danezis & Goldberg, 2009, adapted)
 C. SSL/TLS handshake
 D. IPSec tunnel
 
@@ -40,7 +40,7 @@ D. IPSec tunnel
 
 ### Q5. SegWit was a PREREQUISITE for Lightning because it: *(Apply)*
 A. Reduced fees
-B. Fixed transaction malleability — TxIDs no longer depend on signature shape, so off-chain commitment txs are usable
+B. Fixed transaction malleability, TxIDs no longer depend on signature shape, so off-chain commitment txs are usable
 C. Doubled block size
 D. Activated Schnorr
 
@@ -56,7 +56,7 @@ D. Geth, Erigon, Nethermind
 
 ### Q7. A custodial Lightning wallet (Wallet of Satoshi, Strike, Cash App): *(Apply)*
 A. Provides self-custody equivalent to a hardware wallet
-B. Is a custodial service — the provider holds keys; same risk class as a centralized exchange
+B. Is a custodial service, the provider holds keys; same risk class as a centralized exchange
 C. Is the only way to use Lightning
 D. Requires running a full node
 
@@ -80,7 +80,7 @@ D. Storing private keys
 
 ### Q10. A channel's "inbound liquidity" refers to: *(Understand)*
 A. Total capacity
-B. The portion of channel capacity on the OTHER side — available for the user to receive
+B. The portion of channel capacity on the OTHER side, available for the user to receive
 C. Mining hashrate
 D. Transaction fees paid
 
@@ -104,7 +104,7 @@ D. November 14, 2021
 
 ### Q13. Channel jamming is best described as: *(Apply)*
 A. Mining attack
-B. Attacker opens many HTLCs that never resolve, tying up the victim's channel liquidity — currently Lightning's most-discussed open attack
+B. Attacker opens many HTLCs that never resolve, tying up the victim's channel liquidity, currently Lightning's most-discussed open attack
 C. A 51% attack on Lightning
 D. Routing slowdown
 
@@ -184,17 +184,17 @@ D. A consensus rule
 
 ### Q23. The BOLT-12 specification adds: *(Apply)*
 A. Mining changes
-B. Reusable invoices ("offers") — replacing BOLT-11's single-use invoices
+B. Reusable invoices ("offers"), replacing BOLT-11's single-use invoices
 C. Schnorr verification
 D. A new consensus rule
 
 ---
 
 ### Q24. A board asks: "Is Lightning ready for production at $100M/month corridor volume?" Strongest reasoned reply: *(Evaluate)*
-A. No — Lightning is theoretical
-B. Yes — Lightning has been processing significant production volume since 2021; Strike, Cash App, and Wallet of Satoshi collectively process large monthly USD-corridor volumes; the design has known open problems (channel jamming) but the success cases are demonstrated
-C. Yes — Lightning has perfect uptime and no open problems
-D. No — Lightning is only for retail
+A. No, Lightning is theoretical
+B. Yes, Lightning has been processing significant production volume since 2021; Strike, Cash App, and Wallet of Satoshi collectively process large monthly USD-corridor volumes; the design has known open problems (channel jamming) but the success cases are demonstrated
+C. Yes, Lightning has perfect uptime and no open problems
+D. No, Lightning is only for retail
 
 ---
 
@@ -209,7 +209,7 @@ Lightning is built on regular Bitcoin transactions. Not a sidechain, not a separ
 ### Q3: **A. Hash Time-Locked Contract**
 The cryptographic mechanism: hash preimage + timeout.
 
-### Q4: **B. Sphinx (Danezis & Goldberg, 2009 — adapted)**
+### Q4: **B. Sphinx (Danezis & Goldberg, 2009, adapted)**
 The same packet construction Tor uses, with Lightning-specific adaptations.
 
 ### Q5: **B. Fixed transaction malleability**
@@ -218,8 +218,8 @@ Pre-SegWit, a third party could reshape the signature → different TxID → bre
 ### Q6: **A. lnd, Core Lightning (CLN), Eclair**
 Lightning Labs (Go), Blockstream (C), ACINQ (Scala). The three production implementations.
 
-### Q7: **B. Is a custodial service — same risk class as a centralized exchange**
-Convenient, fast, mobile-friendly — but you're trusting the operator. Not equivalent to self-custody.
+### Q7: **B. Is a custodial service, same risk class as a centralized exchange**
+Convenient, fast, mobile-friendly, but you're trusting the operator. Not equivalent to self-custody.
 
 ### Q8: **B. The standard invoice format**
 `lnbc1pjk...` strings. BOLT-12 (Offers) is the newer alternative.
@@ -228,7 +228,7 @@ Convenient, fast, mobile-friendly — but you're trusting the operator. Not equi
 A user goes offline; counterparty might broadcast an old commitment. Watchtower triggers the penalty.
 
 ### Q10: **B. The portion of channel capacity on the OTHER side**
-If a channel has 10 BTC capacity and 9 BTC is on the counterparty's side, you have 9 BTC of inbound — you can receive up to that much.
+If a channel has 10 BTC capacity and 9 BTC is on the counterparty's side, you have 9 BTC of inbound, you can receive up to that much.
 
 ### Q11: **B. Add or remove funds from an existing channel without closing it**
 Deployed 2024+. The most-important UX improvement for liquidity management since the initial Lightning launch.
@@ -269,7 +269,7 @@ One of several. Specific watchtower implementations vary; "Eye of Satoshi" is am
 ### Q23: **B. Reusable invoices ("offers")**
 BOLT-12 replaces single-use BOLT-11 invoices with reusable, machine-discoverable offers. Better for merchants.
 
-### Q24: **B. Yes — Lightning has been processing significant production volume since 2021**
+### Q24: **B. Yes, Lightning has been processing significant production volume since 2021**
 The honest answer. Known open problems exist (channel jamming); successful production deployments also exist.
 
 ---

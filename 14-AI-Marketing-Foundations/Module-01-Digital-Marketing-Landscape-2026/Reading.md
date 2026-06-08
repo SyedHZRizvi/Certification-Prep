@@ -1,13 +1,13 @@
 # Module 1: The Digital Marketing Landscape 2026 🗺️
 
-> **Why this module matters:** You cannot be a credible AI marketer in 2026 without first knowing what AI is *changing*. This module is the map — the channels, the taxonomy, the funnel, the platforms, and the seismic shifts (AI Overviews, cookie deprecation, walled gardens) that every other module of this course will reference.
+> **Why this module matters:** You cannot be a credible AI marketer in 2026 without first knowing what AI is *changing*. This module is the map, the channels, the taxonomy, the funnel, the platforms, and the seismic shifts (AI Overviews, cookie deprecation, walled gardens) that every other module of this course will reference.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Basic business literacy: revenue, margin, conversion, customer lifetime
 > - General internet fluency: search engines, social platforms, email
 > - Comfort with simple ratios (LTV ÷ CAC, revenue ÷ spend)
 >
-> No prior digital-marketing certification is required — this module is the foundation the rest of the course builds on. If terms like "funnel," "ROAS," or "walled garden" are new, that's fine; the module defines each one. If you've completed a basic marketing course (HubSpot Academy Inbound, Google Digital Garage, or an MBA marketing module), skim quickly and use this as a refresher on 2026-specific shifts.
+> No prior digital-marketing certification is required, this module is the foundation the rest of the course builds on. If terms like "funnel," "ROAS," or "walled garden" are new, that's fine; the module defines each one. If you've completed a basic marketing course (HubSpot Academy Inbound, Google Digital Garage, or an MBA marketing module), skim quickly and use this as a refresher on 2026-specific shifts.
 
 ---
 
@@ -19,17 +19,17 @@ On paper, Constant Contact had everything: more features, more sales reps, more 
 
 Then Mailchimp did three things that defined modern digital marketing:
 
-1. **They published content** — really good content — for free. Their blog became a small-business marketing textbook. Constant Contact published press releases.
-2. **They invested in product-led growth** — the free tier let anyone try the product without talking to a salesperson. Constant Contact required a "demo."
-3. **They treated their dashboard like media** — every send produced charts users *wanted to share* on social. Constant Contact's reports felt like tax forms.
+1. **They published content** really good content for free. Their blog became a small-business marketing textbook. Constant Contact published press releases.
+2. **They invested in product-led growth**, the free tier let anyone try the product without talking to a salesperson. Constant Contact required a "demo."
+3. **They treated their dashboard like media**, every send produced charts users *wanted to share* on social. Constant Contact's reports felt like tax forms.
 
 By 2017, Mailchimp had over 14 million users. In 2021, Intuit bought them for **$12 billion** in cash and stock. Constant Contact was eventually carved up and sold to private equity for roughly a tenth of that.
 
-The technologies both companies used — SMTP, HTML email, A/B tests — were *identical*. What differed was their understanding of the **landscape**: that owned media (their blog) plus product-led growth (the free tier) plus user-generated content (the share-worthy dashboard) compounds in ways traditional sales cannot.
+The technologies both companies used SMTP, HTML email, A/B tests were *identical*. What differed was their understanding of the **landscape**: that owned media (their blog) plus product-led growth (the free tier) plus user-generated content (the share-worthy dashboard) compounds in ways traditional sales cannot.
 
 That story is your first lesson: **digital marketing is not about tools. It's about which channels compound and how they connect.**
 
-In 2026, generative AI is doing to *every* channel what the freemium model did to email in 2007 — quietly redrawing the map while most marketers are still arguing about the old tactics.
+In 2026, generative AI is doing to *every* channel what the freemium model did to email in 2007, quietly redrawing the map while most marketers are still arguing about the old tactics.
 
 This module is the new map.
 
@@ -37,7 +37,7 @@ This module is the new map.
 
 ## 🧭 The Channel Map: Owned, Earned, Paid (and Shared)
 
-Every marketing channel sorts into one of four buckets. This is the **POESM model** ("paid, owned, earned, shared media") taught in essentially every Cornell, Wharton, and Northwestern digital marketing program. Memorize it — you'll see it on the HubSpot, Google, and Meta exams in some form.
+Every marketing channel sorts into one of four buckets. This is the **POESM model** ("paid, owned, earned, shared media") taught in essentially every Cornell, Wharton, and Northwestern digital marketing program. Memorize it, you'll see it on the HubSpot, Google, and Meta exams in some form.
 
 | Bucket | You Control? | Examples | 2026 AI Disruption |
 |---|---|---|---|
@@ -54,7 +54,7 @@ Every marketing channel sorts into one of four buckets. This is the **POESM mode
 
 ## 🌐 The Modern Digital Marketing Channels (2026 view)
 
-Below is the full channel inventory you'll see referenced for the rest of this course. Don't try to memorize all of it now — just absorb the shape.
+Below is the full channel inventory you'll see referenced for the rest of this course. Don't try to memorize all of it now, just absorb the shape.
 
 ### Search & Discovery
 - **Organic Search (SEO):** Ranking on Google, Bing, DuckDuckGo, YouTube search. Covered deeply in Module 3.
@@ -91,11 +91,11 @@ Below is the full channel inventory you'll see referenced for the rest of this c
 
 ---
 
-## 🎯 The Funnel — Three Layers Every Marketer Must Know
+## 🎯 The Funnel, Three Layers Every Marketer Must Know
 
-Every digital marketing exam tests the **funnel**. There are dozens of named funnels, but at minimum learn these three layers — sometimes called the marketing funnel, sometimes the customer journey, sometimes AARRR (pirate metrics). Same shape, different jargon.
+Every digital marketing exam tests the **funnel**. There are dozens of named funnels, but at minimum learn these three layers, sometimes called the marketing funnel, sometimes the customer journey, sometimes AARRR (pirate metrics). Same shape, different jargon.
 
-### TOFU / MOFU / BOFU (HubSpot's flavor — most tested)
+### TOFU / MOFU / BOFU (HubSpot's flavor, most tested)
 
 | Stage | Acronym | Mindset | Channels That Win | KPI |
 |---|---|---|---|---|
@@ -103,21 +103,21 @@ Every digital marketing exam tests the **funnel**. There are dozens of named fun
 | **Middle of Funnel** | MOFU | "I'm evaluating solutions" | Email, retargeting, comparison content, webinars, case studies | Leads, MQLs, demos booked |
 | **Bottom of Funnel** | BOFU | "I'm ready to buy" | Paid Search, branded search, sales calls, free trial | Sales, conversions, revenue |
 
-### AIDA (the oldest, 1898 — still on every exam)
+### AIDA (the oldest, 1898, still on every exam)
 
 **A**ttention → **I**nterest → **D**esire → **A**ction. Yes, the framework predates radio. Yes, it still works.
 
-### AARRR (the startup growth flavor — Dave McClure, 2007)
+### AARRR (the startup growth flavor, Dave McClure, 2007)
 
 **A**cquisition → **A**ctivation → **R**etention → **R**eferral → **R**evenue. Read aloud, it sounds like a pirate. Hence the nickname *pirate metrics*. Used heavily in tech, SaaS, mobile apps.
 
-### RACE (the digital-native flavor — Dr. Dave Chaffey, Smart Insights)
+### RACE (the digital-native flavor, Dr. Dave Chaffey, Smart Insights)
 
 **R**each → **A**ct → **C**onvert → **E**ngage. Adds an explicit post-purchase Engage stage that AIDA misses. Often taught in UK and EU programs.
 
-### SOSTAC (the planning framework — PR Smith)
+### SOSTAC (the planning framework, PR Smith)
 
-**S**ituation → **O**bjectives → **S**trategy → **T**actics → **A**ction → **C**ontrol. Not a funnel — it's a *planning* framework. Used to structure marketing plans end-to-end. Worth recognizing for exam purposes.
+**S**ituation → **O**bjectives → **S**trategy → **T**actics → **A**ction → **C**ontrol. Not a funnel, it's a *planning* framework. Used to structure marketing plans end-to-end. Worth recognizing for exam purposes.
 
 🎯 **Exam tip:** If a question asks "where in the funnel does X channel sit best?", remember the rough mapping:
 
@@ -129,7 +129,7 @@ Every digital marketing exam tests the **funnel**. There are dozens of named fun
 
 ## 💸 The Marketing Math You Cannot Avoid
 
-You will see these acronyms on every exam. Master the formulas — these eight letters earn you more job offers than any other terminology in marketing.
+You will see these acronyms on every exam. Master the formulas, these eight letters earn you more job offers than any other terminology in marketing.
 
 | Term | Formula | What It Tells You |
 |---|---|---|
@@ -148,7 +148,7 @@ You will see these acronyms on every exam. Master the formulas — these eight l
 
 ---
 
-## 🏰 The Walled Gardens — Where Most of Your Budget Will Go
+## 🏰 The Walled Gardens, Where Most of Your Budget Will Go
 
 Four "walled gardens" capture roughly **75% of all global digital ad spend** (per WARC's 2024 Global Ad Trends and eMarketer's 2025 forecasts). You cannot work in digital marketing without understanding their gravity.
 
@@ -160,8 +160,8 @@ Four "walled gardens" capture roughly **75% of all global digital ad spend** (pe
 | **TikTok** | ByteDance | In-feed video, Spark Ads, TopView, Shop Ads | Younger audiences, viral mechanics, ROI on creative | Geopolitical risk (US divestiture pressure), brand-safety concerns |
 
 **Two walls to also know:**
-- **The Trade Desk (TTD)** — independent DSP that *competes* with the walled gardens by aggregating "the open web." Important for connected-TV (CTV) and programmatic display.
-- **Microsoft Advertising** — runs Bing Search, LinkedIn Ads, Microsoft Audience Network. Roughly 5% the size of Google but disproportionately effective for B2B.
+- **The Trade Desk (TTD)**, independent DSP that *competes* with the walled gardens by aggregating "the open web." Important for connected-TV (CTV) and programmatic display.
+- **Microsoft Advertising**, runs Bing Search, LinkedIn Ads, Microsoft Audience Network. Roughly 5% the size of Google but disproportionately effective for B2B.
 
 🎯 **Exam tip:** When Meta exam asks "what's the difference between Advantage+ Shopping and Performance Max?", remember: Performance Max is Google's product, Advantage+ Shopping is Meta's. Both use AI to bid across all placements automatically. Cross-confusion is the #1 trap.
 
@@ -169,13 +169,13 @@ Four "walled gardens" capture roughly **75% of all global digital ad spend** (pe
 
 ## 🤖 The 5 Seismic Shifts Reshaping Marketing in 2026
 
-This is the part senior marketers need most. Every one of these shifts is on the HubSpot, Meta, and Google exams in some form — and every one is rewriting a chapter of the textbook.
+This is the part senior marketers need most. Every one of these shifts is on the HubSpot, Meta, and Google exams in some form, and every one is rewriting a chapter of the textbook.
 
 ### Shift 1: AI Overviews Are Eating the Top of the Funnel
 
 Google's **AI Overviews** (the AI-generated summary at the top of search results, launched broadly in 2024) and competitors like **Perplexity** and **ChatGPT Search** now answer many questions *without sending the user to your site*. This is sometimes called the **zero-click search problem**.
 
-Research from SparkToro (Rand Fishkin, 2024) showed that on US Google, roughly **60% of all searches end without a click** to an external site — and that number is climbing in 2025–2026 as AI Overviews scale.
+Research from SparkToro (Rand Fishkin, 2024) showed that on US Google, roughly **60% of all searches end without a click** to an external site, and that number is climbing in 2025–2026 as AI Overviews scale.
 
 **What this means for marketers:**
 - TOFU-only SEO strategies (information posts that exist to drive traffic) are dying.
@@ -199,7 +199,7 @@ In 2026, roughly three quarters of global digital ad dollars flow to four compan
 
 ### Shift 4: Generative AI Reset the Content-Creation Economics
 
-Producing a 1,500-word blog post used to cost $200–$500 from a freelancer. With ChatGPT, Claude, Jasper, or Copy.ai it can cost $1 in API calls — but the *editorial bar* has risen because anyone can produce drafts. The work is now: prompting, fact-checking, brand-voicing, and ranking.
+Producing a 1,500-word blog post used to cost $200–$500 from a freelancer. With ChatGPT, Claude, Jasper, or Copy.ai it can cost $1 in API calls, but the *editorial bar* has risen because anyone can produce drafts. The work is now: prompting, fact-checking, brand-voicing, and ranking.
 
 Same dynamic for images (Midjourney, DALL-E 3+, Stable Diffusion, Adobe Firefly) and increasingly for short video (Synthesia, HeyGen, Runway, Sora). Modules 4 and 5 are entirely devoted to this.
 
@@ -215,13 +215,13 @@ The combination of iOS 14.5 + cookie deprecation + AI-driven bidding (Performanc
 
 You should be able to name, draw, and apply each of these. They are the spine of every marketing exam.
 
-### 4Ps (Product, Price, Place, Promotion) — McCarthy, 1960
+### 4Ps (Product, Price, Place, Promotion), McCarthy, 1960
 The original marketing mix. Still cited; still useful for product strategy. **Place** in 2026 includes both physical and digital channels.
 
-### 4Cs (Customer, Cost, Convenience, Communication) — Lauterborn, 1990
+### 4Cs (Customer, Cost, Convenience, Communication), Lauterborn, 1990
 A customer-centric reframing of the 4Ps. Cornell's eCornell program teaches the 4Cs alongside the 4Ps.
 
-### Jobs-to-be-Done (JTBD) — Christensen, Harvard
+### Jobs-to-be-Done (JTBD), Christensen, Harvard
 "People hire a milkshake to do a job." The frame: don't ask *who* your customer is, ask *what job they hired your product to do*. Christensen's *Competing Against Luck* (2016) is the canonical reference. Used heavily in product marketing and content strategy (Module 4).
 
 ### Customer Journey Map
@@ -235,15 +235,15 @@ Two planning frameworks. **SOSTAC** (Situation, Objectives, Strategy, Tactics, A
 
 ---
 
-## 📊 Real Case Study Anchor — Coca-Cola's "Create Real Magic" (2023)
+## 📊 Real Case Study Anchor, Coca-Cola's "Create Real Magic" (2023)
 
-In March 2023, Coca-Cola launched the **"Create Real Magic"** campaign — one of the first major brand campaigns built on top of GPT-4 and DALL-E.
+In March 2023, Coca-Cola launched the **"Create Real Magic"** campaign, one of the first major brand campaigns built on top of GPT-4 and DALL-E.
 
 The setup: Coca-Cola partnered with OpenAI to give consumers a web interface where they could mash up Coke's brand assets (the contour bottle, the polar bears, the Spencerian script logo, Santa Claus) with their own prompts to generate original art. Selected entries were displayed on **billboards in Times Square** and London's Piccadilly Circus.
 
 What it taught the industry:
 
-1. **Brand assets can be a creative kit, not a museum piece.** Coke didn't lock down its IP — it opened it up under controlled rails (the "Real Magic Creative Academy"). User submissions had to pass safety filters before going live.
+1. **Brand assets can be a creative kit, not a museum piece.** Coke didn't lock down its IP, it opened it up under controlled rails (the "Real Magic Creative Academy"). User submissions had to pass safety filters before going live.
 2. **AI is a participation engine.** Engagement was an order of magnitude higher than Coke's traditional digital campaigns because consumers became *co-creators*.
 3. **The legal/IP work was the hardest part.** Coke's general counsel reportedly spent months structuring the rights waiver. As of 2025, the FTC and EU AI Act regulations on AI-generated promotional content are evolving rapidly. (We cover this in Module 9.)
 
@@ -270,7 +270,7 @@ You will see Coca-Cola's "Real Magic" cited in HBR, MIT Sloan Management Review,
 1. **TOFU vs BOFU channel mapping.** A blog post is TOFU; a comparison landing page is MOFU; a branded paid-search ad is BOFU. Don't conflate them.
 2. **ROAS vs ROI.** ROAS is revenue / ad spend. ROI is profit / total cost. They diverge fast with low margins.
 3. **Owned vs earned media.** A guest post on someone else's blog is *earned*. Your own blog is *owned*. A sponsored guest post is *paid*.
-4. **Performance Max (Google) vs Advantage+ (Meta).** Same idea — AI bids across all placements — different platforms. Cross-naming is the #1 trap on Google + Meta exams.
+4. **Performance Max (Google) vs Advantage+ (Meta).** Same idea AI bids across all placements different platforms. Cross-naming is the #1 trap on Google + Meta exams.
 5. **Funnel jargon.** AARRR, RACE, AIDA, TOFU/MOFU/BOFU all describe the same shape. Recognize the names, don't memorize all five.
 6. **"Programmatic" vs "Direct."** Programmatic = auction-based, machine-traded. Direct = humans negotiating a fixed insertion order. Direct still dominates premium CTV.
 
@@ -280,12 +280,12 @@ You will see Coca-Cola's "Real Magic" cited in HBR, MIT Sloan Management Review,
 
 | Term | Definition |
 |---|---|
-| **POESM** | Paid / Owned / Earned / Shared Media — the four channel buckets |
+| **POESM** | Paid / Owned / Earned / Shared Media, the four channel buckets |
 | **TOFU / MOFU / BOFU** | Top / Middle / Bottom of Funnel (HubSpot's flavor) |
-| **AIDA** | Attention, Interest, Desire, Action — 1898 funnel |
-| **AARRR** | Pirate metrics — Acquisition, Activation, Retention, Referral, Revenue |
-| **RACE** | Reach, Act, Convert, Engage — Chaffey's framework |
-| **SOSTAC** | Situation, Objectives, Strategy, Tactics, Action, Control — planning framework |
+| **AIDA** | Attention, Interest, Desire, Action, 1898 funnel |
+| **AARRR** | Pirate metrics, Acquisition, Activation, Retention, Referral, Revenue |
+| **RACE** | Reach, Act, Convert, Engage, Chaffey's framework |
+| **SOSTAC** | Situation, Objectives, Strategy, Tactics, Action, Control, planning framework |
 | **CAC** | Customer Acquisition Cost |
 | **LTV** | Lifetime Value of a customer |
 | **ROAS** | Return On Ad Spend (revenue ÷ ad spend) |
@@ -295,7 +295,7 @@ You will see Coca-Cola's "Real Magic" cited in HBR, MIT Sloan Management Review,
 | **AI Overview** | Google's AI-generated answer panel above organic results |
 | **Zero-click search** | A search that resolves without the user clicking a result |
 | **GEO / AEO** | Generative / Answer Engine Optimization |
-| **MMM** | Marketing Mix Modeling — econometric attribution |
+| **MMM** | Marketing Mix Modeling, econometric attribution |
 | **Incrementality test** | Holdout test that measures the *true* lift of a channel |
 | **First-party data** | Data your company collects directly (email, on-site behavior) |
 | **Third-party cookie** | A cookie set by a domain other than the one the user is visiting (dying) |
@@ -319,7 +319,7 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24 minimum
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24 minimum
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 2: AI Fundamentals for Marketers](../Module-02-AI-Fundamentals-for-Marketers/Reading.md)
 
@@ -332,28 +332,28 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; the best answers cite specific frameworks, numbers, or cases from the reading.
 
 1. **The TOFU SEO existential question.** A B2B SaaS founder argues that with AI Overviews now answering 60% of "what is X" queries before the click, her team should stop publishing TOFU SEO content entirely and shift the entire budget to BOFU branded content + paid. Build the strongest argument for her position AND the strongest argument against. Which would you defend in front of her board, and why? (Hint: consider the Airbnb / HubSpot cases from Modules 3–4 before answering.)
-2. **POESM allocation under constraint.** You inherit a $2M annual marketing budget at a mid-size DTC e-commerce brand with no email list of note, no paid agency, and a slow-loading website. You can only fix two of the four POESM buckets in year one. Which two, in what order, and what's the principled trade-off? Defend your sequencing against a CFO who will ask "why not paid first — it scales fastest?"
-3. **The walled-garden lock-in dilemma.** A senior CMO objects that the 4-walled-garden concentration (Google + Meta + Amazon + TikTok = ~75% of spend) means marketers have lost real leverage and are just rent-paying tenants. A junior strategist counters that this concentration is a *feature* — fewer platforms means lower learning costs. Who's right at what company stage, and what's the strategic countermove for the side that's wrong?
+2. **POESM allocation under constraint.** You inherit a $2M annual marketing budget at a mid-size DTC e-commerce brand with no email list of note, no paid agency, and a slow-loading website. You can only fix two of the four POESM buckets in year one. Which two, in what order, and what's the principled trade-off? Defend your sequencing against a CFO who will ask "why not paid first, it scales fastest?"
+3. **The walled-garden lock-in dilemma.** A senior CMO objects that the 4-walled-garden concentration (Google + Meta + Amazon + TikTok = ~75% of spend) means marketers have lost real leverage and are just rent-paying tenants. A junior strategist counters that this concentration is a *feature*, fewer platforms means lower learning costs. Who's right at what company stage, and what's the strategic countermove for the side that's wrong?
 4. **ROAS vs ROI in the boardroom.** Your e-commerce campaign has a 5× ROAS, which leadership loves. You know the actual gross margin is 18% and per-order opex is $11. Walk through the calculation that shows whether this campaign is *truly* profitable. How would you reframe ROAS reporting to your CMO so that "good ROAS" stops being misleading without making her feel undermined? (Use the Module 1 math + the §1.4 ROAS-vs-ROI trap.)
-5. **First-party data as moat.** In 2026, "first-party data is gold" is a maxim. A frequent rebuttal: "We're a B2B SaaS with 8,000 users — our first-party data is too small to model anything useful." Construct an honest argument for the rebuttal and a stronger counter-argument that lays out what first-party data still buys you at small scale. What is the *threshold* at which first-party data starts to compound?
+5. **First-party data as moat.** In 2026, "first-party data is gold" is a maxim. A frequent rebuttal: "We're a B2B SaaS with 8,000 users, our first-party data is too small to model anything useful." Construct an honest argument for the rebuttal and a stronger counter-argument that lays out what first-party data still buys you at small scale. What is the *threshold* at which first-party data starts to compound?
 
-There are no "official" answers — defend your reasoning with specifics. Strong responses cite at least one named framework (POESM, AIDA, 4Cs, JTBD), one named case (Mailchimp, Coca-Cola "Real Magic," the iOS 14.5 disruption), and one piece of marketing math.
+There are no "official" answers, defend your reasoning with specifics. Strong responses cite at least one named framework (POESM, AIDA, 4Cs, JTBD), one named case (Mailchimp, Coca-Cola "Real Magic," the iOS 14.5 disruption), and one piece of marketing math.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Marketing Management* by Philip Kotler — the textbook. Read chapters 1, 3, 13.
-- 📖 *Contagious* by Jonah Berger (Wharton) — why things spread (STEPPS framework).
-- 📖 *Competing Against Luck* by Clayton Christensen (Harvard) — Jobs-to-be-Done in depth.
-- 📖 *Hooked* by Nir Eyal — the habit-forming product loop, foundational for retention thinking.
+- 📖 *Marketing Management* by Philip Kotler, the textbook. Read chapters 1, 3, 13.
+- 📖 *Contagious* by Jonah Berger (Wharton), why things spread (STEPPS framework).
+- 📖 *Competing Against Luck* by Clayton Christensen (Harvard), Jobs-to-be-Done in depth.
+- 📖 *Hooked* by Nir Eyal, the habit-forming product loop, foundational for retention thinking.
 - 📰 SparkToro's *State of Search* report (annual, free, Rand Fishkin).
-- 📰 WARC *Global Ad Trends* — the industry's most-cited spend forecasts.
+- 📰 WARC *Global Ad Trends*, the industry's most-cited spend forecasts.
 - 📰 McKinsey's annual *State of Marketing*.
-- 📰 *MIT Sloan Management Review* — search "generative AI marketing" for several 2024–2025 case studies.
-- 📰 Nielsen Norman Group (nngroup.com) — UX research that informs everything content + email.
+- 📰 *MIT Sloan Management Review*, search "generative AI marketing" for several 2024–2025 case studies.
+- 📰 Nielsen Norman Group (nngroup.com), UX research that informs everything content + email.

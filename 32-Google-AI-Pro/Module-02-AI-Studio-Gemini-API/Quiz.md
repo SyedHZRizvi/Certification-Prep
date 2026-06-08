@@ -80,7 +80,7 @@ D. 1.5+
 ---
 
 ### Q10. To estimate token cost BEFORE running inference, you should: *(Apply)*
-A. Call `model.count_tokens(prompt)` — free endpoint
+A. Call `model.count_tokens(prompt)`, free endpoint
 B. Divide character count by 4 and trust it
 C. Make a real call with `max_tokens=1`
 D. There is no way to count tokens
@@ -202,7 +202,7 @@ D. Vertex AI uses IAM/ADC, not API keys
 ### Q25. Design challenge: You want to take a working AI Studio prototype to production for 200K users/day with EU residency, audit logging, and key management. The MINIMUM viable upgrade: *(Create)*
 A. Keep AI Studio + API key
 B. Migrate to Vertex AI in `europe-west1`; replace API key with ADC/service account; enable VPC-SC + CMEK; turn on Cloud Logging + Cloud Trace; enable context caching for stable prefixes; set explicit safety_settings; budget alerts
-C. Self-host Gemini (not possible — closed weights)
+C. Self-host Gemini (not possible, closed weights)
 D. Move to AWS Bedrock
 
 ---
@@ -264,7 +264,7 @@ API keys belong nowhere near a browser. The frontend talks to your backend; your
 Resource exhausted / rate limited. Retry with exponential backoff + jitter.
 
 ### Q19: **D. 429 (with exponential backoff)**
-4xx (other than 429) are your fault — fix the request. 5xx and 429 are retryable transient errors.
+4xx (other than 429) are your fault, fix the request. 5xx and 429 are retryable transient errors.
 
 ### Q20: **B. Batch API on Flash Lite**
 Async batch (~50% off) stacks with the cheaper Flash Lite tier for compound savings.
@@ -273,12 +273,12 @@ Async batch (~50% off) stacks with the cheaper Flash Lite tier for compound savi
 The per-response token accounting. Use this to track cost in real time.
 
 ### Q22: **B. Native multi-modal + per-region residency + Flash economics at scale**
-Snap's published rationale combines all three. The trap is "lower cost only" — the multi-modal native is the actual differentiator.
+Snap's published rationale combines all three. The trap is "lower cost only", the multi-modal native is the actual differentiator.
 
 ### Q23: **B. Loosen only that category to BLOCK_ONLY_HIGH**
 Document and monitor. Never blanket-disable.
 
-### Q24: **B. Batch API is real-time inference at a lower price — FALSE**
+### Q24: **B. Batch API is real-time inference at a lower price, FALSE**
 Batch is *async*, not real-time. The discount comes from the async SLA.
 
 ### Q25: **B. Vertex AI in EU + ADC + VPC-SC + CMEK + Logging/Trace + caching + safety + budget alerts**
@@ -310,4 +310,4 @@ The canonical Studio-to-Vertex-AI migration. Each component addresses a real con
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Vertex AI Platform Deep Dive](../Module-03-Vertex-AI-Platform/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Vertex AI Platform Deep Dive](../Module-03-Vertex-AI-Platform/Reading.md)

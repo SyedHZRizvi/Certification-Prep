@@ -114,7 +114,7 @@ D. `mount --remount-all`
 
 ### Q14. After `chmod 4644 file`, the SUID-position character in `ls -l` will be: *(Analyze)*
 A. lowercase `s` (SUID will fire)
-B. uppercase `S` (SUID set but no execute — won't actually fire on execve)
+B. uppercase `S` (SUID set but no execute, won't actually fire on execve)
 C. `t` (sticky)
 D. `x` (regular execute)
 
@@ -246,7 +246,7 @@ SGID on a directory makes new files inherit the directory's group. SUID on a fil
 `nofail` lets the system continue booting even if the mount fails. Without it, a missing device drops you into emergency mode. Pair with `x-systemd.device-timeout=` to bound the wait.
 
 ### Q9: **B. XFS**
-XFS cannot shrink — only grow. This is a known XFS limitation; if you need to shrink, you reformat. ext4 and Btrfs can shrink; ZFS technically can shrink some volume types but not the pool.
+XFS cannot shrink, only grow. This is a known XFS limitation; if you need to shrink, you reformat. ext4 and Btrfs can shrink; ZFS technically can shrink some volume types but not the pool.
 
 ### Q10: **B. Only the file's owner (and root) can unlink files**
 Sticky on a directory restricts unlink/rename to the file's owner. Without it, anyone with write access to the directory could `rm` anyone else's file.
@@ -302,7 +302,7 @@ Btrfs is the CoW + snapshot + subvolume FS in the mainline kernel. ZFS does this
 - `+t` adds sticky so users can only delete their own files
 - `setfacl` (D) is needed for auditor part of the goal, but the question asks for the bit-level setup of (a)+(b)+(c).
 
-Note: (d) requires a default ACL: `setfacl -d -m u:auditor:r /srv/team` — a separate command, not part of the chosen line.
+Note: (d) requires a default ACL: `setfacl -d -m u:auditor:r /srv/team`, a separate command, not part of the chosen line.
 
 ---
 
@@ -319,13 +319,13 @@ Note: (d) requires a default ACL: `setfacl -d -m u:auditor:r /srv/team` — a se
 
 - FHS top-level directories (one card each for /etc, /var, /usr, /opt, /srv, /proc, /sys, /run, /tmp, /home)
 - chmod octal: 4=r, 2=w, 1=x; combine per triad
-- SUID (4), SGID (2), sticky (1) — what each does on files vs dirs
+- SUID (4), SGID (2), sticky (1), what each does on files vs dirs
 - ACL commands: `getfacl`, `setfacl -m`, `setfacl -b`, `setfacl -d` (default)
-- ACL mask trap — effective rights of named entries are capped
+- ACL mask trap, effective rights of named entries are capped
 - fstab fields and options: nofail, noexec, nosuid, nodev, _netdev
 - chattr: `+i` (immutable), `+a` (append-only)
 - `df` vs `df -i`; `lsof | grep deleted`
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Package Management](../Module-03-Package-Management/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Package Management](../Module-03-Package-Management/Reading.md)

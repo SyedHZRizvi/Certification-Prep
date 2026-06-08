@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GPT-4V Launch — The Vision Era Begins</p>
+      <p class="vg-title">GPT-4V Launch, The Vision Era Begins</p>
       <p class="vg-creator">OpenAI</p>
       <span class="vg-duration">⏱ 16 min · September 2023 demo</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Vision LLMs vs Dedicated OCR — head to head</p>
+      <p class="vg-title">Vision LLMs vs Dedicated OCR, head to head</p>
       <p class="vg-creator">AI Engineer</p>
       <span class="vg-duration">⏱ 18 min · Where each wins</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ChartQA — How Vision LLMs Fail at Charts</p>
+      <p class="vg-title">ChartQA, How Vision LLMs Fail at Charts</p>
       <p class="vg-creator">AI Coffee Break</p>
       <span class="vg-duration">⏱ 12 min · Confabulation rates</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Llama 3.2 Vision — Run It Locally</p>
+      <p class="vg-title">Llama 3.2 Vision, Run It Locally</p>
       <p class="vg-creator">Matt Williams (Ollama)</p>
       <span class="vg-duration">⏱ 16 min · Open-weights VLMs</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">MMMU — College-Level Multi-Modal Eval</p>
+      <p class="vg-title">MMMU, College-Level Multi-Modal Eval</p>
       <p class="vg-creator">AI Explained</p>
       <span class="vg-duration">⏱ 14 min · 2026 frontier scores</span>
     </div>
@@ -150,6 +150,6 @@ Answer these in your notebook (without re-watching):
 2. Three best practices for sending images to vision LLMs?
 3. When does dedicated OCR (Textract / Document AI) still beat vision LLMs?
 4. Two ways to defeat chart-reading confabulation?
-5. Whisper + chat-model two-step vs direct audio — pros/cons of each?
+5. Whisper + chat-model two-step vs direct audio, pros/cons of each?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watch the Anthropic + Gemini videos.

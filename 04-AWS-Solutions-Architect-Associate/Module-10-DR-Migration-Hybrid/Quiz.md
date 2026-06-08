@@ -57,7 +57,7 @@ D. SFTP
 ---
 
 ### Q7. To replace a physical tape backup library while keeping the existing backup software: *(Apply)*
-A. Storage Gateway — Tape Gateway (VTL)
+A. Storage Gateway, Tape Gateway (VTL)
 B. AWS Backup
 C. DataSync
 D. Glacier directly
@@ -206,7 +206,7 @@ D. Only when a disaster happens
 Just back up data + IaC; rebuild on disaster. Cheapest, longest RTO.
 
 ### Q2: **D. Multi-Site Active-Active**
-Both regions serving — failover is just removing one. Lowest RPO/RTO, highest cost.
+Both regions serving, failover is just removing one. Lowest RPO/RTO, highest cost.
 
 ### Q3: **C. Core data live, compute OFF**
 DB replicating; app servers off or minimal. Scale up on failover.

@@ -39,7 +39,7 @@ Need private data?  → YES → RAG
 | Item | Detail |
 |------|--------|
 | **Data format** | JSONL in S3 |
-| **Supported models** | Varies — Titan, Llama, Cohere Command, Nova (newer), Claude Haiku (limited) |
+| **Supported models** | Varies, Titan, Llama, Cohere Command, Nova (newer), Claude Haiku (limited) |
 | **Output** | A custom model owned by you, encrypted by your KMS key |
 | **Inference** | Requires **Provisioned Throughput** |
 | **Continued pre-training** | Same flow with unlabeled domain text |
@@ -63,19 +63,19 @@ Need private data?  → YES → RAG
 
 ## 🧪 Bedrock Model Evaluation
 
-- **Automatic** — built-in or custom metrics
-- **Human (worker)** — your team or AWS-managed
-- **Knowledge Base eval** — retrieval + faithfulness for RAG
-- **LLM-as-judge** — strong LLM grades another
+- **Automatic**, built-in or custom metrics
+- **Human (worker)**, your team or AWS-managed
+- **Knowledge Base eval**, retrieval + faithfulness for RAG
+- **LLM-as-judge**, strong LLM grades another
 
 ---
 
 ## 🧬 Alignment Vocab
 
-- **Instruction tuning** — turn base into assistant
-- **RLHF** — humans rank → reward model → policy update
-- **DPO** — newer, simpler alignment with preference pairs
-- **PEFT / LoRA** — train small adapters; the modern fine-tuning default
+- **Instruction tuning**, turn base into assistant
+- **RLHF**, humans rank → reward model → policy update
+- **DPO**, newer, simpler alignment with preference pairs
+- **PEFT / LoRA**, train small adapters; the modern fine-tuning default
 
 ---
 
@@ -116,7 +116,7 @@ Usually wrong:
 
 - ❌ Fine-tuning to bolt on a knowledge update
 - ❌ Picking the most expensive frontier model when a small model would work
-- ❌ Skipping evaluation entirely — "looks good" is not a metric
+- ❌ Skipping evaluation entirely, "looks good" is not a metric
 - ❌ Fine-tuning on tiny / low-quality data and expecting magic
 
 ---

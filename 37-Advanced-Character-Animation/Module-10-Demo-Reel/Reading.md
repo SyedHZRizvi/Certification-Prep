@@ -1,6 +1,6 @@
-# Module 10: The Demo Reel — 90 Seconds That Determine Your Career 🎥
+# Module 10: The Demo Reel, 90 Seconds That Determine Your Career 🎥
 
-> **A story to open.** In 2018, a Pixar recruiter was reviewing demo reels at the rate of 400 per day during peak hiring season. Four hundred. A typical reel runs 90 seconds. At that rate, she spent approximately 2–3 seconds deciding whether to continue watching. She told a group of animation students: *"I have seen 90-second reels where I wanted to stop after frame 1 and 90-second reels where I called the person before the reel ended. The difference is almost always the first shot — and almost never the number of shots."* This module is about building the reel that gets the call before it ends.
+> **A story to open.** In 2018, a Pixar recruiter was reviewing demo reels at the rate of 400 per day during peak hiring season. Four hundred. A typical reel runs 90 seconds. At that rate, she spent approximately 2–3 seconds deciding whether to continue watching. She told a group of animation students: *"I have seen 90-second reels where I wanted to stop after frame 1 and 90-second reels where I called the person before the reel ended. The difference is almost always the first shot, and almost never the number of shots."* This module is about building the reel that gets the call before it ends.
 
 ---
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 📚 Part 1 — Shot Selection
+## 📚 Part 1, Shot Selection
 
 ### The Three Laws of Shot Selection
 
@@ -41,7 +41,7 @@ A reel with 6 shots of a similar character doing similar things reads as a portf
 
 ---
 
-## 📚 Part 2 — Shot Ordering
+## 📚 Part 2, Shot Ordering
 
 The ordering of your reel is an editing exercise, not a retrospective. You are building a narrative arc from the opening frame to the final shot.
 
@@ -57,14 +57,14 @@ The ordering of your reel is an editing exercise, not a retrospective. You are b
 
 ### What NOT to Do
 
-- **Never** put your weakest shot first — even if chronologically it was first
-- **Never** front-load all your best shots and taper — the reel dies in the middle
-- **Never** put two similar shots back-to-back — variety maintains attention
-- **Never** end on a weak shot — the final impression anchors the memory
+- **Never** put your weakest shot first, even if chronologically it was first
+- **Never** front-load all your best shots and taper, the reel dies in the middle
+- **Never** put two similar shots back-to-back, variety maintains attention
+- **Never** end on a weak shot, the final impression anchors the memory
 
 ---
 
-## 📚 Part 3 — Music Choice
+## 📚 Part 3, Music Choice
 
 Music is the most misunderstood element of demo reel construction. The wrong music will damage a technically excellent reel.
 
@@ -81,13 +81,13 @@ Music is the most misunderstood element of demo reel construction. The wrong mus
 
 - **Orchestral / cinematic scores** from royalty-free libraries (Epidemic Sound, Artlist)
 - **Custom tracks** commissioned from music students if you have the relationship
-- **No music for silent reels** — silence is valid for a reel with no audio track; it focuses attention on the work
+- **No music for silent reels**, silence is valid for a reel with no audio track; it focuses attention on the work
 
-> ⚠️ **The "Bohemian Rhapsody" problem:** Using a famous song on a reel is memorable — but primarily for the song, not the work. Recruiters will associate your reel with the song's existing emotional associations rather than your performance choices.
+> ⚠️ **The "Bohemian Rhapsody" problem:** Using a famous song on a reel is memorable, but primarily for the song, not the work. Recruiters will associate your reel with the song's existing emotional associations rather than your performance choices.
 
 ---
 
-## 📚 Part 4 — Length Standards
+## 📚 Part 4, Length Standards
 
 ### The 60–90 Second Rule
 
@@ -109,11 +109,11 @@ The professional standard for character animation demo reels at major studios is
 
 ### The Self-Editing Test
 
-Play your reel with the audio off. Watch only the animation. For each shot, ask: *"Does this shot earn its time on screen?"* If you find yourself thinking "this part is slow" or "this part doesn't show anything new" — cut that shot or cut it shorter.
+Play your reel with the audio off. Watch only the animation. For each shot, ask: *"Does this shot earn its time on screen?"* If you find yourself thinking "this part is slow" or "this part doesn't show anything new", cut that shot or cut it shorter.
 
 ---
 
-## 📚 Part 5 — Self-Critique vs. Peer Review
+## 📚 Part 5, Self-Critique vs. Peer Review
 
 ### Why Self-Critique Fails
 
@@ -125,12 +125,12 @@ Animators who self-critique alone before submitting frequently miss:
 ### The Structured Peer Review Process
 
 1. **Find two peers** who are not close friends (friends will be kind; you need honesty)
-2. **Show the reel once without comment** — watch their faces, not the screen
+2. **Show the reel once without comment**, watch their faces, not the screen
 3. **Ask two questions only:**
    - "Which shot made you most engaged?"
    - "Was there a moment you wanted to look away?"
 4. **Watch the reel a second time** and ask them to call out any moment where they were confused or unimpressed
-5. **Don't defend** — write everything down
+5. **Don't defend**, write everything down
 
 If both reviewers identify the same weak shot: cut it.
 If one reviewer is unsure about a shot: leave it in but monitor in further reviews.
@@ -141,7 +141,7 @@ Before submitting, play your reel for someone who has never seen it. Watch their
 
 ---
 
-## 📚 Part 6 — Studio-Specific Submission Requirements
+## 📚 Part 6, Studio-Specific Submission Requirements
 
 ### Pixar Animation Studios
 
@@ -173,7 +173,7 @@ Before submitting, play your reel for someone who has never seen it. Watch their
 
 ---
 
-## 📚 Part 7 — The Reel Checklist
+## 📚 Part 7, The Reel Checklist
 
 Before submitting to any studio, run through this checklist:
 
@@ -208,7 +208,7 @@ Before submitting to any studio, run through this checklist:
 
 ---
 
-## 📚 Part 8 — The Internship Application Pipeline
+## 📚 Part 8, The Internship Application Pipeline
 
 Most Pixar, DreamWorks, and ILM career paths begin with internships, not direct hires. The internship application is a separate process from the general recruitment pipeline and has specific timing requirements:
 
@@ -219,16 +219,16 @@ Most Pixar, DreamWorks, and ILM career paths begin with internships, not direct 
 | Pixar Animation | October–November | January–February | Summer (10 weeks) |
 | DreamWorks Animation | September–October | December–January | Summer (12 weeks) |
 | ILM (Industrial Light & Magic) | October | February | Summer (12 weeks) |
-| Weta Digital / Weta FX | Rolling applications | — | Varies |
-| Riot Games | Rolling; peaks September | — | 3 or 6 months |
-| Netflix Animation | Rolling; peaks October | — | 6 months |
+| Weta Digital / Weta FX | Rolling applications |, | Varies |
+| Riot Games | Rolling; peaks September |, | 3 or 6 months |
+| Netflix Animation | Rolling; peaks October |, | 6 months |
 | Sony Pictures Imageworks | September–November | January | Summer (10 weeks) |
 
-**Critical note:** Internship applications require a demo reel, a CV, and frequently a brief written statement of purpose. The demo reel submitted for an internship must meet the same quality bar as a full-hire reel — studios do not apply a lower standard to intern applicants.
+**Critical note:** Internship applications require a demo reel, a CV, and frequently a brief written statement of purpose. The demo reel submitted for an internship must meet the same quality bar as a full-hire reel, studios do not apply a lower standard to intern applicants.
 
 ---
 
-## 📚 Part 9 — Self-Critique Protocol: The Three-Pass System
+## 📚 Part 9, Self-Critique Protocol: The Three-Pass System
 
 Before any submission, run the three-pass self-critique protocol:
 
@@ -248,7 +248,7 @@ Before any submission, run the three-pass self-critique protocol:
 ```
 [ ] Does the acting choice communicate clearly in the first 3 seconds of each shot?
 [ ] Is the character's objective visible without knowing the script?
-[ ] Is there subtext — a gap between what the character says and what they mean?
+[ ] Is there subtext, a gap between what the character says and what they mean?
 [ ] Do the eyes tell the same story as the body?
 [ ] Is there at least one "unexpected" performance choice in each shot?
 [ ] Does the dialogue sound like it's coming from this character, not just this mouth?
@@ -265,7 +265,7 @@ Before any submission, run the three-pass self-critique protocol:
 
 ---
 
-## 📚 Part 10 — Formatting and Submission Technical Standards
+## 📚 Part 10, Formatting and Submission Technical Standards
 
 ### Export Settings for Major Platform Submissions
 
@@ -276,19 +276,19 @@ Before any submission, run the three-pass self-critique protocol:
 | DreamWorks portal | MP4 | H.264 | 1080p | 24fps | 250MB |
 | Riot Games application | MP4 | H.264 | 1080p | 30 or 60fps | 200MB |
 | LinkedIn | MP4 | H.264 | 1080p | 30fps | 5GB |
-| Email direct link | Any hosting | — | — | — | Must be streamable |
+| Email direct link | Any hosting | | |, | Must be streamable |
 
 ### Title Card Requirements
 
 | Element | Required | Recommended | Avoid |
 |---------|---------|-------------|-------|
-| Full name | Yes | — | — |
-| Contact email | Yes | — | — |
-| Portfolio/website URL | Yes | — | — |
-| Phone number | Optional | — | Home address |
-| Studio credits (if applicable) | For work done at studios | — | Uncredited studio work |
-| Software tools | Optional | — | Listing 12+ tools |
-| Graduating year | For students | — | Year that is more than 2 years old |
+| Full name | Yes | | |
+| Contact email | Yes | | |
+| Portfolio/website URL | Yes | | |
+| Phone number | Optional |, | Home address |
+| Studio credits (if applicable) | For work done at studios |, | Uncredited studio work |
+| Software tools | Optional |, | Listing 12+ tools |
+| Graduating year | For students |, | Year that is more than 2 years old |
 
 ### The 2-Second Title Card Rule
 
@@ -296,7 +296,7 @@ The title card should appear for exactly 2 seconds at the beginning of the reel.
 
 ---
 
-## 📚 Part 11 — Case Study: What Pixar Recruiters Actually See
+## 📚 Part 11, Case Study: What Pixar Recruiters Actually See
 
 Based on documented Pixar recruitment presentations and animator interviews:
 
@@ -310,14 +310,14 @@ The Pixar recruiter's described workflow during peak hiring season:
 5. Decision: add to "strong" list or skip
 6. If strong list: watch complete reel and take notes
 
-**The implication:** If your opening shot does not earn continued watching in 3–5 seconds, the reel is effectively rejected. This is not arbitrary — the recruiter has seen enough reels to know within seconds whether the first shot demonstrates the core skill being hired for.
+**The implication:** If your opening shot does not earn continued watching in 3–5 seconds, the reel is effectively rejected. This is not arbitrary, the recruiter has seen enough reels to know within seconds whether the first shot demonstrates the core skill being hired for.
 
 ### What "Emotional Authenticity" Means at Pixar
 
 Pixar's stated recruitment criterion is "emotional authenticity." In practice, this means:
 - Performance choices that are specific (not generic emotional states)
 - Characters who want something specific in each shot
-- Unexpected moments — choices that could only come from deep engagement with the character
+- Unexpected moments, choices that could only come from deep engagement with the character
 - The absence of "indicating" (performing the emotion rather than experiencing its cause)
 
 A technically perfect shot with generic acting will not make the strong list. A technically imperfect shot with a single, genuinely specific, unexpected performance choice may make the strong list. This is documented in Pixar alumni discussions and is the reason the performance modules (Modules 1–4) precede the technical modules in this course.
@@ -326,20 +326,20 @@ A technically perfect shot with generic acting will not make the strong list. A 
 
 ## 🎯 What the Exam Tests
 
-1. What are the three laws of shot selection — and which law is the most commonly violated by applicants?
+1. What are the three laws of shot selection, and which law is the most commonly violated by applicants?
 2. In the shot ordering formula, what type of shot should always open the reel?
-3. What are the four rules of reel music — and which is most important for a major studio submission?
+3. What are the four rules of reel music, and which is most important for a major studio submission?
 4. What is the 60–90 second rule, and what does a reel under 60 seconds suggest to a recruiter?
 5. What are the two questions asked in the structured peer review process?
 6. What specific format, codec, and resolution does the Pixar career portal require?
-7. What is the "First 5 Seconds Test" — and what does a reviewer leaning back indicate?
+7. What is the "First 5 Seconds Test", and what does a reviewer leaning back indicate?
 8. At Pixar, what does "emotional authenticity" mean in practical animation terms?
-9. What are the Shot Selection Matrix priorities for Riot Games — and why do they differ from Pixar's?
-10. What is the "2-second title card rule" — and why does a long title card damage a reel's effectiveness?
+9. What are the Shot Selection Matrix priorities for Riot Games, and why do they differ from Pixar's?
+10. What is the "2-second title card rule", and why does a long title card damage a reel's effectiveness?
 
 ---
 
-## ⚠️ Director's Note Traps — Common Misinterpretations
+## ⚠️ Director's Note Traps, Common Misinterpretations
 
 **Trap 1: "Show your range" means include as many different types of shots as possible.**
 Range means demonstrating versatile competency within your specialty. A character animation reel with creature work, dialogue, body mechanics, and physical comedy demonstrates range. A character animation reel with VFX, modeling, texturing, and character animation demonstrates confusion about the target role.
@@ -348,10 +348,10 @@ Range means demonstrating versatile competency within your specialty. A characte
 A longer reel forces the recruiter to watch weak shots. The recruiter's confidence in the reel decreases with each shot that is below the bar of the best shot. Cutting to 75–85 seconds of only your strongest material is more effective than 3 minutes of everything.
 
 **Trap 3: Music that matches the theme of the animation shows thematic awareness.**
-A heroic piece for a superhero shot, a sad piece for an emotional scene — this thematic matching draws attention to the music's emotional direction rather than the animation. The music should be atmospheric and non-directing.
+A heroic piece for a superhero shot, a sad piece for an emotional scene, this thematic matching draws attention to the music's emotional direction rather than the animation. The music should be atmospheric and non-directing.
 
 **Trap 4: Work done at a studio is always reel-worthy because it was approved.**
-Studio-approved work was approved for the film — it met the technical standard for that production. The question for the reel is whether it represents your best individual capability. Some studio shots are heavily collaborative or heavily supervised. Know what you contributed specifically.
+Studio-approved work was approved for the film, it met the technical standard for that production. The question for the reel is whether it represents your best individual capability. Some studio shots are heavily collaborative or heavily supervised. Know what you contributed specifically.
 
 **Trap 5: Reel submission is a one-time event.**
 The demo reel is a living document. Animators at Animation Mentor update their reels every 3–6 months as shots improve. A reel submitted in January should be better than the reel from July. Recruiters who request a reel update six months after an initial application expect to see genuine improvement.
@@ -360,15 +360,15 @@ The demo reel is a living document. Animators at Animation Mentor update their r
 
 ## 🔬 Socratic Questions
 
-1. A recruiter decides to continue or skip within 3–5 seconds of your opening shot. Design your opening shot — describe the character, the action, the emotional performance, and the first 3 seconds specifically — such that it earns continued watching.
+1. A recruiter decides to continue or skip within 3–5 seconds of your opening shot. Design your opening shot describe the character, the action, the emotional performance, and the first 3 seconds specifically such that it earns continued watching.
 
 2. The peer review protocol asks two questions: "Which shot made you most engaged?" and "Was there a moment you wanted to look away?" Why are these two specific questions more useful than "What did you think?" or "Which shot was your favorite?"
 
 3. You have 12 shots of varying quality. Using the three laws of shot selection and the ordering formula, select 6 shots and order them. Justify each selection and each placement decision.
 
-4. Riot Games' shot selection matrix prioritizes "weight, physical impact, responsiveness" over "emotional dialogue." What does this reveal about the difference between film animation and game animation as disciplines — and how would a film animator prepare to transition to a game studio?
+4. Riot Games' shot selection matrix prioritizes "weight, physical impact, responsiveness" over "emotional dialogue." What does this reveal about the difference between film animation and game animation as disciplines, and how would a film animator prepare to transition to a game studio?
 
-5. The module states that the demo reel "is the single most important 90 seconds of an animator's career." But careers are long and reels become outdated. At what career stage does the demo reel cease to be the primary hiring tool — and what replaces it?
+5. The module states that the demo reel "is the single most important 90 seconds of an animator's career." But careers are long and reels become outdated. At what career stage does the demo reel cease to be the primary hiring tool, and what replaces it?
 
 ---
 
@@ -384,11 +384,11 @@ The Pixar call might come. Be ready.
 
 ## 📖 Further Reading
 
-- Williams, R. — *The Animator's Survival Kit* — Final chapter on career
-- Animation Career Review — "Demo Reel Dos and Don'ts" series (animationcareereview.com)
+- Williams, R. *The Animator's Survival Kit* Final chapter on career
+- Animation Career Review, "Demo Reel Dos and Don'ts" series (animationcareereview.com)
 - Pixar Talent Development blog (pixar.com/talent)
-- Animation Mentor — "The Perfect Demo Reel" (animationmentor.com)
-- Riot Games — "Animation at Riot" (careers.riotgames.com)
-- DreamWorks — Production blog (dreamworksanimation.com)
-- Epidemic Sound — Royalty-free music for demo reels (epidemicsound.com)
-- Artlist — Royalty-free music library for film and reel use (artlist.io)
+- Animation Mentor, "The Perfect Demo Reel" (animationmentor.com)
+- Riot Games, "Animation at Riot" (careers.riotgames.com)
+- DreamWorks, Production blog (dreamworksanimation.com)
+- Epidemic Sound, Royalty-free music for demo reels (epidemicsound.com)
+- Artlist, Royalty-free music library for film and reel use (artlist.io)

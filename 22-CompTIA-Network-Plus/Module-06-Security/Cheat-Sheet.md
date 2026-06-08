@@ -26,9 +26,9 @@
 | Latency | None | Some |
 
 ### Detection methods
-- **Signature** — known patterns, low FP, blind to zero-days
-- **Anomaly / behavioral** — baseline deviation, catches novel, more FP
-- **Heuristic / ML** — scoring; tunable but black-box
+- **Signature**, known patterns, low FP, blind to zero-days
+- **Anomaly / behavioral**, baseline deviation, catches novel, more FP
+- **Heuristic / ML**, scoring; tunable but black-box
 
 ---
 
@@ -41,7 +41,7 @@
 | Unknown / unmanaged | Guest VLAN (Internet only) |
 | Failed | Deny / event-disable port |
 
-Agent (deeper) vs Agentless (BYOD/IoT — DHCP fingerprint, port profile).
+Agent (deeper) vs Agentless (BYOD/IoT, DHCP fingerprint, port profile).
 
 ---
 
@@ -123,7 +123,7 @@ Often **right**:
 Often **wrong**:
 
 - ❌ "Disable IPS to fix false positives"
-- ❌ "Open all inbound — users complain"
+- ❌ "Open all inbound, users complain"
 - ❌ "Telnet for remote management"
 - ❌ "Trust traffic from inside the network"
 - ❌ "IDS blocks attacks"

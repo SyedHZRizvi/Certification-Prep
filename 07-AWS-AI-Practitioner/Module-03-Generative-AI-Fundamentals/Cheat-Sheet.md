@@ -32,12 +32,12 @@
 
 ## 👻 Hallucination Mitigations (memorize this list)
 
-1. **RAG** — ground answers in real data (Module 5)
-2. **Better prompting** — few-shot, system instructions, "say I don't know"
-3. **Fine-tuning** — embed domain knowledge in weights (Module 6)
-4. **Guardrails** — filter / block bad outputs (Module 7)
-5. **Lower temperature** — less wandering
-6. **Human review** — final safety net for high-stakes outputs
+1. **RAG**, ground answers in real data (Module 5)
+2. **Better prompting**, few-shot, system instructions, "say I don't know"
+3. **Fine-tuning**, embed domain knowledge in weights (Module 6)
+4. **Guardrails**, filter / block bad outputs (Module 7)
+5. **Lower temperature**, less wandering
+6. **Human review**, final safety net for high-stakes outputs
 
 ---
 

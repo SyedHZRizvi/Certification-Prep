@@ -1,11 +1,11 @@
 # Module 4: Tool Use & Function Calling 🔧
 
-> **Why this module matters:** Without tools, Claude is a brilliant essayist with no hands. With tools, Claude becomes the engine behind every modern AI agent — Cursor, Replit Agent, Klarna's support bot, Lindy, Anthropic's own claude-code. Tool use is *the* atomic primitive of agentic AI, and Anthropic's tool API has specific shape, parallel-execution semantics, and multi-turn handling you must master before Module 6's agent patterns make any sense.
+> **Why this module matters:** Without tools, Claude is a brilliant essayist with no hands. With tools, Claude becomes the engine behind every modern AI agent, Cursor, Replit Agent, Klarna's support bot, Lindy, Anthropic's own claude-code. Tool use is *the* atomic primitive of agentic AI, and Anthropic's tool API has specific shape, parallel-execution semantics, and multi-turn handling you must master before Module 6's agent patterns make any sense.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–3 (model, prompting, API)
-> - JSON Schema (Draft 7 / 2020-12 — same idea)
-> - HTTP API design — REST verbs, request/response shapes
+> - JSON Schema (Draft 7 / 2020-12, same idea)
+> - HTTP API design, REST verbs, request/response shapes
 > - A sense of where "agent" sits in the LLM landscape (we go deeper in Module 6)
 
 ---
@@ -28,11 +28,11 @@ In November 2024, Lily's engineer Wen rewrites the flow using Claude tool use. S
 The new flow:
 
 1. Customer sends "I want a refund on order #12345"
-2. Claude calls `lookup_order(order_id="12345")` — gets the order
-3. Claude calls `check_refund_policy(order_date=...)` — gets back "within 30 days, refundable"
-4. Claude calls `issue_refund(order_id="12345", reason="Customer request, within policy")` — Shopify processes
-5. Claude calls `notify_customer(order_id="12345", message="...")` — confirmation email
-6. Claude replies in chat: "I've refunded order #12345 — you'll see the credit in 5–10 business days"
+2. Claude calls `lookup_order(order_id="12345")`, gets the order
+3. Claude calls `check_refund_policy(order_date=...)`, gets back "within 30 days, refundable"
+4. Claude calls `issue_refund(order_id="12345", reason="Customer request, within policy")`, Shopify processes
+5. Claude calls `notify_customer(order_id="12345", message="...")`, confirmation email
+6. Claude replies in chat: "I've refunded order #12345, you'll see the credit in 5–10 business days"
 7. **Median time: 11 minutes** (mostly waiting on Stripe to confirm)
 
 The model did not actually *execute* anything. It only *requested* tool calls. Wen's Python code executed each call, returned the results to Claude, and Claude composed the final answer. This is the entire model of tool use in three sentences. The rest of this module is making it concrete.
@@ -65,15 +65,15 @@ The model did not actually *execute* anything. It only *requested* tool calls. W
 
 The three actors:
 
-1. **Claude** — decides *which* tool, *with what arguments*. Does NOT execute.
-2. **Your code** — receives the `tool_use` request, executes the actual API call, returns the result as a `tool_result`.
-3. **The user** — never sees the tool dance unless your UI surfaces it.
+1. **Claude**, decides *which* tool, *with what arguments*. Does NOT execute.
+2. **Your code**, receives the `tool_use` request, executes the actual API call, returns the result as a `tool_result`.
+3. **The user**, never sees the tool dance unless your UI surfaces it.
 
 This is the entire model. Once you internalize "Claude requests; you execute," the rest is plumbing.
 
 ---
 
-## 📐 Defining a Tool — JSON Schema Inside the API
+## 📐 Defining a Tool, JSON Schema Inside the API
 
 A tool is a JSON object with three fields: `name`, `description`, and `input_schema`. The `input_schema` is JSON Schema (Draft 7+).
 
@@ -114,13 +114,13 @@ Pass `tools=tools` to `client.messages.create(...)`.
 ### What makes a *good* tool definition
 
 1. **`description` is everything.** This is what Claude reads to decide whether/when to use the tool. Be explicit about preconditions, postconditions, side effects, error modes, and when NOT to use the tool.
-2. **`name` should be a verb_noun.** `lookup_order`, `issue_refund`, `send_email`, `search_codebase` — pattern-match the rest of the ecosystem.
+2. **`name` should be a verb_noun.** `lookup_order`, `issue_refund`, `send_email`, `search_codebase`, pattern-match the rest of the ecosystem.
 3. **Use JSON Schema features.** `enum`, `pattern`, `format`, `minimum`/`maximum`, `description` on each property. The model uses these.
 4. **Mark `required` correctly.** If a parameter is optional, leave it out of `required`. The model will not invent values for unrequired params.
-5. **Lean on type hints.** `string` / `integer` / `boolean` / `array` / `object` — JSON Schema base types. For dates, `string` with `format: date-time` and a regex `pattern`.
+5. **Lean on type hints.** `string` / `integer` / `boolean` / `array` / `object`, JSON Schema base types. For dates, `string` with `format: date-time` and a regex `pattern`.
 6. **Keep the tool surface small.** 3–10 tools is the sweet spot for a single Claude call. >20 tools, and the model gets confused; consider hierarchical agents (Module 6) instead.
 
-🚨 **Trap on the exam:** *"The model executes the tool itself."* — FALSE. The model *requests* tool calls; your code executes them.
+🚨 **Trap on the exam:** *"The model executes the tool itself."*, FALSE. The model *requests* tool calls; your code executes them.
 
 ---
 
@@ -188,17 +188,17 @@ while True:
 | Step | What happens |
 |------|--------------|
 | 1 | User message goes in |
-| 2 | Claude responds — may contain text AND/OR one or more `tool_use` blocks |
+| 2 | Claude responds, may contain text AND/OR one or more `tool_use` blocks |
 | 3 | If `stop_reason == "tool_use"`, your code executes the tool(s) |
 | 4 | Send back `tool_result` blocks in a *user-role* message |
-| 5 | Claude continues — may call more tools, or end with text |
+| 5 | Claude continues, may call more tools, or end with text |
 | 6 | Loop until `stop_reason == "end_turn"` |
 
 🎯 **Exam pattern:** *"In which role do you send tool results back to Claude?"* → **`user`** (with `content: [{type: "tool_result", tool_use_id: ..., content: ...}]`).
 
 ---
 
-## ⚡ Parallel Tool Use — A Key Differentiator
+## ⚡ Parallel Tool Use, A Key Differentiator
 
 Anthropic's tool use **supports parallel calls by default**. If Claude needs to look up three different things to answer a question, it can return *three `tool_use` blocks in one response*, allowing you to execute them in parallel.
 
@@ -234,7 +234,7 @@ You can hint via the `tool_choice` parameter:
 
 | `tool_choice` value | Behavior |
 |---------------------|----------|
-| `{"type": "auto"}` (default) | Claude decides — may use parallel calls |
+| `{"type": "auto"}` (default) | Claude decides, may use parallel calls |
 | `{"type": "any"}` | Claude MUST use a tool (any tool); useful when you require a structured output |
 | `{"type": "tool", "name": "lookup_order"}` | Claude MUST use this specific tool |
 | `{"type": "auto", "disable_parallel_tool_use": true}` | Claude is restricted to one tool per turn |
@@ -285,9 +285,9 @@ This is often **more reliable than prefill-`{`** for complex schemas because the
 
 ---
 
-## 🤖 Computer Use — The Sonnet 3.5+ / 4 Beta
+## 🤖 Computer Use, The Sonnet 3.5+ / 4 Beta
 
-In October 2024, Anthropic shipped a **computer use** capability — first on Claude 3.5 Sonnet, now also on 4-series models. The model can take screenshots, click coordinates, type text, and scroll, treating the desktop as a tool surface. It is gated behind a beta header.
+In October 2024, Anthropic shipped a **computer use** capability, first on Claude 3.5 Sonnet, now also on 4-series models. The model can take screenshots, click coordinates, type text, and scroll, treating the desktop as a tool surface. It is gated behind a beta header.
 
 ### How it works
 
@@ -295,7 +295,7 @@ Anthropic provides three "anthropic-defined" tools for computer use:
 
 | Tool | What it does |
 |------|--------------|
-| `computer_20241022` (or current version) | The desktop-control tool — actions like `key`, `type`, `mouse_move`, `left_click`, `screenshot` |
+| `computer_20241022` (or current version) | The desktop-control tool, actions like `key`, `type`, `mouse_move`, `left_click`, `screenshot` |
 | `text_editor_20241022` | View/edit files via a controlled text editor |
 | `bash_20241022` | Execute bash commands |
 
@@ -315,7 +315,7 @@ response = client.beta.messages.create(
 )
 ```
 
-You implement the executor side — typically a Docker container running an X server, with a Python script translating Claude's commands into `pyautogui`, `xdotool`, or browser-automation library calls, plus a screenshot capture.
+You implement the executor side, typically a Docker container running an X server, with a Python script translating Claude's commands into `pyautogui`, `xdotool`, or browser-automation library calls, plus a screenshot capture.
 
 ### Where you actually use this
 
@@ -329,7 +329,7 @@ You implement the executor side — typically a Docker container running an X se
 - **THIS IS BETA.** Behavior changes. Don't ship to production-critical paths without backstops.
 - **Sandbox it.** Run in a VM/container. The model will, occasionally, click the wrong thing.
 - **Add explicit "stop and ask" prompts** for destructive actions (file deletion, payments).
-- **Rate limits are different** — computer use is expensive in tokens (each screenshot is ~1500 tokens).
+- **Rate limits are different**, computer use is expensive in tokens (each screenshot is ~1500 tokens).
 - **Recovery from confusion is hard.** When the model gets stuck (wrong-state UI), it can loop endlessly. Set step caps and watchdog timeouts.
 
 🎯 **Exam pattern:** *"Which Anthropic capability allows Claude to take screenshots and click on UI elements?"* → **Computer use** (currently beta, opt in via `betas=["computer-use-..."]`).
@@ -372,7 +372,7 @@ Module 8 covers prompt injection in depth.
 
 ### 3. Log tool calls
 
-Every tool call should be logged with: tool name, arguments, result, timestamp, calling user, model used. This is your audit trail when something goes wrong — and it WILL go wrong eventually.
+Every tool call should be logged with: tool name, arguments, result, timestamp, calling user, model used. This is your audit trail when something goes wrong, and it WILL go wrong eventually.
 
 ---
 
@@ -393,7 +393,7 @@ Every tool call should be logged with: tool name, arguments, result, timestamp, 
 
 ---
 
-## 🔬 A Real Tool Suite — The claude-code Agent SDK
+## 🔬 A Real Tool Suite, The claude-code Agent SDK
 
 Anthropic's official **claude-code** (the CLI you may be using right now) is a publicly available reference implementation of an agentic Claude system. Its tool surface is the canonical example of a well-designed agent toolset.
 
@@ -415,13 +415,13 @@ Notice:
 - Verbs as names
 - Each does ONE thing
 - Read/Edit/Write split rather than a single overloaded "FileOp"
-- Discoverability — names are intuitive
+- Discoverability, names are intuitive
 
 This is the gold-standard tool layout for a coding agent. Cursor, Sourcegraph Cody, Replit Agent, and Aider all converged on essentially the same set.
 
 ---
 
-## 🧠 Designing Your Tool Suite — Rules of Thumb
+## 🧠 Designing Your Tool Suite, Rules of Thumb
 
 1. **Verbs not nouns.** `get_user` not `User`. The model thinks in actions.
 2. **One responsibility per tool.** `send_email` not `email_or_sms`.
@@ -482,11 +482,11 @@ tools = [
 
 Notice the deliberate design choices:
 
-- **`charge_customer` requires `confirm=True`** — the model cannot accidentally trigger it
-- **Side-effect status is in the description** — Claude can reason about reversibility
-- **`hold_seats` exists** so the model can pause before charging — this is a *reasoning aid*, not a UX nicety
+- **`charge_customer` requires `confirm=True`**, the model cannot accidentally trigger it
+- **Side-effect status is in the description**, Claude can reason about reversibility
+- **`hold_seats` exists** so the model can pause before charging, this is a *reasoning aid*, not a UX nicety
 - **All tools are verbs**
-- **All schemas are tight** — IATA pattern, cabin enum, passenger bounds
+- **All schemas are tight**, IATA pattern, cabin enum, passenger bounds
 
 This is what production tool design looks like.
 
@@ -500,11 +500,11 @@ This is what production tool design looks like.
 | "Tool results go back in `assistant` role." | `user` role, with `tool_result` content blocks. |
 | "Anthropic doesn't support parallel tool use." | It supports parallel by default; opt out via `disable_parallel_tool_use=true`. |
 | "`tool_choice='auto'` forces tool use." | `auto` lets Claude decide. `any` forces some tool; `tool` forces a specific one. |
-| "Tool definitions don't affect cost." | Every tool definition is part of the prompt — counts as input tokens. |
+| "Tool definitions don't affect cost." | Every tool definition is part of the prompt, counts as input tokens. |
 | "You can hide which tool was called from the audit log." | Best practice is logging EVERY tool call. |
 | "Computer use is generally available." | It's beta; opt in via `betas=["computer-use-..."]`. |
 | "If the model returns a tool_use, the user sees nothing else." | Tool_use can appear alongside text in the same assistant response. |
-| "JSON Schema features (enum, pattern) don't matter — the model ignores them." | They matter; the model uses them and the API can validate. |
+| "JSON Schema features (enum, pattern) don't matter, the model ignores them." | They matter; the model uses them and the API can validate. |
 
 ---
 
@@ -518,18 +518,18 @@ This is what production tool design looks like.
 | **input_schema** | JSON Schema describing the tool's parameters |
 | **tool_choice** | Parameter controlling whether/which tool Claude must use |
 | **Parallel tool use** | Claude may return multiple `tool_use` blocks in one response |
-| **Computer use** | Beta capability — screenshots, clicks, typing (Sonnet 3.5+ / 4 family) |
+| **Computer use** | Beta capability, screenshots, clicks, typing (Sonnet 3.5+ / 4 family) |
 | **claude-code** | Anthropic's reference agentic CLI; canonical tool layout |
 | **Tool surface** | The set of all tools available to a single Claude call |
 | **Hierarchical agent** | Pattern where a top-level agent delegates to sub-agents with smaller tool surfaces (Module 6) |
 
 ---
 
-## 📊 Case Study — Sourcegraph Cody's Tool Architecture
+## 📊 Case Study, Sourcegraph Cody's Tool Architecture
 
 **Situation.** Sourcegraph Cody is one of the largest enterprise AI coding assistants, used inside Lyft, Booking.com, Indeed, Reddit, Apollo GraphQL, and many Fortune 500s. Cody runs primarily on Claude (Sonnet family) for its agentic flows.
 
-**The tool architecture.** Cody's "agentic mode" exposes a Claude tool surface that closely mirrors the claude-code reference: `read_file`, `edit_file`, `create_file`, `delete_file`, `search_codebase` (using their proprietary code-graph search), `run_command`, `web_fetch`. Notably, Cody adds *organization-specific* tools — read-only access to internal Jira tickets, Confluence docs, custom-component documentation.
+**The tool architecture.** Cody's "agentic mode" exposes a Claude tool surface that closely mirrors the claude-code reference: `read_file`, `edit_file`, `create_file`, `delete_file`, `search_codebase` (using their proprietary code-graph search), `run_command`, `web_fetch`. Notably, Cody adds *organization-specific* tools, read-only access to internal Jira tickets, Confluence docs, custom-component documentation.
 
 **A real design decision.** When users requested "let Cody open pull requests directly," Sourcegraph initially built a single `create_pull_request` tool. They discovered Claude would sometimes create PRs prematurely. The fix: they split it into `propose_changes` (creates a draft local commit, presents diff for review) + `open_pull_request` (only callable AFTER `propose_changes` succeeded and was reviewed).
 
@@ -549,23 +549,23 @@ This is what production tool design looks like.
 
 You now know:
 
-- 🧩 **The three-step dance** — user → Claude → your code → Claude
-- 📐 **Tool definitions** — `name`, `description`, `input_schema` (JSON Schema)
-- 🔁 **The multi-turn loop** — `tool_use` → execute → `tool_result` → repeat until `end_turn`
-- ⚡ **Parallel tool use** — supported by default; controllable via `tool_choice`
-- 🎯 **Structured output via forced tool calling** — often the most reliable schema-strict pattern
-- 🤖 **Computer use** — beta, screenshots/clicks/typing
-- 🛡️ **Safety** — auth in YOUR code, treat tool outputs as untrusted, log everything
-- 🆚 **Anthropic vs OpenAI** — same concept, different field shapes
-- 🧠 **Tool design rules** — verbs, single responsibility, small surface, descriptions matter
+- 🧩 **The three-step dance**, user → Claude → your code → Claude
+- 📐 **Tool definitions**, `name`, `description`, `input_schema` (JSON Schema)
+- 🔁 **The multi-turn loop**, `tool_use` → execute → `tool_result` → repeat until `end_turn`
+- ⚡ **Parallel tool use**, supported by default; controllable via `tool_choice`
+- 🎯 **Structured output via forced tool calling**, often the most reliable schema-strict pattern
+- 🤖 **Computer use**, beta, screenshots/clicks/typing
+- 🛡️ **Safety**, auth in YOUR code, treat tool outputs as untrusted, log everything
+- 🆚 **Anthropic vs OpenAI**, same concept, different field shapes
+- 🧠 **Tool design rules**, verbs, single responsibility, small surface, descriptions matter
 - 📊 **claude-code and Cody** as canonical examples
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🛠️ **Hands-on:** Implement a 3-tool agent (`get_weather`, `search_news`, `send_email_stub`). Make it loop until done.
-5. ➡️ Move on: [Module 5 — Model Context Protocol (MCP)](../Module-05-Model-Context-Protocol-MCP/Reading.md)
+5. ➡️ Move on: [Module 5, Model Context Protocol (MCP)](../Module-05-Model-Context-Protocol-MCP/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 5](../Module-05-Model-Context-Protocol-MCP/Reading.md) standardizes tool *discovery and transport* via MCP. [Module 6](../Module-06-Agentic-Patterns/Reading.md) orchestrates multi-step tool-using agents.
@@ -579,11 +579,11 @@ You now know:
 **Primary sources:**
 - 📄 Anthropic. [*Tool Use Documentation*](https://docs.anthropic.com/claude/docs/tool-use). The authoritative spec.
 - 📄 Anthropic. [*Computer Use Documentation*](https://docs.anthropic.com/claude/docs/computer-use). Beta capability.
-- 📄 Anthropic Cookbook — [tool_use directory](https://github.com/anthropics/anthropic-cookbook/tree/main/tool_use). Runnable recipes.
+- 📄 Anthropic Cookbook, [tool_use directory](https://github.com/anthropics/anthropic-cookbook/tree/main/tool_use). Runnable recipes.
 - 📄 JSON Schema Draft 2020-12. The schema language.
 
 **Practitioner:**
-- 📖 [claude-code source](https://github.com/anthropics/claude-code) — the canonical tool layout
-- 📖 Sourcegraph Cody — engineering blog posts on agentic mode
-- 📖 Cursor — public talks at AI Engineer Conf on tool design
+- 📖 [claude-code source](https://github.com/anthropics/claude-code), the canonical tool layout
+- 📖 Sourcegraph Cody, engineering blog posts on agentic mode
+- 📖 Cursor, public talks at AI Engineer Conf on tool design
 - 📺 Anthropic-hosted "Tool Use Workshop" recordings on YouTube

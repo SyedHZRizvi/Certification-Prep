@@ -1,6 +1,6 @@
 # Module 8: AI Content Production at Scale 🎨
 
-> **Why this module matters:** In 2026, the difference between a $5K creative budget and a $500K creative budget is mostly skill, not money. AI lets you produce text, images, video, and voice at a fraction of the cost — IF you know the pipeline. This module builds the pipeline.
+> **Why this module matters:** In 2026, the difference between a $5K creative budget and a $500K creative budget is mostly skill, not money. AI lets you produce text, images, video, and voice at a fraction of the cost, IF you know the pipeline. This module builds the pipeline.
 
 ---
 
@@ -28,12 +28,12 @@ Their stack:
 
 They beat 6 of their 8 direct competitors on Meta ad creative score (per Meta's Ad Library benchmarks) by Q4 2024. Customer acquisition cost: 34% lower than the average competitor.
 
-This module teaches you their pipeline — adapted for 2026 tools. By the end, you can ship 50+ ad creatives a month, by yourself, for under $200 in tool costs.
+This module teaches you their pipeline, adapted for 2026 tools. By the end, you can ship 50+ ad creatives a month, by yourself, for under $200 in tool costs.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The creative brief, insight, and proposition fields — covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
-> - The 3-second hook test and short-form video aspect ratios — covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md) and [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - DCT (Hook × Body × CTA) creative test matrix — covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
+> - The creative brief, insight, and proposition fields, covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
+> - The 3-second hook test and short-form video aspect ratios, covered in [Module 3](../Module-03-Google-Ads-PMax-Display-Video/Reading.md) and [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
+> - DCT (Hook × Body × CTA) creative test matrix, covered in [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
 > If any of these are shaky, pause and review before continuing.
 
 ---
@@ -43,25 +43,25 @@ This module teaches you their pipeline — adapted for 2026 tools. By the end, y
 Don't try to AI-everything-at-once. The pros work in stages.
 
 ```
-STAGE 1 — STRATEGY (human-led)
+STAGE 1, STRATEGY (human-led)
   Brief → Insight → Message variations → AI prompt inputs
 
-STAGE 2 — GENERATION (AI-led, human-supervised)
+STAGE 2, GENERATION (AI-led, human-supervised)
   Text → Image → Video → Voice → Composite
   In SERIES, not parallel. Each stage feeds the next.
 
-STAGE 3 — REFINEMENT (human-led)
+STAGE 3, REFINEMENT (human-led)
   Quality control, brand-voice check, legal/compliance check
 
-STAGE 4 — DISTRIBUTION + ITERATION (mixed)
+STAGE 4, DISTRIBUTION + ITERATION (mixed)
   Ship to platforms, measure, feed winners back into prompts
 ```
 
-The mistake beginners make: trying to generate a video ad in one prompt. The pros generate the script first, then the storyboard, then the visuals, then the audio, then composite — with QC at each step.
+The mistake beginners make: trying to generate a video ad in one prompt. The pros generate the script first, then the storyboard, then the visuals, then the audio, then composite, with QC at each step.
 
 ---
 
-## ✍️ Stage 1: AI Writing — Claude / ChatGPT / Gemini
+## ✍️ Stage 1: AI Writing, Claude / ChatGPT / Gemini
 
 ### When to Use Each Model (2026)
 
@@ -79,7 +79,7 @@ The mistake beginners make: trying to generate a video ad in one prompt. The pro
 Create ONE persistent context that holds your brand voice. Reuse it forever.
 
 ```
-[YOUR BRAND VOICE PROJECT — paste once, reuse forever]
+[YOUR BRAND VOICE PROJECT, paste once, reuse forever]
 
 You are the in-house copywriter for Sunday Studio, a Pilates apparel
 brand for women aged 28-45. Your job is to write copy that matches our
@@ -95,9 +95,9 @@ NEVER USE THESE WORDS:
 amazing, incredible, unlock, game-changer, supercharge,
 revolutionize, perfect, ultimate, awesome
 
-TONE EXAMPLES (mimic these — they were written by our founder):
+TONE EXAMPLES (mimic these, they were written by our founder):
 1. "It took us 14 fabric samples to find one that doesn't ride up. 
-   Try it for one class — if it does ride up, we'll refund you."
+   Try it for one class, if it does ride up, we'll refund you."
 2. "Made in LA in a 6-person workshop. Limited runs because we don't
    want to compromise. Sign up below to get notified."
 3. "Yes, our tops are $48. Lululemon's are $98 with worse stitching.
@@ -112,7 +112,7 @@ OUR CUSTOMER:
 
 Save this in **Claude Projects** (Claude.ai) or **Custom GPTs** (ChatGPT). Every future request: "Write 10 Meta ad headlines for our new spring collection" produces on-voice content immediately.
 
-### Prompt Library — Build It Once
+### Prompt Library, Build It Once
 
 Create a Notion (or Google Docs) page called "Prompts." Save every prompt that worked. Categorize:
 
@@ -134,7 +134,7 @@ After 6 months, you'll have 200+ tested prompts. Asset velocity 10x's. This is w
 
 ---
 
-## 🖼️ Stage 2: AI Image Generation — Midjourney v7
+## 🖼️ Stage 2: AI Image Generation, Midjourney v7
 
 Midjourney remained the leader for marketing imagery through 2024–2025. **Midjourney v7** (released late 2025) is the current standard. DALL-E 3, Flux Pro, and Adobe Firefly 3 are strong alternatives for specific needs.
 
@@ -162,8 +162,8 @@ of field f/2.0, intimate angle, neutral color grading
 | `--c 0` | Chaos (0-100); creative variation |
 | `--cref [URL]` | Character reference (consistent person across images) |
 | `--sref [URL]` | Style reference (mimic a reference image's aesthetic) |
-| `--no [thing]` | Negative prompt — exclude something |
-| `--seed [number]` | Reproducibility — same prompt + seed = same image |
+| `--no [thing]` | Negative prompt, exclude something |
+| `--seed [number]` | Reproducibility, same prompt + seed = same image |
 
 ### Prompt Patterns by Use Case
 
@@ -191,10 +191,10 @@ photorealistic
 
 ### Common Mistakes
 
-- ❌ Single-shot prompts with no parameters — you'll get generic stock-looking images
-- ❌ Not using `--cref` for repeating characters — your "founder" looks different each image
-- ❌ Asking Midjourney to render text — STILL bad in v7. Use Canva/Figma for any text overlays
-- ❌ Single aspect ratio — always render in 1:1, 4:5, AND 9:16 for full platform coverage
+- ❌ Single-shot prompts with no parameters, you'll get generic stock-looking images
+- ❌ Not using `--cref` for repeating characters, your "founder" looks different each image
+- ❌ Asking Midjourney to render text, STILL bad in v7. Use Canva/Figma for any text overlays
+- ❌ Single aspect ratio, always render in 1:1, 4:5, AND 9:16 for full platform coverage
 
 ---
 
@@ -251,14 +251,14 @@ HeyGen creates AI avatars that look and speak as a real person. For founder-led 
 
 1. Record yourself for 5 minutes (or upload existing footage)
 2. HeyGen creates your "AI avatar"
-3. Type any script — your avatar reads it on video
+3. Type any script, your avatar reads it on video
 4. Multi-language: same avatar speaks Spanish, German, Japanese with lip sync
 
 **Real example**: Mike Salguero, founder of ButcherBox, publicly shared at Shopify Editions 2024 that he uses a HeyGen avatar for 60% of their email video greetings. Customers don't notice. Open rates: same as his real recordings.
 
 ---
 
-## 🎙️ Stage 4: AI Voice — ElevenLabs
+## 🎙️ Stage 4: AI Voice, ElevenLabs
 
 ElevenLabs Multilingual v3 (2025) is the current standard for AI voiceover. Quality is indistinguishable from human voice for short-form content.
 
@@ -288,7 +288,7 @@ ElevenLabs Multilingual v3 (2025) is the current standard for AI voiceover. Qual
 
 ## 🔁 Batch Production: Make.com + n8n
 
-The secret to producing 50+ assets per month isn't speed — it's automation. Make.com (formerly Integromat) and n8n let you chain AI tools into batch pipelines.
+The secret to producing 50+ assets per month isn't speed, it's automation. Make.com (formerly Integromat) and n8n let you chain AI tools into batch pipelines.
 
 ### Example: "Generate 30 Ad Variants" Pipeline
 
@@ -396,7 +396,7 @@ Compare to: hiring one freelance designer at $4K/mo. The math is obvious.
 
 ## 🎓 Real Case Study: How Klarna Cut Marketing Costs 25% With AI
 
-Klarna's CEO Sebastian Siemiatkowski publicly shared at the [Klarna Q3 2024 earnings call](https://www.klarna.com/) that AI tools reduced their marketing production costs by **$10M+ annually** — and headcount in marketing operations dropped by ~20%.
+Klarna's CEO Sebastian Siemiatkowski publicly shared at the [Klarna Q3 2024 earnings call](https://www.klarna.com/) that AI tools reduced their marketing production costs by **$10M+ annually**, and headcount in marketing operations dropped by ~20%.
 
 What they automated:
 
@@ -405,7 +405,7 @@ What they automated:
 - Translation: 100% of regional copy via AI (then native review)
 - A/B test variant generation: 90% AI-generated
 
-Sebastian's framing: "AI isn't replacing marketers. It's replacing the bottleneck that's been holding marketers back — production capacity. Our marketers now strategize and review, not produce."
+Sebastian's framing: "AI isn't replacing marketers. It's replacing the bottleneck that's been holding marketers back, production capacity. Our marketers now strategize and review, not produce."
 
 ---
 
@@ -454,15 +454,15 @@ You now know:
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
 Each prompt has more than one defensible answer. Argue from the frameworks in this module.
 
-1. Bloom Hydration's 2-person team out-produced an agency with $28K. A skeptic says they could have hired one mid-level designer for the same money and gotten better assets. Argue both sides — when does AI volume beat human craft, and when does the opposite hold?
-2. The reading prescribes a STAGED pipeline (Strategy → Generation → Refinement → Distribution) and warns against "single-shotting" complex outputs. Defend the case that for a solo founder running a 14-day capstone, the discipline of staging is too slow — and the case that skipping stages is exactly why most beginner AI content looks generic.
+1. Bloom Hydration's 2-person team out-produced an agency with $28K. A skeptic says they could have hired one mid-level designer for the same money and gotten better assets. Argue both sides, when does AI volume beat human craft, and when does the opposite hold?
+2. The reading prescribes a STAGED pipeline (Strategy → Generation → Refinement → Distribution) and warns against "single-shotting" complex outputs. Defend the case that for a solo founder running a 14-day capstone, the discipline of staging is too slow, and the case that skipping stages is exactly why most beginner AI content looks generic.
 3. The US Copyright Office's 2024 position is that AI output isn't copyrightable on its own; human modifications can be. Build the case for relying heavily on AI generation for fast-moving paid creative (where copyright matters less) and the case against (where original brand IP matters). Where does each apply?
 4. EU AI Act (2026) requires disclosure of AI deepfakes / synthetic likenesses in ads. A growth team argues this kills HeyGen avatar ads entirely. A legal counsel argues a small disclosure badge is enough. Walk through the brand-trust and conversion-rate trade-offs.
-5. Voice cloning legally requires consent in many jurisdictions. A founder wants to clone a famous podcaster's voice "just to test" an internal demo. Walk through where the legal, ethical, and brand-reputation lines actually fall — and what an honest internal review process looks like.
+5. Voice cloning legally requires consent in many jurisdictions. A founder wants to clone a famous podcaster's voice "just to test" an internal demo. Walk through where the legal, ethical, and brand-reputation lines actually fall, and what an honest internal review process looks like.
 
 ---
 
@@ -475,10 +475,10 @@ Each prompt has more than one defensible answer. Argue from the frameworks in th
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Midjourney Official Docs](https://docs.midjourney.com/) — current parameters + version notes
-- 📖 [Runway Academy](https://academy.runwayml.com/) — free training on Runway Gen-4
+- 📖 [Midjourney Official Docs](https://docs.midjourney.com/), current parameters + version notes
+- 📖 [Runway Academy](https://academy.runwayml.com/), free training on Runway Gen-4
 - 📖 [ElevenLabs Voice Cloning Guide](https://elevenlabs.io/docs)
-- 📖 [Demand Curve — AI Marketing Stack](https://www.demandcurve.com/playbooks)
-- 📖 [Anthropic — Claude Projects Documentation](https://docs.anthropic.com/)
-- 📖 [Klarna Annual Reports — AI Impact](https://www.klarna.com/) — earnings call disclosures
-- 📖 [EU AI Act — Marketing Implications](https://artificialintelligenceact.eu/) — for compliance reading
+- 📖 [Demand Curve, AI Marketing Stack](https://www.demandcurve.com/playbooks)
+- 📖 [Anthropic, Claude Projects Documentation](https://docs.anthropic.com/)
+- 📖 [Klarna Annual Reports AI Impact](https://www.klarna.com/) earnings call disclosures
+- 📖 [EU AI Act Marketing Implications](https://artificialintelligenceact.eu/) for compliance reading

@@ -3,16 +3,16 @@
 > **Why this module matters:** Logistics is where supply chains actually move. Expect 8–12 exam questions on transportation mode trade-offs, warehouse operations, DC types, and 3PL/4PL relationships. The vocabulary is dense and the trade-offs are calculable.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Network design (centralized vs decentralized, crossdock, hub-and-spoke)](../Module-02-Supply-Chain-Design/Reading.md) — Module 2
-> - [Inventory math (EOQ, SS, ROP)](../Module-05-Inventory-Capacity/Reading.md) — Module 5
-> - [Supplier contracts and SLA basics](../Module-06-Sourcing-Supplier-Management/Reading.md) — Module 6
+> - [Network design (centralized vs decentralized, crossdock, hub-and-spoke)](../Module-02-Supply-Chain-Design/Reading.md), Module 2
+> - [Inventory math (EOQ, SS, ROP)](../Module-05-Inventory-Capacity/Reading.md), Module 5
+> - [Supplier contracts and SLA basics](../Module-06-Sourcing-Supplier-Management/Reading.md), Module 6
 > Course `12-ASCM-CLTD` (Certified in Logistics, Transportation, and Distribution) takes this module's content 4× deeper if logistics is your career focus.
 
 ---
 
 ## 🚢 A Story: The Sneaker Brand That Stopped Flying
 
-Naomi runs logistics for **Apex Footwear**, a $400M sneaker brand. Their factory in Vietnam shipped finished product to the US via air for years — fast, but $4.80/pair in freight. The CFO finally insisted: "Why are we paying jet-engine costs on $80 sneakers?"
+Naomi runs logistics for **Apex Footwear**, a $400M sneaker brand. Their factory in Vietnam shipped finished product to the US via air for years, fast, but $4.80/pair in freight. The CFO finally insisted: "Why are we paying jet-engine costs on $80 sneakers?"
 
 Naomi ran the math:
 
@@ -22,7 +22,7 @@ Naomi ran the math:
 | Ocean FCL | $0.45 | 30 days | $2.4M |
 | Ocean + premium expedite | $0.85 | 18 days | $1.2M |
 
-The pure ocean move saved $4.35/pair on 8M pairs = **$34.8M/yr** — but added $2.2M of in-transit inventory and 27 days of lead time. They piloted a **hybrid**: 85% ocean for replenishment, 15% air for hot SKUs and seasonal launches.
+The pure ocean move saved $4.35/pair on 8M pairs = **$34.8M/yr**, but added $2.2M of in-transit inventory and 27 days of lead time. They piloted a **hybrid**: 85% ocean for replenishment, 15% air for hot SKUs and seasonal launches.
 
 Year-end results: $29M saved in freight, stockouts down 11%, on-time launches at 96%. The right answer wasn't "all air" or "all ocean." It was matching the mode to the SKU.
 
@@ -30,7 +30,7 @@ That's logistics strategy. This module gives you the vocabulary and trade-offs t
 
 ---
 
-## 🎯 Logistics — The Council's Definition
+## 🎯 Logistics, The Council's Definition
 
 The Council of Supply Chain Management Professionals (CSCMP) defines logistics as:
 
@@ -71,8 +71,8 @@ The **8 logistics activities** (used on the exam):
 
 | Variant | Meaning |
 |---------|--------|
-| **FTL** | Full truckload — entire trailer for one shipment |
-| **LTL** | Less-than-truckload — pooled shipments < 15,000 lbs |
+| **FTL** | Full truckload, entire trailer for one shipment |
+| **LTL** | Less-than-truckload, pooled shipments < 15,000 lbs |
 | **Parcel** | Individual packages (FedEx, UPS, USPS) |
 | **Reefer** | Refrigerated trailer |
 | **Flatbed** | Open trailer for oversized loads |
@@ -90,7 +90,7 @@ The **8 logistics activities** (used on the exam):
 | **Bonded warehouse** | Customs-supervised, deferred duty |
 | **Public warehouse** | Rented space (3PL) |
 | **Private warehouse** | Owned by the user |
-| **Contract warehouse** | Hybrid — multi-year exclusive 3PL deal |
+| **Contract warehouse** | Hybrid, multi-year exclusive 3PL deal |
 
 ### Core warehouse operations (5 functions)
 
@@ -112,10 +112,10 @@ The **8 logistics activities** (used on the exam):
 
 ### Storage strategies
 
-- **Random storage** — any SKU in any location (max density)
-- **Fixed location** — each SKU has a dedicated slot (max findability)
-- **Zone storage** — fast movers near dock, slow at the back (slotting)
-- **High-bay racking / mezzanines** — vertical density
+- **Random storage**, any SKU in any location (max density)
+- **Fixed location**, each SKU has a dedicated slot (max findability)
+- **Zone storage**, fast movers near dock, slow at the back (slotting)
+- **High-bay racking / mezzanines**, vertical density
 
 ---
 
@@ -129,13 +129,13 @@ The **8 logistics activities** (used on the exam):
 | **4PL / LLP** | Network orchestrator managing multiple 3PLs | Accenture's old supply-chain practice, GEODIS 4PL |
 | **5PL** | Marketplace / digital broker | Flexport, Project44 |
 
-A 4PL doesn't own assets — it owns the *integration*. A 3PL typically owns warehouses, trucks, or both.
+A 4PL doesn't own assets, it owns the *integration*. A 3PL typically owns warehouses, trucks, or both.
 
 🎯 **Exam tip:** 4PL is sometimes called a Lead Logistics Provider (LLP). The 4PL is **single point of accountability** for a multi-3PL network.
 
 ---
 
-## 📦 Packaging — Beyond the Box
+## 📦 Packaging, Beyond the Box
 
 | Level | Purpose | Examples |
 |-------|---------|----------|
@@ -194,7 +194,7 @@ A 4PL doesn't own assets — it owns the *integration*. A 3PL typically owns war
 
 ---
 
-## 🏛️ Customs & Documentation (preview — full in Module 8)
+## 🏛️ Customs & Documentation (preview, full in Module 8)
 
 Common logistics documents:
 
@@ -235,8 +235,8 @@ Reverse logistics handles flows of returns, recalls, repairs, recycling, and end
 | **40' HC (high cube)** | Larger volume |
 | **Reefer container** | Refrigerated |
 | **ULD (Unit Load Device)** | Air cargo containers (IATA) |
-| **Pallet — GMA 48×40** | North American standard |
-| **Pallet — EUR 1200×800** | European standard |
+| **Pallet, GMA 48×40** | North American standard |
+| **Pallet, EUR 1200×800** | European standard |
 
 ---
 
@@ -255,15 +255,15 @@ Reverse logistics handles flows of returns, recalls, repairs, recycling, and end
 
 ---
 
-## 📊 Case Study — Red Sea / Houthi Attacks and the Cape Diversion (Nov 2023-2024)
+## 📊 Case Study, Red Sea / Houthi Attacks and the Cape Diversion (Nov 2023-2024)
 
-**Situation.** Starting November 2023, Houthi militants in Yemen launched missile and drone attacks on commercial vessels in the Red Sea / Bab el-Mandeb strait, the southern gateway to the Suez Canal. By January 2024, attacks had hit ships from ~50 countries. The strait normally carries **12-15% of global trade** including 30% of global container traffic. Major carriers — Maersk, MSC, CMA CGM, Hapag-Lloyd — initially paused, then progressively re-routed around the Cape of Good Hope. The diversion added **10-14 days of transit** Asia ↔ Europe and consumed 20-25% more bunker fuel per voyage.
+**Situation.** Starting November 2023, Houthi militants in Yemen launched missile and drone attacks on commercial vessels in the Red Sea / Bab el-Mandeb strait, the southern gateway to the Suez Canal. By January 2024, attacks had hit ships from ~50 countries. The strait normally carries **12-15% of global trade** including 30% of global container traffic. Major carriers Maersk, MSC, CMA CGM, Hapag-Lloyd initially paused, then progressively re-routed around the Cape of Good Hope. The diversion added **10-14 days of transit** Asia ↔ Europe and consumed 20-25% more bunker fuel per voyage.
 
-**Decision.** Mid-December 2023, Maersk (Copenhagen) and CMA CGM (Marseille) committed to Cape routing for indefinite duration. MSC (Geneva), the world's largest by capacity, followed. By Q1 2024 ~90% of Asia-Europe container volume had shifted. Logistics responses cascaded down: 3PLs renegotiated rates, demand-shifted to **air freight** for time-critical cargo (air rates Asia-EU spiked 100-200%), and shippers like IKEA, Walmart, Tesla announced shortages or price surcharges. The Suez Canal Authority lost ~$2B in transit fee revenue in H1 2024. The combat coalition Operation Prosperity Guardian (US, UK, France, others) escorted some vessels through the Red Sea, but commercial insurance premiums quintupled — pushing most carriers to Cape routing anyway.
+**Decision.** Mid-December 2023, Maersk (Copenhagen) and CMA CGM (Marseille) committed to Cape routing for indefinite duration. MSC (Geneva), the world's largest by capacity, followed. By Q1 2024 ~90% of Asia-Europe container volume had shifted. Logistics responses cascaded down: 3PLs renegotiated rates, demand-shifted to **air freight** for time-critical cargo (air rates Asia-EU spiked 100-200%), and shippers like IKEA, Walmart, Tesla announced shortages or price surcharges. The Suez Canal Authority lost ~$2B in transit fee revenue in H1 2024. The combat coalition Operation Prosperity Guardian (US, UK, France, others) escorted some vessels through the Red Sea, but commercial insurance premiums quintupled, pushing most carriers to Cape routing anyway.
 
-**Outcome.** As of mid-2024, Red Sea transit volume was 50-60% below pre-attack baseline. Container freight rates Asia-EU rose 200-300% Q1 2024 vs Q4 2023 (Drewry's WCI). Inventory days at European retailers crept up 5-10 days as buffer against the longer lane. The crisis became a logistics case study in MIT CTL's 2024 *Supply Chain Frontiers* and ASCM's *SCM Now* 2024 issues. Notably, Maersk's Q1 2024 EBITDA rose vs Q4 2023 — spot freight gains more than offset diversion costs, mirroring their 2021 Suez performance. Strategically: nearshoring and India / Mexico sourcing accelerated, multimodal Asia-EU rail (China Railway Express through Russia, Trans-Caspian rail through Central Asia) saw a 30%+ volume jump.
+**Outcome.** As of mid-2024, Red Sea transit volume was 50-60% below pre-attack baseline. Container freight rates Asia-EU rose 200-300% Q1 2024 vs Q4 2023 (Drewry's WCI). Inventory days at European retailers crept up 5-10 days as buffer against the longer lane. The crisis became a logistics case study in MIT CTL's 2024 *Supply Chain Frontiers* and ASCM's *SCM Now* 2024 issues. Notably, Maersk's Q1 2024 EBITDA rose vs Q4 2023, spot freight gains more than offset diversion costs, mirroring their 2021 Suez performance. Strategically: nearshoring and India / Mexico sourcing accelerated, multimodal Asia-EU rail (China Railway Express through Russia, Trans-Caspian rail through Central Asia) saw a 30%+ volume jump.
 
-**Lesson for the exam / for practitioners.** This case is the modern follow-on to the 2021 Suez (Maersk Ever Given) story — same chokepoint, different failure mode. On the exam, expect questions on **mode-shift economics** (when does air make sense for cargo previously moving by ocean?), **3PL/4PL crisis governance** (multi-carrier orchestration when individual carriers diverge), and the **inventory-vs-transit math** (the safety-stock cost of a 14-day lengthened lane). The structural lesson: global logistics is fragile to geopolitics; "resilience over efficiency" (the post-2020 mantra) means active route diversification, dual-port strategies, and contractual capacity reservation — not just safety stock.
+**Lesson for the exam / for practitioners.** This case is the modern follow-on to the 2021 Suez (Maersk Ever Given) story same chokepoint, different failure mode. On the exam, expect questions on **mode-shift economics** (when does air make sense for cargo previously moving by ocean?), **3PL/4PL crisis governance** (multi-carrier orchestration when individual carriers diverge), and the **inventory-vs-transit math** (the safety-stock cost of a 14-day lengthened lane). The structural lesson: global logistics is fragile to geopolitics; "resilience over efficiency" (the post-2020 mantra) means active route diversification, dual-port strategies, and contractual capacity reservation not just safety stock.
 
 **Discussion (Socratic).**
 - Q1: An Asia-EU shipper has a 30-day customer SLA on inventory; transit time was 28 days pre-attack, 42 days post-Houthi. They can pay 8× ocean for air freight or push back on customer SLA. Walk through the calculation that picks the answer, and the secondary effects of each choice.
@@ -288,13 +288,13 @@ Reverse logistics handles flows of returns, recalls, repairs, recycling, and end
 
 ## 🚨 Exam Traps
 
-1. **Multimodal vs intermodal** — multimodal = multiple modes one contract; intermodal = container moves across modes.
-2. **OTD vs OTIF vs perfect order** — perfect order is the strictest of three.
-3. **3PL vs 4PL** — asset ownership vs orchestration.
-4. **Crossdock everywhere** — only for high-velocity predictable SKUs.
-5. **Air for high-value, low-weight** — yes; air for bulky low-value? rarely.
-6. **Reverse logistics ignored** — it's a SCOR process; expect questions.
-7. **Public vs private warehouse** — public is rented (variable cost); private is owned (fixed).
+1. **Multimodal vs intermodal**, multimodal = multiple modes one contract; intermodal = container moves across modes.
+2. **OTD vs OTIF vs perfect order**, perfect order is the strictest of three.
+3. **3PL vs 4PL**, asset ownership vs orchestration.
+4. **Crossdock everywhere**, only for high-velocity predictable SKUs.
+5. **Air for high-value, low-weight**, yes; air for bulky low-value? rarely.
+6. **Reverse logistics ignored**, it's a SCOR process; expect questions.
+7. **Public vs private warehouse**, public is rented (variable cost); private is owned (fixed).
 
 ---
 
@@ -348,23 +348,23 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The 4PL vs in-house orchestrator debate.** A $1B firm with 8 3PLs is debating whether to hire a 4PL or build in-house orchestration (Project44, FourKites integration). Build the case for each, and identify the size threshold where in-house becomes credible.
-2. **Last-mile drones vs vans, 2024-2026.** Amazon Prime Air, Wing (Alphabet), and Manna have all expanded drone delivery 2023-2024. Walk through the unit economics — when does a drone beat a van, and what's the regulatory + airspace constraint that blocks general scale-up?
+2. **Last-mile drones vs vans, 2024-2026.** Amazon Prime Air, Wing (Alphabet), and Manna have all expanded drone delivery 2023-2024. Walk through the unit economics, when does a drone beat a van, and what's the regulatory + airspace constraint that blocks general scale-up?
 3. **The crossdock that became a warehouse.** A retailer designed a crossdock for high-velocity SKUs; demand variability has increased, and goods now sit 4-7 days "in crossdock" before shipping. Diagnose the failure and prescribe the fix.
-4. **OTIF or perfect order — which to incentivize?** A logistics director is choosing between OTIF and perfect-order KPI for carrier contracts. Perfect order is harder to measure (documentation accuracy) but truer. Defend each side and the right answer for what type of business.
+4. **OTIF or perfect order, which to incentivize?** A logistics director is choosing between OTIF and perfect-order KPI for carrier contracts. Perfect order is harder to measure (documentation accuracy) but truer. Defend each side and the right answer for what type of business.
 5. **Reverse logistics in fast fashion.** Shein, Temu, and similar models drive 30%+ return rates on apparel. Reverse logistics is now ~15% of total logistics cost. Construct a 2026 strategy where return-cost is reduced 50% without harming sales.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 Marc Levinson, *The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger* — Princeton University Press, 2e 2016
-- 📖 Edward H. Frazelle, *World-Class Warehousing and Material Handling* — McGraw-Hill, 2e 2016 (the warehouse design canon)
-- 📖 Yossi Sheffi, *The Resilient Enterprise: Overcoming Vulnerability for Competitive Advantage* — MIT Press, 2007 (the foundational post-9/11 SC resilience text)
-- 📖 CSCMP *State of Logistics Report* (annual, free for non-members in summary) — current US logistics economy data
-- 📖 Martin Christopher, *Logistics & Supply Chain Management* — FT Publishing, 5e 2016 (Cranfield School of Management textbook)
+- 📖 Marc Levinson, *The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger*, Princeton University Press, 2e 2016
+- 📖 Edward H. Frazelle, *World-Class Warehousing and Material Handling*, McGraw-Hill, 2e 2016 (the warehouse design canon)
+- 📖 Yossi Sheffi, *The Resilient Enterprise: Overcoming Vulnerability for Competitive Advantage*, MIT Press, 2007 (the foundational post-9/11 SC resilience text)
+- 📖 CSCMP *State of Logistics Report* (annual, free for non-members in summary), current US logistics economy data
+- 📖 Martin Christopher, *Logistics & Supply Chain Management*, FT Publishing, 5e 2016 (Cranfield School of Management textbook)
 - 📖 ASCM CSCP Learning System Module 7 + ASCM CLTD Learning System (for deeper logistics)
-- 📰 *Journal of Commerce* (joc.com) — ocean and intermodal news; *FreightWaves* — daily trucking + logistics data; Lloyd's List — ocean trade
-- 📰 ASCM *SCM Now*, Spring 2024 — Red Sea / Suez disruption coverage
+- 📰 *Journal of Commerce* (joc.com) ocean and intermodal news; *FreightWaves* daily trucking + logistics data; Lloyd's List, ocean trade
+- 📰 ASCM *SCM Now*, Spring 2024, Red Sea / Suez disruption coverage

@@ -75,7 +75,7 @@ D. Beam width
 ### Q9. A 7B-parameter LLaMA-2 model uses an FFN expansion factor of 4. The typical hidden-state dimension is 4096; what is the intermediate FFN dimension? *(Apply)*
 A. 1024
 B. 4096
-C. 11008 (close to 4× with SwiGLU adjustment) — accept any "around 4× hidden"
+C. 11008 (close to 4× with SwiGLU adjustment), accept any "around 4× hidden"
 D. 65536
 
 ---
@@ -98,7 +98,7 @@ D. The router is hardcoded
 
 ### Q12. Why is the KV cache often the bottleneck of long-context inference? *(Analyze)*
 A. Disk I/O speed
-B. Its size scales with sequence length × layers × heads × dim — it dominates GPU VRAM
+B. Its size scales with sequence length × layers × heads × dim, it dominates GPU VRAM
 C. Network bandwidth
 D. CPU cache misses
 
@@ -115,7 +115,7 @@ D. 10× more expensive
 ### Q14. Selective state-space models (Mamba, Mamba-2) replace attention with a recurrence whose compute scales: *(Remember)*
 A. O(N²) like attention
 B. O(N log N)
-C. O(N) — linear in sequence length
+C. O(N), linear in sequence length
 D. O(1)
 
 ---
@@ -138,7 +138,7 @@ D. ELMo
 
 ### Q17. Temperature in the sampler: *(Understand)*
 A. Multiplies the logits before softmax
-B. Divides the logits by T before softmax — T<1 sharpens, T>1 flattens
+B. Divides the logits by T before softmax, T<1 sharpens, T>1 flattens
 C. Adds noise to embeddings
 D. Has no effect on output
 
@@ -186,7 +186,7 @@ D. Frequency penalty
 
 ### Q23. Why does long-context retrieval often beat long-context-only (cramming all docs into a 1M-token window)? *(Analyze)*
 A. Long context models always crash
-B. "Lost in the middle" — attention dilutes; relevant tokens get drowned in irrelevant ones
+B. "Lost in the middle", attention dilutes; relevant tokens get drowned in irrelevant ones
 C. Long context is free
 D. They are equivalent
 
@@ -203,7 +203,7 @@ D. The tokenizer
 ### Q25. A 200K-token Claude prompt is run twice; the only change is *appending* a new user turn at the end (prefix unchanged). Cache-friendliness implications: *(Analyze)*
 A. Cache misses (every byte changed)
 B. Cache holds for the unchanged prefix; only the suffix needs fresh computation
-C. Caches are random — undefined
+C. Caches are random, undefined
 D. The cache only works on prefixes ≤4K
 
 ---
@@ -219,7 +219,7 @@ D. Estimate cost at $0.50/M tokens for every model
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. Decoder-only with causal self-attention**
-GPT, Claude, LLaMA, Mistral, Gemini, DeepSeek — all decoder-only. Encoder-decoder is mostly historical for new general-purpose LLMs (T5, BART remain for specialized seq2seq tasks).
+GPT, Claude, LLaMA, Mistral, Gemini, DeepSeek, all decoder-only. Encoder-decoder is mostly historical for new general-purpose LLMs (T5, BART remain for specialized seq2seq tasks).
 
 ### Q2: **B. Byte-Pair Encoding (BPE)**
 tiktoken is OpenAI's BPE library. The vocab and merges are model-specific (`cl100k_base` for GPT-4 family; `o200k_base` for GPT-4o).
@@ -249,7 +249,7 @@ LLaMA-2 7B uses 4096 hidden × ~2.7-3× with SwiGLU = 11008. The point: FFN is ~
 Same math, vastly better memory access pattern. Memory-efficient and faster.
 
 ### Q11: **B. Router selects top-K experts per token (typically top-2)**
-Sparse activation is the entire point of MoE — vastly more parameters, only a fraction active per token.
+Sparse activation is the entire point of MoE, vastly more parameters, only a fraction active per token.
 
 ### Q12: **B. KV cache size scales with sequence × layers × heads × dim**
 For Llama-2-70B at 32K context, a single request's KV cache is ~84 GB. It dwarfs the model weights themselves on long contexts.
@@ -257,7 +257,7 @@ For Llama-2-70B at 32K context, a single request's KV cache is ~84 GB. It dwarfs
 ### Q13: **B. Roughly 0.1×–0.25× of the uncached rate**
 Anthropic's ephemeral 5-min cache reads at 0.1× (or 0.25× depending on tier). The system saved your KV cache and reuses it.
 
-### Q14: **C. O(N) — linear in sequence length**
+### Q14: **C. O(N), linear in sequence length**
 The whole appeal of Mamba/SSMs: avoid the N² attention cost. State is fixed-size; processing is per-token linear.
 
 ### Q15: **C. Inherently bidirectional attention**
@@ -266,7 +266,7 @@ Decoder-only models use *causal* (masked) attention by design. Encoder-only (BER
 ### Q16: **C. LLaMA family (and T5, PaLM, Gemma)**
 SentencePiece is Google's library; LLaMA adopted it. BERT uses WordPiece; GPT uses BPE.
 
-### Q17: **B. Divides logits by T before softmax — T<1 sharpens, T>1 flattens**
+### Q17: **B. Divides logits by T before softmax, T<1 sharpens, T>1 flattens**
 T=0 is greedy; T=0.7 is the common chat default; T>1.5 starts producing word-salad if you don't also tighten top-p.
 
 ### Q18: **B. GQA preserves more attention diversity → closer to MHA quality**
@@ -311,14 +311,14 @@ The single most common production bug is to use one tokenizer for cost estimatio
 
 - BPE vs SentencePiece vs WordPiece (which model uses which)
 - Attention formula: softmax(QKᵀ/√dk)·V
-- MHA / MQA / GQA — when to use each
-- RoPE / ALiBi / sliding window — positional schemes
+- MHA / MQA / GQA, when to use each
+- RoPE / ALiBi / sliding window, positional schemes
 - KV cache math (for a Llama-2-70B at 32K: ~84 GB)
-- MoE (Mixtral) — total vs active params
-- Mamba — linear-time state-space alternative
+- MoE (Mixtral), total vs active params
+- Mamba, linear-time state-space alternative
 - Sampling: temperature, top-p, top-k, beam, min-p
 - Prompt caching: prefix-based, 0.1×–0.25× cost
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Embeddings & Vector Databases](../Module-02-Embeddings-Vector-Databases/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Embeddings & Vector Databases](../Module-02-Embeddings-Vector-Databases/Reading.md)

@@ -23,7 +23,7 @@ A - Authoritativeness (recognized: do peers cite you?)
 T - Trustworthiness  (the site itself: HTTPS, accuracy)
 ```
 
-🚨 YMYL ("Your Money or Your Life" — health/finance/legal/safety) = higher E-E-A-T bar.
+🚨 YMYL ("Your Money or Your Life", health/finance/legal/safety) = higher E-E-A-T bar.
 
 ---
 
@@ -54,7 +54,7 @@ T - Trustworthiness  (the site itself: HTTPS, accuracy)
 
 ---
 
-## 🤖 GEO / AEO — Get Cited by AI Overviews
+## 🤖 GEO / AEO, Get Cited by AI Overviews
 
 1. **Citations to authoritative sources** in your content
 2. **FAQ sections** (H2 = question, 1–3 sentence answer)

@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Docker vs VM — Containers Explained</p>
+      <p class="vg-title">Docker vs VM, Containers Explained</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 14 min · Kernel-sharing visualized</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Proxmox VE Install — Beginner</p>
+      <p class="vg-title">Proxmox VE Install, Beginner</p>
       <p class="vg-creator">Lawrence Systems</p>
       <span class="vg-duration">⏱ 15 min · KVM HCI for home lab</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Kubernetes 101 — Pods, Services, Deployments</p>
+      <p class="vg-title">Kubernetes 101, Pods, Services, Deployments</p>
       <p class="vg-creator">TechWorld with Nana</p>
       <span class="vg-duration">⏱ 14 min · K8s conceptual map</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">How Docker Works — Namespaces + cgroups</p>
+      <p class="vg-title">How Docker Works, Namespaces + cgroups</p>
       <p class="vg-creator">Liz Rice</p>
       <span class="vg-duration">⏱ 25 min · Containers from scratch</span>
     </div>
@@ -133,11 +133,11 @@
 
 Answer these in your notebook:
 
-1. Type 1 vs Type 2 — which is for production and why?
+1. Type 1 vs Type 2, which is for production and why?
 2. Name 4 things that have to be true for vMotion to work between two ESXi hosts.
-3. Snapshot vs backup — give two reasons snapshots are NOT a backup.
-4. Container vs VM — what's the single most important architectural difference?
-5. Anti-affinity rule — give one concrete example.
-6. Kubernetes — what's a Pod?
+3. Snapshot vs backup, give two reasons snapshots are NOT a backup.
+4. Container vs VM, what's the single most important architectural difference?
+5. Anti-affinity rule, give one concrete example.
+6. Kubernetes, what's a Pod?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

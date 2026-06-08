@@ -121,7 +121,7 @@ Vertex AI Search (menu/upsell grounding) + POS
 
 ✅ Often **right**:
 
-- "Native multi-modal — joint training, one model, all modalities"
+- "Native multi-modal, joint training, one model, all modalities"
 - "Image ≈ 258 tokens; audio ≈ 32 tokens/sec; video ≈ 290/sec at 1 fps"
 - "Files API for >20MB or reused files"
 - "Default video sampling = 1 fps + audio"

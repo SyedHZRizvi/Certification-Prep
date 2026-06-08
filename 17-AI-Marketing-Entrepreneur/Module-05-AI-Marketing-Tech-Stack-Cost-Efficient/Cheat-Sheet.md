@@ -22,15 +22,15 @@ Any "no" → cancel.
 ## 🛠️ The 9 Stack Categories
 
 ```
-1. LLM                — $20/mo
-2. Image / video AI    — $10–30/mo
-3. Productivity/docs  — Free–$12/mo
-4. PM/CRM             — Free
-5. Outbound           — $235/mo (skip if inbound-led)
-6. SEO/research       — $129/mo (pick ONE)
-7. Email + automation — Free–$20/mo
-8. Analytics          — Free
-9. Billing/contracts  — $25/mo
+1. LLM: $20/mo
+2. Image / video AI: $10–30/mo
+3. Productivity/docs , Free–$12/mo
+4. PM/CRM            , Free
+5. Outbound: $235/mo (skip if inbound-led)
+6. SEO/research: $129/mo (pick ONE)
+7. Email + automation, Free–$20/mo
+8. Analytics         , Free
+9. Billing/contracts: $25/mo
 ```
 
 ---
@@ -39,9 +39,9 @@ Any "no" → cancel.
 
 | Tier | Profile | $/mo |
 |---|---|---|
-| Tier 1 — Solo, inbound-led | $20 LLM + $10 image + $12 Workspace + $129 Ahrefs + $25 Bonsai | **~$196** |
-| Tier 2 — Solo, with outbound | Tier 1 + $235 outbound | **~$431** |
-| Tier 3 — Small team (3–5) | Team seats + Folk CRM + Ahrefs Std + QBO | **~$964** |
+| Tier 1, Solo, inbound-led | $20 LLM + $10 image + $12 Workspace + $129 Ahrefs + $25 Bonsai | **~$196** |
+| Tier 2, Solo, with outbound | Tier 1 + $235 outbound | **~$431** |
+| Tier 3, Small team (3–5) | Team seats + Folk CRM + Ahrefs Std + QBO | **~$964** |
 
 🎯 Target: tool spend ≈ **1–2% of revenue.**
 

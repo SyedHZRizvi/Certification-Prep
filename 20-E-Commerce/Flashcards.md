@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,22 +275,22 @@
 ## 📦 SECTION 1: BUSINESS MODELS & UNIT ECONOMICS
 
 **Q:** Define DTC (Direct-to-Consumer) e-commerce.
-**A:** A model where the brand sells directly to the end customer through its own digital storefront — owning the customer relationship, data, and margin instead of routing through wholesale or marketplaces.
+**A:** A model where the brand sells directly to the end customer through its own digital storefront, owning the customer relationship, data, and margin instead of routing through wholesale or marketplaces.
 
 **Q:** What are the four foundational unit-economics metrics for an e-commerce business?
 **A:** AOV (Average Order Value), CAC (Customer Acquisition Cost), Contribution Margin (revenue minus variable cost), and CLV (Customer Lifetime Value).
 
 **Q:** What is the "Bezos 1997 Day-1 doctrine"?
-**A:** Jeff Bezos's 1997 Shareholder Letter principle — always operate as a Day-1 startup: customer obsession, high-velocity decision-making, willingness to be misunderstood, and embrace external trends. Codified at Amazon as a permanent operating principle.
+**A:** Jeff Bezos's 1997 Shareholder Letter principle, always operate as a Day-1 startup: customer obsession, high-velocity decision-making, willingness to be misunderstood, and embrace external trends. Codified at Amazon as a permanent operating principle.
 
-**Q:** Peter Fader's *Customer Centricity* (2012) — what is the core argument?
+**Q:** Peter Fader's *Customer Centricity* (2012), what is the core argument?
 **A:** Not all customers are equal; allocate disproportionate marketing investment to the highest-CLV customers ("the heavy half") rather than treating all customers as equal. CLV is the metric, not market share.
 
 **Q:** What is the Long Tail (Anderson 2006, Brynjolfsson 2003)?
 **A:** Online retailers can profitably serve niche demand that physical retail can't, because shelf space is effectively unlimited. The aggregated demand of millions of low-volume SKUs can exceed the demand from the top hits.
 
 **Q:** Define CLV and the simplest formula.
-**A:** Customer Lifetime Value — the total profit a customer generates over their lifetime with the brand. Simple formula: AOV × Purchase Frequency × Customer Lifespan × Gross Margin %.
+**A:** Customer Lifetime Value, the total profit a customer generates over their lifetime with the brand. Simple formula: AOV × Purchase Frequency × Customer Lifespan × Gross Margin %.
 
 **Q:** What is a healthy CLV:CAC ratio for a DTC brand?
 **A:** 3:1 is the standard target. Below 1:1 you're losing money on each customer; above 5:1 you may be under-investing in growth.
@@ -312,9 +312,9 @@
 **A:** Monolithic = one platform owns both the storefront (presentation) and the commerce engine (cart, catalog, checkout). Headless = a decoupled architecture where any frontend can call commerce APIs.
 
 **Q:** What does MACH stand for?
-**A:** Microservices, API-first, Cloud-native, Headless — the architectural principles championed by the MACH Alliance for modern composable commerce.
+**A:** Microservices, API-first, Cloud-native, Headless, the architectural principles championed by the MACH Alliance for modern composable commerce.
 
-**Q:** Shopify vs Adobe Commerce — when to pick each.
+**Q:** Shopify vs Adobe Commerce, when to pick each.
 **A:** Shopify: faster time-to-launch, lower TCO, best for D2C up to mid-market, opinionated stack. Adobe Commerce: complex B2B + B2C catalogs, deep customization, multi-store enterprise needs, but higher engineering cost.
 
 **Q:** What is Shopify Hydrogen?
@@ -324,20 +324,20 @@
 **A:** Einstein AI personalization, OCAPI/SCAPI APIs, deep Salesforce CRM/Marketing Cloud integration; positioned for enterprise B2C at $100M+ GMV.
 
 **Q:** What is BigCommerce's typical sweet spot?
-**A:** Mid-market merchants ($1M-$100M GMV) wanting native multi-storefront, multi-channel feeds, and no transaction fees on top of payments — without Adobe Commerce engineering complexity.
+**A:** Mid-market merchants ($1M-$100M GMV) wanting native multi-storefront, multi-channel feeds, and no transaction fees on top of payments, without Adobe Commerce engineering complexity.
 
 **Q:** What does the Shopify Polaris design system govern?
-**A:** Polaris is Shopify's design system covering component library, content guidelines, accessibility, and merchant-facing UX patterns — used by Shopify itself and required for Shopify App Store apps.
+**A:** Polaris is Shopify's design system covering component library, content guidelines, accessibility, and merchant-facing UX patterns, used by Shopify itself and required for Shopify App Store apps.
 
 ---
 
 ## 📚 SECTION 3: PIM & CATALOG
 
 **Q:** Define PIM (Product Information Management).
-**A:** A central system of record for product data — attributes, variants, media, translations, channel-specific overrides — that syndicates clean data to storefronts, marketplaces, ads, and print.
+**A:** A central system of record for product data attributes, variants, media, translations, channel-specific overrides that syndicates clean data to storefronts, marketplaces, ads, and print.
 
 **Q:** What is GTIN and why does it matter for Google Shopping?
-**A:** Global Trade Item Number — the umbrella term for UPC, EAN, ISBN. Google Merchant Center requires GTIN for branded products; missing GTINs hurt visibility and trigger feed disapprovals.
+**A:** Global Trade Item Number, the umbrella term for UPC, EAN, ISBN. Google Merchant Center requires GTIN for branded products; missing GTINs hurt visibility and trigger feed disapprovals.
 
 **Q:** What does Akeneo specialize in?
 **A:** Open-source PIM (community edition free) with strong attribute governance, multi-locale support, and a vibrant ecosystem of connectors to Shopify, Magento, Amazon, and Salesforce.
@@ -349,7 +349,7 @@
 **A:** GS1 is the global non-profit standards body for product identification (GTIN, GLN, SSCC), maintaining the barcode and digital-link standards used in retail worldwide.
 
 **Q:** What is "merchandising" in e-commerce ops?
-**A:** The active curation of which products appear where — collection sequencing, "featured" tags, search result ranking, promotional placements — to drive both discoverability and margin.
+**A:** The active curation of which products appear where collection sequencing, "featured" tags, search result ranking, promotional placements to drive both discoverability and margin.
 
 ---
 
@@ -362,7 +362,7 @@
 **A:** Strong Customer Authentication (PSD2 regulation in EU/UK) requires two-factor verification on most card-not-present transactions. 3DS2 (3-D Secure 2.x) is the protocol that delivers SCA via the card networks.
 
 **Q:** What did South Dakota v. Wayfair (2018) change for US sales tax?
-**A:** The US Supreme Court overturned Quill (1992), establishing that states can require remote sellers to collect sales tax based on economic nexus (typically $100K in sales or 200 transactions annually) — not just physical presence.
+**A:** The US Supreme Court overturned Quill (1992), establishing that states can require remote sellers to collect sales tax based on economic nexus (typically $100K in sales or 200 transactions annually), not just physical presence.
 
 **Q:** What is EU VAT MOSS / IOSS?
 **A:** VAT MOSS (now One Stop Shop, OSS, since July 2021) lets sellers register once and remit VAT across all 27 EU states. IOSS (Import One Stop Shop) covers low-value goods (≤€150) imported into the EU.
@@ -374,23 +374,23 @@
 **A:** Stripe Radar = native to Stripe, rules + ML, free tier. Signifyd = chargeback guarantee (insurance model). Kount (Equifax) = enterprise rules + device intelligence + multi-acquirer.
 
 **Q:** What is BNPL and which platforms dominate?
-**A:** Buy Now Pay Later — installment payments at checkout. Major players: Klarna, Affirm, Afterpay (Square), PayPal Pay-in-4. UK FCA imposed regulatory oversight on Klarna in 2024.
+**A:** Buy Now Pay Later, installment payments at checkout. Major players: Klarna, Affirm, Afterpay (Square), PayPal Pay-in-4. UK FCA imposed regulatory oversight on Klarna in 2024.
 
 ---
 
 ## 🚚 SECTION 5: FULFILLMENT & LOGISTICS
 
 **Q:** Define 3PL.
-**A:** Third-Party Logistics provider — outsourced fulfillment partner that handles receiving, storage, pick-pack, shipping, and returns. Examples: ShipBob, Shipmonk, Deliverr.
+**A:** Third-Party Logistics provider, outsourced fulfillment partner that handles receiving, storage, pick-pack, shipping, and returns. Examples: ShipBob, Shipmonk, Deliverr.
 
-**Q:** FBA vs FBM on Amazon — what's the trade-off?
+**Q:** FBA vs FBM on Amazon, what's the trade-off?
 **A:** FBA (Fulfilled by Amazon) = Amazon stores and ships; Prime-eligible, higher fees (~15% + storage). FBM (Fulfilled by Merchant) = seller ships; lower fees but no Prime badge, harder to win Buy Box.
 
 **Q:** What is Amazon's Buy with Prime?
 **A:** Amazon-fulfilled order option for non-Amazon storefronts (launched 2022, opened to Shopify 2024). Shoppers see the Prime badge on the DTC site and Amazon handles delivery.
 
 **Q:** Define WMS vs OMS.
-**A:** WMS (Warehouse Management System) controls physical operations inside the warehouse — receiving, putaway, picking, packing. OMS (Order Management System) is the upstream brain — routing orders to fulfillment centers, splitting orders, managing inventory commits.
+**A:** WMS (Warehouse Management System) controls physical operations inside the warehouse receiving, putaway, picking, packing. OMS (Order Management System) is the upstream brain routing orders to fulfillment centers, splitting orders, managing inventory commits.
 
 **Q:** What is "split shipment" risk in a multi-warehouse network?
 **A:** When a single order is shipped from multiple warehouses, costs go up and customer experience suffers. OMS routing logic should optimize to single-location fulfillment when possible.
@@ -408,7 +408,7 @@
 **Q:** What is "statistical power" in A/B testing?
 **A:** Power (1-β) is the probability of detecting a real effect if it exists. Standard target: 80% power at p < 0.05. Underpowered tests miss real wins; overpowered tests waste traffic.
 
-**Q:** Kohavi/Tang/Xu (2020) — what is sample-ratio mismatch (SRM)?
+**Q:** Kohavi/Tang/Xu (2020), what is sample-ratio mismatch (SRM)?
 **A:** When the actual traffic split (e.g., 50.4% / 49.6%) deviates from the planned split, indicating a bug in randomization. SRM invalidates the test; never proceed if SRM is detected.
 
 **Q:** What are Core Web Vitals?
@@ -466,7 +466,7 @@
 **A:** MMM (Marketing Mix Modeling) = econometric top-down attribution. MTA (Multi-Touch Attribution) = bottom-up user-level path analysis. Incrementality testing = controlled holdouts measuring the lift caused by a channel.
 
 **Q:** Three primary GA4 e-commerce events.
-**A:** `view_item`, `add_to_cart`, `purchase` — plus `begin_checkout`, `add_payment_info`, `add_shipping_info`. Each requires the GA4 e-commerce parameters (items, currency, value).
+**A:** `view_item`, `add_to_cart`, `purchase`, plus `begin_checkout`, `add_payment_info`, `add_shipping_info`. Each requires the GA4 e-commerce parameters (items, currency, value).
 
 **Q:** Triple Whale vs Northbeam vs Rockerbox.
 **A:** Triple Whale = DTC-native, Shopify-first, easiest UI. Northbeam = data-warehouse-grade, custom attribution models. Rockerbox = enterprise, deep MMM + MTA hybrid, owned by Cross Screen Media.
@@ -485,7 +485,7 @@
 **A:** DDP (Delivered Duty Paid) = seller pays duties + VAT, customer sees one all-in price (better conversion). DAP (Delivered at Place) = customer pays duties on delivery (cheaper for seller, worse conversion).
 
 **Q:** What does "composable commerce" mean per the MACH Alliance?
-**A:** An architecture where best-of-breed services (catalog, search, cart, payments, CMS) are composed via APIs into a custom storefront — replacing monolithic suites.
+**A:** An architecture where best-of-breed services (catalog, search, cart, payments, CMS) are composed via APIs into a custom storefront, replacing monolithic suites.
 
 **Q:** Three established composable commerce vendors.
 **A:** commercetools (cart/checkout engine), Algolia (search), Contentful or Sanity (CMS), Stripe (payments), Vue Storefront or Hydrogen (frontend).
@@ -506,7 +506,7 @@
 - Drill these daily for the final 14 days before any exam.
 - Use the **All Sections** filter for full-deck review; switch to a single section when targeting a weak area.
 - Mark cards "Got it" only when you can recite the answer from memory in under 5 seconds.
-- Practice exams catch what flashcards miss — pair both.
+- Practice exams catch what flashcards miss, pair both.
 
 ---
 

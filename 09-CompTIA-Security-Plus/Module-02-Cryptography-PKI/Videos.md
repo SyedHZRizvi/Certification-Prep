@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Cryptography & PKI
 
-> **How to use:** Crypto is intimidating until you see it visualized. Watch the essentials in order — the analogy lock-and-mailbox videos make symmetric vs asymmetric click instantly.
+> **How to use:** Crypto is intimidating until you see it visualized. Watch the essentials in order, the analogy lock-and-mailbox videos make symmetric vs asymmetric click instantly.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -136,7 +136,7 @@
 | **Professor Messer** | Domain-by-domain free Sec+ coverage; start here for every module |
 | **Computerphile** | Crypto explained by university researchers; visual, friendly |
 | **NetworkChuck** | Energetic TLS / VPN / HTTPS breakdowns |
-| **John Hammond** | CLI demos with `openssl` — useful for PBQ "interpret this output" questions |
+| **John Hammond** | CLI demos with `openssl`, useful for PBQ "interpret this output" questions |
 | **Dion Training** | Polished scenario-based explanations |
 | **LiveOverflow** | Deeper offensive perspective on weak crypto |
 

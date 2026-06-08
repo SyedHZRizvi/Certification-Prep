@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-09-Exporting-Delivery/Cheat-Sheet/
 title: "Module 9 Cheat Sheet: Exporting & Delivery"
 ---
 
-# ⚡ Module 9 Cheat Sheet — Exporting & Delivery
+# ⚡ Module 9 Cheat Sheet, Exporting & Delivery
 
 ---
 
@@ -22,7 +22,7 @@ title: "Module 9 Cheat Sheet: Exporting & Delivery"
 
 ---
 
-## H.264 Requires Media Encoder — CRITICAL
+## H.264 Requires Media Encoder, CRITICAL
 
 ```
 AE Render Queue → does NOT have H.264/MP4
@@ -58,8 +58,8 @@ What AE Render Queue CAN export:
 |-------|---------|-------|-------|
 | **sRGB** | Web, consumer monitors | Standard | ~2.2 piecewise |
 | **Rec.709** | Broadcast TV, streaming | Same primaries as sRGB | Different curve |
-| **DCI-P3** | Cinema, Apple displays | Wider than sRGB | — |
-| **Rec.2020** | HDR TV | Very wide | — |
+| **DCI-P3** | Cinema, Apple displays | Wider than sRGB |, |
+| **Rec.2020** | HDR TV | Very wide |, |
 
 > sRGB and Rec.709 share primaries but differ in gamma.
 > Mismatch = washed-out or over-bright output.

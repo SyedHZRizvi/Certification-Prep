@@ -18,28 +18,28 @@ title: Microsoft Identity & Access Administrator Track (SC-300)
 
 ### 🎯 The promise
 
-The Microsoft Certified: Identity and Access Administrator Associate (SC-300) is the credential for the engineer who owns the most important security control in any modern enterprise — **identity**. In a Zero Trust world, the perimeter is gone; identity *is* the perimeter. SC-300 holders are the practitioners trusted with Microsoft Entra ID tenants, Conditional Access policies, MFA / passwordless rollouts, Identity Protection, Privileged Identity Management, and the External ID and B2B / B2C governance that decides who gets into your tenant and what they can do once they're in.
+The Microsoft Certified: Identity and Access Administrator Associate (SC-300) is the credential for the engineer who owns the most important security control in any modern enterprise, **identity**. In a Zero Trust world, the perimeter is gone; identity *is* the perimeter. SC-300 holders are the practitioners trusted with Microsoft Entra ID tenants, Conditional Access policies, MFA / passwordless rollouts, Identity Protection, Privileged Identity Management, and the External ID and B2B / B2C governance that decides who gets into your tenant and what they can do once they're in.
 
 ### 💼 Career outcomes after passing
 
-- **Identity & Access Administrator** ($95K–$130K) — owning the Entra ID tenant and Conditional Access policy set
-- **IAM Engineer / Identity Engineer** ($110K–$155K) — design and operate identity at enterprise scale
-- **Cloud Security Engineer (identity focus)** ($115K–$160K) — Conditional Access, PIM, Identity Protection
-- **Senior Identity Architect** ($135K–$185K) — typical 2–4 years post-SC-300
-- **Zero Trust Architect** ($140K–$200K) — identity-as-perimeter design at large enterprises
-- **Security Consultant (Microsoft Partner — identity practice)** ($120K–$180K + bonus) — Avanade, Insight, Cognizant, Mandiant
-- **CISO-track Identity Lead** ($160K–$240K + bonus) — typical at Fortune 500 with multi-tenant footprint
+- **Identity & Access Administrator** ($95K–$130K), owning the Entra ID tenant and Conditional Access policy set
+- **IAM Engineer / Identity Engineer** ($110K–$155K), design and operate identity at enterprise scale
+- **Cloud Security Engineer (identity focus)** ($115K–$160K), Conditional Access, PIM, Identity Protection
+- **Senior Identity Architect** ($135K–$185K), typical 2–4 years post-SC-300
+- **Zero Trust Architect** ($140K–$200K), identity-as-perimeter design at large enterprises
+- **Security Consultant (Microsoft Partner identity practice)** ($120K–$180K + bonus) Avanade, Insight, Cognizant, Mandiant
+- **CISO-track Identity Lead** ($160K–$240K + bonus), typical at Fortune 500 with multi-tenant footprint
 
-SC-300 pairs cleanly with **MD-102 (course 26)**, **AZ-104 (course 06)**, **AZ-800/801 (course 25)**, and **Security+ (course 09)** for the complete Modern Workplace / Identity engineer profile. Identity engineers are among the **most chronically under-supplied** roles in cybersecurity — Mandiant's 2024 M-Trends report puts identity-related compromises at the #1 initial-access vector by a wide margin, which is why identity-credentialed practitioners command a 20–30% premium over general cybersecurity peers.
+SC-300 pairs cleanly with **MD-102 (course 26)**, **AZ-104 (course 06)**, **AZ-800/801 (course 25)**, and **Security+ (course 09)** for the complete Modern Workplace / Identity engineer profile. Identity engineers are among the **most chronically under-supplied** roles in cybersecurity, Mandiant's 2024 M-Trends report puts identity-related compromises at the #1 initial-access vector by a wide margin, which is why identity-credentialed practitioners command a 20–30% premium over general cybersecurity peers.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every Entra feature introduced through a real attack-response scenario (a B2B guest with too much access, a Conditional Access wedge that locks out the admins, a PIM elevation gone wrong, a credential-phishing IR walkthrough)
-- **Original questions only** — every quiz and practice exam written from Microsoft's published SC-300 skills-measured outline; no copyrighted dumps
-- **Real-world case studies** — the SolarWinds 2020 SAML-token forgery technique (Golden SAML), the Maersk NotPetya AD recovery, an M&A identity-merge scenario, the 2023 Storm-0558 token-signing-key compromise
-- **One author, one voice** — coherent vocabulary across all 8 modules
-- **Updated for the 2026 SC-300 blueprint** — current Entra terminology (External ID, Workload Identities, Verified ID), the latest Conditional Access authentication strengths, FIDO2 / passkeys, Microsoft Entra Internet/Private Access (Global Secure Access), and the current Identity Protection signal set
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every Entra feature introduced through a real attack-response scenario (a B2B guest with too much access, a Conditional Access wedge that locks out the admins, a PIM elevation gone wrong, a credential-phishing IR walkthrough)
+- **Original questions only**, every quiz and practice exam written from Microsoft's published SC-300 skills-measured outline; no copyrighted dumps
+- **Real-world case studies**, the SolarWinds 2020 SAML-token forgery technique (Golden SAML), the Maersk NotPetya AD recovery, an M&A identity-merge scenario, the 2023 Storm-0558 token-signing-key compromise
+- **One author, one voice**, coherent vocabulary across all 8 modules
+- **Updated for the 2026 SC-300 blueprint**, current Entra terminology (External ID, Workload Identities, Verified ID), the latest Conditional Access authentication strengths, FIDO2 / passkeys, Microsoft Entra Internet/Private Access (Global Secure Access), and the current Identity Protection signal set
 
 ### 🚀 Ready to start?
 
@@ -56,8 +56,8 @@ By the end of this track, you'll be able to:
 - Stand up and brand a Microsoft Entra ID tenant, add custom domains, and pick the right license SKU (Free, P1, P2, External ID)
 - Create, manage, and bulk-provision users, security groups, M365 groups, and dynamic groups using attribute-based rules
 - Invite, audit, and govern external guests via B2B collaboration and Entra External ID
-- Roll out MFA, FIDO2 keys, Windows Hello for Business, and passwordless to a real workforce — without locking everyone out
-- Design Conditional Access policies that hit the right users, the right apps, in the right risk states — without becoming a help-desk fire
+- Roll out MFA, FIDO2 keys, Windows Hello for Business, and passwordless to a real workforce, without locking everyone out
+- Design Conditional Access policies that hit the right users, the right apps, in the right risk states, without becoming a help-desk fire
 - Configure Identity Protection user-risk and sign-in-risk policies with automated remediation
 - Register applications (OIDC, SAML, WS-Fed), wire up SSO, App Proxy, admin consent workflow, and app role assignments
 - Operate Privileged Identity Management (PIM) for Entra roles and Azure resources with eligible/active assignments and access reviews
@@ -92,20 +92,20 @@ By the end of this track, you'll be able to:
 | [Practice-Exam-2](./Practice-Exams/Practice-Exam-2.md) | After Modules 5–8 | 50 Q · 95 min | ⭐⭐⭐⭐ |
 | [Final-Mock-Exam](./Practice-Exams/Final-Mock-Exam.md) | 2–3 days before exam | 50 Q · 100 min | ⭐⭐⭐⭐⭐ |
 
-**Plus:** spin up a free Microsoft 365 E5 developer tenant (90-day renewable) and **do every Graph PowerShell / portal click yourself**. The exam has drag-drop ordering, case studies, and Yes/No groups — you need finger memory and decision speed.
+**Plus:** spin up a free Microsoft 365 E5 developer tenant (90-day renewable) and **do every Graph PowerShell / portal click yourself**. The exam has drag-drop ordering, case studies, and Yes/No groups, you need finger memory and decision speed.
 
 ---
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[Microsoft Learn SC-300 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/sc-300)** — the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft refreshes it every 3–6 months — always trust the latest version over any third-party course.
+🔗 **[Microsoft Learn SC-300 study guide](https://learn.microsoft.com/credentials/certifications/resources/study-guides/sc-300)** the exact, current list of "skills measured." Print it. Tick off every bullet as you study. Microsoft refreshes it every 3–6 months always trust the latest version over any third-party course.
 
 Also bookmark:
 
-- 🔗 [Microsoft Entra documentation](https://learn.microsoft.com/entra/) — official docs (split into Identity, External ID, Identity Governance, ID Protection)
-- 🔗 [Microsoft Graph PowerShell reference](https://learn.microsoft.com/powershell/microsoftgraph/) — every Graph cmdlet you'll need
-- 🔗 [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program) — free E5 tenant for hands-on
-- 🔗 [Identity & access conceptual docs](https://learn.microsoft.com/entra/identity/conceptual-zero-trust) — Zero Trust framing
+- 🔗 [Microsoft Entra documentation](https://learn.microsoft.com/entra/), official docs (split into Identity, External ID, Identity Governance, ID Protection)
+- 🔗 [Microsoft Graph PowerShell reference](https://learn.microsoft.com/powershell/microsoftgraph/), every Graph cmdlet you'll need
+- 🔗 [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program), free E5 tenant for hands-on
+- 🔗 [Identity & access conceptual docs](https://learn.microsoft.com/entra/identity/conceptual-zero-trust), Zero Trust framing
 - 🔗 [Conditional Access design framework](https://learn.microsoft.com/entra/identity/conditional-access/plan-conditional-access)
 
 ---
@@ -122,7 +122,7 @@ Also bookmark:
 | Format | Multiple choice + multi-select + drag-drop ordering + Yes/No groups + 1–2 case studies |
 | Delivery | Pearson VUE test center or OnVUE online proctored |
 | Retake | Wait 24 hrs after 1st failure, 14 days after 2nd–4th, 1 year after 5th |
-| Validity | 1 year — renew free via online assessment on Microsoft Learn |
+| Validity | 1 year, renew free via online assessment on Microsoft Learn |
 | Prereq | None required (AZ-900 or SC-900 strongly recommended) |
 
 ### Domain Weights (Memorize These)
@@ -134,7 +134,7 @@ Also bookmark:
 | Plan & implement workload identities | 20–25% |
 | Plan & implement identity governance | 20–25% |
 
-(Microsoft last refreshed the SC-300 objective domains 2024-10; check the live study guide above before exam day — they tweak weights without warning.)
+(Microsoft last refreshed the SC-300 objective domains 2024-10; check the live study guide above before exam day, they tweak weights without warning.)
 
 ---
 
@@ -161,13 +161,13 @@ Week 6: Module 8 (monitoring + threats) + Practice-Exam-2 + Final-Mock-Exam
 
 ## ⚠️ The 7 Most Common Reasons People Fail
 
-1. ❌ **Confused B2B vs B2C (External ID)** — partners vs consumers; the exam loves a 4-option question that hinges on this single distinction.
-2. ❌ **Wrong license tier** — CA = P1, Identity Protection = P2, PIM = P2, Lifecycle Workflows = P2 (Governance add-on in some scenarios). Memorize the table.
-3. ❌ **Built CA policies that locked themselves out** — every real admin has done it once. The exam wants you to know *break-glass accounts* + *report-only mode* + the "What If" tool.
-4. ❌ **Mixed up directory roles, Entra roles, and Azure RBAC** — three different role systems. They share names but not scopes.
-5. ❌ **Skipped App Proxy / SSO mechanics** — OIDC vs SAML vs WS-Fed, redirect URIs, reply URLs, and admin consent are 5–7 exam questions you can lock in cold.
-6. ❌ **Underrated PIM** — eligible vs active, JIT, MFA on activation, approval workflow, audit. Every governance scenario funnels through PIM.
-7. ❌ **Ignored hybrid identity** — Entra Connect, Cloud Sync, PHS, PTA, federation, write-back, Hybrid Entra Join — Microsoft tests these even though "everyone's all cloud now."
+1. ❌ **Confused B2B vs B2C (External ID)**, partners vs consumers; the exam loves a 4-option question that hinges on this single distinction.
+2. ❌ **Wrong license tier**, CA = P1, Identity Protection = P2, PIM = P2, Lifecycle Workflows = P2 (Governance add-on in some scenarios). Memorize the table.
+3. ❌ **Built CA policies that locked themselves out**, every real admin has done it once. The exam wants you to know *break-glass accounts* + *report-only mode* + the "What If" tool.
+4. ❌ **Mixed up directory roles, Entra roles, and Azure RBAC**, three different role systems. They share names but not scopes.
+5. ❌ **Skipped App Proxy / SSO mechanics**, OIDC vs SAML vs WS-Fed, redirect URIs, reply URLs, and admin consent are 5–7 exam questions you can lock in cold.
+6. ❌ **Underrated PIM**, eligible vs active, JIT, MFA on activation, approval workflow, audit. Every governance scenario funnels through PIM.
+7. ❌ **Ignored hybrid identity** Entra Connect, Cloud Sync, PHS, PTA, federation, write-back, Hybrid Entra Join Microsoft tests these even though "everyone's all cloud now."
 
 ---
 

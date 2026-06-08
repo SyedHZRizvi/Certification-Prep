@@ -36,9 +36,9 @@
 | OS | Full disk | Per file |
 |----|-----------|----------|
 | Windows | **BitLocker** | EFS |
-| macOS | **FileVault** | — |
-| Linux | **LUKS** | — |
-| Cross | VeraCrypt | — |
+| macOS | **FileVault** |, |
+| Linux | **LUKS** |, |
+| Cross | VeraCrypt |, |
 
 ---
 
@@ -61,10 +61,10 @@
 
 ## 🛡️ Wi-Fi Security Tiers
 
-- ❌ WEP — broken, never use
-- ❌ WPA — deprecated
-- ✅ WPA2-AES — solid baseline
-- ✅✅ WPA3-SAE — modern, recommended
+- ❌ WEP, broken, never use
+- ❌ WPA, deprecated
+- ✅ WPA2-AES, solid baseline
+- ✅✅ WPA3-SAE, modern, recommended
 - 🏢 WPA2/3-Enterprise = 802.1X + RADIUS (per-user)
 
 ---
@@ -90,13 +90,13 @@
 
 | Control | Type |
 |---------|------|
-| Mantrap / vestibule | Preventive — anti-tailgate |
+| Mantrap / vestibule | Preventive, anti-tailgate |
 | Badge + biometric | Preventive |
 | Visible camera | Deterrent |
 | Recording camera | Detective |
 | Cable lock | Preventive |
-| Privacy screen | Preventive — anti-shoulder-surf |
-| Shred bin | Preventive — anti-dumpster |
+| Privacy screen | Preventive, anti-shoulder-surf |
+| Shred bin | Preventive, anti-dumpster |
 
 ---
 
@@ -115,7 +115,7 @@
 ❌ Often **wrong**:
 
 - "Password + PIN = MFA"
-- "Pay the ransom — they're honest"
+- "Pay the ransom, they're honest"
 - "Disable UAC"
 - "WEP is fine"
 - "Share admin password to save time"
@@ -140,7 +140,7 @@
 2. 3 MFA factor categories with an example each? ___
 3. Encryption for Windows / Mac / Linux full disk? ___
 4. First action when ransomware is reported? ___
-5. WPA2-Enterprise vs Personal — what's the difference? ___
+5. WPA2-Enterprise vs Personal, what's the difference? ___
 
 ---
 

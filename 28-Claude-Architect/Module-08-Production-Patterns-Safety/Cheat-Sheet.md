@@ -36,7 +36,7 @@ Disciplines:
 
 ---
 
-## 🔍 Observability — Log Every Call
+## 🔍 Observability, Log Every Call
 
 ```
 request_id, model, input_tokens, output_tokens,
@@ -201,7 +201,7 @@ Treat prompts as **code**: versioned, evaluated, gated.
 ## 🗓️ Key Facts To Memorize Cold
 
 - 6 pillars: capacity / observability / injection / PII / hosting / eval
-- Direct vs indirect injection — different threat vectors
+- Direct vs indirect injection, different threat vectors
 - Authority-hierarchy system prompt pattern
 - Output moderation = Haiku second-pass
 - 529 = Anthropic overloaded; 429 = your tier limit
@@ -216,10 +216,10 @@ Treat prompts as **code**: versioned, evaluated, gated.
 ## ✏️ Quick Self-Check
 
 1. 6 production pillars? ___
-2. Authority hierarchy — what does it enumerate? ___
-3. 529 vs 429 — different meaning? ___
-4. PII redaction — at which 3 layers? ___
-5. Pre-deploy eval gate — what does it gate? ___
+2. Authority hierarchy, what does it enumerate? ___
+3. 529 vs 429, different meaning? ___
+4. PII redaction, at which 3 layers? ___
+5. Pre-deploy eval gate, what does it gate? ___
 
 If you answer all 5 in 60 seconds, you own this module. ✅
 

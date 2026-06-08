@@ -46,7 +46,7 @@ App         ──────       │ ✅
 Data + IAM  ──────       │ ✅ (ALL models)
 ```
 
-🚨 Even in SaaS — data + IAM + config = **your problem.**
+🚨 Even in SaaS, data + IAM + config = **your problem.**
 
 ---
 
@@ -68,7 +68,7 @@ Data + IAM  ──────       │ ✅ (ALL models)
 
 ## 📦 Container & Serverless Quick Hits
 
-- Containers share host kernel — root container = root host
+- Containers share host kernel, root container = root host
 - Use minimal base images, scan, sign, control registry
 - Kubernetes: RBAC + NetworkPolicy + Pod Security
 - Serverless: function IAM is the #1 risk; secrets out of env vars
@@ -100,7 +100,7 @@ OT mitigations: **segmentation, jump servers, monitoring, vendor risk**, NOT jus
 - ✅ "CASB for shadow-IT discovery"
 - ✅ "Selective wipe + containerization for BYOD"
 - ✅ "Network segmentation + monitoring (OT)"
-- ❌ "Public S3 bucket — provider's fault"
+- ❌ "Public S3 bucket, provider's fault"
 - ❌ "Disable logging to save cost"
 - ❌ "Run container as root for convenience"
 - ❌ "Connect PLC to the internet"
@@ -110,9 +110,9 @@ OT mitigations: **segmentation, jump servers, monitoring, vendor risk**, NOT jus
 ## ✏️ Quick Self-Check
 
 1. EDR vs XDR vs MDR difference?
-2. Who configures S3 bucket policy — AWS or customer?
+2. Who configures S3 bucket policy, AWS or customer?
 3. Selective wipe is associated with MDM or MAM?
-4. SCADA controllers — first 3 compensating controls when patching is impossible?
+4. SCADA controllers, first 3 compensating controls when patching is impossible?
 5. CASB vs CSPM in one line each?
 
 ---

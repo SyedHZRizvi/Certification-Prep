@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: AI/ML Fundamentals
 
-> **How to use:** Click any card to search YouTube and watch the top result. Watch them in order. Pause after each and try to re-explain the concept in your own words — that's where the learning sticks.
+> **How to use:** Click any card to search YouTube and watch the top result. Watch them in order. Pause after each and try to re-explain the concept in your own words, that's where the learning sticks.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AIF-C01 — AI/ML Fundamentals Domain Walkthrough</p>
+      <p class="vg-title">AIF-C01, AI/ML Fundamentals Domain Walkthrough</p>
       <p class="vg-creator">Stephane Maarek / ExamPro</p>
       <span class="vg-duration">⏱ 20 min · Exam-aligned coverage</span>
     </div>
@@ -72,7 +72,7 @@
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">But what is a Neural Network?</p>
       <p class="vg-creator">3Blue1Brown</p>
-      <span class="vg-duration">⏱ 19 min · Visual masterpiece — neurons, weights, learning</span>
+      <span class="vg-duration">⏱ 19 min · Visual masterpiece, neurons, weights, learning</span>
     </div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=machine+learning+evaluation+metrics+precision+recall+f1" target="_blank" rel="noopener" data-video-id="4jRBRDbJemM">
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Skill Builder — AI Practitioner Intro</p>
+      <p class="vg-title">AWS Skill Builder, AI Practitioner Intro</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 12 min · Official AWS framing</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">XGBoost Explained — Why Trees Beat Neural Nets on Tabular Data</p>
+      <p class="vg-title">XGBoost Explained, Why Trees Beat Neural Nets on Tabular Data</p>
       <p class="vg-creator">Sentdex</p>
       <span class="vg-duration">⏱ 18 min · Understand why XGBoost is the SageMaker default</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AWS DeepRacer — RL in Practice</p>
+      <p class="vg-title">AWS DeepRacer, RL in Practice</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 15 min · See RL applied to a toy car</span>
     </div>
@@ -137,7 +137,7 @@
 | **3Blue1Brown** | Visual math for deep learning concepts |
 | **AWS Machine Learning** | Official AWS channel, demos and customer talks |
 | **freeCodeCamp** | Long, free, well-produced ML courses |
-| **Stephane Maarek** | THE AWS certification channel — clean and exam-focused |
+| **Stephane Maarek** | THE AWS certification channel, clean and exam-focused |
 | **ExamPro** | Andrew Brown's free AWS cert walkthroughs |
 | **Sentdex** | Python / ML tutorials, very approachable |
 

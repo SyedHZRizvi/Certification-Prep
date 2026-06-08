@@ -20,7 +20,7 @@
 
 # 🎥 Module 10 Videos: Monitor & Governance
 
-> **How to use:** Wrap-up module — focus on the John Savill Azure Monitor overview and the Policy refresher. KQL basics will save you 10 points on the exam if a "build a query" scenario appears.
+> **How to use:** Wrap-up module, focus on the John Savill Azure Monitor overview and the Policy refresher. KQL basics will save you 10 points on the exam if a "build a query" scenario appears.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Monitor — Architecture &amp; Components</p>
+      <p class="vg-title">Azure Monitor, Architecture &amp; Components</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 24 min · The big picture</span>
     </div>
@@ -38,8 +38,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">KQL Basics — Querying Log Analytics</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">KQL Basics, Querying Log Analytics</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 18 min · Where/summarize/top</span>
     </div>
   </a>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Alerts &amp; Action Groups — End-to-End</p>
+      <p class="vg-title">Alerts &amp; Action Groups, End-to-End</p>
       <p class="vg-creator">Tim Warner</p>
       <span class="vg-duration">⏱ 14 min · Metric/log/activity alerts</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Application Insights — Workspace-based</p>
+      <p class="vg-title">Application Insights, Workspace-based</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 12 min · Distributed traces</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Network Watcher — IP Flow Verify &amp; NSG Flow Logs</p>
+      <p class="vg-title">Network Watcher, IP Flow Verify &amp; NSG Flow Logs</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 10 min · Debug NSG drops</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Workbooks — Interactive Monitoring Reports</p>
+      <p class="vg-title">Workbooks, Interactive Monitoring Reports</p>
       <p class="vg-creator">Tim Warner</p>
       <span class="vg-duration">⏱ 12 min · Parameterized KQL</span>
     </div>
@@ -125,7 +125,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Monitor + Policy deep dives. |
-| **Adam Marczak — Azure for Everyone** | KQL intro. |
+| **Adam Marczak, Azure for Everyone** | KQL intro. |
 | **Tim Warner** | Alerts + Workbooks. |
 | **Inside Cloud and Security** | AMA migration. |
 | **Microsoft Mechanics** | App Insights + Defender. |
@@ -137,7 +137,7 @@
 1. What are the two main data stores in Azure Monitor (metrics vs logs)?
 2. Default Activity Log retention?
 3. KQL: what does `summarize` do?
-4. AMA vs MMA — which is current?
+4. AMA vs MMA, which is current?
 5. Difference between a Policy assignment and a remediation task?
 
 Quiz → [Quiz](./Quiz.md)

@@ -26,7 +26,7 @@
 | Key | ONE for many services | One per service |
 | Tier | S0 only | F0 + S0+ |
 | Use when | Multiple AI services, one bill | Isolate cost/scale, or use free tier |
-| ⚠️ Excludes | **Azure OpenAI** (always separate) | — |
+| ⚠️ Excludes | **Azure OpenAI** (always separate) |, |
 
 ```bash
 az cognitiveservices account create \
@@ -107,7 +107,7 @@ Running in Azure?
 ## ⚠️ Anti-Patterns
 
 - ❌ Secrets hardcoded in `.py` files
-- ❌ One F0 resource per service per subscription (limit) — used for prod
+- ❌ One F0 resource per service per subscription (limit), used for prod
 - ❌ Legacy regional endpoint + Entra ID auth (will fail)
 - ❌ Sharing key1 with multiple apps (rotation chaos)
 - ❌ Forgetting to assign RBAC role after enabling managed identity
@@ -139,7 +139,7 @@ If you can answer all 5 in 30 seconds, you own Module 1. ✅
 
 ---
 
-## 📐 Decision Matrix — One Glance
+## 📐 Decision Matrix, One Glance
 
 | Constraint | Pick |
 |---|---|

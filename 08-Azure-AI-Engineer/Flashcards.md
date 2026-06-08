@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -290,7 +290,7 @@
 **A:** Azure AI Foundry.
 
 **Q:** Resource kind for a multi-service Azure AI services resource?
-**A:** `AIServices` — one key + endpoint for most services.
+**A:** `AIServices`, one key + endpoint for most services.
 
 **Q:** Is Azure OpenAI included in the multi-service `AIServices` resource?
 **A:** No. Azure OpenAI is always a separate `OpenAI` resource kind.
@@ -311,7 +311,7 @@
 **A:** One F0 resource per service kind per subscription.
 
 **Q:** How many keys does each Azure AI resource have, and why?
-**A:** Two (key1, key2) — for zero-downtime rotation.
+**A:** Two (key1, key2), for zero-downtime rotation.
 
 ---
 
@@ -333,10 +333,10 @@
 **A:** Microsoft-published document describing a service's capabilities, intended uses, limits, and recommended evaluations.
 
 **Q:** What catches a user typing "Ignore previous instructions"?
-**A:** Prompt Shields — user prompt attack.
+**A:** Prompt Shields, user prompt attack.
 
 **Q:** What catches malicious instructions embedded in a document being summarized?
-**A:** Prompt Shields — document (indirect) attack.
+**A:** Prompt Shields, document (indirect) attack.
 
 **Q:** What does Groundedness Detection compare?
 **A:** An LLM's response against the grounding sources you provide.
@@ -370,10 +370,10 @@
 **A:** ONE call with `visual_features=[…]`. Not one call per feature.
 
 **Q:** Custom Vision uses how many resource kinds?
-**A:** Two — Training + Prediction (or one unified CognitiveServices).
+**A:** Two, Training + Prediction (or one unified CognitiveServices).
 
 **Q:** Which Custom Vision domain do you choose to export the model for offline use?
-**A:** A "Compact" domain — exports to ONNX, TensorFlow, CoreML, or Docker.
+**A:** A "Compact" domain, exports to ONNX, TensorFlow, CoreML, or Docker.
 
 **Q:** Primary metric for Custom Vision object detection?
 **A:** mAP (mean Average Precision).
@@ -398,13 +398,13 @@
 
 ---
 
-## 🗣️ SECTION 4: NLP — LANGUAGE, TRANSLATOR, SPEECH
+## 🗣️ SECTION 4: NLP, LANGUAGE, TRANSLATOR, SPEECH
 
 **Q:** Python client for Azure AI Language?
 **A:** `TextAnalyticsClient` (from `azure.ai.textanalytics`).
 
 **Q:** Method to redact PII?
-**A:** `recognize_pii_entities` — returns entities + `.redacted_text`.
+**A:** `recognize_pii_entities`, returns entities + `.redacted_text`.
 
 **Q:** Difference between extractive and abstractive summarization?
 **A:** Extractive picks existing sentences. Abstractive generates new ones (LLM-backed, can hallucinate).
@@ -419,7 +419,7 @@
 **A:** Async/batch with source + target Azure Storage containers; preserves DOCX/PPTX format.
 
 **Q:** Custom Translator training data format?
-**A:** Parallel data — matched sentence pairs (and optional tuning + test sets).
+**A:** Parallel data, matched sentence pairs (and optional tuning + test sets).
 
 **Q:** Neural voice naming pattern?
 **A:** `<locale>-<NameNeural>`, e.g. `en-US-JennyNeural`.
@@ -444,12 +444,12 @@
 ## 📄 SECTION 5: DOCUMENT INTELLIGENCE & AI SEARCH
 
 **Q:** Mnemonic for the five Azure AI Search concepts?
-**A:** DISKS — Data source · Indexer · Skillset · Knowledge store · Search index.
+**A:** DISKS, Data source · Indexer · Skillset · Knowledge store · Search index.
 
-**Q:** Indexer in Azure AI Search — push or pull?
+**Q:** Indexer in Azure AI Search, push or pull?
 **A:** Pull. The indexer reads from a data source on a schedule.
 
-**Q:** Custom Template vs Custom Neural — which for varying layouts?
+**Q:** Custom Template vs Custom Neural, which for varying layouts?
 **A:** Custom Neural. Template is for fixed layouts.
 
 **Q:** What does a Custom Classifier model do?
@@ -474,10 +474,10 @@
 **A:** Standard (S1) or higher.
 
 **Q:** What is "hybrid + semantic" search?
-**A:** Keyword + vector merged via Reciprocal Rank Fusion, then semantic re-ranked — Microsoft's RAG gold standard.
+**A:** Keyword + vector merged via Reciprocal Rank Fusion, then semantic re-ranked, Microsoft's RAG gold standard.
 
 **Q:** What is integrated vectorization?
-**A:** A built-in Azure OpenAI Embedding skill in your skillset that vectorizes docs during indexing — no glue code.
+**A:** A built-in Azure OpenAI Embedding skill in your skillset that vectorizes docs during indexing, no glue code.
 
 **Q:** What's a Knowledge Store?
 **A:** Optional projection of skillset-enriched data to Azure Storage (tables, objects, files) for downstream analytics.
@@ -505,7 +505,7 @@
 **A:** Orchestration workflow that routes between CLU and Question Answering child projects.
 
 **Q:** Python base class for a Bot Framework bot?
-**A:** `ActivityHandler` — override `on_message_activity`, `on_members_added_activity`, etc.
+**A:** `ActivityHandler`, override `on_message_activity`, `on_members_added_activity`, etc.
 
 **Q:** What are Adaptive Cards?
 **A:** Channel-portable JSON-defined UI that renders natively across supported channels.
@@ -514,7 +514,7 @@
 **A:** Question Answering (not CLU).
 
 **Q:** Best auth for a bot calling Azure AI Language in production?
-**A:** Managed identity + RBAC role — no keys in code.
+**A:** Managed identity + RBAC role, no keys in code.
 
 ---
 
@@ -527,7 +527,7 @@
 **A:** `AzureOpenAI` (from the `openai` package).
 
 **Q:** Deployment SKU for reserved capacity + predictable latency?
-**A:** PTU — Provisioned Throughput Units.
+**A:** PTU, Provisioned Throughput Units.
 
 **Q:** Deployment SKU for cheapest async batch processing?
 **A:** Global Batch (~50% cheaper, 24-hour SLA).
@@ -539,9 +539,9 @@
 **A:** Text-to-image.
 
 **Q:** Fine-tuning data file format?
-**A:** JSONL — one `{"messages":[{...},{...},{...}]}` per line.
+**A:** JSONL, one `{"messages":[{...},{...},{...}]}` per line.
 
-**Q:** RAG vs fine-tuning — when do you fine-tune?
+**Q:** RAG vs fine-tuning, when do you fine-tune?
 **A:** For style, tone, or output-format consistency. Use RAG for changing knowledge.
 
 **Q:** What does `in_scope: true` do in On Your Data?
@@ -559,7 +559,7 @@
 **Q:** Temperature range for grounded RAG answers?
 **A:** 0.0–0.3 (low temperature = less hallucination).
 
-**Q:** Tool / function calling — what does the model return when it decides to call a function?
+**Q:** Tool / function calling, what does the model return when it decides to call a function?
 **A:** A tool call with the function name + JSON arguments. Your code executes and feeds the result back as a `tool` role message.
 
 ---
@@ -573,13 +573,13 @@
 **A:** Hub (shared infra) → Project (app workspace) → Connections, Deployments, Flows, Evals, Indexes, Agents.
 
 **Q:** What's a Foundry Connection?
-**A:** A reusable, RBAC-secured handle to an external service (Azure OpenAI, AI Search, Storage, etc.) — avoid hardcoding endpoints + keys.
+**A:** A reusable, RBAC-secured handle to an external service (Azure OpenAI, AI Search, Storage, etc.), avoid hardcoding endpoints + keys.
 
 **Q:** MaaS vs MaaP deployments?
 **A:** MaaS = serverless pay-per-token. MaaP = managed compute you scale.
 
 **Q:** What is Prompt Flow?
-**A:** A visual DAG orchestrator in Foundry — chain LLM, Python, retrieval, and embedding nodes; deploy as a managed endpoint.
+**A:** A visual DAG orchestrator in Foundry, chain LLM, Python, retrieval, and embedding nodes; deploy as a managed endpoint.
 
 **Q:** Prompt variants in Prompt Flow are used for what?
 **A:** A/B comparison of multiple prompt versions on the same evaluation set.
@@ -609,7 +609,7 @@
 
 ## 📚 STUDY TIPS
 
-- Cards mix concepts AND code shapes — recognize SDK package + class pairs.
+- Cards mix concepts AND code shapes, recognize SDK package + class pairs.
 - Use the section dropdown above to focus on weak topics.
 - After each Quiz.md, add the questions you missed as new cards.
 - Aim for ≥ 90% "Got it" before your real exam date.

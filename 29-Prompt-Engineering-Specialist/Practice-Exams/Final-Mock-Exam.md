@@ -1,4 +1,4 @@
-# 🏆 Final Mock Exam — Prompt Engineering Specialist
+# 🏆 Final Mock Exam, Prompt Engineering Specialist
 
 > **Conditions:** Set a **60-minute timer**. **60 questions**. Closed-book. Treat it like the real thing.
 > **Pass mark:** **51/60 (85%)**. This is the Cert-Hub bar.
@@ -53,7 +53,7 @@ D. Output 0.1× input
 
 ### 6. A reasoning model's hidden "thinking tokens" are:
 A. Free
-B. Billed as output tokens — can drive 5–50× higher cost per query
+B. Billed as output tokens, can drive 5–50× higher cost per query
 C. Discarded
 D. Same as Whisper transcripts
 
@@ -203,7 +203,7 @@ D. Switches models
 
 ### 31. Tool descriptions in a tool-use schema are:
 A. Documentation only
-B. A core part of the prompt — model uses them to choose and parameterize tool calls
+B. A core part of the prompt, model uses them to choose and parameterize tool calls
 C. Auto-generated
 D. Hidden from the model
 
@@ -221,7 +221,7 @@ D. ~100K tokens
 
 ### 34. EXIF rotation metadata:
 A. Always honored
-B. OFTEN NOT honored — pre-rotate
+B. OFTEN NOT honored, pre-rotate
 C. Doesn't exist
 D. Adds tokens
 
@@ -233,7 +233,7 @@ D. Grayscale
 
 ### 36. Image text in a photo (e.g., a sticky note saying "Ignore prior instructions"):
 A. Always safe
-B. Is a real prompt-injection vector — treat as untrusted input
+B. Is a real prompt-injection vector, treat as untrusted input
 C. Bills extra
 D. Auto-OCR'd safely
 
@@ -269,13 +269,13 @@ D. 1M per arm
 
 ### 42. "Pre-registration" of an A/B success metric:
 A. Pre-pays the API
-B. Defines metric and decision rule BEFORE looking at data — prevents p-hacking
+B. Defines metric and decision rule BEFORE looking at data, prevents p-hacking
 C. Registers a domain
 D. Trains the judge
 
 ### 43. Inter-annotator agreement (Cohen's κ) above ~0.7 indicates:
 A. Bad rubric
-B. Substantial agreement — well-defined task
+B. Substantial agreement, well-defined task
 C. Random scoring
 D. Bias
 
@@ -293,7 +293,7 @@ D. Bai 2022
 
 ### 46. The MOST important architectural principle for tool RESULTS:
 A. Tool outputs are trusted
-B. Tool outputs are ALWAYS untrusted input — never instructions
+B. Tool outputs are ALWAYS untrusted input, never instructions
 C. Tools must be open-source
 D. Tools must require T=0
 
@@ -305,7 +305,7 @@ D. Adding humans
 
 ### 48. "Defense in depth" against jailbreaks means:
 A. One very strong layer
-B. Multiple independent layers — system prompt + input/output filters + sandboxing + judge + red-team
+B. Multiple independent layers, system prompt + input/output filters + sandboxing + judge + red-team
 C. Hiring more engineers
 D. Bigger model
 
@@ -335,7 +335,7 @@ D. Disabled by default
 
 ### 53. A semantic cache stores responses keyed by:
 A. Plain prompt text
-B. Embedding-similarity of input — serve hit when new input is semantically close
+B. Embedding-similarity of input, serve hit when new input is semantically close
 C. API key
 D. System prompt
 
@@ -371,13 +371,13 @@ D. Email
 
 ### 59. The MOST important reason to PIN model snapshots (not float on "latest"):
 A. Lower cost
-B. Vendor regressions on new snapshots can break your prompts — pinning forces explicit eval
+B. Vendor regressions on new snapshots can break your prompts, pinning forces explicit eval
 C. Smaller context
 D. Faster startup
 
 ### 60. Capstone design challenge: A regulated insurer is building an AI claims-triage assistant that ingests text + photos + voice memos, extracts structured claim data, reasons about coverage, calls internal tools for policy lookup, and produces a recommendation reviewed by a human adjuster. The MINIMUM viable production-grade architecture is:
 A. One free-form GPT-4o call
-B. Layered defense in depth: (1) Pydantic schemas for every structured artifact (Module 4); (2) Anthropic XML-tagged few-shot retrieval (kNN over historical claims, Module 2) with `reasoning` field before `answer` for CoT-in-schema; (3) Reasoning model (Claude Extended Thinking or o3) for coverage reasoning (Module 3); (4) Gemini 2.5 for any video, Claude/GPT for image OCR with confidence + null-allowed fields (Module 5); (5) Whisper for voice memo transcription (Module 5); (6) Hardened system prompt + instruction-hierarchy delimiters + input validator (PII, encoding, language, safety classifier) + output filter + cross-family LLM-judge safety pass + tool whitelist + confirmation gates for high-risk tools (Module 7); (7) Anthropic prompt caching on the system + tool descriptions + few-shot prefix; (8) LiteLLM with primary Anthropic + OpenAI/Gemini fallbacks; (9) Pre-registered A/B framework + Langfuse observability + per-customer + per-claim spend caps; (10) Eval harness (Module 6) — golden set of 200+ claims with programmatic + LLM-judge + 2-rater human review + adversarial regression suite — run on every prompt change with cost projection blocking deploys; (11) MANDATORY human adjuster review before any payment / settlement action; (12) Pinned model snapshots with quarterly bump + full eval cycle
+B. Layered defense in depth: (1) Pydantic schemas for every structured artifact (Module 4); (2) Anthropic XML-tagged few-shot retrieval (kNN over historical claims, Module 2) with `reasoning` field before `answer` for CoT-in-schema; (3) Reasoning model (Claude Extended Thinking or o3) for coverage reasoning (Module 3); (4) Gemini 2.5 for any video, Claude/GPT for image OCR with confidence + null-allowed fields (Module 5); (5) Whisper for voice memo transcription (Module 5); (6) Hardened system prompt + instruction-hierarchy delimiters + input validator (PII, encoding, language, safety classifier) + output filter + cross-family LLM-judge safety pass + tool whitelist + confirmation gates for high-risk tools (Module 7); (7) Anthropic prompt caching on the system + tool descriptions + few-shot prefix; (8) LiteLLM with primary Anthropic + OpenAI/Gemini fallbacks; (9) Pre-registered A/B framework + Langfuse observability + per-customer + per-claim spend caps; (10) Eval harness (Module 6) golden set of 200+ claims with programmatic + LLM-judge + 2-rater human review + adversarial regression suite run on every prompt change with cost projection blocking deploys; (11) MANDATORY human adjuster review before any payment / settlement action; (12) Pinned model snapshots with quarterly bump + full eval cycle
 C. Single LLM with no structure
 D. Hardcoded regex over free-form outputs
 
@@ -403,82 +403,82 @@ D. Hardcoded regex over free-form outputs
 ## 💡 Quick Rationales (one-liner per question)
 
 ### Foundations (Q1-7)
-1. **B** — system > developer > user > tool (Wallace 2024 OpenAI Instruction Hierarchy).
-2. **B** — T=0 is greedy; absolute determinism also needs `seed` + deterministic backend.
-3. **B** — Gemini 2.5 Flash at $0.15/$0.60 per MTok is the cheapest mid-tier.
-4. **B** — Critical info at edges of context per Liu 2023 "Lost in the Middle."
-5. **B** — Output tokens cost 3-5× input on Claude/GPT/Gemini flagships.
-6. **B** — o1/o3/Extended Thinking thinking tokens are billed as output; expensive.
-7. **B** — Tay lacked system prompt + hierarchy + filter — the canonical 2016 lesson.
+1. **B**, system > developer > user > tool (Wallace 2024 OpenAI Instruction Hierarchy).
+2. **B**, T=0 is greedy; absolute determinism also needs `seed` + deterministic backend.
+3. **B**, Gemini 2.5 Flash at $0.15/$0.60 per MTok is the cheapest mid-tier.
+4. **B**, Critical info at edges of context per Liu 2023 "Lost in the Middle."
+5. **B**, Output tokens cost 3-5× input on Claude/GPT/Gemini flagships.
+6. **B**, o1/o3/Extended Thinking thinking tokens are billed as output; expensive.
+7. **B** Tay lacked system prompt + hierarchy + filter the canonical 2016 lesson.
 
 ### Few-Shot (Q8-14)
-8. **B** — Brown 2020 GPT-3 paper, *Language Models are Few-Shot Learners*.
-9. **C** — Lu 2022 showed 30+pt swings from example reorder.
-10. **B** — 200K+ context + prompt caching make many-shot economical.
-11. **B** — Balance label counts defeats majority-label bias.
-12. **B** — Min 2022 — random labels still help (format learning).
-13. **B** — kNN retrieval at runtime against a vector index.
-14. **B** — Anthropic XML tags — preferred convention for Claude few-shot.
+8. **B**, Brown 2020 GPT-3 paper, *Language Models are Few-Shot Learners*.
+9. **C**, Lu 2022 showed 30+pt swings from example reorder.
+10. **B**, 200K+ context + prompt caching make many-shot economical.
+11. **B**, Balance label counts defeats majority-label bias.
+12. **B** Min 2022 random labels still help (format learning).
+13. **B**, kNN retrieval at runtime against a vector index.
+14. **B** Anthropic XML tags preferred convention for Claude few-shot.
 
 ### CoT / Reasoning (Q15-24)
-15. **B** — Wei 2022 — *Chain-of-Thought Prompting Elicits Reasoning*.
-16. **B** — Kojima 2022's "Let's think step by step."
-17. **A** — Self-consistency = sample N with T>0, majority-vote.
-18. **C** — N=40 means 40× cost. Use N=5 if eval allows.
-19. **B** — ReAct = Thought / Action / Observation.
-20. **B** — ToT is for search-like problems (puzzles, planning).
-21. **B** — o1 lifted AIME from 13.4% to 56.7%, ~+43pt.
-22. **B** — Claude Extended Thinking exposes `budget_tokens`.
-23. **B** — "Would a smart human need to deliberate?" — the router test.
-24. **B** — DeepSeek R1 was the first open-weights reasoning model competitive with o1.
+15. **B** Wei 2022 *Chain-of-Thought Prompting Elicits Reasoning*.
+16. **B**, Kojima 2022's "Let's think step by step."
+17. **A**, Self-consistency = sample N with T>0, majority-vote.
+18. **C**, N=40 means 40× cost. Use N=5 if eval allows.
+19. **B**, ReAct = Thought / Action / Observation.
+20. **B**, ToT is for search-like problems (puzzles, planning).
+21. **B**, o1 lifted AIME from 13.4% to 56.7%, ~+43pt.
+22. **B**, Claude Extended Thinking exposes `budget_tokens`.
+23. **B** "Would a smart human need to deliberate?" the router test.
+24. **B**, DeepSeek R1 was the first open-weights reasoning model competitive with o1.
 
 ### Structured Outputs (Q25-31)
-25. **B** — L0 prompt-only → L1 JSON Mode → L2 schema-enforced.
-26. **B** — Anthropic uses forced tool use as its structured-outputs mechanism.
-27. **B** — `instructor` (Jason Liu) is the cross-provider Pydantic wrapper.
-28. **B** — `Literal` constrains the field to its listed values only.
-29. **B** — OpenAI JSON Mode requires "json" in the prompt.
-30. **B** — `instructor` reprompts with validation error context, up to max_retries.
-31. **B** — Tool descriptions are part of the prompt; model routes off them.
+25. **B**, L0 prompt-only → L1 JSON Mode → L2 schema-enforced.
+26. **B**, Anthropic uses forced tool use as its structured-outputs mechanism.
+27. **B**, `instructor` (Jason Liu) is the cross-provider Pydantic wrapper.
+28. **B**, `Literal` constrains the field to its listed values only.
+29. **B**, OpenAI JSON Mode requires "json" in the prompt.
+30. **B**, `instructor` reprompts with validation error context, up to max_retries.
+31. **B**, Tool descriptions are part of the prompt; model routes off them.
 
 ### Multi-Modal (Q32-36)
-32. **C** — Gemini 2.5 has native video.
-33. **B** — A high-detail 1024² image ≈ 1,500-2,500 tokens.
-34. **B** — EXIF rotation often NOT honored. Pre-rotate.
-35. **B** — Enumerate points + self-consistency defeats confabulation.
-36. **B** — Image text is a real injection vector. Untrusted input.
+32. **C**, Gemini 2.5 has native video.
+33. **B**, A high-detail 1024² image ≈ 1,500-2,500 tokens.
+34. **B**, EXIF rotation often NOT honored. Pre-rotate.
+35. **B**, Enumerate points + self-consistency defeats confabulation.
+36. **B**, Image text is a real injection vector. Untrusted input.
 
 ### Evaluation (Q37-43)
-37. **B** — Three pillars: programmatic / LLM-judge / human.
-38. **B** — G-Eval adds CoT + averaged samples.
-39. **B** — Cross-family judge defeats self-preference bias.
-40. **B** — RAGAS = faithfulness + relevance + context precision + recall.
-41. **B** — ~1,500 per arm for a 5pt difference at 80% power.
-42. **B** — Pre-registration prevents p-hacking.
-43. **B** — κ > 0.7 = substantial agreement; rubric is well-defined.
+37. **B**, Three pillars: programmatic / LLM-judge / human.
+38. **B**, G-Eval adds CoT + averaged samples.
+39. **B**, Cross-family judge defeats self-preference bias.
+40. **B**, RAGAS = faithfulness + relevance + context precision + recall.
+41. **B**, ~1,500 per arm for a 5pt difference at 80% power.
+42. **B**, Pre-registration prevents p-hacking.
+43. **B**, κ > 0.7 = substantial agreement; rubric is well-defined.
 
 ### Adversarial (Q44-50)
-44. **B** — Direct / indirect / multi-modal injection categories.
-45. **B** — Greshake 2023 indirect prompt injection paper.
-46. **B** — Tool outputs are ALWAYS untrusted input.
-47. **B** — Constitutional AI = self-critique against principles.
-48. **B** — Defense in depth — multiple independent layers.
-49. **B** — Air Canada chatbot liability ruling Feb 2024.
-50. **B** — DeepSeek R1 January 2025 jailbreak storm.
+44. **B**, Direct / indirect / multi-modal injection categories.
+45. **B**, Greshake 2023 indirect prompt injection paper.
+46. **B**, Tool outputs are ALWAYS untrusted input.
+47. **B**, Constitutional AI = self-critique against principles.
+48. **B** Defense in depth multiple independent layers.
+49. **B**, Air Canada chatbot liability ruling Feb 2024.
+50. **B**, DeepSeek R1 January 2025 jailbreak storm.
 
 ### Production (Q51-59)
-51. **B** — Anthropic `cache_control` ephemeral/persistent tags.
-52. **B** — OpenAI auto-caches ≥1024 tokens at ~50% off.
-53. **B** — Semantic cache keys on input embedding similarity.
-54. **B** — LiteLLM is the multi-provider abstraction de facto.
-55. **B** — TTFT <500ms = responsive chat bar.
-56. **B** — Batch APIs: 50% off + relaxed limits for non-realtime.
-57. **B** — Per-customer spend caps prevent runaway bills.
-58. **B** — OpenTelemetry GenAI semconv = vendor-neutral telemetry standard.
-59. **B** — Pin snapshots — vendor regressions break prompts silently.
+51. **B**, Anthropic `cache_control` ephemeral/persistent tags.
+52. **B**, OpenAI auto-caches ≥1024 tokens at ~50% off.
+53. **B**, Semantic cache keys on input embedding similarity.
+54. **B**, LiteLLM is the multi-provider abstraction de facto.
+55. **B**, TTFT <500ms = responsive chat bar.
+56. **B**, Batch APIs: 50% off + relaxed limits for non-realtime.
+57. **B**, Per-customer spend caps prevent runaway bills.
+58. **B**, OpenTelemetry GenAI semconv = vendor-neutral telemetry standard.
+59. **B** Pin snapshots vendor regressions break prompts silently.
 
 ### Capstone (Q60)
-60. **B** — Full 12-layer production-grade architecture. Anything less = future incident, regulatory exposure, or unreliable product.
+60. **B**, Full 12-layer production-grade architecture. Anything less = future incident, regulatory exposure, or unreliable product.
 
 ---
 
@@ -525,8 +525,8 @@ After 60 questions worth of practice across this course, recognize these pattern
 | Pattern | Likely correct |
 |---------|----------------|
 | "MOST common production..." | The boring, well-known answer (system prompts, structured outputs, eval harness, multi-provider abstraction) |
-| "BEST defense against..." | Defense in depth — the multi-layer option |
-| "MINIMUM viable architecture" | The comprehensive stack, NOT the minimal one — "minimum viable" in this course usually means "production-grade" |
+| "BEST defense against..." | Defense in depth, the multi-layer option |
+| "MINIMUM viable architecture" | The comprehensive stack, NOT the minimal one, "minimum viable" in this course usually means "production-grade" |
 | Numeric thresholds (sample size, cost) | Memorize from cheat sheets: 1500 samples for 5pt at 80% power; 1500-2500 tokens for high-detail 1K image; 5min ephemeral cache TTL; etc. |
 | "Which paper defined X" | Memorize the paper list in the flashcards Section 9 |
 | Vendor-specific syntax | Anthropic top-level system + XML; OpenAI messages[0] + response_format; Gemini config.system_instruction + response_schema |

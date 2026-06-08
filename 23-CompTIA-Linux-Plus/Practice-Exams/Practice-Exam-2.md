@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 2 — CompTIA Linux+ (XK0-005 Style)
+# 🧪 Practice Exam 2, CompTIA Linux+ (XK0-005 Style)
 
 > **Conditions:** Set a 65-minute timer. 65 questions. Treat it like the real thing.
-> **Pass mark:** 55/65 (~85%) — Linux+ passes at ~80% so aim higher in practice.
+> **Pass mark:** 55/65 (~85%), Linux+ passes at ~80% so aim higher in practice.
 > Take this AFTER finishing Modules 5–8 (so you've now covered all 8). Mix of all topics, weighted toward Modules 5–8.
 
 ---
@@ -184,7 +184,7 @@ D. Both A and B work; B is the one-step form
 
 ### 30. XFS resize behavior:
 A. Grow + shrink online
-B. Grow only — cannot shrink
+B. Grow only, cannot shrink
 C. Shrink only
 D. No resize
 
@@ -453,7 +453,7 @@ D. `firewall-cmd --add-port=2222; restart sshd`
 
 ### Why #63 = A
 - (a) Inode exhaustion is the textbook "df shows free but writes fail" symptom
-- (b) Kernel detected the disk (in dmesg) but udev didn't create the node — `udevadm trigger` re-emits events
+- (b) Kernel detected the disk (in dmesg) but udev didn't create the node, `udevadm trigger` re-emits events
 - (c) New kernel = new initramfs needed; without rebuild, LUKS modules may be missing
 - (d) StrictModes (default yes) rejects keys if `~/.ssh` is group-writable or `authorized_keys` is loose
 
@@ -468,21 +468,21 @@ D. `firewall-cmd --add-port=2222; restart sshd`
 
 ## Detailed answer rationales
 
-Concise rationales — refer to the appropriate module's Quiz or Reading for full discussion.
+Concise rationales, refer to the appropriate module's Quiz or Reading for full discussion.
 
-**1–12.** Module 5 — users/groups/sudo/PAM. See Module-05 Quiz answers for detailed rationale on each.
+**1–12.** Module 5, users/groups/sudo/PAM. See Module-05 Quiz answers for detailed rationale on each.
 
-**13–22.** Module 6 — networking, SSH, firewalld. See Module-06 Quiz answers.
+**13–22.** Module 6, networking, SSH, firewalld. See Module-06 Quiz answers.
 
-**23–33.** Module 7 — kernel modules, devices, LVM. See Module-07 Quiz answers.
+**23–33.** Module 7, kernel modules, devices, LVM. See Module-07 Quiz answers.
 
-**34–48.** Module 8 — SELinux, AppArmor, LUKS, GPG, fail2ban, auditd, sysctl. See Module-08 Quiz answers.
+**34–48.** Module 8, SELinux, AppArmor, LUKS, GPG, fail2ban, auditd, sysctl. See Module-08 Quiz answers.
 
 **49–55.** Mixed review: ACLs (Module 2), targets (Module 1), SSH copy (Module 6), cron (Module 4), bash local (Module 4), dmesg (Module 7), udev SYMLINK (Module 7).
 
 **56–61.** Mixed: dmidecode (Module 7), EPEL (Module 3), defensive bash header (Module 4), `sort | uniq | head` pattern (Module 4), here-doc (Module 4), sshd Match block (Module 6).
 
-**62 (scenario).** Service-account composition pattern — `/sbin/nologin` + correct ownership + sane modes + deployer key on deployer's own user. The exam loves this pattern; rehearse the wrong answers' specific failures (777 = wrong, root authorized_keys = wrong, single-user shell = wrong).
+**62 (scenario).** Service-account composition pattern, `/sbin/nologin` + correct ownership + sane modes + deployer key on deployer's own user. The exam loves this pattern; rehearse the wrong answers' specific failures (777 = wrong, root authorized_keys = wrong, single-user shell = wrong).
 
 **63 (scenario).** Four classic Linux symptoms each with one canonical cause. Memorize all four pairings.
 
@@ -514,4 +514,4 @@ For EACH wrong answer:
 
 ---
 
-➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md) — 90 questions, 90 minutes, real exam conditions.
+➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md), 90 questions, 90 minutes, real exam conditions.

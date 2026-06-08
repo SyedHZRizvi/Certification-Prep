@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RFI vs RFP vs RFQ — When To Use Each</p>
+      <p class="vg-title">RFI vs RFP vs RFQ, When To Use Each</p>
       <p class="vg-creator">GreyCampus</p>
       <span class="vg-duration">⏱ 10 min · Side-by-side comparison</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Contract Types — Fixed Price vs Cost-Plus</p>
+      <p class="vg-title">Contract Types, Fixed Price vs Cost-Plus</p>
       <p class="vg-creator">Damelin Online</p>
       <span class="vg-duration">⏱ 15 min · Risk shift explained</span>
     </div>

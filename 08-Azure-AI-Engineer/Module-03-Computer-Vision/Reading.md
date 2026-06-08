@@ -3,10 +3,10 @@
 > **Why this module matters:** Vision is 15–20% of AI-102 and the most code-heavy domain. You need to know FOUR services cold: Azure AI Vision (Image Analysis 4.0 + OCR/Read), Face, Custom Vision, and Video Indexer.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Module 1 (resource model, SDK packages, auth) — [Module 1 Reading](../Module-01-AI-Services-Overview/Reading.md)
-> - Module 2 (Responsible AI principles — Face emotion was retired *because* of RAI) — [Module 2 Reading](../Module-02-Responsible-AI-Content-Safety/Reading.md)
+> - Module 1 (resource model, SDK packages, auth), [Module 1 Reading](../Module-01-AI-Services-Overview/Reading.md)
+> - Module 2 (Responsible AI principles Face emotion was retired *because* of RAI) [Module 2 Reading](../Module-02-Responsible-AI-Content-Safety/Reading.md)
 > - Basic concept of supervised learning / labels (covered in [`07-AWS-AI-Practitioner` Module 3](../../07-AWS-AI-Practitioner/Module-03-Generative-AI-Fundamentals/Reading.md) if you need a refresher)
-> - Familiarity with neural-network primitives at the conceptual level — the canonical reference is Vaswani et al. (2017), *"Attention Is All You Need"*, NeurIPS — vision transformers (ViT) descend from that line of work
+> - Familiarity with neural-network primitives at the conceptual level the canonical reference is Vaswani et al. (2017), *"Attention Is All You Need"*, NeurIPS vision transformers (ViT) descend from that line of work
 >
 > No prior computer-vision certification is required. If the term "bounding box" is fully new, skim a 5-min YouTube primer before continuing.
 
@@ -31,7 +31,7 @@ She opens Azure AI Vision for #1, **Custom Vision** for #2 (she'll train a model
 | **Azure AI Vision** (Image Analysis 4.0) | Pretrained | Tagging, captioning, object detection, OCR (Read), smart crop, people detection |
 | **Custom Vision** | Custom | Train your own image classifier OR object detector |
 | **Face** | Pretrained | Detection, attributes, verification, identification (limited access) |
-| **Azure AI Video Indexer** | Pretrained | Speech transcription, OCR, faces, scenes, sentiment — applied to video |
+| **Azure AI Video Indexer** | Pretrained | Speech transcription, OCR, faces, scenes, sentiment, applied to video |
 
 🎯 **Rule of thumb:** *"Does Microsoft already have a model that recognizes this?"* → use pretrained (Vision). *"Do you need to recognize your company's product SKU?"* → use Custom Vision.
 
@@ -51,7 +51,7 @@ The unified 4.0 API replaces the old 3.x "Analyze Image" + "Read" + "Tag" endpoi
 | `OBJECTS` | Bounding boxes + names for detected objects |
 | `PEOPLE` | Bounding boxes for people (no identification) |
 | `SMART_CROPS` | Region(s) to crop to focus on key content |
-| `READ` | OCR — extract all text with bounding polygons |
+| `READ` | OCR, extract all text with bounding polygons |
 
 ### Python (SDK 4.0)
 
@@ -77,7 +77,7 @@ for line in result.read.blocks[0].lines:
     print(line.text)
 ```
 
-🚨 **Trap:** `gender_neutral_caption=True` (replaces gendered captions like "a man" with "a person") is a fairness setting — exam loves to test it.
+🚨 **Trap:** `gender_neutral_caption=True` (replaces gendered captions like "a man" with "a person") is a fairness setting, exam loves to test it.
 
 ### REST endpoint
 
@@ -92,7 +92,7 @@ Content-Type: application/json
 
 ---
 
-## 📄 OCR — Read API
+## 📄 OCR, Read API
 
 The **Read** feature inside Image Analysis 4.0 handles printed and handwritten text in 100+ languages.
 
@@ -124,15 +124,15 @@ Custom Vision lets you train your own image **classification** or **object detec
 
 | Project type | Output |
 |---|---|
-| **Classification** | One or more labels for the whole image (Multiclass — one label · Multilabel — many) |
+| **Classification** | One or more labels for the whole image (Multiclass one label · Multilabel many) |
 | **Object Detection** | Labels + bounding boxes for each instance in the image |
 
 ### Two resources
 
 Custom Vision uses **two** separate resources:
 
-- **Training** resource (`CustomVision.Training`) — manage projects, upload images, train iterations
-- **Prediction** resource (`CustomVision.Prediction`) — call the published model from your app
+- **Training** resource (`CustomVision.Training`), manage projects, upload images, train iterations
+- **Prediction** resource (`CustomVision.Prediction`), call the published model from your app
 
 You can also provision **both in one** with the `CognitiveServices` kind, but separate is more common in exam scenarios.
 
@@ -151,10 +151,10 @@ You can also provision **both in one** with the `CognitiveServices` kind, but se
 
 When you create a project, you pick a **domain**:
 
-- **General** — broad, good default
-- **General [Compact]** — exportable to ONNX / TensorFlow / CoreML for edge/offline use
-- **Food**, **Landmarks**, **Retail** — domain-tuned base models
-- **Logo** (classification) — corporate logos
+- **General**, broad, good default
+- **General [Compact]**, exportable to ONNX / TensorFlow / CoreML for edge/offline use
+- **Food**, **Landmarks**, **Retail**, domain-tuned base models
+- **Logo** (classification), corporate logos
 
 🎯 **Trap on the exam:** "Need to run on a device with no internet" → must pick a **Compact** domain and **export** the model.
 
@@ -199,9 +199,9 @@ trainer.publish_iteration(project.id, iteration.id, "v1", "<PREDICTION-RESOURCE-
 
 ### What Microsoft removed (RAI deprecation, 2022)
 
-- ❌ **Emotion** inference (anger, happiness) — retired
-- ❌ **Gender, Age, Smile, Facial Hair, Hair, Makeup** attributes — retired
-- ✅ **Glasses, Mask, Head Pose, Blur, Exposure, Noise, Occlusion** — still available
+- ❌ **Emotion** inference (anger, happiness), retired
+- ❌ **Gender, Age, Smile, Facial Hair, Hair, Makeup** attributes, retired
+- ✅ **Glasses, Mask, Head Pose, Blur, Exposure, Noise, Occlusion**, still available
 
 🎯 **Exam trap:** A question that says "use Face API to detect a user's emotion" is testing whether you know that capability was retired.
 
@@ -247,7 +247,7 @@ for f in detected:
 
 ## 🎬 Azure AI Video Indexer
 
-Treat Video Indexer as **"AI services applied to video"**: it runs Speech-to-Text, OCR, face detection, scene detection, sentiment, named entities, and more — automatically on uploaded videos.
+Treat Video Indexer as **"AI services applied to video"**: it runs Speech-to-Text, OCR, face detection, scene detection, sentiment, named entities, and more, automatically on uploaded videos.
 
 | Insight | Source |
 |---|---|
@@ -261,17 +261,17 @@ Treat Video Indexer as **"AI services applied to video"**: it runs Speech-to-Tex
 | Translation | Translator |
 
 ### Two API surfaces
-- **Video Indexer portal** — web UI, drag-and-drop, browse insights
-- **Video Indexer API** (REST) — upload, query, embed widgets in your app
+- **Video Indexer portal**, web UI, drag-and-drop, browse insights
+- **Video Indexer API** (REST), upload, query, embed widgets in your app
 
 ### Customization
-- **Custom Language model** — improve transcription accuracy on industry jargon
-- **Custom Brands** — train it to recognize your brand mentions
-- **Custom Person model** — recognize specific people (limited access, like Face)
-- **Custom Logo** — recognize your company's logos
+- **Custom Language model**, improve transcription accuracy on industry jargon
+- **Custom Brands**, train it to recognize your brand mentions
+- **Custom Person model**, recognize specific people (limited access, like Face)
+- **Custom Logo**, recognize your company's logos
 
 ### Widgets
-Video Indexer offers embeddable HTML widgets — **Player widget**, **Insights widget**, **Range editor** — so you can drop a transcript timeline into your web app with minimal code.
+Video Indexer offers embeddable HTML widgets **Player widget**, **Insights widget**, **Range editor** so you can drop a transcript timeline into your web app with minimal code.
 
 ---
 
@@ -280,13 +280,13 @@ Video Indexer offers embeddable HTML widgets — **Player widget**, **Insights w
 | You need to… | Pick |
 |---|---|
 | Tag, caption, smart-crop an image | Azure AI Vision (Image Analysis 4.0) |
-| Read printed text from a photo | Azure AI Vision — READ feature |
+| Read printed text from a photo | Azure AI Vision, READ feature |
 | Read text + tables + key/value from a PDF invoice | Document Intelligence (Module 5) |
 | Recognize your custom widgets in factory photos | Custom Vision (object detection) |
 | Photo classification (cat/dog/other) | Custom Vision (classification) |
-| Detect faces + check if someone is wearing a mask | Face — detect with mask attribute |
-| Verify "is this the same person?" | Face — verify (limited access) |
-| Identify a face from a known team list | Face — identify (limited access) |
+| Detect faces + check if someone is wearing a mask | Face, detect with mask attribute |
+| Verify "is this the same person?" | Face, verify (limited access) |
+| Identify a face from a known team list | Face, identify (limited access) |
 | Run vision on a video and get a transcript | Video Indexer |
 | Run a classifier offline on a Raspberry Pi | Custom Vision Compact domain → export ONNX |
 
@@ -301,15 +301,15 @@ Video Indexer offers embeddable HTML widgets — **Player widget**, **Insights w
 | "Custom Vision is one resource" | Two: Training + Prediction (or one CognitiveServices) |
 | "Read API can do invoice extraction" | Read gives raw text. Use Document Intelligence for structured fields |
 | "Custom Vision needs thousands of images" | 50 per tag is the documented minimum |
-| "Image Analysis 4.0 works in all Vision regions" | Some 4.0 features are region-restricted — check docs |
+| "Image Analysis 4.0 works in all Vision regions" | Some 4.0 features are region-restricted, check docs |
 
 ---
 
 ## 🚨 Exam Traps
 
-1. **Visual features are passed in ONE call** — old code patterns might suggest one call per feature; that's the 3.x style.
+1. **Visual features are passed in ONE call**, old code patterns might suggest one call per feature; that's the 3.x style.
 2. **Custom Vision Compact domain is required for export** (offline / edge models).
-3. **Face emotion is deprecated** — any answer that uses it is wrong.
+3. **Face emotion is deprecated**, any answer that uses it is wrong.
 4. **Identification needs a trained person group**; just having faces doesn't identify anyone.
 5. **Read API returns lines + words with bounding polygons (8-point)**; recall the structure.
 6. **Video Indexer Custom Person requires Limited Access approval**, same as Face identification.
@@ -324,11 +324,11 @@ Video Indexer offers embeddable HTML widgets — **Player widget**, **Insights w
 | **Visual feature** | A capability flag passed to `analyze()` (e.g. `CAPTION`, `READ`) |
 | **Dense Captions** | Multiple captions for different regions of one image |
 | **Smart Crop** | Vision returns region(s) ideal for thumbnail cropping |
-| **Read** | OCR feature — printed + handwritten, 100+ languages |
+| **Read** | OCR feature, printed + handwritten, 100+ languages |
 | **Custom Vision** | Train your own image classifier or detector |
 | **Domain (Custom Vision)** | Base model template: General, Food, Landmarks, Retail, Logo, Compact |
 | **Compact domain** | Exportable to ONNX/TensorFlow/CoreML for edge use |
-| **mAP** | Mean Average Precision — object-detection accuracy metric |
+| **mAP** | Mean Average Precision, object-detection accuracy metric |
 | **Iteration** | A trained version of a Custom Vision model |
 | **Person Group** | Container of known persons used for Face identification |
 | **Persisted face** | A face image stored in a person group for matching |
@@ -340,22 +340,22 @@ Video Indexer offers embeddable HTML widgets — **Player widget**, **Insights w
 
 ---
 
-## 📖 Case Study — Mercedes-Benz Connected on Azure (2020–2024)
+## 📖 Case Study, Mercedes-Benz Connected on Azure (2020–2024)
 
 **Situation.** Mercedes-Benz, headquartered in Stuttgart, has been a multi-year strategic Azure customer (Mercedes-Benz / Microsoft strategic partnership announced 2020, expanded 2023 at CES with the integration of ChatGPT in the MBUX infotainment system; verified against Microsoft Customer Stories and Mercedes-Benz Group press releases, checked 2026-05). Beyond the headline LLM integration, Mercedes-Benz uses Azure AI Vision + Azure AI Video Indexer + Azure AI Speech across its connected-vehicle and manufacturing-quality pipelines: e.g., visual quality-control on assembly lines (paint defect detection), driver-facing telematics, and dealer-side service-bay documentation.
 
 **Decision.** For the production-quality use case, Mercedes-Benz combined:
 
 - **Azure AI Vision** Image Analysis 4.0 for general factory-floor anomaly detection (tags + dense captions on every line photo).
-- **Custom Vision** trained on labeled defect images (paint runs, dent shapes, decal misalignment) — using the **General [Compact]** domain so models could be exported to ONNX and run on edge devices alongside the assembly line, gated by network latency.
+- **Custom Vision** trained on labeled defect images (paint runs, dent shapes, decal misalignment), using the **General [Compact]** domain so models could be exported to ONNX and run on edge devices alongside the assembly line, gated by network latency.
 - **Azure AI Video Indexer** on dealer-side service-bay video to produce searchable transcripts + OCR (for VIN plate recognition).
-- For the in-cabin assistant, Mercedes used a combination of Speech-to-Text + Azure OpenAI behind a custom UX that surfaces the AI badge — explicitly addressing the Responsible AI **Transparency** principle.
+- For the in-cabin assistant, Mercedes used a combination of Speech-to-Text + Azure OpenAI behind a custom UX that surfaces the AI badge, explicitly addressing the Responsible AI **Transparency** principle.
 
-Critically, Mercedes did *not* deploy Face identification — the **Limited Access** gate plus their own privacy posture made it a non-starter for customer-facing cabin features (emotion attributes retired in 2022 also closed that door at the platform level).
+Critically, Mercedes did *not* deploy Face identification, the **Limited Access** gate plus their own privacy posture made it a non-starter for customer-facing cabin features (emotion attributes retired in 2022 also closed that door at the platform level).
 
 **Outcome.** Mercedes' 2023 expansion announcements highlighted a "smart factory" model that runs vision inference at the edge with cloud retraining, dramatically reducing the per-vehicle inspection time. The MBUX-integrated voice assistant rolled out across the 2024 model year. No public security incident has been disclosed; the architecture is showcased at Microsoft Ignite 2023 and 2024 as a reference for industrial GenAI deployments.
 
-**Lesson for the exam / for practitioners.** This case demonstrates exactly the exam's "service-selection" pattern at industrial scale: pretrained Vision for general tagging, *Custom Vision Compact for edge*, *Video Indexer for documents+video*, and *Face is gated* — and a Responsible AI overlay determines what features ship in customer-facing cars.
+**Lesson for the exam / for practitioners.** This case demonstrates exactly the exam's "service-selection" pattern at industrial scale: pretrained Vision for general tagging, *Custom Vision Compact for edge*, *Video Indexer for documents+video*, and *Face is gated*, and a Responsible AI overlay determines what features ship in customer-facing cars.
 
 **Discussion (Socratic).**
 - Q1: Mercedes-Benz declined to ship Face identification in cabin. Build the strongest commercial argument *for* shipping it (e.g., personalized seat/mirror profiles) and the strongest *against* (privacy + biometric regulation). What's the implicit trade-off they accepted by saying no?
@@ -364,12 +364,12 @@ Critically, Mercedes did *not* deploy Face identification — the **Limited Acce
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The Image Analysis 4.0 vs Document Intelligence boundary.** A team gets ~80% accuracy reading printed receipts with Image Analysis 4.0's `READ` feature, but ~99% with Document Intelligence's `prebuilt-receipt`. The 19-point gap costs $10K/month in manual review. Build the principled argument for migrating to Document Intelligence AND for staying on Image Analysis 4.0 (maybe because the receipt mix is changing). What downstream architectural choices does each answer commit you to?
 2. **Custom Vision Compact for edge.** Compact domains export to ONNX, TensorFlow, CoreML, Docker. At what point does Azure ML (full lifecycle ML with managed endpoints) beat Custom Vision (low-code, narrower features)? Defend your threshold against a stakeholder who wants "the simpler tool."
 3. **Limited Access for Face.** The Face Identification API requires a Microsoft Limited Access application. Argue the case that this gating is *more* useful than purely regulatory gating (e.g., EU AI Act biometric prohibitions). Counter-argue that it's just gatekeeping. Where does the line fall?
-4. **Video Indexer vs raw Speech+Vision composition.** Video Indexer bundles STT, OCR, faces, scenes, sentiment, brands. For a startup with one engineer, it's a clear win. For an enterprise that needs to control every chunk of cost, the per-service composition might be cheaper. Walk through the cost-accounting and the "single throat to choke" arguments side by side — which would you defend at a $50M-ARR SaaS?
+4. **Video Indexer vs raw Speech+Vision composition.** Video Indexer bundles STT, OCR, faces, scenes, sentiment, brands. For a startup with one engineer, it's a clear win. For an enterprise that needs to control every chunk of cost, the per-service composition might be cheaper. Walk through the cost-accounting and the "single throat to choke" arguments side by side, which would you defend at a $50M-ARR SaaS?
 5. **Evaluation metrics: precision vs recall vs mAP.** Build the strongest argument that *recall* is the most important metric for a Custom Vision model trained to flag safety-vest violations at a construction site. Counter-argue that *precision* is, citing the cost of false alarms. What would mAP add to either argument?
 
 ---
@@ -382,7 +382,7 @@ You now know:
 - 🖼️ Image Analysis 4.0 visual features + the one-call pattern
 - 📄 Read OCR vs Document Intelligence boundaries
 - 🎨 Custom Vision classification vs detection, two resources, Compact domain for edge
-- 😀 Face service — what's still available, what was retired, limited-access gating
+- 😀 Face service, what's still available, what was retired, limited-access gating
 - 🎬 Video Indexer insights + customization options
 - 📐 Evaluation metrics: precision, recall, mAP
 - 🚨 The classic traps (emotion is gone, one call gets all features, Compact for export)
@@ -406,18 +406,18 @@ You now know:
 ## 📚 Citations & Named References
 
 - **Vaswani et al. (2017).** *"Attention Is All You Need."* In NeurIPS 2017. The transformer architecture that underlies modern vision-language models (GPT-4o vision; CLIP family).
-- **Dosovitskiy et al. (2020).** *"An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale."* ICLR 2021 — Vision Transformer (ViT), the basis of many of Azure AI Vision's 4.0 models.
+- **Dosovitskiy et al. (2020).** *"An Image is Worth 16×16 Words: Transformers for Image Recognition at Scale."* ICLR 2021, Vision Transformer (ViT), the basis of many of Azure AI Vision's 4.0 models.
 - **Microsoft Mechanics** (2024). *"Azure AI Vision Image Analysis 4.0 deep dive."* (verified 2026-05)
-- **Microsoft Responsible AI Standard v2** (June 2022) — the standard under which Face emotion / age / gender attributes were retired in 2022.
+- **Microsoft Responsible AI Standard v2** (June 2022), the standard under which Face emotion / age / gender attributes were retired in 2022.
 - **Mercedes-Benz Group / Microsoft** partnership announcements (2020 initial, 2023 expansion at CES with ChatGPT/MBUX, 2024 production rollouts; verified against Microsoft Customer Stories 2026-05).
-- **Microsoft Limited Access** policy for high-risk AI (Face ID, Custom Neural Voice, Speaker Recognition) — published policy, updated 2024.
-- **EU AI Act** (Regulation (EU) 2024/1689, June 2024) — biometric categorisation in public spaces is "prohibited use" under Article 5; identification in workplaces is "high-risk" under Annex III.
+- **Microsoft Limited Access** policy for high-risk AI (Face ID, Custom Neural Voice, Speaker Recognition), published policy, updated 2024.
+- **EU AI Act** (Regulation (EU) 2024/1689, June 2024), biometric categorisation in public spaces is "prohibited use" under Article 5; identification in workplaces is "high-risk" under Annex III.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Azure AI Vision — Image Analysis](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-tag-images-40)
+- 📖 [Azure AI Vision, Image Analysis](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/concept-tag-images-40)
 - 📖 [Read API and OCR](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-ocr)
 - 📖 [Custom Vision docs](https://learn.microsoft.com/en-us/azure/ai-services/custom-vision-service/)
 - 📖 [Face service overview](https://learn.microsoft.com/en-us/azure/ai-services/computer-vision/overview-identity)

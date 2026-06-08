@@ -12,7 +12,7 @@
 | **GPT (OpenAI)** | GPT-5, o3 | GPT-5 mini, o4-mini | Function calling, structured outputs, voice |
 | **Gemini (Google)** | Gemini 2.5 Pro | Gemini 2.5 Flash | 2M context, native multi-modal incl. video, cheapest mid-tier |
 | **Llama (Meta)** | Llama 3.3 70B, Llama 3.2 90B Vision | Hosted Groq/Together | Open weights, on-prem, fine-tune base |
-| **Other open** | DeepSeek V3/R1, Mistral Large 2, Qwen 2.5 | — | Cheap, frontier-competitive open |
+| **Other open** | DeepSeek V3/R1, Mistral Large 2, Qwen 2.5 |, | Cheap, frontier-competitive open |
 
 🚨 *Output tokens cost 3–5× input tokens. Always do BOTH sides of the math.*
 
@@ -63,7 +63,7 @@
 
 ---
 
-## 🎛️ Sampling Parameters — Decision Table
+## 🎛️ Sampling Parameters, Decision Table
 
 | Use case | T | top_p | max_tokens |
 |----------|---|-------|------------|
@@ -107,9 +107,9 @@ client.chat.completions.create(model="llama-3.3-70b-versatile",
 
 ## 📐 Context Window Tips
 
-- **Lost in the middle** (Liu et al. 2023) — middle of long context is recalled worst
+- **Lost in the middle** (Liu et al. 2023), middle of long context is recalled worst
 - Place critical instructions at **start of system** OR **end of user message**
-- 1M context ≠ 1M perfect recall — always test
+- 1M context ≠ 1M perfect recall, always test
 - Reasoning models burn 1K–25K thinking tokens before visible answer
 
 ---
@@ -144,7 +144,7 @@ client.chat.completions.create(model="llama-3.3-70b-versatile",
 - "All models use the same tokenizer"
 - "1M context = 1M perfect recall"
 - "Higher temperature makes the model smarter"
-- "JSON in the prompt produces JSON output" (no — JSON mode does)
+- "JSON in the prompt produces JSON output" (no, JSON mode does)
 
 ---
 
@@ -166,7 +166,7 @@ client.chat.completions.create(model="llama-3.3-70b-versatile",
 Cover the answers and recite:
 
 1. What does each role do (system, user, assistant)? ___
-2. Temperature 0 vs 0.7 — when each? ___
+2. Temperature 0 vs 0.7, when each? ___
 3. Why is `"antidisestablishmentarianism"` not 1 token? ___
 4. Three things you need for true reproducibility? ___
 5. Why does "Lost in the middle" exist? ___
@@ -201,7 +201,7 @@ Monthly cost projection:
   Total: $ ___
 
 With prompt caching (Module 8):
-  Cached portion saves ~50-90% — see Module 8
+  Cached portion saves ~50-90%, see Module 8
 
 With tier routing:
   Easy traffic (% ___) on Haiku/Flash/mini at $___

@@ -40,16 +40,16 @@
 
 ---
 
-## 🏆 LinkedIn Headline — 3 Patterns
+## 🏆 LinkedIn Headline, 3 Patterns
 
 ```
-PATTERN A — Outcome + Audience:
+PATTERN A, Outcome + Audience:
   "Help [audience] do [outcome] with [unique angle]"
   
-PATTERN B — Capstone-Anchored:
-  "[Role] | Built [capstone] — [where to find]"
+PATTERN B, Capstone-Anchored:
+  "[Role] | Built [capstone], [where to find]"
 
-PATTERN C — Vibe + Skill:
+PATTERN C, Vibe + Skill:
   "[Identity] learning to [skill] • portfolio in Featured"
 ```
 
@@ -88,12 +88,12 @@ Pick B if entry-level. A if you have a clear niche. C if indie/creator track.
 ## 📅 Posting Cadence
 
 ```
-Mon — Long-form LinkedIn (story-driven case)
-Tue — Twitter thread (3-tweet recap)
-Wed — Comment-mining day (engage 10 posts)
-Thu — Short LinkedIn (1 lesson, 80 words)
-Fri — Carousel OR YouTube/Loom
-Weekend — Off / build-in-public snippets
+Mon, Long-form LinkedIn (story-driven case)
+Tue, Twitter thread (3-tweet recap)
+Wed, Comment-mining day (engage 10 posts)
+Thu, Short LinkedIn (1 lesson, 80 words)
+Fri, Carousel OR YouTube/Loom
+Weekend, Off / build-in-public snippets
 ```
 
 ---
@@ -141,7 +141,7 @@ Weekend — Off / build-in-public snippets
 
 ```
 "I'm a marketer focused on [niche]. Over the last 6 weeks I shipped
-5 portfolio pieces — [list one-line]. I'm currently [status]. Most
+5 portfolio pieces, [list one-line]. I'm currently [status]. Most
 interested in roles that touch [3 things]. Happy to walk you through
 any of the case studies."
 ```

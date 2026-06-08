@@ -30,7 +30,7 @@
 
 ---
 
-## 📷 Sending Images — 3 Patterns
+## 📷 Sending Images, 3 Patterns
 
 ```python
 # 1. Base64 (Anthropic style)
@@ -79,7 +79,7 @@ my_file = client.files.upload(file="x.jpg")
 2. Ask meta-questions ("What chart type? What does each axis represent?")
 3. Self-consistency (N=3-5 samples; check agreement)
 4. Compare to source data when available
-5. NEVER ask "what's the trend?" on novel data — leading question = confabulation
+5. NEVER ask "what's the trend?" on novel data, leading question = confabulation
 
 ---
 
@@ -164,8 +164,8 @@ Cover the answers and recite:
 1. Family with native video? ___
 2. Image cost ballpark for high-detail 1024² ? ___
 3. 3 defenses against chart confabulation? ___
-4. EXIF rotation — honored or not? ___
-5. Image text as injection vector — true or false? ___
+4. EXIF rotation, honored or not? ___
+5. Image text as injection vector, true or false? ___
 
 If you can answer all 5 in under 60 seconds, you own this module. ✅
 

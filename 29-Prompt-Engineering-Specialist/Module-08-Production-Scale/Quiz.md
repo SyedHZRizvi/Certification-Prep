@@ -29,7 +29,7 @@ D. Disabled by default
 
 ### Q3. A semantic cache stores: *(Understand)*
 A. The prompt's plain text
-B. Cached responses keyed by embedding-similarity of the input — serve hit when new input is semantically close
+B. Cached responses keyed by embedding-similarity of the input, serve hit when new input is semantically close
 C. The system prompt
 D. API keys
 
@@ -45,7 +45,7 @@ D. pandas
 
 ### Q5. TTFT stands for: *(Remember)*
 A. Total Tokens For Throughput
-B. Time-To-First-Token — streaming latency metric
+B. Time-To-First-Token, streaming latency metric
 C. Tokens-To-File-Transfer
 D. Truncated Tail Format Test
 
@@ -69,7 +69,7 @@ D. Removing all prompts
 
 ### Q8. The PRIMARY reason to wire observability on day 1: *(Apply)*
 A. Marketing
-B. By the time you have users, the incident has happened — observability is preventive
+B. By the time you have users, the incident has happened, observability is preventive
 C. Lower model cost
 D. Vendor requirement
 
@@ -109,7 +109,7 @@ D. A reasoning model
 
 ### Q13. The MOST important reason to pin specific model SNAPSHOTS rather than the floating "latest" alias: *(Analyze)*
 A. Lower cost
-B. Vendor regressions on a new snapshot can break your prompts — pinning forces explicit upgrade with eval
+B. Vendor regressions on a new snapshot can break your prompts, pinning forces explicit upgrade with eval
 C. Smaller context
 D. Faster startup
 
@@ -125,7 +125,7 @@ D. Requires a new model
 
 ### Q15. Shadow traffic refers to: *(Understand)*
 A. Hidden traffic from the vendor
-B. Running real production input through a candidate prompt without serving the output to the user — to compare quality offline
+B. Running real production input through a candidate prompt without serving the output to the user, to compare quality offline
 C. Free tier traffic
 D. Streaming output
 
@@ -197,7 +197,7 @@ D. Only latency tests
 
 ### Q24. The relationship between Anthropic prompt caching and many-shot ICL (Module 2) is: *(Analyze)*
 A. Unrelated
-B. Caching makes many-shot economically viable — the prefix containing 100+ examples is paid for once, then ~10% per re-use
+B. Caching makes many-shot economically viable, the prefix containing 100+ examples is paid for once, then ~10% per re-use
 C. They are mutually exclusive
 D. Caching breaks ICL
 
@@ -215,7 +215,7 @@ D. Push prompt changes directly to production with no eval
 
 > *Create-level note:* you're stacking every Module 8 lever.
 A. Single GPT-4o endpoint, no caching, no observability, no spend caps
-B. (1) Prompts in Git + Langfuse versioning; (2) LiteLLM with primary Anthropic + OpenAI/Gemini fallbacks; (3) Anthropic prompt caching on the system+example prefix; (4) Semantic cache for high-similarity queries with conservative threshold; (5) Tier routing — Haiku for simple, GPT-5 for standard, o3 for hard refactor; (6) Batch API for nightly bulk reviews (50% discount); (7) Langfuse observability with per-customer dashboards; (8) Per-customer + per-feature spend caps with Slack alerts; (9) CI pipeline running regression + safety + cost projection + canary deploy + auto-rollback; (10) Multi-provider snapshot pinning with quarterly eval cadence on snapshot bumps
+B. (1) Prompts in Git + Langfuse versioning; (2) LiteLLM with primary Anthropic + OpenAI/Gemini fallbacks; (3) Anthropic prompt caching on the system+example prefix; (4) Semantic cache for high-similarity queries with conservative threshold; (5) Tier routing, Haiku for simple, GPT-5 for standard, o3 for hard refactor; (6) Batch API for nightly bulk reviews (50% discount); (7) Langfuse observability with per-customer dashboards; (8) Per-customer + per-feature spend caps with Slack alerts; (9) CI pipeline running regression + safety + cost projection + canary deploy + auto-rollback; (10) Multi-provider snapshot pinning with quarterly eval cadence on snapshot bumps
 C. Just use a single model with no infrastructure
 D. Hand-write a wrapper around `requests.post`
 

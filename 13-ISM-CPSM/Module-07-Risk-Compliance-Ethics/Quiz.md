@@ -1,6 +1,6 @@
 # ✏️ Module 7 Quiz: Risk, Compliance & Ethics
 
-> **Instructions:** 28 questions, no notes. Target 23/28. Many are judgment scenarios — read carefully.
+> **Instructions:** 28 questions, no notes. Target 23/28. Many are judgment scenarios, read carefully.
 
 ---
 
@@ -16,7 +16,7 @@ D. Prevent, Detect, Respond, Recover
 
 ### Q2. A risk has 5% probability and $1M potential impact. Treatment costs $200K. The BEST action is to: *(Apply)*
 A. Mitigate at any cost
-B. Accept the risk, document, monitor — treatment cost exceeds expected loss ($50K)
+B. Accept the risk, document, monitor, treatment cost exceeds expected loss ($50K)
 C. Avoid the supplier entirely
 D. Transfer via insurance only
 
@@ -89,7 +89,7 @@ D. Universal Fair Labor Protection Agreement
 ### Q11. Scope 3 emissions include: *(Understand)*
 A. Direct emissions from your facilities
 B. Indirect emissions from purchased energy
-C. All other indirect — including your supply chain (often 70–90% of corporate total)
+C. All other indirect, including your supply chain (often 70–90% of corporate total)
 D. Only end-of-life product emissions
 
 ---
@@ -119,7 +119,7 @@ D. Aerospace quality
 ---
 
 ### Q15. A scenario: a foreign agent suggests a small "facilitation payment" to officials to speed customs. The MOST appropriate response under combined US/UK anti-corruption law is: *(Evaluate)*
-A. Pay it — UK Bribery Act allows facilitation payments
+A. Pay it, UK Bribery Act allows facilitation payments
 B. Refuse, document, escalate; UK Bribery Act prohibits facilitation payments, and FCPA's narrow exception is risky
 C. Pay it through a third party
 D. Pay it but don't record it
@@ -239,7 +239,7 @@ D. Resign immediately
 ### Q5: **B.** Recovery Time Objective.
 ### Q6: **A.** Recovery Point Objective = acceptable data-loss window.
 ### Q7: **B.** MTD must exceed RTO or the business stops before you recover.
-### Q8: **B.** Engage, remediate, escalate, document — ISM principles + ethics.
+### Q8: **B.** Engage, remediate, escalate, document, ISM principles + ethics.
 ### Q9: **B.** £36M turnover threshold.
 ### Q10: **B.** US Uyghur Forced Labor Prevention Act (2022).
 ### Q11: **C.** Scope 3 = all other indirect including supply chain.

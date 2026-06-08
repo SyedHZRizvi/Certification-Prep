@@ -20,13 +20,13 @@
 
 ---
 
-## 🌈 PMBOK 7 — 12 Principles
+## 🌈 PMBOK 7, 12 Principles
 
 Stewardship • Team • Stakeholders • Value • Systems Thinking • Leadership • Tailoring • Quality • Complexity • Risk • Adaptability • Change
 
 ---
 
-## 📜 Ethics — 4 Values (5-10 exam questions)
+## 📜 Ethics, 4 Values (5-10 exam questions)
 
 | Value | Means |
 |-------|-------|
@@ -111,9 +111,9 @@ Stewardship • Team • Stakeholders • Value • Systems Thinking • Leaders
 
 ## 🎯 PMI Talent Triangle (Updated)
 
-- **Ways of Working** — predictive/agile/hybrid skills
-- **Power Skills** — leadership, communication
-- **Business Acumen** — strategy, finance, industry
+- **Ways of Working**, predictive/agile/hybrid skills
+- **Power Skills**, leadership, communication
+- **Business Acumen**, strategy, finance, industry
 
 ---
 

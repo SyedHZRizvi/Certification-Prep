@@ -80,7 +80,7 @@ D. Not possible
 
 ### Q10. The TWO native grounding modes on Gemini in Vertex AI are: *(Remember)*
 A. Public web (Google Search) and private corpus (Vertex AI Search)
-B. None — grounding requires external code
+B. None, grounding requires external code
 C. Same thing
 D. SQL only
 
@@ -136,7 +136,7 @@ D. They needed Pinecone
 
 ### Q17. Embeddings from text-embedding-004 are NOT interchangeable with embeddings from OpenAI text-embedding-3 because: *(Understand)*
 A. Different dimensions only
-B. Different model spaces — vectors only make sense when indexed and queried with the same model
+B. Different model spaces, vectors only make sense when indexed and queried with the same model
 C. Same vectors
 D. Interchangeable
 
@@ -168,7 +168,7 @@ D. Only through Conversational Agents
 
 ### Q21. A chunking strategy that splits text mid-sentence: *(Apply)*
 A. Improves retrieval
-B. Often degrades retrieval — context is lost; use sentence-aware or recursive splitter with overlap
+B. Often degrades retrieval, context is lost; use sentence-aware or recursive splitter with overlap
 C. Saves cost
 D. Required for Gemini
 
@@ -192,7 +192,7 @@ D. Per-minute compute
 
 ### Q24. Which is FALSE? *(Evaluate)*
 A. RAG reduces but does not eliminate hallucinations
-B. Embeddings are model-agnostic — text-embedding-004 vectors work with OpenAI's index
+B. Embeddings are model-agnostic, text-embedding-004 vectors work with OpenAI's index
 C. AlloyDB AI supports in-DB embedding generation
 D. Vertex AI Search supports Confluence connectors
 
@@ -250,7 +250,7 @@ Often via Reciprocal Rank Fusion.
 
 ### Q16: **B. Managed chunking + multilingual + regional + hybrid + reranking, OOTB**
 
-### Q17: **B. Different model spaces — must match indexer and querier**
+### Q17: **B. Different model spaces, must match indexer and querier**
 
 ### Q18: **B. Index isn't being refreshed; new docs aren't indexed**
 Almost always the answer for "stale RAG."
@@ -259,13 +259,13 @@ Almost always the answer for "stale RAG."
 
 ### Q20: **B. Either via grounding tool (managed) or DIY chunks in prompt**
 
-### Q21: **B. Often degrades — use sentence-aware splitter + overlap**
+### Q21: **B. Often degrades, use sentence-aware splitter + overlap**
 
 ### Q22: **B. Vertex AI Search supports all three (and more)**
 
 ### Q23: **B. ~$4/1K standard, ~$10/1K enterprise + storage**
 
-### Q24: **B. Embeddings are model-agnostic — FALSE**
+### Q24: **B. Embeddings are model-agnostic, FALSE**
 Must match embedding model at index and query.
 
 ### Q25: **B. Vertex AI Search EU + multilingual-002 + Flash grounding + reranker + VPC-SC + CMEK + audit + weekly refresh**
@@ -280,4 +280,4 @@ Must match embedding model at index and query.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Fine-Tuning on Vertex AI](../Module-06-Fine-Tuning-Vertex-AI/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Fine-Tuning on Vertex AI](../Module-06-Fine-Tuning-Vertex-AI/Reading.md)

@@ -15,7 +15,7 @@
 | **Gemini 1.0** | December 2023 (Nano, Pro, Ultra) |
 | **Gemini 1.5 Pro 1M context** | February 2024; 2M tokens by May 2024 |
 | **Gemini 2.5 Pro** | March 2025 (thinking mode, top-tier reasoning) |
-| **Google AI Principles** | June 2018 — 7 principles + 4 red lines |
+| **Google AI Principles** | June 2018, 7 principles + 4 red lines |
 | **2026 Google Cloud AI revenue** | $15B+ annualized (per Alphabet disclosures) |
 | **Flagship products** | Gemini, Vertex AI, Google AI Studio, Agent Builder |
 
@@ -28,7 +28,7 @@ PageRank (1998)
    ↓
 Google Brain founded (2011) ─── DeepMind acquired (2014)
    ↓                                   ↓
-Transformer paper (2017) — Google Brain
+Transformer paper (2017), Google Brain
    ↓
 BERT (2018) → T5 (2019) → LaMDA (2021)
    ↓
@@ -43,7 +43,7 @@ Gemini 2.5 Pro (Mar 2025: thinking mode)
 Gemini 2.5 Ultra (Oct 2025: top tier)
 ```
 
-🚨 *The Transformer was invented at Google Brain in 2017 — predates GPT-1 by months.*
+🚨 *The Transformer was invented at Google Brain in 2017, predates GPT-1 by months.*
 
 ---
 
@@ -76,7 +76,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 
 ---
 
-## 🛡️ Google AI Principles (2018) — Quick Reference
+## 🛡️ Google AI Principles (2018), Quick Reference
 
 **Seven principles:**
 1. Be socially beneficial
@@ -95,7 +95,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 
 ---
 
-## 🔬 Gemini vs GPT vs Claude — When to Pick Which
+## 🔬 Gemini vs GPT vs Claude, When to Pick Which
 
 | Pick Gemini when | Pick GPT when | Pick Claude when |
 |------------------|---------------|------------------|
@@ -106,7 +106,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | On-device (Nano) | | Prompt-caching economics |
 | Cheapest at Flash tier | | |
 
-🎯 Note: **Claude is also available on Vertex AI Model Garden** — Module 3.
+🎯 Note: **Claude is also available on Vertex AI Model Garden**, Module 3.
 
 ---
 
@@ -141,7 +141,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 | 1998 | Google founded, PageRank |
 | 2011 | Google Brain founded |
 | 2014 | DeepMind acquired |
-| **2017** | **"Attention Is All You Need" — Transformer** |
+| **2017** | **"Attention Is All You Need", Transformer** |
 | 2018 | BERT; **Google AI Principles published** |
 | 2019 | T5 |
 | 2021 | LaMDA internal |
@@ -164,7 +164,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 
 ✅ Often **right**:
 
-- "Gemini is natively multi-modal — trained on text + image + audio + video jointly"
+- "Gemini is natively multi-modal, trained on text + image + audio + video jointly"
 - "Pro is the default workhorse; Flash for volume, Ultra for hardest"
 - "Vertex AI with VPC-SC + CMEK + signed BAA for regulated workloads"
 - "Context caching cuts cached-input cost by ~75%"
@@ -178,7 +178,7 @@ Gemini 2.5 Ultra (Oct 2025: top tier)
 - "Gemini's vision is bolted on" (it's native)
 - "AI Studio and Vertex AI are the same thing" (they're not)
 - "Google AI Search and Vertex AI Vector Search are interchangeable" (different products)
-- "Gemini weights are open-source" (closed — Gemma is the open-weight sibling)
+- "Gemini weights are open-source" (closed, Gemma is the open-weight sibling)
 - "Constitutional AI is a Google technique" (Anthropic's)
 - "All Gemini tiers have 2M context" (only Pro/Ultra; Flash is 1M)
 - "The Transformer was invented by OpenAI" (Google Brain, 2017)
@@ -206,7 +206,7 @@ Cover the answers and recite:
 
 1. The Transformer paper title + year + lab? ___
 2. Gemini tiers smallest to largest? ___
-3. Studio vs Vertex AI — one-line difference? ___
+3. Studio vs Vertex AI, one-line difference? ___
 4. Pro context window in tokens? ___
 5. What is grounding, and what are the two grounding sources on Vertex AI? ___
 

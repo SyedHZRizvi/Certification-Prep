@@ -142,7 +142,7 @@ D. Sub-millisecond cache layer
 
 ---
 
-### Q18. ElastiCache for Memcached vs Redis — which is TRUE? *(Analyze)*
+### Q18. ElastiCache for Memcached vs Redis, which is TRUE? *(Analyze)*
 A. Memcached supports replication; Redis does not
 B. Redis supports persistence and replication; Memcached does not
 C. They are identical
@@ -209,7 +209,7 @@ D. DynamoDB Streams
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Amazon DynamoDB**
-Serverless, single-digit ms at any scale — DynamoDB's headline feature. RDS doesn't scale that way; Redshift is for analytics.
+Serverless, single-digit ms at any scale, DynamoDB's headline feature. RDS doesn't scale that way; Redshift is for analytics.
 
 ### Q2: **B. Synchronous standby in another AZ + automatic failover for HA**
 Multi-AZ = HA only. You can't read from the standby. Read scaling = Read Replicas.
@@ -221,7 +221,7 @@ Petabyte-scale OLAP / data warehouse. Optimized for analytical scans, not transa
 Aurora has two editions: Aurora MySQL-compatible and Aurora PostgreSQL-compatible.
 
 ### Q5: **B. They are asynchronous and used to offload read traffic**
-Async replicas, you connect to them for read queries. They don't auto-failover for HA — that's Multi-AZ.
+Async replicas, you connect to them for read queries. They don't auto-failover for HA, that's Multi-AZ.
 
 ### Q6: **B. Amazon ElastiCache**
 Managed Redis/Memcached for sub-ms in-memory cache.
@@ -239,7 +239,7 @@ Global Tables = active-active replication across Regions. Writes anywhere are re
 DAX is the in-memory cache built specifically for DynamoDB. Microsecond reads. ElastiCache works for other use cases.
 
 ### Q11: **B. 6 copies across 3 AZs**
-Aurora's signature feature — 6-way replicated storage layer for extreme durability.
+Aurora's signature feature, 6-way replicated storage layer for extreme durability.
 
 ### Q12: **B. A serverless SQL query engine over data in S3**
 Athena = pay per query, no infrastructure to manage, uses Presto/Trino under the hood.
@@ -260,7 +260,7 @@ RDS default = 7 days; max = 35 days. Set to 0 to disable (not recommended in pro
 Aurora Serverless auto-scales capacity for variable workloads, pay per second.
 
 ### Q18: **B. Redis supports persistence and replication; Memcached does not**
-Memcached is simpler — multi-threaded but no persistence/replication. Redis supports both plus rich data types and cluster mode.
+Memcached is simpler, multi-threaded but no persistence/replication. Redis supports both plus rich data types and cluster mode.
 
 ### Q19: **A. Redshift Spectrum (or Athena)**
 Both can query S3 in-place with SQL. Spectrum is the Redshift feature for "data lake" queries.

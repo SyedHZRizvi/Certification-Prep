@@ -50,7 +50,7 @@ D. Is a US-only rule
 A. €1,000
 B. €3,000
 C. €10,000
-D. Zero — every VASP-to-VASP transfer requires originator/beneficiary info
+D. Zero, every VASP-to-VASP transfer requires originator/beneficiary info
 
 ---
 
@@ -97,7 +97,7 @@ D. Deferred income until withdrawal
 ### Q12. The wash-sale rule (IRC §1091) currently applies to Bitcoin: *(Evaluate)*
 A. Yes, with a 30-day disallowance window
 B. Yes, with a 60-day window
-C. No — Bitcoin is classified as property, not a security; proposed extension has not been enacted as of 2026
+C. No, Bitcoin is classified as property, not a security; proposed extension has not been enacted as of 2026
 D. Only in California
 
 ---
@@ -167,7 +167,7 @@ D. MiCA CASP authorization
 ---
 
 ### Q21. A US taxpayer holding 1 BTC purchased at $20,000 spends 0.001 BTC ($75 FMV) on coffee. The tax consequence is: *(Apply)*
-A. No tax consequence — Bitcoin is currency
+A. No tax consequence, Bitcoin is currency
 B. Capital gain/loss on the 0.001 BTC measured as ($75 - $20 cost basis) = $55 short-term capital gain (if held <1 year)
 C. Ordinary income of $75
 D. Tax-free until the entire BTC is sold
@@ -184,7 +184,7 @@ D. Optional
 
 ### Q23. A mining-pool operator who receives block rewards into a pool wallet and distributes proportional shares to participants: *(Analyze)*
 A. Is definitely not an MSB
-B. May qualify as an MSB depending on facts and circumstances — the custody and distribution function looks like exchanger/administrator activity
+B. May qualify as an MSB depending on facts and circumstances, the custody and distribution function looks like exchanger/administrator activity
 C. Is definitely an MSB regardless of facts
 D. Is exempt because they're a miner
 
@@ -201,7 +201,7 @@ D. Always pick full compliance regardless of revenue
 ### Q25. Compare FATF Recommendation 16, the EU TFR, and the US FinCEN proposed threshold for the Travel Rule. Which is the strictest? *(Analyze)*
 A. The FATF baseline at USD/EUR 1,000
 B. The US at $3,000
-C. The EU TFR at zero threshold for VASP-to-VASP transfers (effective December 30, 2024) — strictest of the three
+C. The EU TFR at zero threshold for VASP-to-VASP transfers (effective December 30, 2024), strictest of the three
 D. Japan at ¥100,000
 
 ---
@@ -231,7 +231,7 @@ FIN-2019-G001 carved out unhosted wallets and the software-developer-only role e
 ### Q5: **B. Requires originator and beneficiary information to travel with transfers between VASPs above a threshold**
 Recommendation 16 was originally a wire-transfer rule (since the 1990s); the June 2019 update extended it to VASPs.
 
-### Q6: **D. Zero — every VASP-to-VASP transfer requires originator/beneficiary info**
+### Q6: **D. Zero, every VASP-to-VASP transfer requires originator/beneficiary info**
 The EU TFR (2023/1113) effective December 30, 2024 imposes zero threshold for VASP-to-VASP. Self-hosted withdrawals >€1,000 get extra scrutiny.
 
 ### Q7: **B. Markets in Crypto-Assets Regulation (EU 2023/1114)**
@@ -249,7 +249,7 @@ TCJA December 22, 2017, effective January 1, 2018.
 ### Q11: **C. Ordinary income at fair market value when received**
 Rev. Rul. 2019-24, October 9, 2019. The basis = FMV at receipt; subsequent disposition triggers capital gain/loss.
 
-### Q12: **C. No — Bitcoin is classified as property, not a security; proposed extension has not been enacted as of 2026**
+### Q12: **C. No, Bitcoin is classified as property, not a security; proposed extension has not been enacted as of 2026**
 A meaningful exam-trap distinction. Multiple bills (2021, 2022, 2023) have proposed extending wash-sale to crypto; none passed.
 
 ### Q13: **B. Itemize capital-asset dispositions, including crypto sales**
@@ -271,7 +271,7 @@ The case is the leading authority on the limits of sanctioning immutable code as
 The BitMEX, Bittrex, Binance precedents all turn on §1960 violations.
 
 ### Q19: **B. An MSB because it holds customer keys / value on behalf of customers**
-FIN-2019-G001's "hosted wallet" analysis. The Layer-2 protocol is irrelevant — the custody relationship is what matters.
+FIN-2019-G001's "hosted wallet" analysis. The Layer-2 protocol is irrelevant, the custody relationship is what matters.
 
 ### Q20: **B. KoFIU registration AND Information Security Management System (ISMS) certification from KISA**
 South Korea's two-track requirement, plus real-name banking partnership. The strictest national VASP regime.
@@ -286,7 +286,7 @@ Rev. Proc. 2024-28 + TR 9999. Pre-2025 universal-basis methods are grandfathered
 FIN-2019-G001 explicitly takes a facts-and-circumstances approach for mining pools. Operators should consult counsel.
 
 ### Q24: **B. Compare expected settlement value (probability × penalty × forced shutdown × founder liability) against compliance overhead**
-The Binance precedent — $4.3B + CEO prison + ~25 pts market-share loss — sets the upper bound. Monotonic enforcement trend over 2017-2024 makes arbitrage increasingly negative-EV.
+The Binance precedent $4.3B + CEO prison + ~25 pts market-share loss sets the upper bound. Monotonic enforcement trend over 2017-2024 makes arbitrage increasingly negative-EV.
 
 ### Q25: **C. The EU TFR at zero threshold for VASP-to-VASP transfers**
 This is one of the most-tested traps. The EU is **stricter** than the FATF baseline, not equal to it.

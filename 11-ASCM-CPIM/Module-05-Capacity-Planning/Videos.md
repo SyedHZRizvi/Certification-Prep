@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: Capacity Planning
 
-> **How to use:** The TOC and bottleneck content is best learned through *The Goal* — read or listen if you have time. The capacity-hierarchy videos drill in the four-layer model.
+> **How to use:** The TOC and bottleneck content is best learned through *The Goal*, read or listen if you have time. The capacity-hierarchy videos drill in the four-layer model.
 
 ## ⭐ Essential watching (~58 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Theory of Constraints — 5 Focusing Steps</p>
+      <p class="vg-title">Theory of Constraints, 5 Focusing Steps</p>
       <p class="vg-creator">Education Edge</p>
       <span class="vg-duration">⏱ 14 min · Identify-Exploit-Subordinate-Elevate-Repeat</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">The Goal by Goldratt — Summary</p>
+      <p class="vg-title">The Goal by Goldratt, Summary</p>
       <p class="vg-creator">TOC Institute</p>
       <span class="vg-duration">⏱ 28 min · The TOC novel</span>
     </div>
@@ -146,6 +146,6 @@
 
 1. Name the 4 layers of the capacity hierarchy and which planning layer each supports.
 2. What are the 5 Focusing Steps of TOC?
-3. Drum, Buffer, Rope — what does each represent?
+3. Drum, Buffer, Rope, what does each represent?
 4. Compute rated capacity for: 4 machines, 8 hr/shift, 1 shift, 5 days/week, util 0.85, eff 0.90.
 5. When is the Lead capacity strategy preferred?

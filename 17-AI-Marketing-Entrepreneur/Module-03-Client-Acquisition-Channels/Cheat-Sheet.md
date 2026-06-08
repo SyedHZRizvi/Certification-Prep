@@ -45,7 +45,7 @@ Stack cost: ~$220–$240/mo
 | LinkedIn SalesNav | $99 |
 | **Total** | **~$235** |
 
-Pricing as of 2026 — verify.
+Pricing as of 2026, verify.
 
 ---
 
@@ -121,7 +121,7 @@ Ask at day 60–90 after a clear win.
 
 ---
 
-## 💰 Paid Ads — Min ACV Floor
+## 💰 Paid Ads, Min ACV Floor
 
 | ACV | Verdict |
 |---|---|

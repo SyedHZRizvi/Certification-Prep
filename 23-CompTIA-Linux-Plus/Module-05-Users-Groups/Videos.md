@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">useradd, usermod, userdel — User Lifecycle</p>
+      <p class="vg-title">useradd, usermod, userdel, User Lifecycle</p>
       <p class="vg-creator">Learn Linux TV</p>
       <span class="vg-duration">⏱ 14 min · The full add/modify/delete cycle</span>
     </div>

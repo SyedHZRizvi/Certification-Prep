@@ -14,7 +14,7 @@ D. GZRS
 
 ---
 
-### Q2. You need 6 copies of data — 3 in your primary region across AZs, 3 in the paired region — for both AZ and regional resilience. Which SKU? *(Apply)*
+### Q2. You need 6 copies of data 3 in your primary region across AZs, 3 in the paired region for both AZ and regional resilience. Which SKU? *(Apply)*
 A. LRS
 B. ZRS
 C. GRS
@@ -101,7 +101,7 @@ D. 3 → 2 → 1 → 4 → 5
 
 ---
 
-### Q12. Yes/No — Mark each. *(Evaluate)*
+### Q12. Yes/No, Mark each. *(Evaluate)*
 
 **S1:** LRS protects against an Availability Zone failure.
 **S2:** ZRS replicates data across at least 3 AZs in one region.
@@ -130,7 +130,7 @@ D. Storage Blob Data Owner
 
 ---
 
-### Q15. Yes/No — Lifecycle management. *(Analyze)*
+### Q15. Yes/No, Lifecycle management. *(Analyze)*
 
 **S1:** A lifecycle rule can transition blobs from Hot to Cool to Archive automatically.
 **S2:** Lifecycle rules evaluate hourly without delay.
@@ -191,7 +191,7 @@ D. Replicate blobs to another region
 
 ---
 
-### Q22. Yes/No — SAS tokens. *(Evaluate)*
+### Q22. Yes/No, SAS tokens. *(Evaluate)*
 
 **S1:** An Account SAS can grant access across multiple service types (blob/file/queue/table) at once.
 **S2:** A User Delegation SAS works for file shares.
@@ -213,7 +213,7 @@ D. Both LRS and ZRS
 ---
 
 ### Q24. The default at-rest encryption for storage accounts is: *(Remember)*
-A. None — you must enable it
+A. None, you must enable it
 B. AES-128 with Microsoft-managed keys
 C. AES-256 with Microsoft-managed keys (always on, can't disable)
 D. AES-256 with customer-managed keys
@@ -281,7 +281,7 @@ No uppercase, no underscores, no hyphens. Lowercase + digits only.
 Data-plane read-only. `Reader` only sees the resource exists, not the data. `Contributor` is control-plane.
 
 ### Q15: **A. Yes / No / Yes**
-S2 is wrong — lifecycle rules can take up to 24–48 hrs to evaluate.
+S2 is wrong, lifecycle rules can take up to 24–48 hrs to evaluate.
 
 ### Q16: **D. Archive**
 Once per year << minimum 180-day duration; archive is cheapest by far. Just remember to rehydrate before the annual read.
@@ -302,7 +302,7 @@ Time-based retention uses days; Legal Hold uses a tag.
 Soft delete can be set 1–365 days. Container-level soft delete is separate from blob-level.
 
 ### Q22: **B. Yes / Yes / Yes**
-Account SAS spans services; User Delegation SAS works for blobs (and recently other services like queues — but for AZ-104 the safest answer is "blob"). All SAS types support allowed IP ranges and TLS minimums.
+Account SAS spans services; User Delegation SAS works for blobs (and recently other services like queues, but for AZ-104 the safest answer is "blob"). All SAS types support allowed IP ranges and TLS minimums.
 
 ### Q23: **C. GRS**
 Premium block blob in most regions only supports LRS and ZRS. No geo replication for Premium.

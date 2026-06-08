@@ -60,7 +60,7 @@ D. 60 W
 ---
 
 ### Q7. A signal strength of -67 dBm is generally considered: *(Remember)*
-A. Excellent — right next to AP
+A. Excellent, right next to AP
 B. Reliable for VoIP/video
 C. Unusable
 D. The same as -90 dBm
@@ -126,14 +126,14 @@ D. USB-PD
 ### Q15. An office covers 30,000 sq ft on one floor. The architect wants seamless roaming and the same SSID throughout. The correct topology is: *(Apply)*
 A. Single AP at the center
 B. IBSS ad-hoc
-C. ESS (Extended Service Set) — multiple APs, one SSID, channel-planned
+C. ESS (Extended Service Set), multiple APs, one SSID, channel-planned
 D. Mesh with no controller
 
 ---
 
 ### Q16. A user reports that Wi-Fi is "slow on the patio" but fine inside. Signal at the patio measures -85 dBm. The most likely cause is: *(Apply)*
 A. The user's NIC is broken
-B. Weak signal due to distance / wall attenuation — RSSI at -85 dBm is marginal
+B. Weak signal due to distance / wall attenuation, RSSI at -85 dBm is marginal
 C. Wi-Fi 6 is not supported
 D. The PSK is wrong
 
@@ -148,10 +148,10 @@ D. Disable Wi-Fi for guests entirely
 ---
 
 ### Q18. To maximize throughput while minimizing interference in a dense 5 GHz deployment, the engineer should pick which channel width? *(Apply)*
-A. 20 MHz — more channels = less interference
-B. 40 MHz — best compromise
-C. 80 MHz — always best
-D. 160 MHz — always best
+A. 20 MHz, more channels = less interference
+B. 40 MHz, best compromise
+C. 80 MHz, always best
+D. 160 MHz, always best
 
 ---
 
@@ -165,7 +165,7 @@ D. WPS slows Wi-Fi
 
 ### Q20. A wireless user roams from AP1 to AP2 with the same SSID but their VoIP call drops. The MOST likely cause is: *(Analyze)*
 A. The two APs are on different SSIDs
-B. Sticky-client behavior or fast-transition (802.11r) not enabled — the client takes too long to re-associate, breaking the real-time stream
+B. Sticky-client behavior or fast-transition (802.11r) not enabled, the client takes too long to re-associate, breaking the real-time stream
 C. WPA3 doesn't support roaming
 D. PoE failure
 
@@ -181,7 +181,7 @@ D. Add a captive portal in front
 
 ### Q22. Two APs on the same floor are configured on channels 1 and 3 in the 2.4 GHz band. The MOST significant operational consequence is: *(Analyze)*
 A. Channels 1 and 3 are non-overlapping and will not interfere
-B. Channels 1 and 3 partially overlap, causing co-channel interference and reduced throughput — should be 1 and 6 (or 1 and 11)
+B. Channels 1 and 3 partially overlap, causing co-channel interference and reduced throughput, should be 1 and 6 (or 1 and 11)
 C. Only Wi-Fi 7 devices can use channel 3
 D. PoE will fail on both APs
 
@@ -197,7 +197,7 @@ D. Mandatory use of WEP
 
 ### Q24. A SOHO router has UPnP enabled by default. The SECURITY implication is: *(Analyze)*
 A. UPnP is required for Wi-Fi to function
-B. Applications inside the LAN can dynamically open inbound ports without admin approval — expanding the attack surface
+B. Applications inside the LAN can dynamically open inbound ports without admin approval, expanding the attack surface
 C. UPnP enables WPA3 automatically
 D. UPnP improves DNS resolution
 
@@ -205,7 +205,7 @@ D. UPnP improves DNS resolution
 
 ### Q25. An AP supports both 802.11ax and WPA3. A legacy IoT camera supports only 802.11n and WPA2-PSK. The MOST appropriate compatibility approach is: *(Analyze)*
 A. Refuse to support the camera
-B. Configure the SSID in WPA2/WPA3 mixed mode, allowing both — or create a dedicated WPA2 SSID on a separate VLAN for legacy IoT
+B. Configure the SSID in WPA2/WPA3 mixed mode, allowing both, or create a dedicated WPA2 SSID on a separate VLAN for legacy IoT
 C. Downgrade the entire network to WPA2
 D. Use WEP for the camera
 
@@ -215,7 +215,7 @@ D. Use WEP for the camera
 
 > *Create-level note:* you're justifying an architectural choice; the strongest answer captures the *root* reason in one phrase.
 A. "Wi-Fi 6 supports higher max link speed than Wi-Fi 5."
-B. "Wi-Fi 6's OFDMA + denser cell plan with low-power APs serves many concurrent clients far more efficiently than a few high-power Wi-Fi 5 APs, because per-cell capacity — not raw peak speed — is the bottleneck in dense deployments."
+B. "Wi-Fi 6's OFDMA + denser cell plan with low-power APs serves many concurrent clients far more efficiently than a few high-power Wi-Fi 5 APs, because per-cell capacity not raw peak speed is the bottleneck in dense deployments."
 C. "Wi-Fi 6 has WPA3 mandatory."
 D. "Wi-Fi 5 doesn't support PoE."
 
@@ -251,25 +251,25 @@ Simultaneous Authentication of Equals (based on Dragonfly key-exchange) replaces
 BSSID is the AP's MAC (unique per radio). SSID is the human-readable network name.
 
 ### Q10: **C. OFDMA**
-Orthogonal Frequency-Division Multiple Access — Wi-Fi 6's headline feature, dividing channels into sub-carriers so multiple clients can be served simultaneously in a single transmission opportunity.
+Orthogonal Frequency-Division Multiple Access, Wi-Fi 6's headline feature, dividing channels into sub-carriers so multiple clients can be served simultaneously in a single transmission opportunity.
 
 ### Q11: **A. Predictive site survey**
 Predictive surveys use software (Ekahau, iBwave) with floor plans BEFORE installation. Passive listens to existing RF; active injects test traffic; post-deployment validates after installation.
 
 ### Q12: **B. Force a sign-in / terms-of-use page**
-Captive portals intercept HTTP and redirect to a sign-in page. They are NOT encryption — open-SSID + captive portal still has unencrypted air traffic unless WPA3 Enhanced Open is also enabled.
+Captive portals intercept HTTP and redirect to a sign-in page. They are NOT encryption, open-SSID + captive portal still has unencrypted air traffic unless WPA3 Enhanced Open is also enabled.
 
 ### Q13: **B. Cert-based both sides**
 EAP-TLS = certificates on both client AND server. Most secure but deployment-heavy. PEAP/EAP-TTLS = server cert only, with user credentials inside a TLS tunnel.
 
 ### Q14: **B. 802.3at (PoE+)**
-802.3at delivers up to 30 W at the port (25.5 W usable), which covers a 25 W device. 802.3af tops out at 15.4 W (12.95 usable) — not enough.
+802.3at delivers up to 30 W at the port (25.5 W usable), which covers a 25 W device. 802.3af tops out at 15.4 W (12.95 usable), not enough.
 
 ### Q15: **C. ESS**
 Multiple APs sharing one SSID with channel planning = Extended Service Set. Clients roam transparently between APs.
 
 ### Q16: **B. Weak signal**
--85 dBm is marginal — well past the -70 dBm comfort zone. Patio is outside the comfortable coverage area; either add an AP or accept the limitation.
+-85 dBm is marginal, well past the -70 dBm comfort zone. Patio is outside the comfortable coverage area; either add an AP or accept the limitation.
 
 ### Q17: **B. Two SSIDs, separate VLANs, WPA3-Enterprise for staff + guest network**
 Best practice: segment staff and guests with separate SSIDs/VLANs. Staff = WPA3-Enterprise (per-user 802.1X). Guests = captive portal or Enhanced Open. Never share a PSK across both.
@@ -278,13 +278,13 @@ Best practice: segment staff and guests with separate SSIDs/VLANs. Staff = WPA3-
 In DENSE deployments, narrower channels = more non-overlapping channels available = less co-channel interference. Wide channels look fast on a single AP but collapse capacity when APs overlap. (Counterintuitive but correct.)
 
 ### Q19: **B. PIN brute-forceable (Reaver)**
-The WPS PIN method is broken — Reaver/Bully tools can recover the PSK in 4-10 hours of brute force. Push-button isn't immune to other issues. Disable WPS entirely.
+The WPS PIN method is broken, Reaver/Bully tools can recover the PSK in 4-10 hours of brute force. Push-button isn't immune to other issues. Disable WPS entirely.
 
 ### Q20: **B. Sticky-client / no 802.11r fast transition**
-Client roaming is initiated by the *client*, not the AP. Without 802.11k/v/r assistance, the re-association can take hundreds of milliseconds — long enough to drop a real-time stream.
+Client roaming is initiated by the *client*, not the AP. Without 802.11k/v/r assistance, the re-association can take hundreds of milliseconds, long enough to drop a real-time stream.
 
 ### Q21: **B. WPA3-Enterprise with EAP-TLS**
-PEAP-MSCHAPv2 is known vulnerable to offline cracking (Moxie Marlinspike's CloudCracker). EAP-TLS uses certificates on both sides — there's no password to crack offline.
+PEAP-MSCHAPv2 is known vulnerable to offline cracking (Moxie Marlinspike's CloudCracker). EAP-TLS uses certificates on both sides, there's no password to crack offline.
 
 ### Q22: **B. Channels 1 and 3 overlap**
 2.4 GHz channels are 20 MHz wide with 5 MHz spacing. Channels 1 and 3 overlap heavily. Only 1/6/11 are non-overlapping.
@@ -293,7 +293,7 @@ PEAP-MSCHAPv2 is known vulnerable to offline cracking (Moxie Marlinspike's Cloud
 Wi-Fi 6 mandates **WPA3**, not WEP (WEP is broken). The other three are real Wi-Fi 6 advantages.
 
 ### Q24: **B. Apps can open inbound ports without admin approval**
-UPnP lets applications dynamically request port forwards — malware loves this. Disable UPnP unless you have a specific app that needs it (and prefer manual port-forwarding for that app).
+UPnP lets applications dynamically request port forwards, malware loves this. Disable UPnP unless you have a specific app that needs it (and prefer manual port-forwarding for that app).
 
 ### Q25: **B. Mixed mode OR separate VLAN for legacy**
 Practical reality: legacy devices must coexist. Mixed-mode SSID is the lowest-effort approach; a dedicated WPA2 SSID on its own VLAN gives stronger isolation.
@@ -325,4 +325,4 @@ The root insight: a few high-power APs create giant cells, each with hundreds of
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — Network Services & Cloud Connectivity](../Module-05-Services-Cloud/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, Network Services & Cloud Connectivity](../Module-05-Services-Cloud/Reading.md)

@@ -51,7 +51,7 @@ UDRs on spokes: `0.0.0.0/0 → VirtualAppliance (Firewall private IP)`
 | | Service endpoint | Private endpoint |
 |---|------------------|------------------|
 | What | Firewall toggle + backbone route | Real NIC + private IP |
-| PaaS public IP | Still public | Optional — can disable |
+| PaaS public IP | Still public | Optional, can disable |
 | DNS | Public FQDN | Needs **Private DNS Zone** |
 | Cost | Mostly free | Per-hour + data |
 
@@ -121,11 +121,11 @@ Often **wrong**:
 
 ## ✏️ Quick Self-Check
 
-1. 5 reserved IPs per subnet — name 'em? ___
+1. 5 reserved IPs per subnet, name 'em? ___
 2. Is peering transitive? Workaround? ___
-3. SP vs PE — which gets a private IP? ___
+3. SP vs PE, which gets a private IP? ___
 4. Why does PE need a Private DNS Zone? ___
-5. Route-based VS policy-based — pick which for BGP? ___
+5. Route-based VS policy-based, pick which for BGP? ___
 
 ---
 

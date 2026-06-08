@@ -88,10 +88,10 @@ Groundedness post-check (Content Safety)
 
 Tools:
 
-- **File Search** — RAG over uploaded files
-- **Code Interpreter** — sandboxed Python
-- **Function Calling** — your functions
-- **Browser** — preview web browsing
+- **File Search**, RAG over uploaded files
+- **Code Interpreter**, sandboxed Python
+- **Function Calling**, your functions
+- **Browser**, preview web browsing
 
 Primitives: **Assistant · Thread · Message · Run**.
 
@@ -182,7 +182,7 @@ If you can answer all 5 in 60 seconds, you own Module 8. ✅
 
 | Pattern | What it does | Source |
 |---|---|---|
-| **Chain-of-Thought (CoT)** | "Let's think step by step" — single-shot reasoning | Wei et al., NeurIPS 2022 |
+| **Chain-of-Thought (CoT)** | "Let's think step by step", single-shot reasoning | Wei et al., NeurIPS 2022 |
 | **ReAct (Reason + Act)** | Alternates reasoning + tool call + observation | Yao et al., ICLR 2023 |
 | **Plan-and-Execute** | Plan whole sequence, then execute each step | LangChain blog (2023) + academic variants |
 | **Reflection** | Model critiques and revises its own answer | Shinn et al. (2023), "Reflexion" |
@@ -215,4 +215,4 @@ If you can answer all 5 in 60 seconds, you own Module 8. ✅
 
 ---
 
-➡️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) — then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) — then [Capstone Project](../Capstone-Project.md)
+➡️ [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) then [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md) then [Capstone Project](../Capstone-Project.md)

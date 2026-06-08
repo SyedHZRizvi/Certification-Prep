@@ -1,10 +1,10 @@
 # Module 3: Order Management & Fulfillment 📦
 
-> **Why this module matters:** A logistics network is only as good as the orders flowing through it. Get order management right and the warehouse sings. Get it wrong and you'll have perfect inventory levels — sitting on the wrong product, in the wrong DC, while customers cancel.
+> **Why this module matters:** A logistics network is only as good as the orders flowing through it. Get order management right and the warehouse sings. Get it wrong and you'll have perfect inventory levels, sitting on the wrong product, in the wrong DC, while customers cancel.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) network types — order management is the *software* layer atop the physical network
-> - [Module 2](../Module-02-Capacity-Demand-Logistics/Reading.md) forecasting and ABC velocity — drives ATP/CTP behavior
+> - [Module 1](../Module-01-Logistics-Strategy-Network/Reading.md) network types, order management is the *software* layer atop the physical network
+> - [Module 2](../Module-02-Capacity-Demand-Logistics/Reading.md) forecasting and ABC velocity, drives ATP/CTP behavior
 > - General EDI / API concepts at a high level (you'll learn the specific 850/855/856/810 codes here)
 >
 > Cross-course: [CSCP Module 7 (Logistics, Distribution, Warehousing)](../../10-ASCM-CSCP/Module-07-Logistics-Distribution-Warehousing/Reading.md) covers an introductory view of order flow. [CPIM Module 4 (MPS/MRP)](../../11-ASCM-CPIM/Module-04-Master-Production-Scheduling-MRP/Reading.md) shows how ATP/CTP works *inside* manufacturing planning, which dovetails with the distribution view here.
@@ -17,16 +17,16 @@ A small e-commerce site sells specialty espresso machines. A customer in Phoenix
 
 Behind the scenes, here's what *actually* happens:
 
-1. **Order entry** — customer hits "Buy." Order is created in the OMS.
-2. **Validation** — credit card check, fraud screen, address verification.
-3. **ATP check** — "Available-to-promise" lookup: do we have it? In which DC?
-4. **Allocation** — system reserves the unit at LA DC.
-5. **Sourcing decision** — LA is closer, but Reno DC is on a faster carrier route to Phoenix.
-6. **Confirmation** — customer gets "Shipping Monday."
-7. **Pick-pack-ship** — Reno DC picks, packs, manifests to UPS.
-8. **In-transit** — UPS, 3-day ground.
-9. **POD** — proof of delivery.
-10. **Cash collection** — credit card settles.
+1. **Order entry**, customer hits "Buy." Order is created in the OMS.
+2. **Validation**, credit card check, fraud screen, address verification.
+3. **ATP check**, "Available-to-promise" lookup: do we have it? In which DC?
+4. **Allocation**, system reserves the unit at LA DC.
+5. **Sourcing decision**, LA is closer, but Reno DC is on a faster carrier route to Phoenix.
+6. **Confirmation**, customer gets "Shipping Monday."
+7. **Pick-pack-ship**, Reno DC picks, packs, manifests to UPS.
+8. **In-transit**, UPS, 3-day ground.
+9. **POD**, proof of delivery.
+10. **Cash collection**, credit card settles.
 
 Now imagine *any* step breaks: card declines, ATP shows units that don't exist, allocation locks the wrong DC, picker grabs the espresso *grinder* instead of the machine. **Two weeks later** the customer has a grinder, a charge, and an unhappy Yelp review.
 
@@ -53,7 +53,7 @@ The single most-tested concept in this module. **Memorize the 10 steps:**
 10. Returns (if any)               (Module 8 territory)
 ```
 
-Each step has measurable cycle time. The sum is **OTC cycle time** — a key supply-chain KPI.
+Each step has measurable cycle time. The sum is **OTC cycle time**, a key supply-chain KPI.
 
 🎯 **Exam tip:** OTC ends with **cash collection**, not delivery. Cash is when value is realized.
 
@@ -122,8 +122,8 @@ How firm is your promise to the customer?
 
 | Promise type | Strength |
 |--------------|----------|
-| **Date promise** | "Ships by Mar 15" — flexible if conditions change |
-| **Delivery commitment** | "Delivered by Mar 18" — binding (subject to T&Cs) |
+| **Date promise** | "Ships by Mar 15", flexible if conditions change |
+| **Delivery commitment** | "Delivered by Mar 18", binding (subject to T&Cs) |
 | **Same-day / next-day SLA** | Often contractual, with credits if missed |
 | **B2B service-level agreement** | Specific OTIF/perfect-order targets, with penalties |
 
@@ -145,7 +145,7 @@ This is one of the *highest-yield* sections in the entire CLTD body of knowledge
 | **Pick & pass / sequential zone** | Item travels through sequential zones | Apparel, multi-zone warehouses | Low | Low |
 | **Wave + zone + batch (hybrid)** | Combine multiple strategies | Modern high-volume DCs | Optimized | Coordinated |
 
-🧠 **Memory hook:** Discrete, Batch, Zone, Wave, Cluster — **"Don't Be Zonking Without Cooperation"** (silly but it sticks).
+🧠 **Memory hook:** Discrete, Batch, Zone, Wave, Cluster, **"Don't Be Zonking Without Cooperation"** (silly but it sticks).
 
 ### Picking Method Trade-offs
 
@@ -180,7 +180,7 @@ This is one of the *highest-yield* sections in the entire CLTD body of knowledge
 | **Robotic / GTP** | "Goods-to-person" robots bring shelves to picker |
 | **Automated AS/RS** | Fully automated retrieval (covered in Module 5) |
 
-Accuracy rates (memorize these — exam questions ask):
+Accuracy rates (memorize these, exam questions ask):
 
 - Paper: 95–98%
 - RF: 99–99.5%
@@ -208,7 +208,7 @@ The CLTD exam loves KPIs. Know these:
 | **Pick accuracy** | Correct picks / Total picks | Quality at the bin |
 | **DSO (Days Sales Outstanding)** | (Receivables / Revenue) × Days | Cash velocity |
 
-### The Perfect Order — DEEP DIVE
+### The Perfect Order, DEEP DIVE
 
 Perfect Order is **multiplicative**, not additive:
 ```
@@ -217,11 +217,11 @@ Perfect Order = OnTime% × Complete% × DamageFree% × CorrectInvoice%
 
 Example: 95% × 95% × 95% × 95% = **81.5%** perfect order.
 
-🚨 **Trap on the exam:** Many people think "Perfect Order = 95% because each component is 95%." NO. The metric is multiplicative — modest component scores compound into a much lower overall metric.
+🚨 **Trap on the exam:** Many people think "Perfect Order = 95% because each component is 95%." NO. The metric is multiplicative, modest component scores compound into a much lower overall metric.
 
 ---
 
-## 🛒 OTIF — The Walmart Cudgel
+## 🛒 OTIF, The Walmart Cudgel
 
 Walmart, Target, and other major retailers enforce OTIF (On-Time In-Full) with chargebacks:
 
@@ -280,7 +280,7 @@ Checks:
 
 - **AVS** (Address Verification System)
 - **CVV** (card verification)
-- **Fraud score** (risk engine — Riskified, Signifyd, Stripe Radar)
+- **Fraud score** (risk engine, Riskified, Signifyd, Stripe Radar)
 - **Credit hold** (B2B: customer over credit limit)
 - **Inventory hold** (out of stock)
 - **Compliance hold** (sanctions, export controls)
@@ -289,32 +289,32 @@ Checks:
 
 ---
 
-## 📜 Case Study — Amazon's Last-Mile Build-Out (2014–2024)
+## 📜 Case Study, Amazon's Last-Mile Build-Out (2014–2024)
 
-**Situation.** By 2014 Amazon's package volume had grown to ~3 million packages/day in the US. The two major US parcel integrators (UPS and FedEx) were charging ~$4–$8 per package on Amazon volume — a sum that, multiplied across the year, was eating massive margin. UPS and FedEx also had structural service ceilings: Sunday delivery was rare/expensive, and last-mile density in suburban America wasn't optimized for the e-commerce surge Amazon was generating. CEO Jeff Bezos famously concluded: "We need to control our own destiny in delivery."
+**Situation.** By 2014 Amazon's package volume had grown to ~3 million packages/day in the US. The two major US parcel integrators (UPS and FedEx) were charging ~$4–$8 per package on Amazon volume, a sum that, multiplied across the year, was eating massive margin. UPS and FedEx also had structural service ceilings: Sunday delivery was rare/expensive, and last-mile density in suburban America wasn't optimized for the e-commerce surge Amazon was generating. CEO Jeff Bezos famously concluded: "We need to control our own destiny in delivery."
 
 **Decision.** Amazon launched what became the largest last-mile build-out in logistics history. Key milestones:
 
 - **2014:** First "Amazon Logistics" pilots; Amazon Flex (gig drivers, 2015) launched in Seattle.
-- **2018:** **Delivery Service Partner (DSP) program** launched — Amazon would fund and equip independent small businesses to deliver Amazon packages exclusively. Branded Mercedes-Benz Sprinter vans rolled out. By 2024, the DSP program supported ~3,500 DSP companies and ~280,000 drivers.
-- **2019:** Amazon Air launched commercial aircraft operations from Cincinnati/Northern Kentucky Airport (CVG) — its own dedicated cargo hub.
+- **2018:** **Delivery Service Partner (DSP) program** launched, Amazon would fund and equip independent small businesses to deliver Amazon packages exclusively. Branded Mercedes-Benz Sprinter vans rolled out. By 2024, the DSP program supported ~3,500 DSP companies and ~280,000 drivers.
+- **2019:** Amazon Air launched commercial aircraft operations from Cincinnati/Northern Kentucky Airport (CVG), its own dedicated cargo hub.
 - **2019:** Amazon ordered **100,000 electric delivery vans from Rivian** (one of the largest single EV orders in history). First vans deployed in Los Angeles in 2021.
-- **2021–2024:** Massive sortation center build-out — by 2024, Amazon operated ~600 last-mile delivery stations in North America, more than UPS and FedEx combined for residential deliveries.
+- **2021–2024:** Massive sortation center build-out, by 2024, Amazon operated ~600 last-mile delivery stations in North America, more than UPS and FedEx combined for residential deliveries.
 - **2024 milestone:** Amazon Logistics delivered ~84% of Amazon packages itself in the US (up from ~10% in 2017), making Amazon the *largest US private parcel network* by package count, surpassing UPS and FedEx US Ground.
 
-**Outcome.** Amazon Logistics revenue (mostly internal transfer pricing + a small external "Buy with Prime" business) was estimated at ~$80B in 2024 — making Amazon Logistics, if a standalone company, the largest US logistics provider by revenue. Per-package cost dropped from ~$5+ (UPS/FedEx era) to an estimated ~$3.50 internal cost by 2024. The Rivian fleet hit ~20,000 vans deployed by 2024 with a stated goal of 100,000 by 2030. Critically, Amazon's network density (more drops per route) and proximity (more stations closer to suburban demand) enabled *same-day* delivery for ~50% of US Prime members by 2024 — a service product UPS and FedEx structurally cannot match without a similar build-out.
+**Outcome.** Amazon Logistics revenue (mostly internal transfer pricing + a small external "Buy with Prime" business) was estimated at ~$80B in 2024 making Amazon Logistics, if a standalone company, the largest US logistics provider by revenue. Per-package cost dropped from ~$5+ (UPS/FedEx era) to an estimated ~$3.50 internal cost by 2024. The Rivian fleet hit ~20,000 vans deployed by 2024 with a stated goal of 100,000 by 2030. Critically, Amazon's network density (more drops per route) and proximity (more stations closer to suburban demand) enabled *same-day* delivery for ~50% of US Prime members by 2024 a service product UPS and FedEx structurally cannot match without a similar build-out.
 
 **Lesson for the exam / for practitioners.** The Amazon case operationalizes three module concepts at once:
 
-1. **Last-mile cost dominance** — last mile is 28–53% of parcel cost; Amazon's vertical integration captures that economics internally.
-2. **Order sourcing and DOM** — Amazon's distributed order management system orchestrates across 600+ delivery stations and routes by *closest-to-customer + capacity-aware*, exactly the framework taught in this module.
-3. **Make-or-buy reversal** — Module 1's framework predicts that when logistics becomes the *differentiating* part of your value chain, you in-source. Amazon validated the prediction.
+1. **Last-mile cost dominance**, last mile is 28–53% of parcel cost; Amazon's vertical integration captures that economics internally.
+2. **Order sourcing and DOM**, Amazon's distributed order management system orchestrates across 600+ delivery stations and routes by *closest-to-customer + capacity-aware*, exactly the framework taught in this module.
+3. **Make-or-buy reversal**, Module 1's framework predicts that when logistics becomes the *differentiating* part of your value chain, you in-source. Amazon validated the prediction.
 
 The CLTD exam tests this pattern: in a scenario where logistics is the competitive weapon (Amazon, Tesla, Apple's iPhone supply chain), in-house wins. In a scenario where logistics is undifferentiated (a regional industrial distributor), 3PL/4PL outsourcing wins.
 
 **Discussion (Socratic).**
 - Q1: Amazon's last-mile build cost an estimated $50B+ in capex over 2014–2024. A smaller e-commerce player (Wayfair, Chewy, Etsy) cannot replicate this. What strategic responses are open to them, and which best mimics Amazon's economics without the capex?
-- Q2: Amazon Logistics is now offering "Buy with Prime" — letting Shopify merchants use Amazon's network. Is this a strategic move toward becoming a 4PL (orchestrator-for-others), or a defensive moat? Argue both reads.
+- Q2: Amazon Logistics is now offering "Buy with Prime", letting Shopify merchants use Amazon's network. Is this a strategic move toward becoming a 4PL (orchestrator-for-others), or a defensive moat? Argue both reads.
 - Q3: UPS/FedEx have responded by raising rates on Amazon-style high-density e-com packages and steering capacity toward higher-margin B2B freight. Is that the right move, or a slow-motion abandonment of the residential delivery market?
 
 ---
@@ -325,7 +325,7 @@ The CLTD exam tests this pattern: in a scenario where logistics is the competiti
 |---------------|---------|
 | "ATP and CTP are interchangeable" | ATP is current; CTP includes planned receipts |
 | "EDI 850 is an invoice" | 850 is the PO; 810 is the invoice |
-| "Perfect order is the sum of components" | It's the **product** — multiplicative |
+| "Perfect order is the sum of components" | It's the **product**, multiplicative |
 | "Pick-by-voice is slower than pick-by-light" | Voice ~90% the throughput, but lower CapEx |
 | "Allocation locks stock forever" | It locks until the order ships or expires |
 
@@ -335,7 +335,7 @@ The CLTD exam tests this pattern: in a scenario where logistics is the competiti
 
 🚨 **Trap 1:** Picking the right *picking* strategy for the scenario. Discrete is rarely the answer for high-volume e-com. Batch is common. Wave is right when shipping cutoffs drive timing.
 
-🚨 **Trap 2:** Calculating perfect order — multiply, don't add.
+🚨 **Trap 2:** Calculating perfect order, multiply, don't add.
 
 🚨 **Trap 3:** Mixing OTIF (retailer-imposed) with perfect order (internal). OTIF is a *subset* of perfect order.
 
@@ -348,8 +348,8 @@ The CLTD exam tests this pattern: in a scenario where logistics is the competiti
 | Term | Definition |
 |------|------------|
 | **OTC cycle** | Order-to-cash, ends with cash collection |
-| **ATP** | Available to Promise — current uncommitted stock |
-| **CTP** | Capable to Promise — ATP + planned receipts |
+| **ATP** | Available to Promise, current uncommitted stock |
+| **CTP** | Capable to Promise, ATP + planned receipts |
 | **Allocation** | Stock reserved for a specific order |
 | **Backorder** | Order accepted with no current stock |
 | **EDI 850/855/856/810** | PO / PO Ack / ASN / Invoice |
@@ -376,7 +376,7 @@ You now know:
 - 🎯 Order sourcing and zone-skipping strategies
 - 🏭 The five picking strategies and when each fits
 - 🤖 Picking technologies and their accuracy rates
-- 📦 Fulfillment KPIs — fill rate, perfect order, OTIF
+- 📦 Fulfillment KPIs, fill rate, perfect order, OTIF
 - 🌐 BOPIS, BORIS, dark stores, MFCs, last-mile
 - 💳 Order validation and risk management
 
@@ -394,7 +394,7 @@ You now know:
 
 2. **ATP/CTP design choice.** A grocery distributor's OMS today only does ATP (current on-hand). Adding CTP would let them quote based on inbound truck arrivals. The IT cost is $2M. The Sales VP loves CTP because it can grow orders. The Ops VP fears it because over-promising creates fulfillment risk. How would you decide?
 
-3. **Picking strategy under SKU churn.** A 2026-era DTC apparel brand has high SKU churn (50% of SKUs change quarterly). Their current pick strategy is zone (legacy). Argue for switching to cluster, batch, or wave — and the trade-offs of each in this specific scenario.
+3. **Picking strategy under SKU churn.** A 2026-era DTC apparel brand has high SKU churn (50% of SKUs change quarterly). Their current pick strategy is zone (legacy). Argue for switching to cluster, batch, or wave, and the trade-offs of each in this specific scenario.
 
 4. **Perfect-order theatre.** A logistics director reports 95% perfect order and gets a bonus. But the 95% is calculated only on shipped orders, excluding orders cancelled before ship (which are growing). Is that gaming, or legitimate scope-limiting? How would you fix the metric?
 
@@ -411,6 +411,6 @@ You now know:
 
 - 📖 *Order Fulfillment & Across the Dock Concepts, Design, and Operations* by Forger
 - 📖 *Distribution: Planning and Control* by Ross
-- 🔗 [Walmart OTIF Supplier Standards](https://www.walmartsupplychain.com/) — examples of retailer OTIF policies
+- 🔗 [Walmart OTIF Supplier Standards](https://www.walmartsupplychain.com/), examples of retailer OTIF policies
 - 🔗 [ASCM perfect-order definition](https://www.ascm.org/)
-- 🔗 [GS1 EDI Standards](https://www.gs1.org/standards/edi) — 850/855/856/810 reference
+- 🔗 [GS1 EDI Standards](https://www.gs1.org/standards/edi), 850/855/856/810 reference

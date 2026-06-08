@@ -20,7 +20,7 @@
 
 # 🎥 Module 5 Videos: Hyper-V & Virtualization
 
-> **How to use:** Click any card to search YouTube for the latest top result. Hyper-V is 15–20% of AZ-800 — and the lab-style "click these in order" questions are unforgiving.
+> **How to use:** Click any card to search YouTube for the latest top result. Hyper-V is 15–20% of AZ-800, and the lab-style "click these in order" questions are unforgiving.
 
 ## ⭐ Essential watching (~105 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Hyper-V — The Complete Overview</p>
+      <p class="vg-title">Hyper-V, The Complete Overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 40 min · Architecture + features</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Live Migration — Step by Step</p>
+      <p class="vg-title">Live Migration, Step by Step</p>
       <p class="vg-creator">Server Academy</p>
       <span class="vg-duration">⏱ 22 min · Constrained delegation</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gen 1 vs Gen 2 — Which to Pick</p>
+      <p class="vg-title">Gen 1 vs Gen 2, Which to Pick</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 12 min · UEFI + vTPM</span>
     </div>
@@ -145,11 +145,11 @@
 
 Answer these in your notebook:
 
-1. Gen 1 vs Gen 2 — when each, and which supports vTPM?
+1. Gen 1 vs Gen 2, when each, and which supports vTPM?
 2. Live Migration prerequisites (auth, network, storage)?
 3. Hyper-V Replica intervals and the difference vs sync replication?
-4. Shielded VM — TPM-trusted vs Host Key attestation difference?
+4. Shielded VM, TPM-trusted vs Host Key attestation difference?
 5. SR-IOV trade-off vs the vSwitch features?
-6. VHD vs VHDX — when does the difference matter (hint: Azure)?
+6. VHD vs VHDX, when does the difference matter (hint: Azure)?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

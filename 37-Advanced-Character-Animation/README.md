@@ -1,8 +1,8 @@
-# Advanced Character Animation — Acting-Level Character Performance
+# Advanced Character Animation, Acting-Level Character Performance
 
 > **The course that gets you hired at Pixar, DreamWorks, Riot, or Framestore.**
 
-This is the professional-grade character animation curriculum covering every discipline you need to work at the top tier of the industry. It is built to the same pedagogical standard as the site's engineering and cloud courses — deep, specific, and career-oriented.
+This is the professional-grade character animation curriculum covering every discipline you need to work at the top tier of the industry. It is built to the same pedagogical standard as the site's engineering and cloud courses, deep, specific, and career-oriented.
 
 ---
 
@@ -60,22 +60,22 @@ This is the professional-grade character animation curriculum covering every dis
 ## How to Study This Course
 
 ### Week 1–2: Foundation
-- Module 01 (Acting) — Read, watch, quiz
-- Module 02 (Body Mechanics) — Read, watch, quiz
-- Module 03 (Facial Animation) — Read, watch, quiz
+- Module 01 (Acting), Read, watch, quiz
+- Module 02 (Body Mechanics), Read, watch, quiz
+- Module 03 (Facial Animation), Read, watch, quiz
 
 ### Week 3–4: Technical Discipline
-- Module 04 (Lip Sync) — Read, watch, quiz
-- Module 05 (Creature) — Read, watch, quiz
-- Module 06 (Crowd) — Read, watch, quiz
+- Module 04 (Lip Sync), Read, watch, quiz
+- Module 05 (Creature), Read, watch, quiz
+- Module 06 (Crowd), Read, watch, quiz
 
 ### Week 5–6: Pipeline and Production
-- Module 07 (Motion Capture) — Read, watch, quiz
-- Module 08 (Graph Editor) — Read, watch, quiz
-- Module 09 (Pipeline/Directors) — Read, watch, quiz
+- Module 07 (Motion Capture), Read, watch, quiz
+- Module 08 (Graph Editor), Read, watch, quiz
+- Module 09 (Pipeline/Directors), Read, watch, quiz
 
 ### Week 7: Career and Application
-- Module 10 (Demo Reel) — Read, watch, quiz
+- Module 10 (Demo Reel), Read, watch, quiz
 - Review all Cheat Sheets
 - Practice Exam 1 and 2
 - Final Mock Exam
@@ -99,7 +99,7 @@ Every piece of content in this course is held to the standard articulated by Pix
 
 ## Further Resources
 
-- Pixar in a Box (Khan Academy) — the best free supplement to this course
-- Animation Mentor (animationmentor.com) — the professional mentorship standard
-- Animation Career Review (animationcareereview.com) — career data and demo reel guides
-- The Animator's Survival Kit (Richard Williams, 2001) — the essential textbook
+- Pixar in a Box (Khan Academy), the best free supplement to this course
+- Animation Mentor (animationmentor.com), the professional mentorship standard
+- Animation Career Review (animationcareereview.com), career data and demo reel guides
+- The Animator's Survival Kit (Richard Williams, 2001), the essential textbook

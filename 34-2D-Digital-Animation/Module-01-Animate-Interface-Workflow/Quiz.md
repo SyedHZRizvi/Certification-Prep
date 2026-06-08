@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-01-Animate-Interface-Workflow/Quiz/
 title: "Module 1 Quiz: Animate Interface & Workflow"
 ---
 
-# 🧠 Module 1 Quiz — Adobe Animate Interface & Workflow
+# 🧠 Module 1 Quiz, Adobe Animate Interface & Workflow
 
 ---
 
@@ -27,10 +27,10 @@ D. Tweened frame
 
 ### Q3. An animator drags a symbol from the Library onto the Stage three times. How many copies of the underlying symbol are stored in the Library?
 
-A. Three — one per instance
-B. One — all three on-stage objects share a single Library definition
-C. Zero — the symbol is consumed on first use
-D. Three — Animate duplicates the symbol automatically on each drag
+A. Three, one per instance
+B. One, all three on-stage objects share a single Library definition
+C. Zero, the symbol is consumed on first use
+D. Three, Animate duplicates the symbol automatically on each drag
 
 ---
 
@@ -226,28 +226,28 @@ D. Delete all unused assets only at the end of the project, never during product
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — The pasteboard is the gray area outside the Stage. Objects there are visible to the animator but invisible in exports.
-Q2.  C — A blank keyframe appears as a hollow circle and contains no artwork.
-Q3.  B — The Library stores one definition; all three on-stage objects are instances referencing that single definition.
-Q4.  C — Graphic symbols are tied to the parent timeline. Movie Clips have their own independent timeline.
-Q5.  B — F6 inserts a new keyframe. F5 extends a frame, F7 inserts a blank keyframe.
-Q6.  B — Merge Drawing Mode causes same-layer shapes to merge or cut into each other destructively.
-Q7.  B — Stream sync ties audio to the timeline playhead; it must be used for lip sync accuracy.
-Q8.  C — The registration point should be at the rotation pivot — the shoulder joint for an arm.
-Q9.  C — F5 extends (copies) the previous frame without creating a new keyframe.
-Q10. B — Object Drawing Mode wraps each shape in a self-contained object container that doesn't merge.
-Q11. B — The Properties panel adapts its content based on the current selection context.
-Q12. C — Graphic symbols sync to the parent timeline, keeping characters in sync with scene events.
-Q13. B — Double-clicking a symbol instance enters Symbol Editing Mode for that symbol's internal timeline.
-Q14. C — Animating on twos at 24fps = one new drawing every 2 frames = 12 unique drawings per second.
-Q15. B — Import to Library with layer preservation keeps each Photoshop layer on a separate Animate layer.
-Q16. B — PAL is 25fps. NTSC (US/Japan) is ~29.97fps, rounded to 30 for most digital delivery.
-Q17. B — OAM is an Open Adobe Animate Package: an HTML5 Canvas animation bundled for third-party integration.
-Q18. C — Event sync plays audio to completion independent of the timeline. Stream sync ties audio to the playhead.
-Q19. C — Guide layers are visible to the animator but never appear in the final export.
-Q20. A — Break Apart permanently severs the instance-Library link; it becomes raw shapes, not a symbol.
-Q21. B — Multiple Scenes (artboards) in Animate share the same Library across independent timelines.
-Q22. C — Smoothing corrects path wobble; lower values preserve hand character; higher values produce cleaner lines.
-Q23. D — "Shape" is not a symbol type. The three valid types are Graphic, Movie Clip, and Button.
-Q24. C — Prefix names and folder organization are the industry standard for navigable multi-character Libraries.
+Q1.  B, The pasteboard is the gray area outside the Stage. Objects there are visible to the animator but invisible in exports.
+Q2.  C, A blank keyframe appears as a hollow circle and contains no artwork.
+Q3.  B, The Library stores one definition; all three on-stage objects are instances referencing that single definition.
+Q4.  C, Graphic symbols are tied to the parent timeline. Movie Clips have their own independent timeline.
+Q5.  B, F6 inserts a new keyframe. F5 extends a frame, F7 inserts a blank keyframe.
+Q6.  B, Merge Drawing Mode causes same-layer shapes to merge or cut into each other destructively.
+Q7.  B, Stream sync ties audio to the timeline playhead; it must be used for lip sync accuracy.
+Q8.  C, The registration point should be at the rotation pivot, the shoulder joint for an arm.
+Q9.  C, F5 extends (copies) the previous frame without creating a new keyframe.
+Q10. B, Object Drawing Mode wraps each shape in a self-contained object container that doesn't merge.
+Q11. B, The Properties panel adapts its content based on the current selection context.
+Q12. C, Graphic symbols sync to the parent timeline, keeping characters in sync with scene events.
+Q13. B, Double-clicking a symbol instance enters Symbol Editing Mode for that symbol's internal timeline.
+Q14. C, Animating on twos at 24fps = one new drawing every 2 frames = 12 unique drawings per second.
+Q15. B, Import to Library with layer preservation keeps each Photoshop layer on a separate Animate layer.
+Q16. B, PAL is 25fps. NTSC (US/Japan) is ~29.97fps, rounded to 30 for most digital delivery.
+Q17. B, OAM is an Open Adobe Animate Package: an HTML5 Canvas animation bundled for third-party integration.
+Q18. C, Event sync plays audio to completion independent of the timeline. Stream sync ties audio to the playhead.
+Q19. C, Guide layers are visible to the animator but never appear in the final export.
+Q20. A, Break Apart permanently severs the instance-Library link; it becomes raw shapes, not a symbol.
+Q21. B, Multiple Scenes (artboards) in Animate share the same Library across independent timelines.
+Q22. C, Smoothing corrects path wobble; lower values preserve hand character; higher values produce cleaner lines.
+Q23. D, "Shape" is not a symbol type. The three valid types are Graphic, Movie Clip, and Button.
+Q24. C, Prefix names and folder organization are the industry standard for navigable multi-character Libraries.
 ```

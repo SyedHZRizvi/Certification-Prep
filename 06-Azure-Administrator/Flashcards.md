@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -290,7 +290,7 @@
 **A:** Owner and User Access Administrator.
 
 **Q:** Difference between `CanNotDelete` and `ReadOnly` locks?
-**A:** CanNotDelete blocks deletion only (read + modify OK). ReadOnly blocks both deletes and modifications — and can break operations like listing storage keys.
+**A:** CanNotDelete blocks deletion only (read + modify OK). ReadOnly blocks both deletes and modifications, and can break operations like listing storage keys.
 
 **Q:** Which Azure Policy effect runs an embedded ARM deployment to remediate non-compliance?
 **A:** DeployIfNotExists (DINE).
@@ -299,10 +299,10 @@
 **A:** Create a remediation task on the policy assignment.
 
 **Q:** What is an Initiative in Azure Policy?
-**A:** A group (set) of related policies assigned together — e.g., MCSB, NIST 800-53.
+**A:** A group (set) of related policies assigned together, e.g., MCSB, NIST 800-53.
 
 **Q:** How do you override a Deny policy inherited from a parent scope?
-**A:** Create a policy **exemption** at the smaller scope — NOT a counter-policy.
+**A:** Create a policy **exemption** at the smaller scope, NOT a counter-policy.
 
 **Q:** Default Activity Log retention?
 **A:** 90 days. Use a Diagnostic Setting to keep longer (Log Analytics, Storage, Event Hub).
@@ -336,7 +336,7 @@
 **A:** Control plane = manage the resource (create, configure, delete). Data plane = read/write data inside the resource (e.g. blob contents, secrets). A Storage Account Contributor cannot read blobs without an explicit data role.
 
 **Q:** What's the difference between PIM "eligible" and "active" assignments?
-**A:** Eligible requires activation (MFA, optional approval, time-bound). Active is permanent — use sparingly.
+**A:** Eligible requires activation (MFA, optional approval, time-bound). Active is permanent, use sparingly.
 
 **Q:** Maximum PIM activation duration by default?
 **A:** 8 hours (can be lowered per role in PIM settings).
@@ -354,7 +354,7 @@
 **A:** MFA fatigue / push bombing.
 
 **Q:** What is a Conditional Access "report-only" mode used for?
-**A:** Testing a policy's impact without enforcing it — review logs first, then turn on enforcement.
+**A:** Testing a policy's impact without enforcing it, review logs first, then turn on enforcement.
 
 **Q:** What are Administrative Units (AUs)?
 **A:** Sub-directory groupings that let you scope user/group admin (like User Administrator) to a subset of the tenant.
@@ -376,13 +376,13 @@
 **A:** 30 / 90 / 180 days.
 
 **Q:** Can you read an Archive-tier blob directly?
-**A:** No — must rehydrate to Hot or Cool first (hours).
+**A:** No, must rehydrate to Hot or Cool first (hours).
 
 **Q:** Three SAS types?
 **A:** Account SAS, Service SAS, User Delegation SAS.
 
 **Q:** Which SAS uses Entra ID for signing instead of the account key?
-**A:** User Delegation SAS — best practice, auditable per user.
+**A:** User Delegation SAS, best practice, auditable per user.
 
 **Q:** How do you make a Service SAS revocable without rotating the key?
 **A:** Associate it with a Stored Access Policy (SAP); delete the SAP to revoke.
@@ -413,7 +413,7 @@
 **A:** LRS or ZRS only (no GRS).
 
 **Q:** Is encryption in transit supported for NFS 4.1 on Azure Files?
-**A:** No — secure with network isolation (private endpoint or VNet).
+**A:** No, secure with network isolation (private endpoint or VNet).
 
 **Q:** Three identity-based SMB auth options for Azure Files?
 **A:** Entra Kerberos for hybrid identities, on-prem AD DS, and Entra Domain Services.
@@ -434,7 +434,7 @@
 **A:** Volume free space (keep X% free) and Date (tier files older than N days).
 
 **Q:** Do storage account keys give per-user audit logs?
-**A:** No — key auth is a shared identity. Use identity-based auth for per-user audit.
+**A:** No, key auth is a shared identity. Use identity-based auth for per-user audit.
 
 ---
 
@@ -447,16 +447,16 @@
 **A:** No. AS must be specified at VM creation.
 
 **Q:** Can a VM be in both an Availability Set and an Availability Zone?
-**A:** No — mutually exclusive.
+**A:** No, mutually exclusive.
 
 **Q:** Max FDs and UDs in an Availability Set?
 **A:** 3 fault domains × 20 update domains.
 
 **Q:** Can Premium SSD v2 or Ultra Disks be used as OS disks?
-**A:** No — data disks only.
+**A:** No, data disks only.
 
 **Q:** What makes Premium SSD v2 different from Premium SSD?
-**A:** Independent IOPS, throughput, and size — billed separately. Premium SSD (v1) is tied to fixed P-tiers.
+**A:** Independent IOPS, throughput, and size, billed separately. Premium SSD (v1) is tied to fixed P-tiers.
 
 **Q:** Spot VM eviction notice?
 **A:** 30 seconds.
@@ -468,10 +468,10 @@
 **A:** HPA scales pod replicas. Cluster autoscaler scales node count in a pool.
 
 **Q:** Where does Azure Disk Encryption (ADE) operate?
-**A:** Inside the OS — BitLocker (Windows) or dm-crypt (Linux), keys in Key Vault.
+**A:** Inside the OS, BitLocker (Windows) or dm-crypt (Linux), keys in Key Vault.
 
 **Q:** Where does Encryption at Host operate?
-**A:** At the physical host level — encrypts temp + cache disks. Independent of ADE.
+**A:** At the physical host level, encrypts temp + cache disks. Independent of ADE.
 
 **Q:** What is the Compute Gallery hierarchy?
 **A:** Gallery → Image Definition → Image Version (e.g. 1.0.0), with replication to target regions.
@@ -499,7 +499,7 @@
 **A:** Azure Container Instances (ACI).
 
 **Q:** Is the standard AKS control plane paid?
-**A:** No — free in standard tier. Pay for nodes and add-ons. Uptime SLA tier adds a small cost.
+**A:** No, free in standard tier. Pay for nodes and add-ons. Uptime SLA tier adds a small cost.
 
 **Q:** Three AKS networking modes (modern → legacy)?
 **A:** Azure CNI Overlay (modern default), Azure CNI, Kubenet (legacy, avoid).
@@ -507,7 +507,7 @@
 **Q:** AKS storage driver for RWX (multi-pod read/write)?
 **A:** Azure File CSI driver. (Azure Disk CSI = RWO only.)
 
-**Q:** AKS layer-7 ingress with WAF — best options?
+**Q:** AKS layer-7 ingress with WAF, best options?
 **A:** Application Gateway Ingress Controller (AGIC) or Application Gateway for Containers (AGFC, modern).
 
 ---
@@ -515,7 +515,7 @@
 ## 🕸️ SECTION 7: VIRTUAL NETWORKS
 
 **Q:** How many IPs does Azure reserve per subnet?
-**A:** 5 — `.0` network, `.1` default gateway, `.2`/`.3` DNS, `.255` broadcast.
+**A:** 5, `.0` network, `.1` default gateway, `.2`/`.3` DNS, `.255` broadcast.
 
 **Q:** Is VNet peering transitive?
 **A:** No. A↔B and B↔C does NOT imply A↔C. Need a hub firewall + UDRs to transit.
@@ -529,13 +529,13 @@
 **Q:** What two peering toggles let a spoke use the hub's gateway?
 **A:** "Allow gateway transit" on hub-to-spoke peering + "Use remote gateways" on spoke-to-hub peering.
 
-**Q:** Service Endpoint vs Private Endpoint — which gets a private IP?
+**Q:** Service Endpoint vs Private Endpoint, which gets a private IP?
 **A:** Only Private Endpoint creates a NIC with a private IP in your subnet.
 
 **Q:** What is required for a Private Endpoint FQDN to resolve to the private IP?
 **A:** A linked Private DNS Zone with a DNS zone group auto-registering the PE's IP.
 
-**Q:** Route-based vs Policy-based VPN — which is modern?
+**Q:** Route-based vs Policy-based VPN, which is modern?
 **A:** Route-based (BGP, IKEv2, multiple tunnels). Policy-based is legacy single-tunnel.
 
 **Q:** Three ExpressRoute SKUs?
@@ -545,7 +545,7 @@
 **A:** Connect two on-prem sites THROUGH the Microsoft backbone via two ER circuits. Requires Premium.
 
 **Q:** ExpressRoute Direct vs typical ExpressRoute?
-**A:** Direct is 10/100 Gbps directly to a Microsoft edge port — no provider needed.
+**A:** Direct is 10/100 Gbps directly to a Microsoft edge port, no provider needed.
 
 **Q:** Five next-hop types in UDRs?
 **A:** VnetLocal, VirtualNetworkGateway, Internet, VirtualAppliance, None.
@@ -561,16 +561,16 @@
 **A:** AllowVnetInBound (65000), AllowAzureLoadBalancerInBound (65001), DenyAllInBound (65500).
 
 **Q:** Are NSGs stateful?
-**A:** Yes — return traffic is auto-allowed.
+**A:** Yes, return traffic is auto-allowed.
 
 **Q:** When both subnet-level and NIC-level NSGs apply, what's the result of a Deny in either?
 **A:** Packet is dropped. Both layers must allow.
 
 **Q:** What's an ASG?
-**A:** Application Security Group — a logical tag attached to NICs. Used as source/destination in NSG rules within a single VNet.
+**A:** Application Security Group, a logical tag attached to NICs. Used as source/destination in NSG rules within a single VNet.
 
 **Q:** Do ASGs work across peered VNets?
-**A:** No — single VNet only.
+**A:** No, single VNet only.
 
 **Q:** Azure Firewall rule processing order?
 **A:** DNAT → Network → Application (within the same priority).
@@ -604,7 +604,7 @@
 **A:** Windows files/folders + System State to Azure. (NOT Linux.)
 
 **Q:** Recovery Services Vault redundancy options?
-**A:** LRS / GRS (default) / ZRS — set at creation, hard to change later.
+**A:** LRS / GRS (default) / ZRS, set at creation, hard to change later.
 
 **Q:** What does Cross-Region Restore (CRR) require?
 **A:** GRS vault + the CRR feature enabled (opt-in). Lets you restore to the paired region.
@@ -613,10 +613,10 @@
 **A:** 14 days (configurable up to 180).
 
 **Q:** What is Multi-User Authorization (MUA) for backup?
-**A:** A "4-eyes" approval pattern using a Resource Guard — protected backup operations require a second admin's approval.
+**A:** A "4-eyes" approval pattern using a Resource Guard, protected backup operations require a second admin's approval.
 
 **Q:** Three ASR failover types?
-**A:** Test (isolated network, no prod impact), Planned (no data loss), Unplanned (disaster — accept last replicated point).
+**A:** Test (isolated network, no prod impact), Planned (no data loss), Unplanned (disaster, accept last replicated point).
 
 **Q:** Azure Migrate's 3 phases?
 **A:** Discover → Assess → Migrate.
@@ -650,7 +650,7 @@
 **A:** Log Analytics workspace, Storage account, Event Hub, Partner integration.
 
 **Q:** How do you trigger alert notifications + automation actions?
-**A:** Action Groups — bundles of recipients (email/SMS/voice) and actions (webhook, Logic App, Function, Automation Runbook).
+**A:** Action Groups, bundles of recipients (email/SMS/voice) and actions (webhook, Logic App, Function, Automation Runbook).
 
 **Q:** Best Network Watcher tool to find which NSG rule is dropping a packet?
 **A:** IP Flow Verify.
@@ -671,11 +671,11 @@
 
 ## 🎓 STUDY TIPS
 
-1. Read each cheat-sheet daily for the last week — they're designed for that
+1. Read each cheat-sheet daily for the last week, they're designed for that
 2. Re-run the practice exams 3 times each; aim for 90%+ on the Final Mock before scheduling
-3. Build something real in your Azure free subscription — finger memory beats notes
+3. Build something real in your Azure free subscription, finger memory beats notes
 4. Watch John Savill on any topic you're shaky on (he's free)
-5. The day before the exam: skim cheat sheets only — no new material
+5. The day before the exam: skim cheat sheets only, no new material
 
 ---
 

@@ -214,13 +214,13 @@ On-demand, pay-per-second EC2 = textbook variable expense. Reserved Instances an
 With IaaS (e.g. EC2), the customer manages the OS, runtime, app, and data. AWS only manages the physical hardware and virtualization.
 
 ### Q5: **B. Choosing an EU Region**
-Data sovereignty is enforced by selecting a Region in the desired jurisdiction. Cross-Region replication does NOT happen automatically — what you store in `eu-west-1` stays in `eu-west-1` until you configure otherwise.
+Data sovereignty is enforced by selecting a Region in the desired jurisdiction. Cross-Region replication does NOT happen automatically, what you store in `eu-west-1` stays in `eu-west-1` until you configure otherwise.
 
 ### Q6: **C. AWS Outposts**
-Outposts is literally AWS server racks installed in YOUR datacenter — a hybrid deployment using the same AWS APIs.
+Outposts is literally AWS server racks installed in YOUR datacenter, a hybrid deployment using the same AWS APIs.
 
 ### Q7: **C. Offers some services free forever within usage limits**
-"Always Free" never expires — e.g., 1M Lambda invocations/month, 25 GB DynamoDB storage. Separate from the 12-month tier.
+"Always Free" never expires, e.g., 1M Lambda invocations/month, 25 GB DynamoDB storage. Separate from the 12-month tier.
 
 ### Q8: **B. AWS Wavelength**
 Wavelength embeds AWS compute *inside* 5G carrier networks for ultra-low mobile latency. CloudFront is for HTTP content; not the same.
@@ -244,7 +244,7 @@ CloudFormation lets you describe infrastructure in YAML/JSON and AWS provisions 
 The oldest, largest, and usually cheapest Region. New services launch here first.
 
 ### Q15: **B. AWS GovCloud (US) Regions**
-GovCloud is isolated for US government workloads — supports FedRAMP High and ITAR. Requires a separate AWS account/approval.
+GovCloud is isolated for US government workloads, supports FedRAMP High and ITAR. Requires a separate AWS account/approval.
 
 ### Q16: **B. Scalability = capacity to handle growth; elasticity = automatic scaling up/down with demand**
 Related but distinct. Scalability is the architectural property; elasticity is the dynamic, automatic adjustment.
@@ -259,7 +259,7 @@ Console (GUI), CLI (terminal), and SDKs (in code) are all valid AWS interfaces. 
 Cloud wins on *variable* workloads where you'd otherwise overprovision. For flat 24/7 load, owning hardware can beat cloud pricing.
 
 ### Q20: **B. Low-latency, high-bandwidth private connectivity for replication**
-AZ-to-AZ links are private AWS fiber — not the public internet. This is what enables synchronous multi-AZ replication (e.g., RDS Multi-AZ).
+AZ-to-AZ links are private AWS fiber, not the public internet. This is what enables synchronous multi-AZ replication (e.g., RDS Multi-AZ).
 
 ### Q21: **C. Edge Locations**
 Route 53 (DNS) and CloudFront (CDN) terminate at the Edge to be physically close to users.
@@ -287,7 +287,7 @@ IaC = the right answer for "repeatable, version-controlled" *and* "go global in 
 ## 🃏 Add To Your Flashcards
 
 - The 6 benefits of cloud computing
-- IaaS vs PaaS vs SaaS — definitions + AWS examples
+- IaaS vs PaaS vs SaaS, definitions + AWS examples
 - Region vs AZ vs Edge Location (one-line each)
 - The 3 Free Tier types
 - AWS Outposts vs Local Zones vs Wavelength

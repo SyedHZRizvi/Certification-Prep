@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — AI Digital Marketing Entrepreneur (All-Modules)
+# 🧪 Practice Exam 2, AI Digital Marketing Entrepreneur (All-Modules)
 
 > **Conditions:** Set a 55-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 30/40 (75%)
@@ -30,7 +30,7 @@ D. 100 channels, 10 deliverables, 1 product
 A. Two or three axes (e.g., vertical + deliverable)
 B. One axis only
 C. Every dimension
-D. No axis — stay general
+D. No axis, stay general
 
 ### 5. The 5 Fixed Anchors of a productized service are:
 A. Scope, Price, Process, Time, Outcome
@@ -114,7 +114,7 @@ D. Free
 A. Zapier always
 B. Custom code only
 C. Make.com sweet spot; n8n at high volume; Zapier for hard connectors
-D. None — manual
+D. None, manual
 
 ### 19. The reading suggests subscribing to:
 A. Both Ahrefs and SEMrush always
@@ -166,7 +166,7 @@ D. Random
 
 ### 27. Triple-tax-advantaged means:
 A. Roth IRA tripled
-B. HSA — deductible going in, growth tax-free, qualified withdrawals tax-free
+B. HSA, deductible going in, growth tax-free, qualified withdrawals tax-free
 C. 401(k) growth
 D. Brokerage account
 
@@ -272,7 +272,7 @@ D. Skip quarterly estimates and "figure it out in April"
 | Score | Verdict |
 |---|---|
 | 36–40 | 🏆 Ready for the Final Mock Exam |
-| 30–35 | ✅ Solid — review wrong answers, then Final Mock |
+| 30–35 | ✅ Solid, review wrong answers, then Final Mock |
 | 24–29 | ⚠️ Re-study weak modules; retake exam tomorrow |
 | <24 | 🔁 Restart weakest modules from the start |
 
@@ -291,13 +291,13 @@ For EACH wrong answer:
 
 ## Detailed answer rationales
 
-Use these to learn from each question — including the wrong choices. Every distractor is here to teach you a concept it confuses with the correct answer.
+Use these to learn from each question, including the wrong choices. Every distractor is here to teach you a concept it confuses with the correct answer.
 
 **Q1. Answer: D**
 
-**Why D is correct.** Module 1's "Mistake 1": "I help businesses grow" is the death sentence of agency landing pages — generic, un-Googleable, un-referrable.
+**Why D is correct.** Module 1's "Mistake 1": "I help businesses grow" is the death sentence of agency landing pages, generic, un-Googleable, un-referrable.
 
-**Why the other options are wrong.** A — narrow positioning is the *right* mistake to make (per Storyblok). B — under-hiring is not a positioning mistake. C — overpricing is rare; underpricing is the actual frequent mistake.
+**Why the other options are wrong.** A narrow positioning is the *right* mistake to make (per Storyblok). B under-hiring is not a positioning mistake. C, overpricing is rare; underpricing is the actual frequent mistake.
 
 **Exam-takeaway.** "I help businesses grow" = unsearchable. Niche with industry + size + role + deliverable.
 
@@ -305,7 +305,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Designjoy: ~$1.5M ARR solo, ~70% margin. Multiple public podcast disclosures.
 
-**Why the other options are wrong.** A — 30 employees contradicts solo. B — $50M Series B is venture-stage, not bootstrap. D — Designjoy is active, not shut down.
+**Why the other options are wrong.** A 30 employees contradicts solo. B $50M Series B is venture-stage, not bootstrap. D, Designjoy is active, not shut down.
 
 **Exam-takeaway.** Designjoy = $1.5M solo, ~70% margin. Memorize.
 
@@ -319,9 +319,9 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Q4. Answer: A**
 
-**Why A is correct.** Stacked wedge = two (or three) axes — typically vertical + deliverable (Maya pattern).
+**Why A is correct.** Stacked wedge = two (or three) axes, typically vertical + deliverable (Maya pattern).
 
-**Why the other options are wrong.** B — one axis is pure, not stacked. C — every dimension is over-narrow. D — no axis = no wedge.
+**Why the other options are wrong.** B one axis is pure, not stacked. C every dimension is over-narrow. D, no axis = no wedge.
 
 **Exam-takeaway.** Stacked wedge = two axes (vertical + deliverable is the canonical pattern).
 
@@ -329,7 +329,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Module 2's 5 Fixed Anchors = Scope, Price, Process, Time, Outcome.
 
-**Why the other options are wrong.** B confuses anchors with internal ops (Tools, People). C inserts Speed and Tools — derivatives. D conflates anchors with P&L outputs.
+**Why the other options are wrong.** B confuses anchors with internal ops (Tools, People). C inserts Speed and Tools, derivatives. D conflates anchors with P&L outputs.
 
 **Exam-takeaway.** 5 Fixed Anchors: Scope, Price, Process, Time, Outcome.
 
@@ -337,7 +337,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Most productized services sell at 2–3x the founder's gut price (the tripled-price exercise).
 
-**Why the other options are wrong.** A — 1/3 the gut price is the founder's instinct to underprice. B — same as gut = no test value. C — 10x is implausibly high.
+**Why the other options are wrong.** A 1/3 the gut price is the founder's instinct to underprice. B same as gut = no test value. C, 10x is implausibly high.
 
 **Exam-takeaway.** Tripled price exercise: try at 3x before publishing.
 
@@ -345,7 +345,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Module 2's AI-leverage table: audits and analysis are 5–8x leverage (AI excels at structured pattern-spotting on data).
 
-**Why the other options are wrong.** B/C/D — filming, calls, and live workshops are 1–2x leverage (human-bound).
+**Why the other options are wrong.** B/C/D, filming, calls, and live workshops are 1–2x leverage (human-bound).
 
 **Exam-takeaway.** Highest AI leverage = audit/analysis work. Design SKUs around this.
 
@@ -369,7 +369,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Cold email positive reply rate benchmarks: 2.5–5% (Smartlead, Lemlist, Apollo 2024 data).
 
-**Why the other options are wrong.** A — 50–70% is the *open* rate, not positive reply. B — 0.1% is dead-list territory. C — 25–40% would be inbound-quality conversion.
+**Why the other options are wrong.** A 50–70% is the *open* rate, not positive reply. B 0.1% is dead-list territory. C, 25–40% would be inbound-quality conversion.
 
 **Exam-takeaway.** Positive reply = 2.5–5%. Open rate = 50–70%.
 
@@ -377,7 +377,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Paid ads need ≥ $7,500 ACV to profit at typical CAC of $800–$2,500/booked call × 15–30% close.
 
-**Why the other options are wrong.** A — $200 is 30x below threshold. B — $1,000 still loses. C — $1M is gratuitous.
+**Why the other options are wrong.** A $200 is 30x below threshold. B $1,000 still loses. C, $1M is gratuitous.
 
 **Exam-takeaway.** Paid ads need ≥ $7,500 ACV. Lead-magnet ads on low-ACV waste money.
 
@@ -385,15 +385,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Decoy pricing: middle option gets 60–70%, low option 10–20%, high anchor 10–25%.
 
-**Why the other options are wrong.** A — 10% would mean buyers reject the target. B — 30% understates the pull. D — 95% is implausibly dominant.
+**Why the other options are wrong.** A 10% would mean buyers reject the target. B 30% understates the pull. D, 95% is implausibly dominant.
 
 **Exam-takeaway.** Middle option gets 60–70%. Design it as your target offering.
 
 **Q13. Answer: B**
 
-**Why B is correct.** Option C should be 2.5–3x Option A — designed as the anchor that makes B feel reasonable.
+**Why B is correct.** Option C should be 2.5–3x Option A, designed as the anchor that makes B feel reasonable.
 
-**Why the other options are wrong.** A — cheaper than A defeats the anchor. C — same as B = no contrast. D — 100x is absurd.
+**Why the other options are wrong.** A cheaper than A defeats the anchor. C same as B = no contrast. D, 100x is absurd.
 
 **Exam-takeaway.** Option C ≈ 2.5–3x Option A. Anchor high; sell the middle.
 
@@ -401,7 +401,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Healthy proposal close rate = 30–50%. Below 30% = pricing too high; above 50% often signals underpricing.
 
-**Why the other options are wrong.** B — 95–100% would mean you're giving the work away. C — 0–5% = pricing or fit broken. D — 80%+ = underpriced.
+**Why the other options are wrong.** B 95–100% would mean you're giving the work away. C 0–5% = pricing or fit broken. D, 80%+ = underpriced.
 
 **Exam-takeaway.** Healthy close rate 30–50%. Outside that band, diagnose.
 
@@ -409,7 +409,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Kill fee = client penalty for mid-engagement cancellation, typically 25–50% of unbilled balance.
 
-**Why the other options are wrong.** A — a bonus to the client is the opposite. B — employment termination is HR, not contract. D — IP clauses are separate.
+**Why the other options are wrong.** A a bonus to the client is the opposite. B employment termination is HR, not contract. D, IP clauses are separate.
 
 **Exam-takeaway.** Kill fee protects the operator. 25–50% of unbilled balance.
 
@@ -417,7 +417,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Year-1 solo, inbound-led stack: ~$200/mo (LLM $20 + Midjourney $10 + Workspace $12 + Ahrefs Lite $129 + Bonsai $25 + free tools).
 
-**Why the other options are wrong.** B — $25 is below the minimum (no LLM + SEO). C/D — Marcus's $4,200/mo trap is exactly what the module warns against.
+**Why the other options are wrong.** B $25 is below the minimum (no LLM + SEO). C/D Marcus's $4,200/mo trap is exactly what the module warns against.
 
 **Exam-takeaway.** Year-1 solo target = ~$200/mo. Stack should be 1–2% of revenue.
 
@@ -425,7 +425,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Outbound stack ~$235/mo: Apollo $79 + Smartlead $39 + 3 inboxes $18 + LinkedIn SalesNav $99.
 
-**Why the other options are wrong.** A — $2,500/mo is enterprise overkill. B — $25 doesn't cover one tool. D — free won't deliver inboxes or verified data.
+**Why the other options are wrong.** A $2,500/mo is enterprise overkill. B $25 doesn't cover one tool. D, free won't deliver inboxes or verified data.
 
 **Exam-takeaway.** Outbound stack = $220–$240/mo. Skip if pure inbound.
 
@@ -433,15 +433,15 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Make.com is the sweet spot; n8n self-hosted at high volume; Zapier for hard-to-find connectors.
 
-**Why the other options are wrong.** A — Zapier always is the high-cost mistake. B — custom code is over-engineering for Year 1. D — manual = no automation.
+**Why the other options are wrong.** A Zapier always is the high-cost mistake. B custom code is over-engineering for Year 1. D, manual = no automation.
 
 **Exam-takeaway.** Make.com default; n8n at volume; Zapier for connector gaps.
 
 **Q19. Answer: D**
 
-**Why D is correct.** Pick ONE of Ahrefs Lite OR SEMrush Pro — they do 90% of the same work. Subscribing to both is the classic tool sprawl.
+**Why D is correct.** Pick ONE of Ahrefs Lite OR SEMrush Pro, they do 90% of the same work. Subscribing to both is the classic tool sprawl.
 
-**Why the other options are wrong.** A — both = duplication. B — Moz Pro alone is weaker than Ahrefs/SEMrush. C — neither means no keyword/backlink data.
+**Why the other options are wrong.** A both = duplication. B Moz Pro alone is weaker than Ahrefs/SEMrush. C, neither means no keyword/backlink data.
 
 **Exam-takeaway.** SEO tools: pick ONE (Ahrefs Lite OR SEMrush Pro).
 
@@ -449,7 +449,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Module 6's 3 legitimate hiring triggers: 50+ hr/wk for 8+ weeks, specific bottleneck >15 hr/wk, active revenue turned away.
 
-**Why the other options are wrong.** B — "look established" wrecks cashflow. C — $1M ARR is too late. D — anniversaries aren't triggers.
+**Why the other options are wrong.** B "look established" wrecks cashflow. C $1M ARR is too late. D, anniversaries aren't triggers.
 
 **Exam-takeaway.** 3 hiring triggers: workload, bottleneck, turned-away revenue.
 
@@ -457,7 +457,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** The 1.5x rule: a new hire should generate 1.5–2x their cost in freed capacity or new revenue within 90 days.
 
-**Why the other options are wrong.** A — 1.5x their predecessor's salary isn't about ROI. C — hours don't equate to leverage. D — 1.5 years' experience is unrelated.
+**Why the other options are wrong.** A 1.5x their predecessor's salary isn't about ROI. C hours don't equate to leverage. D, 1.5 years' experience is unrelated.
 
 **Exam-takeaway.** Hire generates 1.5–2x cost in 90 days, or the math fails.
 
@@ -465,7 +465,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** Module 6's interview funnel's deciding step is the PAID work-sample test (2–4 hours, real task). Schmidt & Hunter 1998 + Google/IDEO/Stripe replication.
 
-**Why the other options are wrong.** A — application screen filters but doesn't decide. B — intro call confirms fit, not output. D — reference checks come after the decision.
+**Why the other options are wrong.** A application screen filters but doesn't decide. B intro call confirms fit, not output. D, reference checks come after the decision.
 
 **Exam-takeaway.** Work sample > behavioral interview by 2–3x in predicting performance.
 
@@ -473,7 +473,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** Module 6's AI-native target: 3–5x output per hire vs. 2020 baseline.
 
-**Why the other options are wrong.** A — no improvement defeats the model. B — slower means the AI tools aren't deployed. C — 100x is implausible.
+**Why the other options are wrong.** A no improvement defeats the model. B slower means the AI tools aren't deployed. C, 100x is implausible.
 
 **Exam-takeaway.** AI-native hire = 3–5x output multiplier. Below that, SOPs or hire is broken.
 
@@ -481,7 +481,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Module 7's tax bucket: transfer ~30% of every business deposit immediately to a tax savings account.
 
-**Why the other options are wrong.** A — 10% annually misses the immediate-transfer discipline. C — "wait until April" is Tara's mistake. D — paying quarterly is a separate (also required) step.
+**Why the other options are wrong.** A 10% annually misses the immediate-transfer discipline. C "wait until April" is Tara's mistake. D, paying quarterly is a separate (also required) step.
 
 **Exam-takeaway.** 30% tax bucket, immediate transfer, every deposit.
 
@@ -489,7 +489,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** At $200K profit, LLC + S-corp election with reasonable salary + distributions is the canonical tax-optimization choice (~$18K SE-tax savings illustrative).
 
-**Why the other options are wrong.** A — Sole prop pays full SE tax. B — C-corp is for VC-funded scale. D — Trust is asset-protection, not entity-of-operation.
+**Why the other options are wrong.** A Sole prop pays full SE tax. B C-corp is for VC-funded scale. D, Trust is asset-protection, not entity-of-operation.
 
 **Exam-takeaway.** At $80K–$400K profit, LLC + S-corp election is the standard US tax structure.
 
@@ -497,7 +497,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why C is correct.** US quarterly estimates are due April 15, June 15, Sept 15, Jan 15 (next year).
 
-**Why the other options are wrong.** A — monthly is bookkeeping cadence, not tax payment. B — annually triggers IRS penalties. D — random isn't a real schedule.
+**Why the other options are wrong.** A monthly is bookkeeping cadence, not tax payment. B annually triggers IRS penalties. D, random isn't a real schedule.
 
 **Exam-takeaway.** Quarterly deadlines: 4/15, 6/15, 9/15, 1/15. Set calendar reminders Jan 2.
 
@@ -505,7 +505,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** HSA is triple-tax-advantaged: contributions deductible going in, growth tax-free, qualified withdrawals tax-free.
 
-**Why the other options are wrong.** A — Roth is double-advantaged (post-tax in, tax-free growth + withdrawals). C — 401(k) has tax-deferred growth, not triple-advantaged. D — brokerage has no tax advantage.
+**Why the other options are wrong.** A Roth is double-advantaged (post-tax in, tax-free growth + withdrawals). C 401(k) has tax-deferred growth, not triple-advantaged. D, brokerage has no tax advantage.
 
 **Exam-takeaway.** HSA = deductible + tax-free growth + tax-free qualified withdrawals.
 
@@ -513,7 +513,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Productized services target 60–80% gross margin at scale.
 
-**Why the other options are wrong.** A — 0–10% is breakeven services. C — 95–100% is software. D — negative is broken delivery.
+**Why the other options are wrong.** A 0–10% is breakeven services. C 95–100% is software. D, negative is broken delivery.
 
 **Exam-takeaway.** Productized gross margin target = 60–80%.
 
@@ -521,7 +521,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** PACT-O = Problem-Authority-Constraints-Target outcome-Other options. Evolved from BANT.
 
-**Why the other options are wrong.** A — Pay/Action/Cost/Timing/Offer mixes process steps. B — Price/Anchor/Close/Test/Offer is a pricing acronym. C — Process/Audit/Contract/Time/Outreach is operations, not discovery.
+**Why the other options are wrong.** A Pay/Action/Cost/Timing/Offer mixes process steps. B Price/Anchor/Close/Test/Offer is a pricing acronym. C, Process/Audit/Contract/Time/Outreach is operations, not discovery.
 
 **Exam-takeaway.** PACT-O = Problem, Authority, Constraints, Target outcome, Other options.
 
@@ -529,7 +529,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** In a 45-min discovery call, the buyer should talk ~70% of the time. Listen, take notes, ask follow-ups.
 
-**Why the other options are wrong.** A — 10% means you're pitching the whole time. B — 50% is balanced but still under-listening. C — 100% means you say nothing at all.
+**Why the other options are wrong.** A 10% means you're pitching the whole time. B 50% is balanced but still under-listening. C, 100% means you say nothing at all.
 
 **Exam-takeaway.** Buyer talks 70%. Operator listens, summarizes, follow-ups.
 
@@ -537,7 +537,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why D is correct.** End-of-call recap should be sent within 30 minutes of the call. This discipline closes 2x more deals.
 
-**Why the other options are wrong.** A — only when requested misses the proactive signal. B — 30 days is far too late. C — never defeats the demonstration of listening.
+**Why the other options are wrong.** A only when requested misses the proactive signal. B 30 days is far too late. C, never defeats the demonstration of listening.
 
 **Exam-takeaway.** Recap email within 30 min. Mirror buyer's words back.
 
@@ -545,23 +545,23 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Module 8's kickoff Loom (15 min, recorded BEFORE the kickoff call) kills ~80% of "where are we?" client emails.
 
-**Why the other options are wrong.** A — 0% would mean the Loom does nothing. C — 5% is too modest. D — 100% is implausible.
+**Why the other options are wrong.** A 0% would mean the Loom does nothing. C 5% is too modest. D, 100% is implausible.
 
 **Exam-takeaway.** Kickoff Loom = ~80% reduction in client check-in noise.
 
 **Q33. Answer: A**
 
-**Why A is correct.** Friday afternoon weekly status email — even on quiet weeks — reinforces predictability and retention.
+**Why A is correct.** Friday afternoon weekly status email even on quiet weeks reinforces predictability and retention.
 
-**Why the other options are wrong.** B — daily is noise. C — only-on-problems creates surprise. D — annually is meaningless.
+**Why the other options are wrong.** B daily is noise. C only-on-problems creates surprise. D, annually is meaningless.
 
 **Exam-takeaway.** Friday afternoon, every week, even on quiet weeks.
 
 **Q34. Answer: B**
 
-**Why B is correct.** The 7-day post-delivery window is when retainer conversion is highest — client is happiest.
+**Why B is correct.** The 7-day post-delivery window is when retainer conversion is highest, client is happiest.
 
-**Why the other options are wrong.** A — Year 5 is far too late. C — Day 0 is pre-delivery. D — never defeats the upsell.
+**Why the other options are wrong.** A Year 5 is far too late. C Day 0 is pre-delivery. D, never defeats the upsell.
 
 **Exam-takeaway.** Upsell window = 7 days post-delivery.
 
@@ -569,7 +569,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** Retainer conversion from one-off productized clients = 25–45% baseline, 60–80% with measurable outcomes.
 
-**Why the other options are wrong.** B — 0–5% would mean the upsell never works. C — 100% is impossible. D — 0% defeats the model.
+**Why the other options are wrong.** B 0–5% would mean the upsell never works. C 100% is impossible. D, 0% defeats the model.
 
 **Exam-takeaway.** Project-to-retainer = 25–45% (60–80% with proof).
 
@@ -577,7 +577,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Use MSA + SOW structure with kill fee + liability cap + AI disclosure; have a licensed attorney review the template (typical one-time cost $400–$1,200).
 
-**Why the other options are wrong.** A — skipping contracts = legal exposure. C — signing client paper = standing in their court. D — verbal agreements have no enforceability for serious money.
+**Why the other options are wrong.** A skipping contracts = legal exposure. C signing client paper = standing in their court. D, verbal agreements have no enforceability for serious money.
 
 **Exam-takeaway.** MSA + SOW + kill fee + liability cap + AI disclosure. Attorney-reviewed.
 
@@ -585,7 +585,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Vera's 47-day arc: $11,500 project + $4,500/mo × 6 mo = $27K retainer = $38,500 contracted.
 
-**Why the other options are wrong.** A — $0 contradicts the story's outcome. C — $1,500 is one audit unit, not the full contract. D — $1M is implausible at Day 47.
+**Why the other options are wrong.** A $0 contradicts the story's outcome. C $1,500 is one audit unit, not the full contract. D, $1M is implausible at Day 47.
 
 **Exam-takeaway.** Vera's 47-day arc = $38,500 contracted (project + 6-mo retainer).
 
@@ -593,7 +593,7 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why A is correct.** OnlineJobs.ph (~$69 lifetime employer fee) is the documented source for Filipino VAs + specialists. Maya's contractor example.
 
-**Why the other options are wrong.** B — LinkedIn Premium alone doesn't yield Filipino contractor hires. C — buying email lists is data, not hiring. D — random Facebook groups lack vetting.
+**Why the other options are wrong.** B LinkedIn Premium alone doesn't yield Filipino contractor hires. C buying email lists is data, not hiring. D, random Facebook groups lack vetting.
 
 **Exam-takeaway.** OnlineJobs.ph = Filipino VA hiring source. $69 lifetime fee.
 
@@ -601,18 +601,18 @@ Use these to learn from each question — including the wrong choices. Every dis
 
 **Why B is correct.** Profit First (Michalowicz) splits revenue into 5 accounts: Income, Profit, Owner Pay, Tax, Operating Expenses.
 
-**Why the other options are wrong.** A — 1 account = no separation. C — 20 accounts is over-engineering. D — 0 is the opposite of the discipline.
+**Why the other options are wrong.** A 1 account = no separation. C 20 accounts is over-engineering. D, 0 is the opposite of the discipline.
 
 **Exam-takeaway.** Profit First = 5 accounts. Twice-monthly transfers.
 
 **Q40. Answer: D**
 
-**Why D is correct.** Skipping quarterly estimates and "figuring it out in April" is Tara's mistake — triggers IRS penalties + missed cash-flow discipline.
+**Why D is correct.** Skipping quarterly estimates and "figuring it out in April" is Tara's mistake, triggers IRS penalties + missed cash-flow discipline.
 
-**Why the other options are wrong.** A — opening business banking is the Day-1 right move. B — tax bucket is non-negotiable. C — CPA call is the cheapest insurance.
+**Why the other options are wrong.** A opening business banking is the Day-1 right move. B tax bucket is non-negotiable. C, CPA call is the cheapest insurance.
 
 **Exam-takeaway.** Skip quarterly estimates = pay penalties + lose the cash-flow review. Always pay quarterly.
 
 ---
 
-➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md) — 50 Q / 70 min / 75% to pass.
+➡️ When ready: [Final Mock Exam](./Final-Mock-Exam.md), 50 Q / 70 min / 75% to pass.

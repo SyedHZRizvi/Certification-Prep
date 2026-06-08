@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RDS vs Aurora vs DynamoDB — Which Database?</p>
+      <p class="vg-title">RDS vs Aurora vs DynamoDB, Which Database?</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 14 min · The big 3 compared</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Multi-AZ vs Read Replicas — Don't Confuse Them</p>
+      <p class="vg-title">Multi-AZ vs Read Replicas, Don't Confuse Them</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 9 min · Exam trap</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">DynamoDB in 10 Minutes — Core Concepts</p>
+      <p class="vg-title">DynamoDB in 10 Minutes, Core Concepts</p>
       <p class="vg-creator">Tutorials Dojo</p>
       <span class="vg-duration">⏱ 11 min · The NoSQL workhorse</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Redshift vs RDS vs Athena — OLAP vs OLTP</p>
+      <p class="vg-title">Redshift vs RDS vs Athena, OLAP vs OLTP</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 11 min · Analytics services</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ElastiCache — Redis vs Memcached Decision</p>
+      <p class="vg-title">ElastiCache, Redis vs Memcached Decision</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 8 min · Pick the right engine</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS DMS + SCT — Migrating Databases</p>
+      <p class="vg-title">AWS DMS + SCT, Migrating Databases</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 12 min · Lift-and-shift</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Aurora Global Database — Cross-Region in Action</p>
+      <p class="vg-title">Aurora Global Database, Cross-Region in Action</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 25 min · Enterprise scale</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">DynamoDB Single-Table Design — Alex DeBrie</p>
+      <p class="vg-title">DynamoDB Single-Table Design, Alex DeBrie</p>
       <p class="vg-creator">Alex DeBrie</p>
       <span class="vg-duration">⏱ 30 min · Deep architecture</span>
     </div>
@@ -134,10 +134,10 @@
 
 ## ✅ After watching
 
-1. Multi-AZ vs Read Replica — what does each give you?
+1. Multi-AZ vs Read Replica, what does each give you?
 2. When pick DynamoDB vs RDS?
 3. Redshift use case in one sentence?
-4. ElastiCache vs DAX — when to use each?
+4. ElastiCache vs DAX, when to use each?
 5. Name 3 specialty DBs (graph, time-series, ledger) and what they're for.
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

@@ -30,7 +30,7 @@
 
 ---
 
-## 💉 Prompt Injection — Three Flavors
+## 💉 Prompt Injection, Three Flavors
 
 | Type | Source |
 |------|--------|
@@ -50,11 +50,11 @@
 
 ## 🧨 Jailbreak Patterns
 
-- **DAN ("Do Anything Now")** — role-play
-- **Many-shot** — long context with unsafe Q&A
-- **Adversarial suffix** (Zou 2023) — optimized gibberish
-- **Translation** — low-resource languages
-- **Token smuggling** — base64 / Unicode
+- **DAN ("Do Anything Now")**, role-play
+- **Many-shot**, long context with unsafe Q&A
+- **Adversarial suffix** (Zou 2023), optimized gibberish
+- **Translation**, low-resource languages
+- **Token smuggling**, base64 / Unicode
 
 **Defenses:** input classifier + multi-turn moderation + refusal-trained model + audit + rapid response.
 

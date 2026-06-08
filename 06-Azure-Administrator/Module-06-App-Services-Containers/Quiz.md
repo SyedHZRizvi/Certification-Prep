@@ -77,7 +77,7 @@ D. A stateful PostgreSQL DB
 
 ---
 
-### Q9. Yes/No — ACI. *(Evaluate)*
+### Q9. Yes/No, ACI. *(Evaluate)*
 
 **S1:** A container group can have multiple containers sharing one IP and storage.
 **S2:** ACI supports deployment into a delegated subnet of a VNet.
@@ -93,7 +93,7 @@ D. Yes / No / No
 ### Q10. Microsoft charges you for the AKS: *(Remember)*
 A. Control plane only
 B. Nodes (and add-ons), but not the standard control plane
-C. Both — node + control plane per hour
+C. Both, node + control plane per hour
 D. Pods individually
 
 ---
@@ -122,7 +122,7 @@ D. App Service plans
 
 ---
 
-### Q14. Yes/No — AKS networking. *(Evaluate)*
+### Q14. Yes/No, AKS networking. *(Evaluate)*
 
 **S1:** With Azure CNI, pods get IPs directly from the VNet.
 **S2:** Azure CNI Overlay assigns pod IPs from an overlay CIDR, conserving VNet IPs.
@@ -175,7 +175,7 @@ D. Use ACI
 
 ---
 
-### Q20. Yes/No — App Service tiers. *(Understand)*
+### Q20. Yes/No, App Service tiers. *(Understand)*
 
 **S1:** Free tier supports custom domain.
 **S2:** Standard tier supports auto-scale and 5 slots.
@@ -229,7 +229,7 @@ Slots start at Standard. Free/Shared/Basic don't have slots.
 Zone redundancy is a Premium v3 / Isolated v2 feature.
 
 ### Q3: **C. Multiple web apps that share the plan's compute**
-A plan = compute. Many apps can share it (they share noisy neighbors too — be careful).
+A plan = compute. Many apps can share it (they share noisy neighbors too, be careful).
 
 ### Q4: **B. Premium v3 with private endpoint (or Isolated v2 / ASE)**
 Private endpoint (inbound private IP) starts at Premium v3.

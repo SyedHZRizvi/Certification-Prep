@@ -56,7 +56,7 @@ D. 8,000,000 WU
 
 ### Q7. The SegWit weight formula is: *(Apply)*
 A. `weight = bytes × 4` for all data
-B. `weight = (non-witness × 4) + (witness × 1)` — witness data discounted
+B. `weight = (non-witness × 4) + (witness × 1)`, witness data discounted
 C. `weight = bytes / 4`
 D. `weight = signatures × 100`
 
@@ -103,16 +103,16 @@ D. Signature hashes use SHA-3
 ---
 
 ### Q13. CLTV (OP_CHECKLOCKTIMEVERIFY, BIP-65) is: *(Apply)*
-A. A relative timelock — N blocks after the spending transaction
-B. An absolute timelock — only spendable after a specific block height or Unix timestamp
+A. A relative timelock, N blocks after the spending transaction
+B. An absolute timelock, only spendable after a specific block height or Unix timestamp
 C. A multi-sig opcode
 D. A hash opcode
 
 ---
 
 ### Q14. CSV (OP_CHECKSEQUENCEVERIFY, BIP-112) is: *(Apply)*
-A. An absolute timelock — only spendable after a specific block height
-B. A relative timelock — N blocks after the parent transaction confirms
+A. An absolute timelock, only spendable after a specific block height
+B. A relative timelock, N blocks after the parent transaction confirms
 C. A multi-sig opcode
 D. A hash opcode
 
@@ -154,13 +154,13 @@ D. Taproot Bech32m
 A. OP_CHECKSIGVERIFY only
 B. OP_CHECKSIGADD (for efficient batched signature verification) plus aggregation via MuSig2
 C. A new SHA-3 opcode
-D. Nothing — it kept OP_CHECKMULTISIG unchanged
+D. Nothing, it kept OP_CHECKMULTISIG unchanged
 
 ---
 
 ### Q20. The malleability problem SegWit solved was: *(Understand)*
 A. Transactions could be modified by attackers
-B. The TxID depended on the signature, so trivial signature reshaping changed the TxID — blocking unconfirmed-tx workflows like Lightning
+B. The TxID depended on the signature, so trivial signature reshaping changed the TxID, blocking unconfirmed-tx workflows like Lightning
 C. Block hashes were predictable
 D. Mining was inefficient
 
@@ -184,8 +184,8 @@ D. Coinbase path
 
 ### Q23. "Bitcoin doesn't have smart contracts" is: *(Evaluate)*
 A. Strictly true
-B. Misleading — Bitcoin has Scripts (programmable spending conditions); they're deliberately non-Turing-complete to bound execution
-C. Strictly false — it's identical to Ethereum
+B. Misleading, Bitcoin has Scripts (programmable spending conditions); they're deliberately non-Turing-complete to bound execution
+C. Strictly false, it's identical to Ethereum
 D. Only true pre-Taproot
 
 ---
@@ -239,7 +239,7 @@ The institutional-custody win. MuSig2 aggregation enables it.
 ### Q13: **B. An absolute timelock**
 Specific block height OR Unix timestamp. The output is spendable only after that point.
 
-### Q14: **B. A relative timelock — N blocks after the parent transaction confirms**
+### Q14: **B. A relative timelock, N blocks after the parent transaction confirms**
 Used in Lightning HTLCs (Module 7).
 
 ### Q15: **B. CSV + hash preimage revelation**
@@ -266,7 +266,7 @@ Casey Rodarmor used the Taproot witness format to store arbitrary data. The comm
 ### Q22: **B. Key-path (single MuSig2-aggregated Schnorr signature)**
 The privacy win: a 5-of-9 corporate multi-sig where everyone agrees is indistinguishable from a personal single-sig spend.
 
-### Q23: **B. Misleading — Bitcoin has Scripts (programmable spending conditions)**
+### Q23: **B. Misleading, Bitcoin has Scripts (programmable spending conditions)**
 The accurate framing. Bitcoin Script is just less expressive than EVM. By design.
 
 ### Q24: **A. Lower fees AND on-chain indistinguishability from single-sig (privacy)**

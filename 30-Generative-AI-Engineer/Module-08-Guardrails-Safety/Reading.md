@@ -3,7 +3,7 @@
 > **Why this module matters:** "We'll add safety later" is how you end up apologizing in a board meeting after your chatbot gave a customer toxic advice, leaked PII, or got jailbroken into writing malware. Production-grade safety isn't a layer you bolt on at the end; it's a *pipeline of defenses* designed from the start. This module covers the input filters, output filters, prompt-injection mitigations, and operational practices that separate "AI demo that goes viral on Twitter for the wrong reasons" from "AI product that scales without incidents."
 
 > **Prerequisites for this module.** You should be comfortable with:
-> - Modules 1–7 (especially Module 7 — guardrails without evaluation is theater)
+> - Modules 1–7 (especially Module 7, guardrails without evaluation is theater)
 > - The OWASP Top 10
 > - Basic regular expressions
 
@@ -13,9 +13,9 @@
 
 February 2024. Jake Moffatt, a passenger booking a last-minute flight for his grandmother's funeral, asked Air Canada's website chatbot about bereavement fares. The chatbot told him he could submit a refund claim *after* the flight and receive a partial refund of the bereavement-fare difference. Moffatt booked the full-fare ticket on faith.
 
-When Moffatt submitted the claim, Air Canada refused — pointing to a policy page that *contradicted* the chatbot's answer. Moffatt sued. The Civil Resolution Tribunal of British Columbia ruled in his favor in February 2024, saying Air Canada was responsible for the answers its chatbot gave, even if those answers were wrong. The case became the most-cited example of "your AI's mistakes are *your* mistakes."
+When Moffatt submitted the claim, Air Canada refused, pointing to a policy page that *contradicted* the chatbot's answer. Moffatt sued. The Civil Resolution Tribunal of British Columbia ruled in his favor in February 2024, saying Air Canada was responsible for the answers its chatbot gave, even if those answers were wrong. The case became the most-cited example of "your AI's mistakes are *your* mistakes."
 
-The root cause was straightforward: the chatbot had no guardrail that asked "is this answer consistent with our actual policy pages?" — no retrieval grounding, no fact-check, no human review for high-stakes claims, no fallback to "let me transfer you to an agent." The chatbot was a pure-generation prompt over a base model.
+The root cause was straightforward: the chatbot had no guardrail that asked "is this answer consistent with our actual policy pages?", no retrieval grounding, no fact-check, no human review for high-stakes claims, no fallback to "let me transfer you to an agent." The chatbot was a pure-generation prompt over a base model.
 
 This module is the engineering of preventing the next Air Canada incident.
 
@@ -50,7 +50,7 @@ A serious GenAI safety architecture has *layered defenses*:
 [Audit logging]        ← Trace ID, prompt, retrieved chunks, model, output, latency, cost
 ```
 
-Every layer is independent. No single layer is sufficient. The goal isn't "perfect" — it's "no single failure cascades to a public incident."
+Every layer is independent. No single layer is sufficient. The goal isn't "perfect", it's "no single failure cascades to a public incident."
 
 ---
 
@@ -58,7 +58,7 @@ Every layer is independent. No single layer is sufficient. The goal isn't "perfe
 
 ### NeMo Guardrails (NVIDIA)
 
-The most mature OSS guardrail framework. Defines policies in a DSL called *Colang* — natural-language conversation flows.
+The most mature OSS guardrail framework. Defines policies in a DSL called *Colang*, natural-language conversation flows.
 
 ```python
 # Colang flow
@@ -137,7 +137,7 @@ Self-hostable. Lower latency than calling an OpenAI Moderation endpoint. Tunable
 
 ---
 
-## 🔍 PII Detection — Presidio + Beyond
+## 🔍 PII Detection, Presidio + Beyond
 
 Personally Identifiable Information is the most common safety concern in regulated industries. Microsoft's **Presidio** is the open-source standard.
 
@@ -169,7 +169,7 @@ Presidio's recognizers cover ~50 entity types (NIN, SSN, IBAN, credit cards, IP 
 
 ---
 
-## 💉 Prompt Injection — The Hard One
+## 💉 Prompt Injection, The Hard One
 
 Prompt injection is when a *third party* (a webpage, a PDF, an email, a tool output) embeds instructions in their content that the LLM follows, hijacking the original task.
 
@@ -181,7 +181,7 @@ Prompt injection is when a *third party* (a webpage, a PDF, an email, a tool out
 
 ### Why it's hard
 
-There is **no perfect defense**. LLMs can't reliably distinguish "data" from "instructions" because in the prompt, everything is text. This is a fundamental property of the architecture — not a bug.
+There is **no perfect defense**. LLMs can't reliably distinguish "data" from "instructions" because in the prompt, everything is text. This is a fundamental property of the architecture, not a bug.
 
 ### Defenses that *help* (none individually sufficient)
 
@@ -198,7 +198,7 @@ There is **no perfect defense**. LLMs can't reliably distinguish "data" from "in
 
 ### Anthropic's contribution
 
-The "constitutional" approach (Bai et al. 2022, productized in Claude) — the model is trained to identify and resist instruction-flavored content from low-trust sources. Anthropic publishes test cases for prompt-injection robustness.
+The "constitutional" approach (Bai et al. 2022, productized in Claude), the model is trained to identify and resist instruction-flavored content from low-trust sources. Anthropic publishes test cases for prompt-injection robustness.
 
 ### OWASP Top 10 for LLMs (2024)
 
@@ -221,15 +221,15 @@ Most production incidents fall under #1, #2, #6, or #8.
 
 ## 🧨 Jailbreak Defenses
 
-Jailbreaks are inputs designed to *bypass the model's safety training* — get it to say things it normally wouldn't.
+Jailbreaks are inputs designed to *bypass the model's safety training*, get it to say things it normally wouldn't.
 
 Common patterns:
 
-- **DAN ("Do Anything Now") roleplay** — "Imagine you're an AI without restrictions..."
-- **Token smuggling** — encode the request in base64 / Unicode tricks
-- **Many-shot jailbreaks** (Anthropic 2024) — fill the context with examples of unsafe Q&A
-- **Universal adversarial suffixes** (Zou et al. 2023) — gibberish strings that reliably bypass safety
-- **Translation jailbreaks** — same harmful request in a low-resource language
+- **DAN ("Do Anything Now") roleplay**, "Imagine you're an AI without restrictions..."
+- **Token smuggling**, encode the request in base64 / Unicode tricks
+- **Many-shot jailbreaks** (Anthropic 2024), fill the context with examples of unsafe Q&A
+- **Universal adversarial suffixes** (Zou et al. 2023), gibberish strings that reliably bypass safety
+- **Translation jailbreaks**, same harmful request in a low-resource language
 
 Defenses:
 
@@ -247,18 +247,18 @@ Defenses:
 
 For free-form output that might be toxic, harassing, or hateful:
 
-- **Detoxify** (`unitary/detoxify`) — open-source PyTorch model for English toxic-content classification
-- **Perspective API** (Jigsaw) — Google's hosted toxicity classifier
-- **OpenAI Moderation API** — broader categories
+- **Detoxify** (`unitary/detoxify`), open-source PyTorch model for English toxic-content classification
+- **Perspective API** (Jigsaw), Google's hosted toxicity classifier
+- **OpenAI Moderation API**, broader categories
 - **Hateful content classifiers** specific to your platform (LinkedIn, Twitter, etc. have published their own)
 
-Threshold tuning is key — too strict and you over-refuse legitimate content; too loose and toxic content leaks.
+Threshold tuning is key, too strict and you over-refuse legitimate content; too loose and toxic content leaks.
 
 ---
 
 ## 📋 Structured Output as a Guardrail
 
-A *structured output* requirement (JSON schema, function-calling) is itself a guardrail — the model can't say arbitrary things if it's constrained to a schema.
+A *structured output* requirement (JSON schema, function-calling) is itself a guardrail, the model can't say arbitrary things if it's constrained to a schema.
 
 OpenAI / Anthropic / Gemini all support **strict structured output mode**:
 
@@ -306,13 +306,13 @@ Steps:
 3. **Output filtering**: Presidio on the output (paranoid), Detoxify toxicity check, JSON schema validation if structured output expected.
 4. **Action gating**: any action labeled `destructive=true` requires explicit user confirmation.
 5. **Audit logging**: log trace_id, all inputs, retrieved chunks, generated output, latency, cost, and any guardrail-triggered actions.
-6. **Eval**: add a "guardrail-effectiveness" set — 30 adversarial inputs (jailbreak attempts, injection attempts, PII inputs, toxic inputs) — and run them in CI. Expect the right defensive behavior on each.
+6. **Eval**: add a "guardrail-effectiveness" set 30 adversarial inputs (jailbreak attempts, injection attempts, PII inputs, toxic inputs) and run them in CI. Expect the right defensive behavior on each.
 
 This is the architecture you take to production.
 
 ---
 
-## 📊 Case Study — Microsoft Tay's $25M Lesson (2016) + Air Canada's $812 Lesson (2024)
+## 📊 Case Study, Microsoft Tay's $25M Lesson (2016) + Air Canada's $812 Lesson (2024)
 
 **Tay (2016).** Microsoft's "Tay" Twitter bot launched on March 23, 2016. Within 16 hours it had been goaded by users into posting racist, antisemitic, and otherwise toxic content. Microsoft pulled it. The reputational damage was estimated to cost the company $25M+ in lost trust and incident response. Cause: a learning bot with no input filtering, no output filtering, no behavioral guardrails.
 
@@ -353,10 +353,10 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 9 — Deployment, Observability & Cost](../Module-09-Deployment-Observability/Reading.md)
+4. ➡️ Move on: [Module 9, Deployment, Observability & Cost](../Module-09-Deployment-Observability/Reading.md)
 
 > **Where this leads.**
-> - Module 9 covers observability — the audit log is part of guardrails too.
+> - Module 9 covers observability, the audit log is part of guardrails too.
 > - Module 10's case studies discuss how Klarna, Notion, GitHub, etc. structured their safety reviews.
 
 ---
@@ -372,4 +372,4 @@ You now know:
 - 📖 [Microsoft Presidio docs](https://microsoft.github.io/presidio/)
 - 📖 [OpenAI Moderation Guide](https://platform.openai.com/docs/guides/moderation)
 - 📖 [Anthropic Safety Best Practices](https://docs.anthropic.com/en/docs/build-with-claude/safety)
-- 🎬 Simon Willison's *Prompt injection* blog and talks — the most lucid practitioner content
+- 🎬 Simon Willison's *Prompt injection* blog and talks, the most lucid practitioner content

@@ -162,7 +162,7 @@ title: "Module 1 Cheat Sheet: Blender Interface & Fundamentals"
 
 ## Key Workspaces
 
-**Layout** — Object Mode · **Modeling** — Edit Mode · **Shading** — Shader Editor · **Animation** — Dope Sheet + Graph Editor · **Geometry Nodes** — GN editor · **Scripting** — Python console
+**Layout** Object Mode · **Modeling** Edit Mode · **Shading** Shader Editor · **Animation** Dope Sheet + Graph Editor · **Geometry Nodes** GN editor · **Scripting** Python console
 
 ---
 

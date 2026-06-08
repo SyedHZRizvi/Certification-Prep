@@ -89,7 +89,7 @@ D. AES, RSA, ECC
 ---
 
 ### Q11. A rootkit is uniquely difficult to remove because: *(Understand)*
-A. It hides at the kernel level, often beyond OS visibility — typically requires reimage
+A. It hides at the kernel level, often beyond OS visibility, typically requires reimage
 B. It only affects mobile devices
 C. It always uses port 80
 D. It is encrypted
@@ -97,7 +97,7 @@ D. It is encrypted
 ---
 
 ### Q12. The MOST appropriate response to a phishing email a user already clicked: *(Apply)*
-A. Ignore — it's the user's mistake
+A. Ignore, it's the user's mistake
 B. Revoke sessions, reset password, re-enroll MFA, check for inbox-forwarding rules, scan endpoint
 C. Reformat the user's laptop only
 D. Replace the network cable
@@ -169,7 +169,7 @@ D. Disable Wi-Fi
 ---
 
 ### Q21. A user reports a USB stick "auto-runs" software when inserted. The MOST appropriate response: *(Apply)*
-A. Allow it — convenient
+A. Allow it, convenient
 B. Disable AutoRun via Group Policy; scan the USB with AV before any use
 C. Reformat the user's PC
 D. Replace the USB controller
@@ -186,7 +186,7 @@ D. Targets executives only
 
 ### Q23. Antivirus + EDR combined provide: *(Evaluate)*
 A. Worse coverage than AV alone
-B. Layered detection — AV catches known signatures; EDR adds behavioral/forensic visibility for unknown/fileless threats
+B. Layered detection, AV catches known signatures; EDR adds behavioral/forensic visibility for unknown/fileless threats
 C. Only signature-based detection
 D. No advantage over the other
 
@@ -204,7 +204,7 @@ D. Defrag
 A. All data is exposed
 B. Data is encrypted at rest; without password/key, the disk contents are protected. The bigger risk is any cached credentials/sessions if the device was logged in.
 C. The laptop's OS is exposed but not files
-D. None — full-disk encryption protects everything
+D. None, full-disk encryption protects everything
 
 ---
 
@@ -233,7 +233,7 @@ Disabling System Restore prevents accidentally rolling back to an infected state
 SMS phishing = smishing. Voice = vishing. Email = phishing.
 
 ### Q5: **B. SAE handshake**
-WPA3's SAE (Dragonfly) replaces the WPA2 4-way PSK handshake — making offline brute-force much harder.
+WPA3's SAE (Dragonfly) replaces the WPA2 4-way PSK handshake, making offline brute-force much harder.
 
 ### Q6: **A. BitLocker tied to TPM 2.0**
 Full-disk encryption. EFS protects individual files but not the whole disk. NTFS alone is no encryption.
@@ -242,7 +242,7 @@ Full-disk encryption. EFS protects individual files but not the whole disk. NTFS
 Linux Unified Key Setup. Full-disk encryption for Linux.
 
 ### Q8: **B. Disconnect; do not reboot; notify**
-Isolation prevents lateral spread. Don't reboot — memory may have forensic value.
+Isolation prevents lateral spread. Don't reboot, memory may have forensic value.
 
 ### Q9: **B. Mantrap / access control vestibule**
 Two-door entry; second opens only after first closes. Eliminates tailgating.
@@ -313,7 +313,7 @@ Layered defense. No single control is sufficient. This is what enterprises actua
 
 - 7-step malware removal IN ORDER
 - 3 authentication factor categories
-- BitLocker / FileVault / LUKS / EFS — what each covers
+- BitLocker / FileVault / LUKS / EFS, what each covers
 - WPA2-AES vs WPA3-SAE
 - WPA2/3-Enterprise = 802.1X + RADIUS
 - Phishing / Smishing / Vishing / Whaling / Pharming
@@ -323,4 +323,4 @@ Layered defense. No single control is sufficient. This is what enterprises actua
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9 — Software Troubleshooting](../Module-09-Software-Troubleshooting/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 9, Software Troubleshooting](../Module-09-Software-Troubleshooting/Reading.md)

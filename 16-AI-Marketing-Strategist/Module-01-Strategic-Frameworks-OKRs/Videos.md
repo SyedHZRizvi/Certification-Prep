@@ -151,12 +151,12 @@
 
 | Channel | Why |
 |---------|-----|
-| **Reforge** | Modern growth & strategy curriculum — Andrew Chen, Brian Balfour |
+| **Reforge** | Modern growth & strategy curriculum, Andrew Chen, Brian Balfour |
 | **Avinash Kaushik** | The digital-marketing measurement OG, "See-Think-Do-Care" |
 | **Andreessen Horowitz (a16z)** | Strategic frameworks from the VC perspective |
-| **Sequoia Capital** | Same — clean and founder-focused |
+| **Sequoia Capital** | Same, clean and founder-focused |
 | **CXL Institute** | Tactical + strategic mix; lots of free YouTube content |
-| **Harvard Business Review** | The academic source — Porter, Christensen, Kim & Mauborgne |
+| **Harvard Business Review** | The academic source, Porter, Christensen, Kim & Mauborgne |
 
 ---
 

@@ -212,7 +212,7 @@ D. Reverses the animation order of every 8th element
 
 A. GSAP's `from()` method plays the animation in reverse
 B. The animation duration is too long for the browser to compute
-C. `animation-fill-mode` is not set — apply `fill: 'both'` in the GSAP options
+C. `animation-fill-mode` is not set, apply `fill: 'both'` in the GSAP options
 D. The element's z-index is too low
 
 ---
@@ -264,10 +264,10 @@ D. GPU-composited layout recalculation via the CSS Layout Worklet
 
 ### 29. In CSS animation, animating `border-radius` falls into which performance category?
 
-A. GPU-safe (compositor only) — equivalent to opacity
-B. Requires Paint — may cause repaint on complex elements; use sparingly
-C. Requires Layout — as expensive as animating width/height
-D. Unsupported — border-radius cannot be animated with CSS animations
+A. GPU-safe (compositor only), equivalent to opacity
+B. Requires Paint, may cause repaint on complex elements; use sparingly
+C. Requires Layout, as expensive as animating width/height
+D. Unsupported, border-radius cannot be animated with CSS animations
 
 ---
 
@@ -283,34 +283,34 @@ D. Start and stop the Rive animation renderer
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B — Mushy transition = too-long blend duration
-2.  C — Current State: source state transitions can interrupt
-3.  B — Coyote time: grace window after ledge for jump + edge-peek animation
-4.  B — Additive clips = deltas from reference pose
-5.  B — Loop if trigger condition stays true while Death state is active
-6.  B — gsap.from(): animates from specified values TO current CSS state
-7.  C — linear for progress bars and constant-speed animations
-8.  B — scrub: true ties animation progress to scroll position
-9.  B — FLIP: First, Last, Invert, Play
-10. B — top/left triggers layout recalculation each frame
-11. B — will-change: applied only to definitely-animating elements; remove after
-12. B — forwards: holds final keyframe state after animation ends
-13. B — alternate: forward on odd, backward on even iterations
-14. C — LottieFiles: AE animations as small, scalable JSON for mobile/web
-15. C — 50KB is the production target for Lottie web animations
-16. C — Bodymovin exports AE compositions as Lottie JSON
-17. B — Rive has a real-time state machine for interactive animations
-18. B — Responds to OS "Reduce Motion" accessibility setting
-19. C — WCAG 2.3.3 is AAA level (disable motion > 5s or repeating)
-20. B — Same layer name in both frames is required for Smart Animate tween
-21. B — motion.div with initial/animate/exit wrapped in AnimatePresence
-22. B — stagger: 0.08 → 80ms delay between each element's animation start
-23. C — GSAP from() needs fill: 'both' (or forwards) to hold final state
-24. B — '-=0.15' creates 0.15s overlap with end of previous tween
-25. B — SVG: DOM-based, accessible, infinitely scalable on all DPIs
-26. B — Blend position lerp speed: smoothing rate of sample position change
-27. B — Sub-State Machine: groups related states for organizational clarity
-28. B — layout prop: auto-animates when element size/position changes
-29. B — border-radius: Paint stage (repaint); not as expensive as layout
-30. B — Trigger input: one-shot event that state machine responds to once
+1.  B: Mushy transition = too-long blend duration
+2.  C: Current State: source state transitions can interrupt
+3.  B: Coyote time: grace window after ledge for jump + edge-peek animation
+4.  B: Additive clips = deltas from reference pose
+5.  B: Loop if trigger condition stays true while Death state is active
+6.  B: gsap.from(): animates from specified values TO current CSS state
+7.  C: linear for progress bars and constant-speed animations
+8.  B: scrub: true ties animation progress to scroll position
+9.  B: FLIP: First, Last, Invert, Play
+10. B: top/left triggers layout recalculation each frame
+11. B: will-change: applied only to definitely-animating elements; remove after
+12. B: forwards: holds final keyframe state after animation ends
+13. B: alternate: forward on odd, backward on even iterations
+14. C: LottieFiles: AE animations as small, scalable JSON for mobile/web
+15. C: 50KB is the production target for Lottie web animations
+16. C: Bodymovin exports AE compositions as Lottie JSON
+17. B: Rive has a real-time state machine for interactive animations
+18. B: Responds to OS "Reduce Motion" accessibility setting
+19. C: WCAG 2.3.3 is AAA level (disable motion > 5s or repeating)
+20. B: Same layer name in both frames is required for Smart Animate tween
+21. B: motion.div with initial/animate/exit wrapped in AnimatePresence
+22. B: stagger: 0.08 → 80ms delay between each element's animation start
+23. C: GSAP from() needs fill: 'both' (or forwards) to hold final state
+24. B: '-=0.15' creates 0.15s overlap with end of previous tween
+25. B: SVG: DOM-based, accessible, infinitely scalable on all DPIs
+26. B: Blend position lerp speed: smoothing rate of sample position change
+27. B: Sub-State Machine: groups related states for organizational clarity
+28. B: layout prop: auto-animates when element size/position changes
+29. B: border-radius: Paint stage (repaint); not as expensive as layout
+30. B: Trigger input: one-shot event that state machine responds to once
 ```

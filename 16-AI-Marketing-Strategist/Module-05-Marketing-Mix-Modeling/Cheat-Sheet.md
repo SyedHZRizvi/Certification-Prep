@@ -47,7 +47,7 @@ half-life = log(0.5) / log(λ)
 
 ---
 
-## 🪞 Saturation — Hill Function
+## 🪞 Saturation, Hill Function
 
 ```
 Hill(x) = x^α / (x^α + K^α)
@@ -72,7 +72,7 @@ Hill(x) = x^α / (x^α + K^α)
 
 ---
 
-## 🎯 MMM vs MTA — Decision Tree
+## 🎯 MMM vs MTA, Decision Tree
 
 | Question | Tool |
 |----------|------|
@@ -87,10 +87,10 @@ Hill(x) = x^α / (x^α + K^α)
 
 ## 📊 The 4 CFO Charts
 
-1. **Waterfall** — Baseline + per-channel incremental
-2. **ROAS table** — Spend, incremental sales, ROAS per channel
-3. **Response curves** — Per-channel saturation with current spend marked
-4. **Optimized vs current** — Recommended reallocation
+1. **Waterfall**, Baseline + per-channel incremental
+2. **ROAS table**, Spend, incremental sales, ROAS per channel
+3. **Response curves**, Per-channel saturation with current spend marked
+4. **Optimized vs current**, Recommended reallocation
 
 > **Don't show ROAS without saturation curves.** Reallocation depends on shape, not point.
 
@@ -140,8 +140,8 @@ Within channel →  MTA / DDA / platform optimizer
 
 1. Canonical MMM equation? ___
 2. Ad-stock formula + half-life formula? ___
-3. Hill function — what does K mean? ___
-4. Robyn vs Meridian — one difference? ___
+3. Hill function, what does K mean? ___
+4. Robyn vs Meridian, one difference? ___
 5. 2026 cadence? ___
 
 ---

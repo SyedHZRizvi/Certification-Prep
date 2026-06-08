@@ -18,7 +18,7 @@
 
 | Property | Detail |
 |----------|--------|
-| Direction | **Outbound 443 only** — NO inbound |
+| Direction | **Outbound 443 only**, NO inbound |
 | Identity | System-assigned managed identity per machine |
 | Windows service | **HIMDS** (Azure Hybrid Instance Metadata Service) |
 | Tool to validate connectivity | `azcmagent check` |
@@ -80,7 +80,7 @@
 ## 🤖 Run Command via Arc
 
 - Execute PowerShell / Bash on Arc machines
-- Goes over the agent's outbound channel — **no inbound port required**
+- Goes over the agent's outbound channel, **no inbound port required**
 - Output captured in response (ship to LA for audit)
 
 ---
@@ -93,7 +93,7 @@
 | GitOps | Flux v2 (CNCF graduated) |
 | Policy | Azure Policy for K8s (OPA/Gatekeeper backend) |
 | Monitor | Container Insights (AMA + DCR) |
-| Defender | Defender for Containers — image scan + runtime |
+| Defender | Defender for Containers, image scan + runtime |
 | App hosting | App Services / Functions on Arc |
 
 ---
@@ -102,7 +102,7 @@
 
 When you see these, they're often **correct**:
 
-- ✅ "Outbound HTTPS only — no inbound ports"
+- ✅ "Outbound HTTPS only, no inbound ports"
 - ✅ "Use Azure Connected Machine Onboarding role for SP"
 - ✅ "Apply policy at the management group scope"
 - ✅ "DINE effect with a remediation task for existing resources"
@@ -153,8 +153,8 @@ Usually **wrong**:
 2. Connected Machine agent network direction? ___
 3. Least-privilege onboarding role? ___
 4. DINE + remediation pattern? ___
-5. ESU via Arc — which OSes and through when? ___
-6. Arc-enabled K8s — which distributions? ___
+5. ESU via Arc, which OSes and through when? ___
+6. Arc-enabled K8s, which distributions? ___
 
 ---
 

@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Picking Strategies — Discrete, Batch, Zone, Wave</p>
+      <p class="vg-title">Picking Strategies, Discrete, Batch, Zone, Wave</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 10 min · Side-by-side comparison</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Amazon Robotics — Goods-To-Person Automation</p>
+      <p class="vg-title">Amazon Robotics, Goods-To-Person Automation</p>
       <p class="vg-creator">Bloomberg Originals</p>
       <span class="vg-duration">⏱ 18 min · Inside an FC</span>
     </div>

@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-07-Lip-Sync-Dialogue/Quiz/
 title: "Module 7 Quiz: Lip Sync & Dialogue"
 ---
 
-# 🧠 Module 7 Quiz — Lip Sync & Dialogue
+# 🧠 Module 7 Quiz, Lip Sync & Dialogue
 
 ---
 
@@ -45,7 +45,7 @@ D. An expression script that drives mouth layers based on audio amplitude
 
 ### Q5. The "exclusive behaviors" setting in Character Animator for mouth layers means:
 
-A. Only one mouth layer is visible at a time — Ch switches between them exclusively based on detected phonemes
+A. Only one mouth layer is visible at a time, Ch switches between them exclusively based on detected phonemes
 B. Mouth layers are excluded from export and only appear during preview
 C. The layers are locked for editing during a live performance session
 D. Only the top-most visible layer is exported to After Effects
@@ -117,10 +117,10 @@ D. The mouth closed with the lips pressed gently together
 
 ### Q13. A character says the word "people." Which phoneme groups would typically cover this word?
 
-A. MBP (P), E, O, L — MBP for both P sounds, E for the long E sounds, O for the middle vowel, L for the L
-B. MBP (P), E, MBP (p again), L — MBP for both P sounds, E for the long E, L for the L sound
-C. AI, O, L — AI for the full word, O for the middle, L for the end
-D. FV, E, FV, L — F-sounds frame the vowels
+A. MBP (P), E, O, L, MBP for both P sounds, E for the long E sounds, O for the middle vowel, L for the L
+B. MBP (P), E, MBP (p again), L, MBP for both P sounds, E for the long E, L for the L sound
+C. AI, O, L, AI for the full word, O for the middle, L for the end
+D. FV, E, FV, L, F-sounds frame the vowels
 
 ---
 
@@ -163,7 +163,7 @@ D. Scrub the playhead while holding Alt/Option to trigger audio scrubbing mode
 ### Q18. The Preston Blair "WQ" phoneme group describes:
 
 A. A wide open mouth used for words beginning with W
-B. A small, round pucker with cheeks rounded — as in "wow" or "queue"
+B. A small, round pucker with cheeks rounded, as in "wow" or "queue"
 C. An indeterminate mouth shape used when no phoneme is clearly dominant
 D. The mouth position for all questions ending in a rising intonation
 
@@ -172,7 +172,7 @@ D. The mouth position for all questions ending in a rising intonation
 ### Q19. An animator is reviewing a lip sync pass and notices the mouth shapes are on the correct frames but the animation feels mechanical and robotic. What is most likely missing?
 
 A. The audio file needs to be converted from MP3 to WAV for better resolution
-B. The mouth shapes are technically correct but performance elements — body acting, brow animation, emotional expression — have not been added
+B. The mouth shapes are technically correct but performance elements body acting, brow animation, emotional expression have not been added
 C. The Stream sync mode is creating a frame offset that delays the mouth shapes
 D. The frame rate is too high for the audio sample rate, causing misalignment
 
@@ -190,7 +190,7 @@ D. DUIK Integration Mode
 ### Q21. The "REST" mouth shape in the Preston Blair set is used when:
 
 A. The character takes a breath between words
-B. All sounds have an equal probability — REST is the fallback when nothing else fits
+B. All sounds have an equal probability, REST is the fallback when nothing else fits
 C. The character is silent, pausing, or exhaling
 D. REST is only used at the beginning and end of a dialogue line
 
@@ -218,7 +218,7 @@ D. Add background music first to establish the scene's emotional tone
 
 A. Character Animator requires a minimum of 30 seconds of audio to generate accurate sync
 B. Manual lip sync gives complete frame-by-frame control and allows performance choices that automated sync cannot make
-C. Character Animator does not support WAV files — only MP3 is compatible
+C. Character Animator does not support WAV files, only MP3 is compatible
 D. Manual lip sync renders 10× faster than Character Animator's automated pipeline
 
 ---
@@ -226,28 +226,28 @@ D. Manual lip sync renders 10× faster than Character Animator's automated pipel
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — Many phonemes look alike; 10 visually distinct shapes capture the full range efficiently.
-Q2.  B — Stream sync ties audio to the playhead; essential for frame-accurate lip sync.
-Q3.  C — MBP = closed or nearly closed mouth for M, B, and P bilabial sounds.
-Q4.  B — Ch uses named layers in puppet files; audio analysis triggers the matching mouth layer.
-Q5.  A — Exclusive behaviors ensure only one mouth layer shows at a time.
-Q6.  B — Layer Markers dropped while listening give precise timing reference for lip sync.
-Q7.  C — "Open" in Ch corresponds to the general open mouth (AH) phoneme group.
-Q8.  B — Change to Stream sync so audio is tied to the playhead position.
-Q9.  B — Realistic performance: eyes react to thought/emotion before mouth begins to speak.
-Q10. B — The dope sheet maps syllables/audio to frame numbers for timing planning.
-Q11. C — Auto sync struggles with fast speech, unusual accents; manual override is common fix.
-Q12. B — FV = upper front teeth on lower lip (the F and V mouth position).
-Q13. B — "People": P (MBP), ee (E), P (MBP again), l (L) = MBP, E, MBP, L.
-Q14. C — L consonant's tongue-tip-to-palate position creates a distinctly visible open mouth.
-Q15. C — Character Animator requires layered .psd or .ai files with correctly named layers.
-Q16. D — Frame rate doesn't relate to performance body acting; the other three are acting elements.
-Q17. A — RAM Preview plays audio when the audio layer volume is above 0 and spacebar is used.
-Q18. B — WQ = small round pucker for W and Q sounds (as in "wow," "queue").
-Q19. B — Technically correct sync without body acting reads as robotic; performance is the fix.
-Q20. C — Character Animator's Record Mode allows real-time keyboard trigger of mouth shapes.
-Q21. C — REST = silence, pause, or exhale — the neutral resting position.
-Q22. B — Visibility keyframes toggle mouth layers on/off, equivalent to swap-symbol in Animate.
-Q23. B — Listen 5+ times first to understand rhythm and emotion before any animation work.
-Q24. B — Manual lip sync gives full frame-by-frame performance control auto sync cannot provide.
+Q1.  B, Many phonemes look alike; 10 visually distinct shapes capture the full range efficiently.
+Q2.  B, Stream sync ties audio to the playhead; essential for frame-accurate lip sync.
+Q3.  C, MBP = closed or nearly closed mouth for M, B, and P bilabial sounds.
+Q4.  B, Ch uses named layers in puppet files; audio analysis triggers the matching mouth layer.
+Q5.  A, Exclusive behaviors ensure only one mouth layer shows at a time.
+Q6.  B, Layer Markers dropped while listening give precise timing reference for lip sync.
+Q7.  C, "Open" in Ch corresponds to the general open mouth (AH) phoneme group.
+Q8.  B, Change to Stream sync so audio is tied to the playhead position.
+Q9.  B, Realistic performance: eyes react to thought/emotion before mouth begins to speak.
+Q10. B, The dope sheet maps syllables/audio to frame numbers for timing planning.
+Q11. C, Auto sync struggles with fast speech, unusual accents; manual override is common fix.
+Q12. B, FV = upper front teeth on lower lip (the F and V mouth position).
+Q13. B, "People": P (MBP), ee (E), P (MBP again), l (L) = MBP, E, MBP, L.
+Q14. C, L consonant's tongue-tip-to-palate position creates a distinctly visible open mouth.
+Q15. C, Character Animator requires layered .psd or .ai files with correctly named layers.
+Q16. D, Frame rate doesn't relate to performance body acting; the other three are acting elements.
+Q17. A, RAM Preview plays audio when the audio layer volume is above 0 and spacebar is used.
+Q18. B, WQ = small round pucker for W and Q sounds (as in "wow," "queue").
+Q19. B, Technically correct sync without body acting reads as robotic; performance is the fix.
+Q20. C, Character Animator's Record Mode allows real-time keyboard trigger of mouth shapes.
+Q21. C, REST = silence, pause, or exhale, the neutral resting position.
+Q22. B, Visibility keyframes toggle mouth layers on/off, equivalent to swap-symbol in Animate.
+Q23. B, Listen 5+ times first to understand rhythm and emotion before any animation work.
+Q24. B, Manual lip sync gives full frame-by-frame performance control auto sync cannot provide.
 ```

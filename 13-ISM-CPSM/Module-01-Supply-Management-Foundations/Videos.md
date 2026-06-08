@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Supply Management Foundations
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result. Pause and take notes — don't binge. Each video reinforces a concept tested on CPSM.
+> **How to use:** Click any video card to search YouTube and watch the latest top result. Pause and take notes, don't binge. Each video reinforces a concept tested on CPSM.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Procurement Maturity Model — 5 Stages</p>
+      <p class="vg-title">Procurement Maturity Model, 5 Stages</p>
       <p class="vg-creator">Sievo Procurement</p>
       <span class="vg-duration">⏱ 10 min · Reactive to world-class</span>
     </div>
@@ -139,7 +139,7 @@
 | **Sievo Procurement** | Heavy on analytics and category mgmt |
 | **ProcureCon** | Industry conference recordings |
 | **GreyCampus** | Structured CPSM/CIPS course excerpts |
-| **Damelin** | South African business school — strong supply content |
+| **Damelin** | South African business school, strong supply content |
 
 ---
 

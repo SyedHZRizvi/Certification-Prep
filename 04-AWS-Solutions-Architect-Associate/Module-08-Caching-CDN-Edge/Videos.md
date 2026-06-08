@@ -20,7 +20,7 @@
 
 # 🎥 Module 8 Videos: Caching, CDN & Edge
 
-> **How to use:** CloudFront and Route 53 questions are everywhere. Watch the "vs Global Accelerator" video carefully — easy trap.
+> **How to use:** CloudFront and Route 53 questions are everywhere. Watch the "vs Global Accelerator" video carefully, easy trap.
 
 ## ⭐ Essential watching (~65 min)
 
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🔥</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Caching Strategies — Cache-Aside, Write-Through</p>
+      <p class="vg-title">Caching Strategies, Cache-Aside, Write-Through</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 11 min · Patterns</span>
     </div>

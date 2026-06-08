@@ -3,7 +3,7 @@
 > **Why this module matters:** Networks are built once. Capacity is set every quarter. Demand changes every week. If your DCs and trucks are sized for peak, you're bleeding money for 10 months of the year. If they're sized for average, Black Friday breaks you. This module is about choosing where to live on that spectrum.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1's strategic decisions](../Module-01-Logistics-Strategy-Network/Reading.md) — capacity decisions cascade from network design
+> - [Module 1's strategic decisions](../Module-01-Logistics-Strategy-Network/Reading.md), capacity decisions cascade from network design
 > - Basic statistics: standard deviation, simple regression, moving averages
 > - The idea that variability (random) and seasonality (predictable) are different beasts
 >
@@ -19,7 +19,7 @@ Six months later, it's October. The receiving dock backs up because trailers can
 
 Jamie learned the **logistics capacity paradox** the hard way:
 
-- **Off-peak:** You look over-resourced. You're not — you're providing flex.
+- **Off-peak:** You look over-resourced. You're not, you're providing flex.
 - **Peak:** Your "right-sized" capacity becomes the bottleneck.
 
 CLTD-level logistics planners think in **annual demand curves**, not monthly averages. They use **demand patterns** to choose **capacity strategies**. And they know exactly which buffers (people, equipment, space) cost the most to flex up and down.
@@ -40,7 +40,7 @@ Capacity is not just "how much can you store." In logistics, it's a stack:
 | **Shipping** | Dock doors, trailer slots, parcel sortation | End of shift, late wave |
 | **Transport (fleet)** | Tractors, trailers, drivers | Driver shortage, peak season |
 
-🎯 **Exam tip:** A scenario question asks about a "capacity issue." Read carefully — is the bottleneck *receiving, storage, picking, shipping, or transport*? Each has different remedies.
+🎯 **Exam tip:** A scenario question asks about a "capacity issue." Read carefully, is the bottleneck *receiving, storage, picking, shipping, or transport*? Each has different remedies.
 
 ---
 
@@ -71,7 +71,7 @@ Example: A DC has 10 forklifts (theoretical), runs them 80% of available hours (
 
 ## 🔄 Demand Patterns That Drive Logistics
 
-Demand isn't one number — it's a *shape*. Three patterns govern logistics planning.
+Demand isn't one number, it's a *shape*. Three patterns govern logistics planning.
 
 ### 1. Trend
 Long-term increase or decrease. (E-commerce parcel volume has trended +10–15%/yr for a decade.)
@@ -94,7 +94,7 @@ Plus **randomness/noise** (residual variation around the pattern) and **promotio
 
 ## 🎚️ Capacity Strategies (THE Three You Must Know)
 
-This is *the* high-yield content of this module. CLTD aligns capacity to demand through one of three strategies — plus hybrids.
+This is *the* high-yield content of this module. CLTD aligns capacity to demand through one of three strategies, plus hybrids.
 
 ### A) Lead (Aggressive / Build-Ahead)
 
@@ -152,8 +152,8 @@ Capacity decisions vary by SKU velocity.
 
 Two storage zones often emerge:
 
-- **Forward pick area** — fast movers, ergonomic, dense
-- **Reserve area** — bulk pallets, replenishes forward area
+- **Forward pick area**, fast movers, ergonomic, dense
+- **Reserve area**, bulk pallets, replenishes forward area
 
 🎯 **Exam pattern:** "Where should an A-mover SKU be slotted?" → Forward pick, at golden-zone height (waist-to-shoulder), close to packing.
 
@@ -182,7 +182,7 @@ RMSE = √(Σ (Actual − Forecast)² / N)     (penalizes big misses)
 Tracking signal = Σ(Actual − Forecast) / MAD   (alert at ±4 to ±6)
 ```
 
-🚨 **Trap on the exam:** Bias is about *direction* (chronic under or over). MAD is about *magnitude*. Both matter — fix bias before tuning MAD.
+🚨 **Trap on the exam:** Bias is about *direction* (chronic under or over). MAD is about *magnitude*. Both matter, fix bias before tuning MAD.
 
 ### Forecast Granularity Pyramid
 
@@ -213,7 +213,7 @@ The CLTD body of knowledge describes a 6-step capacity-planning cycle. Memorize 
 6. Monitor & adjust (KPIs, monthly review, S&OP integration)
 ```
 
-This is **CRP for logistics** — Capacity Requirements Planning. It must integrate with the broader S&OP / IBP cycle.
+This is **CRP for logistics**, Capacity Requirements Planning. It must integrate with the broader S&OP / IBP cycle.
 
 ---
 
@@ -249,7 +249,7 @@ For a toy retailer, an apparel brand, or any business with 30%+ seasonality:
 
 ## 📉 Capacity Constraints & Theory of Constraints (TOC)
 
-> **Citation.** The Theory of Constraints was developed by Eliyahu M. Goldratt and popularized in Goldratt, E. M. & Cox, J., *The Goal: A Process of Ongoing Improvement* (North River Press, 1984; 4th ed. 2014) and Goldratt, E. M., *What Is This Thing Called Theory of Constraints and How Should It Be Implemented?* (North River Press, 1990). The Five Focusing Steps as formalized below are now codified in ASCM's *Dictionary* (16th ed., 2022) and the CLTD/CPIM bodies of knowledge. Companion reading: Hopp, Wallace J. & Spearman, Mark L., *Factory Physics* (3rd ed., Waveland Press, 2011) — the rigorous queueing-theory treatment of *why* utilization above ~85% blows up wait times.
+> **Citation.** The Theory of Constraints was developed by Eliyahu M. Goldratt and popularized in Goldratt, E. M. & Cox, J., *The Goal: A Process of Ongoing Improvement* (North River Press, 1984; 4th ed. 2014) and Goldratt, E. M., *What Is This Thing Called Theory of Constraints and How Should It Be Implemented?* (North River Press, 1990). The Five Focusing Steps as formalized below are now codified in ASCM's *Dictionary* (16th ed., 2022) and the CLTD/CPIM bodies of knowledge. Companion reading: Hopp, Wallace J. & Spearman, Mark L., *Factory Physics* (3rd ed., Waveland Press, 2011), the rigorous queueing-theory treatment of *why* utilization above ~85% blows up wait times.
 
 If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five Focusing Steps:
 
@@ -265,9 +265,9 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 
 ---
 
-## 📜 Case Study — FedEx and UPS During the 2020–2021 Pandemic Capacity Crisis
+## 📜 Case Study, FedEx and UPS During the 2020–2021 Pandemic Capacity Crisis
 
-**Situation.** In March 2020 US e-commerce orders went vertical. According to the US Census Bureau, e-commerce share of retail jumped from 11.8% in Q1 2020 to 16.4% by Q2 2020 — a multi-year compounding move concentrated into a single quarter. The two dominant US parcel integrators, FedEx and UPS, faced a wartime-scale capacity shock. Both had built their networks for steady ~5–8%/yr e-com growth, not 36% in 90 days. Peak (Q4) 2020 was projected to be 86 million packages/day vs network capacity of ~75M/day — a structural ~11M/day capacity shortfall.
+**Situation.** In March 2020 US e-commerce orders went vertical. According to the US Census Bureau, e-commerce share of retail jumped from 11.8% in Q1 2020 to 16.4% by Q2 2020 a multi-year compounding move concentrated into a single quarter. The two dominant US parcel integrators, FedEx and UPS, faced a wartime-scale capacity shock. Both had built their networks for steady ~5–8%/yr e-com growth, not 36% in 90 days. Peak (Q4) 2020 was projected to be 86 million packages/day vs network capacity of ~75M/day a structural ~11M/day capacity shortfall.
 
 **Decision.** The two responded *differently*:
 
@@ -276,7 +276,7 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 
 **Outcome.** By 2022 results were diverging clearly. UPS posted record operating margins (13.5% in 2021, peaking at ~14% in 2022) and stock outperformed FedEx by ~40% over the 2020–2022 window. FedEx posted a massive earnings miss in September 2022 ($0.74B operating-income shortfall vs guidance, attributed to e-com volume normalization), CEO Raj Subramaniam (Fred Smith's successor) announced a $1B cost-cut program, and FedEx Express began parking aircraft. By 2024, both were in active retrenchment: FedEx merged FedEx Ground + Express into "Network 2.0" (one combined US delivery network) and announced 1,800 layoffs; UPS announced 12,000 layoffs in early 2024 after the Teamsters contract pushed labor costs up ~30%.
 
-**Lesson for the exam / for practitioners.** The contrast is the textbook Lead vs Lag capacity-strategy decision in real time. UPS chose a *Lag-leaning* strategy — refuse some demand, protect margin, accept some lost volume. FedEx chose a *Lead/Match* strategy — flex hard to capture share, accept margin compression. The CLTD exam loves to test which strategy fits which industry condition: when demand is structurally over-spike (transient), Lag wins (UPS's bet); when the spike is durable (industry repositioning), Lead/Match wins. Both bet — UPS read the spike as transient, FedEx read it as durable. UPS was directionally correct, but the *real* lesson is that capacity strategy is not a one-time choice; it's continuously revised against demand-pattern intelligence (see ASCM Dictionary, 16th ed., entry: "capacity strategy"). The companion lesson from Hopp & Spearman's *Factory Physics*: above ~85% utilization, queueing variability dominates and service collapses — exactly what happened to FedEx Ground in Q4 2020.
+**Lesson for the exam / for practitioners.** The contrast is the textbook Lead vs Lag capacity-strategy decision in real time. UPS chose a *Lag-leaning* strategy refuse some demand, protect margin, accept some lost volume. FedEx chose a *Lead/Match* strategy flex hard to capture share, accept margin compression. The CLTD exam loves to test which strategy fits which industry condition: when demand is structurally over-spike (transient), Lag wins (UPS's bet); when the spike is durable (industry repositioning), Lead/Match wins. Both bet UPS read the spike as transient, FedEx read it as durable. UPS was directionally correct, but the *real* lesson is that capacity strategy is not a one-time choice; it's continuously revised against demand-pattern intelligence (see ASCM Dictionary, 16th ed., entry: "capacity strategy"). The companion lesson from Hopp & Spearman's *Factory Physics*: above ~85% utilization, queueing variability dominates and service collapses exactly what happened to FedEx Ground in Q4 2020.
 
 **Discussion (Socratic).**
 - Q1: With perfect hindsight UPS won the strategic bet. But shareholders of either company would have been right to demand the *other* strategy at certain points. When during 2020–2024 would the FedEx strategy have been the right call, and when would UPS's?
@@ -292,7 +292,7 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 | "Higher utilization is always better" | Above ~85% utilization, variability causes queue blow-ups |
 | "Effective capacity = theoretical capacity" | Effective subtracts maintenance, setups, breaks |
 | "Match strategy is always cheapest" | It minimizes carrying cost but raises hiring/training churn |
-| "Aggregate forecasts are less accurate than detail" | Opposite — aggregation reduces relative error |
+| "Aggregate forecasts are less accurate than detail" | Opposite, aggregation reduces relative error |
 | "Bias and MAD measure the same thing" | Bias = direction; MAD = magnitude |
 
 ---
@@ -301,11 +301,11 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 
 🚨 **Trap 1:** Confusing utilization with efficiency. Utilization = how much of *available* time is used. Efficiency = how productive that time is.
 
-🚨 **Trap 2:** Picking "build more DCs" as a capacity solution when the bottleneck is *labor* or *equipment* — not space.
+🚨 **Trap 2:** Picking "build more DCs" as a capacity solution when the bottleneck is *labor* or *equipment*, not space.
 
 🚨 **Trap 3:** Mistaking demand variability (random noise) for seasonality (predictable pattern). Variability needs safety stock; seasonality needs scheduled pre-building.
 
-🚨 **Trap 4:** Assuming a high tracking signal "is good." Tracking signal > ±4 to ±6 means *the forecast model is broken* — re-tune it.
+🚨 **Trap 4:** Assuming a high tracking signal "is good." Tracking signal > ±4 to ±6 means *the forecast model is broken*, re-tune it.
 
 ---
 
@@ -335,7 +335,7 @@ If a single resource limits flow, that's the **bottleneck**. Eli Goldratt's Five
 You now know:
 
 - 🎯 The 7 layers of logistics capacity (receiving → transport)
-- 📐 Theoretical, effective, rated capacity — and the formula
+- 📐 Theoretical, effective, rated capacity, and the formula
 - 🎚️ Lead / Lag / Match strategies and when each fits
 - 🐢🐇 How A/B/C velocity drives slotting and capacity decisions
 - 📊 Forecast methods and error metrics (MAD, MAPE, bias, tracking signal)
@@ -352,7 +352,7 @@ You now know:
 
 ## 🤔 Discussion (Socratic prompts)
 
-1. **The 85% utilization wall.** Hopp & Spearman's *Factory Physics* shows that queueing wait time approaches infinity as utilization → 100% with any variability. Yet finance teams routinely push DC managers to "hit 95% utilization to justify the rent." Build the strongest argument for the finance side AND for the operations side. Where should a CLTD-grade director actually settle the dial — and what data would shift it?
+1. **The 85% utilization wall.** Hopp & Spearman's *Factory Physics* shows that queueing wait time approaches infinity as utilization → 100% with any variability. Yet finance teams routinely push DC managers to "hit 95% utilization to justify the rent." Build the strongest argument for the finance side AND for the operations side. Where should a CLTD-grade director actually settle the dial, and what data would shift it?
 
 2. **Forecast accuracy ROI.** Improving SKU-level forecast MAPE from 25% to 18% might cost $1.2M in a demand-sensing platform. The forecast feeds DRP, which feeds DC capacity. When is that investment worth it, and how would you build the business case?
 
@@ -371,8 +371,8 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Factory Physics* by Hopp & Spearman — utilization vs variability relationship
-- 📖 *The Goal* by Eli Goldratt — TOC fundamentals
+- 📖 *Factory Physics* by Hopp & Spearman, utilization vs variability relationship
+- 📖 *The Goal* by Eli Goldratt, TOC fundamentals
 - 📖 *Logistics Engineering and Management* by Blanchard
-- 🔗 [ASCM CRP overview](https://www.ascm.org/) — capacity requirements planning
+- 🔗 [ASCM CRP overview](https://www.ascm.org/), capacity requirements planning
 - 🔗 [CSCMP demand-forecasting whitepapers](https://cscmp.org/)

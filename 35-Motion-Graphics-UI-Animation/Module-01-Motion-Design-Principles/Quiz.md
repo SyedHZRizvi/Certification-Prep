@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-01-Motion-Design-Principles/Q
 title: "Module 1 Quiz: Motion Design Principles"
 ---
 
-# 🧠 Module 1 Quiz — Motion Design Principles
+# 🧠 Module 1 Quiz, Motion Design Principles
 
 ### Q1.
 Which of Disney's 12 principles describes an object elongating in the direction of travel while in motion and compressing upon impact?
@@ -110,7 +110,7 @@ An animated infographic has three elements animating simultaneously: a chart bar
 
 A. Reduce all durations to under 100ms so the viewer doesn't notice the simultaneous motion  
 B. Make all three animations identical in duration and easing  
-C. Sequence the animations so the bar grows first, then the counter ticks, then the label fades — or establish a clear hierarchy so one is clearly primary  
+C. Sequence the animations so the bar grows first, then the counter ticks, then the label fades, or establish a clear hierarchy so one is clearly primary  
 D. Use different easing curves for each element to distinguish them  
 
 ---
@@ -209,7 +209,7 @@ D. ease-in-out
 A motion designer complains their piece "feels busy." The best fix according to the principle of contrast is:
 
 A. Remove half of all animated elements  
-B. Make fast moments faster and slow moments slower — increase contrast between motion events  
+B. Make fast moments faster and slow moments slower, increase contrast between motion events  
 C. Add more transitions to smooth out the pacing  
 D. Change all easing curves to linear  
 
@@ -248,51 +248,51 @@ D. 3,000ms+
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — Squash and Stretch. The ball elongates (stretch) while traveling, compresses (squash) on impact. Volume is preserved.
+Q1:  B, Squash and Stretch. The ball elongates (stretch) while traveling, compresses (squash) on impact. Volume is preserved.
 
-Q2:  C — Anticipation. The brief scale-down before scale-up telegraphs the upcoming action, preparing the eye.
+Q2:  C, Anticipation. The brief scale-down before scale-up telegraphs the upcoming action, preparing the eye.
 
-Q3:  B — Time (x-axis) and Progress (y-axis). The bezier maps time to animation progress; the slope at any point = current velocity.
+Q3:  B, Time (x-axis) and Progress (y-axis). The bezier maps time to animation progress; the slope at any point = current velocity.
 
-Q4:  B — Physical perception: arriving objects decelerate as they come to rest in front of us; departing objects accelerate away. Ease-out mimics arrival deceleration; ease-in mimics departure acceleration.
+Q4:  B, Physical perception: arriving objects decelerate as they come to rest in front of us; departing objects accelerate away. Ease-out mimics arrival deceleration; ease-in mimics departure acceleration.
 
-Q5:  C — 200–300ms. Both Google Material and Apple HIG converge on this range from independent human-perception research.
+Q5:  C, 200–300ms. Both Google Material and Apple HIG converge on this range from independent human-perception research.
 
-Q6:  B — Staging: one primary motion at a time so the viewer's eye always has a clear focus.
+Q6:  B, Staging: one primary motion at a time so the viewer's eye always has a clear focus.
 
-Q7:  C — Follow-Through and Overlapping Action. The staggered start times mean earlier cards are mid-animation while later ones begin — classic overlapping action.
+Q7:  C, Follow-Through and Overlapping Action. The staggered start times mean earlier cards are mid-animation while later ones begin, classic overlapping action.
 
-Q8:  B — Higher damping = faster settling, less oscillation. Underdamped (low damping) = bouncy. Critically damped = smooth stop. Overdamped = very slow stop, no bounce.
+Q8:  B, Higher damping = faster settling, less oscillation. Underdamped (low damping) = bouncy. Critically damped = smooth stop. Overdamped = very slow stop, no bounce.
 
-Q9:  A — Arcs. Natural motion follows curved trajectories; straight-line motion is the software default and reads as synthetic.
+Q9:  A, Arcs. Natural motion follows curved trajectories; straight-line motion is the software default and reads as synthetic.
 
-Q10: C — Apple's UISpringTimingParameters is a literal physics simulation. Spring animations define mass, stiffness, and damping — not fixed duration bezier curves.
+Q10: C, Apple's UISpringTimingParameters is a literal physics simulation. Spring animations define mass, stiffness, and damping, not fixed duration bezier curves.
 
-Q11: C — Sequence the animations with the primary element first, or establish hierarchy so viewers know where to look. Simultaneous animation without hierarchy violates staging.
+Q11: C, Sequence the animations with the primary element first, or establish hierarchy so viewers know where to look. Simultaneous animation without hierarchy violates staging.
 
-Q12: C — Stripe deliberately uses two distinct motion languages: organic/slow brand motion on the homepage (gradient orbs), and conventional functional transitions (200–300ms) in the product.
+Q12: C, Stripe deliberately uses two distinct motion languages: organic/slow brand motion on the homepage (gradient orbs), and conventional functional transitions (200–300ms) in the product.
 
-Q13: C — 400 * 0.15 * 4 = 240ms. But stagger indices start at 0 or 1 depending on implementation. With index 3 (0-based, 4th item): 400 * 0.15 * 3 = 180ms.
+Q13: C, 400 * 0.15 * 4 = 240ms. But stagger indices start at 0 or 1 depending on implementation. With index 3 (0-based, 4th item): 400 * 0.15 * 3 = 180ms.
 
-Q14: B — Broadcast motion graphics compete for viewer attention in ways that product UI doesn't; exaggeration is calibrated higher to earn the eye.
+Q14: B, Broadcast motion graphics compete for viewer attention in ways that product UI doesn't; exaggeration is calibrated higher to earn the eye.
 
-Q15: B — Solid Design means every paused frame functions as a well-composed still. This is the motion graphics translation of the animator's "solid drawing" principle.
+Q15: B, Solid Design means every paused frame functions as a well-composed still. This is the motion graphics translation of the animator's "solid drawing" principle.
 
-Q16: C — Economy. The simplest solution is the right one; restraint makes moments of exaggeration land harder.
+Q16: C, Economy. The simplest solution is the right one; restraint makes moments of exaggeration land harder.
 
-Q17: B — The label arriving 200ms after the headline demonstrates follow-through: the headline is the primary action, the label is a trailing element that stops after the main action.
+Q17: B, The label arriving 200ms after the headline demonstrates follow-through: the headline is the primary action, the label is a trailing element that stops after the main action.
 
-Q18: C — 12 frames / 24fps = 0.5 seconds = 500ms.
+Q18: C, 12 frames / 24fps = 0.5 seconds = 500ms.
 
-Q19: D — Lottie. Airbnb's engineering team created Lottie to export AE animations as JSON for high-performance mobile rendering.
+Q19: D, Lottie. Airbnb's engineering team created Lottie to export AE animations as JSON for high-performance mobile rendering.
 
-Q20: C — Linear. Constant velocity throughout. ease-in/out all change velocity (acceleration/deceleration) at some point.
+Q20: C, Linear. Constant velocity throughout. ease-in/out all change velocity (acceleration/deceleration) at some point.
 
-Q21: B — Contrast is the solution to "busy" animation: make the fast moments faster and the slow moments slower so the difference is perceptible and meaningful.
+Q21: B, Contrast is the solution to "busy" animation: make the fast moments faster and the slow moments slower so the difference is perceptible and meaningful.
 
-Q22: B — Pose-to-pose: define key states, software fills in-betweens using the easing curve. This is the foundational model of all keyframe animation tools.
+Q22: B, Pose-to-pose: define key states, software fills in-betweens using the easing curve. This is the foundational model of all keyframe animation tools.
 
-Q23: B — Continuity: consistent motion vocabulary across related elements. Not about looping or frame rate.
+Q23: B, Continuity: consistent motion vocabulary across related elements. Not about looping or frame rate.
 
-Q24: C — Hero brand animations typically run 500–800ms. Too fast (under 200ms) and the brand moment is missed. Too slow (over 1s) and the user waits. 500–800ms is the cinematic-but-not-slow sweet spot.
+Q24: C, Hero brand animations typically run 500–800ms. Too fast (under 200ms) and the brand moment is missed. Too slow (over 1s) and the user waits. 500–800ms is the cinematic-but-not-slow sweet spot.
 ```

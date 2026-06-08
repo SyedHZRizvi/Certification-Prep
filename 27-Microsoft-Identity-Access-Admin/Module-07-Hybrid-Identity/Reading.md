@@ -1,20 +1,20 @@
 # Module 7: Hybrid Identity with Entra Connect / Cloud Sync 🌉
 
-> **Why this module matters:** "We're all cloud now" is the most-said and most-wrong statement in identity. Microsoft's own data (Ignite 2024) says ~75% of M365 tenants still synchronize from on-prem Active Directory. The hybrid layer is where most production breaches actually happen — on-prem AD privileges flow into the cloud, federation pushes auth out of Microsoft's signal-rich environment, and a single misconfigured Entra Connect agent can sync 20,000 users into a state that locks them all out. SC-300 dedicates an entire domain block to hybrid because exam writers know "all cloud" is a fantasy for most candidates' real-world tenants.
+> **Why this module matters:** "We're all cloud now" is the most-said and most-wrong statement in identity. Microsoft's own data (Ignite 2024) says ~75% of M365 tenants still synchronize from on-prem Active Directory. The hybrid layer is where most production breaches actually happen, on-prem AD privileges flow into the cloud, federation pushes auth out of Microsoft's signal-rich environment, and a single misconfigured Entra Connect agent can sync 20,000 users into a state that locks them all out. SC-300 dedicates an entire domain block to hybrid because exam writers know "all cloud" is a fantasy for most candidates' real-world tenants.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Tenant + license tier basics — [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
-> - User-and-group taxonomy + the `synced` user attribute — [Module 2](../Module-02-Users-Groups/Reading.md).
-> - Authentication methods and the cloud auth signal model — [Module 3](../Module-03-Authentication/Reading.md).
+> - Tenant + license tier basics, [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
+> - User-and-group taxonomy + the `synced` user attribute, [Module 2](../Module-02-Users-Groups/Reading.md).
+> - Authentication methods and the cloud auth signal model, [Module 3](../Module-03-Authentication/Reading.md).
 > - On-prem Active Directory at a conceptual level (forests, domains, OUs, GPOs). [`09-CompTIA-Security-Plus` Module 3](../../09-CompTIA-Security-Plus/Module-03-Identity-Access-Management/Reading.md) provides intro context.
 
 ---
 
 ## 🪪 A Story: The Sync Outage That Took 4 Hours To Diagnose
 
-It's a Tuesday morning. A 12,000-employee manufacturing company's overnight Entra Connect sync ran "successfully" at 2:47 AM (per the dashboard). At 7:30 AM, 4,200 users in the German subsidiary report they can't sign in to Microsoft 365. At 7:45 AM, the on-call admin (in Seattle, 7 hours behind) wakes up to a flood of pages. The portal shows no Conditional Access policy fired. Identity Protection shows nothing. The sign-in logs show `AADSTS50053 — Account is locked`. Across 4,200 users simultaneously.
+It's a Tuesday morning. A 12,000-employee manufacturing company's overnight Entra Connect sync ran "successfully" at 2:47 AM (per the dashboard). At 7:30 AM, 4,200 users in the German subsidiary report they can't sign in to Microsoft 365. At 7:45 AM, the on-call admin (in Seattle, 7 hours behind) wakes up to a flood of pages. The portal shows no Conditional Access policy fired. Identity Protection shows nothing. The sign-in logs show `AADSTS50053, Account is locked`. Across 4,200 users simultaneously.
 
-The cause: the previous day, an on-prem AD admin added a new OU for the German subsidiary and changed the OU filtering scope in Entra Connect's Configuration Wizard to "include" it — but did so incorrectly, which silently *removed* 4,200 existing users from sync scope. The next sync ran, saw the users were no longer in scope, and marked them as "deleted" in the cloud. Cloud accounts were soft-deleted. Sign-in returned "account locked" until the soft-delete window expired (30 days), then the accounts would be permanently lost.
+The cause: the previous day, an on-prem AD admin added a new OU for the German subsidiary and changed the OU filtering scope in Entra Connect's Configuration Wizard to "include" it, but did so incorrectly, which silently *removed* 4,200 existing users from sync scope. The next sync ran, saw the users were no longer in scope, and marked them as "deleted" in the cloud. Cloud accounts were soft-deleted. Sign-in returned "account locked" until the soft-delete window expired (30 days), then the accounts would be permanently lost.
 
 The fix: roll back the OU filter in Entra Connect, run a full sync (~50 minutes for 12K users), restore the soft-deleted accounts via PowerShell, write a post-mortem. Total downtime: 4 hours 17 minutes. Total ticket count: 4,200+. The company implemented two changes the next week: (1) all Entra Connect / Cloud Sync config changes require a peer review + staging-server validation, and (2) migrated from Entra Connect to **Entra Cloud Sync** (the modern, lighter-weight, less-error-prone agent) over the next quarter.
 
@@ -89,7 +89,7 @@ Microsoft supports three ways to authenticate hybrid users:
 4. The hash is sent to Entra over HTTPS.
 5. When the user signs in to a cloud app, Entra validates against the hash.
 
-🎯 **Exam tip:** PHS is a **disaster recovery** feature even if you use Federation as your primary topology. Microsoft strongly recommends enabling PHS as a backup — if AD FS goes down, users can still sign in via cloud auth.
+🎯 **Exam tip:** PHS is a **disaster recovery** feature even if you use Federation as your primary topology. Microsoft strongly recommends enabling PHS as a backup, if AD FS goes down, users can still sign in via cloud auth.
 
 ### PTA in detail
 
@@ -113,9 +113,9 @@ Microsoft supports three ways to authenticate hybrid users:
 | Protocol | Kerberos (against a computer account named `AZUREADSSOACC` in AD) |
 | Trigger | When user is on a domain-joined or Hybrid-joined device on the corporate network |
 | Requires | Browser SPN config (auto-applied via GPO) |
-| Works with | PHS and PTA (NOT Federation — federation handles SSO natively) |
+| Works with | PHS and PTA (NOT Federation, federation handles SSO natively) |
 
-🎯 **Exam tip:** The `AZUREADSSOACC$` computer account uses a 30-character random password by default. **Rotate the password every 30 days** (Microsoft recommendation) — there's a PowerShell cmdlet to do it.
+🎯 **Exam tip:** The `AZUREADSSOACC$` computer account uses a 30-character random password by default. **Rotate the password every 30 days** (Microsoft recommendation), there's a PowerShell cmdlet to do it.
 
 ---
 
@@ -174,7 +174,7 @@ A **Hybrid Entra Joined** device is **both** on-prem AD-joined **and** registere
 
 ### Why HEJ matters
 
-- **Conditional Access** can require "Hybrid Entra Joined" — only devices managed by AD + registered to Entra can sign in.
+- **Conditional Access** can require "Hybrid Entra Joined", only devices managed by AD + registered to Entra can sign in.
 - **Intune MDM** can co-manage with Configuration Manager (CCMS hybrid).
 - **Single sign-on** to cloud apps using existing AD credentials.
 
@@ -208,7 +208,7 @@ A **Hybrid Entra Joined** device is **both** on-prem AD-joined **and** registere
 | "Only Entra Connect supports password write-back" | ❌ Cloud Sync also supports password write-back |
 | "PTA requires only one agent" | ❌ Microsoft recommends ≥3 agents for HA |
 | "Changing OU filter is risk-free" | ❌ Removing users from sync scope = soft-delete + permanent loss after 30 days |
-| "Hybrid Entra Join = Entra Joined" | ❌ Different — HEJ is both worlds; Entra Joined is cloud-only |
+| "Hybrid Entra Join = Entra Joined" | ❌ Different, HEJ is both worlds; Entra Joined is cloud-only |
 
 ---
 
@@ -221,11 +221,11 @@ The correct order:
 1. ✅ **Inventory current Entra Connect setup**: which features are in use (PTA? Federation? group write-back? device write-back?)
 2. ✅ **Identify blockers**: if any features unique to Connect are in use, decide to (a) eliminate them or (b) stay on Connect.
 3. ✅ **Install Cloud Sync agent** on 2+ Windows Servers (HA).
-4. ✅ **Configure Cloud Sync scope** to match Entra Connect's current OU/attribute filter — staging mode.
+4. ✅ **Configure Cloud Sync scope** to match Entra Connect's current OU/attribute filter, staging mode.
 5. ✅ **Run a test sync** in staging mode; compare results to Entra Connect's expected state.
 6. ✅ **Update Entra Connect to staging mode** (stops it from exporting to Entra).
 7. ✅ **Switch Cloud Sync to active** (becomes the sole writer to Entra).
-8. ✅ **Monitor for 1 week** — sign-in logs, provisioning logs, user reports.
+8. ✅ **Monitor for 1 week**, sign-in logs, provisioning logs, user reports.
 9. ✅ **Decommission Entra Connect server** after stability confirmed.
 10. ✅ **Document the new topology** + update runbooks.
 
@@ -252,7 +252,7 @@ The correct order:
 | **Attribute write-back** | M365 attribute → back to AD (Connect only) |
 | **Hybrid Entra Join (HEJ)** | Device is AD-joined AND Entra-registered |
 | **Entra Joined** | Device is cloud-only (no AD) |
-| **Staging mode** | Connect server receives changes but doesn't export — used for HA + migration |
+| **Staging mode** | Connect server receives changes but doesn't export, used for HA + migration |
 | **Entra Connect Health** | Monitoring portal for Connect, PTA agents, AD FS |
 | **PTA agent** | On-prem service that validates passwords for PTA |
 
@@ -263,10 +263,10 @@ The correct order:
 You now know:
 
 - 🌉 The hybrid landscape: on-prem AD + Connect/Cloud Sync + Entra
-- ⚖️ Entra Connect (full, legacy) vs Cloud Sync (modern, lighter) — and which features each supports
+- ⚖️ Entra Connect (full, legacy) vs Cloud Sync (modern, lighter), and which features each supports
 - 🔐 Three auth topologies: PHS (recommended), PTA (no hash in cloud), Federation (deprecated)
 - 🚪 Seamless SSO + Kerberos + `AZUREADSSOACC$`
-- 🔄 OU and attribute filtering — and why misuse causes mass deletion
+- 🔄 OU and attribute filtering, and why misuse causes mass deletion
 - ✍️ Four write-back scenarios (Cloud Sync supports password only)
 - 🖥️ Hybrid Entra Join vs Entra Joined
 - 🚨 The 10 most common traps at this layer
@@ -279,7 +279,7 @@ You now know:
 
 ---
 
-## 📊 Case Study — Lufthansa Group's AD FS Decommissioning (2022–2024)
+## 📊 Case Study, Lufthansa Group's AD FS Decommissioning (2022–2024)
 
 **Situation.** Lufthansa Group (~100,000 employees across multiple airlines + maintenance + cargo) ran Microsoft AD FS for nearly a decade as the primary authentication topology for Entra ID. By 2022, AD FS had become a strategic liability: (1) Microsoft was funneling all new Entra capabilities (Conditional Access richness, Identity Protection signals, FIDO2 sign-in) through cloud-auth paths that AD FS bypassed; (2) Lufthansa's AD FS farm required ~12 servers globally + 3 SOC engineers to patch and monitor; (3) the 2022 Log4j vulnerability scare highlighted that on-prem federation servers are high-value targets and create blast-radius across all cloud sign-ins.
 
@@ -294,11 +294,11 @@ You now know:
 
 - **AD FS servers reduced** from 12 to 0 (decommissioned by 2024-Q2).
 - **Mean time to detect a sign-in anomaly** dropped from ~hours to ~15 minutes (Identity Protection now has full signal).
-- **CA policy effectiveness** improved measurably — pre-migration, CA only saw federated sign-in events for ~20% of attempted controls; post-migration, 100%.
+- **CA policy effectiveness** improved measurably, pre-migration, CA only saw federated sign-in events for ~20% of attempted controls; post-migration, 100%.
 - **Operational cost** reduction of ~€300K/year in patching, licensing, and SOC monitoring of AD FS.
 - **Zero auth outages** during the migration (vs ~3 federation-related outages/year previously).
 
-**Lesson for the exam / for practitioners.** Federation was the right answer in 2014. It's the wrong answer in 2026 for most orgs. SC-300 scenarios that mention AD FS will often ask "what should this org migrate to" — and the answer is **PHS + Seamless SSO** unless there's a specific blocker. Even when federation is required (e.g. smart card requirements), Entra-native CBA replaces AD FS for that use case.
+**Lesson for the exam / for practitioners.** Federation was the right answer in 2014. It's the wrong answer in 2026 for most orgs. SC-300 scenarios that mention AD FS will often ask "what should this org migrate to", and the answer is **PHS + Seamless SSO** unless there's a specific blocker. Even when federation is required (e.g. smart card requirements), Entra-native CBA replaces AD FS for that use case.
 
 **Discussion (Socratic).**
 - **Q1.** Lufthansa kept PHS enabled as a backup even during federation. Microsoft recommends this for all federated tenants. Why is "PHS as DR for federation" the right answer even if you trust your AD FS uptime?
@@ -314,12 +314,12 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **Cloud Sync vs Connect in 2026.** For a 5,000-person org with no PTA, no federation, no group write-back requirement — when does Cloud Sync NOT win? Build the case for staying on Entra Connect.
-2. **PHS privacy concerns.** Some regulators (specific European DPAs) historically raised concerns about syncing hashed passwords to a US cloud. Microsoft's response: "hash-of-hash, salted, 1,000 iterations — even Microsoft can't recover the password." Is this concern still legitimate in 2026? How do you make the privacy case to a skeptical CISO?
-3. **Federation deprecation messaging.** A company has spent 6 figures on its AD FS farm. Microsoft says "move to PHS." How do you make the case internally — what's the cost-of-NOT-migrating in terms of Identity Protection coverage and CA effectiveness?
-4. **Hybrid Entra Join scope.** Should every domain-joined device also be HEJ-registered? Build the case for and against universal HEJ adoption — what's the cost when scaled to 50K endpoints?
+1. **Cloud Sync vs Connect in 2026.** For a 5,000-person org with no PTA, no federation, no group write-back requirement, when does Cloud Sync NOT win? Build the case for staying on Entra Connect.
+2. **PHS privacy concerns.** Some regulators (specific European DPAs) historically raised concerns about syncing hashed passwords to a US cloud. Microsoft's response: "hash-of-hash, salted, 1,000 iterations, even Microsoft can't recover the password." Is this concern still legitimate in 2026? How do you make the privacy case to a skeptical CISO?
+3. **Federation deprecation messaging.** A company has spent 6 figures on its AD FS farm. Microsoft says "move to PHS." How do you make the case internally, what's the cost-of-NOT-migrating in terms of Identity Protection coverage and CA effectiveness?
+4. **Hybrid Entra Join scope.** Should every domain-joined device also be HEJ-registered? Build the case for and against universal HEJ adoption, what's the cost when scaled to 50K endpoints?
 5. **Multi-forest with no trust.** Cloud Sync explicitly enables multi-forest sync without forest trust. Why is this a major architectural win for M&A scenarios? What does Entra Connect require instead?
 
 ---

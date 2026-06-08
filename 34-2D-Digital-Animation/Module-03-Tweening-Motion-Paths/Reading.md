@@ -9,7 +9,7 @@ title: "Module 3: Tweening & Motion Paths"
 
 Imagine you're in an elevator with a senior producer at a major animation studio. She asks what your specialty is. You say "tweening." She frowns. "Anyone can tween. What do you *do* with tweens?"
 
-Here's the trap: most beginners treat tweening as a labor-saving device. Set a start keyframe, set an end keyframe, apply a tween, done. The result is almost always what animators call "floaty" — smooth in a mathematical sense, but lifeless in an organic sense. Real animators use tweening as a scaffold, not a crutch. The tween gets you 60% of the way there. The other 40% is custom easing, motion path adjustment, and the judgment to know when to break the tween into a hand-drawn frame.
+Here's the trap: most beginners treat tweening as a labor-saving device. Set a start keyframe, set an end keyframe, apply a tween, done. The result is almost always what animators call "floaty", smooth in a mathematical sense, but lifeless in an organic sense. Real animators use tweening as a scaffold, not a crutch. The tween gets you 60% of the way there. The other 40% is custom easing, motion path adjustment, and the judgment to know when to break the tween into a hand-drawn frame.
 
 This module teaches you to be in the other 40%.
 
@@ -58,7 +58,7 @@ Adobe Animate includes a library of built-in ease presets accessible from the Pr
 
 For most character animation, the most-used presets are Ease In, Ease Out, and variations of Sine. Bounce and Elastic are useful for secondary elements (a bag swinging on a character's shoulder, a spring coiling) but should be used sparingly for primary character motion.
 
-> 🎯 **What the exam tests:** Know what each preset category does and when to apply it. "Elastic Out" creates an overshoot-and-oscillate pattern — appropriate for a cartoon spring but wrong for a human arm settling into a pose.
+> 🎯 **What the exam tests:** Know what each preset category does and when to apply it. "Elastic Out" creates an overshoot-and-oscillate pattern, appropriate for a cartoon spring but wrong for a human arm settling into a pose.
 
 ---
 
@@ -71,7 +71,7 @@ The Motion Editor is Animate's graphical easing tool. It displays a curve graph 
 - **Steep section of curve** = rapid change in that property = fast motion
 - **Flat section of curve** = slow or no change in that property = slow motion or hold
 - **S-curve** = ease in → ease out (slow start, fast middle, slow end)
-- **Reverse S** = ease out → ease in (fast start, slow middle, fast end) — unusual but useful for secondary motion
+- **Reverse S** = ease out → ease in (fast start, slow middle, fast end), unusual but useful for secondary motion
 
 ### Editing the Curve
 
@@ -85,9 +85,9 @@ In the Motion Editor, you can:
 ### Classic Tween Ease Slider
 
 For Classic Tweens, easing is controlled by a single slider in the Properties panel:
-- **Positive values (1 to 100):** Ease Out — the animation starts fast and slows down
-- **Negative values (-1 to -100):** Ease In — the animation starts slow and speeds up
-- **Zero:** Linear — constant speed throughout
+- **Positive values (1 to 100):** Ease Out, the animation starts fast and slows down
+- **Negative values (-1 to -100):** Ease In, the animation starts slow and speeds up
+- **Zero:** Linear, constant speed throughout
 
 > 🚨 **Exam Trap:** The Classic Tween ease slider direction is counterintuitive to many students. A **positive** value creates an Ease **Out** (fast start, slow finish). Negative = Ease In (slow start, fast finish). This is frequently tested because it seems backwards.
 
@@ -117,7 +117,7 @@ The single most common complaint about computer-generated animation is that it l
 
 ## 🛤️ Motion Paths
 
-When a Motion Tween is applied to a symbol, Animate automatically creates a motion path — a visible line on the Stage showing the trajectory of the object's position property over the tween's duration.
+When a Motion Tween is applied to a symbol, Animate automatically creates a motion path, a visible line on the Stage showing the trajectory of the object's position property over the tween's duration.
 
 ### Editing Motion Paths
 
@@ -159,7 +159,7 @@ Even with custom easing, tweens require attention to timing:
 
 ### Hold Frames
 
-A **hold** is a period where the object appears at rest — no position change, no property change. In animation, holds are essential because they give the audience time to "read" a pose before the next motion begins.
+A **hold** is a period where the object appears at rest, no position change, no property change. In animation, holds are essential because they give the audience time to "read" a pose before the next motion begins.
 
 To create a hold in a Motion Tween:
 - Add a property keyframe at the start of the desired hold position.
@@ -200,7 +200,7 @@ This separation allows you to adjust the walk cycle's timing independently from 
 
 ## 🔄 Shape Tweening: The Third Tween Type
 
-Beyond Classic and Motion Tweens, Animate offers **Shape Tweening** — which morphs one vector shape into another, changing not just position/scale/rotation but the actual path points of the shape.
+Beyond Classic and Motion Tweens, Animate offers **Shape Tweening**, which morphs one vector shape into another, changing not just position/scale/rotation but the actual path points of the shape.
 
 | Feature | Shape Tween |
 |---------|------------|
@@ -218,7 +218,7 @@ Without Shape Hints, Shape Tweens often produce garbled intermediate frames. Sha
 2. End frame: place the corresponding Shape Hint marker on the matching point of the ending shape
 3. Animate uses these pairs to produce clean interpolation between the two shapes
 
-> 🚨 **Exam Trap:** Shape Tweens only work on **raw vector shapes** — not on symbols, groups, or bitmaps. If you try to Shape Tween a symbol, Animate will either refuse or produce unexpected results. You must Break Apart (Ctrl+B) a symbol to access its raw vector data before applying a Shape Tween.
+> 🚨 **Exam Trap:** Shape Tweens only work on **raw vector shapes**, not on symbols, groups, or bitmaps. If you try to Shape Tween a symbol, Animate will either refuse or produce unexpected results. You must Break Apart (Ctrl+B) a symbol to access its raw vector data before applying a Shape Tween.
 
 ---
 
@@ -239,7 +239,7 @@ Without Shape Hints, Shape Tweens often produce garbled intermediate frames. Sha
 
 1. What is the difference between a Classic Tween and a Motion Tween in terms of setup and easing tools?
 2. Which tween type works with the Motion Editor?
-3. What does a positive ease value (+100) do in a Classic Tween (Ease Out — starts fast, ends slow)?
+3. What does a positive ease value (+100) do in a Classic Tween (Ease Out, starts fast, ends slow)?
 4. What causes "floaty" animation and what are the fixes?
 5. What is a Motion Guide Layer and which tween type uses it?
 6. What does "Orient to Path" do and what can go wrong with it?
@@ -254,7 +254,7 @@ Without Shape Hints, Shape Tweens often produce garbled intermediate frames. Sha
 
 - **Classic Tween ease slider is inverted from what you'd expect:** Positive = Ease Out (faster at start). Negative = Ease In (faster at end). Students frequently get this backwards.
 - **Motion Editor ≠ Classic Tween:** If a question asks about per-property bezier easing, the answer is always Motion Tween + Motion Editor.
-- **Motion Guide layers are never exported:** A common trap question asks what happens to the Motion Guide path in the final render. It is invisible — guide layers don't export.
+- **Motion Guide layers are never exported:** A common trap question asks what happens to the Motion Guide path in the final render. It is invisible, guide layers don't export.
 - **Shape Tweens are a third type:** Animate has a Shape Tween (for morphing vector shapes) in addition to Classic and Motion. All three appear separately on the exam.
 
 ---
@@ -280,37 +280,37 @@ Let's analyze a simple scene to understand how easing choices translate to real 
 | Hand grasps book | Classic | Ease Out (fast into contact, settle) | Contact is fast; settles into grip |
 | Book falls before catch | Classic | Linear or slight Ease In | Gravity accelerates → Ease In is actually accurate |
 | Character pulls book back | Motion | Sine In-Out | Natural comfortable motion with weight |
-| Brief hold after catch | N/A — property keyframes flat | N/A | 4-frame hold for audience to register the catch |
+| Brief hold after catch | N/A, property keyframes flat | N/A | 4-frame hold for audience to register the catch |
 
-This kind of scene analysis — choosing easing based on the physical and emotional quality of each motion — is what separates professional tween work from default, floaty animation.
+This kind of scene analysis choosing easing based on the physical and emotional quality of each motion is what separates professional tween work from default, floaty animation.
 
 ---
 
 ## 📊 Tween Properties Reference
 
-Understanding which properties can be tweened — and which can't — prevents wasted effort:
+Understanding which properties can be tweened and which can't prevents wasted effort:
 
-### Classic Tween — Tweeable Properties
+### Classic Tween, Tweeable Properties
 
 | Property | Tweened? | Notes |
 |---------|---------|-------|
 | X/Y Position | Yes | Must be a symbol or grouped object |
-| Scale X/Y | Yes | — |
+| Scale X/Y | Yes |, |
 | Rotation | Yes | CW or CCW direction selectable |
 | Alpha (opacity) | Yes | Via Color Effect in Properties |
 | Tint / Color effect | Yes | Via Color Effect |
-| Skew | Yes | — |
+| Skew | Yes |, |
 | Filter effects | No | Filters are not Classic-tweened |
 
-### Motion Tween — Tweeable Properties
+### Motion Tween, Tweeable Properties
 
 | Property | Tweened? | Notes |
 |---------|---------|-------|
 | X/Y Position | Yes | Auto-generates motion path |
 | Scale X/Y | Yes | Independent X/Y axes in Motion Editor |
 | Rotation | Yes | Per-property bezier curve in Motion Editor |
-| Alpha | Yes | — |
-| Filter effects | Yes | Unlike Classic Tween — filters can be Motion-tweened |
+| Alpha | Yes |, |
+| Filter effects | Yes | Unlike Classic Tween, filters can be Motion-tweened |
 | 3D rotation (Z-axis) | Yes | For HTML5 Canvas 3D transforms |
 
 > 🎯 **What the exam tests:** Motion Tweens can animate filter properties (blur, glow, drop shadow); Classic Tweens cannot. This is a key capability difference.
@@ -344,7 +344,7 @@ Professional Animate users rarely use default easing. Every tween in a polished 
 
 [Module 4: Character Rigging in Animate →](../Module-04-Character-Rigging-Animate/Reading.md)
 
-With tweening mastered, Module 4 applies it to character rigs — symbol hierarchies, bone tools, IK and FK, and the cut-out animation workflow used in commercial production.
+With tweening mastered, Module 4 applies it to character rigs, symbol hierarchies, bone tools, IK and FK, and the cut-out animation workflow used in commercial production.
 
 ## 🏭 Tweening in the Broadcast Pipeline
 
@@ -358,7 +358,7 @@ Understanding how tweening fits into a broader production context prevents surpr
 | Effects animation | Tweens on particle positions, scale, alpha | FX artist |
 | Finishing | Fine-tuned easing on approved scenes | Animator or lead |
 
-In episodic TV animation, a scene might pass through multiple animators — the key animator blocks the major actions; the in-betweener applies Classic Tweens for the intermediate poses; the compositor adds environmental tweens. Each person must be fluent in the same tween vocabulary so handoffs are seamless.
+In episodic TV animation, a scene might pass through multiple animators, the key animator blocks the major actions; the in-betweener applies Classic Tweens for the intermediate poses; the compositor adds environmental tweens. Each person must be fluent in the same tween vocabulary so handoffs are seamless.
 
 ---
 
@@ -374,15 +374,15 @@ Professional Animate animators develop techniques to create quality tweens effic
 | Set default ease in Preferences | Small | Change the default ease value so new tweens start with your preferred setting |
 | Group related tweens in folders | Navigation time | Layer folders keep the Timeline navigable on complex scenes |
 
-**The 80/20 rule for easing:** 80% of the quality improvement comes from adding any easing at all (vs. linear). The remaining 20% — the fine-tuning in the Motion Editor — takes 80% of the time. Know when to stop.
+**The 80/20 rule for easing:** 80% of the quality improvement comes from adding any easing at all (vs. linear). The remaining 20% the fine-tuning in the Motion Editor takes 80% of the time. Know when to stop.
 
 ---
 
 ## 📚 Further Reading
 
 - Adobe Animate User Guide: Motion Tweens and the Motion Editor
-- *The Animator's Survival Kit* — Richard Williams, Chapter 9: Timing for Animators
-- School of Motion: "Motion Tween vs Classic Tween in Adobe Animate" — free article
+- *The Animator's Survival Kit*, Richard Williams, Chapter 9: Timing for Animators
+- School of Motion: "Motion Tween vs Classic Tween in Adobe Animate", free article
 
 ---
 
@@ -401,25 +401,25 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 

@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Security Fundamentals
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CIA Triad — SY0-701</p>
+      <p class="vg-title">CIA Triad, SY0-701</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 7 min · The core 3</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Zero Trust — Planes &amp; Adaptive Identity</p>
+      <p class="vg-title">Zero Trust, Planes &amp; Adaptive Identity</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 11 min · PEP / PE / PA</span>
     </div>
@@ -136,9 +136,9 @@
 | **Professor Messer** | THE Security+ teacher. Free, comprehensive, exam-aligned. Start every module here. |
 | **Dion Training (Jason Dion)** | Polished delivery, scenario-heavy explanations, great practice questions on his site |
 | **NetworkChuck** | Fun, energetic intros to networking and security concepts |
-| **John Hammond** | Hands-on offensive security demos — makes attacks tangible |
-| **IppSec** | HackTheBox walkthroughs — see attacks executed end-to-end |
-| **MyDFIR** | DFIR (digital forensics & IR) tutorials — directly relevant to Module 8 |
+| **John Hammond** | Hands-on offensive security demos, makes attacks tangible |
+| **IppSec** | HackTheBox walkthroughs, see attacks executed end-to-end |
+| **MyDFIR** | DFIR (digital forensics & IR) tutorials, directly relevant to Module 8 |
 | **David Bombal** | Networking + security, with great guest interviews |
 
 ---

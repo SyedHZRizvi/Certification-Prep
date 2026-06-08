@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — E-Commerce
+# 🧪 Practice Exam 2, E-Commerce
 
 > **Conditions:** Set a 70-minute timer. 45 questions. Treat it like the real thing.
 > **Pass mark:** 36/45 (80%)
@@ -73,7 +73,7 @@ D. Advance Ship Notice (ASN)
 
 ### 8. A $40M GMV DTC brand with 3 engineers is debating commercetools. The most accurate recommendation:
 
-A. Stay on Shopify (or similar suite) — composable typically wins above ~$200M GMV with 15+ engineers (Forrester *MACH Adoption Report* 2024)
+A. Stay on Shopify (or similar suite), composable typically wins above ~$200M GMV with 15+ engineers (Forrester *MACH Adoption Report* 2024)
 B. Adopt commercetools immediately for future-proofing
 C. Build from scratch in Rust
 D. Switch to SAP Hybris
@@ -208,7 +208,7 @@ D. Stay on legacy Magento 1
 
 ### 23. Amazon TACoS (Total ACoS) is defined as:
 
-A. Ad Spend / Total Amazon revenue (including organic) — the honest measure
+A. Ad Spend / Total Amazon revenue (including organic), the honest measure
 B. Ad Spend / Ad Revenue (ad-only)
 C. Profit / Revenue
 D. Clicks / Impressions
@@ -254,7 +254,7 @@ D. Canadian GST/HST (federal) plus provincial PST where applicable
 ### 28. The *South Dakota v. Wayfair* Supreme Court decision (2018) overturned which prior doctrine?
 
 A. *Citizens United*
-B. *Quill Corp. v. North Dakota* (1992) — the physical-nexus standard
+B. *Quill Corp. v. North Dakota* (1992), the physical-nexus standard
 C. *Roe v. Wade*
 D. *Brown v. Board*
 
@@ -319,7 +319,7 @@ D. Geo targeting
 A. Mobile users are inherently lower-quality
 B. Block mobile traffic
 C. Raise mobile bids
-D. Mobile UX/speed sub-optimal — investigate Lighthouse mobile, PDP layout, payment-method UX (Apple Pay, Shop Pay)
+D. Mobile UX/speed sub-optimal, investigate Lighthouse mobile, PDP layout, payment-method UX (Apple Pay, Shop Pay)
 
 ---
 
@@ -435,7 +435,7 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 **Q1. Answer: D**
 - **Why D is correct.** CLV ≈ orders × AOV × CM = 3.2 × $68 × 0.38 = $82.66. CLV/CAC = $82.66 / $24 ≈ 3.4:1. That clears the 3:1 healthy threshold (Fader & Hardie, *Customer Centricity*, 2012).
 - **Why the others are wrong.** A under-counts repeat purchases; B uses revenue without margin; C is negative-margin nonsense.
-- **Exam-takeaway.** Always reduce CLV by contribution margin — revenue-only CLV overstates by 2-3x.
+- **Exam-takeaway.** Always reduce CLV by contribution margin, revenue-only CLV overstates by 2-3x.
 
 **Q2. Answer: B**
 - **Why B is correct.** Shopify deprecated checkout.liquid for new customers in June 2024; Checkout Extensibility (React-based app-blocks framework) is now the path.
@@ -465,7 +465,7 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 **Q7. Answer: D**
 - **Why D is correct.** EDI 856 = Advance Ship Notice (ASN). X12 standard.
 - **Why the others are wrong.** PO = 850; Invoice = 810; Catalog = 832.
-- **Exam-takeaway.** Memorize 850 / 855 / 856 / 810 — the four most-tested EDI numbers.
+- **Exam-takeaway.** Memorize 850 / 855 / 856 / 810, the four most-tested EDI numbers.
 
 **Q8. Answer: A**
 - **Why A is correct.** Forrester *MACH Adoption Report* 2024 puts the composable crossover at ~$200M GMV with ~15+ engineers. A $40M brand with 3 engineers will spend 18 months wiring vendors and never ship.
@@ -518,12 +518,12 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** Brand Exclusions = the most-tested PMax setting on every paid-acquisition certification.
 
 **Q18. Answer: B**
-- **Why B is correct.** ECB (Existing Customer Budget) cap at 80% means up to 80% of ASC spend can go to existing customers — retention-heavy.
+- **Why B is correct.** ECB (Existing Customer Budget) cap at 80% means up to 80% of ASC spend can go to existing customers, retention-heavy.
 - **Why the others are wrong.** A confuses with total daily-budget; C inverts the percentage; D is invented.
 - **Exam-takeaway.** Low ECB cap = prospecting; high ECB cap = retention.
 
 **Q19. Answer: B**
-- **Why B is correct.** Spark Ads boost an organic creator post that already has likes/comments/views — inheriting the social proof. Brand-only TikTok creative converts ~50% worse on like-for-like spend per CTC benchmarks 2023-2024.
+- **Why B is correct.** Spark Ads boost an organic creator post that already has likes/comments/views, inheriting the social proof. Brand-only TikTok creative converts ~50% worse on like-for-like spend per CTC benchmarks 2023-2024.
 - **Why the others are wrong.** A/C/D don't match how Spark Ads work in practice.
 - **Exam-takeaway.** Spark Ads' moat = inherited engagement, not production quality.
 
@@ -548,7 +548,7 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** ACoS = ads-only; TACoS = total Amazon revenue.
 
 **Q24. Answer: D**
-- **Why D is correct.** Geo-holdout incrementality testing is the rigorous methodology — match similar markets, hold spend in some, measure delta. Standard in Recast, Meta Robyn, Bain MMM workflows.
+- **Why D is correct.** Geo-holdout incrementality testing is the rigorous methodology, match similar markets, hold spend in some, measure delta. Standard in Recast, Meta Robyn, Bain MMM workflows.
 - **Why the others are wrong.** A trusts attribution that is structurally broken post-ATT; B/C are weak signal.
 - **Exam-takeaway.** Incrementality > attribution for measuring true impact of paid channels.
 
@@ -558,14 +558,14 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** GA4 default = DDA; underlying ML for path-level credit assignment.
 
 **Q26. Answer: C**
-- **Why C is correct.** A $30M B2B brand with 5,000 accounts and negotiated pricing needs company accounts, per-account catalogs, RFQ, and Net 30/60 — Shopify B2B, Adobe Commerce B2B, or BigCommerce B2B Edition fit.
+- **Why C is correct.** A $30M B2B brand with 5,000 accounts and negotiated pricing needs company accounts, per-account catalogs, RFQ, and Net 30/60, Shopify B2B, Adobe Commerce B2B, or BigCommerce B2B Edition fit.
 - **Why the others are wrong.** A/B/D are B2C SMB platforms that lack B2B primitives.
 - **Exam-takeaway.** B2B on a B2C platform = sales reps building spreadsheet workarounds.
 
 **Q27. Answer: D**
 - **Why D is correct.** Canada has federal GST/HST + provincial PST (BC, SK, MB, QC each have provincial variants). Threshold: C$30K small-supplier exemption then mandatory registration.
 - **Why the others are wrong.** A is EU; B is UK; C ignores Canadian tax law.
-- **Exam-takeaway.** Canada = federal + provincial layered tax — provincially nuanced compliance.
+- **Exam-takeaway.** Canada = federal + provincial layered tax, provincially nuanced compliance.
 
 **Q28. Answer: B**
 - **Why B is correct.** *South Dakota v. Wayfair* (2018) overturned *Quill Corp. v. North Dakota* (1992)'s physical-nexus standard, replacing it with economic-nexus.
@@ -573,7 +573,7 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** *Quill* (1992) → *Wayfair* (2018): physical nexus → economic nexus.
 
 **Q29. Answer: B**
-- **Why B is correct.** Bezos's 1997 shareholder letter laid out long-term thinking, customer obsession, and willingness to invest behind both — repeated every year as an appendix. Foundational e-commerce CEO doctrine.
+- **Why B is correct.** Bezos's 1997 shareholder letter laid out long-term thinking, customer obsession, and willingness to invest behind both, repeated every year as an appendix. Foundational e-commerce CEO doctrine.
 - **Why the others are wrong.** A/C/D contradict the letter's explicit emphasis.
 - **Exam-takeaway.** Bezos 1997 = customer obsession + long-term + invest behind it. The most-cited shareholder letter in business history.
 
@@ -598,7 +598,7 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** Always reduce blended ROAS by contribution margin before declaring profitability.
 
 **Q34. Answer: C**
-- **Why C is correct.** Brand Exclusions stop PMax from cannibalizing branded queries — the day-zero PMax setting.
+- **Why C is correct.** Brand Exclusions stop PMax from cannibalizing branded queries, the day-zero PMax setting.
 - **Why the others are wrong.** A/D are necessary but not the protective setting; B does the opposite (enables URL drift).
 - **Exam-takeaway.** Brand Exclusions = the single most-tested PMax answer.
 
@@ -615,7 +615,7 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 **Q37. Answer: D**
 - **Why D is correct.** AEM (Aggregated Event Measurement) limits each verified domain to 8 ranked conversion events. For ATT-opted-out users, only the priority event registers.
 - **Why the others are wrong.** A/B ignore the cap; C breaks measurement entirely.
-- **Exam-takeaway.** Rank Purchase #1, ATC #2, Initiate Checkout #3, then leads/views — priority matters.
+- **Exam-takeaway.** Rank Purchase #1, ATC #2, Initiate Checkout #3, then leads/views, priority matters.
 
 **Q38. Answer: C**
 - **Why C is correct.** DSA applied to VLOPs from February 17, 2024 (Regulation 2022/2065).
@@ -623,17 +623,17 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** Feb 17, 2024 = DSA-for-VLOPs effective date.
 
 **Q39. Answer: D**
-- **Why D is correct.** AliExpress (March 2024 DSA proceeding) teaches that marketplaces face higher regulatory scrutiny because they intermediate third-party sellers — the principle behind §4 of the DSA.
+- **Why D is correct.** AliExpress (March 2024 DSA proceeding) teaches that marketplaces face higher regulatory scrutiny because they intermediate third-party sellers, the principle behind §4 of the DSA.
 - **Why the others are wrong.** A/B/C ignore the marketplace-specific liability mechanism.
 - **Exam-takeaway.** Marketplace = higher regulatory load than pure-play retailer.
 
 **Q40. Answer: B**
-- **Why B is correct.** Visa's Excessive Chargeback Program kicks in at 0.9-1.0% CB ratio. 6.2% is catastrophic — immediate fraud-tool review (Signifyd, Riskified, Stripe Radar) and acquirer relationship review needed.
+- **Why B is correct.** Visa's Excessive Chargeback Program kicks in at 0.9-1.0% CB ratio. 6.2% is catastrophic, immediate fraud-tool review (Signifyd, Riskified, Stripe Radar) and acquirer relationship review needed.
 - **Why the others are wrong.** A/C/D normalize a number that would put the brand into chargeback-program penalties within weeks.
 - **Exam-takeaway.** Visa CB-to-sales threshold = 0.9-1.0%. Above = penalty zone.
 
 **Q41. Answer: A**
-- **Why A is correct.** Repeat probability rises sharply with each completed order — the 2nd order is the largest jump (Bain *Customer Loyalty* research; Klaviyo 2024 benchmarks confirm same shape).
+- **Why A is correct.** Repeat probability rises sharply with each completed order, the 2nd order is the largest jump (Bain *Customer Loyalty* research; Klaviyo 2024 benchmarks confirm same shape).
 - **Why the others are wrong.** B/C/D oversimplify.
 - **Exam-takeaway.** 1st → 2nd order is the highest-leverage lifecycle moment. Design for it.
 
@@ -648,12 +648,12 @@ D. Pre-determined sample size based on baseline CR, MDE (Minimum Detectable Effe
 - **Exam-takeaway.** Marketplace P&L modeling = per-marketplace, never blended.
 
 **Q44. Answer: B**
-- **Why B is correct.** Bezos's 2016 letter codified "Day 2 is stasis, followed by irrelevance, followed by excruciating, painful decline, followed by death" — the discipline of maintaining startup-speed and customer-obsession at scale.
+- **Why B is correct.** Bezos's 2016 letter codified "Day 2 is stasis, followed by irrelevance, followed by excruciating, painful decline, followed by death", the discipline of maintaining startup-speed and customer-obsession at scale.
 - **Why the others are wrong.** A/C/D contradict the explicit thesis.
 - **Exam-takeaway.** "Day 1" = Bezos's anti-stasis discipline; the cultural antidote to large-company decay.
 
 **Q45. Answer: D**
-- **Why D is correct.** Kohavi/Tang/Xu (*Trustworthy Online Controlled Experiments*, 2020, Cambridge) — pre-compute sample size from baseline CR + MDE + α=0.05 + power=0.80. Small CR lifts (1-3%) typically need 10K-50K per variant.
+- **Why D is correct.** Kohavi/Tang/Xu (*Trustworthy Online Controlled Experiments*, 2020, Cambridge), pre-compute sample size from baseline CR + MDE + α=0.05 + power=0.80. Small CR lifts (1-3%) typically need 10K-50K per variant.
 - **Why the others are wrong.** A/B/C are exam-popular but statistically illiterate.
 - **Exam-takeaway.** Always pre-compute. Don't peek; don't stop early; pre-register your sample size.
 

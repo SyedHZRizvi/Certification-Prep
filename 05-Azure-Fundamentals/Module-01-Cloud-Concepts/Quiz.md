@@ -80,8 +80,8 @@ D. Automatically scaling to meet demand
 ---
 
 ### Q10. Reservations in Azure (1- or 3-year commitments) are an example of: *(Analyze)*
-A. CapEx — because you commit upfront
-B. OpEx — they are still a paid-over-time consumption commitment, not an asset purchase
+A. CapEx, because you commit upfront
+B. OpEx, they are still a paid-over-time consumption commitment, not an asset purchase
 C. A hybrid expense
 D. None of the above
 
@@ -138,7 +138,7 @@ D. You pay only at year-end
 ### Q17. Which is TRUE about the cloud and security? *(Analyze)*
 A. Microsoft is responsible for ALL security in Azure
 B. Customers are responsible for ALL security in Azure
-C. Security is shared — Microsoft secures the platform; customers secure their data, identities, and configurations
+C. Security is shared, Microsoft secures the platform; customers secure their data, identities, and configurations
 D. Cloud is inherently less secure than on-premises
 
 ---
@@ -224,19 +224,19 @@ Elasticity = automatic add/remove of capacity to match real-time demand. Scalabi
 With IaaS you control the OS, runtime, middleware, and apps. The provider only manages the hardware and hypervisor.
 
 ### Q3: **C. SaaS**
-M365 is fully managed by Microsoft — you only manage users and data. Classic SaaS.
+M365 is fully managed by Microsoft, you only manage users and data. Classic SaaS.
 
 ### Q4: **B. Paying for compute and storage as you consume them**
 Cloud converts large upfront capital expenses into smaller ongoing operating expenses tied to actual use.
 
 ### Q5: **B. PaaS**
-Azure App Service is the textbook example — you deploy code; Microsoft runs the OS, runtime, and scaling.
+Azure App Service is the textbook example, you deploy code; Microsoft runs the OS, runtime, and scaling.
 
 ### Q6: **B. Adding more VM instances to a VM Scale Set**
 Horizontal = more instances of the same size. Resizing a VM is *vertical*.
 
 ### Q7: **C. Their data and identities**
-The "Always Four": Data, Endpoints, Account/Identity, Access management — always the customer's, regardless of model.
+The "Always Four": Data, Endpoints, Account/Identity, Access management, always the customer's, regardless of model.
 
 ### Q8: **B. Private cloud**
 Strict on-prem-only data residency = private cloud (potentially using Azure Local or Azure Stack Hub for cloud-style management).
@@ -245,7 +245,7 @@ Strict on-prem-only data residency = private cloud (potentially using Azure Loca
 HA = the system stays up when a piece breaks. DR is about region-level recovery; encryption and auto-scale are different concepts.
 
 ### Q10: **B. OpEx**
-Even with a 1- or 3-year commitment, you're paying for *usage over time* — not buying an asset. Still OpEx. A common trap.
+Even with a 1- or 3-year commitment, you're paying for *usage over time*, not buying an asset. Still OpEx. A common trap.
 
 ### Q11: **B. Hybrid cloud**
 On-prem AD synced with Microsoft Entra ID via Entra Connect is a classic hybrid identity pattern.
@@ -253,7 +253,7 @@ On-prem AD synced with Microsoft Entra ID via Entra Connect is a classic hybrid 
 ### Q12: **B. Site Recovery fails over to another region**
 DR = recover from a major event (often region failure). HA is in-region redundancy.
 
-### Q13: **B and C — Data, and Identity & access management**
+### Q13: **B and C, Data, and Identity & access management**
 These two (plus endpoints and accounts) are the "always customer" set. Physical datacenter security and hypervisor patching are always Microsoft's.
 
 ### Q14: **C. Microsoft 365 Outlook**
@@ -287,13 +287,13 @@ The three deployment models are public, private, and hybrid (often plus multi-cl
 Azure Hybrid Benefit lets you bring existing on-prem licenses with Software Assurance, saving up to 85% on certain VMs.
 
 ### Q24: **C. Hybrid cloud (with cloud bursting)**
-"Burst to cloud" — running normally on-prem but extending to public cloud for peaks = hybrid.
+"Burst to cloud", running normally on-prem but extending to public cloud for peaks = hybrid.
 
 ### Q25: **C. Cloud wins on variable/agile workloads**
 The honest answer. Cloud isn't a magic cost button. Microsoft itself trains this.
 
 ### Q26: **B. Data, endpoints, accounts, access management**
-The "always customer" set — independent of IaaS/PaaS/SaaS.
+The "always customer" set, independent of IaaS/PaaS/SaaS.
 
 ---
 

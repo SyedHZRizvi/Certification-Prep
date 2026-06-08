@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-01-Motion-Design-Principles/C
 title: "Module 1 Cheat Sheet: Motion Design Principles"
 ---
 
-# ⚡ Module 1 Cheat Sheet — Motion Design Principles
+# ⚡ Module 1 Cheat Sheet, Motion Design Principles
 
 ## Disney's 12 Principles (Motion Graphics Translation)
 
@@ -149,7 +149,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

@@ -1,11 +1,11 @@
 # Module 8: Leadership & Project Management 👥
 
-> **Why this module matters:** Exam 3 of CPSM is literally titled *Leadership in Supply Management*. This module is the leadership exam. It tests change management, stakeholders, projects, KPIs, and influence — and CPSM heavily weights judgment scenarios. Master this and Exam 3 becomes very gettable.
+> **Why this module matters:** Exam 3 of CPSM is literally titled *Leadership in Supply Management*. This module is the leadership exam. It tests change management, stakeholders, projects, KPIs, and influence, and CPSM heavily weights judgment scenarios. Master this and Exam 3 becomes very gettable.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The entire course so far — leadership is the integrating discipline
-> - [Module 1 — maturity model](../Module-01-Supply-Management-Foundations/Reading.md): you'll be the leader actually moving organizations up that ladder
-> - [Module 4 — SRM](../Module-04-Supplier-Relationship-Management/Reading.md): SRM doesn't happen without leadership
+> - The entire course so far, leadership is the integrating discipline
+> - [Module 1, maturity model](../Module-01-Supply-Management-Foundations/Reading.md): you'll be the leader actually moving organizations up that ladder
+> - [Module 4, SRM](../Module-04-Supplier-Relationship-Management/Reading.md): SRM doesn't happen without leadership
 > - Cross-course: [PMP Modules 5-8](../../02-PMP/Module-05-Agile-Hybrid/Reading.md) for deeper project-management toolkit; [Scrum Master Module 4](../../01-Scrum-Master/Module-04-Events/Reading.md) for the Tuckman-equivalent team dynamics
 > If any of the above are shaky, pause and review before continuing.
 
@@ -69,7 +69,7 @@ John P. Kotter, Konosuke Matsushita Professor of Leadership at Harvard Business 
 
 ## 🔄 ADKAR Model (Prosci)
 
-A more individual-change-focused model — useful when the question is "why won't people change?" Developed by Jeff Hiatt of Prosci (*ADKAR: A Model for Change in Business, Government and Our Community*, Hiatt, 2006, Prosci Learning Center Publications).
+A more individual-change-focused model, useful when the question is "why won't people change?" Developed by Jeff Hiatt of Prosci (*ADKAR: A Model for Change in Business, Government and Our Community*, Hiatt, 2006, Prosci Learning Center Publications).
 
 | Letter | Stage | Key Question |
 |---|---|---|
@@ -103,7 +103,7 @@ Bruce W. Tuckman, "Developmental Sequence in Small Groups" (*Psychological Bulle
 
 Most procurement initiatives fail not from poor strategy but from poor stakeholder management.
 
-### Stakeholder Analysis — The Power/Interest Grid
+### Stakeholder Analysis, The Power/Interest Grid
 
 ```
         HIGH INTEREST
@@ -128,12 +128,12 @@ MONITOR     │   KEEP SATISFIED
 
 🎯 **Exam tip:** When asked who to communicate with first, identify the high-power-high-interest stakeholders.
 
-### RACI — Roles & Responsibilities
+### RACI, Roles & Responsibilities
 
 | Letter | Meaning |
 |---|---|
 | **R** | Responsible (does the work) |
-| **A** | Accountable (owns the outcome — only ONE per task) |
+| **A** | Accountable (owns the outcome, only ONE per task) |
 | **C** | Consulted (input two-way) |
 | **I** | Informed (one-way) |
 
@@ -143,7 +143,7 @@ MONITOR     │   KEEP SATISFIED
 
 ## 🧭 Influence Without Authority
 
-CPSM scenarios constantly test this. Supply managers rarely have direct authority over engineering, marketing, or operations — but must influence them to adopt category strategies.
+CPSM scenarios constantly test this. Supply managers rarely have direct authority over engineering, marketing, or operations, but must influence them to adopt category strategies.
 
 Robert Cialdini's 6 principles of influence (Cialdini, *Influence: The Psychology of Persuasion*, 1984, William Morrow; revised edition 2021; supplementary *Pre-Suasion*, Cialdini, 2016, Simon & Schuster, adds a 7th principle: *unity*):
 
@@ -160,7 +160,7 @@ Robert Cialdini's 6 principles of influence (Cialdini, *Influence: The Psycholog
 
 ---
 
-## 📅 Project Management Basics — The Triple Constraint
+## 📅 Project Management Basics, The Triple Constraint
 
 ```
         SCOPE
@@ -254,7 +254,7 @@ Order generally: 1) executive leadership, 2) affected internal customers (operat
 | **Mentoring** | Long-term, career-focused (life of career) |
 | **Training** | Formal skill instruction |
 | **On-the-job** | Stretch assignments, rotations |
-| **Feedback** | Ongoing — not just annual |
+| **Feedback** | Ongoing, not just annual |
 
 🎯 **Exam tip:** Modern supply leadership invests heavily in team development. Annual training budgets, conference attendance (ISM World), CPSM certification of staff, cross-functional rotations.
 
@@ -280,7 +280,7 @@ Supply rarely acts alone. Common cross-functional partners:
 
 ---
 
-## 📚 The Project Charter — A Worked Example
+## 📚 The Project Charter, A Worked Example
 
 | Field | Example |
 |---|---|
@@ -313,21 +313,21 @@ Supply rarely acts alone. Common cross-functional partners:
 
 ---
 
-## 📊 Case Study — Toyota's "Two Pillars" Supplier Leadership and the Liker Framework (2004-2024)
+## 📊 Case Study, Toyota's "Two Pillars" Supplier Leadership and the Liker Framework (2004-2024)
 
-**Situation.** Jeffrey K. Liker's 2004 book *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer* (McGraw-Hill; 2nd ed. 2020) crystallized what made Toyota distinct: the **"Two Pillars" of continuous improvement (kaizen) and respect for people**, applied with discipline across decades. Liker's 14 principles influenced an entire generation of supply management leaders — not as a checklist but as a leadership philosophy. By 2024, the Toyota Way had become the implicit reference framework for "what good looks like" in procurement leadership at companies ranging from Boeing (post-787) to Caterpillar to UPS.
+**Situation.** Jeffrey K. Liker's 2004 book *The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer* (McGraw-Hill; 2nd ed. 2020) crystallized what made Toyota distinct: the **"Two Pillars" of continuous improvement (kaizen) and respect for people**, applied with discipline across decades. Liker's 14 principles influenced an entire generation of supply management leaders, not as a checklist but as a leadership philosophy. By 2024, the Toyota Way had become the implicit reference framework for "what good looks like" in procurement leadership at companies ranging from Boeing (post-787) to Caterpillar to UPS.
 
 **Decision.** Toyota's supply leadership applied the Two Pillars consistently:
 
 1. **Long supplier-engagement horizons.** Toyota signs 5- and 10-year roadmap agreements with strategic suppliers, even when shorter terms would optimize unit cost. The pillar of *respect for people* is operationalized as "we won't whipsaw our suppliers."
-2. **Embedded supplier-development engineers.** Toyota's Operations Management Consulting Division (OMCD) and the Toyota Supplier Support Center deploy Toyota engineers *into* supplier facilities for months at a time to help them improve — for free. This is *kaizen* extended into the supply base.
-3. **Hoshin Kanri (policy deployment).** Toyota cascades annual strategic objectives from C-suite down to factory floor and back up — a multi-month annual cycle. Supply leaders participate as full owners of category-level objectives.
-4. **Genchi Genbutsu ("go and see").** Toyota executives, including procurement VPs, regularly visit supplier facilities personally. Liker emphasizes this isn't ceremonial — decisions are made at the place the work happens.
-5. **Decision-making by consensus, execution rapidly (*nemawashi*).** Major procurement decisions are pre-socialized broadly before formal approval — slowing the decision but accelerating execution.
+2. **Embedded supplier-development engineers.** Toyota's Operations Management Consulting Division (OMCD) and the Toyota Supplier Support Center deploy Toyota engineers *into* supplier facilities for months at a time to help them improve, for free. This is *kaizen* extended into the supply base.
+3. **Hoshin Kanri (policy deployment).** Toyota cascades annual strategic objectives from C-suite down to factory floor and back up, a multi-month annual cycle. Supply leaders participate as full owners of category-level objectives.
+4. **Genchi Genbutsu ("go and see").** Toyota executives, including procurement VPs, regularly visit supplier facilities personally. Liker emphasizes this isn't ceremonial, decisions are made at the place the work happens.
+5. **Decision-making by consensus, execution rapidly (*nemawashi*).** Major procurement decisions are pre-socialized broadly before formal approval, slowing the decision but accelerating execution.
 
 The Module 4 case study (Toyota chip shortage) is the operational *outcome* of this leadership approach; this case is the *leadership cause*.
 
-**Outcome.** Toyota maintained #1 or #2 global auto sales rank consistently from 2007 through 2024 (a 17-year span), with operating margins consistently above industry average. Industry peers studying Toyota — and there have been dozens of formal academic and consultancy studies — have replicated *processes* (Kanban, Andon cord, jidoka) more readily than *leadership philosophy*. Liker's 2020 second edition documents specifically how the philosophy works under stress (the 2011 earthquake, the 2021 chip shortage, the 2020-2022 EV transition).
+**Outcome.** Toyota maintained #1 or #2 global auto sales rank consistently from 2007 through 2024 (a 17-year span), with operating margins consistently above industry average. Industry peers studying Toyota and there have been dozens of formal academic and consultancy studies have replicated *processes* (Kanban, Andon cord, jidoka) more readily than *leadership philosophy*. Liker's 2020 second edition documents specifically how the philosophy works under stress (the 2011 earthquake, the 2021 chip shortage, the 2020-2022 EV transition).
 
 The Lean Enterprise Institute (LEI), founded by James Womack of MIT's IMVP study (Womack, Jones & Roos, *The Machine That Changed the World*, 1990, Free Press), continues to formalize the Toyota Way for global practitioners. Liker's framework was extended in *The Toyota Way to Lean Leadership* (Liker & Convis, 2011, McGraw-Hill).
 
@@ -336,14 +336,14 @@ The Lean Enterprise Institute (LEI), founded by James Womack of MIT's IMVP study
 - **Style: Transformational + Servant + Situational.** Toyota's purchasing executives don't dictate; they coach, cascade, and consult.
 - **Time horizon: Multi-year.** Quarterly metrics are tools, not goals.
 - **Influence: Genchi Genbutsu + Nemawashi.** Real visibility + broad pre-socialization beats top-down dictation every time.
-- **Continuous improvement (kaizen) is owned by procurement.** Liker's pillar isn't just for the production floor — it applies to the supply base.
+- **Continuous improvement (kaizen) is owned by procurement.** Liker's pillar isn't just for the production floor, it applies to the supply base.
 
-Note three exam-relevant patterns: (1) when a CPSM scenario describes a leader pushing for "rapid top-down change," the right answer almost always invokes *coalition building, vision communication, and removing obstacles* (Kotter) — not raw authority; (2) ADKAR adoption gaps usually trace to *Desire* and *Reinforcement* — both require leadership style, not process; (3) supplier-development decisions (Module 4) flow from leadership philosophy (this module) — they're inseparable.
+Note three exam-relevant patterns: (1) when a CPSM scenario describes a leader pushing for "rapid top-down change," the right answer almost always invokes *coalition building, vision communication, and removing obstacles* (Kotter) not raw authority; (2) ADKAR adoption gaps usually trace to *Desire* and *Reinforcement* both require leadership style, not process; (3) supplier-development decisions (Module 4) flow from leadership philosophy (this module), they're inseparable.
 
 **Discussion (Socratic).**
 - Q1: Toyota's free supplier-development engineering looks like a gift to competitors who also use those suppliers. Defend the strategy from Toyota's perspective. Then identify the structural reason a Western public-company peer (e.g., GM, Ford) might struggle to replicate it.
 - Q2: Liker's Two Pillars look like soft values, but they translate into hard P&L outcomes (the 2021 chip shortage being Exhibit A). Build the 90-second elevator pitch you'd give a new MBA-trained CFO who doesn't believe "respect for people" is a CFO concern.
-- Q3: Hoshin Kanri (policy deployment) is a slow, consensus-driven cycle. In a 2026 environment of rapid AI disruption and shifting tariff regimes, defend the position that Hoshin Kanri is *more* relevant than ever — and then defend that it's *less* relevant. Which would you bring to an ISM World keynote?
+- Q3: Hoshin Kanri (policy deployment) is a slow, consensus-driven cycle. In a 2026 environment of rapid AI disruption and shifting tariff regimes, defend the position that Hoshin Kanri is *more* relevant than ever, and then defend that it's *less* relevant. Which would you bring to an ISM World keynote?
 
 ---
 
@@ -406,13 +406,13 @@ Supply leaders often champion Lean tools (originating from the **Toyota Producti
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
-1. **Kotter vs ADKAR — when each is wrong.** Kotter is organization-level; ADKAR is individual-level. Build the case that a leader who applies *only* Kotter will fail in a specific scenario. Then build the same case for ADKAR-only failure. Which framework has the more dangerous failure mode at scale?
+1. **Kotter vs ADKAR, when each is wrong.** Kotter is organization-level; ADKAR is individual-level. Build the case that a leader who applies *only* Kotter will fail in a specific scenario. Then build the same case for ADKAR-only failure. Which framework has the more dangerous failure mode at scale?
 2. **Transformational leadership vs situational leadership.** This module says CPSM rewards transformational + situational. But these styles can conflict: transformational says "inspire vision"; situational says "adapt to follower maturity, sometimes telling, sometimes delegating." Defend a synthesis or argue one should dominate.
-3. **The 2026 question: AI-driven decision-making and influence-without-authority.** When AI tools recommend supplier decisions, who is the "stakeholder" you must influence — the data-team building the model, the executive trusting the model, or the user accepting the model's output? Build a stakeholder map.
-4. **Crashing the critical path in 2026.** The triple constraint says crash the critical path to compress schedule. With remote/global teams, what's the *real* critical path of a procurement transformation — and how often is it actually the formal Gantt-chart critical path versus a hidden cultural/political one?
-5. **Spend Under Management at 100%?** World-class SUM is 80%+. Defend the case that *100% SUM is harmful* — that some spend should remain outside procurement's direct management for strategic reasons. What kind of spend, and why?
+3. **The 2026 question: AI-driven decision-making and influence-without-authority.** When AI tools recommend supplier decisions, who is the "stakeholder" you must influence, the data-team building the model, the executive trusting the model, or the user accepting the model's output? Build a stakeholder map.
+4. **Crashing the critical path in 2026.** The triple constraint says crash the critical path to compress schedule. With remote/global teams, what's the *real* critical path of a procurement transformation, and how often is it actually the formal Gantt-chart critical path versus a hidden cultural/political one?
+5. **Spend Under Management at 100%?** World-class SUM is 80%+. Defend the case that *100% SUM is harmful*, that some spend should remain outside procurement's direct management for strategic reasons. What kind of spend, and why?
 
 ---
 
@@ -438,7 +438,7 @@ You now know:
 3. 📋 [Cheat-Sheet](./Cheat-Sheet.md)
 4. 📝 Take **Practice-Exam-2** in `Practice-Exams/` (covers Modules 5–8)
 5. 📝 Then **Final-Mock-Exam** under real conditions (165 Q / 180 min)
-6. 🎓 Then start the **[Capstone Project](../Capstone-Project.md)** — your 12-month transformation deliverables
+6. 🎓 Then start the **[Capstone Project](../Capstone-Project.md)**, your 12-month transformation deliverables
 
 > **Where this leads.**
 > - Inside this course: practice exams + Final Mock + Capstone integrate everything.
@@ -449,16 +449,16 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 Kotter, *Leading Change* (1996, HBS Press; updated 2012) — the canonical text
-- 📖 Kotter, "Leading Change: Why Transformation Efforts Fail" — *HBR*, March-April 1995
-- 📖 Chip & Dan Heath, *Switch* (2010, Crown) — practical change-management
-- 📖 Cialdini, *Influence: The Psychology of Persuasion* (1984; revised 2021) — the influence bible
-- 📖 Cialdini, *Pre-Suasion* (2016, Simon & Schuster) — adds 7th principle (unity)
+- 📖 Kotter, *Leading Change* (1996, HBS Press; updated 2012), the canonical text
+- 📖 Kotter, "Leading Change: Why Transformation Efforts Fail", *HBR*, March-April 1995
+- 📖 Chip & Dan Heath, *Switch* (2010, Crown), practical change-management
+- 📖 Cialdini, *Influence: The Psychology of Persuasion* (1984; revised 2021), the influence bible
+- 📖 Cialdini, *Pre-Suasion* (2016, Simon & Schuster), adds 7th principle (unity)
 - 📖 Liker, *The Toyota Way*, 2nd ed. (McGraw-Hill, 2020)
 - 📖 Liker & Convis, *The Toyota Way to Lean Leadership* (2011, McGraw-Hill)
-- 📖 Womack, Jones & Roos, *The Machine That Changed the World* (1990, Free Press) — MIT IMVP study
+- 📖 Womack, Jones & Roos, *The Machine That Changed the World* (1990, Free Press), MIT IMVP study
 - 📖 Hiatt, *ADKAR: A Model for Change in Business, Government and Our Community* (2006, Prosci)
-- 📖 *PMBOK Guide*, 7th ed. (PMI, 2021) — project management reference
+- 📖 *PMBOK Guide*, 7th ed. (PMI, 2021), project management reference
 - 📖 *The Lean Six Sigma Pocket Toolbook* by Michael George (2005, McGraw-Hill)
-- 📖 Tuckman, "Developmental Sequence in Small Groups" — *Psychological Bulletin*, 1965
-- 📖 ISM Mastery Model — leadership domain
+- 📖 Tuckman, "Developmental Sequence in Small Groups", *Psychological Bulletin*, 1965
+- 📖 ISM Mastery Model, leadership domain

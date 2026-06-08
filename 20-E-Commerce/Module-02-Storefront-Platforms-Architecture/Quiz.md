@@ -56,7 +56,7 @@ D. 2024
 
 ### Q7. Headless and composable commerce are: *(Understand)*
 A. Synonyms
-B. Different — headless decouples frontend from one engine; composable composes multiple best-of-breed services
+B. Different, headless decouples frontend from one engine; composable composes multiple best-of-breed services
 C. The same architecture
 D. Both monolithic patterns
 
@@ -192,7 +192,7 @@ D. 100%+
 
 ### Q24. The most common mistake when picking a platform is: *(Evaluate)*
 A. Choosing too cheaply
-B. Replatforming a $20M brand to enterprise platforms "because we'll scale" — paying $1-2M before reaching the scale
+B. Replatforming a $20M brand to enterprise platforms "because we'll scale", paying $1-2M before reaching the scale
 C. Picking too late
 D. Choosing too many features
 
@@ -226,7 +226,7 @@ Hydrogen is the framework (React + Remix, GA Jan 2023); Oxygen is the hosting (o
 ### Q6: **B. 2020**
 The MACH Alliance was founded by commercetools, Contentstack, EPAM, and Valtech in 2020.
 
-### Q7: **B. Different — headless decouples frontend from one engine; composable composes multiple best-of-breed services**
+### Q7: **B. Different, headless decouples frontend from one engine; composable composes multiple best-of-breed services**
 Headless ≠ composable. You can be headless (Shopify Hydrogen) without being composable (still uses Shopify's monolithic engine).
 
 ### Q8: **B. Demandware**
@@ -251,13 +251,13 @@ Magento Open Source is GPL-3 licensed. Adobe Commerce (the commercial version) h
 Online Store 2.0 (2021) introduced sections-everywhere model and JSON templates, replacing the old vintage themes architecture.
 
 ### Q15: **C. Strategic tech differentiation + best-of-breed across the stack**
-Composable's value isn't lower cost — it's higher. The value is best-of-breed components + replace-any-component flexibility.
+Composable's value isn't lower cost, it's higher. The value is best-of-breed components + replace-any-component flexibility.
 
 ### Q16: **B. Composable / MACH-aligned commerce engine**
 commercetools is the most-adopted MACH-Alliance composable commerce engine. Munich-based, founded 2006.
 
 ### Q17: **B. Stay on Shopify and migrate to Hydrogen + Markets + B2B**
-Allbirds did NOT replatform. They evolved within Shopify — refactored theme onto Online Store 2.0, adopted Hydrogen for key pages, used Shopify Markets for international, stayed on Shopify B2B module.
+Allbirds did NOT replatform. They evolved within Shopify, refactored theme onto Online Store 2.0, adopted Hydrogen for key pages, used Shopify Markets for international, stayed on Shopify B2B module.
 
 ### Q18: **A. PWA Studio**
 PWA Studio (React + Apollo on Adobe Commerce's GraphQL API) is Adobe Commerce's headless framework.
@@ -277,7 +277,7 @@ Headless lets you use any frontend framework and serve via edge networks, optimi
 ### Q23: **B. 4-12%**
 Shopify's 2024 commerce trends report puts Shop Pay's conversion lift at 4-12% above industry baseline checkout. Baymard 2024 ranks it as the fastest checkout on the internet.
 
-### Q24: **B. Replatforming a $20M brand to enterprise platforms "because we'll scale" — paying $1-2M before reaching the scale**
+### Q24: **B. Replatforming a $20M brand to enterprise platforms "because we'll scale", paying $1-2M before reaching the scale**
 The most expensive mistake. By the time scale arrives, requirements have changed and the platform may no longer fit.
 
 ### Q25: **C. SAQ D (full burden)**

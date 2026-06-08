@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Two-Tower Models — Modern Recsys</p>
+      <p class="vg-title">Two-Tower Models, Modern Recsys</p>
       <p class="vg-creator">Google TFRS</p>
       <span class="vg-duration">⏱ 25 min · Embeddings + ANN</span>
     </div>
@@ -145,9 +145,9 @@
 ## ✅ After watching
 
 1. What is the cost-of-churn estimate for Netflix's recommendation system?
-2. Name the 3 bandit algorithms — which is the production default?
+2. Name the 3 bandit algorithms, which is the production default?
 3. What does matrix factorization decompose?
-4. Two-tower model — what are the two towers?
+4. Two-tower model, what are the two towers?
 5. List 3 recsys metrics that matter beyond NDCG.
 
 If you can answer all 5 in under 8 minutes, you're ready for the [Quiz](./Quiz.md).

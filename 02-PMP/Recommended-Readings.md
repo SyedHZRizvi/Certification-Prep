@@ -1,6 +1,6 @@
-# Recommended Readings — PMP (Project Management Professional)
+# Recommended Readings, PMP (Project Management Professional)
 
-> The PMP exam is the floor of what a serious project manager should know. The reading list below is what the floor *covers* and what lies *above* the floor — the literature that 8 of the top 10 corporate PM curricula draw from, plus the resources that have most influenced the modern profession. Treat this as a working bibliography for the next 3–5 years.
+> The PMP exam is the floor of what a serious project manager should know. The reading list below is what the floor *covers* and what lies *above* the floor, the literature that 8 of the top 10 corporate PM curricula draw from, plus the resources that have most influenced the modern profession. Treat this as a working bibliography for the next 3–5 years.
 
 Each entry includes a 1–2 sentence note on why it's worth your time and *when* in your PMP journey you should engage with it.
 
@@ -8,17 +8,17 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 
 ## Canonical Textbooks (read at least the first three)
 
-### 1. *A Guide to the Project Management Body of Knowledge (PMBOK Guide) — Seventh Edition*
+### 1. *A Guide to the Project Management Body of Knowledge (PMBOK Guide), Seventh Edition*
 **Author/Publisher:** Project Management Institute (PMI). **Year:** 2021. **ISBN:** 978-1628256642.
 - *Why:* The official PMI reference for the current PMP exam (since 2021). Restructured around 8 Performance Domains + 12 Principles; replaces PMBOK 6's process-heavy approach.
 - *When:* Read sections referenced in each module of this course in parallel with the course itself. Re-skim the entire Guide in the final week before the exam.
 
-### 2. *A Guide to the Project Management Body of Knowledge (PMBOK Guide) — Sixth Edition*
+### 2. *A Guide to the Project Management Body of Knowledge (PMBOK Guide), Sixth Edition*
 **Author/Publisher:** Project Management Institute (PMI). **Year:** 2017. **ISBN:** 978-1628251845.
 - *Why:* PMBOK 6 contains the detailed process-group/knowledge-area framing (the 5×10 grid) that PMBOK 7 abstracted away. The current PMP still tests these concepts (charter, baselines, CCB, change-control sequence) heavily; PMBOK 6 is the most-organized reference for them.
 - *When:* Keep open during Module 03 (Process Domain) and Module 06 (EVM). Use the §4 Integration Management and §7 Cost Management sections as your formula reference.
 
-### 3. *PMP Exam Prep — Eleventh Edition* (Rita Mulcahy)
+### 3. *PMP Exam Prep, Eleventh Edition* (Rita Mulcahy)
 **Author:** Rita Mulcahy. **Publisher:** RMC Publications. **Year:** 2023 (11th ed.; updated for current ECO). **ISBN:** 978-1943704460.
 - *Why:* The most-cited PMP prep book of the last two decades. Strong on situational reasoning ("what would the PM do?"). Mulcahy's heuristics for eliminating wrong answers are widely adopted.
 - *When:* Read in the final 2–4 weeks before the exam, after you've absorbed this course. Take the chapter quizzes; review the explanations.
@@ -28,7 +28,7 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 - *Why:* Ramdayal's book is the companion to his Udemy course (#1 PMP prep course by enrollment for 5+ years). His agile/PMP-2021 coverage is especially clear.
 - *When:* Pair with the Udemy course in weeks 6–10 of study. The combined approach has the best track record for first-attempt pass.
 
-### 5. *Project Management: A Systems Approach to Planning, Scheduling, and Controlling — 13th Edition* (Harold Kerzner)
+### 5. *Project Management: A Systems Approach to Planning, Scheduling, and Controlling, 13th Edition* (Harold Kerzner)
 **Publisher:** Wiley. **Year:** 2022. **ISBN:** 978-1119805465.
 - *Why:* Kerzner's textbook is the canonical engineering-school PM reference. Heavy on systems thinking, EVM, governance, and case studies. Used in graduate-level PM programs at Carnegie Mellon, Cornell, and many engineering schools.
 - *When:* Read between exam prep and your first major real-world project assignment. Not strictly required for PMP, but elevates your thinking beyond the exam.
@@ -79,7 +79,7 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 
 ### 14. *How Big Things Get Done* (Bent Flyvbjerg & Dan Gardner)
 **Publisher:** Currency. **Year:** 2023. **ISBN:** 978-0593239513.
-- *Why:* Flyvbjerg's 2023 popular-audience treatment of the megaprojects research. Includes updated 2020s data and prescriptions ("think slow, act fast" — the planning-fast/build-slow inversion).
+- *Why:* Flyvbjerg's 2023 popular-audience treatment of the megaprojects research. Includes updated 2020s data and prescriptions ("think slow, act fast", the planning-fast/build-slow inversion).
 - *When:* Read in weeks 8–12 of PMP prep, or shortly after your real PMP. Highly readable.
 
 ### 15. *Standish Group CHAOS Report 2024* (Standish Group)
@@ -119,12 +119,12 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 
 ### 22. *Accelerate: The Science of Lean Software and DevOps* (Forsgren, Humble & Kim)
 **Publisher:** IT Revolution. **Year:** 2018. **ISBN:** 978-1942788331.
-- *Why:* The DORA (DevOps Research and Assessment) metrics — deployment frequency, lead time for changes, change failure rate, mean time to restore — that have replaced "velocity" as the right delivery dashboard in modern software PM.
+- *Why:* The DORA (DevOps Research and Assessment) metrics deployment frequency, lead time for changes, change failure rate, mean time to restore that have replaced "velocity" as the right delivery dashboard in modern software PM.
 - *When:* During Module 05 (Agile & Hybrid).
 
 ### 23. *Out of the Crisis* (W. Edwards Deming)
 **Publisher:** MIT Press (Center for Advanced Engineering Studies). **Year:** 1982. **ISBN:** 978-0911379013.
-- *Why:* Deming's 14 Points for Management; the most influential 20th-century work on systemic quality and management. ~85% of project problems are *system* problems — Deming's foundational claim.
+- *Why:* Deming's 14 Points for Management; the most influential 20th-century work on systemic quality and management. ~85% of project problems are *system* problems, Deming's foundational claim.
 - *When:* Slowly, over a year. Foundational reading for any PM.
 
 ### 24. *The Toyota Way* (Jeffrey K. Liker)
@@ -156,7 +156,7 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 - *Why:* PMI members get access to a deep library of Disciplined Agile webinars, white papers, and templates. The free monthly webinars are excellent for staying current.
 - *When:* As a member benefit during and after PMP prep.
 
-### 29. *Mike Clayton — OnlinePMCourses.com*
+### 29. *Mike Clayton, OnlinePMCourses.com*
 **Creator:** Mike Clayton. **Year:** ongoing.
 - *Why:* Independent practitioner's blog and YouTube channel with deep-dive videos on individual PMP topics (EVM, contracts, risk). The "explainer" library is excellent for spot-clarification.
 - *When:* Throughout study.
@@ -187,7 +187,7 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 
 ### 34. *Harvard Business School Online: Strategy Execution* (HBS Online)
 **Platform:** HBS Online (paid: ~$1,750 for the full 8-week course).
-- *Why:* Not free, but worth listing because it's the single best executive-level treatment of how to actually *execute* on a strategic project — the single best executive-level treatment of general management and project leadership.
+- *Why:* Not free, but worth listing because it's the single best executive-level treatment of how to actually *execute* on a strategic project, the single best executive-level treatment of general management and project leadership.
 - *When:* For senior PMs in the 1–3 years after passing the PMP.
 
 ### 35. *PMI Educational Foundation / Earned Value Management Practice Standard (free PDF for PMI members)*
@@ -195,7 +195,7 @@ Each entry includes a 1–2 sentence note on why it's worth your time and *when*
 - *Why:* The definitive free reference on EVM, deeper than PMBOK's coverage. Critical for Module 06.
 - *When:* During Module 06 + EVM-question drilling.
 
-### 36. *FAR (Federal Acquisition Regulation) Parts 16 and 37 — public domain*
+### 36. *FAR (Federal Acquisition Regulation) Parts 16 and 37, public domain*
 **Publisher:** US Government. **URL:** acquisition.gov.
 - *Why:* The legal foundation for the contract families (FFP, FPIF, FP-EPA, CPFF, CPIF, CPAF, T&M) tested in Module 09. Reading the actual regulation cement the differences in your head.
 - *When:* During Module 09.

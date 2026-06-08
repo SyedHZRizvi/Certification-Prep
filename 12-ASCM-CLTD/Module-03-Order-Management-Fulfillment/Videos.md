@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ATP vs CTP — Available to Promise</p>
+      <p class="vg-title">ATP vs CTP, Available to Promise</p>
       <p class="vg-creator">GreyCampus</p>
       <span class="vg-duration">⏱ 9 min · Worked example</span>
     </div>
@@ -153,7 +153,7 @@
 ## ✅ After watching
 
 1. List the 10 OTC steps.
-2. ATP vs CTP — give an example of each.
+2. ATP vs CTP, give an example of each.
 3. Calculate perfect order at 92% × 96% × 95% × 99%.
 4. Which picking strategy fits 500 small e-com orders?
 5. What is OTIF and who imposes it?

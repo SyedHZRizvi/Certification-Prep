@@ -1,30 +1,30 @@
 # Module 3: Exploratory Data Analysis & Feature Engineering 🔬
 
-> **Why this module matters:** Domain 2 of the MLS-C01 exam is **EDA — 24%** of every question. More exam weight than Data Engineering, more than MLOps. Feature engineering is also the single highest-leverage activity in production ML: in Kaggle competitions and real-world projects alike, a thoughtful feature set on a mediocre algorithm beats a brilliant algorithm on raw features. This module makes you fluent in the statistical reasoning, the cleaning techniques, the encoding strategies, the dimensionality-reduction tricks, and the AWS-specific tools (Data Wrangler, QuickSight, Clarify data bias) you need.
+> **Why this module matters:** Domain 2 of the MLS-C01 exam is **EDA, 24%** of every question. More exam weight than Data Engineering, more than MLOps. Feature engineering is also the single highest-leverage activity in production ML: in Kaggle competitions and real-world projects alike, a thoughtful feature set on a mediocre algorithm beats a brilliant algorithm on raw features. This module makes you fluent in the statistical reasoning, the cleaning techniques, the encoding strategies, the dimensionality-reduction tricks, and the AWS-specific tools (Data Wrangler, QuickSight, Clarify data bias) you need.
 
 > **Prerequisites for this module.** Modules 1 and 2 of this course. Helpful background:
 > - Comfort with pandas and NumPy at the level of `df.describe()`, `df.groupby()`, `df.merge()`
 > - One semester of statistics (mean, median, variance, percentiles, normal distribution, hypothesis testing)
-> - Basic linear algebra (vectors, dot product, eigenvectors) — 3Blue1Brown's *Essence of Linear Algebra* episode 14 (eigenvectors) is enough for PCA
+> - Basic linear algebra (vectors, dot product, eigenvectors), 3Blue1Brown's *Essence of Linear Algebra* episode 14 (eigenvectors) is enough for PCA
 > - If you've used scikit-learn's `StandardScaler` or `OneHotEncoder`, you're ahead
 
 ---
 
 ## 🍕 A Story: Airbnb's First Dynamic-Pricing Model That Failed
 
-Meet Mei. She joined Airbnb's pricing team in 2017 and was tasked with building a model to recommend optimal listing prices. The data was magnificent: 100M+ bookings, 5M+ active hosts, 100+ raw fields per listing — distance to subway, number of bathrooms, host response rate, photos count, calendar availability.
+Meet Mei. She joined Airbnb's pricing team in 2017 and was tasked with building a model to recommend optimal listing prices. The data was magnificent: 100M+ bookings, 5M+ active hosts, 100+ raw fields per listing, distance to subway, number of bathrooms, host response rate, photos count, calendar availability.
 
-Her first model — gradient boosting on raw features — predicted prices with **R² = 0.38** on holdout. Disappointing. She iterated for 3 weeks: more trees, deeper trees, tuned learning rate. The needle barely moved.
+Her first model gradient boosting on raw features predicted prices with **R² = 0.38** on holdout. Disappointing. She iterated for 3 weeks: more trees, deeper trees, tuned learning rate. The needle barely moved.
 
 Then a senior engineer reviewed her data. He found:
 
 - 47% of listings had `bathrooms = 0` (data entry default; truly missing)
 - Photo count was log-skewed: 5 photos median, but power-law tail to 200 (some hosts dumped every shot)
 - `host_response_rate` was a string ("87%" with NaN for new hosts)
-- `latitude / longitude` were *raw* — model could not infer "near subway" without the engineering of a `distance_to_nearest_subway` feature
-- Listings in tourist-dense neighbourhoods were 28× more abundant than rural — the model overfit cities and ignored rural pricing
+- `latitude / longitude` were *raw*, model could not infer "near subway" without the engineering of a `distance_to_nearest_subway` feature
+- Listings in tourist-dense neighbourhoods were 28× more abundant than rural, the model overfit cities and ignored rural pricing
 
-Two weeks of feature engineering — proper imputation, log transforms, derived "distance to amenity" features, target encoding of neighbourhood, careful stratified splits — and R² climbed from 0.38 to 0.71. **No algorithm change.** Just better features and cleaner data.
+Two weeks of feature engineering proper imputation, log transforms, derived "distance to amenity" features, target encoding of neighbourhood, careful stratified splits and R² climbed from 0.38 to 0.71. **No algorithm change.** Just better features and cleaner data.
 
 That is what this module teaches. The hardest, slowest, and most leveraged part of ML is what happens between raw data and the `.fit()` call.
 
@@ -64,7 +64,7 @@ Before any transformation, answer:
 
 ---
 
-## 2️⃣ Visualising The Data — The Standard Plot Set
+## 2️⃣ Visualising The Data, The Standard Plot Set
 
 | Plot | When | What you learn |
 |------|------|----------------|
@@ -83,18 +83,18 @@ Before any transformation, answer:
 
 🎯 **AWS-specific tooling** for EDA:
 
-- **SageMaker Data Wrangler** — UI-based EDA + transforms; produces a reproducible flow file
-- **Amazon QuickSight** — BI / dashboard tool; can produce histograms, scatter, heatmaps without a notebook
-- **Amazon Q in QuickSight** — natural-language EDA ("show me sales by region for last 30 days")
-- **SageMaker Studio notebooks** — full pandas / matplotlib / seaborn / Plotly
+- **SageMaker Data Wrangler**, UI-based EDA + transforms; produces a reproducible flow file
+- **Amazon QuickSight**, BI / dashboard tool; can produce histograms, scatter, heatmaps without a notebook
+- **Amazon Q in QuickSight**, natural-language EDA ("show me sales by region for last 30 days")
+- **SageMaker Studio notebooks**, full pandas / matplotlib / seaborn / Plotly
 
 🚨 **Trap.** *"Quickly check pairwise correlations across 200 numeric features."* → **Correlation heatmap**, then drop one of each pair with `|r| > 0.95` to reduce multicollinearity. Pair plots break at 200 features.
 
 ---
 
-## 3️⃣ Cleaning — Missing Values, Outliers, Duplicates
+## 3️⃣ Cleaning, Missing Values, Outliers, Duplicates
 
-### Missing values — the 4 strategies
+### Missing values, the 4 strategies
 
 | Strategy | When | Caveat |
 |----------|------|--------|
@@ -102,27 +102,27 @@ Before any transformation, answer:
 | **Drop columns** | >70-80% of column is missing AND not crucial | Decide threshold up front; document |
 | **Impute (mean / median / mode)** | Missing-at-random and moderate fraction | Use median for skewed; mode for categorical; degrades variance |
 | **Predictive imputation** (KNN, MICE, model-based) | High-stakes / few features missing | Slower; better than naive imputation |
-| **Sentinel value** (e.g. -1 or "Unknown") | Tree models can handle missing as a distinct category | DON'T do this for linear models — leaks weird signal |
-| **Indicator column** | "is_missing" plus imputed value | Often the BEST for tree models — preserves the signal that *missingness itself* may be informative |
+| **Sentinel value** (e.g. -1 or "Unknown") | Tree models can handle missing as a distinct category | DON'T do this for linear models, leaks weird signal |
+| **Indicator column** | "is_missing" plus imputed value | Often the BEST for tree models, preserves the signal that *missingness itself* may be informative |
 
 ### When missingness IS the signal
 
 Missing data is rarely random:
 
-- **MCAR (missing completely at random)** — true random; drop or impute is fine
-- **MAR (missing at random)** — depends on observed columns; impute conditional on those columns
-- **MNAR (missing not at random)** — depends on the unobserved value itself (people who didn't share salary often have higher/lower salaries); imputation biases the model
+- **MCAR (missing completely at random)**, true random; drop or impute is fine
+- **MAR (missing at random)**, depends on observed columns; impute conditional on those columns
+- **MNAR (missing not at random)**, depends on the unobserved value itself (people who didn't share salary often have higher/lower salaries); imputation biases the model
 
-🎯 **Exam pattern.** *"Customer churn data has `last_login_date = NULL` for 23% of records. Drop, impute, or treat as informative?"* → Treat as **informative** — NULL might mean "never logged in", which is itself a churn signal. Add `last_login_missing` indicator + impute date.
+🎯 **Exam pattern.** *"Customer churn data has `last_login_date = NULL` for 23% of records. Drop, impute, or treat as informative?"* → Treat as **informative**, NULL might mean "never logged in", which is itself a churn signal. Add `last_login_missing` indicator + impute date.
 
-### Outlier detection — the canonical methods
+### Outlier detection, the canonical methods
 
 | Method | How | When |
 |--------|-----|------|
 | **IQR rule** | `Q1 - 1.5·IQR` to `Q3 + 1.5·IQR`; outside = outlier | Univariate, quick |
 | **Z-score** | `|z| > 3` is outlier | Assumes normal distribution |
 | **Modified Z-score (MAD)** | Robust version using median absolute deviation | Non-normal distributions |
-| **Isolation Forest** | Random partitioning — anomalies isolated quickly | Multivariate, scalable |
+| **Isolation Forest** | Random partitioning, anomalies isolated quickly | Multivariate, scalable |
 | **Local Outlier Factor (LOF)** | Density-based | Clusters of varying density |
 | **One-Class SVM** | Boundary around "normal" | Small to medium data |
 | **SageMaker Random Cut Forest** | AWS native; built for streaming + tabular | Production multivariate anomaly |
@@ -151,7 +151,7 @@ df = df.drop_duplicates(subset=['user_id', 'timestamp'], keep='last')
 
 ---
 
-## 4️⃣ Feature Engineering — The Highest Leverage Step
+## 4️⃣ Feature Engineering, The Highest Leverage Step
 
 Feature engineering = creating new columns from existing ones. This is where domain knowledge wins.
 
@@ -160,9 +160,9 @@ Feature engineering = creating new columns from existing ones. This is where dom
 | Technique | When | Caveat |
 |-----------|------|--------|
 | **One-hot encoding** | Few distinct categories (<50), no ordinal relation | Explodes feature count; use sparse representation |
-| **Label / ordinal encoding** | Categories have natural order (e.g. T-shirt: S/M/L/XL) | DON'T use on nominal data with linear models — implies ordering |
+| **Label / ordinal encoding** | Categories have natural order (e.g. T-shirt: S/M/L/XL) | DON'T use on nominal data with linear models, implies ordering |
 | **Binary / hash encoding** | High-cardinality (1000s of categories) | Some collisions; trades exactness for size |
-| **Target / mean encoding** | High-cardinality with clear target relationship (e.g. zip code → mean income) | **Leakage risk** — encode inside CV folds! |
+| **Target / mean encoding** | High-cardinality with clear target relationship (e.g. zip code → mean income) | **Leakage risk**, encode inside CV folds! |
 | **Frequency / count encoding** | High-cardinality | Captures only popularity, not relationship to target |
 | **Embedding (learned)** | Tens of thousands of categories + neural model | Best quality; trained alongside the model |
 
@@ -183,7 +183,7 @@ Feature engineering = creating new columns from existing ones. This is where dom
 
 🎯 **Exam pattern.** *"Income column is heavily right-skewed (median $50K, max $5M)."* → **log1p transform**, then `StandardScaler`. Or **RobustScaler**. Or **quantile transform**.
 
-🚨 **Trap.** *"Always scale numeric features."* → **Not strictly true**. Tree-based models (XGBoost, Random Forest, LightGBM) are scale-invariant — scaling does no harm but also no good. Linear / DL / distance-based models (SVM, K-Means, KNN) require scaling.
+🚨 **Trap.** *"Always scale numeric features."* → **Not strictly true**. Tree-based models (XGBoost, Random Forest, LightGBM) are scale-invariant, scaling does no harm but also no good. Linear / DL / distance-based models (SVM, K-Means, KNN) require scaling.
 
 ### Time / date features (almost always derived)
 
@@ -193,24 +193,24 @@ From a raw timestamp, you can derive 10+ features:
 - `is_weekend`, `is_holiday`, `hours_since_last_event`, `time_of_day_bucket`
 - `cyclical` encoding: `sin(2π·month/12), cos(2π·month/12)` for tree-models that miss the wrap-around
 
-### Text features (preview — Module 6 deepens)
+### Text features (preview, Module 6 deepens)
 
-- **Bag-of-Words / TF-IDF** — sparse counts
-- **Character / word n-grams** — capture sub-word patterns
-- **Embeddings** — Word2Vec, GloVe, BlazingText, Sentence-BERT, OpenAI/Anthropic via Bedrock
-- **Keyword extraction** — Amazon Comprehend key phrases
+- **Bag-of-Words / TF-IDF**, sparse counts
+- **Character / word n-grams**, capture sub-word patterns
+- **Embeddings**, Word2Vec, GloVe, BlazingText, Sentence-BERT, OpenAI/Anthropic via Bedrock
+- **Keyword extraction**, Amazon Comprehend key phrases
 
-### Image features (preview — Module 5)
+### Image features (preview, Module 5)
 
 - **Resizing / cropping / padding** to a uniform size
 - **Data augmentation** (rotate, flip, colour jitter, MixUp, CutMix)
-- **Pre-trained embeddings** — extract last-layer features from ResNet50 / EfficientNet via SageMaker
+- **Pre-trained embeddings**, extract last-layer features from ResNet50 / EfficientNet via SageMaker
 
 ### Interactions and aggregations
 
-- **Polynomial features** — `x1 × x2`, `x1²` (sometimes useful for linear models)
-- **Group aggregations** — `count`, `mean`, `std`, `min`, `max` of a numeric grouped by a categorical (e.g. mean order value per customer)
-- **Time-windowed aggregations** — 7-day rolling mean (Feature Store's specialty)
+- **Polynomial features**, `x1 × x2`, `x1²` (sometimes useful for linear models)
+- **Group aggregations**, `count`, `mean`, `std`, `min`, `max` of a numeric grouped by a categorical (e.g. mean order value per customer)
+- **Time-windowed aggregations**, 7-day rolling mean (Feature Store's specialty)
 
 ### Domain-derived features (the real money)
 
@@ -221,15 +221,15 @@ In Airbnb's case:
 - `host_tenure_days` from `host_since`
 - `availability_rate_30d`
 
-These cannot be auto-derived — they require domain knowledge.
+These cannot be auto-derived, they require domain knowledge.
 
 ---
 
-## 5️⃣ Dimensionality Reduction — When Features Are TOO Many
+## 5️⃣ Dimensionality Reduction, When Features Are TOO Many
 
 When you have hundreds or thousands of features, model performance and training time both suffer. Three families:
 
-### PCA — Principal Component Analysis
+### PCA, Principal Component Analysis
 
 | Property | Detail |
 |----------|--------|
@@ -243,7 +243,7 @@ When you have hundreds or thousands of features, model performance and training 
 
 🚨 **Trap.** PCA assumes **linear** relationships. For non-linear structure, use t-SNE / UMAP.
 
-### t-SNE and UMAP — Non-Linear Visualisation
+### t-SNE and UMAP, Non-Linear Visualisation
 
 | Tool | Strength | Caveat |
 |------|----------|--------|
@@ -252,7 +252,7 @@ When you have hundreds or thousands of features, model performance and training 
 
 🎯 **Use t-SNE / UMAP ONLY for visualisation**, NOT as a feature transform input to a model. They are stochastic and not deterministic enough.
 
-### Autoencoders & embeddings — learned compression
+### Autoencoders & embeddings, learned compression
 
 For non-linear structure that you want to feed back into a model, use a neural autoencoder. SageMaker supports this through TensorFlow / PyTorch containers. **Object2Vec** is a SageMaker built-in for learning embeddings.
 
@@ -271,7 +271,7 @@ PCA *transforms* features (loses interpretability); feature selection *keeps* or
 
 ---
 
-## ⚖️ Class Imbalance — The Five Treatments
+## ⚖️ Class Imbalance, The Five Treatments
 
 When the positive class is <10% (or <1%), models default to predicting the majority. Five fixes:
 
@@ -290,7 +290,7 @@ When the positive class is <10% (or <1%), models default to predicting the major
 
 ---
 
-## 🤖 SageMaker Data Wrangler — The MLS-C01 Pet Tool
+## 🤖 SageMaker Data Wrangler, The MLS-C01 Pet Tool
 
 Data Wrangler is the visual data-prep tool inside SageMaker Studio. The exam will ask about it directly.
 
@@ -357,7 +357,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 
 ---
 
-## 📖 Case Study — Stripe Radar's Feature Pipeline
+## 📖 Case Study, Stripe Radar's Feature Pipeline
 
 **Situation.** Stripe processes hundreds of billions of payment events. Their Radar fraud-detection model relies on ~1,200 features derived from a transaction, the cardholder's history, the merchant's history, the device, and recent network behaviour. Some features must be computed in <10 ms for real-time scoring; others are batch-computed nightly.
 
@@ -370,15 +370,15 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 - **Model training** reads the offline store with time-travel; **inference** reads the online store
 
 **Key feature engineering tricks reported.**
-- **Velocity features** — same card, same merchant, same IP within X seconds
-- **Embedding features** — merchant and device embeddings learned via supervised loss
-- **Network features** — graph features (shared device, shared IP)
-- **Counterfactual features** — what would the average customer at this merchant spend?
+- **Velocity features**, same card, same merchant, same IP within X seconds
+- **Embedding features**, merchant and device embeddings learned via supervised loss
+- **Network features**, graph features (shared device, shared IP)
+- **Counterfactual features**, what would the average customer at this merchant spend?
 - **Aggregations** at multiple time windows (1 min, 1 hour, 24 h, 7 days, 30 days)
 
 **Outcome.** Radar block rate "improved by ~30%" with this feature engineering work alone (no model architecture change), per Stripe's 2023 reports.
 
-**Lesson for the exam.** The vast majority of model lift came from **features**, not algorithms. MLS-C01 questions will paraphrase this: "**which is the BEST way to improve the model?**" — often the answer is feature engineering, not a fancier algorithm.
+**Lesson for the exam.** The vast majority of model lift came from **features**, not algorithms. MLS-C01 questions will paraphrase this: "**which is the BEST way to improve the model?**", often the answer is feature engineering, not a fancier algorithm.
 
 ---
 
@@ -391,7 +391,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 | "Always remove outliers" | Outliers can be the *signal* (fraud). Decide based on domain. |
 | "One-hot encoding is fine for any categorical" | Explodes with high cardinality (zip codes, product IDs). Use hashing, target encoding, or embeddings. |
 | "PCA preserves all information" | It preserves *variance*. Information important for prediction may be in low-variance directions. |
-| "SMOTE on the whole dataset is fine" | NO — leakage. SMOTE only on training fold. |
+| "SMOTE on the whole dataset is fine" | NO, leakage. SMOTE only on training fold. |
 | "Target encoding always helps" | Risks leakage if computed on the full dataset. Compute inside CV folds. |
 | "Feature engineering is dead in the DL era" | DL helps less for tabular and time-series. Feature engineering still dominates Kaggle-style tabular wins. |
 
@@ -416,7 +416,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 
 | Term | Definition |
 |------|------------|
-| **EDA** | Exploratory Data Analysis — pre-modelling inspection |
+| **EDA** | Exploratory Data Analysis, pre-modelling inspection |
 | **Imputation** | Filling in missing values |
 | **MCAR / MAR / MNAR** | Missing completely at random / at random / not at random |
 | **Outlier** | Observation far from the bulk of the distribution |
@@ -428,7 +428,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 | **StandardScaler** | (x − μ) / σ |
 | **MinMaxScaler** | (x − min) / (max − min) → [0,1] |
 | **RobustScaler** | Median / IQR-based scaling |
-| **PCA** | Principal Component Analysis — linear dim. reduction |
+| **PCA** | Principal Component Analysis, linear dim. reduction |
 | **t-SNE / UMAP** | Non-linear visualisation tools |
 | **Class imbalance** | Highly skewed class distribution |
 | **SMOTE** | Synthetic Minority Over-sampling Technique |
@@ -441,7 +441,7 @@ Before training, check for **data bias** that could lead to unfair outcomes. Sag
 
 ---
 
-## 💬 Discussion — Socratic Prompts (15 min)
+## 💬 Discussion, Socratic Prompts (15 min)
 
 1. **"Drop or impute?"** A health-insurance dataset has `last_doctor_visit_date` missing for 40% of customers. Why might missingness *itself* be the most predictive feature? How would you handle it?
 2. **The over-feature-engineering trap.** Feature engineering yields diminishing returns. When does adding a 300th derived feature *hurt* (not help) a model? (Hint: think variance vs bias.)
@@ -486,27 +486,27 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **SageMaker Data Wrangler docs** — `docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html`
-- 📖 **SageMaker Feature Store docs** — `docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html`
-- 📖 **SageMaker Clarify docs** (bias + explainability) — `docs.aws.amazon.com/sagemaker/latest/dg/clarify.html`
+- 📖 **SageMaker Data Wrangler docs**, `docs.aws.amazon.com/sagemaker/latest/dg/data-wrangler.html`
+- 📖 **SageMaker Feature Store docs**, `docs.aws.amazon.com/sagemaker/latest/dg/feature-store.html`
+- 📖 **SageMaker Clarify docs** (bias + explainability), `docs.aws.amazon.com/sagemaker/latest/dg/clarify.html`
 
 **Textbooks**
-- 📖 **Géron, Aurélien (2022).** *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.). O'Reilly — chapters 2 (end-to-end project), 3 (classification), 4 (training models). Single best companion text for this module.
-- 📖 **Zheng & Casari (2018).** *Feature Engineering for Machine Learning.* O'Reilly — the canonical FE handbook.
-- 📖 **Kuhn & Johnson (2019).** *Feature Engineering and Selection.* CRC Press — academic spine; FREE PDF online.
+- 📖 **Géron, Aurélien (2022).** *Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow* (3rd ed.). O'Reilly, chapters 2 (end-to-end project), 3 (classification), 4 (training models). Single best companion text for this module.
+- 📖 **Zheng & Casari (2018).** *Feature Engineering for Machine Learning.* O'Reilly, the canonical FE handbook.
+- 📖 **Kuhn & Johnson (2019).** *Feature Engineering and Selection.* CRC Press, academic spine; FREE PDF online.
 
 **Academic foundations**
-- 📄 **Chawla et al. (2002).** *SMOTE: Synthetic Minority Over-sampling Technique.* JAIR — SMOTE origin.
-- 📄 **van der Maaten & Hinton (2008).** *Visualizing Data using t-SNE.* JMLR — t-SNE origin.
-- 📄 **McInnes, Healy, Melville (2018).** *UMAP: Uniform Manifold Approximation and Projection.* arXiv — UMAP origin.
+- 📄 **Chawla et al. (2002).** *SMOTE: Synthetic Minority Over-sampling Technique.* JAIR, SMOTE origin.
+- 📄 **van der Maaten & Hinton (2008).** *Visualizing Data using t-SNE.* JMLR, t-SNE origin.
+- 📄 **McInnes, Healy, Melville (2018).** *UMAP: Uniform Manifold Approximation and Projection.* arXiv, UMAP origin.
 
 **Industry**
-- 📰 **Sebastian Raschka's blog** — feature-engineering essays
-- 📰 **Kaggle "Grandmaster" interviews** — Hacker News-style transcripts of winning approaches; FE dominates
+- 📰 **Sebastian Raschka's blog**, feature-engineering essays
+- 📰 **Kaggle "Grandmaster" interviews**, Hacker News-style transcripts of winning approaches; FE dominates
 
 ---
 
-## 🛠️ Appendix A — Feature Store: Online + Offline Walkthrough
+## 🛠️ Appendix A, Feature Store: Online + Offline Walkthrough
 
 ```python
 import sagemaker
@@ -571,14 +571,14 @@ results = query.as_dataframe()
 
 🎯 **Exam patterns.**
 - **Record identifier** is the primary key (`customer_id` here)
-- **Event time feature** is mandatory — supports time-travel queries
+- **Event time feature** is mandatory, supports time-travel queries
 - **Online store** uses `get_record` for low-latency inference reads
 - **Offline store** is queried via Athena against the Glue Catalogue
-- Both stores share the same feature definitions — same features available at train and inference time
+- Both stores share the same feature definitions, same features available at train and inference time
 
 ---
 
-## 🛠️ Appendix B — Data Wrangler Export Patterns
+## 🛠️ Appendix B, Data Wrangler Export Patterns
 
 A Data Wrangler `.flow` file can export to four targets:
 
@@ -593,7 +593,7 @@ A Data Wrangler `.flow` file can export to four targets:
 
 ---
 
-## 🛠️ Appendix C — Stratified, Group, And Time-Series Splits
+## 🛠️ Appendix C, Stratified, Group, And Time-Series Splits
 
 ```python
 from sklearn.model_selection import (
@@ -601,7 +601,7 @@ from sklearn.model_selection import (
     GroupKFold, TimeSeriesSplit,
 )
 
-# Stratified — preserves class proportions
+# Stratified, preserves class proportions
 X_tr, X_te, y_tr, y_te = train_test_split(
     X, y, test_size=0.2, stratify=y, random_state=42,
 )
@@ -632,7 +632,7 @@ X_tr_resampled, y_tr_resampled = sm.fit_resample(X_tr, y_tr)
 
 ---
 
-## 🛠️ Appendix D — A Pre-Modelling QA Checklist
+## 🛠️ Appendix D, A Pre-Modelling QA Checklist
 
 Before kicking off training, verify:
 

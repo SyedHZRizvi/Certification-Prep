@@ -47,10 +47,10 @@ WBS Rules:
 | Limited risk | 🚨 More risk |
 
 ### Estimation
-- **Analogous** — like past projects (fast)
-- **Parametric** — math relationships
-- **Three-point (PERT)** — `(O+4M+P)/6`
-- **Bottom-up** — sum of details (slowest, most accurate)
+- **Analogous**, like past projects (fast)
+- **Parametric**, math relationships
+- **Three-point (PERT)**, `(O+4M+P)/6`
+- **Bottom-up**, sum of details (slowest, most accurate)
 
 ---
 

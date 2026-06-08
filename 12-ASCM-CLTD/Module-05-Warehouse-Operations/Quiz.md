@@ -63,7 +63,7 @@ D. Belt conveyor
 
 ---
 
-### Q8. AGV vs AMR — the key difference is: *(Analyze)*
+### Q8. AGV vs AMR, the key difference is: *(Analyze)*
 A. AGVs are powered by batteries; AMRs by diesel
 B. AGVs follow fixed paths (wire/laser); AMRs map and re-route dynamically (LiDAR/SLAM)
 C. AGVs are cheaper than AMRs
@@ -222,7 +222,7 @@ Workflow: Receiving → Putaway → Storage → Replenishment → Pick → Pack 
 Pre-distribution = labeled by destination before arrival. Walmart's model.
 
 ### Q5: **B. Any available slot, WMS-tracked**
-Random putaway is *systematic* in modern DCs — the WMS records every location.
+Random putaway is *systematic* in modern DCs, the WMS records every location.
 
 ### Q6: **B. Few SKUs, deep, LIFO**
 Drive-in is dense but LIFO. Selective handles FIFO. Pallet flow is FIFO with density.
@@ -234,7 +234,7 @@ AS/RS = Automated Storage & Retrieval (cranes in aisles). AGVs/AMRs are floor-ba
 AGVs need wire/laser guides. AMRs use LiDAR/SLAM to navigate dynamically.
 
 ### Q9: **B. Waist-to-shoulder height**
-Golden zone is ergonomically optimal — least bending/reaching.
+Golden zone is ergonomically optimal, least bending/reaching.
 
 ### Q10: **C. 65–85%**
 Above 85%, congestion and pick-face stockouts destroy productivity.
@@ -252,7 +252,7 @@ Customs-Trade Partnership Against Terrorism; voluntary program for faster custom
 Refrigerated. Frozen is -18°C and below; controlled ambient 15–25°C.
 
 ### Q15: **B. Supplier labels by destination**
-Pre-distribution requires upstream coordination — supplier knows the destination before shipping.
+Pre-distribution requires upstream coordination, supplier knows the destination before shipping.
 
 ### Q16: **B. Vertical storage tower, slow-mover small parts**
 VLMs store small parts vertically with shuttles bringing trays to the operator.
@@ -273,7 +273,7 @@ OSHA's powered industrial truck (forklift) standard.
 Voice is fast, accurate, and cheaper than pick-to-light.
 
 ### Q22: **B. Directed work**
-WMS directs each task — pick, putaway, replenishment — by algorithm.
+WMS directs each task pick, putaway, replenishment by algorithm.
 
 ### Q23: **B. Receipt to putaway-complete**
 Dock-to-stock = "from the dock to inventory available for pick."

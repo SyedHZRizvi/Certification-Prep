@@ -59,7 +59,7 @@
     <div class="vg-thumb"><span>🚛</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The China Mining Ban — Hashrate Migration</p>
+      <p class="vg-title">The China Mining Ban, Hashrate Migration</p>
       <p class="vg-creator">Coindesk / Galaxy</p>
       <span class="vg-duration">⏱ 17 min · The May 2021 case</span>
     </div>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Public Miners — MARA, RIOT, CLSK Analyzed</p>
+      <p class="vg-title">Public Miners, MARA, RIOT, CLSK Analyzed</p>
       <p class="vg-creator">Investing finance channels</p>
       <span class="vg-duration">⏱ 19 min · The equity layer</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🔌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ERCOT Demand Response — Texas Bitcoin Mining</p>
+      <p class="vg-title">ERCOT Demand Response, Texas Bitcoin Mining</p>
       <p class="vg-creator">Lancium / Riot</p>
       <span class="vg-duration">⏱ 19 min · The grid-stabilization story</span>
     </div>
@@ -91,7 +91,7 @@
     <div class="vg-thumb"><span>📡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Stratum V2 — Miners Choosing Transactions</p>
+      <p class="vg-title">Stratum V2, Miners Choosing Transactions</p>
       <p class="vg-creator">Braiins / Bitcoin Optech</p>
       <span class="vg-duration">⏱ 16 min · The pool-centralization fix</span>
     </div>
@@ -109,7 +109,7 @@
     <div class="vg-thumb"><span>⚔️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">51% Attack — What Could Actually Happen</p>
+      <p class="vg-title">51% Attack, What Could Actually Happen</p>
       <p class="vg-creator">Jameson Lopp / Coin Center</p>
       <span class="vg-duration">⏱ 14 min · The threat model</span>
     </div>

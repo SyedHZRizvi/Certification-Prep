@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-05-After-Effects-2D/Cheat-Sheet/
 title: "Module 5 Cheat Sheet: After Effects for 2D Animation"
 ---
 
-# ⚡ Module 5 Cheat Sheet — After Effects for 2D Animation
+# ⚡ Module 5 Cheat Sheet, After Effects for 2D Animation
 
 ---
 
@@ -25,13 +25,13 @@ title: "Module 5 Cheat Sheet: After Effects for 2D Animation"
 ## Illustrator → After Effects Workflow
 
 ```
-1. Design in Illustrator — one layer per body part
+1. Design in Illustrator, one layer per body part
 2. File → Import → File
-   "Import as: Composition — Retain Layer Sizes"
+   "Import as: Composition, Retain Layer Sizes"
 3. Select Illustrator layers in AE
 4. Layer → Create → Create Shapes from Vector Layer
 5. Original AI layer is auto-HIDDEN (not deleted)
-6. New Shape Layer replaces it — now fully editable in AE
+6. New Shape Layer replaces it, now fully editable in AE
 7. Animate natively: Trim Paths, expressions, parenting
 ```
 
@@ -72,7 +72,7 @@ title: "Module 5 Cheat Sheet: After Effects for 2D Animation"
 
 ---
 
-## Easing Shortcuts — Complete Reference
+## Easing Shortcuts, Complete Reference
 
 | Shortcut | Effect |
 |----------|--------|
@@ -84,11 +84,11 @@ title: "Module 5 Cheat Sheet: After Effects for 2D Animation"
 
 ---
 
-## Graph Editor — Speed vs. Value
+## Graph Editor, Speed vs. Value
 
 | Graph | Shows |
 |-------|-------|
-| **Speed Graph** | Velocity — peaks = fast, valleys = slow/hold |
+| **Speed Graph** | Velocity, peaks = fast, valleys = slow/hold |
 | **Value Graph** | Absolute property value over time |
 
 Use **Speed Graph** for animation work. Value Graph is better for understanding position/rotation changes.
@@ -112,8 +112,8 @@ Use **Speed Graph** for animation work. Value Graph is better for understanding 
 | Fit comp to viewer | Shift+/ | Shift+/ |
 | Toggle layer shy | click shy icon | click shy icon |
 | Add keyframe | Alt+Shift+P/R/S/T | Opt+Shift+P/R/S/T |
-| U — show keyframes | U | U |
-| UU — show modified | UU | UU |
+| U, show keyframes | U | U |
+| UU, show modified | UU | UU |
 
 ---
 
@@ -122,7 +122,7 @@ Use **Speed Graph** for animation work. Value Graph is better for understanding 
 For frame-by-frame with transparency:
 - Animate → File → Export → Export Movie → PNG Sequence
 - In AE: File → Import → File → select first frame → check "PNG Sequence"
-- Preserves alpha channel — essential for compositing over backgrounds
+- Preserves alpha channel, essential for compositing over backgrounds
 
 ---
 

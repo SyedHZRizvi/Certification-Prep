@@ -127,7 +127,7 @@ D. Exactly 100%
 
 ---
 
-### Q16. ROP = (d × L) + SS — this stands for: *(Remember)*
+### Q16. ROP = (d × L) + SS, this stands for: *(Remember)*
 A. Reorder Point
 B. Rate Order Plan
 C. Replenishment Order Period
@@ -155,7 +155,7 @@ D. Increasing safety stock everywhere
 A. 1–2%
 B. 10–30%
 C. 50%
-D. None — it adds inventory
+D. None, it adds inventory
 
 ---
 
@@ -277,7 +277,7 @@ Typical MEIO benefit range cited in CSCMP/ASCM literature.
 P-system = periodic. Q-system = continuous, fixed quantity.
 
 ### Q21: **C. Opportunity-based**
-"Free" counts at bin-zero events — verify when bin is verifiable easily.
+"Free" counts at bin-zero events, verify when bin is verifiable easily.
 
 ### Q22: **B. Collaborative Planning, Forecasting, and Replenishment**
 Industry standard published by GS1/VICS.

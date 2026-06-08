@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Linux Boot, Init & systemd
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -136,7 +136,7 @@
 | **Learn Linux TV (Jay LaCroix)** | The hands-on Linux teacher for the past decade. Distro-neutral, clear demos. |
 | **NetworkChuck** | High-energy, intro-friendly. Great for warming up cold topics. |
 | **DistroTube** | Power-user perspective, lots of init/system tooling content. |
-| **The Linux Foundation** | Authoritative, occasionally too dry — perfect for the "is this Sander van Vugt right?" double-check. |
+| **The Linux Foundation** | Authoritative, occasionally too dry, perfect for the "is this Sander van Vugt right?" double-check. |
 | **Veronica Explains** | Modern Linux administration with a sysadmin focus. |
 | **DorianDotSlash** | Solid generalist Linux/security channel. |
 

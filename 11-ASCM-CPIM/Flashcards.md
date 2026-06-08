@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -287,7 +287,7 @@
 **A:** At raw materials.
 
 **Q:** Where is the customer order decoupling point in ETO?
-**A:** At design / engineering — production begins after the contract.
+**A:** At design / engineering, production begins after the contract.
 
 **Q:** Define order qualifier.
 **A:** The minimum criteria a product must meet to be considered for purchase.
@@ -302,7 +302,7 @@
 **A:** Delaying final product differentiation until the customer order is received.
 
 **Q:** What is the canonical postponement example?
-**A:** HP printers — generic chassis at factory, country-specific power kit added at regional DC.
+**A:** HP printers, generic chassis at factory, country-specific power kit added at regional DC.
 
 **Q:** What is mass customization?
 **A:** Combining high-volume production economics with customer-specific customization, usually via ATO + postponement.
@@ -317,7 +317,7 @@
 **A:** Corporate → Business → Functional (Operations).
 
 **Q:** Define Triple Bottom Line.
-**A:** People, Planet, Profit (Elkington, 1994) — sustainability as a strategic constraint.
+**A:** People, Planet, Profit (Elkington, 1994), sustainability as a strategic constraint.
 
 **Q:** What's reshoring?
 **A:** Bringing previously offshored production back to the domestic market.
@@ -339,31 +339,31 @@
 **A:** F_(t+1) = α × D_t + (1 − α) × F_t, with 0 < α < 1.
 
 **Q:** What does a high α (e.g., 0.5) do?
-**A:** Makes the forecast more responsive to recent demand — but noisier.
+**A:** Makes the forecast more responsive to recent demand, but noisier.
 
 **Q:** MAD formula?
 **A:** Σ |error| / n.
 
 **Q:** MAPE formula?
-**A:** Σ (|error| / D) / n × 100% — error as a percent of demand.
+**A:** Σ (|error| / D) / n × 100%, error as a percent of demand.
 
 **Q:** MSE formula?
-**A:** Σ error² / n — penalizes large misses.
+**A:** Σ error² / n, penalizes large misses.
 
 **Q:** Bias (cumulative forecast error)?
-**A:** Σ errors — positive = under-forecasting, negative = over-forecasting.
+**A:** Σ errors, positive = under-forecasting, negative = over-forecasting.
 
 **Q:** Tracking signal formula?
 **A:** Bias / MAD. Alarm when |TS| exceeds about 4.
 
 **Q:** What is the Delphi method?
-**A:** Anonymous expert rounds with feedback between rounds — used for new products with no history.
+**A:** Anonymous expert rounds with feedback between rounds, used for new products with no history.
 
 **Q:** Forecast aggregation principle?
 **A:** Forecasts are more accurate at higher aggregation levels and longer time buckets.
 
 **Q:** What is CPFR?
-**A:** Collaborative Planning, Forecasting & Replenishment — a framework for sharing forecasts between trading partners.
+**A:** Collaborative Planning, Forecasting & Replenishment, a framework for sharing forecasts between trading partners.
 
 **Q:** What is the bullwhip effect?
 **A:** Amplification of demand variability as you move upstream in a supply chain.
@@ -409,7 +409,7 @@
 **A:** Level base production + chase overflow with overtime/contract.
 
 **Q:** What is an unconstrained demand plan?
-**A:** What the company would sell if capacity were unlimited — generated in Step 2 before reconciliation.
+**A:** What the company would sell if capacity were unlimited, generated in Step 2 before reconciliation.
 
 **Q:** Resource Planning sits at which capacity layer?
 **A:** The longest-range, strategic layer (S&OP-linked).
@@ -419,10 +419,10 @@
 ## 🗓️ SECTION 4: MASTER SCHEDULING & MRP
 
 **Q:** MPS plans what type of demand?
-**A:** Independent (customer/forecast-driven) — finished goods.
+**A:** Independent (customer/forecast-driven), finished goods.
 
 **Q:** MRP plans what type of demand?
-**A:** Dependent — calculated from MPS and BOMs.
+**A:** Dependent, calculated from MPS and BOMs.
 
 **Q:** Which is closer in time: DTF or PTF?
 **A:** DTF (Demand Time Fence) is closer. PTF is further out.
@@ -443,7 +443,7 @@
 **A:** Assigning each item the deepest level it appears in any BOM, so MRP processes it once with all parent demands netted.
 
 **Q:** Define CTP (Capable-to-Promise).
-**A:** Like ATP, but considers replanning capacity and materials — not just existing schedule.
+**A:** Like ATP, but considers replanning capacity and materials, not just existing schedule.
 
 **Q:** Name 5 lot-sizing rules.
 **A:** Lot-for-Lot (L4L), EOQ, Period Order Quantity (POQ), Fixed Order Quantity (FOQ), Min/Max.
@@ -455,10 +455,10 @@
 **A:** Traceability from a component requirement back to the parent demand that caused it.
 
 **Q:** Two-level MPS is for which environment?
-**A:** ATO — schedule modules + final assembly separately.
+**A:** ATO, schedule modules + final assembly separately.
 
 **Q:** What is a firm planned order?
-**A:** A planned order that the system cannot modify or reschedule automatically — human-locked.
+**A:** A planned order that the system cannot modify or reschedule automatically, human-locked.
 
 ---
 
@@ -498,7 +498,7 @@
 **A:** Identify, Exploit, Subordinate, Elevate, Repeat.
 
 **Q:** What is the Drum in Drum-Buffer-Rope?
-**A:** The bottleneck — its pace sets the rhythm of the plant.
+**A:** The bottleneck, its pace sets the rhythm of the plant.
 
 **Q:** What is the Buffer in DBR?
 **A:** Inventory placed before the bottleneck to protect it from starvation.
@@ -507,10 +507,10 @@
 **A:** Communication mechanism that ties material release to the drum's pace.
 
 **Q:** TOC definition of Throughput?
-**A:** Sales revenue minus truly variable (raw material) cost — dollars, not units.
+**A:** Sales revenue minus truly variable (raw material) cost, dollars, not units.
 
 **Q:** What's the rule about non-bottlenecks in TOC?
-**A:** An hour saved at a non-bottleneck is a mirage — it does NOT increase system throughput.
+**A:** An hour saved at a non-bottleneck is a mirage, it does NOT increase system throughput.
 
 ---
 
@@ -544,7 +544,7 @@
 **A:** 2.33.
 
 **Q:** ABC classifies inventory by what?
-**A:** Annual dollar volume (annual cost × annual usage) — Pareto principle.
+**A:** Annual dollar volume (annual cost × annual usage), Pareto principle.
 
 **Q:** Typical A-item share?
 **A:** ~10–20% of SKUs, ~70–80% of dollar volume.
@@ -553,7 +553,7 @@
 **A:** Monthly or more frequently.
 
 **Q:** Inventory Record Accuracy target for A items?
-**A:** ≥95% (with 0% tolerance — must be exact).
+**A:** ≥95% (with 0% tolerance, must be exact).
 
 **Q:** Inventory turnover formula?
 **A:** Annual COGS ÷ Average inventory.
@@ -562,7 +562,7 @@
 **A:** 365 ÷ Turnover (they are reciprocals × 365).
 
 **Q:** Define VMI.
-**A:** Vendor-managed inventory — supplier monitors and replenishes customer's inventory level; customer usually still owns.
+**A:** Vendor-managed inventory, supplier monitors and replenishes customer's inventory level; customer usually still owns.
 
 **Q:** Define consignment.
 **A:** Supplier OWNS the inventory at the customer site until the customer consumes it.
@@ -575,7 +575,7 @@
 **A:** Queue, Setup, Run, Wait, Move (Q-S-R-W-M).
 
 **Q:** Which element dominates manufacturing lead time?
-**A:** Queue — typically 60-80% of total LT.
+**A:** Queue, typically 60-80% of total LT.
 
 **Q:** What's the difference between Queue and Wait time?
 **A:** Queue = time BEFORE processing. Wait = time AFTER processing (before move).
@@ -590,7 +590,7 @@
 **A:** CR = (Due date − Today) / Work days remaining.
 
 **Q:** CR of 0.7 means?
-**A:** Behind schedule — process first. (CR < 1 = behind.)
+**A:** Behind schedule, process first. (CR < 1 = behind.)
 
 **Q:** Define manufacturing cell.
 **A:** Group of dissimilar machines that together produce a family of similar parts.
@@ -615,10 +615,10 @@
 **A:** Transportation, Inventory, Motion, Waiting, Overproduction, Overprocessing, Defects.
 
 **Q:** Which waste is considered the worst?
-**A:** Overproduction — it creates all the other wastes.
+**A:** Overproduction, it creates all the other wastes.
 
 **Q:** What does DOWNTIME add to TIMWOOD?
-**A:** N for "Non-utilized talent" (the 8th waste — unused human potential).
+**A:** N for "Non-utilized talent" (the 8th waste, unused human potential).
 
 **Q:** Name the 5 lean principles (Womack & Jones).
 **A:** Value, Value Stream, Flow, Pull, Perfection.
@@ -636,13 +636,13 @@
 **A:** Sort, Set in order, Shine, Standardize, Sustain.
 
 **Q:** Define Jidoka.
-**A:** Autonomation — machine stops automatically when a defect is detected.
+**A:** Autonomation, machine stops automatically when a defect is detected.
 
 **Q:** Define Andon.
 **A:** Visual signal (cord, light) used to stop the line or call for help.
 
 **Q:** Define Poka-yoke.
-**A:** Mistake-proofing — designing things so errors are impossible.
+**A:** Mistake-proofing, designing things so errors are impossible.
 
 **Q:** Name the 5 DMAIC phases.
 **A:** Define, Measure, Analyze, Improve, Control.
@@ -659,8 +659,8 @@
 **Q:** Cpk thresholds?
 **A:** ≥1.33 = capable. ≥2.0 = world-class (Six Sigma).
 
-**Q:** Control chart point outside ±3σ — common or special cause?
-**A:** Special cause — investigate.
+**Q:** Control chart point outside ±3σ, common or special cause?
+**A:** Special cause, investigate.
 
 **Q:** OEE formula?
 **A:** OEE = Availability × Performance × Quality.
@@ -669,13 +669,13 @@
 **A:** 85%+.
 
 **Q:** PDCA stands for?
-**A:** Plan, Do, Check, Act — the Deming cycle.
+**A:** Plan, Do, Check, Act, the Deming cycle.
 
 **Q:** Six Sigma belts in order of seniority?
 **A:** White/Yellow (awareness) → Green (part-time PM) → Black (full-time PM) → Master Black Belt (coach) → Champion (executive sponsor).
 
 **Q:** Most important prerequisite for kaizen?
-**A:** Standard work — a documented baseline to improve from.
+**A:** Standard work, a documented baseline to improve from.
 
 ---
 
@@ -688,10 +688,10 @@
 **A:** MPS = finished goods. MRP = components.
 
 **Q:** What does "rolling horizon" mean?
-**A:** The plan is replanned every cycle — never frozen for the full horizon.
+**A:** The plan is replanned every cycle, never frozen for the full horizon.
 
 **Q:** What's "off-diagonal" on the Hayes-Wheelwright matrix?
-**A:** A structural mismatch between product volume/variety and process choice — economically broken.
+**A:** A structural mismatch between product volume/variety and process choice, economically broken.
 
 **Q:** Why are forecasts more accurate at higher aggregation?
 **A:** Random noise cancels out when you aggregate; the systematic signal dominates.
@@ -700,13 +700,13 @@
 **A:** It's 60-80% of total manufacturing LT; cutting it has the biggest impact.
 
 **Q:** What is the relationship between MRP and Lean kanban?
-**A:** They typically coexist — MRP plans materials at the medium-range; kanban executes pull at the cell.
+**A:** They typically coexist, MRP plans materials at the medium-range; kanban executes pull at the cell.
 
 **Q:** Why is sustainability now a strategic constraint?
 **A:** ASCM treats Triple Bottom Line as equivalent to cost or quality; modern exams test it.
 
 **Q:** Why does Toyota teach "overproduction is the worst waste"?
-**A:** Because it directly creates the other 6 — extra inventory, motion, transport, defects hidden in WIP, etc.
+**A:** Because it directly creates the other 6, extra inventory, motion, transport, defects hidden in WIP, etc.
 
 **Q:** The single one-line summary of CPIM?
 **A:** Plan at each level (S&OP → MPS → MRP → PAC), align capacity (RRP → RCCP → CRP → I/O), manage inventory (EOQ, ROP, ABC), and continuously improve (Lean, Six Sigma, TOC).
@@ -717,9 +717,9 @@
 
 1. **Use Anki for spaced repetition.** 10-15 minutes daily until the exam.
 2. **If you guess, mark it wrong.** Honest grading is the only way the algorithm helps you.
-3. **Interleave sections.** Don't review one section straight through — mix.
+3. **Interleave sections.** Don't review one section straight through, mix.
 4. **Add cards as you find weak spots.** Wrong quiz answer → new card.
-5. **Drill formulas with paper.** EOQ, ROP, SS, OEE — write them out.
+5. **Drill formulas with paper.** EOQ, ROP, SS, OEE, write them out.
 
 ---
 

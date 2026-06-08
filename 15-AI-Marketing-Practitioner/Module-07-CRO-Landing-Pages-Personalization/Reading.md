@@ -24,14 +24,14 @@ The lesson isn't "use bigger photos." It's that **a single well-designed A/B tes
 This module teaches you the CRO discipline: hypothesis → test → measure → iterate. Plus the 2026 stack of tools (Mutiny, Optimizely, Hotjar) that make it executable for solo marketers and small teams.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Funnel-stage KPIs and conversion definitions — covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
-> - Where paid traffic actually lands and why creative-LP alignment matters — covered in [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md) and [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
-> - Basic statistical thinking (percentages, sample sizes, confidence) — if shaky, review high-school stats before proceeding
+> - Funnel-stage KPIs and conversion definitions, covered in [Module 1](../Module-01-Campaign-Strategy-Brief-Writing/Reading.md)
+> - Where paid traffic actually lands and why creative-LP alignment matters, covered in [Module 2](../Module-02-Google-Ads-Search-Mastery/Reading.md) and [Module 4](../Module-04-Meta-Ads-Mastery-FB-IG/Reading.md)
+> - Basic statistical thinking (percentages, sample sizes, confidence), if shaky, review high-school stats before proceeding
 > If any of these are shaky, pause and review before continuing.
 
 ---
 
-## 🔬 CRO Fundamentals — The 4-Stage Cycle
+## 🔬 CRO Fundamentals, The 4-Stage Cycle
 
 ```
 1. OBSERVE   →  What's broken? (heatmaps, session replay, analytics)
@@ -49,8 +49,8 @@ Most CRO programs fail because the marketer guesses at what's broken. "Our hero 
 Right approach:
 
 1. Watch 10 Hotjar session replays of users who didn't convert
-2. Look at the heatmap — where do they click? Where do they stop scrolling?
-3. Check analytics — what's the bounce rate on each section?
+2. Look at the heatmap, where do they click? Where do they stop scrolling?
+3. Check analytics, what's the bounce rate on each section?
 4. NOW form a hypothesis based on what you saw
 
 ---
@@ -63,7 +63,7 @@ Two competing statistical philosophies for A/B testing. Most CRO tools support b
 |--------|----------------------|----------|
 | Question | "What's the probability of seeing this data if there's no real effect?" | "What's the probability the treatment is better than control?" |
 | Output | p-value (e.g., p < 0.05) | Probability of being best (e.g., 92% chance treatment wins) |
-| Need sample size upfront? | Yes — fixed before test | No — can peek anytime |
+| Need sample size upfront? | Yes fixed before test | No can peek anytime |
 | Interpretation | "Statistically significant at 95%" | "92% likely the treatment is better" |
 | Common tools | Optimizely Web, VWO (classic mode) | VWO (Bayesian mode), Convert |
 | When to use | Highly-trafficked sites, scientific rigor required | Lower traffic; intuitive interpretation |
@@ -74,16 +74,16 @@ Two competing statistical philosophies for A/B testing. Most CRO tools support b
 
 ---
 
-## 🧮 Sample Size — The Math You Must Do
+## 🧮 Sample Size, The Math You Must Do
 
 Most CRO tools have built-in sample-size calculators. But you need to understand the inputs.
 
 ### The Inputs
 
-1. **Baseline conversion rate** — your current conversion %
-2. **Minimum detectable effect (MDE)** — smallest lift you care about (e.g., 5%, 10%, 20% relative)
-3. **Statistical power** — usually 0.80 (80% chance of detecting the effect if it exists)
-4. **Significance level (alpha)** — usually 0.05 (5% false positive rate)
+1. **Baseline conversion rate**, your current conversion %
+2. **Minimum detectable effect (MDE)**, smallest lift you care about (e.g., 5%, 10%, 20% relative)
+3. **Statistical power**, usually 0.80 (80% chance of detecting the effect if it exists)
+4. **Significance level (alpha)**, usually 0.05 (5% false positive rate)
 
 ### The Rough Formula
 
@@ -142,7 +142,7 @@ The 8-section above-the-fold-to-bottom layout that consistently works:
 
 ```
 1. HERO
-   - Headline (the proposition from your brief — 1 sentence)
+   - Headline (the proposition from your brief, 1 sentence)
    - Subhead (clarifying the headline in 1 sentence)
    - Hero image/video (product in use OR result, not just product)
    - Primary CTA (1 button, action verb, contrasting color)
@@ -159,7 +159,7 @@ The 8-section above-the-fold-to-bottom layout that consistently works:
    - 3 columns or 3 alternating sections
    - Each: icon + headline + 1-sentence benefit
 
-5. PROOF — DETAILED
+5. PROOF, DETAILED
    - Customer testimonial WITH face photo + full name + company
    - Case study with numbers
    - Press mentions if real
@@ -196,17 +196,17 @@ The 2026 wave. Instead of running one landing page for everyone, personalize the
 
 ### Mutiny
 
-Mutiny (acquired by Salesforce in 2024 — now part of Marketing Cloud) is the leader in B2B website personalization. How it works:
+Mutiny (acquired by Salesforce in 2024, now part of Marketing Cloud) is the leader in B2B website personalization. How it works:
 
 1. Mutiny detects the visitor's company via reverse-IP lookup (Clearbit / 6sense data)
 2. Based on industry/size/role, it serves a different version of your hero, body, and CTA
 3. Each version is A/B tested under the hood
 
-Real example (publicly shared by Mutiny CEO Jaleh Rezaei at SaaStr 2023): a B2B SaaS company personalized their hero to say "Used by [visitor's industry] companies including [logos of 3 competitors]" — conversion lift: 42%.
+Real example (publicly shared by Mutiny CEO Jaleh Rezaei at SaaStr 2023): a B2B SaaS company personalized their hero to say "Used by [visitor's industry] companies including [logos of 3 competitors]", conversion lift: 42%.
 
 ### Dynamic Yield
 
-Dynamic Yield is McDonald's (Mastercard now owns it) personalization platform. Stronger on ecom personalization — product recommendations, dynamic copy by customer segment.
+Dynamic Yield is McDonald's (Mastercard now owns it) personalization platform. Stronger on ecom personalization, product recommendations, dynamic copy by customer segment.
 
 ### Optimizely Personalization
 
@@ -214,7 +214,7 @@ Optimizely combines A/B testing with personalization rules. If you're already us
 
 ### Unbounce Smart Traffic
 
-Different mechanism — instead of personalizing copy per visitor, Unbounce's Smart Traffic automatically routes each visitor to the variant they're most likely to convert on (using ML). You set up 2-5 variants; Unbounce sends visitor A to variant 1 because users like A historically converted on 1, etc. Pretty magical for small teams.
+Different mechanism, instead of personalizing copy per visitor, Unbounce's Smart Traffic automatically routes each visitor to the variant they're most likely to convert on (using ML). You set up 2-5 variants; Unbounce sends visitor A to variant 1 because users like A historically converted on 1, etc. Pretty magical for small teams.
 
 ---
 
@@ -230,7 +230,7 @@ The default for most SMB / DTC. Three core features:
 - **Session Replays**: watch real user sessions (anonymized) frame-by-frame
 - **Surveys**: pop-up surveys triggered on specific pages/actions
 
-### Microsoft Clarity (FREE — yes, fully free)
+### Microsoft Clarity (FREE, yes, fully free)
 
 Launched by Microsoft in 2020. Same features as Hotjar's core, but free with unlimited sessions. Works on any site (you don't need to be on Microsoft Advertising).
 
@@ -250,7 +250,7 @@ Without watching real users:
 
 You're optimizing the Sunday Studio Pilates apparel landing page. Goal: lift purchase conversion rate from 2% to 3% in 4 weeks.
 
-### Week 1 — Observe
+### Week 1, Observe
 
 ```
 Day 1-2: Install Hotjar OR Microsoft Clarity. Set up heatmaps + replay.
@@ -267,7 +267,7 @@ Common findings from this exercise:
 - Form has 7 fields when 4 would suffice
 - Price page has unclear shipping cost (users scroll up/down 3x)
 
-### Week 2 — Test
+### Week 2, Test
 
 ```
 Day 8:   Pick the highest-impact hypothesis. Calculate sample size.
@@ -312,7 +312,7 @@ Day 16+: Set up next test.
 
 ## 📊 Real Case Study: Booking.com's 1,000+ Tests Per Year
 
-Booking.com is famously the largest experimentation organization in tech — running 1,000+ A/B tests simultaneously at any given moment, across product, search, pricing, and email (publicly discussed by their head of experimentation Stuart Frisby on the [Reforge podcast 2023](https://www.reforge.com/) and in academic papers from their data science team).
+Booking.com is famously the largest experimentation organization in tech, running 1,000+ A/B tests simultaneously at any given moment, across product, search, pricing, and email (publicly discussed by their head of experimentation Stuart Frisby on the [Reforge podcast 2023](https://www.reforge.com/) and in academic papers from their data science team).
 
 What they've publicly shared:
 
@@ -322,7 +322,7 @@ What they've publicly shared:
 - They use Bayesian + multi-armed bandits for most tests
 - Every page on Booking.com has been tested 50+ times in 10 years
 
-The lesson: most ideas don't work. The discipline of testing is what compounds — not any individual brilliant idea.
+The lesson: most ideas don't work. The discipline of testing is what compounds, not any individual brilliant idea.
 
 ---
 
@@ -332,9 +332,9 @@ The lesson: most ideas don't work. The discipline of testing is what compounds �
 |------|------------|
 | **CRO** | Conversion Rate Optimization |
 | **A/B Test** | Splitting traffic between Control and Treatment to compare conversion |
-| **Bayesian Testing** | Statistical approach giving "probability of best" — peek-tolerant |
-| **Frequentist Testing** | Classical approach using p-values — requires fixed sample size |
-| **MDE** | Minimum Detectable Effect — smallest lift you want to detect |
+| **Bayesian Testing** | Statistical approach giving "probability of best", peek-tolerant |
+| **Frequentist Testing** | Classical approach using p-values, requires fixed sample size |
+| **MDE** | Minimum Detectable Effect, smallest lift you want to detect |
 | **Statistical Power** | Probability of detecting an effect if it exists (typically 0.80) |
 | **Heatmap** | Visualization of clicks, scrolls, and movement on a page |
 | **Session Replay** | Recorded playback of real user sessions |
@@ -368,13 +368,13 @@ You now know:
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
 Argue from the frameworks in this module. There's more than one defensible answer to each.
 
 1. A site doing 5,000 visits/month at 2% conversion would need ~9 months to detect a 10% lift in a Frequentist A/B test. Build the case for (a) running the test anyway, (b) skipping testing and just shipping the best-guess design, and (c) switching to Bayesian or qualitative methods. Which would you defend at a small-team standup?
-2. Airbnb's "bigger photos" test doubled conversion. A founder reads this and proposes you run the same test on YOUR site. Walk through what's right about the heuristic and what's wrong about the inference — and how you'd actually use Airbnb's lesson responsibly.
-3. The reading recommends one CTA above the fold. Stripe famously has multiple CTAs on its homepage. Reconcile — when is "one CTA" right, when is "menu of CTAs" right, and what's the underlying principle?
+2. Airbnb's "bigger photos" test doubled conversion. A founder reads this and proposes you run the same test on YOUR site. Walk through what's right about the heuristic and what's wrong about the inference, and how you'd actually use Airbnb's lesson responsibly.
+3. The reading recommends one CTA above the fold. Stripe famously has multiple CTAs on its homepage. Reconcile, when is "one CTA" right, when is "menu of CTAs" right, and what's the underlying principle?
 4. Booking.com reports ~90% of their tests are negative (no lift). Defend the case that this is GOOD news for their process, and the case that it's bad news for their hypothesis quality. What would you change either way?
 5. Personalization (Mutiny, Dynamic Yield) lifts conversion 15-40% per the case studies. Argue when personalization is worth the integration cost for a $50K MRR B2B SaaS, and when it's premature optimization that distracts from a broken funnel.
 
@@ -389,10 +389,10 @@ Argue from the frameworks in this module. There's more than one defensible answe
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Evan Miller — Sample Size Calculator (free)](https://www.evanmiller.org/ab-testing/sample-size.html)
-- 📖 [Optimizely — Statistical Significance Guide](https://www.optimizely.com/optimization-glossary/statistical-significance/)
-- 📖 [CXL (ConversionXL) — Best Free CRO Courses](https://cxl.com/blog/)
+- 📖 [Evan Miller, Sample Size Calculator (free)](https://www.evanmiller.org/ab-testing/sample-size.html)
+- 📖 [Optimizely, Statistical Significance Guide](https://www.optimizely.com/optimization-glossary/statistical-significance/)
+- 📖 [CXL (ConversionXL), Best Free CRO Courses](https://cxl.com/blog/)
 - 📖 [Mutiny Personalization Playbook](https://www.mutinyhq.com/playbook)
-- 📖 [Booking.com's Experimentation Blog](https://booking.ai/) — academic-quality writeups
-- 📖 [Stripe Atlas — Optimizing Landing Pages for Conversion](https://stripe.com/atlas/guides) — startup-focused
-- 📖 [GoodUI — Patterns that Work in UX](https://goodui.org/) — battle-tested UX patterns
+- 📖 [Booking.com's Experimentation Blog](https://booking.ai/), academic-quality writeups
+- 📖 [Stripe Atlas Optimizing Landing Pages for Conversion](https://stripe.com/atlas/guides) startup-focused
+- 📖 [GoodUI Patterns that Work in UX](https://goodui.org/) battle-tested UX patterns

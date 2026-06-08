@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Cloud Concepts
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result. Watch in order, pause and take notes — don't binge. The "Essential" set covers everything you need to pass this module.
+> **How to use:** Click any video card to search YouTube and watch the latest top result. Watch in order, pause and take notes, don't binge. The "Essential" set covers everything you need to pass this module.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -39,7 +39,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">IaaS vs PaaS vs SaaS Explained with Azure Examples</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 10 min · Pizza-as-a-Service visual</span>
     </div>
   </a>
@@ -80,7 +80,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Public vs Private vs Hybrid Cloud</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 8 min · Deployment models</span>
     </div>
   </a>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | THE Azure channel. Deep, accurate, exam-aligned. |
-| **Adam Marczak — Azure for Everyone** | Cleanest beginner-friendly explanations |
+| **Adam Marczak, Azure for Everyone** | Cleanest beginner-friendly explanations |
 | **Microsoft Learn / Microsoft Mechanics** | Official source. Always current. |
 | **Tim Warner** | Pluralsight instructor, great AZ-900 specific content |
 | **NetworkChuck** | Fun, energetic intro to cloud/IT for absolute beginners |

@@ -4,7 +4,7 @@
 
 ---
 
-## 📅 Manufacturing Lead Time — 5 Elements (MEMORIZE)
+## 📅 Manufacturing Lead Time, 5 Elements (MEMORIZE)
 
 | | Element | Typical % |
 |---|---------|-----------|
@@ -14,7 +14,7 @@
 | **W** | Wait (AFTER) | ~5% |
 | **M** | Move | ~5% |
 
-🧠 **Q-S-R-W-M**. Queue dominates — attack it first.
+🧠 **Q-S-R-W-M**. Queue dominates, attack it first.
 
 ---
 
@@ -121,7 +121,7 @@ When you see these, often **wrong**:
 - ❌ Using FCFS just for fairness when due dates suffer
 - ❌ Treating queue and wait as the same thing
 - ❌ Activating non-bottlenecks 100% (creates WIP)
-- ❌ Ignoring SMED — keeping setup-heavy batches
+- ❌ Ignoring SMED, keeping setup-heavy batches
 
 ---
 

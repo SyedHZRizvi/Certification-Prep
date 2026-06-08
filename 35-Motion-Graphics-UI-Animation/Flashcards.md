@@ -244,13 +244,13 @@
 })();
 </script>
 
-# 🃏 Motion Graphics & UI Animation — Master Flashcards
+# 🃏 Motion Graphics & UI Animation, Master Flashcards
 
 > Drill these daily. 15 minutes/day for two weeks builds the vocabulary to communicate in any motion design context.
 
 ---
 
-## Module 1 — Motion Design Principles
+## Module 1, Motion Design Principles
 
 **Q:** What are Disney's 12 Principles of Animation?
 
@@ -260,7 +260,7 @@
 
 **Q:** What does "Squash and Stretch" mean and what must be preserved?
 
-**A:** An object elongates in the direction of motion (stretch) and compresses upon impact (squash). Total volume must be preserved — the shape changes but not the overall mass.
+**A:** An object elongates in the direction of motion (stretch) and compresses upon impact (squash). Total volume must be preserved, the shape changes but not the overall mass.
 
 ---
 
@@ -296,7 +296,7 @@
 
 **Q:** What is the CSS function for defining a custom easing curve?
 
-**A:** `cubic-bezier(x1, y1, x2, y2)` — defines a bezier curve by two control points. X = time axis, Y = progress axis.
+**A:** `cubic-bezier(x1, y1, x2, y2)`, defines a bezier curve by two control points. X = time axis, Y = progress axis.
 
 ---
 
@@ -330,7 +330,7 @@
 
 ---
 
-## Module 2 — AE Expressions & Scripts
+## Module 2, AE Expressions & Scripts
 
 **Q:** What keyboard shortcut adds an expression in After Effects (Mac)?
 
@@ -352,13 +352,13 @@
 
 **Q:** What are the two required parameters of `wiggle()`?
 
-**A:** `wiggle(frequency, amplitude)` — frequency = wiggles per second; amplitude = max deviation from current value in property units.
+**A:** `wiggle(frequency, amplitude)`, frequency = wiggles per second; amplitude = max deviation from current value in property units.
 
 ---
 
 **Q:** What does `loopOut("pingpong")` do?
 
-**A:** Plays keyframes forward to the end, then backward to the start, alternating — creating a ping-pong bounce loop.
+**A:** Plays keyframes forward to the end, then backward to the start, alternating, creating a ping-pong bounce loop.
 
 ---
 
@@ -370,7 +370,7 @@
 
 **Q:** What does `valueAtTime(time - 0.3)` do when referencing Layer A from Layer B?
 
-**A:** Layer B samples Layer A's property value from 0.3 seconds ago — creating a 0.3-second delayed mirror (motion echo or trail effect).
+**A:** Layer B samples Layer A's property value from 0.3 seconds ago, creating a 0.3-second delayed mirror (motion echo or trail effect).
 
 ---
 
@@ -382,7 +382,7 @@
 
 **Q:** What is an Expression Control and where is it applied?
 
-**A:** An effect (Slider, Checkbox, Color, Angle, Point Control) applied to a null or control layer that exposes values any expression in the comp can reference — creating a Master Controller system.
+**A:** An effect (Slider, Checkbox, Color, Angle, Point Control) applied to a null or control layer that exposes values any expression in the comp can reference, creating a Master Controller system.
 
 ---
 
@@ -400,7 +400,7 @@
 
 **Q:** What language are AE expressions written in?
 
-**A:** ExtendScript — a superset of ECMAScript 3 (same era as JavaScript). `.jsx` file extension for scripts.
+**A:** ExtendScript, a superset of ECMAScript 3 (same era as JavaScript). `.jsx` file extension for scripts.
 
 ---
 
@@ -410,7 +410,7 @@
 
 ---
 
-## Module 3 — Typography & Text Animation
+## Module 3, Typography & Text Animation
 
 **Q:** How do you add a Text Animator in After Effects?
 
@@ -420,13 +420,13 @@
 
 **Q:** Which Range Selector property do you keyframe to create a left-to-right text reveal?
 
-**A:** The `Offset` property — keyframed from -100% to 100% to sweep the animator's effect across all characters.
+**A:** The `Offset` property, keyframed from -100% to 100% to sweep the animator's effect across all characters.
 
 ---
 
 **Q:** What is the "Blur > Scale > Opacity" text reveal, and what Scale value is used in the hidden state?
 
-**A:** The canonical text reveal technique. In the hidden state, Scale is set to ~120% (slightly oversized). Characters "deflate" to 100% as they reveal — mimicking physical arrival. Blur and Opacity also animate from hidden (blurred, 0%) to revealed (sharp, 100%).
+**A:** The canonical text reveal technique. In the hidden state, Scale is set to ~120% (slightly oversized). Characters "deflate" to 100% as they reveal, mimicking physical arrival. Blur and Opacity also animate from hidden (blurred, 0%) to revealed (sharp, 100%).
 
 ---
 
@@ -444,7 +444,7 @@
 
 **Q:** What font was used in Stranger Things and why?
 
-**A:** ITC Benguiat. Chosen for its 1980s mass-market paperback aesthetic and the way its thick strokes "bleed" — evoking horror/thriller paperback covers of the era.
+**A:** ITC Benguiat. Chosen for its 1980s mass-market paperback aesthetic and the way its thick strokes "bleed", evoking horror/thriller paperback covers of the era.
 
 ---
 
@@ -466,7 +466,7 @@
 
 ---
 
-## Module 4 — Logo & Brand Motion
+## Module 4, Logo & Brand Motion
 
 **Q:** What AE feature is used for the draw-on logo reveal technique?
 
@@ -482,7 +482,7 @@
 
 **Q:** Which axis rotation is used for the 3D Flip logo reveal?
 
-**A:** Y-axis rotation — the logo flips from edge-on (90°) to face-forward (0°).
+**A:** Y-axis rotation, the logo flips from edge-on (90°) to face-forward (0°).
 
 ---
 
@@ -506,7 +506,7 @@
 
 **Q:** What is the Netflix "tudum" sound and when was it introduced?
 
-**A:** The Netflix sonic logo — a precisely timed audio event paired with the N ident's final snap. Introduced in 2019.
+**A:** The Netflix sonic logo, a precisely timed audio event paired with the N ident's final snap. Introduced in 2019.
 
 ---
 
@@ -516,11 +516,11 @@
 
 ---
 
-## Module 5 — Infographic & Data Viz
+## Module 5, Infographic & Data Viz
 
 **Q:** Where should the anchor point be set on an animated bar chart bar?
 
-**A:** Bottom center — so the bar scales upward from the baseline (not downward from the top or symmetrically from center).
+**A:** Bottom center, so the bar scales upward from the baseline (not downward from the top or symmetrically from center).
 
 ---
 
@@ -556,7 +556,7 @@
 
 **Q:** What is the correct bar-to-gap ratio for bar charts?
 
-**A:** 2:1 — bars should be twice as wide as the gaps between them. Standard data visualization guideline.
+**A:** 2:1, bars should be twice as wide as the gaps between them. Standard data visualization guideline.
 
 ---
 
@@ -566,7 +566,7 @@
 
 ---
 
-## Module 6 — UI Micro-Interactions
+## Module 6, UI Micro-Interactions
 
 **Q:** What is the upper limit of response time perceived as "instant" in UI, per Google Material Design?
 
@@ -582,13 +582,13 @@
 
 **Q:** Which CSS properties are GPU-accelerated and safe for 60fps animations?
 
-**A:** `transform` and `opacity`. Avoid animating `width`, `height`, `top`, `left` — these trigger layout recalculation.
+**A:** `transform` and `opacity`. Avoid animating `width`, `height`, `top`, `left`, these trigger layout recalculation.
 
 ---
 
 **Q:** Which CSS media query supports reduced-motion accessibility?
 
-**A:** `@media (prefers-reduced-motion: reduce)` — non-optional; users with vestibular disorders depend on it.
+**A:** `@media (prefers-reduced-motion: reduce)`, non-optional; users with vestibular disorders depend on it.
 
 ---
 
@@ -600,13 +600,13 @@
 
 **Q:** What is a skeleton screen and why does it reduce perceived wait time?
 
-**A:** A placeholder showing the layout shape before data arrives. Reduces cognitive uncertainty and provides something to look at — reducing perceived wait time by 20–40% per NNGroup.
+**A:** A placeholder showing the layout shape before data arrives. Reduces cognitive uncertainty and provides something to look at, reducing perceived wait time by 20–40% per NNGroup.
 
 ---
 
 **Q:** When is a spinner (not a progress bar) the appropriate loading indicator?
 
-**A:** For indeterminate operations — when the duration is unknown. Progress bars are for determinate operations with measurable progress.
+**A:** For indeterminate operations, when the duration is unknown. Progress bars are for determinate operations with measurable progress.
 
 ---
 
@@ -622,7 +622,7 @@
 
 ---
 
-## Module 7 — Lottie & Web Animation
+## Module 7, Lottie & Web Animation
 
 **Q:** Which AE features are NOT supported by Lottie?
 
@@ -650,7 +650,7 @@
 
 **Q:** What makes React Spring fundamentally different from GSAP?
 
-**A:** React Spring uses physics simulation (mass, tension, friction) — not duration-based keyframes. Animations settle naturally when the spring reaches equilibrium.
+**A:** React Spring uses physics simulation (mass, tension, friction), not duration-based keyframes. Animations settle naturally when the spring reaches equilibrium.
 
 ---
 
@@ -672,7 +672,7 @@
 
 ---
 
-## Module 8 — Social Media Animation
+## Module 8, Social Media Animation
 
 **Q:** What are the standard dimensions for Instagram Reels, TikTok, and YouTube Shorts?
 
@@ -700,7 +700,7 @@
 
 **Q:** Why do colors sometimes shift after uploading to social media?
 
-**A:** Platforms re-encode video upon upload, causing color shift — especially in saturated colors. Export in sRGB and review the uploaded version before publishing.
+**A:** Platforms re-encode video upon upload, causing color shift, especially in saturated colors. Export in sRGB and review the uploaded version before publishing.
 
 ---
 
@@ -712,21 +712,21 @@
 
 **Q:** What is the "safe zone" for captions in 9:16 social video?
 
-**A:** Lower 20–30% of the frame — above the platform's UI chrome (like/comment/share buttons) but inside the visible area.
+**A:** Lower 20–30% of the frame, above the platform's UI chrome (like/comment/share buttons) but inside the visible area.
 
 ---
 
 **Q:** What metric does YouTube's A/B thumbnail testing measure?
 
-**A:** Impression click-through rate (CTR) — how many viewers who see the thumbnail click through to the video.
+**A:** Impression click-through rate (CTR), how many viewers who see the thumbnail click through to the video.
 
 ---
 
-## Module 9 — Sound Design & Motion
+## Module 9, Sound Design & Motion
 
 **Q:** Who coined the term "sound design" and stated that sound is approximately half the cinematic experience?
 
-**A:** Walter Murch — legendary film editor who articulated the sound/vision relationship while working on films including Apocalypse Now.
+**A:** Walter Murch, legendary film editor who articulated the sound/vision relationship while working on films including Apocalypse Now.
 
 ---
 
@@ -738,7 +738,7 @@
 
 **Q:** What is an audio transient?
 
-**A:** The initial attack of a sound — the first milliseconds where amplitude rises sharply. It's the ideal visual sync point.
+**A:** The initial attack of a sound, the first milliseconds where amplitude rises sharply. It's the ideal visual sync point.
 
 ---
 
@@ -780,7 +780,7 @@
 
 **Q:** What is "sweetening" in sound design?
 
-**A:** Adding subtle SFX that enhance the audio environment without calling conscious attention to themselves — sounds felt before they are consciously heard.
+**A:** Adding subtle SFX that enhance the audio environment without calling conscious attention to themselves, sounds felt before they are consciously heard.
 
 ---
 
@@ -790,7 +790,7 @@
 
 ---
 
-## Module 10 — Showreel & Client Work
+## Module 10, Showreel & Client Work
 
 **Q:** What is the maximum recommended showreel length?
 
@@ -806,7 +806,7 @@
 
 **Q:** What is the "ruthless edit" rule for showreels?
 
-**A:** If you hesitate even for a second about whether to include a piece, cut it. Weak pieces don't broaden a reel — they weaken it.
+**A:** If you hesitate even for a second about whether to include a piece, cut it. Weak pieces don't broaden a reel, they weaken it.
 
 ---
 
@@ -824,7 +824,7 @@
 
 **Q:** What is a "day rate" vs a "project rate" in motion design freelancing?
 
-**A:** Day rate: paid per day regardless of hours — protects when scope is unclear. Project rate: paid per defined deliverable — protects when scope is well-defined.
+**A:** Day rate: paid per day regardless of hours protects when scope is unclear. Project rate: paid per defined deliverable protects when scope is well-defined.
 
 ---
 
@@ -842,7 +842,7 @@
 
 **Q:** What is the most important conversation in a motion design project before work begins?
 
-**A:** The reference call — watching 5–10 example videos together with the client to surface aesthetic preferences they can't articulate in writing.
+**A:** The reference call, watching 5–10 example videos together with the client to surface aesthetic preferences they can't articulate in writing.
 
 ---
 

@@ -131,7 +131,7 @@ D. `prompt_cache_count: N`
 
 ### Q16. The PRIMARY binding constraint at scale on Anthropic rate limits is OFTEN: *(Analyze)*
 A. Requests per minute (RPM)
-B. Tokens per minute (TPM) — output lengths vary widely; TPM saturates first
+B. Tokens per minute (TPM), output lengths vary widely; TPM saturates first
 C. Concurrent connections
 D. Number of API keys
 
@@ -139,7 +139,7 @@ D. Number of API keys
 
 ### Q17. A 7-day workload generates 50M Claude calls. Each has 4K input + 800 output tokens, with 3K of the input cacheable. Comparing no-cache vs cache, the cost differential is: *(Analyze)*
 A. Negligible
-B. Substantial — likely >50% reduction on input portion of the bill
+B. Substantial, likely >50% reduction on input portion of the bill
 C. Cache makes it more expensive
 D. Cannot be calculated
 
@@ -149,7 +149,7 @@ D. Cannot be calculated
 A. Performance
 B. Abuse monitoring + per-user attribution
 C. Compliance
-D. None — the field is decorative
+D. None, the field is decorative
 
 ---
 
@@ -266,10 +266,10 @@ The marker on the content block enables caching of the prefix ending at that blo
 ### Q15: **B. `cache_read_input_tokens: N`**
 This is the field that confirms a cache hit and tells you how many tokens were served at the discount rate.
 
-### Q16: **B. TPM — tokens per minute**
+### Q16: **B. TPM, tokens per minute**
 With Claude's variable output lengths, TPM is more often the binding constraint than RPM, especially on Opus.
 
-### Q17: **B. Substantial — likely >50% reduction on the input portion**
+### Q17: **B. Substantial, likely >50% reduction on the input portion**
 3K of 4K input cached → ~90% off on 3K × 50M calls. Run the math; this is the bill-paying decision.
 
 ### Q18: **B. Abuse monitoring + per-user attribution**
@@ -282,7 +282,7 @@ NEVER ship the key to the browser. Proxy through your backend.
 Cached input ≈ 4K × $0.30/Mtok = $0.0012; output 600 × $15/Mtok = $0.009 → $0.0102 × 200K = ~$2,040, plus per-call overheads → ~$2,800/day range. (Numbers approximate.)
 
 ### Q21: **B. Opt into preview features**
-Cache, computer use, MCP, extended thinking — features in preview gate behind specific beta headers.
+Cache, computer use, MCP, extended thinking, features in preview gate behind specific beta headers.
 
 ### Q22: **A. `stream.text_stream`**
 The Python SDK's text-only iterator over deltas. The events iterator is `stream` itself.
@@ -326,4 +326,4 @@ Tier routing + caching + streaming + retries + observability + headroom + option
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Tool Use & Function Calling](../Module-04-Tool-Use-Function-Calling/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Tool Use & Function Calling](../Module-04-Tool-Use-Function-Calling/Reading.md)

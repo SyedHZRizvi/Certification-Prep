@@ -18,7 +18,7 @@
 
 # 🎥 Module 7 Videos: Monitoring, Performance & Tools
 
-> **How to use:** This module is *tool-heavy*. Watch the CLI utilities video first, then Wireshark — both are hands-on skills.
+> **How to use:** This module is *tool-heavy*. Watch the CLI utilities video first, then Wireshark, both are hands-on skills.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Network CLI Tools — ping, tracert, etc.</p>
+      <p class="vg-title">Network CLI Tools, ping, tracert, etc.</p>
       <p class="vg-creator">Professor Messer</p>
       <span class="vg-duration">⏱ 11 min · Every command</span>
     </div>
@@ -144,6 +144,6 @@ Answer in your notebook (without re-watching):
 2. What ports do SNMP and syslog use? Which version of SNMP would you deploy in production?
 3. List the 8 syslog severity levels in order.
 4. Show one Wireshark display filter to find TCP retransmissions.
-5. Compare NetFlow and Wireshark — when do you use each?
+5. Compare NetFlow and Wireshark, when do you use each?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

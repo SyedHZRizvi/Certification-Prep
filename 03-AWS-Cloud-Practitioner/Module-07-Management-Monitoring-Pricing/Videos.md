@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: Management, Monitoring & Pricing
 
-> **How to use:** Pay extra attention to the Support Plans video — it's the single hardest thing to memorize in CLF-C02, and it shows up 3-4 times on the exam.
+> **How to use:** Pay extra attention to the Support Plans video, it's the single hardest thing to memorize in CLF-C02, and it shows up 3-4 times on the exam.
 
 ## ⭐ Essential watching (~45 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS Support Plans — The Memorization Drill</p>
+      <p class="vg-title">AWS Support Plans, The Memorization Drill</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 10 min · MUST KNOW for exam</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CloudWatch vs CloudTrail vs Config — Don't Confuse Them</p>
+      <p class="vg-title">CloudWatch vs CloudTrail vs Config, Don't Confuse Them</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 11 min · The classic trio</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Budgets, Cost Explorer, Pricing Calculator — Cost Tools</p>
+      <p class="vg-title">Budgets, Cost Explorer, Pricing Calculator, Cost Tools</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 13 min · Don't get a surprise bill</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Trusted Advisor — All 5 Categories Explained</p>
+      <p class="vg-title">Trusted Advisor, All 5 Categories Explained</p>
       <p class="vg-creator">Tutorials Dojo</p>
       <span class="vg-duration">⏱ 9 min · Best-practice scoring</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Systems Manager — Session Manager, Parameter Store, Patch Mgr</p>
+      <p class="vg-title">Systems Manager, Session Manager, Parameter Store, Patch Mgr</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 12 min · Ops Swiss Army knife</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Data Transfer Costs — The Hidden Bill</p>
+      <p class="vg-title">AWS Data Transfer Costs, The Hidden Bill</p>
       <p class="vg-creator">freeCodeCamp.org</p>
       <span class="vg-duration">⏱ 10 min · #1 cost surprise</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Compute Optimizer — ML Right-Sizing</p>
+      <p class="vg-title">Compute Optimizer, ML Right-Sizing</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 8 min · Saves real money</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Analyzing CUR with Athena — Finops Workflow</p>
+      <p class="vg-title">Analyzing CUR with Athena, Finops Workflow</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 30 min · Power users</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">QuickSight — Serverless BI for AWS</p>
+      <p class="vg-title">QuickSight, Serverless BI for AWS</p>
       <p class="vg-creator">Tutorials Dojo</p>
       <span class="vg-duration">⏱ 12 min · BI dashboards</span>
     </div>
@@ -135,7 +135,7 @@
 ## ✅ After watching
 
 1. The 5 Support plans + their headline response times?
-2. CloudWatch vs CloudTrail vs Config — one line each.
+2. CloudWatch vs CloudTrail vs Config, one line each.
 3. Trusted Advisor's 5 categories?
 4. When do you use Pricing Calculator vs Cost Explorer?
 5. Why is data transfer OUT expensive but IN free?

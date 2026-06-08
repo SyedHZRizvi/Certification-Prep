@@ -1,4 +1,4 @@
-# Module 7 Cheat Sheet — Motion Capture 🎬
+# Module 7 Cheat Sheet, Motion Capture 🎬
 
 ## Three Mocap Technology Types
 
@@ -27,7 +27,7 @@
 
 ---
 
-## Retargeting — The Core Challenge
+## Retargeting, The Core Challenge
 
 **Retargeting paradox:** Different leg length → same steps, less ground → appears faster.
 
@@ -45,7 +45,7 @@
 ```
 1. Identify contact frames (foot meant to be stationary)
 2. Set IK constraint (pin foot to world-space)
-3. Blend in/out (2–4 frames — no snapping)
+3. Blend in/out (2–4 frames, no snapping)
 4. Check hip/root compensation
 5. Verify with ground contact curves (no penetration, no float)
 ```
@@ -165,5 +165,5 @@
 | Contact intent in retargeting | Actor contacts ground at f12 → character must also contact at ~f12 |
 | MotionBuilder "Plot" operation | Bakes live retargeting to keyframes for export |
 | Avatar volume innovation | 6× larger than previous; real-time Na'vi character playback |
-| War for Apes quadruped walk | Keyframed by animators — not retargeted from bipedal actor |
+| War for Apes quadruped walk | Keyframed by animators, not retargeted from bipedal actor |
 | Markerless mocap use case | Crowd background characters; previz; NOT hero shots |

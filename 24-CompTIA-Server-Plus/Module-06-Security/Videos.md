@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Target 2013 Breach — Lessons</p>
+      <p class="vg-title">Target 2013 Breach, Lessons</p>
       <p class="vg-creator">community case study</p>
       <span class="vg-duration">⏱ 22 min · Vendor access + segmentation</span>
     </div>
@@ -134,10 +134,10 @@
 Answer these in your notebook:
 
 1. Name 3 physical security controls + 3 firmware security controls.
-2. RBAC vs ABAC — what's the difference?
+2. RBAC vs ABAC, what's the difference?
 3. Why is a UEFI password meaningless without Secure Boot enabled (and vice versa)?
 4. What does JIT in PAM stand for and why does it matter?
 5. Name 2 tools each for Windows and Linux patch management.
-6. EDR vs antivirus — what's the differentiator?
+6. EDR vs antivirus, what's the differentiator?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

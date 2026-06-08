@@ -112,10 +112,10 @@ model = GenerativeModel("gemini-2.5-flash", tools=[tool])
 ❌ Often **wrong**:
 
 - "Search and Vector Search are the same"
-- "Fine-tune for knowledge updates" (no — RAG)
+- "Fine-tune for knowledge updates" (no, RAG)
 - "Embeddings are model-agnostic" (no)
 - "RAG eliminates hallucinations" (reduces, doesn't eliminate)
-- "BigQuery vector is for online low-latency" (no — batch/analytics)
+- "BigQuery vector is for online low-latency" (no, batch/analytics)
 
 ---
 

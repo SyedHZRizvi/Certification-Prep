@@ -1,4 +1,4 @@
-# 📚 Recommended Readings — AWS ML Specialty (MLS-C01)
+# 📚 Recommended Readings, AWS ML Specialty (MLS-C01)
 
 > Curated bibliography for the AWS Certified Machine Learning Specialty (MLS-C01) track. 65+ entries sequenced by **when in the course to engage with each**. None are required for passing the exam; all elevate the depth of understanding for production ML on AWS.
 
@@ -14,7 +14,7 @@ If you read only 5 things in addition to this course, read these:
 2. **Amazon SageMaker Developer Guide.** Every SageMaker feature in detail. Skim the table of contents; deep-read the sections you weren't confident on after the practice exams.
 3. **AWS Well-Architected Machine Learning Lens (whitepaper).** AWS's own best-practice document for production ML.
 4. **Géron, Aurélien (2022). Hands-On Machine Learning with Scikit-Learn, Keras & TensorFlow (3rd ed.). O'Reilly.** The best applied ML book on the market. Chapters 2-4 and 7 pair with Modules 1-4 of this course.
-5. **Hidden Technical Debt in Machine Learning Systems — Sculley et al. (2015), NIPS.** The foundational MLOps paper. ~10 pages. Read before Module 9.
+5. **Hidden Technical Debt in Machine Learning Systems, Sculley et al. (2015), NIPS.** The foundational MLOps paper. ~10 pages. Read before Module 9.
 
 ---
 
@@ -67,20 +67,20 @@ If you read only 5 things in addition to this course, read these:
 - 📄 **McInnes, Healy, Melville (2018).** *UMAP: Uniform Manifold Approximation and Projection.* arXiv. UMAP origin.
 - 📄 **Chawla et al. (2002).** *SMOTE: Synthetic Minority Over-sampling Technique.* JAIR. SMOTE origin.
 - 📰 **Kaggle "Grandmaster" interviews** at Coursera / Medium. FE dominates winning approaches; transcripts are gold.
-- 📰 **Sebastian Raschka's blog** — practical FE essays.
+- 📰 **Sebastian Raschka's blog**, practical FE essays.
 
 ---
 
 ## 🧠 SageMaker Algorithms (Module 4)
 
 - 📄 **Chen & Guestrin (2016).** *XGBoost: A Scalable Tree Boosting System.* KDD. The XGBoost paper.
-- 📄 **Ke et al. (2017).** *LightGBM: A Highly Efficient Gradient Boosting Decision Tree.* NeurIPS. LightGBM — sometimes competitive with XGBoost.
+- 📄 **Ke et al. (2017).** *LightGBM: A Highly Efficient Gradient Boosting Decision Tree.* NeurIPS. LightGBM, sometimes competitive with XGBoost.
 - 📄 **Prokhorenkova et al. (2018).** *CatBoost: Unbiased Boosting with Categorical Features.* NeurIPS. CatBoost.
-- 📄 **Liu, Ting, Zhou (2008).** *Isolation Forest.* ICDM. Isolation Forest — SageMaker RCF's intellectual ancestor.
+- 📄 **Liu, Ting, Zhou (2008).** *Isolation Forest.* ICDM. Isolation Forest, SageMaker RCF's intellectual ancestor.
 - 📄 **Rendle (2010).** *Factorization Machines.* ICDM. The FM paper.
 - 📄 **Salinas, Flunkert, Gasthaus (2020).** *DeepAR: Probabilistic forecasting with autoregressive recurrent networks.* International Journal of Forecasting. DeepAR origin.
 - 📄 **Mikolov et al. (2013).** *Distributed Representations of Words and Phrases.* NIPS. Word2Vec (BlazingText's lineage).
-- 📰 **AWS ML Blog — `category=algorithms`.** Practical applications of each built-in.
+- 📰 **AWS ML Blog, `category=algorithms`.** Practical applications of each built-in.
 
 ---
 
@@ -94,34 +94,34 @@ If you read only 5 things in addition to this course, read these:
 - 📄 **Rombach et al. (2022).** *High-Resolution Image Synthesis with Latent Diffusion Models.* CVPR. Stable Diffusion paper.
 - 📄 **Touvron et al. (2023).** *Llama 2: Open Foundation and Fine-Tuned Chat Models.* Meta paper.
 - 📄 **Touvron et al. (2024).** *Llama 3.* Meta paper (model card + technical report).
-- 📰 **AWS Neuron SDK docs** — awsdocs-neuron.readthedocs-hosted.com — Trainium / Inferentia compilation.
-- 📰 **NVIDIA Tensor Core blog posts** — mixed-precision and FP8 best practices.
+- 📰 **AWS Neuron SDK docs** awsdocs-neuron.readthedocs-hosted.com Trainium / Inferentia compilation.
+- 📰 **NVIDIA Tensor Core blog posts**, mixed-precision and FP8 best practices.
 
 ---
 
 ## 🗣️ Managed AI Services (Module 6)
 
-- 📖 **AWS Comprehend Developer Guide** — full coverage of pre-trained APIs and Custom Classifiers / NER.
-- 📖 **AWS Rekognition Developer Guide** — image + video.
-- 📖 **AWS Textract Developer Guide** — forms, tables, queries, AnalyzeID, AnalyzeExpense.
-- 📰 **JPMorgan COiN case studies** — Bloomberg (2017), Wired (2018), American Banker (2019). The reference enterprise managed-AI deployment.
-- 📰 **Stripe Engineering Blog** — fraud detection + clinical-notes patterns (when public).
-- 📰 **AWS ML Blog — `category=Computer Vision`, `category=NLP`.**
+- 📖 **AWS Comprehend Developer Guide**, full coverage of pre-trained APIs and Custom Classifiers / NER.
+- 📖 **AWS Rekognition Developer Guide**, image + video.
+- 📖 **AWS Textract Developer Guide**, forms, tables, queries, AnalyzeID, AnalyzeExpense.
+- 📰 **JPMorgan COiN case studies**, Bloomberg (2017), Wired (2018), American Banker (2019). The reference enterprise managed-AI deployment.
+- 📰 **Stripe Engineering Blog**, fraud detection + clinical-notes patterns (when public).
+- 📰 **AWS ML Blog, `category=Computer Vision`, `category=NLP`.**
 
 ---
 
 ## 🌟 Bedrock & GenAI (Module 7)
 
-- 📖 **Amazon Bedrock User Guide** — `docs.aws.amazon.com/bedrock/`. Comprehensive.
-- 📖 **Knowledge Bases for Amazon Bedrock** — `docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html`.
-- 📖 **Agents for Amazon Bedrock** — `docs.aws.amazon.com/bedrock/latest/userguide/agents.html`.
-- 📖 **Anthropic Claude Documentation** — anthropic.com/docs. Prompt engineering best practices.
+- 📖 **Amazon Bedrock User Guide**, `docs.aws.amazon.com/bedrock/`. Comprehensive.
+- 📖 **Knowledge Bases for Amazon Bedrock**, `docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html`.
+- 📖 **Agents for Amazon Bedrock**, `docs.aws.amazon.com/bedrock/latest/userguide/agents.html`.
+- 📖 **Anthropic Claude Documentation**, anthropic.com/docs. Prompt engineering best practices.
 - 📄 **Lewis et al. (2020).** *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS. RAG paper.
 - 📄 **Wei et al. (2022).** *Chain-of-Thought Prompting Elicits Reasoning in LLMs.* NeurIPS. CoT prompting.
 - 📄 **Touvron et al. (2023, 2024).** Llama series papers.
-- 📄 **Karpukhin et al. (2020).** *Dense Passage Retrieval for Open-Domain Question Answering.* EMNLP. DPR — the embedding-retrieval pattern.
-- 📰 **OpenAI Cookbook** — github.com/openai/openai-cookbook. RAG and tool-use patterns applicable to Bedrock too.
-- 📰 **Latent Space podcast** — applied GenAI engineering.
+- 📄 **Karpukhin et al. (2020).** *Dense Passage Retrieval for Open-Domain Question Answering.* EMNLP. DPR, the embedding-retrieval pattern.
+- 📰 **OpenAI Cookbook**, github.com/openai/openai-cookbook. RAG and tool-use patterns applicable to Bedrock too.
+- 📰 **Latent Space podcast**, applied GenAI engineering.
 
 ---
 
@@ -135,7 +135,7 @@ If you read only 5 things in addition to this course, read these:
 - 📄 **Buolamwini & Gebru (2018).** *Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification.* FAT*. Foundational bias-detection paper for commercial CV systems.
 - 📄 **Snoek, Larochelle, Adams (2012).** *Practical Bayesian Optimization of ML Algorithms.* NeurIPS. Bayesian HPO origin.
 - 📄 **Li et al. (2017).** *Hyperband: A Novel Bandit-Based Approach to Hyperparameter Optimization.* JMLR. Hyperband.
-- 📰 **Fairlearn** — fairlearn.org. Open-source fairness toolkit; complements Clarify.
+- 📰 **Fairlearn**, fairlearn.org. Open-source fairness toolkit; complements Clarify.
 
 ---
 
@@ -147,10 +147,10 @@ If you read only 5 things in addition to this course, read these:
 - 📖 **Kreuzberger, Kühl, Hirschl (2023).** *Machine Learning Operations (MLOps): Overview, Definition, and Architecture.* IEEE Access. Survey paper.
 - 📄 **Sculley et al. (2015).** *Hidden Technical Debt in Machine Learning Systems.* NIPS. Required reading.
 - 📄 **Breck et al. (2017).** *The ML Test Score: A Rubric for ML Production Readiness.* IEEE Big Data. The "is this model ready to ship?" rubric.
-- 📰 **Made With ML (Goku Mohandas)** — madewithml.com. Modern open-source MLOps curriculum.
-- 📰 **Eugene Yan's blog** — eugeneyan.com. Practical MLOps essays from a senior MLE.
-- 📰 **Chip Huyen's blog** — huyenchip.com. ML systems essays.
-- 📰 **AWS ML Blog — `category=MLOps`.**
+- 📰 **Made With ML (Goku Mohandas)**, madewithml.com. Modern open-source MLOps curriculum.
+- 📰 **Eugene Yan's blog**, eugeneyan.com. Practical MLOps essays from a senior MLE.
+- 📰 **Chip Huyen's blog**, huyenchip.com. ML systems essays.
+- 📰 **AWS ML Blog, `category=MLOps`.**
 - 🎤 **re:Invent AIM403 (2023):** *MLOps at Amazon Music.* The reference architecture.
 - 🎤 **re:Invent AIM319 (2022):** *Capital One Real-Time Fraud Detection.* Production MLOps case study.
 
@@ -158,15 +158,15 @@ If you read only 5 things in addition to this course, read these:
 
 ## 🔐 Security, Cost & Production (Module 10)
 
-- 📖 **AWS Well-Architected Framework (full docs)** — `docs.aws.amazon.com/wellarchitected/`. 6 pillars; quoted on the exam.
-- 📖 **AWS Builders' Library** — `aws.amazon.com/builders-library`. Essays by AWS Principal Engineers.
-  - **Marc Brooker — Timeouts, retries, and backoff with jitter**
-  - **Marc Brooker — Avoiding fallback in distributed systems**
-  - **Becky Weiss — Static stability using Availability Zones**
+- 📖 **AWS Well-Architected Framework (full docs)**, `docs.aws.amazon.com/wellarchitected/`. 6 pillars; quoted on the exam.
+- 📖 **AWS Builders' Library**, `aws.amazon.com/builders-library`. Essays by AWS Principal Engineers.
+  - **Marc Brooker, Timeouts, retries, and backoff with jitter**
+  - **Marc Brooker, Avoiding fallback in distributed systems**
+  - **Becky Weiss, Static stability using Availability Zones**
 - 📖 **AWS Macie User Guide.**
 - 📖 **AWS Security Best Practices for SageMaker.** Whitepaper.
-- 📰 **Corey Quinn's *Last Week in AWS* newsletter** — `lastweekinaws.com`. Practical cost-engineering essays. Strong sense of humour.
-- 📰 **AWS Cost Optimization Workshops** — public re:Invent material; search for SVS401.
+- 📰 **Corey Quinn's *Last Week in AWS* newsletter**, `lastweekinaws.com`. Practical cost-engineering essays. Strong sense of humour.
+- 📰 **AWS Cost Optimization Workshops**, public re:Invent material; search for SVS401.
 - 🎤 **re:Invent SVS401 (annual):** *Architecting for sustainability on AWS.*
 
 ---
@@ -175,37 +175,37 @@ If you read only 5 things in addition to this course, read these:
 
 These are not on the exam, but elevate the realism of your capstone or interview answers.
 
-- 📰 **Anthem / Elevance MLOps case study** — public AWS Summit talks 2023.
-- 📰 **Capital One — All-in on AWS** — Bloomberg, re:Invent 2018 / 2022 keynotes.
-- 📰 **Pinterest ML Infrastructure** — re:Invent + Pinterest engineering blog 2022/2023.
-- 📰 **Stripe Radar engineering posts** — public talks at Strange Loop and Stripe Sessions.
-- 📰 **NASA JPL on AWS** — anomaly detection at planetary scale; re:Invent talks.
+- 📰 **Anthem / Elevance MLOps case study**, public AWS Summit talks 2023.
+- 📰 **Capital One All-in on AWS** Bloomberg, re:Invent 2018 / 2022 keynotes.
+- 📰 **Pinterest ML Infrastructure**, re:Invent + Pinterest engineering blog 2022/2023.
+- 📰 **Stripe Radar engineering posts**, public talks at Strange Loop and Stripe Sessions.
+- 📰 **NASA JPL on AWS**, anomaly detection at planetary scale; re:Invent talks.
 
 ---
 
 ## 📰 Newsletters & Podcasts (Continuous Learning)
 
-- 📰 **The Pragmatic Engineer** (Gergely Orosz) — pragmaticengineer.com. Some ML systems content.
-- 📰 **Latent Space** — `latent.space`. Applied GenAI / LLM engineering.
-- 📰 **Last Week in AWS** — `lastweekinaws.com`. Cost engineering + AWS news.
-- 📰 **MLOps Community Slack + podcast** — `mlops.community`. Practitioner-driven.
-- 📰 **TWIMLAI podcast (Sam Charrington)** — `twimlai.com`. Long-form ML interviews.
-- 📰 **AWS re:Invent + AWS Summit YouTube channels** — every year's official sessions.
+- 📰 **The Pragmatic Engineer** (Gergely Orosz), pragmaticengineer.com. Some ML systems content.
+- 📰 **Latent Space**, `latent.space`. Applied GenAI / LLM engineering.
+- 📰 **Last Week in AWS**, `lastweekinaws.com`. Cost engineering + AWS news.
+- 📰 **MLOps Community Slack + podcast**, `mlops.community`. Practitioner-driven.
+- 📰 **TWIMLAI podcast (Sam Charrington)**, `twimlai.com`. Long-form ML interviews.
+- 📰 **AWS re:Invent + AWS Summit YouTube channels**, every year's official sessions.
 
 ---
 
 ## 🎓 Free Online Courses (Augment This Curriculum)
 
-- 🎓 **Andrew Ng — Machine Learning Specialization** (Coursera, free to audit). Foundations.
-- 🎓 **Andrew Ng — Deep Learning Specialization** (Coursera). CNNs, RNNs, transformers.
-- 🎓 **DeepLearning.AI — Generative AI with Large Language Models** (Coursera). LLM-specific.
-- 🎓 **MIT 6.S191 — Introduction to Deep Learning** — `introtodeeplearning.com`. Free MIT lectures.
-- 🎓 **Stanford CS229 — Machine Learning** — Andrew Ng's original Stanford ML class on YouTube.
-- 🎓 **Stanford CS231n — CNNs for Visual Recognition** — free YouTube.
-- 🎓 **Stanford CS224n — NLP with Deep Learning** — free YouTube.
-- 🎓 **Made With ML by Goku Mohandas** — `madewithml.com`. Modern free MLOps curriculum.
-- 🎓 **fast.ai** — `fast.ai`. Practical DL course (Jeremy Howard's).
-- 🎓 **Hugging Face course** — `huggingface.co/learn`. Transformers + diffusion.
+- 🎓 **Andrew Ng, Machine Learning Specialization** (Coursera, free to audit). Foundations.
+- 🎓 **Andrew Ng, Deep Learning Specialization** (Coursera). CNNs, RNNs, transformers.
+- 🎓 **DeepLearning.AI, Generative AI with Large Language Models** (Coursera). LLM-specific.
+- 🎓 **MIT 6.S191 Introduction to Deep Learning** `introtodeeplearning.com`. Free MIT lectures.
+- 🎓 **Stanford CS229 Machine Learning** Andrew Ng's original Stanford ML class on YouTube.
+- 🎓 **Stanford CS231n CNNs for Visual Recognition** free YouTube.
+- 🎓 **Stanford CS224n NLP with Deep Learning** free YouTube.
+- 🎓 **Made With ML by Goku Mohandas**, `madewithml.com`. Modern free MLOps curriculum.
+- 🎓 **fast.ai**, `fast.ai`. Practical DL course (Jeremy Howard's).
+- 🎓 **Hugging Face course**, `huggingface.co/learn`. Transformers + diffusion.
 
 ---
 
@@ -220,8 +220,8 @@ Some references reward re-reading at different career stages. Here is when:
 | Before Module 8 | Lundberg & Lee (SHAP); Hardt, Price, Srebro (fairness) |
 | Before Module 9 | Sculley et al. 2015 (technical debt); Huyen Ch 1-4 |
 | 6 months after passing | Builders' Library essays; re:Invent latest |
-| 1 year after passing | Re-read Hidden Technical Debt — you'll see new things |
-| 2 years after passing | Re-read your capstone — and laugh / cry |
+| 1 year after passing | Re-read Hidden Technical Debt, you'll see new things |
+| 2 years after passing | Re-read your capstone, and laugh / cry |
 
 ---
 
@@ -233,8 +233,8 @@ If you have ~10 hours of total reading time outside this course:
 2. Géron Chapters 2-4, 7 (4 hours)
 3. AWS Well-Architected Machine Learning Lens (1 hour)
 4. Sculley et al. 2015 (30 minutes)
-5. AWS Builders' Library — Brooker's "Timeouts, retries, backoff" + "Static stability" (1 hour)
-6. SageMaker Developer Guide — skim the algorithms chapter (1 hour)
+5. AWS Builders' Library, Brooker's "Timeouts, retries, backoff" + "Static stability" (1 hour)
+6. SageMaker Developer Guide, skim the algorithms chapter (1 hour)
 7. Capital One re:Invent 2022 video (1 hour)
 8. *Pinterest ML Infrastructure* re:Invent video (30 minutes)
 
@@ -242,4 +242,4 @@ If you have ~10 hours of total reading time outside this course:
 
 ---
 
-🎓 Good reading. Reading is where your *understanding* gets deep enough to *teach others* — which is the real cert.
+🎓 Good reading. Reading is where your *understanding* gets deep enough to *teach others*, which is the real cert.

@@ -15,7 +15,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   <div class="vg-card-body">
     <div class="vg-card-title">Rotobrush 2.0 in After Effects: Complete Tutorial</div>
     <div class="vg-card-meta">Surfaced Studio · ~20 min</div>
-    <div class="vg-card-desc">Complete Rotobrush 2.0 workflow — painting strokes, propagation, Refine Edge for hair, and freeze workflow.</div>
+    <div class="vg-card-desc">Complete Rotobrush 2.0 workflow, painting strokes, propagation, Refine Edge for hair, and freeze workflow.</div>
   </div>
 </a>
 
@@ -24,7 +24,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   <div class="vg-card-body">
     <div class="vg-card-title">Manual Rotoscoping: Spline Mask Animation in After Effects</div>
     <div class="vg-card-meta">Film Riot · ~18 min</div>
-    <div class="vg-card-desc">Traditional frame-by-frame roto technique — drawing, keyframing, and refining Bezier splines for complex subjects.</div>
+    <div class="vg-card-desc">Traditional frame-by-frame roto technique, drawing, keyframing, and refining Bezier splines for complex subjects.</div>
   </div>
 </a>
 
@@ -33,7 +33,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   <div class="vg-card-body">
     <div class="vg-card-title">Professional Roto Tips: The Cheat Stack and Efficiency Techniques</div>
     <div class="vg-card-meta">VFX tutorial / Corridor Crew · ~15 min</div>
-    <div class="vg-card-desc">How roto professionals build layered matte stacks to roto complex shapes efficiently — the cheat stack approach.</div>
+    <div class="vg-card-desc">How roto professionals build layered matte stacks to roto complex shapes efficiently, the cheat stack approach.</div>
   </div>
 </a>
 
@@ -42,7 +42,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   <div class="vg-card-body">
     <div class="vg-card-title">Masking for Color Isolation in After Effects</div>
     <div class="vg-card-meta">Video Copilot · ~14 min</div>
-    <div class="vg-card-desc">Using shape masks and track mattes for selective color grading — sky isolation, skin tone isolation, and vignettes.</div>
+    <div class="vg-card-desc">Using shape masks and track mattes for selective color grading, sky isolation, skin tone isolation, and vignettes.</div>
   </div>
 </a>
 
@@ -59,7 +59,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   <div class="vg-card-body">
     <div class="vg-card-title">Silhouette FX: Professional Rotoscoping Workflow</div>
     <div class="vg-card-meta">Boris FX / Silhouette official · ~22 min</div>
-    <div class="vg-card-desc">Introduction to Silhouette's node-based roto workflow — spline tools, feathering, and export for film pipeline.</div>
+    <div class="vg-card-desc">Introduction to Silhouette's node-based roto workflow, spline tools, feathering, and export for film pipeline.</div>
   </div>
 </a>
 
@@ -77,7 +77,7 @@ title: "Module 3 Videos: Rotoscoping & Masking"
   <div class="vg-card-body">
     <div class="vg-card-title">Track Mattes in After Effects: Alpha, Luma, and Inverted Explained</div>
     <div class="vg-card-meta">Surfaced Studio · ~11 min</div>
-    <div class="vg-card-desc">The four track matte types in AE — Alpha Matte, Inverted Alpha, Luma Matte, Inverted Luma — and when to use each.</div>
+    <div class="vg-card-desc">The four track matte types in AE Alpha Matte, Inverted Alpha, Luma Matte, Inverted Luma and when to use each.</div>
   </div>
 </a>
 

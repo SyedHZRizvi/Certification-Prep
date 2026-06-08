@@ -1,6 +1,6 @@
-# 🧪 Practice Exam 2 — Azure AI Engineer (AI-102 Style)
+# 🧪 Practice Exam 2, Azure AI Engineer (AI-102 Style)
 
-> **Conditions:** Set an 80-minute timer. 45 questions. Treat it like the real thing — no notes, no Googling.
+> **Conditions:** Set an 80-minute timer. 45 questions. Treat it like the real thing, no notes, no Googling.
 > **Pass mark:** 32/45 (~70%)
 > Take this AFTER finishing all 8 modules.
 
@@ -114,7 +114,7 @@ D. CosmosDbPartitionedStorage or BlobStorage
 A. Recommended for new bots
 B. Still on the AI-102 exam as primary
 C. Replaced by Bot Service
-D. Authoring is retired — use CLU instead
+D. Authoring is retired, use CLU instead
 
 ### 19. Azure OpenAI is provisioned as kind:
 A. AIServices
@@ -250,19 +250,19 @@ D. Is the last step
 
 ### 41. **Case study (3 parts).** Maya's startup will launch a multilingual customer-support agent that uses voice, answers from a PDF library, and routes structured commands.
 
-Part A — For voice in/out across web + Teams, choose:
+Part A, For voice in/out across web + Teams, choose:
 A. Custom Vision
 B. Bot Framework bot with Direct Line Speech channel (uses Speech SDK)
 C. Azure OpenAI Whisper only
 D. CLU only
 
-Part B — For RAG over PDFs with citations:
+Part B, For RAG over PDFs with citations:
 A. Custom Vision
 B. Azure AI Search hybrid+semantic + Azure OpenAI On Your Data
 C. Document Intelligence alone
 D. CLU
 
-Part C — For multilingual sentiment + PII redaction on incoming chat:
+Part C, For multilingual sentiment + PII redaction on incoming chat:
 A. Speech + Translator only
 B. Azure AI Language (detect_language, sentiment, PII) + Translator
 C. CLU
@@ -368,10 +368,10 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 
 **Q5. Answer: A (Index, Indexer, Skillset, Knowledge Store, Data Source)**
 
-**Why A is correct.** The DISKS mnemonic — these five concepts are the spine of Azure AI Search.
+**Why A is correct.** The DISKS mnemonic, these five concepts are the spine of Azure AI Search.
 
 **Why the other options are wrong.**
-- B, C, D: Other systems' terminology (Elasticsearch, Solr, S3) — not Azure AI Search.
+- B, C, D: Other systems' terminology (Elasticsearch, Solr, S3), not Azure AI Search.
 
 **Exam-takeaway.** DISKS is a guaranteed exam question.
 
@@ -516,14 +516,14 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 **Why D is correct.** Both are durable, multi-instance-safe.
 
 **Why the other options are wrong.**
-- A (MemoryStorage): Dev only — lost on restart, not multi-instance safe.
+- A (MemoryStorage): Dev only, lost on restart, not multi-instance safe.
 - B / C: Not standard Bot Framework patterns.
 
 **Exam-takeaway.** Cosmos or Blob in production.
 
 ---
 
-**Q18. Answer: D (Retired — use CLU instead)**
+**Q18. Answer: D (Retired, use CLU instead)**
 
 **Why D is correct.** LUIS authoring retired in 2023; CLU is the successor.
 
@@ -553,7 +553,7 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 **Why B is correct.** The chat completions API targets the deployment, not the base model.
 
 **Why the other options are wrong.**
-- A (Base model name): Wrong — deployments are named separately.
+- A (Base model name): Wrong, deployments are named separately.
 - C (API version): Different parameter.
 - D (Region): Set via endpoint URL.
 
@@ -623,7 +623,7 @@ D. Azure adds RBAC, private networking, region pinning, content filters, residen
 
 **Q26. Answer: C (Style / tone / output format)**
 
-**Why C is correct.** Fine-tuning best suits style, tone, output-format consistency — not adding facts.
+**Why C is correct.** Fine-tuning best suits style, tone, output-format consistency, not adding facts.
 
 **Why the other options are wrong.**
 - A: Knowledge → RAG.

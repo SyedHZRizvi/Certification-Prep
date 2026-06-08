@@ -36,7 +36,7 @@ Need region-loss survival?
 | Cold | 90 d | Rarely accessed |
 | **Archive** | 180 d | Long-term retention, **hours** to rehydrate |
 
-🧠 **30 / 90 / 180 — Cool / Cold / Archive**
+🧠 **30 / 90 / 180, Cool / Cold / Archive**
 
 ---
 
@@ -48,7 +48,7 @@ Need region-loss survival?
 | Service SAS | Account key (or via SAP) | Delete the SAP |
 | **User Delegation SAS** | Entra ID OAuth token | Revoke the user delegation key |
 
-🔥 **Prefer User Delegation SAS** — auditable per user, no account-key exposure.
+🔥 **Prefer User Delegation SAS**, auditable per user, no account-key exposure.
 
 SAS query params to remember:
 
@@ -61,7 +61,7 @@ SAS query params to remember:
 
 | | Public access | Service endpoint | Private endpoint |
 |---|---------------|-------------------|--------------------|
-| Has public IP? | Yes | Yes (but firewalled) | Optional — disable for full lockdown |
+| Has public IP? | Yes | Yes (but firewalled) | Optional, disable for full lockdown |
 | Reachable from internet? | Yes | Restricted | No |
 | Routing | Internet | Azure backbone (from allowed subnet) | Private VNet via PE NIC |
 

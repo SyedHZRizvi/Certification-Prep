@@ -104,7 +104,7 @@ D. User Authentication Console
 
 ---
 
-### Q13. A user complains they cannot install a printer driver — UAC keeps prompting. The correct response: *(Apply)*
+### Q13. A user complains they cannot install a printer driver, UAC keeps prompting. The correct response: *(Apply)*
 A. Disable UAC system-wide
 B. Provide administrator credentials at the prompt (or run installer as administrator)
 C. Reformat Windows
@@ -121,7 +121,7 @@ D. Event Viewer
 ---
 
 ### Q15. A Mac with FileVault enabled is fully encrypted. To DECRYPT and recover files from outside the OS, you need: *(Apply)*
-A. Nothing — files are always readable
+A. Nothing, files are always readable
 B. The user's password OR the recovery key generated during FileVault setup
 C. The serial number of the Mac
 D. Apple Support's permission
@@ -255,10 +255,10 @@ apt is Debian/Ubuntu. yum/dnf is RHEL. pacman is Arch. brew is macOS Homebrew.
 Cross-platform read/write on Mac+Windows+Linux, no 4 GB file limit. The right choice for a portable drive that's not a boot volume.
 
 ### Q7: **B. mbr2gpt**
-`mbr2gpt /validate /allowFullOS` then `/convert` — used to enable UEFI on a Win 10 → Win 11 upgrade.
+`mbr2gpt /validate /allowFullOS` then `/convert`, used to enable UEFI on a Win 10 → Win 11 upgrade.
 
 ### Q8: **B. ps**
-PowerShell's `Get-Process` lists running processes — Linux equivalent is `ps` (or `top`/`htop`).
+PowerShell's `Get-Process` lists running processes, Linux equivalent is `ps` (or `top`/`htop`).
 
 ### Q9: **B. zsh**
 zsh became default in macOS 10.15 Catalina (was bash before).
@@ -327,7 +327,7 @@ The modern stack for laptop encryption + lost-device response. The minimum viabl
 - 27–28/28 → 🏆 OS mastered. Onward to security.
 - 24–26/28 → ✅ Solid. Drill the command-line equivalence table.
 - 19–23/28 → ⚠️ Re-read the Windows + Linux commands sections.
-- <19/28 → 🔁 Restart with the Reading.md. OS is 31% — it must be locked in.
+- <19/28 → 🔁 Restart with the Reading.md. OS is 31%, it must be locked in.
 
 ---
 
@@ -344,4 +344,4 @@ The modern stack for laptop encryption + lost-device response. The minimum viabl
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Security Fundamentals](../Module-08-Security/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Security Fundamentals](../Module-08-Security/Reading.md)

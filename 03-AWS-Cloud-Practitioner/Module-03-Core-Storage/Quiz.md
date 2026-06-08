@@ -25,7 +25,7 @@ D. Unlimited
 ### Q3. S3 buckets are scoped: *(Understand)*
 A. Per Availability Zone
 B. Per Region (the bucket lives in a Region, but the name is global)
-C. Globally — bucket names must be unique across all AWS accounts in the world
+C. Globally, bucket names must be unique across all AWS accounts in the world
 D. Both B and C
 
 ---
@@ -224,16 +224,16 @@ EFS is the managed NFS shared file system for Linux. EBS attaches to one instanc
 Cheapest tier. Retrieval is 12 hours (Standard) up to 48 hours (Bulk). Perfect for "must keep, almost never read."
 
 ### Q6: **B. gp3**
-gp3 became the recommended general-purpose default — fixed baseline 3,000 IOPS, configurable, cheaper than gp2.
+gp3 became the recommended general-purpose default, fixed baseline 3,000 IOPS, configurable, cheaper than gp2.
 
 ### Q7: **B. AWS Snowball Edge**
 Petabyte-scale migration over physical hardware. AWS ships a rugged box, you copy data, ship it back.
 
 ### Q8: **C. S3 One Zone-IA**
-Stores in 1 AZ only — 20% cheaper than Standard-IA but loses data if that AZ is destroyed. Use only for recreatable data.
+Stores in 1 AZ only, 20% cheaper than Standard-IA but loses data if that AZ is destroyed. Use only for recreatable data.
 
 ### Q9: **B. High-performance ephemeral storage on the host that is LOST on stop/terminate**
-Instance Store is NVMe SSD physically on the EC2 host — very fast, but ephemeral. Use for cache/scratch.
+Instance Store is NVMe SSD physically on the EC2 host, very fast, but ephemeral. Use for cache/scratch.
 
 ### Q10: **C. Tape Gateway**
 Replaces physical tape backups with a VTL interface. Tapes stored in S3 / S3 Glacier.
@@ -245,7 +245,7 @@ CRR replicates objects to another Region. Versioning must be enabled on both sou
 Famous "11 nines" durability. Availability is lower (99.99% for Standard).
 
 ### Q13: **C. S3 Object Lock (in compliance mode)**
-WORM compliance — in Compliance mode, even the AWS root account cannot delete the locked object before retention expires.
+WORM compliance, in Compliance mode, even the AWS root account cannot delete the locked object before retention expires.
 
 ### Q14: **A. Block storage attached to one EC2 instance at a time**
 Standard EBS = single-attach block storage. (Multi-Attach is a special io1/io2 feature for clustered apps.)
@@ -272,10 +272,10 @@ Standard-IA, One Zone-IA both have a 30-day minimum charge per object. Glacier c
 One Zone-IA's lower durability is fine if you can regenerate the data from the original.
 
 ### Q22: **B. Small (~8 TB) edge data collection in tight spaces**
-Snowcone is the smallest device — battery-powered, fits in a backpack, can also run Lambda or EC2 at the edge.
+Snowcone is the smallest device, battery-powered, fits in a backpack, can also run Lambda or EC2 at the edge.
 
 ### Q23: **B. S3 Presigned URL**
-Presigned URLs give temporary, signed access to a private object — without changing bucket permissions.
+Presigned URLs give temporary, signed access to a private object, without changing bucket permissions.
 
 ### Q24: **B. Primary data in S3 with frequently-accessed data cached on-prem**
 Cached Volume Gateway = S3 is the source of truth; local cache for hot data. Stored Volume Gateway = local is primary, snapshots to S3.

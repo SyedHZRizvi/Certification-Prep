@@ -13,7 +13,7 @@
 | **MTO** | Customer order | Raw materials | None FG | Weeks |
 | **ETO** | Customer order + design | Design / engineering | None | Months |
 
-🧠 Memory: **S → A → M → E** (Stock, Assemble, Make, Engineer) — left to right: less FG inventory, more customization, longer customer lead time.
+🧠 Memory: **S → A → M → E** (Stock, Assemble, Make, Engineer), left to right: less FG inventory, more customization, longer customer lead time.
 
 ---
 
@@ -44,13 +44,13 @@ Result: ~25% inventory reduction. Decoupling point moved *downstream*.
 ```
                 LOW VARIETY ─────────► HIGH VARIETY
                     │                       │
-   HIGH VOLUME   Continuous flow         (off-diagonal — bad)
+   HIGH VOLUME   Continuous flow         (off-diagonal, bad)
        │           │
        │        Line/Repetitive
        │           │
        │        Batch
        │           │
-   LOW VOLUME   (off-diagonal — bad)    Job shop / Project
+   LOW VOLUME   (off-diagonal, bad)    Job shop / Project
 ```
 
 Diagonal = aligned. Off-diagonal = structural mismatch.
@@ -59,11 +59,11 @@ Diagonal = aligned. Off-diagonal = structural mismatch.
 
 ## 🌐 The 5 Competitive Priorities
 
-1. **Cost** — low unit price
-2. **Quality** — conformance + performance
-3. **Delivery** — speed + reliability
-4. **Flexibility** — volume + mix
-5. **Service / Innovation** — aftermarket + new product speed
+1. **Cost**, low unit price
+2. **Quality**, conformance + performance
+3. **Delivery**, speed + reliability
+4. **Flexibility**, volume + mix
+5. **Service / Innovation**, aftermarket + new product speed
 
 🚨 Pick 1–2. You **cannot** be world-class on all 5. Trade-offs are real.
 
@@ -111,10 +111,10 @@ When you see these, they're often **wrong**:
 
 ## ⚠️ Anti-Patterns To Recognize
 
-- ❌ **Off-diagonal positioning** — wrong process for the volume/variety
-- ❌ **Winning-on-everything strategy** — pick a position
-- ❌ **MTS plant trying to offer "custom configurations"** — should restructure to ATO
-- ❌ **Treating sustainability as optional** — TBL is a constraint, not a footnote
+- ❌ **Off-diagonal positioning**, wrong process for the volume/variety
+- ❌ **Winning-on-everything strategy**, pick a position
+- ❌ **MTS plant trying to offer "custom configurations"**, should restructure to ATO
+- ❌ **Treating sustainability as optional**, TBL is a constraint, not a footnote
 
 ---
 
@@ -123,8 +123,8 @@ When you see these, they're often **wrong**:
 Cover the answers and recite:
 
 1. The 4 manufacturing environments and where the decoupling point is in each? ___
-2. Order qualifier vs winner — definition + example? ___
-3. Postponement — define it + give the HP example? ___
+2. Order qualifier vs winner, definition + example? ___
+3. Postponement, define it + give the HP example? ___
 4. The 5 competitive priorities? ___
 5. Why is "off-diagonal" on the Hayes-Wheelwright matrix bad? ___
 

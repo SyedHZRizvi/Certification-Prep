@@ -1,6 +1,6 @@
 # Module 1: Linux Boot, Init Systems & systemd 🚀
 
-> **Why this module matters:** Two of the highest-failure XK0-005 question types are "the server hangs at boot, fix it" and "the service won't start, prove why." Both demand you understand the boot chain — firmware to kernel to init to your service — in order, with the right config files and the right diagnostic commands. Get this module right and you can debug almost anything Linux throws at you.
+> **Why this module matters:** Two of the highest-failure XK0-005 question types are "the server hangs at boot, fix it" and "the service won't start, prove why." Both demand you understand the boot chain firmware to kernel to init to your service in order, with the right config files and the right diagnostic commands. Get this module right and you can debug almost anything Linux throws at you.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Logging into a Linux shell as root and a normal user
@@ -48,12 +48,12 @@ A modern Linux boot has six distinct stages. **MEMORIZE THIS.** Almost every boo
        ↓
 4. Root filesystem pivot
        ↓
-5. systemd (PID 1) — the init system
+5. systemd (PID 1), the init system
        ↓
 6. default.target (multi-user or graphical)
 ```
 
-### Stage 1 — Firmware: BIOS vs UEFI
+### Stage 1, Firmware: BIOS vs UEFI
 
 | Trait | Legacy BIOS | UEFI (modern) |
 |-------|-------------|---------------|
@@ -66,7 +66,7 @@ A modern Linux boot has six distinct stages. **MEMORIZE THIS.** Almost every boo
 
 🎯 **Exam pattern:** A question shows a `efibootmgr -v` output and asks which entry boots Linux. Answer: the entry whose path ends in `/EFI/<distro>/grubx64.efi` (or `shimx64.efi` if Secure Boot is enabled).
 
-### Stage 2 — Bootloader: GRUB & GRUB2
+### Stage 2, Bootloader: GRUB & GRUB2
 
 **GRUB2** (GRand Unified Bootloader v2) is the dominant Linux bootloader. Three things to know:
 
@@ -80,13 +80,13 @@ A modern Linux boot has six distinct stages. **MEMORIZE THIS.** Almost every boo
 
 **The interactive menu** (press any key during boot to see it):
 
-- `e` to edit the kernel line — add boot parameters for one-shot recovery
+- `e` to edit the kernel line, add boot parameters for one-shot recovery
 - `c` to drop to a GRUB shell
 - `Ctrl-X` (or `F10`) to boot the edited entry
 
-**The most useful one-shot recovery trick:** at the GRUB menu, press `e`, find the line that starts with `linux`, append `systemd.unit=rescue.target` (or `emergency.target` for an even more minimal shell), press Ctrl-X. You'll get a root shell with most of the filesystem mounted and the network down — perfect for editing fstab.
+**The most useful one-shot recovery trick:** at the GRUB menu, press `e`, find the line that starts with `linux`, append `systemd.unit=rescue.target` (or `emergency.target` for an even more minimal shell), press Ctrl-X. You'll get a root shell with most of the filesystem mounted and the network down, perfect for editing fstab.
 
-### Stage 3 — Kernel + initramfs
+### Stage 3, Kernel + initramfs
 
 The kernel binary (`/boot/vmlinuz-<version>`) is decompressed into RAM by GRUB, along with a companion **initramfs** image (`/boot/initramfs-<version>.img` on RHEL, `/boot/initrd.img-<version>` on Debian).
 
@@ -98,11 +98,11 @@ The kernel binary (`/boot/vmlinuz-<version>`) is decompressed into RAM by GRUB, 
 
 🚨 **Trap on the exam:** if you change `/etc/crypttab` (the file that lists LUKS devices to unlock at boot) and DON'T rebuild the initramfs, the system will fail to boot. The exam loves to show a partially-correct setup and ask what's missing.
 
-### Stage 4 — Root pivot
+### Stage 4, Root pivot
 
 The initramfs script (managed by `dracut` on RHEL or `initramfs-tools` on Debian) discovers the root filesystem, mounts it at `/sysroot`, then calls `switch_root` to make `/sysroot` the new `/` and exec `/sbin/init` (which is a symlink to `systemd` on modern distros).
 
-### Stage 5 — systemd as PID 1
+### Stage 5, systemd as PID 1
 
 ```
 $ ps -p 1
@@ -112,12 +112,12 @@ $ ps -p 1
 
 systemd is now in charge. It reads unit files, builds a dependency graph, and starts everything that the **default target** transitively requires.
 
-### Stage 6 — default.target
+### Stage 6, default.target
 
 The "where do we end up" target. Almost always one of:
 
-- `multi-user.target` — text-mode multi-user system (servers, CLI workstations)
-- `graphical.target` — multi-user + GUI display manager (desktops, workstations)
+- `multi-user.target`, text-mode multi-user system (servers, CLI workstations)
+- `graphical.target`, multi-user + GUI display manager (desktops, workstations)
 
 Set it with `systemctl set-default <target>`. View it with `systemctl get-default`.
 
@@ -149,7 +149,7 @@ You'll see SysVinit and Upstart referenced in legacy questions. Know the differe
 
 ---
 
-## 🎛️ systemctl — The Tool You'll Live In
+## 🎛️ systemctl, The Tool You'll Live In
 
 `systemctl` is to systemd what `kubectl` is to Kubernetes: every operation has a verb + a unit. Memorize these verbs:
 
@@ -197,15 +197,15 @@ WantedBy=multi-user.target
 ```
 
 **Three sections:**
-- `[Unit]` — metadata and ordering (`After`, `Before`, `Wants`, `Requires`)
-- `[Service]` — what to run and how (`Type`, `ExecStart`, restart policy, security sandbox)
-- `[Install]` — what `systemctl enable` should do (`WantedBy` creates the symlink)
+- `[Unit]`, metadata and ordering (`After`, `Before`, `Wants`, `Requires`)
+- `[Service]`, what to run and how (`Type`, `ExecStart`, restart policy, security sandbox)
+- `[Install]`, what `systemctl enable` should do (`WantedBy` creates the symlink)
 
 🚨 **Trap on the exam:** `After=` is **ordering only**, not dependency. To both order AND require, use `After= ... Requires=`. To require without strict ordering, use `Requires=` alone. Get this distinction or every dependency question will be a 50/50 guess.
 
 ### Drop-in overrides (the right way to customize)
 
-Never edit `/lib/systemd/system/<unit>.service` directly — a package upgrade will overwrite it. Instead:
+Never edit `/lib/systemd/system/<unit>.service` directly, a package upgrade will overwrite it. Instead:
 
 ```bash
 sudo systemctl edit nginx.service
@@ -222,9 +222,9 @@ Save, then `systemctl daemon-reload && systemctl restart nginx`. Verify the over
 
 ---
 
-## 📜 journalctl — The Centralized Log
+## 📜 journalctl, The Centralized Log
 
-`journalctl` queries the systemd journal — a binary, indexed, structured log that consolidates kernel messages, service stdout/stderr, and explicitly-sent syslog.
+`journalctl` queries the systemd journal, a binary, indexed, structured log that consolidates kernel messages, service stdout/stderr, and explicitly-sent syslog.
 
 | Command | Use |
 |---------|-----|
@@ -244,7 +244,7 @@ Save, then `systemctl daemon-reload && systemctl restart nginx`. Verify the over
 
 ---
 
-## 🛠️ Putting It Together — A Boot-Failure Playbook
+## 🛠️ Putting It Together, A Boot-Failure Playbook
 
 When a system won't reach `multi-user.target`:
 
@@ -264,7 +264,7 @@ When a system won't reach `multi-user.target`:
 
 **Walkthrough:**
 1. The `--once` flag implies the binary exits 0 after success. With `Type=simple`, systemd considers the service "running" as long as the process is alive; when it exits, systemd marks it "deactivated."
-2. Without `Restart=` or `RestartSec=`, systemd uses the default — and the unit has `StartLimitIntervalSec=10s, StartLimitBurst=5` defaults. If anything later (or a misconfigured `Restart=always`) keeps relaunching it 5 times in 10 seconds, you hit `start-limit-hit`.
+2. Without `Restart=` or `RestartSec=`, systemd uses the default, and the unit has `StartLimitIntervalSec=10s, StartLimitBurst=5` defaults. If anything later (or a misconfigured `Restart=always`) keeps relaunching it 5 times in 10 seconds, you hit `start-limit-hit`.
 3. The right unit type for a "do work and exit cleanly" job is **`Type=oneshot`** with `RemainAfterExit=yes` (so dependent units see this as "active" after it succeeded). Add `Wants=postgresql.service` to actually pull postgres in (After= is ordering only).
 
 **Corrected unit:**
@@ -284,7 +284,7 @@ User=appuser
 WantedBy=multi-user.target
 ```
 
-This is the exact shape of a typical PBQ — a half-correct unit file with a subtle type/dependency mismatch.
+This is the exact shape of a typical PBQ, a half-correct unit file with a subtle type/dependency mismatch.
 
 ---
 
@@ -293,10 +293,10 @@ This is the exact shape of a typical PBQ — a half-correct unit file with a sub
 | Misconception | Reality |
 |---------------|---------|
 | "GRUB and GRUB2 are interchangeable" | GRUB Legacy (0.97) and GRUB2 (1.x+) have different configs and commands. Every modern distro uses GRUB2. |
-| "Edit grub.cfg directly" | NO — it's regenerated. Edit `/etc/default/grub` and run `grub2-mkconfig` / `update-grub`. |
-| "Runlevel 4 means something specific" | It's distro-defined / unused. Don't memorize a meaning — just know targets replaced runlevels. |
+| "Edit grub.cfg directly" | NO, it's regenerated. Edit `/etc/default/grub` and run `grub2-mkconfig` / `update-grub`. |
+| "Runlevel 4 means something specific" | It's distro-defined / unused. Don't memorize a meaning, just know targets replaced runlevels. |
 | "`systemctl reload` and `restart` are the same" | `reload` re-reads config without dropping connections. `restart` stops & starts (kills sessions). |
-| "`enable` starts the service" | No — `enable` only adds the boot-time symlink. Use `enable --now` to do both. |
+| "`enable` starts the service" | No, `enable` only adds the boot-time symlink. Use `enable --now` to do both. |
 | "After= means depends-on" | `After=` is ordering only. `Requires=`/`Wants=` is the dependency. They compose. |
 | "`Type=simple` is always right" | `simple` is for foreground daemons. Use `forking` for daemons that double-fork, `notify` for sd_notify-aware services, `oneshot` for run-and-exit jobs. |
 | "systemd is just an init replacement" | systemd is also: logind, journald, timesyncd, resolved, networkd, udevd. It's an ecosystem. |
@@ -317,10 +317,10 @@ This is the exact shape of a typical PBQ — a half-correct unit file with a sub
 | **Target** | A grouping of units; equivalent to a runlevel |
 | **systemctl** | The CLI to manage units |
 | **journalctl** | The CLI to query the systemd binary journal |
-| **`After=` vs `Requires=`** | Ordering vs dependency — orthogonal axes |
+| **`After=` vs `Requires=`** | Ordering vs dependency, orthogonal axes |
 | **Drop-in override** | Per-admin `.conf` in `/etc/systemd/system/<unit>.d/` |
 | **rescue.target** | Single-user maintenance mode |
-| **emergency.target** | Even more minimal — root mounted read-only |
+| **emergency.target** | Even more minimal, root mounted read-only |
 | **`systemd.unit=...` kernel param** | One-shot target override at GRUB |
 | **`daemon-reload`** | Tells systemd to re-read unit files (always run after edits) |
 
@@ -338,20 +338,20 @@ This is the exact shape of a typical PBQ — a half-correct unit file with a sub
 
 ---
 
-## 📊 Case Study — The Ubuntu 15.04 systemd Cutover
+## 📊 Case Study, The Ubuntu 15.04 systemd Cutover
 
-**Situation.** Ubuntu, the world's most popular consumer Linux desktop and a top-three server distribution, used Upstart as its init system from 2006 through Ubuntu 14.10 (released October 2014). Mark Shuttleworth himself had championed Upstart's event-driven model. Debian — Ubuntu's upstream — announced in February 2014 that it would adopt systemd as default for Debian 8 "Jessie."
+**Situation.** Ubuntu, the world's most popular consumer Linux desktop and a top-three server distribution, used Upstart as its init system from 2006 through Ubuntu 14.10 (released October 2014). Mark Shuttleworth himself had championed Upstart's event-driven model. Debian Ubuntu's upstream announced in February 2014 that it would adopt systemd as default for Debian 8 "Jessie."
 
 **Decision.** Canonical announced on 14 February 2014 that Ubuntu would follow Debian and switch to systemd. Ubuntu 15.04 "Vivid Vervet" (April 2015) shipped with systemd as PID 1. The decision required rewriting every Upstart job (`.conf` in `/etc/init/`) as a systemd unit (`.service` in `/lib/systemd/system/`), updating documentation, retraining sysadmins, and handling regressions across thousands of derived distros (Mint, Pop!_OS, Kubuntu, Ubuntu Server, etc.).
 
 **Outcome.** Within 18 months, Upstart was effectively dead. By 2017, every actively maintained mainstream Linux distribution (RHEL/CentOS 7+, Ubuntu 15.04+, Debian 8+, openSUSE, Arch, Fedora 15+) had adopted systemd. The systemd unit file became the single portable artifact for shipping a service to "any Linux," which dramatically simplified container images, Ansible roles, and configuration-management modules.
 
-**Lesson for the exam / for practitioners.** When the exam shows you a service file, it will be a systemd `.service` unit — not a SysVinit script and not an Upstart job. The XK0-005 objectives explicitly assume systemd. But: legacy systems still exist. If you walk into a RHEL 6 environment in 2026 (yes, they exist on hardware that can't be replaced), you will see `chkconfig`, `service`, and `/etc/init.d/` scripts. Knowing the mapping (target ↔ runlevel, `systemctl status` ↔ `service status`, `systemctl enable` ↔ `chkconfig on`) is what separates a Linux admin from a Linux script-runner.
+**Lesson for the exam / for practitioners.** When the exam shows you a service file, it will be a systemd `.service` unit, not a SysVinit script and not an Upstart job. The XK0-005 objectives explicitly assume systemd. But: legacy systems still exist. If you walk into a RHEL 6 environment in 2026 (yes, they exist on hardware that can't be replaced), you will see `chkconfig`, `service`, and `/etc/init.d/` scripts. Knowing the mapping (target ↔ runlevel, `systemctl status` ↔ `service status`, `systemctl enable` ↔ `chkconfig on`) is what separates a Linux admin from a Linux script-runner.
 
 **Discussion (Socratic).**
-- **Q1:** Upstart's event-driven model was technically elegant — services started when their dependencies fired events, not when an arbitrary runlevel was entered. Why did systemd's dependency-graph model win in practice anyway? Consider documentation, predictability, debugging tooling, and ecosystem inertia.
+- **Q1:** Upstart's event-driven model was technically elegant, services started when their dependencies fired events, not when an arbitrary runlevel was entered. Why did systemd's dependency-graph model win in practice anyway? Consider documentation, predictability, debugging tooling, and ecosystem inertia.
 - **Q2:** systemd absorbs functionality (login management, network config, DNS resolution, container management) that traditional Unix philosophy says should be separate small programs. Argue for and against this consolidation. What does the exam care about?
-- **Q3:** If you were standing up a new distribution from scratch in 2026 — say, for an embedded edge appliance with a 200 MB RAM budget — would you pick systemd, OpenRC (Gentoo), s6 (Alpine alternative), or write your own? Defend the answer.
+- **Q3:** If you were standing up a new distribution from scratch in 2026 say, for an embedded edge appliance with a 200 MB RAM budget would you pick systemd, OpenRC (Gentoo), s6 (Alpine alternative), or write your own? Defend the answer.
 
 ---
 
@@ -370,9 +370,9 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 2 — Filesystem Layout & Permissions](../Module-02-Filesystem-Permissions/Reading.md)
+4. ➡️ Move on: [Module 2, Filesystem Layout & Permissions](../Module-02-Filesystem-Permissions/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 2](../Module-02-Filesystem-Permissions/Reading.md) operationalizes the *what* of `/etc/fstab` you just touched in the boot story; [Module 5](../Module-05-Users-Groups/Reading.md) hooks PAM into the login flow that systemd-logind manages; [Module 7](../Module-07-Kernel-Modules/Reading.md) covers the kernel modules that the initramfs and udev rely on.
@@ -383,14 +383,14 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 Lennart Poettering & Kay Sievers (2010). [*Rethinking PID 1*](http://0pointer.de/blog/projects/systemd.html) — the original systemd manifesto. Read at least the first half.
-- 📄 systemd project documentation — [`systemd.unit(5)`, `systemd.service(5)`, `journalctl(1)`, `systemctl(1)`](https://www.freedesktop.org/software/systemd/man/) man pages.
-- 📄 GRUB Manual — [GNU GRUB 2.x official docs](https://www.gnu.org/software/grub/manual/grub/grub.html).
-- 📄 UEFI Forum — [Unified Extensible Firmware Interface (UEFI) Specification](https://uefi.org/specifications), §3 (Boot Manager) and §13 (Protocols).
-- 📄 Linux Filesystem Hierarchy Standard 3.0 (2015) — [pathname.com mirror](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html).
+- 📄 Lennart Poettering & Kay Sievers (2010). [*Rethinking PID 1*](http://0pointer.de/blog/projects/systemd.html), the original systemd manifesto. Read at least the first half.
+- 📄 systemd project documentation, [`systemd.unit(5)`, `systemd.service(5)`, `journalctl(1)`, `systemctl(1)`](https://www.freedesktop.org/software/systemd/man/) man pages.
+- 📄 GRUB Manual, [GNU GRUB 2.x official docs](https://www.gnu.org/software/grub/manual/grub/grub.html).
+- 📄 UEFI Forum, [Unified Extensible Firmware Interface (UEFI) Specification](https://uefi.org/specifications), §3 (Boot Manager) and §13 (Protocols).
+- 📄 Linux Filesystem Hierarchy Standard 3.0 (2015), [pathname.com mirror](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html).
 
 **Practitioner / exam:**
-- 📖 [CompTIA Linux+ XK0-005 Exam Objectives (PDF)](https://www.comptia.org/certifications/linux) — read the official objectives at least twice.
-- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023) — Chapters 4 & 5 cover this module's material in depth.
-- 📖 Christopher Negus, *Linux Bible* (Wiley, 11th ed., 2020) — Chapters 14–15 (booting and systemd).
-- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021) — Chapters 5–6 (most readable boot-chain walkthrough in print).
+- 📖 [CompTIA Linux+ XK0-005 Exam Objectives (PDF)](https://www.comptia.org/certifications/linux), read the official objectives at least twice.
+- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023), Chapters 4 & 5 cover this module's material in depth.
+- 📖 Christopher Negus, *Linux Bible* (Wiley, 11th ed., 2020), Chapters 14–15 (booting and systemd).
+- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021), Chapters 5–6 (most readable boot-chain walkthrough in print).

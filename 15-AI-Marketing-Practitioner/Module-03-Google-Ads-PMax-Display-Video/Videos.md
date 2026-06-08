@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: PMax, Display & YouTube Ads
 
-> **How to use:** Watch the Essentials in order — they cover PMax structure, brand exclusions, then YouTube. Recommended deepens into specific formats.
+> **How to use:** Watch the Essentials in order, they cover PMax structure, brand exclusions, then YouTube. Recommended deepens into specific formats.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -30,7 +30,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Performance Max Complete Guide 2026</p>
-      <p class="vg-creator">Aaron Young — Define Digital</p>
+      <p class="vg-creator">Aaron Young, Define Digital</p>
       <span class="vg-duration">⏱ 22 min · Full architecture</span>
     </div>
   </a>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PMax Brand Exclusions — Do This Day Zero</p>
+      <p class="vg-title">PMax Brand Exclusions, Do This Day Zero</p>
       <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 12 min · Critical setting</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Asset Group Strategy — When to Split</p>
+      <p class="vg-title">Asset Group Strategy, When to Split</p>
       <p class="vg-creator">Frederick Vallaeys</p>
       <span class="vg-duration">⏱ 16 min · The structural decision</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">PMax Playbook — Mike Rhodes</p>
+      <p class="vg-title">PMax Playbook, Mike Rhodes</p>
       <p class="vg-creator">Mike Rhodes (Define Digital Academy)</p>
       <span class="vg-duration">⏱ 18 min · Advanced PMax tactics</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Google Ads Video Cert — Study Walkthrough</p>
+      <p class="vg-title">Google Ads Video Cert, Study Walkthrough</p>
       <p class="vg-creator">Multiple educators</p>
       <span class="vg-duration">⏱ 14 min · Exam prep</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Demand Gen vs PMax — When to Use Each</p>
+      <p class="vg-title">Demand Gen vs PMax, When to Use Each</p>
       <p class="vg-creator">PPC educators</p>
       <span class="vg-duration">⏱ 16 min · Decision framework</span>
     </div>

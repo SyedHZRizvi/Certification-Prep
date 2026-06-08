@@ -1,4 +1,4 @@
-# ✏️ Module 3 Quiz: Authentication — MFA & Passwordless
+# ✏️ Module 3 Quiz: Authentication, MFA & Passwordless
 
 > **Instructions:** Answer all 25 questions WITHOUT looking at the reading. Aim for 21/25 minimum before moving on.
 
@@ -31,8 +31,8 @@ D. AD FS
 ---
 
 ### Q4. Security Defaults and Conditional Access can be enabled together: *(Remember)*
-A. Yes — they complement each other
-B. No — they are mutually exclusive
+A. Yes, they complement each other
+B. No, they are mutually exclusive
 C. Only in P2 tenants
 D. Only after AD FS retirement
 
@@ -118,7 +118,7 @@ D. Increase password complexity
 
 ---
 
-### Q15. **Yes/No** — Methods comparison. *(Understand)*
+### Q15. **Yes/No**, Methods comparison. *(Understand)*
 
 **S1:** Windows Hello for Business is portable across devices.
 **S2:** FIDO2 keys are portable across devices.
@@ -163,7 +163,7 @@ D. Already retired
 
 ---
 
-### Q20. **Yes/No** — Defaults & policies. *(Understand)*
+### Q20. **Yes/No**, Defaults & policies. *(Understand)*
 
 **S1:** Security Defaults are free and enforce MFA on admins + block legacy auth.
 **S2:** Number matching is optional and can be turned off by tenant admins.
@@ -214,7 +214,7 @@ D. SSPR registration check
 
 ---
 
-### Q25. **Yes/No** — Modern auth landscape. *(Evaluate)*
+### Q25. **Yes/No**, Modern auth landscape. *(Evaluate)*
 
 **S1:** SMS-based MFA is acceptable for Global Admins per Microsoft guidance.
 **S2:** Authenticator's passkey / phone sign-in is passwordless but not phishing-resistant.
@@ -238,7 +238,7 @@ Microsoft enforced number matching tenant-wide in Feb 2023 to combat MFA fatigue
 ### Q3: **C. Authentication methods policy**
 The unified modern surface. Per-user MFA + SSPR registration are being retired.
 
-### Q4: **B. No — they are mutually exclusive**
+### Q4: **B. No, they are mutually exclusive**
 Enable one or the other. Microsoft will not let you have both active.
 
 ### Q5: **A. Generate a Temporary Access Pass**

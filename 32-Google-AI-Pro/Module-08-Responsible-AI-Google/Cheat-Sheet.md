@@ -80,7 +80,7 @@ All three: invisible, detectable via Google library, robust to common transforma
 
 ---
 
-## 🛡️ SAIF — Secure AI Framework (6 elements)
+## 🛡️ SAIF, Secure AI Framework (6 elements)
 
 1. Expand security foundations to AI
 2. Extend detection + response to include AI threats

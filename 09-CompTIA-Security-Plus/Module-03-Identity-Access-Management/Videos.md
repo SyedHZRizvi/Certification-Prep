@@ -20,7 +20,7 @@
 
 # 🎥 Module 3 Videos: Identity & Access Management
 
-> **How to use:** IAM is protocol-heavy — visual flow diagrams help a LOT. Pause and sketch each flow once.
+> **How to use:** IAM is protocol-heavy, visual flow diagrams help a LOT. Pause and sketch each flow once.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -136,7 +136,7 @@
 | **Professor Messer** | Domain-by-domain Sec+ coverage; protocol comparisons are crystal clear |
 | **Dion Training** | Strong scenario explanations + practice questions |
 | **NetworkChuck** | Energetic intros to modern auth (passkeys, FIDO2) |
-| **John Hammond** | Hands-on offensive demos — see Kerberoasting, AS-REP roasting |
+| **John Hammond** | Hands-on offensive demos, see Kerberoasting, AS-REP roasting |
 | **IppSec** | HackTheBox walkthroughs of AD attacks |
 | **MyDFIR** | Identity-related incident response |
 
@@ -145,7 +145,7 @@
 ## ✅ After watching
 
 1. Name the 5 authentication factors and give an example of each.
-2. SAML vs OAuth vs OIDC — which is for what?
+2. SAML vs OAuth vs OIDC, which is for what?
 3. Walk through a Kerberos login from start to service access.
 4. Give a real example each of DAC, MAC, RBAC, and ABAC.
 5. What does JIT access protect against?

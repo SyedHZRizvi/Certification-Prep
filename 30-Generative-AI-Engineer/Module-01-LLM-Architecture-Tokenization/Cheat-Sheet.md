@@ -41,10 +41,10 @@ hidden → Norm → MHA/GQA → +residual → Norm → FFN(SwiGLU/GeLU, 4× expa
 Attention(Q, K, V) = softmax( QKᵀ / √dk ) · V
 ```
 
-- **Q (Query)** — what this position is looking for
-- **K (Key)** — what each position offers
-- **V (Value)** — what each position carries
-- **Causal mask** — for decoder-only, zero out upper triangle so position i can't see j > i
+- **Q (Query)**, what this position is looking for
+- **K (Key)**, what each position offers
+- **V (Value)**, what each position carries
+- **Causal mask**, for decoder-only, zero out upper triangle so position i can't see j > i
 
 ---
 
@@ -130,24 +130,24 @@ GQA with G=8 is the modern sweet spot.
 | Gemini 2.5 Pro | $1.25 | $5 | |
 | DeepSeek-V3 | $0.27 | $1.10 | Open weights too |
 
-**Always re-check current prices** — they change quarterly.
+**Always re-check current prices**, they change quarterly.
 
 ---
 
 ## 🎓 Key Terms to Memorize Cold
 
-- **BPE** — Byte-Pair Encoding (tokenizer)
-- **tiktoken** — OpenAI's BPE library (use for cost estimation)
-- **MHA / MQA / GQA** — Multi-Head / Multi-Query / Grouped-Query attention
-- **KV cache** — cached keys+values from previous tokens during generation
-- **RoPE** — Rotary Positional Embedding
-- **YaRN** — frequency-rescaling extension that lets RoPE go beyond train length
-- **MoE** — Mixture-of-Experts (sparse activation)
-- **SSM** — State-Space Model (Mamba family; alternative to attention)
-- **FlashAttention** — fused kernel that makes long context cheap
-- **PagedAttention** — vLLM's serving-layer KV-cache memory manager
-- **Speculative decoding** — small-draft + big-model-verify acceleration
-- **Prompt caching** — provider-side KV reuse (Anthropic, OpenAI, Gemini)
+- **BPE**, Byte-Pair Encoding (tokenizer)
+- **tiktoken**, OpenAI's BPE library (use for cost estimation)
+- **MHA / MQA / GQA**, Multi-Head / Multi-Query / Grouped-Query attention
+- **KV cache**, cached keys+values from previous tokens during generation
+- **RoPE**, Rotary Positional Embedding
+- **YaRN**, frequency-rescaling extension that lets RoPE go beyond train length
+- **MoE**, Mixture-of-Experts (sparse activation)
+- **SSM**, State-Space Model (Mamba family; alternative to attention)
+- **FlashAttention**, fused kernel that makes long context cheap
+- **PagedAttention**, vLLM's serving-layer KV-cache memory manager
+- **Speculative decoding**, small-draft + big-model-verify acceleration
+- **Prompt caching**, provider-side KV reuse (Anthropic, OpenAI, Gemini)
 
 ---
 

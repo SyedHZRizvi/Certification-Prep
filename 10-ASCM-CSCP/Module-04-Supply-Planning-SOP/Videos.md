@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: Supply Planning & S&OP
 
-> **How to use:** Watch the 5-step S&OP cycle videos first — that flow alone earns you several exam points. Pause and try MRP explosions on paper.
+> **How to use:** Watch the 5-step S&OP cycle videos first, that flow alone earns you several exam points. Pause and try MRP explosions on paper.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">S&OP — The 5-Step Monthly Cycle</p>
+      <p class="vg-title">S&OP, The 5-Step Monthly Cycle</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 14 min · Wallace / Stahl model</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RCCP vs CRP — Capacity Planning Layers</p>
+      <p class="vg-title">RCCP vs CRP, Capacity Planning Layers</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 12 min · Side-by-side with numbers</span>
     </div>
@@ -148,7 +148,7 @@ Answer these in your notebook:
 1. Recite the 5 S&OP steps in order.
 2. Draw the planning hierarchy from strategic plan to PAC.
 3. Explain DTF vs PTF and what each frees / freezes.
-4. Difference between RCCP and CRP — when each is run.
+4. Difference between RCCP and CRP, when each is run.
 5. Two reasons a firm would choose chase over level aggregate planning.
 
 If you can do all 5, you're ready for the [Quiz](./Quiz.md).

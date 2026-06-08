@@ -1,6 +1,6 @@
 # Module 7: Amazon Bedrock & GenAI Services 🌟
 
-> **Why this module matters:** Generative AI is now ~25% of the MLS-C01 modelling domain (post 2024 blueprint refresh). Amazon **Bedrock** is AWS's managed foundation-model gateway — Claude, Llama, Mistral, Titan, Cohere — and AWS has built an entire production stack around it: **Knowledge Bases** for RAG, **Agents** for tool use, **Guardrails** for safety, **Bedrock fine-tuning** for customisation, **JumpStart** for SageMaker-hosted foundation models, **Amazon Q** as the application layer. The exam tests when to call Bedrock vs SageMaker, how RAG works, how to ground LLMs in private data, and how to add governance.
+> **Why this module matters:** Generative AI is now ~25% of the MLS-C01 modelling domain (post 2024 blueprint refresh). Amazon **Bedrock** is AWS's managed foundation-model gateway Claude, Llama, Mistral, Titan, Cohere and AWS has built an entire production stack around it: **Knowledge Bases** for RAG, **Agents** for tool use, **Guardrails** for safety, **Bedrock fine-tuning** for customisation, **JumpStart** for SageMaker-hosted foundation models, **Amazon Q** as the application layer. The exam tests when to call Bedrock vs SageMaker, how RAG works, how to ground LLMs in private data, and how to add governance.
 
 > **Prerequisites for this module.** Modules 1–6 of this course. Helpful background:
 > - Familiarity with prompt engineering at the level of `system prompt + user prompt`
@@ -29,9 +29,9 @@ That is what this module teaches. The 2026 way to build a Q&A system on AWS is *
 
 ---
 
-## 🌟 Amazon Bedrock — The Foundation-Model Gateway
+## 🌟 Amazon Bedrock, The Foundation-Model Gateway
 
-Bedrock is AWS's serverless API for accessing leading foundation models from multiple providers — **without provisioning any compute or training anything**.
+Bedrock is AWS's serverless API for accessing leading foundation models from multiple providers, **without provisioning any compute or training anything**.
 
 ### Available model families (as of 2026)
 
@@ -50,8 +50,8 @@ Bedrock is AWS's serverless API for accessing leading foundation models from mul
 
 | Mode | API |
 |------|-----|
-| **Synchronous** | `InvokeModel` — single request/response |
-| **Streaming** | `InvokeModelWithResponseStream` — token-by-token |
+| **Synchronous** | `InvokeModel`, single request/response |
+| **Streaming** | `InvokeModelWithResponseStream`, token-by-token |
 | **Converse API** (since 2024) | Unified messages-style API across models |
 | **Batch Inference** | Async, large-volume, cheaper (~50% off) |
 
@@ -67,7 +67,7 @@ Bedrock is AWS's serverless API for accessing leading foundation models from mul
 
 ---
 
-## 📚 Bedrock Knowledge Bases — Managed RAG
+## 📚 Bedrock Knowledge Bases, Managed RAG
 
 **Retrieval-Augmented Generation (RAG)** = retrieve relevant document chunks → stuff into the prompt → LLM answers with that context. Bedrock Knowledge Bases (KBs) automate this.
 
@@ -120,7 +120,7 @@ Bedrock is AWS's serverless API for accessing leading foundation models from mul
 
 ---
 
-## 🛠️ Bedrock Agents — Tool Use & Multi-Step Reasoning
+## 🛠️ Bedrock Agents, Tool Use & Multi-Step Reasoning
 
 A **Bedrock Agent** orchestrates an LLM to use **tools** (APIs, Lambda functions) and **knowledge bases** to complete multi-step tasks.
 
@@ -128,7 +128,7 @@ A **Bedrock Agent** orchestrates an LLM to use **tools** (APIs, Lambda functions
 
 | Concept | Role |
 |---------|------|
-| **Agent** | The orchestrator — has a base prompt and lists of tools and KBs |
+| **Agent** | The orchestrator, has a base prompt and lists of tools and KBs |
 | **Action Group** | A set of API operations the agent can call (via Lambda + OpenAPI / function schema) |
 | **Knowledge Base** | Attached KB for retrieval |
 | **Guardrail** | Optional safety policy applied to inputs and outputs |
@@ -150,7 +150,7 @@ User asks → Agent reasons →
 
 ---
 
-## 🛡️ Bedrock Guardrails — Safety & Governance
+## 🛡️ Bedrock Guardrails, Safety & Governance
 
 Guardrails apply safety policies to LLM inputs and outputs **independently of the model**.
 
@@ -174,17 +174,17 @@ For domain-specific adaptation when prompt + RAG isn't enough.
 
 | Approach | When |
 |----------|------|
-| **Fine-tuning** | Supervised — train on prompt/response pairs (typically 100s-1000s of examples). Available for Llama, Titan, Cohere Command, Claude (limited). |
-| **Continued pre-training** | Unsupervised — feed domain corpus (Titan only) |
+| **Fine-tuning** | Supervised, train on prompt/response pairs (typically 100s-1000s of examples). Available for Llama, Titan, Cohere Command, Claude (limited). |
+| **Continued pre-training** | Unsupervised, feed domain corpus (Titan only) |
 | **Distillation** | Train a smaller model from a larger teacher's outputs (Bedrock-managed; 2024+) |
 
 🎯 **Exam pattern.** *"Adapt an LLM to your company's writing style with 5,000 example pairs."* → **Fine-tuning** (or RAG if the examples are factual reference).
 
-🚨 **Trap.** Fine-tuning is *not* the right answer for "ground in private documents" — that is **RAG**. Fine-tuning teaches *style and patterns*; RAG provides *facts*.
+🚨 **Trap.** Fine-tuning is *not* the right answer for "ground in private documents", that is **RAG**. Fine-tuning teaches *style and patterns*; RAG provides *facts*.
 
 ---
 
-## 🚀 SageMaker JumpStart — Foundation Models On SageMaker
+## 🚀 SageMaker JumpStart, Foundation Models On SageMaker
 
 JumpStart hosts **300+ pre-built models** including foundation models you can deploy *to your own SageMaker endpoints*:
 
@@ -207,7 +207,7 @@ JumpStart hosts **300+ pre-built models** including foundation models you can de
 
 ---
 
-## 🤖 Amazon Q — The Application Layer
+## 🤖 Amazon Q, The Application Layer
 
 Amazon Q is AWS's family of generative-AI assistants at the *application* layer (L7 in our Module-1 stack).
 
@@ -233,7 +233,7 @@ Amazon Q is AWS's family of generative-AI assistants at the *application* layer 
 |-----------|------|
 | **Zero-shot** | Quick prototyping; capable models like Claude often succeed |
 | **Few-shot (in-context learning)** | Show 2-5 examples to control output format |
-| **Chain-of-thought** | "Think step by step" — helps reasoning tasks |
+| **Chain-of-thought** | "Think step by step", helps reasoning tasks |
 | **Role / system prompt** | Set the assistant's role, tone, constraints |
 | **Structured output (JSON mode / tool use)** | Force JSON or function-call format |
 | **Self-consistency** | Sample multiple times and pick majority |
@@ -273,7 +273,7 @@ For RAG, you need an **embedding model** and a **vector store**.
 
 ---
 
-## 📖 Case Study — Stripe's Internal RAG With Bedrock + Claude
+## 📖 Case Study, Stripe's Internal RAG With Bedrock + Claude
 
 **Situation.** Stripe has ~7,000 engineers across 30+ product lines. Internal documentation is split across Notion, GitHub READMEs, Slack channels, and ~12,000 wiki pages. Engineers spend ~30 minutes/day searching for documentation. Total cost: ~$15M/year of senior engineer time.
 
@@ -286,7 +286,7 @@ For RAG, you need an **embedding model** and a **vector store**.
 - **Frontend:** Slack bot + IDE plugin (similar to Amazon Q Developer)
 - **Guardrails:** Custom topic and PII filters (similar to Bedrock Guardrails)
 
-**Outcome.** Daily search time fell 40%. Question resolution rate hit 88%. Stripe reports the system saves "several thousand engineer-hours per week" — payback in months.
+**Outcome.** Daily search time fell 40%. Question resolution rate hit 88%. Stripe reports the system saves "several thousand engineer-hours per week", payback in months.
 
 **Lesson for the exam.** Today, this entire stack can be replaced with: **Bedrock + Knowledge Bases (OpenSearch Serverless) + Guardrails + Amazon Q Developer in IDE**. If you understand the *pattern*, the AWS service equivalents are obvious.
 
@@ -312,7 +312,7 @@ For RAG, you need an **embedding model** and a **vector store**.
 ## 🚨 Top Exam Traps (Module 7 Themes)
 
 1. **"Reduce hallucination"** → **RAG (Bedrock KB)** is usually the answer, not fine-tuning.
-2. **"Fine-tune for company writing style"** → **Bedrock fine-tuning** (style/format) — KB won't help.
+2. **"Fine-tune for company writing style"** → **Bedrock fine-tuning** (style/format), KB won't help.
 3. **"Multi-step task with API calls"** → **Bedrock Agent** (action groups).
 4. **"Block specific topics from the model"** → **Bedrock Guardrails topic filter**.
 5. **"Ensure output is grounded in retrieved docs"** → **Guardrails contextual grounding**.
@@ -350,10 +350,10 @@ For RAG, you need an **embedding model** and a **vector store**.
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **"RAG or fine-tune?"** A bank has 3,000 policy articles and wants an LLM to answer policy questions. RAG handles fact retrieval; fine-tuning teaches style. Argue for the right hybrid.
-2. **The cost-quality LLM trade-off.** Claude Opus vs Claude Sonnet vs Haiku — when does the smaller, cheaper model *win* on a real task? Design a benchmark.
+2. **The cost-quality LLM trade-off.** Claude Opus vs Claude Sonnet vs Haiku, when does the smaller, cheaper model *win* on a real task? Design a benchmark.
 3. **The hallucination tax.** A regulator says "the model must NEVER invent a policy that isn't in the source documents." Contextual grounding catches some hallucinations. What other layers do you add?
 4. **Bedrock vs JumpStart.** Argue for each in a regulated environment that wants its data to never leave a VPC.
 5. **Amazon Q Business positioning.** Q Business is essentially "Bedrock + KB + Guardrails + UI" pre-packaged. When does a custom Bedrock build beat Q Business?
@@ -375,13 +375,13 @@ For RAG, you need an **embedding model** and a **vector store**.
 You now know:
 
 - 🌟 **Bedrock** as the managed FM gateway with multiple providers (Claude, Llama, Mistral, Titan, Nova, Cohere)
-- 📚 **Knowledge Bases** — managed RAG with default OpenSearch Serverless vector store
-- 🛠️ **Agents** — multi-step tool-using assistants with action groups
-- 🛡️ **Guardrails** — content / topic / PII / contextual-grounding filters
-- 🎯 **Fine-tuning vs RAG vs continued pre-training** — when each
-- 🚀 **SageMaker JumpStart** — host foundation models in your own SageMaker endpoints / VPC
-- 🤖 **Amazon Q** — Business / Developer / QuickSight / Connect application layer
-- 🎛️ **Prompt engineering** — zero/few-shot, CoT, JSON mode, prompt caching
+- 📚 **Knowledge Bases**, managed RAG with default OpenSearch Serverless vector store
+- 🛠️ **Agents**, multi-step tool-using assistants with action groups
+- 🛡️ **Guardrails**, content / topic / PII / contextual-grounding filters
+- 🎯 **Fine-tuning vs RAG vs continued pre-training**, when each
+- 🚀 **SageMaker JumpStart**, host foundation models in your own SageMaker endpoints / VPC
+- 🤖 **Amazon Q**, Business / Developer / QuickSight / Connect application layer
+- 🎛️ **Prompt engineering**, zero/few-shot, CoT, JSON mode, prompt caching
 - 🗂️ **Embeddings** (Titan, Cohere) + **vector stores** (OpenSearch Serverless, Aurora pgvector, Pinecone)
 - 📖 The **Stripe internal RAG** reference architecture
 
@@ -396,25 +396,25 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **Amazon Bedrock User Guide** — `docs.aws.amazon.com/bedrock/`
-- 📖 **Knowledge Bases for Amazon Bedrock** — `docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html`
-- 📖 **Agents for Amazon Bedrock** — `docs.aws.amazon.com/bedrock/latest/userguide/agents.html`
-- 📖 **Amazon Q Business Admin Guide** — `docs.aws.amazon.com/amazonq/latest/qbusiness-ug/`
+- 📖 **Amazon Bedrock User Guide**, `docs.aws.amazon.com/bedrock/`
+- 📖 **Knowledge Bases for Amazon Bedrock**, `docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html`
+- 📖 **Agents for Amazon Bedrock**, `docs.aws.amazon.com/bedrock/latest/userguide/agents.html`
+- 📖 **Amazon Q Business Admin Guide**, `docs.aws.amazon.com/amazonq/latest/qbusiness-ug/`
 
 **Academic foundations**
-- 📄 **Lewis et al. (2020).** *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS — the foundational RAG paper
-- 📄 **Brown et al. (2020).** *Language Models are Few-Shot Learners.* — GPT-3, the foundation-model paradigm
-- 📄 **Wei et al. (2022).** *Chain-of-Thought Prompting Elicits Reasoning in LLMs.* NeurIPS — CoT prompting
-- 📄 **Touvron et al. (2023).** *Llama 2: Open Foundation and Fine-Tuned Chat Models.* — Llama 2 paper
+- 📄 **Lewis et al. (2020).** *Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.* NeurIPS, the foundational RAG paper
+- 📄 **Brown et al. (2020).** *Language Models are Few-Shot Learners.*, GPT-3, the foundation-model paradigm
+- 📄 **Wei et al. (2022).** *Chain-of-Thought Prompting Elicits Reasoning in LLMs.* NeurIPS, CoT prompting
+- 📄 **Touvron et al. (2023).** *Llama 2: Open Foundation and Fine-Tuned Chat Models.*, Llama 2 paper
 
 **Industry**
-- 📰 **Anthropic's Claude documentation** — prompt engineering best practices
-- 📰 **Stripe's RAG engineering posts** — production patterns
-- 📰 **Latent Space podcast** — applied GenAI engineering
+- 📰 **Anthropic's Claude documentation**, prompt engineering best practices
+- 📰 **Stripe's RAG engineering posts**, production patterns
+- 📰 **Latent Space podcast**, applied GenAI engineering
 
 ---
 
-## 🛠️ Appendix A — Worked Example: Bedrock Knowledge Base + RetrieveAndGenerate via Python
+## 🛠️ Appendix A, Worked Example: Bedrock Knowledge Base + RetrieveAndGenerate via Python
 
 ```python
 import boto3
@@ -467,7 +467,7 @@ for cit in response["citations"]:
 
 ---
 
-## 🛠️ Appendix B — Worked Example: Bedrock Agent Action Group (Lambda)
+## 🛠️ Appendix B, Worked Example: Bedrock Agent Action Group (Lambda)
 
 ```python
 # Lambda function backing an Agent action group
@@ -513,7 +513,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 🛠️ Appendix C — Bedrock Prompt Caching Pattern
+## 🛠️ Appendix C, Bedrock Prompt Caching Pattern
 
 ```python
 import boto3
@@ -534,11 +534,11 @@ response = bedrock_runtime.converse(
 )
 ```
 
-🎯 **Cost effect.** On Claude Sonnet, cached input tokens bill at ~10% of normal — so a 4K cached system prompt repeated across 10K daily queries saves ~90% of system-prompt input cost.
+🎯 **Cost effect.** On Claude Sonnet, cached input tokens bill at ~10% of normal, so a 4K cached system prompt repeated across 10K daily queries saves ~90% of system-prompt input cost.
 
 ---
 
-## 🛠️ Appendix D — Choosing The Right Bedrock Model (Decision Table)
+## 🛠️ Appendix D, Choosing The Right Bedrock Model (Decision Table)
 
 | Task | Recommended (2026) | Notes |
 |------|---------------------|-------|
@@ -557,7 +557,7 @@ response = bedrock_runtime.converse(
 
 ---
 
-## 🛠️ Appendix E — Guardrails Configuration Example
+## 🛠️ Appendix E, Guardrails Configuration Example
 
 ```python
 import boto3
@@ -598,7 +598,7 @@ bedrock.create_guardrail(
         ]
     },
 
-    # Contextual grounding — verify response is supported by retrieved docs
+    # Contextual grounding, verify response is supported by retrieved docs
     contextualGroundingPolicyConfig={
         "filtersConfig": [
             {"type": "GROUNDING", "threshold": 0.75},
@@ -611,4 +611,4 @@ bedrock.create_guardrail(
 )
 ```
 
-🎯 **Exam pattern.** Guardrails are policy layers applied *around* any Bedrock model — they do not change the model. Same guardrail can attach to multiple models / Agents.
+🎯 **Exam pattern.** Guardrails are policy layers applied *around* any Bedrock model, they do not change the model. Same guardrail can attach to multiple models / Agents.

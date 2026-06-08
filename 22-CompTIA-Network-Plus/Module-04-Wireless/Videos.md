@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Wi-Fi 6 vs Wi-Fi 5 — OFDMA</p>
+      <p class="vg-title">Wi-Fi 6 vs Wi-Fi 5, OFDMA</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 13 min · Why Wi-Fi 6 wins density</span>
     </div>

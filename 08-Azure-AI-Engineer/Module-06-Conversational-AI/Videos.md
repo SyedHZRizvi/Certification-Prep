@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Conversational AI
 
-> **How to use:** Click any video card. Filter videos to 2024+ — older LUIS / QnA Maker tutorials are outdated.
+> **How to use:** Click any video card. Filter videos to 2024+, older LUIS / QnA Maker tutorials are outdated.
 
 ## ⭐ Essential watching (~45 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Bot Service — overview + first bot</p>
+      <p class="vg-title">Azure AI Bot Service, overview + first bot</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 14 min · Channels + hosting</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Bot Framework SDK — building a Python bot</p>
+      <p class="vg-title">Bot Framework SDK, building a Python bot</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 16 min · Dialogs + state</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CLU — intent + entity in 10 minutes</p>
+      <p class="vg-title">CLU, intent + entity in 10 minutes</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 10 min · Language Studio walkthrough</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Orchestration workflow — CLU + Question Answering</p>
+      <p class="vg-title">Orchestration workflow, CLU + Question Answering</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 12 min · Single entry-point routing</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Adaptive Cards — rich UI across channels</p>
+      <p class="vg-title">Adaptive Cards, rich UI across channels</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 10 min · Card JSON</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Direct Line Speech — voice bots</p>
+      <p class="vg-title">Direct Line Speech, voice bots</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 12 min · STT/TTS pipeline</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Question Answering — build a KB</p>
+      <p class="vg-title">Question Answering, build a KB</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 10 min · Sources + active learning</span>
     </div>

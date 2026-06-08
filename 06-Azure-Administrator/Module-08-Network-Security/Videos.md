@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Firewall SKUs — Standard vs Premium</p>
+      <p class="vg-title">Azure Firewall SKUs, Standard vs Premium</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · DNAT/Network/App rules</span>
     </div>
@@ -48,7 +48,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Load Balancer vs Application Gateway vs Front Door</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 22 min · Which to pick when</span>
     </div>
   </a>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ASGs — IP-Free Segmentation</p>
+      <p class="vg-title">ASGs, IP-Free Segmentation</p>
       <p class="vg-creator">Tim Warner</p>
       <span class="vg-duration">⏱ 10 min · NSG with ASG sources</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">DDoS Protection — Network vs IP Plans</p>
+      <p class="vg-title">DDoS Protection, Network vs IP Plans</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 14 min · Basic vs Standard vs IP</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Azure WAF — Tuning OWASP Core Rule Sets</p>
+      <p class="vg-title">Azure WAF, Tuning OWASP Core Rule Sets</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 18 min · Detection → Prevention</span>
     </div>
@@ -125,7 +125,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | NSG + Firewall + WAF gold standard. |
-| **Adam Marczak — Azure for Everyone** | Service-comparison videos. |
+| **Adam Marczak, Azure for Everyone** | Service-comparison videos. |
 | **Inside Cloud and Security** | Front Door + private link patterns. |
 | **Tim Warner** | Quick ASG + Bastion intros. |
 | **Microsoft Mechanics** | DDoS + product launches. |
@@ -134,10 +134,10 @@
 
 ## ✅ After watching
 
-1. NSG default rules — what's the bottom-priority rule in both directions?
-2. NSG priority order — lower or higher number first?
-3. Subnet NSG + NIC NSG together — how is the effective rule computed?
-4. Azure Firewall rule order — DNAT, Network, Application?
-5. LB vs AGW vs Front Door — quick pick for global WAF?
+1. NSG default rules, what's the bottom-priority rule in both directions?
+2. NSG priority order, lower or higher number first?
+3. Subnet NSG + NIC NSG together, how is the effective rule computed?
+4. Azure Firewall rule order, DNAT, Network, Application?
+5. LB vs AGW vs Front Door, quick pick for global WAF?
 
 Quiz → [Quiz](./Quiz.md)

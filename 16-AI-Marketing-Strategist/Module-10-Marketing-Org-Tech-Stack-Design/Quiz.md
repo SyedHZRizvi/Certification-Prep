@@ -56,7 +56,7 @@ D. 100%
 
 ### Q7. The 30-30-30-10 rule's "10%" share is for: *(Understand)*
 A. Vendor renewals
-B. Experimental — new categories you're piloting
+B. Experimental, new categories you're piloting
 C. Salaries
 D. Travel
 
@@ -64,7 +64,7 @@ D. Travel
 
 ### Q8. A stack heavy on activation (>50%) and light on measurement (<10%) most likely indicates: *(Analyze)*
 A. A healthy stack
-B. A capability gap — you can execute but can't prove value
+B. A capability gap, you can execute but can't prove value
 C. Compliance-driven design
 D. A B2B SaaS company
 
@@ -202,13 +202,13 @@ D. Always exactly $1M
 A. Annually only
 B. Quarterly to review >$50K/year tools for replacement or insourcing
 C. Daily
-D. Never — it's just a buy decision
+D. Never, it's just a buy decision
 
 ---
 
 ### Q26. The marketing-strategist's relationship to the CFO should ideally be: *(Analyze)*
 A. Adversarial
-B. The CFO as the strategist's best internal ally — given honest measurement, they advocate for the program
+B. The CFO as the strategist's best internal ally, given honest measurement, they advocate for the program
 C. Avoidant
 D. Indifferent
 
@@ -226,7 +226,7 @@ The dominant 2026 structure for mid-to-large companies. Central shared services 
 Memorize. R = does the work. A = ultimately answerable. C = gives input. I = kept informed.
 
 ### Q4: **B. Accountable**
-Marketing owns the *use case* — they're Accountable for MMM. Data engineering is *Responsible* for execution.
+Marketing owns the *use case*, they're Accountable for MMM. Data engineering is *Responsible* for execution.
 
 ### Q5: **D. ~12,000**
 Brinker's 2024 map showed ~12,000 vendors. The number has grown every year since 2011.
@@ -235,7 +235,7 @@ Brinker's 2024 map showed ~12,000 vendors. The number has grown every year since
 Per the 30-30-30-10 rule of thumb. Infrastructure includes CDP, warehouse, sGTM, BI.
 
 ### Q7: **B. Experimental**
-The 10% reserved for piloting new categories — keeps the stack adaptive.
+The 10% reserved for piloting new categories, keeps the stack adaptive.
 
 ### Q8: **B. Capability gap**
 The strategist's red flag. Activation without measurement = unprovable ROI.

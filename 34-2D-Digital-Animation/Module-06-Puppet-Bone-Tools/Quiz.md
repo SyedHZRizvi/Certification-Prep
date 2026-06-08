@@ -1,9 +1,9 @@
 ---
 permalink: /34-2D-Digital-Animation/Module-06-Puppet-Bone-Tools/Quiz/
-title: "Module 6 Quiz: Puppet & Bone Tools — DUIK Rigging"
+title: "Module 6 Quiz: Puppet & Bone Tools, DUIK Rigging"
 ---
 
-# 🧠 Module 6 Quiz — Puppet & Bone Tools — DUIK Rigging
+# 🧠 Module 6 Quiz Puppet & Bone Tools DUIK Rigging
 
 ---
 
@@ -92,7 +92,7 @@ D. Stop-motion puppet style
 
 A. All individual bone layers (hip, knee, ankle, etc.) for precise control
 B. Only the end effector controllers (hands and feet) plus the root controller
-C. Only the root controller — DUIK auto-generates all limb motion
+C. Only the root controller, DUIK auto-generates all limb motion
 D. The shape layers that contain the visible artwork
 
 ---
@@ -129,7 +129,7 @@ D. The rendering priority of the spring element in the composition
 A. One controller per bone (40+ for a full body rig)
 B. Approximately 10 controllers for the whole character
 C. Exactly 4 controllers (head, body, left limbs, right limbs)
-D. No controllers — DUIK uses only timeline keyframes
+D. No controllers, DUIK uses only timeline keyframes
 
 ---
 
@@ -226,28 +226,28 @@ D. Change the composition frame rate to match the IK calculation rate
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — DUIK is a free, open-source rigging plugin for After Effects made by RxLaboratory.
-Q2.  B — Bassel is the established stable version; Angela (17.x) is the current generation with improvements.
-Q3.  C — The foot goal controller is what you animate; IK solves hip and knee from that position.
-Q4.  B — The pole vector/knee goal pushes the knee to avoid wrong-direction bending.
-Q5.  A — J+S joystick position blends between pre-drawn face artwork positions.
-Q6.  B — Standard J+S 5-position: Center, Up, Down, Left, Right.
-Q7.  B — Spring rigs add procedural lag and oscillation for secondary animation without keyframes.
-Q8.  B — Stiffness controls how quickly the spring returns to rest position.
-Q9.  B — Rubber hose / bendy limb style curves continuously; no rigid joint break.
-Q10. B — Only end effector controllers (hands, feet) + root are directly keyframed.
-Q11. B — Bezier IK creates a continuously curved limb following a bezier path.
-Q12. B — J+S expressions evaluate joystick position and blend face layer properties accordingly.
-Q13. B — Damping controls how quickly oscillation dies out after displacement.
-Q14. B — Approximately 10 controllers for hands, feet, hips, spine, head, and root.
-Q15. B — Angela's main improvement was a faster auto-rig workflow with smarter bone assignment.
-Q16. B — Ponytail following head turn is the classic spring rig use case.
-Q17. C — The root controller moves/scales/rotates the entire rig as a unit.
-Q18. B — J+S automatically interpolates between pre-drawn poses as the joystick moves.
-Q19. C — Bezier IK is for organic, slightly curved limbs; not fully rubber hose, not rigid.
-Q20. B — The animator draws all five face positions; J+S handles the blending.
-Q21. B — Higher damping = oscillation dies out faster = spring settles more quickly.
-Q22. B — DUIK's Pole Vector or knee goal is the correct tool for controlling elbow/knee direction.
-Q23. B — Joysticks 'n Sliders (J+S) by Mike Overbeck is the facial joystick plugin.
-Q24. B — Move the pole vector / knee goal controller to the correct side to fix knee flip.
+Q1.  B, DUIK is a free, open-source rigging plugin for After Effects made by RxLaboratory.
+Q2.  B, Bassel is the established stable version; Angela (17.x) is the current generation with improvements.
+Q3.  C, The foot goal controller is what you animate; IK solves hip and knee from that position.
+Q4.  B, The pole vector/knee goal pushes the knee to avoid wrong-direction bending.
+Q5.  A, J+S joystick position blends between pre-drawn face artwork positions.
+Q6.  B, Standard J+S 5-position: Center, Up, Down, Left, Right.
+Q7.  B, Spring rigs add procedural lag and oscillation for secondary animation without keyframes.
+Q8.  B, Stiffness controls how quickly the spring returns to rest position.
+Q9.  B, Rubber hose / bendy limb style curves continuously; no rigid joint break.
+Q10. B, Only end effector controllers (hands, feet) + root are directly keyframed.
+Q11. B, Bezier IK creates a continuously curved limb following a bezier path.
+Q12. B, J+S expressions evaluate joystick position and blend face layer properties accordingly.
+Q13. B, Damping controls how quickly oscillation dies out after displacement.
+Q14. B, Approximately 10 controllers for hands, feet, hips, spine, head, and root.
+Q15. B, Angela's main improvement was a faster auto-rig workflow with smarter bone assignment.
+Q16. B, Ponytail following head turn is the classic spring rig use case.
+Q17. C, The root controller moves/scales/rotates the entire rig as a unit.
+Q18. B, J+S automatically interpolates between pre-drawn poses as the joystick moves.
+Q19. C, Bezier IK is for organic, slightly curved limbs; not fully rubber hose, not rigid.
+Q20. B, The animator draws all five face positions; J+S handles the blending.
+Q21. B, Higher damping = oscillation dies out faster = spring settles more quickly.
+Q22. B, DUIK's Pole Vector or knee goal is the correct tool for controlling elbow/knee direction.
+Q23. B, Joysticks 'n Sliders (J+S) by Mike Overbeck is the facial joystick plugin.
+Q24. B, Move the pole vector / knee goal controller to the correct side to fix knee flip.
 ```

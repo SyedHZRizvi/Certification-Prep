@@ -44,10 +44,10 @@ D. The directory service
 ---
 
 ### Q5. NAC stands for and means: *(Remember)*
-A. Network Address Control — assigning IPs
-B. Network Access Control — posture-checks devices before granting network access
-C. Network Address Configuration — DHCP
-D. New Authentication Control — replacing 802.1X
+A. Network Address Control, assigning IPs
+B. Network Access Control, posture-checks devices before granting network access
+C. Network Address Configuration, DHCP
+D. New Authentication Control, replacing 802.1X
 
 ---
 
@@ -95,7 +95,7 @@ D. Replace 802.1X authentication
 A. Only the payload, leaving the original IP header visible
 B. The entire original packet, adding a new outer IP header
 C. Just the source IP
-D. Nothing — ESP doesn't encrypt
+D. Nothing, ESP doesn't encrypt
 
 ---
 
@@ -109,7 +109,7 @@ D. Whitelisting
 
 ### Q13. An ACL rule order is significant because: *(Apply)*
 A. Rules are evaluated in random order
-B. Rules are evaluated top-down, first match wins — a permit-all near the top makes everything below dead
+B. Rules are evaluated top-down, first match wins, a permit-all near the top makes everything below dead
 C. Rules are sorted alphabetically
 D. The firewall picks the most permissive rule
 
@@ -173,7 +173,7 @@ D. Disable DNS
 
 ### Q21. A SOC reports that the IPS keeps blocking legitimate web traffic because rules are too aggressive. The right response is: *(Analyze)*
 A. Disable the IPS
-B. Tune the rules — switch high-FP rules to alert-only, whitelist the affected source/dest, and adjust thresholds while continuing protection on the rest
+B. Tune the rules, switch high-FP rules to alert-only, whitelist the affected source/dest, and adjust thresholds while continuing protection on the rest
 C. Replace IPS with IDS
 D. Replace IPS with NAC
 
@@ -181,7 +181,7 @@ D. Replace IPS with NAC
 
 ### Q22. An enterprise wants per-user access to specific internal apps from any device or location WITHOUT giving users a "VPN tunnel to the whole network." The architectural fit is: *(Analyze)*
 A. Site-to-Site IPsec
-B. Zero Trust Network Access (ZTNA) — identity-aware proxy publishes specific apps to authorized users
+B. Zero Trust Network Access (ZTNA), identity-aware proxy publishes specific apps to authorized users
 C. WPA3-Personal
 D. Telnet jumphost
 
@@ -197,7 +197,7 @@ D. Replace all switches with hubs
 
 ### Q24. Mantraps / access-control vestibules primarily defend against: *(Analyze)*
 A. SQL injection
-B. Tailgating — preventing an unauthorized person from following an authorized person through a door
+B. Tailgating, preventing an unauthorized person from following an authorized person through a door
 C. DNS poisoning
 D. Wi-Fi deauth
 
@@ -215,7 +215,7 @@ D. Nothing is denied by default
 
 > *Create-level note:* you're justifying an architectural transition; pick the answer that captures the single biggest reason.
 A. "ZTNA is cheaper than VPN."
-B. "ZTNA grants access per-application (identity + posture + context), eliminating the broad network-level trust that VPN gives — reducing lateral-movement risk if a user device is compromised."
+B. "ZTNA grants access per-application (identity + posture + context), eliminating the broad network-level trust that VPN gives, reducing lateral-movement risk if a user device is compromised."
 C. "VPN doesn't support IPv6."
 D. "ZTNA replaces DNS."
 
@@ -235,14 +235,14 @@ ESP (Encapsulating Security Payload) provides encryption + integrity + auth. AH 
 ### Q4: **C. The client device requesting access**
 Supplicant = client (laptop, IP camera, phone). Authenticator = switch/WAP. Authentication server = RADIUS.
 
-### Q5: **B. Network Access Control — posture-checks**
+### Q5: **B. Network Access Control, posture-checks**
 NAC verifies device health (patch level, AV, encryption, fingerprint) BEFORE granting network access. Cisco ISE, Aruba ClearPass, FortiNAC are common.
 
 ### Q6: **B. TCP 443**
 SSL/TLS VPNs ride TCP/443 so they pass through almost any firewall (looks like HTTPS). UDP 500 is IKE. TCP 22 is SSH. UDP 1194 is OpenVPN's default.
 
 ### Q7: **B. General perimeter/segmentation with auto-allowed return traffic**
-Stateful is the workhorse — the right fit for perimeter and inter-segment filtering where the typical pattern is "allow outbound + return traffic." SQLi protection (A) needs a WAF.
+Stateful is the workhorse, the right fit for perimeter and inter-segment filtering where the typical pattern is "allow outbound + return traffic." SQLi protection (A) needs a WAF.
 
 ### Q8: **A. App identification, user identity, DPI, IDS/IPS integration**
 NGFW = stateful + DPI + app awareness + user identity + IDS/IPS + TLS decryption. The full modern stack.
@@ -284,7 +284,7 @@ WAF specifically understands HTTP/HTTPS and OWASP-class attacks at the applicati
 Network containment (e.g., 802.1X termination, switch ACL, EDR isolate) prevents lateral spread; preserving evidence enables forensics. Wiping immediately destroys evidence.
 
 ### Q21: **B. Tune the rules**
-False positives demand tuning, not disablement. Switch noisy rules to alert-only, whitelist trusted source/dest combos, adjust thresholds — keep IPS active where it earns its keep.
+False positives demand tuning, not disablement. Switch noisy rules to alert-only, whitelist trusted source/dest combos, adjust thresholds, keep IPS active where it earns its keep.
 
 ### Q22: **B. ZTNA**
 Identity-aware proxy publishing specific apps is the textbook ZTNA pattern. Users get app-level access, not network-level.
@@ -296,7 +296,7 @@ The Target case study (in the Reading). Flat networks enable unrestricted latera
 The two-door vestibule prevents a second person from slipping through behind an authorized user. Cameras + badges + biometrics can complement.
 
 ### Q25: **B. Anything not explicitly permitted is denied**
-The conservative default — start with deny, then add permits.
+The conservative default, start with deny, then add permits.
 
 ### Q26: **B. Per-app access vs network-wide trust**
 The strongest single justification is that VPN trust is *network-level* (user can lateral-scan if compromised) while ZTNA is *application-level* (compromised user has access only to apps they're authorized for, validated continuously). Cost (A) and IPv6 (C) are not the architectural drivers; D is false.
@@ -327,4 +327,4 @@ The strongest single justification is that VPN trust is *network-level* (user ca
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — Monitoring, Performance & Tools](../Module-07-Monitoring-Tools/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, Monitoring, Performance & Tools](../Module-07-Monitoring-Tools/Reading.md)

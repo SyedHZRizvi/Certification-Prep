@@ -261,7 +261,7 @@ Built for secrets, keys, certs. HSM-backed.
 Reader = view-only. Lowest meaningful privilege among the four fundamental roles.
 
 ### Q18: **B. Azure Bastion**
-Browser-based RDP/SSH over a private hop — no public IPs needed on the VMs.
+Browser-based RDP/SSH over a private hop, no public IPs needed on the VMs.
 
 ### Q19: **B. A bundle of related Azure Policies**
 Examples: "ISO 27001" initiative, "PCI DSS v3.2.1" initiative.
@@ -279,13 +279,13 @@ Classic Policy use case: restrict allowed regions.
 Sentinel = SIEM (logs/correlation) + SOAR (automation/playbooks).
 
 ### Q24: **B. Zero Trust**
-"Authenticate everything, re-evaluate risk, minimum privilege" — textbook Zero Trust.
+"Authenticate everything, re-evaluate risk, minimum privilege", textbook Zero Trust.
 
 ### Q25: **B. Requires Entra ID P1 or higher**
-CA isn't in the Free tier — comes with P1+.
+CA isn't in the Free tier, comes with P1+.
 
 ### Q26: **B. Private Endpoint / Private Link**
-Private Link brings PaaS into your VNet via a private IP — no public endpoint exposed.
+Private Link brings PaaS into your VNet via a private IP, no public endpoint exposed.
 
 ---
 
@@ -301,7 +301,7 @@ Private Link brings PaaS into your VNet via a private IP — no public endpoint 
 ## 🃏 Add To Your Flashcards
 
 - New name for Azure AD
-- RBAC vs Policy vs Lock — one-sentence each
+- RBAC vs Policy vs Lock, one-sentence each
 - 4 fundamental built-in roles
 - 3 Zero Trust principles
 - Defender for Cloud vs Sentinel

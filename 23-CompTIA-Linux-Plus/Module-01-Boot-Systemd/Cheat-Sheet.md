@@ -62,7 +62,7 @@ After ANY of: new kernel · new LUKS device · `/etc/crypttab` change · root FS
 |------|--------------|
 | `start` / `stop` / `restart` | Now-only, no persistence |
 | `enable` / `disable` | Boot-time symlink only |
-| `enable --now` | Both — most-used admin verb |
+| `enable --now` | Both, most-used admin verb |
 | `reload` | Re-read config without dropping connections (SIGHUP) |
 | `status` | State + last 10 log lines |
 | `cat` | Effective unit file (drop-ins merged) |

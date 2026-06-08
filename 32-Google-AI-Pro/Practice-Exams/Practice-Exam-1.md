@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1 — Google AI Pro (Modules 1–5 focus)
+# 🧪 Practice Exam 1, Google AI Pro (Modules 1–5 focus)
 
 > **Conditions:** Set a 45-minute timer. 30 questions. Treat it like the real assessment.
-> **Pass mark:** 24/30 (~80%) — Generative AI Leader uses scaled scoring; this practice mark is rigorous.
+> **Pass mark:** 24/30 (~80%), Generative AI Leader uses scaled scoring; this practice mark is rigorous.
 > Take this AFTER finishing Modules 1–5. Covers Google AI Landscape, AI Studio + Gemini API, Vertex AI Platform, Multi-modal Gemini, and RAG on Google Cloud.
 
 ---
@@ -34,14 +34,14 @@ D. 2M tokens
 
 ### 5. Gemini's vision is BEST described as:
 A. CLIP-adapter bolted onto a text model
-B. Natively multi-modal — trained on text + image + audio + video jointly from scratch
+B. Natively multi-modal, trained on text + image + audio + video jointly from scratch
 C. Outsourced to Anthropic
 D. Not available
 
 ### 6. The Google AI Principles (2018) document includes:
 A. Seven principles + four red lines
 B. Three commandments
-C. None — Google has no AI principles
+C. None, Google has no AI principles
 D. Twelve rules
 
 ### 7. For high-volume intent classification on millions of messages/day, the BEST default Gemini tier:
@@ -50,7 +50,7 @@ B. Gemini 2.5 Flash
 C. Gemini 2.5 Pro
 D. Gemini 2.5 Ultra
 
-### 8. Google AI Studio vs Vertex AI — the KEY difference:
+### 8. Google AI Studio vs Vertex AI, the KEY difference:
 A. Same product, different branding
 B. AI Studio = consumer-grade playground (API keys, hobby); Vertex AI = enterprise platform (IAM, VPC-SC, billing, residency)
 C. Vertex is free; AI Studio paid
@@ -81,7 +81,7 @@ C. PII, PHI, PCI, IP
 D. Bias, Toxicity, Privacy, Copyright
 
 ### 13. To estimate token cost before paying for inference:
-A. Call `model.count_tokens(prompt)` — free endpoint
+A. Call `model.count_tokens(prompt)`, free endpoint
 B. Divide character count by 4 and trust
 C. Make a `max_tokens=1` call
 D. Not possible
@@ -142,14 +142,14 @@ D. Cost overruns
 
 ### 23. CMEK on Vertex AI provides:
 A. Free encryption
-B. Customer-Managed Encryption Keys — you can rotate / revoke
+B. Customer-Managed Encryption Keys, you can rotate / revoke
 C. Per-request encryption only
 D. Self-hosting
 
 ### 24. For a German bank requiring data residency in Germany, the appropriate Vertex AI region:
 A. `us-central1`
 B. `europe-west3` (Frankfurt)
-C. `europe-west1` (Belgium — EU but not German)
+C. `europe-west1` (Belgium, EU but not German)
 D. `asia-northeast1`
 
 ### 25. Gemini's default video sampling rate is:
@@ -166,7 +166,7 @@ D. ~10M
 
 ### 27. For files >20MB used across multiple Gemini calls, the BEST pattern is:
 A. Inline base64 in every prompt
-B. Files API — upload once, reference URI on subsequent calls
+B. Files API, upload once, reference URI on subsequent calls
 C. Don't use multi-modal
 D. Email to Google
 

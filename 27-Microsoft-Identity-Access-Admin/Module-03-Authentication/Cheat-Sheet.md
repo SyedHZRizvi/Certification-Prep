@@ -1,4 +1,4 @@
-# 📋 Module 3 Cheat Sheet: Authentication — MFA & Passwordless
+# 📋 Module 3 Cheat Sheet: Authentication, MFA & Passwordless
 
 > One page. Print it. Tape it to your monitor. Review before the exam.
 

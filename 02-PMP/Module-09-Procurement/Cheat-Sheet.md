@@ -12,7 +12,7 @@
 ## 📨 RFx
 | Type | When |
 |------|------|
-| RFI | Early — info gathering |
+| RFI | Early, info gathering |
 | RFP | Solution proposal |
 | RFQ | Price quote (defined scope) |
 | IFB | Sealed bid |
@@ -21,21 +21,21 @@
 
 ## 📋 Contract Families
 
-### Fixed-Price (FP) — VENDOR risk
-- FFP — single price
-- FPIF — + bonus
-- FP-EPA — inflation adjustment
+### Fixed-Price (FP), VENDOR risk
+- FFP, single price
+- FPIF, + bonus
+- FP-EPA, inflation adjustment
 
 🎯 Use: stable scope
 
-### Cost-Reimbursable (CR) — BUYER risk
-- CPFF — + fixed fee
-- CPIF — + incentive
-- CPAF — + award
+### Cost-Reimbursable (CR), BUYER risk
+- CPFF, + fixed fee
+- CPIF, + incentive
+- CPAF, + award
 
 🎯 Use: uncertain scope
 
-### Time & Materials (T&M) — Hybrid
+### Time & Materials (T&M), Hybrid
 🎯 Use: small/staffing
 
 ---
@@ -50,9 +50,9 @@ HIGH BUYER RISK ────────► HIGH SELLER RISK
 ---
 
 ## 📜 SOW Types
-- **Performance** — describe end results
-- **Functional** — perf + features
-- **Design** — describe how
+- **Performance**, describe end results
+- **Functional**, perf + features
+- **Design**, describe how
 
 ---
 

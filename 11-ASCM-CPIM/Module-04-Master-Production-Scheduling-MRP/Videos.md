@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Master Production Schedule — Worked Example</p>
+      <p class="vg-title">Master Production Schedule, Worked Example</p>
       <p class="vg-creator">Education Edge</p>
       <span class="vg-duration">⏱ 18 min · Build an MPS table</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">DDMRP — Demand Driven MRP</p>
+      <p class="vg-title">DDMRP, Demand Driven MRP</p>
       <p class="vg-creator">Demand Driven Institute</p>
       <span class="vg-duration">⏱ 25 min · The modern variant</span>
     </div>

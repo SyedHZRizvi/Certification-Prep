@@ -29,19 +29,19 @@
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+safety+settings+harm+categories+thresholds+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">safety_settings — Full Reference</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">safety_settings, Full Reference</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · 4×4 matrix</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=SynthID+google+deepmind+watermark+ai+generated" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SynthID — Watermarking AI Content</p><p class="vg-creator">Google DeepMind</p>
+      <p class="vg-title">SynthID, Watermarking AI Content</p><p class="vg-creator">Google DeepMind</p>
       <span class="vg-duration">⏱ 14 min · Image + audio + text</span></div>
   </a>
   <a class="vg-card" href="https://www.youtube.com/results?search_query=SAIF+google+secure+ai+framework+six+elements" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SAIF — Secure AI Framework</p><p class="vg-creator">Google Cloud Security</p>
+      <p class="vg-title">SAIF, Secure AI Framework</p><p class="vg-creator">Google Cloud Security</p>
       <span class="vg-duration">⏱ 13 min · 6-element framework</span></div>
   </a>
   <a class="vg-card" data-video-id="MppNtk31jNY" href="https://www.youtube.com/results?search_query=prompt+injection+OWASP+LLM+attack+defense+tutorial" target="_blank" rel="noopener">
@@ -117,5 +117,5 @@
 1. The four safety_settings categories?
 2. The four threshold levels?
 3. What does the recitation checker do?
-4. SynthID — three variants?
+4. SynthID, three variants?
 5. The 12-item responsible-AI checklist (top 6)?

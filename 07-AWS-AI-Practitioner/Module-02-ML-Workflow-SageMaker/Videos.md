@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: ML Workflow on Amazon SageMaker
 
-> **How to use:** Take notes on every service's *one-line job*. The AIF-C01 leans heavily on "which service for this scenario?" — so you don't need depth, you need *recognition* across many services.
+> **How to use:** Take notes on every service's *one-line job*. The AIF-C01 leans heavily on "which service for this scenario?", so you don't need depth, you need *recognition* across many services.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Amazon SageMaker — End-to-End ML Overview</p>
+      <p class="vg-title">Amazon SageMaker, End-to-End ML Overview</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 15 min · Official tour of Studio + tools</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS AI Services Tour — Rekognition, Comprehend, Polly &amp; More</p>
+      <p class="vg-title">AWS AI Services Tour, Rekognition, Comprehend, Polly &amp; More</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 18 min · One-liner per service</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AIF-C01 — SageMaker for the AI Practitioner Exam</p>
+      <p class="vg-title">AIF-C01, SageMaker for the AI Practitioner Exam</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 20 min · Exam-targeted depth</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Canvas vs Autopilot vs JumpStart — Which Should You Use?</p>
+      <p class="vg-title">Canvas vs Autopilot vs JumpStart, Which Should You Use?</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 12 min · Removes the #1 confusion in this domain</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SageMaker Model Monitor — Detecting Drift in Production</p>
+      <p class="vg-title">SageMaker Model Monitor, Detecting Drift in Production</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 10 min · 4 drift types covered</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">SageMaker Pipelines — CI/CD for ML</p>
+      <p class="vg-title">SageMaker Pipelines, CI/CD for ML</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 35 min · Conference talk on MLOps</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">SageMaker Ground Truth — Labeling at Scale</p>
+      <p class="vg-title">SageMaker Ground Truth, Labeling at Scale</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 28 min · Workforce choices &amp; active learning</span>
     </div>

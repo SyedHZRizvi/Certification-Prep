@@ -129,7 +129,7 @@ D. Is removed from the tenant
 A. All apps assigned to the user
 B. A subset of mission-critical apps so the ESP doesn't time out
 C. Only Office apps
-D. None — let users install via Company Portal later
+D. None, let users install via Company Portal later
 
 ---
 
@@ -157,7 +157,7 @@ D. Pre-provisioned white-glove
 
 ---
 
-### Q19. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q19. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** Autopilot user-driven requires internet at OOBE.
 **S2:** Autopilot self-deploying works on any TPM 1.2 device.
@@ -188,9 +188,9 @@ D. In-place upgrade
 
 ### Q22. A 4-year-old fleet of Dell laptops with TPM 1.2 needs to move to Windows 11. The correct answer is: *(Analyze)*
 A. Install Windows 11 with a registry workaround
-B. The devices cannot run Windows 11 in supported mode — plan a hardware refresh
+B. The devices cannot run Windows 11 in supported mode, plan a hardware refresh
 C. Use Autopilot self-deploying
-D. Use in-place upgrade — TPM 1.2 is sufficient
+D. Use in-place upgrade, TPM 1.2 is sufficient
 
 ---
 
@@ -202,7 +202,7 @@ D. device.manufacturer
 
 ---
 
-### Q24. Yes/No — For each statement, mark Yes or No. *(Evaluate)*
+### Q24. Yes/No, For each statement, mark Yes or No. *(Evaluate)*
 
 **S1:** MDT enrolls devices into Intune automatically at the end of a task sequence.
 **S2:** ConfigMgr OSD is deprecated and being removed in 2026.
@@ -256,7 +256,7 @@ ConfigMgr layers enterprise infrastructure (DPs, collections, software updates) 
 In-place preserves apps and user data. Wipe-and-load reimages clean.
 
 ### Q11: **C. Autopilot reset**
-Reset wipes the device and re-applies the Autopilot profile for a new user — the repurposing flow.
+Reset wipes the device and re-applies the Autopilot profile for a new user, the repurposing flow.
 
 ### Q12: **C. TPM 2.0, UEFI + Secure Boot, supported 64-bit CPU**
 The non-negotiable Windows 11 system requirements.
@@ -280,7 +280,7 @@ Default ESP timeout = 60 minutes; tune to your fleet.
 No internet at OOBE = .ppkg, period. Autopilot needs internet.
 
 ### Q19: **D. Yes / No / Yes**
-S1 yes — Autopilot needs internet. S2 no — self-deploying needs TPM 2.0. S3 yes — Autopilot reset re-applies the profile.
+S1 yes Autopilot needs internet. S2 no self-deploying needs TPM 2.0. S3 yes, Autopilot reset re-applies the profile.
 
 ### Q20: **B. Microsoft Partner Center Autopilot APIs at the factory**
 OEMs use Partner Center APIs to register devices to customer tenants at the time of manufacture.
@@ -288,7 +288,7 @@ OEMs use Partner Center APIs to register devices to customer tenants at the time
 ### Q21: **B. Pre-provisioned (Autopilot)**
 "White-glove" was the original Microsoft name; "pre-provisioned" is the current name. Same thing.
 
-### Q22: **B. The devices cannot run Windows 11 in supported mode — plan a hardware refresh**
+### Q22: **B. The devices cannot run Windows 11 in supported mode, plan a hardware refresh**
 Microsoft requires TPM 2.0 for supported Windows 11. Registry workarounds are unsupported.
 
 ### Q23: **B. device.devicePhysicalIds with ZTDId**

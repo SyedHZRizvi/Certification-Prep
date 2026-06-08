@@ -3,16 +3,16 @@
 > **Why this module matters:** You have 5 capstones done. They're invisible until they have a wrapper. This module is the wrapper: LinkedIn rebuilt, portfolio site live, content distribution plan, first 30 posts. Without this, the capstones sit on Notion and no one finds them.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [The 5 finished capstones](../Module-02-Capstone-SEO-Content-Audit/Reading.md) — Modules 2–6 should all be drafted (it's OK if 1–2 are still polishing, but you need substance to package)
-> - [Portfolio strategy / 3 audience paths](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md) — covered earlier in this course
-> - Basic copywriting for the platform you're posting on (LinkedIn voice ≠ Twitter voice ≠ Substack voice) — touched on in [14-AI-Marketing-Foundations Module 4](../../14-AI-Marketing-Foundations/Module-04-Content-Marketing-Generative-AI/Reading.md)
-> If you arrived at Module 7 without finishing 4+ capstones, pause — there's nothing to package yet.
+> - [The 5 finished capstones](../Module-02-Capstone-SEO-Content-Audit/Reading.md), Modules 2–6 should all be drafted (it's OK if 1–2 are still polishing, but you need substance to package)
+> - [Portfolio strategy / 3 audience paths](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
+> - Basic copywriting for the platform you're posting on (LinkedIn voice ≠ Twitter voice ≠ Substack voice), touched on in [14-AI-Marketing-Foundations Module 4](../../14-AI-Marketing-Foundations/Module-04-Content-Marketing-Generative-AI/Reading.md)
+> If you arrived at Module 7 without finishing 4+ capstones, pause, there's nothing to package yet.
 
 ---
 
 ## 🎬 A Story: Two LinkedIns
 
-Imagine two marketers — Priya and Eli — both finished the same 5 capstones in the same 6 weeks. Same projects, same quality, similar career stage.
+Imagine two marketers Priya and Eli both finished the same 5 capstones in the same 6 weeks. Same projects, same quality, similar career stage.
 
 **Priya's LinkedIn:**
 - Headline: *"Marketing Manager | Driving Growth Through Strategy"*
@@ -22,9 +22,9 @@ Imagine two marketers — Priya and Eli — both finished the same 5 capstones i
 - Followers: 312
 
 **Eli's LinkedIn:**
-- Headline: *"AI-native marketer | Built an attribution model that saved a paid social budget — case study pinned"*
+- Headline: *"AI-native marketer | Built an attribution model that saved a paid social budget, case study pinned"*
 - About: 3 paragraphs. Opens with "Last month I built a $200 paid campaign and lost money on purpose. Here's what I learned." Includes link to their portfolio.
-- Featured section: 4 pinned items — the 5 capstones distilled (1 is grouped)
+- Featured section: 4 pinned items, the 5 capstones distilled (1 is grouped)
 - Recent activity: 8 posts in 4 weeks. Each one is a behind-the-scenes look at one capstone. Average 1,200 impressions per post.
 - Followers: 1,847
 
@@ -41,11 +41,11 @@ Their capstones were equivalent. Eli's *wrapper* did the work.
 
 **Deliverables:**
 
-1. **LinkedIn rebuild** — new headline, About section, Featured pins, banner
-2. **Portfolio site** — Notion / Webflow / Read.cv / Astro, with all 5 capstones
-3. **Content distribution playbook** — what you post where, how often
-4. **First 30 posts drafted** — 20 LinkedIn, 5 Twitter threads, 5 YouTube shorts or carousels
-5. **"Build in public" cadence committed** — when you post, what triggers each post
+1. **LinkedIn rebuild**, new headline, About section, Featured pins, banner
+2. **Portfolio site**, Notion / Webflow / Read.cv / Astro, with all 5 capstones
+3. **Content distribution playbook**, what you post where, how often
+4. **First 30 posts drafted**, 20 LinkedIn, 5 Twitter threads, 5 YouTube shorts or carousels
+5. **"Build in public" cadence committed**, when you post, what triggers each post
 
 **Total time:** ~6 hours focused work + ongoing posting.
 
@@ -57,10 +57,10 @@ The headline is the single most read line on your profile. It appears in search 
 
 ### The Wrong Headline Patterns
 
-- *"Marketing Manager at Acme Corp"* — just your job, no signal
-- *"Driving growth through strategic marketing"* — generic
-- *"Marketer | Strategist | Storyteller"* — listicle, no value
-- *"Open to work"* — desperate
+- *"Marketing Manager at Acme Corp"*, just your job, no signal
+- *"Driving growth through strategic marketing"*, generic
+- *"Marketer | Strategist | Storyteller"*, listicle, no value
+- *"Open to work"*, desperate
 
 ### The Right Headline Patterns
 
@@ -71,8 +71,8 @@ The good ones do one of three things:
 *"Build paid acquisition systems for indie product founders"*
 
 **Pattern B: Capstone-Anchored**
-*"Built a multi-touch attribution model that saved a paid social budget — case study below"*
-*"Marketer who built a content-brief AI agent — repo + Loom on profile"*
+*"Built a multi-touch attribution model that saved a paid social budget, case study below"*
+*"Marketer who built a content-brief AI agent, repo + Loom on profile"*
 
 **Pattern C: Honest Vibe + Specific Skill**
 *"Curious marketer learning to build with the Claude API • portfolio in Featured"*
@@ -82,15 +82,15 @@ The good ones do one of three things:
 
 1. Look at your 5 capstones. Which one would the recruiter / first prospect care most about?
 2. Build the headline around THAT one (Pattern B is recommended for entry-level).
-3. End with "case study below" or "portfolio in Featured" — a clear call-to-action to the featured section.
+3. End with "case study below" or "portfolio in Featured", a clear call-to-action to the featured section.
 
 Recommended starter formula:
-**`[Your role/identity] | [Most impressive capstone hook] — [where to find it]`**
+**`[Your role/identity] | [Most impressive capstone hook], [where to find it]`**
 
 Examples:
 
-- *"Marketer | Built a $200 paid campaign + post-mortem — featured ↓"*
-- *"AI-native marketer | Lead-routing agent + content brief generator — repos pinned"*
+- *"Marketer | Built a $200 paid campaign + post-mortem, featured ↓"*
+- *"AI-native marketer | Lead-routing agent + content brief generator, repos pinned"*
 
 ---
 
@@ -123,7 +123,7 @@ Closing (1 paragraph, ~70 words):
 ```
 Last month I spent $200 of my own money on Meta + Google Ads for a 
 friend's coaching business. Two creatives bombed; one crushed. 
-ROAS came in at 0.84 — slight loss, but the data showed exactly 
+ROAS came in at 0.84, slight loss, but the data showed exactly 
 which creative + audience combo would scale at $2k/mo. Full case 
 study below.
 
@@ -165,7 +165,7 @@ LinkedIn lets you pin up to ~10 items. Use 4–6.
 
 LinkedIn → Profile → Featured → "+" → Add a link / post / document.
 
-For each pin, write a 1-sentence custom title that maximizes the click. Default LinkedIn titles are bad — override them.
+For each pin, write a 1-sentence custom title that maximizes the click. Default LinkedIn titles are bad, override them.
 
 ---
 
@@ -177,10 +177,10 @@ The banner image is 1584 × 396 pixels. Most people leave it default (blue). Don
 
 Options (pick one):
 
-1. **A clean wordmark** — your name + tagline ("AI-native marketer • builds in public")
-2. **A capstone screenshot** — the attribution chart, or the agent's output
-3. **A code-art aesthetic** — terminal screenshot, dashboard, abstract pattern
-4. **A simple stat** — *"5 capstones shipped in 6 weeks. Portfolio in Featured ↓"*
+1. **A clean wordmark**, your name + tagline ("AI-native marketer • builds in public")
+2. **A capstone screenshot**, the attribution chart, or the agent's output
+3. **A code-art aesthetic**, terminal screenshot, dashboard, abstract pattern
+4. **A simple stat**, *"5 capstones shipped in 6 weeks. Portfolio in Featured ↓"*
 
 Build it in Canva (free LinkedIn banner templates). Should look polished but personal.
 
@@ -213,22 +213,22 @@ If you picked Notion in Module 1:
 [Link to full case study]
 
 ## 2. Live Paid Campaign  
-[Hero image — the carousel cover or the results chart]
+[Hero image, the carousel cover or the results chart]
 [3-sentence summary]
 [Link to full case study]
 
 ## 3. Marketing Automation Workflow
-[Hero image — architecture diagram]
+[Hero image, architecture diagram]
 [3-sentence summary]
 [Link to full case study]
 
 ## 4. Attribution Model
-[Hero image — the comparison chart]
+[Hero image, the comparison chart]
 [3-sentence summary]
 [Link to full case study]
 
 ## 5. AI Marketing Agent
-[Hero image — agent output sample or architecture]
+[Hero image, agent output sample or architecture]
 [3-sentence summary]
 [Link to GitHub repo + Loom]
 
@@ -242,7 +242,7 @@ That's it. Should take 2 hours total.
 
 If you have time + design instinct:
 
-1. Pick a Webflow template (search "portfolio template" — many free)
+1. Pick a Webflow template (search "portfolio template", many free)
 2. Customize colors + typography to your brand
 3. Replicate the Notion structure but with better design
 4. Connect custom domain
@@ -470,7 +470,7 @@ By end of 90 days from finishing this module, target:
 | Portfolio site uniques per week | 50+ |
 | Twitter / X followers | 100+ (if you're using it) |
 
-These aren't vanity — they're leading indicators. If you're hitting these, you're 4–8 weeks away from a phone screen or first paid project. If you're not, the issue is usually content quality or posting frequency.
+These aren't vanity, they're leading indicators. If you're hitting these, you're 4–8 weeks away from a phone screen or first paid project. If you're not, the issue is usually content quality or posting frequency.
 
 ---
 
@@ -484,7 +484,7 @@ Your 60-second cold open:
 [CONTEXT]: "I'm a marketer focused on [niche/role]."
 
 [PORTFOLIO HOOK]: "Over the last 6 weeks I shipped 5 portfolio pieces 
-                   — an SEO audit for an indie SaaS, a $200 paid 
+                  , an SEO audit for an indie SaaS, a $200 paid 
                    campaign post-mortem, a marketing automation in 
                    Make.com, a multi-touch attribution model, and an 
                    AI agent built with Claude API."
@@ -506,7 +506,7 @@ Your 60-second cold open:
 | **Personal brand** | The reputation you cultivate publicly |
 | **Build in public** | Sharing work-in-progress, not just polished outputs |
 | **Distribution playbook** | The plan for where + how often you post |
-| **Engagement bait** | Manipulative content tactics — avoid |
+| **Engagement bait** | Manipulative content tactics, avoid |
 | **Featured section** | LinkedIn's pinned-content area on profiles |
 | **Headline** | LinkedIn profile's tagline (220 chars) |
 | **Hero image** | The lead image on a portfolio/case study page |
@@ -541,28 +541,28 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Justin Welsh's free LinkedIn Operating System overview](https://www.justinwelsh.me/) — THE canonical reference
-- 📖 [Lara Acosta — LinkedIn growth content](https://www.linkedin.com/in/laraacostacastillo/)
-- 📖 [Amelia Sordell — Personal branding for B2B](https://www.linkedin.com/in/ameliasordell/)
+- 📖 [Justin Welsh's free LinkedIn Operating System overview](https://www.justinwelsh.me/), THE canonical reference
+- 📖 [Lara Acosta, LinkedIn growth content](https://www.linkedin.com/in/laraacostacastillo/)
+- 📖 [Amelia Sordell, Personal branding for B2B](https://www.linkedin.com/in/ameliasordell/)
 - 📖 [Cody Schneider's marketing portfolio walkthrough](https://twitter.com/codyschneiderxx)
 - 📖 [Notion's portfolio template gallery](https://www.notion.com/templates/category/portfolio)
 - 📖 [Read.cv featured profiles](https://read.cv/explore)
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
 These prompts probe the tension between "ship the wrapper fast" and "build a brand that compounds." Defend your reasoning against both sides.
 
-1. **The reading flatly says "Notion is the default; Webflow loses 2 weeks."** A senior designer pushes back: "For brand or DTC marketing roles, a Notion site signals 'doesn't care about craft' — it actively undersells you." When is the speed argument right, and when is the craft argument right? Build the case for the audience-specific exception to the Notion-default rule.
-2. **The "First 30 Posts" framework distributes posts across 7 types (deep-dive, lesson learned, behind-the-scenes, contrarian, resource, question, milestone).** A successful indie creator counters that LinkedIn's algorithm now actively *demotes* variety — pick one format and ride it for 90 days. Is the diversified-posting playbook here outdated for 2026 LinkedIn? Defend the diversified approach against the focused-niching approach.
+1. **The reading flatly says "Notion is the default; Webflow loses 2 weeks."** A senior designer pushes back: "For brand or DTC marketing roles, a Notion site signals 'doesn't care about craft', it actively undersells you." When is the speed argument right, and when is the craft argument right? Build the case for the audience-specific exception to the Notion-default rule.
+2. **The "First 30 Posts" framework distributes posts across 7 types (deep-dive, lesson learned, behind-the-scenes, contrarian, resource, question, milestone).** A successful indie creator counters that LinkedIn's algorithm now actively *demotes* variety, pick one format and ride it for 90 days. Is the diversified-posting playbook here outdated for 2026 LinkedIn? Defend the diversified approach against the focused-niching approach.
 3. **The 90-day Personal Brand Goals table sets targets like "30+ posts published, 100+ profile views/week, 5+ inbound connection requests/week."** A pragmatist says these metrics will discourage students whose audience is small/niche: a B2B SaaS marketer targeting *only* 50 hiring managers at Series B SaaS companies should hit 0 inbound DMs from outside that audience and that would mean the strategy is working. How should the metrics adapt to audience size? What's the universally-applicable signal?
-4. **The "build in public" mindset is presented as universal best practice.** A senior marketing exec at a large enterprise says it's actively career-limiting for *some* archetypes — corporate brand marketers, government affairs, regulated industries (healthcare, finance). When is "build in public" the wrong move? Where's the line, and how do you stay credible without it?
+4. **The "build in public" mindset is presented as universal best practice.** A senior marketing exec at a large enterprise says it's actively career-limiting for *some* archetypes, corporate brand marketers, government affairs, regulated industries (healthcare, finance). When is "build in public" the wrong move? Where's the line, and how do you stay credible without it?
 5. **The reading recommends pricing pinned in Featured posts and headline ("Built a $200 paid campaign post-mortem").** A counter from a junior who tried this: putting specific numbers in the headline scared off recruiters at larger companies ("if your biggest campaign was $200, you're not ready for our team"). When does specificity help, and when does it shrink your addressable audience? How do you calibrate?
 
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 8 (First-Client Pitch) uses the rebuilt LinkedIn and portfolio site as the surface area for cold-outreach replies — and the 7-slide pitch deck builds on the case-study writeups you packaged here.
+> - Inside this course: Module 8 (First-Client Pitch) uses the rebuilt LinkedIn and portfolio site as the surface area for cold-outreach replies, and the 7-slide pitch deck builds on the case-study writeups you packaged here.
 > - Cross-course: The "build in public" mindset is the discipline that the Foundations course's brand-voice module sets up, applied to your own work. Returning to [14-AI-Marketing-Foundations Module 4](../../14-AI-Marketing-Foundations/Module-04-Content-Marketing-Generative-AI/Reading.md) is worth it once you've drafted 5 posts.
 > - Practice: Practice Exam 2 has 7 questions on this module (Q3–Q5, Q24, Q26, Q30, Q42). The Final Mock's Q28 ("Walk me through your portfolio site") grades against the deliverables here.

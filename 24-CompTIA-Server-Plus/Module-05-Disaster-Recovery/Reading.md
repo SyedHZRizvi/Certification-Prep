@@ -1,6 +1,6 @@
 # Module 5: Disaster Recovery & Backup 🔁
 
-> **Why this module matters:** Disaster recovery and backup carry the heaviest weight in CompTIA's "Security & DR" domain (~24% of SK0-005). The exam will hand you scenarios with two numbers — an **RTO** and an **RPO** — and ask you to pick a backup type, replication strategy, or site model. If you cannot match `RPO = 15 min` to "log shipping every 15 minutes" in your sleep, you will fail this domain.
+> **Why this module matters:** Disaster recovery and backup carry the heaviest weight in CompTIA's "Security & DR" domain (~24% of SK0-005). The exam will hand you scenarios with two numbers an **RTO** and an **RPO** and ask you to pick a backup type, replication strategy, or site model. If you cannot match `RPO = 15 min` to "log shipping every 15 minutes" in your sleep, you will fail this domain.
 
 > **Prerequisites for this module.** Before starting:
 > - Modules 1–4 (especially storage replication from Module 3 and snapshots from Module 4)
@@ -15,26 +15,26 @@
 
 Meet Diego. He runs IT for a regional hospital network in Florida. For years he's bought servers, storage, and backup software. He's run weekly fire drills. He's stored backup tapes in a fireproof safe across the street. He thought he was ready.
 
-September brings Hurricane Camille II, a Category 4 that drops a tree on the colocation building's chiller and floods the data hall. The primary site is offline for 11 days. Diego's plan held up — except for three specific failures:
+September brings Hurricane Camille II, a Category 4 that drops a tree on the colocation building's chiller and floods the data hall. The primary site is offline for 11 days. Diego's plan held up, except for three specific failures:
 
-1. **The most-recent backup is 36 hours old.** Backups ran nightly at 1 a.m., but Camille hit Wednesday afternoon — a full business day of patient records, lab results, and pharmacy orders that never made it to tape. Lost.
-2. **The DR site is "warm" — not "hot."** It has hardware but no current data. Restoring 14 TB from off-site tapes takes 22 hours. The hospital diverts ambulances during that window.
+1. **The most-recent backup is 36 hours old.** Backups ran nightly at 1 a.m., but Camille hit Wednesday afternoon, a full business day of patient records, lab results, and pharmacy orders that never made it to tape. Lost.
+2. **The DR site is "warm", not "hot."** It has hardware but no current data. Restoring 14 TB from off-site tapes takes 22 hours. The hospital diverts ambulances during that window.
 3. **One critical application's backups had silently failed for 6 weeks.** The backup software logged "warnings" that nobody read. When Diego went to restore, there was nothing on the destination volume newer than August.
 
 Camille was *not* the failure. The plan was. This module teaches you the framework Diego needed:
 
-- **RTO and RPO** — the two numbers the business gives you
-- **Backup types** — full, incremental, differential, synthetic full — and the tradeoffs
+- **RTO and RPO**, the two numbers the business gives you
+- **Backup types** full, incremental, differential, synthetic full and the tradeoffs
 - **The 3-2-1 rule** (and modern 3-2-1-1-0 variant)
-- **GFS rotation** — tape strategy
-- **Cold / Warm / Hot sites** — DR site tiers
-- **Replication strategies** — synchronous and asynchronous (revisit from Module 3)
-- **BCP vs DR** — the broader business plan vs the technical IT subset
-- **Backup verification** — because "running" doesn't mean "working"
+- **GFS rotation**, tape strategy
+- **Cold / Warm / Hot sites**, DR site tiers
+- **Replication strategies**, synchronous and asynchronous (revisit from Module 3)
+- **BCP vs DR**, the broader business plan vs the technical IT subset
+- **Backup verification**, because "running" doesn't mean "working"
 
 ---
 
-## 🎯 RTO and RPO — The Two Numbers That Drive Everything
+## 🎯 RTO and RPO, The Two Numbers That Drive Everything
 
 These two terms anchor every DR conversation. **MEMORIZE COLD.**
 
@@ -74,7 +74,7 @@ Time:  ---|----------------|-------> recovery
 
 ---
 
-## 💼 BIA — Business Impact Analysis
+## 💼 BIA, Business Impact Analysis
 
 A **BIA** assigns numbers to business processes:
 
@@ -88,22 +88,22 @@ A **BIA** assigns numbers to business processes:
 
 Relationship: **MTD ≈ RTO + WRT.** RTO is just the technical part; WRT is the people/process catch-up time.
 
-🚨 **Trap on the exam:** Don't confuse MTBF (between failures — bigger is better) with MTTR (to repair — smaller is better).
+🚨 **Trap on the exam:** Don't confuse MTBF (between failures bigger is better) with MTTR (to repair smaller is better).
 
 ---
 
-## 📼 Backup Types — The Big Four
+## 📼 Backup Types, The Big Four
 
 CompTIA tests these by name. You must know what each backs up, what it sets on the archive bit, and the restore implications.
 
 | Type | Backs up | Archive bit | Backup size | Backup time | Restore complexity |
 |---|---|---|---|---|---|
-| **Full** | Every selected file | Cleared | Largest | Longest | Simplest — just restore the full |
-| **Incremental** | Files changed since the LAST backup of ANY type | Cleared | Smallest | Fastest | Most complex — need full + every incremental, in order |
-| **Differential** | Files changed since the last FULL | NOT cleared | Grows over time | Grows over time | Medium — full + most recent differential |
+| **Full** | Every selected file | Cleared | Largest | Longest | Simplest, just restore the full |
+| **Incremental** | Files changed since the LAST backup of ANY type | Cleared | Smallest | Fastest | Most complex, need full + every incremental, in order |
+| **Differential** | Files changed since the last FULL | NOT cleared | Grows over time | Grows over time | Medium, full + most recent differential |
 | **Synthetic Full** | Built on backup server from last real full + subsequent incrementals; no production read | n/a | Full-size on target | Fast (no production read) | Same as full |
 
-### Worked timeline — week-on-week with each strategy
+### Worked timeline, week-on-week with each strategy
 
 Assume Full = Sunday, daily backups Mon–Sat.
 
@@ -132,24 +132,24 @@ Restore on Thursday: Sun full + Wed D. Fast. But Wed D is large.
 **Synthetic full (modern enterprise):**
 - Real Full on Sunday.
 - Incremental Mon–Sat.
-- Backup server periodically *synthesizes* a new "full" from last full + incrementals — without reading production.
+- Backup server periodically *synthesizes* a new "full" from last full + incrementals, without reading production.
 - Production sees only incremental load; restore complexity stays low.
 
 🎯 **Exam pattern:** *"We need short backup windows + fast restores; production database can't handle a full backup nightly."* → **Synthetic full** (or full once a week + incremental daily with occasional synthetic refresh).
 
-### Snapshots, image backups, replicas — different from "backup type"
+### Snapshots, image backups, replicas, different from "backup type"
 
 | | When to use |
 |---|---|
 | **Snapshot** | Point-in-time on the same array; short-term rollback (Module 4) |
 | **Image / bare-metal backup** | Full system image for entire-server restore (boot drive included) |
 | **File-level backup** | Granular file restore |
-| **VM-aware backup** | Veeam, Commvault, native — backs up entire VMs with application consistency |
+| **VM-aware backup** | Veeam, Commvault, native, backs up entire VMs with application consistency |
 | **Application-consistent backup** | Uses VSS (Windows) or pre/post scripts (Linux) to quiesce DBs before snap |
 
 ---
 
-## 🛡️ The 3-2-1 Rule — The Universally Tested Backup Rule
+## 🛡️ The 3-2-1 Rule, The Universally Tested Backup Rule
 
 Coined by photographer-turned-author Peter Krogh in *The DAM Book* (2005), the **3-2-1 rule** is the most-cited backup principle in IT.
 
@@ -166,13 +166,13 @@ Coined by photographer-turned-author Peter Krogh in *The DAM Book* (2005), the *
 | **1** copy immutable (or air-gapped) | Resistant to ransomware/insider deletion |
 | **0** verified errors | Backups are tested-restorable |
 
-🚨 **Trap on the exam:** "We back up to two RAID arrays in the same room" violates 3-2-1 — there's no *off-site* copy. A hurricane / fire / ransomware-encrypted file server takes both arrays.
+🚨 **Trap on the exam:** "We back up to two RAID arrays in the same room" violates 3-2-1, there's no *off-site* copy. A hurricane / fire / ransomware-encrypted file server takes both arrays.
 
 🎯 **Exam pattern:** *"Which best illustrates the 3-2-1 rule?"* → Production + on-site disk backup + off-site tape (or cloud). Three copies, two media types, one off-site.
 
 ---
 
-## 🔄 Backup Rotation — GFS
+## 🔄 Backup Rotation, GFS
 
 **GFS (Grandfather-Father-Son)** is the classic tape rotation:
 
@@ -193,14 +193,14 @@ Gives ~13 months of recoverable history without storing every single daily forev
 
 Modern variants:
 
-- **GFS + cloud archive** — Sons/Fathers on disk for fast restore; Grandfathers to cloud cold storage (S3 Glacier, Azure Archive)
-- **Retention-policy-based** — backup software handles "retain dailies for 30 days, weeklies for 12 weeks, monthlies for 12 months" automatically
+- **GFS + cloud archive**, Sons/Fathers on disk for fast restore; Grandfathers to cloud cold storage (S3 Glacier, Azure Archive)
+- **Retention-policy-based**, backup software handles "retain dailies for 30 days, weeklies for 12 weeks, monthlies for 12 months" automatically
 
 🎯 **Exam pattern:** *"How long can we restore data after a deletion under standard GFS?"* → Up to ~13 months (depending on the specific rotation set).
 
 ---
 
-## 🏢 DR Sites — Cold, Warm, Hot
+## 🏢 DR Sites, Cold, Warm, Hot
 
 Three tiers, distinguished by how ready the DR site is at the moment of disaster.
 
@@ -223,7 +223,7 @@ Three tiers, distinguished by how ready the DR site is at the moment of disaster
 
 ---
 
-## 🔁 Replication — Revisit from Module 3
+## 🔁 Replication, Revisit from Module 3
 
 Brief recap (full table is in Module 3):
 
@@ -236,20 +236,20 @@ Brief recap (full table is in Module 3):
 
 Modern enterprise patterns:
 
-- **Application-level replication** — database log shipping, AlwaysOn AGs, Oracle Data Guard
-- **Storage-level replication** — array-to-array (NetApp SnapMirror, EMC SRDF)
-- **Hypervisor-level replication** — Hyper-V Replica, VMware vSphere Replication, Zerto
-- **Backup-level replication** — backups replicated from primary backup target to secondary (Veeam Backup Copy, Commvault aux copy)
+- **Application-level replication**, database log shipping, AlwaysOn AGs, Oracle Data Guard
+- **Storage-level replication**, array-to-array (NetApp SnapMirror, EMC SRDF)
+- **Hypervisor-level replication**, Hyper-V Replica, VMware vSphere Replication, Zerto
+- **Backup-level replication**, backups replicated from primary backup target to secondary (Veeam Backup Copy, Commvault aux copy)
 
 🎯 **Exam pattern:** *"The DR plan calls for RPO ≤ 30 seconds for SQL databases across two metro DCs."* → **Synchronous DB log shipping** (or AlwaysOn AG synchronous-commit) over metro fiber.
 
 ---
 
-## 🛟 BCP vs DR — The Wider Picture
+## 🛟 BCP vs DR, The Wider Picture
 
 | | **BCP** (Business Continuity Plan) | **DR** (Disaster Recovery) |
 |---|---|---|
-| Scope | Entire business operation — people, process, alt sites, comms, supply chain | Technical IT recovery — systems, data, apps |
+| Scope | Entire business operation people, process, alt sites, comms, supply chain | Technical IT recovery systems, data, apps |
 | Owner | Executive / COO / BCM team | IT / CTO |
 | Includes | Crisis comms, alt staffing, supplier failover, customer comms, finance access | RTO/RPO/RTPO, runbooks, infra recovery |
 | Tested by | Tabletop exercises, full-scale drills | DR exercises, restore tests |
@@ -272,7 +272,7 @@ Modern enterprise patterns:
 
 ---
 
-## 🧪 Backup Verification — Because "Running" ≠ "Restorable"
+## 🧪 Backup Verification, Because "Running" ≠ "Restorable"
 
 Diego's hospital learned this the hard way: a backup that runs without errors can still be unrestorable. Verification tests prove restorability.
 
@@ -313,7 +313,7 @@ When disaster strikes, your team works the **runbook**:
 
 | Step | What |
 |---|---|
-| 1. Declare disaster | A named person (CIO, on-call lead) formally declares — triggers BCP team |
+| 1. Declare disaster | A named person (CIO, on-call lead) formally declares, triggers BCP team |
 | 2. Activate IR / DR plans | Crisis comms; status page; vendor escalations |
 | 3. Failover | Promote DR site, redirect DNS/traffic |
 | 4. Verify | Functional smoke tests, user comms |
@@ -323,15 +323,15 @@ When disaster strikes, your team works the **runbook**:
 
 ### Documentation that saves you
 
-- **Runbooks** — step-by-step for each tested DR scenario
-- **CMDB** — accurate inventory + dependencies (Module 2)
-- **Contact tree** — vendors, staff, executives
-- **Asset list with serial numbers** — for vendor support calls
-- **Encryption keys / passwords** — escrowed in a secure vault (not on the encrypted system!)
-- **Network diagrams** — current as of last change
-- **Account credentials with break-glass procedure** — sealed envelope in vault
+- **Runbooks**, step-by-step for each tested DR scenario
+- **CMDB**, accurate inventory + dependencies (Module 2)
+- **Contact tree**, vendors, staff, executives
+- **Asset list with serial numbers**, for vendor support calls
+- **Encryption keys / passwords**, escrowed in a secure vault (not on the encrypted system!)
+- **Network diagrams**, current as of last change
+- **Account credentials with break-glass procedure**, sealed envelope in vault
 
-🚨 **Trap:** "The runbook is on the SharePoint that's encrypted right now" — anti-pattern. Print critical runbooks; keep them off the systems they recover.
+🚨 **Trap:** "The runbook is on the SharePoint that's encrypted right now", anti-pattern. Print critical runbooks; keep them off the systems they recover.
 
 ---
 
@@ -341,18 +341,18 @@ When disaster strikes, your team works the **runbook**:
 
 **Walkthrough.**
 
-1. **Patient drug allergies (life safety)** — synchronous replication of the allergy DB to the 25-km colo (within metro RTT). Active-passive failover with auto-promote on health-check failure. Hot site for this DB. **RPO=0 / RTO ≈ minutes.**
-2. **EMR / lab (RPO=15min / RTO=2hr)** — asynchronous SQL log shipping to the colo every 5 minutes. Warm site with the SQL instance pre-installed but normally cold-standby. Tested restore process. **Achieved RPO ≈ 5 min / RTO ≈ 1-2 hr.**
-3. **Email (RPO=1hr / RTO=4hr)** — daily full backup + hourly transaction log backup to disk on-site, replicated to cloud nightly. Warm DR via cloud VM. **Achieved RPO ≈ 1 hr / RTO ≈ 4 hr.**
-4. **Marketing photos (RPO=24hr / RTO=7days)** — nightly backup to on-site disk + cloud cold storage (S3 Glacier / Azure Archive). No DR site needed — restore on demand from cloud. **Achieved RPO ≈ 24 hr / RTO ≈ days.**
+1. **Patient drug allergies (life safety)**, synchronous replication of the allergy DB to the 25-km colo (within metro RTT). Active-passive failover with auto-promote on health-check failure. Hot site for this DB. **RPO=0 / RTO ≈ minutes.**
+2. **EMR / lab (RPO=15min / RTO=2hr)**, asynchronous SQL log shipping to the colo every 5 minutes. Warm site with the SQL instance pre-installed but normally cold-standby. Tested restore process. **Achieved RPO ≈ 5 min / RTO ≈ 1-2 hr.**
+3. **Email (RPO=1hr / RTO=4hr)**, daily full backup + hourly transaction log backup to disk on-site, replicated to cloud nightly. Warm DR via cloud VM. **Achieved RPO ≈ 1 hr / RTO ≈ 4 hr.**
+4. **Marketing photos (RPO=24hr / RTO=7days)** nightly backup to on-site disk + cloud cold storage (S3 Glacier / Azure Archive). No DR site needed restore on demand from cloud. **Achieved RPO ≈ 24 hr / RTO ≈ days.**
 5. **3-2-1-1-0 across the board.**
    - 3 copies: production + on-site backup + off-site copy
    - 2 media types: disk + cloud (or disk + tape)
-   - 1 off-site (colo + cloud + tape vault — multiple)
+   - 1 off-site (colo + cloud + tape vault, multiple)
    - 1 immutable: S3 Object Lock for cloud copies; WORM tape for grandfathers
    - 0 verified errors: monthly file-level restore + quarterly DR drill
 6. **Documentation.** Runbooks printed and stored in vault + colo. CMDB updated within 5 business days of any change. Contact tree quarterly verified.
-7. **The lesson from Camille.** Hourly RPO for EMR means the Wednesday afternoon data is replicated to the colo every hour — not nightly to tape. Diego's 36-hour gap shrinks to ≤ 15 minutes.
+7. **The lesson from Camille.** Hourly RPO for EMR means the Wednesday afternoon data is replicated to the colo every hour, not nightly to tape. Diego's 36-hour gap shrinks to ≤ 15 minutes.
 
 This is the kind of integration question Server+ PBQs ask. Notice how every business tier got a different design.
 
@@ -364,8 +364,8 @@ This is the kind of integration question Server+ PBQs ask. Notice how every busi
 |---|---|
 | "Backups = DR plan." | Backups are *one component*. DR also includes runbooks, alt sites, comms, tested failover. |
 | "RPO and RTO are the same thing." | RPO = data loss tolerance. RTO = downtime tolerance. Different axes. |
-| "Differential backups always get smaller over time." | No — they *grow* each day because they're cumulative since the last full. Incrementals stay small. |
-| "Synthetic full = full backup." | Synthetic full is *built* on the backup server from earlier full + incrementals — no production read. End result is restorable like a full. |
+| "Differential backups always get smaller over time." | No, they *grow* each day because they're cumulative since the last full. Incrementals stay small. |
+| "Synthetic full = full backup." | Synthetic full is *built* on the backup server from earlier full + incrementals, no production read. End result is restorable like a full. |
 | "Snapshots are DR." | Same-storage snapshots die with the storage. Use snapshots for rollback; backups for DR. |
 | "The 3-2-1 rule needs cloud." | Cloud is one way; off-site tape/colo also satisfies the "1 off-site" pillar. |
 | "Successful backup = working backup." | Without periodic restore tests, you don't know if backups work. Test or you don't have DR. |
@@ -385,7 +385,7 @@ This is the kind of integration question Server+ PBQs ask. Notice how every busi
 | **BIA / BCP / DRP / IRP** | Business Impact Analysis / Business Continuity Plan / DR Plan / Incident Response Plan |
 | **Full / Incremental / Differential / Synthetic full** | Backup types |
 | **Archive bit** | File attribute that backup software toggles |
-| **VSS** | Volume Shadow Copy Service (Windows) — quiesces apps for consistent backup |
+| **VSS** | Volume Shadow Copy Service (Windows), quiesces apps for consistent backup |
 | **3-2-1 rule** | 3 copies, 2 media, 1 off-site |
 | **3-2-1-1-0** | + 1 immutable + 0 verified errors |
 | **GFS rotation** | Grandfather-Father-Son tape rotation |
@@ -394,7 +394,7 @@ This is the kind of integration question Server+ PBQs ask. Notice how every busi
 | **Cloud DR** | DR using on-demand cloud resources |
 | **Synchronous / Asynchronous replication** | RPO 0 / RPO > 0 |
 | **Log shipping** | Periodic ship of DB transaction logs to a replica |
-| **Immutable / Air-gapped backups** | WORM or offline copies — ransomware-resistant |
+| **Immutable / Air-gapped backups** | WORM or offline copies, ransomware-resistant |
 | **Runbook** | Step-by-step procedure for a recovery scenario |
 | **Tabletop exercise** | Discussion-based DR walkthrough |
 | **Functional / Full-scale exercise** | Hands-on partial / full DR test |
@@ -416,16 +416,16 @@ This is the kind of integration question Server+ PBQs ask. Notice how every busi
 
 ---
 
-## 📊 Case Study — Code Spaces (2014): The Day Backups Were the Same as Production
+## 📊 Case Study, Code Spaces (2014): The Day Backups Were the Same as Production
 
-**Situation.** Code Spaces, a small UK-based source-code hosting company, ran its entire infrastructure — production AND backups — on a single AWS account. On 17 June 2014, an attacker gained access to that AWS account (root credentials, no MFA) and demanded ransom. When Code Spaces refused, the attacker began deleting EC2 instances, S3 buckets, EBS volumes, and AMIs — including the backups. Within hours the company was *gone*. (Code Spaces public statement, 18 June 2014.)
+**Situation.** Code Spaces, a small UK-based source-code hosting company, ran its entire infrastructure production AND backups on a single AWS account. On 17 June 2014, an attacker gained access to that AWS account (root credentials, no MFA) and demanded ransom. When Code Spaces refused, the attacker began deleting EC2 instances, S3 buckets, EBS volumes, and AMIs, including the backups. Within hours the company was *gone*. (Code Spaces public statement, 18 June 2014.)
 
 **Outcome.** Code Spaces ceased operations entirely. Customers lost code. The company never recovered.
 
 **Lesson for the exam / for practitioners.**
 
 - **3-2-1 means *separation*.** Production and backups in the same AWS account, same credentials, same blast radius = effectively *one* copy.
-- **Backup credentials must be separate** — different IAM role, different MFA, different control plane.
+- **Backup credentials must be separate**, different IAM role, different MFA, different control plane.
 - **Immutability is a backstop.** S3 Object Lock didn't exist in 2014. It does now. Use it.
 - **Air-gapped or offline copies survive credential compromise.** Tape doesn't care if you have root.
 - **DR plans must include "what if attacker has all credentials?"** This is a "tabletop scenario" that didn't get run.
@@ -444,23 +444,23 @@ This is the scenario Server+ tests when asking "how do you protect backups from 
 
 You now know:
 
-- 🎯 **RTO and RPO** — definitions, how to read scenarios, how each drives architecture
+- 🎯 **RTO and RPO**, definitions, how to read scenarios, how each drives architecture
 - 💼 **BIA** terms: MTD, WRT, MTBF, MTTR
-- 📼 The **four backup types**: full, incremental, differential, synthetic full — and the size/time/restore tradeoffs of each
+- 📼 The **four backup types**: full, incremental, differential, synthetic full, and the size/time/restore tradeoffs of each
 - 🛡️ The **3-2-1 rule** and modern **3-2-1-1-0** variant
 - 🔄 **GFS** tape rotation (Son/Father/Grandfather)
 - 🏢 **Cold / warm / hot / mobile / cloud DR** site tiers
 - 🔁 Replication recap: synchronous vs asynchronous, log shipping, AG
-- 🛟 **BCP vs DR** — DR as a subset; BIA → BCP → DRP → IRP hierarchy
-- 🧪 **Backup verification** — restore tests, DR drills
+- 🛟 **BCP vs DR**, DR as a subset; BIA → BCP → DRP → IRP hierarchy
+- 🧪 **Backup verification**, restore tests, DR drills
 - 🧊 **Immutability and air-gapping** for ransomware resistance
 - 📜 Recovery process + documentation hygiene
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 21/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 21/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 6 — Server Security & Hardening](../Module-06-Security/Reading.md)
+4. ➡️ Move on: [Module 6, Server Security & Hardening](../Module-06-Security/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 6](../Module-06-Security/Reading.md) hardens the systems we just learned to back up; [Module 7](../Module-07-Networking/Reading.md) covers DNS failover / GSLB for site cutover; [Module 8](../Module-08-Troubleshooting/Reading.md) diagnoses recovery failures.
@@ -474,17 +474,17 @@ You now know:
 **Primary sources:**
 - 📄 NIST SP 800-34 Rev 1 (2010). *Contingency Planning Guide for Federal Information Systems.* (The DR/BCP bible.)
 - 📄 NIST SP 800-184 (2016). *Guide for Cybersecurity Event Recovery.* (Modern ransomware-aware recovery.)
-- 📄 ISO 22301:2019. *Security and resilience — Business continuity management systems.*
+- 📄 ISO 22301:2019. *Security and resilience, Business continuity management systems.*
 - 📄 Krogh, P. (2005). *The DAM Book: Digital Asset Management for Photographers.* (Origin of the 3-2-1 rule.)
 - 📄 BackBlaze annual hard drive reliability reports (public quarterly data)
 
 **Case-study sources:**
 - 📄 Code Spaces public statement, 18 June 2014; community post-mortem write-ups
 - 📄 *Wired*, Andy Greenberg (2018). "The Untold Story of NotPetya, the Most Devastating Cyberattack in History." 22 August 2018.
-- 📄 Sony Pictures hack post-mortems (2014) — for "what if you have nothing left to restore from"
+- 📄 Sony Pictures hack post-mortems (2014), for "what if you have nothing left to restore from"
 
 **Practitioner / exam:**
 - 📖 *CompTIA Server+ SK0-005 Exam Objectives* (free PDF)
 - 📖 [Professor Messer SK0-005 videos](https://www.professormesser.com/server-plus/sk0-005/sk0-005-video-training-course/)
-- 📖 *Site Reliability Engineering* (Beyer et al., Google — free online) — chapters on disaster, postmortems, capacity
-- 📖 *Backup & Recovery* (W. Curtis Preston, O'Reilly) — exhaustive sysadmin reference
+- 📖 *Site Reliability Engineering* (Beyer et al., Google free online) chapters on disaster, postmortems, capacity
+- 📖 *Backup & Recovery* (W. Curtis Preston, O'Reilly), exhaustive sysadmin reference

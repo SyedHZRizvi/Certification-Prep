@@ -77,7 +77,7 @@ A quad mesh in **Edit Mode** with a **5-pole vertex** (five edges meeting at one
 A. Cause a critical error in the Subdivision Surface modifier
 B. Always create a visible pinching artifact
 C. Triangulate that vertex automatically
-D. **Cause slight hardening near that vertex under subdivision — acceptable in low-curvature areas**
+D. **Cause slight hardening near that vertex under subdivision, acceptable in low-curvature areas**
 
 ---
 
@@ -336,7 +336,7 @@ An F-Curve in the Graph Editor with **flat horizontal handles** at a keyframe in
 
 A. A broken/corrupted F-curve segment
 B. Constant (stepped) interpolation
-C. **Ease-in/out — the value decelerates to a stop at that keyframe**
+C. **Ease-in/out, the value decelerates to a stop at that keyframe**
 D. A locked channel that cannot be animated
 
 ---
@@ -346,7 +346,7 @@ The industry-standard **blocking → spline** animation workflow starts with:
 
 A. Bezier interpolation for the first blocking pass
 B. Automatic physics simulation as a starting point
-C. **Constant (Stepped) interpolation — set only key poses with no inbetweens**
+C. **Constant (Stepped) interpolation, set only key poses with no inbetweens**
 D. Linear interpolation across all channels
 
 ---
@@ -664,69 +664,69 @@ D. **The emotional beat is felt clearly by a viewer who has no prior context abo
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.   B — Ctrl+Spacebar maximizes the active editor
-2.   C — N opens the N-Panel sidebar
-3.   C — Blue = Z axis
-4.   C — G, X, X (double-tap) = local axis constraint
-5.   D — Material Preview = HDRI-based shader preview
-6.   C — Statistics overlay shows polygon/vertex/edge count
-7.   D — 5-poles cause slight hardening, acceptable in low-curvature areas
-8.   C — Clipping prevents vertices from crossing the mirror axis
-9.   B — 2,000–6,000 polygons for indie animation base mesh
-10.  C — Ellie (Sprite Fright) = ~4,800 polygon base mesh
-11.  C — Proportional editing = smooth falloff over a radius
-12.  C — Roughness 0 = mirror-smooth surface
-13.  C — Metallic 0 (dielectric) or 1 (conductor) only
-14.  D — Normal map image must be Non-Color
-15.  C — Nose bridge seam creates a visible artifact
-16.  C — The Mitchells vs. the Machines (Sony Pictures Animation)
-17.  B — polyhaven.com (free CC0 HDRIs)
-18.  D — Rim light positioned behind subject, toward camera
-19.  D — 1,800K = candlelight
-20.  B — Sprite Fright HDRI strength = 0.3–0.6
-21.  D — Sun light: position irrelevant, only rotation matters
-22.  D — Armature modifier on the mesh object
-23.  D — .L and .R suffixes (UpperArm.L, UpperArm.R)
-24.  C — IK preferred for foot planting and targeted reaching
-25.  D — Pole Angle corrects elbow/knee orientation relative to pole
-26.  B — Rigify is a built-in Blender add-on (enable in Preferences)
-27.  D — Red = weight 1.0 (full influence)
-28.  D — Auto Normalize forces all weights to sum to 1.0
-29.  D — Additive shape keys can fight each other when active simultaneously
-30.  C — Basis = neutral rest-pose geometry
-31.  B — I key inserts keyframe
-32.  D — G grabs (moves) keyframes in the Dope Sheet
-33.  C — Flat handles = ease-in/ease-out (deceleration/acceleration)
-34.  C — Blocking = Constant (Stepped) interpolation
-35.  D — Frame 1 and Frame 25 identical for seamless 24-frame cycle
-36.  D — Repeat with Offset = offsets by cycle total (enables locomotion)
-37.  D — Repeat = loops NLA strip N times end-to-end
-38.  D — Passive = fixed collider, does not move
-39.  D — Cloth explosions caused by bad mesh topology (n-gons, thin quads)
-40.  C — Domain, Flow, Effector are the three fluid object types
-41.  D — Unbaked = recalculates from frame 1 per render call
-42.  D — OpenVDB (.vdb) = Mantaflow fluid volume cache format
-43.  C — Children → Interpolated = dense hair between parents
-44.  D — Blender 4.0 Hair Curves + Geometry Nodes grooming
-45.  C — Cycles = physically accurate GI, caustics, subsurface
-46.  C — EEVEE approximates lighting (not physically accurate)
-47.  D — OptiX requires NVIDIA RTX GPU (Tensor Cores)
-48.  C — PNG or EXR sequences (lossless, resumable)
-49.  C — Z/Depth pass = per-pixel camera distance
-50.  B — Sprite Fright exterior = 64–128 samples (natural light)
-51.  B — Compositor = node-based post-processing editor
-52.  D — Cryptomatte = click-to-pick per-object mask
-53.  B — 240 frames × 10–20s = 40–80 min on RTX 3080
-54.  D — Animatic built in Blender's VSE
-55.  B — Concept sheet: what, who, where, emotional payoff
-56.  D — Coffee Run (2020) = 2 artists, 3 months
-57.  C — 4:1 = moderate drama, hopeful/gentle mood
-58.  D — Apply scale before beginning animation phase
-59.  C — Stepped = judge timing on key poses without inbetween distraction
-60.  B — S scales all keyframe spacing uniformly in Dope Sheet
-61.  D — Follow-through = secondary parts lag and continue after body stops
-62.  D — H.264 MP4, CRF 18–23, 1920×1080, 24fps
-63.  D — Z-fighting is the most common first-render technical issue
-64.  B — The Art of The Mitchells vs. the Machines (Sony Pictures Animation)
-65.  D — Emotional beat clarity is the ultimate evaluation criterion
+1.   B: Ctrl+Spacebar maximizes the active editor
+2.   C: N opens the N-Panel sidebar
+3.   C: Blue = Z axis
+4.   C: G, X, X (double-tap) = local axis constraint
+5.   D: Material Preview = HDRI-based shader preview
+6.   C: Statistics overlay shows polygon/vertex/edge count
+7.   D: 5-poles cause slight hardening, acceptable in low-curvature areas
+8.   C: Clipping prevents vertices from crossing the mirror axis
+9.   B: 2,000–6,000 polygons for indie animation base mesh
+10.  C: Ellie (Sprite Fright) = ~4,800 polygon base mesh
+11.  C: Proportional editing = smooth falloff over a radius
+12.  C: Roughness 0 = mirror-smooth surface
+13.  C: Metallic 0 (dielectric) or 1 (conductor) only
+14.  D: Normal map image must be Non-Color
+15.  C: Nose bridge seam creates a visible artifact
+16.  C: The Mitchells vs. the Machines (Sony Pictures Animation)
+17.  B: polyhaven.com (free CC0 HDRIs)
+18.  D: Rim light positioned behind subject, toward camera
+19.  D: 1,800K = candlelight
+20.  B: Sprite Fright HDRI strength = 0.3–0.6
+21.  D: Sun light: position irrelevant, only rotation matters
+22.  D: Armature modifier on the mesh object
+23.  D: .L and .R suffixes (UpperArm.L, UpperArm.R)
+24.  C: IK preferred for foot planting and targeted reaching
+25.  D: Pole Angle corrects elbow/knee orientation relative to pole
+26.  B: Rigify is a built-in Blender add-on (enable in Preferences)
+27.  D: Red = weight 1.0 (full influence)
+28.  D: Auto Normalize forces all weights to sum to 1.0
+29.  D: Additive shape keys can fight each other when active simultaneously
+30.  C: Basis = neutral rest-pose geometry
+31.  B: I key inserts keyframe
+32.  D: G grabs (moves) keyframes in the Dope Sheet
+33.  C: Flat handles = ease-in/ease-out (deceleration/acceleration)
+34.  C: Blocking = Constant (Stepped) interpolation
+35.  D: Frame 1 and Frame 25 identical for seamless 24-frame cycle
+36.  D: Repeat with Offset = offsets by cycle total (enables locomotion)
+37.  D: Repeat = loops NLA strip N times end-to-end
+38.  D: Passive = fixed collider, does not move
+39.  D: Cloth explosions caused by bad mesh topology (n-gons, thin quads)
+40.  C: Domain, Flow, Effector are the three fluid object types
+41.  D: Unbaked = recalculates from frame 1 per render call
+42.  D: OpenVDB (.vdb) = Mantaflow fluid volume cache format
+43.  C: Children → Interpolated = dense hair between parents
+44.  D: Blender 4.0 Hair Curves + Geometry Nodes grooming
+45.  C: Cycles = physically accurate GI, caustics, subsurface
+46.  C: EEVEE approximates lighting (not physically accurate)
+47.  D: OptiX requires NVIDIA RTX GPU (Tensor Cores)
+48.  C: PNG or EXR sequences (lossless, resumable)
+49.  C: Z/Depth pass = per-pixel camera distance
+50.  B: Sprite Fright exterior = 64–128 samples (natural light)
+51.  B: Compositor = node-based post-processing editor
+52.  D: Cryptomatte = click-to-pick per-object mask
+53.  B: 240 frames × 10–20s = 40–80 min on RTX 3080
+54.  D: Animatic built in Blender's VSE
+55.  B: Concept sheet: what, who, where, emotional payoff
+56.  D: Coffee Run (2020) = 2 artists, 3 months
+57.  C: 4:1 = moderate drama, hopeful/gentle mood
+58.  D: Apply scale before beginning animation phase
+59.  C: Stepped = judge timing on key poses without inbetween distraction
+60.  B: S scales all keyframe spacing uniformly in Dope Sheet
+61.  D: Follow-through = secondary parts lag and continue after body stops
+62.  D: H.264 MP4, CRF 18–23, 1920×1080, 24fps
+63.  D: Z-fighting is the most common first-render technical issue
+64.  B: The Art of The Mitchells vs. the Machines (Sony Pictures Animation)
+65.  D: Emotional beat clarity is the ultimate evaluation criterion
 ```

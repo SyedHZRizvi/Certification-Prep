@@ -1,13 +1,13 @@
-# 🧪 Final Mock Exam — AZ-900 (Real Exam Length)
+# 🧪 Final Mock Exam, AZ-900 (Real Exam Length)
 
 > **Conditions:** Set a 45-minute timer (the REAL exam time). 50 questions. Sit at a clean desk. No notes. No Google. No phone.
-> **Pass mark:** 35/50 (70% — same as the real exam's 700/1000)
+> **Pass mark:** 35/50 (70%, same as the real exam's 700/1000)
 > Take this ONE DAY BEFORE the real exam.
 
 This is intentionally a mix of:
 
 - Standard multiple choice (most questions)
-- **Yes/No three-part scenario sets** (Microsoft's signature style — #41–43 and #47–49)
+- **Yes/No three-part scenario sets** (Microsoft's signature style, #41–43 and #47–49)
 - Single Yes/No items sprinkled throughout
 
 ---
@@ -40,7 +40,7 @@ D. Hybrid
 
 ### 5. Which is TRUE about CapEx vs OpEx?
 A. CapEx is paid as you use
-B. Cloud converts CapEx to OpEx — paying as you consume rather than buying assets
+B. Cloud converts CapEx to OpEx, paying as you consume rather than buying assets
 C. OpEx is an upfront capital purchase
 D. They are the same
 
@@ -329,21 +329,21 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 
 **Q1. Answer: C.** Cloud is on-demand delivery of IT services over the internet with pay-as-you-go pricing. A is wrong because IaaS still requires customer-side OS management. B is wrong because cloud isn't always cheaper. D is wrong because security is a *shared* responsibility, not eliminated. **Takeaway:** Definitions are simple but distractors lean on overconfidence.
 
-**Q2. Answer: C.** Elasticity = automatic add/remove of capacity to match demand. A is vertical scaling. B is pre-purchase. D is geographic redundancy. **Takeaway:** Elasticity vs scalability vs redundancy — distinct concepts.
+**Q2. Answer: C.** Elasticity = automatic add/remove of capacity to match demand. A is vertical scaling. B is pre-purchase. D is geographic redundancy. **Takeaway:** Elasticity vs scalability vs redundancy, distinct concepts.
 
 **Q3. Answer: A.** IaaS gives full OS control. B (PaaS) hides OS. C (SaaS) hides everything. D (FaaS) is even more abstracted than PaaS. **Takeaway:** Maximum customer control = IaaS.
 
-**Q4. Answer: C.** Dynamics 365 is a fully managed Microsoft business application — SaaS. **Takeaway:** M365, Dynamics 365, GitHub.com = SaaS.
+**Q4. Answer: C.** Dynamics 365 is a fully managed Microsoft business application, SaaS. **Takeaway:** M365, Dynamics 365, GitHub.com = SaaS.
 
 **Q5. Answer: B.** Cloud converts CapEx (upfront capital purchase) into OpEx (pay-as-you-consume). A reverses the definitions. C does the same. D collapses the distinction. **Takeaway:** CapEx → OpEx is the canonical cloud econ.
 
-**Q6. Answer: B (No).** Reservations are paid over time without buying an asset — that's OpEx. The 1–3 year commitment doesn't change the accounting treatment. **Takeaway:** Reservations = OpEx, despite the commitment length.
+**Q6. Answer: B (No).** Reservations are paid over time without buying an asset, that's OpEx. The 1–3 year commitment doesn't change the accounting treatment. **Takeaway:** Reservations = OpEx, despite the commitment length.
 
 **Q7. Answer: A.** Data, endpoints, accounts, access management, and identities are always the customer's. B/C/D are always Microsoft's. **Takeaway:** Always-customer four (plus identity/endpoints) is the most-tested shared-responsibility fact.
 
 **Q8. Answer: B.** North Europe (Ireland) pairs with West Europe (Netherlands). A is wrong (different geography). C (UK South) pairs with UK West, not North Europe. D is wrong (the pair exists). **Takeaway:** Know the major EU and US pairs.
 
-**Q9. Answer: A (Yes).** RG location is metadata only — the RG can hold resources from any region. **Takeaway:** Famous AZ-900 trap.
+**Q9. Answer: A (Yes).** RG location is metadata only, the RG can hold resources from any region. **Takeaway:** Famous AZ-900 trap.
 
 **Q10. Answer: A.** Applying a Policy at the management-group level inherits to all subscriptions below. B is wasteful and inconsistent. C is wrong scope. D is incorrect (Policy isn't a PowerShell-per-VM thing). **Takeaway:** Single policy across many subs = MG-level assignment.
 
@@ -353,27 +353,27 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 
 **Q13. Answer: D.** ZRS = 3 copies across 3 AZs in one region, no cross-region. A (LRS) is one DC. B (GZRS) crosses regions too. C (GRS) crosses regions. **Takeaway:** ZRS = in-region AZ redundancy only.
 
-**Q14. Answer: D.** Functions is event-driven serverless — perfect for queue-message triggers. A (VM) is over-engineered. B (App Service) is always-on. C (AKS) is container orchestration. **Takeaway:** Event-driven = Functions.
+**Q14. Answer: D.** Functions is event-driven serverless, perfect for queue-message triggers. A (VM) is over-engineered. B (App Service) is always-on. C (AKS) is container orchestration. **Takeaway:** Event-driven = Functions.
 
 **Q15. Answer: C.** App Service is the textbook PaaS for web apps + APIs. A (VM) requires OS management. B (ACI) is for single containers. D (AKS) is overkill. **Takeaway:** Web app + API, no OS = App Service.
 
 **Q16. Answer: A.** Cosmos DB = globally distributed multi-model NoSQL. B/C are relational SQL. D is in-memory cache. **Takeaway:** Cosmos's tagline maps exactly.
 
-**Q17. Answer: C.** AKS is managed Kubernetes — for hundreds of microservices. A (ACI) is single container. B (App Service) doesn't orchestrate containers at scale. D (VMSS) is plain VM scale-set. **Takeaway:** Many containers = AKS.
+**Q17. Answer: C.** AKS is managed Kubernetes, for hundreds of microservices. A (ACI) is single container. B (App Service) doesn't orchestrate containers at scale. D (VMSS) is plain VM scale-set. **Takeaway:** Many containers = AKS.
 
 **Q18. Answer: C.** Front Door is the global L7 entry point with CDN and WAF. A (App Gateway) is regional. B (Load Balancer) is L4. D (NSG) is a firewall ruleset. **Takeaway:** Global L7 + CDN + WAF = Front Door.
 
 **Q19. Answer: D.** ExpressRoute = private dedicated circuit, high bandwidth, low latency. A (VPN) is over public internet. B (NSG) is filtering. C (Front Door) is HTTPS entry. **Takeaway:** Private circuit = ExpressRoute.
 
-**Q20. Answer: B (No).** Ingress (data into Azure) is free. Only egress is billed. **Takeaway:** Memorize this — drives multi-region cost design.
+**Q20. Answer: B (No).** Ingress (data into Azure) is free. Only egress is billed. **Takeaway:** Memorize this, drives multi-region cost design.
 
 **Q21. Answer: D.** Azure free account = $200 USD credit for 30 days + 12 months of select services + always-free tier. A/B/C are all incorrect free-account offerings. **Takeaway:** Three-part free offer.
 
-**Q22. Answer: B.** SQL Managed Instance gives near-100% SQL Server compatibility — designed for complex lift-and-shift. A (SQL DB single) is cloud-native, less SQL Server compatible. C (Cosmos) is NoSQL. D (SQL on VM) works but requires full OS management. **Takeaway:** Complex SQL Server lift = SQL Managed Instance.
+**Q22. Answer: B.** SQL Managed Instance gives near-100% SQL Server compatibility, designed for complex lift-and-shift. A (SQL DB single) is cloud-native, less SQL Server compatible. C (Cosmos) is NoSQL. D (SQL on VM) works but requires full OS management. **Takeaway:** Complex SQL Server lift = SQL Managed Instance.
 
 **Q23. Answer: A.** Renamed to Microsoft Entra ID in 2023. **Takeaway:** New name is on every exam.
 
-**Q24. Answer: B.** Contributor does everything except grant access. A (Owner) can grant. C (Reader) can't even modify. D (UAA) only manages access. **Takeaway:** Contributor ≠ Owner — Contributor can't grant access.
+**Q24. Answer: B.** Contributor does everything except grant access. A (Owner) can grant. C (Reader) can't even modify. D (UAA) only manages access. **Takeaway:** Contributor ≠ Owner, Contributor can't grant access.
 
 **Q25. Answer: D.** CanNotDelete lock applies to everyone including Owners. A (Reader) doesn't prevent delete by others. B (NSG) is network, not delete protection. C (Audit policy) just flags. **Takeaway:** Locks > RBAC for "prevent delete."
 
@@ -385,7 +385,7 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 
 **Q29. Answer: C.** Defender for Cloud provides CSPM + workload protection + Secure Score. A is Front Door / WAF. B is Sentinel. D is Azure DNS / Traffic Manager. **Takeaway:** Secure Score = Defender for Cloud signature.
 
-**Q30. Answer: B.** Verify explicitly, least-privilege access, assume breach — Microsoft's Zero Trust principles verbatim. A is old "trust but verify." C is AAA. D is incident response phases. **Takeaway:** Memorize the three principles literally.
+**Q30. Answer: B.** Verify explicitly, least-privilege access, assume breach, Microsoft's Zero Trust principles verbatim. A is old "trust but verify." C is AAA. D is incident response phases. **Takeaway:** Memorize the three principles literally.
 
 **Q31. Answer: B (No).** Budgets alert; they don't shut down resources. **Takeaway:** Common trap.
 
@@ -409,25 +409,25 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 
 ---
 
-**Scenario set 41–43 — Contoso App Service + SQL DB + Entra ID with CA**
+**Scenario set 41–43, Contoso App Service + SQL DB + Entra ID with CA**
 
-**Q41. Answer: B (No).** App Service is PaaS — Microsoft patches the OS. **Takeaway:** PaaS OS patches = Microsoft.
+**Q41. Answer: B (No).** App Service is PaaS, Microsoft patches the OS. **Takeaway:** PaaS OS patches = Microsoft.
 
 **Q42. Answer: A (Yes).** Conditional Access can require MFA *only* when sign-ins come from outside the corporate network (using location signal). **Takeaway:** CA is the "when MFA?" engine.
 
-**Q43. Answer: B (No).** A single-region default-redundant Azure SQL DB does NOT survive a regional outage — you need geo-replication / failover groups. **Takeaway:** Single-region ≠ region failure protection.
+**Q43. Answer: B (No).** A single-region default-redundant Azure SQL DB does NOT survive a regional outage, you need geo-replication / failover groups. **Takeaway:** Single-region ≠ region failure protection.
 
 ---
 
 **Q44. Answer: A.** status.azure.com is the public, anonymous global Azure status page. B is general portal. C is the personalized portal blade. D is compliance docs. **Takeaway:** Public global = status.azure.com.
 
-**Q45. Answer: A (Yes).** Sentinel is multi-source — ingests Azure, AWS, on-prem, M365, third-party. **Takeaway:** Multi-source SIEM = Sentinel.
+**Q45. Answer: A (Yes).** Sentinel is multi-source, ingests Azure, AWS, on-prem, M365, third-party. **Takeaway:** Multi-source SIEM = Sentinel.
 
-**Q46. Answer: B (No).** Azure Arc *extends Azure management* to non-Azure resources — it does NOT migrate them. **Takeaway:** Arc ≠ Migrate.
+**Q46. Answer: B (No).** Azure Arc *extends Azure management* to non-Azure resources, it does NOT migrate them. **Takeaway:** Arc ≠ Migrate.
 
 ---
 
-**Scenario set 47–49 — Fabrikam MG-level Policy + RG-level Lock**
+**Scenario set 47–49, Fabrikam MG-level Policy + RG-level Lock**
 
 **Q47. Answer: B (No).** Policy at the MG level inherits down to child subscriptions. The Contributor in a child subscription is blocked by the MG-level Deny policy from deploying to Brazil South. **Takeaway:** MG inheritance is the whole point of MG-level Policy.
 
@@ -447,7 +447,7 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 |-------|---------|
 | 45–50 (90%+) | 🏆 You're going to crush AZ-900. Sleep well, take the real exam. |
 | 38–44 (76–88%) | ✅ Strong pass expected. Spot-review wrong answers tonight. |
-| 35–37 (70–74%) | ⚠️ Borderline pass. Re-drill flashcards + cheat sheets — don't book the exam yet if you're not confident. |
+| 35–37 (70–74%) | ⚠️ Borderline pass. Re-drill flashcards + cheat sheets, don't book the exam yet if you're not confident. |
 | <35 (<70%) | 🔁 NOT ready. Re-study weakest 2 modules. Re-take in 3–5 days. |
 
 ---
@@ -457,20 +457,20 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 1. For each wrong answer, identify the module and concept
 2. Re-read that module's **Cheat Sheet** (faster than Reading.md)
 3. Add any missed concept to your Flashcards
-4. Get 8 hours of sleep — the real exam is mental endurance
+4. Get 8 hours of sleep, the real exam is mental endurance
 
 ---
 
 ## 🧠 Top Real-Exam Tips
 
-1. **Read every word.** "Yes/No" sets share a scenario block — but each Y/N is graded INDEPENDENTLY. Read the question, not the scenario.
+1. **Read every word.** "Yes/No" sets share a scenario block, but each Y/N is graded INDEPENDENTLY. Read the question, not the scenario.
 2. **Watch for "MUST" vs "SHOULD".** Microsoft is picky.
-3. **"Microsoft Entra ID" = "Azure AD"** — exam may use either.
+3. **"Microsoft Entra ID" = "Azure AD"**, exam may use either.
 4. **Composite SLA = multiply.** Adding services LOWERS workload SLA.
 5. **RBAC ≠ Policy ≠ Lock.** Know which solves which problem.
 6. **Service Health is personalized; Status page is public.**
 7. **Ingress free, egress billed.**
-8. **40–60 questions in 45 minutes** — about 45 seconds per question. Don't get stuck. Flag and return.
+8. **40–60 questions in 45 minutes**, about 45 seconds per question. Don't get stuck. Flag and return.
 
 ---
 
@@ -479,7 +479,7 @@ D. It supports multiple APIs (NoSQL native, MongoDB, Cassandra, Gremlin, Table) 
 ```
 Night before: Cheat sheets + flashcards + 8 hrs sleep
 Morning of:   Light breakfast, no caffeine spike, review key numbers
-Test:         45 min — flag uncertain, mark "Yes/No" sets carefully, finish strong
+Test:         45 min, flag uncertain, mark "Yes/No" sets carefully, finish strong
 After:        Pass? 🎉 Move to AZ-104. Fail? Book retake (24 hrs later).
 ```
 

@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🌟</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Amazon Bedrock — Complete Overview</p>
+      <p class="vg-title">Amazon Bedrock, Complete Overview</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 22 min · Models, APIs, throughput modes</span>
     </div>
@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>📚</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Bedrock Knowledge Bases — Managed RAG</p>
+      <p class="vg-title">Bedrock Knowledge Bases, Managed RAG</p>
       <p class="vg-creator">AWS re:Invent (AIM404)</p>
       <span class="vg-duration">⏱ 28 min · End-to-end RAG pipeline</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🛠️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Bedrock Agents — Tool Use & Multi-Step</p>
+      <p class="vg-title">Bedrock Agents, Tool Use & Multi-Step</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 18 min · Action groups + KB integration</span>
     </div>
@@ -52,7 +52,7 @@
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Bedrock Guardrails — Safety Layer</p>
+      <p class="vg-title">Bedrock Guardrails, Safety Layer</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 17 min · Topic, PII, grounding filters</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Amazon Q Business — Enterprise GenAI</p>
+      <p class="vg-title">Amazon Q Business, Enterprise GenAI</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 20 min · Connector ecosystem</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">RAG vs Fine-Tuning — When To Use Each</p>
+      <p class="vg-title">RAG vs Fine-Tuning, When To Use Each</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 22 min</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>💸</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Bedrock Cost Optimisation — Batch + Provisioned</p>
+      <p class="vg-title">Bedrock Cost Optimisation, Batch + Provisioned</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 14 min</span>
     </div>
@@ -127,10 +127,10 @@
 
 ## ✅ After watching
 
-1. RAG vs fine-tune — when each?
-2. Lex vs Bedrock Agent — when each?
-3. Bedrock vs JumpStart — when each?
+1. RAG vs fine-tune, when each?
+2. Lex vs Bedrock Agent, when each?
+3. Bedrock vs JumpStart, when each?
 4. Default vector store for Bedrock KB?
-5. Topic filter vs grounding check — what each catches?
+5. Topic filter vs grounding check, what each catches?
 
 ➡️ [Quiz.md](./Quiz.md)

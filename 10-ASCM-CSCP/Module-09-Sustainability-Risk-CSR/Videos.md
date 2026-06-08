@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">BCP, DRP, RTO, RPO — Continuity Fundamentals</p>
+      <p class="vg-title">BCP, DRP, RTO, RPO, Continuity Fundamentals</p>
       <p class="vg-creator">GreyCampus</p>
       <span class="vg-duration">⏱ 14 min · BIA + metrics</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ESG — What Investors Actually Want</p>
+      <p class="vg-title">ESG, What Investors Actually Want</p>
       <p class="vg-creator">365 Careers</p>
       <span class="vg-duration">⏱ 11 min · MSCI / Sustainalytics</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">FMEA — Computing RPN Step-by-Step</p>
+      <p class="vg-title">FMEA, Computing RPN Step-by-Step</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 10 min · S×O×D worked example</span>
     </div>

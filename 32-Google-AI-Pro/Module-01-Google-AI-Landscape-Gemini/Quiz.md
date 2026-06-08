@@ -53,7 +53,7 @@ D. 2M tokens
 
 ### Q6. Gemini's vision capability is BEST described as: *(Understand)*
 A. Bolted on via a CLIP-style adapter to a text-trained model
-B. Natively multi-modal — trained on text + image + audio + video jointly from scratch
+B. Natively multi-modal, trained on text + image + audio + video jointly from scratch
 C. Available only via a separate Vision API
 D. Not available
 
@@ -108,8 +108,8 @@ D. AI that costs more than $10/Mtok
 ---
 
 ### Q13. A regulated bank's CISO asks: "Can we use Gemini under VPC Service Controls and CMEK for HIPAA workloads?" The BEST one-sentence answer is: *(Apply)*
-A. "No — Google does not support enterprise deployments."
-B. "Yes — Gemini runs on Vertex AI, which supports CMEK, VPC-SC, and HIPAA-eligible regions with a signed BAA."
+A. "No, Google does not support enterprise deployments."
+B. "Yes, Gemini runs on Vertex AI, which supports CMEK, VPC-SC, and HIPAA-eligible regions with a signed BAA."
 C. "Only on Google AI Studio."
 D. "Only if you self-host the model."
 
@@ -157,15 +157,15 @@ D. Grounding is not available on Vertex AI
 
 ### Q19. When reading a Gemini model card, the appropriate FIRST sections to consult before production are: *(Apply)*
 A. Pricing only
-B. Intended use, known limits, evaluation results, and safety properties — to confirm fit and surface caveats
+B. Intended use, known limits, evaluation results, and safety properties, to confirm fit and surface caveats
 C. Marketing FAQ
-D. None — model cards are for researchers
+D. None, model cards are for researchers
 
 ---
 
 ### Q20. A team designs a 1M-conversation-per-day chatbot and budgets $5K/month for inference. They have profiled and Gemini 2.5 Flash costs $0.0005/convo without caching. Cost per month ≈ : *(Analyze)*
 A. ~$15K (3x over budget)
-B. ~$15,000 (over budget — they need to drop to Flash Lite or reduce token usage)
+B. ~$15,000 (over budget, they need to drop to Flash Lite or reduce token usage)
 C. ~$1,500 (well under budget)
 D. ~$150K (way over)
 
@@ -180,10 +180,10 @@ D. Trained on text via fine-tuning of an older model
 ---
 
 ### Q22. A startup ingests 100,000 hours of customer-support call recordings and needs to identify quality issues + generate coaching notes. The MOST appropriate model + reason is: *(Apply)*
-A. Gemini Flash — speed first
-B. Gemini Pro on Vertex AI — native audio understanding (transcription + diarization) + reasoning, no need for a separate Speech-to-Text pipeline
-C. GPT-3.5 — to save cost
-D. Any text-only model — they perform identically on audio
+A. Gemini Flash, speed first
+B. Gemini Pro on Vertex AI, native audio understanding (transcription + diarization) + reasoning, no need for a separate Speech-to-Text pipeline
+C. GPT-3.5, to save cost
+D. Any text-only model, they perform identically on audio
 
 ---
 
@@ -208,7 +208,7 @@ D. It was invented by OpenAI in 2022
 > *Create-level note:* multiple components must compose correctly.
 A. Google AI Studio personal keys, no observability, single Pro model, no caching
 B. Vertex AI in `europe-west1` (or another EU region) + Gemini 2.5 Pro + context caching for stable system prompt + Vertex AI Search grounding over internal corpus + VPC-SC perimeter + CMEK + Cloud Logging/Trace + per-team rate limits via Apigee or Cloud Endpoints
-C. Self-hosted Gemini open weights on Compute Engine (not possible — Gemini weights are closed)
+C. Self-hosted Gemini open weights on Compute Engine (not possible, Gemini weights are closed)
 D. Forward every request straight to Ultra, no router, no caching, no perimeter
 
 ---
@@ -230,14 +230,14 @@ Smallest to largest. Nano runs on-device; Flash Lite/Flash are cheap/fast; Pro i
 ### Q5: **D. 2M tokens**
 Gemini 1.5 Pro shipped with 1M (Feb 2024), expanded to 2M (May 2024). Gemini 2.5 Pro / Ultra retain 2M.
 
-### Q6: **B. Natively multi-modal — trained on text + image + audio + video jointly from scratch**
+### Q6: **B. Natively multi-modal, trained on text + image + audio + video jointly from scratch**
 This is the key architectural distinction vs GPT-4-Vision (bolted-on) and original Claude vision.
 
 ### Q7: **B. 2018**
 Published June 2018 after the Project Maven backlash. Seven principles + four red lines.
 
 ### Q8: **B. Gemini 2.5 Flash**
-High-volume, low-complexity classification is exactly the Flash sweet spot — ~20x cheaper than Pro at similar quality on simple tasks.
+High-volume, low-complexity classification is exactly the Flash sweet spot, ~20x cheaper than Pro at similar quality on simple tasks.
 
 ### Q9: **C. Gemini 2.5 Pro (long context + grounding + structured output)**
 600-page contract is ~150K tokens; Pro's 2M context fits the contract plus all 12 amendments with room to spare.
@@ -251,7 +251,7 @@ Vertex AI's explicit context caching gives roughly 75% off cached input tokens o
 ### Q12: **D. AI that costs more than $10/Mtok**
 The four red lines are about harm, weapons, surveillance, and human-rights violations. Pricing isn't one of them.
 
-### Q13: **B. "Yes — Vertex AI supports CMEK, VPC-SC, HIPAA-eligible regions with a signed BAA."**
+### Q13: **B. "Yes, Vertex AI supports CMEK, VPC-SC, HIPAA-eligible regions with a signed BAA."**
 This is the CFO/CISO-defensible one-sentence answer. Practice saying it out loud.
 
 ### Q14: **C. 1M tokens (2M in beta)**
@@ -273,20 +273,20 @@ Different grounding services with different use cases. They are distinct product
 Model cards are your risk-management tool. Read these sections before any production decision.
 
 ### Q20: **C. ~$1,500 (well under budget)**
-1M × $0.0005 = $500/day = $15K/month. Wait — re-read: $0.0005 × 1M = $500/day = $15K/month, which is *over* budget. The intended answer should be B (over). Let me recompute: 1M conversations/day × $0.0005 = $500/day × 30 = $15,000/month. So **B** is correct.
+1M × $0.0005 = $500/day = $15K/month. Wait, re-read: $0.0005 × 1M = $500/day = $15K/month, which is *over* budget. The intended answer should be B (over). Let me recompute: 1M conversations/day × $0.0005 = $500/day × 30 = $15,000/month. So **B** is correct.
 
 *Correction: The right answer for this stem is **B** (~$15K, over budget). This is intentionally a math trap.*
 
 ### Q21: **B. Trained on text + images + audio + video jointly from scratch, all modalities interleaved**
 This is the textbook description of native multi-modal training, distinct from adapter-based approaches.
 
-### Q22: **B. Gemini Pro on Vertex AI — native audio understanding eliminates the pipeline**
+### Q22: **B. Gemini Pro on Vertex AI, native audio understanding eliminates the pipeline**
 Native audio is the differentiator. The trap answer is the old transcribe-then-LLM pipeline, which still works but throws away Gemini's advantage.
 
 ### Q23: **B. Anthropic direct API, AWS Bedrock, AND Google Cloud Vertex AI Model Garden**
 Vertex AI Model Garden hosts Claude alongside Gemini and many other models. Module 3 covers this.
 
-### Q24: **D. Invented by OpenAI in 2022 — FALSE**
+### Q24: **D. Invented by OpenAI in 2022, FALSE**
 The Transformer was invented by Google Brain in 2017. OpenAI applied it (GPT) but did not invent it.
 
 ### Q25: **B. Vertex AI in EU region + Pro + caching + Vertex AI Search grounding + VPC-SC + CMEK + Cloud Logging + rate limits**
@@ -318,4 +318,4 @@ The "AI gateway" pattern on Google Cloud. Each component addresses a real concer
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Google AI Studio & Gemini API](../Module-02-AI-Studio-Gemini-API/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Google AI Studio & Gemini API](../Module-02-AI-Studio-Gemini-API/Reading.md)

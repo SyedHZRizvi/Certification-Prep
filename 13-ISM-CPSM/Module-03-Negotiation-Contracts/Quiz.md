@@ -200,7 +200,7 @@ D. Accept and renegotiate harder to compensate
 
 ### Q25. A scenario: scope is poorly defined and the supplier proposes T&M. The buyer's CFO insists on fixed-price for budget certainty. The BEST response is: *(Create)*
 A. Agree; fixed-price is always safer
-B. Explain that fixed-price on undefined scope creates dispute risk; recommend phased approach — T&M for discovery, fixed-price once scope is clear
+B. Explain that fixed-price on undefined scope creates dispute risk; recommend phased approach, T&M for discovery, fixed-price once scope is clear
 C. Refuse to engage the supplier
 D. Sign T&M without telling the CFO
 
@@ -232,7 +232,7 @@ Long-term relationship = expand the pie, build trust.
 The supplier committed to a fixed price; overruns reduce their margin.
 
 ### Q6: **A. Buyer**
-Cost-plus reimburses costs — the buyer ultimately pays them. Useful when scope is uncertain.
+Cost-plus reimburses costs, the buyer ultimately pays them. Useful when scope is uncertain.
 
 ### Q7: **C. Cost-plus or T&M**
 Forcing fixed-price on undefined scope guarantees disputes.
@@ -241,7 +241,7 @@ Forcing fixed-price on undefined scope guarantees disputes.
 Goods in the US. Services = common law.
 
 ### Q9: **B. Unforeseeable, unavoidable events**
-War, natural disaster, pandemic — when specifically enumerated and supplier mitigated.
+War, natural disaster, pandemic, when specifically enumerated and supplier mitigated.
 
 ### Q10: **B. Work done + wind-down costs**
 That's the standard convenience-termination treatment.
@@ -256,7 +256,7 @@ Anchoring is a real psychological effect documented by Tversky & Kahneman.
 Memorize. Two different ADR tools.
 
 ### Q14: **B. Small concessions at the end**
-"Just one more thing before we sign…" — counter by trading.
+"Just one more thing before we sign…", counter by trading.
 
 ### Q15: **C. $500**
 UCC Statute of Frauds threshold for goods.
@@ -283,12 +283,12 @@ Never sign supplier's standard draft on a material deal without legal review.
 Memorize the 5 phases.
 
 ### Q23: **B. A wish, not enforceable**
-SLAs require teeth — credits, penalties, or escalation.
+SLAs require teeth, credits, penalties, or escalation.
 
 ### Q24: **B. Decline + disclose**
 ISM ethics code (Module 7). Gifts of significant value during active negotiation create conflicts.
 
-### Q25: **B. Phased — T&M then fixed-price**
+### Q25: **B. Phased, T&M then fixed-price**
 A nuanced answer that protects both budget certainty and supplier risk. CPSM rewards this kind of thinking.
 
 ### Q26: **C. FAR**
@@ -308,7 +308,7 @@ Federal Acquisition Regulation. Specialized, prescriptive, flow-down requirement
 ## 🃏 Add To Your Flashcards
 
 - BATNA / ZOPA / reservation / target / anchor (one-liners)
-- Distributive vs integrative — when to use each
+- Distributive vs integrative, when to use each
 - Risk allocation: fixed / cost-plus / T&M
 - Contract elements (offer, acceptance, consideration…)
 - UCC vs CISG vs common law vs FAR triggers

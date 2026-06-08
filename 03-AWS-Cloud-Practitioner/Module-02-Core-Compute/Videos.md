@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Core Compute
 
-> **How to use:** Watch Essentials in order (~50 min). Pause and sketch the decision tree: "Long-running VM? Container? Serverless function?" — this is the #1 architecture choice on the exam.
+> **How to use:** Watch Essentials in order (~50 min). Pause and sketch the decision tree: "Long-running VM? Container? Serverless function?", this is the #1 architecture choice on the exam.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">EC2 Pricing Models — On-Demand, Reserved, Spot, Savings Plans</p>
+      <p class="vg-title">EC2 Pricing Models, On-Demand, Reserved, Spot, Savings Plans</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 12 min · High-frequency exam topic</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ECS vs EKS vs Fargate — Which Do I Use?</p>
+      <p class="vg-title">ECS vs EKS vs Fargate, Which Do I Use?</p>
       <p class="vg-creator">Tutorials Dojo</p>
       <span class="vg-duration">⏱ 12 min · Container disambiguation</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Auto Scaling Groups + ELB — The Scaling Power Couple</p>
+      <p class="vg-title">Auto Scaling Groups + ELB, The Scaling Power Couple</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 10 min · Critical pattern</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Batch — Run Massive Batch Jobs Cheaply</p>
+      <p class="vg-title">AWS Batch, Run Massive Batch Jobs Cheaply</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 7 min · For batch workloads</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Lambda Cold Starts — Why &amp; How To Avoid</p>
+      <p class="vg-title">Lambda Cold Starts, Why &amp; How To Avoid</p>
       <p class="vg-creator">Marcia Villalba</p>
       <span class="vg-duration">⏱ 13 min · Deeper Lambda knowledge</span>
     </div>
@@ -139,7 +139,7 @@ Answer these in your notebook:
 1. Name the 5 EC2 instance families and what each is optimized for.
 2. List the 4 main EC2 pricing models and when to use each.
 3. What's the Lambda max execution time? What happens if you exceed it?
-4. ECS vs EKS vs Fargate — explain in one sentence each.
+4. ECS vs EKS vs Fargate, explain in one sentence each.
 5. What's the difference between an Auto Scaling Group and an Elastic Load Balancer?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

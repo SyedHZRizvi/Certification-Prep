@@ -1,4 +1,4 @@
-# Capstone Project — PMP (Project Management Professional)
+# Capstone Project, PMP (Project Management Professional)
 
 > The PMP track has just walked you through 10 modules of frameworks, formulas, and situational judgment. This capstone forces you to *integrate* what you learned by working a single realistic, high-stakes scenario end-to-end. The deliverables match what a real PM produces in the first 6 weeks of a major engagement.
 
@@ -6,10 +6,10 @@
 
 ## Brief
 
-You have just been promoted to Project Manager of a **$14M digital-transformation rollout** at **MidLand Bank**, a 600-person regional bank headquartered in a US Midwestern city. Three months ago MidLand acquired **PaySnap**, a 35-person fintech that built MidLand's mobile-payments app. Your job is to integrate PaySnap's product, team, and roadmap into MidLand's enterprise platform — *and* to launch two new digital products (instant-pay, AI-driven fraud detection) that the merger's investment thesis depends on.
+You have just been promoted to Project Manager of a **$14M digital-transformation rollout** at **MidLand Bank**, a 600-person regional bank headquartered in a US Midwestern city. Three months ago MidLand acquired **PaySnap**, a 35-person fintech that built MidLand's mobile-payments app. Your job is to integrate PaySnap's product, team, and roadmap into MidLand's enterprise platform, *and* to launch two new digital products (instant-pay, AI-driven fraud detection) that the merger's investment thesis depends on.
 
 **Constraints you carry into Day 1:**
-- Sponsor: MidLand's CFO + COO (joint sponsorship — itself a risk).
+- Sponsor: MidLand's CFO + COO (joint sponsorship, itself a risk).
 - Steering committee: 7 members including MidLand's CIO, the former PaySnap CEO (now SVP Product), Head of Compliance, and the Chair of MidLand's Board's Risk Committee.
 - Hard deadline: Year-end production launch (you're starting in May).
 - Regulated industry: any change to core banking systems triggers regulator notification under the Bank Service Company Act and applicable state regulations.
@@ -18,13 +18,13 @@ You have just been promoted to Project Manager of a **$14M digital-transformatio
 - Politics: the Board has publicly committed to "$8M of annualized cost synergies from the PaySnap acquisition by Year 2."
 - Prior PM was fired three weeks ago after the steering committee lost confidence in their cost forecast.
 
-Your task is to produce the **first 6 weeks of artifacts** any competent PM would produce on a project of this complexity. You are doing this for *yourself* — the capstone is meant to integrate your PMP learning, not to be graded by anyone external. Use the rubric for self-assessment.
+Your task is to produce the **first 6 weeks of artifacts** any competent PM would produce on a project of this complexity. You are doing this for *yourself*, the capstone is meant to integrate your PMP learning, not to be graded by anyone external. Use the rubric for self-assessment.
 
 ---
 
 ## Deliverables (6 artifacts)
 
-You will produce **six discrete artifacts**, each in a format a real PM would defend at a steering-committee review. Pick a delivery format that suits you — markdown documents, slides, spreadsheets, or a mix. Aim for an experienced-PM standard, not a textbook example.
+You will produce **six discrete artifacts**, each in a format a real PM would defend at a steering-committee review. Pick a delivery format that suits you, markdown documents, slides, spreadsheets, or a mix. Aim for an experienced-PM standard, not a textbook example.
 
 ### 1. Project Charter (≈ 4–6 pages)
 
@@ -35,7 +35,7 @@ A formal Charter that:
 - Names the Sponsor(s), the PM, the Steering Committee, and the assignment of authority.
 - Lists assumptions, constraints, and high-level risks.
 - Identifies the major milestones (charter → year-end go-live).
-- Includes a *governance addendum* describing escalation paths and decision rights — especially given joint CFO+COO sponsorship.
+- Includes a *governance addendum* describing escalation paths and decision rights, especially given joint CFO+COO sponsorship.
 
 Reference: PMBOK 7 §2.5 (Project Charter); §3.3 (Stakeholders); Module 01 Foundations.
 
@@ -53,9 +53,9 @@ Reference: PMBOK 7 §3.3; Mendelow 1981 (Power-Interest); Mitchell-Agle-Wood 199
 
 A working Risk Register with:
 
-- At least **25 distinct risks** — mix of threats and opportunities, covering technical, schedule, regulatory, financial, people, and reputational categories.
+- At least **25 distinct risks**, mix of threats and opportunities, covering technical, schedule, regulatory, financial, people, and reputational categories.
 - Per risk: ID, description, category, probability (qualitative + numeric estimate), impact ($ where possible), risk score, response strategy (one of the 5 threat or 5 opportunity strategies), owner, status.
-- Three of the top 5 risks have detailed *response plans* (e.g., for "PaySnap engineers leave" — a specific retention package + knowledge-transfer plan).
+- Three of the top 5 risks have detailed *response plans* (e.g., for "PaySnap engineers leave", a specific retention package + knowledge-transfer plan).
 - Identify which risks require Contingency Reserve vs Management Reserve.
 - Compute the EMV for at least three of the most material risks (with decision-tree analysis for any "fork in the road" decisions).
 
@@ -113,8 +113,8 @@ Targets: ≥85 = ready for the real PMP exam. 70–84 = re-read your weakest mod
 ## Suggested timeline (6 weeks, ~6–10 hrs/week)
 
 - **Week 1:** Draft the Charter (Deliverable 1) and identify ≥20 stakeholders (Deliverable 2). Re-read Module 01 + Module 10 first if needed.
-- **Week 2:** Complete Stakeholder Register + Power-Interest + Salience analysis (Deliverable 2 final). Begin Risk Register (Deliverable 3) — aim for at least 15 risks identified.
-- **Week 3:** Complete Risk Register (Deliverable 3) — 25+ risks, top 5 response plans, ≥3 EMVs. Re-read Modules 03 + 07.
+- **Week 2:** Complete Stakeholder Register + Power-Interest + Salience analysis (Deliverable 2 final). Begin Risk Register (Deliverable 3), aim for at least 15 risks identified.
+- **Week 3:** Complete Risk Register (Deliverable 3), 25+ risks, top 5 response plans, ≥3 EMVs. Re-read Modules 03 + 07.
 - **Week 4:** Build Communications Plan + 90-Day Cadence (Deliverable 4). Draft first 3 Board updates. Re-read Module 02.
 - **Week 5:** Build EVM Dashboard mock-up + first-quarter forecast (Deliverable 5). Drill EVM formulas (Module 06).
 - **Week 6:** Design Lessons-Learned ritual + knowledge-capture plan (Deliverable 6). Self-grade against the rubric. Identify 2 modules to re-study based on weakest artifacts.
@@ -123,7 +123,7 @@ Targets: ≥85 = ready for the real PMP exam. 70–84 = re-read your weakest mod
 
 ## What "submission" looks like
 
-You're not submitting this to anyone — it is for your own learning. Keep all six artifacts in a single folder on your computer (a personal "MidLand Bank Capstone" folder). Use markdown, slides, or any format you'd actually use professionally. Self-grade honestly using the rubric above. If your total falls below 85, the rubric tells you exactly which modules to revisit.
+You're not submitting this to anyone, it is for your own learning. Keep all six artifacts in a single folder on your computer (a personal "MidLand Bank Capstone" folder). Use markdown, slides, or any format you'd actually use professionally. Self-grade honestly using the rubric above. If your total falls below 85, the rubric tells you exactly which modules to revisit.
 
 **Peer-review (optional, recommended):** If you have a study partner pursuing the PMP, swap capstone packets and review each other. The exercise of *defending* your decisions to a peer is exactly the cognitive lift the real PMP situational questions test.
 
@@ -135,13 +135,13 @@ You're not submitting this to anyone — it is for your own learning. Keep all s
 - **Technical stretch:** Build a Make-or-Buy analysis for the AI-driven fraud-detection module (in-house build vs vendor SaaS), with full TCO + strategic-value reasoning per Module 09.
 - **People stretch:** Design the first 30/60/90-day plan for the 35 PaySnap engineers, including retention bonuses, knowledge-transfer milestones, and a Tuckman-stage-aware integration with MidLand's IT team.
 - **Quality stretch:** Build a 7-tools-of-quality monitoring plan for the regulatory-compliance subsystem (which one would fail Hubble-style if you don't reconcile conflicting test results?).
-- **Procurement stretch:** Renegotiate the $9.4M FFP contracts inherited from the prior PM into a hybrid structure that reflects the actual scope uncertainty — write the contract-restructure proposal you would deliver to the procurement officer.
-- **Closing-the-loop stretch:** After completing all six core deliverables, write a one-page memo to the Sponsor recommending whether the project should proceed as planned, be re-scoped, or be paused — citing your Risk Register, EVM forecast, and Stakeholder Register as evidence.
+- **Procurement stretch:** Renegotiate the $9.4M FFP contracts inherited from the prior PM into a hybrid structure that reflects the actual scope uncertainty, write the contract-restructure proposal you would deliver to the procurement officer.
+- **Closing-the-loop stretch:** After completing all six core deliverables, write a one-page memo to the Sponsor recommending whether the project should proceed as planned, be re-scoped, or be paused, citing your Risk Register, EVM forecast, and Stakeholder Register as evidence.
 
 ---
 
 ## Why this capstone exists
 
-The PMP exam tests *judgment* via situational questions. Reading-and-quiz study can prepare you to *recognize* good judgment when it appears among four options. Producing artifacts like the ones above is the only way to develop the underlying judgment in the first place. Professional and executive PM programs all close with an analogous integrative project precisely for this reason — the goal is not to pass the exam but to be the kind of PM who shouldn't need to take it twice.
+The PMP exam tests *judgment* via situational questions. Reading-and-quiz study can prepare you to *recognize* good judgment when it appears among four options. Producing artifacts like the ones above is the only way to develop the underlying judgment in the first place. Professional and executive PM programs all close with an analogous integrative project precisely for this reason, the goal is not to pass the exam but to be the kind of PM who shouldn't need to take it twice.
 
-Good luck. Re-read your Charter at hour 0 and again at hour 60 — you'll be amazed how much your judgment will have sharpened.
+Good luck. Re-read your Charter at hour 0 and again at hour 60, you'll be amazed how much your judgment will have sharpened.

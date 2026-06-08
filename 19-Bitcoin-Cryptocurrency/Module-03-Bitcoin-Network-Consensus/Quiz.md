@@ -120,7 +120,7 @@ D. Layer-2 protocols
 
 ### Q15. The "0.8/0.7 fork" in March 2013 is significant because: *(Evaluate)*
 A. It was a malicious 51% attack
-B. It was a consensus bug between two Bitcoin Core versions, resolved by coordinated downgrade — the textbook governance case study
+B. It was a consensus bug between two Bitcoin Core versions, resolved by coordinated downgrade, the textbook governance case study
 C. It permanently split Bitcoin into two coins
 D. It created Litecoin
 
@@ -159,7 +159,7 @@ D. The transaction is in the mempool
 ---
 
 ### Q20. The deepest Bitcoin mainnet reorg in modern history is: *(Remember)*
-A. ~53 blocks (March 2013 — coordinated rollback, not under normal operation)
+A. ~53 blocks (March 2013, coordinated rollback, not under normal operation)
 B. 6 blocks
 C. 1 block
 D. 100 blocks
@@ -184,7 +184,7 @@ D. unlimited
 
 ### Q23. A change to the consensus rules that previously-valid blocks become invalid (without the chain splitting at all) is impossible because: *(Analyze)*
 A. The protocol does not allow rule changes
-B. By definition, any rule change that invalidates previously-valid blocks IS a hard fork — non-upgrading nodes will reject the new blocks
+B. By definition, any rule change that invalidates previously-valid blocks IS a hard fork, non-upgrading nodes will reject the new blocks
 C. Hashing prevents it
 D. The 21M cap forbids it
 
@@ -192,7 +192,7 @@ D. The 21M cap forbids it
 
 ### Q24. A board member argues that "Bitcoin can be controlled by the top 4 mining pools, who together control 65% of hashrate." Strongest reasoned reply: *(Evaluate)*
 A. Agree; mining pools control the protocol
-B. Pools coordinate block production but validity is enforced by every full node; pools cannot inflate supply, steal coins, or change protocol rules without breaking the consensus that every full node enforces — and miners depend on the chain being valuable, which depends on those rules holding
+B. Pools coordinate block production but validity is enforced by every full node; pools cannot inflate supply, steal coins, or change protocol rules without breaking the consensus that every full node enforces, and miners depend on the chain being valuable, which depends on those rules holding
 C. Disagree; mining is not done in pools
 D. Agree; pools own everyone's bitcoin
 
@@ -210,7 +210,7 @@ Targeted average. Individual blocks are exponentially distributed; some come in 
 The defining property of a soft fork. Backward compatible. SegWit, Taproot, P2SH all qualify.
 
 ### Q4: **B. August 1, 2017**
-Block 478,558 was the BCH fork point. SegWit activated on Bitcoin the same month — the small-block / big-block factions had been arguing for years.
+Block 478,558 was the BCH fork point. SegWit activated on Bitcoin the same month, the small-block / big-block factions had been arguing for years.
 
 ### Q5: **B. 80 bytes**
 Version (4) + previous hash (32) + Merkle root (32) + timestamp (4) + bits (4) + nonce (4) = 80 bytes.
@@ -257,7 +257,7 @@ Each node has its own. Consensus is only over blocks.
 ### Q19: **B. The transaction is in the most recent block**
 1 confirmation = first inclusion. The transaction's own block counts as 1.
 
-### Q20: **A. ~53 blocks (March 2013 — coordinated rollback)**
+### Q20: **A. ~53 blocks (March 2013, coordinated rollback)**
 The deepest reorg in Bitcoin's history. Notably this was *coordinated* by the community, not from a malicious attack.
 
 ### Q21: **B. Send block headers + short tx IDs so peers reconstruct blocks from mempool**

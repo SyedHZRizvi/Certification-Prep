@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-04-Character-Rigging-Animate/Quiz/
 title: "Module 4 Quiz: Character Rigging in Adobe Animate"
 ---
 
-# 🧠 Module 4 Quiz — Character Rigging in Adobe Animate
+# 🧠 Module 4 Quiz, Character Rigging in Adobe Animate
 
 ---
 
@@ -162,7 +162,7 @@ D. E (wide smile)
 
 ### Q18. The "U" phoneme group in the Preston Blair chart describes:
 
-A. A mouth shape used for "you," "do," "blue" — small round, lips pushed forward
+A. A mouth shape used for "you," "do," "blue", small round, lips pushed forward
 B. A wide open mouth used for emphatic "uhh" sounds
 C. The mouth position for the "under" vowel sound only
 D. An unassigned placeholder used when no phoneme applies
@@ -226,28 +226,28 @@ D. A round pursed shape used for voiced consonants only
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — Registration point = pivot center; body parts rotate correctly only when it's at the joint.
-Q2.  B — Parent motion cascades to all children; child maintains relative position to parent.
-Q3.  B — Preston Blair's phoneme set maps mouth shapes to speech sound groups for lip sync.
-Q4.  C — MBP = closed or nearly closed mouth; correct for M, B, P bilabial sounds.
-Q5.  B — Swap Symbol replaces a frame's symbol instance while preserving transform properties.
-Q6.  B — FK = rotate each joint independently from parent down the chain.
-Q7.  B — South Park is the most famous 2D cut-out production (originally physical paper, then 3D mimicking that look).
-Q8.  B — Wrong registration point at bounding-box center causes rotation around the wrong pivot.
-Q9.  B — FV = upper front teeth resting on lower lip, as when pronouncing "f" or "v."
-Q10. B — Different registration points cause spatial misalignment after symbol swap.
-Q11. B — IK is ideal for planted feet: specify where the foot is, IK solves hip/knee/ankle.
-Q12. C — Registration points are set when assembling the hierarchy and placing symbols.
-Q13. B — Hazbin Hotel uses complex Flash/Animate-style cut-out rigs with expressive facial animation.
-Q14. B — The layer order problem is the Z-order swap needed when a character turns in 3D space.
-Q15. A — Asset Warp deforms artwork; old Bone Tool created IK chains between separate symbols.
-Q16. B — Five Graphic symbols swapped frame by frame is the standard cut-out expression workflow.
-Q17. B — REST = relaxed mouth for silence, exhale, or held breath.
-Q18. A — U phoneme = small round, lips pushed forward, as in "you," "do," "blue."
-Q19. B — IK moves end effector; the system solves upstream joint angles automatically.
-Q20. B — Pre-drawn turn rigs are used when a character turns and layer order must change.
-Q21. B — Swap preserves transform; different registration points = mouth in wrong position.
-Q22. C — Background swaps are better handled by layer visibility or scene changes, not symbol swap.
-Q23. B — The root symbol is the container for the full rig; moving it moves the whole character.
-Q24. B — CDG = slightly open, tongue near roof, for sounds like D, hard G, or the C in "cat."
+Q1.  B, Registration point = pivot center; body parts rotate correctly only when it's at the joint.
+Q2.  B, Parent motion cascades to all children; child maintains relative position to parent.
+Q3.  B, Preston Blair's phoneme set maps mouth shapes to speech sound groups for lip sync.
+Q4.  C, MBP = closed or nearly closed mouth; correct for M, B, P bilabial sounds.
+Q5.  B, Swap Symbol replaces a frame's symbol instance while preserving transform properties.
+Q6.  B, FK = rotate each joint independently from parent down the chain.
+Q7.  B, South Park is the most famous 2D cut-out production (originally physical paper, then 3D mimicking that look).
+Q8.  B, Wrong registration point at bounding-box center causes rotation around the wrong pivot.
+Q9.  B, FV = upper front teeth resting on lower lip, as when pronouncing "f" or "v."
+Q10. B, Different registration points cause spatial misalignment after symbol swap.
+Q11. B, IK is ideal for planted feet: specify where the foot is, IK solves hip/knee/ankle.
+Q12. C, Registration points are set when assembling the hierarchy and placing symbols.
+Q13. B, Hazbin Hotel uses complex Flash/Animate-style cut-out rigs with expressive facial animation.
+Q14. B, The layer order problem is the Z-order swap needed when a character turns in 3D space.
+Q15. A, Asset Warp deforms artwork; old Bone Tool created IK chains between separate symbols.
+Q16. B, Five Graphic symbols swapped frame by frame is the standard cut-out expression workflow.
+Q17. B, REST = relaxed mouth for silence, exhale, or held breath.
+Q18. A, U phoneme = small round, lips pushed forward, as in "you," "do," "blue."
+Q19. B, IK moves end effector; the system solves upstream joint angles automatically.
+Q20. B, Pre-drawn turn rigs are used when a character turns and layer order must change.
+Q21. B, Swap preserves transform; different registration points = mouth in wrong position.
+Q22. C, Background swaps are better handled by layer visibility or scene changes, not symbol swap.
+Q23. B, The root symbol is the container for the full rig; moving it moves the whole character.
+Q24. B, CDG = slightly open, tongue near roof, for sounds like D, hard G, or the C in "cat."
 ```

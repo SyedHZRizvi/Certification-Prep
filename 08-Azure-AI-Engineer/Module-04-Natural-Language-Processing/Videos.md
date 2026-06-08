@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: Natural Language Processing
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result. Filter for videos dated 2024+ — LUIS / QnA Maker content is outdated.
+> **How to use:** Click any video card to search YouTube and watch the latest top result. Filter for videos dated 2024+, LUIS / QnA Maker content is outdated.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure AI Language — full overview</p>
+      <p class="vg-title">Azure AI Language, full overview</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 18 min · Every feature</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Translator — Python SDK in action</p>
+      <p class="vg-title">Azure Translator, Python SDK in action</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 12 min · Text + Document</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Speech SDK — STT + TTS walkthrough</p>
+      <p class="vg-title">Azure Speech SDK, STT + TTS walkthrough</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 16 min · SDK + SSML</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CLU — replacing LUIS with Azure AI Language</p>
+      <p class="vg-title">CLU, replacing LUIS with Azure AI Language</p>
       <p class="vg-creator">Microsoft Reactor</p>
       <span class="vg-duration">⏱ 14 min · Intents + entities</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Question Answering — KB-driven Q&amp;A</p>
+      <p class="vg-title">Question Answering, KB-driven Q&amp;A</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 10 min · Replaces QnA Maker</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SSML — tuning voice output</p>
+      <p class="vg-title">SSML, tuning voice output</p>
       <p class="vg-creator">Microsoft Learn</p>
       <span class="vg-duration">⏱ 13 min · Rate, pitch, styles</span>
     </div>
@@ -136,8 +136,8 @@
 
 1. Which Language feature replaces LUIS? Which replaces QnA Maker?
 2. What header must Translator requests include for a global resource?
-3. SSML — name 3 things you can control with it.
+3. SSML, name 3 things you can control with it.
 4. When would you pick abstractive over extractive summarization?
-5. Real-time vs batch transcription — when is each best?
+5. Real-time vs batch transcription, when is each best?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

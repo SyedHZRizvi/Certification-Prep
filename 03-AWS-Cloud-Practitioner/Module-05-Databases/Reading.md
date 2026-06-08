@@ -1,10 +1,10 @@
 # Module 5: Databases 🗄️
 
-> **Why this module matters:** AWS has 15+ database services. The exam doesn't expect you to query any of them — it expects you to pick the right one. This module gives you the matching game: "user profile" → DynamoDB; "OLAP warehouse" → Redshift; "graph of friend-of-friend" → Neptune.
+> **Why this module matters:** AWS has 15+ database services. The exam doesn't expect you to query any of them, it expects you to pick the right one. This module gives you the matching game: "user profile" → DynamoDB; "OLAP warehouse" → Redshift; "graph of friend-of-friend" → Neptune.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md) — Multi-AZ vs cross-Region patterns
-> - [Core Storage](../Module-03-Core-Storage/Reading.md) — block vs file vs object (databases sit on top of all three)
+> - [Cloud Fundamentals](../Module-01-Cloud-Fundamentals/Reading.md), Multi-AZ vs cross-Region patterns
+> - [Core Storage](../Module-03-Core-Storage/Reading.md), block vs file vs object (databases sit on top of all three)
 > - Basic SQL literacy: rows, columns, indexes, joins
 > - Conceptual familiarity with the difference between OLTP (transactional, write-heavy) and OLAP (analytical, read-heavy) workloads
 >
@@ -16,13 +16,13 @@
 
 Maria's pizza empire generates 4 very different kinds of data:
 
-1. **The order log** — relational: customers, orders, items, payments. ACID required (you can't half-charge a credit card).
+1. **The order log**, relational: customers, orders, items, payments. ACID required (you can't half-charge a credit card).
    → That's **RDS** (or **Aurora**).
-2. **The active cart of every customer browsing the menu right now** — needs millisecond reads, billions of small items, schema changes weekly.
+2. **The active cart of every customer browsing the menu right now**, needs millisecond reads, billions of small items, schema changes weekly.
    → That's **DynamoDB**.
 3. **Sub-millisecond menu lookups** (avoid hitting the DB every time the home page loads).
    → That's **ElastiCache**.
-4. **"Which customers in Chicago who bought pepperoni in Q1 also bought sodas in Q2?"** — analytical, scans billions of rows.
+4. **"Which customers in Chicago who bought pepperoni in Q1 also bought sodas in Q2?"**, analytical, scans billions of rows.
    → That's **Redshift**.
 
 Each tool has a job. CLF-C02 expects you to *match scenarios to services*. Let's build that mental matching engine.
@@ -44,7 +44,7 @@ Each tool has a job. CLF-C02 expects you to *match scenarios to services*. Let's
 
 ---
 
-## 🐘 Amazon RDS — Managed Relational Databases
+## 🐘 Amazon RDS, Managed Relational Databases
 
 **RDS = AWS runs the SQL database for you.** You pick the engine and instance class; AWS handles patching, backups, replication.
 
@@ -76,7 +76,7 @@ You can combine both: Multi-AZ for HA + Read Replicas for scaling reads.
 
 ---
 
-## 🌟 Amazon Aurora — RDS On Steroids
+## 🌟 Amazon Aurora, RDS On Steroids
 
 **Aurora = AWS-built relational database, MySQL or PostgreSQL compatible.** Better than vanilla RDS in basically every way:
 
@@ -84,8 +84,8 @@ You can combine both: Multi-AZ for HA + Read Replicas for scaling reads.
 - **Storage auto-scales** up to 128 TB
 - **6 copies of data across 3 AZs** automatically
 - Up to **15 read replicas** with sub-10ms replication lag
-- **Aurora Serverless** — pay per second, auto-scales for unpredictable workloads
-- **Aurora Global Database** — cross-Region replication with <1 sec lag
+- **Aurora Serverless**, pay per second, auto-scales for unpredictable workloads
+- **Aurora Global Database**, cross-Region replication with <1 sec lag
 
 🎯 **Exam pattern:**
 - "MySQL/PostgreSQL with cloud-native HA and high performance" → **Aurora**
@@ -94,9 +94,9 @@ You can combine both: Multi-AZ for HA + Read Replicas for scaling reads.
 
 ---
 
-## 📋 Amazon DynamoDB — Managed NoSQL
+## 📋 Amazon DynamoDB, Managed NoSQL
 
-DynamoDB descends directly from the **Dynamo paper** (DeCandia, G. et al., *"Dynamo: Amazon's Highly Available Key-value Store,"* SOSP 2007). The paper formalizes Amazon's commitment to **eventual consistency** as a deliberate trade-off (a CAP-theorem AP choice per Brewer 2000, Gilbert & Lynch 2002) — sacrificing strong consistency for availability. Modern DynamoDB now also supports strongly-consistent reads as an option (you pay for them with higher latency).
+DynamoDB descends directly from the **Dynamo paper** (DeCandia, G. et al., *"Dynamo: Amazon's Highly Available Key-value Store,"* SOSP 2007). The paper formalizes Amazon's commitment to **eventual consistency** as a deliberate trade-off (a CAP-theorem AP choice per Brewer 2000, Gilbert & Lynch 2002), sacrificing strong consistency for availability. Modern DynamoDB now also supports strongly-consistent reads as an option (you pay for them with higher latency).
 
 **DynamoDB = serverless, key-value + document NoSQL database.** Single-digit millisecond latency at any scale.
 
@@ -104,7 +104,7 @@ DynamoDB descends directly from the **Dynamo paper** (DeCandia, G. et al., *"Dyn
 - Fully managed, serverless (no instances to pick)
 - **Two capacity modes:** On-Demand (pay per request) or Provisioned (set RCU/WCU)
 - **Multi-region replication** via **Global Tables**
-- **DAX (DynamoDB Accelerator)** — in-memory cache for microsecond reads
+- **DAX (DynamoDB Accelerator)**, in-memory cache for microsecond reads
 - Backups, point-in-time recovery (PITR) up to 35 days
 - Encrypted at rest by default
 
@@ -121,7 +121,7 @@ DynamoDB descends directly from the **Dynamo paper** (DeCandia, G. et al., *"Dyn
 
 ---
 
-## ⚡ Amazon ElastiCache — In-Memory Cache
+## ⚡ Amazon ElastiCache, In-Memory Cache
 
 **ElastiCache = managed Redis or Memcached.** Sub-millisecond reads from RAM.
 
@@ -139,20 +139,20 @@ Use cases: session store, leaderboards, page caching, real-time analytics counte
 
 ---
 
-## 🏭 Amazon Redshift — Data Warehouse (OLAP)
+## 🏭 Amazon Redshift, Data Warehouse (OLAP)
 
 **Redshift = petabyte-scale analytical (OLAP) data warehouse.** Columnar storage, massive parallel processing (MPP). NOT for transactional workloads.
 
 - Standard provisioning (you pick nodes) OR **Redshift Serverless**
-- **Redshift Spectrum** — query data in S3 directly (no load needed)
-- **AQUA** — hardware-accelerated cache for blazing-fast aggregations
+- **Redshift Spectrum**, query data in S3 directly (no load needed)
+- **AQUA**, hardware-accelerated cache for blazing-fast aggregations
 - Integrates with BI tools (QuickSight, Tableau, Power BI)
 
 🎯 **Exam pattern:** "Analytical queries over billions of rows for BI" → **Redshift.** Not RDS, not DynamoDB.
 
 ---
 
-## 📄 Amazon DocumentDB — MongoDB-Compatible
+## 📄 Amazon DocumentDB, MongoDB-Compatible
 
 **DocumentDB = managed JSON document database, API-compatible with MongoDB.**
 
@@ -166,7 +166,7 @@ Use when:
 
 ---
 
-## 🕸️ Amazon Neptune — Graph Database
+## 🕸️ Amazon Neptune, Graph Database
 
 **Neptune = fully managed graph database** for relationships: social networks, fraud detection, recommendation engines, knowledge graphs.
 
@@ -184,16 +184,16 @@ Supports **Gremlin**, **SPARQL**, **openCypher** query languages.
 | **Amazon Timestream** | Time-series data (IoT, app metrics) |
 | **Amazon QLDB** | Immutable, cryptographically verifiable ledger (audit trails, supply chain) |
 | **Amazon MemoryDB for Redis** | Redis-compatible primary database (durable, not just cache) |
-| **AWS Athena** | Serverless SQL queries against S3 — not a DB, but database-like |
+| **AWS Athena** | Serverless SQL queries against S3, not a DB, but database-like |
 
 ---
 
-## 🚛 Amazon DMS — Database Migration Service
+## 🚛 Amazon DMS, Database Migration Service
 
 **DMS = move databases TO AWS (or between cloud DBs) with minimal downtime.**
 
-- **Homogeneous migration** (Oracle → Oracle) — straight copy
-- **Heterogeneous migration** (Oracle → Aurora PostgreSQL) — combined with **AWS Schema Conversion Tool (SCT)**
+- **Homogeneous migration** (Oracle → Oracle), straight copy
+- **Heterogeneous migration** (Oracle → Aurora PostgreSQL), combined with **AWS Schema Conversion Tool (SCT)**
 - Continuous replication keeps source and target in sync while you cut over
 
 🎯 **Exam pattern:** "Migrate on-prem Oracle to Aurora with minimal downtime" → **DMS + SCT.**
@@ -226,12 +226,12 @@ Supports **Gremlin**, **SPARQL**, **openCypher** query languages.
 1. **Multi-AZ ≠ Read Replica.** Multi-AZ is sync standby for HA; you don't query the standby. Read Replicas are async and you DO query them.
 2. **DynamoDB is NOT relational.** Don't pick it for joins or complex queries.
 3. **Redshift is OLAP, not OLTP.** Don't use it for high-frequency single-row writes.
-4. **Aurora is MySQL or PostgreSQL compatible** — NOT Oracle or SQL Server compatible.
+4. **Aurora is MySQL or PostgreSQL compatible**, NOT Oracle or SQL Server compatible.
 5. **DAX is for DynamoDB only.** ElastiCache is for everything else.
 6. **DocumentDB ≠ DynamoDB.** DocumentDB = MongoDB-compatible. DynamoDB = AWS-native key-value/document.
 7. **Aurora Global Database** is for cross-region; **Aurora Serverless** is for spiky workloads. Don't confuse them.
-8. **RDS does NOT support all engines for Multi-AZ in all variants** — but assume Multi-AZ is available for the main engines.
-9. **Backups are NOT free** — they consume S3 storage you pay for past a free allotment.
+8. **RDS does NOT support all engines for Multi-AZ in all variants**, but assume Multi-AZ is available for the main engines.
+9. **Backups are NOT free**, they consume S3 storage you pay for past a free allotment.
 10. **QLDB ≠ Blockchain.** QLDB is a centralized, immutable ledger. Amazon Managed Blockchain is the decentralized one.
 
 ---
@@ -241,10 +241,10 @@ Supports **Gremlin**, **SPARQL**, **openCypher** query languages.
 | Misconception | Reality |
 |---------------|---------|
 | "DynamoDB requires capacity planning" | On-Demand mode = no planning, pay-per-request |
-| "Multi-AZ doubles throughput" | No — Multi-AZ is for HA. Read Replicas scale reads. |
+| "Multi-AZ doubles throughput" | No, Multi-AZ is for HA. Read Replicas scale reads. |
 | "Aurora is its own SQL engine" | It's MySQL OR PostgreSQL compatible (you pick) |
-| "All NoSQL is the same" | Key-value (DynamoDB), Document (DocumentDB), Graph (Neptune), Time-series (Timestream) — very different! |
-| "Athena is a database" | It's a serverless SQL query engine over S3 — no DB to manage |
+| "All NoSQL is the same" | Key-value (DynamoDB), Document (DocumentDB), Graph (Neptune), Time-series (Timestream), very different! |
+| "Athena is a database" | It's a serverless SQL query engine over S3, no DB to manage |
 
 ---
 
@@ -275,7 +275,7 @@ Supports **Gremlin**, **SPARQL**, **openCypher** query languages.
 
 ---
 
-## 🏛️ Case Study — Airbnb Migrates from Sharded MySQL to Amazon Aurora (2017–2020)
+## 🏛️ Case Study, Airbnb Migrates from Sharded MySQL to Amazon Aurora (2017–2020)
 
 **Situation.** Airbnb grew from "two air mattresses in 2008" to ~7 million listings and ~150 million users by 2018. The booking-engine database (`bookings`) had been a single MySQL on EC2 instance for years; by 2017 it was a manually-sharded MySQL fleet maintained by a small SRE team. The DBAs were oncall every weekend for failover incidents. The peak Friday-night booking surge pushed the primaries to 90%+ utilization. Schema migrations took weeks of careful coordination.
 
@@ -289,12 +289,12 @@ Public references: Airbnb engineering blog (*"Migrating Booking Service Tables F
 
 **Outcome.** Failover times dropped from minutes to seconds. Storage scaling stopped requiring planned downtime. The DBA team reported (in 2020 engineering Q&A) that on-call paging volume dropped roughly 60%. Aurora costs were higher per-GB than EC2-hosted MySQL, but TCO (counting reduced DBA hours, fewer outages, faster feature shipping) was lower. Airbnb is now an AWS reference customer for Aurora and has co-authored several Aurora performance whitepapers.
 
-**Lesson for the exam / for practitioners.** Airbnb is the textbook case for *"when do you upgrade from RDS-for-MySQL to Aurora?"* — when reliability, automated scaling, and reduced operational overhead outweigh the per-hour price delta. For the exam, this is the canonical answer pattern: "Need MySQL/PostgreSQL with cloud-native HA, sub-10ms read-replica lag, and storage auto-scaling" → **Aurora**, not RDS-for-MySQL. The 6-copies-across-3-AZs storage model is also testable directly.
+**Lesson for the exam / for practitioners.** Airbnb is the textbook case for *"when do you upgrade from RDS-for-MySQL to Aurora?"*, when reliability, automated scaling, and reduced operational overhead outweigh the per-hour price delta. For the exam, this is the canonical answer pattern: "Need MySQL/PostgreSQL with cloud-native HA, sub-10ms read-replica lag, and storage auto-scaling" → **Aurora**, not RDS-for-MySQL. The 6-copies-across-3-AZs storage model is also testable directly.
 
 **Discussion (Socratic).**
 - Q1: A small startup with 10 GB of MySQL data asks: "Should we use Aurora or RDS-for-MySQL?" At what scale (data volume? read QPS? team size?) does Aurora's premium price become worth it? Defend a cutoff.
 - Q2: Aurora's 6-copies-across-3-AZs storage means a single Region failure can still take Aurora down. Walk through what Aurora *Global Database* adds, and what scenarios require it vs not.
-- Q3: Airbnb stayed on MySQL-compatible Aurora — they didn't switch to PostgreSQL or DynamoDB. What's the implicit trade-off they accepted? When would switching engines (instead of upgrading the same engine) be the right call?
+- Q3: Airbnb stayed on MySQL-compatible Aurora, they didn't switch to PostgreSQL or DynamoDB. What's the implicit trade-off they accepted? When would switching engines (instead of upgrading the same engine) be the right call?
 
 ---
 
@@ -327,7 +327,7 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Multi-AZ vs Read Replica confusion.** A team-mate says "Multi-AZ doubles my read throughput." Walk through why that's wrong, what they probably meant, and the right combination of Multi-AZ + Read Replicas to actually achieve both HA and read scaling.
 2. **DynamoDB capacity modes.** On-Demand mode "just works" but is more expensive per request than well-tuned Provisioned. At what request volume does it actually pay off to move to Provisioned + Auto Scaling? What's the predictability test?
@@ -349,9 +349,9 @@ You now know:
 
 ## 📚 Further sources (this module)
 
-- 📰 **Airbnb Engineering — *"Migrating Booking Service Tables From MySQL To Amazon Aurora"* (Medium, 2019)** — primary-source migration retrospective. Pair with their *"Migrating to Aurora — Lessons Learned"* talk at re:Invent 2019 (DAT328 on YouTube).
-- 📄 **DeCandia, G., et al. — *"Dynamo: Amazon's Highly Available Key-value Store"* (SOSP 2007)** — foundational paper for DynamoDB design. The exam doesn't test it directly but every senior interview does.
-- 📄 **Verbitski, A., et al. — *"Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases"* (SIGMOD 2017)** — peer-reviewed Aurora architecture paper. Explains the 4-of-6 quorum write model.
-- 📖 **AWS Builders' Library — *"Amazon DynamoDB: A Scalable, Predictably Performant, and Fully Managed NoSQL Database Service"* by AWS Distinguished Engineer Werner Vogels (2022)** — the inside view of the DynamoDB architecture as it stands in 2026.
-- 🎓 **Stanford CS245 *Database System Principles* (free on Stanford's site)** — lectures 18 (NoSQL) and 22 (cloud databases) give academic background that makes the AWS database service catalog click. Free PDFs and YouTube lectures.
-- 🎓 **MIT 6.5830 *Database Systems* (free on MIT OCW)** — alternative graduate-level treatment; lecture on CAP and Dynamo is particularly clear.
+- 📰 **Airbnb Engineering *"Migrating Booking Service Tables From MySQL To Amazon Aurora"* (Medium, 2019)** primary-source migration retrospective. Pair with their *"Migrating to Aurora, Lessons Learned"* talk at re:Invent 2019 (DAT328 on YouTube).
+- 📄 **DeCandia, G., et al. *"Dynamo: Amazon's Highly Available Key-value Store"* (SOSP 2007)** foundational paper for DynamoDB design. The exam doesn't test it directly but every senior interview does.
+- 📄 **Verbitski, A., et al. *"Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases"* (SIGMOD 2017)** peer-reviewed Aurora architecture paper. Explains the 4-of-6 quorum write model.
+- 📖 **AWS Builders' Library *"Amazon DynamoDB: A Scalable, Predictably Performant, and Fully Managed NoSQL Database Service"* by AWS Distinguished Engineer Werner Vogels (2022)** the inside view of the DynamoDB architecture as it stands in 2026.
+- 🎓 **Stanford CS245 *Database System Principles* (free on Stanford's site)**, lectures 18 (NoSQL) and 22 (cloud databases) give academic background that makes the AWS database service catalog click. Free PDFs and YouTube lectures.
+- 🎓 **MIT 6.5830 *Database Systems* (free on MIT OCW)**, alternative graduate-level treatment; lecture on CAP and Dynamo is particularly clear.

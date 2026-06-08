@@ -169,7 +169,7 @@ In what order should the three steps of the professional key be applied?
 A. Fine → Refined → Rough
 B. Refined → Rough → Fine
 C. Rough → Refined → Fine
-D. Any order — they are independent operations
+D. Any order, they are independent operations
 
 ---
 
@@ -265,59 +265,59 @@ D. The Screen Matte view when the key produces poor results
 
 An actor's outfit is primarily blue. For this shot, which backing would cause the least keying problems?
 
-A. A standard green screen — blue wardrobe can conflict with blue screen but not green screen
-B. A blue screen — blue wardrobe matches the backing and simplifies the key
-C. A red screen — used specifically for blue wardrobe
+A. A standard green screen, blue wardrobe can conflict with blue screen but not green screen
+B. A blue screen, blue wardrobe matches the backing and simplifies the key
+C. A red screen, used specifically for blue wardrobe
 D. No backing is needed for blue wardrobe
 
 ---
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** The Bayer sensor array has 2 green photosites for every 1 red and 1 blue. This gives green more spatial resolution and sampling accuracy, producing cleaner separation on green screens.
+**Q1, B.** The Bayer sensor array has 2 green photosites for every 1 red and 1 blue. This gives green more spatial resolution and sampling accuracy, producing cleaner separation on green screens.
 
-**Q2 — C.** The rough key establishes the approximate matte. Edge quality and spill are addressed in steps 2 and 3. Trying to perfect the edge in step 1 is counterproductive.
+**Q2, C.** The rough key establishes the approximate matte. Edge quality and spill are addressed in steps 2 and 3. Trying to perfect the edge in step 1 is counterproductive.
 
-**Q3 — B.** In the Screen Matte view: white = foreground (fully opaque), black = background (fully transparent), gray = semi-transparent transition zone (edges, hair, motion blur).
+**Q3, B.** In the Screen Matte view: white = foreground (fully opaque), black = background (fully transparent), gray = semi-transparent transition zone (edges, hair, motion blur).
 
-**Q4 — C.** Screen Gain controls the aggressiveness / sensitivity of the keying algorithm. Higher values key more; lower values key less.
+**Q4, C.** Screen Gain controls the aggressiveness / sensitivity of the keying algorithm. Higher values key more; lower values key less.
 
-**Q5 — C.** Clip Black and Clip White force pixels to binary 0 or 1 values. This destroys the gray semi-transparent pixels at edges and on motion-blurred subjects, creating a hard, artificial-looking edge.
+**Q5, C.** Clip Black and Clip White force pixels to binary 0 or 1 values. This destroys the gray semi-transparent pixels at edges and on motion-blurred subjects, creating a hard, artificial-looking edge.
 
-**Q6 — C.** Color spill (or greenscreen spill) is the contamination of the foreground subject by green light reflected from the backing. It appears as a color tinge on edges.
+**Q6, C.** Color spill (or greenscreen spill) is the contamination of the foreground subject by green light reflected from the backing. It appears as a color tinge on edges.
 
-**Q7 — C.** The Advanced Spill Suppressor (introduced in AE CC 2014) is the preferred tool — it analyzes the background color to inform its desaturation of the spill, producing more naturalistic results than the basic Spill Suppressor.
+**Q7 C.** The Advanced Spill Suppressor (introduced in AE CC 2014) is the preferred tool it analyzes the background color to inform its desaturation of the spill, producing more naturalistic results than the basic Spill Suppressor.
 
-**Q8 — B.** Light wrap simulates the physical phenomenon where light from a bright background scatters around the edges of a foreground subject, blending them together. It is the primary technique for making a composite look photographic.
+**Q8, B.** Light wrap simulates the physical phenomenon where light from a bright background scatters around the edges of a foreground subject, blending them together. It is the primary technique for making a composite look photographic.
 
-**Q9 — B.** A difference matte requires a clean plate from the exact same camera position with the same lighting. If anything moved or changed, the difference calculation fails.
+**Q9, B.** A difference matte requires a clean plate from the exact same camera position with the same lighting. If anything moved or changed, the difference calculation fails.
 
-**Q10 — B.** Hair typically requires different Keylight settings (especially Screen Gain and Balance) than the body. Applying two Keylight instances to separate regions of the image, then combining the mattes, gives more precise control.
+**Q10, B.** Hair typically requires different Keylight settings (especially Screen Gain and Balance) than the body. Applying two Keylight instances to separate regions of the image, then combining the mattes, gives more precise control.
 
-**Q11 — B.** The glass's semi-transparency is physically accurate and desirable. The new background should show through the glass as it would through a real glass in front of a real background.
+**Q11, B.** The glass's semi-transparency is physically accurate and desirable. The new background should show through the glass as it would through a real glass in front of a real background.
 
-**Q12 — C.** Blue backing requires less light for even illumination in dark scenes, and blue spill is generally less objectionable than green spill in dark, nighttime color grades.
+**Q12, C.** Blue backing requires less light for even illumination in dark scenes, and blue spill is generally less objectionable than green spill in dark, nighttime color grades.
 
-**Q13 — B.** Screen Balance adjusts the ratio between the two non-key channels in the color difference keying calculation. Adjusting this can clean an uneven matte by biasing the calculation.
+**Q13, B.** Screen Balance adjusts the ratio between the two non-key channels in the color difference keying calculation. Adjusting this can clean an uneven matte by biasing the calculation.
 
-**Q14 — B.** Motion blur creates semi-transparent pixels. Clip Black/Clip White forces these to binary values, destroying the blur. The result is a hard, cut-out edge where the blur was.
+**Q14, B.** Motion blur creates semi-transparent pixels. Clip Black/Clip White forces these to binary values, destroying the blur. The result is a hard, cut-out edge where the blur was.
 
-**Q15 — C.** Rough → Refined → Fine. Each step builds on the previous. Attempting to fine-tune before the matte is approximately correct wastes time.
+**Q15, C.** Rough → Refined → Fine. Each step builds on the previous. Attempting to fine-tune before the matte is approximately correct wastes time.
 
-**Q16 — B.** The brightest areas of a greenscreen (hotspots) have different chroma characteristics than mid-tones. Sampling a hotspot biases the algorithm and may cause it to miss correctly exposed mid-tone areas of the backing.
+**Q16, B.** The brightest areas of a greenscreen (hotspots) have different chroma characteristics than mid-tones. Sampling a hotspot biases the algorithm and may cause it to miss correctly exposed mid-tone areas of the backing.
 
-**Q17 — B.** Keylight's Edge Colour Correction (and Foreground Colour Correction) specifically targets the color of semi-transparent edge pixels. This is the correct tool to warm or cool the subject's edge to match the background light.
+**Q17, B.** Keylight's Edge Colour Correction (and Foreground Colour Correction) specifically targets the color of semi-transparent edge pixels. This is the correct tool to warm or cool the subject's edge to match the background light.
 
-**Q18 — A.** Screen Pre-Blur blurs the image before the keying calculation. This smooths noisy footage and can produce a cleaner matte, but at the cost of fine edge detail (hair, thin strands).
+**Q18, A.** Screen Pre-Blur blurs the image before the keying calculation. This smooths noisy footage and can produce a cleaner matte, but at the cost of fine edge detail (hair, thin strands).
 
-**Q19 — C.** Clip White forces the matte to white and destroys edge detail. It is not the right tool for face transparency — the correct approaches are Screen Balance, Screen Gain, or re-sampling the Screen Colour. Clip White applied to a gray face will "fix" the transparency but destroy edges.
+**Q19 C.** Clip White forces the matte to white and destroys edge detail. It is not the right tool for face transparency the correct approaches are Screen Balance, Screen Gain, or re-sampling the Screen Colour. Clip White applied to a gray face will "fix" the transparency but destroy edges.
 
-**Q20 — C.** Keylight was developed in the 1990s by The Computer Film Company (CFC), a UK post house that later became part of Framestore. The Foundry acquired the technology.
+**Q20, C.** Keylight was developed in the 1990s by The Computer Film Company (CFC), a UK post house that later became part of Framestore. The Foundry acquired the technology.
 
-**Q21 — C.** Screen or Add blend mode is used for light wrap because these modes add the blurred background color to the edge areas of the subject, simulating scattered light.
+**Q21, C.** Screen or Add blend mode is used for light wrap because these modes add the blurred background color to the edge areas of the subject, simulating scattered light.
 
-**Q22 — B.** Floating blacks is a sensor artifact causing the dark areas to fluctuate in brightness between frames. This makes consistent matte generation difficult because the background values shift.
+**Q22, B.** Floating blacks is a sensor artifact causing the dark areas to fluctuate in brightness between frames. This makes consistent matte generation difficult because the background values shift.
 
-**Q23 — B.** A garbage matte is a rough mask drawn outside the subject to exclude irrelevant areas (lighting rigs, the edge of the greenscreen backing) from the keying calculation. This speeds processing and prevents false keys.
+**Q23, B.** A garbage matte is a rough mask drawn outside the subject to exclude irrelevant areas (lighting rigs, the edge of the greenscreen backing) from the keying calculation. This speeds processing and prevents false keys.
 
-**Q24 — A.** Blue wardrobe conflicts with blue screen — the algorithm cannot distinguish the wardrobe from the backing. Green screen is the correct choice when the subject wears blue.
+**Q24 A.** Blue wardrobe conflicts with blue screen the algorithm cannot distinguish the wardrobe from the backing. Green screen is the correct choice when the subject wears blue.

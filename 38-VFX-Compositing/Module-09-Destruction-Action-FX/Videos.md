@@ -15,7 +15,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">Explosion VFX in After Effects: Layered Fireball, Smoke, and Debris</div>
     <div class="vg-card-meta">Video Copilot · ~30 min</div>
-    <div class="vg-card-desc">Andrew Kramer's foundational explosion tutorial — the seven-layer approach, timing, and blend modes for each element.</div>
+    <div class="vg-card-desc">Andrew Kramer's foundational explosion tutorial, the seven-layer approach, timing, and blend modes for each element.</div>
   </div>
 </a>
 
@@ -24,7 +24,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">Muzzle Flash VFX in After Effects: Professional Tutorial</div>
     <div class="vg-card-meta">Film Riot · ~16 min</div>
-    <div class="vg-card-desc">Creating realistic muzzle flashes — tracked to the weapon position, with environmental light interaction and smoke elements.</div>
+    <div class="vg-card-desc">Creating realistic muzzle flashes, tracked to the weapon position, with environmental light interaction and smoke elements.</div>
   </div>
 </a>
 
@@ -33,7 +33,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">Lens Flares in After Effects: Optical Flares Tutorial</div>
     <div class="vg-card-meta">Video Copilot · ~20 min</div>
-    <div class="vg-card-desc">Using Video Copilot Optical Flares to create photorealistic lens flares — tracking, occlusion, and integration with live footage.</div>
+    <div class="vg-card-desc">Using Video Copilot Optical Flares to create photorealistic lens flares, tracking, occlusion, and integration with live footage.</div>
   </div>
 </a>
 
@@ -42,7 +42,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Destruction Simulation: Rigid Body and Cell Fracture</div>
     <div class="vg-card-meta">Blender tutorial channel · ~25 min</div>
-    <div class="vg-card-desc">Complete workflow — modeling, Cell Fracture add-on, rigid body physics simulation, and rendering EXR passes for compositing.</div>
+    <div class="vg-card-desc">Complete workflow, modeling, Cell Fracture add-on, rigid body physics simulation, and rendering EXR passes for compositing.</div>
   </div>
 </a>
 
@@ -59,7 +59,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">Chromatic Aberration in After Effects: Simulating Real Lens Distortion</div>
     <div class="vg-card-meta">Surfaced Studio · ~11 min</div>
-    <div class="vg-card-desc">How to simulate chromatic aberration — channel scaling, corner falloff, and subtle application for photographic composites.</div>
+    <div class="vg-card-desc">How to simulate chromatic aberration, channel scaling, corner falloff, and subtle application for photographic composites.</div>
   </div>
 </a>
 
@@ -68,7 +68,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">Film Grain in After Effects: Organic Noise for Compositing</div>
     <div class="vg-card-meta">Surfaced Studio · ~10 min</div>
-    <div class="vg-card-desc">Adding organic film grain to composites — using AE's Add Grain effect and real grain plates on an Adjustment Layer.</div>
+    <div class="vg-card-desc">Adding organic film grain to composites, using AE's Add Grain effect and real grain plates on an Adjustment Layer.</div>
   </div>
 </a>
 
@@ -86,7 +86,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Explosions in Action Movies</div>
     <div class="vg-card-meta">Corridor Crew · ~24 min</div>
-    <div class="vg-card-desc">Working VFX artists break down real explosion VFX — what looks photographic, what looks wrong, and why the layering matters.</div>
+    <div class="vg-card-desc">Working VFX artists break down real explosion VFX, what looks photographic, what looks wrong, and why the layering matters.</div>
   </div>
 </a>
 
@@ -112,7 +112,7 @@ title: "Module 9 Videos: Destruction & Action FX"
   <div class="vg-card-body">
     <div class="vg-card-title">Explosion Shockwave Ring Effect in After Effects</div>
     <div class="vg-card-meta">Video Copilot · ~12 min</div>
-    <div class="vg-card-desc">Creating the atmospheric pressure distortion ring that travels outward from an explosion — the subtle layer most beginners miss.</div>
+    <div class="vg-card-desc">Creating the atmospheric pressure distortion ring that travels outward from an explosion, the subtle layer most beginners miss.</div>
   </div>
 </a>
 

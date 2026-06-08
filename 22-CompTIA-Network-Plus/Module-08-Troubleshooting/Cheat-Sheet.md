@@ -4,7 +4,7 @@
 
 ---
 
-## 🎯 The 7-Step CompTIA Methodology — MEMORIZE
+## 🎯 The 7-Step CompTIA Methodology, MEMORIZE
 
 | # | Step |
 |---|------|
@@ -145,7 +145,7 @@ Often **wrong**:
 - Cat6 10 GbE = **55 m** (not 100 m)
 - Console + OOB save you when data path is broken
 - Verify (6) + Document (7) are non-negotiable
-- Domain 5 weight: **24%** of N10-009 — biggest single domain
+- Domain 5 weight: **24%** of N10-009, biggest single domain
 
 ---
 
@@ -156,9 +156,9 @@ Cover the answers and recite:
 1. 7 methodology steps in order? ___
 2. What does 169.254.x.x mean? ___
 3. Tool to locate copper cable fault by distance? ___
-4. Top-down vs bottom-up — when each? ___
+4. Top-down vs bottom-up, when each? ___
 5. Two recovery paths when you've broken the data plane? ___
 
 ---
 
-➡️ Now take the [Practice Exams](../../../Practice-Exams/) — start with [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md).
+➡️ Now take the [Practice Exams](../../../Practice-Exams/), start with [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md).

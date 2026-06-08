@@ -166,10 +166,10 @@ Usually **wrong**:
 
 ## ✏️ Quick Self-Check
 
-1. PS 5.1 vs 7 — three differences? ___
+1. PS 5.1 vs 7, three differences? ___
 2. WinRM ports? ___
-3. JEA — three components? ___
-4. DSC Push vs Pull — when each? ___
+3. JEA, three components? ___
+4. DSC Push vs Pull, when each? ___
 5. What replaced Azure Automation DSC? ___
 6. Automanage profiles? ___
 

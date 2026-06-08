@@ -1,8 +1,8 @@
-# 🧪 Final Mock Exam — AZ-104 (Real Exam Conditions)
+# 🧪 Final Mock Exam, AZ-104 (Real Exam Conditions)
 
-> **Conditions:** Set a 100-minute timer. 55 questions. Treat this like the real thing — no notes, no Google, single sitting.
+> **Conditions:** Set a 100-minute timer. 55 questions. Treat this like the real thing, no notes, no Google, single sitting.
 > **Pass mark:** 39/55 (≈ 70%, matching the real exam's 700/1000)
-> Mix of MCQ, Yes/No groups, and task-ordering — mirrors the real AZ-104 exam composition.
+> Mix of MCQ, Yes/No groups, and task-ordering, mirrors the real AZ-104 exam composition.
 > Take this 2–3 days before your scheduled exam.
 
 ---
@@ -24,7 +24,7 @@ D. Unlimited
 ### 3. Tags applied to a Resource Group are:
 A. Automatically inherited by child resources
 B. Inherited only at create time
-C. NOT inherited — use a "Modify" policy to push them
+C. NOT inherited, use a "Modify" policy to push them
 D. Inherited only for management groups
 
 ### 4. To restrict deployments to `eastus` + `westus2` across multiple subscriptions, apply the policy at the:
@@ -45,7 +45,7 @@ B. P1
 C. Office 365 E5
 D. P2
 
-### 7. **Yes/No** — RBAC & PIM.
+### 7. **Yes/No**, RBAC & PIM.
 
 **S1:** Contributor cannot assign roles.
 **S2:** PIM eligible assignments allow time-bound activation with MFA and optional approval.
@@ -68,7 +68,7 @@ B. LRS
 C. GRS
 D. GZRS
 
-### 10. Geo-zone-redundant storage (GZRS) gives you 6 copies — distributed as:
+### 10. Geo-zone-redundant storage (GZRS) gives you 6 copies, distributed as:
 A. 6 in 6 regions
 B. 3 across AZs in primary + 3 LRS in paired region
 C. 6 in one DC
@@ -117,7 +117,7 @@ B. A linked Private DNS Zone with auto-registration of the PE's IP
 C. A public DNS record only
 D. A Standard Load Balancer
 
-### 17. **Yes/No** — Azure Files.
+### 17. **Yes/No**, Azure Files.
 
 **S1:** NFS 4.1 shares require Premium FileStorage account.
 **S2:** Premium file shares bill for provisioned size; standard tiers bill for used size.
@@ -143,7 +143,7 @@ D. 99.9% / 99.95% / 99.99%
 ### 20. An Availability Set must be specified:
 A. After VM is created
 B. Only via PowerShell
-C. At VM creation — cannot be added later
+C. At VM creation, cannot be added later
 D. After deallocation
 
 ### 21. Premium SSD v2 and Ultra Disks can be used as:
@@ -158,7 +158,7 @@ B. 3 / 20
 C. 5 / 5
 D. Unlimited
 
-### 23. **Yes/No** — Compute.
+### 23. **Yes/No**, Compute.
 
 **S1:** VMSS Flexible orchestration supports mixed VM sizes and zone integration.
 **S2:** Azure Disk Encryption (ADE) operates at the OS level (BitLocker / dm-crypt).
@@ -224,9 +224,9 @@ C. 3
 D. 7
 
 ### 33. VNet peering is:
-A. Transitive — A↔B and B↔C means A↔C
+A. Transitive, A↔B and B↔C means A↔C
 B. Always cross-region
-C. NOT transitive — need a hub firewall/NVA + UDRs to transit
+C. NOT transitive, need a hub firewall/NVA + UDRs to transit
 D. Limited to 4 peers per VNet
 
 ### 34. **Order these steps** to create a working private endpoint for a storage account.
@@ -265,7 +265,7 @@ B. AllowAzureLoadBalancerInBound
 C. AllowInternetInBound
 D. DenyAllInBound
 
-### 39. **Yes/No** — NSG mechanics.
+### 39. **Yes/No**, NSG mechanics.
 
 **S1:** NSGs are stateful.
 **S2:** Subnet NSG + NIC NSG both apply; deny in either drops the packet.
@@ -319,7 +319,7 @@ B. GRS + CRR feature enabled
 C. ZRS
 D. RA-GZRS only
 
-### 46. Azure Site Recovery vs Backup — pick the one with continuous replication for region DR:
+### 46. Azure Site Recovery vs Backup, pick the one with continuous replication for region DR:
 A. Site Recovery
 B. Backup
 C. Both
@@ -331,7 +331,7 @@ B. Discover → Assess → Migrate
 C. Scan → Move → Confirm
 D. Setup → Replicate → Validate
 
-### 48. **Yes/No** — Backup.
+### 48. **Yes/No**, Backup.
 
 **S1:** Soft delete is on by default and retains deleted recovery points for ≥14 days.
 **S2:** GRS vault unlocks Cross-Region Restore (CRR) when enabled.
@@ -372,7 +372,7 @@ B. Deny
 C. DeployIfNotExists
 D. Append
 
-### 54. **Yes/No** — Hub-Spoke.
+### 54. **Yes/No**, Hub-Spoke.
 
 **S1:** Spoke-to-spoke traffic flows through the hub (via Firewall + UDRs).
 **S2:** Peered VNets must have non-overlapping CIDRs.
@@ -441,8 +441,8 @@ D. 1 → 2 → 3 → 4 → 5 → 6
 
 - **Read the case studies CAREFULLY.** The 1–2 case studies hide the requirements in the scenario text (regulated, must be zone-redundant, lowest cost, etc.).
 - **Drag-drop task ordering:** if you're unsure, do the prerequisite steps first (network, identity, then data).
-- **Yes/No groups:** each statement is independent — don't anchor on the first one.
-- **Mark for review** anything you're not 95% sure about — circle back after finishing.
+- **Yes/No groups:** each statement is independent, don't anchor on the first one.
+- **Mark for review** anything you're not 95% sure about, circle back after finishing.
 - **Watch the clock**: ~110 sec/question is fine for MCQs; case studies eat 5+ minutes.
 
 ---
@@ -521,7 +521,7 @@ D. 1 → 2 → 3 → 4 → 5 → 6
 
 **Q32. Answer: B.** *Why B.* 5 reserved IPs (.0/.1/.2/.3/.255). *Wrong options.* **A/C/D**: wrong count. *Takeaway.* 5 IPs reserved per subnet.
 
-**Q33. Answer: C.** *Why C.* Peering non-transitive — hub firewall + UDRs to transit. *Wrong options.* **A/B**: wrong. **D**: peers per VNet are high. *Takeaway.* Non-transitive is THE peering fact.
+**Q33. Answer: C.** *Why C.* Peering non-transitive, hub firewall + UDRs to transit. *Wrong options.* **A/B**: wrong. **D**: peers per VNet are high. *Takeaway.* Non-transitive is THE peering fact.
 
 **Q34. Answer: C.** *Why C.* DNS zone → VNet link → PE → zone group. *Wrong options.* **A**: PE before DNS link leaves a public window. **B**: out of order. **D**: out of order. *Takeaway.* DNS first, then PE.
 

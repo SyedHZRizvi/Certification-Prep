@@ -235,7 +235,7 @@ Which is the most common incorrect Graph Editor behavior beginners produce with 
 A. All curves become perfectly linear
 B. Constant/stepped animation instead of smooth
 C. Cycles modifier stops working
-D. **Overshooting — the Auto handle algorithm creates curves that go beyond the target value**
+D. **Overshooting, the Auto handle algorithm creates curves that go beyond the target value**
 
 ---
 
@@ -252,28 +252,28 @@ D. Reduces the amplitude of each successive cycle
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  B — I key inserts keyframes in the 3D viewport
-Q2.  C — S scales keyframe timing in the Dope Sheet
-Q3.  D — Flat handles = ease in/out; value decelerates at that keyframe
-Q4.  C — Constant/Stepped = blocking pass (no inbetween blur)
-Q5.  C — Cycles modifier repeats F-Curve pattern infinitely
-Q6.  D — Push Down converts active Action to an NLA strip
-Q7.  C — Fake User prevents orphan data deletion on save
-Q8.  D — Auto Keying inserts keyframes on any transform change
-Q9.  C — Horizontal axis in Graph Editor = time (frame number)
-Q10. B — Aligned handle type = symmetrical, smooth tangent
-Q11. C — Charge gallop = 12-frame cycle (0.5s at 24fps)
-Q12. C — X or Delete removes keyframes in the Dope Sheet
-Q13. C — Blocking (stepped) → director approval → spline polish
-Q14. C — Action = named collection of F-Curves for one performance
-Q15. C — Repeat loops the NLA strip end-to-end N times
-Q16. D — Constant = instant jump at keyframe
-Q17. C — T opens Interpolation Mode menu in Graph Editor
-Q18. C — Frame 1 and Frame 25 identical (25 total = 24 played, 1 bridge)
-Q19. D — Action Editor is a context of the Dope Sheet
-Q20. C — Overshoot = curve goes beyond target value before settling
-Q21. D — Animator's Survival Kit covers timing, weight, acting principles
-Q22. C — Shift+D duplicates selected keyframes
-Q23. D — Auto handles often cause overshoot on large value jumps
-Q24. C — Repeat with Offset offsets value by cycle total (enables forward locomotion)
+Q1.  B, I key inserts keyframes in the 3D viewport
+Q2.  C, S scales keyframe timing in the Dope Sheet
+Q3.  D, Flat handles = ease in/out; value decelerates at that keyframe
+Q4.  C, Constant/Stepped = blocking pass (no inbetween blur)
+Q5.  C, Cycles modifier repeats F-Curve pattern infinitely
+Q6.  D, Push Down converts active Action to an NLA strip
+Q7.  C, Fake User prevents orphan data deletion on save
+Q8.  D, Auto Keying inserts keyframes on any transform change
+Q9.  C, Horizontal axis in Graph Editor = time (frame number)
+Q10. B, Aligned handle type = symmetrical, smooth tangent
+Q11. C, Charge gallop = 12-frame cycle (0.5s at 24fps)
+Q12. C, X or Delete removes keyframes in the Dope Sheet
+Q13. C, Blocking (stepped) → director approval → spline polish
+Q14. C, Action = named collection of F-Curves for one performance
+Q15. C, Repeat loops the NLA strip end-to-end N times
+Q16. D, Constant = instant jump at keyframe
+Q17. C, T opens Interpolation Mode menu in Graph Editor
+Q18. C, Frame 1 and Frame 25 identical (25 total = 24 played, 1 bridge)
+Q19. D, Action Editor is a context of the Dope Sheet
+Q20. C, Overshoot = curve goes beyond target value before settling
+Q21. D, Animator's Survival Kit covers timing, weight, acting principles
+Q22. C, Shift+D duplicates selected keyframes
+Q23. D, Auto handles often cause overshoot on large value jumps
+Q24. C, Repeat with Offset offsets value by cycle total (enables forward locomotion)
 ```

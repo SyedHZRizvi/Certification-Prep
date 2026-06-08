@@ -1,7 +1,7 @@
 # 🏆 PMP Final Mock Exam (90 Questions, ~1.5 hr)
 
 > Take 1-2 days before real exam. 90 questions in 115 minutes (half-length simulation).
-> The real exam is 180 questions in 230 min — this trains your pace.
+> The real exam is 180 questions in 230 min, this trains your pace.
 
 ---
 
@@ -353,7 +353,7 @@ A. The Charter  B. Master plan + baselines  C. Schedule  D. Risk register
 
 ## Detailed answer rationales
 
-Per-question rationales — why the correct answer is correct, and why each distractor is wrong. Q numbers match the questions above.
+Per-question rationales, why the correct answer is correct, and why each distractor is wrong. Q numbers match the questions above.
 
 **Q1. Answer: B.** Project = "temporary, unique result" (PMI definition). A is operations; C is a program; D is operations/improvement.
 *Takeaway:* memorize PMI's exact definition.

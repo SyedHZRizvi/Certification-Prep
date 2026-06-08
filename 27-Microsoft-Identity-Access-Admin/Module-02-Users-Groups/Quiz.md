@@ -118,7 +118,7 @@ D. Per-app role scoping
 
 ---
 
-### Q15. **Yes/No** — Group types. *(Understand)*
+### Q15. **Yes/No**, Group types. *(Understand)*
 
 **S1:** A single group can be both Security and M365.
 **S2:** A dynamic-user group can also have manually assigned members.
@@ -163,7 +163,7 @@ D. M365 group rules don't support dynamic membership
 
 ---
 
-### Q20. **Yes/No** — Licenses & features. *(Understand)*
+### Q20. **Yes/No**, Licenses & features. *(Understand)*
 
 **S1:** Group-based licensing requires Entra ID P1.
 **S2:** Conditional Access is a prerequisite for Terms of Use.
@@ -214,7 +214,7 @@ D. Permanent immediately
 
 ---
 
-### Q25. **Yes/No** — B2B & directory. *(Evaluate)*
+### Q25. **Yes/No**, B2B & directory. *(Evaluate)*
 
 **S1:** Removing a B2B guest and re-inviting them creates a new object with new IDs.
 **S2:** Group-based licensing can result in users not getting a license if the SKU runs out.

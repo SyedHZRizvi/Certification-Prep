@@ -110,8 +110,8 @@ y = W · x + (B · A) · x · (alpha / r)
 
 - **Quantity** floors: 100–1K (style), 1K–10K (domain), 10K+ (new capability)
 - **LIMA**: 1K high-quality > 100K low-quality
-- **Disjoint** train/eval — leakage kills measurement
-- **Diversity** + **difficulty distribution** — not just easy cases
+- **Disjoint** train/eval, leakage kills measurement
+- **Diversity** + **difficulty distribution**, not just easy cases
 - **Consistency** of the desired behavior across examples
 
 ---

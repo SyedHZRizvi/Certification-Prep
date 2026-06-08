@@ -4,7 +4,7 @@
 
 ---
 
-## 🌐 OSI 7 Layers — MEMORIZE
+## 🌐 OSI 7 Layers, MEMORIZE
 
 | # | Layer | PDU | Key idea | Examples |
 |---|-------|-----|----------|----------|
@@ -54,17 +54,17 @@ HTTP/HTTPS data            ← L7 Application
 | Type | Recipients | IPv4 | IPv6 |
 |------|-----------|------|------|
 | Unicast | One | Specific IP | Specific IP |
-| Broadcast | All on segment | 255.255.255.255 / x.x.x.255 | **None — replaced by multicast** |
+| Broadcast | All on segment | 255.255.255.255 / x.x.x.255 | **None, replaced by multicast** |
 | Multicast | A group | 224.0.0.0/4 | FF00::/8 |
 | Anycast | Nearest of many | Routing trick | Native |
 
 ---
 
-## 🕸️ Topologies — One-Liner Each
+## 🕸️ Topologies, One-Liner Each
 
 | Topology | One-liner |
 |----------|-----------|
-| Bus | Single shared cable — one break = all down |
+| Bus | Single shared cable, one break = all down |
 | Star | All nodes → central switch (modern LANs) |
 | Ring | Loop; one break = all down (unless dual ring) |
 | Full mesh | Every node → every node; N(N−1)/2 links |

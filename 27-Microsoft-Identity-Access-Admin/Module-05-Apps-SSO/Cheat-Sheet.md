@@ -8,7 +8,7 @@
 
 | | **App Registration** | **Enterprise App** |
 |---|---------------------|-------------------|
-| What | The recipe / manifest / definition | The dish — local instance / service principal |
+| What | The recipe / manifest / definition | The dish, local instance / service principal |
 | Lives in | Home tenant only | Every tenant that uses the app |
 | Contains | Redirect URIs, secrets, API perms, app roles | User assignments, SSO config, CA targeting |
 | Mental model | "Application object" | "Service principal" |
@@ -41,8 +41,8 @@
 
 ## 🏛️ Gallery vs Custom
 
-- **Gallery** (4,000+ pre-integrated) — pick first
-- **Custom non-gallery** — build SAML/OIDC manually
+- **Gallery** (4,000+ pre-integrated), pick first
+- **Custom non-gallery**, build SAML/OIDC manually
 
 ---
 
@@ -60,11 +60,11 @@
 
 | Setting | Behavior |
 |---------|----------|
-| Do not allow user consent | Safest — all apps need admin consent |
+| Do not allow user consent | Safest, all apps need admin consent |
 | Allow user consent for verified publishers, selected perms | 2022+ default |
 | Allow user consent for apps (legacy) | Old, dangerous |
 
-**Pair with Admin consent workflow** — users request → reviewers (named users/groups) approve in portal.
+**Pair with Admin consent workflow**, users request → reviewers (named users/groups) approve in portal.
 
 ---
 
@@ -84,7 +84,7 @@
 - Declared in App Registration manifest
 - Assigned in Enterprise App → Users and groups
 - Surface in token as `roles: ["Manager"]` claim
-- Per-app — NOT Entra roles
+- Per-app, NOT Entra roles
 
 ---
 
@@ -100,7 +100,7 @@
 
 | Flow | Status |
 |------|--------|
-| Authorization Code + PKCE | ✅ MODERN — web/SPA/mobile |
+| Authorization Code + PKCE | ✅ MODERN, web/SPA/mobile |
 | Client Credentials | ✅ Daemon, app permissions |
 | Device Code | ✅ Browserless devices |
 | On-Behalf-Of (OBO) | ✅ Middle-tier APIs |

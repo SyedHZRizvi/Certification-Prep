@@ -26,17 +26,17 @@
 
 ---
 
-## 🍪 Death of 3P Cookie — Timeline
+## 🍪 Death of 3P Cookie, Timeline
 
 ```
-2017 — Safari ITP launches
-2018 — GDPR
-2019 — Firefox ETP
-2020 — CCPA + Google Privacy Sandbox announced
-2021 — iOS 14.5 ATT (opt-in 25-35%)
-2023 — CPRA
-2024 — UA shutdown, GA4 only
-2026 — 3P cookie functionally dead in Safari/Firefox;
+2017, Safari ITP launches
+2018, GDPR
+2019, Firefox ETP
+2020, CCPA + Google Privacy Sandbox announced
+2021, iOS 14.5 ATT (opt-in 25-35%)
+2023, CPRA
+2024, UA shutdown, GA4 only
+2026, 3P cookie functionally dead in Safari/Firefox;
        unreliable in Chrome under Privacy Sandbox
 ```
 
@@ -122,7 +122,7 @@ Browser → YOUR collection domain → sGTM container →
 1. The 5 CDP Institute properties? ___
 2. The 4 architectural patterns? ___
 3. Realistic server-side recovery range? ___
-4. Deterministic vs probabilistic — which is 2026 default? ___
+4. Deterministic vs probabilistic, which is 2026 default? ___
 5. The 4-layer first-party stack? ___
 
 ---

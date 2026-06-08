@@ -185,9 +185,9 @@ D. Custom Skill
 ---
 
 ### Q22. A team wants to call Face attributes (Mask, Head Pose) on uploaded user photos. They DO NOT need to identify anyone. Do they need Limited Access? *(Understand)*
-A. Yes — all Face calls require Limited Access
-B. No — detection + non-identifying attributes are generally available
-C. Yes — Mask requires Limited Access
+A. Yes, all Face calls require Limited Access
+B. No, detection + non-identifying attributes are generally available
+C. Yes, Mask requires Limited Access
 D. Only in EU
 
 ---
@@ -234,7 +234,7 @@ D. Edge models are always more accurate
 
 ### Q28. **Design task.** You're building a workplace-safety vision pipeline that must flag missing PPE (helmet, safety vest) on construction sites in real time, run in EU jurisdictions, and remain defensible under the EU AI Act (2024) "high-risk biometric" categorisation. Which design below best meets all constraints? *(Create)*
 A. Face Identification + Custom Vision classifier + cloud inference + no documentation
-B. Custom Vision **object detection** (Compact, ONNX-exported to edge) for PPE classes only — **no biometric / face identification**; precision/recall + mAP measured on a holdout set; documented Impact Assessment per Microsoft RAI Standard v2; per-site DPIA per GDPR; Transparency notice posted on site signage; human-in-the-loop review for all flagged events
+B. Custom Vision **object detection** (Compact, ONNX-exported to edge) for PPE classes only, **no biometric / face identification**; precision/recall + mAP measured on a holdout set; documented Impact Assessment per Microsoft RAI Standard v2; per-site DPIA per GDPR; Transparency notice posted on site signage; human-in-the-loop review for all flagged events
 C. Use Image Analysis 4.0 PEOPLE feature with FACE attributes
 D. Buy a third-party AI service that doesn't disclose its model
 
@@ -246,7 +246,7 @@ D. Buy a third-party AI service that doesn't disclose its model
 For raw text from a single image, Image Analysis 4.0's READ feature is the right tool. Document Intelligence is for *structured* extraction (invoices, receipts with vendor/total/date).
 
 ### Q2: **B. One call with a list of features**
-A 4.0 hallmark — pass `visual_features=[…]` and get everything in one response.
+A 4.0 hallmark, pass `visual_features=[…]` and get everything in one response.
 
 ### Q3: **B. DENSE_CAPTIONS**
 Returns multiple region-level captions. CAPTION is the single image-level one.
@@ -270,13 +270,13 @@ Only Compact domains can be exported (ONNX, TensorFlow, CoreML, Docker).
 The standard object-detection metric. Classification uses Precision/Recall/F1.
 
 ### Q10: **C. Identification (1-to-N)**
-Plus Verification and certain higher-risk attributes — these need Limited Access. Basic detection (rectangles) is GA.
+Plus Verification and certain higher-risk attributes, these need Limited Access. Basic detection (rectangles) is GA.
 
 ### Q11: **B. Emotion, Age, Gender** (and Smile, Facial Hair, Hair, Makeup)
 Retired in 2022. Picking any of these on the exam is a wrong answer.
 
 ### Q12: **B. Create person group → Add persons + faces → Train → Identify**
-Don't forget the training step — many test takers skip it.
+Don't forget the training step, many test takers skip it.
 
 ### Q13: **C. DETECTION_03**
 Newest detection model. Recognition model 04 is current for recognition.
@@ -305,7 +305,7 @@ Supported exports include ONNX, TensorFlow (SavedModel), CoreML, Docker (Linux/W
 ### Q21: **D. Custom Skill**
 Custom Skill is an Azure AI Search concept (Module 5), not Video Indexer. Indexer customs: Language, Brand, Person, Logo.
 
-### Q22: **B. No — detection + non-identifying attributes are GA**
+### Q22: **B. No, detection + non-identifying attributes are GA**
 You only hit Limited Access when you identify, verify, or use specific attributes Microsoft has gated.
 
 ### Q23: **B. 8-point bounding polygons**
@@ -315,7 +315,7 @@ Polygons handle text on skewed/curved surfaces better than rectangles.
 Improves the speech model's vocabulary for your domain.
 
 ### Q25: **B. The `publish_iteration` call, passing the prediction resource ID**
-Training alone doesn't expose the model — you publish to a Prediction resource.
+Training alone doesn't expose the model, you publish to a Prediction resource.
 
 ### Q26: **C. `blur`**
 Image quality attributes (blur, exposure, noise, occlusion) are still GA.

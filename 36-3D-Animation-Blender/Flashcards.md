@@ -222,7 +222,7 @@
 })();
 </script>
 
-# 🃏 3D Animation with Blender — Master Flashcards
+# 🃏 3D Animation with Blender, Master Flashcards
 
 > **How to use:** Click a card to flip it. Mark "Got it" to skip mastered cards in future sessions. Use the section dropdown to focus on one module at a time.
 
@@ -243,7 +243,7 @@
 **A:** Constrains the Grab transform to the object's local X axis (not world X).
 
 **Q:** How do you frame a selected object in the 3D Viewport?
-**A:** Numpad . (period/dot) — frames the selected object in view.
+**A:** Numpad . (period/dot), frames the selected object in view.
 
 **Q:** What does the eye icon next to an object in the Outliner control?
 **A:** Viewport visibility (whether the object is visible in the 3D viewport).
@@ -258,7 +258,7 @@
 **A:** Sprite Fright (2021), per the Blender Institute's production blog.
 
 **Q:** What does Ctrl+A do in Object Mode?
-**A:** Opens the Apply menu — most commonly used to Apply Scale (and other transforms).
+**A:** Opens the Apply menu, most commonly used to Apply Scale (and other transforms).
 
 **Q:** What is the keyboard shortcut to search for any Blender operator?
 **A:** F3 (opens the Search menu in Blender 4.x).
@@ -283,7 +283,7 @@
 **A:** 3 concentric loops. Shoulder needs 4–5 due to 3-axis rotation.
 
 **Q:** What does Proportional Editing (O key) do?
-**A:** Applies transforms with a smooth falloff over a radius of influence — creates organic, sculpt-like results without leaving Edit Mode.
+**A:** Applies transforms with a smooth falloff over a radius of influence, creates organic, sculpt-like results without leaving Edit Mode.
 
 **Q:** The Sprite Fright character Ellie had approximately how many polygons in her base mesh?
 **A:** ~4,800 polygons (before subdivision).
@@ -292,7 +292,7 @@
 **A:** Ctrl+Alt+Click on an edge.
 
 **Q:** What does Shift+E do on selected edges in Edit Mode?
-**A:** Sets the crease value — higher crease = sharper edge under Subdivision Surface.
+**A:** Sets the crease value, higher crease = sharper edge under Subdivision Surface.
 
 **Q:** What is the correct production workflow order for a character base mesh?
 **A:** Block-out → topology refinement (add edge loops) → apply Subdivision Surface modifier for render.
@@ -305,13 +305,13 @@
 **A:** 0 (dielectric: plastic, skin, wood) or 1 (conductor: iron, gold, copper). Values between 0.1 and 0.9 are not physically based.
 
 **Q:** What Color Space must a Normal Map texture be set to in Blender's Image Texture node?
-**A:** Non-Color — prevents the color space remapping that would distort the normal vectors.
+**A:** Non-Color, prevents the color space remapping that would distort the normal vectors.
 
 **Q:** What does the Roughness parameter at 0 produce in the Principled BSDF?
 **A:** A mirror-smooth surface (perfectly tight specular highlight).
 
 **Q:** Where should UV seams be placed on a humanoid character?
-**A:** At areas least visible to the camera — under arms, inside legs, behind ears, under the chin.
+**A:** At areas least visible to the camera, under arms, inside legs, behind ears, under the chin.
 
 **Q:** What is the keyboard shortcut to add a node in the Shader Editor?
 **A:** Shift+A.
@@ -326,10 +326,10 @@
 **A:** The Mitchells vs. the Machines (2021).
 
 **Q:** What are Quixel Megascans licensed as, enabling their free use in commercial productions?
-**A:** CC0 (Creative Commons Zero) — free for all uses via Fab.com.
+**A:** CC0 (Creative Commons Zero), free for all uses via Fab.com.
 
 **Q:** What PBR workflow does Blender's Principled BSDF use?
-**A:** Metallic/Roughness (the Disney PBR standard — same as Unreal Engine, Unity's HDRP, Substance Painter default).
+**A:** Metallic/Roughness (the Disney PBR standard, same as Unreal Engine, Unity's HDRP, Substance Painter default).
 
 ---
 
@@ -339,7 +339,7 @@
 **A:** 16:1 or more (fill at 6% or less of key intensity).
 
 **Q:** What is unique about the Sun light type in Blender?
-**A:** Its position in the viewport is completely irrelevant — only its rotation determines shadow direction.
+**A:** Its position in the viewport is completely irrelevant, only its rotation determines shadow direction.
 
 **Q:** What is the color temperature of candlelight?
 **A:** ~1,800K (very warm orange).
@@ -351,7 +351,7 @@
 **A:** The overall intensity/brightness of the environment lighting.
 
 **Q:** What is the best free CC0 HDRI source mentioned in this course?
-**A:** Poly Haven (polyhaven.com) — CC0 HDRIs up to 16K resolution.
+**A:** Poly Haven (polyhaven.com), CC0 HDRIs up to 16K resolution.
 
 **Q:** How do you rotate the HDRI environment in Blender's World Shader?
 **A:** Add a Mapping node (connected to Texture Coordinate set to Generated) before the Environment Texture node. Rotation Z rotates the HDRI heading.
@@ -360,10 +360,10 @@
 **A:** 12–18 light objects per average shot.
 
 **Q:** The Sprite Fright team described their lighting philosophy in one phrase. What is it?
-**A:** "Every light has a reason" — every light is motivated by something visible or implied in the scene.
+**A:** "Every light has a reason", every light is motivated by something visible or implied in the scene.
 
 **Q:** For a comedy/family animation, what key-to-fill ratio is recommended?
-**A:** 2:1 to 3:1 (fill at 33–50% of key intensity — low contrast, character fully lit and readable).
+**A:** 2:1 to 3:1 (fill at 33–50% of key intensity, low contrast, character fully lit and readable).
 
 ---
 
@@ -397,7 +397,7 @@
 **A:** Select mesh → Shift+select armature → Ctrl+P → Armature Deform with Automatic Weights.
 
 **Q:** Why is IK preferred for foot-planting?
-**A:** IK moves the end effector (the foot controller) while the chain solves automatically — the foot stays planted on the ground as the body moves over it.
+**A:** IK moves the end effector (the foot controller) while the chain solves automatically, the foot stays planted on the ground as the body moves over it.
 
 ---
 
@@ -413,13 +413,13 @@
 **A:** Forces all bone weight values for any vertex to always sum to exactly 1.0. ALWAYS enable this.
 
 **Q:** What is the "skin bag" problem?
-**A:** The armpit or hip area collapses into a deflated, messy shape when a limb is raised — caused by incorrect weight distribution between nearby bones.
+**A:** The armpit or hip area collapses into a deflated, messy shape when a limb is raised, caused by incorrect weight distribution between nearby bones.
 
 **Q:** What is the Basis shape key?
-**A:** The neutral, rest-pose geometry of the mesh — the reference all other shape keys are applied relative to.
+**A:** The neutral, rest-pose geometry of the mesh, the reference all other shape keys are applied relative to.
 
 **Q:** Why should shape keys be designed as independent expressions?
-**A:** Because shape keys are additive — multiple active shape keys fight each other. A Smile and a Frown both at 0.8 produce unpredictable results.
+**A:** Because shape keys are additive, multiple active shape keys fight each other. A Smile and a Frown both at 0.8 produce unpredictable results.
 
 **Q:** How are shape keys driven from bones in production?
 **A:** Via Blender's Driver system: right-click the shape key value → Add Driver → link to bone rotation channel → map input range.
@@ -428,10 +428,10 @@
 **A:** 2–4 days per character, including corrective shape keys and driver setup.
 
 **Q:** What tool in Blender allows copying weight groups from the body mesh to a clothing mesh?
-**A:** The Data Transfer modifier (Physics not required — it's in the modifier stack).
+**A:** The Data Transfer modifier (Physics not required, it's in the modifier stack).
 
 **Q:** What is the minimum set of facial shape keys for basic character expression?
-**A:** Blink.L, Blink.R, Smile, Mouth.Open — the four basics that cover most dialogue and reaction performances.
+**A:** Blink.L, Blink.R, Smile, Mouth.Open, the four basics that cover most dialogue and reaction performances.
 
 ---
 
@@ -441,16 +441,16 @@
 **A:** I (opens the Insert Keyframe menu).
 
 **Q:** What does pressing S on selected keyframes in the Dope Sheet do?
-**A:** Scales the timing — stretches or compresses the spacing between selected keyframes.
+**A:** Scales the timing, stretches or compresses the spacing between selected keyframes.
 
 **Q:** What does a flat horizontal handle at a keyframe in the Graph Editor indicate?
-**A:** Ease-in/out — the animated value decelerates to a stop at that keyframe (natural physics behavior).
+**A:** Ease-in/out, the animated value decelerates to a stop at that keyframe (natural physics behavior).
 
 **Q:** What is Constant (Stepped) interpolation used for?
-**A:** Blocking passes — holds the value at each keyframe until the next, allowing timing to be judged on key poses alone.
+**A:** Blocking passes, holds the value at each keyframe until the next, allowing timing to be judged on key poses alone.
 
 **Q:** What does the Cycles modifier in the Graph Editor do?
-**A:** Extends an F-Curve infinitely by repeating its pattern — used for seamless looping animations.
+**A:** Extends an F-Curve infinitely by repeating its pattern, used for seamless looping animations.
 
 **Q:** What is the industry-standard animation production workflow order?
 **A:** Stepped/Constant blocking → director approval → convert to Bezier spline → spline polish.
@@ -475,10 +475,10 @@
 **A:** Active = governed by physics (falls, bounces, collides). Passive = fixed collider that other Active objects bounce off without moving.
 
 **Q:** What Collision Shape is recommended for most solid props in a rigid body simulation?
-**A:** Convex Hull — approximates the convex envelope; faster than Mesh but accurate for most solid objects.
+**A:** Convex Hull, approximates the convex envelope; faster than Mesh but accurate for most solid objects.
 
 **Q:** What does the Pinning vertex group in cloth simulation control?
-**A:** The vertices that do not move in the simulation — the attachment points that hold the cloth to the character.
+**A:** The vertices that do not move in the simulation, the attachment points that hold the cloth to the character.
 
 **Q:** What causes cloth simulations to explode or produce spikes?
 **A:** Bad mesh topology: n-gons, very long thin quads, or non-manifold edges.
@@ -490,13 +490,13 @@
 **A:** OpenVDB (.vdb).
 
 **Q:** Why must simulations always be baked before rendering?
-**A:** Unbaked simulations recalculate from frame 1 for every render call — causing inconsistent, wrong results especially in distributed rendering.
+**A:** Unbaked simulations recalculate from frame 1 for every render call, causing inconsistent, wrong results especially in distributed rendering.
 
 **Q:** Which Sony Animation film used a hybrid keyframe-trigger → physics approach for robot debris, referenced in this course?
 **A:** The Mitchells vs. the Machines (2021).
 
 **Q:** What new hair system did Blender 4.0 introduce?
-**A:** Hair Curves objects with Geometry Nodes-based grooming — replacing the older Particle Hair system for new projects.
+**A:** Hair Curves objects with Geometry Nodes-based grooming, replacing the older Particle Hair system for new projects.
 
 **Q:** What does the Cloth Self Collision option prevent?
 **A:** The cloth mesh from passing through itself (intersecting its own geometry).
@@ -506,10 +506,10 @@
 ## MODULE 9: RENDERING & OUTPUT
 
 **Q:** What rendering algorithm does Cycles use?
-**A:** Path tracing — physically accurate light simulation including global illumination, caustics, and subsurface scattering.
+**A:** Path tracing, physically accurate light simulation including global illumination, caustics, and subsurface scattering.
 
 **Q:** What is EEVEE's primary limitation compared to Cycles?
-**A:** It approximates lighting rather than physically simulating it — less accurate shadows, indirect light, and subsurface scattering.
+**A:** It approximates lighting rather than physically simulating it, less accurate shadows, indirect light, and subsurface scattering.
 
 **Q:** Which denoiser requires an NVIDIA RTX GPU?
 **A:** OptiX (NVIDIA's AI denoiser using Tensor Cores). CPU alternative: OpenImageDenoise (Intel OIDN).
@@ -521,13 +521,13 @@
 **A:** All enabled render passes (Combined, Diffuse, AO, Shadow, Depth, Cryptomatte, etc.) in a single .exr file per frame.
 
 **Q:** What does the Depth (Z) render pass contain?
-**A:** The per-pixel distance from the camera to the nearest surface — used for depth-of-field blur in compositing.
+**A:** The per-pixel distance from the camera to the nearest surface, used for depth-of-field blur in compositing.
 
 **Q:** What is Cryptomatte used for in compositing?
-**A:** Generating per-object masks — click on an object in the Cryptomatte pass to isolate it for independent color grading.
+**A:** Generating per-object masks, click on an object in the Cryptomatte pass to isolate it for independent color grading.
 
 **Q:** The Sprite Fright production rendered at which resolution and aspect ratio?
-**A:** 2048×858 — 2K DCI Scope (2.39:1 aspect ratio).
+**A:** 2048×858, 2K DCI Scope (2.39:1 aspect ratio).
 
 **Q:** What sample count optimization did Sprite Fright use to cut render time by ~40%?
 **A:** Rendering foreground characters at 512 samples and background elements at 64 samples in separate View Layers.
@@ -543,7 +543,7 @@
 **A:** What happens, who is the character, where does it take place, what is the emotional payoff.
 
 **Q:** What is an animatic?
-**A:** A timed slideshow of storyboard panels cut to planned shot durations — built in Blender's VSE.
+**A:** A timed slideshow of storyboard panels cut to planned shot durations, built in Blender's VSE.
 
 **Q:** How many frames must be rendered for a 10-second short at 24fps?
 **A:** 240 frames.
@@ -552,13 +552,13 @@
 **A:** Concept → Model → Materials → Rig → Animate (blocking → spline) → Light → Render → Composite → Deliver.
 
 **Q:** What Blender Foundation short was made by ~2 artists in ~3 months?
-**A:** Coffee Run (2020) — the benchmark for minimal-team indie Blender production.
+**A:** Coffee Run (2020), the benchmark for minimal-team indie Blender production.
 
 **Q:** What is "follow-through" in animation?
-**A:** Secondary parts (hair, clothing, tail) continuing to move after the main body has stopped — they lag, overshoot their final position, and settle.
+**A:** Secondary parts (hair, clothing, tail) continuing to move after the main body has stopped, they lag, overshoot their final position, and settle.
 
 **Q:** What is Z-fighting and how is it caused?
-**A:** A flickering artifact in renders caused by two mesh surfaces occupying nearly the same position in 3D space — they compete for which renders in front.
+**A:** A flickering artifact in renders caused by two mesh surfaces occupying nearly the same position in 3D space, they compete for which renders in front.
 
 **Q:** What is the recommended delivery format for a portfolio short film?
 **A:** H.264 MP4, CRF 18–23, 1920×1080, 24fps.
@@ -567,6 +567,6 @@
 **A:** Is the emotional beat felt clearly by a viewer who has no prior context about the production?
 
 **Q:** What does Ian Hubert's "Lazy Tutorials" philosophy teach about short film production?
-**A:** Get the camera positioned smartly and close enough — the viewer's imagination fills in what they don't see. Smart framing beats high polygon count.
+**A:** Get the camera positioned smartly and close enough, the viewer's imagination fills in what they don't see. Smart framing beats high polygon count.
 
 ---

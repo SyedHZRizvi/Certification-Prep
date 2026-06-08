@@ -259,7 +259,7 @@ IdleTimeout 600
 `--permanent` writes to disk; the rule is NOT live until `--reload`. The two-step is the textbook pattern.
 
 ### Q5: **B. Root can still SSH with a key**
-`PermitRootLogin no` blocks all root SSH. But if you set it to `prohibit-password` (or older `without-password`), root can still SSH with a key — the question's phrasing "PermitRootLogin no" actually blocks. Reading carefully: with `no`, root cannot SSH in *at all*. Re-reading: choice A says "Root cannot SSH in at all" — that's correct with `no`. Looking again at intent: the answer should be A. (Note: in the real exam, watch this trap — `no` vs `prohibit-password` is a frequent gotcha.) **Corrected: A is the intended answer.**
+`PermitRootLogin no` blocks all root SSH. But if you set it to `prohibit-password` (or older `without-password`), root can still SSH with a key the question's phrasing "PermitRootLogin no" actually blocks. Reading carefully: with `no`, root cannot SSH in *at all*. Re-reading: choice A says "Root cannot SSH in at all" that's correct with `no`. Looking again at intent: the answer should be A. (Note: in the real exam, watch this trap, `no` vs `prohibit-password` is a frequent gotcha.) **Corrected: A is the intended answer.**
 
 ### Q6: **B. Loose permissions; StrictModes rejected the key**
 The Priya bug from the reading. Check `~/.ssh` is 700 and `~/.ssh/authorized_keys` is 600. `/var/log/auth.log` will say "bad ownership or modes for directory".
@@ -304,7 +304,7 @@ ProxyJump (also CLI flag `-J`) opens a connection to the bastion, then from the 
 `INPUT` = inbound to local processes. `OUTPUT` = generated locally. `FORWARD` = passing through (when this host is a router).
 
 ### Q20: **D. Both B and A are plausible; check auth.log first**
-Always check `/var/log/auth.log` (Debian) or `/var/log/secure` (RHEL) — sshd logs the specific rejection reason. Could be perms, firewall, or `AllowUsers`/`Match` rules.
+Always check `/var/log/auth.log` (Debian) or `/var/log/secure` (RHEL), sshd logs the specific rejection reason. Could be perms, firewall, or `AllowUsers`/`Match` rules.
 
 ### Q21: **B. `yes`**
 `StrictModes yes` is the default. It refuses key auth if `~/.ssh` is world-writable or `authorized_keys` is loosely permissioned.
@@ -322,10 +322,10 @@ On RHEL 9, the kernel-side packet filter is nftables. firewalld runs on top and 
 Multiple groups can be listed space-separated. There's also `DenyGroups`, `AllowUsers`, `DenyUsers`.
 
 ### Q26: **A.**
-- `PermitRootLogin no` — disables root SSH entirely
-- `PasswordAuthentication no` — forces key-based
-- `AllowGroups sshusers` — only group members can SSH
-- `ClientAliveInterval 600` + `ClientAliveCountMax 0` — server sends one keepalive after 10 min idle; with CountMax 0, the next missed = disconnect. (Some prefer `ClientAliveInterval 300` + `ClientAliveCountMax 2` for less aggressive behavior.) The other choices use non-existent directives.
+- `PermitRootLogin no`, disables root SSH entirely
+- `PasswordAuthentication no`, forces key-based
+- `AllowGroups sshusers`, only group members can SSH
+- `ClientAliveInterval 600` + `ClientAliveCountMax 0`, server sends one keepalive after 10 min idle; with CountMax 0, the next missed = disconnect. (Some prefer `ClientAliveInterval 300` + `ClientAliveCountMax 2` for less aggressive behavior.) The other choices use non-existent directives.
 
 ---
 
@@ -352,4 +352,4 @@ Multiple groups can be listed space-separated. There's also `DenyGroups`, `Allow
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — Kernel Modules, Devices & LVM](../Module-07-Kernel-Modules/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, Kernel Modules, Devices & LVM](../Module-07-Kernel-Modules/Reading.md)

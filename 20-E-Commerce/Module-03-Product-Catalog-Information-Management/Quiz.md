@@ -80,7 +80,7 @@ D. Direct mail
 
 ### Q10. MAP enforcement means: *(Remember)*
 A. Maximum Advertised Price
-B. Minimum Advertised Price — brand sets a floor for resellers
+B. Minimum Advertised Price, brand sets a floor for resellers
 C. Most Aggressive Pricing
 D. Market Average Pricing
 
@@ -226,7 +226,7 @@ PIM is adjacent to but distinct from all four. ERP = finance, PLM = manufacturin
 ### Q9: **A. Branded Google Shopping campaigns**
 Without GTIN, branded queries fail feed approval. Search ads still work, but Shopping doesn't.
 
-### Q10: **B. Minimum Advertised Price — brand sets a floor for resellers**
+### Q10: **B. Minimum Advertised Price, brand sets a floor for resellers**
 Common in branded distribution; brands enforce MAP to prevent resellers from price-warring.
 
 ### Q11: **B. Universal → Family-specific → Channel-specific**

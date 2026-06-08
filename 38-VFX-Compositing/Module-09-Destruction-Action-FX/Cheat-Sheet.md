@@ -65,7 +65,7 @@ title: "Module 9 Cheat Sheet: Destruction & Action FX"
 |--------|--------|-----------|-----------|
 | Lens flare | Optical Flares or built-in; track to light source | Add/Screen | Keyframe opacity to zero when occluded |
 | Chromatic aberration | Scale R up 100.5%; B down 99.5%; Channel Combiner | Applied | More pronounced at frame corners |
-| Film grain | Single Adjustment Layer at top of comp | Overlay/Soft Light 10–30% | ONE layer for entire comp — never per element |
+| Film grain | Single Adjustment Layer at top of comp | Overlay/Soft Light 10–30% | ONE layer for entire comp, never per element |
 
 ---
 
@@ -139,8 +139,8 @@ Live-Action Plate          ← BOTTOM
 
 ## Exam Quick-Hits
 
-- **7 layers minimum** for a convincing explosion — any fewer and the effect reads as thin
-- **Shockwave ring:** Nearly invisible — Screen blend, radial distortion only. Its absence makes FX look fake.
+- **7 layers minimum** for a convincing explosion, any fewer and the effect reads as thin
+- **Shockwave ring:** Nearly invisible, Screen blend, radial distortion only. Its absence makes FX look fake.
 - **Grain = one layer:** Never apply grain per element. Single Adjustment Layer at top of stack.
 - **Muzzle flash light on environment:** The environmental flash is the most commonly missed component.
 - **Blender scale:** 1 unit = 1 meter. Wrong scale = wrong-sized CG in plate.

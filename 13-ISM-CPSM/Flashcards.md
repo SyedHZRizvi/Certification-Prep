@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,7 +275,7 @@
 ## 📜 SECTION 1: FOUNDATIONS & STRATEGY
 
 **Q:** What is the BEST definition of supply management?
-**A:** Acquiring goods and services AND managing the supply base to deliver value to internal and external customers — strategic, not transactional.
+**A:** Acquiring goods and services AND managing the supply base to deliver value to internal and external customers, strategic, not transactional.
 
 **Q:** Difference between purchasing, procurement, and supply management?
 **A:** Purchasing = transactional act of buying. Procurement = purchasing + selection + contracting. Supply management = strategic end-to-end function including supply-base management for value.
@@ -327,10 +327,10 @@
 **A:** Long-term partnership, joint development, multi-year alliance.
 
 **Q:** Kraljic strategy for the BOTTLENECK quadrant?
-**A:** Ensure supply — inventory buffers, alternate sources, long-term contracts.
+**A:** Ensure supply, inventory buffers, alternate sources, long-term contracts.
 
 **Q:** Kraljic strategy for the NON-CRITICAL quadrant?
-**A:** Efficient processing — catalogs, P-cards, automation.
+**A:** Efficient processing, catalogs, P-cards, automation.
 
 **Q:** Single source vs sole source?
 **A:** Single source = we chose one of many possible suppliers. Sole source = only one supplier exists in the market.
@@ -361,10 +361,10 @@
 **A:** Best Alternative To a Negotiated Agreement (your fallback if the deal fails).
 
 **Q:** What is ZOPA?
-**A:** Zone of Possible Agreement — overlap between buyer's max and seller's min. If no overlap, no deal without expanding the pie.
+**A:** Zone of Possible Agreement, overlap between buyer's max and seller's min. If no overlap, no deal without expanding the pie.
 
 **Q:** Reservation price?
-**A:** Your walk-away point — the number beyond which you'd rather take your BATNA.
+**A:** Your walk-away point, the number beyond which you'd rather take your BATNA.
 
 **Q:** Distributive vs integrative negotiation?
 **A:** Distributive = win-lose fixed pie (commodity, one-off). Integrative = win-win expanded pie (strategic, long-term).
@@ -382,13 +382,13 @@
 **A:** Cost-plus or Time & Materials. Forcing fixed-price on undefined scope causes disputes.
 
 **Q:** What does UCC govern?
-**A:** Uniform Commercial Code — US sale of goods. Services use common law instead.
+**A:** Uniform Commercial Code, US sale of goods. Services use common law instead.
 
 **Q:** When does CISG apply?
 **A:** International sale of goods between signatory countries, by default, unless contract opts out.
 
 **Q:** What is FAR?
-**A:** Federal Acquisition Regulation — governs US federal government contracts. Highly prescriptive.
+**A:** Federal Acquisition Regulation, governs US federal government contracts. Highly prescriptive.
 
 **Q:** What does force majeure excuse?
 **A:** Performance during unforeseeable, unavoidable events (war, disaster, pandemic). Must be in clause AND supplier mitigated.
@@ -425,7 +425,7 @@
 **A:** MBE, WBE, SDVOSB, VBE, LGBTQ-owned, DOBE, 8(a), HUBZone, SBE.
 
 **Q:** Tier-2 diversity reporting means?
-**A:** Tracking diverse spend by your primary (Tier-1) suppliers' subcontractors — required by many US federal customers and large enterprises.
+**A:** Tracking diverse spend by your primary (Tier-1) suppliers' subcontractors, required by many US federal customers and large enterprises.
 
 **Q:** Typical SRM escalation ladder?
 **A:** Buyer ↔ supplier account manager → Category manager ↔ supplier sales director → Supply VP ↔ Supplier VP → Executive sponsors. Don't skip levels.
@@ -434,7 +434,7 @@
 **A:** Scorecard, open issues, cost/innovation pipeline, risk review, forecast, strategic initiatives, action items.
 
 **Q:** What is PPM in supplier quality?
-**A:** Parts Per Million defects — standard quality metric.
+**A:** Parts Per Million defects, standard quality metric.
 
 **Q:** Best exit-management practice for a strategic supplier?
 **A:** Structured transition: dual-source 6–12 months, knowledge transfer, IP/data return, lessons learned. Don't drop them cold.
@@ -470,7 +470,7 @@
 **Q:** When does hedging make sense?
 **A:** Hedge known exposures to reduce risk. Match horizon. Executed by Treasury. Documented policy. NOT for speculation.
 
-**Q:** 2/10 Net 30 — annualized return if discount taken?
+**Q:** 2/10 Net 30, annualized return if discount taken?
 **A:** ~36.5% (2% × 365/20).
 
 **Q:** Cost savings vs cost avoidance?
@@ -487,16 +487,16 @@
 ## 🌍 SECTION 6: INTERNATIONAL SUPPLY
 
 **Q:** How many Incoterms are in the 2020 set?
-**A:** 11 total — 7 any-mode + 4 sea/inland-waterway only.
+**A:** 11 total, 7 any-mode + 4 sea/inland-waterway only.
 
 **Q:** EXW means?
-**A:** Ex Works — buyer takes from seller's door; seller does the LEAST.
+**A:** Ex Works, buyer takes from seller's door; seller does the LEAST.
 
 **Q:** DDP means?
-**A:** Delivered Duty Paid — seller does the MOST, including import customs and duties.
+**A:** Delivered Duty Paid, seller does the MOST, including import customs and duties.
 
 **Q:** Which Incoterm 2020 replaced DAT?
-**A:** DPU (Delivered at Place Unloaded) — broader than terminal-only DAT.
+**A:** DPU (Delivered at Place Unloaded), broader than terminal-only DAT.
 
 **Q:** FOB applies to which mode?
 **A:** Sea and inland waterway only (NOT air or trucking).
@@ -511,16 +511,16 @@
 **A:** UK Act is broader: includes private-sector bribery, "failure to prevent" corporate offense; NO facilitation-payment exception.
 
 **Q:** What does OFAC do?
-**A:** Office of Foreign Assets Control — US Treasury sanctions on countries, entities, individuals.
+**A:** Office of Foreign Assets Control, US Treasury sanctions on countries, entities, individuals.
 
 **Q:** ITAR regulates?
-**A:** International Traffic in Arms Regulations — defense articles/services exports (State Department).
+**A:** International Traffic in Arms Regulations, defense articles/services exports (State Department).
 
 **Q:** USMCA replaced what and when?
 **A:** Replaced NAFTA in 2020. Stricter rules of origin (e.g., 75% regional value content for autos).
 
 **Q:** What is RCEP?
-**A:** Regional Comprehensive Economic Partnership — 15 Asia-Pacific countries (ASEAN + China, Japan, Korea, Australia, NZ).
+**A:** Regional Comprehensive Economic Partnership, 15 Asia-Pacific countries (ASEAN + China, Japan, Korea, Australia, NZ).
 
 **Q:** Certificate of Origin's purpose?
 **A:** Proves goods qualify for FTA preferential tariff rates.
@@ -529,9 +529,9 @@
 **A:** Transaction (specific contract), Translation (subsidiary financial reporting), Economic (long-term competitiveness).
 
 **Q:** Does invoicing in your home currency eliminate FX risk?
-**A:** No — the supplier prices the FX risk in. Risk is shifted, not eliminated.
+**A:** No, the supplier prices the FX risk in. Risk is shifted, not eliminated.
 
-**Q:** Letter of Credit — what is it?
+**Q:** Letter of Credit, what is it?
 **A:** Bank-guaranteed payment instrument used in international trade to balance buyer/seller risk.
 
 **Q:** Hofstede's 6 cultural dimensions?
@@ -554,13 +554,13 @@
 **A:** When the risk is too large to bear and treatment costs are excessive.
 
 **Q:** When to TRANSFER a risk?
-**A:** When someone else can bear it better — insurance, contractual indemnification, hedging.
+**A:** When someone else can bear it better, insurance, contractual indemnification, hedging.
 
 **Q:** What is a risk register?
 **A:** Living document tracking each risk's category, probability, impact, owner, treatment, mitigation actions, status, and review date.
 
 **Q:** Conflict minerals (3TG)?
-**A:** Tin, Tungsten, Tantalum, Gold — covered by US Dodd-Frank §1502 reporting for SEC-listed companies.
+**A:** Tin, Tungsten, Tantalum, Gold, covered by US Dodd-Frank §1502 reporting for SEC-listed companies.
 
 **Q:** RTO, RPO, MTD definitions?
 **A:** RTO = Recovery Time Objective (how fast we restore). RPO = Recovery Point Objective (acceptable data-loss window). MTD = Maximum Tolerable Downtime (business stops past this). Rule: MTD > RTO.
@@ -584,7 +584,7 @@
 **A:** Risk management.
 
 **Q:** SA 8000 covers?
-**A:** Social accountability — labor practices.
+**A:** Social accountability, labor practices.
 
 **Q:** AS9100 covers?
 **A:** Aerospace quality management.
@@ -620,8 +620,8 @@
 **Q:** Transformational vs servant leadership?
 **A:** Transformational = inspires vision and energizes change. Servant = leader serves the team's needs first, removes obstacles.
 
-**Q:** RACI — what does A mean and how many per task?
-**A:** Accountable — owns the outcome. ONLY ONE per task. R/C/I can have multiple.
+**Q:** RACI, what does A mean and how many per task?
+**A:** Accountable, owns the outcome. ONLY ONE per task. R/C/I can have multiple.
 
 **Q:** Stakeholders with high power AND high interest are?
 **A:** Manage closely. (Power/Interest grid quadrant.)
@@ -648,7 +648,7 @@
 **A:** 5S, Kaizen, Value Stream Mapping, PDCA, DMAIC, 5 Whys, Fishbone, Pareto, Poka-yoke.
 
 **Q:** 5 Whys?
-**A:** Root-cause analysis technique — ask "why?" five times to drill from symptom to root cause.
+**A:** Root-cause analysis technique, ask "why?" five times to drill from symptom to root cause.
 
 **Q:** Coaching vs mentoring?
 **A:** Coaching = short-term, skill-focused. Mentoring = long-term, career-focused.
@@ -679,7 +679,7 @@
 **A:** Use Kraljic. Match the tactic to the quadrant. Don't reverse-auction strategic; don't partner with non-critical.
 
 **Q:** When in doubt on a TCO question, what's the rule?
-**A:** Compute Acquisition + Operating + Disposal — lowest unit price rarely wins on TCO.
+**A:** Compute Acquisition + Operating + Disposal, lowest unit price rarely wins on TCO.
 
 **Q:** When in doubt on an Incoterm question, what's the trend rule?
 **A:** Seller's responsibility grows from EXW → DDP. FOB / CFR / CIF / FAS are sea-only.

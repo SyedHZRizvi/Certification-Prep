@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -278,19 +278,19 @@
 **A:** Entra registered (BYOD, personal), Entra joined (cloud-only), and Microsoft Entra hybrid joined (on-prem AD + Entra ID).
 
 **Q:** What does Zero Trust assume about every request?
-**A:** Never trust, always verify — explicit verification of identity, device, network location, and signal context for every access decision.
+**A:** Never trust, always verify, explicit verification of identity, device, network location, and signal context for every access decision.
 
 **Q:** Define MDM and MAM in one sentence each.
-**A:** MDM = Mobile Device Management — full enrollment and control of the device. MAM = Mobile Application Management — protect corporate data inside specific apps without enrolling the device.
+**A:** MDM = Mobile Device Management full enrollment and control of the device. MAM = Mobile Application Management protect corporate data inside specific apps without enrolling the device.
 
 **Q:** Which join state is the right answer when "the device is corporate-owned and has no need for on-prem AD"?
 **A:** Microsoft Entra joined (cloud-only).
 
 **Q:** What is the canonical license for a fully managed Windows 11 endpoint in 2026?
-**A:** Microsoft 365 E3 (or higher) — includes Windows 11 Enterprise, Intune Plan 1, Entra ID P1, and Defender for Endpoint Plan 1.
+**A:** Microsoft 365 E3 (or higher), includes Windows 11 Enterprise, Intune Plan 1, Entra ID P1, and Defender for Endpoint Plan 1.
 
 **Q:** What is "Windows as a service" (WaaS)?
-**A:** Microsoft's servicing model — continuous quality updates (monthly) and annual feature updates instead of multi-year OS releases.
+**A:** Microsoft's servicing model, continuous quality updates (monthly) and annual feature updates instead of multi-year OS releases.
 
 **Q:** Why is "domain join only" a failing answer on modern MD-102 questions?
 **A:** It cannot manage off-network devices, mobile devices, or BYOD; it depends on line-of-sight to a domain controller. Modern answers are Entra join + Intune.
@@ -303,7 +303,7 @@
 **A:** Self-deploying, Pre-provisioned (white-glove), User-driven, and Autopilot for existing devices.
 
 **Q:** Which Autopilot mode requires no user interaction at first boot?
-**A:** Self-deploying — used for kiosks, digital signage, or shared devices. Requires TPM 2.0 attestation.
+**A:** Self-deploying, used for kiosks, digital signage, or shared devices. Requires TPM 2.0 attestation.
 
 **Q:** What does "pre-provisioned" (white-glove) deployment do?
 **A:** IT or the OEM does the heavy lifting (apps, policies) before the device ships; the user does a quick sign-in and a few-minute personalization phase.
@@ -312,23 +312,23 @@
 **A:** The Windows Autopilot device hardware hash (a base64-encoded blob derived from TPM, motherboard, and other hardware identifiers).
 
 **Q:** What's the right way to register OEM devices with Autopilot at scale?
-**A:** Have the OEM (Dell, HP, Lenovo, Microsoft, etc.) register devices directly to your tenant via their CSP relationship — no manual hash collection.
+**A:** Have the OEM (Dell, HP, Lenovo, Microsoft, etc.) register devices directly to your tenant via their CSP relationship, no manual hash collection.
 
 **Q:** What is a provisioning package (.ppkg)?
-**A:** A Windows Configuration Designer artifact applied at OOBE or to a running device to enroll, apply settings, and install apps — used for low-bandwidth or air-gapped scenarios.
+**A:** A Windows Configuration Designer artifact applied at OOBE or to a running device to enroll, apply settings, and install apps, used for low-bandwidth or air-gapped scenarios.
 
 **Q:** When do you still pick MDT or Configuration Manager OSD over Autopilot?
 **A:** Custom on-prem imaging, complex driver matrices, ConfigMgr-managed environments, or devices that must image from PXE without internet.
 
 **Q:** What's the difference between an in-place upgrade and a wipe-and-load?
-**A:** In-place keeps user data, apps, and settings (uses the Windows setup engine). Wipe-and-load reimages clean — preferred for major architectural changes.
+**A:** In-place keeps user data, apps, and settings (uses the Windows setup engine). Wipe-and-load reimages clean, preferred for major architectural changes.
 
 ---
 
 ## ☁️ SECTION 3: INTUNE FUNDAMENTALS
 
 **Q:** What is the Microsoft Intune service formally called as of 2024+?
-**A:** Microsoft Intune (the family is Microsoft Intune Suite — Plan 1, Plan 2, and the Suite add-on).
+**A:** Microsoft Intune (the family is Microsoft Intune Suite, Plan 1, Plan 2, and the Suite add-on).
 
 **Q:** Which Intune plan adds Endpoint Privilege Management, Remote Help, and Advanced Endpoint Analytics?
 **A:** Intune Plan 2 (also called Intune Plan 2 add-on or Intune Suite features).
@@ -343,7 +343,7 @@
 **A:** Dynamic device groups in Entra ID with a membership rule (e.g., `device.deviceOSType -eq "Windows" -and device.deviceOSVersion -startsWith "10.0.22"`).
 
 **Q:** What is an app protection policy (APP)?
-**A:** A MAM policy that protects corporate data inside specific apps (Outlook, Teams, OneDrive) — requires no enrollment. Controls cut/copy/paste, save-as, encryption, PIN.
+**A:** A MAM policy that protects corporate data inside specific apps (Outlook, Teams, OneDrive), requires no enrollment. Controls cut/copy/paste, save-as, encryption, PIN.
 
 **Q:** What does the Company Portal app do?
 **A:** Provides users with self-service enrollment, app installs, device compliance status, and remote actions for their managed devices.
@@ -359,13 +359,13 @@
 **A:** Personally-owned with work profile (BYOD), Corporate-owned with work profile (COPE), Fully managed (corporate-only), and Dedicated (kiosk/COSU).
 
 **Q:** Which enrollment scenario is used for shared-device kiosks on Android?
-**A:** Android Enterprise Dedicated devices (also called COSU — Corporate Owned, Single Use).
+**A:** Android Enterprise Dedicated devices (also called COSU, Corporate Owned, Single Use).
 
 **Q:** What does a compliance policy actually do?
-**A:** Evaluates a device against rules (encryption, OS version, antivirus, jailbreak) and marks the device compliant or non-compliant — the result feeds Conditional Access.
+**A:** Evaluates a device against rules (encryption, OS version, antivirus, jailbreak) and marks the device compliant or non-compliant, the result feeds Conditional Access.
 
 **Q:** A device is non-compliant. What component actually blocks the user's sign-in?
-**A:** Conditional Access — not Intune. Compliance is a signal; CA enforces it.
+**A:** Conditional Access, not Intune. Compliance is a signal; CA enforces it.
 
 **Q:** What is device attestation in Windows 11?
 **A:** TPM 2.0 + measured boot attesting the boot chain to Microsoft Azure Attestation Service; used as a compliance signal for "boot integrity."
@@ -378,7 +378,7 @@
 ## 📦 SECTION 5: APPLICATION DEPLOYMENT
 
 **Q:** What file extension does an Intune Win32 app package use?
-**A:** `.intunewin` — produced by `IntuneWinAppUtil.exe` wrapping an installer (EXE/MSI/script) and its dependencies.
+**A:** `.intunewin`, produced by `IntuneWinAppUtil.exe` wrapping an installer (EXE/MSI/script) and its dependencies.
 
 **Q:** What is the difference between a Win32 app and a "line-of-business" (LOB) app in Intune?
 **A:** LOB = MSI/APPX/IPA file uploaded directly (simple). Win32 = `.intunewin` package with custom install/uninstall commands, detection rules, dependencies, and supersedence.
@@ -390,13 +390,13 @@
 **A:** A relationship where a newer app version replaces an older one (with optional uninstall of the previous). Used for app upgrade chains.
 
 **Q:** What is the modern Windows app packaging format that replaces .appx?
-**A:** MSIX — a Windows 10+ universal app package supporting clean install/uninstall, modification packages, and Win32 wrapping.
+**A:** MSIX, a Windows 10+ universal app package supporting clean install/uninstall, modification packages, and Win32 wrapping.
 
 **Q:** Which app deployment intent installs the app automatically without user input?
 **A:** Required (for user or device groups). "Available" puts it in Company Portal for self-service.
 
 **Q:** What does an app configuration policy do?
-**A:** Pushes per-app settings (server URL, default mailbox, branding) to managed apps — works with both MDM and MAM channels.
+**A:** Pushes per-app settings (server URL, default mailbox, branding) to managed apps, works with both MDM and MAM channels.
 
 ---
 
@@ -409,7 +409,7 @@
 **A:** A Defender for Endpoint rule that blocks specific malicious behaviors (Office child processes, credential theft, obfuscated scripts). Available in Audit, Block, or Warn mode.
 
 **Q:** Which two ASR modes are deployable, and what's the trade-off?
-**A:** Audit (logs but allows — for testing), Block (enforces). Warn is a third mode that prompts the user with a one-time bypass.
+**A:** Audit (logs but allows, for testing), Block (enforces). Warn is a third mode that prompts the user with a one-time bypass.
 
 **Q:** What is BitLocker, and what does Intune's "silent enable" policy do?
 **A:** BitLocker = full-disk encryption (XTS-AES 128/256). Silent enable encrypts the OS drive and escrows the recovery key to Entra ID without user prompts.
@@ -418,10 +418,10 @@
 **A:** Microsoft Entra ID, on the device object. Admins can retrieve via Intune portal, Entra portal, or Microsoft Graph.
 
 **Q:** What does EDR in block mode do?
-**A:** Microsoft Defender for Endpoint blocks malicious artifacts even when a third-party antivirus is the primary AV — passive Defender + active EDR enforcement.
+**A:** Microsoft Defender for Endpoint blocks malicious artifacts even when a third-party antivirus is the primary AV, passive Defender + active EDR enforcement.
 
 **Q:** What is Microsoft Defender for Cloud Apps (formerly MCAS)?
-**A:** Microsoft's cloud access security broker (CASB) — discovers shadow IT, controls SaaS apps, and integrates with Defender for Endpoint device signals.
+**A:** Microsoft's cloud access security broker (CASB), discovers shadow IT, controls SaaS apps, and integrates with Defender for Endpoint device signals.
 
 ---
 
@@ -440,7 +440,7 @@
 **A:** A WUfB action that pushes a specific quality update outside the normal ring schedule when a zero-day requires immediate patching.
 
 **Q:** What is Delivery Optimization?
-**A:** Microsoft's peer-to-peer content delivery for Windows updates and Intune apps — devices fetch from peers on the same LAN before pulling from Microsoft.
+**A:** Microsoft's peer-to-peer content delivery for Windows updates and Intune apps, devices fetch from peers on the same LAN before pulling from Microsoft.
 
 **Q:** When does a Windows 11 feature update reach end of servicing?
 **A:** 24 months from release for Home/Pro (24H2 example: October 2024 → October 2026), 36 months for Enterprise/Education.
@@ -456,19 +456,19 @@
 **A:** An Intune feature surfacing device performance scores: Startup performance, Application reliability, Work-from-anywhere, Resource performance, and Battery health.
 
 **Q:** What are proactive remediations?
-**A:** Pairs of PowerShell scripts — a detection script and a remediation script — that automatically detect and fix problems across your fleet. Requires Intune Plan 2.
+**A:** Pairs of PowerShell scripts a detection script and a remediation script that automatically detect and fix problems across your fleet. Requires Intune Plan 2.
 
 **Q:** Where do you go in the Intune portal to see why a device failed enrollment?
 **A:** Devices → Monitor → Enrollment failures, or Troubleshooting + support → Troubleshoot blade for a per-user view.
 
 **Q:** What is the MDM diagnostics report on Windows 11?
-**A:** A built-in report (`Settings → Accounts → Access work or school → Info → Create report`) that dumps every MDM policy and its source — invaluable for conflict troubleshooting.
+**A:** A built-in report (`Settings → Accounts → Access work or school → Info → Create report`) that dumps every MDM policy and its source, invaluable for conflict troubleshooting.
 
 **Q:** Which Intune report shows policy conflicts on a device?
 **A:** Devices → [device] → Device configuration (or Per-setting state), which flags settings where two policies disagree.
 
 **Q:** What's the canonical first step when an app shows "Failed" in Intune?
-**A:** Check the detection rule. The most common cause is a detection rule that never returns true — the app actually installed but Intune can't tell.
+**A:** Check the detection rule. The most common cause is a detection rule that never returns true, the app actually installed but Intune can't tell.
 
 **Q:** What logs the Autopilot deployment flow on a Windows 11 device?
 **A:** `Settings → Accounts → Access work or school → Info → Export your management log files` produces an MDMDiagnostics zip including Autopilot ETW traces.
@@ -478,7 +478,7 @@
 ## 🧠 STUDY TIPS
 
 1. **Build a test tenant.** A free Microsoft 365 E5 developer tenant lasts 90 days and renews. Enroll a real device or a Hyper-V VM and click through every screen the exam describes.
-2. **Drill the four Autopilot modes.** Self-deploying / pre-provisioned / user-driven / for-existing-devices — be able to name the use case, license requirement, and limitations for each.
+2. **Drill the four Autopilot modes.** Self-deploying / pre-provisioned / user-driven / for-existing-devices, be able to name the use case, license requirement, and limitations for each.
 3. **Memorize the licensing matrix.** Which features need Intune Plan 1, Plan 2, Entra ID P1, P2, or M365 E3/E5. The exam asks license-by-feature questions every form.
 4. **Practice with the Company Portal.** Many "what does the user see" questions are unbluffable if you've never opened the Company Portal app.
 

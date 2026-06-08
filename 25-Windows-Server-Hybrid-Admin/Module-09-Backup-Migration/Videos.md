@@ -20,7 +20,7 @@
 
 # 🎥 Module 9 Videos: Backup, ASR & Migration
 
-> **How to use:** Click any card to search YouTube for the latest top result. Backup/DR/Migration is ~40% of AZ-801 — heaviest combined domain.
+> **How to use:** Click any card to search YouTube for the latest top result. Backup/DR/Migration is ~40% of AZ-801, heaviest combined domain.
 
 ## ⭐ Essential watching (~110 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Backup — Complete Overview</p>
+      <p class="vg-title">Azure Backup, Complete Overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 35 min · Vault, MARS, MABS, VM</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Storage Migration Service — Cutover</p>
+      <p class="vg-title">Storage Migration Service, Cutover</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 25 min · Modernize 2008→2022</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Migrate — Assess & Migrate</p>
+      <p class="vg-title">Azure Migrate, Assess & Migrate</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 22 min · Hub for migration</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">MARS Agent — Install & Configure</p>
+      <p class="vg-title">MARS Agent, Install & Configure</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 14 min · 3-per-day file backup</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">MABS — On-Prem App-Aware Backup</p>
+      <p class="vg-title">MABS, On-Prem App-Aware Backup</p>
       <p class="vg-creator">Practical Windows Server</p>
       <span class="vg-duration">⏱ 18 min · SQL/SP/Exchange VSS</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Immutable Vault — Ransomware Defense</p>
+      <p class="vg-title">Immutable Vault, Ransomware Defense</p>
       <p class="vg-creator">Inside Cloud and Security</p>
       <span class="vg-duration">⏱ 18 min · Maersk lessons applied</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ASR Recovery Plans — Multi-VM Orchestration</p>
+      <p class="vg-title">ASR Recovery Plans, Multi-VM Orchestration</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · Scripts + groups</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ADMT — Legacy AD Migration</p>
+      <p class="vg-title">ADMT, Legacy AD Migration</p>
       <p class="vg-creator">CBT Nuggets</p>
       <span class="vg-duration">⏱ 24 min · SID History migration</span>
     </div>
@@ -145,11 +145,11 @@
 
 Answer these in your notebook:
 
-1. MARS vs MABS — when each?
-2. Recovery Services Vault — what's locked at first backup, and what's the soft delete default?
-3. ASR — typical RPO and RTO?
+1. MARS vs MABS, when each?
+2. Recovery Services Vault, what's locked at first backup, and what's the soft delete default?
+3. ASR, typical RPO and RTO?
 4. Storage Migration Service phases?
-5. Azure Migrate vs ASR — relationship?
-6. ADMT — what does SID History give you?
+5. Azure Migrate vs ASR, relationship?
+6. ADMT, what does SID History give you?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

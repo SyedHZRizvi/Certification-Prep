@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ip command — Modern Linux Networking</p>
+      <p class="vg-title">ip command, Modern Linux Networking</p>
       <p class="vg-creator">Learn Linux TV</p>
       <span class="vg-duration">⏱ 15 min · addr / link / route / neigh</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">nftables — The iptables Replacement</p>
+      <p class="vg-title">nftables, The iptables Replacement</p>
       <p class="vg-creator">Veronica Explains</p>
       <span class="vg-duration">⏱ 11 min · nft syntax, tables, chains</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ss — Replacing netstat</p>
+      <p class="vg-title">ss, Replacing netstat</p>
       <p class="vg-creator">tutoriaLinux</p>
       <span class="vg-duration">⏱ 9 min · -tulpn and beyond</span>
     </div>
@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">nmcli — NetworkManager CLI</p>
+      <p class="vg-title">nmcli, NetworkManager CLI</p>
       <p class="vg-creator">Jay LaCroix / LearnLinuxTV</p>
       <span class="vg-duration">⏱ 14 min · connection add / mod / up</span>
     </div>
@@ -129,7 +129,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ufw — Ubuntu's Simple Firewall</p>
+      <p class="vg-title">ufw, Ubuntu's Simple Firewall</p>
       <p class="vg-creator">DistroTube</p>
       <span class="vg-duration">⏱ 8 min · allow/deny basics</span>
     </div>
@@ -147,7 +147,7 @@
 | **Red Hat Enterprise Linux Channel** | Authoritative firewalld + RHEL networking content |
 | **Veronica Explains** | Modern Linux networking from a sysadmin's POV |
 | **DistroTube** | Power-user perspective on every tool |
-| **LiveOverflow** | Offensive-security angle — great for understanding what attackers see |
+| **LiveOverflow** | Offensive-security angle, great for understanding what attackers see |
 
 ---
 

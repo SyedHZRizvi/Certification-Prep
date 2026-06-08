@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Anthropic Messages API — Getting Started</p>
+      <p class="vg-title">Anthropic Messages API, Getting Started</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 15 min · End-to-end first call</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Prompt Caching — 90% Cost Reduction Tutorial</p>
+      <p class="vg-title">Prompt Caching, 90% Cost Reduction Tutorial</p>
       <p class="vg-creator">Anthropic / community</p>
       <span class="vg-duration">⏱ 20 min · The economics deep dive</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Message Batches — 50% Off for Bulk Workloads</p>
+      <p class="vg-title">Message Batches, 50% Off for Bulk Workloads</p>
       <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 18 min · Async at scale</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">LLM Observability — Langfuse vs Helicone</p>
+      <p class="vg-title">LLM Observability, Langfuse vs Helicone</p>
       <p class="vg-creator">Langfuse / community</p>
       <span class="vg-duration">⏱ 25 min · Production telemetry</span>
     </div>
@@ -138,7 +138,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Klarna at Production Scale — Claude Case Study</p>
+      <p class="vg-title">Klarna at Production Scale, Claude Case Study</p>
       <p class="vg-creator">Klarna / Anthropic</p>
       <span class="vg-duration">⏱ 25 min · The 700-agents-of-work story</span>
     </div>
@@ -165,9 +165,9 @@
 Answer these in your notebook (without re-watching):
 
 1. What two HTTP headers should you always log from Anthropic responses?
-2. Difference between Batch API and streaming — when do you use each?
+2. Difference between Batch API and streaming, when do you use each?
 3. The four `stop_reason` values and what each means?
-4. Mark a multi-block prompt for caching — what does `cache_control` look like in code?
+4. Mark a multi-block prompt for caching, what does `cache_control` look like in code?
 5. Three retryable error classes and the right backoff strategy?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watch the essential block.

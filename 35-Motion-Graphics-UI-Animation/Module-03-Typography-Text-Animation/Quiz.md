@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-03-Typography-Text-Animation/
 title: "Module 3 Quiz: Typography & Text Animation"
 ---
 
-# 🧠 Module 3 Quiz — Typography & Text Animation
+# 🧠 Module 3 Quiz, Typography & Text Animation
 
 ### Q1.
 In After Effects, how do you add a Text Animator to a text layer?
@@ -108,7 +108,7 @@ D. Match the text layer's frame rate to the BPM of the music
 ### Q11.
 A motion designer uses four different text entrance techniques in a 30-second kinetic piece: a wipe, a blur reveal, a character scramble, and a position drop. What is the most likely critique from a senior designer?
 
-A. The piece needs more motion — four techniques is not enough variety  
+A. The piece needs more motion, four techniques is not enough variety  
 B. Each technique should use a different font to visually distinguish it  
 C. Using multiple techniques creates incoherence; one technique with intensity variations would read as more professional  
 D. The techniques need to be applied in alphabetical order  
@@ -229,7 +229,7 @@ D. Color per character
 To create a text reveal where characters appear from the center of the word and expand outward to both sides, you would use:
 
 A. One Range Selector with Shape: Round  
-B. Two Range Selectors — one expanding from 50% to 0%, another from 50% to 100%, both with Mode: Add  
+B. Two Range Selectors, one expanding from 50% to 0%, another from 50% to 100%, both with Mode: Add  
 C. The Text Center option in the Range Selector settings  
 D. Keyframe the Range Selector End at 50% and Start at 50%, then expand both  
 
@@ -248,51 +248,51 @@ D. A color animation that changes from the baseline upward
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — Click the "Animate" button that appears on the right side of the text layer when selected in the timeline.
+Q1:  B, Click the "Animate" button that appears on the right side of the text layer when selected in the timeline.
 
-Q2:  B — Keyframing Offset from -100% to 100% sweeps the animator's effect progressively across all characters left to right.
+Q2:  B, Keyframing Offset from -100% to 100% sweeps the animator's effect progressively across all characters left to right.
 
-Q3:  C — Ramp Up creates a smooth falloff where characters transition softly from fully affected to unaffected.
+Q3:  C, Ramp Up creates a smooth falloff where characters transition softly from fully affected to unaffected.
 
-Q4:  D — The slow ~1.7 second reveal creates weight and dread. Speed communicates energy; slowness communicates gravity or tension.
+Q4:  D, The slow ~1.7 second reveal creates weight and dread. Speed communicates energy; slowness communicates gravity or tension.
 
-Q5:  C — The "Based On" property (found in the Range Selector options) sets whether the selector operates per Characters, Words, or Lines.
+Q5:  C, The "Based On" property (found in the Range Selector options) sets whether the selector operates per Characters, Words, or Lines.
 
-Q6:  B — Apple keynote animations use per-character blur-scale-opacity with consistent, restrained timing so the technique becomes invisible.
+Q6:  B, Apple keynote animations use per-character blur-scale-opacity with consistent, restrained timing so the technique becomes invisible.
 
-Q7:  B — Sports broadcast motion is fast and linear (or near-linear), communicating authority and urgency. Soft easing would undercut the energy.
+Q7:  B, Sports broadcast motion is fast and linear (or near-linear), communicating authority and urgency. Soft easing would undercut the energy.
 
-Q8:  C — Variable fonts allow animating registered axes including weight (wght), width (wdth), slant, and others — all within a single font file.
+Q8:  C, Variable fonts allow animating registered axes including weight (wght), width (wdth), slant, and others, all within a single font file.
 
-Q9:  A — Character Scramble uses the Character Offset animator combined with the Randomize Order checkbox in the Range Selector.
+Q9:  A, Character Scramble uses the Character Offset animator combined with the Randomize Order checkbox in the Range Selector.
 
-Q10: B — Import audio to the comp, use Ctrl+click on the timeline to place markers at beats, then keyframe reveals to those markers.
+Q10: B, Import audio to the comp, use Ctrl+click on the timeline to place markers at beats, then keyframe reveals to those markers.
 
-Q11: C — Multiple unrelated techniques in one piece signals lack of design concept. One technique with speed/intensity variations is the professional approach.
+Q11: C, Multiple unrelated techniques in one piece signals lack of design concept. One technique with speed/intensity variations is the professional approach.
 
-Q12: C — At least 0.5 seconds of hold time is the practical minimum for a viewer to read and process each text block. More for dense text.
+Q12: C, At least 0.5 seconds of hold time is the practical minimum for a viewer to read and process each text block. More for dense text.
 
-Q13: B — Ease Low controls how softly the transition occurs at the low end of the affected range — how abruptly characters go from fully animated to unaffected.
+Q13: B, Ease Low controls how softly the transition occurs at the low end of the affected range, how abruptly characters go from fully animated to unaffected.
 
-Q14: C — Using a Desktop license for commercial broadcast is a licensing violation. Always purchase Broadcast, Commercial, or Video licenses for client work.
+Q14: C, Using a Desktop license for commercial broadcast is a licensing violation. Always purchase Broadcast, Commercial, or Video licenses for client work.
 
-Q15: B — Tracking controls letter-spacing (the space between characters). In AE Text Animators, it's the per-character version of the global tracking setting.
+Q15: B, Tracking controls letter-spacing (the space between characters). In AE Text Animators, it's the per-character version of the global tracking setting.
 
-Q16: B — Apply all three properties (Blur, Scale, Opacity) to the same Text Animator group. They will share the single Range Selector within that group.
+Q16: B, Apply all three properties (Blur, Scale, Opacity) to the same Text Animator group. They will share the single Range Selector within that group.
 
-Q17: C — 120% (slightly oversized) → 100% (final size) creates the impression of characters "deflating" into place, which reads as physical arrival.
+Q17: C, 120% (slightly oversized) → 100% (final size) creates the impression of characters "deflating" into place, which reads as physical arrival.
 
-Q18: B — Optical sizing refers to font designs that adjust letterform details at different sizes for optimal legibility (e.g., text variants have different proportions than display variants).
+Q18: B, Optical sizing refers to font designs that adjust letterform details at different sizes for optimal legibility (e.g., text variants have different proportions than display variants).
 
-Q19: B — ITC Benguiat was chosen for its 1980s mass-market paperback association, evoking the era's horror/thriller paperback covers with bleeding letterforms.
+Q19: B, ITC Benguiat was chosen for its 1980s mass-market paperback association, evoking the era's horror/thriller paperback covers with bleeding letterforms.
 
-Q20: C — Hierarchy through motion: headline enters first, prominently; supporting text follows subdued. Never bury the lead by entering supporting content first.
+Q20: C, Hierarchy through motion: headline enters first, prominently; supporting text follows subdued. Never bury the lead by entering supporting content first.
 
-Q21: D — Lines. The Based On setting: Characters → per character; Words → per word; Lines → per line.
+Q21: D, Lines. The Based On setting: Characters → per character; Words → per word; Lines → per line.
 
-Q22: C — You cannot animate the font file per character within a single text layer. Other properties (rotation, blur, color, scale, opacity) are all valid animator properties.
+Q22: C, You cannot animate the font file per character within a single text layer. Other properties (rotation, blur, color, scale, opacity) are all valid animator properties.
 
-Q23: B — Two Range Selectors: one spanning 50%→0% (left half), one spanning 50%→100% (right half), both in Add mode — characters reveal from center outward.
+Q23: B, Two Range Selectors: one spanning 50%→0% (left half), one spanning 50%→100% (right half), both in Add mode, characters reveal from center outward.
 
-Q24: A — Baseline Shift animates the vertical position of characters relative to the baseline, creating the classic "bounce up from baseline" entrance effect.
+Q24: A, Baseline Shift animates the vertical position of characters relative to the baseline, creating the classic "bounce up from baseline" entrance effect.
 ```

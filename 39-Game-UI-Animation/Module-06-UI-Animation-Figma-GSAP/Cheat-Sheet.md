@@ -1,10 +1,10 @@
 ---
-title: "Module 6 Cheat Sheet: UI Animation — Figma, GSAP & Framer Motion"
+title: "Module 6 Cheat Sheet: UI Animation, Figma, GSAP & Framer Motion"
 ---
 
-# 🗒️ Module 6 Cheat Sheet: UI Animation — Figma, GSAP & Framer Motion
+# 🗒️ Module 6 Cheat Sheet: UI Animation, Figma, GSAP & Framer Motion
 
-## 🎨 Figma Smart Animate — Quick Rules
+## 🎨 Figma Smart Animate, Quick Rules
 
 | Rule | Detail |
 |------|--------|
@@ -63,7 +63,7 @@ gsap.from('.card', {
   }
 });
 
-// Scrub — tied directly to scroll
+// Scrub, tied directly to scroll
 gsap.to('.bg', {
   yPercent: -20, ease: 'none',
   scrollTrigger: { trigger: '.section', scrub: true }
@@ -138,10 +138,10 @@ Flip.from(state, {                      // 3. Animate old → new
 | Smart Animate without matching names | Rename layers identically in both frames |
 | GSAP `left`/`top` animation | Use `x`/`y` (translates) instead |
 | `height: 'auto'` in GSAP | Measure px height first; animate 0 → px value |
-| Linear easing for UI | Use `power2.out` — linear reads as mechanical |
+| Linear easing for UI | Use `power2.out`, linear reads as mechanical |
 | Exit easing = entrance easing | Exits = ease-out; entrances = ease-in-out |
-| `elastic.out` on 100+ stagger elements | Substitute `back.out(1.7)` — same visual, far less CPU |
-| `filter: blur()` animation on mobile | Blur is CPU-rendered on Android/iOS WebView — animate opacity of pre-blurred version instead |
+| `elastic.out` on 100+ stagger elements | Substitute `back.out(1.7)`, same visual, far less CPU |
+| `filter: blur()` animation on mobile | Blur is CPU-rendered on Android/iOS WebView, animate opacity of pre-blurred version instead |
 
 ---
 
@@ -186,7 +186,7 @@ scrollTrigger: {
 
 ---
 
-## 📊 Framer Motion vs. GSAP — Full Comparison
+## 📊 Framer Motion vs. GSAP, Full Comparison
 
 | Feature | GSAP | Framer Motion |
 |---|---|---|

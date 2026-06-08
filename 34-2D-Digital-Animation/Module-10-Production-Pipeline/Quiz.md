@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-10-Production-Pipeline/Quiz/
 title: "Module 10 Quiz: Production Pipeline"
 ---
 
-# 🧠 Module 10 Quiz — Production Pipeline
+# 🧠 Module 10 Quiz, Production Pipeline
 
 ---
 
@@ -55,7 +55,7 @@ D. Being exclusively for frame-by-frame animation with no rigging tools
 ### Q6. The "rough animation" stage in the pipeline prioritizes:
 
 A. Clean, on-model line quality that matches the model sheet precisely
-B. Timing, key poses, and performance — not line quality
+B. Timing, key poses, and performance, not line quality
 C. Digital color fills applied in the correct palette
 D. Camera moves and background staging
 
@@ -117,9 +117,9 @@ D. The After Effects script used to apply color grading automatically
 
 ### Q13. Broadcast studio pipelines typically take how long per episode compared to YouTube animator cycles?
 
-A. About the same — 4–6 weeks per episode for both
-B. Shorter for broadcast studios — they have larger teams so each episode takes less time
-C. Much longer for broadcast — 6–24 months per episode vs. 1–8 weeks for YouTube creators
+A. About the same, 4–6 weeks per episode for both
+B. Shorter for broadcast studios, they have larger teams so each episode takes less time
+C. Much longer for broadcast, 6–24 months per episode vs. 1–8 weeks for YouTube creators
 D. YouTube creators always take longer because they have no budget for outsourcing
 
 ---
@@ -217,7 +217,7 @@ D. TVPaint integrates directly with broadcast delivery pipelines without requiri
 ### Q24. Which of the following best describes a "series bible" in animation development?
 
 A. A collection of model sheets for all characters organized alphabetically
-B. A reference document defining the show's universe, tone, rules, character relationships, and recurring story elements — used to keep all writers and directors consistent
+B. A reference document defining the show's universe, tone, rules, character relationships, and recurring story elements, used to keep all writers and directors consistent
 C. The master script containing all dialogue for the entire first season
 D. The technical spec document defining software, codecs, and delivery formats for the production
 
@@ -226,28 +226,28 @@ D. The technical spec document defining software, codecs, and delivery formats f
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — The animatic is the storyboard cut to final audio; it reveals timing/pacing issues before animation.
-Q2.  B — Model sheets ensure character consistency across all animators in the production.
-Q3.  B — Layout establishes camera staging, shot composition, and character placement in the background.
-Q4.  C — Toon Boom Storyboard Pro is the industry standard storyboarding tool.
-Q5.  C — Harmony provides a complete pipeline with advanced deformers for major broadcast studios.
-Q6.  B — Rough animation prioritizes timing and performance; line quality comes in the cleanup stage.
-Q7.  B — Animatic changes cost hours; post-rough-animation changes cost weeks.
-Q8.  C — Cartoon Saloon (Secret of Kells, Song of the Sea) uses TVPaint.
-Q9.  C — Character key poses are set during rough/cleanup animation, not compositing.
-Q10. B — Model sheets show multiple angles, expressions, size charts, and color specs.
-Q11. B — Specialized cleanup artists redraw rough animation with precise, on-model clean lines.
-Q12. B — The color script maps palette choices to scenes for emotional storytelling consistency.
-Q13. C — Broadcast: 6–24 months per episode; YouTube creators: 1–8 weeks per video.
-Q14. B — Digital ink & paint = digital color fill applied to clean line drawings.
-Q15. B — The Simpsons and Rick and Morty use Toon Boom Harmony.
-Q16. C — Development stage: concept, character design, look development, series bible.
-Q17. B — TVPaint is the preferred tool for art-house hand-drawn studios like Cartoon Saloon.
-Q18. B — Advanced deformers, complete pipeline, and broadcast compatibility favor Harmony.
-Q19. B — Effects animation = fire, smoke, water, magic, explosions added during composite.
-Q20. C — Solo YouTube animators handle all stages; broadcast studios specialize departments.
-Q21. B — Pre-production decisions are cheap to change; production changes are expensive.
-Q22. C — Layout hands off staged composition with camera and character placement guides.
-Q23. C — TVPaint excels at frame-by-frame drawing with superior brush simulation.
-Q24. B — Series bible: defines the show's universe, tone, rules, and character relationships for all creative staff.
+Q1.  B, The animatic is the storyboard cut to final audio; it reveals timing/pacing issues before animation.
+Q2.  B, Model sheets ensure character consistency across all animators in the production.
+Q3.  B, Layout establishes camera staging, shot composition, and character placement in the background.
+Q4.  C, Toon Boom Storyboard Pro is the industry standard storyboarding tool.
+Q5.  C, Harmony provides a complete pipeline with advanced deformers for major broadcast studios.
+Q6.  B, Rough animation prioritizes timing and performance; line quality comes in the cleanup stage.
+Q7.  B, Animatic changes cost hours; post-rough-animation changes cost weeks.
+Q8.  C, Cartoon Saloon (Secret of Kells, Song of the Sea) uses TVPaint.
+Q9.  C, Character key poses are set during rough/cleanup animation, not compositing.
+Q10. B, Model sheets show multiple angles, expressions, size charts, and color specs.
+Q11. B, Specialized cleanup artists redraw rough animation with precise, on-model clean lines.
+Q12. B, The color script maps palette choices to scenes for emotional storytelling consistency.
+Q13. C, Broadcast: 6–24 months per episode; YouTube creators: 1–8 weeks per video.
+Q14. B, Digital ink & paint = digital color fill applied to clean line drawings.
+Q15. B, The Simpsons and Rick and Morty use Toon Boom Harmony.
+Q16. C, Development stage: concept, character design, look development, series bible.
+Q17. B, TVPaint is the preferred tool for art-house hand-drawn studios like Cartoon Saloon.
+Q18. B, Advanced deformers, complete pipeline, and broadcast compatibility favor Harmony.
+Q19. B, Effects animation = fire, smoke, water, magic, explosions added during composite.
+Q20. C, Solo YouTube animators handle all stages; broadcast studios specialize departments.
+Q21. B, Pre-production decisions are cheap to change; production changes are expensive.
+Q22. C, Layout hands off staged composition with camera and character placement guides.
+Q23. C, TVPaint excels at frame-by-frame drawing with superior brush simulation.
+Q24. B, Series bible: defines the show's universe, tone, rules, and character relationships for all creative staff.
 ```

@@ -1,4 +1,4 @@
-# Recommended Readings — ASCM CLTD (Logistics & Distribution)
+# Recommended Readings, ASCM CLTD (Logistics & Distribution)
 
 > The CLTD exam tests the body of knowledge that ASCM publishes. **Passing** the exam takes the official Learning System. **Mastering** the discipline requires reading more widely. The list below is curated for that wider mastery: the canonical textbooks Stanford GSB and MIT Sloan use, the seminal HBR/Sloan papers that *invented* the concepts the exam tests, the 2024–2026 industry resources that keep you current, and the free academic courses that overlap.
 >
@@ -14,10 +14,10 @@
 
 ### 2. Bowersox, Donald J., Closs, David J., & Cooper, M. Bixby. *Supply Chain Logistics Management.* 5th ed. McGraw-Hill, 2020. ISBN 978-1259722127.
 **Why it's worth your time.** The encyclopedic American counterpart to Christopher. Strongest on US-style transportation regulation, asset-based 3PL economics, and the operational integration of WMS/TMS/OMS. Co-author Bowersox was the founding professor of Michigan State's nationally-ranked logistics program.
-**When to engage.** Chapter 7 (Transportation) alongside Module 6 — depth that the CLTD body of knowledge summarizes briefly. Chapter 11 (Global) alongside Module 7.
+**When to engage.** Chapter 7 (Transportation) alongside Module 6, depth that the CLTD body of knowledge summarizes briefly. Chapter 11 (Global) alongside Module 7.
 
 ### 3. Coyle, John J., Langley, C. John, Novack, Robert A., & Gibson, Brian J. *Supply Chain Management: A Logistics Perspective.* 11th ed. Cengage, 2022. ISBN 978-0357442142.
-**Why it's worth your time.** The textbook the CLTD Learning System cites most heavily for transportation. John Coyle and Edward Bardi at Penn State trained two generations of practitioners. Strong scenario problems at the end of every chapter — closest match to CLTD exam-style questions.
+**Why it's worth your time.** The textbook the CLTD Learning System cites most heavily for transportation. John Coyle and Edward Bardi at Penn State trained two generations of practitioners. Strong scenario problems at the end of every chapter, closest match to CLTD exam-style questions.
 **When to engage.** Use as a problem-set companion to Modules 2, 4, 6. Take the chapter-end mini-cases as additional practice exams.
 
 ### 4. Frazelle, Edward H. *World-Class Warehousing and Material Handling.* 2nd ed. McGraw-Hill, 2016. ISBN 978-1259587931.
@@ -32,12 +32,12 @@
 
 ## 📜 Seminal Papers / HBR Articles / Reports (10)
 
-### 1. Forrester, Jay W. "Industrial Dynamics — A Major Breakthrough for Decision Makers." *Harvard Business Review*, July–August 1958.
-**Why it's worth your time.** Forrester (MIT Sloan) was the first to mathematically describe the **bullwhip effect** — demand variability amplifies upstream — using systems-dynamics modeling. Still required reading at MIT Sloan, IMD, and INSEAD. Every modern supply-chain visualization (e.g., the MIT "Beer Game" simulation) traces here.
+### 1. Forrester, Jay W. "Industrial Dynamics, A Major Breakthrough for Decision Makers." *Harvard Business Review*, July–August 1958.
+**Why it's worth your time.** Forrester (MIT Sloan) was the first to mathematically describe the **bullwhip effect** demand variability amplifies upstream using systems-dynamics modeling. Still required reading at MIT Sloan, IMD, and INSEAD. Every modern supply-chain visualization (e.g., the MIT "Beer Game" simulation) traces here.
 **When to engage.** Read between Modules 2 and 4. Pair with the Lee et al. 1997 paper below.
 
 ### 2. Lee, Hau L., Padmanabhan, V., & Whang, Seungjin. "The Bullwhip Effect in Supply Chains." *Sloan Management Review,* Spring 1997.
-**Why it's worth your time.** The formal definition and four causes (demand-signal processing, order batching, price fluctuations, rationing/shortage gaming) — vocabulary the CLTD exam uses verbatim. Open access via MIT Sloan.
+**Why it's worth your time.** The formal definition and four causes (demand-signal processing, order batching, price fluctuations, rationing/shortage gaming), vocabulary the CLTD exam uses verbatim. Open access via MIT Sloan.
 **When to engage.** Module 4. Pair with Forrester.
 
 ### 3. Lee, Hau L. "The Triple-A Supply Chain." *Harvard Business Review,* October 2004.
@@ -45,7 +45,7 @@
 **When to engage.** Module 1. Read once, then re-read at the end of the course.
 
 ### 4. Lee, Hau L., Billington, Corey, & Carter, Brent. "Hewlett-Packard Gains Control of Inventory and Service through Design for Localization." *Interfaces* 23(4), July–August 1993.
-**Why it's worth your time.** The original *postponement* case study — HP's printers redesigned for late-stage country-localization, with full quantitative ROI. The CLTD exam tests postponement using this exact case (paraphrased).
+**Why it's worth your time.** The original *postponement* case study, HP's printers redesigned for late-stage country-localization, with full quantitative ROI. The CLTD exam tests postponement using this exact case (paraphrased).
 **When to engage.** Module 4.
 
 ### 5. Council of Supply Chain Management Professionals (CSCMP). *35th Annual State of Logistics Report.* CSCMP, June 2024.
@@ -57,15 +57,15 @@
 **When to engage.** Module 8. Free PDF at smartfreightcentre.org.
 
 ### 7. World Resources Institute / WBCSD. *The Greenhouse Gas Protocol: Corporate Value Chain (Scope 3) Standard.* WRI/WBCSD, 2011.
-**Why it's worth your time.** The Scope-3 methodology now required under EU CSRD and several US state climate-disclosure laws. Categorizes the 15 sub-categories of Scope 3 emissions — Category 4 (upstream transportation & distribution) and Category 9 (downstream transportation & distribution) are the two that logistics directors own.
+**Why it's worth your time.** The Scope-3 methodology now required under EU CSRD and several US state climate-disclosure laws. Categorizes the 15 sub-categories of Scope 3 emissions, Category 4 (upstream transportation & distribution) and Category 9 (downstream transportation & distribution) are the two that logistics directors own.
 **When to engage.** Module 8.
 
 ### 8. Goldratt, Eliyahu M., and Cox, Jeff. *The Goal: A Process of Ongoing Improvement.* 4th ed. North River Press, 2014 (originally 1984). ISBN 978-0884271956.
-**Why it's worth your time.** The novel-format introduction to Theory of Constraints. Used at MIT Sloan, Wharton, Kellogg in operations courses for a reason — it makes TOC's five focusing steps stick in a way no textbook can. The CLTD exam tests TOC vocabulary that this book taught the discipline.
+**Why it's worth your time.** The novel-format introduction to Theory of Constraints. Used at MIT Sloan, Wharton, Kellogg in operations courses for a reason, it makes TOC's five focusing steps stick in a way no textbook can. The CLTD exam tests TOC vocabulary that this book taught the discipline.
 **When to engage.** Module 2.
 
 ### 9. Christensen, Clayton M., et al. "What Is the Job to Be Done?" *Harvard Business Review,* September 2016 (and Christensen's *Competing Against Luck,* HarperBusiness 2016, ISBN 978-0062435613).
-**Why it's worth your time.** Not a logistics text per se, but Christensen's "jobs-to-be-done" framework is the cleanest tool for thinking about *service segmentation* in logistics — the third of the five strategic decisions in Module 1.
+**Why it's worth your time.** Not a logistics text per se, but Christensen's "jobs-to-be-done" framework is the cleanest tool for thinking about *service segmentation* in logistics, the third of the five strategic decisions in Module 1.
 **When to engage.** Module 1, late.
 
 ### 10. Levinson, Marc. *The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger.* 2nd ed. Princeton University Press, 2016. ISBN 978-0691170817.
@@ -81,7 +81,7 @@
 **Format.** Membership at ~$185/yr (early career discount). Quarterly journal + webinar series.
 
 ### 2. *Journal of Business Logistics* (Wiley).
-**Why subscribe.** Peer-reviewed academic journal — the discipline's *Lancet*. CSCMP-affiliated; library access via most university accounts. Where new logistics frameworks (Resilient SC, AI-augmented routing, sustainability ROI) get formally validated.
+**Why subscribe.** Peer-reviewed academic journal, the discipline's *Lancet*. CSCMP-affiliated; library access via most university accounts. Where new logistics frameworks (Resilient SC, AI-augmented routing, sustainability ROI) get formally validated.
 **Format.** Quarterly, ~6 articles/issue.
 
 ### 3. **FreightWaves** (freightwaves.com).
@@ -89,7 +89,7 @@
 **When to engage.** Continuous during your career. During this course: Modules 6 and 8.
 
 ### 4. **Gartner Logistics & Supply Chain research** (gartner.com).
-**Why subscribe.** Annual Magic Quadrant for TMS and WMS — the analyst-vendor evaluations most enterprise buyers reference. Strong on the AI-augmented logistics tooling vendors. Paid subscription; many enterprise buyers have access.
+**Why subscribe.** Annual Magic Quadrant for TMS and WMS, the analyst-vendor evaluations most enterprise buyers reference. Strong on the AI-augmented logistics tooling vendors. Paid subscription; many enterprise buyers have access.
 **When to engage.** During the Capstone TMS RFP.
 
 ### 5. **The Loadstar** (theloadstar.com).
@@ -100,21 +100,21 @@
 
 ## 🎓 Free Academic Resources (3)
 
-### 1. **MIT Center for Transportation & Logistics — MITx MicroMasters in Supply Chain Management** (edx.org).
+### 1. **MIT Center for Transportation & Logistics, MITx MicroMasters in Supply Chain Management** (edx.org).
 **Why engage.** 5-course graduate-level credential covering Supply Chain Analytics, Design, Dynamics, Technology, and Capstone. Free to audit; ~$1,200 to earn the credential. Taught by Yossi Sheffi (MIT CTL Director, former author of *The Resilient Enterprise*). MicroMasters credit transfers to MIT's 1-year Master's degree.
 **When to engage.** Recommended *after* CLTD, as your next credential step.
 
-### 2. **MIT OpenCourseWare — 1.260J Logistics Systems** (Yossi Sheffi).
+### 2. **MIT OpenCourseWare, 1.260J Logistics Systems** (Yossi Sheffi).
 **Why engage.** Free MIT graduate-course content. Lectures, problem sets, and exams freely available. Covers everything in this CLTD course at greater mathematical depth.
-**When to engage.** During Modules 1, 2, 4 — Sheffi's lectures are the deepest treatment of network-design math you can find for free.
+**When to engage.** During Modules 1, 2, 4, Sheffi's lectures are the deepest treatment of network-design math you can find for free.
 
-### 3. **Stanford Graduate School of Business — Hau Lee's lectures on supply-chain strategy** (Stanford GSB YouTube + Stanford Online).
+### 3. **Stanford Graduate School of Business, Hau Lee's lectures on supply-chain strategy** (Stanford GSB YouTube + Stanford Online).
 **Why engage.** Hau Lee is the most-cited living supply-chain academic. Stanford's open lectures cover Triple-A, postponement, and resilience. Free.
 **When to engage.** Module 1 + Module 8.
 
 ---
 
-## 📚 Optional Deep-Dive Books (4 — for the specialist)
+## 📚 Optional Deep-Dive Books (4, for the specialist)
 
 - **George, Rose.** *Ninety Percent of Everything: Inside Shipping.* Metropolitan Books, 2013. ISBN 978-0805092639. A journalistic dive into the modern ocean industry. Required reading at Cambridge's Cambridge Centre for Risk Studies. Pair with Levinson's *The Box*.
 - **Sheffi, Yossi.** *The Resilient Enterprise: Overcoming Vulnerability for Competitive Advantage.* MIT Press, 2005. ISBN 978-0262693493. Sheffi (MIT CTL) formalized supply-chain resilience. Re-read this after the 2020–2024 era of shocks (pandemic, Suez, Red Sea, Yellow Freight, Baltimore Bridge).

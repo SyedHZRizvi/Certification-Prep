@@ -253,7 +253,7 @@
 **A:** 4–8 frames at 60fps.
 
 **Q:** Which technique does DOOM Eternal use instead of clip-based state machines for locomotion?
-**A:** Motion matching — selecting the best animation pose from a database based on the character's current velocity.
+**A:** Motion matching, selecting the best animation pose from a database based on the character's current velocity.
 
 **Q:** What is "coyote time" in platformer animation design?
 **A:** A grace window (0.1–0.15s) after walking off a ledge during which the player can still jump and the animation stays in an edge-peek state.
@@ -262,7 +262,7 @@
 **A:** 1) Bone removal at distance (disable finger/face bones), 2) Update rate reduction (15–30fps for distant chars), 3) Simplified clip LOD variants.
 
 **Q:** What is "game feel" per Steve Swink?
-**A:** The tactile, kinesthetic sense of manipulating a virtual object — the feeling of controlling a character, not just seeing it.
+**A:** The tactile, kinesthetic sense of manipulating a virtual object, the feeling of controlling a character, not just seeing it.
 
 **Q:** What animation philosophy did Hades use vs. DOOM Eternal?
 **A:** Hades: readability and exaggeration for top-down camera distance. DOOM: momentum preservation and motion matching for FPS visceral feel.
@@ -278,7 +278,7 @@
 **A:** A Trigger is consumed (reset) after one transition. A Bool persists until code explicitly sets it to false.
 
 **Q:** What does "Bake Into Pose" for Root Transform Position (XZ) do in Unity FBX import?
-**A:** Converts Root Motion to In-Place animation — the root stays at the origin.
+**A:** Converts Root Motion to In-Place animation, the root stays at the origin.
 
 **Q:** Which Unity rig type enables retargeting animation clips between different biped models?
 **A:** Humanoid rig.
@@ -287,7 +287,7 @@
 **A:** Auto-fires the transition at the specified normalized clip time fraction (e.g., 0.75 = 75% through the clip), even without a condition.
 
 **Q:** What does Unity's AnyState node allow?
-**A:** Transitions that can fire from any currently active state — used for Death, Knockdown, Dodge.
+**A:** Transitions that can fire from any currently active state, used for Death, Knockdown, Dodge.
 
 **Q:** What is an Avatar Mask in Unity?
 **A:** An asset that defines which bones a specific Animator layer can affect.
@@ -302,7 +302,7 @@
 **A:** Firing a C# method at a specific frame within an animation clip (footstep, hitbox activation, sound).
 
 **Q:** What is a 1D Blend Tree used for?
-**A:** Blending between multiple clips based on one float parameter — typically Speed for idle/walk/run locomotion.
+**A:** Blending between multiple clips based on one float parameter, typically Speed for idle/walk/run locomotion.
 
 **Q:** Which IK callback method must you override in Unity to set foot IK goals?
 **A:** OnAnimatorIK(int layerIndex)
@@ -333,16 +333,16 @@
 **A:** A visual rigging and procedural animation system that runs on the animation thread, used for real-time IK, secondary motion, and environmental interaction.
 
 **Q:** What is Unreal's Sequencer?
-**A:** A linear track-based cinematic editor — equivalent to Unity's Timeline — for scripted cutscenes and in-game cinematics.
+**A:** A linear track-based cinematic editor equivalent to Unity's Timeline for scripted cutscenes and in-game cinematics.
 
 **Q:** How many facial deformation controls does a MetaHuman have?
 **A:** Approximately 265 pose space deformation controls.
 
 **Q:** What does the "Layered Blend Per Bone" node do in Unreal's AnimGraph?
-**A:** Blends two poses per-bone — equivalent to Unity's Avatar Mask + Layer.
+**A:** Blends two poses per-bone, equivalent to Unity's Avatar Mask + Layer.
 
 **Q:** What is FABRIK in Unreal Engine?
-**A:** Forward And Backward Reaching IK — a multi-joint IK solver for arms, legs, and spine chains.
+**A:** Forward And Backward Reaching IK, a multi-joint IK solver for arms, legs, and spine chains.
 
 **Q:** What was the maximum transition blend time in Gears 5's cover system?
 **A:** 0.15 seconds, to maintain tactical responsiveness.
@@ -364,13 +364,13 @@
 **A:** 2 bone influences per vertex (iOS/Android).
 
 **Q:** What is Free-Form Deformation (FFD) in Spine?
-**A:** Moving mesh vertices directly and keyframing them without binding to additional bones — used for squash/stretch.
+**A:** Moving mesh vertices directly and keyframing them without binding to additional bones, used for squash/stretch.
 
 **Q:** What is a Spine Skin?
-**A:** A set of attachment swaps on a single skeleton — allows character variant customization (outfits, weapons) without duplicating animation data.
+**A:** A set of attachment swaps on a single skeleton, allows character variant customization (outfits, weapons) without duplicating animation data.
 
 **Q:** What does IK constraint Mix = 0.0 mean in Spine?
-**A:** Pure FK — the IK target has no influence on the bone chain.
+**A:** Pure FK, the IK target has no influence on the bone chain.
 
 **Q:** What file types does Spine export for the Unity runtime?
 **A:** .json (or .skel binary), .atlas, and .png texture atlas file(s).
@@ -388,7 +388,7 @@
 **A:** A polygon attachment used for hit detection and collision regions.
 
 **Q:** What is a Path Constraint in Spine?
-**A:** A constraint that makes bones move along a defined curve path — used for tails, tentacles, and snake bodies.
+**A:** A constraint that makes bones move along a defined curve path, used for tails, tentacles, and snake bodies.
 
 ---
 
@@ -398,7 +398,7 @@
 **A:** Transition latency (how often conditions are checked), blend duration (crossfade time), and interrupt conditions (whether new inputs can cancel in-progress blends).
 
 **Q:** In Unity's Animator, what does "Interruption Source: Current State" allow?
-**A:** Transitions leaving the source (current) state can interrupt an in-progress blend — enables responsive dodge/attack triggers.
+**A:** Transitions leaving the source (current) state can interrupt an in-progress blend, enables responsive dodge/attack triggers.
 
 **Q:** What is the typical blend time range for high-priority transitions in action games?
 **A:** 0.05–0.12 seconds.
@@ -407,23 +407,23 @@
 **A:** Triggers auto-reset after consumption, preventing transition loops where the condition stays true while already in the target state.
 
 **Q:** What is an additive animation clip different from a full-pose clip?
-**A:** An additive clip stores the delta from a reference pose, not the full pose — so it adds motion on top of whatever the base layer is playing.
+**A:** An additive clip stores the delta from a reference pose, not the full pose, so it adds motion on top of whatever the base layer is playing.
 
 **Q:** What is the "locomotion starter pack" minimum state count?
 **A:** Idle/Walk/Run blend tree, Jump Rise/Apex/Fall states, Soft Landing, Hard Landing, and optional Coyote Time window.
 
 **Q:** What does a Blend Tree's "lerp speed" control?
-**A:** How quickly the sample position moves toward the target parameter value — smoothing speed changes (too fast = no smoothing; too slow = mushy).
+**A:** How quickly the sample position moves toward the target parameter value, smoothing speed changes (too fast = no smoothing; too slow = mushy).
 
 **Q:** What is inertialization blending in Unreal Engine?
-**A:** A blend mode that preserves the animation's velocity at the blend start, producing smoother transitions without pops — without requiring longer blend times.
+**A:** A blend mode that preserves the animation's velocity at the blend start, producing smoother transitions without pops, without requiring longer blend times.
 
 **Q:** What is a "pushdown automaton" state machine pattern used for?
-**A:** Stack-based FSM — last state is pushed on a stack and popped when done; used for menus, conversation trees, and context-sensitive states.
+**A:** Stack-based FSM, last state is pushed on a stack and popped when done; used for menus, conversation trees, and context-sensitive states.
 
 ---
 
-## 🖥️ MODULE 6: UI ANIMATION — FIGMA, GSAP & FRAMER MOTION
+## 🖥️ MODULE 6: UI ANIMATION, FIGMA, GSAP & FRAMER MOTION
 
 **Q:** What does GSAP stand for?
 **A:** GreenSock Animation Platform.
@@ -432,22 +432,22 @@
 **A:** .to() animates from current values to target values. .from() animates from specified values to the current CSS-defined values.
 
 **Q:** What GSAP ease should you use for a progress bar?
-**A:** 'linear' — constant speed, no easing.
+**A:** 'linear', constant speed, no easing.
 
 **Q:** What does the GSAP Timeline '-=0.2' syntax mean?
 **A:** The tween starts 0.2 seconds before the end of the previous tween (creating a 0.2s overlap).
 
 **Q:** What is GSAP's Flip plugin used for?
-**A:** Animating between different layout states (grid reorder, card expand) — implementing the FLIP technique without manual coordinate tracking.
+**A:** Animating between different layout states (grid reorder, card expand), implementing the FLIP technique without manual coordinate tracking.
 
 **Q:** What does FLIP stand for?
-**A:** First, Last, Invert, Play — a technique for animating layout changes without per-frame layout recalculation.
+**A:** First, Last, Invert, Play, a technique for animating layout changes without per-frame layout recalculation.
 
 **Q:** What makes animating top/left bad for performance?
-**A:** They trigger layout recalculation every frame. Animate transform (x/y) instead — GPU compositor only.
+**A:** They trigger layout recalculation every frame. Animate transform (x/y) instead, GPU compositor only.
 
 **Q:** What does GSAP's 'back.out(1.7)' ease do?
-**A:** Overshoot — the element goes slightly past its target then settles back, creating a playful spring-like effect.
+**A:** Overshoot, the element goes slightly past its target then settles back, creating a playful spring-like effect.
 
 **Q:** What GSAP setting ties animation progress directly to scroll position?
 **A:** scrub: true in a ScrollTrigger configuration.
@@ -456,7 +456,7 @@
 **A:** Enabling exit animations when React components unmount from the DOM tree.
 
 **Q:** What is the correct easing for a UI element exiting the screen?
-**A:** Ease Out — starts fast, slows at the end, so the exit feels purposeful rather than popping.
+**A:** Ease Out, starts fast, slows at the end, so the exit feels purposeful rather than popping.
 
 **Q:** What is the Figma Smart Animate requirement for layers to be tweened?
 **A:** Both frames must contain layers with identical names.
@@ -475,10 +475,10 @@
 **A:** 'infinite'
 
 **Q:** Which browser rendering stage handles transform and opacity animations?
-**A:** Compositor — they skip Layout and Paint, going directly to GPU compositing.
+**A:** Compositor, they skip Layout and Paint, going directly to GPU compositing.
 
 **Q:** What does 'will-change: transform' do?
-**A:** Promotes the element to a GPU compositor layer before animation starts, reducing paint cost. Use sparingly — too many promoted layers waste GPU memory.
+**A:** Promotes the element to a GPU compositor layer before animation starts, reducing paint cost. Use sparingly, too many promoted layers waste GPU memory.
 
 **Q:** What is the recommended maximum Lottie file size for production web use?
 **A:** Under 50KB.
@@ -499,7 +499,7 @@
 **A:** AAA level (guideline 2.3.3).
 
 **Q:** What does the CSS 'steps(8, start)' timing function do?
-**A:** Creates 8 discrete jumps with no interpolation — used for sprite sheet animation.
+**A:** Creates 8 discrete jumps with no interpolation, used for sprite sheet animation.
 
 **Q:** What is the CSS 'animation-direction: alternate' behavior?
 **A:** Plays forward on odd iterations and backward on even iterations.
@@ -512,7 +512,7 @@
 **A:** VFX Graph runs on the GPU via compute shaders (1M+ particles); Shuriken is CPU-based (~50K particles practical limit).
 
 **Q:** What Unity render pipelines support VFX Graph?
-**A:** URP and HDRP only — NOT the Built-in Render Pipeline.
+**A:** URP and HDRP only, NOT the Built-in Render Pipeline.
 
 **Q:** What are the four contexts in Unity VFX Graph?
 **A:** Spawn, Initialize, Update, Output Particle.
@@ -521,7 +521,7 @@
 **A:** A noise texture is sampled; its value is compared to a Dissolve Amount parameter using Step or Smoothstep; the result clips the material's alpha.
 
 **Q:** What is the Fresnel Effect node in Shader Graph used for?
-**A:** Calculating the dot product of view direction and surface normal — high at glancing/edge angles, used for outlines and rim lighting.
+**A:** Calculating the dot product of view direction and surface normal, high at glancing/edge angles, used for outlines and rim lighting.
 
 **Q:** What is "juice" in game design?
 **A:** The layered combination of visual and audio feedback effects (screen shake, hit stop, squash/stretch, VFX) that makes interactions feel satisfying.
@@ -536,13 +536,13 @@
 **A:** Allowing particles in one emitter to trigger responses in another (e.g., projectile death event spawning an explosion emitter).
 
 **Q:** What does Supergiant Games' VFX design use large, high-contrast particles for in Hades?
-**A:** Readability at the top-down camera's distance — small particles disappear; large high-contrast ones read clearly in peripheral vision.
+**A:** Readability at the top-down camera's distance, small particles disappear; large high-contrast ones read clearly in peripheral vision.
 
 **Q:** What is Bungie's "first read" principle for Destiny 2 weapon VFX?
-**A:** Each weapon's VFX communicates its archetype (class, feel) before the player reads damage numbers — identifiable in peripheral vision.
+**A:** Each weapon's VFX communicates its archetype (class, feel) before the player reads damage numbers, identifiable in peripheral vision.
 
 **Q:** What does "overdraw" mean in particle VFX?
-**A:** Rendering the same screen pixel multiple times in one frame due to overlapping transparent particles — the primary GPU cost of particle systems.
+**A:** Rendering the same screen pixel multiple times in one frame due to overlapping transparent particles, the primary GPU cost of particle systems.
 
 **Q:** What is a Niagara Simulation Stage?
 **A:** A custom GPU compute shader pass that runs arbitrary logic on particle data, added after the standard update stage.

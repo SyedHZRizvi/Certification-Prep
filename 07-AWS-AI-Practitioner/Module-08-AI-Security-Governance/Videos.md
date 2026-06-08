@@ -20,7 +20,7 @@
 
 # 🎥 Module 8 Videos: AI Security & Governance
 
-> **How to use:** This is where the AWS security generalist content overlaps. If you've done CCP or SAA, the IAM/KMS/VPC parts are review — just focus on the AI-specific overlays (Bedrock IAM, KB security, invocation logging, AI-specific threats).
+> **How to use:** This is where the AWS security generalist content overlaps. If you've done CCP or SAA, the IAM/KMS/VPC parts are review, just focus on the AI-specific overlays (Bedrock IAM, KB security, invocation logging, AI-specific threats).
 
 ## ⭐ Essential watching (~55 min)
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Shared Responsibility — Adapted for AI Workloads</p>
+      <p class="vg-title">Shared Responsibility, Adapted for AI Workloads</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 12 min · The cloud / in-the-cloud split for AI</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AIF-C01 — Security &amp; Governance Domain Walkthrough</p>
+      <p class="vg-title">AIF-C01, Security &amp; Governance Domain Walkthrough</p>
       <p class="vg-creator">ExamPro / Stephane Maarek</p>
       <span class="vg-duration">⏱ 15 min · Exam-aligned recap</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS Macie — PII Discovery in S3</p>
+      <p class="vg-title">AWS Macie, PII Discovery in S3</p>
       <p class="vg-creator">AWS Security</p>
       <span class="vg-duration">⏱ 10 min · Pre-RAG data hygiene</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">KMS Customer-Managed Keys — Best Practices</p>
+      <p class="vg-title">KMS Customer-Managed Keys, Best Practices</p>
       <p class="vg-creator">AWS Security</p>
       <span class="vg-duration">⏱ 18 min · Key rotation, policies, audit</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Nitro Enclaves — Confidential AI Computing</p>
+      <p class="vg-title">Nitro Enclaves, Confidential AI Computing</p>
       <p class="vg-creator">AWS Security</p>
       <span class="vg-duration">⏱ 18 min · Isolated in-use data protection</span>
     </div>
@@ -150,4 +150,4 @@
 4. List 5 AI-specific threats and one mitigation each.
 5. What document do you need before running HIPAA workloads on AWS?
 
-Now take **[Practice Exam 2](../Practice-Exams/Practice-Exam-2.md)** — you've covered all 5 exam domains.
+Now take **[Practice Exam 2](../Practice-Exams/Practice-Exam-2.md)**, you've covered all 5 exam domains.

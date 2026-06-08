@@ -6,9 +6,9 @@ title: "Module 10: VFX Breakdown Reel"
 
 ## The Work You'll Never Show the Audience
 
-Marcus Flacks has been a compositor at DNEG for six years. He has worked on *Tenet*, *Dune*, and *Oppenheimer*. When he sends his résumé to a new studio, he doesn't send the films — the audience has already seen those. He sends a 90-second reel that shows the supervisor of each shot in three or four frames: the raw plate, the tracked elements, the composited result, and sometimes a wireframe of the 3D elements. In 90 seconds, an experienced VFX supervisor at ILM knows exactly what Marcus can do.
+Marcus Flacks has been a compositor at DNEG for six years. He has worked on *Tenet*, *Dune*, and *Oppenheimer*. When he sends his résumé to a new studio, he doesn't send the films, the audience has already seen those. He sends a 90-second reel that shows the supervisor of each shot in three or four frames: the raw plate, the tracked elements, the composited result, and sometimes a wireframe of the 3D elements. In 90 seconds, an experienced VFX supervisor at ILM knows exactly what Marcus can do.
 
-Your reel is your practice exam. It is the one deliverable in your career that you have 100% control over — no client notes, no budget constraints, no pipeline limitations. Every second of it is a deliberate choice.
+Your reel is your practice exam. It is the one deliverable in your career that you have 100% control over, no client notes, no budget constraints, no pipeline limitations. Every second of it is a deliberate choice.
 
 ---
 
@@ -16,7 +16,7 @@ Your reel is your practice exam. It is the one deliverable in your career that y
 
 ### The First 15 Seconds Rule
 
-The supervisor reviewing your reel will make their initial assessment within the first 15 seconds. This is not cynicism — it is efficiency. A person reviewing 200 reels per week must triage quickly.
+The supervisor reviewing your reel will make their initial assessment within the first 15 seconds. This is not cynicism, it is efficiency. A person reviewing 200 reels per week must triage quickly.
 
 **Rules for the first 15 seconds:**
 1. **Your absolute best shot is first.** Not your first shot chronologically. Not your most complex shot. Your best shot.
@@ -34,7 +34,7 @@ Every shot in your reel should be presented in one of these formats:
 | **Side-by-side: plate / elements / final** | 8–12 seconds | Complex comp, multi-element integration |
 | **Breakdown sequence** | 10–20 seconds | Explosion FX, destruction sequence |
 
-> ⚠️ **Rookie mistake:** A reel that shows only the finished composite — with no breakdown — tells a supervisor nothing. They can see the finished film in theaters. They want to see the plate, the matte, the individual elements, and your decision-making in building the final shot.
+> ⚠️ **Rookie mistake:** A reel that shows only the finished composite with no breakdown tells a supervisor nothing. They can see the finished film in theaters. They want to see the plate, the matte, the individual elements, and your decision-making in building the final shot.
 
 ### What Supervisors Are Actually Evaluating
 
@@ -52,7 +52,7 @@ Every shot in your reel should be presented in one of these formats:
 
 ## 🎬 Case Study: What a Professional VFX Breakdown Reel Looks Like
 
-To understand the standard, examine the structure of ILM's published VFX breakdowns for *Avengers: Endgame* — the same format compositors use for their personal reels.
+To understand the standard, examine the structure of ILM's published VFX breakdowns for *Avengers: Endgame*, the same format compositors use for their personal reels.
 
 ### The ILM Endgame Breakdown Structure
 
@@ -96,7 +96,7 @@ When a supervisor opens a reel submission, they process approximately this seque
 | 30–60 | Is there evidence of Nuke? | Nuke composite visible = Pass for film (film-only AE = immediate reject) |
 | 60–90 | Is there at least one shot I'd consider for my current production? | Yes = strong shortlist; No = polite decline |
 
-> 🎯 **What the exam tests:** Supervisors make their initial judgment in 15 seconds. The reel's first shot is the most important shot. No intro, no title card, no music build-up — cut directly to your best work with a plate-to-comp split immediately visible.
+> 🎯 **What the exam tests:** Supervisors make their initial judgment in 15 seconds. The reel's first shot is the most important shot. No intro, no title card, no music build-up, cut directly to your best work with a plate-to-comp split immediately visible.
 
 ### What "Not Enough Nuke" Means
 
@@ -104,7 +104,7 @@ For film compositor positions, "not enough Nuke" is the single most common reaso
 
 | Situation | Outcome |
 |-----------|---------|
-| AE-only reel for film position | Immediate reject — film studios use Nuke exclusively |
+| AE-only reel for film position | Immediate reject, film studios use Nuke exclusively |
 | AE-heavy with one Nuke shot | May pass for TV/streaming; weak for feature film |
 | Nuke-primary reel with some AE for particles | Strong for film positions; fine for TV |
 | Nuke-only reel | Strong for all film and premium streaming positions |
@@ -117,7 +117,7 @@ Two distinct career tracks emerge from this course:
 
 ### Compositor Track
 
-A compositor's primary identity is **shot finishing** — integrating all elements into the final deliverable. The compositor works in 2D (or 2.5D) and focuses on integration, color, edge quality, and visual cohesion.
+A compositor's primary identity is **shot finishing**, integrating all elements into the final deliverable. The compositor works in 2D (or 2.5D) and focuses on integration, color, edge quality, and visual cohesion.
 
 **Career progression:**
 - **Junior Compositor** → **Mid Compositor** → **Senior Compositor** → **Lead Compositor** → **CG Supervisor / VFX Supervisor**
@@ -128,7 +128,7 @@ A compositor's primary identity is **shot finishing** — integrating all elemen
 
 ### VFX Artist Track
 
-A VFX artist's identity is **creating elements** — building the particle systems, simulations, and motion graphics that the compositor integrates. The VFX artist works in both 2D (AE, Nuke) and 3D (Houdini, Blender) and may specialize in FX simulation.
+A VFX artist's identity is **creating elements**, building the particle systems, simulations, and motion graphics that the compositor integrates. The VFX artist works in both 2D (AE, Nuke) and 3D (Houdini, Blender) and may specialize in FX simulation.
 
 **Career progression:**
 - **Junior VFX Artist** → **FX Artist** → **Senior FX Artist** → **FX Supervisor** → **CG Supervisor**
@@ -160,7 +160,7 @@ Different studios have different hiring criteria based on their work type and pi
 - Founded 1975 by George Lucas for *Star Wars*; now a Disney company
 - Global offices: San Francisco, London, Sydney, Vancouver, Mumbai, Singapore
 - Work: every major Marvel, Star Wars, Indiana Jones production; IMAX documentary; commercial work
-- Culture: **deep specialization** — a junior compositor at ILM may spend months on a single character or sequence
+- Culture: **deep specialization**, a junior compositor at ILM may spend months on a single character or sequence
 - Technology: proprietary pipeline tools + Nuke; increasingly VR and real-time (ILM XR for StageCraft)
 - Career path: slower advancement due to scale; very high technical bar; extraordinary learning environment
 - Salary: ILM pays IATSE VES-standard rates; SF/LA market; $55K–$75K junior, $90K–$130K mid, $130K–$200K senior
@@ -169,7 +169,7 @@ Different studios have different hiring criteria based on their work type and pi
 
 - Examples: Crafty Apes, Luma Pictures, Zoic Studios, Barnstorm VFX, Deluxe (TV division)
 - Work: TV series VFX, mid-budget feature films, broadcast
-- Culture: **generalist work** — a compositor at a boutique may key, roto, track, and finish shots in the same week
+- Culture: **generalist work**, a compositor at a boutique may key, roto, track, and finish shots in the same week
 - Technology: Nuke/After Effects mix; pipeline is lighter; more direct director access
 - Career path: faster advancement (can become lead/supervisor in 3–5 years); less job security (project-based)
 - Salary: $50K–$80K junior; $75K–$110K mid; $100K–$150K senior; less overhead than major studios
@@ -187,7 +187,7 @@ Different studios have different hiring criteria based on their work type and pi
 
 ## 💻 Freelance VFX: Rates and Market
 
-Freelance VFX work is abundant — music videos, commercials, branded content, YouTube creators, independent films, and streaming productions all hire VFX artists on a project basis.
+Freelance VFX work is abundant, music videos, commercials, branded content, YouTube creators, independent films, and streaming productions all hire VFX artists on a project basis.
 
 ### Freelance Rate Tiers (2025–2026)
 
@@ -199,10 +199,10 @@ Freelance VFX work is abundant — music videos, commercials, branded content, Y
 | Expert/Supervisor | $175–$300+/hr | $1400–$2400/day | Feature film, on-call supervision |
 
 **Platforms for VFX freelance work:**
-- **ProductionHub** — the professional standard for film/TV freelance
-- **Mandy.com** — film/TV production freelance
-- **LinkedIn** — direct outreach to studios; supervisor-level work
-- **VFX sub-Reddit community** — job postings and networking
+- **ProductionHub**, the professional standard for film/TV freelance
+- **Mandy.com**, film/TV production freelance
+- **LinkedIn**, direct outreach to studios; supervisor-level work
+- **VFX sub-Reddit community**, job postings and networking
 
 ---
 
@@ -254,18 +254,18 @@ Professional reels are **60–120 seconds**. No more. A 3-minute reel tells a su
 
 ---
 
-## 🎯 What the Exam Tests — Module 10
+## 🎯 What the Exam Tests, Module 10
 
 1. **First 15 seconds rule:** The supervisor makes their assessment in 15 seconds. Best shot first, no intro titles, no music fade-in. Cut directly to work.
 2. **Breakdown format requirement:** Plate → elements → final. A reel showing only the final composite communicates nothing about the artist's work.
 3. **Nuke for film positions:** A film compositor position requires Nuke proficiency. Showing only AE work on a film position reel will result in immediate rejection.
-4. **Team shot labeling:** In a collaborative production, clearly state what you specifically did. "Compositing: roto, keying" — not implied credit for the full shot.
+4. **Team shot labeling:** In a collaborative production, clearly state what you specifically did. "Compositing: roto, keying", not implied credit for the full shot.
 5. **Reel length standard:** 60–120 seconds maximum. Shot count: 4–8 shots. Quality over quantity.
-6. **ILM culture:** Deep specialization — junior compositors may spend months on a single character. High technical bar. Slower advancement than boutiques.
-7. **IATSE Local 839 scope:** Covers animators and VFX artists. Sets minimum wage floor. Not universal — many major facilities (especially outside LA) are not unionized.
+6. **ILM culture:** Deep specialization, junior compositors may spend months on a single character. High technical bar. Slower advancement than boutiques.
+7. **IATSE Local 839 scope:** Covers animators and VFX artists. Sets minimum wage floor. Not universal, many major facilities (especially outside LA) are not unionized.
 8. **Boutique vs major studio:** Boutiques = generalist work, faster advancement, lower salary. Major studios = specialized, slower advancement, higher salary, better job security.
 9. **Freelance mid-level rate:** $65–$100/hr or $520–$800/day. ProductionHub and Mandy.com are primary platforms.
-10. **Shot variety requirement:** A single-technique reel (all greenscreen keys, or all explosions) signals limited range. Studios hiring generalists want to see keying, roto, tracking, color, FX — at minimum 4 different VFX categories.
+10. **Shot variety requirement:** A single-technique reel (all greenscreen keys, or all explosions) signals limited range. Studios hiring generalists want to see keying, roto, tracking, color, FX, at minimum 4 different VFX categories.
 
 ---
 
@@ -288,7 +288,7 @@ Professional reels are **60–120 seconds**. No more. A 3-minute reel tells a su
 
 ## 🎯 Final Words
 
-Every module in this course has given you a technical foundation. Keying, rotoscoping, tracking, particles, Nuke, color, invisible FX, destruction. What makes a VFX career is not mastery of tools — it is the judgment to know which tool, at which moment, produces the result that makes the audience believe the impossible.
+Every module in this course has given you a technical foundation. Keying, rotoscoping, tracking, particles, Nuke, color, invisible FX, destruction. What makes a VFX career is not mastery of tools, it is the judgment to know which tool, at which moment, produces the result that makes the audience believe the impossible.
 
 The compositor's job is to be invisible. The audience's belief is your success.
 
@@ -303,12 +303,12 @@ The compositor's job is to be invisible. The audience's belief is your success.
 | Look bible | Consistency document for multi-vendor productions; contains grade references and Nuke scripts |
 | Vendor QC | Quality review ensuring a studio's deliverables match the look bible |
 | Hero shot | A Tier 4 complex shot requiring the most resources; often the film's most memorable VFX |
-| TD | Technical Director — a pipeline/scripting specialist bridging technical and artistic departments |
+| TD | Technical Director, a pipeline/scripting specialist bridging technical and artistic departments |
 | Comp supervisor | Leads the compositing department on a production; reviews all shots |
 | VFX supervisor | The overall creative/technical lead for a film's VFX; on set during photography |
-| IATSE | International Alliance of Theatrical Stage Employees — the North American entertainment union |
-| BECTU | Broadcasting, Entertainment, Communications and Theatre Union — UK equivalent of IATSE |
-| ILM | Industrial Light & Magic — founded 1975 by George Lucas; now a Disney company |
+| IATSE | International Alliance of Theatrical Stage Employees, the North American entertainment union |
+| BECTU | Broadcasting, Entertainment, Communications and Theatre Union, UK equivalent of IATSE |
+| ILM | Industrial Light & Magic, founded 1975 by George Lucas; now a Disney company |
 | Weta FX | Wellington, NZ VFX studio; created *The Lord of the Rings* CGI; now an independent company |
 | Framestore | London-based VFX and post-production studio; *Gravity*, *Guardians of the Galaxy* |
 | DNEG | Double Negative; London/Vancouver; *1917*, *Dune*, *Oppenheimer* |
@@ -370,8 +370,8 @@ Understanding how studios hire helps you plan your career entry:
 
 ## 📚 Further Reading
 
-- **The Visual Effects Society (visualeffectssociety.com)** — professional organization; attend local events for networking; access VES forums
-- **befores & afters magazine (beforesandafters.com)** — the professional standard for VFX journalism; detailed making-of articles on every major release
-- **VFX Voice magazine** — VES publication; quarterly; career and technology coverage
-- **"The VFX Artist's Guide to Building a Reel" — VES YouTube channel** — official advice from working supervisors
-- **IATSE Local 839 (animationguild.org)** — current contract rates, health and pension information
+- **The Visual Effects Society (visualeffectssociety.com)**, professional organization; attend local events for networking; access VES forums
+- **befores & afters magazine (beforesandafters.com)**, the professional standard for VFX journalism; detailed making-of articles on every major release
+- **VFX Voice magazine**, VES publication; quarterly; career and technology coverage
+- **"The VFX Artist's Guide to Building a Reel" VES YouTube channel** official advice from working supervisors
+- **IATSE Local 839 (animationguild.org)**, current contract rates, health and pension information

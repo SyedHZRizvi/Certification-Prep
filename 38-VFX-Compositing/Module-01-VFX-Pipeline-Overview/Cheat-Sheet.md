@@ -11,9 +11,9 @@ title: "Module 1 Cheat Sheet: VFX Pipeline Overview"
 | Development & Bidding | VFX Producer | Beat sheet, bid |
 | Pre-Production / Pre-vis | Pre-vis Supervisor | Animatic cuts |
 | Principal Photography | VFX Supervisor | Plates + data package |
-| Post — Matchmove | Matchmove TD | Tracked cameras |
-| Post — 3D/DMP/FX | CG Supervisor | EXR render packages |
-| Post — Compositing | Comp Supervisor | Final composite |
+| Post, Matchmove | Matchmove TD | Tracked cameras |
+| Post, 3D/DMP/FX | CG Supervisor | EXR render packages |
+| Post, Compositing | Comp Supervisor | Final composite |
 | DI / Color | Colorist | Finished film |
 
 ---
@@ -82,17 +82,17 @@ title: "Module 1 Cheat Sheet: VFX Pipeline Overview"
 
 ## 1917 Invisible Stitch: 5-Point Match Checklist
 
-1. **Camera geometry** — 3D solve both plates to sub-pixel alignment
-2. **Color** — primary grade: exposure, color temp, contrast
-3. **Grain** — single unified grain layer over the joined composite
-4. **Atmospheric depth** — haze and depth-fog matched across the stitch frame
-5. **Motion blur** — stitch hidden at peak motion-blur frames
+1. **Camera geometry**, 3D solve both plates to sub-pixel alignment
+2. **Color**, primary grade: exposure, color temp, contrast
+3. **Grain**, single unified grain layer over the joined composite
+4. **Atmospheric depth**, haze and depth-fog matched across the stitch frame
+5. **Motion blur**, stitch hidden at peak motion-blur frames
 
 **Missing any one of these five makes the stitch visible.**
 
 ---
 
-## Avengers: Endgame — Vendor Breakdown
+## Avengers: Endgame, Vendor Breakdown
 
 | Vendor | Responsibility |
 |--------|--------------|
@@ -110,9 +110,9 @@ title: "Module 1 Cheat Sheet: VFX Pipeline Overview"
 |------|-----------|
 | Pre-vis | Animatic preview for VFX planning |
 | HDR probe | Lighting reference for 3D IBL |
-| AOV | Arbitrary Output Variable — named channel in multi-EXR |
-| DI | Digital Intermediate — final color grade facility |
-| Floating blacks | Camera sensor artifact — shadow fluctuation |
+| AOV | Arbitrary Output Variable, named channel in multi-EXR |
+| DI | Digital Intermediate, final color grade facility |
+| Floating blacks | Camera sensor artifact, shadow fluctuation |
 | Clean plate | Shot without actor; paint/cleanup reference |
 | Witness camera | Off-axis reference camera |
 | Look bible | Per-vendor consistency document for multi-studio productions |

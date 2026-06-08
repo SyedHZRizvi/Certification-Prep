@@ -1,7 +1,7 @@
-# 🧪 Practice Exam 1 — CompTIA A+ Core 1 (220-1101 Style)
+# 🧪 Practice Exam 1, CompTIA A+ Core 1 (220-1101 Style)
 
 > **Conditions:** Set a 45-minute timer. 45 questions. Treat it like the real thing.
-> **Pass mark:** 38/45 (~85%) — Core 1 passes at ~75% so aim higher in practice.
+> **Pass mark:** 38/45 (~85%), Core 1 passes at ~75% so aim higher in practice.
 > Take this AFTER finishing Modules 1–6. Covers Mobile, Networking, Hardware, Virtualization, Hardware/Network Troubleshooting, Printers.
 
 ---
@@ -68,14 +68,14 @@ B. 172.16.0.0/12
 C. 192.168.0.0/16
 D. 169.254.0.0/16
 
-### 11. A PC won't power on — no fans, no LEDs. The MOST efficient FIRST three checks (in order):
+### 11. A PC won't power on, no fans, no LEDs. The MOST efficient FIRST three checks (in order):
 A. Replace motherboard, then CPU, then RAM
 B. PSU switch + wall outlet + front-panel power connector
 C. Reformat the SSD
 D. Update BIOS
 
 ### 12. Continuous beeping at boot on a desktop MOST commonly indicates:
-A. RAM problem — reseat or test
+A. RAM problem, reseat or test
 B. Hard drive failure
 C. PSU failure
 D. Normal POST
@@ -111,8 +111,8 @@ C. Reinstall Windows
 D. Restart the monitor
 
 ### 18. Hypervisor type that runs DIRECTLY on hardware (no host OS):
-A. Type 1 (bare-metal) — ESXi, Hyper-V Server, KVM
-B. Type 2 (hosted) — VirtualBox, Workstation
+A. Type 1 (bare-metal), ESXi, Hyper-V Server, KVM
+B. Type 2 (hosted), VirtualBox, Workstation
 C. Container
 D. Microservice
 
@@ -120,7 +120,7 @@ D. Microservice
 A. Nothing
 B. The OS, application, and data
 C. Just the data
-D. Nothing — fully managed
+D. Nothing, fully managed
 
 ### 20. SaaS (Software as a Service) example:
 A. AWS EC2
@@ -152,7 +152,7 @@ B. tracert / traceroute
 C. nslookup
 D. netstat
 
-### 24. SAS / SATA / NVMe — which is connected via PCIe bus?
+### 24. SAS / SATA / NVMe, which is connected via PCIe bus?
 A. SAS
 B. SATA
 C. NVMe
@@ -172,7 +172,7 @@ D. Is the same
 
 ### 27. A user's PC has IP 169.254.42.10 / 16. This indicates:
 A. Valid public IP
-B. APIPA — DHCP failure
+B. APIPA, DHCP failure
 C. Manually configured by IT
 D. Cisco device
 
@@ -212,7 +212,7 @@ B. Establish a plan of action and implement the solution
 C. Identify the problem
 D. Verify full system functionality
 
-### 34. A 4-disk RAID 5 array of 4 TB drives — usable capacity:
+### 34. A 4-disk RAID 5 array of 4 TB drives, usable capacity:
 A. 4 TB
 B. 8 TB
 C. 12 TB
@@ -290,10 +290,10 @@ D. (a) ISP, (b) RAM, (c) DNS, (d) APIPA
 3) Tolerates long rebuild times
 
 Which is the BEST RAID choice?
-A. RAID 0 with 4 disks — speed first
-B. RAID 5 with 4 disks — best capacity
-C. **RAID 6 with 4 disks** — dual parity, survives 2 failures
-D. JBOD — no redundancy
+A. RAID 0 with 4 disks, speed first
+B. RAID 5 with 4 disks, best capacity
+C. **RAID 6 with 4 disks**, dual parity, survives 2 failures
+D. JBOD, no redundancy
 
 ---
 

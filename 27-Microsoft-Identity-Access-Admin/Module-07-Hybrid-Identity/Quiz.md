@@ -62,7 +62,7 @@ D. `O365SSO`
 
 ---
 
-### Q8. **Yes/No** — Sync products. *(Understand)*
+### Q8. **Yes/No**, Sync products. *(Understand)*
 
 **S1:** Both Entra Connect and Cloud Sync support password write-back.
 **S2:** Group write-back is supported only in Entra Connect.
@@ -75,7 +75,7 @@ D. No / No / No
 
 ---
 
-### Q9. A scenario: "Multi-forest M&A — newly acquired forest has no trust to existing forest." Best fit: *(Apply)*
+### Q9. A scenario: "Multi-forest M&A, newly acquired forest has no trust to existing forest." Best fit: *(Apply)*
 A. Entra Connect with forest trust
 B. Cloud Sync (supports multi-forest without trust)
 C. Federation
@@ -115,7 +115,7 @@ D. All four write-back types
 
 ---
 
-### Q14. **Yes/No** — Auth topology features. *(Understand)*
+### Q14. **Yes/No**, Auth topology features. *(Understand)*
 
 **S1:** PHS allows users to sign in to Entra even if the on-prem domain controller is down.
 **S2:** PTA validates passwords on-prem; password never leaves the corporate network.
@@ -152,7 +152,7 @@ D. Every 1 year
 
 ---
 
-### Q18. **Yes/No** — Hybrid Entra Join. *(Understand)*
+### Q18. **Yes/No**, Hybrid Entra Join. *(Understand)*
 
 **S1:** HEJ devices can be targeted by Conditional Access requiring "Hybrid Entra Joined device."
 **S2:** Entra-Joined devices are the same as Hybrid Entra Joined.
@@ -219,7 +219,7 @@ D. Via AD FS
 
 ---
 
-### Q25. **Yes/No** — Topology decisions. *(Evaluate)*
+### Q25. **Yes/No**, Topology decisions. *(Evaluate)*
 
 **S1:** PHS + Seamless SSO is the simplest and most-recommended modern hybrid topology.
 **S2:** Federation is being modernized via Entra-native CBA for smart-card scenarios.
@@ -286,7 +286,7 @@ PHS-as-DR is Microsoft's recommendation even for federation customers.
 Microsoft-published guidance; rotate the SSO computer account password regularly.
 
 ### Q18: **A. Yes / No / Yes**
-S1 yes. S2 no (different — HEJ is both worlds). S3 yes (HEJ supports co-management).
+S1 yes. S2 no (different, HEJ is both worlds). S3 yes (HEJ supports co-management).
 
 ### Q19: **B. Enable PHS in parallel (as backup) while AD FS remains primary**
 Lufthansa pattern: PHS as backup BEFORE decommissioning AD FS.

@@ -1,17 +1,17 @@
 ---
 permalink: /04-AWS-Solutions-Architect-Associate/Capstone-Project/
-title: Capstone Project — AWS Solutions Architect Associate (SAA-C03)
+title: Capstone Project, AWS Solutions Architect Associate (SAA-C03)
 ---
 
-# Capstone Project — AWS Solutions Architect Associate ☁️
+# Capstone Project, AWS Solutions Architect Associate ☁️
 
-> **Why this exists.** The SAA-C03 exam tests whether you can pick the right service. A real architect role tests whether you can design a system that survives reality: a board-level budget, a non-negotiable SLA, a 9-month deadline, and a CISO who reviews your decisions. This capstone forces you to integrate every module of this course into one defensible architecture — the kind you'd present at a Harvard MBA case discussion or a re:Invent customer keynote.
+> **Why this exists.** The SAA-C03 exam tests whether you can pick the right service. A real architect role tests whether you can design a system that survives reality: a board-level budget, a non-negotiable SLA, a 9-month deadline, and a CISO who reviews your decisions. This capstone forces you to integrate every module of this course into one defensible architecture, the kind you'd present at a Harvard MBA case discussion or a re:Invent customer keynote.
 
 ---
 
 ## 🎯 Brief
 
-You are the **newly-hired Lead Cloud Architect at "Larkin Health Analytics"** — a Series-C SaaS company headquartered in Boston with a satellite office in Berlin.
+You are the **newly-hired Lead Cloud Architect at "Larkin Health Analytics"**, a Series-C SaaS company headquartered in Boston with a satellite office in Berlin.
 
 | Aspect | Detail |
 |---|---|
@@ -22,7 +22,7 @@ You are the **newly-hired Lead Cloud Architect at "Larkin Health Analytics"** �
 | Compliance | HIPAA (US health data), GDPR (EU residents), SOC 2 Type II |
 | Existing infra | Monolithic Rails app + PostgreSQL on a single colocation facility in Massachusetts; one Sidekiq worker fleet; an unmanaged ML serving layer on a single GPU box |
 
-**The mandate from the CEO and Board.** Migrate everything to AWS within **9 months** with a **$2.8M total budget** for the migration program (cloud spend, tooling, and short-term consulting included). Maintain a **99.95% SLA** on production user-facing traffic during and after the cut-over. Ship at least three new features in parallel — the business does not pause for the migration. The CISO has set additional non-negotiables: zero PII in test environments, every backup encrypted with customer-managed KMS, no cross-region data egress outside US-East-1 / US-West-2 / EU-Central-1, and no production write access for any human (humans use Identity Center; production writes happen through CI/CD).
+**The mandate from the CEO and Board.** Migrate everything to AWS within **9 months** with a **$2.8M total budget** for the migration program (cloud spend, tooling, and short-term consulting included). Maintain a **99.95% SLA** on production user-facing traffic during and after the cut-over. Ship at least three new features in parallel, the business does not pause for the migration. The CISO has set additional non-negotiables: zero PII in test environments, every backup encrypted with customer-managed KMS, no cross-region data egress outside US-East-1 / US-West-2 / EU-Central-1, and no production write access for any human (humans use Identity Center; production writes happen through CI/CD).
 
 ---
 
@@ -30,7 +30,7 @@ You are the **newly-hired Lead Cloud Architect at "Larkin Health Analytics"** �
 
 You will produce **seven artifacts**. Each artifact must integrate concepts from at least three modules of this course.
 
-### Deliverable 1 — Target Architecture Diagram (single page)
+### Deliverable 1, Target Architecture Diagram (single page)
 
 A high-resolution architecture diagram on one page (legal-size print). Must include:
 
@@ -44,7 +44,7 @@ A high-resolution architecture diagram on one page (legal-size print). Must incl
 
 Cite **Modules 1, 4, 8, 10**.
 
-### Deliverable 2 — Migration Runbook (12–20 pages)
+### Deliverable 2, Migration Runbook (12–20 pages)
 
 A step-by-step migration plan that a new engineer can read and execute. Must include:
 
@@ -58,12 +58,12 @@ A step-by-step migration plan that a new engineer can read and execute. Must inc
 
 Cite **Modules 2, 6, 10**.
 
-### Deliverable 3 — Cost Model & TCO Comparison (spreadsheet + 3-page memo)
+### Deliverable 3, Cost Model & TCO Comparison (spreadsheet + 3-page memo)
 
 A 3-year TCO model comparing:
 
 - **Option A:** Stay on-prem, refresh hardware in year 2 ($1.8M capex + $700K/yr opex)
-- **Option B:** Lift-and-shift to AWS (all EC2, EBS, RDS — no refactoring)
+- **Option B:** Lift-and-shift to AWS (all EC2, EBS, RDS, no refactoring)
 - **Option C:** Modernize to AWS-native (Aurora Serverless v2, Lambda for async, ECS Fargate for web tier, DynamoDB for hot reads, CloudFront + S3 for static, Bedrock for ML inference)
 
 For each option, calculate:
@@ -78,7 +78,7 @@ The accompanying memo (3 pages, addressed to the CFO) must **recommend one optio
 
 Cite **Modules 3, 5, 6, 9**.
 
-### Deliverable 4 — Well-Architected Security Review (10–14 pages)
+### Deliverable 4, Well-Architected Security Review (10–14 pages)
 
 A formal Well-Architected Review focused on the Security pillar, structured as a memo to the CISO. Must address:
 
@@ -92,12 +92,12 @@ A formal Well-Architected Review focused on the Security pillar, structured as a
 
 Cite **Modules 1, 2, 5, 9**. Reference **Capital One's 2019 breach** (Module 2 case study) and **Sony PSN's 2011 incident** (Module 10) explicitly to demonstrate awareness of how these architectures actually fail.
 
-### Deliverable 5 — DR / BCP Plan (8–12 pages)
+### Deliverable 5, DR / BCP Plan (8–12 pages)
 
 A complete Disaster Recovery and Business Continuity Plan. Must include:
 
 - Quantified RPO and RTO for each tier (e.g., Tier 1: customer-facing traffic, RPO 30s / RTO 5min; Tier 2: analytics, RPO 4hr / RTO 24hr)
-- Justification for choosing **Warm Standby** in us-west-2 against the **Multi-Site Active-Active** alternative — show the cost delta and decide whether the customer's SLA contractually requires the more expensive tier
+- Justification for choosing **Warm Standby** in us-west-2 against the **Multi-Site Active-Active** alternative, show the cost delta and decide whether the customer's SLA contractually requires the more expensive tier
 - **Aurora Global Database** for the primary OLTP store; **DynamoDB Global Tables** for session state; **S3 Cross-Region Replication** with versioning + **Object Lock in Compliance mode** for compliance-critical buckets
 - **Route 53 health-checked failover routing** for DNS
 - Communication plan during a disaster (status page integration, customer notification SLAs)
@@ -106,11 +106,11 @@ A complete Disaster Recovery and Business Continuity Plan. Must include:
 
 Cite **Modules 1, 6, 8, 10**. Reference the **AWS us-east-1 outages of Dec 2021 and June 2023** (Module 8 case study).
 
-### Deliverable 6 — Post-Migration Optimization Roadmap (6-page memo)
+### Deliverable 6, Post-Migration Optimization Roadmap (6-page memo)
 
 A 12-month optimization roadmap that the CFO and CTO will review jointly. Must include:
 
-- A specific commitment plan: when to convert On-Demand spend to **Compute Savings Plans** and **Reserved Instances** (modeled after Pinterest's $4M optimization — Module 3 case study)
+- A specific commitment plan: when to convert On-Demand spend to **Compute Savings Plans** and **Reserved Instances** (modeled after Pinterest's $4M optimization, Module 3 case study)
 - A FinOps tagging policy enforced via SCPs ("untagged resources cannot be created in prod accounts")
 - A Spot Fleet strategy for stateless web tier and batch (e.g., 60% Spot + 40% On-Demand mixed-instances policy)
 - A right-sizing program using **AWS Compute Optimizer** with named owners and a 90-day review cadence
@@ -119,7 +119,7 @@ A 12-month optimization roadmap that the CFO and CTO will review jointly. Must i
 
 Cite **Modules 3, 7, 9**.
 
-### Deliverable 7 — Executive Summary Memo (2 pages)
+### Deliverable 7, Executive Summary Memo (2 pages)
 
 A 2-page executive summary addressed to the CEO and Board. Must include:
 
@@ -130,7 +130,7 @@ A 2-page executive summary addressed to the CEO and Board. Must include:
 - The top three risks and their mitigations
 - One specific board-level decision the CEO needs to escalate (e.g., a regional residency contract negotiation, or a vendor lock-in trade-off)
 
-Cite the breadth of the course — this memo should reference every other deliverable.
+Cite the breadth of the course, this memo should reference every other deliverable.
 
 ---
 
@@ -193,7 +193,7 @@ After completing all 7 deliverables, **wait 1 week**, then re-read your own work
 
 Find one peer in your study group and exchange capstones. Spend 90 minutes critiquing each other's work using the rubric. Ground rules:
 
-- No "this is good" praise — give a number per criterion
+- No "this is good" praise, give a number per criterion
 - For any score under 90%, write a one-paragraph justification with specifics
 - Identify the single decision in their architecture you would have made differently, and why
 
@@ -217,20 +217,20 @@ Once the seven core deliverables are done, the following extensions distinguish 
 
 Beyond this course's modules:
 
-- **AWS Well-Architected Tool** — free; runs through the same review you're producing in D4
-- **AWS Pricing Calculator** (`calculator.aws`) — for D3's TCO model
-- **AWS Architecture Center** (`aws.amazon.com/architecture/`) — reference architectures for healthcare, SaaS, fintech
-- **AWS Solutions Library** — pre-built reference implementations for common patterns
-- **AWS Builders' Library** essays — particularly Marc Brooker's posts on resilience and Becky Weiss on AZ design
-- **NIST SP 800-53 Rev 5** (free PDF) — control catalogue useful for D4
-- **NIST SP 800-66 Rev 2** (free PDF) — HIPAA Security Rule implementation guide
+- **AWS Well-Architected Tool**, free; runs through the same review you're producing in D4
+- **AWS Pricing Calculator** (`calculator.aws`), for D3's TCO model
+- **AWS Architecture Center** (`aws.amazon.com/architecture/`), reference architectures for healthcare, SaaS, fintech
+- **AWS Solutions Library**, pre-built reference implementations for common patterns
+- **AWS Builders' Library** essays, particularly Marc Brooker's posts on resilience and Becky Weiss on AZ design
+- **NIST SP 800-53 Rev 5** (free PDF), control catalogue useful for D4
+- **NIST SP 800-66 Rev 2** (free PDF), HIPAA Security Rule implementation guide
 - **AWS HIPAA Compliance Whitepaper** (`docs.aws.amazon.com/whitepapers/latest/architecting-hipaa-security-and-compliance-on-aws/`)
 
 ---
 
 ## 🎓 Closing note
 
-If you ship this capstone in earnest — not as a homework exercise but as the document you'd defend to a real CTO — you will be in the top quartile of SAA-C03 holders worldwide. Most certifications stop at "passed the exam." The Harvard / Stanford / Cornell bar is "could walk into a Series-C company on Monday and lead this." That's what this capstone simulates.
+If you ship this capstone in earnest not as a homework exercise but as the document you'd defend to a real CTO you will be in the top quartile of SAA-C03 holders worldwide. Most certifications stop at "passed the exam." The Harvard / Stanford / Cornell bar is "could walk into a Series-C company on Monday and lead this." That's what this capstone simulates.
 
 Good luck. The discipline pays compounding returns for the rest of your career.
 

@@ -174,7 +174,7 @@ The 6 functions are Cycle, Safety, Anticipation, Transit, Hedge, Decoupling. Dis
 WIP buffering two stages with different speeds is the textbook decoupling case.
 
 ### Q3: **C. Anticipation inventory**
-Built ahead of a known future spike — Christmas, promotions, plant shutdown.
+Built ahead of a known future spike, Christmas, promotions, plant shutdown.
 
 ### Q4: **A. √(2DS/H)**
 The classic EOQ.
@@ -182,7 +182,7 @@ The classic EOQ.
 ### Q5: **B. 283**
 EOQ = √(2 × 8000 × 25 / 4) = √(400,000 / 4) = √100,000 ≈ **316**… 
 
-Hmm — let me recompute: 2 × 8000 × 25 = 400,000. Divide by H=4: 100,000. √100,000 ≈ 316.
+Hmm, let me recompute: 2 × 8000 × 25 = 400,000. Divide by H=4: 100,000. √100,000 ≈ 316.
 
 So the right answer is **C. 316**.
 
@@ -234,7 +234,7 @@ ASCM/industry benchmark for A-item IRA. C items can be 90% or lower.
 Distinct from consignment, where the supplier *owns* the inventory until use.
 
 ### Q21: **A. Supplier owns the inventory while it's at the customer's site, until consumed**
-The customer pays only on consumption — common in MRO, semiconductors, hospital supplies.
+The customer pays only on consumption, common in MRO, semiconductors, hospital supplies.
 
 ### Q22: **D. Quantity discounts**
 EOQ assumes a single unit price. Quantity-discount problems require comparing total cost at each break.
@@ -258,7 +258,7 @@ With a quantity discount you must evaluate total cost (carrying + ordering + ite
 - 24–26/26 → 🏆 Mastered. Move to Module 7.
 - 21–23/26 → ✅ Solid.
 - 16–20/26 → ⚠️ Re-read formulas; retry tomorrow.
-- <16/26 → 🔁 Restart Module 6 — the math is critical.
+- <16/26 → 🔁 Restart Module 6, the math is critical.
 
 ---
 

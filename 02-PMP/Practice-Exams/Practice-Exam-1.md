@@ -164,8 +164,8 @@ C. Organizational change
 D. Quality
 
 ### 27. Project Backlog scope addition mid-project. PM should FIRST:
-A. Reject — there's a baseline
-B. Add it — customer always right
+A. Reject, there's a baseline
+B. Add it, customer always right
 C. Analyze impact, run change control
 D. Escalate to sponsor
 
@@ -330,10 +330,10 @@ D. Project will fail
 
 | Score | Verdict |
 |-------|---------|
-| 45-50 | 🏆 Strong — book the exam soon |
-| 38-44 | ✅ Solid — finalize prep, take Exam 2 |
-| 30-37 | ⚠️ Address gaps — re-study weak modules |
-| <30 | 🔁 More study needed — 4+ weeks |
+| 45-50 | 🏆 Strong, book the exam soon |
+| 38-44 | ✅ Solid, finalize prep, take Exam 2 |
+| 30-37 | ⚠️ Address gaps, re-study weak modules |
+| <30 | 🔁 More study needed, 4+ weeks |
 
 ---
 
@@ -343,7 +343,7 @@ D. Project will fail
 
 ## Detailed answer rationales
 
-These per-question rationales explain why each correct answer is correct AND why each distractor is wrong. This is the detailed-rationale layer on top of the existing letter-only answer key — both coexist. Q numbers match the questions above.
+These per-question rationales explain why each correct answer is correct AND why each distractor is wrong. This is the detailed-rationale layer on top of the existing letter-only answer key, both coexist. Q numbers match the questions above.
 
 **Q1. Answer: B**
 
@@ -357,7 +357,7 @@ These per-question rationales explain why each correct answer is correct AND why
 
 **Q2. Answer: B**
 
-*Why B is correct.* Confronting/Problem-solving is the PMP-default conflict-resolution technique — it pursues a win-win.
+*Why B is correct.* Confronting/Problem-solving is the PMP-default conflict-resolution technique, it pursues a win-win.
 *Why others are wrong.*
 - A: "Pick one and move on" is Forcing/Directing, only justified in emergencies.
 - C: Premature escalation skips the team-level conversation the PMP-2021 mindset requires.
@@ -423,10 +423,10 @@ These per-question rationales explain why each correct answer is correct AND why
 
 **Q9. Answer: B**
 
-*Why B is correct.* Fast-tracking parallelizes activities — no extra cost (but adds risk).
+*Why B is correct.* Fast-tracking parallelizes activities, no extra cost (but adds risk).
 *Why others are wrong.*
 - A: Crashing adds cost (more resources).
-- C: "Add team members" is a form of crashing — costs more.
+- C: "Add team members" is a form of crashing, costs more.
 - D: Lowering quality is never the PMP-correct answer.
 
 *Exam-takeaway.* No-cost compression = fast-track. Cost-based compression = crash.
@@ -443,7 +443,7 @@ These per-question rationales explain why each correct answer is correct AND why
 
 **Q11. Answer: B**
 
-*Why B is correct.* Buying insurance transfers risk to a third party (the insurer) — textbook Transfer strategy.
+*Why B is correct.* Buying insurance transfers risk to a third party (the insurer), textbook Transfer strategy.
 *Why others are wrong.*
 - A: Avoid would mean eliminating the risky scope.
 - C: Mitigate would mean reducing probability/impact.
@@ -463,7 +463,7 @@ These per-question rationales explain why each correct answer is correct AND why
 
 **Q13. Answer: B**
 
-*Why B is correct.* Storming is the conflict stage in Tuckman's model — roles, priorities, technical approaches argued.
+*Why B is correct.* Storming is the conflict stage in Tuckman's model, roles, priorities, technical approaches argued.
 *Why others are wrong.*
 - A: Forming is polite/getting acquainted.
 - C: Norming is when the team has worked through conflict and established norms.
@@ -542,7 +542,7 @@ These per-question rationales explain why each correct answer is correct AND why
 
 **Q21. Answer: B**
 
-*Why B is correct.* CPI = EV/AC = 0.9 means earning $0.90 per $1.00 spent — over budget.
+*Why B is correct.* CPI = EV/AC = 0.9 means earning $0.90 per $1.00 spent, over budget.
 *Why others are wrong.*
 - A: CPI is about cost, not schedule.
 - C: CPI < 1 means *over* budget, not under.
@@ -582,7 +582,7 @@ These per-question rationales explain why each correct answer is correct AND why
 
 **Q25. Answer: B**
 
-*Why B is correct.* Stop work, document, address, inform — the compliance-gap response sequence.
+*Why B is correct.* Stop work, document, address, inform, the compliance-gap response sequence.
 *Why others are wrong.*
 - A: Continuing without disclosure violates Honesty + Responsibility.
 - C: Hiding violates ethics directly.

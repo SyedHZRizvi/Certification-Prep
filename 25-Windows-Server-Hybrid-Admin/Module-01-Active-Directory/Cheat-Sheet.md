@@ -29,7 +29,7 @@ FOREST  ◄── Security + Schema boundary
 | **Domain** | Infrastructure Master | Cross-domain object refs (keep OFF a GC in multi-domain forests unless all DCs are GCs) |
 
 **Transfer:** `Move-ADDirectoryServerOperationMasterRole -Identity DC02 -OperationMasterRole PDCEmulator`
-**Seize:** add `-Force` (destructive — never recover original DC).
+**Seize:** add `-Force` (destructive, never recover original DC).
 
 ---
 
@@ -38,7 +38,7 @@ FOREST  ◄── Security + Schema boundary
 | Type | Default |
 |------|---------|
 | **Intra-site (notify)** | ~15 sec (1 sec urgent) |
-| **Inter-site (IP)** | 180 min — adjustable down to 15 min |
+| **Inter-site (IP)** | 180 min, adjustable down to 15 min |
 | **Tombstone lifetime** | 180 days (since 2003 SP1) |
 | **Recycle Bin object lifetime** | 180 days (default) |
 | **GPO refresh (members)** | 90 min + 0–30 offset |
@@ -74,7 +74,7 @@ Local → Site → Domain → OU  (later wins)
 
 ---
 
-## 🪪 Service Accounts — Pick the Right One
+## 🪪 Service Accounts, Pick the Right One
 
 | Type | Scope | Auto-rotate | Use when |
 |------|-------|-------------|----------|

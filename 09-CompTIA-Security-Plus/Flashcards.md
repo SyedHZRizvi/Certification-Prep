@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -293,7 +293,7 @@
 **A:** Policy Engine, Policy Administrator, Adaptive Identity (plus Threat Scope Reduction, Policy-Driven Access Control).
 
 **Q:** Which Zero Trust component physically allows/blocks the request?
-**A:** Policy Enforcement Point (PEP) — lives in the data plane.
+**A:** Policy Enforcement Point (PEP), lives in the data plane.
 
 **Q:** What is Adaptive Identity?
 **A:** Risk-based authentication using signals (device, location, time, behavior) to dial up/down challenge.
@@ -317,16 +317,16 @@
 **A:** The Change Advisory Board (CAB).
 
 **Q:** What is a backout plan and when is it written?
-**A:** A documented procedure to revert a change if it fails — written BEFORE the change is deployed.
+**A:** A documented procedure to revert a change if it fails, written BEFORE the change is deployed.
 
 ---
 
 ## 📦 SECTION 2: CRYPTOGRAPHY & PKI
 
 **Q:** Which symmetric algorithm is today's industry default?
-**A:** AES — typically AES-256-GCM for authenticated encryption.
+**A:** AES, typically AES-256-GCM for authenticated encryption.
 
-**Q:** Symmetric vs asymmetric — which is faster and used for bulk data?
+**Q:** Symmetric vs asymmetric, which is faster and used for bulk data?
 **A:** Symmetric. Asymmetric is too slow for bulk; used for key exchange + signatures.
 
 **Q:** What is Perfect Forward Secrecy and which key exchanges provide it?
@@ -360,7 +360,7 @@
 **A:** Offline (only used to sign intermediates), often in an HSM.
 
 **Q:** What is an HSM?
-**A:** Hardware Security Module — tamper-resistant device for generating and storing cryptographic keys (FIPS 140-2/3 validated).
+**A:** Hardware Security Module, tamper-resistant device for generating and storing cryptographic keys (FIPS 140-2/3 validated).
 
 **Q:** What is tokenization?
 **A:** Replacing sensitive data with a non-sensitive reference; only a vault lookup recovers the original. No mathematical relation between token and original.
@@ -369,7 +369,7 @@
 **A:** Hiding data inside other data (e.g., a message in image pixel data).
 
 **Q:** Why is Base64 not encryption?
-**A:** It's reversible by anyone — Base64 is encoding for safe transport, not security.
+**A:** It's reversible by anyone, Base64 is encoding for safe transport, not security.
 
 ---
 
@@ -379,10 +379,10 @@
 **A:** Something you know, have, are, do, and where you are.
 
 **Q:** Is password + PIN MFA?
-**A:** No — both are "something you know."
+**A:** No, both are "something you know."
 
 **Q:** What MFA method is phishing-resistant?
-**A:** FIDO2 / WebAuthn / passkeys — hardware tokens with origin binding.
+**A:** FIDO2 / WebAuthn / passkeys, hardware tokens with origin binding.
 
 **Q:** TOTP vs HOTP?
 **A:** TOTP rotates on a clock (every ~30 sec); HOTP increments per-use (counter-based).
@@ -418,7 +418,7 @@
 **A:** Password vaulting + credential injection, session recording, JIT/ephemeral credentials.
 
 **Q:** What is SCIM?
-**A:** System for Cross-domain Identity Management — standard for automated user provisioning/deprovisioning across systems.
+**A:** System for Cross-domain Identity Management, standard for automated user provisioning/deprovisioning across systems.
 
 **Q:** What does NIST 800-63B say about periodic password rotation?
 **A:** Do NOT force rotation absent evidence of compromise.
@@ -431,7 +431,7 @@
 ## 📦 SECTION 4: THREATS & THREAT ACTORS
 
 **Q:** What is an APT?
-**A:** Advanced Persistent Threat — typically a nation-state actor with long-term, low-noise persistence and significant resources.
+**A:** Advanced Persistent Threat, typically a nation-state actor with long-term, low-noise persistence and significant resources.
 
 **Q:** What motivates a hacktivist?
 **A:** Philosophical / political beliefs.
@@ -443,22 +443,22 @@
 **A:** Malicious = intentional harm. Negligent = unintentional (misconfiguration, accidental data leak).
 
 **Q:** What is shadow IT?
-**A:** Unsanctioned tech use by employees that bypasses procurement/security review — risk is loss of visibility.
+**A:** Unsanctioned tech use by employees that bypasses procurement/security review, risk is loss of visibility.
 
 **Q:** Was SolarWinds a phishing attack or supply-chain attack?
-**A:** Supply-chain attack — trojanized Orion update delivered via legitimate update channel.
+**A:** Supply-chain attack, trojanized Orion update delivered via legitimate update channel.
 
 **Q:** What is the dark web used for in threat intel?
 **A:** Marketplace where stolen credentials, exploit kits, and RaaS services are bought/sold.
 
 **Q:** What is an ISAC?
-**A:** Information Sharing & Analysis Center — industry-specific intel sharing org (FS-ISAC for finance, H-ISAC for health, etc.).
+**A:** Information Sharing & Analysis Center, industry-specific intel sharing org (FS-ISAC for finance, H-ISAC for health, etc.).
 
 **Q:** What is STIX/TAXII?
 **A:** STIX = data format for structured threat intel. TAXII = transport protocol. Standards for sharing IOCs.
 
 **Q:** What is CISA AIS?
-**A:** Automated Indicator Sharing — free US government-curated threat feed.
+**A:** Automated Indicator Sharing, free US government-curated threat feed.
 
 **Q:** IOC vs IOA?
 **A:** IOC = Indicator of Compromise (artifact of past compromise: IP, hash). IOA = Indicator of Attack (behavior in progress).
@@ -480,7 +480,7 @@
 **A:** Malware triggered by a specific condition (date, event, absence from payroll).
 
 **Q:** What is fileless malware?
-**A:** Malware that lives in memory/registry only, often using PowerShell / WMI / built-in tools — no disk file to scan.
+**A:** Malware that lives in memory/registry only, often using PowerShell / WMI / built-in tools, no disk file to scan.
 
 **Q:** Best defense against SQL injection?
 **A:** Parameterized queries / prepared statements.
@@ -489,7 +489,7 @@
 **A:** Stored = malicious script saved on the server (e.g., forum post), runs for every viewer. Reflected = script in URL, runs when victim clicks the link.
 
 **Q:** What does SSRF stand for and what's the typical target?
-**A:** Server-Side Request Forgery — attacker makes the server fetch internal URLs (often cloud metadata at 169.254.169.254).
+**A:** Server-Side Request Forgery, attacker makes the server fetch internal URLs (often cloud metadata at 169.254.169.254).
 
 **Q:** What does CSRF do?
 **A:** Tricks an authenticated victim's browser into making a request to the target app (state-changing). Defense: CSRF tokens + SameSite cookies.
@@ -498,13 +498,13 @@
 **A:** Using `../` patterns to escape the web root and read arbitrary files (e.g., `/etc/passwd`).
 
 **Q:** What is TOCTOU?
-**A:** Time-Of-Check vs Time-Of-Use — a race condition between when a value is checked and when it's used.
+**A:** Time-Of-Check vs Time-Of-Use, a race condition between when a value is checked and when it's used.
 
-**Q:** SYN flood — what does it exhaust?
+**Q:** SYN flood, what does it exhaust?
 **A:** The TCP half-open connection table on the target.
 
 **Q:** What is DNS amplification?
-**A:** Attack using spoofed source IPs + DNS servers returning responses much larger than the query — small input, huge output.
+**A:** Attack using spoofed source IPs + DNS servers returning responses much larger than the query, small input, huge output.
 
 **Q:** Sec+ replacement term for MITM?
 **A:** On-path attack.
@@ -515,7 +515,7 @@
 **Q:** Brute force vs dictionary vs spraying vs stuffing?
 **A:** Brute = try everything against one user. Dictionary = likely words against one user. Spraying = one password against many users (avoids lockout). Stuffing = breach-credentials reused across services.
 
-**Q:** Pass-the-Hash — why does it work?
+**Q:** Pass-the-Hash, why does it work?
 **A:** Windows NTLM authentication accepts the hash directly; you don't need the plaintext password.
 
 **Q:** Vishing vs smishing vs phishing?
@@ -541,13 +541,13 @@
 **A:** Port 22, over SSH.
 
 **Q:** FTPS port and protocol?
-**A:** Port 990 (or 21 with explicit TLS), FTP over TLS — NOT the same as SFTP.
+**A:** Port 990 (or 21 with explicit TLS), FTP over TLS, NOT the same as SFTP.
 
 **Q:** IDS vs IPS difference?
 **A:** IDS detects + alerts (out-of-band). IPS detects + blocks (inline).
 
 **Q:** What is a WAF?
-**A:** Web Application Firewall — layer-7 firewall protecting web apps from OWASP-class attacks.
+**A:** Web Application Firewall, layer-7 firewall protecting web apps from OWASP-class attacks.
 
 **Q:** What is a DMZ / screened subnet for?
 **A:** Hosting public-facing services (web, email) isolated from the internal network.
@@ -562,7 +562,7 @@
 **A:** Supplicant (client), Authenticator (switch/AP), Authentication Server (RADIUS).
 
 **Q:** What is EAP-TLS?
-**A:** Strongest EAP variant — mutual certificate-based authentication for 802.1X.
+**A:** Strongest EAP variant, mutual certificate-based authentication for 802.1X.
 
 **Q:** IPSec Tunnel vs Transport mode?
 **A:** Tunnel mode encrypts the entire IP packet (used for site-to-site VPN). Transport mode encrypts only the payload (host-to-host).
@@ -574,7 +574,7 @@
 **A:** PPTP.
 
 **Q:** DNSSEC provides what?
-**A:** Integrity of DNS records (signed). Does NOT provide encryption — that's DoT/DoH.
+**A:** Integrity of DNS records (signed). Does NOT provide encryption, that's DoT/DoH.
 
 **Q:** DoT vs DoH port?
 **A:** DoT (DNS over TLS) = 853. DoH (DNS over HTTPS) = 443.
@@ -592,7 +592,7 @@
 **A:** Split = only corporate traffic via VPN, rest direct. Full = all traffic via VPN. Split is faster but less monitored.
 
 **Q:** What is microsegmentation?
-**A:** Per-workload firewall — each VM/container has its own allow-list, often via host agents or SDN.
+**A:** Per-workload firewall, each VM/container has its own allow-list, often via host agents or SDN.
 
 ---
 
@@ -614,7 +614,7 @@
 **A:** MDM manages the whole device. MAM manages just corporate apps and their data (enables selective wipe).
 
 **Q:** What is UEM?
-**A:** Unified Endpoint Management — single console for mobile + laptop + desktop + IoT.
+**A:** Unified Endpoint Management, single console for mobile + laptop + desktop + IoT.
 
 **Q:** Who is responsible for S3 bucket misconfiguration?
 **A:** The customer (under the shared responsibility model). AWS handles infrastructure; customer handles configuration.
@@ -623,25 +623,25 @@
 **A:** Guest OS, runtime, applications, data, network configuration inside the VM, and IAM.
 
 **Q:** What is a CASB?
-**A:** Cloud Access Security Broker — sits between users and cloud apps; enforces policy; discovers shadow IT.
+**A:** Cloud Access Security Broker, sits between users and cloud apps; enforces policy; discovers shadow IT.
 
 **Q:** What is CSPM?
-**A:** Cloud Security Posture Management — continuously audits cloud configurations against best practices.
+**A:** Cloud Security Posture Management, continuously audits cloud configurations against best practices.
 
 **Q:** What is ZTNA?
-**A:** Zero Trust Network Access — identity-aware per-app access, replacing traditional VPN for user access.
+**A:** Zero Trust Network Access, identity-aware per-app access, replacing traditional VPN for user access.
 
 **Q:** What is SASE?
-**A:** Secure Access Service Edge — combines SD-WAN with cloud security services (FWaaS, SWG, ZTNA, CASB).
+**A:** Secure Access Service Edge, combines SD-WAN with cloud security services (FWaaS, SWG, ZTNA, CASB).
 
 **Q:** Container security pitfall #1?
-**A:** Running containers as root — a kernel escape compromises the host.
+**A:** Running containers as root, a kernel escape compromises the host.
 
 **Q:** Why is patching alone insufficient for ICS/SCADA?
 **A:** Long device lifecycles, vendor doesn't allow downtime/upgrades, proprietary protocols. Use compensating controls: segmentation, jump servers, monitoring.
 
 **Q:** What does SIM swap defeat?
-**A:** SMS-based MFA — attacker convinces the carrier to port the victim's number to attacker-controlled SIM.
+**A:** SMS-based MFA, attacker convinces the carrier to port the victim's number to attacker-controlled SIM.
 
 ---
 
@@ -656,14 +656,14 @@
 **Q:** NIST IR lifecycle phases in order?
 **A:** Preparation → Detection & Analysis → Containment → Eradication → Recovery → Lessons Learned.
 
-**Q:** Order of volatility — most volatile first?
+**Q:** Order of volatility, most volatile first?
 **A:** CPU registers/cache → RAM → temp/swap → disk → remote logs → physical config.
 
 **Q:** Why capture memory before powering off?
-**A:** RAM is volatile — once power is removed, the data is gone. Capture in-process state, network connections, decrypted keys first.
+**A:** RAM is volatile, once power is removed, the data is gone. Capture in-process state, network connections, decrypted keys first.
 
 **Q:** What is chain of custody?
-**A:** Documented log of who touched the evidence, when, where, and why — from acquisition through trial.
+**A:** Documented log of who touched the evidence, when, where, and why, from acquisition through trial.
 
 **Q:** What is a legal hold?
 **A:** A directive to preserve potentially relevant data; suspends routine deletion when litigation is reasonably anticipated.
@@ -675,7 +675,7 @@
 **A:** Preserves the original; analysis runs on a hash-verified working copy.
 
 **Q:** Can SSDs be degaussed?
-**A:** No — degaussing only affects magnetic media. SSDs use flash; use crypto-erase or physical destruction.
+**A:** No, degaussing only affects magnetic media. SSDs use flash; use crypto-erase or physical destruction.
 
 **Q:** What does CVSS measure?
 **A:** Severity of a vulnerability on a 0-10 scale (base, temporal, environmental components).
@@ -684,7 +684,7 @@
 **A:** Probability that a vulnerability will be exploited in the wild.
 
 **Q:** What is CISA's KEV catalog?
-**A:** Known Exploited Vulnerabilities — vulns actively being exploited; patch these FIRST.
+**A:** Known Exploited Vulnerabilities, vulns actively being exploited; patch these FIRST.
 
 **Q:** NetFlow vs PCAP?
 **A:** NetFlow = connection metadata (5-tuple, byte counts). PCAP = full packet payloads (much larger).
@@ -724,7 +724,7 @@
 **A:** MSA = umbrella contract. SOW = project scope under MSA. SLA = performance metrics + remedies (uptime, response time).
 
 **Q:** What's an NDA?
-**A:** Non-Disclosure Agreement — confidentiality terms.
+**A:** Non-Disclosure Agreement, confidentiality terms.
 
 **Q:** MOU vs MOA?
 **A:** MOU = non-binding statement of intent. MOA = binding agreement.
@@ -736,7 +736,7 @@
 **A:** HIPAA requires a Business Associate Agreement with vendors handling Protected Health Information.
 
 **Q:** What is an ISA?
-**A:** Interconnection Security Agreement — defines security requirements when two systems connect.
+**A:** Interconnection Security Agreement, defines security requirements when two systems connect.
 
 **Q:** NIST CSF v1 functions in order?
 **A:** Identify, Protect, Detect, Respond, Recover (CSF 2.0 adds Govern).
@@ -748,7 +748,7 @@
 **A:** Anyone who stores, processes, or transmits cardholder data.
 
 **Q:** Who does GDPR apply to?
-**A:** Anyone processing EU residents' personal data — extraterritorial in scope.
+**A:** Anyone processing EU residents' personal data, extraterritorial in scope.
 
 **Q:** What is HIPAA?
 **A:** US federal law protecting Protected Health Information (PHI) for healthcare and business associates.
@@ -769,20 +769,20 @@
 **A:** 3 copies of data, on 2 different media types, with 1 copy off-site.
 
 **Q:** What is an immutable backup?
-**A:** A backup that cannot be modified or deleted — ransomware-resistant.
+**A:** A backup that cannot be modified or deleted, ransomware-resistant.
 
 **Q:** Tabletop vs walkthrough vs simulation vs parallel vs full-interruption?
 **A:** Tabletop = discussion only. Walkthrough = step-by-step rehearsal. Simulation = controlled live exercise. Parallel = DR site runs alongside prod. Full-interruption = actual cutover (riskiest).
 
 **Q:** What is a BIA?
-**A:** Business Impact Analysis — identifies critical processes, quantifies downtime impact, drives RTO/RPO targets.
+**A:** Business Impact Analysis, identifies critical processes, quantifies downtime impact, drives RTO/RPO targets.
 
 ---
 
 ## 📦 SECTION 10: APPLICATION & DATA SECURITY
 
 **Q:** SAST analyzes what?
-**A:** Source code (or compiled binaries) statically — before runtime.
+**A:** Source code (or compiled binaries) statically, before runtime.
 
 **Q:** DAST analyzes what?
 **A:** A running application from the outside via crawling/probing.
@@ -791,10 +791,10 @@
 **A:** Known-vulnerable third-party dependencies in your software.
 
 **Q:** What does RASP do?
-**A:** Runtime Application Self-Protection — embedded agent that blocks attacks at runtime inside the app process.
+**A:** Runtime Application Self-Protection, embedded agent that blocks attacks at runtime inside the app process.
 
 **Q:** What is an SBOM?
-**A:** Software Bill of Materials — machine-readable list of every component in a software product. Required for US federal software (EO 14028).
+**A:** Software Bill of Materials, machine-readable list of every component in a software product. Required for US federal software (EO 14028).
 
 **Q:** STRIDE letters?
 **A:** Spoofing, Tampering, Repudiation, Information disclosure, DoS, Elevation of privilege.
@@ -806,7 +806,7 @@
 **A:** TLS, IPSec, SSH, S/MIME, VPN.
 
 **Q:** What protects "in use" data?
-**A:** Confidential computing — hardware-level encryption while data is being processed (Intel SGX, AMD SEV, Apple Secure Enclave, AWS Nitro Enclaves).
+**A:** Confidential computing, hardware-level encryption while data is being processed (Intel SGX, AMD SEV, Apple Secure Enclave, AWS Nitro Enclaves).
 
 **Q:** Tokenization vs encryption?
 **A:** Tokenization: no math relation; only a vault lookup recovers the original. Encryption: reversible with a key.
@@ -833,7 +833,7 @@
 **A:** PII (PII generally), PHI (HIPAA-covered health data), PCI/CHD (cardholder data under PCI-DSS).
 
 **Q:** What does code signing provide?
-**A:** Integrity + publisher authenticity — consumers verify the signature with the publisher's public key before installing.
+**A:** Integrity + publisher authenticity, consumers verify the signature with the publisher's public key before installing.
 
 **Q:** What's the difference between Waterfall and DevSecOps?
 **A:** Waterfall = sequential phases (Requirements → Design → Build → Test → Deploy). DevSecOps = security integrated continuously into CI/CD pipelines.
@@ -845,7 +845,7 @@
 
 ## 📚 STUDY TIPS
 
-- Drill these daily — 15 minutes/day beats one 90-minute cram
+- Drill these daily, 15 minutes/day beats one 90-minute cram
 - Shuffle frequently to avoid pattern memorization
 - For acronyms, say them out loud (auditory + visual reinforcement)
 - For formulas (SLE/ALE), do at least 3 worked examples

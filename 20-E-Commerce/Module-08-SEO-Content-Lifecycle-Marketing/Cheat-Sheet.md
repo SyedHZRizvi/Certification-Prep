@@ -64,8 +64,8 @@
 ## 📐 E-E-A-T + HCU Timeline · CTR by Position
 
 ```
-Dec 2022 — "Experience" added (E-A-T → E-E-A-T)
-Aug 2022 — HCU launch | Sep 2023 — expansion | Mar 2024 — core integration
+Dec 2022, "Experience" added (E-A-T → E-E-A-T)
+Aug 2022, HCU launch | Sep 2023, expansion | Mar 2024, core integration
 ```
 
 | Pos | CTR (Ahrefs / Soulo 2023) |
@@ -156,10 +156,10 @@ Aug 2022 — HCU launch | Sep 2023 — expansion | Mar 2024 — core integration
 
 ## 🗓️ Key Dates
 
-- **1996** — Reichheld *The Loyalty Effect* · **2014** — Glossier launches
-- **Aug 2022** — HCU launch · **Dec 2022** — "Experience" added
-- **Sep 2023** — HCU expansion · **2023** — US 10DLC enforced
-- **Mar 2024** — HCU into core ranking
+- **1996** Reichheld *The Loyalty Effect* · **2014** Glossier launches
+- **Aug 2022** HCU launch · **Dec 2022** "Experience" added
+- **Sep 2023** HCU expansion · **2023** US 10DLC enforced
+- **Mar 2024**, HCU into core ranking
 
 ---
 

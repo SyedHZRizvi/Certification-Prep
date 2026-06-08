@@ -11,8 +11,8 @@ Acq month | M0   | M1   | M2   | M3   | M4
 2026-01   | 100% | 78%  | 65%  | 55%  | 49%
 2026-02   | 100% | 82%  | 69%  | 58%  | 51%
 2026-03   | 100% | 80%  | 68%  | 56%  | —
-2026-04   | 100% | 84%  | 71%  | —    | —
-2026-05   | 100% | 86%  | —    | —    | —
+2026-04   | 100% | 84%  | 71%  |,    | —
+2026-05   | 100% | 86%  |,    |,    | —
 ```
 
 - Rows = cohort. Columns = months since acquisition.
@@ -64,7 +64,7 @@ First-purchase product
 
 ---
 
-## 🎯 Activation Events — Real Examples
+## 🎯 Activation Events, Real Examples
 
 | Company | Activation event |
 |---------|------------------|
@@ -147,7 +147,7 @@ W0:   churn
 2. 3 retention curve shapes? ___
 3. NRR formula? ___
 4. Best-in-class NRR bar? ___
-5. Advantage+ vs Look-alike — 2026 default? ___
+5. Advantage+ vs Look-alike, 2026 default? ___
 
 ---
 

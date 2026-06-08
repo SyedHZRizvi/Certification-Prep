@@ -1,6 +1,6 @@
 # Module 11: Mobile / Application Troubleshooting 📱
 
-> **Why this module matters:** Mobile troubleshooting plus general Software Troubleshooting together make **22% of the 220-1102 exam**. While Module 9 focused on Windows/desktop OS issues, this module zeroes in on mobile-specific failures: battery, connectivity, sync, performance, app installs. Help-desk tickets in 2026 are increasingly mobile-first — every IT pro needs this fluency.
+> **Why this module matters:** Mobile troubleshooting plus general Software Troubleshooting together make **22% of the 220-1102 exam**. While Module 9 focused on Windows/desktop OS issues, this module zeroes in on mobile-specific failures: battery, connectivity, sync, performance, app installs. Help-desk tickets in 2026 are increasingly mobile-first, every IT pro needs this fluency.
 
 > **Prerequisites for this module.** You need:
 > - Module 1 (mobile hardware + MDM)
@@ -11,9 +11,9 @@
 
 ## 📱 A Story: The Sales Team Whose Phones All Died on the Same Day
 
-Meet Felipe. He's the mobile / collaboration tech at a 220-person consumer-goods company. On a Wednesday morning, the sales team manager calls in a panic — **seven** sales reps' company iPhones are showing "No Service" and the company's MDM dashboard says they're all out of compliance. The reps are in the field; they can't access Salesforce, can't call customers, can't check inventory.
+Meet Felipe. He's the mobile / collaboration tech at a 220-person consumer-goods company. On a Wednesday morning, the sales team manager calls in a panic, **seven** sales reps' company iPhones are showing "No Service" and the company's MDM dashboard says they're all out of compliance. The reps are in the field; they can't access Salesforce, can't call customers, can't check inventory.
 
-Felipe pulls up the **Microsoft Intune** dashboard. All 7 phones are showing the same compliance failure: **"OS version below minimum (iOS 17.7)"**. They're all on iOS 17.5. Yesterday afternoon, the compliance policy was tightened by another admin (without coordination) to require iOS 17.7 as the new minimum. The compliance engine kicked in overnight, disabled the Exchange ActiveSync profile, and the phones lost mail access — but kept showing as "No Service" because the conditional-access engine also blocks cellular (via carrier integration) when out of compliance.
+Felipe pulls up the **Microsoft Intune** dashboard. All 7 phones are showing the same compliance failure: **"OS version below minimum (iOS 17.7)"**. They're all on iOS 17.5. Yesterday afternoon, the compliance policy was tightened by another admin (without coordination) to require iOS 17.7 as the new minimum. The compliance engine kicked in overnight, disabled the Exchange ActiveSync profile, and the phones lost mail access, but kept showing as "No Service" because the conditional-access engine also blocks cellular (via carrier integration) when out of compliance.
 
 Felipe's playbook:
 
@@ -22,7 +22,7 @@ Felipe's playbook:
 3. Sends an apology + instructions email to all 7 reps with a one-tap "Update Now" link to Settings.
 4. **Documents the incident** for the change-management board: "Policy tightening without staged rollout caused 7-user outage. Future: pilot first."
 
-This is mobile support in 2026. The phones themselves rarely fail — it's the **policies, profiles, accounts, and update streams** that interact in unexpected ways. This module teaches you the diagnostic patterns.
+This is mobile support in 2026. The phones themselves rarely fail, it's the **policies, profiles, accounts, and update streams** that interact in unexpected ways. This module teaches you the diagnostic patterns.
 
 ---
 
@@ -42,10 +42,10 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 
 ### Battery health metrics
 
-- **Cycle count** — each full charge ≈ 1 cycle. ~500–800 cycles before noticeable degradation
-- **Capacity** — % of original. Apple flags <80% on Battery Health
-- **Charge time** — slower charging = aging or charger fault
-- **Heat during charging** — warm is normal; hot is a red flag
+- **Cycle count**, each full charge ≈ 1 cycle. ~500–800 cycles before noticeable degradation
+- **Capacity**, % of original. Apple flags <80% on Battery Health
+- **Charge time**, slower charging = aging or charger fault
+- **Heat during charging**, warm is normal; hot is a red flag
 
 ### Phone gets hot
 
@@ -55,14 +55,14 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 | Charging in a case in direct sunlight | Remove case, move to cool area |
 | Heavy background sync | Pause backup / cloud sync |
 | Malware / cryptominer | Scan / reset |
-| Failing battery (swollen) | Replace immediately — fire risk |
+| Failing battery (swollen) | Replace immediately, fire risk |
 
 🚨 **Swollen battery = stop using immediately.** Don't puncture, don't ignore. Lithium-ion fires are violent.
 
 ### Won't charge
 
 - Try different cable + charger (eliminate cable failure)
-- Clean the charging port — lint/dust is common
+- Clean the charging port, lint/dust is common
 - Try wireless charging (if supported) to test charge circuit
 - If physical Lightning/USB-C connector is bent or corroded → port replacement
 
@@ -93,10 +93,10 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 
 ### Bluetooth issues
 
-- **Won't pair** — put accessory in pairing mode; clear paired list on phone; try one-at-a-time pairing
-- **Drops mid-use** — interference (microwave, 2.4 GHz Wi-Fi nearby), battery low, range
-- **Audio routes to wrong device** — manually select output (Control Center / quick settings)
-- **Audio quality bad** — older codec (SBC vs AAC vs LDAC); modern codec needed
+- **Won't pair**, put accessory in pairing mode; clear paired list on phone; try one-at-a-time pairing
+- **Drops mid-use**, interference (microwave, 2.4 GHz Wi-Fi nearby), battery low, range
+- **Audio routes to wrong device**, manually select output (Control Center / quick settings)
+- **Audio quality bad**, older codec (SBC vs AAC vs LDAC); modern codec needed
 
 ### NFC / AirDrop / Quick Share issues
 
@@ -128,9 +128,9 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 
 ### Push vs Fetch vs Manual (email)
 
-- **Push** — server notifies device of new mail instantly (battery cost)
-- **Fetch** — phone polls every N minutes (more battery-friendly)
-- **Manual** — only when user opens app
+- **Push**, server notifies device of new mail instantly (battery cost)
+- **Fetch**, phone polls every N minutes (more battery-friendly)
+- **Manual**, only when user opens app
 
 ---
 
@@ -150,7 +150,7 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 
 - iOS: per-app within Settings; or offload (delete app, keep data)
 - Android: Settings → Apps → [App] → Storage → Clear Cache / Clear Data
-- WhatsApp / Telegram can use **GBs** of media cache — most common reason for "phone full" tickets
+- WhatsApp / Telegram can use **GBs** of media cache, most common reason for "phone full" tickets
 
 ---
 
@@ -164,7 +164,7 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 | "Insufficient storage" | Clear cache or delete unused apps |
 | "This app requires iOS 17.0 or later" | Device too old |
 | Side-loaded app won't install (Android) | "Install unknown apps" not enabled for source |
-| Enterprise app installed but won't launch | Enterprise developer cert not trusted — Settings → General → Profiles & Device Management → trust |
+| Enterprise app installed but won't launch | Enterprise developer cert not trusted, Settings → General → Profiles & Device Management → trust |
 | App removed by MDM | Compliance violation or admin remove |
 
 ### Update issues
@@ -188,7 +188,7 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 ### Jailbreak / root detection
 
 - iOS jailbreak removes Apple's sandbox protections; allows any app to read other apps' data
-- Android root is similar — bypasses Android's permission model
+- Android root is similar, bypasses Android's permission model
 - MDMs detect jailbreak/root and auto-quarantine
 - Most enterprise apps refuse to launch on jailbroken/rooted devices (banking apps especially)
 
@@ -206,7 +206,7 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 |--------|-----|
 | **Smishing** | SMS with malicious link |
 | **Malicious app** | Trojan in Play Store or sideload |
-| **Public USB charging** | "Juice jacking" — only charge from your own bricks |
+| **Public USB charging** | "Juice jacking", only charge from your own bricks |
 | **Public Wi-Fi MITM** | Use VPN on untrusted networks |
 | **SS7 / SIM swap** | Attacker convinces carrier to port phone number → bypasses SMS MFA |
 
@@ -217,12 +217,12 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 > **Scenario:** A user reports their company iPhone won't connect to email, but works for personal Gmail in the Mail app. The phone is enrolled in Intune.
 
 **Walkthrough:**
-1. **Identify** — Only corporate email is failing. Personal email (different account, same Mail app) works. So Mail app + iPhone itself are functional.
-2. **Theory** — Likely: (a) corporate Exchange ActiveSync profile disabled by MDM compliance; (b) password expired; (c) MFA challenge missed; (d) Conditional Access blocking the sign-in.
-3. **Test** — Check Intune compliance dashboard for this device. Check Azure AD sign-in logs for failed corporate-mail sign-ins. Check that the user's password is current.
-4. **Plan** — Most common: device fell out of compliance. Show user the Company Portal app's "How to be compliant" steps (usually: install latest iOS update). Once compliant, profile auto-restores.
-5. **Verify** — Wait 5-15 min for Conditional Access re-evaluation; user receives mail again.
-6. **Document** — KB: "iPhone mail stopped → check Intune compliance first."
+1. **Identify**, Only corporate email is failing. Personal email (different account, same Mail app) works. So Mail app + iPhone itself are functional.
+2. **Theory**, Likely: (a) corporate Exchange ActiveSync profile disabled by MDM compliance; (b) password expired; (c) MFA challenge missed; (d) Conditional Access blocking the sign-in.
+3. **Test**, Check Intune compliance dashboard for this device. Check Azure AD sign-in logs for failed corporate-mail sign-ins. Check that the user's password is current.
+4. **Plan**, Most common: device fell out of compliance. Show user the Company Portal app's "How to be compliant" steps (usually: install latest iOS update). Once compliant, profile auto-restores.
+5. **Verify**, Wait 5-15 min for Conditional Access re-evaluation; user receives mail again.
+6. **Document**, KB: "iPhone mail stopped → check Intune compliance first."
 
 ---
 
@@ -253,7 +253,7 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 | **Jailbreak / Root** | Bypassing OS security; auto-detected by MDM |
 | **Battery cycle** | One full charge equivalent |
 | **Push / Fetch / Manual** | Email sync modes |
-| **APN** | Access Point Name — cellular data config |
+| **APN** | Access Point Name, cellular data config |
 | **VoLTE / VoNR** | Voice over LTE / 5G NR |
 | **Captive portal** | Hotel/public Wi-Fi sign-in page |
 | **Juice jacking** | Compromised USB charging stations |
@@ -276,18 +276,18 @@ This is mobile support in 2026. The phones themselves rarely fail — it's the *
 
 ---
 
-## 📊 Case Study — The 2023 SIM Swap Attack on a Crypto Influencer
+## 📊 Case Study, The 2023 SIM Swap Attack on a Crypto Influencer
 
 **Situation.** In January 2023, a well-known cryptocurrency commentator (real case redacted by name; the general pattern: many similar attacks have been reported) lost ~$4.2M USD in a single afternoon to a **SIM-swap attack**. The attacker called the victim's mobile carrier's customer-service line, impersonated the victim using public-record personal info, convinced the rep to port the victim's number to a new SIM the attacker controlled. Within minutes, the attacker reset the victim's email password (SMS MFA went to attacker), then drained the victim's crypto exchange accounts (SMS MFA also went to attacker).
 
-**The mobile angle.** SIM swap is purely a *social engineering attack against the carrier* — not the phone, not the OS, not the apps. But its effect is catastrophic because **SMS-based MFA breaks immediately**. Every account that relied on SMS for "second factor" loses that factor in seconds. The carrier's customer-service rep is the weak link.
+**The mobile angle.** SIM swap is purely a *social engineering attack against the carrier*, not the phone, not the OS, not the apps. But its effect is catastrophic because **SMS-based MFA breaks immediately**. Every account that relied on SMS for "second factor" loses that factor in seconds. The carrier's customer-service rep is the weak link.
 
-**Decision and outcome.** The victim noticed his phone showed "No Service" but, by then, the attacker had drained ~$4.2M in 47 minutes. Recovery: very limited — crypto transactions are largely irreversible. Carrier eventually paid a small portion of damages. Major US carriers have since rolled out **"Port-Out Lock" / "Number Lock"** features that require additional auth before any SIM port. iOS and Android have shifted to support **passkeys (FIDO2/WebAuthn)** as a phishing-resistant alternative to SMS MFA.
+**Decision and outcome.** The victim noticed his phone showed "No Service" but, by then, the attacker had drained ~$4.2M in 47 minutes. Recovery: very limited, crypto transactions are largely irreversible. Carrier eventually paid a small portion of damages. Major US carriers have since rolled out **"Port-Out Lock" / "Number Lock"** features that require additional auth before any SIM port. iOS and Android have shifted to support **passkeys (FIDO2/WebAuthn)** as a phishing-resistant alternative to SMS MFA.
 
 **Lesson for the exam / for practitioners.**
 - **SMS MFA is not phishing-resistant.** Use app-based TOTP (Google Authenticator, Authy) or hardware keys (YubiKey) for high-value accounts.
 - **Enable "Port-Out Lock"** with your carrier today (free).
-- **Recognize "No Service" as a potential attack indicator** — not just a network issue.
+- **Recognize "No Service" as a potential attack indicator**, not just a network issue.
 
 **Discussion (Socratic).**
 - **Q1:** A help-desk caller reports their personal phone has "No Service" suddenly. They mention they're getting password-reset emails for their bank account. What's your *immediate* coaching?
@@ -311,7 +311,7 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 12 — Documentation, Change & DR](../Module-12-Documentation-DR/Reading.md)
+4. ➡️ [Module 12, Documentation, Change & DR](../Module-12-Documentation-DR/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 12](../Module-12-Documentation-DR/Reading.md) wraps the course with documentation + DR.
@@ -322,9 +322,9 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 Apple Platform Deployment Guide — comprehensive MDM reference
-- 📄 Android Enterprise Documentation — Google's enterprise mobility guide
-- 📄 NIST SP 800-124 Rev 2 — Guidelines for Managing the Security of Mobile Devices
+- 📄 Apple Platform Deployment Guide, comprehensive MDM reference
+- 📄 Android Enterprise Documentation, Google's enterprise mobility guide
+- 📄 NIST SP 800-124 Rev 2, Guidelines for Managing the Security of Mobile Devices
 
 **Case-study sources:**
 - 📄 FBI IC3 Public Service Announcement (May 2022). *Significant Increase in SIM-Swap Attacks*.
@@ -332,4 +332,4 @@ You now know:
 
 **Practitioner / exam:**
 - 📖 [Professor Messer 220-1102 mobile troubleshooting](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video-training-course/)
-- 📖 Have I Been Pwned (haveibeenpwned.com) — check leaks
+- 📖 Have I Been Pwned (haveibeenpwned.com), check leaks

@@ -1,11 +1,11 @@
 # Module 5: S3 Deep Dive 🪣
 
-> **Why this module matters:** S3 is the most-tested individual service on SAA. Storage classes, lifecycle, encryption, replication, durability, access controls — expect 7–10 questions purely on S3. The good news: it's all rules-based. Memorize the right facts and pick up easy points.
+> **Why this module matters:** S3 is the most-tested individual service on SAA. Storage classes, lifecycle, encryption, replication, durability, access controls, expect 7–10 questions purely on S3. The good news: it's all rules-based. Memorize the right facts and pick up easy points.
 
 > **Prerequisites for this module.**
-> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) — Region/AZ vocabulary
-> - [Module 2](../Module-02-IAM-Organizations/Reading.md) — bucket policies are resource-based IAM policies
-> - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md) — Gateway VPC Endpoints are *S3-specific*
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md), Region/AZ vocabulary
+> - [Module 2](../Module-02-IAM-Organizations/Reading.md), bucket policies are resource-based IAM policies
+> - [Module 4](../Module-04-VPC-Deep-Dive/Reading.md), Gateway VPC Endpoints are *S3-specific*
 > - Familiarity with object storage concepts (S3 is the canonical example, but Azure Blob, Google Cloud Storage, MinIO all share the model)
 > - Understanding of HTTPS and signed URLs at a conceptual level
 
@@ -15,33 +15,33 @@
 
 You own a self-storage business. Customers bring boxes (objects) and rent units (buckets). Different customers want different things:
 
-- **Lawyer** — accesses files daily, wants instant retrieval. Premium climate-controlled unit on the ground floor. → **S3 Standard**
-- **Tax accountant** — needs old returns rarely but instantly if needed. Slightly cheaper unit, accessed less often. → **S3 Standard-IA**
-- **Family photos that may or may not be looked at this year** — let the system figure out which photos are hot vs cold. → **S3 Intelligent-Tiering**
-- **20-year-old wedding video** — never look at it, but need to keep it. OK to wait minutes to hours to retrieve. → **S3 Glacier Instant** / **Flexible** / **Deep Archive**
-- **Legal hold** — must NOT be deleted no matter what for 7 years. → **Object Lock (Compliance mode)**.
+- **Lawyer**, accesses files daily, wants instant retrieval. Premium climate-controlled unit on the ground floor. → **S3 Standard**
+- **Tax accountant**, needs old returns rarely but instantly if needed. Slightly cheaper unit, accessed less often. → **S3 Standard-IA**
+- **Family photos that may or may not be looked at this year**, let the system figure out which photos are hot vs cold. → **S3 Intelligent-Tiering**
+- **20-year-old wedding video**, never look at it, but need to keep it. OK to wait minutes to hours to retrieve. → **S3 Glacier Instant** / **Flexible** / **Deep Archive**
+- **Legal hold**, must NOT be deleted no matter what for 7 years. → **Object Lock (Compliance mode)**.
 
-Your business also gives customers locked-key access (only they can unlock — **encryption**), copies units across two cities (**replication**), and lets visitors come in but only see specific boxes (**presigned URLs**). That's S3.
+Your business also gives customers locked-key access (only they can unlock, **encryption**), copies units across two cities (**replication**), and lets visitors come in but only see specific boxes (**presigned URLs**). That's S3.
 
 ---
 
-## 🪣 S3 Basics — The Essentials
+## 🪣 S3 Basics, The Essentials
 
 | Item | Detail |
 |------|--------|
 | **Object** | The thing you store. Has key (filename), value (data), metadata, version ID |
 | **Bucket** | Container of objects; **globally unique name**; tied to a region |
 | **Max object size** | 5 TB |
-| **Single PUT upload size** | 5 GB max — use **Multipart Upload** above 100 MB recommended |
-| **Durability** | 11 nines (99.999999999%) — design loses 1 object per 10,000 in 10 million years |
-| **Availability** | Varies by class — 99.99% for Standard, 99.9% for IA, 99.5% for One-Zone IA |
+| **Single PUT upload size** | 5 GB max, use **Multipart Upload** above 100 MB recommended |
+| **Durability** | 11 nines (99.999999999%), design loses 1 object per 10,000 in 10 million years |
+| **Availability** | Varies by class, 99.99% for Standard, 99.9% for IA, 99.5% for One-Zone IA |
 | **Consistency** | Strong read-after-write consistency for all operations (since Dec 2020) |
 
-🎯 **Exam pattern:** "Workload writes an object then immediately reads it — what consistency model?" → **Strongly consistent** (S3 doesn't have eventual consistency anymore).
+🎯 **Exam pattern:** "Workload writes an object then immediately reads it, what consistency model?" → **Strongly consistent** (S3 doesn't have eventual consistency anymore).
 
 ---
 
-## 📊 Storage Classes — The Heart Of S3 Questions
+## 📊 Storage Classes, The Heart Of S3 Questions
 
 | Class | Designed for | Min storage duration | Retrieval | Cost (per GB-month, approx) |
 |-------|--------------|----------------------|-----------|------------------------------|
@@ -64,15 +64,15 @@ Your business also gives customers locked-key access (only they can unlock — *
 | Logs accessed ~once a quarter | Standard-IA |
 | Logs that can be regenerated | One Zone-IA |
 | Backup that may be needed instantly but rarely | Glacier Instant Retrieval |
-| Compliance archive — minutes-to-hours OK | Glacier Flexible Retrieval |
-| 7-year tax records — almost never read | Glacier Deep Archive |
+| Compliance archive, minutes-to-hours OK | Glacier Flexible Retrieval |
+| 7-year tax records, almost never read | Glacier Deep Archive |
 | Unknown access patterns | Intelligent-Tiering |
 
 🎯 **Exam trap:** "Access pattern unknown / changes over time" → **Intelligent-Tiering** (lets AWS auto-move objects).
 
 ---
 
-## 🔄 Lifecycle Policies — Auto-Move Or Delete Objects
+## 🔄 Lifecycle Policies, Auto-Move Or Delete Objects
 
 A **lifecycle rule** says: "After N days, transition object to class X" or "After N days, expire (delete)."
 
@@ -96,7 +96,7 @@ Rule: archive-then-delete-logs
 
 ---
 
-## 🔐 S3 Encryption — Server-Side & Client-Side
+## 🔐 S3 Encryption, Server-Side & Client-Side
 
 ### Server-Side Encryption (SSE)
 
@@ -129,7 +129,7 @@ Use a bucket policy:
 
 ---
 
-## 🛡️ S3 Access Control — Block Public Access, Bucket Policies, ACLs
+## 🛡️ S3 Access Control, Block Public Access, Bucket Policies, ACLs
 
 ### Block Public Access (BPA)
 Account- AND bucket-level setting (ON by default for new buckets). Overrides any policy/ACL trying to make a bucket public.
@@ -137,10 +137,10 @@ Account- AND bucket-level setting (ON by default for new buckets). Overrides any
 🎯 **Exam mantra:** When in doubt, **keep BPA on** unless you explicitly need public access (and even then, use CloudFront in front).
 
 ### Bucket Policies vs ACLs vs IAM
-- **Bucket Policy** (resource-based, JSON) — primary access control today. Can do cross-account.
-- **IAM Policy** (identity-based) — controls what your IAM identities can do in S3.
-- **ACL** (legacy) — coarse-grained per-bucket/object. Mostly disabled by default now.
-- **Access Points** — named endpoints with their own policies for different application access patterns.
+- **Bucket Policy** (resource-based, JSON), primary access control today. Can do cross-account.
+- **IAM Policy** (identity-based), controls what your IAM identities can do in S3.
+- **ACL** (legacy), coarse-grained per-bucket/object. Mostly disabled by default now.
+- **Access Points**, named endpoints with their own policies for different application access patterns.
 
 ### S3 Access Points
 
@@ -150,7 +150,7 @@ A single bucket might serve 10 different applications. Instead of one mega-bucke
 
 ---
 
-## 🌍 S3 Replication — CRR & SRR
+## 🌍 S3 Replication, CRR & SRR
 
 | Type | Acronym | Use |
 |------|---------|-----|
@@ -180,13 +180,13 @@ Requirements:
 ### Versioning
 When enabled, S3 keeps every version of every object. Delete creates a "delete marker." Easy rollback for ransomware or accidents.
 
-### Object Lock — WORM (Write Once Read Many)
+### Object Lock, WORM (Write Once Read Many)
 Two modes:
 
 | Mode | Behavior |
 |------|----------|
 | **Governance** | Users with special IAM permission can override the lock |
-| **Compliance** | **No one can override** — not even root — until retention expires |
+| **Compliance** | **No one can override** not even root until retention expires |
 
 Plus **Legal Hold** (no retention period; just indefinite hold).
 
@@ -197,7 +197,7 @@ Requires MFA to delete a version or change versioning state. Can only be enabled
 
 ---
 
-## ⚡ Performance — Multipart Upload, Transfer Acceleration, S3 Select
+## ⚡ Performance, Multipart Upload, Transfer Acceleration, S3 Select
 
 | Feature | What | When |
 |---------|------|------|
@@ -206,7 +206,7 @@ Requires MFA to delete a version or change versioning state. Can only be enabled
 | **Byte-Range Fetches** | Parallel GETs of object ranges | Large object retrieval speedup |
 | **S3 Select / Glacier Select** | Server-side SQL on CSV/JSON/Parquet objects | Retrieve only needed rows; cheaper than full download |
 
-🎯 **Exam pattern:** "User in Australia uploading a 5 GB file to a US bucket — too slow." → **S3 Transfer Acceleration**.
+🎯 **Exam pattern:** "User in Australia uploading a 5 GB file to a US bucket, too slow." → **S3 Transfer Acceleration**.
 🎯 **Exam pattern:** "Lambda needs 50 rows from a 10 GB CSV in S3." → **S3 Select**.
 
 ---
@@ -233,7 +233,7 @@ Putting CloudFront in front of S3 gives you:
 - Field-level encryption
 - Geo-restriction
 
-Use an **Origin Access Control (OAC)** to keep the bucket private — only CloudFront can read it.
+Use an **Origin Access Control (OAC)** to keep the bucket private, only CloudFront can read it.
 
 🎯 **Exam pattern:** "Serve a static website to global users, low cost" → **S3 + CloudFront with OAC**, bucket Block Public Access ON.
 
@@ -257,11 +257,11 @@ S3 can send events (object created, deleted, restored) to:
 | Misconception | Reality |
 |---------------|---------|
 | "S3 has eventual consistency" | Strong read-after-write since 2020. |
-| "Standard-IA is cheaper than Intelligent-Tiering" | Per-GB yes, but Intelligent-Tiering wins when access patterns are unknown — no retrieval fees on Frequent/IA tiers. |
+| "Standard-IA is cheaper than Intelligent-Tiering" | Per-GB yes, but Intelligent-Tiering wins when access patterns are unknown, no retrieval fees on Frequent/IA tiers. |
 | "Glacier is a separate service" | Glacier classes are S3 storage classes today; manage via S3 APIs. |
-| "Replicas have the same version IDs" | No — versions are created independently. |
+| "Replicas have the same version IDs" | No, versions are created independently. |
 | "Public buckets are fine if I'm careful" | They're a leading cause of data leaks. Use CloudFront + OAC, BPA on. |
-| "SSE-S3 lets me manage keys" | No — SSE-S3 is AWS-managed. Use SSE-KMS for customer-managed keys. |
+| "SSE-S3 lets me manage keys" | No, SSE-S3 is AWS-managed. Use SSE-KMS for customer-managed keys. |
 | "Multipart upload is just for speed" | Also required for objects over 5 GB and lets you resume failed uploads. |
 
 ---
@@ -285,7 +285,7 @@ S3 can send events (object created, deleted, restored) to:
 | Term | Definition |
 |------|------------|
 | **Bucket** | Globally unique S3 container, in one region |
-| **Object** | Stored item — key + value + metadata + version ID |
+| **Object** | Stored item, key + value + metadata + version ID |
 | **Durability** | Likelihood the data is not lost (S3 = 11 nines) |
 | **Availability** | Uptime of the service (varies by class) |
 | **Lifecycle Rule** | Auto-transition / expire based on age and prefix/tag |
@@ -299,7 +299,7 @@ S3 can send events (object created, deleted, restored) to:
 | **Transfer Acceleration** | Use CloudFront edges to speed long-distance uploads |
 | **S3 Select** | Server-side SQL on CSV/JSON/Parquet |
 | **Presigned URL** | Time-limited URL granting temporary access |
-| **OAC** | Origin Access Control — keeps bucket private behind CloudFront |
+| **OAC** | Origin Access Control, keeps bucket private behind CloudFront |
 | **SSE-S3 / KMS / C** | Server-side encryption with S3 / KMS / customer keys |
 
 ---
@@ -322,14 +322,14 @@ You now know:
 1. 🎥 Watch the videos in [`Videos.md`](./Videos.md)
 2. ✏️ Take the [`Quiz.md`](./Quiz.md)
 3. 📋 Review [`Cheat-Sheet.md`](./Cheat-Sheet.md)
-4. 🧪 **Take [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) now — you've covered Modules 1–5.**
+4. 🧪 **Take [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) now, you've covered Modules 1–5.**
 5. ➡️ Then on to [Module 6: Databases](../Module-06-Databases/Reading.md)
 
 ---
 
-## 📖 Case Study — Robinhood and the GameStop "Meme Stock" Surge (January 2021)
+## 📖 Case Study, Robinhood and the GameStop "Meme Stock" Surge (January 2021)
 
-**Situation.** On Monday, January 25, 2021, retail traders coordinating on Reddit's `/r/wallstreetbets` triggered a short squeeze in **GameStop ($GME)**, **AMC Entertainment**, **BlackBerry**, and a handful of other heavily-shorted stocks. Robinhood — the largest commission-free brokerage with ~13M MAU at the time, running primarily on AWS — saw trading volume spike to **roughly 10× normal** within a single trading session. Their on-app order book latency exploded; the app froze for many users.
+**Situation.** On Monday, January 25, 2021, retail traders coordinating on Reddit's `/r/wallstreetbets` triggered a short squeeze in **GameStop ($GME)**, **AMC Entertainment**, **BlackBerry**, and a handful of other heavily-shorted stocks. Robinhood the largest commission-free brokerage with ~13M MAU at the time, running primarily on AWS saw trading volume spike to **roughly 10× normal** within a single trading session. Their on-app order book latency exploded; the app froze for many users.
 
 **Decision (the controversial decision and the architectural one).** Robinhood took two decisions, only one of which is an architecture lesson:
 
@@ -337,35 +337,35 @@ You now know:
 2. **The architecture response (the SAA lesson).** Robinhood's CTO Andy Hu in his March 2021 Congressional testimony and subsequent *AWS Builders' Library* contribution detailed the emergency scaling actions:
 
    - **Pre-warmed Auto Scaling Groups** were increased from 200 to 2,000+ instances across the order matching path within hours
-   - **S3 throughput** was the unsung hero — Robinhood stored order books and historical trade data in **S3 with Intelligent-Tiering** with thousands of read requests per second per prefix. **They had to redistribute prefixes** (S3 partitions by prefix) to avoid hot-prefix throttling
+   - **S3 throughput** was the unsung hero, Robinhood stored order books and historical trade data in **S3 with Intelligent-Tiering** with thousands of read requests per second per prefix. **They had to redistribute prefixes** (S3 partitions by prefix) to avoid hot-prefix throttling
    - **DynamoDB Adaptive Capacity** auto-scaled write capacity 50× within minutes
    - **CloudFront** absorbed a 7× increase in static asset requests; origin servers saw no spike
    - **ElastiCache Redis** clusters were scaled vertically (largest cache.r6g instances) plus sharded horizontally
-   - **Lambda** order-confirmation handlers — fully serverless — auto-scaled to **150,000+ concurrent executions** at peak
+   - **Lambda** order-confirmation handlers fully serverless auto-scaled to **150,000+ concurrent executions** at peak
 
-**Outcome.** Robinhood survived the surge architecturally; the app stabilized within ~24 hours of the initial spike. They sustained 38M trades on January 27 alone — by far the largest day in U.S. retail brokerage history. The infrastructure passed the test. (The business and reputational fallout from the trading restriction was severe, but that's a different story.)
+**Outcome.** Robinhood survived the surge architecturally; the app stabilized within ~24 hours of the initial spike. They sustained 38M trades on January 27 alone, by far the largest day in U.S. retail brokerage history. The infrastructure passed the test. (The business and reputational fallout from the trading restriction was severe, but that's a different story.)
 
 **Lesson for the exam / for practitioners.** This case puts the SAA exam's "elasticity" tropes in real terms:
 
-- **S3 prefix design** — high-throughput S3 workloads can hit the per-prefix limit (5,500 GET/s, 3,500 PUT/s as of 2024). The fix is **prefix sharding** — distributing keys across many prefixes. The exam asks: "S3 is throttling reads; what should you do?" Answer: **distribute keys** across prefixes (or add CloudFront in front, or use S3 Transfer Acceleration for uploads)
-- **S3 Intelligent-Tiering with unknown access patterns** — Robinhood didn't know which historical trades would suddenly be queried; Intelligent-Tiering let AWS auto-move objects between Frequent and Infrequent tiers without retrieval fees
-- **DynamoDB On-Demand or Adaptive Capacity** — eliminates the "provisioned throughput exceeded" failure mode
-- **CloudFront in front of S3** — absorbs static-asset surges; the only sustainable answer to "your app is slow at the edge"
-- **Auto Scaling pre-warming** — for *expected* surges (earnings releases, options expiration days), the right answer is **scheduled scaling**, not reactive target-tracking
+- **S3 prefix design** high-throughput S3 workloads can hit the per-prefix limit (5,500 GET/s, 3,500 PUT/s as of 2024). The fix is **prefix sharding** distributing keys across many prefixes. The exam asks: "S3 is throttling reads; what should you do?" Answer: **distribute keys** across prefixes (or add CloudFront in front, or use S3 Transfer Acceleration for uploads)
+- **S3 Intelligent-Tiering with unknown access patterns**, Robinhood didn't know which historical trades would suddenly be queried; Intelligent-Tiering let AWS auto-move objects between Frequent and Infrequent tiers without retrieval fees
+- **DynamoDB On-Demand or Adaptive Capacity**, eliminates the "provisioned throughput exceeded" failure mode
+- **CloudFront in front of S3**, absorbs static-asset surges; the only sustainable answer to "your app is slow at the edge"
+- **Auto Scaling pre-warming**, for *expected* surges (earnings releases, options expiration days), the right answer is **scheduled scaling**, not reactive target-tracking
 
 When the SAA exam asks "a brokerage app saw a 10× traffic spike; which design BEST handles future spikes?" the layered answer is: **CloudFront + S3 with sharded prefixes + Lambda + DynamoDB On-Demand + ElastiCache + ALB with ASG pre-warming**. That's Robinhood's exact stack, validated in production at extreme stress.
 
 **Discussion (Socratic).**
-- **Q1.** Robinhood's S3 throughput problem came from **hot prefixes**. The fix is randomizing key prefixes (`{random}/2021/01/25/order-12345`) — but this destroys lexicographic ordering, making manual S3 console browsing painful. Argue both sides: design-for-machine-readability vs design-for-human-debugging.
-- **Q2.** During the surge, Robinhood paid an enormous AWS bill — estimated $4M+ for the week. Was the elasticity *cost-effective* (vs. having had reserved over-capacity)? When does "scale on demand" beat "scale to peak"?
+- **Q1.** Robinhood's S3 throughput problem came from **hot prefixes**. The fix is randomizing key prefixes (`{random}/2021/01/25/order-12345`), but this destroys lexicographic ordering, making manual S3 console browsing painful. Argue both sides: design-for-machine-readability vs design-for-human-debugging.
+- **Q2.** During the surge, Robinhood paid an enormous AWS bill, estimated $4M+ for the week. Was the elasticity *cost-effective* (vs. having had reserved over-capacity)? When does "scale on demand" beat "scale to peak"?
 - **Q3.** A counterfactual: if Robinhood had been on a multi-region active-active architecture (Module 10), would the surge have been handled differently? Where would multi-region help vs add complexity?
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **Intelligent-Tiering vs explicit lifecycle.** Intelligent-Tiering is a "just-works" tier; explicit lifecycle rules give you control. At what kind of data and what data volume does the cost of monitoring (a few cents per 1000 objects) overtake the benefit of automatic movement?
-2. **Object Lock Compliance vs Governance.** Compliance mode cannot be overridden, even by root. This is exactly what regulated industries want — and exactly what makes accidents catastrophic. When is Compliance the right call, and what's the recovery path if you accidentally lock the wrong objects for 7 years?
+2. **Object Lock Compliance vs Governance.** Compliance mode cannot be overridden, even by root. This is exactly what regulated industries want, and exactly what makes accidents catastrophic. When is Compliance the right call, and what's the recovery path if you accidentally lock the wrong objects for 7 years?
 3. **Cross-region replication vs multi-region application architecture.** S3 CRR is cheap (~$0.02/GB transfer + storage). Multi-region active-active applications cost orders of magnitude more. When is CRR alone sufficient for DR, and when is it just one piece of a larger puzzle?
 4. **Presigned URLs vs CloudFront signed cookies.** Both grant time-limited access. Presigned URLs are simpler but per-object. Signed cookies handle "many objects, one auth" gracefully. What kind of app benefits from each pattern?
 5. **The "make it public for simplicity" temptation.** Many engineers start with `Block Public Access OFF + public bucket policy + serve directly`. The "right" pattern is `BPA ON + CloudFront + OAC`. The latter is a 30-minute setup. Why does the wrong pattern persist in production? What organizational levers fix it?
@@ -376,29 +376,29 @@ When the SAA exam asks "a brokerage app saw a 10× traffic spike; which design B
 
 > **Where this leads.**
 > - **Inside this course:** Module 06 (Databases) covers the DynamoDB / Aurora pairing that S3 typically sits next to. Module 07 (Decoupling) covers S3 event notifications → Lambda / SQS / EventBridge. Module 08 (CloudFront, edge) covers the CDN that wraps S3 in 95% of production deployments. Module 10 (DR) covers cross-region replication.
-> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 04 has a gentler S3 intro. `07-AWS-AI-Practitioner` Module 03 covers S3 + Bedrock for RAG (retrieval-augmented generation) — same storage, different application.
+> - **Cross-course:** `03-AWS-Cloud-Practitioner` Module 04 has a gentler S3 intro. `07-AWS-AI-Practitioner` Module 03 covers S3 + Bedrock for RAG (retrieval-augmented generation), same storage, different application.
 > - **Practice:** Practice Exam 1 has 7 S3 questions; Final Mock has 8. S3 is the highest-frequency single service on the exam.
-> - **Real world:** Spin up a static-site S3 bucket with CloudFront + OAC + Block Public Access — under $1/month and the canonical pattern.
+> - **Real world:** Spin up a static-site S3 bucket with CloudFront + OAC + Block Public Access, under $1/month and the canonical pattern.
 
 ---
 
 ## 📚 Further Sources (This Module)
 
 **AWS official**
-- 📖 **S3 User Guide** — `docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html`
-- 📖 **S3 Storage Classes overview** — `aws.amazon.com/s3/storage-classes/`
-- 📖 **S3 Replication** — `docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html`
-- 📖 **S3 Security Best Practices** — `docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html`
-- 📖 **AWS Builders' Library — *"Reliability, constant work, and a good cup of coffee"* (Colm MacCárthaigh)** — covers the prefix-sharding logic.
+- 📖 **S3 User Guide**, `docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html`
+- 📖 **S3 Storage Classes overview**, `aws.amazon.com/s3/storage-classes/`
+- 📖 **S3 Replication**, `docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html`
+- 📖 **S3 Security Best Practices**, `docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html`
+- 📖 **AWS Builders' Library *"Reliability, constant work, and a good cup of coffee"* (Colm MacCárthaigh)** covers the prefix-sharding logic.
 
 **re:Invent talks**
-- 🎤 **STG309 (2023): *Deep dive on Amazon S3 strong consistency and performance at scale*** — the canonical S3 internals talk.
+- 🎤 **STG309 (2023): *Deep dive on Amazon S3 strong consistency and performance at scale***, the canonical S3 internals talk.
 - 🎤 **STG326 (2023): *Optimizing storage cost on AWS***
-- 🎤 **STG203 (2024): *S3 features and pricing roundup*** — yearly catch-up talk.
+- 🎤 **STG203 (2024): *S3 features and pricing roundup***, yearly catch-up talk.
 
 **Industry**
-- 📰 **Werner Vogels's All Things Distributed blog (`allthingsdistributed.com`)** — multiple S3 internals posts.
-- 📰 **AWS re:Post tag `amazon-s3`** — community Q&A, often surfaces unusual edge cases.
+- 📰 **Werner Vogels's All Things Distributed blog (`allthingsdistributed.com`)**, multiple S3 internals posts.
+- 📰 **AWS re:Post tag `amazon-s3`**, community Q&A, often surfaces unusual edge cases.
 
 **Academic foundations**
 - 📄 **DeCandia, Giuseppe et al. (2007).** *Dynamo: Amazon's Highly Available Key-value Store.* ACM SOSP 2007. The paper that birthed DynamoDB and influenced S3's prefix-sharding model.

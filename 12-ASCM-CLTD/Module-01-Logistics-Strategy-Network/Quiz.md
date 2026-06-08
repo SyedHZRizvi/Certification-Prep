@@ -97,7 +97,7 @@ D. Make-or-buy of fleet over 5 years
 ---
 
 ### Q12. The "square-root rule" tells us: *(Understand)*
-A. Inventory roughly scales with the square root of the number of stocking locations — so doubling DCs raises total safety stock by ~41%
+A. Inventory roughly scales with the square root of the number of stocking locations, so doubling DCs raises total safety stock by ~41%
 B. Transportation distance scales with the square root of demand
 C. Warehouse rent scales with square root of square footage
 D. EOQ scales with the square root of holding cost
@@ -260,13 +260,13 @@ China → Mexico = nearshoring (geographic proximity). Reshoring = back to home 
 Center-of-gravity is geographic only; you then layer factor-rating for labor, taxes, infrastructure. Labor variation can move the final site significantly.
 
 ### Q17: **D. Cost of capital for manufacturing**
-Total logistics cost (TLC) covers transport, warehouse ops, inventory carrying, and service-loss / lost-sales. Manufacturing capital is *not* a logistics cost — it's a production cost.
+Total logistics cost (TLC) covers transport, warehouse ops, inventory carrying, and service-loss / lost-sales. Manufacturing capital is *not* a logistics cost, it's a production cost.
 
 ### Q18: **B. Eliminate storage time and accelerate replenishment**
 Walmart's cross-docks pioneered low-inventory, high-velocity retail replenishment.
 
 ### Q19: **C. Direct shipment**
-One origin, one destination, sensitive cargo — direct shipment minimizes handling and time-out-of-control.
+One origin, one destination, sensitive cargo, direct shipment minimizes handling and time-out-of-control.
 
 ### Q20: **B. Long-term, capital-intensive, hard to reverse**
 Strategic horizon is 3–10 years and involves big sunk costs.
@@ -284,7 +284,7 @@ Small depot near a key customer (often OEM/JIT supplier). Holds limited inventor
 COG ignores roads, labor, taxes. Always combine with factor-rating and MILP for production-ready answers.
 
 ### Q25: **B. Business-strategy alignment → COG baseline → MILP refinement with factor-rating**
-The cascade in this module: logistics strategy flows from business strategy (alignment first), then a COG baseline gives you the mathematically optimal centroid, then you refine with MILP optimization layered with factor-rating (labor, taxes, infrastructure). The other options jump straight to tactics without the strategic anchor — anti-pattern.
+The cascade in this module: logistics strategy flows from business strategy (alignment first), then a COG baseline gives you the mathematically optimal centroid, then you refine with MILP optimization layered with factor-rating (labor, taxes, infrastructure). The other options jump straight to tactics without the strategic anchor, anti-pattern.
 
 ---
 
@@ -293,7 +293,7 @@ The cascade in this module: logistics strategy flows from business strategy (ali
 - 23–25/25 → 🏆 You've mastered Module 1.
 - 20–22/25 → ✅ Solid. Review wrong answers, then move on.
 - 16–19/25 → ⚠️ Re-read network types + 3PL/4PL sections.
-- <16/25 → 🔁 Restart the module. Don't skip — this is foundational.
+- <16/25 → 🔁 Restart the module. Don't skip, this is foundational.
 
 ---
 

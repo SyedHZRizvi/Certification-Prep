@@ -24,7 +24,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GA4 E-Commerce Events — The Recommended Taxonomy</p>
+      <p class="vg-title">GA4 E-Commerce Events, The Recommended Taxonomy</p>
       <p class="vg-creator">MeasureSchool / Julian Juenemann</p>
       <span class="vg-duration">⏱ 26 min · view_item → purchase → refund</span>
     </div>
@@ -33,7 +33,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GA4 Data-Driven Attribution — How It Works</p>
+      <p class="vg-title">GA4 Data-Driven Attribution, How It Works</p>
       <p class="vg-creator">Simo Ahava / MeasureSchool</p>
       <span class="vg-duration">⏱ 22 min · DDA vs last-click; 2023 default switch</span>
     </div>
@@ -42,7 +42,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MMM — Meta Robyn + Google Meridian Walkthrough</p>
+      <p class="vg-title">MMM, Meta Robyn + Google Meridian Walkthrough</p>
       <p class="vg-creator">Recast / Common Thread Collective</p>
       <span class="vg-duration">⏱ 24 min · Open-source MMM in 2026</span>
     </div>
@@ -65,7 +65,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">GA4 BigQuery Export — SQL E-Commerce Analysis</p>
+      <p class="vg-title">GA4 BigQuery Export, SQL E-Commerce Analysis</p>
       <p class="vg-creator">Simo Ahava / MeasureSchool</p>
       <span class="vg-duration">⏱ 22 min · Row-level analysis + joins</span>
     </div>
@@ -83,7 +83,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Walmart Connect — The $4B Retail Media Network</p>
+      <p class="vg-title">Walmart Connect, The $4B Retail Media Network</p>
       <p class="vg-creator">eMarketer / Insider Intelligence</p>
       <span class="vg-duration">⏱ 16 min · MMM-as-a-service + Vizio acquisition</span>
     </div>
@@ -106,7 +106,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Mercado Libre — LATAM's Amazon</p>
+      <p class="vg-title">Mercado Libre, LATAM's Amazon</p>
       <p class="vg-creator">Various / Modern Retail</p>
       <span class="vg-duration">⏱ 17 min · $124B GMV across Brazil/Mexico/Argentina</span>
     </div>
@@ -115,7 +115,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Trustworthy A/B Testing — Kohavi Lecture</p>
+      <p class="vg-title">Trustworthy A/B Testing, Kohavi Lecture</p>
       <p class="vg-creator">Ron Kohavi (academic lectures)</p>
       <span class="vg-duration">⏱ 19 min · The canonical experimentation text in talk form</span>
     </div>

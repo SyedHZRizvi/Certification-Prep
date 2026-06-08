@@ -21,7 +21,7 @@ D. Using a smaller context window
 
 ### Q2. The seminal paper that popularized in-context learning at scale is: *(Remember)*
 A. Vaswani et al. 2017 (Attention Is All You Need)
-B. Brown et al. 2020 (Language Models are Few-Shot Learners — the GPT-3 paper)
+B. Brown et al. 2020 (Language Models are Few-Shot Learners, the GPT-3 paper)
 C. Wei et al. 2022 (Chain-of-Thought)
 D. Bai et al. 2022 (Constitutional AI)
 
@@ -45,7 +45,7 @@ D. Order has no effect
 
 ### Q5. The MOST appropriate strategy when you have 22,000 labeled examples and want production accuracy on a new ticket is: *(Apply)*
 A. Hardcode 50 random examples in the prompt
-B. Use similarity-based (kNN) retrieval — embed each new ticket, retrieve top-k similar historical examples at runtime
+B. Use similarity-based (kNN) retrieval, embed each new ticket, retrieve top-k similar historical examples at runtime
 C. Set temperature to 1.5
 D. Skip examples and rely on the model's general knowledge
 
@@ -77,7 +77,7 @@ D. CSV
 
 ### Q9. A team has 5 classes with imbalanced ratios (one class is 70% of traffic). The BEST few-shot example distribution is: *(Apply)*
 A. 7 examples of the dominant class, 1 of each other class
-B. Balanced — approximately equal counts per class, with maybe 1–2 extra for hard edge cases
+B. Balanced, approximately equal counts per class, with maybe 1–2 extra for hard edge cases
 C. Only examples of the rare classes
 D. No examples at all
 
@@ -109,7 +109,7 @@ D. Anchor-and-elaborate only
 
 ### Q13. "Hardest-example mining" picks examples that: *(Understand)*
 A. Are the easiest to classify
-B. The model currently gets WRONG in zero-shot — to push the decision boundary
+B. The model currently gets WRONG in zero-shot, to push the decision boundary
 C. Are randomly selected
 D. Are the most recent
 
@@ -135,7 +135,7 @@ D. Always put the rare class first and the common class last
 A. Claude
 B. GPT-5 / Gemini (both work well; XML is fine but not preferred)
 C. Llama 2 (very old)
-D. None — all require XML
+D. None, all require XML
 
 ---
 
@@ -188,7 +188,7 @@ D. Always return UNKNOWN
 ---
 
 ### Q23. A team observes accuracy crashes when input distribution shifts. The MOST likely cause and fix: *(Analyze)*
-A. The model is broken — switch families
+A. The model is broken, switch families
 B. The few-shot examples were too narrow / unrepresentative; expand coverage or move to kNN retrieval
 C. Lower the temperature to 0
 D. Remove the system prompt
@@ -227,10 +227,10 @@ D. No examples, hot temperature, hope for the best
 That's the definition. Brown 2020 was the landmark demonstration at scale.
 
 ### Q2: **B. Brown et al. 2020 (GPT-3 paper)**
-*Language Models are Few-Shot Learners* — NeurIPS 2020. The paper that defined the field's vocabulary.
+*Language Models are Few-Shot Learners*, NeurIPS 2020. The paper that defined the field's vocabulary.
 
 ### Q3: **C. Prompt contains 3 input-output example pairs**
-That's all "shot" means in this context — one demonstration pair.
+That's all "shot" means in this context, one demonstration pair.
 
 ### Q4: **C. 30+ percentage points**
 Lu et al. 2022 demonstrated this on multiple benchmarks. One of the most under-appreciated empirical findings in prompt engineering.
@@ -238,7 +238,7 @@ Lu et al. 2022 demonstrated this on multiple benchmarks. One of the most under-a
 ### Q5: **B. Similarity-based (kNN) retrieval**
 With a large labeled corpus, retrieve the most-relevant examples per request. This is Yuki's Week 3 approach.
 
-### Q6: **B. Random labels still help — format learning matters**
+### Q6: **B. Random labels still help, format learning matters**
 Min et al. 2022 showed that even when labels are wrong, the model benefits from the *format* and *demonstration of task shape*. Content learning is one of several mechanisms.
 
 ### Q7: **B. Model attends more strongly to examples near the END**
@@ -257,7 +257,7 @@ With hundreds of examples, you need the context room. Claude 4.7 (1M), Gemini 2.
 A bridge to chain-of-thought (Module 3). One sentence of explanation per example often pays for itself.
 
 ### Q12: **C. Diverse coverage**
-That's the named strategy — span the label/input space with curated examples.
+That's the named strategy, span the label/input space with curated examples.
 
 ### Q13: **B. Examples the model currently gets WRONG in zero-shot**
 The goal: push the boundary where the model fails. Easy cases were never the problem.
@@ -266,9 +266,9 @@ The goal: push the boundary where the model fails. Easy cases were never the pro
 Few-shot ships the examples every call (cost). Fine-tuning bakes them in (lower per-call but higher setup).
 
 ### Q15: **D. Always put rare first / common last**
-That's a SPECIFIC ordering — and it doesn't defend against bias, it creates one. Balance and randomize are the defenses.
+That's a SPECIFIC ordering, and it doesn't defend against bias, it creates one. Balance and randomize are the defenses.
 
-### Q16: **B. GPT-5 / Gemini — both work well with multiple formats**
+### Q16: **B. GPT-5 / Gemini, both work well with multiple formats**
 Claude prefers XML but works with anything; GPT and Gemini are agnostic. Llama varies.
 
 ### Q17: **B. Add 3–5 diverse examples and measure lift**
@@ -287,7 +287,7 @@ Anthropic prompt caching: ~10% read cost on cached portion (and ~125% write the 
 Min 2022's finding. Both mechanisms contribute to ICL.
 
 ### Q22: **B. Mostly class-C similar examples, biasing toward correct C classification**
-That's the *point* of kNN — retrieve close neighbors so the in-context distribution matches the input distribution.
+That's the *point* of kNN, retrieve close neighbors so the in-context distribution matches the input distribution.
 
 ### Q23: **B. Examples were too narrow; expand or move to kNN**
 Static few-shot is brittle to distribution shift. kNN retrieval inherits robustness from a larger corpus.
@@ -322,4 +322,4 @@ Production-grade combo: per-request relevant examples, model-preferred format, d
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Chain-of-Thought & Reasoning](../Module-03-Chain-of-Thought-Reasoning/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Chain-of-Thought & Reasoning](../Module-03-Chain-of-Thought-Reasoning/Reading.md)

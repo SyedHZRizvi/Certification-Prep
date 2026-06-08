@@ -26,27 +26,27 @@ TRIGGER  →  CONDITION  →  ACTION  →  DELAY  →  next step
 
 ---
 
-## 📧 HubSpot — 4 Core B2B Workflows
+## 📧 HubSpot, 4 Core B2B Workflows
 
 ```
-1. Hot Lead     — high-intent pages or forms
-2. MQL→SQL      — score threshold + rep notify
-3. Onboarding   — post-signup education
-4. Re-engage    — 60+ days inactive
+1. Hot Lead    , high-intent pages or forms
+2. MQL→SQL     , score threshold + rep notify
+3. Onboarding  , post-signup education
+4. Re-engage   , 60+ days inactive
 ```
 
 ---
 
-## 🛍️ Klaviyo — 7 Ecom Flows (Must-Have)
+## 🛍️ Klaviyo, 7 Ecom Flows (Must-Have)
 
 ```
-1. Welcome Series        — new subscribers
-2. Abandoned Cart        — recovery (6-12% recapture!)
-3. Abandoned Browse      — 3+ product views, no ATC
-4. Post-Purchase         — review + cross-sell
-5. Win-Back              — 90+ days no purchase
-6. Birthday/Anniversary  — LTV lift
-7. Replenishment         — repeat purchase trigger
+1. Welcome Series       , new subscribers
+2. Abandoned Cart       , recovery (6-12% recapture!)
+3. Abandoned Browse     , 3+ product views, no ATC
+4. Post-Purchase        , review + cross-sell
+5. Win-Back             , 90+ days no purchase
+6. Birthday/Anniversary , LTV lift
+7. Replenishment        , repeat purchase trigger
 ```
 
 ---
@@ -54,9 +54,9 @@ TRIGGER  →  CONDITION  →  ACTION  →  DELAY  →  next step
 ## ⏰ Klaviyo Abandoned Cart Timing
 
 ```
-T+1 hour:    Email 1 — reminder
-T+24 hours:  Email 2 — social proof
-T+48 hours:  Email 3 — 10% off (expires tonight)
+T+1 hour:    Email 1, reminder
+T+24 hours:  Email 2, social proof
+T+48 hours:  Email 3, 10% off (expires tonight)
 T+96 hours:  EXIT flow
 ```
 
@@ -154,7 +154,7 @@ GA4 (measurement)
 ## ✏️ Quick Self-Check
 
 1. Universal automation model?
-2. Klaviyo vs HubSpot — when to pick which?
+2. Klaviyo vs HubSpot, when to pick which?
 3. The 7 Klaviyo Flows?
 4. Speed-to-lead conversion lift?
 5. What is LLM "tool use"?

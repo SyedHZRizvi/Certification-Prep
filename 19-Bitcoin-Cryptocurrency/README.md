@@ -7,7 +7,7 @@ title: Bitcoin & Cryptocurrency Track
 
 **₿ Bitcoin & Crypto** › Princeton → C4 CBP → CBSA → UNic MSc ladder
 
-> **Goal:** Build a Princeton/MIT-grade understanding of Bitcoin — the cryptography, the consensus mechanism, the network, the wallets, the economics, the layer-2s, the regulatory landscape, and the institutional rails — then pass the real-world certification ladder that begins with Princeton's free course and ends with the C4 Certified Bitcoin Professional (CBP) exam.
+> **Goal:** Build a Princeton/MIT-grade understanding of Bitcoin the cryptography, the consensus mechanism, the network, the wallets, the economics, the layer-2s, the regulatory landscape, and the institutional rails then pass the real-world certification ladder that begins with Princeton's free course and ends with the C4 Certified Bitcoin Professional (CBP) exam.
 > **Duration:** 10–14 weeks part-time (≈8–10 hrs/week)
 > **Cost:** Free (this credential) + $100–$400 for the real industry exams below
 > **Difficulty:** Intermediate-to-advanced · comfort with cryptography basics + finance literacy
@@ -18,28 +18,28 @@ title: Bitcoin & Cryptocurrency Track
 
 ### 🎯 The promise
 
-Bitcoin & Cryptocurrency is the credential ladder that takes you from someone who *speculates* on crypto to someone who *understands* it — well enough to build, audit, regulate, or invest in the asset class that the BlackRock IBIT, Fidelity FBTC, ARK ARKB spot ETFs and the post-MiCA European licensing regime have made institutional. By the end of this track you'll be ready to sit the **C4 Certified Bitcoin Professional (CBP)** exam, the **CryptoCurrency Security Standard Auditor (CCSS-A)** track, and have completed the **Princeton Bitcoin and Cryptocurrency Technologies** course — three of the most-respected credentials in the space. This curriculum is also the conceptual stepping stone into the University of Nicosia's MSc in Digital Currency.
+Bitcoin & Cryptocurrency is the credential ladder that takes you from someone who *speculates* on crypto to someone who *understands* it well enough to build, audit, regulate, or invest in the asset class that the BlackRock IBIT, Fidelity FBTC, ARK ARKB spot ETFs and the post-MiCA European licensing regime have made institutional. By the end of this track you'll be ready to sit the **C4 Certified Bitcoin Professional (CBP)** exam, the **CryptoCurrency Security Standard Auditor (CCSS-A)** track, and have completed the **Princeton Bitcoin and Cryptocurrency Technologies** course three of the most-respected credentials in the space. This curriculum is also the conceptual stepping stone into the University of Nicosia's MSc in Digital Currency.
 
 ### 💼 Career outcomes after passing
 
-- **Blockchain Developer (Bitcoin / Lightning / Stacks)** ($120K–$180K) — building wallets, custody, payment rails, BRC-20 tooling
-- **Crypto Compliance Analyst** ($85K–$125K) — Travel Rule, KYC/AML, OFAC sanctions screening at exchanges and banks
-- **Crypto Risk Manager** ($110K–$160K) — at banks, hedge funds, and asset managers entering the space
-- **Digital Asset Custody Engineer** ($130K–$190K) — MPC, multi-sig, HSM-based custody design
-- **Blockchain Solutions Architect** ($140K–$200K) — at consulting firms and digital-asset platforms
-- **Crypto Product Manager / BD** ($120K–$180K + token grants) — at exchanges, custodians, infrastructure providers
-- **Regulatory / Policy Specialist** ($110K–$170K) — at trade associations (Chamber of Digital Commerce), law firms, and regulators
+- **Blockchain Developer (Bitcoin / Lightning / Stacks)** ($120K–$180K), building wallets, custody, payment rails, BRC-20 tooling
+- **Crypto Compliance Analyst** ($85K–$125K), Travel Rule, KYC/AML, OFAC sanctions screening at exchanges and banks
+- **Crypto Risk Manager** ($110K–$160K), at banks, hedge funds, and asset managers entering the space
+- **Digital Asset Custody Engineer** ($130K–$190K), MPC, multi-sig, HSM-based custody design
+- **Blockchain Solutions Architect** ($140K–$200K), at consulting firms and digital-asset platforms
+- **Crypto Product Manager / BD** ($120K–$180K + token grants), at exchanges, custodians, infrastructure providers
+- **Regulatory / Policy Specialist** ($110K–$170K), at trade associations (Chamber of Digital Commerce), law firms, and regulators
 
 The Bitcoin career ladder pairs with course 09 (Security+) for the security-engineering track and course 20 (E-Commerce) for the merchant-side payments work. Compensation in Bitcoin-native employers typically includes BTC or stock options on top of base salary.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every module opens with a story (Pizza Day 2010, Mt. Gox, the Bitcoin Cash fork, the Taproot activation, the BlackRock ETF approval)
-- **Original questions only** — every quiz and practice exam written from public exam outlines; no copyrighted dumps
-- **Real-world case studies** — Mt. Gox custody failure, Silk Road forensics, the Colonial Pipeline ransom recovery, MicroStrategy's treasury thesis, El Salvador's legal-tender adoption, the FTX collapse
-- **One author, one voice** — coherent vocabulary across all 10 modules
-- **Updated for the 2026 institutional landscape** — spot ETFs, MiCA/CASP rules, BRC-20 / Ordinals / Runes, Lightning at scale, Taproot in production, MPC custody norms
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every module opens with a story (Pizza Day 2010, Mt. Gox, the Bitcoin Cash fork, the Taproot activation, the BlackRock ETF approval)
+- **Original questions only**, every quiz and practice exam written from public exam outlines; no copyrighted dumps
+- **Real-world case studies**, Mt. Gox custody failure, Silk Road forensics, the Colonial Pipeline ransom recovery, MicroStrategy's treasury thesis, El Salvador's legal-tender adoption, the FTX collapse
+- **One author, one voice**, coherent vocabulary across all 10 modules
+- **Updated for the 2026 institutional landscape**, spot ETFs, MiCA/CASP rules, BRC-20 / Ordinals / Runes, Lightning at scale, Taproot in production, MPC custody norms
 
 ### 🚀 Ready to start?
 
@@ -65,8 +65,8 @@ Either way, by the end of this track you will be able to walk into a 2026 instit
 
 This track includes two course-root resources that go beyond exam prep:
 
-- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 7-deliverable, 16-week scenario where you act as the new Head of Digital Assets at a $4.2B regional credit union piloting Bitcoin custody and a customer-facing Lightning payments rail. Integrates custody architecture (multi-sig + MPC + CCSS), AML/KYC + FATF Travel Rule, Lightning integration runbook, a 5-year financial model, and a board readout deck.
-- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Nakamoto's 2008 white paper, Narayanan et al.'s 2016 *Bitcoin and Cryptocurrency Technologies* (Princeton UP), Antonopoulos' *Mastering Bitcoin* and *Internet of Money*, Ammous' *Bitcoin Standard*, the canonical BIPs (32/39/44/141/340/341), Poon & Dryja's Lightning paper, FATF Travel Rule, MiCA, CCSS, plus the four free academic courses (Princeton/MIT/Stanford/Berkeley).
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 7-deliverable, 16-week scenario where you act as the new Head of Digital Assets at a $4.2B regional credit union piloting Bitcoin custody and a customer-facing Lightning payments rail. Integrates custody architecture (multi-sig + MPC + CCSS), AML/KYC + FATF Travel Rule, Lightning integration runbook, a 5-year financial model, and a board readout deck.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md), The full canonical bibliography: Nakamoto's 2008 white paper, Narayanan et al.'s 2016 *Bitcoin and Cryptocurrency Technologies* (Princeton UP), Antonopoulos' *Mastering Bitcoin* and *Internet of Money*, Ammous' *Bitcoin Standard*, the canonical BIPs (32/39/44/141/340/341), Poon & Dryja's Lightning paper, FATF Travel Rule, MiCA, CCSS, plus the four free academic courses (Princeton/MIT/Stanford/Berkeley).
 
 ---
 
@@ -74,16 +74,16 @@ This track includes two course-root resources that go beyond exam prep:
 
 By the end of this track, you will be able to:
 
-- **Diagram** the full Bitcoin stack — cryptography → consensus → network → wallets → mining → script → Lightning → custody → regulation.
+- **Diagram** the full Bitcoin stack, cryptography → consensus → network → wallets → mining → script → Lightning → custody → regulation.
 - **Read** the Nakamoto white paper line by line and explain each design decision (double-spend, longest chain, difficulty adjustment, Merkle trees, the incentive structure).
 - **Apply** the cryptographic primitives: SHA-256, RIPEMD-160, ECDSA over secp256k1, Schnorr signatures, BIP-39 mnemonics, BIP-32 hierarchical deterministic wallets, BIP-44 derivation paths.
 - **Explain** Proof-of-Work, difficulty retargeting, the halving schedule, the 21M supply cap, and why ASICs replaced GPUs and CPUs.
-- **Design** a self-custody scheme — single-sig vs multi-sig vs MPC, hardware wallets (Trezor, Ledger, Coldcard), passphrase protection, seed backup strategy, inheritance plan.
-- **Build** a Lightning Network mental model — payment channels, HTLCs, onion routing, BOLT specs, watchtowers, channel jamming, splicing.
+- **Design** a self-custody scheme, single-sig vs multi-sig vs MPC, hardware wallets (Trezor, Ledger, Coldcard), passphrase protection, seed backup strategy, inheritance plan.
+- **Build** a Lightning Network mental model, payment channels, HTLCs, onion routing, BOLT specs, watchtowers, channel jamming, splicing.
 - **Audit** an institutional custody design against the CryptoCurrency Security Standard (CCSS) Level I / II / III.
 - **Comply** with FinCEN MSB rules, the FATF Travel Rule, EU's MiCA regulation, SEC + CFTC US framework, and the IRS tax treatment of digital assets.
 - **Evaluate** the spot-Bitcoin ETF ecosystem (BlackRock IBIT, Fidelity FBTC, Ark ARKB), custody-as-a-service (Coinbase Custody, BitGo, Fidelity Digital Assets, Anchorage), and institutional execution venues.
-- **Frame** the ecosystem beyond Bitcoin — Ethereum and smart contracts, stablecoins, the DAO hack, Terra/Luna, NFTs, central-bank digital currencies, and where the line between "Bitcoin" and "crypto" actually sits.
+- **Frame** the ecosystem beyond Bitcoin, Ethereum and smart contracts, stablecoins, the DAO hack, Terra/Luna, NFTs, central-bank digital currencies, and where the line between "Bitcoin" and "crypto" actually sits.
 
 ---
 
@@ -114,7 +114,7 @@ By the end of this track, you will be able to:
 | [Practice Exam 2](./Practice-Exams/Practice-Exam-2.md) | After finishing Modules 6–10 | 50 Q | 50 min | 38/50 (75%) |
 | [Final Mock Exam](./Practice-Exams/Final-Mock-Exam.md) | Day before your real CBP exam | **75 Q** | **75 min** | **53/75 (~70%)** |
 
-The Final Mock matches the **Certified Bitcoin Professional (CBP)** format exactly — 75 questions, 75 minutes, ~70% pass.
+The Final Mock matches the **Certified Bitcoin Professional (CBP)** format exactly, 75 questions, 75 minutes, ~70% pass.
 
 ---
 
@@ -124,10 +124,10 @@ Completing this course makes you exam-ready for a four-tier industry ladder. Eac
 
 | Tier | Credential | Provider | Cost | Format |
 |---|---|---|---|---|
-| **1 — Foundations** | *Bitcoin and Cryptocurrency Technologies* (Princeton; Narayanan) | Coursera audit | Free | 11-week MOOC, no proctored exam |
-| **2 — Practitioner** | **Certified Bitcoin Professional (CBP)** | CryptoCurrency Certification Consortium (C4) | $100 USD | 75 Q, 75 min, online proctored |
-| **3 — Specialist** | Certified Blockchain Solution Architect (CBSA) | Blockchain Training Alliance | ~$400 USD | 70 Q, 90 min, online proctored |
-| **4 — Expert** | MSc in Blockchain & Digital Currency | University of Nicosia (Antonopoulos lineage) | ~€13K | 18 months part-time, distance-learning |
+| **1, Foundations** | *Bitcoin and Cryptocurrency Technologies* (Princeton; Narayanan) | Coursera audit | Free | 11-week MOOC, no proctored exam |
+| **2, Practitioner** | **Certified Bitcoin Professional (CBP)** | CryptoCurrency Certification Consortium (C4) | $100 USD | 75 Q, 75 min, online proctored |
+| **3, Specialist** | Certified Blockchain Solution Architect (CBSA) | Blockchain Training Alliance | ~$400 USD | 70 Q, 90 min, online proctored |
+| **4, Expert** | MSc in Blockchain & Digital Currency | University of Nicosia (Antonopoulos lineage) | ~€13K | 18 months part-time, distance-learning |
 
 🔗 **Official links:**
 - Princeton (Coursera): <https://www.coursera.org/learn/cryptocurrency>
@@ -135,17 +135,17 @@ Completing this course makes you exam-ready for a four-tier industry ladder. Eac
 - Blockchain Training Alliance CBSA: <https://www.blockchaintrainingalliance.com/products/certified-blockchain-solution-architect>
 - University of Nicosia MSc: <https://www.unic.ac.cy/blockchain/msc-blockchain/>
 
-> **Reality check.** The CBP is the most accessible "real industry" credential. Princeton's Coursera course is the best free academic anchor — pair it with this site's modules for exam-pragmatic structure. The Nicosia MSc is the gold-standard academic credential and where most institutional research originates.
+> **Reality check.** The CBP is the most accessible "real industry" credential. Princeton's Coursera course is the best free academic anchor, pair it with this site's modules for exam-pragmatic structure. The Nicosia MSc is the gold-standard academic credential and where most institutional research originates.
 
 ---
 
 ## 📖 The Single Most Important Resources
 
-🔗 **Princeton's *Bitcoin and Cryptocurrency Technologies*** (Narayanan, Bonneau, Felten, Miller, Goldfeder — Princeton University Press, 2016) is the canonical free academic anchor. The full draft PDF is free on the Princeton CS website, and the Coursera version (11 weeks, Arvind Narayanan) is auditable for free. Read it in parallel with Modules 1–5 of this course.
+🔗 **Princeton's *Bitcoin and Cryptocurrency Technologies*** (Narayanan, Bonneau, Felten, Miller, Goldfeder, Princeton University Press, 2016) is the canonical free academic anchor. The full draft PDF is free on the Princeton CS website, and the Coursera version (11 weeks, Arvind Narayanan) is auditable for free. Read it in parallel with Modules 1–5 of this course.
 
-🔗 **Andreas Antonopoulos' *Mastering Bitcoin* (O'Reilly, 2e, 2017)** is the canonical free practitioner reference — also entirely free on GitHub at <https://github.com/bitcoinbook/bitcoinbook>. Read it in parallel with Modules 4–7.
+🔗 **Andreas Antonopoulos' *Mastering Bitcoin* (O'Reilly, 2e, 2017)** is the canonical free practitioner reference, also entirely free on GitHub at <https://github.com/bitcoinbook/bitcoinbook>. Read it in parallel with Modules 4–7.
 
-🔗 **MIT 15.S12 *Blockchain and Money* (Gary Gensler, Fall 2018)** — every lecture is on MIT OCW for free. Gensler taught this *before* becoming SEC Chair, and the lectures are still the cleanest "MIT-grade" explanation of how Bitcoin fits into the broader monetary and regulatory landscape. Watch in parallel with Modules 8–10.
+🔗 **MIT 15.S12 *Blockchain and Money* (Gary Gensler, Fall 2018)**, every lecture is on MIT OCW for free. Gensler taught this *before* becoming SEC Chair, and the lectures are still the cleanest "MIT-grade" explanation of how Bitcoin fits into the broader monetary and regulatory landscape. Watch in parallel with Modules 8–10.
 
 ---
 
@@ -208,11 +208,11 @@ For senior engineer or head-of-digital-assets roles, you'll still need 3–5 yea
 
 ## ⚠️ The 7 Most Common Reasons People Fail Bitcoin Exams
 
-1. ❌ Studied "crypto" (mostly altcoins, mostly memes) and assumed it transferred. The CBP, CBSA, and Princeton track all assume you understand **Bitcoin specifically** — its design choices, its trade-offs, its history.
+1. ❌ Studied "crypto" (mostly altcoins, mostly memes) and assumed it transferred. The CBP, CBSA, and Princeton track all assume you understand **Bitcoin specifically**, its design choices, its trade-offs, its history.
 2. ❌ Skipped the cryptography. You cannot reason about why Schnorr matters, or why bcrypt is wrong for passwords, or how a Merkle proof verifies inclusion, without the Module-2 math.
-3. ❌ Memorized BIP numbers without **doing the workflow** — generating a seed, deriving an HD wallet, signing a PSBT, broadcasting on signet. The exams ask scenario questions; rote BIP recall fails them.
+3. ❌ Memorized BIP numbers without **doing the workflow**, generating a seed, deriving an HD wallet, signing a PSBT, broadcasting on signet. The exams ask scenario questions; rote BIP recall fails them.
 4. ❌ Confused soft forks with hard forks under time pressure. Module 3 drills this until reflex.
-5. ❌ Treated Lightning as "a Bitcoin sidechain." It isn't — it's a layer-2 with its own BOLT-spec rules, channel mechanics, and routing. Module 7 fixes the conflation.
+5. ❌ Treated Lightning as "a Bitcoin sidechain." It isn't, it's a layer-2 with its own BOLT-spec rules, channel mechanics, and routing. Module 7 fixes the conflation.
 6. ❌ Skipped the **regulation** module because it felt "non-technical." Then they failed the 20–25% of CBP questions that test FinCEN, FATF, MiCA, and AML/KYC.
 7. ❌ Practiced under leisurely conditions, not at 1 minute per question (CBP's pace).
 
@@ -233,4 +233,4 @@ You've got this. 🚀
 
 ---
 
-**Next:** [Course 20 — E-Commerce](../20-E-Commerce/README.md)
+**Next:** [Course 20, E-Commerce](../20-E-Commerce/README.md)

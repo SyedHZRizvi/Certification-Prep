@@ -13,11 +13,11 @@
 | **Earned** | No (you influence) | PR mentions, organic backlinks, reviews |
 | **Shared** | Partially | UGC, Reddit threads, community discussions |
 
-🧠 Memory: "**P**lease **O**wn **E**very **S**ale" — Paid, Owned, Earned, Shared.
+🧠 Memory: "**P**lease **O**wn **E**very **S**ale", Paid, Owned, Earned, Shared.
 
 ---
 
-## 🎯 The Funnel — Three Layers (HubSpot's Flavor)
+## 🎯 The Funnel, Three Layers (HubSpot's Flavor)
 
 ```
    TOFU  → "I have a problem"     → SEO, YouTube, podcasts, social
@@ -70,7 +70,7 @@ Outside the walls: **Microsoft Advertising** (B2B via LinkedIn), **The Trade Des
 
 1. **AI Overviews** kill TOFU clicks (60% zero-click in US).
 2. **Cookie deprecation** + iOS 14.5 broke deterministic attribution.
-3. **Walled-garden consolidation** — open web shrinking, CTV growing.
+3. **Walled-garden consolidation**, open web shrinking, CTV growing.
 4. **GenAI** reset content + image + video economics.
 5. **Probabilistic attribution** (MMM + incrementality + platform-reported + first-party).
 
@@ -78,11 +78,11 @@ Outside the walls: **Microsoft Advertising** (B2B via LinkedIn), **The Trade Des
 
 ## 📜 Core Marketing Frameworks
 
-- **4Ps** (Kotler/McCarthy) — Product, Price, Place, Promotion
-- **4Cs** (Lauterborn) — Customer, Cost, Convenience, Communication
-- **JTBD** (Christensen, Harvard) — what job is the product hired for
-- **OKRs / KPIs** — objectives + measurable results
-- **SOSTAC** — Situation, Objectives, Strategy, Tactics, Action, Control
+- **4Ps** (Kotler/McCarthy), Product, Price, Place, Promotion
+- **4Cs** (Lauterborn), Customer, Cost, Convenience, Communication
+- **JTBD** (Christensen, Harvard), what job is the product hired for
+- **OKRs / KPIs**, objectives + measurable results
+- **SOSTAC**, Situation, Objectives, Strategy, Tactics, Action, Control
 
 ---
 
@@ -91,7 +91,7 @@ Outside the walls: **Microsoft Advertising** (B2B via LinkedIn), **The Trade Des
 - ❌ Treating ROAS as profit (it's revenue / spend, not profit)
 - ❌ Last-click attribution as the only model
 - ❌ TOFU SEO as the centerpiece of a 2026 content plan
-- ❌ "More channels = more reach" — usually means more cost, less mastery
+- ❌ "More channels = more reach", usually means more cost, less mastery
 - ❌ Conflating Performance Max (Google) with Advantage+ (Meta)
 - ❌ Buying email lists ("first-party data" must be collected with consent)
 

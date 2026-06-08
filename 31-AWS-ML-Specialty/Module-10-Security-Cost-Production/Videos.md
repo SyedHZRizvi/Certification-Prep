@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>💰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker Cost Optimisation — Full Playbook</p>
+      <p class="vg-title">SageMaker Cost Optimisation, Full Playbook</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 24 min · Spot, MME, Inferentia, Savings Plans</span>
     </div>
@@ -57,7 +57,7 @@
     <div class="vg-thumb"><span>🕵️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Macie — PII Discovery</p>
+      <p class="vg-title">AWS Macie, PII Discovery</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 18 min</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Inferentia2 — Cut Inference Cost</p>
+      <p class="vg-title">Inferentia2, Cut Inference Cost</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 17 min</span>
     </div>
@@ -89,7 +89,7 @@
     <div class="vg-thumb"><span>📌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Pinterest ML Infrastructure — re:Invent</p>
+      <p class="vg-title">Pinterest ML Infrastructure, re:Invent</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 45 min · Real cost + security war stories</span>
     </div>
@@ -98,7 +98,7 @@
     <div class="vg-thumb"><span>⏰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Studio Lifecycle Configs — Idle Auto-Shutdown</p>
+      <p class="vg-title">Studio Lifecycle Configs, Idle Auto-Shutdown</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 14 min</span>
     </div>
@@ -120,7 +120,7 @@
 
 1. Sketch the no-internet training architecture from memory.
 2. Top 5 cost-optimisation moves for inference?
-3. CloudTrail vs Macie vs Config — when each?
+3. CloudTrail vs Macie vs Config, when each?
 4. Why does `enable_network_isolation=True` strengthen security?
 5. What does the Pinterest cost + security stack look like?
 

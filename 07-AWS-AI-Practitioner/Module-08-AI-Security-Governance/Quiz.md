@@ -64,7 +64,7 @@ D. AWS Trusted Advisor
 ---
 
 ### Q8. To run a HIPAA workload on Bedrock you typically need: *(Evaluate)*
-A. Nothing extra — Bedrock auto-complies
+A. Nothing extra, Bedrock auto-complies
 B. A signed Business Associate Addendum (BAA) with AWS, plus use of HIPAA-eligible services
 C. A separate AWS account in GovCloud
 D. To disable encryption
@@ -113,7 +113,7 @@ D. Default KMS encryption
 
 ### Q14. A custom (fine-tuned) Bedrock model is: *(Understand)*
 A. Public by default
-B. Stored encrypted (KMS — customer-managed key recommended) and owned by the customer
+B. Stored encrypted (KMS, customer-managed key recommended) and owned by the customer
 C. Trained on other customers' data
 D. Hosted by the model provider
 
@@ -129,7 +129,7 @@ D. AWS Direct Connect
 
 ### Q16. To filter PII at INFERENCE TIME on Bedrock prompts and responses, use: *(Apply)*
 A. AWS Macie
-B. Bedrock Guardrails — Sensitive Information filter
+B. Bedrock Guardrails, Sensitive Information filter
 C. AWS Config
 D. AWS Artifact
 
@@ -171,7 +171,7 @@ D. Disable Guardrails
 A. The service has any customers anywhere
 B. The service processes personal data of EU residents
 C. The service uses GPUs
-D. Never — GDPR is US-only
+D. Never, GDPR is US-only
 
 ---
 
@@ -205,7 +205,7 @@ D. Deleting CloudTrail
 AWS handles "of the cloud" (infrastructure). You handle "in the cloud" (data, identity, config).
 
 ### Q2: **B. Resource-level IAM policy on the Claude model ARN(s)**
-Bedrock supports resource-level permissions on model ARNs — the standard pattern.
+Bedrock supports resource-level permissions on model ARNs, the standard pattern.
 
 ### Q3: **C. PrivateLink VPC interface endpoint**
 Keeps traffic on the AWS backbone, not the internet. Works for Bedrock Runtime and Agent / KB Runtime.
@@ -220,7 +220,7 @@ Opt-in capture of prompts + completions to S3 or CloudWatch Logs.
 ML-powered PII discovery and classification in S3.
 
 ### Q7: **A. AWS Artifact**
-SOC, ISO, HIPAA, FedRAMP — all live in Artifact.
+SOC, ISO, HIPAA, FedRAMP, all live in Artifact.
 
 ### Q8: **B. Signed BAA + HIPAA-eligible services**
 Bedrock is HIPAA-eligible. You still need the BAA and to confirm all dependent services are eligible.
@@ -246,11 +246,11 @@ Your custom model is private to your account.
 ### Q15: **A. AWS Audit Manager**
 Maps controls to frameworks (NIST, ISO, PCI, etc.) and aggregates evidence.
 
-### Q16: **B. Bedrock Guardrails — Sensitive Information filter**
+### Q16: **B. Bedrock Guardrails, Sensitive Information filter**
 Inference-time PII filter. Macie is *at rest* in S3.
 
 ### Q17: **B. Reconstructing training data from outputs**
-A privacy attack — different from extraction (copying behavior).
+A privacy attack, different from extraction (copying behavior).
 
 ### Q18: **A. Model Monitor + Clarify**
 Model Monitor uses Clarify under the hood for bias-drift detection.
@@ -259,7 +259,7 @@ Model Monitor uses Clarify under the hood for bias-drift detection.
 A second layer of access control on top of IAM.
 
 ### Q20: **B. Rate limiting + query monitoring + watermarking**
-Defenses scale with the attacker's query budget — limit it.
+Defenses scale with the attacker's query budget, limit it.
 
 ### Q21: **B. If the service processes personal data of EU residents**
 GDPR's reach is based on data subject location, not company HQ.
@@ -278,9 +278,9 @@ Defense in depth: even if injection succeeds, what *can* the agent actually do?
 ## 📊 Score Yourself
 
 - 23–24/24 → 🏆 Security domain owned.
-- 20–22/24 → ✅ Strong — take Practice Exam 2.
+- 20–22/24 → ✅ Strong, take Practice Exam 2.
 - 17–19/24 → ⚠️ Re-read the encryption, IAM, and AI-threats sections.
-- <17 → 🔁 Re-do the module — Domain 5 is heavily weighted on AWS basics.
+- <17 → 🔁 Re-do the module, Domain 5 is heavily weighted on AWS basics.
 
 ---
 

@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AI Agency Tech Stack — Late Checkout</p>
+      <p class="vg-title">AI Agency Tech Stack, Late Checkout</p>
       <p class="vg-creator">Greg Isenberg</p>
       <span class="vg-duration">⏱ 22 min · 2026 stack picks</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Make vs n8n vs Zapier — Cost Curve</p>
+      <p class="vg-title">Make vs n8n vs Zapier, Cost Curve</p>
       <p class="vg-creator">Automation channels</p>
       <span class="vg-duration">⏱ 14 min · The right tool by volume</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Ahrefs vs SEMrush — Pick One</p>
+      <p class="vg-title">Ahrefs vs SEMrush, Pick One</p>
       <p class="vg-creator">SEO channels</p>
       <span class="vg-duration">⏱ 14 min · Single-tool rule</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Bonsai vs PandaDoc — Billing Stack</p>
+      <p class="vg-title">Bonsai vs PandaDoc, Billing Stack</p>
       <p class="vg-creator">Freelance ops channels</p>
       <span class="vg-duration">⏱ 14 min · Pick one</span>
     </div>

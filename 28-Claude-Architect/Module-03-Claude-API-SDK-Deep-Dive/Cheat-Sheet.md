@@ -179,7 +179,7 @@ batch = client.messages.batches.create(requests=[
 | `anthropic-ratelimit-requests-limit/remaining/reset` | RPM budget |
 | `anthropic-ratelimit-input-tokens-limit/remaining` | Input TPM |
 | `anthropic-ratelimit-output-tokens-limit/remaining` | Output TPM |
-| `retry-after` | On 429/529 — wait seconds |
+| `retry-after` | On 429/529, wait seconds |
 
 ---
 
@@ -215,7 +215,7 @@ Multiply by ~0.33 for Haiku, ~5× for Opus.
 - One key per environment minimum
 - Rotate periodically; revoke unused
 - Tag `metadata.user_id` for abuse monitoring
-- Never expose key to browser — proxy through your backend
+- Never expose key to browser, proxy through your backend
 
 ---
 

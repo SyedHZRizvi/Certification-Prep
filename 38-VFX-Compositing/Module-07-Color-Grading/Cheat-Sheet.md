@@ -28,8 +28,8 @@ Camera RAW → IDT → ACES2065-1 → ACEScg (working space)
 | Space | Role |
 |-------|------|
 | ACES2065-1 | Archival master (extremely wide gamut) |
-| ACEScg | VFX/comp working space — linear |
-| ACEScct | Grading working space — log-encoded |
+| ACEScg | VFX/comp working space, linear |
+| ACEScct | Grading working space, log-encoded |
 | IDT | Input Device Transform: camera log → ACES |
 | ODT | Output Device Transform: ACES → display |
 
@@ -90,7 +90,7 @@ Camera RAW → IDT → ACES2065-1 → ACEScg (working space)
 |----------|---------|
 | Technical LUT | Color space transform (mathematically precise) |
 | Display LUT | Monitor calibration |
-| Creative LUT | A "look" — the grade baked into a table |
+| Creative LUT | A "look", the grade baked into a table |
 
 ---
 
@@ -99,7 +99,7 @@ Camera RAW → IDT → ACES2065-1 → ACEScg (working space)
 | Step | Action |
 |------|--------|
 | 1 | Set the hero frame as reference |
-| 2 | Use parade scope — not eyes — to compare |
+| 2 | Use parade scope not eyes to compare |
 | 3 | Match black levels (Lift/Blackpoint) first |
 | 4 | Match overall exposure (Gain/Gamma) |
 | 5 | Match per-channel color balance (R, G, B separately) |
@@ -137,7 +137,7 @@ Camera RAW → IDT → ACES2065-1 → ACEScg (working space)
 | Technical | Compositor | On each shot | Match elements to plate; neutral delivery |
 | Creative | Colorist | DI facility | Apply director/DP "look" globally |
 
-**Deliver composites in log encoding — no creative look baked in. Let the colorist apply the look.**
+**Deliver composites in log encoding, no creative look baked in. Let the colorist apply the look.**
 
 ---
 
@@ -149,6 +149,6 @@ Camera RAW → IDT → ACES2065-1 → ACEScg (working space)
 | Manhattan Project / NM | Warm amber; boosted orange |
 | Trinity flash | Intentional blow-out (film burn-through) |
 | 1954 Hearing | High saturation; aggressive contrast |
-| Strauss flashbacks | True B&W — shot on B&W IMAX film |
+| Strauss flashbacks | True B&W, shot on B&W IMAX film |
 
 **Trinity explosion = practical pyrotechnics, not CGI. The "fireball" was real fire photographed on IMAX film.**

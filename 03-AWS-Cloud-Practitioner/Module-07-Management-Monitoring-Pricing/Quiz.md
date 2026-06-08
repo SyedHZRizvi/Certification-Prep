@@ -64,7 +64,7 @@ D. AWS Trusted Advisor
 
 ### Q8. Which is TRUE about the AWS Basic Support plan? *(Understand)*
 A. Provides 24/7 technical support
-B. Is FREE — billing/account only, no tech support, 7 core Trusted Advisor checks
+B. Is FREE, billing/account only, no tech support, 7 core Trusted Advisor checks
 C. Includes a Technical Account Manager
 D. Costs $29/mo
 
@@ -192,7 +192,7 @@ D. Free TLS certs
 
 ### Q24. Which is TRUE about IAM and VPC pricing? *(Analyze)*
 A. Both are paid services
-B. Both are free — you pay only for resources they create / use
+B. Both are free, you pay only for resources they create / use
 C. Only IAM is free
 D. Only VPC is free
 
@@ -229,7 +229,7 @@ Data in = free. Out and cross-AZ/Region = paid. The #1 cost surprise.
 ### Q7: **B. AWS Pricing Calculator**
 The free public tool to estimate cost BEFORE building. Cost Explorer is for analyzing existing spend.
 
-### Q8: **B. Is FREE — billing/account only, no tech support, 7 core Trusted Advisor checks**
+### Q8: **B. Is FREE, billing/account only, no tech support, 7 core Trusted Advisor checks**
 Basic = the free tier of support. No technical help.
 
 ### Q9: **B. AWS Compute Optimizer**
@@ -245,10 +245,10 @@ Surfaces events scoped to your AWS resources (formerly "Personal Health Dashboar
 Alarms can notify (SNS), trigger Auto Scaling, and perform EC2 actions (stop/terminate/recover).
 
 ### Q13: **B. AWS Systems Manager Session Manager**
-Session Manager opens a shell via the AWS Console — no SSH key, no inbound port, audit trail included.
+Session Manager opens a shell via the AWS Console, no SSH key, no inbound port, audit trail included.
 
 ### Q14: **B. Send alerts (email/SNS) when spend or usage approaches/exceeds threshold**
-Budgets ALERT — they don't enforce. Combine with SCPs / Lambda for actual enforcement.
+Budgets ALERT, they don't enforce. Combine with SCPs / Lambda for actual enforcement.
 
 ### Q15: **B. AWS Cost & Usage Report (CUR)**
 CUR = the most-granular billing data, delivered to S3 in CSV/Parquet. Free (you pay for the S3 storage).
@@ -263,7 +263,7 @@ Marketplace = consolidated billing for 3rd-party tools.
 QuickSight = pay-per-session BI; integrates with Redshift, RDS, S3, Athena.
 
 ### Q19: **B. It has 3 categories: 12-Months, Always Free, and Trials**
-Memorize this — covered in Module 1, re-tested often.
+Memorize this, covered in Module 1, re-tested often.
 
 ### Q20: **B. Reserved Instances or Savings Plans (1-yr or 3-yr commitment)**
 Up to 72% off. Spot is wrong for steady production workloads.
@@ -277,7 +277,7 @@ Personal Health = your-account view. The public Service Health Dashboard shows g
 ### Q23: **B. Business-hours email support with one contact**
 Developer (~$29/mo) is the cheapest paid tier. Email-only, business hours.
 
-### Q24: **B. Both are free — you pay only for resources they create / use**
+### Q24: **B. Both are free, you pay only for resources they create / use**
 IAM and VPC themselves are free. You pay for NAT Gateways, ELBs, etc., that you run inside.
 
 ### Q25: **B. Infrastructure Event Management (IEM) for large launches, dedicated TAM, AWS Concierge support**

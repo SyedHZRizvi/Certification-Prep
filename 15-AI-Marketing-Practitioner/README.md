@@ -5,9 +5,9 @@ title: AI Digital Marketing Practitioner Track
 
 # 🎯 AI Digital Marketing Practitioner Track (Course 2 of 5)
 
-**📣 AI Marketing** › Course 2 of 5 — Practitioner
+**📣 AI Marketing** › Course 2 of 5, Practitioner
 
-> **Goal:** Launch and optimize REAL paid + organic campaigns on Google, Meta, TikTok, LinkedIn — using AI tooling end-to-end.
+> **Goal:** Launch and optimize REAL paid + organic campaigns on Google, Meta, TikTok, LinkedIn, using AI tooling end-to-end.
 > **Duration:** 6 weeks part-time (8–12 hrs/week)
 > **Prerequisite:** AI Digital Marketing Foundations (Course 1) or equivalent hands-on experience
 > **Cost to study:** Free (this course) + ~$200 ad spend for capstone (Modules 2, 4, 10)
@@ -19,27 +19,27 @@ title: AI Digital Marketing Practitioner Track
 
 ### 🎯 The promise
 
-AI Digital Marketing Practitioner is the credential that takes you from someone who *understands* digital marketing to someone who *ships* it — the operator running real campaigns on Google, Meta, TikTok, and LinkedIn with an AI-assisted workflow that produces creative, copy, audiences, landing pages, and measurement at 2026 speed. By the end of this track you'll hold (or be ready to sit) **Google Ads Search & Display certifications**, **Meta Blueprint Media Buying Professional**, and **TikTok Marketing Science**. More important: you'll have launched real campaigns with real money.
+AI Digital Marketing Practitioner is the credential that takes you from someone who *understands* digital marketing to someone who *ships* it, the operator running real campaigns on Google, Meta, TikTok, and LinkedIn with an AI-assisted workflow that produces creative, copy, audiences, landing pages, and measurement at 2026 speed. By the end of this track you'll hold (or be ready to sit) **Google Ads Search & Display certifications**, **Meta Blueprint Media Buying Professional**, and **TikTok Marketing Science**. More important: you'll have launched real campaigns with real money.
 
 ### 💼 Career outcomes after passing
 
-- **Performance Marketer / Paid Media Specialist** ($75K–$110K) — running Google + Meta with AI-assisted creative
-- **Growth Marketer** ($85K–$125K) — owning the full acquisition stack at an early-stage company
-- **PPC / Paid Search Specialist** ($70K–$100K) — Google Ads / Microsoft Ads specialization
-- **Paid Social Specialist** ($75K–$110K) — Meta + TikTok + LinkedIn focus, AI creative pipelines
-- **Marketing Operations Specialist** ($80K–$115K) — HubSpot / Klaviyo / GA4 / attribution
+- **Performance Marketer / Paid Media Specialist** ($75K–$110K), running Google + Meta with AI-assisted creative
+- **Growth Marketer** ($85K–$125K), owning the full acquisition stack at an early-stage company
+- **PPC / Paid Search Specialist** ($70K–$100K), Google Ads / Microsoft Ads specialization
+- **Paid Social Specialist** ($75K–$110K), Meta + TikTok + LinkedIn focus, AI creative pipelines
+- **Marketing Operations Specialist** ($80K–$115K), HubSpot / Klaviyo / GA4 / attribution
 - **In-house Performance Marketing Manager (DTC, B2B SaaS, agency)** ($95K–$135K)
 
 This is course **2 of 5** in the AI Digital Marketing ladder: **Foundations (14) → Practitioner (this course) → Strategist (16) → Entrepreneur (17) → Capstone Portfolio (18)**. Practitioner grads typically land $20K–$30K above Foundations grads in equivalent roles thanks to the hands-on, real-campaign portfolio they build.
 
 ### 🏛️ Why The Cert Hub's version is different
 
-- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies** — 
-- **Story-driven lessons (not flashcard punishment)** — every channel introduced through a real campaign teardown before any tactics
-- **Original questions only** — every quiz and practice exam written from official Google / Meta / TikTok exam outlines; no copyrighted dumps
-- **Real-world case studies + a real capstone** — 12-week scenario as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days
-- **One author, one voice** — coherent vocabulary across all 10 modules
-- **Updated for the 2026 platform landscape** — Performance Max best practices, Meta Advantage+ shopping, TikTok Spark Ads, LinkedIn predictive audiences, Consent Mode v2, GA4, server-side tracking
+- **Built on primary-source citations, Bloom's-taxonomy question design, and real-world case studies**, 
+- **Story-driven lessons (not flashcard punishment)**, every channel introduced through a real campaign teardown before any tactics
+- **Original questions only**, every quiz and practice exam written from official Google / Meta / TikTok exam outlines; no copyrighted dumps
+- **Real-world case studies + a real capstone**, 12-week scenario as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days
+- **One author, one voice**, coherent vocabulary across all 10 modules
+- **Updated for the 2026 platform landscape**, Performance Max best practices, Meta Advantage+ shopping, TikTok Spark Ads, LinkedIn predictive audiences, Consent Mode v2, GA4, server-side tracking
 
 ### 🚀 Ready to start?
 
@@ -53,8 +53,8 @@ Begin with [Module 1: Campaign Strategy & Brief Writing →](./Module-01-Campaig
 
 This track includes two course-root resources that go beyond exam prep:
 
-- 🏆 [**Capstone-Project.md**](./Capstone-Project.md) — A 6-deliverable, 12-week scenario where you act as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days. Integrates attribution audit, Google Ads + Meta restructure with AI creative pipeline, CRO, email retention, and a blended scorecard.
-- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md) — The full canonical bibliography: Ellis & Brown's *Hacking Growth*, Croll & Yoskovitz's *Lean Analytics*, Saleh's *Conversion Optimization*, Kohavi/Tang/Xu's *Trustworthy Online Controlled Experiments*; seminal papers on attribution and CRO; industry resources (Marketing Examined, Kasim Aslam, Ben Heath, Common Thread Collective); free academic courses (Google Skillshop, Meta Blueprint, CXL Institute).
+- 🏆 [**Capstone-Project.md**](./Capstone-Project.md), A 6-deliverable, 12-week scenario where you act as the new Senior Performance Marketer at a $20M DTC e-commerce brand cutting CAC 25% in 90 days. Integrates attribution audit, Google Ads + Meta restructure with AI creative pipeline, CRO, email retention, and a blended scorecard.
+- 📚 [**Recommended-Readings.md**](./Recommended-Readings.md), The full canonical bibliography: Ellis & Brown's *Hacking Growth*, Croll & Yoskovitz's *Lean Analytics*, Saleh's *Conversion Optimization*, Kohavi/Tang/Xu's *Trustworthy Online Controlled Experiments*; seminal papers on attribution and CRO; industry resources (Marketing Examined, Kasim Aslam, Ben Heath, Common Thread Collective); free academic courses (Google Skillshop, Meta Blueprint, CXL Institute).
 
 ---
 
@@ -63,7 +63,7 @@ This track includes two course-root resources that go beyond exam prep:
 By the end of this track, you'll be able to:
 
 - Write a campaign brief that earns approval on the first pass (creative + media + measurement)
-- Build a Google Ads Search campaign from scratch — keywords, RSAs, bidding, negatives
+- Build a Google Ads Search campaign from scratch, keywords, RSAs, bidding, negatives
 - Architect a Performance Max campaign with proper asset groups and audience signals
 - Set up a Meta ads account with Pixel + CAPI, then run a DCT (Dynamic Creative Testing) cycle
 - Launch and optimize a TikTok Spark Ad and a LinkedIn Thought-Leadership Ad
@@ -71,7 +71,7 @@ By the end of this track, you'll be able to:
 - Run a statistically-sound landing page A/B test and personalize using Mutiny or Optimizely
 - Operate a content production pipeline that produces text + image + video + audio at scale
 - Build an end-to-end lead-to-customer marketing automation in HubSpot, Klaviyo, or Make.com
-- Complete the capstone — a real $200 campaign with documented post-mortem and lessons-learned blog
+- Complete the capstone, a real $200 campaign with documented post-mortem and lessons-learned blog
 
 ---
 
@@ -102,13 +102,13 @@ By the end of this track, you'll be able to:
 | Practice-Exam-2 | After Modules 6–9 | 65 Q / 90 min | ⭐⭐⭐⭐ |
 | Final-Mock-Exam | One day before your real cert exam(s) | 80 Q / 110 min | ⭐⭐⭐⭐⭐ |
 
-**Pass mark:** 75% on the Final Mock — that means ≥ 60/80.
+**Pass mark:** 75% on the Final Mock, that means ≥ 60/80.
 
 ---
 
 ## 🎓 Real Certifications You Can Take After This Course
 
-This is a practitioner course, not tied to one exam. After it, you're ready for any of these real industry certifications — most are FREE:
+This is a practitioner course, not tied to one exam. After it, you're ready for any of these real industry certifications, most are FREE:
 
 | Real exam | Cost (2026) | Format | Where to take it |
 |-----------|-------------|--------|------------------|
@@ -125,9 +125,9 @@ This is a practitioner course, not tied to one exam. After it, you're ready for 
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[Google Ads Help Center](https://support.google.com/google-ads)** + **[Meta Business Help Center](https://www.facebook.com/business/help)** + **[TikTok Business Center Help](https://ads.tiktok.com/help)** — these are the source of truth for the real exams. Skillshop and Blueprint courses cite them constantly.
+🔗 **[Google Ads Help Center](https://support.google.com/google-ads)** + **[Meta Business Help Center](https://www.facebook.com/business/help)** + **[TikTok Business Center Help](https://ads.tiktok.com/help)**, these are the source of truth for the real exams. Skillshop and Blueprint courses cite them constantly.
 
-🔗 **[Skillshop Free Courses](https://skillshop.exceedlms.com/student/catalog/list?category_ids=)** — the actual Google certification prep, also free. Use them alongside this course.
+🔗 **[Skillshop Free Courses](https://skillshop.exceedlms.com/student/catalog/list?category_ids=)**, the actual Google certification prep, also free. Use them alongside this course.
 
 ---
 
@@ -146,13 +146,13 @@ Week 6: Module 10 Capstone (run real $200 campaign) + Final Mock → take Google
 
 ## ⚠️ The 7 Most Common Reasons People Fail At Paid Media
 
-1. ❌ Launched without a written brief — campaign drifts within 48 hours
+1. ❌ Launched without a written brief, campaign drifts within 48 hours
 2. ❌ Picked the wrong bidding strategy for the conversion volume (Smart Bidding starved of data)
-3. ❌ Used broad match without negative keyword discipline — spent budget on garbage clicks
-4. ❌ Treated Performance Max as "set and forget" — no asset group structure
-5. ❌ Skipped the Pixel + CAPI step on Meta — attribution collapsed after iOS 14.5
+3. ❌ Used broad match without negative keyword discipline, spent budget on garbage clicks
+4. ❌ Treated Performance Max as "set and forget", no asset group structure
+5. ❌ Skipped the Pixel + CAPI step on Meta, attribution collapsed after iOS 14.5
 6. ❌ Ran A/B tests with sample sizes too small to be statistically significant
-7. ❌ No daily optimization routine — let the algorithm "learn" forever
+7. ❌ No daily optimization routine, let the algorithm "learn" forever
 
 This course is built specifically to inoculate you against all 7.
 
@@ -173,7 +173,7 @@ This course is built specifically to inoculate you against all 7.
 | CRO | Hotjar, Microsoft Clarity, VWO, Optimizely Web |
 | Automation | HubSpot Workflows, Klaviyo Flows, ActiveCampaign, Make.com, Zapier, n8n |
 
-You don't need ALL of these — pick 1 per category and go deep.
+You don't need ALL of these, pick 1 per category and go deep.
 
 ---
 
@@ -198,4 +198,4 @@ Real budgets. Real campaigns. Real results. Let's launch something. 🚀
 
 ---
 
-**Previous:** [Course 1 — AI Digital Marketing Foundations](../14-AI-Marketing-Foundations/README.md) · **Next:** [Course 3 — AI Digital Marketing Strategist](../16-AI-Marketing-Strategist/README.md)
+**Previous:** [Course 1 AI Digital Marketing Foundations](../14-AI-Marketing-Foundations/README.md) · **Next:** [Course 3 AI Digital Marketing Strategist](../16-AI-Marketing-Strategist/README.md)

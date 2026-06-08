@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — SC-300 (First Half)
+# 🧪 Practice Exam 1, SC-300 (First Half)
 
 > **Conditions:** Set an 80-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 28/40 (≈ 70%, matching the real exam)
@@ -81,8 +81,8 @@ C. Certificate-based authentication (CBA) with smart cards
 D. Voice call MFA
 
 ### 13. Security Defaults and Conditional Access can be enabled together:
-A. Yes — they complement each other
-B. No — they are mutually exclusive
+A. Yes, they complement each other
+B. No, they are mutually exclusive
 C. Only in P2 tenants
 D. Only after AD FS retirement
 
@@ -122,7 +122,7 @@ B. ~15 minutes
 C. 30 minutes
 D. 6 hours
 
-### 20. **Yes/No** — Mark each statement.
+### 20. **Yes/No**, Mark each statement.
 
 **S1:** Conditional Access requires Entra ID P1.
 **S2:** Identity Protection requires Entra ID P2.
@@ -149,7 +149,7 @@ D. User Administrator
 A. It can be renamed once after tenant creation
 B. It can be deleted after a custom domain is verified
 C. It is permanent and cannot be renamed or deleted
-D. It is optional — many tenants don't have one
+D. It is optional, many tenants don't have one
 
 ### 24. **Order these steps** to roll out FIDO2 to a pilot group of IT admins.
 
@@ -199,7 +199,7 @@ B. Simulates a sign-in to show which CA policies would apply and the outcome
 C. Sends a test MFA prompt
 D. Resets a user's MFA
 
-### 31. **Yes/No** — Break-glass.
+### 31. **Yes/No**, Break-glass.
 
 **S1:** Break-glass accounts should use phone-based MFA for portability.
 **S2:** Break-glass accounts must be excluded from EVERY CA policy.
@@ -216,7 +216,7 @@ B. B2B direct connect does NOT create a guest user object; both parties trust ea
 C. B2B direct connect is a synonym for B2B collaboration
 D. B2B direct connect is for consumers; collaboration is for partners
 
-### 33. **Yes/No** — Methods comparison.
+### 33. **Yes/No**, Methods comparison.
 
 **S1:** Windows Hello for Business is portable across devices.
 **S2:** FIDO2 keys are portable across devices.
@@ -257,7 +257,7 @@ B. The risk is automatically dismissed (Microsoft learns the user is the real ow
 C. The account is permanently flagged
 D. A Sentinel alert fires
 
-### 39. **Yes/No** — Policy mechanics.
+### 39. **Yes/No**, Policy mechanics.
 
 **S1:** Security Defaults and Conditional Access can be enabled together.
 **S2:** Per-user MFA settings override Conditional Access policies.
@@ -297,7 +297,7 @@ D. 0 accounts (rely on Microsoft support)
 
 | Score | Verdict |
 |-------|---------|
-| 36–40 | 🏆 Excellent — Modules 5–8 next |
+| 36–40 | 🏆 Excellent, Modules 5–8 next |
 | 28–35 | ✅ On track. Review missed Qs, then continue. |
 | 20–27 | ⚠️ Re-study weak modules (use the table below) |
 | <20   | 🔁 Restart from Module 1 |
@@ -340,7 +340,7 @@ For EACH wrong answer:
 
 **Q4. Answer: C.** *Why C is correct.* Permanent `*.onmicrosoft.com` name. *Why the others are wrong.* **A/B/D** Not real Microsoft naming. *Exam-takeaway.* Default name is permanent.
 
-**Q5. Answer: D.** *Why D is correct.* 5,000 verified custom domains per tenant. *Why the others are wrong.* All too low for the documented limit. *Exam-takeaway.* 5K — memorize.
+**Q5. Answer: D.** *Why D is correct.* 5,000 verified custom domains per tenant. *Why the others are wrong.* All too low for the documented limit. *Exam-takeaway.* 5K, memorize.
 
 **Q6. Answer: B.** *Why B is correct.* Canonical B2B UPN with `#EXT#`. *Why the others are wrong.* **A** Their original UPN, not their identity in your tenant. **C/D** Made up. *Exam-takeaway.* `#EXT#` is what dynamic group rules and CA conditions look for.
 
@@ -376,7 +376,7 @@ For EACH wrong answer:
 
 **Q22. Answer: C.** Privileged Authentication Administrator targets all users, including GAs. Authentication Administrator targets non-admins only.
 
-**Q23. Answer: C.** The default `.onmicrosoft.com` is permanent — plan accordingly.
+**Q23. Answer: C.** The default `.onmicrosoft.com` is permanent, plan accordingly.
 
 **Q24. Answer: B.** 3 → 1 → 2 → 4. Keys first (procurement lead time), then enable methods + TAP, generate TAPs, build CA in report-only.
 
@@ -392,7 +392,7 @@ For EACH wrong answer:
 
 **Q30. Answer: B.** What If simulates a sign-in to surface which policies would apply.
 
-**Q31. Answer: B.** No (phone too fragile — use FIDO2/hardware OATH) / Yes / Yes (2 minimum).
+**Q31. Answer: B.** No (phone too fragile, use FIDO2/hardware OATH) / Yes / Yes (2 minimum).
 
 **Q32. Answer: B.** B2B direct connect = NO guest object; mutual trust for Teams shared channels. B2B collaboration = guest object in your tenant.
 

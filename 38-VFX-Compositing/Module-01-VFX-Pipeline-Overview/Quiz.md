@@ -124,7 +124,7 @@ A compositor working on a Tier 4 hero shot receives a multi-channel EXR file fro
 
 A. Only the final beauty render with no separate passes
 B. The live-action plate with tracking markers removed
-C. A single image containing multiple named channels — beauty, diffuse, specular, shadow, Z-depth, and other AOV passes
+C. A single image containing multiple named channels, beauty, diffuse, specular, shadow, Z-depth, and other AOV passes
 D. The digital matte painting elements
 
 ---
@@ -263,7 +263,7 @@ D. The lens data was not recorded correctly
 
 ### Q24.
 
-Which company maintains the "VES Handbook of Visual Effects" — the authoritative industry pipeline reference?
+Which company maintains the "VES Handbook of Visual Effects", the authoritative industry pipeline reference?
 
 A. Industrial Light & Magic (ILM)
 B. The Academy of Motion Picture Arts and Sciences
@@ -274,50 +274,50 @@ D. The American Society of Cinematographers (ASC)
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** The VFX producer's first deliverable is the beat sheet — a shot-by-shot breakdown that categorizes every VFX effect. This becomes the basis for bidding and budgeting.
+**Q1 B.** The VFX producer's first deliverable is the beat sheet a shot-by-shot breakdown that categorizes every VFX effect. This becomes the basis for bidding and budgeting.
 
-**Q2 — B.** Pre-vis communicates intent. It is a tool for departments to coordinate before committing to expensive crew and location days.
+**Q2, B.** Pre-vis communicates intent. It is a tool for departments to coordinate before committing to expensive crew and location days.
 
-**Q3 — C.** HDR probes (chrome ball + gray ball, bracketed exposures) capture the full lighting environment. The 3D department uses this as image-based lighting so CG elements match the plate's light.
+**Q3, C.** HDR probes (chrome ball + gray ball, bracketed exposures) capture the full lighting environment. The 3D department uses this as image-based lighting so CG elements match the plate's light.
 
-**Q4 — B.** The witness camera is a wide-angle reference camera that captures the full set environment, including areas outside the frame of the main camera. It is critical for reference and can save a shot from being re-shot.
+**Q4, B.** The witness camera is a wide-angle reference camera that captures the full set environment, including areas outside the frame of the main camera. It is critical for reference and can save a shot from being re-shot.
 
-**Q5 — C.** Matchmove artists deliver a tracked camera — the 3D camera position that exactly matches the movement of the live-action camera in the plate. This allows CG elements to be positioned correctly in 3D space.
+**Q5 C.** Matchmove artists deliver a tracked camera the 3D camera position that exactly matches the movement of the live-action camera in the plate. This allows CG elements to be positioned correctly in 3D space.
 
-**Q6 — B.** AOV = Arbitrary Output Variable. These are the separate named channels in a multi-channel EXR: diffuse color, specular, reflection, shadow, Z-depth, etc.
+**Q6, B.** AOV = Arbitrary Output Variable. These are the separate named channels in a multi-channel EXR: diffuse color, specular, reflection, shadow, Z-depth, etc.
 
-**Q7 — C.** The LED Volume replaced greenscreen. Instead of keying a green background and adding a digital environment in post, the background plays live during photography.
+**Q7, C.** The LED Volume replaced greenscreen. Instead of keying a green background and adding a digital environment in post, the background plays live during photography.
 
-**Q8 — B.** Lens data (focal length, distortion, focus distance) is used to perform the 3D camera solve. Without it, the matchmove artist cannot accurately reconstruct the camera movement in 3D.
+**Q8, B.** Lens data (focal length, distortion, focus distance) is used to perform the 3D camera solve. Without it, the matchmove artist cannot accurately reconstruct the camera movement in 3D.
 
-**Q9 — D.** A hero creature with interactive lighting on a live actor is Tier 4 — the most complex category, requiring full CG character work and lighting integration.
+**Q9 D.** A hero creature with interactive lighting on a live actor is Tier 4 the most complex category, requiring full CG character work and lighting integration.
 
-**Q10 — B.** The LED Volume captures physical reflections (on helmets, props, glass) and generates real interactive light on actors, reducing the compositing work needed to simulate these effects.
+**Q10, B.** The LED Volume captures physical reflections (on helmets, props, glass) and generates real interactive light on actors, reducing the compositing work needed to simulate these effects.
 
-**Q11 — C.** A multi-channel EXR contains the beauty pass plus all AOV passes as named channels in a single file. This gives the compositor full control over reassembling the render.
+**Q11, C.** A multi-channel EXR contains the beauty pass plus all AOV passes as named channels in a single file. This gives the compositor full control over reassembling the render.
 
-**Q12 — B.** A clean plate is a take of the set without the principal actor. It gives compositors a reference background to use for cleanup, wire removal, or replacing areas where the actor was.
+**Q12, B.** A clean plate is a take of the set without the principal actor. It gives compositors a reference background to use for cleanup, wire removal, or replacing areas where the actor was.
 
-**Q13 — B.** Wire removal, boom mic reflections, and general set cleanup are handled by the 2D Paint/Cleanup department — frame-by-frame painting to remove unwanted elements.
+**Q13 B.** Wire removal, boom mic reflections, and general set cleanup are handled by the 2D Paint/Cleanup department frame-by-frame painting to remove unwanted elements.
 
-**Q14 — C.** OpenEXR sequences are the professional VFX delivery format. They support full 32-bit floating point color depth, multiple channels, and lossless compression.
+**Q14, C.** OpenEXR sequences are the professional VFX delivery format. They support full 32-bit floating point color depth, multiple channels, and lossless compression.
 
-**Q15 — B.** DI = Digital Intermediate. The DI facility performs the final color grade on the completed composite deliverables before mastering for cinema distribution.
+**Q15, B.** DI = Digital Intermediate. The DI facility performs the final color grade on the completed composite deliverables before mastering for cinema distribution.
 
-**Q16 — C.** The creative color grade (the "look") happens in the DI facility, after all VFX work is complete and the editorial is locked. The compositor does a technical grade; the colorist does the creative grade.
+**Q16, C.** The creative color grade (the "look") happens in the DI facility, after all VFX work is complete and the editorial is locked. The compositor does a technical grade; the colorist does the creative grade.
 
-**Q17 — B.** Motion blur on tracking markers degrades the quality of the tracked solve. The matchmove artist may need to manually set keyframes or use alternate tracking points, which is slower and less accurate.
+**Q17, B.** Motion blur on tracking markers degrades the quality of the tracked solve. The matchmove artist may need to manually set keyframes or use alternate tracking points, which is slower and less accurate.
 
-**Q18 — C.** Modern DMP is projected onto 3D geometry so the camera can move through the environment with realistic parallax. Flat 2D paintings were the pre-2000 approach.
+**Q18, C.** Modern DMP is projected onto 3D geometry so the camera can move through the environment with realistic parallax. Flat 2D paintings were the pre-2000 approach.
 
-**Q19 — C.** The Thanos digital human project involved 300+ ILM artists over 18 months — one of the largest single-character VFX builds in film history at that point.
+**Q19 C.** The Thanos digital human project involved 300+ ILM artists over 18 months one of the largest single-character VFX builds in film history at that point.
 
-**Q20 — A.** The compositor needs: locked picture from editorial, tracked cameras from matchmove, CG render passes from the 3D/lighting department, and DMP elements from the matte painting department.
+**Q20, A.** The compositor needs: locked picture from editorial, tracked cameras from matchmove, CG render passes from the 3D/lighting department, and DMP elements from the matte painting department.
 
-**Q21 — B.** The VFX producer creates the beat sheet: a categorized list of every VFX shot, used as the foundation for vendor bids, scheduling, and budget.
+**Q21, B.** The VFX producer creates the beat sheet: a categorized list of every VFX shot, used as the foundation for vendor bids, scheduling, and budget.
 
-**Q22 — C.** The Mandalorian's LED Volume runs on Epic Games' Unreal Engine, which renders photorealistic environments in real time at the frame rate and with the parallax matching the camera position.
+**Q22, C.** The Mandalorian's LED Volume runs on Epic Games' Unreal Engine, which renders photorealistic environments in real time at the frame rate and with the parallax matching the camera position.
 
-**Q23 — B.** Floating blacks is a camera sensor artifact where the shadow areas of the image fluctuate in brightness across frames. This makes compositing difficult because the plate's tonal response is inconsistent.
+**Q23, B.** Floating blacks is a camera sensor artifact where the shadow areas of the image fluctuate in brightness across frames. This makes compositing difficult because the plate's tonal response is inconsistent.
 
-**Q24 — C.** The VES Handbook is published by the Visual Effects Society — the professional organization representing VFX artists worldwide.
+**Q24 C.** The VES Handbook is published by the Visual Effects Society the professional organization representing VFX artists worldwide.

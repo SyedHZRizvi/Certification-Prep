@@ -49,7 +49,7 @@ D. Delphi requires no iteration
 
 ### Q6. A tracking signal of +5.2 indicates: *(Analyze)*
 A. The forecast is healthy
-B. Actuals consistently exceed the forecast — investigate bias
+B. Actuals consistently exceed the forecast, investigate bias
 C. Forecast is over-shooting
 D. Standard deviation is increasing
 
@@ -161,7 +161,7 @@ D. 120
 
 ### Q20. The exam expects you to know that "perfect order" is a forecasting accuracy metric. True or false? *(Remember)*
 A. True
-B. False — it is a reliability fulfillment metric, not forecasting
+B. False, it is a reliability fulfillment metric, not forecasting
 
 ---
 
@@ -190,10 +190,10 @@ D. Off by ±12 units per period
 ---
 
 ### Q24. Which of the following pairs is correctly matched? *(Understand)*
-A. Holt's method — seasonality only
-B. Holt-Winters — trend + seasonality
-C. Croston's — stable level demand
-D. Naïve — long-horizon strategic
+A. Holt's method, seasonality only
+B. Holt-Winters, trend + seasonality
+C. Croston's, stable level demand
+D. Naïve, long-horizon strategic
 
 ---
 
@@ -237,7 +237,7 @@ Delphi uses anonymous iterative expert input to avoid groupthink.
 Stable demand doesn't justify a more complex model. Simpler wins.
 
 ### Q8: **A. Increases responsiveness but adds noise**
-Higher α weights recent actuals more — fast reaction at the cost of stability.
+Higher α weights recent actuals more, fast reaction at the cost of stability.
 
 ### Q9: **B. Single shared forecast across partners**
 CPFR's "one number" eliminates each tier re-forecasting independently.
@@ -249,7 +249,7 @@ Designed for intermittent / lumpy demand.
 MAD = (10+10+20+10)/4 = 50/4 = 12.5.
 
 ### Q12: **A. Explains 89% of variation**
-R² is the coefficient of determination — share of variance explained by the model.
+R² is the coefficient of determination, share of variance explained by the model.
 
 ### Q13: **B. Real-time, short-horizon signals**
 Demand sensing operates over hours/days, complementing weekly/monthly statistical forecasts.
@@ -272,7 +272,7 @@ Tracking signal = Σ(A−F)/MAD; >|4| triggers investigation.
 ### Q19: **C. 100**
 SMA = (80+100+120)/3 = 100.
 
-### Q20: **B. False — reliability metric**
+### Q20: **B. False, reliability metric**
 Perfect order measures fulfillment reliability (on-time, complete, undamaged, correct documentation), not forecast accuracy.
 
 ### Q21: **B. Qualitative methods**
@@ -284,7 +284,7 @@ High α reacts to recent actuals. Trade-off: more noise sensitivity.
 ### Q23: **C. Lower than actuals by 2 units per period**
 MFE = +12 over 6 periods = +2/period bias (forecast under-shoots by 2 units per period).
 
-### Q24: **B. Holt-Winters — trend + seasonality**
+### Q24: **B. Holt-Winters, trend + seasonality**
 The only correctly matched pair.
 
 ### Q25: **B. VMI**

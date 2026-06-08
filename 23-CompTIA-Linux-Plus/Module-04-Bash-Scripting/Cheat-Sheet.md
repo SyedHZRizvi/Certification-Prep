@@ -111,7 +111,7 @@ done < input.txt
 until ping -c1 host >/dev/null; do sleep 1; done
 ```
 
-🚨 **NEVER:** `for x in $(cat file)` — word-splits on whitespace.
+🚨 **NEVER:** `for x in $(cat file)`, word-splits on whitespace.
 
 ---
 
@@ -169,7 +169,7 @@ greet() {
 greet Alice
 ```
 
-- `local` scopes to the function — ALWAYS use it
+- `local` scopes to the function, ALWAYS use it
 - `return N` sets exit code (0–255)
 - Data "returns" via stdout: `result=$(myfunc arg)`
 
@@ -237,7 +237,7 @@ Locations:
 - `/etc/cron.d/*` package drop-ins
 - `/etc/cron.{hourly,daily,weekly,monthly}/` scripts
 
-🚨 cron PATH is minimal — use absolute paths.
+🚨 cron PATH is minimal, use absolute paths.
 
 ### at (one-shot)
 ```bash

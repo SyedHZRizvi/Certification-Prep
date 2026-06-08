@@ -1,16 +1,16 @@
 ---
-title: "Module 6: UI Animation — Figma Smart Animate, GSAP & Framer Motion"
+title: "Module 6: UI Animation, Figma Smart Animate, GSAP & Framer Motion"
 ---
 
-# 🖥️ Module 6: UI Animation — Figma, GSAP & Framer Motion
+# 🖥️ Module 6: UI Animation, Figma, GSAP & Framer Motion
 
 ## How Stripe's Homepage Became a Portfolio Piece
 
-In 2020, Stripe's design team made a decision that would be discussed in motion design circles for years: they redesigned their homepage with animated gradient meshes that continuously shift and breathe. No product features are demonstrated in the first 500 pixels of scroll. No CTAs. Just a slow, luminous color animation that communicates — before a single word is read — that Stripe's engineering is different.
+In 2020, Stripe's design team made a decision that would be discussed in motion design circles for years: they redesigned their homepage with animated gradient meshes that continuously shift and breathe. No product features are demonstrated in the first 500 pixels of scroll. No CTAs. Just a slow, luminous color animation that communicates before a single word is read that Stripe's engineering is different.
 
 The animation was built in GSAP (GreenSock Animation Platform) by Stripe's design engineering team. The gradient calculation runs on a requestAnimationFrame loop, with GSAP managing the easing and timing. The technique predated CSS `@property` animation (which would now be an alternative) and required JavaScript to interpolate between hue-rotation keyframes on SVG `<linearGradient>` elements.
 
-When developers on Twitter/X reverse-engineered the animation in 2021, the most common observation was not "this is technically impressive" — it was "this makes me trust Stripe." Motion design, when done at this level, communicates institutional seriousness. This is why the UI motion designer at a company like Stripe commands a higher salary than a generic front-end engineer with similar JavaScript skill.
+When developers on Twitter/X reverse-engineered the animation in 2021, the most common observation was not "this is technically impressive", it was "this makes me trust Stripe." Motion design, when done at this level, communicates institutional seriousness. This is why the UI motion designer at a company like Stripe commands a higher salary than a generic front-end engineer with similar JavaScript skill.
 
 This module teaches you the tools to build at that level.
 
@@ -18,7 +18,7 @@ This module teaches you the tools to build at that level.
 
 ## 🎨 Figma Smart Animate: Prototyping UI Motion
 
-**Smart Animate** is Figma's prototyping feature that automatically interpolates between two frames with matching named layers. Instead of specifying keyframes, you create two Frames — the "before" and "after" states — and Figma transitions between them by tweening matching layer properties.
+**Smart Animate** is Figma's prototyping feature that automatically interpolates between two frames with matching named layers. Instead of specifying keyframes, you create two Frames the "before" and "after" states and Figma transitions between them by tweening matching layer properties.
 
 ### How Smart Animate Works
 
@@ -45,7 +45,7 @@ Figma Smart Animate supports:
 - **Ease In**: starts slow, ends fast
 - **Ease Out**: starts fast, ends slow (preferred for exit animations)
 - **Ease In and Out**: slow at both ends (preferred for large movements)
-- **Linear**: constant speed (avoid for UI — unnatural feel)
+- **Linear**: constant speed (avoid for UI, unnatural feel)
 - **Spring**: physically simulated spring (natural, overshoot behavior)
 - **Custom cubic-bezier**: via the cubic-bezier curve editor
 
@@ -140,7 +140,7 @@ gsap.from('.feature-card', {
   }
 });
 
-// Scrub — animation tied directly to scroll position
+// Scrub, animation tied directly to scroll position
 gsap.to('.parallax-bg', {
   yPercent: -30,
   ease: 'none',  // must be 'none' for scrub
@@ -157,7 +157,7 @@ gsap.to('.parallax-bg', {
 
 ## 🔄 GSAP Flip Plugin: Layout-Aware Animation
 
-**Flip** (FLIP = First, Last, Invert, Play) is GSAP's plugin for animating elements between different layout states — grid reorder, expand/collapse, filter transitions — without the complexity of manual coordinate tracking.
+**Flip** (FLIP = First, Last, Invert, Play) is GSAP's plugin for animating elements between different layout states grid reorder, expand/collapse, filter transitions without the complexity of manual coordinate tracking.
 
 ```javascript
 import Flip from 'gsap/Flip';
@@ -189,10 +189,10 @@ The FLIP technique (originally named by Paul Lewis at Google in 2015) is the cor
 **Always animate with transforms and opacity:**
 
 ```javascript
-// WRONG — triggers layout
+// WRONG, triggers layout
 gsap.to('.card', { top: '100px', left: '200px' });
 
-// RIGHT — GPU compositing only
+// RIGHT, GPU compositing only
 gsap.to('.card', { x: 200, y: 100 });  // GSAP x/y → CSS translateX/translateY
 ```
 
@@ -281,15 +281,15 @@ Not all GSAP ease functions have identical CPU cost. The differences are small a
 
 ## 📊 Platform-Specific Web Animation Performance Budgets
 
-Web animation must target the same 16.67ms frame budget as games — but the constraints differ significantly across platforms.
+Web animation must target the same 16.67ms frame budget as games, but the constraints differ significantly across platforms.
 
 | Platform | Frame Budget | Safe Animation Properties | Performance Risk |
 |---|---|---|---|
-| Desktop (Chrome/Firefox/Safari) | 16.67ms | transform, opacity, filter | Low — typically GPU composited |
-| Mobile Chrome (Android) | 16.67ms | transform, opacity only | Medium — filter is CPU on many devices |
-| Mobile Safari (iOS) | 16.67ms | transform, opacity | Medium-high — `-webkit-transform` path; filter is CPU |
-| Mobile WebView (Cordova/Capacitor) | 16.67ms | transform, opacity only | High — reduced GPU access |
-| TV/SmartTV (Tizen, WebOS) | 33.33ms | transform, opacity only | Very high — old GPU compositors |
+| Desktop (Chrome/Firefox/Safari) | 16.67ms | transform, opacity, filter | Low, typically GPU composited |
+| Mobile Chrome (Android) | 16.67ms | transform, opacity only | Medium, filter is CPU on many devices |
+| Mobile Safari (iOS) | 16.67ms | transform, opacity | Medium-high, `-webkit-transform` path; filter is CPU |
+| Mobile WebView (Cordova/Capacitor) | 16.67ms | transform, opacity only | High, reduced GPU access |
+| TV/SmartTV (Tizen, WebOS) | 33.33ms | transform, opacity only | Very high, old GPU compositors |
 
 > ⚠️ **Performance trap:** `filter: blur()` is GPU-composited on Chrome desktop but **CPU-rendered on most mid-range Android devices and all iOS WebViews**. Animating blur on mobile is one of the fastest ways to drop below 60fps. If you need blur animation on mobile, use a pre-rendered blurred version and animate opacity instead.
 
@@ -326,13 +326,13 @@ Web animation must target the same 16.67ms frame budget as games — but the con
 
 > 🎯 **What the exam tests 2:** What is the FLIP technique and what does the acronym stand for? First, Last, Invert, Play. You record the element's position (First), make the DOM change (Last), calculate the inversion transform (Invert), then animate to identity (Play). GSAP's Flip plugin automates this for layout-change animations.
 
-> 🎯 **What the exam tests 3:** In a GSAP Timeline, what does `'-=0.2'` as the position parameter mean? It means "start this tween 0.2 seconds before the end of the previous tween" — a 0.2-second overlap with the preceding tween, creating a stagger effect.
+> 🎯 **What the exam tests 3:** In a GSAP Timeline, what does `'-=0.2'` as the position parameter mean? It means "start this tween 0.2 seconds before the end of the previous tween", a 0.2-second overlap with the preceding tween, creating a stagger effect.
 
 > 🎯 **What the exam tests 4:** When should you use `scrub: true` in ScrollTrigger vs. `toggleActions`? Use `scrub: true` when the animation progress should be directly tied to the scroll position (parallax, progress bars). Use `toggleActions` when the animation should play as a one-shot when the trigger enters the viewport.
 
 > 🎯 **What the exam tests 5:** What is Figma Smart Animate's layer name requirement? Layers in both frames must have **identical names**. If a layer is named "Card" in Frame A and "card" (lowercase) in Frame B, Smart Animate cannot match them and the layer disappears/appears instantly instead of tweening.
 
-> 🎯 **What the exam tests 6:** Which GSAP ease is recommended for mobile bottom sheet swipe animations and why? `expo.out` — it starts very fast (giving the immediate tactile response of a physical gesture release) and decelerates to a very slow end (natural deceleration of inertia). It matches the physics of a flick gesture.
+> 🎯 **What the exam tests 6:** Which GSAP ease is recommended for mobile bottom sheet swipe animations and why? `expo.out`, it starts very fast (giving the immediate tactile response of a physical gesture release) and decelerates to a very slow end (natural deceleration of inertia). It matches the physics of a flick gesture.
 
 > 🎯 **What the exam tests 7:** What does `AnimatePresence` do in Framer Motion that standard React cannot achieve? It allows exit animations (the `exit` prop) to play before a component unmounts. Without `AnimatePresence`, React immediately removes the DOM element on state change, so exit animations have no time to play.
 
@@ -340,7 +340,7 @@ Web animation must target the same 16.67ms frame budget as games — but the con
 
 > 🎯 **What the exam tests 9:** Stripe's homepage gradient animation was built before CSS `@property` existed. What CSS feature introduced in 2021+ would be an alternative? `@property` (CSS Houdini Properties and Values API) allows animating custom CSS properties (CSS variables) with type information, enabling CSS-only smooth animation of gradient hue values that previously required JavaScript.
 
-> 🎯 **What the exam tests 10:** What is the `elastic.out` ease most suitable for and what is its performance risk? Best for game UI elements, playful micro-interactions, and notification pop-in animations. Performance risk: it runs sine + exponential calculation per frame — for sets of > 100 simultaneously animated elements, this can cause dropped frames. Substitute `back.out(1.7)` for large stagger sets.
+> 🎯 **What the exam tests 10:** What is the `elastic.out` ease most suitable for and what is its performance risk? Best for game UI elements, playful micro-interactions, and notification pop-in animations. Performance risk: it runs sine + exponential calculation per frame, for sets of > 100 simultaneously animated elements, this can cause dropped frames. Substitute `back.out(1.7)` for large stagger sets.
 
 ---
 
@@ -351,7 +351,7 @@ Web animation must target the same 16.67ms frame budget as games — but the con
 | Desktop marketing page | 16.67ms | GPU compositing bottleneck | transform, opacity |
 | Mobile marketing page | 16.67ms | CPU fill rate; filter=CPU | transform, opacity only |
 | React SPA component | 16.67ms | JS thread competition | transform, opacity, layout (Framer Motion) |
-| Game UI overlay (WebGL) | 8.33ms (120fps target) | Sharing GPU with game render | Minimal — defer to Rive |
+| Game UI overlay (WebGL) | 8.33ms (120fps target) | Sharing GPU with game render | Minimal, defer to Rive |
 | E-commerce product page | 16.67ms | LCP / CLS impact | opacity; no layout-shift animations |
 | TV / SmartTV browser | 33.33ms | Old GPU compositor | transform only; no filter |
 
@@ -385,5 +385,5 @@ We complete the web animation toolkit: CSS keyframes, GPU acceleration, LottieFi
 - 🔗 [GSAP Flip Plugin](https://gsap.com/docs/v3/Plugins/Flip/)
 - 🔗 [Framer Motion Documentation](https://www.framer.com/motion/)
 - 🔗 [Figma Smart Animate Guide](https://help.figma.com/hc/en-us/articles/360039818874)
-- 📄 Paul Lewis, "FLIP Your Animations" (2015) — the original FLIP technique article (Google Developers blog)
-- 🎬 GDC: "The Animation of Linear.app" — Twitter/X motion design threads from Linear's design team
+- 📄 Paul Lewis, "FLIP Your Animations" (2015), the original FLIP technique article (Google Developers blog)
+- 🎬 GDC: "The Animation of Linear.app", Twitter/X motion design threads from Linear's design team

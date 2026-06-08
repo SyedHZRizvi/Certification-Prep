@@ -213,7 +213,7 @@ D. International freight forwarders
 OTC = Order-to-Cash. Cash collection (DSO clock stops) is the final step, not delivery.
 
 ### Q2: **A. Net on-hand minus committed**
-ATP is what you can promise *right now* — physical stock minus already-committed orders.
+ATP is what you can promise *right now*, physical stock minus already-committed orders.
 
 ### Q3: **B. Includes planned receipts**
 CTP layers on inbound planned receipts/production, so you can promise future delivery dates that ATP alone would reject.
@@ -282,7 +282,7 @@ Multi-bin carts let one picker handle several orders per trip; travel time per u
 Order fill = orders complete; line fill = lines (per order) complete; unit fill = units shipped/units ordered.
 
 ### Q25: **B. MFC + dark stores**
-Sub-30-minute urban grocery fulfillment requires inventory close to demand — exactly the MFC/dark-store thesis.
+Sub-30-minute urban grocery fulfillment requires inventory close to demand, exactly the MFC/dark-store thesis.
 
 ---
 

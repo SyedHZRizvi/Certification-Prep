@@ -20,7 +20,7 @@
 
 # 🎥 Module 8 Videos: Server Security & Defender
 
-> **How to use:** Click any card to search YouTube for the latest top result. Security is 25–30% of AZ-801 — by far the heaviest domain on the second exam.
+> **How to use:** Click any card to search YouTube for the latest top result. Security is 25–30% of AZ-801, by far the heaviest domain on the second exam.
 
 ## ⭐ Essential watching (~110 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Defender for Servers — P1 vs P2 Deep Dive</p>
+      <p class="vg-title">Defender for Servers, P1 vs P2 Deep Dive</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 30 min · Pick the right SKU</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">WDAC — Kernel-Level App Allowlisting</p>
+      <p class="vg-title">WDAC, Kernel-Level App Allowlisting</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 22 min · Audit + Enforce</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Credential Guard + VBS — Defeat Mimikatz</p>
+      <p class="vg-title">Credential Guard + VBS, Defeat Mimikatz</p>
       <p class="vg-creator">Sean Metcalf (adsecurity)</p>
       <span class="vg-duration">⏱ 30 min · Tier-0 protection</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">JIT VM Access — Close RDP by Default</p>
+      <p class="vg-title">JIT VM Access, Close RDP by Default</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 14 min · Time-bound port opening</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ASR Rules — Block Common Attacks</p>
+      <p class="vg-title">ASR Rules, Block Common Attacks</p>
       <p class="vg-creator">Inside Cloud and Security</p>
       <span class="vg-duration">⏱ 18 min · 17 named rules</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Protected Users Group — Effects</p>
+      <p class="vg-title">Protected Users Group, Effects</p>
       <p class="vg-creator">Sean Metcalf (adsecurity)</p>
       <span class="vg-duration">⏱ 20 min · Tier-0 admin hardening</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Defender for Cloud — Secure Score</p>
+      <p class="vg-title">Defender for Cloud, Secure Score</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 16 min · PCI/HIPAA/ISO views</span>
     </div>
@@ -145,11 +145,11 @@
 
 Answer these in your notebook:
 
-1. Defender for Servers P1 vs P2 — what's the headline difference?
-2. JIT VM access — what tier is it in, and what's the default max duration?
-3. WDAC vs AppLocker — which does Microsoft recommend in 2026?
+1. Defender for Servers P1 vs P2, what's the headline difference?
+2. JIT VM access, what tier is it in, and what's the default max duration?
+3. WDAC vs AppLocker, which does Microsoft recommend in 2026?
 4. Credential Guard prerequisites?
 5. Protected Users group effects (3 of them)?
-6. Secured-core server — what hardware + firmware does it require?
+6. Secured-core server, what hardware + firmware does it require?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

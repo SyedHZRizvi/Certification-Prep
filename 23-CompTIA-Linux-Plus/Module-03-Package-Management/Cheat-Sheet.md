@@ -4,7 +4,7 @@
 
 ---
 
-## 🆚 apt vs dnf — Side-by-Side
+## 🆚 apt vs dnf, Side-by-Side
 
 | Operation | Debian / Ubuntu (apt) | RHEL / Fedora (dnf) |
 |-----------|------------------------|----------------------|

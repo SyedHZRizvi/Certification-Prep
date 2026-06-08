@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Modern Workplace & Endpoint Strategy
 
-> **How to use:** Click any card to open a YouTube search for that topic — pick the top current result. Watch in order; pause to follow along in the Intune admin center if you can.
+> **How to use:** Click any card to open a YouTube search for that topic, pick the top current result. Watch in order; pause to follow along in the Intune admin center if you can.
 
 ## ⭐ Essential watching (~80 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Microsoft Intune & Modern Workplace — Overview</p>
+      <p class="vg-title">Microsoft Intune & Modern Workplace, Overview</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 18 min · The big-picture orientation</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Entra Joined vs Hybrid Joined vs Registered — Explained</p>
+      <p class="vg-title">Entra Joined vs Hybrid Joined vs Registered, Explained</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · The definitive walkthrough</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MDM vs MAM — When to Use Each in Intune</p>
+      <p class="vg-title">MDM vs MAM, When to Use Each in Intune</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · BYOD patterns demystified</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Windows as a Service — Servicing Channels & Cadence</p>
+      <p class="vg-title">Windows as a Service, Servicing Channels & Cadence</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 14 min · Feature + quality + driver split</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Maersk NotPetya — Lessons in Cloud Identity Resilience</p>
+      <p class="vg-title">Maersk NotPetya, Lessons in Cloud Identity Resilience</p>
       <p class="vg-creator">BlackHat Conference Archive</p>
       <span class="vg-duration">⏱ 35 min · The cautionary tale</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Conditional Access + Device Compliance — End-to-End Demo</p>
+      <p class="vg-title">Conditional Access + Device Compliance, End-to-End Demo</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 24 min · How they actually integrate</span>
     </div>
@@ -134,7 +134,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | THE Microsoft cloud channel. Long-form, technically rigorous. |
-| **Microsoft Mechanics** | Official Microsoft channel — high production, vendor-tinted but accurate. |
+| **Microsoft Mechanics** | Official Microsoft channel, high production, vendor-tinted but accurate. |
 | **Andy Malone MVP** | Practical exam-prep angle for MS-100/MD-102/SC certs. |
 | **Microsoft Security** | Official channel for Defender, Entra, Purview content. |
 | **Niall Brady** | Deep ConfigMgr + Intune integration content. |

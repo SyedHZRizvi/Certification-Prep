@@ -424,7 +424,7 @@
 **A:** Ishikawa (root cause analysis).
 
 **Q:** Pareto Rule.
-**A:** 80/20 — 80% of problems from 20% of causes.
+**A:** 80/20, 80% of problems from 20% of causes.
 
 **Q:** Rule of 7 (control charts).
 **A:** 7 consecutive points on one side of the mean = process out of control.
@@ -550,7 +550,7 @@
 1. Make Anki cards from these
 2. Drill daily 15 min
 3. Add cards from your wrong quiz answers
-4. Mix sections — don't review one at a time
-5. Test fairly — guessed = wrong
+4. Mix sections, don't review one at a time
+5. Test fairly, guessed = wrong
 
 You got this! 🚀

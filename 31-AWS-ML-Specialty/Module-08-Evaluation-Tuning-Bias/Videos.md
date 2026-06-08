@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>🎛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker HPO — Bayesian + Hyperband</p>
+      <p class="vg-title">SageMaker HPO, Bayesian + Hyperband</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 20 min · Strategy decision</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🔬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker Clarify — Bias + SHAP</p>
+      <p class="vg-title">SageMaker Clarify, Bias + SHAP</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 18 min · Pre + post training</span>
     </div>
@@ -66,7 +66,7 @@
     <div class="vg-thumb"><span>💡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SHAP Values — Visual Intuition</p>
+      <p class="vg-title">SHAP Values, Visual Intuition</p>
       <p class="vg-creator">Christoph Molnar</p>
       <span class="vg-duration">⏱ 18 min · Per-prediction attribution</span>
     </div>
@@ -98,7 +98,7 @@
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Fairness in ML — Impossibility Theorems</p>
+      <p class="vg-title">Fairness in ML, Impossibility Theorems</p>
       <p class="vg-creator">DeepLearningAI</p>
       <span class="vg-duration">⏱ 24 min · Demographic parity vs equal opportunity</span>
     </div>
@@ -127,10 +127,10 @@
 
 ## ✅ After watching
 
-1. Accuracy vs PR-AUC — when each?
-2. Bayesian HPO vs Hyperband — when each?
-3. Pre- vs post-training bias — examples?
-4. SHAP global vs local — when each?
+1. Accuracy vs PR-AUC, when each?
+2. Bayesian HPO vs Hyperband, when each?
+3. Pre- vs post-training bias, examples?
+4. SHAP global vs local, when each?
 5. When is a model card mandatory in your workflow?
 
 ➡️ [Quiz.md](./Quiz.md)

@@ -3,17 +3,17 @@
 > **Why this module matters:** Identity controls without telemetry are theater. Microsoft's customer data shows that orgs which forward Entra logs to Sentinel + write basic KQL detections **catch identity attacks an average of 17 days faster** than orgs relying on portal-only views. SC-300 closes with this domain because Microsoft expects the IAM admin (not just the SOC) to own the *visibility* layer over the access plane they built in Modules 1–7. The exam will absolutely test KQL basics, log retention, Defender for Identity, and break-glass alerting.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - License tiers + retention defaults — [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
-> - Conditional Access logging fields — [Module 4](../Module-04-Conditional-Access/Reading.md).
-> - PIM activation auditing — [Module 6](../Module-06-Governance-PIM/Reading.md).
-> - Hybrid identity sync errors — [Module 7](../Module-07-Hybrid-Identity/Reading.md).
-> - Basic SIEM concepts — [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
+> - License tiers + retention defaults, [Module 1](../Module-01-Entra-ID-Fundamentals/Reading.md).
+> - Conditional Access logging fields, [Module 4](../Module-04-Conditional-Access/Reading.md).
+> - PIM activation auditing, [Module 6](../Module-06-Governance-PIM/Reading.md).
+> - Hybrid identity sync errors, [Module 7](../Module-07-Hybrid-Identity/Reading.md).
+> - Basic SIEM concepts, [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
 
 ---
 
 ## 🪪 A Story: The Identity Breach Detected By A Single KQL Query
 
-It's 2024. A 3,200-person consultancy is two months into their SC-300-compliant identity stack — PIM eligible Global Admins, FIDO2 keys, Conditional Access with Identity Protection. Their CISO has been pushing the SOC to add identity to its monitoring stack. The SOC engineer pushes back: "We have Defender XDR alerts and Identity Protection, that's enough." The CISO insists. The engineer wires Entra sign-in + audit + provisioning logs to Sentinel and writes one KQL query as a starting point:
+It's 2024. A 3,200-person consultancy is two months into their SC-300-compliant identity stack, PIM eligible Global Admins, FIDO2 keys, Conditional Access with Identity Protection. Their CISO has been pushing the SOC to add identity to its monitoring stack. The SOC engineer pushes back: "We have Defender XDR alerts and Identity Protection, that's enough." The CISO insists. The engineer wires Entra sign-in + audit + provisioning logs to Sentinel and writes one KQL query as a starting point:
 
 ```kql
 // Any sign-in by either break-glass account
@@ -22,7 +22,7 @@ SigninLogs
 | project TimeGenerated, UserPrincipalName, IPAddress, Location, ResultType
 ```
 
-Three weeks later, the query fires. Tuesday, 3:14 AM PT. `breakglass1@firm.com` signed in successfully from an IP in Eastern Europe. The SOC engineer is paged. He opens Sign-in logs, sees the same event, plus the activation of Global Administrator role via PIM at 3:15 AM. By 3:17, the attacker has created a new federated domain pointing to an AD FS server they control. By 3:19, the SOC engineer has revoked all sessions for the break-glass account, disabled it, rotated `JWT_SECRET`-equivalent for the tenant, paged the CISO, and started incident response. Total time from attacker entry to containment: **5 minutes** — because of one KQL query.
+Three weeks later, the query fires. Tuesday, 3:14 AM PT. `breakglass1@firm.com` signed in successfully from an IP in Eastern Europe. The SOC engineer is paged. He opens Sign-in logs, sees the same event, plus the activation of Global Administrator role via PIM at 3:15 AM. By 3:17, the attacker has created a new federated domain pointing to an AD FS server they control. By 3:19, the SOC engineer has revoked all sessions for the break-glass account, disabled it, rotated `JWT_SECRET`-equivalent for the tenant, paged the CISO, and started incident response. Total time from attacker entry to containment: **5 minutes**, because of one KQL query.
 
 Without that query, the attacker would have had hours, possibly days, to pivot. The breach would have made the news. The consultancy would have lost the contract that funded their security program.
 
@@ -86,7 +86,7 @@ Entra portal → Identity Secure Score: a 0–100% score Microsoft calculates ba
 
 ---
 
-## 🔍 Kusto Query Language (KQL) — The Essentials
+## 🔍 Kusto Query Language (KQL), The Essentials
 
 KQL is the pipe-style query language used in:
 
@@ -153,7 +153,7 @@ AuditLogs
 | where isempty(Publisher)
 | project TimeGenerated, InitiatedBy, TargetResources
 
-// 7) Conditional Access policy hits — what fired today
+// 7) Conditional Access policy hits, what fired today
 SigninLogs
 | where TimeGenerated > ago(1d)
 | mv-expand ConditionalAccessPolicies
@@ -162,7 +162,7 @@ SigninLogs
 | summarize Hits = count() by PolicyName, Result
 | order by Hits desc
 
-// 8) Identity Protection — high-risk users not yet remediated
+// 8) Identity Protection, high-risk users not yet remediated
 SigninLogs
 | where TimeGenerated > ago(7d)
 | where RiskLevelDuringSignIn == "high" and RiskState == "atRisk"
@@ -186,7 +186,7 @@ AADProvisioningLogs
 | project TimeGenerated, JobId, SourceIdentity, TargetIdentity, ResultStatus, ResultDescription
 ```
 
-🎯 **Exam tip:** **`SigninLogs` covers interactive + non-interactive (after schema unification)** — but historically there were separate tables. Modern queries should use the unified table.
+🎯 **Exam tip:** **`SigninLogs` covers interactive + non-interactive (after schema unification)**, but historically there were separate tables. Modern queries should use the unified table.
 
 ---
 
@@ -200,7 +200,7 @@ AADProvisioningLogs
 | **Analytics rules** | Scheduled KQL queries that fire incidents |
 | **Workbooks** | Pre-built dashboards (e.g. Microsoft Entra workbook) |
 | **Hunting queries** | Pre-built and custom queries for proactive hunting |
-| **UEBA** | User & Entity Behavior Analytics — anomaly detection |
+| **UEBA** | User & Entity Behavior Analytics, anomaly detection |
 | **SOAR playbooks** | Logic Apps that auto-respond to incidents (block sign-in, revoke session, page on-call) |
 
 ### Microsoft Entra workbook
@@ -253,7 +253,7 @@ AuditLogs
 
 ## 🔐 Token Theft & Continuous Access Evaluation (CAE)
 
-A 2023 attack class Microsoft tracks heavily is **token theft** — attacker exfiltrates a refresh token from a victim's browser/device, then replays it from their own machine. The victim's MFA doesn't help — the token is already issued.
+A 2023 attack class Microsoft tracks heavily is **token theft** attacker exfiltrates a refresh token from a victim's browser/device, then replays it from their own machine. The victim's MFA doesn't help the token is already issued.
 
 | Defense | Detail |
 |---------|--------|
@@ -304,9 +304,9 @@ The correct order:
 7. ✅ **Wire Defender for Identity** sensors to on-prem DCs (if hybrid); feed into Defender XDR portal.
 8. ✅ **Configure SOAR playbooks** for top incidents (auto-revoke session on confirmed token theft, etc.).
 9. ✅ **Review Identity Secure Score** monthly; assign owners to top 3 improvement actions.
-10. ✅ **Document the runbook** — how to triage each alert, who to page, escalation path.
+10. ✅ **Document the runbook**, how to triage each alert, who to page, escalation path.
 
-⚠️ Skipping step 3 (diagnostic settings) means everything else is hollow — no logs to query.
+⚠️ Skipping step 3 (diagnostic settings) means everything else is hollow, no logs to query.
 
 ---
 
@@ -320,7 +320,7 @@ The correct order:
 | **Risk detections** | Identity Protection signals (P2) |
 | **Diagnostic settings** | Where to ship logs (LA / Event Hub / storage) |
 | **Log Analytics workspace** | Where logs land for KQL querying |
-| **KQL** | Kusto Query Language — Microsoft's pipe-style log query language |
+| **KQL** | Kusto Query Language, Microsoft's pipe-style log query language |
 | **Microsoft Sentinel** | Cloud-native SIEM built on Log Analytics |
 | **Analytics rule** | Scheduled KQL query that fires Sentinel incidents |
 | **Workbook** | Pre-built dashboard (Microsoft Entra workbook) |
@@ -329,7 +329,7 @@ The correct order:
 | **Identity Secure Score** | Microsoft-calculated 0–100% identity posture score |
 | **Microsoft Defender for Identity** | On-prem AD attack detection (formerly Azure ATP) |
 | **Microsoft Defender XDR** | Unified Defender portal (Identity + Endpoint + Email + Cloud Apps) |
-| **CAE** | Continuous Access Evaluation — token revocation in ~15 min |
+| **CAE** | Continuous Access Evaluation, token revocation in ~15 min |
 | **Token theft** | Refresh token stolen post-MFA and replayed |
 | **Token Protection** (preview) | Binds token to device to prevent replay |
 
@@ -357,9 +357,9 @@ You now know:
 
 ---
 
-## 📊 Case Study — Microsoft's Own SOC's KQL-Driven Identity Detections (2020–2024)
+## 📊 Case Study, Microsoft's Own SOC's KQL-Driven Identity Detections (2020–2024)
 
-**Situation.** Microsoft's Cyber Defense Operations Center (CDOC) — the SOC behind microsoft.com — was an early Sentinel customer (Sentinel itself was developed partly to serve internal Microsoft needs). The CDOC team has published parts of their KQL detection library at conferences (Black Hat 2022, Defender Day 2023, RSA 2024). Their published "Top 50 identity hunting queries" library covers:
+**Situation.** Microsoft's Cyber Defense Operations Center (CDOC) the SOC behind microsoft.com was an early Sentinel customer (Sentinel itself was developed partly to serve internal Microsoft needs). The CDOC team has published parts of their KQL detection library at conferences (Black Hat 2022, Defender Day 2023, RSA 2024). Their published "Top 50 identity hunting queries" library covers:
 
 - Break-glass abuse
 - Token theft signals (same token from multiple IPs)
@@ -384,7 +384,7 @@ The KQL library is in the open-source Microsoft Sentinel content GitHub repo (`A
 **Lesson for the exam / for practitioners.** Identity monitoring is not "configure Sentinel and walk away." It's an active, iterative practice of writing detections that match your tenant's threat model. SC-300 expects you to be able to write basic KQL, understand which log table answers which question, and integrate Identity Protection + Defender for Identity + Sentinel into a unified workflow. When you see a scenario about "how should this org detect X identity event," the answer involves: **diagnostic settings → LA → Sentinel analytics rule → KQL detection → SOAR playbook**.
 
 **Discussion (Socratic).**
-- **Q1.** Microsoft's CDOC has 24×7 staffing. A 200-person company can't afford that. What does the minimum-viable identity SOC look like with no dedicated staff — and what's the cost of NOT having it?
+- **Q1.** Microsoft's CDOC has 24×7 staffing. A 200-person company can't afford that. What does the minimum-viable identity SOC look like with no dedicated staff, and what's the cost of NOT having it?
 - **Q2.** The open-source Sentinel content library has ~300+ identity-related rules. How do you avoid alert fatigue when enabling them? What's the right tuning cadence?
 - **Q3.** Microsoft Defender for Identity + Identity Protection cover on-prem and cloud separately. A truly Hybrid attack chain (compromise on-prem DC → pivot to cloud via PHS) is split across both portals. What's the right operational pattern to investigate end-to-end?
 
@@ -397,7 +397,7 @@ The KQL library is in the open-source Microsoft Sentinel content GitHub repo (`A
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Sentinel vs Splunk vs third-party SIEM.** Many orgs already pay for Splunk/QRadar/Elastic. Should they also use Sentinel? Make the case for and against; consider Microsoft-native integration vs vendor consolidation.
 2. **Detection vs prevention.** A KQL alert is detection, not prevention. Walk through how Microsoft expects you to pair detections with **SOAR playbooks** for auto-response (block sign-in, revoke session, force password change). What's the trust-but-verify model?
@@ -418,4 +418,4 @@ The KQL library is in the open-source Microsoft Sentinel content GitHub repo (`A
 - 📖 [Microsoft Defender for Identity overview](https://learn.microsoft.com/defender-for-identity/what-is)
 - 📖 [Identity Secure Score](https://learn.microsoft.com/entra/fundamentals/identity-secure-score)
 - 📖 [Token theft detection and mitigation](https://learn.microsoft.com/entra/identity-platform/secure-least-privileged-access)
-- 📖 Microsoft, *Microsoft Digital Defense Report 2024* — Microsoft's annual threat-data report.
+- 📖 Microsoft, *Microsoft Digital Defense Report 2024*, Microsoft's annual threat-data report.

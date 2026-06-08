@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AWS Certified Machine Learning Specialty (MLS-C01)
+# 🧪 Practice Exam 1, AWS Certified Machine Learning Specialty (MLS-C01)
 
 > **Conditions:** Set an 80-minute timer. 30 questions. No notes, no Google, no breaks.
 > **Pass mark for this practice exam:** 22/30 (~73%)
@@ -205,65 +205,65 @@ D. Storing it in S3
 
 ## Detailed answer rationales
 
-**Q1. Answer: B — Random Cut Forest.** Unsupervised anomaly detection, no labels needed. XGBoost requires labels; K-Means is clustering; seq2seq is for sequence translation.
+**Q1. Answer: B, Random Cut Forest.** Unsupervised anomaly detection, no labels needed. XGBoost requires labels; K-Means is clustering; seq2seq is for sequence translation.
 
-**Q2. Answer: C — Firehose with format conversion.** Firehose has built-in JSON→Parquet conversion via Glue table schema. No code needed.
+**Q2. Answer: C, Firehose with format conversion.** Firehose has built-in JSON→Parquet conversion via Glue table schema. No code needed.
 
-**Q3. Answer: B — PR-AUC + recall + F1.** On 0.2% positives, accuracy is meaningless. PR-AUC is preferred over ROC-AUC for imbalanced data.
+**Q3. Answer: B, PR-AUC + recall + F1.** On 0.2% positives, accuracy is meaningless. PR-AUC is preferred over ROC-AUC for imbalanced data.
 
-**Q4. Answer: B — Overfitting.** The huge gap between train and val is the textbook overfit signature. Standard remedies: reduce capacity, add regularisation, early stopping.
+**Q4. Answer: B, Overfitting.** The huge gap between train and val is the textbook overfit signature. Standard remedies: reduce capacity, add regularisation, early stopping.
 
-**Q5. Answer: B — Spot + checkpointing.** Up to 90% off; checkpointing handles interruptions. RI's are inflexible; Dedicated Hosts are for licensing.
+**Q5. Answer: B, Spot + checkpointing.** Up to 90% off; checkpointing handles interruptions. RI's are inflexible; Dedicated Hosts are for licensing.
 
-**Q6. Answer: B — Pipe mode + RecordIO-protobuf.** Pipe mode streams data via FIFO; no need to copy 5 TB to disk first.
+**Q6. Answer: B, Pipe mode + RecordIO-protobuf.** Pipe mode streams data via FIFO; no need to copy 5 TB to disk first.
 
-**Q7. Answer: B — Feature Store online + offline.** Dual-mode store is the MLS-C01 canonical answer.
+**Q7. Answer: B, Feature Store online + offline.** Dual-mode store is the MLS-C01 canonical answer.
 
-**Q8. Answer: B — Clarify pre-training bias.** Pre-training bias surfaces dataset disparities before any model is trained.
+**Q8. Answer: B, Clarify pre-training bias.** Pre-training bias surfaces dataset disparities before any model is trained.
 
-**Q9. Answer: B — SMMP.** A 70B model doesn't fit on one GPU; model parallelism required.
+**Q9. Answer: B, SMMP.** A 70B model doesn't fit on one GPU; model parallelism required.
 
-**Q10. Answer: B — Inferentia2.** The cost-optimal LLM inference accelerator. Trainium is for training.
+**Q10. Answer: B, Inferentia2.** The cost-optimal LLM inference accelerator. Trainium is for training.
 
-**Q11. Answer: B — SSE-KMS with CMK.** Per-request CloudTrail audit happens with customer-managed KMS keys.
+**Q11. Answer: B, SSE-KMS with CMK.** Per-request CloudTrail audit happens with customer-managed KMS keys.
 
-**Q12. Answer: A — Macie.** AWS's managed PII / sensitive-data discovery in S3.
+**Q12. Answer: A, Macie.** AWS's managed PII / sensitive-data discovery in S3.
 
-**Q13. Answer: B — Enable EFA.** Multi-node DL scaling needs HPC-grade networking. Without EFA, all-reduce saturates standard networking.
+**Q13. Answer: B, Enable EFA.** Multi-node DL scaling needs HPC-grade networking. Without EFA, all-reduce saturates standard networking.
 
-**Q14. Answer: B — Factorization Machines.** Designed for sparse high-dimensional input (CTR / ad ranking).
+**Q14. Answer: B, Factorization Machines.** Designed for sparse high-dimensional input (CTR / ad ranking).
 
-**Q15. Answer: C — Bayesian.** Builds a surrogate model from prior trials; fewer total jobs vs random.
+**Q15. Answer: C, Bayesian.** Builds a surrogate model from prior trials; fewer total jobs vs random.
 
-**Q16. Answer: A — IP Insights.** Purpose-built for user-IP anomaly detection.
+**Q16. Answer: A, IP Insights.** Purpose-built for user-IP anomaly detection.
 
-**Q17. Answer: A — SageMaker Projects.** Templated MLOps repo with CodeCommit + CodePipeline + Pipelines + Registry + endpoints.
+**Q17. Answer: A, SageMaker Projects.** Templated MLOps repo with CodeCommit + CodePipeline + Pipelines + Registry + endpoints.
 
-**Q18. Answer: B — DeepAR.** Probabilistic multi-series forecasting with quantile output. Or Amazon Forecast for managed AutoML.
+**Q18. Answer: B, DeepAR.** Probabilistic multi-series forecasting with quantile output. Or Amazon Forecast for managed AutoML.
 
-**Q19. Answer: C — Parquet.** Columnar + compressed + splittable + schema-aware. Best default for ML.
+**Q19. Answer: C, Parquet.** Columnar + compressed + splittable + schema-aware. Best default for ML.
 
-**Q20. Answer: B — Snowball Edge cluster.** 2 PB over an internet connection is impractical in 8 weeks; Snowball ships disks.
+**Q20. Answer: B, Snowball Edge cluster.** 2 PB over an internet connection is impractical in 8 weeks; Snowball ships disks.
 
-**Q21. Answer: B — BYO container in ECR.** For custom Dockerfiles, push to ECR and reference in the Estimator.
+**Q21. Answer: B, BYO container in ECR.** For custom Dockerfiles, push to ECR and reference in the Estimator.
 
-**Q22. Answer: B — Convert to Parquet + partition.** 5-50× cost reduction is typical.
+**Q22. Answer: B, Convert to Parquet + partition.** 5-50× cost reduction is typical.
 
-**Q23. Answer: B — Script mode with PyTorch container.** AWS-managed container + your `train.py`; no Dockerfile.
+**Q23. Answer: B, Script mode with PyTorch container.** AWS-managed container + your `train.py`; no Dockerfile.
 
-**Q24. Answer: C — Learned embedding layer.** Embeddings compress IDs to dense vectors; one-hot blows up.
+**Q24. Answer: C, Learned embedding layer.** Embeddings compress IDs to dense vectors; one-hot blows up.
 
-**Q25. Answer: A — Visual data prep with 300+ transforms.** Data Wrangler is the SageMaker EDA + transform tool.
+**Q25. Answer: A, Visual data prep with 300+ transforms.** Data Wrangler is the SageMaker EDA + transform tool.
 
-**Q26. Answer: B — Comprehend `DetectSentiment`.** Managed; no training; lowest operational overhead.
+**Q26. Answer: B, Comprehend `DetectSentiment`.** Managed; no training; lowest operational overhead.
 
-**Q27. Answer: B — OpenSearch Serverless.** The default and managed vector store for Bedrock KBs.
+**Q27. Answer: B, OpenSearch Serverless.** The default and managed vector store for Bedrock KBs.
 
-**Q28. Answer: B — Transfer learning.** Use pretrained ImageNet weights; fine-tune on your 50K images. Better than from scratch with limited data.
+**Q28. Answer: B, Transfer learning.** Use pretrained ImageNet weights; fine-tune on your 50K images. Better than from scratch with limited data.
 
-**Q29. Answer: A — Glue job bookmarks.** Built-in incremental processing.
+**Q29. Answer: A, Glue job bookmarks.** Built-in incremental processing.
 
-**Q30. Answer: C — Re-tuning on test = contamination.** Test set is one-shot. Reuse contaminates the metric.
+**Q30. Answer: C, Re-tuning on test = contamination.** Test set is one-shot. Reuse contaminates the metric.
 
 ---
 
@@ -273,7 +273,7 @@ D. Storing it in S3
 |-----------|---------|
 | 27-30 | 🏆 Ready for Practice Exam 2; consider booking the real exam in a few weeks |
 | 22-26 | ✅ Pass; review weak spots, do Modules 6-10, then Practice Exam 2 |
-| 18-21 | ⚠️ Borderline — re-read modules where you missed multiple questions |
+| 18-21 | ⚠️ Borderline, re-read modules where you missed multiple questions |
 | <18 | 🔁 Re-study Modules 1-5; retake this exam in a week |
 
 ---

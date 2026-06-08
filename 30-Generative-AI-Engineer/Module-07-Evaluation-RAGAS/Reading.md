@@ -1,6 +1,6 @@
 # Module 7: Evaluation & RAGAS 📊
 
-> **Why this module matters:** If you remember nothing else from this entire course, remember this: **you cannot improve what you cannot measure.** Most production GenAI systems fail not at model selection or framework choice but at the eval layer — the team doesn't know whether their changes help or hurt, so they ship vibes. The first thing any serious team builds isn't the agent, the RAG, or the fine-tune. It's the eval harness. This module is how.
+> **Why this module matters:** If you remember nothing else from this entire course, remember this: **you cannot improve what you cannot measure.** Most production GenAI systems fail not at model selection or framework choice but at the eval layer, the team doesn't know whether their changes help or hurt, so they ship vibes. The first thing any serious team builds isn't the agent, the RAG, or the fine-tune. It's the eval harness. This module is how.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–6
@@ -11,7 +11,7 @@
 
 ## 🎬 A Story: Why Anthropic Built Its Own Evals (And Why You Should Too)
 
-In 2023, an Anthropic blog post quietly mentioned that for every product release, every model upgrade, and every "small" prompt tweak, they ran *thousands* of internal evaluations. The team had over a hundred custom eval sets — some only 50 examples, some 50,000 — covering helpfulness, harmlessness, accuracy, format compliance, tone, refusal calibration, and dozens of narrower behaviors. Some evals were *behavioral* (does the model use the right markdown table syntax?); some were *capability* (can the model solve this leetcode problem?); some were *safety* (does the model help write malware when asked?).
+In 2023, an Anthropic blog post quietly mentioned that for every product release, every model upgrade, and every "small" prompt tweak, they ran *thousands* of internal evaluations. The team had over a hundred custom eval sets some only 50 examples, some 50,000 covering helpfulness, harmlessness, accuracy, format compliance, tone, refusal calibration, and dozens of narrower behaviors. Some evals were *behavioral* (does the model use the right markdown table syntax?); some were *capability* (can the model solve this leetcode problem?); some were *safety* (does the model help write malware when asked?).
 
 Most teams reading that blog had two reactions: "wow" and "we'll do that later." Two years later, the teams that did "do it later" are the ones that ship inconsistent quality, can't roll back regressions, and have CTOs who can't sleep before a model upgrade.
 
@@ -35,12 +35,12 @@ The full evaluation stack has three layers, each answering a different question.
 
 *Does this model know how to do X?* Public benchmarks:
 
-- **MMLU** — broad knowledge multiple-choice
-- **HumanEval / MBPP / SWE-bench** — coding capability
-- **GSM8K / MATH** — mathematical reasoning
-- **TruthfulQA** — propensity to confidently confabulate
-- **HELM / BIG-bench** — diverse academic benchmark suites
-- **MT-Bench / Chatbot Arena** — open-ended chat quality (human judged)
+- **MMLU**, broad knowledge multiple-choice
+- **HumanEval / MBPP / SWE-bench**, coding capability
+- **GSM8K / MATH**, mathematical reasoning
+- **TruthfulQA**, propensity to confidently confabulate
+- **HELM / BIG-bench**, diverse academic benchmark suites
+- **MT-Bench / Chatbot Arena**, open-ended chat quality (human judged)
 
 These tell you about *the model*. They're useful for model selection ("Claude vs GPT vs Llama for our use case") but don't tell you about *your application*.
 
@@ -58,29 +58,29 @@ These tell you about *the model*. They're useful for model selection ("Claude vs
 
 ## 📐 The RAGAS Framework (Es et al. 2023, current as of 2026)
 
-RAGAS — "Retrieval-Augmented Generation Assessment" — is the de facto standard for RAG-system evaluation. It defines four core metrics, computed *automatically using an LLM-as-judge*, without ground-truth answers (in its newer "reference-free" mode).
+RAGAS "Retrieval-Augmented Generation Assessment" is the de facto standard for RAG-system evaluation. It defines four core metrics, computed *automatically using an LLM-as-judge*, without ground-truth answers (in its newer "reference-free" mode).
 
 ### The four core metrics
 
-**1. Faithfulness** — Does the answer stick to the retrieved context?
+**1. Faithfulness**, Does the answer stick to the retrieved context?
 
 Computed by: extract each claim from the generated answer; for each claim, check if it's supported by the retrieved context (via an LLM judge). Faithfulness = supported_claims / total_claims.
 
 > Low faithfulness = hallucination, the #1 RAG failure mode.
 
-**2. Answer Relevancy** — Does the answer actually address the question?
+**2. Answer Relevancy**, Does the answer actually address the question?
 
 Computed by: ask an LLM to generate N hypothetical questions for which the given answer would be appropriate; measure cosine similarity to the original question; average.
 
-> Low answer relevancy = "talks around the question" — verbose non-answers.
+> Low answer relevancy = "talks around the question", verbose non-answers.
 
-**3. Context Precision** — Are the retrieved chunks relevant to the question?
+**3. Context Precision**, Are the retrieved chunks relevant to the question?
 
 Computed by: for each retrieved chunk in order, ask an LLM if it was useful for answering. Compute the *mean-reciprocal-rank* style score.
 
 > Low context precision = retrieving too much noise; rerank harder, retrieve fewer.
 
-**4. Context Recall** — Did retrieval find everything needed?
+**4. Context Recall**, Did retrieval find everything needed?
 
 Requires a ground-truth answer. Decompose the ground truth into claims; for each, check if the *retrieved context* could support it. Recall = supported / total.
 
@@ -88,11 +88,11 @@ Requires a ground-truth answer. Decompose the ground truth into claims; for each
 
 ### Additional RAGAS metrics
 
-- **Answer Correctness** — semantic + factual similarity to ground truth answer
-- **Answer Semantic Similarity** — embedding similarity to ground truth
-- **Aspect Critique** — judge against a freeform rubric ("does this respect privacy?")
-- **Context Entity Recall** — entities in ground truth that appear in retrieved context
-- **Noise Sensitivity** — quality drop when irrelevant context is added
+- **Answer Correctness**, semantic + factual similarity to ground truth answer
+- **Answer Semantic Similarity**, embedding similarity to ground truth
+- **Aspect Critique**, judge against a freeform rubric ("does this respect privacy?")
+- **Context Entity Recall**, entities in ground truth that appear in retrieved context
+- **Noise Sensitivity**, quality drop when irrelevant context is added
 
 ### The matrix in practice
 
@@ -145,16 +145,16 @@ LLM-as-judge means using an LLM to score the output of another LLM (or system). 
 | **Length bias** | Prefers longer answers irrespective of quality |
 | **Self-enhancement bias** | An LLM judge rates outputs from its own family higher |
 | **Format bias** | Prefers markdown lists, bolded headers, etc. |
-| **Confidence bias** | Prefers confidently-worded answers — including wrong ones |
+| **Confidence bias** | Prefers confidently-worded answers, including wrong ones |
 
 ### Mitigations
 
-- **Pairwise + swap** — judge (A vs B) then (B vs A); only count agreement
-- **Reference-based** — give the judge a reference; ask it to score similarity, not pick a "better"
-- **Rubric-driven** — explicit criteria, not "which is better overall"
-- **Chain-of-thought** — ask the judge to reason before scoring; often improves accuracy
-- **Stronger judge model** — use Claude Opus / GPT-5 as judge; cheap model as evaluatee
-- **Ensemble judges** — average across multiple models
+- **Pairwise + swap**, judge (A vs B) then (B vs A); only count agreement
+- **Reference-based**, give the judge a reference; ask it to score similarity, not pick a "better"
+- **Rubric-driven**, explicit criteria, not "which is better overall"
+- **Chain-of-thought**, ask the judge to reason before scoring; often improves accuracy
+- **Stronger judge model**, use Claude Opus / GPT-5 as judge; cheap model as evaluatee
+- **Ensemble judges**, average across multiple models
 
 ### G-Eval (Liu et al. 2023)
 
@@ -164,18 +164,18 @@ A specific LLM-as-judge protocol: define dimensions (coherence, consistency, flu
 
 ## 📋 Golden Datasets
 
-The single most important asset in any GenAI eval is your **golden dataset** — a labeled set of (input, expected_output) pairs that *you* curated for *your* use case.
+The single most important asset in any GenAI eval is your **golden dataset**, a labeled set of (input, expected_output) pairs that *you* curated for *your* use case.
 
 ### How to build one
 
 1. **Start with 30 examples.** That's enough to measure differences > ~5%.
 2. **Use real user queries** if you have them. Sample from production logs.
-3. **Cover the diversity of inputs** — short, long, ambiguous, multi-hop, edge cases.
+3. **Cover the diversity of inputs**, short, long, ambiguous, multi-hop, edge cases.
 4. **Label with care.** One annotator can do it; have a second sanity check.
-5. **Version it.** Golden v1, v2, v3 — track drift.
+5. **Version it.** Golden v1, v2, v3, track drift.
 6. **Add hard cases over time.** Every production bug becomes a golden example.
 
-### The "synthetic golden" — RAGAS test set generation
+### The "synthetic golden", RAGAS test set generation
 
 RAGAS can *generate* a synthetic test set from your corpus:
 
@@ -276,7 +276,7 @@ Goal: take the RAG system you built in Module 3 and add a full eval harness.
 
 Steps:
 
-1. Build a golden dataset of 50 (question, ground_truth_answer, ground_truth_chunks) tuples — half synthetic via RAGAS test-set generation, half hand-labeled from your test queries.
+1. Build a golden dataset of 50 (question, ground_truth_answer, ground_truth_chunks) tuples, half synthetic via RAGAS test-set generation, half hand-labeled from your test queries.
 2. Run RAGAS' four core metrics + answer_correctness using GPT-4o-mini as the judge.
 3. Add a Promptfoo config that A/B-tests two prompt templates.
 4. Wire the whole thing into a GitHub Actions workflow that fails the PR on a >5% drop in faithfulness or answer_correctness.
@@ -286,9 +286,9 @@ Deliverable: a CI run that completes in <5 minutes and gates PRs on real metric 
 
 ---
 
-## 📊 Case Study — Anthropic's Constitutional AI Eval Pipeline
+## 📊 Case Study, Anthropic's Constitutional AI Eval Pipeline
 
-**Situation.** Anthropic's Constitutional AI training (Bai et al. 2022, expanded 2023-2024) is a process where the model critiques and revises its own outputs against a written *constitution* — a set of principles like "the response should not encourage illegal activity" or "the response should be helpful and concise."
+**Situation.** Anthropic's Constitutional AI training (Bai et al. 2022, expanded 2023-2024) is a process where the model critiques and revises its own outputs against a written *constitution*, a set of principles like "the response should not encourage illegal activity" or "the response should be helpful and concise."
 
 **The eval challenge.** How do you measure adherence to a *vague natural-language constitution* across thousands of nuanced scenarios?
 
@@ -320,8 +320,8 @@ You now know:
 
 - 🎯 The three layers: capability / system / production eval
 - 📐 RAGAS' four core metrics: faithfulness, answer relevancy, context precision, context recall
-- 🧑‍⚖️ LLM-as-judge — the power tool and its biases (position, length, self-enhancement, format, confidence)
-- 📋 Golden datasets — how to build, version, grow
+- 🧑‍⚖️ LLM-as-judge, the power tool and its biases (position, length, self-enhancement, format, confidence)
+- 📋 Golden datasets, how to build, version, grow
 - 🔬 The eval harness ecosystem: RAGAS, Promptfoo, LangSmith, Phoenix, Inspect AI
 - 🏃 Eval-driven development in CI
 - 🚨 The anti-patterns that make your evals useless
@@ -330,11 +330,11 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 8 — Guardrails & Safety](../Module-08-Guardrails-Safety/Reading.md)
+4. ➡️ Move on: [Module 8, Guardrails & Safety](../Module-08-Guardrails-Safety/Reading.md)
 
 > **Where this leads.**
-> - Module 8 covers guardrails — and evals tell you whether they work.
-> - Module 9 covers observability — production telemetry + Layer 3 eval.
+> - Module 8 covers guardrails, and evals tell you whether they work.
+> - Module 9 covers observability, production telemetry + Layer 3 eval.
 > - Module 10's case studies all hinge on the eval discipline of the team.
 
 ---
@@ -350,5 +350,5 @@ You now know:
 - 📖 [OpenAI Evals repo](https://github.com/openai/evals)
 - 📖 [Anthropic's eval harness](https://github.com/anthropics/evals)
 - 📖 [Inspect AI by UK AISI](https://inspect.ai-safety-institute.org.uk/)
-- 🎬 Hamel Husain's "evals" series on YouTube — exceptional practitioner content
-- 🎬 Eugene Yan's blog and talks — best public writing on production GenAI evals
+- 🎬 Hamel Husain's "evals" series on YouTube, exceptional practitioner content
+- 🎬 Eugene Yan's blog and talks, best public writing on production GenAI evals

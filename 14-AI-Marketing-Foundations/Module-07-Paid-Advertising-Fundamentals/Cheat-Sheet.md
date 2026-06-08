@@ -98,10 +98,10 @@ Target: 7+ ; warning <5.
 
 ## 🎨 Ad Copy Frameworks
 
-- **AIDA** (1898) — Attention, Interest, Desire, Action
-- **PAS** — Problem, Agitate, Solve
-- **BAB** — Before, After, Bridge
-- **HSO** (modern social) — Hook, Story, Offer
+- **AIDA** (1898), Attention, Interest, Desire, Action
+- **PAS**, Problem, Agitate, Solve
+- **BAB**, Before, After, Bridge
+- **HSO** (modern social), Hook, Story, Offer
 
 ---
 

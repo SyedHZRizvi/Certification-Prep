@@ -5,7 +5,7 @@ title: Resources
 
 # 📚 Resources
 
-> Curated links to certifications, books, external practice tests, communities, and tools that complement the 32 courses on this site. Use these alongside the modules — don't try to read everything before starting.
+> Curated links to certifications, books, external practice tests, communities, and tools that complement the 32 courses on this site. Use these alongside the modules, don't try to read everything before starting.
 
 **Resources** · Hub
 *Last updated: 2026-05*
@@ -18,34 +18,34 @@ Pick the one that matches what you need right now. Each is a deep-dive on its to
 
 ### 🏆 [International Certifications Catalog](./International-Certifications/)
 
-**Every international cert that the 32 courses on this site map to** — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules. The single most-referenced page once you're ready to actually take an exam.
+**Every international cert that the 32 courses on this site map to**, with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules. The single most-referenced page once you're ready to actually take an exam.
 
-- **Project & Agile** — PSM I, PMP, CAPM, CSM, PMI-ACP
-- **Cloud — AWS** — CLF-C02, SAA-C03, AIF-C01 + Pro/Specialty next steps
-- **Cloud — Azure** — AZ-900, AZ-104, AI-102 + Architect/DevOps next steps
-- **Cybersecurity** — Security+, CISSP, CISM, CEH, OSCP, CySA+, CASP+, CISA
-- **Supply Chain** — CSCP, CPIM, CLTD, CPSM
-- **AI / Digital Marketing** — HubSpot Inbound, Google Ads, Meta Blueprint, GA4 IQ, Wharton Online, OMCP, DMI
-- **Bitcoin / Crypto** — CBP (C4), CBSA (BTA), CCAS (ACAMS), UNIC MSc
-- **E-Commerce** — Google D-M & E-C, Adobe Commerce, Salesforce B2C, Shopify
+- **Project & Agile**, PSM I, PMP, CAPM, CSM, PMI-ACP
+- **Cloud AWS** CLF-C02, SAA-C03, AIF-C01 + Pro/Specialty next steps
+- **Cloud Azure** AZ-900, AZ-104, AI-102 + Architect/DevOps next steps
+- **Cybersecurity**, Security+, CISSP, CISM, CEH, OSCP, CySA+, CASP+, CISA
+- **Supply Chain**, CSCP, CPIM, CLTD, CPSM
+- **AI / Digital Marketing**, HubSpot Inbound, Google Ads, Meta Blueprint, GA4 IQ, Wharton Online, OMCP, DMI
+- **Bitcoin / Crypto**, CBP (C4), CBSA (BTA), CCAS (ACAMS), UNIC MSc
+- **E-Commerce**, Google D-M & E-C, Adobe Commerce, Salesforce B2C, Shopify
 - **"Which cert next?" decision matrix** + renewal tracker + fee-honesty guide
 
 ---
 
 ### 📖 [Books & Links](./Books-and-Links/)
 
-The single most-recommended resources (both free vendor materials and paid books/courses), organized by cert family — for **all 32 tracks**.
+The single most-recommended resources (both free vendor materials and paid books/courses), organized by cert family, for **all 32 tracks**.
 
-- **Project & Agile** — The Scrum Guide, PMBOK 7, Andrew Ramdayal's PMP Udemy course
-- **AWS** — AWS Skill Builder (official training portal), AWS docs, exam guides
-- **Azure** — Microsoft Learn (official learning paths), AZ-900/AZ-104/AI-102 docs
-- **Security** — CompTIA SY0-701 exam objectives, Professor Messer's SY0-701 videos
-- **Supply Chain** — ASCM Learning System overview, ISM CPSM Diagnostic Practice Exam
-- **AI Marketing** — HubSpot Academy, Google Skillshop, Meta Blueprint, Semrush Academy
-- **Bitcoin / Crypto** — Princeton MOOC (Narayanan), *Mastering Bitcoin* (Antonopoulos), C4 study guide
-- **E-Commerce** — Google Coursera D-M & E-C, Adobe Commerce docs, Shopify Academy
+- **Project & Agile**, The Scrum Guide, PMBOK 7, Andrew Ramdayal's PMP Udemy course
+- **AWS**, AWS Skill Builder (official training portal), AWS docs, exam guides
+- **Azure**, Microsoft Learn (official learning paths), AZ-900/AZ-104/AI-102 docs
+- **Security**, CompTIA SY0-701 exam objectives, Professor Messer's SY0-701 videos
+- **Supply Chain**, ASCM Learning System overview, ISM CPSM Diagnostic Practice Exam
+- **AI Marketing**, HubSpot Academy, Google Skillshop, Meta Blueprint, Semrush Academy
+- **Bitcoin / Crypto**, Princeton MOOC (Narayanan), *Mastering Bitcoin* (Antonopoulos), C4 study guide
+- **E-Commerce**, Google Coursera D-M & E-C, Adobe Commerce docs, Shopify Academy
 - **Best YouTube channels** for each track (search-based, never direct URLs)
-- **Tools setup** (Anki, Pomofocus, Notion) — applies to every track
+- **Tools setup** (Anki, Pomofocus, Notion), applies to every track
 
 ---
 
@@ -68,7 +68,7 @@ Plus: practice strategy, scoring benchmarks, and a final-week plan that works fo
 
 ### 🤝 [Communities](./Communities/)
 
-Don't study alone — these communities accelerate learning:
+Don't study alone, these communities accelerate learning:
 
 - **Reddit:** r/PMP, r/scrum, r/AWSCertifications, r/AZURE, r/cybersecurity, r/supplychain, r/CompTIA, r/marketing, r/Bitcoin, r/ecommerce
 - **LinkedIn Groups:** by cert family
@@ -76,7 +76,7 @@ Don't study alone — these communities accelerate learning:
 - **Podcasts** for commute learning (Scrum Master Toolbox, AWS Morning Brief, Microsoft Cloud Show, Security Now, Marketing Over Coffee, What Bitcoin Did, eCommerce MasterPlan)
 - **Local chapters:** PMI (PM), AWS User Groups, Azure User Groups, ISACA, ISC2, ASCM, ISM, AMA (marketing)
 
-Plus: how to find a study buddy, where to ask questions, and which "too good to be true" resources are scams (avoid brain dumps — they get you banned for life).
+Plus: how to find a study buddy, where to ask questions, and which "too good to be true" resources are scams (avoid brain dumps, they get you banned for life).
 
 ---
 
@@ -111,9 +111,9 @@ The 32 courses on this site, grouped by category. Click any course to open its R
 
 ## 🚀 Next Steps
 
-If you haven't picked a track yet, start with the **Quick Start Guide** — it asks the right questions to narrow down the 32 options to the one you should chase first.
+If you haven't picked a track yet, start with the **Quick Start Guide**, it asks the right questions to narrow down the 32 options to the one you should chase first.
 
-- 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/) — pick your path in under 10 minutes
-- 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/) — day-by-day schedule, adaptable to any cert
-- 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/) — read the morning of your exam
-- 🏠 [**Course Home**](../) — all 32 tracks at a glance
+- 🚀 [**Quick Start Guide**](../00-Study-Plan/Quick-Start-Guide/), pick your path in under 10 minutes
+- 📅 [**12-Week Study Plan**](../00-Study-Plan/12-Week-Study-Plan/), day-by-day schedule, adaptable to any cert
+- 🎯 [**Exam Day Tips**](../00-Study-Plan/Exam-Day-Tips/), read the morning of your exam
+- 🏠 [**Course Home**](../), all 32 tracks at a glance

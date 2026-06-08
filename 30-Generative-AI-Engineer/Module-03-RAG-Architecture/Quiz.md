@@ -200,7 +200,7 @@ D. Increase temperature
 
 ### Q25. "I don't know" responses in production RAG are: *(Evaluate)*
 A. A bug to eliminate
-B. A *feature* — explicit refusal license in the system prompt reduces hallucination on low-context queries
+B. A *feature*, explicit refusal license in the system prompt reduces hallucination on low-context queries
 C. A sign of model failure
 D. Optional
 
@@ -259,7 +259,7 @@ CRAG (Yan et al. 2024). Detect low-quality retrieval, fall back to web search.
 Saves money on the easy ~70% of queries.
 
 ### Q15: **B. Aggregative questions via LLM-built knowledge graph + subgraph walks**
-Microsoft Graph RAG. Pure vector retrieval cannot answer "tell me all our customers' top complaints" — Graph RAG can.
+Microsoft Graph RAG. Pure vector retrieval cannot answer "tell me all our customers' top complaints", Graph RAG can.
 
 ### Q16: **B. Lost-in-the-middle + dilution**
 More chunks ≠ better. Past ~10 chunks, you usually hurt yourself.
@@ -288,7 +288,7 @@ Three sub-questions; retrieve for each; combine. Single-shot retrieval can't sim
 ### Q24: **B. Pre-retrieval rewriter + clarifying question fallback**
 Cheap, model-agnostic, big quality win. Save the larger LLM for the *generation* step.
 
-### Q25: **B. A feature — explicit refusal license**
+### Q25: **B. A feature, explicit refusal license**
 Klarna escalates to humans below threshold. "I don't know" is the bug-prevention path.
 
 ### Q26: **B. RAGAS faithfulness + reranker score + logprob → threshold → human handoff**
@@ -318,4 +318,4 @@ The composite signal is more reliable than any single metric. Module 7 details R
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — LangChain & LlamaIndex](../Module-04-LangChain-LlamaIndex/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, LangChain & LlamaIndex](../Module-04-LangChain-LlamaIndex/Reading.md)

@@ -1,11 +1,11 @@
 # Module 5: Deep Learning on AWS 🧬
 
-> **Why this module matters:** Deep learning is the dominant technology of 2026 — every transformer, every diffusion model, every voice clone, every self-driving system runs on GPU or AI silicon. SageMaker is AWS's deep-learning gym; Trainium and Inferentia are its purpose-built chips; SMDDP and SMMP are its distributed-training libraries. The MLS-C01 exam tests *all* of this: when to bring your own PyTorch/TF container, what instance family to pick, how distributed training works, when to use mixed precision, when EFA matters, and how to make a multi-GPU job not bottleneck on data loading. This module makes you fluent.
+> **Why this module matters:** Deep learning is the dominant technology of 2026, every transformer, every diffusion model, every voice clone, every self-driving system runs on GPU or AI silicon. SageMaker is AWS's deep-learning gym; Trainium and Inferentia are its purpose-built chips; SMDDP and SMMP are its distributed-training libraries. The MLS-C01 exam tests *all* of this: when to bring your own PyTorch/TF container, what instance family to pick, how distributed training works, when to use mixed precision, when EFA matters, and how to make a multi-GPU job not bottleneck on data loading. This module makes you fluent.
 
 > **Prerequisites for this module.** Modules 1–4 of this course. Helpful background:
 > - Familiarity with PyTorch or TensorFlow at the level of writing a `Dataset`, a `nn.Module`, and a training loop
 > - Understanding of forward / backward pass, gradient descent variants (Module 1 reviewed this)
-> - Familiarity with CNNs (convolutions, pooling, batch norm), RNNs (LSTM, GRU), or Transformers (self-attention) — Goodfellow's *Deep Learning* book chapters 6–10 are the canonical reference
+> - Familiarity with CNNs (convolutions, pooling, batch norm), RNNs (LSTM, GRU), or Transformers (self-attention), Goodfellow's *Deep Learning* book chapters 6–10 are the canonical reference
 
 ---
 
@@ -19,7 +19,7 @@ This module is also where you graduate from "I picked a built-in algorithm and c
 
 ---
 
-## 🏗️ Deep Learning Architectures — The Five Families
+## 🏗️ Deep Learning Architectures, The Five Families
 
 You need to recognise the five major DL families and know what each is best at:
 
@@ -36,7 +36,7 @@ You need to recognise the five major DL families and know what each is best at:
 
 ---
 
-## 🐍 SageMaker Framework Containers — TensorFlow, PyTorch, MXNet, Hugging Face
+## 🐍 SageMaker Framework Containers, TensorFlow, PyTorch, MXNet, Hugging Face
 
 For deep learning, you almost always use a **pre-built framework container** in script mode.
 
@@ -68,11 +68,11 @@ estimator = PyTorch(
 estimator.fit({"train": "s3://my-bucket/train/", "val": "s3://my-bucket/val/"})
 ```
 
-🎯 **Exam pattern.** Recognise the structure — `entry_point` script, `instance_count > 1` for distributed, `distribution` parameter for SMDDP / SMMP.
+🎯 **Exam pattern.** Recognise the structure, `entry_point` script, `instance_count > 1` for distributed, `distribution` parameter for SMDDP / SMMP.
 
 ---
 
-## 💻 GPU & AI Silicon On AWS — The Instance Families
+## 💻 GPU & AI Silicon On AWS, The Instance Families
 
 | Family | Chip | Use case | When to pick |
 |--------|------|----------|--------------|
@@ -88,13 +88,13 @@ estimator.fit({"train": "s3://my-bucket/train/", "val": "s3://my-bucket/val/"})
 | **Trn2** | AWS Trainium2 | Training (frontier) | Latest gen; LLM training |
 | **DL1** | Habana Gaudi | Training (specialised) | Niche; legacy |
 
-🎯 **Exam pattern — cost-optimal inference for LLM:** **Inferentia2 (inf2)**.
+🎯 **Exam pattern, cost-optimal inference for LLM:** **Inferentia2 (inf2)**.
 
-🎯 **Exam pattern — cost-optimal training:** **Trainium (trn1 / trn2)** with **SMDDP**.
+🎯 **Exam pattern, cost-optimal training:** **Trainium (trn1 / trn2)** with **SMDDP**.
 
-🎯 **Exam pattern — train a 100B-parameter LLM:** **p5.48xlarge or trn1.32xlarge clusters** + **EFA networking** + **FSx for Lustre** + **SMMP (model parallel)**.
+🎯 **Exam pattern, train a 100B-parameter LLM:** **p5.48xlarge or trn1.32xlarge clusters** + **EFA networking** + **FSx for Lustre** + **SMMP (model parallel)**.
 
-### EFA — Elastic Fabric Adapter
+### EFA, Elastic Fabric Adapter
 
 EFA is AWS's high-throughput, low-latency network interface for multi-node ML. Without EFA, multi-node training scales poorly because all-reduce gradients saturate normal Ethernet. With EFA (used by p4d, p5, trn1), you get GPU-direct RDMA-like networking.
 
@@ -122,11 +122,11 @@ estimator = PyTorch(
 
 SageMaker provides **two** distributed-training libraries for deep learning:
 
-### SMDDP — SageMaker Distributed Data Parallel
+### SMDDP, SageMaker Distributed Data Parallel
 
 | Property | Detail |
 |----------|--------|
-| **Type** | Data parallelism — same model replicated on every GPU; different data shards |
+| **Type** | Data parallelism, same model replicated on every GPU; different data shards |
 | **All-reduce** | Custom AWS-optimised collective (faster than NCCL on EFA networks) |
 | **When** | Model fits in one GPU's memory; scale-out via more nodes |
 | **Frameworks** | PyTorch, TensorFlow |
@@ -134,11 +134,11 @@ SageMaker provides **two** distributed-training libraries for deep learning:
 
 🎯 **Exam pattern.** *"Speed up training a 1B-parameter model that fits on one GPU."* → **SMDDP** with `instance_count > 1`.
 
-### SMMP — SageMaker Distributed Model Parallel
+### SMMP, SageMaker Distributed Model Parallel
 
 | Property | Detail |
 |----------|--------|
-| **Type** | Model parallelism — model split across GPUs (tensor, pipeline, sharded-data) |
+| **Type** | Model parallelism, model split across GPUs (tensor, pipeline, sharded-data) |
 | **When** | Model does NOT fit in one GPU's memory (large LLMs, vision transformers) |
 | **Strategies** | Tensor parallel, pipeline parallel, sharded-data parallel (SDP, like ZeRO/FSDP) |
 | **Frameworks** | PyTorch (primary), TensorFlow |
@@ -176,7 +176,7 @@ Modern GPUs (V100+, A100, H100) and Trainium support reduced-precision arithmeti
 
 ---
 
-## 🚀 Inferentia — Cost-Optimal Inference
+## 🚀 Inferentia, Cost-Optimal Inference
 
 | Generation | Chip | When |
 |------------|------|------|
@@ -236,7 +236,7 @@ SageMaker's built-in HPO does **Bayesian optimisation** (default) or **random / 
 
 ---
 
-## 🏷️ Data Labelling — SageMaker Ground Truth
+## 🏷️ Data Labelling, SageMaker Ground Truth
 
 For DL projects without labels (the common case for vision and NLP), SageMaker Ground Truth provides:
 
@@ -249,7 +249,7 @@ For DL projects without labels (the common case for vision and NLP), SageMaker G
 
 ---
 
-## 🔬 Domain Examples — When DL Wins
+## 🔬 Domain Examples, When DL Wins
 
 | Domain | DL win | Architecture |
 |--------|--------|--------------|
@@ -266,9 +266,9 @@ For DL projects without labels (the common case for vision and NLP), SageMaker G
 
 ---
 
-## 📖 Case Study — Stable Diffusion Training on AWS
+## 📖 Case Study, Stable Diffusion Training on AWS
 
-**Situation.** Stability AI trained Stable Diffusion 1.0 — a 890M-parameter diffusion model for image generation — on AWS in 2022.
+**Situation.** Stability AI trained Stable Diffusion 1.0 a 890M-parameter diffusion model for image generation on AWS in 2022.
 
 **Architecture (publicly reported in talks and blog posts).**
 - **Hardware:** **256 NVIDIA A100 GPUs** on `p4d.24xlarge` instances (32 nodes × 8 GPUs)
@@ -303,7 +303,7 @@ You will see this pattern paraphrased in multiple exam scenarios.
 
 ---
 
-## 🤖 SageMaker JumpStart — Pre-Built Models For Quick Wins
+## 🤖 SageMaker JumpStart, Pre-Built Models For Quick Wins
 
 JumpStart hosts **300+ pre-trained models** (foundation and task-specific) plus **end-to-end solutions** for common use cases. We cover this in Module 7 alongside Bedrock; mentioning here because it can be the right "DL on AWS" answer.
 
@@ -350,7 +350,7 @@ JumpStart hosts **300+ pre-trained models** (foundation and task-specific) plus 
 | **Transformer** | Attention-based sequence model (Vaswani 2017) |
 | **ViT** | Vision Transformer |
 | **U-Net** | CNN architecture for semantic segmentation (medical, satellite) |
-| **EFA** | Elastic Fabric Adapter — AWS HPC-grade network |
+| **EFA** | Elastic Fabric Adapter, AWS HPC-grade network |
 | **SMDDP** | SageMaker Distributed Data Parallel |
 | **SMMP** | SageMaker Distributed Model Parallel |
 | **Tensor parallel** | Split a single layer across GPUs |
@@ -370,7 +370,7 @@ JumpStart hosts **300+ pre-trained models** (foundation and task-specific) plus 
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **"GPUs or Trainium?"** Trainium is cheaper per FLOP but the ecosystem (PyTorch ops, debugging tooling) is younger. At what team size and model criticality does Trainium make sense?
 2. **The mixed-precision tax.** FP16 saves memory and speeds up Tensor Core ops but introduces NaN risks via underflow. BF16 has FP32's range but less precision. When pick which?
@@ -396,7 +396,7 @@ You now know:
 
 - 🏗️ The **5 DL families** (MLP, CNN, RNN, Transformer, GNN, Diffusion/GAN) and where each wins
 - 🐍 **SageMaker framework containers** (PyTorch, TF, MXNet, HF) in script mode
-- 💻 **AWS DL silicon** — P/G families (NVIDIA), Inferentia2, Trainium2, when each is cost-optimal
+- 💻 **AWS DL silicon**, P/G families (NVIDIA), Inferentia2, Trainium2, when each is cost-optimal
 - 📦 **SMDDP** (data parallel) vs **SMMP** (model parallel) and when to mix them
 - 🌐 **EFA** networking and **FSx for Lustre** for multi-node throughput
 - 🧮 **Mixed precision** (FP16, BF16) and its trade-offs
@@ -417,24 +417,24 @@ You now know:
 ## 📚 Further Sources
 
 **AWS official**
-- 📖 **SageMaker Distributed Training docs** — `docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html`
-- 📖 **AWS Neuron SDK docs** — `awsdocs-neuron.readthedocs-hosted.com`
-- 📖 **AWS ML Blog: Trainium / Inferentia case studies** — `aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/aws-trainium/`
+- 📖 **SageMaker Distributed Training docs**, `docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html`
+- 📖 **AWS Neuron SDK docs**, `awsdocs-neuron.readthedocs-hosted.com`
+- 📖 **AWS ML Blog: Trainium / Inferentia case studies**, `aws.amazon.com/blogs/machine-learning/category/artificial-intelligence/aws-trainium/`
 
 **Textbooks**
-- 📖 **Goodfellow, Bengio, Courville (2016).** *Deep Learning.* MIT Press — chapters 6-10 are the canonical reference
-- 📖 **Zhang et al. (2023).** *Dive into Deep Learning.* — free, code-rich, modern
-- 📖 **Bishop & Bishop (2024).** *Deep Learning: Foundations and Concepts.* Springer — modern academic text
+- 📖 **Goodfellow, Bengio, Courville (2016).** *Deep Learning.* MIT Press, chapters 6-10 are the canonical reference
+- 📖 **Zhang et al. (2023).** *Dive into Deep Learning.*, free, code-rich, modern
+- 📖 **Bishop & Bishop (2024).** *Deep Learning: Foundations and Concepts.* Springer, modern academic text
 
 **Academic foundations**
-- 📄 **Krizhevsky, Sutskever, Hinton (2012).** *ImageNet Classification with Deep CNNs.* NIPS — AlexNet (CNN watershed)
-- 📄 **Vaswani et al. (2017).** *Attention Is All You Need.* NeurIPS — Transformer
-- 📄 **Ho, Jain, Abbeel (2020).** *Denoising Diffusion Probabilistic Models.* NeurIPS — diffusion
-- 📄 **Brown et al. (2020).** *Language Models are Few-Shot Learners.* — GPT-3
+- 📄 **Krizhevsky, Sutskever, Hinton (2012).** *ImageNet Classification with Deep CNNs.* NIPS, AlexNet (CNN watershed)
+- 📄 **Vaswani et al. (2017).** *Attention Is All You Need.* NeurIPS, Transformer
+- 📄 **Ho, Jain, Abbeel (2020).** *Denoising Diffusion Probabilistic Models.* NeurIPS, diffusion
+- 📄 **Brown et al. (2020).** *Language Models are Few-Shot Learners.*, GPT-3
 
 ---
 
-## 🛠️ Appendix A — Worked Example: Distributed PyTorch Training With SMDDP + Spot
+## 🛠️ Appendix A, Worked Example: Distributed PyTorch Training With SMDDP + Spot
 
 A worked example showing the full SDK pattern you would use in production.
 
@@ -504,7 +504,7 @@ val_input = TrainingInput(
 estimator.fit({"train": train_input, "val": val_input})
 ```
 
-### Inside `train.py` — the key bits
+### Inside `train.py`, the key bits
 
 ```python
 import torch
@@ -562,7 +562,7 @@ for epoch in range(EPOCHS):
 
 ---
 
-## 🛠️ Appendix B — Worked Example: Inferentia2 Inference Container
+## 🛠️ Appendix B, Worked Example: Inferentia2 Inference Container
 
 ```python
 # In your training/serving container
@@ -605,7 +605,7 @@ predictor = model.deploy(
 
 ---
 
-## 🛠️ Appendix C — Common DL Hyperparameter Search Spaces
+## 🛠️ Appendix C, Common DL Hyperparameter Search Spaces
 
 | Hyperparameter | Range for HPO |
 |----------------|---------------|
@@ -623,11 +623,11 @@ predictor = model.deploy(
 - **Bayesian** when budget is moderate (~30-50 trials) and you want learning-from-trials
 - **Hyperband** when individual trials are expensive (many epochs) and you want aggressive pruning
 - **Random** when budget is tiny (<10 trials) and embarrassingly parallel is OK
-- **Grid** rare — small discrete spaces only
+- **Grid** rare, small discrete spaces only
 
 ---
 
-## 🛠️ Appendix D — The 6 Most Common DL Training Issues And Their Fixes
+## 🛠️ Appendix D, The 6 Most Common DL Training Issues And Their Fixes
 
 | Issue | Symptom | Fix |
 |-------|---------|-----|

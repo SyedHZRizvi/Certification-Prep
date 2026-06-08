@@ -132,13 +132,13 @@ Custom models: **Language · Brands · Person · Logo**
 2. Two resources for Custom Vision? ___
 3. Object detection metric? ___
 4. Retired Face attributes (name 3)? ___
-5. Document Intelligence vs Image Analysis Read — which for structured forms? ___
+5. Document Intelligence vs Image Analysis Read, which for structured forms? ___
 
 If you can answer all 5 in 60 seconds, you own Module 3. ✅
 
 ---
 
-## 🧮 Metric Cheat — Classification vs Detection
+## 🧮 Metric Cheat, Classification vs Detection
 
 | Metric | Classification | Object Detection |
 |---|---|---|
@@ -159,7 +159,7 @@ If you can answer all 5 in 60 seconds, you own Module 3. ✅
 
 (PowerPoint and PDF are *not* export targets.)
 
-## 🛡️ Regulatory Snapshot — Vision
+## 🛡️ Regulatory Snapshot, Vision
 
 | Regulation | What it does for Vision |
 |---|---|

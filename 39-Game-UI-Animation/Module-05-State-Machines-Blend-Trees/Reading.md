@@ -1,16 +1,16 @@
 ---
-title: "Module 5: State Machines & Blend Trees — Designing Responsive Animation Systems"
+title: "Module 5: State Machines & Blend Trees, Designing Responsive Animation Systems"
 ---
 
 # 🔄 Module 5: State Machines & Blend Trees
 
 ## The Playtest That Changed the Design
 
-Bungie ran a playtest of Destiny 2 in early 2017 where the specific metric under the microscope was input-to-animation-response time on the Hunter's dodge ability. The build had a Hunter dodge that blended out of any locomotion state in 0.25 seconds. Playtesters — a mix of seasoned FPS players and internal QA — described the dodge as "sticky," "laggy," and "unresponsive." No one could articulate exactly why; they just felt it.
+Bungie ran a playtest of Destiny 2 in early 2017 where the specific metric under the microscope was input-to-animation-response time on the Hunter's dodge ability. The build had a Hunter dodge that blended out of any locomotion state in 0.25 seconds. Playtesters a mix of seasoned FPS players and internal QA described the dodge as "sticky," "laggy," and "unresponsive." No one could articulate exactly why; they just felt it.
 
 A Bungie animation engineer reduced the dodge's transition exit condition check frequency from 100ms polling to every-frame polling, and cut the blend time from 0.25 seconds to 0.07 seconds. The next playtest: "The dodge feels great." The underlying animations hadn't changed by a single frame.
 
-The entire improvement was in the state machine design — specifically, the transition interrupt conditions and blend time. This is the invisible craft of real-time animation.
+The entire improvement was in the state machine design, specifically, the transition interrupt conditions and blend time. This is the invisible craft of real-time animation.
 
 ---
 
@@ -22,7 +22,7 @@ A state machine's responsiveness is not just about frame rate. It is about three
 2. **Blend duration**: how long the crossfade between the old state and the new state takes
 3. **Interrupt conditions**: whether a player input can cancel an in-progress blend to start a new one
 
-The perception of "laggy animation" almost always traces to one of these three — usually either too-long blend duration or conditions that aren't checked every frame.
+The perception of "laggy animation" almost always traces to one of these three, usually either too-long blend duration or conditions that aren't checked every frame.
 
 ---
 
@@ -94,7 +94,7 @@ Use for: upper body weapon aim, attack animations that completely replace the up
 
 Use for: breathing (add subtle in/out on top of all states), leaning (add a lean pose based on horizontal velocity), head bob (add vertical position offset based on step cycle).
 
-**Critical requirement:** Additive layer clips must be authored as **additive** — they represent the *delta* from the bind pose, not the full pose. In Unity, configure this in the Animation import settings (clip must have its Reference Pose set).
+**Critical requirement:** Additive layer clips must be authored as **additive**, they represent the *delta* from the bind pose, not the full pose. In Unity, configure this in the Animation import settings (clip must have its Reference Pose set).
 
 | | Override | Additive |
 |-|----------|---------|
@@ -120,11 +120,11 @@ Set on each transition:
 
 **Design Rule for Responsive Action Games:** Dodge/roll and attack transitions should use **Current State** interruption so a queued input fires as soon as it is valid, rather than waiting for the previous blend to complete.
 
-**Design Rule for Heavy/Strategic Games:** Override/combo transitions should use **None** or **Next State** so that animations have weight and commitment — the player cannot spam the cancel button.
+**Design Rule for Heavy/Strategic Games:** Override/combo transitions should use **None** or **Next State** so that animations have weight and commitment, the player cannot spam the cancel button.
 
 ### The Blend Queue
 
-In highly responsive action games (fighting games, spectacle fighters), inputs that arrive during an animation are **queued** — stored for a short window (typically 0.1–0.25 seconds) and applied when the animation reaches an "interrupt-ok" frame. This is separate from state machine interrupt conditions and is usually implemented in game code, not the animation system.
+In highly responsive action games (fighting games, spectacle fighters), inputs that arrive during an animation are **queued**, stored for a short window (typically 0.1–0.25 seconds) and applied when the animation reaches an "interrupt-ok" frame. This is separate from state machine interrupt conditions and is usually implemented in game code, not the animation system.
 
 ---
 
@@ -146,7 +146,7 @@ States:
   
   Landing:
     Soft Landing (low fall distance)
-    Hard Landing (high fall distance — more recovery frames)
+    Hard Landing (high fall distance, more recovery frames)
     Roll Landing (player holds roll during landing)
 
 Transitions:
@@ -160,22 +160,22 @@ Transitions:
   Landing → Idle/Walk: Exit time
 ```
 
-> 🎯 **Exam Tip:** "Coyote Time" — the grace period after walking off a ledge where the player can still jump — is not just a movement trick. The animation system must account for it: the character should play the edge-peek animation (leaning forward, feet off-ground) for the coyote window before transitioning to the fall state. Without this, the animation snaps from walking to falling too quickly and the coyote jump feels wrong.
+> 🎯 **Exam Tip:** "Coyote Time" the grace period after walking off a ledge where the player can still jump is not just a movement trick. The animation system must account for it: the character should play the edge-peek animation (leaning forward, feet off-ground) for the coyote window before transitioning to the fall state. Without this, the animation snaps from walking to falling too quickly and the coyote jump feels wrong.
 
 ---
 
-## 🎮 Case Study: The Last of Us Part II — Contextual Animation Layer Design
+## 🎮 Case Study: The Last of Us Part II, Contextual Animation Layer Design
 
-Naughty Dog's TLOU II uses what the studio calls a "contextual layer system" — animation layers that activate based on environmental context rather than player input. The system has four primary layers:
+Naughty Dog's TLOU II uses what the studio calls a "contextual layer system", animation layers that activate based on environmental context rather than player input. The system has four primary layers:
 
 1. **Base layer**: standard locomotion (walk, run, crouch)
 2. **Aim layer**: weapon aiming overlay, active whenever a weapon is drawn
 3. **Context layer**: environment-aware procedural poses (reaching for a wall when near a wall, ducking under an obstacle, adapting hand position to doorframes)
 4. **Emotion layer**: additive facial and body expression layer driven by the story state machine
 
-The context layer is where Naughty Dog's animation system diverges most from standard state machine design. Rather than the programmer specifying which animation plays in which context, the context layer uses **environment traces** — physics raycasts from the character's hands, head, and body — to detect nearby geometry and blend to the appropriate contextual pose.
+The context layer is where Naughty Dog's animation system diverges most from standard state machine design. Rather than the programmer specifying which animation plays in which context, the context layer uses **environment traces** physics raycasts from the character's hands, head, and body to detect nearby geometry and blend to the appropriate contextual pose.
 
-When Ellie approaches a wall, the context layer detects the wall via traces and begins blending (at 8 units/second) toward the "near-wall" pose, which adjusts hand placement and shoulder rotation. This blend happens continuously based on wall proximity — not on a discrete state transition. The result is that Ellie always looks physically aware of her environment without the animator having to author "near this specific wall" states.
+When Ellie approaches a wall, the context layer detects the wall via traces and begins blending (at 8 units/second) toward the "near-wall" pose, which adjusts hand placement and shoulder rotation. This blend happens continuously based on wall proximity, not on a discrete state transition. The result is that Ellie always looks physically aware of her environment without the animator having to author "near this specific wall" states.
 
 **The design lesson**: not all responsiveness requires discrete state machine states. Continuous parameter-driven blending can handle environmental context more elegantly than discrete states, at the cost of requiring more complex trace/detection code.
 
@@ -191,7 +191,7 @@ When Ellie approaches a wall, the context layer detects the wall via traces and 
 | RPG / open world (Skyrim) | 0.15–0.25s | Next State for most | Deliberate, less twitchy |
 | Survival horror (TLOU) | 0.10–0.20s | None for many actions | Weight communicates danger |
 | Fighting game (Street Fighter) | Per-frame input buffer | Input buffered, committed | Frame-perfect |
-| Strategy / casual (Stardew Valley) | 0.1–0.3s | N/A — simple states | Not a feel-critical constraint |
+| Strategy / casual (Stardew Valley) | 0.1–0.3s | N/A, simple states | Not a feel-critical constraint |
 
 ---
 
@@ -207,18 +207,18 @@ When Ellie approaches a wall, the context layer detects the wall via traces and 
 
 ---
 
-## 🎮 Case Study: Hades — Enemy Interrupt Animation Budget
+## 🎮 Case Study: Hades, Enemy Interrupt Animation Budget
 
-Every enemy in Hades has a **designed interrupt budget** — the number of frames between when the enemy "commits" to an attack animation and when that attack can hit the player. This budget is a game feel parameter, not just an animation parameter.
+Every enemy in Hades has a **designed interrupt budget**, the number of frames between when the enemy "commits" to an attack animation and when that attack can hit the player. This budget is a game feel parameter, not just an animation parameter.
 
-Supergiant's animation lead documented the design process in their GDC 2020 talk: the team playtested each enemy type with varying interrupt budgets and measured player-reported "fairness." Too short: players felt cheated — the attack was unreadable. Too long: players felt bored — the game was too easy.
+Supergiant's animation lead documented the design process in their GDC 2020 talk: the team playtested each enemy type with varying interrupt budgets and measured player-reported "fairness." Too short: players felt cheated the attack was unreadable. Too long: players felt bored the game was too easy.
 
 The final budgets for selected Hades enemies:
 | Enemy | Attack | Interrupt Budget (frames) | Notes |
 |---|---|---|---|
 | Wretched Butcher | Shield bash | 12 frames | Telegraphed by large body wind-up |
 | Inferno Bomb | Explosion | 18 frames | Proximity detection; large AoE |
-| Blood-Drunk Thug | Overhead smash | 6 frames | Fast — a "skilled" enemy |
+| Blood-Drunk Thug | Overhead smash | 6 frames | Fast, a "skilled" enemy |
 | Skull-Crusher | Charge | 10 frames | Visual telegraph: eyes glow |
 | Butterfly (Megaera whip) | Multi-hit | 4 frames per hit | Boss: expects player to pattern-read |
 
@@ -226,9 +226,9 @@ The studio rule: **minimum 4-frame interrupt budget** for any attack. Below 4 fr
 
 ---
 
-## 🎮 Case Study: Destiny 2 — Weapon ADS (Aim Down Sights) State Machine
+## 🎮 Case Study: Destiny 2, Weapon ADS (Aim Down Sights) State Machine
 
-Bungie's Destiny 2 uses one of the most documented FPS weapon state machines in the industry. The weapon animation state machine runs as an **override layer** on top of the character locomotion state machine, using what Bungie's animation team calls a "weapon slot" — equivalent to Unreal's Montage Slot.
+Bungie's Destiny 2 uses one of the most documented FPS weapon state machines in the industry. The weapon animation state machine runs as an **override layer** on top of the character locomotion state machine, using what Bungie's animation team calls a "weapon slot", equivalent to Unreal's Montage Slot.
 
 The ADS (Aim Down Sights) sub-state machine for hand cannons:
 ```
@@ -247,15 +247,15 @@ ADS Lower (0.15s)
 
 The key insight: every state in the weapon sub-machine has **different blend durations optimized for feel**. ADS Raise (0.2s) is deliberately long enough to show a smooth raise animation; ADS Fire (0.1s) is short enough that rapid fire feels crisp; ADS Lower (0.15s) is faster than Raise because lowering feels more urgent.
 
-Bungie calls this "asymmetric blend times" — the same transition in opposite directions (raise/lower) intentionally has different durations because the player's perceptual experience of each direction is different.
+Bungie calls this "asymmetric blend times", the same transition in opposite directions (raise/lower) intentionally has different durations because the player's perceptual experience of each direction is different.
 
 ---
 
-## 🎮 Case Study: Fortnite — Build-Mode State Machine Interruption
+## 🎮 Case Study: Fortnite, Build-Mode State Machine Interruption
 
-Epic Games faced a unique state machine challenge in Fortnite: when a player switches between "combat mode" (standard locomotion) and "build mode" (placing structures), the character's animation system must handle interruptions mid-state. A player can be in the middle of a crouch animation (from combat mode) and trigger build mode — the state machine must handle this gracefully.
+Epic Games faced a unique state machine challenge in Fortnite: when a player switches between "combat mode" (standard locomotion) and "build mode" (placing structures), the character's animation system must handle interruptions mid-state. A player can be in the middle of a crouch animation (from combat mode) and trigger build mode, the state machine must handle this gracefully.
 
-Epic's solution: a **global mode parameter** (CombatMode / BuildMode) that the locomotion state machine reads, rather than separate state machines per mode. The state machine shares all locomotion states (walk, run, crouch, jump) between modes, with the mode parameter gating which sub-state machine is active for arm/weapon animations. This means combat-to-build transitions happen with the same blend system as any other state transition — there is no special case code.
+Epic's solution: a **global mode parameter** (CombatMode / BuildMode) that the locomotion state machine reads, rather than separate state machines per mode. The state machine shares all locomotion states (walk, run, crouch, jump) between modes, with the mode parameter gating which sub-state machine is active for arm/weapon animations. This means combat-to-build transitions happen with the same blend system as any other state transition, there is no special case code.
 
 The lesson: **shared state machine architecture reduces edge cases**. If combat and build mode have separate state machines, transitions between them require custom handling. If they share a state machine with a mode parameter, the standard transition logic handles it.
 
@@ -269,13 +269,13 @@ The lesson: **shared state machine architecture reduces edge cases**. If combat 
 | Blend Tree lerp speed | 6–12 u/s | Instant (no smoothing) | Mushy, sluggish |
 | Hit stop duration | 2–12 frames | Lacks impact feel | Interrupts game flow |
 | Coyote time window | 0.1–0.15s | Misses ledge jumps | Feels floaty |
-| AnyState transition priority | Top = highest | — | — |
+| AnyState transition priority | Top = highest | | |
 
 ---
 
 ## 🎯 Exam Callouts: What the Test Checks
 
-> 🎯 **What the exam tests 1:** Playtesting reports that a dodge roll "feels sticky." Without changing the animation, what are the three state machine parameters to check? (1) Transition blend duration — reduce it for a snappier feel; (2) Condition polling frequency — ensure it's checked every frame; (3) Interruption Source — set to "Current State" so the roll can interrupt any in-progress blend.
+> 🎯 **What the exam tests 1:** Playtesting reports that a dodge roll "feels sticky." Without changing the animation, what are the three state machine parameters to check? (1) Transition blend duration reduce it for a snappier feel; (2) Condition polling frequency ensure it's checked every frame; (3) Interruption Source, set to "Current State" so the roll can interrupt any in-progress blend.
 
 > 🎯 **What the exam tests 2:** An AnyState transition triggers a character death animation in a loop. What is the cause and fix? The Death state re-triggers the AnyState condition because the parameter hasn't reset. Fix: use a **Trigger** (auto-reset) instead of a Bool, so once the Death transition fires, the trigger clears and the loop cannot restart.
 
@@ -285,13 +285,13 @@ The lesson: **shared state machine architecture reduces edge cases**. If combat 
 
 > 🎯 **What the exam tests 5:** What is "coyote time" in a state machine implementation? A grace period (0.1–0.15s) after the character leaves the ground during which the airborne → jump transition remains available. The animation system must play an "edge-peek" or "late-jump" animation for this window rather than snapping to fall.
 
-> 🎯 **What the exam tests 6:** In Hades, what is the minimum interrupt budget for any enemy attack? 4 frames at 60fps (0.067 seconds). Below this, the attack animation is imperceptible and feels like hitscan — the player has no time to read the telegraph.
+> 🎯 **What the exam tests 6:** In Hades, what is the minimum interrupt budget for any enemy attack? 4 frames at 60fps (0.067 seconds). Below this, the attack animation is imperceptible and feels like hitscan, the player has no time to read the telegraph.
 
 > 🎯 **What the exam tests 7:** Destiny 2 uses "asymmetric blend times." What does this mean? The same transition in opposite directions (e.g., ADS Raise vs. ADS Lower) intentionally uses different blend durations because the player's perceptual experience of each direction is different. Raising is deliberate; lowering is urgent.
 
-> 🎯 **What the exam tests 8:** What is the Bungie playtest finding about the Hunter dodge blend time? Reducing the dodge transition blend from 0.25s to 0.07s and checking conditions every frame (instead of polling every 100ms) made the dodge feel "great" — identical underlying animation, entirely different feel through state machine tuning.
+> 🎯 **What the exam tests 8:** What is the Bungie playtest finding about the Hunter dodge blend time? Reducing the dodge transition blend from 0.25s to 0.07s and checking conditions every frame (instead of polling every 100ms) made the dodge feel "great", identical underlying animation, entirely different feel through state machine tuning.
 
-> 🎯 **What the exam tests 9:** What is a Pushdown Automaton state machine? A stack-based FSM where entering a new state "pushes" onto a stack and exiting "pops" back to the previous state — used for menus and conversation trees where ordered return is needed.
+> 🎯 **What the exam tests 9:** What is a Pushdown Automaton state machine? A stack-based FSM where entering a new state "pushes" onto a stack and exiting "pops" back to the previous state, used for menus and conversation trees where ordered return is needed.
 
 > 🎯 **What the exam tests 10:** When does an input buffer in fighting games activate? When a player inputs a command during an animation's locked frames. The input is stored for 0.1–0.25 seconds and fires as soon as the animation reaches an "interrupt-ok" frame. This is game code, not the state machine's interrupt logic.
 
@@ -303,10 +303,10 @@ The lesson: **shared state machine architecture reduces edge cases**. If combat 
 > Reality: Long blend times feel smooth but laggy. The sweet spot for a responsive action game is 0.05–0.12 seconds for high-priority transitions (dodge, attack) and 0.15–0.25 seconds for lower-priority ones (idle to walk).
 
 > **Misconception 2: "AnyState transitions are always dangerous."**
-> Reality: AnyState is essential for Death, Knockdown, and Stagger states. The danger is transition loops — prevent them with Trigger parameters (which reset) or guards in your condition logic.
+> Reality: AnyState is essential for Death, Knockdown, and Stagger states. The danger is transition loops, prevent them with Trigger parameters (which reset) or guards in your condition logic.
 
 > **Misconception 3: "Additive layers work like override layers but milder."**
-> Reality: Additive layers require clips authored as deltas (reference pose subtracted). Using a full-pose clip in an additive layer produces garbled, broken poses — not a mild blend.
+> Reality: Additive layers require clips authored as deltas (reference pose subtracted). Using a full-pose clip in an additive layer produces garbled, broken poses, not a mild blend.
 
 ---
 
@@ -316,7 +316,7 @@ Understanding how real studios design their locomotion systems provides concrete
 
 | Game | Genre | States (Grounded) | States (Air) | States (Combat) | Total Approx States |
 |---|---|---|---|---|---|
-| Hades | Top-down action | Idle, Walk, Run | — (isometric; no jump) | Attack (×5 weapons), Roll, Dash | ~25 |
+| Hades | Top-down action | Idle, Walk, Run |, (isometric; no jump) | Attack (×5 weapons), Roll, Dash | ~25 |
 | Hollow Knight | 2D platformer | Idle, Walk, Run | Jump, Double-Jump, Fall, Wall-Slide | Nail Attack (4 dirs), Dash, Spell | ~30 |
 | Dead Cells | 2D roguelike | Idle, Walk, Run | Jump, Fall | Roll, Attack (2 hits), Parry | ~20 |
 | Destiny 2 | FPS | Idle, Walk, Sprint, Crouch | Jump (3 variants), Glide, Dodge | ADS, Fire, Reload, Melee, Ability | ~60 (incl. weapon states) |
@@ -328,7 +328,7 @@ Understanding how real studios design their locomotion systems provides concrete
 
 ## 📊 Input Buffer Design: When the State Machine Hands Off to Game Code
 
-The state machine handles real-time animation — but the **input buffer** is a game code responsibility that operates in parallel. Understanding the handoff is essential for designing responsive combat systems.
+The state machine handles real-time animation, but the **input buffer** is a game code responsibility that operates in parallel. Understanding the handoff is essential for designing responsive combat systems.
 
 | System | Responsibility | Typical Implementation |
 |---|---|---|
@@ -337,7 +337,7 @@ The state machine handles real-time animation — but the **input buffer** is a 
 | Combo system | Chaining buffered inputs into combo sequences | Game code: reads state machine state + buffer |
 | Hit confirmation | Enabling hitbox at specific animation frames | Animation Event → game code |
 
-In fighting games, the input buffer window (0.1–0.25 seconds) is a **design variable** that directly affects how accessible and "tight" the combo system feels. Street Fighter VI's input buffer is more generous than Street Fighter III's — deliberately, to make combos more accessible to new players.
+In fighting games, the input buffer window (0.1–0.25 seconds) is a **design variable** that directly affects how accessible and "tight" the combo system feels. Street Fighter VI's input buffer is more generous than Street Fighter III's, deliberately, to make combos more accessible to new players.
 
 ---
 
@@ -357,8 +357,8 @@ Before shipping a locomotion or combat state machine in production, verify these
 |---|---|
 | All transitions checked every frame | Transition condition polling is not throttled |
 | High-priority transitions use AnyState | Death, Knockdown, Stagger source from AnyState |
-| AnyState transitions use Triggers | Not Bools — prevents re-trigger loops |
-| Additive clips authored as deltas | Not full poses — prevents broken additive blending |
+| AnyState transitions use Triggers | Not Bools, prevents re-trigger loops |
+| Additive clips authored as deltas | Not full poses, prevents broken additive blending |
 | Blend times tuned per action priority | Dodge/roll ≤ 0.08s; walk ≥ 0.15s |
 | 2D axes normalized | Both axes same scale to prevent interpolation bias |
 | Coyote time state exists | Edge-peek state prevents walk→fall snap |
@@ -370,20 +370,20 @@ Before shipping a locomotion or combat state machine in production, verify these
 
 ## 📚 Further Reading
 
-- 🔗 [Unity Manual — State Machine Transitions](https://docs.unity3d.com/Manual/class-Transition.html)
-- 🔗 [Unity Manual — Blend Trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
-- 📄 "Responsive Animation: The Physics of Player Expectations" — Game Developer Magazine (search GDC Vault)
-- 📄 Steve Swink, *Game Feel* Chapter 3 — "Making It Feel Real" (input buffering, response latency)
-- 📄 Jonathan Cooper, *Game Anim* (2021) — practitioner's guide to production game animation, covering state machines and blend trees in depth
-- 🔗 [Unity Manual — State Machine Behaviours](https://docs.unity3d.com/Manual/StateMachineBehaviours.html) — StateMachineBehaviour scripts that run on state enter/exit/update for code-side state machine events
-- 🔗 [Unreal Engine — State Machine Documentation](https://docs.unrealengine.com/5.3/en-US/state-machines-in-unreal-engine/) — Unreal's equivalent state machine guide with transition rule examples
+- 🔗 [Unity Manual, State Machine Transitions](https://docs.unity3d.com/Manual/class-Transition.html)
+- 🔗 [Unity Manual, Blend Trees](https://docs.unity3d.com/Manual/class-BlendTree.html)
+- 📄 "Responsive Animation: The Physics of Player Expectations", Game Developer Magazine (search GDC Vault)
+- 📄 Steve Swink, *Game Feel* Chapter 3, "Making It Feel Real" (input buffering, response latency)
+- 📄 Jonathan Cooper, *Game Anim* (2021), practitioner's guide to production game animation, covering state machines and blend trees in depth
+- 🔗 [Unity Manual State Machine Behaviours](https://docs.unity3d.com/Manual/StateMachineBehaviours.html) StateMachineBehaviour scripts that run on state enter/exit/update for code-side state machine events
+- 🔗 [Unreal Engine State Machine Documentation](https://docs.unrealengine.com/5.3/en-US/state-machines-in-unreal-engine/) Unreal's equivalent state machine guide with transition rule examples
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

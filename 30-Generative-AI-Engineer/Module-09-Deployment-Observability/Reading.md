@@ -1,6 +1,6 @@
 # Module 9: Deployment, Observability & Cost 🚀
 
-> **Why this module matters:** Code that works on your laptop and code that serves a million users have *almost nothing in common.* This module is the engineering of the gap — how to choose serving infrastructure, instrument every layer of the pipeline, monitor cost in real time, cache aggressively, and ship a model gateway that the rest of the engineering org actually trusts. The teams that win in production are the ones whose runbooks are crisp.
+> **Why this module matters:** Code that works on your laptop and code that serves a million users have *almost nothing in common.* This module is the engineering of the gap, how to choose serving infrastructure, instrument every layer of the pipeline, monitor cost in real time, cache aggressively, and ship a model gateway that the rest of the engineering org actually trusts. The teams that win in production are the ones whose runbooks are crisp.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Modules 1–8
@@ -11,13 +11,13 @@
 
 ## 🎬 A Story: How Cursor Beat GPT-4 Latency at GPT-4 Quality
 
-Late 2024. Cursor's autocomplete and inline-edit features needed to feel *instant* — anything over 400ms of perceived latency would lose to local-IDE autocomplete. But the team relied on Claude 3.5 Sonnet and GPT-4o for the heavy lifting, both of which had p95 first-token latencies of 1-2 seconds.
+Late 2024. Cursor's autocomplete and inline-edit features needed to feel *instant*, anything over 400ms of perceived latency would lose to local-IDE autocomplete. But the team relied on Claude 3.5 Sonnet and GPT-4o for the heavy lifting, both of which had p95 first-token latencies of 1-2 seconds.
 
-The team's solution was a stack of techniques that, individually, are well-known — but the *combination* was the moat:
+The team's solution was a stack of techniques that, individually, are well-known, but the *combination* was the moat:
 
 1. **Two-model strategy.** A small fast model (Claude Haiku, GPT-4o-mini) drafted the autocomplete; the big model verified only on uncertain cases. Latency followed the small model.
-2. **Speculative decoding** between the two models for the verification step — the big model checked the small model's draft in parallel.
-3. **Prompt caching.** A 100K-token codebase context was the *same* for every query in a session — cache once, reuse N times. ~74% cost reduction in their own reporting.
+2. **Speculative decoding** between the two models for the verification step, the big model checked the small model's draft in parallel.
+3. **Prompt caching.** A 100K-token codebase context was the *same* for every query in a session, cache once, reuse N times. ~74% cost reduction in their own reporting.
 4. **Semantic caching.** If a user's query was semantically similar to a recent one, return the cached answer directly.
 5. **Edge serving.** Inference servers in regions close to the user; routing by latency, not just availability.
 6. **vLLM with PagedAttention** for their self-hosted models.
@@ -44,8 +44,8 @@ The big upfront question.
 - Your workload tolerates third-party data flow
 
 **Trade-offs:**
-- Per-token pricing — predictable cost per call, but no economies of scale
-- API rate limits — your tier matters
+- Per-token pricing, predictable cost per call, but no economies of scale
+- API rate limits, your tier matters
 - Latency depends on the provider; can be inconsistent
 - Data goes to the provider (most have enterprise no-train terms)
 
@@ -59,7 +59,7 @@ The big upfront question.
 - You want to avoid lock-in
 
 **Trade-offs:**
-- GPU procurement, autoscaling, observability, redundancy — all on you
+- GPU procurement, autoscaling, observability, redundancy, all on you
 - Quality ceiling: open-weight models, while excellent, lag frontier closed models on hardest benchmarks
 - Operational expertise required (CUDA, kernel pinning, KV-cache management)
 
@@ -72,18 +72,18 @@ The big upfront question.
 
 ---
 
-## ⚡ Self-Hosted Serving — The Stack
+## ⚡ Self-Hosted Serving, The Stack
 
 ### vLLM
 
 The de facto standard for production self-hosting in 2026. Created by Berkeley researchers (Kwon et al., 2023). Key innovations:
 
-- **PagedAttention** — KV cache in non-contiguous pages, virtual-memory style; eliminates fragmentation; 2-4× throughput vs naive serving
-- **Continuous batching** — new requests can join an in-flight batch; no waiting for batch boundaries
+- **PagedAttention**, KV cache in non-contiguous pages, virtual-memory style; eliminates fragmentation; 2-4× throughput vs naive serving
+- **Continuous batching**, new requests can join an in-flight batch; no waiting for batch boundaries
 - **FlashAttention** kernels under the hood
 - **Speculative decoding** support
-- **OpenAI-compatible API** — drop-in replacement
-- **Multi-LoRA serving** — hot-swap adapters per request
+- **OpenAI-compatible API**, drop-in replacement
+- **Multi-LoRA serving**, hot-swap adapters per request
 
 ```bash
 vllm serve meta-llama/Llama-3.1-8B-Instruct \
@@ -100,11 +100,11 @@ HuggingFace's serving framework. Strong feature parity with vLLM; slightly diffe
 
 ### llama.cpp / Ollama / LMStudio
 
-For *consumer-grade* serving — your laptop, edge devices, offline applications.
+For *consumer-grade* serving, your laptop, edge devices, offline applications.
 
-- **llama.cpp** — GGUF quantized models; runs on CPU + GPU + Apple Silicon; the foundation of the local-LLM ecosystem
-- **Ollama** — opinionated CLI wrapper around llama.cpp; one-line model serving
-- **LMStudio** — GUI wrapper
+- **llama.cpp**, GGUF quantized models; runs on CPU + GPU + Apple Silicon; the foundation of the local-LLM ecosystem
+- **Ollama**, opinionated CLI wrapper around llama.cpp; one-line model serving
+- **LMStudio**, GUI wrapper
 
 ### TensorRT-LLM (NVIDIA)
 
@@ -137,7 +137,7 @@ Newer serving framework with strong support for structured generation and RAG pa
 | **Perplexity** | API access to Llama/Mistral + their own | Wide |
 | **DeepInfra / OpenRouter** | Aggregators of multiple models behind one API | Wide |
 
-🎯 **The aggregators (OpenRouter, LiteLLM-cloud)** are increasingly the right starting point — one API key, drop-in switching between providers, easier comparison.
+🎯 **The aggregators (OpenRouter, LiteLLM-cloud)** are increasingly the right starting point, one API key, drop-in switching between providers, easier comparison.
 
 ---
 
@@ -155,13 +155,13 @@ A *model gateway* is a layer between your application code and any LLM provider,
 
 Tools:
 
-- **LiteLLM** — open-source; supports 100+ providers; drop-in OpenAI API
-- **Portkey** — gateway + observability; hosted + OSS
-- **Helicone** — observability-first; lighter gateway features
-- **Custom FastAPI** — when you have specific routing needs
+- **LiteLLM**, open-source; supports 100+ providers; drop-in OpenAI API
+- **Portkey**, gateway + observability; hosted + OSS
+- **Helicone**, observability-first; lighter gateway features
+- **Custom FastAPI**, when you have specific routing needs
 
 ```python
-# LiteLLM example — provider-agnostic
+# LiteLLM example, provider-agnostic
 from litellm import completion
 
 response = completion(
@@ -176,7 +176,7 @@ response = completion(
 
 ---
 
-## 👁️ Observability — The Eyes of Production
+## 👁️ Observability, The Eyes of Production
 
 You cannot debug what you cannot trace. Production LLM apps require:
 
@@ -186,24 +186,24 @@ A *trace* records: the user request, the prompt template, the rendered prompt, r
 
 Tools:
 
-- **LangSmith** — LangChain's first-party. Best LangChain/LangGraph integration. Free hobbyist; paid for teams.
-- **Langfuse** — Open source; self-hostable; growing fast.
-- **Phoenix (Arize)** — Open source; tight RAG integration.
-- **Helicone** — Lightweight proxy-based observability; supports any provider.
-- **Honeycomb / Datadog / New Relic** — General-purpose APM with LLM extensions.
-- **W&B Weave** — Strong for experiments + production.
+- **LangSmith**, LangChain's first-party. Best LangChain/LangGraph integration. Free hobbyist; paid for teams.
+- **Langfuse**, Open source; self-hostable; growing fast.
+- **Phoenix (Arize)**, Open source; tight RAG integration.
+- **Helicone**, Lightweight proxy-based observability; supports any provider.
+- **Honeycomb / Datadog / New Relic**, General-purpose APM with LLM extensions.
+- **W&B Weave**, Strong for experiments + production.
 
 ### Metrics
 
 Production dashboards should track:
 
-- **Latency** — p50, p95, p99, time-to-first-token, time-to-last-token, total
-- **Throughput** — RPS, tokens/sec
-- **Cost** — $/request, $/user/day, by model, by tenant
-- **Quality** — % satisfaction (thumbs), regeneration rate, fallback rate
-- **Errors** — 5xx, timeout, guardrail blocks
-- **Cache hit rate** — both prompt-prefix and semantic
-- **Tail behaviors** — what happens to the slowest 1% of requests?
+- **Latency**, p50, p95, p99, time-to-first-token, time-to-last-token, total
+- **Throughput**, RPS, tokens/sec
+- **Cost**, $/request, $/user/day, by model, by tenant
+- **Quality**, % satisfaction (thumbs), regeneration rate, fallback rate
+- **Errors**, 5xx, timeout, guardrail blocks
+- **Cache hit rate**, both prompt-prefix and semantic
+- **Tail behaviors**, what happens to the slowest 1% of requests?
 
 ### Alerts
 
@@ -233,8 +233,8 @@ LLM applications die from cost more often than from quality. The discipline:
 | **Use smaller models for routable easy queries** | 5–20× cheaper |
 | **Prompt caching (Anthropic, OpenAI, Gemini)** | Up to 90% on long static prompts |
 | **Semantic caching (return cached answer if query is similar)** | 30–70% depending on workload |
-| **Reduce context** — shorter system prompts, fewer chunks, compression | 2–5× |
-| **Output structure / brevity** — JSON instead of prose, max_tokens caps | 1.5–3× |
+| **Reduce context**, shorter system prompts, fewer chunks, compression | 2–5× |
+| **Output structure / brevity**, JSON instead of prose, max_tokens caps | 1.5–3× |
 | **Batch inference** for offline workloads | 2–4× |
 | **Self-host at scale** | depends; break-even varies |
 | **Streaming + early-cancel** when user clicks away | 1.5-3× saved |
@@ -358,7 +358,7 @@ Deliverable: a real production-shaped service. You will have hit OOMs, observed 
 
 ---
 
-## 📊 Case Study — Klarna's Cost-Per-Conversation Optimization (2024)
+## 📊 Case Study, Klarna's Cost-Per-Conversation Optimization (2024)
 
 **Situation.** After the launch in February 2024 (covered in Module 3), Klarna's AI assistant was handling ~700 FTEs of customer-support traffic. The team then optimized aggressively for cost-per-conversation through Q2–Q3 2024.
 
@@ -377,10 +377,10 @@ Deliverable: a real production-shaped service. You will have hit OOMs, observed 
 - Langfuse for observability
 - Cost dashboards in Datadog with PagerDuty alerts
 
-**The lesson for you, the engineer.** Cost optimization is *its own engineering discipline*. The headline-grabbing "AI agent" replaces 700 FTEs is *less* impressive than the boring quarterly grind from $0.30 to $0.04 — and that grind is what made the project sustainable.
+**The lesson for you, the engineer.** Cost optimization is *its own engineering discipline*. The headline-grabbing "AI agent" replaces 700 FTEs is *less* impressive than the boring quarterly grind from $0.30 to $0.04, and that grind is what made the project sustainable.
 
 **Discussion (Socratic).**
-- **Q1:** Klarna's 5% / 60% / 35% routing — how would you build the classifier that decides? What's the cost of a wrong route?
+- **Q1:** Klarna's 5% / 60% / 35% routing, how would you build the classifier that decides? What's the cost of a wrong route?
 - **Q2:** Semantic cache hit rate is highly workload-dependent. What kinds of customer-support questions have *high* semantic-cache hit rate, and which kinds have *low*?
 - **Q3:** "Streaming + early-cancel" sounds modest (5% savings) but requires real engineering. Walk through the architecture for canceling an in-flight OpenAI call when the user leaves the page.
 
@@ -403,7 +403,7 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 10 — Production Case Studies](../Module-10-Production-Case-Studies/Reading.md)
+4. ➡️ Move on: [Module 10, Production Case Studies](../Module-10-Production-Case-Studies/Reading.md)
 
 > **Where this leads.**
 > - Module 10 walks through real production architectures that use everything in this module.

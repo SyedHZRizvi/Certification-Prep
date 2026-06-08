@@ -1,4 +1,4 @@
-# Module 6 Cheat Sheet — Crowd Simulation 👥
+# Module 6 Cheat Sheet, Crowd Simulation 👥
 
 ## 5 Dimensions of Crowd Variation
 
@@ -159,9 +159,9 @@ TYPICAL ITERATION COUNT: 5–15 passes per sequence in feature film
 | 5 dimensions of crowd variation | Geometric, Texture, Timing, Motion quality, Behavioral |
 | Minimum viable variation set | Geometric + Timing + Motion quality |
 | 1-in-10 rule | 1 in every 10 visible agents does something distinctly different |
-| What creates emergent behavior | Fuzzy logic brain decisions — not scripted by director |
+| What creates emergent behavior | Fuzzy logic brain decisions, not scripted by director |
 | Pelennor Fields agent count | 200,000 |
 | What crisp logic vs. fuzzy produces | Crisp = line behavior; Fuzzy = organic rout |
 | Edit drives simulation means | Simulation runs against the current editorial cut, not vs. animatic |
-| Black Panther chanting innovation | Audio-driven state transitions — audio waveform drives crowd sync |
+| Black Panther chanting innovation | Audio-driven state transitions, audio waveform drives crowd sync |
 | Hero crowd boundary | 20–50 agents nearest camera → keyframe; background → simulate |

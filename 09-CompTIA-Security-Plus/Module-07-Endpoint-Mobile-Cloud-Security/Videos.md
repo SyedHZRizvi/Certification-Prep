@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Stuxnet — The ICS Attack That Changed Everything</p>
+      <p class="vg-title">Stuxnet, The ICS Attack That Changed Everything</p>
       <p class="vg-creator">Various</p>
       <span class="vg-duration">⏱ 25 min</span>
     </div>
@@ -144,5 +144,5 @@
 1. Differentiate EDR / XDR / MDR.
 2. Match BYOD, CYOD, COPE, COBO to scenarios.
 3. Who is responsible for what in IaaS vs PaaS vs SaaS?
-4. CASB vs CSPM vs CWPP — what does each do?
+4. CASB vs CSPM vs CWPP, what does each do?
 5. Why is patching alone insufficient for ICS?

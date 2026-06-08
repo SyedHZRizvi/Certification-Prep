@@ -52,7 +52,7 @@
   </a>
 </div>
 
-## 📚 Recommended — Exam Prep (~55 min)
+## 📚 Recommended, Exam Prep (~55 min)
 
 <div class="vg-grid">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+cloud+generative+AI+leader+exam+study+guide" target="_blank" rel="noopener">

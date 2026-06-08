@@ -94,10 +94,10 @@ title: "Module 7 Cheat Sheet: Keyframe Animation & Graph Editor"
 
 ## Industry Workflow: Blocking → Spline
 
-1. **Step 1 — Blocking:** Use Constant interpolation; set key poses only; focus on timing
-2. **Step 2 — Director approval:** Timing and poses locked
-3. **Step 3 — Spline conversion:** Switch to Bezier; clean Graph Editor curves
-4. **Step 4 — Polish:** Adjust handles; add overlap, follow-through, secondary motion
+1. **Step 1, Blocking:** Use Constant interpolation; set key poses only; focus on timing
+2. **Step 2, Director approval:** Timing and poses locked
+3. **Step 3, Spline conversion:** Switch to Bezier; clean Graph Editor curves
+4. **Step 4, Polish:** Adjust handles; add overlap, follow-through, secondary motion
 
 ---
 
@@ -111,7 +111,7 @@ title: "Module 7 Cheat Sheet: Keyframe Animation & Graph Editor"
 | **Stepped Interpolation** | Stop-motion aesthetic, stepped blocking view | Step Size (frames) |
 | **Limits** | Clamp output to anatomical range | Min Value / Max Value |
 
-**Cycles modifier — Repeat vs. Repeat with Offset:**
+**Cycles modifier, Repeat vs. Repeat with Offset:**
 - **Repeat:** Character teleports back to start position each cycle
 - **Repeat with Offset:** Character moves forward by stride distance each cycle (correct for locomotion)
 
@@ -146,5 +146,5 @@ Higher tracks override lower tracks (Blend Type: Replace).
 |---|---|
 | Interpolation change only affects one key | Press A first (select all), then T |
 | Cycles modifier moves character backward | Use Repeat with Offset, not Repeat |
-| NLA track order wrong | Higher tracks have priority — reorder with drag |
+| NLA track order wrong | Higher tracks have priority, reorder with drag |
 | Auto Keying creates unexpected channels | Disable Auto Keying after blocking; clean Dope Sheet |

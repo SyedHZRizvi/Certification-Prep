@@ -29,14 +29,14 @@ Fairness · Explainability · Robustness · Privacy & Security · Transparency �
 
 ---
 
-## 🚦 Bedrock Guardrails — 5 Filter Types
+## 🚦 Bedrock Guardrails, 5 Filter Types
 
-1. **Content filters** — hate, insults, sexual, violence, misconduct, prompt attacks
-2. **Denied topics** — your custom prohibitions
-3. **Word / profanity filters** — exact words
-4. **Sensitive information / PII** — detect / block / redact
-5. **Contextual grounding check** — flags ungrounded RAG outputs (hallucination guard)
-6. **(Image content filters)** — newer, for multimodal
+1. **Content filters**, hate, insults, sexual, violence, misconduct, prompt attacks
+2. **Denied topics**, your custom prohibitions
+3. **Word / profanity filters**, exact words
+4. **Sensitive information / PII**, detect / block / redact
+5. **Contextual grounding check**, flags ungrounded RAG outputs (hallucination guard)
+6. **(Image content filters)**, newer, for multimodal
 
 Applies to: input, output, all Bedrock invocations (direct, Agents, KBs).
 
@@ -58,8 +58,8 @@ Fairness metrics: **Demographic parity · Equal opportunity · Equalized odds ·
 
 ## 🔍 Explainability vs Interpretability
 
-- **Interpretability** — you can see how the model decides (trees, linear)
-- **Explainability** — post-hoc explanations (SHAP, LIME) for opaque models
+- **Interpretability**, you can see how the model decides (trees, linear)
+- **Explainability**, post-hoc explanations (SHAP, LIME) for opaque models
 
 ---
 
@@ -77,9 +77,9 @@ AWS service: **Amazon A2I (Augmented AI)**.
 
 ## 🌍 External Frameworks
 
-- **NIST AI RMF** — US federal voluntary
-- **ISO/IEC 42001** — International AI management system standard
-- **EU AI Act** — Risk tiers: unacceptable / high / limited / minimal
+- **NIST AI RMF**, US federal voluntary
+- **ISO/IEC 42001**, International AI management system standard
+- **EU AI Act**, Risk tiers: unacceptable / high / limited / minimal
 
 ---
 
@@ -109,7 +109,7 @@ Usually wrong:
 ## ⚠️ Anti-Patterns
 
 - ❌ Shipping a hiring model without bias analysis
-- ❌ Trusting a single fairness metric — context matters
+- ❌ Trusting a single fairness metric, context matters
 - ❌ Using Mechanical Turk for sensitive medical/legal data
 - ❌ Treating LLM outputs as facts without grounding
 - ❌ Skipping audit logs for AI inferences
@@ -122,7 +122,7 @@ Usually wrong:
 |------------------------|-----------|
 | "bias" / "fairness" / "disparate impact" / "SHAP" | **SageMaker Clarify** |
 | "PII" / "denied topic" / "content filter" at runtime | **Bedrock Guardrails** |
-| "hallucination in RAG outputs" / "grounding check" | **Bedrock Guardrails — Contextual grounding** |
+| "hallucination in RAG outputs" / "grounding check" | **Bedrock Guardrails, Contextual grounding** |
 | "PII discovery in S3 buckets" | **AWS Macie** |
 | "doctor / lawyer / human must review every output" | **Amazon A2I (HITL)** |
 | "customer-authored model documentation" | **SageMaker Model Cards** |
@@ -151,7 +151,7 @@ Usually wrong:
 
 ## ✏️ Quick Self-Check
 
-1. Clarify vs Guardrails — one line each? ___
+1. Clarify vs Guardrails, one line each? ___
 2. 5 Bedrock Guardrails filter types? ___
 3. Disparate impact threshold (80% rule)? ___
 4. Service for HITL? ___

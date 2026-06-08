@@ -13,7 +13,7 @@ ANI_EP004_SH012_CharA_body_v003.anim
 
 **Rules:**
 - Zero-pad numbers: 001, not 1 (sorts correctly beyond 9)
-- NEVER name a file "final" — use v001, v002, etc.
+- NEVER name a file "final", use v001, v002, etc.
 - Date (optional): YYYYMMDD format only
 
 ---
@@ -67,8 +67,8 @@ ANI_EP004_SH012_CharA_body_v003.anim
 | 2D Animation | Toon Boom Harmony | Adobe Animate |
 | Compositing | After Effects | DaVinci Resolve |
 | Storyboarding | Storyboard Pro | Storyboarder |
-| Production Tracking | Shotgrid | — |
-| Client Review | Frame.io | — |
+| Production Tracking | Shotgrid |, |
+| Client Review | Frame.io |, |
 
 ---
 
@@ -129,7 +129,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

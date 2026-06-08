@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">HubSpot Workflows — Complete Tutorial</p>
+      <p class="vg-title">HubSpot Workflows, Complete Tutorial</p>
       <p class="vg-creator">HubSpot Academy</p>
       <span class="vg-duration">⏱ 22 min · 5-email Hot Lead workflow</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Klaviyo Flows — The 7 Ecom Essentials</p>
+      <p class="vg-title">Klaviyo Flows, The 7 Ecom Essentials</p>
       <p class="vg-creator">Klaviyo Academy</p>
       <span class="vg-duration">⏱ 24 min · Cart, welcome, post-purchase</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Make.com — Cross-Tool Automation Tutorial</p>
+      <p class="vg-title">Make.com, Cross-Tool Automation Tutorial</p>
       <p class="vg-creator">Make.com + creator content</p>
       <span class="vg-duration">⏱ 18 min · The glue layer</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Email Deliverability — SPF / DKIM / DMARC</p>
+      <p class="vg-title">Email Deliverability, SPF / DKIM / DMARC</p>
       <p class="vg-creator">Postmark / Mailgun + 2024 Gmail updates</p>
       <span class="vg-duration">⏱ 14 min · Stay out of spam</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">n8n Self-Hosted — Free Automation at Scale</p>
+      <p class="vg-title">n8n Self-Hosted, Free Automation at Scale</p>
       <p class="vg-creator">n8n community + creators</p>
       <span class="vg-duration">⏱ 22 min · Beyond Make.com pricing</span>
     </div>
@@ -145,7 +145,7 @@
 
 Answer these in your notebook (without re-watching):
 
-1. The TRIGGER → CONDITION → ACTION model — give one example for each.
+1. The TRIGGER → CONDITION → ACTION model, give one example for each.
 2. Name the 7 Klaviyo Flows every DTC store should have.
 3. What's a "Hot Lead Workflow" in HubSpot?
 4. What does "tool use" mean for an AI agent?

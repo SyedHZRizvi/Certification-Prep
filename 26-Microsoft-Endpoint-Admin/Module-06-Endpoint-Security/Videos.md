@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MDE Plan 1 vs Plan 2 — Feature Walkthrough</p>
+      <p class="vg-title">MDE Plan 1 vs Plan 2, Feature Walkthrough</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 28 min · The full plan matrix</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">ASR Rules — All Rules Explained + Rollout Pattern</p>
+      <p class="vg-title">ASR Rules, All Rules Explained + Rollout Pattern</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 25 min · Audit → Block in practice</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">EDR Investigation — Process Trees, Live Response</p>
+      <p class="vg-title">EDR Investigation, Process Trees, Live Response</p>
       <p class="vg-creator">Microsoft Security</p>
       <span class="vg-duration">⏱ 22 min · Plan 2's killer feature</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Intune Security Baselines — Microsoft's Recommended Settings</p>
+      <p class="vg-title">Intune Security Baselines, Microsoft's Recommended Settings</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 17 min · Baselines as a starting point</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Defender for Cloud Apps — CASB Overview</p>
+      <p class="vg-title">Defender for Cloud Apps, CASB Overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · Discover + control SaaS</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Windows LAPS — Rotating Local Admin Password</p>
+      <p class="vg-title">Windows LAPS, Rotating Local Admin Password</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 16 min · The cloud LAPS replacement</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Norsk Hydro LockerGoga — Lessons Learned</p>
+      <p class="vg-title">Norsk Hydro LockerGoga, Lessons Learned</p>
       <p class="vg-creator">Microsoft Security Case Studies</p>
       <span class="vg-duration">⏱ 28 min · Real-world ransomware recovery</span>
     </div>

@@ -8,7 +8,7 @@
 
 ### Q1. A centralized exchange (CEX) like Coinbase or Binance is best described as: *(Understand)*
 A. A peer-to-peer network of nodes
-B. An IOU economy — the exchange custodies user funds and tracks balances in its own database
+B. An IOU economy, the exchange custodies user funds and tracks balances in its own database
 C. A Bitcoin Improvement Proposal
 D. A regulator
 
@@ -98,7 +98,7 @@ D. The SEC's database
 A. 5 levels
 B. 3 levels (1, 2, 3)
 C. 10 levels
-D. No levels — it's a binary pass/fail
+D. No levels, it's a binary pass/fail
 
 ---
 
@@ -128,7 +128,7 @@ D. There is no difference
 
 ### Q16. A persistent POSITIVE funding rate on Bitcoin perpetual swaps indicates: *(Analyze)*
 A. Shorts are paying longs
-B. Longs are paying shorts — leveraged long positioning is dominant, often a contrarian warning sign
+B. Longs are paying shorts, leveraged long positioning is dominant, often a contrarian warning sign
 C. The funding rate has no information content
 D. The exchange is insolvent
 
@@ -194,13 +194,13 @@ D. The coinbase output
 A. Humpback (>10,000 BTC)
 B. Whale (1,000-10,000 BTC)
 C. Shark (100-1,000 BTC)
-D. Shrimp (<1 BTC) — the largest population by address count
+D. Shrimp (<1 BTC), the largest population by address count
 
 ---
 
 ### Q25. A common misconception about Bitcoin "whale" address concentration is: *(Evaluate)*
 A. Whales control the entire supply
-B. The top-100 addresses are mostly NOT individual rich holders — they include exchange hot wallets (custody for millions of users), mining pools, and ETF custody addresses; beneficial ownership is far less concentrated than the address-tier data suggests
+B. The top-100 addresses are mostly NOT individual rich holders, they include exchange hot wallets (custody for millions of users), mining pools, and ETF custody addresses; beneficial ownership is far less concentrated than the address-tier data suggests
 C. There are no whales
 D. Whales are always the same 100 people
 
@@ -208,7 +208,7 @@ D. Whales are always the same 100 people
 
 ### Q26. You are advising a $50M family office on Bitcoin custody. The office has no in-house security team. The best architecture is most likely: *(Create)*
 A. Keep funds on a Coinbase consumer brokerage account for liquidity
-B. A qualified custodian (Coinbase Custody, Anchorage, or BitGo) with CCSS Level 3 certification, SOC 2 attestation, and insurance — combined with a secondary self-custody slice (e.g., a 2-of-3 Casa multi-sig) for sovereignty
+B. A qualified custodian (Coinbase Custody, Anchorage, or BitGo) with CCSS Level 3 certification, SOC 2 attestation, and insurance, combined with a secondary self-custody slice (e.g., a 2-of-3 Casa multi-sig) for sovereignty
 C. A single hardware wallet stored in a safe
 D. A Lightning Network node
 
@@ -229,7 +229,7 @@ Eleven ETFs approved simultaneously. IBIT, FBTC, ARKB, BITB, HODL, BTCO, EZBC, B
 The court found the SEC's denial of GBTC-to-ETF conversion "arbitrary and capricious." The SEC chose not to appeal and instead approved en masse.
 
 ### Q5: **B. IBIT**
-iShares Bitcoin Trust. Reached $50B AUM in ~6 months — fastest in ETF history.
+iShares Bitcoin Trust. Reached $50B AUM in ~6 months, fastest in ETF history.
 
 ### Q6: **C. Coinbase Custody Trust Company**
 Eight of eleven, including IBIT, FBTC, ARKB, BITB, HODL, BRRR, BTCW, and others. The concentration is itself a topic of regulatory discussion.
@@ -241,19 +241,19 @@ CME launched cash-settled BTC futures (BTC, later MBT and BIT). Cboe also launch
 The single key is mathematically split. The signature is computed jointly without the key ever being reconstructed in one place. Vendor examples: Fireblocks, Copper, BitGo Modular.
 
 ### Q9: **B. Multi-sig reveals quorum (pre-Taproot) or aggregates (Taproot); MPC always looks like single-sig**
-This is the institutional appeal of MPC — privacy + flexibility — at the cost of trusting the vendor's protocol implementation.
+This is the institutional appeal of MPC privacy + flexibility at the cost of trusting the vendor's protocol implementation.
 
 ### Q10: **D. 80-95%**
 Cold storage is the bedrock. Hot wallets are kept minimal (2-5%) to limit blast radius of a breach.
 
 ### Q11: **B. The hot wallet**
-Every major hack — Mt. Gox, Bitfinex 2016, Coincheck 2018, KuCoin 2020, Poly Network 2021 — was a hot wallet breach. Cold storage has held up across the industry's history.
+Every major hack Mt. Gox, Bitfinex 2016, Coincheck 2018, KuCoin 2020, Poly Network 2021 was a hot wallet breach. Cold storage has held up across the industry's history.
 
 ### Q12: **B. 3 levels (1, 2, 3)**
-Published by C4 in 2015. Level 3 is qualified-custodian grade — multi-party key generation, geographically distributed cold storage, quarterly drills, SOC 2.
+Published by C4 in 2015. Level 3 is qualified-custodian grade, multi-party key generation, geographically distributed cold storage, quarterly drills, SOC 2.
 
 ### Q13: **B. First OCC national trust bank charter (January 2021)**
-That charter let Anchorage operate as a federally regulated bank specifically for crypto custody — a regulatory novelty.
+That charter let Anchorage operate as a federally regulated bank specifically for crypto custody, a regulatory novelty.
 
 ### Q14: **B. Investment Advisers Act of 1940, Rule 206(4)-2**
 The "Custody Rule." A qualified custodian is a bank, registered broker-dealer, FCM, or certain regulated foreign institutions. Coinbase Custody Trust qualifies; Coinbase the brokerage generally does not.
@@ -283,9 +283,9 @@ Jane Street, JPMorgan Securities, Virtu, Flow Traders, etc. The creation/redempt
 Multi-sig with the same goals requires moving funds to a new script when the quorum changes; MPC re-shares cryptographically without moving funds.
 
 ### Q23: **B. Key-path, via MuSig2-aggregated single Schnorr signature**
-The Taproot privacy win — see Module 6.
+The Taproot privacy win, see Module 6.
 
-### Q24: **D. Shrimp (<1 BTC) — ~40M addresses**
+### Q24: **D. Shrimp (<1 BTC), ~40M addresses**
 Population, not aggregate holdings. Most Bitcoin addresses hold tiny balances. The whale tiers hold disproportionate value but are far fewer in count.
 
 ### Q25: **B. The top addresses are mostly NOT individuals**

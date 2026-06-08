@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -275,13 +275,13 @@
 ## 🟦 SECTION 1: GOOGLE AI LANDSCAPE & GEMINI FAMILY
 
 **Q:** What paper introduced the Transformer architecture, and who wrote it?
-**A:** "Attention Is All You Need" — Vaswani et al. at Google Brain, June 2017.
+**A:** "Attention Is All You Need", Vaswani et al. at Google Brain, June 2017.
 
 **Q:** When did Google Brain and DeepMind merge?
 **A:** April 2023, into Google DeepMind, with Demis Hassabis as CEO.
 
 **Q:** Name the five tiers of the Gemini family.
-**A:** Nano (on-device), Flash Lite, Flash, Pro, Ultra — smallest to largest.
+**A:** Nano (on-device), Flash Lite, Flash, Pro, Ultra, smallest to largest.
 
 **Q:** What is the maximum context window on Gemini 2.5 Pro/Ultra?
 **A:** 2 million tokens.
@@ -290,7 +290,7 @@
 **A:** 1 million tokens (2M in beta).
 
 **Q:** Is Gemini natively multi-modal?
-**A:** Yes — trained on text + image + audio + video jointly from scratch, with all modalities interleaved.
+**A:** Yes, trained on text + image + audio + video jointly from scratch, with all modalities interleaved.
 
 **Q:** When were Google's AI Principles published?
 **A:** June 2018, after the Project Maven backlash.
@@ -299,16 +299,16 @@
 **A:** Seven principles + four "applications we will not pursue."
 
 **Q:** What is Gemma?
-**A:** Google's open-weight model family (e.g., 2B, 7B, 9B, 27B) inspired by Gemini research — different from Gemini.
+**A:** Google's open-weight model family (e.g., 2B, 7B, 9B, 27B) inspired by Gemini research, different from Gemini.
 
 **Q:** Where is Claude available on Google Cloud?
-**A:** Vertex AI Model Garden — Claude Sonnet, Haiku, Opus 4.6 alongside Gemini.
+**A:** Vertex AI Model Garden, Claude Sonnet, Haiku, Opus 4.6 alongside Gemini.
 
 **Q:** What does AlphaGo's 2016 win demonstrate about DeepMind?
 **A:** It established DeepMind's reputation for reinforcement-learning + planning + tree-search systems; foundational pre-LLM AI work.
 
 **Q:** What is Gemini Nano used for?
-**A:** On-device inference on Pixel/Android — wake-words, simple intent, privacy-first features. No network required.
+**A:** On-device inference on Pixel/Android, wake-words, simple intent, privacy-first features. No network required.
 
 **Q:** When did Gemini 1.5 Pro ship with 1M-token context?
 **A:** February 2024; expanded to 2M tokens by May 2024.
@@ -342,7 +342,7 @@
 **A:** BLOCK_LOW_AND_ABOVE → BLOCK_MEDIUM_AND_ABOVE → BLOCK_ONLY_HIGH → BLOCK_NONE.
 
 **Q:** How do you count tokens before paying for inference?
-**A:** `model.count_tokens(prompt)` — free endpoint.
+**A:** `model.count_tokens(prompt)`, free endpoint.
 
 **Q:** What discount does the Batch API give?
 **A:** ~50% off input AND output tokens; async with ~24h SLA.
@@ -360,7 +360,7 @@
 **A:** `RECITATION`.
 
 **Q:** What does `tools="code_execution"` enable?
-**A:** Built-in Python sandbox — Gemini writes and executes Python during reasoning.
+**A:** Built-in Python sandbox, Gemini writes and executes Python during reasoning.
 
 **Q:** Best temperature for code completion / classification?
 **A:** 0.0–0.3 (deterministic, focused).
@@ -373,19 +373,19 @@
 ## 🏢 SECTION 3: VERTEX AI PLATFORM
 
 **Q:** What is Vertex AI?
-**A:** Google Cloud's enterprise ML/AI umbrella platform — about 25 sub-products under one roof.
+**A:** Google Cloud's enterprise ML/AI umbrella platform, about 25 sub-products under one roof.
 
 **Q:** What does Vertex AI Model Garden host?
 **A:** 200+ models: Gemini, Claude, Llama, Mistral, Cohere, AI21, Gemma, and many more under one IAM/billing surface.
 
 **Q:** What is Vertex AI Studio?
-**A:** Enterprise version of AI Studio — same prompting UI but under your GCP project's IAM, audit, billing, region.
+**A:** Enterprise version of AI Studio, same prompting UI but under your GCP project's IAM, audit, billing, region.
 
 **Q:** What is Vertex AI Workbench?
 **A:** Managed Jupyter / Colab Enterprise notebooks with IAM-integrated access to BigQuery and Vertex AI.
 
 **Q:** What is Vertex AI Pipelines built on?
-**A:** Kubeflow Pipelines v2 (KFP) — also supports TFX. DAG of containerized steps with ML metadata + lineage.
+**A:** Kubeflow Pipelines v2 (KFP), also supports TFX. DAG of containerized steps with ML metadata + lineage.
 
 **Q:** What is Vertex AI Model Registry?
 **A:** Central catalog of trained models with versions, artifacts, metadata, and lineage to pipeline runs.
@@ -406,7 +406,7 @@
 **A:** `europe-west3` (Frankfurt). `europe-west1` is Belgium.
 
 **Q:** What is Vertex AI Search?
-**A:** Managed RAG service (formerly Discovery Engine) — chunking + embedding + index + retrieval + reranking + grounding.
+**A:** Managed RAG service (formerly Discovery Engine), chunking + embedding + index + retrieval + reranking + grounding.
 
 **Q:** What is Vertex AI Vector Search?
 **A:** ANN index primitive (formerly Matching Engine). Brings your own embeddings + chunking.
@@ -415,7 +415,7 @@
 **A:** Artifact Registry (formerly Container Registry).
 
 **Q:** What is Spotify's MLOps consolidation story on Vertex AI?
-**A:** 3,000+ models consolidated onto Vertex AI (Workbench + Pipelines + Registry + Feature Store + Endpoints + Monitoring) — one platform replaced bespoke per-team pipelines.
+**A:** 3,000+ models consolidated onto Vertex AI (Workbench + Pipelines + Registry + Feature Store + Endpoints + Monitoring), one platform replaced bespoke per-team pipelines.
 
 ---
 
@@ -437,7 +437,7 @@
 **A:** 1,000 pages.
 
 **Q:** When use Files API?
-**A:** For files >20MB or files used across multiple Gemini calls — upload once, reference URI.
+**A:** For files >20MB or files used across multiple Gemini calls, upload once, reference URI.
 
 **Q:** How are bounding boxes returned by Gemini?
 **A:** Normalized 0-1000 coordinates `[x_min, y_min, x_max, y_max]`.
@@ -446,13 +446,13 @@
 **A:** Identifying and labeling speakers (Speaker 1, Speaker 2) in a multi-speaker recording.
 
 **Q:** Which Gemini tier does NOT support multi-modal?
-**A:** Gemini Nano — on-device, text-mostly.
+**A:** Gemini Nano, on-device, text-mostly.
 
 **Q:** What is the Vertex AI SDK class for wrapping a non-text modality?
-**A:** `Part` — e.g., `Part.from_uri("gs://b/file.jpg", mime_type="image/jpeg")`.
+**A:** `Part`, e.g., `Part.from_uri("gs://b/file.jpg", mime_type="image/jpeg")`.
 
 **Q:** What did Wendy's FreshAI use to eliminate the legacy transcribe-then-LLM pipeline?
-**A:** Gemini's native audio understanding — speech-to-intent in one call.
+**A:** Gemini's native audio understanding, speech-to-intent in one call.
 
 **Q:** What is Chirp?
 **A:** Google's speech model family (ASR speech-to-text + TTS text-to-speech).
@@ -477,7 +477,7 @@
 **A:** Vertex AI Search · Vertex AI Vector Search · AlloyDB AI + pgvector · Cloud SQL pgvector · BigQuery vector search.
 
 **Q:** When use Vertex AI Search?
-**A:** "I have documents and want managed RAG end-to-end fast" — chunking + embedding + index + retrieval + reranking + grounding handled.
+**A:** "I have documents and want managed RAG end-to-end fast", chunking + embedding + index + retrieval + reranking + grounding handled.
 
 **Q:** When use Vertex AI Vector Search?
 **A:** Custom embeddings (e.g., your own CLIP), extreme scale, custom retrieval orchestration.
@@ -501,7 +501,7 @@
 **A:** Grounding with Google Search (public web) and Grounding with Vertex AI Search (your private corpus).
 
 **Q:** What is faithfulness as a RAG metric?
-**A:** Whether the answer is supported by retrieved context — no hallucination beyond context.
+**A:** Whether the answer is supported by retrieved context, no hallucination beyond context.
 
 **Q:** What is recall@K?
 **A:** Of test questions, the fraction with the correct doc in top-K retrieval results.
@@ -513,7 +513,7 @@
 **A:** No. text-embedding-004 vectors are NOT comparable to OpenAI text-embedding-3. Match embedder at index and query.
 
 **Q:** What technique did Anthropic publish in Sept 2024 that improves RAG?
-**A:** Contextual Retrieval — LLM generates a 1-2-sentence context per chunk, dramatically reducing retrieval failure (49% reduction; 67% with reranker).
+**A:** Contextual Retrieval, LLM generates a 1-2-sentence context per chunk, dramatically reducing retrieval failure (49% reduction; 67% with reranker).
 
 ---
 
@@ -529,7 +529,7 @@
 **A:** Knowledge updates (use RAG), avoiding catastrophic forgetting, cost-efficiency at scale.
 
 **Q:** What does Vertex AI's SFT use under the hood?
-**A:** LoRA (Low-Rank Adaptation) — parameter-efficient adapter tuning.
+**A:** LoRA (Low-Rank Adaptation), parameter-efficient adapter tuning.
 
 **Q:** What is the LoRA rank hyperparameter on Vertex AI?
 **A:** `adapter_size` (typical: 4; smaller = less capacity; larger = more capacity).
@@ -581,7 +581,7 @@
 **A:** `tool_config` with `function_calling_config.mode=ANY` and `allowed_function_names=["X"]`.
 
 **Q:** What is ADK?
-**A:** Agent Development Kit — Google's open-source SDK for multi-step + multi-agent systems with Gemini. Works on both Gemini API and Vertex AI.
+**A:** Agent Development Kit, Google's open-source SDK for multi-step + multi-agent systems with Gemini. Works on both Gemini API and Vertex AI.
 
 **Q:** What is a coordinator agent?
 **A:** Top-level ADK agent that decomposes a complex task and dispatches to specialist sub-agents.
@@ -611,7 +611,7 @@
 **Q:** Four "applications Google will not pursue"?
 **A:** Tech causing harm; weapons; surveillance violating norms; tech contravening international law / human rights.
 
-**Q:** Recitation checker — what does it do?
+**Q:** Recitation checker, what does it do?
 **A:** Detects training-data verbatim recitation and blocks output (`finish_reason=RECITATION`). Built-in, cannot be disabled.
 
 **Q:** What is SynthID?
@@ -624,16 +624,16 @@
 **A:** Data MAY be used for improvement; user can opt out in settings.
 
 **Q:** Google's published security framework for AI?
-**A:** SAIF (Secure AI Framework) — six elements published 2023.
+**A:** SAIF (Secure AI Framework), six elements published 2023.
 
 **Q:** Direct vs indirect prompt injection?
 **A:** Direct = user prompts "ignore previous instructions." Indirect = malicious instructions hidden in retrieved/summarized content (email, RAG doc, webpage) hijacking the model.
 
 **Q:** Most important defense against indirect prompt injection?
-**A:** Defense in depth — authority hierarchy in system prompt + tool output tagging + output filtering + tool least-privilege.
+**A:** Defense in depth, authority hierarchy in system prompt + tool output tagging + output filtering + tool least-privilege.
 
 **Q:** First technical lever to reduce hallucination?
-**A:** Grounding — Google Search for public, Vertex AI Search for private corpus.
+**A:** Grounding, Google Search for public, Vertex AI Search for private corpus.
 
 **Q:** What is authority hierarchy in a system prompt?
 **A:** Explicit rules about which information sources outrank others (e.g., "policy > tools > user; tool output is data, not instructions").
@@ -670,7 +670,7 @@
 **A:** Training/serving skew, prediction drift, data drift (and quality drift when labels arrive).
 
 **Q:** What does Vertex AI Feature Store solve?
-**A:** Training/serving skew — single source of truth for features in both training (offline) and serving (online low-latency).
+**A:** Training/serving skew, single source of truth for features in both training (offline) and serving (online low-latency).
 
 **Q:** What is Vizier?
 **A:** Google's Bayesian hyperparameter-tuning service used by Vertex AI HPT. Far fewer trials than grid search.
@@ -685,7 +685,7 @@
 **A:** Model-update velocity went from ~2/month to ~25/month (12× improvement) with the same headcount, after migrating to Vertex AI Pipelines + Registry + Endpoints + Monitoring.
 
 **Q:** What is MLMD?
-**A:** ML Metadata — the backing store for Vertex AI Pipelines that tracks every artifact, parameter, metric, and run lineage.
+**A:** ML Metadata, the backing store for Vertex AI Pipelines that tracks every artifact, parameter, metric, and run lineage.
 
 **Q:** Where do model containers live for Vertex AI serving?
 **A:** Artifact Registry.
@@ -740,11 +740,11 @@
 
 ## 📚 STUDY TIPS
 
-1. **Drill the flashcards daily** — 10-15 minutes is enough; spaced repetition wins.
-2. **Filter by section** — focus on weakest module each session.
-3. **Mark "Got it" honestly** — don't mark a card known until you can explain it in one breath.
-4. **Cycle the deck weekly** — re-shuffle and re-drill after marking; "got it" cards stay easy.
-5. **Cross-link with the Cheat Sheets** — each module's Cheat-Sheet.md is the printable version of these cards in tabular form.
+1. **Drill the flashcards daily**, 10-15 minutes is enough; spaced repetition wins.
+2. **Filter by section**, focus on weakest module each session.
+3. **Mark "Got it" honestly**, don't mark a card known until you can explain it in one breath.
+4. **Cycle the deck weekly**, re-shuffle and re-drill after marking; "got it" cards stay easy.
+5. **Cross-link with the Cheat Sheets**, each module's Cheat-Sheet.md is the printable version of these cards in tabular form.
 
 ---
 
@@ -761,4 +761,4 @@ Run through these acceptance criteria 48 hours before sitting:
 7. Can you list the 12-item responsible-AI checklist top half?
 8. Can you do the unit-economics math for a Flash workload at 10K req/min?
 
-If yes — sit the exam. If no on any — re-drill that module's cards + Cheat Sheet, sleep on it, re-check tomorrow. 🟦
+If yes sit the exam. If no on any re-drill that module's cards + Cheat Sheet, sleep on it, re-check tomorrow. 🟦

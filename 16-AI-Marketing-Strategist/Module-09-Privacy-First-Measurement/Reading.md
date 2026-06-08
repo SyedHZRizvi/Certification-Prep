@@ -1,23 +1,23 @@
 # Module 9: Privacy-First Measurement 🔒
 
-> **Why this module matters:** The 2024–2026 collapse of cookies, IDFAs, and reliance on browser-side tracking forced marketing measurement to be rebuilt around a *privacy-first* architecture. Every senior strategist must be able to design and operate this stack — Consent Mode v2, Enhanced Conversions, Conversions API (CAPI), server-side GTM, SKAdNetwork 4 / AdAttributionKit, the Privacy Sandbox, and data clean rooms. The CMOs who can defend their measurement program against a Chief Privacy Officer or DPA audit will lead marketing in the second half of this decade.
+> **Why this module matters:** The 2024–2026 collapse of cookies, IDFAs, and reliance on browser-side tracking forced marketing measurement to be rebuilt around a *privacy-first* architecture. Every senior strategist must be able to design and operate this stack, Consent Mode v2, Enhanced Conversions, Conversions API (CAPI), server-side GTM, SKAdNetwork 4 / AdAttributionKit, the Privacy Sandbox, and data clean rooms. The CMOs who can defend their measurement program against a Chief Privacy Officer or DPA audit will lead marketing in the second half of this decade.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The server-side tagging architecture from [Module 2: CDPs & Server-Side Tracking](../Module-02-CDP-Server-Side-Tracking/Reading.md) — Consent Mode, CAPI, and Enhanced Conversions all sit on top of it.
-> - The GA4 event model from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md) — Consent Mode v2 modifies which of those events are sent and how they're modeled.
-> - Beginner-level privacy regulation literacy (GDPR, CCPA exist) — covered in [Course 14 Module 9: AI Ethics, Privacy & Compliance](../../14-AI-Marketing-Foundations/Module-09-AI-Ethics-Privacy-Compliance/Reading.md).
-> - The attribution-method taxonomy from [Module 4](../Module-04-Multi-Touch-Attribution/Reading.md) — privacy-driven signal loss is what *forces* the move away from MTA-only stacks.
+> - The server-side tagging architecture from [Module 2: CDPs & Server-Side Tracking](../Module-02-CDP-Server-Side-Tracking/Reading.md), Consent Mode, CAPI, and Enhanced Conversions all sit on top of it.
+> - The GA4 event model from [Module 3](../Module-03-GA4-Mastery-Custom-Events/Reading.md), Consent Mode v2 modifies which of those events are sent and how they're modeled.
+> - Beginner-level privacy regulation literacy (GDPR, CCPA exist), covered in [Course 14 Module 9: AI Ethics, Privacy & Compliance](../../14-AI-Marketing-Foundations/Module-09-AI-Ethics-Privacy-Compliance/Reading.md).
+> - The attribution-method taxonomy from [Module 4](../Module-04-Multi-Touch-Attribution/Reading.md), privacy-driven signal loss is what *forces* the move away from MTA-only stacks.
 > If you've never seen a Consent Management Platform (CMP) banner or a CCPA "Do Not Sell" link in action, spend 15 minutes on a few major DTC sites before continuing.
 
 ---
 
 ## ⚖️ A Story: How Sephora's $1.2M California Settlement Reshaped Marketing Data Sharing
 
-August 2022. The California Attorney General's office announces a **$1.2 million settlement with Sephora** for violating the **California Consumer Privacy Act (CCPA)**. The specific violation: Sephora was sharing customer data with third-party analytics and advertising vendors *without* honoring the global privacy-control signal sent by browsers (the GPC — Global Privacy Control). California argued that for CCPA purposes, this constituted an unauthorized "sale" of consumer data.
+August 2022. The California Attorney General's office announces a **$1.2 million settlement with Sephora** for violating the **California Consumer Privacy Act (CCPA)**. The specific violation: Sephora was sharing customer data with third-party analytics and advertising vendors *without* honoring the global privacy-control signal sent by browsers (the GPC, Global Privacy Control). California argued that for CCPA purposes, this constituted an unauthorized "sale" of consumer data.
 
 The settlement reshaped marketing data sharing across the industry overnight. Three lessons every strategist should internalize:
 
-1. **The legal definition of "sale"** under CCPA is broad — it includes letting an ad platform use your customer data to optimize their model, even when no money exchanges hands.
+1. **The legal definition of "sale"** under CCPA is broad, it includes letting an ad platform use your customer data to optimize their model, even when no money exchanges hands.
 2. **Honoring browser signals is non-optional.** Global Privacy Control + the Do-Not-Sell-My-Personal-Information opt-out flag must be respected.
 3. **Pixels are now legally risky.** Any time a third-party pixel fires on your site without prior consent, you're potentially in violation.
 
@@ -27,13 +27,13 @@ Within 18 months of the Sephora settlement, every major US e-commerce brand had 
 - **Consent Mode v2** signal-passing alongside every server-side event.
 - **First-party cookie-only architectures** with no third-party pixels firing client-side.
 
-This is now standard. If a 2026 marketing strategy doesn't include a privacy-first architecture, the strategist is exposed to legal liability — not just measurement risk.
+This is now standard. If a 2026 marketing strategy doesn't include a privacy-first architecture, the strategist is exposed to legal liability, not just measurement risk.
 
 This module teaches you the architecture.
 
 ---
 
-## 🍪 Consent Mode v2 — The Foundation
+## 🍪 Consent Mode v2, The Foundation
 
 **Google Consent Mode v2** (mandatory in the European Economic Area as of March 2024, recommended globally) is a framework for passing user-consent signals alongside marketing events. Consent Mode tells Google's ad platforms *whether the user has consented to* (1) ad storage, (2) ad-user-data sharing, (3) ad personalization, and (4) analytics storage.
 
@@ -48,14 +48,14 @@ This module teaches you the architecture.
 
 Each can be `granted`, `denied`, or unset.
 
-### Two modes — Basic and Advanced
+### Two modes, Basic and Advanced
 
 **Basic Consent Mode:**
 - When consent is denied, no tags fire at all.
 - Simple but loses 100% of denied-consent measurement.
 
 **Advanced Consent Mode:**
-- When consent is denied, tags still fire — but with no cookies and only aggregated, anonymized "pings" to Google.
+- When consent is denied, tags still fire, but with no cookies and only aggregated, anonymized "pings" to Google.
 - Google uses these pings + machine learning to **model** the lost conversions and surface them in reports as *modeled conversions*.
 - Recovers **20–80% of measurement loss** depending on consent rate and conversion volume.
 
@@ -82,11 +82,11 @@ gtag('consent', 'update', {
 });
 ```
 
-The **Consent Management Platform (CMP)** layer — OneTrust, Cookiebot, Didomi, Usercentrics, Iubenda, Termly — handles the banner UI, stores the user's choice, and triggers the appropriate gtag calls.
+The **Consent Management Platform (CMP)** layer OneTrust, Cookiebot, Didomi, Usercentrics, Iubenda, Termly handles the banner UI, stores the user's choice, and triggers the appropriate gtag calls.
 
 ---
 
-## 📞 Conversions API (CAPI) — Meta's Server-Side Path
+## 📞 Conversions API (CAPI), Meta's Server-Side Path
 
 Meta's **Conversions API** is the server-side conversion endpoint that replaces / complements the client-side Pixel. Events you'd otherwise send via Pixel are sent from your server to Meta's `https://graph.facebook.com/v18.0/{pixel_id}/events` endpoint.
 
@@ -132,8 +132,8 @@ POST https://graph.facebook.com/v18.0/{pixel_id}/events
 Key fields:
 
 - **`em`, `ph`** = SHA-256 hashed email / phone. These are the "Enhanced Matching" parameters that let Meta find the user even when cookies are gone.
-- **`fbc`, `fbp`** = Meta's first-party cookies — sent so Meta can dedupe with Pixel events.
-- **`action_source`** = `website` / `app` / `physical_store` / `system_generated` — tells Meta the channel context.
+- **`fbc`, `fbp`** = Meta's first-party cookies, sent so Meta can dedupe with Pixel events.
+- **`action_source`** = `website` / `app` / `physical_store` / `system_generated`, tells Meta the channel context.
 
 ### Deduplication
 
@@ -160,7 +160,7 @@ Equivalent feature in Google Ads + GA4. Sends **hashed first-party identifiers**
     'transaction_id': 'TX-78421'
   });
 
-  // Enhanced Conversions data — must be set BEFORE conversion fires
+  // Enhanced Conversions data, must be set BEFORE conversion fires
   gtag('set', 'user_data', {
     'email': 'user@example.com',   // or hashed
     'phone_number': '+12345678901', // or hashed
@@ -173,7 +173,7 @@ Google's documentation specifies the hashing rules (lowercase, trim, then SHA-25
 
 ### Enhanced Conversions for Leads (B2B)
 
-A variant for B2B/lead-gen advertisers — when a lead converts in your CRM (not on-site), you can upload the hashed lead identifier back to Google Ads to retroactively attribute the lead to its original ad click.
+A variant for B2B/lead-gen advertisers, when a lead converts in your CRM (not on-site), you can upload the hashed lead identifier back to Google Ads to retroactively attribute the lead to its original ad click.
 
 ---
 
@@ -187,9 +187,9 @@ When you advertise an iOS app, Apple's **SKAdNetwork (SKAN)** is the privacy-pre
 2. User clicks the ad → installs your app.
 3. App reports a **conversion value** (0–63) to Apple within a 24–72 hour postback window.
 4. Apple aggregates conversion values across users + delays the postback by a randomized 24–144 hours.
-5. The ad network receives a **noisy, aggregated** postback indicating "users from your campaign converted with these aggregated values" — but cannot identify individual users.
+5. The ad network receives a **noisy, aggregated** postback indicating "users from your campaign converted with these aggregated values", but cannot identify individual users.
 
-### Conversion value design — the strategist's job
+### Conversion value design, the strategist's job
 
 The 6-bit conversion value (0–63 = 64 possible states) is the *only* information you control. Common encodings:
 
@@ -200,7 +200,7 @@ The 6-bit conversion value (0–63 = 64 possible states) is the *only* informati
 | 16–31 | Made a $0 → $50 in-app purchase (mapped to bins) |
 | 32–63 | Higher LTV bin / multiple-purchase |
 
-Designing this mapping correctly is critical — it's the *only* signal you'll get back from your ad spend. Standard practice: design 6–8 LTV bins and encode the user's first-week LTV cohort into the conversion value.
+Designing this mapping correctly is critical, it's the *only* signal you'll get back from your ad spend. Standard practice: design 6–8 LTV bins and encode the user's first-week LTV cohort into the conversion value.
 
 ### Apple's AdAttributionKit (2024+)
 
@@ -210,13 +210,13 @@ Apple's newer framework, introduced at WWDC 2024, expands SKAdNetwork with:
 - Cross-app attribution for re-engagement campaigns.
 - Slightly higher fidelity in some scenarios.
 
-Mobile measurement partners (Branch, AppsFlyer, Adjust) typically abstract these complexities — you configure conversion-value bins in their UI and they handle the SKAN / AdAttributionKit plumbing.
+Mobile measurement partners (Branch, AppsFlyer, Adjust) typically abstract these complexities, you configure conversion-value bins in their UI and they handle the SKAN / AdAttributionKit plumbing.
 
 ---
 
 ## 🌐 Google's Privacy Sandbox (Chrome)
 
-Google's **Privacy Sandbox** is the collection of Chrome browser APIs that aim to enable advertising and measurement *without* third-party cookies. As of 2026, Chrome has shifted from "deprecate 3p cookies" to "user choice" — but the Sandbox APIs are still the strategic future. The strategist must know them.
+Google's **Privacy Sandbox** is the collection of Chrome browser APIs that aim to enable advertising and measurement *without* third-party cookies. As of 2026, Chrome has shifted from "deprecate 3p cookies" to "user choice", but the Sandbox APIs are still the strategic future. The strategist must know them.
 
 ### The 7 key APIs
 
@@ -232,7 +232,7 @@ Google's **Privacy Sandbox** is the collection of Chrome browser APIs that aim t
 
 ### Topics API explained
 
-Chrome assigns each browser **3 weekly "topics"** based on browsing history (e.g., "Travel & Transportation/Travel/Air Travel"). Sites can call `document.browsingTopics()` to see the user's recent topics — and bid accordingly. Topics rotate weekly; no individual user is identified.
+Chrome assigns each browser **3 weekly "topics"** based on browsing history (e.g., "Travel & Transportation/Travel/Air Travel"). Sites can call `document.browsingTopics()` to see the user's recent topics, and bid accordingly. Topics rotate weekly; no individual user is identified.
 
 The taxonomy: ~470 topics, no sensitive categories (no health, race, religion, sexual orientation, politics).
 
@@ -244,7 +244,7 @@ A browser-side on-device auction. Sites add users to "interest groups" (e.g., "h
 
 Browser-side conversion attribution. Click on ad → ad-tech registers an "attribution source." Later conversion → browser sends an aggregate, noisy report to a registered aggregation server. No individual user data leaves the browser.
 
-⚠️ **Strategist's reality:** The Privacy Sandbox is still being adopted in 2026 — many ad tech vendors are mid-migration. Familiarity is required for credibility; production adoption is still patchy.
+⚠️ **Strategist's reality:** The Privacy Sandbox is still being adopted in 2026, many ad tech vendors are mid-migration. Familiarity is required for credibility; production adoption is still patchy.
 
 ---
 
@@ -252,9 +252,9 @@ Browser-side conversion attribution. Click on ad → ad-tech registers an "attri
 
 A **data clean room** is a privacy-preserving environment where two or more parties can run queries on combined data *without* any party seeing the other's raw data. Used heavily in 2025–2026 for:
 
-- **Brand × Publisher matching** — overlap your CRM with a publisher's audience to find common users.
-- **Brand × Retailer measurement** — closed-loop measurement with Amazon, Walmart, Target audiences.
-- **Advertiser × Walled Garden** — collaboration with Meta, Google without leaking PII either way.
+- **Brand × Publisher matching**, overlap your CRM with a publisher's audience to find common users.
+- **Brand × Retailer measurement**, closed-loop measurement with Amazon, Walmart, Target audiences.
+- **Advertiser × Walled Garden**, collaboration with Meta, Google without leaking PII either way.
 
 ### The major clean-room platforms
 
@@ -294,7 +294,7 @@ The clean room enforces:
 - **Allowed-query restrictions** (only pre-approved SQL is allowed).
 - **Differential privacy** (noise added to small-cell counts).
 
-Neither Brand A nor Publisher B sees the other's raw user list — they only see the matched-count and aggregate metrics.
+Neither Brand A nor Publisher B sees the other's raw user list, they only see the matched-count and aggregate metrics.
 
 ---
 
@@ -313,7 +313,7 @@ Used in:
 - Google's Attribution Reporting API.
 - Most cross-publisher clean-room reporting.
 
-🎯 **Memorize this.** When asked "how does measurement work under differential privacy?" — answer "We add calibrated noise to the output so individual records cannot be reverse-engineered, while preserving aggregate accuracy. The noise budget is controlled by ε."
+🎯 **Memorize this.** When asked "how does measurement work under differential privacy?", answer "We add calibrated noise to the output so individual records cannot be reverse-engineered, while preserving aggregate accuracy. The noise budget is controlled by ε."
 
 ---
 
@@ -340,10 +340,10 @@ You don't need to be a lawyer, but you must know which laws govern which behavio
 
 For marketing strategy, the four that drive 90% of decisions in 2026:
 
-1. **GDPR** — Europe.
-2. **CCPA / CPRA** — California (and de facto US national standard).
-3. **MHMDA** — health-adjacent businesses; brutal penalties.
-4. **COPPA** — anything touching kids.
+1. **GDPR**, Europe.
+2. **CCPA / CPRA**, California (and de facto US national standard).
+3. **MHMDA**, health-adjacent businesses; brutal penalties.
+4. **COPPA**, anything touching kids.
 
 ⚠️ **What most teams get wrong:** Treating "GDPR compliance" as a one-time legal project. In 2026, regulators expect *continuous* documentation: consent logs, data-processing inventories, DSAR fulfillment SLAs, breach-notification readiness.
 
@@ -353,10 +353,10 @@ For marketing strategy, the four that drive 90% of decisions in 2026:
 
 | Misconception | Reality |
 |---------------|---------|
-| "Hashing email = anonymized" | No — hashed PII is still personal data under GDPR |
-| "Server-side tracking bypasses GDPR" | False — GDPR applies regardless of the *server* that processes data |
+| "Hashing email = anonymized" | No, hashed PII is still personal data under GDPR |
+| "Server-side tracking bypasses GDPR" | False, GDPR applies regardless of the *server* that processes data |
 | "Consent Mode v2 is optional outside EU" | True technically, recommended globally for modeled-conversion benefits |
-| "SKAN is just for Apple's benefit" | SKAN is privacy-preserving but operationally useful — the conversion value is your real signal |
+| "SKAN is just for Apple's benefit" | SKAN is privacy-preserving but operationally useful, the conversion value is your real signal |
 | "Clean rooms guarantee zero data leakage" | They guarantee no *raw* data leakage; carefully-designed queries can still leak signal |
 | "The Privacy Sandbox already replaced cookies" | It exists but adoption is patchy in 2026 |
 | "GDPR doesn't apply outside Europe" | It applies to anyone processing EU residents' data, regardless of company location |
@@ -370,7 +370,7 @@ For marketing strategy, the four that drive 90% of decisions in 2026:
 | **CMP** | Consent Management Platform (OneTrust, Cookiebot, Didomi, etc.) |
 | **Consent Mode v2** | Google's framework for passing 4 consent signals alongside events |
 | **Basic / Advanced Consent Mode** | Tag-fires-not vs tag-fires-with-anonymous-ping-and-modeling |
-| **CAPI** | Conversions API — Meta's server-side conversion endpoint |
+| **CAPI** | Conversions API, Meta's server-side conversion endpoint |
 | **Enhanced Conversions** | Google Ads feature sending hashed PII for match |
 | **Enhanced Conversions for Leads** | Lead variant for B2B |
 | **fbc / fbp** | Meta's first-party cookies sent alongside CAPI events for dedup |
@@ -386,33 +386,33 @@ For marketing strategy, the four that drive 90% of decisions in 2026:
 | **Data Clean Room** | Privacy-preserving multi-party query environment |
 | **Differential Privacy** | Mathematical framework adding noise to protect individual records |
 | **GDPR / CCPA / CPRA** | The dominant 2026 privacy regulations |
-| **GPC** | Global Privacy Control — the browser-level "don't sell" signal |
+| **GPC** | Global Privacy Control, the browser-level "don't sell" signal |
 
 ---
 
-## 💼 Case Study — Apple's App Tracking Transparency vs Meta's Ad Business (2021)
+## 💼 Case Study, Apple's App Tracking Transparency vs Meta's Ad Business (2021)
 
-**Situation.** Throughout 2020 and into early 2021, Apple was preparing to launch **App Tracking Transparency (ATT)** — a privacy framework, embedded in iOS 14.5, that would require every iOS app to display a system-level prompt asking the user "Allow [App] to track your activity across other companies' apps and websites?" before the app could access the **IDFA** (Identifier for Advertisers, the mobile-advertising identifier Meta and the rest of the mobile-ad industry had built their measurement on for nearly a decade). Meta — at that point operating Facebook, Instagram, WhatsApp, and Messenger, with combined daily reach over 1.8 billion users — derived the overwhelming majority of its revenue from advertising. The IDFA-dependent ad-targeting and measurement stack was load-bearing for Meta's price-per-impression model. The conflict became explicit in late 2020 when Meta took out full-page newspaper ads opposing ATT and claiming it would devastate small businesses.
+**Situation.** Throughout 2020 and into early 2021, Apple was preparing to launch **App Tracking Transparency (ATT)** a privacy framework, embedded in iOS 14.5, that would require every iOS app to display a system-level prompt asking the user "Allow [App] to track your activity across other companies' apps and websites?" before the app could access the **IDFA** (Identifier for Advertisers, the mobile-advertising identifier Meta and the rest of the mobile-ad industry had built their measurement on for nearly a decade). Meta at that point operating Facebook, Instagram, WhatsApp, and Messenger, with combined daily reach over 1.8 billion users, derived the overwhelming majority of its revenue from advertising. The IDFA-dependent ad-targeting and measurement stack was load-bearing for Meta's price-per-impression model. The conflict became explicit in late 2020 when Meta took out full-page newspaper ads opposing ATT and claiming it would devastate small businesses.
 
-**Decision.** Apple shipped iOS 14.5 on **April 26, 2021**, with ATT mandatory across the iOS app ecosystem. Despite Meta's well-publicized objections, Apple did not delay or weaken the prompt. The actual user-facing default in the ATT dialog was *deny-by-default* — users had to explicitly tap "Allow Tracking" to grant IDFA access. Industry tracking (AppsFlyer, Adjust, Branch publishing aggregate opt-in rates) showed iOS-wide opt-in rates settled at roughly **25%** by mid-2021 — meaning ~75% of iOS users opted out of cross-app tracking, with the IDFA returning a null value to apps without consent.
+**Decision.** Apple shipped iOS 14.5 on **April 26, 2021**, with ATT mandatory across the iOS app ecosystem. Despite Meta's well-publicized objections, Apple did not delay or weaken the prompt. The actual user-facing default in the ATT dialog was *deny-by-default* users had to explicitly tap "Allow Tracking" to grant IDFA access. Industry tracking (AppsFlyer, Adjust, Branch publishing aggregate opt-in rates) showed iOS-wide opt-in rates settled at roughly **25%** by mid-2021 meaning ~75% of iOS users opted out of cross-app tracking, with the IDFA returning a null value to apps without consent.
 
-**Outcome.** In February 2022 Meta CFO David Wehner publicly disclosed that ATT would cost the company approximately **$10 billion in lost revenue in calendar 2022** — a figure that produced a single-day **~$232 billion market-cap drop in Meta's stock** when reported (the largest single-day market-cap decline in US stock-market history at that time). The downstream effects reshaped the entire mobile-ad industry: Meta accelerated its server-side **Conversions API (CAPI)** rollout, prioritized **Enhanced Match** via hashed first-party PII, and shifted measurement weight toward **MMM** and **incrementality testing**. Apple's own Search Ads business — operating natively inside the App Store and not affected by ATT in the same way — captured material share of mobile advertiser budgets. Industry analysts estimated the broader mobile-ad-industry revenue impact at $30B+ across 2022–2023 (Meta, Snap, YouTube mobile, Twitter mobile combined).
+**Outcome.** In February 2022 Meta CFO David Wehner publicly disclosed that ATT would cost the company approximately **$10 billion in lost revenue in calendar 2022** a figure that produced a single-day **~$232 billion market-cap drop in Meta's stock** when reported (the largest single-day market-cap decline in US stock-market history at that time). The downstream effects reshaped the entire mobile-ad industry: Meta accelerated its server-side **Conversions API (CAPI)** rollout, prioritized **Enhanced Match** via hashed first-party PII, and shifted measurement weight toward **MMM** and **incrementality testing**. Apple's own Search Ads business operating natively inside the App Store and not affected by ATT in the same way, captured material share of mobile advertiser budgets. Industry analysts estimated the broader mobile-ad-industry revenue impact at $30B+ across 2022–2023 (Meta, Snap, YouTube mobile, Twitter mobile combined).
 
-**Lesson for the exam / for practitioners.** Apple's ATT is the canonical case for *why privacy-first measurement is the only defensible 2026 architecture* — and why this module's stack (Consent Mode v2 + CAPI + Enhanced Conversions + SKAdNetwork + MMM as fallback) exists. The ATT impact also illustrates a strategic principle most exams test: **measurement infrastructure dependent on a single identifier the OS or browser controls is fragile by design**. The senior strategist's response is not "fight the platform" (Meta's 2020–2021 strategy, which failed) but to *rebuild measurement on first-party data + server-side conversion APIs + aggregate-level methods that don't require the deprecated identifier*. On the exam, when a case describes a brand exposed to a single-platform measurement collapse, the right answer is: layer server-side CAPI for recovery, deploy SKAdNetwork conversion-value design for mobile, and run MMM in parallel as the platform-independent ground-truth.
+**Lesson for the exam / for practitioners.** Apple's ATT is the canonical case for *why privacy-first measurement is the only defensible 2026 architecture*, and why this module's stack (Consent Mode v2 + CAPI + Enhanced Conversions + SKAdNetwork + MMM as fallback) exists. The ATT impact also illustrates a strategic principle most exams test: **measurement infrastructure dependent on a single identifier the OS or browser controls is fragile by design**. The senior strategist's response is not "fight the platform" (Meta's 2020–2021 strategy, which failed) but to *rebuild measurement on first-party data + server-side conversion APIs + aggregate-level methods that don't require the deprecated identifier*. On the exam, when a case describes a brand exposed to a single-platform measurement collapse, the right answer is: layer server-side CAPI for recovery, deploy SKAdNetwork conversion-value design for mobile, and run MMM in parallel as the platform-independent ground-truth.
 
 **Discussion (Socratic).**
-- Q1: Meta's 2020–2021 anti-ATT campaign — full-page newspaper ads, public CEO statements, Congressional appeals — failed to delay or weaken ATT. With hindsight, what should Meta have done instead between the iOS 14 announcement (June 2020) and iOS 14.5 launch (April 2021) to mitigate the $10B+ impact, and why is rebuilding measurement infrastructure usually a better play than public lobbying when a platform owner has decided?
+- Q1: Meta's 2020–2021 anti-ATT campaign full-page newspaper ads, public CEO statements, Congressional appeals failed to delay or weaken ATT. With hindsight, what should Meta have done instead between the iOS 14 announcement (June 2020) and iOS 14.5 launch (April 2021) to mitigate the $10B+ impact, and why is rebuilding measurement infrastructure usually a better play than public lobbying when a platform owner has decided?
 - Q2: The official 2022+ response across the mobile-ad industry was CAPI + Enhanced Match + SKAdNetwork + MMM. Why is the MMM layer specifically the most defensible *long-term* leg of that stack, even though it's the slowest and least granular of the four?
-- Q3: Apple's ATT was framed publicly as a *user privacy* feature. From a competitive-strategy perspective, what *non-privacy* commercial dimension did ATT serve for Apple — and how should that change how an advertiser treats Apple-driven measurement loss versus Chrome-driven loss?
+- Q3: Apple's ATT was framed publicly as a *user privacy* feature. From a competitive-strategy perspective, what *non-privacy* commercial dimension did ATT serve for Apple, and how should that change how an advertiser treats Apple-driven measurement loss versus Chrome-driven loss?
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
 1. The Sephora $1.2M settlement showed the California AG defines "sale" broadly enough to include letting an ad platform optimize on your customer data. Where does that leave standard CAPI implementations that share hashed email + event-conversion data with Meta? Build the strongest legal defense, then the strongest legal critique.
 2. Consent Mode v2 (Advanced) lets Google *model* lost conversions from non-consented users using their consented-traffic patterns. Is this "honoring consent" or "circumventing consent in a legally clever way"? Defend either position to a Chief Privacy Officer.
-3. Apple's SKAdNetwork passes a 6-bit (0–63) conversion-value signal. Smart advertisers encode revenue tiers, retention milestones, or LTV buckets. Design a conversion-value schema for a hypothetical mobile subscription app — and defend why your encoding choice will outperform a naive "install/purchase/not" three-state design.
-4. Data clean rooms (AWS, ADH, Snowflake, InfoSum) let two parties query joint data without exposing PII. The promise is "we share insights, not records." What's the *real* limitation — what kinds of analysis fundamentally cannot be done in a clean room, no matter what the vendor claims?
+3. Apple's SKAdNetwork passes a 6-bit (0–63) conversion-value signal. Smart advertisers encode revenue tiers, retention milestones, or LTV buckets. Design a conversion-value schema for a hypothetical mobile subscription app, and defend why your encoding choice will outperform a naive "install/purchase/not" three-state design.
+4. Data clean rooms (AWS, ADH, Snowflake, InfoSum) let two parties query joint data without exposing PII. The promise is "we share insights, not records." What's the *real* limitation, what kinds of analysis fundamentally cannot be done in a clean room, no matter what the vendor claims?
 5. Differential privacy adds calibrated noise to outputs to protect individuals. The ε (epsilon) parameter trades privacy for utility. A regulator picks ε = 0.5 (very private); your CMO wants ε = 5 (very useful). What's the conversation that gets you to a defensible ε, and how do you operationalize the trade-off in your reporting cadence?
 
 ---
@@ -426,8 +426,8 @@ You now know:
 - 📞 Meta's CAPI server-side conversion endpoint, deduplication, and Enhanced Matching.
 - 🔑 Google's Enhanced Conversions (web + leads variants).
 - 📱 Apple SKAdNetwork 4 / AdAttributionKit and how to design conversion-value mappings.
-- 🌐 Chrome's Privacy Sandbox — Topics, Protected Audience, Attribution Reporting, CHIPS.
-- 🏢 Data Clean Rooms — AWS, ADH, Snowflake, InfoSum, Habu, LiveRamp Safe Haven.
+- 🌐 Chrome's Privacy Sandbox, Topics, Protected Audience, Attribution Reporting, CHIPS.
+- 🏢 Data Clean Rooms, AWS, ADH, Snowflake, InfoSum, Habu, LiveRamp Safe Haven.
 - 🔢 Differential privacy and the ε privacy/utility trade-off.
 - 📜 The 2026 regulatory map.
 
@@ -446,13 +446,13 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 **Solove, D. (2024). "Understanding Privacy" (updated 5th ed.)** — academic privacy frame.
-- 📖 **"Click Here to Kill Everybody" by Bruce Schneier (2018)** — security + privacy strategist context.
-- 🔗 [Google's Consent Mode v2 documentation](https://support.google.com/google-ads/answer/10000067) — official.
-- 🔗 [Meta's Conversions API documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/) — implementation reference.
-- 🔗 [Apple's SKAdNetwork + AdAttributionKit documentation](https://developer.apple.com/documentation/storekit/skadnetwork) — official.
-- 🔗 [Chrome Privacy Sandbox dashboard](https://privacysandbox.com/) — current status of each API.
-- 🔗 [California AG's CCPA enforcement actions](https://oag.ca.gov/privacy/ccpa) — read the Sephora settlement language.
-- 🔗 [The IAB Tech Lab](https://iabtechlab.com/) — industry standards body for privacy-first measurement.
-- 🔗 [Future of Privacy Forum](https://fpf.org/) — academic + industry research.
-- 🔗 [Simo Ahava on Consent Mode v2 implementation](https://www.simoahava.com/tag/consent-mode/) — practical walkthroughs.
+- 📖 **Solove, D. (2024). "Understanding Privacy" (updated 5th ed.)**, academic privacy frame.
+- 📖 **"Click Here to Kill Everybody" by Bruce Schneier (2018)**, security + privacy strategist context.
+- 🔗 [Google's Consent Mode v2 documentation](https://support.google.com/google-ads/answer/10000067), official.
+- 🔗 [Meta's Conversions API documentation](https://developers.facebook.com/docs/marketing-api/conversions-api/), implementation reference.
+- 🔗 [Apple's SKAdNetwork + AdAttributionKit documentation](https://developer.apple.com/documentation/storekit/skadnetwork), official.
+- 🔗 [Chrome Privacy Sandbox dashboard](https://privacysandbox.com/), current status of each API.
+- 🔗 [California AG's CCPA enforcement actions](https://oag.ca.gov/privacy/ccpa), read the Sephora settlement language.
+- 🔗 [The IAB Tech Lab](https://iabtechlab.com/), industry standards body for privacy-first measurement.
+- 🔗 [Future of Privacy Forum](https://fpf.org/), academic + industry research.
+- 🔗 [Simo Ahava on Consent Mode v2 implementation](https://www.simoahava.com/tag/consent-mode/), practical walkthroughs.

@@ -15,7 +15,7 @@ YOUR CODE executes the tool(s)  ← model does NOT execute
             ↓
 Send tool_result(s) in user-role message
             ↓
-Claude continues — more tools or final text
+Claude continues, more tools or final text
             ↓ stop_reason == "end_turn"
 Done
 ```
@@ -47,7 +47,7 @@ Done
 
 | Value | Behavior |
 |-------|----------|
-| `{"type": "auto"}` (default) | Claude decides — may use any/no tool, parallel allowed |
+| `{"type": "auto"}` (default) | Claude decides, may use any/no tool, parallel allowed |
 | `{"type": "any"}` | MUST use a tool (any) |
 | `{"type": "tool", "name": "X"}` | MUST use tool X |
 | `{"type": "auto", "disable_parallel_tool_use": true}` | One tool per turn |
@@ -83,7 +83,7 @@ while True:
 
 ## ⚡ Parallel Tool Use
 
-- **Default ON** — Claude may emit multiple `tool_use` blocks in one response
+- **Default ON**, Claude may emit multiple `tool_use` blocks in one response
 - Execute them in parallel (asyncio / threads) for latency
 - Return ALL results in a single user-role message before the next call
 - Opt out: `tool_choice={"type":"auto","disable_parallel_tool_use":True}`
@@ -123,7 +123,7 @@ client.beta.messages.create(
 )
 ```
 
-- ⚠️ Beta — behavior may change
+- ⚠️ Beta, behavior may change
 - Sandbox in Docker/VM
 - Each screenshot ≈ 1500 tokens
 - Set step caps + watchdog timers
@@ -224,10 +224,10 @@ Mirror this pattern. Cursor, Cody, Aider all converged here.
 
 ## ✏️ Quick Self-Check
 
-1. Send a `tool_result` — which role? ___
-2. Force tool X — which `tool_choice`? ___
-3. Disable parallel tool use — how? ___
-4. Computer use built-in tools — three names? ___
+1. Send a `tool_result`, which role? ___
+2. Force tool X, which `tool_choice`? ___
+3. Disable parallel tool use, how? ___
+4. Computer use built-in tools, three names? ___
 5. Three rules for safe destructive-action tools? ___
 
 If you answer all 5 in 60 seconds, you own this module. ✅

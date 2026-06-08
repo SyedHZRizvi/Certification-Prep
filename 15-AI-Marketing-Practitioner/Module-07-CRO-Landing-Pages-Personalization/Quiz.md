@@ -210,10 +210,10 @@ D. Following design trends
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Observe, Hypothesize, Test, Iterate**
-The classic CRO cycle. Skip the Observe step and you're guessing — the most common failure mode.
+The classic CRO cycle. Skip the Observe step and you're guessing, the most common failure mode.
 
 ### Q2: **B. 4% probability of seeing this data if there were no real effect**
-P-value is the probability of observing the data (or more extreme) under the null hypothesis. It's NOT "the probability the treatment is better" — that's a common misinterpretation.
+P-value is the probability of observing the data (or more extreme) under the null hypothesis. It's NOT "the probability the treatment is better", that's a common misinterpretation.
 
 ### Q3: **B. Inflates the false positive rate**
 Peeking creates a multiple-comparisons problem. Every time you peek and could stop, you're doing another test. False positive rates compound. Either use Bayesian (peek-tolerant) or commit to fixed sample size.
@@ -231,7 +231,7 @@ Math: 5K visits × 12 months ÷ 2 variants = 30K per variant per year. To detect
 Mutiny uses Clearbit / 6sense reverse-IP data to detect visitor's company, then serves personalized hero/copy/CTA. Acquired by Salesforce in 2024.
 
 ### Q8: **B. Routes each visitor to the variant ML thinks they'll convert on**
-Unbounce doesn't personalize copy per visitor — it uses ML to send Visitor A to Variant 2 because users like A historically converted on V2. Different mechanism.
+Unbounce doesn't personalize copy per visitor, it uses ML to send Visitor A to Variant 2 because users like A historically converted on V2. Different mechanism.
 
 ### Q9: **C. Hero with headline, subhead, CTA**
 Above-the-fold hero with headline (proposition), subhead (clarification), CTA (one button). Critical: only ONE primary CTA. Multiple CTAs above fold = analysis paralysis.
@@ -252,7 +252,7 @@ Microsoft Clarity is fully free with unlimited sessions. Same core features as H
 Booking.com publicly shares: ~10% positive tests, ~70% neutral, ~20% NEGATIVE (would have hurt the business). The discipline of testing catches losers.
 
 ### Q15: **B. Adaptively allocates more traffic to winning variants**
-Multi-armed bandits start 50/50, then shift traffic to leading variants as evidence accumulates. Faster convergence, less wasted traffic on losers — but harder to interpret p-values from.
+Multi-armed bandits start 50/50, then shift traffic to leading variants as evidence accumulates. Faster convergence, less wasted traffic on losers, but harder to interpret p-values from.
 
 ### Q16: **B. 80% chance of detecting the effect IF it exists**
 Power = sensitivity. 0.80 power means: if a 10% lift exists, there's an 80% chance your test will detect it as statistically significant.
@@ -264,7 +264,7 @@ Airbnb's 2019 test made photos larger + more padding. Conversion doubled from 2.
 The most common CRO failure mode. Marketers guess at what's broken, test random changes, and hit at random rates. Always observe first (replays + heatmaps).
 
 ### Q19: **B. An offer that reduces purchase risk**
-Money-back guarantee, 30-day free trial, no-credit-card-required — all reduce the buyer's risk of "what if it doesn't work." Lifts conversion 5-10% typically.
+Money-back guarantee, 30-day free trial, no-credit-card-required, all reduce the buyer's risk of "what if it doesn't work." Lifts conversion 5-10% typically.
 
 ### Q20: **B. Reduces conversion (looks generic, inauthentic)**
 Generic stock photography is a conversion killer. Real customer photos, real product photos, or carefully-staged authentic photos outperform stock by significant margins.
@@ -276,7 +276,7 @@ Generic stock photography is a conversion killer. Real customer photos, real pro
 ClickFunnels specializes in multi-step sales flows: tripwire → main offer → order bump → upsell → downsell. NOT a general landing page builder.
 
 ### Q23: **B. Ecom personalization**
-Dynamic Yield (Mastercard-owned, formerly McDonald's) specializes in ecom — dynamic product recommendations, copy by segment, real-time personalization for shopping flows.
+Dynamic Yield (Mastercard-owned, formerly McDonald's) specializes in ecom, dynamic product recommendations, copy by segment, real-time personalization for shopping flows.
 
 ### Q24: **B. 10-30%**
 Moving CTA above the fold consistently delivers 10-30% lift. One of the highest-leverage common tests.

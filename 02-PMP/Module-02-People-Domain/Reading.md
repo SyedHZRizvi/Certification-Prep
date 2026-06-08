@@ -1,6 +1,6 @@
 # PMP Module 2: People Domain 👥
 
-> **Why this module matters:** **42% of the exam** is People domain. This is the BIGGEST module to master. Most PMP failures happen here. Most exam questions are situational — "What should the PM do?" — and the right answer is almost always *people-focused*.
+> **Why this module matters:** **42% of the exam** is People domain. This is the BIGGEST module to master. Most PMP failures happen here. Most exam questions are situational "What should the PM do?" and the right answer is almost always *people-focused*.
 
 ---
 
@@ -80,7 +80,7 @@ The new PMP expects you to be a **servant leader**, not a "command-and-control" 
 🎯 **Exam pattern:** "PM is told a team member is underperforming. What FIRST?"
 - ❌ Replace them
 - ❌ Discipline them
-- ✅ **Talk with them — understand the situation, support them**
+- ✅ **Talk with them, understand the situation, support them**
 
 ---
 
@@ -98,7 +98,7 @@ The new PMP expects you to be a **servant leader**, not a "command-and-control" 
 
 🎯 **Exam pattern:** "Team has been together 3 months. Conflicts about technical decisions are bubbling up." → **Storming.** PM should facilitate resolution, not panic.
 
-🎯 **Common trap:** Don't treat Forming team members harshly — they need support, not pressure.
+🎯 **Common trap:** Don't treat Forming team members harshly, they need support, not pressure.
 
 ---
 
@@ -145,14 +145,14 @@ Conflict in projects is **inevitable and often healthy**. The exam tests your co
 | **3. Compromising** | Both give a little | When time is tight |
 | **4. Smoothing / Accommodating** | Emphasize agreement, downplay differences | Temp fix, low stakes |
 | **5. Forcing / Directing** | One side wins by authority | Emergencies |
-| **6. Withdrawing / Avoiding** | Retreat from the conflict | Worst — only for cooling off |
+| **6. Withdrawing / Avoiding** | Retreat from the conflict | Worst, only for cooling off |
 
 🎯 **Exam pattern (MOST COMMON):** "Two team members disagree on a technical approach. PM should:"
-- ✅ **Confront / Problem-solve** — bring them together to find the best solution.
+- ✅ **Confront / Problem-solve**, bring them together to find the best solution.
 
-❌ Avoid "withdrawing" or "smoothing" — these are usually wrong.
+❌ Avoid "withdrawing" or "smoothing", these are usually wrong.
 
-### Mnemonic: **"5 C's + W"** — Confronting, Collaborating, Compromising, Smoothing/aCcommodating, Forcing/Commanding, Withdrawing
+### Mnemonic: **"5 C's + W"**, Confronting, Collaborating, Compromising, Smoothing/aCcommodating, Forcing/Commanding, Withdrawing
 
 ---
 
@@ -176,9 +176,9 @@ PMs spend ~90% of time communicating. Master this.
 
 ### Communication Methods:
 
-- **Push** — emails, status reports (sender controls)
-- **Pull** — wikis, intranet (receiver controls)
-- **Interactive** — meetings, calls (real-time)
+- **Push**, emails, status reports (sender controls)
+- **Pull**, wikis, intranet (receiver controls)
+- **Interactive**, meetings, calls (real-time)
 
 ### Communication Channels Formula
 **Channels = n(n-1)/2** where n = number of stakeholders.
@@ -186,16 +186,16 @@ PMs spend ~90% of time communicating. Master this.
 Example: 5 people → 5(4)/2 = **10 channels**.
 Add 1 person → 6(5)/2 = **15 channels** (50% more!)
 
-🎯 **Exam tip:** When asked "how many comm channels?" — apply the formula.
+🎯 **Exam tip:** When asked "how many comm channels?", apply the formula.
 
 ### The 7 C's of Effective Communication
-1. **Clear** — easy to understand
-2. **Concise** — no unnecessary details
-3. **Concrete** — specific facts
-4. **Correct** — accurate
-5. **Coherent** — logical flow
-6. **Complete** — has all info
-7. **Courteous** — respectful
+1. **Clear**, easy to understand
+2. **Concise**, no unnecessary details
+3. **Concrete**, specific facts
+4. **Correct**, accurate
+5. **Coherent**, logical flow
+6. **Complete**, has all info
+7. **Courteous**, respectful
 
 ---
 
@@ -205,11 +205,11 @@ The exam loves EQ. Per Goleman's framework:
 
 ### 5 Components:
 
-1. 🪞 **Self-awareness** — know your emotions
-2. 🛑 **Self-regulation** — manage your emotions
-3. 🚀 **Motivation** — drive yourself
-4. 💞 **Empathy** — understand others
-5. 🤝 **Social skills** — manage relationships
+1. 🪞 **Self-awareness**, know your emotions
+2. 🛑 **Self-regulation**, manage your emotions
+3. 🚀 **Motivation**, drive yourself
+4. 💞 **Empathy**, understand others
+5. 🤝 **Social skills**, manage relationships
 
 🎯 **Exam pattern:** "PM feels frustrated with a stakeholder's demands. What should they do?"
 - ❌ Argue
@@ -242,17 +242,17 @@ The exam loves EQ. Per Goleman's framework:
 🎯 **Insight:** Pay raises *prevent* dissatisfaction; they don't *motivate*. Motivators motivate.
 
 ### McGregor's X & Y
-- **Theory X** — people are lazy, need control
-- **Theory Y** — people are self-motivated, need empowerment
+- **Theory X**, people are lazy, need control
+- **Theory Y**, people are self-motivated, need empowerment
 
 🎯 PMP-2021 mindset = Theory Y.
 
 ### McClelland's Acquired Needs (3 needs)
-- **Achievement** — challenging goals
-- **Affiliation** — relationships
-- **Power** — influence over others
+- **Achievement**, challenging goals
+- **Affiliation**, relationships
+- **Power**, influence over others
 
-Different team members are motivated differently — adapt your style.
+Different team members are motivated differently, adapt your style.
 
 ---
 
@@ -299,7 +299,7 @@ A **Team Charter** is a document the team creates together:
 - Conflict resolution norms
 - Meeting cadences
 
-**Created collaboratively** — not imposed by the PM.
+**Created collaboratively**, not imposed by the PM.
 
 ---
 
@@ -309,14 +309,14 @@ A **Team Charter** is a document the team creates together:
 
 ### Stakeholder Engagement Levels (per PMBOK):
 
-1. **Unaware** — doesn't know about project
-2. **Resistant** — knows but resists
-3. **Neutral** — knows, neither supports nor opposes
-4. **Supportive** — knows and supports
-5. **Leading** — actively engaged in success
+1. **Unaware**, doesn't know about project
+2. **Resistant**, knows but resists
+3. **Neutral**, knows, neither supports nor opposes
+4. **Supportive**, knows and supports
+5. **Leading**, actively engaged in success
 
 🎯 **Exam pattern:** "PM identifies a stakeholder who is resistant. What should they do?"
-- ✅ **Engage them — understand concerns, address them, move them up the engagement ladder**
+- ✅ **Engage them, understand concerns, address them, move them up the engagement ladder**
 
 ---
 
@@ -371,7 +371,7 @@ For exam scenarios, default to these:
 
 You now know:
 
-- 👥 People Domain = **42% of exam** — the biggest piece
+- 👥 People Domain = **42% of exam**, the biggest piece
 - 🛡️ Servant leadership is the default mindset
 - 🎭 Tuckman's 5 stages
 - 🤬 5+ conflict resolution techniques (Confronting is best default)
@@ -395,46 +395,46 @@ You now know:
 ### Prerequisites for this module
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - **PMBOK 7's Stewardship + Team + Leadership principles** — covered in [Module 01: Foundations](../Module-01-Foundations/Reading.md). If those terms feel foreign, re-read the principles list before continuing.
-> - **Basic vocabulary on team dynamics** — phrases like "1-on-1," "retrospective," "psychological safety." If new, [01-Scrum-Master Module 02: Scrum Framework](../../01-Scrum-Master/Module-02-Scrum-Framework/Reading.md) provides a 30-minute grounding.
-> - **Optional cross-course preparation:** Scrum Master Module 03 ("Roles") covers servant leadership in the agile context — this module builds on that foundation and extends it to predictive + hybrid contexts.
+> - **PMBOK 7's Stewardship + Team + Leadership principles**, covered in [Module 01: Foundations](../Module-01-Foundations/Reading.md). If those terms feel foreign, re-read the principles list before continuing.
+> - **Basic vocabulary on team dynamics**, phrases like "1-on-1," "retrospective," "psychological safety." If new, [01-Scrum-Master Module 02: Scrum Framework](../../01-Scrum-Master/Module-02-Scrum-Framework/Reading.md) provides a 30-minute grounding.
+> - **Optional cross-course preparation:** Scrum Master Module 03 ("Roles") covers servant leadership in the agile context, this module builds on that foundation and extends it to predictive + hybrid contexts.
 >
 > If any of these are shaky, pause and review before continuing.
 
 ### Where this leads
 
 > **Where this leads.**
-> - **Inside this course:** [Module 10 — Stakeholder Management](../Module-10-Stakeholders/Reading.md) extends the engagement-levels framework introduced here; [Module 05 — Agile & Hybrid](../Module-05-Agile-Hybrid/Reading.md) shows what servant leadership looks like in iterative delivery.
+> - **Inside this course:** [Module 10 Stakeholder Management](../Module-10-Stakeholders/Reading.md) extends the engagement-levels framework introduced here; [Module 05 Agile & Hybrid](../Module-05-Agile-Hybrid/Reading.md) shows what servant leadership looks like in iterative delivery.
 > - **Cross-course:** [01-Scrum-Master Module 03: Scrum Roles](../../01-Scrum-Master/Module-03-Roles/Reading.md) is the agile-native deep-dive on servant leadership; [13-ISM-CPSM Module 04](../../13-ISM-CPSM/Module-04-Supplier-Relationship-Management/Reading.md) translates conflict-management techniques to supplier-relationship contexts.
 > - **Practice:** [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) and [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md) draw ~12–18 questions each from this module (the largest single source on the People-domain 42%).
 
 ---
 
-## 📊 Case Study — Spotify (2022): The Squad Model Walks Itself Back
+## 📊 Case Study, Spotify (2022): The Squad Model Walks Itself Back
 
-**Situation.** Spotify's "squad / tribe / chapter / guild" model — originally documented by Henrik Kniberg and Anders Ivarsson in their 2012 white paper *Scaling Agile @ Spotify* — became the most-copied agile-at-scale framework in the industry for a decade. Fortune-500 IT shops, banks, and even some PMOs rolled it out unchanged. By 2022, Spotify had ~6,500 engineers across hundreds of "squads." Two former Spotify engineering leads (Jeremiah Lee and Joakim Sundén) and several public Spotify blog posts and conference talks (notably Sundén's 2022 talk and Lee's widely shared 2020 essay *"Failed #SquadGoals"*) made it clear: **Spotify itself had largely abandoned the model.**
+**Situation.** Spotify's "squad / tribe / chapter / guild" model originally documented by Henrik Kniberg and Anders Ivarsson in their 2012 white paper *Scaling Agile @ Spotify* became the most-copied agile-at-scale framework in the industry for a decade. Fortune-500 IT shops, banks, and even some PMOs rolled it out unchanged. By 2022, Spotify had ~6,500 engineers across hundreds of "squads." Two former Spotify engineering leads (Jeremiah Lee and Joakim Sundén) and several public Spotify blog posts and conference talks (notably Sundén's 2022 talk and Lee's widely shared 2020 essay *"Failed #SquadGoals"*) made it clear: **Spotify itself had largely abandoned the model.**
 
-**Decision.** What Spotify actually moved toward — first quietly, then openly — was a hybrid of (a) traditional functional reporting lines for performance management (chapters were always functional, but had been intentionally weakened); (b) cross-functional "missions" with explicit, dated outcomes instead of permanent autonomous squads; (c) heavier program-management overlay for cross-squad dependencies; and (d) renewed investment in shared infrastructure and platform teams, which the autonomous-squad model had systematically under-invested in. CEO Daniel Ek's 2023 cost-discipline letter to staff (which preceded layoffs of ~1,500 people) implicitly criticized the prior decade's "many squads, no plan" posture.
+**Decision.** What Spotify actually moved toward first quietly, then openly was a hybrid of (a) traditional functional reporting lines for performance management (chapters were always functional, but had been intentionally weakened); (b) cross-functional "missions" with explicit, dated outcomes instead of permanent autonomous squads; (c) heavier program-management overlay for cross-squad dependencies; and (d) renewed investment in shared infrastructure and platform teams, which the autonomous-squad model had systematically under-invested in. CEO Daniel Ek's 2023 cost-discipline letter to staff (which preceded layoffs of ~1,500 people) implicitly criticized the prior decade's "many squads, no plan" posture.
 
-**Outcome.** Spotify shipped fewer high-impact features per year in 2021–2022 than the 2014–2017 peak (per analysis by ex-employees and third-party press, including *Business Insider* coverage). The 2023 reorganization explicitly added engineering managers with real authority back into the reporting structure. The lesson is not that the squad model "failed" — Kniberg himself never claimed it was a recipe — but that **organizations that copied it as a recipe rather than as a description of one company's snapshot suffered.** ING Bank, an early high-profile adopter, has also publicly evolved its tribe structure (Bank's 2023 disclosures and Sundén's later commentary).
+**Outcome.** Spotify shipped fewer high-impact features per year in 2021–2022 than the 2014–2017 peak (per analysis by ex-employees and third-party press, including *Business Insider* coverage). The 2023 reorganization explicitly added engineering managers with real authority back into the reporting structure. The lesson is not that the squad model "failed" Kniberg himself never claimed it was a recipe but that **organizations that copied it as a recipe rather than as a description of one company's snapshot suffered.** ING Bank, an early high-profile adopter, has also publicly evolved its tribe structure (Bank's 2023 disclosures and Sundén's later commentary).
 
-**Lesson for the exam / for practitioners.** PMBOK 7's principle of **Tailoring** (PMI 2021, §3.7) is the official PMI answer here, and it shows up heavily in the People-domain situational questions. The exam will give you a scenario like *"A program manager wants to adopt the Spotify model wholesale across 12 product teams."* The right answer is never "Yes, copy it" or "No, never" — it's something like *"Assess team maturity, dependency structure, regulatory context, and stakeholder needs; tailor the team structure to fit."* Servant leadership remains the right default at the team level, but **autonomy without accountability is the trap**. Spotify, by 2022, was teaching the industry that lesson at its own expense.
+**Lesson for the exam / for practitioners.** PMBOK 7's principle of **Tailoring** (PMI 2021, §3.7) is the official PMI answer here, and it shows up heavily in the People-domain situational questions. The exam will give you a scenario like *"A program manager wants to adopt the Spotify model wholesale across 12 product teams."* The right answer is never "Yes, copy it" or "No, never", it's something like *"Assess team maturity, dependency structure, regulatory context, and stakeholder needs; tailor the team structure to fit."* Servant leadership remains the right default at the team level, but **autonomy without accountability is the trap**. Spotify, by 2022, was teaching the industry that lesson at its own expense.
 
 **Discussion (Socratic).**
-- Q1: Kniberg's 2012 paper was widely *misread* as a prescription, when it was descriptive. Whose responsibility was that — Spotify's (for not being clearer)? The copying organizations' (for not doing their own tailoring)? PMI's / industry thought leaders'? Build the strongest case for one position.
-- Q2: At what specific organizational size or complexity threshold does the trade-off flip — from "fully autonomous squads outperform" to "you need functional managers with real authority"? Defend a specific answer (e.g., "above ~150 engineers, the cross-squad coordination cost exceeds the autonomy gain") with reasoning.
-- Q3: A new sponsor asks you, as PM, to roll out the squad model to their 200-person org "because Spotify uses it." Knowing the 2020–2023 walk-back, how do you decline without making the sponsor lose face — applying the Power Skills + Emotional Intelligence frameworks from this module?
+- Q1: Kniberg's 2012 paper was widely *misread* as a prescription, when it was descriptive. Whose responsibility was that, Spotify's (for not being clearer)? The copying organizations' (for not doing their own tailoring)? PMI's / industry thought leaders'? Build the strongest case for one position.
+- Q2: At what specific organizational size or complexity threshold does the trade-off flip, from "fully autonomous squads outperform" to "you need functional managers with real authority"? Defend a specific answer (e.g., "above ~150 engineers, the cross-squad coordination cost exceeds the autonomy gain") with reasoning.
+- Q3: A new sponsor asks you, as PM, to roll out the squad model to their 200-person org "because Spotify uses it." Knowing the 2020–2023 walk-back, how do you decline without making the sponsor lose face, applying the Power Skills + Emotional Intelligence frameworks from this module?
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 These prompts go beyond the case study and force integration across the module.
 
-1. **Conflict default — Confronting vs Compromising.** The "right" default conflict-resolution technique on the PMP is *Confronting / Problem-solving*. But Compromising is often faster and lower-friction. Construct a scenario where Compromising is genuinely the right call (not just an easier one) and defend it using Goleman's EQ framework and PMBOK 7's Team principle.
+1. **Conflict default, Confronting vs Compromising.** The "right" default conflict-resolution technique on the PMP is *Confronting / Problem-solving*. But Compromising is often faster and lower-friction. Construct a scenario where Compromising is genuinely the right call (not just an easier one) and defend it using Goleman's EQ framework and PMBOK 7's Team principle.
 2. **Motivation theory pluralism.** Maslow (1943), Herzberg (1959), McGregor (1960), and McClelland (1961) all give different answers to "what motivates people." Pick a team member you have worked with whose behavior is best explained by *one* of these and was misunderstood when judged by *another*. Write the 1-on-1 conversation script you would use, framed in the correct theory.
 3. **Tuckman in remote/hybrid teams.** Tuckman's 1965 stages were developed observing co-located groups. Where does the model still apply in a fully-remote 2024 team? Where does it break down? Cite specific evidence (e.g., Microsoft's 2022 *Work Trend Index* on hybrid collaboration cost).
-4. **Servant leadership and high-performance pressure.** A team you lead is in Performing stage; a board-level executive wants you to "push harder for more output." Servant-leader behaviors say protect the team's focus and refuse interruptions. What's the exact line where protecting the team becomes shielding under-delivery — and how do you signal that in your management style? Cite Greenleaf (1970) and the Pulse of the Profession framing of "value-driven leadership."
+4. **Servant leadership and high-performance pressure.** A team you lead is in Performing stage; a board-level executive wants you to "push harder for more output." Servant-leader behaviors say protect the team's focus and refuse interruptions. What's the exact line where protecting the team becomes shielding under-delivery, and how do you signal that in your management style? Cite Greenleaf (1970) and the Pulse of the Profession framing of "value-driven leadership."
 5. **Communication-channels formula vs reality.** n(n−1)/2 says a 12-person team has 66 channels. But Slack, async docs, and AI summaries change channel cost. Is the formula still useful, or is it an artifact of 1990s comms thinking? Defend an answer and propose a 2026-grade replacement metric.
 
 ---
@@ -443,12 +443,12 @@ These prompts go beyond the case study and force integration across the module.
 
 | Framework / claim | Originator | Year | Publication |
 |---|---|---|---|
-| Servant Leadership — concept | Greenleaf, Robert K. | 1970 | *The Servant as Leader* (essay), Greenleaf Center; expanded in *Servant Leadership* (Paulist Press, 1977) |
-| Servant Leadership — 10 behaviors / 7 cited | Spears, Larry C. | 1995 | *Reflections on Leadership* (ed.), Wiley |
-| Tuckman's 5 stages — Forming/Storming/Norming/Performing | Tuckman, Bruce W. | 1965 | *"Developmental Sequence in Small Groups,"* Psychological Bulletin, 63(6): 384–399 |
+| Servant Leadership, concept | Greenleaf, Robert K. | 1970 | *The Servant as Leader* (essay), Greenleaf Center; expanded in *Servant Leadership* (Paulist Press, 1977) |
+| Servant Leadership, 10 behaviors / 7 cited | Spears, Larry C. | 1995 | *Reflections on Leadership* (ed.), Wiley |
+| Tuckman's 5 stages, Forming/Storming/Norming/Performing | Tuckman, Bruce W. | 1965 | *"Developmental Sequence in Small Groups,"* Psychological Bulletin, 63(6): 384–399 |
 | Tuckman's Adjourning addition | Tuckman, B.W. & Jensen, M.A. | 1977 | *"Stages of Small-Group Development Revisited,"* Group & Organization Studies, 2(4) |
 | 5 Conflict-Resolution modes | Thomas, K.W. & Kilmann, R.H. | 1974 | *Thomas-Kilmann Conflict Mode Instrument*, Xicom |
-| Emotional Intelligence (EQ) — 5 components | Goleman, Daniel | 1995 | *Emotional Intelligence: Why It Can Matter More Than IQ*, Bantam |
+| Emotional Intelligence (EQ), 5 components | Goleman, Daniel | 1995 | *Emotional Intelligence: Why It Can Matter More Than IQ*, Bantam |
 | EQ in the workplace | Goleman, Daniel | 1998 | *Working with Emotional Intelligence*, Bantam |
 | Maslow's Hierarchy of Needs | Maslow, Abraham H. | 1943 | *"A Theory of Human Motivation,"* Psychological Review, 50(4): 370–396 |
 | Herzberg's Two-Factor Theory | Herzberg, Frederick | 1959 | *The Motivation to Work* (with Mausner & Snyderman), Wiley |

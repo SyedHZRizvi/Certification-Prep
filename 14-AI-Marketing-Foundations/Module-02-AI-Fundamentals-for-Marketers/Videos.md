@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: AI Fundamentals for Marketers
 
-> **How to use:** These four essentials together give you the mental model. Watch in order. Pause and re-watch the LLM mechanics video twice if needed — it's the most leveraged hour of this course.
+> **How to use:** These four essentials together give you the mental model. Watch in order. Pause and re-watch the LLM mechanics video twice if needed, it's the most leveraged hour of this course.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Generative AI for Everyone — Intro</p>
+      <p class="vg-title">Generative AI for Everyone, Intro</p>
       <p class="vg-creator">Andrew Ng / DeepLearning.AI</p>
       <span class="vg-duration">⏱ 18 min · The cleanest LLM intro on YouTube</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AI for Marketers — Prompt Engineering Basics</p>
+      <p class="vg-title">AI for Marketers, Prompt Engineering Basics</p>
       <p class="vg-creator">HubSpot Academy</p>
       <span class="vg-duration">⏱ 14 min · The ROLE / CONTEXT / TASK framework</span>
     </div>

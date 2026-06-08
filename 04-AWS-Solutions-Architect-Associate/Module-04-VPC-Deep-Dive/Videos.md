@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: VPC Deep Dive
 
-> **How to use:** Networking is the densest SAA module. Watch in order. Draw the topology as you go — diagramming = memory.
+> **How to use:** Networking is the densest SAA module. Watch in order. Draw the topology as you go, diagramming = memory.
 
 ## ⭐ Essential watching (~85 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🌐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">VPC From Scratch — Subnets, Routes, IGW, NAT</p>
+      <p class="vg-title">VPC From Scratch, Subnets, Routes, IGW, NAT</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 25 min · The foundation</span>
     </div>
@@ -145,7 +145,7 @@
 1. What makes a subnet "public" vs "private"?
 2. Difference between Gateway endpoint and Interface endpoint?
 3. Is VPC peering transitive? What's the alternative for 10 VPCs?
-4. Direct Connect vs VPN — when each?
+4. Direct Connect vs VPN, when each?
 5. Why use NAT GW one per AZ?
 
 Ready? Take the [Quiz](./Quiz.md).

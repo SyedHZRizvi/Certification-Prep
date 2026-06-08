@@ -106,7 +106,7 @@ D. The lessons-learned register only
 
 ### Q18. A BCR of 0.8 means:
 A. The project is highly profitable
-B. Costs exceed benefits — generally not a good investment
+B. Costs exceed benefits, generally not a good investment
 C. ROI is 80%
 D. Payback is 0.8 years
 
@@ -124,7 +124,7 @@ D. Form, Storm, Norm
 
 ### Q21. The Sponsor and Steering Committee define for the project:
 A. Sprint backlog priorities
-B. Governance — decision rights, escalation, approvals
+B. Governance, decision rights, escalation, approvals
 C. Daily standup agenda
 D. Pair programming pairs
 
@@ -142,7 +142,7 @@ D. Hand off without documentation
 ## 🎯 Explanations
 
 ### Q11: **B. Payback 3 years**
-For Payback Period, LOWER is better — sooner recovery of investment.
+For Payback Period, LOWER is better, sooner recovery of investment.
 
 ### Q12: **B. Coaching end-users to adopt the new system**
 OCM helps people adopt change (people-side). Project change control handles approved scope/schedule/cost changes (process-side).
@@ -151,7 +151,7 @@ OCM helps people adopt change (people-side). Project change control handles appr
 ADKAR = Awareness, Desire, Knowledge, Ability, Reinforcement.
 
 ### Q14: **C. Assess impact, propose changes, communicate**
-External regulatory changes require impact assessment, formal change requests, and stakeholder communication — never ignore or stop completely.
+External regulatory changes require impact assessment, formal change requests, and stakeholder communication, never ignore or stop completely.
 
 ### Q15: **B. Strategic alignment, CBA, ROI, alternatives**
 The Business Case justifies WHY the project exists; it's not the execution plan.
@@ -163,7 +163,7 @@ Higher IRR is better when risk profiles are comparable.
 Benefits often realize after delivery (e.g., revenue grows over time). The Benefits Management Plan tracks how/when benefits are achieved.
 
 ### Q18: **B. Costs exceed benefits**
-BCR > 1 means profitable. BCR = 0.8 means benefits are only 80% of costs — generally avoid.
+BCR > 1 means profitable. BCR = 0.8 means benefits are only 80% of costs, generally avoid.
 
 ### Q19: **C. Assess impact, communicate, consider adjustment**
 Business environment domain task: monitor external changes, evaluate impact on value, and propose adjustments.
@@ -175,7 +175,7 @@ Lewin's classic 3-stage OCM model.
 Sponsor + steering committee provide governance: decision rights, escalation paths, approvals.
 
 ### Q22: **B. Transition to operations, lessons learned, formal closure**
-Standard closing-process activities — never just disband.
+Standard closing-process activities, never just disband.
 
 ➡️ [Cheat Sheet](./Cheat-Sheet.md) → [Module 5](../Module-05-Agile-Hybrid/Reading.md)
 
@@ -226,20 +226,20 @@ B. Pick Project B: even though Project A has higher absolute NPV, the 7-year pay
 C. Pick both.
 D. Defer the decision indefinitely.
 
-### Q25. A new privacy regulation (e.g., a 2024 EU AI Act-style rule) passes mid-project and applies to your deliverable. The sponsor says "the regulation is ambiguous — let's wait and see." Using the PMI Code of Ethics (Honesty + Responsibility) AND PMBOK 7's Stewardship principle, what is the MOST defensible PM response? *(Evaluate)*
-A. Comply with the sponsor — they outrank the PM.
+### Q25. A new privacy regulation (e.g., a 2024 EU AI Act-style rule) passes mid-project and applies to your deliverable. The sponsor says "the regulation is ambiguous, let's wait and see." Using the PMI Code of Ethics (Honesty + Responsibility) AND PMBOK 7's Stewardship principle, what is the MOST defensible PM response? *(Evaluate)*
+A. Comply with the sponsor, they outrank the PM.
 B. Refuse to comply with the sponsor's direction by quitting publicly.
 C. Document the regulatory risk in writing, perform a structured impact assessment (cost, schedule, scope, business value), present at least three response options to the steering committee, and recommend formal legal counsel review before adopting the wait-and-see posture; escalate further if the recommended posture exposes the organization to material risk.
 D. Quietly implement compliance without telling the sponsor.
 
 ### Q26. You are PM of a 1,500-person ERP rollout. The implementation team has used Kotter's 8 steps; HR uses ADKAR for individuals. There is friction over which model "owns" change. Using PMBOK 7's Tailoring principle, what's the MOST defensible integration? *(Create)*
 A. Pick one model and ban the other.
-B. Use Kotter (1996) at the organizational/program level (urgency, coalition, vision, communication) and ADKAR (Hiatt 2006) at the individual level (awareness → reinforcement); map them explicitly — e.g., "Kotter step 4 (communicate vision) feeds ADKAR Awareness for each affected user" — and align metrics so neither team is measured against the wrong horizon.
+B. Use Kotter (1996) at the organizational/program level (urgency, coalition, vision, communication) and ADKAR (Hiatt 2006) at the individual level (awareness → reinforcement); map them explicitly e.g., "Kotter step 4 (communicate vision) feeds ADKAR Awareness for each affected user" and align metrics so neither team is measured against the wrong horizon.
 C. Outsource change management entirely to a consultancy.
 D. Let each team use whichever model they prefer without coordination.
 
 ### Q27. Bent Flyvbjerg's research (2003, 2023) shows mega-projects average ~28% cost overrun. Your $250M project's plan shows a 12% Contingency Reserve. The CFO wants to cut it to 4% to "look better to the board." How do you respond? *(Evaluate)*
-A. Agree — the CFO has authority.
+A. Agree, the CFO has authority.
 B. Refuse silently and pad the budget elsewhere.
 C. Present the empirical base rate (Flyvbjerg 2023, Standish CHAOS 2024) for projects of this size, propose a risk-adjusted reserve sized to a documented probabilistic model, offer a phased-release contingency structure (e.g., release Contingency in 25% tranches at gate reviews) that preserves CFO optics while protecting delivery, and document the trade-off so the decision is auditable.
 D. Quit.

@@ -1,31 +1,31 @@
 # Module 8: Security Fundamentals 🔐
 
-> **Why this module matters:** Security is **25% of the 220-1102 exam** — about 22 questions, the *second-largest* Core 2 domain. A+ security is foundational, not the deep cryptography of Security+ — but every help-desk technician is the *first line of defense* against phishing, lost devices, and credential theft. The exam tests practical decisions: which control fixes this, who should have admin, what to do when a user clicks the wrong link.
+> **Why this module matters:** Security is **25% of the 220-1102 exam** about 22 questions, the *second-largest* Core 2 domain. A+ security is foundational, not the deep cryptography of Security+ but every help-desk technician is the *first line of defense* against phishing, lost devices, and credential theft. The exam tests practical decisions: which control fixes this, who should have admin, what to do when a user clicks the wrong link.
 
 > **Prerequisites for this module.** You need:
-> - Module 7 (OS basics — accounts, UAC, BitLocker)
-> - Module 2 (networks — firewalls, VPNs, ports)
-> - Module 1 (mobile — MDM)
+> - Module 7 (OS basics, accounts, UAC, BitLocker)
+> - Module 2 (networks, firewalls, VPNs, ports)
+> - Module 1 (mobile, MDM)
 
 ---
 
 ## 🚨 A Story: The CFO Whose Click Almost Cost the Firm $2M
 
-Meet Sven. He's the IT manager for a 90-person commercial real-estate firm. On a Thursday afternoon, the CFO calls — flustered, embarrassed. "I got an email from what looked like our bank. It said a wire transfer needed re-authorization. I clicked the link and… entered my password and the code from my authenticator. Then it didn't do anything. I'm worried."
+Meet Sven. He's the IT manager for a 90-person commercial real-estate firm. On a Thursday afternoon, the CFO calls, flustered, embarrassed. "I got an email from what looked like our bank. It said a wire transfer needed re-authorization. I clicked the link and… entered my password and the code from my authenticator. Then it didn't do anything. I'm worried."
 
 Sven's clock starts. Within 4 minutes he:
 
-1. Pulls up the **conditional-access dashboard** in Microsoft Entra ID — sees a sign-in from Lagos, Nigeria. The CFO is in Chicago.
+1. Pulls up the **conditional-access dashboard** in Microsoft Entra ID, sees a sign-in from Lagos, Nigeria. The CFO is in Chicago.
 2. **Revokes all CFO sessions** and forces a sign-in reset.
 3. **Resets the CFO's password** to a temporary value and forces MFA re-enrollment with a *new* authenticator (the previous one is presumed compromised).
-4. Checks Office 365 mail flow rules — confirms the attacker didn't set up an inbox-redirect rule (a common follow-up to harvest more credentials).
-5. Reviews the **bank** login portal logs (calls the relationship manager) — confirms no wire requests have been initiated.
+4. Checks Office 365 mail flow rules, confirms the attacker didn't set up an inbox-redirect rule (a common follow-up to harvest more credentials).
+5. Reviews the **bank** login portal logs (calls the relationship manager), confirms no wire requests have been initiated.
 
 Total damage: zero. The CFO was annoyed but unharmed. Sven sent an all-hands email that afternoon with a phishing-awareness reminder and added the malicious domain to the company's mail-filter blocklist.
 
 What saved the firm was a *layered* security posture: MFA blunted the password theft, conditional access flagged the geographic anomaly, and the user's call to IT was fast enough to revoke before damage. *No single control* would have been enough.
 
-This module gives you the vocabulary and judgment to be Sven — to respond fast, to layer controls, and to recognize the human-factor attacks A+ tests heavily.
+This module gives you the vocabulary and judgment to be Sven, to respond fast, to layer controls, and to recognize the human-factor attacks A+ tests heavily.
 
 ---
 
@@ -33,7 +33,7 @@ This module gives you the vocabulary and judgment to be Sven — to respond fast
 
 | Control | What it does |
 |---------|--------------|
-| **Mantrap / access control vestibule** | Two-door entry — second door opens only after first closes; prevents tailgating |
+| **Mantrap / access control vestibule** | Two-door entry, second door opens only after first closes; prevents tailgating |
 | **Badge + biometric door** | Multi-factor entry |
 | **Cable lock (Kensington)** | Physically chains laptop to desk; deters opportunistic theft |
 | **Locking screen savers** | Auto-lock after idle (Windows: Win+L; macOS: Ctrl+Cmd+Q) |
@@ -64,22 +64,22 @@ This module gives you the vocabulary and judgment to be Sven — to respond fast
 
 ### Password best practices (2026)
 
-- **Length over complexity** — modern NIST guidance favors 12–16+ characters over forced complexity rules
-- **No forced periodic resets** (unless evidence of compromise) — NIST SP 800-63B
-- **Block known-leaked passwords** — check against Have-I-Been-Pwned lists
-- **Use a password manager** — 1Password, Bitwarden, KeePass, Apple Passwords
-- **Don't share passwords** — ever
+- **Length over complexity**, modern NIST guidance favors 12–16+ characters over forced complexity rules
+- **No forced periodic resets** (unless evidence of compromise), NIST SP 800-63B
+- **Block known-leaked passwords**, check against Have-I-Been-Pwned lists
+- **Use a password manager**, 1Password, Bitwarden, KeePass, Apple Passwords
+- **Don't share passwords**, ever
 
 ### Account types & lockout policies
 
-- **Standard user** — recommended for daily use
-- **Administrator** — used only when needed (`Run as administrator`)
-- **Service account** — for applications; long random password; no interactive login
-- **Account lockout policy** — Windows local: Local Security Policy → Account Lockout Policy. Typical: lock after 5 failed attempts for 15 minutes.
+- **Standard user**, recommended for daily use
+- **Administrator**, used only when needed (`Run as administrator`)
+- **Service account**, for applications; long random password; no interactive login
+- **Account lockout policy**, Windows local: Local Security Policy → Account Lockout Policy. Typical: lock after 5 failed attempts for 15 minutes.
 
 ---
 
-## 🔒 Encryption — Disk, File, Network
+## 🔒 Encryption, Disk, File, Network
 
 | Mechanism | OS | Scope |
 |-----------|-----|-------|
@@ -98,8 +98,8 @@ This module gives you the vocabulary and judgment to be Sven — to respond fast
 
 - Requires TPM 1.2+ (recommended 2.0) OR USB key
 - Can be enforced via Group Policy / Intune
-- **Recovery key** — 48-digit key generated at setup; back up to AD / Entra ID / Microsoft account / printed
-- **Suspending BitLocker** — temporary; resumes encrypted at next reboot
+- **Recovery key**, 48-digit key generated at setup; back up to AD / Entra ID / Microsoft account / printed
+- **Suspending BitLocker**, temporary; resumes encrypted at next reboot
 
 ---
 
@@ -112,13 +112,13 @@ This module gives you the vocabulary and judgment to be Sven — to respond fast
 | **Trojan** | Disguised as legitimate software | Variable |
 | **Ransomware** | Encrypts files, demands payment | Often = reimage |
 | **Spyware / Adware** | Collects info / shows ads | Moderate (PUP removal) |
-| **Rootkit** | Hides at kernel level | Very high — often requires reimage |
+| **Rootkit** | Hides at kernel level | Very high, often requires reimage |
 | **Keylogger** | Records keystrokes | Moderate (AV detects) |
 | **Bot / Botnet** | Infected device controlled remotely (C2) | Moderate |
 | **Fileless malware** | Lives in memory only | High (no file = no signature) |
 | **Cryptominer** | Uses CPU/GPU for crypto mining | Moderate (resource symptom) |
 
-### The 7-step malware removal process (CompTIA — MEMORIZE)
+### The 7-step malware removal process (CompTIA, MEMORIZE)
 
 1. **Investigate and verify** the symptoms point to malware
 2. **Quarantine** the infected system (disconnect from network)
@@ -154,11 +154,11 @@ This module gives you the vocabulary and judgment to be Sven — to respond fast
 
 ### Defense
 
-- **Awareness training** — annual + simulated phishing
-- **DMARC / SPF / DKIM** — anti-spoofing email standards
+- **Awareness training**, annual + simulated phishing
+- **DMARC / SPF / DKIM**, anti-spoofing email standards
 - **Mark external email** as "External" in the subject (Microsoft 365 default option)
 - **Allowed-sender list / block list**
-- **MFA** — even if password leaks, attacker can't login
+- **MFA**, even if password leaks, attacker can't login
 
 ---
 
@@ -177,9 +177,9 @@ This module gives you the vocabulary and judgment to be Sven — to respond fast
 
 - Change default SSID and admin password on every SOHO router
 - Enable **WPA3** if all client devices support it (else WPA2-AES)
-- Disable **WPS** (WiFi Protected Setup) — exploitable
+- Disable **WPS** (WiFi Protected Setup), exploitable
 - Separate **guest SSID/VLAN** with no LAN access
-- Disable **SSID broadcast hiding** — security through obscurity, easily defeated, hurts roaming
+- Disable **SSID broadcast hiding**, security through obscurity, easily defeated, hurts roaming
 
 ---
 
@@ -204,18 +204,18 @@ This module gives you the vocabulary and judgment to be Sven — to respond fast
 > **Scenario:** A user reports their files now have a `.locked` extension and a `README_DECRYPT.txt` appeared in every folder.
 
 **Walkthrough:**
-1. **Identify** — Classic ransomware symptoms. Encrypted files + ransom note.
-2. **Theory** — Ransomware infection. Possibly via email attachment or RDP.
-3. **Test** — Immediately **isolate** the host (unplug Ethernet + Wi-Fi off). Note: do NOT reboot yet — memory analysis may help.
-4. **Plan** —
+1. **Identify**, Classic ransomware symptoms. Encrypted files + ransom note.
+2. **Theory**, Ransomware infection. Possibly via email attachment or RDP.
+3. **Test** Immediately **isolate** the host (unplug Ethernet + Wi-Fi off). Note: do NOT reboot yet memory analysis may help.
+4. **Plan**
    - Disconnect from network
    - Notify SOC/IR per company policy
    - Identify scope (was this user a network share owner? Did the ransomware reach mapped drives?)
    - **Do NOT pay the ransom** (unless explicitly approved at exec level after legal review)
    - Restore from backup; if backup is compromised, restore from offline copy
    - Reimage the original system to a known-clean state
-5. **Verify** — Test restored files; reconnect to network only after confirmed clean and patched
-6. **Document** — Full incident report; user education; revisit backup strategy
+5. **Verify**, Test restored files; reconnect to network only after confirmed clean and patched
+6. **Document**, Full incident report; user education; revisit backup strategy
 
 This is the classic ransomware playbook. The single biggest predictor of outcome is **whether backups exist and were untouched by the ransomware**.
 
@@ -225,11 +225,11 @@ This is the classic ransomware playbook. The single biggest predictor of outcome
 
 | Misconception | Reality |
 |---------------|---------|
-| "Password + PIN = MFA" | NO — both are "something you know." Same factor category. |
+| "Password + PIN = MFA" | NO, both are "something you know." Same factor category. |
 | "BitLocker requires Windows Enterprise" | Available on Windows Pro as well. Home only has Device Encryption (limited). |
-| "Pay the ransom — at least you get files back" | Many ransom payments do NOT result in decryption. Pay = fund crime + flag yourself. |
+| "Pay the ransom, at least you get files back" | Many ransom payments do NOT result in decryption. Pay = fund crime + flag yourself. |
 | "Antivirus catches all malware" | Modern threats include fileless and zero-day. AV is one layer, not the whole defense. |
-| "VPNs make you anonymous" | They protect *transport* and *origin IP* — not your identity or browser fingerprint. |
+| "VPNs make you anonymous" | They protect *transport* and *origin IP*, not your identity or browser fingerprint. |
 | "WEP is fine if you don't broadcast SSID" | WEP is broken. Hidden SSID is security theater. |
 | "MFA stops all phishing" | MFA blunts most credential theft, but phishing-resistant MFA (FIDO2 / WebAuthn) is needed against advanced attacks. |
 | "Disabling UAC = better performance" | It opens a huge security hole. Leave UAC on. |
@@ -280,11 +280,11 @@ This is the classic ransomware playbook. The single biggest predictor of outcome
 
 ---
 
-## 📊 Case Study — The 2021 Colonial Pipeline Ransomware Attack
+## 📊 Case Study, The 2021 Colonial Pipeline Ransomware Attack
 
-**Situation.** On May 7, 2021, Colonial Pipeline — the operator of a 5,500-mile pipeline carrying ~45% of all fuel on the US East Coast — was hit with **DarkSide ransomware**. The initial-access vector was a *single legacy VPN account* that lacked MFA. The attackers used the harvested credentials to access internal networks, deploy ransomware, and exfiltrate ~100 GB of data.
+**Situation.** On May 7, 2021, Colonial Pipeline the operator of a 5,500-mile pipeline carrying ~45% of all fuel on the US East Coast was hit with **DarkSide ransomware**. The initial-access vector was a *single legacy VPN account* that lacked MFA. The attackers used the harvested credentials to access internal networks, deploy ransomware, and exfiltrate ~100 GB of data.
 
-**Decision and outcome.** Colonial shut down the entire pipeline within hours of detecting the ransomware on internal IT systems — *not because OT (operational technology) was infected*, but because they couldn't bill customers and feared inability to safely operate. Gas prices spiked across the US East Coast. Lines formed at gas stations from Georgia to New Jersey. The shutdown lasted ~6 days.
+**Decision and outcome.** Colonial shut down the entire pipeline within hours of detecting the ransomware on internal IT systems, *not because OT (operational technology) was infected*, but because they couldn't bill customers and feared inability to safely operate. Gas prices spiked across the US East Coast. Lines formed at gas stations from Georgia to New Jersey. The shutdown lasted ~6 days.
 
 Colonial paid the ransom: **75 BTC (≈$4.4M)** within 24 hours. The decryptor provided by DarkSide was so slow that Colonial used their own backups for most of the restoration. The FBI later [recovered approximately 63.7 BTC](https://www.justice.gov/opa/pr/department-justice-seizes-23-million-cryptocurrency-paid-ransomware-extortionists-darkside) of the ransom by seizing the threat-actor wallet.
 
@@ -305,11 +305,11 @@ Colonial paid the ransom: **75 BTC (≈$4.4M)** within 24 hours. The decryptor p
 
 You now know:
 
-- 🛡️ Physical controls — mantrap, badge readers, cable lock, privacy screen
+- 🛡️ Physical controls, mantrap, badge readers, cable lock, privacy screen
 - 🔐 Authentication factors and the definition of true MFA
-- 🔒 Encryption stack — BitLocker, FileVault, LUKS, EFS
+- 🔒 Encryption stack, BitLocker, FileVault, LUKS, EFS
 - 🦠 The malware zoo + the **7-step CompTIA removal process** in order
-- 🎣 Social-engineering catalog — phishing/smishing/vishing/whaling/tailgating/shoulder surfing
+- 🎣 Social-engineering catalog, phishing/smishing/vishing/whaling/tailgating/shoulder surfing
 - 🌐 Wi-Fi security: WPA2 → WPA3, 802.1X / RADIUS for enterprise
 - 🛡️ Endpoint hardening checklist
 
@@ -317,26 +317,26 @@ You now know:
 1. 🎥 [Videos.md](./Videos.md)
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ [Module 9 — Software Troubleshooting](../Module-09-Software-Troubleshooting/Reading.md)
+4. ➡️ [Module 9, Software Troubleshooting](../Module-09-Software-Troubleshooting/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 9](../Module-09-Software-Troubleshooting/Reading.md) revisits malware removal in operational detail; [Module 10](../Module-10-Operational-Procedures/Reading.md) covers documentation/change management.
-> - Cross-course: **Security+ (course 09)** is the natural next step — much deeper crypto, threat actors, frameworks. SC-300 (course 27) is the Microsoft identity specialization.
+> - Cross-course: **Security+ (course 09)** is the natural next step, much deeper crypto, threat actors, frameworks. SC-300 (course 27) is the Microsoft identity specialization.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 NIST SP 800-63B — *Digital Identity Guidelines: Authentication and Lifecycle Management*
-- 📄 NIST SP 800-53 Rev 5 — Security and Privacy Controls
-- 📄 CISA Cybersecurity Performance Goals — practical baseline controls
+- 📄 NIST SP 800-63B, *Digital Identity Guidelines: Authentication and Lifecycle Management*
+- 📄 NIST SP 800-53 Rev 5, Security and Privacy Controls
+- 📄 CISA Cybersecurity Performance Goals, practical baseline controls
 
 **Case-study sources:**
 - 📄 US Department of Justice (June 2021). *Department of Justice Seizes $2.3 Million in Cryptocurrency Paid to the Ransomware Extortionists Darkside*.
-- 📄 CISA & FBI Joint Advisory AA21-131A — *DarkSide Ransomware: Best Practices for Preventing Business Disruption from Ransomware Attacks*.
+- 📄 CISA & FBI Joint Advisory AA21-131A, *DarkSide Ransomware: Best Practices for Preventing Business Disruption from Ransomware Attacks*.
 
 **Practitioner / exam:**
 - 📖 [Professor Messer 220-1102 security module](https://www.professormesser.com/free-a-plus-training/220-1102/220-1102-video-training-course/)
-- 📖 Have I Been Pwned (https://haveibeenpwned.com) — check leaked passwords
-- 📖 CISA Cybersecurity Awareness materials — free and excellent
+- 📖 Have I Been Pwned (https://haveibeenpwned.com), check leaked passwords
+- 📖 CISA Cybersecurity Awareness materials, free and excellent

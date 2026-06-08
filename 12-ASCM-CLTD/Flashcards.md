@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -308,7 +308,7 @@
 **A:** Transport + warehouse ops + inventory carrying + admin + service-loss / lost-sales.
 
 **Q:** Customer segmentation lenses
-**A:** Velocity, value tier, geography, channel — different SLAs by segment.
+**A:** Velocity, value tier, geography, channel, different SLAs by segment.
 
 **Q:** Nearshoring vs Reshoring vs Friendshoring
 **A:** Nearshoring = move to geographically closer country. Reshoring = back to home country. Friendshoring = to allied countries.
@@ -350,7 +350,7 @@
 **Q:** MAPE formula
 **A:** Σ|A−F|/|A| × 100/N. % magnitude.
 
-**Q:** Forecast accuracy — aggregate vs detail
+**Q:** Forecast accuracy, aggregate vs detail
 **A:** Aggregate forecasts are MORE accurate (lower relative error) due to law of large numbers.
 
 **Q:** Theory of Constraints 5 focusing steps
@@ -403,7 +403,7 @@
 **A:** On-Time In-Full. Retailer-imposed (Walmart, Target, Kroger) with chargebacks.
 
 **Q:** MABD
-**A:** Must Arrive By Date — retailer-enforced delivery window for OTIF.
+**A:** Must Arrive By Date, retailer-enforced delivery window for OTIF.
 
 **Q:** BOPIS
 **A:** Buy Online, Pick up In Store.
@@ -418,7 +418,7 @@
 **A:** Pick-to-light fastest at the bin but high CapEx. Voice nearly as fast, lower CapEx, hands-free.
 
 **Q:** MFC
-**A:** Micro-Fulfillment Center — small, automated DC near urban demand.
+**A:** Micro-Fulfillment Center, small, automated DC near urban demand.
 
 ---
 
@@ -446,7 +446,7 @@
 **A:** Form (config last), place (deploy from hub), time (build-to-order), pull, logistical, manufacturing.
 
 **Q:** Benetton example
-**A:** Form postponement — dye sweaters to actual color demand.
+**A:** Form postponement, dye sweaters to actual color demand.
 
 **Q:** ABC vs XYZ
 **A:** ABC = value classification. XYZ = demand variability classification.
@@ -455,10 +455,10 @@
 **A:** Fast / Slow / Non-moving inventory classification.
 
 **Q:** VED
-**A:** Vital / Essential / Desirable — used for spare parts criticality.
+**A:** Vital / Essential / Desirable, used for spare parts criticality.
 
 **Q:** IRA target
-**A:** Inventory Record Accuracy — 95–99% in a high-quality DC.
+**A:** Inventory Record Accuracy, 95–99% in a high-quality DC.
 
 **Q:** Cycle counting methods
 **A:** ABC-based, random sample, geographic zone, opportunity (bin-zero), control group.
@@ -470,7 +470,7 @@
 **A:** Collaborative Planning, Forecasting, and Replenishment. Shared retailer-supplier process.
 
 **Q:** MEIO benefit
-**A:** Multi-Echelon Inventory Optimization — reduces total network inventory 10–30% vs single-echelon.
+**A:** Multi-Echelon Inventory Optimization, reduces total network inventory 10–30% vs single-echelon.
 
 **Q:** In a DRP record, planned order RELEASE is offset
 **A:** Backward by the lead time from the planned order RECEIPT.
@@ -489,7 +489,7 @@
 **A:** Pre-distribution (supplier pre-labels), post-distribution (allocate at dock), direct transfer, break-bulk.
 
 **Q:** Random putaway
-**A:** Any available slot, tracked by WMS — systematic, not chaotic.
+**A:** Any available slot, tracked by WMS, systematic, not chaotic.
 
 **Q:** Drive-in racking
 **A:** High density, LIFO, few SKUs deep storage.
@@ -498,10 +498,10 @@
 **A:** Low density, high selectivity, FIFO-friendly, most general DC.
 
 **Q:** Pallet flow / gravity flow racking
-**A:** High density, FIFO (load rear, pick front) — good for cold storage.
+**A:** High density, FIFO (load rear, pick front), good for cold storage.
 
 **Q:** AS/RS
-**A:** Automated Storage and Retrieval System — cranes in racking aisles.
+**A:** Automated Storage and Retrieval System, cranes in racking aisles.
 
 **Q:** AGV vs AMR
 **A:** AGV follows fixed wire/laser paths. AMR maps and routes dynamically (LiDAR/SLAM).
@@ -510,7 +510,7 @@
 **A:** Robotic shelves bring inventory to a stationary picker (Kiva, AutoStore, Geek+).
 
 **Q:** Golden zone
-**A:** Waist-to-shoulder pick height — ergonomically optimal slotting for fast movers.
+**A:** Waist-to-shoulder pick height, ergonomically optimal slotting for fast movers.
 
 **Q:** Cube utilization sweet spot
 **A:** 65–85%. Above 85% impedes flow.
@@ -528,13 +528,13 @@
 **A:** 29 CFR 1910.178.
 
 **Q:** C-TPAT
-**A:** Customs-Trade Partnership Against Terrorism — US trusted-trader program for expedited customs.
+**A:** Customs-Trade Partnership Against Terrorism, US trusted-trader program for expedited customs.
 
 **Q:** Cold-chain temperature ranges
 **A:** Frozen ≤ -18°C, refrigerated 0–8°C, controlled ambient 15–25°C.
 
 **Q:** VLM
-**A:** Vertical Lift Module — vertical-axis storage tower for slow-mover small parts.
+**A:** Vertical Lift Module, vertical-axis storage tower for slow-mover small parts.
 
 ---
 
@@ -580,7 +580,7 @@
 **A:** Inject parcel deeper into a region via LTL/truckload before handing to the carrier. Saves cost.
 
 **Q:** NMFC class
-**A:** National Motor Freight Classification — LTL freight class (50–500) by density, value, stowability, handling.
+**A:** National Motor Freight Classification, LTL freight class (50–500) by density, value, stowability, handling.
 
 **Q:** Most reliable mode
 **A:** Pipeline (rarely affected by weather, traffic, congestion).
@@ -614,13 +614,13 @@
 **A:** Bulk ocean / inland-waterway where goods are physically loaded ON A VESSEL. NOT for containers.
 
 **Q:** Why FCA, not FOB, for containers?
-**A:** FOB transfers risk on board the vessel. Containers handed to carrier before loading — risk gap. FCA transfers risk when seller hands to carrier at origin.
+**A:** FOB transfers risk on board the vessel. Containers handed to carrier before loading, risk gap. FCA transfers risk when seller hands to carrier at origin.
 
 **Q:** Under C-terms (CIF, CFR, CIP, CPT), where does risk transfer?
 **A:** At origin (when handed to carrier or on board). Seller pays freight to destination but does not bear in-transit risk.
 
 **Q:** DDP definition
-**A:** Delivered Duty Paid — seller delivers door-to-door INCLUDING import duty.
+**A:** Delivered Duty Paid, seller delivers door-to-door INCLUDING import duty.
 
 **Q:** DAP vs DPU vs DDP
 **A:** DAP = delivered, NOT unloaded, buyer clears customs. DPU = delivered + unloaded by seller. DDP = + import duty paid.
@@ -629,7 +629,7 @@
 **A:** CIF requires minimum cover (Clauses C). CIP requires all-risk cover (Clauses A).
 
 **Q:** EXW seller responsibility
-**A:** Minimum — buyer collects from seller's premises. Buyer arranges everything.
+**A:** Minimum, buyer collects from seller's premises. Buyer arranges everything.
 
 **Q:** Incoterms seller-responsibility ladder
 **A:** EXW → FCA → FAS → FOB → CFR → CIF → CPT → CIP → DAP → DPU → DDP.
@@ -647,7 +647,7 @@
 **A:** Broker files customs entries. Forwarder books transport and prepares docs without taking goods possession.
 
 **Q:** NVOCC
-**A:** Non-Vessel Operating Common Carrier — issues own BL but does not own ships.
+**A:** Non-Vessel Operating Common Carrier, issues own BL but does not own ships.
 
 **Q:** USMCA
 **A:** US-Mexico-Canada Agreement, effective 2020, replaced NAFTA.
@@ -668,13 +668,13 @@
 **A:** Documents matching the LC terms. Document-driven, not goods-driven.
 
 **Q:** ATA Carnet
-**A:** Temporary Importation under Bond — duty-free temporary import (samples, trade shows, repair).
+**A:** Temporary Importation under Bond, duty-free temporary import (samples, trade shows, repair).
 
 **Q:** C-TPAT / AEO / PIP
 **A:** Trusted-trader supply-chain security programs (US / EU / Canada) granting expedited customs.
 
 **Q:** OFAC SDN list
-**A:** US sanctions list — must screen all international shipments.
+**A:** US sanctions list, must screen all international shipments.
 
 **Q:** MPF / HMF (US)
 **A:** Merchandise Processing Fee / Harbor Maintenance Fee. US import charges.
@@ -684,19 +684,19 @@
 ## 🔄 SECTION 8: REVERSE LOGISTICS & SUSTAINABILITY
 
 **Q:** Reverse logistics definition
-**A:** Backward flows of goods/info for value recovery and responsible disposal — returns, recalls, repair, EOL, packaging.
+**A:** Backward flows of goods/info for value recovery and responsible disposal, returns, recalls, repair, EOL, packaging.
 
 **Q:** 5-step returns process
 **A:** Authorization (RMA) → Receipt → Gatekeeping → Refurbish/repackage → Recovery (resell/liquidate/recycle/dispose).
 
 **Q:** Gatekeeping
-**A:** The disposition decision step in returns — drives value recovery rate.
+**A:** The disposition decision step in returns, drives value recovery rate.
 
 **Q:** Refurbish vs Remanufacture
 **A:** Refurbish = light (clean/test/repackage, limited warranty). Remanufacture = full disassemble + restore, new-equivalent warranty.
 
 **Q:** Caterpillar Reman example
-**A:** Closed-loop supply chain — buyers return cores; CAT remanufactures and resells.
+**A:** Closed-loop supply chain, buyers return cores; CAT remanufactures and resells.
 
 **Q:** 7Rs hierarchy
 **A:** Refuse, Reduce, Reuse, Refurbish (or Remanufacture/Recycle), Recover, Dispose.
@@ -705,13 +705,13 @@
 **A:** People, Planet, Profit (3P).
 
 **Q:** Scope 1 emissions
-**A:** Direct — your own fleet's tailpipes, your boilers.
+**A:** Direct, your own fleet's tailpipes, your boilers.
 
 **Q:** Scope 2 emissions
 **A:** Indirect from purchased energy (grid electricity for warehouse).
 
 **Q:** Scope 3 emissions
-**A:** Upstream/downstream value chain — purchased transportation, suppliers, customer use.
+**A:** Upstream/downstream value chain, purchased transportation, suppliers, customer use.
 
 **Q:** GHG Protocol
 **A:** Global standard for corporate emissions accounting (WRI + WBCSD).
@@ -732,7 +732,7 @@
 **A:** Carbon footprint of products.
 
 **Q:** GRI
-**A:** Global Reporting Initiative — multi-stakeholder ESG reporting framework.
+**A:** Global Reporting Initiative, multi-stakeholder ESG reporting framework.
 
 **Q:** SASB → ISSB
 **A:** Sustainability Accounting Standards Board, now incorporated into ISSB / IFRS S1+S2.
@@ -741,19 +741,19 @@
 **A:** Task Force on Climate-related Financial Disclosures.
 
 **Q:** EU CSRD
-**A:** Corporate Sustainability Reporting Directive — mandatory EU sustainability reporting.
+**A:** Corporate Sustainability Reporting Directive, mandatory EU sustainability reporting.
 
 **Q:** WEEE
-**A:** EU directive on Waste from Electrical and Electronic Equipment — extended producer responsibility.
+**A:** EU directive on Waste from Electrical and Electronic Equipment, extended producer responsibility.
 
 **Q:** Closed-loop vs Circular economy
 **A:** Closed-loop = firm-level (your products cycle back to you). Circular = systemic, society-wide design principle.
 
 **Q:** Top sustainability lever in transportation
-**A:** Mode shift — truck → rail saves ~75% CO₂ per ton-mile.
+**A:** Mode shift, truck → rail saves ~75% CO₂ per ton-mile.
 
 **Q:** Backhaul
-**A:** Loaded return trip after outbound delivery — revenue + emissions saved.
+**A:** Loaded return trip after outbound delivery, revenue + emissions saved.
 
 **Q:** Diversion rate
 **A:** % of waste diverted from landfill (recycled, reused, composted).
@@ -778,7 +778,7 @@
 **A:** Transportation (~16%).
 
 **Q:** CLTD lowest-weighted domain
-**A:** Reverse logistics & sustainability (~9%) — but easy points if studied.
+**A:** Reverse logistics & sustainability (~9%), but easy points if studied.
 
 **Q:** CLTD certification validity
 **A:** 5 years. Maintained via 75 maintenance points.
@@ -793,7 +793,7 @@
 **A:** Purchased carrier transportation is Scope 3, NOT Scope 1.
 
 **Q:** Top exam trap (DRP vs MRP)
-**A:** They use similar time-phased mechanics but operate in different domains — DRP for distribution networks, MRP for production BOMs.
+**A:** They use similar time-phased mechanics but operate in different domains, DRP for distribution networks, MRP for production BOMs.
 
 **Q:** Top exam trap (Square-root rule)
 **A:** Centralizing inventory reduces total SS (and decentralizing raises it) by approximately √N.
@@ -802,12 +802,12 @@
 
 ## 📚 STUDY TIPS
 
-1. **Read the Reading.md for each module 2x** — once for understanding, once for memorization.
-2. **Print the cheat sheets** — physically tape Module 7 Incoterms matrix above your desk.
-3. **Drill Incoterms daily** — it's 8–12 questions on the exam.
+1. **Read the Reading.md for each module 2x**, once for understanding, once for memorization.
+2. **Print the cheat sheets**, physically tape Module 7 Incoterms matrix above your desk.
+3. **Drill Incoterms daily**, it's 8–12 questions on the exam.
 4. **Use these flashcards in 2-week spaced-repetition cycles**.
-5. **Time-box mock exams** — 84 seconds per question. Don't practice slow.
-6. **Pre-position weakness study** — count wrong answers by domain after each practice exam.
+5. **Time-box mock exams**, 84 seconds per question. Don't practice slow.
+6. **Pre-position weakness study**, count wrong answers by domain after each practice exam.
 
 ---
 
@@ -816,7 +816,7 @@
 - Sleep 8 hours the night before
 - Arrive 30 min early at testing center / set up OnVUE 30 min early
 - Bring 2 forms of ID
-- 84 sec/question pacing — if stuck, mark & move on
+- 84 sec/question pacing, if stuck, mark & move on
 - Re-read each question TWICE before answering
 - Eliminate clearly-wrong answers first
 - For Incoterms questions, picture the responsibility ladder

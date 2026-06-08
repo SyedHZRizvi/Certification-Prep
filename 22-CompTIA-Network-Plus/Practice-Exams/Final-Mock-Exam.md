@@ -1,8 +1,8 @@
-# 🏁 Final Mock Exam — CompTIA Network+ (N10-009)
+# 🏁 Final Mock Exam, CompTIA Network+ (N10-009)
 
 > **Conditions:** 90 minutes. 90 questions. No notes. No breaks. **Simulate the real exam exactly.**
 > Take this **2-3 days before** your real exam date.
-> **Pass mark:** 72/90 (~80%) — Network+ passes at ~720/900 (~80%). Aim for 80%+ in practice.
+> **Pass mark:** 72/90 (~80%), Network+ passes at ~720/900 (~80%). Aim for 80%+ in practice.
 >
 > **Domain weighting (matches CompTIA blueprint):**
 > | Domain | Weight | Questions |
@@ -77,7 +77,7 @@ D. Wireless mesh
 A. "Please Do Not Throw Sausage Pizza Away"
 B. "Do Not Pass The Salt"
 C. "Some People Fear Birthdays"
-D. "All People Seem To Need Data Processing" (top-to-bottom — wrong direction)
+D. "All People Seem To Need Data Processing" (top-to-bottom, wrong direction)
 
 ### 11. The IPv4 loopback address is:
 A. 0.0.0.0
@@ -493,11 +493,11 @@ B. Top-down OSI
 C. Always divide-and-conquer
 D. Don't apply OSI
 
-### 80. "Fix worked but you didn't tell the user or check for side effects" — you skipped:
+### 80. "Fix worked but you didn't tell the user or check for side effects", you skipped:
 A. Step 1
 B. Step 5
-C. Step 6 — Verify
-D. Step 7 — Document
+C. Step 6, Verify
+D. Step 7, Document
 
 ### 81. A switch port "just stopped working." Other ports work. The FIRST investigation step is:
 A. Replace the firewall
@@ -551,7 +551,7 @@ D. One mesh of WAPs only (no wired LAN)
 
 The MOST likely root cause is:
 A. The user's NIC is broken
-B. DHCP failed for this PC (relay reachability, DHCP scope exhaustion, DHCP server down for VLAN 20, or NIC issue) — investigate DHCP path
+B. DHCP failed for this PC (relay reachability, DHCP scope exhaustion, DHCP server down for VLAN 20, or NIC issue), investigate DHCP path
 C. STP loop
 D. DNS misconfigured
 
@@ -574,9 +574,9 @@ D. (a) NetFlow, (b) TDR, (c) iperf, (d) Wireshark
 
 The CORRECT VLSM allocation (largest first) using the SMALLEST mask per subnet is:
 A. LAN A /22, LAN B /22, LAN C /22, WAN /30
-B. LAN A /22 (1022 hosts), LAN B /25 (126), LAN C /27 (30), WAN /30 (2) — this uses too few addresses for LAN A
-C. LAN A /22 actually only covers 1022 hosts which is enough — pick /22 for A. Then from remaining space (impossible — A consumed all)... so reconfigure: LAN A /22 fits 800 in a /22; but then B, C, WAN cannot fit. So the only valid plan is LAN A in a /22 = 1022 hosts available, but **the entire /22 is consumed**, leaving no room for B, C, WAN. Need a larger block OR use a slightly bigger mask for A: LAN A in `10.40.0.0/22` would consume the whole block. The CORRECT answer is: **LAN A needs at least /22 = 1022 hosts; but with /22 = 1024 addresses total in the supernet, ALL space is gone**. This question demonstrates that the supplied /22 block is too small for 800+120+25+2 = 947 hosts plus subnet boundaries. The correct answer is to escalate for a larger allocation.
-D. LAN A /23 (510 hosts) — too small; the engineer must request a larger block (e.g., /21) to fit all four subnets with VLSM headroom
+B. LAN A /22 (1022 hosts), LAN B /25 (126), LAN C /27 (30), WAN /30 (2), this uses too few addresses for LAN A
+C. LAN A /22 actually only covers 1022 hosts which is enough pick /22 for A. Then from remaining space (impossible A consumed all)... so reconfigure: LAN A /22 fits 800 in a /22; but then B, C, WAN cannot fit. So the only valid plan is LAN A in a /22 = 1022 hosts available, but **the entire /22 is consumed**, leaving no room for B, C, WAN. Need a larger block OR use a slightly bigger mask for A: LAN A in `10.40.0.0/22` would consume the whole block. The CORRECT answer is: **LAN A needs at least /22 = 1022 hosts; but with /22 = 1024 addresses total in the supernet, ALL space is gone**. This question demonstrates that the supplied /22 block is too small for 800+120+25+2 = 947 hosts plus subnet boundaries. The correct answer is to escalate for a larger allocation.
+D. LAN A /23 (510 hosts), too small; the engineer must request a larger block (e.g., /21) to fit all four subnets with VLSM headroom
 
 ### 90 (Scenario PBQ). A SOC discovers an internal host making outbound connections to a known-malicious IP on TCP/443 every 30 seconds. The SOC's MOST appropriate FIRST action sequence is:
 A. Reformat the host
@@ -611,61 +611,61 @@ D. Notify the press
 
 ---
 
-## Detailed answer rationales (selected — the harder ones)
+## Detailed answer rationales (selected, the harder ones)
 
-**Q10. A — "Please Do Not Throw Sausage Pizza Away."** Bottom-to-top OSI: Physical, Data Link, Network, Transport, Session, Presentation, Application. Option D is the *top-to-bottom* mnemonic.
+**Q10. A, "Please Do Not Throw Sausage Pizza Away."** Bottom-to-top OSI: Physical, Data Link, Network, Transport, Session, Presentation, Application. Option D is the *top-to-bottom* mnemonic.
 
-**Q14. C — 255.255.255.240.** /28 = 4 host bits → mask octet `11110000` = 240.
+**Q14. C, 255.255.255.240.** /28 = 4 host bits → mask octet `11110000` = 240.
 
-**Q15. B — 62.** /26 has 6 host bits. 2^6 − 2 = 62.
+**Q15. B, 62.** /26 has 6 host bits. 2^6 − 2 = 62.
 
-**Q16. B — 203.0.113.32.** /27 mask = .224. Block size 32. 45 falls in 32–63 block. Network = .32.
+**Q16. B, 203.0.113.32.** /27 mask = .224. Block size 32. 45 falls in 32–63 block. Network = .32.
 
-**Q17. B — 10.1.2.255.** /24 with network .0 → broadcast = .255 (all host bits set).
+**Q17. B, 10.1.2.255.** /24 with network .0 → broadcast = .255 (all host bits set).
 
-**Q20. A — 2001:db8::1.** Drop leading zeros in each group; collapse consecutive all-zero groups with `::` (only once).
+**Q20. A, 2001:db8::1.** Drop leading zeros in each group; collapse consecutive all-zero groups with `::` (only once).
 
-**Q21. B — 90.** EIGRP internal AD = 90. (External EIGRP = 170 if asked.)
+**Q21. B, 90.** EIGRP internal AD = 90. (External EIGRP = 170 if asked.)
 
-**Q24. B — 4 bytes.** 802.1Q tag inserted into Ethernet header.
+**Q24. B, 4 bytes.** 802.1Q tag inserted into Ethernet header.
 
-**Q29. B — Untagged.** Native VLAN frames go untagged. Both ends must agree on the native VLAN ID.
+**Q29. B, Untagged.** Native VLAN frames go untagged. Both ends must agree on the native VLAN ID.
 
-**Q43. B — Zone transfers / >512 bytes.** Standard queries = UDP 53. TCP 53 = zone transfers, large responses.
+**Q43. B, Zone transfers / >512 bytes.** Standard queries = UDP 53. TCP 53 = zone transfers, large responses.
 
-**Q49. C — 993.** IMAPS = IMAP over TLS = TCP 993.
+**Q49. C, 993.** IMAPS = IMAP over TLS = TCP 993.
 
-**Q55. B — Tracks state + auto-allows replies.** Stateful firewall maintains a connection-state table; legitimate reply traffic to allowed outbound sessions is auto-permitted.
+**Q55. B, Tracks state + auto-allows replies.** Stateful firewall maintains a connection-state table; legitimate reply traffic to allowed outbound sessions is auto-permitted.
 
-**Q56. B — Entire packet + new outer IP.** Tunnel mode encrypts the entire original packet; a new outer IP header carries the encrypted bundle across the WAN. Makes site-to-site VPNs work.
+**Q56. B, Entire packet + new outer IP.** Tunnel mode encrypts the entire original packet; a new outer IP header carries the encrypted bundle across the WAN. Makes site-to-site VPNs work.
 
-**Q57. B — UDP 500 + UDP 4500 + IP proto 50.** IKE phase 1 (UDP 500), NAT-Traversal (UDP 4500 wraps ESP), ESP itself (IP protocol 50, not a TCP/UDP port).
+**Q57. B, UDP 500 + UDP 4500 + IP proto 50.** IKE phase 1 (UDP 500), NAT-Traversal (UDP 4500 wraps ESP), ESP itself (IP protocol 50, not a TCP/UDP port).
 
-**Q62. B — User auth + encryption.** SNMPv1/v2c use cleartext community strings — sniffable. v3 adds user-based auth (MD5/SHA) + privacy (DES/AES).
+**Q62. B User auth + encryption.** SNMPv1/v2c use cleartext community strings sniffable. v3 adds user-based auth (MD5/SHA) + privacy (DES/AES).
 
-**Q63. A — UDP 161 / UDP 162.** Queries on 161; traps on 162. UDP because polling is fast and stateless.
+**Q63. A, UDP 161 / UDP 162.** Queries on 161; traps on 162. UDP because polling is fast and stateless.
 
-**Q65. B — Emergency.** Severity 0 = Emergency (most urgent). 7 = Debug (least urgent).
+**Q65. B, Emergency.** Severity 0 = Emergency (most urgent). 7 = Debug (least urgent).
 
-**Q74. B — APIPA (DHCP failed).** 169.254.x.x is APIPA self-assigned when DHCP doesn't respond.
+**Q74. B, APIPA (DHCP failed).** 169.254.x.x is APIPA self-assigned when DHCP doesn't respond.
 
-**Q78. B — 55 m.** Cat6 supports 10 GbE only up to 55 m. Cat6a supports 10 GbE to full 100 m.
+**Q78. B, 55 m.** Cat6 supports 10 GbE only up to 55 m. Cat6a supports 10 GbE to full 100 m.
 
-**Q80. C — Step 6 Verify.** "Fix worked but didn't check end-to-end" = Step 6 skip. Most common anti-pattern CompTIA tests.
+**Q80. C, Step 6 Verify.** "Fix worked but didn't check end-to-end" = Step 6 skip. Most common anti-pattern CompTIA tests.
 
-**Q82. B — Console / OOB.** Facebook/Meta 2021 lesson — when you break the data plane, console (serial) or OOB management is the only path back.
+**Q82. B Console / OOB.** Facebook/Meta 2021 lesson when you break the data plane, console (serial) or OOB management is the only path back.
 
-**Q83. A — 802.11k/v/r assisted roaming.** Roaming is client-initiated; assisted-roaming protocols + BSS transition + fast transition reduce re-association time below the VoIP threshold.
+**Q83. A, 802.11k/v/r assisted roaming.** Roaming is client-initiated; assisted-roaming protocols + BSS transition + fast transition reduce re-association time below the VoIP threshold.
 
-**Q86. B — L3 switch + Wi-Fi controller + APs + stateful firewall + VPN to HQ + DHCP.** The proper SMB design — VLAN separation for guest vs corporate, IPsec to HQ, local DHCP, stateful firewall with NAT.
+**Q86. B L3 switch + Wi-Fi controller + APs + stateful firewall + VPN to HQ + DHCP.** The proper SMB design VLAN separation for guest vs corporate, IPsec to HQ, local DHCP, stateful firewall with NAT.
 
-**Q87. B — DHCP failure for this PC specifically.** Same wall port works for other laptops → port is fine. The user's PC is the problem-bearing device — investigate DHCP path / NIC / scope / etc. Could also be a MAC-based DHCP reservation conflict or NIC issue.
+**Q87. B DHCP failure for this PC specifically.** Same wall port works for other laptops → port is fine. The user's PC is the problem-bearing device investigate DHCP path / NIC / scope / etc. Could also be a MAC-based DHCP reservation conflict or NIC issue.
 
-**Q88. B — TDR / NetFlow / Wireshark / Wi-Fi analyzer.** Each tool maps to a layer/scope of investigation: TDR for cable distance, NetFlow for bandwidth metadata at scale, Wireshark for protocol decoding, Wi-Fi analyzer for RF visibility.
+**Q88. B, TDR / NetFlow / Wireshark / Wi-Fi analyzer.** Each tool maps to a layer/scope of investigation: TDR for cable distance, NetFlow for bandwidth metadata at scale, Wireshark for protocol decoding, Wi-Fi analyzer for RF visibility.
 
-**Q89. D — Request a larger block.** Total host requirement is 800 + 120 + 25 + 2 = 947, but each subnet's bits round up to powers of 2. LAN A (800 hosts) requires /22 (1022 usable) which consumes the entire supplied /22 block. The correct engineering answer is to escalate for a larger allocation (a /21 fits all four subnets with VLSM).
+**Q89. D, Request a larger block.** Total host requirement is 800 + 120 + 25 + 2 = 947, but each subnet's bits round up to powers of 2. LAN A (800 hosts) requires /22 (1022 usable) which consumes the entire supplied /22 block. The correct engineering answer is to escalate for a larger allocation (a /21 fits all four subnets with VLSM).
 
-**Q90. B — Isolate + preserve evidence + investigate + escalate per IR playbook.** Network containment + forensic preservation FIRST. Wiping (A) destroys evidence; disabling DNS (C) is collateral damage; press notification (D) is wildly inappropriate.
+**Q90. B, Isolate + preserve evidence + investigate + escalate per IR playbook.** Network containment + forensic preservation FIRST. Wiping (A) destroys evidence; disabling DNS (C) is collateral damage; press notification (D) is wildly inappropriate.
 
 ---
 
@@ -673,10 +673,10 @@ D. Notify the press
 
 | Score | Verdict |
 |-------|---------|
-| 81–90 | 🏆 Outstanding — schedule the real exam |
-| 72–80 | ✅ Pass-ready (~80% — at or above passing). Review weak spots, then take the real exam |
-| 60–71 | ⚠️ Marginal — re-study the weakest 2-3 modules and re-take in 1 week |
-| <60 | 🔁 Not ready — go back through the modules. Don't book the real exam yet |
+| 81–90 | 🏆 Outstanding, schedule the real exam |
+| 72–80 | ✅ Pass-ready (~80%, at or above passing). Review weak spots, then take the real exam |
+| 60–71 | ⚠️ Marginal, re-study the weakest 2-3 modules and re-take in 1 week |
+| <60 | 🔁 Not ready, go back through the modules. Don't book the real exam yet |
 
 ---
 
@@ -700,7 +700,7 @@ D. Notify the press
 - 🛌 Sleep 8 hrs
 - 💧 Hydrate
 - 🍎 Eat
-- 🚿 NO last-minute cramming — let it consolidate
+- 🚿 NO last-minute cramming, let it consolidate
 - 🚗 Plan transit to the test center + arrive 30 min early (online proctored: test webcam + speed at least 2 hrs before)
 - 🪪 Two forms of ID per Pearson VUE requirements
 
@@ -711,11 +711,11 @@ D. Notify the press
 - ⏰ 90 min, 90 questions = 60 sec per question average
 - 🚩 **Flag** any question you're not sure about; come back at the end
 - 🧮 Scratch paper / whiteboard provided for subnetting
-- 🎯 Read every word — "MOST appropriate" ≠ "FIRST" ≠ "BEST"
+- 🎯 Read every word, "MOST appropriate" ≠ "FIRST" ≠ "BEST"
 - 💪 Trust your preparation
 
 ---
 
 🎉 **You got this. Go pass it.** 🌐
 
-When you do — come back and start [CompTIA Security+ SY0-701](../../09-CompTIA-Security-Plus/README.md). Network+ is the perfect on-ramp.
+When you do, come back and start [CompTIA Security+ SY0-701](../../09-CompTIA-Security-Plus/README.md). Network+ is the perfect on-ramp.

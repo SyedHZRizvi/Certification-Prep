@@ -14,11 +14,11 @@ Business Center → Ad Account → Campaign → Ad Group → Ad
 
 ---
 
-## 🎬 TikTok Formats — When to Use
+## 🎬 TikTok Formats, When to Use
 
 | Format | Use for |
 |--------|---------|
-| **Spark Ads** ⭐ | Default — boost organic UGC; 30-80% better CTR than In-Feed |
+| **Spark Ads** ⭐ | Default, boost organic UGC; 30-80% better CTR than In-Feed |
 | In-Feed Ads | When no organic post to boost |
 | TopView | Brand launches, big awareness |
 | Branded Hashtag | Engagement campaigns |
@@ -59,7 +59,7 @@ Business Center → Ad Account → Campaign → Ad Group → Ad
 
 | Strategy | Min conv/week |
 |----------|---------------|
-| Lowest Cost | — |
+| Lowest Cost |, |
 | Cost Cap | 50/ad group |
 | Value-Based | 50+ with values |
 
@@ -79,7 +79,7 @@ Ads Account → Campaign Group → Campaign → Ad
 
 | Format | When |
 |--------|------|
-| **Thought-Leadership Ads** ⭐ | Default in 2026 — boost employee posts |
+| **Thought-Leadership Ads** ⭐ | Default in 2026, boost employee posts |
 | Sponsored Content | Image/video/carousel |
 | Document Ads | 10-page scrollable PDFs |
 | Conversation Ads | Interactive multi-step InMail |
@@ -128,10 +128,10 @@ Skills       · Years Experience · Groups
 ## 🏗️ B2B Campaign Stack
 
 ```
-1. TLA (Awareness)   — CEO posts boosted
-2. Sponsored Video   — Consideration
-3. Lead Gen Form     — Conversion
-4. Conversation Ad   — High-intent ABM
+1. TLA (Awareness)  , CEO posts boosted
+2. Sponsored Video  , Consideration
+3. Lead Gen Form    , Conversion
+4. Conversation Ad  , High-intent ABM
 ```
 
 Retarget between every stage.
@@ -157,7 +157,7 @@ Sales Nav → Target list
 |-------------------|-----|
 | Consumer apparel | TikTok + Meta |
 | Enterprise SaaS | LinkedIn |
-| Local services | Neither — Google |
+| Local services | Neither, Google |
 | Coaching/courses | TikTok (TOFU) + LinkedIn (BOFU) |
 | Job postings | LinkedIn |
 
@@ -183,8 +183,8 @@ Sales Nav → Target list
 
 1. Spark Code workflow?
 2. TikTok hook window (vs Meta)?
-3. TLA — why does it outperform?
-4. Account List Upload — what's it for?
+3. TLA, why does it outperform?
+4. Account List Upload, what's it for?
 5. LinkedIn cost-per-X you should compare?
 
 ---

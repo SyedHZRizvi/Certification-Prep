@@ -255,7 +255,7 @@ DIR="$1"; find $DIR/*; echo $?
 The shebang `#!` followed by an interpreter path causes the kernel's exec syscall to launch that interpreter with the script as input.
 
 ### Q2: **B. Single quotes prevent ALL expansion**
-Single quotes are 100% literal — `$VAR` stays as `$VAR`. Double quotes allow variable expansion (`$VAR` substitutes), command substitution (`$(date)`), but suppress word splitting.
+Single quotes are 100% literal, `$VAR` stays as `$VAR`. Double quotes allow variable expansion (`$VAR` substitutes), command substitution (`$(date)`), but suppress word splitting.
 
 ### Q3: **C. `$?`**
 `$?` is the exit code of the last command. `$!` is the PID of the last background command. `$#` is the count of positional params. `$$` is the script's own PID.
@@ -270,7 +270,7 @@ Single quotes are 100% literal — `$VAR` stays as `$VAR`. Double quotes allow v
 `IFS=` prevents leading/trailing whitespace stripping; `-r` keeps backslashes literal. The other patterns (especially `for line in $(cat file)`) word-split on whitespace.
 
 ### Q7: **B. `cmd > /var/log/job.log 2>&1`**
-Redirect stdout first, then duplicate stderr to wherever stdout is now going. Order matters — choice C redirects stderr to the *original* stdout, then stdout to file (stderr still on terminal).
+Redirect stdout first, then duplicate stderr to wherever stdout is now going. Order matters, choice C redirects stderr to the *original* stdout, then stdout to file (stderr still on terminal).
 
 ### Q8: **B. Every 15 minutes**
 `*/15` in the minute field = "every 15 minutes." `15 * * * *` would be "at minute 15 of every hour" (choice C).
@@ -300,7 +300,7 @@ The 6th field of /etc/passwd is the home directory. Field separator must be `:`.
 127 = command not found. 126 = command found but not executable. 130 = killed by SIGINT (Ctrl-C).
 
 ### Q17: **B. Scopes the variable to the function**
-Without `local`, every variable in a function is global — silently leaking and polluting the parent scope. ALWAYS use `local` inside functions.
+Without `local`, every variable in a function is global, silently leaking and polluting the parent scope. ALWAYS use `local` inside functions.
 
 ### Q18: **B. `=~`**
 `=~` is the bash-only regex match operator (works in `[[ ]]`, not `[ ]`). E.g., `[[ "$email" =~ @ ]] && echo "has at"`.
@@ -309,7 +309,7 @@ Without `local`, every variable in a function is global — silently leaking and
 With `Persistent=true`, systemd remembers the last time a calendar timer fired and runs missed jobs at next boot. Critical for laptops or servers that may have been off.
 
 ### Q20: **B. Word-splits on whitespace**
-`$(ls *.log)` splits on whitespace, so a file named "my data.log" becomes two args "my" and "data.log". Use `for f in *.log; do ...; done` instead — the shell glob handles spaces correctly.
+`$(ls *.log)` splits on whitespace, so a file named "my data.log" becomes two args "my" and "data.log". Use `for f in *.log; do ...; done` instead, the shell glob handles spaces correctly.
 
 ### Q21: **B. The exit code of `wc` (the last command in the pipe)**
 Without `pipefail`, a pipeline's exit code is the LAST command's exit code. `wc` almost always succeeds, masking grep failures. Add `set -o pipefail` to make the pipeline fail if any stage fails.
@@ -324,7 +324,7 @@ Fields: minute=30, hour=02, day-of-month=*, month=*, day-of-week=1-5 (Mon-Fri). 
 cron's PATH is typically `/usr/bin:/bin`. Fix: use `/usr/local/bin/aws` or set `PATH=$PATH:/usr/local/bin` at the top of the script.
 
 ### Q25: **A. command1 fails OR (command1 succeeds AND command2 fails)**
-`&&` runs command2 if command1 succeeded. `||` runs command3 if the LEFT side (command1 && command2) failed — which is the case if command1 failed OR if command1 succeeded but command2 failed. This is why `cmd1 && cmd2 || cmd3` isn't a safe "if-else."
+`&&` runs command2 if command1 succeeded. `||` runs command3 if the LEFT side (command1 && command2) failed, which is the case if command1 failed OR if command1 succeeded but command2 failed. This is why `cmd1 && cmd2 || cmd3` isn't a safe "if-else."
 
 ### Q26: **A.**
 - `set -euo pipefail` is the defensive header
@@ -358,4 +358,4 @@ cron's PATH is typically `/usr/bin:/bin`. Fix: use `/usr/local/bin/aws` or set `
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5 — Users, Groups & sudo](../Module-05-Users-Groups/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 5, Users, Groups & sudo](../Module-05-Users-Groups/Reading.md)

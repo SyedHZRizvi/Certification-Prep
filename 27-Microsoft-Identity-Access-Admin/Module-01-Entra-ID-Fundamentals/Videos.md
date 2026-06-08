@@ -20,7 +20,7 @@
 
 # 🎥 Module 1 Videos: Entra ID Fundamentals
 
-> **How to use:** Click any card to open a YouTube search for that topic — pick the top current result. Watch in order; pause to follow along in the Entra admin center if you have a tenant.
+> **How to use:** Click any card to open a YouTube search for that topic, pick the top current result. Watch in order; pause to follow along in the Entra admin center if you have a tenant.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Microsoft Entra ID — Overview and the Azure AD Rebrand</p>
+      <p class="vg-title">Microsoft Entra ID, Overview and the Azure AD Rebrand</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · Why the rename, what's actually new</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Entra ID P1 vs P2 — What You Get for the Money</p>
+      <p class="vg-title">Entra ID P1 vs P2, What You Get for the Money</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 18 min · License decision walkthrough</span>
     </div>
@@ -48,7 +48,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">B2B Collaboration vs Microsoft Entra External ID (B2C)</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 15 min · The single most-tested distinction</span>
     </div>
   </a>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Microsoft Entra Suite — The Full Bundle</p>
+      <p class="vg-title">Microsoft Entra Suite, The Full Bundle</p>
       <p class="vg-creator">Concepts Work</p>
       <span class="vg-duration">⏱ 12 min · ID Gov + ID Protection + Internet Access</span>
     </div>
@@ -135,7 +135,7 @@
 |---------|-----|
 | **John Savill's Technical Training** | THE Azure/Entra channel. Long-form, technically rigorous. |
 | **Andy Malone MVP** | M365 admin + identity, lots of SC-300 content. |
-| **Dean Cefola — Azure Academy** | Practical labs and demos. |
+| **Dean Cefola, Azure Academy** | Practical labs and demos. |
 | **Adam Marczak** | Beginner-friendly + cert-focused. |
 | **Microsoft Mechanics** | Official Microsoft channel; new feature launches. |
 | **Concepts Work** | New SC-300/SC-100 channel with up-to-date content. |
@@ -149,7 +149,7 @@ Answer these in your notebook (without re-watching):
 1. Name the 4 Entra ID editions and the headline feature that justifies each.
 2. What's the single most testable difference between B2B and External ID?
 3. Why isn't a Global Administrator automatically an Owner of every Azure subscription?
-4. Default sign-in log retention for P1 — and how do you keep them longer?
+4. Default sign-in log retention for P1, and how do you keep them longer?
 5. List 3 reasons branding is a P1+ feature (not just a UX feature).
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md). If not, re-watch the John Savill rebrand video and the role-systems video.

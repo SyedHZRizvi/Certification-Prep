@@ -104,7 +104,7 @@ D. You need faster training
 
 ### Q13. DPO (Direct Preference Optimization) differs from RLHF in that: *(Understand)*
 A. DPO requires more humans
-B. DPO directly optimizes on preference pairs WITHOUT the RL phase + reward model — simpler pipeline
+B. DPO directly optimizes on preference pairs WITHOUT the RL phase + reward model, simpler pipeline
 C. DPO is older
 D. They are identical
 
@@ -261,7 +261,7 @@ Defense in depth, not single layer.
 
 ### Q23: **B. Holdout + base/tuned compare + OOD check**
 
-### Q24: **B. RLHF is always better — FALSE**
+### Q24: **B. RLHF is always better, FALSE**
 SFT is usually the right first step.
 
 ### Q25: **B. Splits + SFT Flash + eval + Registry + Endpoint canary + monitoring + rollback**
@@ -276,4 +276,4 @@ SFT is usually the right first step.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7 — Agent Builder & Conversational AI](../Module-07-Agent-Builder-Conversational/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 7, Agent Builder & Conversational AI](../Module-07-Agent-Builder-Conversational/Reading.md)

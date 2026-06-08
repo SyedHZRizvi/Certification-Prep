@@ -137,7 +137,7 @@
     }
     // Hide source markdown now that we have cards. Also hide separating <hr> between sections that follow Q/A blocks.
     sourceEls.forEach(function(el){ el.classList.add('fc-source-hidden'); });
-    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget — they're section separators in the source list.
+    // Hide the leading H1 + intro blockquote? Keep them. Hide all <hr> within the article body that appear after our widget, they're section separators in the source list.
     var hrs = document.querySelectorAll('hr');
     hrs.forEach(function(hr){
       // Only hide hrs that come after the widget AND are between hidden sections
@@ -311,7 +311,7 @@
 **Q:** Max S3 object size?
 **A:** 5 TB (single PUT 5 GB; multipart parts 5 MB – 5 GB).
 
-**Q:** Stream JSON to S3 as Parquet with no code — which service?
+**Q:** Stream JSON to S3 as Parquet with no code, which service?
 **A:** Kinesis Data Firehose with format conversion using a Glue table schema.
 
 **Q:** Difference between Kinesis Data Streams and Firehose?
@@ -364,7 +364,7 @@
 **A:** MaxAbsScaler.
 
 **Q:** Best scaler for right-skewed numeric?
-**A:** log1p / Box-Cox / Yeo-Johnson then StandardScaler — OR RobustScaler.
+**A:** log1p / Box-Cox / Yeo-Johnson then StandardScaler, OR RobustScaler.
 
 **Q:** PCA assumes what?
 **A:** Linear relationships in the data; preserves variance, not predictive utility.
@@ -385,7 +385,7 @@
 **A:** Class Imbalance (CI), DPL, KL, JS, Lp norm, TVD, CDDL.
 
 **Q:** Cyclical encoding for month_of_year?
-**A:** sin(2π·month/12) and cos(2π·month/12) — two columns to capture wrap-around.
+**A:** sin(2π·month/12) and cos(2π·month/12), two columns to capture wrap-around.
 
 ---
 
@@ -437,7 +437,7 @@
 
 ## 🧬 SECTION 5: DEEP LEARNING
 
-**Q:** SMDDP vs SMMP — when each?
+**Q:** SMDDP vs SMMP, when each?
 **A:** SMDDP (data parallel) when model fits on one GPU. SMMP (model parallel) when model is too large for one GPU.
 
 **Q:** AWS chip for cost-optimal LLM inference?
@@ -447,7 +447,7 @@
 **A:** Trainium (trn1/trn2).
 
 **Q:** What is EFA?
-**A:** Elastic Fabric Adapter — HPC-grade networking for fast all-reduce in multi-node DL training.
+**A:** Elastic Fabric Adapter, HPC-grade networking for fast all-reduce in multi-node DL training.
 
 **Q:** What is FSx for Lustre's role in DL training?
 **A:** Sub-millisecond file access; lazy-load from S3; for multi-node distributed training data.
@@ -455,7 +455,7 @@
 **Q:** Mixed precision options?
 **A:** FP16 (Tensor Cores; fast; needs loss scaling), BF16 (same range as FP32; best stability), FP8 (H100+).
 
-**Q:** SageMaker Profiler vs Debugger — when each?
+**Q:** SageMaker Profiler vs Debugger, when each?
 **A:** Profiler = system + framework metrics (GPU util, step time). Debugger = training-internals tensors (vanishing grads, NaN).
 
 **Q:** Default LLM-training optimiser?
@@ -471,13 +471,13 @@
 **A:** SageMaker JumpStart one-click deploy.
 
 **Q:** ZeRO / FSDP equivalent in SMMP?
-**A:** Sharded-data parallelism — shards optimiser state, gradients, parameters across data-parallel workers.
+**A:** Sharded-data parallelism, shards optimiser state, gradients, parameters across data-parallel workers.
 
 ---
 
 ## 🗣️ SECTION 6: MANAGED NLP & CV
 
-**Q:** Detect sentiment, entities, key phrases — managed service?
+**Q:** Detect sentiment, entities, key phrases, managed service?
 **A:** Amazon Comprehend.
 
 **Q:** Medical NER (drugs, conditions) HIPAA-eligible?
@@ -541,7 +541,7 @@
 **Q:** Bedrock guardrail filter categories?
 **A:** Content (hate/violence/sexual), Topic, Word, PII, Contextual grounding.
 
-**Q:** Fine-tune for company writing style — RAG or fine-tune?
+**Q:** Fine-tune for company writing style, RAG or fine-tune?
 **A:** Fine-tune (style/format). RAG is for facts.
 
 **Q:** Continued pre-training in Bedrock applies to which model?
@@ -576,7 +576,7 @@
 **A:** PR-AUC (precision-recall), plus F1, recall, precision. NOT accuracy alone.
 
 **Q:** What is the cardinal sin with the test set?
-**A:** Reusing it to tune hyperparameters — contaminates the final metric.
+**A:** Reusing it to tune hyperparameters, contaminates the final metric.
 
 **Q:** Cross-validation method for time series?
 **A:** Walk-forward / expanding window. NEVER random K-fold.
@@ -596,11 +596,11 @@
 **Q:** SageMaker tool for per-prediction explanations to regulators?
 **A:** SageMaker Clarify (SHAP).
 
-**Q:** Post-training bias metric — Disparate Impact?
-**A:** Ratio of positive prediction rates across facets — measures discrimination.
+**Q:** Post-training bias metric, Disparate Impact?
+**A:** Ratio of positive prediction rates across facets, measures discrimination.
 
 **Q:** Quantile loss is used by which AWS services?
-**A:** DeepAR, Amazon Forecast — for probabilistic quantile forecasts (p10/p50/p90).
+**A:** DeepAR, Amazon Forecast, for probabilistic quantile forecasts (p10/p50/p90).
 
 **Q:** LLM summarisation metric?
 **A:** ROUGE (and BERTScore for semantic).
@@ -611,7 +611,7 @@
 **Q:** Standard model documentation for compliance?
 **A:** SageMaker Model Card (in Model Registry).
 
-**Q:** Recall vs Precision — which when FN is costly?
+**Q:** Recall vs Precision, which when FN is costly?
 **A:** Recall (or F-beta with β>1). Lower the decision threshold too.
 
 ---
@@ -691,7 +691,7 @@
 **Q:** Expose SageMaker endpoint to on-prem only (no internet)?
 **A:** PrivateLink Interface VPC Endpoint + Direct Connect.
 
-**Q:** Compute Savings Plan vs Reserved Instance — flexibility?
+**Q:** Compute Savings Plan vs Reserved Instance, flexibility?
 **A:** Compute Savings Plan = flexible across families/sizes/Lambda/Fargate. RI = locked to family.
 
 **Q:** Up-to-90%-off cost lever for training?
@@ -723,7 +723,7 @@
 ## 📊 SECTION 11: METRICS QUICK RECALL
 
 **Q:** Formula for F1?
-**A:** 2 · Precision · Recall / (Precision + Recall) — harmonic mean.
+**A:** 2 · Precision · Recall / (Precision + Recall), harmonic mean.
 
 **Q:** Formula for Precision?
 **A:** TP / (TP + FP).
@@ -731,7 +731,7 @@
 **Q:** Formula for Recall?
 **A:** TP / (TP + FN).
 
-**Q:** ROC AUC vs PR AUC — when each?
+**Q:** ROC AUC vs PR AUC, when each?
 **A:** ROC AUC on balanced classes. PR AUC on imbalanced classes (positive class rare).
 
 **Q:** When MAE preferred over RMSE?
@@ -781,12 +781,12 @@
 
 ## 🏷️ STUDY TIPS
 
-1. **Build muscle memory on the 17 built-ins** — name each and one phrase about when to use it.
-2. **Drill the four inference modes** — match each to a scenario.
+1. **Build muscle memory on the 17 built-ins**, name each and one phrase about when to use it.
+2. **Drill the four inference modes**, match each to a scenario.
 3. **Memorise the Capital One reference architecture** (Kinesis → S3 → Feature Store → SageMaker MME + Clarify + Pipelines).
 4. **Memorise the standard 2026 RAG architecture** (Bedrock KB + OpenSearch Serverless + Claude/Llama + Guardrails + Agent).
 5. **Practise reading 6-line scenarios** for keywords ("imbalanced", "low operational overhead", "minimum operational effort", "explain to regulator", "sparse traffic", "VPC isolation").
-6. **Skim each Cheat-Sheet daily** in the last 5 days before exam — they distil 95% of the testable material.
+6. **Skim each Cheat-Sheet daily** in the last 5 days before exam, they distil 95% of the testable material.
 
 ## 📅 BEFORE THE EXAM
 

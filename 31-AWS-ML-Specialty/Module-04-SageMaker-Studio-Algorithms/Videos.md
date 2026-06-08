@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🖥️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SageMaker Studio — Complete Walkthrough</p>
+      <p class="vg-title">SageMaker Studio, Complete Walkthrough</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 22 min · Domains, profiles, apps</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🌳</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">XGBoost — Visual Intuition</p>
+      <p class="vg-title">XGBoost, Visual Intuition</p>
       <p class="vg-creator">StatQuest</p>
       <span class="vg-duration">⏱ 16 min · Gradient boosting from scratch</span>
     </div>
@@ -84,7 +84,7 @@
     <div class="vg-thumb"><span>🚁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">SageMaker Autopilot — AutoML in Action</p>
+      <p class="vg-title">SageMaker Autopilot, AutoML in Action</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 20 min · Tabular AutoML</span>
     </div>
@@ -107,7 +107,7 @@
     <div class="vg-thumb"><span>💬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">BlazingText — Word2Vec & Text Classification</p>
+      <p class="vg-title">BlazingText, Word2Vec & Text Classification</p>
       <p class="vg-creator">AWS ML Blog talks</p>
       <span class="vg-duration">⏱ 14 min</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>🔗</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Object2Vec — Universal Embeddings</p>
+      <p class="vg-title">Object2Vec, Universal Embeddings</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 16 min</span>
     </div>
@@ -134,7 +134,7 @@
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">SageMaker Canvas — No-Code ML</p>
+      <p class="vg-title">SageMaker Canvas, No-Code ML</p>
       <p class="vg-creator">AWS Online Tech Talks</p>
       <span class="vg-duration">⏱ 18 min</span>
     </div>
@@ -146,8 +146,8 @@
 ## ✅ After watching
 
 1. Sketch the 5-step SageMaker SDK pattern from memory.
-2. Pick the right algorithm: 5,000 sparse features for CTR — what?
-3. Pick the right algorithm: detect anomalies in network traffic without labels — what?
+2. Pick the right algorithm: 5,000 sparse features for CTR, what?
+3. Pick the right algorithm: detect anomalies in network traffic without labels, what?
 4. When do you pick built-in vs script mode vs BYO container?
 5. Three top XGBoost hyperparameters to control overfitting?
 

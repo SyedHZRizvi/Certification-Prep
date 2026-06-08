@@ -16,7 +16,7 @@
 
 | Metric | Measures | Low → |
 |--------|----------|--------|
-| **Faithfulness** | Answer claims supported by context? | Hallucination — stronger prompt, citations, smaller k |
+| **Faithfulness** | Answer claims supported by context? | Hallucination, stronger prompt, citations, smaller k |
 | **Answer Relevancy** | Answer addresses the question? | Off-topic; fix generation |
 | **Context Precision** | Retrieved chunks useful? | Junk retrieval; rerank, source-trust |
 | **Context Recall** | All needed info retrieved? | Missed docs; hybrid + multi-query + larger k |
@@ -44,7 +44,7 @@ Plus: Answer Correctness, Aspect Critique (custom rubric), Noise Sensitivity, En
 - ≥30 examples for measurable diffs; aim 100-500
 - Mix synthetic + real-user
 - Cover edge cases / hard cases / failure modes
-- Version (v1, v2, v3) — track drift
+- Version (v1, v2, v3), track drift
 - Grow over time (every production bug → new example)
 - Disjoint from any other set (no leakage)
 

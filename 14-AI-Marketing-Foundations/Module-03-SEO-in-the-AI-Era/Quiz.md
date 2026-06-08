@@ -231,7 +231,7 @@ TOFU = informational, research-phase. Transactional and comparison queries are M
 AI Overviews directly answer these queries above the fold. Pages without unique experience get bypassed.
 
 ### Q11: **B. Meaning, entities, and topical comprehensiveness**
-Semantic SEO is post-2018 — Google embeddings + entity recognition, not keyword density.
+Semantic SEO is post-2018, Google embeddings + entity recognition, not keyword density.
 
 ### Q12: **C. Scaled Content Abuse policy (March 2024)**
 Google's March 2024 spam update introduced this policy specifically to target scaled AI content.

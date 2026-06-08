@@ -243,7 +243,7 @@ D. Use Whisper instead
 
 ### Q29. Coca-Cola's "Create Real Magic" (2023) deployed Azure OpenAI with custom content filters tighter than default, a locked brand-asset system prompt, low temperature, **PTU** during peak, **Standard** for tail, and Protected Material Detection ON. Evaluate the proposal to swap PTU → pure Standard at 10× normal traffic during the Times Square billboard window. The strongest critique is: *(Evaluate)*
 A. "Standard is cheaper"
-B. "Standard quota is rate-limited; under 10× spike you risk 429-driven user-facing failures during peak; the PTU's reserved capacity gives deterministic latency at the moment that's brand-critical, and Microsoft offers Global Batch / Standard mix for the non-peak tail — the case study composes all three for the reason"
+B. "Standard quota is rate-limited; under 10× spike you risk 429-driven user-facing failures during peak; the PTU's reserved capacity gives deterministic latency at the moment that's brand-critical, and Microsoft offers Global Batch / Standard mix for the non-peak tail, the case study composes all three for the reason"
 C. "PTU is always wrong"
 D. "Standard supports more models"
 
@@ -281,7 +281,7 @@ Async, 24-hour SLA, roughly half-price.
 Standard chat schema.
 
 ### Q8: **C. system**
-Persona, rules, constraints — set once at the top.
+Persona, rules, constraints, set once at the top.
 
 ### Q9: **B. Chain-of-Thought prompting**
 Explicit "think step by step" prompt elicits reasoning.
@@ -314,7 +314,7 @@ Each line is a complete chat example.
 429s = throttling. Increase quota, add exponential backoff, then consider PTU.
 
 ### Q19: **C. 128K tokens**
-GPT-4o context window. (Some models, like o1, have similar or different — but 128K is the GPT-4o figure.)
+GPT-4o context window. (Some models, like o1, have similar or different, but 128K is the GPT-4o figure.)
 
 ### Q20: **C. whisper**
 Speech-to-text. (TTS = text-to-speech. DALL-E = images. Embeddings = vectors.)

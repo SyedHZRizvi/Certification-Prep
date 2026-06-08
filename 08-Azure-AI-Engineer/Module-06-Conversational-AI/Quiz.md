@@ -130,7 +130,7 @@ D. `BotFrameworkAdapter`
 
 ### Q16. LUIS authoring is: *(Remember)*
 A. Active and preferred for new bots
-B. Retired — replaced by CLU
+B. Retired, replaced by CLU
 C. Available only via REST
 D. The same as Question Answering
 
@@ -261,7 +261,7 @@ One inbound activity + the bot's response.
 Common for multi-step flows like booking forms.
 
 ### Q11: **B. Question Answering**
-Active learning suggests question variants from real user traffic — accept/reject in Language Studio.
+Active learning suggests question variants from real user traffic, accept/reject in Language Studio.
 
 ### Q12: **A. `projectName` and `deploymentName`**
 You target a specific deployment of a CLU project.
@@ -275,7 +275,7 @@ Direct Line is for custom clients. For voice, use Direct Line Speech.
 ### Q15: **B. `ActivityHandler`**
 Subclass it and override `on_message_activity`, `on_members_added_activity`, etc.
 
-### Q16: **B. Retired — replaced by CLU**
+### Q16: **B. Retired, replaced by CLU**
 LUIS authoring is retired; CLU in Azure AI Language is the path forward.
 
 ### Q17: **A. `/language/:analyze-conversations`**

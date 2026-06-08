@@ -1,4 +1,4 @@
-# Module 5 Cheat Sheet — Creature Animation 🐉
+# Module 5 Cheat Sheet, Creature Animation 🐉
 
 ## Quadruped Gaits at a Glance
 
@@ -7,9 +7,9 @@
 | Walk | Slowest | ≥2 feet always on ground | No |
 | Trot | Medium | Diagonal pairs together | Brief |
 | Canter | Fast | 3-beat rhythm; one lead foot | Yes |
-| Gallop | Fastest | Full aerial phase | Yes — at GATHERED position |
+| Gallop | Fastest | Full aerial phase | Yes, at GATHERED position |
 
-**Gallop aerial phase = GATHERED (tucked), NOT stretched — the #1 error**
+**Gallop aerial phase = GATHERED (tucked), NOT stretched, the #1 error**
 
 ---
 
@@ -104,14 +104,14 @@ FRAME   LH (Left Hind)    RH (Right Hind)   LF (Left Front)   RF (Right Front)
 ≥2 feet on ground at all times  |  Spine oscillates: flexes 7–13, extends 1–7
 ```
 
-### Gallop (8f cycle — aerial at GATHERED position, frame 4–5)
+### Gallop (8f cycle, aerial at GATHERED position, frame 4–5)
 ```
 FRAME   RF     LF     RH     LH     PHASE
 1       Con    Swing  Swing  Swing  Lead foot strike
 2       Push   Con    Swing  Swing  Second foot
 3       Swing  Push   Con    Swing  Hind sequence
 4       AERIAL AERIAL Push   Con    Gathered aerial begins
-5       AERIAL AERIAL AERIAL AERIAL FULL AERIAL — GATHERED (tucked)
+5       AERIAL AERIAL AERIAL AERIAL FULL AERIAL, GATHERED (tucked)
 6       App    AERIAL AERIAL Push   Stretch aerial
 7       Con    App    AERIAL AERIAL Return
 8       Push   Con    App    AERIAL Back to lead foot
@@ -174,5 +174,5 @@ PERFORMANCE:
 | Bird downstroke forces | Lift + forward thrust (upstroke = recovery only) |
 | Fish wave direction | Head → tail (posteriorly) |
 | Toothless primary reference | Domestic cat |
-| Primary expression channels (quadruped) | Ears, tail, weight distribution — NOT muzzle first |
+| Primary expression channels (quadruped) | Ears, tail, weight distribution, NOT muzzle first |
 | Creature bible purpose | Document behavioral vocabulary before production starts |

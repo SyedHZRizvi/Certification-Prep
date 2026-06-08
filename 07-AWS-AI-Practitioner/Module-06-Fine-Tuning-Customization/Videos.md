@@ -20,7 +20,7 @@
 
 # 🎥 Module 6 Videos: Fine-Tuning & Customization
 
-> **How to use:** The cost/decision matrix here is high-leverage. Watch the first two videos with the table from the Reading open — you should be able to predict which approach the speaker recommends before they say it.
+> **How to use:** The cost/decision matrix here is high-leverage. Watch the first two videos with the table from the Reading open, you should be able to predict which approach the speaker recommends before they say it.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">RAG vs Fine-Tuning — Which Do You Need?</p>
+      <p class="vg-title">RAG vs Fine-Tuning, Which Do You Need?</p>
       <p class="vg-creator">IBM Technology</p>
       <span class="vg-duration">⏱ 10 min · The most-tested comparison</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">BLEU, ROUGE &amp; Perplexity — LLM Evaluation Metrics</p>
+      <p class="vg-title">BLEU, ROUGE &amp; Perplexity, LLM Evaluation Metrics</p>
       <p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 12 min · The exam-relevant metrics in one shot</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">LoRA &amp; PEFT — Cheap Fine-Tuning Explained</p>
+      <p class="vg-title">LoRA &amp; PEFT, Cheap Fine-Tuning Explained</p>
       <p class="vg-creator">Sentdex / DeepLearning.AI</p>
       <span class="vg-duration">⏱ 12 min · Why modern fine-tuning is affordable</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">RLHF — Reinforcement Learning from Human Feedback</p>
+      <p class="vg-title">RLHF, Reinforcement Learning from Human Feedback</p>
       <p class="vg-creator">Hugging Face / DeepLearning.AI</p>
       <span class="vg-duration">⏱ 10 min · How Claude / GPT are aligned</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Bedrock Cost Optimization — Batch, PT, Caching</p>
+      <p class="vg-title">Bedrock Cost Optimization, Batch, PT, Caching</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 18 min · Knobs you can pull to reduce spend</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">DPO vs RLHF — The Newer Alignment Method</p>
+      <p class="vg-title">DPO vs RLHF, The Newer Alignment Method</p>
       <p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 15 min · Background depth</span>
     </div>

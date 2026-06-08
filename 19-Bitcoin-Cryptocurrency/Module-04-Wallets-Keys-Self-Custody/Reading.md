@@ -1,10 +1,10 @@
 # Module 4: Wallets, Keys & Self-Custody 🔐
 
-> **Why this module matters:** Andreas Antonopoulos' maxim *"not your keys, not your coins"* is not a slogan — it is the operational summary of why Mt. Gox, QuadrigaCX, Celsius, BlockFi, and FTX lost their customers' funds while self-custodial Bitcoiners did not. This module unpacks the entire stack from `entropy → seed phrase → master key → child keys → addresses → spending transactions`, then builds up to institutional-grade multi-sig and MPC custody.
+> **Why this module matters:** Andreas Antonopoulos' maxim *"not your keys, not your coins"* is not a slogan, it is the operational summary of why Mt. Gox, QuadrigaCX, Celsius, BlockFi, and FTX lost their customers' funds while self-custodial Bitcoiners did not. This module unpacks the entire stack from `entropy → seed phrase → master key → child keys → addresses → spending transactions`, then builds up to institutional-grade multi-sig and MPC custody.
 
 > **Prerequisites for this module.** Before starting:
-> - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md) — you must know what a private key, public key, and HASH160 are
-> - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md) — you must know how a transaction works
+> - [Module 2 (Cryptographic Foundations)](../Module-02-Cryptographic-Foundations/Reading.md), you must know what a private key, public key, and HASH160 are
+> - [Module 3 (Network & Consensus)](../Module-03-Bitcoin-Network-Consensus/Reading.md), you must know how a transaction works
 > - Cross-course: [09-CompTIA-Security-Plus Module-04 (Identity & Access Management)](../../09-CompTIA-Security-Plus/Module-04-Threats-Threat-Actors/Reading.md) covers the same multi-factor + hardware-token concepts in a corporate-IT frame.
 
 ---
@@ -13,14 +13,14 @@
 
 In **early 2014**, Mt. Gox is the dominant Bitcoin exchange. At its peak in mid-2013 it handles roughly **70% of all global BTC trades**. Run from a Tokyo high-rise by a French expat named Mark Karpelès, it has the user experience of a 2003 forum and the operational discipline of one too.
 
-On **February 7, 2014**, Mt. Gox suspends BTC withdrawals "to investigate technical issues." On **February 24**, it goes offline entirely. On **February 28**, it files for bankruptcy protection in Tokyo District Court. Total customer Bitcoin lost: approximately **850,000 BTC** — at the day's price, about $480 million.
+On **February 7, 2014**, Mt. Gox suspends BTC withdrawals "to investigate technical issues." On **February 24**, it goes offline entirely. On **February 28**, it files for bankruptcy protection in Tokyo District Court. Total customer Bitcoin lost: approximately **850,000 BTC**, at the day's price, about $480 million.
 
 The forensic post-mortem reveals an architecture that custody engineers in 2026 still teach as the canonical anti-pattern:
 
 1. **Single hot wallet** held essentially all customer BTC.
 2. **No segregation** between customer funds and operational funds.
-3. **No multi-party signature requirement** — one set of keys, often available to the CEO.
-4. **Transaction malleability** (a Bitcoin protocol quirk Mt. Gox claimed allowed double-withdrawal exploits — the truth was murkier).
+3. **No multi-party signature requirement**, one set of keys, often available to the CEO.
+4. **Transaction malleability** (a Bitcoin protocol quirk Mt. Gox claimed allowed double-withdrawal exploits, the truth was murkier).
 5. **No external attestation** of reserves. Customers had no way to verify their BTC was still there.
 6. **No independent audit** of cold-storage holdings.
 
@@ -48,10 +48,10 @@ A Bitcoin **wallet** has three components, often (but not always) bundled:
 
 | Tier | Online? | Use | Examples |
 |------|---------|-----|----------|
-| **Hot** | Yes — always | Operational liquidity, real-time withdrawals | Exchange hot wallets, custodial mobile wallets |
-| **Warm** | Sometimes — periodic | Daily/weekly rebalancing | Multi-sig where some signers are online |
-| **Cold** | No — airgapped | Long-term storage | Coldcard, paper wallets, deep-storage HSMs |
-| **Deep cold** | No, no, no — geographic-separation | Decade-scale storage | Multi-sig with off-site backup keys, encased in a vault |
+| **Hot** | Yes, always | Operational liquidity, real-time withdrawals | Exchange hot wallets, custodial mobile wallets |
+| **Warm** | Sometimes, periodic | Daily/weekly rebalancing | Multi-sig where some signers are online |
+| **Cold** | No, airgapped | Long-term storage | Coldcard, paper wallets, deep-storage HSMs |
+| **Deep cold** | No, no, no, geographic-separation | Decade-scale storage | Multi-sig with off-site backup keys, encased in a vault |
 
 Institutional custody ratios (typical, 2026):
 
@@ -73,10 +73,10 @@ Three Bitcoin Improvement Proposals define every modern wallet's behavior. Memor
 
 Related BIPs you should recognize:
 
-- **BIP-43** — purpose field generalization
-- **BIP-49** — derivation paths for P2SH-wrapped SegWit
-- **BIP-84** — derivation paths for native SegWit (Bech32)
-- **BIP-86** — derivation paths for Taproot
+- **BIP-43**, purpose field generalization
+- **BIP-49**, derivation paths for P2SH-wrapped SegWit
+- **BIP-84**, derivation paths for native SegWit (Bech32)
+- **BIP-86**, derivation paths for Taproot
 
 🎯 **Exam tip.** "What does BIP-32 standardize?" → HD wallets. "What does BIP-39 standardize?" → mnemonic seed phrases. "What does BIP-44 standardize?" → derivation paths. These three are routinely confused on exams.
 
@@ -112,7 +112,7 @@ Every node in the tree is derived deterministically from its parent + an index. 
 | Type | Notation | Property |
 |------|----------|----------|
 | **Non-hardened** | `m/0` | Child public key can be derived from parent public key + index. Enables watch-only xpub. |
-| **Hardened** | `m/0'` (or `m/0H`) | Requires parent private key. Hardened nodes break the "xpub-can-derive-children" property — used for account boundaries. |
+| **Hardened** | `m/0'` (or `m/0H`) | Requires parent private key. Hardened nodes break the "xpub-can-derive-children" property, used for account boundaries. |
 
 🚨 **Trap.** Hardened derivation requires the parent **private** key. Non-hardened only requires the parent public key. The `'` character (or `h` or `H` suffix) is what indicates hardened.
 
@@ -130,13 +130,13 @@ The cryptographic problem BIP-39 solves: random 256-bit numbers are unmemorable.
 | 224 | 21 | 7 | 231 |
 | **256** | **24** | **8** | **264** |
 
-🎯 **MEMORIZE THIS.** 24 words = 256 bits of entropy + 8-bit checksum. Standard for institutional. 12 words = 128 bits of entropy + 4-bit checksum. Standard for many consumer wallets. Both are cryptographically strong; 256 bits gives you ~256-bit security against direct brute force, 128 bits gives ~128-bit security — both vastly beyond reach.
+🎯 **MEMORIZE THIS.** 24 words = 256 bits of entropy + 8-bit checksum. Standard for institutional. 12 words = 128 bits of entropy + 4-bit checksum. Standard for many consumer wallets. Both are cryptographically strong; 256 bits gives you ~256-bit security against direct brute force, 128 bits gives ~128-bit security, both vastly beyond reach.
 
 ### The 2,048-word list
 
 The BIP-39 English wordlist has exactly **2,048 words**. Each word represents **11 bits** (2^11 = 2,048). The first 4 letters are unique to each word (so you only need to memorize the first 4 to disambiguate).
 
-Other languages have their own BIP-39 lists: Japanese, Korean, Spanish, Chinese (Simplified + Traditional), French, Italian, Czech, Portuguese. **The wordlist used affects the derived seed** — entering English words into a Japanese wallet (or vice versa) derives a different wallet.
+Other languages have their own BIP-39 lists: Japanese, Korean, Spanish, Chinese (Simplified + Traditional), French, Italian, Czech, Portuguese. **The wordlist used affects the derived seed**, entering English words into a Japanese wallet (or vice versa) derives a different wallet.
 
 ### The optional 25th word (passphrase)
 
@@ -199,7 +199,7 @@ m / purpose' / coin_type' / account' / change / address_index
 | **BIP-84** | 84' | Native SegWit Bech32 (`bc1q...`) | `m/84'/0'/0'/0/0` |
 | **BIP-86** | 86' | Taproot Bech32m (`bc1p...`) | `m/86'/0'/0'/0/0` |
 
-🎯 **Exam tip.** If you import a seed into Wallet A configured for BIP-44 and then into Wallet B configured for BIP-84, the addresses will be different — same seed, different derivation. You haven't lost funds; you just need to select the matching path. CBSA tests this.
+🎯 **Exam tip.** If you import a seed into Wallet A configured for BIP-44 and then into Wallet B configured for BIP-84, the addresses will be different, same seed, different derivation. You haven't lost funds; you just need to select the matching path. CBSA tests this.
 
 ---
 
@@ -225,7 +225,7 @@ A hardware wallet:
 5. Displays the destination address and amount on its own small screen for you to verify.
 6. Signs internally and returns the signature.
 
-🚨 **Trap.** The hardware wallet's screen is the only **trusted display**. Don't trust your laptop's display of the destination address — a malware-infected laptop can swap it. Always verify on the hardware screen.
+🚨 **Trap.** The hardware wallet's screen is the only **trusted display**. Don't trust your laptop's display of the destination address, a malware-infected laptop can swap it. Always verify on the hardware screen.
 
 ---
 
@@ -235,9 +235,9 @@ A multi-sig is a Bitcoin output that requires **M of N** signatures to spend. Sp
 
 | Pattern | Use case |
 |---------|----------|
-| **2-of-2** | Two parties, both must agree — escrow, joint accounts |
-| **2-of-3** | Three keys, any 2 sign — most-common institutional + personal "safety net" |
-| **3-of-5** | Five keys, 3 sign — larger institutional |
+| **2-of-2** | Two parties, both must agree, escrow, joint accounts |
+| **2-of-3** | Three keys, any 2 sign, most-common institutional + personal "safety net" |
+| **3-of-5** | Five keys, 3 sign, larger institutional |
 | **5-of-9** | Even larger; Casa's Sovereign / Diamond tiers |
 
 ### Why 2-of-3 is the workhorse
@@ -280,7 +280,7 @@ Multi-Party Computation is an alternative to multi-sig that **splits a single pr
 
 ## 🪦 Inheritance Planning
 
-A common (and exam-tested) failure mode: Bitcoiner dies, surviving family cannot access funds. Estimates suggest **~3.5–4 million BTC** are permanently lost — many from inheritance issues.
+A common (and exam-tested) failure mode: Bitcoiner dies, surviving family cannot access funds. Estimates suggest **~3.5–4 million BTC** are permanently lost, many from inheritance issues.
 
 ### Frameworks
 
@@ -292,11 +292,11 @@ A common (and exam-tested) failure mode: Bitcoiner dies, surviving family cannot
 | **Dead-man switch** | Time-locked transaction that broadcasts unless cancelled periodically. |
 | **Letter of intent + safe deposit box** | Low-tech: write down the recovery process, store with the attorney. |
 
-🚨 **Trap.** "Sharing your seed with your spouse" is the simplest plan and the one most professionals recommend *against* — it eliminates the protection from a single point of compromise.
+🚨 **Trap.** "Sharing your seed with your spouse" is the simplest plan and the one most professionals recommend *against*, it eliminates the protection from a single point of compromise.
 
 ---
 
-## 💼 Case Study — Mt. Gox (February 2014)
+## 💼 Case Study, Mt. Gox (February 2014)
 
 **Situation.** Mt. Gox had grown from a Magic: The Gathering card-trading site (origin of "Mt. Gox" = "**M**agic **T**he **G**athering **O**nline e**X**change") in 2010 to ~70% of global BTC trade volume in 2013. CEO Mark Karpelès had bought it from Jed McCaleb (later of Ripple and Stellar) in 2011. The technical architecture remained essentially a one-person hobby project as it scaled.
 
@@ -310,7 +310,7 @@ The cascade effects:
 - Crypto exchanges globally accelerated cold-storage segregation, audit, and PoR (Proof-of-Reserves) practices.
 - The CryptoCurrency Security Standard (CCSS) emerged in 2014 directly in response.
 - "Not your keys, not your coins" became the rallying cry of the self-custody movement.
-- A near-identical pattern repeated 8 years later: **QuadrigaCX (Jan 2019)** — CEO Gerald Cotten died with sole knowledge of cold-storage keys; ~$190M CAD in customer funds lost. **FTX (Nov 2022)** — customer funds commingled with proprietary trading; $8B+ lost.
+- A near-identical pattern repeated 8 years later: **QuadrigaCX (Jan 2019)** CEO Gerald Cotten died with sole knowledge of cold-storage keys; ~$190M CAD in customer funds lost. **FTX (Nov 2022)** customer funds commingled with proprietary trading; $8B+ lost.
 
 **Lesson for the exam / for practitioners.** Three principles every exam tests:
 
@@ -379,7 +379,7 @@ The cascade effects:
 | "Multi-sig is only for institutions" | 2-of-3 is the *baseline* for any individual holding >~$50K. Sovereign-class users (Casa Diamond) use 5-of-9 multi-sig across continents. |
 | "I'll just remember the 24 words" | Don't. Write down. Use steel plates for fire/flood resistance. Test with a small transfer first. |
 | "Ledger / Trezor are interchangeable" | Trezor is open-source firmware; Ledger uses a closed secure element. Different threat models. |
-| "Custodial wallets are safe because they're regulated" | Mt. Gox was Japanese-incorporated. QuadrigaCX was Canadian-incorporated. FTX was Bahamian-incorporated. "Regulated" is necessary but not sufficient — segregation + audit + multi-sig + proof-of-reserves are required. |
+| "Custodial wallets are safe because they're regulated" | Mt. Gox was Japanese-incorporated. QuadrigaCX was Canadian-incorporated. FTX was Bahamian-incorporated. "Regulated" is necessary but not sufficient, segregation + audit + multi-sig + proof-of-reserves are required. |
 | "My passphrase is too short to matter" | A short passphrase reduces the entropy gain dramatically. Use ≥6 random words or a long passphrase. |
 
 ---
@@ -393,7 +393,7 @@ The cascade effects:
 5. **PBKDF2 iterations in BIP-39: 2048.** Not 1024, not 10,000.
 6. **Hardware wallet's screen is the only trusted display.**
 7. **BIP-44 / 49 / 84 / 86 → legacy / P2SH-SegWit / native SegWit / Taproot.**
-8. **Mt. Gox lost 850,000 BTC in Feb 2014.** Exam asks "how many BTC did Mt. Gox lose?" — memorize ~850K.
+8. **Mt. Gox lost 850,000 BTC in Feb 2014.** Exam asks "how many BTC did Mt. Gox lose?", memorize ~850K.
 9. **Coldcard, Trezor, Ledger** are hardware wallet brands. The differences matter for institutional procurement.
 
 ---
@@ -405,7 +405,7 @@ The cascade effects:
 | **Seed phrase / mnemonic** | 12 or 24 English words from BIP-39 list |
 | **Entropy** | The randomness behind the seed; 128 or 256 bits |
 | **Passphrase / 25th word** | Optional BIP-39 password; produces a different wallet |
-| **HD wallet (BIP-32)** | Hierarchical Deterministic — derive a tree of keys from one seed |
+| **HD wallet (BIP-32)** | Hierarchical Deterministic, derive a tree of keys from one seed |
 | **Derivation path (BIP-44)** | `m/purpose'/coin'/account'/change/index` |
 | **xprv / xpub** | Extended private / extended public key (BIP-32) |
 | **Watch-only** | Wallet with xpub but no xprv; can receive, cannot spend |
@@ -424,7 +424,7 @@ The cascade effects:
 
 You now know:
 
-- 🌱 BIP-32 / BIP-39 / BIP-44 — the three standards every modern wallet uses
+- 🌱 BIP-32 / BIP-39 / BIP-44, the three standards every modern wallet uses
 - 🌳 How a seed phrase becomes a tree of derivable keys
 - 📜 The 12/24-word mnemonic (128/256 bits of entropy)
 - 🔑 Optional passphrase (25th word) and why it's the most important defense
@@ -435,7 +435,7 @@ You now know:
 - 💼 Mt. Gox as the canonical "what not to do" case
 
 **Next steps:**
-1. 🎥 Watch [Videos.md](./Videos.md) — particularly Antonopoulos on inheritance
+1. 🎥 Watch [Videos.md](./Videos.md), particularly Antonopoulos on inheritance
 2. ✏️ Take the [Quiz](./Quiz.md)
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 5: Mining & Proof-of-Work Economics](../Module-05-Mining-Proof-of-Work-Economics/Reading.md)
@@ -449,11 +449,11 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The "regulated custody" question.** A high-net-worth client argues that Coinbase Custody (NYDFS-chartered trust company, SOC 2 Type II, insurance) is safer than self-custody. Construct the strongest argument for both. At what dollar threshold does each side dominate?
 2. **The passphrase paradox.** A passphrase protects against seed theft but creates a single point of failure (passphrase loss = funds lost forever). Design an inheritance plan that handles both threats. What's the unavoidable trade-off?
-3. **2-of-3 vs 3-of-5 multi-sig.** For a $5M personal holding, defend either 2-of-3 (simpler, faster recovery) or 3-of-5 (more resilient to multiple compromises) — and show the math of expected loss under different attack/loss scenarios.
+3. **2-of-3 vs 3-of-5 multi-sig.** For a $5M personal holding, defend either 2-of-3 (simpler, faster recovery) or 3-of-5 (more resilient to multiple compromises), and show the math of expected loss under different attack/loss scenarios.
 4. **MPC vs multi-sig for an exchange.** An exchange must rebalance its warm wallet hourly with sub-second signing latency. Multi-sig is slow; MPC is fast. What's the security trade-off, and what's the audit-and-compliance trade-off?
 5. **The QuadrigaCX precedent.** Gerald Cotten died with sole knowledge of cold-storage keys. How does your custody architecture survive the CEO dying in the next 24 hours? Walk through the runbook.
 
@@ -461,12 +461,12 @@ You now know:
 
 ## 📚 Further Reading
 
-- 📖 **Antonopoulos — *Mastering Bitcoin* 2e** Chapters 4-5 (Keys & Addresses, Wallets).
-- 📖 **Antonopoulos — *The Internet of Money* vol 2 chapter on inheritance.**
+- 📖 **Antonopoulos, *Mastering Bitcoin* 2e** Chapters 4-5 (Keys & Addresses, Wallets).
+- 📖 **Antonopoulos, *The Internet of Money* vol 2 chapter on inheritance.**
 - 📰 **BIP-32, BIP-39, BIP-44, BIP-49, BIP-84, BIP-86, BIP-174** at github.com/bitcoin/bips.
 - 📰 **SLIP-39** at github.com/satoshilabs/slips.
 - 📰 **Casa "Sovereign / Diamond" white papers** at keys.casa.
 - 📰 **Unchained Capital's "Multisig Concierge" educational series.**
-- 📰 **Jameson Lopp — "A Modest Privacy Protection Proposal for Bitcoin"** at lopp.net.
-- 🎓 **MIT 15.S12 — Lecture 11** (Smart Contracts and Use Cases) touches on multi-sig.
-- 🎓 **Princeton MOOC — Week 4** (How to Store and Use Bitcoins).
+- 📰 **Jameson Lopp, "A Modest Privacy Protection Proposal for Bitcoin"** at lopp.net.
+- 🎓 **MIT 15.S12, Lecture 11** (Smart Contracts and Use Cases) touches on multi-sig.
+- 🎓 **Princeton MOOC, Week 4** (How to Store and Use Bitcoins).

@@ -1,4 +1,4 @@
-# 📋 Module 10 Cheat Sheet: Beyond Bitcoin — Broader Ecosystem
+# 📋 Module 10 Cheat Sheet: Beyond Bitcoin, Broader Ecosystem
 
 ---
 
@@ -8,7 +8,7 @@
 |---|---------|-------------|---------------------|
 | **State model** | UTXO | Account | Account (mirrors L1) |
 | **Turing-complete** | No (by design) | Yes (EVM) | Yes |
-| **Native cap** | 21M BTC (hard) | None (deflationary post-1559 conditional) | N/A — settles to L1 ETH |
+| **Native cap** | 21M BTC (hard) | None (deflationary post-1559 conditional) | N/A, settles to L1 ETH |
 | **Block time** | ~10 min | ~12 sec | Sequencer-driven, faster |
 | **Consensus** | PoW | PoS (Sept 15 2022) | Inherits L1 via proofs |
 | **TPS** | ~7 | ~15-30 | Hundreds to thousands |
@@ -42,7 +42,7 @@
 
 ---
 
-## 🧱 Rollups — Optimistic vs ZK
+## 🧱 Rollups, Optimistic vs ZK
 
 | | Optimistic | ZK |
 |---|-----------|------|
@@ -123,8 +123,8 @@
 | Data availability | Store reconstructible data | Celestia, EigenDA, Avail |
 | Consensus | Order & finalize | Ethereum PoS, Celestia |
 
-- **Celestia** (Oct 2023) — modular DA pioneer
-- **EigenLayer** (2023) — restaking, ~$10B AVS security; cascading-slashing risk
+- **Celestia** (Oct 2023), modular DA pioneer
+- **EigenLayer** (2023), restaking, ~$10B AVS security; cascading-slashing risk
 
 ---
 
@@ -171,5 +171,5 @@
 
 ---
 
-➡️ [Capstone Project](../Capstone-Project.md) — integrate Modules 1-10
-➡️ [Recommended Readings](../Recommended-Readings.md) — go deeper
+➡️ [Capstone Project](../Capstone-Project.md), integrate Modules 1-10
+➡️ [Recommended Readings](../Recommended-Readings.md), go deeper

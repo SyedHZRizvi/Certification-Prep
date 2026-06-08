@@ -112,7 +112,7 @@ D. Required by the film's comic-book panel visual style, which does not follow t
 
 ---
 
-### Q13. Which era of animation is associated with "The Nine Old Men" — Disney's core group of master animators?
+### Q13. Which era of animation is associated with "The Nine Old Men", Disney's core group of master animators?
 
 A. The Silent Era (1906–1927)
 B. The Disney Golden Age (1937–1942)
@@ -215,57 +215,57 @@ D. The rubber-hose animation style used for early Mickey Mouse shorts
 
 A. Establishing the geographic relationship between characters and their environment
 B. Providing context for dialogue scenes by showing both speakers simultaneously
-C. Creating intense focus on a single detail — often an eye or object — to communicate revelation or emotional intensity
+C. Creating intense focus on a single detail often an eye or object to communicate revelation or emotional intensity
 D. Communicating a character's power through a low-angle perspective
 
 ---
 
 ## 🎯 Answers + Explanations
 
-**Q1 — C.** Muybridge's sequential motion photographs established how real bodies actually move, providing the reference foundation for animation.
+**Q1, C.** Muybridge's sequential motion photographs established how real bodies actually move, providing the reference foundation for animation.
 
-**Q2 — B.** Gertie demonstrated personality and performance — she had distinct behaviors, reactions, and emotion. This proved animation could do what live-action actors did.
+**Q2 B.** Gertie demonstrated personality and performance she had distinct behaviors, reactions, and emotion. This proved animation could do what live-action actors did.
 
-**Q3 — B.** Steamboat Willie's primary historical significance is synchronized sound. *Snow White* (1937) was the first full-length feature.
+**Q3, B.** Steamboat Willie's primary historical significance is synchronized sound. *Snow White* (1937) was the first full-length feature.
 
-**Q4 — C.** Extreme Wide Shot — placing the character tiny within a large environment directly communicates isolation and scale.
+**Q4 C.** Extreme Wide Shot placing the character tiny within a large environment directly communicates isolation and scale.
 
-**Q5 — C.** Low Angle — camera below the subject, looking up, communicates power, authority, or menace.
+**Q5 C.** Low Angle camera below the subject, looking up, communicates power, authority, or menace.
 
-**Q6 — B.** The 180-degree rule requires all cameras to stay on the same side of the axis of action to maintain spatial consistency.
+**Q6, B.** The 180-degree rule requires all cameras to stay on the same side of the axis of action to maintain spatial consistency.
 
-**Q7 — C.** Disney developed naturalistic squash & stretch and anatomical weight; Fleischer used rubber-hose with jazz-synchronized timing.
+**Q7, C.** Disney developed naturalistic squash & stretch and anatomical weight; Fleischer used rubber-hose with jazz-synchronized timing.
 
-**Q8 — B.** Television production budgets made full animation per episode economically impossible. Limited animation was the solution.
+**Q8, B.** Television production budgets made full animation per episode economically impossible. Limited animation was the solution.
 
-**Q9 — B.** Upper frame placement communicates elevation, power, idealism, or aspiration.
+**Q9, B.** Upper frame placement communicates elevation, power, idealism, or aspiration.
 
-**Q10 — B.** *Spirited Away* was the first non-English-language animated feature to win the Best Animated Feature Academy Award (2003).
+**Q10, B.** *Spirited Away* was the first non-English-language animated feature to win the Best Animated Feature Academy Award (2003).
 
-**Q11 — B.** Rubber-hose: boneless, endlessly flexible limbs without anatomical constraints.
+**Q11, B.** Rubber-hose: boneless, endlessly flexible limbs without anatomical constraints.
 
-**Q12 — C.** The 180-degree rule violations were deliberate storytelling decisions communicating inter-universal incompatibility.
+**Q12, C.** The 180-degree rule violations were deliberate storytelling decisions communicating inter-universal incompatibility.
 
-**Q13 — B.** The Nine Old Men worked through the Disney Golden Age (1937–1942 and beyond), and Thomas and Johnston published the 12 Principles in 1981.
+**Q13, B.** The Nine Old Men worked through the Disney Golden Age (1937–1942 and beyond), and Thomas and Johnston published the 12 Principles in 1981.
 
-**Q14 — C.** The Rule of Thirds creates dynamic, active compositions rather than static centered ones.
+**Q14, C.** The Rule of Thirds creates dynamic, active compositions rather than static centered ones.
 
-**Q15 — C.** *Bambi*'s animators famously used Muybridge's deer plates alongside live deer brought to the studio.
+**Q15, C.** *Bambi*'s animators famously used Muybridge's deer plates alongside live deer brought to the studio.
 
-**Q16 — C.** OTS shots establish spatial relationships between two characters in dialogue scenes.
+**Q16, C.** OTS shots establish spatial relationships between two characters in dialogue scenes.
 
-**Q17 — C.** Dutch Angle communicates psychological unease, disorientation, or wrongness.
+**Q17, C.** Dutch Angle communicates psychological unease, disorientation, or wrongness.
 
-**Q18 — C.** *Ren & Stimpy* (John Kricfalusi) deliberately revived the Fleischer rubber-hose aesthetic in the 1990s.
+**Q18, C.** *Ren & Stimpy* (John Kricfalusi) deliberately revived the Fleischer rubber-hose aesthetic in the 1990s.
 
-**Q19 — B.** *Toy Story* was the first feature-length fully computer-generated film.
+**Q19, B.** *Toy Story* was the first feature-length fully computer-generated film.
 
-**Q20 — B.** Looking toward frame edge suggests openness, freedom, or direction of movement.
+**Q20, B.** Looking toward frame edge suggests openness, freedom, or direction of movement.
 
-**Q21 — C.** Gertie proved a drawn character could have personality convincing enough for audience emotional response.
+**Q21, C.** Gertie proved a drawn character could have personality convincing enough for audience emotional response.
 
-**Q22 — C.** Anime developed its own distinct aesthetic (expressive faces, still frames, action lines) that differs from Hanna-Barbera's cost-minimization approach.
+**Q22, C.** Anime developed its own distinct aesthetic (expressive faces, still frames, action lines) that differs from Hanna-Barbera's cost-minimization approach.
 
-**Q23 — B.** Mickey-Mousing is the technique of directly synchronizing every musical beat to a visual action. Named from early Disney shorts.
+**Q23, B.** Mickey-Mousing is the technique of directly synchronizing every musical beat to a visual action. Named from early Disney shorts.
 
-**Q24 — C.** ECU focuses on a single detail to communicate revelation or intense emotional focus.
+**Q24, C.** ECU focuses on a single detail to communicate revelation or intense emotional focus.

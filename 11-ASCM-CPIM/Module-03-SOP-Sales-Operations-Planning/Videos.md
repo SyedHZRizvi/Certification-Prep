@@ -18,9 +18,9 @@
 .vg-section-desc { font-size: 14px; color: #64748b; margin: 0 0 4px; }
 </style>
 
-# 🎥 Module 3 Videos: S&OP — Sales & Operations Planning
+# 🎥 Module 3 Videos: S&OP, Sales & Operations Planning
 
-> **How to use:** S&OP is a process. Watch the practitioners explain how the 5 steps actually run in real companies — then come back to the worked aggregate-plan examples.
+> **How to use:** S&OP is a process. Watch the practitioners explain how the 5 steps actually run in real companies, then come back to the worked aggregate-plan examples.
 
 ## ⭐ Essential watching (~52 min)
 
@@ -146,6 +146,6 @@
 
 1. List the 5 steps of S&OP in order. Who leads each?
 2. Difference between S&OP and IBP?
-3. Define Level, Chase, Hybrid strategies — and when each fits.
+3. Define Level, Chase, Hybrid strategies, and when each fits.
 4. What is the "unconstrained demand plan" and why does it matter?
 5. Why does S&OP plan at the *family* level, not the SKU level?

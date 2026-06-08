@@ -1,6 +1,6 @@
 # ✏️ Module 3 Quiz: GA4 Mastery & Custom Events
 
-> **Instructions:** 28 questions. No notes. Aim for 24/28 (86%). This is the cert-prep module — be ruthless on yourself.
+> **Instructions:** 28 questions. No notes. Aim for 24/28 (86%). This is the cert-prep module, be ruthless on yourself.
 
 ---
 
@@ -185,7 +185,7 @@ D. Adwords API
 ### Q23. Looker Studio (formerly Data Studio) can connect to GA4 via: *(Understand)*
 A. Only the BigQuery connector
 B. Only the GA4 connector
-C. Both — GA4 connector (with API limits) AND BigQuery connector (no sampling)
+C. Both, GA4 connector (with API limits) AND BigQuery connector (no sampling)
 D. CSV upload only
 
 ---
@@ -251,7 +251,7 @@ Enhanced Measurement captures scroll, outbound click, file download, video, site
 Free GA4: 50 custom dimensions + 50 custom metrics + 25 user properties. 360 doubles to ~125.
 
 ### Q7: **C. 50**
-Raised from 30 to 50 in 2024. Used to be the most-missed exam question — current number is 50.
+Raised from 30 to 50 in 2024. Used to be the most-missed exam question, current number is 50.
 
 ### Q8: **A. Bounce rate**
 Bounce rate was deprecated in GA4 (it returned as an optional metric later, but the headline replacement is engagement rate).
@@ -269,7 +269,7 @@ The volume threshold. Below this, GA4 disables the predictive metric silently.
 The three predictive metrics. Each can power an audience for activation to Google Ads.
 
 ### Q13: **A. Drag-and-drop pivot-table style**
-Free-form is the most flexible Exploration — analogous to Excel pivot tables / Tableau worksheets.
+Free-form is the most flexible Exploration, analogous to Excel pivot tables / Tableau worksheets.
 
 ### Q14: **B. Exact sequence with no intervening events**
 Closed funnel = strict order. Open funnel = users can detour through other events.
@@ -298,7 +298,7 @@ The standard reports query specific recommended event names. Custom `purchase_co
 ### Q22: **B. Measurement Protocol v2**
 GA4's server-side ingestion endpoint. UA had a v1, incompatible with GA4.
 
-### Q23: **C. Both — GA4 connector and BigQuery connector**
+### Q23: **C. Both, GA4 connector and BigQuery connector**
 GA4 connector for quick dashboards; BigQuery connector for no-sampling production dashboards.
 
 ### Q24: **B. Sampling threshold rises 10M → 1B**
@@ -329,7 +329,7 @@ The canonical reason senior strategists insist on BigQuery export from day one.
 
 ## 🃏 Add To Your Flashcards
 
-- GA4 vs UA — data model difference
+- GA4 vs UA, data model difference
 - 4 event types
 - 25/50/50/50/25 limits (params/CD/CM/KeyEvents/UP)
 - Engaged session definition

@@ -4,7 +4,7 @@
 
 ---
 
-## 🍪 Consent Mode v2 — 4 Parameters
+## 🍪 Consent Mode v2, 4 Parameters
 
 | Parameter | Controls |
 |-----------|----------|
@@ -62,7 +62,7 @@ POST graph.facebook.com/v18.0/{pixel_id}/events
 
 ---
 
-## 🌐 Privacy Sandbox — 7 APIs
+## 🌐 Privacy Sandbox, 7 APIs
 
 | API | Purpose |
 |-----|---------|
@@ -160,7 +160,7 @@ Used in: SKAN, Attribution Reporting API, clean-room outputs.
 ## ✏️ Quick Self-Check
 
 1. 4 Consent Mode parameters? ___
-2. Basic vs Advanced — which is 2026 default? ___
+2. Basic vs Advanced, which is 2026 default? ___
 3. CAPI dedup keys? ___
 4. SKAN value bits? ___
 5. The 4 top privacy regulations? ___

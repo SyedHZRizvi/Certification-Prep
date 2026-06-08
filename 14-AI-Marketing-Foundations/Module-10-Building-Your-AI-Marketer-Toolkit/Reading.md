@@ -4,8 +4,8 @@
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - Modules 1–9 of this course (this is the capstone-prep module; it assumes everything before it)
-> - In particular: [Module 2 — AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) (prompt structure), [Module 8 — Analytics](../Module-08-Analytics-Measurement-Basics/Reading.md) (the measurement stack), and [Module 9 — Compliance](../Module-09-AI-Ethics-Privacy-Compliance/Reading.md) (the privacy floor)
-> - Comfort signing up for free tiers of unfamiliar SaaS — many sections are most useful with the tool open alongside the reading
+> - In particular: [Module 2 AI Fundamentals](../Module-02-AI-Fundamentals-for-Marketers/Reading.md) (prompt structure), [Module 8 Analytics](../Module-08-Analytics-Measurement-Basics/Reading.md) (the measurement stack), and [Module 9, Compliance](../Module-09-AI-Ethics-Privacy-Compliance/Reading.md) (the privacy floor)
+> - Comfort signing up for free tiers of unfamiliar SaaS, many sections are most useful with the tool open alongside the reading
 >
 > If you're parachuting in without completing earlier modules, you'll recognize the tool names but may miss the strategic logic for *why* this stack is structured this way. Don't skip ahead.
 
@@ -34,11 +34,11 @@ This module is your blueprint for building that personal stack.
 
 ---
 
-## 🎯 The 2026 AI Marketer Stack — The Full Map
+## 🎯 The 2026 AI Marketer Stack, The Full Map
 
 Below is a comprehensive map of every category you'll likely need. Pick one tool per row that fits your budget; expand later.
 
-### Tier 1 — Foundation (everyone needs these)
+### Tier 1, Foundation (everyone needs these)
 
 | Category | Tool Options | Free Tier? |
 |---|---|---|
@@ -48,7 +48,7 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 | **Calendar + Email** | Google Workspace, Microsoft 365 | Paid for custom domain |
 | **Password Manager** | 1Password, Bitwarden, Apple Passwords | Bitwarden is free OSS |
 
-### Tier 2 — Content + Creative
+### Tier 2, Content + Creative
 
 | Category | Tool Options |
 |---|---|
@@ -59,19 +59,19 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 | **Image generation** | Midjourney, DALL-E 3+, Adobe Firefly, Ideogram |
 | **Image editing** | Canva, Adobe Photoshop, Photopea (free OSS) |
 | **Stock + design assets** | Canva, Figma, Pexels, Unsplash, Adobe Stock |
-| **AI video — avatars** | Synthesia, HeyGen |
-| **AI video — generation** | Runway, Sora, Pika |
-| **AI video — editing** | Descript, Captions, Opus Clip |
+| **AI video, avatars** | Synthesia, HeyGen |
+| **AI video, generation** | Runway, Sora, Pika |
+| **AI video, editing** | Descript, Captions, Opus Clip |
 | **AI voice / audio** | ElevenLabs, OpenAI Voice, Descript |
 | **Slide decks** | Gamma.app, Tome, Pitch, PowerPoint, Google Slides |
 
-### Tier 3 — Distribution + Channel
+### Tier 3, Distribution + Channel
 
 | Category | Tool Options |
 |---|---|
-| **Email — SMB** | Mailchimp, Beehiiv, ConvertKit/Kit, ActiveCampaign |
-| **Email — E-comm** | Klaviyo, Omnisend |
-| **Email — Enterprise** | HubSpot Marketing Hub, Salesforce Marketing Cloud, Braze, Iterable |
+| **Email, SMB** | Mailchimp, Beehiiv, ConvertKit/Kit, ActiveCampaign |
+| **Email, E-comm** | Klaviyo, Omnisend |
+| **Email, Enterprise** | HubSpot Marketing Hub, Salesforce Marketing Cloud, Braze, Iterable |
 | **Social scheduling** | Buffer, Hootsuite, Later, Publer, FeedHive, Socialbee |
 | **LinkedIn AI** | Taplio, Postwise, Authoredup |
 | **X/Threads AI** | Postwise, Tweet Hunter, Typefully |
@@ -80,20 +80,20 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 | **Community** | Circle, Discord, Slack, Skool, Mighty Networks |
 | **Forms + Surveys** | Typeform, Tally, Google Forms, SurveyMonkey |
 
-### Tier 4 — Measurement + CRM
+### Tier 4, Measurement + CRM
 
 | Category | Tool Options |
 |---|---|
 | **Web analytics** | GA4 (free), Plausible, Fathom, Matomo |
 | **Dashboards** | Looker Studio (free), Power BI, Tableau, Metabase |
 | **Product / event analytics** | Mixpanel, Amplitude, PostHog |
-| **CRM — SMB** | HubSpot CRM (free), Pipedrive, Close, Folk, Attio |
-| **CRM — Enterprise** | Salesforce, HubSpot Enterprise, Microsoft Dynamics |
+| **CRM, SMB** | HubSpot CRM (free), Pipedrive, Close, Folk, Attio |
+| **CRM, Enterprise** | Salesforce, HubSpot Enterprise, Microsoft Dynamics |
 | **CDP** | Segment, RudderStack, mParticle, Tealium, BlueConic |
 | **Tag management** | Google Tag Manager (free), Tealium iQ |
 | **Heatmaps + session replay** | Hotjar, FullStory, Microsoft Clarity (free) |
 
-### Tier 5 — Workflow + Automation (the connective tissue)
+### Tier 5, Workflow + Automation (the connective tissue)
 
 | Category | Tool Options |
 |---|---|
@@ -104,7 +104,7 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 | **AI agent / multi-step** | OpenAI Agents, Claude Code, AutoGen, custom n8n flows |
 | **Chrome extensions** | ChatGPT for Google, Magical AI text expander, Save as PDF |
 
-### Tier 6 — Specialized AI
+### Tier 6, Specialized AI
 
 | Category | Tool Options |
 |---|---|
@@ -115,11 +115,11 @@ Below is a comprehensive map of every category you'll likely need. Pick one tool
 | **Research + recall** | Perplexity, Elicit, Consensus, ChatGPT Search |
 | **Voice → notes** | Voicenotes, AudioPen, Rev |
 
-> **Pricing reality (as of writing):** Most foundational AI tools have $20/month-ish entry points. The full enterprise stack can run $5K–$50K+/month at scale. For a solo marketer or small team, plan $200–$500/month for a complete AI-enhanced stack. Always check provider pricing pages — these change constantly.
+> **Pricing reality (as of writing):** Most foundational AI tools have $20/month-ish entry points. The full enterprise stack can run $5K–$50K+/month at scale. For a solo marketer or small team, plan $200–$500/month for a complete AI-enhanced stack. Always check provider pricing pages, these change constantly.
 
 ---
 
-## 🛒 Solo / Small / Mid-Market / Enterprise — A Sample Stack by Stage
+## 🛒 Solo / Small / Mid-Market / Enterprise, A Sample Stack by Stage
 
 ### Solo Marketer / Founder (target spend: $50–$150/month)
 
@@ -331,7 +331,7 @@ Decision rules for your stack:
 - A free alternative covers your real needs (Microsoft Clarity vs Hotjar; Cal.com vs Calendly; Plausible vs GA4)
 - You're paying for separate tools when one platform's free tier covers both
 
-### The "Stack Audit" — every 6 months
+### The "Stack Audit", every 6 months
 1. List every paid tool + monthly cost
 2. For each: "Did I use this in the last 30 days?"
 3. For each: "Is the free / cheaper alternative actually good enough?"
@@ -359,7 +359,7 @@ What it teaches:
 1. **The stack scales with the company.** Don't try to start at Stripe's level.
 2. **Notion is the connective tissue** even at enterprise scale.
 3. **A real CDP (Segment) is the difference** between siloed channels and unified intelligence.
-4. **Documentation culture** — Stripe is famous for documenting every workflow. The reason their AI integrations work isn't the AI; it's the documentation the AI reads.
+4. **Documentation culture**, Stripe is famous for documenting every workflow. The reason their AI integrations work isn't the AI; it's the documentation the AI reads.
 
 The lesson scales down: **your stack is only as good as your documentation.** Spend 20% of your tool budget on documentation discipline.
 
@@ -373,7 +373,7 @@ The lesson scales down: **your stack is only as good as your documentation.** Sp
 | "AI replaces every tool" | AI is a *layer*. Your ESP, CRM, analytics, CDP still matter. |
 | "Free tiers are always enough" | True early; eventually free tiers throttle the workflows that matter most. |
 | "I'll figure out automation later" | Workflow automation compounds. Start the first month. |
-| "Prompt libraries are for engineers" | Marketing prompt libraries are the new "swipe file" — career capital. |
+| "Prompt libraries are for engineers" | Marketing prompt libraries are the new "swipe file", career capital. |
 | "Documentation is busywork" | Stripe and HubSpot are documentation cultures because it's a competitive advantage. |
 | "AI agents will replace workflow tools" | Eventually maybe. In 2026, Make / Zapier / n8n still beat agentic AI for reliability. |
 
@@ -381,8 +381,8 @@ The lesson scales down: **your stack is only as good as your documentation.** Sp
 
 ## ⚠️ Exam Traps
 
-1. **CDP vs CRM vs ESP vs MA platform** — distinct categories. Segment is a CDP, HubSpot is an all-in-one MA platform, Salesforce is a CRM, Klaviyo is an ESP.
-2. **Make vs Zapier vs n8n** — same category, different positioning. n8n is open-source self-hostable.
+1. **CDP vs CRM vs ESP vs MA platform**, distinct categories. Segment is a CDP, HubSpot is an all-in-one MA platform, Salesforce is a CRM, Klaviyo is an ESP.
+2. **Make vs Zapier vs n8n**, same category, different positioning. n8n is open-source self-hostable.
 3. **Notion is a knowledge management tool**, not a CRM (despite some teams using it as one).
 4. **Looker Studio is free.** Power BI's free tier is limited.
 5. **OpenAI Voice, ElevenLabs, Descript** are voice tools with different strengths.
@@ -429,11 +429,11 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the videos in [Videos.md](./Videos.md)
-2. ✏️ Take the [Quiz](./Quiz.md) — aim for 20/24
+2. ✏️ Take the [Quiz](./Quiz.md), aim for 20/24
 3. 📋 Print the [Cheat Sheet](./Cheat-Sheet.md)
 4. ➡️ Take [Practice Exam 2](../Practice-Exams/Practice-Exam-2.md)
 5. ➡️ Then the [Final Mock Exam](../Practice-Exams/Final-Mock-Exam.md)
-6. 🎓 Then sit your first real industry exam (recommended: HubSpot Marketing Software Cert — free)
+6. 🎓 Then sit your first real industry exam (recommended: HubSpot Marketing Software Cert, free)
 
 ---
 
@@ -444,23 +444,23 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **Mastery vs coverage in the stack.** The reading says "master 2–3 per category." A founder argues that as AI tools commoditize, the right move is to actively *try every new tool* because the next one might be 10× better and cancel the old one. Construct the strongest argument for "stay with proven tools 18+ months" and the strongest for "rotate aggressively as the market evolves." How do you build a stack that's stable enough to ship work but flexible enough to upgrade?
-2. **Prompt library as portable career capital.** The reading argues a 200-prompt personal library is a career moat. A skeptic says: when LLMs become 100× better, your hand-tuned prompts become irrelevant — you're investing in a depreciating asset. Steel-man both. What's the half-life of a well-engineered prompt today, and what *kind* of prompt has the longest half-life?
+2. **Prompt library as portable career capital.** The reading argues a 200-prompt personal library is a career moat. A skeptic says: when LLMs become 100× better, your hand-tuned prompts become irrelevant, you're investing in a depreciating asset. Steel-man both. What's the half-life of a well-engineered prompt today, and what *kind* of prompt has the longest half-life?
 3. **The Make + Zapier + n8n choice.** Make is visual + complex flows; Zapier is simple + most integrations; n8n is open-source + self-hostable. For a 5-person marketing team running 10 workflows, which would you commit to? Defend with reference to (a) maintenance burden, (b) lock-in risk, (c) data-residency concerns from Module 9, and (d) total cost of ownership over 24 months.
-4. **CDP as the "right" investment for mid-market.** Segment ($120K+/year at scale) and competitors are pitched as the bridge from siloed channels to unified intelligence. A CFO objects: "We're 50 employees with $5M revenue — a CDP is over-spec." A marketing-ops lead counters: "Without a CDP, our first-party data strategy is hot air." Make both cases. At what revenue + headcount + channel-count *does* a CDP start to pay back in 12 months?
-5. **The "documentation culture" claim from Stripe.** The reading argues Stripe's documentation discipline is what makes their AI integrations work — that AI quality is a function of input quality, and input is documentation. A skeptic argues this is post-hoc rationalization; Stripe wins for product reasons unrelated to docs. Construct both. What's an experiment you'd run inside your own team to test whether a 90-day documentation push actually moves the AI-output quality needle?
+4. **CDP as the "right" investment for mid-market.** Segment ($120K+/year at scale) and competitors are pitched as the bridge from siloed channels to unified intelligence. A CFO objects: "We're 50 employees with $5M revenue, a CDP is over-spec." A marketing-ops lead counters: "Without a CDP, our first-party data strategy is hot air." Make both cases. At what revenue + headcount + channel-count *does* a CDP start to pay back in 12 months?
+5. **The "documentation culture" claim from Stripe.** The reading argues Stripe's documentation discipline is what makes their AI integrations work, that AI quality is a function of input quality, and input is documentation. A skeptic argues this is post-hoc rationalization; Stripe wins for product reasons unrelated to docs. Construct both. What's an experiment you'd run inside your own team to test whether a 90-day documentation push actually moves the AI-output quality needle?
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 *Building a Second Brain* by Tiago Forte — the personal knowledge management classic
-- 📖 *Atomic Habits* by James Clear — workflow discipline frameworks
-- 📰 *Marketing AI Institute* (Paul Roetzer) — practitioner-focused AI weekly
-- 📰 *Stratechery* (Ben Thompson) — strategic analysis of the platform shifts
-- 📰 *Lenny's Newsletter* (Lenny Rachitsky) — PM + growth + marketing
-- 📰 *The Tilt* by Joe Pulizzi — content-business operations
-- 📰 *Indie Hackers* — solo + small-team workflows
-- 📰 HubSpot, Klaviyo, Stripe — public engineering blogs for stack inspiration
+- 📖 *Building a Second Brain* by Tiago Forte, the personal knowledge management classic
+- 📖 *Atomic Habits* by James Clear, workflow discipline frameworks
+- 📰 *Marketing AI Institute* (Paul Roetzer), practitioner-focused AI weekly
+- 📰 *Stratechery* (Ben Thompson), strategic analysis of the platform shifts
+- 📰 *Lenny's Newsletter* (Lenny Rachitsky), PM + growth + marketing
+- 📰 *The Tilt* by Joe Pulizzi, content-business operations
+- 📰 *Indie Hackers*, solo + small-team workflows
+- 📰 HubSpot, Klaviyo, Stripe, public engineering blogs for stack inspiration

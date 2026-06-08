@@ -113,7 +113,7 @@ D. Operates only domestically
 
 ### Q14. An NVOCC: *(Remember)*
 A. Owns vessels
-B. Is a Non-Vessel Operating Common Carrier — issues own BL but does not own ships
+B. Is a Non-Vessel Operating Common Carrier, issues own BL but does not own ships
 C. Is a customs broker
 D. Is a freight class
 
@@ -216,7 +216,7 @@ Incoterms 2020 has 11 rules: EXW, FCA, CPT, CIP, DAP, DPU, DDP (any mode) + FAS,
 FOB is for goods physically placed *on board*. For containers, FCA is correct.
 
 ### Q3: **B. FCA**
-FCA at origin terminal/port works for containers — risk transfers when seller hands to carrier.
+FCA at origin terminal/port works for containers, risk transfers when seller hands to carrier.
 
 ### Q4: **B. At seller's premises**
 EXW = buyer collects from seller. Minimum seller responsibility.
@@ -240,7 +240,7 @@ HS = 6-digit global standard. Country extensions push higher.
 US HTS goes to 10 digits.
 
 ### Q11: **B. Legally responsible for customs**
-IOR is the legal party for customs entry, duty, and compliance — typically the buyer, sometimes the seller (under DDP).
+IOR is the legal party for customs entry, duty, and compliance, typically the buyer, sometimes the seller (under DDP).
 
 ### Q12: **B. Files customs entries**
 Customs broker is licensed to file entries on behalf of the importer.
@@ -249,7 +249,7 @@ Customs broker is licensed to file entries on behalf of the importer.
 Freight forwarders are organizers; they don't typically own assets or take title.
 
 ### Q14: **B. Non-Vessel Operating Common Carrier**
-NVOCC issues its own BL but doesn't own the ship — buys space on actual carriers.
+NVOCC issues its own BL but doesn't own the ship, buys space on actual carriers.
 
 ### Q15: **A. NAFTA in 2020**
 US-Mexico-Canada Agreement, effective July 2020.
@@ -291,7 +291,7 @@ DPU = the only Incoterm where the seller has to unload at destination. (Renamed 
 - 23–25/25 → 🏆 Mastered Module 7.
 - 20–22/25 → ✅ Solid.
 - 16–19/25 → ⚠️ Re-read Incoterms responsibility matrix. Print it.
-- <16/25 → 🔁 Restart — Incoterms is too tested to skip.
+- <16/25 → 🔁 Restart, Incoterms is too tested to skip.
 
 ---
 

@@ -18,7 +18,7 @@
 
 # 🎥 PMP Module 6 Videos: EVM (Earned Value)
 
-> **How to use:** Click any card to search YouTube. Watch in order. **Drill with practice problems** — EVM is the most formula-heavy PMP module. Every formula here is fair game on the exam.
+> **How to use:** Click any card to search YouTube. Watch in order. **Drill with practice problems**, EVM is the most formula-heavy PMP module. Every formula here is fair game on the exam.
 
 ## ⭐ Essential watching (~50 min)
 

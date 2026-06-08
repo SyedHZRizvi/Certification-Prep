@@ -133,7 +133,7 @@ D. Free ExpressRoute
 
 ### Q17. Yes/No: Reservations are CapEx. *(Analyze)*
 A. Yes
-B. No (OpEx — paid over time, not an asset purchase)
+B. No (OpEx, paid over time, not an asset purchase)
 
 ---
 
@@ -145,7 +145,7 @@ B. No
 
 ### Q19. Yes/No: Adding more dependent services to a workload increases its composite SLA. *(Analyze)*
 A. Yes
-B. No (it DECREASES — more things to fail)
+B. No (it DECREASES, more things to fail)
 
 ---
 
@@ -253,13 +253,13 @@ Single VM with Premium/Ultra SSDs = 99.9%. Add AZs to reach 99.99%.
 ### Q16: **B. $200 / 30 days + 12 months of select services + always-free tier**
 Standard Azure free account.
 
-### Q17: **B. No — Reservations are OpEx**
+### Q17: **B. No, Reservations are OpEx**
 Paid over time; no asset ownership. Same misconception that catches half of exam-takers.
 
 ### Q18: **A. Yes**
 Cost Management supports scheduled exports to a storage account.
 
-### Q19: **B. No — composite SLA DECREASES**
+### Q19: **B. No, composite SLA DECREASES**
 Each additional dependency multiplies in, reducing the overall number.
 
 ### Q20: **A. More flexible, smaller discount**

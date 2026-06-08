@@ -30,8 +30,8 @@
 
 |                | Low risk | High risk |
 |----------------|----------|-----------|
-| **Low impact** | **Routine** — automate, e-catalog | **Bottleneck** — dual-source, safety stock |
-| **High impact**| **Leverage** — competitive bid, reverse auction | **Strategic** — partnership, long-term |
+| **Low impact** | **Routine** automate, e-catalog | **Bottleneck** dual-source, safety stock |
+| **High impact**| **Leverage** competitive bid, reverse auction | **Strategic** partnership, long-term |
 
 ---
 

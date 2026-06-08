@@ -1,4 +1,4 @@
-# 🏆 Final Mock Exam — SC-300
+# 🏆 Final Mock Exam, SC-300
 
 > **Conditions:** Set a **100-minute timer**. **50 questions** (matches the real exam's typical mid-range count and time limit).
 > **Pass mark:** 35/50 (700/1000 ≈ 70%, matching the real exam).
@@ -76,8 +76,8 @@ C. 8 hours
 D. 30 days
 
 ### 12. Security Defaults and Conditional Access can be enabled together:
-A. Yes — they complement each other
-B. No — they are mutually exclusive
+A. Yes, they complement each other
+B. No, they are mutually exclusive
 C. Only in P2 tenants
 D. Only after AD FS retirement
 
@@ -243,7 +243,7 @@ B. Continuous Access Evaluation (CAE) + Token Protection + risk-based CA
 C. Disabling Entra ID
 D. Federated AD FS
 
-### 40. **Yes/No** — Mark each statement.
+### 40. **Yes/No**, Mark each statement.
 
 **S1:** Conditional Access requires Entra ID P1.
 **S2:** Identity Protection requires Entra ID P2.
@@ -254,7 +254,7 @@ B. Yes / Yes / No
 C. No / Yes / No
 D. Yes / No / No
 
-### 41. **Yes/No** — Break-glass.
+### 41. **Yes/No**, Break-glass.
 
 **S1:** Break-glass accounts should use phone-based MFA for portability.
 **S2:** Break-glass accounts must be excluded from EVERY CA policy.
@@ -265,7 +265,7 @@ B. No / Yes / Yes
 C. No / No / Yes
 D. Yes / No / No
 
-### 42. **Yes/No** — PIM mechanics.
+### 42. **Yes/No**, PIM mechanics.
 
 **S1:** An eligible user must complete MFA before activating most Entra roles.
 **S2:** PIM activation events are written to Entra audit logs.
@@ -276,7 +276,7 @@ B. No / Yes / No
 C. Yes / No / Yes
 D. Yes / Yes / Yes
 
-### 43. **Yes/No** — Hybrid identity.
+### 43. **Yes/No**, Hybrid identity.
 
 **S1:** Cloud Sync supports multi-forest without trust between forests.
 **S2:** Federation is being deprecated in favor of PHS + Seamless SSO.
@@ -335,7 +335,7 @@ B. 2 → 3 → 1 → 4
 C. 4 → 3 → 2 → 1
 D. 3 → 2 → 4 → 1
 
-### 48. **Case study — Single scenario, four questions** (Q48–Q50): A 6,500-person global manufacturing firm has Microsoft 365 E5 globally. They run Entra Connect with PHS + Seamless SSO. They have ~80 Global Administrators (acquired tenant inheritance) and 1,200 B2B guests, many over 2 years old. The CISO has 3 goals: (1) eliminate standing GA privilege, (2) clean up stale B2B, (3) detect token-theft attempts.
+### 48. **Case study, Single scenario, four questions** (Q48–Q50): A 6,500-person global manufacturing firm has Microsoft 365 E5 globally. They run Entra Connect with PHS + Seamless SSO. They have ~80 Global Administrators (acquired tenant inheritance) and 1,200 B2B guests, many over 2 years old. The CISO has 3 goals: (1) eliminate standing GA privilege, (2) clean up stale B2B, (3) detect token-theft attempts.
 
 **Q48 (CASE):** Best approach to eliminate standing GA privilege:
 A. Mass-revoke all GA assignments and re-assign on demand
@@ -387,7 +387,7 @@ D. Disable Identity Protection
 
 ## 🔍 Pre-Exam Final Review (1–2 days out)
 
-1. **Re-read every Cheat Sheet** — should take ~30 minutes total.
+1. **Re-read every Cheat Sheet**, should take ~30 minutes total.
 2. **Re-read your Flashcards** filtered to "Try again" cards only.
 3. **Re-read these critical lists:**
    - License matrix (Module 1 cheat sheet)
@@ -404,10 +404,10 @@ D. Disable Identity Protection
 ## 🧭 Day-Of Strategy
 
 - **100 minutes for 40–60 questions** = ~90–150 seconds/question average.
-- **Flag and move on** if any question takes >2 min — come back at the end.
-- **Case studies have re-readable scenarios** — anchor on the explicit requirement phrases ("must be," "lowest cost," "phishing-resistant").
+- **Flag and move on** if any question takes >2 min, come back at the end.
+- **Case studies have re-readable scenarios**, anchor on the explicit requirement phrases ("must be," "lowest cost," "phishing-resistant").
 - **Drag-drop ordering questions** are slow but high-value. Don't skip.
-- **Yes/No groups** look easy but punish overconfidence — read each statement twice.
+- **Yes/No groups** look easy but punish overconfidence, read each statement twice.
 
 ---
 
@@ -469,7 +469,7 @@ D. Disable Identity Protection
 
 **Q28. Answer: B.** Break-glass: active permanent + EXCLUDED from PIM (insurance).
 
-**Q29. Answer: A.** 0 — use PIM eligible-only is Microsoft's recommendation.
+**Q29. Answer: A.** 0, use PIM eligible-only is Microsoft's recommendation.
 
 **Q30. Answer: B.** Cloud Sync = modern recommended.
 

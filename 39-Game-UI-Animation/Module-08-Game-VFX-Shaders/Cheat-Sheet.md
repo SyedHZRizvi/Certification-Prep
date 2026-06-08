@@ -105,13 +105,13 @@ IEnumerator Shake(float duration, float magnitude) {
 | Random shake = good shake | Use Perlin noise decay for coherent directional shake |
 | Hit stop = bug | Hit stop is intentional impact feedback (2–12 frames) |
 | will-change in shaders | will-change is CSS; in shaders use `discard` for alpha cutout |
-| Dissolve uses geometry | Dissolve uses noise texture alpha clip — no mesh change |
-| VFX Graph on pre-A12 iOS | Silently falls back to CPU — check `SystemInfo.supportsComputeShaders` |
+| Dissolve uses geometry | Dissolve uses noise texture alpha clip, no mesh change |
+| VFX Graph on pre-A12 iOS | Silently falls back to CPU, check `SystemInfo.supportsComputeShaders` |
 | High overdraw on mobile | Limit particle count; alpha-erosion masks; prefer larger fewer particles |
 
 ---
 
-## 📊 Game VFX Node Graph Reference — Shader Effects
+## 📊 Game VFX Node Graph Reference, Shader Effects
 
 | Effect | Required Nodes (Unity Shader Graph) | Key Parameter |
 |---|---|---|
@@ -140,7 +140,7 @@ IEnumerator Shake(float duration, float magnitude) {
 ## 🍹 Juice Stacking Implementation Guide (Unity)
 
 ```csharp
-// Full juice stack on hit — call from game logic when hit lands
+// Full juice stack on hit, call from game logic when hit lands
 IEnumerator JuiceHit(Transform target, Vector3 hitPoint) {
     // Frame 0: Hit stop + white flash
     Time.timeScale = 0f;
@@ -173,7 +173,7 @@ IEnumerator JuiceHit(Transform target, Vector3 hitPoint) {
 
 ---
 
-## 📊 Dead Cells Hit Feedback — Layer Architecture
+## 📊 Dead Cells Hit Feedback, Layer Architecture
 
 | Signal | Frame | Duration | Parameter |
 |---|---|---|---|

@@ -1,10 +1,10 @@
-# 🧪 Final Mock Exam — Azure AI Engineer (AI-102, Real-Exam Conditions)
+# 🧪 Final Mock Exam, Azure AI Engineer (AI-102, Real-Exam Conditions)
 
 > **Conditions:** Set a **100-minute timer**. **55 questions**. Real-exam conditions: no notes, no Googling, no Slack. Stand up, breathe, then go.
-> **Pass mark:** 39/55 (~70.9% — slightly above the real cut of 700/1000)
+> **Pass mark:** 39/55 (~70.9%, slightly above the real cut of 700/1000)
 > Take this **the week before** your real exam.
 
-> The real AI-102 will include drag-and-drop, hot area, and case-study items. This mock simulates that mix in plain text — read each case study **carefully**.
+> The real AI-102 will include drag-and-drop, hot area, and case-study items. This mock simulates that mix in plain text, read each case study **carefully**.
 
 ---
 
@@ -59,7 +59,7 @@ C. Low / Medium / High
 D. 0, 2, 4, 6
 
 ### 9. Indirect prompt injection (e.g. malicious text inside a document the model is summarizing) is caught by:
-A. Prompt Shields — document attack
+A. Prompt Shields, document attack
 B. PII Detection
 C. Content moderation
 D. Groundedness detection
@@ -194,7 +194,7 @@ D. Custom Neural
 ### 30. You have invoices from 40 vendors with varying layouts but common fields. Choose:
 A. Either B or C is reasonable (and the exam may accept C if "common B2B fields" applies)
 B. Custom Neural
-C. Prebuilt-Invoice — try this first; varying layouts handled, common B2B fields covered
+C. Prebuilt-Invoice, try this first; varying layouts handled, common B2B fields covered
 D. Custom Template
 
 > Tip: For this question, pick **C** if Prebuilt-Invoice covers your fields; pick **B** if it doesn't.
@@ -265,7 +265,7 @@ B. Standard
 C. PTU
 D. Premium
 
-### 42. RAG vs Fine-Tuning — fine-tune is BEST for:
+### 42. RAG vs Fine-Tuning, fine-tune is BEST for:
 A. Adding rapidly changing knowledge
 B. Replacing RAG entirely
 C. Style / tone / format consistency
@@ -326,25 +326,25 @@ D. Cost only
 - (c) translate user queries from Spanish to English
 - (d) ensure no PII leaks in responses
 
-Part 51A — Best for field extraction from the forms (consistent layout):
+Part 51A, Best for field extraction from the forms (consistent layout):
 A. Read API
 B. Document Intelligence Custom Template
 C. Custom Vision
 D. Image Analysis 4.0
 
-Part 51B — Best search architecture for natural-language Q&A with citations:
+Part 51B, Best search architecture for natural-language Q&A with citations:
 A. SQL fulltext only
 B. Azure AI Search (hybrid + semantic) + Azure OpenAI On Your Data
 C. Cosmos DB only
 D. Translator + Question Answering
 
-Part 51C — Translate user queries:
+Part 51C, Translate user queries:
 A. Custom Vision
 B. Azure AI Translator (text translation)
 C. Speech Translation
 D. Document Translation
 
-Part 51D — Prevent PII leakage:
+Part 51D, Prevent PII leakage:
 A. Disable Content Safety
 B. Azure AI Language PII detection + groundedness check via Content Safety + custom content filter configuration
 C. Increase temperature
@@ -352,19 +352,19 @@ D. Hardcode block list only
 
 ### 52. **Case Study B (3 parts).** Maya is shipping a voice-driven Teams bot that answers from internal SharePoint pages.
 
-Part 52A — The voice channel to use:
+Part 52A, The voice channel to use:
 A. Direct Line
 B. Direct Line Speech
 C. Web Chat
 D. Telegram
 
-Part 52B — To make the same bot work in Teams AND Web Chat without rewriting:
+Part 52B, To make the same bot work in Teams AND Web Chat without rewriting:
 A. Build two bots
 B. Connect both channels in Azure AI Bot Service
 C. Direct Line only
 D. Skip Bot Service
 
-Part 52C — Index SharePoint pages so the bot can ground answers:
+Part 52C, Index SharePoint pages so the bot can ground answers:
 A. Azure SQL fulltext
 B. Azure AI Search indexer with SharePoint Online data source (preview) → skillset (embedding) → vector + semantic index
 C. Cosmos DB query
@@ -433,7 +433,7 @@ D. Identify → Measure → Mitigate → Operate
 
 **Q8. Answer: D (0, 2, 4, 6).** Discrete severity values, no odd numbers. A / B / C use other scales. **Takeaway:** "Severity 3" is the classic trap.
 
-**Q9. Answer: A (Prompt Shields — document attack).** Catches indirect injection inside grounding documents. B finds personal info; C is moderation; D scores groundedness. **Takeaway:** document-attack ≠ user-attack ≠ moderation.
+**Q9. Answer: A (Prompt Shields, document attack).** Catches indirect injection inside grounding documents. B finds personal info; C is moderation; D scores groundedness. **Takeaway:** document-attack ≠ user-attack ≠ moderation.
 
 **Q10. Answer: B (Grounding sources you provide).** Groundedness compares LLM output to passed-in sources. A / C / D are unrelated semantics. **Takeaway:** groundedness needs sources at request time.
 
@@ -475,11 +475,11 @@ D. Identify → Measure → Mitigate → Operate
 
 **Q29. Answer: B (Custom Template).** Identical layout = Template. A / D miss the structure; C has no fields. **Takeaway:** identical layout = Template.
 
-**Q30. Answer: A (Either B or C — pick C if prebuilt covers the fields).** The question intentionally probes the prebuilt-vs-custom decision: try prebuilt-Invoice first if fields are standard; fall back to Custom Neural if not. **Takeaway:** prebuilt before custom when fields match.
+**Q30. Answer: A (Either B or C, pick C if prebuilt covers the fields).** The question intentionally probes the prebuilt-vs-custom decision: try prebuilt-Invoice first if fields are standard; fall back to Custom Neural if not. **Takeaway:** prebuilt before custom when fields match.
 
 **Q31. Answer: B (Custom Classifier).** Categorizes before routing. A combines AFTER classification; C / D return text/structure. **Takeaway:** classify, then extract.
 
-**Q32. Answer: B (DISKS — Data source, Indexer, Skillset, Knowledge store, Search index).** The exact five concepts. A / C / D are other vendors or made-up. **Takeaway:** memorize DISKS.
+**Q32. Answer: B (DISKS, Data source, Indexer, Skillset, Knowledge store, Search index).** The exact five concepts. A / C / D are other vendors or made-up. **Takeaway:** memorize DISKS.
 
 **Q33. Answer: C (Pulls + optionally enriches via skillset + writes to index).** Indexer is the orchestrator. A / B / D miss the role. **Takeaway:** indexer = pull-based crawler.
 
@@ -544,8 +544,8 @@ D. Identify → Measure → Mitigate → Operate
 | Score | Verdict |
 |---|---|
 | 56–62 | 🏆 Book the exam this week |
-| 49–55 | ✅ Solid — review wrong answers, take exam in 1–2 weeks |
-| 39–48 | ⚠️ Pass mark but not comfortable — re-take with another set in 1 week |
+| 49–55 | ✅ Solid, review wrong answers, take exam in 1–2 weeks |
+| 39–48 | ⚠️ Pass mark but not comfortable, re-take with another set in 1 week |
 | <39 | 🔁 Re-study weak modules; pivot to specific Quiz.md / Cheat-Sheet review |
 
 (Note: the real AI-102 returns a 700/1000 scaled score. ~70% raw is the practical target.)
@@ -559,7 +559,7 @@ For EACH wrong answer:
 1. Identify the module (see Question → Module map below)
 2. Re-read that module's Reading.md AND its Cheat-Sheet.md
 3. Add an Anki flashcard for the concept
-4. Recreate the failing scenario in code (or pseudo-code) — muscle memory beats memorization
+4. Recreate the failing scenario in code (or pseudo-code), muscle memory beats memorization
 
 ### Question → Module Map
 
@@ -581,18 +581,18 @@ For EACH wrong answer:
 ## 🧠 24 Hours Before The Real Exam
 
 - ✅ Re-read every Cheat-Sheet.md (8 modules × ~2 min)
-- ✅ Microsoft Learn's free AI-102 practice assessment — take it twice
+- ✅ Microsoft Learn's free AI-102 practice assessment, take it twice
 - ✅ Review the official AI-102 study guide once more
 - ✅ Sleep 8 hours
-- ✅ For online proctored — test webcam + room scan the night before
-- ✅ For in-center — print your confirmation, bring 2 IDs
+- ✅ For online proctored, test webcam + room scan the night before
+- ✅ For in-center, print your confirmation, bring 2 IDs
 
 ## 🏆 During The Exam
 
-- Read each question **twice** (case studies — three times)
+- Read each question **twice** (case studies, three times)
 - Eliminate obviously wrong choices first
 - For case studies, **read the scenario once, then answer all parts before moving on**
-- Mark and skip if stuck — return at the end
+- Mark and skip if stuck, return at the end
 - Trust your gut; don't change answers without a concrete reason
 
 ---

@@ -1,4 +1,4 @@
-# Practice Exam 2 — Advanced Character Animation
+# Practice Exam 2, Advanced Character Animation
 
 > **30 questions · Estimated time: 40 minutes**
 > Select the single best answer. Answer key is at the bottom.
@@ -97,7 +97,7 @@ D. Contempt
 A. Over 120 words per minute  
 B. Over 180 words per minute  
 C. Over 60 words per minute  
-D. Regardless of speed — dialogue always requires 1s  
+D. Regardless of speed, dialogue always requires 1s  
 
 ---
 
@@ -239,7 +239,7 @@ D. It costs more than optical mocap
 
 ### 30. In the context of director communication, "It's almost there" usually means:
 A. The shot is fully approved with minor polish remaining  
-B. One or two specific things are wrong — press for which moment specifically  
+B. One or two specific things are wrong, press for which moment specifically  
 C. The shot has passed the supervisor's review but not the director's  
 D. The director doesn't remember if they approved this shot or not  
 
@@ -248,34 +248,34 @@ D. The director doesn't remember if they approved this shot or not
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B — Meisner: discover through genuine reaction; don't pre-plan
-2.  C — AU12: Lip Corner Puller (smile)
-3.  B — Puppety mouth: keyframing every phoneme individually
-4.  B — Trot: diagonal pairs together
-5.  B — Terrain following: automatic foot placement on irregular terrain
-6.  B — Retargeting paradox fix: adjust stride frequency or root motion speed
-7.  B — Clamped: smooth, no overshoot
-8.  C — First spline review: animator + supervisor + director
-9.  B — Law 2: show what you want to get hired to do
-10. C — Carl's objective: get up and make breakfast (mundane; grief leaks through)
-11. D — Contempt: the only asymmetric universal expression
-12. B — 1s for dialogue: over 180 words/minute
-13. C — Primary feathers: most individual movement on downstroke
-14. D — Global behavior: all agents with general direction
-15. B — Story tool: non-linear mocap clip editing
-16. C — S-curve: slow-in, fast-middle, slow-out
-17. B — Yes, And: exact note + one variation
-18. B — Pixar: emotional authenticity + subtle performance
-19. B — Skeleton solving: marker positions → joint rotations
-20. C — Internal monologue: discover unexpected performance choices
-21. C — Body mechanics lifting: ground → feet → hips → torso → extremities
-22. B — Saccades: stepped tangents (eye jumps, not glides)
-23. B — Shrek lifting: COG never shifted; all upper body
-24. B — LOTR emergent: orcs routing when nearby allies fell
-25. C — Never end on a weak shot
-26. B — Dead eye: no saccades + uniform blinks + lid issues
-27. B — Anguilliform: full body length wave
-28. B — Handles: editorial flexibility for cut point adjustment
-29. C — Inertial limitation: drift + relative position only
-30. B — "Almost there": 1-2 specific things wrong; ask which moment
+1.  B: Meisner: discover through genuine reaction; don't pre-plan
+2.  C: AU12: Lip Corner Puller (smile)
+3.  B: Puppety mouth: keyframing every phoneme individually
+4.  B: Trot: diagonal pairs together
+5.  B: Terrain following: automatic foot placement on irregular terrain
+6.  B: Retargeting paradox fix: adjust stride frequency or root motion speed
+7.  B: Clamped: smooth, no overshoot
+8.  C: First spline review: animator + supervisor + director
+9.  B: Law 2: show what you want to get hired to do
+10. C: Carl's objective: get up and make breakfast (mundane; grief leaks through)
+11. D: Contempt: the only asymmetric universal expression
+12. B: 1s for dialogue: over 180 words/minute
+13. C: Primary feathers: most individual movement on downstroke
+14. D: Global behavior: all agents with general direction
+15. B: Story tool: non-linear mocap clip editing
+16. C: S-curve: slow-in, fast-middle, slow-out
+17. B: Yes, And: exact note + one variation
+18. B: Pixar: emotional authenticity + subtle performance
+19. B: Skeleton solving: marker positions → joint rotations
+20. C: Internal monologue: discover unexpected performance choices
+21. C: Body mechanics lifting: ground → feet → hips → torso → extremities
+22. B: Saccades: stepped tangents (eye jumps, not glides)
+23. B: Shrek lifting: COG never shifted; all upper body
+24. B: LOTR emergent: orcs routing when nearby allies fell
+25. C: Never end on a weak shot
+26. B: Dead eye: no saccades + uniform blinks + lid issues
+27. B: Anguilliform: full body length wave
+28. B: Handles: editorial flexibility for cut point adjustment
+29. C: Inertial limitation: drift + relative position only
+30. B: "Almost there": 1-2 specific things wrong; ask which moment
 ```

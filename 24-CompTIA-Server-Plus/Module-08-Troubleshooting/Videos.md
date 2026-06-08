@@ -20,7 +20,7 @@
 
 # 🎥 Module 8 Videos: Troubleshooting & Documentation
 
-> **How to use:** Take an old machine and break something deliberately — pull a network cable, remove a stick of RAM, change the boot order. Then debug it. You learn troubleshooting by doing.
+> **How to use:** Take an old machine and break something deliberately, pull a network cable, remove a stick of RAM, change the boot order. Then debug it. You learn troubleshooting by doing.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Linux Perf Tools — top, iostat, vmstat</p>
+      <p class="vg-title">Linux Perf Tools, top, iostat, vmstat</p>
       <p class="vg-creator">Learn Linux TV</p>
       <span class="vg-duration">⏱ 15 min · CPU/RAM/disk triage</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AWS EBS 2012 Outage — Lessons</p>
+      <p class="vg-title">AWS EBS 2012 Outage, Lessons</p>
       <p class="vg-creator">community case study</p>
       <span class="vg-duration">⏱ 22 min · Cascading failures</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">USE Method — Performance Analysis</p>
+      <p class="vg-title">USE Method, Performance Analysis</p>
       <p class="vg-creator">Brendan Gregg</p>
       <span class="vg-duration">⏱ 25 min · Utilization/Saturation/Errors</span>
     </div>

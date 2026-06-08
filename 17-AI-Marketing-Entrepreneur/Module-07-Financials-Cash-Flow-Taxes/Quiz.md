@@ -1,7 +1,7 @@
 # ✏️ Module 7 Quiz: Financials, Cash Flow & Taxes
 
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
-> Then check your answers below. Aim for 22/26 minimum. **All financial/tax content is operational guidance — consult a CPA for your situation.**
+> Then check your answers below. Aim for 22/26 minimum. **All financial/tax content is operational guidance, consult a CPA for your situation.**
 
 ---
 
@@ -25,7 +25,7 @@ D. Wait until April
 
 ### Q3. Tara's opening story illustrated what core failure? *(Analyze)*
 A. She didn't have enough revenue
-B. She made $312K but owed $101.8K with $94K saved — no tax bucket, no quarterly estimates, no S-corp
+B. She made $312K but owed $101.8K with $94K saved, no tax bucket, no quarterly estimates, no S-corp
 C. She had too many tools
 D. She hired too quickly
 
@@ -83,7 +83,7 @@ D. Custom code
 A. 0% of last year's tax
 B. 100% of last year's tax (110% if AGI >$150K)
 C. 50% of next year's tax
-D. Nothing — no safe harbor
+D. Nothing, no safe harbor
 
 ---
 
@@ -127,7 +127,7 @@ D. $1M
 
 ---
 
-### Q16. The Solo 401(k) employee deferral limit (2026 — verify) is approximately: *(Remember)*
+### Q16. The Solo 401(k) employee deferral limit (2026, verify) is approximately: *(Remember)*
 A. $500
 B. $23,500 (+$7,500 catch-up if 50+)
 C. $1M
@@ -153,7 +153,7 @@ D. -20%
 
 ### Q19. Owner draws (from sole prop / LLC) are: *(Understand)*
 A. Tax-free
-B. Transfers from business to personal — tax already owed via SE on full profit
+B. Transfers from business to personal, tax already owed via SE on full profit
 C. Always taxed at 50%
 D. Same as W-2 wages
 
@@ -208,7 +208,7 @@ D. Book a 1-hour CPA call
 ---
 
 ### Q26. A founder's gross margin is 35% on a productized service. What does the reading suggest? *(Evaluate)*
-A. Excellent — keep going
+A. Excellent, keep going
 B. Likely over-delivering OR under-pricing OR delivery costs are bloated
 C. The market loves it
 D. Time to hire
@@ -223,7 +223,7 @@ Until you separate, you cannot see your business clearly.
 ### Q2: **B. Immediately transfer ~30% of every business deposit to a tax savings account**
 The tax bucket discipline.
 
-### Q3: **B. She made $312K but owed $101.8K with $94K saved — no tax bucket, no quarterly estimates, no S-corp**
+### Q3: **B. She made $312K but owed $101.8K with $94K saved, no tax bucket, no quarterly estimates, no S-corp**
 The composite illustrates the cost of skipping each.
 
 ### Q4: **B. $1,000+**
@@ -271,7 +271,7 @@ The triple-tax advantage.
 ### Q18: **B. 60–80%**
 Standard productized service margins.
 
-### Q19: **B. Transfers from business to personal — tax already owed via SE on full profit**
+### Q19: **B. Transfers from business to personal, tax already owed via SE on full profit**
 The draw doesn't itself trigger tax; the underlying profit does.
 
 ### Q20: **B. Limited (Ltd)**
@@ -293,7 +293,7 @@ US self-employed health insurance deduction.
 Triggers IRS penalties.
 
 ### Q26: **B. Likely over-delivering OR under-pricing OR delivery costs are bloated**
-35% gross margin on productized services is too low — investigate.
+35% gross margin on productized services is too low, investigate.
 
 ---
 

@@ -88,7 +88,7 @@ D. ViaBTC + Binance Pool
 
 ### Q11. Stratum V2 differs from Stratum V1 by: *(Apply)*
 A. Using TCP instead of UDP
-B. Letting individual miners choose which transactions to include — addressing pool-centralization concerns
+B. Letting individual miners choose which transactions to include, addressing pool-centralization concerns
 C. Removing fees
 D. Requiring KYC
 
@@ -104,7 +104,7 @@ D. ~0.1 J/TH
 
 ### Q13. The "stranded energy" argument for Bitcoin mining states: *(Understand)*
 A. All Bitcoin mining wastes energy
-B. Miners can monetize otherwise-wasted electricity (flare gas, off-peak hydro, curtailed wind) — the most-relocatable industrial load
+B. Miners can monetize otherwise-wasted electricity (flare gas, off-peak hydro, curtailed wind), the most-relocatable industrial load
 C. Bitcoin mining is illegal
 D. Miners only use coal
 
@@ -112,7 +112,7 @@ D. Miners only use coal
 
 ### Q14. The 100-block coinbase maturity rule means: *(Apply)*
 A. The first 100 blocks were free
-B. A miner cannot spend their block reward until 100 blocks have been mined on top — protects against reorganization-driven reward reversal
+B. A miner cannot spend their block reward until 100 blocks have been mined on top, protects against reorganization-driven reward reversal
 C. The supply cap is 100
 D. Coinbase signatures need 100 confirmations
 
@@ -152,7 +152,7 @@ D. The SEC
 
 ### Q19. ERCOT (Texas) treats large Bitcoin miners as: *(Apply)*
 A. Banned
-B. Controllable Load Resources (CLR) — interruptible demand response that stabilizes the grid
+B. Controllable Load Resources (CLR), interruptible demand response that stabilizes the grid
 C. Tax-exempt
 D. Subsidized
 
@@ -191,10 +191,10 @@ D. <1%
 ---
 
 ### Q24. A board member argues: "After the next halving in 2028 cuts subsidy to 1.5625 BTC, mining will collapse." Strongest reasoned reply: *(Evaluate)*
-A. Agree — there's nothing miners can do
-B. Mining economics depend on subsidy + fees + price + efficiency improvements; historical halvings have seen industry consolidation, not collapse; the 2028 halving will be the 5th — the first 4 produced industry strengthening, not collapse
-C. Agree — Bitcoin won't survive 2028
-D. Disagree — there will be a new halving in 2024
+A. Agree, there's nothing miners can do
+B. Mining economics depend on subsidy + fees + price + efficiency improvements; historical halvings have seen industry consolidation, not collapse; the 2028 halving will be the 5th, the first 4 produced industry strengthening, not collapse
+C. Agree, Bitcoin won't survive 2028
+D. Disagree, there will be a new halving in 2024
 
 ---
 
@@ -219,7 +219,7 @@ After 2013, only specialized ASIC silicon was profitable. "One CPU one vote" bec
 The textbook proof of Bitcoin's anti-fragility to state action. Mining capacity relocated, not destroyed.
 
 ### Q7: **C. Double-spend recent transactions and censor specific addresses**
-The constraints on a 51% attack — it cannot inflate supply, steal arbitrary coins, or change cryptographic rules.
+The constraints on a 51% attack, it cannot inflate supply, steal arbitrary coins, or change cryptographic rules.
 
 ### Q8: **B. ~120-150 TWh/year**
 Approximately 0.5% of global electricity. Comparable to gold mining or clothes dryers (US).
@@ -254,7 +254,7 @@ The Runes protocol launched at the halving block. Fees were ~40 BTC (~$2.7M) on 
 ### Q18: **B. Cambridge CCAF**
 Cambridge Centre for Alternative Finance. The most-cited academic source.
 
-### Q19: **B. Controllable Load Resources (CLR) — interruptible demand response**
+### Q19: **B. Controllable Load Resources (CLR), interruptible demand response**
 ERCOT formalized this around 2022. Miners can be curtailed in seconds when grid needs it.
 
 ### Q20: **B. Transaction fees**

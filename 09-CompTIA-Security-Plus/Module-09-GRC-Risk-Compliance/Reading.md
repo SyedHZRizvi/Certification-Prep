@@ -1,11 +1,11 @@
 # Module 9: GRC, Risk & Compliance ⚖️
 
-> **Why this module matters:** Domain 5 (Security Program Management & Oversight) is **20%** of the exam. Most engineers underestimate it — and lose points. This module is heavy on definitions, formulas (ALE/SLE/ARO), framework names, and "vendor agreement" acronyms (MSA, NDA, MOU, SLA, SOW, BPA). Memorization-heavy but very high-yield.
+> **Why this module matters:** Domain 5 (Security Program Management & Oversight) is **20%** of the exam. Most engineers underestimate it, and lose points. This module is heavy on definitions, formulas (ALE/SLE/ARO), framework names, and "vendor agreement" acronyms (MSA, NDA, MOU, SLA, SOW, BPA). Memorization-heavy but very high-yield.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Control types and categories](../Module-01-Security-Fundamentals/Reading.md) — risk treatments produce *controls*.
-> - General business literacy — read a balance sheet enough to know what "asset value" and "fiscal year" mean. Risk math (SLE, ALE) lives at the intersection of finance and security.
-> - Awareness of major regulatory regimes by name — you don't need to *cite* HIPAA or GDPR articles, but you should recognize their domains.
+> - [Control types and categories](../Module-01-Security-Fundamentals/Reading.md), risk treatments produce *controls*.
+> - General business literacy, read a balance sheet enough to know what "asset value" and "fiscal year" mean. Risk math (SLE, ALE) lives at the intersection of finance and security.
+> - Awareness of major regulatory regimes by name, you don't need to *cite* HIPAA or GDPR articles, but you should recognize their domains.
 
 ---
 
@@ -13,8 +13,8 @@
 
 When you buy car insurance, you make a chain of decisions almost identical to enterprise risk management:
 
-- **Risk identification:** "What could go wrong?" — collision, theft, weather, liability.
-- **Risk analysis:** "How likely × how bad?" — collision is moderate likelihood, very expensive; theft varies by neighborhood.
+- **Risk identification:** "What could go wrong?", collision, theft, weather, liability.
+- **Risk analysis:** "How likely × how bad?", collision is moderate likelihood, very expensive; theft varies by neighborhood.
 - **Risk register:** A list with each risk + likelihood + impact + your owner (you).
 - **Risk treatment:**
   - **Avoid:** Don't own a car at all.
@@ -24,11 +24,11 @@ When you buy car insurance, you make a chain of decisions almost identical to en
 - **Risk tolerance / appetite:** Some people happily skip comprehensive coverage; others want the maximum.
 - **Continuous monitoring:** Re-shop annually; reassess after a move or accident.
 
-Enterprise security risk works exactly the same — just with bigger words and more acronyms. The rest of this module is the formal vocabulary.
+Enterprise security risk works exactly the same, just with bigger words and more acronyms. The rest of this module is the formal vocabulary.
 
 ---
 
-## 🏛️ Governance — Who Decides The Rules
+## 🏛️ Governance, Who Decides The Rules
 
 ### Governance layers (top → bottom)
 | Layer | What |
@@ -63,7 +63,7 @@ Enterprise security risk works exactly the same — just with bigger words and m
 
 ---
 
-## ⚖️ Risk Management — Vocabulary You Must Memorize
+## ⚖️ Risk Management, Vocabulary You Must Memorize
 
 ### Core risk terms
 
@@ -111,7 +111,7 @@ Where:
 - Server worth $200,000. Each ransomware event destroys 30% of its value ($60,000) and we expect 0.25 events/year.
 - SLE = $200,000 × 0.30 = $60,000
 - ALE = $60,000 × 0.25 = $15,000/year
-- Would you spend $20k/year on a control to prevent this? Only if your appetite says no — ALE is just the math input.
+- Would you spend $20k/year on a control to prevent this? Only if your appetite says no, ALE is just the math input.
 
 ### Risk Treatment (the 4-5 strategies)
 
@@ -130,15 +130,15 @@ Where:
 ## 🤝 Third-Party Risk Management
 
 ### Vendor lifecycle
-1. **Due diligence** — research the vendor (financial health, security posture, breach history, references)
-2. **Risk assessment / questionnaire** — SIG, CAIQ, SOC 2 reports
-3. **Contracts** — terms encode security expectations
-4. **Onboarding** — provision access, integrate
-5. **Continuous monitoring** — security scorecards, news monitoring, periodic reassessment
-6. **Right to audit** — clause allowing you to audit them
-7. **Offboarding** — remove access, retrieve data, certify destruction
+1. **Due diligence**, research the vendor (financial health, security posture, breach history, references)
+2. **Risk assessment / questionnaire**, SIG, CAIQ, SOC 2 reports
+3. **Contracts**, terms encode security expectations
+4. **Onboarding**, provision access, integrate
+5. **Continuous monitoring**, security scorecards, news monitoring, periodic reassessment
+6. **Right to audit**, clause allowing you to audit them
+7. **Offboarding**, remove access, retrieve data, certify destruction
 
-### Vendor agreement types — MEMORIZE these acronyms
+### Vendor agreement types, MEMORIZE these acronyms
 
 | Acronym | Means |
 |---------|-------|
@@ -148,30 +148,30 @@ Where:
 | **MOU / MOA** (Memorandum of Understanding / Agreement) | Non-binding (MOU) or binding (MOA) statement of intent |
 | **SOW** (Statement of Work) | Specific project scope and deliverables under an MSA |
 | **BPA** (Business Partnership Agreement) | Defines partner relationship and responsibilities |
-| **ISA** (Interconnection Security Agreement) | Two systems connect — security requirements |
+| **ISA** (Interconnection Security Agreement) | Two systems connect, security requirements |
 | **MoA / Memorandum of Agreement** | Binding form of MOU |
 | **DPA** (Data Processing Agreement) | GDPR-required when a processor handles personal data |
 
 🎯 **Common Sec+ trap:** SLA is about performance/uptime, NOT scope. SOW is about scope under an MSA.
 
 ### Vendor risk concepts
-- **Fourth-party risk** — your vendor's vendors
-- **Supply-chain risk** — components, libraries, services
-- **Continuous monitoring** — re-evaluate vendors annually + on events
-- **Independent assessments** — SOC 2 Type II, ISO 27001 cert, PCI ROC
+- **Fourth-party risk**, your vendor's vendors
+- **Supply-chain risk**, components, libraries, services
+- **Continuous monitoring**, re-evaluate vendors annually + on events
+- **Independent assessments**, SOC 2 Type II, ISO 27001 cert, PCI ROC
 
 ---
 
-## 📋 Compliance — Frameworks & Regulations
+## 📋 Compliance, Frameworks & Regulations
 
 ### Frameworks (voluntary)
 
 Citation note for the framework table:
 
-- **NIST CSF** was first published as v1.0 in February 2014 (response to Executive Order 13636, *Improving Critical Infrastructure Cybersecurity*, Feb 2013). **v1.1** April 2018. **v2.0** finalized 26 February 2024 — added the new **Govern** function and broadened scope beyond critical infrastructure.
+- **NIST CSF** was first published as v1.0 in February 2014 (response to Executive Order 13636, *Improving Critical Infrastructure Cybersecurity*, Feb 2013). **v1.1** April 2018. **v2.0** finalized 26 February 2024, added the new **Govern** function and broadened scope beyond critical infrastructure.
 - **ISO/IEC 27001** was originally published October 2005, revised October 2013, **most recent revision October 2022** (the version certification bodies now audit to). ISO/IEC 27002 (the implementation guidance) was revised February 2022.
-- **CIS Controls v8** (Center for Internet Security, May 2021) — formerly the SANS Top 20.
-- **COBIT 2019** (ISACA, 2018-2019) — the governance-focused framework, distinct from CSF.
+- **CIS Controls v8** (Center for Internet Security, May 2021), formerly the SANS Top 20.
+- **COBIT 2019** (ISACA, 2018-2019), the governance-focused framework, distinct from CSF.
 
 | Framework | What | Notes |
 |-----------|------|-------|
@@ -201,13 +201,13 @@ Citation note for the framework table:
 | **ITAR / EAR** | US export controls |
 
 ### Compliance terms
-- **Attestation** — formal statement (e.g., SOC 2) by an independent auditor
-- **Audit** — formal examination by an internal or external party
-- **Assessment** — broader, often less formal
-- **Continuous compliance** — ongoing, not just at audit time
-- **Compliance reporting** — internal/external
-- **Penalties** — fines, license loss, criminal charges
-- **Right to be forgotten** (GDPR) — data subjects can demand deletion
+- **Attestation**, formal statement (e.g., SOC 2) by an independent auditor
+- **Audit**, formal examination by an internal or external party
+- **Assessment**, broader, often less formal
+- **Continuous compliance**, ongoing, not just at audit time
+- **Compliance reporting**, internal/external
+- **Penalties**, fines, license loss, criminal charges
+- **Right to be forgotten** (GDPR), data subjects can demand deletion
 
 ---
 
@@ -227,7 +227,7 @@ Citation note for the framework table:
 
 ## 🛠️ Business Continuity & Disaster Recovery (BCP / DR)
 
-### Key metrics — MEMORIZE
+### Key metrics, MEMORIZE
 | Acronym | Means | Owned by |
 |---------|-------|----------|
 | **RTO** (Recovery Time Objective) | Max acceptable downtime | Business |
@@ -238,7 +238,7 @@ Citation note for the framework table:
 | **MTTD** (Mean Time To Detect) | Average time to notice an incident | Security |
 | **MTTC** (Mean Time To Contain) | Average time to contain | Security |
 
-🎯 **RTO vs RPO** — RTO is *time until back up* (downtime tolerance). RPO is *data loss* (how far back will we go to restore).
+🎯 **RTO vs RPO**, RTO is *time until back up* (downtime tolerance). RPO is *data loss* (how far back will we go to restore).
 
 ### BIA (Business Impact Analysis)
 - Identifies critical processes
@@ -256,13 +256,13 @@ Citation note for the framework table:
 | **Mobile site** | Trailer/container DR | Specific use cases |
 
 ### Backup strategies
-- **3-2-1 rule** — 3 copies, 2 different media, 1 off-site
+- **3-2-1 rule**, 3 copies, 2 different media, 1 off-site
 - **Full / incremental / differential** backups
 - **Snapshot** vs backup
-- **Immutable backup** — can't be modified/deleted (ransomware-resistant)
-- **Air-gapped backup** — physically disconnected
+- **Immutable backup**, can't be modified/deleted (ransomware-resistant)
+- **Air-gapped backup**, physically disconnected
 - **Encryption at rest** for backups
-- **Test restores!** — backups you've never restored are not backups
+- **Test restores!**, backups you've never restored are not backups
 
 ### DR testing
 - Tabletop → Walkthrough → Simulation → Parallel → Full-Interruption (see Module 8)
@@ -273,13 +273,13 @@ Citation note for the framework table:
 
 | Training type | What |
 |---------------|------|
-| **General awareness** | Annual, all employees — phishing, password, AUP |
+| **General awareness** | Annual, all employees, phishing, password, AUP |
 | **Role-based** | Tailored (developers, finance, executives) |
 | **Phishing simulations** | Periodic tests with metrics |
 | **New-hire onboarding** | Day-1 / week-1 |
 | **Security culture programs** | Champions, posters, gamification |
 | **Anomalous behavior recognition** | "What looks weird?" training |
-| **Reporting culture** | "When in doubt, report" — no blame |
+| **Reporting culture** | "When in doubt, report", no blame |
 
 ### Behavior categories Sec+ tests
 - **Recognizing** social engineering, suspicious links/files, anomalies
@@ -310,22 +310,22 @@ A PBQ might present this as drag-match.
 
 ---
 
-## 📊 Case Study — Boeing 737 MAX Certification (2018-2019)
+## 📊 Case Study, Boeing 737 MAX Certification (2018-2019)
 
-**Situation.** Boeing's **737 MAX** was developed (2011-2017) as a fuel-efficient successor to the 737 NG, designed to compete with the Airbus A320neo. To preserve commonality with previous 737 models — which let airlines avoid expensive pilot retraining — Boeing engineered the MAX so that pilots could fly it under their existing 737 type rating. The MAX's larger, repositioned engines changed the aircraft's pitch behavior at high angles of attack. To compensate (and avoid certification of a "new" aircraft type with new pilot training), Boeing added the **Maneuvering Characteristics Augmentation System (MCAS)** — a software system that automatically pushed the nose down based on a single Angle-of-Attack sensor reading.
+**Situation.** Boeing's **737 MAX** was developed (2011-2017) as a fuel-efficient successor to the 737 NG, designed to compete with the Airbus A320neo. To preserve commonality with previous 737 models which let airlines avoid expensive pilot retraining Boeing engineered the MAX so that pilots could fly it under their existing 737 type rating. The MAX's larger, repositioned engines changed the aircraft's pitch behavior at high angles of attack. To compensate (and avoid certification of a "new" aircraft type with new pilot training), Boeing added the **Maneuvering Characteristics Augmentation System (MCAS)**, a software system that automatically pushed the nose down based on a single Angle-of-Attack sensor reading.
 
 **Decision.** Boeing made several risk-management and governance choices documented later in the US House T&I Committee final report (September 2020, ~250 pp.) and the Office of Inspector General report (DOT-OIG-21-029, June 2021):
 
-- **Single sensor.** MCAS relied on **one** AoA sensor input (not dual-redundant), violating the textbook safety-critical design principle of redundancy. Boeing's internal hazard analysis classified MCAS-malfunction risk as "major" rather than "catastrophic" — which would have required dual-redundant sensors.
+- **Single sensor.** MCAS relied on **one** AoA sensor input (not dual-redundant), violating the textbook safety-critical design principle of redundancy. Boeing's internal hazard analysis classified MCAS-malfunction risk as "major" rather than "catastrophic", which would have required dual-redundant sensors.
 - **Pilot-disclosure choice.** Boeing chose **not to document MCAS in the pilot's flight manual**, on the rationale that pilots would never need to know about it. Pilot training omitted MCAS entirely.
-- **FAA delegation.** The FAA had progressively delegated certification authority to Boeing via the **Organization Designation Authorization (ODA)** program. Boeing personnel acted as Authorized Representatives (ARs) on FAA's behalf — a structural conflict of interest the House report later characterized as "regulatory capture."
+- **FAA delegation.** The FAA had progressively delegated certification authority to Boeing via the **Organization Designation Authorization (ODA)** program. Boeing personnel acted as Authorized Representatives (ARs) on FAA's behalf, a structural conflict of interest the House report later characterized as "regulatory capture."
 - **Risk acceptance.** Internal Boeing emails (released during House investigation) showed engineers raising concerns; Boeing's risk-management process classified those as acceptable. One engineer's 2016 internal email: "This airplane is designed by clowns, who in turn are supervised by monkeys" (entered into the congressional record).
 
-**Outcome.** Lion Air Flight 610 (29 October 2018, Indonesia, 189 deaths) and Ethiopian Airlines Flight 302 (10 March 2019, Ethiopia, 157 deaths) — both lost when faulty AoA sensors triggered repeated MCAS nose-down inputs the pilots could not override in time. The MAX was **globally grounded for 20 months** (March 2019 to November 2020 in the US; longer elsewhere). Boeing paid **$2.5B settlement** with the US DOJ (January 2021) including a $243.6M criminal fine, $1.77B in customer compensation, and $500M for victim-family compensation. The SEC also pursued action against Boeing executives. The FAA's certification authority was statutorily revised by the **Aircraft Certification, Safety, and Accountability Act** of 2020. Boeing's CEO Dennis Muilenburg was fired (December 2019). Direct losses crossed **$20B**.
+**Outcome.** Lion Air Flight 610 (29 October 2018, Indonesia, 189 deaths) and Ethiopian Airlines Flight 302 (10 March 2019, Ethiopia, 157 deaths), both lost when faulty AoA sensors triggered repeated MCAS nose-down inputs the pilots could not override in time. The MAX was **globally grounded for 20 months** (March 2019 to November 2020 in the US; longer elsewhere). Boeing paid **$2.5B settlement** with the US DOJ (January 2021) including a $243.6M criminal fine, $1.77B in customer compensation, and $500M for victim-family compensation. The SEC also pursued action against Boeing executives. The FAA's certification authority was statutorily revised by the **Aircraft Certification, Safety, and Accountability Act** of 2020. Boeing's CEO Dennis Muilenburg was fired (December 2019). Direct losses crossed **$20B**.
 
 **Lesson for the exam / for practitioners.** The 737 MAX is taught in Cornell, Harvard, and Stanford engineering ethics and GRC courses as the canonical case of a **GRC-meets-regulatory-capture failure**. Every concept in Module 9 has a 737 MAX analog:
 
-- **Risk treatment vs risk acceptance.** Boeing classified MCAS malfunction as "major" rather than "catastrophic." Classification drives required mitigations. **Inappropriate risk acceptance with executive sign-off** *is* a Sec+ concept — and a 737 MAX-grade reminder that documentation does not absolve responsibility when the underlying classification is wrong.
+- **Risk treatment vs risk acceptance.** Boeing classified MCAS malfunction as "major" rather than "catastrophic." Classification drives required mitigations. **Inappropriate risk acceptance with executive sign-off** *is* a Sec+ concept, and a 737 MAX-grade reminder that documentation does not absolve responsibility when the underlying classification is wrong.
 - **Governance hierarchy failure.** Policies (FAA certification standards) → standards (catastrophic vs major hazard definitions) → procedures (hazard analysis worksheets). The procedure was followed; the underlying classification was wrong. Sec+ tests this: governance documents are only as good as their underlying assumptions. Compare with the Equifax case (Module 1): patch policy existed; the *verifier* of compliance was broken.
 - **Third-party / regulatory risk.** The ODA program effectively made Boeing its own auditor. This is what Sec+ calls "self-attestation" and contrasts with "**independent attestation**" (SOC 2 by external auditor, ISO certification by accredited body). The exam tests this distinction directly.
 - **Stakeholder risk vs financial risk.** Boeing's CFO calculations gave MCAS its cost-benefit math (avoiding pilot retraining = ~$1M/aircraft savings to airlines, supporting MAX sales). The risk register did not weight passenger-life risk appropriately. Sec+ Domain 5 covers this: **stakeholder identification and impact analysis** must include parties who do not pay for the system.
@@ -333,7 +333,7 @@ A PBQ might present this as drag-match.
 
 **Discussion (Socratic).**
 - **Q1:** Boeing's risk-acceptance decision was made within a *legally-compliant* process (delegated FAA certification, internal hazard analysis with executive sign-off). At what point should a regulator override an industry's internal risk-acceptance documentation, and at what point is that override regulatory overreach? Defend a position with reference to NIST SP 800-30 (Risk Assessment) and analogous regulatory frameworks (FDA medical devices, NRC nuclear, FCC spectrum).
-- **Q2:** ISO 27001 *requires* independent third-party certification. SOC 2 requires an independent auditor. Boeing's ODA program inverted this — the firm itself was certifier. Apply this contrast to cybersecurity: would mandatory independent SOC 2 / ISO 27001 audits prevent Colonial Pipeline (Module 6) or Capital One (Module 7) outcomes? Steelman both sides.
+- **Q2:** ISO 27001 *requires* independent third-party certification. SOC 2 requires an independent auditor. Boeing's ODA program inverted this, the firm itself was certifier. Apply this contrast to cybersecurity: would mandatory independent SOC 2 / ISO 27001 audits prevent Colonial Pipeline (Module 6) or Capital One (Module 7) outcomes? Steelman both sides.
 - **Q3:** The House report (Sept 2020) called the FAA-Boeing relationship "regulatory capture." Apply this lens to cybersecurity: is the relationship between large cloud providers (AWS/Azure/GCP) and federal cyber-regulators (CISA, NIST, FedRAMP) heading toward the same pathology? What governance structures would prevent it? Defend your design.
 
 ---
@@ -342,14 +342,14 @@ A PBQ might present this as drag-match.
 
 | Misconception | Reality |
 |---------------|---------|
-| "PCI-DSS is a law" | It's a contractual standard from card brands — penalties via card networks, not government (in most cases) |
-| "GDPR only applies in Europe" | Applies to anyone processing EU residents' data — extraterritorial |
+| "PCI-DSS is a law" | It's a contractual standard from card brands, penalties via card networks, not government (in most cases) |
+| "GDPR only applies in Europe" | Applies to anyone processing EU residents' data, extraterritorial |
 | "MSA = SOW = SLA" | MSA umbrella, SOW per-project scope, SLA performance metrics |
 | "Acceptance is irresponsible" | Acceptance with documentation and exec sign-off is a legitimate treatment |
 | "ALE = ARO" | NO. ALE = SLE × ARO. They're different. |
 | "RTO and RPO are interchangeable" | RTO = time to recover; RPO = data loss tolerance |
 | "Hot site = warm site with more RAM" | Hot = active sync; warm = periodic sync |
-| "SOC 2 is mandatory" | It's not regulation — it's a market-driven attestation |
+| "SOC 2 is mandatory" | It's not regulation, it's a market-driven attestation |
 | "ISO 27001 == NIST CSF" | Different frameworks; ISO is certifiable, CSF is voluntary mapping |
 | "Annual awareness training is enough" | Phishing sims + role-based + culture work needed too |
 
@@ -418,12 +418,12 @@ You now know:
 
 **Next steps:**
 1. 🎥 [Videos.md](./Videos.md)
-2. ✏️ [Quiz.md](./Quiz.md) — heavy on definitions
-3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md) — print this; it's pure memorization fuel
-4. ➡️ [Module 10 — Application & Data Security](../Module-10-Application-Data-Security/Reading.md)
+2. ✏️ [Quiz.md](./Quiz.md), heavy on definitions
+3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md), print this; it's pure memorization fuel
+4. ➡️ [Module 10, Application & Data Security](../Module-10-Application-Data-Security/Reading.md)
 
 > **Where this leads.**
-> - Inside this course: [Module 10](../Module-10-Application-Data-Security/Reading.md) covers DLP, classification, and data-privacy compliance — the technical implementation of the regulatory regimes in this module; the [Capstone Project](../Capstone-Project.md) is essentially a GRC exercise.
+> - Inside this course: [Module 10](../Module-10-Application-Data-Security/Reading.md) covers DLP, classification, and data-privacy compliance, the technical implementation of the regulatory regimes in this module; the [Capstone Project](../Capstone-Project.md) is essentially a GRC exercise.
 > - Cross-course: PMP (course 02) covers stakeholder management and risk registers in non-security context. The ASCM supply-chain certifications (10/11/12/13) all draw on similar third-party risk frameworks.
 > - Practice: Practice Exam 2 has ~13 GRC/risk questions; Final Mock has ~11. Vendor-agreement acronyms (NDA/MSA/SOW/SLA/BAA/DPA/ISA) are nearly guaranteed easy points if memorized.
 
@@ -437,21 +437,21 @@ You now know:
 - 📄 NIST SP 800-53 Rev 5 (2020, updated 2023). *Security and Privacy Controls*.
 - 📄 NIST SP 800-30 Rev 1 (2012). *Guide for Conducting Risk Assessments*.
 - 📄 NIST SP 800-34 Rev 1 (2010). [*Contingency Planning Guide for Federal Information Systems*](https://csrc.nist.gov/publications/detail/sp/800-34/rev-1/final).
-- 📄 ISO/IEC 27001:2022 — Information Security Management Systems. (Latest revision.)
-- 📄 ISO/IEC 27002:2022 — Code of practice for information security controls.
+- 📄 ISO/IEC 27001:2022, Information Security Management Systems. (Latest revision.)
+- 📄 ISO/IEC 27002:2022, Code of practice for information security controls.
 - 📄 PCI Security Standards Council. [PCI DSS v4.0](https://www.pcisecuritystandards.org/) (March 2022; mandatory from 31 March 2024).
 - 📄 CIS Controls v8 (May 2021).
-- 📄 GDPR — Regulation (EU) 2016/679. [gdpr-info.eu](https://gdpr-info.eu/).
-- 📄 HIPAA Security Rule — 45 CFR Parts 160 & 164.
+- 📄 GDPR, Regulation (EU) 2016/679. [gdpr-info.eu](https://gdpr-info.eu/).
+- 📄 HIPAA Security Rule, 45 CFR Parts 160 & 164.
 
 **Case-study sources (Boeing 737 MAX):**
 - 📄 US House T&I Committee (2020). [*The Design, Development & Certification of the Boeing 737 MAX*](https://transportation.house.gov/imo/media/doc/2020.09.15%20FINAL%20737%20MAX%20Report%20for%20Public%20Release.pdf). Final Committee Report, ~250 pp.
 - 📄 US DOT Office of Inspector General (June 2021). DOT-OIG-21-029. *Timeline of Activities Leading to the Certification of the Boeing 737 MAX 8 Aircraft*.
 - 📄 US DOJ (2021). *Deferred Prosecution Agreement: United States v. The Boeing Company.* $2.5B settlement.
-- 📄 Aircraft Certification, Safety, and Accountability Act (2020) — codified at 49 USC §44704.
+- 📄 Aircraft Certification, Safety, and Accountability Act (2020), codified at 49 USC §44704.
 
 **Practitioner / discussion:**
-- 📖 ISACA. *COBIT 2019* — IT governance framework.
+- 📖 ISACA. *COBIT 2019*, IT governance framework.
 - 📖 SANS. *Security Awareness Maturity Model*.
 - 📖 Anderson, R. (2020). *Security Engineering* (3rd ed.). Chapter on assurance and governance is the most-cited treatment.
-- 📖 Ponemon Institute. *Cost of a Data Breach Report 2024* (IBM-sponsored, annual) — used for ALE / business-case calibration.
+- 📖 Ponemon Institute. *Cost of a Data Breach Report 2024* (IBM-sponsored, annual), used for ALE / business-case calibration.

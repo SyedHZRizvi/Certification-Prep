@@ -18,7 +18,7 @@
 
 # 🎥 Module 7 Videos: Hybrid Identity (Entra Connect / Cloud Sync)
 
-> **How to use:** Click any card to open a YouTube search — pick the top current result. Follow along by installing Cloud Sync agent in a lab AD forest.
+> **How to use:** Click any card to open a YouTube search, pick the top current result. Follow along by installing Cloud Sync agent in a lab AD forest.
 
 ## ⭐ Essential watching (~75 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Entra Connect vs Cloud Sync — Pick the Right One</p>
+      <p class="vg-title">Entra Connect vs Cloud Sync, Pick the Right One</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 22 min · Feature-by-feature comparison</span>
     </div>
@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PHS vs PTA vs Federation — Picking Your Auth Topology</p>
+      <p class="vg-title">PHS vs PTA vs Federation, Picking Your Auth Topology</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 20 min · Trade-offs + recommendation</span>
     </div>
@@ -46,7 +46,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Cloud Sync Agent Install + Configuration</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 18 min · End-to-end agent setup</span>
     </div>
   </a>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Hybrid Entra Join — Setup End-to-End</p>
+      <p class="vg-title">Hybrid Entra Join, Setup End-to-End</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 18 min · GPO + Cloud Sync + Entra</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Seamless SSO — Kerberos Silent Sign-In</p>
+      <p class="vg-title">Seamless SSO, Kerberos Silent Sign-In</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 12 min · Computer account + GPO</span>
     </div>
@@ -100,7 +100,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OU Filtering + Attribute Filtering — Mistakes to Avoid</p>
+      <p class="vg-title">OU Filtering + Attribute Filtering, Mistakes to Avoid</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 16 min · Soft-delete horror stories</span>
     </div>
@@ -110,7 +110,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">PTA Agent Architecture + Multi-Agent HA</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 14 min · Avoiding SPOF</span>
     </div>
   </a>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Entra Connect Health — Sync Error Monitoring</p>
+      <p class="vg-title">Entra Connect Health, Sync Error Monitoring</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 12 min · Alerts + agent health</span>
     </div>
@@ -134,7 +134,7 @@
 | **John Savill** | Definitive hybrid identity content. |
 | **Andy Malone MVP** | Practical M365 admin perspective. |
 | **Microsoft Mechanics** | Official launches; federation deprecation messaging. |
-| **Dean Cefola — Azure Academy** | Lab walkthroughs. |
+| **Dean Cefola, Azure Academy** | Lab walkthroughs. |
 | **Concepts Work** | Newer SC-300 channel; well-organized. |
 
 ---
@@ -143,10 +143,10 @@
 
 Answer these in your notebook (without re-watching):
 
-1. Cloud Sync vs Entra Connect — which features make you stay on Connect?
+1. Cloud Sync vs Entra Connect, which features make you stay on Connect?
 2. Why is PHS recommended even for federation customers?
 3. Walk through Seamless SSO Kerberos flow against `AZUREADSSOACC$`.
 4. What's the most common OU-filtering mistake and how does it manifest?
-5. Difference between Hybrid Entra Join and Entra Joined — when each is right.
+5. Difference between Hybrid Entra Join and Entra Joined, when each is right.
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

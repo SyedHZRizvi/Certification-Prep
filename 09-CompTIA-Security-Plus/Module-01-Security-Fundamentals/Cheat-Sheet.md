@@ -13,7 +13,7 @@
 | **A** | Availability | Redundancy, backups, DR |
 | **N-R** | Non-repudiation | Digital signatures (private key) |
 
-🚨 *Non-repudiation is NOT part of CIA — it's the 4th property.*
+🚨 *Non-repudiation is NOT part of CIA, it's the 4th property.*
 
 ---
 
@@ -52,11 +52,11 @@ Adaptive Identity = risk-based auth (signals: device, location, time, behavior).
 
 ---
 
-## 🔄 Change Management — One-Liners
+## 🔄 Change Management, One-Liners
 
 | Term | One-liner |
 |------|-----------|
-| **CAB** | Change Advisory Board — approves changes |
+| **CAB** | Change Advisory Board, approves changes |
 | **Impact analysis** | What breaks if we do this? |
 | **Backout plan** | How we undo if it fails |
 | **Maintenance window** | When the change actually happens |

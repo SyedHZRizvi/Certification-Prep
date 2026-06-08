@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Supply Chain Design
 
-> **How to use:** Click any video card to search YouTube. Watch the top result. Pay attention to numerical examples — center-of-gravity and make-or-buy show up as calculation questions.
+> **How to use:** Click any video card to search YouTube. Watch the top result. Pay attention to numerical examples, center-of-gravity and make-or-buy show up as calculation questions.
 
 ## ⭐ Essential watching (~48 min)
 
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Vertical Integration — Backward, Forward, Horizontal</p>
+      <p class="vg-title">Vertical Integration, Backward, Forward, Horizontal</p>
       <p class="vg-creator">365 Careers</p>
       <span class="vg-duration">⏱ 10 min · Real cases (Apple, Tesla)</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Single vs Dual vs Multi-Source — When To Use Each</p>
+      <p class="vg-title">Single vs Dual vs Multi-Source, When To Use Each</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 9 min · Risk vs leverage trade-off</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Service Supply Chain Management — Capacity-Driven</p>
+      <p class="vg-title">Service Supply Chain Management, Capacity-Driven</p>
       <p class="vg-creator">Edureka</p>
       <span class="vg-duration">⏱ 14 min · Goods vs service SC</span>
     </div>

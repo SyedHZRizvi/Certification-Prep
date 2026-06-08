@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Amazon Bedrock — Full Overview</p>
+      <p class="vg-title">Amazon Bedrock, Full Overview</p>
       <p class="vg-creator">AWS Machine Learning</p>
       <span class="vg-duration">⏱ 20 min · Official tour of providers, KBs, agents, guardrails</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Amazon Nova — re:Invent 2024 Launch</p>
+      <p class="vg-title">Amazon Nova, re:Invent 2024 Launch</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 18 min · Nova Micro/Lite/Pro/Premier + Canvas + Reel</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AIF-C01 — Bedrock For The Exam</p>
+      <p class="vg-title">AIF-C01, Bedrock For The Exam</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 15 min · Exam-aligned recap</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">PartyRock — Build a GenAI App With No Code</p>
+      <p class="vg-title">PartyRock, Build a GenAI App With No Code</p>
       <p class="vg-creator">AWS Developer</p>
       <span class="vg-duration">⏱ 10 min · Hands-on; go play afterward</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Bedrock vs SageMaker JumpStart — Which Path?</p>
+      <p class="vg-title">Bedrock vs SageMaker JumpStart, Which Path?</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 12 min · Removes the #2 confusion in Module 4</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Trainium &amp; Inferentia — Custom AI Chips</p>
+      <p class="vg-title">AWS Trainium &amp; Inferentia, Custom AI Chips</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 12 min · The infrastructure layer</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Amazon Q in QuickSight — Generative BI</p>
+      <p class="vg-title">Amazon Q in QuickSight, Generative BI</p>
       <p class="vg-creator">AWS Analytics</p>
       <span class="vg-duration">⏱ 14 min · Natural-language dashboards</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">AWS HealthScribe — Generative Clinical Documentation</p>
+      <p class="vg-title">AWS HealthScribe, Generative Clinical Documentation</p>
       <p class="vg-creator">AWS Healthcare</p>
       <span class="vg-duration">⏱ 12 min · Specialty GenAI service</span>
     </div>
@@ -150,4 +150,4 @@
 4. When would you choose JumpStart over Bedrock?
 5. List the 3 layers of the AWS GenAI stack and one service per layer.
 
-After this, take **[Practice Exam 1](../Practice-Exams/Practice-Exam-1.md)** — you've covered enough ground for a halftime check.
+After this, take **[Practice Exam 1](../Practice-Exams/Practice-Exam-1.md)**, you've covered enough ground for a halftime check.

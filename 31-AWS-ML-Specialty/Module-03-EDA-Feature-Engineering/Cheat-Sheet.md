@@ -82,7 +82,7 @@
 | **UMAP** | **Viz only**; faster + better global |
 | **Autoencoder / Object2Vec** | Learned non-linear |
 
-🚨 t-SNE / UMAP outputs are NOT good features — they're for plots.
+🚨 t-SNE / UMAP outputs are NOT good features, they're for plots.
 
 ---
 
@@ -123,7 +123,7 @@
 
 ---
 
-## 🏪 Feature Store — Online vs Offline
+## 🏪 Feature Store, Online vs Offline
 
 | Store | Backed by | Use |
 |-------|-----------|-----|

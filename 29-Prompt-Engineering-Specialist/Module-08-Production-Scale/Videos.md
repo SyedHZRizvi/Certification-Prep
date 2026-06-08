@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Anthropic Prompt Caching — Full Tutorial</p>
+      <p class="vg-title">Anthropic Prompt Caching, Full Tutorial</p>
       <p class="vg-creator">Anthropic Cookbook</p>
       <span class="vg-duration">⏱ 16 min · The biggest cost lever</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">LiteLLM — The Cross-Provider Standard</p>
+      <p class="vg-title">LiteLLM, The Cross-Provider Standard</p>
       <p class="vg-creator">BerriAI / LiteLLM</p>
       <span class="vg-duration">⏱ 18 min · Fallbacks, router, cost</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Langfuse — Production LLM Observability</p>
+      <p class="vg-title">Langfuse, Production LLM Observability</p>
       <p class="vg-creator">Langfuse</p>
       <span class="vg-duration">⏱ 14 min · Traces + prompts + costs</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">OpenAI Batch API — 50% Discount</p>
+      <p class="vg-title">OpenAI Batch API, 50% Discount</p>
       <p class="vg-creator">OpenAI</p>
       <span class="vg-duration">⏱ 14 min · Non-realtime work</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Prompt Versioning — LangSmith / PromptLayer</p>
+      <p class="vg-title">Prompt Versioning, LangSmith / PromptLayer</p>
       <p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 16 min · Treat prompts like code</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OpenAI Realtime API — Voice Apps</p>
+      <p class="vg-title">OpenAI Realtime API, Voice Apps</p>
       <p class="vg-creator">OpenAI / DevDay</p>
       <span class="vg-duration">⏱ 22 min · WebSocket streaming</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">OpenTelemetry GenAI — Vendor-Neutral Telemetry</p>
+      <p class="vg-title">OpenTelemetry GenAI, Vendor-Neutral Telemetry</p>
       <p class="vg-creator">OpenTelemetry</p>
       <span class="vg-duration">⏱ 18 min · The emerging standard</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Eval-Driven Development — Hamel</p>
+      <p class="vg-title">Eval-Driven Development, Hamel</p>
       <p class="vg-creator">Hamel Husain</p>
       <span class="vg-duration">⏱ 28 min · CI for prompts</span>
     </div>
@@ -147,7 +147,7 @@
 
 Answer these in your notebook (without re-watching):
 
-1. Two cache types — prompt cache vs semantic cache. When each?
+1. Two cache types, prompt cache vs semantic cache. When each?
 2. Three reasons to use LiteLLM over hardcoded vendor SDK.
 3. Three signals every production LLM observability stack must capture.
 4. When does Batch API make sense, and what's the savings?

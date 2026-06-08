@@ -1,6 +1,6 @@
 # Module 3: RAG Architecture 🔍
 
-> **Why this module matters:** RAG is the dominant pattern of applied GenAI in 2026. The chatbot on every company's website, the "talk to your codebase" feature in every IDE, the AI-search bar in every documentation site — they are all RAG. This module is where the embeddings, vector DBs, and chunking from Module 2 are assembled into a *system* with a closed feedback loop. By the end, you can sketch the architecture of any production RAG system on a napkin and tell the team why their current one is failing.
+> **Why this module matters:** RAG is the dominant pattern of applied GenAI in 2026. The chatbot on every company's website, the "talk to your codebase" feature in every IDE, the AI-search bar in every documentation site, they are all RAG. This module is where the embeddings, vector DBs, and chunking from Module 2 are assembled into a *system* with a closed feedback loop. By the end, you can sketch the architecture of any production RAG system on a napkin and tell the team why their current one is failing.
 
 > **Prerequisites for this module.** You should be comfortable with:
 > - Module 1 (tokens, attention, context windows)
@@ -11,20 +11,20 @@
 
 ## 🎬 A Story: The Stripe Docs Bot That Refunded $0
 
-October 2024. A mid-sized SaaS team launched a "docs chatbot" on top of Anthropic's API with naive RAG — embed the Stripe-style docs, store in Pinecone, retrieve top-5, stuff into the prompt, generate. It worked impressively well on their own internal tests.
+October 2024. A mid-sized SaaS team launched a "docs chatbot" on top of Anthropic's API with naive RAG, embed the Stripe-style docs, store in Pinecone, retrieve top-5, stuff into the prompt, generate. It worked impressively well on their own internal tests.
 
 Production-day-two, a real customer asked: "How do I refund a partial amount of a subscription charge billed in EUR last quarter, where the customer changed plans mid-cycle?"
 
-The chatbot replied — confidently, articulately — with a code snippet that referenced a *deprecated* `PartialRefund` API that hadn't existed since 2022. The customer copy-pasted the snippet. It threw a 404. They tweeted. Twitter laughed. The CEO sent an email at 11pm.
+The chatbot replied confidently, articulately with a code snippet that referenced a *deprecated* `PartialRefund` API that hadn't existed since 2022. The customer copy-pasted the snippet. It threw a 404. They tweeted. Twitter laughed. The CEO sent an email at 11pm.
 
 Postmortem found four compounding failures:
 
 1. **The retriever returned a 2021 blog post** about partial refunds at the top because the user's literal phrase ("partial amount") matched the blog's title more strongly than the (correctly-updated) 2024 API reference page.
 2. **No reranker** was sorting the deprecated content beneath the canonical one.
 3. **No query transformation** broke "subscription charge billed in EUR last quarter" into the multiple sub-queries needed to retrieve both the refund-API docs *and* the currency-handling docs.
-4. **No "I don't know" path** — when context is weak, the LLM still tried.
+4. **No "I don't know" path**, when context is weak, the LLM still tried.
 
-The fix took two sprints. Add Cohere Rerank 3. Add query decomposition. Add a confidence-thresholded "I'm not sure — here are some related docs" fallback. Tag all docs with `valid_from` / `valid_until` metadata and pre-filter retrieval to current docs. Add RAGAS evaluation in CI to catch regressions.
+The fix took two sprints. Add Cohere Rerank 3. Add query decomposition. Add a confidence-thresholded "I'm not sure, here are some related docs" fallback. Tag all docs with `valid_from` / `valid_until` metadata and pre-filter retrieval to current docs. Add RAGAS evaluation in CI to catch regressions.
 
 This is the difference between **naive RAG** (works in demos, fails in production) and **advanced RAG** (the actual job). This module is that difference.
 
@@ -124,7 +124,7 @@ This works. It also fails spectacularly on the Stripe story above. Let's fix it,
 
 ## 🪄 Pre-Retrieval: Query Transformation
 
-Users don't write queries that retrieve well. They write *natural questions* — vague, multi-clause, presupposed. Pre-retrieval rewrites are the cheapest, highest-leverage upgrade you can make.
+Users don't write queries that retrieve well. They write *natural questions*, vague, multi-clause, presupposed. Pre-retrieval rewrites are the cheapest, highest-leverage upgrade you can make.
 
 ### Query expansion
 
@@ -145,7 +145,7 @@ def multi_query(query, k=5):
 
 ### HyDE (Hypothetical Document Embeddings)
 
-Ask the LLM to *write the answer first*, then embed and retrieve based on the hypothetical answer. Counterintuitive but powerful — answers and documents share more lexical/semantic surface than questions and documents.
+Ask the LLM to *write the answer first*, then embed and retrieve based on the hypothetical answer. Counterintuitive but powerful, answers and documents share more lexical/semantic surface than questions and documents.
 
 ```python
 def hyde(query):
@@ -185,10 +185,10 @@ def production_retrieve(query, filters, k=50):
 
 Key filter dimensions to support:
 
-- **Tenant / user / workspace** — for multi-tenant data
-- **Time** — most docs go stale; `valid_from` and `valid_until`
-- **Type** — distinguish API docs from blog posts from KB articles
-- **Confidence / source** — official > community
+- **Tenant / user / workspace**, for multi-tenant data
+- **Time**, most docs go stale; `valid_from` and `valid_until`
+- **Type**, distinguish API docs from blog posts from KB articles
+- **Confidence / source**, official > community
 - **Language**
 
 🚨 **Source-trust filtering** is a common failure mode. The Stripe story above: a deprecated blog post outranked the canonical API page. Solution: weight or filter by source tier.
@@ -245,9 +245,9 @@ The instruction-tuning patterns that matter:
 
 - **Anchoring** the model in the context ("only the provided")
 - **Citation requirement** (forces grounded reasoning)
-- **Refusal license** ("say I don't know" — the model needs *explicit permission*)
-- **Temporal grounding** ("today's date is X" — most LLMs drift without this)
-- **Negative instructions** ("do not invent") — small but real effect
+- **Refusal license** ("say I don't know", the model needs *explicit permission*)
+- **Temporal grounding** ("today's date is X", most LLMs drift without this)
+- **Negative instructions** ("do not invent"), small but real effect
 
 ---
 
@@ -279,7 +279,7 @@ Build a knowledge graph from your corpus by LLM-extracting entities and relation
 
 ### Long-context augmentation (the "no RAG" position)
 
-Some teams skip retrieval and stuff the entire knowledge base into the model's context (Claude 200K, Gemini 2M). It works for small corpora (< 100K tokens) and high-stakes single queries. Doesn't scale to 10M-document corporate knowledge bases — and "lost in the middle" still hurts. Long context complements RAG; it doesn't replace it.
+Some teams skip retrieval and stuff the entire knowledge base into the model's context (Claude 200K, Gemini 2M). It works for small corpora (< 100K tokens) and high-stakes single queries. Doesn't scale to 10M-document corporate knowledge bases, and "lost in the middle" still hurts. Long context complements RAG; it doesn't replace it.
 
 ---
 
@@ -353,7 +353,7 @@ You'll build this incrementally over the next 4 modules.
 
 | Anti-pattern | What goes wrong |
 |--------------|------------------|
-| Skip pre-retrieval rewriting | "Vague query → vague results" — easily 40% of failures |
+| Skip pre-retrieval rewriting | "Vague query → vague results", easily 40% of failures |
 | `top_k=3` straight from the retriever | Reranker can't help; no diversity |
 | No source-trust metadata | Deprecated content outranks canonical (Stripe story) |
 | No "I don't know" instruction | Hallucinated confidence in low-context cases |
@@ -368,9 +368,9 @@ You'll build this incrementally over the next 4 modules.
 
 Goal: take the BEIR `fiqa` (financial Q&A) dataset and build three RAG systems on it:
 
-1. **Naive** — fixed chunking, single-shot retrieval, single LLM call. Measure baseline RAGAS.
-2. **Advanced** — header-aware chunking + contextual retrieval + hybrid (BM25 + dense) + Cohere Rerank + citation-enforced prompt. Re-measure RAGAS.
-3. **Modular** — add a query router (LLM decides "simple" vs "complex"), multi-query expansion for complex, web-search fallback when retrieval is weak.
+1. **Naive**, fixed chunking, single-shot retrieval, single LLM call. Measure baseline RAGAS.
+2. **Advanced**, header-aware chunking + contextual retrieval + hybrid (BM25 + dense) + Cohere Rerank + citation-enforced prompt. Re-measure RAGAS.
+3. **Modular**, add a query router (LLM decides "simple" vs "complex"), multi-query expansion for complex, web-search fallback when retrieval is weak.
 
 Report:
 
@@ -382,7 +382,7 @@ You'll see the quality climb from ~60% to ~85%+ on faithfulness, and you'll see 
 
 ---
 
-## 📊 Case Study — Klarna's Customer-Support RAG Rollout (Feb–Aug 2024)
+## 📊 Case Study, Klarna's Customer-Support RAG Rollout (Feb–Aug 2024)
 
 **Situation.** Klarna, the Swedish "buy-now-pay-later" company, deployed an OpenAI-powered chatbot for customer support in February 2024. In their Q2 2024 earnings, they reported the system was handling the equivalent of **700 full-time customer-support agents'** workload, with average handle time down from 11 minutes to 2 minutes, and customer satisfaction *matching* human-only support.
 
@@ -392,15 +392,15 @@ You'll see the quality climb from ~60% to ~85%+ on faithfulness, and you'll see 
 - Multi-query expansion at the pre-retrieval step for ambiguous customer messages
 - Strict guardrails: regulated topics (lending laws, dispute escalation) route to humans
 - Tool calling for: refund issuance, payment-plan modification, dispute creation
-- A "confidence threshold" gate — if RAGAS-style faithfulness on a generated draft is below 0.7, escalate to human
+- A "confidence threshold" gate, if RAGAS-style faithfulness on a generated draft is below 0.7, escalate to human
 
-**The numbers.** Klarna projected the system would contribute $40M USD in operating profit improvements in 2024 — primarily from the ~70% reduction in customer-support headcount. Critics pointed out the cost-saving framing under-reported the cost in *trust* of edge cases (a botched dispute or a wrong refund hurts brand more than payroll savings).
+**The numbers.** Klarna projected the system would contribute $40M USD in operating profit improvements in 2024, primarily from the ~70% reduction in customer-support headcount. Critics pointed out the cost-saving framing under-reported the cost in *trust* of edge cases (a botched dispute or a wrong refund hurts brand more than payroll savings).
 
 **What this means for you, the engineer.** Klarna's success was not "we plugged in GPT-4." It was years of customer-support data, a clean policy corpus, multilingual retrieval, and *strict escalation rules*. They invested in **evaluation harnesses and observability** (Module 7 and Module 9) before the public launch. Most companies replicate the demo and skip the harness; they then ship the bug.
 
 **Discussion (Socratic).**
 - **Q1:** Klarna's "confidence threshold" gate escalates to humans below 0.7 faithfulness. How would you build that gate? (Hint: think Module 7 RAGAS LLM-as-judge.)
-- **Q2:** A customer messages "I bought a TV with Klarna two weeks ago and the screen is broken — what do I do?" Walk through the modular-RAG flow: which retrievers, which tools, which escalation rules?
+- **Q2:** A customer messages "I bought a TV with Klarna two weeks ago and the screen is broken, what do I do?" Walk through the modular-RAG flow: which retrievers, which tools, which escalation rules?
 - **Q3:** If Klarna's success story made your CFO eager to fire 70% of support, what *engineering* arguments would you make for keeping a higher-than-modeled human-escalation rate in the first 6 months?
 
 ---
@@ -422,7 +422,7 @@ You now know:
 1. 🎥 Watch [Videos.md](./Videos.md)
 2. ✏️ Take the [Quiz.md](./Quiz.md)
 3. 📋 Review [Cheat-Sheet.md](./Cheat-Sheet.md)
-4. ➡️ Move on: [Module 4 — LangChain & LlamaIndex](../Module-04-LangChain-LlamaIndex/Reading.md)
+4. ➡️ Move on: [Module 4, LangChain & LlamaIndex](../Module-04-LangChain-LlamaIndex/Reading.md)
 
 > **Where this leads.**
 > - **Inside this course:** Module 4 implements the same diagram in LangChain *and* LlamaIndex. Module 7 evaluates it with RAGAS. Module 9 wraps it in observability + cost monitoring + semantic cache.

@@ -3,7 +3,7 @@
 > **Instructions:** Answer all 26 questions WITHOUT looking at the reading.
 > Then check your answers below. Aim for 22/26 minimum.
 >
-> Every question is tagged with its **Bloom's taxonomy level**. **Subnetting questions are Apply level — get scratch paper.**
+> Every question is tagged with its **Bloom's taxonomy level**. **Subnetting questions are Apply level, get scratch paper.**
 >
 > **Bloom distribution (this quiz):** Remember 5 · Understand 6 · Apply 11 · Analyze/Evaluate 3 · Create 1.
 
@@ -148,7 +148,7 @@ D. 2001:0db8::0000:0001
 ---
 
 ### Q18. SLAAC stands for and means: *(Remember)*
-A. Stateless Address Auto-Configuration — IPv6 host self-generates address from router advertisement
+A. Stateless Address Auto-Configuration, IPv6 host self-generates address from router advertisement
 B. Simple Local Address Allocation Configuration
 C. Subnet Layer Allocation and Assignment Control
 D. Stateful Local Address Acquisition Component
@@ -217,13 +217,13 @@ D. The mask should be /25
 
 ---
 
-### Q26. A senior network engineer is designing a CGNAT solution for an ISP and asks you which special-purpose CIDR block is reserved exclusively for carrier-grade NAT. The correct answer — and one operational caveat you'd flag — is: *(Create)*
+### Q26. A senior network engineer is designing a CGNAT solution for an ISP and asks you which special-purpose CIDR block is reserved exclusively for carrier-grade NAT. The correct answer and one operational caveat you'd flag is: *(Create)*
 
 > *Create-level note:* you are choosing an architectural address block and proactively naming a downside the architect should anticipate.
-A. 192.168.0.0/16 — caveat: overlaps subscriber CPE
-B. 169.254.0.0/16 — caveat: short TTL on APIPA
-C. 100.64.0.0/10 (RFC 6598) — caveat: subscribers cannot run inbound services like game-server hosting or self-hosted apps because they're double-NATted
-D. 224.0.0.0/4 — caveat: multicast-only routing required
+A. 192.168.0.0/16, caveat: overlaps subscriber CPE
+B. 169.254.0.0/16, caveat: short TTL on APIPA
+C. 100.64.0.0/10 (RFC 6598), caveat: subscribers cannot run inbound services like game-server hosting or self-hosted apps because they're double-NATted
+D. 224.0.0.0/4, caveat: multicast-only routing required
 
 ---
 
@@ -245,7 +245,7 @@ Most common loopback. The whole 127.0.0.0/8 is reserved.
 /22 = 22 ones. First 16 bits = 255.255. Next 6 bits in the third octet = `11111100` = 252. Fourth octet = 0.
 
 ### Q6: **B. 30**
-/27 has 32 host bits to mask... wait — /27 has 5 host bits (32−27=5). 2⁵ − 2 = 30.
+/27 has 32 host bits to mask... wait, /27 has 5 host bits (32−27=5). 2⁵ − 2 = 30.
 
 ### Q7: **C. 192.168.10.128**
 /26 = mask 255.255.255.192. Block size = 256−192 = 64. Multiples of 64 in 4th octet: 0, 64, 128, 192. 150 falls in the 128–191 block → network = 192.168.10.128.
@@ -269,7 +269,7 @@ Most common loopback. The whole 127.0.0.0/8 is reserved.
 NAT rewrites the source/destination IPs (and ports if PAT) as packets cross the NAT device.
 
 ### Q14: **A. One public IP to be shared by many internal IPs using port numbers**
-PAT (Port Address Translation, aka NAT overload) — uses unique source ports to multiplex many internal hosts onto one public IP.
+PAT (Port Address Translation, aka NAT overload), uses unique source ports to multiplex many internal hosts onto one public IP.
 
 ### Q15: **B. FE80::1**
 FE80::/10 = link-local. ::1 = loopback. FF02::1 = all-nodes multicast. 2001:db8::1 = a documentation prefix (RFC 3849), used as global unicast example.
@@ -290,29 +290,29 @@ Mask /27. Block size = 32. 4th octet 45 → block 32–63 → broadcast = .63.
 The EUI-64 mechanism. Note: many modern stacks use random (privacy) addresses instead, but EUI-64 is what Network+ tests.
 
 ### Q21: **C. /26**
-4 subnets of ≥50 hosts. /26 = 62 usable hosts (2⁶ − 2 = 62), fits 50. Four /26s from a /24 = 4 × 64 = 256 addresses exactly. /27 = 30 hosts — too small. /25 = 126 hosts — works but only two subnets fit in a /24.
+4 subnets of ≥50 hosts. /26 = 62 usable hosts (2⁶ − 2 = 62), fits 50. Four /26s from a /24 = 4 × 64 = 256 addresses exactly. /27 = 30 hosts too small. /25 = 126 hosts works but only two subnets fit in a /24.
 
 ### Q22: **B. /25**
-LAN A needs 100 hosts. /25 = 126 usable (2⁷ − 2). /24 = 254 — works but wastes addresses (and uses all of the /24, leaving nothing for LAN B). /26 = 62 — too small. **Pick the smallest mask that fits.**
+LAN A needs 100 hosts. /25 = 126 usable (2⁷ − 2). /24 = 254 works but wastes addresses (and uses all of the /24, leaving nothing for LAN B). /26 = 62 too small. **Pick the smallest mask that fits.**
 
 ### Q23: **B. PAT (NAT overload)**
-PAT is exactly this scenario — many internal hosts, one public IP, differentiated by port numbers.
+PAT is exactly this scenario, many internal hosts, one public IP, differentiated by port numbers.
 
 ### Q24: **C. NAT64 / DNS64**
-NAT64 translates between IPv4 and IPv6 at the network edge; DNS64 synthesizes AAAA records from A records. Dual stack requires both protocols on both sides — not possible with an IPv4-only server.
+NAT64 translates between IPv4 and IPv6 at the network edge; DNS64 synthesizes AAAA records from A records. Dual stack requires both protocols on both sides, not possible with an IPv4-only server.
 
 ### Q25: **A. 192.168.50.255/24 is the broadcast address of 192.168.50.0/24**
-.255 in a /24 = the broadcast — reserved, cannot be assigned to a host NIC.
+.255 in a /24 = the broadcast, reserved, cannot be assigned to a host NIC.
 
 ### Q26: **C. 100.64.0.0/10 (RFC 6598)**
-Carrier-Grade NAT reserved space. Real operational caveat: subscribers behind CGNAT cannot receive unsolicited inbound connections (no port forwarding from the public Internet to their devices) — breaking self-hosting, some game servers, and some peer-to-peer apps.
+Carrier-Grade NAT reserved space. Real operational caveat: subscribers behind CGNAT cannot receive unsolicited inbound connections (no port forwarding from the public Internet to their devices), breaking self-hosting, some game servers, and some peer-to-peer apps.
 
 ---
 
 ## 📊 Score Yourself
 
 - 25–26/26 → 🏆 Subnetting mastered. Add 5 fresh drills/day and you're set.
-- 22–24/26 → ✅ Solid. Re-do the subnetting questions (any you missed) — keep that muscle warm.
+- 22–24/26 → ✅ Solid. Re-do the subnetting questions (any you missed), keep that muscle warm.
 - 18–21/26 → ⚠️ Re-read the 4-step subnetting workflow + worked examples. Drill 10 problems/day for 3 days.
 - <18/26 → 🔁 Restart the Reading.md. Subnetting must be reflex before the exam.
 
@@ -330,4 +330,4 @@ Carrier-Grade NAT reserved space. Real operational caveat: subscribers behind CG
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3 — Routing & Switching](../Module-03-Routing-Switching/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 3, Routing & Switching](../Module-03-Routing-Switching/Reading.md)

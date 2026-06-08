@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ping / tracert / pathping — when to use</p>
+      <p class="vg-title">ping / tracert / pathping, when to use</p>
       <p class="vg-creator">NetworkChuck</p>
       <span class="vg-duration">⏱ 12 min · Fun, clear</span>
     </div>
@@ -143,7 +143,7 @@
 ## ✅ After watching
 
 1. Recite the 6-step methodology in order.
-2. Walk through your triage for "no internet" — what's your first check?
+2. Walk through your triage for "no internet", what's your first check?
 3. Explain the rebuild risk of RAID 5 with large disks.
 4. Name three things to check when a PC has fans spinning but no display.
 5. Describe how SMART data helps you predict a disk failure.

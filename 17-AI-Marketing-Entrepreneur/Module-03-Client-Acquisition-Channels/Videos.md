@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Writing as Inbound — Ship 30 for 30</p>
+      <p class="vg-title">Writing as Inbound, Ship 30 for 30</p>
       <p class="vg-creator">Dickie Bush</p>
       <span class="vg-duration">⏱ 16 min · Content sprint</span>
     </div>

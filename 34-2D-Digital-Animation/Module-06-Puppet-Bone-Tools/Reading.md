@@ -1,9 +1,9 @@
 ---
 permalink: /34-2D-Digital-Animation/Module-06-Puppet-Bone-Tools/
-title: "Module 6: Puppet & Bone Tools — DUIK Rigging"
+title: "Module 6: Puppet & Bone Tools, DUIK Rigging"
 ---
 
-# 🦿 Module 6: Puppet & Bone Tools — DUIK Rigging
+# 🦿 Module 6: Puppet & Bone Tools, DUIK Rigging
 
 ## The Plugin That Changed Everything
 
@@ -52,7 +52,7 @@ DUIK Bones are special null-like objects with:
 1. **Link artwork layers to bones:** Each body part layer (arm, leg, etc.) is linked to a corresponding DUIK bone.
 2. **Create IK:** Select the bone chain (upper arm → lower arm → hand) and run DUIK's "IK" command to add an IK solver.
 3. **Create controllers:** DUIK auto-generates controller layers (handle icons) for each limb end.
-4. **Animate controllers:** Instead of keyframing the artwork layers directly, you move the controllers — DUIK's IK solver updates all the bones automatically.
+4. **Animate controllers:** Instead of keyframing the artwork layers directly, you move the controllers, DUIK's IK solver updates all the bones automatically.
 
 ---
 
@@ -80,7 +80,7 @@ When an IK leg bends the wrong way (knee pointing backward):
 2. Move it to the correct side of the leg (in front of the knee)
 3. Lock its position before animating the foot goal
 
-The pole vector defines the plane in which the knee bends — it does not have to be keyframed unless the knee direction needs to change mid-animation.
+The pole vector defines the plane in which the knee bends, it does not have to be keyframed unless the knee direction needs to change mid-animation.
 
 ---
 
@@ -110,7 +110,7 @@ DUIK's Bezier IK creates a bone that follows a bezier curve, allowing the limb t
 
 ## 🌸 Spring Rigs
 
-Spring rigs add secondary animation — motion that follows the primary motion but with a natural lag and oscillation. Common applications:
+Spring rigs add secondary animation, motion that follows the primary motion but with a natural lag and oscillation. Common applications:
 
 | Element | Spring Behavior |
 |---------|----------------|
@@ -120,7 +120,7 @@ Spring rigs add secondary animation — motion that follows the primary motion b
 | Belly on a heavy character | Slight delayed squash when character lands |
 | Cape or scarf | Trails with multiple spring layers at different stiffness |
 
-DUIK includes a "Wiggle" and "Spring" system for adding this secondary motion procedurally — without keyframes. The Spring controller follows a parent layer but with configurable stiffness and damping.
+DUIK includes a "Wiggle" and "Spring" system for adding this secondary motion procedurally, without keyframes. The Spring controller follows a parent layer but with configurable stiffness and damping.
 
 ### Spring Parameters
 
@@ -129,7 +129,7 @@ DUIK includes a "Wiggle" and "Spring" system for adding this secondary motion pr
 | **Stiffness** | How quickly the spring returns to rest (high = rigid, low = floppy) |
 | **Damping** | How quickly oscillation dies out (high = snaps back, low = bounces long) |
 
-> 🎯 **What the exam tests:** Spring rigs generate secondary animation **procedurally** — no keyframes needed. The spring follows a parent layer's motion with configurable delay and oscillation. This is distinct from manually keyframing follow-through on secondary elements.
+> 🎯 **What the exam tests:** Spring rigs generate secondary animation **procedurally**, no keyframes needed. The spring follows a parent layer's motion with configurable delay and oscillation. This is distinct from manually keyframing follow-through on secondary elements.
 
 ---
 
@@ -139,7 +139,7 @@ Joysticks 'n Sliders (J+S) is a separate plugin (paid, ~$49) that creates a joys
 
 ### How Joysticks 'n Sliders Works
 
-Imagine a 2D joystick on screen. When the joystick is in the center, the character faces forward. Push it up — the character looks up. Push it right — the character looks right. Push it upper-right — the character looks up-right (a blend of the two). J+S handles this blending automatically.
+Imagine a 2D joystick on screen. When the joystick is in the center, the character faces forward. Push it up the character looks up. Push it right the character looks right. Push it upper-right, the character looks up-right (a blend of the two). J+S handles this blending automatically.
 
 ### The Five Positions Setup
 
@@ -180,7 +180,7 @@ A complete professional DUIK rig typically has these controllers:
 | Foot L/R | IK end effectors for both legs |
 | Knee L/R | Pole vectors; push knee forward or backward |
 
-Animating a character walk cycle with this rig means keyframing only these ~10 controllers — not the 40+ individual bone layers underneath.
+Animating a character walk cycle with this rig means keyframing only these ~10 controllers, not the 40+ individual bone layers underneath.
 
 ---
 
@@ -220,7 +220,7 @@ DUIK is one of the most frequently listed plugin requirements in After Effects c
 5. What is Bezier IK and when would you use it?
 6. What is the difference between Stiffness and Damping in a spring rig?
 7. How does Joysticks 'n Sliders interpolate between face positions?
-8. The J+S joystick controller layer — is it visible in the final render?
+8. The J+S joystick controller layer, is it visible in the final render?
 9. How many controllers does a typical full-body DUIK rig have?
 10. What type of secondary motion do spring rigs add (procedural, without keyframes)?
 
@@ -229,7 +229,7 @@ DUIK is one of the most frequently listed plugin requirements in After Effects c
 ## 🚨 Exam Trap Section
 
 - **DUIK is free:** Students sometimes assume professional rigging tools are expensive. DUIK is free and open-source. Joysticks 'n Sliders is a paid companion tool (~$49), not part of DUIK.
-- **You animate controllers, not bones:** A common beginner mistake is to keyframe the bone layers directly. Always keyframe the controller layers that DUIK creates — the bones update automatically.
+- **You animate controllers, not bones:** A common beginner mistake is to keyframe the bone layers directly. Always keyframe the controller layers that DUIK creates, the bones update automatically.
 - **Pole vector ≠ IK goal:** The pole vector only controls the direction the knee bends. The IK goal controls the foot/hand position. These are separate controllers.
 - **Spring rigs need no keyframes:** Students sometimes add keyframes to spring-rigged layers manually. This is unnecessary and can fight the spring calculation.
 - **J+S controller is invisible at render:** The joystick UI layer exists only for the animator's interaction. It renders as a transparent, empty layer.
@@ -263,7 +263,7 @@ DUIK is the centerpiece, but a professional 2D AE rig often uses several additio
 
 ---
 
-## 🔄 DUIK vs. RubberHose — Style Choice
+## 🔄 DUIK vs. RubberHose, Style Choice
 
 | | DUIK Bezier IK | RubberHose 2 |
 |-|---------------|-------------|
@@ -279,7 +279,7 @@ The choice between DUIK and RubberHose is a style choice, not a quality choice. 
 
 ## 📐 Expressions in Character Animation
 
-DUIK's power comes partly from AE **expressions** — short snippets of JavaScript that create dynamic links between layer properties. Understanding the most common expressions used in character rigs demystifies what DUIK creates behind the scenes:
+DUIK's power comes partly from AE **expressions**, short snippets of JavaScript that create dynamic links between layer properties. Understanding the most common expressions used in character rigs demystifies what DUIK creates behind the scenes:
 
 | Expression Use Case | What It Does | Example |
 |--------------------|-------------|---------|
@@ -289,7 +289,7 @@ DUIK's power comes partly from AE **expressions** — short snippets of JavaScri
 | **linear() / ease()** | Value mapping between ranges | Converts joystick position to layer opacity |
 | **value + [0, 0]** | Adds a constant offset to a parented value | Fine-tuning bone placement after parenting |
 
-> 🎯 **What the exam tests:** The `loopOut()` expression is the most exam-relevant — it causes a composition's keyframes to loop indefinitely. Applied to a walk cycle pre-comp's Time Remapping property, it creates an infinite loop without duplicating keyframes.
+> 🎯 **What the exam tests:** The `loopOut()` expression is the most exam-relevant, it causes a composition's keyframes to loop indefinitely. Applied to a walk cycle pre-comp's Time Remapping property, it creates an infinite loop without duplicating keyframes.
 
 ---
 
@@ -324,13 +324,13 @@ Module 7 takes the rig built in modules 4–6 and adds the most challenging part
 
 ## 📐 Walk Cycle Generator in DUIK Angela
 
-DUIK Angela includes a procedural walk cycle generator — one of its most powerful automation features:
+DUIK Angela includes a procedural walk cycle generator, one of its most powerful automation features:
 
 1. **Set up the character rig** with all controllers (root, hips, feet, arms, head).
 2. In DUIK, select the root and all limb controllers → **Automations → Walk Cycle**.
 3. DUIK applies procedural walk cycle expressions to all selected controllers.
 4. Set walk parameters: **cycle duration** (frames), **walk speed**, **arm swing**, **body bounce**.
-5. The character now walks procedurally — no keyframes needed.
+5. The character now walks procedurally, no keyframes needed.
 6. To customize: adjust the Walk Cycle effect settings in the Effect Controls panel.
 7. To animate the character walking across the stage: add a position keyframe to the root controller.
 
@@ -344,7 +344,7 @@ DUIK Angela includes a procedural walk cycle generator — one of its most power
 | **Arm Swing** | Amount of arm counter-swing |
 | **Step Height** | How high the feet lift |
 
-> 🎯 **What the exam tests:** The DUIK walk cycle generator is procedural — it uses expressions to drive motion. You can still override individual keyframes on top of the procedural base, allowing customization while retaining the automatic cycle foundation.
+> 🎯 **What the exam tests:** The DUIK walk cycle generator is procedural, it uses expressions to drive motion. You can still override individual keyframes on top of the procedural base, allowing customization while retaining the automatic cycle foundation.
 
 ---
 
@@ -368,7 +368,7 @@ DUIK Angela's Auto-Rig feature is the fastest way to build a complete character 
 ## 📚 Further Reading
 
 - DUIK official documentation: [rxlaboratory.org/tools/duik-angela/](https://rxlaboratory.org/tools/duik-angela/)
-- School of Motion: "DUIK Bassel: Complete Character Rigging Tutorial" — free article
+- School of Motion: "DUIK Bassel: Complete Character Rigging Tutorial", free article
 - Joysticks 'n Sliders plugin: [aescripts.com](https://aescripts.com)
 
 ---
@@ -388,25 +388,25 @@ Before moving on, verify you can answer each of these without notes:
 
 These patterns appear repeatedly in industry certification and portfolio assessments:
 
-1. **"Why not X?"** — Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
-2. **"What's the production order?"** — Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
-3. **"Name a production that did this differently."** — Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
-4. **"What file format and settings?"** — Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
-5. **"What's the fastest way to fix [common problem]?"** — Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
+1. **"Why not X?"**, Every technique has a cheaper/faster alternative; know when NOT to use the primary approach.
+2. **"What's the production order?"**, Many mistakes happen when steps are applied out of sequence; understand the dependency chain.
+3. **"Name a production that did this differently."**, Spider-Verse, Cuphead, Arcane each broke conventions intentionally; knowing *why* shows mastery.
+4. **"What file format and settings?"**, Every deliverable context has specific requirements; memorize the key numbers (frame rate, bit depth, codec).
+5. **"What's the fastest way to fix [common problem]?"**, Troubleshooting speed is a professional skill; know the diagnostic hierarchy.
 
 ## 📚 Canonical Further Reading
 
 **Essential:**
-- *The Animator's Survival Kit* — Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
-- *The Illusion of Life: Disney Animation* — Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
+- *The Animator's Survival Kit*, Richard Williams (2001, revised 2012). The most-assigned animation reference in university curricula worldwide. Every principle in this module has a Williams illustration.
+- *The Illusion of Life: Disney Animation*, Frank Thomas & Ollie Johnston (1981). The primary source for the 12 Principles. Expensive but irreplaceable.
 
 **Industry-Standard:**
-- *Computer Animation: Algorithms and Techniques* — Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
-- *3D Art Essentials* — Ami Chopine (2011). Bridge between artistic intent and technical execution.
+- *Computer Animation: Algorithms and Techniques*, Rick Parent (3rd ed., 2012). The mathematical foundation behind every digital animation system.
+- *3D Art Essentials*, Ami Chopine (2011). Bridge between artistic intent and technical execution.
 
 **Online:**
-- Animation Career Review salary surveys — updated annually, the most-cited compensation benchmark for animation professionals
-- School of Motion blog — free, research-backed articles on the business of motion design and animation
+- Animation Career Review salary surveys, updated annually, the most-cited compensation benchmark for animation professionals
+- School of Motion blog, free, research-backed articles on the business of motion design and animation
 
 ---
 

@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 1 — AI Digital Marketing Practitioner (Style)
+# 🧪 Practice Exam 1, AI Digital Marketing Practitioner (Style)
 
 > **Conditions:** Set a 60-minute timer. 40 questions. Treat it like the real thing.
 > **Pass mark:** 32/40 (80%)
@@ -23,7 +23,7 @@ D. The primary metric
 ### 3. Broad Match Modifier (BMM) was:
 A. Strengthened in 2024
 B. Renamed in 2023
-C. Retired in 2021 — folded into phrase match
+C. Retired in 2021, folded into phrase match
 D. Replaced with Custom Match
 
 ### 4. tCPA bidding needs approximately what minimum conversions/30 days to stabilize?
@@ -137,7 +137,7 @@ D. Bid × Budget
 ### 22. Killing a DCT variant at 100 impressions:
 A. Best practice
 B. Required by Meta
-C. A mistake — need ~1,000 impressions minimum per variant
+C. A mistake, need ~1,000 impressions minimum per variant
 D. Only for retargeting
 
 ### 23. Meta Reels aspect ratio:
@@ -161,7 +161,7 @@ D. 30 seconds
 ### 26. The reason cross-posting Meta Reels to TikTok underperforms:
 A. Same format, no issue
 B. TikTok requires HD only
-C. Different visual grammar — TikTok requires sound-first, faster cuts, lower production
+C. Different visual grammar, TikTok requires sound-first, faster cuts, lower production
 D. Meta blocks cross-posting
 
 ### 27. LinkedIn's 2026 format that outperforms brand ads ~2x:
@@ -192,7 +192,7 @@ D. LinkedIn
 A. Correct
 B. Required for budgeting
 C. Conventional wisdom
-D. Wrong math — LinkedIn leads convert at much higher rates; compare cost-per-closed-deal
+D. Wrong math, LinkedIn leads convert at much higher rates; compare cost-per-closed-deal
 
 ### 32. Drift's case study showed automation cut their sales cycle by approximately:
 A. 5%
@@ -269,11 +269,11 @@ D. 1-2 pages
 
 ## Detailed answer rationales
 
-**Q1. Answer: D.** Why D is correct: The 5 W's of a brief — Who, What, Why, Where, How — anchor the strategic choices a brief commits to (Module 1). Why the others are wrong: A and B swap "How" for "When" (dates are admin, not strategic); C reorders and misnames. Exam-takeaway: "How" (measurement) is in the 5 W's; "When" is in the admin header.
+**Q1. Answer: D.** Why D is correct: The 5 W's of a brief Who, What, Why, Where, How anchor the strategic choices a brief commits to (Module 1). Why the others are wrong: A and B swap "How" for "When" (dates are admin, not strategic); C reorders and misnames. Exam-takeaway: "How" (measurement) is in the 5 W's; "When" is in the admin header.
 
 **Q2. Answer: C.** Why C is correct: A guardrail KPI defines the pause-trigger (e.g., "Stop if CPA > $60 for 3 days"). Why the others are wrong: A is the *primary* KPI; B is a board-deck vanity metric; D is a *secondary* health metric. Exam-takeaway: Primary = what you want; secondary = health; guardrail = STOP.
 
-**Q3. Answer: C.** Why C is correct: Google retired Broad Match Modifier in 2021 and folded its function into phrase match. Why wrong: A/B imply 2023-24 changes that didn't happen; D invents "Custom Match." Exam-takeaway: BMM is dead — any answer suggesting it still exists in 2026 is a distractor.
+**Q3. Answer: C.** Why C is correct: Google retired Broad Match Modifier in 2021 and folded its function into phrase match. Why wrong: A/B imply 2023-24 changes that didn't happen; D invents "Custom Match." Exam-takeaway: BMM is dead, any answer suggesting it still exists in 2026 is a distractor.
 
 **Q4. Answer: A.** Why A is correct: ~30 conversions in 30 days is Google's threshold for tCPA/tROAS stability. Why wrong: B/C are too low (algorithm starves); D is way over (you'd already be at scale). Exam-takeaway: 30/30 = Smart Bidding threshold; below that, use Max Conversions.
 
@@ -281,15 +281,15 @@ D. 1-2 pages
 
 **Q6. Answer: D.** Why D is correct: Quality Score = Expected CTR + Ad Relevance + Landing Page Experience. Why wrong: A swaps CTR for Conv Rate and adds Spend; B confuses outcomes for inputs; C mixes auction inputs with QS. Exam-takeaway: QS components measure ad-side quality, not bidding inputs.
 
-**Q7. Answer: A.** Why A is correct: Ad Rank = Bid × Quality Score + expected impact of extensions. Why wrong: B/C oversimplify; D adds "Position" which is OUTPUT, not input. Exam-takeaway: Extensions are part of Ad Rank — that's why sitelinks/callouts matter beyond aesthetics.
+**Q7. Answer: A.** Why A is correct: Ad Rank = Bid × Quality Score + expected impact of extensions. Why wrong: B/C oversimplify; D adds "Position" which is OUTPUT, not input. Exam-takeaway: Extensions are part of Ad Rank, that's why sitelinks/callouts matter beyond aesthetics.
 
-**Q8. Answer: A.** Why A is correct: On a pure Search campaign, "Include Display Network" should be unchecked — its default-ON state burns ~30% of budget on low-intent inventory. Why wrong: B is the trap default; C/D are invented. Exam-takeaway: Always uncheck Display + Search Partners on Search campaigns until you've measured them.
+**Q8. Answer: A.** Why A is correct: On a pure Search campaign, "Include Display Network" should be unchecked, its default-ON state burns ~30% of budget on low-intent inventory. Why wrong: B is the trap default; C/D are invented. Exam-takeaway: Always uncheck Display + Search Partners on Search campaigns until you've measured them.
 
 **Q9. Answer: C.** Why C is correct: PMax serves on Search, Display, YouTube, Discover, Gmail, and Maps simultaneously. Why wrong: A/B/D are subsets. Exam-takeaway: PMax = all six surfaces; that's also why structure and brand-exclusions matter so much.
 
 **Q10. Answer: D.** Why D is correct: Brand Exclusions stop PMax from bidding on your brand keywords and cannibalizing your brand-Search campaign. Why wrong: A enables expansion (different setting); B/C are necessary but not protective against cannibalization. Exam-takeaway: Brand Exclusions = day-0 PMax setting.
 
-**Q11. Answer: D.** Why D is correct: An audience signal is a HINT — PMax will serve outside it if better converters exist. Why wrong: A confuses it with old-style hard targeting; B/C imply unchangeable/required. Exam-takeaway: Signals nudge the algorithm; they don't restrict reach.
+**Q11. Answer: D.** Why D is correct: An audience signal is a HINT, PMax will serve outside it if better converters exist. Why wrong: A confuses it with old-style hard targeting; B/C imply unchangeable/required. Exam-takeaway: Signals nudge the algorithm; they don't restrict reach.
 
 **Q12. Answer: C.** Why C is correct: YouTube skippable in-stream ads charge when viewer reaches 30 seconds OR completes the ad (whichever first). Why wrong: A charges on impression (CPM model, not CPV); B is engagement; D ignores skipping. Exam-takeaway: Skippable = CPV at 30s-or-complete.
 
@@ -301,7 +301,7 @@ D. 1-2 pages
 
 **Q16. Answer: A.** Why A is correct: ~75% of iOS users opt out of ATT, blocking the browser Pixel; CAPI (server-side) bypasses this. Why wrong: B is a side benefit; C is invented; D is partially true but missing the mechanism. Exam-takeaway: CAPI is required, not optional, after iOS 14.5.
 
-**Q17. Answer: C.** Why C is correct: Default Meta attribution post-iOS-14 is 7-day click + 1-day view. Why wrong: A is pre-iOS-14; B is last-touch (a model, not a window); D is fantasy. Exam-takeaway: 7+1 is the current default — compare to 28+1 old default for the magnitude of the shrinkage.
+**Q17. Answer: C.** Why C is correct: Default Meta attribution post-iOS-14 is 7-day click + 1-day view. Why wrong: A is pre-iOS-14; B is last-touch (a model, not a window); D is fantasy. Exam-takeaway: 7+1 is the current default, compare to 28+1 old default for the magnitude of the shrinkage.
 
 **Q18. Answer: C.** Why C is correct: Lookalike Audiences need 1,000+ in the seed (5,000+ for reliability). Why wrong: A is too small; B/D are excessive. Exam-takeaway: 1K minimum, 5K target.
 
@@ -315,29 +315,29 @@ D. 1-2 pages
 
 **Q23. Answer: D.** Why D is correct: Meta Reels are 9:16 vertical (1080×1920 minimum). Why wrong: A is Feed; B is YouTube long-form; C is Feed/portrait. Exam-takeaway: 9:16 for Reels/Shorts/TikTok; 1:1 or 4:5 for Feed; 16:9 for long-form video.
 
-**Q24. Answer: B.** Why B is correct: Spark Ads are paid boosts of organic TikTok videos (yours or a creator's via Spark Code). Why wrong: A is invented; C is a creative format (not the ad type); D is TopView. Exam-takeaway: Spark Ads inherit engagement on the original post — that's their advantage.
+**Q24. Answer: B.** Why B is correct: Spark Ads are paid boosts of organic TikTok videos (yours or a creator's via Spark Code). Why wrong: A is invented; C is a creative format (not the ad type); D is TopView. Exam-takeaway: Spark Ads inherit engagement on the original post, that's their advantage.
 
-**Q25. Answer: C.** Why C is correct: TikTok's hook window is 1.5-3 seconds — faster than Meta's 3s. Why wrong: A is Meta's; B/D are too long. Exam-takeaway: TikTok scrolls faster than any platform; design for sub-3-second hooks.
+**Q25. Answer: C.** Why C is correct: TikTok's hook window is 1.5-3 seconds, faster than Meta's 3s. Why wrong: A is Meta's; B/D are too long. Exam-takeaway: TikTok scrolls faster than any platform; design for sub-3-second hooks.
 
-**Q26. Answer: C.** Why C is correct: TikTok requires sound-first, faster cuts, lower production — different visual grammar than Meta Reels despite the same 9:16 aspect. Why wrong: A misreads "same format = same performance"; B is wrong (TikTok accepts non-HD); D is wrong. Exam-takeaway: Aspect-ratio-only cross-posting underperforms native by ~40%.
+**Q26. Answer: C.** Why C is correct: TikTok requires sound-first, faster cuts, lower production, different visual grammar than Meta Reels despite the same 9:16 aspect. Why wrong: A misreads "same format = same performance"; B is wrong (TikTok accepts non-HD); D is wrong. Exam-takeaway: Aspect-ratio-only cross-posting underperforms native by ~40%.
 
-**Q27. Answer: B.** Why B is correct: Thought-Leadership Ads (TLAs) boost individual employee posts and outperform brand-page ads ~2x in 2026. Why wrong: A is the legacy default; C/D are older formats with less lift. Exam-takeaway: TLAs are the 2026 LinkedIn winner — boost personal posts, not brand pages.
+**Q27. Answer: B.** Why B is correct: Thought-Leadership Ads (TLAs) boost individual employee posts and outperform brand-page ads ~2x in 2026. Why wrong: A is the legacy default; C/D are older formats with less lift. Exam-takeaway: TLAs are the 2026 LinkedIn winner, boost personal posts, not brand pages.
 
-**Q28. Answer: B.** Why B is correct: LinkedIn Matched Audiences "Account List Upload" targets specific named companies — foundation of ABM. Why wrong: A is a different feature; C is InMail (separate product); D conflates audience uploads with creative uploads. Exam-takeaway: Account List Upload = ABM core.
+**Q28. Answer: B.** Why B is correct: LinkedIn Matched Audiences "Account List Upload" targets specific named companies, foundation of ABM. Why wrong: A is a different feature; C is InMail (separate product); D conflates audience uploads with creative uploads. Exam-takeaway: Account List Upload = ABM core.
 
 **Q29. Answer: D.** Why D is correct: LinkedIn Lead Gen Forms auto-fill profile data (name, email, company, title) from the user's profile. Why wrong: A is partial; B is wrong; C is fictional. Exam-takeaway: Lead Gen Forms convert 3-5x higher than off-platform forms because of profile auto-fill.
 
 **Q30. Answer: D.** Why D is correct: For "VP Marketing at 200+ employee companies," LinkedIn is the only platform with reliable job-title + company-size + seniority targeting. Why wrong: A-C are consumer-DTC platforms with no enterprise-procurement audience. Exam-takeaway: B2B exec targeting = LinkedIn (almost always).
 
-**Q31. Answer: D.** Why D is correct: LinkedIn CPCs are higher, but LinkedIn-sourced leads convert to closed-won at much higher rates — compare cost-per-deal, not cost-per-click. Why wrong: A-C accept the lazy comparison. Exam-takeaway: Always compare LinkedIn on cost-per-closed-deal, not CPC.
+**Q31. Answer: D.** Why D is correct: LinkedIn CPCs are higher, but LinkedIn-sourced leads convert to closed-won at much higher rates, compare cost-per-deal, not cost-per-click. Why wrong: A-C accept the lazy comparison. Exam-takeaway: Always compare LinkedIn on cost-per-closed-deal, not CPC.
 
-**Q32. Answer: B.** Why B is correct: Drift publicly shared at SaaStr 2022 that their automation cut average sales cycle from 67 days to ~42 days — a 38% reduction. Why wrong: A is too small; C is too dramatic; D ignores the case study. Exam-takeaway: Speed-to-lead automation drove the 38% cycle reduction.
+**Q32. Answer: B.** Why B is correct: Drift publicly shared at SaaStr 2022 that their automation cut average sales cycle from 67 days to ~42 days, a 38% reduction. Why wrong: A is too small; C is too dramatic; D ignores the case study. Exam-takeaway: Speed-to-lead automation drove the 38% cycle reduction.
 
 **Q33. Answer: A.** Why A is correct: The proposition is the single message in 12 words or fewer. Why wrong: B/C undermine the discipline of choosing ONE message; D is competitive analysis, not proposition. Exam-takeaway: ≤12 words = forced clarity.
 
-**Q34. Answer: B.** Why B is correct: PLG = Product-Led Growth — growth via product usage (free → paid), not sales-led. Why wrong: A/C/D are fictional or unrelated. Exam-takeaway: Notion, Slack, Figma, Calendly are PLG exemplars.
+**Q34. Answer: B.** Why B is correct: PLG = Product-Led Growth, growth via product usage (free → paid), not sales-led. Why wrong: A/C/D are fictional or unrelated. Exam-takeaway: Notion, Slack, Figma, Calendly are PLG exemplars.
 
-**Q35. Answer: A.** Why A is correct: To improve Quality Score, work on CTR + Ad Relevance + Landing Page Experience (the three QS inputs). Why wrong: B/C/D don't move QS — bid, budget, and geo are auction/targeting inputs, not quality inputs. Exam-takeaway: QS improves on ad-side inputs only.
+**Q35. Answer: A.** Why A is correct: To improve Quality Score, work on CTR + Ad Relevance + Landing Page Experience (the three QS inputs). Why wrong: B/C/D don't move QS, bid, budget, and geo are auction/targeting inputs, not quality inputs. Exam-takeaway: QS improves on ad-side inputs only.
 
 **Q36. Answer: B.** Why B is correct: Allbirds' tight account ran 5 campaigns total (Brand, Generic, Sustainable, Running, Retargeting). Why wrong: A is too few; C/D are over-engineered. Exam-takeaway: A 5-campaign tight account outperforms a 50-campaign sprawl 9 times out of 10.
 
@@ -347,7 +347,7 @@ D. 1-2 pages
 
 **Q39. Answer: B.** Why B is correct: Notion's case study showed 10x enterprise pipeline growth in 12 months via LinkedIn account lists + TLAs + Conversation Ads. Why wrong: A is too slow; C/D are off. Exam-takeaway: Notion's 10x is the canonical ABM-on-LinkedIn case study.
 
-**Q40. Answer: D.** Why D is correct: A campaign brief should be 1-2 pages — anything longer is "all the options," not "the decisions." Why wrong: A-C describe over-engineered briefs that haven't decided anything. Exam-takeaway: 1-2 pages forces decisions.
+**Q40. Answer: D.** Why D is correct: A campaign brief should be 1-2 pages, anything longer is "all the options," not "the decisions." Why wrong: A-C describe over-engineered briefs that haven't decided anything. Exam-takeaway: 1-2 pages forces decisions.
 
 ---
 

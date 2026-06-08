@@ -16,7 +16,7 @@
 .vg-duration { font-size: 11px; color: #94a3b8; font-weight: 600; }
 </style>
 
-# 🎥 Module 10 Videos: Beyond Bitcoin — Broader Blockchain Ecosystem
+# 🎥 Module 10 Videos: Beyond Bitcoin, Broader Blockchain Ecosystem
 
 ## ⭐ Essential watching (~80 min)
 
@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Why Ethereum Exists — Turing-Complete Contracts</p>
+      <p class="vg-title">Why Ethereum Exists, Turing-Complete Contracts</p>
       <p class="vg-creator">Vitalik Buterin (talks 2014-2024)</p>
       <span class="vg-duration">⏱ 28 min · The original thesis</span>
     </div>
@@ -57,7 +57,7 @@
     <div class="vg-thumb"><span>🧱</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Optimistic vs ZK Rollups — The Two Flavors</p>
+      <p class="vg-title">Optimistic vs ZK Rollups, The Two Flavors</p>
       <p class="vg-creator">Anthony Sassano · The Daily Gwei</p>
       <span class="vg-duration">⏱ 20 min · Arbitrum, Optimism, zkSync</span>
     </div>
@@ -129,6 +129,6 @@
 
 1. Explain UTXO vs account model in one paragraph.
 2. EIP-1559: what's burned, what's tipped, why ETH can be deflationary.
-3. The Merge — date, change, one consequence.
+3. The Merge, date, change, one consequence.
 4. Optimistic vs ZK rollup: name the trade-off in one sentence each.
 5. Why did UST collapse in 72 hours while USDC briefly depegged for 48 hours and recovered?

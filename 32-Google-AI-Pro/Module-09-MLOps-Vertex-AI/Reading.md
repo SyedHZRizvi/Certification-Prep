@@ -1,14 +1,14 @@
 # Module 9: MLOps on Vertex AI ⚙️
 
-> **Why this module matters:** This is the heaviest-weight module of the **Professional Machine Learning Engineer (PMLE)** exam — roughly 35% of the blueprint touches the topics here. Even on the Generative AI Leader exam, MLOps fluency is what separates a "knows the API" engineer from a "ships in production" architect. By the end of this module you can describe, draw, and code the canonical Vertex AI MLOps loop: training → registry → deployment → monitoring → retrain.
+> **Why this module matters:** This is the heaviest-weight module of the **Professional Machine Learning Engineer (PMLE)** exam, roughly 35% of the blueprint touches the topics here. Even on the Generative AI Leader exam, MLOps fluency is what separates a "knows the API" engineer from a "ships in production" architect. By the end of this module you can describe, draw, and code the canonical Vertex AI MLOps loop: training → registry → deployment → monitoring → retrain.
 
-> **Prerequisites for this module.** Modules 1–8 finished. Module 3 in particular — you should know what Workbench, Pipelines, Registry, Endpoints, and Monitoring are at a one-line level. This module gives you depth on each.
+> **Prerequisites for this module.** Modules 1–8 finished. Module 3 in particular, you should know what Workbench, Pipelines, Registry, Endpoints, and Monitoring are at a one-line level. This module gives you depth on each.
 
 ---
 
 ## 📖 A Story: Why Vodafone Stopped Editing Notebooks
 
-It is January 2022. **Vodafone's** ML platform team in Newbury, UK, supports ~300 ML models across the company — from customer-churn predictors to network-anomaly detectors to call-quality forecasts. Their published case study (Google Cloud Next 2023) describes a pattern that will sound familiar to any ML team without MLOps: every model was a Jupyter notebook on someone's laptop or VM, trained by hand, copied to production via SSH, monitored via "wait for someone to complain."
+It is January 2022. **Vodafone's** ML platform team in Newbury, UK, supports ~300 ML models across the company, from customer-churn predictors to network-anomaly detectors to call-quality forecasts. Their published case study (Google Cloud Next 2023) describes a pattern that will sound familiar to any ML team without MLOps: every model was a Jupyter notebook on someone's laptop or VM, trained by hand, copied to production via SSH, monitored via "wait for someone to complain."
 
 The team's pre-MLOps process for shipping a model update:
 
@@ -95,16 +95,16 @@ The PMLE exam tests every arrow on this diagram.
 
 ---
 
-## 🛤️ Vertex AI Pipelines — Deep Dive
+## 🛤️ Vertex AI Pipelines, Deep Dive
 
 **Vertex AI Pipelines** orchestrates the loop. Built on **Kubeflow Pipelines v2 (KFP)** or **TensorFlow Extended (TFX)**, it gives you:
 
-- **DAG of containerized steps** — each step is a reusable container
-- **Artifact tracking** — outputs of each step are logged with lineage
-- **ML Metadata (MLMD)** — backing store for "what produced this artifact, with what inputs"
-- **Schedule** — cron-style or trigger-based
-- **Retry + caching** — re-running an unchanged step uses cached output
-- **Visualization** — pipeline graph in the Vertex AI UI
+- **DAG of containerized steps**, each step is a reusable container
+- **Artifact tracking**, outputs of each step are logged with lineage
+- **ML Metadata (MLMD)**, backing store for "what produced this artifact, with what inputs"
+- **Schedule**, cron-style or trigger-based
+- **Retry + caching**, re-running an unchanged step uses cached output
+- **Visualization**, pipeline graph in the Vertex AI UI
 
 ### Defining a pipeline in KFP
 
@@ -179,7 +179,7 @@ PipelineJobSchedule(
 **Vertex AI Model Registry** is the central catalog. Each model has:
 
 - **Display name** (`"customer-churn"`)
-- **Versions** (`1`, `2`, `3` — semantic or sequential)
+- **Versions** (`1`, `2`, `3`, semantic or sequential)
 - **Artifacts** (the weights, in GCS or container)
 - **Metadata** (training params, source dataset, evaluation metrics, lineage to pipeline run)
 - **Labels** (key-value tags for filtering)
@@ -204,13 +204,13 @@ for v in versions:
     print(v.name, v.version_id, v.labels)
 ```
 
-**Lineage** — clicking a model in the UI shows you the pipeline run that produced it, the source dataset, the training params, and the evaluation metrics. Critical for "why was this prediction made" audits.
+**Lineage**, clicking a model in the UI shows you the pipeline run that produced it, the source dataset, the training params, and the evaluation metrics. Critical for "why was this prediction made" audits.
 
-🎯 **Exam pattern:** *"A regulator asks 'when was this prediction made, by which model version, trained on what data?'"* → **Model Registry version + lineage** — every artifact traces back to a pipeline run + dataset.
+🎯 **Exam pattern:** *"A regulator asks 'when was this prediction made, by which model version, trained on what data?'"* → **Model Registry version + lineage**, every artifact traces back to a pipeline run + dataset.
 
 ---
 
-## 🚀 Endpoints — Real-Time, Batch, Private
+## 🚀 Endpoints, Real-Time, Batch, Private
 
 (Reprise from Module 3 with deployment depth.)
 
@@ -263,10 +263,10 @@ No public internet; reachable only from within the VPC. Required for VPC-SC comp
 
 ## 🎚️ Generative-AI Endpoints (Gemini)
 
-For Gemini, you do NOT manage replicas — Google does. You either:
+For Gemini, you do NOT manage replicas, Google does. You either:
 
-- **PAYG** — pay per token, subject to per-region quotas
-- **Provisioned Throughput** — reserved GSCU capacity for steady high-volume workloads
+- **PAYG**, pay per token, subject to per-region quotas
+- **Provisioned Throughput**, reserved GSCU capacity for steady high-volume workloads
 
 Module 3 covered the breakeven. From an MLOps view:
 
@@ -327,7 +327,7 @@ GenAI-specific monitoring includes:
 
 ---
 
-## 🏃 Training Patterns — Custom, AutoML, Hyperparameter Tuning
+## 🏃 Training Patterns, Custom, AutoML, Hyperparameter Tuning
 
 For PMLE, three training patterns matter:
 
@@ -433,7 +433,7 @@ Implementation: a Vertex AI Pipeline that takes the trigger from Cloud Scheduler
 
 ---
 
-## 🛡️ Observability — Logging + Tracing + Cost
+## 🛡️ Observability, Logging + Tracing + Cost
 
 | Layer | Tool | What |
 |-------|------|------|
@@ -461,7 +461,7 @@ The PMLE exam tests this flow specifically; expect questions like "where does th
 
 ---
 
-## 📊 Vodafone Case Study — Numbers
+## 📊 Vodafone Case Study, Numbers
 
 From the Google Cloud Next 2023 presentation:
 
@@ -474,7 +474,7 @@ From the Google Cloud Next 2023 presentation:
 | Data scientist time spent on "ops" | ~30% | ~5% |
 | Audit-trail completeness | Partial (notebooks lost) | 100% (lineage in MLMD) |
 
-The improvement is not magical — it is consistent application of: **pipeline orchestration + registry + canary + monitoring + auto-rollback**.
+The improvement is not magical, it is consistent application of: **pipeline orchestration + registry + canary + monitoring + auto-rollback**.
 
 ---
 
@@ -485,7 +485,7 @@ The improvement is not magical — it is consistent application of: **pipeline o
 | "Pipelines = Cloud Build." | **Different.** Cloud Build is generic CI; Pipelines has ML metadata + lineage. |
 | "Model Registry stores predictions." | **No.** It stores *models* with versions + metadata. Predictions go to BigQuery / Cloud Logging / GCS. |
 | "Auto-scaling makes capacity infinite." | **No.** `max_replica_count` is a hard cap. Misconfigured = real outages. |
-| "Vertex AI Feature Store is optional." | **It's optional but solves a real problem** — training/serving skew. Used by every mature ML team. |
+| "Vertex AI Feature Store is optional." | **It's optional but solves a real problem**, training/serving skew. Used by every mature ML team. |
 | "Hyperparameter tuning is exhaustive grid search." | **No.** Vizier uses Bayesian optimization to find good params with far fewer trials. |
 | "AutoML is for beginners only." | **No.** Strong production option for tabular / image / text classification. Mature teams use both. |
 | "Endpoints scale independently of Model Registry." | **No.** Deployments reference Model Registry versions. Rollback = re-route traffic to an earlier version. |
@@ -503,7 +503,7 @@ The improvement is not magical — it is consistent application of: **pipeline o
 | **Vertex AI Pipelines** | Kubeflow-based ML orchestration |
 | **KFP** | Kubeflow Pipelines v2 |
 | **TFX** | TensorFlow Extended |
-| **MLMD** | ML Metadata — Pipelines' backing store for lineage |
+| **MLMD** | ML Metadata, Pipelines' backing store for lineage |
 | **Model Registry** | Central catalog of trained models with versions |
 | **Endpoint** | Managed serving (online, batch, private) |
 | **Canary** | Partial-traffic rollout for risk reduction |
@@ -527,19 +527,19 @@ The improvement is not magical — it is consistent application of: **pipeline o
 
 You now know:
 
-- ⚙️ **The Vertex AI MLOps loop** — 8 stages
+- ⚙️ **The Vertex AI MLOps loop**, 8 stages
 - 🛤️ **Pipelines** with KFP v2 + scheduling + caching
 - 📦 **Model Registry** with versions + lineage
-- 🚀 **Endpoints** — online, batch, private; canary via traffic_split
-- 📈 **Model Monitoring** — skew, drift, quality
-- 🏃 **Training patterns** — custom, AutoML, HPT with Vizier
+- 🚀 **Endpoints**, online, batch, private; canary via traffic_split
+- 📈 **Model Monitoring**, skew, drift, quality
+- 🏃 **Training patterns**, custom, AutoML, HPT with Vizier
 - 🗄️ **Feature Store** for training/serving skew
 - 🔁 **Continuous Training** triggers
-- 🛡️ **Observability** — Logging + Trace + Monitoring + Cost
+- 🛡️ **Observability**, Logging + Trace + Monitoring + Cost
 - ⚙️ **CI/CD for ML** with Cloud Build + Artifact Registry
-- 📊 **Vodafone numbers** — the MLOps ROI
+- 📊 **Vodafone numbers**, the MLOps ROI
 
-**Next:** [Module 10 — Production Patterns & Capstone](../Module-10-Production-Capstone/Reading.md)
+**Next:** [Module 10, Production Patterns & Capstone](../Module-10-Production-Capstone/Reading.md)
 
 ---
 

@@ -107,7 +107,7 @@ D. The end service
 
 ---
 
-### Q13. A US military system requires Top Secret clearance to read a Top Secret document — owners CANNOT override. This describes: *(Apply)*
+### Q13. A US military system requires Top Secret clearance to read a Top Secret document, owners CANNOT override. This describes: *(Apply)*
 A. DAC
 B. MAC
 C. RBAC
@@ -157,7 +157,7 @@ D. Translating SAML to OAuth
 
 ### Q19. A shared admin account used by 5 sysadmins is a problem PRIMARILY because: *(Analyze)*
 A. It violates encryption policies
-B. It destroys accountability — you can't tell who did what
+B. It destroys accountability, you can't tell who did what
 C. It cannot be MFA-protected
 D. Vendor licenses prohibit it
 
@@ -249,7 +249,7 @@ OIDC provides the id_token for the actual login.
 Kerberos tickets have time-limited validity; default skew tolerance is ~5 minutes. Clock drift → auth failure.
 
 ### Q10: **B. TACACS+**
-TCP 49. Cisco-favored. Separates AuthN/AuthZ/Accounting — RADIUS combines them.
+TCP 49. Cisco-favored. Separates AuthN/AuthZ/Accounting, RADIUS combines them.
 
 ### Q11: **B. UDP 1812 and 1813**
 1812 for authentication, 1813 for accounting. (Old ports 1645/1646 sometimes also seen.)
@@ -258,16 +258,16 @@ TCP 49. Cisco-favored. Separates AuthN/AuthZ/Accounting — RADIUS combines them
 Authentication Service issues the TGT. Then user presents TGT to TGS for service tickets.
 
 ### Q13: **B. MAC**
-Mandatory — system enforces based on clearance vs classification labels. Owner cannot override.
+Mandatory, system enforces based on clearance vs classification labels. Owner cannot override.
 
 ### Q14: **A. DAC**
-Discretionary — owner decides who can access. Classic Unix/Windows file permissions.
+Discretionary, owner decides who can access. Classic Unix/Windows file permissions.
 
 ### Q15: **D. ABAC**
 Decisions based on dynamic attributes of user, environment, resource.
 
 ### Q16: **C. RBAC**
-Standard for enterprises — roles map to job functions.
+Standard for enterprises, roles map to job functions.
 
 ### Q17: **B. Limiting the time window of standing privilege**
 JIT collapses the window an attacker can use stolen privileged credentials.
@@ -279,7 +279,7 @@ The core PAM trio.
 No audit trail can identify "which sysadmin did the bad thing." Hence the universal "named accounts only" rule.
 
 ### Q20: **B. Provision/deprovision identities across systems**
-SCIM = System for Cross-domain Identity Management — push user changes from IdP to apps.
+SCIM = System for Cross-domain Identity Management, push user changes from IdP to apps.
 
 ### Q21: **B. Disable immediately + retention + deprovision**
 Immediate disable stops authentication; preserve data for retention/legal; deprovision per process. Waiting or sharing is bad.
@@ -323,4 +323,4 @@ A disabled account should not be able to authenticate. Either it was re-enabled 
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4 — Threats & Threat Actors](../Module-04-Threats-Threat-Actors/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 4, Threats & Threat Actors](../Module-04-Threats-Threat-Actors/Reading.md)

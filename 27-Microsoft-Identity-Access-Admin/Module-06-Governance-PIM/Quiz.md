@@ -54,7 +54,7 @@ D. An administrative unit
 
 ---
 
-### Q7. **Yes/No** — PIM. *(Understand)*
+### Q7. **Yes/No**, PIM. *(Understand)*
 
 **S1:** PIM activation can require MFA, justification, and approval.
 **S2:** PIM for Azure Resources covers Azure RBAC roles.
@@ -123,7 +123,7 @@ D. Federated to AD FS
 
 ---
 
-### Q15. **Yes/No** — Access reviews. *(Understand)*
+### Q15. **Yes/No**, Access reviews. *(Understand)*
 
 **S1:** Access reviews can include ML-based recommendations (e.g. "user inactive 90 days → recommend remove").
 **S2:** Access reviews on inactive users is a feature of Entra ID Governance.
@@ -174,7 +174,7 @@ D. 250
 
 ---
 
-### Q20. **Yes/No** — Entitlement management. *(Understand)*
+### Q20. **Yes/No**, Entitlement management. *(Understand)*
 
 **S1:** Catalogs contain access packages + resources + delegated ownership.
 **S2:** An access package can target both internal users and a connected external org.
@@ -195,7 +195,7 @@ D. Always 24 hours
 
 ---
 
-### Q22. **Yes/No** — PIM mechanics. *(Understand)*
+### Q22. **Yes/No**, PIM mechanics. *(Understand)*
 
 **S1:** An eligible user must complete MFA before activating most Entra roles.
 **S2:** PIM activation events are written to Entra audit logs.
@@ -210,7 +210,7 @@ D. Yes / Yes / Yes
 
 ### Q23. A scenario: "Vendor employee needs Owner on Prod sub for 4 hours to do a migration." Best fit: *(Apply)*
 A. Permanent active Owner
-B. PIM for Azure Resources — eligible Owner, JIT activation with 4h max duration, MFA + approval required
+B. PIM for Azure Resources, eligible Owner, JIT activation with 4h max duration, MFA + approval required
 C. Custom Azure RBAC role
 D. Service principal
 
@@ -224,7 +224,7 @@ D. SSPR registration report
 
 ---
 
-### Q25. **Yes/No** — Governance scope. *(Evaluate)*
+### Q25. **Yes/No**, Governance scope. *(Evaluate)*
 
 **S1:** Lifecycle Workflows can run on-demand by an admin for testing, not only on schedule.
 **S2:** Access reviews can require a justification from the reviewer.
@@ -249,7 +249,7 @@ Lifecycle Workflows ship in the Governance add-on, not standalone P2.
 Eligible = "can activate"; Active = "is active."
 
 ### Q4: **A. It's a Microsoft policy enforced server-side**
-Activator must differ from approver — server-side guard.
+Activator must differ from approver, server-side guard.
 
 ### Q5: **B. 8 hours**
 Default max activation; configurable per role.
@@ -305,7 +305,7 @@ Both options available per role.
 ### Q22: **A. Yes / Yes / No**
 S1 yes. S2 yes. S3 no (PIM for Groups manages **membership**, not ownership).
 
-### Q23: **B. PIM for Azure Resources — eligible Owner, JIT activation with 4h max duration, MFA + approval required**
+### Q23: **B. PIM for Azure Resources, eligible Owner, JIT activation with 4h max duration, MFA + approval required**
 Textbook PIM for Azure Resources scenario.
 
 ### Q24: **B. Microsoft Entra audit logs (filter on PIM-related operations) or PIM activity history**

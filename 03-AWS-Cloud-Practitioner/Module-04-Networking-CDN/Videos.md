@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: Networking & CDN
 
-> **How to use:** This is the densest module so far — networking concepts take repetition. After the Essentials, draw your own VPC diagram from memory before doing the quiz.
+> **How to use:** This is the densest module so far, networking concepts take repetition. After the Essentials, draw your own VPC diagram from memory before doing the quiz.
 
 ## ⭐ Essential watching (~50 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">VPC Basics — Subnets, IGW, NAT, Route Tables</p>
+      <p class="vg-title">VPC Basics, Subnets, IGW, NAT, Route Tables</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 14 min · The foundation</span>
     </div>
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Security Groups vs NACLs — Stateful vs Stateless</p>
+      <p class="vg-title">Security Groups vs NACLs, Stateful vs Stateless</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 10 min · Exam favorite</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Route 53 Routing Policies — All 7 With Examples</p>
+      <p class="vg-title">Route 53 Routing Policies, All 7 With Examples</p>
       <p class="vg-creator">ExamPro</p>
       <span class="vg-duration">⏱ 13 min · MEMORIZE</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CloudFront vs Global Accelerator — When To Use Which</p>
+      <p class="vg-title">CloudFront vs Global Accelerator, When To Use Which</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 11 min · High-confusion topic</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">ALB vs NLB vs GWLB — Load Balancer Types</p>
+      <p class="vg-title">ALB vs NLB vs GWLB, Load Balancer Types</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 10 min · Layer 4 vs 7</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">VPC Endpoints — Gateway, Interface, PrivateLink</p>
+      <p class="vg-title">VPC Endpoints, Gateway, Interface, PrivateLink</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 11 min · Private AWS access</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">API Gateway + Lambda — Serverless REST in 15 min</p>
+      <p class="vg-title">API Gateway + Lambda, Serverless REST in 15 min</p>
       <p class="vg-creator">freeCodeCamp.org</p>
       <span class="vg-duration">⏱ 15 min · Hands-on</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Transit Gateway — Hub-and-Spoke for VPCs</p>
+      <p class="vg-title">Transit Gateway, Hub-and-Spoke for VPCs</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 12 min · Scaling beyond peering</span>
     </div>
@@ -135,9 +135,9 @@
 ## ✅ After watching
 
 1. Draw a VPC diagram showing IGW, NAT, public + private subnets, and a database in a private subnet.
-2. Security Group vs NACL — 3 differences each.
+2. Security Group vs NACL, 3 differences each.
 3. List the 7 Route 53 routing policies.
-4. ALB vs NLB — when to use each.
-5. CloudFront vs Global Accelerator — one-line difference.
+4. ALB vs NLB, when to use each.
+5. CloudFront vs Global Accelerator, one-line difference.
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md).

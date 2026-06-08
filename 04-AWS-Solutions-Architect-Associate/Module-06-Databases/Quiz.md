@@ -240,7 +240,7 @@ DAX gives microsecond reads for DynamoDB hot keys. ElastiCache could be used for
 Sorted sets + persistence + Multi-AZ = Redis. Memcached doesn't have any of those.
 
 ### Q8: **B. Simple multi-threaded distributed cache, no persistence**
-Memcached's sweet spot — easy horizontal sharding, multi-threaded, ephemeral.
+Memcached's sweet spot, easy horizontal sharding, multi-threaded, ephemeral.
 
 ### Q9: **B. Point-in-Time Recovery**
 PITR uses automated backups + tx logs to restore to any second within the retention window.
@@ -279,16 +279,16 @@ MongoDB-compatible API; minimal app changes.
 Read replicas don't auto-promote; you promote them if needed (e.g., standalone DB or DR).
 
 ### Q21: **B. Read Replicas for reporting**
-Standard pattern — separate OLTP writes from reporting reads.
+Standard pattern, separate OLTP writes from reporting reads.
 
 ### Q22: **B. Storage Auto Scaling**
-RDS will automatically grow storage when threshold hit — no downtime.
+RDS will automatically grow storage when threshold hit, no downtime.
 
 ### Q23: **B. 24 hr retention, Lambda consumer**
 Standard Streams retention. Lambda triggers per record.
 
 ### Q24: **A. Neptune**
-Graph DB — supports Gremlin, openCypher, SPARQL.
+Graph DB, supports Gremlin, openCypher, SPARQL.
 
 ### Q25: **B. ~60–120 seconds**
 Classic Multi-AZ failover. Multi-AZ DB Cluster is faster (~35 s).

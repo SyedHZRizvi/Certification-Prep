@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: Azure Files & File Sync
 
-> **How to use:** Smaller module — 4 essentials + 3 recommended + 2 optional is enough. Pay close attention to identity-based auth modes.
+> **How to use:** Smaller module, 4 essentials + 3 recommended + 2 optional is enough. Pay close attention to identity-based auth modes.
 
 ## ⭐ Essential watching (~60 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Files Deep Dive — SMB & NFS</p>
+      <p class="vg-title">Azure Files Deep Dive, SMB & NFS</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 24 min · Tiers + identity</span>
     </div>
@@ -38,8 +38,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Files Tutorial — Quickstart</p>
-      <p class="vg-creator">Adam Marczak — Azure for Everyone</p>
+      <p class="vg-title">Azure Files Tutorial, Quickstart</p>
+      <p class="vg-creator">Adam Marczak, Azure for Everyone</p>
       <span class="vg-duration">⏱ 14 min · Create + mount</span>
     </div>
   </a>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Azure File Sync — Step-by-Step Deployment</p>
+      <p class="vg-title">Azure File Sync, Step-by-Step Deployment</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 12 min · Hands-on lab</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Premium vs Standard Files — Performance &amp; Cost</p>
+      <p class="vg-title">Premium vs Standard Files, Performance &amp; Cost</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 16 min · IOPS math</span>
     </div>
@@ -125,7 +125,7 @@
 | Channel | Why |
 |---------|-----|
 | **John Savill's Technical Training** | Best Azure Files explainers. |
-| **Adam Marczak — Azure for Everyone** | Quickstart-friendly. |
+| **Adam Marczak, Azure for Everyone** | Quickstart-friendly. |
 | **Travis Roberts** | Real-world File Sync labs. |
 | **Inside Cloud and Security** | Niche topics like NFS gotchas. |
 | **Microsoft Mechanics** | Latest feature announcements. |
@@ -134,7 +134,7 @@
 
 ## ✅ After watching
 
-1. SMB vs NFS — when do you pick each?
+1. SMB vs NFS, when do you pick each?
 2. Three SMB authentication options (key, Entra Kerberos, AD DS)?
 3. What does cloud tiering replace files with locally?
 4. Premium share bills you for ___ size; standard bills for ___ size?

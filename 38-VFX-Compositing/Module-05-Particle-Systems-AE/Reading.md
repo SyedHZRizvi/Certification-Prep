@@ -6,7 +6,7 @@ title: "Module 5: Particle Systems in After Effects"
 
 ## Why Particles Matter
 
-The magical golden dust trails in *Doctor Strange* (2016, Framestore), the sand swirling through the desert in *Mad Max: Fury Road* (2015, Iloura), the firefly sparks in *Princess Mononoke* (1997, Studio Ghibli) — all of these are particle systems. Particles are the lingua franca of VFX: infinitely flexible, physically tunable, and capable of producing effects that would be impossible to capture practically.
+The magical golden dust trails in *Doctor Strange* (2016, Framestore), the sand swirling through the desert in *Mad Max: Fury Road* (2015, Iloura), the firefly sparks in *Princess Mononoke* (1997, Studio Ghibli), all of these are particle systems. Particles are the lingua franca of VFX: infinitely flexible, physically tunable, and capable of producing effects that would be impossible to capture practically.
 
 In After Effects, you have two primary particle toolsets: **Trapcode Particular** (the professional standard for AE particles) and **CC Particle World** (the free, built-in option). Understanding both gives you a full toolkit for fire, smoke, dust, magic, and atmospheric effects.
 
@@ -18,9 +18,9 @@ A particle system consists of three components:
 
 | Component | Role |
 |-----------|------|
-| **Emitter** | The source — where particles spawn (point, line, plane, sphere, layer) |
-| **Particles** | Individual elements — each has position, velocity, opacity, size, color, rotation |
-| **Physics** | Forces that act on particles over time — gravity, wind, turbulence, air resistance |
+| **Emitter** | The source, where particles spawn (point, line, plane, sphere, layer) |
+| **Particles** | Individual elements, each has position, velocity, opacity, size, color, rotation |
+| **Physics** | Forces that act on particles over time, gravity, wind, turbulence, air resistance |
 
 Particles have a **lifecycle**: they are born (emitted), live (physics applied each frame), and die (age/opacity fade to zero). The particle system simulates all of this mathematically, typically at 24–60 frames per second.
 
@@ -45,7 +45,7 @@ Particles have a **lifecycle**: they are born (emitted), live (physics applied e
 
 Fire is a layered effect: the fireball, the inner flame, the outer glow, and the smoke are separate particle systems composed together.
 
-**Layer 1 — Core Flame:**
+**Layer 1, Core Flame:**
 - Emitter Type: Sphere (emitting from the base)
 - Particles/sec: 200–400
 - Velocity: 150–300, Spread: 30–50°
@@ -57,22 +57,22 @@ Fire is a layered effect: the fireball, the inner flame, the outer glow, and the
 - Physics: Gravity Y = −200 (flames rise)
 - Air Turbulence: 100–200, Turbulence Scale: 0.8 (creates the flickering motion)
 
-**Layer 2 — Outer Flame:**
+**Layer 2, Outer Flame:**
 - Duplicate Layer 1; increase Velocity Spread; reduce Particles/sec
 - Color over Life: Orange → Red → Dark (cooler outer flame)
 
-**Layer 3 — Smoke:**
+**Layer 3, Smoke:**
 - Emitter Type: Sphere (same position as flame, higher Y position for smoke rising from flame)
 - Particles/sec: 50–80
 - Life: 3–5 seconds
 - Particle Type: Sphere with large radius
-- Size over Life: Small (birth) → Very Large (death) — smoke expands as it rises
+- Size over Life: Small (birth) → Very Large (death), smoke expands as it rises
 - Opacity over Life: High at birth (0.4–0.6) → 0 at death
 - Color over Life: Light gray → Very light gray
 - Physics: Gravity Y = −30 (gentle upward drift)
 - Air Turbulence: Higher scale (1.5–2.0) for billowing motion
 
-**Layer 4 — Embers:**
+**Layer 4, Embers:**
 - Emitter Type: Sphere (at the base of the flame)
 - Particles/sec: 30–60
 - Velocity: High (200–400) + Spread: Wide (90°+)
@@ -92,7 +92,7 @@ Dust effects require:
 - Size over Life: Stays large throughout life
 - Opacity over Life: Low at birth (0.05–0.1); peaks at midlife; fades at death
 - Air Turbulence: High Scale (3–5) for swirling, settling behavior
-- Gravity: Very low (Y = −10 to −30) — dust barely falls
+- Gravity: Very low (Y = −10 to −30), dust barely falls
 
 ### Building Magic/Energy Particles
 
@@ -115,7 +115,7 @@ Professional compositors learn these ranges so they can dial in realistic effect
 | Fire core | −200 to −350 | 100–200 | 0.5–1.0 | 200–400 |
 | Fire smoke | −20 to −50 | 50–100 | 1.5–2.5 | 50–100 |
 | Dust cloud | −5 to −20 | 150–300 | 3.0–6.0 | 500–2000 |
-| Rain | 350–500 | 0–30 | — | 1000–3000 |
+| Rain | 350–500 | 0–30 |, | 1000–3000 |
 | Snow | 30–80 | 10–50 | 2.0–4.0 | 200–600 |
 | Embers | 150–250 | 30–80 | 0.8–1.5 | 20–60 |
 | Magic sparks | −10 to 10 | 80–150 | 0.3–0.8 | 50–200 |
@@ -159,21 +159,21 @@ Professional compositors learn these ranges so they can dial in realistic effect
 
 ---
 
-## 🎬 Case Study: Mad Max: Fury Road — Practical vs Digital Dust
+## 🎬 Case Study: Mad Max: Fury Road, Practical vs Digital Dust
 
-*Mad Max: Fury Road* (2015) stands as a case study in combining practical and digital FX. Director George Miller's philosophy was to photograph real vehicles doing real stunts in the Namib Desert — and VFX studio Iloura's job was to extend, enhance, and multiply the reality that existed in the plates.
+*Mad Max: Fury Road* (2015) stands as a case study in combining practical and digital FX. Director George Miller's philosophy was to photograph real vehicles doing real stunts in the Namib Desert, and VFX studio Iloura's job was to extend, enhance, and multiply the reality that existed in the plates.
 
 ### The Dust Storm Sequence
 
-The film's iconic sandstorm wall — a 5,000-foot wall of orange dust consuming everything — combined three techniques:
+The film's iconic sandstorm wall a 5,000-foot wall of orange dust consuming everything combined three techniques:
 
-1. **Practical dust:** Real dust generated on location by explosives and wind machines — photographed against real desert sky
+1. **Practical dust:** Real dust generated on location by explosives and wind machines, photographed against real desert sky
 2. **Trapcode Particular dust simulation:** Digital dust particles extending the practical elements further into the frame, filling in areas where the practical dust was too sparse
-3. **Houdini volume simulation:** The large-scale volume of the dust wall itself — a physically simulated fluid simulation rendered in V-Ray and composited in Nuke
+3. **Houdini volume simulation:** The large-scale volume of the dust wall itself, a physically simulated fluid simulation rendered in V-Ray and composited in Nuke
 
 The key insight: the digital dust particles had to match the **color** and **opacity profile** of the practical dust photographed on the day. Iloura's compositors color-sampled the practical dust from the plate and used that as the target for the digital Particular emitters.
 
-> 🎯 **What the exam tests:** Matching digital particles to practical elements requires sampling the color and opacity characteristics of the real element from the plate. Never create a particle color from memory — always reference the plate.
+> 🎯 **What the exam tests:** Matching digital particles to practical elements requires sampling the color and opacity characteristics of the real element from the plate. Never create a particle color from memory, always reference the plate.
 
 ### The Practical-to-Digital Handoff Workflow
 
@@ -244,7 +244,7 @@ In professional production, particle layers are almost always **pre-rendered to 
 3. Enables quality review and approval before the element is locked into the composite
 4. Allows the particle artist and the compositor to work simultaneously
 
-> 🎯 **What the exam tests:** In a professional pipeline, particle elements are rendered to EXR sequences and delivered to the compositor — they are NOT re-simulated within the live Nuke script. This mirrors the CG render workflow: the particle artist delivers an EXR; the compositor assembles the final shot.
+> 🎯 **What the exam tests:** In a professional pipeline, particle elements are rendered to EXR sequences and delivered to the compositor, they are NOT re-simulated within the live Nuke script. This mirrors the CG render workflow: the particle artist delivers an EXR; the compositor assembles the final shot.
 
 ---
 
@@ -258,7 +258,7 @@ In professional production, particle layers are almost always **pre-rendered to 
 | OBJ model | A 3D geometry shape assigned to each particle (slower to render) |
 | Aux System | Secondary emitter that spawns particles when parent particles die |
 | Air Turbulence | Random chaotic force field applied to all particles |
-| Turbulence Scale | Size of turbulence force cells — large = billowing, small = flickering |
+| Turbulence Scale | Size of turbulence force cells, large = billowing, small = flickering |
 | Air Resistance | Drag force decelerating particles over time |
 | Size over Life | A curve controlling particle size from birth to death |
 | Opacity over Life | A curve controlling particle visibility from birth to death |
@@ -269,7 +269,7 @@ In professional production, particle layers are almost always **pre-rendered to 
 
 ---
 
-## 🎬 Case Study: Doctor Strange — MCU Sorcery Particle Systems
+## 🎬 Case Study: Doctor Strange, MCU Sorcery Particle Systems
 
 The sorcery VFX in *Doctor Strange* (2016, Framestore) established the visual language for magic in the MCU. The gold-orange mandala circles and geometric shields were built using a combination of Houdini simulations for hero close-up shots and Trapcode Particular in After Effects for background elements and supporting shots.
 
@@ -284,7 +284,7 @@ The key to the MCU mandala ring look is Particular's **Layer Emitter** type:
 5. High Turbulence + small Turbulence Scale creates individual particle swirling
 6. Add blend mode + a separate Glow effect on the particle layer creates the luminous quality
 
-> 🎯 **What the exam tests:** The Layer Emitter type emits particles along the shape of any AE layer — a spline, a shape, a footage layer. This is the correct tool for effects where particles must follow a geometric path or shape, not a point or sphere origin.
+> 🎯 **What the exam tests:** The Layer Emitter type emits particles along the shape of any AE layer, a spline, a shape, a footage layer. This is the correct tool for effects where particles must follow a geometric path or shape, not a point or sphere origin.
 
 ### Particle-Based Energy Effects: Parameter Summary
 
@@ -298,16 +298,16 @@ The key to the MCU mandala ring look is Particular's **Layer Emitter** type:
 
 ---
 
-## 🎯 What the Exam Tests — Module 5
+## 🎯 What the Exam Tests, Module 5
 
-1. **Three-part particle system anatomy:** Emitter, Particles, Physics — every particle system in every tool is built on these three components.
+1. **Three-part particle system anatomy:** Emitter, Particles, Physics, every particle system in every tool is built on these three components.
 2. **Fire layering requirement:** Professional fire is always at minimum 3 layers: core flame, outer flame, smoke. Single-layer fire looks flat and unrealistic.
-3. **Aux System purpose:** Spawns secondary particles from dead primary particles — used for sparks from dying embers, smoke from dying fire particles.
+3. **Aux System purpose:** Spawns secondary particles from dead primary particles, used for sparks from dying embers, smoke from dying fire particles.
 4. **Gravity direction convention:** In Trapcode Particular, positive Y gravity pulls down; negative Y pulls up. Fire uses negative Y (flames rise). Debris uses positive Y (falls after initial upward burst).
-5. **CC Particle World limitations:** No Aux System; basic physics only; limited particle types. Appropriate for snow, ash, simple atmospheric — not fire or complex simulations.
+5. **CC Particle World limitations:** No Aux System; basic physics only; limited particle types. Appropriate for snow, ash, simple atmospheric, not fire or complex simulations.
 6. **Dust vs fire Turbulence Scale:** Dust uses large Scale (3–6) for billowing motion. Fire uses small Scale (0.5–1.0) for flickering.
-7. **Layer emitter use case:** Layer Emitter type emits particles from a specific AE layer (a shape layer, mask, or footage) — used for magic effects where particles trail from a specific shape or logo.
-8. **Matching digital to practical:** Digital particles must be color-sampled from the practical plate element — never invent a color for digital dust or smoke.
+7. **Layer emitter use case:** Layer Emitter type emits particles from a specific AE layer (a shape layer, mask, or footage), used for magic effects where particles trail from a specific shape or logo.
+8. **Matching digital to practical:** Digital particles must be color-sampled from the practical plate element, never invent a color for digital dust or smoke.
 9. **Fractal Noise fire technique:** A no-plugin alternative using Fractal Noise + Curves + Glow + animated Evolution. 2D texture approach vs particle simulation.
 10. **Air Resistance effect:** Decelerates particles over time. Essential for realistic embers (slows after initial blast) and dust (drifts rather than linear flight).
 
@@ -330,7 +330,7 @@ The key to the MCU mandala ring look is Particular's **Layer Emitter** type:
 
 ## 🎯 Next Steps
 
-Module 6 introduces Nuke — the node-based compositing paradigm that is the industry standard for film VFX. Nuke takes every concept from Modules 1–5 (keying, roto, tracking, particles) and builds them into a non-linear, reusable node network that can handle the complexity of a 400-element hero composite.
+Module 6 introduces Nuke, the node-based compositing paradigm that is the industry standard for film VFX. Nuke takes every concept from Modules 1–5 (keying, roto, tracking, particles) and builds them into a non-linear, reusable node network that can handle the complexity of a 400-element hero composite.
 
 ---
 
@@ -343,14 +343,14 @@ Atmospheric haze is one of the most-used but least-discussed particle techniques
 | Parameter | Value | Rationale |
 |-----------|-------|-----------|
 | Emitter Type | Box (fills entire frame depth) | Distributes haze particles across the 3D space |
-| Particles/sec | 5–20 | Very sparse — individual haze particles are large and translucent |
+| Particles/sec | 5–20 | Very sparse, individual haze particles are large and translucent |
 | Life | 10–30 seconds | Particles persist for many frames (slow-drifting haze) |
 | Particle Type | Sphere | Simple shape for soft volumetric quality |
 | Size | 200–500 (very large) | Haze particles are large soft blobs |
 | Size Random | 60–80% | Irregular sizes prevent pattern repetition |
 | Opacity over Life | Fade in → Hold → Fade out | Avoids popping as particles are born and die |
 | Birth/Death Opacity | 0% | Particles must fade in and out |
-| Max Opacity | 3–8% | Very low — cumulative effect creates the haze |
+| Max Opacity | 3–8% | Very low, cumulative effect creates the haze |
 | Gravity Y | −5 to +5 | Nearly neutral; slight drift |
 | Air Turbulence | 20–50 | Slow gentle motion |
 | Turbulence Scale | 3–6 | Large slow swirling |
@@ -373,7 +373,7 @@ Atmospheric haze is one of the most-used but least-discussed particle techniques
 
 ## 📚 Further Reading
 
-- **Trapcode Particular User Guide (Red Giant/Maxon)** — complete reference for every parameter and auxiliary system feature
-- **Video Copilot "Particular" tutorials by Andrew Kramer** — the definitive practical tutorials for Particular-based fire, smoke, and magic
-- **"Fire Tutorial" — Film Riot by Ryan Connolly** — step-by-step fire compositing in After Effects using Particular
-- **Red Giant Universe / Maxon blog** — practical effect breakdowns using Particular and other Red Giant tools
+- **Trapcode Particular User Guide (Red Giant/Maxon)**, complete reference for every parameter and auxiliary system feature
+- **Video Copilot "Particular" tutorials by Andrew Kramer**, the definitive practical tutorials for Particular-based fire, smoke, and magic
+- **"Fire Tutorial" Film Riot by Ryan Connolly** step-by-step fire compositing in After Effects using Particular
+- **Red Giant Universe / Maxon blog**, practical effect breakdowns using Particular and other Red Giant tools

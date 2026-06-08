@@ -1,11 +1,11 @@
 # Module 4: Conditional Access & Identity Protection 🛡️
 
-> **Why this module matters:** Conditional Access is the **engine** that turns identity into a security perimeter. It's where everything you built in Modules 1–3 — license tiers, users, groups, MFA methods — gets composed into actual security policy. Microsoft estimates that ~99% of identity attacks they see are stopped by a well-built CA policy stack. The same Microsoft data says **5% of attempted sign-ins to Entra each month are malicious**, which means CA is in line on every sign-in by every user, every day. The SC-300 exam dedicates ~25% of its weight here. Get this module right and the exam gets dramatically easier.
+> **Why this module matters:** Conditional Access is the **engine** that turns identity into a security perimeter. It's where everything you built in Modules 1–3 license tiers, users, groups, MFA methods gets composed into actual security policy. Microsoft estimates that ~99% of identity attacks they see are stopped by a well-built CA policy stack. The same Microsoft data says **5% of attempted sign-ins to Entra each month are malicious**, which means CA is in line on every sign-in by every user, every day. The SC-300 exam dedicates ~25% of its weight here. Get this module right and the exam gets dramatically easier.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
 > - The license tiers + user/group taxonomy from [Modules 1–2](../Module-01-Entra-ID-Fundamentals/Reading.md).
 > - Authentication methods + MFA mechanics from [Module 3](../Module-03-Authentication/Reading.md) (CA is what *targets* and *requires* those methods).
-> - Risk-based decisions and zero-trust framing — [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
+> - Risk-based decisions and zero-trust framing, [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md).
 
 ---
 
@@ -18,13 +18,13 @@ Friday afternoon, 4:45 PM. A junior admin at a 1,800-person logistics company de
 > **Conditions:** Locations → Any location EXCEPT "Office HQ"
 > **Grant:** Block access
 
-She clicks Save. The policy goes live immediately. The "Office HQ" named location was last updated in 2019 — the company moved offices in 2022. Within 90 seconds, **every employee is blocked from email**. The on-call admin is at her daughter's soccer game in a park 30 miles from the (old) office. Her sign-in is blocked. Her boss's sign-in is blocked. The CIO is blocked. The break-glass account, which had been deleted six months earlier "for security," is gone. The tenant is sealed.
+She clicks Save. The policy goes live immediately. The "Office HQ" named location was last updated in 2019, the company moved offices in 2022. Within 90 seconds, **every employee is blocked from email**. The on-call admin is at her daughter's soccer game in a park 30 miles from the (old) office. Her sign-in is blocked. Her boss's sign-in is blocked. The CIO is blocked. The break-glass account, which had been deleted six months earlier "for security," is gone. The tenant is sealed.
 
 It takes 11 hours (a Microsoft support call routed through three regions, eventually escalated to engineering) to unblock the tenant. Total cost: ~$280K in lost productivity, one resignation, and a CA policy review board that has met every Friday at 9 AM since.
 
 What went wrong was not Conditional Access. CA is fine. What went wrong was: (1) no break-glass account exclusion, (2) no report-only test, (3) no peer-review on the policy, (4) no understanding of how named locations age. Every one of these is exactly what SC-300 tests.
 
-This module is the right way to use Conditional Access — and what Identity Protection adds when you bring P2 to the party.
+This module is the right way to use Conditional Access, and what Identity Protection adds when you bring P2 to the party.
 
 ---
 
@@ -39,8 +39,8 @@ THEN [apply Grant controls + Session controls]
 
 | Component | What goes here |
 |-----------|----------------|
-| **Assignments — Users** | Include / Exclude: All users, groups, directory roles, external users, specific users |
-| **Assignments — Target resources** | Include / Exclude: All cloud apps, specific apps, authentication context, user actions (register security info, register or join devices) |
+| **Assignments, Users** | Include / Exclude: All users, groups, directory roles, external users, specific users |
+| **Assignments, Target resources** | Include / Exclude: All cloud apps, specific apps, authentication context, user actions (register security info, register or join devices) |
 | **Conditions** | User risk, sign-in risk, device platform (iOS, Android, Windows, macOS, Linux), location (named loc / country / IP), client app (browser, modern auth client, legacy auth), filter for devices, authentication flow (transfer methods like device code) |
 | **Grant** | Block OR Grant with one or more of: MFA, Authentication strength, compliant device, Hybrid Entra Joined device, approved client app, app protection policy, password change, Terms of Use, Custom controls. Operator: AND/OR. |
 | **Session** | Application-enforced restrictions, app-enforced restrictions via Defender for Cloud Apps, Sign-in frequency, Persistent browser session, Customize CAE, disable resilience defaults |
@@ -70,7 +70,7 @@ Microsoft publishes 14+ **Conditional Access templates** in the portal (Entra po
 | **Block sign-in for high-risk users** | Identity Protection escalation |
 | **Require security info registration** | Funnel new users through combined registration |
 
-🚨 **Exam trap:** "Require MFA for All cloud apps + All users" is the wrong default. It will hit service accounts, automation, and break-glass — all of which need exclusions. Always start with **Admins only**, then expand.
+🚨 **Exam trap:** "Require MFA for All cloud apps + All users" is the wrong default. It will hit service accounts, automation, and break-glass, all of which need exclusions. Always start with **Admins only**, then expand.
 
 ---
 
@@ -117,7 +117,7 @@ Named Location: "Permitted Countries"
   Countries: US, CA, MX, GB
 ```
 
-🎯 **Exam tip:** Marking a location as **trusted** has effects beyond CA — it influences risk scoring in Identity Protection (sign-ins from trusted IPs are weighted lower-risk).
+🎯 **Exam tip:** Marking a location as **trusted** has effects beyond CA, it influences risk scoring in Identity Protection (sign-ins from trusted IPs are weighted lower-risk).
 
 ---
 
@@ -131,10 +131,10 @@ A CA policy can be in one of three states:
 | **Off** | Disabled |
 | **Report-only** | Evaluated and logged, but NOT enforced |
 
-**Report-only is the right place to start every new policy.** It lets you see in sign-in logs what would have happened — without locking anyone out. After 1–2 weeks of clean logs, switch to On.
+**Report-only is the right place to start every new policy.** It lets you see in sign-in logs what would have happened, without locking anyone out. After 1–2 weeks of clean logs, switch to On.
 
 ```kql
-// KQL — see what your report-only policies would have done
+// KQL, see what your report-only policies would have done
 SigninLogs
 | where TimeGenerated > ago(7d)
 | mv-expand ConditionalAccessPolicies
@@ -164,11 +164,11 @@ Two cloud-only Global Administrators, kept as insurance:
 | Excluded from EVERY CA policy | A misconfigured CA must not seal the tenant |
 | Password is long, random, and split between 2 vaults | No single person can use it alone |
 | MFA is FIDO2 only (or hardware OATH) | Not phone-dependent |
-| Sign-in is monitored — every use triggers an alert | Use should be rare; alert validates intent |
+| Sign-in is monitored, every use triggers an alert | Use should be rare; alert validates intent |
 | Quarterly test: sign in with break-glass | Validate it still works |
 
 ```kql
-// KQL — alert on break-glass account sign-in
+// KQL, alert on break-glass account sign-in
 SigninLogs
 | where UserPrincipalName in ("breakglass1@contoso.com", "breakglass2@contoso.com")
 | project TimeGenerated, UserPrincipalName, IPAddress, Location, ResultType
@@ -234,7 +234,7 @@ When a user hits a risky sign-in policy:
 2. **Pass:** Risk is dismissed by Microsoft (it learns the user is the real owner).
 3. **Fail:** Risk persists; admin can investigate in the Risky users + Risky sign-ins reports.
 
-This is why **automated remediation matters** — it lets the user fix the problem themselves at the cost of an MFA prompt, rather than a help-desk ticket.
+This is why **automated remediation matters**, it lets the user fix the problem themselves at the cost of an MFA prompt, rather than a help-desk ticket.
 
 ---
 
@@ -247,7 +247,7 @@ This is why **automated remediation matters** — it lets the user fix the probl
 | **Risk detections** | Individual detection events (the underlying signals) |
 
 ```kql
-// KQL — top users by risk events in last 7 days
+// KQL, top users by risk events in last 7 days
 SigninLogs
 | where TimeGenerated > ago(7d)
 | where RiskLevelDuringSignIn != "none"
@@ -260,7 +260,7 @@ SigninLogs
 
 ## 🧮 Authentication Context
 
-A relatively newer feature: tag specific application resources with an **authentication context** (e.g. "Confidential-Data") so CA policies can target them specifically — even when the same app has both confidential and non-confidential surfaces.
+A relatively newer feature: tag specific application resources with an **authentication context** (e.g. "Confidential-Data") so CA policies can target them specifically, even when the same app has both confidential and non-confidential surfaces.
 
 ```text
 Authentication Context "C1: Confidential Financial Data"
@@ -302,9 +302,9 @@ The correct order:
 1. ✅ **Create 2 cloud-only break-glass GAs** (if not already done); register FIDO2.
 2. ✅ Inventory current legacy-auth use via **Sign-in logs filter by "Client app = Legacy auth"**.
 3. ✅ **Notify service-account owners** about upcoming legacy-auth block + give migration window.
-4. ✅ Build CA policy **"Block legacy auth"** — All users, All apps, exclude break-glass, condition Client apps = Exchange ActiveSync + Other clients, Grant = Block. **Report-only.**
-5. ✅ Build CA policy **"Require MFA for admins"** — Include all directory roles (or specific high-privilege roles), exclude break-glass, Grant = require MFA. **Report-only.**
-6. ✅ Use **What If** tool to validate against the break-glass UPN — confirm no MFA / no block applies.
+4. ✅ Build CA policy **"Block legacy auth"**, All users, All apps, exclude break-glass, condition Client apps = Exchange ActiveSync + Other clients, Grant = Block. **Report-only.**
+5. ✅ Build CA policy **"Require MFA for admins"**, Include all directory roles (or specific high-privilege roles), exclude break-glass, Grant = require MFA. **Report-only.**
+6. ✅ Use **What If** tool to validate against the break-glass UPN, confirm no MFA / no block applies.
 7. ✅ Monitor report-only sign-in logs for 1 week (KQL summarize by policy + result).
 8. ✅ Switch **"Block legacy auth"** to On.
 9. ✅ Switch **"Require MFA for admins"** to On.
@@ -360,7 +360,7 @@ You now know:
 
 ---
 
-## 📊 Case Study — The Capital One Conditional Access Refactor (2023)
+## 📊 Case Study, The Capital One Conditional Access Refactor (2023)
 
 **Situation.** Capital One, ~50,000 employees, operates one of the largest Entra tenants in financial services. By early 2023 their CA estate had drifted: **312 active policies**, accumulated over 7 years by 12 different security teams. A 2023 internal audit found:
 
@@ -383,11 +383,11 @@ You now know:
 - Number of credential-related incidents that escalated past tier-1 SOC: **down 41%** year-over-year (attributed partly to cleaner policies, partly to enforcing report-only policies that had been parked).
 - Zero accidental tenant lockouts during the consolidation period (vs 3 in the previous 18 months).
 
-**Lesson for the exam / for practitioners.** Conditional Access is not a "set once, forget" feature. It is a living policy estate that requires the same engineering rigor as software — peer review, deprecation, monitoring, owners. SC-300 scenarios about "the CA estate is messy, what do we do" almost always answer with: **inventory + consolidate + standardize + peer review + monitor**. Microsoft's own playbook (Microsoft Cybersecurity Reference Architectures, MCRA) prescribes this exact lifecycle.
+**Lesson for the exam / for practitioners.** Conditional Access is not a "set once, forget" feature. It is a living policy estate that requires the same engineering rigor as software, peer review, deprecation, monitoring, owners. SC-300 scenarios about "the CA estate is messy, what do we do" almost always answer with: **inventory + consolidate + standardize + peer review + monitor**. Microsoft's own playbook (Microsoft Cybersecurity Reference Architectures, MCRA) prescribes this exact lifecycle.
 
 **Discussion (Socratic).**
 - **Q1.** Capital One reduced 312 → 96 policies. Is "fewer = better" always right? Build the case for keeping 312 specialized policies; what does a 96-policy estate lose that 312 provided?
-- **Q2.** Capital One mandated peer review on every CA policy change. What's the right approver — Security team only, IT operations only, or both? What about emergency policies (e.g. "block sign-in from a country during an active incident")?
+- **Q2.** Capital One mandated peer review on every CA policy change. What's the right approver, Security team only, IT operations only, or both? What about emergency policies (e.g. "block sign-in from a country during an active incident")?
 - **Q3.** A regulated firm in Europe asks: "Capital One is US-only; how would GDPR change this model?" Specifically address (a) using country location in policy decisions, (b) sign-in log retention, (c) Identity Protection data residency.
 
 ---
@@ -395,17 +395,17 @@ You now know:
 > **Where this leads.**
 > - Inside this course: Module 5 builds the app side of what these CA policies target; Module 6 layers PIM activation MFA (which is a CA-style flow); Module 8 wires sign-in logs to Sentinel.
 > - Cross-course: [`09-CompTIA-Security-Plus` Module 7](../../09-CompTIA-Security-Plus/Module-07-Endpoint-Mobile-Cloud-Security/Reading.md) covers SOC integration with CA.
-> - Practice: Practice Exam 1 has 8–10 questions from this module — the highest single-module weight.
+> - Practice: Practice Exam 1 has 8–10 questions from this module, the highest single-module weight.
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **The 99% claim.** Microsoft says ~99% of identity attacks are stopped by basic CA. What about the other 1%? Identify the attacker classes and techniques that *do* defeat MFA + CA, and what Module 4 + 8 controls address each.
 2. **Report-only forever.** Capital One found 23 policies in report-only for >12 months. Is parked report-only fundamentally different from a disabled policy? When does a long-running report-only policy *actively harm* security?
 3. **Geo-blocking ethics.** "Block sign-in from outside trusted countries" is a popular CA. Argue both sides: when does it actually reduce risk vs when does it inconvenience legitimate users (traveling staff, remote contractors)?
 4. **Trusted location vs always-MFA.** Two camps: (a) MFA is always required (no trusted-location bypass); (b) trusted IPs can skip MFA because they imply physical security. Build the case for each in 2026, with reference to remote work and assume-breach.
-5. **User risk vs sign-in risk.** Microsoft's two policies feel redundant. Walk through scenarios where one fires and the other doesn't — what's the diagnostic value of having both vs collapsing them into one risk-based policy?
+5. **User risk vs sign-in risk.** Microsoft's two policies feel redundant. Walk through scenarios where one fires and the other doesn't, what's the diagnostic value of having both vs collapsing them into one risk-based policy?
 
 ---
 
@@ -417,5 +417,5 @@ You now know:
 - 📖 [Continuous Access Evaluation](https://learn.microsoft.com/entra/identity/conditional-access/concept-continuous-access-evaluation)
 - 📖 [What If tool](https://learn.microsoft.com/entra/identity/conditional-access/what-if-tool)
 - 📖 [Authentication strengths](https://learn.microsoft.com/entra/identity/authentication/concept-authentication-strengths)
-- 📖 Microsoft Digital Defense Report 2024 — annual attacker-trend data justifying CA design choices.
-- 📖 NIST SP 800-63B (Digital Identity Guidelines) — authoritative source for AAL2 / AAL3 used by US regulated sectors.
+- 📖 Microsoft Digital Defense Report 2024, annual attacker-trend data justifying CA design choices.
+- 📖 NIST SP 800-63B (Digital Identity Guidelines), authoritative source for AAL2 / AAL3 used by US regulated sectors.

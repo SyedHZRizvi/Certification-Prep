@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">CRO Framework — The 4-Stage Cycle</p>
+      <p class="vg-title">CRO Framework, The 4-Stage Cycle</p>
       <p class="vg-creator">Peep Laja (CXL / Wynter)</p>
       <span class="vg-duration">⏱ 18 min · Observe → Test → Iterate</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Hotjar + Microsoft Clarity — Heatmaps 101</p>
+      <p class="vg-title">Hotjar + Microsoft Clarity, Heatmaps 101</p>
       <p class="vg-creator">Hotjar + various</p>
       <span class="vg-duration">⏱ 14 min · The watch-real-users workflow</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Mutiny — B2B Website Personalization</p>
+      <p class="vg-title">Mutiny, B2B Website Personalization</p>
       <p class="vg-creator">Mutiny + Jaleh Rezaei talks</p>
       <span class="vg-duration">⏱ 15 min · Reverse-IP personalization</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Unbounce Smart Traffic — AI Variant Routing</p>
+      <p class="vg-title">Unbounce Smart Traffic, AI Variant Routing</p>
       <p class="vg-creator">Unbounce</p>
       <span class="vg-duration">⏱ 12 min · ML-based personalization</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Dynamic Yield — Ecom Personalization</p>
+      <p class="vg-title">Dynamic Yield, Ecom Personalization</p>
       <p class="vg-creator">Dynamic Yield + Shopify Magnify</p>
       <span class="vg-duration">⏱ 16 min · Product recommendations</span>
     </div>

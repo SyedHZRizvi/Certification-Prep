@@ -31,7 +31,7 @@
 
 ---
 
-## 📡 Route 53 — 7 Routing Policies
+## 📡 Route 53, 7 Routing Policies
 
 | Policy | Use case |
 |--------|----------|
@@ -66,7 +66,7 @@ CloudFront vs Global Accelerator:
 | **ALB** | 7 (HTTP) | Web, microservices, path/host routing |
 | **NLB** | 4 (TCP/UDP) | Ultra-low latency, M req/sec, static IP |
 | **GWLB** | 3 (IP) | Insert 3rd-party firewalls / IDS |
-| **CLB** | 4/7 | Legacy — avoid |
+| **CLB** | 4/7 | Legacy, avoid |
 
 ---
 
@@ -139,7 +139,7 @@ Wrong:
 
 ## ✏️ Quick Self-Check
 
-1. SG vs NACL — 3 differences? ___
+1. SG vs NACL, 3 differences? ___
 2. 7 Route 53 routing policies? ___
 3. ALB vs NLB vs GWLB layer? ___
 4. CloudFront vs Global Accelerator? ___

@@ -7,7 +7,7 @@
 | Property | Definition | Animation Impact |
 |----------|-----------|-----------------|
 | **Hue** | The color name (red, blue, green) | Character identity, emotional association |
-| **Value** | Lightness/darkness | Readability, contrast, depth — MOST IMPORTANT |
+| **Value** | Lightness/darkness | Readability, contrast, depth, MOST IMPORTANT |
 | **Saturation** | Intensity/purity | Emotional volume: high = energy, low = fatigue |
 
 **Pixar Rule:** Value first. Compositions that work in grayscale work in color.
@@ -86,7 +86,7 @@ Energy · Youth · Fantasy · Joy      Realism · Age · Grief · Fatigue
 |-------------|-------------|
 | Hue is most important for readability | Value is most important; similar values can't be distinguished |
 | Saturation always = quality | Low saturation communicates grief/realism; neither is better |
-| Warm = advancing is wrong | Correct — warm colors advance; cool colors recede |
+| Warm = advancing is wrong | Correct, warm colors advance; cool colors recede |
 | Monochromatic = boring | Monochromatic = unity and restriction; powerful when intentional |
 | Chromatic aberration = mistake | In Spider-Verse, it is a deliberate stylistic storytelling tool |
 | Rule of thirds = mandatory | It is a guide that can be subverted intentionally (Miyazaki centering) |
@@ -125,7 +125,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

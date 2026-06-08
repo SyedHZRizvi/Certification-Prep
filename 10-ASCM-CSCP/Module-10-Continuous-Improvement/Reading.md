@@ -3,9 +3,9 @@
 > **Why this module matters:** Domain 4 ("Improvements and Best Practices") is 15% of the CSCP. Expect dense vocabulary on Lean, Six Sigma DMAIC, TOC, Kaizen, balanced scorecard, and the supply-chain KPIs that appear across every other domain. Master this and the rest of the exam stops feeling random.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [JIT, Kanban, and lean inventory](../Module-05-Inventory-Capacity/Reading.md) — Module 5
-> - [Drum-Buffer-Rope and TOC preview](../Module-04-Supply-Planning-SOP/Reading.md) — Module 4
-> - [SCOR Performance attributes and KPIs](../Module-01-SCM-Foundations-Strategy/Reading.md) — Module 1
+> - [JIT, Kanban, and lean inventory](../Module-05-Inventory-Capacity/Reading.md), Module 5
+> - [Drum-Buffer-Rope and TOC preview](../Module-04-Supply-Planning-SOP/Reading.md), Module 4
+> - [SCOR Performance attributes and KPIs](../Module-01-SCM-Foundations-Strategy/Reading.md), Module 1
 > - Basic project management vocabulary (charter, scope, deliverables)
 > This module is also a strong primer for the **CSSGB / CSSBB (Six Sigma)** certification path.
 
@@ -15,9 +15,9 @@
 
 Akiko runs operations at **Sunrise Bakers**, a 220-person bread plant that supplies 18 grocery chains. In 2019 their on-time delivery hovered at 81%, scrap rate at 4.3%, and customer complaints were creeping up. The CEO threatened to bring in a $400K consulting firm.
 
-Akiko's plant manager pushed back: "Give us 90 days and $20K." He gathered 16 cross-functional staff, ran a **value stream mapping (VSM)** workshop with sticky notes on butcher paper, and identified 31 forms of waste. They picked the top 7 — staged ingredients waiting 6 hours, oven changeover taking 47 minutes, packaging line bottleneck because of slow labeler.
+Akiko's plant manager pushed back: "Give us 90 days and $20K." He gathered 16 cross-functional staff, ran a **value stream mapping (VSM)** workshop with sticky notes on butcher paper, and identified 31 forms of waste. They picked the top 7, staged ingredients waiting 6 hours, oven changeover taking 47 minutes, packaging line bottleneck because of slow labeler.
 
-Each improvement was an **A3** — one page describing problem, current state, target, root cause analysis, countermeasures, and check plan. Six months later:
+Each improvement was an **A3**, one page describing problem, current state, target, root cause analysis, countermeasures, and check plan. Six months later:
 
 - On-time delivery 81% → 96%
 - Scrap 4.3% → 1.8%
@@ -66,11 +66,11 @@ Taiichi Ohno's seven wastes (TIMWOOD) form the bedrock of Lean. Some versions ad
 
 ## 🧭 Lean's 5 Principles (Womack & Jones)
 
-1. **Value** — Define from the customer's perspective
-2. **Value stream** — Map every step that creates / doesn't create value
-3. **Flow** — Make value-creating steps flow without interruption
-4. **Pull** — Let the customer pull from upstream as needed
-5. **Perfection** — Continuously refine; chase ideal
+1. **Value**, Define from the customer's perspective
+2. **Value stream**, Map every step that creates / doesn't create value
+3. **Flow**, Make value-creating steps flow without interruption
+4. **Pull**, Let the customer pull from upstream as needed
+5. **Perfection**, Continuously refine; chase ideal
 
 ---
 
@@ -83,7 +83,7 @@ Taiichi Ohno's seven wastes (TIMWOOD) form the bedrock of Lean. Some versions ad
 | **Kanban** | Visual pull signal |
 | **Heijunka** | Production leveling |
 | **Andon** | Visual signal for problem at the line |
-| **Jidoka** | "Autonomation" — stop the line on defect |
+| **Jidoka** | "Autonomation", stop the line on defect |
 | **SMED** | Single-Minute Exchange of Die (quick changeover) |
 | **Poka-yoke** | Mistake-proofing |
 | **A3** | One-page problem-solving template |
@@ -95,9 +95,9 @@ Taiichi Ohno's seven wastes (TIMWOOD) form the bedrock of Lean. Some versions ad
 
 ## 🎯 Six Sigma & DMAIC
 
-Six Sigma reduces process variability to **3.4 defects per million opportunities** (DPMO) — i.e., process capability of 6 sigma standard deviations from spec.
+Six Sigma reduces process variability to **3.4 defects per million opportunities** (DPMO), i.e., process capability of 6 sigma standard deviations from spec.
 
-### The 5 phases — DMAIC
+### The 5 phases, DMAIC
 
 ```
    Define → Measure → Analyze → Improve → Control
@@ -112,7 +112,7 @@ Six Sigma reduces process variability to **3.4 defects per million opportunities
 | **Control** | Sustain gains | Control charts, control plan, training |
 
 ### DMADV (for design)
-Define → Measure → Analyze → Design → Verify. Used to design new processes / products (Design for Six Sigma — DFSS).
+Define → Measure → Analyze → Design → Verify. Used to design new processes / products (Design for Six Sigma, DFSS).
 
 ### Six Sigma belts
 
@@ -126,7 +126,7 @@ Define → Measure → Analyze → Design → Verify. Used to design new process
 
 ---
 
-## 🪜 Quality Tools — The Old 7 + New 7
+## 🪜 Quality Tools, The Old 7 + New 7
 
 ### Classic 7 quality tools (Ishikawa)
 
@@ -154,7 +154,7 @@ Define → Measure → Analyze → Design → Verify. Used to design new process
 
 ## ⛓️ Theory of Constraints (TOC)
 
-**Eliyahu M. Goldratt and Jeff Cox, *The Goal: A Process of Ongoing Improvement*** (North River Press, 1984; 4th edition 2014). Goldratt was an Israeli physicist who applied scientific-method thinking to operations. TOC says throughput is set by the **constraint** (bottleneck) — every other resource has slack.
+**Eliyahu M. Goldratt and Jeff Cox, *The Goal: A Process of Ongoing Improvement*** (North River Press, 1984; 4th edition 2014). Goldratt was an Israeli physicist who applied scientific-method thinking to operations. TOC says throughput is set by the **constraint** (bottleneck), every other resource has slack.
 
 ### The 5 focusing steps
 
@@ -162,7 +162,7 @@ Define → Measure → Analyze → Design → Verify. Used to design new process
 2. **Exploit** it (squeeze max from it without investment)
 3. **Subordinate** everything else to it
 4. **Elevate** the constraint (invest if needed)
-5. **Repeat** — find the next constraint
+5. **Repeat**, find the next constraint
 
 ### Throughput accounting (TOC's financial metrics)
 
@@ -194,13 +194,13 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 - **Plan** the change
 - **Do** it small / pilot
 - **Check / Study** results
-- **Act** — standardize or revise
+- **Act**, standardize or revise
 
 ---
 
 ## 📊 Balanced Scorecard (Kaplan & Norton, 1992)
 
-**Robert S. Kaplan and David P. Norton, *"The Balanced Scorecard — Measures That Drive Performance"*** (Harvard Business Review, January-February 1992 — Harvard Business School). Their book *The Balanced Scorecard: Translating Strategy into Action* (HBS Press, 1996) became the canonical reference. Translate strategy into operational measures across **four perspectives**:
+**Robert S. Kaplan and David P. Norton, *"The Balanced Scorecard Measures That Drive Performance"*** (Harvard Business Review, January-February 1992 Harvard Business School). Their book *The Balanced Scorecard: Translating Strategy into Action* (HBS Press, 1996) became the canonical reference. Translate strategy into operational measures across **four perspectives**:
 
 | Perspective | Sample Metric |
 |-------------|---------------|
@@ -247,7 +247,7 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 
 ## 🚀 Business Process Reengineering (BPR)
 
-**Michael Hammer and James Champy, *Reengineering the Corporation: A Manifesto for Business Revolution*** (Harper Business, 1993; revised 2003 — Hammer was an MIT computer science professor turned consultant). Radical, top-down redesign of entire processes for breakthrough improvement (vs. Kaizen's incremental approach).
+**Michael Hammer and James Champy, *Reengineering the Corporation: A Manifesto for Business Revolution*** (Harper Business, 1993; revised 2003, Hammer was an MIT computer science professor turned consultant). Radical, top-down redesign of entire processes for breakthrough improvement (vs. Kaizen's incremental approach).
 
 | Dimension | Kaizen | BPR |
 |-----------|--------|-----|
@@ -291,15 +291,15 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 
 ---
 
-## 📊 Case Study — Walmart RFID Mandates (2003-2008, and 2022-2024 Second Wave)
+## 📊 Case Study, Walmart RFID Mandates (2003-2008, and 2022-2024 Second Wave)
 
 **Situation.** In June 2003, Walmart (Bentonville, AR) issued an unprecedented supplier mandate: the **top 100 suppliers** must put RFID tags on case + pallet shipments to designated Walmart DCs by January 2005. The supplier list (Procter & Gamble, Coca-Cola, Unilever, Kraft, Gillette, Johnson & Johnson, etc.) was forced into a $2-9M-per-supplier investment in RFID tag readers, middleware, ERP integration, and tag procurement. Walmart's stated goal: real-time inventory visibility, reduced stockouts, accelerated continuous improvement (DMAIC cycle on inventory accuracy). The case became a famous "supplier-extortion or strategic-improvement" debate in operations academia.
 
-**Decision.** Walmart's CIO Linda Dillman led the program. The continuous-improvement scaffolding was DMAIC: **Define** the inventory-accuracy problem (Walmart was losing ~$2B/year to invisible inventory + stockouts), **Measure** with pre-RFID baselines, **Analyze** root causes (mis-shelving, theft, supplier shipment errors), **Improve** via RFID tagging + Walmart's Retail Link analytics, **Control** via supplier compliance scorecards. Walmart published OTIF / fill-rate KPIs supplier-by-supplier; non-compliant suppliers paid fines and lost shelf space. Supplier reaction: P&G largely supported (already RFID-experimenting), but mid-tier suppliers like Tyson Foods balked at cost vs benefit math. RFID tags in 2003 were $0.30-1.00 each — economically infeasible at SKU level.
+**Decision.** Walmart's CIO Linda Dillman led the program. The continuous-improvement scaffolding was DMAIC: **Define** the inventory-accuracy problem (Walmart was losing ~$2B/year to invisible inventory + stockouts), **Measure** with pre-RFID baselines, **Analyze** root causes (mis-shelving, theft, supplier shipment errors), **Improve** via RFID tagging + Walmart's Retail Link analytics, **Control** via supplier compliance scorecards. Walmart published OTIF / fill-rate KPIs supplier-by-supplier; non-compliant suppliers paid fines and lost shelf space. Supplier reaction: P&G largely supported (already RFID-experimenting), but mid-tier suppliers like Tyson Foods balked at cost vs benefit math. RFID tags in 2003 were $0.30-1.00 each, economically infeasible at SKU level.
 
-**Outcome.** Wave 1 (2003-2008) results were mixed. Walmart's pilot DCs showed 16-30% reduction in stockouts and 50% faster inventory cycles per a 2007 University of Arkansas RFID Research Center study. But the program plateaued: tag costs didn't fall fast enough, scanner read accuracy in real warehouses hit 70-85% (not the lab 99%), and mid-tier suppliers passed costs to Walmart via price negotiations. By 2008-2010, Walmart de-emphasized the mandate (without admitting failure). **Wave 2 (2022-2024)**: with RFID tag costs at $0.04-0.08 (Avery Dennison, Impinj), Walmart re-launched the program — September 2022 announced expanded RFID requirements to broader categories (men's apparel, home goods, electronics by 2024). This time it's economically viable. Walmart's 2024 stockout reduction targets and digital-shelf accuracy targets are RFID-anchored. The case is now studied as both a **DMAIC implementation** and a **technology adoption with TOC constraint identification** (constraint shifted from "do we have visibility?" to "is technology affordable?").
+**Outcome.** Wave 1 (2003-2008) results were mixed. Walmart's pilot DCs showed 16-30% reduction in stockouts and 50% faster inventory cycles per a 2007 University of Arkansas RFID Research Center study. But the program plateaued: tag costs didn't fall fast enough, scanner read accuracy in real warehouses hit 70-85% (not the lab 99%), and mid-tier suppliers passed costs to Walmart via price negotiations. By 2008-2010, Walmart de-emphasized the mandate (without admitting failure). **Wave 2 (2022-2024)**: with RFID tag costs at $0.04-0.08 (Avery Dennison, Impinj), Walmart re-launched the program, September 2022 announced expanded RFID requirements to broader categories (men's apparel, home goods, electronics by 2024). This time it's economically viable. Walmart's 2024 stockout reduction targets and digital-shelf accuracy targets are RFID-anchored. The case is now studied as both a **DMAIC implementation** and a **technology adoption with TOC constraint identification** (constraint shifted from "do we have visibility?" to "is technology affordable?").
 
-**Lesson for the exam / for practitioners.** Wave 1 illustrates the DMAIC framework working but bumping against a TOC constraint (technology cost). Wave 2 illustrates Goldratt's "Repeat" step — elevate the constraint, find the next one. On the exam, expect: "What CI methodology drives supplier scorecard improvement?" Answer: DMAIC + Balanced Scorecard. "What's the role of a Master Black Belt in a multi-supplier program like Walmart RFID?" Answer: cross-supplier program leadership, mentoring Green/Black Belts in suppliers, standardizing the measurement system. The case also illustrates **OEE-style measurement at the supply chain level** — Walmart effectively created an "OTIF-RFID-accuracy × supplier-compliance × consumer-availability" multi-factor KPI.
+**Lesson for the exam / for practitioners.** Wave 1 illustrates the DMAIC framework working but bumping against a TOC constraint (technology cost). Wave 2 illustrates Goldratt's "Repeat" step elevate the constraint, find the next one. On the exam, expect: "What CI methodology drives supplier scorecard improvement?" Answer: DMAIC + Balanced Scorecard. "What's the role of a Master Black Belt in a multi-supplier program like Walmart RFID?" Answer: cross-supplier program leadership, mentoring Green/Black Belts in suppliers, standardizing the measurement system. The case also illustrates **OEE-style measurement at the supply chain level** Walmart effectively created an "OTIF-RFID-accuracy × supplier-compliance × consumer-availability" multi-factor KPI.
 
 **Discussion (Socratic).**
 - Q1: A mid-cap retailer's CEO wants to copy Walmart's RFID mandate. They have $400M revenue and 200 suppliers (vs Walmart's $560B and 100,000+). What scales and what doesn't from the Walmart playbook, and how would you redesign Wave 2 for a smaller scale?
@@ -316,7 +316,7 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 | "Six Sigma is for manufacturing only" | Works in services, healthcare, finance |
 | "Kaizen is one workshop" | Kaizen is a daily culture, not an event |
 | "TOC requires single bottleneck" | After elevating, another constraint always emerges |
-| "OEE > 100% possible" | No — capped at 100% by definition |
+| "OEE > 100% possible" | No, capped at 100% by definition |
 | "PDCA and PDSA are different" | Deming used PDSA later; functionally similar |
 | "BSC eliminates financials" | BSC adds non-financial; doesn't remove financial |
 | "Industry 4.0 replaces Lean" | Industry 4.0 *accelerates* Lean, doesn't replace it |
@@ -325,14 +325,14 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 
 ## 🚨 Exam Traps
 
-1. **TIMWOOD vs TIMWOODS** — 7 or 8 wastes; both appear.
-2. **DMAIC vs DMADV** — Improving vs designing.
-3. **Pareto vs fishbone** — Pareto ranks; fishbone brainstorms causes.
-4. **OEE = Availability × Performance × Quality** — Memorize.
-5. **TOC 5 focusing steps** — Order matters.
-6. **Kaizen vs BPR** — Incremental vs radical.
-7. **BSC 4 perspectives** — Financial / Customer / Internal Process / Learning & Growth.
-8. **Six Sigma DPMO** — 3.4 defects per million is the headline number.
+1. **TIMWOOD vs TIMWOODS**, 7 or 8 wastes; both appear.
+2. **DMAIC vs DMADV**, Improving vs designing.
+3. **Pareto vs fishbone**, Pareto ranks; fishbone brainstorms causes.
+4. **OEE = Availability × Performance × Quality**, Memorize.
+5. **TOC 5 focusing steps**, Order matters.
+6. **Kaizen vs BPR**, Incremental vs radical.
+7. **BSC 4 perspectives**, Financial / Customer / Internal Process / Learning & Growth.
+8. **Six Sigma DPMO**, 3.4 defects per million is the headline number.
 
 ---
 
@@ -353,7 +353,7 @@ Japanese for "change for the better." Philosophy of continuous small improvement
 | **PDCA / PDSA** | Deming improvement cycle |
 | **TOC 5 focusing steps** | Identify / Exploit / Subordinate / Elevate / Repeat |
 | **Throughput accounting** | T, I, OE metrics |
-| **Balanced scorecard** | Kaplan & Norton — 4 perspectives |
+| **Balanced scorecard** | Kaplan & Norton, 4 perspectives |
 | **Perfect order / OTIF / Fill rate / OEE** | Headline SC KPIs |
 | **CMMI** | Process maturity model |
 | **BPR** | Business Process Reengineering (radical redesign) |
@@ -384,7 +384,7 @@ You now know:
 2. ✏️ [Quiz.md](./Quiz.md)
 3. 📋 [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. 🧪 [Practice Exam 1](../Practice-Exams/Practice-Exam-1.md) (if not already taken) → Practice Exam 2 → Final Mock
-5. 🎯 [Capstone Project](../Capstone-Project.md) — integrate everything you've learned in a CSCO transformation scenario
+5. 🎯 [Capstone Project](../Capstone-Project.md), integrate everything you've learned in a CSCO transformation scenario
 
 ---
 
@@ -395,25 +395,25 @@ You now know:
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 1. **DMAIC vs DMADV in 2024-2026 AI projects.** A firm wants to introduce a generative-AI-augmented S&OP. Is the project DMAIC (improving existing) or DMADV (designing new)? Defend a position and identify the boundary.
-2. **The Six Sigma "diminishing returns" question.** A semiconductor fab hits 5.5σ on a process. Going to 6σ costs $40M. The defects saved are $8M/year. Defend BOTH "continue to 6σ for brand and customer expectation" AND "stop at 5.5σ — invest the $40M elsewhere."
+2. **The Six Sigma "diminishing returns" question.** A semiconductor fab hits 5.5σ on a process. Going to 6σ costs $40M. The defects saved are $8M/year. Defend BOTH "continue to 6σ for brand and customer expectation" AND "stop at 5.5σ, invest the $40M elsewhere."
 3. **Kaizen culture in 2026 hybrid work.** Toyota's Gemba walks assume a co-located shop floor. A SaaS firm's "shop floor" is distributed engineers on Slack. How does Kaizen + 5S + Andon translate to distributed knowledge work? Defend a 2026 model.
 4. **Balanced Scorecard's hidden risk.** Adding non-financial metrics (customer, internal process, L&G) without ruthless prioritization can result in "scorecards with 47 KPIs." How would you trim a bloated BSC, and what's the *minimum number* of KPIs per perspective that's defensible?
-5. **TOC + Lean + Six Sigma — pick one or combine?** Some firms try all three (Lean Six Sigma + TOC). Others pick one. Construct the case for unification AND for purist single-methodology approaches; identify the firm-type where each wins.
+5. **TOC + Lean + Six Sigma, pick one or combine?** Some firms try all three (Lean Six Sigma + TOC). Others pick one. Construct the case for unification AND for purist single-methodology approaches; identify the firm-type where each wins.
 
 ---
 
 ## 📚 Further Reading (Optional)
 
-- 📖 James P. Womack & Daniel T. Jones, *Lean Thinking: Banish Waste and Create Wealth in Your Corporation* — Free Press, 2003
-- 📖 Womack, Jones, & Daniel Roos, *The Machine That Changed the World* — Free Press, 1990 (the founding lean-production study)
-- 📖 Eliyahu M. Goldratt, *The Goal: A Process of Ongoing Improvement* — North River Press, 4e 2014 (TOC original; must-read)
-- 📖 Masaaki Imai, *Kaizen: The Key to Japan's Competitive Success* — McGraw-Hill, 1986
-- 📖 Robert S. Kaplan & David P. Norton, *The Balanced Scorecard: Translating Strategy into Action* — Harvard Business School Press, 1996
-- 📖 Michael Hammer & James Champy, *Reengineering the Corporation: A Manifesto for Business Revolution* — Harper Business, revised 2003
-- 📖 Mikel J. Harry & Richard Schroeder, *Six Sigma: The Breakthrough Management Strategy* — Currency Doubleday, 2000 (Motorola/GE history)
-- 📖 Gene Kim, *The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win* — IT Revolution Press, 5th anniversary ed. 2018 (modern TOC application to IT ops)
+- 📖 James P. Womack & Daniel T. Jones, *Lean Thinking: Banish Waste and Create Wealth in Your Corporation*, Free Press, 2003
+- 📖 Womack, Jones, & Daniel Roos, *The Machine That Changed the World*, Free Press, 1990 (the founding lean-production study)
+- 📖 Eliyahu M. Goldratt, *The Goal: A Process of Ongoing Improvement*, North River Press, 4e 2014 (TOC original; must-read)
+- 📖 Masaaki Imai, *Kaizen: The Key to Japan's Competitive Success*, McGraw-Hill, 1986
+- 📖 Robert S. Kaplan & David P. Norton, *The Balanced Scorecard: Translating Strategy into Action*, Harvard Business School Press, 1996
+- 📖 Michael Hammer & James Champy, *Reengineering the Corporation: A Manifesto for Business Revolution*, Harper Business, revised 2003
+- 📖 Mikel J. Harry & Richard Schroeder, *Six Sigma: The Breakthrough Management Strategy*, Currency Doubleday, 2000 (Motorola/GE history)
+- 📖 Gene Kim, *The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win*, IT Revolution Press, 5th anniversary ed. 2018 (modern TOC application to IT ops)
 - 📖 ASCM CSCP Learning System Module 10
 - 📰 *Quality Progress* (ASQ monthly), *Industrial Engineer* (IISE), *Operations Research Letters*

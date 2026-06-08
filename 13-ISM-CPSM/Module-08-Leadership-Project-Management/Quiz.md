@@ -40,7 +40,7 @@ D. Crisis-mode command
 
 ### Q5. In RACI, the letter A stands for: *(Remember)*
 A. Approved
-B. Accountable (owns the outcome — only one per task)
+B. Accountable (owns the outcome, only one per task)
 C. Adviser
 D. Audited
 
@@ -220,9 +220,9 @@ D. Resign and tell nobody
 ### Q2: **B.** Awareness · Desire · Knowledge · Ability · Reinforcement.
 ### Q3: **A.** Forming · Storming · Norming · Performing · Adjourning.
 ### Q4: **B.** Servant / situational delegating for mature self-directed teams.
-### Q5: **B.** Accountable — only ONE A per task.
+### Q5: **B.** Accountable, only ONE A per task.
 ### Q6: **B.** Manage closely.
-### Q7: **B.** Storming — conflict is normal at this stage.
+### Q7: **B.** Storming, conflict is normal at this stage.
 ### Q8: **B.** Crashing non-critical tasks doesn't shorten the project.
 ### Q9: **B.** Scope · Time · Cost (Quality center).
 ### Q10: **B.** (O + 4M + P) / 6.
@@ -231,7 +231,7 @@ D. Resign and tell nobody
 ### Q13: **A.** SUM = % of addressable spend actively managed.
 ### Q14: **C.** 80%+ is world-class.
 ### Q15: **B.** Servant leader serves the team's needs.
-### Q16: **B.** Build case, social proof, cross-functional engagement — don't unilaterally escalate.
+### Q16: **B.** Build case, social proof, cross-functional engagement, don't unilaterally escalate.
 ### Q17: **B.** SMART KPIs.
 ### Q18: **B.** 5 Whys = root-cause analysis tool.
 ### Q19: **B.** Diagnose ADKAR gap first; intervene precisely.

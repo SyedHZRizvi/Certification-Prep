@@ -97,7 +97,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Savings vs Avoidance — Report Honestly</p>
+      <p class="vg-title">Savings vs Avoidance, Report Honestly</p>
       <p class="vg-creator">ProcureCon</p>
       <span class="vg-duration">⏱ 9 min · How CFOs measure procurement</span>
     </div>

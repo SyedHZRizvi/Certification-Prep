@@ -1,9 +1,9 @@
 # Module 7: Virtual Networks 🕸️
 
-> **Why this module matters:** Networking is 15–20% of the AZ-104 exam, but it shows up *everywhere else* too — every VM, App Service, AKS cluster, and storage account scenario eventually hinges on a VNet decision. Master subnets, peering, endpoints, and gateways here and the next module (Network Security) clicks immediately.
+> **Why this module matters:** Networking is 15–20% of the AZ-104 exam, but it shows up *everywhere else* too, every VM, App Service, AKS cluster, and storage account scenario eventually hinges on a VNet decision. Master subnets, peering, endpoints, and gateways here and the next module (Network Security) clicks immediately.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): subscriptions and regions — VNets are region-scoped.
+> - [Module 1](../Module-01-Subscriptions-Resource-Hierarchy/Reading.md): subscriptions and regions, VNets are region-scoped.
 > - [Module 3](../Module-03-Storage-Accounts-Blobs/Reading.md): private endpoints (introduced briefly there; deepened here).
 > - Networking 101: CIDR notation (`10.0.0.0/16` = 65,536 addresses), private RFC-1918 ranges, what a default gateway is, the DNS lookup flow. If you can read a routing table, you're fine. If "subnet mask" feels foreign, do the *Networking Basics* learning path on Microsoft Learn first.
 >
@@ -13,7 +13,7 @@
 
 ## 🍕 A Story: The Airport That Designed Its Terminals First
 
-Imagine you're building Denver International Airport from scratch. You wouldn't start by buying planes. You'd plan **terminals (subnets)**, **roads between them (peering)**, **secure jet bridges to specific gates (private endpoints)**, **a private corporate hangar wing connected back to HQ by a dedicated road (ExpressRoute)**, and **a public arrivals hall (Internet)** — all *before* anyone parks a single plane.
+Imagine you're building Denver International Airport from scratch. You wouldn't start by buying planes. You'd plan **terminals (subnets)**, **roads between them (peering)**, **secure jet bridges to specific gates (private endpoints)**, **a private corporate hangar wing connected back to HQ by a dedicated road (ExpressRoute)**, and **a public arrivals hall (Internet)**, all *before* anyone parks a single plane.
 
 Azure VNets work the same way. You design the network topology *first*. Resources (VMs, AKS, App Service, etc.) get parked into subnets later. The exam tests whether you can pick the right "airport blueprint" for a scenario:
 
@@ -38,8 +38,8 @@ Rules to memorize:
 
 - A VNet lives in exactly **one region**.
 - A subnet is a portion of the VNet address space (e.g. `10.0.1.0/24`).
-- **Azure reserves 5 IPs per subnet** — `.0` (network), `.1` (default gateway), `.2`, `.3` (DNS), `.255` (broadcast).
-- Default route inside a VNet sends *everything else* to "Internet" — change with a User-Defined Route (UDR).
+- **Azure reserves 5 IPs per subnet**, `.0` (network), `.1` (default gateway), `.2`, `.3` (DNS), `.255` (broadcast).
+- Default route inside a VNet sends *everything else* to "Internet", change with a User-Defined Route (UDR).
 
 ### Create a VNet + 2 subnets
 
@@ -59,7 +59,7 @@ az network vnet subnet create \
     --address-prefix 10.0.2.0/24
 ```
 
-### PowerShell — same thing
+### PowerShell, same thing
 
 ```powershell
 $vnet = New-AzVirtualNetwork -ResourceGroupName rg-net -Name vnet-prod-eus `
@@ -88,7 +88,7 @@ $vnet | Set-AzVirtualNetwork
 
 ## 🔁 VNet Peering
 
-Connect two VNets so resources can talk over the Azure backbone via **private IPs** — without going through a gateway, the internet, or NAT.
+Connect two VNets so resources can talk over the Azure backbone via **private IPs**, without going through a gateway, the internet, or NAT.
 
 | Property | Detail |
 |----------|--------|
@@ -97,7 +97,7 @@ Connect two VNets so resources can talk over the Azure backbone via **private IP
 | Latency | Microsoft backbone (low) |
 | Throughput | Up to the VMs' NIC limits |
 | Cross-tenant peering | ✅ Supported (requires peering from both sides) |
-| Transitive? | ❌ **NOT transitive** — A↔B and B↔C doesn't mean A↔C |
+| Transitive? | ❌ **NOT transitive**, A↔B and B↔C doesn't mean A↔C |
 
 🔥 **Non-transitive peering** is *the* big exam fact. To make A talk to C through B, you need a **hub** (B) with **Azure Firewall / NVA** + **User-Defined Routes (UDRs)** on A and C's subnets.
 
@@ -166,14 +166,14 @@ The canonical enterprise design:
 
 ## 🌍 Service Endpoints
 
-A way to "extend the VNet identity" to specific Azure PaaS services (Storage, SQL, Key Vault, etc.) — allowing those services to **firewall to specific subnets** without internet routing.
+A way to "extend the VNet identity" to specific Azure PaaS services (Storage, SQL, Key Vault, etc.), allowing those services to **firewall to specific subnets** without internet routing.
 
 | Property | Detail |
 |----------|--------|
 | What changes | Traffic from the allowed subnet to the PaaS service routes via Microsoft backbone |
-| Public IP? | The PaaS service still has a public IP — service endpoint just routes optimally |
+| Public IP? | The PaaS service still has a public IP, service endpoint just routes optimally |
 | Cross-region? | The PaaS service can be in any region |
-| Cross-tenant? | Yes — limited resources |
+| Cross-tenant? | Yes, limited resources |
 
 ```bash
 # Enable Microsoft.Storage service endpoint on a subnet
@@ -200,7 +200,7 @@ A **private endpoint** is a NIC in your subnet with a **private IP** that fronts
 | | Service Endpoint | Private Endpoint |
 |---|-------------------|------------------|
 | What it is | A firewall toggle + optimal routing | A real NIC with a private IP |
-| PaaS public IP? | Still exists | Optional — can disable public access |
+| PaaS public IP? | Still exists | Optional, can disable public access |
 | DNS | Same FQDN, public DNS | FQDN resolves to **private IP** (via Private DNS Zone) |
 | Cost | Mostly free | Per-hour per endpoint + data charges |
 | Use when | Lock down a PaaS service to a subnet | Fully private, no public exposure |
@@ -240,7 +240,7 @@ az network private-endpoint dns-zone-group create \
     --zone-name blob
 ```
 
-🔥 **The Private DNS Zone step is the most-skipped one — and the most-broken on the exam.** Without it, the FQDN keeps resolving to the public IP.
+🔥 **The Private DNS Zone step is the most-skipped one, and the most-broken on the exam.** Without it, the FQDN keeps resolving to the public IP.
 
 ---
 
@@ -281,7 +281,7 @@ A **private, dedicated** circuit between on-prem and Microsoft via a connectivit
 | Feature | Detail |
 |---------|--------|
 | Bandwidth | 50 Mbps → 100 Gbps |
-| Peering types | Private (your VNets) · Microsoft (M365, Office, etc.) — public peering deprecated |
+| Peering types | Private (your VNets) · Microsoft (M365, Office, etc.), public peering deprecated |
 | SKU tiers | Local · Standard · Premium |
 | Local | Only the local metro region (cheap) |
 | Standard | Geopolitical region |
@@ -289,7 +289,7 @@ A **private, dedicated** circuit between on-prem and Microsoft via a connectivit
 | Resiliency | Two physical circuits in different POPs (recommended) |
 | **FastPath** | Bypass gateway for ultra-low latency (premium+ feature in newer SKUs) |
 | ExpressRoute Global Reach | Connect two on-prem sites *through Microsoft's backbone* via two ER circuits |
-| ExpressRoute Direct | 10/100 Gbps direct port at a Microsoft edge — no provider |
+| ExpressRoute Direct | 10/100 Gbps direct port at a Microsoft edge, no provider |
 
 ### Site-to-Site + ExpressRoute together
 
@@ -304,13 +304,13 @@ Best practice: **ExpressRoute as primary**, **S2S VPN as backup**. With BGP fail
 | **Basic** | Legacy. Static or dynamic. Not zone-redundant. Being retired Sep 2025. |
 | **Standard** | Recommended. Always static. Supports AZs (zonal or zone-redundant). |
 
-Allocation: **Static** (preferred for prod — IP doesn't change) vs **Dynamic** (Basic only).
+Allocation: **Static** (preferred for prod, IP doesn't change) vs **Dynamic** (Basic only).
 
 ---
 
 ## 🗺️ User-Defined Routes (UDRs)
 
-By default, Azure auto-populates a subnet's route table with "system routes" — direct paths to other subnets in the VNet, the internet, etc. To **override** behavior (e.g. force traffic through a firewall), you create a **route table** with UDRs and associate it with a subnet.
+By default, Azure auto-populates a subnet's route table with "system routes", direct paths to other subnets in the VNet, the internet, etc. To **override** behavior (e.g. force traffic through a firewall), you create a **route table** with UDRs and associate it with a subnet.
 
 ```bash
 # Force all internet-bound traffic from the spoke through the hub firewall
@@ -386,7 +386,7 @@ az network private-dns link vnet create -g rg-net \
 | "Basic VPN supports BGP" | ❌ Route-based VpnGw1+ only |
 | "ExpressRoute traffic goes over the internet" | ❌ Private circuit via provider |
 | "Address spaces can overlap between peered VNets" | ❌ Must be non-overlapping |
-| "I can shrink a subnet by 1 IP after deployment" | ❌ Limited — easiest to plan ahead |
+| "I can shrink a subnet by 1 IP after deployment" | ❌ Limited, easiest to plan ahead |
 | "Azure reserves 3 IPs per subnet" | ❌ Reserves 5 |
 
 ---
@@ -406,7 +406,7 @@ az network private-dns link vnet create -g rg-net \
 | **Route-based vs Policy-based VPN** | Modern (BGP, IKEv2) vs legacy (single tunnel) |
 | **ExpressRoute** | Private dedicated circuit via provider |
 | **ER Global Reach** | Connect two on-prem sites through Microsoft backbone |
-| **UDR** | User-Defined Route — custom next-hop overrides |
+| **UDR** | User-Defined Route, custom next-hop overrides |
 | **Private DNS Zone** | Internal-only DNS, linked to VNets |
 | **DNS Private Resolver** | Managed conditional forwarder for hybrid DNS |
 
@@ -434,17 +434,17 @@ You now know:
 
 ---
 
-## 📊 Case Study — NHS England's Federated Data Platform on Azure (2020–2024)
+## 📊 Case Study, NHS England's Federated Data Platform on Azure (2020–2024)
 
 **Situation.** NHS England operates the largest public-sector healthcare system in Europe (~1.3 million staff, 60+ million patient records, ~£165 billion annual spend). Its data estate spanned 200+ trust hospitals, regional networks, and primary-care systems, each with locally-managed SQL Servers, file shares, and bespoke clinical software. Network connectivity was the bottleneck: every cross-trust analytics request involved a manual data-sharing agreement, a bespoke ETL job, and 6–12 weeks of legal review.
 
-In 2020, COVID forced the issue. Vaccination scheduling, contact tracing, and ICU capacity dashboards all demanded *cross-trust* data in near-real time. NHS England partnered with Microsoft (Palantir provided the Foundry analytics platform on top) for what was eventually announced in 2023 as the **NHS Federated Data Platform (FDP)** — a £330 million, 7-year contract built on Azure.
+In 2020, COVID forced the issue. Vaccination scheduling, contact tracing, and ICU capacity dashboards all demanded *cross-trust* data in near-real time. NHS England partnered with Microsoft (Palantir provided the Foundry analytics platform on top) for what was eventually announced in 2023 as the **NHS Federated Data Platform (FDP)**, a £330 million, 7-year contract built on Azure.
 
 **Decision.** The FDP's network architecture is the canonical *hub-spoke at national scale* exemplar. The published architecture (NHS England, *Federated Data Platform Privacy Impact Assessment*, 2023; *Building Better Healthcare*, *NHS national cloud architecture*, 2024) deploys:
 
-1. **A central "national hub" VNet** in UK South region containing the Azure Firewall Premium, an ExpressRoute Direct gateway (100 Gbps to NHS HSCN — Health and Social Care Network), Azure Bastion for admin access, and Private DNS Zones.
+1. **A central "national hub" VNet** in UK South region containing the Azure Firewall Premium, an ExpressRoute Direct gateway (100 Gbps to NHS HSCN, Health and Social Care Network), Azure Bastion for admin access, and Private DNS Zones.
 2. **Per-region "spoke" VNets** for the seven NHS England regional networks (North East and Yorkshire, North West, Midlands, etc.), each peered to the hub with `--allow-gateway-transit` on the hub and `--use-remote-gateways` on the spokes.
-3. **Per-trust "leaf" VNets** that peer into their regional spoke (not directly to the hub — peering is **not transitive**, so spoke-to-trust traffic forces through the regional Azure Firewall, where audit logs capture every cross-trust query).
+3. **Per-trust "leaf" VNets** that peer into their regional spoke (not directly to the hub, peering is **not transitive**, so spoke-to-trust traffic forces through the regional Azure Firewall, where audit logs capture every cross-trust query).
 4. **Private endpoints for every PaaS service**: Azure SQL, Storage, Key Vault, Azure OpenAI (added in 2024 for clinical-summary pilots). Public network access disabled on all. **Private DNS Zones** linked to the hub VNet so all spokes resolve `privatelink.*.windows.net` to private IPs.
 5. **ExpressRoute Direct + ExpressRoute Global Reach** to connect HSCN tail circuits *and* legacy data centers in Leeds and Exeter via Microsoft's backbone.
 
@@ -454,18 +454,18 @@ Address space planning followed CAF guidance: each region got a `/16`, each trus
 
 - **Cross-trust data requests** that previously took 6–12 weeks moved to ~6 hours for pre-approved query patterns.
 - **First cross-NHS-trust ICU capacity dashboard** went from concept to production in 11 weeks during COVID's Alpha wave.
-- **No documented network-level data exfiltration incident** since GA. (Application-level access disputes remain a political/ethical question, especially around Palantir's role — but that is independent of the Azure network topology, which is the AZ-104-relevant part.)
+- **No documented network-level data exfiltration incident** since GA. (Application-level access disputes remain a political/ethical question, especially around Palantir's role, but that is independent of the Azure network topology, which is the AZ-104-relevant part.)
 
-**Lesson for the exam / for practitioners.** The FDP is hub-spoke as the public-sector textbook — every AZ-104 case-study question that hints at "multinational" or "multi-trust" or "shared services" maps to this design. Three exam-critical mechanics:
+**Lesson for the exam / for practitioners.** The FDP is hub-spoke as the public-sector textbook, every AZ-104 case-study question that hints at "multinational" or "multi-trust" or "shared services" maps to this design. Three exam-critical mechanics:
 
 1. **Peering is non-transitive.** Spoke-to-spoke flows must transit the hub firewall, with **User-Defined Routes** on each spoke forcing `0.0.0.0/0` (and inter-spoke prefixes) to the hub firewall's private IP.
 2. **Gateway transit** lets every spoke share the hub's ExpressRoute / VPN gateway. Toggle pair: hub side `--allow-gateway-transit`, spoke side `--use-remote-gateways`.
 3. **Private DNS Zones** must be linked to the *resolver VNet* (usually the hub), and spokes must use the hub for DNS. Without this, `privatelink.*` FQDNs resolve to public IPs and bypass the private endpoint entirely. This is the #1 silent-failure mode the exam tests.
 
 **Discussion (Socratic).**
-- **Q1.** NHS England chose a 3-level hierarchy (hub → regional spoke → trust leaf) rather than a 2-level (hub → trust). Defend the 3-level design — and identify the operational cost it imposed. At what scale does the regional layer earn its keep, and at what scale is it just hops?
+- **Q1.** NHS England chose a 3-level hierarchy (hub → regional spoke → trust leaf) rather than a 2-level (hub → trust). Defend the 3-level design, and identify the operational cost it imposed. At what scale does the regional layer earn its keep, and at what scale is it just hops?
 - **Q2.** ExpressRoute Direct with 100 Gbps is overkill for many trusts. The FDP uses it anyway. What's the trade-off versus a *fan-in* design (multiple smaller ExpressRoute circuits per region)? When does the cost of ExpressRoute Direct's port reservation justify itself?
-- **Q3.** Private DNS Zones are the most-skipped step in private-endpoint deployments. Why does the *FQDN-resolves-to-public-IP* failure mode often pass internal QA — what's the exam-favorite scenario where it only fails *after* you disable public network access on the PaaS service?
+- **Q3.** Private DNS Zones are the most-skipped step in private-endpoint deployments. Why does the *FQDN-resolves-to-public-IP* failure mode often pass internal QA, what's the exam-favorite scenario where it only fails *after* you disable public network access on the PaaS service?
 
 ---
 
@@ -476,10 +476,10 @@ Address space planning followed CAF guidance: each region got a `/16`, each trus
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
-1. **Address-space planning sins.** A common mistake: somebody picks `10.0.0.0/24` for the first VNet "to keep it small" and three years later the org's address space is a patchwork. Defend a default-CIDR-allocation standard for new tenants. (Hint: CAF recommends a `/16` per landing zone with reserved sub-allocations — argue for or against that bigness.)
-2. **Service endpoint vs. private endpoint — when each wins.** Service endpoints are cheaper and simpler but the PaaS service keeps a public IP. Private endpoints get you a real private IP but cost per hour and require Private DNS Zone management. For a 50-storage-account fleet, when does the operational cost of PE per account exceed its security value?
+1. **Address-space planning sins.** A common mistake: somebody picks `10.0.0.0/24` for the first VNet "to keep it small" and three years later the org's address space is a patchwork. Defend a default-CIDR-allocation standard for new tenants. (Hint: CAF recommends a `/16` per landing zone with reserved sub-allocations, argue for or against that bigness.)
+2. **Service endpoint vs. private endpoint, when each wins.** Service endpoints are cheaper and simpler but the PaaS service keeps a public IP. Private endpoints get you a real private IP but cost per hour and require Private DNS Zone management. For a 50-storage-account fleet, when does the operational cost of PE per account exceed its security value?
 3. **VPN vs. ExpressRoute economics.** ExpressRoute Standard at 1 Gbps via a provider costs $5,000–$15,000/month all-in. A VpnGw5AZ S2S VPN tops at 10 Gbps for ~$700/month. Defend why ExpressRoute is *still* the right answer for a regulated workload. What does the "private circuit, no internet transit" property actually buy you that BGP-failover-paired VPN doesn't?
 4. **Hub-spoke vs. Virtual WAN.** Azure Virtual WAN provides managed hubs with built-in firewall/gateway/Bastion. When does manual hub-spoke beat VWAN, and when has VWAN become the better default? (Hint: it's about who owns the firewall configuration and how many regional hubs you need.)
 5. **DNS-resolution chain for private endpoints.** A VM in a spoke VNet tries to reach `storageacct1.blob.core.windows.net` through a private endpoint defined in the hub. Trace every DNS hop, identify which Private DNS Zone needs which link to which VNet, and explain *exactly* why the failure mode "resolves to the public IP" happens. (This is one of the top-three AZ-104 trick questions.)
@@ -493,5 +493,5 @@ Address space planning followed CAF guidance: each region got a `/16`, each trus
 - 📖 [VPN Gateway SKUs](https://learn.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways)
 - 📖 [ExpressRoute SKUs](https://learn.microsoft.com/azure/expressroute/expressroute-faqs)
 - 📖 [Private endpoints overview](https://learn.microsoft.com/azure/private-link/private-endpoint-overview)
-- 📖 John Savill's *AZ-104 Study Cram* and *Hub-Spoke Deep Dive* on YouTube (2024–2025 revisions) — Microsoft Azure Field CTO; the most-watched practitioner walkthrough of these patterns.
-- 📖 Microsoft *Cloud Adoption Framework — Network topology and connectivity* design area (current revision; checked 2026-05).
+- 📖 John Savill's *AZ-104 Study Cram* and *Hub-Spoke Deep Dive* on YouTube (2024–2025 revisions), Microsoft Azure Field CTO; the most-watched practitioner walkthrough of these patterns.
+- 📖 Microsoft *Cloud Adoption Framework, Network topology and connectivity* design area (current revision; checked 2026-05).

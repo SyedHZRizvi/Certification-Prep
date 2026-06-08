@@ -16,7 +16,7 @@
 
 ---
 
-## 🏠 RFC 1918 Private Ranges — MEMORIZE
+## 🏠 RFC 1918 Private Ranges, MEMORIZE
 
 | Range | CIDR |
 |-------|------|
@@ -24,7 +24,7 @@
 | 172.16.0.0 – 172.31.255.255 | 172.16/12 |
 | 192.168.0.0 – 192.168.255.255 | 192.168/16 |
 
-🧠 "Ten / Twelve / Sixteen" — three numbers, three private blocks.
+🧠 "Ten / Twelve / Sixteen", three numbers, three private blocks.
 
 ---
 
@@ -71,7 +71,7 @@ Mask octet pattern (each = previous + power of 2):
 
 ---
 
-## 🪜 VLSM — Always Allocate Largest First
+## 🪜 VLSM, Always Allocate Largest First
 
 | Hosts needed | Smallest mask | Hosts available |
 |--------------|---------------|-----------------|
@@ -155,7 +155,7 @@ Often **wrong**:
 
 ---
 
-## ✏️ Quick Self-Check (Time Yourself — 90 sec)
+## ✏️ Quick Self-Check (Time Yourself, 90 sec)
 
 Solve in your head:
 

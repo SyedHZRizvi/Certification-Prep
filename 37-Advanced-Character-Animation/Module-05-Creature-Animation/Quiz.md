@@ -13,9 +13,9 @@ D. Gallop
 ---
 
 ### Q2. The gallop's aerial phase (all four feet off the ground) occurs at:
-A. The stretched position — body fully extended  
-B. The gathered (tucked) position — feet brought together beneath the body  
-C. The mid-stride position — halfway between gathered and stretched  
+A. The stretched position, body fully extended  
+B. The gathered (tucked) position, feet brought together beneath the body  
+C. The mid-stride position, halfway between gathered and stretched  
 D. There is no true aerial phase in a gallop  
 
 ---
@@ -37,7 +37,7 @@ D. Crow and raven
 ---
 
 ### Q5. In bird flight, the downstroke generates:
-A. Recovery force only — the upstroke provides thrust  
+A. Recovery force only, the upstroke provides thrust  
 B. Lift and forward thrust simultaneously  
 C. Braking force for landing  
 D. Lateral stabilization but no vertical lift  
@@ -47,7 +47,7 @@ D. Lateral stabilization but no vertical lift
 ### Q6. The "slow blink" used in Toothless's animation was borrowed from:
 A. Labrador Retriever behavior  
 B. Manta ray behavior  
-C. Domestic cat behavior — a signal of trust and contentment  
+C. Domestic cat behavior, a signal of trust and contentment  
 D. Original dragon-specific behavior with no real-world reference  
 
 ---
@@ -103,30 +103,30 @@ D. A three-beat rhythm with one leading foot
 ### Q13. In bird flight, the upstroke is characterized by:
 A. Full wing extension providing maximum lift  
 B. Wings spreading wide for lateral steering  
-C. Wings folding slightly; primary feathers closing — recovery phase with minimal force  
+C. Wings folding slightly; primary feathers closing, recovery phase with minimal force  
 D. Equal and opposite thrust to the downstroke  
 
 ---
 
 ### Q14. Nick Wilde's (fox, *Zootropolis*) behavioral borrowing was primarily from:
 A. Domestic dog behavior  
-B. Crow — side-eye, stillness, head bobs  
-C. Feral cat — crouching, stalking  
-D. Rabbit — quick snaps and forward lean  
+B. Crow, side-eye, stillness, head bobs  
+C. Feral cat, crouching, stalking  
+D. Rabbit, quick snaps and forward lean  
 
 ---
 
 ### Q15. In the tail animation system, which part has the greatest time offset from the body?
-A. The tail base — it moves independently from the spine  
+A. The tail base, it moves independently from the spine  
 B. The tail mid-section  
-C. The tail tip — greatest lag and highest frequency of oscillation  
+C. The tail tip, greatest lag and highest frequency of oscillation  
 D. All tail sections move simultaneously for visual consistency  
 
 ---
 
 ### Q16. Dorsal fin animation (fish) indicates alarm when:
 A. The fin is folded flat against the body  
-B. The fin is raised/erected — a biological alarm/aggression signal  
+B. The fin is raised/erected, a biological alarm/aggression signal  
 C. The fin oscillates at a faster frequency than normal  
 D. The fin changes color (requires shader, not animation)  
 
@@ -142,7 +142,7 @@ D. Maximum speed with no airborne phase
 
 ### Q18. Judy Hopps's (rabbit, *Zootropolis*) ear position was used as:
 A. A purely decorative design element with no animation function  
-B. An emotional indicator — redesigned rabbit ear signaling for bipedal anatomy  
+B. An emotional indicator, redesigned rabbit ear signaling for bipedal anatomy  
 C. A wind direction sensor that determined her movement decisions  
 D. A scale reference for the character relative to larger animals  
 
@@ -165,62 +165,62 @@ D. LH → RH → LF → RF (reverse)
 ---
 
 ### Q21. Bird coverts (body feathers) show significant individual animation:
-A. Always — coverts are the primary expressive element in bird animation  
-B. Rarely — mainly in high-velocity situations like landing or turbulence  
-C. During every downstroke — they flutter with the primary feathers  
-D. Never — coverts are treated as a rigid surface in animation  
+A. Always, coverts are the primary expressive element in bird animation  
+B. Rarely, mainly in high-velocity situations like landing or turbulence  
+C. During every downstroke, they flutter with the primary feathers  
+D. Never, coverts are treated as a rigid surface in animation  
 
 ---
 
 ### Q22. The spine of a galloping horse is, relative to a galloping cat:
-A. More flexible — horses have more spinal mobility  
-B. Relatively rigid — cats have far more dramatic spinal flex contributing to propulsion  
-C. Identical — all galloping mammals have the same spinal flex pattern  
+A. More flexible, horses have more spinal mobility  
+B. Relatively rigid, cats have far more dramatic spinal flex contributing to propulsion  
+C. Identical, all galloping mammals have the same spinal flex pattern  
 D. Cats have rigid spines; horses have flexible spines  
 
 ---
 
 ### Q23. In a quadruped walk, the feet are on the ground in which relationship?
-A. All four simultaneously — no sequential contact  
-B. In pairs — front pair, then rear pair  
-C. All four on different phases — sequentially displaced by approximately 25% of cycle  
-D. One foot at a time — the other three are always airborne  
+A. All four simultaneously, no sequential contact  
+B. In pairs, front pair, then rear pair  
+C. All four on different phases, sequentially displaced by approximately 25% of cycle  
+D. One foot at a time, the other three are always airborne  
 
 ---
 
 ### Q24. An excited quadruped tail vs. a submissive quadruped tail differs primarily in:
-A. Speed — excited tails move faster, submissive tails move slower  
-B. Amplitude — excited = large amplitude; submissive = low amplitude  
-C. Direction — excited tails wag left; submissive tails wag right  
-D. Number of cycles per second — both have the same amplitude  
+A. Speed, excited tails move faster, submissive tails move slower  
+B. Amplitude, excited = large amplitude; submissive = low amplitude  
+C. Direction, excited tails wag left; submissive tails wag right  
+D. Number of cycles per second, both have the same amplitude  
 
 ---
 
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1.  C — Walk: always ≥2 feet on ground; the only gait without airborne phase
-Q2.  B — Gallop aerial at GATHERED position (tucked), not stretched
-Q3.  B — Rotary: RF→LF→RH→LH
-Q4.  B — Cat + Labrador behavioral library for Toothless
-Q5.  B — Downstroke: lift + forward thrust simultaneously
-Q6.  C — Slow blink from domestic cat: trust and contentment signal
-Q7.  B — Wave travels posteriorly (head to tail)
-Q8.  B — Anguilliform: full-body waves (eel)
-Q9.  B — Pectoral fins: steering and braking at slow speeds
-Q10. B — Behavioral library choice: the foundational creature decision
-Q11. B — Creature bible: behavioral vocabulary document for all animators
-Q12. B — Trot: diagonal pairs together
-Q13. C — Upstroke: recovery phase; wings fold; minimal force
-Q14. B — Nick Wilde: crow behavioral borrowing
-Q15. C — Tail tip: greatest lag, highest frequency
-Q16. B — Dorsal fin raised = alarm/aggression
-Q17. B — Canter: 3-beat rhythm, airborne phase, one lead foot
-Q18. B — Judy Hopps: ears as emotional indicator (redesigned for bipedal)
-Q19. A — Anthropomorphic error: forgetting animal morphology for human body language
-Q20. B — Transverse gallop: RF→LF→LH→RH
-Q21. B — Coverts animate mainly in high-velocity situations
-Q22. B — Horse spine relatively rigid; cat spine flexes dramatically
-Q23. C — Walk: sequential displacement ~25% cycle apart
-Q24. B — Tail emotion = amplitude (large=excited; low=submissive)
+Q1.  C, Walk: always ≥2 feet on ground; the only gait without airborne phase
+Q2.  B, Gallop aerial at GATHERED position (tucked), not stretched
+Q3.  B, Rotary: RF→LF→RH→LH
+Q4.  B, Cat + Labrador behavioral library for Toothless
+Q5.  B, Downstroke: lift + forward thrust simultaneously
+Q6.  C, Slow blink from domestic cat: trust and contentment signal
+Q7.  B, Wave travels posteriorly (head to tail)
+Q8.  B, Anguilliform: full-body waves (eel)
+Q9.  B, Pectoral fins: steering and braking at slow speeds
+Q10. B, Behavioral library choice: the foundational creature decision
+Q11. B, Creature bible: behavioral vocabulary document for all animators
+Q12. B, Trot: diagonal pairs together
+Q13. C, Upstroke: recovery phase; wings fold; minimal force
+Q14. B, Nick Wilde: crow behavioral borrowing
+Q15. C, Tail tip: greatest lag, highest frequency
+Q16. B, Dorsal fin raised = alarm/aggression
+Q17. B, Canter: 3-beat rhythm, airborne phase, one lead foot
+Q18. B, Judy Hopps: ears as emotional indicator (redesigned for bipedal)
+Q19. A, Anthropomorphic error: forgetting animal morphology for human body language
+Q20. B, Transverse gallop: RF→LF→LH→RH
+Q21. B, Coverts animate mainly in high-velocity situations
+Q22. B, Horse spine relatively rigid; cat spine flexes dramatically
+Q23. C, Walk: sequential displacement ~25% cycle apart
+Q24. B, Tail emotion = amplitude (large=excited; low=submissive)
 ```

@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">The EU AI Act — What Marketers Need to Know</p>
+      <p class="vg-title">The EU AI Act, What Marketers Need to Know</p>
       <p class="vg-creator">EU policy + legal channels</p>
       <span class="vg-duration">⏱ 14 min · 4 risk tiers + penalties</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Gender Shades — The Bias Study That Changed AI</p>
+      <p class="vg-title">Gender Shades, The Bias Study That Changed AI</p>
       <p class="vg-creator">Joy Buolamwini / MIT Media Lab</p>
       <span class="vg-duration">⏱ 12 min · The canonical bias case</span>
     </div>
@@ -150,7 +150,7 @@ Answer in your notebook (without re-reading):
 
 1. What's GDPR's penalty cap?
 2. EU AI Act's four risk tiers + what marketers usually fall under?
-3. CCPA / CPRA — what triggers applicability?
+3. CCPA / CPRA, what triggers applicability?
 4. Define first-party data + zero-party data.
 5. What did the *Gender Shades* study show?
 

@@ -34,7 +34,7 @@
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS Trainium + Inferentia — Custom AI Silicon</p>
+      <p class="vg-title">AWS Trainium + Inferentia, Custom AI Silicon</p>
       <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 22 min · Cost-optimal training & inference</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🧮</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Mixed Precision — FP16, BF16, FP8 Explained</p>
+      <p class="vg-title">Mixed Precision, FP16, BF16, FP8 Explained</p>
       <p class="vg-creator">NVIDIA Tech / DeepLearningAI</p>
       <span class="vg-duration">⏱ 18 min · Speed up DL with no accuracy loss</span>
     </div>
@@ -129,8 +129,8 @@
 
 1. When pick SMDDP vs SMMP vs both?
 2. Why does multi-node DL training need EFA?
-3. FP16 vs BF16 — when prefer each?
+3. FP16 vs BF16, when prefer each?
 4. Cost-optimal inference for 7B-parameter LLM? Compute family?
-5. Active learning's bias trade-off — when not acceptable?
+5. Active learning's bias trade-off, when not acceptable?
 
 ➡️ [Quiz.md](./Quiz.md)

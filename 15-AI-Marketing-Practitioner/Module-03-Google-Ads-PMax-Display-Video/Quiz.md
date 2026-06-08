@@ -89,7 +89,7 @@ D. CPA only
 
 ### Q11. Final URL Expansion in PMax should typically be: *(Apply)*
 A. ON at launch
-B. OFF initially — keep it off until you trust the algorithm
+B. OFF initially, keep it off until you trust the algorithm
 C. Always ON
 D. Always OFF
 
@@ -210,7 +210,7 @@ D. Apply at campaign level only
 ### Q26. Logo intros (2-second brand-first opens) on YouTube Shorts ads: *(Analyze)*
 A. Improve retention
 B. Have no effect
-C. Kill retention — save brand reveal for the last second
+C. Kill retention, save brand reveal for the last second
 D. Are required by YouTube
 
 ---
@@ -221,13 +221,13 @@ D. Are required by YouTube
 PMax is the all-channels-in-one campaign type. One campaign serves across all six Google surfaces simultaneously.
 
 ### Q2: **B. An ad group (one theme of creative + targeting hint)**
-Asset groups are PMax's version of ad groups. One theme per asset group. Don't put earrings + necklaces in the same asset group — the algorithm needs the thematic separation.
+Asset groups are PMax's version of ad groups. One theme per asset group. Don't put earrings + necklaces in the same asset group, the algorithm needs the thematic separation.
 
 ### Q3: **B. Brand Exclusions**
 Without brand exclusions, PMax bids on your own brand keywords, cannibalizing your brand Search campaign and inflating apparent CAC. Set this on day 0.
 
 ### Q4: **B. A HINT to the algorithm**
-Audience signals tell PMax "people like this convert." PMax can and will serve OUTSIDE the audience signal — it's not a targeting restriction. This is a critical concept difference from old-style campaigns.
+Audience signals tell PMax "people like this convert." PMax can and will serve OUTSIDE the audience signal, it's not a targeting restriction. This is a critical concept difference from old-style campaigns.
 
 ### Q5: **C. 15**
 Same as RSAs: 15 headlines max, 30 chars each. Plus 5 long headlines (90 chars) and 5 descriptions (90 chars).
@@ -248,7 +248,7 @@ Shorts are full-screen vertical, between 6 and 60 seconds, priced on CPM. They c
 In-feed (formerly Discovery) ads are opt-in: they appear, the user clicks to watch, and you pay for that click. Pricing is per click, not per view.
 
 ### Q11: **B. OFF initially**
-Final URL Expansion lets Google send traffic to ANY page on your domain. Leave OFF early — Google sometimes sends traffic to your "About" page or random blog posts. Turn ON only after the algorithm has stabilized.
+Final URL Expansion lets Google send traffic to ANY page on your domain. Leave OFF early, Google sometimes sends traffic to your "About" page or random blog posts. Turn ON only after the algorithm has stabilized.
 
 ### Q12: **C. 30**
 Same 30-conversion rule as Search Smart Bidding. Switch from no-target Max Conv Value to tROAS only after 30+ PMax-attributed conversions in the last 30 days.
@@ -257,7 +257,7 @@ Same 30-conversion rule as Search Smart Bidding. Switch from no-target Max Conv 
 The Insights tab shows what search themes Google has discovered. The Asset Group performance report rates each asset Best / Good / Low. These are the two PMax-specific reports every pro reviews weekly.
 
 ### Q14: **B. Custom keywords + URLs visited**
-Custom Segments let you paste competitor URLs or keywords the user searched. Very powerful — you can essentially "audience-target" competitors.
+Custom Segments let you paste competitor URLs or keywords the user searched. Very powerful, you can essentially "audience-target" competitors.
 
 ### Q15: **C. Hook attention with a question, pattern interrupt, bold claim, demo, or stat in first 3 seconds**
 The 3-second test is about ATTENTION CAPTURE, not just showing the product. Five hook patterns work: question, pattern interrupt, bold claim, demo, stat.
@@ -269,10 +269,10 @@ The empirically-tested structure: hook (0–3s), demonstrate (3–10s), proof (1
 Mejuri's 2023 reorg: 6 themed asset groups, brand exclusions, audience signals per group, weekly Insights review. CAC dropped from $52 to $34 in 90 days.
 
 ### Q18: **B. A separate enterprise programmatic platform**
-DV360 (Display & Video 360) is part of Google Marketing Platform — a different product from Google Ads. Used by agencies and enterprise for programmatic buying across exchanges, including connected TV.
+DV360 (Display & Video 360) is part of Google Marketing Platform, a different product from Google Ads. Used by agencies and enterprise for programmatic buying across exchanges, including connected TV.
 
 ### Q19: **B. YouTube + Discover + Gmail only**
-Demand Gen (renamed from Discovery in 2024) is a subset of PMax surfaces — visual-only inventory. Useful when you have strong visual creative and want to control where it runs.
+Demand Gen (renamed from Discovery in 2024) is a subset of PMax surfaces, visual-only inventory. Useful when you have strong visual creative and want to control where it runs.
 
 ### Q20: **C. When you have strong visual creative and want control over WHERE it runs**
 PMax decides for you; Demand Gen lets you pick. Demand Gen is for marketers with confident visual creative who don't want Google sending budget to Search.
@@ -292,7 +292,7 @@ CPV = Cost Per View. CPM = Cost Per Mille (1000 impressions). CPC = Cost Per Cli
 ### Q25: **B. Combine 2–3 signals per asset group**
 Stacking signals (Customer Match + Website Visitors + In-Market) gives Google multiple high-quality hints and accelerates the learning phase. Single signals work but combo signals work better.
 
-### Q26: **C. Kill retention — save brand reveal for the last second**
+### Q26: **C. Kill retention, save brand reveal for the last second**
 A 2-second logo intro is a killing field for retention in vertical shorts. Earn attention first with the hook; reveal the brand at the end after you've delivered value.
 
 ---

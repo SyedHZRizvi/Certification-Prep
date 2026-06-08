@@ -1,9 +1,9 @@
 ---
 permalink: /34-2D-Digital-Animation/Practice-Exams/Practice-Exam-2/
-title: "Practice Exam 2 — 2D Digital Animation (Modules 6–10)"
+title: "Practice Exam 2, 2D Digital Animation (Modules 6–10)"
 ---
 
-# 📝 Practice Exam 2 — 2D Digital Animation
+# 📝 Practice Exam 2, 2D Digital Animation
 ## Modules 6–10 · 30 Questions · 40 Minutes
 
 **Instructions:** Take this exam after completing Modules 6–10. Score 80%+ before attempting the Final Mock Exam. Each question has one correct answer.
@@ -291,9 +291,9 @@ D. Override the puppet's bone structure with a DUIK rig from After Effects
 6.  B   Rubber hose = continuously curved limbs with no defined joint break.
 7.  B   The animator draws all five face positions; J+S blends between them.
 8.  C   FV = upper teeth on lower lip (F and V sounds).
-9.  C   Stream sync ties audio to playhead — required for lip sync.
+9.  C   Stream sync ties audio to playhead, required for lip sync.
 10. B   Character Animator requires layered .psd or .ai files with named layers.
-11. B   REST = silence, pause, exhale — neutral resting position.
+11. B   REST = silence, pause, exhale, neutral resting position.
 12. B   Four walk poses: Contact, Down, Passing, Up.
 13. C   12-frame cycle: second Contact at frame 9.
 14. C   Cuphead mimics Fleischer Brothers (1930s Betty Boop, Popeye aesthetic).

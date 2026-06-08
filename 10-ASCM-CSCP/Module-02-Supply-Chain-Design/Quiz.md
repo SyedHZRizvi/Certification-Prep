@@ -91,7 +91,7 @@ D. Service level decreases
 A. Single is one chosen from many; sole is the only one available
 B. Single is global; sole is local
 C. Single requires a long-term contract; sole is spot-buy
-D. There is no difference — they are synonyms
+D. There is no difference, they are synonyms
 
 ---
 
@@ -218,7 +218,7 @@ Single-facility, demand-weighted minimization is the textbook CoG use case.
 Acquiring an upstream supplier = backward / upstream integration.
 
 ### Q4: **B. US company hires US contractor**
-Outsourcing without offshoring — the activity moves to an external firm but stays domestic.
+Outsourcing without offshoring, the activity moves to an external firm but stays domestic.
 
 ### Q5: **D. Straight-line distances, single facility, uniform rate**
 CoG's three classic assumptions. Violations push you to LP or simulation.
@@ -251,7 +251,7 @@ High profit impact + high supply risk = Strategic (Kraljic upper-right). Calls f
 Hospital beds, hotel rooms, and consulting hours are perishable capacity, not stored inventory.
 
 ### Q15: **B. Multiple qualitative criteria**
-Factor-rating handles weighted multi-criteria scoring — useful when not everything has a dollar value.
+Factor-rating handles weighted multi-criteria scoring, useful when not everything has a dollar value.
 
 ### Q16: **B. Strategic / core competency**
 IP protection + supply security are textbook "make" drivers.

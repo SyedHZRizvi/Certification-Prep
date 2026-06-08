@@ -1,9 +1,9 @@
 ---
 permalink: /35-Motion-Graphics-UI-Animation/Module-04-Logo-Brand-Motion/Videos/
-title: "Module 4: Videos — Logo & Brand Motion"
+title: "Module 4: Videos, Logo & Brand Motion"
 ---
 
-# 🎬 Module 4 Videos — Logo & Brand Motion
+# 🎬 Module 4 Videos, Logo & Brand Motion
 
 ---
 
@@ -22,7 +22,7 @@ title: "Module 4: Videos — Logo & Brand Motion"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+shape+morph+logo+transition+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/CW4fNnR1hRs/mqdefault.jpg" alt="Shape Morph AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Shape Morphing in After Effects — Logo Morph Technique</div>
+    <div class="vg-card-title">Shape Morphing in After Effects, Logo Morph Technique</div>
     <div class="vg-card-meta">School of Motion · Point-matching, path keyframes, morph transitions</div>
   </div>
 </a>
@@ -54,7 +54,7 @@ title: "Module 4: Videos — Logo & Brand Motion"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=brand+motion+guidelines+design+system+animation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/7YzLF5bFGJY/mqdefault.jpg" alt="Brand Motion Guidelines" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Building Brand Motion Guidelines — Design Systems in Motion</div>
+    <div class="vg-card-title">Building Brand Motion Guidelines, Design Systems in Motion</div>
     <div class="vg-card-meta">School of Motion · How studios define and document brand motion</div>
   </div>
 </a>
@@ -63,14 +63,14 @@ title: "Module 4: Videos — Logo & Brand Motion"
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/e5P2v5L2VqY/mqdefault.jpg" alt="Broadcast Package Design" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Designing a Broadcast Package in After Effects</div>
-    <div class="vg-card-meta">Motion Design School · Open, bumpers, lower-thirds — full package</div>
+    <div class="vg-card-meta">Motion Design School · Open, bumpers, lower-thirds, full package</div>
   </div>
 </a>
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=google+logo+animation+history+motion+language">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/zEbFGtxE2HY/mqdefault.jpg" alt="Google Logo Motion" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Google's Animated Logo — Motion Language Breakdown</div>
+    <div class="vg-card-title">Google's Animated Logo, Motion Language Breakdown</div>
     <div class="vg-card-meta">Design Explained · Four-color system, morph transitions, brand rules</div>
   </div>
 </a>
@@ -78,7 +78,7 @@ title: "Module 4: Videos — Logo & Brand Motion"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+shape+layer+morph+point+matching">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/T_MeZBK6pUk/mqdefault.jpg" alt="Shape Morph Point Matching" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Shape Layer Morphing — Point Matching for Clean Transitions</div>
+    <div class="vg-card-title">Shape Layer Morphing, Point Matching for Clean Transitions</div>
     <div class="vg-card-meta">Jake In Motion · Solving the point-count problem in path morphs</div>
   </div>
 </a>
@@ -94,7 +94,7 @@ title: "Module 4: Videos — Logo & Brand Motion"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=broadcast+color+space+rec709+after+effects+settings">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/iGFw79p7cQA/mqdefault.jpg" alt="Broadcast Color Space AE" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Broadcast Color Space in After Effects — Rec. 709 Setup</div>
+    <div class="vg-card-title">Broadcast Color Space in After Effects, Rec. 709 Setup</div>
     <div class="vg-card-meta">Color Grading Central · sRGB vs Rec.709, safe levels, broadcast legal</div>
   </div>
 </a>
@@ -102,7 +102,7 @@ title: "Module 4: Videos — Logo & Brand Motion"
 <a class="vg-card" href="https://www.youtube.com/results?search_query=nike+brand+motion+design+animation+swoosh">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/QHTb94bPuFU/mqdefault.jpg" alt="Nike Brand Motion" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Nike's Brand Motion Language — Swoosh Animation Analysis</div>
+    <div class="vg-card-title">Nike's Brand Motion Language, Swoosh Animation Analysis</div>
     <div class="vg-card-meta">Brand Design Review · Breakdown of Nike's motion philosophy</div>
   </div>
 </a>
@@ -110,7 +110,7 @@ title: "Module 4: Videos — Logo & Brand Motion"
 <a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=logo+animation+client+workflow+after+effects+best+practices">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/Rh5tgjMjdVo/mqdefault.jpg" alt="Logo Animation Client Workflow" loading="lazy"></div>
   <div class="vg-card-body">
-    <div class="vg-card-title">Logo Animation Client Workflow — From Brief to Delivery</div>
+    <div class="vg-card-title">Logo Animation Client Workflow, From Brief to Delivery</div>
     <div class="vg-card-meta">School of Motion · File prep, client communication, delivery formats</div>
   </div>
 </a>

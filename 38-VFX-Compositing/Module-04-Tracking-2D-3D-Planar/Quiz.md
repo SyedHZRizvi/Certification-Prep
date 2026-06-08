@@ -1,8 +1,8 @@
 ---
-title: "Module 4 Quiz: Tracking — 2D, 3D & Planar"
+title: "Module 4 Quiz: Tracking, 2D, 3D & Planar"
 ---
 
-# 🧪 Module 4 Quiz: Tracking — 2D, 3D & Planar
+# 🧪 Module 4 Quiz: Tracking, 2D, 3D & Planar
 
 > 24 questions. Aim for 20/24.
 
@@ -24,7 +24,7 @@ D. Two-point 2D track
 Which type of tracking is Mocha AE designed around?
 
 A. Point-feature tracking using high-contrast corners
-B. Optical flow planar tracking — tracking the motion of a flat surface plane
+B. Optical flow planar tracking, tracking the motion of a flat surface plane
 C. 3D camera solving using multiple tracked features
 D. Facial landmark tracking using machine learning
 
@@ -48,7 +48,7 @@ What is the fundamental difference between the After Effects 2D Tracker and Warp
 A. The 2D Tracker is only for one-point tracks; Warp Stabilizer handles two-point tracks
 B. The 2D Tracker attaches elements TO camera motion; Warp Stabilizer REMOVES camera motion from footage
 C. The 2D Tracker uses optical flow; Warp Stabilizer uses point-feature tracking
-D. There is no difference — they both perform the same function
+D. There is no difference, they both perform the same function
 
 ---
 
@@ -90,7 +90,7 @@ D. Overlay
 In the Mocha AE workflow, what does drawing a spline around the tracked surface define?
 
 A. The mask for rotoscoping the surface
-B. The plane whose motion will be analyzed — Mocha tracks the surface texture within this region
+B. The plane whose motion will be analyzed, Mocha tracks the surface texture within this region
 C. The tracking marker positions for a 3D solve
 D. The corner pin destination points
 
@@ -200,7 +200,7 @@ D. The frame anchor for the tracking analysis
 A compositor attempts to use AE's 2-point tracker on a waving flag to track a logo attachment point. The track drifts and fails repeatedly. What is the fundamental problem?
 
 A. The flag moves too slowly for the tracker to analyze
-B. The flag is a non-rigid, deforming surface — 2-point tracking assumes rigid planar motion
+B. The flag is a non-rigid, deforming surface, 2-point tracking assumes rigid planar motion
 C. The flag's colors are too saturated for the tracker's feature detection
 D. AE's tracker cannot handle elements that are moving in only 2D
 
@@ -255,7 +255,7 @@ D. Corners always appear on tracking markers placed by the VFX supervisor
 What does the "inner box" (feature region) in AE's Track Motion tracker define?
 
 A. The area of the frame where the tracker searches for the feature in each new frame
-B. The specific pixel region that defines the tracking feature — the template the tracker matches against
+B. The specific pixel region that defines the tracking feature, the template the tracker matches against
 C. The safe zone within which the tracked element will be composited
 D. The motion vector output zone
 
@@ -274,50 +274,50 @@ D. The compositor re-tracks the creature render in Mocha to match it to the plat
 
 ## 🎯 Answers + Explanations
 
-**Q1 — C.** A one-point track recovers X/Y translation. If the arm doesn't rotate or scale significantly in the frame, this is sufficient for a tattoo pin.
+**Q1, C.** A one-point track recovers X/Y translation. If the arm doesn't rotate or scale significantly in the frame, this is sufficient for a tattoo pin.
 
-**Q2 — B.** Mocha AE is an optical flow planar tracker — it tracks the motion of an entire flat surface plane rather than individual high-contrast feature points.
+**Q2 B.** Mocha AE is an optical flow planar tracker it tracks the motion of an entire flat surface plane rather than individual high-contrast feature points.
 
-**Q3 — C.** A two-point 2D track recovers translation, rotation (from the angle between the two points), and scale (from the distance between the two points).
+**Q3, C.** A two-point 2D track recovers translation, rotation (from the angle between the two points), and scale (from the distance between the two points).
 
-**Q4 — B.** The 2D Tracker attaches digital elements to camera motion (motion addition). Warp Stabilizer applies the inverse of the camera motion to stabilize footage (motion removal).
+**Q4, B.** The 2D Tracker attaches digital elements to camera motion (motion addition). Warp Stabilizer applies the inverse of the camera motion to stabilize footage (motion removal).
 
-**Q5 — C.** "No Motion" mode locks the camera completely, simulating a tripod. "Smooth Motion" reduces shake while preserving intentional movement.
+**Q5, C.** "No Motion" mode locks the camera completely, simulating a tripod. "Smooth Motion" reduces shake while preserving intentional movement.
 
-**Q6 — D.** 3DEqualizer (Science-D-Visions) is the industry standard for film matchmoving, used at all major studios. Its sub-pixel accuracy and lens distortion handling are unmatched for film-quality work.
+**Q6, D.** 3DEqualizer (Science-D-Visions) is the industry standard for film matchmoving, used at all major studios. Its sub-pixel accuracy and lens distortion handling are unmatched for film-quality work.
 
-**Q7 — C.** Screen or Add blend mode adds the replacement content's luminance to the existing layer, simulating the self-luminous nature of a screen and allowing the glass reflections to show through.
+**Q7, C.** Screen or Add blend mode adds the replacement content's luminance to the existing layer, simulating the self-luminous nature of a screen and allowing the glass reflections to show through.
 
-**Q8 — B.** The spline in Mocha defines the surface plane to be tracked. Mocha analyzes the texture within the spline boundary to determine the plane's motion.
+**Q8, B.** The spline in Mocha defines the surface plane to be tracked. Mocha analyzes the texture within the spline boundary to determine the plane's motion.
 
-**Q9 — C.** Mocha AE's planar tracker handles full perspective distortion (the tilting phone) correctly. AE's 2-point tracker cannot recover perspective skew.
+**Q9, C.** Mocha AE's planar tracker handles full perspective distortion (the tilting phone) correctly. AE's 2-point tracker cannot recover perspective skew.
 
-**Q10 — C.** The primary output of a 3D camera solve is a 3D camera that exactly matches the position, rotation, and field of view of the original physical camera. This allows CG elements to be placed correctly in 3D space.
+**Q10, C.** The primary output of a 3D camera solve is a 3D camera that exactly matches the position, rotation, and field of view of the original physical camera. This allows CG elements to be placed correctly in 3D space.
 
-**Q11 — B.** Coplanar markers make it mathematically impossible to distinguish camera rotation from camera translation — the solver becomes ambiguous. Markers at different depths provide the 3D parallax information that resolves this ambiguity.
+**Q11 B.** Coplanar markers make it mathematically impossible to distinguish camera rotation from camera translation the solver becomes ambiguous. Markers at different depths provide the 3D parallax information that resolves this ambiguity.
 
-**Q12 — B.** Blender's tracking workflow is performed in the Movie Clip Editor workspace, which provides the tracking UI, marker placement, and solve controls.
+**Q12, B.** Blender's tracking workflow is performed in the Movie Clip Editor workspace, which provides the tracking UI, marker placement, and solve controls.
 
-**Q13 — B.** "Smooth Motion" reduces camera shake while keeping intentional camera movement. "No Motion" would eliminate all movement, which is too aggressive for this goal.
+**Q13, B.** "Smooth Motion" reduces camera shake while keeping intentional camera movement. "No Motion" would eliminate all movement, which is too aggressive for this goal.
 
-**Q14 — B.** "Analyze Forward" runs the tracker algorithm forward through frames sequentially from the current frame, building the tracked position data for each frame.
+**Q14, B.** "Analyze Forward" runs the tracker algorithm forward through frames sequentially from the current frame, building the tracked position data for each frame.
 
-**Q15 — B.** Focal length, lens distortion profile, and surveyed 3D world-space positions of tracking markers are the data that make a matchmove sub-pixel accurate. Without them, the solver makes educated guesses.
+**Q15, B.** Focal length, lens distortion profile, and surveyed 3D world-space positions of tracking markers are the data that make a matchmove sub-pixel accurate. Without them, the solver makes educated guesses.
 
-**Q16 — C.** A moving billboard that tilts in perspective is a classic planar tracking scenario — the billboard surface moves with full perspective distortion that only a planar tracker can handle correctly.
+**Q16 C.** A moving billboard that tilts in perspective is a classic planar tracking scenario the billboard surface moves with full perspective distortion that only a planar tracker can handle correctly.
 
-**Q17 — B.** The Null placed by the 3D Camera Tracker represents the 3D world position corresponding to the selected track points. Placing a layer at this Null's position puts it at the correct 3D location in the scene.
+**Q17, B.** The Null placed by the 3D Camera Tracker represents the 3D world position corresponding to the selected track points. Placing a layer at this Null's position puts it at the correct 3D location in the scene.
 
-**Q18 — B.** A waving flag is non-rigid — it deforms. 2-point tracking assumes the tracked surface is rigid and planar. Tracking a deforming surface requires either roto or a 2D tracker on a small stable region of the flag.
+**Q18 B.** A waving flag is non-rigid it deforms. 2-point tracking assumes the tracked surface is rigid and planar. Tracking a deforming surface requires either roto or a 2D tracker on a small stable region of the flag.
 
-**Q19 — B.** Accurate tracking is necessary but not sufficient. Adding screen glow, glass reflections, and lens distortion to the replacement makes it physically convincing. A perfectly tracked but clean digital screen looks wrong on glass.
+**Q19, B.** Accurate tracking is necessary but not sufficient. Adding screen glow, glass reflections, and lens distortion to the replacement makes it physically convincing. A perfectly tracked but clean digital screen looks wrong on glass.
 
-**Q20 — B.** AdjustTrack in Mocha Pro is used to manually correct the corner positions frame-by-frame when the automatic planar solve is inaccurate on specific frames. It is a refinement tool, not an automation tool.
+**Q20, B.** AdjustTrack in Mocha Pro is used to manually correct the corner positions frame-by-frame when the automatic planar solve is inaccurate on specific frames. It is a refinement tool, not an automation tool.
 
-**Q21 — B.** AE's built-in 3D Camera Tracker is appropriate for broadcast-quality work (TV commercials, music videos). 3DEqualizer with survey data is for film-quality work where sub-pixel accuracy is required.
+**Q21, B.** AE's built-in 3D Camera Tracker is appropriate for broadcast-quality work (TV commercials, music videos). 3DEqualizer with survey data is for film-quality work where sub-pixel accuracy is required.
 
-**Q22 — B.** A flat, uniform area has the same appearance regardless of small X/Y translations — the tracker cannot distinguish whether it moved or not. A corner has unique, direction-specific texture that changes predictably with movement.
+**Q22 B.** A flat, uniform area has the same appearance regardless of small X/Y translations the tracker cannot distinguish whether it moved or not. A corner has unique, direction-specific texture that changes predictably with movement.
 
-**Q23 — B.** The inner box (feature region) defines the template — the specific pixel pattern the tracker will search for in subsequent frames. The outer box (search region) defines where it will look for that pattern.
+**Q23 B.** The inner box (feature region) defines the template the specific pixel pattern the tracker will search for in subsequent frames. The outer box (search region) defines where it will look for that pattern.
 
-**Q24 — B.** The CG creature renders as a multi-channel EXR with AOV passes. The compositor assembles these passes (beauty, shadow, ambient occlusion, reflection) onto the plate in Nuke, using the tracked camera data and Z-depth pass to correctly integrate the creature at the right depth relative to the plate elements.
+**Q24, B.** The CG creature renders as a multi-channel EXR with AOV passes. The compositor assembles these passes (beauty, shadow, ambient occlusion, reflection) onto the plate in Nuke, using the tracked camera data and Z-depth pass to correctly integrate the creature at the right depth relative to the plate elements.

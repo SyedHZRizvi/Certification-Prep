@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: IAM & Organizations
 
-> **How to use:** Click any card to search YouTube for the topic — top result is usually the freshest. IAM is the #1 source of "wait, what?" on the SAA exam, so don't skip the deep-dive videos.
+> **How to use:** Click any card to search YouTube for the topic, top result is usually the freshest. IAM is the #1 source of "wait, what?" on the SAA exam, so don't skip the deep-dive videos.
 
 ## ⭐ Essential watching (~70 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">IAM Crash Course — Users, Groups, Roles, Policies</p>
+      <p class="vg-title">IAM Crash Course, Users, Groups, Roles, Policies</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 25 min · The foundation</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🔎</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">IAM Access Analyzer — find public resources</p>
+      <p class="vg-title">IAM Access Analyzer, find public resources</p>
       <p class="vg-creator">AWS Training</p>
       <span class="vg-duration">⏱ 12 min · Real-world detection</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>👤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Cognito Identity Pools — temp AWS creds for app users</p>
+      <p class="vg-title">Cognito Identity Pools, temp AWS creds for app users</p>
       <p class="vg-creator">freeCodeCamp</p>
       <span class="vg-duration">⏱ 22 min · Mobile/web pattern</span>
     </div>

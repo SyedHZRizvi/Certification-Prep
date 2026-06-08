@@ -1,4 +1,4 @@
-# Capstone Project — ASCM CPIM (Planning & Inventory Management)
+# Capstone Project, ASCM CPIM (Planning & Inventory Management)
 
 > A 6–8 week applied project that integrates every module of this course. You will treat yourself as the newly hired Director of Production & Inventory Control at a realistic mid-market industrial-equipment manufacturer and produce a complete planning re-architecture plus a 12-month change-management roadmap.
 >
@@ -6,7 +6,7 @@
 
 ---
 
-## Brief — The Scenario
+## Brief, The Scenario
 
 You have just been hired as **Director of Production & Inventory Control** at **Polaris Industrial Manufacturing Inc.** ("Polaris"), a $480M-revenue manufacturer of industrial pumps, valves, and motor-driven assemblies based in Pittsburgh, PA, with secondary plants in Monterrey (Mexico) and Łódź (Poland). Polaris has ~1,800 employees globally, serves customers across oil & gas, water utilities, HVAC, and food & beverage processing, and ships to roughly 1,400 distributors in 38 countries.
 
@@ -21,7 +21,7 @@ The relevant context:
 | OTIF (on-time-in-full) | 78% | ≥ 95% |
 | Finished-goods days of supply | 64 days | ≤ 38 days |
 | Annual revenue | $480M | $510M (modest growth assumed) |
-| Plants | 3 (Pittsburgh, Monterrey, Łódź) | Same — no closures |
+| Plants | 3 (Pittsburgh, Monterrey, Łódź) | Same, no closures |
 | Manufacturing environment | Mix of MTS (commodity pumps), ATO (configurable valves), and MTO (custom motor assemblies) | Re-baseline per product family |
 | Planning software | SAP S/4HANA (ERP), classical MRP module; no APS; spreadsheets in many places | Decide what to keep / replace |
 | S&OP maturity | Quarterly cadence; no formal IBP; finance not at the table; chronic demand-supply gaps | Monthly cadence; financialized; executive-led |
@@ -29,7 +29,7 @@ The relevant context:
 | Capacity planning | RCCP done informally; CRP not used; chronic firefighting at the floor | Layered (RRP → RCCP → CRP → I/O), with formal cadence at each layer |
 | Bottleneck management | No TOC discipline; non-bottleneck overtime common | DBR pilot for the Pittsburgh assembly cell; expand if successful |
 | Lean maturity | 5S in places, no kaizen rhythm, no kanban, SMED used selectively | Pilot kanban for top-50 SKUs; build kaizen cadence; codified VSM |
-| Workforce | ~600 production workers, 110 planners/buyers/schedulers, 22 industrial engineers | Same — no layoffs in plan; expect natural attrition |
+| Workforce | ~600 production workers, 110 planners/buyers/schedulers, 22 industrial engineers | Same, no layoffs in plan; expect natural attrition |
 
 Constraints you must honor:
 
@@ -62,12 +62,12 @@ A clear-eyed assessment of the current state across every module of this course.
 
 Define the new monthly S&OP cycle for Polaris with explicit inputs from Sales, Operations, Finance, and Supply:
 
-- Detailed 5-step S&OP calendar (Days 1–5 Product, Days 6–10 Demand, Days 11–15 Supply, Days 16–20 Pre-S&OP, Days 21–25 Executive) — adapt to a working-day calendar
+- Detailed 5-step S&OP calendar (Days 1–5 Product, Days 6–10 Demand, Days 11–15 Supply, Days 16–20 Pre-S&OP, Days 21–25 Executive), adapt to a working-day calendar
 - Who owns each step and what artifacts are produced
 - Decision rights: what the executive S&OP can ratify vs what requires board-level escalation
 - Financial integration: how units → dollars; what P&L scenarios are surfaced monthly
 - Phased rollout: classic S&OP first, IBP maturation by month 9
-- Governance for handling S&OE (Sales & Operations Execution) — the weekly tactical loop below S&OP
+- Governance for handling S&OE (Sales & Operations Execution), the weekly tactical loop below S&OP
 - Templates (sketch in tables) for demand review, supply review, and the decision package
 
 ### Deliverable 3: MRP → DDMRP Transition Assessment (3–5 pages)
@@ -92,7 +92,7 @@ Include:
 A re-baseline of the capacity hierarchy:
 
 - Long-range Resource Planning: which plants get capital, which get divestment-or-hold (no closures, but no growth investment either)
-- RCCP design for the Pittsburgh, Monterrey, and Łódź plants — explicit Bill of Resources for each
+- RCCP design for the Pittsburgh, Monterrey, and Łódź plants, explicit Bill of Resources for each
 - CRP integration into the new MRP discipline
 - Input/Output Control reporting cadence for shop-floor execution
 - TOC application: identify the *current* bottleneck at Pittsburgh, design the 5 Focusing Steps execution, plan DBR pilot
@@ -180,7 +180,7 @@ If you want external feedback: post the executive summary (2 pages) to a study g
 
 - **Real-world calibration.** Find a publicly traded industrial manufacturer (Roper Technologies, Watts Water, Xylem, Emerson Electric segment, Mueller Industries) of roughly $400M-$800M revenue and benchmark your KPI targets against their 10-K disclosed inventory turnover and the inferred OTIF from their accounts-payable / customer-satisfaction commentary.
 - **Tool-aware variant.** Pick a single tool (Kinaxis Maestro, SAP IBP, o9 Solutions, Anaplan) and adapt Deliverable 6 to that tool's specific data model and workflow. Useful if you're job-hunting at a company that uses that stack.
-- **Industry pivot.** Re-run the capstone against a different industry — pharma manufacturing, food & beverage, electronics contract manufacturing — and articulate how the answer changes by industry. Strong test of CPIM transferability.
+- **Industry pivot.** Re-run the capstone against a different industry pharma manufacturing, food & beverage, electronics contract manufacturing and articulate how the answer changes by industry. Strong test of CPIM transferability.
 - **Sustainability extension.** Add an 8th deliverable: Triple-Bottom-Line scorecard with Scope 1 + 2 emissions targets, water-and-waste KPIs, and the supply-chain implications. Tests the modern ASCM sustainability emphasis.
 - **CSCP/CLTD/CPSM hand-off.** Use the capstone as the input to an extended case for the sibling ASCM credentials. The S&OP cadence you design here is consumed by CSCP's multi-tier network design and CLTD's logistics planning.
 

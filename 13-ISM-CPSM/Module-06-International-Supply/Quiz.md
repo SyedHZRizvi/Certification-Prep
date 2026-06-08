@@ -129,7 +129,7 @@ D. Bank fee variability
 ### Q16. The MOST appropriate hedging stance for known foreign-currency contract exposure is to: *(Apply)*
 A. Speculate against the supplier's currency
 B. Hedge the known exposure using a forward or option matched to payment date, executed by Treasury
-C. Don't hedge — wait it out
+C. Don't hedge, wait it out
 D. Pay supplier in your home currency (it eliminates FX risk)
 
 ---
@@ -192,7 +192,7 @@ D. Ignore the risk if savings are large
 
 ### Q24. A scenario: a buyer wants to "eliminate FX risk" by demanding the supplier invoice in USD. The MOST accurate observation is: *(Evaluate)*
 A. FX risk is eliminated
-B. The FX risk is shifted to the supplier, who will likely price it into the unit cost — risk is shifted, not eliminated
+B. The FX risk is shifted to the supplier, who will likely price it into the unit cost, risk is shifted, not eliminated
 C. The supplier will absorb the loss
 D. CISG forbids this
 
@@ -219,7 +219,7 @@ D. Pretend you didn't hear
 ### Q1: **C. 11.** Seven any-mode + four sea-only.
 ### Q2: **B. Everything from the seller's door.** EXW = buyer does the most.
 ### Q3: **B.** DDP = seller does the most including import duties.
-### Q4: **C. DPU.** Delivered at Place Unloaded — broader than DAT (terminal only).
+### Q4: **C. DPU.** Delivered at Place Unloaded, broader than DAT (terminal only).
 ### Q5: **B.** FOB is sea/waterway only. Common misuse with air freight is wrong.
 ### Q6: **B.** CIP requires all-risk insurance (changed in 2020).
 ### Q7: **B.** CIF requires minimum insurance only (unchanged in 2020).
@@ -239,7 +239,7 @@ D. Pretend you didn't hear
 ### Q21: **B.** Japan = high-context, collectivist, moderately high-power-distance.
 ### Q22: **B.** FOB risk transfers when goods are loaded on the vessel at the named port.
 ### Q23: **B.** Layered mitigation: contractual, due diligence, audit, training, payment controls.
-### Q24: **B.** Risk shifted, not eliminated — the supplier prices it in.
+### Q24: **B.** Risk shifted, not eliminated, the supplier prices it in.
 ### Q25: **B.** Multi-pronged response: alternate sources, HTS check, tariff engineering, TCO.
 ### Q26: **B.** Decline + document + escalate per ISM ethics + FCPA / UK Bribery.
 
@@ -256,7 +256,7 @@ D. Pretend you didn't hear
 
 ## 🃏 Add To Your Flashcards
 
-- All 11 Incoterms — what each means
+- All 11 Incoterms, what each means
 - Incoterms 2020 changes from 2010 (DPU, CIP insurance)
 - FCPA vs UK Bribery Act distinctions
 - OFAC, EAR, ITAR scopes

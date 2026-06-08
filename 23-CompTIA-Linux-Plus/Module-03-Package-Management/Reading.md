@@ -1,10 +1,10 @@
 # Module 3: Package Management 📦
 
-> **Why this module matters:** XK0-005 is vendor-neutral, which means you need to be conversant in BOTH `apt` (Debian/Ubuntu) AND `dnf`/`rpm` (RHEL/Fedora/Rocky/AlmaLinux). The exam will test the same operation from both worlds in adjacent questions. PBQs frequently include "the user wants to install package X but can't — fix it" scenarios that hinge on knowing where repositories are configured, how GPG signing is verified, and what `dpkg -l` vs `rpm -qa` actually return.
+> **Why this module matters:** XK0-005 is vendor-neutral, which means you need to be conversant in BOTH `apt` (Debian/Ubuntu) AND `dnf`/`rpm` (RHEL/Fedora/Rocky/AlmaLinux). The exam will test the same operation from both worlds in adjacent questions. PBQs frequently include "the user wants to install package X but can't, fix it" scenarios that hinge on knowing where repositories are configured, how GPG signing is verified, and what `dpkg -l` vs `rpm -qa` actually return.
 
 > **Prerequisites for this module.** You should be comfortable with:
-> - Module 1 (systemd) — services often need a restart after a package upgrade
-> - Module 2 (filesystem) — package files land in `/usr/bin`, `/etc/`, `/var/lib/`, etc.
+> - Module 1 (systemd), services often need a restart after a package upgrade
+> - Module 2 (filesystem), package files land in `/usr/bin`, `/etc/`, `/var/lib/`, etc.
 > - Running commands as root or via `sudo`
 
 ---
@@ -22,7 +22,7 @@ The following packages have unmet dependencies:
 E: Unable to correct problems, you have held broken packages.
 ```
 
-She inspects `/etc/apt/sources.list.d/`. Three files. One — `our-internal.list` — points to an internal Artifactory mirror that someone changed yesterday to host a custom `python3-distutils` package with a different ABI than upstream Ubuntu's. Pinning is off; the mirror's package "wins" because it has a higher version number. That broke distutils, which broke pip's transitive deps.
+She inspects `/etc/apt/sources.list.d/`. Three files. One `our-internal.list` points to an internal Artifactory mirror that someone changed yesterday to host a custom `python3-distutils` package with a different ABI than upstream Ubuntu's. Pinning is off; the mirror's package "wins" because it has a higher version number. That broke distutils, which broke pip's transitive deps.
 
 She edits `/etc/apt/preferences.d/internal-pin` to *prefer* Ubuntu's archive for `python3-*` packages over Artifactory:
 
@@ -52,7 +52,7 @@ The exam will not ask you to write an apt preferences file from memory, but it W
 
 ## 🔵 Debian World: dpkg, apt-get, apt
 
-### dpkg — the low-level tool
+### dpkg, the low-level tool
 
 `dpkg` installs/removes a single `.deb` file with NO dependency resolution. It's the bedrock everything else is built on.
 
@@ -74,7 +74,7 @@ State codes in `dpkg -l` output (the first two chars of each line):
 - `rc` = removed but config remains
 - `iU` = installed but unpacked, not configured (broken)
 
-### apt-get / apt — the high-level resolver
+### apt-get / apt, the high-level resolver
 
 `apt` (and the older `apt-get`) read a database of available packages, resolve dependencies, download from repos, and call `dpkg` to do the actual install.
 
@@ -139,7 +139,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
 
 ## 🔴 Red Hat World: rpm, dnf (yum), rpmbuild
 
-### rpm — the low-level tool
+### rpm, the low-level tool
 
 Like `dpkg`, `rpm` operates on individual `.rpm` files with NO dependency resolution.
 
@@ -165,7 +165,7 @@ Common flag mnemonics:
 
 🎯 **Exam pattern:** *"Which package installed `/usr/sbin/sshd`?"* → `rpm -qf /usr/sbin/sshd` → `openssh-server-...`.
 
-### dnf — the modern Red Hat resolver
+### dnf, the modern Red Hat resolver
 
 `dnf` (Dandified YUM) replaced `yum` starting RHEL 8. On RHEL 7 and older Amazon Linux 2, you'll still see `yum`. Commands are nearly identical.
 
@@ -204,14 +204,14 @@ gpgkey=https://download.docker.com/linux/centos/gpg
 
 Each field:
 
-- `[repo-id]` — short identifier
-- `name=` — human-readable
-- `baseurl=` OR `mirrorlist=` — where to fetch from
-- `enabled=1` — is this repo active?
-- `gpgcheck=1` — verify signatures (NEVER set to 0 in production)
-- `gpgkey=` — public key to trust
+- `[repo-id]`, short identifier
+- `name=`, human-readable
+- `baseurl=` OR `mirrorlist=`, where to fetch from
+- `enabled=1`, is this repo active?
+- `gpgcheck=1`, verify signatures (NEVER set to 0 in production)
+- `gpgkey=`, public key to trust
 
-🚨 **Trap on the exam:** A scenario shows `gpgcheck=0` in a repo file as the "fix" for a failing install. That's the WRONG answer — it disables verification entirely. The right answer is to import the key with `rpm --import https://...` and keep gpgcheck on.
+🚨 **Trap on the exam:** A scenario shows `gpgcheck=0` in a repo file as the "fix" for a failing install. That's the WRONG answer, it disables verification entirely. The right answer is to import the key with `rpm --import https://...` and keep gpgcheck on.
 
 ### dnf transactions
 
@@ -234,7 +234,7 @@ This is invaluable when a package upgrade breaks something.
 | Refresh metadata | `apt update` | `dnf check-update` |
 | Install package | `apt install nginx` | `dnf install nginx` |
 | Remove package (keep config) | `apt remove nginx` | `dnf remove nginx` |
-| Purge (remove + config) | `apt purge nginx` | (no exact equivalent — `dnf remove` doesn't remove configs by default) |
+| Purge (remove + config) | `apt purge nginx` | (no exact equivalent, `dnf remove` doesn't remove configs by default) |
 | Upgrade all | `apt upgrade` | `dnf upgrade` |
 | Search | `apt search nginx` | `dnf search nginx` |
 | Show info | `apt show nginx` | `dnf info nginx` |
@@ -313,7 +313,7 @@ sudo apt install build-essential autoconf automake
 
 🚨 **Trap on the exam:** Source-installed binaries do NOT show up in `dpkg -l` / `rpm -qa`. Untracked. Removal is "delete the files yourself" or `make uninstall` if the project supports it. Always use `--prefix=/opt/myapp` to make this easier.
 
-### Configure / Make / Install — what each step does
+### Configure / Make / Install, what each step does
 
 | Step | What it does | Common issues |
 |------|--------------|---------------|
@@ -352,7 +352,7 @@ Re-runs the post-install configuration of a Debian package. Common for tzdata, k
 > **Scenario:** On a RHEL 9 system, a user reports `dnf install httpd-tools` fails with `Public key for httpd-tools-2.4.57-3.el9.x86_64.rpm is not installed`. The package URL in the error matches a repo file the admin recently added at `/etc/yum.repos.d/internal-rhel9.repo`. What's the correct sequence to fix this WITHOUT disabling GPG signature checking?
 
 **Walkthrough:**
-1. The repo is reachable (the URL resolved), but the GPG key listed in the `.repo` file isn't yet imported into the rpm keyring. dnf refuses to install unsigned-or-untrusted packages — this is the *correct* behavior; do not lower the bar.
+1. The repo is reachable (the URL resolved), but the GPG key listed in the `.repo` file isn't yet imported into the rpm keyring. dnf refuses to install unsigned-or-untrusted packages, this is the *correct* behavior; do not lower the bar.
 2. Inspect the repo file:
 ```bash
 cat /etc/yum.repos.d/internal-rhel9.repo
@@ -376,7 +376,7 @@ sudo dnf install httpd-tools
 rpm -qi httpd-tools | grep -i signature
 ```
 
-The PBQ would test step 3 specifically — the answer is `rpm --import`, NOT `gpgcheck=0`.
+The PBQ would test step 3 specifically, the answer is `rpm --import`, NOT `gpgcheck=0`.
 
 ---
 
@@ -384,16 +384,16 @@ The PBQ would test step 3 specifically — the answer is `rpm --import`, NOT `gp
 
 | Misconception | Reality |
 |---------------|---------|
-| "`apt remove` deletes the config too" | No — that's `apt purge`. `remove` keeps `/etc/<pkg>/` configs. |
+| "`apt remove` deletes the config too" | No, that's `apt purge`. `remove` keeps `/etc/<pkg>/` configs. |
 | "`yum` and `dnf` are the same" | dnf replaced yum (RHEL 8+). On RHEL 7 you still use yum. Many commands look identical; `dnf history` is a real upgrade. |
-| "Source-installed binaries show in `rpm -qa`" | No — only RPM-installed packages do. Source installs are invisible to the package manager. |
+| "Source-installed binaries show in `rpm -qa`" | No, only RPM-installed packages do. Source installs are invisible to the package manager. |
 | "Disabling `gpgcheck` is fine for testing" | Even in dev, you should import the key. Disabling teaches you a bad habit and the exam loves to mark this wrong. |
 | "Snap and Flatpak are interchangeable" | Different sponsors, different sandbox mechanics, different store models. They co-exist. |
-| "AppImages auto-update" | Most don't — that's a feature the app has to add. |
-| "`apt update` upgrades packages" | No — that REFRESHES the metadata. `apt upgrade` does the actual upgrade. |
-| "`rpm -e` resolves dependencies" | No — rpm refuses to remove if other packages depend on it. Use `dnf remove`. |
-| "Removing a package automatically removes its config files" | apt: no (`purge` does). dnf: usually no — configs labeled `%config(noreplace)` survive. |
-| "Held packages are corrupted" | A "hold" is intentional — `apt-mark hold <pkg>` prevents upgrades. Unhold: `apt-mark unhold <pkg>`. |
+| "AppImages auto-update" | Most don't, that's a feature the app has to add. |
+| "`apt update` upgrades packages" | No, that REFRESHES the metadata. `apt upgrade` does the actual upgrade. |
+| "`rpm -e` resolves dependencies" | No, rpm refuses to remove if other packages depend on it. Use `dnf remove`. |
+| "Removing a package automatically removes its config files" | apt: no (`purge` does). dnf: usually no, configs labeled `%config(noreplace)` survive. |
+| "Held packages are corrupted" | A "hold" is intentional, `apt-mark hold <pkg>` prevents upgrades. Unhold: `apt-mark unhold <pkg>`. |
 
 ---
 
@@ -401,9 +401,9 @@ The PBQ would test step 3 specifically — the answer is `rpm --import`, NOT `gp
 
 | Term | Definition |
 |------|------------|
-| **dpkg** | Low-level Debian package tool (`.deb`) — no dep resolution |
+| **dpkg** | Low-level Debian package tool (`.deb`), no dep resolution |
 | **apt / apt-get** | High-level Debian resolver + downloader |
-| **rpm** | Low-level Red Hat package tool (`.rpm`) — no dep resolution |
+| **rpm** | Low-level Red Hat package tool (`.rpm`), no dep resolution |
 | **dnf** | Modern Red Hat resolver (replaced yum in RHEL 8+) |
 | **yum** | Older Red Hat resolver (RHEL 7 and prior) |
 | **Repository** | A server hosting package metadata + files |
@@ -435,7 +435,7 @@ The PBQ would test step 3 specifically — the answer is `rpm --import`, NOT `gp
 
 ---
 
-## 📊 Case Study — The 2016 Left-Pad Lesson Linux Already Knew
+## 📊 Case Study, The 2016 Left-Pad Lesson Linux Already Knew
 
 **Situation.** On 22 March 2016, a JavaScript developer (Azer Koçulu) unpublished his `left-pad` npm module after a name dispute with another company. `left-pad` was an 11-line function that padded strings on the left. Within an hour, npm's removal cascaded into broken builds at Facebook, Netflix, Slack, Spotify, Reddit, npm itself, and thousands of smaller projects whose dependency trees transitively required `left-pad`. The web buckled. npm partially reverted the unpublish.
 
@@ -478,9 +478,9 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 4 — Bash Scripting & Automation](../Module-04-Bash-Scripting/Reading.md)
+4. ➡️ Move on: [Module 4, Bash Scripting & Automation](../Module-04-Bash-Scripting/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 4](../Module-04-Bash-Scripting/Reading.md) automates apt/dnf operations in scripts; [Module 8](../Module-08-Security/Reading.md) covers GPG in depth (the same key system used by dnf/apt signing).
@@ -491,13 +491,13 @@ You now know:
 ## 📚 Further Reading (Optional)
 
 **Primary sources:**
-- 📄 Debian Project — [*Debian Policy Manual*](https://www.debian.org/doc/debian-policy/), especially §1, §3 (binary packages), and §10 (files in the FHS context).
-- 📄 Fedora Project — [*RPM Packaging Guide*](https://rpm-packaging-guide.github.io/) — explains the rpm file format from the ground up.
-- 📄 DNF Project — [`dnf(8)`](https://dnf.readthedocs.io/en/latest/command_ref.html) and [`dnf-history(8)`](https://dnf.readthedocs.io/en/latest/command_ref.html#history-command-label) man pages.
-- 📄 APT — [`apt(8)`, `apt-get(8)`, `apt-cache(8)`, `apt_preferences(5)`](https://manpages.debian.org/) — the apt-preferences page especially explains pinning, which is the under-tested superpower of apt.
-- 📄 Snap — [snapcraft.io documentation](https://snapcraft.io/docs).
+- 📄 Debian Project, [*Debian Policy Manual*](https://www.debian.org/doc/debian-policy/), especially §1, §3 (binary packages), and §10 (files in the FHS context).
+- 📄 Fedora Project [*RPM Packaging Guide*](https://rpm-packaging-guide.github.io/) explains the rpm file format from the ground up.
+- 📄 DNF Project, [`dnf(8)`](https://dnf.readthedocs.io/en/latest/command_ref.html) and [`dnf-history(8)`](https://dnf.readthedocs.io/en/latest/command_ref.html#history-command-label) man pages.
+- 📄 APT [`apt(8)`, `apt-get(8)`, `apt-cache(8)`, `apt_preferences(5)`](https://manpages.debian.org/) the apt-preferences page especially explains pinning, which is the under-tested superpower of apt.
+- 📄 Snap, [snapcraft.io documentation](https://snapcraft.io/docs).
 
 **Practitioner / exam:**
-- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023) — Chapter 8.
-- 📖 Christopher Negus, *Linux Bible* (Wiley, 11th ed., 2020) — Chapters 9 & 10.
-- 📖 Mark G. Sobell & Matthew Helmke, *A Practical Guide to Linux Commands, Editors, and Shell Programming* (Pearson, 4th ed., 2018) — the reference book for Linux+ aspirants.
+- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023), Chapter 8.
+- 📖 Christopher Negus, *Linux Bible* (Wiley, 11th ed., 2020), Chapters 9 & 10.
+- 📖 Mark G. Sobell & Matthew Helmke, *A Practical Guide to Linux Commands, Editors, and Shell Programming* (Pearson, 4th ed., 2018), the reference book for Linux+ aspirants.

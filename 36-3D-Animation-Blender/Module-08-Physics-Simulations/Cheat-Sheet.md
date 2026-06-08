@@ -11,8 +11,8 @@ title: "Module 8 Cheat Sheet: Physics & Simulations"
 
 | Setting | Value | Effect |
 |---|---|---|
-| Type: Active | — | Physics-controlled |
-| Type: Passive | — | Fixed collider |
+| Type: Active |, | Physics-controlled |
+| Type: Passive |, | Fixed collider |
 | Collision Shape | Convex Hull | Best for solid props |
 | Collision Shape | Mesh | Exact but slow |
 | Restitution | 0 | No bounce |
@@ -102,7 +102,7 @@ Changing any physics parameter → full re-bake required
 | Viscosity | 0–∞ | 0=water, high=honey |
 | Surface Tension | 0–1 | Droplet cohesion |
 
-**Domain must enclose all fluid movement — size 20–30% larger than needed.**
+**Domain must enclose all fluid movement, size 20–30% larger than needed.**
 
 ---
 
@@ -121,12 +121,12 @@ Changing any physics parameter → full re-bake required
 
 | Effect | Use GN | Use Physics |
 |---|---|---|
-| Static prop scatter | Yes | — |
-| Dynamic falling leaves | — | Yes (Particles) |
-| Static water surface | Yes (Noise displacement) | — |
-| Animated pouring water | — | Yes (FLIP fluid) |
-| Deterministic crowd | Yes (instances) | — |
-| Colliding crowd | — | Yes (rigid body) |
+| Static prop scatter | Yes |, |
+| Dynamic falling leaves |, | Yes (Particles) |
+| Static water surface | Yes (Noise displacement) |, |
+| Animated pouring water |, | Yes (FLIP fluid) |
+| Deterministic crowd | Yes (instances) |, |
+| Colliding crowd |, | Yes (rigid body) |
 
 **GN = deterministic (same result always); Physics = stochastic (requires baking for reproducibility)**
 

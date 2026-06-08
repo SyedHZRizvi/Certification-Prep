@@ -148,7 +148,7 @@ D. Disable DMARC
 ---
 
 ### Q18. A switch needs to download a new firmware image from a central server during nightly maintenance. The most appropriate protocol is: *(Apply)*
-A. TFTP (UDP 69) — designed for this use
+A. TFTP (UDP 69), designed for this use
 B. HTTPS
 C. SFTP only
 D. NFS
@@ -189,7 +189,7 @@ D. Replaces NTP
 
 ### Q23. NTP stratum 0 refers to: *(Analyze)*
 A. The least accurate clock source
-B. A reference clock — atomic clock, GPS, radio (the source itself, not a network NTP server)
+B. A reference clock, atomic clock, GPS, radio (the source itself, not a network NTP server)
 C. The default NTP server in pool.ntp.org
 D. A misconfigured server
 
@@ -197,7 +197,7 @@ D. A misconfigured server
 
 ### Q24. A web app behind a firewall starts failing intermittently. Logs show the app server's clock has drifted 10 minutes from the auth server. Affected functions include API token validation and certificate checks. The root cause is: *(Analyze)*
 A. DNS poisoning
-B. NTP failure — large clock skew breaks Kerberos, JWT validation, TLS cert validity windows, and HMAC nonces
+B. NTP failure, large clock skew breaks Kerberos, JWT validation, TLS cert validity windows, and HMAC nonces
 C. A misconfigured MX record
 D. DHCP scope exhaustion
 
@@ -230,7 +230,7 @@ A = IPv4 address (32-bit). AAAA = IPv6 (128-bit). CNAME = alias. PTR = reverse l
 PTR records live in `in-addr.arpa` (IPv4) or `ip6.arpa` (IPv6) and resolve IP → hostname. Used in spam filtering, mail-server reverse-DNS checks, logging.
 
 ### Q3: **B. Hostname plus priority/preference**
-Example: `example.com.   IN  MX   10 mail1.example.com.` — the `10` is the priority (lower = preferred). Senders try lower-priority first.
+Example: `example.com.   IN  MX   10 mail1.example.com.`, the `10` is the priority (lower = preferred). Senders try lower-priority first.
 
 ### Q4: **C. TXT**
 SPF/DKIM/DMARC and many domain-verification records are all stored as TXT.
@@ -257,16 +257,16 @@ SFTP and SCP both ride over SSH (TCP 22). FTPS uses 21 + AUTH TLS or implicit 99
 IMAP over SSL/TLS. POP3S (995) is the encrypted POP3 equivalent.
 
 ### Q12: **B. Clients on different subnet than DHCP server**
-DHCP DISCOVER is a broadcast — it doesn't cross routers. A DHCP relay/IP helper on the router forwards DHCP traffic to the central server.
+DHCP DISCOVER is a broadcast, it doesn't cross routers. A DHCP relay/IP helper on the router forwards DHCP traffic to the central server.
 
 ### Q13: **A. Direct Connect**
 Azure = ExpressRoute. GCP = Dedicated Interconnect. Oracle = FastConnect.
 
 ### Q14: **B. Centrally manages multiple transports with policy + health awareness**
-SD-WAN's value is centralized, per-application, transport-agnostic routing across hybrid links — not "only Internet" and not eliminating encryption.
+SD-WAN's value is centralized, per-application, transport-agnostic routing across hybrid links, not "only Internet" and not eliminating encryption.
 
 ### Q15: **B. DHCP failure (APIPA)**
-169.254.x.x = APIPA self-assigned. DHCP didn't respond — investigate DHCP path/server.
+169.254.x.x = APIPA self-assigned. DHCP didn't respond, investigate DHCP path/server.
 
 ### Q16: **C. DHCP reservation tied to MAC**
 Reservation = same IP for that MAC every time. Exclusion just keeps an IP from being assigned. Static is outside DHCP entirely.
@@ -275,7 +275,7 @@ Reservation = same IP for that MAC every time. Exclusion just keeps an IP from b
 SPF authorizes sending IPs; DKIM cryptographically signs outbound mail; together they validate to DMARC. Switching protocols (A, C) is irrelevant; disabling DMARC (D) is dangerous.
 
 ### Q18: **A. TFTP**
-TFTP is exactly designed for this — small footprint, embedded device firmware uploads. HTTPS works too but is heavier and not the textbook answer.
+TFTP is exactly designed for this, small footprint, embedded device firmware uploads. HTTPS works too but is heavier and not the textbook answer.
 
 ### Q19: **B. Direct Connect**
 Private circuit, predictable bandwidth, no public Internet path = Direct Connect.
@@ -326,4 +326,4 @@ Publishing NS records at two unrelated providers (Cloudflare + AWS, for example)
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Network Security Fundamentals](../Module-06-Security/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Network Security Fundamentals](../Module-06-Security/Reading.md)

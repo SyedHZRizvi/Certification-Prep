@@ -54,7 +54,7 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:g
 | `max_output_tokens` | varies | **Always set deliberately** |
 | `stop_sequences` | [] | Up to 5; not included in output |
 | `response_mime_type` | "text/plain" | `"application/json"` for JSON mode |
-| `response_schema` | — | JSON Schema for guaranteed conformant output |
+| `response_schema` |, | JSON Schema for guaranteed conformant output |
 | `seed` | random | For reproducibility |
 
 ---
@@ -105,7 +105,7 @@ model = genai.GenerativeModel("gemini-2.5-flash",
 | `STOP` | Normal completion |
 | `MAX_TOKENS` | Output truncated at max_output_tokens |
 | `SAFETY` | Blocked by safety_settings |
-| `RECITATION` | Blocked — training-data verbatim |
+| `RECITATION` | Blocked, training-data verbatim |
 | `OTHER` | Other (rare) |
 
 Always check `finish_reason` AND `safety_ratings` AND `usage_metadata`.
@@ -168,8 +168,8 @@ r.usage_metadata.total_token_count
 - "Lower temperature guarantees JSON" (it helps; doesn't guarantee)
 - "Streaming saves money" (it doesn't)
 - "Batch API is real-time" (it's async)
-- "API keys are safe in a frontend" (they're not — server-side only)
-- "Retry 400 errors" (don't — fix the request)
+- "API keys are safe in a frontend" (they're not, server-side only)
+- "Retry 400 errors" (don't, fix the request)
 - "`BLOCK_NONE` is fine for any workload" (rarely the right answer)
 
 ---
@@ -190,7 +190,7 @@ Vertex AI (production: IAM, VPC-SC, CMEK, region, audit, monitoring)
 
 1. Two SDK package names? ___
 2. Two auth methods? ___
-3. Force JSON schema — what two fields? ___
+3. Force JSON schema, what two fields? ___
 4. 4 safety categories? ___
 5. Which status codes retry? ___
 

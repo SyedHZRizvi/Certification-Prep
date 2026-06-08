@@ -3,10 +3,10 @@
 > **Why this module matters:** Networking is roughly **20% of SAA-C03 questions** when you combine pieces from Resilient + Secure + Performance. The exam loves scenarios like "private app needs S3 access without internet" or "connect 3 VPCs and an on-prem network." Get NAT, endpoints, peering, Transit Gateway and DX right and you'll fly through 12+ questions.
 
 > **Prerequisites for this module.**
-> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) and [Module 2](../Module-02-IAM-Organizations/Reading.md) — for region/AZ and cross-account/SCP context
-> - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md) — instances live inside VPCs; Security Groups attach to ENIs
+> - [Module 1](../Module-01-Foundations-Well-Architected/Reading.md) and [Module 2](../Module-02-IAM-Organizations/Reading.md), for region/AZ and cross-account/SCP context
+> - [Module 3](../Module-03-EC2-Deep-Dive/Reading.md), instances live inside VPCs; Security Groups attach to ENIs
 > - IP networking fundamentals: CIDR notation, RFC 1918 private ranges, routing, NAT. If "/16 vs /24" sounds unfamiliar, do 30 minutes on Wikipedia's *Classless Inter-Domain Routing* article first
-> - OSI model layers 3 (network), 4 (transport), 7 (application) — needed to distinguish ALB/NLB/GWLB intuitively
+> - OSI model layers 3 (network), 4 (transport), 7 (application), needed to distinguish ALB/NLB/GWLB intuitively
 
 ---
 
@@ -45,8 +45,8 @@ VPC: 10.0.0.0/16  ──  Region (multi-AZ)
 | Component | Role |
 |-----------|------|
 | **CIDR block** | The VPC's IP range. Typically `/16` (65k IPs). Must be in private RFC1918 ranges. |
-| **Subnet** | A range within the VPC, tied to one AZ. /24 = 256 IPs (251 usable — AWS reserves 5). |
-| **Route Table** | Per-subnet routing rules — where traffic for which CIDRs goes. |
+| **Subnet** | A range within the VPC, tied to one AZ. /24 = 256 IPs (251 usable, AWS reserves 5). |
+| **Route Table** | Per-subnet routing rules, where traffic for which CIDRs goes. |
 | **Internet Gateway (IGW)** | Allows ↔ public internet. Attached at VPC level. |
 | **NAT Gateway / NAT Instance** | Outbound-only internet for private subnets. |
 | **Security Group** | Stateful firewall at the ENI level. Allow only. |
@@ -80,7 +80,7 @@ Private-subnet instances need a way to make *outbound* internet calls (yum updat
 
 ---
 
-## 🚦 VPC Endpoints — Talking to AWS Without The Internet
+## 🚦 VPC Endpoints, Talking to AWS Without The Internet
 
 VPC endpoints let resources inside your VPC reach AWS services **without** traffic going over the public internet (or the NAT, with its $$).
 
@@ -104,13 +104,13 @@ Private subnet → ENI with private IP → AWS service
 🎯 **Exam pattern:** "App in private subnet reads from S3, you want to eliminate NAT data transfer costs." → **Gateway endpoint for S3**.
 🎯 **Exam pattern:** "App in private subnet calls SQS without internet exposure." → **Interface endpoint for SQS** (PrivateLink).
 
-### AWS PrivateLink — share your service across accounts
+### AWS PrivateLink, share your service across accounts
 
 If you build a service on an NLB, you can expose it as a **PrivateLink service** that other VPCs (in your account or others') consume via an interface endpoint. No peering, no public internet.
 
 ---
 
-## 🔗 Connecting VPCs and On-Prem — The 5 Options
+## 🔗 Connecting VPCs and On-Prem, The 5 Options
 
 | Option | Use case | Limits |
 |--------|----------|--------|
@@ -120,7 +120,7 @@ If you build a service on an NLB, you can expose it as a **PrivateLink service**
 | **Site-to-Site VPN** | IPSec tunnel from on-prem to AWS over internet | Up to ~1.25 Gbps per tunnel; encrypted; quick to set up. |
 | **Direct Connect (DX)** | Dedicated private fiber from on-prem to AWS | 1, 10, 100 Gbps; weeks to provision; no internet; lowest latency. |
 
-### Peering vs TGW — when to switch?
+### Peering vs TGW, when to switch?
 
 - **2-3 VPCs**: peering is simple and free for the connection.
 - **5+ VPCs or hybrid hub-and-spoke**: TGW. Configuration of a mesh of peerings becomes a nightmare.
@@ -150,7 +150,7 @@ If you build a service on an NLB, you can expose it as a **PrivateLink service**
 | Scope | Per-ENI (per instance/RDS/etc.) | Per-subnet |
 | State | **Stateful** (return traffic auto-allowed) | **Stateless** (must allow both directions) |
 | Rules | **Allow only** | **Allow AND Deny** |
-| Order | All rules evaluated | Numbered — lowest number first |
+| Order | All rules evaluated | Numbered, lowest number first |
 | Default | New SG: allow ALL outbound, none inbound | Default NACL: allow ALL in/out |
 | Multiple per resource | Yes (multiple SGs per ENI) | One NACL per subnet |
 
@@ -229,7 +229,7 @@ Use separate AWS accounts (Organizations) per environment, peer or TGW for selec
 | "Public subnet auto-assigns public IPs" | Only if `auto-assign public IPv4` is enabled OR you allocate an EIP. |
 | "NAT Gateway is highly available out of the box" | Each NAT GW lives in ONE AZ. Deploy one per AZ for HA. |
 | "Security groups can deny traffic" | NO. SGs are allow-only. Use NACLs for explicit denies. |
-| "Internet Gateway is required for S3 access from a VPC" | NO. Use a **Gateway VPC Endpoint** for S3 — internal, free. |
+| "Internet Gateway is required for S3 access from a VPC" | NO. Use a **Gateway VPC Endpoint** for S3, internal, free. |
 | "Direct Connect encrypts traffic by default" | NO. Layer-1 private fiber, but data isn't encrypted. Add MACsec or run VPN over DX. |
 
 ---
@@ -247,41 +247,41 @@ Use separate AWS accounts (Organizations) per environment, peer or TGW for selec
 
 ---
 
-## 📖 Case Study — Knight Capital's 45-Minute, $440M Network/Deploy Disaster (August 1, 2012)
+## 📖 Case Study, Knight Capital's 45-Minute, $440M Network/Deploy Disaster (August 1, 2012)
 
-**Situation.** Knight Capital Group was one of the largest market makers on the NYSE — at peak, handling ~17% of all U.S. equities volume. On August 1, 2012, they planned to enable a new SEC-mandated "Retail Liquidity Program" feature. The deploy went to all 8 production trading servers, plus a 9th machine. Only on the 9th server, the deploy team had failed to update a legacy code path; a dormant decade-old function called `Power Peg` (last used in 2003) was unintentionally re-activated when the new flag set was rolled out.
+**Situation.** Knight Capital Group was one of the largest market makers on the NYSE, at peak, handling ~17% of all U.S. equities volume. On August 1, 2012, they planned to enable a new SEC-mandated "Retail Liquidity Program" feature. The deploy went to all 8 production trading servers, plus a 9th machine. Only on the 9th server, the deploy team had failed to update a legacy code path; a dormant decade-old function called `Power Peg` (last used in 2003) was unintentionally re-activated when the new flag set was rolled out.
 
-**Decision (the disaster).** At market open (9:30 ET), the 9th server began executing the dormant `Power Peg` logic against live markets. It placed buy and sell orders in **150 stocks** in a tight loop — buying high, selling low, with no safeguard. In **45 minutes**, Knight Capital accumulated a net long position of **$7B+** and a realized loss of **$440M** (per SEC Administrative Proceeding 3-15570, Oct 16, 2013). The firm's market cap fell 75% in two days. They were rescued by an emergency $400M capital raise and eventually acquired by Getco in December 2012.
+**Decision (the disaster).** At market open (9:30 ET), the 9th server began executing the dormant `Power Peg` logic against live markets. It placed buy and sell orders in **150 stocks** in a tight loop, buying high, selling low, with no safeguard. In **45 minutes**, Knight Capital accumulated a net long position of **$7B+** and a realized loss of **$440M** (per SEC Administrative Proceeding 3-15570, Oct 16, 2013). The firm's market cap fell 75% in two days. They were rescued by an emergency $400M capital raise and eventually acquired by Getco in December 2012.
 
 **Where the networking architecture failed.** The post-mortem (and the SEC's 2013 cease-and-desist order, freely available) identified architectural failures that map almost 1:1 onto SAA-C03 concepts:
 
-1. **No deployment isolation between servers** — the 9th server should have been in a *different VPC subnet* or used a separate launch template; there was no "canary" pattern
-2. **No automated rollback path** — operators saw alerts but had no scripted, tested rollback runbook (Operational Excellence pillar's "test recovery procedures")
-3. **No circuit-breaker / kill-switch** on the egress path — once trades were going out, there was no SG or NACL-equivalent that could *deny outbound traffic* to the exchange while the disaster unfolded
-4. **No anomaly detection** — order volume was 10× normal within seconds; a CloudWatch alarm on order rate would have paged within 60 seconds
-5. **The on-prem network had no equivalent of VPC Flow Logs** — they couldn't even quickly see *what* was being sent to the exchange
+1. **No deployment isolation between servers**, the 9th server should have been in a *different VPC subnet* or used a separate launch template; there was no "canary" pattern
+2. **No automated rollback path**, operators saw alerts but had no scripted, tested rollback runbook (Operational Excellence pillar's "test recovery procedures")
+3. **No circuit-breaker / kill-switch** on the egress path, once trades were going out, there was no SG or NACL-equivalent that could *deny outbound traffic* to the exchange while the disaster unfolded
+4. **No anomaly detection**, order volume was 10× normal within seconds; a CloudWatch alarm on order rate would have paged within 60 seconds
+5. **The on-prem network had no equivalent of VPC Flow Logs**, they couldn't even quickly see *what* was being sent to the exchange
 
 **Outcome.** Knight Capital was effectively eliminated as an independent firm. The SEC fined them $12M (in addition to the $440M loss). The incident became Harvard Business School case study #9-114-049 (*"Knight Capital's August 1, 2012 Algorithmic Trading Disaster"*) and is mandatory reading at MIT 6.005 and CMU 17-313.
 
 **Lesson for the exam / for practitioners.** Knight Capital is a network architecture lesson dressed as a trading disaster:
 
-- **Separate environments by VPC or by account** — production trading systems should live behind their own VPC with their own Security Groups
-- **Blue/green or canary deploys** — route 5% of traffic to the new version via ALB weighted target groups OR Route 53 weighted routing
-- **Outbound Security Groups CAN be tightened** — to allow only specific destinations and ports (Knight allowed open egress to the exchange)
-- **NACLs as a kill switch** — a deny rule pushed via automation can stop egress in <30 seconds during incident response
-- **VPC Flow Logs** — would have shown the abnormal egress pattern instantly
-- **CloudWatch alarms on custom metrics** (order rate per second) — could have triggered automated cutoff
+- **Separate environments by VPC or by account**, production trading systems should live behind their own VPC with their own Security Groups
+- **Blue/green or canary deploys**, route 5% of traffic to the new version via ALB weighted target groups OR Route 53 weighted routing
+- **Outbound Security Groups CAN be tightened**, to allow only specific destinations and ports (Knight allowed open egress to the exchange)
+- **NACLs as a kill switch**, a deny rule pushed via automation can stop egress in <30 seconds during incident response
+- **VPC Flow Logs**, would have shown the abnormal egress pattern instantly
+- **CloudWatch alarms on custom metrics** (order rate per second), could have triggered automated cutoff
 
 When the SAA exam asks "which combination of AWS services would have detected and limited a runaway deployment?" the answer is **VPC Flow Logs + CloudWatch alarms + Lambda automated remediation + per-environment SG isolation**. That's *exactly* the architecture the SEC mandated all market-making firms install after Knight.
 
 **Discussion (Socratic).**
-- **Q1.** Knight Capital had no canary deployment. The "fix" the industry adopted was canary + automated rollback. But canary requires *being able to detect "wrong"* — which Knight couldn't have done given they didn't know `Power Peg` was reactivated. At what level of the stack should the safeguard have lived: network, application, or business-logic? Argue all three.
-- **Q2.** A common refrain after Knight was "treat outbound the same as inbound" — i.e., explicitly allow-list which destinations a server can reach. This is operationally painful (every new endpoint requires a SG change). Defend AND attack the policy at a 1,000-engineer fintech.
+- **Q1.** Knight Capital had no canary deployment. The "fix" the industry adopted was canary + automated rollback. But canary requires *being able to detect "wrong"*, which Knight couldn't have done given they didn't know `Power Peg` was reactivated. At what level of the stack should the safeguard have lived: network, application, or business-logic? Argue all three.
+- **Q2.** A common refrain after Knight was "treat outbound the same as inbound", i.e., explicitly allow-list which destinations a server can reach. This is operationally painful (every new endpoint requires a SG change). Defend AND attack the policy at a 1,000-engineer fintech.
 - **Q3.** Could a multi-region active-active architecture (Module 10) have made Knight worse rather than better? Argue that *more redundancy* sometimes amplifies blast radius.
 
 ---
 
-## 💬 Discussion — Socratic Prompts
+## 💬 Discussion, Socratic Prompts
 
 1. **Transit Gateway vs full-mesh peering at scale.** TGW costs ~$0.05/hour per attachment + per-GB. At 30 VPCs, what's the break-even between mesh and TGW in pure dollar terms? Where does operational complexity tip the balance?
 2. **Public-subnet web tier vs private-with-ALB pattern.** Some shops put EC2 web servers in public subnets with EIPs; others use private subnets behind a public ALB. The latter is now considered best practice. Articulate the security advantages and the operational costs of the "private behind ALB" pattern.
@@ -295,9 +295,9 @@ When the SAA exam asks "which combination of AWS services would have detected an
 
 > **Where this leads.**
 > - **Inside this course:** Module 05 (S3) covers Gateway VPC Endpoints in depth. Module 08 (CloudFront, Global Accelerator) extends the networking story to the edge. Module 10 covers Direct Connect Gateway and Site-to-Site VPN for hybrid.
-> - **Cross-course:** `06-Azure-Administrator` Module 04 covers Azure VNets — same patterns, different names (peering = VNet peering, TGW ≈ Virtual WAN). `09-CompTIA-Security-Plus` Module 04 covers network segmentation theory.
+> - **Cross-course:** `06-Azure-Administrator` Module 04 covers Azure VNets, same patterns, different names (peering = VNet peering, TGW ≈ Virtual WAN). `09-CompTIA-Security-Plus` Module 04 covers network segmentation theory.
 > - **Practice:** Practice Exam 1 has 5 networking questions; Practice Exam 2 has 7; Final Mock has 9. Networking is the most-tested module by raw question count.
-> - **Real world:** Build a 3-tier VPC by hand (no CloudFormation) in a personal AWS account — the muscle memory matters for the exam.
+> - **Real world:** Build a 3-tier VPC by hand (no CloudFormation) in a personal AWS account, the muscle memory matters for the exam.
 
 ---
 
@@ -305,15 +305,15 @@ When the SAA exam asks "which combination of AWS services would have detected an
 
 | Term | Definition |
 |------|------------|
-| **VPC** | Virtual Private Cloud — your logically isolated network |
-| **CIDR** | Classless Inter-Domain Routing — IP range notation |
+| **VPC** | Virtual Private Cloud, your logically isolated network |
+| **CIDR** | Classless Inter-Domain Routing, IP range notation |
 | **Subnet** | A range within a VPC, tied to a single AZ |
-| **IGW** | Internet Gateway — VPC-level entry to public internet |
+| **IGW** | Internet Gateway, VPC-level entry to public internet |
 | **NAT Gateway** | Outbound-only IPv4 internet for private subnets |
 | **Egress-Only IGW** | NAT but for IPv6 |
 | **Security Group** | Stateful, instance-level firewall |
 | **NACL** | Stateless, subnet-level firewall |
-| **VPC Endpoint** | Gateway (S3/DDB) or Interface (PrivateLink) — reach AWS privately |
+| **VPC Endpoint** | Gateway (S3/DDB) or Interface (PrivateLink), reach AWS privately |
 | **VPC Peering** | Private connectivity between 2 VPCs (non-transitive) |
 | **Transit Gateway** | Hub-and-spoke router for many VPCs + on-prem |
 | **Direct Connect** | Dedicated private fiber from on-prem to AWS |
@@ -331,7 +331,7 @@ You now know:
 - 🏗️ VPC anatomy (CIDR, subnets, route tables, IGW, NAT)
 - 🚪 NAT Gateway vs NAT Instance and how to make it HA
 - 🚦 Gateway vs Interface VPC endpoints (and PrivateLink)
-- 🔗 Peering vs TGW vs DX vs VPN — the 5 connection options
+- 🔗 Peering vs TGW vs DX vs VPN, the 5 connection options
 - 🛡️ SGs vs NACLs (stateful vs stateless)
 - 🧭 Two-tier, three-tier, and hub-and-spoke patterns
 - 🚨 The 8 most-tested networking traps
@@ -347,19 +347,19 @@ You now know:
 ## 📚 Further Sources (This Module)
 
 **AWS official**
-- 📖 **VPC User Guide** — `docs.aws.amazon.com/vpc/latest/userguide/`
-- 📖 **Transit Gateway Best Practices** — `docs.aws.amazon.com/vpc/latest/tgw/tgw-best-design-practices.html`
-- 📖 **Direct Connect User Guide** — `docs.aws.amazon.com/directconnect/latest/UserGuide/`
-- 📖 **VPC Connectivity Options Whitepaper** — `docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/welcome.html`
-- 📖 **AWS Builders' Library — *"Reliability, constant work, and a good cup of coffee"* (Colm MacCárthaigh)** — the classic on network-level constant-work systems.
+- 📖 **VPC User Guide**, `docs.aws.amazon.com/vpc/latest/userguide/`
+- 📖 **Transit Gateway Best Practices**, `docs.aws.amazon.com/vpc/latest/tgw/tgw-best-design-practices.html`
+- 📖 **Direct Connect User Guide**, `docs.aws.amazon.com/directconnect/latest/UserGuide/`
+- 📖 **VPC Connectivity Options Whitepaper**, `docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/welcome.html`
+- 📖 **AWS Builders' Library *"Reliability, constant work, and a good cup of coffee"* (Colm MacCárthaigh)** the classic on network-level constant-work systems.
 
 **re:Invent talks**
-- 🎤 **NET301 (2023): *Advanced VPC design and new capabilities*** — the deep technical talk that returns yearly.
-- 🎤 **NET310 (2023): *AWS networking foundations*** — the SAA-aligned 60-minute summary.
-- 🎤 **NET402 (2023): *Inside the AWS network*** — for nerds who want the physical layer story.
+- 🎤 **NET301 (2023): *Advanced VPC design and new capabilities***, the deep technical talk that returns yearly.
+- 🎤 **NET310 (2023): *AWS networking foundations***, the SAA-aligned 60-minute summary.
+- 🎤 **NET402 (2023): *Inside the AWS network***, for nerds who want the physical layer story.
 
 **Academic & incident references**
-- 📄 **SEC Administrative Proceeding 3-15570 (October 2013)** — *In the Matter of Knight Capital Americas LLC.* Free PDF on `sec.gov`. The official disaster post-mortem.
+- 📄 **SEC Administrative Proceeding 3-15570 (October 2013)**, *In the Matter of Knight Capital Americas LLC.* Free PDF on `sec.gov`. The official disaster post-mortem.
 - 📚 **Harvard Business School Case #9-114-049 (2014).** *Knight Capital's August 1, 2012 Algorithmic Trading Disaster.* Boyd & Cremer.
-- 📖 **RFC 1918 (1996).** *Address Allocation for Private Internets.* IETF — the canonical reference for VPC CIDR planning.
+- 📖 **RFC 1918 (1996).** *Address Allocation for Private Internets.* IETF, the canonical reference for VPC CIDR planning.
 - 📖 **Tanenbaum, Andrew & Wetherall, David (2011).** *Computer Networks*, 5th ed., Pearson. The standard networking textbook; chapters 5 and 7 cover NAT, VPN, and routing.

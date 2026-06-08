@@ -18,7 +18,7 @@
 .vg-section-desc { font-size: 14px; color: #64748b; margin: 0 0 4px; }
 </style>
 
-# 🎥 Module 3 Videos: Storage — RAID, SAN, NAS
+# 🎥 Module 3 Videos: Storage, RAID, SAN, NAS
 
 > **How to use:** Pause and draw the array on paper as the speaker explains. Storage clicks when you sketch the disks and the parity blocks yourself.
 
@@ -38,7 +38,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">SAN vs NAS — Block vs File</p>
+      <p class="vg-title">SAN vs NAS, Block vs File</p>
       <p class="vg-creator">Lawrence Systems</p>
       <span class="vg-duration">⏱ 14 min · The categorical split</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">NVMe-oF — RoCE vs TCP</p>
+      <p class="vg-title">NVMe-oF, RoCE vs TCP</p>
       <p class="vg-creator">SNIA community</p>
       <span class="vg-duration">⏱ 20 min · Next-gen block transport</span>
     </div>
@@ -137,7 +137,7 @@ Answer these in your notebook:
 2. Pick: VM datastore for a SQL Server → SAN or NAS? Marketing's photo library → SAN or NAS?
 3. iSCSI port + transport?
 4. What does multipathing protect against, and what does it NOT protect against?
-5. Zoning vs LUN masking — at what layer is each enforced?
-6. Synchronous vs asynchronous replication — RPO impact of each?
+5. Zoning vs LUN masking, at what layer is each enforced?
+6. Synchronous vs asynchronous replication, RPO impact of each?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

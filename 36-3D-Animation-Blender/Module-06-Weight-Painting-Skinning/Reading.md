@@ -7,9 +7,9 @@ title: "Module 6: Weight Painting & Skinning"
 
 ## The Map Between Bone and Skin
 
-When a real arm bends, thousands of muscle fibers, fat layers, and skin cells deform in concert — the bicep bulges, the inner elbow compresses, the outer elbow stretches. No computer program can simulate all of this from first principles in real time. Instead, character technical directors approximate it with a system called **skinning**: assigning each vertex in the mesh a weight that determines how strongly each bone pulls it.
+When a real arm bends, thousands of muscle fibers, fat layers, and skin cells deform in concert, the bicep bulges, the inner elbow compresses, the outer elbow stretches. No computer program can simulate all of this from first principles in real time. Instead, character technical directors approximate it with a system called **skinning**: assigning each vertex in the mesh a weight that determines how strongly each bone pulls it.
 
-A weight of 1.0 on a vertex for "UpperArm.L" means that vertex moves exactly as the upper arm bone moves. A weight of 0.5 each for "UpperArm.L" and "LowerArm.L" means the vertex is shared equally — it sits at the elbow joint, following the average of both bones. This blending is what creates the smooth deformation of a living character.
+A weight of 1.0 on a vertex for "UpperArm.L" means that vertex moves exactly as the upper arm bone moves. A weight of 0.5 each for "UpperArm.L" and "LowerArm.L" means the vertex is shared equally, it sits at the elbow joint, following the average of both bones. This blending is what creates the smooth deformation of a living character.
 
 Weight painting is the process of assigning these weights interactively, using a paint brush directly on the surface of the mesh.
 
@@ -56,7 +56,7 @@ To enter Weight Paint Mode:
 After applying automatic weights, systematic debugging prevents animation problems before they occur. The correct workflow:
 
 1. **Enter Pose Mode on the armature** (Tab or Ctrl+Tab with armature selected)
-2. **Shift+click the mesh** to enter Weight Paint mode while the armature is in Pose Mode — this allows simultaneous posing and painting
+2. **Shift+click the mesh** to enter Weight Paint mode while the armature is in Pose Mode, this allows simultaneous posing and painting
 3. Rotate each bone 90° in Pose Mode: **R → X → 90** for the shoulder, **R → Z → 90** for the spine
 4. Look for: blue vertices that don't move (missing weight), red vertices captured by wrong bone
 5. In the Object Data Properties → Vertex Groups, select each group one at a time to inspect the heat map
@@ -67,11 +67,11 @@ After applying automatic weights, systematic debugging prevents animation proble
 |---|---|---|
 | Vertices stuck (blue when rotated) | Body part doesn't move | Add weight to correct bone's vertex group; Draw brush, weight 1.0 |
 | Wrong bone capture | Chest vertices move with arm bone | Reduce arm bone weight; increase chest bone weight; Auto Normalize re-balances |
-| Armpit collapse | Skin bag when arm raises | See section 6.4 — manual weight redistribution |
+| Armpit collapse | Skin bag when arm raises | See section 6.4, manual weight redistribution |
 | Finger tips wrong | All fingers move when one bends | Limit each fingertip vertex to only its top phalanx bone |
 | Clothes following wrong bones | Shirt collar moves with the hat bone | Re-run Ctrl+P with just collar + spine selected |
 
-> ⚠️ **Gotcha — Vertex Groups Must Match Bone Names Exactly:** The Armature modifier links vertex groups to bones by matching names character-by-character, including case. A vertex group named "upperarm.L" will NOT be captured by a bone named "UpperArm.L" — case mismatch = no deformation. If a bone has correct weight-painted vertices but the mesh still doesn't move, check the name match between the vertex group (Object Data → Vertex Groups) and the bone (Pose Mode → Bone Properties).
+> ⚠️ **Gotcha Vertex Groups Must Match Bone Names Exactly:** The Armature modifier links vertex groups to bones by matching names character-by-character, including case. A vertex group named "upperarm.L" will NOT be captured by a bone named "UpperArm.L" case mismatch = no deformation. If a bone has correct weight-painted vertices but the mesh still doesn't move, check the name match between the vertex group (Object Data → Vertex Groups) and the bone (Pose Mode → Bone Properties).
 
 ---
 
@@ -91,7 +91,7 @@ After applying automatic weights, systematic debugging prevents animation proble
 - **Radius:** Brush size in pixels; scroll wheel to resize
 - **Strength:** Opacity/pressure of the brush stroke (0.1 = subtle; 1.0 = instant override)
 - **Blend mode:** Mix, Add, Subtract, Multiply
-- **Auto Normalize:** Ensures all bone weights at a vertex sum to 1.0 — critical to enable
+- **Auto Normalize:** Ensures all bone weights at a vertex sum to 1.0, critical to enable
 
 > 🚨 **Trap:** **Always enable Auto Normalize** (found in the Weight Paint header → Options → Auto Normalize). Without it, a vertex can have total weights summing to 2.0 or more, causing the mesh to "double-move" or distort. Auto Normalize enforces the physical constraint that all influences must sum to exactly 1.0.
 
@@ -126,7 +126,7 @@ After applying automatic weights, systematic debugging prevents animation proble
 
 ## 6.4 The Skin Bag Problem and How to Fix It
 
-The "skin bag" is the most common weight painting failure. When the arm is raised, the armpit geometry — which is shared between the shoulder, upper arm, and chest bones — collapses into a messy, deflated shape.
+The "skin bag" is the most common weight painting failure. When the arm is raised, the armpit geometry which is shared between the shoulder, upper arm, and chest bones collapses into a messy, deflated shape.
 
 **Root cause:** The armpit vertices are not correctly distributed between the surrounding bones. Automatic weights often give them too much influence to the upper arm bone (which pulls them away from the body when the arm raises).
 
@@ -140,7 +140,7 @@ The "skin bag" is the most common weight painting failure. When the arm is raise
 5. Select the Shoulder bone's vertex group
 6. Paint weight 0.4–0.5 onto the outer shoulder armpit area
 7. Reduce UpperArm.L vertex group weights in the deepest armpit area to 0.2–0.3
-8. Check Auto Normalize is on — the weights redistribute
+8. Check Auto Normalize is on, the weights redistribute
 9. Exit and test in Pose Mode
 
 **Step 2: Corrective Shape Key (if still needed)**
@@ -156,9 +156,9 @@ The "skin bag" is the most common weight painting failure. When the arm is raise
 **Creating facial shape keys:**
 1. Object Data Properties → Shape Keys → "+" to add "Basis" (the neutral face)
 2. "+" again → adds a new shape key (e.g., "Smile")
-3. Enter Edit Mode — you are now editing the "Smile" shape, not the Basis
+3. Enter Edit Mode, you are now editing the "Smile" shape, not the Basis
 4. Move/sculpt vertices to create the smile expression
-5. Exit Edit Mode — the shape key is stored
+5. Exit Edit Mode, the shape key is stored
 6. Slide the value (0–1) to blend from neutral to smile
 
 **Common facial shape keys for production characters:**
@@ -191,15 +191,15 @@ The "skin bag" is the most common weight painting failure. When the arm is raise
 **Shape key blend modes:**
 - The default **Relative** shape keys add their deformation on top of the Basis
 - Multiple active shape keys combine: if Smile is at 0.5 and Mouth.Open is at 0.5, both are half-active simultaneously
-- **Shape Key Pin:** With Pin enabled in the Shape Keys panel, the viewport shows only that one shape key's deformation — useful for sculpting corrections
+- **Shape Key Pin:** With Pin enabled in the Shape Keys panel, the viewport shows only that one shape key's deformation, useful for sculpting corrections
 
-> ⚠️ **Gotcha — Editing the Basis vs. Editing a Shape Key:** If you enter Edit Mode on a mesh that has shape keys and move vertices, you are editing the **Basis** shape key (and all other shape keys move with it proportionally). If you select a specific shape key in the list and then enter Edit Mode, you are editing that specific shape key's deformation. The confusion: Edit Mode always shows all vertices in their current blended state. Use the Pin button to isolate a specific shape for editing clarity.
+> ⚠️ **Gotcha, Editing the Basis vs. Editing a Shape Key:** If you enter Edit Mode on a mesh that has shape keys and move vertices, you are editing the **Basis** shape key (and all other shape keys move with it proportionally). If you select a specific shape key in the list and then enter Edit Mode, you are editing that specific shape key's deformation. The confusion: Edit Mode always shows all vertices in their current blended state. Use the Pin button to isolate a specific shape for editing clarity.
 
 ---
 
 ## 6.6 Driving Shape Keys from Bones
 
-In production rigs, shape keys are driven by bone rotation — moving the jaw bone down automatically triggers the Mouth.Open shape key, so the animator only controls the jaw bone, not the shape key slider directly.
+In production rigs, shape keys are driven by bone rotation, moving the jaw bone down automatically triggers the Mouth.Open shape key, so the animator only controls the jaw bone, not the shape key slider directly.
 
 **Setting up a bone-driven shape key:**
 1. In Object Data Properties → Shape Keys, right-click the shape key value → Add Driver
@@ -211,16 +211,16 @@ In production rigs, shape keys are driven by bone rotation — moving the jaw bo
 3. Map the input range (e.g., 0° → 0 influence, -30° → 1 influence)
 4. Test: rotate the jaw bone → the mouth opens
 
-This is the standard technique used in *Sprite Fright* and virtually all production character rigs — the animator sees only intuitive bone controls, not a list of sliders.
+This is the standard technique used in *Sprite Fright* and virtually all production character rigs, the animator sees only intuitive bone controls, not a list of sliders.
 
 ---
 
-## 6.6b Coffee Run (2020) — Two-Artist Skinning Pipeline
+## 6.6b Coffee Run (2020), Two-Artist Skinning Pipeline
 
 The Blender Foundation's *Coffee Run* (2020) was produced by just two artists (Dedouze and Julien Kaspar) in three months. Their documented weight painting approach for the single stylized female character:
 
 **Approach:**
-- Automatic weights were applied with a simplified "proxy mesh" rather than the final mesh — a low-poly cage approximately matching the body shape
+- Automatic weights were applied with a simplified "proxy mesh" rather than the final mesh, a low-poly cage approximately matching the body shape
 - The proxy mesh weights were baked, then transferred to the final mesh using Blender's **Data Transfer modifier** (Object → Data Transfer → Vertex Data → Vertex Groups)
 - This "bake low, transfer high" method avoids the performance overhead of running Automatic Weights on a high-polygon mesh
 
@@ -229,7 +229,7 @@ The Blender Foundation's *Coffee Run* (2020) was produced by just two artists (D
 2. Add Modifier → Generate → Data Transfer
 3. Set Source Object to the proxy mesh
 4. Enable Vertex Data → Vertex Groups
-5. Apply the modifier — vertex groups from the proxy are mapped onto the high-poly mesh by surface position
+5. Apply the modifier, vertex groups from the proxy are mapped onto the high-poly mesh by surface position
 
 **The lesson:** For production with tight timelines, weight painting proxy meshes and transferring to final meshes is faster and more reliable than painting directly on the high-resolution character. The *Coffee Run* team painted on a 1,200-polygon proxy and transferred to a 45,000-polygon final mesh.
 
@@ -242,7 +242,7 @@ The Blender Foundation's *Coffee Run* (2020) was produced by just two artists (D
 The *Sprite Fright* making-of documentation notes that the technical directors spent approximately **2–4 days per character** on weight painting and corrective shape keys, even after using automatic weights as a base. The breakdown:
 
 - **Day 1:** Automatic weights applied; gross corrections made (major stuck vertices, obvious wrong-bone assignments)
-- **Day 2:** Per-limb testing and manual painting — all limbs rotated through full range of motion; armpits, hips, knuckles corrected
+- **Day 2:** Per-limb testing and manual painting, all limbs rotated through full range of motion; armpits, hips, knuckles corrected
 - **Day 3 (if needed):** Corrective shape keys for shoulder, armpit, and hip; drivers set up
 - **Day 4 (if needed):** Facial shape keys verified through full dialogue performance range
 
@@ -269,15 +269,15 @@ The lesson: weight painting is not a one-click step. Budget time for it. A 4-day
 The principles of weight painting apply universally, but non-humanoid characters (animals, robots, stylized creatures) have specific patterns:
 
 **Quadruped skinning (four-legged animals):**
-- The **spine** of a quadruped has far more range of motion (up-down flex) than a biped — use 5–7 spine bones with FK control
-- **Shoulder/hip sockets** on quadrupeds rotate primarily in the sagittal plane (forward/backward) rather than outward like biped arms — the IK foot planting constraint is especially important since all four feet plant simultaneously
+- The **spine** of a quadruped has far more range of motion (up-down flex) than a biped, use 5–7 spine bones with FK control
+- **Shoulder/hip sockets** on quadrupeds rotate primarily in the sagittal plane (forward/backward) rather than outward like biped arms, the IK foot planting constraint is especially important since all four feet plant simultaneously
 - **Tail:** Use Spline IK along a Bezier curve; the tail automatically follows the curve shape; animators control the curve control points rather than individual tail bones
 - **Head/neck weight:** The neck bone weight should transition smoothly from the chest over 3–4 vertebra bones; abrupt transitions create "snake swallowing" artifacts at the neck-body junction
 
 **Robot/mechanical skinning:**
 - Mechanical characters typically use **hard weight assignments** (each vertex fully owned by one bone, weight = 1.0, no blending)
 - This gives crisp panel separation without organic blending
-- The tradeoff: no smooth deformation at joints — but mechanical characters should not deform organically at joints
+- The tradeoff: no smooth deformation at joints, but mechanical characters should not deform organically at joints
 - **Exception:** Chest pistons and flexible conduit mesh pieces need weight blending between the two endpoint bones to simulate realistic stretching as the robot moves
 
 **Cloth and accessory weight painting:**
@@ -293,11 +293,11 @@ Before starting weight painting, the mesh must be confirmed symmetric at the top
 
 **Pre-weight-painting symmetry check:**
 1. Edit Mode → Select the center edge loop (the seam along the face/body center)
-2. **Mesh → Snap to Symmetry** (X Axis) — snaps centerline vertices to exact X=0
+2. **Mesh → Snap to Symmetry** (X Axis), snaps centerline vertices to exact X=0
 3. This guarantees the mirror point is exactly at world center
 4. Weight painting with X Mirror will then work correctly
 
-**After asymmetric sculpting:** If you've added asymmetric surface detail (wrinkles on one side of the face only), enable **X Mirror** in Weight Paint but understand that the vertex groups will NOT mirror — only the paint strokes mirror. The underlying mesh is asymmetric; the weight painting compensates by painting both sides simultaneously from the dominant side.
+**After asymmetric sculpting:** If you've added asymmetric surface detail (wrinkles on one side of the face only), enable **X Mirror** in Weight Paint but understand that the vertex groups will NOT mirror, only the paint strokes mirror. The underlying mesh is asymmetric; the weight painting compensates by painting both sides simultaneously from the dominant side.
 
 **Common workflow breakdown:** The model was built symmetrically → Mirror Modifier applied → asymmetric details added in Sculpt Mode → now weight painting won't mirror correctly because vertex positions are asymmetric. The fix: complete all weight painting BEFORE asymmetric sculpt details. Always: topology → rig → skin → then asymmetric detail (via corrective shape keys, not Sculpt Mode).
 
@@ -309,7 +309,7 @@ The Blender Institute published the character technical director's documentation
 
 **The "double shoulder" approach:** The *Sprite Fright* TDs noted that a single Shoulder bone cannot handle the full range of arm raises (forward, lateral, diagonal) without the armpit collapsing. Their solution: add a second "Shoulder Secondary" bone with a Rotation Constraint that mirrors 50% of the primary Shoulder bone's rotation. The secondary bone's vertex group captures the inner armpit geometry. This "dual bone" approach spreads the deformation responsibility and eliminates the need for corrective shape keys at the shoulder entirely.
 
-**Lip sync shape keys:** The main *Sprite Fright* characters used **FACS-aligned** (Facial Action Coding System) shape keys — a standardized set of 44 action units that map to muscle movements. The production used a subset of the FACS units relevant to their character designs: AU1 (inner brow raise), AU4 (brow lowerer), AU6 (cheek raiser), AU12 (lip corner puller = smile), AU15 (lip corner depressor), AU25 (lips part), AU26 (jaw drop). This FACS-based approach is the industry standard at every major animation studio.
+**Lip sync shape keys:** The main *Sprite Fright* characters used **FACS-aligned** (Facial Action Coding System) shape keys, a standardized set of 44 action units that map to muscle movements. The production used a subset of the FACS units relevant to their character designs: AU1 (inner brow raise), AU4 (brow lowerer), AU6 (cheek raiser), AU12 (lip corner puller = smile), AU15 (lip corner depressor), AU25 (lips part), AU26 (jaw drop). This FACS-based approach is the industry standard at every major animation studio.
 
 > 🎯 **What the exam tests:** The certification tests awareness of industry-standard facial rigging systems. Know that FACS (Facial Action Coding System) is a system for describing all possible facial movements using numbered Action Units, and that professional Blender rigs use FACS-aligned shape keys for consistency with face capture pipelines.
 
@@ -327,7 +327,7 @@ Beyond the Data Transfer modifier (covered in section 6.6b), Blender offers addi
 
 **Sort Vertex Groups by Name:** Alphabetical sort (Object Data → Vertex Groups → Dropdown → Sort Alphabetically) makes finding vertex groups faster in large rigs with 50+ groups.
 
-> 🎯 **What the exam tests:** The Limit Total operation is specifically tested because game engines (Unity, Unreal) only support a maximum of 4 bone influences per vertex. Blender characters with many more influences per vertex (common after Automatic Weights) must have Limit Total applied before export. The certification may ask: what does the Limit Total operation do? — Answer: it reduces each vertex to a maximum number of bone influences and re-normalizes the remaining weights.
+> 🎯 **What the exam tests:** The Limit Total operation is specifically tested because game engines (Unity, Unreal) only support a maximum of 4 bone influences per vertex. Blender characters with many more influences per vertex (common after Automatic Weights) must have Limit Total applied before export. The certification may ask: what does the Limit Total operation do?, Answer: it reduces each vertex to a maximum number of bone influences and re-normalizes the remaining weights.
 
 ---
 
@@ -368,23 +368,23 @@ Beyond the Data Transfer modifier (covered in section 6.6b), Blender offers addi
 
 ## 📚 Next Steps
 
-Proceed to [Module 7: Keyframe Animation & Graph Editor](../Module-07-Keyframe-Graph-Editor/Reading.md) — your rigged, weighted character is ready to animate.
+Proceed to [Module 7: Keyframe Animation & Graph Editor](../Module-07-Keyframe-Graph-Editor/Reading.md), your rigged, weighted character is ready to animate.
 
 ---
 
 ## 📖 Further Reading
 
-- 📖 **Blender Manual — Weight Paint Mode** (docs.blender.org)
-- 📖 **Blender Manual — Shape Keys** (docs.blender.org)
-- 📖 **CGCookie — "Character Skinning in Blender"** (YouTube, see Videos.md)
-- 📖 **Derakhshani, Dariush. *Introducing Character Animation with Blender.* Sybex** — chapter 9 (weight painting)
+- 📖 **Blender Manual, Weight Paint Mode** (docs.blender.org)
+- 📖 **Blender Manual, Shape Keys** (docs.blender.org)
+- 📖 **CGCookie, "Character Skinning in Blender"** (YouTube, see Videos.md)
+- 📖 **Derakhshani, Dariush. *Introducing Character Animation with Blender.* Sybex**, chapter 9 (weight painting)
 
-*[Module complete — see README for next steps and related tracks.]*
+*[Module complete, see README for next steps and related tracks.]*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
 
-> *Key point: The principle covered in this module applies across every major production pipeline — from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*
+> *Key point: The principle covered in this module applies across every major production pipeline, from indie Blender shorts to Pixar feature films. The specific tools change; the underlying craft standard does not.*

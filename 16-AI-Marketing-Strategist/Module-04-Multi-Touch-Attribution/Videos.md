@@ -20,7 +20,7 @@
 
 # 🎥 Module 4 Videos: Multi-Touch Attribution
 
-> **How to use:** This is the most-debated topic in modern measurement. Watch the Northbeam + Rockerbox CEO interviews — even when they're pitching, they reveal which problems they're actually solving versus marketing-around.
+> **How to use:** This is the most-debated topic in modern measurement. Watch the Northbeam + Rockerbox CEO interviews, even when they're pitching, they reveal which problems they're actually solving versus marketing-around.
 
 ## ⭐ Essential watching (~95 min)
 
@@ -144,7 +144,7 @@
 |---------|-----|
 | **Reforge** | Strategic frame on measurement |
 | **Avinash Kaushik** | "See-Think-Do-Care" + measurement-first thinking |
-| **StatQuest** | The math behind ML attribution — clearest on YouTube |
+| **StatQuest** | The math behind ML attribution, clearest on YouTube |
 | **Northbeam / Rockerbox** | Vendor content, but reveals current methodology |
 | **Measured** | Strong incrementality content |
 | **Andrew Chen (Reforge)** | Growth-side measurement frame |

@@ -8,12 +8,12 @@
 
 | Strategy | RPO | RTO | Cost | What's Running In DR Region |
 |----------|-----|-----|------|-----------------------------|
-| **Backup & Restore** | Hours | Hours | $ | Nothing — backups only |
+| **Backup & Restore** | Hours | Hours | $ | Nothing, backups only |
 | **Pilot Light** | Minutes | 10s of min | $$ | Core data + DB; compute off |
 | **Warm Standby** | Sec–min | Minutes | $$$ | Scaled-down full stack always running |
 | **Multi-Site Active-Active** | Near 0 | Near 0 | $$$$ | Both regions live and serving |
 
-🧠 **"Backup, Pilot, Warm, Multi"** — hotter & pricier going down.
+🧠 **"Backup, Pilot, Warm, Multi"**, hotter & pricier going down.
 
 ---
 
@@ -79,8 +79,8 @@
 - "Multi-AZ alone is regional DR"
 - "Active-active is always best"
 - "Just use FTP" (use Transfer Family)
-- "DMS converts schemas" (no — SCT does)
-- "Outposts is owned by AWS in their DC" (no — yours)
+- "DMS converts schemas" (no, SCT does)
+- "Outposts is owned by AWS in their DC" (no, yours)
 
 ---
 

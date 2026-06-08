@@ -174,7 +174,7 @@ D. 443
 
 ---
 
-### Q21. A network printer prints garbled output for one user only — other users print fine. The MOST likely cause: *(Apply)*
+### Q21. A network printer prints garbled output for one user only, other users print fine. The MOST likely cause: *(Apply)*
 A. The printer is failing
 B. The user has the wrong driver installed
 C. Wi-Fi outage
@@ -223,7 +223,7 @@ The fuser uses heat + pressure to melt toner permanently into paper fibers.
 Clogged nozzles are the #1 inkjet cause of faded/streaky output. The utility is built into the printer.
 
 ### Q5: **A. Failing head OR aged thermal paper**
-Direct thermal paper is heat-sensitive — exposure to environmental heat continues to "develop" it (or fade old paper). Combined with possible head degradation.
+Direct thermal paper is heat-sensitive, exposure to environmental heat continues to "develop" it (or fade old paper). Combined with possible head degradation.
 
 ### Q6: **B. Heat-sensitive paper darkens when heated**
 Direct thermal = no ink, no ribbon. The paper itself reacts to heat.
@@ -259,13 +259,13 @@ Drivers installed via Spooler ran as SYSTEM. Domain controllers running Spooler 
 Multi-Function Printer. Standard abbreviation.
 
 ### Q17: **C. Cyan, Magenta, Yellow, Key (black)**
-"K" historically stands for "Key" (key plate). Some sources say "blacK" — both are accepted.
+"K" historically stands for "Key" (key plate). Some sources say "blacK", both are accepted.
 
 ### Q18: **B. Windows Printer Sharing or USB print server**
 Both solutions allow other PCs to print to a USB-only printer over the network.
 
 ### Q19: **B. USB-C with DisplayPort Alt Mode + USB-PD**
-You need both protocols active over the same cable. Many cheap USB-C cables are USB 2.0 only — won't carry display.
+You need both protocols active over the same cable. Many cheap USB-C cables are USB 2.0 only, won't carry display.
 
 ### Q20: **B. 631**
 IPP = TCP 631. IPPS = same port with TLS. Port 9100 is the older raw-LPR/JetDirect port.
@@ -306,4 +306,4 @@ Meets all the requirements. Inkjet is overpriced per page for office volume; imp
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then **[Module 7 — Operating Systems](../Module-07-Operating-Systems/Reading.md) (Core 2 begins!)**
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then **[Module 7, Operating Systems](../Module-07-Operating-Systems/Reading.md) (Core 2 begins!)**

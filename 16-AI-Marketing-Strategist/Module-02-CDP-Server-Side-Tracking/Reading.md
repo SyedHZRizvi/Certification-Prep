@@ -1,27 +1,27 @@
 # Module 2: CDPs & Server-Side Tracking 🛰️
 
-> **Why this module matters:** The 2024–2026 collapse of the third-party cookie didn't kill marketing measurement — it forced every serious team to rebuild it on a *first-party-data + server-side* foundation. If you cannot draw the diagram of how an event flows from a user's browser through your CDP into your warehouse and back out to Meta's CAPI endpoint, you cannot be a senior marketing strategist in 2026.
+> **Why this module matters:** The 2024–2026 collapse of the third-party cookie didn't kill marketing measurement, it forced every serious team to rebuild it on a *first-party-data + server-side* foundation. If you cannot draw the diagram of how an event flows from a user's browser through your CDP into your warehouse and back out to Meta's CAPI endpoint, you cannot be a senior marketing strategist in 2026.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - The basic web request/response model — what an HTTP POST looks like, what a cookie is, what a tag is — covered in [Course 14 Module 8: Analytics & Measurement Basics](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
-> - The OKR / KPI-tree vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs/Reading.md) — because you'll wire the CDP to support those KPIs.
-> - Privacy-regulation literacy at a beginner level (GDPR, CCPA exist) — covered in [Course 14 Module 9: AI Ethics, Privacy & Compliance](../../14-AI-Marketing-Foundations/Module-09-AI-Ethics-Privacy-Compliance/Reading.md).
+> - The basic web request/response model what an HTTP POST looks like, what a cookie is, what a tag is covered in [Course 14 Module 8: Analytics & Measurement Basics](../../14-AI-Marketing-Foundations/Module-08-Analytics-Measurement-Basics/Reading.md).
+> - The OKR / KPI-tree vocabulary from [Module 1](../Module-01-Strategic-Frameworks-OKRs/Reading.md), because you'll wire the CDP to support those KPIs.
+> - Privacy-regulation literacy at a beginner level (GDPR, CCPA exist), covered in [Course 14 Module 9: AI Ethics, Privacy & Compliance](../../14-AI-Marketing-Foundations/Module-09-AI-Ethics-Privacy-Compliance/Reading.md).
 > If "first-party cookie", "DNS A record", or "container tag" feel unfamiliar, spend 30 minutes on the foundations first.
 
 ---
 
 ## 🛍️ A Story: How Stitch Fix's CDP Saved a $2B Business
 
-In 2018, Stitch Fix had a tracking problem that none of its competitors had — but every modern e-commerce company will have within five years. Stitch Fix's revenue model wasn't "buy widget → ship widget." It was *"answer 60 style questions → receive a box of 5 hand-picked items → keep what you want → return the rest."* The customer journey had **34 distinct events** spread across web, mobile app, stylist text messages, email, and physical return packaging. The CMO needed to know, for each marketing dollar spent, how it influenced the *third Fix* (the third box a customer received) because that was the activation threshold — customers who took 3+ fixes had 85%+ retention 12 months later. Customers who churned after Fix #1 had 11% retention.
+In 2018, Stitch Fix had a tracking problem that none of its competitors had but every modern e-commerce company will have within five years. Stitch Fix's revenue model wasn't "buy widget → ship widget." It was *"answer 60 style questions → receive a box of 5 hand-picked items → keep what you want → return the rest."* The customer journey had **34 distinct events** spread across web, mobile app, stylist text messages, email, and physical return packaging. The CMO needed to know, for each marketing dollar spent, how it influenced the *third Fix* (the third box a customer received) because that was the activation threshold customers who took 3+ fixes had 85%+ retention 12 months later. Customers who churned after Fix #1 had 11% retention.
 
 The problem: events lived in 14 different SaaS tools. The web SDK fired into Google Analytics. The app SDK fired into Amplitude. Email opens were in Iterable. SMS was in Twilio. Stylist actions were in an internal admin tool. Returns were in a warehouse system. To answer the question "did this paid Instagram dollar drive a 3rd Fix?", a data engineer had to cobble together six exports, normalize three user-ID formats, and hand the result to an analyst three days later.
 
-Stitch Fix's solution was a **Customer Data Platform** — a single piece of infrastructure that:
+Stitch Fix's solution was a **Customer Data Platform**, a single piece of infrastructure that:
 
 1. Collected all 34 event types from all 14 tools into one unified stream.
 2. Resolved every device, cookie, email, and customer-ID to a single canonical user.
 3. Stored the unified stream in a warehouse where analysts could query it.
-4. *Activated* the data back to marketing tools — pushing "users at 80% probability of reaching Fix #3" back into Meta and Google as a custom audience.
+4. *Activated* the data back to marketing tools, pushing "users at 80% probability of reaching Fix #3" back into Meta and Google as a custom audience.
 
 This is the canonical use case for a CDP. By 2022, Stitch Fix's media-mix model was running with under 4 hours of data latency. The "3rd Fix probability" audience drove a 38% lift in paid-acquisition ROAS. None of this was possible *before* the CDP and *none* of it would survive the death of the third-party cookie if it hadn't been built first-party from day one.
 
@@ -29,7 +29,7 @@ This is the module where you learn to architect that.
 
 ---
 
-## 🍪 First — Why the Third-Party Cookie Died
+## 🍪 First, Why the Third-Party Cookie Died
 
 You will be asked this on every interview for a senior marketing role for the next decade. The short version:
 
@@ -53,11 +53,11 @@ The fix is **first-party data + server-side tracking**. That fix requires a CDP 
 
 A **Customer Data Platform** is purpose-built software with five properties (the **CDP Institute** canonical definition):
 
-1. **Packaged software** — not an internal project.
+1. **Packaged software**, not an internal project.
 2. Creates a **persistent, unified database** of all customer data.
 3. Accessible to **other systems** (it activates data, not just stores it).
-4. **All sources** — web, mobile, offline, third-party.
-5. **All data** — including identifiable customer data, not just anonymized analytics.
+4. **All sources**, web, mobile, offline, third-party.
+5. **All data**, including identifiable customer data, not just anonymized analytics.
 
 ### CDP vs DMP vs DXP vs Data Warehouse
 
@@ -108,7 +108,7 @@ CDPs split into four architectural patterns. Choosing the right pattern is at le
 - Pros: Single contract. Tightest integration with same vendor's email, ads, web personalization.
 - Cons: Lock-in. Expensive. Hard to activate to non-vendor destinations.
 
-### Vendor selection — decision tree
+### Vendor selection, decision tree
 
 ```
 Do you have ≥1 data engineer dedicated to marketing data?
@@ -126,7 +126,7 @@ Do you have ≥1 data engineer dedicated to marketing data?
 
 ---
 
-## 🛰️ Server-Side Tracking — The Architecture
+## 🛰️ Server-Side Tracking, The Architecture
 
 The shift from *client-side* (browser → ad pixel) to *server-side* (browser → your server → ad pixel) is the single biggest infrastructure change in marketing since the cookie was introduced. Here is the canonical diagram:
 
@@ -167,7 +167,7 @@ The shift from *client-side* (browser → ad pixel) to *server-side* (browser �
 | Mismatched events across destinations | Single canonical event, fanned out identically to all destinations |
 | PII leaking to ad platforms | Hash and filter PII on your server before sending |
 
-⚠️ **What most teams get wrong:** They install server-side GTM thinking it solves all measurement loss. It doesn't. iOS ATT loss is a *user-consent* loss, not a *technical* loss — server-side cannot recover it without user opt-in. Server-side recovers **5–25%** of lost conversions depending on browser mix, not 100%.
+⚠️ **What most teams get wrong:** They install server-side GTM thinking it solves all measurement loss. It doesn't. iOS ATT loss is a *user-consent* loss, not a *technical* loss, server-side cannot recover it without user opt-in. Server-side recovers **5–25%** of lost conversions depending on browser mix, not 100%.
 
 ### The two main server-side platforms
 
@@ -209,9 +209,9 @@ The shift from *client-side* (browser → ad pixel) to *server-side* (browser �
 
 ---
 
-## 🪪 Identity Resolution — Deterministic vs Probabilistic
+## 🪪 Identity Resolution, Deterministic vs Probabilistic
 
-A CDP's job is to take 50 different identifiers — cookies, device IDs, emails, phone numbers, hashed PII — and resolve them to *one customer*. Two methods:
+A CDP's job is to take 50 different identifiers cookies, device IDs, emails, phone numbers, hashed PII and resolve them to *one customer*. Two methods:
 
 ### Deterministic Identity Resolution
 
@@ -226,7 +226,7 @@ Matches identifiers via *explicit known links*: this email logged in on this dev
 
 ### Probabilistic Identity Resolution
 
-Uses ML to *infer* that two anonymous identifiers belong to the same person — based on IP overlap, location, behavioral patterns, time-of-day similarity, etc.
+Uses ML to *infer* that two anonymous identifiers belong to the same person, based on IP overlap, location, behavioral patterns, time-of-day similarity, etc.
 
 | Pros | Cons |
 |------|------|
@@ -270,15 +270,15 @@ CREATE TABLE event_resolved (
 );
 ```
 
-In practice, packaged CDPs do this graph work for you (Segment's "Persona" feature, mParticle's IDSync). Warehouse-native CDPs require you to build the graph yourself in SQL — typically with vendor templates from Hightouch's "Identity Graph" or Census's equivalent.
+In practice, packaged CDPs do this graph work for you (Segment's "Persona" feature, mParticle's IDSync). Warehouse-native CDPs require you to build the graph yourself in SQL, typically with vendor templates from Hightouch's "Identity Graph" or Census's equivalent.
 
 ---
 
-## 🧪 A Worked Example — Building the Stitch-Fix-Style Pipeline
+## 🧪 A Worked Example, Building the Stitch-Fix-Style Pipeline
 
 Let's design the simplified data flow for a DTC brand modeling on Stitch Fix.
 
-### Step 1 — Collection layer (Segment)
+### Step 1, Collection layer (Segment)
 
 ```javascript
 // JavaScript SDK call on Add-to-Cart event
@@ -292,7 +292,7 @@ analytics.track('Added to Cart', {
 });
 ```
 
-### Step 2 — Server-side enrichment & fanout (GTM-SS)
+### Step 2, Server-side enrichment & fanout (GTM-SS)
 
 ```yaml
 trigger: event_name == 'Added to Cart'
@@ -308,7 +308,7 @@ destinations:
     table: raw_events.events
 ```
 
-### Step 3 — Warehouse modeling (dbt-style)
+### Step 3, Warehouse modeling (dbt-style)
 
 ```sql
 -- models/marts/marketing/user_3rd_fix_propensity.sql
@@ -335,7 +335,7 @@ SELECT
 FROM user_event_counts;
 ```
 
-### Step 4 — Reverse ETL activation (Hightouch)
+### Step 4, Reverse ETL activation (Hightouch)
 
 ```yaml
 sync:
@@ -374,13 +374,13 @@ For a Fortune-500 enterprise the same stack costs **$50K–$200K/month** because
 
 | Misconception | Reality |
 |---------------|---------|
-| "A CDP replaces our data warehouse" | No — modern CDPs *complement* the warehouse. The warehouse stays the source of truth. |
+| "A CDP replaces our data warehouse" | No, modern CDPs *complement* the warehouse. The warehouse stays the source of truth. |
 | "Server-side GTM recovers 100% of measurement loss" | 5–25% recovery, not 100%. Consent loss is unrecoverable by technical means. |
 | "Probabilistic identity is fine, everyone does it" | Increasingly illegal in regulated industries; deterministic-first is the 2026 default. |
 | "We need a CDP because we have lots of data" | You need a CDP if you have **activation** use cases that span multiple destinations. Otherwise: warehouse + BI. |
 | "Hashing emails means we can send them anywhere" | Hashing is a *consent* requirement, not a data-sharing license. Consent + DPA still required. |
 | "Composable CDP means no vendor cost" | Reverse ETL is still paid software; the savings come from avoiding event-volume pricing. |
-| "GTM Server is only for tracking" | It can also enrich, filter, deduplicate, and transform — it's a tiny edge compute layer. |
+| "GTM Server is only for tracking" | It can also enrich, filter, deduplicate, and transform, it's a tiny edge compute layer. |
 
 ---
 
@@ -388,15 +388,15 @@ For a Fortune-500 enterprise the same stack costs **$50K–$200K/month** because
 
 | Term | Definition |
 |------|------------|
-| **CDP** | Customer Data Platform — unified, persistent, customer-aware data infrastructure |
-| **DMP** | Data Management Platform — third-party-cookie audience tool (declining) |
-| **DXP** | Digital Experience Platform — content + experience tooling (Adobe AEM, Sitecore) |
+| **CDP** | Customer Data Platform, unified, persistent, customer-aware data infrastructure |
+| **DMP** | Data Management Platform, third-party-cookie audience tool (declining) |
+| **DXP** | Digital Experience Platform, content + experience tooling (Adobe AEM, Sitecore) |
 | **Warehouse-native CDP** | The "composable" pattern: warehouse + reverse ETL replaces a packaged CDP |
 | **Reverse ETL** | Syncing data from warehouse → SaaS destinations (Hightouch, Census, Polytomic) |
 | **Server-side tracking** | Sending events from your server (not the browser) to ad and analytics platforms |
 | **GTM-SS / sGTM** | Google Tag Manager Server-Side container |
 | **Stape** | Managed sGTM hosting provider |
-| **CAPI** | Conversions API — Meta's server-side conversion endpoint |
+| **CAPI** | Conversions API, Meta's server-side conversion endpoint |
 | **Measurement Protocol** | Google Analytics 4's server-side event ingestion endpoint |
 | **Enhanced Conversions** | Google Ads feature: send hashed first-party PII to improve match rate |
 | **Consent Mode v2** | Google's framework for sending consent signal alongside events |
@@ -409,30 +409,30 @@ For a Fortune-500 enterprise the same stack costs **$50K–$200K/month** because
 
 ---
 
-## 💼 Case Study — Nike's Consumer Direct Acceleration (2020–2024)
+## 💼 Case Study, Nike's Consumer Direct Acceleration (2020–2024)
 
-**Situation.** In June 2020, in the depths of the pandemic, Nike's then-CEO John Donahoe announced **Consumer Direct Acceleration (CDA)** — a multi-year strategy to shift Nike's revenue mix from wholesale (Foot Locker, Dick's Sporting Goods, mid-tier department stores) toward direct-to-consumer channels (Nike-branded apps, SNKRS, Nike.com, owned retail). The strategic premise was that owning the customer relationship — and therefore the first-party data — was the only way to defend margins as third-party cookies died and the retail-channel middlemen extracted more value. Nike had inherited an extremely fragmented data estate: the Nike app, the Nike Run Club app, the Nike Training Club app, SNKRS, and Nike.com each had separate user identities, separate behavioral logs, and separate marketing automation stacks.
+**Situation.** In June 2020, in the depths of the pandemic, Nike's then-CEO John Donahoe announced **Consumer Direct Acceleration (CDA)** a multi-year strategy to shift Nike's revenue mix from wholesale (Foot Locker, Dick's Sporting Goods, mid-tier department stores) toward direct-to-consumer channels (Nike-branded apps, SNKRS, Nike.com, owned retail). The strategic premise was that owning the customer relationship and therefore the first-party data, was the only way to defend margins as third-party cookies died and the retail-channel middlemen extracted more value. Nike had inherited an extremely fragmented data estate: the Nike app, the Nike Run Club app, the Nike Training Club app, SNKRS, and Nike.com each had separate user identities, separate behavioral logs, and separate marketing automation stacks.
 
 **Decision.** Nike's data and marketing-tech teams executed a multi-year unification on **Adobe Real-Time CDP** (announced as the strategic CDP partner in 2021 and built out through 2022–2024), with Adobe Experience Platform serving as the underlying data lake. The investment also included a server-side tracking layer for the Nike.com web properties (replacing the previous client-side Google Marketing Platform pixels), a unified identity graph linking the five Nike apps via a single Nike Member ID, and direct reverse-ETL pipelines feeding Nike's CRM-driven personalization on its app surfaces. The total digital-and-data investment over the CDA program was disclosed in Nike's 2022 and 2023 10-K filings as part of a multi-billion-dollar capital program.
 
-**Outcome.** By Nike's fiscal Q4 2022, direct-to-consumer revenue had climbed to **42% of total Nike Brand revenue**, up from ~30% in 2019. Nike Membership (the unified-identity program enabled by the CDP) crossed **300 million members globally** by 2023, with reported member sales growing at roughly 2× the rate of non-member sales. The Adobe RT-CDP + Adobe Experience Platform deployment became one of Adobe's most-public enterprise reference accounts. By 2024–2025 the strategy hit headwinds — wholesale rebuild costs, slower-than-expected app monetization, and competitive pressure from Hoka and On — leading to Donahoe's departure in late 2024 and a partial wholesale-channel reversal under his successor. But the CDP and the unified Member ID survived the strategy reversal; they had become structural infrastructure rather than a wholesale-bet bet.
+**Outcome.** By Nike's fiscal Q4 2022, direct-to-consumer revenue had climbed to **42% of total Nike Brand revenue**, up from ~30% in 2019. Nike Membership (the unified-identity program enabled by the CDP) crossed **300 million members globally** by 2023, with reported member sales growing at roughly 2× the rate of non-member sales. The Adobe RT-CDP + Adobe Experience Platform deployment became one of Adobe's most-public enterprise reference accounts. By 2024–2025 the strategy hit headwinds wholesale rebuild costs, slower-than-expected app monetization, and competitive pressure from Hoka and On leading to Donahoe's departure in late 2024 and a partial wholesale-channel reversal under his successor. But the CDP and the unified Member ID survived the strategy reversal; they had become structural infrastructure rather than a wholesale-bet bet.
 
-**Lesson for the exam / for practitioners.** Nike CDA is the canonical case for the *packaged-CDP-on-a-marketing-cloud* pattern (Pattern 4 in this module's CDP-architecture table). It also illustrates how the strategic value of a CDP **outlasts the strategy that justified its purchase** — the unified identity graph remains an asset for Nike even though the DTC-first commercial strategy was partially reversed. For the exam, recognize: when a case describes a global brand with multiple owned-channel apps + a marketing cloud already in use (Adobe or Salesforce), the natural answer is *embedded-in-marketing-cloud CDP*, not composable warehouse-native. The composable pattern wins for mid-market SaaS and DTC; the embedded pattern wins for global brand enterprises that already have the marketing-cloud sunk cost.
+**Lesson for the exam / for practitioners.** Nike CDA is the canonical case for the *packaged-CDP-on-a-marketing-cloud* pattern (Pattern 4 in this module's CDP-architecture table). It also illustrates how the strategic value of a CDP **outlasts the strategy that justified its purchase**, the unified identity graph remains an asset for Nike even though the DTC-first commercial strategy was partially reversed. For the exam, recognize: when a case describes a global brand with multiple owned-channel apps + a marketing cloud already in use (Adobe or Salesforce), the natural answer is *embedded-in-marketing-cloud CDP*, not composable warehouse-native. The composable pattern wins for mid-market SaaS and DTC; the embedded pattern wins for global brand enterprises that already have the marketing-cloud sunk cost.
 
 **Discussion (Socratic).**
 - Q1: Nike's CDP investment was justified by a DTC-first growth thesis that was partially reversed in 2024. If you were the CMO making the original 2021 build-vs-buy decision, what specific KPIs would you have demanded in the business case so the CFO could later judge "did the CDP deliver, independent of whether the DTC thesis won?"
-- Q2: Adobe RT-CDP (a packaged + marketing-cloud-embedded CDP) won the Nike deal over Hightouch + Snowflake (composable). For Nike's scale and Adobe-incumbent context, defend why the packaged answer was right — and then construct the strongest argument that a true composable build would have served Nike better long-term, even given the upfront cost premium.
+- Q2: Adobe RT-CDP (a packaged + marketing-cloud-embedded CDP) won the Nike deal over Hightouch + Snowflake (composable). For Nike's scale and Adobe-incumbent context, defend why the packaged answer was right, and then construct the strongest argument that a true composable build would have served Nike better long-term, even given the upfront cost premium.
 - Q3: Nike's Member ID unified five apps + the web property. The implicit trade-off accepted: every member-level event flows through one ID graph, which is operationally elegant but a single point of failure for the entire DTC business. What governance design protects against the privacy-incident or vendor-outage scenarios where a CDP becomes a *liability* rather than an asset?
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
-1. A Series-B B2B SaaS startup has $250K/year to spend on its measurement stack. The CDP-evaluation team is divided: half want packaged Segment + reverse-ETL to keep velocity, half want a composable RudderStack + warehouse-native build for long-term flexibility. Which would *you* sponsor — and what specific milestones would you write into the decision so the company knows in 18 months whether they were right?
+1. A Series-B B2B SaaS startup has $250K/year to spend on its measurement stack. The CDP-evaluation team is divided: half want packaged Segment + reverse-ETL to keep velocity, half want a composable RudderStack + warehouse-native build for long-term flexibility. Which would *you* sponsor, and what specific milestones would you write into the decision so the company knows in 18 months whether they were right?
 2. Server-side tagging recovers 5–25% of measurement loss. Some teams report 35%+ recovery; some report under 5%. What about an organization's *traffic mix* and *implementation quality* drives that variance, and what specifically would you audit on a new client engagement to predict where they will land?
-3. Probabilistic identity resolution can boost match rates from ~30% (deterministic only) to 70%+. But the matches are *guesses* — typically 85–92% accurate. When is the 8–15% false-positive rate acceptable in marketing decisions, and when does it become legally or strategically dangerous (e.g., healthcare, financial services, regulated B2C)?
-4. The CDP Institute's canonical definition includes "packaged software, not an internal project." Yet warehouse-native CDPs are explicitly *not* packaged — they're assemblies. Has the CDP Institute's definition become outdated, or are warehouse-native stacks technically *not* CDPs? Defend either position.
-5. Apple's ITP, ATT, and Privacy Sandbox have each been framed as user-privacy moves. From a strategic perspective, what *competitive* dimension does each move primarily serve for Apple — and how should that change how an enterprise treats Apple-driven measurement loss versus Chrome-driven loss?
+3. Probabilistic identity resolution can boost match rates from ~30% (deterministic only) to 70%+. But the matches are *guesses*, typically 85–92% accurate. When is the 8–15% false-positive rate acceptable in marketing decisions, and when does it become legally or strategically dangerous (e.g., healthcare, financial services, regulated B2C)?
+4. The CDP Institute's canonical definition includes "packaged software, not an internal project." Yet warehouse-native CDPs are explicitly *not* packaged, they're assemblies. Has the CDP Institute's definition become outdated, or are warehouse-native stacks technically *not* CDPs? Defend either position.
+5. Apple's ITP, ATT, and Privacy Sandbox have each been framed as user-privacy moves. From a strategic perspective, what *competitive* dimension does each move primarily serve for Apple, and how should that change how an enterprise treats Apple-driven measurement loss versus Chrome-driven loss?
 
 ---
 
@@ -441,7 +441,7 @@ For a Fortune-500 enterprise the same stack costs **$50K–$200K/month** because
 You now know:
 
 - 🍪 Why the third-party cookie collapsed and what replaces it (first-party + server-side).
-- 🧬 What a CDP actually is — and what it isn't (DMP, DXP, warehouse).
+- 🧬 What a CDP actually is, and what it isn't (DMP, DXP, warehouse).
 - 🛠️ The four CDP architectural patterns and how to choose between them.
 - 🛰️ The server-side tracking architecture, sGTM/Stape/JenTis, and what it does and doesn't recover.
 - 🪪 Deterministic vs probabilistic identity resolution and when each is appropriate.
@@ -462,10 +462,10 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 **CDP Institute** ([cdpinstitute.org](https://www.cdpinstitute.org/)) — vendor-neutral CDP research, free annual industry report.
-- 📖 **Segment's Customer Data Platform Architecture documentation** — even if you don't use Segment, it's the canonical educational resource.
-- 📖 **The Privacy-First Marketing Stack** by David Vallez (Hightouch) — free e-book.
+- 📖 **CDP Institute** ([cdpinstitute.org](https://www.cdpinstitute.org/)), vendor-neutral CDP research, free annual industry report.
+- 📖 **Segment's Customer Data Platform Architecture documentation**, even if you don't use Segment, it's the canonical educational resource.
+- 📖 **The Privacy-First Marketing Stack** by David Vallez (Hightouch), free e-book.
 - 📖 **Google's "Adapt to a Cookieless Future" playbook** (think with Google).
-- 🔗 [Simo Ahava's blog](https://www.simoahava.com/) — the canonical resource on server-side GTM.
-- 🔗 [Stape.io's documentation](https://stape.io/) — practical sGTM walkthroughs.
-- 🔗 [Apple ITP and ATT history](https://webkit.org/tracking-prevention/) — read it; you'll quote it in interviews.
+- 🔗 [Simo Ahava's blog](https://www.simoahava.com/), the canonical resource on server-side GTM.
+- 🔗 [Stape.io's documentation](https://stape.io/), practical sGTM walkthroughs.
+- 🔗 [Apple ITP and ATT history](https://webkit.org/tracking-prevention/), read it; you'll quote it in interviews.

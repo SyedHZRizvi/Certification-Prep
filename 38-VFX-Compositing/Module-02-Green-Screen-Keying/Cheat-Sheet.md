@@ -32,7 +32,7 @@ title: "Module 2 Cheat Sheet: Green Screen Keying"
 
 | Parameter | Does | When to Adjust |
 |-----------|------|----------------|
-| Screen Colour | The sampled keying color | First — always |
+| Screen Colour | The sampled keying color | First, always |
 | Screen Gain | Aggressiveness of key | Background not going black |
 | Screen Balance | Ratio of non-key channels | Uneven gray in background |
 | Screen Pre-Blur | Pre-blurs matte calculation | Noisy footage |
@@ -58,7 +58,7 @@ title: "Module 2 Cheat Sheet: Green Screen Keying"
 
 ---
 
-## Spill Suppression Tools — Ranked
+## Spill Suppression Tools, Ranked
 
 | Priority | Tool | Best For |
 |----------|------|---------|
@@ -99,9 +99,9 @@ title: "Module 2 Cheat Sheet: Green Screen Keying"
 
 | Matte Value | Meaning | Action |
 |-------------|---------|--------|
-| White (1.0) | Foreground — fully opaque | Correct |
-| Black (0.0) | Background — fully transparent | Correct |
-| Gray (0.1–0.9) | Semi-transparent transition zone | PROTECT — do not clip |
+| White (1.0) | Foreground, fully opaque | Correct |
+| Black (0.0) | Background, fully transparent | Correct |
+| Gray (0.1–0.9) | Semi-transparent transition zone | PROTECT, do not clip |
 
 **Gray pixels at edges are the photographic quality of the key. Clip them → hard, jagged edges.**
 
@@ -130,8 +130,8 @@ title: "Module 2 Cheat Sheet: Green Screen Keying"
 
 ## Exam Quick-Hits
 
-- **Over operation formula:** `A + B × (1 − alpha_A)` — memorize this
-- **Binary matte:** Only 0 or 1 alpha values — produces hard jagged edges
+- **Over operation formula:** `A + B × (1 − alpha_A)`, memorize this
+- **Binary matte:** Only 0 or 1 alpha values, produces hard jagged edges
 - **Two Keylight minimum for hair:** Body key + hair key, combined with Minimum
 - **Advanced Spill Suppressor advantage:** Analyzes background to inform desaturation; not a simple green-channel reduction
 
@@ -147,4 +147,4 @@ title: "Module 2 Cheat Sheet: Green Screen Keying"
 
 **Key formula / ratio / number to memorize:**
 See the exam callouts (🎯) in the Reading.md for this module.
-*—*
+---

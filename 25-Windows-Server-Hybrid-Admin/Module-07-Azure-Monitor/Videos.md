@@ -20,7 +20,7 @@
 
 # 🎥 Module 7 Videos: Azure Monitor & Hybrid Monitoring
 
-> **How to use:** Click any card to search YouTube for the latest top result. Monitoring is 15% of AZ-801 — and the KQL questions are unforgiving.
+> **How to use:** Click any card to search YouTube for the latest top result. Monitoring is 15% of AZ-801, and the KQL questions are unforgiving.
 
 ## ⭐ Essential watching (~90 min)
 
@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Monitor — Complete Overview</p>
+      <p class="vg-title">Azure Monitor, Complete Overview</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 35 min · Metrics + logs + alerts</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">KQL Basics — From Zero</p>
+      <p class="vg-title">KQL Basics, From Zero</p>
       <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 25 min · where, summarize, project</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Azure Monitor Alerts — 3 Types</p>
+      <p class="vg-title">Azure Monitor Alerts, 3 Types</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 12 min · Action groups</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Azure Workbooks — Build Your Own</p>
+      <p class="vg-title">Azure Workbooks, Build Your Own</p>
       <p class="vg-creator">Inside Cloud and Security</p>
       <span class="vg-duration">⏱ 18 min · Interactive dashboards</span>
     </div>
@@ -120,7 +120,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Advanced KQL — Joins & let</p>
+      <p class="vg-title">Advanced KQL, Joins & let</p>
       <p class="vg-creator">Rod Trent KQL Channel</p>
       <span class="vg-duration">⏱ 22 min · Pro-grade queries</span>
     </div>
@@ -145,11 +145,11 @@
 
 Answer these in your notebook:
 
-1. AMA vs MMA — what changed and when?
+1. AMA vs MMA, what changed and when?
 2. What is a DCR, and how is one DCR associated with many machines?
 3. Top 5 KQL operators you'd reach for in any troubleshooting query?
-4. Metric alert vs log alert — when each?
+4. Metric alert vs log alert, when each?
 5. VM Insights provides what, and how is it implemented?
-6. Workbook — what data sources can it combine?
+6. Workbook, what data sources can it combine?
 
 If you can answer all 6, you're ready for the [Quiz](./Quiz.md).

@@ -1,4 +1,4 @@
-# 🧪 Final Mock Exam — AI Digital Marketing Practitioner
+# 🧪 Final Mock Exam, AI Digital Marketing Practitioner
 
 > **Conditions:** Set a 110-minute timer. 80 questions. Treat it like the real thing.
 > **Pass mark:** 60/80 (75%)
@@ -21,7 +21,7 @@ C. A pricing strategy
 D. A non-obvious behavioral truth about the customer
 
 ### 3. "Drive awareness and engagement" as a primary KPI is:
-A. Wrong — KPIs need NUMBERS and thresholds
+A. Wrong, KPIs need NUMBERS and thresholds
 B. Acceptable
 C. The recommended approach
 D. The default
@@ -48,7 +48,7 @@ D. Keyword level
 A. Strengthened in 2024
 B. Re-added
 C. Renamed
-D. Retired in 2021 — folded into phrase match
+D. Retired in 2021, folded into phrase match
 
 ### 8. The 30-conversion rule applies to:
 A. Smart Bidding strategies (tCPA, tROAS)
@@ -98,7 +98,7 @@ B. A HINT to the algorithm
 C. Required to launch
 D. Permanent
 
-### 16. PMax asset group spec — headlines max:
+### 16. PMax asset group spec, headlines max:
 A. 5
 B. 10
 C. 30
@@ -209,7 +209,7 @@ D. Brand × Category
 ### 34. Killing DCT variant at 100 impressions is:
 A. Best practice
 B. Required by Meta
-C. Mistake — need ~1,000 impressions per variant
+C. Mistake, need ~1,000 impressions per variant
 D. Retargeting-only
 
 ### 35. Meta Reels aspect ratio:
@@ -267,7 +267,7 @@ C. Pinterest
 D. Snapchat
 
 ### 44. Comparing LinkedIn CPCs to Meta CPCs and saying LinkedIn is "too expensive" is:
-A. Wrong — LinkedIn leads convert at much higher rates; compare cost-per-closed-deal
+A. Wrong, LinkedIn leads convert at much higher rates; compare cost-per-closed-deal
 B. Correct
 C. Conventional wisdom
 D. Required
@@ -370,14 +370,14 @@ D. Brief → Design → Build → Test
 
 ### 61. Midjourney's `--cref` parameter does:
 A. Aspect ratio
-B. Character reference — consistent person across images
+B. Character reference, consistent person across images
 C. Style reference
 D. Chaos
 
 ### 62. Rendering text inside Midjourney v7:
 A. Works perfectly
 B. Required to use Canva
-C. Still poor — use Canva/Figma overlays
+C. Still poor, use Canva/Figma overlays
 D. Only v6
 
 ### 63. The right workflow for a 30-sec AI ad:
@@ -471,7 +471,7 @@ C. 14-21 days
 D. 60 days
 
 ### 78. First 5 days post-launch:
-A. Daily check only (don't edit — learning phase)
+A. Daily check only (don't edit, learning phase)
 B. Pause if slow
 C. Edit daily
 D. Add campaigns
@@ -515,11 +515,11 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 ## Detailed answer rationales
 
-**Q1. Answer: D.** Why D is correct: A brief is 1-2 pages max — longer = "options," not "decisions." Why wrong: A bullets aren't a brief; B/C indulge length without forcing choice. Exam-takeaway: 1-2 pages forces the discipline of choosing.
+**Q1. Answer: D.** Why D is correct: A brief is 1-2 pages max, longer = "options," not "decisions." Why wrong: A bullets aren't a brief; B/C indulge length without forcing choice. Exam-takeaway: 1-2 pages forces the discipline of choosing.
 
 **Q2. Answer: D.** Why D is correct: Insight = a non-obvious behavioral truth about the customer. Why wrong: A is product capability; B is outcome; C is unrelated. Exam-takeaway: Insight describes life; feature describes product.
 
-**Q3. Answer: A.** Why A is correct: "Drive awareness and engagement" is wrong — KPIs need NUMBERS and thresholds. Why wrong: B-D normalize vague KPIs. Exam-takeaway: Adjectives ≠ metrics.
+**Q3. Answer: A.** Why A is correct: "Drive awareness and engagement" is wrong, KPIs need NUMBERS and thresholds. Why wrong: B-D normalize vague KPIs. Exam-takeaway: Adjectives ≠ metrics.
 
 **Q4. Answer: D.** Why D is correct: Guardrail KPI = the pause-trigger metric. Why wrong: A is primary KPI; B/C minimize its function. Exam-takeaway: Guardrail = STOP.
 
@@ -527,7 +527,7 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q6. Answer: A.** Why A is correct: In Google Ads, budget is set at the Campaign level. Why wrong: B/C/D don't have budget controls. Exam-takeaway: Budget + bidding + geo all live at campaign level.
 
-**Q7. Answer: D.** Why D is correct: BMM was retired in 2021 — folded into phrase match. Why wrong: A-C imply it still exists. Exam-takeaway: BMM is dead.
+**Q7. Answer: D.** Why D is correct: BMM was retired in 2021, folded into phrase match. Why wrong: A-C imply it still exists. Exam-takeaway: BMM is dead.
 
 **Q8. Answer: A.** Why A is correct: The 30-conversion rule applies to Smart Bidding strategies (tCPA, tROAS). Why wrong: B-D don't have learning thresholds. Exam-takeaway: tCPA/tROAS need 30/30 to stabilize.
 
@@ -537,13 +537,13 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q11. Answer: C.** Why C is correct: Ad Rank = Bid × Quality Score + Extension impact. Why wrong: A/B oversimplify; D drops extensions. Exam-takeaway: Extensions move Ad Rank.
 
-**Q12. Answer: A.** Why A is correct: Uncheck "Include Display Network" on a pure Search campaign — default-on burns ~30% of budget on display. Why wrong: B/C/D normalize the trap default. Exam-takeaway: Always uncheck Display + Search Partners on Search campaigns.
+**Q12. Answer: A.** Why A is correct: Uncheck "Include Display Network" on a pure Search campaign, default-on burns ~30% of budget on display. Why wrong: B/C/D normalize the trap default. Exam-takeaway: Always uncheck Display + Search Partners on Search campaigns.
 
 **Q13. Answer: D.** Why D is correct: PMax serves on Search + Display + YouTube + Discover + Gmail + Maps. Why wrong: A-C are subsets. Exam-takeaway: All 6 surfaces, one campaign.
 
 **Q14. Answer: C.** Why C is correct: Brand Exclusions = the most important PMax day-0 setting. Why wrong: A enables expansion (different concern); B/D are necessary but not protective vs cannibalization. Exam-takeaway: Brand Exclusions day 0, always.
 
-**Q15. Answer: B.** Why B is correct: Audience signals are HINTS — algorithm can serve outside. Why wrong: A/D imply hard targeting; C wrong (not required). Exam-takeaway: Signal ≠ target.
+**Q15. Answer: B.** Why B is correct: Audience signals are HINTS, algorithm can serve outside. Why wrong: A/D imply hard targeting; C wrong (not required). Exam-takeaway: Signal ≠ target.
 
 **Q16. Answer: D.** Why D is correct: PMax asset group max headlines = 15 (same as RSAs). Why wrong: A-C are wrong. Exam-takeaway: 15/5/5 PMax asset spec.
 
@@ -553,7 +553,7 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q19. Answer: D.** Why D is correct: YouTube Shorts ads = vertical 9:16, 6-60 sec, CPM. Why wrong: A is wrong dimensions; B vague; C wrong format. Exam-takeaway: Shorts compete head-to-head with TikTok and Reels.
 
-**Q20. Answer: B.** Why B is correct: In-feed (Discovery) YouTube ads are CPC — user clicks to watch. Why wrong: A/C/D apply to other formats. Exam-takeaway: In-feed = opt-in click = CPC pricing.
+**Q20. Answer: B.** Why B is correct: In-feed (Discovery) YouTube ads are CPC, user clicks to watch. Why wrong: A/C/D apply to other formats. Exam-takeaway: In-feed = opt-in click = CPC pricing.
 
 **Q21. Answer: B.** Why B is correct: 3-second hook = capture attention with question/pattern/claim/demo/stat. Why wrong: A/C describe logo-first or product-first (proven failures); D opposite. Exam-takeaway: Earn attention before brand.
 
@@ -569,11 +569,11 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q27. Answer: D.** Why D is correct: Default Meta attribution = 7-day click + 1-day view (post-iOS-14). Why wrong: A is pre-iOS-14; B/C unrealistic. Exam-takeaway: 7+1 is the current default.
 
-**Q28. Answer: D.** Why D is correct: AEM requires you to rank top 8 conversion events per verified domain. Why wrong: A-C invented requirements. Exam-takeaway: Top 8 events, ranked — only the priority one tracks for opted-out users.
+**Q28. Answer: D.** Why D is correct: AEM requires you to rank top 8 conversion events per verified domain. Why wrong: A-C invented requirements. Exam-takeaway: Top 8 events, ranked, only the priority one tracks for opted-out users.
 
 **Q29. Answer: C.** Why C is correct: Lookalike seed = 1,000+ (5,000+ reliable). Why wrong: A too small; B/D excessive. Exam-takeaway: 1K minimum, 5K target.
 
-**Q30. Answer: C.** Why C is correct: Advantage+ Audience is a HINT — algorithm can serve outside. Why wrong: A wrong (not strict); B not required; D wrong scope. Exam-takeaway: Same model as Google's audience signals.
+**Q30. Answer: C.** Why C is correct: Advantage+ Audience is a HINT, algorithm can serve outside. Why wrong: A wrong (not strict); B not required; D wrong scope. Exam-takeaway: Same model as Google's audience signals.
 
 **Q31. Answer: C.** Why C is correct: ASC needs 50+ daily purchases AND catalog AND $50+/day. Why wrong: A-B under-scaled; D ignores the data requirement. Exam-takeaway: ASC = scale tool.
 
@@ -585,7 +585,7 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q35. Answer: A.** Why A is correct: Meta Reels = 9:16 vertical. Why wrong: B is long-form; C is Feed; D is portrait Feed. Exam-takeaway: 9:16 across Reels/Shorts/TikTok.
 
-**Q36. Answer: B.** Why B is correct: Cross-posting Reels to TikTok underperforms by ~40% — different visual grammar. Why wrong: A wrong; C wrong; D fabricated. Exam-takeaway: Same aspect ≠ same platform fit.
+**Q36. Answer: B.** Why B is correct: Cross-posting Reels to TikTok underperforms by ~40%, different visual grammar. Why wrong: A wrong; C wrong; D fabricated. Exam-takeaway: Same aspect ≠ same platform fit.
 
 **Q37. Answer: A.** Why A is correct: Spark Ads = sponsored boosts of organic TikTok videos via Spark Code. Why wrong: B-D describe other formats. Exam-takeaway: Inherits social proof on the original post.
 
@@ -595,11 +595,11 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q40. Answer: B.** Why B is correct: LinkedIn's 2026 winning format = Thought-Leadership Ads (boost personal posts). Why wrong: A is the legacy default; C/D older formats. Exam-takeaway: TLA boosts individuals, not brand pages.
 
-**Q41. Answer: B.** Why B is correct: Account List Upload targets specific company employees — ABM foundation. Why wrong: A is a different feature; C is InMail; D wrong. Exam-takeaway: Account List = ABM core.
+**Q41. Answer: B.** Why B is correct: Account List Upload targets specific company employees, ABM foundation. Why wrong: A is a different feature; C is InMail; D wrong. Exam-takeaway: Account List = ABM core.
 
 **Q42. Answer: D.** Why D is correct: Lead Gen Forms auto-fill profile data (name, email, company, title). Why wrong: A partial; B wrong; C fictional. Exam-takeaway: Auto-fill = 3-5x higher conversion than off-platform forms.
 
-**Q43. Answer: A.** Why A is correct: For "VPs at 500+" — LinkedIn is the only platform with reliable job-title + company-size targeting. Why wrong: B-D are consumer-DTC. Exam-takeaway: B2B exec = LinkedIn.
+**Q43. Answer: A.** Why A is correct: For "VPs at 500+", LinkedIn is the only platform with reliable job-title + company-size targeting. Why wrong: B-D are consumer-DTC. Exam-takeaway: B2B exec = LinkedIn.
 
 **Q44. Answer: A.** Why A is correct: LinkedIn CPCs are higher but cost-per-closed-deal is lower; compare deals, not clicks. Why wrong: B-D accept the lazy comparison. Exam-takeaway: Compare cost-per-closed-deal.
 
@@ -617,7 +617,7 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q51. Answer: C.** Why C is correct: 2024 research = 25-30 brand touches before DTC purchase. Why wrong: A myth; B search-only; D overstatement. Exam-takeaway: Last-click credits 1 of ~28.
 
-**Q52. Answer: B.** Why B is correct: ANA 2024 = ~20% MFA waste in open-web display. Why wrong: A too low; C/D inflated. Exam-takeaway: 20% — use block lists.
+**Q52. Answer: B.** Why B is correct: ANA 2024 = ~20% MFA waste in open-web display. Why wrong: A too low; C/D inflated. Exam-takeaway: 20%, use block lists.
 
 **Q53. Answer: B.** Why B is correct: CRO cycle = Observe → Hypothesize → Test → Iterate. Why wrong: A is PM; C brand; D creative production. Exam-takeaway: Observe first.
 
@@ -637,7 +637,7 @@ D. Can't truly learn marketing without running real campaigns with real money
 
 **Q61. Answer: B.** Why B is correct: `--cref` = character reference for consistency. Why wrong: A is `--ar`; C is `--sref`; D is `--chaos`. Exam-takeaway: cref = character, sref = style.
 
-**Q62. Answer: C.** Why C is correct: MJ v7 text is still poor — use Canva/Figma. Why wrong: A wrong (issue persists); B/D wrong scope. Exam-takeaway: Generate image in MJ; add text in Canva.
+**Q62. Answer: C.** Why C is correct: MJ v7 text is still poor, use Canva/Figma. Why wrong: A wrong (issue persists); B/D wrong scope. Exam-takeaway: Generate image in MJ; add text in Canva.
 
 **Q63. Answer: D.** Why D is correct: 30-sec AI ad = staged pipeline: script → storyboard → animate → voice → stitch. Why wrong: A/B/C all single-shot or skip. Exam-takeaway: Pipeline wins.
 
@@ -711,8 +711,8 @@ If you scored 60+:
    - TikTok Ads Manager Beginner: free, ~30 Q
    - Meta Certified Media Buying Pro: $150, 75 Q / 105 min (harder)
 
-2. **Run your capstone if you haven't yet** — even if you passed this exam, theoretical knowledge ≠ practitioner experience.
+2. **Run your capstone if you haven't yet**, even if you passed this exam, theoretical knowledge ≠ practitioner experience.
 
-3. **Move to Course 3 in the ladder** — AI Digital Marketing Strategist (when available).
+3. **Move to Course 3 in the ladder**, AI Digital Marketing Strategist (when available).
 
 You've earned this. Now go run real campaigns. 🚀

@@ -39,7 +39,7 @@ D. PBIs + tests
 
 ### Q5. An item passes Acceptance Criteria but fails the Definition of Done. Is it Done?
 A. Yes
-B. No — both must be met
+B. No, both must be met
 C. Yes, with PO approval
 D. Only if released
 
@@ -128,8 +128,8 @@ C. A future state of the product the Scrum Team plans against
 D. A vision statement set by executives
 
 ### Q20. The PO unilaterally edits the Sprint Backlog mid-Sprint to add new items. This is:
-A. Acceptable — the PO owns the backlog
-B. An anti-pattern — the Developers own the Sprint Backlog
+A. Acceptable, the PO owns the backlog
+B. An anti-pattern, the Developers own the Sprint Backlog
 C. Required when scope changes
 D. Allowed if approved at Daily Scrum
 
@@ -146,7 +146,7 @@ C. Only when the PO approves changes
 D. Weekly, at refinement
 
 ### Q23. A PBI passes Acceptance Criteria but the Scrum Master notices it skipped a DoD checklist item. The right action is:
-A. Mark it Done — AC is enough
+A. Mark it Done, AC is enough
 B. Coach the team that DoD must also be met for the work to be Done
 C. Cancel the Sprint
 D. Report it to the PO for sign-off
@@ -173,7 +173,7 @@ Per 2020 Scrum Guide, the Product Goal is *in* the Product Backlog.
 ### Q4: **B. Sprint Goal + Selected PBIs + Plan**
 Three parts (new in 2020).
 
-### Q5: **B. No — both must be met**
+### Q5: **B. No, both must be met**
 DoD is the quality bar; AC is functional. Both must pass.
 
 ### Q6: **B. Quality checklist applying to all Increments**
@@ -192,7 +192,7 @@ Never "complete." Always being refined.
 The Sprint Goal stays. PBI scope flexes.
 
 ### Q11: **B. Single objective**
-One coherent goal — not a checklist.
+One coherent goal, not a checklist.
 
 ### Q12: **C. Collaboratively, with PO leading**
 Refinement is a team activity. PO leads but team participates.
@@ -201,7 +201,7 @@ Refinement is a team activity. PO leads but team participates.
 The PO is accountable for the Product Backlog: ordering it, managing it, and ensuring it is transparent.
 
 ### Q14: **B. Emergent, ordered list of what is needed to improve the product**
-Direct from the Scrum Guide. Never "complete" — always evolving.
+Direct from the Scrum Guide. Never "complete", always evolving.
 
 ### Q15: **B. It is already an Increment as soon as it meets the DoD**
 Per the 2020 Scrum Guide, multiple Increments may be created within a Sprint. As soon as a PBI meets DoD, it is an Increment.
@@ -216,9 +216,9 @@ When multiple teams work on the same product, they share a single Definition of 
 The three parts (new in 2020) are Sprint Goal, selected PBIs, and the plan to deliver. Velocity is not a Sprint Backlog component.
 
 ### Q19: **C. A future state of the product the Scrum Team plans against**
-Direct Scrum Guide phrasing. It is a target — not a date, vision, or feature list.
+Direct Scrum Guide phrasing. It is a target, not a date, vision, or feature list.
 
-### Q20: **B. An anti-pattern — the Developers own the Sprint Backlog**
+### Q20: **B. An anti-pattern, the Developers own the Sprint Backlog**
 The Developers own and update the Sprint Backlog. The PO can negotiate scope but cannot unilaterally rewrite it.
 
 ### Q21: **B. A usable, working addition to the product that meets the DoD**
@@ -258,7 +258,7 @@ The PO is accountable for the Product Backlog and for developing/communicating t
 
 ## 🧠 Bloom's-taxonomy mapping (existing Q1–Q24)
 
-The Quiz tests artifact-commitment mapping heavily — a Remember-band concept, but one whose mastery is foundational. The mapping below is the honest classification.
+The Quiz tests artifact-commitment mapping heavily, a Remember-band concept, but one whose mastery is foundational. The mapping below is the honest classification.
 
 | Q# | Bloom level |
 |---|---|
@@ -273,16 +273,16 @@ The Quiz tests artifact-commitment mapping heavily — a Remember-band concept, 
 ## 🚀 Additional higher-Bloom questions (Q25–Q30, advanced)
 
 ### Q25. GE Aviation's digital-twin team (Module 5 case study) had a Definition of Done that explicitly required FAA-clearable code paths. Analyze whether this DoD is *Scrum-compliant* or whether it accidentally re-introduces Waterfall sign-offs. *(Analyze)*
-A. It's Waterfall — FAA requirements are upfront-defined
-B. Scrum-compliant — the DoD encodes the quality bar for "an Increment is Done." FAA-readiness is a quality requirement, not a phase gate. The team still produces an Increment every Sprint that meets this DoD. The *release* (FAA-cleared production deploy) is separate from "Done"
+A. It's Waterfall, FAA requirements are upfront-defined
+B. Scrum-compliant, the DoD encodes the quality bar for "an Increment is Done." FAA-readiness is a quality requirement, not a phase gate. The team still produces an Increment every Sprint that meets this DoD. The *release* (FAA-cleared production deploy) is separate from "Done"
 C. Scrum-compliant only if the FAA also follows Scrum
-D. Not Scrum — Scrum can't do regulated work
+D. Not Scrum, Scrum can't do regulated work
 
 ---
 
-### Q26. A 4-team Scrum org claims they "share a Product Backlog" — but each team has its own Jira board with team-specific items. Evaluate whether this is one Product Backlog or four. *(Evaluate)*
-A. One — they share a Jira instance
-B. Four — separate boards typically mean separate ordering authorities and separate refinement workflows. Without a single ordered list with a single PO making prioritization calls, the org has *four* backlogs and a single PO is a fiction. The Scrum Guide requires one Product Backlog shared across teams on the same product
+### Q26. A 4-team Scrum org claims they "share a Product Backlog", but each team has its own Jira board with team-specific items. Evaluate whether this is one Product Backlog or four. *(Evaluate)*
+A. One, they share a Jira instance
+B. Four, separate boards typically mean separate ordering authorities and separate refinement workflows. Without a single ordered list with a single PO making prioritization calls, the org has *four* backlogs and a single PO is a fiction. The Scrum Guide requires one Product Backlog shared across teams on the same product
 C. Doesn't matter as long as Jira is used
 D. One only if they all use the same column layout
 
@@ -290,7 +290,7 @@ D. One only if they all use the same column layout
 
 ### Q27. The 2020 Scrum Guide introduced the Product Goal as a new commitment attached to the Product Backlog. Construct the strongest case for WHY adding this commitment was necessary in 2020. *(Create / Evaluate)*
 A. Sutherland wanted to add things to the Guide
-B. Pre-2020, teams routinely lost long-term direction — they had Sprint Goals (short-term) but no formal long-term commitment in the Guide. The Product Goal forces every Sprint Goal to be a stepping stone, not a random work item. This prevents "Scrum theater" where teams ship features without aggregate purpose
+B. Pre-2020, teams routinely lost long-term direction, they had Sprint Goals (short-term) but no formal long-term commitment in the Guide. The Product Goal forces every Sprint Goal to be a stepping stone, not a random work item. This prevents "Scrum theater" where teams ship features without aggregate purpose
 C. The Product Owner role was made stronger
 D. Product Goal replaces the Sprint Goal
 
@@ -304,23 +304,23 @@ D. PM signs off
 
 ---
 
-### Q29. A team's Sprint Backlog explicitly lacks a Sprint Goal — they have selected PBIs and a plan but no overarching objective. Analyze whether this team is doing Scrum. *(Analyze)*
-A. Yes — Sprint Goals are optional
-B. No — the Sprint Backlog has three required parts per the 2020 Scrum Guide: Sprint Goal (why) + selected PBIs (what) + plan (how). Missing the Sprint Goal is missing a Scrum Guide commitment, which is ScrumBut
-C. Yes — only the SM needs to know the goal
+### Q29. A team's Sprint Backlog explicitly lacks a Sprint Goal, they have selected PBIs and a plan but no overarching objective. Analyze whether this team is doing Scrum. *(Analyze)*
+A. Yes, Sprint Goals are optional
+B. No, the Sprint Backlog has three required parts per the 2020 Scrum Guide: Sprint Goal (why) + selected PBIs (what) + plan (how). Missing the Sprint Goal is missing a Scrum Guide commitment, which is ScrumBut
+C. Yes, only the SM needs to know the goal
 D. Yes if the team is small
 
 ---
 
 ### Q30. Mid-Sprint, the PO realizes a critical PBI was misunderstood and the Sprint Backlog needs major restructuring. The Developers protest because they own the Sprint Backlog. Evaluate the correct path forward. *(Evaluate)*
 A. The PO unilaterally rewrites the Sprint Backlog (PO owns the product)
-B. The PO and Developers collaboratively renegotiate. The Sprint Backlog is owned by Developers, but the PO is responsible for product clarity. Scope can be clarified and renegotiated with the PO as more is learned — the Sprint Goal stays, scope of selected PBIs flexes. This is the Scrum Guide's exact prescription
+B. The PO and Developers collaboratively renegotiate. The Sprint Backlog is owned by Developers, but the PO is responsible for product clarity. Scope can be clarified and renegotiated with the PO as more is learned, the Sprint Goal stays, scope of selected PBIs flexes. This is the Scrum Guide's exact prescription
 C. The Sprint is cancelled
 D. The Developers refuse and proceed with the original plan
 
 ---
 
-## 🎯 Answer key — Q25–Q30
+## 🎯 Answer key, Q25–Q30
 
 ### Q25: **B. Scrum-compliant**
 GE Aviation's DoD encoded the quality bar required for an Increment to be Done. The Increment is produced every Sprint and meets the DoD; the *release* (FAA-cleared production deploy) is a separate decision the PO makes when the Increment also satisfies external (FAA) gates. This is consistent with the Scrum Guide's clean separation: an Increment must meet DoD; release is a PO decision based on additional criteria.
@@ -329,13 +329,13 @@ GE Aviation's DoD encoded the quality bar required for an Increment to be Done. 
 The Scrum Guide's "single Product Backlog" requirement is operational, not nominal. If four teams each have their own ordering, refinement, and entry process, they have four backlogs even if they share a tool. The fix: one ordered list, one PO with ordering authority, refinement done collaboratively but with one source of truth.
 
 ### Q27: **B. Prevents "Scrum theater"**
-Pre-2020, teams could mechanically execute Sprint Goals without any long-term coherence — shipping features that didn't aggregate into product value. The Product Goal forces every Sprint Goal to be a stepping stone toward a stated future state of the product. This is one of the most impactful 2020 changes for product-quality (rather than process-mechanics) reasons.
+Pre-2020, teams could mechanically execute Sprint Goals without any long-term coherence, shipping features that didn't aggregate into product value. The Product Goal forces every Sprint Goal to be a stepping stone toward a stated future state of the product. This is one of the most impactful 2020 changes for product-quality (rather than process-mechanics) reasons.
 
 ### Q28: **B. Comprehensive, fit-for-purpose checklist**
 A financial calculator needs *more* than "code reviewed" because the stakes (financial accuracy, security, accessibility, regulatory) are higher. Option B encodes those into the DoD. The DoD must match the product's reality. (A is incomplete; C is the bar Sutherland mocks in his 2014 book; D conflates DoD with stakeholder approval.)
 
 ### Q29: **B. ScrumBut**
-The 2020 Scrum Guide made the Sprint Backlog explicitly three parts: Sprint Goal + PBIs + plan. Missing the Sprint Goal is missing a commitment, not just a nice-to-have. The team can still ship code, but they're doing ScrumBut — and on the PSM I exam, "the team has no Sprint Goal" is one of the strongest signals that something is wrong.
+The 2020 Scrum Guide made the Sprint Backlog explicitly three parts: Sprint Goal + PBIs + plan. Missing the Sprint Goal is missing a commitment, not just a nice-to-have. The team can still ship code, but they're doing ScrumBut, and on the PSM I exam, "the team has no Sprint Goal" is one of the strongest signals that something is wrong.
 
 ### Q30: **B. Collaborative renegotiation**
 The Sprint Backlog is owned by Developers, but the PO is responsible for product clarity. The Scrum Guide says scope "may be clarified and renegotiated with the Product Owner as more is learned." This is the textbook collaborative path. The Sprint Goal stays; the scope of selected PBIs flexes. (A overrides Developer ownership; C is excessive; D refuses collaboration.)
@@ -353,4 +353,4 @@ The Sprint Backlog is owned by Developers, but the PO is responsible for product
 | Evaluate | 2 | 7% | within 20% |
 | Create | 1 | 3% | ~ 5% |
 
-Recall-heavy because artifact mapping is the exam goldmine — students MUST be able to recite the three pairings. Higher-Bloom additions exercise the scenario judgement PSM I tests.
+Recall-heavy because artifact mapping is the exam goldmine, students MUST be able to recite the three pairings. Higher-Bloom additions exercise the scenario judgement PSM I tests.

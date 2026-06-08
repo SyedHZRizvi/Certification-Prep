@@ -5,7 +5,7 @@ title: International Certifications Catalog
 
 # 🏆 International Certifications Catalog
 
-> Every international cert that the 39 courses on this site map to — with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
+> Every international cert that the 39 courses on this site map to, with issuing body, exam format, fee in USD, full registration procedure, designation earned, market standing, and renewal rules.
 
 **Resources** · Certifications Catalog
 *Last updated: 2026-05*
@@ -14,13 +14,13 @@ title: International Certifications Catalog
 
 ## 📌 About Industry Certifications
 
-An "industry certification" is a credential issued by a recognized standards body — not by a school or a vendor's marketing department. Three things separate real certifications from paper mills:
+An "industry certification" is a credential issued by a recognized standards body, not by a school or a vendor's marketing department. Three things separate real certifications from paper mills:
 
-1. **Issuing body has a track record.** PMI was founded in 1969. ASCM (formerly APICS) in 1957. Scrum.org by the co-creator of Scrum himself. ISM in 1915. CompTIA, AWS, Microsoft — these are organizations whose certifications are required language in real job postings.
+1. **Issuing body has a track record.** PMI was founded in 1969. ASCM (formerly APICS) in 1957. Scrum.org by the co-creator of Scrum himself. ISM in 1915. CompTIA, AWS, Microsoft, these are organizations whose certifications are required language in real job postings.
 2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE, vendor portals (HubSpot, Google Skillshop, Meta Blueprint). The exam isn't just a marketing quiz.
 3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
 
-**How to use this page:** Every section starts with one of our 39 courses. After you complete that course, you'll have covered the core objectives for the certifications listed under it — with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules. Completing the course prepares you for the exam; passing the exam depends on your individual preparation and is not guaranteed.
+**How to use this page:** Every section starts with one of our 39 courses. After you complete that course, you'll have covered the core objectives for the certifications listed under it, with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules. Completing the course prepares you for the exam; passing the exam depends on your individual preparation and is not guaranteed.
 
 Pick the course. Finish it. Pay for the exam. Walk in confident.
 
@@ -28,7 +28,7 @@ Pick the course. Finish it. Pay for the exam. Walk in confident.
 
 ---
 
-## 📑 Quick Map — Course → Recommended Certifications
+## 📑 Quick Map, Course → Recommended Certifications
 
 Courses appear in the same canonical order used on the homepage and sidebar: **Project Management → IT, Cloud & Systems Administration → Generative & Agentic AI → Supply Chain & Operations → AI Digital Marketing → Bitcoin & E-Commerce → Animation & Motion Design.**
 
@@ -58,7 +58,7 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 
 ### Generative & Agentic AI (foundation → advanced)
 
-**Foundation tier — entry-level, no/minimal prereqs:**
+**Foundation tier, entry-level, no/minimal prereqs:**
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
@@ -73,23 +73,23 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 |------------|--------------------------------------|-----------|------------|
 | Claude Architect | **Cert Hub Certificate of Completion** (Anthropic-aligned, Cert Hub original) | included | [Start prep →](../../28-Claude-Architect/) |
 | Generative AI Engineer | **Cert Hub Certificate of Completion** + (optional) Databricks GenAI Engineer Associate | included / $200 | [Start prep →](../../30-Generative-AI-Engineer/) |
-| AWS ML Specialty | **AWS Certified Machine Learning — Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../../31-AWS-ML-Specialty/) |
+| AWS ML Specialty | **AWS Certified Machine Learning, Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../../31-AWS-ML-Specialty/) |
 
 ### Supply Chain & Operations (foundation → advanced)
 
-**Foundation tier — no eligibility requirements:**
+**Foundation tier, no eligibility requirements:**
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
 | ASCM CPIM | **CPIM Part 1 + Part 2** (ASCM) | $1,495+ | [Start prep →](../../11-ASCM-CPIM/) |
 | ASCM CLTD | **CLTD** (ASCM) | $1,295+ | [Start prep →](../../12-ASCM-CLTD/) |
 
-**Senior tier — degree + experience required:**
+**Senior tier, degree + experience required:**
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| ASCM CSCP | **CSCP** (ASCM) — Bachelor's + 2 yrs OR 5 yrs experience | $1,295+ | [Start prep →](../../10-ASCM-CSCP/) |
-| ISM CPSM | **CPSM 1 + 2 + 3** (ISM) — Bachelor's + 3 yrs OR 5 yrs experience | $199 ea. | [Start prep →](../../13-ISM-CPSM/) |
+| ASCM CSCP | **CSCP** (ASCM), Bachelor's + 2 yrs OR 5 yrs experience | $1,295+ | [Start prep →](../../10-ASCM-CSCP/) |
+| ISM CPSM | **CPSM 1 + 2 + 3** (ISM), Bachelor's + 3 yrs OR 5 yrs experience | $199 ea. | [Start prep →](../../13-ISM-CPSM/) |
 
 ### AI Digital Marketing (5-course ladder)
 
@@ -98,7 +98,7 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 | AI Digital Marketing Foundations | HubSpot Inbound · Content Marketing | FREE | [Start prep →](../../14-AI-Marketing-Foundations/) |
 | AI Digital Marketing Practitioner | Google Ads · Meta Blueprint Commerce | FREE / $99+ | [Start prep →](../../15-AI-Marketing-Practitioner/) |
 | AI Digital Marketing Strategist | GA4 IQ · Wharton Online Specialization | FREE / $500 | [Start prep →](../../16-AI-Marketing-Strategist/) |
-| AI Digital Marketing Entrepreneur | (No single cert — readiness portfolio) | — | [Start prep →](../../17-AI-Marketing-Entrepreneur/) |
+| AI Digital Marketing Entrepreneur | (No single cert readiness portfolio) | | [Start prep →](../../17-AI-Marketing-Entrepreneur/) |
 | AI Digital Marketing Capstone Portfolio | DMI Professional Diploma · OMCP | $1,800+ / $199+ | [Start prep →](../../18-AI-Marketing-Capstone-Portfolio/) |
 
 ### Bitcoin & E-Commerce
@@ -112,13 +112,13 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| Animation Foundations | **Adobe Certified Professional — Visual Design** (Adobe/Certiport) | $180 | [Start prep →](../../33-Animation-Foundations/) |
-| 2D Digital Animation | **Adobe Certified Professional — Animate** (Adobe/Certiport) · Toon Boom Harmony User Certification | $180 · $99 | [Start prep →](../../34-2D-Digital-Animation/) |
-| Motion Graphics & UI Animation | **Adobe Certified Professional — After Effects** (Adobe/Certiport) | $180 | [Start prep →](../../35-Motion-Graphics-UI-Animation/) |
+| Animation Foundations | **Adobe Certified Professional, Visual Design** (Adobe/Certiport) | $180 | [Start prep →](../../33-Animation-Foundations/) |
+| 2D Digital Animation | **Adobe Certified Professional, Animate** (Adobe/Certiport) · Toon Boom Harmony User Certification | $180 · $99 | [Start prep →](../../34-2D-Digital-Animation/) |
+| Motion Graphics & UI Animation | **Adobe Certified Professional, After Effects** (Adobe/Certiport) | $180 | [Start prep →](../../35-Motion-Graphics-UI-Animation/) |
 | 3D Animation with Blender | **Autodesk Maya Certified User** (Autodesk/Certiport) · Unity Certified Associate (Unity Technologies) | $50 · $199 | [Start prep →](../../36-3D-Animation-Blender/) |
 | Advanced Character Animation | **Autodesk Maya Certified Professional** (Autodesk) | $250 | [Start prep →](../../37-Advanced-Character-Animation/) |
-| VFX & Compositing | **Adobe Certified Professional — After Effects** · Foundry NUKE User Certification | $180 · $99 | [Start prep →](../../38-VFX-Compositing/) |
-| Game & UI Animation | **Unity Certified Professional — Technical Artist** (Unity Technologies) · Unreal Engine Online Learning Certificate (Epic Games) | $199 · Free | [Start prep →](../../39-Game-UI-Animation/) |
+| VFX & Compositing | **Adobe Certified Professional, After Effects** · Foundry NUKE User Certification | $180 · $99 | [Start prep →](../../38-VFX-Compositing/) |
+| Game & UI Animation | **Unity Certified Professional, Technical Artist** (Unity Technologies) · Unreal Engine Online Learning Certificate (Epic Games) | $199 · Free | [Start prep →](../../39-Game-UI-Animation/) |
 
 ---
 
@@ -128,11 +128,11 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 
 After completing this course, you will have covered the core objectives for these international certifications:
 
-### ➡️ PSM I — Professional Scrum Master I
+### ➡️ PSM I, Professional Scrum Master I
 
 **Designation earned after passing:** *Professional Scrum Master I (PSM I™)*
 
-- **Issuing body:** **Scrum.org** (co-founded by Ken Schwaber, co-creator of Scrum) — the most authoritative Scrum credential globally.
+- **Issuing body:** **Scrum.org** (co-founded by Ken Schwaber, co-creator of Scrum), the most authoritative Scrum credential globally.
 - **Market standing:** Tier-1 entry credential. Required or preferred for ~70% of Scrum Master job listings on LinkedIn. Higher rigor than CSM (no mandatory course to sit the exam).
 - **Benefits of passing:** Recognized by hiring managers worldwide. Average PSM I-holder salary in the US is $95K–$120K (Scrum Master entry-mid). Opens doors at any company using Scrum/Agile.
 - **Exam format:** 80 multiple-choice questions · 60 minutes · 85% passing score · online proctored, take from home.
@@ -145,9 +145,9 @@ After completing this course, you will have covered the core objectives for thes
   4. Log in to the exam portal anytime within 365 days
   5. Take the 60-minute exam (no proctor watching; honor system)
   6. Pass mark: 85% (68/80 questions). Result is instant.
-- **Renewal:** **None — lifetime credential.**
+- **Renewal:** **None, lifetime credential.**
 
-### ➡️ CSM — Certified ScrumMaster
+### ➡️ CSM, Certified ScrumMaster
 
 **Designation earned after passing:** *Certified ScrumMaster (CSM®)*
 
@@ -155,7 +155,7 @@ After completing this course, you will have covered the core objectives for thes
 - **Market standing:** Tier-1, equally HR-recognized as PSM I, slightly less technically rigorous.
 - **Benefits of passing:** Same job-market reach as PSM I, includes 2-year Scrum Alliance membership and access to community.
 - **Exam format:** 50 questions · 60 minutes · 74% pass · online.
-- **Fee:** **$995–$1,495 USD** — includes the **mandatory 2-day course with a Certified Scrum Trainer**. You cannot sit CSM without the course.
+- **Fee:** **$995–$1,495 USD**, includes the **mandatory 2-day course with a Certified Scrum Trainer**. You cannot sit CSM without the course.
 - **How to register / sit for the exam:**
   1. Find a Certified Scrum Trainer at [scrumalliance.org](https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster)
   2. Register and pay for a 2-day course (in-person or live online)
@@ -173,11 +173,11 @@ After completing this course, you will have covered the core objectives for thes
 
 After completing this course, you will have covered the core objectives for:
 
-### ➡️ PMP — Project Management Professional
+### ➡️ PMP, Project Management Professional
 
-**Designation earned after passing:** *Project Management Professional (PMP)® — you may use "PMP" after your name on business cards, LinkedIn, email signature, and resumes.*
+**Designation earned after passing:** *Project Management Professional (PMP)®, you may use "PMP" after your name on business cards, LinkedIn, email signature, and resumes.*
 
-- **Issuing body:** **Project Management Institute (PMI)** — ~1.4 million PMP holders worldwide.
+- **Issuing body:** **Project Management Institute (PMI)**, ~1.4 million PMP holders worldwide.
 - **Market standing:** Tier-1 global gold standard for project management. The single most-recognized PM credential.
 - **Benefits of passing:** Average PMP-holder salary in the US is **$148K** (PMI Earning Power Salary Survey 2024). Required for many senior PM, PMO, Program Manager, and Director-of-PMO roles. Globally portable across industries.
 - **Exam format:** 180 questions (mix of MCQ, multiple-response, matching, hotspot) · 230 minutes · pass/fail across 3 domains (People 42% / Process 50% / Business Environment 8%) · proctored.
@@ -191,12 +191,12 @@ After completing this course, you will have covered the core objectives for:
   3. Submit your PMP application: document your experience hours + 35 hours of education
   4. PMI reviews in ~5 business days. You may be selected for random audit (5% of applicants)
   5. Once approved, pay the exam fee
-  6. Schedule via [Pearson VUE](https://home.pearsonvue.com/pmi) — pick test center (in-person) OR online proctoring (you, webcam, quiet room)
+  6. Schedule via [Pearson VUE](https://home.pearsonvue.com/pmi), pick test center (in-person) OR online proctoring (you, webcam, quiet room)
   7. Take the exam (230 min with two 10-minute breaks)
   8. Result on screen within 2 hours
 - **Renewal:** Every 3 years · **60 PDUs** (Professional Development Units) + $150 renewal fee. PDUs come from courses, webinars, volunteering, and content creation.
 
-### ➡️ CAPM — Certified Associate in Project Management
+### ➡️ CAPM, Certified Associate in Project Management
 
 **Designation earned after passing:** *Certified Associate in Project Management (CAPM®)*
 
@@ -221,16 +221,16 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *CompTIA A+ Certified* (you can append "CompTIA A+" after your name)
 
-- **Issuing body:** **CompTIA** — vendor-neutral. The single most-required first cert for IT support / help-desk roles globally.
+- **Issuing body:** **CompTIA**, vendor-neutral. The single most-required first cert for IT support / help-desk roles globally.
 - **Market standing:** Tier-1 foundational IT credential. Cited in ~70% of US help-desk / desktop technician job postings. Accepted by the US DoD 8140 for entry-level IT support.
 - **Benefits of passing:** Direct path to Help Desk Technician, Desktop Support, Field Service, and Junior Sysadmin roles ($45K-$65K). Gateway to Network+, Security+, and vendor-specific certs (Cisco CCNA, Microsoft MD-102).
 - **Exam format:** TWO exams (Core 1 + Core 2). Each: 90 questions · 90 minutes · 675/900 (Core 1) and 700/900 (Core 2) passing · MCQ + drag-and-drop + Performance-Based Questions (PBQs).
 - **Fee:** **$253 USD per exam ($506 total).** Discounts available via CompTIA Academy partners (often $150-180 each).
-- **Eligibility:** None (CompTIA recommends 9-12 months of hands-on IT experience — this course supplies the equivalent).
+- **Eligibility:** None (CompTIA recommends 9-12 months of hands-on IT experience, this course supplies the equivalent).
 - **How to register / sit for the exam:**
   1. Create a CompTIA account at [comptia.org](https://www.comptia.org/)
   2. Buy the 220-1101 voucher ($253), then later the 220-1102 voucher ($253)
-  3. Schedule each via [Pearson VUE](https://home.pearsonvue.com/comptia) — test center or online proctored
+  3. Schedule each via [Pearson VUE](https://home.pearsonvue.com/comptia), test center or online proctored
   4. Take each 90-minute exam (no requirement to do them back-to-back; you have 9 months between)
   5. Score on screen at end; certificate via email within 7 business days after passing the second exam
 - **Renewal:** **Every 3 years** · 20 CEUs (Continuing Education Units) OR pass any higher CompTIA exam (Network+, Security+).
@@ -269,7 +269,7 @@ After completing this course, you will have covered the core objectives for:
 **Designation earned after passing:** *CompTIA Linux+ Certified*
 
 - **Issuing body:** CompTIA. Vendor-neutral Linux administration credential.
-- **Market standing:** Tier-1 vendor-neutral Linux cert. Distro-agnostic — knowledge maps cleanly to RHEL, Ubuntu, Debian, SUSE, and other enterprise Linux distros. Strong complement to RHCSA (Red Hat–specific) and LFCS (Linux Foundation).
+- **Market standing:** Tier-1 vendor-neutral Linux cert. Distro-agnostic, knowledge maps cleanly to RHEL, Ubuntu, Debian, SUSE, and other enterprise Linux distros. Strong complement to RHCSA (Red Hat–specific) and LFCS (Linux Foundation).
 - **Benefits of passing:** Direct path to Linux Administrator, DevOps Support, Site Reliability Engineer (junior), and Cloud Engineer (Linux-side) roles ($75K-$110K).
 - **Exam format:** Max 90 questions · 90 minutes · 720/900 passing · MCQ + PBQs (heavy emphasis on command-line scenarios).
 - **Fee:** **$369 USD.**
@@ -289,7 +289,7 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *CompTIA Server+ Certified*
 
-- **Issuing body:** CompTIA. The only major vendor-neutral server credential — covers hardware, virtualization, storage, and disaster recovery across Windows + Linux + ESXi/Hyper-V.
+- **Issuing body:** CompTIA. The only major vendor-neutral server credential, covers hardware, virtualization, storage, and disaster recovery across Windows + Linux + ESXi/Hyper-V.
 - **Market standing:** Tier-1 in mid-sized enterprises and MSPs running mixed environments. Required or preferred for Server Administrator, Junior Datacenter Engineer, and Hybrid-Infrastructure roles. Less common than Microsoft Windows Server certs in pure-Windows shops, but uniquely useful in heterogeneous datacenters.
 - **Benefits of passing:** Direct path to Server Administrator, Datacenter Technician, and Hybrid Infrastructure Engineer roles ($70K-$100K).
 - **Exam format:** Max 90 questions · 90 minutes · 750/900 passing · MCQ + drag-and-drop + PBQs.
@@ -310,15 +310,15 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *CompTIA Security+ Certified* (you can append "Security+" after your name)
 
-- **Issuing body:** **CompTIA** — vendor-neutral. Widely accepted by the **US Department of Defense (DoD 8570/8140 baseline)** as a foundational cybersecurity credential.
-- **Market standing:** Tier-1 entry cert. The most-pursued cybersecurity credential globally — ~70% of US cyber job postings list it. Required for many DoD and federal contractor roles.
+- **Issuing body:** **CompTIA**, vendor-neutral. Widely accepted by the **US Department of Defense (DoD 8570/8140 baseline)** as a foundational cybersecurity credential.
+- **Market standing:** Tier-1 entry cert. The most-pursued cybersecurity credential globally, ~70% of US cyber job postings list it. Required for many DoD and federal contractor roles.
 - **Benefits of passing:** Average entry-level cybersecurity salary $70K-$95K. Direct path to SOC Analyst, Junior Pen-Tester, Security Engineer, and Compliance Analyst roles. Prerequisite-equivalent for CySA+, CASP+, and a stepping stone to CISSP.
-- **Exam format:** 90 questions · 90 minutes · 750/900 passing · multiple-choice + Performance-Based Questions (PBQs — simulated tasks in a sandbox).
+- **Exam format:** 90 questions · 90 minutes · 750/900 passing · multiple-choice + Performance-Based Questions (PBQs, simulated tasks in a sandbox).
 - **Fee:** **$404 USD** for the voucher. Discounts available via CompTIA Academy partners (often $250-300).
-- **Eligibility:** None (CompTIA recommends 2 years of IT experience — this course supplies the equivalent).
+- **Eligibility:** None (CompTIA recommends 2 years of IT experience, this course supplies the equivalent).
 - **How to register / sit for the exam:**
   1. Create a CompTIA account at [comptia.org](https://www.comptia.org/)
-  2. Buy the SY0-701 voucher ($404) — bundles with practice tests + CertMaster are available
+  2. Buy the SY0-701 voucher ($404), bundles with practice tests + CertMaster are available
   3. Schedule via [Pearson VUE](https://home.pearsonvue.com/comptia)
   4. Take the 90-minute exam at a test center (online proctoring also available)
   5. Score on screen at end; certificate via email within 7 business days
@@ -336,7 +336,7 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *AWS Certified Cloud Practitioner* (badge issued via Credly; valid for 3 years)
 
-- **Issuing body:** **Amazon Web Services** — ~33% global cloud market share, the #1 cloud provider.
+- **Issuing body:** **Amazon Web Services**, ~33% global cloud market share, the #1 cloud provider.
 - **Market standing:** Tier-1 foundational. The "cloud-literacy" credential. Strong differentiator for ANY job touching cloud, including non-technical roles (sales, finance, account management).
 - **Benefits of passing:** Required or preferred for many junior IT roles. Gateway to all higher AWS certifications. Average AWS-cert-holder earns 17% more than non-certified peers (Global Knowledge IT Skills & Salary 2024).
 - **Exam format:** 65 questions (multiple-choice + multiple-response) · 90 minutes · 700/1000 passing score.
@@ -359,12 +359,12 @@ After completing this course, you will have covered the core objectives for:
 
 After completing this course, you will have covered the core objectives for:
 
-### ➡️ AWS Certified Solutions Architect — Associate (SAA-C03)
+### ➡️ AWS Certified Solutions Architect, Associate (SAA-C03)
 
 **Designation earned after passing:** *AWS Certified Solutions Architect – Associate* (Credly badge; 3-year validity)
 
 - **Issuing body:** AWS.
-- **Market standing:** Tier-1 flagship Associate — the single most-pursued AWS Associate credential globally.
+- **Market standing:** Tier-1 flagship Associate, the single most-pursued AWS Associate credential globally.
 - **Benefits of passing:** Average SAA-holder salary in the US is **~$148K** (Global Knowledge 2024). Required or preferred for Cloud Solutions Architect, DevOps Engineer, Cloud Engineer, and Cloud Migration Consultant roles. Direct path to SAP-C02 (Architect Pro) and other Specialty certs.
 - **Exam format:** 65 questions · 130 minutes · 720/1000 passing · heavily scenario-based.
 - **Fee:** **$150 USD.**
@@ -384,17 +384,17 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *Microsoft Certified: Azure Fundamentals* (digital badge via Microsoft Learn)
 
-- **Issuing body:** **Microsoft** — ~22% global cloud market share, #2 worldwide.
+- **Issuing body:** **Microsoft**, ~22% global cloud market share, #2 worldwide.
 - **Market standing:** Tier-1 foundational for the Microsoft enterprise universe. Especially valuable for IT pros, business analysts, and managers selling/buying Azure.
-- **Benefits of passing:** Career-launcher for any Azure-touching role. Strong filter advantage in companies with M365 / Dynamics / Power Platform investments. **Foundational certs (AZ-900, AI-900, DP-900, SC-900) never expire** — a permanent line on your resume.
+- **Benefits of passing:** Career-launcher for any Azure-touching role. Strong filter advantage in companies with M365 / Dynamics / Power Platform investments. **Foundational certs (AZ-900, AI-900, DP-900, SC-900) never expire**, a permanent line on your resume.
 - **Exam format:** 40–60 questions · 65 minutes · 700/1000 passing · MCQ + drag-and-drop + case studies.
-- **Fee:** **$99 USD** (free voucher periodically available via Microsoft Virtual Training Days — check [aka.ms/MVTD](https://aka.ms/MVTD) monthly).
+- **Fee:** **$99 USD** (free voucher periodically available via Microsoft Virtual Training Days, check [aka.ms/MVTD](https://aka.ms/MVTD) monthly).
 - **Eligibility:** None.
 - **How to register / sit for the exam:**
   1. Create a Microsoft Learn account at [learn.microsoft.com](https://learn.microsoft.com/)
   2. Navigate to AZ-900 certification page → "Schedule exam"
   3. Pay $99 via credit card
-  4. Schedule via Pearson VUE — choose test center (in-person) OR online proctored
+  4. Schedule via Pearson VUE, choose test center (in-person) OR online proctored
   5. Take the 65-minute exam
   6. Score on screen at end; badge issued within 24-48 hours
 - **Renewal:** **NEVER EXPIRES.** Fundamentals tier is lifetime.
@@ -416,9 +416,9 @@ After completing this course, you will have covered the core objectives for:
 - **Benefits of passing:** Average AZ-104-holder salary ~$130K-$150K. Required for Cloud Engineer, Systems Administrator (Azure-flavored), and DevOps Engineer roles in Microsoft-shop enterprises.
 - **Exam format:** 40–60 questions · 100 minutes · 700/1000 pass · scenario- and lab-based.
 - **Fee:** **$165 USD.**
-- **Eligibility:** None (Microsoft recommends 6+ months of Azure operational experience — this course substitutes).
+- **Eligibility:** None (Microsoft recommends 6+ months of Azure operational experience, this course substitutes).
 - **How to register:** Same flow as AZ-900 via learn.microsoft.com → Pearson VUE scheduling.
-- **Renewal:** **Every 1 year** via a free renewal assessment on Microsoft Learn — Microsoft's renewal model is the friendliest in the industry.
+- **Renewal:** **Every 1 year** via a free renewal assessment on Microsoft Learn, Microsoft's renewal model is the friendliest in the industry.
 
 ---
 
@@ -434,7 +434,7 @@ After completing this course, you will have covered the core objectives for:
 
 - **Issuing body:** **Microsoft.** Released 2022; replaced the long-lived MCSA: Windows Server track. Covers Active Directory Domain Services (AD DS), hybrid identity with Azure AD / Entra ID, Azure Arc, hyper-converged infrastructure, failover clustering, Storage Spaces Direct, and PowerShell DSC.
 - **Market standing:** Tier-1 Microsoft enterprise credential. Required or preferred for Senior Windows Administrator, AD Architect, Hybrid Infrastructure Engineer, and Site Reliability Engineer (Windows-side) roles in M365 / hybrid-cloud shops.
-- **Benefits of passing:** Average Windows Server Hybrid Admin salary in the US is **$110K-$155K**. Direct path to AZ-305 (Azure Solutions Architect Expert) and AZ-700 (Network Engineer). The most enduring administrative skill in the Microsoft ecosystem — Active Directory forests planted today still run enterprises 20 years from now.
+- **Benefits of passing:** Average Windows Server Hybrid Admin salary in the US is **$110K-$155K**. Direct path to AZ-305 (Azure Solutions Architect Expert) and AZ-700 (Network Engineer). The most enduring administrative skill in the Microsoft ecosystem, Active Directory forests planted today still run enterprises 20 years from now.
 - **Exam format:** TWO exams. AZ-800 (Administering Windows Server Hybrid Core Infrastructure) and AZ-801 (Configuring Windows Server Hybrid Advanced Services). Each: 40–60 questions · 100 minutes · 700/1000 passing · MCQ + drag-and-drop + case studies.
 - **Fee:** **$165 USD per exam ($330 total).** Microsoft Virtual Training Days vouchers occasionally apply.
 - **Eligibility:** None (Microsoft recommends 2+ years of Windows Server administration + 1+ year of Azure familiarity).
@@ -481,7 +481,7 @@ After completing this course, you will have covered the core objectives for:
 
 - **Issuing body:** **Microsoft.** Covers Entra ID (formerly Azure AD), conditional access, identity governance, Privileged Identity Management (PIM), Identity Protection, B2B/B2C collaboration, and hybrid identity (AD Connect, federation).
 - **Market standing:** Tier-1 Microsoft security credential. Required or preferred for IAM Engineer, Identity Architect, Zero Trust Architect, and security-adjacent Engineer roles. The fastest-growing Microsoft cert in 2024-2026 as enterprises consolidate on Entra ID.
-- **Benefits of passing:** Average SC-300-holder salary **$120K-$165K**. Direct prerequisite for SC-100 (Cybersecurity Architect Expert) and a strong complement to AZ-500 (Azure Security Engineer). Identity is the new perimeter — IAM engineers are among the most in-demand security specialists.
+- **Benefits of passing:** Average SC-300-holder salary **$120K-$165K**. Direct prerequisite for SC-100 (Cybersecurity Architect Expert) and a strong complement to AZ-500 (Azure Security Engineer). Identity is the new perimeter, IAM engineers are among the most in-demand security specialists.
 - **Exam format:** 40–60 questions · 100 minutes · 700/1000 passing · MCQ + case studies + scenario-based questions.
 - **Fee:** **$165 USD.**
 - **Eligibility:** None (Microsoft recommends Azure / M365 admin experience + basic security background).
@@ -496,15 +496,15 @@ After completing this course, you will have covered the core objectives for:
 
 After completing this course, you are ready to claim:
 
-### ➡️ Cert Hub Certificate of Completion — Claude Architect (Cert Hub original)
+### ➡️ Cert Hub Certificate of Completion, Claude Architect (Cert Hub original)
 
-**Designation earned after passing:** *Cert Hub Certified — Claude Architect*
+**Designation earned after passing:** *Cert Hub Certified, Claude Architect*
 
-- **Issuing body:** **The Cert Hub** (Humayun Zafar, Toronto). This is a Cert-Hub-original assessment — not an Anthropic-issued credential. It is **aligned with Anthropic's official Claude documentation, Constitutional AI paper, and Model Context Protocol (Nov 2024) spec.**
+- **Issuing body:** **The Cert Hub** (Humayun Zafar, Toronto). This is a Cert-Hub-original assessment, not an Anthropic-issued credential. It is **aligned with Anthropic's official Claude documentation, Constitutional AI paper, and Model Context Protocol (Nov 2024) spec.**
 - **Market standing:** Tier-2 emerging credential. Most-cited Anthropic-aligned learning track in the LinkedIn AI-engineer skill graph (2025-2026). Used by recruiters at AI-native startups (Cursor, Notion, Klarna, Replit) as a screening signal for Claude familiarity.
 - **Benefits of passing:** Demonstrates production-grade Claude API + MCP + agentic-patterns proficiency. Strong differentiator for AI Engineer / Solutions Engineer / Developer Relations roles at Anthropic-partner companies. Average compensation for engineers shipping Claude-powered products in 2026: $180K-$280K.
 - **Exam format:** 60 questions · 60 minutes · 75% pass · honor-system, on-demand.
-- **Fee:** **Included with course enrollment** — no separate exam fee.
+- **Fee:** **Included with course enrollment**, no separate exam fee.
 - **Renewal:** **Lifetime credential.** Cert Hub will email curriculum updates as Anthropic ships new capabilities (Claude 4.x model releases, new MCP spec versions, new agentic patterns).
 - **Recommended after:** Prompt Engineering Specialist (Course 29) or AWS AI Practitioner (AIF-C01).
 
@@ -516,12 +516,12 @@ After completing this course, you are ready to claim:
 
 After completing this course, you are ready to claim:
 
-### ➡️ Cert Hub Certificate of Completion — Prompt Engineering Specialist (Cert Hub original)
+### ➡️ Cert Hub Certificate of Completion, Prompt Engineering Specialist (Cert Hub original)
 
-**Designation earned after passing:** *Cert Hub Certified — Prompt Engineering Specialist*
+**Designation earned after passing:** *Cert Hub Certified, Prompt Engineering Specialist*
 
 - **Issuing body:** **The Cert Hub.** Vendor-neutral: covers Claude, GPT, Gemini, Llama.
-- **Market standing:** Tier-1 in-demand skill 2025-2026. Prompt engineering has shifted from "nice-to-have" to "core competency" for any AI-touching role — product managers, content strategists, software engineers, data scientists, marketing operators.
+- **Market standing:** Tier-1 in-demand skill 2025-2026. Prompt engineering has shifted from "nice-to-have" to "core competency" for any AI-touching role, product managers, content strategists, software engineers, data scientists, marketing operators.
 - **Benefits of passing:** Direct path to Prompt Engineer ($120K-$200K), AI Content Strategist ($90K-$150K), and embedded prompt-engineering roles inside any team building LLM-powered features. Strong complement to any role that wasn't AI-native 18 months ago.
 - **Exam format:** 60 questions · 60 minutes · 75% pass · honor-system, on-demand.
 - **Fee:** **Included with course enrollment.**
@@ -536,20 +536,20 @@ After completing this course, you are ready to claim:
 
 After completing this course, you are ready to claim:
 
-### ➡️ Cert Hub Certificate of Completion — Generative AI Engineer (Cert Hub original)
+### ➡️ Cert Hub Certificate of Completion, Generative AI Engineer (Cert Hub original)
 
-**Designation earned after passing:** *Cert Hub Certified — Generative AI Engineer*
+**Designation earned after passing:** *Cert Hub Certified, Generative AI Engineer*
 
-- **Issuing body:** **The Cert Hub.** Full-stack GenAI engineering — vendor-neutral but cross-references official Anthropic, OpenAI, Google, Hugging Face, LangChain, Pinecone, and AWS documentation.
+- **Issuing body:** **The Cert Hub.** Full-stack GenAI engineering, vendor-neutral but cross-references official Anthropic, OpenAI, Google, Hugging Face, LangChain, Pinecone, and AWS documentation.
 - **Market standing:** Tier-1 emerging credential. The most-posted AI title of 2026 ("Generative AI Engineer" / "LLM Engineer" / "AI Application Engineer"). Validates the full stack: embeddings + vector DBs + RAG + LangChain/LlamaIndex + fine-tuning + agents + evaluation + guardrails + production deployment.
 - **Benefits of passing:** Direct path to Generative AI Engineer ($170K-$280K + equity), AI Application Engineer ($150K-$240K), AI Platform Engineer ($180K-$300K), and Research Engineer (Applied AI) ($200K-$400K+ at frontier labs).
 - **Exam format:** 65 questions · 90 minutes · 75% pass · honor-system, on-demand.
 - **Fee:** **Included with course enrollment.**
 - **Renewal:** **Lifetime credential** with continuing-education updates.
 - **Optional industry credentials to pair with this course:**
-  - **Databricks Certified Generative AI Engineer Associate** ($200 USD, [databricks.com/learn/certification](https://www.databricks.com/learn/certification)) — strong vendor-specific stamp for Databricks-shop hires.
-  - **NVIDIA Certified Associate: Generative AI / LLMs** ($135 USD, [nvidia.com/training](https://www.nvidia.com/en-us/training/)) — useful if you'll be working with NVIDIA-stack infra (NIM, TensorRT-LLM, Triton).
-- **Recommended after:** Prompt Engineering Specialist (Course 29). **Strongest combo:** Generative AI Engineer + AWS ML Specialty + Claude Architect — covers everything from production GenAI infra to vendor-specific delivery to Anthropic-aligned application engineering.
+  - **Databricks Certified Generative AI Engineer Associate** ($200 USD, [databricks.com/learn/certification](https://www.databricks.com/learn/certification)), strong vendor-specific stamp for Databricks-shop hires.
+  - **NVIDIA Certified Associate: Generative AI / LLMs** ($135 USD, [nvidia.com/training](https://www.nvidia.com/en-us/training/)), useful if you'll be working with NVIDIA-stack infra (NIM, TensorRT-LLM, Triton).
+- **Recommended after:** Prompt Engineering Specialist (Course 29). **Strongest combo:** Generative AI Engineer + AWS ML Specialty + Claude Architect, covers everything from production GenAI infra to vendor-specific delivery to Anthropic-aligned application engineering.
 
 ---
 
@@ -559,16 +559,16 @@ After completing this course, you are ready to claim:
 
 After completing this course, you will have covered the core objectives for:
 
-### ➡️ AWS Certified Machine Learning — Specialty (MLS-C01)
+### ➡️ AWS Certified Machine Learning, Specialty (MLS-C01)
 
-**Designation earned after passing:** *AWS Certified Machine Learning — Specialty* (Credly badge; 3-year validity)
+**Designation earned after passing:** *AWS Certified Machine Learning, Specialty* (Credly badge; 3-year validity)
 
 - **Issuing body:** **Amazon Web Services.** AWS's flagship Specialty-tier ML credential.
 - **Market standing:** Tier-1 vendor-specialty. Cited in 60%+ of senior ML Engineer job postings at AWS-shop enterprises (Capital One, Netflix, Airbnb, Toyota, Stripe, FINRA, GE, and most US federal contractors). The single most-respected vendor ML certification globally.
 - **Benefits of passing:** Average MLS-holder salary in the US is **$165K-$220K** (Global Knowledge 2024). Required or preferred for Senior ML Engineer, ML Engineering Manager, Principal Data Scientist (AWS-flavored), and SageMaker-specialist roles. Direct path to AWS Solutions Architect Professional + AWS DevOps Engineer Professional.
 - **Exam format:** **65 questions · 180 minutes · 750/1000 passing.** 4 official domains: Data Engineering 20% · EDA 24% · Modeling 36% · ML Implementation & Operations 20%. Heavy SageMaker focus with growing Bedrock content.
 - **Fee:** **$300 USD.** Often $150 with re:Invent voucher (AWS frequently offers 50%-off post-event).
-- **Eligibility:** None (AWS recommends 2+ years of hands-on ML/DS experience — this course substitutes).
+- **Eligibility:** None (AWS recommends 2+ years of hands-on ML/DS experience, this course substitutes).
 - **How to register / sit for the exam:**
   1. Create an AWS Training and Certification account at [aws.amazon.com/certification](https://aws.amazon.com/certification/)
   2. Click "Schedule Exam" → choose Pearson VUE or PSI
@@ -585,13 +585,13 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../32-Google-AI-Pro/README.md)
 
-After completing this course, you will have covered the core objectives for **two** Google Cloud credentials — the entry-tier *Generative AI Leader* and the flagship *Professional Machine Learning Engineer (PMLE)*. The Google AI Pro curriculum is the only Cert Hub course mapped to a real Google certification ladder.
+After completing this course, you will have covered the core objectives for **two** Google Cloud credentials, the entry-tier *Generative AI Leader* and the flagship *Professional Machine Learning Engineer (PMLE)*. The Google AI Pro curriculum is the only Cert Hub course mapped to a real Google certification ladder.
 
 ### ➡️ Google Cloud Generative AI Leader
 
-**Designation earned after passing:** *Google Cloud Certified — Generative AI Leader*
+**Designation earned after passing:** *Google Cloud Certified, Generative AI Leader*
 
-- **Issuing body:** **Google Cloud** — released 2024 as Google's first vendor-neutral-friendly GenAI credential, aimed at business + technical leaders.
+- **Issuing body:** **Google Cloud**, released 2024 as Google's first vendor-neutral-friendly GenAI credential, aimed at business + technical leaders.
 - **Market standing:** Tier-1 emerging credential. Required or preferred for Solutions Consultant, AI Product Manager, and Cloud Account Executive roles at Google-Cloud-partner enterprises. The fastest-growing AI cert in 2025-2026 outside of AWS.
 - **Benefits of passing:** Average compensation for engineers shipping Gemini-powered products in 2026: $150K-$230K. Direct path to PMLE. Strong differentiator for any role that touches Vertex AI, Gemini API, or Google Cloud AI infrastructure.
 - **Exam format:** 50–60 multiple-choice + multiple-response questions · 90 minutes · scaled pass · proctored.
@@ -599,7 +599,7 @@ After completing this course, you will have covered the core objectives for **tw
 - **Eligibility:** None.
 - **How to register / sit for the exam:**
   1. Create a Google Cloud Skills Boost account at [cloud.google.com/learn/certification](https://cloud.google.com/learn/certification)
-  2. Schedule via Kryterion Webassessor — choose test center or online proctored
+  2. Schedule via Kryterion Webassessor, choose test center or online proctored
   3. Pay the $99 fee
   4. Take the 90-minute exam
   5. Digital badge issued via Credly within 5 business days
@@ -607,14 +607,14 @@ After completing this course, you will have covered the core objectives for **tw
 
 ### ➡️ Google Cloud Professional Machine Learning Engineer (PMLE)
 
-**Designation earned after passing:** *Google Cloud Certified — Professional Machine Learning Engineer*
+**Designation earned after passing:** *Google Cloud Certified, Professional Machine Learning Engineer*
 
-- **Issuing body:** Google Cloud. The flagship Professional-tier ML credential — same prestige tier as Google's Professional Cloud Architect and Professional Cloud Security Engineer.
+- **Issuing body:** Google Cloud. The flagship Professional-tier ML credential, same prestige tier as Google's Professional Cloud Architect and Professional Cloud Security Engineer.
 - **Market standing:** Tier-1 vendor specialty. Cited in 60%+ of Senior ML Engineer postings at Google-Cloud-shop enterprises (Spotify, Snap, Mercedes-Benz, Wayfair, Mercado Libre, Verily). Considered alongside AWS-MLS as the two most-respected vendor ML credentials globally.
 - **Benefits of passing:** Average PMLE-holder salary in the US is **$170K-$240K** (Global Knowledge 2024). Required or preferred for Senior ML Engineer (Google Cloud), Vertex AI Specialist, AI Architect at Google Premier Partner consultancies. Direct path to Google Cloud Fellow / Distinguished Engineer career tracks.
 - **Exam format:** 50–60 multiple-choice + multiple-response questions · 2 hours · scaled pass · proctored. Heavy Vertex AI focus with growing Gemini + Bedrock-comparison content.
 - **Fee:** **$200 USD.**
-- **Eligibility:** None (Google recommends 3+ years of industry ML experience, 1+ year designing & managing solutions using Google Cloud — this course substitutes).
+- **Eligibility:** None (Google recommends 3+ years of industry ML experience, 1+ year designing & managing solutions using Google Cloud, this course substitutes).
 - **How to register:** Same flow as Generative AI Leader via cloud.google.com/learn/certification → Kryterion Webassessor scheduling.
 - **Renewal:** Every 2 years · pass the exam again OR pass a higher-tier (Google has no current Distinguished tier above Professional).
 - **Recommended after:** Generative AI Leader (Google Cloud) OR AWS AI Practitioner (Course 07) OR Generative AI Engineer (Course 30).
@@ -631,7 +631,7 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *AWS Certified AI Practitioner* (Credly badge; 3-year validity)
 
-- **Issuing body:** AWS. Released 2024 — AWS's first GenAI credential.
+- **Issuing body:** AWS. Released 2024, AWS's first GenAI credential.
 - **Market standing:** Tier-1 AI foundational. Validates GenAI literacy for non-engineers and early-career engineers. Rapidly growing in HR screens for any AI-adjacent role.
 - **Benefits of passing:** Gateway to AWS Machine Learning Specialty (MLS-C01). Useful for product managers, business analysts, AI strategists, and anyone working with Amazon Bedrock or AWS-hosted LLM workflows.
 - **Exam format:** 65 questions · 90 minutes · 700/1000 passing.
@@ -674,7 +674,7 @@ After completing this course, you will have covered the core objectives for:
 **Designation earned after passing:** *Certified in Planning & Inventory Management (CPIM)*
 
 - **Issuing body:** ASCM (formerly APICS).
-- **Market standing:** Tier-1 production/inventory focus — the deepest planning credential.
+- **Market standing:** Tier-1 production/inventory focus, the deepest planning credential.
 - **Benefits of passing:** Required or preferred for Demand Planner, Master Scheduler, Inventory Manager, and S&OP roles. Average CPIM-holder salary $85K-$110K.
 - **Exam format:** **TWO parts.** Part 1: 95 Q · 3.5 hours. Part 2: 150 Q · 3.5 hours. Must pass both.
 - **Fee:** **$1,495 (member) / $1,995 (non-member)** exam-only for both parts. Bundle with Learning System: **$2,895 / $3,895**.
@@ -692,9 +692,9 @@ After completing this course, you will have covered the core objectives for:
 
 ### ➡️ ASCM Certified Supply Chain Professional (CSCP)
 
-**Designation earned after passing:** *Certified Supply Chain Professional (CSCP)* — append after your name.
+**Designation earned after passing:** *Certified Supply Chain Professional (CSCP)*, append after your name.
 
-- **Issuing body:** **Association for Supply Chain Management (ASCM)**, formerly APICS — the largest supply-chain credentialing body globally.
+- **Issuing body:** **Association for Supply Chain Management (ASCM)**, formerly APICS, the largest supply-chain credentialing body globally.
 - **Market standing:** Tier-1 broad SCM credential. Cited in ~50% of senior supply-chain manager job postings.
 - **Benefits of passing:** Average CSCP-holder salary **$113K** (ASCM 2024 survey). Required or preferred for Senior Supply Chain Analyst, Director-level SCM roles, and S&OP leadership positions.
 - **Exam format:** 150 questions · 3.5 hours · scaled-score system (~300 passing on a 200–350 scale).
@@ -741,7 +741,7 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *Certified Professional in Supply Management (CPSM)*
 
-- **Issuing body:** **Institute for Supply Management (ISM)** — procurement-focused, since 1915 (oldest US procurement body).
+- **Issuing body:** **Institute for Supply Management (ISM)**, procurement-focused, since 1915 (oldest US procurement body).
 - **Market standing:** Tier-1 procurement-specific credential. The CPO / sourcing track's flagship.
 - **Benefits of passing:** Required or preferred for Procurement Manager, Sourcing Manager, Category Manager, and CPO roles. Average CPSM-holder salary $100K-$140K.
 - **Exam format:** **THREE exams.** CPSM 1: 180 Q · 2.5 hr. CPSM 2: 180 Q · 2.5 hr. CPSM 3: 165 Q · 2.5 hr. Must pass all three within 3 years.
@@ -767,7 +767,7 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *HubSpot Inbound Certified*
 
-- **Issuing body:** **HubSpot Academy** — the inbound-marketing methodology pioneer.
+- **Issuing body:** **HubSpot Academy**, the inbound-marketing methodology pioneer.
 - **Market standing:** Tier-1 entry credential for inbound/content marketers. Universally recognized in B2B marketing roles.
 - **Benefits of passing:** Direct path to junior marketing roles ($55K-$80K). Recruiter-recognized brand. Gateway to HubSpot's Content Marketing, Email Marketing, and Sales Software certifications (all also free).
 - **Exam format:** ~60 questions · 90 minutes · 75% pass.
@@ -775,8 +775,8 @@ After completing this course, you will have covered the core objectives for:
 - **How to register / sit for the exam:**
   1. Create a free account at [academy.hubspot.com](https://academy.hubspot.com/)
   2. Enroll in the Inbound Certification course
-  3. Watch the video lessons (or skip — exam-only access is allowed)
-  4. Click "Take exam" — completes online, no proctor
+  3. Watch the video lessons (or skip, exam-only access is allowed)
+  4. Click "Take exam", completes online, no proctor
   5. Pass mark: 75%. Instant result.
 - **Renewal:** Every 1 year (free re-take).
 
@@ -792,9 +792,9 @@ Same flow, complementary certification on content strategy + production.
 
 After completing this course, you will have covered the core objectives for:
 
-### ➡️ Google Ads Certifications — Search, Shopping, Display, Video, Apps (ALL FREE)
+### ➡️ Google Ads Certifications, Search, Shopping, Display, Video, Apps (ALL FREE)
 
-**Designation earned after passing:** *Google Ads Certified — [Specialization]* (badge per specialization)
+**Designation earned after passing:** *Google Ads Certified, [Specialization]* (badge per specialization)
 
 - **Issuing body:** **Google Skillshop**.
 - **Market standing:** Tier-1 essential for any paid-acquisition role. The most-cited PPC cert on resumes.
@@ -819,7 +819,7 @@ After completing this course, you will have covered the core objectives for:
 
 After completing this course, you will have covered the core objectives for:
 
-### ➡️ Google Analytics Individual Qualification (GA4 IQ) — FREE
+### ➡️ Google Analytics Individual Qualification (GA4 IQ), FREE
 
 **Designation earned after passing:** *Google Analytics Individual Qualification (GA4 IQ)*
 
@@ -829,17 +829,17 @@ After completing this course, you will have covered the core objectives for:
 - **Renewal:** Every 1 year (free re-take).
 - **How to register:** Same as Google Ads via skillshop.exceedlms.com.
 
-### ➡️ Wharton Online — Digital Marketing & E-Commerce Specialization
+### ➡️ Wharton Online, Digital Marketing & E-Commerce Specialization
 
 **Designation earned after passing:** *Wharton Online Digital Marketing & E-Commerce Specialization Certificate (verified, Coursera)*
 
-- **Issuing body:** **University of Pennsylvania — Wharton School** (via Coursera).
+- **Issuing body:** **University of Pennsylvania, Wharton School** (via Coursera).
 - **Market standing:** Tier-1 academic-prestige credential. Ivy League brand value.
 - **Benefits of passing:** Opens doors at strategy-tier marketing roles (Director of Marketing, Marketing Strategy roles, MBA-adjacent positions).
 - **Format:** 6-month online specialization · self-paced · video lectures + quizzes + peer-graded projects.
 - **Fee:** **~$79/month Coursera subscription (~$500 total).**
 - **How to register:** Sign up at [coursera.org](https://www.coursera.org/) → enroll in the Wharton specialization → complete coursework.
-- **Renewal:** **Lifetime credential — never expires.**
+- **Renewal:** **Lifetime credential, never expires.**
 
 ---
 
@@ -851,7 +851,7 @@ This course's deliverable is **operational readiness**, not a single certificati
 
 The relevant industry credentials (if you want a formal cert to display):
 
-- **OMCP — Online Marketing Certified Professional** ($199 USD per specialization, [omcp.com](https://www.omcp.com/))
+- **OMCP, Online Marketing Certified Professional** ($199 USD per specialization, [omcp.com](https://www.omcp.com/))
 - **HubSpot Solutions Partner certification** (free, for agencies)
 - **Adobe Solution Partner Program** (varies; for agencies serving enterprise clients)
 
@@ -867,7 +867,7 @@ This course produces a **portfolio** that wins clients and jobs. Pair it with:
 
 **Designation earned after passing:** *DMI Certified Digital Marketing Professional*
 
-- **Issuing body:** **Digital Marketing Institute (Ireland)** — globally recognized, strongest in EU/UK.
+- **Issuing body:** **Digital Marketing Institute (Ireland)**, globally recognized, strongest in EU/UK.
 - **Market standing:** Tier-2 globally, Tier-1 in EU/UK markets.
 - **Fee:** **~$1,800-$2,400 USD.**
 - **Format:** ~30 hours of e-learning + exam.
@@ -886,7 +886,7 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *Certified Bitcoin Professional (CBP)*
 
-- **Issuing body:** **CryptoCurrency Certification Consortium (C4)** — non-profit. (Avoid "Blockchain Council" and "Certified Cryptocurrency Expert" — they're paper mills with no industry recognition.)
+- **Issuing body:** **CryptoCurrency Certification Consortium (C4)** non-profit. (Avoid "Blockchain Council" and "Certified Cryptocurrency Expert" they're paper mills with no industry recognition.)
 - **Market standing:** Tier-1 Bitcoin-specific. The most-cited Bitcoin credential on crypto-startup resumes.
 - **Benefits of passing:** Direct path to crypto-startup roles (engineer, product, compliance, business development) at $90K-$160K depending on function. Gateway to deeper credentials.
 - **Exam format:** 75 questions · 75 minutes · 70% pass · online proctored.
@@ -897,13 +897,13 @@ After completing this course, you will have covered the core objectives for:
   2. Pay $150
   3. Take the 75-minute exam on-demand (online)
   4. Pass mark: 70%. Instant result.
-- **Renewal:** **NEVER EXPIRES — lifetime credential.**
+- **Renewal:** **NEVER EXPIRES, lifetime credential.**
 
 ### ➡️ Certified Blockchain Solution Architect (CBSA)
 
 **Designation earned after passing:** *Certified Blockchain Solution Architect (CBSA)*
 
-- **Issuing body:** **Blockchain Training Alliance (BTA)** — vendor-neutral.
+- **Issuing body:** **Blockchain Training Alliance (BTA)**, vendor-neutral.
 - **Market standing:** Tier-2 enterprise architect credential.
 - **Benefits of passing:** Architect-tier crypto roles ($120K-$180K). Most-recognized in enterprise blockchain (Coinbase, Anchorage, Fireblocks, IBM Blockchain).
 - **Exam format:** 70 questions · 90 minutes · 70% pass.
@@ -915,15 +915,15 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *Cryptoasset Anti-Financial Crime Specialist (CCAS)*
 
-- **Issuing body:** **ACAMS (Association of Certified Anti-Money Laundering Specialists)** — global AML credentialing body.
-- **Market standing:** Tier-1 compliance — required for many Compliance Officer / Chief Compliance Officer roles at crypto exchanges, custodians, and crypto-native banks.
+- **Issuing body:** **ACAMS (Association of Certified Anti-Money Laundering Specialists)**, global AML credentialing body.
+- **Market standing:** Tier-1 compliance, required for many Compliance Officer / Chief Compliance Officer roles at crypto exchanges, custodians, and crypto-native banks.
 - **Benefits of passing:** Average crypto compliance officer salary $130K-$200K. Required for exchange compliance roles at Binance, Coinbase, Kraken, Gemini, etc.
 - **Fee:** **~$1,395 USD** + study materials.
-- **How to register:** Apply at [acams.org](https://www.acams.org/) — application + ID verification + payment → schedule.
+- **How to register:** Apply at [acams.org](https://www.acams.org/), application + ID verification + payment → schedule.
 
-### ➡️ MSc in Blockchain & Digital Currency — University of Nicosia
+### ➡️ MSc in Blockchain & Digital Currency, University of Nicosia
 
-- **Issuing body:** University of Nicosia (Cyprus) — the longest-running blockchain degree program globally (since 2014). Co-founded with Andreas Antonopoulos.
+- **Issuing body:** University of Nicosia (Cyprus), the longest-running blockchain degree program globally (since 2014). Co-founded with Andreas Antonopoulos.
 - **Format:** 18-month online MSc; à-la-carte modules also available.
 - **Fee:** **~€11,400 (full degree).**
 - **How to register:** Apply at [unic.ac.cy](https://www.unic.ac.cy/blockchain/msc-digital-currency/).
@@ -941,16 +941,16 @@ After completing this course, you will have covered the core objectives for:
 **Designation earned after passing:** *Google Digital Marketing & E-Commerce Professional Certificate*
 
 - **Issuing body:** **Google** (via Coursera).
-- **Market standing:** Tier-1 entry credential. Part of Google's hiring partner network — **150+ employers actively recruit graduates**.
+- **Market standing:** Tier-1 entry credential. Part of Google's hiring partner network, **150+ employers actively recruit graduates**.
 - **Benefits of passing:** Direct path to e-commerce coordinator / specialist roles ($50K-$75K). Gateway to Google's full job-board ecosystem.
 - **Format:** ~6-month online certificate program (Coursera).
 - **Fee:** **~$49/month Coursera subscription (~$300 total).**
 - **How to register:** [coursera.org/professional-certificates/google-digital-marketing-ecommerce](https://www.coursera.org/professional-certificates/google-digital-marketing-ecommerce) → enroll → complete coursework.
 - **Renewal:** **Lifetime credential.**
 
-### ➡️ Adobe Certified Expert — Adobe Commerce Business Practitioner
+### ➡️ Adobe Certified Expert, Adobe Commerce Business Practitioner
 
-**Designation earned after passing:** *Adobe Certified Expert — Adobe Commerce Business Practitioner*
+**Designation earned after passing:** *Adobe Certified Expert, Adobe Commerce Business Practitioner*
 
 - **Issuing body:** **Adobe** (Adobe Commerce, formerly Magento).
 - **Market standing:** Tier-1 specialist. Adobe Commerce powers ~12% of the top 1M e-commerce sites. Business Practitioner unlocks $90K-$140K e-commerce manager roles.
@@ -968,9 +968,9 @@ After completing this course, you will have covered the core objectives for:
 - **Fee:** **$200 (Developer) / $400 (Architect).**
 - **How to register:** [trailhead.salesforce.com](https://trailhead.salesforce.com/) → register for credential → take via Webassessor (Salesforce's testing partner).
 
-### ➡️ Wharton Online — Digital Marketing & E-Commerce Specialization
+### ➡️ Wharton Online, Digital Marketing & E-Commerce Specialization
 
-(See Course 16's entry — same specialization applies to E-Commerce strategy roles.)
+(See Course 16's entry, same specialization applies to E-Commerce strategy roles.)
 
 ---
 
@@ -978,15 +978,15 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../33-Animation-Foundations/README.md)
 
-*A ground-up introduction to animation principles, design fundamentals, and Adobe's core creative tools — built for complete beginners and career-changers entering the creative industry.*
+*A ground-up introduction to animation principles, design fundamentals, and Adobe's core creative tools, built for complete beginners and career-changers entering the creative industry.*
 
-### ➡️ Adobe Certified Professional — Visual Design (Adobe/Certiport)
+### ➡️ Adobe Certified Professional, Visual Design (Adobe/Certiport)
 
 **Designation earned after passing:** *Adobe Certified Professional in Visual Design*
 
-- **Issuing body:** **Adobe** (credential delivered through **Certiport**, a Pearson VUE company) — Adobe's professional-tier certification line, one step above the entry-level Adobe Certified Associate. Recognized by creative agencies, educational institutions, and design studios that run Adobe workflows.
+- **Issuing body:** **Adobe** (credential delivered through **Certiport**, a Pearson VUE company), Adobe's professional-tier certification line, one step above the entry-level Adobe Certified Associate. Recognized by creative agencies, educational institutions, and design studios that run Adobe workflows.
 - **Market standing:** Tier-1 for Adobe-centric creative roles. Hiring managers at agencies, media companies, and in-house brand teams treat ACP Visual Design as the benchmark for proof of Adobe fluency. Cited in job postings for Graphic Designer, Visual Designer, Motion Designer (junior), and Creative Coordinator roles.
-- **Benefits of passing:** Validates working knowledge of Photoshop, Illustrator, and design principles in a single credential. Average junior Visual Designer salary in the US is $55K–$75K; holding an ACP credential measurably shortens the hiring process for studio and agency roles. Gateway to the ACP — Animate and ACP — After Effects credentials that map to more advanced courses in this track.
+- **Benefits of passing:** Validates working knowledge of Photoshop, Illustrator, and design principles in a single credential. Average junior Visual Designer salary in the US is $55K–$75K; holding an ACP credential measurably shortens the hiring process for studio and agency roles. Gateway to the ACP Animate and ACP After Effects credentials that map to more advanced courses in this track.
 - **Exam format:** ~50 questions · 50 minutes · multiple-choice and live-application tasks · scored pass/fail · proctored at Certiport/Pearson VUE testing centers or via online remote proctoring.
 - **Fee:** **$180 USD.** Academic pricing may be lower if your institution is a Certiport Authorized Testing Center.
 - **Eligibility:** None. The exam is open to anyone.
@@ -997,19 +997,19 @@ After completing this course, you will have covered the core objectives for:
   4. Pay $180 and schedule your session
   5. Take the exam; results appear on screen immediately after submission
   6. Digital badge delivered via Credly within a few business days of passing
-- **Renewal:** Adobe product cycle — typically every 2–3 years as major product versions release. Adobe will notify credential holders when a renewal exam becomes available.
+- **Renewal:** Adobe product cycle, typically every 2–3 years as major product versions release. Adobe will notify credential holders when a renewal exam becomes available.
 
-### ➡️ Adobe Certified Associate — Visual Design (Entry-Level Alternative)
+### ➡️ Adobe Certified Associate, Visual Design (Entry-Level Alternative)
 
 **Designation earned after passing:** *Adobe Certified Associate in Visual Design*
 
-- **Issuing body:** Adobe/Certiport — same family as ACP but one tier lower. Ideal if you are still building fluency and want a credential before you are ready for the Professional exam.
+- **Issuing body:** Adobe/Certiport, same family as ACP but one tier lower. Ideal if you are still building fluency and want a credential before you are ready for the Professional exam.
 - **Market standing:** Tier-2 entry-level. Well-recognized at educational institutions and for entry-level studio positions. Frequently required for community-college and secondary-school design programs.
-- **Benefits of passing:** Demonstrates foundational Adobe tool knowledge. Lower bar to entry — good stepping stone while building your portfolio toward the ACP.
+- **Benefits of passing:** Demonstrates foundational Adobe tool knowledge. Lower bar to entry, good stepping stone while building your portfolio toward the ACP.
 - **Exam format:** ~45 questions · 50 minutes · proctored at Certiport centers.
 - **Fee:** **$45–$75 USD** (varies by testing center; academic pricing often applies).
 - **Eligibility:** None.
-- **How to register:** Same process as ACP — via certiport.com → Adobe Certified Associate → Visual Design.
+- **How to register:** Same process as ACP, via certiport.com → Adobe Certified Associate → Visual Design.
 - **Renewal:** Tied to Adobe product release cycle.
 
 ---
@@ -1018,21 +1018,21 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../34-2D-Digital-Animation/README.md)
 
-*Hands-on production of 2D frame-by-frame and rigged animation using Adobe Animate and Toon Boom Harmony — the two dominant tools in broadcast, streaming, and studio 2D pipelines.*
+*Hands-on production of 2D frame-by-frame and rigged animation using Adobe Animate and Toon Boom Harmony, the two dominant tools in broadcast, streaming, and studio 2D pipelines.*
 
-### ➡️ Adobe Certified Professional — Animate (Adobe/Certiport)
+### ➡️ Adobe Certified Professional, Animate (Adobe/Certiport)
 
 **Designation earned after passing:** *Adobe Certified Professional in Animate*
 
-- **Issuing body:** **Adobe / Certiport** — the Animate-specific credential in Adobe's Professional certification line.
-- **Market standing:** Tier-1 for 2D digital animation roles at broadcast studios, streaming platforms, and advertising agencies. Adobe Animate is the standard for HTML5 banner animation, interactive web content, and 2D TV production. The ACP — Animate credential signals production-ready tool fluency to hiring studios.
-- **Benefits of passing:** Unlocks junior-to-mid animator, motion designer (2D), and interactive media developer roles. Average entry-level animator salary in the US is $50K–$70K; ACP credentials consistently reduce screening friction with HR. Direct preparation for the more advanced ACP — After Effects credential (Course 35).
+- **Issuing body:** **Adobe / Certiport**, the Animate-specific credential in Adobe's Professional certification line.
+- **Market standing:** Tier-1 for 2D digital animation roles at broadcast studios, streaming platforms, and advertising agencies. Adobe Animate is the standard for HTML5 banner animation, interactive web content, and 2D TV production. The ACP, Animate credential signals production-ready tool fluency to hiring studios.
+- **Benefits of passing:** Unlocks junior-to-mid animator, motion designer (2D), and interactive media developer roles. Average entry-level animator salary in the US is $50K–$70K; ACP credentials consistently reduce screening friction with HR. Direct preparation for the more advanced ACP, After Effects credential (Course 35).
 - **Exam format:** ~50 questions · 50 minutes · mix of multiple-choice and scenario-based tasks · proctored at Certiport centers or via online remote proctoring.
 - **Fee:** **$180 USD.**
 - **Eligibility:** None.
 - **How to register:**
   1. Go to [certiport.com](https://www.certiport.com/) and sign in or create an account
-  2. Search for "Adobe Certified Professional — Animate"
+  2. Search for "Adobe Certified Professional, Animate"
   3. Select a Certiport Authorized Testing Center or online proctoring
   4. Pay and schedule
   5. Results on screen immediately after completion; Credly badge within a few business days
@@ -1042,7 +1042,7 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *Toon Boom Certified Harmony User*
 
-- **Issuing body:** **Toon Boom Animation** — the Canadian software company that develops Harmony, the industry-standard 2D animation software used in professional TV and film production. Toon Boom operates its own vendor certification program independently of Certiport.
+- **Issuing body:** **Toon Boom Animation**, the Canadian software company that develops Harmony, the industry-standard 2D animation software used in professional TV and film production. Toon Boom operates its own vendor certification program independently of Certiport.
 - **Market standing:** Tier-1 for studio 2D animation. Toon Boom Harmony is used in production at **Disney Television Animation, Cartoon Network Studios, Studio Mir** (The Legend of Korra, Voltron), Nelvana, Gaumont, and dozens of other major houses. When a studio's job posting asks for "Harmony experience," this certification is the recognized proof. It carries more weight than Adobe credentials for roles specifically inside studio pipelines.
 - **Benefits of passing:** Signals production-ready Harmony proficiency to studio recruiters. Relevant job titles: 2D Animator, Character Animator, Storyboard Artist (digital), Clean-Up Animator. Average salary range for a staff 2D animator in a US studio is $65K–$100K.
 - **Exam format:** Online, vendor-proctored. Tests rigging, node-based compositing inside Harmony, cut-out animation, scene setup, and export pipelines. Approximately 60–90 minutes.
@@ -1056,13 +1056,13 @@ After completing this course, you will have covered the core objectives for:
   5. Results provided after online submission
 - **Renewal:** Toon Boom issues updated exams when major Harmony versions release; check the portal for recertification requirements.
 
-### ➡️ Adobe Certified Associate — Animate (Entry-Level Alternative)
+### ➡️ Adobe Certified Associate, Animate (Entry-Level Alternative)
 
 **Designation earned after passing:** *Adobe Certified Associate in Animate*
 
 - **Issuing body:** Adobe/Certiport.
 - **Fee:** **~$45–$75 USD** (academic pricing common).
-- **When to choose this:** If you want a recognized Adobe credential before you feel fully exam-ready for the ACP level, the ACA — Animate is a solid intermediate milestone with the same Certiport delivery infrastructure.
+- **When to choose this:** If you want a recognized Adobe credential before you feel fully exam-ready for the ACP level, the ACA, Animate is a solid intermediate milestone with the same Certiport delivery infrastructure.
 - **How to register:** Via certiport.com → Adobe Certified Associate → Animate.
 
 ---
@@ -1071,37 +1071,37 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../35-Motion-Graphics-UI-Animation/README.md)
 
-*Production-level motion graphics, kinetic typography, and UI animation built with Adobe After Effects — the industry-standard tool for broadcast, streaming, and product animation workflows.*
+*Production-level motion graphics, kinetic typography, and UI animation built with Adobe After Effects, the industry-standard tool for broadcast, streaming, and product animation workflows.*
 
-### ➡️ Adobe Certified Professional — After Effects (Adobe/Certiport)
+### ➡️ Adobe Certified Professional, After Effects (Adobe/Certiport)
 
 **Designation earned after passing:** *Adobe Certified Professional in After Effects*
 
 - **Issuing body:** **Adobe / Certiport.**
-- **Market standing:** Tier-1 — the single most-cited certification in motion graphics job postings. After Effects is the dominant tool in broadcast post-production, streaming title sequences, product advertising, and UI motion design. Major studios (Netflix, Disney+, Apple TV+), advertising agencies (Wieden+Kennedy, BBDO, Ogilvy), and in-house brand teams all list AE proficiency as required or strongly preferred. The ACP — After Effects is the recognized credential to prove that fluency.
+- **Market standing:** Tier-1 the single most-cited certification in motion graphics job postings. After Effects is the dominant tool in broadcast post-production, streaming title sequences, product advertising, and UI motion design. Major studios (Netflix, Disney+, Apple TV+), advertising agencies (Wieden+Kennedy, BBDO, Ogilvy), and in-house brand teams all list AE proficiency as required or strongly preferred. The ACP After Effects is the recognized credential to prove that fluency.
 - **Benefits of passing:** Directly unlocks Motion Graphics Designer, Broadcast Designer, Visual Effects Artist (junior), and UI Motion Designer roles. Average Motion Graphics Designer salary in the US is $70K–$110K (mid-level); senior roles at top agencies reach $130K+. This is also the credential to hold when moving into the VFX track (Course 38).
 - **Exam format:** ~50 questions · 50 minutes · multiple-choice and live-application tasks · proctored at Certiport centers or via online remote proctoring.
 - **Fee:** **$180 USD.**
 - **Eligibility:** None.
 - **How to register:**
   1. Sign in or create an account at [certiport.com](https://www.certiport.com/)
-  2. Search "Adobe Certified Professional — After Effects"
+  2. Search "Adobe Certified Professional, After Effects"
   3. Select a testing center or online proctoring option
   4. Pay $180 and schedule
   5. Take the exam; immediate results on screen; Credly badge within a few business days
 - **Renewal:** Adobe product cycle (approximately every 2–3 years).
 
-### ➡️ Adobe Certified Professional — Premiere Pro (Adobe/Certiport)
+### ➡️ Adobe Certified Professional, Premiere Pro (Adobe/Certiport)
 
 **Designation earned after passing:** *Adobe Certified Professional in Premiere Pro*
 
 - **Issuing body:** Adobe / Certiport.
-- **Market standing:** Tier-1 in broadcast, post-production, and content creation. Premiere Pro and After Effects are used together in nearly every professional video production workflow — After Effects handles motion graphics and compositing; Premiere Pro handles editorial and finishing. Holding both credentials makes a candidate dramatically more competitive for Editor/Motion Designer hybrid roles at broadcasters, streamers, and production companies.
+- **Market standing:** Tier-1 in broadcast, post-production, and content creation. Premiere Pro and After Effects are used together in nearly every professional video production workflow, After Effects handles motion graphics and compositing; Premiere Pro handles editorial and finishing. Holding both credentials makes a candidate dramatically more competitive for Editor/Motion Designer hybrid roles at broadcasters, streamers, and production companies.
 - **Benefits of passing:** Broadens your marketable profile from "motion graphics designer" to "full post-production generalist." Relevant for Video Editor, Content Creator, Post-Production Coordinator, and Creative Technologist roles. Average Video Editor salary in the US is $60K–$90K; dual ACP holders often command the upper end.
 - **Exam format:** ~50 questions · 50 minutes · proctored.
 - **Fee:** **$180 USD.**
 - **Eligibility:** None.
-- **How to register:** Same flow as ACP — After Effects via certiport.com.
+- **How to register:** Same flow as ACP, After Effects via certiport.com.
 - **Renewal:** Adobe product cycle.
 
 ---
@@ -1110,7 +1110,7 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../36-3D-Animation-Blender/README.md)
 
-*Full 3D animation production pipeline in Blender — modeling, rigging, skinning, lighting, rendering, and keyframe animation — plus the industry context to position your Blender skills alongside the Maya and Unity credentials that studios actually screen for.*
+*Full 3D animation production pipeline in Blender modeling, rigging, skinning, lighting, rendering, and keyframe animation plus the industry context to position your Blender skills alongside the Maya and Unity credentials that studios actually screen for.*
 
 > **Honest note on Blender certification:** The Blender Foundation does not offer a formal certification exam. Blender is open-source and community-governed; the credential landscape is therefore different from proprietary tools like Maya or Unity. The career-smart path is to demonstrate Blender proficiency through a polished portfolio while earning a recognized industry credential in a tool that overlaps with Blender's workflow. The two certifications below are specifically chosen because studios that use Blender almost always also use Maya (for character rigging and simulation) and Unity (for realtime rendering and game export). Holding a Maya or Unity credential alongside your Blender reel is the move that opens studio doors.
 
@@ -1120,7 +1120,7 @@ After completing this course, you will have covered the core objectives for:
 
 - **Issuing body:** **Autodesk / Certiport.** Autodesk is the publisher of Maya, the dominant professional 3D animation and VFX tool used across game studios, VFX houses, and film production companies worldwide.
 - **Market standing:** Tier-1 foundational 3D credential. Maya is used at ILM, Pixar, Weta FX, Framestore, DNEG, Riot Games, Epic Games, and essentially every major studio that employs 3D animators. The Certified User credential demonstrates foundational Maya proficiency and is the entry-level rung of Autodesk's certification ladder, directly below the Certified Professional tier (Course 37).
-- **Benefits of passing:** Substantiates your 3D skills to employers who use Maya — even when your primary tool is Blender. Junior 3D Animator, Rigging Artist (junior), and 3D Generalist roles at mid-size studios commonly list Maya proficiency as required. Average junior 3D animator salary in the US is $55K–$80K.
+- **Benefits of passing:** Substantiates your 3D skills to employers who use Maya, even when your primary tool is Blender. Junior 3D Animator, Rigging Artist (junior), and 3D Generalist roles at mid-size studios commonly list Maya proficiency as required. Average junior 3D animator salary in the US is $55K–$80K.
 - **Exam format:** Performance-based tasks + multiple-choice · ~60 minutes · proctored at Certiport Authorized Testing Centers.
 - **Fee:** **~$50 USD** (Certiport exam fees for Autodesk products are among the most affordable; confirm current pricing at certiport.com).
 - **Eligibility:** None.
@@ -1131,11 +1131,11 @@ After completing this course, you will have covered the core objectives for:
   4. Results delivered immediately on screen after the exam
 - **Renewal:** Tied to major Maya release cycles; Autodesk typically issues updated exams every 2–3 years.
 
-### ➡️ Unity Certified Associate — Game Developer (Unity Technologies)
+### ➡️ Unity Certified Associate, Game Developer (Unity Technologies)
 
 **Designation earned after passing:** *Unity Certified Associate: Game Developer*
 
-- **Issuing body:** **Unity Technologies** — publisher of the Unity game engine, the most widely used realtime 3D platform across game development, architectural visualization, VR/AR, and film previs.
+- **Issuing body:** **Unity Technologies**, publisher of the Unity game engine, the most widely used realtime 3D platform across game development, architectural visualization, VR/AR, and film previs.
 - **Market standing:** Tier-1 for realtime 3D pipelines. This credential is highly relevant for 3D-to-realtime workflows: exporting Blender assets into Unity, setting up animation rigs, and building interactive 3D scenes is exactly what junior Technical Artists and 3D Generalists do daily. Unity Certified Associate is the first rung of Unity's official certification ladder.
 - **Benefits of passing:** Unlocks Game Developer (junior), 3D Generalist, Technical Artist (junior), and Visualization Specialist roles. Game industry salaries for Unity developers average $75K–$110K at mid-level.
 - **Exam format:** Online proctored · multiple-choice and scenario-based questions · approximately 90 minutes · pass/fail.
@@ -1156,24 +1156,24 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../37-Advanced-Character-Animation/README.md)
 
-*Mastery-level character animation in Autodesk Maya — advanced rigging, skin weighting, blend shapes, dynamics-driven simulation, and the animation workflow expectations of game studios, VFX houses, and broadcast/film production companies.*
+*Mastery-level character animation in Autodesk Maya, advanced rigging, skin weighting, blend shapes, dynamics-driven simulation, and the animation workflow expectations of game studios, VFX houses, and broadcast/film production companies.*
 
 ### ➡️ Autodesk Maya Certified Professional (Autodesk)
 
 **Designation earned after passing:** *Autodesk Certified Professional: Maya*
 
-- **Issuing body:** **Autodesk** — the advanced-tier Maya credential, above the Certified User exam (Course 36). Delivered directly through Autodesk's certification portal rather than Certiport; designed for experienced practitioners.
-- **Market standing:** Tier-1 advanced credential. The **gold standard for character animators** entering professional game studios, VFX houses, and broadcast/film production companies. Job postings at mid-to-senior animator level at studios like Riot Games, Naughty Dog, DreamWorks, Sony Pictures Imageworks, and Framestore commonly list Autodesk Maya Certified Professional as a differentiating or preferred credential. It is the clearest signal — separate from a portfolio — that a candidate can handle production-level rigging complexity, simulation pipelines, and animation-layer workflows.
+- **Issuing body:** **Autodesk**, the advanced-tier Maya credential, above the Certified User exam (Course 36). Delivered directly through Autodesk's certification portal rather than Certiport; designed for experienced practitioners.
+- **Market standing:** Tier-1 advanced credential. The **gold standard for character animators** entering professional game studios, VFX houses, and broadcast/film production companies. Job postings at mid-to-senior animator level at studios like Riot Games, Naughty Dog, DreamWorks, Sony Pictures Imageworks, and Framestore commonly list Autodesk Maya Certified Professional as a differentiating or preferred credential. It is the clearest signal separate from a portfolio that a candidate can handle production-level rigging complexity, simulation pipelines, and animation-layer workflows.
 - **Benefits of passing:** Average Character Animator salary in the US is $85K–$130K at mid-to-senior level (Glassdoor/ArtStation surveys 2024–2025). Holding the Certified Professional designation alongside a strong reel measurably accelerates the progression from junior to lead animator title.
 - **Exam format:** Performance-based tasks + multiple-choice · tests advanced rigging, skin weighting, blend shapes, dynamics, motion path animation, and production-level character animation workflows · typically 90–120 minutes · proctored.
 - **Fee:** **~$250 USD** (confirm current pricing at Autodesk's official certification page, as fees are updated periodically).
-- **Eligibility:** Autodesk recommends holding the Certified User credential (or equivalent experience) before sitting the Professional exam. No formal gate — experienced practitioners can sit directly.
+- **Eligibility:** Autodesk recommends holding the Certified User credential (or equivalent experience) before sitting the Professional exam. No formal gate, experienced practitioners can sit directly.
 - **How to register:**
   1. Visit [autodesk.com/certification](https://www.autodesk.com/certification)
   2. Navigate to Maya → Certified Professional
   3. Create or log in to your Autodesk account
   4. Register and pay the exam fee
-  5. Schedule via the Autodesk exam portal (Certiport for some regions; Autodesk direct for others — the portal will route you correctly)
+  5. Schedule via the Autodesk exam portal (Certiport for some regions; Autodesk direct for others, the portal will route you correctly)
   6. Complete the proctored exam; results within a few business days
 - **Renewal:** Autodesk re-issues exams for major Maya versions; recertification is typically required every 2–3 years to stay on the current version designation.
 
@@ -1183,7 +1183,7 @@ After completing this course, you will have covered the core objectives for:
 
 - **Issuing body:** Autodesk / Certiport.
 - **Fee:** **~$50 USD** (via Certiport).
-- **When to choose this:** If you are completing this course without prior Maya experience and want a milestone credential before you are ready for the Professional exam, the Certified User is a recognized stepping stone — same issuing body, lower bar. See the full entry under Course 36 above.
+- **When to choose this:** If you are completing this course without prior Maya experience and want a milestone credential before you are ready for the Professional exam, the Certified User is a recognized stepping stone, same issuing body, lower bar. See the full entry under Course 36 above.
 - **How to register:** Via certiport.com → Autodesk → Maya → Certified User.
 
 ---
@@ -1192,14 +1192,14 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../38-VFX-Compositing/README.md)
 
-*Professional visual effects and compositing production — keying, rotoscoping, tracking, color management, and node-based compositing workflows in Adobe After Effects and Foundry NUKE, the two tools that define the professional VFX pipeline.*
+*Professional visual effects and compositing production, keying, rotoscoping, tracking, color management, and node-based compositing workflows in Adobe After Effects and Foundry NUKE, the two tools that define the professional VFX pipeline.*
 
-### ➡️ Adobe Certified Professional — After Effects (Adobe/Certiport)
+### ➡️ Adobe Certified Professional, After Effects (Adobe/Certiport)
 
 **Designation earned after passing:** *Adobe Certified Professional in After Effects*
 
 - **Issuing body:** **Adobe / Certiport.**
-- **Market standing:** See full entry under Course 35 — Motion Graphics & UI Animation. In the VFX context specifically, ACP — After Effects validates your fluency in layer-based compositing, motion tracking, chroma keying, and effect stacking — workflows that are directly transferable to NUKE node-based compositing and that form the foundation for VFX Artist and Compositor (junior) roles.
+- **Market standing:** See full entry under Course 35 Motion Graphics & UI Animation. In the VFX context specifically, ACP After Effects validates your fluency in layer-based compositing, motion tracking, chroma keying, and effect stacking, workflows that are directly transferable to NUKE node-based compositing and that form the foundation for VFX Artist and Compositor (junior) roles.
 - **Benefits of passing:** Entry point to VFX Artist, Compositor (junior), and Post-Production Specialist roles at digital agencies, broadcast houses, and independent production companies. Pairs directly with the NUKE User Certification below for a full two-credential VFX profile.
 - **Exam format:** ~50 questions · 50 minutes · proctored.
 - **Fee:** **$180 USD.**
@@ -1211,8 +1211,8 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *Foundry Certified NUKE User*
 
-- **Issuing body:** **Foundry** — the UK-based software company that develops and publishes NUKE, the node-based compositing application that is the **industry standard for professional VFX compositing** at the world's top visual effects facilities.
-- **Market standing:** Tier-1 for the VFX industry. NUKE is the primary compositing tool at **ILM (Industrial Light & Magic), Framestore, DNEG, Weta FX, MPC, Cinesite,** and virtually every major VFX house in North America, the UK, Australia, and New Zealand. When a VFX studio advertises a Compositor role, NUKE proficiency is typically listed as required — not preferred. Foundry's own certification program is the recognized credential for proving that proficiency before you have production credits to show.
+- **Issuing body:** **Foundry**, the UK-based software company that develops and publishes NUKE, the node-based compositing application that is the **industry standard for professional VFX compositing** at the world's top visual effects facilities.
+- **Market standing:** Tier-1 for the VFX industry. NUKE is the primary compositing tool at **ILM (Industrial Light & Magic), Framestore, DNEG, Weta FX, MPC, Cinesite,** and virtually every major VFX house in North America, the UK, Australia, and New Zealand. When a VFX studio advertises a Compositor role, NUKE proficiency is typically listed as required, not preferred. Foundry's own certification program is the recognized credential for proving that proficiency before you have production credits to show.
 - **Benefits of passing:** Compositor (junior), VFX Artist, Roto/Paint Artist, and Prep Artist roles at professional VFX studios. Average compositor salary at a major VFX house ranges from $65K (junior/roto) to $130K+ (senior compositor with specialty skills). Holding the NUKE User Certification alongside a demo reel is the combination that gets candidates past HR screens at Tier-1 VFX studios.
 - **Exam format:** Online, vendor-proctored. Tests NUKE node graph structure, rotoscoping, keying, tracking, color management, and multi-layer compositing workflows. Approximately 60–90 minutes.
 - **Fee:** **~$99 USD** (confirm current pricing at Foundry's official learning portal, as vendor exam fees are periodically revised).
@@ -1225,7 +1225,7 @@ After completing this course, you will have covered the core objectives for:
   5. Results provided upon completion of the online exam
 - **Renewal:** Foundry updates certification exams with major NUKE releases; check the portal for current version requirements.
 
-> **On Houdini (SideFX):** Houdini is widely used for procedural VFX, simulation, and Houdini-based pipeline tools at top studios. SideFX does not currently offer a formal proctored certification exam — their Houdini certification program has been in development and has not launched a publicly available exam at the time of this writing. **Your Houdini portfolio is the primary currency.** A strong Houdini demo reel demonstrating fluid simulation, particle systems, or procedural modeling carries more weight with studios than any available third-party credential.
+> **On Houdini (SideFX):** Houdini is widely used for procedural VFX, simulation, and Houdini-based pipeline tools at top studios. SideFX does not currently offer a formal proctored certification exam, their Houdini certification program has been in development and has not launched a publicly available exam at the time of this writing. **Your Houdini portfolio is the primary currency.** A strong Houdini demo reel demonstrating fluid simulation, particle systems, or procedural modeling carries more weight with studios than any available third-party credential.
 
 ---
 
@@ -1233,14 +1233,14 @@ After completing this course, you will have covered the core objectives for:
 
 [Open the course →](../39-Game-UI-Animation/README.md)
 
-*Realtime animation systems for games and interactive applications — Unity's Animator Controller, state machines, Timeline, Cinemachine, and UI animation — plus a grounding in Unreal Engine 5's Sequencer and Blueprint animation tools for studios on the UE5 pipeline.*
+*Realtime animation systems for games and interactive applications Unity's Animator Controller, state machines, Timeline, Cinemachine, and UI animation plus a grounding in Unreal Engine 5's Sequencer and Blueprint animation tools for studios on the UE5 pipeline.*
 
-### ➡️ Unity Certified Professional — Technical Artist (Unity Technologies)
+### ➡️ Unity Certified Professional, Technical Artist (Unity Technologies)
 
 **Designation earned after passing:** *Unity Certified Professional: Technical Artist*
 
-- **Issuing body:** **Unity Technologies** — the Professional tier of Unity's official certification program, above the Certified Associate credential (Course 36). This is the credential that directly validates the skills taught in this course: Unity's animation system, Shader Graph, VFX Graph, Cinemachine, and the technical art pipeline that bridges animation and engineering.
-- **Market standing:** Tier-1 for game and interactive media studios. Technical Artist is one of the most in-demand hybrid roles in game development — sitting at the intersection of animation, shaders, VFX, and engine optimization. Studios including **Electronic Arts, Activision Blizzard, Ubisoft, Bungie, 2K, and Insomniac Games** regularly hire for Technical Artist roles, and Unity Certified Professional is the recognized credential for candidates who do not yet have shipped-game credits to demonstrate their engine-level fluency.
+- **Issuing body:** **Unity Technologies**, the Professional tier of Unity's official certification program, above the Certified Associate credential (Course 36). This is the credential that directly validates the skills taught in this course: Unity's animation system, Shader Graph, VFX Graph, Cinemachine, and the technical art pipeline that bridges animation and engineering.
+- **Market standing:** Tier-1 for game and interactive media studios. Technical Artist is one of the most in-demand hybrid roles in game development, sitting at the intersection of animation, shaders, VFX, and engine optimization. Studios including **Electronic Arts, Activision Blizzard, Ubisoft, Bungie, 2K, and Insomniac Games** regularly hire for Technical Artist roles, and Unity Certified Professional is the recognized credential for candidates who do not yet have shipped-game credits to demonstrate their engine-level fluency.
 - **Benefits of passing:** Technical Artist, Animator (realtime), VFX Artist (game engine), UI Animator, and Shader Artist roles. Average Technical Artist salary in the US is $90K–$130K (mid-level); senior Technical Artists at AAA studios reach $150K+. This certification is also highly relevant for interactive film, architectural visualization, and XR (VR/AR) production roles.
 - **Exam format:** Online proctored via **Examity** · multiple-choice and scenario-based questions covering Unity's animation system, Shader Graph, VFX Graph, Cinemachine, and technical art pipeline workflows · approximately 90 minutes · pass/fail.
 - **Fee:** **$199 USD.**
@@ -1258,9 +1258,9 @@ After completing this course, you will have covered the core objectives for:
 
 **Designation earned after passing:** *Unreal Engine Online Learning Certificate of Completion*
 
-- **Issuing body:** **Epic Games** — publisher of Unreal Engine 5, the dominant game and film/TV production engine used at studios working on AAA game titles, virtual production (The Mandalorian, The Batman), and cinematic animation.
-- **Market standing:** Tier-2 (vendor credential, not a proctored exam — but Epic's own official recognition). This is not a proctored certification like Unity Professional; it is a **completion credential** from Epic's own learning portal. However, in studios that run UE5 pipelines, an Epic-issued certificate of completion for Sequencer animation and Blueprint animation controllers carries genuine weight as a demonstrated learning signal. It is specifically valued when applying to studios like **CD Projekt Red, The Coalition (Xbox), Remedy Entertainment, and productions at Industrial Light & Magic** and Netflix's visual production teams that use Unreal for virtual production and cinematic content.
-- **Benefits of passing:** Supports applications for Animator (UE5), Technical Animator, Cinematic Artist, and Virtual Production Technician roles. Combined with the Unity Certified Professional above, this two-credential profile signals full-stack realtime animation capability across both major engines — a rare and marketable combination.
+- **Issuing body:** **Epic Games**, publisher of Unreal Engine 5, the dominant game and film/TV production engine used at studios working on AAA game titles, virtual production (The Mandalorian, The Batman), and cinematic animation.
+- **Market standing:** Tier-2 (vendor credential, not a proctored exam, but Epic's own official recognition). This is not a proctored certification like Unity Professional; it is a **completion credential** from Epic's own learning portal. However, in studios that run UE5 pipelines, an Epic-issued certificate of completion for Sequencer animation and Blueprint animation controllers carries genuine weight as a demonstrated learning signal. It is specifically valued when applying to studios like **CD Projekt Red, The Coalition (Xbox), Remedy Entertainment, and productions at Industrial Light & Magic** and Netflix's visual production teams that use Unreal for virtual production and cinematic content.
+- **Benefits of passing:** Supports applications for Animator (UE5), Technical Animator, Cinematic Artist, and Virtual Production Technician roles. Combined with the Unity Certified Professional above, this two-credential profile signals full-stack realtime animation capability across both major engines, a rare and marketable combination.
 - **Exam format:** Online learning modules (no proctored exam) · self-paced · covers UE5 Sequencer, animation Blueprint controllers, Control Rig, and cinematic tools · certificate awarded upon module completion.
 - **Fee:** **Free.** Epic's Unreal Online Learning portal is entirely free to access and complete.
 - **Eligibility:** None. Open to anyone with a free Epic Games account.
@@ -1271,12 +1271,12 @@ After completing this course, you will have covered the core objectives for:
   4. Download your certificate of completion from your Epic learning profile
 - **Renewal:** No renewal required for completion certificates. Epic updates learning paths with new engine versions; completing updated paths earns a new certificate.
 
-> **On UI motion design credentials:** If your focus is specifically on UI and product animation (motion design for apps, websites, and digital interfaces), Adobe XD and Figma both offer their own learning credentials. Neither is a proctored certification, but Adobe's XD learning path and Figma's community-issued credentials are recognized in product design and UX hiring. For roles in product animation, game UI, and interactive media, the Unity Certified Professional — Technical Artist above remains the strongest proctored credential; complement it with a Figma or Adobe XD learning certificate if your portfolio skews toward product/UX work.
+> **On UI motion design credentials:** If your focus is specifically on UI and product animation (motion design for apps, websites, and digital interfaces), Adobe XD and Figma both offer their own learning credentials. Neither is a proctored certification, but Adobe's XD learning path and Figma's community-issued credentials are recognized in product design and UX hiring. For roles in product animation, game UI, and interactive media, the Unity Certified Professional, Technical Artist above remains the strongest proctored credential; complement it with a Figma or Adobe XD learning certificate if your portfolio skews toward product/UX work.
 
 ---
 
 
-## 🗺️ "Which Cert Next?" — Career Path Matrix
+## 🗺️ "Which Cert Next?", Career Path Matrix
 
 | Just earned… | Natural next certs (within 6-12 months) |
 |---------------|------------------------------------------|
@@ -1317,7 +1317,7 @@ After completing this course, you will have covered the core objectives for:
 
 The most common cert-buying mistakes:
 
-1. **Paying full price when a discount voucher exists.** Microsoft Virtual Training Days (free AZ-900 / AI-900 / SC-900 vouchers monthly), AWS re:Invent attendees (50% off), ASCM membership month-of-event sales, CompTIA Academy partner discounts (~30%-50% off) — always check official channels before paying.
+1. **Paying full price when a discount voucher exists.** Microsoft Virtual Training Days (free AZ-900 / AI-900 / SC-900 vouchers monthly), AWS re:Invent attendees (50% off), ASCM membership month-of-event sales, CompTIA Academy partner discounts (~30%-50% off), always check official channels before paying.
 2. **Buying third-party study materials before deciding which exam.** Use this site (it's free). Official issuing-body content is also generally cheaper than third-party Udemy/Pluralsight courses.
 3. **Failing the exam and not learning the retake policy.** Most certs require a 14-day wait + paid retake. Budget accordingly.
 4. **Letting a cert lapse.** Once you let a PMP, CISSP, or AWS cert expire, the re-earn cost equals the original.
@@ -1361,14 +1361,14 @@ The international certification market is fragmented, but the credible bodies ar
 
 - **PMI** (project management)
 - **Scrum.org + Scrum Alliance** (agile)
-- **CompTIA** (vendor-neutral IT — A+, Network+, Linux+, Server+, Security+)
+- **CompTIA** (vendor-neutral IT, A+, Network+, Linux+, Server+, Security+)
 - **AWS + Microsoft** (cloud vendors)
-- **Microsoft** (enterprise — Windows Server, Endpoint, Identity)
+- **Microsoft** (enterprise, Windows Server, Endpoint, Identity)
 - **(ISC)² + ISACA** (advanced cybersecurity)
 - **ASCM + ISM** (supply chain)
-- **Anthropic + OpenAI + Google + Hugging Face** (frontier model providers — official documentation; no AI certs of their own yet, but their docs are the canonical study material for the Cert-Hub-original AI tracks)
-- **AWS + Databricks + NVIDIA** (vendor AI/ML certifications — MLS-C01, Databricks GenAI Associate, NVIDIA GenAI / LLMs)
-- **HubSpot + Google + Meta** (marketing — free vendor)
+- **Anthropic + OpenAI + Google + Hugging Face** (frontier model providers, official documentation; no AI certs of their own yet, but their docs are the canonical study material for the Cert-Hub-original AI tracks)
+- **AWS + Databricks + NVIDIA** (vendor AI/ML certifications, MLS-C01, Databricks GenAI Associate, NVIDIA GenAI / LLMs)
+- **HubSpot + Google + Meta** (marketing, free vendor)
 - **C4 + ACAMS** (Bitcoin/crypto)
 - **Adobe + Salesforce + Shopify** (e-commerce vendors)
 - **Wharton + Princeton + MIT + Stanford** (academic-prestige via Coursera/edX)
@@ -1381,10 +1381,10 @@ Stay away from any cert sold by an organization without credible alumni on Linke
 
 You've chosen your cert. Now go earn it:
 
-1. ☑️ **Open the matching course README** — pick from the [39 tracks](../../) on the homepage
+1. ☑️ **Open the matching course README**, pick from the [39 tracks](../../) on the homepage
 2. ☑️ **Read the [Quick Start Guide](../../00-Study-Plan/Quick-Start-Guide/)** if you haven't already
-3. ☑️ **Follow the [12-Week Study Plan](../../00-Study-Plan/12-Week-Study-Plan/)** — adaptable to any cert
-4. ☑️ **Bookmark [Exam Day Tips](../../00-Study-Plan/Exam-Day-Tips/)** — read it the morning of your exam
+3. ☑️ **Follow the [12-Week Study Plan](../../00-Study-Plan/12-Week-Study-Plan/)**, adaptable to any cert
+4. ☑️ **Bookmark [Exam Day Tips](../../00-Study-Plan/Exam-Day-Tips/)**, read it the morning of your exam
 5. ☑️ **Find [Communities](../Communities/)** of others studying the same cert
 6. ☑️ **Drill [practice questions](../Free-Practice-Tests/)** until your scores plateau
 7. ☑️ **Pay for the exam.** Walk in. Pass. Update LinkedIn within 24 hours.

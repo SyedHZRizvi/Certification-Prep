@@ -176,7 +176,7 @@ D. `"v1/invoice"`
 
 ### Q21. Integrated vectorization in Azure AI Search means: *(Understand)*
 A. Manually vectorizing docs in your app
-B. A built-in Azure OpenAI Embedding skill vectorizes during indexing — no glue code
+B. A built-in Azure OpenAI Embedding skill vectorizes during indexing, no glue code
 C. Always-on vector index
 D. Single-tier pricing
 
@@ -230,7 +230,7 @@ D. 3072
 
 ---
 
-### Q28. A team wants to monitor freshness — only re-index documents that have changed. The indexer feature to enable is: *(Apply)*
+### Q28. A team wants to monitor freshness, only re-index documents that have changed. The indexer feature to enable is: *(Apply)*
 A. Soft delete
 B. Change detection policy (high watermark) on the data source
 C. Re-index on every schedule run
@@ -263,7 +263,7 @@ Renamed in 2023.
 Consistent layout = Template. (Or, if Microsoft already had a "Vendor X receipt" template, Prebuilt-Receipt could work, but the question implies extracting from one vendor's specific form.)
 
 ### Q3: **C. Custom Neural model**
-Varying layout, consistent fields = Neural. (Or Prebuilt-Invoice if it covers your fields — but the question said varying layouts, so Neural is the safer answer for unknown templates.)
+Varying layout, consistent fields = Neural. (Or Prebuilt-Invoice if it covers your fields, but the question said varying layouts, so Neural is the safer answer for unknown templates.)
 
 ### Q4: **B. Custom Classifier**
 Categorizes incoming docs before routing.
@@ -272,7 +272,7 @@ Categorizes incoming docs before routing.
 The modern (post-rename) client. `DocumentAnalysisClient` is the legacy `azure-ai-formrecognizer` client.
 
 ### Q6: **A. Index, Indexer, Skillset, Knowledge Store, Data Source**
-DISKS — memorize.
+DISKS, memorize.
 
 ### Q7: **B. Pulls data from a data source on a schedule**
 Pull-based crawler.
@@ -302,7 +302,7 @@ Free/Basic don't support semantic ranker.
 Reciprocal Rank Fusion combines the two ranked lists.
 
 ### Q16: **B. Optional projection of enriched data to Azure Storage**
-Tables, objects, files — useful for downstream analytics. Not where the index lives.
+Tables, objects, files, useful for downstream analytics. Not where the index lives.
 
 ### Q17: **B. `retrievable: true`**
 Returns the field in search results.
@@ -311,7 +311,7 @@ Returns the field in search results.
 Layout = structure (tables, selection marks, paragraphs). Prebuilt-Invoice adds named fields. Read = words only.
 
 ### Q19: **B. Azure Blob Storage**
-BYOS — your container URL or managed identity reference.
+BYOS, your container URL or managed identity reference.
 
 ### Q20: **B. `"prebuilt-invoice"`**
 Prebuilt model IDs are prefixed `prebuilt-`.

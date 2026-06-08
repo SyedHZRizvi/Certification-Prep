@@ -29,7 +29,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Well-Architected Framework — All 6 Pillars Explained</p>
+      <p class="vg-title">Well-Architected Framework, All 6 Pillars Explained</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 12 min · MEMORIZE the pillars</span>
     </div>
@@ -47,7 +47,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AWS Cloud Adoption Framework — 6 Perspectives</p>
+      <p class="vg-title">AWS Cloud Adoption Framework, 6 Perspectives</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 9 min · Enterprise transformation</span>
     </div>
@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">MGN vs DMS vs DataSync — Migration Services</p>
+      <p class="vg-title">MGN vs DMS vs DataSync, Migration Services</p>
       <p class="vg-creator">Be A Better Dev</p>
       <span class="vg-duration">⏱ 11 min · Tool selection</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Well-Architected Tool — Live Self-Assessment</p>
+      <p class="vg-title">Well-Architected Tool, Live Self-Assessment</p>
       <p class="vg-creator">AWS Training and Certification</p>
       <span class="vg-duration">⏱ 12 min · Hands-on</span>
     </div>
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">AWS Partner Network — Tiers + Competencies</p>
+      <p class="vg-title">AWS Partner Network, Tiers + Competencies</p>
       <p class="vg-creator">Tutorials Dojo</p>
       <span class="vg-duration">⏱ 7 min · Lightly tested</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Enterprise Migration Case Study — Lessons Learned</p>
+      <p class="vg-title">Enterprise Migration Case Study, Lessons Learned</p>
       <p class="vg-creator">AWS re:Invent</p>
       <span class="vg-duration">⏱ 50 min · Real-world story</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">After CLF — Your AWS Certification Roadmap</p>
+      <p class="vg-title">After CLF, Your AWS Certification Roadmap</p>
       <p class="vg-creator">Stephane Maarek</p>
       <span class="vg-duration">⏱ 8 min · What's next?</span>
     </div>
@@ -135,9 +135,9 @@
 ## ✅ After watching
 
 1. Name the 6 pillars of Well-Architected in order.
-2. The 6 Rs of migration — match each to a one-sentence scenario.
-3. CAF's 6 perspectives — list them.
-4. MGN vs DMS vs DataSync — when to use each?
+2. The 6 Rs of migration, match each to a one-sentence scenario.
+3. CAF's 6 perspectives, list them.
+4. MGN vs DMS vs DataSync, when to use each?
 5. What's the difference between APN Consulting and Technology partners?
 
 If you can answer all 5, you're ready for the [Quiz](./Quiz.md) and the Practice Exams!

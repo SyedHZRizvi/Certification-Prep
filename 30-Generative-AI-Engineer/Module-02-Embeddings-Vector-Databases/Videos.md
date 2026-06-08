@@ -18,7 +18,7 @@
 
 # 🎥 Module 2 Videos: Embeddings & Vector Databases
 
-> **How to use:** This module benefits enormously from seeing the geometry — start with the visual intuition videos, then go practitioner.
+> **How to use:** This module benefits enormously from seeing the geometry, start with the visual intuition videos, then go practitioner.
 
 ## ⭐ Essential watching
 
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Pinecone Vector Database — Full Tutorial</p>
+      <p class="vg-title">Pinecone Vector Database, Full Tutorial</p>
       <p class="vg-creator">James Briggs</p>
       <span class="vg-duration">⏱ 1h · End-to-end Pinecone</span>
     </div>
@@ -77,7 +77,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Qdrant Vector Search — practical tutorial</p>
+      <p class="vg-title">Qdrant Vector Search, practical tutorial</p>
       <p class="vg-creator">Qdrant team</p>
       <span class="vg-duration">⏱ 45m · Filter pushdown deep-dive</span>
     </div>
@@ -86,7 +86,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">pgvector + Postgres — full tutorial</p>
+      <p class="vg-title">pgvector + Postgres, full tutorial</p>
       <p class="vg-creator">Supabase</p>
       <span class="vg-duration">⏱ 40m · Postgres-native vectors</span>
     </div>
@@ -95,7 +95,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">HNSW visualized — how graph ANN works</p>
+      <p class="vg-title">HNSW visualized, how graph ANN works</p>
       <p class="vg-creator">Pinecone / community</p>
       <span class="vg-duration">⏱ 20m · The default ANN index</span>
     </div>
@@ -109,7 +109,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ColBERT — Late-Interaction Retrieval</p>
+      <p class="vg-title">ColBERT, Late-Interaction Retrieval</p>
       <p class="vg-creator">Omar Khattab</p>
       <span class="vg-duration">⏱ 50m · The PhD-level take</span>
     </div>
@@ -118,7 +118,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Matryoshka Representations — why text-embedding-3 truncates</p>
+      <p class="vg-title">Matryoshka Representations, why text-embedding-3 truncates</p>
       <p class="vg-creator">community</p>
       <span class="vg-duration">⏱ 30m · 3072 → 256 dim trick</span>
     </div>
@@ -136,7 +136,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">SPLADE — learned-sparse retrieval</p>
+      <p class="vg-title">SPLADE, learned-sparse retrieval</p>
       <p class="vg-creator">Naver Labs</p>
       <span class="vg-duration">⏱ 35m · The hybrid future</span>
     </div>
@@ -151,7 +151,7 @@
 |---------|-----|
 | **James Briggs** | The go-to practitioner for vector-DB tutorials. |
 | **Greg Kamradt** | RAG-pipeline architect; the chunking masterclass alone is worth it. |
-| **Jay Alammar** | Visual intuition for embeddings — irreplaceable. |
+| **Jay Alammar** | Visual intuition for embeddings, irreplaceable. |
 | **Pinecone Engineering** | Deep dives on HNSW, sparse, hybrid. |
 | **Qdrant Engineering** | Rust-fast vector search; great filter-pushdown content. |
 | **Cohere DevRel** | Best public material on rerankers. |
@@ -162,11 +162,11 @@
 
 Answer these in your notebook:
 
-1. Cosine similarity vs dot product vs Euclidean — when does each match?
+1. Cosine similarity vs dot product vs Euclidean, when does each match?
 2. What is HNSW in 3 sentences? What are M and efSearch?
-3. Asymmetric embedders — what's the API trap?
-4. Hybrid search vs pure vector — give a query where each wins.
-5. Contextual retrieval — how does it differ from "just embedding the chunk"?
-6. ColBERT vs bi-encoder vs cross-encoder — order them by speed and by accuracy.
+3. Asymmetric embedders, what's the API trap?
+4. Hybrid search vs pure vector, give a query where each wins.
+5. Contextual retrieval, how does it differ from "just embedding the chunk"?
+6. ColBERT vs bi-encoder vs cross-encoder, order them by speed and by accuracy.
 
 If all 6 are crisp, take the [Quiz](./Quiz.md).

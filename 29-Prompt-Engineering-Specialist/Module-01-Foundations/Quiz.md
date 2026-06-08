@@ -233,7 +233,7 @@ System > user > assistant > tool. The instruction hierarchy (OpenAI 2024 formali
 1 token ≈ 0.75 words for English, so 600 words ≈ 800 tokens. Memorize this; you'll need it for cost math.
 
 ### Q4: **B. temperature=0 + fixed seed + structured-output mode**
-T=0 is greedy. Seed (where supported) reduces residual variance. Structured outputs enforce the schema. Just T=0 alone is not enough — some backends are non-deterministic.
+T=0 is greedy. Seed (where supported) reduces residual variance. Structured outputs enforce the schema. Just T=0 alone is not enough, some backends are non-deterministic.
 
 ### Q5: **B. Output tokens are typically 3–5× more expensive**
 Standard across Claude, GPT, Gemini. Reasoning-model thinking tokens are billed as output tokens too. Always model both sides.
@@ -272,7 +272,7 @@ Transactional/extractive work wants determinism. 0 is the default for classifica
 `stop_reason: "length"` means you hit max_tokens. Either raise the cap or shorten the prompt to ask for less output.
 
 ### Q17: **B. Absence of system prompt, instruction hierarchy, and output filter**
-Tay had no runtime persona separation, no role hierarchy, and weak keyword filtering — every modern API ships with these *because* of Tay.
+Tay had no runtime persona separation, no role hierarchy, and weak keyword filtering, every modern API ships with these *because* of Tay.
 
 ### Q18: **B. Multi-provider abstraction library**
 litellm normalizes ~100 providers into the OpenAI message format. Module 8 explains the production pattern.
@@ -323,4 +323,4 @@ This is the Maya-pizza-shop fix. System prompt defines persona + rules + menu. L
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2 — Few-Shot & In-Context Learning](../Module-02-Few-Shot-In-Context/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 2, Few-Shot & In-Context Learning](../Module-02-Few-Shot-In-Context/Reading.md)

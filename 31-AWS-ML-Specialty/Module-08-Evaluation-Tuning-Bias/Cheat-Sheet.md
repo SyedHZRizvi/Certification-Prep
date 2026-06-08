@@ -4,7 +4,7 @@
 
 ---
 
-## 📊 Classification Metrics — One-Liner
+## 📊 Classification Metrics, One-Liner
 
 | Metric | Use |
 |--------|-----|
@@ -61,23 +61,23 @@ Parameter types: `ContinuousParameter`, `IntegerParameter`, `CategoricalParamete
 
 ---
 
-## 🔬 Clarify — Bias & SHAP
+## 🔬 Clarify, Bias & SHAP
 
 ### Pre-training (Module 3): CI, DPL, KL, JS, Lp, TVD, CDDL
 ### Post-training (this module):
 
-- **DI** (Disparate Impact) — ratio of positive prediction rates
-- **DPPL** — diff in positive prediction rates
-- **DAR / DRR** — acceptance / rejection diffs
-- **AD / RD / SD** — accuracy / recall / specificity diffs
-- **FT** — counterfactual flip test
-- **TE** — treatment equality (FP/FN ratio)
+- **DI** (Disparate Impact), ratio of positive prediction rates
+- **DPPL**, diff in positive prediction rates
+- **DAR / DRR**, acceptance / rejection diffs
+- **AD / RD / SD**, accuracy / recall / specificity diffs
+- **FT**, counterfactual flip test
+- **TE**, treatment equality (FP/FN ratio)
 
 ### SHAP types
 
-- **TreeSHAP** — exact + fast for XGBoost / RF / LightGBM
-- **KernelSHAP** — model-agnostic; slower
-- **DeepSHAP** — deep nets
+- **TreeSHAP**, exact + fast for XGBoost / RF / LightGBM
+- **KernelSHAP**, model-agnostic; slower
+- **DeepSHAP**, deep nets
 
 ---
 
@@ -119,13 +119,13 @@ Pairs with **Model Registry** approval workflow.
 | "Document model use for regulators" | SageMaker Model Card |
 | "Forecast probabilistic intervals" | Quantile loss |
 | "Outliers dominate RMSE" | Switch to MAE or Huber |
-| "Re-tune on test" | Don't — contamination |
+| "Re-tune on test" | Don't, contamination |
 
 ---
 
 ## ✏️ Self-Check
 
-1. Imbalanced fraud detector — best metric? ___
+1. Imbalanced fraud detector, best metric? ___
 2. HPO with smart trials, default = ___
 3. HPO for DL with many epochs = ___
 4. Per-prediction explanation = ___

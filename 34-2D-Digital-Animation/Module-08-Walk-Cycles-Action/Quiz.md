@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-08-Walk-Cycles-Action/Quiz/
 title: "Module 8 Quiz: Walk Cycles & Action"
 ---
 
-# 🧠 Module 8 Quiz — Walk Cycles & Action
+# 🧠 Module 8 Quiz, Walk Cycles & Action
 
 ---
 
@@ -99,10 +99,10 @@ D. The baton is passed from the lower body to the upper body
 
 ### Q11. For a character jumping upward, in which direction does the anticipation move?
 
-A. Upward — into the direction of the jump
-B. Sideways — perpendicular to the jump
-C. Downward — opposite to the jump
-D. Forward — following the character's momentum
+A. Upward, into the direction of the jump
+B. Sideways, perpendicular to the jump
+C. Downward, opposite to the jump
+D. Forward, following the character's momentum
 
 ---
 
@@ -189,10 +189,10 @@ D. Both feet remain on the ground throughout the entire cycle
 
 ### Q21. In action animation, the "impact frame" (the moment of collision or landing) should show:
 
-A. A hold frame — the character freezes for 2–3 frames at the moment of impact
-B. Maximum squash — the body compresses at the moment of greatest force
-C. Maximum stretch — the body is at full extension
-D. The anticipation pose — a brief return to wind-up at the impact moment
+A. A hold frame, the character freezes for 2–3 frames at the moment of impact
+B. Maximum squash, the body compresses at the moment of greatest force
+C. Maximum stretch, the body is at full extension
+D. The anticipation pose, a brief return to wind-up at the impact moment
 
 ---
 
@@ -216,9 +216,9 @@ D. Slow In / Slow Out
 
 ### Q24. A character needs to punch toward the RIGHT side of the screen. Where should the anticipation pose move the character's fist?
 
-A. To the right — building momentum in the direction of the punch
-B. To the left — opposite to the punch direction
-C. Upward — building vertical energy before the horizontal strike
+A. To the right, building momentum in the direction of the punch
+B. To the left, opposite to the punch direction
+C. Upward, building vertical energy before the horizontal strike
 D. The fist stays in place; only the body torso anticipates
 
 ---
@@ -226,28 +226,28 @@ D. The fist stays in place; only the body torso anticipates
 ## 🎯 Answers + Explanations
 
 ```
-Q1.  B — The four walk cycle poses: Contact, Down, Passing, Up.
-Q2.  B — Contact = heel of the lead foot makes its first contact with the ground.
-Q3.  C — In a 12-frame cycle: Contact at 1, Down at 3, Pass at 5, Up at 7, second Contact at 9.
-Q4.  B — 12 frames covers one full left+right step pair = two steps.
-Q5.  C — Runs have an airborne phase; walks always have one foot on the ground.
-Q6.  B — Anticipation always moves opposite to the main action direction.
-Q7.  B — Cuphead recreates the Fleischer Brothers (Betty Boop, Popeye) 1930s aesthetic.
-Q8.  C — Down = lowest body height as the knee absorbs the step's impact.
-Q9.  B — Gravity Falls uses more in-betweens and softer arcs for a naturalistic feel.
-Q10. B — Passing position: the swinging foot passes the planted foot in mid-air.
-Q11. C — Jump UP → anticipation goes DOWN (opposite direction).
-Q12. C — Waterbending = Tai Chi Chuan (flowing, circular movements).
-Q13. B — Snappy style = long holds → sudden 2-3 frame transitions → new holds.
-Q14. B — Just before impact = maximum stretch; body is at full extension.
-Q15. B — Standard run cycle at 24fps = 8 frames.
-Q16. C — Up pose = highest point in the body's arc for that step.
-Q17. B — Follow-through = secondary elements continuing after the primary motion stops.
-Q18. B — Cuphead is animated on twos (12 unique drawings per second at 24fps).
-Q19. B — Earthbending = Hung Gar Kung Fu (powerful, rooted, linear stances).
-Q20. C — Strut: chest out, strong held accent on each step, expresses confidence.
-Q21. B — Impact = maximum squash (maximum compression at the moment of force).
-Q22. B — Airborne phase = both feet simultaneously off the ground.
-Q23. C — Coat continuing to swing after body stops = follow-through.
-Q24. B — Punch right → anticipation goes left (opposite direction).
+Q1.  B, The four walk cycle poses: Contact, Down, Passing, Up.
+Q2.  B, Contact = heel of the lead foot makes its first contact with the ground.
+Q3.  C, In a 12-frame cycle: Contact at 1, Down at 3, Pass at 5, Up at 7, second Contact at 9.
+Q4.  B, 12 frames covers one full left+right step pair = two steps.
+Q5.  C, Runs have an airborne phase; walks always have one foot on the ground.
+Q6.  B, Anticipation always moves opposite to the main action direction.
+Q7.  B, Cuphead recreates the Fleischer Brothers (Betty Boop, Popeye) 1930s aesthetic.
+Q8.  C, Down = lowest body height as the knee absorbs the step's impact.
+Q9.  B, Gravity Falls uses more in-betweens and softer arcs for a naturalistic feel.
+Q10. B, Passing position: the swinging foot passes the planted foot in mid-air.
+Q11. C, Jump UP → anticipation goes DOWN (opposite direction).
+Q12. C, Waterbending = Tai Chi Chuan (flowing, circular movements).
+Q13. B, Snappy style = long holds → sudden 2-3 frame transitions → new holds.
+Q14. B, Just before impact = maximum stretch; body is at full extension.
+Q15. B, Standard run cycle at 24fps = 8 frames.
+Q16. C, Up pose = highest point in the body's arc for that step.
+Q17. B, Follow-through = secondary elements continuing after the primary motion stops.
+Q18. B, Cuphead is animated on twos (12 unique drawings per second at 24fps).
+Q19. B, Earthbending = Hung Gar Kung Fu (powerful, rooted, linear stances).
+Q20. C, Strut: chest out, strong held accent on each step, expresses confidence.
+Q21. B, Impact = maximum squash (maximum compression at the moment of force).
+Q22. B, Airborne phase = both feet simultaneously off the ground.
+Q23. C, Coat continuing to swing after body stops = follow-through.
+Q24. B, Punch right → anticipation goes left (opposite direction).
 ```

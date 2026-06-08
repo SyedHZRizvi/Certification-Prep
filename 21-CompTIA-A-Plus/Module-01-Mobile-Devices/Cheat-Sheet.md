@@ -4,14 +4,14 @@
 
 ---
 
-## 📧 Mobile Email — Protocols + Ports
+## 📧 Mobile Email, Protocols + Ports
 
 | Protocol | Plain | Encrypted | Use Case |
 |----------|-------|-----------|----------|
 | **POP3** | 110 | 995 | One-device-only; downloads & often deletes |
 | **IMAP** | 143 | 993 | Multi-device sync; mail stays on server |
 | **SMTP** | 25 / 587 | 465 | Outbound only |
-| **Exchange ActiveSync (EAS)** | — | 443 | Microsoft sync + policy enforcement |
+| **Exchange ActiveSync (EAS)** |, | 443 | Microsoft sync + policy enforcement |
 
 🚨 *Multi-device user? → IMAP or EAS. NEVER POP3.*
 
@@ -111,7 +111,7 @@
 | Hot device + battery drain | Background apps, signal hunting, malware |
 | Email won't sync | MDM compliance, password change, profile valid |
 | Bluetooth audio routes to speaker | Settings → audio output |
-| Email shows on phone but not laptop | Likely POP3 — switch to IMAP/EAS |
+| Email shows on phone but not laptop | Likely POP3, switch to IMAP/EAS |
 
 ---
 
@@ -123,7 +123,7 @@
 - "Use IMAP (or Exchange ActiveSync) for multi-device sync"
 - "Containerization separates corporate from personal data"
 - "Enable Conditional Access"
-- "Selective wipe — only corporate data"
+- "Selective wipe, only corporate data"
 
 ❌ Often **wrong**:
 
@@ -140,7 +140,7 @@
 - IMAPS = 993, POP3S = 995, SMTP submission = 587, SMTPS = 465, EAS = 443
 - mmWave 5G ≠ low-band 5G (speed and range wildly different)
 - iPhone 14+ in US = eSIM only
-- USB-C is a *connector* — protocol varies from USB 2.0 to USB4 v2
+- USB-C is a *connector*, protocol varies from USB 2.0 to USB4 v2
 - 6-step troubleshooting: Identify → Theory → Test → Plan → Verify → Document
 - Mobile domain = **15% of 220-1101 exam**
 
@@ -150,11 +150,11 @@
 
 Cover the answers and recite:
 
-1. IMAP vs POP3 — when to use each? ___
+1. IMAP vs POP3, when to use each? ___
 2. 4 mobile ownership models and one trade-off each? ___
 3. Three MDM actions you can take on a lost BYOD phone? ___
 4. Default port for Exchange ActiveSync? ___
-5. Difference between mmWave 5G and sub-6 5G — coverage vs speed? ___
+5. Difference between mmWave 5G and sub-6 5G, coverage vs speed? ___
 
 If you can answer all 5 in under 60 seconds, you own this module. ✅
 

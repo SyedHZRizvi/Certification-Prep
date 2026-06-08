@@ -20,7 +20,7 @@
 
 # 🎥 Module 2 Videos: Few-Shot & In-Context Learning
 
-> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one — don't binge.
+> **How to use:** Click any video card to search YouTube and watch the latest top result for that topic. Curated picks shown in the order to watch them. Pause and take notes after each one, don't binge.
 
 ## ⭐ Essential watching (~55 min)
 
@@ -79,7 +79,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">kNN Few-Shot — retrieve examples per request</p>
+      <p class="vg-title">kNN Few-Shot, retrieve examples per request</p>
       <p class="vg-creator">DeepLearning.AI</p>
       <span class="vg-duration">⏱ 12 min · The production pattern</span>
     </div>
@@ -137,7 +137,7 @@
 | **Yannic Kilcher** | Rigorous paper walkthroughs, often within 48 hours. |
 | **AI Explained** | Frontier paper coverage with clear takeaways. |
 | **DeepLearning.AI** | Andrew Ng's polished short courses. |
-| **Stanford CS25** | Transformer lecture series — academic depth. |
+| **Stanford CS25** | Transformer lecture series, academic depth. |
 | **AI Coffee Break** | Quick, accurate paper summaries. |
 
 ---

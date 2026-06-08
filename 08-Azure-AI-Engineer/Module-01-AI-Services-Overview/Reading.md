@@ -3,12 +3,12 @@
 > **Why this module matters:** Every other module in this course assumes you can spin up an Azure AI resource, find its key + endpoint, and call it from code. Nail this and the rest is downhill.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - Azure subscription / resource group / resource model — covered in [`05-Azure-Fundamentals` Module 2](../../05-Azure-Fundamentals/Module-02-Azure-Architecture/Reading.md)
-> - Microsoft Entra ID basics (tenants, RBAC roles) — covered in [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
+> - Azure subscription / resource group / resource model, covered in [`05-Azure-Fundamentals` Module 2](../../05-Azure-Fundamentals/Module-02-Azure-Architecture/Reading.md)
+> - Microsoft Entra ID basics (tenants, RBAC roles), covered in [`06-Azure-Administrator` Module 1](../../06-Azure-Administrator/Module-01-Subscriptions-Resource-Hierarchy/Reading.md)
 > - Python or C# fluency at the "I can read a REST snippet" level
 > - Azure CLI installed (`az login` working)
 >
-> If any of these are shaky, pause and review before continuing — the rest of this course assumes you can read a `Microsoft.CognitiveServices/accounts` ARM resource and not flinch.
+> If any of these are shaky, pause and review before continuing, the rest of this course assumes you can read a `Microsoft.CognitiveServices/accounts` ARM resource and not flinch.
 
 ---
 
@@ -38,9 +38,9 @@ Microsoft kept rebranding throughout 2023–2024. The exam uses **current** name
 | QnA Maker | **Question Answering** in Azure AI Language | Knowledge-base Q&A |
 | Azure Cognitive Search | **Azure AI Search** | Indexer + skillset + vector search |
 | Azure AI Studio | **Azure AI Foundry** (portal experience) | Build/deploy GenAI apps, prompt flow |
-| Bing Search APIs | **Retiring** — moved to Grounding with Bing Search (in Azure AI Foundry) | — |
+| Bing Search APIs | **Retiring** moved to Grounding with Bing Search (in Azure AI Foundry) | |
 
-🚨 **Trap on the exam:** If a question references "Form Recognizer," the right answer probably still says "Document Intelligence" — the underlying SDK package is `azure-ai-formrecognizer` (legacy) or `azure-ai-documentintelligence` (current). Microsoft is migrating, both names appear.
+🚨 **Trap on the exam:** If a question references "Form Recognizer," the right answer probably still says "Document Intelligence", the underlying SDK package is `azure-ai-formrecognizer` (legacy) or `azure-ai-documentintelligence` (current). Microsoft is migrating, both names appear.
 
 ---
 
@@ -75,7 +75,7 @@ This is a guaranteed exam question. Memorize the trade-offs:
 |---|---|---|
 | **Resource kind** | One per service (e.g. `ComputerVision`, `SpeechServices`) | `AIServices` |
 | **Keys** | Separate key per service | **One key, one endpoint** for many services |
-| **Pricing tier** | Free tier (F0) often available per service | One billing line — easier accounting |
+| **Pricing tier** | Free tier (F0) often available per service | One billing line, easier accounting |
 | **Use when** | You want to isolate cost or scale one service independently | Prototyping; multiple services in one app |
 | **RBAC** | Granular per service | One assignment covers everything |
 | **Regional availability** | Pick best region per service | Region-locked across services |
@@ -104,7 +104,7 @@ az cognitiveservices account create \
   --yes
 ```
 
-🚨 **Trap:** Azure OpenAI is *not* part of the multi-service resource. It's always its own `OpenAI` kind, and it requires approval. Same goes for Face's higher-risk features (identification, verification of unknown subjects) — limited access form required.
+🚨 **Trap:** Azure OpenAI is *not* part of the multi-service resource. It's always its own `OpenAI` kind, and it requires approval. Same goes for Face's higher-risk features (identification, verification of unknown subjects), limited access form required.
 
 ---
 
@@ -112,9 +112,9 @@ az cognitiveservices account create \
 
 Every Azure AI resource has:
 
-- **Endpoint** — a URL like `https://maya-ai.cognitiveservices.azure.com/` (or `https://eastus.api.cognitive.microsoft.com/` for older single-service resources)
-- **Key1 + Key2** — two keys so you can rotate without downtime
-- **Region** — billing + data residency. **A key only works against its own region's endpoint.**
+- **Endpoint**, a URL like `https://maya-ai.cognitiveservices.azure.com/` (or `https://eastus.api.cognitive.microsoft.com/` for older single-service resources)
+- **Key1 + Key2**, two keys so you can rotate without downtime
+- **Region**, billing + data residency. **A key only works against its own region's endpoint.**
 
 ```bash
 # Get keys + endpoint
@@ -173,7 +173,7 @@ client = TextAnalyticsClient(
 
 ### 3. Managed Identity (the production answer)
 
-Use when your code runs **inside Azure** (App Service, Functions, AKS, VM). The platform injects an identity — no secrets, no rotation.
+Use when your code runs **inside Azure** (App Service, Functions, AKS, VM). The platform injects an identity, no secrets, no rotation.
 
 ```python
 from azure.identity import ManagedIdentityCredential
@@ -182,10 +182,10 @@ credential = ManagedIdentityCredential()  # or DefaultAzureCredential() which pi
 
 Two flavors:
 
-- **System-assigned** — tied to the resource lifecycle (deleted when the resource is)
-- **User-assigned** — standalone identity that can be attached to many resources
+- **System-assigned**, tied to the resource lifecycle (deleted when the resource is)
+- **User-assigned**, standalone identity that can be attached to many resources
 
-🎯 **Exam pattern:** *"A web app on Azure App Service needs to call Azure AI Language without storing secrets — what should you use?"* → **System-assigned managed identity + Cognitive Services User role**.
+🎯 **Exam pattern:** *"A web app on Azure App Service needs to call Azure AI Language without storing secrets, what should you use?"* → **System-assigned managed identity + Cognitive Services User role**.
 
 | Method | Best for | Secret in code? |
 |---|---|---|
@@ -251,7 +251,7 @@ Content-Type: application/json
 - Most Azure AI services are available in 10+ regions; **Azure OpenAI** is in fewer, and specific *models* are in even fewer regions.
 - Data submitted to AI services is **not** used to train Microsoft's foundation models (covered under the Azure OpenAI / AI services data privacy commitment).
 - For **Azure OpenAI**, you can request that abuse-monitoring logging be **disabled** for regulated workloads (requires a form submission).
-- **Customer-managed keys (CMK)** are available for at-rest encryption of stored data (custom models, training data) — wire up with Azure Key Vault.
+- **Customer-managed keys (CMK)** are available for at-rest encryption of stored data (custom models, training data), wire up with Azure Key Vault.
 - Network restrictions: use **Private Endpoints** + **VNet integration** to keep traffic off the public internet.
 
 ---
@@ -273,11 +273,11 @@ Content-Type: application/json
 
 | Misconception | Reality |
 |---|---|
-| "Multi-service resource includes Azure OpenAI" | No — OpenAI is a separate resource kind |
+| "Multi-service resource includes Azure OpenAI" | No, OpenAI is a separate resource kind |
 | "Keys never expire" | They don't *expire*, but you should rotate them on a schedule |
-| "Free tier is good for production" | F0 has strict throttling — fine for demos, not prod |
+| "Free tier is good for production" | F0 has strict throttling, fine for demos, not prod |
 | "DefaultAzureCredential needs a config file" | It walks a chain: env → managed identity → CLI → VS Code |
-| "Cognitive Services is the new name" | Other way around — **Azure AI services** is the new name |
+| "Cognitive Services is the new name" | Other way around, **Azure AI services** is the new name |
 | "Every region has every model" | Especially in Azure OpenAI, model availability is regional and changes monthly |
 
 ---
@@ -286,7 +286,7 @@ Content-Type: application/json
 
 1. **Subdomain endpoint** is required for Entra ID auth. The legacy `westus.api.cognitive.microsoft.com` endpoint will *not* accept tokens.
 2. **F0 (free) tier resources** are limited to **one per subscription** per service kind.
-3. **Custom subdomain cannot be renamed** once set — pick carefully.
+3. **Custom subdomain cannot be renamed** once set, pick carefully.
 4. **Managed identity** must be turned *on* before it's usable, and the **role assignment** happens on the AI resource (not on the calling resource).
 5. **Bring Your Own Storage (BYOS)** is required for some training scenarios (Custom Speech, custom Document Intelligence models). The exam will phrase this as "where is the training data stored?"
 
@@ -300,9 +300,9 @@ Content-Type: application/json
 | **Multi-service resource** | One resource (`AIServices` kind) that exposes most AI services with a single key |
 | **Single-service resource** | One resource per service (`ComputerVision`, `TextAnalytics`, etc.) |
 | **Endpoint** | The HTTPS URL where your code calls the service |
-| **Custom subdomain** | A unique subdomain on `cognitiveservices.azure.com` — required for Entra ID auth |
+| **Custom subdomain** | A unique subdomain on `cognitiveservices.azure.com`, required for Entra ID auth |
 | **Subscription key** | Long-lived secret in the `Ocp-Apim-Subscription-Key` header |
-| **Managed identity** | Azure-issued identity for code running in Azure — no secrets needed |
+| **Managed identity** | Azure-issued identity for code running in Azure, no secrets needed |
 | **System-assigned MI** | Lifecycle tied to the resource |
 | **User-assigned MI** | Standalone, attachable to multiple resources |
 | **RBAC role: Cognitive Services User** | Lets the identity call the data plane (read keys, invoke APIs) |
@@ -313,24 +313,24 @@ Content-Type: application/json
 
 ---
 
-## 📖 Case Study — ChatGPT Enterprise runs on Azure OpenAI (2023–2024)
+## 📖 Case Study, ChatGPT Enterprise runs on Azure OpenAI (2023–2024)
 
-**Situation.** In January 2023, Microsoft made Azure OpenAI Service generally available, anchored by a multi-year, multi-billion-dollar partnership with OpenAI (announced January 23, 2023; per Microsoft and OpenAI press releases). When OpenAI launched **ChatGPT Enterprise** in August 2023, the entire backend ran on Azure infrastructure — the same `Microsoft.CognitiveServices/accounts` resource family this module describes, scaled to power hundreds of thousands of concurrent enterprise sessions. By early 2024, ChatGPT Enterprise reportedly served customers including PwC, Klarna, Block, and Estée Lauder, all subject to enterprise contracts that demanded SOC 2 Type 2 compliance, customer-managed keys (CMK), and audited data residency — features that this module's "Azure AI services" umbrella has built in but that consumer ChatGPT did not.
+**Situation.** In January 2023, Microsoft made Azure OpenAI Service generally available, anchored by a multi-year, multi-billion-dollar partnership with OpenAI (announced January 23, 2023; per Microsoft and OpenAI press releases). When OpenAI launched **ChatGPT Enterprise** in August 2023, the entire backend ran on Azure infrastructure the same `Microsoft.CognitiveServices/accounts` resource family this module describes, scaled to power hundreds of thousands of concurrent enterprise sessions. By early 2024, ChatGPT Enterprise reportedly served customers including PwC, Klarna, Block, and Estée Lauder, all subject to enterprise contracts that demanded SOC 2 Type 2 compliance, customer-managed keys (CMK), and audited data residency features that this module's "Azure AI services" umbrella has built in but that consumer ChatGPT did not.
 
-**Decision.** Microsoft and OpenAI architected ChatGPT Enterprise on Azure OpenAI's `kind=OpenAI` resources behind **Private Endpoints**, used **Managed Identity** for service-to-service auth (no keys in code paths), pinned model deployments to specific regions for data-residency claims (US, EU, then "Data Zones" added in 2024), and turned on **abuse-monitoring opt-out** under approved customer contracts so prompts were not retained for 30 days. Quota was enforced via **TPM/RPM** caps at the deployment level — the same dials covered in this module's "Monitoring & Cost" section.
+**Decision.** Microsoft and OpenAI architected ChatGPT Enterprise on Azure OpenAI's `kind=OpenAI` resources behind **Private Endpoints**, used **Managed Identity** for service-to-service auth (no keys in code paths), pinned model deployments to specific regions for data-residency claims (US, EU, then "Data Zones" added in 2024), and turned on **abuse-monitoring opt-out** under approved customer contracts so prompts were not retained for 30 days. Quota was enforced via **TPM/RPM** caps at the deployment level, the same dials covered in this module's "Monitoring & Cost" section.
 
-**Outcome.** Microsoft's FY2024 disclosures (per CEO Satya Nadella, July 2024 earnings call) reported Azure OpenAI was used by 60,000+ customers, with the Azure AI business contributing 8 percentage points to Azure growth that quarter. By Q1 2025, the customer count crossed 65,000 (Microsoft Build 2024 keynote; verified against Microsoft Investor Relations materials, checked 2026-05). Critically: there was no major public security incident traced to the platform itself between GA (Jan 2023) and 2026-05 — the architectural choices (private networking, MI, data zones) held.
+**Outcome.** Microsoft's FY2024 disclosures (per CEO Satya Nadella, July 2024 earnings call) reported Azure OpenAI was used by 60,000+ customers, with the Azure AI business contributing 8 percentage points to Azure growth that quarter. By Q1 2025, the customer count crossed 65,000 (Microsoft Build 2024 keynote; verified against Microsoft Investor Relations materials, checked 2026-05). Critically: there was no major public security incident traced to the platform itself between GA (Jan 2023) and 2026-05, the architectural choices (private networking, MI, data zones) held.
 
-**Lesson for the exam / for practitioners.** Every "boring" feature this module covers — multi-service vs single-service, custom subdomains for Entra ID, managed identity, Private Endpoints, customer-managed keys, quota tiers — is the same machinery that lets Azure OpenAI host ChatGPT Enterprise at scale. AI-102 tests these as separate questions because they're separate dials. In production, they compose into a defensible platform.
+**Lesson for the exam / for practitioners.** Every "boring" feature this module covers multi-service vs single-service, custom subdomains for Entra ID, managed identity, Private Endpoints, customer-managed keys, quota tiers is the same machinery that lets Azure OpenAI host ChatGPT Enterprise at scale. AI-102 tests these as separate questions because they're separate dials. In production, they compose into a defensible platform.
 
 **Discussion (Socratic).**
-- Q1: If you were the architect for a new ChatGPT-style consumer product in 2026, would you use Azure OpenAI (gated, RBAC-heavy, region-pinned) or pre-trained open-weights models on Azure Machine Learning? Build the strongest argument for each — what's the implicit trade-off you're accepting?
+- Q1: If you were the architect for a new ChatGPT-style consumer product in 2026, would you use Azure OpenAI (gated, RBAC-heavy, region-pinned) or pre-trained open-weights models on Azure Machine Learning? Build the strongest argument for each, what's the implicit trade-off you're accepting?
 - Q2: Microsoft made `AIServices` multi-service resources *exclude* Azure OpenAI. Why might Microsoft have made this product choice, and what would change for customers if Azure OpenAI were rolled into the multi-service kind?
 - Q3: ChatGPT Enterprise customers can request abuse-monitoring opt-out. From Microsoft's safety-team perspective, what's the implicit trade-off they accepted by offering that opt-out, and how would you defend the decision to an EU AI Act regulator?
 
 ---
 
-## 💬 Discussion — Socratic prompts
+## 💬 Discussion, Socratic prompts
 
 Use these as journal prompts, study-group questions, or interview-prep drills. Each is open-ended; defend with specifics from the module.
 
@@ -338,7 +338,7 @@ Use these as journal prompts, study-group questions, or interview-prep drills. E
 2. **Managed identity vs subscription key in a hybrid scenario.** You have a Python ETL job that runs on-premises 3 nights a week and on Azure 4 nights a week. The simpler architecture is "key in env var everywhere"; the principled architecture is "MI on Azure, federated identity on-prem." Argue both sides at a Cornell security review. Where does each architecture break?
 3. **F0 trap at scale.** A team prototypes on F0 (free) tier, ships to S0 (standard) for production, and gets sticker shock when monthly invoices show $40K of cognitive-services charges. From the architect's perspective: which monitoring + cost-control levers (TPM/RPM, PTU, Global Batch, tagging, Cost Management alerts, regional pinning) would you have wired *before* the launch, and which would you bolt on now? What does that ranking imply about the F0→S0 onboarding ritual at a mature org?
 4. **Custom subdomain irreversibility.** Once set, the custom subdomain on an Azure AI resource cannot be renamed. Build the strongest argument for AND against Microsoft making subdomains mutable (e.g., to support brand rebrands, acquisitions). What's the cost Microsoft is implicitly making customers pay for the immutability? Which Cornell IT systems-engineering principle does this most clearly map to?
-5. **Region pinning vs latency.** Azure OpenAI Global Standard SKU routes globally; Standard SKU pins to a region. Your CIO insists on EU-only data residency for GDPR. Your CMO wants the lowest possible perceived latency for users in São Paulo. Walk through how you'd structure the deployment topology AND the customer-facing privacy disclosure to satisfy both — without lying.
+5. **Region pinning vs latency.** Azure OpenAI Global Standard SKU routes globally; Standard SKU pins to a region. Your CIO insists on EU-only data residency for GDPR. Your CMO wants the lowest possible perceived latency for users in São Paulo. Walk through how you'd structure the deployment topology AND the customer-facing privacy disclosure to satisfy both, without lying.
 
 ---
 
@@ -357,7 +357,7 @@ You now know:
 
 **Next steps:**
 1. 🎥 Watch [Videos.md](./Videos.md)
-2. ✏️ Take [Quiz.md](./Quiz.md) — aim for 20/24
+2. ✏️ Take [Quiz.md](./Quiz.md), aim for 20/24
 3. 📋 Review [Cheat-Sheet.md](./Cheat-Sheet.md)
 4. ➡️ Move to [Module 2: Responsible AI & Content Safety](../Module-02-Responsible-AI-Content-Safety/Reading.md)
 
@@ -374,10 +374,10 @@ You now know:
 
 - Microsoft (2023). "Microsoft and OpenAI extend partnership." Press release, January 23, 2023.
 - Microsoft (2023). "Azure OpenAI Service is now generally available." Azure blog, January 17, 2023.
-- Microsoft Responsible AI Standard, **v2** (Microsoft, June 2022) — the corporate standard that mandates Transparency Notes for every ML-based service mentioned in this module.
-- Microsoft Mechanics (2024). *Azure AI Foundry — formerly Azure AI Studio* deep dive (verified against Microsoft Learn, 2026-05).
-- NIST AI Risk Management Framework — **AI RMF 1.0** (NIST, January 2023) — the public-sector reference Azure AI services map their governance posture to.
-- Microsoft Entra ID + managed identity foundations: Saltzer & Schroeder (1975), "The protection of information in computer systems," *Communications of the ACM* — the foundational principle of least privilege that the "Cognitive Services User" RBAC role operationalizes.
+- Microsoft Responsible AI Standard, **v2** (Microsoft, June 2022), the corporate standard that mandates Transparency Notes for every ML-based service mentioned in this module.
+- Microsoft Mechanics (2024). *Azure AI Foundry, formerly Azure AI Studio* deep dive (verified against Microsoft Learn, 2026-05).
+- NIST AI Risk Management Framework **AI RMF 1.0** (NIST, January 2023) the public-sector reference Azure AI services map their governance posture to.
+- Microsoft Entra ID + managed identity foundations: Saltzer & Schroeder (1975), "The protection of information in computer systems," *Communications of the ACM*, the foundational principle of least privilege that the "Cognitive Services User" RBAC role operationalizes.
 - Service availability and pricing checked against Microsoft Learn and Azure Pricing pages, 2026-05.
 
 ---
@@ -387,6 +387,6 @@ You now know:
 - 📖 [Azure AI services documentation hub](https://learn.microsoft.com/en-us/azure/ai-services/)
 - 📖 [Authenticate requests to Azure AI services](https://learn.microsoft.com/en-us/azure/ai-services/authentication)
 - 📖 [Use managed identities with Azure AI](https://learn.microsoft.com/en-us/azure/ai-services/authentication#authenticate-with-microsoft-entra-id)
-- 📖 [Azure SDK for Python — AI packages](https://learn.microsoft.com/en-us/python/api/overview/azure/ai)
+- 📖 [Azure SDK for Python, AI packages](https://learn.microsoft.com/en-us/python/api/overview/azure/ai)
 - 📖 [Azure AI services pricing](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/)
 - 📖 [AI-102 official study guide](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-102)

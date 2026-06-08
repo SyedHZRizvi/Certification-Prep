@@ -18,7 +18,7 @@
 
 # 🎥 Module 8 Videos: Monitoring, Reporting & Threat Response
 
-> **How to use:** Click any card to open a YouTube search — pick the top current result. Follow along by wiring your dev tenant's logs to a free Log Analytics workspace and running the 10 must-know KQL queries.
+> **How to use:** Click any card to open a YouTube search, pick the top current result. Follow along by wiring your dev tenant's logs to a free Log Analytics workspace and running the 10 must-know KQL queries.
 
 ## ⭐ Essential watching (~80 min)
 
@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Entra Sign-in & Audit Logs — KQL Walkthrough</p>
+      <p class="vg-title">Entra Sign-in & Audit Logs, KQL Walkthrough</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 25 min · Schema + key queries</span>
     </div>
@@ -36,7 +36,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Microsoft Sentinel + Entra ID — Connector to Detection</p>
+      <p class="vg-title">Microsoft Sentinel + Entra ID, Connector to Detection</p>
       <p class="vg-creator">Andy Malone MVP</p>
       <span class="vg-duration">⏱ 20 min · LA → connector → rule → incident</span>
     </div>
@@ -45,7 +45,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Microsoft Defender for Identity — Architecture & Detections</p>
+      <p class="vg-title">Microsoft Defender for Identity, Architecture & Detections</p>
       <p class="vg-creator">Microsoft Mechanics</p>
       <span class="vg-duration">⏱ 17 min · DC sensors + lateral movement</span>
     </div>
@@ -54,8 +54,8 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Identity Secure Score — Building a Hygiene Backlog</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-title">Identity Secure Score, Building a Hygiene Backlog</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 15 min · Prescriptive prioritization</span>
     </div>
   </a>
@@ -68,7 +68,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">KQL for Beginners — Syntax in 30 Minutes</p>
+      <p class="vg-title">KQL for Beginners, Syntax in 30 Minutes</p>
       <p class="vg-creator">John Savill's Technical Training</p>
       <span class="vg-duration">⏱ 30 min · From zero to writing queries</span>
     </div>
@@ -119,7 +119,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">UEBA for Identity Anomalies</p>
-      <p class="vg-creator">Dean Cefola — Azure Academy</p>
+      <p class="vg-creator">Dean Cefola, Azure Academy</p>
       <span class="vg-duration">⏱ 13 min · User & entity behavior analytics</span>
     </div>
   </a>
@@ -134,7 +134,7 @@
 | **John Savill** | Definitive KQL + Sentinel + Defender content. |
 | **Andy Malone MVP** | M365 admin perspective on identity monitoring. |
 | **Microsoft Mechanics** | Official launches; Defender XDR + Sentinel. |
-| **Dean Cefola — Azure Academy** | Lab walkthroughs. |
+| **Dean Cefola, Azure Academy** | Lab walkthroughs. |
 | **Concepts Work** | Newer SC-300 channel. |
 
 ---
@@ -144,8 +144,8 @@
 Answer these in your notebook (without re-watching):
 
 1. Write the KQL for "all break-glass account sign-ins."
-2. Where do PIM activation events show up — and what's the filter?
-3. Walk through ID Protection → Defender for Identity → Sentinel — what each does.
+2. Where do PIM activation events show up, and what's the filter?
+3. Walk through ID Protection → Defender for Identity → Sentinel, what each does.
 4. What's the right defense for token theft, and why isn't more MFA the answer?
 5. Sketch the 5 Tier-1 analytics rules you'd build first.
 

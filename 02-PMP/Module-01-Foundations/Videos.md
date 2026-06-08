@@ -27,7 +27,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">PMP Exam Overview 2024 ⭐ Channel is gold — subscribe</p>
+      <p class="vg-title">PMP Exam Overview 2024 ⭐ Channel is gold, subscribe</p>
       <p class="vg-creator">Andrew Ramdayal</p>
       <span class="vg-duration">⏱ 18 min</span>
     </div>

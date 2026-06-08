@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Supplier Development — When and How</p>
+      <p class="vg-title">Supplier Development, When and How</p>
       <p class="vg-creator">ProcureCon</p>
       <span class="vg-duration">⏱ 9 min · Kaizen at suppliers</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Vested Sourcing — Beyond Partnership</p>
+      <p class="vg-title">Vested Sourcing, Beyond Partnership</p>
       <p class="vg-creator">University of Tennessee Haslam</p>
       <span class="vg-duration">⏱ 22 min · Win-win outsourcing model</span>
     </div>

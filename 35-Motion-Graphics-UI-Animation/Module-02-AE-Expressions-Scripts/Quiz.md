@@ -3,7 +3,7 @@ permalink: /35-Motion-Graphics-UI-Animation/Module-02-AE-Expressions-Scripts/Qui
 title: "Module 2 Quiz: AE Expressions & Scripts"
 ---
 
-# 🧠 Module 2 Quiz — AE Expressions & Scripts
+# 🧠 Module 2 Quiz, AE Expressions & Scripts
 
 ### Q1.
 What keyboard shortcut adds an expression to a property in After Effects (on Mac)?
@@ -139,7 +139,7 @@ D. Expressions are for AE only; scripts work across the Adobe suite
 You apply `loopOut("offset")` to a layer's Y position that has keyframes from 0px to 100px. After the first loop, what happens?
 
 A. The position returns to 0px and repeats  
-B. The position continues drifting — adding 100px with each loop cycle  
+B. The position continues drifting, adding 100px with each loop cycle  
 C. The position plays backward from 100px to 0px  
 D. The position holds at 100px and stops  
 
@@ -198,7 +198,7 @@ D. `valueAtTime()` and `thisComp.duration`
 ### Q20.
 When referencing a layer by name in an expression (`thisComp.layer("My Layer")`), what happens when that layer is renamed?
 
-A. Nothing — AE automatically updates the reference  
+A. Nothing, AE automatically updates the reference  
 B. The expression breaks and shows a red error  
 C. The expression references the layer directly above instead  
 D. The expression defaults to `thisLayer`  
@@ -248,51 +248,51 @@ D. TypeScript
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — Option+Click (Mac) / Alt+Click (Windows) the stopwatch adds an expression to that property.
+Q1:  B, Option+Click (Mac) / Alt+Click (Windows) the stopwatch adds an expression to that property.
 
-Q2:  C — time is always in seconds. A 30fps comp at frame 60 = time of 2.0.
+Q2:  C, time is always in seconds. A 30fps comp at frame 60 = time of 2.0.
 
-Q3:  D — One full revolution = 360 degrees. In 6 seconds = 60 degrees/second. So rotation = time / 6 * 360, or equivalently time * 60.
+Q3:  D, One full revolution = 360 degrees. In 6 seconds = 60 degrees/second. So rotation = time / 6 * 360, or equivalently time * 60.
 
-Q4:  B — wiggle(frequency, amplitude): 3 cycles per second, max deviation 50 units from current position.
+Q4:  B, wiggle(frequency, amplitude): 3 cycles per second, max deviation 50 units from current position.
 
-Q5:  C — loopOut("pingpong"): plays forward, then backward, then forward — alternating indefinitely.
+Q5:  C, loopOut("pingpong"): plays forward, then backward, then forward, alternating indefinitely.
 
-Q6:  B — valueAtTime(time - 0.2) samples Layer A's position from 0.2 seconds ago, creating a 0.2-second delayed mirror.
+Q6:  B, valueAtTime(time - 0.2) samples Layer A's position from 0.2 seconds ago, creating a 0.2-second delayed mirror.
 
-Q7:  C — index. Each layer has a unique index (1, 2, 3…) so multiplying index by the frame delay gives each layer a unique offset.
+Q7:  C, index. Each layer has a unique index (1, 2, 3…) so multiplying index by the frame delay gives each layer a unique offset.
 
-Q8:  A — Expression Controls can be applied to any layer, though using a dedicated null or control layer is best practice.
+Q8:  A, Expression Controls can be applied to any layer, though using a dedicated null or control layer is best practice.
 
-Q9:  C — Color Control. It exposes an RGBA color picker that any expression can reference.
+Q9:  C, Color Control. It exposes an RGBA color picker that any expression can reference.
 
-Q10: B — seedRandom(index, true) gives each layer a unique noise seed. Alternatively, pass time + index * 100 as wiggle's t parameter to de-sync.
+Q10: B, seedRandom(index, true) gives each layer a unique noise seed. Alternatively, pass time + index * 100 as wiggle's t parameter to de-sync.
 
-Q11: C — loopOut("cycle") is the correct syntax. The type must be a quoted string.
+Q11: C, loopOut("cycle") is the correct syntax. The type must be a quoted string.
 
-Q12: B — ease() creates a smooth (ease-in-out) transition from 0 to 100 over the first 2 seconds, then holds at 100.
+Q12: B, ease() creates a smooth (ease-in-out) transition from 0 to 100 over the first 2 seconds, then holds at 100.
 
-Q13: B — Expressions execute on every frame during playback. Scripts execute once when run from File > Scripts or the script panel.
+Q13: B, Expressions execute on every frame during playback. Scripts execute once when run from File > Scripts or the script panel.
 
-Q14: B — loopOut("offset") adds the property delta (100px) on each loop, so the value drifts: 0→100, 100→200, 200→300, etc. — infinite drift.
+Q14: B, loopOut("offset") adds the property delta (100px) on each loop, so the value drifts: 0→100, 100→200, 200→300, etc., infinite drift.
 
-Q15: B — time * thisComp.frameRate. If time = 2s and frameRate = 30, result = 60 (frame number 60).
+Q15: B, time * thisComp.frameRate. If time = 2s and frameRate = 30, result = 60 (frame number 60).
 
-Q16: B — Math.sin(time * Math.PI * 2) creates one full sine cycle per second, multiplied by 50 gives ±50px oscillation. The [value[0], ...] preserves the X position.
+Q16: B, Math.sin(time * Math.PI * 2) creates one full sine cycle per second, multiplied by 50 gives ±50px oscillation. The [value[0], ...] preserves the X position.
 
-Q17: B — Ease and Wizz works by adding expression code to the keyframe property (e.g., position), which overrides the interpolation with the custom easing function.
+Q17: B, Ease and Wizz works by adding expression code to the keyframe property (e.g., position), which overrides the interpolation with the custom easing function.
 
-Q18: B — thisComp refers to the composition that contains the layer on which the expression is written.
+Q18: B, thisComp refers to the composition that contains the layer on which the expression is written.
 
-Q19: B — A counter uses time for progress, Math.round() to produce whole numbers, and linear/ease remapping to map time to the value range.
+Q19: B, A counter uses time for progress, Math.round() to produce whole numbers, and linear/ease remapping to map time to the value range.
 
-Q20: B — The expression breaks with a red error because the string reference no longer matches any layer name.
+Q20: B, The expression breaks with a red error because the string reference no longer matches any layer name.
 
-Q21: B — The correct syntax is: thisComp.layer("CONTROL").effect("Speed")("Slider"). 
+Q21: B, The correct syntax is: thisComp.layer("CONTROL").effect("Speed")("Slider"). 
 
-Q22: C — "spiral" is not a valid loopOut type. Valid types: "cycle", "pingpong", "offset", "continue".
+Q22: C, "spiral" is not a valid loopOut type. Valid types: "cycle", "pingpong", "offset", "continue".
 
-Q23: B — wiggle(2, 30)[1] extracts only the Y component of the wiggle vector. Adding it to value[1] (current Y) while keeping value[0] (current X) unchanged = vertical-only wiggle.
+Q23: B, wiggle(2, 30)[1] extracts only the Y component of the wiggle vector. Adding it to value[1] (current Y) while keeping value[0] (current X) unchanged = vertical-only wiggle.
 
-Q24: C — ExtendScript is a superset of ECMAScript 3 (the same era as JavaScript). Files use the .jsx extension. Not Python, not TypeScript.
+Q24: C, ExtendScript is a superset of ECMAScript 3 (the same era as JavaScript). Files use the .jsx extension. Not Python, not TypeScript.
 ```

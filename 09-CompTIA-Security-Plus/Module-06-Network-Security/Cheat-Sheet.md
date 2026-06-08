@@ -82,7 +82,7 @@ Internet → [NGFW] → DMZ → [NGFW] → Internal → [NGFW] → Secure
 [Supplicant] ←→ [Authenticator: switch/AP] ←→ [Auth Server: RADIUS]
 ```
 
-EAP variants: **EAP-TLS** (mutual cert — strongest), PEAP, EAP-TTLS, EAP-FAST.
+EAP variants: **EAP-TLS** (mutual cert, strongest), PEAP, EAP-TTLS, EAP-FAST.
 
 NAC adds **posture** checks (patched? EDR? encrypted disk?).
 
@@ -140,10 +140,10 @@ IPSec: **AH** (integrity/auth only) vs **ESP** (also conf). **Tunnel** mode = wh
 ## ✏️ Quick Self-Check
 
 1. SFTP port + protocol? FTPS port + protocol?
-2. IDS vs IPS — where placed, what they do.
+2. IDS vs IPS, where placed, what they do.
 3. Which trio defends against email spoofing of your domain?
-4. IPSec Tunnel vs Transport — which for site-to-site?
-5. DNSSEC vs DoH — what does each provide?
+4. IPSec Tunnel vs Transport, which for site-to-site?
+5. DNSSEC vs DoH, what does each provide?
 
 ---
 

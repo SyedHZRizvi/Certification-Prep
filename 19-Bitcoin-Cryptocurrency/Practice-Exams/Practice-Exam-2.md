@@ -1,4 +1,4 @@
-# Practice Exam 2 — Bitcoin & Cryptocurrency
+# Practice Exam 2, Bitcoin & Cryptocurrency
 
 > **Conditions:** 50 questions · 60 minutes · Closed book.
 > **Pass mark:** 40/50 (~80%). Apply scenario reasoning, not just recall.
@@ -10,7 +10,7 @@
 
 ### 1. Alice writes a script that generates a random 32-byte number and sends 0.1 BTC to its derived address. She prints the key on paper, burns the paper, and walks away. Which statement is MOST accurate?
 
-A. The BTC is permanently inaccessible — there is no recovery mechanism
+A. The BTC is permanently inaccessible, there is no recovery mechanism
 B. The BTC is automatically returned to her wallet after 6 months of inactivity
 C. Bitcoin Core has a "lost key" rescue tool that recovers it after 51% miner consent
 D. The funds slowly bleed to the network as "key rot" tax
@@ -46,7 +46,7 @@ D. Other independent mining pools and solo miners continue producing blocks
 
 ### 5. A user finds a 12-word seed phrase on the floor of a coffee shop. The honest, security-correct action is:
 
-A. Sweep the funds immediately to claim them — "finders keepers"
+A. Sweep the funds immediately to claim them, "finders keepers"
 B. Post the phrase online to identify the owner
 C. Recognize that anyone who finds a seed phrase controls every BTC ever sent to its derived addresses; do not interact with it
 D. Run a transaction-history check first, then decide
@@ -67,7 +67,7 @@ D. The chain accepted by the developers of Bitcoin Core
 A. 0 or 1 confirmation is acceptable given the low risk-vs-cost ratio
 B. 6 confirmations always (~60 minutes)
 C. 144 confirmations (~24 hours)
-D. None — Bitcoin transactions are irreversible the moment they hit the mempool
+D. None, Bitcoin transactions are irreversible the moment they hit the mempool
 
 ---
 
@@ -250,7 +250,7 @@ D. Insurance companies
 
 A. Foreign currency
 B. A commodity subject only to commodity-trading rules
-C. Property — every disposal is a taxable event with capital gains/losses
+C. Property, every disposal is a taxable event with capital gains/losses
 D. Untaxed digital tokens
 
 ---
@@ -286,7 +286,7 @@ D. Bitcoin is backed by gold
 
 A. Block-explorer access
 B. Reserves are denominated in USD, not BTC
-C. Lack of a simultaneous, audited "proof of liabilities" — reserves alone don't prove customer obligations are fully covered
+C. Lack of a simultaneous, audited "proof of liabilities", reserves alone don't prove customer obligations are fully covered
 D. The on-chain wallets are inaccessible
 
 ---
@@ -392,7 +392,7 @@ D. Compose complex Bitcoin Script policies (e.g., "2-of-3 OR 1-of-2 after 90 day
 
 ### 43. Schnorr signatures (BIP-340) enable signature aggregation. The on-chain space saving for an n-of-n multi-sig spend post-Taproot vs. legacy ECDSA multi-sig is approximately:
 
-A. No savings — Schnorr is the same size as ECDSA
+A. No savings, Schnorr is the same size as ECDSA
 B. Multi-sig now requires only ONE signature on-chain regardless of n, dramatically reducing tx size and fee
 C. Schnorr uses 1024-bit signatures, increasing size
 D. Schnorr requires a separate proof-of-membership signature
@@ -404,7 +404,7 @@ D. Schnorr requires a separate proof-of-membership signature
 A. Closing a channel without on-chain settlement
 B. Forwarding payments across two Bitcoin chains
 C. Mining Lightning blocks
-D. Adding or removing channel capacity without closing and reopening the channel — a single on-chain transaction adjusts the channel
+D. Adding or removing channel capacity without closing and reopening the channel, a single on-chain transaction adjusts the channel
 
 ---
 
@@ -440,7 +440,7 @@ D. Unconfirmed transactions over 24 hours old
 A. Custodians have faster signature schemes
 B. Self-custody is technically impossible at institutional scale
 C. The IRS requires custodian use
-D. Regulatory, accounting, and insurance requirements — qualified custodians are required under SEC rule 206(4)-2 (Custody Rule) for advisers managing client crypto
+D. Regulatory, accounting, and insurance requirements, qualified custodians are required under SEC rule 206(4)-2 (Custody Rule) for advisers managing client crypto
 
 ---
 
@@ -483,33 +483,33 @@ D. Government seizure of self-custodied cold storage
 
 **Q1. Answer: A**
 - **Why A is correct.** Bitcoin has no key-recovery oracle. Once a private key is destroyed, the corresponding UTXOs are permanently unspendable. Roughly 3-4 million BTC are estimated lost forever from this exact failure mode (Chainalysis, 2023 study).
-- **Why others are wrong.** B: No automatic return mechanism exists. C: No "rescue tool" exists — would violate self-sovereignty. D: No tax mechanism exists at protocol level.
+- **Why others are wrong.** B: No automatic return mechanism exists. C: No "rescue tool" exists, would violate self-sovereignty. D: No tax mechanism exists at protocol level.
 - **Exam-takeaway.** Self-custody is unforgiving by design. Bitcoin trades reversibility for sovereignty.
 
 **Q2. Answer: C**
 - **Why C is correct.** Nakamoto consensus: nodes accept the first valid block, but switch chains when a competing chain accumulates more cumulative Proof-of-Work (Nakamoto, 2008, §5).
-- **Why others are wrong.** A: Rejecting both halts consensus. B: Hash value is irrelevant; cumulative work decides. D: There is no peer poll — work decides, not opinion.
+- **Why others are wrong.** A: Rejecting both halts consensus. B: Hash value is irrelevant; cumulative work decides. D: There is no peer poll, work decides, not opinion.
 - **Exam-takeaway.** "Longest chain" is a shorthand. Properly: "greatest cumulative Proof-of-Work."
 
 **Q3. Answer: A**
 - **Why A is correct.** A 2-of-3 multi-sig requires any 2 signatures. Singapore + recovery-service = 2 valid signers, satisfying the script. The frozen NYC key is irrelevant.
-- **Why others are wrong.** B: 2 of 3 are still available — not permanently blocked. C: No protocol-level delay. D: Multi-sig is enforced by Bitcoin Script, not by courts.
-- **Exam-takeaway.** Multi-sig "M of N" means *any* M of the N keys can sign — survives loss/seizure of N-M keys.
+- **Why others are wrong.** B: 2 of 3 are still available, not permanently blocked. C: No protocol-level delay. D: Multi-sig is enforced by Bitcoin Script, not by courts.
+- **Exam-takeaway.** Multi-sig "M of N" means *any* M of the N keys can sign, survives loss/seizure of N-M keys.
 
 **Q4. Answer: D**
 - **Why D is correct.** Bitcoin's mining is decentralized across 10-12 significant pools and thousands of solo miners. One pool offline = roughly that pool's share of hashrate paused, but blocks continue.
 - **Why others are wrong.** A: No failover relay exists. B: The Bitcoin Foundation has no operational mining role. C: Exchanges are not miners.
-- **Exam-takeaway.** Decentralization isn't aesthetic — it's the survival property that lets the network shrug off pool-level outages.
+- **Exam-takeaway.** Decentralization isn't aesthetic, it's the survival property that lets the network shrug off pool-level outages.
 
 **Q5. Answer: C**
-- **Why C is correct.** Possessing the seed phrase IS the credential. Anyone who reads it (including the finder) controls the wallet. Even "checking the balance" via an explorer is fine — but importing it into a wallet is theft.
+- **Why C is correct.** Possessing the seed phrase IS the credential. Anyone who reads it (including the finder) controls the wallet. Even "checking the balance" via an explorer is fine, but importing it into a wallet is theft.
 - **Why others are wrong.** A: Theft. B: Doxxing creates more attack surface. D: Encourages interaction with credentials that aren't yours.
-- **Exam-takeaway.** "Seed phrase = bearer credential" — never share, never transcribe to digital, never interact with someone else's.
+- **Exam-takeaway.** "Seed phrase = bearer credential", never share, never transcribe to digital, never interact with someone else's.
 
 **Q6. Answer: C**
 - **Why C is correct.** Nodes select the chain with the greatest cumulative work, not the literal block count (Antonopoulos, *Mastering Bitcoin*, Ch. 10). A shorter chain with higher difficulty per block could outrank a longer one in extreme adjustment scenarios.
 - **Why others are wrong.** A: Block count alone is wrong in difficulty-transition edge cases. B: Tx count is irrelevant. D: Developers don't pick chains.
-- **Exam-takeaway.** "Cumulative work" is the rigorous wording — common CBSA distinction.
+- **Exam-takeaway.** "Cumulative work" is the rigorous wording, common CBSA distinction.
 
 **Q7. Answer: A**
 - **Why A is correct.** For a $5 transaction, the cost of waiting 60 min exceeds the cost of a tiny double-spend risk. Real-world merchants accept 0/1-conf for small amounts; major exchanges require 3-6 confirmations for large deposits.
@@ -518,7 +518,7 @@ D. Government seizure of self-custodied cold storage
 
 **Q8. Answer: D**
 - **Why D is correct.** 0 confirmations means the tx exists in mempool (broadcast and accepted by relay rules) but no block has yet included it (Bitcoin Core docs).
-- **Why others are wrong.** A: Invalid txs are rejected, not shown with 0 conf. B: 0 conf is not "confirmed and final" — that requires ≥ 1 block. C: An invalid block wouldn't be visible to the explorer this way.
+- **Why others are wrong.** A: Invalid txs are rejected, not shown with 0 conf. B: 0 conf is not "confirmed and final", that requires ≥ 1 block. C: An invalid block wouldn't be visible to the explorer this way.
 - **Exam-takeaway.** Mempool != chain. Confirmation count = number of blocks including or built on top of the block containing the tx.
 
 **Q9. Answer: A**
@@ -527,23 +527,23 @@ D. Government seizure of self-custodied cold storage
 - **Exam-takeaway.** Fee rate (sats/vByte) is THE variable. Tools: mempool.space, bitcoinfees.earn.com.
 
 **Q10. Answer: D**
-- **Why D is correct.** RBF (Replace-By-Fee, BIP-125, Suhas Daftuar, 2015) re-broadcasts the same logical transaction with a higher fee — miners prefer the more profitable replacement.
-- **Why others are wrong.** A: Confirmed txs are irreversible (absent reorg). B: Recipient cooperation isn't required, but the funds still go to the originally intended output — RBF isn't a "refund" mechanism. C: RBF cannot redirect a confirmed tx output.
+- **Why D is correct.** RBF (Replace-By-Fee, BIP-125, Suhas Daftuar, 2015) re-broadcasts the same logical transaction with a higher fee, miners prefer the more profitable replacement.
+- **Why others are wrong.** A: Confirmed txs are irreversible (absent reorg). B: Recipient cooperation isn't required, but the funds still go to the originally intended output, RBF isn't a "refund" mechanism. C: RBF cannot redirect a confirmed tx output.
 - **Exam-takeaway.** RBF only works pre-confirmation. Once mined, only a deep reorg (vanishingly rare) can change a tx.
 
 **Q11. Answer: B**
 - **Why B is correct.** Majority hashrate enables censorship (refusing to mine specific txs) and double-spending of THE ATTACKER'S OWN unconfirmed/recent transactions. Already-confirmed txs deeper than the reorg depth are safe.
-- **Why others are wrong.** A: Confirmed history is exponentially harder to rewrite with depth — not arbitrary theft. C: Inflation requires changing consensus rules, not just hashrate. D: Derivation algorithms are consensus, not hashrate-controlled.
+- **Why others are wrong.** A: Confirmed history is exponentially harder to rewrite with depth, not arbitrary theft. C: Inflation requires changing consensus rules, not just hashrate. D: Derivation algorithms are consensus, not hashrate-controlled.
 - **Exam-takeaway.** 51% attack ≠ omnipotence. It enables censorship + recent double-spend, NOT theft of arbitrary balances or supply inflation.
 
 **Q12. Answer: C**
-- **Why C is correct.** With one device lost, the wallet is now effectively a "stuck" 5-of-6 — risky because losing one more crosses below the threshold. The correct action: spend everything to a NEW 5-of-7 with a fresh replacement key, performed while 6 working signers remain.
-- **Why others are wrong.** A: Reduces to single-sig — terrible security. B: Public disclosure is operational malpractice. D: Waiting risks losing another key.
+- **Why C is correct.** With one device lost, the wallet is now effectively a "stuck" 5-of-6, risky because losing one more crosses below the threshold. The correct action: spend everything to a NEW 5-of-7 with a fresh replacement key, performed while 6 working signers remain.
+- **Why others are wrong.** A: Reduces to single-sig, terrible security. B: Public disclosure is operational malpractice. D: Waiting risks losing another key.
 - **Exam-takeaway.** Multi-sig key rotation = spend to a new quorum. Don't tolerate degraded states.
 
 **Q13. Answer: B**
 - **Why B is correct (anti-fragile hashrate).** China's June 2021 ban dropped global hashrate ~55%. Within 4 months it had fully recovered as miners relocated to Texas, Kazakhstan, Canada (US share rose from ~5% in 2020 to ~40% by 2024).
-- **Why others are wrong.** A: Mining is geographically mobile — not permanently centralized. C: ASICs are physically movable. D: The Bitcoin Foundation has no operational role.
+- **Why others are wrong.** A: Mining is geographically mobile, not permanently centralized. C: ASICs are physically movable. D: The Bitcoin Foundation has no operational role.
 - **Exam-takeaway.** Anti-fragile = "gains from disorder" (Taleb, 2012). Hashrate migrates faster than regulators can act.
 
 **Q14. Answer: A**
@@ -554,7 +554,7 @@ D. Government seizure of self-custodied cold storage
 **Q15. Answer: C**
 - **Why C is correct.** Bitcoin balances are sums of UTXOs. Coin selection must build a tx whose inputs cover output + fee. If the only UTXO is barely-larger than 0.3 BTC, fee may push the total over the available balance.
 - **Why others are wrong.** A: Wallet bug is unlikely. B: Broadcast happens after construction; this is pre-broadcast. D: Bitcoin has no address blacklist.
-- **Exam-takeaway.** UTXO consolidation and coin control mitigate this — see Module 4 wallet best practices.
+- **Exam-takeaway.** UTXO consolidation and coin control mitigate this, see Module 4 wallet best practices.
 
 **Q16. Answer: A**
 - **Why A is correct.** Native SegWit (BIP-173, Bech32) addresses begin with `bc1q` on mainnet, `tb1q` on testnet.
@@ -567,13 +567,13 @@ D. Government seizure of self-custodied cold storage
 - **Exam-takeaway.** New Taproot wallets default to `bc1p`. Always check the witness version when troubleshooting incompatible-payer issues.
 
 **Q18. Answer: C**
-- **Why C is correct.** SegWit (Lombrozo, Lau, Wuille; BIP-141, activated Aug 24, 2017) moved the signature into a separate witness field, fixing transaction malleability and giving witness bytes a 4× discount when computing block "weight" — effectively expanding capacity.
+- **Why C is correct.** SegWit (Lombrozo, Lau, Wuille; BIP-141, activated Aug 24, 2017) moved the signature into a separate witness field, fixing transaction malleability and giving witness bytes a 4× discount when computing block "weight", effectively expanding capacity.
 - **Why others are wrong.** A: The 21M cap is consensus, not changeable by SegWit. B: Schnorr came later with Taproot (2021). D: Bitcoin Script remains non-Turing-complete by design.
 - **Exam-takeaway.** SegWit's two legacies: (1) malleability fix unlocking Lightning, (2) witness discount expanding effective block size to ~4 MB weight.
 
 **Q19. Answer: B**
 - **Why B is correct (signature + pubkey).** P2PKH (`Pay to Public Key Hash`) requires the spender to provide `<sig> <pubkey>` such that `HASH160(pubkey) == <pubKeyHash>` AND `CHECKSIG(sig, pubkey)` returns true.
-- **Why others are wrong.** A: Seed phrases never appear in script. C: A SHA-256 preimage is not what the script asks for — and a sig is still required. D: Miners don't sign user spends.
+- **Why others are wrong.** A: Seed phrases never appear in script. C: A SHA-256 preimage is not what the script asks for, and a sig is still required. D: Miners don't sign user spends.
 - **Exam-takeaway.** Stack-based execution: push sig, push pubkey, OP_DUP duplicates pubkey, OP_HASH160 hashes it, compare to expected hash (OP_EQUALVERIFY), then OP_CHECKSIG.
 
 **Q20. Answer: D**
@@ -588,17 +588,17 @@ D. Government seizure of self-custodied cold storage
 
 **Q22. Answer: B**
 - **Why B is correct (off-chain commitments).** Lightning (Poon & Dryja, 2016) opens a 2-of-2 multi-sig channel on-chain, then exchanges signed-but-unbroadcast commitment transactions off-chain. The chain is only touched at open/close.
-- **Why others are wrong.** A: Lightning settles to Bitcoin; doesn't replace it. C: Lightning is permissionless — no permissioned ledger. D: No bank involvement.
-- **Exam-takeaway.** Off-chain ≠ trusted-third-party. Each party can unilaterally close to chain — the cryptography enforces honesty.
+- **Why others are wrong.** A: Lightning settles to Bitcoin; doesn't replace it. C: Lightning is permissionless, no permissioned ledger. D: No bank involvement.
+- **Exam-takeaway.** Off-chain ≠ trusted-third-party. Each party can unilaterally close to chain, the cryptography enforces honesty.
 
 **Q23. Answer: B**
 - **Why B is correct (timelocked broadcast).** Force-close broadcasts the latest signed commitment. A `to_self_delay` (commonly 144-2016 blocks) gives the counterparty time to publish a *justice transaction* if the broadcaster cheated by publishing a stale state.
-- **Why others are wrong.** A: Settlement is NOT immediate — the timelock applies. C: Funds aren't destroyed. D: No court involvement.
+- **Why others are wrong.** A: Settlement is NOT immediate, the timelock applies. C: Funds aren't destroyed. D: No court involvement.
 - **Exam-takeaway.** Force-close = unilateral exit. Cooperative close = no timelock, immediate settlement.
 
 **Q24. Answer: A**
 - **Why A is correct.** HTLC locks each hop under `OP_HASH160 <h> EQUALVERIFY ... OR <pubkey> CHECKSIG OP_CHECKLOCKTIMEVERIFY` semantics. Revealing the preimage at the destination atomically unlocks every hop backward.
-- **Why others are wrong.** B: Routing nodes are NOT trusted — cryptography enforces honesty. C: HTLCs are private to the involved parties (not broadcast). D: No permissioned matrix.
+- **Why others are wrong.** B: Routing nodes are NOT trusted, cryptography enforces honesty. C: HTLCs are private to the involved parties (not broadcast). D: No permissioned matrix.
 - **Exam-takeaway.** HTLC = atomic, trust-minimized multi-hop routing. The preimage acts as a cryptographic "settlement signal."
 
 **Q25. Answer: C**
@@ -607,7 +607,7 @@ D. Government seizure of self-custodied cold storage
 - **Exam-takeaway.** "Travel Rule" applies to VASP-to-VASP, not self-custody-to-self-custody. Compliance solutions: TRP, Sumsub, Notabene.
 
 **Q26. Answer: C**
-- **Why C is correct.** FinCEN guidance (2013, reaffirmed 2019/2024) treats most exchanges as Money Service Businesses — requiring registration, BSA/AML compliance, and SARs.
+- **Why C is correct.** FinCEN guidance (2013, reaffirmed 2019/2024) treats most exchanges as Money Service Businesses, requiring registration, BSA/AML compliance, and SARs.
 - **Why others are wrong.** A: Banks have separate licensing. B: Securities-broker registration applies only if dealing in securities (some crypto products are; many are not). D: Insurance is unrelated.
 - **Exam-takeaway.** US crypto exchange = MSB. The SEC vs CFTC vs FinCEN jurisdictional question is separate (Module 8).
 
@@ -618,22 +618,22 @@ D. Government seizure of self-custodied cold storage
 
 **Q28. Answer: D**
 - **Why D is correct.** MiCA (Regulation (EU) 2023/1114) establishes a unified EU framework for crypto-asset service providers (CASPs), e-money tokens, asset-referenced tokens, and stablecoins. Full applicability: Dec 30, 2024.
-- **Why others are wrong.** A: Mining isn't licensed under MiCA (though energy-disclosure rules apply). B: Taxation remains national. C: MiCA does not mandate KYC for self-custody — controversial proposals were excluded.
+- **Why others are wrong.** A: Mining isn't licensed under MiCA (though energy-disclosure rules apply). B: Taxation remains national. C: MiCA does not mandate KYC for self-custody, controversial proposals were excluded.
 - **Exam-takeaway.** MiCA = EU crypto rulebook. Compare to US's fragmented FinCEN/SEC/CFTC approach.
 
 **Q29. Answer: D**
-- **Why D is correct.** On Jan 10, 2024, the SEC approved 11 spot Bitcoin ETFs (IBIT, FBTC, ARKB, etc.). Within 12 months, IBIT alone accumulated ~$30B AUM — by far the most successful ETF launch in history (by AUM-per-day).
+- **Why D is correct.** On Jan 10, 2024, the SEC approved 11 spot Bitcoin ETFs (IBIT, FBTC, ARKB, etc.). Within 12 months, IBIT alone accumulated ~$30B AUM, by far the most successful ETF launch in history (by AUM-per-day).
 - **Why others are wrong.** A: Approval implies legality, not the opposite. B: Mining is unrelated. C: ETFs don't cap price; if anything, they widen the demand-side institutional channel.
 - **Exam-takeaway.** Spot ETFs = institutional demand channel without the operational complexity of self-custody. Tied directly to Module 9 (Institutional).
 
 **Q30. Answer: A**
 - **Why A is correct.** PoR is a cryptographic attestation that the custodian controls on-chain BTC summing to ≥ customer liabilities. Typically a Merkle-tree proof of user balances + signed wallet addresses.
 - **Why others are wrong.** B: SEC registration is regulatory, not cryptographic. C: SOC 2 is an operational audit, not on-chain proof. D: BTC is not gold-backed.
-- **Exam-takeaway.** PoR proves *reserves*. It does NOT alone prove *solvency* — see Q31.
+- **Exam-takeaway.** PoR proves *reserves*. It does NOT alone prove *solvency*, see Q31.
 
 **Q31. Answer: C**
-- **Why C is correct.** Reserves alone are insufficient — the exchange must also prove total liabilities are ≤ reserves. Without proof of liabilities (audited), a custodian could hide liabilities and show only matching reserves.
-- **Why others are wrong.** A: Block explorers are publicly accessible — not the gap. B: Most PoR is BTC-denominated, not USD. D: Self-controlled wallets are accessible to the custodian.
+- **Why C is correct.** Reserves alone are insufficient, the exchange must also prove total liabilities are ≤ reserves. Without proof of liabilities (audited), a custodian could hide liabilities and show only matching reserves.
+- **Why others are wrong.** A: Block explorers are publicly accessible, not the gap. B: Most PoR is BTC-denominated, not USD. D: Self-controlled wallets are accessible to the custodian.
 - **Exam-takeaway.** Solvency = Reserves ≥ Liabilities. PoR + Proof of Liabilities (audited) = full proof. Mt. Gox and FTX failed because nobody could verify either half.
 
 **Q32. Answer: D**
@@ -668,8 +668,8 @@ D. Government seizure of self-custodied cold storage
 
 **Q38. Answer: C**
 - **Why C is correct.** "Cold" = private keys never touch an internet-connected device, either by airgap (Coldcard, paper wallet) or by deep-storage with physical isolation.
-- **Why others are wrong.** A: UI is irrelevant. B: Cost varies — not the defining property. D: Same curve (secp256k1).
-- **Exam-takeaway.** Cold storage is defined by NETWORK ISOLATION, not by device type. A "hardware wallet" is sometimes online (warm) — not all hardware wallets are cold.
+- **Why others are wrong.** A: UI is irrelevant. B: Cost varies, not the defining property. D: Same curve (secp256k1).
+- **Exam-takeaway.** Cold storage is defined by NETWORK ISOLATION, not by device type. A "hardware wallet" is sometimes online (warm), not all hardware wallets are cold.
 
 **Q39. Answer: C**
 - **Why C is correct.** CCSS Level III + institutional best practice require at least annual recovery drills with documented procedure and tested signers.
@@ -683,7 +683,7 @@ D. Government seizure of self-custodied cold storage
 
 **Q41. Answer: C**
 - **Why C is correct.** BIP-39 §5: a passphrase combines with the seed via PBKDF2 to derive a totally distinct master key. Different passphrase → different wallet entirely. Powerful but easy to lose.
-- **Why others are wrong.** A: Not redundant — it changes the derivation. B: Not a contact field. D: Not a PIN.
+- **Why others are wrong.** A: Not redundant, it changes the derivation. B: Not a contact field. D: Not a PIN.
 - **Exam-takeaway.** Passphrase = "25th word" = duress-wallet capability + plausible deniability. But losing it = losing access.
 
 **Q42. Answer: D**
@@ -698,7 +698,7 @@ D. Government seizure of self-custodied cold storage
 
 **Q44. Answer: D**
 - **Why D is correct.** Channel splicing (proposed 2022, deployed in major implementations 2024) lets users add or remove channel capacity with a single on-chain tx, without losing the channel's payment history or routing reputation.
-- **Why others are wrong.** A: Splice does touch chain — not "without on-chain settlement." B: Cross-chain is a different thing (Atomic Swaps). C: Lightning doesn't have its own blocks.
+- **Why others are wrong.** A: Splice does touch chain, not "without on-chain settlement." B: Cross-chain is a different thing (Atomic Swaps). C: Lightning doesn't have its own blocks.
 - **Exam-takeaway.** Splicing = capacity flexibility without channel re-open friction.
 
 **Q45. Answer: B**
@@ -708,7 +708,7 @@ D. Government seizure of self-custodied cold storage
 
 **Q46. Answer: C**
 - **Why C is correct.** Post-halving, daily issuance is cut in half while demand (institutional inflows, ETF AUM, retail) typically grows. The historical pattern: 12-18 months after each halving, a major price-discovery cycle has occurred (2012-13, 2016-17, 2020-21, 2024-25).
-- **Why others are wrong.** A: History suggests halvings are NOT irrelevant. B: Halvings have NOT caused crashes in any cycle. D: There's no halt at the 5th halving — they continue until ~2140.
+- **Why others are wrong.** A: History suggests halvings are NOT irrelevant. B: Halvings have NOT caused crashes in any cycle. D: There's no halt at the 5th halving, they continue until ~2140.
 - **Exam-takeaway.** Halving thesis is observational, not deterministic. Past performance is not a guarantee, but the supply-shock dynamic is mechanically real.
 
 **Q47. Answer: B**
@@ -737,7 +737,7 @@ D. Government seizure of self-custodied cold storage
 
 | Score | Verdict |
 |-------|---------|
-| 46-50 | Excellent — proceed to Final Mock |
+| 46-50 | Excellent, proceed to Final Mock |
 | 40-45 | On track. Review wrong answers, then continue Modules 8-10 |
 | 30-39 | Re-study weak modules; redo this exam in 1 week |
 | <30 | Revisit Modules 1-7 in full |

@@ -37,10 +37,10 @@ D. `infinite`
 
 ### Q4. Animating `top: 100px` in CSS triggers which browser rendering stage?
 
-A. Composite only — it's a GPU-safe animation
-B. Paint only — no layout recalculation
-C. Layout recalculation — a slow operation that should be avoided
-D. None — CSS cannot animate the top property
+A. Composite only, it's a GPU-safe animation
+B. Paint only, no layout recalculation
+C. Layout recalculation, a slow operation that should be avoided
+D. None, CSS cannot animate the top property
 
 ---
 
@@ -127,10 +127,10 @@ D. Apply the animation to alternating child elements in a list
 
 ### Q14. Which CSS property allows negative values for `animation-delay`?
 
-A. No — negative delays are not valid CSS
-B. Yes — a negative delay starts the animation partway through, as if it had already been playing
-C. Yes — a negative delay plays the animation in reverse during the delay period
-D. Yes — a negative delay causes the animation to play at double speed to catch up
+A. No, negative delays are not valid CSS
+B. Yes, a negative delay starts the animation partway through, as if it had already been playing
+C. Yes, a negative delay plays the animation in reverse during the delay period
+D. Yes, a negative delay causes the animation to play at double speed to catch up
 
 ---
 
@@ -165,7 +165,7 @@ D. Text content with font embedding
 
 A. `ease-in`
 B. `linear`
-C. `steps(8, start)` — where 8 is the number of frames
+C. `steps(8, start)`, where 8 is the number of frames
 D. `ease-step`
 
 ---
@@ -208,7 +208,7 @@ D. The animation to play at negative speed (backward in real time)
 
 ### Q23. A web developer is implementing a loading animation. The animation is a Lottie file at 85KB. What should they do before shipping?
 
-A. Nothing — 85KB is within the acceptable range for production
+A. Nothing, 85KB is within the acceptable range for production
 B. Run it through the LottieFiles optimizer to target under 50KB, then re-test visual quality
 C. Convert it to a CSS animation to eliminate the Lottie runtime dependency
 D. Use the canvas renderer instead of svg to reduce file size
@@ -227,28 +227,28 @@ D. GSAP with a Timeline that plays different segments based on event type
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — forwards: holds final keyframe state after animation ends
-Q2:  C — 'both' applies backwards behavior (delay) + forwards behavior (after)
-Q3:  D — 'infinite' for endless looping
-Q4:  C — top/left trigger layout recalculation (expensive)
-Q5:  B — will-change: transform promotes to GPU compositor layer
-Q6:  B — Lottie solves the AE animation → mobile/web problem (size + scalability)
-Q7:  C — 50KB is the LottieFiles best practice maximum for web production
-Q8:  B — Bodymovin exports AE compositions as Lottie JSON
-Q9:  D — SVG renderer: best quality, scalable, accessible (DOM-based)
-Q10: B — Rive has a real-time state machine that responds to runtime inputs
-Q11: B — Responds to OS-level "Reduce Motion" accessibility setting
-Q12: C — WCAG 2.1 guideline 2.3.3 is AAA level
-Q13: B — alternate: plays forward odd iterations, backward even iterations
-Q14: B — Negative delay starts the animation partway through (as if already playing)
-Q15: B — paused freezes at current frame; 'running' resumes it
-Q16: B — goToAndStop(50, true): go to frame 50 (true = frame units) and stop
-Q17: C — AE 3D layers (z-depth, 3D camera) are NOT supported in Lottie export
-Q18: C — steps(8, start): 8 discrete steps, instant frame jumps (sprite sheet)
-Q19: B — Boolean input: inputs.find(i => i.name === 'IsHovered').value = true
-Q20: B — Too many will-change elements consume excess GPU memory
-Q21: B — Optimizer reduces keyframe precision and removes redundant data (lossy)
-Q22: A — reverse: plays from last keyframe to first keyframe
-Q23: B — Run through LottieFiles optimizer to target <50KB, verify quality
-Q24: C — Rive with state machine + Boolean inputs for interactive icon button
+Q1:  B, forwards: holds final keyframe state after animation ends
+Q2:  C, 'both' applies backwards behavior (delay) + forwards behavior (after)
+Q3:  D, 'infinite' for endless looping
+Q4:  C, top/left trigger layout recalculation (expensive)
+Q5:  B, will-change: transform promotes to GPU compositor layer
+Q6:  B, Lottie solves the AE animation → mobile/web problem (size + scalability)
+Q7:  C, 50KB is the LottieFiles best practice maximum for web production
+Q8:  B, Bodymovin exports AE compositions as Lottie JSON
+Q9:  D, SVG renderer: best quality, scalable, accessible (DOM-based)
+Q10: B, Rive has a real-time state machine that responds to runtime inputs
+Q11: B, Responds to OS-level "Reduce Motion" accessibility setting
+Q12: C, WCAG 2.1 guideline 2.3.3 is AAA level
+Q13: B, alternate: plays forward odd iterations, backward even iterations
+Q14: B, Negative delay starts the animation partway through (as if already playing)
+Q15: B, paused freezes at current frame; 'running' resumes it
+Q16: B, goToAndStop(50, true): go to frame 50 (true = frame units) and stop
+Q17: C, AE 3D layers (z-depth, 3D camera) are NOT supported in Lottie export
+Q18: C, steps(8, start): 8 discrete steps, instant frame jumps (sprite sheet)
+Q19: B, Boolean input: inputs.find(i => i.name === 'IsHovered').value = true
+Q20: B, Too many will-change elements consume excess GPU memory
+Q21: B, Optimizer reduces keyframe precision and removes redundant data (lossy)
+Q22: A, reverse: plays from last keyframe to first keyframe
+Q23: B, Run through LottieFiles optimizer to target <50KB, verify quality
+Q24: C, Rive with state machine + Boolean inputs for interactive icon button
 ```

@@ -1,7 +1,7 @@
-# 🧪 Final Mock Exam — AWS Certified Machine Learning Specialty (MLS-C01)
+# 🧪 Final Mock Exam, AWS Certified Machine Learning Specialty (MLS-C01)
 
 > **Conditions:** Set a **180-minute** timer. **65 questions.** **REAL exam length & time.** No notes, no Google, no breaks. This is your dress rehearsal.
-> **Pass mark:** 49/65 (~75%) — mirrors the real 750/1000 scaled score.
+> **Pass mark:** 49/65 (~75%), mirrors the real 750/1000 scaled score.
 > **When to take it:** 1–2 days before the real exam.
 
 ---
@@ -38,7 +38,7 @@ B. Pipe mode + RecordIO-protobuf
 C. Increase memory
 D. Athena Federated
 
-### 6. Sub-100ms feature lookups AND historical training snapshots — best design:
+### 6. Sub-100ms feature lookups AND historical training snapshots, best design:
 A. Redis cluster
 B. SageMaker Feature Store online + offline
 C. DynamoDB only
@@ -263,7 +263,7 @@ D. Config
 ### 43. Why is "GPU at 25% utilisation during training" typically NOT a GPU issue?
 A. Too much GPU memory
 B. Network oversupply
-C. Data loader / I/O bottleneck — fix with FSx Lustre, Pipe mode, more loader workers
+C. Data loader / I/O bottleneck, fix with FSx Lustre, Pipe mode, more loader workers
 D. Model too small
 
 ### 44. Target encoding applied to the ENTIRE dataset before train/val split:
@@ -420,137 +420,137 @@ D. CloudWatch Metrics
 
 ---
 
-## Detailed answer rationales (selected — full set inferable from Modules)
+## Detailed answer rationales (selected, full set inferable from Modules)
 
-**Q1. B — Random Cut Forest.** Unsupervised anomaly detection on tabular/streaming data. Same answer as Module 4.
+**Q1. B, Random Cut Forest.** Unsupervised anomaly detection on tabular/streaming data. Same answer as Module 4.
 
-**Q2. C — Firehose with format conversion.** Built-in JSON→Parquet via Glue table schema; no code.
+**Q2. C, Firehose with format conversion.** Built-in JSON→Parquet via Glue table schema; no code.
 
-**Q3. B — PR-AUC, recall, F1.** On 0.2% positives, accuracy/ROC-AUC mislead.
+**Q3. B, PR-AUC, recall, F1.** On 0.2% positives, accuracy/ROC-AUC mislead.
 
-**Q4. B — Spot + checkpointing.** Up to 90% off; the standard cost lever.
+**Q4. B, Spot + checkpointing.** Up to 90% off; the standard cost lever.
 
-**Q5. B — Pipe mode + RecordIO-protobuf.** Streams data via FIFO; no upfront disk copy.
+**Q5. B, Pipe mode + RecordIO-protobuf.** Streams data via FIFO; no upfront disk copy.
 
-**Q6. B — Feature Store online + offline.** Dual-mode store; the MLS-C01 canonical answer.
+**Q6. B, Feature Store online + offline.** Dual-mode store; the MLS-C01 canonical answer.
 
-**Q7. B — Clarify pre-training bias.** Surfaces dataset disparities before any training.
+**Q7. B, Clarify pre-training bias.** Surfaces dataset disparities before any training.
 
-**Q8. B — SMMP.** 70B model needs model parallelism — tensor + pipeline + sharded-data.
+**Q8. B SMMP.** 70B model needs model parallelism tensor + pipeline + sharded-data.
 
-**Q9. B — Inferentia2.** Cost-optimal LLM inference chip; compiled with Neuron.
+**Q9. B, Inferentia2.** Cost-optimal LLM inference chip; compiled with Neuron.
 
-**Q10. B — SSE-KMS customer-managed key.** Per-request CloudTrail audit only with KMS + customer-managed.
+**Q10. B, SSE-KMS customer-managed key.** Per-request CloudTrail audit only with KMS + customer-managed.
 
-**Q11. A — Macie.** PII discovery in S3.
+**Q11. A, Macie.** PII discovery in S3.
 
-**Q12. B — Enable EFA.** HPC-grade networking for fast all-reduce.
+**Q12. B, Enable EFA.** HPC-grade networking for fast all-reduce.
 
-**Q13. B — Factorization Machines.** Sparse high-dim CTR built-in.
+**Q13. B, Factorization Machines.** Sparse high-dim CTR built-in.
 
-**Q14. C — Bayesian.** Learns from prior trials; fewest jobs to reach good HPs.
+**Q14. C, Bayesian.** Learns from prior trials; fewest jobs to reach good HPs.
 
-**Q15. A — IP Insights.** Purpose-built for user-IP anomaly detection.
+**Q15. A, IP Insights.** Purpose-built for user-IP anomaly detection.
 
-**Q16. A — SageMaker Projects.** Templated MLOps repo with CodeCommit + CodePipeline + Pipelines + Registry + endpoints.
+**Q16. A, SageMaker Projects.** Templated MLOps repo with CodeCommit + CodePipeline + Pipelines + Registry + endpoints.
 
-**Q17. B — DeepAR.** Multi-series probabilistic forecasting (or Amazon Forecast managed).
+**Q17. B, DeepAR.** Multi-series probabilistic forecasting (or Amazon Forecast managed).
 
-**Q18. C — Parquet.** Columnar + compressed + splittable + schema-aware = ML default.
+**Q18. C, Parquet.** Columnar + compressed + splittable + schema-aware = ML default.
 
-**Q19. B — Snowball Edge cluster.** 2 PB / 8 weeks impractical online; ship disks.
+**Q19. B, Snowball Edge cluster.** 2 PB / 8 weeks impractical online; ship disks.
 
-**Q20. B — BYO container in ECR.** Custom Dockerfile path.
+**Q20. B, BYO container in ECR.** Custom Dockerfile path.
 
-**Q21. B — Parquet + partition + project.** 5-50× Athena cost reduction.
+**Q21. B, Parquet + partition + project.** 5-50× Athena cost reduction.
 
-**Q22. B — Script mode with PyTorch container.** AWS-managed container + your `train.py`; no Dockerfile.
+**Q22. B, Script mode with PyTorch container.** AWS-managed container + your `train.py`; no Dockerfile.
 
-**Q23. C — Learned embedding (or Object2Vec).** Dense vectors; 40K one-hot would blow up.
+**Q23. C, Learned embedding (or Object2Vec).** Dense vectors; 40K one-hot would blow up.
 
-**Q24. A — Visual data prep w/ 300+ transforms; Pipelines export.** Data Wrangler's defining capabilities.
+**Q24. A, Visual data prep w/ 300+ transforms; Pipelines export.** Data Wrangler's defining capabilities.
 
-**Q25. B — Comprehend `DetectSentiment`.** Managed; lowest overhead.
+**Q25. B, Comprehend `DetectSentiment`.** Managed; lowest overhead.
 
-**Q26. C — OpenSearch Serverless.** Default Bedrock KB vector store.
+**Q26. C, OpenSearch Serverless.** Default Bedrock KB vector store.
 
-**Q27. B — Model Bias monitor (Clarify).** Production bias drift detection.
+**Q27. B, Model Bias monitor (Clarify).** Production bias drift detection.
 
-**Q28. C — Walk-forward / expanding-window.** Time order preserved; no future leakage.
+**Q28. C, Walk-forward / expanding-window.** Time order preserved; no future leakage.
 
-**Q29. A — Shadow variant.** Real traffic mirrored to new model without user impact.
+**Q29. A, Shadow variant.** Real traffic mirrored to new model without user impact.
 
-**Q30. B — Multi-Model Endpoint.** Many models per endpoint, loaded on demand.
+**Q30. B, Multi-Model Endpoint.** Many models per endpoint, loaded on demand.
 
-**Q31. A — Monitor → EventBridge → Lambda → Pipeline.** Standard retrain-on-drift chain.
+**Q31. A, Monitor → EventBridge → Lambda → Pipeline.** Standard retrain-on-drift chain.
 
-**Q32. C — Hyperband.** Prunes losing DL trials early.
+**Q32. C, Hyperband.** Prunes losing DL trials early.
 
-**Q33. B — Recall (or F-beta β>1).** Recall = TP / (TP+FN); maximising it minimises FN.
+**Q33. B, Recall (or F-beta β>1).** Recall = TP / (TP+FN); maximising it minimises FN.
 
-**Q34. A — Bedrock Model Evaluation + ROUGE.** ROUGE for summarisation; built-in eval job.
+**Q34. A, Bedrock Model Evaluation + ROUGE.** ROUGE for summarisation; built-in eval job.
 
-**Q35. B — Custom IAM role + bucket policy.** Defence in depth.
+**Q35. B, Custom IAM role + bucket policy.** Defence in depth.
 
-**Q36. B — `enable_network_isolation=True` + no-NAT subnets.** Strongest training-job isolation.
+**Q36. B, `enable_network_isolation=True` + no-NAT subnets.** Strongest training-job isolation.
 
-**Q37. A — S3 Standard.** Active multi-times-per-week data is hot.
+**Q37. A, S3 Standard.** Active multi-times-per-week data is hot.
 
-**Q38. B — PrivateLink + Direct Connect.** On-prem-only endpoint pattern.
+**Q38. B, PrivateLink + Direct Connect.** On-prem-only endpoint pattern.
 
-**Q39. B — Lifecycle config idle shutdown.** Standard Studio cost-control.
+**Q39. B, Lifecycle config idle shutdown.** Standard Studio cost-control.
 
-**Q40. A — AWS Config rule.** Continuous compliance check.
+**Q40. A, AWS Config rule.** Continuous compliance check.
 
-**Q41. C — Async inference.** 1 GB payload + up to 1 h.
+**Q41. C, Async inference.** 1 GB payload + up to 1 h.
 
-**Q42. B — X-Ray.** Distributed tracing across services.
+**Q42. B, X-Ray.** Distributed tracing across services.
 
-**Q43. C — Data loader / I/O bottleneck.** Almost always the GPU-underutilisation root cause.
+**Q43. C, Data loader / I/O bottleneck.** Almost always the GPU-underutilisation root cause.
 
-**Q44. B — Target leakage.** Inflates validation metrics; compute target encoding inside CV folds.
+**Q44. B, Target leakage.** Inflates validation metrics; compute target encoding inside CV folds.
 
-**Q45. B — Comprehend Custom Classifier.** Managed; minimal MLOps.
+**Q45. B, Comprehend Custom Classifier.** Managed; minimal MLOps.
 
-**Q46. B — Comprehend Medical.** Medical NER + HIPAA-eligible.
+**Q46. B, Comprehend Medical.** Medical NER + HIPAA-eligible.
 
-**Q47. A — Translate + Custom Terminology.** Force specific brand terms.
+**Q47. A, Translate + Custom Terminology.** Force specific brand terms.
 
-**Q48. A — Textract `AnalyzeExpense`.** Purpose-built for invoices.
+**Q48. A, Textract `AnalyzeExpense`.** Purpose-built for invoices.
 
-**Q49. B — Lex.** Intent+slot for predetermined flows.
+**Q49. B, Lex.** Intent+slot for predetermined flows.
 
-**Q50. B — Bedrock KB + Claude + RetrieveAndGenerate.** Open-ended Q&A grounded in docs.
+**Q50. B, Bedrock KB + Claude + RetrieveAndGenerate.** Open-ended Q&A grounded in docs.
 
-**Q51. B — Bedrock Agent.** Multi-step tools + KB.
+**Q51. B, Bedrock Agent.** Multi-step tools + KB.
 
-**Q52. C — Batch Inference.** ~50% off for offline.
+**Q52. C, Batch Inference.** ~50% off for offline.
 
-**Q53. C — Contextual grounding.** Verifies output supported by retrieved docs.
+**Q53. C, Contextual grounding.** Verifies output supported by retrieved docs.
 
-**Q54. B — SageMaker Model Card.** Standard governance documentation.
+**Q54. B, SageMaker Model Card.** Standard governance documentation.
 
-**Q55. C — Clarify SHAP local.** Per-prediction feature attribution.
+**Q55. C, Clarify SHAP local.** Per-prediction feature attribution.
 
-**Q56. B — Data Quality monitor.** Input distribution drift.
+**Q56. B, Data Quality monitor.** Input distribution drift.
 
-**Q57. B — HPC-grade networking for fast all-reduce.** EFA's defining feature.
+**Q57. B, HPC-grade networking for fast all-reduce.** EFA's defining feature.
 
-**Q58. B — Trainium.** Cost-optimal AWS training chip.
+**Q58. B, Trainium.** Cost-optimal AWS training chip.
 
-**Q59. B — Ground Truth + active learning.** Auto-labels easy examples; humans focus on hard ones.
+**Q59. B, Ground Truth + active learning.** Auto-labels easy examples; humans focus on hard ones.
 
-**Q60. B — Retrieves source docs at query time.** RAG grounds answers in retrieved passages.
+**Q60. B, Retrieves source docs at query time.** RAG grounds answers in retrieved passages.
 
-**Q61. B — Blue/Green + CloudWatch alarm rollback.** Built-in SageMaker auto-rollback pattern.
+**Q61. B, Blue/Green + CloudWatch alarm rollback.** Built-in SageMaker auto-rollback pattern.
 
-**Q62. C — RegisterModel.** Dedicated Pipelines step for Model Registry.
+**Q62. C, RegisterModel.** Dedicated Pipelines step for Model Registry.
 
-**Q63. B — AWS RAM.** Cross-account Model Package sharing.
+**Q63. B, AWS RAM.** Cross-account Model Package sharing.
 
-**Q64. B — LR too high or no gradient clipping.** Classic transformer training instability.
+**Q64. B, LR too high or no gradient clipping.** Classic transformer training instability.
 
-**Q65. B — SageMaker Inference Recommender.** Auto-benchmarks instance types for cost/latency targets.
+**Q65. B, SageMaker Inference Recommender.** Auto-benchmarks instance types for cost/latency targets.
 
 ---
 
@@ -558,9 +558,9 @@ D. CloudWatch Metrics
 
 | Raw Score | Approx. Scaled | Verdict |
 |-----------|----------------|---------|
-| 60-65 | 900+ | 🏆 You're more than ready — go book the exam |
+| 60-65 | 900+ | 🏆 You're more than ready, go book the exam |
 | 49-59 | 750-890 | ✅ Pass; review weak spots; book the exam this week |
-| 39-48 | 600-740 | ⚠️ Borderline — wait a few days, drill flashcards, retest |
+| 39-48 | 600-740 | ⚠️ Borderline, wait a few days, drill flashcards, retest |
 | <39 | <600 | 🔁 Re-study weak modules; don't book yet |
 
 ---

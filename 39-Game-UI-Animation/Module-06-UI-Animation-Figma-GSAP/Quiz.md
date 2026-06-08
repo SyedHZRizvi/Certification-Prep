@@ -1,8 +1,8 @@
 ---
-title: "Module 6 Quiz: UI Animation — Figma, GSAP & Framer Motion"
+title: "Module 6 Quiz: UI Animation, Figma, GSAP & Framer Motion"
 ---
 
-# 🧪 Module 6 Quiz: UI Animation — Figma, GSAP & Framer Motion
+# 🧪 Module 6 Quiz: UI Animation, Figma, GSAP & Framer Motion
 
 > 24 questions. Answer all before checking the key.
 
@@ -154,19 +154,19 @@ D. GPU-composited layout calculations using the CSS Layout Worklet API
 
 ### Q17. For a UI modal that should appear with a gentle scale-and-fade entrance, the BEST ease choice is:
 
-A. `elastic.out(1, 0.3)` — springy and bouncy
-B. `power2.out` — starts fast, ends slow, feels deliberate
-C. `expo.in` — starts very slow, ends very fast, like a swipe
-D. `linear` — constant speed, mechanical feel
+A. `elastic.out(1, 0.3)`, springy and bouncy
+B. `power2.out`, starts fast, ends slow, feels deliberate
+C. `expo.in`, starts very slow, ends very fast, like a swipe
+D. `linear`, constant speed, mechanical feel
 
 ---
 
 ### Q18. What is the correct Figma easing for an exit animation (element leaving the screen)?
 
-A. Ease In (starts slow, ends fast) — the element accelerates out
-B. Ease Out (starts fast, ends slow) — the element decelerates as it exits
-C. Spring — the element bounces as it leaves
-D. Linear — consistent speed conveys professionalism
+A. Ease In (starts slow, ends fast), the element accelerates out
+B. Ease Out (starts fast, ends slow), the element decelerates as it exits
+C. Spring, the element bounces as it leaves
+D. Linear, consistent speed conveys professionalism
 
 ---
 
@@ -199,10 +199,10 @@ D. Use ScrollTrigger batch to fire all 12 animations simultaneously
 
 ### Q22. A developer is animating a dropdown menu's height from 0 to `auto`. Which approach is most reliable with GSAP?
 
-A. Animate `height: 0 → height: 'auto'` directly — GSAP handles auto height
+A. Animate `height: 0 → height: 'auto'` directly, GSAP handles auto height
 B. Use GSAP's `height: 0` to measure the full height first, then animate from 0 to the measured pixel value
 C. Use CSS transition: height 0.3s ease on the element; trigger it by adding a class
-D. Animate `max-height: 0 → max-height: 1000px` with ease — GSAP fixes the non-linear timing
+D. Animate `max-height: 0 → max-height: 1000px` with ease, GSAP fixes the non-linear timing
 
 ---
 
@@ -215,7 +215,7 @@ D. Using the same animation duration (0.3 seconds) for every transition regardle
 
 ---
 
-### Q24. Stripe's design philosophy — using animation to communicate engineering quality before any product features are shown — is an example of what UI motion principle?
+### Q24. Stripe's design philosophy using animation to communicate engineering quality before any product features are shown is an example of what UI motion principle?
 
 A. Animation as distraction (draw attention away from weaknesses)
 B. Animation as brand language (motion communicates institutional character before content does)
@@ -227,28 +227,28 @@ D. Animation as accessibility feature (motion helps users understand the interfa
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-Q1:  B — Matching layer names are required for Smart Animate to tween between frames
-Q2:  B — .to() animates to targets; .from() animates FROM specified values to current
-Q3:  A — power2.out: starts fast, ends slow (decelerates / ease-out)
-Q4:  C — 'linear' for constant-speed progress bars and clock hands
-Q5:  B — '-=0.2' creates a 0.2s overlap with the end of the previous animation
-Q6:  C — top/left trigger layout recalculation; transform/opacity do not
-Q7:  C — gsap.to('.el', { x: 200 }) → CSS translateX (GPU compositing)
-Q8:  B — will-change: transform promotes element to GPU compositor layer before animation
-Q9:  B — scrub: true ties animation progress directly to scroll position
-Q10: B — FLIP = First, Last, Invert, Play (Paul Lewis, Google, 2015)
-Q11: B — Flip plugin for animating between different layout states (DOM changes)
-Q12: D — Spring easing in Figma produces physically simulated spring with overshoot
-Q13: B — AnimatePresence enables exit animations when components unmount
-Q14: B — stagger: 0.06 adds 60ms delay between each element's animation start
-Q15: C — GSAP animating SVG linearGradient on rAF loop
-Q16: B — layout prop enables automatic layout animation when size/position changes
-Q17: B — power2.out for modal entrance: deliberate, starts fast, lands gently
-Q18: B — Ease Out for exits: element starts fast and slows as it leaves
-Q19: B — 'top 80%' = top of element reaches 80% from top of viewport
-Q20: B — useScroll + useTransform for scroll-linked animations in Framer Motion
-Q21: B — Single gsap.from('.card', { stagger: 0.05 }) for all 12 cards
-Q22: B — Measure pixel height first; animate from 0 to measured value (GSAP can't tween 'auto')
-Q23: B — Motion tokens as CSS custom properties / design tokens for consistency
-Q24: B — Animation as brand language (Stripe communicates quality through motion)
+Q1:  B, Matching layer names are required for Smart Animate to tween between frames
+Q2:  B, .to() animates to targets; .from() animates FROM specified values to current
+Q3:  A, power2.out: starts fast, ends slow (decelerates / ease-out)
+Q4:  C, 'linear' for constant-speed progress bars and clock hands
+Q5:  B, '-=0.2' creates a 0.2s overlap with the end of the previous animation
+Q6:  C, top/left trigger layout recalculation; transform/opacity do not
+Q7:  C, gsap.to('.el', { x: 200 }) → CSS translateX (GPU compositing)
+Q8:  B, will-change: transform promotes element to GPU compositor layer before animation
+Q9:  B, scrub: true ties animation progress directly to scroll position
+Q10: B, FLIP = First, Last, Invert, Play (Paul Lewis, Google, 2015)
+Q11: B, Flip plugin for animating between different layout states (DOM changes)
+Q12: D, Spring easing in Figma produces physically simulated spring with overshoot
+Q13: B, AnimatePresence enables exit animations when components unmount
+Q14: B, stagger: 0.06 adds 60ms delay between each element's animation start
+Q15: C, GSAP animating SVG linearGradient on rAF loop
+Q16: B, layout prop enables automatic layout animation when size/position changes
+Q17: B, power2.out for modal entrance: deliberate, starts fast, lands gently
+Q18: B, Ease Out for exits: element starts fast and slows as it leaves
+Q19: B, 'top 80%' = top of element reaches 80% from top of viewport
+Q20: B, useScroll + useTransform for scroll-linked animations in Framer Motion
+Q21: B, Single gsap.from('.card', { stagger: 0.05 }) for all 12 cards
+Q22: B, Measure pixel height first; animate from 0 to measured value (GSAP can't tween 'auto')
+Q23: B, Motion tokens as CSS custom properties / design tokens for consistency
+Q24: B, Animation as brand language (Stripe communicates quality through motion)
 ```

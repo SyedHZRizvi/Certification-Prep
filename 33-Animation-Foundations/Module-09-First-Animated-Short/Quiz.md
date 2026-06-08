@@ -7,7 +7,7 @@
 ### Q1. Richard Williams' teaching method began every master class with a bouncing ball exercise because:
 
 A. The bouncing ball is the simplest exercise and serves as a confidence-builder before harder exercises
-B. The bouncing ball contains and demonstrates the entire animation toolkit — squash/stretch, arcs, timing, slow-in/slow-out, follow-through — compressed into one exercise
+B. The bouncing ball contains and demonstrates the entire animation toolkit squash/stretch, arcs, timing, slow-in/slow-out, follow-through compressed into one exercise
 C. Industry recruiters evaluate animators specifically on their bouncing ball before reviewing other work
 D. The bouncing ball was Pixar's preferred first exercise and Williams was a Pixar alumnus
 
@@ -15,19 +15,19 @@ D. The bouncing ball was Pixar's preferred first exercise and Williams was a Pix
 
 ### Q2. In the bouncing ball exercise, drawings should be most closely spaced at which point?
 
-A. At the top of the arc — the ball is farthest from gravity and has the most momentum
-B. At the bottom of the arc — closest to impact, where the ball is fastest
-C. At the top of the arc — the ball is at its slowest, momentarily almost stationary
-D. At the midpoint of each arc — where the ball is at its average speed
+A. At the top of the arc, the ball is farthest from gravity and has the most momentum
+B. At the bottom of the arc, closest to impact, where the ball is fastest
+C. At the top of the arc, the ball is at its slowest, momentarily almost stationary
+D. At the midpoint of each arc, where the ball is at its average speed
 
 ---
 
 ### Q3. When animating a bouncing ball, what must remain constant even as the ball squashes and stretches?
 
 A. The ball's diameter as measured at its widest point
-B. The ball's shape — it should not deviate from a circle by more than 20%
-C. The ball's volume — the total "mass" of the shape must remain the same through deformation
-D. The ball's position in the frame — the center of the ball does not move vertically during squash
+B. The ball's shape, it should not deviate from a circle by more than 20%
+C. The ball's volume, the total "mass" of the shape must remain the same through deformation
+D. The ball's position in the frame, the center of the ball does not move vertically during squash
 
 ---
 
@@ -51,10 +51,10 @@ D. The position where the swinging leg passes the standing leg
 
 ### Q6. In a walk cycle, which body part moves in the opposite direction from the leading leg?
 
-A. The head — it tilts away from the leading leg
-B. The opposite arm — swings forward when the leg opposite it leads
-C. The hips — they rotate opposite to the leg direction
-D. The shoulders — they dip on the same side as the leading leg
+A. The head, it tilts away from the leading leg
+B. The opposite arm, swings forward when the leg opposite it leads
+C. The hips, they rotate opposite to the leg direction
+D. The shoulders, they dip on the same side as the leading leg
 
 ---
 
@@ -62,7 +62,7 @@ D. The shoulders — they dip on the same side as the leading leg
 
 A. A young, energetic character walking with excitement
 B. A character in a hurry who is running late for an appointment
-C. A menacing, deliberate, powerful character — someone threatening
+C. A menacing, deliberate, powerful character, someone threatening
 D. A child skipping playfully through a park
 
 ---
@@ -121,12 +121,12 @@ D. A single bounce with maximum stretch on the downward arc and no recovery
 
 ---
 
-### Q14. An animator's first bouncing ball exercise is described by their instructor as "each bounce is a V-shape path — the ball goes straight down, hits the ground, and shoots straight back up." The primary error is:
+### Q14. An animator's first bouncing ball exercise is described by their instructor as "each bounce is a V-shape path, the ball goes straight down, hits the ground, and shoots straight back up." The primary error is:
 
-A. Volume is not being maintained — the squash is too extreme
+A. Volume is not being maintained, the squash is too extreme
 B. The ball is not following a parabolic arc; it is moving in sharp angular paths instead of smooth curves
-C. The timing is wrong — too many frames at the bottom of the arc
-D. The follow-through is missing — the ball should continue bouncing multiple times
+C. The timing is wrong, too many frames at the bottom of the arc
+D. The follow-through is missing, the ball should continue bouncing multiple times
 
 ---
 
@@ -142,7 +142,7 @@ D. Alternating between large and small to create visual interest
 ### Q16. The self-critique step "Play at half speed" is used to:
 
 A. Match the animation to a slowed reference track for timing corrections
-B. Reveal problems in in-betweens that are invisible at full speed — pops, slides, volume loss
+B. Reveal problems in in-betweens that are invisible at full speed, pops, slides, volume loss
 C. Calculate the correct number of frames needed to complete the scene
 D. Check synchronization between sound and animation
 
@@ -216,56 +216,56 @@ D. The arms trail two frames behind the legs to create overlapping action
 A. Share the work on social media to build an audience before entering the industry
 B. Begin learning 3D software immediately to make the work more industry-ready
 C. Apply the self-critique framework honestly, get feedback from someone unfamiliar with the work, and revise
-D. Move to Module 10 (portfolio) before revising — the important thing is completing the sequence
+D. Move to Module 10 (portfolio) before revising, the important thing is completing the sequence
 
 ---
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B.** The bouncing ball contains and demonstrates the entire animation toolkit compressed into one exercise.
+**Q1, B.** The bouncing ball contains and demonstrates the entire animation toolkit compressed into one exercise.
 
-**Q2 — C.** Drawings cluster at the TOP of the arc where the ball is slowest (momentarily almost stationary). Fewer drawings at the bottom (fastest).
+**Q2, C.** Drawings cluster at the TOP of the arc where the ball is slowest (momentarily almost stationary). Fewer drawings at the bottom (fastest).
 
-**Q3 — C.** Volume (mass) must remain constant through squash and stretch.
+**Q3, C.** Volume (mass) must remain constant through squash and stretch.
 
-**Q4 — C.** Bowling ball = most frames per bounce (very slow due to extreme weight), smallest bounce heights (little elastic energy return).
+**Q4, C.** Bowling ball = most frames per bounce (very slow due to extreme weight), smallest bounce heights (little elastic energy return).
 
-**Q5 — A.** Contact position = foot touching the ground as it lands, body at its lowest point.
+**Q5, A.** Contact position = foot touching the ground as it lands, body at its lowest point.
 
-**Q6 — B.** Opposite arm from leading leg swings forward. This is normal bipedal counterbalance.
+**Q6, B.** Opposite arm from leading leg swings forward. This is normal bipedal counterbalance.
 
-**Q7 — C.** 20–24 frames per step = menacing, deliberate, powerful. Much slower than a normal walk.
+**Q7, C.** 20–24 frames per step = menacing, deliberate, powerful. Much slower than a normal walk.
 
-**Q8 — B.** Passing position = free leg passes by the planted leg.
+**Q8, B.** Passing position = free leg passes by the planted leg.
 
-**Q9 — B.** Walk cycles test the full range: weight, timing, secondary motion, personality.
+**Q9, B.** Walk cycles test the full range: weight, timing, secondary motion, personality.
 
-**Q10 — C.** Body is highest during the passing position — the body has been carried up by the push-off and the free leg swing.
+**Q10 C.** Body is highest during the passing position the body has been carried up by the push-off and the free leg swing.
 
-**Q11 — B.** Pantomime test = story communicated through movement without dialogue.
+**Q11, B.** Pantomime test = story communicated through movement without dialogue.
 
-**Q12 — C.** A fresh viewer sees the animation without familiarity — they tell you what story the movement actually tells.
+**Q12 C.** A fresh viewer sees the animation without familiarity they tell you what story the movement actually tells.
 
-**Q13 — B.** Water balloon = extreme squash, slow, breaks on final impact (does not recover elastically).
+**Q13, B.** Water balloon = extreme squash, slow, breaks on final impact (does not recover elastically).
 
-**Q14 — B.** V-shaped path = straight-line movement (angular path) instead of a parabolic arc. Arcs principle violation.
+**Q14, B.** V-shaped path = straight-line movement (angular path) instead of a parabolic arc. Arcs principle violation.
 
-**Q15 — C.** Progressive energy loss: each bounce is smaller and faster than the previous.
+**Q15, C.** Progressive energy loss: each bounce is smaller and faster than the previous.
 
-**Q16 — B.** Half speed reveals in-between problems (pops, slides) that are invisible at full speed.
+**Q16, B.** Half speed reveals in-between problems (pops, slides) that are invisible at full speed.
 
-**Q17 — C.** No lateral shift of center of gravity = no weight transfer = poor weight distribution. The body should shift side to side with each step.
+**Q17, C.** No lateral shift of center of gravity = no weight transfer = poor weight distribution. The body should shift side to side with each step.
 
-**Q18 — B.** Animatic proves the story works in time before expensive resources are committed.
+**Q18, B.** Animatic proves the story works in time before expensive resources are committed.
 
-**Q19 — B.** Different timing and squash-stretch ratios communicate the physical properties of each material.
+**Q19, B.** Different timing and squash-stretch ratios communicate the physical properties of each material.
 
-**Q20 — C.** Time away removes familiarity, allowing fresh eyes to see problems.
+**Q20, C.** Time away removes familiarity, allowing fresh eyes to see problems.
 
-**Q21 — B.** Seamless loop = last frame connects perfectly to first frame without discontinuity.
+**Q21, B.** Seamless loop = last frame connects perfectly to first frame without discontinuity.
 
-**Q22 — C.** The story must be clear in one sentence before any other production step begins.
+**Q22, C.** The story must be clear in one sentence before any other production step begins.
 
-**Q23 — C.** Opposite arm from leading leg swings forward — standard bipedal counterbalance.
+**Q23 C.** Opposite arm from leading leg swings forward standard bipedal counterbalance.
 
-**Q24 — C.** The self-critique framework, outside feedback, and honest revision are more valuable than moving to the next topic with unfinished work.
+**Q24, C.** The self-critique framework, outside feedback, and honest revision are more valuable than moving to the next topic with unfinished work.

@@ -75,7 +75,7 @@ D. Sun full only
 
 ### Q9. A **synthetic full** backup is BEST described as: *(Understand)*
 A. A fake backup that cannot be restored
-B. A "full" assembled on the backup server from an earlier full + subsequent incrementals — no read from production
+B. A "full" assembled on the backup server from an earlier full + subsequent incrementals, no read from production
 C. A full backup taken nightly during business hours
 D. A clone of a snapshot
 
@@ -115,7 +115,7 @@ D. A trailer that arrives after a disaster
 
 ### Q14. A **cold site** is BEST described as: *(Understand)*
 A. A site with running mirrored systems and live data
-B. A facility with power and HVAC but no servers/data — days to weeks to bring up
+B. A facility with power and HVAC but no servers/data, days to weeks to bring up
 C. A trailer site
 D. A cloud DR region
 
@@ -131,7 +131,7 @@ D. No replication
 
 ### Q16. Two data centers 3,000 km apart over WAN. Synchronous replication for RPO = 0 would: *(Analyze)*
 A. Work perfectly
-B. Add round-trip WAN latency to every write, crippling application performance — use asynchronous
+B. Add round-trip WAN latency to every write, crippling application performance, use asynchronous
 C. Save money
 D. Make backups smaller
 
@@ -221,10 +221,10 @@ D. RAID 5 inside the same server with no replication
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. How long the system can be down**
-RTO = Recovery Time Objective — the downtime tolerance.
+RTO = Recovery Time Objective, the downtime tolerance.
 
 ### Q2: **B. How much data loss (measured in time) is tolerable**
-RPO = Recovery Point Objective — how stale the data can be after recovery.
+RPO = Recovery Point Objective, how stale the data can be after recovery.
 
 ### Q3: **B. RPO = 5 min**
 The statement bounds *data loss*, not downtime. That's RPO.
@@ -239,12 +239,12 @@ Incremental relative to *any* prior backup; clears archive bit so the next incre
 Differential cumulative since last full; archive bit stays set until next full.
 
 ### Q7: **C. Sun full + Mon + Tue + Wed incrementals, in order**
-Incrementals only contain changes since the prior incremental — you need all of them in sequence.
+Incrementals only contain changes since the prior incremental, you need all of them in sequence.
 
 ### Q8: **A. Sun full + Wed differential**
 Differential = everything changed since the last full → Wed differential contains everything from Mon, Tue, Wed combined.
 
-### Q9: **B. A "full" assembled on the backup server from an earlier full + subsequent incrementals — no read from production**
+### Q9: **B. A "full" assembled on the backup server from an earlier full + subsequent incrementals, no read from production**
 Modern enterprise backup software builds synthetic fulls on its own storage, saving production I/O.
 
 ### Q10: **B. 3 copies of data, on 2 different media types, with 1 off-site**
@@ -259,13 +259,13 @@ Monthly / weekly / daily tape strategy.
 ### Q13: **C. A continuously synchronized, near-instant-cutover mirror of production**
 Hot = live, ready to take traffic in minutes.
 
-### Q14: **B. A facility with power and HVAC but no servers/data — days to weeks to bring up**
+### Q14: **B. A facility with power and HVAC but no servers/data, days to weeks to bring up**
 Cold = empty shell. Cheapest, slowest.
 
 ### Q15: **B. Synchronous replication**
 Metro distance + RPO = 0 → synchronous is the textbook fit.
 
-### Q16: **B. Add round-trip WAN latency to every write, crippling application performance — use asynchronous**
+### Q16: **B. Add round-trip WAN latency to every write, crippling application performance, use asynchronous**
 At 3,000 km the RTT is ~30+ ms; every write would wait. Use async + acceptable RPO.
 
 ### Q17: **B. Their production AND backups lived in the same AWS account; once the attacker got root, everything was deleted**
@@ -278,7 +278,7 @@ Three copies (prod + disk + cloud), two media (disk + cloud), one off-site (clou
 "Successful backup runs" does not equal "restorable backup." Test it.
 
 ### Q20: **B. Ransomware or malicious deletion within the retention window**
-WORM-style immutability prevents *anyone* — including a compromised backup admin — from deleting/modifying backups during the retention window.
+WORM-style immutability prevents *anyone* including a compromised backup admin from deleting/modifying backups during the retention window.
 
 ### Q21: **B. Quiesces applications (SQL, Exchange, etc.) to create application-consistent snapshots for backup**
 VSS is Windows' framework for app-consistent snapshots. Without it, backups risk capturing the app mid-write.
@@ -287,7 +287,7 @@ VSS is Windows' framework for app-consistent snapshots. Without it, backups risk
 Async writes return locally before remote ack → if the source dies before replication catches up, there's a gap.
 
 ### Q23: **B. Larger is better**
-Mean Time Between Failures — longer between failures = more reliable.
+Mean Time Between Failures, longer between failures = more reliable.
 
 ### Q24: **C. DRP (Disaster Recovery Plan)**
 DRP is the IT subset. BCP is the broader business plan. BIA is the analysis that sets RTO/RPO. IRP is for security incidents.
@@ -323,4 +323,4 @@ This satisfies all requirements: 5-min log shipping ≤ 15-min RPO; warm site �
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6 — Server Security & Hardening](../Module-06-Security/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 6, Server Security & Hardening](../Module-06-Security/Reading.md)

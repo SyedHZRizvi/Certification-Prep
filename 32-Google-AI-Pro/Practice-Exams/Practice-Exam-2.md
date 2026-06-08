@@ -1,4 +1,4 @@
-# 🧪 Practice Exam 2 — Google AI Pro (Modules 6–9 focus)
+# 🧪 Practice Exam 2, Google AI Pro (Modules 6–9 focus)
 
 > **Conditions:** Set a 45-minute timer. 30 questions.
 > **Pass mark:** 24/30 (~80%).
@@ -40,7 +40,7 @@ D. `batch_size`
 
 ### 6. After fine-tuning, the model is better on the holdout but worse on general questions. This is:
 A. Normal
-B. Catastrophic forgetting — solutions: more diverse data, smaller adapter, lower LR
+B. Catastrophic forgetting, solutions: more diverse data, smaller adapter, lower LR
 C. Quota issue
 D. Network failure
 
@@ -118,7 +118,7 @@ D. Disable safety_settings
 
 ### 19. SynthID variants include:
 A. Image only
-B. Image, audio, AND text — all invisible watermarks
+B. Image, audio, AND text, all invisible watermarks
 C. Text only
 D. Audio only
 

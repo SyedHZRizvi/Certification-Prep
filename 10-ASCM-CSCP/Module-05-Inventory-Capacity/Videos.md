@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">JIT and Kanban — Toyota Production System</p>
+      <p class="vg-title">JIT and Kanban, Toyota Production System</p>
       <p class="vg-creator">365 Careers</p>
       <span class="vg-duration">⏱ 10 min · Pull vs push inventory</span>
     </div>
@@ -88,7 +88,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Capacity — Utilization vs Efficiency</p>
+      <p class="vg-title">Capacity, Utilization vs Efficiency</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 9 min · Design / effective / actual</span>
     </div>
@@ -111,7 +111,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">MIT Lecture — Inventory Theory</p>
+      <p class="vg-title">MIT Lecture, Inventory Theory</p>
       <p class="vg-creator">MIT OpenCourseWare</p>
       <span class="vg-duration">⏱ 50 min · Academic depth</span>
     </div>

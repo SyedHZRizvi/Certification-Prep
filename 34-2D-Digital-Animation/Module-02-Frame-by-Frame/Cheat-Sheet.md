@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-02-Frame-by-Frame/Cheat-Sheet/
 title: "Module 2 Cheat Sheet: Frame-by-Frame Animation"
 ---
 
-# ⚡ Module 2 Cheat Sheet — Frame-by-Frame Animation
+# ⚡ Module 2 Cheat Sheet, Frame-by-Frame Animation
 
 ---
 
@@ -13,8 +13,8 @@ title: "Module 2 Cheat Sheet: Frame-by-Frame Animation"
 |---------|---------|
 | Range | Frames visible before/after current (2–4 typical) |
 | Tint | Blue = past frames, Orange = future frames |
-| Outline Mode | Shows only stroke paths — less visual noise |
-| Full Color Mode | Shows fills — more context, more clutter |
+| Outline Mode | Shows only stroke paths, less visual noise |
+| Full Color Mode | Shows fills, more context, more clutter |
 
 **Read onion skins:** clustered = slow; spread = fast.
 
@@ -23,10 +23,10 @@ title: "Module 2 Cheat Sheet: Frame-by-Frame Animation"
 ## Rough-to-Cleanup Workflow
 
 ```
-1. Key Poses (extremes) — loose, fast
-2. Rough In-Betweens — establish arcs & spacing
-3. Cleanup — clean lines on new layer above roughs
-4. Color — fill after cleanup approved
+1. Key Poses (extremes), loose, fast
+2. Rough In-Betweens, establish arcs & spacing
+3. Cleanup, clean lines on new layer above roughs
+4. Color, fill after cleanup approved
 5. Delete/hide roughs before export
 ```
 
@@ -47,10 +47,10 @@ title: "Module 2 Cheat Sheet: Frame-by-Frame Animation"
 
 | Pattern | Effect |
 |---------|--------|
-| Even spacing | Linear/mechanical — constant speed |
-| Clustered at start | Slow In — motion accelerates |
-| Clustered at end | Slow Out — motion decelerates |
-| Both ends clustered | Ease In+Out — natural organic feel |
+| Even spacing | Linear/mechanical, constant speed |
+| Clustered at start | Slow In, motion accelerates |
+| Clustered at end | Slow Out, motion decelerates |
+| Both ends clustered | Ease In+Out, natural organic feel |
 
 ---
 

@@ -1,13 +1,13 @@
-# Module 5: Capstone 4 — Multi-Touch Attribution Model 📊
+# Module 5: Capstone 4, Multi-Touch Attribution Model 📊
 
-> **Why this module matters:** This is the "are you actually analytical?" capstone. Most marketers claim to be data-driven; very few have built an attribution model from scratch. Doing it once — even on small sample data — separates you immediately.
+> **Why this module matters:** This is the "are you actually analytical?" capstone. Most marketers claim to be data-driven; very few have built an attribution model from scratch. Doing it once even on small sample data separates you immediately.
 
 > **Prerequisites for this module.** Before starting, you should be comfortable with:
-> - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md) — covered earlier in this course
-> - Marketing analytics & GA4 basics (events, sessions, source/medium) — covered in [17-AI-Marketing-Analytics-Automation Module 1](../../17-AI-Marketing-Entrepreneur/README.md) and Module 3
-> - Spreadsheet formulas (QUERY, SUMPRODUCT, SUMIF) — covered in [17-AI-Marketing-Analytics-Automation Module 2](../../17-AI-Marketing-Entrepreneur/README.md)
+> - [Portfolio strategy & P-C-A-R-L format](../Module-01-Portfolio-Strategy-What-To-Build/Reading.md), covered earlier in this course
+> - Marketing analytics & GA4 basics (events, sessions, source/medium), covered in [17-AI-Marketing-Analytics-Automation Module 1](../../17-AI-Marketing-Entrepreneur/README.md) and Module 3
+> - Spreadsheet formulas (QUERY, SUMPRODUCT, SUMIF), covered in [17-AI-Marketing-Analytics-Automation Module 2](../../17-AI-Marketing-Entrepreneur/README.md)
 > - Optional but recommended: Python / pandas basics if you're choosing the Colab path
-> If any of these are shaky, pause and review — Markov chain math is hard enough without also fighting GA4 exports or VLOOKUP.
+> If any of these are shaky, pause and review, Markov chain math is hard enough without also fighting GA4 exports or VLOOKUP.
 
 ---
 
@@ -17,15 +17,15 @@ Picture a Series B SaaS startup mid-2026. Marketing team is being asked to defen
 
 The CFO opens with: *"All your tracking says 'last-click attribution.' That means Google is getting credit for every customer that searched our brand name after seeing a Meta ad. I'm cutting paid social by 60% until you can prove it actually does anything."*
 
-The marketing team panics. They have GA4 reports, HubSpot reports, Mixpanel funnels — but every report defaults to last-click. They can't actually prove paid social drives anything beyond the conversion moment.
+The marketing team panics. They have GA4 reports, HubSpot reports, Mixpanel funnels, but every report defaults to last-click. They can't actually prove paid social drives anything beyond the conversion moment.
 
-One marketer on the team — let's call them Aisha — disappears for 4 days. She comes back with a Google Sheet. It has:
+One marketer on the team let's call them Aisha disappears for 4 days. She comes back with a Google Sheet. It has:
 
 - Anonymized customer journey data from the last 12 months
 - A Markov-chain attribution model built in Sheets
 - A Shapley-value attribution calculation
 - A side-by-side comparison: Last-Click vs Linear vs Time-Decay vs Markov vs Shapley
-- A clear answer: paid social is generating 23% of "first-touch" customer journeys, but last-click only credits it 4% — making it look like a money pit when it isn't
+- A clear answer: paid social is generating 23% of "first-touch" customer journeys, but last-click only credits it 4%, making it look like a money pit when it isn't
 
 The CFO doesn't cut the budget. Aisha gets the senior analyst promotion that quarter.
 
@@ -37,18 +37,18 @@ The math wasn't fancy. The fact she could build it was the whole signal.
 
 **Deliverable:** A public multi-touch attribution model showing:
 
-1. **Sample data** — 100–500 anonymized customer journeys (real or realistic)
-2. **At least 3 attribution models compared** — Last-click, Linear, AND either Markov chain or Shapley value
-3. **Built in Google Sheets OR a Colab notebook (Python)** — both work
-4. **A simple dashboard** — table + chart showing channel credit under each model
+1. **Sample data**, 100–500 anonymized customer journeys (real or realistic)
+2. **At least 3 attribution models compared**, Last-click, Linear, AND either Markov chain or Shapley value
+3. **Built in Google Sheets OR a Colab notebook (Python)**, both work
+4. **A simple dashboard**, table + chart showing channel credit under each model
 5. **A walkthrough video** (~5–8 min Loom)
-6. **A case study writeup** — P-C-A-R-L, published on portfolio
+6. **A case study writeup**, P-C-A-R-L, published on portfolio
 
 **Total time:** ~8 hours.
 
 ---
 
-## 📊 Attribution Models — A Quick Primer
+## 📊 Attribution Models, A Quick Primer
 
 Before you build, understand what each model does. Hiring managers will quiz you.
 
@@ -60,7 +60,7 @@ Before you build, understand what each model does. Hiring managers will quiz you
 
 **Cons:** Completely ignores everything that happened before the final click. Massively under-credits awareness channels.
 
-**Best for:** Bottom-of-funnel-only businesses (e.g., emergency plumbing — there is no "consideration phase").
+**Best for:** Bottom-of-funnel-only businesses (e.g., emergency plumbing, there is no "consideration phase").
 
 ### 2. First-Click Attribution
 
@@ -92,11 +92,11 @@ Before you build, understand what each model does. Hiring managers will quiz you
 
 **Pros:** Recognizes both discovery and conversion.
 
-**Cons:** Still simplistic — assumes the middle doesn't matter much.
+**Cons:** Still simplistic, assumes the middle doesn't matter much.
 
 ### 6. Markov Chain Attribution (Data-Driven)
 
-**Rule:** Calculates "removal effect" — for each channel, how much would conversion rates drop if you removed that channel from the journey?
+**Rule:** Calculates "removal effect", for each channel, how much would conversion rates drop if you removed that channel from the journey?
 
 **Pros:** Data-driven, accounts for paths and dependencies, considered fair by most analysts.
 
@@ -104,7 +104,7 @@ Before you build, understand what each model does. Hiring managers will quiz you
 
 ### 7. Shapley Value Attribution (Data-Driven)
 
-**Rule:** Game-theoretic fair-share calculation — each channel gets the average marginal contribution it makes across all possible coalition orderings.
+**Rule:** Game-theoretic fair-share calculation, each channel gets the average marginal contribution it makes across all possible coalition orderings.
 
 **Pros:** Mathematically proven to be the "fairest" allocation.
 
@@ -116,9 +116,9 @@ Before you build, understand what each model does. Hiring managers will quiz you
 
 For portfolio purposes, build:
 
-1. **Last-Click** (baseline — easy)
-2. **Linear** (slightly more sophisticated — easy)
-3. **Markov Chain** OR **Shapley Value** (the impressive one — moderate difficulty)
+1. **Last-Click** (baseline, easy)
+2. **Linear** (slightly more sophisticated, easy)
+3. **Markov Chain** OR **Shapley Value** (the impressive one, moderate difficulty)
 
 The contrast is the punchline. You'll show that channel rankings change dramatically depending on which model you use.
 
@@ -140,9 +140,9 @@ If you have an e-commerce site, agency, or SaaS that uses Google Analytics 4 or 
 
 These are free and good enough for this capstone:
 
-- **Google Analytics Sample Dataset** (BigQuery public) — real e-commerce data from Google Merch Store
-- **Olist Brazilian E-commerce Dataset** (Kaggle) — 100k orders with channel data
-- **Criteo Attribution Modeling Dataset** (Kaggle) — designed specifically for attribution
+- **Google Analytics Sample Dataset** (BigQuery public), real e-commerce data from Google Merch Store
+- **Olist Brazilian E-commerce Dataset** (Kaggle), 100k orders with channel data
+- **Criteo Attribution Modeling Dataset** (Kaggle), designed specifically for attribution
 
 ### Option C: Generate Realistic Synthetic Data
 
@@ -177,7 +177,7 @@ df = pd.DataFrame(data)
 df.to_csv('attribution_data.csv', index=False)
 ```
 
-That's 200 customer journeys, weighted realistically. Save the CSV — that's your input data.
+That's 200 customer journeys, weighted realistically. Save the CSV, that's your input data.
 
 ---
 
@@ -243,7 +243,7 @@ This is harder. The full Markov implementation in Sheets is doable but verbose. 
 
 **Easier alternative:** Use a free Google Sheets add-on like "Channel Attribution" or "Funnel Vision" if available. These compute Markov for you.
 
-**OR:** Build it in Python (Colab) — much cleaner.
+**OR:** Build it in Python (Colab), much cleaner.
 
 ### Step 5: Build The Dashboard Tab
 
@@ -453,7 +453,7 @@ A clustered bar chart with:
 
 Then in the writeup, walk through the most surprising delta. Example:
 
-*"Paid social gets only 8 conversions under last-click but 17 under Markov. The model is telling us that paid social is doing a LOT of the awareness work, but isn't getting credit at close — because Google search captures the converting click after the user comes back."*
+*"Paid social gets only 8 conversions under last-click but 17 under Markov. The model is telling us that paid social is doing a LOT of the awareness work, but isn't getting credit at close, because Google search captures the converting click after the user comes back."*
 
 That insight is the whole capstone.
 
@@ -506,7 +506,7 @@ The "magic moment" of this video: when you toggle between the 3 model tabs and t
 | Used real customer data without anonymizing | Anonymize IDs. Or use public sample dataset. |
 | Markov implementation is wrong | Test with a toy example you can hand-compute |
 | Didn't visualize the comparison | The chart IS the capstone |
-| Wrote 0 lines of commentary | Numbers don't speak for themselves — add interpretation |
+| Wrote 0 lines of commentary | Numbers don't speak for themselves, add interpretation |
 | Made spreadsheet "view only" but not public | Set to "anyone with link can view" |
 | Forgot to share the Colab notebook publicly | Click Share → "Anyone with link" |
 | Picked a use case that has no journeys (e.g., pure last-click search business) | Pick a use case where multi-touch is plausible |
@@ -546,7 +546,7 @@ When in doubt, use a public sample dataset or generate synthetic data. The portf
           under Markov. Saved the budget. The insight was that paid 
           social was the initial-discovery channel for 40% of converters."
 
-[LESSON]: "Markov assumes Markov property — past sequence doesn't matter 
+[LESSON]: "Markov assumes Markov property, past sequence doesn't matter 
           beyond the previous step. That's a simplification. For v2 I'd 
           add Shapley to cross-check."
 ```
@@ -598,27 +598,27 @@ You now know:
 
 ## 📚 Further Reading (Optional)
 
-- 📖 [Avinash Kaushik — Multi-Channel Attribution](https://www.kaushik.net/avinash/) — the OG reference
-- 📖 [Markov Chains for Marketing Attribution (Towards Data Science)](https://towardsdatascience.com/) — math walkthrough
-- 📖 [Google Analytics 4 — Attribution Reports](https://support.google.com/analytics/answer/10596866) — official docs
-- 📖 [Shapley Value paper applied to marketing](https://arxiv.org/) — academic foundation
-- 📖 [The Criteo Attribution Modeling Dataset (Kaggle)](https://www.kaggle.com/datasets/criteo-research/criteo-attribution-modeling-bidding-dataset) — public data for practice
+- 📖 [Avinash Kaushik Multi-Channel Attribution](https://www.kaushik.net/avinash/) the OG reference
+- 📖 [Markov Chains for Marketing Attribution (Towards Data Science)](https://towardsdatascience.com/), math walkthrough
+- 📖 [Google Analytics 4 Attribution Reports](https://support.google.com/analytics/answer/10596866) official docs
+- 📖 [Shapley Value paper applied to marketing](https://arxiv.org/), academic foundation
+- 📖 [The Criteo Attribution Modeling Dataset (Kaggle)](https://www.kaggle.com/datasets/criteo-research/criteo-attribution-modeling-bidding-dataset), public data for practice
 
 ---
 
-## Discussion — Socratic prompts
+## Discussion, Socratic prompts
 
 These prompts probe whether you understand the *limits* of attribution modeling, not just how to compute it. That's what separates an analyst from a junior with a spreadsheet.
 
-1. **The reading says Markov Chain attribution is "data-driven, considered fair by most analysts" and contrasts it with Last-Click.** But Markov makes a strong assumption — the *Markov property* (the future depends only on the present state, not the full history). For real marketing journeys (email → blog → ad → search → conversion), is this assumption a reasonable simplification or a fatal flaw? When would you use Markov anyway, and when would you reach for Shapley despite the compute cost?
-2. **The capstone asks for 100–500 customer journeys.** A senior analyst would say that's far too few for Markov to produce stable results — you need 1,000+ for reliable transition probabilities. Should the capstone be honest about this limitation in the writeup, or does the small sample size invalidate the portfolio piece? How would you frame the trade-off to a skeptical interviewer?
-3. **The "money-shot chart" — the clustered bar chart comparing Last-Click vs Linear vs Markov — is presented as the centerpiece of the capstone.** A statistician might point out that without confidence intervals, three different-looking bars could be statistical noise. Should the chart include error bars? If you add them, does the story change?
-4. **Multi-Touch Attribution (MTA) and Media Mix Modeling (MMM) are increasingly seen as alternatives.** MTA needs user-level data (cookies, identifiers); MMM uses aggregate channel spend. With cookie deprecation and privacy laws (GDPR, CCPA, iOS 14.5+), MTA is getting harder every quarter. Is this capstone teaching a method that will be obsolete in 3 years? Defend "build MTA anyway because the *thinking* transfers to MMM" — or argue it's miseducation.
-5. **The reading frames attribution as a budget-defense tool ("CFO was about to cut paid social by 60%").** A counter-view: attribution models are *political* artifacts — every team picks the model that makes their channel look best. Last-click favors closing-channel teams; first-click favors brand teams. Is "the most fair attribution model" a real thing, or is fairness in the eye of the budget-defender? How would you handle this tension in a CFO presentation?
+1. **The reading says Markov Chain attribution is "data-driven, considered fair by most analysts" and contrasts it with Last-Click.** But Markov makes a strong assumption, the *Markov property* (the future depends only on the present state, not the full history). For real marketing journeys (email → blog → ad → search → conversion), is this assumption a reasonable simplification or a fatal flaw? When would you use Markov anyway, and when would you reach for Shapley despite the compute cost?
+2. **The capstone asks for 100–500 customer journeys.** A senior analyst would say that's far too few for Markov to produce stable results, you need 1,000+ for reliable transition probabilities. Should the capstone be honest about this limitation in the writeup, or does the small sample size invalidate the portfolio piece? How would you frame the trade-off to a skeptical interviewer?
+3. **The "money-shot chart" the clustered bar chart comparing Last-Click vs Linear vs Markov is presented as the centerpiece of the capstone.** A statistician might point out that without confidence intervals, three different-looking bars could be statistical noise. Should the chart include error bars? If you add them, does the story change?
+4. **Multi-Touch Attribution (MTA) and Media Mix Modeling (MMM) are increasingly seen as alternatives.** MTA needs user-level data (cookies, identifiers); MMM uses aggregate channel spend. With cookie deprecation and privacy laws (GDPR, CCPA, iOS 14.5+), MTA is getting harder every quarter. Is this capstone teaching a method that will be obsolete in 3 years? Defend "build MTA anyway because the *thinking* transfers to MMM", or argue it's miseducation.
+5. **The reading frames attribution as a budget-defense tool ("CFO was about to cut paid social by 60%").** A counter-view: attribution models are *political* artifacts, every team picks the model that makes their channel look best. Last-click favors closing-channel teams; first-click favors brand teams. Is "the most fair attribution model" a real thing, or is fairness in the eye of the budget-defender? How would you handle this tension in a CFO presentation?
 
 ---
 
 > **Where this leads.**
-> - Inside this course: Module 6 (AI Agent) — you can build an agent that *automates attribution analysis* from a raw CSV input. That's a fun stretch goal. Module 7 features the comparison chart as a recommended portfolio hero image.
+> - Inside this course: Module 6 (AI Agent), you can build an agent that *automates attribution analysis* from a raw CSV input. That's a fun stretch goal. Module 7 features the comparison chart as a recommended portfolio hero image.
 > - Cross-course: [17-AI-Marketing-Analytics-Automation Module 3](../../17-AI-Marketing-Entrepreneur/README.md) covers the customer-journey data layer this capstone consumes. Module 4 covers dashboards where attribution outputs typically live.
 > - Practice: Practice Exam 1 has 3 questions on this capstone (Q14–Q16, Q33). The Final Mock's Q3 ("difference between Last-Click and Markov") and Q20 ("comfort with data analysis") both expect the depth this capstone builds.

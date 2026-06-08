@@ -146,7 +146,7 @@ D. New SKUs
 ### Q18. In a marketplace-seller model, the brand: *(Understand)*
 A. Owns the customer relationship
 B. Owns pricing entirely
-C. Does NOT own the customer relationship — the platform does
+C. Does NOT own the customer relationship, the platform does
 D. Pays no fees
 
 ---
@@ -167,7 +167,7 @@ D. Markowitz portfolio theory
 
 ---
 
-### Q21. Marketing CAC vs Blended CAC — the difference: *(Understand)*
+### Q21. Marketing CAC vs Blended CAC, the difference: *(Understand)*
 A. There is no difference
 B. Marketing CAC includes only paid-media spend; Blended CAC includes all customer-acquisition costs (salaries, agency, tooling)
 C. Blended CAC is only used by enterprise
@@ -193,7 +193,7 @@ D. Discord Commerce
 
 ### Q24. Christensen's milkshake story illustrates that: *(Evaluate)*
 A. Demographics determine purchase
-B. Customers hire a product to do a specific job in a specific context — the job, not the demographic, determines features
+B. Customers hire a product to do a specific job in a specific context, the job, not the demographic, determines features
 C. Pricing is the dominant variable
 D. Brand always wins
 
@@ -210,13 +210,13 @@ D. Returns are higher
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Revenue / Orders**
-AOV (Average Order Value) divides revenue by orders, NOT by customers — a single customer can place multiple orders.
+AOV (Average Order Value) divides revenue by orders, NOT by customers, a single customer can place multiple orders.
 
 ### Q2: **D. Affiliate-only**
 The seven models from the reading: DTC, marketplace seller, marketplace operator, B2B/wholesale, B2B2C/hybrid, subscription/replenishment, social/live commerce. Affiliate is a marketing channel, not a business model.
 
 ### Q3: **B. "Day 1 always"**
-Bezos's 1997 letter codified "Day 1" — the perpetual-startup operating principle that warns against Day 2 stasis.
+Bezos's 1997 letter codified "Day 1", the perpetual-startup operating principle that warns against Day 2 stasis.
 
 ### Q4: **B. Bid up for the top CLV segment and bid less for the bottom**
 Fader's core argument: not all customers are equal; allocate paid spend by CLV segment. Klaviyo's "Predicted CLV" feature operationalizes this.
@@ -234,13 +234,13 @@ The MIS Quarterly / Management Science paper "Consumer Surplus in the Digital Ec
 Contribution margin is revenue minus VARIABLE costs (COGS, fulfillment, payment processing, returns), expressed as a percentage. Not net income.
 
 ### Q9: **C. Type-1 decisions are irreversible (slow); Type-2 are reversible (fast)**
-From Bezos's 2015 letter. Most companies invert this — they make Type-2 decisions slowly and Type-1 too quickly.
+From Bezos's 2015 letter. Most companies invert this, they make Type-2 decisions slowly and Type-1 too quickly.
 
 ### Q10: **A. CAC / (AOV × Contribution Margin)**
 Months to recover CAC. A healthy DTC payback is 6-12 months; subscription is 1-3 months; furniture is 12-24 months.
 
 ### Q11: **B. Geography, Environment, Mobility**
-Bell's 2014 *Location is (Still) Everything* framework — explains why digital commerce success still tracks to physical geography conditions.
+Bell's 2014 *Location is (Still) Everything* framework, explains why digital commerce success still tracks to physical geography conditions.
 
 ### Q12: **B. Customers hire products to do a job in their lives**
 Christensen's Jobs-to-Be-Done framework. The job determines what features matter; mis-identifying the job means mis-building the product.
@@ -260,14 +260,14 @@ Furniture's freight cost + return cost is the dominant CM killer. Beauty (small,
 ### Q17: **A. The top-selling SKUs**
 "Head" = the high-volume hits. "Tail" = the niche SKUs. Long-tail businesses monetize the aggregate of the tail.
 
-### Q18: **C. Does NOT own the customer relationship — the platform does**
+### Q18: **C. Does NOT own the customer relationship, the platform does**
 Marketplace platforms (Amazon, Etsy, eBay) own the customer; the brand loses pricing power and first-party data.
 
 ### Q19: **B. Re-printed in every Amazon annual letter since**
 The 1997 letter has been an exhibit attached to every annual letter since 1998. Bezos never disowned a principle.
 
 ### Q20: **B. Fader's BG/NBD model (2005)**
-Klaviyo's predicted CLV uses BG/NBD or its variants (BTYD — Buy Till You Die). Fader, Hardie, & Lee published the original BG/NBD paper in 2005.
+Klaviyo's predicted CLV uses BG/NBD or its variants (BTYD, Buy Till You Die). Fader, Hardie, & Lee published the original BG/NBD paper in 2005.
 
 ### Q21: **B. Marketing CAC includes only paid-media spend; Blended CAC includes all customer-acquisition costs**
 The CFO version (blended) is always higher. Operators who report marketing CAC to a board expecting blended lose trust.
@@ -278,7 +278,7 @@ Recurly's 2024 subscription benchmarks: 8%+ monthly churn typically caps DTC sub
 ### Q23: **B. TikTok Shop, Instagram Shopping, Whatnot**
 The three dominant social/live commerce surfaces in 2024-2026. TikTok Shop opened US in September 2023.
 
-### Q24: **B. Customers hire a product to do a specific job in a specific context — the job, not the demographic, determines features**
+### Q24: **B. Customers hire a product to do a specific job in a specific context, the job, not the demographic, determines features**
 Christensen's milkshake story: people buying milkshakes at 8am are hiring them to do a different job than people buying at 3pm. Same demographic, different jobs.
 
 ### Q25: **B. Loses pricing power and customer data, becoming a commodity seller within 18 months**

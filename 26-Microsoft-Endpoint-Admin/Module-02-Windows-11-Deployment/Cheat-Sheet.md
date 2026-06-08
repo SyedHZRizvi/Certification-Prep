@@ -44,7 +44,7 @@
 | Device name template | `<PREFIX>-%SERIAL%` |
 | Allow pre-provisioned | Yes (optional) |
 
-🚨 Cannot change deployment mode after enrollment — wipe + re-register.
+🚨 Cannot change deployment mode after enrollment, wipe + re-register.
 
 ---
 

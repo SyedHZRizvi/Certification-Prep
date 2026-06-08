@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">AGV vs AMR — What's the Difference?</p>
+      <p class="vg-title">AGV vs AMR, What's the Difference?</p>
       <p class="vg-creator">Supply Chain Today</p>
       <span class="vg-duration">⏱ 9 min · Fleet management</span>
     </div>

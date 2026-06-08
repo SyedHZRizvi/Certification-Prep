@@ -32,7 +32,7 @@ D. Latency
 
 ### Q4. Low Context Recall suggests: *(Analyze)*
 A. The retriever found everything
-B. Relevant docs were MISSED — fix by hybrid + multi-query + larger k + better chunking
+B. Relevant docs were MISSED, fix by hybrid + multi-query + larger k + better chunking
 C. The model is too small
 D. Random
 
@@ -96,7 +96,7 @@ D. No reason
 
 ### Q12. A team uses GPT-4o to judge GPT-4o outputs. Risk: *(Analyze)*
 A. None
-B. Self-enhancement bias — the judge prefers outputs from its own family
+B. Self-enhancement bias, the judge prefers outputs from its own family
 C. Cost
 D. Tokens
 
@@ -128,7 +128,7 @@ D. Tokenization
 
 ### Q16. Inspect AI is associated with: *(Remember)*
 A. OpenAI
-B. UK AI Safety Institute — frontier safety/capability evals
+B. UK AI Safety Institute, frontier safety/capability evals
 C. Microsoft
 D. Google
 
@@ -152,7 +152,7 @@ D. A model
 
 ### Q19. A team sees high faithfulness, low answer relevancy. Diagnosis: *(Analyze)*
 A. The retriever is broken
-B. The model is grounded but talks around the question — fix the generation prompt / examples / model
+B. The model is grounded but talks around the question, fix the generation prompt / examples / model
 C. The DB is offline
 D. Wrong tokenizer
 
@@ -192,7 +192,7 @@ D. Random
 
 ### Q24. Confidence-interval reporting alongside means: *(Apply)*
 A. Pointless
-B. Critical — small golden sets can show "wins" that are just noise; report 95% CI
+B. Critical, small golden sets can show "wins" that are just noise; report 95% CI
 C. Unnecessary in CI
 D. Only for academic papers
 
@@ -225,7 +225,7 @@ The RAGAS four. Memorize them.
 ### Q3: **B. Whether each claim is supported by retrieved context**
 The anti-hallucination metric. Computed by claim extraction + LLM-as-judge support check.
 
-### Q4: **B. Relevant docs were missed — expand retrieval**
+### Q4: **B. Relevant docs were missed, expand retrieval**
 Hybrid + multi-query + larger k + better chunking.
 
 ### Q5: **A. Prefer position 1 (or 2) consistently**
@@ -270,7 +270,7 @@ Without this, the eval is theater.
 ### Q18: **B. OSS observability + evals**
 Phoenix complements LangSmith; both are widely used.
 
-### Q19: **B. Grounded but off-topic — fix generation**
+### Q19: **B. Grounded but off-topic, fix generation**
 The answer cites context but doesn't address the question. Prompt issue, not retrieval.
 
 ### Q20: **B. Freeform rubric you define**
@@ -285,7 +285,7 @@ Documented bias; mitigations include length normalization.
 ### Q23: **B. Production complaints increase while eval scores improve**
 The single clearest signal of golden-set drift.
 
-### Q24: **B. Critical — without CIs, you mistake noise for wins**
+### Q24: **B. Critical, without CIs, you mistake noise for wins**
 Especially on small golden sets.
 
 ### Q25: **B. Pairwise + position-swap with GPT-4 judge**
@@ -318,4 +318,4 @@ A real production eval stack. Everything else has fatal omissions.
 
 ---
 
-➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8 — Guardrails & Safety](../Module-08-Guardrails-Safety/Reading.md)
+➡️ Next: [Cheat-Sheet.md](./Cheat-Sheet.md), then [Module 8, Guardrails & Safety](../Module-08-Guardrails-Safety/Reading.md)

@@ -56,7 +56,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">FX Hedging — Forwards, Options, Swaps</p>
+      <p class="vg-title">FX Hedging, Forwards, Options, Swaps</p>
       <p class="vg-creator">Edureka Finance</p>
       <span class="vg-duration">⏱ 12 min · Importer / exporter cases</span>
     </div>
@@ -70,7 +70,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">EXW vs FCA vs FOB vs CIF — When To Pick Which</p>
+      <p class="vg-title">EXW vs FCA vs FOB vs CIF, When To Pick Which</p>
       <p class="vg-creator">Operations Insider</p>
       <span class="vg-duration">⏱ 11 min · Buyer / seller perspective</span>
     </div>
@@ -102,7 +102,7 @@
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">ATA Carnet — Temporary Import Passport</p>
+      <p class="vg-title">ATA Carnet, Temporary Import Passport</p>
       <p class="vg-creator">US Council for International Business</p>
       <span class="vg-duration">⏱ 8 min · Trade-show use</span>
     </div>

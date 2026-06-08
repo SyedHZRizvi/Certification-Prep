@@ -77,7 +77,7 @@ D. The duration of a sprint
 ### Q13. A project has stable hardware specs but evolving firmware that responds to user testing. BEST approach:
 A. Pure predictive
 B. Pure agile
-C. Hybrid — predictive for hardware, agile for firmware
+C. Hybrid, predictive for hardware, agile for firmware
 D. Skip planning entirely
 
 ### Q14. In agile (per the agile triangle), when scope grows mid-iteration but time and cost are fixed, the team should:
@@ -112,7 +112,7 @@ D. SAFe
 
 ### Q19. A new PM is told the team will use "iterations" rather than "sprints." For PMP exam purposes:
 A. Iterations and sprints are different concepts
-B. The PMP is terminology-agnostic — both refer to short, time-boxed cycles
+B. The PMP is terminology-agnostic, both refer to short, time-boxed cycles
 C. Iterations are only for Kanban
 D. Sprints are only for SAFe
 
@@ -154,10 +154,10 @@ Stable hardware = predictive; evolving firmware with feedback = agile. The mix i
 Agile triangle: time/cost fixed, scope flexes. Deprioritize lower-value items rather than crashing quality or burning out the team.
 
 ### Q15: **B. Review band widens**
-A widening band in a CFD signals work piling up — the classic visual cue for a bottleneck.
+A widening band in a CFD signals work piling up, the classic visual cue for a bottleneck.
 
 ### Q16: **B. Servant leader who facilitates and coaches**
-The PMP-2021 PM in agile is a servant leader — removes impediments, coaches, empowers.
+The PMP-2021 PM in agile is a servant leader, removes impediments, coaches, empowers.
 
 ### Q17: **A. Prevent multitasking, expose bottlenecks**
 WIP limits force focus, surface flow problems, and improve cycle time.
@@ -169,7 +169,7 @@ Pair programming, TDD, CI, refactoring, and small releases are XP engineering pr
 The PMP exam treats "iteration" and "sprint" interchangeably; both are short, time-boxed delivery cycles.
 
 ### Q20: **B. Skills (unused talent)**
-"S" in TIM-WOODS = Skills — under-utilizing people's capabilities.
+"S" in TIM-WOODS = Skills, under-utilizing people's capabilities.
 
 ### Q21: **B. 6 sprints**
 Velocity-based forecasting: 180 / 30 = 6 sprints.
@@ -217,19 +217,19 @@ That's the correct PMP behavior, not a trap. The other three (assigning tasks, l
 ### Q23. HealthCare.gov (from the case study). You are PM on a federal IT project two months from launch, and the program is in similar trouble: 55 contractors, fixed-price waterfall contracts, integration testing crammed into the final two weeks. Using PMBOK 7's Tailoring + Adaptability principles, what intervention is MOST defensible? *(Create)*
 A. Hold the schedule; finish what was signed.
 B. Cancel the project.
-C. Stand up a small cross-functional "war-room" cell drawn from the highest-impact contractor work, run twice-daily standups against the top-5 user flows, freeze low-value scope, negotiate emergency contract modifications to allow time-and-materials work for the rescue, and present the methodology shift to the sponsor with named outcome metrics and a 6-week review point — citing the original specification's mismatch to the actual complexity.
+C. Stand up a small cross-functional "war-room" cell drawn from the highest-impact contractor work, run twice-daily standups against the top-5 user flows, freeze low-value scope, negotiate emergency contract modifications to allow time-and-materials work for the rescue, and present the methodology shift to the sponsor with named outcome metrics and a 6-week review point, citing the original specification's mismatch to the actual complexity.
 D. Pivot quietly without telling the sponsor; replace the contractors.
 
 ### Q24. A team's velocity has been flat at 28 points/sprint for 6 sprints. The new VP asks you to "drive it to 40 by next quarter." Using DORA's research (Forsgren/Humble/Kim 2018) AND PMBOK 7's Team principle, what's the MOST defensible response? *(Evaluate)*
-A. Comply — set a 40-point target.
+A. Comply, set a 40-point target.
 B. Refuse politely.
 C. Reframe: velocity is a forecasting input, not a performance metric; propose DORA's four key metrics (deployment frequency, lead time for changes, change failure rate, mean time to restore) as a richer dashboard; quantify the bottleneck driving flat velocity (using a CFD) and propose a 90-day intervention aimed at the bottleneck, with the VP signing off on the diagnosis before any target-setting; document that gaming velocity erodes trust.
 D. Hire more developers to mechanically lift the number.
 
 ### Q25. A regulated medical-device firm has stable hardware specs and evolving firmware. Procurement wants a Firm Fixed-Price contract for the whole vendor relationship. Using PMBOK 7's Adaptability principle, what's the MOST defensible contract structure for the buyer? *(Create)*
-A. Single FFP for everything — simplest.
+A. Single FFP for everything, simplest.
 B. Single Cost-Reimbursable for everything.
-C. Hybrid contract: FFP for the hardware deliverables (stable spec, clear acceptance criteria), capped T&M or sprint-based fixed-price for the firmware (evolving spec, frequent acceptance), an integration acceptance gate, and a governance clause allowing methodology shifts on the firmware side without renegotiating the hardware side — with shared milestone reviews.
+C. Hybrid contract: FFP for the hardware deliverables (stable spec, clear acceptance criteria), capped T&M or sprint-based fixed-price for the firmware (evolving spec, frequent acceptance), an integration acceptance gate, and a governance clause allowing methodology shifts on the firmware side without renegotiating the hardware side, with shared milestone reviews.
 D. T&M for everything.
 
 ### Q26. Two senior engineers argue: one wants Scrum (sprint-based) because "predictability sells to the customer"; the other wants Kanban because "our work is unpredictable support." Using the Stacey Matrix (Stacey 1996), which is right? *(Analyze)*

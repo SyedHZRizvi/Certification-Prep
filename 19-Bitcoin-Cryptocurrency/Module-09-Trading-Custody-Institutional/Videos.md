@@ -25,7 +25,7 @@
     <div class="vg-thumb"><span>🔑</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">"Not Your Keys, Not Your Coins" — The Custody Principle</p>
+      <p class="vg-title">"Not Your Keys, Not Your Coins", The Custody Principle</p>
       <p class="vg-creator">Andreas Antonopoulos</p>
       <span class="vg-duration">⏱ 22 min · The foundational ethic</span>
     </div>
@@ -43,7 +43,7 @@
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Multi-Sig vs MPC — The Custody Architecture Debate</p>
+      <p class="vg-title">Multi-Sig vs MPC, The Custody Architecture Debate</p>
       <p class="vg-creator">Pierre Rochard / Fireblocks engineering</p>
       <span class="vg-duration">⏱ 28 min · The distinction that matters</span>
     </div>
@@ -116,7 +116,7 @@
     <div class="vg-thumb"><span>📋</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">CCSS Levels 1, 2, 3 — The Custodian Audit Standard</p>
+      <p class="vg-title">CCSS Levels 1, 2, 3, The Custodian Audit Standard</p>
       <p class="vg-creator">CryptoCurrency Certification Consortium (C4)</p>
       <span class="vg-duration">⏱ 16 min · The compliance baseline</span>
     </div>

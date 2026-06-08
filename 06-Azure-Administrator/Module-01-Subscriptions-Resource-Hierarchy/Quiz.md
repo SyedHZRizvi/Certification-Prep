@@ -79,7 +79,7 @@ D. Visual Studio Subscription
 ---
 
 ### Q10. A subscription is currently associated with `contoso.onmicrosoft.com`. Can it be transferred to a different Entra ID tenant? *(Understand)*
-A. No — subscriptions are permanently bound to their original tenant
+A. No, subscriptions are permanently bound to their original tenant
 B. Yes, via the "Change directory" action by a Billing Account Admin
 C. Only by opening a Microsoft support ticket
 D. Only if it's an MCA subscription
@@ -120,7 +120,7 @@ D. 3 → 1 → 2 → 4
 A. Quotas are tenant-wide
 B. Quotas are per-RG
 C. Quotas are per-subscription per-region
-D. There are no quotas — Azure is unlimited
+D. There are no quotas, Azure is unlimited
 
 ---
 
@@ -172,7 +172,7 @@ D. They are detached and orphaned
 
 ---
 
-### Q21. Yes/No — For each statement, mark Yes or No. *(Understand)*
+### Q21. Yes/No, For each statement, mark Yes or No. *(Understand)*
 
 **S1:** A subscription can belong to two management groups simultaneously.
 **S2:** A resource can belong to two resource groups simultaneously.
@@ -209,7 +209,7 @@ D. Receive a 10% credit for any deployment
 
 ---
 
-### Q25. Yes/No — A team needs hard isolation between Prod and Dev (separate billing, separate quotas, separate Owner permissions). Mark Yes or No. *(Evaluate)*
+### Q25. Yes/No, A team needs hard isolation between Prod and Dev (separate billing, separate quotas, separate Owner permissions). Mark Yes or No. *(Evaluate)*
 
 **S1:** Two resource groups in the same subscription satisfy this.
 **S2:** Two subscriptions in the same management group satisfy this.
@@ -225,7 +225,7 @@ D. Yes / No / No
 ## 🎯 Answers + Explanations
 
 ### Q1: **B. Tenant → Management Group → Subscription → Resource Group → Resource**
-The canonical 4-level hierarchy (5 if you count tenant). Memorize this — every governance answer flows from it.
+The canonical 4-level hierarchy (5 if you count tenant). Memorize this, every governance answer flows from it.
 
 ### Q2: **C. 6**
 Up to 6 levels of MGs under the (non-counted) Tenant Root Group. Practical orgs stop at 3–4.

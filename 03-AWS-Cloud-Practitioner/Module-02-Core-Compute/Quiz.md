@@ -78,7 +78,7 @@ D. It runs only on bare metal
 
 ---
 
-### Q10. Which AWS service is BEST described as "Platform-as-a-Service" — you upload code and AWS handles EC2, ELB, Auto Scaling, and monitoring? *(Understand)*
+### Q10. Which AWS service is BEST described as "Platform-as-a-Service", you upload code and AWS handles EC2, ELB, Auto Scaling, and monitoring? *(Understand)*
 A. EC2
 B. Lambda
 C. Elastic Beanstalk
@@ -209,13 +209,13 @@ D. Is only available for Spot
 ## 🎯 Answers + Explanations
 
 ### Q1: **C. Spot Instance**
-Up to 90% off — perfect for fault-tolerant workloads. AWS reclaims with a 2-minute notice. On-Demand has no discount; RIs and Savings Plans require commitments.
+Up to 90% off, perfect for fault-tolerant workloads. AWS reclaims with a 2-minute notice. On-Demand has no discount; RIs and Savings Plans require commitments.
 
 ### Q2: **B. 15 minutes**
 Hard limit. For longer jobs use Fargate, EC2, or AWS Batch.
 
 ### Q3: **B. ECS or EKS on Fargate**
-Fargate is the serverless launch type — no EC2 hosts to manage. EC2 launch type still requires host management.
+Fargate is the serverless launch type, no EC2 hosts to manage. EC2 launch type still requires host management.
 
 ### Q4: **D. `p` or `g` (accelerated computing)**
 GPU families: `p` (highest-end training), `g` (graphics + inference). `Inf` for inference, `Trn` for training with AWS Trainium chips.
@@ -227,7 +227,7 @@ GPU families: `p` (highest-end training), `g` (graphics + inference). `Inf` for 
 Stopped = no compute charges, but EBS volumes persist and bill. To eliminate ALL charges, terminate.
 
 ### Q7: **B. AWS Lightsail**
-Bundled VPS — predictable monthly pricing, perfect for small sites. Pre-built blueprints (WordPress, LAMP, etc.).
+Bundled VPS, predictable monthly pricing, perfect for small sites. Pre-built blueprints (WordPress, LAMP, etc.).
 
 ### Q8: **A. AWS Batch**
 Batch is purpose-built: define a job, Batch queues it, picks the right EC2/Fargate, runs it, shuts it down.
@@ -263,7 +263,7 @@ ASG + ELB across multiple AZs is the textbook HA pattern. Single-AZ is a single 
 Outposts brings AWS into your DC for hybrid use cases. Same APIs as the public cloud.
 
 ### Q19: **B. Running a CI/CD pipeline that can retry failed jobs**
-CI jobs are fault-tolerant — if an interrupted Spot job retries on another, it's fine. Spot is wrong for "always-up" workloads.
+CI jobs are fault-tolerant, if an interrupted Spot job retries on another, it's fine. Spot is wrong for "always-up" workloads.
 
 ### Q20: **B. AWS Batch (often on Spot/Fargate)**
 Built for exactly this: queues thousands of independent jobs, provisions cheap compute (often Spot) automatically.
@@ -275,10 +275,10 @@ Lambda supports Node.js, Python, Java, .NET, Go, Ruby, and custom runtimes via c
 Stopping leaves EBS volumes billing. Termination (with default root-volume-delete-on-termination) stops all charges.
 
 ### Q23: **B. AWS Elastic Beanstalk**
-Beanstalk has no service charge — you only pay for the EC2, ELB, RDS, etc. it spins up on your behalf.
+Beanstalk has no service charge, you only pay for the EC2, ELB, RDS, etc. it spins up on your behalf.
 
 ### Q24: **B. AWS App Runner**
-App Runner takes a container or source repo, builds, deploys, scales — zero infrastructure choices. Even simpler than Beanstalk for containers.
+App Runner takes a container or source repo, builds, deploys, scales, zero infrastructure choices. Even simpler than Beanstalk for containers.
 
 ### Q25: **B. Reserves capacity in a specific AZ but provides NO pricing discount**
 On-Demand Capacity Reservations guarantee capacity (e.g., for a launch event) but you still pay On-Demand prices. Combine with Savings Plans for both capacity AND discount.

@@ -1,13 +1,13 @@
 ---
 permalink: /38-VFX-Compositing/
-title: VFX & Compositing — From Green Screen to Hollywood-Grade Visual Effects
+title: VFX & Compositing, From Green Screen to Hollywood-Grade Visual Effects
 ---
 
 # 🎬 VFX & Compositing
 
 **🎨 Visual Effects · Film & Television · Broadcast Design**
 
-> **Goal:** Master the complete VFX pipeline — from on-set supervision to final composite — using industry-standard tools: Adobe After Effects, Foundry Nuke, and Blender.
+> **Goal:** Master the complete VFX pipeline from on-set supervision to final composite using industry-standard tools: Adobe After Effects, Foundry Nuke, and Blender.
 > **Duration:** 10 weeks part-time (or 5 weeks full-tilt for motion designers with prior AE experience).
 > **Difficulty:** Intermediate to Advanced · Basic video editing knowledge recommended · Adobe CC access required.
 > **Career:** VFX Artist ($70K–$160K), Compositor, Technical Director, Broadcast Designer.
@@ -18,7 +18,7 @@ title: VFX & Compositing — From Green Screen to Hollywood-Grade Visual Effects
 
 ### 🎯 The Promise
 
-Every frame of every blockbuster film you've seen in the last 25 years has been touched by compositors. *Avengers: Endgame* required 2,496 VFX shots. *The Mandalorian* pioneered the LED volume stage that replaced location shoots. *Oppenheimer* won its Oscar in part because of its invisible VFX work. The people who do this work — compositors, VFX artists, technical directors — earn $70K to $160K and their skills travel globally to London (Framestore, MPC, Dneg), Vancouver (Image Engine), Wellington (Weta FX), and Los Angeles (ILM, Digital Domain, Blur).
+Every frame of every blockbuster film you've seen in the last 25 years has been touched by compositors. *Avengers: Endgame* required 2,496 VFX shots. *The Mandalorian* pioneered the LED volume stage that replaced location shoots. *Oppenheimer* won its Oscar in part because of its invisible VFX work. The people who do this work compositors, VFX artists, technical directors earn $70K to $160K and their skills travel globally to London (Framestore, MPC, Dneg), Vancouver (Image Engine), Wellington (Weta FX), and Los Angeles (ILM, Digital Domain, Blur).
 
 This course teaches you what the art-school programs don't: not just *how* to use After Effects, but the **node-graph compositing paradigm** that dominates film work (Nuke), the **color science** that makes digital elements look photographic, and the **production pipeline** that takes a VFX shot from the director's sketch to the final frame delivered to a DI facility.
 
@@ -37,11 +37,11 @@ Average compensation uplift after building a professional reel: **35–55%** wit
 
 ### 🏛️ Why This Course Is Different
 
-- **Studio-grade standards** — every lesson anchored in real production decisions from ILM, Weta FX, Framestore, MPC, and Dneg
-- **The Nuke advantage** — most online courses teach only After Effects; this course teaches the **node graph paradigm** used on every major film for the past 20 years
-- **Color science, not color guessing** — log vs linear, ACES, LUTs, and how Oppenheimer's grain-and-fire aesthetic was engineered
-- **Pipeline thinking** — you will understand where your shot fits in the 2D/3D/DMP/comp pipeline, not just how to use the tools
-- **Practical + digital** — the Gareth Edwards school of filmmaking: how great VFX supervisors make digital look physical
+- **Studio-grade standards**, every lesson anchored in real production decisions from ILM, Weta FX, Framestore, MPC, and Dneg
+- **The Nuke advantage**, most online courses teach only After Effects; this course teaches the **node graph paradigm** used on every major film for the past 20 years
+- **Color science, not color guessing**, log vs linear, ACES, LUTs, and how Oppenheimer's grain-and-fire aesthetic was engineered
+- **Pipeline thinking**, you will understand where your shot fits in the 2D/3D/DMP/comp pipeline, not just how to use the tools
+- **Practical + digital**, the Gareth Edwards school of filmmaking: how great VFX supervisors make digital look physical
 
 ---
 
@@ -49,16 +49,16 @@ Average compensation uplift after building a professional reel: **35–55%** wit
 
 By the end of this track, you'll be able to:
 
-- **Supervise and plan a VFX shot** from pre-production through delivery — understanding plates, pre-vis, on-set markers, and what the compositor needs
-- **Pull professional keys** with Keylight and Nuke's Keyer — the three-step key (rough → refined → fine), spill suppression, and edge refinement on hair and glass
-- **Rotoscope efficiently** using After Effects Rotobrush 2.0 and Silhouette — including the "cheat stack" that speeds up difficult manual roto
+- **Supervise and plan a VFX shot** from pre-production through delivery, understanding plates, pre-vis, on-set markers, and what the compositor needs
+- **Pull professional keys** with Keylight and Nuke's Keyer, the three-step key (rough → refined → fine), spill suppression, and edge refinement on hair and glass
+- **Rotoscope efficiently** using After Effects Rotobrush 2.0 and Silhouette, including the "cheat stack" that speeds up difficult manual roto
 - **Track and stabilize footage** using 2D trackers, Mocha's planar tracker, and 3D camera solves for attaching CG elements to real footage
-- **Build particle systems** with Trapcode Particular and native AE tools — fire, smoke, dust, magic effects — with realistic physics simulation
-- **Think in node graphs** — Nuke's Merge/Grade/Keyer/ColorCorrect/Blur node stack, multi-channel EXR workflows, and why Nuke beats layer-based systems for complex shots
-- **Grade with intention** — primary and secondary correction, shot matching, ACES color management, and the difference between the technical grade and the "look"
-- **Integrate digital and practical elements** — set extensions, sky replacement, wire removal, beauty cleanup — the invisible work that wins VES awards
-- **Build action and destruction FX** — the 7-layer explosion stack, muzzle flashes, lens effects, and Blender destruction sims in AE comp
-- **Assemble a professional reel** — before/after breakdown structure, what ILM and boutique studios want, and how to price your work as a freelancer
+- **Build particle systems** with Trapcode Particular and native AE tools fire, smoke, dust, magic effects with realistic physics simulation
+- **Think in node graphs**, Nuke's Merge/Grade/Keyer/ColorCorrect/Blur node stack, multi-channel EXR workflows, and why Nuke beats layer-based systems for complex shots
+- **Grade with intention**, primary and secondary correction, shot matching, ACES color management, and the difference between the technical grade and the "look"
+- **Integrate digital and practical elements** set extensions, sky replacement, wire removal, beauty cleanup the invisible work that wins VES awards
+- **Build action and destruction FX**, the 7-layer explosion stack, muzzle flashes, lens effects, and Blender destruction sims in AE comp
+- **Assemble a professional reel**, before/after breakdown structure, what ILM and boutique studios want, and how to price your work as a freelancer
 
 ---
 
@@ -93,15 +93,15 @@ By the end of this track, you'll be able to:
 
 ## 📖 The Single Most Important Resource
 
-🔗 **[The VES Handbook of Visual Effects (2nd ed.)](https://www.visualeffectssociety.com/ves-handbook/)** — The authoritative industry reference. Read Chapters 1 (Pipeline), 4 (Compositing), and 7 (Color) before Module 1.
+🔗 **[The VES Handbook of Visual Effects (2nd ed.)](https://www.visualeffectssociety.com/ves-handbook/)**, The authoritative industry reference. Read Chapters 1 (Pipeline), 4 (Compositing), and 7 (Color) before Module 1.
 
 Also bookmark:
 
-- 🔗 **[Nuke Reference Guide — The Foundry](https://learn.foundry.com/nuke/)** — official documentation for every Nuke node
-- 🔗 **[Corridor Crew YouTube channel](https://www.youtube.com/results?search_query=Corridor+Crew+VFX+artists+react)** — working VFX artists breaking down real shots
-- 🔗 **[Video Copilot by Andrew Kramer](https://www.videocopilot.net/)** — the single best free After Effects tutorial library on the internet
-- 🔗 **[VFX Subreddit / VFX Talk forums](https://www.reddit.com/r/vfx/)** — production community, job postings, critique threads
-- 🔗 **[ACES Central](https://acescentral.com/)** — the official resource for ACES color management
+- 🔗 **[Nuke Reference Guide The Foundry](https://learn.foundry.com/nuke/)** official documentation for every Nuke node
+- 🔗 **[Corridor Crew YouTube channel](https://www.youtube.com/results?search_query=Corridor+Crew+VFX+artists+react)**, working VFX artists breaking down real shots
+- 🔗 **[Video Copilot by Andrew Kramer](https://www.videocopilot.net/)**, the single best free After Effects tutorial library on the internet
+- 🔗 **[VFX Subreddit / VFX Talk forums](https://www.reddit.com/r/vfx/)**, production community, job postings, critique threads
+- 🔗 **[ACES Central](https://acescentral.com/)**, the official resource for ACES color management
 
 ---
 
@@ -109,7 +109,7 @@ Also bookmark:
 
 ### The VFX Industry in 2026
 
-The global VFX market reached $11.2B in 2025 (PwC Global Entertainment & Media Outlook). Streaming platforms — Netflix, Disney+, Apple TV+, Amazon — have tripled the volume of VFX-heavy content since 2019. The result: a persistent talent shortage at the compositor level. Studios like Framestore, Dneg, and MPC are hiring globally, and IATSE contracts now cover work done remotely from non-LA/London markets.
+The global VFX market reached $11.2B in 2025 (PwC Global Entertainment & Media Outlook). Streaming platforms Netflix, Disney+, Apple TV+, Amazon have tripled the volume of VFX-heavy content since 2019. The result: a persistent talent shortage at the compositor level. Studios like Framestore, Dneg, and MPC are hiring globally, and IATSE contracts now cover work done remotely from non-LA/London markets.
 
 ### Tools You Will Use
 
@@ -128,7 +128,7 @@ The global VFX market reached $11.2B in 2025 (PwC Global Entertainment & Media O
 ## ⚠️ The 6 Most Common Reasons VFX Artists Get Rejected
 
 1. ❌ **Reel shows process, not result.** Supervisors want to see the *final shot*, not just the before/after split. Lead with your best work.
-2. ❌ **Keys that look keyed.** Edge fringing, spill on the subject's face, inconsistent edge — these are instant red flags. The three-step key in Module 2 prevents all three.
+2. ❌ **Keys that look keyed.** Edge fringing, spill on the subject's face, inconsistent edge, these are instant red flags. The three-step key in Module 2 prevents all three.
 3. ❌ **Tracking that slips.** A 2D track that drifts by frame 50 tells a supervisor you didn't check your work. Learn Mocha planar tracking in Module 4.
 4. ❌ **Color that doesn't match.** A CG element that's slightly too saturated or too cool breaks the illusion. Module 7 teaches shot-matching methodology.
 5. ❌ **Never used Nuke.** For film and high-end TV, "I only know After Effects" closes doors at Framestore, ILM, MPC, Weta, and Dneg. Module 6 fixes this.
@@ -138,7 +138,7 @@ The global VFX market reached $11.2B in 2025 (PwC Global Entertainment & Media O
 
 ## 🃏 Flashcards
 
-🔗 **[Master Flashcards](./Flashcards.md)** — 120+ cards covering every module. Use the interactive widget to drill concepts daily.
+🔗 **[Master Flashcards](./Flashcards.md)**, 120+ cards covering every module. Use the interactive widget to drill concepts daily.
 
 ---
 

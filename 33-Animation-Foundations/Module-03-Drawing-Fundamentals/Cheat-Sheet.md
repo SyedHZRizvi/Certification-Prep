@@ -5,11 +5,11 @@
 ## Gesture Drawing Hierarchy
 
 ```
-1. LINE OF ACTION — the first mark; the dominant energy direction
-2. MAJOR VOLUMES — head (egg), torso (box), pelvis (wedge)
-3. JOINTS — shoulder, elbow, wrist, hip, knee, ankle
-4. LIMB CYLINDERS — connect joints; modified cylinders
-5. REFINEMENT — only after structure is established
+1. LINE OF ACTION, the first mark; the dominant energy direction
+2. MAJOR VOLUMES, head (egg), torso (box), pelvis (wedge)
+3. JOINTS, shoulder, elbow, wrist, hip, knee, ankle
+4. LIMB CYLINDERS, connect joints; modified cylinders
+5. REFINEMENT, only after structure is established
 ```
 
 ---
@@ -32,7 +32,7 @@
 - Object **closer** to camera = appears **larger**
 - Object **farther** from camera = appears **smaller**
 - Use **overlap** to establish depth: closer objects overlap farther ones
-- **The Fist Test:** A punch toward camera — fist should be LARGER than the head at full extension
+- **The Fist Test:** A punch toward camera, fist should be LARGER than the head at full extension
 
 ---
 
@@ -57,7 +57,7 @@
 | Outline before structure | Construction first, outline never required |
 | Symmetrical poses | Shift weight; vary arm heights |
 | Tangents (two shapes touching at one point) | Use overlap instead |
-| Drawing parts separately | Line of action first — parts serve the whole |
+| Drawing parts separately | Line of action first, parts serve the whole |
 | Copying reference literally | Study-then-draw: observe, close, draw from understanding |
 
 ---
@@ -130,7 +130,7 @@ Can demonstrate the technique correctly in a controlled exercise.
 Can apply the technique under production constraints (time pressure, client feedback, iteration cycles) and teach it to a junior.
 
 ### Professional Standard
-Can make real-time decisions about when NOT to use the technique — knowing when a simpler or faster approach delivers equivalent results.
+Can make real-time decisions about when NOT to use the technique, knowing when a simpler or faster approach delivers equivalent results.
 
 ---
 

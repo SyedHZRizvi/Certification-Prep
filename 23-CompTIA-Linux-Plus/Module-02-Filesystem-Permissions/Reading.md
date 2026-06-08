@@ -5,7 +5,7 @@
 > **Prerequisites for this module.** You should be comfortable with:
 > - Running basic shell commands and navigating with `cd`, `ls`, `pwd`
 > - Having root or `sudo` access on a practice VM
-> - Module 1 — you'll see fstab and systemd mount units referenced repeatedly
+> - Module 1, you'll see fstab and systemd mount units referenced repeatedly
 
 ---
 
@@ -35,9 +35,9 @@ drwxrwxr-x 2 analytics analytics 4096 Mar 10 09:14 .
 drwxr-xr-x 4 analytics analytics 4096 Mar 10 09:14 ..
 ```
 
-The directory is owned by `analytics`, mode 775. The service runs as `analytics`. This should work. He even tries `sudo -u analytics touch /srv/data/reports/test` — works. So why doesn't the service?
+The directory is owned by `analytics`, mode 775. The service runs as `analytics`. This should work. He even tries `sudo -u analytics touch /srv/data/reports/test`, works. So why doesn't the service?
 
-Forty minutes later he finds it: `getfacl /srv/data/reports/` shows a **default ACL** inherited from `/srv/data/` that grants `group:auditors:r-x` and a **mask** of `r-x` — which means even though the analytics user has `rwx` on paper, the effective rights are masked down to `r-x`. Someone in a previous project set the ACL and forgot.
+Forty minutes later he finds it: `getfacl /srv/data/reports/` shows a **default ACL** inherited from `/srv/data/` that grants `group:auditors:r-x` and a **mask** of `r-x`, which means even though the analytics user has `rwx` on paper, the effective rights are masked down to `r-x`. Someone in a previous project set the ACL and forgot.
 
 He runs `setfacl -b /srv/data/reports/` (removes all ACLs), restarts the service, and it writes the file. Total time lost: 47 minutes.
 
@@ -93,9 +93,9 @@ VIRTUAL / RUNTIME (in memory, regenerated each boot)
 
 ---
 
-## 🗃️ Inodes — The Real File
+## 🗃️ Inodes, The Real File
 
-Every file in a POSIX filesystem has an **inode** (index node). The inode stores everything *about* the file except the data: permissions, owner UID, group GID, size, timestamps, link count, and pointers to data blocks. The **filename** is *not* in the inode — it's in the parent directory's data, mapping name → inode number.
+Every file in a POSIX filesystem has an **inode** (index node). The inode stores everything *about* the file except the data: permissions, owner UID, group GID, size, timestamps, link count, and pointers to data blocks. The **filename** is *not* in the inode, it's in the parent directory's data, mapping name → inode number.
 
 ```bash
 $ ls -i /etc/passwd
@@ -114,12 +114,12 @@ Change: 2025-03-08 14:22:13.000000000 +0000
 
 ### Implications
 
-1. **Hard links** are multiple directory entries pointing to the same inode. `ln src dst`. They share permissions, owner, size — there's only one file.
+1. **Hard links** are multiple directory entries pointing to the same inode. `ln src dst`. They share permissions, owner, size, there's only one file.
 2. **Symbolic links** (`ln -s src dst`) are separate inodes whose data is the path to the target. They can point across filesystems and to non-existent targets.
 3. **`rm file` decrements the link count.** When count reaches 0 AND no process holds it open, the inode is freed. Until then, `lsof | grep deleted` shows "ghost" files holding disk space.
 4. **You can run out of inodes** even when disk has free space. Common with millions of tiny files (mail spool, npm node_modules, image thumbnails). `df -i` shows inode usage; the fix is to mkfs with more inodes (`mkfs.ext4 -N <count>` or larger inode density).
 
-🚨 **Trap on the exam:** A scenario shows `df -h` with 60% free and a write fails with `No space left on device`. The answer is `df -i` — inodes are exhausted.
+🚨 **Trap on the exam:** A scenario shows `df -h` with 60% free and a write fails with `No space left on device`. The answer is `df -i`, inodes are exhausted.
 
 ---
 
@@ -159,7 +159,7 @@ mount -a                                  # mount everything in fstab
 mount | column -t                         # show current mounts
 ```
 
-### `/etc/fstab` — the boot-time mount table
+### `/etc/fstab`, the boot-time mount table
 
 ```
 # <device>             <mountpoint>     <fstype>  <options>            <dump> <pass>
@@ -173,21 +173,21 @@ tmpfs                  /tmp             tmpfs     defaults,size=2G     0      0
 
 Six fields per line:
 
-1. **Device** — by `UUID=...` (preferred — survives /dev renumbering), `LABEL=...`, or `/dev/sdX`
-2. **Mountpoint** — must exist
-3. **Filesystem type** — ext4, xfs, btrfs, nfs, swap, tmpfs, etc.
-4. **Options** — comma-separated:
+1. **Device** by `UUID=...` (preferred survives /dev renumbering), `LABEL=...`, or `/dev/sdX`
+2. **Mountpoint**, must exist
+3. **Filesystem type**, ext4, xfs, btrfs, nfs, swap, tmpfs, etc.
+4. **Options**, comma-separated:
 
    - `defaults` = `rw,suid,dev,exec,auto,nouser,async`
    - `noexec` (cannot run binaries from this mount)
-   - `nosuid` (ignore SUID bits — common for /home, /tmp)
+   - `nosuid` (ignore SUID bits, common for /home, /tmp)
    - `nodev` (no device files allowed)
-   - `ro` / `rw` — read-only / read-write
-   - `nofail` (don't fail boot if mount fails — CRITICAL for optional drives)
+   - `ro` / `rw`, read-only / read-write
+   - `nofail` (don't fail boot if mount fails, CRITICAL for optional drives)
    - `_netdev` (don't try until network is up; for NFS/iSCSI)
    - `x-systemd.device-timeout=10s` (give up after 10s)
-5. **dump** — 0 (don't back up via `dump`), 1 (back up) — legacy
-6. **pass** — fsck order at boot: 0 = no check, 1 = root, 2 = others
+5. **dump** 0 (don't back up via `dump`), 1 (back up) legacy
+6. **pass**, fsck order at boot: 0 = no check, 1 = root, 2 = others
 
 ### Always test fstab BEFORE rebooting
 
@@ -200,7 +200,7 @@ findmnt --verify                          # checks the fstab for sanity
 
 ---
 
-## 🔐 Permissions — The DAC Layer
+## 🔐 Permissions, The DAC Layer
 
 POSIX permissions (Discretionary Access Control) are three sets of three bits: **rwx for owner, rwx for group, rwx for other**, plus three special bits (SUID, SGID, sticky).
 
@@ -238,7 +238,7 @@ Add per triad. `rwxr-xr-x` = `7 5 5`. Common modes:
 | `666` | `rw-rw-rw-` | World-writable file (usually wrong) |
 | `777` | `rwxrwxrwx` | World-writable + executable (almost ALWAYS wrong) |
 
-### chmod — symbolic vs octal
+### chmod, symbolic vs octal
 
 ```bash
 chmod 755 script.sh                       # absolute (replaces)
@@ -248,7 +248,7 @@ chmod o-r,o-w,o-x secret.key              # remove all "other" rights
 chmod -R g+w shared/                      # recursive, add group write
 ```
 
-### chown — ownership
+### chown, ownership
 
 ```bash
 chown alice file                          # change owner
@@ -259,18 +259,18 @@ chown -R alice:devs /srv/app              # recursive
 
 `chgrp` is a shortcut for "change group only" (same as `chown :group`).
 
-### umask — default permission mask
+### umask, default permission mask
 
 When a file is created, the kernel applies `mode & ~umask`. With `umask 022`:
 
-- Files: `0666 & ~022 = 0644` (rw-r--r--) — files never get execute by default
+- Files: `0666 & ~022 = 0644` (rw-r--r--), files never get execute by default
 - Dirs: `0777 & ~022 = 0755` (rwxr-xr-x)
 
 Common umasks:
 
-- `022` — system default; everyone can read
-- `002` — group-collaborative (Debian per-user-group convention)
-- `077` — paranoid (only owner)
+- `022`, system default; everyone can read
+- `002`, group-collaborative (Debian per-user-group convention)
+- `077`, paranoid (only owner)
 
 Set persistently in `/etc/profile` or `/etc/login.defs` (PAM-based).
 
@@ -286,7 +286,7 @@ Beyond rwx, three more bits sit on top:
 | **SGID** | 2 | Execute AS the file's group | New files inherit the directory's group |
 | **Sticky** | 1 | (no effect on modern Linux) | Only the owner of a file can delete it from this dir |
 
-### SUID example — `/usr/bin/passwd`
+### SUID example, `/usr/bin/passwd`
 
 ```
 $ ls -l /usr/bin/passwd
@@ -297,7 +297,7 @@ $ ls -l /usr/bin/passwd
 
 To set: `chmod u+s file` or `chmod 4755 file`.
 
-🚨 **Trap on the exam:** A *capital* `S` (instead of lowercase `s`) in the SUID position means SUID is set but execute is NOT — the bit is configured but won't fire. Same for SGID. Always verify by trying `chmod 4755` (lowercase s implied because x is on) vs `chmod 4644` (uppercase S because no x).
+🚨 **Trap on the exam:** A *capital* `S` (instead of lowercase `s`) in the SUID position means SUID is set but execute is NOT, the bit is configured but won't fire. Same for SGID. Always verify by trying `chmod 4755` (lowercase s implied because x is on) vs `chmod 4644` (uppercase S because no x).
 
 ### SGID on a directory (collaborative team scratch space)
 
@@ -322,7 +322,7 @@ Set: `chmod +t dir` or `chmod 1777 dir`.
 
 ---
 
-## 📋 ACLs — Beyond rwx
+## 📋 ACLs, Beyond rwx
 
 POSIX ACLs (Access Control Lists) let you grant per-user / per-group permissions beyond the single-owner / single-group model.
 
@@ -386,7 +386,7 @@ chattr -i /etc/resolv.conf                # unlock
 
 ## 🔬 Scenario Walkthrough (PBQ-style thinking)
 
-> **Scenario:** A web app must write log files into `/srv/web/logs/`. The app runs as user `web` (UID 600), and a separate `auditor` user (UID 700) must be able to read every log file the app creates — even though the app's umask is 022 (creating files mode 644 owned by `web:web`). The auditor must NOT be able to write or delete. You may set up ACLs once. What setup achieves this?
+> **Scenario:** A web app must write log files into `/srv/web/logs/`. The app runs as user `web` (UID 600), and a separate `auditor` user (UID 700) must be able to read every log file the app creates, even though the app's umask is 022 (creating files mode 644 owned by `web:web`). The auditor must NOT be able to write or delete. You may set up ACLs once. What setup achieves this?
 
 **Walkthrough:**
 1. Owner is `web`; group is `web`; other = r--. Auditor (different user, not in `web` group) gets only "other" → r--. That actually already works for read! But the issue is *future files*: each new file is `web:web` 0644, and without a default ACL on the directory, the auditor will continue to get only the `other` 4-bit.
@@ -401,12 +401,12 @@ setfacl -d -m u:auditor:r /srv/web/logs                  # DEFAULT inherited by 
 3. Verify:
 ```bash
 getfacl /srv/web/logs                                    # both ACLs should appear
-# Touch a file as web, then as auditor try cat — read should work, write should fail.
+# Touch a file as web, then as auditor try cat, read should work, write should fail.
 ```
 
 4. **The mask matters.** If the directory's mask is too restrictive (e.g. r--), even the explicit `u:auditor:r` is capped to r. Confirm mask is at least `r-x`. If you want auditor read on future files without group-write contamination, ALSO ensure the file `other` doesn't drift to 0 (don't change the app's umask to 077 without considering this).
 
-This is exactly the level of two-step reasoning a PBQ tests — the answer involves *both* an active ACL and a *default* ACL.
+This is exactly the level of two-step reasoning a PBQ tests, the answer involves *both* an active ACL and a *default* ACL.
 
 ---
 
@@ -419,7 +419,7 @@ This is exactly the level of two-step reasoning a PBQ tests — the answer invol
 | "`chmod -R 755 dir` on a tree of files is safe" | `755` makes every file executable! Use `find … -type f -exec chmod 644 {} +` and `-type d -exec chmod 755 {} +` separately. |
 | "Capital S in mode means SUID is working" | Capital S = SUID set but no execute = doesn't actually fire. |
 | "ACLs override regular permissions" | ACLs *extend* DAC; the mask caps named-user/group entries. The owner's rwx still applies via the owning user entry. |
-| "df shows full when it's full" | `df` (blocks) AND `df -i` (inodes) — both can fill independently. |
+| "df shows full when it's full" | `df` (blocks) AND `df -i` (inodes), both can fill independently. |
 | "rm releases disk space immediately" | Only if no process holds an open FD. `lsof | grep deleted` reveals "deleted-but-held" files. |
 | "Hard links and symlinks are the same" | Hard link = same inode, can't cross FS, target deletion doesn't dangle. Symlink = new inode, can cross FS, dangles if target gone. |
 | "Sticky bit affects files" | Modern Linux ignores sticky on files; it's a directory-only protection. |
@@ -430,7 +430,7 @@ This is exactly the level of two-step reasoning a PBQ tests — the answer invol
 
 | Term | Definition |
 |------|------------|
-| **FHS** | Filesystem Hierarchy Standard 3.0 — the directory-purpose rulebook |
+| **FHS** | Filesystem Hierarchy Standard 3.0, the directory-purpose rulebook |
 | **inode** | The structure holding file metadata + data-block pointers |
 | **Hard link** | A second directory entry to the same inode |
 | **Symlink** | A separate inode whose data is a path to the target |
@@ -438,12 +438,12 @@ This is exactly the level of two-step reasoning a PBQ tests — the answer invol
 | **SUID** | Run executable as the file's owner |
 | **SGID** | Run as group (file); inherit group (dir) |
 | **Sticky bit** | Only file owner can unlink (used on /tmp) |
-| **DAC** | Discretionary Access Control — the rwx model |
-| **ACL** | Access Control List — per-user/per-group extension to DAC |
+| **DAC** | Discretionary Access Control, the rwx model |
+| **ACL** | Access Control List, per-user/per-group extension to DAC |
 | **getfacl / setfacl** | Read / write ACL entries |
 | **mask** (ACL) | Upper bound on effective rights for named entries |
 | **chattr / lsattr** | Manage / view ext file attributes (`i`, `a`, etc.) |
-| **fstab** | `/etc/fstab` — persistent boot-time mounts |
+| **fstab** | `/etc/fstab`, persistent boot-time mounts |
 | **nofail** | fstab option: don't fail boot if mount fails |
 | **noexec / nosuid / nodev** | Hardening mount options |
 
@@ -463,7 +463,7 @@ This is exactly the level of two-step reasoning a PBQ tests — the answer invol
 
 ---
 
-## 📊 Case Study — The Healthcare Backup Wipeout (2018)
+## 📊 Case Study, The Healthcare Backup Wipeout (2018)
 
 **Situation.** A mid-sized US regional hospital network ran a nightly Postgres backup to a 4 TB external USB drive mounted at `/mnt/backup`. The fstab line was:
 
@@ -473,13 +473,13 @@ This is exactly the level of two-step reasoning a PBQ tests — the answer invol
 
 The backup script ran as root via cron at 02:00, dumped Postgres into a date-stamped directory, then ran an aggressive `rm -rf /mnt/backup/old-*` to enforce a 30-day retention.
 
-**Decision.** A junior admin replaced the failing USB enclosure. The OS booted before the new drive was plugged in. `/dev/sdb1` did not exist; the mount silently failed (the entry lacked `nofail`, so the boot continued to emergency-then-recovery without anyone noticing because the cloud monitoring didn't watch mount targets). The `/mnt/backup` mountpoint still existed as a normal empty directory on `/`. At 02:00, the cron script ran. It wrote 80 GB of backup data to `/mnt/backup/...` — which now meant the **root filesystem**. Then it ran `rm -rf /mnt/backup/old-*`.
+**Decision.** A junior admin replaced the failing USB enclosure. The OS booted before the new drive was plugged in. `/dev/sdb1` did not exist; the mount silently failed (the entry lacked `nofail`, so the boot continued to emergency-then-recovery without anyone noticing because the cloud monitoring didn't watch mount targets). The `/mnt/backup` mountpoint still existed as a normal empty directory on `/`. At 02:00, the cron script ran. It wrote 80 GB of backup data to `/mnt/backup/...`, which now meant the **root filesystem**. Then it ran `rm -rf /mnt/backup/old-*`.
 
 **Outcome.** `/` filled up at 02:14. The OOM killer terminated postgres and the EHR service. Patient charts became unavailable for 7 hours. When recovery began, the team discovered they had no working backup older than 7 days, because the failing USB drive's last successful backup was a week prior. Total HIPAA-reportable downtime: 7 hours. Cost (audit, attorneys, internal IR): >$200,000.
 
 **Lesson for the exam / for practitioners.** Three concrete lessons map directly to XK0-005 objectives:
 
-1. **Always use `nofail` (and `x-systemd.device-timeout`) on removable/optional storage.** Without `nofail`, a missing device drops the system to emergency mode at boot. With `nofail`, a missing device leaves the mountpoint empty — which is its own danger.
+1. **Always use `nofail` (and `x-systemd.device-timeout`) on removable/optional storage.** Without `nofail`, a missing device drops the system to emergency mode at boot. With `nofail`, a missing device leaves the mountpoint empty, which is its own danger.
 2. **Always verify a mount is the expected device before writing to it.** Production backup scripts should `findmnt /mnt/backup` and abort if the source device isn't the expected UUID, or write to `/mnt/backup/EXPECTED_DEVICE_PRESENT.sentinel` and refuse to run if the sentinel is missing.
 3. **A mountpoint is just a directory.** When the mount isn't there, writes to that path go to the underlying FS. This is the most-painful filesystem lesson in production Linux. The exam tests this concept via "what would have prevented the data loss" questions.
 
@@ -499,15 +499,15 @@ You now know:
 - 💽 The strengths and trade-offs of **ext4, XFS, Btrfs, ZFS**
 - 🔌 How to safely edit **`/etc/fstab`** with `mount -a` and `findmnt --verify`, and the meaning of `nofail`, `noexec`, `nosuid`
 - 🔐 **DAC permissions** in symbolic and octal form, with umask
-- ⚡ **SUID, SGID, and sticky** — what they do on files vs directories
+- ⚡ **SUID, SGID, and sticky**, what they do on files vs directories
 - 📋 **ACLs** with `getfacl`/`setfacl`, default ACLs for inheritance, and the mask trap
 - 🏷️ **chattr** attributes like immutable (`i`) and append-only (`a`)
 
 **Next steps:**
 1. 🎥 Watch the curated videos: [Videos.md](./Videos.md)
-2. ✏️ Take the quiz: [Quiz.md](./Quiz.md) — aim for 22/26
+2. ✏️ Take the quiz: [Quiz.md](./Quiz.md), aim for 22/26
 3. 📋 Review the [Cheat-Sheet.md](./Cheat-Sheet.md) before bed
-4. ➡️ Move on: [Module 3 — Package Management](../Module-03-Package-Management/Reading.md)
+4. ➡️ Move on: [Module 3, Package Management](../Module-03-Package-Management/Reading.md)
 
 > **Where this leads.**
 > - Inside this course: [Module 5](../Module-05-Users-Groups/Reading.md) shows how user/group IDs map to file ownership; [Module 7](../Module-07-Kernel-Modules/Reading.md) covers LVM (a layer between block devices and the filesystem); [Module 8](../Module-08-Security/Reading.md) adds MAC (SELinux/AppArmor) on top of the DAC model in this module.
@@ -519,11 +519,11 @@ You now know:
 
 **Primary sources:**
 - 📄 Linux Foundation (2015). [*Filesystem Hierarchy Standard 3.0*](https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.html). The authoritative reference. Read §3 (the directory tree).
-- 📄 POSIX.1-2017 (IEEE Std 1003.1-2017) — the standard underlying file permissions and most of what this module covers.
-- 📄 `man 7 inode`, `man 1 chmod`, `man 1 chattr`, `man 5 acl`, `man 5 fstab` — the canonical references; treat the man pages as the truth.
-- 📄 Theodore Ts'o, [*Ext4 Filesystem Design*](https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html) — the Linux kernel ext4 docs.
+- 📄 POSIX.1-2017 (IEEE Std 1003.1-2017), the standard underlying file permissions and most of what this module covers.
+- 📄 `man 7 inode`, `man 1 chmod`, `man 1 chattr`, `man 5 acl`, `man 5 fstab`, the canonical references; treat the man pages as the truth.
+- 📄 Theodore Ts'o, [*Ext4 Filesystem Design*](https://www.kernel.org/doc/html/latest/filesystems/ext4/index.html), the Linux kernel ext4 docs.
 
 **Practitioner / exam:**
-- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023) — Chapters 7 & 16.
-- 📖 Daniel Barrett, *Linux Pocket Guide* (O'Reilly, 4th ed., 2024) — the permissions and filesystem chapters are exam-perfect length.
-- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021) — Chapter 4 (Disks, Filesystems, Boot) is the best single chapter on this material.
+- 📖 Sander van Vugt, *CompTIA Linux+ XK0-005 Cert Guide* (Pearson, 2023), Chapters 7 & 16.
+- 📖 Daniel Barrett, *Linux Pocket Guide* (O'Reilly, 4th ed., 2024), the permissions and filesystem chapters are exam-perfect length.
+- 📖 Brian Ward, *How Linux Works* (No Starch, 3rd ed., 2021), Chapter 4 (Disks, Filesystems, Boot) is the best single chapter on this material.

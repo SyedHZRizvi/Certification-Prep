@@ -9,241 +9,241 @@
 ## 📝 Questions
 
 ### 1. Does your portfolio plan clearly state which of the 3 audience paths (Job / Client / Indie) you're on?
-A. Yes — explicitly stated with reasoning
-B. Yes — stated but reasoning thin
+A. Yes, explicitly stated with reasoning
+B. Yes, stated but reasoning thin
 C. Partially
 D. Not stated
 
 ### 2. Are all 5 of your capstone subjects REAL (not hypothetical or "to be determined")?
-A. Yes — 5 named real subjects
+A. Yes, 5 named real subjects
 B. 3–4 real
 C. 1–2 real
 D. None real
 
 ### 3. Is each of your capstones written up in P-C-A-R-L format (Problem / Constraints / Approach / Result / Lessons)?
-A. Yes — all that are done use this
+A. Yes, all that are done use this
 B. Most do
 C. Some do
 D. Inconsistent or none
 
 ### 4. Is your SEO audit between 15–20 pages?
-A. Yes — 15–20 pages
+A. Yes, 15–20 pages
 B. 12–14 or 21–25
 C. <12 or >25
 D. Not done
 
 ### 5. Does your SEO audit include Ahrefs / SEMrush data with timestamps?
-A. Yes — fully sourced
+A. Yes, fully sourced
 B. Sourced, no timestamps
 C. Partial sourcing
 D. No sourcing
 
 ### 6. Does your SEO audit include a 90-day content roadmap with 8–12 prioritized articles?
-A. Yes — exact format
+A. Yes, exact format
 B. Roadmap with fewer/more articles
 C. Vague topic list
 D. Missing
 
 ### 7. Did your paid campaign actually run live for at least 14 days?
-A. Yes — 14+ days
+A. Yes, 14+ days
 B. 10–13 days
 C. <10 days
 D. Didn't launch
 
 ### 8. Did you spend at least $150 on the paid campaign?
-A. Yes — $180–$220 (target range)
+A. Yes, $180–$220 (target range)
 B. $150–$179 or $221–$250
 C. <$150
 D. Didn't spend
 
 ### 9. Does your paid campaign post-mortem prominently include FAILURES (not just wins)?
-A. Yes — failures featured
+A. Yes, failures featured
 B. Failures mentioned briefly
 C. Failures glossed
 D. Only wins shown
 
 ### 10. Is your paid campaign post-mortem 1,500–2,500 words?
-A. Yes — within range
+A. Yes, within range
 B. 1,000–1,499 or 2,500–3,500
 C. <1,000 or >3,500
 D. Not written
 
 ### 11. Does your automation scenario have at least 5 connected steps with at least one router?
-A. Yes — 5+ steps + router
+A. Yes, 5+ steps + router
 B. 5+ steps, no router
 C. <5 steps
 D. Not built
 
 ### 12. Did you record a Loom walkthrough of the automation showing live execution?
-A. Yes — live exec, public
+A. Yes, live exec, public
 B. Loom recorded, not live exec
 C. Code/screenshots only
 D. No Loom
 
 ### 13. Did you export the automation as JSON / blueprint, sanitize, and host publicly?
-A. Yes — sanitized + public
+A. Yes, sanitized + public
 B. Exported, not public
 C. Have it locally
 D. Didn't export
 
 ### 14. Does your attribution model compare at least 3 methods (Last-Click + Linear + Markov/Shapley)?
-A. Yes — 3 methods
+A. Yes, 3 methods
 B. 2 methods
 C. 1 method
 D. Not built
 
 ### 15. Did you use a sample size of at least 100 customer journeys?
-A. Yes — 100+
+A. Yes, 100+
 B. 50–99
 C. <50
 D. Synthetic / unclear
 
 ### 16. Did you create a clustered bar chart comparing the attribution models?
-A. Yes — clean labeled chart
+A. Yes, clean labeled chart
 B. Chart, basic
 C. Table only
 D. No chart
 
 ### 17. Is your portfolio site (Notion / Webflow / Read.cv / etc.) LIVE and publicly linkable?
-A. Yes — live + linkable
+A. Yes, live + linkable
 B. Drafted, not public
 C. In progress
 D. Not built
 
 ### 18. Does each capstone case study page have a hero image / chart at the top?
-A. Yes — all do
+A. Yes, all do
 B. Most do
 C. Some do
 D. None do
 
 ### 19. Did you publicly share at least one capstone on LinkedIn?
-A. Yes — posted with engagement
+A. Yes, posted with engagement
 B. Posted, no engagement
 C. Drafted
 D. Not posted
 
 ### 20. Did you collect a testimonial from at least one capstone subject?
-A. Yes — testimonial received
+A. Yes, testimonial received
 B. Asked, awaiting reply
 C. Plan to ask
 D. Won't ask
 
 ### 21. Could a recruiter understand your strongest case study by reading it for 3 minutes?
-A. Yes — verified by peer test
+A. Yes, verified by peer test
 B. Should be readable
 C. Maybe
 D. Probably not
 
-### 22. Did you use AI tools (Midjourney / DALL·E / Claude / Cursor) in at least 2 capstones — and disclose it?
-A. Yes — used + disclosed
+### 22. Did you use AI tools (Midjourney / DALL·E / Claude / Cursor) in at least 2 capstones, and disclose it?
+A. Yes, used + disclosed
 B. Used, not disclosed
 C. Plan to use
 D. Avoided
 
 ### 23. Did you spend approximately 30–40 focused hours on Capstones 1–4 combined?
-A. Yes — within range
+A. Yes, within range
 B. 20–30 or 40–50
 C. <20 or >50
 D. Lost track
 
 ### 24. Did you avoid the "polish forever" trap on your portfolio site?
-A. Yes — shipped Notion + iterating
+A. Yes, shipped Notion + iterating
 B. Shipped, less polished
 C. Polishing forever
 D. Still polishing
 
 ### 25. Can you describe each of the 4 finished capstones in one sentence cold?
-A. Yes — all 4
+A. Yes, all 4
 B. 3 of 4
 C. 1–2
 D. Not yet
 
 ### 26. Have you practiced the 90-second pitch for any capstone out loud?
-A. Yes — multiple capstones, practiced
-B. Yes — one capstone
+A. Yes, multiple capstones, practiced
+B. Yes, one capstone
 C. Drafted, not practiced
 D. Not yet
 
 ### 27. Did you write down explicit "what I'd do differently" lessons for each capstone?
-A. Yes — all 4
+A. Yes, all 4
 B. Most
 C. Some
 D. None
 
 ### 28. Is your LinkedIn headline updated to reflect the capstones?
-A. Yes — capstone-anchored
+A. Yes, capstone-anchored
 B. Updated, generic
 C. Lightly tweaked
 D. Default
 
 ### 29. Did you avoid using REAL customer/employer data without permission?
-A. Yes — checked + clean
+A. Yes, checked + clean
 B. Mostly clean
 C. Some risk
 D. Used real PII
 
 ### 30. Is your linked SEO audit a downloadable PDF or public Notion page (not on private Drive)?
-A. Yes — publicly accessible
+A. Yes, publicly accessible
 B. Public but unfindable
 C. Drafted privately
 D. Not shareable
 
 ### 31. Did you build the attribution model in a publicly shared sheet / notebook?
-A. Yes — public link works
+A. Yes, public link works
 B. Public but not linked from portfolio
 C. Private
 D. No
 
 ### 32. Does the automation case study include an architecture diagram?
-A. Yes — clean diagram (Excalidraw/Whimsical)
+A. Yes, clean diagram (Excalidraw/Whimsical)
 B. Sketched diagram
 C. No diagram
 D. N/A
 
 ### 33. Could you answer "Why did you choose this attribution method?" in an interview?
-A. Yes — articulate
+A. Yes, articulate
 B. Could explain technically
 C. Roughly
 D. Not confident
 
 ### 34. Did you document tool costs for each capstone? (Ahrefs trial, ad spend, Make subscription, API credits)
-A. Yes — total cost tracked
+A. Yes, total cost tracked
 B. Some tracking
 C. Roughly know
 D. No tracking
 
 ### 35. Did you treat each capstone deadline seriously (set + mostly hit)?
-A. Yes — set deadlines, hit most
+A. Yes, set deadlines, hit most
 B. Set deadlines, missed often
 C. Loose deadlines
 D. No deadlines
 
 ### 36. Have you reviewed your work with a peer or mentor at any point?
-A. Yes — at least 2 peer reviews
+A. Yes, at least 2 peer reviews
 B. 1 review
 C. Self-only
 D. Haven't shared
 
 ### 37. Are the screenshots in your case studies clean, labeled, and high resolution?
-A. Yes — all are
+A. Yes, all are
 B. Most are
 C. Some are
 D. Sloppy / missing
 
 ### 38. Could a hiring manager scan your portfolio site in 90 seconds and understand your level?
-A. Yes — verified
+A. Yes, verified
 B. Should be true
 C. Probably
 D. Probably not
 
 ### 39. Did you avoid the "tools list trap" (listing software instead of work)?
-A. Yes — work-first
+A. Yes, work-first
 B. Mostly work-first
 C. Some tools-list bleed
 D. Heavy tools list
 
 ### 40. Are you ready (mentally and tactically) to move into Module 6 (AI Agent)?
-A. Yes — ready
+A. Yes, ready
 B. Mostly
 C. Need a break
 D. Behind on Modules 1–5
@@ -279,7 +279,7 @@ Q10: A   Q20: A    Q30: A    Q40: A
 
 **Q4 (SEO audit length)**: 15-20 pages is the calibrated range. Less = thin. More = unscoped.
 
-**Q5 (Sourced data)**: "Source: Ahrefs Site Explorer, 2026-05-22" — like a doctor citing labs.
+**Q5 (Sourced data)**: "Source: Ahrefs Site Explorer, 2026-05-22", like a doctor citing labs.
 
 **Q6 (Roadmap)**: 8-12 articles with keyword, volume, KD, words, priority, month. The highest-value section of the audit.
 
@@ -379,35 +379,35 @@ The portfolio is only as strong as its weakest piece. If 1 capstone is at "Faili
 
 ## Detailed answer rationales
 
-> Unlike traditional certification exams, this self-evaluation has no "wrong" options — A/B/C/D are gradients of how complete the work is. The rationales below explain, for the highest-stakes questions, *why* "A" is the Excellent benchmark, what each lower option (B/C/D) represents as a gap, and the takeaway for shipping at-bar work.
+> Unlike traditional certification exams, this self-evaluation has no "wrong" options, A/B/C/D are gradients of how complete the work is. The rationales below explain, for the highest-stakes questions, *why* "A" is the Excellent benchmark, what each lower option (B/C/D) represents as a gap, and the takeaway for shipping at-bar work.
 
-**Q2. Answer: A — "Yes — 5 named real subjects"**
+**Q2. Answer: A "Yes 5 named real subjects"**
 
 **Why A is the Excellent benchmark.** Real subjects are the foundation of every capstone. "Named real subject" means you have a business name, a URL, and shareable data. Without this, every capstone defaults to hypothetical, and hypothetical case studies fail the hiring-manager smell test.
 
 **Why the other options fall short.**
 - **B (3–4 real)**: You'll likely substitute a hypothetical for the missing 1–2, which dilutes the whole portfolio. The 5th gap becomes the weak link.
 - **C (1–2 real)**: 60%+ of your portfolio is fictional. A hiring manager scanning your case studies will sense the gap and discount the entire body of work.
-- **D (None real)**: Portfolio doesn't actually exist. Re-do Module 1 — picking subjects is the gate.
+- **D (None real)**: Portfolio doesn't actually exist. Re-do Module 1, picking subjects is the gate.
 
 **Exam-takeaway.** Specificity = credibility. If a recruiter can't find the subject of your case study with a Google search, they will assume it's invented.
 
 ---
 
-**Q5. Answer: A — "Yes — fully sourced"**
+**Q5. Answer: A "Yes fully sourced"**
 
 **Why A is the Excellent benchmark.** Sourced data ("Source: Ahrefs Site Explorer, captured 2026-05-22") is the difference between a portfolio audit and a homework essay. It signals the same discipline a senior consultant brings to a client deliverable.
 
 **Why the other options fall short.**
-- **B (Sourced, no timestamps)**: Without timestamps, the audit reads as undated — and Ahrefs/SEMrush data changes weekly. A hiring manager who notices the missing date will discount the analysis.
-- **C (Partial sourcing)**: Inconsistent sourcing is worse than no sourcing — it implies you cite when convenient and skip when it'd undercut your point.
+- **B (Sourced, no timestamps)**: Without timestamps, the audit reads as undated, and Ahrefs/SEMrush data changes weekly. A hiring manager who notices the missing date will discount the analysis.
+- **C (Partial sourcing)**: Inconsistent sourcing is worse than no sourcing, it implies you cite when convenient and skip when it'd undercut your point.
 - **D (No sourcing)**: Looks like opinions, not analysis. This is the most common junior-portfolio failure.
 
 **Exam-takeaway.** Cite like a doctor citing labs. Every claim has a screenshot + a timestamp + a source.
 
 ---
 
-**Q8. Answer: A — "Yes — $180–$220 (target range)"**
+**Q8. Answer: A "Yes $180–$220 (target range)"**
 
 **Why A is the Excellent benchmark.** The $200 target is calibrated to be real money (enough to learn from), affordable (most students can budget it), and credible (recruiters and clients respect the seriousness of putting your own dollars on the line).
 
@@ -416,39 +416,39 @@ The portfolio is only as strong as its weakest piece. If 1 capstone is at "Faili
 - **C (<$150)**: Sub-$150 campaigns can't generate enough impressions on Meta for the algorithm to learn. The data is too noisy to draw useful lessons.
 - **D (Didn't spend)**: The capstone doesn't exist. Hypothetical paid campaigns are the most-easily-spotted fakes in any portfolio.
 
-**Exam-takeaway.** Real money creates real signal. Sub-$150 isn't a budget thing — it's a "did this person actually run a real campaign" check.
+**Exam-takeaway.** Real money creates real signal. Sub-$150 isn't a budget thing, it's a "did this person actually run a real campaign" check.
 
 ---
 
-**Q9. Answer: A — "Yes — failures featured"**
+**Q9. Answer: A "Yes failures featured"**
 
-**Why A is the Excellent benchmark.** Featured failures (in a section header, on a carousel slide) signal the highest-trust portfolio behavior. Hiring managers have read hundreds of sanitized "all wins" case studies — yours stands out because it's honest.
+**Why A is the Excellent benchmark.** Featured failures (in a section header, on a carousel slide) signal the highest-trust portfolio behavior. Hiring managers have read hundreds of sanitized "all wins" case studies, yours stands out because it's honest.
 
 **Why the other options fall short.**
 - **B (Failures mentioned briefly)**: One paragraph buried at the end. Looks like CYA, not transparency.
 - **C (Failures glossed)**: Reads as suspiciously perfect. Senior readers will distrust the entire write-up.
-- **D (Only wins shown)**: Default junior portfolio pattern. Tells the reader you're hiding something — even when you're not.
+- **D (Only wins shown)**: Default junior portfolio pattern. Tells the reader you're hiding something, even when you're not.
 
 **Exam-takeaway.** Vulnerability is the cheapest, fastest signal of seniority. Bombed creatives + the data + what you learned = the trust-building section of any post-mortem.
 
 ---
 
-**Q14. Answer: A — "Yes — 3 methods"**
+**Q14. Answer: A "Yes 3 methods"**
 
-**Why A is the Excellent benchmark.** The whole point of the attribution capstone is *contrast*. Three models (Last-Click, Linear, Markov/Shapley) generate a visible delta in channel rankings — that delta is what makes the chart memorable.
+**Why A is the Excellent benchmark.** The whole point of the attribution capstone is *contrast*. Three models (Last-Click, Linear, Markov/Shapley) generate a visible delta in channel rankings, that delta is what makes the chart memorable.
 
 **Why the other options fall short.**
-- **B (2 methods)**: Last-Click + Linear alone show a small delta — not interesting enough to be the "money-shot" insight.
+- **B (2 methods)**: Last-Click + Linear alone show a small delta, not interesting enough to be the "money-shot" insight.
 - **C (1 method)**: Just doing Last-Click is what GA4 does for free. Not portfolio-grade.
 - **D (Not built)**: Capstone missing. Re-do Module 5.
 
-**Exam-takeaway.** The comparison IS the capstone. Without 3+ models, the reader has nothing to be surprised by — and surprise is what makes the analytical signal memorable.
+**Exam-takeaway.** The comparison IS the capstone. Without 3+ models, the reader has nothing to be surprised by, and surprise is what makes the analytical signal memorable.
 
 ---
 
-**Q17. Answer: A — "Yes — live + linkable"**
+**Q17. Answer: A "Yes live + linkable"**
 
-**Why A is the Excellent benchmark.** A live portfolio site is the *only* form of portfolio that exists. Anything not publicly accessible isn't a portfolio — it's a draft.
+**Why A is the Excellent benchmark.** A live portfolio site is the *only* form of portfolio that exists. Anything not publicly accessible isn't a portfolio, it's a draft.
 
 **Why the other options fall short.**
 - **B (Drafted, not public)**: Functionally equivalent to no portfolio. The recruiter will hit your LinkedIn, see no live link, and skip.
@@ -459,9 +459,9 @@ The portfolio is only as strong as its weakest piece. If 1 capstone is at "Faili
 
 ---
 
-**Q22. Answer: A — "Yes — used + disclosed"**
+**Q22. Answer: A "Yes used + disclosed"**
 
-**Why A is the Excellent benchmark.** In 2026, hiding AI use signals you don't know how marketing teams actually work — every modern team uses Midjourney/Claude/Cursor. *Disclosing* AI use signals self-awareness and honesty, both senior signals.
+**Why A is the Excellent benchmark.** In 2026, hiding AI use signals you don't know how marketing teams actually work, every modern team uses Midjourney/Claude/Cursor. *Disclosing* AI use signals self-awareness and honesty, both senior signals.
 
 **Why the other options fall short.**
 - **B (Used, not disclosed)**: A hiring manager who pattern-matches AI-generated copy will assume the worst about you. Disclosure protects you.
@@ -472,9 +472,9 @@ The portfolio is only as strong as its weakest piece. If 1 capstone is at "Faili
 
 ---
 
-**Q33. Answer: A — "Yes — articulate"**
+**Q33. Answer: A "Yes articulate"**
 
-**Why A is the Excellent benchmark.** You'll be asked "why did you pick THIS model?" in every interview. Being able to articulate the trade-off in 60 seconds — Markov assumes the Markov property, Shapley is fairer but computationally expensive, Last-Click is what GA4 defaults to — is what separates analytically credible from analytically performative.
+**Why A is the Excellent benchmark.** You'll be asked "why did you pick THIS model?" in every interview. Being able to articulate the trade-off in 60 seconds Markov assumes the Markov property, Shapley is fairer but computationally expensive, Last-Click is what GA4 defaults to is what separates analytically credible from analytically performative.
 
 **Why the other options fall short.**
 - **B (Could explain technically)**: Means you can answer "how" but not "why under these conditions." Misses the trade-off question.
@@ -487,13 +487,13 @@ The portfolio is only as strong as its weakest piece. If 1 capstone is at "Faili
 
 **Generalization for unscored questions.**
 
-For every other question in this exam, the "A" answer represents the discipline of *shipping at the calibrated bar* — real subject, public link, P-C-A-R-L format, specific data, honest framing. "B" means you mostly shipped but cut a corner. "C" means you started but didn't finish. "D" means the capstone doesn't exist yet.
+For every other question in this exam, the "A" answer represents the discipline of *shipping at the calibrated bar*, real subject, public link, P-C-A-R-L format, specific data, honest framing. "B" means you mostly shipped but cut a corner. "C" means you started but didn't finish. "D" means the capstone doesn't exist yet.
 
 The most common patterns:
 
-- A "B" answer on Q4 (audit length) usually means time pressure — fix by re-allocating Module 2 sprint days.
-- A "B" answer on Q19 (LinkedIn post) usually means anxiety — fix by treating posting as part of the deliverable, not optional.
-- A "B" or worse on Q21 (3-min readability) means a peer-test caught issues — fix by adding more screenshots and tighter exec summary.
+- A "B" answer on Q4 (audit length) usually means time pressure, fix by re-allocating Module 2 sprint days.
+- A "B" answer on Q19 (LinkedIn post) usually means anxiety, fix by treating posting as part of the deliverable, not optional.
+- A "B" or worse on Q21 (3-min readability) means a peer-test caught issues, fix by adding more screenshots and tighter exec summary.
 
 ---
 

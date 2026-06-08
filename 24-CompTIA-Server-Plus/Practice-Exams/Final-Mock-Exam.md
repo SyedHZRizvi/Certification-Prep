@@ -1,14 +1,14 @@
-# 🎯 Final Mock Exam — CompTIA Server+ (SK0-005)
+# 🎯 Final Mock Exam, CompTIA Server+ (SK0-005)
 
 > **Conditions:** Set a 90-minute timer. **90 questions** (matches the real exam exactly).
-> **Pass mark on this mock: 76/90 (~85%)** — real exam scales to 750/900 (~83%). Practice higher than the cut.
+> **Pass mark on this mock: 76/90 (~85%)**, real exam scales to 750/900 (~83%). Practice higher than the cut.
 > Take this 2–3 days BEFORE the real exam. If you don't comfortably pass this, defer the real exam.
 >
 > **Domain coverage targets (matches CompTIA's blueprint):**
-> - Hardware ~18% (~16 Q) — Modules 1, partial 7
-> - Administration ~30% (~27 Q) — Modules 2, 4, 7
-> - Security & DR ~24% (~22 Q) — Modules 5, 6
-> - Troubleshooting ~28% (~25 Q) — Modules 3 (storage TS), 8
+> - Hardware ~18% (~16 Q), Modules 1, partial 7
+> - Administration ~30% (~27 Q), Modules 2, 4, 7
+> - Security & DR ~24% (~22 Q), Modules 5, 6
+> - Troubleshooting ~28% (~25 Q), Modules 3 (storage TS), 8
 
 ---
 
@@ -284,7 +284,7 @@ B. Anti-affinity rule keeping them on separate hosts
 C. Disable DRS only
 D. Power both DCs off
 
-### 46. Container vs VM — the categorical difference:
+### 46. Container vs VM, the categorical difference:
 A. Containers cost more
 B. Containers share host kernel; VMs each have their own
 C. Containers are larger
@@ -350,7 +350,7 @@ B. Pre-staged equipment, stale data
 C. Continuously synchronized, near-instant cutover
 D. Trailer
 
-### 57. Two DCs 3,000 km apart — strict RPO = 0 sync replication would:
+### 57. Two DCs 3,000 km apart, strict RPO = 0 sync replication would:
 A. Work perfectly
 B. Add WAN latency to every write → use async with acceptable RPO
 C. Save money
@@ -370,7 +370,7 @@ D. Slow networks
 
 ### 60. Mantrap / access control vestibule purpose:
 A. Single security door
-B. Two-door entry where second opens only after first closes — defeats tailgating
+B. Two-door entry where second opens only after first closes, defeats tailgating
 C. A keypad
 D. A camera tower
 
@@ -382,7 +382,7 @@ D. Replace BIOS
 
 ### 62. Without a UEFI password, Secure Boot's value is:
 A. Higher
-B. Largely negated — attacker disables it in seconds
+B. Largely negated, attacker disables it in seconds
 C. Doubled
 D. Equal
 
@@ -442,7 +442,7 @@ D. Share via email
 
 ### 72. Wet-pipe sprinkler in active server room:
 A. Recommended
-B. Anti-pattern — use clean-agent (FM-200 / Novec) or pre-action dry-pipe
+B. Anti-pattern, use clean-agent (FM-200 / Novec) or pre-action dry-pipe
 C. Required by NFPA
 D. Permanent
 
@@ -482,7 +482,7 @@ B. Perf degradation and possible black-holes
 C. No change
 D. Server becomes faster
 
-### 79. L4 vs L7 LB — L7 adds:
+### 79. L4 vs L7 LB, L7 adds:
 A. Inspect/route by HTTP host / path / header / cookie
 B. Skip IP headers for speed
 C. Replace firewall
@@ -512,7 +512,7 @@ B. Verify
 C. Document findings, actions, outcomes
 D. Implement
 
-### 84. Server beeps 3 short tones on boot — first check:
+### 84. Server beeps 3 short tones on boot, first check:
 A. PSU
 B. RAM (reseat/swap)
 C. Drives
@@ -540,7 +540,7 @@ D. `tcpdump`
 A. CPU
 B. RAM
 C. Disk
-D. Application-level (query, locking, GC) — infra not saturated
+D. Application-level (query, locking, GC), infra not saturated
 
 ### 89. To verify MTU 9000 end-to-end on Linux:
 A. `ping -M do -s 8972 destination`
@@ -609,7 +609,7 @@ Options A, C, D each fail multiple requirements.
 > Full rationales for every question are embedded in the module Quizzes and Practice Exams 1 & 2. The most-missed concepts to review before the real exam:
 
 - **RAID math** (Qs 22–24, 25–27): drill capacity formulas + write penalties until automatic
-- **The 6 troubleshooting steps** (Qs 81–83): memorize the *order* — CompTIA tests it by name
+- **The 6 troubleshooting steps** (Qs 81–83): memorize the *order*, CompTIA tests it by name
 - **MTU mismatch behavior** (Q 78): silent black-holes are worse than no jumbo at all
 - **Snapshots vs backups** (Q 42): same datastore = same SPOF
 - **OOB management ports** (Q 4): IPMI on UDP 623, segment the OOB network

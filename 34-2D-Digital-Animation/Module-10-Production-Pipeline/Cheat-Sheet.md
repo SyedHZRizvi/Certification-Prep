@@ -3,7 +3,7 @@ permalink: /34-2D-Digital-Animation/Module-10-Production-Pipeline/Cheat-Sheet/
 title: "Module 10 Cheat Sheet: Production Pipeline"
 ---
 
-# ⚡ Module 10 Cheat Sheet — Production Pipeline
+# ⚡ Module 10 Cheat Sheet, Production Pipeline
 
 ---
 
@@ -148,7 +148,7 @@ See the exam callouts (🎯) in the Reading.md for this module.
 
 ---
 
-## Studio & Tool Associations — Quick Reference
+## Studio & Tool Associations, Quick Reference
 
 | Show | Tool | Studio |
 |------|------|--------|
