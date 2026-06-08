@@ -548,64 +548,64 @@ D. Graduate from a top animation school such as CalArts, SCAD, or Ringling
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B: The Illusion of Life: Disney Animation (1981)
-2.  B: Root of physical reality in animation; rigidity = lifelessness
-3.  C: Deliberate squash-and-stretch to communicate effort and weight
-4.  B: Long pause at the building's edge; film refuses to let moment arrive
-5.  B: All cameras stay on same side of axis of action
-6.  C: Proved drawn characters can have personality and emotional performance
-7.  B: Television budget constraints made full animation economically impossible
-8.  D: S-shaped curve (flat at start and end, steep in middle)
-9.  B: Constant speed (mechanical, robotic)
-10. B: 4 seconds (96 ÷ 24 = 4)
-11. C: Staging (her tiny size communicates emotional state)
-12. B: Rubber-hose limbs, jazz-synchronized, vaudeville energy
-13. C: Vertical grid; each row = one frame; columns = layers
-14. B: Single curved line through pose communicating directional energy
-15. C: Big head / short body (approximately 2:1)
-16. B: Observe deeply, close reference, draw from understanding
-17. C: Limb appears shorter due to depth compression in 2D
-18. C: At least three composition options before committing
-19. B: Audio from incoming scene begins before visual cut
-20. B: PNG/ProRes 4444 → ProRes 422 → H.264/H.265
-21. B: Deliberate stylistic effect simulating lens distortion
-22. B: Flat then steepening (concave, slow-in only)
-23. B: Engaging clarity of character; not necessarily cute
-24. B: Analogous palette with one complementary accent
-25. B: Joy, innocence, safety, predominantly light values
-26. C: Opposite arm from leading leg swings forward
-27. C: Free leg passes planted leg; body at highest point
-28. C: The animator's most important skill
-29. B: Game animation and film visual development
-30. B: Developed over three decades (1930s-1950s), published 1981
-31. B: Beyond literal reality to communicate clearly
-32. B: Lip trembling and controlled blinks while holding still
-33. D: Both: lossy (degrades on re-encode) AND no alpha channel
-34. D: Both: first all-CGI feature and demonstrated personality
-35. C: Leading foot landing; body at lowest point
-36. C: Friendliness, approachability, youthfulness
-37. C: Production tracking
-38. B: Variable income; busy/slow cycles
-39. C: Low-key (dark values, strong shadows)
-40. C: 12 unique drawings per second (24 ÷ 2)
-41. C: Psychological unease, disorientation, wrongness
-42. B: Consistent in-betweening across all animators/riggers
-43. B: A local disaster destroys all copies stored in the same location
-44. C: Dissolve or Fade to Black
-45. B: Momentum from push-off and free leg swing carries body upward
-46. B: Employer typically owns designs; confirm in contract
-47. B: Slight speed difference (~4% faster) or conversion artifacts
-48. B: Appeal = engaging clarity; Scar's intelligence and theatricality
-49. B: Every second must be strong; weakest shot sets the impression
-50. B: Rigging and animation stages are where the problems manifest
-51. B: Synchronizing every musical beat to a visual action
-52. B: Communicating intent, emotion, narrative through movement alone
-53. B: 3D character animation for major film and game productions
-54. B: Also fails in color, value contrast cannot be compensated by hue
-55. B: Empty space used actively and intentionally in composition
-56. C: Half speed reveals in-between problems invisible at full speed
-57. C: Deliberate subversion for narrative complexity
-58. B: Cramped, timid marks lacking confidence and expressive range
-59. B: $55K–$80K US base (2025–2026)
-60. B: Strong demo reel (best shot first, 90 seconds, all strong shots)
+1.  B — The Illusion of Life: Disney Animation (1981)
+2.  B — Root of physical reality in animation; rigidity = lifelessness
+3.  C — Deliberate squash-and-stretch to communicate effort and weight
+4.  B — Long pause at the building's edge; film refuses to let moment arrive
+5.  B — All cameras stay on same side of axis of action
+6.  C — Proved drawn characters can have personality and emotional performance
+7.  B — Television budget constraints made full animation economically impossible
+8.  D — S-shaped curve (flat at start and end, steep in middle)
+9.  B — Constant speed (mechanical, robotic)
+10. B — 4 seconds (96 ÷ 24 = 4)
+11. C — Staging (her tiny size communicates emotional state)
+12. B — Rubber-hose limbs, jazz-synchronized, vaudeville energy
+13. C — Vertical grid; each row = one frame; columns = layers
+14. B — Single curved line through pose communicating directional energy
+15. C — Big head / short body (approximately 2:1)
+16. B — Observe deeply, close reference, draw from understanding
+17. C — Limb appears shorter due to depth compression in 2D
+18. C — At least three composition options before committing
+19. B — Audio from incoming scene begins before visual cut
+20. B — PNG/ProRes 4444 → ProRes 422 → H.264/H.265
+21. B — Deliberate stylistic effect simulating lens distortion
+22. B — Flat then steepening (concave, slow-in only)
+23. B — Engaging clarity of character; not necessarily cute
+24. B — Analogous palette with one complementary accent
+25. B — Joy, innocence, safety, predominantly light values
+26. C — Opposite arm from leading leg swings forward
+27. C — Free leg passes planted leg; body at highest point
+28. C — The animator's most important skill
+29. B — Game animation and film visual development
+30. B — Developed over three decades (1930s-1950s), published 1981
+31. B — Beyond literal reality to communicate clearly
+32. B — Lip trembling and controlled blinks while holding still
+33. D — Both: lossy (degrades on re-encode) AND no alpha channel
+34. D — Both: first all-CGI feature and demonstrated personality
+35. C — Leading foot landing; body at lowest point
+36. C — Friendliness, approachability, youthfulness
+37. C — Production tracking
+38. B — Variable income; busy/slow cycles
+39. C — Low-key (dark values, strong shadows)
+40. C — 12 unique drawings per second (24 ÷ 2)
+41. C — Psychological unease, disorientation, wrongness
+42. B — Consistent in-betweening across all animators/riggers
+43. B — A local disaster destroys all copies stored in the same location
+44. C — Dissolve or Fade to Black
+45. B — Momentum from push-off and free leg swing carries body upward
+46. B — Employer typically owns designs; confirm in contract
+47. B — Slight speed difference (~4% faster) or conversion artifacts
+48. B — Appeal = engaging clarity; Scar's intelligence and theatricality
+49. B — Every second must be strong; weakest shot sets the impression
+50. B — Rigging and animation stages are where the problems manifest
+51. B — Synchronizing every musical beat to a visual action
+52. B — Communicating intent, emotion, narrative through movement alone
+53. B — 3D character animation for major film and game productions
+54. B — Also fails in color, value contrast cannot be compensated by hue
+55. B — Empty space used actively and intentionally in composition
+56. C — Half speed reveals in-between problems invisible at full speed
+57. C — Deliberate subversion for narrative complexity
+58. B — Cramped, timid marks lacking confidence and expressive range
+59. B — $55K–$80K US base (2025–2026)
+60. B — Strong demo reel (best shot first, 90 seconds, all strong shots)
 ```

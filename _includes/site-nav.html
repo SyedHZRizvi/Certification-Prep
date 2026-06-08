@@ -105,6 +105,13 @@
             chipBtn.setAttribute('aria-expanded', 'false');
           }
         });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && chipMenu.classList.contains('open')) {
+            chipMenu.classList.remove('open');
+            chipBtn.setAttribute('aria-expanded', 'false');
+            chipBtn.focus();
+          }
+        });
       }
     })();
   </script>

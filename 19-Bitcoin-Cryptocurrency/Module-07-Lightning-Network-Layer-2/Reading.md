@@ -279,7 +279,7 @@ When El Salvador adopted Bitcoin as legal tender in September 2021, Strike was t
 - Chivo had documented identity-fraud incidents
 - Adoption among small merchants was lower than projected
 - BUT: Lightning volume in the country was orders of magnitude higher than pre-2021; remittance flows (~24% of Salvadoran GDP, mostly from US workers) had a new, cheaper rail
-- By 2024-2025, the country's BTC treasury (purchased on the dip) was significantly profitable
+- By 2024-2025, El Salvador's BTC treasury had appreciated in value from purchase prices; however, El Salvador's situation — sovereign legal-tender status, specific political and economic circumstances, and IMF debt negotiations — is not comparable to individual or institutional investment contexts. Past government BTC holdings are cited here to illustrate a policy outcome, not as an investment recommendation.
 - The Bitcoin Beach community at El Zonte (where bottom-up adoption preceded the law) showed sustainable use
 
 **Lesson for the exam / for practitioners.** Three principles every exam tests:

@@ -155,7 +155,7 @@ Day 4:  Take Module 1's quiz and watch the videos
 
 ## 🎯 Final Promise
 
-If you complete every module of your chosen track, take every quiz, do all three practice exams, and review your wrong answers, **you will pass**. Not because of magic, but because you'll have done what most test-takers don't: *deliberate practice*.
+If you complete every module of your chosen track, take every quiz, do all three practice exams, and review your wrong answers, you will be **well-prepared** — students who follow this process consistently score 85%+ on mocks and are in our experience well-equipped for exam day. Individual results vary and no specific outcome is guaranteed, as the exam result ultimately rests with you and the issuing certification body.
 
 Good luck. Let's go.
 

@@ -511,7 +511,7 @@
 - ✅ HubSpot Academy, Google Skillshop, Meta Blueprint (all free, official)
 - ✅ CXL Institute (the deepest practitioner curriculum)
 - ✅ Andrew Ng (Coursera) and Andrej Karpathy (free YouTube) for AI foundations
-- ✅ Wharton Online Specialization (Ivy League brand on Coursera)
+- ✅ Wharton Online Specialization (University of Pennsylvania / Wharton School, via Coursera)
 
 **Bitcoin & Cryptocurrency**
 - ✅ C4 (Certified Bitcoin Professional) · ✅ BTA (CBSA) · ✅ ACAMS (CCAS)

@@ -12,6 +12,8 @@ title: AI Digital Marketing Entrepreneur Track
 > **Cost:** Free (this curriculum) + ~$200–$500/mo operating stack, verify on each vendor's site.
 > **Difficulty:** Expert · Strategist-level experience assumed
 
+> **Income & financial disclaimer:** All revenue ranges, income figures, ARR projections, and timeline estimates in this course are illustrative examples drawn from publicly shared community data (Hampton, Latka, Indie Hackers surveys, and individual founder disclosures). They are not guarantees, predictions, or typical outcomes. Individual results depend on prior experience, market conditions, effort, local regulation, and many other factors outside the scope of this curriculum. Nothing in this course constitutes financial, legal, investment, or tax advice. Consult a licensed attorney and CPA in your jurisdiction before making business, tax, or financial decisions.
+
 ---
 
 ## ✨ Why This Certification Matters

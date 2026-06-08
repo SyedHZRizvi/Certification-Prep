@@ -529,69 +529,69 @@ D. Agree with all notes without asking clarifying questions
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B: Given Circumstances: facts about the character's world before action
-2.  A: Social = AU12 only; Genuine = AU6+AU12
-3.  C: COG: pelvis, ~55% height
-4.  C: M/B/P closure: only fully closed shape
-5.  B: Walk: feet ~25% of cycle apart
-6.  B: 1-in-10: breaks pattern-recognition lock
-7.  B: Optical body mocap: 40–55 markers
-8.  C: Flat tangent: perfectly horizontal hold
-9.  B: Meisner: discover through genuine reaction
-10. C: Pelennor Fields: 200,000 agents
-11. B: Animating to editorial: confirm cut-in, cut-out, adjacent context before blocking
-12. C: Pixar: emotional authenticity + subtle performance
-13. B: Planning trap: years 3–7
-14. C: NOT a cleanup phase: behavioral simulation
-15. B: Convex: peaks then descends (ball apex)
-16. B: Contempt: only asymmetric universal expression
-17. B: Stepped phase: evaluate pose sequence without interpolation
-18. C: Punch power: hip drive (hips rotate first)
-19. B: Nick Wilde: crow behavioral borrowing
-20. B: Auditory faster than visual → mouth precedes audio by 2 frames
-21. B: Gallop error: aerial at stretched instead of gathered position
-22. C: Markerless: retroactive reconstruction from existing footage
-23. B: Revision rule 2: implement exact note first, even if you disagree
-24. C: Impact frame tangent: linear or flat
-25. B: AU1: Inner Brow Raise (concern, sadness, worry)
-26. C: Maya expression: `getAttr -t (frame-N) attribute`
-27. C: Sweet spot: 75–85 seconds
-28. B: MotionBuilder Actor: raw mocap data
-29. C: Less is more: audiences use M/B/P and open/closed as primary reference
-30. C: Timing variation alone can differentiate identical geometry
-31. C: Inertial advantage: portability; no camera volume
-32. B: Heavy object COG: shifts backward to counterbalance
-33. B: FACS: Ekman and Friesen, 1978
-34. D: Bird downstroke: lift + forward thrust
-35. B: Handles: 4–8f holds at start/end for editorial flexibility
-36. D: Eyes dart: fear, anxiety, threat assessment
-37. B: Clip transition graph: state machine for motion clip switching
-38. B: Secondary settle sequence: head → hair → clothing
-39. B: Peer review: two questions; write down; never defend
-40. A: Creature bible: consistent behavioral vocabulary across animators
-41. B: Phase 3 spline refine: adjust tangent handles + secondary motion
-42. C: Punch phase 1: anticipation (COG drops/back; shoulder rotates back)
-43. B: Retargeting stride fix: adjust stride frequency or root motion speed
-44. C: Dialogue music: lower than dialogue volume
-45. B: Micro-expressions: 1–5 frames at 24fps
-46. B: Cat slow blink: trust and contentment signal
-47. B: Overshoot too large: outgoing handle too long on follow-through key
-48. B: Anim Sup reviews first: technical quality + character consistency
-49. B: Terrain following: auto foot placement on irregular terrain
-50. D: Recruiter attention: 2–3 seconds before continue/stop decision
-51. B: Given circumstances exercise: write 5 facts before blocking
-52. C: Upper lid droop downward gaze: ~30%
-53. C: Massive brain input nodes: sensory data from scene
-54. C: Cartoon physical comedy: keyframe (mocap fails)
-55. B: Cat: dramatic spine flex contributing to propulsion
-56. B: Bohemian Rhapsody problem: song emotions override animation impression
-57. B: Heavy secondary: shudder and settle; no spring
-58. C: Riot: game portfolio with state machines + 60fps
-59. B: Contact intent: retargeted character contacts ground same frames as actor
-60. B: AU1 most specific: grief, sympathy, worry, concern
-61. C: Heavy character jump anticipation: longer + deeper
-62. C: Spline switch: swimming poses immediately appear
-63. C: First 5 seconds: watch viewer's eyes; leaning back = change opener
-64. C: Carangiform: rear third + tail drives propulsion
-65. B: Anim Sup rule: show early and often; never surprise in director review
+1.  B — Given Circumstances: facts about the character's world before action
+2.  A — Social = AU12 only; Genuine = AU6+AU12
+3.  C — COG: pelvis, ~55% height
+4.  C — M/B/P closure: only fully closed shape
+5.  B — Walk: feet ~25% of cycle apart
+6.  B — 1-in-10: breaks pattern-recognition lock
+7.  B — Optical body mocap: 40–55 markers
+8.  C — Flat tangent: perfectly horizontal hold
+9.  B — Meisner: discover through genuine reaction
+10. C — Pelennor Fields: 200,000 agents
+11. B — Animating to editorial: confirm cut-in, cut-out, adjacent context before blocking
+12. C — Pixar: emotional authenticity + subtle performance
+13. B — Planning trap: years 3–7
+14. C — NOT a cleanup phase: behavioral simulation
+15. B — Convex: peaks then descends (ball apex)
+16. B — Contempt: only asymmetric universal expression
+17. B — Stepped phase: evaluate pose sequence without interpolation
+18. C — Punch power: hip drive (hips rotate first)
+19. B — Nick Wilde: crow behavioral borrowing
+20. B — Auditory faster than visual → mouth precedes audio by 2 frames
+21. B — Gallop error: aerial at stretched instead of gathered position
+22. C — Markerless: retroactive reconstruction from existing footage
+23. B — Revision rule 2: implement exact note first, even if you disagree
+24. C — Impact frame tangent: linear or flat
+25. B — AU1: Inner Brow Raise (concern, sadness, worry)
+26. C — Maya expression: `getAttr -t (frame-N) attribute`
+27. C — Sweet spot: 75–85 seconds
+28. B — MotionBuilder Actor: raw mocap data
+29. C — Less is more: audiences use M/B/P and open/closed as primary reference
+30. C — Timing variation alone can differentiate identical geometry
+31. C — Inertial advantage: portability; no camera volume
+32. B — Heavy object COG: shifts backward to counterbalance
+33. B — FACS: Ekman and Friesen, 1978
+34. D — Bird downstroke: lift + forward thrust
+35. B — Handles: 4–8f holds at start/end for editorial flexibility
+36. D — Eyes dart: fear, anxiety, threat assessment
+37. B — Clip transition graph: state machine for motion clip switching
+38. B — Secondary settle sequence: head → hair → clothing
+39. B — Peer review: two questions; write down; never defend
+40. A — Creature bible: consistent behavioral vocabulary across animators
+41. B — Phase 3 spline refine: adjust tangent handles + secondary motion
+42. C — Punch phase 1: anticipation (COG drops/back; shoulder rotates back)
+43. B — Retargeting stride fix: adjust stride frequency or root motion speed
+44. C — Dialogue music: lower than dialogue volume
+45. B — Micro-expressions: 1–5 frames at 24fps
+46. B — Cat slow blink: trust and contentment signal
+47. B — Overshoot too large: outgoing handle too long on follow-through key
+48. B — Anim Sup reviews first: technical quality + character consistency
+49. B — Terrain following: auto foot placement on irregular terrain
+50. D — Recruiter attention: 2–3 seconds before continue/stop decision
+51. B — Given circumstances exercise: write 5 facts before blocking
+52. C — Upper lid droop downward gaze: ~30%
+53. C — Massive brain input nodes: sensory data from scene
+54. C — Cartoon physical comedy: keyframe (mocap fails)
+55. B — Cat: dramatic spine flex contributing to propulsion
+56. B — Bohemian Rhapsody problem: song emotions override animation impression
+57. B — Heavy secondary: shudder and settle; no spring
+58. C — Riot: game portfolio with state machines + 60fps
+59. B — Contact intent: retargeted character contacts ground same frames as actor
+60. B — AU1 most specific: grief, sympathy, worry, concern
+61. C — Heavy character jump anticipation: longer + deeper
+62. C — Spline switch: swimming poses immediately appear
+63. C — First 5 seconds: watch viewer's eyes; leaning back = change opener
+64. C — Carangiform: rear third + tail drives propulsion
+65. B — Anim Sup rule: show early and often; never surprise in director review
 ```

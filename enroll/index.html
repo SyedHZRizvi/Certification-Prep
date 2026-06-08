@@ -8,7 +8,7 @@ layout: none
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enroll | The Cert Hub by Humayun Zafar</title>
+  <title>Enroll — The Cert Hub by Humayun Zafar</title>
   <meta name="description" content="Apply to enroll in The Cert Hub: certification preparation across Project Management, Cloud, AI, Cybersecurity, Supply Chain, AI Marketing, Bitcoin, and E-Commerce, inspired by the teaching philosophies of the world's leading research universities." />
   <meta name="author" content="Humayun Zafar" />
   <meta name="robots" content="noindex, nofollow" />
@@ -95,10 +95,14 @@ layout: none
     }
     .input::placeholder, .textarea::placeholder { color: #94a3b8; }
     .input:focus, .select:focus, .textarea:focus {
-      outline: none;
+      outline: 2px solid #6366f1;
+      outline-offset: 2px;
       border-color: #6366f1;
       box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.14);
       background: #fafbff;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .draft-banner .pulse, .success-emoji { animation: none; }
     }
     .input:disabled, .select:disabled, .textarea:disabled {
       background: #f1f5f9;
@@ -522,7 +526,7 @@ layout: none
   <section class="hero">
     <div class="eyebrow">Enrollment Application</div>
     <h1 class="display"><span class="hero-grad">Begin your journey.</span></h1>
-    <p class="lead">Complete this application to enroll in any of our 39 certification and professional development courses, inspired by the teaching philosophies of the world's leading research universities. The site owner reviews every application personally and responds within 24–48 hours with pricing and next steps.</p>
+    <p class="lead">Complete this application to enroll in any of our 39 certification and professional development courses, inspired by the teaching philosophies of the world's leading research universities. The site owner reviews every application personally and aims to respond within 1–3 business days with pricing and next steps (response times may be longer during holidays or high-volume periods). Submitting this application does not create a binding purchase.</p>
   </section>
 
   <!-- ============== MAIN FORM + SUMMARY ============== -->
@@ -558,8 +562,9 @@ layout: none
             </div>
             <div class="row">
               <div>
-                <label class="field-label" for="phone">Phone (with country code) <span class="req">*</span></label>
-                <input class="input" type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+1 416 555 0188" />
+                <label class="field-label" for="phone">Phone (with country code) <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" type="tel" id="phone" name="phone" required aria-required="true" autocomplete="tel" placeholder="+1 416 555 0188" />
+                <p style="font-size:12px;color:#64748b;margin:4px 0 0;">Used by the site owner to contact you about your application if email is delayed. Not shared with third parties and not used for marketing.</p>
               </div>
               <!-- Date of birth field removed: not required for enrollment processing -->
             </div>
@@ -677,8 +682,8 @@ layout: none
             </div>
 
             <div class="toolbar-row">
-              <button type="button" class="tool-btn" id="selectAllBtn">✓ Select all 32</button>
-              <button type="button" class="tool-btn" id="clearAllBtn">✕ Clear selection</button>
+              <button type="button" class="tool-btn" id="selectAllBtn" aria-label="Select all 39 courses" aria-controls="course-groups"><span aria-hidden="true">✓</span> Select all 39</button>
+              <button type="button" class="tool-btn" id="clearAllBtn" aria-label="Clear all course selections" aria-controls="course-groups"><span aria-hidden="true">✕</span> Clear selection</button>
               <span style="flex: 1;"></span>
               <span class="selected-counter" id="selectedCounter">0 selected</span>
             </div>
@@ -763,7 +768,7 @@ layout: none
               <div class="ps-row ps-discount"><span class="ps-label">Bundle discount (<span id="ps-discount-pct">0%</span>)</span><span class="ps-value discount-amt" id="ps-discount-amt">−$0</span></div>
               <div class="ps-row ps-total"><span class="ps-label">Total<small id="ps-currency-note"></small></span><span class="ps-value" id="ps-total">$0</span></div>
               <div class="ps-cta"><a href="#payment-section" class="ps-cta-btn">Continue to payment <span aria-hidden="true">→</span></a></div>
-              <div class="ps-note">All payments are processed in <strong>USD</strong> by the issuing bank. Non-USD amounts above are approximate converted figures (rates are approximate and reviewed periodically). Actual charge on your card may vary slightly with your bank's day of payment rate. Prices are exclusive of any local taxes.</div>
+              <div class="ps-note">All payments are processed in <strong>USD</strong>. Non-USD amounts above are indicative only, based on approximate rates last reviewed June 2026. GBP and EUR display prices are intentionally rounded for presentation and may not reflect the current exchange rate. Actual charge on your card will be in USD at your bank's prevailing rate on the day of payment. Prices are exclusive of any applicable local taxes.</div>
             </div>
           </div>
         </div>
@@ -838,25 +843,33 @@ layout: none
               <p>Accordingly, <strong>The Cert Hub, its author Humayun Zafar, and any affiliated entities make no warranty or guarantee, express or implied</strong>, that any enrolled student will pass any certification examination, on any attempt. Enrollment fees cover access to study materials only. We offer no refund, money back guarantee, retake reimbursement, or compensation in the event of exam failure, and accept <strong>no liability</strong> (direct, indirect, incidental, or consequential) for exam outcomes, retake fees, registration fees paid to certification bodies, lost wages, missed deadlines, career outcomes, or any other consequence arising from preparing for or sitting any certification examination. By enrolling, you acknowledge that the certification result rests solely with you and the issuing certification body.</p>
             </div>
 
+            <div style="background:#fff7ed;border:1px solid #fed7aa;border-radius:10px;padding:14px 18px;margin-bottom:14px;font-size:13.5px;color:#7c2d12;line-height:1.6;">
+              <strong>Ontario Residents — Statutory Cooling-Off Right (Consumer Protection Act, 2002 s.14):</strong> If you are located in Ontario, Canada, you have the right to cancel this internet agreement within <strong>7 calendar days</strong> after receiving a copy of this agreement, without reason and without penalty. To exercise this right, send written notice to <a href="mailto:syed@transcrypts.com" style="color:inherit;text-decoration:underline;">syed@transcrypts.com</a> within that period. Upon cancellation, any amount paid will be refunded within 15 days. This statutory right applies only to Ontario residents and only before course access is activated.
+            </div>
+
             <label class="accept-row" id="row-disclaimer">
-              <input type="checkbox" id="agreeDisclaimer" required />
+              <input type="checkbox" id="agreeDisclaimer" required aria-required="true" />
               <span><strong>I understand and accept the no pass guarantee &amp; liability disclaimer above.</strong> I acknowledge that my certification outcome rests with me and the issuing certification body, and that The Cert Hub accepts no liability for the exam result.</span>
             </label>
 
             <label class="accept-row" id="row-terms">
-              <input type="checkbox" id="agreeTerms" required />
-              <span>I confirm that the information I have provided is accurate and complete, and I agree to the <strong><a href="/terms/" style="color:inherit;text-decoration:underline;">Terms of Use</a></strong> and <strong><a href="/privacy/" style="color:inherit;text-decoration:underline;">Privacy Policy</a></strong> of The Cert Hub. I understand that submitting this application does not by itself create an account or grant access; the site owner will review my application and contact me within 24–48 hours.</span>
+              <input type="checkbox" id="agreeTerms" required aria-required="true" />
+              <span>I confirm that the information I have provided is accurate and complete, and I agree to the <strong><a href="/terms/" style="color:inherit;text-decoration:underline;">Terms of Use</a></strong> of The Cert Hub. I understand that submitting this application does not create a binding purchase — a binding sale only occurs when I pay the confirmed price communicated by email.</span>
+            </label>
+            <label class="accept-row" id="row-privacy">
+              <input type="checkbox" id="agreePrivacy" required aria-required="true" />
+              <span>I have read the <strong><a href="/privacy/" style="color:inherit;text-decoration:underline;">Privacy Policy</a></strong> and understand how my personal data will be collected, used, and stored. I understand my data will be used for enrollment processing purposes only and will not be sold to third parties.</span>
             </label>
           </div>
         </div>
 
         <!-- Submit -->
-        <div id="err-banner" class="err-banner"></div>
+        <div id="err-banner" class="err-banner" role="alert" aria-live="assertive"></div>
         <button type="submit" class="btn-submit" id="submitBtn">
           <span id="submitLabel">🚀 Submit my enrollment application</span>
         </button>
         <p style="text-align: center; font-size: 12.5px; color: #64748b; margin-top: 14px; line-height: 1.5;">
-          By submitting, you accept the disclaimers above. We respond to every application personally within 24–48 hours.
+          By submitting, you accept the disclaimers above. We aim to respond to every application personally within 1–3 business days (response times may be longer during holidays or high-volume periods). Submitting this application does not create a binding purchase — a binding sale only occurs when you pay the confirmed price communicated by email.
         </p>
       </form>
 
@@ -878,7 +891,7 @@ layout: none
             <div class="summary-total">
               <div class="small">Selected</div>
               <div class="big" id="summary-count">0</div>
-              <div class="note">Pricing &amp; bundle discounts will be shared with you by the site owner within 24–48 hours.</div>
+              <div class="note">Pricing &amp; bundle discounts will be shared with you by the site owner. We aim to respond within 1–3 business days. No payment is due until you receive and accept the confirmed price by email.</div>
             </div>
 
             <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 18px 0;" />
@@ -888,7 +901,7 @@ layout: none
               <ol style="margin: 8px 0 0; padding-left: 22px;">
                 <li>You submit this application.</li>
                 <li>The owner reviews it personally.</li>
-                <li>You receive an email with pricing &amp; an activated payment link.</li>
+                <li>You receive an email with confirmed pricing &amp; an activated payment link (no binding purchase until this step).</li>
                 <li>Once payment clears, your account is created and you can sign in.</li>
               </ol>
             </div>
@@ -917,7 +930,7 @@ layout: none
         <h2 class="display" style="font-size: 36px; font-weight: 900; margin: 18px 0 8px; color: #064e3b;">Application received!</h2>
         <p style="font-size: 18px; color: #047857; font-weight: 600; margin: 0 0 18px;">Thank you for your interest in The Cert Hub.</p>
         <p style="font-size: 15.5px; color: #475569; line-height: 1.7; max-width: 540px; margin: 0 auto 24px;">
-          Your application has been received and an email notification has been sent to the site owner. You'll hear back personally within <strong>24–48 hours</strong> with pricing details and next steps. Please also check your spam folder in case the reply lands there.
+          Your application has been received and an email notification has been sent to the site owner. We aim to respond within <strong>1–3 business days</strong> with pricing details and next steps. Please also check your spam folder in case the reply lands there. No payment is due until you receive and accept the confirmed price.
         </p>
         <p style="font-size: 13.5px; color: #94a3b8; margin: 0 0 24px;">Submission reference: <code id="submission-id" style="background: #f1f5f9; padding: 2px 10px; border-radius: 6px; color: #4338ca; font-weight: 700;"></code></p>
         <a href="{{ '/' | relative_url }}" class="btn-submit" style="text-decoration: none; max-width: 320px;">🏠 Back to homepage</a>
@@ -963,28 +976,36 @@ layout: none
       { id: "10-ASCM-CSCP",                             slug: "ASCM CSCP",                            icon: "📦", category: "Supply Chain & Operations", tier: "specialty" },
       { id: "13-ISM-CPSM",                              slug: "ISM CPSM",                             icon: "🤝", category: "Supply Chain & Operations", tier: "specialty" },
       // AI Digital Marketing (5-course ladder)
-      { id: "14-AI-Marketing-Foundations",              slug: "AI Digital Marketing: Foundations",   icon: "📣", category: "AI Digital Marketing", tier: "foundation" },
-      { id: "15-AI-Marketing-Practitioner",             slug: "AI Digital Marketing: Practitioner",  icon: "🎯", category: "AI Digital Marketing", tier: "associate" },
-      { id: "16-AI-Marketing-Strategist",               slug: "AI Digital Marketing: Strategist",    icon: "📈", category: "AI Digital Marketing", tier: "associate" },
-      { id: "17-AI-Marketing-Entrepreneur",             slug: "AI Digital Marketing: Entrepreneur",  icon: "💼", category: "AI Digital Marketing", tier: "associate" },
-      { id: "18-AI-Marketing-Capstone-Portfolio",       slug: "AI Digital Marketing: Capstone Portfolio", icon: "🏆", category: "AI Digital Marketing", tier: "specialty" },
+      { id: "14-AI-Marketing-Foundations",              slug: "AI Digital Marketing — Foundations",   icon: "📣", category: "AI Digital Marketing", tier: "foundation" },
+      { id: "15-AI-Marketing-Practitioner",             slug: "AI Digital Marketing — Practitioner",  icon: "🎯", category: "AI Digital Marketing", tier: "associate" },
+      { id: "16-AI-Marketing-Strategist",               slug: "AI Digital Marketing — Strategist",    icon: "📈", category: "AI Digital Marketing", tier: "associate" },
+      { id: "17-AI-Marketing-Entrepreneur",             slug: "AI Digital Marketing — Entrepreneur",  icon: "💼", category: "AI Digital Marketing", tier: "associate" },
+      { id: "18-AI-Marketing-Capstone-Portfolio",       slug: "AI Digital Marketing — Capstone Portfolio", icon: "🏆", category: "AI Digital Marketing", tier: "specialty" },
       // Bitcoin & E-Commerce
       { id: "19-Bitcoin-Cryptocurrency",                slug: "Bitcoin & Cryptocurrency",             icon: "₿",  category: "Bitcoin & E-Commerce", tier: "associate" },
       { id: "20-E-Commerce",                            slug: "E-Commerce",                           icon: "🛒", category: "Bitcoin & E-Commerce", tier: "associate" },
+      // Animation & Motion Design (foundation → advanced)
+      { id: "33-Animation-Foundations",                 slug: "Animation Foundations · Cert Hub Original", icon: "🎬", category: "Animation & Motion Design", tier: "foundation" },
+      { id: "34-2D-Digital-Animation",                  slug: "2D Digital Animation",                 icon: "✏️", category: "Animation & Motion Design", tier: "foundation" },
+      { id: "35-Motion-Graphics-UI-Animation",          slug: "Motion Graphics & UI Animation",       icon: "🎞️", category: "Animation & Motion Design", tier: "associate" },
+      { id: "36-3D-Animation-Blender",                  slug: "3D Animation with Blender",            icon: "🧊", category: "Animation & Motion Design", tier: "associate" },
+      { id: "37-Advanced-Character-Animation",          slug: "Advanced Character Animation · Cert Hub Original", icon: "🎭", category: "Animation & Motion Design", tier: "associate" },
+      { id: "38-VFX-Compositing",                       slug: "VFX & Compositing",                    icon: "✨", category: "Animation & Motion Design", tier: "associate" },
+      { id: "39-Game-UI-Animation",                     slug: "Game & UI Animation",                  icon: "🕹️", category: "Animation & Motion Design", tier: "associate" },
     ];
 
     // Per-tier USD price (before bundle discount). Single source of truth.
     const TIER_PRICE = { foundation: 99, associate: 149, specialty: 199 };
 
     // Bundle-discount ladder — industry-gold-standard. Applies to subtotal.
-    // Higher tier of count == bigger % off, capped at "All-Access" 35% for 32.
+    // Higher tier of count == bigger % off, capped at "All-Access" 35% for 39.
     const BUNDLE_LADDER = [
       { min: 1,  max: 1,  pct: 0,    label: "1 course",            note: "Full price" },
       { min: 2,  max: 3,  pct: 0.10, label: "2–3 courses",          note: "−10%" },
       { min: 4,  max: 7,  pct: 0.15, label: "4–7 courses",          note: "−15%" },
       { min: 8,  max: 15, pct: 0.20, label: "8–15 courses",         note: "−20%" },
-      { min: 16, max: 31, pct: 0.25, label: "16–31 courses",        note: "−25%" },
-      { min: 32, max: 32, pct: 0.35, label: "32 courses · All-Access", note: "−35%" },
+      { min: 16, max: 38, pct: 0.25, label: "16–38 courses",        note: "−25%" },
+      { min: 39, max: 39, pct: 0.35, label: "39 courses · All-Access", note: "−35%" },
     ];
 
     // Approximate 2026-06 exchange rates (live API integration would be ideal
@@ -1043,7 +1064,8 @@ layout: none
     COURSES.forEach(c => { (groups[c.category] = groups[c.category] || []).push(c); });
     let html = '';
     for (const cat in groups) {
-      html += `<div class="course-cat"><span>${escapeHtml(cat)}</span><span style="color:#94a3b8;font-weight:600;">· ${groups[cat].length} course${groups[cat].length===1?'':'s'}</span></div>`;
+      html += `<fieldset class="course-fieldset" style="border:none;margin:0;padding:0;">`;
+      html += `<legend class="course-cat"><span>${escapeHtml(cat)}</span><span style="color:#94a3b8;font-weight:600;">· ${groups[cat].length} course${groups[cat].length===1?'':'s'}</span></legend>`;
       html += `<div class="course-grid">`;
       groups[cat].forEach(c => {
         html += `<label class="course-chip" data-course-id="${c.id}">
@@ -1053,6 +1075,7 @@ layout: none
         </label>`;
       });
       html += `</div>`;
+      html += `</fieldset>`;
     }
     groupsEl.innerHTML = html;
 
@@ -1200,7 +1223,7 @@ layout: none
         fullName: document.getElementById('fullName').value.trim(),
         email: document.getElementById('email').value.trim(),
         phone: document.getElementById('phone').value.trim(),
-        dateOfBirth: document.getElementById('dateOfBirth').value.trim(),
+
         address: document.getElementById('address').value.trim(),
         city: document.getElementById('city').value.trim(),
         postalCode: document.getElementById('postalCode').value.trim(),

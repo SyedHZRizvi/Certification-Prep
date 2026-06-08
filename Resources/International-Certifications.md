@@ -17,7 +17,7 @@ title: International Certifications Catalog
 An "industry certification" is a credential issued by a recognized standards body, not by a school or a vendor's marketing department. Three things separate real certifications from paper mills:
 
 1. **Issuing body has a track record.** PMI was founded in 1969. ASCM (formerly APICS) in 1957. Scrum.org by the co-creator of Scrum himself. ISM in 1915. CompTIA, AWS, Microsoft, these are organizations whose certifications are required language in real job postings.
-2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE, vendor portals (HubSpot, Google Skillshop, Meta Blueprint). The exam isn't just a marketing quiz.
+2. **Real proctoring or honor-system with a recognized brand.** Pearson VUE, Prometric, OnVUE for independent proctoring; vendor portals (HubSpot Academy, Google Skillshop, Meta Blueprint) for vendor-administered self-paced assessments. The exam isn't just a marketing quiz.
 3. **Documented market standing.** You can find recent salary surveys (Robert Half, PMI Earning Power, Global Knowledge) listing the cert. You can find recruiters in your city searching for it on LinkedIn.
 
 **How to use this page:** Every section starts with one of our 39 courses. After you complete that course, you'll have covered the core objectives for the certifications listed under it, with the issuing body, exam format, fee in USD, full registration procedure, the benefits the credential unlocks, the designation you carry after passing, and the renewal rules. Completing the course prepares you for the exam; passing the exam depends on your individual preparation and is not guaranteed.
@@ -71,7 +71,7 @@ Courses appear in the same canonical order used on the homepage and sidebar: **P
 
 | Our Course | Recommended Cert (After Completion) | Fee (USD) | Start Prep |
 |------------|--------------------------------------|-----------|------------|
-| Claude Architect | **Cert Hub Certificate of Completion** (Anthropic-aligned, Cert Hub original) | included | [Start prep →](../../28-Claude-Architect/) |
+| Claude Architect | **Cert Hub Certificate of Completion** (Cert Hub original — covers Claude API; not endorsed by Anthropic) | included | [Start prep →](../../28-Claude-Architect/) |
 | Generative AI Engineer | **Cert Hub Certificate of Completion** + (optional) Databricks GenAI Engineer Associate | included / $200 | [Start prep →](../../30-Generative-AI-Engineer/) |
 | AWS ML Specialty | **AWS Certified Machine Learning, Specialty (MLS-C01)** (AWS) | $300 | [Start prep →](../../31-AWS-ML-Specialty/) |
 
@@ -501,7 +501,7 @@ After completing this course, you are ready to claim:
 **Designation earned after passing:** *Cert Hub Certified, Claude Architect*
 
 - **Issuing body:** **The Cert Hub** (Humayun Zafar, Toronto). This is a Cert-Hub-original assessment, not an Anthropic-issued credential. It is **aligned with Anthropic's official Claude documentation, Constitutional AI paper, and Model Context Protocol (Nov 2024) spec.**
-- **Market standing:** Tier-2 emerging credential. Most-cited Anthropic-aligned learning track in the LinkedIn AI-engineer skill graph (2025-2026). Used by recruiters at AI-native startups (Cursor, Notion, Klarna, Replit) as a screening signal for Claude familiarity.
+- **Market standing:** Tier-2 emerging credential. Covers Anthropic's published Claude API, Constitutional AI, and Model Context Protocol documentation. Designed for engineers building Claude-powered production applications. This is a Cert Hub-original credential, not issued or endorsed by Anthropic.
 - **Benefits of passing:** Demonstrates production-grade Claude API + MCP + agentic-patterns proficiency. Strong differentiator for AI Engineer / Solutions Engineer / Developer Relations roles at Anthropic-partner companies. Average compensation for engineers shipping Claude-powered products in 2026: $180K-$280K.
 - **Exam format:** 60 questions · 60 minutes · 75% pass · honor-system, on-demand.
 - **Fee:** **Included with course enrollment**, no separate exam fee.
@@ -834,7 +834,7 @@ After completing this course, you will have covered the core objectives for:
 **Designation earned after passing:** *Wharton Online Digital Marketing & E-Commerce Specialization Certificate (verified, Coursera)*
 
 - **Issuing body:** **University of Pennsylvania, Wharton School** (via Coursera).
-- **Market standing:** Tier-1 academic-prestige credential. Ivy League brand value.
+- **Market standing:** Tier-1 academic-prestige credential. Certificate issued by the University of Pennsylvania, Wharton School, via Coursera; carries strong recognition in marketing and strategy hiring.
 - **Benefits of passing:** Opens doors at strategy-tier marketing roles (Director of Marketing, Marketing Strategy roles, MBA-adjacent positions).
 - **Format:** 6-month online specialization · self-paced · video lectures + quizzes + peer-graded projects.
 - **Fee:** **~$79/month Coursera subscription (~$500 total).**
@@ -1371,7 +1371,7 @@ The international certification market is fragmented, but the credible bodies ar
 - **HubSpot + Google + Meta** (marketing, free vendor)
 - **C4 + ACAMS** (Bitcoin/crypto)
 - **Adobe + Salesforce + Shopify** (e-commerce vendors)
-- **Wharton + Princeton + MIT + Stanford** (academic-prestige via Coursera/edX)
+- **Wharton School (University of Pennsylvania)** (academic-prestige via Coursera — for the E-Commerce track which maps to the Wharton Online specialization). MIT and Stanford Coursera certificates may be relevant to individual courses; verify against the current Coursera catalog before enrolling.
 
 Stay away from any cert sold by an organization without credible alumni on LinkedIn. Anyone selling "Certified Master XYZ Expert" for $99 with no proctoring is a paper mill.
 

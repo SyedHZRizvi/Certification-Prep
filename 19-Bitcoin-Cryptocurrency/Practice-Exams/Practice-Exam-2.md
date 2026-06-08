@@ -707,9 +707,9 @@ D. Government seizure of self-custodied cold storage
 - **Exam-takeaway.** One seed → multiple address types via different derivation paths. Always check wallet supports the address type your payer needs.
 
 **Q46. Answer: C**
-- **Why C is correct.** Post-halving, daily issuance is cut in half while demand (institutional inflows, ETF AUM, retail) typically grows. The historical pattern: 12-18 months after each halving, a major price-discovery cycle has occurred (2012-13, 2016-17, 2020-21, 2024-25).
-- **Why others are wrong.** A: History suggests halvings are NOT irrelevant. B: Halvings have NOT caused crashes in any cycle. D: There's no halt at the 5th halving, they continue until ~2140.
-- **Exam-takeaway.** Halving thesis is observational, not deterministic. Past performance is not a guarantee, but the supply-shock dynamic is mechanically real.
+- **Why C is correct.** The halving cycle thesis is an observational hypothesis, not a proven mechanism. Post-halving, daily issuance is cut in half while demand (institutional inflows, ETF AUM, retail) has typically grown in prior cycles. Historically, significant price appreciation has followed each of the first four halvings (2012-13, 2016-17, 2020-21, 2024-25), but correlation is not causation and past performance does not indicate future results. Answer C correctly describes the mechanics of the thesis without asserting a guaranteed outcome.
+- **Why others are wrong.** A: History does not support halvings being irrelevant to supply dynamics. B: Halvings have not caused price crashes in any prior cycle. D: There is no halt at the 5th halving; they continue until approximately 2140.
+- **Exam-takeaway.** Halving thesis is observational and mechanically grounded in supply reduction, but it is not a reliable price-prediction tool. *Past performance is not indicative of future results.*
 
 **Q47. Answer: B**
 - **Why B is correct.** Bitcoin Core's default "dust limit" is 546 sats for legacy outputs, 294 sats for SegWit. Below this, the UTXO is "uneconomical" to spend.

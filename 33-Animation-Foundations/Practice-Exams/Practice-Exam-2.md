@@ -278,34 +278,34 @@ D. Determined by the studio's submission guidelines, which vary by studio
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B: Square/rectangle for stable mentor figure
-2.  D: Both B and C (readable as black shape; identifiable and action-readable)
-3.  B: Front, 3/4, side, back, 3/4 back
-4.  C: Value (lightness/darkness)
-5.  C: Value relationships first
-6.  C: Riley's deteriorating emotional state
-7.  B: Planning document showing the full film's color arc
-8.  B: Client review, streaming, web
-9.  B: 3 copies, 2 media types, 1 off-site
-10. B: Alpha channel (transparency) support
-11. B: Body drops as weight transfers after contact
-12. C: 20–24 frames = menacing, deliberate
-13. B: Emotion and narrative through movement alone
-14. C: Top of the arc (slowest, almost stationary)
-15. C: Extreme squash and breaking on final contact
-16. B: Story reads from movement alone
-17. B: Arcs, should follow curves, not V-shapes
-18. C: Joint clarity, detail placement, silhouette in extreme poses
-19. B: Dominant in game art industry
-20. B: Variable income; busy/slow cycle
-21. B: Advance (move toward viewer)
-22. B: Timing errors requiring re-timing all completed scenes
-23. B: Three composition options per significant beat
-24. C: 2D character animation at major studios
-25. B: Reduce secondary so it enriches without competing
-26. C: Progressively smaller and faster (energy loss)
-27. C: Strongest character performance/pantomime
-28. C: Calm, trustworthiness, or melancholy/isolation
-29. B: Networking is essential
-30. C: 90 seconds ideal, 2 minutes maximum
+1.  B — Square/rectangle for stable mentor figure
+2.  D — Both B and C (readable as black shape; identifiable and action-readable)
+3.  B — Front, 3/4, side, back, 3/4 back
+4.  C — Value (lightness/darkness)
+5.  C — Value relationships first
+6.  C — Riley's deteriorating emotional state
+7.  B — Planning document showing the full film's color arc
+8.  B — Client review, streaming, web
+9.  B — 3 copies, 2 media types, 1 off-site
+10. B — Alpha channel (transparency) support
+11. B — Body drops as weight transfers after contact
+12. C — 20–24 frames = menacing, deliberate
+13. B — Emotion and narrative through movement alone
+14. C — Top of the arc (slowest, almost stationary)
+15. C — Extreme squash and breaking on final contact
+16. B — Story reads from movement alone
+17. B — Arcs, should follow curves, not V-shapes
+18. C — Joint clarity, detail placement, silhouette in extreme poses
+19. B — Dominant in game art industry
+20. B — Variable income; busy/slow cycle
+21. B — Advance (move toward viewer)
+22. B — Timing errors requiring re-timing all completed scenes
+23. B — Three composition options per significant beat
+24. C — 2D character animation at major studios
+25. B — Reduce secondary so it enriches without competing
+26. C — Progressively smaller and faster (energy loss)
+27. C — Strongest character performance/pantomime
+28. C — Calm, trustworthiness, or melancholy/isolation
+29. B — Networking is essential
+30. C — 90 seconds ideal, 2 minutes maximum
 ```

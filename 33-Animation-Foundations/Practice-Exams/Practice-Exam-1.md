@@ -278,34 +278,34 @@ D. Arcs, the character's movements are linear rather than curved
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B: Frank Thomas and Ollie Johnston
-2.  B: Volume (mass)
-3.  C: Slow-In / Slow-Out
-4.  C: Camera push
-5.  C: Sequential motion-study photographs
-6.  C: Slow-in/slow-out (S-curve)
-7.  C: Straight-Ahead
-8.  C: Follow-Through and Overlapping Action
-9.  B: Matching a visual element between two shots
-10. C: Triangles (danger, menace)
-11. B: One action, one center of attention, instantly readable
-12. B: 12 unique drawings per second
-13. C: Intersection points of a 3x3 grid
-14. B: 25 fps
-15. B: Filled with solid black, remains identifiable
-16. C: Menacing, deliberate, powerful
-17. B: Map phonemes to frame numbers for lip sync
-18. B: Supports without competing
-19. C: Reference foundation for real body movement
-20. B: Hair obscures expression in extreme poses
-21. C: Arcs, punches follow curved paths, not straight lines
-22. C: Vimeo
-23. C: Visual Rhythm (not one of the 12 Principles)
-24. C: First non-English-language animated feature to win
-25. C: Never use "final"; use v001, v002
-26. C: Slow-in (ease out of starting position)
-27. B: Timing (character differentiation through frame rate)
-28. B: Fewer frames, simplified designs, minimal movement
-29. B: Ball widens at impact while maintaining overall area/volume
-30. C: Over-reliance on default smooth graph editor curves
+1.  B — Frank Thomas and Ollie Johnston
+2.  B — Volume (mass)
+3.  C — Slow-In / Slow-Out
+4.  C — Camera push
+5.  C — Sequential motion-study photographs
+6.  C — Slow-in/slow-out (S-curve)
+7.  C — Straight-Ahead
+8.  C — Follow-Through and Overlapping Action
+9.  B — Matching a visual element between two shots
+10. C — Triangles (danger, menace)
+11. B — One action, one center of attention, instantly readable
+12. B — 12 unique drawings per second
+13. C — Intersection points of a 3x3 grid
+14. B — 25 fps
+15. B — Filled with solid black, remains identifiable
+16. C — Menacing, deliberate, powerful
+17. B — Map phonemes to frame numbers for lip sync
+18. B — Supports without competing
+19. C — Reference foundation for real body movement
+20. B — Hair obscures expression in extreme poses
+21. C — Arcs, punches follow curved paths, not straight lines
+22. C — Vimeo
+23. C — Visual Rhythm (not one of the 12 Principles)
+24. C — First non-English-language animated feature to win
+25. C — Never use "final"; use v001, v002
+26. C — Slow-in (ease out of starting position)
+27. B — Timing (character differentiation through frame rate)
+28. B — Fewer frames, simplified designs, minimal movement
+29. B — Ball widens at impact while maintaining overall area/volume
+30. C — Over-reliance on default smooth graph editor curves
 ```

@@ -18,7 +18,9 @@ title: Bitcoin & Cryptocurrency Track
 
 ### 🎯 The promise
 
-Bitcoin & Cryptocurrency is the credential ladder that takes you from someone who *speculates* on crypto to someone who *understands* it well enough to build, audit, regulate, or invest in the asset class that the BlackRock IBIT, Fidelity FBTC, ARK ARKB spot ETFs and the post-MiCA European licensing regime have made institutional. By the end of this track you'll be ready to sit the **C4 Certified Bitcoin Professional (CBP)** exam, the **CryptoCurrency Security Standard Auditor (CCSS-A)** track, and have completed the **Princeton Bitcoin and Cryptocurrency Technologies** course three of the most-respected credentials in the space. This curriculum is also the conceptual stepping stone into the University of Nicosia's MSc in Digital Currency.
+Bitcoin & Cryptocurrency is the credential ladder that takes you from someone who *speculates* on crypto to someone who *understands* it well enough to build, audit, regulate, or evaluate the technical and regulatory architecture of the asset class that the spot Bitcoin ETF products approved by the SEC in January 2024 and the post-MiCA European licensing regime have made institutional.
+
+> **Disclaimer:** This course is for educational and exam-preparation purposes only. It does not constitute investment, financial, tax, or legal advice. Past performance of Bitcoin or any cryptocurrency is not indicative of future results. Always consult a qualified professional before making any investment or financial decision. By the end of this track you'll be ready to sit the **C4 Certified Bitcoin Professional (CBP)** exam, the **CryptoCurrency Security Standard Auditor (CCSS-A)** track, and have completed the **Princeton Bitcoin and Cryptocurrency Technologies** course three of the most-respected credentials in the space. This curriculum is also the conceptual stepping stone into the University of Nicosia's MSc in Digital Currency.
 
 ### 💼 Career outcomes after passing
 
@@ -31,6 +33,8 @@ Bitcoin & Cryptocurrency is the credential ladder that takes you from someone wh
 - **Regulatory / Policy Specialist** ($110K–$170K), at trade associations (Chamber of Digital Commerce), law firms, and regulators
 
 The Bitcoin career ladder pairs with course 09 (Security+) for the security-engineering track and course 20 (E-Commerce) for the merchant-side payments work. Compensation in Bitcoin-native employers typically includes BTC or stock options on top of base salary.
+
+*Salary ranges are illustrative figures drawn from publicly available compensation surveys (e.g., Glassdoor, LinkedIn Salary Insights, Levels.fyi, CryptoJobsList) for US/Canada/UK markets as of 2024–2025. Actual compensation varies significantly by location, employer size, experience, market cycle, and economic conditions. These figures are for general orientation only and are not a guarantee of any specific outcome.*
 
 ### 🏛️ Why The Cert Hub's version is different
 

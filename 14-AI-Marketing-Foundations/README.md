@@ -29,6 +29,8 @@ AI Digital Marketing Foundations is the credential that takes you from someone w
 - **Junior Performance Marketer** ($60K–$85K), running Google Ads, Meta Ads, TikTok Ads under supervision
 - **Content Marketer (AI-assisted)** ($55K–$80K), owning content production with Claude / GPT / generative tools
 
+*Salary ranges are illustrative figures drawn from publicly available compensation surveys (e.g., Glassdoor, LinkedIn Salary Insights, Levels.fyi) for US/Canada/UK markets as of 2024–2025. Actual compensation varies by location, employer size, experience, and economic conditions. These figures are for general orientation only and do not constitute a compensation guarantee.*
+
 This is course **1 of 5** in The Cert Hub's AI Digital Marketing ladder: **Foundations (course 14) → Practitioner (15) → Strategist (16) → Entrepreneur (17) → Capstone Portfolio (18)**. Each step roughly doubles the job seniority you can credibly target, Foundations grads land junior roles in the $55K–$85K range; Strategist grads land senior IC / manager roles in the $110K–$160K range.
 
 ### 🏛️ Why The Cert Hub's version is different

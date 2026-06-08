@@ -312,34 +312,34 @@ D. **Is the emotional beat clear and felt by a viewer who has no context about t
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.   B: Auto Normalize forces all weights to sum to 1.0
-2.   A: Blur brush smooths weight gradient
-3.   C: Shape key = stored deformed geometry blended by 0–1 slider
-4.   D: Driver links shape key value to bone rotation
-5.   C: Constant = holds value until next keyframe (stepped)
-6.   C: S scales keyframe timing in the Dope Sheet
-7.   C: Cycles modifier repeats the F-Curve pattern infinitely
-8.   C: Push Down converts active action to NLA strip
-9.   D: Fake User prevents orphan data deletion on save
-10.  B: Passive = fixed collider, does not move
-11.  C: Pinning vertex group = attach points that don't move
-12.  C: Domain = bounding box for the simulation
-13.  D: Unbaked = recalculates from frame 1 per render call
-14.  C: APIC = better angular momentum / vortex-rich flows
-15.  D: Children → Interpolated generates dense hair between parents
-16.  C: Cycles = path tracing (physically accurate)
-17.  D: EEVEE = fast, stylized, real-time quality
-18.  C: OptiX requires NVIDIA RTX GPU
-19.  D: MP4 crash = restart from frame 1
-20.  C: Cryptomatte = click-to-pick per-object masks
-21.  D: 10s × 24fps = 240 frames
-22.  B: Blocking (stepped) → director approval → spline polish
-23.  C: Coffee Run = ~2 artists, ~3 months
-24.  D: Animatic built in Blender's VSE
-25.  D: Sprite Fright = 2048×858, 2.39:1 aspect ratio
-26.  C: Color Balance = lift/gamma/gain (shadows/mids/highlights)
-27.  D: Glare = streaks, bloom, fog glow around bright areas
-28.  C: CRF 18–23 = high quality H.264
-29.  D: Follow-through = secondary parts continue after body stops
-30.  D: Emotional beat clarity is the ultimate self-review criterion
+1.   B — Auto Normalize forces all weights to sum to 1.0
+2.   A — Blur brush smooths weight gradient
+3.   C — Shape key = stored deformed geometry blended by 0–1 slider
+4.   D — Driver links shape key value to bone rotation
+5.   C — Constant = holds value until next keyframe (stepped)
+6.   C — S scales keyframe timing in the Dope Sheet
+7.   C — Cycles modifier repeats the F-Curve pattern infinitely
+8.   C — Push Down converts active action to NLA strip
+9.   D — Fake User prevents orphan data deletion on save
+10.  B — Passive = fixed collider, does not move
+11.  C — Pinning vertex group = attach points that don't move
+12.  C — Domain = bounding box for the simulation
+13.  D — Unbaked = recalculates from frame 1 per render call
+14.  C — APIC = better angular momentum / vortex-rich flows
+15.  D — Children → Interpolated generates dense hair between parents
+16.  C — Cycles = path tracing (physically accurate)
+17.  D — EEVEE = fast, stylized, real-time quality
+18.  C — OptiX requires NVIDIA RTX GPU
+19.  D — MP4 crash = restart from frame 1
+20.  C — Cryptomatte = click-to-pick per-object masks
+21.  D — 10s × 24fps = 240 frames
+22.  B — Blocking (stepped) → director approval → spline polish
+23.  C — Coffee Run = ~2 artists, ~3 months
+24.  D — Animatic built in Blender's VSE
+25.  D — Sprite Fright = 2048×858, 2.39:1 aspect ratio
+26.  C — Color Balance = lift/gamma/gain (shadows/mids/highlights)
+27.  D — Glare = streaks, bloom, fog glow around bright areas
+28.  C — CRF 18–23 = high quality H.264
+29.  D — Follow-through = secondary parts continue after body stops
+30.  D — Emotional beat clarity is the ultimate self-review criterion
 ```

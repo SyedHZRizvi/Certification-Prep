@@ -248,34 +248,34 @@ D. Disgust
 ## 🎯 Answer Key (No Cheating!)
 
 ```
-1.  B: Through-line: chain of objectives → super-objective
-2.  C: AU6: genuine smile component (cheeks, crow's-feet)
-3.  B: 2-frame lead: neurological fact, not convention
-4.  B: Gallop aerial: gathered (tucked) position
-5.  C: Massive: fuzzy logic networks
-6.  B: Contact editing: hand contacts, props, character interactions
-7.  D: Stepped: no interpolation, value jumps
-8.  B: "Feels off": ask "Can you point to a specific moment?"
-9.  C: 60–90 seconds professional standard
-10. B: Indicating: showing emotion vs experiencing its cause
-11. B: Butterfly blink: closes 4f, opens 5-6f
-12. B: Preston Blair: phoneme → viseme mapping
-13. C: Fish wave: head to tail (posteriorly)
-14. C: 1-in-10: 1 agent distinctly different per 10 visible
-15. B: Plot: bakes retargeting → discrete keyframes
-16. C: Break S-curve: impact contact frames
-17. B: Approved = director signed off; editorial can still cut
-18. C: Luisa blink rate increase = escalating anxiety
-19. B: Swimming: spline generates unexpected in-betweens
-20. B: Behavioral borrowing: apply real animal's vocabulary to fictional creature
-21. B: Full body mocap: 40–55 markers
-22. B: Planning trap: years 3–7
-23. C: Conflicting notes: escalate to Director of Animation
-24. B: Retargeting paradox: shorter legs = appears faster
-25. C: Toothless: cat + Labrador
-26. B: Both reviewers ID same weak shot: cut it
-27. B: Less is more: 5 shapes sufficient if closures correct
-28. C: Creature bible: behavioral vocabulary document
-29. B: Handles: 4–8f holds at shot start/end
-30. C: Pride is NOT one of the 7 universals (the others: happiness, sadness, fear, disgust, anger, surprise, contempt)
+1.  B — Through-line: chain of objectives → super-objective
+2.  C — AU6: genuine smile component (cheeks, crow's-feet)
+3.  B — 2-frame lead: neurological fact, not convention
+4.  B — Gallop aerial: gathered (tucked) position
+5.  C — Massive: fuzzy logic networks
+6.  B — Contact editing: hand contacts, props, character interactions
+7.  D — Stepped: no interpolation, value jumps
+8.  B — "Feels off": ask "Can you point to a specific moment?"
+9.  C — 60–90 seconds professional standard
+10. B — Indicating: showing emotion vs experiencing its cause
+11. B — Butterfly blink: closes 4f, opens 5-6f
+12. B — Preston Blair: phoneme → viseme mapping
+13. C — Fish wave: head to tail (posteriorly)
+14. C — 1-in-10: 1 agent distinctly different per 10 visible
+15. B — Plot: bakes retargeting → discrete keyframes
+16. C — Break S-curve: impact contact frames
+17. B — Approved = director signed off; editorial can still cut
+18. C — Luisa blink rate increase = escalating anxiety
+19. B — Swimming: spline generates unexpected in-betweens
+20. B — Behavioral borrowing: apply real animal's vocabulary to fictional creature
+21. B — Full body mocap: 40–55 markers
+22. B — Planning trap: years 3–7
+23. C — Conflicting notes: escalate to Director of Animation
+24. B — Retargeting paradox: shorter legs = appears faster
+25. C — Toothless: cat + Labrador
+26. B — Both reviewers ID same weak shot: cut it
+27. B — Less is more: 5 shapes sufficient if closures correct
+28. C — Creature bible: behavioral vocabulary document
+29. B — Handles: 4–8f holds at shot start/end
+30. C — Pride is NOT one of the 7 universals (the others: happiness, sadness, fear, disgust, anger, surprise, contempt)
 ```

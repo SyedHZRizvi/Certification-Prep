@@ -58,7 +58,7 @@ Build a **technical runbook** for the Lightning Network integration. Must includ
 
 - **Architecture.** Self-hosted LND or CLN cluster vs. a custodial Lightning service provider (Voltage, Lightspark, Galoy) vs. a hybrid. Decision memo with kill criteria.
 - **Liquidity strategy.** Inbound vs outbound liquidity, target channel capacity per node, rebalancing automation (rebalance-lnd, lnd-manageJ, Lightning Pool, Magma). Cost forecast for liquidity procurement.
-- **Routing strategy.** Direct channels to which counterparties (Wallet of Satoshi, Strike, OpenNode, Bitfinex, Kraken). Pricing (sats/Million, base fee).
+- **Routing strategy.** Direct channels to which counterparties (Wallet of Satoshi, Strike, OpenNode, Bitfinex, Kraken). Pricing (sats/Million, base fee). *Note: when evaluating Lightning counterparties, students must perform a counterparty-risk assessment that includes reviewing each platform's regulatory status, enforcement history, and current licensing. Some platforms listed above (e.g., Bitfinex) have prior regulatory actions; a regulated credit union would need to conduct enhanced due diligence before establishing routing relationships. This list is illustrative, not a recommendation.*
 - **Cross-border remittance flow.** USD → BTC (on-chain or via stablecoin?) → Lightning → MXN payout. Map the regulatory touchpoints in each jurisdiction. Identify the Mexican-side partner (Bitso, Volabit, OpenNode).
 - **Operations.** Watchtowers (LDK, Eye-of-Satoshi), backup channel state, force-close handling, fee bumping (CPFP, anchor outputs), node monitoring (Amboss, ThunderHub).
 - **Security.** Hot wallet limits, key rotation, HSM integration if available, segregation from custody cold tier.
