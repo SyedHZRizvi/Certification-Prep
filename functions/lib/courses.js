@@ -50,6 +50,8 @@ export const COURSES = [
   { id: "37-Advanced-Character-Animation",          slug: "Advanced Character Animation",   icon: "🎭", category: "Animation & Motion Design" },
   { id: "38-VFX-Compositing",                       slug: "VFX & Compositing",              icon: "✨", category: "Animation & Motion Design" },
   { id: "39-Game-UI-Animation",                     slug: "Game & UI Animation",            icon: "🕹️", category: "Animation & Motion Design" },
+  // DevOps & Cloud-Native track
+  { id: "40-CKA-Kubernetes",                        slug: "Certified Kubernetes Administrator (CKA)", icon: "⎈", category: "DevOps & Cloud-Native" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);

@@ -65,9 +65,11 @@ EXPECTED_COURSES = {
     "37-Advanced-Character-Animation":          10,
     "38-VFX-Compositing":                       10,
     "39-Game-UI-Animation":                     8,
+    # DevOps & Cloud-Native track
+    "40-CKA-Kubernetes":                        8,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 286 + 68 = 354
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 39 × 3 = 117
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 286 + 68 + 8 = 362
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 40 × 3 = 120
 MIN_TOTAL_COURSE_MD_FILES = 1650  # was 1330 with 32 courses; ~320 added with 7 animation courses
 MIN_YT_SEARCH_URLS = 3100         # was 2580; ~520 added with 68 new modules × ~8 cards each
 
