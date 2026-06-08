@@ -26,6 +26,8 @@ Per the **Scrum Guide 2020** (the bible, read it 3+ times):
 
 > *"Scrum is a lightweight framework that helps people, teams, and organizations generate value through adaptive solutions for complex problems."*
 
+> *Source: The Scrum Guide, 2020 edition — Schwaber & Sutherland, [scrumguides.org](https://scrumguides.org/scrum-guide.html) (CC BY-SA 4.0)*
+
 Three keywords to memorize:
 
 - **Lightweight**, minimal rules
@@ -400,3 +402,7 @@ You now know:
 | Cynefin framework (referenced indirectly by "complex problems") | Snowden | 1999, mature 2007 | *"A Leader's Framework for Decision Making"*, *Harvard Business Review*, Nov 2007 |
 
 **Verification note.** Scrum Guide quotes verified against the official 2020 edition at scrumguides.org. Salesforce ADM dates cross-checked against Salesforce's public 2008 *State of the Salesforce Engineering Org* talk and Brougham's 2008 *developerWorks* article. Cynefin attribution per Snowden's HBR article ("complex" is one of the five Cynefin domains; Scrum is the framework prescribed for complex domains).
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.

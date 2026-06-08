@@ -19,6 +19,8 @@
 Per PMI:
 > *"A temporary endeavor undertaken to create a unique product, service, or result."*
 
+> *Source: PMBOK Guide, Seventh Edition (Project Management Institute, 2021), §1.2 — reproduced for educational discussion under fair use.*
+
 3 keywords:
 
 - 🕒 **Temporary**, has a beginning and end

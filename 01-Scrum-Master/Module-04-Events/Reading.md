@@ -433,3 +433,7 @@ You now know:
 | Liberating Structures (facilitation patterns referenced in Module 7) | Lipmanowicz & McCandless | 2013 | *The Surprising Power of Liberating Structures* (Liberating Structures Press) |
 
 **Verification note.** Sprint event timeboxes are quoted directly from the Scrum Guide 2020 ("Sprint Planning is timeboxed to a maximum of eight hours for a one-month Sprint. For shorter Sprints, the event is usually shorter."). The John Deere figures were disclosed at the company's 2023 Investor Day (March 2023) and at the AgTech Summit 2024 (held November 2024 in St. Louis). Derby & Larsen's *Agile Retrospectives* remains the canonical reference for Retrospective formats; PSM I doesn't require the formats by name but the exam may reference them descriptively.
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.

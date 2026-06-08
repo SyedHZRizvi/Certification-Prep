@@ -396,3 +396,7 @@ You now know:
 | Sutherland's "Hyperproductive Development" paper (cited for Scrum velocity claims) | Sutherland | 2011 | *"The Scrum Papers"*, Sutherland & Schwaber, scruminc.com |
 
 **Verification note.** The most important takeaway: **DoR, Velocity, Burndown/Burnup, Story Points, INVEST, and User-Story format are *not* in the Scrum Guide.** They are all common practice, many drawn from XP (Beck) or codified by Cohn. The PSM I exam explicitly tests whether you can distinguish *Scrum Guide content* from *common Scrum practice*. Cohn's *Agile Estimating and Planning* (2005) is the canonical reference outside the Guide.
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.

@@ -35,6 +35,8 @@ Here's all 4 lines:
 >
 > *That is, while there is value in the items on the right, we value the items on the left more.*
 
+*Source: Manifesto for Agile Software Development (Beck et al., 2001), [agilemanifesto.org](https://agilemanifesto.org) — reproduced with attribution per the Manifesto's copy condition.*
+
 🔥 **MEMORIZE THIS.** The exam will paraphrase it. You'll see questions like *"Which is more valuable, comprehensive docs or working software?"* and you'll smirk.
 
 ---
@@ -87,6 +89,8 @@ You don't have to memorize all 12. But know these **5 critical ones**, they show
 🎯 **Translation:** This is the **Retrospective** in code form. Continuous improvement.
 
 📌 The other 7 principles are nice-to-know but rarely tested. Focus on these 5.
+
+*Source: Principles behind the Agile Manifesto (Beck et al., 2001), [agilemanifesto.org/principles.html](https://agilemanifesto.org/principles.html) — Principles 1, 2, 3, 5, and 12 of twelve reproduced with attribution. Full text at agilemanifesto.org.*
 
 ---
 
@@ -302,3 +306,7 @@ Every framework named above traces back to a specific paper, book, or document. 
 | Critique of Spotify model | Lee (Jeremiah) | 2020 | *"Failed #SquadGoals"*, jeremiahlee.com, and Joakim Sundén's 2022 Agile Alliance talk |
 
 **Verification note.** All publication years and venues verified as of 2026-05 against the original publishers' listings (agilemanifesto.org, scrumguides.org, scrum.org, scaledagileframework.com, less.works, Addison-Wesley, Crown Business). The Scrum Guide is freely available; *Scrum: The Art of Doing Twice the Work in Half the Time* is the most-cited Scrum trade book and the recommended "supplement" to the 13-page Guide.
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.

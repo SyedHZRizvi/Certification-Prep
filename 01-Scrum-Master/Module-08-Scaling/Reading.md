@@ -322,3 +322,7 @@ You now know:
 | Tesla Gigafactory (iterative build, brief reference) | Tesla public disclosures | 2014–2024 | Tesla Investor Day disclosures; Walter Isaacson's *Elon Musk* (2023) |
 
 **Verification note.** The Scrum Guide explicitly states that multiple Scrum Teams on the same product must share one PO, one Product Backlog, one Product Goal, and a common Definition of Done. SAFe and the Spotify model are *not* in the Scrum Guide. Nexus *is* a Scrum.org product and the Nexus Guide is the authoritative reference. The PSM I exam tests scaling *lightly*, the deep tests are in PSM II and SPS (Scaled Professional Scrum), but knowing the single-PO / single-backlog / single-goal / shared-DoD rule is essential.
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.

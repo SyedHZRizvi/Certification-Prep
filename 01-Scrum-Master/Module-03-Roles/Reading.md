@@ -352,3 +352,7 @@ You now know:
 | *Coaching Agile Teams* (definitive SM behavior text) | Adkins | 2010 | Addison-Wesley Professional |
 
 **Verification note.** Greenleaf's *Servant as Leader* essay is the canonical citation for servant leadership; the 1970 essay predates Greenleaf's 1977 book by seven years and is the more academically cited source. ING transformation numbers are from McKinsey's January 2017 public case write-up. The "Type X/Y/Z patterns" framing of teams is from Sutherland's 2014 book, which itself draws on Takeuchi & Nonaka's 1986 HBR article *"The New New Product Development Game"*, the paper that gave Scrum its name.
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.

@@ -385,3 +385,7 @@ You now know:
 | Kano model (referenced as ordering technique, *not* in Scrum) | Kano | 1984 | *"Attractive quality and must-be quality"*, *Journal of the Japanese Society for Quality Control* |
 
 **Verification note.** The Sprint Backlog's "3 parts" (Sprint Goal + selected PBIs + actionable plan) is a 2020 Scrum Guide change pre-2020, the Sprint Backlog was defined as just the PBIs + plan, with the Sprint Goal as a separate concept. The exam tests this explicitly. INVEST is from Bill Wake's blog post and is *not* in the Scrum Guide the Guide is intentionally silent on user-story criteria.
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.

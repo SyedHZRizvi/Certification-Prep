@@ -337,3 +337,7 @@ You now know:
 | *The Phoenix Project* (DevOps culture novel) | Kim, Behr, Spafford | 2013 | IT Revolution Press |
 
 **Verification note.** Greenleaf's 1970 essay is the *primary* servant-leadership citation; Robert Greenleaf founded the Greenleaf Center for Servant Leadership in 1964, but the essay is the formative document. The Toyota lineage is well established in lean literature (Liker's *Toyota Way* is the canonical English text). The "5 Stances of a Scrum Master" framing is Scrum.org training material, it does not appear *in* the Scrum Guide, but is widely tested in PSM I prep.
+
+---
+
+> **Third-party attribution.** This module adapts content from *The Scrum Guide* (2020 edition) by Ken Schwaber and Jeff Sutherland, available at [scrumguides.org](https://scrumguides.org/scrum-guide.html). *The Scrum Guide* is licensed under **Creative Commons Attribution ShareAlike 4.0 International (CC BY-SA 4.0)** — [creativecommons.org/licenses/by-sa/4.0](https://creativecommons.org/licenses/by-sa/4.0/). Teaching commentary, analogies, case studies, and questions in this module are original work by Humayun Zafar and are shared under the same CC BY-SA 4.0 terms. This course is an independent study resource and is not affiliated with, authorized by, or endorsed by Scrum.org or the Scrum Guide authors.
