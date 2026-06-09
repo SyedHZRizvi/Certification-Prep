@@ -1,5 +1,5 @@
 /**
- * Canonical list of all 39 courses on The Cert Hub.
+ * Canonical list of all 45 courses on The Cert Hub.
  *
  * Must stay in sync with EXPECTED_COURSES in scripts/verify-baseline.py.
  *
@@ -52,6 +52,12 @@ export const COURSES = [
   { id: "39-Game-UI-Animation",                     slug: "Game & UI Animation",            icon: "🕹️", category: "Animation & Motion Design" },
   // DevOps & Cloud-Native track
   { id: "40-CKA-Kubernetes",                        slug: "Certified Kubernetes Administrator (CKA)", icon: "⎈", category: "DevOps & Cloud-Native" },
+  // Spoken Language Mastery track
+  { id: "41-English-Language",  slug: "English Language Mastery",  icon: "🇬🇧", category: "Spoken Language Mastery" },
+  { id: "42-Urdu-Language",     slug: "Urdu Language Mastery",     icon: "🇵🇰", category: "Spoken Language Mastery" },
+  { id: "43-Persian-Language",  slug: "Persian Language Mastery",  icon: "🇮🇷", category: "Spoken Language Mastery" },
+  { id: "44-Arabic-Language",   slug: "Arabic Language Mastery",   icon: "🇸🇦", category: "Spoken Language Mastery" },
+  { id: "45-French-Language",   slug: "French Language Mastery",   icon: "🇫🇷", category: "Spoken Language Mastery" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);
