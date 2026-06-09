@@ -4,7 +4,7 @@
 
 Practice real Arabic conversations for business, travel, hospitality, shopping, and daily life.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Business+Meeting+Conversation+Formal+Phrases" data-video-id="5P_D3fLOuF0" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>

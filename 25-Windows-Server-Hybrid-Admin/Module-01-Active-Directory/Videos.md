@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~2 hours)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Active+Directory+complete+overview" data-video-id="4qC7H-y7oKI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+gMSA+group+managed+service+accounts" data-video-id="Q46SDMstaDo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Sean+Metcalf+Active+Directory+security+attack+paths" data-video-id="Lz6haohGAMc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -4,7 +4,7 @@
 
 ## Essential — Business French Foundations
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=french+business+vocabulary+corporate+workplace+B2" data-video-id="psBtNrPqDvk" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -54,7 +54,7 @@
 
 ## Recommended — Professional Culture and Skills
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=french+work+culture+hierarchy+business+customs" data-video-id="AhIGGl4lI9E" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -93,7 +93,7 @@
 
 ## Optional — Immersion in French Professional Life
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=france+24+economics+business+news+french" data-video-id="U5B3nDWHOlQ" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">

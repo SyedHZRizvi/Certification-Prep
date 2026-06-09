@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~100 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="fGPnFpMGhWc" href="https://www.youtube.com/results?search_query=Robyn+Meta+MMM+open+source+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -74,7 +74,7 @@
 
 ## 📚 Recommended (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ONCOkccpk3w" href="https://www.youtube.com/results?search_query=StatQuest+Bayesian+statistics+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="LyrU7eD77wQ" href="https://www.youtube.com/results?search_query=Hanssens+marketing+mix+modeling+lecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

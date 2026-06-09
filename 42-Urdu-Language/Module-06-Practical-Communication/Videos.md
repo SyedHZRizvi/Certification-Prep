@@ -4,7 +4,7 @@
 
 ## Essential Viewing
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+office+workplace+vocabulary" data-video-id="PqNsqTiMiA0" target="_blank">
   <div class="vg-thumb">🏢<div class="vg-play">▶</div></div>
@@ -40,7 +40,7 @@
 
 ## Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=pakistani+wedding+vocabulary+urdu" data-video-id="RKfFl3fBkSk" target="_blank">
   <div class="vg-thumb">💍<div class="vg-play">▶</div></div>
@@ -76,7 +76,7 @@
 
 ## Optional / Enrichment
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+negotiation+phrases+business" data-video-id="vw4VGrqPHOs" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>

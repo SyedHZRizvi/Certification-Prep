@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~95 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="KVXnCdImOSk" href="https://www.youtube.com/results?search_query=Simo+Ahava+consent+mode+v2+GTM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="0Ud_YzYtrVc" href="https://www.youtube.com/results?search_query=data+clean+rooms+marketing+measurement+IAB" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="lg-VhHlztqo" href="https://www.youtube.com/results?search_query=differential+privacy+marketing+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="SY5jF2tAgSY" href="https://www.youtube.com/results?search_query=GPT-3+paper+Brown+2020+language+models+few+shot+learners+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="5F0F4VYRqC4" href="https://www.youtube.com/results?search_query=fantastically+ordered+prompts+example+order+sensitivity" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="6oJBTNLMvgk" href="https://www.youtube.com/results?search_query=rethinking+demonstrations+random+labels+ICL+Min+2022" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

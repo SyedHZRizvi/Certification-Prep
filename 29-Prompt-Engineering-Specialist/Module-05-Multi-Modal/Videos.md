@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="oc6RV5c1yd0" href="https://www.youtube.com/results?search_query=GPT-4V+launch+vision+walkthrough+september+2023" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="rtRRFBjmR9I" href="https://www.youtube.com/results?search_query=vision+LLM+vs+tesseract+textract+document+ai+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="5kl2NzRvbqA" href="https://www.youtube.com/results?search_query=ChartQA+benchmark+vision+LLM+evaluation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

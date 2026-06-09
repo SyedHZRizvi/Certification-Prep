@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="BqNbzeuxTaE" href="https://www.youtube.com/results?search_query=John+Savill+AZ-900+cloud+concepts" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~25 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="poDIT2ruQ9M" href="https://www.youtube.com/results?search_query=NetworkChuck+what+is+the+cloud" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="-jbO1uRWolo" href="https://www.youtube.com/results?search_query=Microsoft+Mechanics+Azure+overview" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

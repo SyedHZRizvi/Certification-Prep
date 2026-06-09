@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=GDPR+marketing+explained+plain+English+2025" target="_blank" rel="noopener" data-video-id="kLFFnAONHvU">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=FTC+AI+endorsement+guides+disclosure+rules" target="_blank" rel="noopener" data-video-id="Hq1UDKzazVQ">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Goldman+Sachs+Apple+Card+gender+bias+investigation" target="_blank" rel="noopener" data-video-id="GBuJFlwoU1w">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="m_AQfKsUAwQ" href="https://www.youtube.com/results?search_query=Justin+Welsh+LinkedIn+profile+optimization+2026" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="wDwtSuDkOYQ" href="https://www.youtube.com/results?search_query=Amanda+Natividad+content+distribution+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="FQ_YxeXg4pY" href="https://www.youtube.com/results?search_query=Read.cv+portfolio+tutorial+modern+creator" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ot8GVe3m5w0" href="https://www.youtube.com/results?search_query=Chris+Do+how+to+win+your+first+client" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="mGrlaz8SVvU" href="https://www.youtube.com/results?search_query=Anthony+Pierri+FletchPMM+first+client+positioning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="rgMKUg4-kqc" href="https://www.youtube.com/results?search_query=Greg+Isenberg+AI+agency+from+0+to+first+client" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

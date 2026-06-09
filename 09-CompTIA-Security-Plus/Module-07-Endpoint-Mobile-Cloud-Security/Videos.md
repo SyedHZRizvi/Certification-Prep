@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+SY0-701+EDR+XDR" data-video-id="83pCkSSj1IQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=container+security+kubernetes+best+practices" data-video-id="ApKRLcGSmbk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Stuxnet+SCADA+attack+explained" data-video-id="MJRH4-DtMHE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

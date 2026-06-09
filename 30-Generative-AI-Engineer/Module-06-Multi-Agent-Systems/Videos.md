@@ -20,7 +20,7 @@
 
 ## ⭐ Essential
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="sal78ACtGTc" href="https://www.youtube.com/results?search_query=andrew+ng+agentic+workflows+deeplearning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ODaHJzOyVCQ" href="https://www.youtube.com/results?search_query=anthropic+computer+use+claude+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -102,7 +102,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="X-AWdfSFCHQ" href="https://www.youtube.com/results?search_query=autogpt+failure+post+mortem" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

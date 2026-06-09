@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="GTUTLRXcVuA" href="https://www.youtube.com/results?search_query=Incoterms+2020+all+11+rules+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -74,7 +74,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="9oxcmn1eHY8" href="https://www.youtube.com/results?search_query=free+trade+zone+FTZ+bonded+warehouse+benefits" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="3oTIh_A2-Mo" href="https://www.youtube.com/results?search_query=anti+dumping+countervailing+duty+international+trade" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Marketing+AI+Institute+Paul+Roetzer+AI+marketer+stack+2025" target="_blank" rel="noopener" data-video-id="zR3kuPcGbfk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Zapier+vs+Make+vs+n8n+comparison+automation" target="_blank" rel="noopener" data-video-id="fH42AQLZxLI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Lenny+Rachitsky+solo+newsletter+operator+stack" target="_blank" rel="noopener" data-video-id="It-nZdG7b3s">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

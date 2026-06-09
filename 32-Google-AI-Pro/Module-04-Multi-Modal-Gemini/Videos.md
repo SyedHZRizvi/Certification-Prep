@@ -19,7 +19,7 @@
 
 ## ⭐ Essential (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+multimodal+vision+image+understanding+tutorial" data-video-id="bYvr9rI-LNw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+drive+thru+Google+Cloud+case+study" data-video-id="v8JOUcBV2Oc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
@@ -83,7 +83,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercedes+Benz+MBUX+Gemini+voice+assistant+demo" data-video-id="a9__D53WsMs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>

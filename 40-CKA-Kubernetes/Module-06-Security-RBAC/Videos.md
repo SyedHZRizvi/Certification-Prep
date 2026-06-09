@@ -23,7 +23,7 @@
 
 ## Essential — Watch First
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+Role+ClusterRole+RoleBinding+CKA+tutorial" data-video-id="jvhKOAyD8S8" target="_blank" rel="noopener">
   <div class="vg-thumb">
@@ -109,7 +109,7 @@
 
 ## Recommended — Watch Before Mock Exam
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+admission+webhooks+MutatingWebhookConfiguration+ValidatingWebhookConfiguration" data-video-id="qlSuOhNFMhU" target="_blank" rel="noopener">
   <div class="vg-thumb">
@@ -169,7 +169,7 @@
 
 ## Optional — For Depth and Real-World Context
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+ClusterRole+aggregation+rules" data-video-id="6D7iFkESmRo" target="_blank" rel="noopener">
   <div class="vg-thumb">

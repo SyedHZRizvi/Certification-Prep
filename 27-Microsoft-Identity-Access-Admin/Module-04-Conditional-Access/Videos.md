@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~90 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Conditional+Access+deep+dive+SC-300" data-video-id="kwMWwRohe38" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+continuous+access+evaluation+CAE" data-video-id="m3309aUKET8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Defender+for+Cloud+Apps+session+policy+download" data-video-id="L-EKqbse2cs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepLearningAI+ChatGPT+prompt+engineering+for+developers" target="_blank" rel="noopener" data-video-id="tRvcAdqsJWo">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=RAG+explained+retrieval+augmented+generation+IBM" target="_blank" rel="noopener" data-video-id="T-D1OfcDW1M">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Aurora+pgvector+RAG+demo" target="_blank" rel="noopener" data-video-id="e9SHaO9RNzk">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

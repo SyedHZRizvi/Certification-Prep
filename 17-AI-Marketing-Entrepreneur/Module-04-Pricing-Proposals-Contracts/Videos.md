@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="VwIft8vC790" href="https://www.youtube.com/results?search_query=Blair+Enns+pricing+creativity+value+based+pricing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="pwpYXI7CYfE" href="https://www.youtube.com/results?search_query=Bonsai+freelance+contract+clauses+essentials" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="KPf7avqVl_Y" href="https://www.youtube.com/results?search_query=AI+disclosure+contract+clause+freelancer+2026" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -20,7 +20,7 @@
 
 ## ⭐ Essential (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Kdsp6soqA7o" href="https://www.youtube.com/results?search_query=ROC+AUC+precision+recall+F1+complete+intuition+StatQuest" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="d4PPMpdUCz8" href="https://www.youtube.com/results?search_query=SHAP+values+explained+visual+intuition" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -93,7 +93,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="jIXIuYdnyyk" href="https://www.youtube.com/results?search_query=fairness+ML+definitions+impossibility+result" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

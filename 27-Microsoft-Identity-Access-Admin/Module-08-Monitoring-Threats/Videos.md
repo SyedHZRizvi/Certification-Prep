@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+sign-in+logs+audit+logs+KQL+tutorial" data-video-id="j5Jzhi7s7gY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=KQL+Kusto+Query+Language+beginners+tutorial" data-video-id="ImqRQJfnSHM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Entra+workbook+sentinel+identity+dashboard" data-video-id="0ZWufPqCSok" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

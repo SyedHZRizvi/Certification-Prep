@@ -4,7 +4,7 @@
 
 Master C1-level Business Persian — formal correspondence, Iranian business culture, legal vocabulary, negotiation, and news media language.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+formal+business+letter+correspondence+C1" data-video-id="yk_RBYZV6dI" target="_blank">
   <div class="vg-thumb">📄<div class="vg-play">▶</div></div>

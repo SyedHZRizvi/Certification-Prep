@@ -22,7 +22,7 @@
 
 ## ⭐ Essential (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+220-1102+Windows+editions+install" data-video-id="3MHDU4kFChU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -72,7 +72,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=NetworkChuck+Linux+for+beginners+command+line" data-video-id="VbEx7B_PTOE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -104,7 +104,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Britec09+repair+Windows+boot+bootrec" data-video-id="fMwfWP2ahyw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

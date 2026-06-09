@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="QAYXUPgM4gk" href="https://www.youtube.com/results?search_query=cohort+analysis+retention+SaaS+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="hBZn3a8RSMw" href="https://www.youtube.com/results?search_query=Mixpanel+cohort+analysis+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="9FHYtjw6mjs" href="https://www.youtube.com/results?search_query=Notion+activation+cohorts+behavior" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

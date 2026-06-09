@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="sQsAMNF0c4Y" href="https://www.youtube.com/results?search_query=Master+Production+Schedule+MPS+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="GouWNPZbKe0" href="https://www.youtube.com/results?search_query=Bill+of+Materials+BOM+low+level+coding" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="6XT_w9JYMLU" href="https://www.youtube.com/results?search_query=DDMRP+Demand+Driven+MRP+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

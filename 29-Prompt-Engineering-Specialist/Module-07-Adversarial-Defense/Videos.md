@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="jrHRe9lSqqA" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="wVzuvf9D9BU" href="https://www.youtube.com/results?search_query=Bing+Sydney+chatbot+prompt+leak+kevin+liu" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="npAcymuDmeA" href="https://www.youtube.com/results?search_query=garak+LLM+vulnerability+scanner+red+team" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

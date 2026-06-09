@@ -4,7 +4,7 @@
 
 Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conjugation, and postpositions — with these targeted video lessons.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+SOV+word+order+grammar+lesson+beginners" data-video-id="T2PVzuQcjWw" target="_blank">
   <div class="vg-thumb">📐<div class="vg-play">▶</div></div>

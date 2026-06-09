@@ -19,7 +19,7 @@
 
 ## Essential — Native Speaker Grammar Lessons
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+articles+a+an+the+rules+explained+beginners+EngVid" data-video-id="knHVPt8Prw8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -75,7 +75,7 @@
 
 ## Recommended — Grammar & Vocabulary
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+plural+nouns+rules+irregular+plurals+grammar" data-video-id="N4VaXyUmHuc" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -131,7 +131,7 @@
 
 ## Optional — Immersion
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+in+use+A2+daily+conversations+listening" data-video-id="rXbhBbXxFQs" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>

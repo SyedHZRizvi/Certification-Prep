@@ -4,7 +4,7 @@
 
 Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi to Nowruz, Iranian cinema to classical music, and the deep Persian-Urdu literary bond.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Masnavi+Persian+poetry+explained+English+couplets" data-video-id="nHqXfKRSjmY" target="_blank">
   <div class="vg-thumb">🌀<div class="vg-play">▶</div></div>

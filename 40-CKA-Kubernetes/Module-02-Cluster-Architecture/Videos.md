@@ -24,7 +24,7 @@
 
 ## ⭐ Essential Watching
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Architecture+explained+KodeKloud+CKA" data-video-id="umXEmn3cMkY" target="_blank" rel="noopener">
     <div class="vg-thumb">
       <img src="https://i.ytimg.com/vi/umXEmn3cMkY/hqdefault.jpg" alt="Kubernetes Architecture KodeKloud" loading="lazy" onerror="this.style.display='none'">
@@ -95,7 +95,7 @@
 
 ## 📚 Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+control+plane+worker+node+components+IBM+Technology" data-video-id="90kZRyPcRZw" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #1d4ed8, #0ea5e9);">
       <span>🏛️</span>
@@ -166,7 +166,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+raft+consensus+algorithm+explained+distributed" data-video-id="vYwT__nIXWY" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #991b1b, #7c3aed);">
       <span>🔬</span>

@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Stakeholder+Management+PMP+Andrew+Ramdayal" data-video-id="4y3Rijojwok" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended (~20 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Salience+Model+Joseph+Phillips" data-video-id="JdgpPVRsxaQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

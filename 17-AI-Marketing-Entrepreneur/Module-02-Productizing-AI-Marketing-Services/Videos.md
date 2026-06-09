@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="o-UR3rkPgJ4" href="https://www.youtube.com/results?search_query=Brett+Williams+Designjoy+productized+service+how+it+works" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="EF1s5-zgyF0" href="https://www.youtube.com/results?search_query=Greg+Isenberg+AI+productized+agency" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Iad2uN8y3Vs" href="https://www.youtube.com/results?search_query=Brian+Casel+productize+yourself+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

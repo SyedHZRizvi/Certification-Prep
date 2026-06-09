@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Document+Intelligence+tutorial+prebuilt+custom" target="_blank" rel="noopener" data-video-id="JTA0hyURunY">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Document+Intelligence+custom+neural+vs+template" target="_blank" rel="noopener" data-video-id="DgE01KCwd9Q">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Document+Intelligence+invoice+receipt+ID+prebuilt" target="_blank" rel="noopener" data-video-id="zra-BAQrzHI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

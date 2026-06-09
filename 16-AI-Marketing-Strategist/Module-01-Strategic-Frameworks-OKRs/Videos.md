@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="L4N1q4RNi9I" href="https://www.youtube.com/results?search_query=John+Doerr+OKRs+TED+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -74,7 +74,7 @@
 
 ## 📚 Recommended (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="SKRWvGDRWfg" href="https://www.youtube.com/results?search_query=Ansoff+matrix+explained+marketing+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -115,7 +115,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="FEoE0LqApqs" href="https://www.youtube.com/results?search_query=Spotify+Wrapped+how+it+works+behind+the+scenes" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

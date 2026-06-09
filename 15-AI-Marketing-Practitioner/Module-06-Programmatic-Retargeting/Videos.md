@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="SR2bDNbSO14" href="https://www.youtube.com/results?search_query=programmatic+advertising+explained+DSP+SSP+exchange" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="6dn4H6Qrauc" href="https://www.youtube.com/results?search_query=Segment+CDP+customer+data+platform+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="g5_1taRhoOg" href="https://www.youtube.com/results?search_query=header+bidding+publisher+programmatic+explainer" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

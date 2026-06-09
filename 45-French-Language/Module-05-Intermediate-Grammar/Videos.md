@@ -4,7 +4,7 @@
 
 ## Intermediate Grammar — Passé Composé, Imparfait, Irregular Verbs, Future
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Passe+Compose+Complete+Guide+with+Avoir+and+Etre+French" data-video-id="j_0IlDEcP3s" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>

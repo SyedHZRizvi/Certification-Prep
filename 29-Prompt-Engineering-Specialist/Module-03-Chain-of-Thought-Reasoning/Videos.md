@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="AFE6x81AP4k" href="https://www.youtube.com/results?search_query=chain+of+thought+prompting+Wei+2022+paper+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="6oJBTNLMvgk" href="https://www.youtube.com/results?search_query=self+consistency+chain+of+thought+wang+2022+majority+vote" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="T0jLKmIzGoA" href="https://www.youtube.com/results?search_query=DeepSeek+R1+open+source+reasoning+model+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

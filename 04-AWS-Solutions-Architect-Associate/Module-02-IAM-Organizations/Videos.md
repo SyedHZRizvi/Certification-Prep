@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="I_Uh1ra3RYU" href="https://www.youtube.com/results?search_query=AWS+IAM+for+beginners+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="4yJp5-jGGNk" href="https://www.youtube.com/results?search_query=AWS+IAM+Identity+Center+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🆔</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="jnWHZMVCHSo" href="https://www.youtube.com/results?search_query=AWS+confused+deputy+ExternalId" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🕵️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

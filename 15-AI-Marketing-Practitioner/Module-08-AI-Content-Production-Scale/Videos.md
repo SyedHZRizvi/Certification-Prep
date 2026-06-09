@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="OZ8TAWaNs5M" href="https://www.youtube.com/results?search_query=Midjourney+v7+tutorial+complete+marketing+images" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="H5wQfForKaE" href="https://www.youtube.com/results?search_query=ElevenLabs+voice+cloning+tutorial+marketing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="4c9iy3SjgI4" href="https://www.youtube.com/results?search_query=Klarna+AI+marketing+automation+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

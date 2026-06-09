@@ -19,7 +19,7 @@
 
 ## ⭐ Essential watching (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="hEzpiDuYFoE" href="https://www.youtube.com/results?search_query=Ron+Kohavi+trustworthy+AB+testing+experiments" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -60,7 +60,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="VVr2lxK3ljs" href="https://www.youtube.com/results?search_query=Microsoft+Clarity+heatmaps+session+replay+ecommerce" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -92,7 +92,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="r57gd8CRxDA" href="https://www.youtube.com/results?search_query=Booking+com+experimentation+culture+1000+tests" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

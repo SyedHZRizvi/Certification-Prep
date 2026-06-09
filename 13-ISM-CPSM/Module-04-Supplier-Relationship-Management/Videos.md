@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="OzxCaaQrOKw" href="https://www.youtube.com/results?search_query=supplier+relationship+management+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -74,7 +74,7 @@
 
 ## 📚 Recommended (~32 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Jw-hDwr3mYM" href="https://www.youtube.com/results?search_query=quarterly+business+review+QBR+supplier+template" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="mGLheZVBvH4" href="https://www.youtube.com/results?search_query=vested+outsourcing+sourcing+business+model" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

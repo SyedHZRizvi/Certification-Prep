@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Azure+Bot+Service+overview+tutorial" target="_blank" rel="noopener" data-video-id="dAl9FsWOnlI">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Adaptive+Cards+bot+framework+tutorial" target="_blank" rel="noopener" data-video-id="t6_x8Bpzxss">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Copilot+Studio+vs+Bot+Framework" target="_blank" rel="noopener" data-video-id="sIUNK809qlc">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

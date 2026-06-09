@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~90 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Microsoft+Entra+ID+complete+overview" target="_blank" rel="noopener" data-video-id="cE3IiHGuHvs">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Tim+Warner+Entra+ID+dynamic+groups+membership+rules" target="_blank" rel="noopener" data-video-id="qw4A82_bD-0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=John+Savill+Entra+ID+Identity+Protection+risk+policies" target="_blank" rel="noopener" data-video-id="Nx2ych3xHl0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

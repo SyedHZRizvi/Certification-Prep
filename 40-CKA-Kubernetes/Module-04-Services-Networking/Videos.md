@@ -21,7 +21,7 @@
 
 ## Essential — Watch These First
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+services+clusterip+nodeport+loadbalancer+explained" data-video-id="T4Z7visMM4E" target="_blank" rel="noopener">
   <div class="vg-thumb">
@@ -94,7 +94,7 @@
 
 ## Recommended — Solidify Your Understanding
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kube-proxy+iptables+ipvs+explained" data-video-id="NZNuBPxh1RU" target="_blank" rel="noopener">
   <div class="vg-thumb">
@@ -167,7 +167,7 @@
 
 ## Optional — Go Deeper
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=cilium+ebpf+kubernetes+networking+deep+dive" data-video-id="u8HKg5pENj4" target="_blank" rel="noopener">
   <div class="vg-thumb">

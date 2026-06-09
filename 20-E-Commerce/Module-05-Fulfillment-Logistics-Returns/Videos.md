@@ -19,7 +19,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="IyZxWNpJrqQ" href="https://www.youtube.com/results?search_query=Amazon+FBA+vs+FBM+fulfillment+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -60,7 +60,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="uETRjvg0u6w" href="https://www.youtube.com/results?search_query=OMS+WMS+TMS+order+management+ecommerce" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -92,7 +92,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="UArHBr_qdc8" href="https://www.youtube.com/results?search_query=Maersk+last+mile+ecommerce+acquisitions" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

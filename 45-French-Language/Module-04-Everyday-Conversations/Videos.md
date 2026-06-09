@@ -4,7 +4,7 @@
 
 ## Real French Conversations — Cafés, Directions, Culture, Daily Life
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Ordering+at+a+French+Cafe+Real+Parisian+Coffee+Shop+Conversation" data-video-id="NVBbdvxfpUI" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>

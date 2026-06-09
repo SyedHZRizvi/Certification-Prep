@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~58 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="X-JeePiJHU4" href="https://www.youtube.com/results?search_query=Capacity+Planning+Hierarchy+RRP+RCCP+CRP" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="mDEgxn-Fnjs" href="https://www.youtube.com/results?search_query=Bill+of+resources+RCCP+example" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="M8IzE2IEvfE" href="https://www.youtube.com/results?search_query=The+Goal+Goldratt+audiobook+summary" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

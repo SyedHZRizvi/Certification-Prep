@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="dAJyqo6wnq4" href="https://www.youtube.com/results?search_query=Ben+Heath+facebook+ads+complete+tutorial+2026" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -66,7 +66,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="iEBSp5byDmE" href="https://www.youtube.com/results?search_query=Common+Thread+Collective+meta+ads+strategy+DTC" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -98,7 +98,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="W4Ant6ytppg" href="https://www.youtube.com/results?search_query=Triple+Whale+attribution+meta+ads+post+iOS+14" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

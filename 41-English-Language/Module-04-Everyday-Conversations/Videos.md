@@ -19,7 +19,7 @@
 
 ## Essential — Native Speaker Conversation Lessons
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+conversation+shopping+supermarket+dialogue+practice" data-video-id="MChJ5SiEGvY" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -75,7 +75,7 @@
 
 ## Recommended — Grammar & Vocabulary
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+making+accepting+declining+invitations+politely" data-video-id="4JaFgS0vYqY" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -131,7 +131,7 @@
 
 ## Optional — Immersion
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+sitcom+learning+friends+beginners+daily+conversations" data-video-id="RXJB3SGFLEM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>

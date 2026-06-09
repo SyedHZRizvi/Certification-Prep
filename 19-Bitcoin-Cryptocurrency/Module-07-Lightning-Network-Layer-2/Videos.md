@@ -20,7 +20,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+lightning+network+explained" data-video-id="XCSfoiD8wUA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -52,7 +52,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Bitcoin+beach+El+Zonte+lightning+adoption+story" data-video-id="Z7Q0AwbKZX8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -84,7 +84,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Liquid+Network+Blockstream+sidechain+confidential+transactions" data-video-id="fEPW6RXMGmA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

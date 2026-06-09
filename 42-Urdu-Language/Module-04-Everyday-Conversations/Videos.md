@@ -4,7 +4,7 @@
 
 Practice real Urdu conversations with these carefully curated videos covering shopping, dining, directions, and Pakistani cultural situations. The drama clips are especially valuable for authentic listening practice.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conversation+practice+shopping+dialogue" data-video-id="sMlJLxF1eNg" target="_blank">
   <div class="vg-thumb">🛍️<div class="vg-play">▶</div></div>

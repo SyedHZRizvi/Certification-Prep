@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Watching (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+animation+film+how+Pixar+uses+color+storytelling" data-video-id="IG9PVXB7S5s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -60,7 +60,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=complementary+colors+animation+film+warm+cool+depth" data-video-id="Qj1FK8n7WgY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -92,7 +92,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Spirited+Away+Ghibli+color+art+direction+analysis" data-video-id="P5ozvSe3aGY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

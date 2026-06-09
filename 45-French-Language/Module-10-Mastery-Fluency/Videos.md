@@ -4,7 +4,7 @@
 
 ## Essential — Academic Style and Rhetoric
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=french+academic+writing+style+C1+C2+dissertation" data-video-id="qY6RKsj0_1M" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -54,7 +54,7 @@
 
 ## Recommended — Advanced Fluency Practice
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=french+advanced+vocabulary+C2+abstract+nuance+precision" data-video-id="oBr_QBKsPi8" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -93,7 +93,7 @@
 
 ## Optional — Deep Immersion at C2
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=dreaming+french+native+speed+C2+immersion+documentary" data-video-id="LHCz-xPtUG4" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">

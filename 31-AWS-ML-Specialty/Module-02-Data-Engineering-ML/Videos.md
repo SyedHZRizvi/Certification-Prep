@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="qgmflPGsNkc" href="https://www.youtube.com/results?search_query=AWS+Glue+ETL+tutorial+beginners+crawler+catalog" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="BaGpNjDUwXo" href="https://www.youtube.com/results?search_query=AWS+Lake+Formation+governance+permissions+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Kd1OtMRstyE" href="https://www.youtube.com/results?search_query=EMR+Serverless+Spark+tutorial+vs+Glue" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🐘</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

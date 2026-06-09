@@ -20,7 +20,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+bitcoin+regulation+KYC+AML" data-video-id="RpcZ1DvCAf8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -52,7 +52,7 @@
 
 ## 📚 Recommended (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=FATF+travel+rule+VASP+cryptocurrency+explained" data-video-id="XpTrCA3tEKM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -93,7 +93,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Tornado+Cash+OFAC+sanctions+Van+Loon+treasury+ruling" data-video-id="kFqBjAEqzoo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌪️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

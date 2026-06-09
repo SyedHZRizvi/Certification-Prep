@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~90 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="x8JpiKFCvrc" href="https://www.youtube.com/results?search_query=Ahrefs+full+tutorial+2026+site+audit+keyword+research" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="LBh8FbO-yxo" href="https://www.youtube.com/results?search_query=Google+Search+Console+complete+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="AQqFZ5t8uNc" href="https://www.youtube.com/results?search_query=Core+Web+Vitals+optimization+tutorial+2026" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

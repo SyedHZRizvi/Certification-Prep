@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+animation+tutorial+principles+beginners" data-video-id="hGF8rnMJ7Js" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -51,7 +51,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+variations+rubber+bowling+weight+animation" data-video-id="4OxphHNm0RY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -83,7 +83,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+production+checklist+indie+short+film+workflow" data-video-id="mA1bTY9KXZY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

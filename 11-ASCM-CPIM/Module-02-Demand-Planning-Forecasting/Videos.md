@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~58 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ERkrpCWqUYA" href="https://www.youtube.com/results?search_query=Demand+Forecasting+Methods+Operations+Management" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~36 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="SL2FvqMHlZg" href="https://www.youtube.com/results?search_query=Bullwhip+Effect+Supply+Chain+MIT" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Oa2JQKrqM5E" href="https://www.youtube.com/results?search_query=Holt+Winters+seasonal+exponential+smoothing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -4,7 +4,7 @@
 
 Real Persian conversations, Iranian culture, and immersive listening practice.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shopping+bargaining+bazaar+conversation" data-video-id="fv2cCEMNXiw" target="_blank">
   <div class="vg-thumb">🛒<div class="vg-play">▶</div></div>

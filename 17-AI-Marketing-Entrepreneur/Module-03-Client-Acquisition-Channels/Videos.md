@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="NuiSeLnom3g" href="https://www.youtube.com/results?search_query=Smartlead+cold+email+outbound+playbook+2025" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="c89JJ4RnMcc" href="https://www.youtube.com/results?search_query=Aaron+Ross+predictable+revenue+outbound+sales+process" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="IsG1QgAScfY" href="https://www.youtube.com/results?search_query=Dickie+Bush+writing+inbound+ship+30+for+30" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

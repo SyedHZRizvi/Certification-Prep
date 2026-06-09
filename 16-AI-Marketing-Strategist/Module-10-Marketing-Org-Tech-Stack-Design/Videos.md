@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~90 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="0s6t4ztAa5U" href="https://www.youtube.com/results?search_query=Scott+Brinker+martech+landscape+chief+martec" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="9IPdRjbAEQQ" href="https://www.youtube.com/results?search_query=Reforge+CMO+career+path+marketing+leadership" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="FhZ9C4oXXpk" href="https://www.youtube.com/results?search_query=Airbnb+marketing+restructure+pandemic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

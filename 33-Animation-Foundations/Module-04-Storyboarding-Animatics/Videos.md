@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Watching (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=storyboarding+tutorial+animation+beginner+shot+types" data-video-id="REdgKM0HLSM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -51,7 +51,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=thumbnailing+composition+storyboard+technique+tips" data-video-id="O8i7OKbWmRM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -83,7 +83,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=continuity+editing+film+animation+180+degree+rule+practical" data-video-id="gHy1aFNsDVo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

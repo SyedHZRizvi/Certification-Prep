@@ -20,7 +20,7 @@
 
 ## ⭐ Essential
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=simon+willison+prompt+injection+talk" data-video-id="mIBSqKNLTnk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=microsoft+presidio+pii+detection+tutorial" data-video-id="cRFk8LbXQcg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -102,7 +102,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=air+canada+chatbot+lawsuit+lessons" data-video-id="l9pSPMoxDJk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

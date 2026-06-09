@@ -23,7 +23,7 @@
 
 ## 🟣 Essential — Watch These First
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+troubleshooting+pods+kubectl+describe+crashloopbackoff" data-video-id="OTvFTTFUz3k">
   <div class="vg-thumb">🔍<div class="vg-play">▶</div></div>
@@ -81,7 +81,7 @@
 
 ## 🔵 Recommended — Watch Before the Real Exam
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+DNS+troubleshooting+coredns+nslookup+CKA" data-video-id="NkgDNJdF6x0">
   <div class="vg-thumb">🌐<div class="vg-play">▶</div></div>
@@ -139,7 +139,7 @@
 
 ## 🟡 Optional — For Deep Mastery
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+troubleshooting+exam+tips+speed+CKA+2024" data-video-id="c6SNd6M7-eI">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>

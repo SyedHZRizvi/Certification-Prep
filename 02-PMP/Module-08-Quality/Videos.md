@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Quality+Management+PMP+Andrew+Ramdayal" data-video-id="57Pd4KLjlZQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended (~25 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Quality+Gurus+Overview+Aileen+Ellis" data-video-id="ZpOraNGnh6E" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -20,7 +20,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+not+your+keys+not+your+coins" data-video-id="dnC5mFaIW3Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔑</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -52,7 +52,7 @@
 
 ## 📚 Recommended (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=hot+cold+wallet+institutional+custody+architecture+bitcoin" data-video-id="f-1bPwgVG9E" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>❄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -84,7 +84,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Anchorage+Digital+OCC+national+trust+bank+charter" data-video-id="MCyEiYLwaRo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

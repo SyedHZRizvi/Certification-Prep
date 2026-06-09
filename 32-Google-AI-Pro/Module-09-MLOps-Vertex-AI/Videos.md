@@ -19,7 +19,7 @@
 
 ## ⭐ Essential (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="gtVHw5YCRhE" href="https://www.youtube.com/results?search_query=Vertex+AI+pipelines+kubeflow+KFP+tutorial+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vodafone+Vertex+AI+MLOps+case+study+platform" data-video-id="X8bKIfSVBP0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
@@ -83,7 +83,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=continuous+training+MLOps+pipeline+retrain+trigger" data-video-id="lMQNAiH4buo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>

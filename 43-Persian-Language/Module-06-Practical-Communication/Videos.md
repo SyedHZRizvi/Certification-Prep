@@ -4,7 +4,7 @@
 
 Strengthen your real-world Persian communication with these curated video resources — from office emails to Iranian business culture to social media slang.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+business+professional+vocabulary+office" data-video-id="jXsBGLhXLpU" target="_blank">
   <div class="vg-thumb">💼<div class="vg-play">▶</div></div>

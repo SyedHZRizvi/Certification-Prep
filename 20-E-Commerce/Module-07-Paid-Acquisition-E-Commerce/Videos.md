@@ -19,7 +19,7 @@
 
 ## ⭐ Essential watching (~85 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="tu8uUUgdCk8" href="https://www.youtube.com/results?search_query=Google+Performance+Max+ecommerce+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -60,7 +60,7 @@
 
 ## 📚 Recommended (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="wtkKq5e106U" href="https://www.youtube.com/results?search_query=TikTok+Shop+ads+spark+creator+ecommerce" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -92,7 +92,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="vRCiWkFIlYE" href="https://www.youtube.com/results?search_query=Temu+paid+ads+spend+meta+google+2023" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -19,7 +19,7 @@
 
 ## ⭐ Essential watching (~95 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="h-ZRHo8K2Jg" href="https://www.youtube.com/results?search_query=ecommerce+SEO+complete+guide+ahrefs+sam+oh" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -60,7 +60,7 @@
 
 ## 📚 Recommended (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="cuSjdiyn-JI" href="https://www.youtube.com/results?search_query=faceted+navigation+SEO+ecommerce+canonical+noindex" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -101,7 +101,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="T49JcaD09ms" href="https://www.youtube.com/results?search_query=glossier+content+marketing+into+the+gloss+case+study" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

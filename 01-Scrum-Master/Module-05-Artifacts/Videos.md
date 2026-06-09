@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Scrum+Artifacts+Scrum.org" target="_blank" rel="noopener" data-video-id="0dSlaXBhiy8">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=User+Stories+Beginners+Guide+Mike+Cohn" target="_blank" rel="noopener" data-video-id="98Fe7X7_vyw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

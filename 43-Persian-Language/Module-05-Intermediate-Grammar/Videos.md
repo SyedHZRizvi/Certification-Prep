@@ -4,7 +4,7 @@
 
 Build fluency with these intermediate grammar video resources covering tenses, modals, and real spoken Persian.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+tense+simple+conjugation+lesson" data-video-id="DXnz3q_Xcb8" target="_blank">
   <div class="vg-thumb">⏪<div class="vg-play">▶</div></div>

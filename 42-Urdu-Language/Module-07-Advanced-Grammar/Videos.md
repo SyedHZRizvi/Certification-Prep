@@ -4,7 +4,7 @@
 
 ## Essential Viewing
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+ne+ergative+past+tense+grammar" data-video-id="TsBpFxKsqx4" target="_blank">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
@@ -50,7 +50,7 @@
 
 ## Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+conditional+sentences+agar+to" data-video-id="gJaExS8Hneg" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
@@ -86,7 +86,7 @@
 
 ## Optional / Enrichment
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+relative+clauses+jo+jis+jin" data-video-id="VFaNbHbZ4Es" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>

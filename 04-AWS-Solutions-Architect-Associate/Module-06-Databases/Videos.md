@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="1tQhyK5wBAc" href="https://www.youtube.com/results?search_query=AWS+RDS+Multi-AZ+vs+Read+Replicas" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛢️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="kjquJMOqi_M" href="https://www.youtube.com/results?search_query=DynamoDB+DAX+vs+ElastiCache" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Y6jbFC8tvVw" href="https://www.youtube.com/results?search_query=Amazon+Neptune+graph+database+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🕸️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

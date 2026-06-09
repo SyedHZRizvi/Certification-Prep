@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="RjuTQvGm1zQ" href="https://www.youtube.com/results?search_query=John+Savill+Azure+cost+management+billing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~25 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="dt4LDm-ptQk" href="https://www.youtube.com/results?search_query=Azure+Hybrid+Benefit+Windows+SQL+licenses" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="SZVcLkpjTto" href="https://www.youtube.com/results?search_query=Azure+free+account+sign+up+services" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

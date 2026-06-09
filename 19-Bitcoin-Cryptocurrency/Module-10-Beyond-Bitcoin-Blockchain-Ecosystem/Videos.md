@@ -20,7 +20,7 @@
 
 ## ⭐ Essential watching (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Vitalik+Buterin+Ethereum+why+exists+turing+complete+smart+contracts" data-video-id="TDGq4aeevgY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -52,7 +52,7 @@
 
 ## 📚 Recommended (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=optimistic+rollups+vs+zk+rollups+ethereum+layer+2+explained" data-video-id="7pWxCklcNsU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧱</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -84,7 +84,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Uniswap+V3+concentrated+liquidity+Hayden+Adams+explained" data-video-id="ClWR1570UQw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🦄</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

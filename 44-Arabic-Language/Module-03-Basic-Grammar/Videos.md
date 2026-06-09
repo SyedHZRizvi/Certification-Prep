@@ -4,7 +4,7 @@
 
 Master Arabic grammar fundamentals: gender, definite article, plurals, sentence structure, and the root system.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Gender+Masculine+Feminine+Rules+Explained" data-video-id="LXjKMVBo2gU" target="_blank">
   <div class="vg-thumb">⚥<div class="vg-play">▶</div></div>

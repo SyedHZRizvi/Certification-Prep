@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+Bitcoin+white+paper+explained" data-video-id="OQp2LNwMPk8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📜</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -56,7 +56,7 @@
 
 ## 📚 Recommended (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Hal+Finney+running+bitcoin+history+first+receiver" data-video-id="d_WH-5c7Bvk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Computerphile+how+bitcoin+works+SHA+256" data-video-id="JyxRH18YlpA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -27,7 +27,7 @@
 <p class="vg-section-title">⭐ Essential — Watch Before the Quiz</p>
 <p class="vg-section-desc">These four videos build the minimum mental model you need. Watch them in order.</p>
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Tutorial+for+Beginners+TechWorld+with+Nana" data-video-id="X48VuDVv0do" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -76,7 +76,7 @@
 <p class="vg-section-title">📘 Recommended — Solidify Your Understanding</p>
 <p class="vg-section-desc">Watch these after completing the quiz. They handle the nuances that trip up exam candidates.</p>
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Containers+vs+VMs+IBM+Technology" data-video-id="cjXI-yenr-0" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -135,7 +135,7 @@
 <p class="vg-section-title">🔍 Optional — Go Deeper</p>
 <p class="vg-section-desc">For candidates who want mastery beyond the exam, or who struggled with specific concepts.</p>
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+namespaces+cgroups+containers+explained" data-video-id="sK5i-N34im8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>

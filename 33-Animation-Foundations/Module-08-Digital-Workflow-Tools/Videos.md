@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Watching (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+file+management+naming+conventions+pipeline+tips" data-video-id="pQHKNbOnS70" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -51,7 +51,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=frame+rate+animation+project+settings+24fps+30fps+setup" data-video-id="F1R3sDDn3jo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -83,7 +83,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Toon+Boom+Harmony+overview+2D+animation+studio+pipeline" data-video-id="I2qDzKJ7lF8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

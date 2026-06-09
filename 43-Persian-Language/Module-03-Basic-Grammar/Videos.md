@@ -4,7 +4,7 @@
 
 Master Persian grammar with these structured video lessons covering sentence structure, verbs, and the ezafe construction.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+verb+to+be+hast+am+present+tense+grammar" data-video-id="TvCZHsFNiZ4" target="_blank">
   <div class="vg-thumb">📐<div class="vg-play">▶</div></div>

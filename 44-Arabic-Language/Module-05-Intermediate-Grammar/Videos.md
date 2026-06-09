@@ -4,7 +4,7 @@
 
 Master verb conjugation, broken plurals, the iḍāfa construction, adjective agreement, and Arabic verb forms.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Past+Tense+Complete+Conjugation+All+Persons" data-video-id="V4mKJiWZ2mc" target="_blank">
   <div class="vg-thumb">⏪<div class="vg-play">▶</div></div>

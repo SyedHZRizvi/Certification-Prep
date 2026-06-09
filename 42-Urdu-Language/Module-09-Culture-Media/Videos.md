@@ -4,7 +4,7 @@
 
 ## Essential Viewing
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Ghalib+poetry+urdu+explanation+in+english" data-video-id="8pPFBgDiFSI" target="_blank">
   <div class="vg-thumb">🖋️<div class="vg-play">▶</div></div>
@@ -50,7 +50,7 @@
 
 ## Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=mushaira+urdu+poetry+event+tradition" data-video-id="eqDoH0cJKGk" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
@@ -86,7 +86,7 @@
 
 ## Optional / Enrichment
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Fahmida+Riaz+urdu+poet+feminist" data-video-id="gJfNUk1T7ME" target="_blank">
   <div class="vg-thumb">✊<div class="vg-play">▶</div></div>

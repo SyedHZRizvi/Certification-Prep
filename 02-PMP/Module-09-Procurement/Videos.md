@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Procurement+PMP+Andrew+Ramdayal" data-video-id="DMcUj2sOKgQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended (~20 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Make+or+Buy+Analysis+Aileen+Ellis" data-video-id="5h7v2M9hBg8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

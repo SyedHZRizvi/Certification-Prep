@@ -17,7 +17,7 @@
 
 # Module 10: Mastery & Fluency — Video Resources
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+accent+reduction+Pakistani+speakers+pronunciation" data-video-id="3JZ_D3ELwOQ" target="_blank">
   <div class="vg-thumb">🎙️<div class="vg-play">▶</div></div>

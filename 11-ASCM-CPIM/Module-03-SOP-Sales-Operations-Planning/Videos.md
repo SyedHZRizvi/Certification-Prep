@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~52 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="vbx2DzVYd4w" href="https://www.youtube.com/results?search_query=Sales+and+Operations+Planning+5+step+process+ASCM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="EQVYrUAtdn8" href="https://www.youtube.com/results?search_query=S+and+OP+executive+meeting+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="M1cdKXdj_jc" href="https://www.youtube.com/results?search_query=S+OP+maturity+model+5+stage" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

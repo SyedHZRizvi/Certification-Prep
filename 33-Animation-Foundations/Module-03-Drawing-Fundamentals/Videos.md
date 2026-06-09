@@ -21,7 +21,7 @@
 
 ## ⭐ Essential Watching (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=gesture+drawing+tutorial+animation+line+of+action+beginner" data-video-id="74HR59yFZ7Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -53,7 +53,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Aaron+Blaise+drawing+animals+animation+reference+technique" data-video-id="haa7n3UGyDc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -85,7 +85,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Glen+Keane+drawing+gesture+Disney+animator+lecture" data-video-id="3hKNLHEjMoE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

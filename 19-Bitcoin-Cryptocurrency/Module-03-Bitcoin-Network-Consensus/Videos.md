@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+bitcoin+consensus+algorithm+explained" data-video-id="fw3WkySh_Ho" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Bitcoin+0.8+0.7+fork+March+2013+governance" data-video-id="HbQ0_VNvc7w" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🪞</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Bitcoin+compact+block+relay+BIP+152+propagation" data-video-id="yorRGbp54tM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

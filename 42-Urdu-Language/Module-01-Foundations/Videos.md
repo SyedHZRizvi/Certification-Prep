@@ -4,7 +4,7 @@
 
 Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, basic greetings, and the foundations of the language. Start with the Essential videos, then explore Recommended and Optional resources.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+alphabet+for+beginners+UrduPod101" data-video-id="nEFWOT3OYuQ" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
