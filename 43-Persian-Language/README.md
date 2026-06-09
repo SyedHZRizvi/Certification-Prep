@@ -1,3 +1,8 @@
+---
+permalink: /43-Persian-Language/
+title: Persian Language Mastery
+---
+
 # Persian Language Mastery — فارسی کی مہارت
 ## Course Overview & Study Guide
 

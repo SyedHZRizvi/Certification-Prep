@@ -1,3 +1,8 @@
+---
+permalink: /37-Advanced-Character-Animation/
+title: Advanced Character Animation, Acting-Level Character Performance
+---
+
 # Advanced Character Animation, Acting-Level Character Performance
 
 > **The course that gets you hired at Pixar, DreamWorks, Riot, or Framestore.**
