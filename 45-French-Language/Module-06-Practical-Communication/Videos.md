@@ -4,7 +4,7 @@
 
 ## Essential — Professional French Communication
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=french+professional+email+writing+formal" data-video-id="OfvnMd5bOSE" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -54,7 +54,7 @@
 
 ## Recommended — Argumentation and Register
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=french+formal+informal+register+difference+politeness" data-video-id="HiEFHBUoxaE" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -93,7 +93,7 @@
 
 ## Optional — Real-World Practice
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=easy+french+real+conversations+street+interviews" data-video-id="vS8GFb43eRs" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">

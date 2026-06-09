@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Definition+of+Done+Scrum.org" target="_blank" rel="noopener" data-video-id="YMtaXwJcgns">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=INVEST+User+Stories+Mountain+Goat" target="_blank" rel="noopener" data-video-id="uj5iUbDf-iw">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

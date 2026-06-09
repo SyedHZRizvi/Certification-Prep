@@ -4,7 +4,7 @@
 
 Build your Persian vocabulary with these focused video lessons.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+family+vocabulary+mother+father+sister+brother" data-video-id="N7s_8e_RJGE" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>

@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=3Blue1Brown+elliptic+curves+visual+explanation" data-video-id="NF1pwjL9-DE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Merkle+tree+explained+blockchain+Ralph+Merkle" data-video-id="qcuc3rgwZAE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌳</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Heartbleed+CVE+2014+0160+OpenSSL+explained" data-video-id="drEBLidpsIM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🩸</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

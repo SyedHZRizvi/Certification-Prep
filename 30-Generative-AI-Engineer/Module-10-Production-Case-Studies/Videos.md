@@ -20,7 +20,7 @@
 
 ## ⭐ Essential
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="oFfVt3S51T4" href="https://www.youtube.com/results?search_query=cursor+team+building+ai+ide+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="hJP5GqnTrNo" href="https://www.youtube.com/results?search_query=khan+academy+khanmigo+sal+khan" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -102,7 +102,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ugvHCXCOmm4" href="https://www.youtube.com/results?search_query=anthropic+claude+ai+product+design" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

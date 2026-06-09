@@ -20,7 +20,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+bitcoin+script+P2PKH+P2SH" data-video-id="8FeAXjkmDcQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📜</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -52,7 +52,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Bitcoin+CLTV+CSV+timelocks+explained" data-video-id="qHMLy5JjbjQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🕰️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -84,7 +84,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=MuSig2+schnorr+multisig+aggregation+blockstream" data-video-id="n19vDaVrwY4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🤝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

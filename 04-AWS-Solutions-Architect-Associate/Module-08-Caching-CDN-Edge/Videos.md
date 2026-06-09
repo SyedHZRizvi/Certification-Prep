@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~65 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="cZ7PhGCCZDA" href="https://www.youtube.com/results?search_query=AWS+CloudFront+complete+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>☁️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="owVVykBJ0RI" href="https://www.youtube.com/results?search_query=Lambda+at+Edge+vs+CloudFront+Functions" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Kxpl0ICzQV0" href="https://www.youtube.com/results?search_query=Route+53+failover+health+check+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🩺</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Case Studies (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+google+cloud+drive+thru+architecture" data-video-id="oeYroEG7Hes" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended, Exam Prep (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+cloud+generative+AI+leader+exam+study+guide" data-video-id="BKJmzFlnKQI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
@@ -83,7 +83,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=McDonalds+IBM+drive+thru+AI+cancelled+lessons" data-video-id="z0zKPGcJGa4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>

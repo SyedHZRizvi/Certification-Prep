@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Scaling+Scrum+Overview+Scrum.org" target="_blank" rel="noopener" data-video-id="6jln5J-bwr0">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~20 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=LeSS+Framework+Overview+LeSS+Works" target="_blank" rel="noopener" data-video-id="phOCA3myNws">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

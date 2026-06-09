@@ -4,7 +4,7 @@
 
 Learn Persian from scratch with these hand-picked video resources. Start with **Essential** picks, then explore the rest at your own pace.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+alphabet+complete+beginners" data-video-id="9sJUDx7iEJw" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>

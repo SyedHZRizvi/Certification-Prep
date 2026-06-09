@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ik2J0txfbdM" href="https://www.youtube.com/results?search_query=EC2+instance+types+explained+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="WdiHIxkhplY" href="https://www.youtube.com/results?search_query=AWS+EBS+volume+types+gp3+io2+st1+sc1" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🗄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="tny8N-hkCqs" href="https://www.youtube.com/results?search_query=AWS+Spot+Instance+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

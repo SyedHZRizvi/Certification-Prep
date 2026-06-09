@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="qWDNyBBVBR0" href="https://www.youtube.com/results?search_query=AWS+Machine+Learning+Specialty+exam+overview+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -74,7 +74,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="YBoFf0a4DPs" href="https://www.youtube.com/results?search_query=Capital+One+SageMaker+fraud+detection+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="BfHFtik5noc" href="https://www.youtube.com/results?search_query=AWS+Well-Architected+Machine+Learning+Lens" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

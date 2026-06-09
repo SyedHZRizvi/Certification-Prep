@@ -19,7 +19,7 @@
 
 ## Essential — Native Speaker Lessons
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+alphabet+pronunciation+for+beginners+EngVid" data-video-id="sF9zbEypG0E" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -75,7 +75,7 @@
 
 ## Recommended — Grammar & Vocabulary
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=to+be+verb+am+is+are+English+grammar+beginners" data-video-id="mBBCr9MKFBE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -131,7 +131,7 @@
 
 ## Optional — Immersion (Movies / Music / Podcasts)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+cartoon+simple+sentences+A1" data-video-id="Iv0rh7PkGQI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>

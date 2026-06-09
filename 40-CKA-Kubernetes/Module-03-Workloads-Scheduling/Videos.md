@@ -21,7 +21,7 @@
 
 Start here. These videos cover the core concepts that appear on almost every CKA exam attempt.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+lifecycle+phases+CKA" data-video-id="lFb_WA-4zTM" target="_blank" rel="noopener">
   <div class="vg-thumb">🚀<div class="vg-play">▶</div></div>
@@ -79,7 +79,7 @@ Start here. These videos cover the core concepts that appear on almost every CKA
 
 Solidify your understanding of workload controllers and advanced scheduling patterns.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+statefulset+tutorial+ordered+pods+persistent+volumes" data-video-id="pPQKAR1pA9U" target="_blank" rel="noopener">
   <div class="vg-thumb">🗄️<div class="vg-play">▶</div></div>
@@ -137,7 +137,7 @@ Solidify your understanding of workload controllers and advanced scheduling patt
 
 Deepen your understanding with these advanced topics and hands-on walkthroughs.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+custom+scheduler+multiple+schedulers+tutorial" data-video-id="tgFRW8FJGZE" target="_blank" rel="noopener">
   <div class="vg-thumb">🔧<div class="vg-play">▶</div></div>

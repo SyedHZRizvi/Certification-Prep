@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="6oYJTyggbfM" href="https://www.youtube.com/results?search_query=AWS+S3+complete+overview+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🪣</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~40 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="V2arOZ72d6M" href="https://www.youtube.com/results?search_query=S3+presigned+URL+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔗</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="J2CVnmUWSi4" href="https://www.youtube.com/results?search_query=S3+Transfer+Acceleration+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

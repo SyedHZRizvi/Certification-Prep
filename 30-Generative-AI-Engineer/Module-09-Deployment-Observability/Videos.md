@@ -20,7 +20,7 @@
 
 ## ⭐ Essential
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="5ZlavKF_98U" href="https://www.youtube.com/results?search_query=vllm+paged+attention+production+serving" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=modal+labs+gpu+serverless+inference" data-video-id="eKO7sR8AIQY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -102,7 +102,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=tensorrt+llm+nvidia+inference+optimization" data-video-id="pFmn7LlFoS0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -4,7 +4,7 @@
 
 ## Watch These First — Pronunciation & Alphabet
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=French+Alphabet+All+26+Letters+with+Pronunciation" data-video-id="OJEJ9B0tDFE" target="_blank">
   <div class="vg-thumb">🇫🇷<div class="vg-play">▶</div></div>

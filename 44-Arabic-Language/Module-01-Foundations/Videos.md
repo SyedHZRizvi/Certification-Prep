@@ -4,7 +4,7 @@
 
 Learn the Arabic alphabet, basic pronunciation, and essential greetings through these carefully selected video resources.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Arabic+Alphabet+Full+Beginner+Course" data-video-id="WnWbzBvOhcE" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>

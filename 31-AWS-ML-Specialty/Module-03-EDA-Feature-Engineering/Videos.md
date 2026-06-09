@@ -22,7 +22,7 @@
 
 ## ⭐ Essential (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="xi0vhXFPegw" href="https://www.youtube.com/results?search_query=Exploratory+Data+Analysis+pandas+tutorial+complete" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="589nCGeWG1w" href="https://www.youtube.com/results?search_query=feature+engineering+categorical+encoding+target+vs+onehot" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="NEaUSP4YerM" href="https://www.youtube.com/results?search_query=t-SNE+UMAP+comparison+dimensionality+reduction" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

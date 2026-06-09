@@ -27,7 +27,7 @@
 
 ## Essential Viewing
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+persistent+volumes+PV+PVC+tutorial+CKA" data-video-id="0swOh5C3OVM" target="_blank" rel="noopener">
   <div class="vg-thumb">☸️<div class="vg-play">▶</div></div>
@@ -85,7 +85,7 @@
 
 ## Recommended Viewing
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+secrets+base64+security+encryption+at+rest" data-video-id="MTnQW9MxnRI" target="_blank" rel="noopener">
   <div class="vg-thumb">🔐<div class="vg-play">▶</div></div>
@@ -143,7 +143,7 @@
 
 ## Optional / Deep-Dive
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+CSI+driver+container+storage+interface+explained" data-video-id="AnfAd6goq-o" target="_blank" rel="noopener">
   <div class="vg-thumb">🔩<div class="vg-play">▶</div></div>

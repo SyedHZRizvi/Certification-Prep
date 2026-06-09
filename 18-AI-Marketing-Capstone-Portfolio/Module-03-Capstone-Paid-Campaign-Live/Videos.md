@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~100 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="-5P5I2v1NeE" href="https://www.youtube.com/results?search_query=Surfside+PPC+Google+Ads+complete+tutorial+2026" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="OFNe3RSYZjU" href="https://www.youtube.com/results?search_query=Google+Tag+Manager+conversion+tracking+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ADFS8Dc63s8" href="https://www.youtube.com/results?search_query=Performance+Max+vs+Search+campaigns+Google+Ads" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

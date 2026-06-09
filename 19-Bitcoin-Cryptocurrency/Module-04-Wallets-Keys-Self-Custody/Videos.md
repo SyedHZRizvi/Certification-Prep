@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+not+your+keys+not+your+coins" data-video-id="AcrEEnDLm58" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔑</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Mt+Gox+collapse+history+850000+BTC+Karpeles" data-video-id="uP8FJBY9uJc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📉</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -95,7 +95,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=PSBT+partially+signed+bitcoin+transaction+BIP+174+explained" data-video-id="yJpvfRl03Tw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

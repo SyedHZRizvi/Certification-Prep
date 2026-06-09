@@ -17,7 +17,7 @@
 
 # Module 9: Culture, Idioms & Media — Video Resources
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=100+most+common+English+idioms+explained" data-video-id="Vg3FtKYmm2E" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>

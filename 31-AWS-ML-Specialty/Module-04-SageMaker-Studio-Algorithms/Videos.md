@@ -20,7 +20,7 @@
 
 ## ⭐ Essential (~90 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Nnd4nFvXPXU" href="https://www.youtube.com/results?search_query=SageMaker+Studio+walkthrough+2024+complete+tour" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🖥️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="yx1vf3uapX8" href="https://www.youtube.com/results?search_query=SageMaker+Random+Cut+Forest+anomaly+detection+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌲</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -102,7 +102,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ISPId9Lhc1g" href="https://www.youtube.com/results?search_query=BlazingText+SageMaker+word2vec+text+classification" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

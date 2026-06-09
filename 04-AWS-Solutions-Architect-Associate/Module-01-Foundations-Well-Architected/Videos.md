@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="BxHaLBRZWyc" href="https://www.youtube.com/results?search_query=AWS+Global+Infrastructure+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Ia-UEYYR44s" href="https://www.youtube.com/results?search_query=AWS+regions+AZs+edge+locations+Be+A+Better+Dev" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🗺️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="UXtZCoE9qfQ" href="https://www.youtube.com/results?search_query=AWS+re%3AInvent+Well-Architected+Framework+session" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎤</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -20,7 +20,7 @@
 
 ## ⭐ Essential (~90 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Q6sXFaFr8IM" href="https://www.youtube.com/results?search_query=SageMaker+distributed+training+SMDDP+SMMP+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -52,7 +52,7 @@
 
 ## 📚 Recommended (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="O6XmMxqixBM" href="https://www.youtube.com/results?search_query=SageMaker+PyTorch+script+mode+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🐍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -84,7 +84,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="wjZofJX0v4M" href="https://www.youtube.com/results?search_query=Transformer+architecture+visual+attention+is+all+you+need" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

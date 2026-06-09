@@ -23,7 +23,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 ## Essential — Watch Before Your First Practice Exam
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+tips+kubectl+speed+tricks" data-video-id="c6SNd6M7-eI" target="_blank" rel="noopener">
   <div class="vg-thumb">
@@ -96,7 +96,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 ## Recommended — Add Depth and Alternate Perspectives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+YAML+skeleton+templates+pod+deployment+service" data-video-id="pV0LwPf6eCo" target="_blank" rel="noopener">
   <div class="vg-thumb">
@@ -169,7 +169,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 ## Optional — Extra Practice and Advanced Patterns
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+mock+exam+solutions+explained+all+questions" data-video-id="OTvFTTFUz3k" target="_blank" rel="noopener">
   <div class="vg-thumb">

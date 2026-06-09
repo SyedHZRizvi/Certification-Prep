@@ -4,7 +4,7 @@
 
 Build your Arabic vocabulary across family, body, food, home, verbs, adjectives, and time expressions.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Family+Vocabulary+Father+Mother+Siblings" data-video-id="zfTECMEFfLQ" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>

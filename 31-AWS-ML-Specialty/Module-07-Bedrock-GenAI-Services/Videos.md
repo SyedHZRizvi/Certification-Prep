@@ -20,7 +20,7 @@
 
 ## ⭐ Essential (~85 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="_vdK5PgcNvc" href="https://www.youtube.com/results?search_query=Amazon+Bedrock+overview+walkthrough+2024" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌟</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="op62mHU_CTk" href="https://www.youtube.com/results?search_query=Amazon+Q+Business+walkthrough+enterprise+chat" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -93,7 +93,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="T9aRN5JkmL8" href="https://www.youtube.com/results?search_query=Anthropic+Claude+prompt+engineering+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="wd7TZ4w1mSw" href="https://www.youtube.com/results?search_query=lance+martin+rag+from+scratch+langchain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -63,7 +63,7 @@
 
 ## 📚 Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="bmduzd1oY7U" href="https://www.youtube.com/results?search_query=greg+kamradt+5+levels+of+RAG" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -104,7 +104,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="pNcQ5XXMgH4" href="https://www.youtube.com/results?search_query=self-rag+adaptive+retrieval+critique" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

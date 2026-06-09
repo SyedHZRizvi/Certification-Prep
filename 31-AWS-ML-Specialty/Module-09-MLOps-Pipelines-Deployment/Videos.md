@@ -20,7 +20,7 @@
 
 ## ⭐ Essential (~80 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Hvz2GGU3Z8g" href="https://www.youtube.com/results?search_query=SageMaker+Pipelines+demo+end+to+end" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="8LkTCiHpwrE" href="https://www.youtube.com/results?search_query=SageMaker+Projects+templated+MLOps+CI+CD" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏗️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -93,7 +93,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="P1_hQvFVGYQ" href="https://www.youtube.com/results?search_query=Amazon+Music+MLOps+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎵</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

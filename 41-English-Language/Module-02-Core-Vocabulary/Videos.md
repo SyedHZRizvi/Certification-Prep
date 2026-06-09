@@ -19,7 +19,7 @@
 
 ## Essential — Native Speaker Vocabulary Lessons
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+for+beginners+family+members+body+parts+Lucy" data-video-id="n_MJA8bPz2Y" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -75,7 +75,7 @@
 
 ## Recommended — Grammar & Vocabulary
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+vocabulary+learning+method+English" data-video-id="eVajQPuRmk8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -131,7 +131,7 @@
 
 ## Optional — Immersion (Movies / Music / Podcasts)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+in+use+A2+conversation+daily+life" data-video-id="T-o1yHSq-oE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>

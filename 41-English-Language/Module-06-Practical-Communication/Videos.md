@@ -17,7 +17,7 @@
 
 # Module 6: Practical Communication — Video Resources
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=business+English+meeting+phrases+professional" data-video-id="dC8g8tMbDgc" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>

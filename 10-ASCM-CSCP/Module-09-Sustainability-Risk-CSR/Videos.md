@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~52 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="CJ8ZzV17bFs" href="https://www.youtube.com/results?search_query=Triple+bottom+line+sustainability+supply+chain" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="aSCQd6A19YQ" href="https://www.youtube.com/results?search_query=Circular+economy+Ellen+MacArthur" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="k7dhnWUVPlo" href="https://www.youtube.com/results?search_query=Supply+chain+resilience+post+COVID" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

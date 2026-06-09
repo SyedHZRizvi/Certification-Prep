@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~64 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="GmVb-qx7uWA" href="https://www.youtube.com/results?search_query=7+wastes+lean+TIMWOOD+manufacturing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -74,7 +74,7 @@
 
 ## 📚 Recommended (~38 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="8Zlc3yy6K4s" href="https://www.youtube.com/results?search_query=Value+stream+mapping+lean+VSM+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -106,7 +106,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="EcXK-KrTmhk" href="https://www.youtube.com/results?search_query=Toyota+Production+System+TPS+history+documentary" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

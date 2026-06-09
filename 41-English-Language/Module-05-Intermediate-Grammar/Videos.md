@@ -19,7 +19,7 @@
 
 ## Essential — Native Speaker Grammar Lessons
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=past+simple+irregular+verbs+English+complete+list+lesson" data-video-id="5H-GhzNBBZY" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -75,7 +75,7 @@
 
 ## Recommended — Grammar & Vocabulary
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=past+continuous+tense+English+was+were+ing+grammar" data-video-id="N-FoZ8-puZw" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
@@ -131,7 +131,7 @@
 
 ## Optional — Immersion
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=English+B1+intermediate+stories+past+tense+listening+practice" data-video-id="Ys3cjEKdJeo" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>

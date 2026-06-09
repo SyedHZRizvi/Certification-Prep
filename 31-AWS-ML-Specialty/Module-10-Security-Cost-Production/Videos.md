@@ -20,7 +20,7 @@
 
 ## ⭐ Essential (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="WFGo-nd5DCw" href="https://www.youtube.com/results?search_query=SageMaker+security+VPC+KMS+IAM+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -52,7 +52,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="PVnFYotwqyo" href="https://www.youtube.com/results?search_query=AWS+Macie+PII+discovery+S3+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🕵️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -84,7 +84,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="nfgFm51MXMY" href="https://www.youtube.com/results?search_query=Pinterest+ML+infrastructure+reinvent+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

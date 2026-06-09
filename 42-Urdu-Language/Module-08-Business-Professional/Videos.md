@@ -4,7 +4,7 @@
 
 ## Essential Viewing
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing+tutorial" data-video-id="yFWqAFzRxHw" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
@@ -40,7 +40,7 @@
 
 ## Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=geo+news+urdu+formal+register+vocabulary" data-video-id="XsgrLEpVBiY" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
@@ -76,7 +76,7 @@
 
 ## Optional / Enrichment
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+resume+CV+writing+professional" data-video-id="t4XyvPPkAJk" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>

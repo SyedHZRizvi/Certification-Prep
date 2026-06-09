@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Watching (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=animation+demo+reel+tips+how+to+make+studio+advice" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -51,7 +51,7 @@
 
 ## 📚 Recommended (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="uDqjIdI4bF4" href="https://www.youtube.com/results?search_query=freelance+vs+studio+animation+pros+cons+career+advice" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -83,7 +83,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+hiring+process+animation+job+interview+what+to+expect" data-video-id="etAIpkdhU9Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

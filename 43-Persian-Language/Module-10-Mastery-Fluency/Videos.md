@@ -4,7 +4,7 @@
 
 Reach true Persian fluency — accent perfection, oratory, storytelling, debate, and authentic cultural immersion through the best C2-level Persian resources.
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+accent+reduction+native+pronunciation+C2" data-video-id="gCFqLhFZWAA" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>

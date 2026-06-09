@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~60 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="dQPXBohP0hw" href="https://www.youtube.com/results?search_query=AWS+CloudWatch+complete+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~30 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="hsFBt0hxy3I" href="https://www.youtube.com/results?search_query=AWS+GuardDuty+Macie+Inspector+Security+Hub" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="GFakkHD9aQY" href="https://www.youtube.com/results?search_query=AWS+cost+optimization+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📉</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

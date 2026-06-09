@@ -20,7 +20,7 @@
 
 ## ⭐ Essential (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="ZLARm5-07vY" href="https://www.youtube.com/results?search_query=Amazon+Comprehend+tutorial+sentiment+entities+custom" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🗣️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -61,7 +61,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="kNQKQcMPVak" href="https://www.youtube.com/results?search_query=Amazon+Transcribe+streaming+custom+vocabulary+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎙️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -93,7 +93,7 @@
 
 ## 🍿 Optional
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="MqFJKnekTMg" href="https://www.youtube.com/results?search_query=Amazon+Polly+neural+generative+voice+SSML" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=shape+language+character+design+circles+squares+triangles" data-video-id="HaIJMUaSJz4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -60,7 +60,7 @@
 
 ## 📚 Recommended (~50 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Lion+King+character+design+Scar+Andreas+Deja+shape+language" data-video-id="pQHKNbOnS70" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -92,7 +92,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+character+design+process+development+inside+out" data-video-id="sOLd0KHwOAo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

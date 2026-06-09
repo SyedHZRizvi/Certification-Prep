@@ -4,7 +4,7 @@
 
 ## Essential Viewing
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+pronunciation+qaf+ain+khe+ghain+advanced" data-video-id="U8LpUfRk33M" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
@@ -40,7 +40,7 @@
 
 ## Recommended
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+storytelling+narrative+techniques" data-video-id="fHkYPzMnAoo" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
@@ -76,7 +76,7 @@
 
 ## Optional / Enrichment
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+drama+Humsafar+HUM+TV+urdu" data-video-id="MiPBUuWRsVA" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>

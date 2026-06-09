@@ -4,7 +4,7 @@
 
 ## Vocabulary by Topic — French Food, Family, Body, Home
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=French+Family+Vocabulary+La+Famille+with+Audio" data-video-id="APKbp3gSmE4" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>

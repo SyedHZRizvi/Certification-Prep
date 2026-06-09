@@ -22,7 +22,7 @@
 
 ## ⭐ Essential watching (~70 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Andreas+Antonopoulos+proof+of+work+mining+explained" data-video-id="L5eh24xTUO8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⛏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -54,7 +54,7 @@
 
 ## 📚 Recommended (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=China+bitcoin+mining+ban+2021+hashrate+migration" data-video-id="YF9RG1wgxZA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚛</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -86,7 +86,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Stratum+V2+mining+protocol+decentralization" data-video-id="IHvg8HbH1qU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

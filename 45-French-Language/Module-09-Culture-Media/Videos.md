@@ -4,7 +4,7 @@
 
 ## Essential — French Idioms and Cultural References
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=french+idioms+expressions+advanced+C1+native+speakers" data-video-id="sJxLkuuBq0o" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -54,7 +54,7 @@
 
 ## Recommended — Literature and Advanced Listening
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Albert+Camus+L+Etranger+analysis+french+literature" data-video-id="NTsNHlbxF5Y" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">
@@ -93,7 +93,7 @@
 
 ## Optional — Immersive French Culture
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=dreaming+french+advanced+C1+culture+society" data-video-id="h7svw4GBb3Q" target="_blank" rel="noopener" style="display:block;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.18);background:#1a1a2e;margin:1.25rem 0;text-decoration:none;">
   <div style="position:relative;padding-bottom:56.25%;background:#000;">

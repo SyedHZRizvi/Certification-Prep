@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~54 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="e2QUnEk5wBo" href="https://www.youtube.com/results?search_query=Manufacturing+lead+time+queue+setup+run+wait+move" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~32 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="u38l1tV5lkc" href="https://www.youtube.com/results?search_query=Manufacturing+cell+group+technology+layout" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="Kk5zhoRA1Uc" href="https://www.youtube.com/results?search_query=Johnson+rule+two+machine+scheduling" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

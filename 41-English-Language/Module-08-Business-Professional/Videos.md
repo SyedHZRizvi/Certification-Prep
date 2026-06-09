@@ -17,7 +17,7 @@
 
 # Module 8: Business Professional English — Video Resources
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+cover+letter+English+job+application" data-video-id="y3oi4bGIRgE" target="_blank">
   <div class="vg-thumb">📄<div class="vg-play">▶</div></div>

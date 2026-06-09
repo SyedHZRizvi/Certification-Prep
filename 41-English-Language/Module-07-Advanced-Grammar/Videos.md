@@ -17,7 +17,7 @@
 
 # Module 7: Advanced Grammar — Video Resources
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=present+perfect+past+perfect+future+perfect+English+explained" data-video-id="L8gZ9cZLBR0" target="_blank">
   <div class="vg-thumb">⏰<div class="vg-play">▶</div></div>

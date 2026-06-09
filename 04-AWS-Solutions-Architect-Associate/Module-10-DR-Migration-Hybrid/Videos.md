@@ -24,7 +24,7 @@
 
 ## ⭐ Essential watching (~55 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="dn4F15S4cNw" href="https://www.youtube.com/results?search_query=AWS+disaster+recovery+strategies+backup+pilot+light+warm+standby" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⛑️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -65,7 +65,7 @@
 
 ## 📚 Recommended (~35 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="xCNDN3IkwVI" href="https://www.youtube.com/results?search_query=AWS+DataSync+vs+Storage+Gateway+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚚</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -97,7 +97,7 @@
 
 ## 🍿 Optional deep dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" data-video-id="dCy7ixko3tE" href="https://www.youtube.com/results?search_query=AWS+Backup+service+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💾</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

@@ -19,7 +19,7 @@
 
 ## ⭐ Essential Watching (~75 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+Animator+Survival+Kit+timing+spacing+tutorial" data-video-id="fmYfJQDaFh8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -60,7 +60,7 @@
 
 ## 📚 Recommended (~45 min)
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+animation+breakdown+slow+in+out+deer+on+ice+timing" data-video-id="v_5HkMUsKwY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
@@ -92,7 +92,7 @@
 
 ## 🍿 Optional Deep Dives
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
   <a class="vg-card" href="https://www.youtube.com/results?search_query=Into+Spider-Verse+on+2s+12fps+animation+technique+breakdown" data-video-id="l96IgQmXmhM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">

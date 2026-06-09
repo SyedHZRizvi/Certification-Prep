@@ -4,7 +4,7 @@
 
 ## Grammar Foundation Videos — Être, Avoir, -ER Verbs, Gender
 
-<div class="vg-grid">
+<div class="vg-grid" markdown="0">
 
 <a class="vg-card" href="https://www.youtube.com/results?search_query=Etre+To+Be+Complete+Conjugation+and+Usage+French" data-video-id="ylNB4AiFPSE" target="_blank">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
