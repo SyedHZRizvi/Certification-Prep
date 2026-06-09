@@ -23,7 +23,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Glue+ETL+tutorial+beginners+crawler+catalog" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qgmflPGsNkc" href="https://www.youtube.com/results?search_query=AWS+Glue+ETL+tutorial+beginners+crawler+catalog" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ 18 min · Glue's core concepts</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kinesis+Data+Streams+vs+Firehose+vs+Analytics+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AaZ_RSt0KP8" href="https://www.youtube.com/results?search_query=Kinesis+Data+Streams+vs+Firehose+vs+Analytics+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 16 min · Cost-optimised data lake foundations</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Athena+best+practices+Parquet+partition+projection" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="DCIbvq0T5pM" href="https://www.youtube.com/results?search_query=Amazon+Athena+best+practices+Parquet+partition+projection" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -64,7 +64,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Lake+Formation+governance+permissions+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BaGpNjDUwXo" href="https://www.youtube.com/results?search_query=AWS+Lake+Formation+governance+permissions+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 18 min · Why Parquet wins for ML</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+DMS+CDC+continuous+replication+to+S3" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="PoRJizzoW9s" href="https://www.youtube.com/results?search_query=AWS+DMS+CDC+continuous+replication+to+S3" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EMR+Serverless+Spark+tutorial+vs+Glue" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Kd1OtMRstyE" href="https://www.youtube.com/results?search_query=EMR+Serverless+Spark+tutorial+vs+Glue" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🐘</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -105,7 +105,7 @@
       <span class="vg-duration">⏱ 25 min · Pick the right big-data engine</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Netflix+data+platform+Iceberg+reinvent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mf8Hb0coI6o" href="https://www.youtube.com/results?search_query=Netflix+data+platform+Iceberg+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 45 min · How petabyte-scale ML data flows</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Glue+DataBrew+no+code+data+preparation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oa37pTxF4JM" href="https://www.youtube.com/results?search_query=AWS+Glue+DataBrew+no+code+data+preparation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧹</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 22 min · 250+ transforms, analyst-friendly</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Snowball+Edge+petabyte+data+transfer" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NxWvtm4sU5Y" href="https://www.youtube.com/results?search_query=AWS+Snowball+Edge+petabyte+data+transfer" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>❄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

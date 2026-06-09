@@ -20,7 +20,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+graph+editor+tutorial+F+curves+animation+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+graph+editor+tutorial+F+curves+animation+explained" data-video-id="MkK4bv9CBEQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Graph Editor, F-Curves and Interpolation Explained</div>
@@ -29,7 +29,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+NLA+editor+actions+walk+cycle+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+NLA+editor+actions+walk+cycle+tutorial" data-video-id="IlMHiH8zEYI" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender NLA Editor, Actions and Walk Cycle Workflow</div>
@@ -38,7 +38,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+walk+cycle+animation+tutorial+character+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+walk+cycle+animation+tutorial+character+2024" data-video-id="dSMW6bvq5rs" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Walk Cycle Animation, Complete Character Tutorial</div>
@@ -55,7 +55,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+animation+blocking+workflow+stepped+spline+polish" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+animation+blocking+workflow+stepped+spline+polish" data-video-id="5V9ZNtH8gJw" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Animation, Blocking to Spline Polish Workflow</div>
@@ -64,7 +64,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+ease+in+ease+out+animation+curves+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+ease+in+ease+out+animation+curves+tutorial" data-video-id="SWCDyHiQ0BM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Ease In / Ease Out, Animation Curves Tutorial</div>
@@ -73,7 +73,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+cycles+modifier+action+editor+loop+animation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+cycles+modifier+action+editor+loop+animation" data-video-id="hVmSFRUhMLc" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Cycles Modifier, Looping F-Curves for Walk Cycles</div>
@@ -90,7 +90,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+charge+open+movie+animation+workflow+behind+scenes" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+charge+open+movie+animation+workflow+behind+scenes" data-video-id="c7n_7WYUqeE" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Charge Open Movie, Animation Workflow Behind the Scenes</div>
@@ -99,7 +99,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+12+principles+animation+squash+stretch+anticipation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+12+principles+animation+squash+stretch+anticipation" data-video-id="haa7n3UGyDc" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">12 Principles of Animation in Blender, Squash, Stretch, Anticipation</div>
@@ -108,7 +108,7 @@ title: "Module 7 Videos: Keyframe Animation & Graph Editor"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+grease+pencil+2D+animation+tutorial+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+grease+pencil+2D+animation+tutorial+beginners" data-video-id="c57qq2nE3B0" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Grease Pencil, 2D Animation in 3D Space</div>

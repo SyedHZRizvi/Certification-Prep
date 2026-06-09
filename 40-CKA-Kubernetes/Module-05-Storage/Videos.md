@@ -29,7 +29,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+persistent+volumes+PV+PVC+tutorial+CKA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+persistent+volumes+PV+PVC+tutorial+CKA" data-video-id="0swOh5C3OVM" target="_blank" rel="noopener">
   <div class="vg-thumb">☸️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+storage+class+dynamic+provisioning+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+storage+class+dynamic+provisioning+tutorial" data-video-id="x2sMWUkasoE" target="_blank" rel="noopener">
   <div class="vg-thumb">☸️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -49,7 +49,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+configmap+secret+tutorial+mount+volume+env" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+configmap+secret+tutorial+mount+volume+env" data-video-id="FAnQTgr04mU" target="_blank" rel="noopener">
   <div class="vg-thumb">☸️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -59,7 +59,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+storage+section+exam+tips+persistent+volumes" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+storage+section+exam+tips+persistent+volumes" data-video-id="Tl7NnFChkgY" target="_blank" rel="noopener">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -69,7 +69,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+emptyDir+hostPath+volumes+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+emptyDir+hostPath+volumes+explained" data-video-id="d9GHysrHvPM" target="_blank" rel="noopener">
   <div class="vg-thumb">📦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -87,7 +87,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+secrets+base64+security+encryption+at+rest" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+secrets+base64+security+encryption+at+rest" data-video-id="MTnQW9MxnRI" target="_blank" rel="noopener">
   <div class="vg-thumb">🔐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -97,7 +97,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+PVC+reclaim+policy+retain+delete+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+PVC+reclaim+policy+retain+delete+tutorial" data-video-id="2mCEHkByvSg" target="_blank" rel="noopener">
   <div class="vg-thumb">☸️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+access+modes+ReadWriteOnce+ReadWriteMany+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+access+modes+ReadWriteOnce+ReadWriteMany+explained" data-video-id="9dCGLgUVBpE" target="_blank" rel="noopener">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -117,7 +117,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+volume+expansion+PVC+resize+storageclass" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+volume+expansion+PVC+resize+storageclass" data-video-id="Jg3nLJNNXv8" target="_blank" rel="noopener">
   <div class="vg-thumb">📈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -127,7 +127,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+projected+volumes+secret+configmap+serviceaccount+token" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+projected+volumes+secret+configmap+serviceaccount+token" data-video-id="w3PwNnQMbow" target="_blank" rel="noopener">
   <div class="vg-thumb">🗂️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -145,7 +145,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+CSI+driver+container+storage+interface+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+CSI+driver+container+storage+interface+explained" data-video-id="AnfAd6goq-o" target="_blank" rel="noopener">
   <div class="vg-thumb">🔩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -155,7 +155,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+statefulset+volumeClaimTemplate+persistent+storage" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+statefulset+volumeClaimTemplate+persistent+storage" data-video-id="pPQKAR1pA9U" target="_blank" rel="noopener">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -165,7 +165,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+encryption+at+rest+secrets+EncryptionConfiguration" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+encryption+at+rest+secrets+EncryptionConfiguration" data-video-id="f4Ru6CPG1z4" target="_blank" rel="noopener">
   <div class="vg-thumb">🛡️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

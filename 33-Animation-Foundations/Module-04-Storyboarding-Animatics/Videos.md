@@ -20,7 +20,7 @@
 ## ⭐ Essential Watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=storyboarding+tutorial+animation+beginner+shot+types" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=storyboarding+tutorial+animation+beginner+shot+types" data-video-id="REdgKM0HLSM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -38,7 +38,7 @@
       <span class="vg-duration">⏱ 20 min · From boards to timed video</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+storyboarding+process+Finding+Nemo+story+reel" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+storyboarding+process+Finding+Nemo+story+reel" data-video-id="YkPXGzv3-yg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=thumbnailing+composition+storyboard+technique+tips" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=thumbnailing+composition+storyboard+technique+tips" data-video-id="O8i7OKbWmRM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 15 min · Why your first idea is usually wrong</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toon+Boom+Storyboard+Pro+tutorial+beginner+2024" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Toon+Boom+Storyboard+Pro+tutorial+beginner+2024" data-video-id="I2qDzKJ7lF8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=continuity+editing+film+animation+180+degree+rule+practical" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=continuity+editing+film+animation+180+degree+rule+practical" data-video-id="gHy1aFNsDVo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 20 min · Floor plans, 180-degree rule applied to boarding</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=shot+transitions+film+dissolve+match+cut+examples+analysis" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=shot+transitions+film+dissolve+match+cut+examples+analysis" data-video-id="F3OBwwMkLkk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

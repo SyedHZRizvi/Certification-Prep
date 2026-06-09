@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 20 min · 49% failure reduction technique</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+long+context+vs+RAG+200k+stuffing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+long+context+vs+RAG+200k+stuffing" data-video-id="T-D1OfcDW1M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · The decision tree</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Citations+API+structured+document" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Citations+API+structured+document" data-video-id="h_GTxRFYETY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Audit-grade citations</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Voyage+AI+embeddings+RAG+Claude+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Voyage+AI+embeddings+RAG+Claude+tutorial" data-video-id="QdDoFoYVT5c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 15 min · Cross-encoder vs bi-encoder</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+1M+context+beta+stuffing+vs+RAG" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+1M+context+beta+stuffing+vs+RAG" data-video-id="w6GQb0y9rls" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=needle+in+haystack+benchmark+LLM+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=needle+in+haystack+benchmark+LLM+long+context" data-video-id="KwRRuiCCdOs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 20 min · Simplest viable stack</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LlamaIndex+RAG+Claude+production+pipeline" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LlamaIndex+RAG+Claude+production+pipeline" data-video-id="Zj5RCweUHIk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 25 min · Framework-flavored</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=agentic+RAG+iterative+retrieval+research" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=agentic+RAG+iterative+retrieval+research" data-video-id="b-VhL8TA5pw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

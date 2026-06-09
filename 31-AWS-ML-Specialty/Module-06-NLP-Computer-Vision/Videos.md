@@ -21,7 +21,7 @@
 ## ⭐ Essential (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Comprehend+tutorial+sentiment+entities+custom" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZLARm5-07vY" href="https://www.youtube.com/results?search_query=Amazon+Comprehend+tutorial+sentiment+entities+custom" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🗣️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 22 min · Pre-trained APIs + Custom</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Rekognition+Custom+Labels+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="L0UJ9OKRvFg" href="https://www.youtube.com/results?search_query=Amazon+Rekognition+Custom+Labels+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>👁️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 20 min · Train CV with 10 images</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Textract+AnalyzeDocument+forms+tables" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="cHNLVT2RWXY" href="https://www.youtube.com/results?search_query=Amazon+Textract+AnalyzeDocument+forms+tables" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📄</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 18 min · Structured PDF extraction</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Lex+chatbot+tutorial+intents+slots+lambda" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="tQfzxEaFoSk" href="https://www.youtube.com/results?search_query=Amazon+Lex+chatbot+tutorial+intents+slots+lambda" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Transcribe+streaming+custom+vocabulary+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kNQKQcMPVak" href="https://www.youtube.com/results?search_query=Amazon+Transcribe+streaming+custom+vocabulary+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎙️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 18 min · Custom Vocabulary + LM</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Kendra+enterprise+search+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="hkVAHuBZXBg" href="https://www.youtube.com/results?search_query=Amazon+Kendra+enterprise+search+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -94,7 +94,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Polly+neural+generative+voice+SSML" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MqFJKnekTMg" href="https://www.youtube.com/results?search_query=Amazon+Polly+neural+generative+voice+SSML" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 18 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Forecast+vs+SageMaker+DeepAR" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="sNoLJiJGTMk" href="https://www.youtube.com/results?search_query=Amazon+Forecast+vs+SageMaker+DeepAR" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 13 min</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+Fraud+Detector+tutorial+online+account+takeover" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="BcfGPmRbRZs" href="https://www.youtube.com/results?search_query=AWS+Fraud+Detector+tutorial+online+account+takeover" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🛡️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

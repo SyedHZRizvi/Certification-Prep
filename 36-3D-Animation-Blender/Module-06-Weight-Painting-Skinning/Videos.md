@@ -20,7 +20,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shape+keys+tutorial+facial+expressions+character" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shape+keys+tutorial+facial+expressions+character" data-video-id="YDu6y3whgcQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Shape Keys, Facial Expressions for Characters</div>
@@ -29,7 +29,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+skin+bag+problem+weight+painting+armpit+fix" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+skin+bag+problem+weight+painting+armpit+fix" data-video-id="PtA6nqMlUuY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Skin Bag Problem, Armpit Weight Painting Fix</div>
@@ -46,7 +46,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shape+keys+driver+bone+rotation+facial+rig" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shape+keys+driver+bone+rotation+facial+rig" data-video-id="dDAGimhJOPM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Shape Key Drivers, Bone Rotation to Expression</div>
@@ -55,7 +55,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+auto+normalize+weight+painting+vertex+groups" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+auto+normalize+weight+painting+vertex+groups" data-video-id="KWLWoKKPBqM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Auto Normalize, Weight Painting Vertex Groups</div>
@@ -64,7 +64,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+corrective+shape+keys+driver+deformation+fix" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+corrective+shape+keys+driver+deformation+fix" data-video-id="KBZF2SaTsTs" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Corrective Shape Keys for Deformation Problems</div>
@@ -73,7 +73,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+vertex+groups+explained+rigging+armature+deform" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+vertex+groups+explained+rigging+armature+deform" data-video-id="lpSPU5CU-Tk" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Vertex Groups, Explained for Rigging</div>
@@ -90,7 +90,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+transfer+weights+mesh+to+mesh+character" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+transfer+weights+mesh+to+mesh+character" data-video-id="0q2wFiJuZQs" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Transfer Weights, From One Mesh to Another</div>
@@ -99,7 +99,7 @@ title: "Module 6 Videos: Weight Painting & Skinning"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+weight+paint+tips+tricks+production+workflow" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+weight+paint+tips+tricks+production+workflow" data-video-id="GNqrqzNiPaY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Weight Paint Tips & Tricks, Production Workflow</div>

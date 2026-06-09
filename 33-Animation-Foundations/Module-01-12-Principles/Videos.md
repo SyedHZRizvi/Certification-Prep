@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · The most-watched explanation online</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aaron+Blaise+squash+stretch+animation+Disney" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aaron+Blaise+squash+stretch+animation+Disney" data-video-id="haa7n3UGyDc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 15 min · Volume preservation + character application</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anticipation+animation+principle+timing+example" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anticipation+animation+principle+timing+example" data-video-id="4OxphHNm0RY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 12 min · Why anticipation controls audience attention</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+spacing+animation+frames+Richard+Williams" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+spacing+animation+frames+Richard+Williams" data-video-id="fmYfJQDaFh8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spider-Man+Into+the+Spider-Verse+animation+style+breakdown" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spider-Man+Into+the+Spider-Verse+animation+style+breakdown" data-video-id="l96IgQmXmhM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 20 min · How the film broke every rule (intentionally)</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=follow+through+overlapping+action+animation+example" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=follow+through+overlapping+action+animation+example" data-video-id="OBh-WXMRSic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 15 min · Physics of secondary movement</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=staging+animation+cinematography+silhouette+readability" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=staging+animation+cinematography+silhouette+readability" data-video-id="mA1bTY9KXZY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 14 min · Theater, film, and animation staging compared</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=appeal+character+animation+design+principle" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=appeal+character+animation+design+principle" data-video-id="SfsFmrJmAOs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+1942+animation+breakdown+deer+on+ice+overlapping" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+1942+animation+breakdown+deer+on+ice+overlapping" data-video-id="v_5HkMUsKwY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 10 min · The scene that teaches slow-in/out + overlap</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=exaggeration+animation+principle+Tex+Avery+Looney+Tunes" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=exaggeration+animation+principle+Tex+Avery+Looney+Tunes" data-video-id="T9Yd-biGO2Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -125,7 +125,7 @@
       <span class="vg-duration">⏱ 12 min · When to push past reality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=solid+drawing+3D+form+animation+principles" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=solid+drawing+3D+form+animation+principles" data-video-id="7SOFXLl7o3c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 18 min · Foreshortening, overlapping, contour</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=The+Incredibles+animation+breakdown+Pixar+principles" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=The+Incredibles+animation+breakdown+Pixar+principles" data-video-id="B4X_mCEYlKs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

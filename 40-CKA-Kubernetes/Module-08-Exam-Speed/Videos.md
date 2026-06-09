@@ -25,7 +25,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+tips+kubectl+speed+tricks" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+tips+kubectl+speed+tricks" data-video-id="c6SNd6M7-eI" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ⚡
     <div class="vg-play">▶</div>
@@ -38,7 +38,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+imperative+commands+CKA+dry-run+yaml" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+imperative+commands+CKA+dry-run+yaml" data-video-id="5oGZhF5PEsE" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🛠️
     <div class="vg-play">▶</div>
@@ -51,7 +51,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+walkthrough+live+terminal+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+walkthrough+live+terminal+2024" data-video-id="0Omvgd7Hg1I" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🎬
     <div class="vg-play">▶</div>
@@ -64,7 +64,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+autocomplete+alias+bash+kubernetes" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+autocomplete+alias+bash+kubernetes" data-video-id="kUmaKvxdfvg" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔧
     <div class="vg-play">▶</div>
@@ -77,7 +77,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+context+switching+kubeconfig+exam+strategy" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+context+switching+kubeconfig+exam+strategy" data-video-id="SJiVzqJSm08" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔀
     <div class="vg-play">▶</div>
@@ -98,7 +98,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+YAML+skeleton+templates+pod+deployment+service" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+YAML+skeleton+templates+pod+deployment+service" data-video-id="pV0LwPf6eCo" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📄
     <div class="vg-play">▶</div>
@@ -111,7 +111,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+time+management+strategy+pass+exam+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+time+management+strategy+pass+exam+2024" data-video-id="QbFHjNmJPUo" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ⏱️
     <div class="vg-play">▶</div>
@@ -124,7 +124,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+explain+command+kubernetes+documentation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+explain+command+kubernetes+documentation" data-video-id="B3C1rl7FKWM" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📚
     <div class="vg-play">▶</div>
@@ -137,7 +137,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+passed+lessons+learned+advice+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+passed+lessons+learned+advice+2024" data-video-id="Wf13DQGoQRE" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🏆
     <div class="vg-play">▶</div>
@@ -150,7 +150,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kubectl+cheat+sheet+productivity+tips" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kubectl+cheat+sheet+productivity+tips" data-video-id="feLpd-0ibfQ" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🗒️
     <div class="vg-play">▶</div>
@@ -171,7 +171,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+mock+exam+solutions+explained+all+questions" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+mock+exam+solutions+explained+all+questions" data-video-id="OTvFTTFUz3k" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🧪
     <div class="vg-play">▶</div>
@@ -184,7 +184,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=vim+tips+kubernetes+yaml+editing+exam" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=vim+tips+kubernetes+yaml+editing+exam" data-video-id="ggSyF1SVFr4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ✏️
     <div class="vg-play">▶</div>
@@ -197,7 +197,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jsonpath+output+formatting+kubectl" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jsonpath+output+formatting+kubectl" data-video-id="0REa8Q2kcP4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔍
     <div class="vg-play">▶</div>
@@ -210,7 +210,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+CKAD+exam+environment+PSI+browser+tips" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+CKAD+exam+environment+PSI+browser+tips" data-video-id="rQOrNRqSMEI" target="_blank" rel="noopener">
   <div class="vg-thumb">
     💻
     <div class="vg-play">▶</div>
@@ -223,7 +223,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+tmux+terminal+multiplexer+CKA+exam" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+tmux+terminal+multiplexer+CKA+exam" data-video-id="DzNmUNvnB04" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🖥️
     <div class="vg-play">▶</div>

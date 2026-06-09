@@ -23,7 +23,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+services+clusterip+nodeport+loadbalancer+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+services+clusterip+nodeport+loadbalancer+explained" data-video-id="T4Z7visMM4E" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ☎️
     <div class="vg-play">▶</div>
@@ -36,7 +36,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+networking+explained+pod+network+cni" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+networking+explained+pod+network+cni" data-video-id="4-MXxJmVJ5I" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🌐
     <div class="vg-play">▶</div>
@@ -49,7 +49,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ingress+explained+nginx+ingress+controller" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ingress+explained+nginx+ingress+controller" data-video-id="GhZi4DxaxxE" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🚪
     <div class="vg-play">▶</div>
@@ -62,7 +62,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+tutorial+CKA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+tutorial+CKA" data-video-id="yBdSz1Rw7JE" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🛡️
     <div class="vg-play">▶</div>
@@ -75,7 +75,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+DNS+coredns+service+discovery+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+DNS+coredns+service+discovery+tutorial" data-video-id="4QyecOoPsGU" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📖
     <div class="vg-play">▶</div>
@@ -96,7 +96,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kube-proxy+iptables+ipvs+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kube-proxy+iptables+ipvs+explained" data-video-id="NZNuBPxh1RU" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ⚙️
     <div class="vg-play">▶</div>
@@ -109,7 +109,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=calico+flannel+cilium+kubernetes+CNI+comparison" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=calico+flannel+cilium+kubernetes+CNI+comparison" data-video-id="6v_BDHIgOY8" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔌
     <div class="vg-play">▶</div>
@@ -122,7 +122,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ingress+TLS+termination+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ingress+TLS+termination+tutorial" data-video-id="DmIT7f4bTUM" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔒
     <div class="vg-play">▶</div>
@@ -135,7 +135,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+endpointslices+endpoints+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+endpointslices+endpoints+explained" data-video-id="Yx66-Ur1Hys" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📋
     <div class="vg-play">▶</div>
@@ -148,7 +148,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+services+networking+practice+questions" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+services+networking+practice+questions" data-video-id="VLfxFT8XLBA" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📝
     <div class="vg-play">▶</div>
@@ -169,7 +169,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=cilium+ebpf+kubernetes+networking+deep+dive" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=cilium+ebpf+kubernetes+networking+deep+dive" data-video-id="u8HKg5pENj4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔬
     <div class="vg-play">▶</div>
@@ -182,7 +182,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+service+mesh+istio+introduction" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+service+mesh+istio+introduction" data-video-id="16fgzklcF7Y" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🕸️
     <div class="vg-play">▶</div>
@@ -195,7 +195,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+visualization+editor" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+network+policy+visualization+editor" data-video-id="3qgSrAFmGPU" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🗺️
     <div class="vg-play">▶</div>

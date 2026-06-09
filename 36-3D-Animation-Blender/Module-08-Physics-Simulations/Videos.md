@@ -29,7 +29,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+fluid+simulation+water+FLIP+solver+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+fluid+simulation+water+FLIP+solver+tutorial" data-video-id="fWqCy_f4DUk" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Fluid Simulation, Water with FLIP Solver</div>
@@ -46,7 +46,7 @@ title: "Module 8 Videos: Physics & Simulations"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+particle+system+hair+fur+character+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+particle+system+hair+fur+character+tutorial" data-video-id="ma20c4nDZkU" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Particle System, Hair and Fur for Characters</div>
@@ -55,7 +55,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+physics+cache+baking+render+simulation+production" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+physics+cache+baking+render+simulation+production" data-video-id="8P43R0oLvPo" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Physics Cache & Baking, Production Workflow</div>
@@ -64,7 +64,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+smoke+fire+simulation+quick+effects+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+smoke+fire+simulation+quick+effects+tutorial" data-video-id="pqCj8RL55uo" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Smoke and Fire Simulation, Quick Effects</div>
@@ -73,7 +73,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+collision+modifier+cloth+rigid+body+interaction" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+collision+modifier+cloth+rigid+body+interaction" data-video-id="3QHNb5P9rOE" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Collision Modifier, Cloth and Rigid Body Interaction</div>
@@ -90,7 +90,7 @@ title: "Module 8 Videos: Physics & Simulations"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+4+hair+curves+geometry+nodes+grooming" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+4+hair+curves+geometry+nodes+grooming" data-video-id="GbLF7l9mMR0" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender 4 Hair Curves, Geometry Nodes Grooming System</div>
@@ -99,7 +99,7 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="6VeVMtpEekg" href="https://www.youtube.com/results?search_query=Blender+soft+body+simulation+jelly+blob+organic" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+soft+body+simulation+jelly+blob+organic" data-video-id="xEzFYTiCE0U" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Soft Body Simulation, Jelly and Organic Effects</div>

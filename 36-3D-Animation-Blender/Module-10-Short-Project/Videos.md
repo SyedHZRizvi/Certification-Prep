@@ -11,7 +11,7 @@ title: "Module 10 Videos: Short Film Project"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+short+film+production+pipeline+complete+workflow" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+short+film+production+pipeline+complete+workflow" data-video-id="4f42YlGIUkw" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Short Film Production Pipeline, Complete Workflow</div>
@@ -20,7 +20,7 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+coffee+run+short+film+behind+the+scenes+production" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+coffee+run+short+film+behind+the+scenes+production" data-video-id="WhWc3b3KhnY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Coffee Run, Behind the Scenes Production</div>
@@ -29,7 +29,7 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+storyboard+animatic+tutorial+short+film" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+storyboard+animatic+tutorial+short+film" data-video-id="kVcZHiGm1oE" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Storyboard and Animatic Tutorial for Short Films</div>
@@ -38,7 +38,7 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Ian+Hubert+lazy+tutorials+short+film+technique" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Ian+Hubert+lazy+tutorials+short+film+technique" data-video-id="U1f6NDCttHo" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Ian Hubert, Lazy Tutorials: Short Film Techniques</div>
@@ -55,7 +55,7 @@ title: "Module 10 Videos: Short Film Project"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+charge+open+movie+full+making+of+2022" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+charge+open+movie+full+making+of+2022" data-video-id="jCVMkHCxCPU" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Charge Open Movie, Full Making-Of Documentary</div>
@@ -64,7 +64,7 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+portfolio+reel+tips+animation+presentation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+portfolio+reel+tips+animation+presentation" data-video-id="p4-8mMq2Qas" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Animation Portfolio Reel, Tips for Getting Hired</div>
@@ -73,7 +73,7 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+final+render+compositing+color+grade+delivery+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+final+render+compositing+color+grade+delivery+tutorial" data-video-id="DwTVuNAqYHY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Final Render, Compositing, Color Grade, and Delivery</div>
@@ -90,7 +90,7 @@ title: "Module 10 Videos: Short Film Project"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+full+short+film+watch" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+full+short+film+watch" data-video-id="TcQlFIGi0lA" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sprite Fright, Full Short Film</div>
@@ -99,7 +99,7 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=indie+3D+animation+blender+short+film+showcase+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=indie+3D+animation+blender+short+film+showcase+2024" data-video-id="PBc9JFEULpg" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Indie Blender Short Film Showcase 2024</div>
@@ -108,7 +108,7 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+wing+it+open+movie+stylized+animation+making+of" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+wing+it+open+movie+stylized+animation+making+of" data-video-id="JkMsHo4c0v8" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Wing It!, Stylized Animation Making-Of</div>

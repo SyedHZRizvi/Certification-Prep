@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 24 min · Read any metric in 30 s</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Automatic+Model+Tuning+Bayesian+Hyperband" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="nD4lzr3bJtI" href="https://www.youtube.com/results?search_query=SageMaker+Automatic+Model+Tuning+Bayesian+Hyperband" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -94,7 +94,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=fairness+ML+definitions+impossibility+result" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jIXIuYdnyyk" href="https://www.youtube.com/results?search_query=fairness+ML+definitions+impossibility+result" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚖️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

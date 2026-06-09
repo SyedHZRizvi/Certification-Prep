@@ -10,7 +10,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+tutorial+After+Effects+beginner+fire+smoke">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+tutorial+After+Effects+beginner+fire+smoke" data-video-id="HFl1MmWCy-o" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Trapcode Particular: Complete Beginner Tutorial, Fire and Smoke</div>
@@ -19,7 +19,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CC+Particle+World+After+Effects+tutorial+snow+rain+basic">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CC+Particle+World+After+Effects+tutorial+snow+rain+basic" data-video-id="BbgDlEbsHuo" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">CC Particle World in After Effects: Snow, Rain, and Atmospheric Particles</div>
@@ -28,7 +28,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=After+Effects+fire+effect+without+plugins+fractal+noise">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=After+Effects+fire+effect+without+plugins+fractal+noise" data-video-id="8CGLNTuBYxo" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Fire Without Plugins in After Effects: Fractal Noise Method</div>
@@ -37,7 +37,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+magic+effect+After+Effects+particles+energy">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+magic+effect+After+Effects+particles+energy" data-video-id="zFHLtRFdXms" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Building Magic Effects with Trapcode Particular</div>
@@ -54,7 +54,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+smoke+After+Effects+realistic+tutorial">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+smoke+After+Effects+realistic+tutorial" data-video-id="c4iFDTUz4pA" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Realistic Smoke in After Effects with Trapcode Particular</div>
@@ -63,7 +63,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+dust+debris+explosion+After+Effects">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+dust+debris+explosion+After+Effects" data-video-id="KKhfnYrk4ds" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Dust, Debris, and Ground Explosion Particles with Trapcode Particular</div>
@@ -72,7 +72,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+aux+system+sparks+embers+tutorial">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Trapcode+Particular+aux+system+sparks+embers+tutorial" data-video-id="N5rlbM1x5iU" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Trapcode Particular Aux System: Secondary Sparks and Embers</div>
@@ -81,7 +81,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Corridor+Crew+VFX+artists+react+fire+explosion+effects">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Corridor+Crew+VFX+artists+react+fire+explosion+effects" data-video-id="x5hFkaWFWOo" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Artists React: Fire and Explosion Effects in Major Films</div>
@@ -98,7 +98,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=particle+system+compositing+blend+modes+AE+add+screen">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=particle+system+compositing+blend+modes+AE+add+screen" data-video-id="FcmUEBG4H1M" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Compositing Particles: Blend Modes and Integration</div>
@@ -107,7 +107,7 @@ title: "Module 5 Videos: Particle Systems in After Effects"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Houdini+VFX+simulation+vs+After+Effects+particles+when+to+use">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Houdini+VFX+simulation+vs+After+Effects+particles+when+to+use" data-video-id="OmMU6Q5HNLE" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Houdini Simulations vs After Effects Particles: When to Use Which</div>

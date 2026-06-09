@@ -6,7 +6,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+alphabet+for+beginners+UrduPod101" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+alphabet+for+beginners+UrduPod101" data-video-id="nEFWOT3OYuQ" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+Nastaliq+script+writing+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+Nastaliq+script+writing+beginners" data-video-id="7Gq9pGBFyEQ" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+for+beginners+lesson+1+greetings+English+speakers" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+for+beginners+lesson+1+greetings+English+speakers" data-video-id="SLpRKGVDx9Q" target="_blank">
   <div class="vg-thumb">👋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Urdu+alphabet+Ling+App" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Urdu+alphabet+Ling+App" data-video-id="oLPdvWLzmrY" target="_blank">
   <div class="vg-thumb">🔡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+numbers+1+to+100+pronunciation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+numbers+1+to+100+pronunciation" data-video-id="H3QL0CbMqp8" target="_blank">
   <div class="vg-thumb">🔢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+right+to+left+writing+direction+learn" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+right+to+left+writing+direction+learn" data-video-id="Kj5_-_0pFXs" target="_blank">
   <div class="vg-thumb">↩️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+honorifics+aap+tum+tu+explanation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+honorifics+aap+tum+tu+explanation" data-video-id="TxJQVgFNFiA" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+vs+Hindi+difference+explained" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+vs+Hindi+difference+explained" data-video-id="AOkYJuPBCiw" target="_blank">
   <div class="vg-thumb">🆚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+100+common+words+beginners+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+100+common+words+beginners+vocabulary" data-video-id="d5vANH4LsKA" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Perso+Arabic+influence+Urdu+vocabulary+history" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Perso+Arabic+influence+Urdu+vocabulary+history" data-video-id="MbL8RzPbM5k" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+calligraphy+Nastaliq+beautiful+writing" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+calligraphy+Nastaliq+beautiful+writing" data-video-id="9RVp9rnJyAQ" target="_blank">
   <div class="vg-thumb">🖋️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

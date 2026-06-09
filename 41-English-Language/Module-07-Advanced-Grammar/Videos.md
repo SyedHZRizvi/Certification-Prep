@@ -19,7 +19,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=present+perfect+past+perfect+future+perfect+English+explained" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=present+perfect+past+perfect+future+perfect+English+explained" data-video-id="L8gZ9cZLBR0" target="_blank">
   <div class="vg-thumb">⏰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=all+conditionals+English+zero+first+second+third+mixed" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=all+conditionals+English+zero+first+second+third+mixed" data-video-id="V_YToEC76Bs" target="_blank">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=reported+speech+indirect+speech+English+rules" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=reported+speech+indirect+speech+English+rules" data-video-id="zr-V-E3sIEU" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -49,7 +49,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=relative+clauses+who+which+that+where+whose+English" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=relative+clauses+who+which+that+where+whose+English" data-video-id="GxVlOCiDVmk" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -59,7 +59,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=gerunds+vs+infinitives+rules+English+complete+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=gerunds+vs+infinitives+rules+English+complete+lesson" data-video-id="Bkv1oXvnOwY" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -69,7 +69,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=top+phrasal+verbs+English+most+common" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=top+phrasal+verbs+English+most+common" data-video-id="kN3SJDp8Ksk" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=inversion+advanced+English+grammar+not+only+rarely" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=inversion+advanced+English+grammar+not+only+rarely" data-video-id="SKV8dHKSE4A" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -89,7 +89,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=cleft+sentences+English+it+was+what+I+want" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=cleft+sentences+English+it+was+what+I+want" data-video-id="VNqN5pnOGeo" target="_blank">
   <div class="vg-thumb">✂️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

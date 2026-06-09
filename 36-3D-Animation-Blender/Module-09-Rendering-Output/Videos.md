@@ -11,7 +11,7 @@ title: "Module 9 Videos: Rendering & Output"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Cycles+EEVEE+comparison+when+to+use+which+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Cycles+EEVEE+comparison+when+to+use+which+2024" data-video-id="tV1qSeJC3oI" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Cycles vs. EEVEE, When to Use Which</div>
@@ -20,7 +20,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+render+settings+optimization+samples+denoising+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+render+settings+optimization+samples+denoising+tutorial" data-video-id="GJVzypjRJFY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Render Settings Optimization, Samples and Denoising</div>
@@ -29,7 +29,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+render+passes+EXR+multilayer+compositing+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+render+passes+EXR+multilayer+compositing+tutorial" data-video-id="vVrGqOe42RQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Render Passes, EXR MultiLayer and Compositing</div>
@@ -38,7 +38,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+compositor+node+tutorial+color+grading+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+compositor+node+tutorial+color+grading+2024" data-video-id="YiuXNUwEHNw" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Compositor, Color Grading and Compositing Tutorial</div>
@@ -64,7 +64,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="WobATxh3i-g" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+rendering+pipeline+cycles+production" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+rendering+pipeline+cycles+production" data-video-id="LNSMAFNMqvQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sprite Fright Rendering Pipeline, Cycles Production Settings</div>
@@ -90,7 +90,7 @@ title: "Module 9 Videos: Rendering & Output"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+cryptomatte+render+pass+masking+compositing" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+cryptomatte+render+pass+masking+compositing" data-video-id="HhSbLJLDmWQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Cryptomatte, Object Masking in the Compositor</div>
@@ -99,7 +99,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+video+sequence+editor+VSE+PNG+to+MP4+final+encode" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+video+sequence+editor+VSE+PNG+to+MP4+final+encode" data-video-id="FRuJP9LRFP0" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender VSE, Assembling PNG Sequences into Final MP4</div>
@@ -108,7 +108,7 @@ title: "Module 9 Videos: Rendering & Output"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+GPU+render+farm+flamenco+network+render" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+GPU+render+farm+flamenco+network+render" data-video-id="Y77kCB4TRWY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Flamenco, Network Render Farm Setup</div>

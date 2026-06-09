@@ -6,7 +6,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+formal+business+letter+correspondence+C1" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+formal+business+letter+correspondence+C1" data-video-id="yk_RBYZV6dI" target="_blank">
   <div class="vg-thumb">📄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+business+culture+negotiations+relationship+building" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+business+culture+negotiations+relationship+building" data-video-id="5cE5FQOU7gI" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Persian+Farsi+news+reading+vocabulary+advanced" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Persian+Farsi+news+reading+vocabulary+advanced" data-video-id="hkUOX9ZCNPI" target="_blank">
   <div class="vg-thumb">📰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+legal+government+vocabulary+official" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+legal+government+vocabulary+official" data-video-id="3GbSJHVCYOk" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+presentation+formal+public+speaking" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+presentation+formal+public+speaking" data-video-id="cJVWq9bAMOU" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+negotiation+phrases+business+deal" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+negotiation+phrases+business+deal" data-video-id="tFABEPFRPsE" target="_blank">
   <div class="vg-thumb">💰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+economic+vocabulary+financial+terms+Farsi" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+economic+vocabulary+financial+terms+Farsi" data-video-id="U3ZXbq_k-vI" target="_blank">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+report+writing+formal+advanced" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+report+writing+formal+advanced" data-video-id="vM9fN3SVRKA" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+diplomatic+language+Persian+international+affairs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+diplomatic+language+Persian+international+affairs" data-video-id="F97cHi8eNDE" target="_blank">
   <div class="vg-thumb">🌐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -96,7 +96,7 @@ Master C1-level Business Persian — formal correspondence, Iranian business cul
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iran+International+news+Persian+hard+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iran+International+news+Persian+hard+vocabulary" data-video-id="oS7k1YbJcSE" target="_blank">
   <div class="vg-thumb">📡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

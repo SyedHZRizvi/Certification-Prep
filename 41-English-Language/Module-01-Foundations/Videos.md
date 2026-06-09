@@ -21,7 +21,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+alphabet+pronunciation+for+beginners+EngVid" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+alphabet+pronunciation+for+beginners+EngVid" data-video-id="sF9zbEypG0E" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -31,7 +31,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Learning+English+alphabet+sounds+for+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Learning+English+alphabet+sounds+for+beginners" data-video-id="aU5a4VjBP8s" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+greetings+for+beginners+hello+how+are+you+Emma+EngVid" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+greetings+for+beginners+hello+how+are+you+Emma+EngVid" data-video-id="8bYDqhFiGKE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -51,7 +51,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vowel+sounds+short+long+vowels+for+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vowel+sounds+short+long+vowels+for+beginners" data-video-id="BSlDSPAYx9g" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+numbers+1+to+100+pronunciation+for+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+numbers+1+to+100+pronunciation+for+beginners" data-video-id="9bZkp7q19f0" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -77,7 +77,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=to+be+verb+am+is+are+English+grammar+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=to+be+verb+am+is+are+English+grammar+beginners" data-video-id="mBBCr9MKFBE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -87,7 +87,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=days+of+the+week+months+year+English+for+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=days+of+the+week+months+year+English+for+beginners" data-video-id="ogQK9EBRhGk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -97,7 +97,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+colors+adjectives+vocabulary+beginner+lesson" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+colors+adjectives+vocabulary+beginner+lesson" data-video-id="SBlcX3JFpNc" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=common+mistakes+English+Urdu+speakers+make+pronunciation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=common+mistakes+English+Urdu+speakers+make+pronunciation" data-video-id="R9XjN6DQJDI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -117,7 +117,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=IPA+pronunciation+chart+English+sounds+complete+guide" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=IPA+pronunciation+chart+English+sounds+complete+guide" data-video-id="6GxwHNPaeqE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -133,7 +133,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+cartoon+simple+sentences+A1" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+cartoon+simple+sentences+A1" data-video-id="Iv0rh7PkGQI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -143,7 +143,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+songs+for+learning+beginners+alphabet+numbers" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+songs+for+learning+beginners+alphabet+numbers" data-video-id="0wRQpnRAOQM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -153,7 +153,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Peppa+Pig+English+learning+slow+clear+speech" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Peppa+Pig+English+learning+slow+clear+speech" data-video-id="9NhY3vlAQaI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

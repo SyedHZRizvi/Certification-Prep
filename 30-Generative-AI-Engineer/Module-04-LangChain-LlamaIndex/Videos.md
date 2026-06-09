@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+vs+llamaindex+which+to+choose" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+vs+llamaindex+which+to+choose" data-video-id="P7_agAiUdXw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 30m · Honest pros and cons</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+workflows+event+driven" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+workflows+event+driven" data-video-id="VNvOuEb4-0Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 40m · The observability story</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tool+calling+function+calling+anthropic+openai" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=tool+calling+function+calling+anthropic+openai" data-video-id="pRybm9lXW2c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 40m · Real-world architecture</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+langserve+production+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=langchain+langserve+production+deployment" data-video-id="X-AWdfSFCHQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

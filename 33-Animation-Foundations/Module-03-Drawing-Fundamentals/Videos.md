@@ -22,7 +22,7 @@
 ## ⭐ Essential Watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=gesture+drawing+tutorial+animation+line+of+action+beginner" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=gesture+drawing+tutorial+animation+line+of+action+beginner" data-video-id="74HR59yFZ7Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -31,7 +31,7 @@
       <span class="vg-duration">⏱ 20 min · What gesture means and why it matters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=construction+method+figure+drawing+animation+Loomis" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=construction+method+figure+drawing+animation+Loomis" data-video-id="1G17hFQXtBc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -40,7 +40,7 @@
       <span class="vg-duration">⏱ 25 min · Geometric volumes → organic form</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=foreshortening+drawing+tutorial+perspective+figure" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=foreshortening+drawing+tutorial+perspective+figure" data-video-id="7SOFXLl7o3c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -54,7 +54,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aaron+Blaise+drawing+animals+animation+reference+technique" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Aaron+Blaise+drawing+animals+animation+reference+technique" data-video-id="haa7n3UGyDc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -63,7 +63,7 @@
       <span class="vg-duration">⏱ 20 min · Study-then-draw method from a Disney master</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=proportion+figure+drawing+animation+head+body+ratio" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=proportion+figure+drawing+animation+head+body+ratio" data-video-id="SfsFmrJmAOs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Glen+Keane+drawing+gesture+Disney+animator+lecture" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Glen+Keane+drawing+gesture+Disney+animator+lecture" data-video-id="3hKNLHEjMoE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -95,7 +95,7 @@
       <span class="vg-duration">⏱ 25 min · A Disney master on the role of drawing in animation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=gesture+drawing+practice+tips+animators+daily+routine" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=gesture+drawing+practice+tips+animators+daily+routine" data-video-id="m_uPa4mVgJQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

@@ -6,7 +6,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+past+tense+lesson+khaaya+gaya+aaya" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+past+tense+lesson+khaaya+gaya+aaya" data-video-id="L_jWHffIx5E" target="_blank">
   <div class="vg-thumb">⏮️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ne+ergative+case+past+tense+rule" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ne+ergative+case+past+tense+rule" data-video-id="gFMlMIhpPWk" target="_blank">
   <div class="vg-thumb">📌<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+future+tense+lesson+khaaye+ga+gi" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+future+tense+lesson+khaaye+ga+gi" data-video-id="nWMXCFXhWjQ" target="_blank">
   <div class="vg-thumb">⏭️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+continuous+tense+raha+rahi+rahe+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+continuous+tense+raha+rahi+rahe+lesson" data-video-id="cjn8JICV5OI" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+compound+verbs+kar+lena+de+dena+ja+jana" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+compound+verbs+kar+lena+de+dena+ja+jana" data-video-id="KqrPNvgYJqE" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+negation+nahin+na+mat+placement" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+negation+nahin+na+mat+placement" data-video-id="XiQSFTCp4PQ" target="_blank">
   <div class="vg-thumb">🚫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ka+ki+ke+possessive+particles+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+ka+ki+ke+possessive+particles+lesson" data-video-id="sWBSqH9SXAY" target="_blank">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+adjective+agreement+bara+bari+bare+gender" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+adjective+agreement+bara+bari+bare+gender" data-video-id="9pCWo0H7FNE" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conjunctions+aur+lekin+kyonke+agar+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conjunctions+aur+lekin+kyonke+agar+lesson" data-video-id="vHRqnfRHMZ4" target="_blank">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+formal+speech+honorific+requests+karein" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+formal+speech+honorific+requests+karein" data-video-id="MkGvFLtGfRc" target="_blank">
   <div class="vg-thumb">🎩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Advance your Urdu grammar with targeted lessons on past tense, future tense, con
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+B1+intermediate+grammar+complete+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+B1+intermediate+grammar+complete+lesson" data-video-id="QGxHnJFsLXk" target="_blank">
   <div class="vg-thumb">📈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

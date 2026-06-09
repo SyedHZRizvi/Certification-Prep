@@ -19,7 +19,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=social+media+animation+looping+after+effects+tutorial">
+<a class="vg-card" data-video-id="p1h7Tv4JXOQ" href="https://www.youtube.com/results?search_query=social+media+animation+looping+after+effects+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/p1h7Tv4JXOQ/mqdefault.jpg" alt="Social Media Loop AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Creating Perfect Loops for Social Media in After Effects</div>
@@ -27,7 +27,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tiktok+video+specs+export+settings+2024+2025">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tiktok+video+specs+export+settings+2024+2025" data-video-id="FV4d_hGbZGQ">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/FV4d_hGbZGQ/mqdefault.jpg" alt="TikTok Video Specs" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">TikTok and Reels Video Export Settings, Compression Guide</div>
@@ -35,7 +35,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="9bZkp7q19f0" href="https://www.youtube.com/results?search_query=animated+captions+motion+design+social+video+tutorial">
+<a class="vg-card" data-video-id="D3eCO2F9Y8E" href="https://www.youtube.com/results?search_query=animated+captions+motion+design+social+video+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/D3eCO2F9Y8E/mqdefault.jpg" alt="Animated Captions Social" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Animated Captions as Motion Design Elements</div>
@@ -51,7 +51,7 @@ title: "Module 8: Videos, Social Media Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=youtube+thumbnail+ab+testing+CTR+strategy+2024">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=youtube+thumbnail+ab+testing+CTR+strategy+2024" data-video-id="N2ELLEZmRBE">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/N2ELLEZmRBE/mqdefault.jpg" alt="YouTube Thumbnail A/B Test" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">YouTube Thumbnail A/B Testing, CTR Strategy Guide</div>
@@ -59,7 +59,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+mobile+first+multiple+aspect+ratio+workflow">
+<a class="vg-card" data-video-id="PH5FJt22oJA" href="https://www.youtube.com/results?search_query=after+effects+mobile+first+multiple+aspect+ratio+workflow">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/PH5FJt22oJA/mqdefault.jpg" alt="Mobile First AE Workflow" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Mobile-First Animation Workflow, 9:16 to Multi-Format</div>
@@ -67,7 +67,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=social+media+video+color+compression+issue+fix">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=social+media+video+color+compression+issue+fix" data-video-id="7gTmXrJtbQk">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/7gTmXrJtbQk/mqdefault.jpg" alt="Social Media Color Fix" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Fixing Color Shifts After Uploading to Social Media</div>
@@ -75,7 +75,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="9bZkp7q19f0" href="https://www.youtube.com/results?search_query=hook+social+media+video+first+3+seconds+motion+design">
+<a class="vg-card" data-video-id="uRDzRi5O7J0" href="https://www.youtube.com/results?search_query=hook+social+media+video+first+3+seconds+motion+design">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/uRDzRi5O7J0/mqdefault.jpg" alt="Social Video Hook" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The 3-Second Hook, Designing for Social Video Attention</div>
@@ -91,7 +91,7 @@ title: "Module 8: Videos, Social Media Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=linkedin+video+animation+b2b+content+strategy">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=linkedin+video+animation+b2b+content+strategy" data-video-id="8N2_Z2g_PFg">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/8N2_Z2g_PFg/mqdefault.jpg" alt="LinkedIn Video Animation" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">LinkedIn Video Animation, B2B Motion Content Strategy</div>
@@ -99,7 +99,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=youtube+shorts+animation+tutorial+60+second+format">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=youtube+shorts+animation+tutorial+60+second+format" data-video-id="X2s_J6kMSwk">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/X2s_J6kMSwk/mqdefault.jpg" alt="YouTube Shorts Animation" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">YouTube Shorts Animation, Optimizing for the 60-Second Format</div>
@@ -107,7 +107,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=social+media+looping+animation+brand+content+design">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=social+media+looping+animation+brand+content+design" data-video-id="H8vVqMkXMWE">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/H8vVqMkXMWE/mqdefault.jpg" alt="Brand Loop Social Media" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Brand Loop Animations for Social Media</div>
@@ -115,7 +115,7 @@ title: "Module 8: Videos, Social Media Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+media+encoder+social+media+export+presets">
+<a class="vg-card" data-video-id="r7RXMZ_fEOM" href="https://www.youtube.com/results?search_query=after+effects+media+encoder+social+media+export+presets">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/r7RXMZ_fEOM/mqdefault.jpg" alt="Media Encoder Presets" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Adobe Media Encoder, Custom Presets for Every Social Platform</div>

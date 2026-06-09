@@ -38,7 +38,7 @@
       <span class="vg-duration">⏱ 22 min · Networking, reel, timing your job search</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ArtStation+portfolio+tips+animation+game+industry" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ArtStation+portfolio+tips+animation+game+industry" data-video-id="7SOFXLl7o3c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 18 min · Money, creative control, stability compared honestly</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+salary+2024+Disney+Pixar+game+studio+pay" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+salary+2024+Disney+Pixar+game+studio+pay" data-video-id="nFS5MaVS6DI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -70,7 +70,7 @@
       <span class="vg-duration">⏱ 15 min · Junior through director salary reality check</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+networking+industry+tips+conferences+CTN+Annecy" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+networking+industry+tips+conferences+CTN+Annecy" data-video-id="SfsFmrJmAOs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+hiring+process+animation+job+interview+what+to+expect" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+hiring+process+animation+job+interview+what+to+expect" data-video-id="etAIpkdhU9Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 20 min · Reel review, animation test, culture fit</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Riot+Games+game+animation+career+path+League+of+Legends" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Riot+Games+game+animation+career+path+League+of+Legends" data-video-id="LKrP1D8IKQE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💼</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

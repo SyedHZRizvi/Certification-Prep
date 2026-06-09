@@ -20,19 +20,19 @@
 ## ⭐ Essential (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Agent+Builder+overview+google+cloud" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Agent+Builder+overview+google+cloud" data-video-id="LoRD84IaCWI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Vertex AI Agent Builder Overview</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 16 min · The umbrella</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conversational+Agents+dialogflow+CX+flow+page+intent" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conversational+Agents+dialogflow+CX+flow+page+intent" data-video-id="RHuiKiLdO6c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Conversational Agents (Dialogflow CX) Walkthrough</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 18 min · Flows + Pages + Slots</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+function+calling+tutorial+tools+vertex+ai" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+function+calling+tutorial+tools+vertex+ai" data-video-id="NdNTMjmLKlA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Gemini Function Calling Tutorial</p><p class="vg-creator">Google for Developers</p>
@@ -44,7 +44,7 @@
       <p class="vg-title">ADK, Agent Development Kit</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · Open-source agent SDK</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercedes+Benz+MBUX+Gemini+Google+Cloud+voice+assistant" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercedes+Benz+MBUX+Gemini+Google+Cloud+voice+assistant" data-video-id="4yUdO3w12Ok" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Mercedes MBUX × Gemini × Agent Builder</p><p class="vg-creator">Mercedes-Benz / Google</p>
@@ -55,25 +55,25 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Shopify+sidekick+AI+merchant+assistant+vertex" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Shopify+sidekick+AI+merchant+assistant+vertex" data-video-id="q9XcVQXAMFk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Shopify Sidekick Architecture</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 20 min · ADK + Function calling + Search</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+drive+thru+architecture+conversational+agents" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Wendys+FreshAI+drive+thru+architecture+conversational+agents" data-video-id="UDkBPv5SKfU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Wendy's FreshAI, Drive-Thru Deep Dive</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 17 min · State machine + voice</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multi+agent+orchestration+coordinator+specialist+pattern" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=multi+agent+orchestration+coordinator+specialist+pattern" data-video-id="sal78ACtGTc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Multi-Agent Orchestration Patterns</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · Coordinator + sub-agents</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+parallel+function+calling+tool+use+example" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+parallel+function+calling+tool+use+example" data-video-id="7nzVAXYcXRo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Parallel Function Calls on Gemini</p><p class="vg-creator">Google for Developers</p>
@@ -84,25 +84,25 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conversational+Agents+webhook+fulfillment+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conversational+Agents+webhook+fulfillment+tutorial" data-video-id="Z7dn3n6R0KY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Webhooks in Conversational Agents</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · External integration</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conversational+Agents+generative+fallback+LLM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Conversational+Agents+generative+fallback+LLM" data-video-id="cTxmO8KFsLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Generative Fallback</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 10 min · LLM-as-fallback</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+copilot+studio+vs+google+agent+builder+vs+bedrock" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+copilot+studio+vs+google+agent+builder+vs+bedrock" data-video-id="TiHlPbTnMt4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Agent Builder vs Copilot Studio vs Bedrock</p><p class="vg-creator">Cloud Comparison</p>
       <span class="vg-duration">⏱ 18 min · The cross-cloud landscape</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Snap+MyAI+gemini+agent+features+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Snap+MyAI+gemini+agent+features+architecture" data-video-id="oMVe_HcyDPo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Snap MyAI, Agent Features</p><p class="vg-creator">Snap Inc / Google Cloud</p>

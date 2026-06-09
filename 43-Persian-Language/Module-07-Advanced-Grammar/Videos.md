@@ -6,7 +6,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+perfect+tense+rafte+am" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+perfect+tense+rafte+am" data-video-id="MH4DF_eOVG0" target="_blank">
   <div class="vg-thumb">⏱️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+perfect+tense+rafte+budam" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+perfect+tense+rafte+budam" data-video-id="7nJRoM-5r3Y" target="_blank">
   <div class="vg-thumb">🕰️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+conditional+sentences+agar+if" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+conditional+sentences+agar+if" data-video-id="oFbz8HKWK54" target="_blank">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+subjunctive+mood+bayad+shayad" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+subjunctive+mood+bayad+shayad" data-video-id="sVzRKwJf3JY" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+passive+voice+shod+shode" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+passive+voice+shod+shode" data-video-id="H4iYVX0Zixw" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+modal+verbs+bayad+mitavanam+can+must" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+modal+verbs+bayad+mitavanam+can+must" data-video-id="IiBrMhNEyts" target="_blank">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+complex+sentences" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+complex+sentences" data-video-id="Kx8v7Vgxb0s" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+spoken+vs+written+differences+B2" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+spoken+vs+written+differences+B2" data-video-id="4LMuGJvRAd0" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+classical+poetry+grammar+Hafiz+Rumi+analysis" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+classical+poetry+grammar+Hafiz+Rumi+analysis" data-video-id="9mAl_W-PqAs" target="_blank">
   <div class="vg-thumb">🌹<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -96,7 +96,7 @@ Master Persian advanced grammar — perfect tenses, conditionals, subjunctive, p
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+advanced+grammar+B2+complete+overview" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+advanced+grammar+B2+complete+overview" data-video-id="XsLhPcwX0A0" target="_blank">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

@@ -141,7 +141,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+troubleshooting+exam+tips+speed+CKA+2024">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+troubleshooting+exam+tips+speed+CKA+2024" data-video-id="c6SNd6M7-eI">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -151,7 +151,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+journalctl+systemd+kubelet+logs+diagnosis">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+journalctl+systemd+kubelet+logs+diagnosis" data-video-id="8mU2ge59-8A">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -161,7 +161,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+init+container+troubleshoot+debug+CKA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+init+container+troubleshoot+debug+CKA" data-video-id="5oGZhF5PEsE">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -171,7 +171,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+metrics+server+kubectl+top+nodes+pods+install">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+metrics+server+kubectl+top+nodes+pods+install" data-video-id="6v_BDHIgOY8">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -181,7 +181,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ephemeral+debug+container+kubectl+debug+pod">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ephemeral+debug+container+kubectl+debug+pod" data-video-id="Q04lQ8s1TCM">
   <div class="vg-thumb">🔬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

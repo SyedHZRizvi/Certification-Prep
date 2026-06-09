@@ -21,7 +21,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+for+beginners+family+members+body+parts+Lucy" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+for+beginners+family+members+body+parts+Lucy" data-video-id="n_MJA8bPz2Y" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -31,7 +31,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=human+body+parts+English+vocabulary+beginners+labeled" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=human+body+parts+English+vocabulary+beginners+labeled" data-video-id="O_sJE5u2qOA" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+action+verbs+list+100+most+used" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+action+verbs+list+100+most+used" data-video-id="l0byIGBhvKs" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -51,7 +51,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+food+and+drink+beginners+lesson+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+food+and+drink+beginners+lesson+2024" data-video-id="kHPCW2-hoKk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+adjectives+opposites+vocabulary+list+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+adjectives+opposites+vocabulary+list+beginners" data-video-id="S_SfpwnVkFk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -77,7 +77,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+vocabulary+learning+method+English" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+vocabulary+learning+method+English" data-video-id="eVajQPuRmk8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -87,7 +87,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=household+items+vocabulary+English+home+things+names" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=household+items+vocabulary+English+home+things+names" data-video-id="tR3QL8XHwbU" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -97,7 +97,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+time+expressions+yesterday+today+tomorrow+vocabulary" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+time+expressions+yesterday+today+tomorrow+vocabulary" data-video-id="WPPPFqsECz0" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+prefixes+re+un+pre+dis+vocabulary+building" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+prefixes+re+un+pre+dis+vocabulary+building" data-video-id="yrpMFcSqRHQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -117,7 +117,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=word+families+English+vocabulary+happy+happiness+happily" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=word+families+English+vocabulary+happy+happiness+happily" data-video-id="XNkjDuSVXiA" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -133,7 +133,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+in+use+A2+conversation+daily+life" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+in+use+A2+conversation+daily+life" data-video-id="T-o1yHSq-oE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -143,7 +143,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+music+songs+learn+words+through+music" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vocabulary+music+songs+learn+words+through+music" data-video-id="QMt55Fz3oA8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -153,7 +153,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+podcast+slow+clear+A1+A2+level" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+podcast+slow+clear+A1+A2+level" data-video-id="pLqipRXDxAo" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

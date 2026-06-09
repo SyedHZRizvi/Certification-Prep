@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 18 min · Real-world repair</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DistroTube+Linux+distro+comparison+2026" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DistroTube+Linux+distro+comparison+2026" data-video-id="dGGQngpMWpw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

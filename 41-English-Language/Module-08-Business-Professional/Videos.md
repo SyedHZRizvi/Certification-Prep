@@ -19,7 +19,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+cover+letter+English+job+application" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+cover+letter+English+job+application" data-video-id="y3oi4bGIRgE" target="_blank">
   <div class="vg-thumb">📄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=business+presentation+English+opening+signposting+closing" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=business+presentation+English+opening+signposting+closing" data-video-id="JbIY5AFMGGE" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=negotiation+language+English+business+phrases" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=negotiation+language+English+business+phrases" data-video-id="7s3Dj2MzYzk" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -49,7 +49,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+writing+task+2+essay+structure+band+7" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+writing+task+2+essay+structure+band+7" data-video-id="pVCrEXJt_Rs" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -59,7 +59,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=LinkedIn+profile+English+professional+tips" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=LinkedIn+profile+English+professional+tips" data-video-id="dJGMFVy7o0M" target="_blank">
   <div class="vg-thumb">💼<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -69,7 +69,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+CV+resume+English+professional+tips" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+CV+resume+English+professional+tips" data-video-id="Tt08KmFfIYQ" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=meeting+chairmanship+English+running+a+meeting" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=meeting+chairmanship+English+running+a+meeting" data-video-id="lxMVHrNh5T0" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -89,7 +89,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=persuasive+language+English+business+proposal+writing" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=persuasive+language+English+business+proposal+writing" data-video-id="cPFGeEJFl0M" target="_blank">
   <div class="vg-thumb">💡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

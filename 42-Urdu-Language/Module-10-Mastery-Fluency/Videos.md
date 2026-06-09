@@ -6,7 +6,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+pronunciation+qaf+ain+khe+ghain+advanced" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+pronunciation+qaf+ain+khe+ghain+advanced" data-video-id="U8LpUfRk33M" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+register+switching+formal+informal+aap+tum" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+register+switching+formal+informal+aap+tum" data-video-id="GWRCdRqJbSs" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+newspaper+reading+jang+dawn+tutorial" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+newspaper+reading+jang+dawn+tutorial" data-video-id="YNJqBYNJoiw" target="_blank">
   <div class="vg-thumb">📰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -42,7 +42,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+storytelling+narrative+techniques" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+storytelling+narrative+techniques" data-video-id="fHkYPzMnAoo" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -52,7 +52,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+debate+argumentation+mubahasa+phrases" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+debate+argumentation+mubahasa+phrases" data-video-id="t4XyvPPkAJk" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -62,7 +62,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+urdu+radio+podcast+listening+practice" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+urdu+radio+podcast+listening+practice" data-video-id="XsgrLEpVBiY" target="_blank">
   <div class="vg-thumb">📻<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -78,7 +78,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+drama+Humsafar+HUM+TV+urdu" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+drama+Humsafar+HUM+TV+urdu" data-video-id="MiPBUuWRsVA" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -88,7 +88,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+classical+urdu+songs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+classical+urdu+songs" data-video-id="v3QIGU-uF5k" target="_blank">
   <div class="vg-thumb">🎸<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -98,7 +98,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+rhetoric+khitabat+eloquence+public+speaking" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+rhetoric+khitabat+eloquence+public+speaking" data-video-id="SHWQtPqCwTM" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

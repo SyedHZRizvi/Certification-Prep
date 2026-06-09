@@ -38,7 +38,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubeadm+install+kubernetes+cluster+step+by+step+KodeKloud" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubeadm+install+kubernetes+cluster+step+by+step+KodeKloud" data-video-id="Ro2qeYeisZQ" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #0ea5e9, #6366f1);">
       <span>☸</span>
       <div class="vg-play">▶</div>
@@ -51,7 +51,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+backup+restore+kubernetes+CKA+etcdctl" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+backup+restore+kubernetes+CKA+etcdctl" data-video-id="ZdgmJYT4Xfk" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #dc2626, #9333ea);">
       <span>💾</span>
       <div class="vg-play">▶</div>
@@ -96,7 +96,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+control+plane+worker+node+components+IBM+Technology" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+control+plane+worker+node+components+IBM+Technology" data-video-id="90kZRyPcRZw" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #1d4ed8, #0ea5e9);">
       <span>🏛️</span>
       <div class="vg-play">▶</div>
@@ -109,7 +109,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+TLS+certificates+PKI+explained+CKA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+TLS+certificates+PKI+explained+CKA" data-video-id="gXz4cq3PKdg" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #15803d, #4f46e5);">
       <span>🔐</span>
       <div class="vg-play">▶</div>
@@ -122,7 +122,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+static+pods+explained+manifest+directory" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+static+pods+explained+manifest+directory" data-video-id="kgOfkBhDyL0" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #92400e, #b45309);">
       <span>📄</span>
       <div class="vg-play">▶</div>
@@ -135,7 +135,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+cluster+installation+kubeadm+Kunal+Kushwaha" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+cluster+installation+kubeadm+Kunal+Kushwaha" data-video-id="KVON1lMkSqk" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #7c3aed, #c026d3);">
       <span>⚙️</span>
       <div class="vg-play">▶</div>
@@ -148,7 +148,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+high+availability+HA+cluster+stacked+external+etcd" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+high+availability+HA+cluster+stacked+external+etcd" data-video-id="rQOrNRqSMEI" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #0f766e, #0891b2);">
       <span>🏗️</span>
       <div class="vg-play">▶</div>
@@ -167,7 +167,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+raft+consensus+algorithm+explained+distributed" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+raft+consensus+algorithm+explained+distributed" data-video-id="vYwT__nIXWY" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #991b1b, #7c3aed);">
       <span>🔬</span>
       <div class="vg-play">▶</div>
@@ -180,7 +180,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=containerd+container+runtime+interface+CRI+Kubernetes+Rawkode" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=containerd+container+runtime+interface+CRI+Kubernetes+Rawkode" data-video-id="m1_IXhfa30k" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #1e3a5f, #2563eb);">
       <span>📦</span>
       <div class="vg-play">▶</div>
@@ -193,7 +193,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubelet+internals+how+it+works+Kubernetes+deep+dive" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubelet+internals+how+it+works+Kubernetes+deep+dive" data-video-id="F-p_7XguqXk" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #166534, #15803d);">
       <span>🔩</span>
       <div class="vg-play">▶</div>
@@ -206,7 +206,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+certificate+signing+request+CSR+approval+CKA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+certificate+signing+request+CSR+approval+CKA" data-video-id="B5CbVBmGjrw" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #78350f, #d97706);">
       <span>📜</span>
       <div class="vg-play">▶</div>
@@ -219,7 +219,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+upgrade+kubeadm+step+by+step+CKA+exam" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+upgrade+kubeadm+step+by+step+CKA+exam" data-video-id="z_w3me8tmJA" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #1e1b4b, #4338ca);">
       <span>⬆️</span>
       <div class="vg-play">▶</div>

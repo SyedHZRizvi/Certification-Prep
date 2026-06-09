@@ -23,7 +23,7 @@ Start here. These videos cover the core concepts that appear on almost every CKA
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+lifecycle+phases+CKA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+lifecycle+phases+CKA" data-video-id="lFb_WA-4zTM" target="_blank" rel="noopener">
   <div class="vg-thumb">🚀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -33,7 +33,7 @@ Start here. These videos cover the core concepts that appear on almost every CKA
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+deployments+rolling+update+rollback+CKA+exam">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+deployments+rolling+update+rollback+CKA+exam" data-video-id="mNK14yXIZF4" target="_blank" rel="noopener">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@ Start here. These videos cover the core concepts that appear on almost every CKA
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+taints+tolerations+CKA+exam+tutorial">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+taints+tolerations+CKA+exam+tutorial" data-video-id="mo8ZaJFJjSU" target="_blank" rel="noopener">
   <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -53,7 +53,7 @@ Start here. These videos cover the core concepts that appear on almost every CKA
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+node+affinity+nodeSelector+scheduling+CKA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+node+affinity+nodeSelector+scheduling+CKA" data-video-id="I3TVjLFQAT8" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -63,7 +63,7 @@ Start here. These videos cover the core concepts that appear on almost every CKA
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+resource+requests+limits+LimitRange+ResourceQuota+CKA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+resource+requests+limits+LimitRange+ResourceQuota+CKA" data-video-id="4QyecOoPsGU" target="_blank" rel="noopener">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -81,7 +81,7 @@ Solidify your understanding of workload controllers and advanced scheduling patt
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+statefulset+tutorial+ordered+pods+persistent+volumes">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+statefulset+tutorial+ordered+pods+persistent+volumes" data-video-id="pPQKAR1pA9U" target="_blank" rel="noopener">
   <div class="vg-thumb">🗄️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@ Solidify your understanding of workload controllers and advanced scheduling patt
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+daemonset+tutorial+log+collection+monitoring+CKA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+daemonset+tutorial+log+collection+monitoring+CKA" data-video-id="cdkHFDdBsXE" target="_blank" rel="noopener">
   <div class="vg-thumb">🔍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -101,7 +101,7 @@ Solidify your understanding of workload controllers and advanced scheduling patt
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jobs+cronjobs+tutorial+batch+CKA+exam">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jobs+cronjobs+tutorial+batch+CKA+exam" data-video-id="GGFKhqBzuFo" target="_blank" rel="noopener">
   <div class="vg-thumb">⏰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -111,7 +111,7 @@ Solidify your understanding of workload controllers and advanced scheduling patt
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+scheduler+how+it+works+scheduling+algorithm+explained">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+scheduler+how+it+works+scheduling+algorithm+explained" data-video-id="rDCWxkvPlBs" target="_blank" rel="noopener">
   <div class="vg-thumb">🧩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -121,7 +121,7 @@ Solidify your understanding of workload controllers and advanced scheduling patt
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+replicaset+vs+deployment+difference+CKA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+replicaset+vs+deployment+difference+CKA" data-video-id="6D7iFkESmRo" target="_blank" rel="noopener">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -139,7 +139,7 @@ Deepen your understanding with these advanced topics and hands-on walkthroughs.
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+custom+scheduler+multiple+schedulers+tutorial">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+custom+scheduler+multiple+schedulers+tutorial" data-video-id="tgFRW8FJGZE" target="_blank" rel="noopener">
   <div class="vg-thumb">🔧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -149,7 +149,7 @@ Deepen your understanding with these advanced topics and hands-on walkthroughs.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+disruption+budget+PDB+workloads+scheduling">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+pod+disruption+budget+PDB+workloads+scheduling" data-video-id="3qgSrAFmGPU" target="_blank" rel="noopener">
   <div class="vg-thumb">🛡️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -159,7 +159,7 @@ Deepen your understanding with these advanced topics and hands-on walkthroughs.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+OOMKilled+CPU+throttling+resource+troubleshooting">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+OOMKilled+CPU+throttling+resource+troubleshooting" data-video-id="xfDQHBzgwoQ" target="_blank" rel="noopener">
   <div class="vg-thumb">🔥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

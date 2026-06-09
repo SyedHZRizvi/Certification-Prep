@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · Why CoT in evals matters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+building+evals+for+claude+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="9M4MIShKBCs" href="https://www.youtube.com/results?search_query=Anthropic+building+evals+for+claude+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Promptfoo+tutorial+prompt+A+B+testing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3v0EJqnFJJI" href="https://www.youtube.com/results?search_query=Promptfoo+tutorial+prompt+A+B+testing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · YAML-driven evals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenAI+Evals+framework+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XdiwKHIqg4A" href="https://www.youtube.com/results?search_query=OpenAI+Evals+framework+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · The open-source framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=judging+LLM+as+judge+MT+bench+chatbot+arena+paper" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lfV0MsGIU8o" href="https://www.youtube.com/results?search_query=judging+LLM+as+judge+MT+bench+chatbot+arena+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Braintrust+LLM+evals+platform+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3wAON0Lqviw" href="https://www.youtube.com/results?search_query=Braintrust+LLM+evals+platform+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 18 min · Datasets + judges + dashboards</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=HELM+holistic+evaluation+language+models+stanford" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="c_nCjkM11S0" href="https://www.youtube.com/results?search_query=HELM+holistic+evaluation+language+models+stanford" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

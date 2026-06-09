@@ -19,7 +19,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+accent+reduction+Pakistani+speakers+pronunciation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+accent+reduction+Pakistani+speakers+pronunciation" data-video-id="3JZ_D3ELwOQ" target="_blank">
   <div class="vg-thumb">🎙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+fluency+filler+words+hesitation+phrases+natural" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+fluency+filler+words+hesitation+phrases+natural" data-video-id="UGVaBVGWfkE" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+debate+skills+argument+structure+techniques" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+debate+skills+argument+structure+techniques" data-video-id="pCr-BW8LpDs" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -49,7 +49,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+TOEFL+academic+writing+vocabulary+tips" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+TOEFL+academic+writing+vocabulary+tips" data-video-id="y1MjUtGT6GA" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -59,7 +59,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+storytelling+techniques+native+speakers" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+storytelling+techniques+native+speakers" data-video-id="OQQItDR3XL4" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -69,7 +69,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+mistakes+Urdu+speakers+Pakistani" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+mistakes+Urdu+speakers+Pakistani" data-video-id="C7ytGkGv-zc" target="_blank">
   <div class="vg-thumb">🔧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=STAR+method+interview+English+examples" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=STAR+method+interview+English+examples" data-video-id="pInq-GLnAco" target="_blank">
   <div class="vg-thumb">⭐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -89,7 +89,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=reading+BBC+newspaper+English+comprehension+advanced" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=reading+BBC+newspaper+English+comprehension+advanced" data-video-id="aG6OAOJqwkY" target="_blank">
   <div class="vg-thumb">📰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

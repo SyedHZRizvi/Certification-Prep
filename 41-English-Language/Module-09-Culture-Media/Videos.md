@@ -19,7 +19,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=100+most+common+English+idioms+explained" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=100+most+common+English+idioms+explained" data-video-id="Vg3FtKYmm2E" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=British+vs+American+English+differences+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=British+vs+American+English+differences+vocabulary" data-video-id="ZB0CQz5qQQ8" target="_blank">
   <div class="vg-thumb">🌍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=British+sarcasm+humour+irony+explained+for+learners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=British+sarcasm+humour+irony+explained+for+learners" data-video-id="PZRbDmgADc0" target="_blank">
   <div class="vg-thumb">😏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -49,7 +49,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+proverbs+meanings+examples" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+proverbs+meanings+examples" data-video-id="xS4kLRvzFdY" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -59,7 +59,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Shakespeare+famous+quotes+meaning+explained" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Shakespeare+famous+quotes+meaning+explained" data-video-id="P2dmHj8iWA8" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -69,7 +69,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=formal+informal+register+English+language" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=formal+informal+register+English+language" data-video-id="SHyOWmDG7C8" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+English+through+songs+music+lyrics" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+English+through+songs+music+lyrics" data-video-id="Qf_T8bqLSdk" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -89,7 +89,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+CNN+news+English+vocabulary+media" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+CNN+news+English+vocabulary+media" data-video-id="ZmTgXUIWqww" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

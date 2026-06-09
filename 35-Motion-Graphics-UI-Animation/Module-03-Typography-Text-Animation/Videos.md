@@ -19,7 +19,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kinetic+typography+after+effects+tutorial+beginners">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kinetic+typography+after+effects+tutorial+beginners" data-video-id="Px3tBj1h5jc">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/Px3tBj1h5jc/mqdefault.jpg" alt="Kinetic Typography AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Kinetic Typography in After Effects, Full Tutorial</div>
@@ -27,7 +27,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=blur+scale+opacity+text+reveal+after+effects">
+<a class="vg-card" data-video-id="D4xDCUBzQqI" href="https://www.youtube.com/results?search_query=blur+scale+opacity+text+reveal+after+effects">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/D4xDCUBzQqI/mqdefault.jpg" alt="Blur Scale Opacity Reveal" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Blur Scale Opacity Text Reveal, Apple Style</div>
@@ -35,7 +35,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=stranger+things+title+sequence+after+effects+recreation">
+<a class="vg-card" data-video-id="o0hOnVEzBHc" href="https://www.youtube.com/results?search_query=stranger+things+title+sequence+after+effects+recreation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/o0hOnVEzBHc/mqdefault.jpg" alt="Stranger Things Title AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Recreating the Stranger Things Title Sequence in After Effects</div>
@@ -51,7 +51,7 @@ title: "Module 3: Videos, Typography & Text Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=apple+keynote+text+animation+after+effects+recreation">
+<a class="vg-card" data-video-id="xjgqz7_6FQQ" href="https://www.youtube.com/results?search_query=apple+keynote+text+animation+after+effects+recreation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/xjgqz7_6FQQ/mqdefault.jpg" alt="Apple Keynote Animation AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Recreating Apple Keynote Text Animations in After Effects</div>
@@ -59,7 +59,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=sports+graphics+lower+third+after+effects+template">
+<a class="vg-card" data-video-id="LWOLp8JQIJM" href="https://www.youtube.com/results?search_query=sports+graphics+lower+third+after+effects+template">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/LWOLp8JQIJM/mqdefault.jpg" alt="Sports Lower Third AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sports Broadcast Lower-Third Animation in After Effects</div>
@@ -67,7 +67,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+text+animation+sync+music+audio">
+<a class="vg-card" data-video-id="KXFfv4EEwJ4" href="https://www.youtube.com/results?search_query=after+effects+text+animation+sync+music+audio">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/KXFfv4EEwJ4/mqdefault.jpg" alt="Text Sync to Audio AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Syncing Text Animations to Music in After Effects</div>
@@ -75,7 +75,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=variable+fonts+after+effects+weight+animation">
+<a class="vg-card" data-video-id="g5bLPpBDkbA" href="https://www.youtube.com/results?search_query=variable+fonts+after+effects+weight+animation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/g5bLPpBDkbA/mqdefault.jpg" alt="Variable Fonts AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Variable Fonts in After Effects, Animating Font Weight</div>
@@ -91,7 +91,7 @@ title: "Module 3: Videos, Typography & Text Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=typography+motion+design+history+graphic+design">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=typography+motion+design+history+graphic+design" data-video-id="XqXxKxvSUwI">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/XqXxKxvSUwI/mqdefault.jpg" alt="Typography Motion History" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">History of Motion Typography, From Saul Bass to Today</div>
@@ -99,7 +99,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+character+offset+text+scramble+effect">
+<a class="vg-card" data-video-id="YQi6NKmIRSA" href="https://www.youtube.com/results?search_query=after+effects+character+offset+text+scramble+effect">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/YQi6NKmIRSA/mqdefault.jpg" alt="Character Scramble AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Character Scramble Effect in After Effects</div>
@@ -107,7 +107,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+kinetic+typography+portfolio+piece+build">
+<a class="vg-card" data-video-id="x8hD5F53UEY" href="https://www.youtube.com/results?search_query=after+effects+kinetic+typography+portfolio+piece+build">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/x8hD5F53UEY/mqdefault.jpg" alt="Kinetic Typography Portfolio" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Build a Kinetic Typography Portfolio Piece</div>
@@ -115,7 +115,7 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=font+licensing+motion+design+broadcast+commercial">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=font+licensing+motion+design+broadcast+commercial" data-video-id="aStmb7SFJNE">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/aStmb7SFJNE/mqdefault.jpg" alt="Font Licensing Motion" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Font Licensing for Motion Designers, What You Need to Know</div>

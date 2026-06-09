@@ -32,7 +32,7 @@
       <span class="vg-duration">⏱ ~5h total · The canonical free RAG course</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+advanced+rag+pipelines" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=llama+index+advanced+rag+pipelines" data-video-id="WL7V9JUy2sE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 35m · Retrieval tokens learned</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+long+context+attention" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+long+context+attention" data-video-id="vcaBGHiwTEI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

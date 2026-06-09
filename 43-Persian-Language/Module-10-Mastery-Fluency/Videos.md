@@ -6,7 +6,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+accent+reduction+native+pronunciation+C2" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+accent+reduction+native+pronunciation+C2" data-video-id="gCFqLhFZWAA" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+oratory+public+speaking+khetabat" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+oratory+public+speaking+khetabat" data-video-id="TrB4kB2HN3k" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+storytelling+dastan+gooi+narrative" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+storytelling+dastan+gooi+narrative" data-video-id="0GYbvCQDOE8" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shadowing+fluency+advanced+native" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shadowing+fluency+advanced+native" data-video-id="4ZCE-K0qn2E" target="_blank">
   <div class="vg-thumb">🔊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Persian+news+broadcast+authentic+C2+listening" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Persian+news+broadcast+authentic+C2+listening" data-video-id="r_eL_6MFdIQ" target="_blank">
   <div class="vg-thumb">📻<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+debate+munazere+advanced+language" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+debate+munazere+advanced+language" data-video-id="MobnmFUbPcE" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Shajarian+Mohammad+Reza+Persian+classical+music+lyrics" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Shajarian+Mohammad+Reza+Persian+classical+music+lyrics" data-video-id="R3Q7TfYBEQk" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Asghar+Farhadi+A+Separation+Persian+dialogue+analysis" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Asghar+Farhadi+A+Separation+Persian+dialogue+analysis" data-video-id="2BuyGb_l2Dw" target="_blank">
   <div class="vg-thumb">🎬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+interference+patterns+English+mistakes" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+interference+patterns+English+mistakes" data-video-id="lVF6tThQ70I" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -96,7 +96,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CEFR+C2+Persian+Farsi+assessment+self+evaluation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CEFR+C2+Persian+Farsi+assessment+self+evaluation" data-video-id="zVq0FXJF_xQ" target="_blank">
   <div class="vg-thumb">✅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+language+exchange+partner+Iranian+community" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+language+exchange+partner+Iranian+community" data-video-id="Z0GFRcFm-aY" target="_blank">
   <div class="vg-thumb">🌐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

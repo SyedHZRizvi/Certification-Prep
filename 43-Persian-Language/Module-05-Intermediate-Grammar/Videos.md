@@ -6,7 +6,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+tense+simple+conjugation+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+tense+simple+conjugation+lesson" data-video-id="DXnz3q_Xcb8" target="_blank">
   <div class="vg-thumb">⏪<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+stem+present+stem+verb+forms" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+past+stem+present+stem+verb+forms" data-video-id="rEmqFU7b_WA" target="_blank">
   <div class="vg-thumb">🌱<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+future+tense+khāham+formal+colloquial" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+future+tense+khāham+formal+colloquial" data-video-id="LuM4IiJlmQE" target="_blank">
   <div class="vg-thumb">⏩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+continuous+tense+daram+mi+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+continuous+tense+daram+mi+lesson" data-video-id="VF0hFe4MjLg" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+bayad+modal+verb+must+should+grammar" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+bayad+modal+verb+must+should+grammar" data-video-id="kDpOi_8WKFE" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+conditional+sentences+agar+if+then" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+conditional+sentences+agar+if+then" data-video-id="mTY_eFp8qxU" target="_blank">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+compound+verbs+kardan+shodan+list" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+compound+verbs+kardan+shodan+list" data-video-id="nY9x0C2-NWM" target="_blank">
   <div class="vg-thumb">🔧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+that+who+which" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+relative+clauses+ke+that+who+which" data-video-id="bQf86FBHOGI" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=formal+vs+colloquial+Persian+Farsi+spoken+written+difference" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=formal+vs+colloquial+Persian+Farsi+spoken+written+difference" data-video-id="E-hqrBvvvxs" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+prepositions+dar+ba+az+be+baraye" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+prepositions+dar+ba+az+be+baraye" data-video-id="HVuPsHEeH8s" target="_blank">
   <div class="vg-thumb">📍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Build fluency with these intermediate grammar video resources covering tenses, m
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+B1+intermediate+grammar+complete+review" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+B1+intermediate+grammar+complete+review" data-video-id="G3J2OvQBrHo" target="_blank">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

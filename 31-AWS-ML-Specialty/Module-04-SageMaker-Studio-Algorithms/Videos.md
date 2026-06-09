@@ -21,7 +21,7 @@
 ## ⭐ Essential (~90 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Studio+walkthrough+2024+complete+tour" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Nnd4nFvXPXU" href="https://www.youtube.com/results?search_query=SageMaker+Studio+walkthrough+2024+complete+tour" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🖥️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -30,7 +30,7 @@
       <span class="vg-duration">⏱ 22 min · Domains, profiles, apps</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+built+in+algorithms+choosing+the+right+one" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="V6XO7wS8xJE" href="https://www.youtube.com/results?search_query=SageMaker+built+in+algorithms+choosing+the+right+one" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧠</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 16 min · Gradient boosting from scratch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+XGBoost+hyperparameter+tuning+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mFpRTmjFxOA" href="https://www.youtube.com/results?search_query=SageMaker+XGBoost+hyperparameter+tuning+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎛️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 18 min · Anomaly detection</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+DeepAR+time+series+forecasting+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EzULxvOt4Dc" href="https://www.youtube.com/results?search_query=SageMaker+DeepAR+time+series+forecasting+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

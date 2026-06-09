@@ -6,7 +6,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Ghalib+poetry+urdu+explanation+in+english" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Ghalib+poetry+urdu+explanation+in+english" data-video-id="8pPFBgDiFSI" target="_blank">
   <div class="vg-thumb">🖋️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Faiz+Ahmed+Faiz+urdu+poetry+translation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Faiz+Ahmed+Faiz+urdu+poetry+translation" data-video-id="HHm6qz28XSA" target="_blank">
   <div class="vg-thumb">🌹<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+ghazal+form+explained+matla+maqta" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+ghazal+form+explained+matla+maqta" data-video-id="TQJ5JsvO5kI" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+proverbs+zarb+ul+amsal+with+meaning" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+proverbs+zarb+ul+amsal+with+meaning" data-video-id="p2mzNhPRWkU" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mushaira+urdu+poetry+event+tradition" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mushaira+urdu+poetry+event+tradition" data-video-id="eqDoH0cJKGk" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -62,7 +62,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+urdu+songs+lyrics" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+urdu+songs+lyrics" data-video-id="SUQnB86xFC4" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -72,7 +72,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+idioms+muhavare+list+meanings" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+idioms+muhavare+list+meanings" data-video-id="F2dkOqnfNKs" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -88,7 +88,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Fahmida+Riaz+urdu+poet+feminist" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Fahmida+Riaz+urdu+poet+feminist" data-video-id="gJfNUk1T7ME" target="_blank">
   <div class="vg-thumb">✊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -98,7 +98,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lahori+vs+karachi+urdu+dialect+difference" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lahori+vs+karachi+urdu+dialect+difference" data-video-id="qNHqjHSqJnI" target="_blank">
   <div class="vg-thumb">🗺️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -108,7 +108,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=bollywood+songs+urdu+poetry+classical" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=bollywood+songs+urdu+poetry+classical" data-video-id="X2VlKG2gGfQ" target="_blank">
   <div class="vg-thumb">🎬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

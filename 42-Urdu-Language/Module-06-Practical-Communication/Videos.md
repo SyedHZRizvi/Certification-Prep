@@ -6,7 +6,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+office+workplace+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+office+workplace+vocabulary" data-video-id="PqNsqTiMiA0" target="_blank">
   <div class="vg-thumb">🏢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+doctor+hospital+phrases" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+doctor+hospital+phrases" data-video-id="cDiEPMkDVeA" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing" data-video-id="yFWqAFzRxHw" target="_blank">
   <div class="vg-thumb">✉️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -42,7 +42,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistani+wedding+vocabulary+urdu" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistani+wedding+vocabulary+urdu" data-video-id="RKfFl3fBkSk" target="_blank">
   <div class="vg-thumb">💍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -52,7 +52,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+expressing+emotions+feelings" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+expressing+emotions+feelings" data-video-id="d5vANH4LsKA" target="_blank">
   <div class="vg-thumb">❤️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -62,7 +62,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=eid+urdu+greetings+cultural" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=eid+urdu+greetings+cultural" data-video-id="eqDoH0cJKGk" target="_blank">
   <div class="vg-thumb">🌙<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -78,7 +78,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+negotiation+phrases+business" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+negotiation+phrases+business" data-video-id="vw4VGrqPHOs" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -88,7 +88,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+complaint+customer+service+phrases" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+complaint+customer+service+phrases" data-video-id="WfS5rr3EQZY" target="_blank">
   <div class="vg-thumb">📢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

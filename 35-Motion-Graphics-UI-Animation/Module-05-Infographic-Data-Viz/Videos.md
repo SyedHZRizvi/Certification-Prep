@@ -19,7 +19,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=animated+infographic+after+effects+data+visualization">
+<a class="vg-card" data-video-id="v9IbYtGcGq4" href="https://www.youtube.com/results?search_query=animated+infographic+after+effects+data+visualization">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/v9IbYtGcGq4/mqdefault.jpg" alt="Infographic AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Animated Infographic in After Effects, Data Story</div>
@@ -27,7 +27,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+animated+pie+chart+donut+chart">
+<a class="vg-card" data-video-id="YAI8JlF_2SY" href="https://www.youtube.com/results?search_query=after+effects+animated+pie+chart+donut+chart">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/YAI8JlF_2SY/mqdefault.jpg" alt="Pie Chart AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Animated Pie Chart and Donut Chart in After Effects</div>
@@ -35,7 +35,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=aejuice+motion+bro+after+effects+workflow+infographic">
+<a class="vg-card" data-video-id="9TZ5lSnJXdg" href="https://www.youtube.com/results?search_query=aejuice+motion+bro+after+effects+workflow+infographic">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/9TZ5lSnJXdg/mqdefault.jpg" alt="AEJuice Motion Bro" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">AEJuice + Motion Bro Workflow for Infographics</div>
@@ -51,7 +51,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+animated+line+graph+chart+tutorial">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+animated+line+graph+chart+tutorial" data-video-id="UODOQaLuR6U">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/UODOQaLuR6U/mqdefault.jpg" alt="Line Graph AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Animated Line Graph in After Effects, Trim Paths Technique</div>
@@ -59,7 +59,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+map+animation+route+news+graphics">
+<a class="vg-card" data-video-id="3p5HLGtHKrA" href="https://www.youtube.com/results?search_query=after+effects+map+animation+route+news+graphics">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3p5HLGtHKrA/mqdefault.jpg" alt="Map Animation AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Map Animation in After Effects, Route and Zoom Techniques</div>
@@ -67,7 +67,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=data+storytelling+animation+design+principles">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=data+storytelling+animation+design+principles" data-video-id="2mVFJixMdH0">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/2mVFJixMdH0/mqdefault.jpg" alt="Data Storytelling Design" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Data Storytelling for Animated Graphics, Structure and Pacing</div>
@@ -75,7 +75,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+waffle+chart+grid+animation+expression">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+waffle+chart+grid+animation+expression" data-video-id="0mBqXm8R2V4">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/0mBqXm8R2V4/mqdefault.jpg" alt="Waffle Chart AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Animated Waffle Chart in After Effects with Expressions</div>
@@ -99,7 +99,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+news+graphics+television+animation+breakdown">
+<a class="vg-card" data-video-id="vRJFQ6mB7kg" href="https://www.youtube.com/results?search_query=after+effects+news+graphics+television+animation+breakdown">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/vRJFQ6mB7kg/mqdefault.jpg" alt="News Graphics Breakdown" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Professional News Graphics Breakdown, CNN/BBC Style</div>
@@ -107,7 +107,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+infographic+master+controller+data+driven">
+<a class="vg-card" data-video-id="5VwMr9V5_Zs" href="https://www.youtube.com/results?search_query=after+effects+infographic+master+controller+data+driven">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/5VwMr9V5_Zs/mqdefault.jpg" alt="Data Driven Infographic AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Data-Driven Infographics with Master Controllers in AE</div>
@@ -115,7 +115,7 @@ title: "Module 5: Videos, Infographic & Data Viz"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+choropleth+map+color+fill+regions">
+<a class="vg-card" data-video-id="VzpMN9UQHJ4" href="https://www.youtube.com/results?search_query=after+effects+choropleth+map+color+fill+regions">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/VzpMN9UQHJ4/mqdefault.jpg" alt="Choropleth Map AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Animated Choropleth Map in After Effects</div>

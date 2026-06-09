@@ -10,7 +10,7 @@ title: "Module 7 Videos: Color Grading"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=log+vs+linear+color+science+VFX+compositing+explained">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=log+vs+linear+color+science+VFX+compositing+explained" data-video-id="A1MiH5GwcVA" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Log vs Linear: Color Science for Compositors</div>
@@ -19,7 +19,7 @@ title: "Module 7 Videos: Color Grading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ACES+color+management+explained+film+pipeline+ACEScg">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ACES+color+management+explained+film+pipeline+ACEScg" data-video-id="3VoaWpfMDdI" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">ACES Color Management Explained: The Film Pipeline Standard</div>
@@ -28,7 +28,7 @@ title: "Module 7 Videos: Color Grading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=primary+color+correction+three+way+color+corrector+shadows+midtones+highlights">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=primary+color+correction+three+way+color+corrector+shadows+midtones+highlights" data-video-id="pDJoMSjxeck" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Primary Color Correction: Three-Way Color Corrector Deep Dive</div>
@@ -37,7 +37,7 @@ title: "Module 7 Videos: Color Grading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=shot+matching+color+grading+tutorial+parade+scope+vectorscope">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=shot+matching+color+grading+tutorial+parade+scope+vectorscope" data-video-id="JR8JO7mQ3nA" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Shot Matching in Color Grading: Using Parade and Vectorscopes</div>
@@ -54,7 +54,7 @@ title: "Module 7 Videos: Color Grading"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=LUT+lookup+table+explained+1D+3D+LUT+color+grading">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=LUT+lookup+table+explained+1D+3D+LUT+color+grading" data-video-id="WnL37OTIS6k" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">LUTs Explained: 1D vs 3D Look-Up Tables in Color Grading</div>
@@ -63,7 +63,7 @@ title: "Module 7 Videos: Color Grading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=secondary+color+correction+qualifier+power+window+DaVinci+Resolve">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=secondary+color+correction+qualifier+power+window+DaVinci+Resolve" data-video-id="jBVDEkRmzxo" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Secondary Color Correction: Qualifiers and Power Windows</div>
@@ -72,7 +72,7 @@ title: "Module 7 Videos: Color Grading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Oppenheimer+color+design+film+look+analysis+cinema+VFX">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Oppenheimer+color+design+film+look+analysis+cinema+VFX" data-video-id="CnrX2bsGP5c" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Oppenheimer: Color Design Analysis</div>
@@ -81,7 +81,7 @@ title: "Module 7 Videos: Color Grading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=skin+tone+correction+color+grading+vectorscope+skin+line">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=skin+tone+correction+color+grading+vectorscope+skin+line" data-video-id="gAqLDsCEuMU" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Skin Tone Correction: The Skin Line on the Vectorscope</div>
@@ -98,7 +98,7 @@ title: "Module 7 Videos: Color Grading"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=DaVinci+Resolve+color+grading+beginner+tutorial+nodes">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=DaVinci+Resolve+color+grading+beginner+tutorial+nodes" data-video-id="u4RVaUSFgL4" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">DaVinci Resolve Color Grading: Beginner Node-Based Workflow</div>
@@ -107,7 +107,7 @@ title: "Module 7 Videos: Color Grading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=technical+grade+vs+creative+grade+colorist+compositor+difference">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=technical+grade+vs+creative+grade+colorist+compositor+difference" data-video-id="QzP1OZyiAGE" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Technical Grade vs Creative Grade: Compositor vs Colorist Roles</div>

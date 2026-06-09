@@ -22,7 +22,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+object+mode+vs+edit+mode+tutorial+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+object+mode+vs+edit+mode+tutorial+beginners" data-video-id="qmz_W_8SRTM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Object Mode vs Edit Mode, The Key Distinction</div>
@@ -31,7 +31,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+keyboard+shortcuts+essential+workflow+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+keyboard+shortcuts+essential+workflow+2024" data-video-id="O7_gEWc3Vfk" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Essential Keyboard Shortcuts, Full Workflow</div>
@@ -40,7 +40,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+viewport+shading+modes+explained+solid+material+rendered" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+viewport+shading+modes+explained+solid+material+rendered" data-video-id="3p7NfwrUKuY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Viewport Shading Modes Explained</div>
@@ -57,7 +57,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+outliner+collections+scene+management+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+outliner+collections+scene+management+tutorial" data-video-id="lmbCJp-oCKA" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Outliner & Collections, Scene Management</div>
@@ -66,7 +66,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+workspace+customization+animation+layout+setup" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+workspace+customization+animation+layout+setup" data-video-id="V7YwP9-A7DY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Workspace Customization, Animation Layout Setup</div>
@@ -75,7 +75,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+N+panel+sidebar+properties+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+N+panel+sidebar+properties+explained" data-video-id="cJzxB77VVJY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender N-Panel and Sidebar, Complete Guide</div>
@@ -84,7 +84,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+coordinate+system+global+local+normal+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+coordinate+system+global+local+normal+explained" data-video-id="vKRQ1gMGJmg" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Coordinate Systems, Global, Local, Normal</div>
@@ -101,7 +101,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+preferences+setup+professional+workflow+GPU+settings" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+preferences+setup+professional+workflow+GPU+settings" data-video-id="nX3oU4_6-F0" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Preferences Setup, Professional Workflow & GPU</div>
@@ -110,7 +110,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+open+movie+sprite+fright+production+workflow+behind+scenes" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+open+movie+sprite+fright+production+workflow+behind+scenes" data-video-id="LNSMAFNMqvQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sprite Fright, Behind the Scenes Production Workflow</div>
@@ -119,7 +119,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="z-Xl9tGqH14" href="https://www.youtube.com/results?search_query=Blender+properties+panel+all+tabs+explained+beginner" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+properties+panel+all+tabs+explained+beginner" data-video-id="5jhA-Y9Bpv4" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Properties Panel, All 16 Tabs Explained</div>
@@ -128,7 +128,7 @@ title: "Module 1 Videos: Blender Interface & Fundamentals"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+4+new+features+interface+improvements+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+4+new+features+interface+improvements+2024" data-video-id="8_V4d1tCXLQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender 4.x New Interface Features and Improvements</div>

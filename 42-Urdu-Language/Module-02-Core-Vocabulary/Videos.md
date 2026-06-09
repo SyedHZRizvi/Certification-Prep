@@ -6,7 +6,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+family+vocabulary+words+English+speakers" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+family+vocabulary+words+English+speakers" data-video-id="pRQeScYo5rs" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+family+terms+chacha+mamoon+khala+phoophi" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+family+terms+chacha+mamoon+khala+phoophi" data-video-id="W3OmGMRG1Kc" target="_blank">
   <div class="vg-thumb">🏠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+food+vocabulary+Pakistani+dishes+names" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+food+vocabulary+Pakistani+dishes+names" data-video-id="YvE3tFKBHSs" target="_blank">
   <div class="vg-thumb">🍛<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+body+parts+vocabulary+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+body+parts+vocabulary+lesson" data-video-id="PqNsqTiMiA0" target="_blank">
   <div class="vg-thumb">🫀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+daily+verbs+common+actions+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+daily+verbs+common+actions+beginners" data-video-id="LsNaYDRFxYk" target="_blank">
   <div class="vg-thumb">🏃<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+time+words+days+months+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+time+words+days+months+vocabulary" data-video-id="Xb4GjVy-bDM" target="_blank">
   <div class="vg-thumb">🕐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+house+home+vocabulary+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+house+home+vocabulary+lesson" data-video-id="5uoHkGbKDZE" target="_blank">
   <div class="vg-thumb">🏡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+colors+adjectives+vocabulary+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+colors+adjectives+vocabulary+beginners" data-video-id="rIbZqe5k0lU" target="_blank">
   <div class="vg-thumb">🎨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+chai+culture+tea+tradition" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+chai+culture+tea+tradition" data-video-id="Wc8DVhzDiJk" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+clothing+shalwar+kameez+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+clothing+shalwar+kameez+vocabulary" data-video-id="cHn4xWPNYGE" target="_blank">
   <div class="vg-thumb">👘<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+200+core+vocabulary+words+flashcards" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+200+core+vocabulary+words+flashcards" data-video-id="GkFZAurR7Hs" target="_blank">
   <div class="vg-thumb">🃏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

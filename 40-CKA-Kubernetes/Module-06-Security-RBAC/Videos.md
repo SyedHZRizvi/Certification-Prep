@@ -25,7 +25,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+Role+ClusterRole+RoleBinding+CKA+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+Role+ClusterRole+RoleBinding+CKA+tutorial" data-video-id="jvhKOAyD8S8" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔐
     <div class="vg-play">▶</div>
@@ -38,7 +38,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+ServiceAccount+tutorial+CKA+exam" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+ServiceAccount+tutorial+CKA+exam" data-video-id="Cfb_7rPAYMs" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🪪
     <div class="vg-play">▶</div>
@@ -51,7 +51,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+auth+can-i+RBAC+verification+Kubernetes" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+auth+can-i+RBAC+verification+Kubernetes" data-video-id="SJiVzqJSm08" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔍
     <div class="vg-play">▶</div>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+SecurityContext+runAsUser+capabilities+CKA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+SecurityContext+runAsUser+capabilities+CKA" data-video-id="4QyecOoPsGU" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🛡️
     <div class="vg-play">▶</div>
@@ -77,7 +77,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Pod+Security+Standards+PSS+enforce+audit+warn" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Pod+Security+Standards+PSS+enforce+audit+warn" data-video-id="f4Ru6CPG1z4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🏛️
     <div class="vg-play">▶</div>
@@ -90,7 +90,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubeconfig+contexts+clusters+users+kubectl+config+CKA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubeconfig+contexts+clusters+users+kubectl+config+CKA" data-video-id="OTvFTTFUz3k" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📋
     <div class="vg-play">▶</div>
@@ -111,7 +111,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+admission+webhooks+MutatingWebhookConfiguration+ValidatingWebhookConfiguration" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+admission+webhooks+MutatingWebhookConfiguration+ValidatingWebhookConfiguration" data-video-id="qlSuOhNFMhU" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🪝
     <div class="vg-play">▶</div>
@@ -124,7 +124,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+image+pull+secrets+private+registry+docker" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+image+pull+secrets+private+registry+docker" data-video-id="C8GzOBTmCZg" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🐳
     <div class="vg-play">▶</div>
@@ -137,7 +137,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+audit+logging+policy+kube-apiserver+CKA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+audit+logging+policy+kube-apiserver+CKA" data-video-id="HlAXp0-M6SY" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📝
     <div class="vg-play">▶</div>
@@ -150,7 +150,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+security+exam+tips+RBAC+common+mistakes+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+security+exam+tips+RBAC+common+mistakes+2024" data-video-id="Wf13DQGoQRE" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🎯
     <div class="vg-play">▶</div>
@@ -171,7 +171,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+ClusterRole+aggregation+rules" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+ClusterRole+aggregation+rules" data-video-id="6D7iFkESmRo" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🧩
     <div class="vg-play">▶</div>
@@ -184,7 +184,7 @@
   </div>
 </a>
 
-<a class="vg-ancard" href="https://www.youtube.com/results?search_query=Kubernetes+seccomp+AppArmor+security+hardening+production" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+seccomp+AppArmor+security+hardening+production" data-video-id="u8HKg5pENj4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ⚙️
     <div class="vg-play">▶</div>
@@ -197,7 +197,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OPA+Gatekeeper+policy+enforcement" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OPA+Gatekeeper+policy+enforcement" data-video-id="v4wanljQmM4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔒
     <div class="vg-play">▶</div>
@@ -210,7 +210,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OIDC+authentication+Dex+identity+provider" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OIDC+authentication+Dex+identity+provider" data-video-id="DmIT7f4bTUM" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔑
     <div class="vg-play">▶</div>

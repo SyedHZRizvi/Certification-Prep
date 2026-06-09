@@ -6,7 +6,7 @@ Master Persian grammar with these structured video lessons covering sentence str
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+verb+to+be+hast+am+present+tense+grammar" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+verb+to+be+hast+am+present+tense+grammar" data-video-id="TvCZHsFNiZ4" target="_blank">
   <div class="vg-thumb">📐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+tense+conjugation+mi+prefix+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+tense+conjugation+mi+prefix+lesson" data-video-id="RdXRWy2JRXM" target="_blank">
   <div class="vg-thumb">⏱️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+ezafe+construction+grammar+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+ezafe+construction+grammar+lesson" data-video-id="VZ4FzlvAaEA" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+personal+pronouns+man+to+u+ma+shoma" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+personal+pronouns+man+to+u+ma+shoma" data-video-id="wFMuFg8cEAs" target="_blank">
   <div class="vg-thumb">👤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+negation+nemi+not+negative+sentences" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+negation+nemi+not+negative+sentences" data-video-id="Y4MoLk8BGWQ" target="_blank">
   <div class="vg-thumb">🚫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+question+words+che+koja+chera+chetour" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+question+words+che+koja+chera+chetour" data-video-id="kBv60D2XHWU" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+plural+ha+an+suffix+nouns" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+plural+ha+an+suffix+nouns" data-video-id="Q_TiB7VQHQY" target="_blank">
   <div class="vg-thumb">📦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+sentence+structure+SOV+word+order" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+sentence+structure+SOV+word+order" data-video-id="Zyb9GaVi55o" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+gender+neutral+no+masculine+feminine+grammar" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+gender+neutral+no+masculine+feminine+grammar" data-video-id="N83MMUQ0Jxk" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+A2+grammar+review+all+basics" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+A2+grammar+review+all+basics" data-video-id="0GVc_BamCiE" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Master Persian grammar with these structured video lessons covering sentence str
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+indefinite+article+yek+yak+grammar" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+indefinite+article+yek+yak+grammar" data-video-id="pX6rNGMrAKw" target="_blank">
   <div class="vg-thumb">🔍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

@@ -6,7 +6,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+ne+ergative+past+tense+grammar" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+ne+ergative+past+tense+grammar" data-video-id="TsBpFxKsqx4" target="_blank">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+present+perfect+past+perfect+tense" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+present+perfect+past+perfect+tense" data-video-id="5OdqQVhPjTQ" target="_blank">
   <div class="vg-thumb">⏰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+compound+verbs+jana+lena+dena" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+compound+verbs+jana+lena+dena" data-video-id="E3_j3YqHIJM" target="_blank">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+causative+verbs+padhana+khilana" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+causative+verbs+padhana+khilana" data-video-id="bVqcvGAzpN8" target="_blank">
   <div class="vg-thumb">🔧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+conditional+sentences+agar+to" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+conditional+sentences+agar+to" data-video-id="gJaExS8Hneg" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -62,7 +62,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+subjunctive+mood+grammar" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+subjunctive+mood+grammar" data-video-id="wzKjMPBLvdw" target="_blank">
   <div class="vg-thumb">💭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -72,7 +72,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+participial+constructions+chalte+hue" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+participial+constructions+chalte+hue" data-video-id="RHkl0M4YTpA" target="_blank">
   <div class="vg-thumb">🌊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -88,7 +88,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+relative+clauses+jo+jis+jin" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+relative+clauses+jo+jis+jin" data-video-id="VFaNbHbZ4Es" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -98,7 +98,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+absolutive+construction+kar" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+absolutive+construction+kar" data-video-id="PkVGiG9CPHE" target="_blank">
   <div class="vg-thumb">📐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

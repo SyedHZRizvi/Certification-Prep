@@ -6,7 +6,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing+tutorial" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing+tutorial" data-video-id="yFWqAFzRxHw" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistan+professional+urdu+corporate+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistan+professional+urdu+corporate+vocabulary" data-video-id="KqrPNvgYJqE" target="_blank">
   <div class="vg-thumb">🏙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+honorifics+titles+janaab+sahib" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+honorifics+titles+janaab+sahib" data-video-id="TxJQVgFNFiA" target="_blank">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -42,7 +42,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=geo+news+urdu+formal+register+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=geo+news+urdu+formal+register+vocabulary" data-video-id="XsgrLEpVBiY" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -52,7 +52,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+presentation+skills+formal+speaking" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+presentation+skills+formal+speaking" data-video-id="MkGvFLtGfRc" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -62,7 +62,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+government+legal+vocabulary+pakistan" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+government+legal+vocabulary+pakistan" data-video-id="gJaExS8Hneg" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -78,7 +78,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+resume+CV+writing+professional" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+resume+CV+writing+professional" data-video-id="t4XyvPPkAJk" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -88,7 +88,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+report+writing+formal+style" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+report+writing+formal+style" data-video-id="fHkYPzMnAoo" target="_blank">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

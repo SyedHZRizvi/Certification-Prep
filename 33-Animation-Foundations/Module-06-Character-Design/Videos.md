@@ -20,7 +20,7 @@
 ## ⭐ Essential Watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=shape+language+character+design+circles+squares+triangles" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=shape+language+character+design+circles+squares+triangles" data-video-id="HaIJMUaSJz4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -38,7 +38,7 @@
       <span class="vg-duration">⏱ 15 min · Why silhouette determines design quality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+personality+character+design+animation+storytelling" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+personality+character+design+animation+storytelling" data-video-id="IG9PVXB7S5s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lion+King+character+design+Scar+Andreas+Deja+shape+language" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lion+King+character+design+Scar+Andreas+Deja+shape+language" data-video-id="pQHKNbOnS70" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -70,7 +70,7 @@
       <span class="vg-duration">⏱ 18 min · Simba vs Scar visual design breakdown</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=designing+characters+for+animation+movement+joint+rig" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=designing+characters+for+animation+movement+joint+rig" data-video-id="mA1bTY9KXZY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
       <span class="vg-duration">⏱ 18 min · What changes when the character needs to animate</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+character+design+Jinx+Vi+breakdown+Riot+Fortiche" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+character+design+Jinx+Vi+breakdown+Riot+Fortiche" data-video-id="LKrP1D8IKQE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+character+design+process+development+inside+out" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+character+design+process+development+inside+out" data-video-id="sOLd0KHwOAo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -102,7 +102,7 @@
       <span class="vg-duration">⏱ 20 min · Joy vs Sadness design contrast as storytelling</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=villain+character+design+tips+menacing+shape+language" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=villain+character+design+tips+menacing+shape+language" data-video-id="T9Yd-biGO2Y" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

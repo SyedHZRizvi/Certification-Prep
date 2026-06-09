@@ -21,7 +21,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+articles+a+an+the+rules+explained+beginners+EngVid" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+articles+a+an+the+rules+explained+beginners+EngVid" data-video-id="knHVPt8Prw8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -31,7 +31,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=present+simple+tense+English+grammar+BBC+Learning" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=present+simple+tense+English+grammar+BBC+Learning" data-video-id="0A7MFuU0wkU" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=present+continuous+tense+English+am+is+are+ing+grammar" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=present+continuous+tense+English+am+is+are+ing+grammar" data-video-id="LGJqQ53_4nI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -51,7 +51,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+pronouns+subject+object+possessive+grammar+lesson" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+pronouns+subject+object+possessive+grammar+lesson" data-video-id="xaKFkGrpqe8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+question+words+who+what+where+when+why+how" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+question+words+who+what+where+when+why+how" data-video-id="4Q08xvFHFBw" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -77,7 +77,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+plural+nouns+rules+irregular+plurals+grammar" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+plural+nouns+rules+irregular+plurals+grammar" data-video-id="N4VaXyUmHuc" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -87,7 +87,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+prepositions+of+place+in+on+at+under+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+prepositions+of+place+in+on+at+under+explained" data-video-id="xsU3a63RseI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -97,7 +97,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=present+simple+vs+present+continuous+difference+English+grammar" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=present+simple+vs+present+continuous+difference+English+grammar" data-video-id="oQGpqBPJGFQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+sentence+structure+SVO+for+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+sentence+structure+SVO+for+beginners" data-video-id="FIVfQh8GVGM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -117,7 +117,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+parts+of+speech+noun+verb+adjective+adverb+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+parts+of+speech+noun+verb+adjective+adverb+explained" data-video-id="LFfh7vp9GtQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -133,7 +133,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+in+use+A2+daily+conversations+listening" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+in+use+A2+daily+conversations+listening" data-video-id="rXbhBbXxFQs" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -143,7 +143,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+learning+English+grammar+game+quiz+present+tense" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+learning+English+grammar+game+quiz+present+tense" data-video-id="DLPFGp8aVb8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -153,7 +153,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+podcast+A2+grammar+slow+clear+short+episodes" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+podcast+A2+grammar+slow+clear+short+episodes" data-video-id="AEtbFm_CjE0" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

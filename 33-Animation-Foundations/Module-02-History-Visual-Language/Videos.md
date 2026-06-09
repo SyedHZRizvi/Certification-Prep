@@ -22,7 +22,7 @@
 ## ⭐ Essential Watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=history+of+animation+Disney+Pixar+timeline+documentary" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=history+of+animation+Disney+Pixar+timeline+documentary" data-video-id="REdgKM0HLSM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -31,7 +31,7 @@
       <span class="vg-duration">⏱ 25 min · Muybridge to Pixar in one sitting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cinematography+shot+types+explained+animation+camera" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=cinematography+shot+types+explained+animation+camera" data-video-id="LIVgBHyTWhQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -40,7 +40,7 @@
       <span class="vg-duration">⏱ 18 min · Shot types with animation examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=180+degree+rule+explained+film+animation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=180+degree+rule+explained+film+animation" data-video-id="gHy1aFNsDVo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -49,7 +49,7 @@
       <span class="vg-duration">⏱ 12 min · Why crossing the line is disorienting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hayao+Miyazaki+Studio+Ghibli+animation+style+analysis" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hayao+Miyazaki+Studio+Ghibli+animation+style+analysis" data-video-id="etAIpkdhU9Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -63,7 +63,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=rule+of+thirds+composition+animation+film+cinematography" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=rule+of+thirds+composition+animation+film+cinematography" data-video-id="O8i7OKbWmRM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -72,7 +72,7 @@
       <span class="vg-duration">⏱ 12 min · Why dead-center framing kills energy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Disney+golden+age+animation+history+Snow+White+Bambi" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Disney+golden+age+animation+history+Snow+White+Bambi" data-video-id="pQHKNbOnS70" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -81,7 +81,7 @@
       <span class="vg-duration">⏱ 20 min · Snow White through Bambi in historical context</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fleischer+Studios+Betty+Boop+rubber+hose+animation+history" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Fleischer+Studios+Betty+Boop+rubber+hose+animation+history" data-video-id="g4tFmkGpyHg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -90,7 +90,7 @@
       <span class="vg-duration">⏱ 20 min · How Betty Boop and Popeye built a rival aesthetic</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=screen+direction+continuity+editing+animation+visual+grammar" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=screen+direction+continuity+editing+animation+visual+grammar" data-video-id="F3OBwwMkLkk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -104,7 +104,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+Toy+Story+1995+CGI+history+making+of" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+Toy+Story+1995+CGI+history+making+of" data-video-id="YkPXGzv3-yg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -113,7 +113,7 @@
       <span class="vg-duration">⏱ 20 min · The 1995 CGI revolution in context</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Eadweard+Muybridge+motion+photography+animation+history" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Eadweard+Muybridge+motion+photography+animation+history" data-video-id="5lkpDfmXSgU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -122,7 +122,7 @@
       <span class="vg-duration">⏱ 15 min · The experiment that started animation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+League+of+Legends+animation+style+breakdown+2021" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+League+of+Legends+animation+style+breakdown+2021" data-video-id="LKrP1D8IKQE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -131,7 +131,7 @@
       <span class="vg-duration">⏱ 18 min · Three-style fusion and its visual language</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anime+limited+animation+history+style+Japan+Osamu+Tezuka" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anime+limited+animation+history+style+Japan+Osamu+Tezuka" data-video-id="0bFNBAbfwR8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

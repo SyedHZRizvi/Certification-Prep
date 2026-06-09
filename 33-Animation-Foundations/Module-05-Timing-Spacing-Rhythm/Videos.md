@@ -20,7 +20,7 @@
 ## ⭐ Essential Watching (~75 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+Animator+Survival+Kit+timing+spacing+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+Animator+Survival+Kit+timing+spacing+tutorial" data-video-id="fmYfJQDaFh8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
       <span class="vg-duration">⏱ 25 min · The foundational lesson on spacing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+graph+editor+tutorial+ease+in+ease+out+Maya+Blender" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+graph+editor+tutorial+ease+in+ease+out+Maya+Blender" data-video-id="8rCRsOLiO7k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -38,7 +38,7 @@
       <span class="vg-duration">⏱ 22 min · F-curves, S-curves, and what they produce</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+chart+dope+sheet+animation+traditional+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+chart+dope+sheet+animation+traditional+explained" data-video-id="mVqvdwmkL3s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+animation+breakdown+slow+in+out+deer+on+ice+timing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+animation+breakdown+slow+in+out+deer+on+ice+timing" data-video-id="v_5HkMUsKwY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -70,7 +70,7 @@
       <span class="vg-duration">⏱ 15 min · Frame-by-frame timing analysis</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incredibles+fight+scene+animation+timing+breakdown+Pixar" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Incredibles+fight+scene+animation+timing+breakdown+Pixar" data-video-id="B4X_mCEYlKs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
       <span class="vg-duration">⏱ 15 min · Fast action timing vs dramatic timing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=frame+rate+24fps+30fps+animation+difference+explained" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=frame+rate+24fps+30fps+animation+difference+explained" data-video-id="F1R3sDDn3jo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Into+Spider-Verse+on+2s+12fps+animation+technique+breakdown" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Into+Spider-Verse+on+2s+12fps+animation+technique+breakdown" data-video-id="l96IgQmXmhM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -102,7 +102,7 @@
       <span class="vg-duration">⏱ 20 min · The creative decision behind the frame rate choice</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=rhythm+comedy+timing+animation+rule+of+three+examples" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=rhythm+comedy+timing+animation+rule+of+three+examples" data-video-id="qLXDmLZXFW0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏱️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
