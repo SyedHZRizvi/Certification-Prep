@@ -1,6 +1,6 @@
 # Module 5 — Intermediate Grammar (B1): Reading
 
-<div class="lang-switcher" style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:12px;padding:1.25rem;margin:0 0 2rem;text-align:center;box-shadow:0 4px 16px rgba(99,102,241,0.3);">
+<div class="lang-switcher" markdown="0" style="background:linear-gradient(135deg,#1e1b4b,#312e81);border-radius:12px;padding:1.25rem;margin:0 0 2rem;text-align:center;box-shadow:0 4px 16px rgba(99,102,241,0.3);">
   <p style="color:#e0e7ff;font-size:1rem;font-weight:600;margin:0 0 0.85rem;">
     🌐 Choose your learning language / اپنی زبان منتخب کریں
   </p>
