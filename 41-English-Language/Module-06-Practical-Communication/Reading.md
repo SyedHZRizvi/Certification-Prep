@@ -12,7 +12,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 (function(){var s='';try{s=localStorage.getItem('cert-hub-lang-pref')||'';}catch(e){}certHubSetLang(s||'en');})();
 </script>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 # Module 6: Practical Communication (B1/B2)
 
@@ -400,7 +400,7 @@ Understanding body language is as important as words in professional communicati
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;" markdown="1">
 
 # ماڈیول ۶: عملی مواصلات (B1/B2)
 

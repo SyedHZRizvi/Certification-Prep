@@ -7,7 +7,7 @@
 </div>
 <script>function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}catch(e){}document.querySelectorAll('.lang-en,.lang-ur').forEach(function(el){el.style.display='none';});document.querySelectorAll('.lang-'+l).forEach(function(el){el.style.display='block';});var be=document.getElementById('ls-btn-en'),bu=document.getElementById('ls-btn-ur');if(be&&bu){be.style.background=l==='en'?'#4338ca':'#fff';be.style.color=l==='en'?'#fff':'#4338ca';bu.style.background=l==='ur'?'#4338ca':'#fff';bu.style.color=l==='ur'?'#fff':'#4338ca';}}(function(){var s='';try{s=localStorage.getItem('cert-hub-lang-pref')||'';}catch(e){}certHubSetLang(s||'en');})();</script>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 # Module 6 — عملی ابلاغ (Practical Communication) · B1/B2
 
@@ -301,7 +301,7 @@ Urdu is a highly gendered language. Verbs, adjectives, and titles all agree in g
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.1rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.1rem;" markdown="1">
 
 # ماڈیول ۶ — عملی ابلاغ · B1/B2
 

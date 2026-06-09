@@ -26,7 +26,7 @@ function certHubSetLang(l){
 
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 ## Why English? The Language That Opens Doors
 
@@ -344,7 +344,7 @@ In this module you learned:
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;" markdown="1">
 
 ## انگریزی کیوں؟ وہ زبان جو دروازے کھولتی ہے
 

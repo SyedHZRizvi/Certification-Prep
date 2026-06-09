@@ -26,7 +26,7 @@ function certHubSetLang(l){
 
 ---
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 ## Situation 1: At the Shop / Supermarket
 
@@ -313,7 +313,7 @@ You have now practiced:
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;" markdown="1">
 
 ## صورت حال 1: دکان / سپر مارکیٹ میں
 

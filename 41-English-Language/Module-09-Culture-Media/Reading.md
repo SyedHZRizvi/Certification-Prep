@@ -12,7 +12,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 (function(){var s='';try{s=localStorage.getItem('cert-hub-lang-pref')||'';}catch(e){}certHubSetLang(s||'en');})();
 </script>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 # Module 9: Culture, Idioms & Media (C1/C2)
 
@@ -320,7 +320,7 @@ Song lyrics are an excellent way to absorb natural English. Here are proven stra
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;" markdown="1">
 
 # ماڈیول ۹: ثقافت، محاورے اور میڈیا (C1/C2)
 

@@ -12,7 +12,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 (function(){var s='';try{s=localStorage.getItem('cert-hub-lang-pref')||'';}catch(e){}certHubSetLang(s||'en');})();
 </script>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 ## 1. Gender: Every French Noun Has a Gender
 
@@ -310,7 +310,7 @@ Invert subject and verb, connect with hyphen:
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;" markdown="1">
 
 ## ۱. صنف: ہر فرانسیسی اسم کی ایک صنف ہے
 
