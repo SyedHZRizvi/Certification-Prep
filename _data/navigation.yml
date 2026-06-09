@@ -1963,6 +1963,132 @@ tracks:
         slug: Flashcards
         single_file: true
 
+  # ------- Spoken Language Mastery (5 courses) -------
+  - id: english-language
+    title: English Language Mastery
+    subtitle: A1–C2 · CEFR · All Levels
+    color: blue
+    color_from: "#1d4ed8"
+    color_to: "#7c3aed"
+    icon: "🇬🇧"
+    base: "/41-English-Language/"
+    modules:
+      - { num: 1, title: "Foundations & Phonetics", slug: Module-01-Foundations }
+      - { num: 2, title: "Core Vocabulary (500 Words)", slug: Module-02-Core-Vocabulary }
+      - { num: 3, title: "Basic Grammar", slug: Module-03-Basic-Grammar }
+      - { num: 4, title: "Everyday Conversations", slug: Module-04-Everyday-Conversations }
+      - { num: 5, title: "Intermediate Grammar", slug: Module-05-Intermediate-Grammar }
+      - { num: 6, title: "Practical Communication", slug: Module-06-Practical-Communication }
+      - { num: 7, title: "Advanced Grammar", slug: Module-07-Advanced-Grammar }
+      - { num: 8, title: "Business & Professional", slug: Module-08-Business-Professional }
+      - { num: 9, title: "Culture, Media & Literature", slug: Module-09-Culture-Media }
+      - { num: 10, title: "Mastery & Fluency", slug: Module-10-Mastery-Fluency }
+    extras:
+      - { title: "Practice Exam 1 (A1-A2)", slug: Practice-Exams/Practice-Exam-1 }
+      - { title: "Practice Exam 2 (B1-B2)", slug: Practice-Exams/Practice-Exam-2 }
+      - { title: "Final Mock Exam (C1-C2)", slug: Practice-Exams/Final-Mock-Exam }
+      - { title: "Flashcards", slug: Flashcards }
+
+  - id: urdu-language
+    title: Urdu Language Mastery
+    subtitle: A1–C2 · CEFR · All Levels
+    color: green
+    color_from: "#047857"
+    color_to: "#065f46"
+    icon: "🇵🇰"
+    base: "/42-Urdu-Language/"
+    modules:
+      - { num: 1, title: "Foundations & Phonetics", slug: Module-01-Foundations }
+      - { num: 2, title: "Core Vocabulary (500 Words)", slug: Module-02-Core-Vocabulary }
+      - { num: 3, title: "Basic Grammar", slug: Module-03-Basic-Grammar }
+      - { num: 4, title: "Everyday Conversations", slug: Module-04-Everyday-Conversations }
+      - { num: 5, title: "Intermediate Grammar", slug: Module-05-Intermediate-Grammar }
+      - { num: 6, title: "Practical Communication", slug: Module-06-Practical-Communication }
+      - { num: 7, title: "Advanced Grammar", slug: Module-07-Advanced-Grammar }
+      - { num: 8, title: "Business & Professional", slug: Module-08-Business-Professional }
+      - { num: 9, title: "Culture, Media & Literature", slug: Module-09-Culture-Media }
+      - { num: 10, title: "Mastery & Fluency", slug: Module-10-Mastery-Fluency }
+    extras:
+      - { title: "Practice Exam 1 (A1-A2)", slug: Practice-Exams/Practice-Exam-1 }
+      - { title: "Practice Exam 2 (B1-B2)", slug: Practice-Exams/Practice-Exam-2 }
+      - { title: "Final Mock Exam (C1-C2)", slug: Practice-Exams/Final-Mock-Exam }
+      - { title: "Flashcards", slug: Flashcards }
+
+  - id: persian-language
+    title: Persian Language Mastery
+    subtitle: A1–C2 · CEFR · Farsi
+    color: amber
+    color_from: "#b45309"
+    color_to: "#92400e"
+    icon: "🇮🇷"
+    base: "/43-Persian-Language/"
+    modules:
+      - { num: 1, title: "Foundations & Phonetics", slug: Module-01-Foundations }
+      - { num: 2, title: "Core Vocabulary (500 Words)", slug: Module-02-Core-Vocabulary }
+      - { num: 3, title: "Basic Grammar", slug: Module-03-Basic-Grammar }
+      - { num: 4, title: "Everyday Conversations", slug: Module-04-Everyday-Conversations }
+      - { num: 5, title: "Intermediate Grammar", slug: Module-05-Intermediate-Grammar }
+      - { num: 6, title: "Practical Communication", slug: Module-06-Practical-Communication }
+      - { num: 7, title: "Advanced Grammar", slug: Module-07-Advanced-Grammar }
+      - { num: 8, title: "Business & Professional", slug: Module-08-Business-Professional }
+      - { num: 9, title: "Culture, Media & Literature", slug: Module-09-Culture-Media }
+      - { num: 10, title: "Mastery & Fluency", slug: Module-10-Mastery-Fluency }
+    extras:
+      - { title: "Practice Exam 1 (A1-A2)", slug: Practice-Exams/Practice-Exam-1 }
+      - { title: "Practice Exam 2 (B1-B2)", slug: Practice-Exams/Practice-Exam-2 }
+      - { title: "Final Mock Exam (C1-C2)", slug: Practice-Exams/Final-Mock-Exam }
+      - { title: "Flashcards", slug: Flashcards }
+
+  - id: arabic-language
+    title: Arabic Language Mastery
+    subtitle: A1–C2 · CEFR · MSA/Fusha
+    color: red
+    color_from: "#dc2626"
+    color_to: "#991b1b"
+    icon: "🇸🇦"
+    base: "/44-Arabic-Language/"
+    modules:
+      - { num: 1, title: "Foundations & Phonetics", slug: Module-01-Foundations }
+      - { num: 2, title: "Core Vocabulary (500 Words)", slug: Module-02-Core-Vocabulary }
+      - { num: 3, title: "Basic Grammar", slug: Module-03-Basic-Grammar }
+      - { num: 4, title: "Everyday Conversations", slug: Module-04-Everyday-Conversations }
+      - { num: 5, title: "Intermediate Grammar", slug: Module-05-Intermediate-Grammar }
+      - { num: 6, title: "Practical Communication", slug: Module-06-Practical-Communication }
+      - { num: 7, title: "Advanced Grammar", slug: Module-07-Advanced-Grammar }
+      - { num: 8, title: "Business & Professional", slug: Module-08-Business-Professional }
+      - { num: 9, title: "Culture, Media & Literature", slug: Module-09-Culture-Media }
+      - { num: 10, title: "Mastery & Fluency", slug: Module-10-Mastery-Fluency }
+    extras:
+      - { title: "Practice Exam 1 (A1-A2)", slug: Practice-Exams/Practice-Exam-1 }
+      - { title: "Practice Exam 2 (B1-B2)", slug: Practice-Exams/Practice-Exam-2 }
+      - { title: "Final Mock Exam (C1-C2)", slug: Practice-Exams/Final-Mock-Exam }
+      - { title: "Flashcards", slug: Flashcards }
+
+  - id: french-language
+    title: French Language Mastery
+    subtitle: A1–C2 · CEFR · Français
+    color: blue
+    color_from: "#1d4ed8"
+    color_to: "#dc2626"
+    icon: "🇫🇷"
+    base: "/45-French-Language/"
+    modules:
+      - { num: 1, title: "Foundations & Phonetics", slug: Module-01-Foundations }
+      - { num: 2, title: "Core Vocabulary (500 Words)", slug: Module-02-Core-Vocabulary }
+      - { num: 3, title: "Basic Grammar", slug: Module-03-Basic-Grammar }
+      - { num: 4, title: "Everyday Conversations", slug: Module-04-Everyday-Conversations }
+      - { num: 5, title: "Intermediate Grammar", slug: Module-05-Intermediate-Grammar }
+      - { num: 6, title: "Practical Communication", slug: Module-06-Practical-Communication }
+      - { num: 7, title: "Advanced Grammar", slug: Module-07-Advanced-Grammar }
+      - { num: 8, title: "Business & Professional", slug: Module-08-Business-Professional }
+      - { num: 9, title: "Culture, Media & Literature", slug: Module-09-Culture-Media }
+      - { num: 10, title: "Mastery & Fluency", slug: Module-10-Mastery-Fluency }
+    extras:
+      - { title: "Practice Exam 1 (A1-A2)", slug: Practice-Exams/Practice-Exam-1 }
+      - { title: "Practice Exam 2 (B1-B2)", slug: Practice-Exams/Practice-Exam-2 }
+      - { title: "Final Mock Exam (C1-C2)", slug: Practice-Exams/Final-Mock-Exam }
+      - { title: "Flashcards", slug: Flashcards }
+
   # ============= Animation & Motion Design Track =============
 module_pages:
   - id: Reading

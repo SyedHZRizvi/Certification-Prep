@@ -1,0 +1,102 @@
+<style>
+.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:22px 0 30px;}
+.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s,border-color .2s;}
+.vg-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -8px rgba(0,0,0,.15);border-color:#818cf8;}
+.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#4f46e5,#8b5cf6);display:flex;align-items:center;justify-content:center;color:#fff;font-size:48px;}
+.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);color:#fff;font-size:48px;opacity:0;transition:opacity .2s;}
+.vg-card:hover .vg-play{opacity:1;}
+.vg-meta{padding:14px 16px;}
+.vg-tag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:3px 8px;border-radius:4px;margin-bottom:8px;}
+.vg-tag.essential{background:#ddd6fe;color:#5b21b6;}
+.vg-tag.recommended{background:#dbeafe;color:#1e40af;}
+.vg-tag.optional{background:#fef3c7;color:#92400e;}
+.vg-title{font-weight:700;font-size:14px;line-height:1.4;margin:0 0 4px;color:#0f172a;}
+.vg-creator{font-size:12.5px;color:#64748b;margin:0 0 6px;}
+.vg-duration{font-size:11px;color:#94a3b8;font-weight:600;}
+</style>
+
+# Module 6: Practical Communication — Video Resources
+
+<div class="vg-grid">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=business+English+meeting+phrases+professional" target="_blank">
+  <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Business English: Meeting Phrases & Vocabulary</p>
+    <p class="vg-creator">Business English Pod</p>
+    <span class="vg-duration">~15 min</span>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+business+email+English" target="_blank">
+  <div class="vg-thumb">✉️<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">How to Write a Professional Business Email</p>
+    <p class="vg-creator">English with Lucy</p>
+    <span class="vg-duration">~12 min</span>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=expressing+opinions+formally+English+debate+phrases" target="_blank">
+  <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag essential">Essential</span>
+    <p class="vg-title">Expressing Opinions in English: Formal & Informal</p>
+    <p class="vg-creator">Oxford Online English</p>
+    <span class="vg-duration">~10 min</span>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=describing+graphs+trends+IELTS+English" target="_blank">
+  <div class="vg-thumb">📈<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Describing Graphs and Trends in English</p>
+    <p class="vg-creator">IELTS Advantage</p>
+    <span class="vg-duration">~14 min</span>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=professional+networking+English+conversation+tips" target="_blank">
+  <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Professional Networking in English</p>
+    <p class="vg-creator">Speak English with Vanessa</p>
+    <span class="vg-duration">~11 min</span>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+small+talk+phrases+workplace+social" target="_blank">
+  <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag recommended">Recommended</span>
+    <p class="vg-title">Small Talk in English: Natural Conversation Starters</p>
+    <p class="vg-creator">English with Greg</p>
+    <span class="vg-duration">~9 min</span>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=body+language+professional+English+eye+contact+culture" target="_blank">
+  <div class="vg-thumb">👁️<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag optional">Optional</span>
+    <p class="vg-title">Body Language in English-Speaking Cultures</p>
+    <p class="vg-creator">TED-Ed Language Series</p>
+    <span class="vg-duration">~8 min</span>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=complaint+English+formal+email+telephone" target="_blank">
+  <div class="vg-thumb">📞<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <span class="vg-tag optional">Optional</span>
+    <p class="vg-title">Complaint Language in English (Formal & Informal)</p>
+    <p class="vg-creator">English Like a Native</p>
+    <span class="vg-duration">~10 min</span>
+  </div>
+</a>
+
+</div>

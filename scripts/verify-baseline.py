@@ -67,11 +67,17 @@ EXPECTED_COURSES = {
     "39-Game-UI-Animation":                     8,
     # DevOps & Cloud-Native track
     "40-CKA-Kubernetes":                        8,
+    # Spoken Language Mastery track
+    "41-English-Language":                      10,
+    "42-Urdu-Language":                         10,
+    "43-Persian-Language":                      10,
+    "44-Arabic-Language":                       10,
+    "45-French-Language":                       10,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 286 + 68 + 8 = 362
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 40 × 3 = 120
-MIN_TOTAL_COURSE_MD_FILES = 1650  # was 1330 with 32 courses; ~320 added with 7 animation courses
-MIN_YT_SEARCH_URLS = 3100         # was 2580; ~520 added with 68 new modules × ~8 cards each
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 362 + 50 = 412
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 45 × 3 = 135
+MIN_TOTAL_COURSE_MD_FILES = 1900  # was 1650 with 40 courses; ~250 added with 5 language courses
+MIN_YT_SEARCH_URLS = 3500         # was 3100; ~400 added with 50 new modules × ~8 cards each
 
 PROTECTED_FILES = [
     "_layouts/default.html",
@@ -94,7 +100,7 @@ REQUIRED_PRACTICE_FILES = ("Practice-Exam-1.md", "Practice-Exam-2.md", "Final-Mo
 # Regexes
 DIRECT_YT_RE = re.compile(r"(youtube\.com/watch|youtu\.be/)", re.IGNORECASE)
 SEARCH_YT_RE = re.compile(r"youtube\.com/results\?search_query=", re.IGNORECASE)
-QUIZ_Q_RE = re.compile(r"^###\s+Q\d+\b", re.MULTILINE)
+QUIZ_Q_RE = re.compile(r"^###\s+Q\d+\b|^\*\*\d+\.\*\*|^\*\*Question\s+\d+\*\*", re.MULTILINE)
 ANSWER_KEY_RE = re.compile(r"^##\s+.*Answer\s+Key", re.MULTILINE | re.IGNORECASE)
 NAV_TRACK_RE = re.compile(r"^\s*-\s+id:\s+\S+", re.MULTILINE)
 
