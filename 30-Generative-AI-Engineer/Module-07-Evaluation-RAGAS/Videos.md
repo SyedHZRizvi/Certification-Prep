@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 45m · Faithfulness/relevancy/precision/recall</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llm+as+judge+biases+mtbench" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=llm+as+judge+biases+mtbench" data-video-id="LNrci0Z5wgM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -48,7 +48,7 @@
       <span class="vg-duration">⏱ 30m · MT-Bench lessons</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=langsmith+evaluation+dataset+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=langsmith+evaluation+dataset+tutorial" data-video-id="3wAON0Lqviw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -62,7 +62,7 @@
 ## 📚 Recommended
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=promptfoo+ab+testing+prompts" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=promptfoo+ab+testing+prompts" data-video-id="OCk0pGGWIlA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 30m · YAML-driven experiments</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=arize+phoenix+rag+evaluation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=arize+phoenix+rag+evaluation" data-video-id="mJoQwpIEv0E" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -80,7 +80,7 @@
       <span class="vg-duration">⏱ 40m · Trace + eval together</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=geval+evaluation+rubric+chain+of+thought" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=geval+evaluation+rubric+chain+of+thought" data-video-id="EGWHH0MUIPI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -89,7 +89,7 @@
       <span class="vg-duration">⏱ 25m · Better than vanilla judge</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=eugene+yan+eval+llm+production" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=eugene+yan+eval+llm+production" data-video-id="tFHeUSJAYbE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+evals+library+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+evals+library+tutorial" data-video-id="VjJVeH7cT4A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 30m · YAML + Python evals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+evals+harness+repository" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+evals+harness+repository" data-video-id="pL1uKrwNkig" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 25m · Their internal-ish eval framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=inspect+ai+ukaisi+frontier+evals" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=inspect+ai+ukaisi+frontier+evals" data-video-id="tTWeNnFBVus" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 35m · Gold-standard rigor</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=trulens+open+source+rag+evaluation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=trulens+open+source+rag+evaluation" data-video-id="wE4o3Xl-7LM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

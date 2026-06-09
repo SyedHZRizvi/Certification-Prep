@@ -19,7 +19,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+shape+morph+logo+transition+tutorial">
+<a class="vg-card" data-video-id="CW4fNnR1hRs" href="https://www.youtube.com/results?search_query=after+effects+shape+morph+logo+transition+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/CW4fNnR1hRs/mqdefault.jpg" alt="Shape Morph AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Shape Morphing in After Effects, Logo Morph Technique</div>
@@ -27,7 +27,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+3d+logo+flip+reveal+tutorial">
+<a class="vg-card" data-video-id="1k1VHHchInk" href="https://www.youtube.com/results?search_query=after+effects+3d+logo+flip+reveal+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/1k1VHHchInk/mqdefault.jpg" alt="3D Logo Flip AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">3D Logo Flip Reveal in After Effects</div>
@@ -35,7 +35,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=netflix+logo+reveal+breakdown+after+effects">
+<a class="vg-card" data-video-id="rHlwDpFl9XM" href="https://www.youtube.com/results?search_query=netflix+logo+reveal+breakdown+after+effects">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/rHlwDpFl9XM/mqdefault.jpg" alt="Netflix Logo Breakdown" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Netflix Logo Reveal Breakdown and Recreation</div>
@@ -51,7 +51,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=brand+motion+guidelines+design+system+animation">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=brand+motion+guidelines+design+system+animation" data-video-id="7YzLF5bFGJY">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/7YzLF5bFGJY/mqdefault.jpg" alt="Brand Motion Guidelines" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Building Brand Motion Guidelines, Design Systems in Motion</div>
@@ -59,7 +59,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=broadcast+package+design+after+effects+lower+third+open">
+<a class="vg-card" data-video-id="e5P2v5L2VqY" href="https://www.youtube.com/results?search_query=broadcast+package+design+after+effects+lower+third+open">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/e5P2v5L2VqY/mqdefault.jpg" alt="Broadcast Package Design" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Designing a Broadcast Package in After Effects</div>
@@ -67,7 +67,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=google+logo+animation+history+motion+language">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=google+logo+animation+history+motion+language" data-video-id="zEbFGtxE2HY">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/zEbFGtxE2HY/mqdefault.jpg" alt="Google Logo Motion" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Google's Animated Logo, Motion Language Breakdown</div>
@@ -75,7 +75,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+shape+layer+morph+point+matching">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=after+effects+shape+layer+morph+point+matching" data-video-id="T_MeZBK6pUk">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/T_MeZBK6pUk/mqdefault.jpg" alt="Shape Morph Point Matching" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Shape Layer Morphing, Point Matching for Clean Transitions</div>
@@ -91,7 +91,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=broadcast+color+space+rec709+after+effects+settings">
+<a class="vg-card" data-video-id="iGFw79p7cQA" href="https://www.youtube.com/results?search_query=broadcast+color+space+rec709+after+effects+settings">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/iGFw79p7cQA/mqdefault.jpg" alt="Broadcast Color Space AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Broadcast Color Space in After Effects, Rec. 709 Setup</div>
@@ -99,7 +99,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=nike+brand+motion+design+animation+swoosh">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=nike+brand+motion+design+animation+swoosh" data-video-id="QHTb94bPuFU">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/QHTb94bPuFU/mqdefault.jpg" alt="Nike Brand Motion" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Nike's Brand Motion Language, Swoosh Animation Analysis</div>
@@ -107,7 +107,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=logo+animation+client+workflow+after+effects+best+practices">
+<a class="vg-card" data-video-id="Rh5tgjMjdVo" href="https://www.youtube.com/results?search_query=logo+animation+client+workflow+after+effects+best+practices">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/Rh5tgjMjdVo/mqdefault.jpg" alt="Logo Animation Client Workflow" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Logo Animation Client Workflow, From Brief to Delivery</div>
@@ -115,7 +115,7 @@ title: "Module 4: Videos, Logo & Brand Motion"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+logo+animation+illustrator+import+workflow">
+<a class="vg-card" data-video-id="8GQbUGGFYEs" href="https://www.youtube.com/results?search_query=after+effects+logo+animation+illustrator+import+workflow">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/8GQbUGGFYEs/mqdefault.jpg" alt="AI to AE Logo Workflow" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Illustrator to After Effects Logo Animation Workflow</div>

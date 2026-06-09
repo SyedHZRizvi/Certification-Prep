@@ -20,7 +20,7 @@
 ## ⭐ Essential Watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+animation+tutorial+principles+beginners" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+animation+tutorial+principles+beginners" data-video-id="hGF8rnMJ7Js" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
       <span class="vg-duration">⏱ 20 min · All principles applied to one exercise</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+animation+tutorial+key+poses+contact+passing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+animation+tutorial+key+poses+contact+passing" data-video-id="y1E7Hd26KBA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚶</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -38,7 +38,7 @@
       <span class="vg-duration">⏱ 25 min · Contact, passing, up, down positions with timing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=character+acting+animation+pantomime+performance+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=character+acting+animation+pantomime+performance+tutorial" data-video-id="SfsFmrJmAOs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+variations+rubber+bowling+weight+animation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+variations+rubber+bowling+weight+animation" data-video-id="4OxphHNm0RY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -70,7 +70,7 @@
       <span class="vg-duration">⏱ 15 min · The self-critique framework in action</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+personality+types+animation+different+characters" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+personality+types+animation+different+characters" data-video-id="OBh-WXMRSic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚶</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+production+checklist+indie+short+film+workflow" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+production+checklist+indie+short+film+workflow" data-video-id="mA1bTY9KXZY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 20 min · Pre-production through delivery</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+animation+masterclass+lecture+timing" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+animation+masterclass+lecture+timing" data-video-id="fmYfJQDaFh8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

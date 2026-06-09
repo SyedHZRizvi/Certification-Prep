@@ -88,7 +88,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+explained+Kubernetes+KodeKloud" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+explained+Kubernetes+KodeKloud" data-video-id="bn3YNKF3IQE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+commands+tutorial+TechWorld+Nana" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+commands+tutorial+TechWorld+Nana" data-video-id="wPw1SNXNJRE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -137,7 +137,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+namespaces+cgroups+containers+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Linux+namespaces+cgroups+containers+explained" data-video-id="sK5i-N34im8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -147,7 +147,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=containerd+vs+Docker+CRI+Kubernetes+runtime" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=containerd+vs+Docker+CRI+Kubernetes+runtime" data-video-id="MHv6cWjvQjM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -157,7 +157,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kelsey+Hightower+Kubernetes+the+hard+way+walkthrough" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kelsey+Hightower+Kubernetes+the+hard+way+walkthrough" data-video-id="vTCQLFDdgrs" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

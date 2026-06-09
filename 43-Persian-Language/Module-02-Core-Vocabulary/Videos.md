@@ -6,7 +6,7 @@ Build your Persian vocabulary with these focused video lessons.
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+family+vocabulary+mother+father+sister+brother" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+family+vocabulary+mother+father+sister+brother" data-video-id="N7s_8e_RJGE" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+body+parts+vocabulary+Persian+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+body+parts+vocabulary+Persian+lesson" data-video-id="k8O_dZBUQ4Y" target="_blank">
   <div class="vg-thumb">🫀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+food+vocabulary+Iranian+cuisine" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+food+vocabulary+Iranian+cuisine" data-video-id="PLXhBwOt4Vo" target="_blank">
   <div class="vg-thumb">🍽️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+100+most+common+verbs+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+100+most+common+verbs+beginners" data-video-id="f8A3-UNm1YM" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+adjectives+common+vocabulary+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+adjectives+common+vocabulary+lesson" data-video-id="C5pQBpFO7sE" target="_blank">
   <div class="vg-thumb">🎨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+home+house+furniture+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+home+house+furniture+vocabulary" data-video-id="JnFWx8Gc5sQ" target="_blank">
   <div class="vg-thumb">🏠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+time+vocabulary+days+months+seasons" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+time+vocabulary+days+months+seasons" data-video-id="YN7XSMOuVFU" target="_blank">
   <div class="vg-thumb">🕐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+colors+vocabulary+lesson+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+colors+vocabulary+lesson+beginners" data-video-id="9zRMjpY7Xpk" target="_blank">
   <div class="vg-thumb">🌈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+vocabulary+flashcard+style+A1+A2" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+vocabulary+flashcard+style+A1+A2" data-video-id="SmvEj8e5Bak" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+food+culture+Persian+cuisine+documentary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+food+culture+Persian+cuisine+documentary" data-video-id="v0o-Dz_-AWA" target="_blank">
   <div class="vg-thumb">🥘<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Build your Persian vocabulary with these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+Urdu+similar+words+cognates+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+Urdu+similar+words+cognates+vocabulary" data-video-id="bLDktPaB8nA" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

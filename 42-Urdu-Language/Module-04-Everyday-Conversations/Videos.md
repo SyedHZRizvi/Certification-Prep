@@ -6,7 +6,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conversation+practice+shopping+dialogue" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conversation+practice+shopping+dialogue" data-video-id="sMlJLxF1eNg" target="_blank">
   <div class="vg-thumb">🛍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+restaurant+ordering+food+conversation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+restaurant+ordering+food+conversation" data-video-id="DLfRuKrXvDg" target="_blank">
   <div class="vg-thumb">🍛<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+asking+directions+conversation+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+asking+directions+conversation+lesson" data-video-id="Gm0MAJ0FbXs" target="_blank">
   <div class="vg-thumb">🗺️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+at+the+doctor+medical+conversation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+at+the+doctor+medical+conversation" data-video-id="cDiEPMkDVeA" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+bargaining+haggling+bazaar+culture" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+bargaining+haggling+bazaar+culture" data-video-id="vw4VGrqPHOs" target="_blank">
   <div class="vg-thumb">💰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+hospitality+culture+guest+phrases+Urdu" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+hospitality+culture+guest+phrases+Urdu" data-video-id="mVnuUPfQnLg" target="_blank">
   <div class="vg-thumb">🏡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+phone+conversation+lesson+dialogue" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+phone+conversation+lesson+dialogue" data-video-id="WfS5rr3EQZY" target="_blank">
   <div class="vg-thumb">📞<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+wedding+phrases+vocabulary+Urdu" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+wedding+phrases+vocabulary+Urdu" data-video-id="RKfFl3fBkSk" target="_blank">
   <div class="vg-thumb">💒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Humsafar+Pakistani+drama+Urdu+listening+subtitles" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Humsafar+Pakistani+drama+Urdu+listening+subtitles" data-video-id="MiPBUuWRsVA" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Zindagi+Gulzar+Hai+Pakistani+drama+Urdu" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Zindagi+Gulzar+Hai+Pakistani+drama+Urdu" data-video-id="FJe98W5BNXM" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Practice real Urdu conversations with these carefully curated videos covering sh
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+street+food+vlog+Lahore+Urdu" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+street+food+vlog+Lahore+Urdu" data-video-id="B7bJNJjn3GQ" target="_blank">
   <div class="vg-thumb">🌮<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

@@ -6,7 +6,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+SOV+word+order+grammar+lesson+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+SOV+word+order+grammar+lesson+beginners" data-video-id="T2PVzuQcjWw" target="_blank">
   <div class="vg-thumb">📐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+gender+grammar+masculine+feminine+nouns" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+gender+grammar+masculine+feminine+nouns" data-video-id="QZvpxGp_OFk" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+conjugation+present+tense+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+conjugation+present+tense+beginners" data-video-id="h8LIHqD0JTA" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+postpositions+lesson+mein+par+se+ko" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+postpositions+lesson+mein+par+se+ko" data-video-id="ZvlQmzc-4rk" target="_blank">
   <div class="vg-thumb">📍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+pronouns+main+tum+aap+woh+hum" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+pronouns+main+tum+aap+woh+hum" data-video-id="u6bRjjTHHgs" target="_blank">
   <div class="vg-thumb">👤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+question+words+kya+kaun+kahaan+kab+kyun" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+question+words+kya+kaun+kahaan+kab+kyun" data-video-id="3YNRiHKkMJA" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+possessive+mera+meri+mere+gender+agreement" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+possessive+mera+meri+mere+gender+agreement" data-video-id="bwm6x5C0zow" target="_blank">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+plural+forms+masculine+feminine+rules" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+plural+forms+masculine+feminine+rules" data-video-id="JxFPe7rLqgQ" target="_blank">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+to+be+hoon+hai+hain+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+to+be+hoon+hai+hain+lesson" data-video-id="PNhKAQi6VDA" target="_blank">
   <div class="vg-thumb">🧩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+grammar+complete+beginners+course+A2" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+grammar+complete+beginners+course+A2" data-video-id="N6n9Qm5PKJE" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Hindi+Urdu+grammar+comparison+English+speakers" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Hindi+Urdu+grammar+comparison+English+speakers" data-video-id="YFGAhifnJXE" target="_blank">
   <div class="vg-thumb">🔬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

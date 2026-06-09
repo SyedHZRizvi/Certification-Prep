@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 12 min · Why standing access kills</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=EDR+vs+antivirus+vs+HIDS+HIPS+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=EDR+vs+antivirus+vs+HIDS+HIPS+comparison" data-video-id="TGzaEpWUkT4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

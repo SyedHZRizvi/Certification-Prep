@@ -6,7 +6,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+alphabet+complete+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+alphabet+complete+beginners" data-video-id="9sJUDx7iEJw" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+for+absolute+beginners+lesson+1+Chai+and+Conversation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+for+absolute+beginners+lesson+1+Chai+and+Conversation" data-video-id="pJNy7RMpvlM" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+greetings+phrases+beginners+FarsiPod101" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+greetings+phrases+beginners+FarsiPod101" data-video-id="cBSL7avW5kw" target="_blank">
   <div class="vg-thumb">👋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+numbers+1+to+100+learn+Farsi" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+numbers+1+to+100+learn+Farsi" data-video-id="OGJ5DNYQLGM" target="_blank">
   <div class="vg-thumb">🔢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+writing+script+right+to+left+tutorial" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+writing+script+right+to+left+tutorial" data-video-id="Mkn-5pRMNoI" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Persian+poetry+Masnavi+introduction" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Persian+poetry+Masnavi+introduction" data-video-id="7FuqFXsJHJE" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+pronunciation+guide+sounds+letters" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+pronunciation+guide+sounds+letters" data-video-id="8VrqSm5uR0g" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+for+Urdu+speakers+cognates+vocabulary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+for+Urdu+speakers+cognates+vocabulary" data-video-id="Q0cXPWd3oUw" target="_blank">
   <div class="vg-thumb">🇵🇰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introduce+yourself+beginner+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introduce+yourself+beginner+lesson" data-video-id="sLNtf3aAqkM" target="_blank">
   <div class="vg-thumb">🙋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+culture+history+overview+documentary" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+culture+history+overview+documentary" data-video-id="hbMiTzHtRig" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+vowels+short+long+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+vowels+short+long+beginners" data-video-id="Oq5BIeTrqaA" target="_blank">
   <div class="vg-thumb">🔊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

@@ -61,7 +61,7 @@
       <span class="vg-duration">⏱ 10 min · Picking the right tier</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+overview" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+overview" data-video-id="FaTbtGfaWjA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 15 min · Model bake-off</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+DeepMind+merger+April+2023+Demis+Hassabis+story" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+DeepMind+merger+April+2023+Demis+Hassabis+story" data-video-id="0U30ys1QHFg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -102,7 +102,7 @@
       <span class="vg-duration">⏱ 60 min · Background fundamentals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+2.5+Pro+thinking+mode+reasoning+benchmarks" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+2.5+Pro+thinking+mode+reasoning+benchmarks" data-video-id="UIZAiXYceBI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 25 min · Science from the same lab</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+Search+seller+assistant+case+study" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+Search+seller+assistant+case+study" data-video-id="CRXnt3QKJMQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

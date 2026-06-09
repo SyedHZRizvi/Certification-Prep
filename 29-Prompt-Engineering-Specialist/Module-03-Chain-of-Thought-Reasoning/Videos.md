@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 35 min · The foundational paper</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=zero+shot+chain+of+thought+kojima+let+us+think+step+by+step" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wVzuvf9D9BU" href="https://www.youtube.com/results?search_query=zero+shot+chain+of+thought+kojima+let+us+think+step+by+step" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The 7-word trick</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenAI+o1+reasoning+model+walkthrough+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5F0F4VYRqC4" href="https://www.youtube.com/results?search_query=OpenAI+o1+reasoning+model+walkthrough+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 24 min · System card + benchmarks</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+Extended+Thinking+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2HsmNeT8TCg" href="https://www.youtube.com/results?search_query=Anthropic+Claude+Extended+Thinking+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=self+consistency+chain+of+thought+wang+2022+majority+vote" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6oJBTNLMvgk" href="https://www.youtube.com/results?search_query=self+consistency+chain+of+thought+wang+2022+majority+vote" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 16 min · Thought → Action → Observation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tree+of+thoughts+yao+game+of+24+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="lfV0MsGIU8o" href="https://www.youtube.com/results?search_query=tree+of+thoughts+yao+game+of+24+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepSeek+R1+open+source+reasoning+model+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="T0jLKmIzGoA" href="https://www.youtube.com/results?search_query=DeepSeek+R1+open+source+reasoning+model+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 28 min · January 2025 launch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=faithfulness+chain+of+thought+post+hoc+reasoning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="L1NQoQivAbA" href="https://www.youtube.com/results?search_query=faithfulness+chain+of+thought+post+hoc+reasoning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 22 min · Hard truth</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GSM8K+benchmark+math+reasoning+LLM" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="c_nCjkM11S0" href="https://www.youtube.com/results?search_query=GSM8K+benchmark+math+reasoning+LLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

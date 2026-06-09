@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 15 min · End-to-end first call</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+prompt+caching+tutorial+90+percent+cost+cut" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+prompt+caching+tutorial+90+percent+cost+cut" data-video-id="GkBHnBejbHY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 20 min · The economics deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+SDK+Python+streaming+messages" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+SDK+Python+streaming+messages" data-video-id="cDnomINJw8w" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 15 min · TTFT and SSE</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Message+Batches+API+bulk+50+percent" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Message+Batches+API+bulk+50+percent" data-video-id="2oqpJuMUAmQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+rate+limits+429+retry+backoff" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+rate+limits+429+retry+backoff" data-video-id="b2i9bChqJrE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 18 min · Direct vs Bedrock comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+TypeScript+SDK+Node+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+TypeScript+SDK+Node+tutorial" data-video-id="4mkFSi2YEVI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 20 min · Node + browser-safe patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+token+counting+API+endpoint" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+token+counting+API+endpoint" data-video-id="FJP_pq7HXAM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+API+observability+Langfuse+Helicone" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+API+observability+Langfuse+Helicone" data-video-id="QiGiS3pLYD4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · Production telemetry</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+GCP+Vertex+AI+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+GCP+Vertex+AI+tutorial" data-video-id="e1eM_JZfn9A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 30 min · Production patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+Claude+production+scale" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+Claude+production+scale" data-video-id="rbjUHkYTj_M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

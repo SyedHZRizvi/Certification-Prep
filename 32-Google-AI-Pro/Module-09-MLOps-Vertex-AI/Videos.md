@@ -26,25 +26,25 @@
       <p class="vg-title">Vertex AI Pipelines End-to-End</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 20 min · KFP v2 walkthrough</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Registry+version+lineage" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Model+Registry+version+lineage" data-video-id="V3vIJFfaQQ4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Model Registry Deep Dive</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · Versions + lineage</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+endpoint+canary+traffic+split+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+endpoint+canary+traffic+split+deployment" data-video-id="XPCF_rLEuQo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Canary Deploys + Traffic Split</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · The safe-deploy pattern</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+model+monitoring+drift+skew+detection" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+model+monitoring+drift+skew+detection" data-video-id="MrCPOnOW3Mo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Model Monitoring, Drift + Skew</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 16 min · Catching silent failures</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Feature+Store+online+offline+training+serving+skew" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+Feature+Store+online+offline+training+serving+skew" data-video-id="v0PYDJg2YRo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Feature Store + Skew Elimination</p><p class="vg-creator">Google Cloud Tech</p>
@@ -55,25 +55,25 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vodafone+Vertex+AI+MLOps+case+study+platform" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vodafone+Vertex+AI+MLOps+case+study+platform" data-video-id="X8bKIfSVBP0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Vodafone MLOps Migration</p><p class="vg-creator">Google Cloud Next</p>
       <span class="vg-duration">⏱ 22 min · 12× shipping velocity</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+hyperparameter+tuning+Vizier+bayesian" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+hyperparameter+tuning+Vizier+bayesian" data-video-id="nzEI3DxP0vU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Hyperparameter Tuning with Vizier</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 14 min · Bayesian search</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+AutoML+tabular+image+text+training" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+AutoML+tabular+image+text+training" data-video-id="GbLQE2C181U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">AutoML on Vertex AI</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 13 min · Tabular/image/text</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cloud+Build+CI+CD+Vertex+AI+pipeline+trigger" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cloud+Build+CI+CD+Vertex+AI+pipeline+trigger" data-video-id="WR3fkVOaeRQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">CI/CD for ML, Cloud Build + Vertex</p><p class="vg-creator">Google Cloud Tech</p>
@@ -84,19 +84,19 @@
 ## 🍿 Optional
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=continuous+training+MLOps+pipeline+retrain+trigger" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=continuous+training+MLOps+pipeline+retrain+trigger" data-video-id="lMQNAiH4buo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Continuous Training Patterns</p><p class="vg-creator">Google Cloud Architecture</p>
       <span class="vg-duration">⏱ 18 min · Scheduled / drift / event</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=cloud+trace+vertex+ai+gemini+agent+observability" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=cloud+trace+vertex+ai+gemini+agent+observability" data-video-id="ihpQJnMxCTU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">Cloud Trace for Agentic Workloads</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · Multi-step tracing</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMLE+google+professional+ML+engineer+exam+study+guide" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=PMLE+google+professional+ML+engineer+exam+study+guide" data-video-id="PcnRyHOOhLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
       <p class="vg-title">PMLE Exam Study Guide</p><p class="vg-creator">Google Cloud Certifications</p>

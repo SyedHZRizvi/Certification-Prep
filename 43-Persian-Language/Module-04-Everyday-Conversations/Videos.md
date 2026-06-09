@@ -6,7 +6,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shopping+bargaining+bazaar+conversation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shopping+bargaining+bazaar+conversation" data-video-id="fv2cCEMNXiw" target="_blank">
   <div class="vg-thumb">🛒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+restaurant+ordering+food+conversation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+restaurant+ordering+food+conversation" data-video-id="Ks5MhWVjFYI" target="_blank">
   <div class="vg-thumb">🍽️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+taarof+Iranian+politeness+culture+befarmayid" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+taarof+Iranian+politeness+culture+befarmayid" data-video-id="t2l_Lff_eEo" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introducing+yourself+making+friends+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introducing+yourself+making+friends+lesson" data-video-id="DmNKhFh4Z_E" target="_blank">
   <div class="vg-thumb">🙋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+at+the+doctor+medical+vocabulary+conversation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+at+the+doctor+medical+vocabulary+conversation" data-video-id="GdKGONKi8Lw" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+travel+airport+directions+conversation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+travel+airport+directions+conversation" data-video-id="y3F02r8Ui8c" target="_blank">
   <div class="vg-thumb">✈️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+phone+conversation+dialogue+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+phone+conversation+dialogue+lesson" data-video-id="XRSBq5LDLAU" target="_blank">
   <div class="vg-thumb">📱<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Tehran+Grand+Bazaar+travel+vlog+Iran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Tehran+Grand+Bazaar+travel+vlog+Iran" data-video-id="SWvReN1gY8E" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+songs+music+beginners+learn+listening" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+songs+music+beginners+learn+listening" data-video-id="CfMUvMWEbHw" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+hospitality+culture+home+visit+customs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+hospitality+culture+home+visit+customs" data-video-id="6pCJBMWVpso" target="_blank">
   <div class="vg-thumb">🏡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Real Persian conversations, Iranian culture, and immersive listening practice.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+slang+colloquial+expressions+everyday+speech" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+slang+colloquial+expressions+everyday+speech" data-video-id="uBgL6MdTjsw" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

@@ -21,7 +21,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=past+simple+irregular+verbs+English+complete+list+lesson" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=past+simple+irregular+verbs+English+complete+list+lesson" data-video-id="5H-GhzNBBZY" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -31,7 +31,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=modal+verbs+English+can+could+should+must+may+might+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=modal+verbs+English+can+could+should+must+may+might+explained" data-video-id="VPozsFzmMvA" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=will+going+to+future+tense+English+difference+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=will+going+to+future+tense+English+difference+explained" data-video-id="AVd1QUUML4s" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -51,7 +51,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=comparative+superlative+adjectives+English+grammar+bigger+biggest" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=comparative+superlative+adjectives+English+grammar+bigger+biggest" data-video-id="QzTkKlAR0eM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=passive+voice+English+grammar+B1+intermediate+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=passive+voice+English+grammar+B1+intermediate+explained" data-video-id="VlDp2oFG9pI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -77,7 +77,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=past+continuous+tense+English+was+were+ing+grammar" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=past+continuous+tense+English+was+were+ing+grammar" data-video-id="N-FoZ8-puZw" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -87,7 +87,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=countable+uncountable+nouns+some+any+much+many+English+grammar" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=countable+uncountable+nouns+some+any+much+many+English+grammar" data-video-id="JFTuSKgTbcA" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -97,7 +97,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=adverbs+of+frequency+always+usually+sometimes+never+position" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=adverbs+of+frequency+always+usually+sometimes+never+position" data-video-id="jRjg-gRGV7k" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=question+tags+English+grammar+aren't+you+isn't+it" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=question+tags+English+grammar+aren't+you+isn't+it" data-video-id="nfWlot6h_JM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -117,7 +117,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=linking+words+connectors+English+however+although+because+therefore" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=linking+words+connectors+English+however+although+because+therefore" data-video-id="FolFvRTCOhQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -133,7 +133,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+B1+intermediate+stories+past+tense+listening+practice" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+B1+intermediate+stories+past+tense+listening+practice" data-video-id="Ys3cjEKdJeo" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -143,7 +143,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+in+action+B1+intermediate+natural+conversations" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+in+action+B1+intermediate+natural+conversations" data-video-id="8ZNn-4sXUrk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -153,7 +153,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=TED+talks+intermediate+English+learning+B1+slow+clear" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=TED+talks+intermediate+English+learning+B1+slow+clear" data-video-id="8CrOL-ydFMI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

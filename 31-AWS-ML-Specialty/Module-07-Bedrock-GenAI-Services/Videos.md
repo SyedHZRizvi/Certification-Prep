@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 20 min · Connector ecosystem</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+IDE+demo+code+assist" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="qqLcGNZs0Sw" href="https://www.youtube.com/results?search_query=Amazon+Q+Developer+IDE+demo+code+assist" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>👨‍💻</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

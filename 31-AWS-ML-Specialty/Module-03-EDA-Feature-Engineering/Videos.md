@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 22 min · The whole toolbox</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Feature+Store+walkthrough+online+offline" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zT8Hp6_-Z1I" href="https://www.youtube.com/results?search_query=SageMaker+Feature+Store+walkthrough+online+offline" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏪</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 20 min · NL Q&A on BI data</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Stripe+Radar+fraud+machine+learning+features" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="VTm0DfEPCPw" href="https://www.youtube.com/results?search_query=Stripe+Radar+fraud+machine+learning+features" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💳</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

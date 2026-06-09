@@ -20,7 +20,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+topology+guide+edge+loops+animation+deformation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+topology+guide+edge+loops+animation+deformation" data-video-id="pMHmFvEELPs" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Topology Guide, Edge Loops for Animation Deformation</div>
@@ -29,7 +29,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+subdivision+surface+modifier+workflow+character" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+subdivision+surface+modifier+workflow+character" data-video-id="kmhJlFKoVgo" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Subdivision Surface Workflow for Characters</div>
@@ -38,7 +38,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+mirror+modifier+tutorial+character+modeling" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+mirror+modifier+tutorial+character+modeling" data-video-id="YCWC3MK1C3Q" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Mirror Modifier, Character Modeling Workflow</div>
@@ -64,7 +64,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+loop+cut+bevel+extrude+modeling+tools+essential" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+loop+cut+bevel+extrude+modeling+tools+essential" data-video-id="jnj2BL2T35Y" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Modeling Tools, Loop Cut, Bevel, Extrude Essentials</div>
@@ -73,7 +73,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+hand+modeling+tutorial+topology+fingers" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+hand+modeling+tutorial+topology+fingers" data-video-id="m7hV9OnnWeQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Hand Modeling, Correct Topology for Animation</div>
@@ -90,7 +90,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+character+modeling+open+movie+breakdown" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+character+modeling+open+movie+breakdown" data-video-id="uToNnFBEEgE" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sprite Fright, Character Modeling Breakdown</div>
@@ -99,7 +99,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+stylized+character+modeling+full+workflow+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+stylized+character+modeling+full+workflow+2024" data-video-id="CzPRKGGbxnk" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Stylized Character Modeling, Full Workflow 2024</div>
@@ -108,7 +108,7 @@ title: "Module 2 Videos: 3D Modeling for Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+face+topology+animation+mouth+eyes+nose" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+face+topology+animation+mouth+eyes+nose" data-video-id="WlKYE6COYOI" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Face Topology, Eyes, Mouth, Nose for Animation</div>

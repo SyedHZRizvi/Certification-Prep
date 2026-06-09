@@ -19,7 +19,7 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=business+English+meeting+phrases+professional" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=business+English+meeting+phrases+professional" data-video-id="dC8g8tMbDgc" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+business+email+English" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+business+email+English" data-video-id="HFqnmRBBuRo" target="_blank">
   <div class="vg-thumb">✉️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=expressing+opinions+formally+English+debate+phrases" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=expressing+opinions+formally+English+debate+phrases" data-video-id="xGn1aHbfVoU" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -49,7 +49,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=describing+graphs+trends+IELTS+English" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=describing+graphs+trends+IELTS+English" data-video-id="8ZNn-4sXUrk" target="_blank">
   <div class="vg-thumb">📈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -59,7 +59,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=professional+networking+English+conversation+tips" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=professional+networking+English+conversation+tips" data-video-id="JbIY5AFMGGE" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -69,7 +69,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+small+talk+phrases+workplace+social" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+small+talk+phrases+workplace+social" data-video-id="pCr-BW8LpDs" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=body+language+professional+English+eye+contact+culture" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=body+language+professional+English+eye+contact+culture" data-video-id="cFLjudWTuGQ" target="_blank">
   <div class="vg-thumb">👁️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -89,7 +89,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=complaint+English+formal+email+telephone" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=complaint+English+formal+email+telephone" data-video-id="f8EO_42PNSE" target="_blank">
   <div class="vg-thumb">📞<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

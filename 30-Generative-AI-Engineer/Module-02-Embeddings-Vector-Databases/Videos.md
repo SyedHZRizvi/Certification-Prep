@@ -114,7 +114,7 @@
       <span class="vg-duration">⏱ 50m · The PhD-level take</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=matryoshka+representation+learning+openai" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=matryoshka+representation+learning+openai" data-video-id="p56H5OsLjEw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 30m · 3072 → 256 dim trick</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=milvus+vector+database+billion+scale" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=milvus+vector+database+billion+scale" data-video-id="zXuGSBnuXhM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,7 +132,7 @@
       <span class="vg-duration">⏱ 40m · DiskANN, IVF-PQ in production</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=splade+sparse+vector+search+naver" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=splade+sparse+vector+search+naver" data-video-id="ZGVN2ArNkrQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

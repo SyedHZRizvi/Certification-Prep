@@ -6,7 +6,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Masnavi+Persian+poetry+explained+English+couplets" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Masnavi+Persian+poetry+explained+English+couplets" data-video-id="nHqXfKRSjmY" target="_blank">
   <div class="vg-thumb">🌀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Hafiz+ghazal+Persian+poetry+translation+analysis" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Hafiz+ghazal+Persian+poetry+translation+analysis" data-video-id="gm1hQH7FFGM" target="_blank">
   <div class="vg-thumb">🌹<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nowruz+Iranian+new+year+traditions+haft+sin+table" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nowruz+Iranian+new+year+traditions+haft+sin+table" data-video-id="OYkfh9Aozz4" target="_blank">
   <div class="vg-thumb">🌸<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+classical+music+dastgah+radif+Shajarian" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+classical+music+dastgah+radif+Shajarian" data-video-id="VvSSJX6c7bA" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+cinema+Kiarostami+Farhadi+best+films+guide" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+cinema+Kiarostami+Farhadi+best+films+guide" data-video-id="kMgRAsBkUKk" target="_blank">
   <div class="vg-thumb">🎬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Ferdowsi+Shahnameh+Persian+epic+overview" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Ferdowsi+Shahnameh+Persian+epic+overview" data-video-id="VzY4XdkApb8" target="_blank">
   <div class="vg-thumb">⚔️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Urdu+connection+Iqbal+poetry+Mughal+language" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Urdu+connection+Iqbal+poetry+Mughal+language" data-video-id="TjcM0Wa8Oq8" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Dari+Afghan+Persian+differences+Kabul+vs+Tehran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Dari+Afghan+Persian+differences+Kabul+vs+Tehran" data-video-id="Ec_vGaKqY8U" target="_blank">
   <div class="vg-thumb">🇦🇫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Tajik+language+Persian+Cyrillic+Tajikistan+culture" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Tajik+language+Persian+Cyrillic+Tajikistan+culture" data-video-id="VsumCyR_MdA" target="_blank">
   <div class="vg-thumb">🇹🇯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -96,7 +96,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+solar+hijri+calendar+months+explained" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+solar+hijri+calendar+months+explained" data-video-id="c7E0BDFT2dU" target="_blank">
   <div class="vg-thumb">📅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+idioms+proverbs+top+50+meaning" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+idioms+proverbs+top+50+meaning" data-video-id="oeFkfZ3u5Ec" target="_blank">
   <div class="vg-thumb">💡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

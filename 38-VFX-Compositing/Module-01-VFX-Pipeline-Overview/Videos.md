@@ -12,7 +12,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+VFX+pipeline+works+film+production+overview">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+VFX+pipeline+works+film+production+overview" data-video-id="hLrqRpbzXgw" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">How the VFX Pipeline Works: Film Production Overview</div>
@@ -21,7 +21,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+supervisor+on+set+what+they+do+film+production">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+supervisor+on+set+what+they+do+film+production" data-video-id="S8a6OkE2ufI" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">What Does a VFX Supervisor Actually Do On Set?</div>
@@ -30,7 +30,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Mandalorian+LED+volume+stage+how+it+works+ILM+StageCraft">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Mandalorian+LED+volume+stage+how+it+works+ILM+StageCraft" data-video-id="Ufp-_7lGdXk" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Mandalorian: How ILM's StageCraft LED Volume Works</div>
@@ -39,7 +39,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Avengers+Endgame+VFX+breakdown+ILM+making+of">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Avengers+Endgame+VFX+breakdown+ILM+making+of" data-video-id="n1GHX5YLDeE" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Avengers: Endgame, ILM VFX Breakdown</div>
@@ -56,7 +56,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=pre-visualization+animatics+VFX+filmmaking+process">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=pre-visualization+animatics+VFX+filmmaking+process" data-video-id="xzVxE5BdBQM" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Pre-Visualization in Film: How Animatics Shape VFX Production</div>
@@ -65,7 +65,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+compositing+departments+overview+film+Nuke+After+Effects">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=VFX+compositing+departments+overview+film+Nuke+After+Effects" data-video-id="M8aBaZS7obo" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">VFX Departments Explained: 2D, 3D, DMP, and Comp</div>
@@ -74,7 +74,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+VFX+shot+is+designed+from+script+to+screen+breakdown">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+VFX+shot+is+designed+from+script+to+screen+breakdown" data-video-id="GNbkNMFBbCY" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">From Script to Screen: Designing a VFX Shot</div>
@@ -83,7 +83,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=EXR+multi-pass+rendering+VFX+compositing+AOV+passes+explained">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=EXR+multi-pass+rendering+VFX+compositing+AOV+passes+explained" data-video-id="AzHG5lVADt4" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Multi-Pass EXR Rendering: Understanding AOV Passes for Compositors</div>
@@ -100,7 +100,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=HDR+lighting+probe+VFX+on+set+chrome+ball+reference">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=HDR+lighting+probe+VFX+on+set+chrome+ball+reference" data-video-id="Cm5JcnsTTd8" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">HDR Lighting Probes On Set: The Chrome Ball and Why It Matters</div>
@@ -109,7 +109,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=digital+intermediate+DI+color+pipeline+film+post+production">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=digital+intermediate+DI+color+pipeline+film+post+production" data-video-id="gy6jmqPFeSI" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Digital Intermediate (DI): Where VFX Meets Color Grading</div>
@@ -118,7 +118,7 @@ title: "Module 1 Videos: VFX Pipeline Overview"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Weta+Digital+Avatar+pipeline+VFX+behind+the+scenes">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Weta+Digital+Avatar+pipeline+VFX+behind+the+scenes" data-video-id="r5SiUoZ83mU" target="_blank">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Weta FX: Inside the Avatar Pipeline</div>

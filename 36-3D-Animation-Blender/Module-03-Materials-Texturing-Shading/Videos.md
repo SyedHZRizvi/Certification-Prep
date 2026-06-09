@@ -11,7 +11,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+principled+BSDF+explained+every+parameter+PBR" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+principled+BSDF+explained+every+parameter+PBR" data-video-id="4H5W6C_Mbck" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Principled BSDF, Every Parameter Explained</div>
@@ -29,7 +29,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shader+editor+node+graph+tutorial+beginners" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shader+editor+node+graph+tutorial+beginners" data-video-id="T0EHr4yjYXM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Shader Editor, Node Graph Tutorial for Beginners</div>
@@ -38,7 +38,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+texture+painting+tutorial+character+workflow" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+texture+painting+tutorial+character+workflow" data-video-id="5DGS4oRTUXs" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Texture Painting, Character Workflow</div>
@@ -55,7 +55,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Substance+Painter+to+Blender+texture+import+workflow+PBR" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Substance+Painter+to+Blender+texture+import+workflow+PBR" data-video-id="dKo0rWXVAlc" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Substance Painter to Blender, Complete Import Workflow</div>
@@ -64,7 +64,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Quixel+Megascans+Bridge+plugin+import+textures" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Quixel+Megascans+Bridge+plugin+import+textures" data-video-id="R0_CvJQdmKQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Quixel Megascans in Blender, Bridge Plugin & Auto-Import</div>
@@ -73,7 +73,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+PBR+material+system+metallic+roughness+explained" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+PBR+material+system+metallic+roughness+explained" data-video-id="9-0Xrz1BGLA" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">PBR Material System, Metallic/Roughness Explained</div>
@@ -90,7 +90,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+toon+shader+cel+shading+stylized+animation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+toon+shader+cel+shading+stylized+animation" data-video-id="NpMKgtZyFD4" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Toon Shader, Cel Shading for Stylized Animation</div>
@@ -99,7 +99,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+skin+material+subsurface+scattering+character" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+skin+material+subsurface+scattering+character" data-video-id="MRiXlEwzMKA" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Skin Material, Subsurface Scattering for Characters</div>
@@ -117,7 +117,7 @@ title: "Module 3 Videos: Materials, Texturing & Shading"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+normal+map+baking+tutorial+character+high+low+poly" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+normal+map+baking+tutorial+character+high+low+poly" data-video-id="Vc-2KxPGBNo" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Normal Map Baking, High to Low Poly Character</div>

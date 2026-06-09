@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 25m · GUI automation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+swarm+agents+sdk+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+swarm+agents+sdk+walkthrough" data-video-id="mPSC8P8kD9k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 20m · The post-AutoGPT consensus</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=metagpt+software+team+agents" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=metagpt+software+team+agents" data-video-id="hQm_uT3BNEU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -121,7 +121,7 @@
       <span class="vg-duration">⏱ 30m · Opinionated FT structure</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=reflexion+self+reflection+agent+paper" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=reflexion+self+reflection+agent+paper" data-video-id="6lkZmFWfKIo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -130,7 +130,7 @@
       <span class="vg-duration">⏱ 25m · The reflection pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=opendevin+swe+agent+ai+software+engineer" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=opendevin+swe+agent+ai+software+engineer" data-video-id="fjHtjT7GO1c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

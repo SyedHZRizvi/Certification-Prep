@@ -21,7 +21,7 @@
 ## ⭐ Essential (~90 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+distributed+training+SMDDP+SMMP+reinvent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Q6sXFaFr8IM" href="https://www.youtube.com/results?search_query=SageMaker+distributed+training+SMDDP+SMMP+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -39,7 +39,7 @@
       <span class="vg-duration">⏱ 22 min · Cost-optimal training & inference</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=mixed+precision+training+FP16+BF16+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FrKue7T7HCs" href="https://www.youtube.com/results?search_query=mixed+precision+training+FP16+BF16+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧮</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -53,7 +53,7 @@
 ## 📚 Recommended (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+PyTorch+script+mode+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="O6XmMxqixBM" href="https://www.youtube.com/results?search_query=SageMaker+PyTorch+script+mode+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🐍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -71,7 +71,7 @@
       <span class="vg-duration">⏱ 20 min · Cut labelling cost 70%</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=SageMaker+Debugger+Profiler+training+diagnostics" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="X3sUFiTKNaE" href="https://www.youtube.com/results?search_query=SageMaker+Debugger+Profiler+training+diagnostics" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -103,7 +103,7 @@
       <span class="vg-duration">⏱ 45 min · 256 A100 GPUs in action</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=AWS+EFA+Elastic+Fabric+Adapter+HPC+ML" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="8o4SotMHG1k" href="https://www.youtube.com/results?search_query=AWS+EFA+Elastic+Fabric+Adapter+HPC+ML" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -112,7 +112,7 @@
       <span class="vg-duration">⏱ 17 min · HPC networking</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=FSx+for+Lustre+S3+integration+for+ML+training" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YwdMFJBqnj0" href="https://www.youtube.com/results?search_query=FSx+for+Lustre+S3+integration+for+ML+training" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

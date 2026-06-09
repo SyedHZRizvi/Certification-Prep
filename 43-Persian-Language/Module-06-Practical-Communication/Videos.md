@@ -6,7 +6,7 @@ Strengthen your real-world Persian communication with these curated video resour
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+business+professional+vocabulary+office" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+business+professional+vocabulary+office" data-video-id="jXsBGLhXLpU" target="_blank">
   <div class="vg-thumb">💼<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+business+culture+etiquette+taArof+guide" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+business+culture+etiquette+taArof+guide" data-video-id="WpBzP4YXQKU" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+health+medical+vocabulary+doctor" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+health+medical+vocabulary+doctor" data-video-id="pNQQ5cSBJqE" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+formal+vs+colloquial+spoken+written" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+formal+vs+colloquial+spoken+written" data-video-id="8sMt_CDxFLo" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+proverbs+zarb-al-masal+top+20" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+proverbs+zarb-al-masal+top+20" data-video-id="D0nRN4EXMrM" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,7 +56,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+opinion+expressing+agreeing+disagreeing" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+opinion+expressing+agreeing+disagreeing" data-video-id="sTMJBMCKLhk" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+email+letter+writing+formal" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+email+letter+writing+formal" data-video-id="wc0Pwe5ZRHE" target="_blank">
   <div class="vg-thumb">✉️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+social+media+Persian+internet+slang" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+social+media+Persian+internet+slang" data-video-id="5ZpHQqS4mQY" target="_blank">
   <div class="vg-thumb">📱<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+polite+refusal+complaint+phrases" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+polite+refusal+complaint+phrases" data-video-id="LBgK2G3BCGA" target="_blank">
   <div class="vg-thumb">🙏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -96,7 +96,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+meeting+workplace+dialogue+intermediate" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+meeting+workplace+dialogue+intermediate" data-video-id="i3n16AMOBBY" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -106,7 +106,7 @@ Strengthen your real-world Persian communication with these curated video resour
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iran+business+do+dont+culture+tips+foreigners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iran+business+do+dont+culture+tips+foreigners" data-video-id="qLqB8RmRwwM" target="_blank">
   <div class="vg-thumb">🇮🇷<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

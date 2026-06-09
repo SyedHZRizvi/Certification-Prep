@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenAI+structured+outputs+launch+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7yMXs9TRvVI" href="https://www.youtube.com/results?search_query=OpenAI+structured+outputs+launch+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 18 min · tool_choice + schemas</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=instructor+python+library+jason+liu+pydantic+llm" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="yj-wSRJwrrc" href="https://www.youtube.com/results?search_query=instructor+python+library+jason+liu+pydantic+llm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 22 min · The cross-provider pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=pydantic+v2+tutorial+for+llm+structured+output" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7edFjPiSsZs" href="https://www.youtube.com/results?search_query=pydantic+v2+tutorial+for+llm+structured+output" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+structured+output+response+schema+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ltCMuRzHYH8" href="https://www.youtube.com/results?search_query=Gemini+structured+output+response+schema+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 14 min · response_schema</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=outlines+library+constrained+generation+open+source" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XpGGo_7YBNQ" href="https://www.youtube.com/results?search_query=outlines+library+constrained+generation+open+source" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 16 min · Local-model structured output</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=function+calling+parallel+tool+calls+llm+agent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="EcB0PiNmbFo" href="https://www.youtube.com/results?search_query=function+calling+parallel+tool+calls+llm+agent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=json+schema+tutorial+for+beginners" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="G_J_xByLGGc" href="https://www.youtube.com/results?search_query=json+schema+tutorial+for+beginners" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 20 min · Spec essentials</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=context+free+grammar+masking+LLM+constrained+decoding" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AFE6x81AP4k" href="https://www.youtube.com/results?search_query=context+free+grammar+masking+LLM+constrained+decoding" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · Grammar masking explained</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=BAML+boundary+ml+schema+first+prompt+language" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="kCc8FmEb1nY" href="https://www.youtube.com/results?search_query=BAML+boundary+ml+schema+first+prompt+language" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

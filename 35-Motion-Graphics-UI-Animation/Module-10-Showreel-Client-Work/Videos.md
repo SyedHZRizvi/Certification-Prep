@@ -19,7 +19,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+freelance+pricing+day+rate+guide">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+freelance+pricing+day+rate+guide" data-video-id="UcP4nC0Q5b0">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/UcP4nC0Q5b0/mqdefault.jpg" alt="Motion Design Pricing" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Pricing Your Motion Design Work, Day Rate vs Project Rate</div>
@@ -27,7 +27,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+client+brief+creative+workflow">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+client+brief+creative+workflow" data-video-id="kH6UxLm0H7A">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/kH6UxLm0H7A/mqdefault.jpg" alt="Client Brief Motion Design" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Client Brief, Motion Design Project Workflow</div>
@@ -35,7 +35,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=spec+work+motion+design+ethics+should+you+do+it">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=spec+work+motion+design+ethics+should+you+do+it" data-video-id="G3bMlG2zPWk">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/G3bMlG2zPWk/mqdefault.jpg" alt="Spec Work Ethics" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Spec Work, Should Motion Designers Do It?</div>
@@ -51,7 +51,7 @@ title: "Module 10: Videos, Showreel & Client Work"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+revision+management+client+communication">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+revision+management+client+communication" data-video-id="G57fI25P0nE">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/G57fI25P0nE/mqdefault.jpg" alt="Revision Management Motion" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Managing Revisions and Client Communication in Motion Design</div>
@@ -59,7 +59,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+contract+licensing+portfolio+rights">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+contract+licensing+portfolio+rights" data-video-id="aReH7CVnNY8">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/aReH7CVnNY8/mqdefault.jpg" alt="Motion Design Contracts" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Contracts and Licensing for Motion Designers</div>
@@ -75,7 +75,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+designer+career+path+freelance+studio+in+house">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+designer+career+path+freelance+studio+in+house" data-video-id="t2xqGfFBVoc">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/t2xqGfFBVoc/mqdefault.jpg" alt="Motion Designer Career Path" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Motion Designer Career Paths, Freelance vs Studio vs In-House</div>
@@ -91,7 +91,7 @@ title: "Module 10: Videos, Showreel & Client Work"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motionographer+motion+design+industry+showcase">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motionographer+motion+design+industry+showcase" data-video-id="CpCLpNi6GnU">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/CpCLpNi6GnU/mqdefault.jpg" alt="Motionographer Showcase" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Motionographer, Best Motion Design of 2025</div>
@@ -99,7 +99,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+interview+tips+portfolio+review+studio">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+interview+tips+portfolio+review+studio" data-video-id="3hAjrMU-PEg">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3hAjrMU-PEg/mqdefault.jpg" alt="Motion Design Interview" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Motion Design Job Interview, What Studios Actually Look For</div>
@@ -107,7 +107,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+reference+call+client+meeting+workflow">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=motion+design+reference+call+client+meeting+workflow" data-video-id="o0MeAyJ_vN4">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/o0MeAyJ_vN4/mqdefault.jpg" alt="Reference Call Workflow" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Motion Design Reference Call, How to Run It</div>
@@ -115,7 +115,7 @@ title: "Module 10: Videos, Showreel & Client Work"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=adobe+certified+professional+after+effects+exam+prep">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=adobe+certified+professional+after+effects+exam+prep" data-video-id="bPkgWVs_f-E">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/bPkgWVs_f-E/mqdefault.jpg" alt="Adobe ACE After Effects Exam" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Adobe Certified Professional, After Effects Exam Prep</div>

@@ -20,7 +20,7 @@ title: "Module 5 Videos: Rigging & Armatures"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Rigify+tutorial+complete+human+rig+2024" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Rigify+tutorial+complete+human+rig+2024" data-video-id="SBYb1YmaKZY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Rigify, Complete Human Rig Tutorial 2024</div>
@@ -29,7 +29,7 @@ title: "Module 5 Videos: Rigging & Armatures"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+IK+FK+rigging+explained+inverse+forward+kinematics" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+IK+FK+rigging+explained+inverse+forward+kinematics" data-video-id="tXaClxCbpJ4" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender IK vs FK, Inverse & Forward Kinematics Explained</div>
@@ -38,7 +38,7 @@ title: "Module 5 Videos: Rigging & Armatures"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+pole+target+knee+elbow+rigging+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+pole+target+knee+elbow+rigging+tutorial" data-video-id="GFsFZ2IQKRQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Pole Targets, Knee and Elbow Bending Direction</div>
@@ -55,7 +55,7 @@ title: "Module 5 Videos: Rigging & Armatures"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+bone+rolls+rigging+correct+axis+orientation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+bone+rolls+rigging+correct+axis+orientation" data-video-id="XuU9-kEHBqc" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Bone Rolls, Correct Axis Orientation for Animation</div>
@@ -64,7 +64,7 @@ title: "Module 5 Videos: Rigging & Armatures"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+corrective+shape+keys+rigging+deformation+fix" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+corrective+shape+keys+rigging+deformation+fix" data-video-id="Rl1bMGlWCjM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Corrective Shape Keys, Fixing Deformation Artifacts</div>
@@ -73,7 +73,7 @@ title: "Module 5 Videos: Rigging & Armatures"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+bone+naming+convention+symmetry+mirror+rig" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+bone+naming+convention+symmetry+mirror+rig" data-video-id="RaKL7l0T8oE" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Bone Naming Convention, .L/.R Symmetry and Mirroring</div>
@@ -90,7 +90,7 @@ title: "Module 5 Videos: Rigging & Armatures"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+custom+bone+shapes+rig+controls+visual" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+custom+bone+shapes+rig+controls+visual" data-video-id="DFHqrERXME4" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Custom Bone Shapes, Visual Rig Controls</div>
@@ -99,7 +99,7 @@ title: "Module 5 Videos: Rigging & Armatures"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+armature+constraint+copy+transform+stretch+to" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+armature+constraint+copy+transform+stretch+to" data-video-id="wE-OeZGhNtM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Armature Constraints, Copy Transform, Stretch To</div>
@@ -108,7 +108,7 @@ title: "Module 5 Videos: Rigging & Armatures"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+rigging+facial+rig+shape+keys+jaw+eyes" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+rigging+facial+rig+shape+keys+jaw+eyes" data-video-id="0mAVNXHuR3E" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Facial Rig, Shape Keys for Jaw, Eyes, and Expressions</div>

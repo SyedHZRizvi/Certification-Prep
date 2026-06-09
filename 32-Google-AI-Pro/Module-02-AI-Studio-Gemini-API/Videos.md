@@ -23,7 +23,7 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Studio+quickstart+gemini+API+key+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Studio+quickstart+gemini+API+key+tutorial" data-video-id="4kFReLBBxu8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -41,7 +41,7 @@
       <span class="vg-duration">⏱ 15 min · generate_content + generation_config</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+structured+output+response+schema+JSON" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+structured+output+response+schema+JSON" data-video-id="Rl1fFLBCY6A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -50,7 +50,7 @@
       <span class="vg-duration">⏱ 10 min · JSON-Schema-conformant output</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+safety+settings+harm+thresholds+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+safety+settings+harm+thresholds+tutorial" data-video-id="Z-xzOl5Bqe4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -59,7 +59,7 @@
       <span class="vg-duration">⏱ 13 min · 4 categories, 4 thresholds</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+context+caching+Vertex+AI+explicit+cache" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+context+caching+Vertex+AI+explicit+cache" data-video-id="vwnpNW9nUio" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -73,7 +73,7 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+streaming+token+TTFT+example" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+streaming+token+TTFT+example" data-video-id="byGIZY0MPUU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -82,7 +82,7 @@
       <span class="vg-duration">⏱ 8 min · stream=True walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+code+execution+tool+python+sandbox" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+code+execution+tool+python+sandbox" data-video-id="G-GHurJpT5Q" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -91,7 +91,7 @@
       <span class="vg-duration">⏱ 14 min · tools=code_execution</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+batch+prediction+gemini+discount" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+batch+prediction+gemini+discount" data-video-id="g2JOHLHh4QI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -100,7 +100,7 @@
       <span class="vg-duration">⏱ 13 min · BatchPredictionJob</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+vs+Vertex+AI+SDK+difference+migration" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+API+vs+Vertex+AI+SDK+difference+migration" data-video-id="CqfOrFMr3vs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -114,7 +114,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Snap+MyAI+Gemini+Vertex+AI+case+study+multimodal" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Snap+MyAI+Gemini+Vertex+AI+case+study+multimodal" data-video-id="f7L0SHWa3pE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -123,7 +123,7 @@
       <span class="vg-duration">⏱ 22 min · The prototype-to-prod path</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+system+instruction+prompt+engineering+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+system+instruction+prompt+engineering+best+practices" data-video-id="dOxUroR57xs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,7 +132,7 @@
       <span class="vg-duration">⏱ 30 min · System instruction patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+count+tokens+API+pricing+cost+estimation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Gemini+count+tokens+API+pricing+cost+estimation" data-video-id="pNX-9HqTQeM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

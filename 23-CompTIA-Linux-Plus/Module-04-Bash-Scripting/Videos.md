@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · Variables, loops, conditionals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+set+euo+pipefail+defensive+scripting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+set+euo+pipefail+defensive+scripting" data-video-id="LnAWCi7Uh5k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>

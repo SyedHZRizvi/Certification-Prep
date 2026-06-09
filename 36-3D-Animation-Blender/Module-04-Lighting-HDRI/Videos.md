@@ -20,7 +20,7 @@ title: "Module 4 Videos: Lighting & HDRI"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+HDRI+lighting+setup+environment+texture+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+HDRI+lighting+setup+environment+texture+tutorial" data-video-id="M0dQZsULKsM" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender HDRI Lighting Setup, Environment Texture Complete Guide</div>
@@ -29,7 +29,7 @@ title: "Module 4 Videos: Lighting & HDRI"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+light+types+explained+point+sun+spot+area" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+light+types+explained+point+sun+spot+area" data-video-id="eCNurCFEjHY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Light Types Explained, Point, Sun, Spot, Area</div>
@@ -46,7 +46,7 @@ title: "Module 4 Videos: Lighting & HDRI"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+color+temperature+lighting+warm+cool+mood" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+color+temperature+lighting+warm+cool+mood" data-video-id="1xjXBrIkBM4" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Color Temperature & Mood Lighting</div>
@@ -55,7 +55,7 @@ title: "Module 4 Videos: Lighting & HDRI"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+cinematic+lighting+tutorial+character+animation" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+cinematic+lighting+tutorial+character+animation" data-video-id="nH0DOacKXVU" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Cinematic Lighting, Character Animation Setup</div>
@@ -64,7 +64,7 @@ title: "Module 4 Videos: Lighting & HDRI"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shadow+softness+light+size+area+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+shadow+softness+light+size+area+tutorial" data-video-id="uYQESmSCJpQ" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Shadow Control, Light Size and Softness</div>
@@ -73,7 +73,7 @@ title: "Module 4 Videos: Lighting & HDRI"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+lighting+behind+the+scenes+open+movie" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+lighting+behind+the+scenes+open+movie" data-video-id="U2nFR6bqAps" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sprite Fright, Lighting Department Behind the Scenes</div>
@@ -90,7 +90,7 @@ title: "Module 4 Videos: Lighting & HDRI"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+EEVEE+lighting+probes+irradiance+volume+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+EEVEE+lighting+probes+irradiance+volume+tutorial" data-video-id="c1tBJhh9Ojk" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender EEVEE Lighting, Irradiance Probes and Light Probes</div>
@@ -99,7 +99,7 @@ title: "Module 4 Videos: Lighting & HDRI"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+interior+lighting+window+light+bounce+HDRI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+interior+lighting+window+light+bounce+HDRI" data-video-id="yLBuZQRqC5Y" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Interior Lighting, Window Light, Bounce, and HDRI</div>
@@ -108,7 +108,7 @@ title: "Module 4 Videos: Lighting & HDRI"
   </div>
 </a>
 
-<a class="vg-card" data-video-id="ENnEYoUpFfU" href="https://www.youtube.com/results?search_query=Blender+volumetric+lighting+fog+atmosphere+tutorial" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+volumetric+lighting+fog+atmosphere+tutorial" data-video-id="jkNMkYxFoRw" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Volumetric Lighting, Fog and Atmosphere</div>

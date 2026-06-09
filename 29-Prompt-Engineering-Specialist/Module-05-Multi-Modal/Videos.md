@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GPT-4V+launch+vision+walkthrough+september+2023" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oc6RV5c1yd0" href="https://www.youtube.com/results?search_query=GPT-4V+launch+vision+walkthrough+september+2023" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 14 min · The video advantage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Whisper+OpenAI+transcription+tutorial+production" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ABFqbY_rmEk" href="https://www.youtube.com/results?search_query=Whisper+OpenAI+transcription+tutorial+production" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=vision+LLM+vs+tesseract+textract+document+ai+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="rtRRFBjmR9I" href="https://www.youtube.com/results?search_query=vision+LLM+vs+tesseract+textract+document+ai+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 18 min · Where each wins</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GPT-5+audio+voice+mode+realtime+API+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="nIERcYzG3aY" href="https://www.youtube.com/results?search_query=GPT-5+audio+voice+mode+realtime+API+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 16 min · Voice apps in 2026</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JExF8c3Kimo" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=ChartQA+benchmark+vision+LLM+evaluation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="5kl2NzRvbqA" href="https://www.youtube.com/results?search_query=ChartQA+benchmark+vision+LLM+evaluation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 16 min · Open-weights VLMs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MMMU+benchmark+college+multimodal+evaluation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="T0jLKmIzGoA" href="https://www.youtube.com/results?search_query=MMMU+benchmark+college+multimodal+evaluation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

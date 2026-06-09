@@ -20,7 +20,7 @@
 ## ⭐ Essential Watching (~65 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+animation+film+how+Pixar+uses+color+storytelling" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+animation+film+how+Pixar+uses+color+storytelling" data-video-id="IG9PVXB7S5s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -29,7 +29,7 @@
       <span class="vg-duration">⏱ 18 min · Color scripts, value, and emotional arcs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+basics+hue+saturation+value+for+artists" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+basics+hue+saturation+value+for+artists" data-video-id="AIdaqJAaCHs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -38,7 +38,7 @@
       <span class="vg-duration">⏱ 20 min · The core vocabulary + why value is most important</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=composition+principles+animation+rule+of+thirds+leading+lines" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=composition+principles+animation+rule+of+thirds+leading+lines" data-video-id="7SOFXLl7o3c" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -47,7 +47,7 @@
       <span class="vg-duration">⏱ 18 min · Rule of thirds, leading lines, negative space</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Out+Pixar+color+script+emotional+arc+analysis" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Out+Pixar+color+script+emotional+arc+analysis" data-video-id="sOLd0KHwOAo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -61,7 +61,7 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=complementary+colors+animation+film+warm+cool+depth" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=complementary+colors+animation+film+warm+cool+depth" data-video-id="Qj1FK8n7WgY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -70,7 +70,7 @@
       <span class="vg-duration">⏱ 15 min · Temperature + depth + emotional temperature</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+harmony+analogous+complementary+triadic+examples" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+harmony+analogous+complementary+triadic+examples" data-video-id="nFS5MaVS6DI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -79,7 +79,7 @@
       <span class="vg-duration">⏱ 12 min · Monochromatic through triadic with real examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Coco+Pixar+color+design+Dia+de+Muertos+underworld+lighting" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Coco+Pixar+color+design+Dia+de+Muertos+underworld+lighting" data-video-id="bIPHx9R5cT4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spirited+Away+Ghibli+color+art+direction+analysis" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spirited+Away+Ghibli+color+art+direction+analysis" data-video-id="P5ozvSe3aGY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -102,7 +102,7 @@
       <span class="vg-duration">⏱ 18 min · Ghibli's color palette approach</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=chromatic+aberration+effect+animation+Spider-Verse+technique" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=chromatic+aberration+effect+animation+Spider-Verse+technique" data-video-id="fELnJJBCXHY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

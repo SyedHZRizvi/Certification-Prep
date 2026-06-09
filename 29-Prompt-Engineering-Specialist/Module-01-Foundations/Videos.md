@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 2 hr · How BPE actually works</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Simon+Willison+prompt+engineering+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="jrHRe9lSqqA" href="https://www.youtube.com/results?search_query=Simon+Willison+prompt+engineering+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+paper+long+context+llm" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AFE6x81AP4k" href="https://www.youtube.com/results?search_query=lost+in+the+middle+paper+long+context+llm" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -107,7 +107,7 @@
       <span class="vg-duration">⏱ 25 min · Why position matters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=microsoft+tay+chatbot+failure+postmortem" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="93bStFtCVMo" href="https://www.youtube.com/results?search_query=microsoft+tay+chatbot+failure+postmortem" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

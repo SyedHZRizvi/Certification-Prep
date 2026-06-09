@@ -34,7 +34,7 @@
       <span class="vg-duration">⏱ 25 min · Best first watch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepLearning+AI+prompt+engineering+with+Claude+short+course" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DeepLearning+AI+prompt+engineering+with+Claude+short+course" data-video-id="YGWbFWcRFqM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 60 min total · Chapters work standalone</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+XML+tags+prompt+structure" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+XML+tags+prompt+structure" data-video-id="PJNkfFUbBzA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 10 min · Structural delimiters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+prefill+assistant+response+technique" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+prefill+assistant+response+technique" data-video-id="wbkfQsEDIbc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,7 +75,7 @@
       <span class="vg-duration">⏱ 15 min · Scratchpad reasoning</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Workbench+console+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Workbench+console+walkthrough" data-video-id="sSiAx0AqLcs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -84,7 +84,7 @@
       <span class="vg-duration">⏱ 15 min · Get hands-on</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=few+shot+prompting+best+practices+examples" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=few+shot+prompting+best+practices+examples" data-video-id="dOxUroR57xs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,7 +93,7 @@
       <span class="vg-duration">⏱ 12 min · Edge case coverage</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+long+context+200k+prompting+tips" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+long+context+200k+prompting+tips" data-video-id="qppLWHpHOqk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+structured+output+JSON+extraction+prompt" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+structured+output+JSON+extraction+prompt" data-video-id="e1YkXAFOaWA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,7 +116,7 @@
       <span class="vg-duration">⏱ 25 min · Schema-first prompting</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+Anthropic+Claude+how+it+works" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=prompt+caching+Anthropic+Claude+how+it+works" data-video-id="cPLQkV-nXkQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -134,7 +134,7 @@
       <span class="vg-duration">⏱ 35 min · How pros measure prompt quality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anti+pattern+prompt+engineering+Claude+mistakes" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anti+pattern+prompt+engineering+Claude+mistakes" data-video-id="jkrNMKz9pxU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
