@@ -10,7 +10,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 (function(){var s='';try{s=localStorage.getItem('cert-hub-lang-pref')||'';}catch(e){}certHubSetLang(s||'en');})();
 </script>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 # Module 3 — القواعد الأساسية (Basic Grammar)
 
@@ -284,7 +284,7 @@ Arabic is built on **trilateral roots (جذور ثلاثية)** — nearly every
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.05rem;" markdown="1">
 
 # ماڈیول ۳ — القواعد الأساسية (بنیادی قواعد)
 

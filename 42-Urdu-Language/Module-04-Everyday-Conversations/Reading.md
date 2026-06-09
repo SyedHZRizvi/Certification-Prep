@@ -12,7 +12,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 (function(){var s='';try{s=localStorage.getItem('cert-hub-lang-pref')||'';}catch(e){}certHubSetLang(s||'en');})();
 </script>
 
-<div class="lang-en">
+<div class="lang-en" markdown="1">
 
 ## About These Dialogues
 
@@ -290,7 +290,7 @@ Study each dialogue actively: cover the English column and try to understand fro
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.1rem;">
+<div class="lang-ur" style="direction:rtl;font-family:Noto Nastaliq Urdu,Georgia,serif;text-align:right;line-height:2.4;font-size:1.1rem;" markdown="1">
 
 ## ان مکالموں کے بارے میں
 
