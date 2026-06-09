@@ -1,3 +1,8 @@
+---
+permalink: /41-English-Language/
+title: English Language Mastery Course
+---
+
 # English Language Mastery Course
 ## Complete A1 to C2 — Designed for Urdu/Pakistani Speakers
 

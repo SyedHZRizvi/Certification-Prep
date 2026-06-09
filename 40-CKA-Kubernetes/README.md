@@ -1,3 +1,8 @@
+---
+permalink: /40-CKA-Kubernetes/
+title: Certified Kubernetes Administrator (CKA)
+---
+
 # ⎈ Certified Kubernetes Administrator (CKA)
 
 **Governing body:** Linux Foundation / Cloud Native Computing Foundation (CNCF)

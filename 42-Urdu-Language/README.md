@@ -1,3 +1,8 @@
+---
+permalink: /42-Urdu-Language/
+title: Urdu Language Mastery
+---
+
 # اردو زبان کی مہارت — Urdu Language Mastery
 ## Complete Course Guide for English Speakers
 
