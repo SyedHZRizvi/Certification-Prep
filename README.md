@@ -1,13 +1,13 @@
-# 🎓 The Cert Hub, 32 Certification Study Courses
+# 🎓 The Cert Hub, 45 Certification Study Courses
 
-![Certifications: 32](https://img.shields.io/badge/Certifications-39-blueviolet.svg)
-![Modules: 286](https://img.shields.io/badge/Modules-354-blue.svg)
-![Mock Exams: 96](https://img.shields.io/badge/Mock_Exams-117-orange.svg)
-![Questions: 19000+](https://img.shields.io/badge/Practice_Questions-16%2C000%2B-green.svg)
+![Certifications: 45](https://img.shields.io/badge/Certifications-45-blueviolet.svg)
+![Modules: 412](https://img.shields.io/badge/Modules-412-blue.svg)
+![Mock Exams: 135](https://img.shields.io/badge/Mock_Exams-135-orange.svg)
+![Questions: 21000+](https://img.shields.io/badge/Practice_Questions-21%2C000%2B-green.svg)
 
 ## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 
-This repository contains the raw markdown for **32 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)**, same content, prettier UI, auth-gated.
+This repository contains the raw markdown for **45 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)**, same content, prettier UI, auth-gated.
 
 ---
 
@@ -29,7 +29,7 @@ Each track is a **guided journey** built on three pillars:
 
 ---
 
-## 🗺️ All 32 Tracks
+## 🗺️ All 45 Tracks
 
 ### 🧭 Project Management
 
@@ -83,7 +83,45 @@ Each track is a **guided journey** built on three pillars:
 | 26 | [`19-Bitcoin-Cryptocurrency/`](./19-Bitcoin-Cryptocurrency/README.md) | Bitcoin & Cryptocurrency (CBP, CBSA, CCAS, UNIC MSc) | 10 | 80 Q / 90 min |
 | 27 | [`20-E-Commerce/`](./20-E-Commerce/README.md) | E-Commerce (Google D-M, Adobe Commerce, Shopify) | 10 | 80 Q / 90 min |
 
-**Totals:** 39 courses · 354 modules · 117 full-length mock exams · thousands of practice questions · ~1,250+ hours of focused content.
+### 🤖 Generative & Agentic AI
+
+| # | Folder | Cert / Track | Modules | Mock-Exam Length |
+|---|--------|------|---------|------------------|
+| 28 | [`28-Claude-Architect/`](./28-Claude-Architect/README.md) | Claude Architect (Anthropic — Agentic AI Design) | 8 | 60 Q / 60 min |
+| 29 | [`29-Prompt-Engineering-Specialist/`](./29-Prompt-Engineering-Specialist/README.md) | Prompt Engineering Specialist | 8 | 60 Q / 60 min |
+| 30 | [`30-Generative-AI-Engineer/`](./30-Generative-AI-Engineer/README.md) | Generative AI Engineer | 10 | 65 Q / 90 min |
+| 31 | [`31-AWS-ML-Specialty/`](./31-AWS-ML-Specialty/README.md) | AWS Certified Machine Learning Specialty (MLS-C01) | 10 | 65 Q / 180 min |
+| 32 | [`32-Google-AI-Pro/`](./32-Google-AI-Pro/README.md) | Google AI Pro (Cloud Generative AI Leader + ML Engineer) | 10 | 60 Q / 90 min |
+
+### 🎨 Animation — Cert Hub Original
+
+| # | Folder | Cert / Track | Modules | Mock-Exam Length |
+|---|--------|------|---------|------------------|
+| 33 | [`33-Animation-Foundations/`](./33-Animation-Foundations/README.md) | Animation Foundations | 10 | 60 Q / 90 min |
+| 34 | [`34-2D-Digital-Animation/`](./34-2D-Digital-Animation/README.md) | 2D Digital Animation (Adobe Certified Professional: After Effects) | 10 | 60 Q / 90 min |
+| 35 | [`35-Motion-Graphics-UI-Animation/`](./35-Motion-Graphics-UI-Animation/README.md) | Motion Graphics & UI Animation | 10 | 60 Q / 90 min |
+| 36 | [`36-3D-Animation-Blender/`](./36-3D-Animation-Blender/README.md) | 3D Animation with Blender | 10 | 65 Q / 90 min |
+| 37 | [`37-Advanced-Character-Animation/`](./37-Advanced-Character-Animation/README.md) | Advanced Character Animation, Acting-Level Performance | 10 | 65 Q / 90 min |
+| 38 | [`38-VFX-Compositing/`](./38-VFX-Compositing/README.md) | VFX & Compositing | 10 | 65 Q / 90 min |
+| 39 | [`39-Game-UI-Animation/`](./39-Game-UI-Animation/README.md) | Game & UI Animation | 8 | 60 Q / 90 min |
+
+### ⎈ DevOps & Cloud-Native
+
+| # | Folder | Cert | Modules | Mock-Exam Length |
+|---|--------|------|---------|------------------|
+| 40 | [`40-CKA-Kubernetes/`](./40-CKA-Kubernetes/README.md) | Certified Kubernetes Administrator (CKA) | 8 | 17 tasks / 120 min |
+
+### 🗣️ Spoken Language Mastery — Cert Hub Original
+
+| # | Folder | Track | Modules | Mock-Exam Length |
+|---|--------|-------|---------|------------------|
+| 41 | [`41-English-Language/`](./41-English-Language/README.md) | English Language Mastery (A1 → C2 CEFR) | 10 | 40 Q / 75 min |
+| 42 | [`42-Urdu-Language/`](./42-Urdu-Language/README.md) | Urdu Language Mastery (A1 → C2 CEFR) | 10 | 40 Q / 75 min |
+| 43 | [`43-Persian-Language/`](./43-Persian-Language/README.md) | Persian Language Mastery (A1 → C2 CEFR) | 10 | 40 Q / 75 min |
+| 44 | [`44-Arabic-Language/`](./44-Arabic-Language/README.md) | Arabic Language Mastery (A1 → C2 CEFR) | 10 | 55 Q / 90 min |
+| 45 | [`45-French-Language/`](./45-French-Language/README.md) | French Language Mastery (A1 → C2 CEFR) | 10 | 50 Q / 120 min |
+
+**Totals:** 45 courses · 412 modules · 135 full-length mock exams · 21,000+ practice questions · ~1,500+ hours of focused content.
 
 ---
 
