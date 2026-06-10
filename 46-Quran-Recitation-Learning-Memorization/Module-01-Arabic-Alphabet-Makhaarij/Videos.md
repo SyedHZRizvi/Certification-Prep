@@ -96,12 +96,12 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+alphabet+song+nasheed+children+quran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+iran+bismillah+surah+fatiha+recitation+beautiful" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Arabic Alphabet Nasheed — Song for Children</p>
-    <p class="vg-creator">Islamic Songs for Kids</p>
+    <p class="vg-title">Bismillah & Al-Fatiha — Beautiful Iranian Recitation</p>
+    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
     <p class="vg-duration">8 min</p>
   </div>
 </a>

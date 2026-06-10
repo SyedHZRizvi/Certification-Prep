@@ -227,7 +227,7 @@ He identifies the "straight path" as not merely the path to paradise but the pat
 
 ### 3️⃣ Tafsir Tasnim — Āyatullāh Jawādī Āmolī (40+ volumes)
 
-Jawadi Amoli's Tafsir Tasnim is the most extensive modern Shia Quran commentary. His approach is mystical, philosophical, and deeply spiritual:
+Jawadi Amoli's Tafsir Tasnim is the most extensive modern Quran commentary. His approach is mystical, philosophical, and deeply spiritual:
 
 **On the Opening — why Fatiha?**
 Jawadi Amoli points out that the Quran opens with Al-Fatiha because it is a **summary of the entire Quran**. The Quran discusses tawhid (monotheism), resurrection, guidance, and moral responsibility — all four are present in Al-Fatiha.

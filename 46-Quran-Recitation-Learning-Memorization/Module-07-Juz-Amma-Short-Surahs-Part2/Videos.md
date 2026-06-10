@@ -74,13 +74,13 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=year+of+elephant+570+ce+history+quran+context+birth+prophet" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+iran+surah+nasr+kafirun+maun+fil+recitation" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Year of the Elephant — Historical Context of Surah Al-Fil</p>
-    <p class="vg-creator">Islamic History Channel</p>
-    <p class="vg-duration">30 min</p>
+    <p class="vg-title">Short Surahs Recitation — Beautiful Iranian Reciter</p>
+    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
+    <p class="vg-duration">25 min</p>
   </div>
 </a>
 

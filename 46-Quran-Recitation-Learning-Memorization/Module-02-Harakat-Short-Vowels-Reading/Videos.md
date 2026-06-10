@@ -76,12 +76,12 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mishary+rashid+slow+recitation+harakat+surah+fatiha" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+slow+clear+recitation+surah+fatiha+harakat" target="_blank">
   <div class="vg-thumb">🎙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Slow & Clear Recitation — Surah Fatiha (Follow Along)</p>
-    <p class="vg-creator">Mishary Rashid Al-Afasy</p>
+    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
     <p class="vg-duration">5 min</p>
   </div>
 </a>

@@ -74,13 +74,13 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=complete+tajweed+rules+summary+revision+quran+beginner" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=morteza+haghighi+iran+quran+reciter+tajweed+advanced+beautiful" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Complete Tajweed Rules Summary — Full Revision</p>
-    <p class="vg-creator">Understand Quran Academy</p>
-    <p class="vg-duration">60 min</p>
+    <p class="vg-title">Advanced Tajweed Applied — Iranian Reciter (Morteza Haghighi)</p>
+    <p class="vg-creator">Iranian Quran Recitation</p>
+    <p class="vg-duration">45 min</p>
   </div>
 </a>
 

@@ -74,13 +74,13 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+rules+applied+surah+fatiha+recitation+analysis" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=parhizgar+iran+quran+reciter+tajweed+beautiful+recitation" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Tajweed Rules Applied — Surah Fatiha Analysis</p>
-    <p class="vg-creator">Understand Quran Academy</p>
-    <p class="vg-duration">22 min</p>
+    <p class="vg-title">Tajweed in Practice — Beautiful Iranian Recitation (Parhizgar)</p>
+    <p class="vg-creator">Iranian Quran Recitation</p>
+    <p class="vg-duration">20 min</p>
   </div>
 </a>
 

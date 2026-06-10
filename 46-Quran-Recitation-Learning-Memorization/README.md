@@ -28,9 +28,11 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 
 The Quran is the most recited, most memorised, and most studied book in human history — over 10 million people have memorised its 6,236 verses word-for-word. Yet for millions of Muslims worldwide who do not read Arabic, the sacred text remains out of reach. **This course changes that.**
 
-Designed from the ground up for **complete beginners** — children and adults alike — this course takes you step by step from not knowing a single Arabic letter to reciting the Quran with proper **Tajweed** (rules of recitation), understanding each verse through translation, and deepening your knowledge through the insights of three landmark Shia Tafseer works.
+Designed from the ground up for **complete beginners** — children and adults alike — this course takes you step by step from not knowing a single Arabic letter to reciting the Quran with proper **Tajweed** (rules of recitation), understanding each verse through translation, and deepening your knowledge through the insights of three landmark Tafseer works.
 
 You do not need to know Arabic. You do not need any prior experience. All you need is the desire to connect with the Quran.
+
+> **📖 This course is completely free and open to everyone.** No account, no payment, and no enrollment are required. All 10 modules, practice exams, flashcards, and cheat sheets are accessible directly — no sign-in, no trial, no gates.
 
 ---
 
@@ -47,28 +49,28 @@ You do not need to know Arabic. You do not need any prior experience. All you ne
 | ✅ **Key Surahs** | Recite Surah Yasin, Al-Mulk, and Ayatul Kursi with meaning |
 | ✅ **Hifz Techniques** | Use proven memorisation methods to retain what you learn |
 | ✅ **Translation** | Understand every verse in both English and Urdu |
-| ✅ **Tafseer** | Explore the profound meaning through Shia scholarly tradition |
+| ✅ **Tafseer** | Explore the profound meaning through classical scholarly tradition |
 
 ---
 
-## 📚 Tafseer Sources — Three Pillars of Shia Scholarship
+## 📚 Tafseer Sources — Three Pillars of Islamic Scholarship
 
 This course draws on three of the most authoritative works in Islamic exegesis:
 
 ### 1. Tafsir al-Mizan (تفسیر المیزان)
 **Author:** Allamah Sayyid Muhammad Husayn Tabatabai (1892–1981)
 
-The 27-volume *al-Mizan fi Tafsir al-Quran* is considered the most comprehensive Shia Tafseer of the modern era. Allamah Tabatabai employs a unique method of interpreting the Quran *through* the Quran itself — using one verse to explain another. His insights into philosophy, theology, and spirituality are unmatched. The English translation by Sayyid Saeed Akhtar Rizvi and others has made this treasure accessible to the world.
+The 27-volume *al-Mizan fi Tafsir al-Quran* is considered the most comprehensive Tafseer of the modern era. Allamah Tabatabai employs a unique method of interpreting the Quran *through* the Quran itself — using one verse to explain another. His insights into philosophy, theology, and spirituality are unmatched. The English translation by Sayyid Saeed Akhtar Rizvi and others has made this treasure accessible to the world.
 
 ### 2. Tafseer-e-Namoona (تفسیر نمونه)
 **Author:** Ayatollah Nasir Makarim Shirazi (born 1927)
 
-Written in Persian and translated into Arabic, Urdu, and English, *Tafseer-e-Namoona* (Exemplary Commentary) is among the most widely read Shia tafseers in the world today. Its approachable language, contemporary examples, and clear explanations make it ideal for students of all levels. Ayatollah Makarem Shirazi's team produced this 27-volume masterpiece over several decades.
+Written in Persian and translated into Arabic, Urdu, and English, *Tafseer-e-Namoona* (Exemplary Commentary) is among the most widely read tafseers in the world today. Its approachable language, contemporary examples, and clear explanations make it ideal for students of all levels. Ayatollah Makarem Shirazi's team produced this 27-volume masterpiece over several decades.
 
 ### 3. Tafsir Tasnim (تفسیر تسنیم)
 **Author:** Ayatollah Sheikh Abdullah Jawadi Amoli (born 1933)
 
-*Tafsir Tasnim* — named after the spring of Paradise mentioned in Surah Al-Mutaffifin — is the most detailed and ongoing Shia Tafseer project of the 21st century. Sheikh Jawadi Amoli combines Quranic reasoning, hadith scholarship, philosophy, and mysticism to illuminate the Quran's multi-layered meanings. Already exceeding 40 volumes for the first few juz alone, it represents the pinnacle of contemporary Islamic scholarship.
+*Tafsir Tasnim* — named after the spring of Paradise mentioned in Surah Al-Mutaffifin — is the most detailed and ongoing Tafseer project of the 21st century. Sheikh Jawadi Amoli combines Quranic reasoning, hadith scholarship, philosophy, and mysticism to illuminate the Quran's multi-layered meanings. Already exceeding 40 volumes for the first few juz alone, it represents the pinnacle of contemporary Islamic scholarship.
 
 ---
 

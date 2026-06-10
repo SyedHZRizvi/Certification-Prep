@@ -38,6 +38,7 @@ const PUBLIC_PREFIXES = [
   "/favicon",
   "/sitemap",
   "/robots.txt",
+  "/46-Quran-Recitation-Learning-Memorization/",
 ];
 
 // Routes that REQUIRE super-user OR administrator role.

@@ -2,6 +2,32 @@
 # NOTE: All paths are RELATIVE (no baseurl prefix). The layout prepends site.baseurl when generating href values.
 
 tracks:
+  # ------- Quran & Islamic Studies (1 course) -------
+  - id: quran
+    title: Quran Recitation & Memorization
+    subtitle: Bilingual EN/UR · Tajweed · Tafseer · Hifz
+    color: green
+    color_from: "#065f46"
+    color_to: "#34d399"
+    icon: "📖"
+    base: "/46-Quran-Recitation-Learning-Memorization/"
+    modules:
+      - { num: 1,  title: "Arabic Alphabet & Makhaarij",       slug: Module-01-Arabic-Alphabet-Makhaarij }
+      - { num: 2,  title: "Harakat — Short Vowels & Reading",  slug: Module-02-Harakat-Short-Vowels-Reading }
+      - { num: 3,  title: "Tajweed Foundations",               slug: Module-03-Tajweed-Rules-Foundations }
+      - { num: 4,  title: "Tajweed Advanced — Qalqalah",       slug: Module-04-Tajweed-Rules-Advanced-Qalqalah }
+      - { num: 5,  title: "Surah Al-Fatiha — Complete Study",  slug: Module-05-Surah-Fatiha-Complete-Study }
+      - { num: 6,  title: "Juz Amma — Short Surahs Part 1",   slug: Module-06-Juz-Amma-Short-Surahs-Part1 }
+      - { num: 7,  title: "Juz Amma — Short Surahs Part 2",   slug: Module-07-Juz-Amma-Short-Surahs-Part2 }
+      - { num: 8,  title: "Memorization Techniques (Hifz)",    slug: Module-08-Memorization-Techniques-Hifz }
+      - { num: 9,  title: "Yasin, Al-Mulk, Al-Kahf",           slug: Module-09-Selected-Surahs-Yasin-Mulk-Kahf }
+      - { num: 10, title: "Recitation Practice & Assessment",  slug: Module-10-Recitation-Practice-Assessment }
+    extras:
+      - { title: "Practice Exam 1 (Modules 1–5)", slug: Practice-Exams/Practice-Exam-1 }
+      - { title: "Practice Exam 2 (Modules 1–9)", slug: Practice-Exams/Practice-Exam-2 }
+      - { title: "Final Mock Exam (All Modules)",  slug: Practice-Exams/Final-Mock-Exam }
+      - { title: "Flashcards",                     slug: Flashcards }
+
   - id: scrum
     title: Scrum Master
     subtitle: PSM I Certification
@@ -2088,32 +2114,6 @@ tracks:
       - { title: "Practice Exam 2 (B1-B2)", slug: Practice-Exams/Practice-Exam-2 }
       - { title: "Final Mock Exam (C1-C2)", slug: Practice-Exams/Final-Mock-Exam }
       - { title: "Flashcards", slug: Flashcards }
-
-  # ------- Quran & Islamic Studies (1 course) -------
-  - id: quran
-    title: Quran Recitation & Memorization
-    subtitle: Bilingual EN/UR · Tajweed · Tafseer · Hifz
-    color: green
-    color_from: "#065f46"
-    color_to: "#34d399"
-    icon: "📖"
-    base: "/46-Quran-Recitation-Learning-Memorization/"
-    modules:
-      - { num: 1,  title: "Arabic Alphabet & Makhaarij",       slug: Module-01-Arabic-Alphabet-Makhaarij }
-      - { num: 2,  title: "Harakat — Short Vowels & Reading",  slug: Module-02-Harakat-Short-Vowels-Reading }
-      - { num: 3,  title: "Tajweed Foundations",               slug: Module-03-Tajweed-Rules-Foundations }
-      - { num: 4,  title: "Tajweed Advanced — Qalqalah",       slug: Module-04-Tajweed-Rules-Advanced-Qalqalah }
-      - { num: 5,  title: "Surah Al-Fatiha — Complete Study",  slug: Module-05-Surah-Fatiha-Complete-Study }
-      - { num: 6,  title: "Juz Amma — Short Surahs Part 1",   slug: Module-06-Juz-Amma-Short-Surahs-Part1 }
-      - { num: 7,  title: "Juz Amma — Short Surahs Part 2",   slug: Module-07-Juz-Amma-Short-Surahs-Part2 }
-      - { num: 8,  title: "Memorization Techniques (Hifz)",    slug: Module-08-Memorization-Techniques-Hifz }
-      - { num: 9,  title: "Yasin, Al-Mulk, Al-Kahf",           slug: Module-09-Selected-Surahs-Yasin-Mulk-Kahf }
-      - { num: 10, title: "Recitation Practice & Assessment",  slug: Module-10-Recitation-Practice-Assessment }
-    extras:
-      - { title: "Practice Exam 1 (Modules 1–5)", slug: Practice-Exams/Practice-Exam-1 }
-      - { title: "Practice Exam 2 (Modules 1–9)", slug: Practice-Exams/Practice-Exam-2 }
-      - { title: "Final Mock Exam (All Modules)",  slug: Practice-Exams/Final-Mock-Exam }
-      - { title: "Flashcards",                     slug: Flashcards }
 
   # ============= Animation & Motion Design Track =============
 module_pages:

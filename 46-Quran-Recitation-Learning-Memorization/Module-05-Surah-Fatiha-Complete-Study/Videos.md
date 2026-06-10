@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+al+mizan+tafseer+shia+tabatabai+explanation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+al+mizan+tafseer+tabatabai+explanation+meaning" target="_blank">
   <div class="vg-thumb">🌿<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,12 +74,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=sheikh+mishary+afasy+surah+fatiha+beautiful+recitation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+fatiha+iran+quran+recitation+beautiful" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Surah Al-Fatiha — Beautiful Recitation (Mishary Al-Afasy)</p>
-    <p class="vg-creator">Quran Recitations</p>
+    <p class="vg-title">Surah Al-Fatiha — Beautiful Recitation (Mahmoud Karimi)</p>
+    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
     <p class="vg-duration">5 min</p>
   </div>
 </a>

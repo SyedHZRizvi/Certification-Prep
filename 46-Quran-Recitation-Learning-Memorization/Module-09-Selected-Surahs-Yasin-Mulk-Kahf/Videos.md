@@ -74,13 +74,13 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+mulk+every+night+before+sleep+sunnah+prophet+benefits" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+yasin+mulk+iran+beautiful+recitation" target="_blank">
   <div class="vg-thumb">⭐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Surah Al-Mulk Every Night — Sunnah and Benefits</p>
-    <p class="vg-creator">Nightly Sunnah</p>
-    <p class="vg-duration">15 min</p>
+    <p class="vg-title">Surah Yasin & Al-Mulk — Beautiful Iranian Recitation</p>
+    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
+    <p class="vg-duration">25 min</p>
   </div>
 </a>
 

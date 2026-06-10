@@ -378,7 +378,7 @@ layout: none
               <label class="block text-xs font-bold uppercase tracking-wider text-slate-700">Course access</label>
               <label class="flex items-center gap-2 text-sm cursor-pointer select-none">
                 <input id="add-select-all" type="checkbox" class="rounded text-indigo-600 bg-white border-slate-400 focus:ring-indigo-400" />
-                <span class="font-semibold text-indigo-700">Select all 46 courses (full access)</span>
+                <span class="font-semibold text-indigo-700">Select all 45 paid courses (full access)</span>
               </label>
             </div>
             <div id="add-courses" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 p-4 rounded-lg bg-slate-50 border-2 border-slate-200 max-h-80 overflow-y-auto">
@@ -817,7 +817,7 @@ layout: none
     }
 
     function coursesLabel(courses) {
-      if (courses === '*') return '<span class="font-bold text-purple-700">All 46 courses</span>';
+      if (courses === '*') return '<span class="font-bold text-purple-700">All 45 paid courses</span>';
       if (!Array.isArray(courses) || courses.length === 0) return '<span class="text-slate-500 italic">none</span>';
       if (courses.length === 1) {
         const c = state.coursesById[courses[0]];

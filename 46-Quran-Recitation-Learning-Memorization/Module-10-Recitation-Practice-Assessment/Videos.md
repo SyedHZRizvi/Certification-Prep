@@ -54,12 +54,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=beautiful+quran+recitation+mishary+afasy+complete+surahs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+iran+quran+complete+recitation+beautiful+audio" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Beautiful Complete Quran Recitation — Model Audio</p>
-    <p class="vg-creator">Sheikh Mishary Al-Afasy</p>
+    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
     <p class="vg-duration">Various</p>
   </div>
 </a>

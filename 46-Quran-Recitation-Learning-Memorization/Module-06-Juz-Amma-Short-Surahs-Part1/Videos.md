@@ -74,12 +74,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+asr+imam+shafi+sufficient+guidance+tafsir" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+juz+amma+short+surahs+ikhlas+falaq+naas+iran" target="_blank">
   <div class="vg-thumb">✨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Al-Asr — Imam Al-Shafi's "Sufficient for All Guidance"</p>
-    <p class="vg-creator">Islamic Wisdom Channel</p>
+    <p class="vg-title">Juz Amma Surahs — Beautiful Recitation (Mahmoud Karimi)</p>
+    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
