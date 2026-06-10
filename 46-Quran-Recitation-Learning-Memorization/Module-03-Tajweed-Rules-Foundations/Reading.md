@@ -1,3 +1,10 @@
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
+<style>
+.lang-ur h1,.lang-ur h2,.lang-ur h3,.lang-ur h4{font-family:'Gulzar','Noto Nastaliq Urdu',serif;font-weight:400;line-height:2.4;}
+.lang-ur h1{font-size:1.8em;}
+.lang-ur h2{font-size:1.5em;}
+.lang-ur h3{font-size:1.25em;}
+</style>
 <div class="lang-switcher" markdown="0" style="background:linear-gradient(135deg,#064e3b,#065f46);border-radius:12px;padding:1.25rem;margin:0 0 2rem;text-align:center;box-shadow:0 4px 16px rgba(16,185,129,0.3);">
   <p style="color:#d1fae5;font-size:1rem;font-weight:600;margin:0 0 0.85rem;">🌐 Choose your learning language / اپنی زبان منتخب کریں</p>
   <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
@@ -195,7 +202,7 @@ Move to **Module 4 — Tajweed Advanced** for Qalqalah (bouncing letters), Meem 
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;text-align:right;font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem;" markdown="1">
+<div class="lang-ur" style="direction:rtl;text-align:right;font-family:'Noto Nastaliq Urdu','Gulzar','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem;" markdown="1">
 
 # ماڈیول ۳ — تجوید کے بنیادی اصول
 

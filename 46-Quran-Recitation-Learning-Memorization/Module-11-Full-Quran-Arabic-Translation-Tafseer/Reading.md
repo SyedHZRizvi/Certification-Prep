@@ -2,6 +2,14 @@
 title: "Module 11 — Full Quran Reference: Arabic, Translation & Tafseer"
 ---
 
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
+<style>
+.lang-ur h1,.lang-ur h2,.lang-ur h3,.lang-ur h4{font-family:'Gulzar','Noto Nastaliq Urdu',serif;font-weight:400;line-height:2.4;}
+.lang-ur h1{font-size:1.8em;}
+.lang-ur h2{font-size:1.5em;}
+.lang-ur h3{font-size:1.25em;}
+</style>
 <div class="lang-switcher" markdown="0" style="background:linear-gradient(135deg,#064e3b,#065f46);border-radius:12px;padding:1.25rem;margin:0 0 2rem;text-align:center;box-shadow:0 4px 16px rgba(16,185,129,0.3);">
   <p style="color:#d1fae5;font-size:1rem;font-weight:600;margin:0 0 0.85rem;">🌐 Choose your learning language / اپنی زبان منتخب کریں</p>
   <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
@@ -39,7 +47,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 .qr-head-ar{font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:2.4em;color:#064e3b;text-align:center;}
 .qr-head-meta{text-align:center;color:#64748b;font-size:.95rem;}
 .qr-trans-en{margin:.2rem 0 1rem;line-height:1.7;}
-.qr-trans-ur{direction:rtl;font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem;margin:.2rem 0 1rem;}
+.qr-trans-ur{direction:rtl;font-family:'Noto Nastaliq Urdu','Gulzar','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem;margin:.2rem 0 1rem;}
 .qr-links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.25rem;}
 .qr-links a{display:inline-block;padding:.55rem 1.1rem;border-radius:9px;background:#064e3b;color:#fff;text-decoration:none;font-size:.9rem;font-weight:600;}
 .qr-links a:hover{background:#065f46;}
@@ -138,7 +146,7 @@ Maulana Sayyid Zeeshan Haider Jawadi was one of the most distinguished Quran sch
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem" markdown="1">
+<div class="lang-ur" style="direction:rtl;font-family:'Noto Nastaliq Urdu','Gulzar','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem" markdown="1">
 
 # ماڈیول ۱۱ — قرآن مجید کا مکمل حوالہ: عربی متن، ترجمہ اور تفسیر
 
@@ -187,8 +195,8 @@ Maulana Sayyid Zeeshan Haider Jawadi was one of the most distinguished Quran sch
 </div>
 
 <div markdown="0">
-<h2 style="text-align:center;margin:2.5rem 0 .5rem;">📖 <span class="lang-en" style="display:inline;">The Complete Quran — All 114 Surahs</span><span class="lang-ur" style="display:inline;font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;">مکمل قرآن مجید — تمام ۱۱۴ سورتیں</span></h2>
-<p style="text-align:center;color:#64748b;margin:0 0 1rem;"><span class="lang-en" style="display:inline;">Click any surah to read its complete Arabic text with translation.</span><span class="lang-ur" style="display:inline;font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;">کسی بھی سورت پر کلک کریں — مکمل عربی متن مع ترجمہ پڑھیں۔</span></p>
+<h2 style="text-align:center;margin:2.5rem 0 .5rem;">📖 <span class="lang-en" style="display:inline;">The Complete Quran — All 114 Surahs</span><span class="lang-ur" style="display:inline;font-family:'Noto Nastaliq Urdu','Gulzar','Urdu Typesetting',serif;">مکمل قرآن مجید — تمام ۱۱۴ سورتیں</span></h2>
+<p style="text-align:center;color:#64748b;margin:0 0 1rem;"><span class="lang-en" style="display:inline;">Click any surah to read its complete Arabic text with translation.</span><span class="lang-ur" style="display:inline;font-family:'Noto Nastaliq Urdu','Gulzar','Urdu Typesetting',serif;">کسی بھی سورت پر کلک کریں — مکمل عربی متن مع ترجمہ پڑھیں۔</span></p>
 
 <div class="qr-panel" id="qr-panel">
   <p class="qr-placeholder">👇 Select a surah from the list below / نیچے فہرست میں سے کوئی سورت منتخب کریں</p>
@@ -824,7 +832,7 @@ This module is your permanent reference anchor for the Quran. The clickable inde
 
 </div>
 
-<div class="lang-ur" style="direction:rtl;font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem" markdown="1">
+<div class="lang-ur" style="direction:rtl;font-family:'Noto Nastaliq Urdu','Gulzar','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem" markdown="1">
 
 ## 📚 خلاصہ
 
