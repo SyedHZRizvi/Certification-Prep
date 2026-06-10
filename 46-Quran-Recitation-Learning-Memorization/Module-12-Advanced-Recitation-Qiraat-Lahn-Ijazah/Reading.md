@@ -76,6 +76,222 @@ Each Qira'ah is named after its Imam (master reader) and then its primary narrat
 
 ---
 
+### 🎓 Deep Study — All 10 Qira'at: Distinctive Features & Surah Examples
+
+The following is a practical student guide for recognising and eventually learning each of the 10 Qira'at. For each style, the **acoustic fingerprint** describes what you will hear first; the **surah examples** show the exact word or verse that differs from Hafs.
+
+#### Master Comparison Table 1 — Al-Fatiha 1:4 Across All 10 Qira'at
+
+The word مَلِكِ / مَالِكِ (King/Master) is the single most visible difference between Qira'at:
+
+| # | Qira'ah | Reads | Pronunciation |
+|---|---------|-------|---------------|
+| 1 | **Warsh 'an Nafi'** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
+| 1 | **Qalun 'an Nafi'** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
+| 2 | **Ibn Kathir al-Makki** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
+| 3 | **Abu 'Amr al-Basri** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short (same as Hafs) |
+| 4 | **Ibn 'Amir al-Shami** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 5 | **Hafs 'an 'Asim** *(baseline)* | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 5 | **Shu'ba 'an 'Asim** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 6 | **Hamzah al-Kufi** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 7 | **Al-Kisa'i** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 8 | **Abu Ja'far al-Madani** | مَالِكِ يَوۡمِ ٱلدِّين | MAA-liki — long Alif |
+| 9 | **Ya'qub al-Basri** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+| 10 | **Khalaf al-Bazzar** | مَلِكِ يَوۡمِ ٱلدِّين | MAL-iki — short |
+
+**Summary:** Nafi' (Warsh + Qalun), Ibn Kathir, and Abu Ja'far read مَالِكِ — the remaining 8 read مَلِكِ.
+
+#### Master Comparison Table 2 — Madd al-Munfasil Beat Lengths
+
+Madd al-Munfasil (Madd letter ends a word; Hamza starts the next) varies dramatically across Qira'at — the single fastest way to hear a style difference in flowing recitation:
+
+| Qira'ah | Munfasil Length | Example: Kawthar 108:1 إِنَّآ أَعۡطَيۡنَـٰك |
+|---------|----------------|----------------------------------------------|
+| Hafs 'an 'Asim | 4–5 beats | Standard extension |
+| Warsh 'an Nafi' | 5–6 beats | Noticeably longer — Warsh's hallmark |
+| Qalun 'an Nafi' | 2–4 beats | Moderate — shorter than Warsh |
+| Ibn Kathir | 2 beats only | Treated like Tabee'i — no extra extension |
+| Susi 'an Abi 'Amr | 2 beats only | Same minimal length as Ibn Kathir |
+| Duri 'an Abi 'Amr | 4–5 beats | Similar to Hafs |
+| Hamzah al-Kufi | 4–6 beats | Long — similar to Warsh |
+| Al-Kisa'i | 4–5 beats | Similar to Hafs |
+
+#### Master Comparison Table 3 — A Word Changed: Al-Baqarah 2:132
+
+One dramatic example of a Qira'ah using a completely different word form:
+
+| Qira'ah | Reads | English |
+|---------|-------|---------|
+| **All except Ibn 'Amir** | وَوَصَّىٰ إِبۡرَ ٰهِـۧمُ بَنِيهِ | "And Ibrahim charged his sons…" |
+| **Ibn 'Amir al-Shami** | وَأَوۡصَىٰٓ إِبۡرَ ٰهِـۧمُ بَنِيهِ | Same meaning, different verb form — وَوَصَّى → وَأَوصَى |
+
+Both are Quran. The meaning is the same; the grammatical structure differs.
+
+---
+
+#### Individual Study Cards — 10 Qira'at
+
+---
+
+**① Nafi' al-Madani (d. 785 CE) — Narrators: Warsh & Qalun**
+
+> *Region today: Morocco, Algeria, Tunisia, Libya, West Africa (Warsh); Libya, Tunisia, parts of Gulf (Qalun)*
+
+🎵 **Warsh fingerprint:** Long flowing Madds (Munfasil 5–6 beats) + مَالِكِ + Hamza facilitation (Tasheel) in specific positions — the Arabic sounds "rounder" and more drawn out than Hafs
+
+🎵 **Qalun fingerprint:** مَالِكِ + shorter Madds than Warsh (2–4 beats for Munfasil) + occasional Sukoon al-Mad (pause before Madd letter in specific words)
+
+| Surah | Hafs Reads | Warsh / Qalun Read | Difference |
+|-------|-----------|-------------------|------------|
+| Al-Fatiha 1:4 | مَلِكِ | مَالِكِ | Long Alif — "Maalik" not "Malik" |
+| Al-Kawthar 108:1 (إِنَّآ أَعۡطَيۡنَـٰك) | Munfasil: 4–5 beats | Warsh: 5–6 beats; Qalun: 2–4 beats | Listen for longer flow in Warsh recitations |
+| Al-Baqarah 2:6 (سَوَآءٌ عَلَيۡهِمۡ) | Full Hamza on سَوَاء | Warsh: Hamza softened/facilitated (Tasheel) | Smoother Hamza — subtle audible difference |
+
+---
+
+**② Ibn Kathir al-Makki (d. 737 CE) — Narrators: Al-Bazzi & Qunbul**
+
+> *Region today: Historically Mecca and Egypt; today a scholarly tradition*
+
+🎵 **Fingerprint:** مَالِكِ + extremely short Madd al-Munfasil (only 2 beats, same as natural Madd) — this makes the recitation feel faster and more compact than Hafs despite identical letters
+
+| Surah | Hafs Reads | Ibn Kathir Reads | Difference |
+|-------|-----------|-----------------|------------|
+| Al-Fatiha 1:4 | مَلِكِ | مَالِكِ | Long Alif |
+| Al-Kawthar 108:1 | إِنَّآ أَعطَيۡنَـٰك — Munfasil 4–5 beats | 2 beats only — no special extension | Munfasil treated as Tabee'i — shortest of all Qira'at |
+| Al-Ikhlas 112:4 | كُفُوًا أَحَد | كُفُؤًا أَحَد | Hamza position shifts: كُفُوًا (Hafs) vs كُفُؤًا (Ibn Kathir) |
+
+---
+
+**③ Abu 'Amr al-Basri (d. 770 CE) — Narrators: Al-Duri & Al-Susi**
+
+> *Region today: Sudan, Somalia, Eritrea (Duri narration widely used)*
+
+🎵 **Fingerprint:** **Idgham Kabir** — Abu 'Amr uniquely merges like or neighboring letters *across word boundaries* when the first word ends and the next begins with a related letter. This creates merged double-sounds not found in any other Qira'ah.
+
+🎵 **Susi sub-fingerprint:** Very short Madd Munfasil (2 beats) — makes Susi recitation sound clipped and rapid.
+
+| Surah | Hafs Reads | Abu 'Amr Reads | Difference |
+|-------|-----------|----------------|------------|
+| Al-Baqarah 2:10 (يَعۡلَمُ مَا) | يَعلَمُ مَا — two separate م sounds | يَعلَمَّا — م merges into م (Idgham Kabir) | Unique to Abu 'Amr: like letters across words merge |
+| Al-Kahf 18:110 (فَمَن كَانَ يَرۡجُو) | Normal — كاف and نون are distinct | Certain adjacent pairs merge | Idgham Kabir applies to 50+ letter pairs across the Quran |
+| Al-Kawthar 108:1 | Munfasil 4–5 beats (Duri) | Susi: 2 beats / Duri: 4–5 beats | Susi is shortest Munfasil among all Qira'at narrators |
+
+---
+
+**④ Ibn 'Amir al-Shami (d. 736 CE) — Narrators: Hisham & Ibn Dhakwan**
+
+> *Region today: Syria, Jordan, parts of the Levant (historical tradition)*
+
+🎵 **Fingerprint:** Contains word-level differences not found in any other Qira'ah — some entire words differ in grammatical form (not just vowels or Madd lengths)
+
+| Surah | Hafs Reads | Ibn 'Amir Reads | Difference |
+|-------|-----------|----------------|------------|
+| Al-Baqarah 2:132 | وَوَصَّىٰ إِبۡرَ ٰهِـۧمُ | وَأَوۡصَىٰٓ إِبۡرَ ٰهِـۧمُ | Entirely different verb construction — وَوَصَّى (Form II) vs وَأَوصَى (Form IV) |
+| Al-Nisa 4:1 | تَسَآءَلُونَ بِهِ | تَسَّآءَلُونَ بِهِ | Shaddah added on ت — changes the rhythmic feel |
+| Al-Baqarah 2:9 | يُخَـٰدِعُونَ ٱللَّهَ | يُخَـٰدِعُونَ ٱللَّهَ (Hisham same; Ibn Dhakwan slight difference in specific verse) | Ibn Dhakwan and Hisham differ from each other in select positions |
+
+---
+
+**⑤ 'Asim al-Kufi (d. 745 CE) — Narrators: Hafs & Shu'ba**
+
+> *Hafs: ~95% of world. Shu'ba: scholarly preservation tradition*
+
+🎵 **Hafs fingerprint:** This is your baseline — the Quran you already know. Clear full Hamzas, 4–5 beat Munfasil, مَلِكِ, standard Noon rules.
+
+🎵 **Shu'ba fingerprint:** Same Imam, strikingly different narrator — Shu'ba has unique word-forms that deviate further from Hafs than many expect from a shared Imam.
+
+| Surah | Hafs Reads | Shu'ba Reads | Difference |
+|-------|-----------|-------------|------------|
+| Al-Baqarah 2:184 | يُطِيقُونَهُۥ — present tense (those who can bear it) | يَطَّوَّقُونَهُۥ — different verb form entirely | Major word-form difference; both are Mutawatir |
+| Al-An'am 6:91 | مَا أَنزَلَ ٱللَّهُ | ما أَنزَلَ — specific voweling and Madd handling differs | Subtle vowel differences in multiple verses |
+| Al-Fatiha | مَلِكِ | مَلِكِ | Same as Hafs in Al-Fatiha |
+
+---
+
+**⑥ Hamzah al-Kufi (d. 773 CE) — Narrators: Khalaf & Khallad**
+
+> *Region today: Iraq, Khorasan historically; now a scholarly/academic tradition*
+
+🎵 **Fingerprint:** **Tahqiq al-Hamza** — Hamzah pronounces every Hamza with maximum clarity, even where others soften it. More distinctive: dramatic transformation of word-final Hamzas when *stopping* (Waqf). If you hear a reciter where Hamzas at the end of words seem to disappear and the vowel before extends — that is Hamzah.
+
+| Surah | Hafs at Waqf | Hamzah at Waqf | Difference |
+|-------|-------------|----------------|------------|
+| Stopping on جَآءَ (Al-Fatiha etc.) | جَآءَ — Hamza remains | جَا — Hamza drops; preceding Alif extends | Hamzah converts word-final ء to Madd at stop |
+| Stopping on يُؤۡمِنُونَ | يُؤۡمِنُونَ — ء remains | يُومِنُونَ — ء becomes Waw (Madd) | ء → و when preceded by Damma at Waqf |
+| Mid-word يَسۡـَٔلُونَ (Al-Baqarah 2:186) | يَسۡـَٔلُونَ — soft glottal | يَسۡـَٔلُونَ — strong, full Hamza (Tahqiq) | Hamzah's Hamza is the hardest/clearest of all Qira'at |
+
+---
+
+**⑦ Al-Kisa'i (d. 804 CE) — Narrators: Abu al-Harith & Al-Duri**
+
+> *Region today: Iraq and Central Asia historically; now academic tradition*
+
+🎵 **Fingerprint:** **Al-Imala** (الإمَالة) — "tilting." In Al-Kisa'i, certain Alifs and final Fathas are "bent" toward a sound between "aa" and "ee." Word-final Alifs in specific words gain a distinctive "ay"-like quality. This is instantly recognisable to trained ears and gives Al-Kisa'i recitation a unique melodic character.
+
+| Surah | Hafs Reads | Al-Kisa'i Reads | Difference |
+|-------|-----------|----------------|------------|
+| Al-A'la 87:1 (رَبِّكَ ٱلۡأَعۡلَى) | الأَعلَى — final Alif = "aa" | الأَعلَى — Imala: final Alif tilted toward "ee" sound | Final word-Alifs gain Imala throughout Quran |
+| Al-Ghashiya 88:1 (ٱلۡغَـٰشِيَة) | Normal Alif in غَاشِيَة | Alif in غَاشِيَة has Imala | Pattern: word-final Alifs consistently imaled |
+| Al-Haaqqa 69:19 (كِتَـٰبِيَهۡ) | Normal كِتَاب — long "aa" Alif | كِتَابِيَهۡ — Alif tilted (Imala) toward "ee" | Imala in كتاب — changes the sound of the long vowel |
+
+---
+
+**⑧ Abu Ja'far al-Madani (d. 747 CE) — Narrators: Ibn Wardan & Ibn Jummaz**
+
+> *Region today: Madinah and parts of Egypt historically; now scholarly tradition*
+
+🎵 **Fingerprint:** مَالِكِ + specific Idgham (merging) rules that differ from Hafs + Ghunna (nasal resonance) applied in positions where Hafs does not apply it. Abu Ja'far is the "Madinan complement" to Nafi' — both from Madinah, similar in some features.
+
+| Surah | Hafs Reads | Abu Ja'far Reads | Difference |
+|-------|-----------|-----------------|------------|
+| Al-Fatiha 1:4 | مَلِكِ | مَالِكِ | Long Alif — same as Warsh |
+| Al-Baqarah 2:9 | يُخَـٰدِعُونَ (Form III verb) | يُخَدِّعُونَ (Form II verb — different stem) | Different verb form; same meaning |
+| Specific Noon Sakin + Waw/Ya | Standard Hafs Idgham with Ghunna | Abu Ja'far applies Ghunna in certain Noon positions differently | Nuanced nasal differences in flowing recitation |
+
+---
+
+**⑨ Ya'qub al-Basri (d. 820 CE) — Narrators: Ruways & Rawh**
+
+> *Region today: Yemen and parts of East Africa historically; now scholarly tradition*
+
+🎵 **Fingerprint:** **Al-Rawn (الرَّوم) and Al-Ishmam (الإشمام)** at verse-end stops — Ya'qub uses these two techniques extensively. Rawn = a faint, barely audible vowel sound at the stop point (instead of complete silence). Ishmam = the lips form the shape of a Damma but no sound is produced — a visual signal of the original vowel. Both are used across all verse-end pauses.
+
+| Surah | Hafs at Waqf | Ya'qub at Waqf | Difference |
+|-------|-------------|----------------|------------|
+| Any verse ending with Damma (e.g., الرَّحِيمُ) | Complete silence at stop | Ishmam: lips round into ُ shape silently, OR Rawn: barely audible "u" | Ya'qub signals the underlying vowel at every stop |
+| Any verse ending with Kasra (e.g., الدِّينِ) | Complete silence | Rawn: faint barely-voiced "i" at stop | Rawn preserves the vowel echo at stop |
+| Al-Kahf 18 (specific verse endings) | Standard Waqf | Ruways and Rawh have slight differences from each other in select verses | Two narrators have individual variations |
+
+---
+
+**⑩ Khalaf al-Bazzar (d. 843 CE) — Narrators: Ishaq & Idris**
+
+> *Region today: Iraq and Khorasan historically; now purely scholarly tradition*
+
+🎵 **Fingerprint:** A blend of Hamzah's style (his teacher) with Al-Kisa'i's Imala. Khalaf uses Hamzah's Waqf transformations for Hamza AND applies Imala to specific word-final Alifs — making it the most "layered" of the 10 Qira'at in terms of combined features.
+
+| Surah | Hafs Reads | Khalaf Reads | Difference |
+|-------|-----------|-------------|------------|
+| Al-Fatiha 1:4 | مَلِكِ | مَلِكِ | Same as Hafs — no Alif change |
+| Word-final Hamza at Waqf (جَآءَ etc.) | Hamza remains at Waqf | Like Hamzah: ء drops and preceding vowel extends | Inherits Hamzah's Waqf Hamza rules |
+| Word-final Alifs in specific words | Normal "aa" sound | Imala: tilted toward "ee" (like Al-Kisa'i) | Combines Hamzah's Waqf rules + Kisa'i's Imala |
+
+---
+
+#### Practical Guide: How to Learn Multiple Qira'at
+
+> 🎯 **Recommended learning sequence:**
+>
+> 1. **Master Hafs 'an 'Asim completely first** — zero Lahn al-Jali, strong Tajweed. This is your foundation.
+> 2. **Add Warsh 'an Nafi' second** — the most widely recorded and available style after Hafs. Key changes: مَالِكِ, longer Madds, facilitated Hamzas in specific positions.
+> 3. **Study Ibn Kathir next** — introduces the concept of minimal Munfasil (2 beats) which resets your understanding of Madd as flexible, not fixed.
+> 4. **For each new Qira'ah:** (a) Identify its fingerprint feature. (b) Listen to Al-Fatiha in that Qira'ah — you will hear مَالِكِ vs مَلِكِ immediately. (c) Listen to Surah Al-Kawthar — Munfasil differences are clearest in a short surah. (d) Find a certified teacher (Ijazah holder) for proper Talaqqi.
+>
+> 🚨 **Important:** Never self-learn a new Qira'ah from recordings alone. Each Qira'ah requires Talaqqi from a sheikh certified in that specific Qira'ah. Mistakes in Qira'at become deeply embedded habits.
+
+---
+
 ## 🚫 Section 2 — Al-Lahn: Recitation Error Classification
 
 Every Tajweed tradition classifies errors in recitation into two categories. Understanding these protects both the correctness and the sincerity of your recitation.
