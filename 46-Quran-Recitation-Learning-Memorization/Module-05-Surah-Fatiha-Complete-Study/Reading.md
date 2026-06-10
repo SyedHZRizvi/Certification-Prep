@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
 <style>
 .lang-ur h1,.lang-ur h2,.lang-ur h3,.lang-ur h4{font-family:'Gulzar','Noto Nastaliq Urdu',serif;font-weight:400;line-height:2.4;}
 .lang-ur h1{font-size:1.8em;}
@@ -35,7 +35,7 @@ This surah is a **conversation between the servant and Allah**. When you recite 
 
 <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:2px solid #34d399;border-radius:16px;padding:2rem;margin:1.5rem 0;text-align:center;">
 
-<div style="font-size:2.4em;direction:rtl;text-align:center;line-height:3;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#064e3b;">
+<div style="font-size:2.4em;direction:rtl;text-align:center;line-height:3;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#064e3b;">
 
 بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ﴿١﴾
 
@@ -313,7 +313,7 @@ That's exactly what Al-Fatiha is. And you say it 17 times every day — like kno
 ## 📖 مکمل سورت — عربی متن تشکیل کے ساتھ
 
 <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:2px solid #34d399;border-radius:16px;padding:2rem;margin:1.5rem 0;text-align:center;">
-<div style="font-size:2.4em;direction:rtl;text-align:center;line-height:3;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#064e3b;">
+<div style="font-size:2.4em;direction:rtl;text-align:center;line-height:3;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#064e3b;">
 
 بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ﴿١﴾
 

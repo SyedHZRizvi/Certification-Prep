@@ -1,8 +1,8 @@
 # Practice Exam 1 — Quran Recitation & Memorization
 
 **Coverage:** Modules 1–5 (Alphabet, Harakat, Tajweed Foundations, Tajweed Advanced, Surah Al-Fatiha)
-**Questions:** 30
-**Time:** 45 minutes
+**Questions:** 38
+**Time:** 55 minutes
 
 ---
 
@@ -248,6 +248,72 @@ D. About 30 years
 
 ---
 
+### 31.
+Which of the following is an etiquette of Adab al-Tilawa BEFORE beginning recitation?
+
+A. Performing sajda al-tilawa whenever a verse of mercy is reached
+B. Reciting ta'awwudh (A'udhu billah) followed by the basmala
+C. Stopping immediately at every Waqf symbol
+D. Reciting at the fastest pace possible to complete more verses
+
+### 32.
+What is Tarteel in the context of Quran recitation?
+
+A. Reciting as rapidly as possible to demonstrate memorisation
+B. Measured, unhurried recitation that allows for proper Tajweed and reflection
+C. The act of bowing during recitation
+D. Reciting in a group setting only
+
+### 33.
+What is Sajda al-Tilawa, and when does it occur?
+
+A. A dua recited at the end of every Juz
+B. A prostration performed when a verse of prostration (ayat al-sajda) is recited
+C. The position of sitting cross-legged during Quran study
+D. The opening supplication before beginning a new surah
+
+### 34.
+In the Sifaat al-Huruf system, the attribute of Jahr (جهر) means:
+
+A. The letter is whispered with partial airflow
+B. The letter is voiced — the breath is held back and the sound resonates fully
+C. The letter has an echo-like bounce
+D. The letter is elongated for two beats
+
+### 35.
+Which of the following is a correct description of the Sifa of Isti'la (استعلاء)?
+
+A. The tongue is lowered toward the lower jaw when pronouncing these letters
+B. The back of the tongue rises toward the soft palate, producing a heavy/thick sound
+C. The airflow is released smoothly without restriction
+D. The lips come together to produce the sound
+
+### 36.
+The mnemonic خُصَّ ضَغْطٍ قِظ refers to:
+
+A. The 5 Qalqalah letters
+B. The 6 throat letters (Huruf al-Halq)
+C. The 7 letters of Isti'la — the heavy (emphatic) letters
+D. The 15 Ikhfa letters
+
+### 37.
+Madd al-Badal (Type 5) is identified by which characteristic?
+
+A. A Madd letter followed by a Hamza in the same word — 4-5 beats
+B. A Hamza appearing BEFORE a Madd letter in the same word — 2 beats
+C. A Madd letter before a verse-end letter when stopping — 2, 4, or 6 beats
+D. A Madd letter followed by a Shaddah — 6 beats
+
+### 38.
+Madd al-Arid lil-Sukoon applies specifically when:
+
+A. A Hamza appears before a long vowel within one word
+B. Two Hamzas appear consecutively in the same word
+C. A Madd letter occurs before a verse-end letter and the reciter STOPS at that verse-end
+D. A Madd letter is followed by a Shaddah anywhere in the Quran
+
+---
+
 ## 🎯 Answer Key (No Cheating!)
 
 ```
@@ -281,4 +347,12 @@ D. About 30 years
 28. B — ص ض ط ظ
 29. B — Waw/Ya with Sukoon after Fatha = 2 beats
 30. C — 17 years (6236 ÷ 365 ≈ 17)
+31. B — Ta'awwudh then basmala before recitation
+32. B — Measured, unhurried recitation with proper Tajweed and reflection
+33. B — Prostration performed upon reaching an ayat al-sajda
+34. B — Jahr = voiced; breath held back, sound resonates fully
+35. B — Back of tongue rises toward soft palate = heavy/thick sound
+36. C — The 7 letters of Isti'la (heavy emphatic letters)
+37. B — Hamza FIRST then Madd letter in the same word = 2 beats
+38. C — Madd letter before verse-end when the reciter stops (2, 4, or 6 beats)
 ```

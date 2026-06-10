@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
 <style>
 .lang-ur h1,.lang-ur h2,.lang-ur h3,.lang-ur h4{font-family:'Gulzar','Noto Nastaliq Urdu',serif;font-weight:400;line-height:2.4;}
 .lang-ur h1{font-size:1.8em;}
@@ -123,7 +123,7 @@ When a Fatha is followed by an Alif (ا), the "a" sound is lengthened:
 
 Let's apply everything above to the most recited phrase in the Quran:
 
-<div style="font-size:2.4em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;padding:1rem;background:#f0fdf4;border-radius:8px;margin:1rem 0;">
+<div style="font-size:2.4em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#065f46;padding:1rem;background:#f0fdf4;border-radius:8px;margin:1rem 0;">
 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 </div>
 
@@ -180,7 +180,7 @@ For each letter below, name the harakat and its sound:
 ### Exercise 2: Read these Quranic words
 Practice reading with harakat — look up pronunciation after:
 
-<div style="font-size:1.8em;direction:rtl;text-align:center;line-height:2.8;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;padding:1rem;background:#f0fdf4;border-radius:8px;margin:1rem 0;">
+<div style="font-size:1.8em;direction:rtl;text-align:center;line-height:2.8;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#065f46;padding:1rem;background:#f0fdf4;border-radius:8px;margin:1rem 0;">
 اَلْحَمْدُ — رَبِّ — اِيَّاكَ — نَعْبُدُ — اِهْدِنَا
 </div>
 
@@ -262,7 +262,7 @@ Move on to **Module 3 — Tajweed Rules: Foundations** to learn what happens at 
 
 ## 📖 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ پڑھنا سیکھیں
 
-<div style="font-size:2.4em;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;padding:1rem;background:#f0fdf4;border-radius:8px;margin:1rem 0;direction:rtl;">
+<div style="font-size:2.4em;text-align:center;line-height:2.5;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#065f46;padding:1rem;background:#f0fdf4;border-radius:8px;margin:1rem 0;direction:rtl;">
 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 </div>
 

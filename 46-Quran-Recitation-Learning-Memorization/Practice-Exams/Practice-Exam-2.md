@@ -1,8 +1,8 @@
 # Practice Exam 2 — Quran Recitation & Memorization
 
 **Coverage:** Modules 1–9 (All Tajweed, Surah Al-Fatiha, Juz Amma, Hifz, Selected Surahs)
-**Questions:** 40
-**Time:** 60 minutes
+**Questions:** 46
+**Time:** 70 minutes
 
 ---
 
@@ -328,6 +328,56 @@ D. Contains 6,000 verses
 
 ---
 
+### 41.
+Which of the following is an etiquette of Adab al-Tilawa that must be observed regarding Mushaf handling?
+
+A. The Mushaf may be placed on the floor as long as it is on a clean surface
+B. The Mushaf should be handled with respect — not placed on the floor, preferably in a state of tahara (cleanliness)
+C. One must always face the qibla when holding the Mushaf, even when not reciting
+D. The Mushaf should only be touched by those who have completed a full khatm
+
+### 42.
+The dua recited upon completing a full khatm (completion) of the Quran includes the phrase:
+
+A. سُبحَانَ اللَّهِ وَبِحَمدِهِ
+B. صَدَقَ اللَّهُ العَظِيم
+C. أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيمِ
+D. اللَّهُمَّ اجعَلنِي مِنَ المُتَّقِين
+
+### 43.
+In Sifaat al-Huruf, the opposing pair of Jahr (voiced) and Hams (whispered) refers to:
+
+A. Whether the letter is heavy (tafkheem) or light (tarqeeq)
+B. Whether the breath is held back (voiced resonance) or allowed to flow (whispered airflow)
+C. Whether the letter is pronounced at the lips or in the throat
+D. Whether the letter causes the tongue to rise or lower
+
+### 44.
+The Sifa of Idhlaq (إذلاق) describes letters that are:
+
+A. Pronounced with a bouncing echo at the Makhraj
+B. Smooth and easy to articulate — flowing off the tip of the tongue or lip
+C. Heavy and raised toward the soft palate
+D. Produced entirely from the nasal passage
+
+### 45.
+In Madd al-Badal, the word آمَنَ (āmana) is an example because:
+
+A. It contains a Madd letter followed by a Hamza in the same word
+B. The original form had two Hamzas; the second Hamza was substituted (badal) with a Madd letter — Hamza comes FIRST, then the Madd
+C. It ends with a Madd letter at a verse-stop, allowing 2-6 beats
+D. It contains a Madd letter before a Shaddah, requiring 6 beats
+
+### 46.
+Madd al-Arid lil-Sukoon and Madd Leen both share which characteristic?
+
+A. They both require exactly 6 beats with no flexibility
+B. They both occur only when the Hamza immediately precedes the Madd letter
+C. They are both variable-duration Madds that apply specifically when the reciter stops (waqf) at a verse-end
+D. They are both mandatory and must be applied even when continuing recitation without stopping
+
+---
+
 ## 🎯 Answer Key (No Cheating!)
 
 ```
@@ -371,4 +421,10 @@ D. Contains 6,000 verses
 38. B — Al-Falaq + An-Naas are the two refuge surahs
 39. C — ل and ر only (Idgham without Ghunnah)
 40. B — Millions memorise it in a non-native language
+41. B — Mushaf handled with respect; not placed on floor; tahara preferred
+42. B — صَدَقَ اللَّهُ العَظِيم is the after-khatm dua
+43. B — Jahr = breath held back (voiced); Hams = breath flows (whispered)
+44. B — Idhlaq = smooth, flowing easily off the tip of tongue or lip
+45. B — Hamza FIRST, then Madd (substituted for original second Hamza) = 2 beats
+46. C — Both are variable-duration Madds applied specifically at waqf (verse-end stop)
 ```

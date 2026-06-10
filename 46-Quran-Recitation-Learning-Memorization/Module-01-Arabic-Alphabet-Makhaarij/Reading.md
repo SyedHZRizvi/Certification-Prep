@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
 <style>
 .lang-ur h1,.lang-ur h2,.lang-ur h3,.lang-ur h4{font-family:'Gulzar','Noto Nastaliq Urdu',serif;font-weight:400;line-height:2.4;}
 .lang-ur h1{font-size:1.8em;}
@@ -210,7 +210,7 @@ Try making each sound and find where it lives in your mouth. That's the makhraj!
 ### Exercise 1: Letter Identification
 Look at these words from the Quran's Bismillah and find the letters you know:
 
-<div style="font-size:2.2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;">
+<div style="font-size:2.2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#065f46;">
 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 </div>
 
@@ -275,7 +275,7 @@ Classical Tajweed scholars organised the core Sifaat as five pairs of opposites.
 
 These seven letters carry the quality of Isti'la permanently. Unlike thin letters that stay flat in the mouth, these always require the back of the tongue to arch upward, giving them a "full," rounded, heavy quality:
 
-<div style="font-size:2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;background:#f0fdf4;border-radius:8px;padding:0.5rem 1rem;margin:1rem 0;">
+<div style="font-size:2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#065f46;background:#f0fdf4;border-radius:8px;padding:0.5rem 1rem;margin:1rem 0;">
 خ — ص — ض — ط — ظ — غ — ق
 </div>
 
@@ -299,7 +299,7 @@ These seven letters carry the quality of Isti'la permanently. Unlike thin letter
 
 Five letters produce an echo-bounce (Qalqalah) when they appear with a Sukoon or are stopped upon at the end of a verse. Knowing their Sifaat explains why: they are all **Jahr** (vocal cords on) + **Shadda** (airflow blocked), so when the flow is released there is a natural rebound of sound.
 
-<div style="font-size:2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;background:#f0fdf4;border-radius:8px;padding:0.5rem 1rem;margin:1rem 0;">
+<div style="font-size:2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#065f46;background:#f0fdf4;border-radius:8px;padding:0.5rem 1rem;margin:1rem 0;">
 ق — ط — ب — ج — د
 </div>
 
@@ -435,7 +435,7 @@ Move on to **Module 2 — Harakat & Basic Reading** where you'll add short vowel
 
 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ میں ان حروف کو تلاش کریں:
 
-<div style="font-size:2.2em;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;direction:rtl;">
+<div style="font-size:2.2em;text-align:center;line-height:2.5;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;color:#065f46;direction:rtl;">
 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
 </div>
 

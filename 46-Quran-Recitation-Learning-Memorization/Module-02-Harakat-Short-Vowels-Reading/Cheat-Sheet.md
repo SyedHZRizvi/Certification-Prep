@@ -27,7 +27,7 @@
 
 ## Bismillah Harakat Breakdown
 
-<div style="direction:rtl;font-family:'Amiri','Traditional Arabic',serif;font-size:1.6em;text-align:center;line-height:2.5;color:#065f46;">
+<div style="direction:rtl;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;font-size:1.6em;text-align:center;line-height:2.5;color:#065f46;">
 بِ(Kasra) سْ(Sukoon) مِ(Kasra) — اللَّهِ(Shaddah+Kasra) — الرَّحْمَٰنِ(Shaddah) — الرَّحِيمِ(Shaddah+long-ī)
 </div>
 

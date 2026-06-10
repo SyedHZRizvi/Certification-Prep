@@ -3,7 +3,7 @@ title: "Module 11 — Full Quran Reference: Arabic, Translation & Tafseer"
 ---
 
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Gulzar&display=swap" rel="stylesheet">
 <style>
 .lang-ur h1,.lang-ur h2,.lang-ur h3,.lang-ur h4{font-family:'Gulzar','Noto Nastaliq Urdu',serif;font-weight:400;line-height:2.4;}
 .lang-ur h1{font-size:1.8em;}
@@ -29,22 +29,22 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 .tf-tab.active{background:#ffffff;color:#064e3b;}
 .tf-pane{padding:1.25rem 1.5rem;display:none;background:#fff;line-height:1.75;}
 .tf-pane.active{display:block;}
-.ayah-arabic{direction:rtl;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:2.2em;color:#064e3b;line-height:3;background:#f0fdf4;padding:1rem 1.5rem;border-radius:8px;border-right:4px solid #34d399;margin:.75rem 0;}
+.ayah-arabic{direction:rtl;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;font-size:2.2em;color:#064e3b;line-height:3;background:#f0fdf4;padding:1rem 1.5rem;border-radius:8px;border-right:4px solid #34d399;margin:.75rem 0;}
 .ayah-num{display:inline-block;background:#064e3b;color:#fff;border-radius:50%;min-width:2rem;height:2rem;line-height:2rem;text-align:center;font-size:.85rem;font-weight:700;margin-right:.75rem;font-family:sans-serif;}
-.qr-basmala{direction:rtl;text-align:center;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.9em;color:#065f46;margin:1rem 0;}
+.qr-basmala{direction:rtl;text-align:center;font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;font-size:1.9em;color:#065f46;margin:1rem 0;}
 .qr-filter{width:100%;padding:.8rem 1.1rem;border:2px solid #a7f3d0;border-radius:10px;font-size:1rem;margin:1rem 0;box-sizing:border-box;}
 .qr-index{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.6rem;margin:0 0 2rem;}
 .qr-row{display:flex;align-items:center;gap:.7rem;padding:.7rem .9rem;background:#fff;border:1px solid #d1fae5;border-radius:10px;cursor:pointer;text-align:left;transition:.15s;font-family:inherit;}
 .qr-row:hover{border-color:#34d399;box-shadow:0 2px 10px rgba(16,185,129,.18);transform:translateY(-1px);}
 .qr-num{background:#064e3b;color:#fff;border-radius:8px;min-width:2.1rem;height:2.1rem;line-height:2.1rem;text-align:center;font-weight:700;font-size:.85rem;flex-shrink:0;}
 .qr-names{display:flex;flex-direction:column;min-width:0;flex:1;}
-.qr-ar{font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;color:#064e3b;line-height:1.5;}
+.qr-ar{font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;color:#064e3b;line-height:1.5;}
 .qr-en{font-size:.82rem;color:#475569;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .qr-meta{font-size:.72rem;color:#94a3b8;white-space:nowrap;flex-shrink:0;}
 .qr-panel{border:2px solid #a7f3d0;border-radius:14px;padding:1.5rem;margin:1.25rem 0 2rem;background:#fff;min-height:90px;}
 .qr-placeholder{color:#64748b;text-align:center;padding:1rem 0;font-size:1.05rem;}
 .qr-head{border-bottom:2px solid #f0fdf4;padding-bottom:1rem;margin-bottom:.5rem;}
-.qr-head-ar{font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:2.4em;color:#064e3b;text-align:center;}
+.qr-head-ar{font-family:'Amiri Quran','Scheherazade New','Traditional Arabic',serif;font-size:2.4em;color:#064e3b;text-align:center;}
 .qr-head-meta{text-align:center;color:#64748b;font-size:.95rem;}
 .qr-trans-en{margin:.2rem 0 1rem;line-height:1.7;}
 .qr-trans-ur{direction:rtl;font-family:'Noto Nastaliq Urdu','Gulzar','Urdu Typesetting',serif;line-height:2.2;font-size:1.1rem;margin:.2rem 0 1rem;}

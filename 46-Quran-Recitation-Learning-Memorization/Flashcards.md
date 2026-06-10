@@ -501,3 +501,133 @@
 **Q:** What is the virtue of reciting Surah Al-Mulk every night?
 
 **A:** It intercedes for its reciter in the grave, preventing punishment (Abu Dawud, Tirmidhi). The Prophet (sallallahu alayhi wa aalihi wasallam) reportedly never slept without reciting it (Ibn Masud).
+
+## Module 1 — Adab al-Tilawa & Sifaat al-Huruf
+
+**Q:** What are the key Adab (etiquettes) before beginning Quran recitation?
+
+**A:** Be in a state of Tahara (cleanliness/wudu), choose a clean quiet space, face the Qibla if possible, begin with Ta'awwudh (A'udhu billahi min al-Shaytan al-Rajim), then recite Basmala.
+
+**Q:** What is Tarteel (تَرتِيل) in recitation?
+
+**A:** Measured, unhurried recitation — giving each letter its right while reflecting on the meaning. The Quran was revealed: "wa rattil al-Quran tartila" (73:4).
+
+**Q:** What is Tadabbur (تَدَبُّر)?
+
+**A:** Deep reflection on the meanings of Quranic verses during recitation. The Quran commands: "afala yatadabbarun al-Quran" — do they not reflect on the Quran?
+
+**Q:** What dua is said when finishing a Quran recitation session?
+
+**A:** صَدَقَ اللَّهُ العَظِيم — Sadaqallahu al-Adheem (Allah the Almighty has spoken truth). This is the traditional closing expression after Quranic recitation.
+
+**Q:** What are Sifaat al-Huruf (صِفَات الحُرُوف)?
+
+**A:** The characteristic properties of Arabic letters beyond their Makhraj (articulation point). They include qualities like Jahr vs Hams, Shiddah vs Rakhawa, Isti'la vs Istifal, etc. They distinguish letters with the same Makhraj from each other.
+
+**Q:** What is the mnemonic for the 7 heavy (Tafkheem) letters?
+
+**A:** خُصَّ ضَغْطٍ قِظ — representing Kha (خ), Sad (ص), Dad (ض), Ghayn (غ), Ta-heavy (ط), Qaf (ق), Dha-heavy (ظ). These letters are always pronounced with "heaviness" (raised tongue/back of mouth).
+
+**Q:** What is the difference between Jahr and Hams in Sifaat al-Huruf?
+
+**A:** Jahr (الجَهر) = voiced — the breath is held while the vocal cords vibrate (most Arabic letters). Hams (الهَمس) = whispered/unvoiced — breath flows freely with less vocal cord vibration. Hams letters: فَحَثَّهُ شَخصٌ سَكَتَ.
+
+## Module 3 — Madd Badal & Madd Arid (All 6 Madd Types)
+
+**Q:** What is Madd al-Badal (مَدّ البَدَل)?
+
+**A:** Substitute Madd — 2 beats. A Hamza appears BEFORE a Madd letter in the SAME word. Examples: آمَنَ (āmana), إِيمَان (īmān), أُوتِيَ (ūtiya). Key distinction: Badal = Hamza FIRST then Madd letter.
+
+**Q:** How do you distinguish Madd al-Badal from Madd al-Muttasil?
+
+**A:** Badal: Hamza comes BEFORE the Madd letter (e.g., آمَنَ — alif-hamza then long alif). Muttasil: the Madd letter comes BEFORE the Hamza (e.g., جَآءَ — long alif then hamza). Remember: Badal = Hamza first; Muttasil = Madd letter first.
+
+**Q:** What is Madd al-Arid lil-Sukoon (مَدّ عَارِض لِلسُّكُون)?
+
+**A:** Contextual Sukoon Madd — 2, 4, or 6 beats (reciter's choice). A Madd letter appears before the final letter of a verse when you STOP (make Waqf). The final letter gets a temporary Sukoon on stopping. Example: رَحِيمٌ → when stopping, the ي extends 2-6 beats.
+
+**Q:** Name all 6 Madd types with their beat counts.
+
+**A:** 1. Tabee'i (natural) — 2. 2. Muttasil (connected Hamza same word) — 4-5. 3. Munfasil (Hamza next word) — 4-5. 4. Leen (Waw/Ya + Sukoon after Fatha) — 2. 5. Badal (Hamza before Madd, same word) — 2. 6. Arid lil-Sukoon (verse-end stop) — 2, 4, or 6.
+
+## Module 10 — Recitation Practice & Self-Assessment
+
+**Q:** What are the three levels of recitation speed in Islamic tradition?
+
+**A:** 1. Tahqiq (تَحقِيق) — slowest, maximum precision, for learning and teaching. 2. Tarteel (تَرتِيل) — measured and beautiful, the recommended daily standard. 3. Hadr (حَدر) — fast recitation, permissible with maintained Tajweed.
+
+**Q:** What is the proper method to find a qualified Quran teacher?
+
+**A:** Look for someone with: (1) a verified Ijazah, (2) knowledge of Tajweed rules they can explain, (3) willingness to listen and correct your recitation directly (Talaqqi method), (4) good character. Platforms include Dar al-Quran institutes, Al-Azhar-affiliated teachers, and certified online Quran academies.
+
+**Q:** What is self-assessment in Quran recitation and why is it limited?
+
+**A:** Listening to recordings of your own recitation helps identify mistakes. However, self-assessment has limits: subtle errors (Lahn al-Khafi) in your own pronunciation are difficult to detect without a trained ear. This is why Talaqqi with a qualified teacher is irreplaceable.
+
+**Q:** What is the recommended structure for a daily Quran practice session?
+
+**A:** Minimum: (1) Begin with Ta'awwudh + Basmala. (2) Revise previously memorised material (Muraja'ah). (3) Work on new material or Tajweed skill. (4) End with Sadaqallahu al-Adheem. Consistency every day is more effective than long irregular sessions.
+
+## Module 11 — I'jaz al-Quran & Quranic Sciences
+
+**Q:** What is I'jaz al-Quran (إِعجَاز القُرآن)?
+
+**A:** The inimitability (miraculous nature) of the Quran — the Quran is a miracle because no human or jinn can produce anything like it. This is established by the Tahaddi (challenge) in 17:88 and 2:23.
+
+**Q:** What are the 4 dimensions of I'jaz al-Quran (Quranic inimitability)?
+
+**A:** 1. Linguistic/Literary — unmatched Arabic eloquence and stylistic precision. 2. Scientific allusions — accurate references to natural phenomena described before modern discovery. 3. Historical preservation — perfectly preserved over 1,400 years without alteration. 4. Spiritual impact — transforms hearts; recitation produces measurable effects on listeners.
+
+**Q:** What are the 3 stages of Quran compilation history?
+
+**A:** 1. Prophet's lifetime: oral transmission + written on palm leaves, bones, leather. 2. Abu Bakr's compilation (~12 AH/633 CE, after Battle of Yamama — hafidh deaths): first bound copy under Zayd ibn Thabit. 3. Uthman's standardisation (~25 AH/646 CE): sent copies to major Islamic cities; variant copies destroyed.
+
+**Q:** What is the difference between a Makki and Madani Surah?
+
+**A:** Makki: revealed before the Prophet's Hijra to Madinah (610-622 CE). Typically shorter, focused on Tawhid (monotheism), Aqeedah, the afterlife, and stories of prophets. Madani: revealed after Hijra (622-632 CE). Typically longer, covering Islamic law, social ethics, family rules, and community governance.
+
+**Q:** What is the structure of the Quran (Juz, Hizb, Rub')?
+
+**A:** 114 Surahs · 6,236 Ayaat · 30 Juz (parts) · 60 Hizb · 240 Rub' al-Hizb (quarters). There are 14 Sajda al-Tilawa verses (prostration upon recitation). The Quran has 114 Basmala occurrences — one per surah except Al-Tawbah (none), and Surah An-Naml (appears twice: at the start and in verse 30).
+
+**Q:** In how many places does Bismillah al-Rahman al-Rahim appear in the Quran?
+
+**A:** 114 times — once at the beginning of each of the 114 surahs, except Surah At-Tawbah (9) which begins without it, and Surah An-Naml (27) which contains it twice (at the start and within verse 30 as part of a letter). Net: 113 as surah-openers + 1 mid-surah = 114.
+
+## Module 12 — Qira'at, Lahn & Ijazah
+
+**Q:** What are the Qira'at al-Ashr (القراءات العشر) and why do they all count as Quran?
+
+**A:** The 10 authenticated recitation styles — each with an unbroken chain (Isnad) back to the Prophet ﷺ. All are mutawatir (mass-transmitted). They reflect the 7 Ahruf (authentic modes of revelation). Differences are in vowel lengths, certain pronunciations, and some word forms — none change the meaning of Islamic doctrine.
+
+**Q:** Who is the source of Hafs 'an 'Asim and where is it most used?
+
+**A:** Hafs was a student of 'Asim al-Kufi (one of the 7 major Qira'at imams). Hafs 'an 'Asim is used by ~95% of the world's Muslims: all of Pakistan, India, most of the Middle East, and beyond. It is the recitation in nearly all widely-distributed printed Mushafs.
+
+**Q:** Who is Warsh 'an Nafi' and where is it used?
+
+**A:** Warsh was a student of Nafi' al-Madani (imam of Madinah). Warsh 'an Nafi' is the standard recitation in Morocco, Algeria, Tunisia, Libya, and West Africa. A notable difference from Hafs: Warsh reads مَالِكِ (Maalik — long Alif) in Al-Fatiha; Hafs reads مَلِكِ (Malik — short).
+
+**Q:** What is Lahn al-Jali (اللَّحن الجَلِي)?
+
+**A:** A gross recitation error that changes letters, vowels, or the grammatical/legal meaning of a verse. Committing it intentionally is haram. Examples: pronouncing ق as ك, changing a fatha to a damma that changes a word's grammatical role, or omitting/adding a letter.
+
+**Q:** What is Lahn al-Khafi (اللَّحن الخَفِي)?
+
+**A:** A subtle Tajweed violation that does NOT change the letters or meaning, but violates Tajweed rules. Disliked for those who know the rules; excused for learners still studying. Examples: shortening a Madd al-Muttasil, omitting Ghunnah in Idgham, failing to apply Qalqalah.
+
+**Q:** What is the difference between Hamzat al-Wasl and Hamzat al-Qat'?
+
+**A:** Hamzat al-Wasl (Connection Hamza): silent when preceded by a word in the same breath — only sounds when starting fresh. Written as plain Alif ا. Found in the definite article ال and certain verb stems. Hamzat al-Qat' (Cutting Hamza): ALWAYS pronounced. Written as أ or إ. The vast majority of Hamzas in the Quran are Hamzat al-Qat'.
+
+**Q:** What are the 5 stages of the Ijazah pathway?
+
+**A:** 1. Complete Hifz (memorise the entire Quran — all 6,236 ayaat). 2. Master Tajweed in the target Qira'ah (zero Lahn al-Jali, minimal Lahn al-Khafi). 3. Find a sheikh who holds an authenticated Ijazah. 4. Perform the 'Ardh (عَرض) — recite the complete Quran to the sheikh over multiple sessions. 5. Receive Ijazah certificate containing the Silsilah (chain of transmission).
+
+**Q:** What is the Silsilah (سِلسِلَة) in an Ijazah?
+
+**A:** The chain of names: student → their teacher → their teacher's teacher → ... → the Prophet ﷺ. Contemporary Silsilah chains are approximately 27-32 links long. This makes the Quran the only text in the world with an unbroken, documented, person-to-person transmission chain active after 1,400 years.
+
+**Q:** What is the highest Ijazah credential in Quranic sciences?
+
+**A:** Ijazah fi al-Qira'at al-Sab' (إجازة في القراءات السبع) — authorization in all 7 Mutawatir Qira'at. Below that: Ijazah fi Qira'ah Wahida (one Qira'ah, e.g., Hafs 'an 'Asim). Even lower: Ijazah fi Hifz al-Quran (Hifz certification only) and Ijazah fi Tajweed (permission to teach Tajweed rules).

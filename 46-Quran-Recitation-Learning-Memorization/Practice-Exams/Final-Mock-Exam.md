@@ -1,8 +1,8 @@
 # Final Mock Exam — Quran Recitation & Memorization
 
-**Coverage:** All 10 Modules — Comprehensive Assessment
-**Questions:** 60
-**Time:** 90 minutes
+**Coverage:** All 12 Modules — Comprehensive Assessment
+**Questions:** 80
+**Time:** 120 minutes
 
 ---
 
@@ -488,6 +488,206 @@ D. Learning to read Arabic for academic purposes
 
 ---
 
+### 61.
+What is the correct ORDER of preparatory steps in Adab al-Tilawa (etiquette of recitation) before beginning?
+
+A. Basmala → Ta'awwudh → make wudu → face qibla
+B. Make wudu/tahara, clean space, face qibla if possible, then Ta'awwudh (A'udhu billah), then Basmala
+C. Basmala → wudu → recite immediately
+D. Face qibla → Basmala → Ta'awwudh → wudu
+
+---
+
+### 62.
+What is Tadabbur and when is it practiced?
+
+A. The physical act of prostrating during recitation
+B. Facing the qibla before recitation begins
+C. Deep reflection on the meaning of what is being recited — practiced DURING recitation
+D. The du'a recited after completing a full Quran khatm
+
+---
+
+### 63.
+The du'a صَدَقَ اللَّهُ العَظِيم (Sadaqallahu al-Adheem) is recited:
+
+A. Before beginning any Quran session as Ta'awwudh
+B. At the end of recitation — meaning "Allah the Almighty has spoken truth"
+C. When reaching a Sajda verse during recitation
+D. Only after completing a full Quran khatm (not at the end of a regular session)
+
+---
+
+### 64.
+Which of the following correctly describes the Sifat (attribute) Hams?
+
+A. The voice is fully released — breath does not escape
+B. The breath escapes (whispered quality) — the letter is less voiced
+C. The tongue is raised toward the roof of the mouth
+D. The sound stops completely at the point of articulation
+
+---
+
+### 65.
+The mnemonic خُصَّ ضَغْطٍ قِظ in Tajweed refers to:
+
+A. The 6 Izhar letters (throat letters)
+B. The 5 Qalqalah letters
+C. The 7 Tafkheem (heavy/emphatic) letters — Kha, Sad, Dad, Ghayn, Ta-heavy, Qaf, Dha-heavy
+D. The 15 Ikhfa letters
+
+---
+
+### 66.
+Madd al-Badal (Type 5) occurs when:
+
+A. A Madd letter is followed by a Hamza in the same word — 4-5 beats
+B. A Hamza comes BEFORE a Madd letter in the same word — 2 beats
+C. A Madd letter appears at the end of a verse and you stop — 2-6 beats
+D. Two Madd letters appear consecutively — 6 beats
+
+---
+
+### 67.
+Madd al-'Arid lil-Sukoon (Type 6) applies:
+
+A. Only in Surah Al-Fatiha when reciting with Hafs riwaya
+B. Whenever a Noon Sakin precedes a Madd letter
+C. When a Madd letter precedes the final letter of a verse and you STOP — 2, 4, or 6 beats (reciter's consistent choice)
+D. When a Madd letter is followed by a Shaddah — fixed 6 beats
+
+---
+
+### 68.
+How many total ayaat (verses) does the complete Quran contain?
+
+A. 6,000
+B. 6,236
+C. 6,666
+D. 7,000
+
+---
+
+### 69.
+The Quran's first compilation into a single written Mushaf (after having been preserved orally and on scattered materials) was ordered by:
+
+A. Umar ibn al-Khattab, to standardize recitation across the empire
+B. Abu Bakr al-Siddiq, after the Battle of Yamama (~12 AH) when many Huffaz were martyred
+C. Uthman ibn Affan, who then sent copies to major cities and burned variants
+D. Ali ibn Abi Talib, who compiled it in chronological order of revelation
+
+---
+
+### 70.
+The Uthmanic Mushaf (~25 AH) was significant because:
+
+A. It added vowel marks (tashkeel) for the first time
+B. It was the first time the Quran was written down during the Prophet's lifetime
+C. It standardized one orthography, copies were sent to major cities, and variant manuscripts were burned to prevent divergence
+D. It replaced the Abu Bakr compilation with a version in Uthmanic script only
+
+---
+
+### 71.
+Which of the following is a characteristic of Makki surahs?
+
+A. Generally longer, focus on laws and social matters
+B. Revealed after the Hijra (622–632 CE), address the Muslim community
+C. Generally shorter, focus on Tawhid (monotheism) and Aqeedah (creed)
+D. Always begin with Bismillah followed by disconnected letters (Huroof Muqatta'at)
+
+---
+
+### 72.
+How many times does Bismillah appear in the Quran, and what is unusual about its distribution?
+
+A. 113 times — missing from Surah Al-Baqarah
+B. 114 times — once per surah, no exceptions
+C. 114 times — once per surah EXCEPT Al-Tawbah (none) while Surah An-Naml has it twice (once as verse, once opening)
+D. 115 times — An-Naml has it twice and all 114 surahs have it once
+
+---
+
+### 73.
+The Tahaddi (challenge) of the Quran referenced in 17:88 states:
+
+A. "Recite the Quran as it was revealed, for every letter carries ten rewards"
+B. "If humans and jinn combined to produce something like this Quran, they could not, even if they helped one another"
+C. "We have made the Quran easy to remember — is there any who will take heed?"
+D. "We have sent down the Quran and We will surely guard it"
+
+---
+
+### 74.
+Which of the following CORRECTLY identifies how many of the 10 Qira'at are Mutawatir (mass-transmitted with unbroken chains)?
+
+A. All 10 are Mutawatir
+B. 7 are Mutawatir; the remaining 3 are weak narrations
+C. Only Hafs 'an 'Asim is Mutawatir; all others are Mashhur
+D. 7 are Mutawatir; the other 3 are authenticated but at a slightly lower category — all 10 have valid unbroken Isnad chains
+
+---
+
+### 75.
+Hafs 'an 'Asim is the most widely used Qira'ah in the world because:
+
+A. It was the only Qira'ah approved by the Uthmanic committee
+B. It is the easiest to learn and has fewer rules than other Qira'at
+C. It was adopted by Pakistan, India, and the Middle East and is now used by approximately 95% of the world's Muslim population
+D. It was personally recited by the Prophet (sallallahu alayhi wa aalihi wasallam) and no other Qira'ah was
+
+---
+
+### 76.
+A key difference between Warsh 'an Nafi' and Hafs 'an 'Asim is:
+
+A. Warsh does not have Ghunnah rules; Hafs does
+B. Warsh reads مَالِكِ (Maalik — long alif) in Al-Fatiha verse 4, while Hafs reads مَلِكِ (Malik — short)
+C. Warsh omits the Basmala before every surah; Hafs includes it
+D. Warsh has only 4 Madd types while Hafs has 6
+
+---
+
+### 77.
+Lahn al-Jali (gross error in recitation) is:
+
+A. A subtle mispronunciation that does not change the meaning — disliked for those who know the rules
+B. Shortening a Madd beyond its minimum — a common beginner mistake
+C. An error that changes letters, vowels, or meaning — considered HARAM to commit intentionally
+D. Omitting the Ghunnah in Idgham — acceptable in informal recitation
+
+---
+
+### 78.
+Hamzat al-Wasl differs from Hamzat al-Qat' in which of the following ways?
+
+A. Hamzat al-Wasl is always pronounced; Hamzat al-Qat' is silent when connected
+B. Hamzat al-Wasl is silent when connected from a previous word (written as plain Alif ا); Hamzat al-Qat' is always pronounced (written as ء above/below Alif: أ or إ)
+C. Both are always pronounced — they differ only in how they are written
+D. Hamzat al-Wasl appears only in verb forms; Hamzat al-Qat' appears only in nouns
+
+---
+
+### 79.
+Which of the following is the correct sequence for obtaining an Ijazah in Quran recitation?
+
+A. Find a sheikh → recite 3 Juz → receive certificate → complete Hifz later
+B. Complete Hifz → master Tajweed → find a certified sheikh → perform 'Ardh (recite complete Quran to sheikh) → receive Ijazah with Silsilah
+C. Pass a written exam → recite Al-Fatiha to a committee → receive Ijazah fi al-Qira'at al-Sab'
+D. Study Tajweed rules → memorise 10 Juz → recite to a teacher → register with an Islamic authority
+
+---
+
+### 80.
+"Ijazah fi al-Qira'at al-Sab'" represents:
+
+A. Authorization in one specific Qira'ah, typically Hafs 'an 'Asim
+B. A certificate confirming completion of Hifz without Tajweed assessment
+C. The highest Quran recitation credential — authorization in all 7 Mutawatir Qira'at
+D. A preliminary certificate before receiving the full single-Qira'ah Ijazah
+
+---
+
 ## 🎯 Complete Answer Key
 
 ```
@@ -551,4 +751,24 @@ D. Learning to read Arabic for academic purposes
 58. B — Namoona (Makarem Shirazi)
 59. B — Continuous, moment-by-moment divine gift
 60. C — Correct Tajweed + unbroken chain + living relationship
+61. B — Wudu → clean space → face qibla → Ta'awwudh → Basmala (in that sequence)
+62. C — Reflection on meaning practiced during recitation
+63. B — End of recitation du'a: "Allah the Almighty has spoken truth"
+64. B — Hams: breath escapes, whispered/less voiced quality
+65. C — The 7 heavy (Tafkheem) letters: Kha, Sad, Dad, Ghayn, Ta-heavy, Qaf, Dha-heavy
+66. B — Madd al-Badal: Hamza BEFORE Madd letter in same word — 2 beats
+67. C — Madd before verse-end letter at stop — 2, 4, or 6 beats (consistent choice)
+68. B — 6,236 ayaat
+69. B — Abu Bakr al-Siddiq, after Battle of Yamama (~12 AH)
+70. C — Standardized orthography; copies to major cities; variants burned
+71. C — Makki: shorter, Tawhid/Aqeedah focus, revealed before Hijra
+72. C — 114 times: Al-Tawbah has none; An-Naml has it twice
+73. B — "If humans and jinn combined to produce something like this Quran, they could not"
+74. D — 7 Mutawatir; 3 more are authenticated with valid Isnad chains — all 10 are valid
+75. C — Adopted by Pakistan, India, Middle East — ~95% of world's Muslims
+76. B — Warsh: مَالِكِ (long alif); Hafs: مَلِكِ (short) in Al-Fatiha verse 4
+77. C — Lahn al-Jali: changes letters/vowels/meaning — HARAM intentionally
+78. B — Wasl: silent when connected (plain Alif ا); Qat': always pronounced (أ or إ)
+79. B — Hifz → Tajweed → certified sheikh → 'Ardh → Ijazah with Silsilah
+80. C — Highest credential: authorization in all 7 Mutawatir Qira'at
 ```
