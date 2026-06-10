@@ -78,6 +78,41 @@ This Madd appears in **every** Surah of the Quran. **Memorise this rule.**
 | خَوْفٌ | khawfun (fear) |
 | بَيْتٌ | baytun (house) |
 
+### Type 5 — Madd al-Badal (مَدّ البَدَل) — Substitute Madd
+
+**Length:** 2 harakahs  
+**Rule:** A Hamza (ء/أ/إ) appears **before** a Madd letter in the same word. The term "Badal" means substitute — historically, the Madd letter replaced a second Hamza that was lightened out of the word.
+
+**How to identify:** Hamza → then a long vowel letter (Alif/Waw/Ya) following it in the same word.
+
+| Example | Transliteration | Meaning | What to Notice |
+|---------|-----------------|---------|----------------|
+| آمَنَ | āmana | he believed | Hamza (أ) + Alif Madd → extend 2 beats |
+| إِيمَان | īmān | faith | Hamza (إ) + Ya Madd → extend 2 beats |
+| أُوتِيَ | ūtiya | he was given | Hamza (أ) + Waw Madd → extend 2 beats |
+
+> 🔑 **Badal vs Muttasil — the critical distinction:** In **Muttasil**, the Madd letter comes *first* then Hamza follows (e.g., جَاءَ — Ya then Hamza). In **Badal**, the Hamza comes *first* then the Madd letter follows (e.g., إِيمَان — Hamza then Ya). Same two elements, opposite order, different Madd type.
+
+---
+
+### Type 6 — Madd al-Arid lil-Sukoon (مَدّ عَارِض لِلسُّكُون) — Contextual Sukoon Madd
+
+**Length:** 2, 4, or 6 harakahs — reciter's choice (but be consistent within a surah)  
+**Rule:** A Madd letter (or Leen letter) is followed by a letter that normally carries a harakat — but you **stop** at the end of a verse, which creates a temporary Sukoon on the final letter. That contextual Sukoon triggers this Madd.
+
+This is the most practically common Madd in recitation: virtually every verse-end you pause on creates a Madd Arid.
+
+| Verse-End Example | Surah | What Happens on Stop |
+|-------------------|-------|---------------------|
+| رَحِيمٌ | Al-Fatiha 1:3 | م gets temporary sukoon → ي before it extends 2-6 beats |
+| الْعَالَمِينَ | Al-Fatiha 1:2 | ن gets temporary sukoon → ي before it extends 2-6 beats |
+| الضَّالِّينَ | Al-Fatiha 1:7 | ن gets temporary sukoon → ي before it extends 2-6 beats |
+| الرَّحِيمِ | Basmala last word | م gets temporary sukoon → ي before it extends 2-6 beats |
+
+> 🎯 **Why 3 length options?** Because the Sukoon is *temporary* (only when stopping, not when continuing), classical scholars permit 2, 4, or 6 beats. Most reciters settle on 4 beats at verse-ends as a balanced default. The rule: once you choose a length, apply it consistently throughout the surah.
+
+> 📌 **Every verse of Al-Fatiha demonstrates this:** Recite Al-Fatiha and stop at the end of each verse — every single verse-end applies Madd Arid lil-Sukoon. The elongation you hear from expert reciters at verse boundaries is this Madd, not stylistic flourish.
+
 ---
 
 ## 🔤 Section 2 — Noon Sakin and Tanween Rules
@@ -187,18 +222,23 @@ The 15 Ikhfa letters: **ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك**
 
 | Concept | Key Points |
 |---------|-----------|
-| Madd al-Tabee'i | 2 beats, everywhere in Quran |
-| Madd al-Muttasil | 4-5 beats, Madd + Hamza in same word |
-| Madd al-Munfasil | 4-5 beats, Madd at word-end + Hamza starts next word |
+| Madd al-Tabee'i | 2 beats — long vowel with no special following letter |
+| Madd al-Muttasil | 4–5 beats — Madd letter then Hamza in the same word |
+| Madd al-Munfasil | 4–5 beats — Madd at word-end, Hamza starts next word |
+| Madd al-Leen | 2 beats minimum — Waw/Ya with Sukoon after Fatha |
+| Madd al-Badal | 2 beats — Hamza BEFORE a Madd letter in the same word (آمَنَ، إِيمَان) |
+| Madd al-Arid lil-Sukoon | 2–6 beats (choose one, stay consistent) — Madd letter before a verse-end you stop on |
 | Izhar | Clear Noon before throat letters أ ه ع ح غ خ |
 | Idgham | Noon merges before ي ن م و ل ر |
 | Iqlab | Noon → Meem before ب only |
 | Ikhfa | Partial nasal before 15 remaining letters |
-| Ghunnah | 2-beat nasal hum, with Shaddah on Noon/Meem, and in Idgham/Iqlab/Ikhfa |
+| Ghunnah | 2-beat nasal hum with Shaddah on Noon/Meem, and in Idgham/Iqlab/Ikhfa |
+
+*Madd al-Lazim (6 beats, obligatory) → Module 4.*
 
 ## 🔭 Next Steps
 
-Move to **Module 4 — Tajweed Advanced** for Qalqalah (bouncing letters), Meem Sakin rules, and Waqf (proper stopping).
+Move to **Module 4 — Tajweed Advanced** for Qalqalah, Meem Sakin rules, Lam & Ra rules, Waqf, and Madd Lazim.
 
 </div>
 

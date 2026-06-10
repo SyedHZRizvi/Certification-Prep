@@ -107,21 +107,22 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 
 ---
 
-## 🗺️ Course Structure — 11 Modules
+## 🗺️ Course Structure — 12 Modules
 
 | Module | Title | Focus |
 |--------|-------|-------|
-| 1 | Arabic Alphabet & Makhaarij | Letters, sounds, pronunciation anatomy |
+| 1 | Arabic Alphabet & Makhaarij | Letters, sounds, pronunciation anatomy; Sifaat al-Huruf; Adab al-Tilawa |
 | 2 | Harakat & Basic Reading | Vowels, sukoon, shaddah — reading the Quran script |
-| 3 | Tajweed Rules — Foundations | Madd, Ghunnah, Noon/Tanween rules |
-| 4 | Tajweed Rules — Advanced | Qalqalah, Meem rules, Waqf, Lam/Raa |
+| 3 | Tajweed Rules — Foundations | All 6 Madd types, Ghunnah, Noon Sakin/Tanween rules |
+| 4 | Tajweed Rules — Advanced | Qalqalah, Meem rules, Waqf & Ibtida, Lam/Raa, Madd Lazim |
 | 5 | Surah Al-Fatiha — Complete Study | All 7 ayat: Arabic + translation + Tafseer |
 | 6 | Juz Amma — Short Surahs Part 1 | Surahs 112 (Ikhlas) → 114 (Naas) + Al-Kawthar + Al-Asr |
 | 7 | Juz Amma — Short Surahs Part 2 | Surahs An-Nasr, Al-Kafirun, Al-Maun, Al-Quraysh, Al-Fil |
 | 8 | Memorisation Techniques (Hifz) | Proven science-backed methods for retention |
-| 9 | Selected Important Surahs | Surah Yasin, Al-Mulk, and Ayatul Kursi |
+| 9 | Selected Important Surahs | Surah Yasin, Al-Mulk, and Ayatul Kursi 2:255–256 |
 | 10 | Recitation Practice & Assessment | Self-evaluation, finding teachers, continuing your journey |
-| 11 | Full Quran Reference — Arabic, Translation & Tafseer | The complete Quran — all 114 surahs: Tajweed color-coded Arabic + English/Urdu translation + per-ayah Tafseer switcher (Al-Mizan · Namoona · Tasnim) + inline recitation audio |
+| 11 | Full Quran Reference — Arabic, Translation & Tafseer | The complete Quran — all 114 surahs: Tajweed color-coded Arabic + English/Urdu translation + per-ayah Tafseer switcher + inline recitation audio |
+| 12 | Advanced Recitation — Qira'at, Lahn & Ijazah | The 10 recognized recitation styles; Lahn (error classification); Hamzat al-Wasl vs al-Qat'; complete Ijazah pathway guide |
 
 ---
 
@@ -136,6 +137,7 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 - **Week 11:** Module 9 (Yasin, Al-Mulk, Ayatul Kursi)
 - **Week 12:** Module 10 (Assessment + next steps)
 - **Ongoing:** Module 11 (Full Quran Reference) — keep it open as your translation and tafseer companion throughout the course and after it
+- **Advanced (after Week 12):** Module 12 (Qira'at, Lahn & Ijazah) — study after establishing a solid Tajweed foundation; ideal for those pursuing Ijazah or deeper recitation mastery
 
 ### For Children
 - 1 module per 2–3 weeks, with daily 10-minute practice sessions
@@ -157,11 +159,12 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 
 ## 🔭 Next Steps
 
-When you complete all 11 modules, you will:
+When you complete all 12 modules, you will:
 1. Read and recite the Quran with proper Tajweed
 2. Understand the meaning of every verse you've studied
 3. Have memorised Surah Al-Fatiha, 15+ short surahs from Juz Amma, Ayatul Kursi, and key passages from Yasin and Al-Mulk
 4. Have a foundation for deeper Quranic study through Tafseer
+5. Understand the 10 authenticated Qira'at, know how to identify and correct Lahn, and have a clear roadmap toward Ijazah
 
 **Start with [Module 1 — Arabic Alphabet & Makhaarij](./Module-01-Arabic-Alphabet-Makhaarij/Reading.md).**
 

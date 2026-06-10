@@ -8,6 +8,10 @@
 | Connected | مُتَّصِل | 4–5 beats | Madd letter + Hamza in SAME word |
 | Disconnected | مُنفَصِل | 4–5 beats | Madd letter end of word + Hamza starts next word |
 | Ease | لِّين | 2 beats | Waw/Ya with Sukoon after Fatha |
+| Substitute | بَدَل | 2 beats | Hamza BEFORE Madd letter in same word (e.g., آمَنَ، إِيمَان) |
+| Contextual Sukoon | عَارِض لِلسُّكُون | 2–6 beats | Madd letter before verse-end letter when you stop (applies at every verse boundary) |
+
+*Madd Lazim (6 beats, obligatory) is covered in Module 4.*
 
 ---
 

@@ -23,6 +23,7 @@ tracks:
       - { num: 9,  title: "Yasin, Al-Mulk, Al-Kahf",           slug: Module-09-Selected-Surahs-Yasin-Mulk-Kahf }
       - { num: 10, title: "Recitation Practice & Assessment",  slug: Module-10-Recitation-Practice-Assessment }
       - { num: 11, title: "Full Quran Reference — Arabic, Translation & Tafseer", slug: Module-11-Full-Quran-Arabic-Translation-Tafseer }
+      - { num: 12, title: "Advanced Recitation — Qira'at, Lahn & Ijazah",       slug: Module-12-Advanced-Recitation-Qiraat-Lahn-Ijazah }
     extras:
       - { title: "Practice Exam 1 (Modules 1–5)", slug: Practice-Exams/Practice-Exam-1 }
       - { title: "Practice Exam 2 (Modules 1–9)", slug: Practice-Exams/Practice-Exam-2 }
