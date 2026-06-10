@@ -430,22 +430,22 @@ function qrToggleTaf(btn) {
   try { isUR = (localStorage.getItem('cert-hub-lang-pref') || 'en') === 'ur'; } catch(e) {}
   if (!taf) {
     var note = qrEl('p', 'qr-taf-none',
-      isUR ? 'اس سورت کا انلائن خلاصہ ابھی کورس میں شامل نہیں — تینوں تفاسیر براہ راست پڑھیں:'
-           : 'Inline summary not yet written for this surah — read the full commentaries:');
+      isUR ? 'اس سورت کا انلائن خلاصہ ابھی کورس میں شامل نہیں — ان وسائل سے پڑھیں:'
+           : 'Inline summary not yet written for this surah — read it on these resources:');
     if (isUR) note.style.direction = 'rtl';
     drop.appendChild(note);
     var extDiv = document.createElement('div');
     extDiv.className = 'qr-taf-tabs-mini';
     extDiv.style.marginTop = '.4rem';
     [
-      ['Al-Mizan', 'https://www.al-islam.org/tafsir-al-mizan-vol-1-allamah-sayyid-muhammad-husayn-tabatabai'],
-      ['Namoona', 'https://www.al-islam.org/an-enlightening-commentary-light-holy-quran-vol-1'],
-      ['Tasnim', 'https://www.al-islam.org/quran']
+      ['Read on Quran.com ↗', 'https://quran.com/' + n],
+      ['Arabic Text — Tanzil.net ↗', 'https://tanzil.net/#' + n + ':1']
     ].forEach(function(te) {
       var a = document.createElement('a');
       a.className = 'qr-taf-tab-mini';
       a.href = te[1];
       a.textContent = te[0];
+      a.target = '_blank'; a.rel = 'noopener';
       a.style.textDecoration = 'none';
       extDiv.appendChild(a);
     });
@@ -667,8 +667,8 @@ function qrRender(n, data) {
   l1.href = 'https://quran.com/' + n; l1.target = '_blank'; l1.rel = 'noopener';
   l1.textContent = 'Read Surah ' + n + ' on Quran.com \u2197';
   var l2 = document.createElement('a');
-  l2.href = 'https://www.al-islam.org/quran'; l2.target = '_blank'; l2.rel = 'noopener';
-  l2.textContent = 'More tafseer resources (Al-Islam.org) \u2197';
+  l2.href = 'https://tanzil.net/#' + n; l2.target = '_blank'; l2.rel = 'noopener';
+  l2.textContent = 'Arabic Text & Downloads \u2014 Tanzil.net \u2197';
   var l3 = document.createElement('a');
   l3.href = 'https://sabeelquran.org'; l3.target = '_blank'; l3.rel = 'noopener';
   l3.textContent = 'Recitation & Learning — Sabeel Quran ↗';
@@ -684,8 +684,7 @@ function qrRender(n, data) {
 
 ## 🌐 Where to Read the Full Translation
 
-- **[Al-Islam.org](https://www.al-islam.org/quran)** — Qarai English translation available in full, with search by surah and ayah
-- **[Quran.com](https://quran.com)** — Multiple translations side-by-side; excellent for comparing scholarly renderings
+- **[Quran.com](https://quran.com)** — Multiple translations side-by-side including the Qarai English rendering; excellent for comparing scholarly renderings
 - **[Tanzil.net](https://tanzil.net)** — Download the Arabic text in multiple Unicode formats with full harakat
 - **[Sabeel Quran](https://sabeelquran.org)** — Quran recitation and learning resources
 
