@@ -74,7 +74,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+juz+amma+short+surahs+ikhlas+falaq+naas+iran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+juz+amma+short+surahs+ikhlas+falaq+naas" target="_blank">
   <div class="vg-thumb">✨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

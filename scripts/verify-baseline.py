@@ -74,12 +74,12 @@ EXPECTED_COURSES = {
     "44-Arabic-Language":                       10,
     "45-French-Language":                       10,
     # Quran & Islamic Studies track
-    "46-Quran-Recitation-Learning-Memorization": 10,
+    "46-Quran-Recitation-Learning-Memorization": 11,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 412 + 10 = 422
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 412 + 11 = 423
 EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 46 × 3 = 138
-MIN_TOTAL_COURSE_MD_FILES = 1940  # was 1900 with 45 courses; ~45 files added for course 46
-MIN_YT_SEARCH_URLS = 3580         # was 3500; ~80 added with 10 new modules × ~8 cards each
+MIN_TOTAL_COURSE_MD_FILES = 1944  # +4 for Module 11 (Reading, Videos, Quiz, Cheat-Sheet)
+MIN_YT_SEARCH_URLS = 3588         # +8 for Module 11 Videos.md
 
 PROTECTED_FILES = [
     "_layouts/default.html",

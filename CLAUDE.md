@@ -39,13 +39,13 @@ This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts s
 | 26 | `26-Microsoft-Endpoint-Admin` | Microsoft Endpoint Administrator (MD-102) | 8 |
 | 27 | `27-Microsoft-Identity-Access-Admin` | Microsoft Identity & Access Admin (SC-300) | 8 |
 
-Total: **422 modules · 138 practice exams · 46 flashcard decks · 46 READMEs**.
+Total: **423 modules · 138 practice exams · 46 flashcard decks · 46 READMEs**.
 
 The new IT Systems Administration track (courses 21–27) is engineered to the same Cornell · Harvard · Princeton · Stanford pedagogical standard as the rest of the site. AZ-900 (course 05) and AZ-104 (course 06) are cross-referenced into this track on the homepage since they form part of any modern sysadmin's training path.
 
 The **Spoken Language Mastery** track (courses 41–45) covers English, Urdu, Persian, Arabic, and French — each a 10-module, A1–C2 CEFR-aligned course with the same story-driven structure (Reading · Videos · Quiz · Cheat Sheet per module) plus 3 practice exams and a Flashcards deck. These are Cert Hub Originals targeting conversational and professional fluency.
 
-The **Quran & Islamic Studies** track (course 46) covers Quran recitation, learning, and memorization — a 10-module course with bilingual English/Urdu content, authentic Arabic Quranic text with full harakat (tashkeel), Tajweed taught from scratch, Tafseer from three Shia scholars (Tafsir al-Mizan, Tafseer-e-Namoona, Tafsir Tasnim), and a memorization (hifz) methodology. Suitable for all ages (children to adults). Emerald/green theme with 3 practice exams and a Flashcards deck.
+The **Quran & Islamic Studies** track (course 46) covers Quran recitation, learning, and memorization — an 11-module course with bilingual English/Urdu content, authentic Arabic Quranic text with full harakat (tashkeel), Tajweed taught from scratch, Tafseer from three classical Tafseer scholars (Tafsir al-Mizan, Tafseer-e-Namoona, Tafsir Tasnim), a memorization (hifz) methodology, and a full Quran reference module with interactive tafseer switcher. Suitable for all ages (children to adults). Emerald/green theme with 3 practice exams and a Flashcards deck.
 
 The frozen baseline tagged `stable-2026-05-20` is the canonical reference for "what this repo should look like." Any deviation must either (a) maintain or improve every assertion in `verify-baseline.py`, or (b) update both the assertions and `CLAUDE.md` in the same commit.
 
@@ -237,10 +237,10 @@ This tag is the canonical *historical* snapshot of the site as of 2026-05-20. It
 The live site has now grown to:
 
 - **46** course directories (added Quran Recitation, Learning & Memorization — bilingual EN/UR, Tajweed + Tafseer + Hifz)
-- **422** modules
+- **423** modules
 - **138** practice exams (92 partials + 46 full-length mocks)
-- **1,940+** markdown files inside the course directories
-- **3,580+** YouTube search URLs (still 0 direct YouTube URLs anywhere)
+- **1,944+** markdown files inside the course directories
+- **3,588+** YouTube search URLs (still 0 direct YouTube URLs anywhere)
 - **15,500+** practice questions across all quizzes + flashcards + mock exams
 - **1,325+** total study hours
 

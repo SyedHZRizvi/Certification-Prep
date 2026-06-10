@@ -74,12 +74,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=parhizgar+iran+quran+reciter+tajweed+beautiful+recitation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=parhizgar+quran+reciter+tajweed+beautiful+recitation" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Tajweed in Practice — Beautiful Iranian Recitation (Parhizgar)</p>
-    <p class="vg-creator">Iranian Quran Recitation</p>
+    <p class="vg-title">Tajweed in Practice — Beautiful Recitation (Parhizgar)</p>
+    <p class="vg-creator">Quran Recitation</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>

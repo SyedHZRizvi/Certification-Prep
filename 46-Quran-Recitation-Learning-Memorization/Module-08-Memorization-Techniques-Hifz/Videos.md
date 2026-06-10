@@ -74,11 +74,11 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+iran+quran+hifz+memorization+repetition+audio" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+quran+hifz+memorization+repetition+audio" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Quran Memorization Audio — Listen & Repeat (Iranian Reciter)</p>
+    <p class="vg-title">Quran Memorization Audio — Listen & Repeat</p>
     <p class="vg-creator">Seyyed Mahmoud Karimi</p>
     <p class="vg-duration">90 min</p>
   </div>

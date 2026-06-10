@@ -74,12 +74,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=morteza+haghighi+iran+quran+reciter+tajweed+advanced+beautiful" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=morteza+haghighi+quran+reciter+tajweed+advanced+beautiful" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Advanced Tajweed Applied — Iranian Reciter (Morteza Haghighi)</p>
-    <p class="vg-creator">Iranian Quran Recitation</p>
+    <p class="vg-title">Advanced Tajweed Applied — Morteza Haghighi</p>
+    <p class="vg-creator">Quran Recitation</p>
     <p class="vg-duration">45 min</p>
   </div>
 </a>
