@@ -100,7 +100,28 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 
 ---
 
-## 8. Quran Structure Quick Reference
+## 8. Tajweed Color-Coding Guide
+
+The Arabic text in the reader applies color-coding aligned with world-standard Tajweed Quran books. Toggle on/off with the **🌈 Tajweed Colors** button on each surah.
+
+| Color | Rule | Letters | What to Do |
+|-------|------|---------|------------|
+| **Red (bold)** — <span style="color:#dc2626">■</span> | Qalqalah | ق ط ب ج د | Slight echo-bounce when sukoon or stop |
+| **Blue (bold)** — <span style="color:#2563eb">■</span> | Madd (Normal) | الف · واو · یا with elongation conditions | Extend 2 beats |
+| **Cyan** — <span style="color:#0891b2">■</span> | Madd Permissible | Same letters in different contexts | 2–6 beats (reciter's choice) |
+| **Green** — <span style="color:#15803d">■</span> | Ikhfaa | ن with one of 15 letters | Hide the noon with nasal resonance |
+| **Mid-green** — <span style="color:#16a34a">■</span> | Idghaam ma Ghunnah | ن / م merging with غنہ | Merge into next letter with nasal 2 beats |
+| **Teal-green** — <span style="color:#059669">■</span> | Idghaam bila Ghunnah | ن merging without غنہ | Merge silently, no nasal sound |
+| **Purple** — <span style="color:#9333ea">■</span> | Iqlab | ن followed by ب | Change noon to meem with ghunnah |
+| **Teal** — <span style="color:#0f766e">■</span> | Ghunnah | ن م with shaddah | Nasal resonance, 2 beats |
+| **Gray** — <span style="color:#9ca3af">■</span> | Hamzat Wasl / Silent | Alif wasl, silent letters | Not pronounced at the start / silent |
+| **Violet** — <span style="color:#7c3aed">■</span> | Lam Shamsiyya | لام with sun letters | Assimilate — the lam is absorbed |
+
+> **Learning method (Dar al-Quran standard):** Read the colored Arabic text → hear the audio recitation → verify your own pronunciation matches the rule the color marks → then read without colors to build independence.
+
+---
+
+## 9. Quran Structure Quick Reference
 
 | Fact | Detail |
 |------|--------|

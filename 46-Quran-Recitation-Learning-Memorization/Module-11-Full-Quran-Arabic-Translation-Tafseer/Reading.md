@@ -60,6 +60,23 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 .qr-listen-btn:hover{background:#065f46;}
 .qr-audio-wrap{margin:.5rem 0 .1rem;width:100%;}
 .qr-audio-wrap audio{width:100%;height:40px;}
+.qr-taj-btn{display:inline-flex;align-items:center;gap:.35rem;background:transparent;color:#064e3b;border:1px solid #a7f3d0;border-radius:8px;padding:.45rem 1.1rem;font-size:.85rem;cursor:pointer;margin-top:.55rem;margin-left:.4rem;font-family:inherit;transition:.15s;}
+.qr-taj-btn.qr-taj-on{background:#064e3b;color:#fff;border-color:#064e3b;}
+.qr-taj-btn:hover:not(.qr-taj-on){background:#f0fdf4;}
+.qr-taj-legend{font-size:.75rem;color:#64748b;margin:.3rem 0 .55rem;display:flex;flex-wrap:wrap;gap:.5rem;direction:ltr;align-items:center;line-height:1.9;}
+tajweed{font-style:normal;}
+tajweed.ham_wasl,tajweed.slnt{color:#9ca3af;}
+tajweed.lam_shamsiyya{color:#7c3aed;}
+tajweed.madda_normal{color:#2563eb;font-weight:bold;}
+tajweed.madda_permissible{color:#0891b2;}
+tajweed.madda_necessary{color:#1d4ed8;font-weight:bold;}
+tajweed.madda_obligatory{color:#ea580c;font-weight:bold;}
+tajweed.qalqala{color:#dc2626;font-weight:bold;}
+tajweed.ikhfaa,tajweed.ikhfaa_shafawi{color:#15803d;}
+tajweed.idghaam,tajweed.idghaam_ghunnah{color:#16a34a;}
+tajweed.idghaam_shafawi,tajweed.idghaam_wo_ghunnah{color:#059669;}
+tajweed.iqlab{color:#9333ea;}
+tajweed.ghunnah{color:#0f766e;}
 </style>
 
 <script>
@@ -80,18 +97,22 @@ function tf(btn){
 
 This module is the **complete Quran reference** of the course. The clickable index below gives you **all 114 surahs of the Quran** — select any surah and its full text loads instantly:
 
+- **Tajweed color-coded Arabic text** — every letter rendered with its Tajweed rule highlighted: Qalqalah (red), Madd elongation (blue), Ghunnah (teal), Ikhfaa (green), Iqlab (purple), Lam Shamsiyya, Hamzat Wasl, and more. Toggle on/off with the **🌈 Tajweed Colors** button
 - Authentic **Arabic text with full harakat** (tashkeel), shown ayah by ayah
 - **English translation** by Seyyed Ali Quli Qarai — a phrase-by-phrase rendering widely regarded as one of the most accurate modern scholarly English translations of the Quran
 - **Urdu translation** by Maulana Sayyid Zeeshan Haider Jawadi — a renowned scholar of the Indian subcontinent and one of the most respected Urdu translators of the Quran
-- An **interactive Tafseer Switcher** (Al-Mizan · Namoona · Tasnim) that appears with the key surahs studied in this course
+- **Inline recitation audio** — click **🔊 Listen** on any surah to hear a complete, high-quality recitation ayah by ayah; click ⏹ Stop to end it
+- **Full Tafseer Switcher** (Al-Mizan · Namoona · Tasnim) for every surah — inline study summaries for all 114 surahs, instantly accessible per ayah
 
 ### How to Use the Reader
 
 1. Scroll to the surah index below (or type in the search box to filter by name or number).
-2. Click any surah — the complete Arabic text with translation loads in the reading panel.
-3. Use the language buttons at the top of the page to switch the translation between English and Urdu.
-4. For the key surahs studied in this course (Al-Fatiha, Ayatul Kursi in Al-Baqarah, Yasin, Al-Mulk, and the short surahs of Juz Amma), the three-tab **Tafseer Switcher** appears below the text — click **Al-Mizan**, **Namoona**, or **Tasnim** to read each scholar's perspective.
-5. Every surah also links to its full page on Quran.com for further side-by-side translations.
+2. Click any surah — the complete Tajweed-colored Arabic text with translation loads in the reading panel.
+3. Use the **🌈 Tajweed Colors** button in the panel header to toggle color-coded pronunciation guidance on or off. The legend below the header shows what each color indicates.
+4. Use the **🔊 Listen** button to hear the surah recited; the audio plays through each ayah in sequence.
+5. Use the language buttons at the top of the page to switch the translation between English and Urdu.
+6. For any surah, click the **📖 Tafseer** button on each ayah to open the inline three-scholar study summary — **Al-Mizan**, **Namoona**, or **Tasnim** — all 114 surahs covered.
+7. Every surah also links to its full page on Quran.com for further side-by-side translations.
 
 ---
 
@@ -126,6 +147,8 @@ Maulana Sayyid Zeeshan Haider Jawadi was one of the most distinguished Quran sch
 یہ ماڈیول کورس کا **مکمل قرآنی حوالہ** ہے۔ نیچے دی گئی فہرست میں **قرآن مجید کی تمام ۱۱۴ سورتیں** موجود ہیں — کسی بھی سورت پر کلک کریں اور اس کا مکمل متن فوراً سامنے آ جائے گا:
 
 - ہر آیت کا **مکمل تشکیل کے ساتھ** مستند عربی متن
+- **🌈 تجوید رنگ کوڈنگ**: ہر حرف کو تجوید کے اصول کے مطابق رنگ دیا گیا ہے (قلقلہ، مد، غنہ، اخفا، اقلاب، لامِ شمسیہ) — دنیا کے بڑے اداروں میں استعمال ہونے والے رنگین تجوید قرآن کی طرز پر
+- **🔊 سماعی تلاوت**: ہر سورت کی مکمل تلاوت سنیں — ایک بٹن سے سورت آیت بہ آیت چلنا شروع ہو جاتی ہے
 - **اردو ترجمہ**: مولانا سید ذیشان حیدر جوادی — برصغیر کے نامور عالمِ قرآن
 - **انگریزی ترجمہ**: سید علی قلی قرائی — جدید علمی انگریزی ترجمہ
 - کورس میں پڑھائی گئی اہم سورتوں کے ساتھ **تفسیر سوئچر** (المیزان · نمونہ · تسنیم)
@@ -134,8 +157,10 @@ Maulana Sayyid Zeeshan Haider Jawadi was one of the most distinguished Quran sch
 
 ۱. نیچے سورتوں کی فہرست تک جائیں (یا تلاش کے خانے میں نام یا نمبر لکھیں)۔
 ۲. کسی بھی سورت پر کلک کریں — مکمل عربی متن مع ترجمہ پڑھنے کے خانے میں آ جائے گا۔
-۳. صفحے کے اوپر زبان کے بٹن سے اردو یا انگریزی ترجمہ منتخب کریں۔
-۴. کورس کی اہم سورتوں کے نیچے تین ٹیب والا **تفسیر سوئچر** ظاہر ہوگا — **المیزان**، **نمونہ** یا **تسنیم** پر کلک کر کے ہر عالم کی تفسیر پڑھیں۔
+۳. **🌈 تجوید رنگ** بٹن سے رنگ کوڈنگ آن/آف کریں: سرخ = قلقلہ، نیلا = مد، سبز = اخفا/ادغام، بنفشی = اقلاب، فیروزی = غنہ۔
+۴. **🔊 Listen** بٹن سے سورت کی تلاوت سنیں اور اپنی قراءت سے موازنہ کریں۔
+۵. صفحے کے اوپر زبان کے بٹن سے اردو یا انگریزی ترجمہ منتخب کریں۔
+۶. کورس کی اہم سورتوں کے نیچے تین ٹیب والا **تفسیر سوئچر** ظاہر ہوگا — **المیزان**، **نمونہ** یا **تسنیم** پر کلک کر کے ہر عالم کی تفسیر پڑھیں۔
 
 ---
 
@@ -301,6 +326,7 @@ var QR_LABELS = {
   tasnim: ["Tafsir Tasnim \u2014 Jawadi Amoli", "\u062a\u0641\u0633\u06cc\u0631 \u062a\u0633\u0646\u06cc\u0645 \u2014 \u062c\u0648\u0627\u062f\u06cc \u0622\u0645\u0644\u06cc"]
 };
 var qrCache = {};
+var qrTajOn = true;
 
 function qrFilter() {
   var q = document.getElementById('qr-filter').value.trim().toLowerCase();
@@ -322,6 +348,20 @@ function qrApplyLang() {
   if (typeof certHubSetLang === 'function') certHubSetLang(s);
 }
 
+function qrGlobalAyahStart(n) {
+  var s = 0;
+  for (var i = 0; i < n - 1; i++) s += QR_SURAHS[i].ay;
+  return s + 1;
+}
+function qrParseTajweed(text) {
+  var clr = {h:'#9ca3af',l:'#7c3aed',q:'#dc2626',g:'#0f766e',n:'#2563eb',p:'#0891b2',f:'#15803d',u:'#059669',i:'#16a34a',a:'#9333ea',e:'#15803d',m:'#1d4ed8',r:'#2563eb',s:'#9ca3af'};
+  var bld = {q:1,n:1,m:1};
+  return text.replace(/\[([a-z])(?::\d+)?\[([^\]]*)\]/g, function(x, c, t) {
+    var col = clr[c];
+    if (!col) return t;
+    return '<span style="color:' + col + (bld[c] ? ';font-weight:bold' : '') + '">' + t + '</span>';
+  });
+}
 function qrToggleAudio(btn) {
   var existing = document.getElementById('qr-audio-el');
   if (existing) {
@@ -329,12 +369,25 @@ function qrToggleAudio(btn) {
     btn.textContent = '🔊 Listen';
     return;
   }
+  var surahN = parseInt(btn.dataset.n, 10);
+  var ayCount = QR_SURAHS[surahN - 1].ay;
+  var startG = qrGlobalAyahStart(surahN);
+  var cur = 1;
   var w = document.createElement('div');
   w.className = 'qr-audio-wrap';
   var a = document.createElement('audio');
   a.id = 'qr-audio-el';
-  a.src = 'https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/' + btn.dataset.n + '.mp3';
   a.controls = true; a.autoplay = true;
+  a.onended = function() {
+    cur++;
+    if (cur <= ayCount) {
+      a.src = 'https://cdn.islamic.network/quran/audio/48/ar.parhizgar/' + (startG + cur - 1) + '.mp3';
+      a.play().catch(function() {});
+    } else {
+      w.remove(); btn.textContent = '🔊 Listen';
+    }
+  };
+  a.src = 'https://cdn.islamic.network/quran/audio/48/ar.parhizgar/' + startG + '.mp3';
   w.appendChild(a);
   btn.parentNode.insertBefore(w, btn.nextSibling);
   btn.textContent = '⏹ Stop';
@@ -417,7 +470,7 @@ function qrLoad(n) {
   if (qrCache[n]) { qrRender(n, qrCache[n]); return; }
   panel.innerHTML = '<p class="qr-loading">⏳ Loading Surah ' + n + '\u2026 / \u0644\u0648\u0688 \u06c1\u0648 \u0631\u06c1\u06cc \u06c1\u06d2\u2026</p>';
   panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  fetch('https://api.alquran.cloud/v1/surah/' + n + '/editions/quran-uthmani,en.qarai,ur.jawadi')
+  fetch('https://api.alquran.cloud/v1/surah/' + n + '/editions/quran-uthmani,en.qarai,ur.jawadi,quran-tajweed')
     .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function(j) {
       if (!j.data || j.data.length < 3) throw new Error('bad payload');
@@ -444,6 +497,7 @@ function qrLoad(n) {
 function qrRender(n, data) {
   var meta = QR_SURAHS[n - 1];
   var ar = data[0].ayahs, en = data[1].ayahs, ur = data[2].ayahs;
+  var arTaj = (data[3] && data[3].ayahs) ? data[3].ayahs : null;
   var panel = document.getElementById('qr-panel');
   panel.innerHTML = '';
 
@@ -457,8 +511,45 @@ function qrRender(n, data) {
   listenBtn.dataset.n = String(n);
   listenBtn.onclick = function() { qrToggleAudio(this); };
   head.appendChild(listenBtn);
+  if (arTaj) {
+    var tajBtn = document.createElement('button');
+    tajBtn.className = 'qr-taj-btn' + (qrTajOn ? ' qr-taj-on' : '');
+    tajBtn.type = 'button';
+    tajBtn.textContent = '\ud83c\udf08 Tajweed Colors';
+    tajBtn.onclick = function() {
+      qrTajOn = !qrTajOn;
+      this.classList.toggle('qr-taj-on', qrTajOn);
+      document.querySelectorAll('#qr-panel .ayah-arabic').forEach(function(d) {
+        var tHtml = d.dataset.tajhtml, pText = d.dataset.plaintext, num = d.dataset.ayahnum;
+        if (qrTajOn && tHtml) {
+          d.innerHTML = tHtml + ' <span class="ayah-num">' + num + '</span>';
+        } else {
+          d.innerHTML = '';
+          d.appendChild(document.createTextNode(pText + ' '));
+          d.appendChild(qrEl('span', 'ayah-num', num));
+        }
+      });
+    };
+    head.appendChild(tajBtn);
+  }
   panel.appendChild(head);
+  if (arTaj) {
+    var leg = document.createElement('div');
+    leg.className = 'qr-taj-legend';
+    leg.innerHTML = '<strong>\ud83c\udf08</strong> \u2014 ' +
+      '<span style="color:#dc2626;font-weight:bold">\u25a0 Qalqalah</span> ' +
+      '<span style="color:#2563eb;font-weight:bold">\u25a0 Madd</span> ' +
+      '<span style="color:#0891b2">\u25a0 Madd Permissible</span> ' +
+      '<span style="color:#15803d">\u25a0 Ikhfaa</span> ' +
+      '<span style="color:#16a34a">\u25a0 Idghaam</span> ' +
+      '<span style="color:#9333ea">\u25a0 Iqlab</span> ' +
+      '<span style="color:#0f766e">\u25a0 Ghunnah</span> ' +
+      '<span style="color:#9ca3af">\u25a0 Hamzat Wasl/Silent</span> ' +
+      '<span style="color:#7c3aed">\u25a0 Lam Shamsiyya</span>';
+    panel.appendChild(leg);
+  }
 
+  var basmalaSep = false;
   var a1 = ar[0].text.replace(/\uFEFF/g, '');
   ar[0] = { text: a1 };
   if (n !== 1 && n !== 9 && a1.indexOf(QR_BASMALA) === 0) {
@@ -468,6 +559,7 @@ function qrRender(n, data) {
     var basUR = qrEl('p', 'qr-trans-ur lang-ur', 'اللہ کے نام سے جو بڑا مہربان نہایت رحم والا ہے');
     panel.appendChild(basUR);
     ar[0] = { text: a1.slice(QR_BASMALA.length).trim() };
+    basmalaSep = true;
   }
 
   for (var i = 0; i < ar.length; i++) {
@@ -481,8 +573,18 @@ function qrRender(n, data) {
     var tafDrop = qrEl('div', 'qr-taf-drop');
     panel.appendChild(tafDrop);
     var arDiv = qrEl('div', 'ayah-arabic');
-    arDiv.appendChild(document.createTextNode((ar[i].text || '').replace(/\uFEFF/g, '') + ' '));
-    arDiv.appendChild(qrEl('span', 'ayah-num', String(i + 1)));
+    var plainTxt = (ar[i].text || '').replace(/\uFEFF/g, '');
+    var tajRaw = (arTaj && arTaj[i]) ? (arTaj[i].text || '').replace(/\uFEFF/g, '') : null;
+    var tajHtml = tajRaw ? qrParseTajweed(tajRaw) : null;
+    arDiv.dataset.plaintext = plainTxt;
+    arDiv.dataset.ayahnum = String(i + 1);
+    if (tajHtml) arDiv.dataset.tajhtml = tajHtml;
+    if (qrTajOn && tajHtml && !(i === 0 && basmalaSep)) {
+      arDiv.innerHTML = tajHtml + ' <span class="ayah-num">' + (i + 1) + '</span>';
+    } else {
+      arDiv.appendChild(document.createTextNode(plainTxt + ' '));
+      arDiv.appendChild(qrEl('span', 'ayah-num', String(i + 1)));
+    }
     panel.appendChild(arDiv);
     var enP = qrEl('p', 'qr-trans-en lang-en');
     enP.textContent = en[i] ? en[i].text : '';
@@ -567,13 +669,14 @@ function qrRender(n, data) {
 
 ## 📚 Summary and Further Reading
 
-This module is your permanent reference anchor for the Quran. The clickable index above gives you the **complete Quran — all 114 surahs** — each with authentic Arabic text, the Qarai English translation, and the Zeeshan Haider Jawadi Urdu translation. For the key surahs studied in this course — Al-Fatiha, Ayatul Kursi (in Al-Baqarah), Al-Ikhlas, Al-Falaq, An-Naas, Al-Kawthar, Al-Asr, An-Nasr, Al-Kafirun, Yasin, and Al-Mulk — the in-course Tafseer Switcher provides study summaries from three complementary scholarly perspectives:
+This module is your permanent reference anchor for the Quran. The clickable index above gives you the **complete Quran — all 114 surahs** — each with:
 
-- **Al-Mizan** for philosophical and theological depth, and for understanding the Quran through the Quran
-- **Namoona** for practical application and social ethics, accessible and clear
-- **Tasnim** for mystical and spiritual dimensions, the inner journey of the soul
+- **Tajweed color-coded Arabic text**: Qalqalah letters in red, Madd elongation in blue, Ghunnah in teal, Ikhfaa in green, Iqlab in purple, Lam Shamsiyya in violet, Hamzat Wasl in gray — toggle with 🌈 Tajweed Colors. This mirrors the color-coded Tajweed Quran books used at leading institutes worldwide
+- **Inline recitation audio** — 🔊 Listen plays the complete surah ayah by ayah; use it to check your own pronunciation against a model recitation
+- **English and Urdu translations** (Qarai and Jawadi) — side by side with the Arabic, switch with the language toggle
+- **Full Tafseer Switcher** — Al-Mizan · Namoona · Tasnim study summaries for all 114 surahs, per ayah
 
-Return to this module after completing any course session — open any surah you are memorising, read it with translation, and revisit the studied surahs through a different scholarly lens each time.
+**How to learn from this module:** Open any surah you are working on. First, read each ayah in Arabic, using the Tajweed colors as a pronunciation guide — notice where the red (Qalqalah), blue (Madd), and green (Ikhfaa) letters fall. Then listen to the recitation and compare. Then read the translation for meaning. Finally, open the Tafseer Switcher on individual ayahs to deepen understanding. This is the core method taught at Dar al-Quran programs and Quran institutes worldwide.
 
 **Next Steps:** Practice Exams for consolidation of all 11 modules.
 

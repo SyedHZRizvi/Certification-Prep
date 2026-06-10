@@ -159,6 +159,74 @@ When stopping (Waqf) at the end of a word:
 
 ---
 
+## 🔄 Section 6 — Ibtida: Starting After a Stop
+
+**Ibtida** (ابتِدَاء) means "beginning" — specifically, the rules governing where you may and may not resume recitation after making a Waqf. Waqf and Ibtida are always taught as a pair in classical Tajweed curricula (Al-Azhar, Hawza, Dar al-Huffaz), because stopping at the wrong place is recoverable — you simply resume. But starting at the wrong place after a stop can distort the meaning of Allah's words far more severely than an imperfect stop.
+
+The principle: **every stopping point is not a valid starting point.** After a breath, you must evaluate whether resuming from exactly where you stopped gives a complete, correct, or at minimum neutral meaning. If it does not, you must restart from an earlier point.
+
+---
+
+### The Three Categories of Ibtida
+
+| Category | Name | Definition | Action |
+|----------|------|------------|--------|
+| ✅ Valid | **Ibtida Tam / Hasan** — Good or Complete Beginning | Starting here produces a grammatically complete sentence or a neutral, non-distorting fragment | Begin here confidently |
+| ❌ Invalid | **Ibtida Qabeeh** — Ugly/Prohibited Beginning | Starting here produces a meaning that contradicts or distorts the intended sense | Do NOT begin here; restart from an earlier word |
+| ⚠️ Permitted but Disliked | **Ibtida Jaiz ma'a Karahah** — Allowed but Avoided | Starting here is grammatically survivable but pedagogically awkward — the meaning is incomplete rather than wrong | Avoid if possible; restart to give fuller context |
+
+**Valid Ibtida — examples:**
+- Beginning at **اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ** (Al-Baqarah 2:255, "Allah — there is no god but Him") — a complete, independent declaration.
+- Beginning at **الرَّحمَٰنِ الرَّحِيمِ** (Al-Fatiha 1:3) — a descriptive phrase of Allah; meaning is complete and correct.
+- Beginning at **إِيَّاكَ نَعبُدُ** (Al-Fatiha 1:5) — a complete sentence: "You alone we worship."
+
+**Invalid Ibtida — examples:**
+- Stopping after **وَيلٌ** ("woe") in a construction like وَيلٌ لِّلمُطَفِّفِينَ (Al-Mutaffifin 83:1) and restarting from **لِّلمُطَفِّفِينَ** ("to those who cheat in measure") — because the detached fragment "to those who cheat in measure" sounds like praise without "woe" preceding it.
+- Beginning mid-phrase at a grammatically attached genitive or relative clause — the fragment sounds like an independent statement that it is not.
+
+**Permitted but Disliked — example:**
+- Beginning at **مَٰلِكِ يَومِ الدِّينِ** (Al-Fatiha 1:4, "Master of the Day of Judgment") after stopping mid-Fatiha — the phrase is technically complete but is richer when heard in the flow of the entire opening.
+
+---
+
+### The Practical Rule: Where to Resume
+
+After making a Waqf (of any type — Lazim, Jaiz, or even Idtirari due to breath):
+
+1. **Preferred**: Resume from the exact word where you stopped — this is seamless and produces no gap in meaning.
+2. **Acceptable**: Restart from the beginning of the current Ruba' (quarter-section of the Juz), or from the beginning of the current verse.
+3. **Never**: Begin in the middle of a grammatically connected phrase — e.g., never start on the second word of a genitive construction (mudaf ilayh without its mudaf), or on a conjunction particle (و or ف) without its surrounding context.
+
+> 🎯 **The Test:** Read your starting point aloud in isolation. If the meaning is complete or neutral — you may begin there. If it produces an absurd, incomplete, or meaning-distorting statement — restart from one or two words earlier until the test passes.
+
+---
+
+### Two Worked Examples
+
+#### Example 1 — Al-Fatiha (The Opening)
+
+Suppose you stop after **الرَّحمَٰنِ** (verse 3) due to breath, then resume. Ask: does "al-Raheem" (الرَّحِيمِ) standing alone give correct meaning? Yes — "the Most Merciful" is a complete descriptor of Allah. Valid Ibtida.
+
+Now suppose you stop mid-verse after **صِرَٰطَ** (verse 6 — "the path of") due to breath. Does restarting from **الَّذِينَ** ("those whom") make sense? Partially — it begins a relative clause without the noun it modifies. This is disliked; restart from **اهدِنَا الصِّرَاطَ** to give full context: "Guide us to the straight path."
+
+#### Example 2 — Surah Al-Ikhlas (112)
+
+The surah has 4 short verses. After stopping on **قُل هُوَ اللَّهُ أَحَدٌ** (verse 1), resuming from **اللَّهُ الصَّمَدُ** (verse 2) is valid — "Allah, the Self-Sufficient" is a complete, correct statement.
+
+But if you stop mid-verse after **لَم يَلِد** (verse 3 — "He did not beget"), resuming from **وَلَم يُولَد** ("nor was He begotten") is valid — both halves of the verse are independently meaningful statements about Allah's nature. However, a teacher would advise restarting from **لَم يَلِد** to maintain the paired structure.
+
+---
+
+### Common Student Mistakes
+
+| Mistake | Why It's Wrong | Correction |
+|---------|---------------|------------|
+| Restarting from a **conjunctive waw** (وَ) — e.g., beginning at **وَلَا الضَّالِّينَ** (Al-Fatiha 1:7) | The waw connects this phrase to what came before; alone it implies "and..." without an antecedent | Restart from **غَيرِ المَغضُوبِ عَلَيهِم** or from the beginning of the verse |
+| Restarting from a **genitive second term** (mudaf ilayh) — e.g., beginning at **يَومِ الدِّينِ** without **مَٰلِكِ** | "Day of Judgment" without "Master of" is a floating noun phrase, not a statement | Back up to **مَٰلِكِ يَومِ الدِّينِ** |
+| Restarting from a **negative particle** — e.g., beginning at **لَا إِلَٰهَ** without **اللَّهُ** preceding it | "There is no god" standing alone could be misread as a bare negation; the declaration is complete only with **إِلَّا اللَّهُ** | Either restart the full Shahada phrase or resume from the full **اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ** |
+
+---
+
 ## 🎯 Common Misconceptions
 
 - **"Qalqalah is an optional stylistic effect"** — It is mandatory for the 5 letters when they carry Sukoon or appear at the end of a verse stop.

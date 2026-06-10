@@ -241,6 +241,79 @@ How many dots do each of these letters have, and where?
 
 ---
 
+## 🎵 Letter Characteristics — Sifaat al-Huruf
+
+Knowing *where* a letter is born (its Makhraj) is only half the picture. The other half is *how* it sounds when it comes out. **Sifaat al-Huruf** (صِفَاتُ الحُرُوف) — Letter Characteristics — describe the acoustic and phonetic qualities each letter carries regardless of position: how much air escapes, whether the sound is heavy or light, whether the vocal cords vibrate, and whether the sound flows freely or stops dead. Two letters can share the same neighbourhood in the mouth (similar Makhraj) and yet sound completely different because their Sifaat differ. Mastering Sifaat is what separates a reader who is technically accurate from a reciter who sounds genuinely Arabic.
+
+---
+
+### The 5 Opposing Pairs (Sifaat al-Mutadaadda)
+
+Classical Tajweed scholars organised the core Sifaat as five pairs of opposites. Every Arabic letter has one from each pair.
+
+| # | Pair | First Quality | Letters That Have It | Second Quality | Letters That Have It |
+|---|------|---------------|----------------------|----------------|----------------------|
+| 1 | **Hams / Jahr** | **Hams** (هَمس) — "whisper": air flows freely, vocal cords do NOT vibrate | ف ح ث ه ش خ ص س ك ت | **Jahr** (جَهر) — "loudness": vocal cords vibrate, air is restricted | All remaining 18 letters |
+| 2 | **Shadda / Rakhawa** | **Shadda** (شِدَّة) — "constriction": airflow is completely blocked for an instant | ق ط ب ج د ك أ | **Rakhawa** (رَخَاوَة) — "relaxation": airflow continues after the letter | ف ح ث ه ش خ ص س غ ظ ذ ع ز و ي | (+ Bayniyya letters below) |
+| 3 | **Isti'la / Istifal** | **Isti'la** (استِعلاء) — "elevation": back of tongue rises toward the roof — sound is **heavy (full-mouth)** | خ ص ض ط ظ غ ق | **Istifal** (استِفَال) — "lowering": tongue stays low — sound is **light (thin)** | All remaining 21 letters |
+| 4 | **Itbaaq / Infitaah** | **Itbaaq** (إطبَاق) — "enclosure": tongue seals against the roof, trapping sound inside | ص ض ط ظ | **Infitaah** (انفِتَاح) — "openness": tongue does not seal; sound escapes freely | All remaining 24 letters |
+| 5 | **Idhlaq / Ismat** | **Idhlaq** (إذلاق) — "fluency/ease": produced at the quick, agile tip of tongue or lips | ف ر م ن ل ب | **Ismat** (إصمَات) — "restraint": produced further back; rarely appear without Idhlaq letters | All remaining 22 letters |
+
+> 🎯 **Why five pairs?** Imam Ibn al-Jazari (the defining authority on Tajweed, d. 1429 CE) used these five pairs as a diagnostic grid. When a student mispronounced a letter, a teacher could identify which Sifah was wrong — like a mechanic checking one system at a time.
+
+---
+
+### The 7 Heavy Letters (Huruf al-Isti'la) — Always Full-Mouth
+
+These seven letters carry the quality of Isti'la permanently. Unlike thin letters that stay flat in the mouth, these always require the back of the tongue to arch upward, giving them a "full," rounded, heavy quality:
+
+<div style="font-size:2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;background:#f0fdf4;border-radius:8px;padding:0.5rem 1rem;margin:1rem 0;">
+خ — ص — ض — ط — ظ — غ — ق
+</div>
+
+**Classical mnemonic:** خُصَّ ضَغْطٍ قِظ (Khuss-da-ghtin-qizh) — a meaningless but memorable phrase that contains all 7 heavy letters in sequence. Generations of students at Al-Azhar and Dar al-Huffaz have memorised these 7 letters with this phrase before any other rule.
+
+| Letter | Name | Heavy Sound Description |
+|--------|------|------------------------|
+| خ | Kha | Like the "ch" in Scottish "loch" — throat with weight |
+| ص | Sad | A heavy, dark "s" — tongue pressed low, back arches |
+| ض | Dad | So unique that Arabic is called "Lughat al-Dad" — the only language with this sound |
+| ط | Ta (heavy) | A heavy "t" — tongue depressed, resonating in the back |
+| ظ | Dha (heavy) | Heavy "th-as-in-this" — rare in other languages |
+| غ | Ghayn | Like the French "r" — a gargled sound from the back |
+| ق | Qaf | The deepest "k" — produced at the very back of the tongue |
+
+**Critical rule:** These 7 letters are ALWAYS heavy — even when they carry a Kasra (which normally thins other letters). A ص with Kasra still sounds heavier than a plain س. This is where students who learn rules without Sifaat go wrong.
+
+---
+
+### The 5 Qalqalah Letters — The Echo-Bounce Group
+
+Five letters produce an echo-bounce (Qalqalah) when they appear with a Sukoon or are stopped upon at the end of a verse. Knowing their Sifaat explains why: they are all **Jahr** (vocal cords on) + **Shadda** (airflow blocked), so when the flow is released there is a natural rebound of sound.
+
+<div style="font-size:2em;direction:rtl;text-align:center;line-height:2.5;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#065f46;background:#f0fdf4;border-radius:8px;padding:0.5rem 1rem;margin:1rem 0;">
+ق — ط — ب — ج — د
+</div>
+
+**Mnemonic:** قُطُبُ جَد (Qutubujad) — "the pole of the ancestor"
+
+> 🔗 **See Module 4 — Section 1** for the full Qalqalah rule: when each of these letters carries a Sukoon, or when you stop on them at verse-end, the distinctive bounce must be produced. Understanding that they share Jahr + Shadda makes this rule logical rather than arbitrary.
+
+---
+
+### Why Sifaat Matter — The ص vs. س Test
+
+Here is the key insight that separates Sifaat from mere memorisation: two letters can be in the same grammatical position, same vowel, even the same word context — and still must sound completely different because their Sifaat are different.
+
+Take **ص (Sad)** and **س (Seen)**: both are sibilant letters (hissing "s"-type sounds), both can carry any vowel, and both appear in similar Quranic contexts. But:
+
+- **ص** is Isti'la + Itbaaq → always heavy, always full-mouth, even with Kasra
+- **س** is Istifal + Infitaah → always thin, always open, even with Damma
+
+A student who does not know Sifaat hears a rule like "Kasra thins the sound" and incorrectly applies it to ص — making it sound like a thin س. The result is a different letter and, in the Quran, potentially a different word. The word "Sirat" (path) uses **ص** in the Quranic spelling (الصِّرَاطَ) — if you substitute a thin **س**, you have changed the word. Sifaat are not stylistic refinements; they are the difference between correct and incorrect recitation.
+
+---
+
 ## 🔭 Next Steps
 
 Move on to **Module 2 — Harakat & Basic Reading** where you'll add short vowels (fatha, kasra, damma) to these letters and start reading actual Quranic words.

@@ -49,8 +49,9 @@ You do not need to know Arabic. You do not need any prior experience. All you ne
 | ✅ **Key Surahs** | Recite Surah Yasin, Al-Mulk, and Ayatul Kursi with meaning |
 | ✅ **Hifz Techniques** | Use proven memorisation methods to retain what you learn |
 | ✅ **Full Quran Translation** | All 114 surahs with complete English (Qarai) and Urdu (Jawadi) translation, loaded instantly in the browser |
-| ✅ **Full Quran Tafseer** | Per-ayah Tafseer switcher (Al-Mizan · Namoona · Tasnim) for every surah — in-depth inline summaries for key surahs, full commentary access for all others |
-| ✅ **Quran Recitation Audio** | Listen to any of the 114 surahs inline — one click, no new tab, no navigation away |
+| ✅ **Full Quran Tafseer** | Per-ayah Tafseer switcher (Al-Mizan · Namoona · Tasnim) for every surah — inline study summaries for all 114 surahs |
+| ✅ **Tajweed Color-Coded Arabic** | Every letter color-coded by Tajweed rule (Qalqalah, Madd, Ghunnah, Ikhfaa, Iqlab, Lam Shamsiyya) — mirrors the colored Tajweed Quran books used at leading institutes worldwide; toggle on/off per surah |
+| ✅ **Quran Recitation Audio** | Listen to a complete recitation of any surah inline — plays ayah by ayah; use it to check your pronunciation against a model recitation |
 
 ---
 
@@ -112,7 +113,7 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 | 8 | Memorisation Techniques (Hifz) | Proven science-backed methods for retention |
 | 9 | Selected Important Surahs | Surah Yasin, Al-Mulk, and Ayatul Kursi |
 | 10 | Recitation Practice & Assessment | Self-evaluation, finding teachers, continuing your journey |
-| 11 | Full Quran Reference — Arabic, Translation & Tafseer | The complete Quran — all 114 surahs: Arabic + English/Urdu translation + per-ayah Tafseer switcher (Al-Mizan · Namoona · Tasnim) + inline recitation audio |
+| 11 | Full Quran Reference — Arabic, Translation & Tafseer | The complete Quran — all 114 surahs: Tajweed color-coded Arabic + English/Urdu translation + per-ayah Tafseer switcher (Al-Mizan · Namoona · Tasnim) + inline recitation audio |
 
 ---
 
