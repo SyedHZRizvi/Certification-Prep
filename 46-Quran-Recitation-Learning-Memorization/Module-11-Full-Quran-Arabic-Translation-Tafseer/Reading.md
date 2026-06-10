@@ -56,6 +56,10 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 .qr-taf-tab-mini:hover:not(.qr-taf-tab-active){background:#f0fdf4;}
 .qr-taf-pane{line-height:1.75;font-size:.88rem;padding:.3rem 0;}
 .qr-taf-none{color:#64748b;font-size:.88rem;font-style:italic;margin:0;}
+.qr-listen-btn{display:inline-flex;align-items:center;gap:.35rem;background:#064e3b;color:#fff;border:none;border-radius:8px;padding:.45rem 1.1rem;font-size:.85rem;cursor:pointer;margin-top:.55rem;font-family:inherit;transition:.15s;}
+.qr-listen-btn:hover{background:#065f46;}
+.qr-audio-wrap{margin:.5rem 0 .1rem;width:100%;}
+.qr-audio-wrap audio{width:100%;height:40px;}
 </style>
 
 <script>
@@ -318,6 +322,23 @@ function qrApplyLang() {
   if (typeof certHubSetLang === 'function') certHubSetLang(s);
 }
 
+function qrToggleAudio(btn) {
+  var existing = document.getElementById('qr-audio-el');
+  if (existing) {
+    existing.closest('.qr-audio-wrap').remove();
+    btn.textContent = '🔊 Listen';
+    return;
+  }
+  var w = document.createElement('div');
+  w.className = 'qr-audio-wrap';
+  var a = document.createElement('audio');
+  a.id = 'qr-audio-el';
+  a.src = 'https://cdn.islamic.network/quran/audio-surah/128/ar.alafasy/' + btn.dataset.n + '.mp3';
+  a.controls = true; a.autoplay = true;
+  w.appendChild(a);
+  btn.parentNode.insertBefore(w, btn.nextSibling);
+  btn.textContent = '⏹ Stop';
+}
 function qrToggleTaf(btn) {
   var drop = btn.nextElementSibling;
   var open = drop.classList.contains('qr-taf-open');
@@ -429,6 +450,13 @@ function qrRender(n, data) {
   var head = qrEl('div', 'qr-head');
   head.appendChild(qrEl('div', 'qr-head-ar', meta.ar));
   head.appendChild(qrEl('div', 'qr-head-meta', 'Surah ' + n + ' \u00b7 ' + meta.en + ' \u00b7 ' + meta.ay + ' ayahs \u00b7 Juz ' + meta.juz + ' \u00b7 ' + (data[0].revelationType || '')));
+  var listenBtn = document.createElement('button');
+  listenBtn.className = 'qr-listen-btn';
+  listenBtn.type = 'button';
+  listenBtn.textContent = '\ud83d\udd0a Listen';
+  listenBtn.dataset.n = String(n);
+  listenBtn.onclick = function() { qrToggleAudio(this); };
+  head.appendChild(listenBtn);
   panel.appendChild(head);
 
   var a1 = ar[0].text.replace(/\uFEFF/g, '');

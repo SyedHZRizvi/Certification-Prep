@@ -48,8 +48,9 @@ You do not need to know Arabic. You do not need any prior experience. All you ne
 | ✅ **Juz Amma** | Recite 15+ short surahs from the 30th section of the Quran |
 | ✅ **Key Surahs** | Recite Surah Yasin, Al-Mulk, and Ayatul Kursi with meaning |
 | ✅ **Hifz Techniques** | Use proven memorisation methods to retain what you learn |
-| ✅ **Translation** | Understand every verse in both English and Urdu |
-| ✅ **Tafseer** | Explore the profound meaning through classical scholarly tradition |
+| ✅ **Full Quran Translation** | All 114 surahs with complete English (Qarai) and Urdu (Jawadi) translation, loaded instantly in the browser |
+| ✅ **Full Quran Tafseer** | Per-ayah Tafseer switcher (Al-Mizan · Namoona · Tasnim) for every surah — in-depth inline summaries for key surahs, full commentary access for all others |
+| ✅ **Quran Recitation Audio** | Listen to any of the 114 surahs inline — one click, no new tab, no navigation away |
 
 ---
 
@@ -111,7 +112,7 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 | 8 | Memorisation Techniques (Hifz) | Proven science-backed methods for retention |
 | 9 | Selected Important Surahs | Surah Yasin, Al-Mulk, and Ayatul Kursi |
 | 10 | Recitation Practice & Assessment | Self-evaluation, finding teachers, continuing your journey |
-| 11 | Full Quran Reference — Arabic, Translation & Tafseer | The complete Quran — all 114 surahs, clickable: Arabic + English/Urdu translation + tafseer switcher (al-Mizan · Namoona · Tasnim) for key surahs |
+| 11 | Full Quran Reference — Arabic, Translation & Tafseer | The complete Quran — all 114 surahs: Arabic + English/Urdu translation + per-ayah Tafseer switcher (Al-Mizan · Namoona · Tasnim) + inline recitation audio |
 
 ---
 
@@ -190,8 +191,9 @@ When you complete all 11 modules, you will:
 | ✅ **جزءِ عم** | پارہ ۳۰ کی ۱۵ سے زیادہ چھوٹی سورتیں |
 | ✅ **اہم سورتیں** | سورۃ یٰس، سورۃ الملک، آیت الکرسی |
 | ✅ **حفظ کے طریقے** | یادداشت کے ثابت شدہ سائنسی طریقے |
-| ✅ **ترجمہ** | ہر آیت کا اردو اور انگریزی ترجمہ |
-| ✅ **تفسیر** | مستند علمی روایت کی روشنی میں گہری تفہیم |
+| ✅ **مکمل قرآن ترجمہ** | تمام ۱۱۴ سورتوں کا مکمل انگریزی (قرائی) اور اردو (جوادی) ترجمہ — براہ راست براؤزر میں |
+| ✅ **مکمل قرآن تفسیر** | ہر آیت کے ساتھ تفسیر سوئچر (المیزان · نمونہ · تسنیم) — اہم سورتوں کا انلائن خلاصہ، باقی سب کے لیے تفسیر کا لنک |
+| ✅ **تلاوت قرآن** | کسی بھی سورت کی تلاوت انلائن سنیں — ایک کلک، نیا ٹیب نہیں |
 
 ---
 
