@@ -80,9 +80,10 @@ Letters produced in the open cavity of the mouth/throat:
 - **Alif** (ا), **Waw** (و), **Ya** (ي) — the three "long vowel" letters
 
 ### Region 2 — الحلق (Al-Halq: The Throat)
-| Deepest | Middle | Top of throat |
-|---------|--------|---------------|
-| Hamza (ء), Ha (ه) | Ayn (ع), Ha (ح) | Ghayn (غ), Kha (خ) |
+Six letters emerge from three depths of the throat:
+- **Deepest (larynx)**: Hamza (ء), Ha (ه)
+- **Middle**: Ayn (ع), Ha (ح)
+- **Top of throat**: Ghayn (غ), Kha (خ)
 
 ### Region 3 — اللسان (Al-Lisan: The Tongue)
 The tongue touches different points for different letters:
