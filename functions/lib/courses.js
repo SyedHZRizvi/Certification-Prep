@@ -1,5 +1,5 @@
 /**
- * Canonical list of all 45 courses on The Cert Hub.
+ * Canonical list of all 46 courses on The Cert Hub.
  *
  * Must stay in sync with EXPECTED_COURSES in scripts/verify-baseline.py.
  *
@@ -58,6 +58,8 @@ export const COURSES = [
   { id: "43-Persian-Language",  slug: "Persian Language Mastery",  icon: "🇮🇷", category: "Spoken Language Mastery" },
   { id: "44-Arabic-Language",   slug: "Arabic Language Mastery",   icon: "🇸🇦", category: "Spoken Language Mastery" },
   { id: "45-French-Language",   slug: "French Language Mastery",   icon: "🇫🇷", category: "Spoken Language Mastery" },
+  // Quran & Islamic Studies track
+  { id: "46-Quran-Recitation-Learning-Memorization", slug: "Quran Recitation, Learning & Memorization", icon: "📖", category: "Quran & Islamic Studies" },
 ];
 
 export const COURSE_IDS = COURSES.map(c => c.id);

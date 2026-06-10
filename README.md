@@ -1,13 +1,13 @@
-# 🎓 The Cert Hub, 45 Certification Study Courses
+# 🎓 The Cert Hub, 46 Certification Study Courses
 
-![Certifications: 45](https://img.shields.io/badge/Certifications-45-blueviolet.svg)
-![Modules: 412](https://img.shields.io/badge/Modules-412-blue.svg)
-![Mock Exams: 135](https://img.shields.io/badge/Mock_Exams-135-orange.svg)
+![Certifications: 46](https://img.shields.io/badge/Certifications-46-blueviolet.svg)
+![Modules: 422](https://img.shields.io/badge/Modules-422-blue.svg)
+![Mock Exams: 138](https://img.shields.io/badge/Mock_Exams-138-orange.svg)
 ![Questions: 21000+](https://img.shields.io/badge/Practice_Questions-21%2C000%2B-green.svg)
 
 ## 🌐 [Visit the live course site →](https://cert-hub.pages.dev/)
 
-This repository contains the raw markdown for **45 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, and Bitcoin/e-commerce. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)**, same content, prettier UI, auth-gated.
+This repository contains the raw markdown for **46 story-driven self-study courses** across project management, IT systems administration, cloud, AI/GenAI, cybersecurity, supply chain, AI-based digital marketing, Bitcoin/e-commerce, spoken languages, and Quran studies. The polished site is at **[cert-hub.pages.dev](https://cert-hub.pages.dev/)**, same content, prettier UI, auth-gated.
 
 ---
 
@@ -29,7 +29,7 @@ Each track is a **guided journey** built on three pillars:
 
 ---
 
-## 🗺️ All 45 Tracks
+## 🗺️ All 46 Tracks
 
 ### 🧭 Project Management
 
@@ -121,7 +121,13 @@ Each track is a **guided journey** built on three pillars:
 | 44 | [`44-Arabic-Language/`](./44-Arabic-Language/README.md) | Arabic Language Mastery (A1 → C2 CEFR) | 10 | 55 Q / 90 min |
 | 45 | [`45-French-Language/`](./45-French-Language/README.md) | French Language Mastery (A1 → C2 CEFR) | 10 | 50 Q / 120 min |
 
-**Totals:** 45 courses · 412 modules · 135 full-length mock exams · 21,000+ practice questions · ~1,500+ hours of focused content.
+### 📖 Quran & Islamic Studies — Cert Hub Original
+
+| # | Folder | Track | Modules | Mock-Exam Length |
+|---|--------|-------|---------|------------------|
+| 46 | [`46-Quran-Recitation-Learning-Memorization/`](./46-Quran-Recitation-Learning-Memorization/README.md) | Quran Recitation, Learning & Memorization (Bilingual EN/UR · Tajweed · Hifz · Tafseer) | 10 | 60 Q / 90 min |
+
+**Totals:** 46 courses · 422 modules · 138 full-length mock exams · 21,000+ practice questions · ~1,500+ hours of focused content.
 
 ---
 
