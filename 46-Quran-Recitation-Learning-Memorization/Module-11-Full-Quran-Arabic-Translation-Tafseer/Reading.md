@@ -331,10 +331,27 @@ function qrToggleTaf(btn) {
   var isUR = false;
   try { isUR = (localStorage.getItem('cert-hub-lang-pref') || 'en') === 'ur'; } catch(e) {}
   if (!taf) {
-    var msg = qrEl('p', 'qr-taf-none',
-      isUR ? 'اس سورت کا تفسیری خلاصہ کورس میں شامل نہیں۔' : 'In-course tafseer summary not available for this surah.');
-    if (isUR) msg.style.direction = 'rtl';
-    drop.appendChild(msg);
+    var note = qrEl('p', 'qr-taf-none',
+      isUR ? 'اس سورت کا انلائن خلاصہ ابھی کورس میں شامل نہیں — تینوں تفاسیر براہ راست پڑھیں:'
+           : 'Inline summary not yet written for this surah — read the full commentaries:');
+    if (isUR) note.style.direction = 'rtl';
+    drop.appendChild(note);
+    var extDiv = document.createElement('div');
+    extDiv.className = 'qr-taf-tabs-mini';
+    extDiv.style.marginTop = '.4rem';
+    [
+      ['Al-Mizan', 'https://www.al-islam.org/tafsir-al-mizan-vol-1-allamah-sayyid-muhammad-husayn-tabatabai'],
+      ['Namoona', 'https://www.al-islam.org/an-enlightening-commentary-light-holy-quran-vol-1'],
+      ['Tasnim', 'https://www.al-islam.org/quran']
+    ].forEach(function(te) {
+      var a = document.createElement('a');
+      a.className = 'qr-taf-tab-mini';
+      a.href = te[1];
+      a.textContent = te[0];
+      a.style.textDecoration = 'none';
+      extDiv.appendChild(a);
+    });
+    drop.appendChild(extDiv);
     drop.classList.add('qr-taf-open');
     return;
   }
