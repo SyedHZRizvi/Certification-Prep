@@ -20,26 +20,34 @@ After mastering Juz Amma, the journey continues with four of the most celebrated
 
 | Text | Location | Why Important |
 |------|---------|---------------|
-| Ayatul Kursi | Al-Baqarah 2:255 | Greatest verse in the Quran |
+| Ayatul Kursi | Al-Baqarah 2:255–256 | Greatest verse in the Quran |
 | Surah Yasin | Chapter 36 | "The Heart of the Quran" |
 | Surah Al-Mulk | Chapter 67 | Protects from punishment in the grave |
 | Surah Al-Kahf | Chapter 18 | Protection from Dajjal; read on Fridays |
 
 ---
 
-## 🏆 Ayatul Kursi — آيَةُ الكُرسِي (Al-Baqarah 2:255)
+## 🏆 Ayatul Kursi — آيَةُ الكُرسِي (Al-Baqarah 2:255–256)
+
+> **Scholarly note:** The majority of scholars define Ayatul Kursi as verse 255 alone — the verse whose opening words give it its name. A number of scholars, however, consider verses 255 and 256 together to form a complete, self-contained proclamation: 255 establishes Allah's absolute attributes and sovereignty; 256 establishes the direct consequence — that this sovereignty makes all compulsion in religion impossible, and that whoever holds fast to Allah has grasped the firmest bond. Both views are respected and both verses should be memorised together.
 
 <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:2px solid #34d399;border-radius:16px;padding:2rem;margin:1.5rem 0;text-align:center;">
 <div style="font-size:1.9em;direction:rtl;line-height:3;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;color:#064e3b;">
 
 ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ ﴿٢٥٥﴾
 
+لَا إِكۡرَاهَ فِي ٱلدِّينِۖ قَد تَّبَيَّنَ ٱلرُّشۡدُ مِنَ ٱلۡغَيِّۚ فَمَن يَكۡفُرۡ بِٱلطَّـٰغُوتِ وَيُؤۡمِنۢ بِٱللَّهِ فَقَدِ ٱسۡتَمۡسَكَ بِٱلۡعُرۡوَةِ ٱلۡوُثۡقَىٰ لَا ٱنفِصَامَ لَهَاۗ وَٱللَّهُ سَمِيعٌ عَلِيمٌ ﴿٢٥٦﴾
+
 </div>
 </div>
 
-**Translation:**
+**Translation — Verse 255:**
 
 *"Allah — there is no god except Him, the Ever-Living, the Sustainer of existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great."*
+
+**Translation — Verse 256:**
+
+*"There is no compulsion in religion. Certainly, right has become clearly distinct from wrong. Whoever rejects false deities (Taghoot) and believes in Allah has grasped the most trustworthy handhold with no break in it. And Allah is All-Hearing, All-Knowing."*
 
 ### Why It Is the Greatest Verse
 
@@ -68,6 +76,10 @@ Tabatabai's Al-Mizan devotes an extended discussion to this verse. His central i
 - After every obligatory prayer → protected until the next prayer (Nasai)
 - Before sleep → a guardian (angel) is assigned to protect you until morning (Bukhari)
 - Entering home → poverty/evil is driven away (Al-Bayhaqi)
+
+### Practice Resource — Color-Coded Quran
+
+To practice reading these verses with Tajweed color coding (the same color-guided system used in teaching institutes worldwide), see the [Gateway to Quran Color-Coded Quran](https://gatewaytoquran.com/color-coded-quran/) — free downloadable Juz PDFs with every letter color-coded by Tajweed rule. Use it alongside the Tajweed-colored reader in Module 11.
 
 ---
 

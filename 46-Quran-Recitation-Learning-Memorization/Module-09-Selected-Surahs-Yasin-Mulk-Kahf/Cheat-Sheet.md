@@ -4,14 +4,14 @@
 
 | Text | Location | Virtues |
 |------|---------|---------|
-| Ayatul Kursi | Al-Baqarah 2:255 | Greatest verse; protection after prayer + before sleep |
+| Ayatul Kursi | Al-Baqarah 2:255–256 | Greatest verse; protection after prayer + before sleep |
 | Surah Yasin | Chapter 36, 83 verses | Heart of Quran; recite for ill/dying |
 | Surah Al-Mulk | Chapter 67, 30 verses | Intercedes in grave; recite every night |
 | Surah Al-Kahf | Chapter 18, 110 verses | Light until next Friday; protection from Dajjal |
 
 ---
 
-## Ayatul Kursi — 9 Divine Attributes
+## Ayatul Kursi — 9 Divine Attributes (Verse 255) + Verse 256 Principle
 
 1. No God except Him
 2. Al-Hayyul (Ever-Living)
@@ -22,6 +22,8 @@
 7. Perfect knowledge of past and future
 8. Kursi encompasses heavens and earth
 9. Preservation never tires Him
+
+**Verse 256 — The Consequence of 255:** Because Allah has absolute sovereignty (verse 255), religion cannot be imposed by force. Whoever rejects false deities and holds to Allah has grasped the firmest bond (العروة الوثقى — Al-Urwah al-Wuthqa) — unbreakable.
 
 ---
 

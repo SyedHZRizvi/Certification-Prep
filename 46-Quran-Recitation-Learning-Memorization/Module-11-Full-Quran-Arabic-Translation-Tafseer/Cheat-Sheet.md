@@ -30,7 +30,7 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 | No. | Name | Ayahs | Core Message |
 |-----|------|-------|--------------|
 | 1 | Al-Fatiha | 7 | Prayer + tawhid + guidance; Umm al-Kitab |
-| 2:255 | Ayatul Kursi | 1 | Divine attributes: Al-Hayy, Al-Qayyum; absolute sovereignty |
+| 2:255–256 | Ayatul Kursi | 2 | 255: Divine attributes — Al-Hayy, Al-Qayyum, absolute sovereignty; 256: No compulsion — grasping the firmest bond |
 | 103 | Al-Asr | 3 | Four conditions for escaping loss: faith + deeds + truth + patience |
 | 108 | Al-Kawthar | 3 | Divine abundance; prayer + sacrifice as response |
 | 109 | Al-Kafirun | 6 | Theological independence; no compromise on monotheism |
@@ -95,6 +95,7 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 | Qarai English Quran | al-islam.org/quran |
 | Quran with multiple translations | quran.com |
 | Arabic text download | tanzil.net |
+| Color-coded Tajweed Quran (PDFs, all 30 Juz) | gatewaytoquran.com/color-coded-quran/ |
 | Tafseer-e-Namoona (English adaptation) | al-islam.org — *An Enlightening Commentary into the Light of the Holy Quran* |
 | Tafsir Tasnim (selected translations) | al-islam.org and major Islamic digital libraries |
 
