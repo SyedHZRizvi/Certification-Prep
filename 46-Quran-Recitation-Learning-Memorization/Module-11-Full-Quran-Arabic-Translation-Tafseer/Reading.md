@@ -46,6 +46,12 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 .qr-note{background:#f0fdf4;border-left:4px solid #34d399;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0;line-height:1.75;}
 .qr-summary-tag{font-size:.8rem;color:#94a3b8;font-style:italic;margin:.25rem 0 .5rem;}
 .qr-loading{text-align:center;color:#065f46;padding:1.5rem 0;font-weight:600;}
+.qr-taf-btn{display:inline-flex;align-items:center;gap:.3rem;background:transparent;border:1px solid #a7f3d0;border-radius:6px;padding:3px 10px;font-size:.78rem;color:#064e3b;cursor:pointer;margin-bottom:.4rem;transition:.15s;font-family:inherit;direction:ltr;}
+.qr-taf-btn:hover{background:#f0fdf4;border-color:#34d399;}
+.qr-taf-drop{display:none;border:1px solid #d1fae5;border-radius:8px;padding:.4rem .5rem;margin-bottom:.6rem;background:#f0fdf4;box-shadow:0 2px 8px rgba(6,95,70,.1);direction:ltr;}
+.qr-taf-drop.qr-taf-open{display:block;}
+.qr-taf-drop a{display:block;padding:.28rem .5rem;color:#064e3b;text-decoration:none;font-size:.82rem;border-radius:5px;font-weight:600;}
+.qr-taf-drop a:hover{background:#d1fae5;}
 </style>
 
 <script>
@@ -308,6 +314,13 @@ function qrApplyLang() {
   if (typeof certHubSetLang === 'function') certHubSetLang(s);
 }
 
+function qrToggleTaf(btn) {
+  var drop = btn.nextElementSibling;
+  var open = drop.classList.contains('qr-taf-open');
+  document.querySelectorAll('.qr-taf-drop.qr-taf-open').forEach(function(d) { d.classList.remove('qr-taf-open'); });
+  if (!open) drop.classList.add('qr-taf-open');
+}
+
 function qrLoad(n) {
   var panel = document.getElementById('qr-panel');
   if (qrCache[n]) { qrRender(n, qrCache[n]); return; }
@@ -352,23 +365,41 @@ function qrRender(n, data) {
   ar[0] = { text: a1 };
   if (n !== 1 && n !== 9 && a1.indexOf(QR_BASMALA) === 0) {
     panel.appendChild(qrEl('div', 'qr-basmala', QR_BASMALA));
+    var basEN = qrEl('p', 'qr-trans-en lang-en', 'In the name of Allah, the All-beneficent, the All-merciful');
+    panel.appendChild(basEN);
+    var basUR = qrEl('p', 'qr-trans-ur lang-ur', 'اللہ کے نام سے جو بڑا مہربان نہایت رحم والا ہے');
+    panel.appendChild(basUR);
     ar[0] = { text: a1.slice(QR_BASMALA.length).trim() };
   }
 
   for (var i = 0; i < ar.length; i++) {
+    var tafBtn = document.createElement('button');
+    tafBtn.className = 'qr-taf-btn';
+    tafBtn.type = 'button';
+    tafBtn.innerHTML = '&#128214; Tafseer';
+    tafBtn.onclick = function() { qrToggleTaf(this); };
+    panel.appendChild(tafBtn);
+    var tafDrop = qrEl('div', 'qr-taf-drop');
+    [
+      ['Al-Mizan \u2014 Tabatabai', 'https://www.al-islam.org/tafsir-al-mizan-vol-1-allamah-sayyid-muhammad-husayn-tabatabai'],
+      ['Namoona \u2014 Makarem Shirazi', 'https://www.al-islam.org/an-enlightening-commentary-light-holy-quran-vol-1'],
+      ['Tasnim \u2014 Jawadi Amoli', 'https://www.al-islam.org/quran']
+    ].forEach(function(tl) {
+      var a = document.createElement('a');
+      a.href = tl[1]; a.target = '_blank'; a.rel = 'noopener';
+      a.textContent = tl[0] + ' \u2197';
+      tafDrop.appendChild(a);
+    });
+    panel.appendChild(tafDrop);
     var arDiv = qrEl('div', 'ayah-arabic');
     arDiv.appendChild(document.createTextNode((ar[i].text || '').replace(/\uFEFF/g, '') + ' '));
     arDiv.appendChild(qrEl('span', 'ayah-num', String(i + 1)));
     panel.appendChild(arDiv);
     var enP = qrEl('p', 'qr-trans-en lang-en');
-    var enB = qrEl('strong', null, 'English (Qarai): ');
-    enP.appendChild(enB);
-    enP.appendChild(document.createTextNode(en[i] ? en[i].text : ''));
+    enP.textContent = en[i] ? en[i].text : '';
     panel.appendChild(enP);
     var urP = qrEl('p', 'qr-trans-ur lang-ur');
-    var urB = qrEl('strong', null, '\u0627\u0631\u062f\u0648 \u062a\u0631\u062c\u0645\u06c1 (\u0630\u06cc\u0634\u0627\u0646 \u062d\u06cc\u062f\u0631 \u062c\u0648\u0627\u062f\u06cc): ');
-    urP.appendChild(urB);
-    urP.appendChild(document.createTextNode(ur[i] ? ur[i].text : ''));
+    urP.textContent = ur[i] ? ur[i].text : '';
     panel.appendChild(urP);
   }
 
@@ -423,7 +454,10 @@ function qrRender(n, data) {
   var l2 = document.createElement('a');
   l2.href = 'https://www.al-islam.org/quran'; l2.target = '_blank'; l2.rel = 'noopener';
   l2.textContent = 'More tafseer resources (Al-Islam.org) \u2197';
-  links.appendChild(l1); links.appendChild(l2);
+  var l3 = document.createElement('a');
+  l3.href = 'https://sabeelquran.org'; l3.target = '_blank'; l3.rel = 'noopener';
+  l3.textContent = 'Recitation & Learning — Sabeel Quran ↗';
+  links.appendChild(l1); links.appendChild(l2); links.appendChild(l3);
   panel.appendChild(links);
 
   qrApplyLang();
@@ -438,6 +472,7 @@ function qrRender(n, data) {
 - **[Al-Islam.org](https://www.al-islam.org/quran)** — Qarai English translation available in full, with search by surah and ayah
 - **[Quran.com](https://quran.com)** — Multiple translations side-by-side; excellent for comparing scholarly renderings
 - **[Tanzil.net](https://tanzil.net)** — Download the Arabic text in multiple Unicode formats with full harakat
+- **[Sabeel Quran](https://sabeelquran.org)** — Quran recitation and learning resources
 
 ---
 
