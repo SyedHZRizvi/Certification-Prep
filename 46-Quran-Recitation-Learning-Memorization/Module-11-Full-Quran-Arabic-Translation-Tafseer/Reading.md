@@ -358,12 +358,18 @@ function qrParseTajweed(text) {
              f:'#15803d',u:'#059669',i:'#16a34a',a:'#9333ea',e:'#15803d',m:'#1d4ed8',
              r:'#2563eb',s:'#9ca3af'};
   var bld = {q:1,n:1,m:1};
-  var pri = 'hslpgueiafnrmq'; // ascending priority — q is highest
-  return text.split(/(\s+)/).map(function(tok) {
-    if (/^\s+$/.test(tok)) return tok;
+  var pri = 'hslpgueiafnrmq'; // ascending — q is highest
+  // Glue spaces inside brackets with NBSP so word-splitting never breaks a
+  // multi-word bracket pattern across tokens (e.g. [a:n[word1 word2]])
+  var glued = text.replace(/\[([a-z])(?::\d+)?\[([^\]]*)\]/g, function(_, c, inner) {
+    return '[' + c + '[' + inner.replace(/ /g, ' ') + ']';
+  });
+  return glued.split(/( +)/).map(function(tok) {
+    if (/^ +$/.test(tok)) return tok;
     var codes = [], re = /\[([a-z])(?::\d+)?\[([^\]]*)\]/g, m;
     while ((m = re.exec(tok)) !== null) codes.push(m[1]);
-    var plain = tok.replace(/\[([a-z])(?::\d+)?\[([^\]]*)\]/g, '$2');
+    // Strip bracket notation; also remove any orphaned [ ] not consumed above
+    var plain = tok.replace(/\[([a-z])(?::\d+)?\[([^\]]*)\]/g, '$2').replace(/[\[\]]/g, '');
     if (!codes.length) return plain;
     var best = '';
     for (var i = 0; i < pri.length; i++) if (codes.indexOf(pri[i]) !== -1) best = pri[i];
