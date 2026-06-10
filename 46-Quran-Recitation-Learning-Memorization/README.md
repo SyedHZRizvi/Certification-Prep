@@ -111,7 +111,7 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 | 8 | Memorisation Techniques (Hifz) | Proven science-backed methods for retention |
 | 9 | Selected Important Surahs | Surah Yasin, Al-Mulk, and Ayatul Kursi |
 | 10 | Recitation Practice & Assessment | Self-evaluation, finding teachers, continuing your journey |
-| 11 | Full Quran Reference — Arabic, Translation & Tafseer | Key surahs in full: Arabic + English/Urdu translation + interactive tafseer switcher (al-Mizan · Namoona · Tasnim) |
+| 11 | Full Quran Reference — Arabic, Translation & Tafseer | The complete Quran — all 114 surahs, clickable: Arabic + English/Urdu translation + tafseer switcher (al-Mizan · Namoona · Tasnim) for key surahs |
 
 ---
 

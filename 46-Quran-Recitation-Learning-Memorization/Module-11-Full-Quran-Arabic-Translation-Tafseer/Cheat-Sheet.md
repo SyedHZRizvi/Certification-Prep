@@ -23,7 +23,9 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 
 ---
 
-## 3. Key Surahs in This Module
+## 3. Key Surahs with In-Course Tafseer Summaries
+
+*The module's clickable reader covers the complete Quran — all 114 surahs. These are the surahs with in-course tafseer summaries:*
 
 | No. | Name | Ayahs | Core Message |
 |-----|------|-------|--------------|
