@@ -105,7 +105,7 @@ function tf(btn){
 
 This module is the **complete Quran reference** of the course. The clickable index below gives you **all 114 surahs of the Quran** — select any surah and its full text loads instantly:
 
-- **Tajweed color-coded Arabic text** — every letter rendered with its Tajweed rule highlighted: Qalqalah (red), Madd elongation (blue), Ghunnah (teal), Ikhfaa (green), Iqlab (purple), Lam Shamsiyya, Hamzat Wasl, and more. Toggle on/off with the **🌈 Tajweed Colors** button
+- **Tajweed color-coded Arabic text** — every letter rendered with its Tajweed rule highlighted: Qalqalah (red), Madd elongation (blue), Ghunnah (teal), Ikhfaa (green), Iqlab (purple), Lam Shamsiyya, Hamzat Wasl, and more. Toggle on/off with the **Tajweed Colors** button
 - Authentic **Arabic text with full harakat** (tashkeel), shown ayah by ayah
 - **English translation** by Seyyed Ali Quli Qarai — a phrase-by-phrase rendering widely regarded as one of the most accurate modern scholarly English translations of the Quran
 - **Urdu translation** by Maulana Sayyid Zeeshan Haider Jawadi — a renowned scholar of the Indian subcontinent and one of the most respected Urdu translators of the Quran
@@ -116,7 +116,7 @@ This module is the **complete Quran reference** of the course. The clickable ind
 
 1. Scroll to the surah index below (or type in the search box to filter by name or number).
 2. Click any surah — the complete Tajweed-colored Arabic text with translation loads in the reading panel.
-3. Use the **🌈 Tajweed Colors** button in the panel header to toggle color-coded pronunciation guidance on or off. The legend below the header shows what each color indicates.
+3. Use the **Tajweed Colors** button in the panel header to toggle color-coded pronunciation guidance on or off. The legend below the header shows what each color indicates.
 4. Use the **🔊 Listen** button to hear the surah recited; the audio plays through each ayah in sequence.
 5. Use the language buttons at the top of the page to switch the translation between English and Urdu.
 6. For any surah, click the **📖 Tafseer** button on each ayah to open the inline three-scholar study summary — **Al-Mizan**, **Namoona**, or **Tasnim** — all 114 surahs covered.
@@ -155,7 +155,7 @@ Maulana Sayyid Zeeshan Haider Jawadi was one of the most distinguished Quran sch
 یہ ماڈیول کورس کا **مکمل قرآنی حوالہ** ہے۔ نیچے دی گئی فہرست میں **قرآن مجید کی تمام ۱۱۴ سورتیں** موجود ہیں — کسی بھی سورت پر کلک کریں اور اس کا مکمل متن فوراً سامنے آ جائے گا:
 
 - ہر آیت کا **مکمل تشکیل کے ساتھ** مستند عربی متن
-- **🌈 تجوید رنگ کوڈنگ**: ہر حرف کو تجوید کے اصول کے مطابق رنگ دیا گیا ہے (قلقلہ، مد، غنہ، اخفا، اقلاب، لامِ شمسیہ) — دنیا کے بڑے اداروں میں استعمال ہونے والے رنگین تجوید قرآن کی طرز پر
+- **تجوید رنگ کوڈنگ**: ہر حرف کو تجوید کے اصول کے مطابق رنگ دیا گیا ہے (قلقلہ، مد، غنہ، اخفا، اقلاب، لامِ شمسیہ) — دنیا کے بڑے اداروں میں استعمال ہونے والے رنگین تجوید قرآن کی طرز پر
 - **🔊 سماعی تلاوت**: ہر سورت کی مکمل تلاوت سنیں — ایک بٹن سے سورت آیت بہ آیت چلنا شروع ہو جاتی ہے
 - **اردو ترجمہ**: مولانا سید ذیشان حیدر جوادی — برصغیر کے نامور عالمِ قرآن
 - **انگریزی ترجمہ**: سید علی قلی قرائی — جدید علمی انگریزی ترجمہ
@@ -165,7 +165,7 @@ Maulana Sayyid Zeeshan Haider Jawadi was one of the most distinguished Quran sch
 
 ۱. نیچے سورتوں کی فہرست تک جائیں (یا تلاش کے خانے میں نام یا نمبر لکھیں)۔
 ۲. کسی بھی سورت پر کلک کریں — مکمل عربی متن مع ترجمہ پڑھنے کے خانے میں آ جائے گا۔
-۳. **🌈 تجوید رنگ** بٹن سے رنگ کوڈنگ آن/آف کریں: سرخ = قلقلہ، نیلا = مد، سبز = اخفا/ادغام، بنفشی = اقلاب، فیروزی = غنہ۔
+۳. **تجوید رنگ** بٹن سے رنگ کوڈنگ آن/آف کریں: سرخ = قلقلہ، نیلا = مد، سبز = اخفا/ادغام، بنفشی = اقلاب، فیروزی = غنہ۔
 ۴. **🔊 Listen** بٹن سے سورت کی تلاوت سنیں اور اپنی قراءت سے موازنہ کریں۔
 ۵. صفحے کے اوپر زبان کے بٹن سے اردو یا انگریزی ترجمہ منتخب کریں۔
 ۶. کورس کی اہم سورتوں کے نیچے تین ٹیب والا **تفسیر سوئچر** ظاہر ہوگا — **المیزان**، **نمونہ** یا **تسنیم** پر کلک کر کے ہر عالم کی تفسیر پڑھیں۔
@@ -539,7 +539,7 @@ function qrRender(n, data) {
     var tajBtn = document.createElement('button');
     tajBtn.className = 'qr-taj-btn' + (qrTajOn ? ' qr-taj-on' : '');
     tajBtn.type = 'button';
-    tajBtn.textContent = '\ud83c\udf08 Tajweed Colors';
+    tajBtn.textContent = 'Tajweed Colors \u2014 \u062a\u062c\u0648\u06cc\u062f \u0631\u0646\u06af';
     tajBtn.onclick = function() {
       qrTajOn = !qrTajOn;
       this.classList.toggle('qr-taj-on', qrTajOn);
@@ -560,16 +560,16 @@ function qrRender(n, data) {
   if (arTaj) {
     var leg = document.createElement('div');
     leg.className = 'qr-taj-legend';
-    leg.innerHTML = '<strong>\ud83c\udf08</strong> \u2014 ' +
-      '<span style="color:#dc2626;font-weight:bold">\u25a0 Qalqalah</span> ' +
-      '<span style="color:#2563eb;font-weight:bold">\u25a0 Madd</span> ' +
-      '<span style="color:#0891b2">\u25a0 Madd Permissible</span> ' +
-      '<span style="color:#15803d">\u25a0 Ikhfaa</span> ' +
-      '<span style="color:#16a34a">\u25a0 Idghaam</span> ' +
-      '<span style="color:#9333ea">\u25a0 Iqlab</span> ' +
-      '<span style="color:#0f766e">\u25a0 Ghunnah</span> ' +
-      '<span style="color:#9ca3af">\u25a0 Hamzat Wasl/Silent</span> ' +
-      '<span style="color:#7c3aed">\u25a0 Lam Shamsiyya</span>';
+    leg.innerHTML =
+      '<span style="color:#dc2626;font-weight:bold">\u25a0 Qalqalah \u0642\u0644\u0642\u0644\u06c1</span> ' +
+      '<span style="color:#2563eb;font-weight:bold">\u25a0 Madd \u0645\u062f</span> ' +
+      '<span style="color:#0891b2">\u25a0 Madd Permissible \u0645\u062f \u062c\u0627\u0626\u0632</span> ' +
+      '<span style="color:#15803d">\u25a0 Ikhfaa \u0627\u062e\u0641\u0627</span> ' +
+      '<span style="color:#16a34a">\u25a0 Idghaam \u0627\u062f\u063a\u0627\u0645</span> ' +
+      '<span style="color:#9333ea">\u25a0 Iqlab \u0627\u0642\u0644\u0627\u0628</span> ' +
+      '<span style="color:#0f766e">\u25a0 Ghunnah \u063a\u0646\u06c1</span> ' +
+      '<span style="color:#9ca3af">\u25a0 Hamzat Wasl \u06c1\u0645\u0632\u06c3 \u0627\u0644\u0648\u0635\u0644</span> ' +
+      '<span style="color:#7c3aed">\u25a0 Lam Shamsiyya \u0644\u0627\u0645\u0650 \u0634\u0645\u0633\u06cc\u06c1</span>';
     panel.appendChild(leg);
   }
 
@@ -821,7 +821,7 @@ Quranic Arabic has approximately 77,000 words but only 1,685 unique roots. Just 
 
 This module is your permanent reference anchor for the Quran. The clickable index above gives you the **complete Quran — all 114 surahs** — each with:
 
-- **Tajweed color-coded Arabic text**: Qalqalah letters in red, Madd elongation in blue, Ghunnah in teal, Ikhfaa in green, Iqlab in purple, Lam Shamsiyya in violet, Hamzat Wasl in gray — toggle with 🌈 Tajweed Colors. This mirrors the color-coded Tajweed Quran books used at leading institutes worldwide
+- **Tajweed color-coded Arabic text**: Qalqalah letters in red, Madd elongation in blue, Ghunnah in teal, Ikhfaa in green, Iqlab in purple, Lam Shamsiyya in violet, Hamzat Wasl in gray — toggle with the Tajweed Colors button. This mirrors the color-coded Tajweed Quran books used at leading institutes worldwide
 - **Inline recitation audio** — 🔊 Listen plays the complete surah ayah by ayah; use it to check your own pronunciation against a model recitation
 - **English and Urdu translations** (Qarai and Jawadi) — side by side with the Arabic, switch with the language toggle
 - **Full Tafseer Switcher** — Al-Mizan · Namoona · Tasnim study summaries for all 114 surahs, per ayah

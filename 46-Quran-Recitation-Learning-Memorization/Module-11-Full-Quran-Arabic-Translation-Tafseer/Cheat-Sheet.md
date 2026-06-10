@@ -103,7 +103,7 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 
 ## 8. Tajweed Color-Coding Guide
 
-The Arabic text in the reader applies color-coding aligned with world-standard Tajweed Quran books. Toggle on/off with the **🌈 Tajweed Colors** button on each surah.
+The Arabic text in the reader applies color-coding aligned with world-standard Tajweed Quran books. Toggle on/off with the **Tajweed Colors** button on each surah.
 
 | Color | Rule | Letters | What to Do |
 |-------|------|---------|------------|
