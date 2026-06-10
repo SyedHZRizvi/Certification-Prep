@@ -354,13 +354,23 @@ function qrGlobalAyahStart(n) {
   return s + 1;
 }
 function qrParseTajweed(text) {
-  var clr = {h:'#9ca3af',l:'#7c3aed',q:'#dc2626',g:'#0f766e',n:'#2563eb',p:'#0891b2',f:'#15803d',u:'#059669',i:'#16a34a',a:'#9333ea',e:'#15803d',m:'#1d4ed8',r:'#2563eb',s:'#9ca3af'};
+  var clr = {h:'#9ca3af',l:'#7c3aed',q:'#dc2626',g:'#0f766e',n:'#2563eb',p:'#0891b2',
+             f:'#15803d',u:'#059669',i:'#16a34a',a:'#9333ea',e:'#15803d',m:'#1d4ed8',
+             r:'#2563eb',s:'#9ca3af'};
   var bld = {q:1,n:1,m:1};
-  return text.replace(/\[([a-z])(?::\d+)?\[([^\]]*)\]/g, function(x, c, t) {
-    var col = clr[c];
-    if (!col) return t;
-    return '<span style="color:' + col + (bld[c] ? ';font-weight:bold' : '') + '">' + t + '</span>';
-  });
+  var pri = 'hslpgueiafnrmq'; // ascending priority — q is highest
+  return text.split(/(\s+)/).map(function(tok) {
+    if (/^\s+$/.test(tok)) return tok;
+    var codes = [], re = /\[([a-z])(?::\d+)?\[([^\]]*)\]/g, m;
+    while ((m = re.exec(tok)) !== null) codes.push(m[1]);
+    var plain = tok.replace(/\[([a-z])(?::\d+)?\[([^\]]*)\]/g, '$2');
+    if (!codes.length) return plain;
+    var best = '';
+    for (var i = 0; i < pri.length; i++) if (codes.indexOf(pri[i]) !== -1) best = pri[i];
+    var col = clr[best];
+    if (!col) return plain;
+    return '<span style="color:' + col + (bld[best] ? ';font-weight:bold' : '') + '">' + plain + '</span>';
+  }).join('');
 }
 function qrToggleAudio(btn) {
   var existing = document.getElementById('qr-audio-el');
