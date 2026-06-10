@@ -44,7 +44,7 @@
 }
 </style>
 
-<div class="fc-app" id="fc-app" role="region" aria-label="Interactive flashcards">
+<div class="fc-app" id="fc-app" role="region" aria-label="Interactive flashcards" markdown="0">
   <div class="fc-controls">
     <div class="fc-controls-left">
       <select class="fc-select" id="fc-section" aria-label="Filter by section"><option value="__all__">All Sections</option></select>

@@ -32,7 +32,7 @@
 
 # اردو Flashcards — Urdu Language Mastery
 
-<div id="fc-app">
+<div id="fc-app" markdown="0">
   <div id="fc-stats">
     <div class="fc-stat"><span id="st-total">0</span>Cards</div>
     <div class="fc-stat"><span id="st-remaining">0</span>Remaining</div>
