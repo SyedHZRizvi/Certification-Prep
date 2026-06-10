@@ -683,6 +683,132 @@ function qrRender(n, data) {
 
 ---
 
+## ✨ I'jaz al-Quran — The Inimitable Miracle
+
+The Arabic word *I'jaz* (إعجاز) means "to render incapable." The Quran is called *Mu'jizah* (miracle) because no human being — from the time of its revelation until today — has been able to produce anything comparable. This is not merely a theological position: the Quran itself records the challenge, known as *Tahaddi* (تحدي — the Quranic Challenge): *"If you are in doubt about what We have sent down upon Our servant, then produce a surah like it"* (2:23). That challenge has stood for 1,400 years unanswered.
+
+### Dimensions of I'jaz
+
+| Dimension | Key Point |
+|-----------|-----------|
+| **Literary (I'jaz Bayani)** | The Quran's Arabic defies classification into any known literary genre — poetry, prose, saj' rhyme, or oratory. Pre-Islamic Arab poets who were opponents of the Prophet acknowledged its unique nature. Even today, Arabic literary scholars place it outside any genre category. |
+| **Structural coherence** | Key terms appear with precise symmetry: *Al-Dunya* (this world) and *Al-Akhira* (the next world) each appear exactly 115 times; *Malak* (angel) and *Shaytan* each appear 88 times. This numerical balance was produced through oral dictation across 23 years — not composition with revision. |
+| **Historical foresight** | Descriptions of the human embryo's stages of development (23:12–14), the barrier between fresh and salt water (55:19–20), and the expanding universe (51:47 — *"the sky We built with power; and indeed We are its expander"*) align with discoveries made centuries after revelation. |
+| **Linguistic preservation** | The Arabic language was itself preserved through the Quran — spoken Arabic dialects diverged over 1,400 years, but Classical Quranic Arabic remains unchanged, learnable, and recitable by any Muslim who studies it. |
+
+> 🎯 **For students of recitation:** *I'jaz al-Bayani* — the linguistic miracle — is why Tajweed matters. The sound of the Quran, its melody, rhythm, and precise articulation, is part of what defied Arabia's greatest poets. When you perfect your Makhaarij and Tajweed, you are preserving the literary miracle intact.
+
+---
+
+## 📜 How the Quran Was Preserved — The Transmission Chain
+
+The Quran is the most carefully authenticated text in human history. Its preservation rests on two parallel systems that have operated continuously from the moment of revelation.
+
+### Stage 1 — During the Prophet's Lifetime (610–632 CE)
+
+| Method | Detail |
+|--------|--------|
+| **Memorization (Hifz)** | The Prophet recited every revelation to companions who memorized it and recited it daily in prayer. Tens of thousands had memorized the complete Quran by the time of his passing. |
+| **Written recording** | Designated scribes (*Kuttab al-Wahi*) — including Ali ibn Abi Talib, Zayd ibn Thabit, and others — recorded every verse in the order directed by the Prophet himself. |
+
+### Stage 2 — Compilation under Caliph Abu Bakr (632–634 CE)
+
+After the Battle of Yamama (633 CE), in which 70+ Huffaz were martyred, Caliph Abu Bakr ordered a written compilation. Zayd ibn Thabit led the project under a strict verification standard: every verse required **two witnesses** — written evidence AND at least two people who had heard it directly from the Prophet. This produced the first unified Mushaf.
+
+### Stage 3 — Standardization under Caliph Uthman (644–656 CE)
+
+As Islam spread across Persia, Egypt, Syria, and Arabia, small dialectal differences in recitation emerged. Caliph Uthman commissioned a committee — again led by Zayd ibn Thabit — to produce a single standard Mushaf in the Qurayshi dialect (the dialect of revelation). Identical copies were sent to all provinces. This is the *Rasm Uthmani* — the script used in every Mushaf printed worldwide today.
+
+| Evidence of Preservation | Detail |
+|--------------------------|--------|
+| Oldest manuscripts | The Birmingham Quran (radiocarbon-dated with 95.4% probability to 568–645 CE) and the Sana'a manuscript (Yemen, ~645–690 CE) both agree with the current Quran text word for word |
+| Living chain of Huffaz | Every generation has passed the exact memorized text to the next — an unbroken chain from the Prophet to today. An Ijazah certificate traces this chain by name. |
+| Seven Qira'at | Seven recognized recitation styles exist, each with a complete Isnad chain — minor rhythmic variations in identical text, no differences in meaning |
+
+> 🎯 **Why this matters for your recitation:** When you learn Tajweed from a certified teacher, you are joining this 1,400-year chain. Your teacher's Ijazah traces back — through named individuals — to the Prophet himself. Every correctly produced Makhraj is the same sound taught at the source.
+
+---
+
+## 🗺️ Makki and Madani Surahs — Classification and Themes
+
+Every surah is classified as **Makki** (revealed before the Prophet's migration to Madinah in 622 CE) or **Madani** (revealed after migration). This classification, taught at Al-Azhar and all major institutes, explains the tone and purpose of each surah.
+
+| Feature | Makki Surahs | Madani Surahs |
+|---------|-------------|---------------|
+| **Period** | 610–622 CE (13 years in Mecca) | 622–632 CE (10 years in Madinah) |
+| **Total surahs** | 86 | 28 |
+| **Themes** | Tawhid, Day of Judgment, Prophets' stories, soul, paradise and hellfire | Community laws, prayer, fasting, zakah, family law, ethics |
+| **Characteristic address** | يَا أَيُّهَا النَّاسُ ("O humanity!") | يَا أَيُّهَا الَّذِينَ آمَنُوا ("O you who believe!") |
+| **Style** | Shorter, more rhythmic, powerful, urgent | Longer, detailed, legislative |
+
+### Key Examples
+
+| Surah | Type | Core Teaching |
+|-------|------|---------------|
+| Al-Fatiha (1) | Makki | Foundation of Tawhid and supplication |
+| Al-Baqarah (2) | Madani | Longest surah; community laws, Ayatul Kursi |
+| Al-Ikhlas (112) | Makki | Pure Tawhid in 4 ayaat |
+| Al-Kahf (18) | Makki | Four trials of faith: wealth, religion, knowledge, power |
+| Al-Asr (103) | Makki | 4-condition formula for salvation |
+| Al-Hujurat (49) | Madani | Community ethics: brotherhood, no backbiting or mockery |
+
+> 🎯 **Learning strategy:** Juz Amma (Juz 30) is entirely Makki short surahs — intense, rhythmic, powerful. The style was deliberate: Makki revelation addressed a hostile environment, building faith under pressure. Short, memorable, and deeply impactful. Notice this when you recite them.
+
+---
+
+## 📖 Mushaf Structure — Juz, Hizb, Rub', and Margin Symbols
+
+| Division | Arabic | Meaning | Count |
+|----------|--------|---------|-------|
+| Juz | جُزء | Part — the Quran is divided into 30 equal Juz for pacing memorization and recitation | 30 |
+| Hizb | حِزب | Group — each Juz contains 2 Hizb (60 Hizb total) | 60 |
+| Rub' | رُبع | Quarter — each Hizb contains 4 Rub' (240 total) | 240 |
+| Ayah | آيَة | Verse | 6,236 (Hafs narration) |
+
+### Margin Symbols Found in the Mushaf
+
+| Symbol | Name | Meaning |
+|--------|------|---------|
+| ۩ | Sajda mark | Prostration verse — sujood al-tilawa is recommended here |
+| ۞ | Hizb mark | Beginning of a Hizb division |
+| ۝ | Ayah number (ornate) | End of a verse (some editions) |
+| Waqf symbols (قلى، صلى، ج، م، لا) | Stopping marks | Guide for where to stop, pause, or continue — studied in detail in Module 4 (Waqf & Ibtida) |
+
+> 🎯 **Practice tip:** Before memorizing any surah, find its Juz and Hizb position. Memorizers at Dar al-Huffaz track their daily Hifz quota in Rub' units — a Rub' (quarter of a Hizb) takes approximately 5–10 minutes to recite and is a natural chunk for daily review.
+
+---
+
+## 🔑 Key Quranic Vocabulary — The Most Frequent Words
+
+Quranic Arabic has approximately 77,000 words but only 1,685 unique roots. Just 100 words account for more than 50% of the entire text. Learning these transforms recitation from phonetic reading to meaningful engagement.
+
+| Arabic | Root | Meaning | Approx. Count in Quran |
+|--------|------|---------|------------------------|
+| اللَّهُ | — | Allah | 2,699 |
+| رَبّ | ر ب ب | Lord, Sustainer | 969 |
+| إِنَّ / أَنَّ | — | Indeed / That | 2,800+ |
+| لَا | — | No, not | 5,885 |
+| مِن | — | From, of | 3,226 |
+| كَانَ | ك و ن | Was, existed | 1,358 |
+| الَّذِي / الَّتِي | — | Who, which (relative) | 1,900+ |
+| عَلَى | — | On, upon | 1,453 |
+| يَوْم | ي و م | Day | 405 |
+| آمَنَ | أ م ن | Believed, had faith | 537 |
+| كِتَاب | ك ت ب | Book, scripture | 261 |
+| نَفْس | ن ف س | Soul, self | 295 |
+| قَالَ | ق و ل | Said, spoke | 539 |
+| الرَّحْمَٰن | ر ح م | The All-Beneficent | 57 |
+| الرَّحِيم | ر ح م | The All-Merciful | 115 |
+| الْعَالَمِينَ | ع ل م | All worlds, all creation | 73 |
+| صِرَاط | ص ر ط | Path, way | 45 |
+| حَقّ | ح ق ق | Truth, right | 287 |
+| عِلْم | ع ل م | Knowledge | 105 |
+| خَيْر | خ ي ر | Good, better, best | 176 |
+
+> 🎯 **How to use this:** When you encounter these words during recitation, recognize them by sight. Begin with the top 10 — you will recognize them in every surah. At 300 words known, you comprehend approximately 70% of the Quran text. Corpusquran.org and quran.com both offer frequency-sorted vocabulary lists for continued study.
+
+---
+
 ## 📚 Summary and Further Reading
 
 This module is your permanent reference anchor for the Quran. The clickable index above gives you the **complete Quran — all 114 surahs** — each with:

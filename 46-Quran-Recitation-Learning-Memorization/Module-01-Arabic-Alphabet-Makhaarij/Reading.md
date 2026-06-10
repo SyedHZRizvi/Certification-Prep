@@ -315,6 +315,45 @@ A student who does not know Sifaat hears a rule like "Kasra thins the sound" and
 
 ---
 
+## 🕌 Adab al-Tilawa — Etiquettes of Quranic Recitation
+
+Every world-class Quranic institute — Al-Azhar, Dar al-Huffaz, Dar al-Quran programs worldwide — opens its curriculum with a lesson that comes before pronunciation, before Tajweed rules, before anything technical: *how you approach* the Quran matters as deeply as *how you pronounce* it. These etiquettes are the conditions that allow the heart to receive what the tongue is reciting.
+
+### Before You Begin
+
+| Etiquette | Practice |
+|-----------|---------|
+| **Tahara (Purity)** | Be in a state of wudu (ritual ablution). Touching the Mushaf requires wudu by scholarly consensus; recitation from memory is also strongly recommended with wudu. |
+| **Clean, respected space** | Recite in a clean location. Avoid reciting in bathrooms or states of distraction and noise. |
+| **Face the Qibla** | Facing Mecca (Qibla) during recitation is mustahabb (recommended) — it is the direction of prayer and deepens focus. |
+| **Ta'awwudh** | Begin with: أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيم (*A'udhu billahi minash-shaytanir-rajeem*). This is commanded in the Quran: *"When you recite the Quran, seek refuge in Allah from the accursed devil"* (16:98). |
+| **Basmala** | Then: بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيم (*Bismillahir-Rahmanir-Raheem*). Begin every surah with Basmala — except Surah at-Tawbah (9), which uniquely begins without it. |
+
+### During Recitation
+
+| Etiquette | Practice |
+|-----------|---------|
+| **Tarteel (Measured pace)** | Recite slowly and distinctly. The Quran commands: *"Recite the Quran with measured recitation"* (73:4). Rushing through ayaat is discouraged at every institute. |
+| **Tadabbur (Contemplation)** | Reflect on the meaning of what you recite. Even without full Arabic comprehension, recite with conscious intention and presence of heart. |
+| **Sajda al-Tilawa** | At 15 specific ayaat marked ۩ in the Mushaf, perform a prostration (sujood al-tilawa) — these are the Prostration Verses. |
+| **Respect during the sitting** | Do not engage in conversation, laughter, or distracted activity while reciting. |
+
+### Handling the Mushaf
+
+- Hold the Mushaf with both hands or supported — never placed on the floor or treated casually.
+- Place the Mushaf above other books; never stack books on top of it.
+- Do not write in the Mushaf without cause.
+
+### Duas Connected to Recitation
+
+| Moment | Dua/Practice |
+|--------|-------------|
+| Starting recitation | أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيم ← then → بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيم |
+| After every recitation session | صَدَقَ اللَّهُ العَظِيم — *Sadaqa Allahul-Azeem* ("Allah the Magnificent has spoken the truth") |
+| After completing the full Quran (Khatm) | Make a special dua — scholars note Khatm dua is among the privileged moments when supplications are accepted. Begin the Quran again immediately to maintain the bond with the text. |
+
+---
+
 ## 🔭 Next Steps
 
 Move on to **Module 2 — Harakat & Basic Reading** where you'll add short vowels (fatha, kasra, damma) to these letters and start reading actual Quranic words.

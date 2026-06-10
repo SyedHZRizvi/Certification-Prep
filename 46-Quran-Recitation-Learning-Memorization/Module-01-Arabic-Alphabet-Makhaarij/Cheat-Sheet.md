@@ -84,3 +84,32 @@ Alif — Dal — Dhal — Ra — Zay — Waw
 | 2 dots below | ي (Ya — medial) |
 | 3 dots above | ث (Tha) |
 | 2 dots above (Qaf) | ق (Qaf) |
+
+---
+
+## Adab al-Tilawa — Before-You-Recite Checklist
+
+| Step | Action |
+|------|--------|
+| 1 | Wudu (ritual purity) |
+| 2 | Clean, respected place — face Qibla if possible |
+| 3 | Ta'awwudh: أَعُوذُ بِاللَّهِ مِنَ الشَّيطَانِ الرَّجِيم |
+| 4 | Basmala: بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيم (every surah except 9) |
+| 5 | Recite with Tarteel (slow + distinct) + Tadabbur (contemplation) |
+| 6 | Sajda al-Tilawa at ۩ marked verses (15 in total across the Quran) |
+| 7 | After session: صَدَقَ اللَّهُ العَظِيم |
+| 8 | After full Khatm: special dua — then begin again immediately |
+
+---
+
+## Sifaat al-Huruf — 5 Opposing Pairs (Quick Reference)
+
+| Pair | Quality A | Quality B |
+|------|-----------|-----------|
+| Hams / Jahr | Air flows freely, no vocal-cord vibration (ف ح ث ه ش خ ص س ك ت) | Vocal cords vibrate, air restricted (all other 18 letters) |
+| Shadda / Rakhawa | Airflow completely blocked for an instant (ق ط ب ج د ك أ) | Airflow continues after the sound |
+| Isti'la / Istifal | Back of tongue rises → heavy/full sound (خ ص ض ط ظ غ ق) | Tongue stays low → light/thin sound (all other 21) |
+| Itbaaq / Infitaah | Tongue seals against roof → trapped sound (ص ض ط ظ) | Tongue does not seal → open sound |
+| Idhlaq / Ismat | Agile tip of tongue or lips → fluent (ف ر م ن ل ب) | Produced further back → restrained |
+
+**7 Heavy letters (always full-mouth):** خ ص ض ط ظ غ ق — mnemonic: خُصَّ ضَغْطٍ قِظ

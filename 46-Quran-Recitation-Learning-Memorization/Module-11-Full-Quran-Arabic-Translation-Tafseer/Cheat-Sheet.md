@@ -129,6 +129,8 @@ The Arabic text in the reader applies color-coding aligned with world-standard T
 | Total surahs | 114 |
 | Total ayahs (approx.) | 6,236 |
 | Total Juz (parts) | 30 |
+| Total Hizb | 60 (2 per Juz) |
+| Total Rub' (quarters) | 240 (4 per Hizb) |
 | Longest surah | Al-Baqarah (286 ayahs) |
 | Shortest surahs | Al-Kawthar, An-Nasr, Al-Asr (3 ayahs each) |
 | First revealed surah | Al-Alaq (96) — first 5 ayahs |
@@ -136,3 +138,62 @@ The Arabic text in the reader applies color-coding aligned with world-standard T
 | Juz 30 coverage | Surahs 78–114 (all short surahs) |
 | Mu'awwidhatayn | Surahs 113 + 114 (Falaq + Naas) together |
 | Umm al-Kitab | Surah Al-Fatiha — "Mother of the Book" |
+| Sajda al-Tilawa | 15 prostration verses marked ۩ across the Quran |
+| Makki surahs | 86 (revealed before Hijra, 610–622 CE) |
+| Madani surahs | 28 (revealed after Hijra, 622–632 CE) |
+
+---
+
+## 10. I'jaz al-Quran — The Four Dimensions of Inimitability
+
+| Dimension | Summary |
+|-----------|---------|
+| Literary (I'jaz Bayani) | Arabic of the Quran fits no known genre — poetry, prose, rhyme, or oratory — yet surpasses all of them. Arab poets acknowledged this at the time. |
+| Structural coherence | Key word pairs appear in exact symmetry: *Al-Dunya / Al-Akhira* (115 each), *Malak / Shaytan* (88 each) — maintained across 23 years of oral dictation |
+| Historical foresight | Embryology (23:12–14), fresh/salt water barrier (55:19–20), expanding universe (51:47) — described centuries before scientific discovery |
+| Preservation | Only religious text with a continuous authenticated chain (Isnad) of memorizers from the Prophet to today — across 1,400 years and every generation |
+
+**The Tahaddi (تحدي) — Quranic Challenge:** *"Produce a surah like it"* (2:23) — unanswered for 1,400 years.
+
+---
+
+## 11. Quran Preservation — Three-Stage Timeline
+
+| Stage | When | What Happened |
+|-------|------|---------------|
+| Revelation + dual preservation | 610–632 CE | Memorized by tens of thousands; written by designated scribes under the Prophet's direction |
+| Abu Bakr's compilation | 632–634 CE | First unified written Mushaf; every verse required written evidence + 2 oral witnesses |
+| Uthman's standardization | 644–656 CE | Single standard Mushaf (Rasm Uthmani) in Qurayshi dialect sent to all provinces — still the script used worldwide |
+
+**Oldest manuscripts:** Birmingham Quran (radiocarbon-dated to 568–645 CE) and Sana'a manuscript (645–690 CE) — both match the current text word for word.
+
+---
+
+## 12. Makki vs. Madani — Quick Classifier
+
+| Indicator in the text | Likely Makki | Likely Madani |
+|----------------------|-------------|---------------|
+| Address | يَا أَيُّهَا النَّاسُ ("O humanity!") | يَا أَيُّهَا الَّذِينَ آمَنُوا ("O believers!") |
+| Content | Tawhid, Judgment, Prophets' stories | Laws, community ethics, prayer/fasting/zakah |
+| Length | Shorter, rhythmic, urgent | Longer, detailed, legislative |
+
+**Makki Juz 30 surahs (78–114):** All Makki — powerful, short, memorizable — designed for impact under pressure.
+
+---
+
+## 13. Top Quranic Words — First 10 to Learn
+
+| Word | Meaning | Count in Quran |
+|------|---------|----------------|
+| اللَّهُ | Allah | 2,699 |
+| رَبّ | Lord / Sustainer | 969 |
+| لَا | No / Not | 5,885 |
+| مِن | From / Of | 3,226 |
+| إِنَّ | Indeed / Verily | 1,700+ |
+| كَانَ | Was / Existed | 1,358 |
+| يَوْم | Day | 405 |
+| آمَنَ | Believed / Had faith | 537 |
+| كِتَاب | Book / Scripture | 261 |
+| نَفْس | Soul / Self | 295 |
+
+**100 words = 50% of the Quran text.** Frequency lists at Corpusquran.org.
