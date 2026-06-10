@@ -50,8 +50,12 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 .qr-taf-btn:hover{background:#f0fdf4;border-color:#34d399;}
 .qr-taf-drop{display:none;border:1px solid #d1fae5;border-radius:8px;padding:.4rem .5rem;margin-bottom:.6rem;background:#f0fdf4;box-shadow:0 2px 8px rgba(6,95,70,.1);direction:ltr;}
 .qr-taf-drop.qr-taf-open{display:block;}
-.qr-taf-drop a{display:block;padding:.28rem .5rem;color:#064e3b;text-decoration:none;font-size:.82rem;border-radius:5px;font-weight:600;}
-.qr-taf-drop a:hover{background:#d1fae5;}
+.qr-taf-tabs-mini{display:flex;gap:.35rem;flex-wrap:wrap;margin-bottom:.5rem;padding-bottom:.4rem;border-bottom:1px solid #d1fae5;}
+.qr-taf-tab-mini{background:transparent;border:1px solid #a7f3d0;border-radius:6px;padding:.28rem .75rem;font-size:.78rem;color:#064e3b;cursor:pointer;font-family:inherit;transition:.15s;}
+.qr-taf-tab-mini.qr-taf-tab-active{background:#064e3b;color:#fff;border-color:#064e3b;}
+.qr-taf-tab-mini:hover:not(.qr-taf-tab-active){background:#f0fdf4;}
+.qr-taf-pane{line-height:1.75;font-size:.88rem;padding:.3rem 0;}
+.qr-taf-none{color:#64748b;font-size:.88rem;font-style:italic;margin:0;}
 </style>
 
 <script>
@@ -317,8 +321,57 @@ function qrApplyLang() {
 function qrToggleTaf(btn) {
   var drop = btn.nextElementSibling;
   var open = drop.classList.contains('qr-taf-open');
-  document.querySelectorAll('.qr-taf-drop.qr-taf-open').forEach(function(d) { d.classList.remove('qr-taf-open'); });
-  if (!open) drop.classList.add('qr-taf-open');
+  document.querySelectorAll('.qr-taf-drop.qr-taf-open').forEach(function(d) {
+    d.classList.remove('qr-taf-open'); d.innerHTML = '';
+  });
+  if (open) return;
+  var n = btn.dataset.surah;
+  var taf = QR_TAF[n];
+  var tafUR = QR_TAF_UR[n];
+  var isUR = false;
+  try { isUR = (localStorage.getItem('cert-hub-lang-pref') || 'en') === 'ur'; } catch(e) {}
+  if (!taf) {
+    var msg = qrEl('p', 'qr-taf-none',
+      isUR ? 'اس سورت کا تفسیری خلاصہ کورس میں شامل نہیں۔' : 'In-course tafseer summary not available for this surah.');
+    if (isUR) msg.style.direction = 'rtl';
+    drop.appendChild(msg);
+    drop.classList.add('qr-taf-open');
+    return;
+  }
+  var keys = ['mizan', 'namoona', 'tasnim'];
+  var titles = isUR
+    ? ['تفسیر المیزان', 'تفسیر نمونہ', 'تفسیر تسنیم']
+    : ['Al-Mizan', 'Namoona', 'Tasnim'];
+  var tabsDiv = document.createElement('div');
+  tabsDiv.className = 'qr-taf-tabs-mini';
+  keys.forEach(function(k, idx) {
+    var tab = document.createElement('button');
+    tab.className = 'qr-taf-tab-mini' + (idx === 0 ? ' qr-taf-tab-active' : '');
+    tab.type = 'button'; tab.textContent = titles[idx]; tab.dataset.key = k;
+    tab.onclick = function() {
+      var d = this.closest('.qr-taf-drop');
+      d.querySelectorAll('.qr-taf-tab-mini').forEach(function(t) { t.classList.remove('qr-taf-tab-active'); });
+      this.classList.add('qr-taf-tab-active');
+      d.querySelectorAll('.qr-taf-pane').forEach(function(p) { p.style.display = 'none'; });
+      d.querySelector('.qr-taf-pane[data-key="' + this.dataset.key + '"]').style.display = 'block';
+    };
+    tabsDiv.appendChild(tab);
+  });
+  drop.appendChild(tabsDiv);
+  keys.forEach(function(k, idx) {
+    var pane = document.createElement('div');
+    pane.className = 'qr-taf-pane'; pane.dataset.key = k;
+    pane.style.display = idx === 0 ? 'block' : 'none';
+    pane.appendChild(qrEl('p', 'qr-summary-tag',
+      isUR ? 'کورس کا مطالعاتی خلاصہ — لفظ بہ لفظ اقتباس نہیں۔'
+           : 'Course study summary — not a verbatim excerpt.'));
+    var text = (isUR && tafUR && tafUR[k]) ? tafUR[k] : (taf[k] || '');
+    var textEl = qrEl('p', null, text);
+    if (isUR) textEl.style.direction = 'rtl';
+    pane.appendChild(textEl);
+    drop.appendChild(pane);
+  });
+  drop.classList.add('qr-taf-open');
 }
 
 function qrLoad(n) {
@@ -377,19 +430,10 @@ function qrRender(n, data) {
     tafBtn.className = 'qr-taf-btn';
     tafBtn.type = 'button';
     tafBtn.innerHTML = '&#128214; Tafseer';
+    tafBtn.dataset.surah = String(n);
     tafBtn.onclick = function() { qrToggleTaf(this); };
     panel.appendChild(tafBtn);
     var tafDrop = qrEl('div', 'qr-taf-drop');
-    [
-      ['Al-Mizan \u2014 Tabatabai', 'https://www.al-islam.org/tafsir-al-mizan-vol-1-allamah-sayyid-muhammad-husayn-tabatabai'],
-      ['Namoona \u2014 Makarem Shirazi', 'https://www.al-islam.org/an-enlightening-commentary-light-holy-quran-vol-1'],
-      ['Tasnim \u2014 Jawadi Amoli', 'https://www.al-islam.org/quran']
-    ].forEach(function(tl) {
-      var a = document.createElement('a');
-      a.href = tl[1]; a.target = '_blank'; a.rel = 'noopener';
-      a.textContent = tl[0] + ' \u2197';
-      tafDrop.appendChild(a);
-    });
     panel.appendChild(tafDrop);
     var arDiv = qrEl('div', 'ayah-arabic');
     arDiv.appendChild(document.createTextNode((ar[i].text || '').replace(/\uFEFF/g, '') + ' '));
