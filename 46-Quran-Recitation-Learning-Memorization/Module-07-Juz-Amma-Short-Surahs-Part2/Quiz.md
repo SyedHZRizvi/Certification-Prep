@@ -5,8 +5,8 @@
 ### Q1.
 Surah An-Nasr is significant because it was:
 
-A. The first surah revealed to the Prophet
-B. The last complete surah revealed — signaling the near end of the Prophet's mission
+A. The first surah revealed to the Prophet (sallallahu alayhi wa aalihi wasallam)
+B. The last complete surah revealed — signaling the near end of the Prophet's (sallallahu alayhi wa aalihi wasallam) mission
 C. The longest surah in the Quran
 D. Revealed during the Battle of Badr
 
@@ -26,7 +26,7 @@ D. The Day of Judgment
 Why did Umar ibn al-Khattab (ra) weep when Surah An-Nasr was recited?
 
 A. Because it described a battle the Muslims lost
-B. Because he understood it was telling the Prophet that his mission was complete and his departure near
+B. Because he understood it was telling the Prophet (sallallahu alayhi wa aalihi wasallam) that his mission was complete and his departure near
 C. Because the words were difficult to understand
 D. Because it was the most beautiful surah
 
@@ -55,10 +55,10 @@ D. The verse was revealed during the Night Journey
 ### Q6.
 In Surah Al-Kafirun, verses 2-3 speak to the present while verses 4-5 speak to:
 
-A. The past — what the Prophet used to worship
+A. The past — what the Prophet (sallallahu alayhi wa aalihi wasallam) used to worship
 B. The future — a permanent commitment that will never change
 C. The afterlife — what worship will look like in paradise
-D. All Muslims, not just the Prophet
+D. All Muslims, not just the Prophet (sallallahu alayhi wa aalihi wasallam)
 
 ---
 
@@ -125,7 +125,7 @@ D. A liar
 ### Q13.
 Surah Al-Quraysh describes the Quraysh's two annual trade journeys. Where did they travel?
 
-A. To Egypt in summer, to Persia in winter
+A. To Egypt in summer, to Byzantium in winter
 B. To Syria in summer, to Yemen in winter
 C. To Mecca in winter, to Medina in summer
 D. To China and India
@@ -157,7 +157,7 @@ The event in Surah Al-Fil occurred in which significant year?
 
 A. The year of the Hijra (622 CE)
 B. The year of the Battle of Badr
-C. The year the Prophet ﷺ was born (approx. 570 CE)
+C. The year the Prophet (sallallahu alayhi wa aalihi wasallam) was born (approx. 570 CE)
 D. The year the Quran was completed
 
 ---
@@ -165,7 +165,7 @@ D. The year the Quran was completed
 ### Q17.
 What was the army commanded by Abraha in Surah Al-Fil?
 
-A. A Persian army with cavalry
+A. A Roman army with cavalry
 B. An Abyssinian (Ethiopian) army including war elephants
 C. A Roman army with catapults
 D. A Yemeni army with archers
@@ -233,7 +233,7 @@ D. Because time will freeze on the Day of Judgment
 ---
 
 ### Q24.
-Which of these surahs from Module 6 and Module 7 together forms the complete "daily protective routine" recommended by the Prophet ﷺ?
+Which of these surahs from Module 6 and Module 7 together forms the complete "daily protective routine" recommended by the Prophet (sallallahu alayhi wa aalihi wasallam)?
 
 A. Al-Ikhlas, Al-Falaq, An-Naas (recited morning and evening and before sleep)
 B. Al-Asr, Al-Kawthar, An-Nasr
@@ -244,11 +244,11 @@ D. Al-Ma'un, Al-Ikhlas, Al-Falaq
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B** — An-Nasr was the last complete surah revealed. When companions heard it, scholars like Ibn Abbas understood it meant the Prophet's mission was complete and his time of departure near. Individual scattered verses were revealed after, but no complete surah.
+**Q1 — B** — An-Nasr was the last complete surah revealed. When companions heard it, scholars like Ibn Abbas understood it meant the Prophet's (sallallahu alayhi wa aalihi wasallam) mission was complete and his time of departure near. Individual scattered verses were revealed after, but no complete surah.
 
-**Q2 — B** — Al-Fath (الفَتح) in verse 1 refers specifically to Fath Makkah — the peaceful conquest of Mecca in 8 AH (630 CE), when the Prophet ﷺ entered Mecca and most of its people accepted Islam.
+**Q2 — B** — Al-Fath (الفَتح) in verse 1 refers specifically to Fath Makkah — the peaceful conquest of Mecca in 8 AH (630 CE), when the Prophet (sallallahu alayhi wa aalihi wasallam) entered Mecca and most of its people accepted Islam.
 
-**Q3 — B** — Ibn Abbas narrated: when Umar asked him why he wept, he explained that this surah is not merely about victory — it is a subtle announcement that the mission is complete, meaning the Prophet's departure is near. Umar confirmed: "I too understood no other than what you understood."
+**Q3 — B** — Ibn Abbas narrated: when Umar asked him why he wept, he explained that this surah is not merely about victory — it is a subtle announcement that the mission is complete, meaning the Prophet's (sallallahu alayhi wa aalihi wasallam) departure is near. Umar confirmed: "I too understood no other than what you understood."
 
 **Q4 — B** — The three responses commanded are: سَبِّح (glorify — tasbih), بِحَمدِ رَبِّك (with praise of your Lord — hamd), and استَغفِر (seek forgiveness — istighfar). Not pride or self-celebration, but humble gratitude.
 
@@ -274,7 +274,7 @@ D. Al-Ma'un, Al-Ikhlas, Al-Falaq
 
 **Q15 — B** — Al-Fil + Al-Quraysh = one continuous divine argument: First, "We saved you from the elephant army" (Al-Fil). Then, "We blessed your trade and gave you security" (Al-Quraysh). Conclusion: "So worship the Lord of this House."
 
-**Q16 — C** — The event is dated to approximately 570 CE, the same year the Prophet Muhammad ﷺ was born. This is why that year is called "The Year of the Elephant" (ʿĀm al-Fīl) — one of the most famous markers in pre-Islamic Arabian history.
+**Q16 — C** — The event is dated to approximately 570 CE, the same year the Prophet Muhammad (sallallahu alayhi wa aalihi wasallam) was born. This is why that year is called "The Year of the Elephant" (ʿĀm al-Fīl) — one of the most famous markers in pre-Islamic Arabian history.
 
 **Q17 — B** — Abraha was the Abyssinian (Ethiopian) governor of Yemen. His army included war elephants — a powerful military weapon in the 6th century. The most famous elephant was named Mahmud.
 

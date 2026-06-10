@@ -12,7 +12,7 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tafsir+al-Mizan+introduction+overview+methodology+Tabatabai">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tafsir+al-Mizan+introduction+overview+methodology+Tabatabai" data-video-id="Cuz-RhVUuD4" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Essential</div>
       <h3>Introduction to Tafsir al-Mizan — Overview and Methodology</h3>
@@ -20,7 +20,7 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Seyyed+Ali+Quli+Qarai+English+Quran+translation+approach+lecture">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Seyyed+Ali+Quli+Qarai+English+Quran+translation+approach+lecture" data-video-id="LzTi6wAL4Ro" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Essential</div>
       <h3>Qarai English Translation — Approach and Principles</h3>
@@ -28,7 +28,7 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+recitation+with+English+subtitles+follow+along+full">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+recitation+with+English+subtitles+follow+along+full" data-video-id="SYuEXPalZnM" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Essential</div>
       <h3>Quran Recitation with English Subtitles — Follow Along</h3>
@@ -44,15 +44,15 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tafseer+Namoona+Makarem+Shirazi+methodology+lecture+Quran+commentary">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Tafseer+Namoona+Makarem+Shirazi+methodology+lecture+Quran+commentary" data-video-id="cEiuWlgCdxE" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Recommended</div>
       <h3>Tafseer Namoona — Methodology and Key Themes</h3>
-      <p>An overview of Āyatullāh Makārem Shīrāzī's Tafseer-e-Namoona: its practical, thematic approach, social ethics emphasis, and accessibility for everyday believers.</p>
+      <p>An overview of Allāmah Makārem Shīrāzī's Tafseer-e-Namoona: its practical, thematic approach, social ethics emphasis, and accessibility for everyday believers.</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+Urdu+translation+recitation+full+bilingual">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+Urdu+translation+recitation+full+bilingual" data-video-id="mMcjkz7NJdg" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Recommended</div>
       <h3>Quran with Urdu Translation — Bilingual Recitation</h3>
@@ -60,7 +60,7 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+study+tafseer+Quran+commentary+systematically+beginner+guide">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+study+tafseer+Quran+commentary+systematically+beginner+guide" data-video-id="UYErRJaVycE" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Recommended</div>
       <h3>How to Study Tafseer Systematically</h3>
@@ -76,7 +76,7 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=word+by+word+Quran+Arabic+analysis+methodology+bayyinah+grammar">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=word+by+word+Quran+Arabic+analysis+methodology+bayyinah+grammar" data-video-id="FTOUFe9KbGQ" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Optional</div>
       <h3>Word-by-Word Quran Analysis — Methodology</h3>
@@ -84,7 +84,7 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+recitation+bilingual+English+Urdu+subtitles+translation">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Quran+recitation+bilingual+English+Urdu+subtitles+translation" data-video-id="wF4rfRyRhww" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Optional</div>
       <h3>Quran Recitation with Bilingual Subtitles (English and Urdu)</h3>

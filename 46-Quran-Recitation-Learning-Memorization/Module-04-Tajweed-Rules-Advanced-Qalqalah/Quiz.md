@@ -236,7 +236,7 @@ D. This is just a traditional classification with no phonetic reason
 The end-of-verse ﴾ marker in the Quran indicates:
 
 A. A mandatory stop — you MUST stop here
-B. A stop that is Sunnah (recommended following the practice of the Prophet)
+B. A stop that is Sunnah (recommended following the practice of the Prophet (sallallahu alayhi wa aalihi wasallam))
 C. An optional stop — no preference either way
 D. A prohibition on stopping
 
@@ -290,4 +290,4 @@ D. A prohibition on stopping
 
 **Q23 — B** — Ba and Meem share the same articulation point — both lips pressed together. This phonetic proximity naturally causes the Meem to be slightly concealed/hidden before Ba. It's a phonological rule grounded in how these sounds are physically produced.
 
-**Q24 — B** — Stopping at the end of a verse ﴾ is Sunnah — it was the practice of the Prophet ﷺ. It is recommended and beautiful, though not always obligatory (you may continue into the next verse in some recitation styles).
+**Q24 — B** — Stopping at the end of a verse ﴾ is Sunnah — it was the practice of the Prophet (sallallahu alayhi wa aalihi wasallam). It is recommended and beautiful, though not always obligatory (you may continue into the next verse in some recitation styles).

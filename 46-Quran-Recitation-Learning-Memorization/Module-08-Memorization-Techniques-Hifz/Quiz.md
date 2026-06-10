@@ -57,7 +57,7 @@ Why is Fajr (dawn) considered the best time for memorisation?
 
 A. It is the quietest time of day
 B. The brain after sleep is in its most receptive state — prefrontal cortex restored, distractions minimal
-C. The Prophet ﷺ always memorised at Fajr
+C. The Prophet (sallallahu alayhi wa aalihi wasallam) always memorised at Fajr
 D. The Quran can only be recited after Fajr
 
 ---
@@ -136,7 +136,7 @@ D. Tajweed rules are embedded in melody
 What is تَلَقِّي (Talaqqi) in Quran memorisation?
 
 A. A type of Tajweed rule
-B. Direct face-to-face transmission from teacher to student — the method of Quran transmission since the Prophet ﷺ
+B. Direct face-to-face transmission from teacher to student — the method of Quran transmission since the Prophet (sallallahu alayhi wa aalihi wasallam)
 C. A digital tool for memorisation practice
 D. The method of writing the Quran
 
@@ -146,7 +146,7 @@ D. The method of writing the Quran
 What is an إِجَازَة (Ijazah) in Quran recitation?
 
 A. Permission to lead Friday prayers
-B. A certificate of authorisation given by a teacher to a student who has recited the Quran accurately, with a chain linking back to the Prophet ﷺ
+B. A certificate of authorisation given by a teacher to a student who has recited the Quran accurately, with a chain linking back to the Prophet (sallallahu alayhi wa aalihi wasallam)
 C. A grade given in a madrasa
 D. Permission to teach Arabic
 
@@ -254,7 +254,7 @@ D. Singing them to the same tune
 
 **Q5 — B** — Spaced repetition is the practice of reviewing material at increasing intervals: Day 1, 2, 4, 7, 14, 30. Each review refreshes the "expiry date" of the memory. This is more effective than cramming because each successful retrieval strengthens the memory trace.
 
-**Q6 — B** — The brain after sleep has been restored through sleep consolidation. The prefrontal cortex (executive function, focus) is at peak capacity. Distractions are minimal. The Prophet ﷺ's hadith about the blessing of early mornings aligns with this neuroscience.
+**Q6 — B** — The brain after sleep has been restored through sleep consolidation. The prefrontal cortex (executive function, focus) is at peak capacity. Distractions are minimal. The Prophet's (sallallahu alayhi wa aalihi wasallam) hadith about the blessing of early mornings aligns with this neuroscience.
 
 **Q7 — B** — The minimum daily principle: never have a "day of zero." Even one verse fully consolidated is better than no progress. Consistency over intensity is the hifz system's core principle — daily small progress beats sporadic large sessions.
 
@@ -270,9 +270,9 @@ D. Singing them to the same tune
 
 **Q13 — B** — Children's brains encode musical information with particular strength — the auditory cortex and motor system are both engaged. Songs and melodies become long-term memories more reliably than spoken words for young children. This is why nasheeds (Islamic songs) work well for early Quran education.
 
-**Q14 — B** — Talaqqi (تَلَقِّي) means direct face-to-face transmission. The Quran was transmitted through an unbroken chain of teacher-to-student transmission from the Prophet ﷺ to today. This oral transmission chain is what preserves the exact sounds (Tajweed) that cannot be fully captured in written text.
+**Q14 — B** — Talaqqi (تَلَقِّي) means direct face-to-face transmission. The Quran was transmitted through an unbroken chain of teacher-to-student transmission from the Prophet (sallallahu alayhi wa aalihi wasallam) to today. This oral transmission chain is what preserves the exact sounds (Tajweed) that cannot be fully captured in written text.
 
-**Q15 — B** — An Ijazah is a formal certificate of authorisation, given when a teacher has heard the student recite the entire Quran accurately and certifies them to transmit the Quran to others. The Ijazah comes with a chain (isnad) tracing back through teachers to the Prophet ﷺ himself.
+**Q15 — B** — An Ijazah is a formal certificate of authorisation, given when a teacher has heard the student recite the entire Quran accurately and certifies them to transmit the Quran to others. The Ijazah comes with a chain (isnad) tracing back through teachers to the Prophet (sallallahu alayhi wa aalihi wasallam) himself.
 
 **Q16 — C** — Neglecting murajaah is the most common cause of forgetting. Students who focus only on learning new material while not systematically reviewing what they know are constantly losing old material at the back end as they add at the front. The ratio must be maintained.
 

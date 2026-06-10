@@ -45,8 +45,8 @@ function tf(btn){
 This module is the **complete reference layer** of the Quran Recitation course. It provides:
 
 - Authentic **Arabic text with full harakat** (tashkeel) for key surahs
-- **English translation** by Seyyed Ali Quli Qarai (2005) — a phrase-by-phrase rendering widely regarded as the most accurate modern scholarly English translation of the Quran
-- **Urdu translation** by Maulana Zeeshan Haider Jawadi — a renowned Pakistani/Indian scholar and the preeminent Urdu Quran translator of the present era
+- **English translation** by Seyyed Ali Quli Qarai — a phrase-by-phrase rendering widely regarded as one of the most accurate modern scholarly English translations of the Quran
+- **Urdu translation** by Maulana Sayyid Zeeshan Haider Jawadi — a renowned scholar of the Indian subcontinent and one of the most respected Urdu translators of the Quran
 - An **interactive Tafseer Switcher** allowing you to read commentary from three major scholars for each surah
 
 ### How to Use the Tafseer Switcher
@@ -59,19 +59,21 @@ Each surah section below contains a three-tab widget. Click **Al-Mizan**, **Namo
 
 ### English Translation — Seyyed Ali Quli Qarai
 
-Seyyed Ali Quli Qarai produced his English translation of the Quran in 2005. It is phrase-by-phrase, preserves the Arabic rhetorical structure wherever English allows, and is deeply informed by classical tafseer literature. His rendering of names like **Al-Rahman** as "All-beneficent" and **Al-Rahim** as "All-merciful" reflects careful attention to the theological distinctions in Arabic. The translation is published by the Islamic College for Advanced Studies (ICAS Press), London.
+Seyyed Ali Quli Qarai produced his phrase-by-phrase English translation of the Quran, published by the Islamic College for Advanced Studies (ICAS Press), London. It preserves the Arabic rhetorical structure wherever English allows and is deeply informed by classical tafseer literature. His rendering of names like **Al-Rahman** as "All-beneficent" and **Al-Rahim** as "All-merciful" reflects careful attention to the theological distinctions in Arabic.
+
+> **📜 Sources, Attribution & Rights.** The Arabic text of the Quran is in the public domain. The English translation excerpts on this page are quoted with attribution from the translation of **Seyyed Ali Quli Qarai**, and the Urdu translation excerpts from the translation of **Maulana Sayyid Zeeshan Haider Jawadi** — brief passages reproduced for non-commercial educational study in this free course; all rights remain with the respective translators and publishers. The tafseer panels on this page are **original study summaries written for this course**: they condense, in our own words, themes discussed in *Tafsir al-Mizan*, *Tafseer-e-Namoona*, and *Tafsir Tasnim*, and are not verbatim excerpts from those works. For the complete works, consult the published editions or the official sources linked at the end of this page.
 
 ### Urdu Translation — Maulana Zeeshan Haider Jawadi
 
-Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Quran scholars of the Indian subcontinent in the twentieth century. His Urdu translation and commentary of the Quran is known for its clarity, precision, and fidelity to classical Arabic. He was deeply versed in the Arabic grammatical and rhetorical sciences and his Urdu rendering has become a standard reference for Urdu-speaking students of the Quran across South Asia.
+Maulana Sayyid Zeeshan Haider Jawadi was one of the most distinguished Quran scholars of the Indian subcontinent in the twentieth century. His Urdu translation and commentary of the Quran is known for its clarity, precision, and fidelity to classical Arabic. He was deeply versed in the Arabic grammatical and rhetorical sciences and his Urdu rendering has become a standard reference for Urdu-speaking students of the Quran across South Asia.
 
 ### The Three Tafseer Sources
 
 | Scholar | Work | Volumes | Approach |
 |---------|------|---------|----------|
 | Allāmah Sayyid Muhammad Husayn Tabāṭabāī | **Tafsir al-Mizan** (تفسیرالمیزان) | 27 vols | Quranic — interprets the Quran through the Quran; philosophical and mystical depth |
-| Āyatullāh Nāsir Makārem Shīrāzī | **Tafseer-e-Namoona** (تفسیر نمونہ) | 27 vols | Practical, thematic; social and ethical emphasis; accessible to general readers |
-| Āyatullāh ʿAbdullāh Jawādī Āmolī | **Tafsir Tasnim** (تفسیر تسنیم) | 40+ vols | Mystical and philosophical; explores the spiritual station of each verse; the most extensive modern commentary |
+| Allāmah Nāsir Makārem Shīrāzī | **Tafseer-e-Namoona** (تفسیر نمونہ) | 27 vols | Practical, thematic; social and ethical emphasis; accessible to general readers |
+| Allāmah ʿAbdullāh Jawādī Āmolī | **Tafsir Tasnim** (تفسیر تسنیم) | 40+ vols | Mystical and philosophical; explores the spiritual station of each verse; the most extensive modern commentary |
 
 ---
 
@@ -81,7 +83,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴿١﴾ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ﴿٢﴾ الرَّحْمَٰنِ الرَّحِيمِ ﴿٣﴾ مَالِكِ يَوْمِ الدِّينِ ﴿٤﴾ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ﴿٥﴾ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ﴿٦﴾ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ﴿٧﴾
 </div>
 
-**English (Qarai):** "In the Name of Allah, the All-beneficent, the All-merciful. All praise belongs to Allah, Lord of all the worlds, the All-beneficent, the All-merciful, Master of the Day of Retribution. You [alone] do we worship, and to You [alone] do we turn for help. Guide us on the straight path — the path of those whom You have blessed — such as have not incurred Your wrath, nor are astray."
+**English (Qarai):** "In the Name of Allah, the All-beneficent, the All-merciful. All praise belongs to Allah, Lord of all the worlds, the All-beneficent, the All-merciful, Master of the Day of Retribution. You [alone] do we worship, and to You [alone] do we turn for help. Guide us on the straight path, the path of those whom You have blessed — such as have not incurred Your wrath, nor are astray."
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -114,7 +116,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ ﴿٢٥٥﴾
 </div>
 
-**English (Qarai):** "Allah — there is no god except Him — is the Living One, the All-sustainer. Neither drowsiness befalls Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that may intercede with Him except with His permission? He knows what is before them and what is behind them, and they do not encompass anything of His knowledge except what He wills. His throne embraces the heavens and the earth, and He is not wearied by their preservation, and He is the All-exalted, the All-supreme."
+**English (Qarai):** "Allah — there is no god except Him — is the Living One, the All-sustainer. Neither drowsiness befalls Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that may intercede with Him except with His permission? He knows what is before them and what is behind them, and they do not comprehend anything of His knowledge except what He wishes. His seat embraces the heavens and the earth and He is not wearied by their preservation, and He is the All-exalted, the All-supreme."
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -147,7 +149,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 قُلْ هُوَ اللَّهُ أَحَدٌ ﴿١﴾ اللَّهُ الصَّمَدُ ﴿٢﴾ لَمْ يَلِدْ وَلَمْ يُولَدْ ﴿٣﴾ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ ﴿٤﴾
 </div>
 
-**English (Qarai):** "Say, 'He is Allah, the One. Allah is the All-embracing. He neither begot nor was begotten. Nor has He any equal.'"
+**English (Qarai):** "Say, 'He is Allah, the One. Allah is the All-embracing. He neither begat, nor was begotten, nor has He any equal.'"
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -167,7 +169,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 </div>
 <div class="tf-pane" data-pane="tasnim">
 
-**Tafsir Tasnim — Jawadi Amoli:** "Qul" (Say) is not addressed merely to the Prophet but to every believer — we are all commanded to declare divine Unity. This surah is a self-declaration by Allah about His own nature, making it uniquely intimate: God speaks directly about Himself. Al-Samad — Jawadi Amoli comments that this attribute means Allah is the endpoint of all yearning and seeking; there is nothing beyond Him to seek, no higher station, no alternative refuge. The recitation of this surah is an act of theological affirmation.
+**Tafsir Tasnim — Jawadi Amoli:** "Qul" (Say) is not addressed merely to the Prophet (sallallahu alayhi wa aalihi wasallam) but to every believer — we are all commanded to declare divine Unity. This surah is a self-declaration by Allah about His own nature, making it uniquely intimate: God speaks directly about Himself. Al-Samad — Jawadi Amoli comments that this attribute means Allah is the endpoint of all yearning and seeking; there is nothing beyond Him to seek, no higher station, no alternative refuge. The recitation of this surah is an act of theological affirmation.
 
 </div>
 </div>
@@ -180,7 +182,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ﴿١﴾ مِنْ شَرِّ مَا خَلَقَ ﴿٢﴾ وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ﴿٣﴾ وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ﴿٤﴾ وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴿٥﴾
 </div>
 
-**English (Qarai):** "Say, 'I seek the protection of the Lord of the Daybreak, from the evil of what He has created, and from the evil of the dark night when it falls, and from the evil of the witches who blow on knots, and from the evil of an envier when he envies.'"
+**English (Qarai):** "Say, 'I seek the protection of the Lord of the daybreak from the evil of what He has created, and from the evil of the dark night when it falls, and from the evil of the witches, who blow on knots, and from the evil of the envious one when he envies.'"
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -213,7 +215,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 قُلْ أَعُوذُ بِرَبِّ النَّاسِ ﴿١﴾ مَلِكِ النَّاسِ ﴿٢﴾ إِلَٰهِ النَّاسِ ﴿٣﴾ مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ﴿٤﴾ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ﴿٥﴾ مِنَ الْجِنَّةِ وَالنَّاسِ ﴿٦﴾
 </div>
 
-**English (Qarai):** "Say, 'I seek the protection of the Lord of mankind, the King of mankind, the God of mankind, from the evil of the sneaking whisperer who whispers in the breasts of mankind, whether from among jinn or mankind.'"
+**English (Qarai):** "Say, 'I seek the protection of the Lord of humans, Sovereign of humans, God of humans, from the evil of the sneaky tempter who puts temptations into the breasts of humans, from among the jinn and humans.'"
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -246,7 +248,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ ﴿١﴾ فَصَلِّ لِرَبِّكَ وَانْحَرْ ﴿٢﴾ إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ ﴿٣﴾
 </div>
 
-**English (Qarai):** "Indeed We have given you abundance. So pray to your Lord and sacrifice. Indeed it is your enemy who is without posterity."
+**English (Qarai):** "Indeed We have given you abundance. So pray to your Lord, and sacrifice [the sacrificial camel]. Indeed it is your enemy who is without posterity."
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -256,12 +258,12 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 </div>
 <div class="tf-pane active" data-pane="mizan">
 
-**Tafsir al-Mizan — Tabatabai:** Al-Kawthar is a river in Paradise but also means "abundant goodness" — in this world it refers to the Quran, prophethood, and the continuation of prophetic legacy through spiritual lineage. "Fanhar" (sacrifice) connects prayer with service and sacrifice — the worshipper gives back to God and to humanity. The one who called the Prophet "al-abtar" (cut off, without offspring) proved himself to be the truly cut-off one — cut off from divine blessing and from lasting legacy.
+**Tafsir al-Mizan — Tabatabai:** Al-Kawthar is a river in Paradise but also means "abundant goodness" — in this world it refers to the Quran, prophethood, and the continuation of prophetic legacy through spiritual lineage. "Fanhar" (sacrifice) connects prayer with service and sacrifice — the worshipper gives back to God and to humanity. The one who called the Prophet (sallallahu alayhi wa aalihi wasallam) "al-abtar" (cut off, without offspring) proved himself to be the truly cut-off one — cut off from divine blessing and from lasting legacy.
 
 </div>
 <div class="tf-pane" data-pane="namoona">
 
-**Tafseer-e-Namoona — Makarem Shirazi:** This is one of the shortest surahs but one of the most powerful in its historical context — revealed as a direct divine response to enemies' mockery of the Prophet when his sons died in infancy. The divine declaration "We have given you abundance" is a promise that proved true: the Prophet's legacy has outlasted every one of his enemies by fourteen centuries. The connection between prayer (salah) and sacrifice (nahr) shows that worship and giving are inseparable in Islamic ethics.
+**Tafseer-e-Namoona — Makarem Shirazi:** This is one of the shortest surahs but one of the most powerful in its historical context — revealed as a direct divine response to enemies' mockery of the Prophet (sallallahu alayhi wa aalihi wasallam) when his sons died in infancy. The divine declaration "We have given you abundance" is a promise that proved true: the Prophet's (sallallahu alayhi wa aalihi wasallam) legacy has outlasted every one of his enemies by fourteen centuries. The connection between prayer (salah) and sacrifice (nahr) shows that worship and giving are inseparable in Islamic ethics.
 
 </div>
 <div class="tf-pane" data-pane="tasnim">
@@ -279,7 +281,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 وَالْعَصْرِ ﴿١﴾ إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ ﴿٢﴾ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ ﴿٣﴾
 </div>
 
-**English (Qarai):** "By Time! Indeed man is in loss, except for those who have faith and do righteous deeds, and enjoin one another to [follow] the truth, and enjoin one another to patience."
+**English (Qarai):** "By Time! Man is indeed in loss, except those who have faith and do righteous deeds, and enjoin one another to [follow] the truth, and enjoin one another to patience."
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -312,7 +314,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ ﴿١﴾ وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا ﴿٢﴾ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا ﴿٣﴾
 </div>
 
-**English (Qarai):** "When Allah's help comes and the Victory [arrives], and you see the people entering Allah's religion in multitudes — then celebrate the praise of your Lord and pray for His forgiveness. Indeed He is All-clement."
+**English (Qarai):** "When Allah's help comes with victory, and you see the people entering Allah's religion in throngs, celebrate the praise of your Lord, and plead to Him for forgiveness. Indeed, He is all-clement."
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -322,7 +324,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 </div>
 <div class="tf-pane active" data-pane="mizan">
 
-**Tafsir al-Mizan — Tabatabai:** This surah contains an implicit signal — the Prophet was told to celebrate praise and seek forgiveness when the mission reached its completion (the conquest of Mecca). The command to seek forgiveness at the moment of greatest triumph is theologically profound: it shows that closeness to God increases awareness of one's own distance from divine perfection. The truly great never take their own greatness as a source of pride — they turn to God with greater humility the higher they rise.
+**Tafsir al-Mizan — Tabatabai:** This surah contains an implicit signal — the Prophet (sallallahu alayhi wa aalihi wasallam) was told to celebrate praise and seek forgiveness when the mission reached its completion (the conquest of Mecca). The command to seek forgiveness at the moment of greatest triumph is theologically profound: it shows that closeness to God increases awareness of one's own distance from divine perfection. The truly great never take their own greatness as a source of pride — they turn to God with greater humility the higher they rise.
 
 </div>
 <div class="tf-pane" data-pane="namoona">
@@ -332,7 +334,7 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 </div>
 <div class="tf-pane" data-pane="tasnim">
 
-**Tafsir Tasnim — Jawadi Amoli:** This surah was revealed near the end of the Prophet's life, and companions understood it as an indication that his earthly mission was nearing completion. The response commanded — tasbih and istighfar — is the spiritual posture of the returning servant: praising God for what He gave and acknowledging human limitation. "Innahu kana tawwaba" (He is All-clement, forever accepting of return) closes the surah with divine generosity — God's willingness to receive us always.
+**Tafsir Tasnim — Jawadi Amoli:** This surah was revealed near the end of the Prophet's (sallallahu alayhi wa aalihi wasallam) life, and companions understood it as an indication that his earthly mission was nearing completion. The response commanded — tasbih and istighfar — is the spiritual posture of the returning servant: praising God for what He gave and acknowledging human limitation. "Innahu kana tawwaba" (He is All-clement, forever accepting of return) closes the surah with divine generosity — God's willingness to receive us always.
 
 </div>
 </div>
@@ -355,12 +357,12 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 </div>
 <div class="tf-pane active" data-pane="mizan">
 
-**Tafsir al-Mizan — Tabatabai:** The repetition of the denial across four ayahs covers both present and future tense — "I do not worship" and "I will not worship" — closing every possible opening for compromise. This surah was revealed when the Quraysh proposed a religious exchange: they would worship Allah for one year if the Prophet worshipped their idols for one year. The Quran's response is categorical: worship cannot be shared, partial, or rotated. Monotheism is total. The final ayah is not a concession but a declaration of complete boundary.
+**Tafsir al-Mizan — Tabatabai:** The repetition of the denial across four ayahs covers both present and future tense — "I do not worship" and "I will not worship" — closing every possible opening for compromise. This surah was revealed when the Quraysh proposed a religious exchange: they would worship Allah for one year if the Prophet (sallallahu alayhi wa aalihi wasallam) worshipped their idols for one year. The Quran's response is categorical: worship cannot be shared, partial, or rotated. Monotheism is total. The final ayah is not a concession but a declaration of complete boundary.
 
 </div>
 <div class="tf-pane" data-pane="namoona">
 
-**Tafseer-e-Namoona — Makarem Shirazi:** "Lakum dinukum wa liya din" (To you your religion, to me my religion) is sometimes mistaken as a statement of religious pluralism. Makarem Shirazi clarifies: it is a declaration of theological independence — "I will not compromise my worship for yours." It does not mean all religions are equally valid; it means the Prophet refuses to dilute his monotheism under any social or political pressure. This is the Quran's model of principled firmness in faith.
+**Tafseer-e-Namoona — Makarem Shirazi:** "Lakum dinukum wa liya din" (To you your religion, to me my religion) is sometimes mistaken as a statement of religious pluralism. Makarem Shirazi clarifies: it is a declaration of theological independence — "I will not compromise my worship for yours." It does not mean all religions are equally valid; it means the Prophet (sallallahu alayhi wa aalihi wasallam) refuses to dilute his monotheism under any social or political pressure. This is the Quran's model of principled firmness in faith.
 
 </div>
 <div class="tf-pane" data-pane="tasnim">
@@ -378,9 +380,9 @@ Maulana Zeeshan Haider Jawadi (1934–2010) was one of the most distinguished Qu
 يس ﴿١﴾ وَالْقُرْآنِ الْحَكِيمِ ﴿٢﴾ إِنَّكَ لَمِنَ الْمُرْسَلِينَ ﴿٣﴾ عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ ﴿٤﴾ تَنزِيلَ الْعَزِيزِ الرَّحِيمِ ﴿٥﴾
 </div>
 
-**English (Qarai):** "Yā Sīn. By the Wise Quran, you are indeed one of the apostles, on a straight path, a sending down of the All-mighty, the All-merciful."
+**English (Qarai):** "Ya Seen! By the Wise Quran, you are indeed one of the apostles, on a straight path. [It is a scripture] sent down gradually from the All-mighty, the All-merciful."
 
-The Huruf al-Muqatta'at (disconnected letters) "Ya Sin" open this surah as one of the great mysteries of the Quran. Scholars agree their full meaning belongs to divine knowledge. The surah affirms the Prophet's status as a messenger, the straight path he walks, and that the Quran itself is a revelation from the All-mighty and All-merciful — combining power (Aziz) and mercy (Rahim) in the same phrase to describe the Quran's source.
+The Huruf al-Muqatta'at (disconnected letters) "Ya Sin" open this surah as one of the great mysteries of the Quran. Scholars agree their full meaning belongs to divine knowledge. The surah affirms the Prophet's (sallallahu alayhi wa aalihi wasallam) status as a messenger, the straight path he walks, and that the Quran itself is a revelation from the All-mighty and All-merciful — combining power (Aziz) and mercy (Rahim) in the same phrase to describe the Quran's source.
 
 ---
 
@@ -390,7 +392,7 @@ The Huruf al-Muqatta'at (disconnected letters) "Ya Sin" open this surah as one o
 تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ ﴿١﴾ الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ ﴿٢﴾ الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَا تَرَىٰ فِي خَلْقِ الرَّحْمَٰنِ مِنْ تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَىٰ مِنْ فُطُورٍ ﴿٣﴾
 </div>
 
-**English (Qarai):** "Blessed is He in whose hands is the kingdom, and He has power over all things; who created death and life that He may test you — which of you is the better in conduct. He is the All-mighty, the All-forgiving. He who created the seven heavens in layers. You do not see any inconsistency in the All-beneficent's creation. Look again! Do you see any cracks?"
+**English (Qarai):** "Blessed is He in whose hands is all sovereignty, and He has power over all things. He, who created death and life that He may test you [to see] which of you is best in conduct. And He is the All-mighty, the All-forgiving. He created seven heavens in layers. You do not see any discordance in the creation of the All-beneficent. Look again! Do you see any flaw?"
 
 The opening of Surah Al-Mulk contains one of the Quran's most important theological statements: death and life are created tests, not random events or punishments. The purpose is to see "which of you is the better in conduct" — not the most knowledgeable, the richest, or the strongest, but the best in action. The challenge to "look again" at creation and find a flaw is both scientific and spiritual — it invites genuine reflection on the perfection of divine design.
 
@@ -551,7 +553,7 @@ For deeper study, return to this module after completing any course session. Use
 
 - اہم سورتوں کا **مکمل تشکیل کے ساتھ** مستند عربی متن
 - **انگریزی ترجمہ**: سید علی قلی قرائی (۲۰۰۵) — جدید علمی انگریزی ترجمہ
-- **اردو ترجمہ**: مولانا ذیشان حیدر جوادی — عصرِ حاضر کے نامور پاکستانی/ہندوستانی عالمِ قرآن
+- **اردو ترجمہ**: مولانا سید ذیشان حیدر جوادی — برصغیر کے نامور عالمِ قرآن
 - **تفسیر سوئچر**: المیزان، نمونہ، اور تسنیم میں سے کسی بھی تفسیر کو ٹیب کلک کر کے پڑھیں
 
 ### تفسیر سوئچر کا استعمال
@@ -564,7 +566,9 @@ For deeper study, return to this module after completing any course session. Use
 
 ### اردو ترجمہ — مولانا ذیشان حیدر جوادی
 
-مولانا ذیشان حیدر جوادی (۱۹۳۴–۲۰۱۰) برصغیر پاک و ہند کے بیسویں صدی کے نمایاں ترین عالمِ قرآن تھے۔ ان کا اردو ترجمہ اور تفسیر اپنی وضاحت، دقتِ نظر، اور کلاسیکی عربی سے وفاداری کے لیے مشہور ہے۔
+مولانا سید ذیشان حیدر جوادی برصغیر پاک و ہند کے بیسویں صدی کے نمایاں ترین عالمِ قرآن تھے۔ ان کا اردو ترجمہ اور تفسیر اپنی وضاحت، دقتِ نظر، اور کلاسیکی عربی سے وفاداری کے لیے مشہور ہے۔
+
+> **📜 مآخذ اور حقوق:** قرآن مجید کا عربی متن عوامی ملکیت ہے۔ اس صفحے پر اردو ترجمے کے اقتباسات مولانا سید ذیشان حیدر جوادی کے ترجمے سے اور انگریزی اقتباسات سید علی قلی قرائی کے ترجمے سے بحوالہ نقل کیے گئے ہیں — تمام حقوق متعلقہ مترجمین اور ناشرین کے پاس محفوظ ہیں۔ تفسیری خانے اس کورس کے لیے لکھے گئے اصل مطالعاتی خلاصے ہیں — یہ المیزان، نمونہ اور تسنیم کے مضامین کو اپنے الفاظ میں مختصراً بیان کرتے ہیں اور ان کتابوں کے لفظی اقتباسات نہیں ہیں۔
 
 ### انگریزی ترجمہ — سید علی قلی قرائی
 
@@ -575,8 +579,8 @@ For deeper study, return to this module after completing any course session. Use
 | عالم | کتاب | جلدیں | طریقہ کار |
 |------|------|--------|-----------|
 | علامہ سید محمد حسین طباطبائی | تفسیرالمیزان | ۲۷ | قرآن سے قرآن کی تفسیر؛ فلسفیانہ و عرفانی |
-| آیت اللہ ناصر مکارم شیرازی | تفسیر نمونہ | ۲۷ | عملی، موضوعاتی؛ سماجی و اخلاقی تاکید |
-| آیت اللہ عبداللہ جوادی آملی | تفسیر تسنیم | ۴۰+ | باطنی و روحانی؛ جدید ترین وسیع تفسیر |
+| علامہ ناصر مکارم شیرازی | تفسیر نمونہ | ۲۷ | عملی، موضوعاتی؛ سماجی و اخلاقی تاکید |
+| علامہ عبداللہ جوادی آملی | تفسیر تسنیم | ۴۰+ | باطنی و روحانی؛ جدید ترین وسیع تفسیر |
 
 ---
 
@@ -586,7 +590,7 @@ For deeper study, return to this module after completing any course session. Use
 بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴿١﴾ الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ﴿٢﴾ الرَّحْمَٰنِ الرَّحِيمِ ﴿٣﴾ مَالِكِ يَوْمِ الدِّينِ ﴿٤﴾ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ﴿٥﴾ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ﴿٦﴾ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ﴿٧﴾
 </div>
 
-**اردو ترجمہ (ذیشان حیدر جوادی):** اللہ کے نام سے جو رحمن اور رحیم ہے۔ سب تعریفیں اللہ ہی کے لیے ہیں جو تمام جہانوں کا پروردگار ہے۔ وہ رحمن و رحیم ہے۔ روزِ جزا کا مالک ہے۔ ہم صرف تیری عبادت کرتے ہیں اور صرف تجھ سے مدد مانگتے ہیں۔ ہمیں سیدھے راستے کی ہدایت دے۔ ان لوگوں کے راستے پر جن پر تو نے انعام کیا، نہ ان پر جن پر غضب ہوا اور نہ گمراہوں پر۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** عظیم اور دائمی رحمتوں والے خدا کے نام سے۔ ساری تعریف اللہ کے لئے ہے جو عالمین کا پالنے والا ہے۔ وہ عظیم اور دائمی رحمتوں والا ہے۔ روزِ قیامت کا مالک و مختار ہے۔ پروردگار! ہم تیری ہی عبادت کرتے ہیں اور تجھی سے مدد چاہتے ہیں۔ ہمیں سیدھے راستہ کی ہدایت فرماتا رہ۔ جو اُن لوگوں کا راستہ ہے جن پر تو نے نعمتیں نازل کی ہیں، ان کا راستہ نہیں جن پر غضب نازل ہوا ہے یا جو بہکے ہوئے ہیں۔
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -619,7 +623,7 @@ For deeper study, return to this module after completing any course session. Use
 اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ ۚ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ ۚ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ ۗ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ ۚ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ ۖ وَلَا يَئُودُهُ حِفْظُهُمَا ۚ وَهُوَ الْعَلِيُّ الْعَظِيمُ ﴿٢٥٥﴾
 </div>
 
-**اردو ترجمہ:** اللہ — اس کے سوا کوئی معبود نہیں — ہمیشہ زندہ ہے، ہر چیز کو قائم رکھنے والا ہے۔ اسے نہ اونگھ آتی ہے اور نہ نیند۔ آسمانوں اور زمین میں جو کچھ ہے سب اسی کا ہے۔ کون ہے جو اس کے حضور بغیر اس کی اجازت کے سفارش کرے؟ وہ جانتا ہے جو ان کے سامنے ہے اور جو ان کے پیچھے ہے، اور وہ اس کے علم میں سے کسی چیز کا احاطہ نہیں کر سکتے مگر جتنا وہ چاہے۔ اس کی کرسی آسمانوں اور زمین کو محیط ہے، اور ان دونوں کی حفاظت اسے گراں نہیں۔ وہ بلند و بزرگ ہے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** اللہ جس کے علاوہ کوئی خدا نہیں ہے زندہ بھی ہے اور اسی سے کل کائنات قائم ہے۔ اسے نہ نیند آتی ہے نہ اونگھ۔ آسمانوں اور زمین میں جو کچھ بھی ہے سب اسی کا ہے۔ کون ہے جو اس کی بارگاہ میں اس کی اجازت کے بغیر سفارش کر سکے۔ وہ جو کچھ ان کے سامنے ہے اور جو پسِ پشت ہے سب کو جانتا ہے اور یہ اس کے علم کے ایک حصہ کا بھی احاطہ نہیں کر سکتے مگر وہ جس قدر چاہے۔ اس کی کرسیِ علم و اقتدار زمین و آسمان سے وسیع تر ہے اور اسے ان کے تحفظ میں کوئی تکلیف بھی نہیں ہوتی۔ وہ عالی مرتبہ بھی ہے اور صاحبِ عظمت بھی۔
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -652,7 +656,7 @@ For deeper study, return to this module after completing any course session. Use
 قُلْ هُوَ اللَّهُ أَحَدٌ ﴿١﴾ اللَّهُ الصَّمَدُ ﴿٢﴾ لَمْ يَلِدْ وَلَمْ يُولَدْ ﴿٣﴾ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ ﴿٤﴾
 </div>
 
-**اردو ترجمہ:** کہیے وہ اللہ ایک ہے۔ اللہ بے نیاز ہے۔ نہ وہ کسی کا باپ ہے اور نہ کسی کا بیٹا۔ اور نہ اس کا کوئی ہمسر ہے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** اے رسول کہہ دیجئے کہ وہ اللہ ایک ہے۔ اللہ برحق اور بے نیاز ہے۔ اس کی نہ کوئی اولاد ہے اور نہ والد۔ اور نہ اس کا کوئی کفو اور ہمسر ہے۔
 
 <div class="tf-widget">
 <div class="tf-tabs">
@@ -672,7 +676,7 @@ For deeper study, return to this module after completing any course session. Use
 </div>
 <div class="tf-pane" data-pane="tasnim4">
 
-**تفسیر تسنیم:** "قُل" صرف نبیﷺ سے نہیں، ہر مومن سے خطاب ہے — ہم سب کو توحید کا اعلان کرنا ہے۔ یہ سورت اللہ کی اپنے بارے میں خود اعلانی ہے — اسی لیے خاص قربت کی حامل ہے۔
+**تفسیر تسنیم:** "قُل" صرف نبی کریم صلی اللہ علیہ وآلہ وسلم سے نہیں، ہر مومن سے خطاب ہے — ہم سب کو توحید کا اعلان کرنا ہے۔ یہ سورت اللہ کی اپنے بارے میں خود اعلانی ہے — اسی لیے خاص قربت کی حامل ہے۔
 
 </div>
 </div>
@@ -685,7 +689,7 @@ For deeper study, return to this module after completing any course session. Use
 قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ ﴿١﴾ مِنْ شَرِّ مَا خَلَقَ ﴿٢﴾ وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ ﴿٣﴾ وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ ﴿٤﴾ وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴿٥﴾
 </div>
 
-**اردو ترجمہ:** کہیے میں صبح کے پروردگار کی پناہ مانگتا ہوں۔ ہر اس چیز کے شر سے جو اس نے پیدا کی۔ اور اندھیری رات کے شر سے جب اس کی تاریکی چھا جائے۔ اور گرہوں پر پھونکنے والیوں کے شر سے۔ اور حاسد کے شر سے جب وہ حسد کرے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** کہہ دیجئے کہ میں صبح کے مالک کی پناہ چاہتا ہوں۔ تمام مخلوقات کے شر سے۔ اور اندھیری رات کے شر سے جب اس کا اندھیرا چھا جائے۔ اور گنڈوں پر پھونکنے والیوں کے شر سے۔ اور ہر حسد کرنے والے کے شر سے جب بھی وہ حسد کرے۔
 
 ---
 
@@ -695,7 +699,7 @@ For deeper study, return to this module after completing any course session. Use
 قُلْ أَعُوذُ بِرَبِّ النَّاسِ ﴿١﴾ مَلِكِ النَّاسِ ﴿٢﴾ إِلَٰهِ النَّاسِ ﴿٣﴾ مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ ﴿٤﴾ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ ﴿٥﴾ مِنَ الْجِنَّةِ وَالنَّاسِ ﴿٦﴾
 </div>
 
-**اردو ترجمہ:** کہیے میں انسانوں کے پروردگار کی پناہ مانگتا ہوں۔ انسانوں کے بادشاہ کی۔ انسانوں کے معبود کی۔ وسواس ڈالنے والے خناس کے شر سے جو انسانوں کے سینوں میں وسوسے ڈالتا ہے۔ خواہ وہ جنوں میں سے ہو یا انسانوں میں سے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** اے رسول کہہ دیجئے کہ میں انسانوں کے پروردگار کی پناہ چاہتا ہوں۔ جو تمام لوگوں کا مالک اور بادشاہ ہے۔ سارے انسانوں کا معبود ہے۔ شیطانی وسواس کے شر سے جو نامِ خدا سن کر پیچھے ہٹ جاتا ہے۔ اور جو لوگوں کے دلوں میں وسوسے پیدا کراتا ہے۔ وہ جنات میں سے ہو یا انسانوں میں سے۔
 
 ---
 
@@ -705,7 +709,7 @@ For deeper study, return to this module after completing any course session. Use
 إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ ﴿١﴾ فَصَلِّ لِرَبِّكَ وَانْحَرْ ﴿٢﴾ إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ ﴿٣﴾
 </div>
 
-**اردو ترجمہ:** بے شک ہم نے آپ کو کوثر عطا کیا ہے۔ پس اپنے پروردگار کے لیے نماز پڑھیں اور قربانی کریں۔ بے شک آپ کا دشمن ہی بے نسل ہے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** بے شک ہم نے آپ کو کوثر عطا کیا ہے۔ لہذا آپ اپنے رب کے لئے نماز پڑھیں اور قربانی دیں۔ یقیناً آپ کا دشمن بے اولاد رہے گا۔
 
 ---
 
@@ -715,7 +719,7 @@ For deeper study, return to this module after completing any course session. Use
 وَالْعَصْرِ ﴿١﴾ إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ ﴿٢﴾ إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ ﴿٣﴾
 </div>
 
-**اردو ترجمہ:** زمانے کی قسم۔ بے شک انسان خسارے میں ہے۔ سوائے ان لوگوں کے جو ایمان لائے اور نیک عمل کیے اور آپس میں حق کی نصیحت کی اور صبر کی تاکید کی۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** قسم ہے عصر کی۔ بے شک انسان خسارہ میں ہے۔ علاوہ ان لوگوں کے جو ایمان لائے اور انہوں نے نیک اعمال کئے اور ایک دوسرے کو حق اور صبر کی وصیت و نصیحت کی۔
 
 ---
 
@@ -725,7 +729,7 @@ For deeper study, return to this module after completing any course session. Use
 إِذَا جَاءَ نَصْرُ اللَّهِ وَالْفَتْحُ ﴿١﴾ وَرَأَيْتَ النَّاسَ يَدْخُلُونَ فِي دِينِ اللَّهِ أَفْوَاجًا ﴿٢﴾ فَسَبِّحْ بِحَمْدِ رَبِّكَ وَاسْتَغْفِرْهُ ۚ إِنَّهُ كَانَ تَوَّابًا ﴿٣﴾
 </div>
 
-**اردو ترجمہ:** جب اللہ کی مدد اور فتح آ جائے۔ اور آپ دیکھیں کہ لوگ اللہ کے دین میں فوج در فوج داخل ہو رہے ہیں۔ تو اپنے پروردگار کی حمد کے ساتھ تسبیح کریں اور اس سے مغفرت مانگیں۔ بے شک وہ بہت توبہ قبول کرنے والا ہے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** جب خدا کی مدد اور فتح کی منزل آ جائے گی۔ اور آپ دیکھیں گے کہ لوگ دینِ خدا میں فوج در فوج داخل ہو رہے ہیں۔ تو اپنے رب کی حمد کی تسبیح کریں اور اس سے استغفار کریں کہ وہ بہت زیادہ توبہ قبول کرنے والا ہے۔
 
 ---
 
@@ -735,7 +739,7 @@ For deeper study, return to this module after completing any course session. Use
 قُلْ يَا أَيُّهَا الْكَافِرُونَ ﴿١﴾ لَا أَعْبُدُ مَا تَعْبُدُونَ ﴿٢﴾ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ﴿٣﴾ وَلَا أَنَا عَابِدٌ مَا عَبَدتُّمْ ﴿٤﴾ وَلَا أَنتُمْ عَابِدُونَ مَا أَعْبُدُ ﴿٥﴾ لَكُمْ دِينُكُمْ وَلِيَ دِينِ ﴿٦﴾
 </div>
 
-**اردو ترجمہ:** کہیے اے کافرو! میں ان کی عبادت نہیں کرتا جن کی تم عبادت کرتے ہو۔ اور نہ تم اس کی عبادت کرتے ہو جس کی میں عبادت کرتا ہوں۔ اور نہ میں ان کی عبادت کرنے والا ہوں جن کی تم عبادت کرتے رہے۔ اور نہ تم اس کی عبادت کرنے والے ہو جس کی میں عبادت کرتا ہوں۔ تمہارا دین تمہارے لیے اور میرا دین میرے لیے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** آپ کہہ دیجئے کہ اے کافرو۔ میں ان خداؤں کی عبادت نہیں کر سکتا جن کی تم پوجا کرتے ہو۔ اور نہ تم میرے خدا کی عبادت کرنے والے ہو۔ اور نہ میں تمہارے معبودوں کی پوجا کرنے والا ہوں۔ اور نہ تم میرے معبود کے عبادت گزار ہو۔ تمہارے لئے تمہارا دین ہے اور میرے لئے میرا دین ہے۔
 
 ---
 
@@ -745,7 +749,7 @@ For deeper study, return to this module after completing any course session. Use
 يس ﴿١﴾ وَالْقُرْآنِ الْحَكِيمِ ﴿٢﴾ إِنَّكَ لَمِنَ الْمُرْسَلِينَ ﴿٣﴾ عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ ﴿٤﴾ تَنزِيلَ الْعَزِيزِ الرَّحِيمِ ﴿٥﴾
 </div>
 
-**اردو ترجمہ:** یس۔ قسم ہے اس حکمت والے قرآن کی۔ بے شک آپ رسولوں میں سے ہیں۔ سیدھے راستے پر۔ یہ عزیز و رحیم کا نازل کردہ ہے۔
+**اردو ترجمہ (ذیشان حیدر جوادی):** یٰسۤ۔ قرآنِ حکیم کی قسم۔ آپ مرسلین میں سے ہیں۔ بالکل سیدھے راستے پر ہیں۔ یہ قرآن خدائے عزیز و مہربان کا نازل کیا ہوا ہے۔
 
 ---
 
@@ -755,7 +759,7 @@ For deeper study, return to this module after completing any course session. Use
 تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ ﴿١﴾ الَّذِي خَلَقَ الْمَوْتَ وَالْحَيَاةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ الْعَزِيزُ الْغَفُورُ ﴿٢﴾ الَّذِي خَلَقَ سَبْعَ سَمَاوَاتٍ طِبَاقًا ۖ مَا تَرَىٰ فِي خَلْقِ الْرَّحْمَٰنِ مِنْ تَفَاوُتٍ ۖ فَارْجِعِ الْبَصَرَ هَلْ تَرَىٰ مِنْ فُطُورٍ ﴿٣﴾
 </div>
 
-**اردو ترجمہ:** بابرکت ہے وہ جس کے ہاتھ میں بادشاہت ہے اور وہ ہر چیز پر قادر ہے۔ جس نے موت اور زندگی کو پیدا کیا تاکہ تمہیں آزمائے کہ تم میں سے کون بہتر عمل کرتا ہے۔ وہ غالب اور بخشنے والا ہے۔ جس نے سات آسمان تہ بہ تہ بنائے — آپ رحمان کی خلقت میں کوئی بے ترتیبی نہیں دیکھیں گے — نظر دوڑائیے، کیا کوئی شگاف نظر آتا ہے؟
+**اردو ترجمہ (ذیشان حیدر جوادی):** بابرکت ہے وہ ذات جس کے ہاتھوں میں سارا ملک ہے اور وہ ہر شے پر قادر و مختار ہے۔ اس نے موت و حیات کو اس لئے پیدا کیا ہے تاکہ تمہاری آزمائش کرے کہ تم میں حسنِ عمل کے اعتبار سے سب سے بہتر کون ہے، اور وہ صاحبِ عزت بھی ہے اور بخشنے والا بھی ہے۔ اسی نے سات آسمان تہ بہ تہ پیدا کئے ہیں اور تم رحمان کی خلقت میں کسی طرح کا فرق نہ دیکھو گے، پھر دوبارہ نگاہ اٹھا کر دیکھو کہیں کوئی شگاف نظر آتا ہے۔
 
 ---
 

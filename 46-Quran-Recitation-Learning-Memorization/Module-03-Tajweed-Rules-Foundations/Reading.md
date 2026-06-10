@@ -18,7 +18,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 
 When a professional musician reads sheet music, they don't just hit the right notes — they follow tempo markings, dynamics, and articulation instructions. *Forte* means play loudly. *Legato* means connect the notes smoothly. *Staccato* means detach each note.
 
-Tajweed is the "sheet music instructions" for the Quran. The word **تَجْوِيد** literally means "to beautify" or "to do well." It is the science of reciting the Quran exactly as the Prophet Muhammad ﷺ recited it — with the precise duration, connection, nasalisation, and emphasis that preserve both the beauty and the meaning of the divine text.
+Tajweed is the "sheet music instructions" for the Quran. The word **تَجْوِيد** literally means "to beautify" or "to do well." It is the science of reciting the Quran exactly as the Prophet Muhammad (sallallahu alayhi wa aalihi wasallam) recited it — with the precise duration, connection, nasalisation, and emphasis that preserve both the beauty and the meaning of the divine text.
 
 > *"And recite the Quran with measured recitation (tarteel)."* — Quran 73:4
 
@@ -201,7 +201,7 @@ Move to **Module 4 — Tajweed Advanced** for Qalqalah (bouncing letters), Meem 
 
 ## 🌟 قرآن کا موسیقی کا نوٹ
 
-تجوید کا مطلب ہے "بہتر بنانا"۔ یہ قرآن کریم کو اسی طرح تلاوت کرنے کا علم ہے جس طرح نبی اکرم ﷺ نے تلاوت فرمائی — صحیح مدّ، ادغام، اخفاء اور غنہ کے ساتھ۔
+تجوید کا مطلب ہے "بہتر بنانا"۔ یہ قرآن کریم کو اسی طرح تلاوت کرنے کا علم ہے جس طرح نبی اکرم صلی اللہ علیہ وآلہ وسلم نے تلاوت فرمائی — صحیح مدّ، ادغام، اخفاء اور غنہ کے ساتھ۔
 
 ---
 

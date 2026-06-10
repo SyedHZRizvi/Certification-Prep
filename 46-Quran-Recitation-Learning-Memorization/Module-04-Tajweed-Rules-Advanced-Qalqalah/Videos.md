@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+tajweed+5+letters+echo+bounce+quran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+tajweed+5+letters+echo+bounce+quran" data-video-id="thu6eZ-AeOA" target="_blank" rel="noopener">
   <div class="vg-thumb">🔔<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=meem+sakin+rules+ikhfa+idgham+izhar+shafawi+tajweed" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=meem+sakin+rules+ikhfa+idgham+izhar+shafawi+tajweed" data-video-id="OuZYPCieQ4k" target="_blank" rel="noopener">
   <div class="vg-thumb">👄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=waqf+stopping+rules+quran+marks+symbols+explained" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=waqf+stopping+rules+quran+marks+symbols+explained" data-video-id="Ga7PCcwvpcI" target="_blank" rel="noopener">
   <div class="vg-thumb">🚦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lam+tafkheem+tarqeeq+thick+thin+allah+tajweed" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lam+tafkheem+tarqeeq+thick+thin+allah+tajweed" data-video-id="qvAgWYRcF9g" target="_blank" rel="noopener">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=raa+tafkheem+tarqeeq+thick+thin+ra+tajweed+rules" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=raa+tafkheem+tarqeeq+thick+thin+ra+tajweed+rules" data-video-id="3SON0cJdGGA" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+kubra+sughra+difference+verse+end+quran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+kubra+sughra+difference+verse+end+quran" data-video-id="eNiXAXpNkPY" target="_blank" rel="noopener">
   <div class="vg-thumb">🔊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hamza+wasl+qat+connection+stopping+tajweed+quran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hamza+wasl+qat+connection+stopping+tajweed+quran" data-video-id="kHuL6vCG6Tc" target="_blank" rel="noopener">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,11 +74,11 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=morteza+haghighi+quran+reciter+tajweed+advanced+beautiful" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=morteza+haghighi+quran+reciter+tajweed+advanced+beautiful" data-video-id="s5-JDm3tmvE" target="_blank" rel="noopener">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Advanced Tajweed Applied — Morteza Haghighi</p>
+    <p class="vg-title">Advanced Tajweed Applied — Recitation Showcase</p>
     <p class="vg-creator">Quran Recitation</p>
     <p class="vg-duration">45 min</p>
   </div>

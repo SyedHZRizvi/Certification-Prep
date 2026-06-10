@@ -20,7 +20,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 # 📖 Quran Recitation, Learning & Memorization
 
 > *"The best among you are those who learn the Quran and teach it."*  
-> — Prophet Muhammad ﷺ (Sahih Bukhari)
+> — Prophet Muhammad (sallallahu alayhi wa aalihi wasallam) (Sahih Bukhari)
 
 ---
 
@@ -32,7 +32,7 @@ Designed from the ground up for **complete beginners** — children and adults a
 
 You do not need to know Arabic. You do not need any prior experience. All you need is the desire to connect with the Quran.
 
-> **📖 This course is completely free and open to everyone.** No account, no payment, and no enrollment are required. All 10 modules, practice exams, flashcards, and cheat sheets are accessible directly — no sign-in, no trial, no gates.
+> **📖 This course is completely free and open to everyone.** No account, no payment, and no enrollment are required. All 11 modules, practice exams, flashcards, and cheat sheets are accessible directly — no sign-in, no trial, no gates.
 
 ---
 
@@ -63,12 +63,12 @@ This course draws on three of the most authoritative works in Islamic exegesis:
 The 27-volume *al-Mizan fi Tafsir al-Quran* is considered the most comprehensive Tafseer of the modern era. Allamah Tabatabai employs a unique method of interpreting the Quran *through* the Quran itself — using one verse to explain another. His insights into philosophy, theology, and spirituality are unmatched. The English translation by Sayyid Saeed Akhtar Rizvi and others has made this treasure accessible to the world.
 
 ### 2. Tafseer-e-Namoona (تفسیر نمونه)
-**Author:** Ayatollah Nasir Makarim Shirazi (born 1927)
+**Author:** Allamah Nasir Makarem Shirazi (born 1927)
 
-Written in Persian and translated into Arabic, Urdu, and English, *Tafseer-e-Namoona* (Exemplary Commentary) is among the most widely read tafseers in the world today. Its approachable language, contemporary examples, and clear explanations make it ideal for students of all levels. Ayatollah Makarem Shirazi's team produced this 27-volume masterpiece over several decades.
+Available in Arabic, Urdu, and English translations, *Tafseer-e-Namoona* (Exemplary Commentary) is among the most widely read tafseers in the world today. Its approachable language, contemporary examples, and clear explanations make it ideal for students of all levels. Allamah Makarem Shirazi's team produced this 27-volume masterpiece over several decades.
 
 ### 3. Tafsir Tasnim (تفسیر تسنیم)
-**Author:** Ayatollah Sheikh Abdullah Jawadi Amoli (born 1933)
+**Author:** Allamah Sheikh Abdullah Jawadi Amoli (born 1933)
 
 *Tafsir Tasnim* — named after the spring of Paradise mentioned in Surah Al-Mutaffifin — is the most detailed and ongoing Tafseer project of the 21st century. Sheikh Jawadi Amoli combines Quranic reasoning, hadith scholarship, philosophy, and mysticism to illuminate the Quran's multi-layered meanings. Already exceeding 40 volumes for the first few juz alone, it represents the pinnacle of contemporary Islamic scholarship.
 
@@ -93,9 +93,11 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 
 > **Note on Script:** The Quran was revealed in Arabic. The Arabic text is sacred and presented here exactly as standardised by Islamic scholarship. No alterations have been made to the Quranic text. All translations are interpretive renderings, not replacements for the original Arabic.
 
+> **Note on Translations & Tafseer:** English translation excerpts in this course follow the rendering of **Seyyed Ali Quli Qarai**, and Urdu excerpts the rendering of **Maulana Sayyid Zeeshan Haider Jawadi** — brief passages quoted with attribution for free, non-commercial educational study; all rights remain with the respective translators and publishers. Tafseer discussions throughout the course are original study summaries that reference *Tafsir al-Mizan*, *Tafseer-e-Namoona*, and *Tafsir Tasnim*; they are not verbatim excerpts from those works.
+
 ---
 
-## 🗺️ Course Structure — 10 Modules
+## 🗺️ Course Structure — 11 Modules
 
 | Module | Title | Focus |
 |--------|-------|-------|
@@ -109,6 +111,7 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 | 8 | Memorisation Techniques (Hifz) | Proven science-backed methods for retention |
 | 9 | Selected Important Surahs | Surah Yasin, Al-Mulk, and Ayatul Kursi |
 | 10 | Recitation Practice & Assessment | Self-evaluation, finding teachers, continuing your journey |
+| 11 | Full Quran Reference — Arabic, Translation & Tafseer | Key surahs in full: Arabic + English/Urdu translation + interactive tafseer switcher (al-Mizan · Namoona · Tasnim) |
 
 ---
 
@@ -122,6 +125,7 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 - **Week 9–10:** Module 8 (Memorisation Techniques + revise all surahs)
 - **Week 11:** Module 9 (Yasin, Al-Mulk, Ayatul Kursi)
 - **Week 12:** Module 10 (Assessment + next steps)
+- **Ongoing:** Module 11 (Full Quran Reference) — keep it open as your translation and tafseer companion throughout the course and after it
 
 ### For Children
 - 1 module per 2–3 weeks, with daily 10-minute practice sessions
@@ -143,7 +147,7 @@ Every Quranic verse in this course uses the **standard Hafs 'an 'Asim** narratio
 
 ## 🔭 Next Steps
 
-When you complete all 10 modules, you will:
+When you complete all 11 modules, you will:
 1. Read and recite the Quran with proper Tajweed
 2. Understand the meaning of every verse you've studied
 3. Have memorised Surah Al-Fatiha, 15+ short surahs from Juz Amma, Ayatul Kursi, and key passages from Yasin and Al-Mulk
@@ -162,7 +166,7 @@ When you complete all 10 modules, you will:
 # 📖 قرآن کریم — تلاوت، تعلیم اور حفظ کورس
 
 > *"تم میں سے بہترین وہ ہے جو قرآن سیکھے اور سکھائے۔"*  
-> — حضرت محمد ﷺ (صحیح بخاری)
+> — حضرت محمد صلی اللہ علیہ وآلہ وسلم (صحیح بخاری)
 
 ---
 
@@ -187,30 +191,30 @@ When you complete all 10 modules, you will:
 | ✅ **اہم سورتیں** | سورۃ یٰس، سورۃ الملک، آیت الکرسی |
 | ✅ **حفظ کے طریقے** | یادداشت کے ثابت شدہ سائنسی طریقے |
 | ✅ **ترجمہ** | ہر آیت کا اردو اور انگریزی ترجمہ |
-| ✅ **تفسیر** | شیعہ علمی روایت کی روشنی میں گہری تفہیم |
+| ✅ **تفسیر** | مستند علمی روایت کی روشنی میں گہری تفہیم |
 
 ---
 
-## 📚 تفسیر کے مآخذ — شیعہ علمی روایت کے تین ستون
+## 📚 تفسیر کے مآخذ — اسلامی علمی روایت کے تین ستون
 
 ### ۱. تفسیر المیزان
 **مصنف:** علامہ سید محمد حسین طباطبائی (۱۸۹۲–۱۹۸۱)
 
-۲۷ جلدوں پر مشتمل *المیزان فی تفسیر القرآن* جدید دور کی سب سے جامع شیعہ تفسیر سمجھی جاتی ہے۔ علامہ طباطبائی نے قرآن کو قرآن سے سمجھانے کا منفرد طریقہ اپنایا ہے۔
+۲۷ جلدوں پر مشتمل *المیزان فی تفسیر القرآن* جدید دور کی سب سے جامع تفسیر سمجھی جاتی ہے۔ علامہ طباطبائی نے قرآن کو قرآن سے سمجھانے کا منفرد طریقہ اپنایا ہے۔
 
 ### ۲. تفسیرِ نمونہ
-**مصنف:** آیت اللہ ناصر مکارم شیرازی (پیدائش ۱۹۲۷)
+**مصنف:** علامہ ناصر مکارم شیرازی (پیدائش ۱۹۲۷)
 
-*تفسیرِ نمونہ* (مثالی تفسیر) آج دنیا بھر میں سب سے زیادہ پڑھی جانے والی شیعہ تفسیر ہے۔ اس کی سادہ زبان، عصری مثالیں اور واضح وضاحتیں اسے ہر سطح کے طالب علموں کے لیے موزوں بناتی ہیں۔
+*تفسیرِ نمونہ* (مثالی تفسیر) آج دنیا بھر میں سب سے زیادہ پڑھی جانے والی تفاسیر میں سے ہے۔ اس کی سادہ زبان، عصری مثالیں اور واضح وضاحتیں اسے ہر سطح کے طالب علموں کے لیے موزوں بناتی ہیں۔
 
 ### ۳. تفسیرِ تسنیم
-**مصنف:** آیت اللہ شیخ عبداللہ جوادی آملی (پیدائش ۱۹۳۳)
+**مصنف:** علامہ شیخ عبداللہ جوادی آملی (پیدائش ۱۹۳۳)
 
-*تفسیرِ تسنیم* — جنت کے چشمے کے نام پر — ۲۱ویں صدی کا سب سے تفصیلی شیعہ تفسیری منصوبہ ہے۔ شیخ جوادی آملی نے عقلی دلائل، احادیث، فلسفہ اور عرفان کو یکجا کر کے قرآن کے کثیرالمعنی پہلوؤں کو روشن کیا ہے۔
+*تفسیرِ تسنیم* — جنت کے چشمے کے نام پر — ۲۱ویں صدی کا سب سے تفصیلی تفسیری منصوبہ ہے۔ شیخ جوادی آملی نے عقلی دلائل، احادیث، فلسفہ اور عرفان کو یکجا کر کے قرآن کے کثیرالمعنی پہلوؤں کو روشن کیا ہے۔
 
 ---
 
-## 🗺️ کورس کا ڈھانچہ — ۱۰ ماڈیولز
+## 🗺️ کورس کا ڈھانچہ — ۱۱ ماڈیولز
 
 | ماڈیول | عنوان |
 |--------|--------|
@@ -224,6 +228,7 @@ When you complete all 10 modules, you will:
 | ۸ | حفظ کے طریقے |
 | ۹ | منتخب اہم سورتیں |
 | ۱۰ | تلاوت اور جائزہ |
+| ۱۱ | مکمل قرآن حوالہ — عربی متن، ترجمہ اور تفسیر |
 
 ---
 

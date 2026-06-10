@@ -34,7 +34,7 @@ D. The Creator of life
 Surah An-Nasr was:
 
 A. The first surah revealed
-B. The last complete surah revealed — signaling the Prophet's mission was complete
+B. The last complete surah revealed — signaling the Prophet's (sallallahu alayhi wa aalihi wasallam) mission was complete
 C. Revealed during the Battle of Badr
 D. The surah about the elephant army
 
@@ -170,7 +170,7 @@ D. Only revise on weekends
 What is the historical context of Surah Al-Fil?
 
 A. The migration to Medina
-B. Abraha's elephant army marching to destroy the Kaaba in ~570 CE — the year the Prophet was born
+B. Abraha's elephant army marching to destroy the Kaaba in ~570 CE — the year the Prophet (sallallahu alayhi wa aalihi wasallam) was born
 C. The Battle of Badr
 D. The Night of Power (Laylat al-Qadr)
 
@@ -219,7 +219,7 @@ Why is Fajr recommended as the best time for hifz?
 
 A. It is the quietest time
 B. The brain after sleep is most receptive — prefrontal cortex restored, distractions minimal
-C. The Prophet ﷺ specifically commanded Fajr memorisation
+C. The Prophet (sallallahu alayhi wa aalihi wasallam) specifically commanded Fajr memorisation
 D. It is the tradition of all Islamic scholars throughout history
 
 ### 28.
@@ -234,7 +234,7 @@ D. Kursi extends over heavens and earth
 What is talaqqi (تَلَقِّي) and why is it irreplaceable?
 
 A. A form of dua specific to hifz
-B. Direct face-to-face teacher-to-student transmission — the unbroken chain of Quran transmission since the Prophet ﷺ
+B. Direct face-to-face teacher-to-student transmission — the unbroken chain of Quran transmission since the Prophet (sallallahu alayhi wa aalihi wasallam)
 C. The review portion of the daily hifz schedule
 D. The written authorization for a hifz student
 
@@ -345,13 +345,13 @@ D. Contains 6,000 verses
 12. C — Any letter except Ba and Meem
 13. D — 15 letters: ت ث ج د ذ ز س ش ص ض ط ظ ف ق ك
 14. C — 17 times (5 prayers × rak'at)
-15. A — Heart of the Quran (Prophet ﷺ, Tirmidhi)
+15. A — Heart of the Quran (Prophet (sallallahu alayhi wa aalihi wasallam), Tirmidhi)
 16. B — Contains all four conditions for success
 17. B — Thematic/logical connection between verses
 18. C — Punishment in the grave
 19. B — Waw/Ya + Sukoon after Fatha = 2 beats
 20. B — 2-3 pages revision per 1 page new
-21. B — Abraha's army in ~570 CE (year of Prophet's birth)
+21. B — Abraha's army in ~570 CE (year of Prophet's (sallallahu alayhi wa aalihi wasallam) birth)
 22. C — Absolute distinction in the object of worship
 23. B — 4-5 beats (Madd letter + Hamza in same word)
 24. B — Creator + Owner/Master + Nurturer

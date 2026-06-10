@@ -6,7 +6,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+alphabet+Quran+tajweed+beginners+28+letters" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+alphabet+Quran+tajweed+beginners+28+letters" data-video-id="p04mWo-C7Co" target="_blank" rel="noopener">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=makhaarij+arabic+letters+pronunciation+points+tajweed" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=makhaarij+arabic+letters+pronunciation+points+tajweed" data-video-id="Wnd-oyw68zs" target="_blank" rel="noopener">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+alphabet+four+forms+initial+medial+final+isolated" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+alphabet+four+forms+initial+medial+final+isolated" data-video-id="l7Q4D2f6zZQ" target="_blank" rel="noopener">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+arabic+alphabet+children+animation+fun+learning" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+arabic+alphabet+children+animation+fun+learning" data-video-id="6e145BWP7ng" target="_blank" rel="noopener">
   <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+urdu+script+similarities+naskh+nastaleeq" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+urdu+script+similarities+naskh+nastaleeq" data-video-id="_greQ78EAVw" target="_blank" rel="noopener">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -56,7 +56,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+emphatic+letters+sad+dad+ta+dha+tajweed" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+emphatic+letters+sad+dad+ta+dha+tajweed" data-video-id="r4sFQ1-1GWE" target="_blank" rel="noopener">
   <div class="vg-thumb">💪<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ayn+hamza+arabic+throat+letters+pronunciation+quran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ayn+hamza+arabic+throat+letters+pronunciation+quran" data-video-id="B0OEInUbJ4U" target="_blank" rel="noopener">
   <div class="vg-thumb">👄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,7 +76,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+writing+practice+tracing+letters+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=arabic+writing+practice+tracing+letters+beginners" data-video-id="__As3yZwrzU" target="_blank" rel="noopener">
   <div class="vg-thumb">✏️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -86,7 +86,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=bismillah+arabic+letters+breakdown+word+by+word" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=bismillah+arabic+letters+breakdown+word+by+word" data-video-id="NVYI6mN1Tg4" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -96,12 +96,12 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+bismillah+surah+fatiha+recitation+beautiful" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+bismillah+surah+fatiha+recitation+beautiful" data-video-id="wugTgrj337s" target="_blank" rel="noopener">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Bismillah & Al-Fatiha — Beautiful Recitation</p>
-    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
+    <p class="vg-creator">Sheikh Mahmoud Khalil Al-Husari</p>
     <p class="vg-duration">8 min</p>
   </div>
 </a>

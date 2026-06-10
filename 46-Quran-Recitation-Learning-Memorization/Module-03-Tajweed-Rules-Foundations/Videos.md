@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+madd+rules+explanation+quran+recitation+beginner" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+madd+rules+explanation+quran+recitation+beginner" data-video-id="iCu86U_rsgE" target="_blank" rel="noopener">
   <div class="vg-thumb">📏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=noon+sakin+tanween+rules+izhar+idgham+iqlab+ikhfa+tajweed" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=noon+sakin+tanween+rules+izhar+idgham+iqlab+ikhfa+tajweed" data-video-id="0wkdXP64n4k" target="_blank" rel="noopener">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=izhar+tajweed+throat+letters+noon+clear+pronunciation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=izhar+tajweed+throat+letters+noon+clear+pronunciation" data-video-id="iOkg1q7WGfU" target="_blank" rel="noopener">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=idgham+noon+sakin+merging+letters+quran+tajweed" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=idgham+noon+sakin+merging+letters+quran+tajweed" data-video-id="kKItiGBvLYA" target="_blank" rel="noopener">
   <div class="vg-thumb">🔀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=iqlab+noon+to+meem+ba+tajweed+rule+quran" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=iqlab+noon+to+meem+ba+tajweed+rule+quran" data-video-id="4aNxuoI3VUQ" target="_blank" rel="noopener">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ikhfa+tajweed+15+letters+hidden+noon+nasal" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ikhfa+tajweed+15+letters+hidden+noon+nasal" data-video-id="jS3QuXq4ldI" target="_blank" rel="noopener">
   <div class="vg-thumb">🫣<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ghunna+nasal+sound+tajweed+noon+meem+shaddah" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ghunna+nasal+sound+tajweed+noon+meem+shaddah" data-video-id="6KCxyBmcV_Q" target="_blank" rel="noopener">
   <div class="vg-thumb">🌙<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,7 +74,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=parhizgar+quran+reciter+tajweed+beautiful+recitation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=parhizgar+quran+reciter+tajweed+beautiful+recitation" data-video-id="0jdPY5CLFOI" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

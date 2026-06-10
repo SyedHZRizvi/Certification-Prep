@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+recitation+tajweed+word+by+word+arabic" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+recitation+tajweed+word+by+word+arabic" data-video-id="ws2aXg0tcUM" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+translation+meaning+urdu+english+tafseer" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+translation+meaning+urdu+english+tafseer" data-video-id="_8I6BZQED7E" target="_blank" rel="noopener">
   <div class="vg-thumb">🌏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+tajweed+rules+analysis+madd+shamsiyyah+lam" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+tajweed+rules+analysis+madd+shamsiyyah+lam" data-video-id="aKoygfPJp4Y" target="_blank" rel="noopener">
   <div class="vg-thumb">🔬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+kids+memorization+step+by+step+easy" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+kids+memorization+step+by+step+easy" data-video-id="Q8ChHURuiUw" target="_blank" rel="noopener">
   <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+tafseer+meaning+explanation+verse+by+verse" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+tafseer+meaning+explanation+verse+by+verse" data-video-id="mRcD6icmMRI" target="_blank" rel="noopener">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+prayer+salah+how+to+recite+correctly" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+prayer+salah+how+to+recite+correctly" data-video-id="B1oyzstnLVw" target="_blank" rel="noopener">
   <div class="vg-thumb">🤲<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+al+mizan+tafseer+tabatabai+explanation+meaning" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fatiha+al+mizan+tafseer+tabatabai+explanation+meaning" data-video-id="n0v1cb149_Q" target="_blank" rel="noopener">
   <div class="vg-thumb">🌿<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,12 +74,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+fatiha+quran+recitation+beautiful" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+fatiha+quran+recitation+beautiful" data-video-id="GsYPqOPpk1o" target="_blank" rel="noopener">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Surah Al-Fatiha — Beautiful Recitation (Mahmoud Karimi)</p>
-    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
+    <p class="vg-title">Surah Al-Fatiha — Beautiful Recitation</p>
+    <p class="vg-creator">Sheikh Abdur-Rahman As-Sudais</p>
     <p class="vg-duration">5 min</p>
   </div>
 </a>

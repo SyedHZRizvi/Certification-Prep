@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+ikhlas+recitation+translation+meaning+112" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+ikhlas+recitation+translation+meaning+112" data-video-id="3fi4KulJjus" target="_blank" rel="noopener">
   <div class="vg-thumb">☝️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+falaq+naas+muawwidhatayn+explanation+protection+duas" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+falaq+naas+muawwidhatayn+explanation+protection+duas" data-video-id="qDW4DHZgPGY" target="_blank" rel="noopener">
   <div class="vg-thumb">🛡️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kawthar+meaning+explanation+tafseer+108" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kawthar+meaning+explanation+tafseer+108" data-video-id="K7Hx8bDZCU0" target="_blank" rel="noopener">
   <div class="vg-thumb">🌊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+asr+tafseer+meaning+four+conditions+success+103" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+asr+tafseer+meaning+four+conditions+success+103" data-video-id="aF-gi9kX5FQ" target="_blank" rel="noopener">
   <div class="vg-thumb">⏳<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+ikhlas+equals+third+quran+hadith+explanation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+ikhlas+equals+third+quran+hadith+explanation" data-video-id="wYYfX2BbHC4" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=juz+amma+kids+memorization+short+surahs+part+1" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=juz+amma+kids+memorization+short+surahs+part+1" data-video-id="aFiecKDA-Ug" target="_blank" rel="noopener">
   <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,22 +64,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+falaq+naas+before+sleep+sunnah+prophet+recitation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+falaq+naas+before+sleep+sunnah+prophet+recitation" data-video-id="WIdCjiUvngg" target="_blank" rel="noopener">
   <div class="vg-thumb">🌙<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Surahs Before Sleep — Sunnah of the Prophet ﷺ</p>
+    <p class="vg-title">Surahs Before Sleep — Sunnah of the Prophet (sallallahu alayhi wa aalihi wasallam)</p>
     <p class="vg-creator">Sunnah Reminders</p>
     <p class="vg-duration">15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+juz+amma+short+surahs+ikhlas+falaq+naas" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+juz+amma+short+surahs+ikhlas+falaq+naas" data-video-id="sDv5fM0xYoc" target="_blank" rel="noopener">
   <div class="vg-thumb">✨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Juz Amma Surahs — Beautiful Recitation (Mahmoud Karimi)</p>
-    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
+    <p class="vg-title">Juz Amma Surahs — Beautiful Recitation</p>
+    <p class="vg-creator">Mishary Rashid Al-Afasy</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>

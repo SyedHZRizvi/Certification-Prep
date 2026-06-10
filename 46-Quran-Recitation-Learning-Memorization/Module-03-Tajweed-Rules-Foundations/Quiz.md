@@ -254,7 +254,7 @@ D. All 28 letters
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B** — Tajweed (تَجوِيد) comes from the root ج-و-د meaning "goodness/excellence." It means "to make excellent" or "to beautify." The goal of Tajweed is to recite the Quran as beautifully and correctly as the Prophet ﷺ did.
+**Q1 — B** — Tajweed (تَجوِيد) comes from the root ج-و-د meaning "goodness/excellence." It means "to make excellent" or "to beautify." The goal of Tajweed is to recite the Quran as beautifully and correctly as the Prophet (sallallahu alayhi wa aalihi wasallam) did.
 
 **Q2 — B** — Madd al-Tabee'i lasts 2 harakahs. It is the "natural" or "essential" Madd — without it, the word's vowel would be too short. This is the baseline for all Madd rules.
 

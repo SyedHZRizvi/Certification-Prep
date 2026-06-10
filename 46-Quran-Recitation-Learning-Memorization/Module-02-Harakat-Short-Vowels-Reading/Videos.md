@@ -6,7 +6,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+harakat+short+vowels+fatha+kasra+damma+quran+beginners" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+harakat+short+vowels+fatha+kasra+damma+quran+beginners" data-video-id="jDt_TzgggEs" target="_blank" rel="noopener">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,7 +16,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=sukoon+shaddah+tanween+Arabic+quran+tajweed+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=sukoon+shaddah+tanween+Arabic+quran+tajweed+lesson" data-video-id="BjvEs5Q84yg" target="_blank" rel="noopener">
   <div class="vg-thumb">📍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,7 +26,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=bismillah+word+by+word+tajweed+harakat+analysis" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=bismillah+word+by+word+tajweed+harakat+analysis" data-video-id="w8gSRvjgeYM" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -36,7 +36,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+reading+practice+harakat+tashkeel+quran+page" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+reading+practice+harakat+tashkeel+quran+page" data-video-id="hvtT8SbczyE" target="_blank" rel="noopener">
   <div class="vg-thumb">✏️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -46,7 +46,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+long+vowels+madd+alif+waw+ya+pronunciation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+long+vowels+madd+alif+waw+ya+pronunciation" data-video-id="xzJE66gfrSU" target="_blank" rel="noopener">
   <div class="vg-thumb">📏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -56,7 +56,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+zabar+zair+pesh+quran+tajweed+Urdu+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+zabar+zair+pesh+quran+tajweed+Urdu+lesson" data-video-id="Q1cSujP-6AQ" target="_blank" rel="noopener">
   <div class="vg-thumb">🇵🇰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -66,7 +66,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=reading+quran+with+harakat+children+animated+lesson" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=reading+quran+with+harakat+children+animated+lesson" data-video-id="jm1pZFGyaRA" target="_blank" rel="noopener">
   <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -76,12 +76,12 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+slow+clear+recitation+surah+fatiha+harakat" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+slow+clear+recitation+surah+fatiha+harakat" data-video-id="uCiEZJ0RiKs" target="_blank" rel="noopener">
   <div class="vg-thumb">🎙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Slow & Clear Recitation — Surah Fatiha (Follow Along)</p>
-    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
+    <p class="vg-creator">Quran Recitation Tutorial</p>
     <p class="vg-duration">5 min</p>
   </div>
 </a>

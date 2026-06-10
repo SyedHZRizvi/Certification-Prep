@@ -18,7 +18,7 @@ D. 30
 In which direction is Arabic written and read?
 
 A. Left to right, like English
-B. Right to left, like Urdu and Persian
+B. Right to left, like Urdu
 C. Top to bottom, like Chinese
 D. It depends on the word length
 
@@ -268,7 +268,7 @@ D. They are all nasal letters
 
 **Q1 — B** — Arabic has exactly 28 letters. English has 26, Arabic has 28. The extra letters cover sounds unique to Arabic (like ع Ayn, ح heavy Ha, خ Kha).
 
-**Q2 — B** — Arabic is written and read right to left, the same direction as Urdu, Persian, and Hebrew. This is a major advantage for Urdu speakers learning Arabic.
+**Q2 — B** — Arabic is written and read right to left, the same direction as Urdu and Hebrew. This is a major advantage for Urdu speakers learning Arabic.
 
 **Q3 — C** — Every Arabic letter has 4 forms: isolated (used alone), initial (beginning of a word), medial (middle), and final (end). This is why the same letter can look very different in different positions.
 

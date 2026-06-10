@@ -78,7 +78,7 @@ The forgotten half of memorisation. Students who learn new material but don't re
 | After Asr | Review older material (past month) | 15 min |
 | After Isha | Listen to today's new material on audio | 10 min |
 
-**Why Fajr?** The Prophet ﷺ said: "My Ummah was blessed in its early mornings." The brain after sleep is in its most receptive state — the prefrontal cortex has been restored, distractions are minimal.
+**Why Fajr?** The Prophet (sallallahu alayhi wa aalihi wasallam) said: "My Ummah was blessed in its early mornings." The brain after sleep is in its most receptive state — the prefrontal cortex has been restored, distractions are minimal.
 
 ### The "One Verse" Daily Minimum
 
@@ -160,7 +160,7 @@ These three alone give a child a complete prayer structure. Everything else buil
 
 ### The Teacher Requirement
 
-Technology is a supplement, not a replacement. The Quran has been transmitted through an unbroken chain of *talaqqi* (تَلَقِّي — direct face-to-face transmission) since the time of the Prophet ﷺ. A teacher can:
+Technology is a supplement, not a replacement. The Quran has been transmitted through an unbroken chain of *talaqqi* (تَلَقِّي — direct face-to-face transmission) since the time of the Prophet (sallallahu alayhi wa aalihi wasallam). A teacher can:
 - Identify Tajweed errors you cannot hear yourself
 - Provide the *ijazah* (إِجَازَة — authorization) — the certificate of accurate transmission
 - Provide spiritual guidance and motivation

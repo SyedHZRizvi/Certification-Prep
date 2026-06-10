@@ -9,8 +9,8 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 | Scholar | Work | Volumes | Approach | Key Insight |
 |---------|------|---------|----------|-------------|
 | Allāmah Tabāṭabāī | Tafsir al-Mizan | 27 | Quran explains Quran; philosophical & mystical | Al-Fatiha contains whole Quran in essence; Siraat is internal alignment |
-| Āyatullāh Makārem Shīrāzī | Tafseer-e-Namoona | 27 | Practical, thematic, social ethics | Most accessible; emphasizes communal and moral dimensions |
-| Āyatullāh Jawādī Āmolī | Tafsir Tasnim | 40+ | Mystical, philosophical, spiritual depth | Most extensive modern commentary; inner journey of the soul |
+| Allāmah Makārem Shīrāzī | Tafseer-e-Namoona | 27 | Practical, thematic, social ethics | Most accessible; emphasizes communal and moral dimensions |
+| Allāmah Jawādī Āmolī | Tafsir Tasnim | 40+ | Mystical, philosophical, spiritual depth | Most extensive modern commentary; inner journey of the soul |
 
 ---
 
@@ -36,7 +36,7 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 | 112 | Al-Ikhlas | 4 | Pure tawhid; Al-Samad; no offspring, no equal |
 | 113 | Al-Falaq | 5 | Protection from external evil: darkness, sorcery, envy |
 | 114 | An-Naas | 6 | Protection from internal evil: the whisperer (Waswas Khannas) |
-| 36:1–5 | Yasin (opening) | — | Prophet confirmed; Wise Quran from Al-Aziz Al-Rahim |
+| 36:1–5 | Yasin (opening) | — | Prophet (sallallahu alayhi wa aalihi wasallam) confirmed; Wise Quran from Al-Aziz Al-Rahim |
 | 67:1–3 | Al-Mulk (opening) | — | Life = test of conduct; creation has no flaws |
 
 ---
@@ -55,7 +55,7 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 | الْوَسْوَاس | Whisperer | Sneaking whisperer | وسواس | Retreats on dhikr; re-enters on inattention |
 | الْخَنَّاس | One who slinks | Sneaking | خناس | Slinks back when Allah is remembered |
 | الْكَوْثَر | Abundance | Abundance | کوثر | River in Paradise; also: Quran, prophethood, legacy |
-| الْأَبْتَر | Cut off | Without posterity | بے نسل | Historically: the enemy who called Prophet "abtar" |
+| الْأَبْتَر | Cut off | Without posterity | بے نسل | Historically: the enemy who called Prophet (sallallahu alayhi wa aalihi wasallam) "abtar" |
 | خُسْر | Loss | Loss | خسارہ | Ultimate loss — spending life with no lasting value |
 
 ---
@@ -93,8 +93,8 @@ title: "Module 11 Cheat Sheet — Full Quran Reference: Arabic, Translation & Ta
 | Qarai English Quran | al-islam.org/quran |
 | Quran with multiple translations | quran.com |
 | Arabic text download | tanzil.net |
-| Tafseer-e-Namoona (Urdu) | noorlib.ir and islamicbooks.info |
-| Tafsir Tasnim (Farsi/summaries) | portal.esra.ir |
+| Tafseer-e-Namoona (English adaptation) | al-islam.org — *An Enlightening Commentary into the Light of the Holy Quran* |
+| Tafsir Tasnim (selected translations) | al-islam.org and major Islamic digital libraries |
 
 ---
 

@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+recitation+practice+full+juz+amma+assessment" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+recitation+practice+full+juz+amma+assessment" data-video-id="c7diKV9_tYY" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+recitation+daily+routine+morning+evening+adhkar+schedule" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+recitation+daily+routine+morning+evening+adhkar+schedule" data-video-id="08UyLhlSC4E" target="_blank" rel="noopener">
   <div class="vg-thumb">📅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=correct+tajweed+mistakes+self+check+practice+recitation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=correct+tajweed+mistakes+self+check+practice+recitation" data-video-id="IxhbmsElovs" target="_blank" rel="noopener">
   <div class="vg-thumb">✅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=prayer+salah+recitation+complete+guide+fatiha+surahs+correct" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=prayer+salah+recitation+complete+guide+fatiha+surahs+correct" data-video-id="SevO7B124yU" target="_blank" rel="noopener">
   <div class="vg-thumb">🤲<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+learning+journey+next+steps+arabic+further+study" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+learning+journey+next+steps+arabic+further+study" data-video-id="35xP0j0Toz8" target="_blank" rel="noopener">
   <div class="vg-thumb">🚀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+quran+complete+recitation+beautiful+audio" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+quran+complete+recitation+beautiful+audio" data-video-id="x82DHw8p9M8" target="_blank" rel="noopener">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+recitation+ijazah+certification+chain+how+to+get" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+recitation+ijazah+certification+chain+how+to+get" data-video-id="p709MoM38X8" target="_blank" rel="noopener">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,7 +74,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=teach+children+quran+parent+guide+home+islamic+education" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=teach+children+quran+parent+guide+home+islamic+education" data-video-id="KL5eeLXG0Vo" target="_blank" rel="noopener">
   <div class="vg-thumb">👪<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

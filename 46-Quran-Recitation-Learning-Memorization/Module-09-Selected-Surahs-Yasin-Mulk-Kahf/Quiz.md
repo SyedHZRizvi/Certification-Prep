@@ -3,7 +3,7 @@
 ---
 
 ### Q1.
-Which verse did the Prophet ﷺ identify as the greatest verse in the Quran?
+Which verse did the Prophet (sallallahu alayhi wa aalihi wasallam) identify as the greatest verse in the Quran?
 
 A. Al-Fatiha verse 5 (إِيَّاكَ نَعبُدُ)
 B. Ayatul Kursi (Al-Baqarah 2:255)
@@ -56,7 +56,7 @@ D. The reward of one Hajj
 What is Surah Yasin called and why?
 
 A. The Opening — because it opens the Quran
-B. The Heart of the Quran — "Everything has a heart, and the heart of the Quran is Yasin" (Prophet ﷺ, Tirmidhi)
+B. The Heart of the Quran — "Everything has a heart, and the heart of the Quran is Yasin" (Prophet (sallallahu alayhi wa aalihi wasallam), Tirmidhi)
 C. The Protector — because it protects from evil
 D. The Crown — because it is the most beautiful surah
 
@@ -96,7 +96,7 @@ D. Only in Fajr prayer
 The word تَبَارَكَ at the start of Surah Al-Mulk means:
 
 A. The Most Merciful
-B. "Say" — a command to the Prophet
+B. "Say" — a command to the Prophet (sallallahu alayhi wa aalihi wasallam)
 C. Blessed beyond all measure, inexhaustibly full of goodness — used for Allah alone
 D. "In the name of"
 
@@ -123,7 +123,7 @@ D. Financial loss
 ---
 
 ### Q13.
-The Prophet ﷺ reportedly never slept without reciting which surah?
+The Prophet (sallallahu alayhi wa aalihi wasallam) reportedly never slept without reciting which surah?
 
 A. Surah Al-Ikhlas
 B. Surah Al-Fatiha
@@ -163,7 +163,7 @@ D. Fitnah of power
 ---
 
 ### Q17.
-According to the Prophet ﷺ, how many verses from the beginning of Surah Al-Kahf, if memorised, protect from the Dajjal's trial?
+According to the Prophet (sallallahu alayhi wa aalihi wasallam), how many verses from the beginning of Surah Al-Kahf, if memorised, protect from the Dajjal's trial?
 
 A. 3 verses
 B. 7 verses
@@ -244,7 +244,7 @@ D. It was the last surah to be revealed
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B** — The Prophet ﷺ confirmed to Abu ibn Ka'b that Ayatul Kursi is the greatest verse in the Quran (Sahih Muslim). He described it as containing the most comprehensive description of Allah's attributes of any single verse.
+**Q1 — B** — The Prophet (sallallahu alayhi wa aalihi wasallam) confirmed to Abu ibn Ka'b that Ayatul Kursi is the greatest verse in the Quran (Sahih Muslim). He described it as containing the most comprehensive description of Allah's attributes of any single verse.
 
 **Q2 — C** — Al-Qayyum (القَيُّوم) comes from the root qaama (قَامَ — to stand/subsist). It means the one who stands by Himself and upon whom all others depend. He sustains all creation at every moment.
 
@@ -254,13 +254,13 @@ D. It was the last surah to be revealed
 
 **Q5 — B** — A narration states: "Whoever recites Ayatul Kursi after every obligatory prayer, nothing prevents him from entering paradise except death." (Al-Nasai with good chain). A separate narration says reciting it before sleep brings a guardian until morning (Bukhari).
 
-**Q6 — B** — The Prophet ﷺ said: "Everything has a heart, and the heart of the Quran is Yasin. Whoever reads Yasin, Allah will write for him the reward of reading the Quran ten times" (Tirmidhi). The designation "heart" suggests it contains the essential pulse of the entire Quran.
+**Q6 — B** — The Prophet (sallallahu alayhi wa aalihi wasallam) said: "Everything has a heart, and the heart of the Quran is Yasin. Whoever reads Yasin, Allah will write for him the reward of reading the Quran ten times" (Tirmidhi). The designation "heart" suggests it contains the essential pulse of the entire Quran.
 
 **Q7 — C** — Surah Yasin has 83 verses. It is divided thematically across five sections covering prophethood, historical narrative, cosmic signs, resurrection, and divine power.
 
 **Q8 — C** — كُن فَيَكُونُ means "Be! — and it is." This is Allah's creative command — when He intends something, He simply wills it into existence. The verse (36:82) represents the Islamic concept of divine omnipotence in its most concise form.
 
-**Q9 — B** — Surah Yasin is traditionally recited: (1) for the ill and dying — the Prophet ﷺ encouraged reciting it over those who are ill; (2) on Thursday nights and Friday mornings for seeking blessing and forgiveness.
+**Q9 — B** — Surah Yasin is traditionally recited: (1) for the ill and dying — the Prophet (sallallahu alayhi wa aalihi wasallam) encouraged reciting it over those who are ill; (2) on Thursday nights and Friday mornings for seeking blessing and forgiveness.
 
 **Q10 — C** — Tabaarak (تَبَارَك) is derived from baraka (blessing) and means "blessed in a way that is inexhaustible and beyond measure." It is used exclusively for Allah in the Quran. The verb form implies Allah is the source of all blessing.
 
@@ -268,7 +268,7 @@ D. It was the last surah to be revealed
 
 **Q12 — B** — Multiple narrations (Abu Dawud, Tirmidhi, Ibn Masud) indicate that Surah Al-Mulk intercedes on behalf of its regular reciter in the grave. It is described as "Al-Waqiya" (the Preventer) — protecting its reciter from the punishment of the grave.
 
-**Q13 — C** — Ibn Masud (ra) narrated that the Prophet ﷺ never went to sleep without reciting Surah Al-Mulk. This is why it is called one of the nightly sunnah recitations, along with Al-Ikhlas, Al-Falaq, An-Naas, and Ayatul Kursi.
+**Q13 — C** — Ibn Masud (ra) narrated that the Prophet (sallallahu alayhi wa aalihi wasallam) never went to sleep without reciting Surah Al-Mulk. This is why it is called one of the nightly sunnah recitations, along with Al-Ikhlas, Al-Falaq, An-Naas, and Ayatul Kursi.
 
 **Q14 — C** — Surah Al-Kahf contains four major stories: (1) People of the Cave (9-26), (2) The Two Gardens (32-44), (3) Musa and Khidr (60-82), and (4) Dhul-Qarnayn (83-98).
 

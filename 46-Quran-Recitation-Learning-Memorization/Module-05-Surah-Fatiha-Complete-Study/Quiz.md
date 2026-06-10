@@ -208,7 +208,7 @@ Why is Surah Al-Fatiha called أُمُّ القُرآن (The Mother of the Quran
 A. Because it is the longest surah
 B. Because it was the first surah revealed
 C. Because it contains a summary of the entire Quran (tawhid, resurrection, guidance, accountability)
-D. Because the Prophet ﷺ loved it the most
+D. Because the Prophet (sallallahu alayhi wa aalihi wasallam) loved it the most
 
 ---
 
@@ -262,7 +262,7 @@ D. 34 times
 
 **Q9 — B** — الدِّينِ has a Shamsiyyah Lam. The Dal (د) is a "sun letter" (شمسية), so the Lam is absorbed into it, and the Dal receives a Shaddah: pronounced "ad-dīni" not "al-dīni."
 
-**Q10 — B** — The two transmitted readings are: مَٰلِكِ (Māliki) meaning "Master/Owner/Sovereign" (used in Hafs an Asim — the most widely used qiraat) and مَلِكِ (Maliki) meaning "King" (used in Warsh an Nafi and some other qira'at). Both are authentic transmissions from the Prophet ﷺ.
+**Q10 — B** — The two transmitted readings are: مَٰلِكِ (Māliki) meaning "Master/Owner/Sovereign" (used in Hafs an Asim — the most widely used qiraat) and مَلِكِ (Maliki) meaning "King" (used in Warsh an Nafi and some other qira'at). Both are authentic transmissions from the Prophet (sallallahu alayhi wa aalihi wasallam).
 
 **Q11 — B** — In Arabic, placing the object before the verb creates a specific emphasis. إِيَّاكَ (You alone) before نَعبُدُ (we worship) means: "It is specifically and exclusively You — not anyone else — that we worship." The normal word order would be نَعبُدُكَ; fronting إِيَّاكَ adds the "alone/exclusively" meaning.
 

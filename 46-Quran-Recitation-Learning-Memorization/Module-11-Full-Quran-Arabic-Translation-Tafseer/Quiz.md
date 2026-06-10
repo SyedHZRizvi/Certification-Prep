@@ -89,7 +89,7 @@ D. The Forgiving One, Who pardons all sins
 
 According to Tafseer Namoona, why is Ayatul Kursi called "Sayyid al-Qur'an" (Master of the Quran)?
 
-A. Because it was the first verse revealed to the Prophet  
+A. Because it was the first verse revealed to the Prophet (sallallahu alayhi wa aalihi wasallam)  
 B. Because it is the longest single verse in the Quran  
 C. Because it concentrates the most fundamental principles of tawhid in a single verse  
 D. Because it contains all the divine names in one place  
@@ -157,8 +157,8 @@ According to Tabatabai, what does "Al-Kawthar" refer to in this world (as oppose
 
 A. Military victories and conquests  
 B. The Quran, prophethood, and the continuation of prophetic legacy  
-C. Wealth and prosperity given to the Prophet  
-D. The companions of the Prophet  
+C. Wealth and prosperity given to the Prophet (sallallahu alayhi wa aalihi wasallam)  
+D. The companions of the Prophet (sallallahu alayhi wa aalihi wasallam)  
 
 ---
 
@@ -178,8 +178,8 @@ D. Sincerity, humility, remembrance, and gratitude
 Which tafseer scholar among the three studied in this module wrote Tafseer-e-Namoona?
 
 A. Allāmah Tabāṭabāī  
-B. Āyatullāh Jawādī Āmolī  
-C. Āyatullāh Makārem Shīrāzī  
+B. Allāmah Jawādī Āmolī  
+C. Allāmah Makārem Shīrāzī  
 D. Maulana Zeeshan Haider Jawadi  
 
 ---
@@ -266,7 +266,7 @@ D. Surah Al-Fatiha and Surah Al-Baqarah
 According to Makarem Shirazi (Namoona), the statement "Lakum dinukum wa liya din" (To you your religion, to me my religion) in Surah Al-Kafirun is best understood as:
 
 A. A declaration of religious pluralism — all religions are equally valid  
-B. A declaration of theological independence — the Prophet refuses to dilute monotheism under any pressure  
+B. A declaration of theological independence — the Prophet (sallallahu alayhi wa aalihi wasallam) refuses to dilute monotheism under any pressure  
 C. An invitation for the Quraysh to convert in their own time  
 D. A statement that religious debate is prohibited  
 
@@ -342,13 +342,13 @@ D. A metaphor for the Quran itself as a book to follow
 
 **Q12 — B.** Jawadi Amoli emphasizes that human whisperers — those who corrupt others through speech, media, and culture — can be as dangerous or more dangerous than unseen whisperers (jinn), because their methods are visible, normalized, and persistent.
 
-**Q13 — C.** Al-Abtar means "the one who is cut off" — without lasting posterity, legacy, or continuation. The enemy who called the Prophet "abtar" proved himself to be the truly cut-off one.
+**Q13 — C.** Al-Abtar means "the one who is cut off" — without lasting posterity, legacy, or continuation. The enemy who called the Prophet (sallallahu alayhi wa aalihi wasallam) "abtar" proved himself to be the truly cut-off one.
 
 **Q14 — B.** Tabatabai explains that Al-Kawthar in this world refers to the Quran, prophethood, and the continuation of prophetic legacy. The river in Paradise is a further dimension of this abundance.
 
 **Q15 — C.** Surah Al-Asr's four conditions are: Iman (faith), Amal Salih (righteous deeds), Tawasi bil-Haqq (enjoining one another to truth), and Tawasi bil-Sabr (enjoining one another to patience). All four are required together.
 
-**Q16 — C.** Tafseer-e-Namoona was written by Āyatullāh Nāsir Makārem Shīrāzī. It spans 27 volumes and is known for its practical, thematic, and accessible approach.
+**Q16 — C.** Tafseer-e-Namoona was written by Allāmah Nāsir Makārem Shīrāzī. It spans 27 volumes and is known for its practical, thematic, and accessible approach.
 
 **Q17 — D.** Tafsir Tasnim by Jawadi Amoli spans 40+ volumes and is the most extensive modern commentary on the Quran, covering the Quran's mystical, philosophical, and spiritual dimensions in extraordinary depth.
 
@@ -364,7 +364,7 @@ D. A metaphor for the Quran itself as a book to follow
 
 **Q23 — B.** The Mu'awwidhatayn ("the two seeking-refuge") refers to Surah Al-Falaq (113) and Surah An-Naas (114) together — they form a paired protective shield, Falaq against external threats and Naas against internal corruption.
 
-**Q24 — B.** Makarem Shirazi clarifies that "To you your religion, to me my religion" is a declaration of theological independence — the Prophet refuses to compromise his monotheism under any social or political pressure. It is not a pluralistic statement but a firm boundary.
+**Q24 — B.** Makarem Shirazi clarifies that "To you your religion, to me my religion" is a declaration of theological independence — the Prophet (sallallahu alayhi wa aalihi wasallam) refuses to compromise his monotheism under any social or political pressure. It is not a pluralistic statement but a firm boundary.
 
 **Q25 — B.** Tabatabai explains that "Ahad" negates not merely multiplicity (having partners) but also the very possibility of a second — it is a more absolute negation than "Wahid" which simply means numerically one.
 

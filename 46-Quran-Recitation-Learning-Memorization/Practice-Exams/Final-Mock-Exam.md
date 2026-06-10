@@ -233,8 +233,8 @@ D. Prayer alone
 ### 29.
 The historical context behind Surah Al-Kawthar involves:
 
-A. The Prophet's migration from Mecca
-B. The mockers who called the Prophet "al-abtar" (cut off) after his sons died
+A. The Prophet's (sallallahu alayhi wa aalihi wasallam) migration from Mecca
+B. The mockers who called the Prophet (sallallahu alayhi wa aalihi wasallam) "al-abtar" (cut off) after his sons died
 C. The conquest of Mecca
 D. The Battle of Uhud
 
@@ -266,7 +266,7 @@ D. Only formal religious acts count as worship
 Surah Al-Fil (Year of the Elephant) occurred in:
 
 A. 610 CE — first revelation
-B. 570 CE — approximately the year of the Prophet's birth
+B. 570 CE — approximately the year of the Prophet's (sallallahu alayhi wa aalihi wasallam) birth
 C. 622 CE — Hijra
 D. 630 CE — Conquest of Mecca
 
@@ -519,11 +519,11 @@ D. Learning to read Arabic for academic purposes
 26. B — Those who blow on knots (harmful practices)
 27. B — Triple authority: Lord, King, God of mankind
 28. C — All four: Iman + Amal + Tawasi bil-Haqq + Tawasi bis-Sabr
-29. B — Mockers called Prophet "al-abtar" after sons' deaths
+29. B — Mockers called Prophet (sallallahu alayhi wa aalihi wasallam) "al-abtar" after sons' deaths
 30. C — Last complete surah; commanded humility at peak victory
 31. C — Principled refusal — no compromise in object of worship
 32. B — Faith and social responsibility are inseparable
-33. B — ~570 CE (year of Prophet's birth)
+33. B — ~570 CE (year of Prophet's (sallallahu alayhi wa aalihi wasallam) birth)
 34. B — Sabt + Tajweed + Muraja'ah
 35. B — Day 1, 2, 4, 7, 14, 30
 36. C — Fajr time

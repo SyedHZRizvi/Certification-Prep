@@ -46,4 +46,4 @@
 ## Al-Fil (105) — Timeline
 
 **570 CE:** Abraha (Abyssinian governor) marches to Mecca with elephant army → birds destroy them → Mecca/Kaaba saved.
-This was the **year the Prophet ﷺ was born**.
+This was the **year the Prophet (sallallahu alayhi wa aalihi wasallam) was born**.

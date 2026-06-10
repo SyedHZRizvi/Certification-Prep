@@ -18,7 +18,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 
 Surah Al-Fatiha (الفاتِحَة — "The Opening") is the first Surah of the Quran and is also called **Umm al-Quran** (أُمُّ القُرآن — "The Mother of the Quran"). It is the most read text in the world — every Muslim recites it **at least 17 times a day** in their five daily prayers.
 
-The Prophet Muhammad ﷺ said: *"Whoever does not recite Al-Fatiha in his prayer, his prayer is incomplete."* (Sahih Bukhari)
+The Prophet Muhammad (sallallahu alayhi wa aalihi wasallam) said: *"Whoever does not recite Al-Fatiha in his prayer, his prayer is incomplete."* (Sahih Bukhari)
 
 This surah is a **conversation between the servant and Allah**. When you recite each verse, Allah responds — this is described in the famous Hadith Qudsi where Allah says: "I have divided prayer between Myself and My servant in two halves — half for Me, half for him."
 
@@ -207,7 +207,7 @@ Tabatabai sees a profound theological statement: existence (al-hamd) leads to me
 
 ---
 
-### 2️⃣ Tafseer-e-Namoona — Ayatullah Makārem Shīrāzī (27 volumes)
+### 2️⃣ Tafseer-e-Namoona — Allamah Makārem Shīrāzī (27 volumes)
 
 Makarem Shirazi emphasizes the **practical and spiritual lessons** for the everyday believer:
 
@@ -225,7 +225,7 @@ He identifies the "straight path" as not merely the path to paradise but the pat
 
 ---
 
-### 3️⃣ Tafsir Tasnim — Āyatullāh Jawādī Āmolī (40+ volumes)
+### 3️⃣ Tafsir Tasnim — Allamah Jawādī Āmolī (40+ volumes)
 
 Jawadi Amoli's Tafsir Tasnim is the most extensive modern Quran commentary. His approach is mystical, philosophical, and deeply spiritual:
 
@@ -299,7 +299,7 @@ That's exactly what Al-Fatiha is. And you say it 17 times every day — like kno
 
 سورۃ الفاتحہ (الفاتِحَة یعنی "کھولنے والی") قرآن مجید کی پہلی سورت ہے۔ اسے **اُمُّ القُرآن** (قرآن کی ماں) بھی کہا جاتا ہے۔ ہر مسلمان یہ سورت روزانہ کم از کم **۱۷ مرتبہ** نماز میں پڑھتا ہے۔
 
-پیغمبر اکرمؐ نے فرمایا: *"جو شخص نماز میں الفاتحہ نہیں پڑھتا، اس کی نماز نامکمل ہے۔"* (صحیح البخاری)
+پیغمبر اکرم صلی اللہ علیہ وآلہ وسلم نے فرمایا: *"جو شخص نماز میں الفاتحہ نہیں پڑھتا، اس کی نماز نامکمل ہے۔"* (صحیح البخاری)
 
 ---
 
@@ -399,11 +399,11 @@ That's exactly what Al-Fatiha is. And you say it 17 times every day — like kno
 
 طباطبائی صاحب کہتے ہیں: سورت الفاتحہ پورے قرآن کا خلاصہ ہے۔ الحمد میں توحید، آیت ۴ میں معاد، آیت ۵ میں عبودیت، اور آیات ۶-۷ میں نبوت اور ہدایت — یہ چاروں اسلامی عقائد کے ستون ہیں۔
 
-### ۲ — تفسیرِ نمونہ (آیت اللہ مکارم شیرازی)
+### ۲ — تفسیرِ نمونہ (علامہ مکارم شیرازی)
 
 مکارم شیرازی فرماتے ہیں: "إِيَّاكَ نَعبُدُ" (ہم صرف تیری عبادت کرتے ہیں) بندے کی آزادی کا اعلان ہے — خدا کا بندہ کسی انسان کا غلام نہیں۔ ہر وہ شخص جو مال، طاقت، یا کسی اور شخص کی عبادت کرتا ہے، اس نے توحید سے ہاتھ دھو لیا۔
 
-### ۳ — تفسیر تسنیم (آیت اللہ جوادی آملی)
+### ۳ — تفسیر تسنیم (علامہ جوادی آملی)
 
 جوادی آملی فرماتے ہیں: "اهدِنَا" میں ہدایت کی درخواست اس بات کی علامت ہے کہ ہدایت اللہ کا مسلسل عطیہ ہے — نہ کہ ایک بار کی بخشش۔ جیسے تاریک راستے پر روشنی ہر قدم پر چاہیے، اسی طرح الہٰی ہدایت ہر لمحے مانگی جاتی ہے۔
 

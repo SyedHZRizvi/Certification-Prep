@@ -280,7 +280,7 @@ D. It uses special letters not found in everyday Arabic
 
 **Q13 — B** — Long vowels in Arabic are formed by a short vowel + its corresponding semi-vowel letter: Fatha + Alif = ā, Kasra + Ya = ī, Damma + Waw = ū.
 
-**Q14 — C** — Zabar (زَبَر) is the Urdu/Persian name for the Fatha. The word means "above" in Persian — reflecting its position above the letter.
+**Q14 — C** — Zabar (زَبَر) is the Urdu name for the Fatha. The word means "above" — reflecting its position above the letter.
 
 **Q15 — B** — When Fatha precedes Alif, the "a" sound is lengthened to "ā" (held twice as long). This is the Madd al-Tabee'i (natural prolongation), the most basic Madd rule.
 
@@ -296,7 +296,7 @@ D. It uses special letters not found in everyday Arabic
 
 **Q21 — B** — The complete Quran has harakat on every letter — this is called "mushaf mutasharrik" (fully vowelled manuscript). This distinguishes Quranic text from everyday Arabic writing.
 
-**Q22 — C** — Jazm (جَزم) in Urdu/Persian corresponds to the Arabic Sukoon. The Urdu term Jazm means "to cut off" — reflecting how the vowel is "cut off" from the consonant.
+**Q22 — C** — Jazm (جَزم) in Urdu corresponds to the Arabic Sukoon. The Urdu term Jazm means "to cut off" — reflecting how the vowel is "cut off" from the consonant.
 
 **Q23 — B** — Arabic text without harakat is called "unvoweled" or informally "dry." Newspapers, novels, and most modern Arabic print omit harakat, assuming readers know the words from context.
 

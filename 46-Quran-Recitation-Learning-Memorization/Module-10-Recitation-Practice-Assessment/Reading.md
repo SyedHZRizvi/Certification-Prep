@@ -151,7 +151,7 @@ Record yourself reciting a surah and then:
 
 ### The Living Promise
 
-The Prophet ﷺ said: *"The best among you are those who learn the Quran and teach it."* (Sahih Bukhari)
+The Prophet (sallallahu alayhi wa aalihi wasallam) said: *"The best among you are those who learn the Quran and teach it."* (Sahih Bukhari)
 
 This course was a beginning. The Quran is not a text to be finished — it is a presence to be accompanied. Return to these modules, deepen your Tajweed, explore the Tafseer, recite more — and let the words you have begun to learn travel with you, not just in memory, but in character.
 
@@ -225,7 +225,7 @@ This course was a beginning. The Quran is not a text to be finished — it is a 
 
 ## آگے کا سفر
 
-رسول اللہؐ نے فرمایا: **"تم میں سے بہترین وہ ہے جو قرآن سیکھے اور سکھائے۔"** (صحیح بخاری)
+رسول اللہ صلی اللہ علیہ وآلہ وسلم نے فرمایا: **"تم میں سے بہترین وہ ہے جو قرآن سیکھے اور سکھائے۔"** (صحیح بخاری)
 
 قرآن ایک دوست ہے، نہ صرف حفظ — ہر دن اس کے ساتھ کچھ وقت گزاریں، معنی سمجھیں، اور کسی نہ کسی کو سکھائیں۔
 

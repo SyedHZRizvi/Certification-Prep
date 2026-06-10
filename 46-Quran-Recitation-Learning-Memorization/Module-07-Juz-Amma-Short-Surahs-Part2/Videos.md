@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+nasr+last+complete+surah+revealed+explanation+110" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+nasr+last+complete+surah+revealed+explanation+110" data-video-id="zhIBp_-3SwE" target="_blank" rel="noopener">
   <div class="vg-thumb">🏆<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kafirun+religious+freedom+no+compromise+tafseer+109" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kafirun+religious+freedom+no+compromise+tafseer+109" data-video-id="lERnUoYA0sg" target="_blank" rel="noopener">
   <div class="vg-thumb">🕊️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+maun+social+justice+orphan+poor+prayer+tafseer+107" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+maun+social+justice+orphan+poor+prayer+tafseer+107" data-video-id="btUhfuCzjkI" target="_blank" rel="noopener">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fil+elephant+abraha+kaaba+history+105" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+fil+elephant+abraha+kaaba+history+105" data-video-id="G5ypF8J1tNU" target="_blank" rel="noopener">
   <div class="vg-thumb">🐘<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+quraysh+trade+routes+winter+summer+gratitude+106" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+quraysh+trade+routes+winter+summer+gratitude+106" data-video-id="ptEDrqm_HWs" target="_blank" rel="noopener">
   <div class="vg-thumb">🌍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=juz+amma+kids+memorization+short+surahs+part+2" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=juz+amma+kids+memorization+short+surahs+part+2" data-video-id="5Jnak9KdNb8" target="_blank" rel="noopener">
   <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+maun+riya+show+off+prayer+warning+meaning" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+maun+riya+show+off+prayer+warning+meaning" data-video-id="NY7MA9hW2J0" target="_blank" rel="noopener">
   <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,12 +74,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+nasr+kafirun+maun+fil+recitation" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+nasr+kafirun+maun+fil+recitation" data-video-id="czx7_VV3CeQ" target="_blank" rel="noopener">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Short Surahs Recitation — Beautiful Recitation</p>
-    <p class="vg-creator">Seyyed Mahmoud Karimi</p>
+    <p class="vg-creator">Quran Recitation</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>

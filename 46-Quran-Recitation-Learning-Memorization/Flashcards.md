@@ -426,13 +426,13 @@
 
 **Q:** What is the context behind Surah Al-Kawthar?
 
-**A:** The Quraysh mocked the Prophet ﷺ as "al-abtar" (cut off) when his sons died. Allah replied: "We have given YOU abundance — your enemy is the one who will be cut off." His legacy now has 1.8 billion followers; his mockers are forgotten.
+**A:** The Quraysh mocked the Prophet (sallallahu alayhi wa aalihi wasallam) as "al-abtar" (cut off) when his sons died. Allah replied: "We have given YOU abundance — your enemy is the one who will be cut off." His legacy now has 1.8 billion followers; his mockers are forgotten.
 
 ## Module 7 — Juz Amma Part 2
 
 **Q:** Why did Umar ibn al-Khattab weep when Surah An-Nasr was recited?
 
-**A:** He understood it announced that the Prophet's ﷺ mission was complete and his departure was near. It was the last complete surah revealed. The correct response to victory: humility, tasbih, and istighfar — not pride.
+**A:** He understood it announced that the Prophet's (sallallahu alayhi wa aalihi wasallam) mission was complete and his departure was near. It was the last complete surah revealed. The correct response to victory: humility, tasbih, and istighfar — not pride.
 
 **Q:** What did the Quraysh offer that Surah Al-Kafirun was responding to?
 
@@ -448,7 +448,7 @@
 
 **Q:** What is the event described in Surah Al-Fil?
 
-**A:** The Year of the Elephant (~570 CE — the year Prophet ﷺ was born). Abraha, the Abyssinian governor, marched with war elephants to destroy the Kaaba. Allah sent birds with clay stones that destroyed the army.
+**A:** The Year of the Elephant (~570 CE — the year Prophet (sallallahu alayhi wa aalihi wasallam) was born). Abraha, the Abyssinian governor, marched with war elephants to destroy the Kaaba. Allah sent birds with clay stones that destroyed the army.
 
 ## Module 8 — Memorization (Hifz)
 
@@ -466,17 +466,17 @@
 
 **Q:** What is Talaqqi (تَلَقِّي)?
 
-**A:** Direct face-to-face transmission from teacher to student — the method by which the Quran has been transmitted unbroken since the Prophet ﷺ. A teacher catches Tajweed errors the student cannot hear themselves.
+**A:** Direct face-to-face transmission from teacher to student — the method by which the Quran has been transmitted unbroken since the Prophet (sallallahu alayhi wa aalihi wasallam). A teacher catches Tajweed errors the student cannot hear themselves.
 
 **Q:** What is an Ijazah (إِجَازَة)?
 
-**A:** A certificate of authorisation given when a teacher has heard the student recite accurately. It includes an isnad (chain) tracing back through teachers to the Prophet ﷺ himself.
+**A:** A certificate of authorisation given when a teacher has heard the student recite accurately. It includes an isnad (chain) tracing back through teachers to the Prophet (sallallahu alayhi wa aalihi wasallam) himself.
 
 ## Module 9 — Ayatul Kursi & Selected Surahs
 
-**Q:** Which verse is the greatest in the Quran according to the Prophet ﷺ?
+**Q:** Which verse is the greatest in the Quran according to the Prophet (sallallahu alayhi wa aalihi wasallam)?
 
-**A:** Ayatul Kursi (Al-Baqarah 2:255). The Prophet ﷺ confirmed this to Abu ibn Ka'b, congratulating him on his knowledge (Sahih Muslim).
+**A:** Ayatul Kursi (Al-Baqarah 2:255). The Prophet (sallallahu alayhi wa aalihi wasallam) confirmed this to Abu ibn Ka'b, congratulating him on his knowledge (Sahih Muslim).
 
 **Q:** What are the first two divine attributes in Ayatul Kursi?
 
@@ -488,7 +488,7 @@
 
 **Q:** Why is Surah Yasin called "the Heart of the Quran"?
 
-**A:** "Everything has a heart, and the heart of the Quran is Yasin" (Prophet ﷺ, Tirmidhi). It contains the Quran's essential pulse: prophethood, signs in creation, resurrection, and divine power (كُن فَيَكُون).
+**A:** "Everything has a heart, and the heart of the Quran is Yasin" (Prophet (sallallahu alayhi wa aalihi wasallam), Tirmidhi). It contains the Quran's essential pulse: prophethood, signs in creation, resurrection, and divine power (كُن فَيَكُون).
 
 **Q:** What four stories are in Surah Al-Kahf and what trials do they represent?
 
@@ -500,4 +500,4 @@
 
 **Q:** What is the virtue of reciting Surah Al-Mulk every night?
 
-**A:** It intercedes for its reciter in the grave, preventing punishment (Abu Dawud, Tirmidhi). The Prophet ﷺ reportedly never slept without reciting it (Ibn Masud).
+**A:** It intercedes for its reciter in the grave, preventing punishment (Abu Dawud, Tirmidhi). The Prophet (sallallahu alayhi wa aalihi wasallam) reportedly never slept without reciting it (Ibn Masud).

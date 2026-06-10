@@ -65,7 +65,7 @@ These five surahs together cover the complete theological framework of Islam: wh
 - Verse 3: He does not beget (no son/daughter) and was not born (no parent/origin)
 - Verse 4: Nothing is comparable to Him in any attribute
 
-**Why it equals one-third of the Quran:** The Prophet ﷺ said this surah equals one-third of the Quran (Sahih Bukhari), because the Quran deals with three topics — Islamic law, stories, and the knowledge of Allah's attributes — and this surah is entirely devoted to the third.
+**Why it equals one-third of the Quran:** The Prophet (sallallahu alayhi wa aalihi wasallam) said this surah equals one-third of the Quran (Sahih Bukhari), because the Quran deals with three topics — Islamic law, stories, and the knowledge of Allah's attributes — and this surah is entirely devoted to the third.
 
 **Tafseer (Al-Mizan):** Tabatabai explains that أَحَد (Ahad) is not the same as وَاحِد (Wahid). Wahid means "one" in the sense of "first in a sequence." Ahad is an absolute uniqueness that cannot be placed in any category or sequence — it describes a reality entirely its own.
 
@@ -101,12 +101,12 @@ These five surahs together cover the complete theological framework of Islam: wh
 | 4 | From the evil of those who blow into knots | النَّفَّاثَات = blowers; عُقَد = knots — referring to harmful magic |
 | 5 | From the evil of an envier when he envies | حَاسِد = envier; حَسَد = envy |
 
-**Al-Falaq and An-Naas together are called المُعَوِّذَتَان** (the two refuge surahs). The Prophet ﷺ recited them every night before sleeping, and after every prayer.
+**Al-Falaq and An-Naas together are called المُعَوِّذَتَان** (the two refuge surahs). The Prophet (sallallahu alayhi wa aalihi wasallam) recited them every night before sleeping, and after every prayer.
 
 **Three types of evil:**
 1. **Natural evil** (darkness, night dangers)
 2. **Supernatural evil** (knot-blowing — a reference to harmful practices)
-3. **Human evil** (envy — which the Prophet ﷺ identified as a real spiritual harm)
+3. **Human evil** (envy — which the Prophet (sallallahu alayhi wa aalihi wasallam) identified as a real spiritual harm)
 
 ---
 
@@ -175,7 +175,7 @@ These five surahs together cover the complete theological framework of Islam: wh
 | 2 | So pray to your Lord and sacrifice | صَلِّ = pray; انحَر = sacrifice |
 | 3 | Indeed, your enemy is the one cut off | شَانِئَك = your enemy/hater; الأَبتَر = the one who is cut off (without continuation) |
 
-**Context:** The enemies of the Prophet ﷺ mocked him when his sons died in infancy, calling him "al-abtar" (cut off, without heirs). Allah's response: "We have given YOU abundance — and it is your enemy who will be cut off." The prophecy proved true — 1.8 billion Muslims continue his legacy; his mockers are forgotten.
+**Context:** The enemies of the Prophet (sallallahu alayhi wa aalihi wasallam) mocked him when his sons died in infancy, calling him "al-abtar" (cut off, without heirs). Allah's response: "We have given YOU abundance — and it is your enemy who will be cut off." The prophecy proved true — 1.8 billion Muslims continue his legacy; his mockers are forgotten.
 
 **Al-Kawthar as the shortest surah:** Three verses — yet every verse contains complete meaning.
 

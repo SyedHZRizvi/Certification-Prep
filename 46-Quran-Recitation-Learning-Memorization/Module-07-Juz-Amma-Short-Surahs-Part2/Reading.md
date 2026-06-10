@@ -50,7 +50,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 | 2 | And you see the people entering Allah's religion in multitudes | أَفوَاجاً = in multitudes, in crowds |
 | 3 | Then exalt with praise of your Lord and ask His forgiveness — He is ever accepting of repentance | سَبِّح = glorify; استَغفِر = seek forgiveness; تَوَّاب = the ever-repentance-accepting |
 
-**Why this surah moved people to tears:** Ibn Abbas (the Prophet's cousin) narrated that when Umar ibn al-Khattab (ra) recited this surah to the Companions, he wept. They asked why. He said: "This surah tells the Prophet that his mission is complete — that he will depart soon." When a task is finished and victory comes, what a wise person does is glorify Allah and seek forgiveness — not celebrate themselves.
+**Why this surah moved people to tears:** Ibn Abbas (the Prophet's (sallallahu alayhi wa aalihi wasallam) cousin) narrated that when Umar ibn al-Khattab (ra) recited this surah to the Companions, he wept. They asked why. He said: "This surah tells the Prophet (sallallahu alayhi wa aalihi wasallam) that his mission is complete — that he will depart soon." When a task is finished and victory comes, what a wise person does is glorify Allah and seek forgiveness — not celebrate themselves.
 
 **The last of the complete surahs revealed:** An-Nasr was the last complete surah to be revealed. After it, no entire surah was revealed — only scattered verses.
 
@@ -93,7 +93,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 
 **Why the repetition?** Verses 2-3 speak to the present: "I don't worship what you worship now." Verses 4-5 speak to the future: "I will not be a worshipper..." This is not redundancy — it covers both present refusal and permanent commitment.
 
-**The context:** The Quraysh offered a deal to the Prophet ﷺ: "You worship our gods for one year, we will worship your God for one year — a compromise." This surah is the divine response: there is no compromise in the object of worship. Religious coexistence does not require worship exchange.
+**The context:** The Quraysh offered a deal to the Prophet (sallallahu alayhi wa aalihi wasallam): "You worship our gods for one year, we will worship your God for one year — a compromise." This surah is the divine response: there is no compromise in the object of worship. Religious coexistence does not require worship exchange.
 
 **The declaration of religious freedom:** Verse 6 is one of the clearest statements of religious non-coercion in any scripture: "For you is your religion, for me is mine." This is not indifference — it is clarity about the absolute distinction.
 
@@ -201,7 +201,7 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 | 4 | Pelting them with stones of hard clay | سِجِّيل = hard dried clay |
 | 5 | And He made them like consumed dry grass | عَصف مَأكُول = eaten/hollow straw |
 
-**The Year of the Elephant (570 CE):** This event occurred in the year the Prophet ﷺ was born. The Abyssinian governor Abraha marched toward Mecca with an army including war elephants, intending to destroy the Kaaba. According to the narration, swarms of birds dropped stones and the army was destroyed. Mecca and the Kaaba were preserved.
+**The Year of the Elephant (570 CE):** This event occurred in the year the Prophet (sallallahu alayhi wa aalihi wasallam) was born. The Abyssinian governor Abraha marched toward Mecca with an army including war elephants, intending to destroy the Kaaba. According to the narration, swarms of birds dropped stones and the army was destroyed. Mecca and the Kaaba were preserved.
 
 **The question format:** "Did you not see?" is a rhetorical question — it means "This is clearly visible history." The people of Mecca knew this event; it had just happened a generation before.
 
@@ -261,6 +261,6 @@ function certHubSetLang(l){try{localStorage.setItem('cert-hub-lang-pref',l);}cat
 
 ترجمہ: کیا آپ نے نہیں دیکھا آپ کے رب نے ہاتھی والوں کے ساتھ کیا کیا؟ کیا اس نے ان کی چال کو بے کار نہیں کردیا؟ اور ان پر پرندوں کے غول بھیجے جو انہیں پختہ مٹی کے پتھر مارتے تھے اور انہیں کھائی ہوئی گھاس جیسا کردیا؟
 
-ابرہہ کا ہاتھیوں کا لشکر — رسول اللہؐ کی ولادت کے سال کا واقعہ — اللہ نے کعبے کی حفاظت فرمائی۔
+ابرہہ کا ہاتھیوں کا لشکر — رسول اللہ صلی اللہ علیہ وآلہ وسلم کی ولادت کے سال کا واقعہ — اللہ نے کعبے کی حفاظت فرمائی۔
 
 </div>
