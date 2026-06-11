@@ -10,19 +10,19 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Introduction to the 10 Qira'at — What Are They?</p>
+    <p class="vg-title">Introduction to the 10 Qira'at — History and Overview</p>
     <p class="vg-creator">Quranic Sciences</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hafs+warsh+quran+recitation+differences+comparison" data-video-id="CAYhTSygBTs" target="_blank" rel="noopener">
-  <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+quran+recitation+obligations+rules+standards" data-video-id="pyVds2Wb5_s" target="_blank" rel="noopener">
+  <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Hafs vs Warsh — Side-by-Side Comparison</p>
+    <p class="vg-title">Tajweed Obligations — Rules of Proper Recitation</p>
     <p class="vg-creator">Tajweed Academy</p>
-    <p class="vg-duration">~20 min</p>
+    <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
@@ -36,22 +36,22 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hamzat+al+wasl+hamzat+al+qat+quran+tajweed+rule" data-video-id="jH5n9VP2JFE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hamzat+wasl+quran+tajweed+lesson+types+rules" data-video-id="y0jHYvR1rHE" target="_blank" rel="noopener">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Hamzat al-Wasl vs Hamzat al-Qat' — The Two Hamzas</p>
-    <p class="vg-creator">Tajweed Foundation</p>
+    <p class="vg-title">Hamzat al-Wasl — Lesson 4: Types and Application</p>
+    <p class="vg-creator">Hayat Quran</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+get+ijazah+quran+complete+guide+certification" data-video-id="p709MoM38X8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hafs+recitation+quran+lesson+series+practical" data-video-id="j06ln4G6oEA" target="_blank" rel="noopener">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">How to Obtain Your Ijazah — Complete Guide</p>
-    <p class="vg-creator">Quran Certification Institute</p>
+    <p class="vg-title">Hafs Recitation Series — Lesson 16: Practical Application</p>
+    <p class="vg-creator">Quran Recitation Institute</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
@@ -76,11 +76,11 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ibn+al-jazari+tajweed+poem+al-jazariyya+explanation" data-video-id="AueuzHSuWfg" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=al-jazariyya+tajweed+poem+waqf+ibtida+lesson" data-video-id="H4PgLsWRi1M" target="_blank" rel="noopener">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
-    <p class="vg-title">Al-Jazariyya — The Tajweed Poem of Ibn al-Jazari</p>
+    <p class="vg-title">Al-Jazariyyah — Tajweed Poem: Waqf and Ibtida'</p>
     <p class="vg-creator">Classical Tajweed</p>
     <p class="vg-duration">~25 min</p>
   </div>
@@ -94,11 +94,11 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=warsh+recitation+quran+al+fatiha+full+beautiful" data-video-id="8UDOp8SKIno" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+recitation+beautiful+tilawah+hafs+extended" data-video-id="ZQvqhPX_ppA" target="_blank" rel="noopener">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Warsh Recitation — Al-Fatiha and Short Surahs</p>
+    <p class="vg-title">Beautiful Quran Recitation — Extended Tilawah (Hafs)</p>
     <p class="vg-creator">Quran Recitation</p>
     <p class="vg-duration">~10 min</p>
   </div>
@@ -114,11 +114,11 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+common+mistakes+recitation+avoid+quran" data-video-id="68P6yTI3Pos" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=tajweed+lahn+khafi+common+mistakes+recitation+quran" data-video-id="68P6yTI3Pos" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Most Common Tajweed Mistakes — What to Avoid</p>
+    <p class="vg-title">Lahn al-Khafi — Subtle Recitation Errors to Avoid</p>
     <p class="vg-creator">Recitation Mastery</p>
     <p class="vg-duration">~20 min</p>
   </div>
@@ -134,11 +134,11 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hafs+asim+recitation+history+background+explanation" data-video-id="FFAgrR_VMa4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=10+qiraat+quran+specialized+instruction+arts+recitation" data-video-id="KFVDgEVJrhc" target="_blank" rel="noopener">
   <div class="vg-thumb">🕌<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Hafs 'an 'Asim — Historical Context and Dominance</p>
+    <p class="vg-title">10 Qira'at — Specialized Instruction Program</p>
     <p class="vg-creator">Qira'at Studies</p>
     <p class="vg-duration">~15 min</p>
   </div>
@@ -152,22 +152,22 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=10+qiraat+scholars+panel+discussion+advanced+quran" data-video-id="vCKAOZMw0wM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+hifz+ijazah+graduation+ceremony+islamic+seminary" data-video-id="KQZwxbP7koU" target="_blank" rel="noopener">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">10 Qira'at — Expert Panel Discussion</p>
-    <p class="vg-creator">Advanced Recitation Studies</p>
+    <p class="vg-title">Ijazah and Hifz Graduation — Seminary Ceremony</p>
+    <p class="vg-creator">Islamic Seminary</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ijazah+ceremony+quran+teacher+student+recitation+chain" data-video-id="kpbFecLnZL4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qiraat+sabah+seven+readings+quran+program+education" data-video-id="BQ4jmqGs_rU" target="_blank" rel="noopener">
   <div class="vg-thumb">🏅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Ijazah Ceremony — A Student Completes the Chain</p>
-    <p class="vg-creator">Ijazah Documentary</p>
+    <p class="vg-title">Qira'at Sab'ah — The Seven Readings (Program 1)</p>
+    <p class="vg-creator">Educational Broadcast</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
