@@ -119,7 +119,7 @@ Master the 10 Qira'at styles, recitation error science (Lahn), and the complete 
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Lahn al-Khafi — Subtle Recitation Errors to Avoid</p>
-    <p class="vg-creator">Recitation Mastery</p>
+    <p class="vg-creator">Quran Academy</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>

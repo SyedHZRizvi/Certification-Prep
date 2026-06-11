@@ -29,7 +29,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Surah Al-Ma'un — Social Justice and the Test of Character</p>
-    <p class="vg-creator">Understand Quran Academy</p>
+    <p class="vg-creator">Quran Studies</p>
     <p class="vg-duration">28 min</p>
   </div>
 </a>

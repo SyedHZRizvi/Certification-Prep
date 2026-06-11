@@ -76,7 +76,7 @@ Use these videos to deepen your understanding of the Arabic text, scholarly tran
 
 <div class="vg-grid" markdown="0">
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=word+by+word+Quran+Arabic+analysis+methodology+bayyinah+grammar" data-video-id="DsssFx4GGQw" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=word+by+word+Quran+Arabic+analysis+methodology+quran+tafseer+grammar" data-video-id="DsssFx4GGQw" target="_blank" rel="noopener">
     <div class="vg-card-body">
       <div class="vg-card-tag">Optional</div>
       <h3>Word-by-Word Quran Analysis — Methodology</h3>

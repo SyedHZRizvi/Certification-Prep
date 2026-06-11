@@ -79,7 +79,7 @@
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Surah Yasin & Al-Mulk — Beautiful Recitation</p>
-    <p class="vg-creator">Mishary Rashid Al-Afasy</p>
+    <p class="vg-creator">Quran Recitation</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>

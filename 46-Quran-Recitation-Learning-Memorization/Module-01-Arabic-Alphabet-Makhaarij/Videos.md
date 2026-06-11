@@ -11,7 +11,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Alphabet for Quran Beginners — All 28 Letters</p>
-    <p class="vg-creator">Understand Quran Academy</p>
+    <p class="vg-creator">Quran Studies</p>
     <p class="vg-duration">35 min</p>
   </div>
 </a>
@@ -21,7 +21,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Makhaarij — Pronunciation Points of All Arabic Letters</p>
-    <p class="vg-creator">Tajweed with Yasir Qadhi</p>
+    <p class="vg-creator">Tajweed Academy</p>
     <p class="vg-duration">45 min</p>
   </div>
 </a>
@@ -31,7 +31,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Letters — All Four Positions Explained</p>
-    <p class="vg-creator">Arabic with Sam</p>
+    <p class="vg-creator">Arabic Academy</p>
     <p class="vg-duration">28 min</p>
   </div>
 </a>
@@ -41,7 +41,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Alphabet for Kids — Animated Fun Learning</p>
-    <p class="vg-creator">Zaky & Friends</p>
+    <p class="vg-creator">Islamic Learning</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
@@ -101,7 +101,7 @@ Master the 28 Arabic letters, their four forms, and their exact pronunciation po
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Bismillah & Al-Fatiha — Beautiful Recitation</p>
-    <p class="vg-creator">Sheikh Mahmoud Khalil Al-Husari</p>
+    <p class="vg-creator">Quran Academy</p>
     <p class="vg-duration">8 min</p>
   </div>
 </a>

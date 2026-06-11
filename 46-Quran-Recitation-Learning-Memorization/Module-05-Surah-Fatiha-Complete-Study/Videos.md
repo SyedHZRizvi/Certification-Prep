@@ -19,7 +19,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Surah Al-Fatiha — Full Translation and Meaning</p>
-    <p class="vg-creator">Understand Quran Academy</p>
+    <p class="vg-creator">Quran Studies</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>
@@ -79,7 +79,7 @@
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Surah Al-Fatiha — Beautiful Recitation</p>
-    <p class="vg-creator">Sheikh Abdur-Rahman As-Sudais</p>
+    <p class="vg-creator">Quran Academy</p>
     <p class="vg-duration">5 min</p>
   </div>
 </a>

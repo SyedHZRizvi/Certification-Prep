@@ -29,7 +29,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Surah Al-Kawthar — Meaning, Context and Tafseer</p>
-    <p class="vg-creator">Understand Quran</p>
+    <p class="vg-creator">Quran Studies</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
@@ -39,7 +39,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Surah Al-Asr — Four Conditions for Human Success</p>
-    <p class="vg-creator">Nouman Ali Khan / Bayyinah</p>
+    <p class="vg-creator">Quranic Studies</p>
     <p class="vg-duration">30 min</p>
   </div>
 </a>
@@ -79,7 +79,7 @@
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Juz Amma Surahs — Beautiful Recitation</p>
-    <p class="vg-creator">Mishary Rashid Al-Afasy</p>
+    <p class="vg-creator">Quran Recitation</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>

@@ -39,7 +39,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Idgham — Merging Noon Into 6 Letters</p>
-    <p class="vg-creator">Tajweed with Yasir Qadhi</p>
+    <p class="vg-creator">Tajweed Academy</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>

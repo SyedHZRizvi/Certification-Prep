@@ -21,7 +21,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Sukoon, Shaddah & Tanween — Complete Lesson</p>
-    <p class="vg-creator">Understand Quran Academy</p>
+    <p class="vg-creator">Quran Studies</p>
     <p class="vg-duration">30 min</p>
   </div>
 </a>
@@ -51,7 +51,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Long vs Short Vowels in Arabic — Madd Introduction</p>
-    <p class="vg-creator">Arabic with Yasir</p>
+    <p class="vg-creator">Arabic Learning</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
@@ -61,7 +61,7 @@ Master the vowel marks of Quranic Arabic through these focused video lessons.
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">زَبَر زِیر پِیش — قرآن سیکھیں (Urdu Lesson)</p>
-    <p class="vg-creator">Quran Seekers Urdu</p>
+    <p class="vg-creator">Quran Academy</p>
     <p class="vg-duration">22 min</p>
   </div>
 </a>
