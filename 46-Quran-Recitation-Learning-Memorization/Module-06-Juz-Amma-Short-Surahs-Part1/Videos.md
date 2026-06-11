@@ -44,12 +44,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+ikhlas+equals+third+quran+hadith+explanation" data-video-id="GqWtMWZkhR0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+ikhlas+equals+third+quran+hadith+explanation" data-video-id="sjlGFkDVUwI" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Why Surah Ikhlas Equals One-Third of the Quran</p>
-    <p class="vg-creator">Islamic Scholars</p>
+    <p class="vg-creator">Quran Academy</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
