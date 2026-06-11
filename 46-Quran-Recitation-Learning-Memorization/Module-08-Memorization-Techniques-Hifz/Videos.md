@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+memorize+quran+hifz+techniques+step+by+step+beginners" data-video-id="y15xgg5uVB4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+memorize+quran+hifz+techniques+step+by+step+beginners" data-video-id="FvBFglXheMM" target="_blank" rel="noopener">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+quran+memorization+review+system+murajaah" data-video-id="o3ffviPWFtM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=spaced+repetition+quran+memorization+review+system+murajaah" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
   <div class="vg-thumb">🔁<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+memorization+kids+children+techniques+fun+easy" data-video-id="KL5eeLXG0Vo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+memorization+kids+children+techniques+fun+easy" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
   <div class="vg-thumb">🧒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=fajr+morning+memorization+quran+best+time+brain+science" data-video-id="py_ArP1vkRA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=fajr+morning+memorization+quran+best+time+brain+science" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
   <div class="vg-thumb">🌅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+memorization+mistakes+avoid+hifz+tips" data-video-id="Ot0b9wNWdNM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+memorization+mistakes+avoid+hifz+tips" data-video-id="FvBFglXheMM" target="_blank" rel="noopener">
   <div class="vg-thumb">⚠️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+teacher+importance+ijazah+talaqqi+chain+transmission" data-video-id="bKwucwZzDOE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=quran+teacher+importance+ijazah+talaqqi+chain+transmission" data-video-id="aKi0Va6N3ek" target="_blank" rel="noopener">
   <div class="vg-thumb">🏫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=adult+quran+memorization+how+to+start+hifz+older" data-video-id="0CcoA4BjhYw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=adult+quran+memorization+how+to+start+hifz+older" data-video-id="jZAWRuaNHzk" target="_blank" rel="noopener">
   <div class="vg-thumb">👨‍🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,7 +74,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+quran+hifz+memorization+repetition+audio" data-video-id="4r5ArEJMxpQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+quran+hifz+memorization+repetition+audio" data-video-id="bOnLaHbQpbM" target="_blank" rel="noopener">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

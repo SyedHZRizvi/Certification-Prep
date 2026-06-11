@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ayatul+kursi+meaning+explanation+tafseer+greatest+verse" data-video-id="bgkSBJVz5M4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ayatul+kursi+meaning+explanation+tafseer+greatest+verse" data-video-id="tGhl9AoB2Vk" target="_blank" rel="noopener">
   <div class="vg-thumb">👑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+yasin+complete+recitation+tafseer+heart+quran" data-video-id="x3GCQBWg2Ic" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+yasin+complete+recitation+tafseer+heart+quran" data-video-id="e2kdHDHGrq0" target="_blank" rel="noopener">
   <div class="vg-thumb">💚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+mulk+tafseer+meaning+explanation+protect+grave" data-video-id="GnC2GyAKKZs" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+mulk+tafseer+meaning+explanation+protect+grave" data-video-id="_3HPCkGrRU8" target="_blank" rel="noopener">
   <div class="vg-thumb">🌙<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kahf+friday+four+stories+meaning+tafseer" data-video-id="xQMyciTTbKQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kahf+friday+four+stories+meaning+tafseer" data-video-id="Zt8fEYwXooY" target="_blank" rel="noopener">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=ayatul+kursi+memorization+learning+word+by+word" data-video-id="i__Qdmf_hI4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ayatul+kursi+memorization+learning+word+by+word" data-video-id="VgFtJNLI8yg" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kahf+ten+verses+protection+dajjal+why+friday" data-video-id="y6seqamkecc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+kahf+ten+verses+protection+dajjal+why+friday" data-video-id="u9uvyMRKACA" target="_blank" rel="noopener">
   <div class="vg-thumb">🛡️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+yasin+benefits+when+recite+dying+thursday+night" data-video-id="3Q2_x6x3jag" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+yasin+benefits+when+recite+dying+thursday+night" data-video-id="5fxWWORPsao" target="_blank" rel="noopener">
   <div class="vg-thumb">🌿<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -74,7 +74,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+yasin+mulk+beautiful+recitation" data-video-id="QSlJdW7jnvc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=mahmoud+karimi+surah+yasin+mulk+beautiful+recitation" data-video-id="8aG_4o3Eekk" target="_blank" rel="noopener">
   <div class="vg-thumb">⭐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>

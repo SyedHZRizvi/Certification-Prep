@@ -4,7 +4,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+tajweed+5+letters+echo+bounce+quran" data-video-id="thu6eZ-AeOA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+tajweed+5+letters+echo+bounce+quran" data-video-id="pVpxljwjWCs" target="_blank" rel="noopener">
   <div class="vg-thumb">🔔<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -14,7 +14,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=meem+sakin+rules+ikhfa+idgham+izhar+shafawi+tajweed" data-video-id="OuZYPCieQ4k" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=meem+sakin+rules+ikhfa+idgham+izhar+shafawi+tajweed" data-video-id="BTArIbCP2_A" target="_blank" rel="noopener">
   <div class="vg-thumb">👄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -24,7 +24,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=waqf+stopping+rules+quran+marks+symbols+explained" data-video-id="Ga7PCcwvpcI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=waqf+stopping+rules+quran+marks+symbols+explained" data-video-id="L5xovSYbYGU" target="_blank" rel="noopener">
   <div class="vg-thumb">🚦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -34,7 +34,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=lam+tafkheem+tarqeeq+thick+thin+allah+tajweed" data-video-id="qvAgWYRcF9g" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=lam+tafkheem+tarqeeq+thick+thin+allah+tajweed" data-video-id="ry-Jg786y1k" target="_blank" rel="noopener">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -44,7 +44,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=raa+tafkheem+tarqeeq+thick+thin+ra+tajweed+rules" data-video-id="3SON0cJdGGA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=raa+tafkheem+tarqeeq+thick+thin+ra+tajweed+rules" data-video-id="PxX8GvC0w7Y" target="_blank" rel="noopener">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -54,7 +54,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+kubra+sughra+difference+verse+end+quran" data-video-id="eNiXAXpNkPY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qalqalah+kubra+sughra+difference+verse+end+quran" data-video-id="pVpxljwjWCs" target="_blank" rel="noopener">
   <div class="vg-thumb">🔊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=hamza+wasl+qat+connection+stopping+tajweed+quran" data-video-id="kHuL6vCG6Tc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hamza+wasl+qat+connection+stopping+tajweed+quran" data-video-id="y0jHYvR1rHE" target="_blank" rel="noopener">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
