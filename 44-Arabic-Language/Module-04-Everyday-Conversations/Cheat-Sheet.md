@@ -50,7 +50,7 @@
 | مَاشَاءَ اللّٰه | What God has willed (admiration) |
 | أَسْتَغْفِرُ اللّٰه | I seek God's forgiveness |
 | جَزَاكَ اللّٰهُ خَيْرًا | May God reward you with good |
-| صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّم | May God's peace be upon him |
+| صَلَّى اللّٰهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ | May God's blessings and peace be upon him and his family |
 | تَوَكَّلْتُ عَلَى اللّٰه | I put my trust in God |
 
 ---

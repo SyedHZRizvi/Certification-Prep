@@ -122,7 +122,7 @@ Seven bilingual dialogues covering real-world Arabic situations. Each dialogue i
 | مَاشَاءَ اللّٰه | What God has willed (expressing admiration) | ماشاء اللہ |
 | أَسْتَغْفِرُ اللّٰه | I seek forgiveness from God | استغفر اللہ |
 | جَزَاكَ اللّٰهُ خَيْرًا | May God reward you with good | اللہ آپ کو جزائے خیر دے |
-| صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّم | May God's blessings and peace be upon him | صلی اللہ علیہ وسلم |
+| صَلَّى اللّٰهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ | May God's blessings and peace be upon him and his family | صلی اللہ علیہ وآلہ وسلم |
 
 ---
 

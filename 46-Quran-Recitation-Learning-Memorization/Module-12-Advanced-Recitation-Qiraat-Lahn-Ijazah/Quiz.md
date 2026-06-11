@@ -8,7 +8,7 @@ title: "Module 12 Quiz — Advanced Recitation: Qira'at, Lahn & Ijazah"
 What does the term "Qira'at" (قراءات) refer to in Quranic sciences?
 
 A. Different translations of the Quran in Arabic  
-B. Authenticated recitation styles with unbroken chains of transmission back to the Prophet ﷺ  
+B. Authenticated recitation styles with unbroken chains of transmission back to the Prophet (sallallahu alayhi wa aalihi wasallam)  
 C. Regional dialects that were used to write different versions of the Quran  
 D. Optional Tajweed rules that apply in certain countries  
 
@@ -138,7 +138,7 @@ D. This only applies in the Warsh recitation
 What is an Ijazah in the context of Quranic recitation?
 
 A. A prayer recited at the beginning of a Khatm  
-B. A formal authorization from a certified teacher with a chain of transmission back to the Prophet ﷺ  
+B. A formal authorization from a certified teacher with a chain of transmission back to the Prophet (sallallahu alayhi wa aalihi wasallam)  
 C. A certificate for completing a Quran memorization course online  
 D. The name for the recitation session where mistakes are corrected  
 
@@ -148,7 +148,7 @@ D. The name for the recitation session where mistakes are corrected
 What is the Silsilah (سِلسِلَة) contained in an Ijazah certificate?
 
 A. A list of the mistakes made during the 'Ardh session  
-B. The names of all teachers in the chain from the student back to the Prophet ﷺ  
+B. The names of all teachers in the chain from the student back to the Prophet (sallallahu alayhi wa aalihi wasallam)  
 C. A schedule for completing the memorization of the Quran  
 D. A list of the 10 recognized Qira'at  
 
@@ -266,7 +266,7 @@ D. There is no practical benefit — only scholars need this knowledge
 
 ## 🎯 Answers + Explanations
 
-**Q1 — B** · Qira'at are authenticated recitation styles, each with a complete Isnad chain back to the Prophet ﷺ. They are not translations or regional dialects.
+**Q1 — B** · Qira'at are authenticated recitation styles, each with a complete Isnad chain back to the Prophet (sallallahu alayhi wa aalihi wasallam). They are not translations or regional dialects.
 
 **Q2 — C** · Classical scholarship recognizes 10 Qira'at, though 7 are considered Mutawatir (mass-transmitted). All 10 are authentic.
 
@@ -292,9 +292,9 @@ D. There is no practical benefit — only scholars need this knowledge
 
 **Q13 — B** · The Alif in اللَّهِ has Hamzat al-Wasl. When preceded by بِسْمِ in the same breath, the Wasl Hamza drops and you get bismillah, not bismi-il-lah.
 
-**Q14 — B** · An Ijazah is a formal authorization from a certified teacher with a named chain of transmission back to the Prophet ﷺ.
+**Q14 — B** · An Ijazah is a formal authorization from a certified teacher with a named chain of transmission back to the Prophet (sallallahu alayhi wa aalihi wasallam).
 
-**Q15 — B** · The Silsilah is the chain of names: student → teacher → their teacher → ... → the Prophet ﷺ. This documented lineage is the heart of the Ijazah system.
+**Q15 — B** · The Silsilah is the chain of names: student → teacher → their teacher → ... → the Prophet (sallallahu alayhi wa aalihi wasallam). This documented lineage is the heart of the Ijazah system.
 
 **Q16 — B** · The 'Ardh is the formal recitation of the complete Quran to the authorizing sheikh. It can take many sessions and the sheikh corrects errors throughout.
 

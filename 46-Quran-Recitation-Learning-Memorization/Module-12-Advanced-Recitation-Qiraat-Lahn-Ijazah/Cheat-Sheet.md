@@ -73,7 +73,7 @@ title: "Module 12 Cheat Sheet — Advanced Recitation: Qira'at, Lahn & Ijazah"
 | **2** | Master Tajweed in target Qira'ah | Zero Lahn al-Jali; minimal Lahn al-Khafi |
 | **3** | Find a sheikh with an authenticated Ijazah | Mosque imam, Dar al-Quran, Al-Azhar graduates, online certified platforms |
 | **4** | Perform the 'Ardh (عرض) — recite the complete Quran to the sheikh | Multiple sessions; sheikh corrects; you refine |
-| **5** | Receive Ijazah certificate with Silsilah | Chain of names from you back to the Prophet ﷺ |
+| **5** | Receive Ijazah certificate with Silsilah | Chain of names from you back to the Prophet (sallallahu alayhi wa aalihi wasallam) |
 
 ---
 
@@ -92,6 +92,6 @@ title: "Module 12 Cheat Sheet — Advanced Recitation: Qira'at, Lahn & Ijazah"
 
 Every Ijazah certificate contains the Silsilah (chain of transmission):
 
-**You → Your Sheikh → Their Sheikh → ... → The Prophet ﷺ**
+**You → Your Sheikh → Their Sheikh → ... → The Prophet (sallallahu alayhi wa aalihi wasallam)**
 
 Contemporary shortest chains: approximately **27–32 links** back to the Prophet. The Quran is the only text in the world with this kind of living, documented, person-to-person transmission chain still active after 1,400 years.

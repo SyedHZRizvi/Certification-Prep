@@ -4,6 +4,10 @@
 .lang-ur h1{font-size:1.8em;}
 .lang-ur h2{font-size:1.5em;}
 .lang-ur h3{font-size:1.25em;}
+.vg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:12px 0 24px;}
+.vg-card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .18s,box-shadow .18s,border-color .18s;}.vg-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px -6px rgba(0,0,0,.14);border-color:#34d399;}
+.vg-thumb{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#064e3b,#065f46);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;}.vg-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.3);font-size:36px;opacity:0;transition:opacity .18s;}.vg-card:hover .vg-play{opacity:1;}
+.vg-meta{padding:8px 12px;}.vg-title{font-weight:700;font-size:13px;line-height:1.35;color:#0f172a;margin:0 0 2px;}.vg-sub{font-size:11px;color:#64748b;margin:0;}
 </style>
 <div class="lang-switcher" markdown="0" style="background:linear-gradient(135deg,#064e3b,#065f46);border-radius:12px;padding:1.25rem;margin:0 0 2rem;text-align:center;box-shadow:0 4px 16px rgba(16,185,129,0.3);">
   <p style="color:#d1fae5;font-size:1rem;font-weight:600;margin:0 0 0.85rem;">🌐 Choose your learning language / اپنی زبان منتخب کریں</p>
@@ -292,6 +296,176 @@ Both are Quran. The meaning is the same; the grammatical structure differs.
 
 ---
 
+## 🎧 Listening Gallery — Hear the 10 Qira'at in Practice
+
+Written descriptions of Qira'at differences tell you *what* varies — listening shows you *how*. Click any card to hear a sample recitation in that style. Two examples are provided per Qira'at to help you hear the differences across different reciters and surahs.
+
+<div class="vg-grid" markdown="0">
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=warsh+nafi+quran+recitation+sample+al-fatiha" data-video-id="cXU81zxPxho" target="_blank" rel="noopener">
+  <div class="vg-thumb">①<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">① Nafi' — Warsh Riwayah (Sample 1)</p>
+    <p class="vg-sub">Elongated Madds · Facilitated Hamzas · مَالِكِ</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=qalun+nafi+quran+recitation+sample" data-video-id="gAwDYry82SE" target="_blank" rel="noopener">
+  <div class="vg-thumb">①<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">① Nafi' — Qalun Riwayah (Sample 2)</p>
+    <p class="vg-sub">Qalun-specific Madd rules · Hamza treatment</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ibn+kathir+quran+recitation+mecca+style+sample" data-video-id="Ta-a38sQEeM" target="_blank" rel="noopener">
+  <div class="vg-thumb">②<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">② Ibn Kathir — Recitation Demo (Sample 1)</p>
+    <p class="vg-sub">Minimal Munfasil · Mekki style</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ibn+kathir+qiraat+full+surah+recitation" data-video-id="U32h7KIxJ5A" target="_blank" rel="noopener">
+  <div class="vg-thumb">②<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">② Ibn Kathir — Full Surah Listen (Sample 2)</p>
+    <p class="vg-sub">Short Madd al-Munfasil clearly audible</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=susi+abu+amr+quran+recitation+sample" data-video-id="mL1bg1ENJjk" target="_blank" rel="noopener">
+  <div class="vg-thumb">③<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">③ Abu 'Amr — Susi Riwayah (Sample 1)</p>
+    <p class="vg-sub">Idgham Kabir · Susi's distinctive merging</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=duri+abu+amr+quran+recitation+sample" data-video-id="u4STWi1VlgY" target="_blank" rel="noopener">
+  <div class="vg-thumb">③<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">③ Abu 'Amr — Duri Riwayah (Sample 2)</p>
+    <p class="vg-sub">Duri-specific vowel rules</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hisham+ibn+amir+quran+recitation+sample+sham" data-video-id="Q0yd5_uAkC0" target="_blank" rel="noopener">
+  <div class="vg-thumb">④<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">④ Ibn 'Amir — Hisham Riwayah (Sample 1)</p>
+    <p class="vg-sub">Shami style · Longer pauses</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=ibn+dhakwan+ibn+amir+quran+recitation+sample" data-video-id="c5T77Ou1lnk" target="_blank" rel="noopener">
+  <div class="vg-thumb">④<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">④ Ibn 'Amir — Ibn Dhakwan Riwayah (Sample 2)</p>
+    <p class="vg-sub">Ibn Dhakwan pronunciation distinctions</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hafs+asim+quran+recitation+sample+beautiful" data-video-id="aCet-57DvQI" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑤<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑤ 'Asim — Hafs Riwayah (Sample 1)</p>
+    <p class="vg-sub">World's most-used recitation style</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hafs+asim+quran+recitation+second+sample+demo" data-video-id="6jE7S699bDw" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑤<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑤ 'Asim — Hafs Riwayah (Sample 2)</p>
+    <p class="vg-sub">Extended Madd al-Munfasil 4–5 beats</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hamzah+quran+recitation+style+sample+kufic" data-video-id="VeftQwEuZC4" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑥<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑥ Hamzah — Recitation Sample (Sample 1)</p>
+    <p class="vg-sub">Takhfif al-Hamza · Long Madds</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=khalsa+hamzah+qiraat+recitation+sample" data-video-id="M75p4zdFgHc" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑥<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑥ Hamzah — Khalsa Riwayah (Sample 2)</p>
+    <p class="vg-sub">Khalsa-specific Hamza facilitation</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=al-kisai+quran+recitation+kufic+style+sample" data-video-id="fHcYoWdD7Y0" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑦<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑦ Al-Kisa'i — Recitation Demo (Sample 1)</p>
+    <p class="vg-sub">Imalah · Idgham al-Mutamathhilayn</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=al-kisai+qiraat+distinctive+features+comparison" data-video-id="xWEeNA6BG4w" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑦<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑦ Al-Kisa'i — Distinctive Features (Sample 2)</p>
+    <p class="vg-sub">Imalah Kubra — the tilted vowel sound</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=abu+jafar+quran+recitation+medina+style+sample" data-video-id="7itCsQgGqV4" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑧<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑧ Abu Ja'far — Recitation Sample (Sample 1)</p>
+    <p class="vg-sub">Medina style · Nun and Meem Mushaddad</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=abu+jafar+qiraat+key+differences+recitation" data-video-id="AESnuWuz2mY" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑧<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑧ Abu Ja'far — Key Differences (Sample 2)</p>
+    <p class="vg-sub">Unique letters and prolongation rules</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=yaqub+quran+recitation+basra+style+sample" data-video-id="1Gp12x0RzYQ" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑨<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑨ Ya'qub — Recitation Sample (Sample 1)</p>
+    <p class="vg-sub">Basra tradition · Ruwais and Rawh</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=yaqub+qiraat+distinctive+style+comparison" data-video-id="8F1MLQR8ArY" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑨<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑨ Ya'qub — Distinctive Style (Sample 2)</p>
+    <p class="vg-sub">Waqf and Ibtida' differences</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=khalaf+al-bazzar+quran+recitation+sample+10+qiraat" data-video-id="on56_7L_DUU" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑩<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑩ Khalaf al-Bazzar — Style Overview (Sample 1)</p>
+    <p class="vg-sub">10th Qira'at · Rarest authenticated style</p>
+  </div>
+</a>
+
+<a class="vg-card" href="https://www.youtube.com/results?search_query=khalaf+bazzar+qiraat+features+recitation+demo" data-video-id="M75p4zdFgHc" target="_blank" rel="noopener">
+  <div class="vg-thumb">⑩<div class="vg-play">▶</div></div>
+  <div class="vg-meta">
+    <p class="vg-title">⑩ Khalaf al-Bazzar — Recitation Demo (Sample 2)</p>
+    <p class="vg-sub">Comparison with Hamzah — same teacher, two roads</p>
+  </div>
+</a>
+
+</div>
+
+---
+
 ## 🚫 Section 2 — Al-Lahn: Recitation Error Classification
 
 Every Tajweed tradition classifies errors in recitation into two categories. Understanding these protects both the correctness and the sincerity of your recitation.
@@ -487,13 +661,13 @@ With Module 12 complete, you have covered the full curriculum of this course. Re
 
 ایک قرآن کا طالب علم لاہور سے قاہرہ پڑھنے جاتا ہے۔ پہلے ہی روز وہ قرآن کی مجلس میں بیٹھتا ہے اور حیران ہو جاتا ہے: شیخ سورۃ الفاتحہ کچھ اس طرح تلاوت کرتے ہیں جیسے اس نے کبھی نہیں سنا تھا۔ الفاظ وہی ہیں، مطلب وہی ہے — لیکن بعض آوازیں مختلف ہیں۔
 
-کلاس کے بعد شیخ مسکراتے ہوئے کہتے ہیں: *"جو آپ نے سنا وہ وَرش عَن نَافِع ہے — شمالی افریقہ کی روایت۔ جو آپ نے سیکھا وہ حَفص عَن عَاصِم ہے — پاکستان، ہندوستان اور مشرق وسطیٰ کی روایت۔ دونوں قرآن ہیں۔ دونوں مستند ہیں۔ دونوں کا سلسلہ براہ راست حضور اکرم ﷺ تک پہنچتا ہے۔"*
+کلاس کے بعد شیخ مسکراتے ہوئے کہتے ہیں: *"جو آپ نے سنا وہ وَرش عَن نَافِع ہے — شمالی افریقہ کی روایت۔ جو آپ نے سیکھا وہ حَفص عَن عَاصِم ہے — پاکستان، ہندوستان اور مشرق وسطیٰ کی روایت۔ دونوں قرآن ہیں۔ دونوں مستند ہیں۔ دونوں کا سلسلہ براہ راست حضور اکرم صلى الله عليه وآله وسلم تک پہنچتا ہے۔"*
 
 ---
 
 ## 📖 سیکشن ۱ — القراءات العشر: دس مستند تلاوتی روایات
 
-قرآن سات مختلف اسلوبوں (احرف) میں نازل ہوا جیسا کہ صحیح احادیث میں آیا ہے۔ علماء نے بعد میں ان کو دس مستند قراءات میں مرتب کیا، ہر ایک کی سند براہ راست حضور اکرم ﷺ تک پہنچتی ہے۔
+قرآن سات مختلف اسلوبوں (احرف) میں نازل ہوا جیسا کہ صحیح احادیث میں آیا ہے۔ علماء نے بعد میں ان کو دس مستند قراءات میں مرتب کیا، ہر ایک کی سند براہ راست حضور اکرم صلى الله عليه وآله وسلم تک پہنچتی ہے۔
 
 | # | امام | خطہ |
 |---|------|-----|
@@ -520,7 +694,7 @@ With Module 12 complete, you have covered the full curriculum of this course. Re
 
 ## 🎓 سیکشن ۳ — اجازہ: مکمل راہنمائی
 
-**اجازہ** تلاوت کی باضابطہ سند ہے جس میں شیخ سے شیخ کا سلسلہ نبی اکرم ﷺ تک پہنچتا ہے۔
+**اجازہ** تلاوت کی باضابطہ سند ہے جس میں شیخ سے شیخ کا سلسلہ نبی اکرم صلى الله عليه وآله وسلم تک پہنچتا ہے۔
 
 مراحل: حفظِ قرآن ← تجوید میں مہارت ← سندِ اجازہ رکھنے والے شیخ کی تلاش ← پوری قرآن ان کے سامنے پڑھنا (عَرض) ← سند حاصل کرنا
 
@@ -530,13 +704,13 @@ With Module 12 complete, you have covered the full curriculum of this course. Re
 
 | موضوع | کلیدی بات |
 |-------|-----------|
-| القراءات العشر | دس مستند روایات، سب کی سند نبی ﷺ تک |
+| القراءات العشر | دس مستند روایات، سب کی سند نبی صلى الله عليه وآله وسلم تک |
 | حفص عن عاصم | دنیا کے ۹۵٪ مسلمان، پاکستان و مشرق وسطیٰ |
 | ورش عن نافع | شمالی افریقہ، مغربی افریقہ |
 | لحن جلی | واضح غلطی — ممنوع |
 | لحن خفی | تجوید کی خلاف ورزی — مکروہ |
 | ہمزہ وصل | سابقہ لفظ سے ملانے پر خاموش |
 | ہمزہ قطع | ہمیشہ ادا ہوتی ہے |
-| اجازہ | تلاوت کی سند با سلسلہ اسناد تا حضور ﷺ |
+| اجازہ | تلاوت کی سند با سلسلہ اسناد تا حضور صلى الله عليه وآله وسلم |
 
 </div>

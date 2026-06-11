@@ -598,7 +598,7 @@
 
 **Q:** What are the Qira'at al-Ashr (القراءات العشر) and why do they all count as Quran?
 
-**A:** The 10 authenticated recitation styles — each with an unbroken chain (Isnad) back to the Prophet ﷺ. All are mutawatir (mass-transmitted). They reflect the 7 Ahruf (authentic modes of revelation). Differences are in vowel lengths, certain pronunciations, and some word forms — none change the meaning of Islamic doctrine.
+**A:** The 10 authenticated recitation styles — each with an unbroken chain (Isnad) back to the Prophet (sallallahu alayhi wa aalihi wasallam). All are mutawatir (mass-transmitted). They reflect the 7 Ahruf (authentic modes of revelation). Differences are in vowel lengths, certain pronunciations, and some word forms — none change the meaning of Islamic doctrine.
 
 **Q:** Who is the source of Hafs 'an 'Asim and where is it most used?
 
@@ -626,7 +626,7 @@
 
 **Q:** What is the Silsilah (سِلسِلَة) in an Ijazah?
 
-**A:** The chain of names: student → their teacher → their teacher's teacher → ... → the Prophet ﷺ. Contemporary Silsilah chains are approximately 27-32 links long. This makes the Quran the only text in the world with an unbroken, documented, person-to-person transmission chain active after 1,400 years.
+**A:** The chain of names: student → their teacher → their teacher's teacher → ... → the Prophet (sallallahu alayhi wa aalihi wasallam). Contemporary Silsilah chains are approximately 27-32 links long. This makes the Quran the only text in the world with an unbroken, documented, person-to-person transmission chain active after 1,400 years.
 
 **Q:** What is the highest Ijazah credential in Quranic sciences?
 
