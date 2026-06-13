@@ -22,52 +22,52 @@
 ## ⭐ Essential Watching (~60 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+tutorial+2024+complete+beginners+guide+search+campaigns" target="_blank" rel="noopener" data-video-id="tSzdRdRKLAI">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+tutorial+complete+beginners+guide+search+campaigns+surfside+ppc" target="_blank" rel="noopener" data-video-id="UN0ZDfs2Jgw">
     <div class="vg-thumb"><span>🎯</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Google Ads Tutorial 2024 — Complete Beginner's Guide to Search Campaigns</p>
+      <p class="vg-title">Step-By-Step Google Ads Tutorial for Beginners — Full Campaign Build</p>
       <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 45 min · Full campaign build from scratch, account structure, bidding</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+campaign+structure+ad+groups+keywords+explained" target="_blank" rel="noopener" data-video-id="oCGSGmS84OQ">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+search+campaign+structure+account+ad+group+keyword+explained" target="_blank" rel="noopener" data-video-id="5TeJNQpaaS0">
     <div class="vg-thumb"><span>🏗️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Google Ads Campaign Structure Explained — Account, Campaign, Ad Group, Keyword</p>
-      <p class="vg-creator">Adam Erhart</p>
+      <p class="vg-title">Google Ads Search Campaign Structure — How to Create Successful Campaigns</p>
+      <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 14 min · Four-level hierarchy, STAG framework, ad group best practices</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=keyword+match+types+google+ads+broad+phrase+exact+2024" target="_blank" rel="noopener" data-video-id="r3j6PDlTFbY">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=keyword+match+types+google+ads+broad+phrase+exact+match+tutorial" target="_blank" rel="noopener" data-video-id="pi4h5A70Z9Y">
     <div class="vg-thumb"><span>🔑</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Keyword Match Types Explained — Broad, Phrase, and Exact Match (2024)</p>
-      <p class="vg-creator">Neil Patel</p>
+      <p class="vg-title">Google Ads Keyword Match Types Tutorial — Broad, Phrase, and Exact</p>
+      <p class="vg-creator">Tradesman Digital Marketing</p>
       <span class="vg-duration">⏱ 12 min · Match type differences, when to use each, negative keywords</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+quality+score+explained+how+to+improve+ad+rank" target="_blank" rel="noopener" data-video-id="IyHJvNDxOL4">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+quality+score+ad+rank+explained+how+google+decides+auction" target="_blank" rel="noopener" data-video-id="Yy2wX2qCCuY">
     <div class="vg-thumb"><span>⭐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Quality Score and Ad Rank — How Google Decides Who Wins the Auction</p>
-      <p class="vg-creator">Semrush</p>
+      <p class="vg-title">Quality Score and Ad Rank Explained — How Google Decides Who Wins</p>
+      <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 11 min · QS components, Ad Rank formula, actual CPC calculation</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+smart+bidding+strategies+tCPA+tROAS+maximize+conversions" target="_blank" rel="noopener" data-video-id="5pL4K-6v4RU">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+smart+bidding+strategies+tCPA+tROAS+maximize+conversions+new+campaigns" target="_blank" rel="noopener" data-video-id="QQwRWqu3EYo">
     <div class="vg-thumb"><span>💡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Google Ads Smart Bidding Strategies — tCPA, tROAS, Maximize Conversions</p>
-      <p class="vg-creator">Ahrefs</p>
+      <p class="vg-title">Google Ads Bidding Strategy for New Campaigns — Manual CPC to Smart Bidding</p>
+      <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 18 min · When to use each strategy, learning period, how to set targets</span>
     </div>
   </a>
@@ -76,22 +76,22 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=responsive+search+ads+RSA+best+practices+google+ads+2024" target="_blank" rel="noopener" data-video-id="vjEHULcXdkM">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=responsive+search+ads+RSA+best+practices+google+ads+high+converting" target="_blank" rel="noopener" data-video-id="CxoFiPoZNDw">
     <div class="vg-thumb"><span>📝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Responsive Search Ads Best Practices — How to Write High-Converting RSAs</p>
-      <p class="vg-creator">Exposure Ninja</p>
+      <p class="vg-title">Responsive Search Ads Best Practices — Write RSAs That Drive Conversions</p>
+      <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 16 min · Headlines, descriptions, pinning, ad strength rating</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+extensions+assets+sitelinks+callouts+2024+tutorial" target="_blank" rel="noopener" data-video-id="w8FVCZX2oJA">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+ads+assets+extensions+sitelinks+callouts+structured+snippets+setup+tutorial" target="_blank" rel="noopener" data-video-id="PsaMKpbcrNQ">
     <div class="vg-thumb"><span>🔗</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Google Ads Extensions (Assets) Complete Guide — Sitelinks, Callouts, Structured Snippets</p>
-      <p class="vg-creator">Measureschool</p>
+      <p class="vg-title">Google Ads Assets (Extensions) Setup — Full Tutorial: Sitelinks, Callouts, Snippets</p>
+      <p class="vg-creator">Max — Google Ads Nerd</p>
       <span class="vg-duration">⏱ 14 min · Every major asset type, setup walkthrough, impact on Ad Rank</span>
     </div>
   </a>
@@ -100,12 +100,12 @@
 ## 🍿 Optional Deep Dive
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+performance+max+campaigns+explained+vs+search+2024" target="_blank" rel="noopener" data-video-id="9V-LwE3BVYY">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=google+performance+max+campaigns+explained+lead+generation+ecommerce+vs+search" target="_blank" rel="noopener" data-video-id="Pq0NqM-RQ1w">
     <div class="vg-thumb"><span>🚀</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Performance Max Campaigns Explained — PMax vs Standard Search, When to Use Which</p>
-      <p class="vg-creator">Semrush</p>
+      <p class="vg-title">Performance Max Explained — PMax for Lead Generation and Ecommerce</p>
+      <p class="vg-creator">Surfside PPC</p>
       <span class="vg-duration">⏱ 22 min · PMax deep dive, asset groups, feed setup, control trade-offs</span>
     </div>
   </a>

@@ -76,13 +76,13 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="FuLqxk7TM-M" href="https://www.youtube.com/results?search_query=Amazon+FBA+economics+ACoS+TACoS+take+rate+smarter+ecommerce" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FuLqxk7TM-M" href="https://www.youtube.com/results?search_query=marketing+mix+modeling+ecommerce+measurement+smarter+ecommerce+smec" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Amazon FBA Economics + Take Rate Reality</p>
+      <p class="vg-title">Marketing Measurement for E-Commerce: MMM, Robyn & Marketplace Strategy</p>
       <p class="vg-creator">Smarter Ecommerce (smec)</p>
-      <span class="vg-duration">⏱ 19 min · Fee stack, 30–45% take rate, how to set realistic ACoS targets</span>
+      <span class="vg-duration">⏱ 18 min · How retailers measure media efficiency — context for setting realistic ACoS/TACoS targets</span>
     </div>
   </a>
 

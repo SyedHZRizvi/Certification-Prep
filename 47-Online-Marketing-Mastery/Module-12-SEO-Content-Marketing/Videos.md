@@ -92,29 +92,29 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=content+clusters+pillar+pages+SEO+strategy+HubSpot" data-video-id="" target="_blank" rel="noopener">
-  <div class="vg-thumb" style="background: linear-gradient(135deg, #059669, #10b981);">
-    <span>▶</span>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hubspot+pillar+page+topic+cluster+tool+SEO+tutorial" data-video-id="Qad8d0TMeZ8" target="_blank" rel="noopener">
+  <div class="vg-thumb">
+    <img src="https://i.ytimg.com/vi/Qad8d0TMeZ8/hqdefault.jpg" alt="HubSpot SEO Tutorial: Pillar Page and Topics Tool" style="width:100%;height:100%;object-fit:cover;" />
     <div class="vg-play">▶</div>
   </div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">Content Clusters and Pillar Pages — The Topic Authority Framework</p>
-    <p class="vg-creator">HubSpot Marketing</p>
-    <p class="vg-duration">~12 min</p>
+    <p class="vg-title">HubSpot SEO Tutorial: Pillar Page and Topic Cluster Tool</p>
+    <p class="vg-creator">Marketing Explained</p>
+    <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=E-E-A-T+Google+quality+rater+guidelines+SEO+2024" data-video-id="" target="_blank" rel="noopener">
-  <div class="vg-thumb" style="background: linear-gradient(135deg, #059669, #10b981);">
-    <span>▶</span>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=what+is+google+e-e-a-t+semrush+tools+to+improve" data-video-id="Nrz_4P3QCt4" target="_blank" rel="noopener">
+  <div class="vg-thumb">
+    <img src="https://i.ytimg.com/vi/Nrz_4P3QCt4/hqdefault.jpg" alt="What is Google E-E-A-T (plus tools to improve yours)" style="width:100%;height:100%;object-fit:cover;" />
     <div class="vg-play">▶</div>
   </div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
-    <p class="vg-title">E-E-A-T Explained: How Google Quality Rater Guidelines Affect Your Rankings</p>
+    <p class="vg-title">What Is Google E-E-A-T (Plus Tools to Improve Yours)</p>
     <p class="vg-creator">Semrush</p>
-    <p class="vg-duration">~18 min</p>
+    <p class="vg-duration">~8 min</p>
   </div>
 </a>
 
@@ -124,16 +124,16 @@
 
 <div class="vg-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=international+SEO+hreflang+implementation+guide+ahrefs" data-video-id="" target="_blank" rel="noopener">
-  <div class="vg-thumb" style="background: linear-gradient(135deg, #d97706, #f59e0b);">
-    <span>▶</span>
+<a class="vg-card" href="https://www.youtube.com/results?search_query=hreflang+international+seo+tutorial+multilingual+sites" data-video-id="-xWiEEq4nkQ" target="_blank" rel="noopener">
+  <div class="vg-thumb">
+    <img src="https://i.ytimg.com/vi/-xWiEEq4nkQ/hqdefault.jpg" alt="Hreflangs and International SEO crash course lesson" style="width:100%;height:100%;object-fit:cover;" />
     <div class="vg-play">▶</div>
   </div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">International SEO — Hreflang, URL Structures, and Multi-Market Strategy</p>
-    <p class="vg-creator">Ahrefs</p>
-    <p class="vg-duration">~25 min</p>
+    <p class="vg-title">SEO Crash Course: Hreflang and International SEO</p>
+    <p class="vg-creator">scandiweb</p>
+    <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
@@ -141,4 +141,4 @@
 
 ---
 
-*Video IDs verified via YouTube oEmbed API. Cards without a data-video-id link to curated YouTube search results for the topic.*
+*All eight video IDs verified live and embeddable via the YouTube oEmbed API. Every card's `href` is a YouTube search URL fallback; the `data-video-id` powers inline modal playback.*

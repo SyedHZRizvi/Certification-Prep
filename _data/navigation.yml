@@ -1440,22 +1440,22 @@ tracks:
     icon: "🚀"
     base: "/47-Online-Marketing-Mastery/"
     modules:
-      - { num: 1,  title: "Online Marketing Landscape & Strategy",        slug: Module-01-Online-Marketing-Landscape-Strategy }
-      - { num: 2,  title: "Google Search Ads — Campaigns & Keywords",     slug: Module-02-Google-Search-Ads-Campaigns-Keywords }
-      - { num: 3,  title: "Google Display, Shopping & YouTube Ads",       slug: Module-03-Google-Display-Shopping-YouTube-Ads }
-      - { num: 4,  title: "Amazon Advertising — Sponsored Products & DSP", slug: Module-04-Amazon-Advertising-Sponsored-Products-DSP }
-      - { num: 5,  title: "Amazon SEO & Listing Optimization",            slug: Module-05-Amazon-SEO-Listing-Optimization }
-      - { num: 6,  title: "Meta Ads — Facebook & Instagram",              slug: Module-06-Meta-Ads-Facebook-Instagram }
-      - { num: 7,  title: "TikTok & Short-Form Video Advertising",        slug: Module-07-TikTok-Short-Form-Video-Advertising }
-      - { num: 8,  title: "LinkedIn Ads & B2B Social Media",              slug: Module-08-LinkedIn-Ads-B2B-Social-Media }
-      - { num: 9,  title: "SEO Fundamentals & Content Marketing",         slug: Module-09-SEO-Fundamentals-Content-Marketing }
-      - { num: 10, title: "Email Marketing & Marketing Automation",       slug: Module-10-Email-Marketing-Automation }
-      - { num: 11, title: "Analytics, Attribution & Conversion Optimisation", slug: Module-11-Analytics-Attribution-CRO }
-      - { num: 12, title: "Integrated Campaigns & Growth Strategy",       slug: Module-12-Integrated-Campaigns-Growth-Strategy }
+      - { num: 1,  title: "Digital Marketing Strategy Fundamentals",       slug: Module-01-Digital-Marketing-Strategy-Fundamentals }
+      - { num: 2,  title: "Google Search Ads Mastery",                     slug: Module-02-Google-Search-Ads-Mastery }
+      - { num: 3,  title: "Google Analytics 4 — Data-Driven Marketing",    slug: Module-03-Google-Analytics-4 }
+      - { num: 4,  title: "Google My Business & Local Marketing",          slug: Module-04-Google-My-Business-Local-Marketing }
+      - { num: 5,  title: "Amazon Sponsored Advertising",                  slug: Module-05-Amazon-Sponsored-Advertising }
+      - { num: 6,  title: "Amazon Marketplace — US, UK & Europe",          slug: Module-06-Amazon-Marketplace-Strategy }
+      - { num: 7,  title: "Social Media Strategy & Content Calendar",      slug: Module-07-Social-Media-Strategy }
+      - { num: 8,  title: "Meta Ads — Facebook & Instagram",               slug: Module-08-Meta-Facebook-Instagram-Advertising }
+      - { num: 9,  title: "LinkedIn Marketing — B2B & Thought Leadership", slug: Module-09-LinkedIn-Marketing-B2B }
+      - { num: 10, title: "TikTok & YouTube — Video-First Growth",         slug: Module-10-TikTok-YouTube-Video-Marketing }
+      - { num: 11, title: "Email Marketing & Automation (GDPR)",           slug: Module-11-Email-Marketing-Automation }
+      - { num: 12, title: "SEO & Content Marketing",                       slug: Module-12-SEO-Content-Marketing }
     extras:
       - { num: 13, title: "Practice Exam 1", slug: Practice-Exams/Practice-Exam-1, single_file: true }
       - { num: 14, title: "Practice Exam 2", slug: Practice-Exams/Practice-Exam-2, single_file: true }
-      - { num: 15, title: "Final Mock Exam (80q / 110min)", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
+      - { num: 15, title: "Final Mock Exam", slug: Practice-Exams/Final-Mock-Exam, single_file: true }
       - { num: 16, title: "Master Flashcards", slug: Flashcards, single_file: true }
 
   - id: animation-foundations

@@ -118,12 +118,12 @@ The table below lists authoritative free learning resources for each channel cov
 |----------|----------|-----|
 | Google Skillshop (Ads + Analytics certs) | Google | https://skillshop.exceedlms.com/ |
 | Meta Blueprint (Facebook/Instagram) | Meta | https://www.facebook.com/business/learn |
-| Amazon Ads Accreditation | Amazon Ads | https://advertising.amazon.com/en-us/resources/training |
+| Amazon Ads Accreditation | Amazon Ads | https://advertising.amazon.com/ |
 | HubSpot Academy (Email, Content, Digital Marketing) | HubSpot | https://academy.hubspot.com/ |
 | Ahrefs Academy (SEO) | Ahrefs | https://ahrefs.com/academy |
 | Semrush Academy (SEO + PPC) | Semrush | https://www.semrush.com/academy/ |
 | TikTok Ads Academy | TikTok for Business | https://www.tiktok.com/business/en/academy |
-| LinkedIn Marketing Labs | LinkedIn | https://www.linkedin.com/marketing-solutions/learning |
+| LinkedIn Marketing Solutions | LinkedIn | https://business.linkedin.com/marketing-solutions |
 | Google Ads YouTube channel | Google | https://www.youtube.com/results?search_query=google+ads+tutorials+official |
 | Meta Business YouTube tutorials | Meta | https://www.youtube.com/results?search_query=meta+business+ads+tutorials |
 | Amazon Ads YouTube tutorials | Amazon Ads | https://www.youtube.com/results?search_query=amazon+sponsored+ads+tutorial |

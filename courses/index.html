@@ -3,6 +3,10 @@ permalink: /courses/
 layout: null
 title: Courses — The Cert Hub
 ---
+{%- comment -%} Counts are Liquid-driven from navigation.yml so they never drift. {%- endcomment -%}
+{%- assign cert_count = site.data.navigation.tracks | size -%}
+{%- assign total_modules = 0 -%}
+{%- for t in site.data.navigation.tracks -%}{%- assign m = t.modules | size -%}{%- assign total_modules = total_modules | plus: m -%}{%- endfor -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +23,7 @@ title: Courses — The Cert Hub
   <section style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4338ca 100%); padding: 5rem 1rem 3.5rem;">
     <div class="relative max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p style="font-size:0.875rem; font-weight:800; letter-spacing:0.22em; text-transform:uppercase; color:#a5b4fc; margin-bottom:1rem;">Curriculum</p>
-      <h1 class="display" style="font-size:clamp(2.5rem,6vw,4.5rem); font-weight:900; color:#ffffff; margin-bottom:1.25rem; line-height:1.1;">Browse All 46 Courses</h1>
+      <h1 class="display" style="font-size:clamp(2.5rem,6vw,4.5rem); font-weight:900; color:#ffffff; margin-bottom:1.25rem; line-height:1.1;">Browse All {{ cert_count }} Courses</h1>
       <p style="font-size:clamp(1.1rem,2.5vw,1.375rem); color:#e0e7ff; max-width:48rem; margin:0 auto; line-height:1.65; font-weight:400;">
         Foundation tier to specialist: pick a single course or the full ladder.<br />
         Inspired by the teaching philosophies of the world's leading research universities, one author, one voice.
@@ -33,7 +37,7 @@ title: Courses — The Cert Hub
     <div class="reveal text-center mb-14">
       <h2 class="text-4xl md:text-5xl font-extrabold mb-4" style="color:#0f172a;">All {{ cert_count }} Courses</h2>
       <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed" style="color:#334155; font-weight:500;">
-        {{ total_modules }} modules · ~{{ site.data.site_stats.total_hours_estimate }} hours of focused content. Click any course card to open it.
+        {{ total_modules }} modules and ~{{ site.data.site_stats.total_hours_estimate }} hours of focused, exam-aligned learning — written in one voice, inspired by the teaching of the world's leading research universities. Click any course card below to dive in.
       </p>
       <p class="text-sm mt-4 max-w-3xl mx-auto" style="color:#64748b;">
         All certification names and trademarks are property of their respective owners. The Cert Hub is an independent study resource and is not affiliated with, authorized by, or endorsed by any certification body.
@@ -528,6 +532,31 @@ title: Courses — The Cert Hub
           Open course <span aria-hidden="true">→</span>
         </span>
       </a>
+
+        </div>
+      </div>
+
+      <!-- ===== category: Online Marketing — Platforms & Channels (1 course) ===== -->
+      <div class="reveal">
+        <div class="text-center mb-10 pt-10 border-t border-slate-200">
+          <div class="cat-badge inline-flex items-center justify-center w-20 h-20 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br from-sky-500 via-cyan-500 to-blue-600 text-4xl md:text-5xl mb-5 shadow-xl shadow-sky-500/40 ring-4 ring-white">
+            <span class="drop-shadow-lg">🚀</span>
+          </div>
+          <h3 class="display text-4xl md:text-5xl font-extrabold mb-2">Online Marketing &mdash; Platforms &amp; Channels</h3>
+          <p class="text-slate-600 text-base md:text-lg">Hands-on Google Ads, Amazon Advertising, Meta, TikTok, LinkedIn, SEO &amp; email &middot; built for both North American and European (GDPR) markets</p>
+        </div>
+        <div class="grid grid-cols-1 gap-6 max-w-[640px] mx-auto">
+
+          <a href="{{ '/47-Online-Marketing-Mastery/' | relative_url }}" class="cert-card group relative block rounded-2xl border border-slate-200 bg-gradient-to-br from-sky-600 to-blue-900 text-white p-8 md:p-10 text-center">
+            <span class="cert-code-badge">Google Ads &middot; Amazon Ads &middot; Meta &middot; LinkedIn &middot; SEO</span>
+            <span class="shine-overlay"></span>
+            <span class="cert-card-icon block text-7xl md:text-8xl mb-5 drop-shadow-2xl">🚀</span>
+            <h3 class="display text-3xl md:text-4xl font-extrabold mb-2">Online Marketing Mastery</h3>
+            <p class="text-sky-50 text-base md:text-lg mb-6">12 modules &middot; ~45 hours &middot; Beginner &rarr; advanced &middot; EU + North America</p>
+            <span class="cert-card-cta inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/15 ring-1 ring-white/30 backdrop-blur-sm text-sm md:text-base font-semibold">
+              Open course <span aria-hidden="true">&rarr;</span>
+            </span>
+          </a>
 
         </div>
       </div>

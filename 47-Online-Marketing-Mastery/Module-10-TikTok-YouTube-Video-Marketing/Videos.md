@@ -22,51 +22,51 @@
 ## ⭐ Essential Watching (~60 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=TikTok+marketing+for+business+complete+guide+2024+2025" target="_blank" rel="noopener" data-video-id="nU-IIXBWlS4">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=HubSpot+how+to+use+TikTok+ads+for+your+business" target="_blank" rel="noopener" data-video-id="yFBEGV3VAPU">
     <div class="vg-thumb"><span>🎵</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">TikTok Marketing for Business — Complete Beginner's Guide</p>
+      <p class="vg-title">How to Use TikTok Ads for Your Business</p>
       <p class="vg-creator">HubSpot Marketing</p>
       <span class="vg-duration">⏱ 18 min · Interest graph, FYP algorithm, organic content strategy</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=TikTok+Ads+Manager+tutorial+beginners+2024+in-feed+spark+ads" target="_blank" rel="noopener" data-video-id="MYE6T_gd7H0">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+make+successful+TikTok+ads+step+by+step+tutorial" target="_blank" rel="noopener" data-video-id="tT1jRBDq06M">
     <div class="vg-thumb"><span>📣</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">TikTok Ads Manager Tutorial — In-Feed, Spark Ads & Targeting</p>
-      <p class="vg-creator">Surfside PPC</p>
+      <p class="vg-title">How to Make Successful TikTok Ads — Step-by-Step Tutorial</p>
+      <p class="vg-creator">Santrel Media</p>
       <span class="vg-duration">⏱ 22 min · Campaign setup, ad formats, bidding strategy</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=YouTube+SEO+tutorial+rank+videos+first+page+2024+2025" target="_blank" rel="noopener" data-video-id="vyVpRiqOvt4">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Ahrefs+YouTube+SEO+how+to+rank+your+youtube+videos" target="_blank" rel="noopener" data-video-id="_b_cTpLHMTM">
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">YouTube SEO — How to Rank Videos on Page 1 in 2025</p>
+      <p class="vg-title">YouTube SEO — How to Rank Your YouTube Videos</p>
       <p class="vg-creator">Ahrefs</p>
       <span class="vg-duration">⏱ 15 min · Title optimisation, thumbnails, CTR, AVD</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=YouTube+Shorts+strategy+grow+channel+subscribers+algorithm+2024" target="_blank" rel="noopener" data-video-id="5MgBikgcWnY">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+grow+your+youtube+channel+shorts+strategy+vidIQ" target="_blank" rel="noopener" data-video-id="oTsIa7hxnzc">
     <div class="vg-thumb"><span>📱</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">YouTube Shorts Strategy — How to Grow Your Channel Fast</p>
-      <p class="vg-creator">Think Media</p>
+      <p class="vg-title">How to Grow Your YouTube Channel — Shorts & Growth Strategy</p>
+      <p class="vg-creator">vidIQ</p>
       <span class="vg-duration">⏱ 16 min · Shorts algorithm, hook writing, Shorts-to-long-form funnel</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=YouTube+ads+tutorial+beginners+skippable+in-stream+discovery+2024" target="_blank" rel="noopener" data-video-id="eIho2S0ZahI">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adam+Erhart+YouTube+ads+beginner+to+expert+how+to+get+started" target="_blank" rel="noopener" data-video-id="rGqlGbd-kdc">
     <div class="vg-thumb"><span>🎯</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">YouTube Ads Tutorial — All 4 Formats Explained for Beginners</p>
+      <p class="vg-title">YouTube Ads Beginner to Expert — How to Get Started</p>
       <p class="vg-creator">Adam Erhart</p>
       <span class="vg-duration">⏱ 20 min · Skippable, non-skippable, bumper, discovery ads</span>
     </div>
@@ -76,22 +76,22 @@
 ## 📚 Recommended (~30 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=TikTok+hook+formula+viral+content+strategy+creator+tips+2024" target="_blank" rel="noopener" data-video-id="5aH2Ppjpcho">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=HubSpot+how+to+go+live+on+TikTok+for+business+strategy" target="_blank" rel="noopener" data-video-id="XQVpONifYW8">
     <div class="vg-thumb"><span>🎣</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">The TikTok Hook Formula That Goes Viral Every Time</p>
-      <p class="vg-creator">Exposure Ninja</p>
+      <p class="vg-title">TikTok for Business — Hooks, Live & Content Strategy</p>
+      <p class="vg-creator">HubSpot Marketing</p>
       <span class="vg-duration">⏱ 14 min · Hook/Build/Payoff, 3-second rule, completion rate optimisation</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=YouTube+analytics+explained+CTR+average+view+duration+watch+time+2024" target="_blank" rel="noopener" data-video-id="9GorqroigqM">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=vidIQ+tutorial+for+beginners+youtube+analytics+CTR+watch+time" target="_blank" rel="noopener" data-video-id="Td6HnyJV2No">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">YouTube Analytics Masterclass — CTR, AVD & Watch Time</p>
-      <p class="vg-creator">Measureschool</p>
+      <p class="vg-title">YouTube Analytics & vidIQ — CTR, AVD & Watch Time</p>
+      <p class="vg-creator">Marketing Island</p>
       <span class="vg-duration">⏱ 18 min · YouTube Studio walkthrough, key metrics, what to optimise first</span>
     </div>
   </a>
@@ -100,13 +100,13 @@
 ## 🍿 Optional Deep Dive
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=TikTok+Shop+tutorial+e-commerce+affiliate+program+setup+2024+2025" target="_blank" rel="noopener" data-video-id="TYIh4MkcfJA">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+sync+shopify+products+to+TikTok+Shop+tutorial" target="_blank" rel="noopener" data-video-id="f0YDk4MLapQ">
     <div class="vg-thumb"><span>🛍️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">TikTok Shop Complete Setup — Sell Products Inside TikTok</p>
-      <p class="vg-creator">Learn with Shopify</p>
-      <span class="vg-duration">⏱ 25 min · TikTok Shop, affiliate programme, product tagging, US & UK only</span>
+      <p class="vg-title">TikTok Shop Setup — Sync Shopify Products & Sell Inside TikTok</p>
+      <p class="vg-creator">How To Support</p>
+      <span class="vg-duration">⏱ 25 min · TikTok Shop, product tagging, US & UK availability</span>
     </div>
   </a>
 </div>

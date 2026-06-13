@@ -3,6 +3,10 @@ permalink: /about/
 layout: null
 title: About the Creator — The Cert Hub
 ---
+{%- comment -%} Counts are Liquid-driven from navigation.yml so they never drift. {%- endcomment -%}
+{%- assign cert_count = site.data.navigation.tracks | size -%}
+{%- assign total_modules = 0 -%}
+{%- for t in site.data.navigation.tracks -%}{%- assign m = t.modules | size -%}{%- assign total_modules = total_modules | plus: m -%}{%- endfor -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,7 +51,7 @@ title: About the Creator — The Cert Hub
               Three decades across <strong class="text-white">project delivery, IT systems &amp; server administration, networking, cybersecurity, cloud architecture (AWS &amp; Azure), AI &amp; GenAI engineering, supply chain operations, AI based digital marketing, Bitcoin &amp; cryptocurrency, and e-commerce</strong>, and a long standing belief that exam prep should not feel like flashcard punishment. The Cert Hub is the study experience I wish existed when I sat my own credentials.
             </p>
             <p class="text-lg md:text-xl text-slate-300 leading-relaxed mb-8">
-              Every story, every analogy, every quiz, every cheat sheet, <strong class="text-white">written by one person, with one voice</strong>. No content farms, no copy-paste from exam dumps. A coherent, self-paced learning journey across 46 courses and 422 modules, built on evidence-based study techniques: layered reading, spaced repetition, retrieval practice, and high-fidelity mock exams.
+              Every story, every analogy, every quiz, every cheat sheet, <strong class="text-white">written by one person, with one voice</strong>. No content farms, no copy-paste from exam dumps. A coherent, self-paced learning journey across {{ cert_count }} courses and {{ total_modules }} modules, built on evidence-based study techniques: layered reading, spaced repetition, retrieval practice, and high-fidelity mock exams.
             </p>
             <div class="flex flex-wrap gap-3 mb-7">
               <a href="{{ '/courses/' | relative_url }}" class="inline-flex items-center gap-2 bg-white text-slate-900 font-bold text-base md:text-lg px-7 py-3.5 rounded-xl hover:bg-slate-100 transition shadow-lg">

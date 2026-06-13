@@ -22,52 +22,52 @@
 ## ⭐ Essential Watching (~60 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=social+media+marketing+strategy+2024+platform+selection+hubspot" target="_blank" rel="noopener" data-video-id="tLjBMLBizpI">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=hubspot+how+to+create+a+social+media+strategy+plan+template" target="_blank" rel="noopener" data-video-id="VS0Sao1oHlw">
     <div class="vg-thumb"><span>📱</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Social Media Marketing Strategy — Complete 2024 Framework</p>
+      <p class="vg-title">How To Create a Social Media Strategy Plan (Free Template)</p>
       <p class="vg-creator">HubSpot Marketing</p>
-      <span class="vg-duration">⏱ 18 min · Platform selection, content pillars, editorial calendar</span>
+      <span class="vg-duration">⏱ 16 min · Platform selection, content pillars, editorial calendar</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+social+media+algorithms+work+2024+facebook+instagram+tiktok" target="_blank" rel="noopener" data-video-id="Vwb-fBwDEeA">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=adam+erhart+social+media+marketing+tips+algorithm+2026" target="_blank" rel="noopener" data-video-id="h-F91fwdnwA">
     <div class="vg-thumb"><span>🤖</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">How Social Media Algorithms Actually Work in 2024</p>
+      <p class="vg-title">7 Social Media Marketing Tips To Dominate In 2026</p>
       <p class="vg-creator">Adam Erhart</p>
-      <span class="vg-duration">⏱ 14 min · Algorithm mechanics — Facebook, Instagram, TikTok, LinkedIn</span>
+      <span class="vg-duration">⏱ 13 min · Algorithm mechanics — Facebook, Instagram, TikTok, LinkedIn</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=tiktok+algorithm+explained+2024+how+to+go+viral" target="_blank" rel="noopener" data-video-id="NLuKDST_tlo">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=the+tiktok+algorithm+explained+guide+to+tiktok+success" target="_blank" rel="noopener" data-video-id="diJ172jDsxA">
     <div class="vg-thumb"><span>🎵</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">TikTok Algorithm Explained — How to Go Viral From Zero Followers</p>
-      <p class="vg-creator">Exposure Ninja</p>
+      <p class="vg-title">The TikTok Algorithm Explained — Your Guide To TikTok Success</p>
+      <p class="vg-creator">Modern Millie</p>
       <span class="vg-duration">⏱ 12 min · Interest graph, completion rate, distribution checkpoints</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=content+calendar+social+media+template+how+to+build" target="_blank" rel="noopener" data-video-id="3WP2CSmCiQ4">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+create+an+effective+social+media+calendar+template" target="_blank" rel="noopener" data-video-id="6Qj6MN4ig44">
     <div class="vg-thumb"><span>📅</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">How to Build a Social Media Content Calendar (Step-by-Step Template)</p>
-      <p class="vg-creator">Hootsuite</p>
+      <p class="vg-title">How To Create An Effective Social Media Calendar (Free Template)</p>
+      <p class="vg-creator">HubSpot Marketing</p>
       <span class="vg-duration">⏱ 10 min · Editorial calendar, content pillars, batch scheduling</span>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=influencer+marketing+strategy+micro+vs+macro+tiers+2024" target="_blank" rel="noopener" data-video-id="yCOK6p2JIvs">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=nano+micro+macro+mega+influencer+definitions+explained" target="_blank" rel="noopener" data-video-id="p7PBiLIidi8">
     <div class="vg-thumb"><span>🤝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Influencer Marketing Tiers — Nano, Micro, Macro & Mega Explained</p>
-      <p class="vg-creator">Neil Patel Digital</p>
+      <p class="vg-title">Nano, Micro, Macro & Mega Influencer — Tier Definitions Explained</p>
+      <p class="vg-creator">Justin Moore (Creator Wizard)</p>
       <span class="vg-duration">⏱ 11 min · Influencer tiers, ROI by tier, how to measure campaigns</span>
     </div>
   </a>
@@ -86,12 +86,12 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=instagram+shopping+tiktok+shop+social+commerce+setup+2024" target="_blank" rel="noopener" data-video-id="XNiXl0E0kqQ">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+set+up+facebook+and+instagram+shops+beginners+guide" target="_blank" rel="noopener" data-video-id="xDie2m4OR4Q">
     <div class="vg-thumb"><span>🛍️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Instagram Shopping & TikTok Shop — Social Commerce Setup Guide</p>
-      <p class="vg-creator">Learn with Shopify</p>
+      <p class="vg-title">How to Set Up Facebook and Instagram Shops (Beginner's Guide)</p>
+      <p class="vg-creator">HubSpot Marketing</p>
       <span class="vg-duration">⏱ 15 min · Social commerce setup, product tagging, live shopping</span>
     </div>
   </a>

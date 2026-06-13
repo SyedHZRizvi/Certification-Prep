@@ -22,49 +22,49 @@
 ## ⭐ Essential Watching (~65 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+Analytics+4+complete+tutorial+beginners+2024+Measureschool" target="_blank" rel="noopener" data-video-id="nNWSNaZNzvc">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Complete+Google+Analytics+4+course+for+beginners+MeasureSchool" target="_blank" rel="noopener" data-video-id="ZOmhyQICMXw">
     <div class="vg-thumb"><span>📊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Google Analytics 4 Complete Tutorial for Beginners</p>
-      <p class="vg-creator">Measureschool</p>
-      <span class="vg-duration">⏱ 20 min · GA4 interface + event model from scratch</span>
+      <p class="vg-title">Complete Google Analytics 4 Course for Beginners</p>
+      <p class="vg-creator">MeasureSchool</p>
+      <span class="vg-duration">⏱ ~60 min · GA4 interface + event model from scratch</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+events+conversions+key+events+setup+Google+Tag+Manager+Surfside+PPC" target="_blank" rel="noopener" data-video-id="5aBgbYHbP4M">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+key+events+how+to+track+conversions+Loves+Data" target="_blank" rel="noopener" data-video-id="A546lw0g_4s">
     <div class="vg-thumb"><span>🎯</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GA4 Events, Key Events and Conversions Setup Guide</p>
-      <p class="vg-creator">Surfside PPC</p>
-      <span class="vg-duration">⏱ 16 min · Event taxonomy + marking key events</span>
+      <p class="vg-title">GA4 Key Events — How to Track Conversions (2025 Update)</p>
+      <p class="vg-creator">Loves Data — Benjamin Mangold</p>
+      <span class="vg-duration">⏱ ~14 min · Event taxonomy + marking key events</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+funnel+exploration+path+exploration+tutorial+Analytics+Mania" target="_blank" rel="noopener" data-video-id="q_PaWbJaHpg">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+path+exploration+behavior+flow+tutorial+Analytics+Mania" target="_blank" rel="noopener" data-video-id="DUkpogyAKm8">
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GA4 Funnel Exploration and Path Analysis Deep Dive</p>
+      <p class="vg-title">Path Exploration in GA4 — Behavior Flow Analysis</p>
       <p class="vg-creator">Analytics Mania — Julius Fedorovicius</p>
-      <span class="vg-duration">⏱ 14 min · Build funnels, breakdowns, open vs closed</span>
+      <span class="vg-duration">⏱ ~13 min · Path analysis, what users do next, branching</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Consent+Mode+v2+setup+GA4+Google+Tag+Manager+EU+GDPR+2024" target="_blank" rel="noopener" data-video-id="OHbMIRe-7WQ">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Consent+Mode+v2+setup+GA4+Google+Tag+Manager+cookie+banner+GDPR" target="_blank" rel="noopener" data-video-id="yZjGzfWDc0Y">
     <div class="vg-thumb"><span>🔒</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Consent Mode v2 Complete Setup Guide (EU / GDPR)</p>
-      <p class="vg-creator">Measureschool</p>
-      <span class="vg-duration">⏱ 18 min · 4 parameters, CMP wiring, GTM implementation</span>
+      <p class="vg-title">Set Up Consent Mode v2 With Any Cookie Banner in GTM (EU / GDPR)</p>
+      <p class="vg-creator">Leon Korteweg</p>
+      <span class="vg-duration">⏱ ~15 min · 4 parameters, CMP wiring, GTM implementation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+attribution+models+data+driven+last+click+comparison+Loves+Data" target="_blank" rel="noopener" data-video-id="Ztu9M4ZJPRY">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=attribution+models+last+click+vs+data+driven+explained" target="_blank" rel="noopener" data-video-id="WwaClWzBX90">
     <div class="vg-thumb"><span>📐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
-      <p class="vg-title">GA4 Attribution Models Explained — Data-Driven vs Last Click</p>
-      <p class="vg-creator">Loves Data — Benjamin Mangold</p>
-      <span class="vg-duration">⏱ 12 min · All models compared + Model Comparison report</span>
+      <p class="vg-title">Attribution Models Simplified — Last Click vs Data-Driven</p>
+      <p class="vg-creator">Guided PPC</p>
+      <span class="vg-duration">⏱ ~12 min · All models compared + Model Comparison report</span>
     </div>
   </a>
 </div>
@@ -72,22 +72,22 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+ecommerce+tracking+Google+Tag+Manager+purchase+event+dataLayer" target="_blank" rel="noopener" data-video-id="LXqxSXcvsLQ">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=How+to+setup+ecommerce+tracking+GA4+Loves+Data+purchase+event" target="_blank" rel="noopener" data-video-id="ClSLdoNKZMI">
     <div class="vg-thumb"><span>🛒</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">GA4 Ecommerce Tracking via Google Tag Manager</p>
-      <p class="vg-creator">Surfside PPC</p>
-      <span class="vg-duration">⏱ 19 min · purchase event, item arrays, DataLayer setup</span>
+      <p class="vg-title">How to Set Up Ecommerce Tracking for GA4</p>
+      <p class="vg-creator">Loves Data — Benjamin Mangold</p>
+      <span class="vg-duration">⏱ ~18 min · purchase event, item arrays, DataLayer setup</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+BigQuery+export+Looker+Studio+dashboard+free+tutorial+2024" target="_blank" rel="noopener" data-video-id="zBn3rSbOsAs">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Looker+Studio+tutorial+Google+Analytics+4+dashboard+Analytics+Mania" target="_blank" rel="noopener" data-video-id="wS2qWA8Xnp4">
     <div class="vg-thumb"><span>🗄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">GA4 BigQuery Export + Looker Studio Dashboard Setup</p>
+      <p class="vg-title">Looker Studio Tutorial for GA4 — Building Dashboards</p>
       <p class="vg-creator">Analytics Mania — Julius Fedorovicius</p>
-      <span class="vg-duration">⏱ 22 min · BigQuery linking, SQL basics, Looker Studio blending</span>
+      <span class="vg-duration">⏱ ~25 min · GA4 data source, blending, dashboard design</span>
     </div>
   </a>
 </div>
@@ -95,13 +95,13 @@
 ## 🍿 Optional Deep Dive
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+Google+Ads+linking+audiences+remarketing+smart+bidding+complete+guide" target="_blank" rel="noopener" data-video-id="pJUzf3y3GOw">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GA4+remarketing+for+Google+Ads+audiences+setup+Loves+Data" target="_blank" rel="noopener" data-video-id="Xkc-Xq97N80">
     <div class="vg-thumb"><span>🔗</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
-      <p class="vg-title">GA4 + Google Ads Linking — Audiences, Conversions and Smart Bidding</p>
+      <p class="vg-title">How to Set Up GA4 Remarketing for Google Ads</p>
       <p class="vg-creator">Loves Data — Benjamin Mangold</p>
-      <span class="vg-duration">⏱ 24 min · End-to-end GA4 → Google Ads integration</span>
+      <span class="vg-duration">⏱ ~16 min · GA4 → Google Ads audiences + remarketing</span>
     </div>
   </a>
 </div>
