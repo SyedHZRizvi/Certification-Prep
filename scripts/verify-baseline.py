@@ -75,11 +75,13 @@ EXPECTED_COURSES = {
     "45-French-Language":                       10,
     # Quran & Islamic Studies track
     "46-Quran-Recitation-Learning-Memorization": 12,
+    # Online Marketing Mastery track
+    "47-Online-Marketing-Mastery":               12,
 }
-EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 412 + 12 = 424
-EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 46 × 3 = 138
-MIN_TOTAL_COURSE_MD_FILES = 1948  # +4 for Module 12 (Reading, Videos, Quiz, Cheat-Sheet)
-MIN_YT_SEARCH_URLS = 3588         # Module 12 Videos.md adds 16 more search URLs
+EXPECTED_TOTAL_MODULES = sum(EXPECTED_COURSES.values())  # 424 + 12 = 436
+EXPECTED_TOTAL_PRACTICE_EXAMS = len(EXPECTED_COURSES) * 3  # 47 × 3 = 141
+MIN_TOTAL_COURSE_MD_FILES = 1998  # +50 for Course 47 (12 modules × 4 files + README + Flashcards + 3 practice exams)
+MIN_YT_SEARCH_URLS = 3684         # +96 for Course 47 (12 modules × 8 cards)
 
 PROTECTED_FILES = [
     "_layouts/default.html",

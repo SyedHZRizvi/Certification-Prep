@@ -7,7 +7,7 @@
 
 ## 0. Project identity
 
-This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **46 industry certifications and professional tracks**:
+This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts story-driven self-study courses for **47 industry certifications and professional tracks**:
 
 | # | Folder | Cert / Track | Modules |
 |---|---|---|---|
@@ -38,8 +38,9 @@ This is **The Cert Hub** — a Jekyll site authored by Humayun Zafar. It hosts s
 | 25 | `25-Windows-Server-Hybrid-Admin` | Microsoft Windows Server Hybrid Admin (AZ-800 + AZ-801) | 10 |
 | 26 | `26-Microsoft-Endpoint-Admin` | Microsoft Endpoint Administrator (MD-102) | 8 |
 | 27 | `27-Microsoft-Identity-Access-Admin` | Microsoft Identity & Access Admin (SC-300) | 8 |
+| 47 | `47-Online-Marketing-Mastery` | Online Marketing Mastery — Google, Amazon & Social Media | 12 |
 
-Total: **423 modules · 138 practice exams · 46 flashcard decks · 46 READMEs**.
+Total: **435 modules · 141 practice exams · 47 flashcard decks · 47 READMEs**.
 
 The new IT Systems Administration track (courses 21–27) is engineered to the same Cornell · Harvard · Princeton · Stanford pedagogical standard as the rest of the site. AZ-900 (course 05) and AZ-104 (course 06) are cross-referenced into this track on the homepage since they form part of any modern sysadmin's training path.
 
@@ -232,15 +233,15 @@ This tag is the canonical *historical* snapshot of the site as of 2026-05-20. It
 - Freshness mechanism (`/version.txt` + `assets/freshness.js`) wired so future deploys auto-bust stale browser caches
 - The `scripts/verify-baseline.py` script passing (15 invariants)
 
-### Current state (post-Quran-track addition, 2026-06-09)
+### Current state (post-Online-Marketing-Mastery addition, 2026-06-13)
 
 The live site has now grown to:
 
-- **46** course directories (added Quran Recitation, Learning & Memorization — bilingual EN/UR, Tajweed + Tafseer + Hifz)
-- **423** modules
-- **138** practice exams (92 partials + 46 full-length mocks)
-- **1,944+** markdown files inside the course directories
-- **3,588+** YouTube search URLs (still 0 direct YouTube URLs anywhere)
+- **47** course directories (added Online Marketing Mastery — Google, Amazon & Social Media — 12-module course covering Google Ads, Amazon Advertising, Meta, TikTok, LinkedIn, SEO, email marketing, analytics, and integrated campaign strategy)
+- **435** modules
+- **141** practice exams (94 partials + 47 full-length mocks)
+- **1,998+** markdown files inside the course directories
+- **3,684+** YouTube search URLs (still 0 direct YouTube URLs anywhere)
 - **15,500+** practice questions across all quizzes + flashcards + mock exams
 - **1,325+** total study hours
 
