@@ -49,12 +49,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Architecture+explained+KodeKloud" data-video-id="umXEmn3cMkY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Architecture+explained+KodeKloud" data-video-id="klxZke9qbvg" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes Architecture Explained</p>
-    <p class="vg-creator">KodeKloud (Mumshad Mannambeth)</p>
+    <p class="vg-creator">KodeKloud</p>
     <span class="vg-duration">⏱ 14 min · Precise, exam-focused walkthrough of every control plane and worker node component. Pause and diagram along.</span>
   </div>
 </a>
@@ -78,7 +78,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Containers+vs+VMs+IBM+Technology" data-video-id="cjXI-yenr-0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Containers+vs+VMs+IBM+Technology" data-video-id="cjXI-yxqGTI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -88,17 +88,17 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+explained+Kubernetes+KodeKloud" data-video-id="bn3YNKF3IQE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+explained+Kubernetes+KodeKloud" data-video-id="GJ9O63-QcPw" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">etcd in Kubernetes — What It Is and Why It Matters</p>
-    <p class="vg-creator">KodeKloud (Mumshad Mannambeth)</p>
+    <p class="vg-creator">TechEdith</p>
     <span class="vg-duration">⏱ 10 min · Explains Raft consensus, backup/restore, and why etcd failure is catastrophic. Directly exam-testable.</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+commands+tutorial+TechWorld+Nana" data-video-id="wPw1SNXNJRE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+commands+tutorial+TechWorld+Nana" data-video-id="s_o8dwzRlu4" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -118,7 +118,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=How+Kubernetes+works+ByteByteGo" data-video-id="daVUOmN49oI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=How+Kubernetes+works+ByteByteGo" data-video-id="TlHvYWVUZyc" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -157,12 +157,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kelsey+Hightower+Kubernetes+the+hard+way+walkthrough" data-video-id="vTCQLFDdgrs" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kelsey+Hightower+Kubernetes+the+hard+way+walkthrough" data-video-id="Z-Pxl84WNGo" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Kubernetes the Hard Way — Full Walkthrough</p>
-    <p class="vg-creator">Kelsey Hightower / CNCF</p>
+    <p class="vg-creator">Day Johnson</p>
     <span class="vg-duration">⏱ 60+ min · The gold standard for understanding what every component does — you build the cluster yourself. Deep preparation for Module 2.</span>
   </div>
 </a>

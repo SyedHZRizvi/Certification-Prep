@@ -52,12 +52,12 @@
       <span class="vg-duration">⏱ 13 min · The discovery toolkit</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LVM+extend+resize+snapshot+linux+tutorial" data-video-id="EPiGbU7U2V4" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LVM+extend+resize+snapshot+linux+tutorial" data-video-id="VV3x-ZH0ymo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">LVM Extend, Resize & Snapshots</p>
-      <p class="vg-creator">Red Hat Enterprise Linux Channel</p>
+      <p class="vg-creator">Automation tools</p>
       <span class="vg-duration">⏱ 15 min · lvextend -r, snapshots</span>
     </div>
   </a>

@@ -64,7 +64,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Windows 11 Requirements (TPM + Secure Boot)</p>
-      <p class="vg-creator">Dion Training</p>
+      <p class="vg-creator">TechsavvyProductions</p>
       <span class="vg-duration">⏱ 12 min · The 1102 favorite</span>
     </div>
   </a>
@@ -87,7 +87,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">PowerShell for IT Admins (Beginner)</p>
-      <p class="vg-creator">Andy Malone MVP</p>
+      <p class="vg-creator">The Cyber Mentor</p>
       <span class="vg-duration">⏱ 18 min · Get-Verbed</span>
     </div>
   </a>
@@ -114,12 +114,12 @@
       <span class="vg-duration">⏱ 18 min · Real-world repair</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=DistroTube+Linux+distro+comparison+2026" data-video-id="dGGQngpMWpw" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=DistroTube+Linux+distro+comparison+2026" data-video-id="e2wB9r1SYrY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Linux Distro Comparison 2026</p>
-      <p class="vg-creator">DistroTube</p>
+      <p class="vg-creator">ExplainingComputers</p>
       <span class="vg-duration">⏱ 25 min · Pick your distro</span>
     </div>
   </a>

@@ -34,12 +34,12 @@
       <span class="vg-duration">⏱ 25 min · Variables, loops, conditionals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+set+euo+pipefail+defensive+scripting" data-video-id="LnAWCi7Uh5k" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bash+set+euo+pipefail+defensive+scripting" data-video-id="i70QxFJRLeg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">set -euo pipefail: Safer Bash</p>
-      <p class="vg-creator">DevOps Toolkit</p>
+      <p class="vg-creator">Learn In Public</p>
       <span class="vg-duration">⏱ 10 min · The defensive header</span>
     </div>
   </a>

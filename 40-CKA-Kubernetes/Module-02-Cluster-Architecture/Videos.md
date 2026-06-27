@@ -25,15 +25,15 @@
 ## ⭐ Essential Watching
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Architecture+explained+KodeKloud+CKA" data-video-id="umXEmn3cMkY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+Architecture+explained+KodeKloud+CKA" data-video-id="8C_SCDbUJTg" target="_blank" rel="noopener">
     <div class="vg-thumb">
-      <img src="https://i.ytimg.com/vi/umXEmn3cMkY/hqdefault.jpg" alt="Kubernetes Architecture KodeKloud" loading="lazy" onerror="this.style.display='none'">
+      <img src="https://i.ytimg.com/vi/8C_SCDbUJTg/hqdefault.jpg" alt="Kubernetes Architecture KodeKloud" loading="lazy" onerror="this.style.display='none'">
       <div class="vg-play">▶</div>
     </div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Kubernetes Architecture Explained — CKA Course</p>
-      <p class="vg-creator">KodeKloud / Mumshad Mannambeth</p>
+      <p class="vg-creator">KodeKloud</p>
       <p class="vg-duration">~18 min</p>
     </div>
   </a>
@@ -51,7 +51,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+backup+restore+kubernetes+CKA+etcdctl" data-video-id="ZdgmJYT4Xfk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+backup+restore+kubernetes+CKA+etcdctl" data-video-id="R2wuFCYgnm4" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #dc2626, #9333ea);">
       <span>💾</span>
       <div class="vg-play">▶</div>
@@ -59,7 +59,7 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">etcd Backup and Restore — CKA Exam</p>
-      <p class="vg-creator">KodeKloud / Mumshad Mannambeth</p>
+      <p class="vg-creator">Tech Tutorials with Piyush</p>
       <p class="vg-duration">~15 min</p>
     </div>
   </a>
@@ -122,7 +122,7 @@
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+static+pods+explained+manifest+directory" data-video-id="kgOfkBhDyL0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+static+pods+explained+manifest+directory" data-video-id="-q4l7i6iglE" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #92400e, #b45309);">
       <span>📄</span>
       <div class="vg-play">▶</div>
@@ -130,12 +130,12 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Static Pods in Kubernetes — How the Control Plane Bootstraps</p>
-      <p class="vg-creator">KodeKloud / Mumshad Mannambeth</p>
+      <p class="vg-creator">Techi Nik</p>
       <p class="vg-duration">~12 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+cluster+installation+kubeadm+Kunal+Kushwaha" data-video-id="KVON1lMkSqk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+cluster+installation+kubeadm+Kunal+Kushwaha" data-video-id="j3a2Sr2n8eQ" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #7c3aed, #c026d3);">
       <span>⚙️</span>
       <div class="vg-play">▶</div>
@@ -143,12 +143,12 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Complete Kubernetes Cluster Installation with kubeadm</p>
-      <p class="vg-creator">Kunal Kushwaha</p>
+      <p class="vg-creator">KubeSkills</p>
       <p class="vg-duration">~35 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+high+availability+HA+cluster+stacked+external+etcd" data-video-id="rQOrNRqSMEI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+high+availability+HA+cluster+stacked+external+etcd" data-video-id="Apwbp4-CZno" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #0f766e, #0891b2);">
       <span>🏗️</span>
       <div class="vg-play">▶</div>
@@ -156,7 +156,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Kubernetes High Availability — Stacked vs External etcd</p>
-      <p class="vg-creator">KodeKloud / Mumshad Mannambeth</p>
+      <p class="vg-creator">networknutsdotnet</p>
       <p class="vg-duration">~18 min</p>
     </div>
   </a>
@@ -167,7 +167,7 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+raft+consensus+algorithm+explained+distributed" data-video-id="vYwT__nIXWY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=etcd+raft+consensus+algorithm+explained+distributed" data-video-id="n9VKAKwBj_0" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #991b1b, #7c3aed);">
       <span>🔬</span>
       <div class="vg-play">▶</div>
@@ -175,12 +175,12 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">etcd and Raft Consensus — How Distributed State Really Works</p>
-      <p class="vg-creator">IBM Technology</p>
+      <p class="vg-creator">CNCF [Cloud Native Computing Foundation]</p>
       <p class="vg-duration">~14 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=containerd+container+runtime+interface+CRI+Kubernetes+Rawkode" data-video-id="m1_IXhfa30k" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=containerd+container+runtime+interface+CRI+Kubernetes+Rawkode" data-video-id="RyXL1zOa8Bw" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #1e3a5f, #2563eb);">
       <span>📦</span>
       <div class="vg-play">▶</div>
@@ -188,12 +188,12 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">containerd and the Container Runtime Interface (CRI) Deep Dive</p>
-      <p class="vg-creator">Rawkode (David McKay)</p>
+      <p class="vg-creator">CNCF [Cloud Native Computing Foundation]</p>
       <p class="vg-duration">~30 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubelet+internals+how+it+works+Kubernetes+deep+dive" data-video-id="F-p_7XguqXk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubelet+internals+how+it+works+Kubernetes+deep+dive" data-video-id="JOJevE39uiI" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #166534, #15803d);">
       <span>🔩</span>
       <div class="vg-play">▶</div>
@@ -201,12 +201,12 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Inside the kubelet — Node Agent Internals</p>
-      <p class="vg-creator">Kunal Kushwaha</p>
+      <p class="vg-creator">Verbose DevOps</p>
       <p class="vg-duration">~25 min</p>
     </div>
   </a>
 
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+certificate+signing+request+CSR+approval+CKA" data-video-id="B5CbVBmGjrw" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+certificate+signing+request+CSR+approval+CKA" data-video-id="_9RZFbHKpZE" target="_blank" rel="noopener">
     <div class="vg-thumb" style="background: linear-gradient(135deg, #78350f, #d97706);">
       <span>📜</span>
       <div class="vg-play">▶</div>
@@ -214,7 +214,7 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Kubernetes Certificate Signing Requests — Approving Node CSRs</p>
-      <p class="vg-creator">KodeKloud / Mumshad Mannambeth</p>
+      <p class="vg-creator">DevOpsCertification</p>
       <p class="vg-duration">~10 min</p>
     </div>
   </a>

@@ -25,52 +25,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+troubleshooting+pods+kubectl+describe+crashloopbackoff" data-video-id="OTvFTTFUz3k">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+troubleshooting+pods+kubectl+describe+crashloopbackoff" data-video-id="AJfWn72zx7k">
   <div class="vg-thumb">🔍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">CKA Troubleshooting — Pod Failures Deep Dive</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Collabnix, Docker and DevOps</p>
     <span class="vg-duration">28 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+node+not+ready+kubelet+troubleshooting+CKA" data-video-id="H7K5x9BKBLU">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+node+not+ready+kubelet+troubleshooting+CKA" data-video-id="U6PRwv7dJ-U">
   <div class="vg-thumb">🖥️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Node NotReady — Kubelet Troubleshooting for CKA</p>
-    <p class="vg-creator">TechWorld with Nana</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <span class="vg-duration">22 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+application+failure+troubleshooting+kubectl+logs+describe" data-video-id="wlYHTHSIwGU">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+application+failure+troubleshooting+kubectl+logs+describe" data-video-id="4KOTjVE06BY">
   <div class="vg-thumb">🚨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes Application Failure Troubleshooting</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Is it Observable</p>
     <span class="vg-duration">19 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+service+endpoint+not+working+selector+troubleshoot" data-video-id="riy5r3Mvz3g">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+service+endpoint+not+working+selector+troubleshoot" data-video-id="dgVl_Yljrok">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes Service Endpoints and Selector Debugging</p>
-    <p class="vg-creator">Mumshad Mannambeth</p>
+    <p class="vg-creator">CodeLucky</p>
     <span class="vg-duration">17 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+control+plane+troubleshooting+kube-apiserver+static+pods" data-video-id="A-ztMK3LQUU">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+control+plane+troubleshooting+kube-apiserver+static+pods" data-video-id="81nnmV4iXw4">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Control Plane Troubleshooting — API Server and Static Pods</p>
-    <p class="vg-creator">CKA Prep Academy</p>
+    <p class="vg-creator">Cloud With VarJosh</p>
     <span class="vg-duration">25 min</span>
   </div>
 </a>
@@ -83,52 +83,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+DNS+troubleshooting+coredns+nslookup+CKA" data-video-id="NkgDNJdF6x0">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+DNS+troubleshooting+coredns+nslookup+CKA" data-video-id="bM6wWMyrOTw">
   <div class="vg-thumb">🌐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Kubernetes DNS Troubleshooting — CoreDNS and nslookup</p>
-    <p class="vg-creator">Sander van Vugt</p>
+    <p class="vg-creator">DevOps Interview Cloud</p>
     <span class="vg-duration">21 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+imagepullbackoff+OOMKilled+pod+status+troubleshoot" data-video-id="4ht22ynLsgA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+imagepullbackoff+OOMKilled+pod+status+troubleshoot" data-video-id="ULitVDnqy8Y">
   <div class="vg-thumb">🐳<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">ImagePullBackOff, OOMKilled, and Pending — Pod Status Reference</p>
-    <p class="vg-creator">TechWorld with Nana</p>
+    <p class="vg-creator">TechyWithLorna</p>
     <span class="vg-duration">18 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+etcd+troubleshooting+etcdctl+backup+restore+CKA" data-video-id="ZdgmJYT4Xfk">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+etcd+troubleshooting+etcdctl+backup+restore+CKA" data-video-id="R2wuFCYgnm4">
   <div class="vg-thumb">🗄️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">etcd Troubleshooting and Backup/Restore for CKA</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <span class="vg-duration">30 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+networkpolicy+traffic+debug+pod+connectivity" data-video-id="VLfxFT8XLBA">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+networkpolicy+traffic+debug+pod+connectivity" data-video-id="pIzkMxLEld8">
   <div class="vg-thumb">🛡️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">NetworkPolicy Debugging — Tracing Blocked Traffic</p>
-    <p class="vg-creator">Anton Putra</p>
+    <p class="vg-creator">SavageCamp</p>
     <span class="vg-duration">24 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=crictl+kubernetes+container+runtime+debug+commands" data-video-id="oKDjqKJBVbY">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=crictl+kubernetes+container+runtime+debug+commands" data-video-id="sP2W1CzByp8">
   <div class="vg-thumb">📦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">crictl Commands — Debugging Without kubectl</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Sander van Vugt, RhatCertification</p>
     <span class="vg-duration">15 min</span>
   </div>
 </a>
@@ -141,32 +141,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+troubleshooting+exam+tips+speed+CKA+2024" data-video-id="c6SNd6M7-eI">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+troubleshooting+exam+tips+speed+CKA+2024" data-video-id="QxGy719Xotc">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">CKA Troubleshooting Speed Strategies — 4 Min Per Task</p>
-    <p class="vg-creator">That DevOps Guy</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <span class="vg-duration">33 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+journalctl+systemd+kubelet+logs+diagnosis" data-video-id="8mU2ge59-8A">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+journalctl+systemd+kubelet+logs+diagnosis" data-video-id="DfQZaxfyceY">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">journalctl and systemd — Reading Kubelet and System Logs</p>
-    <p class="vg-creator">Linux Foundation</p>
+    <p class="vg-creator">osgroup-techies</p>
     <span class="vg-duration">20 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+init+container+troubleshoot+debug+CKA" data-video-id="5oGZhF5PEsE">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+init+container+troubleshoot+debug+CKA" data-video-id="6tTu-Q79Aus">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Init Container Failures — Diagnosis and Fixes</p>
-    <p class="vg-creator">Mumshad Mannambeth</p>
+    <p class="vg-creator">DevopsGuru</p>
     <span class="vg-duration">16 min</span>
   </div>
 </a>
@@ -181,12 +181,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ephemeral+debug+container+kubectl+debug+pod" data-video-id="Q04lQ8s1TCM">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+ephemeral+debug+container+kubectl+debug+pod" data-video-id="TJozPhWIACY">
   <div class="vg-thumb">🔬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">kubectl debug — Ephemeral Containers for Live Pod Debugging</p>
-    <p class="vg-creator">Anton Putra</p>
+    <p class="vg-creator">CodeLucky</p>
     <span class="vg-duration">18 min</span>
   </div>
 </a>

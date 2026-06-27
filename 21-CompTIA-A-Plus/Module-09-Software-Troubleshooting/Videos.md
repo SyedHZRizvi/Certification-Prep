@@ -50,12 +50,12 @@
       <span class="vg-duration">⏱ 12 min · Sit alongside Module 8</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+sfc+dism+chkdsk+tutorial" data-video-id="BKMSzeu5J1o" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Dion+Training+sfc+dism+chkdsk+tutorial" data-video-id="2gPUalXQKmg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">sfc / dism / chkdsk Walkthrough</p>
-      <p class="vg-creator">Dion Training</p>
+      <p class="vg-creator">OnlineComputerTips</p>
       <span class="vg-duration">⏱ 14 min · The repair trio</span>
     </div>
   </a>

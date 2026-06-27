@@ -87,7 +87,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">RAID Explained, 0/1/5/6/10</p>
-      <p class="vg-creator">Gamers Nexus</p>
+      <p class="vg-creator">Global Technology Options</p>
       <span class="vg-duration">⏱ 16 min · Performance + redundancy</span>
     </div>
   </a>
@@ -96,7 +96,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">NVMe SSDs Explained</p>
-      <p class="vg-creator">ExplainingComputers</p>
+      <p class="vg-creator">Newegg Studios</p>
       <span class="vg-duration">⏱ 12 min · M.2 keying, PCIe gens</span>
     </div>
   </a>
@@ -110,16 +110,16 @@
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Thermal Paste Application Guide</p>
-      <p class="vg-creator">JayzTwoCents</p>
+      <p class="vg-creator">Modders Inc Tech Reviews</p>
       <span class="vg-duration">⏱ 15 min · Hands-on technique</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+80+plus+psu+ratings+explained" data-video-id="G4a6HNPIkZI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Hardware+Canucks+80+plus+psu+ratings+explained" data-video-id="dOXTZizoknc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">80 PLUS PSU Ratings Explained</p>
-      <p class="vg-creator">Hardware Canucks</p>
+      <p class="vg-creator">Techquickie</p>
       <span class="vg-duration">⏱ 18 min · Gold vs Platinum vs Titanium</span>
     </div>
   </a>

@@ -66,12 +66,12 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Entra+Domain+Services+managed+domain+Azure+walkthrough" data-video-id="Ra9e4nD8lW8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Entra+Domain+Services+managed+domain+Azure+walkthrough" data-video-id="ZqOaZ3Oeeko" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Entra Domain Services, Managed AD in Azure</p>
-      <p class="vg-creator">Inside Cloud and Security</p>
+      <p class="vg-creator">Travis Roberts</p>
       <span class="vg-duration">⏱ 15 min · Legacy app lift-and-shift</span>
     </div>
   </a>

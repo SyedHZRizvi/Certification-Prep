@@ -84,12 +84,12 @@
       <span class="vg-duration">⏱ 18 min · The remote action decision tree</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+IME+log+troubleshooting+app+install" data-video-id="3Iou5GBdWAc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Intune+IME+log+troubleshooting+app+install" data-video-id="CrsaoUeYv68" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">IME Log Diving, Win32 App Install Debugging</p>
-      <p class="vg-creator">Peter van der Woude</p>
+      <p class="vg-creator">Intune Training</p>
       <span class="vg-duration">⏱ 16 min · The IME log path</span>
     </div>
   </a>

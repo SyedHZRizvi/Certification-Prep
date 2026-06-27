@@ -38,7 +38,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+ServiceAccount+tutorial+CKA+exam" data-video-id="Cfb_7rPAYMs" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+ServiceAccount+tutorial+CKA+exam" data-video-id="5bLqjQuhvRQ" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🪪
     <div class="vg-play">▶</div>
@@ -46,12 +46,12 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubernetes ServiceAccounts Deep Dive — CKA Exam Prep</p>
-    <p class="vg-creator">TechWorld with Nana</p>
+    <p class="vg-creator">CodeLucky</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+auth+can-i+RBAC+verification+Kubernetes" data-video-id="SJiVzqJSm08" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+auth+can-i+RBAC+verification+Kubernetes" data-video-id="2pVSr64p-IA" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔍
     <div class="vg-play">▶</div>
@@ -59,7 +59,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">kubectl auth can-i — Verify RBAC Permissions Live</p>
-    <p class="vg-creator">Killer.sh / CKA Tips</p>
+    <p class="vg-creator">Tech with Lian</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
@@ -90,7 +90,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubeconfig+contexts+clusters+users+kubectl+config+CKA" data-video-id="OTvFTTFUz3k" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubeconfig+contexts+clusters+users+kubectl+config+CKA" data-video-id="JjuZbUPKspM" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📋
     <div class="vg-play">▶</div>
@@ -98,7 +98,7 @@
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Kubeconfig Deep Dive: Clusters, Users, Contexts — kubectl config commands</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">CodeLucky</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
@@ -111,7 +111,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+admission+webhooks+MutatingWebhookConfiguration+ValidatingWebhookConfiguration" data-video-id="qlSuOhNFMhU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+admission+webhooks+MutatingWebhookConfiguration+ValidatingWebhookConfiguration" data-video-id="w87K-DU8Mp4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🪝
     <div class="vg-play">▶</div>
@@ -119,12 +119,12 @@
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Kubernetes Admission Webhooks: Mutating and Validating Explained</p>
-    <p class="vg-creator">That DevOps Guy</p>
+    <p class="vg-creator">Drewbernetes</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+image+pull+secrets+private+registry+docker" data-video-id="C8GzOBTmCZg" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+image+pull+secrets+private+registry+docker" data-video-id="5p-Qw1zxoWE" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🐳
     <div class="vg-play">▶</div>
@@ -132,7 +132,7 @@
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Kubernetes Private Registry: imagePullSecrets and ServiceAccount Patching</p>
-    <p class="vg-creator">DevOps Toolkit</p>
+    <p class="vg-creator">Cloud With VarJosh</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
@@ -150,7 +150,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+security+exam+tips+RBAC+common+mistakes+2024" data-video-id="Wf13DQGoQRE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+security+exam+tips+RBAC+common+mistakes+2024" data-video-id="jWs1_TfPQoQ" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🎯
     <div class="vg-play">▶</div>
@@ -158,7 +158,7 @@
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">CKA Security Section: Common Mistakes and Exam Strategies (2024)</p>
-    <p class="vg-creator">Killer.sh</p>
+    <p class="vg-creator">Alta3 Research</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
@@ -171,7 +171,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+ClusterRole+aggregation+rules" data-video-id="6D7iFkESmRo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+RBAC+ClusterRole+aggregation+rules" data-video-id="DswQe7shSa4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🧩
     <div class="vg-play">▶</div>
@@ -179,7 +179,7 @@
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">RBAC Aggregation: Building Composite ClusterRoles at Scale</p>
-    <p class="vg-creator">Kubernetes Community</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
@@ -197,7 +197,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OPA+Gatekeeper+policy+enforcement" data-video-id="v4wanljQmM4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OPA+Gatekeeper+policy+enforcement" data-video-id="14lGc7xMAe4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔒
     <div class="vg-play">▶</div>
@@ -205,12 +205,12 @@
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">OPA Gatekeeper: Policy as Code Beyond Pod Security Standards</p>
-    <p class="vg-creator">That DevOps Guy</p>
+    <p class="vg-creator">DevOps &amp; AI Toolkit</p>
     <p class="vg-duration">~40 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OIDC+authentication+Dex+identity+provider" data-video-id="DmIT7f4bTUM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Kubernetes+OIDC+authentication+Dex+identity+provider" data-video-id="AaJUKPiLp7c" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔑
     <div class="vg-play">▶</div>
@@ -218,7 +218,7 @@
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">OIDC Authentication in Kubernetes with Dex — Enterprise SSO</p>
-    <p class="vg-creator">DevOps Toolkit</p>
+    <p class="vg-creator">Mirantis</p>
     <p class="vg-duration">~45 min</p>
   </div>
 </a>

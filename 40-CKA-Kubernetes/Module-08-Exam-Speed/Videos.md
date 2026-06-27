@@ -25,7 +25,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+tips+kubectl+speed+tricks" data-video-id="c6SNd6M7-eI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+exam+tips+kubectl+speed+tricks" data-video-id="8LJibrSurKA" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ⚡
     <div class="vg-play">▶</div>
@@ -38,7 +38,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+imperative+commands+CKA+dry-run+yaml" data-video-id="5oGZhF5PEsE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+imperative+commands+CKA+dry-run+yaml" data-video-id="QOv26a-yaq8" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🛠️
     <div class="vg-play">▶</div>
@@ -46,7 +46,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Imperative kubectl Commands for CKA — dry-run, expose, create</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">Nilesh Gule</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
@@ -77,7 +77,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+context+switching+kubeconfig+exam+strategy" data-video-id="SJiVzqJSm08" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+context+switching+kubeconfig+exam+strategy" data-video-id="Q9ztIaJtz2A" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔀
     <div class="vg-play">▶</div>
@@ -85,7 +85,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">CKA Context Switching — kubeconfig and Multi-Cluster Exam Strategy</p>
-    <p class="vg-creator">Mumshad Mannambeth</p>
+    <p class="vg-creator">CodeLucky</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
@@ -98,7 +98,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+YAML+skeleton+templates+pod+deployment+service" data-video-id="pV0LwPf6eCo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+YAML+skeleton+templates+pod+deployment+service" data-video-id="1I4xqhN6t1A" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📄
     <div class="vg-play">▶</div>
@@ -106,12 +106,12 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">YAML Skeletons for CKA — Pod, Deployment, Service, PV, NetworkPolicy</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">DevopsCube</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+time+management+strategy+pass+exam+2024" data-video-id="QbFHjNmJPUo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+time+management+strategy+pass+exam+2024" data-video-id="-8MWoss_y3c" target="_blank" rel="noopener">
   <div class="vg-thumb">
     ⏱️
     <div class="vg-play">▶</div>
@@ -119,12 +119,12 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">CKA Time Management: How to Pace 17 Tasks in 120 Minutes</p>
-    <p class="vg-creator">DevOps Journey</p>
+    <p class="vg-creator">Cloud Guru</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+explain+command+kubernetes+documentation" data-video-id="B3C1rl7FKWM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubectl+explain+command+kubernetes+documentation" data-video-id="AqMSh-OcoKk" target="_blank" rel="noopener">
   <div class="vg-thumb">
     📚
     <div class="vg-play">▶</div>
@@ -132,12 +132,12 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">kubectl explain — Your Live Reference During the CKA Exam</p>
-    <p class="vg-creator">That DevOps Guy</p>
+    <p class="vg-creator">CodeLucky</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+passed+lessons+learned+advice+2024" data-video-id="Wf13DQGoQRE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+passed+lessons+learned+advice+2024" data-video-id="srINQe3iB14" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🏆
     <div class="vg-play">▶</div>
@@ -145,12 +145,12 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">I Passed the CKA — Honest Lessons, Mistakes, and What I'd Do Differently</p>
-    <p class="vg-creator">TechWorld with Nana</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kubectl+cheat+sheet+productivity+tips" data-video-id="feLpd-0ibfQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+kubectl+cheat+sheet+productivity+tips" data-video-id="HV0nWNUFg0U" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🗒️
     <div class="vg-play">▶</div>
@@ -158,7 +158,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">kubectl Cheat Sheet Deep Dive — 30 Commands to Master</p>
-    <p class="vg-creator">Bret Fisher Docker and DevOps</p>
+    <p class="vg-creator">Farida's TechData Hub</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
@@ -171,7 +171,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+mock+exam+solutions+explained+all+questions" data-video-id="OTvFTTFUz3k" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+mock+exam+solutions+explained+all+questions" data-video-id="9Qxri5RnYkk" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🧪
     <div class="vg-play">▶</div>
@@ -179,7 +179,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">CKA Mock Exam — Full Solutions Walkthrough (All Questions)</p>
-    <p class="vg-creator">KodeKloud</p>
+    <p class="vg-creator">CCNADailyTIPS</p>
     <p class="vg-duration">~55 min</p>
   </div>
 </a>
@@ -197,7 +197,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jsonpath+output+formatting+kubectl" data-video-id="0REa8Q2kcP4" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kubernetes+jsonpath+output+formatting+kubectl" data-video-id="l9_UDSaiFj4" target="_blank" rel="noopener">
   <div class="vg-thumb">
     🔍
     <div class="vg-play">▶</div>
@@ -205,12 +205,12 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">kubectl Output Formatting — JSONPath and Custom Columns for CKA</p>
-    <p class="vg-creator">DevOps Toolkit</p>
+    <p class="vg-creator">Tech Tutorials with Piyush</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+CKAD+exam+environment+PSI+browser+tips" data-video-id="rQOrNRqSMEI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CKA+CKAD+exam+environment+PSI+browser+tips" data-video-id="Su4zIWJKIHs" target="_blank" rel="noopener">
   <div class="vg-thumb">
     💻
     <div class="vg-play">▶</div>
@@ -218,7 +218,7 @@ These videos are curated specifically for CKA exam speed, live-terminal fluency,
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">CKA Exam Environment — PSI Browser, Notepad, and Remote Desktop Tips</p>
-    <p class="vg-creator">Mumshad Mannambeth</p>
+    <p class="vg-creator">Vidhita Kher</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>
