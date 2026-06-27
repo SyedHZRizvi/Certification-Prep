@@ -25,30 +25,30 @@
 ## ⭐ Essential watching (~60 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="7j_NE6Pjv-E" href="https://www.youtube.com/results?search_query=Anthropic+Model+Context+Protocol+announcement+introduction" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="CQywdSdi5iA" href="https://www.youtube.com/results?search_query=Anthropic+Model+Context+Protocol+announcement+introduction" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Introducing the Model Context Protocol</p>
-      <p class="vg-creator">Anthropic (Nov 2024 launch)</p>
+      <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 18 min · The official intro</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+server+build+tutorial+Python" data-video-id="ALbC-gI3N_E" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+server+build+tutorial+Python" data-video-id="RhTiAOGwbYE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Build Your First MCP Server (Python)</p>
-      <p class="vg-creator">Anthropic / community</p>
+      <p class="vg-creator">KodeKloud</p>
       <span class="vg-duration">⏱ 20 min · Walkthrough</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+Desktop+MCP+filesystem+github+setup" data-video-id="D47eAJb9dXg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+Desktop+MCP+filesystem+github+setup" data-video-id="0-0BR3H28ic" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Claude Desktop + MCP Servers Setup</p>
-      <p class="vg-creator">Anthropic / community</p>
+      <p class="vg-creator">Harshit Tyagi</p>
       <span class="vg-duration">⏱ 15 min · Configuration walkthrough</span>
     </div>
   </a>
@@ -66,39 +66,39 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+TypeScript+SDK+tutorial+build+server" data-video-id="Xa-Fm6BSQNM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+TypeScript+SDK+tutorial+build+server" data-video-id="XC49e0pliEE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">MCP TypeScript SDK, Build a Server</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">logicBase Labs</p>
       <span class="vg-duration">⏱ 18 min · TS-flavored</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+stdio+vs+SSE+transport+differences" data-video-id="gZHKFikKoVc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+stdio+vs+SSE+transport+differences" data-video-id="SDOHGfR5abM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">stdio vs SSE Transports, Trade-offs</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Kreate Kloud</p>
       <span class="vg-duration">⏱ 12 min · Local vs remote</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cursor+MCP+server+integration+tutorial" data-video-id="cHdQwM1apRQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Cursor+MCP+server+integration+tutorial" data-video-id="RkPU7eCG_FM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Cursor + MCP Server Integration</p>
-      <p class="vg-creator">Cursor / community</p>
+      <p class="vg-creator">DSwithBappy</p>
       <span class="vg-duration">⏱ 15 min · Editor-side flow</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Block+Goose+open+source+Claude+agent+MCP" data-video-id="TvnYmWpD_9Y" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Block+Goose+open+source+Claude+agent+MCP" data-video-id="hFFwgyQeEQc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Goose, Block's Open-Source MCP-First Agent</p>
-      <p class="vg-creator">Block</p>
+      <p class="vg-creator">goose OSS</p>
       <span class="vg-duration">⏱ 10 min · Production MCP at scale</span>
     </div>
   </a>
@@ -107,39 +107,39 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+server+registry+mcphub+browse+install" data-video-id="9m9DhAoMIUQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+server+registry+mcphub+browse+install" data-video-id="W19jh6nbFwY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">MCP Server Registries (mcp.so, mcphub)</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">AI Anytime</p>
       <span class="vg-duration">⏱ 15 min · Ecosystem tour</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+security+remote+server+OAuth+best+practices" data-video-id="ZSfQMQmKEiU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+security+remote+server+OAuth+best+practices" data-video-id="gl6U8s3zStI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Securing Remote MCP Servers</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Alejandro AO</p>
       <span class="vg-duration">⏱ 25 min · OAuth + mTLS patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+JSON-RPC+spec+protocol+walkthrough" data-video-id="B-GKQ6BFGAI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+JSON-RPC+spec+protocol+walkthrough" data-video-id="yscqs6Ks9fk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">MCP JSON-RPC Spec Walkthrough</p>
-      <p class="vg-creator">spec authors / community</p>
+      <p class="vg-creator">Dallas Software Developers</p>
       <span class="vg-duration">⏱ 30 min · The wire protocol</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+vs+OpenAI+function+calling+vs+LangChain+tools" data-video-id="F7tkB-WtPlA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MCP+vs+OpenAI+function+calling+vs+LangChain+tools" data-video-id="TlIOk8VuEBU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">MCP vs Function Calling vs LangChain Tools</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Piyush Garg</p>
       <span class="vg-duration">⏱ 18 min · Where each fits</span>
     </div>
   </a>

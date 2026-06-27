@@ -71,12 +71,12 @@
       <span class="vg-duration">⏱ 25m · GUI automation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+swarm+agents+sdk+walkthrough" data-video-id="mPSC8P8kD9k" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+swarm+agents+sdk+walkthrough" data-video-id="mTE-VLVh63w" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">OpenAI Swarm / Agents SDK, walkthrough</p>
-      <p class="vg-creator">OpenAI DevRel</p>
+      <p class="vg-creator">AI Bites</p>
       <span class="vg-duration">⏱ 30m · Handoff-based pattern</span>
     </div>
   </a>
@@ -112,21 +112,21 @@
       <span class="vg-duration">⏱ 20m · The post-AutoGPT consensus</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=metagpt+software+team+agents" data-video-id="hQm_uT3BNEU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=metagpt+software+team+agents" data-video-id="AwnltW8n74A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">MetaGPT, software team metaphor</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Tosh Velaga</p>
       <span class="vg-duration">⏱ 30m · Opinionated FT structure</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=reflexion+self+reflection+agent+paper" data-video-id="6lkZmFWfKIo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=reflexion+self+reflection+agent+paper" data-video-id="MzZGi2JeNq0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Reflexion, self-critique loops</p>
-      <p class="vg-creator">paper review</p>
+      <p class="vg-creator">Trend in Research</p>
       <span class="vg-duration">⏱ 25m · The reflection pattern</span>
     </div>
   </a>

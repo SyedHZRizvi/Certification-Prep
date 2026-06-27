@@ -39,12 +39,12 @@
       <span class="vg-duration">⏱ 45m · Faithfulness/relevancy/precision/recall</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=llm+as+judge+biases+mtbench" data-video-id="LNrci0Z5wgM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=llm+as+judge+biases+mtbench" data-video-id="LHBwzmsTWkc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">LLM-as-Judge, biases and mitigations</p>
-      <p class="vg-creator">paper review</p>
+      <p class="vg-creator">onepagecode</p>
       <span class="vg-duration">⏱ 30m · MT-Bench lessons</span>
     </div>
   </a>
@@ -62,30 +62,30 @@
 ## 📚 Recommended
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=promptfoo+ab+testing+prompts" data-video-id="OCk0pGGWIlA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=promptfoo+ab+testing+prompts" data-video-id="KhINc5XwhKs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Promptfoo, A/B testing prompts</p>
-      <p class="vg-creator">Promptfoo</p>
+      <p class="vg-creator">IndyDevDan</p>
       <span class="vg-duration">⏱ 30m · YAML-driven experiments</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=arize+phoenix+rag+evaluation" data-video-id="mJoQwpIEv0E" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=arize+phoenix+rag+evaluation" data-video-id="kf2MU0MNHqQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Arize Phoenix, open-source RAG eval</p>
-      <p class="vg-creator">Arize</p>
+      <p class="vg-creator">Arize AI</p>
       <span class="vg-duration">⏱ 40m · Trace + eval together</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=geval+evaluation+rubric+chain+of+thought" data-video-id="EGWHH0MUIPI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=geval+evaluation+rubric+chain+of+thought" data-video-id="IEXr9xZNZK4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">G-Eval, rubric + CoT judge</p>
-      <p class="vg-creator">paper review</p>
+      <p class="vg-creator">Coding with Neeraj</p>
       <span class="vg-duration">⏱ 25m · Better than vanilla judge</span>
     </div>
   </a>
@@ -103,39 +103,39 @@
 ## 🍿 Optional
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+evals+library+tutorial" data-video-id="VjJVeH7cT4A" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=openai+evals+library+tutorial" data-video-id="pgyhq-WagIg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">OpenAI Evals, library tour</p>
-      <p class="vg-creator">OpenAI DevRel</p>
+      <p class="vg-creator">Manny Bernabe</p>
       <span class="vg-duration">⏱ 30m · YAML + Python evals</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+evals+harness+repository" data-video-id="pL1uKrwNkig" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anthropic+evals+harness+repository" data-video-id="pDp8Gm64EmY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Anthropic Evals, open-source harness</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">LiftoffPM</p>
       <span class="vg-duration">⏱ 25m · Their internal-ish eval framework</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=inspect+ai+ukaisi+frontier+evals" data-video-id="tTWeNnFBVus" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=inspect+ai+ukaisi+frontier+evals" data-video-id="_UY49Q_qFhs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Inspect AI, frontier safety evals</p>
-      <p class="vg-creator">UK AISI</p>
+      <p class="vg-creator">Hamel Husain</p>
       <span class="vg-duration">⏱ 35m · Gold-standard rigor</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=trulens+open+source+rag+evaluation" data-video-id="wE4o3Xl-7LM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=trulens+open+source+rag+evaluation" data-video-id="ul5huLywzZk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">TruLens, open-source RAG eval</p>
-      <p class="vg-creator">TruLens</p>
+      <p class="vg-creator">Johannes Jolkkonen | Funktio AI</p>
       <span class="vg-duration">⏱ 30m · Alternative to RAGAS</span>
     </div>
   </a>

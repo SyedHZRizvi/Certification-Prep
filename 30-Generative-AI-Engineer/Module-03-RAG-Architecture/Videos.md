@@ -114,12 +114,12 @@
       <span class="vg-duration">⏱ 35m · Retrieval tokens learned</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+long+context+attention" data-video-id="vcaBGHiwTEI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=lost+in+the+middle+long+context+attention" data-video-id="Kf3LeaUGwlg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">"Lost in the Middle", Liu et al. explained</p>
-      <p class="vg-creator">paper review</p>
+      <p class="vg-creator">Weaviate vector database</p>
       <span class="vg-duration">⏱ 20m · Why long context isn't a panacea</span>
     </div>
   </a>

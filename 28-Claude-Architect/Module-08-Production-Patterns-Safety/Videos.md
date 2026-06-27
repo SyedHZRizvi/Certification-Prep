@@ -43,16 +43,16 @@
       <span class="vg-duration">⏱ 20 min · The threat taxonomy</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+prompt+injection+defense+best+practices" data-video-id="L_2BMDM4jMk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Claude+prompt+injection+defense+best+practices" data-video-id="uAkn7J9UrEY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Anthropic-Recommended Injection Defenses</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">KryptoMindz Technologies</p>
       <span class="vg-duration">⏱ 15 min · The Claude-specific playbook</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Langfuse+production+LLM+observability+tracing+tutorial" data-video-id="OqnfZpxC1KQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Langfuse+production+LLM+observability+tracing+tutorial" data-video-id="2E8iTvGo9Hs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -75,12 +75,12 @@
       <span class="vg-duration">⏱ 20 min · BAA, residency, VPC endpoints</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Helicone+LLM+proxy+observability+cost+monitor" data-video-id="YHGrHoV_0PE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Helicone+LLM+proxy+observability+cost+monitor" data-video-id="T_hlj1U-64U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Helicone, Drop-in LLM Observability</p>
-      <p class="vg-creator">Helicone</p>
+      <p class="vg-creator">Gui Ferreira</p>
       <span class="vg-duration">⏱ 12 min · Cost + latency dashboards</span>
     </div>
   </a>
@@ -93,12 +93,12 @@
       <span class="vg-duration">⏱ 18 min · Pre-launch adversarial testing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+architecture+talk" data-video-id="f4xwzR1v47s" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+architecture+talk" data-video-id="pw9kRVjVXTc" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Klarna AI Assistant, Architecture & Lessons</p>
-      <p class="vg-creator">Klarna / various conferences</p>
+      <p class="vg-creator">Charter</p>
       <span class="vg-duration">⏱ 25 min · Production at scale</span>
     </div>
   </a>
@@ -107,21 +107,21 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Promptfoo+CI+eval+tutorial+LLM" data-video-id="h68HoLrEudc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Promptfoo+CI+eval+tutorial+LLM" data-video-id="KhINc5XwhKs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Promptfoo, CI Evals for Prompts</p>
-      <p class="vg-creator">Promptfoo</p>
+      <p class="vg-creator">IndyDevDan</p>
       <span class="vg-duration">⏱ 25 min · Open-source eval CLI</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Presidio+PII+detection+LLM" data-video-id="9qM_aIniXcE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Microsoft+Presidio+PII+detection+LLM" data-video-id="4GuK9sPUvus" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Microsoft Presidio, PII Detection at Input/Output</p>
-      <p class="vg-creator">Microsoft</p>
+      <p class="vg-creator">M&M Tech</p>
       <span class="vg-duration">⏱ 15 min · Open-source PII tool</span>
     </div>
   </a>
@@ -134,12 +134,12 @@
       <span class="vg-duration">⏱ 20 min · Governance for AI teams</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+kill+switch+blast+radius+rollback+production" data-video-id="xU2M1nfRf0U" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=LLM+kill+switch+blast+radius+rollback+production" data-video-id="d7pMs5Lh6oQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Kill Switches & Blast Radius for LLM Apps</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">Uplatz</p>
       <span class="vg-duration">⏱ 18 min · Operational discipline</span>
     </div>
   </a>

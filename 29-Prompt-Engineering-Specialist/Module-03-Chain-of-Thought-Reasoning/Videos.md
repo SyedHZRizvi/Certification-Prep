@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 12 min · The 7-word trick</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="5F0F4VYRqC4" href="https://www.youtube.com/results?search_query=OpenAI+o1+reasoning+model+walkthrough+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7J44j6Fw8NM" href="https://www.youtube.com/results?search_query=OpenAI+o1+reasoning+model+walkthrough+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,12 +66,12 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="6oJBTNLMvgk" href="https://www.youtube.com/results?search_query=self+consistency+chain+of+thought+wang+2022+majority+vote" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="71YE6-QBV6w" href="https://www.youtube.com/results?search_query=self+consistency+chain+of+thought+wang+2022+majority+vote" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Self-Consistency (Wang et al. 2022)</p>
-      <p class="vg-creator">Yannic Kilcher</p>
+      <p class="vg-creator">mardin mardin</p>
       <span class="vg-duration">⏱ 22 min · Majority-vote reasoning</span>
     </div>
   </a>
@@ -84,12 +84,12 @@
       <span class="vg-duration">⏱ 16 min · Thought → Action → Observation</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="lfV0MsGIU8o" href="https://www.youtube.com/results?search_query=tree+of+thoughts+yao+game+of+24+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FythUChnvBY" href="https://www.youtube.com/results?search_query=tree+of+thoughts+yao+game+of+24+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Tree-of-Thought, Game of 24 Demo</p>
-      <p class="vg-creator">AI Coffee Break</p>
+      <p class="vg-creator">DSAIL SKKU</p>
       <span class="vg-duration">⏱ 14 min · Search-based reasoning</span>
     </div>
   </a>
@@ -98,25 +98,25 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="T0jLKmIzGoA" href="https://www.youtube.com/results?search_query=DeepSeek+R1+open+source+reasoning+model+explained" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="S-Yu57i901k" href="https://www.youtube.com/results?search_query=DeepSeek+R1+open+source+reasoning+model+explained" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">DeepSeek R1, Open-Source Reasoning</p>
-      <p class="vg-creator">AI Explained</p>
+      <p class="vg-creator">AI Bites</p>
       <span class="vg-duration">⏱ 28 min · January 2025 launch</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="L1NQoQivAbA" href="https://www.youtube.com/results?search_query=faithfulness+chain+of+thought+post+hoc+reasoning" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QDJ8KW_iZM8" href="https://www.youtube.com/results?search_query=faithfulness+chain+of+thought+post+hoc+reasoning" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Are CoT Traces Actually Faithful?</p>
-      <p class="vg-creator">Anthropic Interpretability</p>
+      <p class="vg-creator">Arxiv Papers</p>
       <span class="vg-duration">⏱ 22 min · Hard truth</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="c_nCjkM11S0" href="https://www.youtube.com/results?search_query=GSM8K+benchmark+math+reasoning+LLM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=GSM8K+benchmark+math+reasoning+LLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>

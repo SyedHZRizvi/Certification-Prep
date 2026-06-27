@@ -114,16 +114,16 @@
       <span class="vg-duration">⏱ 50m · The PhD-level take</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=matryoshka+representation+learning+openai" data-video-id="p56H5OsLjEw" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=matryoshka+representation+learning+openai" data-video-id="7YBHdZkO470" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Matryoshka Representations, why text-embedding-3 truncates</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">ExplainingAI</p>
       <span class="vg-duration">⏱ 30m · 3072 → 256 dim trick</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=milvus+vector+database+billion+scale" data-video-id="zXuGSBnuXhM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=milvus+vector+database+billion+scale" data-video-id="_wLqhM9gcLQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -132,12 +132,12 @@
       <span class="vg-duration">⏱ 40m · DiskANN, IVF-PQ in production</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=splade+sparse+vector+search+naver" data-video-id="ZGVN2ArNkrQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=splade+sparse+vector+search+naver" data-video-id="0FQ2WmM0t3w" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">SPLADE, learned-sparse retrieval</p>
-      <p class="vg-creator">Naver Labs</p>
+      <p class="vg-creator">James Briggs</p>
       <span class="vg-duration">⏱ 35m · The hybrid future</span>
     </div>
   </a>

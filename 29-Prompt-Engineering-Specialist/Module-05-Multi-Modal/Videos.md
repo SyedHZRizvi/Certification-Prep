@@ -25,7 +25,7 @@
 ## ⭐ Essential watching (~55 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="oc6RV5c1yd0" href="https://www.youtube.com/results?search_query=GPT-4V+launch+vision+walkthrough+september+2023" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="RI-BxtCx32s" href="https://www.youtube.com/results?search_query=GPT-4V+launch+vision+walkthrough+september+2023" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -34,12 +34,12 @@
       <span class="vg-duration">⏱ 16 min · September 2023 demo</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="KEzL6VywPBQ" href="https://www.youtube.com/results?search_query=claude+3+vision+anthropic+tutorial+image+prompting" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="96-z6WWEBMY" href="https://www.youtube.com/results?search_query=claude+3+vision+anthropic+tutorial+image+prompting" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Claude Vision Prompting Best Practices</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">Rene Schulte</p>
       <span class="vg-duration">⏱ 18 min · Base64, multi-image, schemas</span>
     </div>
   </a>
@@ -66,7 +66,7 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="rtRRFBjmR9I" href="https://www.youtube.com/results?search_query=vision+LLM+vs+tesseract+textract+document+ai+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=vision+LLM+vs+tesseract+textract+document+ai+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -75,21 +75,21 @@
       <span class="vg-duration">⏱ 18 min · Where each wins</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="nIERcYzG3aY" href="https://www.youtube.com/results?search_query=GPT-5+audio+voice+mode+realtime+API+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="FxXiFH_uLyU" href="https://www.youtube.com/results?search_query=GPT-5+audio+voice+mode+realtime+API+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">GPT-5 Audio / Realtime API Walkthrough</p>
-      <p class="vg-creator">OpenAI / DevDay</p>
+      <p class="vg-creator">CORTIVOX</p>
       <span class="vg-duration">⏱ 16 min · Voice apps in 2026</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="JExF8c3Kimo" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="uLrReyH5cu0" href="https://www.youtube.com/results?search_query=multimodal+RAG+image+pdf+long+context" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Multi-Modal RAG (image + PDF + long context)</p>
-      <p class="vg-creator">LlamaIndex</p>
+      <p class="vg-creator">Alejandro AO</p>
       <span class="vg-duration">⏱ 14 min · Vision in RAG pipelines</span>
     </div>
   </a>
@@ -98,7 +98,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="5kl2NzRvbqA" href="https://www.youtube.com/results?search_query=ChartQA+benchmark+vision+LLM+evaluation" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=ChartQA+benchmark+vision+LLM+evaluation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,12 +116,12 @@
       <span class="vg-duration">⏱ 16 min · Open-weights VLMs</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="T0jLKmIzGoA" href="https://www.youtube.com/results?search_query=MMMU+benchmark+college+multimodal+evaluation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="zUEYB8GXLJo" href="https://www.youtube.com/results?search_query=MMMU+benchmark+college+multimodal+evaluation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">MMMU, College-Level Multi-Modal Eval</p>
-      <p class="vg-creator">AI Explained</p>
+      <p class="vg-creator">Arxiv Papers</p>
       <span class="vg-duration">⏱ 14 min · 2026 frontier scores</span>
     </div>
   </a>

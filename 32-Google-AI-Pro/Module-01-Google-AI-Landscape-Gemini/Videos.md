@@ -61,12 +61,12 @@
       <span class="vg-duration">⏱ 10 min · Picking the right tier</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+overview" data-video-id="FaTbtGfaWjA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+AI+Principles+responsible+AI+overview" data-video-id="3-xhMXeYIcg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Google AI Principles, The Governance Doc</p>
-      <p class="vg-creator">Google AI</p>
+      <p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 15 min · 7 principles + 4 red lines</span>
     </div>
   </a>
@@ -84,12 +84,12 @@
       <span class="vg-duration">⏱ 15 min · Model bake-off</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+DeepMind+merger+April+2023+Demis+Hassabis+story" data-video-id="0U30ys1QHFg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Google+DeepMind+merger+April+2023+Demis+Hassabis+story" data-video-id="U3d2OKEibQ4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">The Google Brain × DeepMind Merger Story</p>
-      <p class="vg-creator">Lex Fridman / Hard Fork / The Verge</p>
+      <p class="vg-creator">Hard Fork</p>
       <span class="vg-duration">⏱ 25 min · The reorg that produced Gemini</span>
     </div>
   </a>
@@ -134,12 +134,12 @@
       <span class="vg-duration">⏱ 25 min · Science from the same lab</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+Search+seller+assistant+case+study" data-video-id="CRXnt3QKJMQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mercado+Libre+Vertex+AI+Search+seller+assistant+case+study" data-video-id="qEhrg5-NOzk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Mercado Libre, Vertex AI Case Study</p>
-      <p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-creator">Google Cloud</p>
       <span class="vg-duration">⏱ 18 min · Real-world Vertex deployment</span>
     </div>
   </a>

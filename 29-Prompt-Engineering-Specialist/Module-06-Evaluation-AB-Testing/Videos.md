@@ -43,7 +43,7 @@
       <span class="vg-duration">⏱ 22 min · Why CoT in evals matters</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="9M4MIShKBCs" href="https://www.youtube.com/results?search_query=Anthropic+building+evals+for+claude+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KIGBsQqZcNA" href="https://www.youtube.com/results?search_query=Anthropic+building+evals+for+claude+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -66,30 +66,30 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="3v0EJqnFJJI" href="https://www.youtube.com/results?search_query=Promptfoo+tutorial+prompt+A+B+testing" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KhINc5XwhKs" href="https://www.youtube.com/results?search_query=Promptfoo+tutorial+prompt+A+B+testing" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Promptfoo, Quick A/B Testing</p>
-      <p class="vg-creator">Promptfoo</p>
+      <p class="vg-creator">IndyDevDan</p>
       <span class="vg-duration">⏱ 14 min · YAML-driven evals</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="XdiwKHIqg4A" href="https://www.youtube.com/results?search_query=OpenAI+Evals+framework+walkthrough" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pgyhq-WagIg" href="https://www.youtube.com/results?search_query=OpenAI+Evals+framework+walkthrough" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">OpenAI Evals, Full Walkthrough</p>
-      <p class="vg-creator">OpenAI</p>
+      <p class="vg-creator">Manny Bernabe</p>
       <span class="vg-duration">⏱ 18 min · The open-source framework</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="lfV0MsGIU8o" href="https://www.youtube.com/results?search_query=judging+LLM+as+judge+MT+bench+chatbot+arena+paper" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7tQvyM7Chrg" href="https://www.youtube.com/results?search_query=judging+LLM+as+judge+MT+bench+chatbot+arena+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Judging LLM-as-a-Judge (MT-Bench paper)</p>
-      <p class="vg-creator">LMSYS</p>
+      <p class="vg-creator">Sungkyunkwan University</p>
       <span class="vg-duration">⏱ 16 min · Position bias + defenses</span>
     </div>
   </a>
@@ -107,12 +107,12 @@
       <span class="vg-duration">⏱ 18 min · Datasets + judges + dashboards</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="c_nCjkM11S0" href="https://www.youtube.com/results?search_query=HELM+holistic+evaluation+language+models+stanford" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="fLoYcXLG6ro" href="https://www.youtube.com/results?search_query=HELM+holistic+evaluation+language+models+stanford" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">HELM, Holistic Evaluation of LMs</p>
-      <p class="vg-creator">Stanford CRFM</p>
+      <p class="vg-creator">PyTorch</p>
       <span class="vg-duration">⏱ 22 min · Academic benchmarking</span>
     </div>
   </a>

@@ -21,12 +21,12 @@
 ## ⭐ Essential (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="WFGo-nd5DCw" href="https://www.youtube.com/results?search_query=SageMaker+security+VPC+KMS+IAM+best+practices" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="asuYSd5OmAE" href="https://www.youtube.com/results?search_query=SageMaker+security+VPC+KMS+IAM+best+practices" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">SageMaker Security Best Practices</p>
-      <p class="vg-creator">AWS re:Invent</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 22 min · IAM, VPC, KMS, network isolation</span>
     </div>
   </a>
@@ -85,21 +85,21 @@
 ## 🍿 Optional
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="nfgFm51MXMY" href="https://www.youtube.com/results?search_query=Pinterest+ML+infrastructure+reinvent+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="wM0iSWAzyhI" href="https://www.youtube.com/results?search_query=Pinterest+ML+infrastructure+reinvent+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Pinterest ML Infrastructure, re:Invent</p>
-      <p class="vg-creator">AWS re:Invent</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 45 min · Real cost + security war stories</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="M_3oqPOcjrs" href="https://www.youtube.com/results?search_query=SageMaker+Studio+lifecycle+config+idle+auto+shutdown" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Cu1azYke0lo" href="https://www.youtube.com/results?search_query=SageMaker+Studio+lifecycle+config+idle+auto+shutdown" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⏰</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Studio Lifecycle Configs, Idle Auto-Shutdown</p>
-      <p class="vg-creator">AWS Events</p>
+      <p class="vg-creator">Herley Shaori</p>
       <span class="vg-duration">⏱ 14 min</span>
     </div>
   </a>

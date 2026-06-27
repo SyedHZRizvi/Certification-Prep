@@ -23,21 +23,21 @@
 ## ⭐ Essential watching (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="qgmflPGsNkc" href="https://www.youtube.com/results?search_query=AWS+Glue+ETL+tutorial+beginners+crawler+catalog" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="AtG_QD1JAZk" href="https://www.youtube.com/results?search_query=AWS+Glue+ETL+tutorial+beginners+crawler+catalog" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌊</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">AWS Glue, Crawler, Catalog, ETL Walkthrough</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">Johnny Chivers</p>
       <span class="vg-duration">⏱ 18 min · Glue's core concepts</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="AaZ_RSt0KP8" href="https://www.youtube.com/results?search_query=Kinesis+Data+Streams+vs+Firehose+vs+Analytics+comparison" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="TYKOHj8owIs" href="https://www.youtube.com/results?search_query=Kinesis+Data+Streams+vs+Firehose+vs+Analytics+comparison" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚡</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Kinesis Streams vs Firehose vs Analytics</p>
-      <p class="vg-creator">Be A Better Dev</p>
+      <p class="vg-creator">CloudWolf AWS</p>
       <span class="vg-duration">⏱ 14 min · Pick the right streaming service</span>
     </div>
   </a>
@@ -50,12 +50,12 @@
       <span class="vg-duration">⏱ 16 min · Cost-optimised data lake foundations</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="DCIbvq0T5pM" href="https://www.youtube.com/results?search_query=Amazon+Athena+best+practices+Parquet+partition+projection" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iUD5pPpcyZk" href="https://www.youtube.com/results?search_query=Amazon+Athena+best+practices+Parquet+partition+projection" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Athena Best Practices: Parquet + Partitioning</p>
-      <p class="vg-creator">AWS Events</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 22 min · Cut your Athena bill 10×</span>
     </div>
   </a>
@@ -64,12 +64,12 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="BaGpNjDUwXo" href="https://www.youtube.com/results?search_query=AWS+Lake+Formation+governance+permissions+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="OybeggHYfRI" href="https://www.youtube.com/results?search_query=AWS+Lake+Formation+governance+permissions+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏞️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">AWS Lake Formation, Governance Made Easy</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">AWS Developers</p>
       <span class="vg-duration">⏱ 20 min · LF-Tags, row/column security</span>
     </div>
   </a>
@@ -82,12 +82,12 @@
       <span class="vg-duration">⏱ 18 min · Why Parquet wins for ML</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="PoRJizzoW9s" href="https://www.youtube.com/results?search_query=AWS+DMS+CDC+continuous+replication+to+S3" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="VRhKO71mEvs" href="https://www.youtube.com/results?search_query=AWS+DMS+CDC+continuous+replication+to+S3" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔌</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">AWS DMS for Continuous Replication to S3</p>
-      <p class="vg-creator">AWS Database Blog talks</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 17 min · Move on-prem DBs to your data lake</span>
     </div>
   </a>
@@ -96,12 +96,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="Kd1OtMRstyE" href="https://www.youtube.com/results?search_query=EMR+Serverless+Spark+tutorial+vs+Glue" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="7Xstz6Qo-pM" href="https://www.youtube.com/results?search_query=EMR+Serverless+Spark+tutorial+vs+Glue" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🐘</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">EMR Serverless vs EMR on EC2 vs Glue</p>
-      <p class="vg-creator">Cantrill / SkylineKloud</p>
+      <p class="vg-creator">Johnny Chivers</p>
       <span class="vg-duration">⏱ 25 min · Pick the right big-data engine</span>
     </div>
   </a>
@@ -114,21 +114,21 @@
       <span class="vg-duration">⏱ 45 min · How petabyte-scale ML data flows</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="oa37pTxF4JM" href="https://www.youtube.com/results?search_query=AWS+Glue+DataBrew+no+code+data+preparation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QLealnfNErs" href="https://www.youtube.com/results?search_query=AWS+Glue+DataBrew+no+code+data+preparation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧹</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Glue DataBrew, No-Code Data Prep</p>
-      <p class="vg-creator">AWS Events</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 22 min · 250+ transforms, analyst-friendly</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="NxWvtm4sU5Y" href="https://www.youtube.com/results?search_query=AWS+Snowball+Edge+petabyte+data+transfer" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="g0GvriwXoe0" href="https://www.youtube.com/results?search_query=AWS+Snowball+Edge+petabyte+data+transfer" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>❄️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">AWS Snowball Edge, When to Ship a Disk</p>
-      <p class="vg-creator">Be A Better Dev</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 13 min · Petabyte-scale offline transfer</span>
     </div>
   </a>

@@ -48,12 +48,12 @@
       <span class="vg-duration">⏱ 20 min · Data / Model / Bias / Attribution</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="cpWbhx3nBqw" href="https://www.youtube.com/results?search_query=SageMaker+Model+Registry+approval+workflow" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="KzwSVsZ4nlc" href="https://www.youtube.com/results?search_query=SageMaker+Model+Registry+approval+workflow" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Model Registry + Approval Workflow</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 14 min</span>
     </div>
   </a>
@@ -62,25 +62,25 @@
 ## 📚 Recommended (~55 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="8LkTCiHpwrE" href="https://www.youtube.com/results?search_query=SageMaker+Projects+templated+MLOps+CI+CD" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="3_cHnk9VSfQ" href="https://www.youtube.com/results?search_query=SageMaker+Projects+templated+MLOps+CI+CD" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏗️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">SageMaker Projects, Templated MLOps</p>
-      <p class="vg-creator">AWS Events</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 22 min</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="0Fo-lOxNkDU" href="https://www.youtube.com/results?search_query=Multi+Model+Endpoint+SageMaker+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Vnkx_hOWLio" href="https://www.youtube.com/results?search_query=Multi+Model+Endpoint+SageMaker+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📚</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Multi-Model Endpoints Walk-Through</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">Amazon Web Services</p>
       <span class="vg-duration">⏱ 17 min · Capital One pattern</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="iXC-XYZEKEY" href="https://www.youtube.com/results?search_query=SageMaker+blue+green+canary+shadow+deployment" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="eN9-aEZhJ78" href="https://www.youtube.com/results?search_query=SageMaker+blue+green+canary+shadow+deployment" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -94,30 +94,30 @@
 ## 🍿 Optional
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="P1_hQvFVGYQ" href="https://www.youtube.com/results?search_query=Amazon+Music+MLOps+reinvent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="mRNcVKJ6UNo" href="https://www.youtube.com/results?search_query=Amazon+Music+MLOps+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎵</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Amazon Music MLOps Stack, re:Invent</p>
-      <p class="vg-creator">AWS re:Invent</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 50 min</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="Gr3GsHxZvtw" href="https://www.youtube.com/results?search_query=SageMaker+Inference+Recommender+demo" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="ZDcgBGNn5u8" href="https://www.youtube.com/results?search_query=SageMaker+Inference+Recommender+demo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎁</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">SageMaker Inference Recommender</p>
-      <p class="vg-creator">AWS Online Tech Talks</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 13 min</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="CCDA4PvgpjY" href="https://www.youtube.com/results?search_query=AWS+EventBridge+SageMaker+pipeline+retrain+automation" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bd2UOZ-OHwg" href="https://www.youtube.com/results?search_query=AWS+EventBridge+SageMaker+pipeline+retrain+automation" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>♻️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">EventBridge → SageMaker Retrain Automation</p>
-      <p class="vg-creator">AWS Events</p>
+      <p class="vg-creator">Manifold AI Learning</p>
       <span class="vg-duration">⏱ 18 min</span>
     </div>
   </a>

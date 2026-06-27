@@ -34,12 +34,12 @@
       <span class="vg-duration">⏱ 18 min · End-to-end</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+parallel+tool+use+disable+tool_choice" data-video-id="W2r7a6yfUoU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+parallel+tool+use+disable+tool_choice" data-video-id="6wkFb2_cUik" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Parallel Tool Use and tool_choice</p>
-      <p class="vg-creator">Anthropic / community</p>
+      <p class="vg-creator">Anthropic</p>
       <span class="vg-duration">⏱ 12 min · Concurrency semantics</span>
     </div>
   </a>
@@ -52,12 +52,12 @@
       <span class="vg-duration">⏱ 15 min · The beta in action</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+structured+output+forced+tool+use+JSON+schema" data-video-id="Ry3UHkJVQ5M" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+structured+output+forced+tool+use+JSON+schema" data-video-id="kiooXcT4E0g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Structured Output Via Forced Tool Use</p>
-      <p class="vg-creator">community / Anthropic Cookbook</p>
+      <p class="vg-creator">Nodematic Tutorials</p>
       <span class="vg-duration">⏱ 20 min · Schema-strict pattern</span>
     </div>
   </a>
@@ -66,25 +66,25 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+tool+use+best+practices+description+JSON+schema" data-video-id="8SGiCNJedHs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+tool+use+best+practices+description+JSON+schema" data-video-id="cmtkdhlpBJ0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Tool Description Best Practices</p>
-      <p class="vg-creator">Anthropic DevRel</p>
+      <p class="vg-creator">echohive</p>
       <span class="vg-duration">⏱ 12 min · Writing the description</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+multi+turn+tool+loop+agent+Python" data-video-id="KuXnrwFIZlk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+multi+turn+tool+loop+agent+Python" data-video-id="W7z4Zas--20" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">The Multi-Turn Tool Loop, Python Walkthrough</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">AI WITH Rithesh</p>
       <span class="vg-duration">⏱ 15 min · while-loop pattern</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sourcegraph+Cody+agentic+mode+tools+architecture" data-video-id="7s72PsRDp-Y" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Sourcegraph+Cody+agentic+mode+tools+architecture" data-video-id="9NJY2aAu38s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
@@ -93,12 +93,12 @@
       <span class="vg-duration">⏱ 20 min · Enterprise tool design</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+vs+OpenAI+function+calling" data-video-id="v6eiHH5uPYc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+tool+use+vs+OpenAI+function+calling" data-video-id="-_ubVOHnXP8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Anthropic Tool Use vs OpenAI Function Calling</p>
-      <p class="vg-creator">community</p>
+      <p class="vg-creator">DavidBU</p>
       <span class="vg-duration">⏱ 12 min · Differences</span>
     </div>
   </a>
@@ -107,12 +107,12 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+computer+use+docker+sandbox+setup" data-video-id="yHoqP7gv3LQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+computer+use+docker+sandbox+setup" data-video-id="dw4pBoTX4CY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Computer Use, Docker Sandbox Setup</p>
-      <p class="vg-creator">Anthropic / community</p>
+      <p class="vg-creator">Fullstackdesk AI</p>
       <span class="vg-duration">⏱ 25 min · Self-host the executor</span>
     </div>
   </a>

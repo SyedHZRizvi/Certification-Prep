@@ -38,16 +38,16 @@
       <p class="vg-title">LoRA Explained, Adapter Tuning</p><p class="vg-creator">Yannic Kilcher / DeepLearning.AI</p>
       <span class="vg-duration">⏱ 14 min · The math + intuition</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+evaluation+service+pointwise+pairwise+LLM" data-video-id="t6Mv50fwmHQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vertex+AI+evaluation+service+pointwise+pairwise+LLM" data-video-id="AUSunZXC2rg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
       <p class="vg-title">Vertex AI Evaluation Service</p><p class="vg-creator">Google Cloud Tech</p>
       <span class="vg-duration">⏱ 12 min · LLM-as-judge</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=catastrophic+forgetting+fine+tuning+LLM+prevention" data-video-id="nzEI3DxP0vU" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=catastrophic+forgetting+fine+tuning+LLM+prevention" data-video-id="vjaq03IYgSk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag essential">Essential</span>
-      <p class="vg-title">Catastrophic Forgetting, Diagnose + Fix</p><p class="vg-creator">DeepLearning.AI</p>
+      <p class="vg-title">Catastrophic Forgetting, Diagnose + Fix</p><p class="vg-creator">Paul Hand</p>
       <span class="vg-duration">⏱ 11 min · The hidden FT failure mode</span></div>
   </a>
 </div>
@@ -61,22 +61,22 @@
       <p class="vg-title">DPO vs RLHF, Simpler Preference Learning</p><p class="vg-creator">AI Coffee Break</p>
       <span class="vg-duration">⏱ 15 min · The Rafailov 2023 paper</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=model+distillation+teacher+student+LLM+compression" data-video-id="kIiO6G_V3Zk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=model+distillation+teacher+student+LLM+compression" data-video-id="aidSxgcBnrA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">LLM Distillation, Teacher → Student</p><p class="vg-creator">DeepLearning.AI</p>
+      <p class="vg-title">LLM Distillation, Teacher → Student</p><p class="vg-creator">Nodematic Tutorials</p>
       <span class="vg-duration">⏱ 14 min · Pro quality at Flash cost</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=MedLM+Vertex+AI+medical+domain+tuning+google" data-video-id="GCRTNeFTpNg" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=MedLM+Vertex+AI+medical+domain+tuning+google" data-video-id="k_-Z_TkHMqA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">MedLM, Domain-Tuned Medical LLM</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">MedLM, Domain-Tuned Medical LLM</p><p class="vg-creator">Google Research</p>
       <span class="vg-duration">⏱ 12 min · Med-PaLM 2 successor</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=JSONL+training+data+Vertex+AI+fine+tune+format" data-video-id="T9LxhJn0jrY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=JSONL+training+data+Vertex+AI+fine+tune+format" data-video-id="MOaHlowhp8s" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag recommended">Recommended</span>
-      <p class="vg-title">Vertex AI Tuning Dataset Format</p><p class="vg-creator">Google Cloud Tech</p>
+      <p class="vg-title">Vertex AI Tuning Dataset Format</p><p class="vg-creator">Shane | LLM Implementation</p>
       <span class="vg-duration">⏱ 14 min · JSONL conversation format</span></div>
   </a>
 </div>
@@ -84,22 +84,22 @@
 ## 🍿 Optional
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adore+Me+gemini+prompt+engineering+product+copy" data-video-id="hBeA7SRQM4g" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Adore+Me+gemini+prompt+engineering+product+copy" data-video-id="DVn-tBeX7w4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Adore Me, "We Didn't Need to Fine-Tune"</p><p class="vg-creator">Google Cloud Customer Stories</p>
+      <p class="vg-title">Adore Me, "We Didn't Need to Fine-Tune"</p><p class="vg-creator">Google</p>
       <span class="vg-duration">⏱ 18 min · The prompt-vs-FT lesson</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vodafone+ticket+classification+gemini+fine+tune+case+study" data-video-id="X8bKIfSVBP0" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Vodafone+ticket+classification+gemini+fine+tune+case+study" data-video-id="oP8wrbQnDJg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Vodafone, Network Ticket Classification SFT</p><p class="vg-creator">Google Cloud Next</p>
+      <p class="vg-title">Vodafone, Network Ticket Classification SFT</p><p class="vg-creator">Google Cloud</p>
       <span class="vg-duration">⏱ 20 min · When SFT does work</span></div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mayo+Clinic+medLM+vertex+AI+clinical+decision" data-video-id="T2-adKxhQjk" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Mayo+Clinic+medLM+vertex+AI+clinical+decision" data-video-id="nPBd7i5tnEE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta"><span class="vg-tag optional">Optional</span>
-      <p class="vg-title">Mayo Clinic + MedLM</p><p class="vg-creator">Google Cloud Health</p>
+      <p class="vg-title">Mayo Clinic + MedLM</p><p class="vg-creator">Cognitive Revolution "How AI Changes Everything"</p>
       <span class="vg-duration">⏱ 16 min · Clinical CDS notes</span></div>
   </a>
   <a class="vg-card" data-video-id="vLTmnaMpQCs" href="https://www.youtube.com/results?search_query=InstructGPT+RLHF+OpenAI+training+language+models" target="_blank" rel="noopener">

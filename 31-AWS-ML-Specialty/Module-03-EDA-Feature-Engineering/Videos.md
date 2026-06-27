@@ -82,12 +82,12 @@
       <span class="vg-duration">⏱ 22 min · The whole toolbox</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="zT8Hp6_-Z1I" href="https://www.youtube.com/results?search_query=SageMaker+Feature+Store+walkthrough+online+offline" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="pEg5c6d4etI" href="https://www.youtube.com/results?search_query=SageMaker+Feature+Store+walkthrough+online+offline" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏪</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">SageMaker Feature Store, Online + Offline</p>
-      <p class="vg-creator">AWS re:Invent</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 15 min · The dual-mode pattern</span>
     </div>
   </a>
@@ -114,12 +114,12 @@
       <span class="vg-duration">⏱ 20 min · NL Q&A on BI data</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="VTm0DfEPCPw" href="https://www.youtube.com/results?search_query=Stripe+Radar+fraud+machine+learning+features" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="NWywn0yympA" href="https://www.youtube.com/results?search_query=Stripe+Radar+fraud+machine+learning+features" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>💳</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Stripe Radar, Real-World Feature Engineering</p>
-      <p class="vg-creator">Stripe Engineering talks</p>
+      <p class="vg-creator">Stripe</p>
       <span class="vg-duration">⏱ 35 min · Velocity, embeddings, network features</span>
     </div>
   </a>

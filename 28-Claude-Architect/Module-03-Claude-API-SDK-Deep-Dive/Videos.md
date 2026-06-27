@@ -30,34 +30,34 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Anthropic Messages API, Getting Started</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">Andrei Dumitrescu</p>
       <span class="vg-duration">⏱ 15 min · End-to-end first call</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+prompt+caching+tutorial+90+percent+cost+cut" data-video-id="GkBHnBejbHY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+prompt+caching+tutorial+90+percent+cost+cut" data-video-id="D8LqbR0mJ4M" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Prompt Caching, 90% Cost Reduction Tutorial</p>
-      <p class="vg-creator">Anthropic / community</p>
+      <p class="vg-creator">AI Made Simple</p>
       <span class="vg-duration">⏱ 20 min · The economics deep dive</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+SDK+Python+streaming+messages" data-video-id="cDnomINJw8w" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+SDK+Python+streaming+messages" data-video-id="qfh_q7bWz2g" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Streaming Responses with the Python SDK</p>
-      <p class="vg-creator">Anthropic / Mike Bird</p>
+      <p class="vg-creator">echohive</p>
       <span class="vg-duration">⏱ 15 min · TTFT and SSE</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Message+Batches+API+bulk+50+percent" data-video-id="2oqpJuMUAmQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+Message+Batches+API+bulk+50+percent" data-video-id="gmT-4jSjpA0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Message Batches, 50% Off for Bulk Workloads</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">Stevan Freeborn</p>
       <span class="vg-duration">⏱ 18 min · Async at scale</span>
     </div>
   </a>
@@ -66,12 +66,12 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+rate+limits+429+retry+backoff" data-video-id="b2i9bChqJrE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+rate+limits+429+retry+backoff" data-video-id="zq97PFCftNA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Rate Limits, 429s, and Production Retries</p>
-      <p class="vg-creator">community / AI Engineer Conf</p>
+      <p class="vg-creator">SystemDR - Scalable System Design</p>
       <span class="vg-duration">⏱ 15 min · Production-grade resilience</span>
     </div>
   </a>
@@ -84,21 +84,21 @@
       <span class="vg-duration">⏱ 18 min · Direct vs Bedrock comparison</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+TypeScript+SDK+Node+tutorial" data-video-id="4mkFSi2YEVI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+TypeScript+SDK+Node+tutorial" data-video-id="uqLnih0gczM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">TypeScript SDK End-to-End</p>
-      <p class="vg-creator">Matt Pocock / community</p>
+      <p class="vg-creator">AI Coding Tutorials</p>
       <span class="vg-duration">⏱ 20 min · Node + browser-safe patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+token+counting+API+endpoint" data-video-id="FJP_pq7HXAM" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Anthropic+token+counting+API+endpoint" data-video-id="q4YfW0zjjQQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Token Counting Without Inference</p>
-      <p class="vg-creator">Anthropic</p>
+      <p class="vg-creator">Yaron Been</p>
       <span class="vg-duration">⏱ 8 min · count_tokens endpoint</span>
     </div>
   </a>
@@ -107,21 +107,21 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+API+observability+Langfuse+Helicone" data-video-id="QiGiS3pLYD4" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+API+observability+Langfuse+Helicone" data-video-id="GyDAY3WkqRg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">LLM Observability, Langfuse vs Helicone</p>
-      <p class="vg-creator">Langfuse / community</p>
+      <p class="vg-creator">HowToLiterally</p>
       <span class="vg-duration">⏱ 25 min · Production telemetry</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+GCP+Vertex+AI+tutorial" data-video-id="e1eM_JZfn9A" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Claude+GCP+Vertex+AI+tutorial" data-video-id="PAm8Kj8uqVg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Claude on GCP Vertex AI</p>
-      <p class="vg-creator">Google Cloud / community</p>
+      <p class="vg-creator">Google Cloud</p>
       <span class="vg-duration">⏱ 15 min · Vertex integration</span>
     </div>
   </a>
@@ -134,12 +134,12 @@
       <span class="vg-duration">⏱ 30 min · Production patterns</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+Claude+production+scale" data-video-id="rbjUHkYTj_M" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Klarna+AI+assistant+Claude+production+scale" data-video-id="m3niSE-8ZvE" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Klarna at Production Scale, Claude Case Study</p>
-      <p class="vg-creator">Klarna / Anthropic</p>
+      <p class="vg-creator">Sequoia Capital</p>
       <span class="vg-duration">⏱ 25 min · The 700-agents-of-work story</span>
     </div>
   </a>

@@ -25,12 +25,12 @@
 ## ⭐ Essential watching (~75 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="qWDNyBBVBR0" href="https://www.youtube.com/results?search_query=AWS+Machine+Learning+Specialty+exam+overview+Stephane+Maarek" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="oKMivEn6sFk" href="https://www.youtube.com/results?search_query=AWS+Machine+Learning+Specialty+exam+overview+Stephane+Maarek" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>📝</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">AWS ML Specialty (MLS-C01) Exam Overview</p>
-      <p class="vg-creator">Stephane Maarek</p>
+      <p class="vg-creator">K21Academy</p>
       <span class="vg-duration">⏱ 18 min · Format, weights, study strategy</span>
     </div>
   </a>
@@ -75,12 +75,12 @@
 ## 📚 Recommended (~40 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="YBoFf0a4DPs" href="https://www.youtube.com/results?search_query=Capital+One+SageMaker+fraud+detection+reinvent" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="MWT8VIj6oAU" href="https://www.youtube.com/results?search_query=Capital+One+SageMaker+fraud+detection+reinvent" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🏦</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Capital One Real-Time Fraud Detection on SageMaker</p>
-      <p class="vg-creator">AWS re:Invent</p>
+      <p class="vg-creator">AWS Events</p>
       <span class="vg-duration">⏱ 50 min · The canonical reference architecture</span>
     </div>
   </a>
@@ -107,7 +107,7 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="BfHFtik5noc" href="https://www.youtube.com/results?search_query=AWS+Well-Architected+Machine+Learning+Lens" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="XPD44Xqlo9s" href="https://www.youtube.com/results?search_query=AWS+Well-Architected+Machine+Learning+Lens" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🧭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
@@ -116,21 +116,21 @@
       <span class="vg-duration">⏱ 38 min · Production ML best practice</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="PPLop4L2eGk" href="https://www.youtube.com/results?search_query=Andrew+Ng+machine+learning+basics+intuition" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="6QRpDLj8huE" href="https://www.youtube.com/results?search_query=Andrew+Ng+machine+learning+basics+intuition" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎓</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Andrew Ng, Machine Learning Fundamentals</p>
-      <p class="vg-creator">DeepLearningAI / Coursera</p>
+      <p class="vg-creator">Machine Learning and AI</p>
       <span class="vg-duration">⏱ 60 min · The canonical intro lecture</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="Gfvkm4Y1QSo" href="https://www.youtube.com/results?search_query=Netflix+recommendation+system+ML+architecture" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="r9vZzSka0mY" href="https://www.youtube.com/results?search_query=Netflix+recommendation+system+ML+architecture" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">How Netflix Builds Its Recommendation System</p>
-      <p class="vg-creator">Netflix Tech Blog talks</p>
+      <p class="vg-creator">Sundog Education with Frank Kane</p>
       <span class="vg-duration">⏱ 45 min · Real production ML at planet scale</span>
     </div>
   </a>

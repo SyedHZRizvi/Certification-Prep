@@ -34,12 +34,12 @@
       <span class="vg-duration">⏱ 32 min · The clearest introduction</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="Bj5S1hORApk" href="https://www.youtube.com/results?search_query=DeepSeek+R1+jailbreak+vulnerability+january+2025" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="4aKV9LAIonI" href="https://www.youtube.com/results?search_query=DeepSeek+R1+jailbreak+vulnerability+january+2025" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">DeepSeek R1 Jailbreak Storm, Postmortem</p>
-      <p class="vg-creator">AI Explained</p>
+      <p class="vg-creator">AI News Today</p>
       <span class="vg-duration">⏱ 22 min · January 2025 incident</span>
     </div>
   </a>
@@ -75,16 +75,16 @@
       <span class="vg-duration">⏱ 18 min · The 2023 case study</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="L1NQoQivAbA" href="https://www.youtube.com/results?search_query=many-shot+jailbreaking+anthropic+long+context" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="VLZKJAyds0o" href="https://www.youtube.com/results?search_query=many-shot+jailbreaking+anthropic+long+context" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Many-Shot Jailbreaking (Anthropic 2024)</p>
-      <p class="vg-creator">Anthropic Safety</p>
+      <p class="vg-creator">Fahd Mirza</p>
       <span class="vg-duration">⏱ 16 min · Long context as attack vector</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="6oJBTNLMvgk" href="https://www.youtube.com/results?search_query=OpenAI+instruction+hierarchy+wallace+2024+paper" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=OpenAI+instruction+hierarchy+wallace+2024+paper" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>

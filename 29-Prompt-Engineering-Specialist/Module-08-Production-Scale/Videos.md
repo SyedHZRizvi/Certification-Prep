@@ -30,20 +30,20 @@
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Anthropic Prompt Caching, Full Tutorial</p>
-      <p class="vg-creator">Anthropic Cookbook</p>
+      <p class="vg-creator">Nodematic Tutorials</p>
       <span class="vg-duration">⏱ 16 min · The biggest cost lever</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="kpqsLxhBxhU" href="https://www.youtube.com/results?search_query=LiteLLM+multi+provider+abstraction+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WyW4Ifu4rSo" href="https://www.youtube.com/results?search_query=LiteLLM+multi+provider+abstraction+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">LiteLLM, The Cross-Provider Standard</p>
-      <p class="vg-creator">BerriAI / LiteLLM</p>
+      <p class="vg-creator">Data Science Basics</p>
       <span class="vg-duration">⏱ 18 min · Fallbacks, router, cost</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="ZkRB7WLSF7M" href="https://www.youtube.com/results?search_query=Langfuse+observability+LLM+open+source+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="2E8iTvGo9Hs" href="https://www.youtube.com/results?search_query=Langfuse+observability+LLM+open+source+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
@@ -52,12 +52,12 @@
       <span class="vg-duration">⏱ 14 min · Traces + prompts + costs</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="O8WBbwbDVyU" href="https://www.youtube.com/results?search_query=Eugene+Yan+patterns+for+building+LLM+systems+talk" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="LzeC1AQ-U5o" href="https://www.youtube.com/results?search_query=Eugene+Yan+patterns+for+building+LLM+systems+talk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Patterns for Building LLM-Based Systems</p>
-      <p class="vg-creator">Eugene Yan</p>
+      <p class="vg-creator">AI Engineer</p>
       <span class="vg-duration">⏱ 22 min · The production-engineering POV</span>
     </div>
   </a>
@@ -66,21 +66,21 @@
 ## 📚 Recommended (~45 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="Rgj_Kie0FEg" href="https://www.youtube.com/results?search_query=GPTCache+semantic+cache+tutorial+LLM" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="Yug3gObpX-g" href="https://www.youtube.com/results?search_query=GPTCache+semantic+cache+tutorial+LLM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Semantic Cache with GPTCache</p>
-      <p class="vg-creator">Zilliz</p>
+      <p class="vg-creator">Fahd Mirza</p>
       <span class="vg-duration">⏱ 15 min · 30-70% extra cost cut</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="OSmSdBhSgEw" href="https://www.youtube.com/results?search_query=OpenAI+batch+API+50%25+discount+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="YVjr4HprklU" href="https://www.youtube.com/results?search_query=OpenAI+batch+API+50%25+discount+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">OpenAI Batch API, 50% Discount</p>
-      <p class="vg-creator">OpenAI</p>
+      <p class="vg-creator">Build With LaL</p>
       <span class="vg-duration">⏱ 14 min · Non-realtime work</span>
     </div>
   </a>
@@ -89,7 +89,7 @@
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Prompt Versioning, LangSmith / PromptLayer</p>
-      <p class="vg-creator">DeepLearning.AI</p>
+      <p class="vg-creator">LangChain</p>
       <span class="vg-duration">⏱ 16 min · Treat prompts like code</span>
     </div>
   </a>
@@ -98,21 +98,21 @@
 ## 🍿 Optional deep dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="8N4FZEQ2HGA" href="https://www.youtube.com/results?search_query=OpenAI+Realtime+API+voice+websocket+tutorial" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="bNMOev4p3_8" href="https://www.youtube.com/results?search_query=OpenAI+Realtime+API+voice+websocket+tutorial" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">OpenAI Realtime API, Voice Apps</p>
-      <p class="vg-creator">OpenAI / DevDay</p>
+      <p class="vg-creator">Developers Digest</p>
       <span class="vg-duration">⏱ 22 min · WebSocket streaming</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="n07f4uILhHE" href="https://www.youtube.com/results?search_query=OpenTelemetry+GenAI+semantic+conventions" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="JnQXEMHh3aw" href="https://www.youtube.com/results?search_query=OpenTelemetry+GenAI+semantic+conventions" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">OpenTelemetry GenAI, Vendor-Neutral Telemetry</p>
-      <p class="vg-creator">OpenTelemetry</p>
+      <p class="vg-creator">OpenObservability Talks</p>
       <span class="vg-duration">⏱ 18 min · The emerging standard</span>
     </div>
   </a>
