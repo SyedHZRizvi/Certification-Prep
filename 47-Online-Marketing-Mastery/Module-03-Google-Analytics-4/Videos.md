@@ -58,12 +58,12 @@
       <span class="vg-duration">⏱ ~15 min · 4 parameters, CMP wiring, GTM implementation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=attribution+models+last+click+vs+data+driven+explained" target="_blank" rel="noopener" data-video-id="WwaClWzBX90">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=attribution+models+last+click+vs+data+driven+explained" target="_blank" rel="noopener" data-video-id="JX7cf3_aITM">
     <div class="vg-thumb"><span>📐</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Attribution Models Simplified — Last Click vs Data-Driven</p>
-      <p class="vg-creator">Guided PPC</p>
+      <p class="vg-creator">Scott Redgate</p>
       <span class="vg-duration">⏱ ~12 min · All models compared + Model Comparison report</span>
     </div>
   </a>

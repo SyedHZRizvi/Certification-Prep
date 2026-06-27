@@ -75,12 +75,12 @@
 ## 📚 Recommended (~35 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" data-video-id="UdeW80ipksU" href="https://www.youtube.com/results?search_query=push+pull+supply+chain+strategy" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="dEsdoT--SQQ" href="https://www.youtube.com/results?search_query=push+pull+supply+chain+strategy" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Push vs Pull Replenishment</p>
-      <p class="vg-creator">GreyCampus</p>
+      <p class="vg-creator">Professor Wolters</p>
       <span class="vg-duration">⏱ 9 min · Hybrid boundaries</span>
     </div>
   </a>

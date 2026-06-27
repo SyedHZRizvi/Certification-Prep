@@ -52,7 +52,7 @@
       <span class="vg-duration">⏱ 11 min · Wi-Fi 5/6/6E/7</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+220-1101+SOHO+Network+Setup" data-video-id="_gq4g7KjU4o" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Professor+Messer+220-1101+SOHO+Network+Setup" data-video-id="dgKy-mtL6N4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
