@@ -43,21 +43,21 @@
       <span class="vg-duration">⏱ 15 min · Volume preservation + character application</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=anticipation+animation+principle+timing+example" data-video-id="4OxphHNm0RY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=anticipation+animation+principle+timing+example" data-video-id="MNv02TduuEg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Anticipation, The Setup Before the Action</p>
-      <p class="vg-creator">Bloop Animation</p>
+      <p class="vg-creator">School of Motion</p>
       <span class="vg-duration">⏱ 12 min · Why anticipation controls audience attention</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+spacing+animation+frames+Richard+Williams" data-video-id="fmYfJQDaFh8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=timing+spacing+animation+frames+Richard+Williams" data-video-id="vSJ5lT_ma-E" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Timing & Spacing, The Animator's Most Important Skill</p>
-      <p class="vg-creator">Animation Career Review / School of Motion</p>
+      <p class="vg-creator">Dong Chang</p>
       <span class="vg-duration">⏱ 18 min · Frame spacing = weight and emotion</span>
     </div>
   </a>
@@ -75,30 +75,30 @@
       <span class="vg-duration">⏱ 20 min · How the film broke every rule (intentionally)</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=follow+through+overlapping+action+animation+example" data-video-id="OBh-WXMRSic" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=follow+through+overlapping+action+animation+example" data-video-id="4OxphYV8W3E" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Follow-Through & Overlapping Action Deep Dive</p>
-      <p class="vg-creator">Animation Mentor</p>
+      <p class="vg-creator">Alan Becker</p>
       <span class="vg-duration">⏱ 15 min · Physics of secondary movement</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=staging+animation+cinematography+silhouette+readability" data-video-id="mA1bTY9KXZY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=staging+animation+cinematography+silhouette+readability" data-video-id="8zv53cfSZ54" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Staging in Animation, Silhouette & Clarity</p>
-      <p class="vg-creator">School of Motion</p>
+      <p class="vg-creator">Animation Club School</p>
       <span class="vg-duration">⏱ 14 min · Theater, film, and animation staging compared</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=appeal+character+animation+design+principle" data-video-id="SfsFmrJmAOs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=appeal+character+animation+design+principle" data-video-id="HeKm-u8vVuY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Appeal, Why Audiences Connect with Characters</p>
-      <p class="vg-creator">Toniko Pantoja</p>
+      <p class="vg-creator">AnimSchool</p>
       <span class="vg-duration">⏱ 16 min · Appeal in design vs performance</span>
     </div>
   </a>
@@ -107,39 +107,39 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+1942+animation+breakdown+deer+on+ice+overlapping" data-video-id="v_5HkMUsKwY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Bambi+1942+animation+breakdown+deer+on+ice+overlapping" data-video-id="dSgQUNZXTqg" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Bambi Animation Breakdown, Deer on Ice</p>
-      <p class="vg-creator">Various / Art of Animation</p>
+      <p class="vg-creator">Robbie Marie Vandell and the Frog Prince Channel</p>
       <span class="vg-duration">⏱ 10 min · The scene that teaches slow-in/out + overlap</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=exaggeration+animation+principle+Tex+Avery+Looney+Tunes" data-video-id="T9Yd-biGO2Y" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=exaggeration+animation+principle+Tex+Avery+Looney+Tunes" data-video-id="DmfT2CiqLD0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Exaggeration in Animation, Looney Tunes vs Disney</p>
-      <p class="vg-creator">Every Frame a Painting</p>
+      <p class="vg-creator">TipTut</p>
       <span class="vg-duration">⏱ 12 min · When to push past reality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=solid+drawing+3D+form+animation+principles" data-video-id="7SOFXLl7o3c" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=solid+drawing+3D+form+animation+principles" data-video-id="MpHIvAYCie0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Solid Drawing, 3D Form in 2D Animation</p>
-      <p class="vg-creator">Draftsmen Podcast / Stan Prokopenko</p>
+      <p class="vg-creator">moderndayjames</p>
       <span class="vg-duration">⏱ 18 min · Foreshortening, overlapping, contour</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=The+Incredibles+animation+breakdown+Pixar+principles" data-video-id="B4X_mCEYlKs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=The+Incredibles+animation+breakdown+Pixar+principles" data-video-id="a0VilAhbg5U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">The Incredibles Animation Breakdown, Squash & Stretch</p>
-      <p class="vg-creator">Corridor Crew / Pixar</p>
+      <p class="vg-creator">Pixar</p>
       <span class="vg-duration">⏱ 15 min · How Pixar pushed human squash and stretch</span>
     </div>
   </a>

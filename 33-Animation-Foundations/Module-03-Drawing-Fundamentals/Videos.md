@@ -31,21 +31,21 @@
       <span class="vg-duration">⏱ 20 min · What gesture means and why it matters</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=construction+method+figure+drawing+animation+Loomis" data-video-id="1G17hFQXtBc" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=construction+method+figure+drawing+animation+Loomis" data-video-id="rNiBjHymU0k" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Figure Construction for Animators</p>
-      <p class="vg-creator">Stan Prokopenko (Proko)</p>
+      <p class="vg-creator">Proko</p>
       <span class="vg-duration">⏱ 25 min · Geometric volumes → organic form</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=foreshortening+drawing+tutorial+perspective+figure" data-video-id="7SOFXLl7o3c" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=foreshortening+drawing+tutorial+perspective+figure" data-video-id="R6TnTVBisv0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Foreshortening, Perspective in Figure Drawing</p>
-      <p class="vg-creator">Ctrl+Paint / Proko</p>
+      <p class="vg-creator">Proko</p>
       <span class="vg-duration">⏱ 20 min · How depth works in a flat drawing</span>
     </div>
   </a>
@@ -63,12 +63,12 @@
       <span class="vg-duration">⏱ 20 min · Study-then-draw method from a Disney master</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=proportion+figure+drawing+animation+head+body+ratio" data-video-id="SfsFmrJmAOs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=proportion+figure+drawing+animation+head+body+ratio" data-video-id="DmWWQdCqjCU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Character Proportions, From Realistic to Stylized</p>
-      <p class="vg-creator">Toniko Pantoja / Character Design References</p>
+      <p class="vg-creator">KedoKat</p>
       <span class="vg-duration">⏱ 18 min · Head-to-body ratios across animation styles</span>
     </div>
   </a>
@@ -86,21 +86,21 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Glen+Keane+drawing+gesture+Disney+animator+lecture" data-video-id="3hKNLHEjMoE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Glen+Keane+drawing+gesture+Disney+animator+lecture" data-video-id="qL4U9Ygtxh8" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Glen Keane on Drawing and Animation</p>
-      <p class="vg-creator">Glen Keane / Disney</p>
+      <p class="vg-creator">Google for Developers</p>
       <span class="vg-duration">⏱ 25 min · A Disney master on the role of drawing in animation</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=gesture+drawing+practice+tips+animators+daily+routine" data-video-id="m_uPa4mVgJQ" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=gesture+drawing+practice+tips+animators+daily+routine" data-video-id="PgUKQyCzpeI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>✏️</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Building a Gesture Drawing Practice, Daily Habits</p>
-      <p class="vg-creator">Sinix Design / Uncomfortable</p>
+      <p class="vg-creator">ZonVas</p>
       <span class="vg-duration">⏱ 18 min · How to improve with 20 min/day</span>
     </div>
   </a>

@@ -11,7 +11,7 @@ title: "Module 3: Videos, Typography & Text Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="dX_1B0w7Hzc" href="https://www.youtube.com/results?search_query=after+effects+text+animator+range+selector+tutorial">
+<a class="vg-card" data-video-id="b1_p2qQf_Ts" href="https://www.youtube.com/results?search_query=after+effects+text+animator+range+selector+tutorial">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/3gLuYOmkYBw/mqdefault.jpg" alt="Text Animator AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">After Effects Text Animator, The Complete Guide</div>
@@ -19,27 +19,27 @@ title: "Module 3: Videos, Typography & Text Animation"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=kinetic+typography+after+effects+tutorial+beginners" data-video-id="Px3tBj1h5jc">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=kinetic+typography+after+effects+tutorial+beginners" data-video-id="l2868rcHXSw">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/Px3tBj1h5jc/mqdefault.jpg" alt="Kinetic Typography AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Kinetic Typography in After Effects, Full Tutorial</div>
-    <div class="vg-card-meta">Ben Marriott · Build a professional kinetic text piece from scratch</div>
+    <div class="vg-card-meta">Masd*Lab · Build a professional kinetic text piece from scratch</div>
   </div>
 </a>
 
-<a class="vg-card" data-video-id="D4xDCUBzQqI" href="https://www.youtube.com/results?search_query=blur+scale+opacity+text+reveal+after+effects">
+<a class="vg-card" data-video-id="8Uy2yrLn4lA" href="https://www.youtube.com/results?search_query=blur+scale+opacity+text+reveal+after+effects">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/D4xDCUBzQqI/mqdefault.jpg" alt="Blur Scale Opacity Reveal" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">The Blur Scale Opacity Text Reveal, Apple Style</div>
-    <div class="vg-card-meta">Mobox Graphics · The single most-used text animation technique</div>
+    <div class="vg-card-meta">Nick Loera · The single most-used text animation technique</div>
   </div>
 </a>
 
-<a class="vg-card" data-video-id="o0hOnVEzBHc" href="https://www.youtube.com/results?search_query=stranger+things+title+sequence+after+effects+recreation">
+<a class="vg-card" data-video-id="ZP_eglqgsYE" href="https://www.youtube.com/results?search_query=stranger+things+title+sequence+after+effects+recreation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/o0hOnVEzBHc/mqdefault.jpg" alt="Stranger Things Title AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Recreating the Stranger Things Title Sequence in After Effects</div>
-    <div class="vg-card-meta">Jake In Motion · Case study in timing, typography, and atmosphere</div>
+    <div class="vg-card-meta">Eric Demeusy · Case study in timing, typography, and atmosphere</div>
   </div>
 </a>
 
@@ -51,35 +51,35 @@ title: "Module 3: Videos, Typography & Text Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" data-video-id="xjgqz7_6FQQ" href="https://www.youtube.com/results?search_query=apple+keynote+text+animation+after+effects+recreation">
+<a class="vg-card" data-video-id="2S4E4XU6zqk" href="https://www.youtube.com/results?search_query=apple+keynote+text+animation+after+effects+recreation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/xjgqz7_6FQQ/mqdefault.jpg" alt="Apple Keynote Animation AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Recreating Apple Keynote Text Animations in After Effects</div>
-    <div class="vg-card-meta">Motion Design School · Per-word blur-fade reveal breakdown</div>
+    <div class="vg-card-meta">LayerAce · Per-word blur-fade reveal breakdown</div>
   </div>
 </a>
 
-<a class="vg-card" data-video-id="LWOLp8JQIJM" href="https://www.youtube.com/results?search_query=sports+graphics+lower+third+after+effects+template">
+<a class="vg-card" data-video-id="etemwff6LTQ" href="https://www.youtube.com/results?search_query=sports+graphics+lower+third+after+effects+template">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/LWOLp8JQIJM/mqdefault.jpg" alt="Sports Lower Third AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sports Broadcast Lower-Third Animation in After Effects</div>
-    <div class="vg-card-meta">Motion Array · Professional broadcast text animation technique</div>
+    <div class="vg-card-meta">SonduckFilm · Professional broadcast text animation technique</div>
   </div>
 </a>
 
-<a class="vg-card" data-video-id="KXFfv4EEwJ4" href="https://www.youtube.com/results?search_query=after+effects+text+animation+sync+music+audio">
+<a class="vg-card" data-video-id="Y0ckeXz46vc" href="https://www.youtube.com/results?search_query=after+effects+text+animation+sync+music+audio">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/KXFfv4EEwJ4/mqdefault.jpg" alt="Text Sync to Audio AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Syncing Text Animations to Music in After Effects</div>
-    <div class="vg-card-meta">School of Motion · Time markers, audio layers, beat-matched text</div>
+    <div class="vg-card-meta">SonduckFilm · Time markers, audio layers, beat-matched text</div>
   </div>
 </a>
 
-<a class="vg-card" data-video-id="g5bLPpBDkbA" href="https://www.youtube.com/results?search_query=variable+fonts+after+effects+weight+animation">
+<a class="vg-card" data-video-id="JKxrgZ_xqoA" href="https://www.youtube.com/results?search_query=variable+fonts+after+effects+weight+animation">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/g5bLPpBDkbA/mqdefault.jpg" alt="Variable Fonts AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Variable Fonts in After Effects, Animating Font Weight</div>
-    <div class="vg-card-meta">Ben Marriott · Weight bloom technique and variable font workflow</div>
+    <div class="vg-card-meta">SternFX · Weight bloom technique and variable font workflow</div>
   </div>
 </a>
 
@@ -91,35 +91,35 @@ title: "Module 3: Videos, Typography & Text Animation"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=typography+motion+design+history+graphic+design" data-video-id="XqXxKxvSUwI">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=typography+motion+design+history+graphic+design" data-video-id="Q_Mo0MqICXI">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/XqXxKxvSUwI/mqdefault.jpg" alt="Typography Motion History" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">History of Motion Typography, From Saul Bass to Today</div>
-    <div class="vg-card-meta">Design History · The evolution of kinetic typography as an art form</div>
+    <div class="vg-card-meta">Little White Lies · The evolution of kinetic typography as an art form</div>
   </div>
 </a>
 
-<a class="vg-card" data-video-id="YQi6NKmIRSA" href="https://www.youtube.com/results?search_query=after+effects+character+offset+text+scramble+effect">
+<a class="vg-card" data-video-id="_WyP3maJ-kc" href="https://www.youtube.com/results?search_query=after+effects+character+offset+text+scramble+effect">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/YQi6NKmIRSA/mqdefault.jpg" alt="Character Scramble AE" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Character Scramble Effect in After Effects</div>
-    <div class="vg-card-meta">Mobox Graphics · Using Character Offset for the hacker-text effect</div>
+    <div class="vg-card-meta">MOBOX Graphics · Using Character Offset for the hacker-text effect</div>
   </div>
 </a>
 
-<a class="vg-card" data-video-id="x8hD5F53UEY" href="https://www.youtube.com/results?search_query=after+effects+kinetic+typography+portfolio+piece+build">
+<a class="vg-card" data-video-id="4vLwhXY0ZRw" href="https://www.youtube.com/results?search_query=after+effects+kinetic+typography+portfolio+piece+build">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/x8hD5F53UEY/mqdefault.jpg" alt="Kinetic Typography Portfolio" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Build a Kinetic Typography Portfolio Piece</div>
-    <div class="vg-card-meta">Jake In Motion · Full 30-second kinetic piece from concept to render</div>
+    <div class="vg-card-meta">Motion Nations · Full 30-second kinetic piece from concept to render</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=font+licensing+motion+design+broadcast+commercial" data-video-id="aStmb7SFJNE">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=font+licensing+motion+design+broadcast+commercial" data-video-id="deBKY5fVSEY">
   <div class="vg-card-thumb"><img src="https://img.youtube.com/vi/aStmb7SFJNE/mqdefault.jpg" alt="Font Licensing Motion" loading="lazy"></div>
   <div class="vg-card-body">
     <div class="vg-card-title">Font Licensing for Motion Designers, What You Need to Know</div>
-    <div class="vg-card-meta">School of Motion · Desktop vs broadcast license; legal basics</div>
+    <div class="vg-card-meta">Pimp my Type · Desktop vs broadcast license; legal basics</div>
   </div>
 </a>
 

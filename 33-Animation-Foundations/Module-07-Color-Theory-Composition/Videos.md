@@ -20,39 +20,39 @@
 ## ⭐ Essential Watching (~65 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+animation+film+how+Pixar+uses+color+storytelling" data-video-id="IG9PVXB7S5s" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+animation+film+how+Pixar+uses+color+storytelling" data-video-id="NqBnc2na-Z4" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">How Pixar Uses Color to Tell Story</p>
-      <p class="vg-creator">Thomas Flight / kaptainkristian</p>
+      <p class="vg-creator">Patrick Scullin</p>
       <span class="vg-duration">⏱ 18 min · Color scripts, value, and emotional arcs</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+basics+hue+saturation+value+for+artists" data-video-id="AIdaqJAaCHs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+theory+basics+hue+saturation+value+for+artists" data-video-id="P0P8iGs2jWI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Color Theory Fundamentals, Hue, Saturation, Value</p>
-      <p class="vg-creator">Ctrl+Paint / Proko</p>
+      <p class="vg-creator">Proko</p>
       <span class="vg-duration">⏱ 20 min · The core vocabulary + why value is most important</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=composition+principles+animation+rule+of+thirds+leading+lines" data-video-id="7SOFXLl7o3c" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=composition+principles+animation+rule+of+thirds+leading+lines" data-video-id="QBds0sRQ4O0" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Composition for Animation, Rules and How to Break Them</p>
-      <p class="vg-creator">School of Motion / Film Riot</p>
+      <p class="vg-creator">Motion Science</p>
       <span class="vg-duration">⏱ 18 min · Rule of thirds, leading lines, negative space</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Out+Pixar+color+script+emotional+arc+analysis" data-video-id="sOLd0KHwOAo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Inside+Out+Pixar+color+script+emotional+arc+analysis" data-video-id="l1LA0Iw3JEA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Inside Out Color Script Analysis</p>
-      <p class="vg-creator">Thomas Flight / Now You See It</p>
+      <p class="vg-creator">Tania Educa</p>
       <span class="vg-duration">⏱ 12 min · How color communicates Riley's depression</span>
     </div>
   </a>
@@ -70,21 +70,21 @@
       <span class="vg-duration">⏱ 15 min · Temperature + depth + emotional temperature</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+harmony+analogous+complementary+triadic+examples" data-video-id="nFS5MaVS6DI" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+harmony+analogous+complementary+triadic+examples" data-video-id="7hUTbPNr3Ko" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Color Harmony Systems Explained with Film Examples</p>
-      <p class="vg-creator">Loish / Marc Brunet</p>
+      <p class="vg-creator">Jasleen Sarai</p>
       <span class="vg-duration">⏱ 12 min · Monochromatic through triadic with real examples</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Coco+Pixar+color+design+Dia+de+Muertos+underworld+lighting" data-video-id="bIPHx9R5cT4" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Coco+Pixar+color+design+Dia+de+Muertos+underworld+lighting" data-video-id="_4fJdhdxUcs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Coco's Color Design, Living World vs Land of Dead</p>
-      <p class="vg-creator">Corridor Crew / Pixar featurette</p>
+      <p class="vg-creator">AReasonableCritic</p>
       <span class="vg-duration">⏱ 15 min · Saturated underworld vs desaturated living world</span>
     </div>
   </a>
@@ -93,21 +93,21 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spirited+Away+Ghibli+color+art+direction+analysis" data-video-id="P5ozvSe3aGY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Spirited+Away+Ghibli+color+art+direction+analysis" data-video-id="iqJA5ETKNDo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Spirited Away, Color and Art Direction Analysis</p>
-      <p class="vg-creator">Like Stories of Old / Thomas Flight</p>
+      <p class="vg-creator">Fandor</p>
       <span class="vg-duration">⏱ 18 min · Ghibli's color palette approach</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=chromatic+aberration+effect+animation+Spider-Verse+technique" data-video-id="fELnJJBCXHY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=chromatic+aberration+effect+animation+Spider-Verse+technique" data-video-id="N21oG99eF3A" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🌈</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Chromatic Aberration in Animation, Spider-Verse Technique</p>
-      <p class="vg-creator">Corridor Crew / CG Geek</p>
+      <p class="vg-creator">Howard Wimshurst Animation</p>
       <span class="vg-duration">⏱ 15 min · How Spider-Verse uses optical artifacts as storytelling</span>
     </div>
   </a>

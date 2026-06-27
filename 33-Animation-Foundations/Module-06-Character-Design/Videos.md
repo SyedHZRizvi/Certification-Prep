@@ -20,39 +20,39 @@
 ## ⭐ Essential Watching (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=shape+language+character+design+circles+squares+triangles" data-video-id="HaIJMUaSJz4" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=shape+language+character+design+circles+squares+triangles" data-video-id="vxX_o5E9dgU" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Shape Language in Character Design</p>
-      <p class="vg-creator">Toniko Pantoja / Marc Brunet</p>
+      <p class="vg-creator">Brookes Eggleston - Character Design Forge</p>
       <span class="vg-duration">⏱ 20 min · Circles, squares, triangles + real examples</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=silhouette+readability+character+design+test+how+to" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="QNvZKiipDP4" href="https://www.youtube.com/results?search_query=silhouette+readability+character+design+test+how+to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Silhouette Readability, The Black Shape Test</p>
-      <p class="vg-creator">Bloop Animation / Character Design References</p>
+      <p class="vg-creator">Phils Design Corner</p>
       <span class="vg-duration">⏱ 15 min · Why silhouette determines design quality</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+personality+character+design+animation+storytelling" data-video-id="IG9PVXB7S5s" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=color+personality+character+design+animation+storytelling" data-video-id="vSu7fk0gEFM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Color & Personality in Character Design</p>
-      <p class="vg-creator">Rui Tenreiro / Loish</p>
+      <p class="vg-creator">Theo Yeung</p>
       <span class="vg-duration">⏱ 18 min · How color tells audience who a character is</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=character+turnaround+model+sheet+animation+how+to" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="iHkzW4lfkfo" href="https://www.youtube.com/results?search_query=character+turnaround+model+sheet+animation+how+to" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Character Turnarounds, Model Sheets for Animation</p>
-      <p class="vg-creator">Animation Career Review / NoBullshit Art</p>
+      <p class="vg-creator">TipTut</p>
       <span class="vg-duration">⏱ 15 min · Front, 3/4, side, back in consistent proportion</span>
     </div>
   </a>
@@ -61,30 +61,30 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lion+King+character+design+Scar+Andreas+Deja+shape+language" data-video-id="pQHKNbOnS70" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Lion+King+character+design+Scar+Andreas+Deja+shape+language" data-video-id="yCjVflLwuPI" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Lion King Character Design, Shape Language Analysis</p>
-      <p class="vg-creator">Corridor Crew / Disney art analysis</p>
+      <p class="vg-creator">MPC Paris</p>
       <span class="vg-duration">⏱ 18 min · Simba vs Scar visual design breakdown</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=designing+characters+for+animation+movement+joint+rig" data-video-id="mA1bTY9KXZY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=designing+characters+for+animation+movement+joint+rig" data-video-id="BoGCkXp7MZA" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Designing Characters for Animation, Movement-First Approach</p>
-      <p class="vg-creator">School of Motion / Bloop Animation</p>
+      <p class="vg-creator">School of Motion</p>
       <span class="vg-duration">⏱ 18 min · What changes when the character needs to animate</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+character+design+Jinx+Vi+breakdown+Riot+Fortiche" data-video-id="LKrP1D8IKQE" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Arcane+character+design+Jinx+Vi+breakdown+Riot+Fortiche" data-video-id="XQjEZdGN5eM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Arcane, Character Design Breakdown</p>
-      <p class="vg-creator">Corridor Crew / ArtStation</p>
+      <p class="vg-creator">Hestiacos</p>
       <span class="vg-duration">⏱ 20 min · How Jinx and Vi's designs communicate character</span>
     </div>
   </a>
@@ -93,21 +93,21 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+character+design+process+development+inside+out" data-video-id="sOLd0KHwOAo" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Pixar+character+design+process+development+inside+out" data-video-id="AiTEa78XUBk" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Pixar Character Design Process, Inside Out</p>
-      <p class="vg-creator">Pixar Animation Studios</p>
+      <p class="vg-creator">Variety</p>
       <span class="vg-duration">⏱ 20 min · Joy vs Sadness design contrast as storytelling</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=villain+character+design+tips+menacing+shape+language" data-video-id="T9Yd-biGO2Y" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=villain+character+design+tips+menacing+shape+language" data-video-id="JZ-BSsbPAsw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎨</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">How to Design a Great Villain</p>
-      <p class="vg-creator">Draw with Jazza / Extra Credits Animation</p>
+      <p class="vg-creator">Brookes Eggleston - Character Design Forge</p>
       <span class="vg-duration">⏱ 15 min · Appeal + menace + shape language</span>
     </div>
   </a>

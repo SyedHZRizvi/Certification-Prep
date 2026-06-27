@@ -20,30 +20,30 @@
 ## ⭐ Essential Watching (~70 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+animation+tutorial+principles+beginners" data-video-id="hGF8rnMJ7Js" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+animation+tutorial+principles+beginners" data-video-id="dS_9Coeb8CY" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Bouncing Ball Animation, Complete Tutorial</p>
-      <p class="vg-creator">Bloop Animation / Alan Becker</p>
+      <p class="vg-creator">Justin Gagen</p>
       <span class="vg-duration">⏱ 20 min · All principles applied to one exercise</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+animation+tutorial+key+poses+contact+passing" data-video-id="y1E7Hd26KBA" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+animation+tutorial+key+poses+contact+passing" data-video-id="15yLGdR1Tmo" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚶</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Walk Cycle Tutorial, Key Poses & Timing</p>
-      <p class="vg-creator">Animation Mentor / Aaron Blaise</p>
+      <p class="vg-creator">AnimSchool</p>
       <span class="vg-duration">⏱ 25 min · Contact, passing, up, down positions with timing</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=character+acting+animation+pantomime+performance+tutorial" data-video-id="SfsFmrJmAOs" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=character+acting+animation+pantomime+performance+tutorial" data-video-id="bOb5PxMTnUw" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎭</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag essential">Essential</span>
       <p class="vg-title">Character Acting for Animation, Pantomime Performance</p>
-      <p class="vg-creator">Animation Mentor / Toniko Pantoja</p>
+      <p class="vg-creator">fxguide</p>
       <span class="vg-duration">⏱ 20 min · Performing emotion through movement alone</span>
     </div>
   </a>
@@ -52,30 +52,30 @@
 ## 📚 Recommended (~50 min)
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+variations+rubber+bowling+weight+animation" data-video-id="4OxphHNm0RY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=bouncing+ball+variations+rubber+bowling+weight+animation" data-video-id="EZC3KTAJk7U" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>⚽</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Bouncing Ball Variations, 5 Different Materials</p>
-      <p class="vg-creator">School of Motion / animatorhub</p>
+      <p class="vg-creator">The Digital Tutors</p>
       <span class="vg-duration">⏱ 18 min · Golf ball vs bowling ball vs water balloon</span>
     </div>
   </a>
-  <a class="vg-card" data-video-id="9ZEu_I-ido4" href="https://www.youtube.com/results?search_query=animation+self+critique+feedback+how+to+evaluate+your+work" target="_blank" rel="noopener">
+  <a class="vg-card" data-video-id="WNN_0eyF3go" href="https://www.youtube.com/results?search_query=animation+self+critique+feedback+how+to+evaluate+your+work" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🔍</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">How to Critique Your Own Animation Work</p>
-      <p class="vg-creator">Animation Career Review / Bloop Animation</p>
+      <p class="vg-creator">AnimSchool</p>
       <span class="vg-duration">⏱ 15 min · The self-critique framework in action</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+personality+types+animation+different+characters" data-video-id="OBh-WXMRSic" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=walk+cycle+personality+types+animation+different+characters" data-video-id="2szvndaScoM" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🚶</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag recommended">Recommended</span>
       <p class="vg-title">Walk Cycle Personality, How Timing Changes Character</p>
-      <p class="vg-creator">Toniko Pantoja / Richard Williams Institute</p>
+      <p class="vg-creator">#watchmeanimate</p>
       <span class="vg-duration">⏱ 18 min · Same walk, different timing, different person</span>
     </div>
   </a>
@@ -84,21 +84,21 @@
 ## 🍿 Optional Deep Dives
 
 <div class="vg-grid" markdown="0">
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+production+checklist+indie+short+film+workflow" data-video-id="mA1bTY9KXZY" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=animation+production+checklist+indie+short+film+workflow" data-video-id="mIdyuXohujQ" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Indie Animation Production Checklist, Short Film</p>
-      <p class="vg-creator">Film Riot / RocketJump Film School</p>
+      <p class="vg-creator">Brad's Art School</p>
       <span class="vg-duration">⏱ 20 min · Pre-production through delivery</span>
     </div>
   </a>
-  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+animation+masterclass+lecture+timing" data-video-id="fmYfJQDaFh8" target="_blank" rel="noopener">
+  <a class="vg-card" href="https://www.youtube.com/results?search_query=Richard+Williams+animation+masterclass+lecture+timing" data-video-id="Abkz-oJ3HSs" target="_blank" rel="noopener">
     <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
     <div class="vg-meta">
       <span class="vg-tag optional">Optional</span>
       <p class="vg-title">Richard Williams Animation Masterclass</p>
-      <p class="vg-creator">Richard Williams Institute</p>
+      <p class="vg-creator">Faber Books</p>
       <span class="vg-duration">⏱ 30 min · The master on timing through the bouncing ball</span>
     </div>
   </a>
