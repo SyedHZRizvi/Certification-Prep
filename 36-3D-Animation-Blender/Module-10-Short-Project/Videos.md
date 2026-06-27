@@ -11,11 +11,11 @@ title: "Module 10 Videos: Short Film Project"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+short+film+production+pipeline+complete+workflow" data-video-id="4f42YlGIUkw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+short+film+production+pipeline+complete+workflow" data-video-id="zHlsQSM0Pvc" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Short Film Production Pipeline, Complete Workflow</div>
-    <div class="vg-card-meta">CGCookie · ~45 min</div>
+    <div class="vg-card-meta">CG Cookie · ~45 min</div>
     <div class="vg-card-desc">End-to-end short film production: concept, storyboard, animatic, model, rig, animate, light, render, composite, deliver. The full pipeline in one video, watch before opening Blender for this project.</div>
   </div>
 </a>
@@ -29,20 +29,20 @@ title: "Module 10 Videos: Short Film Project"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+storyboard+animatic+tutorial+short+film" data-video-id="kVcZHiGm1oE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+storyboard+animatic+tutorial+short+film" data-video-id="nWF3mSTMTXo" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Storyboard and Animatic Tutorial for Short Films</div>
-    <div class="vg-card-meta">Grant Abbitt · ~25 min</div>
+    <div class="vg-card-meta">CBaileyFilm · ~25 min</div>
     <div class="vg-card-desc">Planning a short film with storyboard thumbnails, building an animatic in Blender's VSE, and using the animatic to lock timing before committing to production animation.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Ian+Hubert+lazy+tutorials+short+film+technique" data-video-id="U1f6NDCttHo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+Ian+Hubert+lazy+tutorials+short+film+technique" data-video-id="NirbCReHFi0" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Ian Hubert, Lazy Tutorials: Short Film Techniques</div>
-    <div class="vg-card-meta">Ian Hubert · ~5 min per ep</div>
+    <div class="vg-card-meta">IanHubert · ~5 min per ep</div>
     <div class="vg-card-desc">Ian Hubert's legendary 5-minute micro-tutorials showing how to achieve photorealistic results in Blender with smart shortcuts. Philosophy: get the camera close enough and the viewer fills in the rest.</div>
   </div>
 </a>
@@ -55,29 +55,29 @@ title: "Module 10 Videos: Short Film Project"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+charge+open+movie+full+making+of+2022" data-video-id="jCVMkHCxCPU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+charge+open+movie+full+making+of+2022" data-video-id="pNPPVCPuWG8" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Charge Open Movie, Full Making-Of Documentary</div>
-    <div class="vg-card-meta">Blender Foundation · ~40 min</div>
+    <div class="vg-card-meta">Blender Studio · ~40 min</div>
     <div class="vg-card-desc">The complete *Charge* (2022) making-of. Every department: concept, modeling, rigging, animation, fx, lighting, rendering, compositing, documented with production stats and honest breakdowns.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+portfolio+reel+tips+animation+presentation" data-video-id="p4-8mMq2Qas" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+portfolio+reel+tips+animation+presentation" data-video-id="8eZHBsynd4U" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Animation Portfolio Reel, Tips for Getting Hired</div>
-    <div class="vg-card-meta">Stylized Station · ~22 min</div>
+    <div class="vg-card-meta">Sir Wade Neistadt · ~22 min</div>
     <div class="vg-card-desc">What studio recruiters look for in a Blender animation demo reel: quality over quantity, clear timing, polished lighting, and how to present your 10-second short to maximum effect.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+final+render+compositing+color+grade+delivery+tutorial" data-video-id="DwTVuNAqYHY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+final+render+compositing+color+grade+delivery+tutorial" data-video-id="vzbyoSbkc4Y" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Final Render, Compositing, Color Grade, and Delivery</div>
-    <div class="vg-card-meta">Default Cube · ~30 min</div>
+    <div class="vg-card-meta">Spencer Magnusson · ~30 min</div>
     <div class="vg-card-desc">The last mile: compositing rendered passes, color grading with Color Balance, encoding the final H.264 MP4 in the VSE, and upload settings for Vimeo and YouTube.</div>
   </div>
 </a>
@@ -90,29 +90,29 @@ title: "Module 10 Videos: Short Film Project"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+full+short+film+watch" data-video-id="TcQlFIGi0lA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+sprite+fright+full+short+film+watch" data-video-id="_cMxraX_5RE" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Sprite Fright, Full Short Film</div>
-    <div class="vg-card-meta">Blender Foundation · ~13 min</div>
+    <div class="vg-card-meta">Blender Studio · ~13 min</div>
     <div class="vg-card-desc">Watch the complete Sprite Fright short film. See all the techniques from Modules 1–9 working together in a finished production. Inspiring and instructive to watch after completing this course.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=indie+3D+animation+blender+short+film+showcase+2024" data-video-id="PBc9JFEULpg" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=indie+3D+animation+blender+short+film+showcase+2024" data-video-id="rIIH4JMjs6E" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Indie Blender Short Film Showcase 2024</div>
-    <div class="vg-card-meta">Various · compilation</div>
+    <div class="vg-card-meta">DemNikoArt · compilation</div>
     <div class="vg-card-desc">A collection of Blender short films made by individual creators and small teams. Benchmark your own short against peer-produced work at similar experience levels.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+wing+it+open+movie+stylized+animation+making+of" data-video-id="JkMsHo4c0v8" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+wing+it+open+movie+stylized+animation+making+of" data-video-id="p6ESaby2KDA" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Wing It!, Stylized Animation Making-Of</div>
-    <div class="vg-card-meta">Blender Foundation · ~20 min</div>
+    <div class="vg-card-meta">Blender Studio · ~20 min</div>
     <div class="vg-card-desc">Behind the scenes of *Wing It!* (2019). Stylized character animation, cloth simulation for the bird characters' wings, and the comedy timing approach used by the Blender Institute team.</div>
   </div>
 </a>

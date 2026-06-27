@@ -29,11 +29,11 @@ title: "Module 8 Videos: Physics & Simulations"
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+fluid+simulation+water+FLIP+solver+tutorial" data-video-id="fWqCy_f4DUk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+fluid+simulation+water+FLIP+solver+tutorial" data-video-id="qWn8K0ILVsE" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Fluid Simulation, Water with FLIP Solver</div>
-    <div class="vg-card-meta">Default Cube · ~30 min</div>
+    <div class="vg-card-meta">Moby Motion · ~30 min</div>
     <div class="vg-card-desc">Domain, Flow, and Effector setup; FLIP vs. APIC mode selection; resolution impact on detail; time scale for slow-motion water; OpenVDB cache baking.</div>
   </div>
 </a>
@@ -46,38 +46,38 @@ title: "Module 8 Videos: Physics & Simulations"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+particle+system+hair+fur+character+tutorial" data-video-id="ma20c4nDZkU" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+particle+system+hair+fur+character+tutorial" data-video-id="_xRSoLtfTDs" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Particle System, Hair and Fur for Characters</div>
-    <div class="vg-card-meta">Blender Guru · ~40 min</div>
+    <div class="vg-card-meta">PixelicaCG · ~40 min</div>
     <div class="vg-card-desc">Hair particle system setup, Particle Edit Mode tools (Comb, Cut, Smooth), Children → Interpolated for density, Clumping for wet-hair effect, and material setup.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+physics+cache+baking+render+simulation+production" data-video-id="8P43R0oLvPo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+physics+cache+baking+render+simulation+production" data-video-id="1oUSgiyQ8-o" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Physics Cache & Baking, Production Workflow</div>
-    <div class="vg-card-meta">Default Cube · ~18 min</div>
+    <div class="vg-card-meta">Blender Frenzy · ~18 min</div>
     <div class="vg-card-desc">Why unbaked simulations are a render-day disaster, how to bake rigid body/cloth/fluid caches correctly, cache file locations, and what to do when bakes are corrupted.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+smoke+fire+simulation+quick+effects+tutorial" data-video-id="pqCj8RL55uo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+smoke+fire+simulation+quick+effects+tutorial" data-video-id="RRU4MaqwBow" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Smoke and Fire Simulation, Quick Effects</div>
-    <div class="vg-card-meta">CGCookie · ~28 min</div>
+    <div class="vg-card-meta">Olav3D Tutorials · ~28 min</div>
     <div class="vg-card-desc">Gas domain setup for smoke and fire, Flow type (Fire + Smoke, Smoke, Fire), temperature for flame height, OpenVDB baking, and volume material setup for render.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+collision+modifier+cloth+rigid+body+interaction" data-video-id="3QHNb5P9rOE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+collision+modifier+cloth+rigid+body+interaction" data-video-id="SI4X6qRIPVI" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Collision Modifier, Cloth and Rigid Body Interaction</div>
-    <div class="vg-card-meta">Stylized Station · ~20 min</div>
+    <div class="vg-card-meta">Mr. Cheebs · ~20 min</div>
     <div class="vg-card-desc">Adding collision properties to mesh objects so cloth doesn't pass through them. Collision quality settings, friction on the collider, and common cloth explosion fixes.</div>
   </div>
 </a>
@@ -90,20 +90,20 @@ title: "Module 8 Videos: Physics & Simulations"
 
 <div class="vg-card-grid">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+4+hair+curves+geometry+nodes+grooming" data-video-id="GbLF7l9mMR0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+4+hair+curves+geometry+nodes+grooming" data-video-id="bIsJquzVsPY" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender 4 Hair Curves, Geometry Nodes Grooming System</div>
-    <div class="vg-card-meta">Default Cube · ~30 min</div>
+    <div class="vg-card-meta">Martin Klekner · ~30 min</div>
     <div class="vg-card-desc">Blender 4.0's new curve-based hair system replacing particle hair. The Hair Curves object, grooming tools, and Geometry Nodes for scatter and clumping.</div>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+soft+body+simulation+jelly+blob+organic" data-video-id="xEzFYTiCE0U" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Blender+soft+body+simulation+jelly+blob+organic" data-video-id="MTCuNZA2yJ0" target="_blank" rel="noopener">
   <div class="vg-card-thumb">🎬</div>
   <div class="vg-card-body">
     <div class="vg-card-title">Blender Soft Body Simulation, Jelly and Organic Effects</div>
-    <div class="vg-card-meta">Pixxo 3D · ~20 min</div>
+    <div class="vg-card-meta">djtutorials · ~20 min</div>
     <div class="vg-card-desc">Soft Body physics settings (Goal vertex group to pin parts, Edges stiffness for rubber vs. jelly), and combining with rigid body for squash-and-stretch cartoon physics.</div>
   </div>
 </a>
