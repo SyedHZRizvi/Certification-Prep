@@ -1,0 +1,24 @@
+# known-broken-video-ids.txt — denylist of YouTube IDs confirmed DEAD
+# (oEmbed 404 = removed/private/never-existed, or 401 = embedding disabled).
+# Maintained by scripts/verify-and-allowlist-video-ids.py and the twice-weekly
+# audit; consumed by scripts/verify-baseline.py (check_video_ids_introduced).
+#
+# RULE: a data-video-id on this list may NEVER be (re)introduced into any
+# Videos.md. The verifier hard-fails any commit that adds one back.
+#
+# One 11-char ID per line. Lines starting with '#' are comments.
+# Lives under _data/ so Jekyll never serves it to the public site.
+#
+# --- seeded 2026-06-27: the 11 fabricated IDs found in Persian Module 2 ---
+# (all returned HTTP 404 from oEmbed — they never resolved to real videos)
+9zRMjpY7Xpk
+C5pQBpFO7sE
+JnFWx8Gc5sQ
+N7s_8e_RJGE
+PLXhBwOt4Vo
+SmvEj8e5Bak
+YN7XSMOuVFU
+bLDktPaB8nA
+f8A3-UNm1YM
+k8O_dZBUQ4Y
+v0o-Dz_-AWA

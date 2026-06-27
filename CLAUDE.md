@@ -84,6 +84,11 @@ Effective 2026-05-22, every `.vg-card` link in `Videos.md` files SHOULD have a `
 - A `data-video-id` value is **not a URL** — it's an 11-character ID `[A-Za-z0-9_-]{11}`. It does NOT violate §1.2's direct-URL prohibition.
 - This trade-off was made deliberately: the user explicitly chose inline playback (better UX) over absolute dead-link immunity. Periodic re-curation will be needed.
 - Curation agents must NEVER change the `href` to a direct video URL — only ADD the `data-video-id` attribute. The href stays as the search-URL fallback.
+- **A `data-video-id` must be VERIFIED before it is committed.** Real-but-unchecked IDs are how the Persian (and other language/Quran/marketing) courses shipped ~1,200 dead videos. The allow/deny lists close this:
+  - `_data/verified-video-ids.txt` — IDs confirmed LIVE + embeddable via oEmbed.
+  - `_data/known-broken-video-ids.txt` — IDs confirmed 404/401 (never reuse these).
+  - To add new videos, run `python3 scripts/verify-and-allowlist-video-ids.py --update` — it oEmbed-checks every `data-video-id` and refreshes both lists. Do NOT hand-write IDs into a `Videos.md` without this step.
+  - `scripts/verify-baseline.py` (`check_video_ids_introduced`) hard-fails any commit that introduces a `data-video-id` not on the allowlist, or one that is on the denylist. It only inspects IDs *newly added in the staged diff*, so the pre-existing backlog is owned by the twice-weekly audit (§10.2) and never blocks unrelated commits.
 
 ### 1.3 Never bypass the verifier
 
@@ -251,7 +256,7 @@ The **DevOps & Cloud-Native** track launched with **Certified Kubernetes Adminis
 
 The **Spoken Language Mastery** track (courses 41–45) adds English, Urdu, Persian, Arabic, and French — each a 10-module A1–C2 CEFR-aligned course with 3 practice exams and a Flashcards deck.
 
-`scripts/verify-baseline.py` enforces the current totals (all 15 invariants still passing).
+`scripts/verify-baseline.py` enforces the current totals (all 16 invariants still passing). The 16th invariant (added 2026-06-27) is `check_video_ids_introduced` — see §1.2.1 and §10.2: it blocks any commit that introduces an unverified or known-broken `data-video-id`.
 
 If you need to roll back: `git checkout stable-2026-05-20`.
 
@@ -447,6 +452,28 @@ at 09:00 UTC**:
 
 A human reviewer (currently Humayun) can replace high-traffic broken
 IDs with equivalent canonical videos before merging the auto-PR.
+
+> **Two known limitations (be honest about these):**
+> 1. The auto-fix only *strips* a dead ID so the card degrades to its
+>    search-URL fallback — it does **not** restore inline playback. A
+>    working inline video requires a verified replacement ID (run
+>    `scripts/verify-and-allowlist-video-ids.py`, then re-curate).
+> 2. The "Create cleanup PR" step depends on the repo setting
+>    **Settings → Actions → General → Workflow permissions → "Allow
+>    GitHub Actions to create and approve pull requests."** If that box
+>    is unchecked, the audit will file Issues but the PR step 403s.
+
+### 10.2.1 Commit-time verification (prevention, not just detection)
+
+The audit above is *detection after the fact*. Prevention lives in the
+allow/deny lists + the verifier:
+
+- `_data/verified-video-ids.txt` (allowlist) and
+  `_data/known-broken-video-ids.txt` (denylist) are refreshed by
+  `python3 scripts/verify-and-allowlist-video-ids.py --update`.
+- `scripts/verify-baseline.py` (`check_video_ids_introduced`) rejects any
+  commit that introduces a `data-video-id` not on the allowlist, or one on
+  the denylist — so fabricated/dead IDs can't be committed in the first place.
 
 ### 10.3 Litigation risk model
 

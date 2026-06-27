@@ -1,0 +1,25 @@
+# verified-video-ids.txt — allowlist of YouTube IDs confirmed LIVE + embeddable
+# via YouTube's oEmbed API. Maintained by scripts/verify-and-allowlist-video-ids.py
+# and consumed by scripts/verify-baseline.py (check_video_ids_introduced).
+#
+# RULE: a data-video-id may be NEWLY INTRODUCED into a Videos.md only if it
+# appears here. To add new videos: run
+#     python3 scripts/verify-and-allowlist-video-ids.py --update
+# which oEmbed-verifies every data-video-id in the repo and refreshes this
+# list (live) plus the companion known-broken-video-ids.txt (denylist).
+#
+# One 11-char ID per line. Lines starting with '#' are comments.
+# Lives under _data/ so Jekyll never serves it to the public site.
+#
+# --- seeded 2026-06-27: Persian Module 2 (Core Vocabulary) re-curation ---
+E3GOQ16ZXME
+HbWif2MN7rs
+PDGQS56FwMg
+RojddS-La8w
+XWabCVQmtwE
+cn8Pu3P08XM
+iwtWFYf_YvE
+jdpmOxtUBqE
+w7mtz5bfzoM
+xgTSPv2LES0
+zBS9-6s8rw8
