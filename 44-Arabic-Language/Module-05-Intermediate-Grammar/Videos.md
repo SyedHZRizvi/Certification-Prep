@@ -6,122 +6,122 @@ Master verb conjugation, broken plurals, the iḍāfa construction, adjective ag
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Past+Tense+Complete+Conjugation+All+Persons" data-video-id="V4mKJiWZ2mc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Past+Tense+Complete+Conjugation+All+Persons" data-video-id="BX8vvZImU0Q" target="_blank">
   <div class="vg-thumb">⏪<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Past Tense — Complete Conjugation for All Persons</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">Arabic With Amina</p>
     <p class="vg-duration">28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Present+Tense+Prefix+Suffix+System+Explained" data-video-id="rQrb4DOnOnQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Present+Tense+Prefix+Suffix+System+Explained" data-video-id="ixJzFg4YzhU" target="_blank">
   <div class="vg-thumb">▶️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Present Tense — Prefix & Suffix System Explained</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">My Arabic Mentor</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Broken+Plurals+in+Arabic+Patterns+Memorisation+Strategies" data-video-id="OhNJZuqmrP0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Broken+Plurals+in+Arabic+Patterns+Memorisation+Strategies" data-video-id="XmPjw9xniO4" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Broken Plurals in Arabic — Patterns & Memorisation Strategies</p>
-    <p class="vg-creator">Spoken Arabic Institute</p>
+    <p class="vg-creator">FC LangMedia</p>
     <p class="vg-duration">30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Idaafa+Construction+Arabic+Possessive+Phrases+Explained" data-video-id="yBNxIm0Oy1c" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Idaafa+Construction+Arabic+Possessive+Phrases+Explained" data-video-id="dfvk-lPT2JI" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Idaafa Construction — Arabic Possessive Phrases Explained</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">FC LangMedia</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Adjective+Agreement+Gender+Number+Definiteness" data-video-id="RaMhG6vH58E" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Adjective+Agreement+Gender+Number+Definiteness" data-video-id="1ufwImTRRnE" target="_blank">
   <div class="vg-thumb">🏷️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Adjective Agreement — Gender, Number & Definiteness</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">ARABIC LANGUAGE ACADEMY</p>
     <p class="vg-duration">22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Verb+Forms+I+to+X+10+Patterns+with+Examples" data-video-id="WVjVHpbVq0g" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Verb+Forms+I+to+X+10+Patterns+with+Examples" data-video-id="1IcV-mXE9tY" target="_blank">
   <div class="vg-thumb">🔟<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Verb Forms I–X — The 10 Patterns with Examples</p>
-    <p class="vg-creator">Arabic Unlocked</p>
+    <p class="vg-creator">Learn Arabic with Qasid</p>
     <p class="vg-duration">35 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Negation+la+lam+lan+laysa+All+Negation+Words" data-video-id="LrO9S3oL7s8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Negation+la+lam+lan+laysa+All+Negation+Words" data-video-id="wN63wpfc8Jk" target="_blank">
   <div class="vg-thumb">🚫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Negation — لا، لم، لن، ليس — All Negation Words</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">Learn Modern Standard Arabic</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Case+System+Iraab+Introduction+to+Grammar+Cases" data-video-id="hCsJbYRRIlM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Case+System+Iraab+Introduction+to+Grammar+Cases" data-video-id="Suko22HnT8I" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Case System (Iraab) — Introduction to Grammar Cases</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">FC LangMedia</p>
     <p class="vg-duration">24 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Pronominal+Suffixes+Possessive+Endings+on+Nouns" data-video-id="e1aXlBDNVEU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Pronominal+Suffixes+Possessive+Endings+on+Nouns" data-video-id="UHuJpemMyiI" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Pronominal Suffixes — Possessive Endings on Nouns</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">FC LangMedia</p>
     <p class="vg-duration">16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Future+Tense+sa+and+sawfa+Explained" data-video-id="5RbApMTBhsU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Future+Tense+sa+and+sawfa+Explained" data-video-id="7_nbNldPvbs" target="_blank">
   <div class="vg-thumb">🔮<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Future Tense — سَـ and سَوْفَ Explained</p>
-    <p class="vg-creator">Speak Arabic For Free</p>
+    <p class="vg-creator">Iqra Innovations</p>
     <p class="vg-duration">12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Form+II+Verbs+Intensification+Causation" data-video-id="EsyMzRRRkjQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Form+II+Verbs+Intensification+Causation" data-video-id="leNiC1peJx4" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Arabic Form II Verbs — Intensification & Causation</p>
-    <p class="vg-creator">Arabic Unlocked</p>
+    <p class="vg-creator">LearnQuranicArabic</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Reading+Intermediate+Arabic+Texts+News+Literature" data-video-id="D6cJnz53wKE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Reading+Intermediate+Arabic+Texts+News+Literature" data-video-id="Us0lzd3VWHs" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Reading Intermediate Arabic Texts — News & Literature</p>
-    <p class="vg-creator">Al Arabiyya Bayna Yadayk</p>
+    <p class="vg-creator">Learn Arabic Language</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>

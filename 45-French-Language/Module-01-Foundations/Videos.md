@@ -6,122 +6,122 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Alphabet+All+26+Letters+with+Pronunciation" data-video-id="OJEJ9B0tDFE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Alphabet+All+26+Letters+with+Pronunciation" data-video-id="y7mviFfvHhk" target="_blank">
   <div class="vg-thumb">🇫🇷<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Alphabet — All 26 Letters with Pronunciation</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">TakeLessons</p>
     <p class="vg-duration">⏱ ~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Accent+Marks+Complete+Guide+e+accent+cedilla" data-video-id="Z2JVVOMjR7E" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Accent+Marks+Complete+Guide+e+accent+cedilla" data-video-id="KXUtjedgmBI" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Accent Marks — Complete Guide (é è ê ç à â)</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">French Speak</p>
     <p class="vg-duration">⏱ ~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Pronunciation+Nasal+Vowels+an+en+in+on+un" data-video-id="6VnOGWfaN6Y" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Pronunciation+Nasal+Vowels+an+en+in+on+un" data-video-id="81_IUit_LLA" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Pronunciation — Nasal Vowels (an, en, in, on, un)</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=The+French+R+How+to+Pronounce+It+Correctly" data-video-id="Bw3Y7e7UWWM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=The+French+R+How+to+Pronounce+It+Correctly" data-video-id="MrjMJ_PAlB8" target="_blank">
   <div class="vg-thumb">🎙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">The French R — How to Pronounce It Correctly</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~7 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Greetings+Bonjour+Bonsoir+Au+revoir+and+More" data-video-id="T-BrwSUFHiM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Greetings+Bonjour+Bonsoir+Au+revoir+and+More" data-video-id="TblszzYQF2o" target="_blank">
   <div class="vg-thumb">👋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Greetings — Bonjour, Bonsoir, Au revoir & More</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">Comme une Française</p>
     <p class="vg-duration">⏱ ~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Numbers+1+100+Full+Lesson+with+Pronunciation" data-video-id="v6oFO4X4SzY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Numbers+1+100+Full+Lesson+with+Pronunciation" data-video-id="CEx2fPn-_UE" target="_blank">
   <div class="vg-thumb">🔢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Numbers 1–100 — Full Lesson with Pronunciation</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Vous+vs+Tu+When+to+Use+Formal+and+Informal+French" data-video-id="fBQb4g0e7Es" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Vous+vs+Tu+When+to+Use+Formal+and+Informal+French" data-video-id="HoToKAMp1JY" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Vous vs Tu — When to Use Formal and Informal French</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Silent+Letters+in+French+Rules+and+Exceptions" data-video-id="LMa90FGPFNU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Silent+Letters+in+French+Rules+and+Exceptions" data-video-id="l_uCUZzFbBs" target="_blank">
   <div class="vg-thumb">🤫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Silent Letters in French — Rules & Exceptions</p>
-    <p class="vg-creator">Easy French</p>
+    <p class="vg-creator">Learn French with Lexie</p>
     <p class="vg-duration">⏱ ~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+Words+from+French+500+Cognates+You+Already+Know" data-video-id="Zs_FJwFztiM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+Words+from+French+500+Cognates+You+Already+Know" data-video-id="35XMBa3Z4Ns" target="_blank">
   <div class="vg-thumb">🇬🇧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">English Words from French — 500 Cognates You Already Know</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">Learn Canadian French with Nat</p>
     <p class="vg-duration">⏱ ~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Why+French+Is+Easier+Than+You+Think+Motivation+Tips" data-video-id="VRN7B0WiQP0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Why+French+Is+Easier+Than+You+Think+Motivation+Tips" data-video-id="0SYk-yFrizA" target="_blank">
   <div class="vg-thumb">🌍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Why French Is Easier Than You Think — Motivation & Tips</p>
-    <p class="vg-creator">Easy French</p>
+    <p class="vg-creator">French mornings with Elisa</p>
     <p class="vg-duration">⏱ ~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Liaison+and+Elision+Linking+Words+Like+a+Native" data-video-id="2_j-Kh9f6UI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Liaison+and+Elision+Linking+Words+Like+a+Native" data-video-id="sSbOX4sMdLA" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">French Liaison and Elision — Linking Words Like a Native</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">French Simplified</p>
     <p class="vg-duration">⏱ ~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+for+Beginners+Complete+A1+Introduction" data-video-id="q8Z3OB_eGhE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+for+Beginners+Complete+A1+Introduction" data-video-id="c2SUQVjklVA" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">French for Beginners — Complete A1 Introduction</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">French Comprehensible Input</p>
     <p class="vg-duration">⏱ ~20 min</p>
   </div>
 </a>

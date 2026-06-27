@@ -6,112 +6,112 @@ Master Urdu grammar fundamentals — SOV word order, gender agreement, verb conj
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+SOV+word+order+grammar+lesson+beginners" data-video-id="T2PVzuQcjWw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+SOV+word+order+grammar+lesson+beginners" data-video-id="M_bIXQXMQjc" target="_blank">
   <div class="vg-thumb">📐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Sentence Structure — SOV Word Order Explained</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+gender+grammar+masculine+feminine+nouns" data-video-id="QZvpxGp_OFk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+gender+grammar+masculine+feminine+nouns" data-video-id="9G_owvJwvRE" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Gender Rules — Masculine and Feminine Nouns</p>
-    <p class="vg-creator">Urdu Language Centre</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+conjugation+present+tense+beginners" data-video-id="h8LIHqD0JTA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+conjugation+present+tense+beginners" data-video-id="1CU4tjmajdc" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Present Tense — Verb Conjugation for All Persons</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+postpositions+lesson+mein+par+se+ko" data-video-id="ZvlQmzc-4rk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+postpositions+lesson+mein+par+se+ko" data-video-id="m4Eo2jYnqVo" target="_blank">
   <div class="vg-thumb">📍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Postpositions — Mein, Par, Se, Ko, Tak Explained</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Dabistan</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+pronouns+main+tum+aap+woh+hum" data-video-id="u6bRjjTHHgs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+pronouns+main+tum+aap+woh+hum" data-video-id="nuWqE-3LFxE" target="_blank">
   <div class="vg-thumb">👤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Pronouns — Personal and Possessive Pronouns</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">EDUCATION PYRAMID GLOBAL</p>
     <p class="vg-duration">~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+question+words+kya+kaun+kahaan+kab+kyun" data-video-id="3YNRiHKkMJA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+question+words+kya+kaun+kahaan+kab+kyun" data-video-id="JAOb_itBFv4" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Question Words — Kya, Kaun, Kahaan, Kab, Kyun, Kaise</p>
-    <p class="vg-creator">Speak Urdu</p>
+    <p class="vg-creator">EDUCATION PYRAMID GLOBAL</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+possessive+mera+meri+mere+gender+agreement" data-video-id="bwm6x5C0zow" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+possessive+mera+meri+mere+gender+agreement" data-video-id="LZKg1JT_y6o" target="_blank">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Possessives — Mera/Meri/Mere Gender Agreement</p>
-    <p class="vg-creator">Urdu Language Centre</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+plural+forms+masculine+feminine+rules" data-video-id="JxFPe7rLqgQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+plural+forms+masculine+feminine+rules" data-video-id="8ZxPJeKtAzc" target="_blank">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Plural Formation — Rules for Masculine and Feminine</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+to+be+hoon+hai+hain+lesson" data-video-id="PNhKAQi6VDA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+verb+to+be+hoon+hai+hain+lesson" data-video-id="lXo8q1tHvfg" target="_blank">
   <div class="vg-thumb">🧩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu "To Be" — Hun, Hai, Hain in All Contexts</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Pakistan Home School</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+grammar+complete+beginners+course+A2" data-video-id="N6n9Qm5PKJE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+grammar+complete+beginners+course+A2" data-video-id="ij5NEQQpJtg" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Complete Urdu Grammar for Beginners — A1 to A2 Level</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Learn Urdu with UrduPod101.com</p>
     <p class="vg-duration">~45 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Hindi+Urdu+grammar+comparison+English+speakers" data-video-id="YFGAhifnJXE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Hindi+Urdu+grammar+comparison+English+speakers" data-video-id="Pz5rNrMdd1k" target="_blank">
   <div class="vg-thumb">🔬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Understanding Urdu/Hindi Grammar — Linguist's Perspective</p>
-    <p class="vg-creator">Language Analysis Channel</p>
+    <p class="vg-creator">Language of Earth</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>

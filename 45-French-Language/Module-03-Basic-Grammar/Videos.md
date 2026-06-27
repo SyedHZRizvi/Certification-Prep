@@ -6,7 +6,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Etre+To+Be+Complete+Conjugation+and+Usage+French" data-video-id="ylNB4AiFPSE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Etre+To+Be+Complete+Conjugation+and+Usage+French" data-video-id="CbxrZMePugU" target="_blank">
   <div class="vg-thumb">🔑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -16,102 +16,102 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Avoir+To+Have+Full+Conjugation+Idioms+French" data-video-id="bIlOXSBwDwM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Avoir+To+Have+Full+Conjugation+Idioms+French" data-video-id="JFBw0-d1z48" target="_blank">
   <div class="vg-thumb">✋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Avoir (To Have) — Full Conjugation + Idioms (avoir faim, soif...)</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Regular+ER+Verbs+in+French+The+Parler+Pattern" data-video-id="G7J5EC0Vf2Y" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Regular+ER+Verbs+in+French+The+Parler+Pattern" data-video-id="5WiTJJ4N2jQ" target="_blank">
   <div class="vg-thumb">⚙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Regular -ER Verbs in French — The Parler Pattern</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Gender+Rules+Masculine+Feminine+Nouns+Explained" data-video-id="Dz-oGS9XFYU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Gender+Rules+Masculine+Feminine+Nouns+Explained" data-video-id="_uhFV3lD_wg" target="_blank">
   <div class="vg-thumb">🚻<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Gender Rules — Masculine and Feminine Nouns Explained</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Articles+Le+La+Les+Un+Une+Des+Full+Guide" data-video-id="qSFLbFTRFfI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Articles+Le+La+Les+Un+Une+Des+Full+Guide" data-video-id="oL0_SgyXccY" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Articles — Le, La, Les, Un, Une, Des (Full Guide)</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">YouLearnFrench</p>
     <p class="vg-duration">⏱ ~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Adjective+Agreement+Gender+and+Number+Rules" data-video-id="OuMY3w0Uc00" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Adjective+Agreement+Gender+and+Number+Rules" data-video-id="1-5OlGCqNbg" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Adjective Agreement — Gender and Number Rules</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Negation+Ne+Pas+and+Other+Negative+Expressions" data-video-id="BpQ3pQ6bFjk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Negation+Ne+Pas+and+Other+Negative+Expressions" data-video-id="40ZnnWck0Zk" target="_blank">
   <div class="vg-thumb">🚫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Negation — Ne...Pas and Other Negative Expressions</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Questions+3+Ways+to+Ask+Inversion+Est-ce+que+Intonation" data-video-id="F8MUfEjGasc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Questions+3+Ways+to+Ask+Inversion+Est-ce+que+Intonation" data-video-id="N8kuQTOt5QI" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Questions — 3 Ways to Ask (Inversion, Est-ce que, Intonation)</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">Elizabeth Nkere</p>
     <p class="vg-duration">⏱ ~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Subject+Pronouns+Je+Tu+Il+Elle+Nous+Vous+Ils" data-video-id="PLHiCiC_SIQE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Subject+Pronouns+Je+Tu+Il+Elle+Nous+Vous+Ils" data-video-id="nyfRpRnyXmw" target="_blank">
   <div class="vg-thumb">👤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Subject Pronouns — Je, Tu, Il, Elle, Nous, Vous, Ils</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Adjective+Placement+in+French+Before+or+After+the+Noun" data-video-id="R8W_YGVGnN0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Adjective+Placement+in+French+Before+or+After+the+Noun" data-video-id="LS8MoEdb9zY" target="_blank">
   <div class="vg-thumb">🧩<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Adjective Placement in French — Before or After the Noun?</p>
-    <p class="vg-creator">Easy French</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Grammar+for+Absolute+Beginners+Complete+A2+Review" data-video-id="4MqxOVqR-QI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Grammar+for+Absolute+Beginners+Complete+A2+Review" data-video-id="NQqAW5Feh8s" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">French Grammar for Absolute Beginners — Complete A2 Review</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">French With Love</p>
     <p class="vg-duration">⏱ ~25 min</p>
   </div>
 </a>

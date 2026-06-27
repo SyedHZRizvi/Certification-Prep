@@ -21,52 +21,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=past+simple+irregular+verbs+English+complete+list+lesson" data-video-id="5H-GhzNBBZY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=past+simple+irregular+verbs+English+complete+list+lesson" data-video-id="aPgtdZ_urZk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Past Simple — Regular and Irregular Verbs Complete</p>
-    <p class="vg-creator">Speak English with Vanessa</p>
+    <p class="vg-creator">British Council | LearnEnglish Teens</p>
     <span class="vg-duration">⏱ 16 min · Top 50 irregular verbs with pronunciation and practice</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=modal+verbs+English+can+could+should+must+may+might+explained" data-video-id="VPozsFzmMvA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=modal+verbs+English+can+could+should+must+may+might+explained" data-video-id="36wG9pSYu7Q" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Modal Verbs — Can, Could, Should, Must, May, Might</p>
-    <p class="vg-creator">JenniferESL</p>
+    <p class="vg-creator">English with Lucy</p>
     <span class="vg-duration">⏱ 18 min · All 7 modals with meanings and example sentences</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=will+going+to+future+tense+English+difference+explained" data-video-id="AVd1QUUML4s" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=will+going+to+future+tense+English+difference+explained" data-video-id="IWAS5aszaGo" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Will vs Going To — Future Tense Differences</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">EasyTeaching</p>
     <span class="vg-duration">⏱ 12 min · When to use will, going to, and present continuous for future</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=comparative+superlative+adjectives+English+grammar+bigger+biggest" data-video-id="QzTkKlAR0eM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=comparative+superlative+adjectives+English+grammar+bigger+biggest" data-video-id="oGr7l3q7SMI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Comparatives and Superlatives — Bigger, Biggest</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">English with Lucy</p>
     <span class="vg-duration">⏱ 11 min · All rules with regular and irregular forms</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=passive+voice+English+grammar+B1+intermediate+explained" data-video-id="VlDp2oFG9pI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=passive+voice+English+grammar+B1+intermediate+explained" data-video-id="QkDhgoLfpvI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Passive Voice Introduction — English Grammar B1</p>
-    <p class="vg-creator">Perfect English Grammar</p>
+    <p class="vg-creator">Intech Centre</p>
     <span class="vg-duration">⏱ 10 min · Active to passive transformation with examples</span>
   </div>
 </a>
@@ -77,27 +77,27 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=past+continuous+tense+English+was+were+ing+grammar" data-video-id="N-FoZ8-puZw" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=past+continuous+tense+English+was+were+ing+grammar" data-video-id="D2uT7foH5mQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Past Continuous Tense — Was/Were + -ing</p>
-    <p class="vg-creator">EnglishAnyone</p>
+    <p class="vg-creator">Acquire English</p>
     <span class="vg-duration">⏱ 9 min · When to use past continuous with past simple</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=countable+uncountable+nouns+some+any+much+many+English+grammar" data-video-id="JFTuSKgTbcA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=countable+uncountable+nouns+some+any+much+many+English+grammar" data-video-id="xiju4GLSH3U" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Countable vs Uncountable Nouns — Some, Any, Much, Many</p>
-    <p class="vg-creator">EngVid — Learn English</p>
+    <p class="vg-creator">Arnel's Everyday English</p>
     <span class="vg-duration">⏱ 13 min · Never confuse much/many again</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=adverbs+of+frequency+always+usually+sometimes+never+position" data-video-id="jRjg-gRGV7k" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=adverbs+of+frequency+always+usually+sometimes+never+position" data-video-id="iTd0gcR_VVM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
@@ -107,22 +107,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=question+tags+English+grammar+aren't+you+isn't+it" data-video-id="nfWlot6h_JM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=question+tags+English+grammar+aren't+you+isn't+it" data-video-id="5Ru-6OWezac" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Question Tags in English — Aren't you? Isn't it?</p>
-    <p class="vg-creator">JenniferESL</p>
+    <p class="vg-creator">Learn English with Papa Teach Me</p>
     <span class="vg-duration">⏱ 10 min · How to form and use question tags naturally</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=linking+words+connectors+English+however+although+because+therefore" data-video-id="FolFvRTCOhQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=linking+words+connectors+English+however+although+because+therefore" data-video-id="KSkjwtxtoPU" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Linking Words — However, Although, Because, Therefore</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">Speak Confident English</p>
     <span class="vg-duration">⏱ 11 min · Connect ideas smoothly like a fluent speaker</span>
   </div>
 </a>
@@ -133,32 +133,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+B1+intermediate+stories+past+tense+listening+practice" data-video-id="Ys3cjEKdJeo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+B1+intermediate+stories+past+tense+listening+practice" data-video-id="PrYhIuxWniw" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">B1 English Listening — Past Tense Stories</p>
-    <p class="vg-creator">VOA Learning English</p>
+    <p class="vg-creator">English Centre</p>
     <span class="vg-duration">⏱ 8 min · Hear irregular verbs and past tenses in real stories</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+in+action+B1+intermediate+natural+conversations" data-video-id="8ZNn-4sXUrk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+grammar+in+action+B1+intermediate+natural+conversations" data-video-id="e633Lo2SQCc" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Grammar in Action — B1 Intermediate Conversations</p>
-    <p class="vg-creator">Speak English with Vanessa</p>
+    <p class="vg-creator">English Grammar Tales</p>
     <span class="vg-duration">⏱ 15 min · Natural use of modals, comparatives, and linking words</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=TED+talks+intermediate+English+learning+B1+slow+clear" data-video-id="8CrOL-ydFMI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=TED+talks+intermediate+English+learning+B1+slow+clear" data-video-id="nTV_bj3NErQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">TED Talks for B1 English Learners</p>
-    <p class="vg-creator">TED-Ed / TED Talks</p>
+    <p class="vg-creator">RealLife English</p>
     <span class="vg-duration">⏱ 10–15 min · Stretch your listening with real-world English content</span>
   </div>
 </a>

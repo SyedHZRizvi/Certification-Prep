@@ -6,112 +6,112 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Passe+Compose+Complete+Guide+with+Avoir+and+Etre+French" data-video-id="j_0IlDEcP3s" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Passe+Compose+Complete+Guide+with+Avoir+and+Etre+French" data-video-id="SNK8Pk3BVyU" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Passé Composé — Complete Guide with Avoir and Être</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=DR+MRS+VANDERTRAMP+Etre+Verbs+in+Passe+Compose+Full+List" data-video-id="sWyCIgmb0QM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=DR+MRS+VANDERTRAMP+Etre+Verbs+in+Passe+Compose+Full+List" data-video-id="UzZvSw5rd9I" target="_blank">
   <div class="vg-thumb">🏠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">DR MRS VANDERTRAMP — Être Verbs in Passé Composé (Full List)</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">MS LOLA TEACHER</p>
     <p class="vg-duration">⏱ ~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=L+Imparfait+Complete+Conjugation+and+Usage+A2+B1+French" data-video-id="Dco9GBlYMBo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=L+Imparfait+Complete+Conjugation+and+Usage+A2+B1+French" data-video-id="0u9h-WnZj7o" target="_blank">
   <div class="vg-thumb">🔄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">L'Imparfait — Complete Conjugation and Usage (A2/B1)</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Passe+Compose+vs+Imparfait+When+to+Use+Which+Key+Lesson" data-video-id="Xp5SX2LLHQU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Passe+Compose+vs+Imparfait+When+to+Use+Which+Key+Lesson" data-video-id="icLGNYagToA" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Passé Composé vs Imparfait — When to Use Which (The Key Lesson)</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">MyFrenchStory</p>
     <p class="vg-duration">⏱ ~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Future+Tenses+Futur+Proche+vs+Futur+Simple" data-video-id="xFgQZR-y9lY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Future+Tenses+Futur+Proche+vs+Futur+Simple" data-video-id="6HDCdU3yJtk" target="_blank">
   <div class="vg-thumb">🔮<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Future Tenses — Futur Proche vs Futur Simple</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Reflexive+Verbs+Daily+Routine+Vocabulary+se+lever+se+laver" data-video-id="6dAlJCi9NJg" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Reflexive+Verbs+Daily+Routine+Vocabulary+se+lever+se+laver" data-video-id="ffZtGGQJIyA" target="_blank">
   <div class="vg-thumb">🔁<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">French Reflexive Verbs — Daily Routine Vocabulary (se lever, se laver...)</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Irregular+Verbs+Aller+Faire+Venir+Prendre+Voir+B1" data-video-id="ZX3-nNJOwJI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Irregular+Verbs+Aller+Faire+Venir+Prendre+Voir+B1" data-video-id="ZOeFxrkb0XM" target="_blank">
   <div class="vg-thumb">🌪️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Irregular Verbs — Aller, Faire, Venir, Prendre, Voir (B1)</p>
-    <p class="vg-creator">French with Nelly</p>
+    <p class="vg-creator">Fernweh & Beyond</p>
     <p class="vg-duration">⏱ ~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Object+Pronouns+Le+La+Les+Lui+Leur+Y+En" data-video-id="OfEqXB7VMAM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Object+Pronouns+Le+La+Les+Lui+Leur+Y+En" data-video-id="7-c8htYoJvM" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Object Pronouns — Le, La, Les, Lui, Leur, Y, En</p>
-    <p class="vg-creator">Français Authentique</p>
+    <p class="vg-creator">Learn French with Pascal</p>
     <p class="vg-duration">⏱ ~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Depuis+in+French+Present+Tense+for+Ongoing+Actions" data-video-id="Pn6hzOFbOGM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Depuis+in+French+Present+Tense+for+Ongoing+Actions" data-video-id="LfmIvBcPMHY" target="_blank">
   <div class="vg-thumb">⏳<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Depuis in French — Present Tense for Ongoing Actions</p>
-    <p class="vg-creator">FrenchPod101</p>
+    <p class="vg-creator">Learn French With Alexa</p>
     <p class="vg-duration">⏱ ~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Comparatives+and+Superlatives+Plus+Moins+Meilleur" data-video-id="5uf0tJj9i_s" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=French+Comparatives+and+Superlatives+Plus+Moins+Meilleur" data-video-id="Ne431tdamsk" target="_blank">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">French Comparatives and Superlatives — Plus, Moins, Meilleur</p>
-    <p class="vg-creator">Easy French</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=B1+French+Grammar+Masterclass+Full+Intermediate+Review" data-video-id="J7mBUlFM7go" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=B1+French+Grammar+Masterclass+Full+Intermediate+Review" data-video-id="EMVWbiUCnCc" target="_blank">
   <div class="vg-thumb">💡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">B1 French Grammar Masterclass — Full Intermediate Review</p>
-    <p class="vg-creator">Learn French with Alexa</p>
+    <p class="vg-creator">The perfect French with Dylane</p>
     <p class="vg-duration">⏱ ~30 min</p>
   </div>
 </a>

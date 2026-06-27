@@ -6,112 +6,112 @@ Build your Urdu vocabulary across family, food, body parts, home items, and dail
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+family+vocabulary+words+English+speakers" data-video-id="pRQeScYo5rs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+family+vocabulary+words+English+speakers" data-video-id="jtk8tWdH9Hs" target="_blank">
   <div class="vg-thumb">👨‍👩‍👧‍👦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Family Vocabulary — All Relationships Explained</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Taskeen Academy</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+family+terms+chacha+mamoon+khala+phoophi" data-video-id="W3OmGMRG1Kc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+family+terms+chacha+mamoon+khala+phoophi" data-video-id="mItSI2TAjJ8" target="_blank">
   <div class="vg-thumb">🏠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Pakistani Family System — Chacha, Mamoon, Khala, Phoophi</p>
-    <p class="vg-creator">Pakistani YouTube — Family Culture</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+food+vocabulary+Pakistani+dishes+names" data-video-id="YvE3tFKBHSs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+food+vocabulary+Pakistani+dishes+names" data-video-id="Kr8HZrbCxys" target="_blank">
   <div class="vg-thumb">🍛<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Food Vocabulary — Pakistani Dishes and Ingredients</p>
-    <p class="vg-creator">Speak Urdu</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+body+parts+vocabulary+lesson" data-video-id="PqNsqTiMiA0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+body+parts+vocabulary+lesson" data-video-id="WXn97WqpFo8" target="_blank">
   <div class="vg-thumb">🫀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Body Parts in Urdu — Complete Vocabulary Lesson</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+daily+verbs+common+actions+beginners" data-video-id="LsNaYDRFxYk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+daily+verbs+common+actions+beginners" data-video-id="WHbreAA-8KI" target="_blank">
   <div class="vg-thumb">🏃<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">50 Common Urdu Verbs — Daily Actions for Beginners</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Learn Urdu with Sara</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+time+words+days+months+vocabulary" data-video-id="Xb4GjVy-bDM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+time+words+days+months+vocabulary" data-video-id="rUd_RWwMx_k" target="_blank">
   <div class="vg-thumb">🕐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Time Vocabulary — Days, Months, Seasons</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Little Treehouse Apps & eBooks</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+house+home+vocabulary+lesson" data-video-id="5uoHkGbKDZE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+house+home+vocabulary+lesson" data-video-id="82kqXT1dCSU" target="_blank">
   <div class="vg-thumb">🏡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Home and House Vocabulary — Rooms and Furniture</p>
-    <p class="vg-creator">Speak Urdu</p>
+    <p class="vg-creator">Programology</p>
     <p class="vg-duration">~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+colors+adjectives+vocabulary+beginners" data-video-id="rIbZqe5k0lU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+colors+adjectives+vocabulary+beginners" data-video-id="WdfetSnMTXY" target="_blank">
   <div class="vg-thumb">🎨<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Colors and Adjectives in Urdu — Visual Vocabulary</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+chai+culture+tea+tradition" data-video-id="Wc8DVhzDiJk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+chai+culture+tea+tradition" data-video-id="ebRc0l7Hoig" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Pakistani Chai Culture — Language of Hospitality</p>
-    <p class="vg-creator">Pakistani YouTube — Culture</p>
+    <p class="vg-creator">The Express Tribune</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+clothing+shalwar+kameez+vocabulary" data-video-id="cHn4xWPNYGE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+clothing+shalwar+kameez+vocabulary" data-video-id="ChvjB_E9oeI" target="_blank">
   <div class="vg-thumb">👘<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Pakistani Clothing Vocabulary — Shalwar Kameez and More</p>
-    <p class="vg-creator">Pakistani YouTube — Clothing Culture</p>
+    <p class="vg-creator">AW English</p>
     <p class="vg-duration">~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+200+core+vocabulary+words+flashcards" data-video-id="GkFZAurR7Hs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+200+core+vocabulary+words+flashcards" data-video-id="Pl_-OZ0gSwQ" target="_blank">
   <div class="vg-thumb">🃏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">200 Core Urdu Words — Complete Vocabulary Flashcard Video</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Learn Urdu with UrduPod101.com</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>

@@ -6,122 +6,122 @@ Master Arabic grammar fundamentals: gender, definite article, plurals, sentence 
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Gender+Masculine+Feminine+Rules+Explained" data-video-id="LXjKMVBo2gU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Gender+Masculine+Feminine+Rules+Explained" data-video-id="LKns9r_gf2E" target="_blank">
   <div class="vg-thumb">⚥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Gender — Masculine & Feminine Rules Explained</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">ARABIC LANGUAGE ACADEMY</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Sun+Moon+Letters+Definite+Article+al+in+Arabic" data-video-id="S3qB4NPBNkE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Sun+Moon+Letters+Definite+Article+al+in+Arabic" data-video-id="VIy6BGewpAg" target="_blank">
   <div class="vg-thumb">☀️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Sun & Moon Letters — The Definite Article al- in Arabic</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">ArabicFluency</p>
     <p class="vg-duration">15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Plurals+Sound+Plural+Broken+Plural+Explained" data-video-id="8L6D8VtpgxY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Plurals+Sound+Plural+Broken+Plural+Explained" data-video-id="jngeaK0Hvwc" target="_blank">
   <div class="vg-thumb">🔢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Plurals — Sound Plural and Broken Plural Explained</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">Leer Arabische Grammatica</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Root+System+How+Trilateral+Roots+Work" data-video-id="cJAFNP_3D7Y" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Root+System+How+Trilateral+Roots+Work" data-video-id="850QlA_-Rgk" target="_blank">
   <div class="vg-thumb">🌳<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Root System — How Trilateral Roots Work</p>
-    <p class="vg-creator">Spoken Arabic Institute</p>
+    <p class="vg-creator">Enlighten Us Arabic</p>
     <p class="vg-duration">22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Personal+Pronouns+All+Forms+with+Examples" data-video-id="GMDhFe9wZIQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Personal+Pronouns+All+Forms+with+Examples" data-video-id="oPLzqkS6Tm8" target="_blank">
   <div class="vg-thumb">👤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Personal Pronouns — All Forms with Examples</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">Yusuf Mullan</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nominal+Sentence+in+Arabic+Subject+Predicate" data-video-id="n6aXJlvWHss" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nominal+Sentence+in+Arabic+Subject+Predicate" data-video-id="sU19ybMqoy4" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Nominal Sentence in Arabic — Subject + Predicate</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">Arabic With Amina</p>
     <p class="vg-duration">16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Verbal+Sentence+Verb+Subject+Object+Order" data-video-id="oSJ8mvIbI_Y" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Verbal+Sentence+Verb+Subject+Object+Order" data-video-id="05SOrkbyhjM" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Verbal Sentence — Verb-Subject-Object Order</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">Arabic With Amina</p>
     <p class="vg-duration">14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Question+Words+How+to+Ask+Questions" data-video-id="PCGPKdGarVQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Question+Words+How+to+Ask+Questions" data-video-id="ohXoF4bh6UE" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Question Words — How to Ask Questions</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">ARABIC LANGUAGE ACADEMY</p>
     <p class="vg-duration">12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Dual+Form+How+to+Say+Two+of+Something" data-video-id="UCQ5eR7LQBA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Dual+Form+How+to+Say+Two+of+Something" data-video-id="5ns91Bzev3s" target="_blank">
   <div class="vg-thumb">2️⃣<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Dual Form — How to Say "Two of Something"</p>
-    <p class="vg-creator">Arabic with Sam</p>
+    <p class="vg-creator">Arabic With Ibtisam</p>
     <p class="vg-duration">10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Root+System+Deep+Dive+Expand+Your+Arabic+Vocabulary" data-video-id="TkJi6vYqYEo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Root+System+Deep+Dive+Expand+Your+Arabic+Vocabulary" data-video-id="0zyXU1VBFPU" target="_blank">
   <div class="vg-thumb">🧠<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Root System Deep Dive — Expand Your Vocabulary 10x</p>
-    <p class="vg-creator">Arabic Unlocked</p>
+    <p class="vg-creator">FC LangMedia</p>
     <p class="vg-duration">28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Broken+Plural+Patterns+Complete+Pattern+Reference+Arabic" data-video-id="2P43zx_sFEw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Broken+Plural+Patterns+Complete+Pattern+Reference+Arabic" data-video-id="xDo6KuLBcpQ" target="_blank">
   <div class="vg-thumb">📑<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Broken Plural Patterns — Complete Pattern Reference</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">Learning with abi and ummi</p>
     <p class="vg-duration">30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Grammar+Similarities+with+Urdu+For+Urdu+Speakers" data-video-id="vovmLU12Ebo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Grammar+Similarities+with+Urdu+For+Urdu+Speakers" data-video-id="H5Uxe1Ww3jQ" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Arabic Grammar Similarities with Urdu — For Urdu Speakers</p>
-    <p class="vg-creator">Urdu-Arabic Bridge</p>
+    <p class="vg-creator">Moroccan in Pakistan</p>
     <p class="vg-duration">24 min</p>
   </div>
 </a>

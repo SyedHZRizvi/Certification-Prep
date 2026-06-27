@@ -21,52 +21,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+conversation+shopping+supermarket+dialogue+practice" data-video-id="MChJ5SiEGvY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+conversation+shopping+supermarket+dialogue+practice" data-video-id="xA32p3CEt8Y" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Shopping in English — Supermarket Dialogue</p>
-    <p class="vg-creator">Speak English Professionally</p>
+    <p class="vg-creator">7ESL Learning English</p>
     <span class="vg-duration">⏱ 10 min · Real shopping conversations with native speakers</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+conversation+restaurant+ordering+food+dialogue" data-video-id="1V55pjWFDFE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+conversation+restaurant+ordering+food+dialogue" data-video-id="bgfdqVmVjfk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Ordering Food at a Restaurant in English</p>
-    <p class="vg-creator">English Conversations</p>
+    <p class="vg-creator">Easy English</p>
     <span class="vg-duration">⏱ 9 min · Complete restaurant dialogue from start to bill</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=asking+for+directions+English+conversation+practice+dialogue" data-video-id="HqJzSSHs5Pk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=asking+for+directions+English+conversation+practice+dialogue" data-video-id="Lms1qBpfYIM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Asking for and Giving Directions in English</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">Ellii (formerly ESL Library)</p>
     <span class="vg-duration">⏱ 11 min · Turn left, go straight — all direction language covered</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+at+the+doctor+describing+symptoms+medical+vocabulary" data-video-id="MQQGl-LoU2Y" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+at+the+doctor+describing+symptoms+medical+vocabulary" data-video-id="Qn9QKZrNbeo" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">At the Doctor — Describing Symptoms in English</p>
-    <p class="vg-creator">EngVid — Learn English</p>
+    <p class="vg-creator">Learn English by Pocket Passport</p>
     <span class="vg-duration">⏱ 12 min · Headache, fever, cough — medical English vocabulary</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+phone+conversation+how+to+speak+on+phone+professionally" data-video-id="lKGoQmPTPnA" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+phone+conversation+how+to+speak+on+phone+professionally" data-video-id="2L7g-qlhVco" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">English Phone Conversations — How to Speak Professionally</p>
-    <p class="vg-creator">Rachel's English</p>
+    <p class="vg-creator">English Like A Native</p>
     <span class="vg-duration">⏱ 13 min · Answering, transferring, taking messages on the phone</span>
   </div>
 </a>
@@ -77,52 +77,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+making+accepting+declining+invitations+politely" data-video-id="4JaFgS0vYqY" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+making+accepting+declining+invitations+politely" data-video-id="qV3Hp7Ecpok" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Making and Declining Invitations Politely in English</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">Learn English with Cambridge</p>
     <span class="vg-duration">⏱ 8 min · Accept and decline gracefully — essential social English</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+expressing+opinions+feelings+I+think+I+believe+phrases" data-video-id="HFqnmRBBuRo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+expressing+opinions+feelings+I+think+I+believe+phrases" data-video-id="6tyZcZNRe6A" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Expressing Opinions in English — I Think, I Believe</p>
-    <p class="vg-creator">EnglishClass101</p>
+    <p class="vg-creator">Learn English with Cambridge</p>
     <span class="vg-duration">⏱ 10 min · Agree, disagree, and share views confidently</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+public+transport+vocabulary+bus+train+ticket+phrases" data-video-id="nfWlot6h_JM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+public+transport+vocabulary+bus+train+ticket+phrases" data-video-id="5WGDTOm3xRk" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Public Transport English — Buses, Trains, Tickets</p>
-    <p class="vg-creator">EngVid</p>
+    <p class="vg-creator">Oxford Online English</p>
     <span class="vg-duration">⏱ 9 min · Buy tickets and navigate transport systems in English</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+emergency+phrases+help+police+ambulance+fire" data-video-id="V0J9DXCE26c" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+emergency+phrases+help+police+ambulance+fire" data-video-id="vRwkXjQHM6g" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Emergency English Phrases — Help! Police! Ambulance!</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">Ellii (formerly ESL Library)</p>
     <span class="vg-duration">⏱ 7 min · Critical phrases that could save your life</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+A2+B1+realistic+daily+conversations+native+speakers" data-video-id="7Uf-bGpGMbo" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+A2+B1+realistic+daily+conversations+native+speakers" data-video-id="utwxITswzoE" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Realistic Daily English Conversations A2/B1</p>
-    <p class="vg-creator">Speak English with Vanessa</p>
+    <p class="vg-creator">Speak Up! English Dialogues</p>
     <span class="vg-duration">⏱ 14 min · Real conversations from everyday life</span>
   </div>
 </a>
@@ -133,32 +133,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+sitcom+learning+friends+beginners+daily+conversations" data-video-id="RXJB3SGFLEM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+sitcom+learning+friends+beginners+daily+conversations" data-video-id="4K9zbx-W8U4" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Learn English with TV — Daily Conversations</p>
-    <p class="vg-creator">English in TV Shows</p>
+    <p class="vg-creator">Learn English With TV Series</p>
     <span class="vg-duration">⏱ 10 min · Real-life English in entertaining format</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+podcast+A2+B1+everyday+situations+slow+clear" data-video-id="4JCvXPq4fjM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+podcast+A2+B1+everyday+situations+slow+clear" data-video-id="IgooXlDdY_Y" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">A2/B1 English Podcast — Everyday Situations</p>
-    <p class="vg-creator">VOA Learning English</p>
+    <p class="vg-creator">English Unleashed: The Podcast</p>
     <span class="vg-duration">⏱ 6 min each · Slow, clear English in realistic scenarios</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+role+play+practice+conversation+speaking+partner" data-video-id="C7ytGkGv-zc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+role+play+practice+conversation+speaking+partner" data-video-id="e6ZSCwv3CNg" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">English Role Play Practice — Speaking Confidence</p>
-    <p class="vg-creator">JenniferESL</p>
+    <p class="vg-creator">English Easy Practice</p>
     <span class="vg-duration">⏱ 12 min · Practice common situations with role play exercises</span>
   </div>
 </a>

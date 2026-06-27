@@ -19,7 +19,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=100+most+common+English+idioms+explained" data-video-id="Vg3FtKYmm2E" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=100+most+common+English+idioms+explained" data-video-id="Hm-n-_uqCvQ" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -29,72 +29,72 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=British+vs+American+English+differences+vocabulary" data-video-id="ZB0CQz5qQQ8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=British+vs+American+English+differences+vocabulary" data-video-id="i9c37vMbxGg" target="_blank">
   <div class="vg-thumb">🌍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">British vs American English — Key Differences</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">Learn English with Gill · engVid</p>
     <span class="vg-duration">~15 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=British+sarcasm+humour+irony+explained+for+learners" data-video-id="PZRbDmgADc0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=British+sarcasm+humour+irony+explained+for+learners" data-video-id="LNFw1XcRu_E" target="_blank">
   <div class="vg-thumb">😏<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">British Sarcasm and Humour — Explained</p>
-    <p class="vg-creator">English with Kirsty</p>
+    <p class="vg-creator">English with Lucy</p>
     <span class="vg-duration">~12 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+proverbs+meanings+examples" data-video-id="xS4kLRvzFdY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+proverbs+meanings+examples" data-video-id="cYw3GYrJWKk" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Common English Proverbs with Meanings</p>
-    <p class="vg-creator">Oxford English Academy</p>
+    <p class="vg-creator">Arnel's Everyday English</p>
     <span class="vg-duration">~14 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Shakespeare+famous+quotes+meaning+explained" data-video-id="P2dmHj8iWA8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Shakespeare+famous+quotes+meaning+explained" data-video-id="ea-6LFKzPGU" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Shakespeare's Most Famous Quotes Explained</p>
-    <p class="vg-creator">CrashCourse Literature</p>
+    <p class="vg-creator">Melissa Carroll - My English Teacher</p>
     <span class="vg-duration">~18 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=formal+informal+register+English+language" data-video-id="SHyOWmDG7C8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=formal+informal+register+English+language" data-video-id="yHEyfKo18ds" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Formal vs Informal English Register</p>
-    <p class="vg-creator">Speak English with Vanessa</p>
+    <p class="vg-creator">Closely Observed English</p>
     <span class="vg-duration">~11 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+English+through+songs+music+lyrics" data-video-id="Qf_T8bqLSdk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=learn+English+through+songs+music+lyrics" data-video-id="UDmR9gkAM6w" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Learning English Through Music and Lyrics</p>
-    <p class="vg-creator">English Through Entertainment</p>
+    <p class="vg-creator">English With Kris Amerikos</p>
     <span class="vg-duration">~13 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+CNN+news+English+vocabulary+media" data-video-id="ZmTgXUIWqww" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+CNN+news+English+vocabulary+media" data-video-id="2R_LGnt9Y6U" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">BBC/CNN News English Vocabulary Guide</p>
-    <p class="vg-creator">News English Learners</p>
+    <p class="vg-creator">English with Lucy</p>
     <span class="vg-duration">~10 min</span>
   </div>
 </a>

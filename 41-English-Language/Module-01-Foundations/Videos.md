@@ -21,52 +21,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+alphabet+pronunciation+for+beginners+EngVid" data-video-id="sF9zbEypG0E" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+alphabet+pronunciation+for+beginners+EngVid" data-video-id="lU6f9qGusjI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">The English Alphabet — Pronunciation Guide</p>
-    <p class="vg-creator">EngVid — Learn English</p>
+    <p class="vg-creator">Shaw English Online</p>
     <span class="vg-duration">⏱ 12 min · Master every letter sound from scratch</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Learning+English+alphabet+sounds+for+beginners" data-video-id="aU5a4VjBP8s" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Learning+English+alphabet+sounds+for+beginners" data-video-id="GdY_NvBEIBY" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">ABC — Letter Names and Sounds</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">British Native Speaker</p>
     <span class="vg-duration">⏱ 10 min · Clear British pronunciation of all 26 letters</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+greetings+for+beginners+hello+how+are+you+Emma+EngVid" data-video-id="8bYDqhFiGKE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+greetings+for+beginners+hello+how+are+you+Emma+EngVid" data-video-id="dmOKZLeFKCM" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">English Greetings — Hello, How Are You and More</p>
-    <p class="vg-creator">Learn English with Emma (EngVid)</p>
+    <p class="vg-creator">Learn English with EnglishClass101.com</p>
     <span class="vg-duration">⏱ 9 min · Natural greetings used by real native speakers</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vowel+sounds+short+long+vowels+for+beginners" data-video-id="BSlDSPAYx9g" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+vowel+sounds+short+long+vowels+for+beginners" data-video-id="x4MivEQJvVI" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Short vs Long English Vowel Sounds</p>
-    <p class="vg-creator">Sounds American / English with Lucy</p>
+    <p class="vg-creator">Learn English with Vince</p>
     <span class="vg-duration">⏱ 14 min · The 12 vowel sounds that confuse beginners most</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+numbers+1+to+100+pronunciation+for+beginners" data-video-id="9bZkp7q19f0" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+numbers+1+to+100+pronunciation+for+beginners" data-video-id="t8zetbzeGt8" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Numbers 1–100 in English</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">Shaw English Online</p>
     <span class="vg-duration">⏱ 8 min · Count confidently with correct pronunciation</span>
   </div>
 </a>
@@ -77,52 +77,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=to+be+verb+am+is+are+English+grammar+beginners" data-video-id="mBBCr9MKFBE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=to+be+verb+am+is+are+English+grammar+beginners" data-video-id="5kjCcBsBzUs" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Am, Is, Are — The Verb "To Be" Explained</p>
-    <p class="vg-creator">EnglishClass101</p>
+    <p class="vg-creator">Acquire English</p>
     <span class="vg-duration">⏱ 11 min · Complete guide to the most-used verb in English</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=days+of+the+week+months+year+English+for+beginners" data-video-id="ogQK9EBRhGk" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=days+of+the+week+months+year+English+for+beginners" data-video-id="AKXDr2uoYfg" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Days, Months and Seasons in English</p>
-    <p class="vg-creator">EnglishClass101</p>
+    <p class="vg-creator">Test-English</p>
     <span class="vg-duration">⏱ 7 min · Days, months, seasons with pronunciation</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+colors+adjectives+vocabulary+beginner+lesson" data-video-id="SBlcX3JFpNc" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+colors+adjectives+vocabulary+beginner+lesson" data-video-id="xTlQteeV-fs" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Colors and Basic Adjectives in English</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">EnglishAnyone</p>
     <span class="vg-duration">⏱ 8 min · 30+ colors and descriptive words with examples</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=common+mistakes+English+Urdu+speakers+make+pronunciation" data-video-id="R9XjN6DQJDI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=common+mistakes+English+Urdu+speakers+make+pronunciation" data-video-id="PvCMYjcoIfQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">English Mistakes Pakistani and Urdu Speakers Make</p>
-    <p class="vg-creator">EngVid / English in Pakistan</p>
+    <p class="vg-creator">Accent's Way English with Hadar</p>
     <span class="vg-duration">⏱ 15 min · Targeted for South Asian learners — very practical</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=IPA+pronunciation+chart+English+sounds+complete+guide" data-video-id="6GxwHNPaeqE" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=IPA+pronunciation+chart+English+sounds+complete+guide" data-video-id="QxQUapA-2w4" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">English Pronunciation — All 44 Sounds Explained</p>
-    <p class="vg-creator">Rachel's English</p>
+    <p class="vg-creator">BBC Learning English</p>
     <span class="vg-duration">⏱ 20 min · IPA symbols and sounds for serious learners</span>
   </div>
 </a>
@@ -133,7 +133,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+cartoon+simple+sentences+A1" data-video-id="Iv0rh7PkGQI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+for+beginners+cartoon+simple+sentences+A1" data-video-id="WR9_nsLyaEY" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -143,22 +143,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+songs+for+learning+beginners+alphabet+numbers" data-video-id="0wRQpnRAOQM" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+songs+for+learning+beginners+alphabet+numbers" data-video-id="vCckcU_4MqQ" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Learn English Through Songs — A1 Beginner</p>
-    <p class="vg-creator">English Songs for Learning</p>
+    <p class="vg-creator">Love English Podcast</p>
     <span class="vg-duration">⏱ Various · Music makes vocabulary stick faster</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Peppa+Pig+English+learning+slow+clear+speech" data-video-id="9NhY3vlAQaI" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Peppa+Pig+English+learning+slow+clear+speech" data-video-id="tXKURcuRu_s" target="_blank" rel="noopener">
   <div class="vg-thumb"><span>🎬</span><div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Peppa Pig in English — Natural Speech Immersion</p>
-    <p class="vg-creator">Peppa Pig Official</p>
+    <p class="vg-creator">George Pig - Official Channel</p>
     <span class="vg-duration">⏱ 5 min · Perfect pace for A1 listening practice</span>
   </div>
 </a>

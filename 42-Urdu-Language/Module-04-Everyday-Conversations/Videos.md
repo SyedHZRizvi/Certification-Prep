@@ -6,112 +6,112 @@ Practice real Urdu conversations with these carefully curated videos covering sh
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conversation+practice+shopping+dialogue" data-video-id="sMlJLxF1eNg" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+conversation+practice+shopping+dialogue" data-video-id="Acff7mrXxME" target="_blank">
   <div class="vg-thumb">🛍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Shopping Dialogue — Buying at a Pakistani Bazaar</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+restaurant+ordering+food+conversation" data-video-id="DLfRuKrXvDg" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+restaurant+ordering+food+conversation" data-video-id="nlNQv4gYGGg" target="_blank">
   <div class="vg-thumb">🍛<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Ordering Food in Urdu — Restaurant and Dhaba Dialogue</p>
-    <p class="vg-creator">Speak Urdu</p>
+    <p class="vg-creator">Hoor Academy</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+asking+directions+conversation+lesson" data-video-id="Gm0MAJ0FbXs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+asking+directions+conversation+lesson" data-video-id="gdAMOps5a5Y" target="_blank">
   <div class="vg-thumb">🗺️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Asking Directions in Urdu — Real Conversation Practice</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Learn Urdu with UrduPod101.com</p>
     <p class="vg-duration">~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+at+the+doctor+medical+conversation" data-video-id="cDiEPMkDVeA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+at+the+doctor+medical+conversation" data-video-id="hbRpnNkF1DA" target="_blank">
   <div class="vg-thumb">🏥<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">At the Doctor in Urdu — Medical Vocabulary and Dialogue</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Vocabineer</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+bargaining+haggling+bazaar+culture" data-video-id="vw4VGrqPHOs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+bargaining+haggling+bazaar+culture" data-video-id="KaTrzT9SoQU" target="_blank">
   <div class="vg-thumb">💰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Bargaining in Urdu — How to Haggle at Pakistani Markets</p>
-    <p class="vg-creator">Pakistani YouTube — Market Culture</p>
+    <p class="vg-creator">Vocabineer</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+hospitality+culture+guest+phrases+Urdu" data-video-id="mVnuUPfQnLg" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+hospitality+culture+guest+phrases+Urdu" data-video-id="_1y69MLWTnY" target="_blank">
   <div class="vg-thumb">🏡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Pakistani Hospitality Phrases — Meeting the Family in Urdu</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Learn Urdu with UrduPod101.com</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+phone+conversation+lesson+dialogue" data-video-id="WfS5rr3EQZY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+phone+conversation+lesson+dialogue" data-video-id="Y_SXtIG8reE" target="_blank">
   <div class="vg-thumb">📞<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Phone Conversations — Professional and Personal Calls</p>
-    <p class="vg-creator">Speak Urdu</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+wedding+phrases+vocabulary+Urdu" data-video-id="RKfFl3fBkSk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+wedding+phrases+vocabulary+Urdu" data-video-id="_2S2ywpslSE" target="_blank">
   <div class="vg-thumb">💒<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Pakistani Wedding Vocabulary — Urdu Phrases and Customs</p>
-    <p class="vg-creator">Pakistani YouTube — Wedding Culture</p>
+    <p class="vg-creator">English Urdu Bolchal</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Humsafar+Pakistani+drama+Urdu+listening+subtitles" data-video-id="MiPBUuWRsVA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Humsafar+Pakistani+drama+Urdu+listening+subtitles" data-video-id="iQYGN1_4p08" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Humsafar Drama — Authentic Urdu Listening Practice (with subtitles)</p>
-    <p class="vg-creator">HUM TV Pakistan</p>
+    <p class="vg-creator">HUM TV</p>
     <p class="vg-duration">~45 min episodes</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Zindagi+Gulzar+Hai+Pakistani+drama+Urdu" data-video-id="FJe98W5BNXM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Zindagi+Gulzar+Hai+Pakistani+drama+Urdu" data-video-id="OrkuogQOKuQ" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Zindagi Gulzar Hai — Pakistani Drama for Urdu Listening</p>
-    <p class="vg-creator">HUM TV Pakistan</p>
+    <p class="vg-creator">HUM TV</p>
     <p class="vg-duration">~45 min episodes</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+street+food+vlog+Lahore+Urdu" data-video-id="B7bJNJjn3GQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+street+food+vlog+Lahore+Urdu" data-video-id="i4kmpUI0MGU" target="_blank">
   <div class="vg-thumb">🌮<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Lahore Street Food Vlog — Authentic Pakistani Urdu in Real Settings</p>
-    <p class="vg-creator">Pakistani Food Vlog</p>
+    <p class="vg-creator">Reanne &amp; Ben #OTWD</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>

@@ -6,32 +6,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+pronunciation+qaf+ain+khe+ghain+advanced" data-video-id="U8LpUfRk33M" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+pronunciation+qaf+ain+khe+ghain+advanced" data-video-id="nm2p3aklUSk" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Advanced Urdu Pronunciation — Mastering ق، خ، غ، ع</p>
-    <p class="vg-creator">Urdu Phonetics Lab</p>
+    <p class="vg-creator">Arabic With Afrah</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+register+switching+formal+informal+aap+tum" data-video-id="GWRCdRqJbSs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+register+switching+formal+informal+aap+tum" data-video-id="25Lgs-QYyvY" target="_blank">
   <div class="vg-thumb">🎭<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Register Switching — آپ، تم، تو — When & How</p>
-    <p class="vg-creator">Roz Marra Urdu</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+newspaper+reading+jang+dawn+tutorial" data-video-id="YNJqBYNJoiw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+newspaper+reading+jang+dawn+tutorial" data-video-id="vWR6nas1OHI" target="_blank">
   <div class="vg-thumb">📰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Reading Urdu Newspapers — Jang & Dawn Vocabulary Guide</p>
-    <p class="vg-creator">Media Urdu</p>
+    <p class="vg-creator">English lessons by Habiba</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
@@ -42,32 +42,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+storytelling+narrative+techniques" data-video-id="fHkYPzMnAoo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+storytelling+narrative+techniques" data-video-id="XiwSSL4nzhI" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Storytelling in Urdu — Narrative Devices & Transitions</p>
-    <p class="vg-creator">Urdu Language Hub</p>
+    <p class="vg-creator">Linguistics and Literature Notes</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+debate+argumentation+mubahasa+phrases" data-video-id="t4XyvPPkAJk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+debate+argumentation+mubahasa+phrases" data-video-id="aCjA3kHPbG8" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Debate & Argumentation in Urdu — Advanced Phrases</p>
-    <p class="vg-creator">Advanced Urdu Channel</p>
+    <p class="vg-creator">ZPZ Education</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+urdu+radio+podcast+listening+practice" data-video-id="XsgrLEpVBiY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+urdu+radio+podcast+listening+practice" data-video-id="pDckB2fxhNg" target="_blank">
   <div class="vg-thumb">📻<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">BBC Urdu — Authentic Listening Practice</p>
-    <p class="vg-creator">BBC Urdu Service</p>
+    <p class="vg-creator">BBC News اردو</p>
     <p class="vg-duration">~varies</p>
   </div>
 </a>
@@ -78,7 +78,7 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+drama+Humsafar+HUM+TV+urdu" data-video-id="MiPBUuWRsVA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Pakistani+drama+Humsafar+HUM+TV+urdu" data-video-id="0jh5OKIjstk" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -88,7 +88,7 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+classical+urdu+songs" data-video-id="v3QIGU-uF5k" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=coke+studio+pakistan+classical+urdu+songs" data-video-id="9dcwnIgBrCk" target="_blank">
   <div class="vg-thumb">🎸<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
@@ -98,12 +98,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+rhetoric+khitabat+eloquence+public+speaking" data-video-id="SHWQtPqCwTM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+rhetoric+khitabat+eloquence+public+speaking" data-video-id="ah7-wbTY6EU" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Urdu Rhetoric & Eloquence — Classical Oratory Techniques</p>
-    <p class="vg-creator">Urdu Rhetoric</p>
+    <p class="vg-creator">Adnan Sohail</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>

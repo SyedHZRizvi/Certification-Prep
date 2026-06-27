@@ -6,122 +6,122 @@ Learn the Arabic alphabet, basic pronunciation, and essential greetings through 
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Arabic+Alphabet+Full+Beginner+Course" data-video-id="WnWbzBvOhcE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Arabic+Alphabet+Full+Beginner+Course" data-video-id="GnHGmwqSYtg" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Learn the Arabic Alphabet — Full Beginner Course</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">Arabic4NoNs</p>
     <p class="vg-duration">35 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Alphabet+28+Letters+4+Positions" data-video-id="Mn8qpCOyPYo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Alphabet+28+Letters+4+Positions" data-video-id="8zaNy3_IH00" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Alphabet — All 28 Letters with 4 Positions</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">Learn With RAMDANI</p>
     <p class="vg-duration">28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Madinah+Arabic+Book+1+Lesson+1+Introduction" data-video-id="KxAWs1aZFW0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Madinah+Arabic+Book+1+Lesson+1+Introduction" data-video-id="SDGBEyydz9M" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Madinah Arabic Book 1 — Lesson 1 Introduction</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">Madinah College</p>
     <p class="vg-duration">22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Alphabet+Song+Letters+Names+Sounds" data-video-id="jJ5BZLXOD_4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Alphabet+Song+Letters+Names+Sounds" data-video-id="6e145BWP7ng" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Alphabet Song — Letters, Names & Sounds</p>
-    <p class="vg-creator">Arabic for Kids</p>
+    <p class="vg-creator">One4kids</p>
     <p class="vg-duration">8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Why+Learn+Arabic+Reasons+Benefits+Motivation" data-video-id="rqO37vGZnB4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Why+Learn+Arabic+Reasons+Benefits+Motivation" data-video-id="Axvl286-_2U" target="_blank">
   <div class="vg-thumb">🌍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Why Learn Arabic? — Reasons, Benefits & Motivation</p>
-    <p class="vg-creator">Speak Arabic For Free</p>
+    <p class="vg-creator">Olly Richards</p>
     <p class="vg-duration">12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Pronunciation+Guide+Emphatic+Letters+Unique+Sounds" data-video-id="Qav_Tn3-lio" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Pronunciation+Guide+Emphatic+Letters+Unique+Sounds" data-video-id="HIVLfdRxdeI" target="_blank">
   <div class="vg-thumb">🔊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Pronunciation Guide — Emphatic Letters & Unique Sounds</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">Polyglot Ed</p>
     <p class="vg-duration">18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Greetings+Basic+Phrases+Beginners" data-video-id="DjCZKPKXLSo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Greetings+Basic+Phrases+Beginners" data-video-id="1z4UdcpTy5k" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Arabic Greetings & Basic Phrases for Beginners</p>
-    <p class="vg-creator">ArabicPod101</p>
+    <p class="vg-creator">Learn Arabic</p>
     <p class="vg-duration">15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Numbers+1+100+Learn+to+Count" data-video-id="p7nqANptmPw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Numbers+1+100+Learn+to+Count" data-video-id="DIZccyhU_W0" target="_blank">
   <div class="vg-thumb">🔢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic Numbers 1–100 — Learn to Count in Arabic</p>
-    <p class="vg-creator">Arabic with Sam</p>
+    <p class="vg-creator">Learn Arabic with Habiba</p>
     <p class="vg-duration">10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=MSA+vs+Dialect+Arabic+What+You+Need+to+Know" data-video-id="fyqwUDmEcjg" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=MSA+vs+Dialect+Arabic+What+You+Need+to+Know" data-video-id="Sdwos17V5u4" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">MSA vs Dialect Arabic — What You Need to Know First</p>
-    <p class="vg-creator">Spoken Arabic Institute</p>
+    <p class="vg-creator">Interpreting & Language Learning with Alhan</p>
     <p class="vg-duration">14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Urdu+Connections+Shared+Vocabulary+Explained" data-video-id="lO5UeWnYhkY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Urdu+Connections+Shared+Vocabulary+Explained" data-video-id="cn6VZG5WlQg" target="_blank">
   <div class="vg-thumb">🌙<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Arabic-Urdu Connections — Shared Vocabulary Explained</p>
-    <p class="vg-creator">Urdu Linguistic Channel</p>
+    <p class="vg-creator">EngRabic</p>
     <p class="vg-duration">20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Writing+Practice+Letter+Shapes+Connections" data-video-id="KKN95rZDPTA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Arabic+Writing+Practice+Letter+Shapes+Connections" data-video-id="M5PKuwpkMjA" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Arabic Writing Practice — Letter Shapes & Connections</p>
-    <p class="vg-creator">Madinah Arabic</p>
+    <p class="vg-creator">Aural Writing</p>
     <p class="vg-duration">25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Harakat+Vowel+Marks+in+Arabic+Complete+Guide" data-video-id="zj7K1nDPaO0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Harakat+Vowel+Marks+in+Arabic+Complete+Guide" data-video-id="zyJk8tB5yk8" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Harakat (Vowel Marks) in Arabic — Complete Guide</p>
-    <p class="vg-creator">Learn Arabic with Maha</p>
+    <p class="vg-creator">Yalla Arabee</p>
     <p class="vg-duration">16 min</p>
   </div>
 </a>

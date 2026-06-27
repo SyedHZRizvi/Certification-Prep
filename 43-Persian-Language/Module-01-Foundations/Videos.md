@@ -6,17 +6,17 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+alphabet+complete+beginners" data-video-id="9sJUDx7iEJw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+alphabet+complete+beginners" data-video-id="yM5vPhtpTJQ" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">The Complete Persian Alphabet — All 32 Letters</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Learn Persian with PersianPod101.com</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+for+absolute+beginners+lesson+1+Chai+and+Conversation" data-video-id="pJNy7RMpvlM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+for+absolute+beginners+lesson+1+Chai+and+Conversation" data-video-id="aMptjT2Dn6o" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -26,92 +26,92 @@ Learn Persian from scratch with these hand-picked video resources. Start with **
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+greetings+phrases+beginners+FarsiPod101" data-video-id="cBSL7avW5kw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+greetings+phrases+beginners+FarsiPod101" data-video-id="BUkmx0KLH9s" target="_blank">
   <div class="vg-thumb">👋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Greetings & Polite Phrases</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Farsi with Kimiya</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+numbers+1+to+100+learn+Farsi" data-video-id="OGJ5DNYQLGM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+numbers+1+to+100+learn+Farsi" data-video-id="TpgsBIDFu7M" target="_blank">
   <div class="vg-thumb">🔢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Numbers 1–100 with Pronunciation</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Sina Bahij</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+writing+script+right+to+left+tutorial" data-video-id="Mkn-5pRMNoI" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+writing+script+right+to+left+tutorial" data-video-id="2Nn5-RD49GY" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Writing Persian Script — Right to Left Guide</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">Learn Persian (Farsi) with Asal</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Persian+poetry+Masnavi+introduction" data-video-id="7FuqFXsJHJE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Persian+poetry+Masnavi+introduction" data-video-id="PL9Jlpf_LwU" target="_blank">
   <div class="vg-thumb">📜<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Rumi & the Beauty of Persian Classical Poetry</p>
-    <p class="vg-creator">Cultural Context</p>
+    <p class="vg-creator">Shams of Tabrez</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+pronunciation+guide+sounds+letters" data-video-id="8VrqSm5uR0g" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+pronunciation+guide+sounds+letters" data-video-id="oK8iQsbCDaU" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Pronunciation Masterclass — Difficult Sounds</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+for+Urdu+speakers+cognates+vocabulary" data-video-id="Q0cXPWd3oUw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Farsi+Persian+for+Urdu+speakers+cognates+vocabulary" data-video-id="HM5BrHG-ueo" target="_blank">
   <div class="vg-thumb">🇵🇰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Farsi for Urdu Speakers — Words You Already Know</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">Bahador Alast</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introduce+yourself+beginner+lesson" data-video-id="sLNtf3aAqkM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+introduce+yourself+beginner+lesson" data-video-id="gVTMOlCksFk" target="_blank">
   <div class="vg-thumb">🙋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Introducing Yourself in Persian — First Conversations</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">My Persian Corner</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+culture+history+overview+documentary" data-video-id="hbMiTzHtRig" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+culture+history+overview+documentary" data-video-id="aNxj5Id_UWk" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Iran & Persian Civilization — A Cultural Overview</p>
-    <p class="vg-creator">History & Culture</p>
+    <p class="vg-creator">Geodiode</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+vowels+short+long+beginners" data-video-id="Oq5BIeTrqaA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+vowels+short+long+beginners" data-video-id="BHnqHj5q0Qg" target="_blank">
   <div class="vg-thumb">🔊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persian Short & Long Vowels Explained</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Talk Like a Persian</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>

@@ -19,82 +19,82 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+accent+reduction+Pakistani+speakers+pronunciation" data-video-id="3JZ_D3ELwOQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+accent+reduction+Pakistani+speakers+pronunciation" data-video-id="St_4G4MAlKo" target="_blank">
   <div class="vg-thumb">🎙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Accent Reduction for Urdu/Pakistani English Speakers</p>
-    <p class="vg-creator">English Pronunciation School</p>
+    <p class="vg-creator">Business English Benjamin · engVid</p>
     <span class="vg-duration">~20 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+fluency+filler+words+hesitation+phrases+natural" data-video-id="UGVaBVGWfkE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+fluency+filler+words+hesitation+phrases+natural" data-video-id="oYxzNxeIUuU" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Fluency Techniques — Natural Filler Words in English</p>
-    <p class="vg-creator">Speak English with Vanessa</p>
+    <p class="vg-creator">Speak English With Vanessa</p>
     <span class="vg-duration">~15 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+debate+skills+argument+structure+techniques" data-video-id="pCr-BW8LpDs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+debate+skills+argument+structure+techniques" data-video-id="Y3txUGIc6Sg" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Debating in English — Argument Structure and Techniques</p>
-    <p class="vg-creator">Cambridge Debate Skills</p>
+    <p class="vg-creator">How To Academy</p>
     <span class="vg-duration">~18 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+TOEFL+academic+writing+vocabulary+tips" data-video-id="y1MjUtGT6GA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+TOEFL+academic+writing+vocabulary+tips" data-video-id="Bstz4HeG4YU" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Academic Writing for IELTS/TOEFL — Vocabulary Tips</p>
-    <p class="vg-creator">IELTS Advantage</p>
+    <p class="vg-creator">Rebecca · engVid</p>
     <span class="vg-duration">~16 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+storytelling+techniques+native+speakers" data-video-id="OQQItDR3XL4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+storytelling+techniques+native+speakers" data-video-id="l7pitA6Luok" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Storytelling in English — Native Speaker Techniques</p>
-    <p class="vg-creator">English Like a Native</p>
+    <p class="vg-creator">English Jade · engVid</p>
     <span class="vg-duration">~14 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+mistakes+Urdu+speakers+Pakistani" data-video-id="C7ytGkGv-zc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=common+English+mistakes+Urdu+speakers+Pakistani" data-video-id="fGApRS7h70s" target="_blank">
   <div class="vg-thumb">🔧<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Common English Mistakes by Urdu/Pakistani Speakers</p>
-    <p class="vg-creator">English Grammar Fix</p>
+    <p class="vg-creator">Fluent American</p>
     <span class="vg-duration">~12 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=STAR+method+interview+English+examples" data-video-id="pInq-GLnAco" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=STAR+method+interview+English+examples" data-video-id="EqFZZGiI0TA" target="_blank">
   <div class="vg-thumb">⭐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">STAR Method for English Interviews</p>
-    <p class="vg-creator">Career English Academy</p>
+    <p class="vg-creator">CareerVidz</p>
     <span class="vg-duration">~11 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=reading+BBC+newspaper+English+comprehension+advanced" data-video-id="aG6OAOJqwkY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=reading+BBC+newspaper+English+comprehension+advanced" data-video-id="3HqTHyy6hFU" target="_blank">
   <div class="vg-thumb">📰<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Reading BBC Newspaper English — Advanced Comprehension</p>
-    <p class="vg-creator">BBC Learning English</p>
+    <p class="vg-creator">JForrest English</p>
     <span class="vg-duration">~10 min</span>
   </div>
 </a>

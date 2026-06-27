@@ -19,62 +19,62 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=business+English+meeting+phrases+professional" data-video-id="dC8g8tMbDgc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=business+English+meeting+phrases+professional" data-video-id="Axf1MPcQgpo" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Business English: Meeting Phrases & Vocabulary</p>
-    <p class="vg-creator">Business English Pod</p>
+    <p class="vg-creator">Derek Callan - English for Professionals</p>
     <span class="vg-duration">~15 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+business+email+English" data-video-id="HFqnmRBBuRo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+business+email+English" data-video-id="9oo7f5mA-Qs" target="_blank">
   <div class="vg-thumb">✉️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">How to Write a Professional Business Email</p>
-    <p class="vg-creator">English with Lucy</p>
+    <p class="vg-creator">English Like A Native</p>
     <span class="vg-duration">~12 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=expressing+opinions+formally+English+debate+phrases" data-video-id="xGn1aHbfVoU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=expressing+opinions+formally+English+debate+phrases" data-video-id="dYeCr2dBgds" target="_blank">
   <div class="vg-thumb">💬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Expressing Opinions in English: Formal & Informal</p>
-    <p class="vg-creator">Oxford Online English</p>
+    <p class="vg-creator">Talk Fluent English With Ease</p>
     <span class="vg-duration">~10 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=describing+graphs+trends+IELTS+English" data-video-id="8ZNn-4sXUrk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=describing+graphs+trends+IELTS+English" data-video-id="dLk_AXaowC4" target="_blank">
   <div class="vg-thumb">📈<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Describing Graphs and Trends in English</p>
-    <p class="vg-creator">IELTS Advantage</p>
+    <p class="vg-creator">Tesol Rich English</p>
     <span class="vg-duration">~14 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=professional+networking+English+conversation+tips" data-video-id="JbIY5AFMGGE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=professional+networking+English+conversation+tips" data-video-id="NWxDh0rQZcQ" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Professional Networking in English</p>
-    <p class="vg-creator">Speak English with Vanessa</p>
+    <p class="vg-creator">Speak Confident English</p>
     <span class="vg-duration">~11 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=English+small+talk+phrases+workplace+social" data-video-id="pCr-BW8LpDs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=English+small+talk+phrases+workplace+social" data-video-id="AWwkkPXRSYk" target="_blank">
   <div class="vg-thumb">☕<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Small Talk in English: Natural Conversation Starters</p>
-    <p class="vg-creator">English with Greg</p>
+    <p class="vg-creator">Conversa Teacher Shelby</p>
     <span class="vg-duration">~9 min</span>
   </div>
 </a>
@@ -89,12 +89,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=complaint+English+formal+email+telephone" data-video-id="f8EO_42PNSE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=complaint+English+formal+email+telephone" data-video-id="fPqleFNexCQ" target="_blank">
   <div class="vg-thumb">📞<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Complaint Language in English (Formal & Informal)</p>
-    <p class="vg-creator">English Like a Native</p>
+    <p class="vg-creator">English Like A Native</p>
     <span class="vg-duration">~10 min</span>
   </div>
 </a>

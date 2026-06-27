@@ -19,52 +19,52 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+cover+letter+English+job+application" data-video-id="y3oi4bGIRgE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=how+to+write+professional+cover+letter+English+job+application" data-video-id="E_kWz09Etcc" target="_blank">
   <div class="vg-thumb">📄<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">How to Write a Professional Cover Letter</p>
-    <p class="vg-creator">English Career Skills</p>
+    <p class="vg-creator">Learn English with Cambridge</p>
     <span class="vg-duration">~14 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=business+presentation+English+opening+signposting+closing" data-video-id="JbIY5AFMGGE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=business+presentation+English+opening+signposting+closing" data-video-id="fzIxD1jXn44" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Business Presentations in English — Complete Guide</p>
-    <p class="vg-creator">Business English Pod</p>
+    <p class="vg-creator">Oxford Online English</p>
     <span class="vg-duration">~20 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=negotiation+language+English+business+phrases" data-video-id="7s3Dj2MzYzk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=negotiation+language+English+business+phrases" data-video-id="lPinxUDxhVs" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Negotiation Language and Phrases in English</p>
-    <p class="vg-creator">Oxford Business English</p>
+    <p class="vg-creator">Derek Callan - English for Professionals</p>
     <span class="vg-duration">~16 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+writing+task+2+essay+structure+band+7" data-video-id="pVCrEXJt_Rs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=IELTS+writing+task+2+essay+structure+band+7" data-video-id="HhGK5WYlXK8" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">IELTS Writing Task 2 — Essay Structure Band 7+</p>
-    <p class="vg-creator">IELTS Liz</p>
+    <p class="vg-creator">Fastrack IELTS</p>
     <span class="vg-duration">~18 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=LinkedIn+profile+English+professional+tips" data-video-id="dJGMFVy7o0M" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=LinkedIn+profile+English+professional+tips" data-video-id="UCkgBTmAb9E" target="_blank">
   <div class="vg-thumb">💼<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">LinkedIn Profile in English — Stand Out Professionally</p>
-    <p class="vg-creator">Career English Academy</p>
+    <p class="vg-creator">Cindy Dodd</p>
     <span class="vg-duration">~12 min</span>
   </div>
 </a>
@@ -79,22 +79,22 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=meeting+chairmanship+English+running+a+meeting" data-video-id="lxMVHrNh5T0" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=meeting+chairmanship+English+running+a+meeting" data-video-id="vA-E7ryacmI" target="_blank">
   <div class="vg-thumb">🏛️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Chairing a Meeting in English</p>
-    <p class="vg-creator">Cambridge Business English</p>
+    <p class="vg-creator">Oxford Online English</p>
     <span class="vg-duration">~11 min</span>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=persuasive+language+English+business+proposal+writing" data-video-id="cPFGeEJFl0M" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=persuasive+language+English+business+proposal+writing" data-video-id="nsBik7IYnS4" target="_blank">
   <div class="vg-thumb">💡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persuasive Language in Business Writing</p>
-    <p class="vg-creator">Business Writing Academy</p>
+    <p class="vg-creator">American English</p>
     <span class="vg-duration">~10 min</span>
   </div>
 </a>

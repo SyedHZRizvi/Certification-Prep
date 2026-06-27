@@ -6,112 +6,112 @@ Master Persian grammar with these structured video lessons covering sentence str
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+verb+to+be+hast+am+present+tense+grammar" data-video-id="TvCZHsFNiZ4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+verb+to+be+hast+am+present+tense+grammar" data-video-id="nxxxSWKY7sA" target="_blank">
   <div class="vg-thumb">📐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Verb "To Be" — Hast Forms Explained</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Talk Like a Persian</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+tense+conjugation+mi+prefix+lesson" data-video-id="RdXRWy2JRXM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+present+tense+conjugation+mi+prefix+lesson" data-video-id="NOYjCzhv5P8" target="_blank">
   <div class="vg-thumb">⏱️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Present Tense — The می (Mi-) Prefix System</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">PersianHow</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+ezafe+construction+grammar+lesson" data-video-id="VZ4FzlvAaEA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+ezafe+construction+grammar+lesson" data-video-id="jMFvcLsxMVc" target="_blank">
   <div class="vg-thumb">🔗<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">The Ezafe in Persian — Connect Nouns & Adjectives</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">PersianHow</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+personal+pronouns+man+to+u+ma+shoma" data-video-id="wFMuFg8cEAs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+personal+pronouns+man+to+u+ma+shoma" data-video-id="gXsHYYYH3xI" target="_blank">
   <div class="vg-thumb">👤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Personal Pronouns & Formal Speech</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">The Farsi Pod</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+negation+nemi+not+negative+sentences" data-video-id="Y4MoLk8BGWQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+negation+nemi+not+negative+sentences" data-video-id="0ASd2qrewYA" target="_blank">
   <div class="vg-thumb">🚫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Negation — How to Say "Don't" and "Not"</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Farsi Wizard</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+question+words+che+koja+chera+chetour" data-video-id="kBv60D2XHWU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+question+words+che+koja+chera+chetour" data-video-id="PL7WAt6JvEY" target="_blank">
   <div class="vg-thumb">❓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Question Words — Who, What, Where, Why, How</p>
-    <p class="vg-creator">Learn Persian with Chai and Conversation</p>
+    <p class="vg-creator">Reza Nazari</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+plural+ha+an+suffix+nouns" data-video-id="Q_TiB7VQHQY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+plural+ha+an+suffix+nouns" data-video-id="tDSwzKgrTb4" target="_blank">
   <div class="vg-thumb">📦<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Making Persian Plurals — ها and ان Suffixes</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">PersianHow</p>
     <p class="vg-duration">~13 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+sentence+structure+SOV+word+order" data-video-id="Zyb9GaVi55o" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+sentence+structure+SOV+word+order" data-video-id="P2ZxMnsOZhQ" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Sentence Structure — SOV Word Order</p>
-    <p class="vg-creator">Learn Persian Online</p>
+    <p class="vg-creator">PersianHow</p>
     <p class="vg-duration">~17 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+gender+neutral+no+masculine+feminine+grammar" data-video-id="N83MMUQ0Jxk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+gender+neutral+no+masculine+feminine+grammar" data-video-id="ynNzgbB0GYc" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Why Persian Grammar is Easier Than Arabic — Gender-Free!</p>
-    <p class="vg-creator">Language Insight</p>
+    <p class="vg-creator">Reza Nazari</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+A2+grammar+review+all+basics" data-video-id="0GVc_BamCiE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+A2+grammar+review+all+basics" data-video-id="yv8vNd9q2Rk" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persian A2 Grammar Complete Review</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Learn Persian with PersianPod101.com</p>
     <p class="vg-duration">~35 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+indefinite+article+yek+yak+grammar" data-video-id="pX6rNGMrAKw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+indefinite+article+yek+yak+grammar" data-video-id="LhYGy0P45NA" target="_blank">
   <div class="vg-thumb">🔍<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Persian Articles & Definiteness Explained</p>
-    <p class="vg-creator">Persian with Nadia</p>
+    <p class="vg-creator">Persian Pro</p>
     <p class="vg-duration">~11 min</p>
   </div>
 </a>

@@ -6,32 +6,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing+tutorial" data-video-id="yFWqAFzRxHw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+formal+business+letter+writing+tutorial" data-video-id="WE7Y4NM9l0I" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Formal Urdu Letter Writing — Complete Guide for Business</p>
-    <p class="vg-creator">Urdu Writing Academy</p>
+    <p class="vg-creator">The Education Forum</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistan+professional+urdu+corporate+vocabulary" data-video-id="KqrPNvgYJqE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=pakistan+professional+urdu+corporate+vocabulary" data-video-id="3KX4j7RcVbY" target="_blank">
   <div class="vg-thumb">🏙️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Corporate Urdu — Pakistan's Professional Vocabulary</p>
-    <p class="vg-creator">Business Urdu Pro</p>
+    <p class="vg-creator">AW English</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+honorifics+titles+janaab+sahib" data-video-id="TxJQVgFNFiA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+honorifics+titles+janaab+sahib" data-video-id="OFbbQBBWmKA" target="_blank">
   <div class="vg-thumb">🎓<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Honorifics & Titles — Professional Address System</p>
-    <p class="vg-creator">Urdu Culture Channel</p>
+    <p class="vg-creator">Urduban</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
@@ -42,32 +42,32 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=geo+news+urdu+formal+register+vocabulary" data-video-id="XsgrLEpVBiY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=geo+news+urdu+formal+register+vocabulary" data-video-id="kl_4PASmWJA" target="_blank">
   <div class="vg-thumb">📺<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">News Urdu — Geo News & Jang Style Vocabulary</p>
-    <p class="vg-creator">Media Urdu</p>
+    <p class="vg-creator">ANN News Kashmir</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+presentation+skills+formal+speaking" data-video-id="MkGvFLtGfRc" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+presentation+skills+formal+speaking" data-video-id="Plth7BgT8r8" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Presenting in Urdu — Formal Public Speaking Phrases</p>
-    <p class="vg-creator">Urdu Language Hub</p>
+    <p class="vg-creator">Explore Literature with Me</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+government+legal+vocabulary+pakistan" data-video-id="gJaExS8Hneg" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+government+legal+vocabulary+pakistan" data-video-id="a1LeW1Hrp98" target="_blank">
   <div class="vg-thumb">⚖️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Government & Legal Urdu — Official Register Vocabulary</p>
-    <p class="vg-creator">Legal Urdu Pakistan</p>
+    <p class="vg-creator">Basic Pakistani Laws in Urdu</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
@@ -78,22 +78,22 @@
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+resume+CV+writing+professional" data-video-id="t4XyvPPkAJk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+resume+CV+writing+professional" data-video-id="h5sLPPK4U-8" target="_blank">
   <div class="vg-thumb">📋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Writing a CV in Urdu — Professional Template Guide</p>
-    <p class="vg-creator">Career Urdu</p>
+    <p class="vg-creator">Qasim Ali Shah Foundation</p>
     <p class="vg-duration">~16 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+report+writing+formal+style" data-video-id="fHkYPzMnAoo" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=urdu+report+writing+formal+style" data-video-id="jmy9ANa6R_8" target="_blank">
   <div class="vg-thumb">📊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Formal Report Writing in Urdu</p>
-    <p class="vg-creator">Urdu Writing Academy</p>
+    <p class="vg-creator">Education With Hamza</p>
     <p class="vg-duration">~19 min</p>
   </div>
 </a>

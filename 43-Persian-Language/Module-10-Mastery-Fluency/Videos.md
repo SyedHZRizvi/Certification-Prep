@@ -6,47 +6,47 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+accent+reduction+native+pronunciation+C2" data-video-id="gCFqLhFZWAA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+accent+reduction+native+pronunciation+C2" data-video-id="b4x7m7xazNU" target="_blank">
   <div class="vg-thumb">🎤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Accent Neutralization — Sound Like a Native</p>
-    <p class="vg-creator">Persian Pronunciation Coach</p>
+    <p class="vg-creator">My Persian Corner</p>
     <p class="vg-duration">~26 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+oratory+public+speaking+khetabat" data-video-id="TrB4kB2HN3k" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+oratory+public+speaking+khetabat" data-video-id="wiY-RjANAHw" target="_blank">
   <div class="vg-thumb">🗣️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Oratory (خطابت) — Public Speaking Masterclass</p>
-    <p class="vg-creator">Iranian Public Speaking</p>
+    <p class="vg-creator">Learn Persian with PersianPod101.com</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+storytelling+dastan+gooi+narrative" data-video-id="0GYbvCQDOE8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+storytelling+dastan+gooi+narrative" data-video-id="wbgT1DHBdxc" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Storytelling (داستان‌گویی) — Narrative Techniques</p>
-    <p class="vg-creator">Persian Literature</p>
+    <p class="vg-creator">Persian Land</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shadowing+fluency+advanced+native" data-video-id="4ZCE-K0qn2E" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+shadowing+fluency+advanced+native" data-video-id="ys8Jg2Y_-4E" target="_blank">
   <div class="vg-thumb">🔊<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Persian Shadowing Practice — Advanced Fluency</p>
-    <p class="vg-creator">FarsiPod101</p>
+    <p class="vg-creator">Learn Persian with PersianPod101.com</p>
     <p class="vg-duration">~35 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Persian+news+broadcast+authentic+C2+listening" data-video-id="r_eL_6MFdIQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=BBC+Persian+news+broadcast+authentic+C2+listening" data-video-id="X7GCat5uINM" target="_blank">
   <div class="vg-thumb">📻<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
@@ -56,62 +56,62 @@ Reach true Persian fluency — accent perfection, oratory, storytelling, debate,
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+debate+munazere+advanced+language" data-video-id="MobnmFUbPcE" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+debate+munazere+advanced+language" data-video-id="qeKteLVv55M" target="_blank">
   <div class="vg-thumb">⚡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian Debate Language (مناظره) — Advanced</p>
-    <p class="vg-creator">Persian Academic Language</p>
+    <p class="vg-creator">Fast Farsi</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Shajarian+Mohammad+Reza+Persian+classical+music+lyrics" data-video-id="R3Q7TfYBEQk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Shajarian+Mohammad+Reza+Persian+classical+music+lyrics" data-video-id="bQ1k_PWLWNY" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Shajarian — Classical Persian Vocals with Lyrics</p>
-    <p class="vg-creator">Persian Classical Music</p>
+    <p class="vg-creator">Aga Khan Development Network (AKDN)</p>
     <p class="vg-duration">~40 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Asghar+Farhadi+A+Separation+Persian+dialogue+analysis" data-video-id="2BuyGb_l2Dw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Asghar+Farhadi+A+Separation+Persian+dialogue+analysis" data-video-id="1M2dCPlzx34" target="_blank">
   <div class="vg-thumb">🎬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">A Separation — Persian Dialogue Analysis (C1/C2)</p>
-    <p class="vg-creator">Persian Cinema Study</p>
+    <p class="vg-creator">cinema musings</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+interference+patterns+English+mistakes" data-video-id="lVF6tThQ70I" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+interference+patterns+English+mistakes" data-video-id="D5azRcCjucw" target="_blank">
   <div class="vg-thumb">🎯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Eliminating English Interference in Persian</p>
-    <p class="vg-creator">Persian Fluency Coach</p>
+    <p class="vg-creator">LELB Society</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=CEFR+C2+Persian+Farsi+assessment+self+evaluation" data-video-id="zVq0FXJF_xQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=CEFR+C2+Persian+Farsi+assessment+self+evaluation" data-video-id="gSmNJldhBiM" target="_blank">
   <div class="vg-thumb">✅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">CEFR C2 Persian — Self-Assessment & Next Steps</p>
-    <p class="vg-creator">Persian Language Mastery</p>
+    <p class="vg-creator">Fluent in 3 Months</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+language+exchange+partner+Iranian+community" data-video-id="Z0GFRcFm-aY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+language+exchange+partner+Iranian+community" data-video-id="RDvV_gBv_h8" target="_blank">
   <div class="vg-thumb">🌐<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Finding Persian Language Exchange Partners</p>
-    <p class="vg-creator">Language Learning Community</p>
+    <p class="vg-creator">Luca Lampariello</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>

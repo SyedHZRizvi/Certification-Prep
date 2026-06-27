@@ -6,112 +6,112 @@ Carefully selected videos to help you learn the Urdu alphabet, Nastaliq script, 
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+alphabet+for+beginners+UrduPod101" data-video-id="nEFWOT3OYuQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+alphabet+for+beginners+UrduPod101" data-video-id="08A9EebaiXU" target="_blank">
   <div class="vg-thumb">🔤<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Introduction to the Urdu Alphabet — Complete Guide</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Language Animated</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+Nastaliq+script+writing+beginners" data-video-id="7Gq9pGBFyEQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+Nastaliq+script+writing+beginners" data-video-id="-ASvNsKORzo" target="_blank">
   <div class="vg-thumb">✍️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">How to Write Urdu Nastaliq Script — Beginner Tutorial</p>
-    <p class="vg-creator">Urdu Language Centre</p>
+    <p class="vg-creator">CanvasWonders</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+for+beginners+lesson+1+greetings+English+speakers" data-video-id="SLpRKGVDx9Q" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+for+beginners+lesson+1+greetings+English+speakers" data-video-id="e4PCDQPfzXo" target="_blank">
   <div class="vg-thumb">👋<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu for Beginners — Lesson 1: Greetings and Introductions</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Language Animated</p>
     <p class="vg-duration">~12 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Urdu+alphabet+Ling+App" data-video-id="oLPdvWLzmrY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Learn+Urdu+alphabet+Ling+App" data-video-id="XsL96aUObEM" target="_blank">
   <div class="vg-thumb">🔡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Alphabet — All 39 Letters with Pronunciation</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Urdu Seekhiye</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+numbers+1+to+100+pronunciation" data-video-id="H3QL0CbMqp8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+numbers+1+to+100+pronunciation" data-video-id="St3wiI5p5_w" target="_blank">
   <div class="vg-thumb">🔢<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Urdu Numbers 1–100 — Script, Pronunciation, and Usage</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Vocabineer</p>
     <p class="vg-duration">~10 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+right+to+left+writing+direction+learn" data-video-id="Kj5_-_0pFXs" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+right+to+left+writing+direction+learn" data-video-id="usw_qOoqthE" target="_blank">
   <div class="vg-thumb">↩️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Writing Urdu Right-to-Left — Tips for English Speakers</p>
-    <p class="vg-creator">Urdu Language Centre</p>
+    <p class="vg-creator">Neha Gupta</p>
     <p class="vg-duration">~8 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+honorifics+aap+tum+tu+explanation" data-video-id="TxJQVgFNFiA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+honorifics+aap+tum+tu+explanation" data-video-id="25Lgs-QYyvY" target="_blank">
   <div class="vg-thumb">🤝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu Honorifics — Aap vs Tum vs Tu Explained</p>
-    <p class="vg-creator">Learn Urdu with Ling</p>
+    <p class="vg-creator">Urdu Academy Jakarta</p>
     <p class="vg-duration">~9 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+vs+Hindi+difference+explained" data-video-id="AOkYJuPBCiw" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+vs+Hindi+difference+explained" data-video-id="Wans490w0Nk" target="_blank">
   <div class="vg-thumb">🆚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Urdu vs Hindi — What's Really the Difference?</p>
-    <p class="vg-creator">Pakistani YouTube — Urdu Language</p>
+    <p class="vg-creator">Polyglot Dreams</p>
     <p class="vg-duration">~14 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+100+common+words+beginners+vocabulary" data-video-id="d5vANH4LsKA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+100+common+words+beginners+vocabulary" data-video-id="7d5ufrEPrZQ" target="_blank">
   <div class="vg-thumb">📝<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">100 Most Common Urdu Words for Absolute Beginners</p>
-    <p class="vg-creator">UrduPod101</p>
+    <p class="vg-creator">Learn Urdu with UrduPod101.com</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Perso+Arabic+influence+Urdu+vocabulary+history" data-video-id="MbL8RzPbM5k" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Perso+Arabic+influence+Urdu+vocabulary+history" data-video-id="6wWntrCA9s8" target="_blank">
   <div class="vg-thumb">📚<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">The History of Urdu — Persian, Arabic, and Mughal Origins</p>
-    <p class="vg-creator">Pakistani YouTube — History & Language</p>
+    <p class="vg-creator">Culture Express</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+calligraphy+Nastaliq+beautiful+writing" data-video-id="9RVp9rnJyAQ" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Urdu+calligraphy+Nastaliq+beautiful+writing" data-video-id="C7F698CJT2E" target="_blank">
   <div class="vg-thumb">🖋️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Urdu Calligraphy — The Art of Nastaliq Script</p>
-    <p class="vg-creator">Urdu Calligraphy Masters</p>
+    <p class="vg-creator">Aman Ullah Habib</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>

@@ -6,112 +6,112 @@ Immerse yourself in the richness of Persian civilization — from Rumi's Masnavi
 
 <div class="vg-grid" markdown="0">
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Masnavi+Persian+poetry+explained+English+couplets" data-video-id="nHqXfKRSjmY" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Rumi+Masnavi+Persian+poetry+explained+English+couplets" data-video-id="l3eNnksgMwE" target="_blank">
   <div class="vg-thumb">🌀<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Rumi's Masnavi — Famous Couplets Explained</p>
-    <p class="vg-creator">Persian Poetry Channel</p>
+    <p class="vg-creator">Learn Persian Online</p>
     <p class="vg-duration">~28 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Hafiz+ghazal+Persian+poetry+translation+analysis" data-video-id="gm1hQH7FFGM" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Hafiz+ghazal+Persian+poetry+translation+analysis" data-video-id="S2adTQGzbBg" target="_blank">
   <div class="vg-thumb">🌹<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Hafiz Ghazals — Translation & Analysis</p>
-    <p class="vg-creator">Persian Literary Studies</p>
+    <p class="vg-creator">Farsi Wizard</p>
     <p class="vg-duration">~25 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Nowruz+Iranian+new+year+traditions+haft+sin+table" data-video-id="OYkfh9Aozz4" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Nowruz+Iranian+new+year+traditions+haft+sin+table" data-video-id="ZD2H0rI7Twc" target="_blank">
   <div class="vg-thumb">🌸<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Nowruz — Persian New Year Traditions & Haft-Sin</p>
-    <p class="vg-creator">Iranian Culture</p>
+    <p class="vg-creator">Colorful Data</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+classical+music+dastgah+radif+Shajarian" data-video-id="VvSSJX6c7bA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+classical+music+dastgah+radif+Shajarian" data-video-id="BtlFCG1AYLU" target="_blank">
   <div class="vg-thumb">🎵<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Iranian Classical Music — Dastgāh & Radif System</p>
-    <p class="vg-creator">Persian Music Academy</p>
+    <p class="vg-creator">Sahbamusic</p>
     <p class="vg-duration">~22 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+cinema+Kiarostami+Farhadi+best+films+guide" data-video-id="kMgRAsBkUKk" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Iranian+cinema+Kiarostami+Farhadi+best+films+guide" data-video-id="RZYVOU5cYcI" target="_blank">
   <div class="vg-thumb">🎬<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag essential">Essential</span>
     <p class="vg-title">Iranian Cinema — Kiarostami, Farhadi & Beyond</p>
-    <p class="vg-creator">World Cinema Guide</p>
+    <p class="vg-creator">Cinemosophy</p>
     <p class="vg-duration">~24 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Ferdowsi+Shahnameh+Persian+epic+overview" data-video-id="VzY4XdkApb8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Ferdowsi+Shahnameh+Persian+epic+overview" data-video-id="RWvZ44bNdRI" target="_blank">
   <div class="vg-thumb">⚔️<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Ferdowsi's Shahnameh — The Persian National Epic</p>
-    <p class="vg-creator">Persian Heritage</p>
+    <p class="vg-creator">Litcenter</p>
     <p class="vg-duration">~30 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Urdu+connection+Iqbal+poetry+Mughal+language" data-video-id="TjcM0Wa8Oq8" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Urdu+connection+Iqbal+poetry+Mughal+language" data-video-id="OM2mothCdUI" target="_blank">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Persian-Urdu Connection — Iqbal, Ghalib & Mughal Legacy</p>
-    <p class="vg-creator">South Asian Literary Heritage</p>
+    <p class="vg-creator">Mudassarkamranonline</p>
     <p class="vg-duration">~27 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Dari+Afghan+Persian+differences+Kabul+vs+Tehran" data-video-id="Ec_vGaKqY8U" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Dari+Afghan+Persian+differences+Kabul+vs+Tehran" data-video-id="6FIN1Pzyuqo" target="_blank">
   <div class="vg-thumb">🇦🇫<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag recommended">Recommended</span>
     <p class="vg-title">Dari vs Iranian Persian — Key Differences</p>
-    <p class="vg-creator">Persian Language Variants</p>
+    <p class="vg-creator">Bahador Alast</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Tajik+language+Persian+Cyrillic+Tajikistan+culture" data-video-id="VsumCyR_MdA" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Tajik+language+Persian+Cyrillic+Tajikistan+culture" data-video-id="GWuTvCbA2Rc" target="_blank">
   <div class="vg-thumb">🇹🇯<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Tajik Persian — Cyrillic Script & Language Overview</p>
-    <p class="vg-creator">Central Asian Languages</p>
+    <p class="vg-creator">Off The School</p>
     <p class="vg-duration">~20 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+solar+hijri+calendar+months+explained" data-video-id="c7E0BDFT2dU" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+solar+hijri+calendar+months+explained" data-video-id="3amQURWr-SU" target="_blank">
   <div class="vg-thumb">📅<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">The Persian Solar Calendar — Months & Nowruz</p>
-    <p class="vg-creator">Persian Culture</p>
+    <p class="vg-creator">Persian Land</p>
     <p class="vg-duration">~15 min</p>
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+idioms+proverbs+top+50+meaning" data-video-id="oeFkfZ3u5Ec" target="_blank">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Persian+Farsi+idioms+proverbs+top+50+meaning" data-video-id="VExs7Wqm4rY" target="_blank">
   <div class="vg-thumb">💡<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
     <p class="vg-title">Top 50 Persian Idioms & Proverbs with Meaning</p>
-    <p class="vg-creator">Persian Language Learning</p>
+    <p class="vg-creator">Persian Land</p>
     <p class="vg-duration">~32 min</p>
   </div>
 </a>
