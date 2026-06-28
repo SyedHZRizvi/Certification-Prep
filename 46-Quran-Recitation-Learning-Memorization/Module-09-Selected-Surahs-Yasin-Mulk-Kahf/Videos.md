@@ -80,12 +80,12 @@
   </div>
 </a>
 
-<a class="vg-card" href="https://www.youtube.com/results?search_query=surah+al-kahf+reading+with+tajweed+rules+in+english" data-video-id="uCIEoGk0dHQ" target="_blank" rel="noopener">
+<a class="vg-card" href="https://www.youtube.com/results?search_query=Surah+Al-Kahf+%E2%80%94+Word+by+Word+with+English+Translation" data-video-id="p8sVLbtBrkk" target="_blank" rel="noopener">
   <div class="vg-thumb">📖<div class="vg-play">▶</div></div>
   <div class="vg-meta">
     <span class="vg-tag optional">Optional</span>
-    <p class="vg-title">Surah Al-Kahf — Reading with Tajweed Rules in English</p>
-    <p class="vg-creator">Alfurqan Academy</p>
+    <p class="vg-title">Surah Al-Kahf — Word by Word with English Translation</p>
+    <p class="vg-creator">Quran Reader</p>
     <p class="vg-duration">~18 min</p>
   </div>
 </a>
